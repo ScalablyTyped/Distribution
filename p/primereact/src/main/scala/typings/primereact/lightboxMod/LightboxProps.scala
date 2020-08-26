@@ -4,36 +4,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LightboxProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var easing: js.UndefOr[String] = js.undefined
-  var effectDuration: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var images: js.UndefOr[js.Array[_]] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var target: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.native
+  var effectDuration: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var images: js.UndefOr[js.Array[_]] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var target: js.UndefOr[String] = js.native
 }
 
 object LightboxProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    easing: String = null,
-    effectDuration: String = null,
-    id: String = null,
-    images: js.Array[_] = null,
-    style: js.Object = null,
-    target: String = null
-  ): LightboxProps = {
+  def apply(): LightboxProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (effectDuration != null) __obj.updateDynamic("effectDuration")(effectDuration.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightboxProps]
   }
+  @scala.inline
+  implicit class LightboxPropsOps[Self <: LightboxProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setEasing(value: String): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setEffectDuration(value: String): Self = this.set("effectDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectDuration: Self = this.set("effectDuration", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImagesVarargs(value: js.Any*): Self = this.set("images", js.Array(value :_*))
+    @scala.inline
+    def setImages(value: js.Array[_]): Self = this.set("images", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImages: Self = this.set("images", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

@@ -39,6 +39,7 @@ object String extends js.Object {
     def lastIndexOf(searchString: java.lang.String, position: Double): SugarDefaultChainable[Double] = js.native
     def link(url: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def localeCompare(that: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def localeCompare(that: java.lang.String, locales: js.UndefOr[scala.Nothing], options: CollatorOptions): SugarDefaultChainable[Double] = js.native
     def localeCompare(that: java.lang.String, locales: java.lang.String): SugarDefaultChainable[Double] = js.native
     def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): SugarDefaultChainable[Double] = js.native
     def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): SugarDefaultChainable[Double] = js.native
@@ -69,6 +70,7 @@ object String extends js.Object {
     def search(regexp: java.lang.String): SugarDefaultChainable[Double] = js.native
     def search(regexp: typings.std.RegExp): SugarDefaultChainable[Double] = js.native
     def slice(): SugarDefaultChainable[java.lang.String] = js.native
+    def slice(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[java.lang.String] = js.native
     def slice(start: Double): SugarDefaultChainable[java.lang.String] = js.native
     def slice(start: Double, end: Double): SugarDefaultChainable[java.lang.String] = js.native
     def small(): SugarDefaultChainable[java.lang.String] = js.native

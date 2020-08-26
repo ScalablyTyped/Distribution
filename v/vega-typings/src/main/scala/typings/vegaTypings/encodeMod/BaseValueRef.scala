@@ -18,8 +18,8 @@ object BaseValueRef {
     __obj.asInstanceOf[BaseValueRef[T]]
   }
   @scala.inline
-  def Value[T](value: T = null): BaseValueRef[T] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def Value[T](): BaseValueRef[T] = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseValueRef[T]]
   }
   @scala.inline

@@ -12,7 +12,7 @@ a bunyan logger middleware for express
 | Keywords           | express, logger, bunyan |
 | # releases         | 2 |
 | # dependents       | 40 |
-| # downloads        | 1080671 |
+| # downloads        | 1081473 |
 | # stars            | 8 |
 
 ## Links

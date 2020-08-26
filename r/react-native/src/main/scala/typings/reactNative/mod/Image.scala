@@ -26,8 +26,20 @@ object Image extends js.Object {
       js.Promise[StringDictionary[memory | disk | diskSlashmemory]]
     ]
   ] = js.native
+  def getSize(uri: String, success: js.Function2[/* width */ Double, /* height */ Double, Unit]): js.Any = js.native
   def getSize(
     uri: String,
+    success: js.Function2[/* width */ Double, /* height */ Double, Unit],
+    failure: js.Function1[/* error */ js.Any, Unit]
+  ): js.Any = js.native
+  def getSizeWithHeaders(
+    uri: String,
+    headers: StringDictionary[String],
+    success: js.Function2[/* width */ Double, /* height */ Double, Unit]
+  ): js.Any = js.native
+  def getSizeWithHeaders(
+    uri: String,
+    headers: StringDictionary[String],
     success: js.Function2[/* width */ Double, /* height */ Double, Unit],
     failure: js.Function1[/* error */ js.Any, Unit]
   ): js.Any = js.native

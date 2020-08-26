@@ -1,10 +1,7 @@
 package typings.nodeObjectHash.mod
 
 import typings.node.cryptoMod.HexBase64Latin1Encoding
-import typings.nodeObjectHash.objectSorterMod.CoerceOptions
-import typings.nodeObjectHash.objectSorterMod.SortOptions
 import typings.nodeObjectHash.objectSorterMod.SorterOptions
-import typings.nodeObjectHash.objectSorterMod.TrimOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,35 +9,46 @@ import scala.scalajs.js.annotation._
 /**
   * Object hasher options
   */
+@js.native
 trait HasherOptions extends SorterOptions {
   /**
     * Hash algorithm to use
     * @default 'sha256'
     */
-  var alg: js.UndefOr[String] = js.undefined
+  var alg: js.UndefOr[String] = js.native
   /**
     * String encoding for hash
     * @default 'hex'
     */
-  var enc: js.UndefOr[HexBase64Latin1Encoding] = js.undefined
+  var enc: js.UndefOr[HexBase64Latin1Encoding] = js.native
 }
 
 object HasherOptions {
   @scala.inline
-  def apply(
-    alg: String = null,
-    coerce: Boolean | CoerceOptions = null,
-    enc: HexBase64Latin1Encoding = null,
-    sort: Boolean | SortOptions = null,
-    trim: Boolean | TrimOptions = null
-  ): HasherOptions = {
+  def apply(): HasherOptions = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
-    if (coerce != null) __obj.updateDynamic("coerce")(coerce.asInstanceOf[js.Any])
-    if (enc != null) __obj.updateDynamic("enc")(enc.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (trim != null) __obj.updateDynamic("trim")(trim.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasherOptions]
   }
+  @scala.inline
+  implicit class HasherOptionsOps[Self <: HasherOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlg(value: String): Self = this.set("alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlg: Self = this.set("alg", js.undefined)
+    @scala.inline
+    def setEnc(value: HexBase64Latin1Encoding): Self = this.set("enc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnc: Self = this.set("enc", js.undefined)
+  }
+  
 }
 

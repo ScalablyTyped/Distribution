@@ -1,7 +1,6 @@
 package typings.recurlyRecurlyJs.paypalMod
 
 import typings.recurlyRecurlyJs.anon.ClientAuthorization
-import typings.recurlyRecurlyJs.anon.DisplayName
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,9 +18,8 @@ object PayPalConfig {
     __obj.asInstanceOf[PayPalConfig]
   }
   @scala.inline
-  def DirectConfig(display: DisplayName = null): PayPalConfig = {
+  def DirectConfig(): PayPalConfig = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayPalConfig]
   }
 }

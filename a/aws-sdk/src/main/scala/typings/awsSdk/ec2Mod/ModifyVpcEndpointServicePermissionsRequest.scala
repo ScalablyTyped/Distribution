@@ -26,17 +26,40 @@ trait ModifyVpcEndpointServicePermissionsRequest extends js.Object {
 
 object ModifyVpcEndpointServicePermissionsRequest {
   @scala.inline
-  def apply(
-    ServiceId: VpcEndpointServiceId,
-    AddAllowedPrincipals: ValueStringList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    RemoveAllowedPrincipals: ValueStringList = null
-  ): ModifyVpcEndpointServicePermissionsRequest = {
+  def apply(ServiceId: VpcEndpointServiceId): ModifyVpcEndpointServicePermissionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
-    if (AddAllowedPrincipals != null) __obj.updateDynamic("AddAllowedPrincipals")(AddAllowedPrincipals.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (RemoveAllowedPrincipals != null) __obj.updateDynamic("RemoveAllowedPrincipals")(RemoveAllowedPrincipals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointServicePermissionsRequest]
   }
+  @scala.inline
+  implicit class ModifyVpcEndpointServicePermissionsRequestOps[Self <: ModifyVpcEndpointServicePermissionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceId(value: VpcEndpointServiceId): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddAllowedPrincipalsVarargs(value: String*): Self = this.set("AddAllowedPrincipals", js.Array(value :_*))
+    @scala.inline
+    def setAddAllowedPrincipals(value: ValueStringList): Self = this.set("AddAllowedPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddAllowedPrincipals: Self = this.set("AddAllowedPrincipals", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setRemoveAllowedPrincipalsVarargs(value: String*): Self = this.set("RemoveAllowedPrincipals", js.Array(value :_*))
+    @scala.inline
+    def setRemoveAllowedPrincipals(value: ValueStringList): Self = this.set("RemoveAllowedPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveAllowedPrincipals: Self = this.set("RemoveAllowedPrincipals", js.undefined)
+  }
+  
 }
 

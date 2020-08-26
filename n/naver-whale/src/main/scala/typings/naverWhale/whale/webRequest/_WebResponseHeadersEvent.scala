@@ -10,6 +10,11 @@ trait _WebResponseHeadersEvent[T /* <: typings.chrome.chrome.webRequest.WebRespo
   extends Event[js.Function1[/* details */ T, Unit]] {
   def addListener(
     callback: js.Function1[/* details */ T, Unit],
+    filter: js.UndefOr[scala.Nothing],
+    opt_extraInfoSpec: js.Array[String]
+  ): Unit = js.native
+  def addListener(
+    callback: js.Function1[/* details */ T, Unit],
     filter: typings.chrome.chrome.webRequest.RequestFilter
   ): Unit = js.native
   def addListener(

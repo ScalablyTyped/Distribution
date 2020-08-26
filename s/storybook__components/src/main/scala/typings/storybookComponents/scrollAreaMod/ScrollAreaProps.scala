@@ -13,16 +13,34 @@ trait ScrollAreaProps extends js.Object {
 
 object ScrollAreaProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): ScrollAreaProps = {
+  def apply(): ScrollAreaProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollAreaProps]
   }
+  @scala.inline
+  implicit class ScrollAreaPropsOps[Self <: ScrollAreaProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setVertical(value: Boolean): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+  }
+  
 }
 

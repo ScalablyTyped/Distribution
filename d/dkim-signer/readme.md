@@ -12,7 +12,7 @@ DKIM signing code extracted from mailcomposer
 | Keywords           | DKIM, SMTP, mailcomposer |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1943684 |
+| # downloads        | 1974316 |
 | # stars            | 0 |
 
 ## Links

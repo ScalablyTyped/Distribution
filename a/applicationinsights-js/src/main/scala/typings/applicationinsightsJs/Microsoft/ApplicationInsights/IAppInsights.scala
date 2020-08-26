@@ -38,6 +38,7 @@ trait IAppInsights extends js.Object {
     * @param accountId {string} - An optional string to represent the account associated with the authenticated user.
     */
   def setAuthenticatedUserContext(authenticatedUserId: String): js.Any = js.native
+  def setAuthenticatedUserContext(authenticatedUserId: String, accountId: js.UndefOr[scala.Nothing], storeInCookie: Boolean): js.Any = js.native
   def setAuthenticatedUserContext(authenticatedUserId: String, accountId: String): js.Any = js.native
   def setAuthenticatedUserContext(authenticatedUserId: String, accountId: String, storeInCookie: Boolean): js.Any = js.native
   /**
@@ -60,6 +61,7 @@ trait IAppInsights extends js.Object {
     * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
     */
   def stopTrackEvent(name: String): js.Any = js.native
+  def stopTrackEvent(name: String, properties: js.UndefOr[scala.Nothing], measurements: StringDictionary[Double]): js.Any = js.native
   def stopTrackEvent(name: String, properties: StringDictionary[String]): js.Any = js.native
   def stopTrackEvent(name: String, properties: StringDictionary[String], measurements: StringDictionary[Double]): js.Any = js.native
   /**
@@ -71,8 +73,58 @@ trait IAppInsights extends js.Object {
     * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
     */
   def stopTrackPage(): js.Any = js.native
+  def stopTrackPage(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def stopTrackPage(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String]
+  ): js.Any = js.native
+  def stopTrackPage(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def stopTrackPage(name: js.UndefOr[scala.Nothing], url: String): js.Any = js.native
+  def stopTrackPage(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def stopTrackPage(name: js.UndefOr[scala.Nothing], url: String, properties: StringDictionary[String]): js.Any = js.native
+  def stopTrackPage(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
   def stopTrackPage(name: String): js.Any = js.native
+  def stopTrackPage(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def stopTrackPage(name: String, url: js.UndefOr[scala.Nothing], properties: StringDictionary[String]): js.Any = js.native
+  def stopTrackPage(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
   def stopTrackPage(name: String, url: String): js.Any = js.native
+  def stopTrackPage(
+    name: String,
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
   def stopTrackPage(name: String, url: String, properties: StringDictionary[String]): js.Any = js.native
   def stopTrackPage(
     name: String,
@@ -109,6 +161,17 @@ trait IAppInsights extends js.Object {
     totalTime: Double,
     success: Boolean,
     resultCode: Double,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackDependency(
+    id: String,
+    method: String,
+    absoluteUrl: String,
+    pathName: String,
+    totalTime: Double,
+    success: Boolean,
+    resultCode: Double,
     properties: StringDictionary[String]
   ): js.Any = js.native
   def trackDependency(
@@ -129,6 +192,7 @@ trait IAppInsights extends js.Object {
     * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
     */
   def trackEvent(name: String): js.Any = js.native
+  def trackEvent(name: String, properties: js.UndefOr[scala.Nothing], measurements: StringDictionary[Double]): js.Any = js.native
   def trackEvent(name: String, properties: StringDictionary[String]): js.Any = js.native
   def trackEvent(name: String, properties: StringDictionary[String], measurements: StringDictionary[Double]): js.Any = js.native
   /**
@@ -139,8 +203,76 @@ trait IAppInsights extends js.Object {
     * @param   severityLevel   AI.SeverityLevel - severity level
     */
   def trackException(exception: Error): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: js.UndefOr[scala.Nothing],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
+  def trackException(exception: Error, handledAt: js.UndefOr[scala.Nothing], properties: StringDictionary[String]): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: js.UndefOr[scala.Nothing],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
   def trackException(exception: Error, handledAt: String): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: js.UndefOr[scala.Nothing],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
   def trackException(exception: Error, handledAt: String, properties: StringDictionary[String]): js.Any = js.native
+  def trackException(
+    exception: Error,
+    handledAt: String,
+    properties: StringDictionary[String],
+    measurements: js.UndefOr[scala.Nothing],
+    severityLevel: SeverityLevel
+  ): js.Any = js.native
   def trackException(
     exception: Error,
     handledAt: String,
@@ -165,8 +297,74 @@ trait IAppInsights extends js.Object {
     * @param   max The largest measurement in the sample. Defaults to the average.
     */
   def trackMetric(name: String, average: Double): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: js.UndefOr[scala.Nothing],
+    min: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String]
+  ): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: js.UndefOr[scala.Nothing],
+    min: js.UndefOr[scala.Nothing],
+    max: Double
+  ): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: js.UndefOr[scala.Nothing],
+    min: js.UndefOr[scala.Nothing],
+    max: Double,
+    properties: StringDictionary[String]
+  ): js.Any = js.native
+  def trackMetric(name: String, average: Double, sampleCount: js.UndefOr[scala.Nothing], min: Double): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: js.UndefOr[scala.Nothing],
+    min: Double,
+    max: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String]
+  ): js.Any = js.native
+  def trackMetric(name: String, average: Double, sampleCount: js.UndefOr[scala.Nothing], min: Double, max: Double): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: js.UndefOr[scala.Nothing],
+    min: Double,
+    max: Double,
+    properties: StringDictionary[String]
+  ): js.Any = js.native
   def trackMetric(name: String, average: Double, sampleCount: Double): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: Double,
+    min: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String]
+  ): js.Any = js.native
+  def trackMetric(name: String, average: Double, sampleCount: Double, min: js.UndefOr[scala.Nothing], max: Double): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: Double,
+    min: js.UndefOr[scala.Nothing],
+    max: Double,
+    properties: StringDictionary[String]
+  ): js.Any = js.native
   def trackMetric(name: String, average: Double, sampleCount: Double, min: Double): js.Any = js.native
+  def trackMetric(
+    name: String,
+    average: Double,
+    sampleCount: Double,
+    min: Double,
+    max: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String]
+  ): js.Any = js.native
   def trackMetric(name: String, average: Double, sampleCount: Double, min: Double, max: Double): js.Any = js.native
   def trackMetric(
     name: String,
@@ -185,9 +383,164 @@ trait IAppInsights extends js.Object {
     * @param   duration    number - the number of milliseconds it took to load the page. Defaults to undefined. If set to default value, page load time is calculated internally.
     */
   def trackPageView(): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String]
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(name: js.UndefOr[scala.Nothing], url: String): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(name: js.UndefOr[scala.Nothing], url: String, properties: StringDictionary[String]): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: StringDictionary[String],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: js.UndefOr[scala.Nothing],
+    url: String,
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
   def trackPageView(name: String): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(name: String, url: js.UndefOr[scala.Nothing], properties: StringDictionary[String]): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: js.UndefOr[scala.Nothing],
+    properties: StringDictionary[String],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
   def trackPageView(name: String, url: String): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double]
+  ): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: String,
+    properties: js.UndefOr[scala.Nothing],
+    measurements: StringDictionary[Double],
+    duration: Double
+  ): js.Any = js.native
   def trackPageView(name: String, url: String, properties: StringDictionary[String]): js.Any = js.native
+  def trackPageView(
+    name: String,
+    url: String,
+    properties: StringDictionary[String],
+    measurements: js.UndefOr[scala.Nothing],
+    duration: Double
+  ): js.Any = js.native
   def trackPageView(
     name: String,
     url: String,
@@ -207,6 +560,7 @@ trait IAppInsights extends js.Object {
     * @param    properties  map[string, string] - additional data used to filter traces in the portal. Defaults to empty.
     */
   def trackTrace(message: String): js.Any = js.native
+  def trackTrace(message: String, properties: js.UndefOr[scala.Nothing], severityLevel: SeverityLevel): js.Any = js.native
   def trackTrace(message: String, properties: StringDictionary[String]): js.Any = js.native
   def trackTrace(message: String, properties: StringDictionary[String], severityLevel: SeverityLevel): js.Any = js.native
 }

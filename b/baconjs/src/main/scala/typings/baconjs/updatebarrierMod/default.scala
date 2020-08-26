@@ -37,7 +37,8 @@ object default extends js.Object {
   def afterTransaction(obs: Observable, f: Call): Unit = js.native
   def currentEventId(): js.UndefOr[Double] = js.native
   def hasWaiters(): Boolean = js.native
-  def inTransaction(event: js.UndefOr[Event[_]], context: js.Any, f: js.Function, args: js.Array[_]): js.Any = js.native
+  def inTransaction(event: js.UndefOr[scala.Nothing], context: js.Any, f: js.Function, args: js.Array[_]): js.Any = js.native
+  def inTransaction(event: Event[_], context: js.Any, f: js.Function, args: js.Array[_]): js.Any = js.native
   def isInTransaction(): Boolean = js.native
   def soonButNotYet(obs: Observable, f: Call): Unit = js.native
   def whenDoneWith(obs: Observable, f: Call): js.Any = js.native

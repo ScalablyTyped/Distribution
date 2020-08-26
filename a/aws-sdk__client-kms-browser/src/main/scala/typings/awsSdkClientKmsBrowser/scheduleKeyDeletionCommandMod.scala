@@ -26,16 +26,9 @@ object scheduleKeyDeletionCommandMod extends js.Object {
           Blob
         ] {
     def this(input: ScheduleKeyDeletionInput) = this()
-    /* CompleteClass */
-    override val input: ScheduleKeyDeletionInput = js.native
     val middlewareStack: MiddlewareStack[ScheduleKeyDeletionInput, ScheduleKeyDeletionOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[ScheduleKeyDeletionInput, ScheduleKeyDeletionOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[ScheduleKeyDeletionInput, ScheduleKeyDeletionOutput] = js.native
   }

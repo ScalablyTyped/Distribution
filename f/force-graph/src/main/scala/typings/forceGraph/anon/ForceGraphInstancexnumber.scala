@@ -20,7 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined force-graph.force-graph.ForceGraph.ForceGraphInstance & {  x  :number,   y  :number} */
+/* Inlined force-graph.force-graph.ForceGraph.ForceGraphInstance & {  x :number,   y :number} */
 @js.native
 trait ForceGraphInstancexnumber extends js.Object {
   var x: Double = js.native
@@ -31,7 +31,11 @@ trait ForceGraphInstancexnumber extends js.Object {
   def backgroundColor(): ForceGraphInstance with String = js.native
   def backgroundColor(color: String): ForceGraphInstance with String = js.native
   def centerAt(): ForceGraphInstance with X = js.native
+  def centerAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], milliseconds: Double): ForceGraphInstance with X = js.native
+  def centerAt(x: js.UndefOr[scala.Nothing], y: Double): ForceGraphInstance with X = js.native
+  def centerAt(x: js.UndefOr[scala.Nothing], y: Double, milliseconds: Double): ForceGraphInstance with X = js.native
   def centerAt(x: Double): ForceGraphInstance with X = js.native
+  def centerAt(x: Double, y: js.UndefOr[scala.Nothing], milliseconds: Double): ForceGraphInstance with X = js.native
   def centerAt(x: Double, y: Double): ForceGraphInstance with X = js.native
   def centerAt(x: Double, y: Double, milliseconds: Double): ForceGraphInstance with X = js.native
   def cooldownTicks(): ForceGraphInstance with Double = js.native
@@ -185,6 +189,7 @@ trait ForceGraphInstancexnumber extends js.Object {
   def width(): ForceGraphInstance with Double = js.native
   def width(width: Double): ForceGraphInstance with Double = js.native
   def zoom(): ForceGraphInstance with Double = js.native
+  def zoom(zoomLevel: js.UndefOr[scala.Nothing], duration: Double): ForceGraphInstance with Double = js.native
   def zoom(zoomLevel: Double): ForceGraphInstance with Double = js.native
   def zoom(zoomLevel: Double, duration: Double): ForceGraphInstance with Double = js.native
 }

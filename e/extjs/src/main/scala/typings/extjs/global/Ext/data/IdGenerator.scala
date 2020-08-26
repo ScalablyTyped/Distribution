@@ -34,6 +34,7 @@ object IdGenerator extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Returns the IdGenerator given its config description

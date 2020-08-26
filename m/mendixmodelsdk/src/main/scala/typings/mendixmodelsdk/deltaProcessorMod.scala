@@ -23,6 +23,7 @@ object deltaProcessorMod extends js.Object {
     var processMutator: js.Any = js.native
     var processUpdatePropertyValueDelta: js.Any = js.native
     def processDeltas(deltas: js.Array[Delta]): Unit = js.native
+    def processDeltas(deltas: js.Array[Delta], isReverting: Boolean): Unit = js.native
   }
   
 }

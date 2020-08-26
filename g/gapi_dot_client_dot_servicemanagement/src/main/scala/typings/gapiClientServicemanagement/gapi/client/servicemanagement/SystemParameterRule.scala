@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SystemParameterRule extends js.Object {
   /**
     * Define parameters. Multiple names may be defined for a parameter.
@@ -12,23 +13,44 @@ trait SystemParameterRule extends js.Object {
     * If none of the specified names are present the behavior is
     * parameter-dependent.
     */
-  var parameters: js.UndefOr[js.Array[SystemParameter]] = js.undefined
+  var parameters: js.UndefOr[js.Array[SystemParameter]] = js.native
   /**
     * Selects the methods to which this rule applies. Use '&#42;' to indicate all
     * methods in all APIs.
     *
     * Refer to selector for syntax details.
     */
-  var selector: js.UndefOr[String] = js.undefined
+  var selector: js.UndefOr[String] = js.native
 }
 
 object SystemParameterRule {
   @scala.inline
-  def apply(parameters: js.Array[SystemParameter] = null, selector: String = null): SystemParameterRule = {
+  def apply(): SystemParameterRule = {
     val __obj = js.Dynamic.literal()
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemParameterRule]
   }
+  @scala.inline
+  implicit class SystemParameterRuleOps[Self <: SystemParameterRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParametersVarargs(value: SystemParameter*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[SystemParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+  }
+  
 }
 

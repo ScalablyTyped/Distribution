@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectorsOptions extends js.Object {
   /**
     * (Gantt) Set the default pathfinder margin to use, in pixels. Some
@@ -15,40 +16,40 @@ trait ConnectorsOptions extends js.Object {
     * To draw connecting lines close to existing points, set this to a low
     * number. For more space around existing points, set this number higher.
     */
-  var algorithmMargin: js.UndefOr[Double] = js.undefined
+  var algorithmMargin: js.UndefOr[Double] = js.native
   /**
     * (Gantt) Set the default dash style for this chart's connecting lines.
     */
-  var dashStyle: js.UndefOr[String] = js.undefined
+  var dashStyle: js.UndefOr[String] = js.native
   /**
     * (Gantt) Enable connectors for this chart. Requires Highcharts Gantt.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * (Gantt) Marker options specific to the end markers for this chart's
     * Pathfinder connectors. Overrides the generic marker options.
     */
-  var endMarker: js.UndefOr[ConnectorsEndMarkerOptions] = js.undefined
+  var endMarker: js.UndefOr[ConnectorsEndMarkerOptions] = js.native
   /**
     * (Gantt) Set the default color for this chart's Pathfinder connecting
     * lines. Defaults to the color of the point being connected.
     */
-  var lineColor: js.UndefOr[ColorString] = js.undefined
+  var lineColor: js.UndefOr[ColorString] = js.native
   /**
     * (Gantt) Set the default pixel width for this chart's Pathfinder
     * connecting lines.
     */
-  var lineWidth: js.UndefOr[Double] = js.undefined
+  var lineWidth: js.UndefOr[Double] = js.native
   /**
     * (Gantt) Marker options for this chart's Pathfinder connectors. Note that
     * this option is overridden by the `startMarker` and `endMarker` options.
     */
-  var marker: js.UndefOr[ConnectorsMarkerOptions] = js.undefined
+  var marker: js.UndefOr[ConnectorsMarkerOptions] = js.native
   /**
     * (Gantt) Marker options specific to the start markers for this chart's
     * Pathfinder connectors. Overrides the generic marker options.
     */
-  var startMarker: js.UndefOr[ConnectorsStartMarkerOptions] = js.undefined
+  var startMarker: js.UndefOr[ConnectorsStartMarkerOptions] = js.native
   /**
     * (Gantt) Set the default pathfinder algorithm to use for this chart. It is
     * possible to define your own algorithms by adding them to the
@@ -72,33 +73,63 @@ trait ConnectorsOptions extends js.Object {
     * `simpleConnect` is used as default for Gantt series, to show dependencies
     * between points.
     */
-  var `type`: js.UndefOr[PathfinderTypeValue] = js.undefined
+  var `type`: js.UndefOr[PathfinderTypeValue] = js.native
 }
 
 object ConnectorsOptions {
   @scala.inline
-  def apply(
-    algorithmMargin: js.UndefOr[Double] = js.undefined,
-    dashStyle: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    endMarker: ConnectorsEndMarkerOptions = null,
-    lineColor: ColorString = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    marker: ConnectorsMarkerOptions = null,
-    startMarker: ConnectorsStartMarkerOptions = null,
-    `type`: PathfinderTypeValue = null
-  ): ConnectorsOptions = {
+  def apply(): ConnectorsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(algorithmMargin)) __obj.updateDynamic("algorithmMargin")(algorithmMargin.get.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (endMarker != null) __obj.updateDynamic("endMarker")(endMarker.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (startMarker != null) __obj.updateDynamic("startMarker")(startMarker.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorsOptions]
   }
+  @scala.inline
+  implicit class ConnectorsOptionsOps[Self <: ConnectorsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmMargin(value: Double): Self = this.set("algorithmMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmMargin: Self = this.set("algorithmMargin", js.undefined)
+    @scala.inline
+    def setDashStyle(value: String): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEndMarker(value: ConnectorsEndMarkerOptions): Self = this.set("endMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndMarker: Self = this.set("endMarker", js.undefined)
+    @scala.inline
+    def setLineColor(value: ColorString): Self = this.set("lineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineColor: Self = this.set("lineColor", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setMarker(value: ConnectorsMarkerOptions): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setStartMarker(value: ConnectorsStartMarkerOptions): Self = this.set("startMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartMarker: Self = this.set("startMarker", js.undefined)
+    @scala.inline
+    def setType(value: PathfinderTypeValue): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

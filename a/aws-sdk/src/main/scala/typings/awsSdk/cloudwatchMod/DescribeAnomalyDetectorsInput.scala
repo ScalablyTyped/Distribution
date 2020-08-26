@@ -30,20 +30,44 @@ trait DescribeAnomalyDetectorsInput extends js.Object {
 
 object DescribeAnomalyDetectorsInput {
   @scala.inline
-  def apply(
-    Dimensions: Dimensions = null,
-    MaxResults: js.UndefOr[MaxReturnedResultsCount] = js.undefined,
-    MetricName: MetricName = null,
-    Namespace: Namespace = null,
-    NextToken: NextToken = null
-  ): DescribeAnomalyDetectorsInput = {
+  def apply(): DescribeAnomalyDetectorsInput = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAnomalyDetectorsInput]
   }
+  @scala.inline
+  implicit class DescribeAnomalyDetectorsInputOps[Self <: DescribeAnomalyDetectorsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxReturnedResultsCount): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

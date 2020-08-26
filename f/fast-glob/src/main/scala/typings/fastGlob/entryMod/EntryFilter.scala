@@ -7,18 +7,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EntryFilter extends js.Object {
-  var _createIndexRecord: js.Any
-  var _filter: js.Any
-  var _isDuplicateEntry: js.Any
-  var _isMatchToPatterns: js.Any
-  var _isSkippedByAbsoluteNegativePatterns: js.Any
-  val _micromatchOptions: js.Any
-  var _onlyDirectoryFilter: js.Any
-  var _onlyFileFilter: js.Any
-  val _settings: js.Any
-  val index: Map[String, js.UndefOr[scala.Nothing]]
-  def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction
+  var _createIndexRecord: js.Any = js.native
+  var _filter: js.Any = js.native
+  var _isDuplicateEntry: js.Any = js.native
+  var _isMatchToPatterns: js.Any = js.native
+  var _isSkippedByAbsoluteNegativePatterns: js.Any = js.native
+  val _micromatchOptions: js.Any = js.native
+  var _onlyDirectoryFilter: js.Any = js.native
+  var _onlyFileFilter: js.Any = js.native
+  val _settings: js.Any = js.native
+  val index: Map[String, js.UndefOr[scala.Nothing]] = js.native
+  def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction = js.native
 }
 
 object EntryFilter {
@@ -39,5 +40,40 @@ object EntryFilter {
     val __obj = js.Dynamic.literal(_createIndexRecord = _createIndexRecord.asInstanceOf[js.Any], _filter = _filter.asInstanceOf[js.Any], _isDuplicateEntry = _isDuplicateEntry.asInstanceOf[js.Any], _isMatchToPatterns = _isMatchToPatterns.asInstanceOf[js.Any], _isSkippedByAbsoluteNegativePatterns = _isSkippedByAbsoluteNegativePatterns.asInstanceOf[js.Any], _micromatchOptions = _micromatchOptions.asInstanceOf[js.Any], _onlyDirectoryFilter = _onlyDirectoryFilter.asInstanceOf[js.Any], _onlyFileFilter = _onlyFileFilter.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], getFilter = js.Any.fromFunction2(getFilter), index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryFilter]
   }
+  @scala.inline
+  implicit class EntryFilterOps[Self <: EntryFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_createIndexRecord(value: js.Any): Self = this.set("_createIndexRecord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_filter(value: js.Any): Self = this.set("_filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_isDuplicateEntry(value: js.Any): Self = this.set("_isDuplicateEntry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_isMatchToPatterns(value: js.Any): Self = this.set("_isMatchToPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_isSkippedByAbsoluteNegativePatterns(value: js.Any): Self = this.set("_isSkippedByAbsoluteNegativePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_micromatchOptions(value: js.Any): Self = this.set("_micromatchOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_onlyDirectoryFilter(value: js.Any): Self = this.set("_onlyDirectoryFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_onlyFileFilter(value: js.Any): Self = this.set("_onlyFileFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_settings(value: js.Any): Self = this.set("_settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetFilter(value: (js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = this.set("getFilter", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIndex(value: Map[String, js.UndefOr[scala.Nothing]]): Self = this.set("index", value.asInstanceOf[js.Any])
+  }
+  
 }
 

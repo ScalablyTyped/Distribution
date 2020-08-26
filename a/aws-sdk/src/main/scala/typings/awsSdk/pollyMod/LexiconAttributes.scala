@@ -34,22 +34,46 @@ trait LexiconAttributes extends js.Object {
 
 object LexiconAttributes {
   @scala.inline
-  def apply(
-    Alphabet: Alphabet = null,
-    LanguageCode: LanguageCode = null,
-    LastModified: LastModified = null,
-    LexemesCount: js.UndefOr[LexemesCount] = js.undefined,
-    LexiconArn: LexiconArn = null,
-    Size: js.UndefOr[Size] = js.undefined
-  ): LexiconAttributes = {
+  def apply(): LexiconAttributes = {
     val __obj = js.Dynamic.literal()
-    if (Alphabet != null) __obj.updateDynamic("Alphabet")(Alphabet.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (!js.isUndefined(LexemesCount)) __obj.updateDynamic("LexemesCount")(LexemesCount.get.asInstanceOf[js.Any])
-    if (LexiconArn != null) __obj.updateDynamic("LexiconArn")(LexiconArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LexiconAttributes]
   }
+  @scala.inline
+  implicit class LexiconAttributesOps[Self <: LexiconAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlphabet(value: Alphabet): Self = this.set("Alphabet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlphabet: Self = this.set("Alphabet", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setLexemesCount(value: LexemesCount): Self = this.set("LexemesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexemesCount: Self = this.set("LexemesCount", js.undefined)
+    @scala.inline
+    def setLexiconArn(value: LexiconArn): Self = this.set("LexiconArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexiconArn: Self = this.set("LexiconArn", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+  }
+  
 }
 

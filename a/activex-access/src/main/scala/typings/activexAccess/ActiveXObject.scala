@@ -691,17 +691,6 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: Form,
-    event: BeforeInsert | BeforeUpdate | BeginBatchEdit | DblClick | Delete | Dirty | Open | RecordExit | Undo | UndoBatchEdit | Unload,
-    argNames: js.Array[Cancel],
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Form,
-    event: Activate | AfterInsert | AfterUpdate | BeforeQuery | Click | Close | Current | DataSetChange | Deactivate | GotFocus | Load | LostFocus | OnConnect | OnDisconnect | Query | Resize | SelectionChange | Timer,
-    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Form,
     event: AfterDelConfirm,
     argNames: js.Array[Status],
     handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Status, Unit]
@@ -738,6 +727,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: Form,
+    event: BeforeInsert,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
     event: BeforeRender,
     argNames: js.Tuple3[drawObject, chartObject, Cancel],
     handler: js.ThisFunction1[/* this */ Form, /* parameter */ CancelChartObject, Unit]
@@ -747,6 +742,18 @@ trait ActiveXObject extends js.Object {
     event: BeforeScreenTip,
     argNames: js.Tuple2[ScreenTipText, SourceObject],
     handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.ScreenTipText, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: BeforeUpdate,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: BeginBatchEdit,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -777,6 +784,24 @@ trait ActiveXObject extends js.Object {
     event: DataChange,
     argNames: js.Array[Reason],
     handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Reason, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: DblClick,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: Delete,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: Dirty,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -834,9 +859,39 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: Form,
+    event: Open,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
     event: PivotTableChange,
     argNames: js.Array[Reason],
     handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Reason, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: RecordExit,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: UndoBatchEdit,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: Undo,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
+  ): Unit = js.native
+  def on(
+    obj: Form,
+    event: Unload,
+    argNames: js.Array[Cancel],
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ typings.activexAccess.anon.Cancel, Unit]
   ): Unit = js.native
   def on(
     obj: Form,
@@ -1524,11 +1579,6 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   def on(
     obj: Report,
-    event: Activate | Click | Close | Current | Deactivate | GotFocus | Load | LostFocus | Page | Resize | Timer,
-    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Report,
     event: ApplyFilter,
     argNames: js.Tuple2[Cancel, ApplyType],
     handler: js.ThisFunction1[/* this */ Report, /* parameter */ typings.activexAccess.anon.ApplyType, Unit]
@@ -2076,6 +2126,24 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ typings.activexAccess.anon.Code, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_Activate(
+    obj: Form,
+    event: Activate,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Activate(
+    obj: Report,
+    event: Activate,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_AfterInsert(
+    obj: Form,
+    event: AfterInsert,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_AfterStartup(
     obj: FieldList,
     event: AfterStartup,
@@ -2110,6 +2178,12 @@ trait ActiveXObject extends js.Object {
     obj: ComboBox,
     event: AfterUpdate,
     handler: js.ThisFunction1[/* this */ ComboBox, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_AfterUpdate(
+    obj: Form,
+    event: AfterUpdate,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_AfterUpdate(
@@ -2189,6 +2263,12 @@ trait ActiveXObject extends js.Object {
     ]
   ): Unit = js.native
   @JSName("on")
+  def on_BeforeQuery(
+    obj: Form,
+    event: BeforeQuery,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_Change(
     obj: Attachment,
     event: Change,
@@ -2259,6 +2339,12 @@ trait ActiveXObject extends js.Object {
     obj: CommandButton,
     event: Click,
     handler: js.ThisFunction1[/* this */ CommandButton, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Click(
+    obj: Form,
+    event: Click,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_Click(
@@ -2340,6 +2426,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_Click(
+    obj: Report,
+    event: Click,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Click(
     obj: SectionInReport,
     event: Click,
     handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ js.Object, Unit]
@@ -2379,6 +2471,48 @@ trait ActiveXObject extends js.Object {
     obj: WebBrowserControl,
     event: Click,
     handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Close(
+    obj: Form,
+    event: Close,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Close(
+    obj: Report,
+    event: Close,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Current(
+    obj: Form,
+    event: Current,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Current(
+    obj: Report,
+    event: Current,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_DataSetChange(
+    obj: Form,
+    event: DataSetChange,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Deactivate(
+    obj: Form,
+    event: Deactivate,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Deactivate(
+    obj: Report,
+    event: Deactivate,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_DragOver(
@@ -2571,6 +2705,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_GotFocus(
+    obj: Form,
+    event: GotFocus,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_GotFocus(
     obj: ListBox,
     event: GotFocus,
     handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ js.Object, Unit]
@@ -2613,6 +2753,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_GotFocus(
+    obj: Report,
+    event: GotFocus,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_GotFocus(
     obj: TextBox,
     event: GotFocus,
     handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ js.Object, Unit]
@@ -2640,6 +2786,18 @@ trait ActiveXObject extends js.Object {
     obj: Class,
     event: Initialize,
     handler: js.ThisFunction1[/* this */ Class, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Load(
+    obj: Form,
+    event: Load,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Load(
+    obj: Report,
+    event: Load,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_LostFocus(
@@ -2685,6 +2843,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_LostFocus(
+    obj: Form,
+    event: LostFocus,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_LostFocus(
     obj: ListBox,
     event: LostFocus,
     handler: js.ThisFunction1[/* this */ ListBox, /* parameter */ js.Object, Unit]
@@ -2727,6 +2891,12 @@ trait ActiveXObject extends js.Object {
   ): Unit = js.native
   @JSName("on")
   def on_LostFocus(
+    obj: Report,
+    event: LostFocus,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_LostFocus(
     obj: TextBox,
     event: LostFocus,
     handler: js.ThisFunction1[/* this */ TextBox, /* parameter */ js.Object, Unit]
@@ -2750,6 +2920,24 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ WebBrowserControl, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_OnConnect(
+    obj: Form,
+    event: OnConnect,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_OnDisconnect(
+    obj: Form,
+    event: OnDisconnect,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Page(
+    obj: Report,
+    event: Page,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_Paint(
     obj: PageHdrFtrInReport,
     event: Paint,
@@ -2768,16 +2956,58 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ Section, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_Query(
+    obj: Form,
+    event: Query,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Resize(
+    obj: Form,
+    event: Resize,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Resize(
+    obj: Report,
+    event: Resize,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_Retreat(
     obj: SectionInReport,
     event: Retreat,
     handler: js.ThisFunction1[/* this */ SectionInReport, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
+  def on_SelectionChange(
+    obj: Form,
+    event: SelectionChange,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
   def on_Terminate(
     obj: Class,
     event: Terminate,
     handler: js.ThisFunction1[/* this */ Class, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Timer(
+    obj: Form,
+    event: Timer,
+    handler: js.ThisFunction1[/* this */ Form, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  @JSName("on")
+  def on_Timer(
+    obj: Report,
+    event: Timer,
+    handler: js.ThisFunction1[/* this */ Report, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def set(
+    obj: CheckBoxInOption | ChildLabel | CustomControlInReport | OptionButtonInOption | ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
+    propertyName: accName | accValue,
+    parameterTypes: js.Array[_],
+    newValue: String
   ): Unit = js.native
   @JSName("set")
   def set_Columns(obj: ImexGrid, propertyName: Columns, parameterTypes: js.Array[Double], newValue: js.Any): Unit = js.native
@@ -2796,19 +3026,5 @@ trait ActiveXObject extends js.Object {
   def set_Selected(obj: Control, propertyName: Selected, parameterTypes: js.Array[Double], newValue: Double): Unit = js.native
   @JSName("set")
   def set_Selected(obj: ListBox, propertyName: Selected, parameterTypes: js.Array[Double], newValue: Double): Unit = js.native
-  @JSName("set")
-  def set_accName(
-    obj: CheckBoxInOption | ChildLabel | CustomControlInReport | OptionButtonInOption | ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
-    propertyName: accName,
-    parameterTypes: js.Array[_],
-    newValue: String
-  ): Unit = js.native
-  @JSName("set")
-  def set_accValue(
-    obj: CheckBoxInOption | ChildLabel | CustomControlInReport | OptionButtonInOption | ToggleButtonInOption | Attachment | BoundObjectFrame | CheckBox | ComboBox | CommandButton | CustomControl | EmptyCell | Form | Label | ListBox | NavigationButton | NavigationControl | ObjectFrame | OptionButton | OptionGroup | typings.activexAccess.Access.Page | SubForm | TabControl | TextBox | ToggleButton | WebBrowserControl,
-    propertyName: accValue,
-    parameterTypes: js.Array[_],
-    newValue: String
-  ): Unit = js.native
 }
 

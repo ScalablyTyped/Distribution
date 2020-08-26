@@ -26,17 +26,36 @@ trait UpdateUploadRequest extends js.Object {
 
 object UpdateUploadRequest {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName,
-    contentType: ContentType = null,
-    editContent: js.UndefOr[Boolean] = js.undefined,
-    name: Name = null
-  ): UpdateUploadRequest = {
+  def apply(arn: AmazonResourceName): UpdateUploadRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(editContent)) __obj.updateDynamic("editContent")(editContent.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUploadRequest]
   }
+  @scala.inline
+  implicit class UpdateUploadRequestOps[Self <: UpdateUploadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setEditContent(value: Boolean): Self = this.set("editContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditContent: Self = this.set("editContent", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

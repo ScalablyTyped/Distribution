@@ -31,6 +31,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancetemplatesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancetemplatesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -60,6 +61,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstanceTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceTemplate]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceTemplate] = js.native
   def get(params: ParamsResourceInstancetemplatesGet): GaxiosPromise[SchemaInstanceTemplate] = js.native
   def get(params: ParamsResourceInstancetemplatesGet, callback: BodyResponseCallback[SchemaInstanceTemplate]): Unit = js.native
   def get(
@@ -89,6 +91,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInstancetemplatesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInstancetemplatesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -122,6 +125,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancetemplatesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancetemplatesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -154,6 +158,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInstanceTemplateList] = js.native
   def list(callback: BodyResponseCallback[SchemaInstanceTemplateList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceTemplateList] = js.native
   def list(params: ParamsResourceInstancetemplatesList): GaxiosPromise[SchemaInstanceTemplateList] = js.native
   def list(
     params: ParamsResourceInstancetemplatesList,
@@ -187,6 +192,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInstancetemplatesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInstancetemplatesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -216,6 +222,7 @@ class ResourceInstancetemplates protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInstancetemplatesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInstancetemplatesTestiampermissions,

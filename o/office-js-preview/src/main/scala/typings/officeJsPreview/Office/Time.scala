@@ -84,6 +84,11 @@ trait Time extends js.Object {
     */
   def setAsync(dateTime: Date): Unit = js.native
   def setAsync(dateTime: Date, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setAsync(
+    dateTime: Date,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setAsync(dateTime: Date, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     dateTime: Date,

@@ -21,6 +21,7 @@ trait GetBounds extends js.Object {
   def getBottomCenter[O /* <: Vector2 */](): O = js.native
   def getBottomCenter[O /* <: Vector2 */](output: O): O = js.native
   def getBottomCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getBottomCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the bottom-left corner coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
@@ -30,6 +31,7 @@ trait GetBounds extends js.Object {
   def getBottomLeft[O /* <: Vector2 */](): O = js.native
   def getBottomLeft[O /* <: Vector2 */](output: O): O = js.native
   def getBottomLeft[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getBottomLeft[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the bottom-right corner coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
@@ -39,6 +41,7 @@ trait GetBounds extends js.Object {
   def getBottomRight[O /* <: Vector2 */](): O = js.native
   def getBottomRight[O /* <: Vector2 */](output: O): O = js.native
   def getBottomRight[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getBottomRight[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the bounds of this Game Object, regardless of origin.
     * The values are stored and returned in a Rectangle, or Rectangle-like, object.
@@ -62,6 +65,7 @@ trait GetBounds extends js.Object {
   def getLeftCenter[O /* <: Vector2 */](): O = js.native
   def getLeftCenter[O /* <: Vector2 */](output: O): O = js.native
   def getLeftCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getLeftCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the right-center coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
@@ -71,6 +75,7 @@ trait GetBounds extends js.Object {
   def getRightCenter[O /* <: Vector2 */](): O = js.native
   def getRightCenter[O /* <: Vector2 */](output: O): O = js.native
   def getRightCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getRightCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the top-center coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
@@ -80,6 +85,7 @@ trait GetBounds extends js.Object {
   def getTopCenter[O /* <: Vector2 */](): O = js.native
   def getTopCenter[O /* <: Vector2 */](output: O): O = js.native
   def getTopCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getTopCenter[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the top-left corner coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
@@ -89,6 +95,7 @@ trait GetBounds extends js.Object {
   def getTopLeft[O /* <: Vector2 */](): O = js.native
   def getTopLeft[O /* <: Vector2 */](output: O): O = js.native
   def getTopLeft[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getTopLeft[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
   /**
     * Gets the top-right corner coordinate of this Game Object, regardless of origin.
     * The returned point is calculated in local space and does not factor in any parent containers
@@ -98,5 +105,6 @@ trait GetBounds extends js.Object {
   def getTopRight[O /* <: Vector2 */](): O = js.native
   def getTopRight[O /* <: Vector2 */](output: O): O = js.native
   def getTopRight[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
+  def getTopRight[O /* <: Vector2 */](output: js.UndefOr[scala.Nothing], includeParent: Boolean): O = js.native
 }
 

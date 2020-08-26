@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Newlinechar extends js.Object {
   /**
     * The newline_char is a string representation of a valid RegExp
@@ -16,23 +17,42 @@ trait Newlinechar extends js.Object {
     * Avoid using a newline_char that may occur elsewhere in a PGN,
     * such as . or x, as this will result in unexpected behavior.
     */
-  var newline_char: js.UndefOr[String] = js.undefined
+  var newline_char: js.UndefOr[String] = js.native
   /**
     * The sloppy flag is a boolean that permits chess.js to parse moves in
     * non-standard notations.
     * See .move documentation for more information about non-SAN
     * notations.
     */
-  var sloppy: js.UndefOr[Boolean] = js.undefined
+  var sloppy: js.UndefOr[Boolean] = js.native
 }
 
 object Newlinechar {
   @scala.inline
-  def apply(newline_char: String = null, sloppy: js.UndefOr[Boolean] = js.undefined): Newlinechar = {
+  def apply(): Newlinechar = {
     val __obj = js.Dynamic.literal()
-    if (newline_char != null) __obj.updateDynamic("newline_char")(newline_char.asInstanceOf[js.Any])
-    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Newlinechar]
   }
+  @scala.inline
+  implicit class NewlinecharOps[Self <: Newlinechar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewline_char(value: String): Self = this.set("newline_char", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewline_char: Self = this.set("newline_char", js.undefined)
+    @scala.inline
+    def setSloppy(value: Boolean): Self = this.set("sloppy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSloppy: Self = this.set("sloppy", js.undefined)
+  }
+  
 }
 

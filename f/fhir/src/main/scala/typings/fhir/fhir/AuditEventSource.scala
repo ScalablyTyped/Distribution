@@ -7,50 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * Audit Event Reporter
   */
+@js.native
 trait AuditEventSource extends BackboneElement {
   /**
     * Contains extended information for property 'site'.
     */
-  var _site: js.UndefOr[Element] = js.undefined
+  var _site: js.UndefOr[Element] = js.native
   /**
     * The identity of source detecting the event
     */
-  var identifier: Identifier
+  var identifier: Identifier = js.native
   /**
     * Logical source location within the enterprise
     */
-  var site: js.UndefOr[String] = js.undefined
+  var site: js.UndefOr[String] = js.native
   /**
     * The type of source where event originated
     */
-  var `type`: js.UndefOr[js.Array[Coding]] = js.undefined
+  var `type`: js.UndefOr[js.Array[Coding]] = js.native
 }
 
 object AuditEventSource {
   @scala.inline
-  def apply(
-    identifier: Identifier,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _site: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    site: String = null,
-    `type`: js.Array[Coding] = null
-  ): AuditEventSource = {
+  def apply(identifier: Identifier): AuditEventSource = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_site != null) __obj.updateDynamic("_site")(_site.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditEventSource]
   }
+  @scala.inline
+  implicit class AuditEventSourceOps[Self <: AuditEventSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_site(value: Element): Self = this.set("_site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_site: Self = this.set("_site", js.undefined)
+    @scala.inline
+    def setSite(value: String): Self = this.set("site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSite: Self = this.set("site", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: Coding*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: js.Array[Coding]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

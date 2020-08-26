@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * list gets changes consistently during a work session.
   * @since OOo 2.0
   */
+@js.native
 trait PopupMenuController
   extends XStatusListener
      with XPopupMenuController

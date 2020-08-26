@@ -25,7 +25,11 @@ trait PushNotification extends js.Object {
   		 * @param id
   		 */
   def finish(): Unit = js.native
+  def finish(successHandler: js.UndefOr[scala.Nothing], errorHandler: js.UndefOr[scala.Nothing], id: String): Unit = js.native
+  def finish(successHandler: js.UndefOr[scala.Nothing], errorHandler: js.Function0[_]): Unit = js.native
+  def finish(successHandler: js.UndefOr[scala.Nothing], errorHandler: js.Function0[_], id: String): Unit = js.native
   def finish(successHandler: js.Function0[_]): Unit = js.native
+  def finish(successHandler: js.Function0[_], errorHandler: js.UndefOr[scala.Nothing], id: String): Unit = js.native
   def finish(successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
   def finish(successHandler: js.Function0[_], errorHandler: js.Function0[_], id: String): Unit = js.native
   /**
@@ -106,6 +110,7 @@ trait PushNotification extends js.Object {
   		 * @param topics
   		 */
   def unregister(successHandler: js.Function0[_]): Unit = js.native
+  def unregister(successHandler: js.Function0[_], errorHandler: js.UndefOr[scala.Nothing], topics: js.Array[String]): Unit = js.native
   def unregister(successHandler: js.Function0[_], errorHandler: js.Function0[_]): Unit = js.native
   def unregister(successHandler: js.Function0[_], errorHandler: js.Function0[_], topics: js.Array[String]): Unit = js.native
   /**

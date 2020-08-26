@@ -25,6 +25,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`center-end`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-right`
 import typings.arcgisJsApi.arcgisJsApiStrings.`center-start`
+import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.static
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -33,6 +35,28 @@ import scala.scalajs.js.annotation._
 trait LabelClass
   extends Accessor
      with JSONSupport {
+  /**
+    * Defines how labels should be placed relative to one another. By default, labels have a `static` deconfliction strategy, meaning labels that overlap are dropped to make them easier to read.  In some cases where few labels overlap, it may be preferable to turn off label deconfliction with the `none` option. It is also advisable to turn off deconfliction when [labeling clusters](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#labelingInfo) with a count of features in the center of the cluster.  >>> esri-read-more  The following images illustrate when you may, or may not, want labels to deconflict.  When labeling dense layers, the default deconfliction strategy (`static`) is preferable since labeling all features causes significant overlap, making the labels illegible. Keeping the default setting allows some labels to render. As the user zooms in, all labels will eventually come into view.
+    *
+    * static (default) | none
+    * -----------------|------
+    * ![layer-deconfliction-on](https://developers.arcgis.com/javascript/assets/img/apiref/layers/clustering/layer-deconfliction-on.png) | ![layer-deconfliction-off](https://developers.arcgis.com/javascript/assets/img/apiref/layers/clustering/layer-deconfliction-off.png)
+    *
+    * When labeling clusters (or even sparsely distributed features) with small labels, it may be preferable to allow labels to slightly overlap since the information is still legible and doesn't significantly occlude the visualization. In the clustering scenario, a label deconfliction setting of `static` may actually cause more confusion, making some features not appear to be clusters.
+    *
+    * static (default) | none
+    * -----------------|------
+    * ![cluster-deconfliction-on](https://developers.arcgis.com/javascript/assets/img/apiref/layers/clustering/cluster-deconfliction-on.png) | ![cluster-deconfliction-off](https://developers.arcgis.com/javascript/assets/img/apiref/layers/clustering/cluster-deconfliction-off.png)
+    *
+    * >>>
+    *
+    * > **Known Limitations**  Currently, this property only applies to FeatureLayer, CSVLayer, and StreamLayer in 2D MapViews.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#deconflictionStrategy)
+    *
+    * @default static
+    */
+  var deconflictionStrategy: none | static = js.native
   /**
     * Defines the content of label text for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html). If working with [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), use [labelExpressionInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo) instead.  Attribute values may be included in labels using SQL syntax. To include an attribute value in a label, wrap the name of the field in square brackets `[]`. See the example snippet below.
     *

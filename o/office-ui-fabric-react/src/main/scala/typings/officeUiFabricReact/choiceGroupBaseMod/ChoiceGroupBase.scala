@@ -27,10 +27,5 @@ class ChoiceGroupBase protected ()
   var _onFocus: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MChoiceGroupBase(prevProps: IChoiceGroupProps, prevState: IChoiceGroupState): Unit = js.native
-  /**
-    * Sets focus to the checked option or the first enabled option in the ChoiceGroup.
-    */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 

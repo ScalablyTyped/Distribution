@@ -39,7 +39,6 @@ package object mod {
   type NonZeroFiniteNumber = scala.Double
   type Nullable[A] = A | scala.Null
   type Ord[A] = typings.sanctuary.mod.Setoid[A]
-  type Pair[A, B] = js.Tuple2[A, B]
   type Plus[A] = typings.sanctuary.mod.Alt[A]
   type Predicate[A] = js.Function1[/* a */ A, scala.Boolean]
   type Profunctor[B, C] = typings.sanctuary.mod.Functor[C]

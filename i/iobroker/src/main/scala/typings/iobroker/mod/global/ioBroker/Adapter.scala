@@ -476,9 +476,16 @@ trait Adapter extends js.Object {
   def delStateAsync(id: String, options: js.Any): js.Promise[Unit] = js.native
   /** Deletes a channel and its states. It must have been created with `createChannel` */
   def deleteChannel(channelName: String): Unit = js.native
+  def deleteChannel(channelName: String, options: js.UndefOr[scala.Nothing], callback: ErrorCallback): Unit = js.native
   def deleteChannel(channelName: String, options: js.Any): Unit = js.native
   def deleteChannel(channelName: String, options: js.Any, callback: ErrorCallback): Unit = js.native
   def deleteChannel(parentDevice: String, channelName: String): Unit = js.native
+  def deleteChannel(
+    parentDevice: String,
+    channelName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ErrorCallback
+  ): Unit = js.native
   def deleteChannel(parentDevice: String, channelName: String, options: js.Any): Unit = js.native
   def deleteChannel(parentDevice: String, channelName: String, options: js.Any, callback: ErrorCallback): Unit = js.native
   /** Deletes a channel and its states. It must have been created with `createChannel` */
@@ -507,9 +514,22 @@ trait Adapter extends js.Object {
   def deleteDeviceAsync(deviceName: String): js.Promise[Unit] = js.native
   def deleteDeviceAsync(deviceName: String, options: js.Any): js.Promise[Unit] = js.native
   def deleteState(parentChannel: String, stateName: String): Unit = js.native
+  def deleteState(
+    parentChannel: String,
+    stateName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ErrorCallback
+  ): Unit = js.native
   def deleteState(parentChannel: String, stateName: String, options: js.Any): Unit = js.native
   def deleteState(parentChannel: String, stateName: String, options: js.Any, callback: ErrorCallback): Unit = js.native
   def deleteState(parentDevice: String, parentChannel: String, stateName: String): Unit = js.native
+  def deleteState(
+    parentDevice: String,
+    parentChannel: String,
+    stateName: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ErrorCallback
+  ): Unit = js.native
   def deleteState(parentDevice: String, parentChannel: String, stateName: String, options: js.Any): Unit = js.native
   def deleteState(
     parentDevice: String,
@@ -520,6 +540,7 @@ trait Adapter extends js.Object {
   ): Unit = js.native
   /** Deletes a state. It must have been created with `createState` */
   def deleteState(stateName: String): Unit = js.native
+  def deleteState(stateName: String, options: js.UndefOr[scala.Nothing], callback: ErrorCallback): Unit = js.native
   def deleteState(stateName: String, options: js.Any): Unit = js.native
   def deleteState(stateName: String, options: js.Any, callback: ErrorCallback): Unit = js.native
   def deleteStateAsync(parentChannel: String, stateName: String): js.Promise[Unit] = js.native
@@ -752,17 +773,27 @@ trait Adapter extends js.Object {
   def getObjectList(params: GetObjectListParams, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: GetObjectListParams, options: Sorted, callback: GetObjectListCallback): Unit = js.native
   def getObjectList(params: GetObjectListParams, options: Record[String, _], callback: GetObjectListCallback): Unit = js.native
-  def getObjectListAsync(): GetObjectListPromise = js.native
-  def getObjectListAsync(params: Null, options: Sorted): GetObjectListPromise = js.native
-  def getObjectListAsync(params: Null, options: Record[String, _]): GetObjectListPromise = js.native
   /**
     * Returns a list of objects with id between params.startkey and params.endkey
     * @param params Parameters determining the objects included in the return list. Null to include all objects
     * @param options If the returned list should be sorted. And some internal options.
     */
+  def getObjectListAsync(): GetObjectListPromise = js.native
+  def getObjectListAsync(params: Null, options: Sorted): GetObjectListPromise = js.native
+  def getObjectListAsync(params: Null, options: Record[String, _]): GetObjectListPromise = js.native
   def getObjectListAsync(params: GetObjectListParams): GetObjectListPromise = js.native
   def getObjectListAsync(params: GetObjectListParams, options: Sorted): GetObjectListPromise = js.native
   def getObjectListAsync(params: GetObjectListParams, options: Record[String, _]): GetObjectListPromise = js.native
+  def getObjectView(design: String, search: String, params: js.UndefOr[scala.Nothing], callback: GetObjectViewCallback): Unit = js.native
+  def getObjectView(
+    design: String,
+    search: String,
+    params: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    callback: GetObjectViewCallback
+  ): Unit = js.native
+  def getObjectView(design: String, search: String, params: Null, callback: GetObjectViewCallback): Unit = js.native
+  def getObjectView(design: String, search: String, params: Null, options: js.Any, callback: GetObjectViewCallback): Unit = js.native
   /**
     * Query a predefined object view (similar to SQL stored procedures) and return the results
     * For a detailed description refer to https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation#object-fields
@@ -773,16 +804,11 @@ trait Adapter extends js.Object {
     * @param options (optional) Some internal options.
     * @param callback Is called when the operation has finished (successfully or not)
     */
+  def getObjectView(design: String, search: String, params: GetObjectViewParams, callback: GetObjectViewCallback): Unit = js.native
   def getObjectView(
     design: String,
     search: String,
-    params: js.UndefOr[GetObjectViewParams | Null],
-    callback: GetObjectViewCallback
-  ): Unit = js.native
-  def getObjectView(
-    design: String,
-    search: String,
-    params: js.UndefOr[GetObjectViewParams | Null],
+    params: GetObjectViewParams,
     options: js.Any,
     callback: GetObjectViewCallback
   ): Unit = js.native
@@ -796,6 +822,7 @@ trait Adapter extends js.Object {
     * @param options (optional) Some internal options.
     */
   def getObjectViewAsync(design: String, search: String): GetObjectViewPromise = js.native
+  def getObjectViewAsync(design: String, search: String, params: js.UndefOr[scala.Nothing], options: js.Any): GetObjectViewPromise = js.native
   def getObjectViewAsync(design: String, search: String, params: Null, options: js.Any): GetObjectViewPromise = js.native
   def getObjectViewAsync(design: String, search: String, params: GetObjectViewParams): GetObjectViewPromise = js.native
   def getObjectViewAsync(design: String, search: String, params: GetObjectViewParams, options: js.Any): GetObjectViewPromise = js.native
@@ -1026,8 +1053,8 @@ trait Adapter extends js.Object {
   /** Creates an object (which might not belong to this adapter) in the object db. Existing objects are not overwritten. */
   def setForeignObjectNotExistsAsync(id: String, obj: SettableObject): SetObjectPromise = js.native
   def setForeignObjectNotExistsAsync(id: String, obj: SettableObject, options: js.Any): SetObjectPromise = js.native
-  def setForeignState(id: String): Unit = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB. */
+  def setForeignState(id: String): Unit = js.native
   def setForeignState(id: String, state: String): Unit = js.native
   def setForeignState(id: String, state: String, ack: Boolean): Unit = js.native
   def setForeignState(id: String, state: String, ack: Boolean, callback: SetStateCallback): Unit = js.native
@@ -1075,8 +1102,8 @@ trait Adapter extends js.Object {
   def setForeignState(id: String, state: State, callback: SetStateCallback): Unit = js.native
   def setForeignState(id: String, state: State, options: js.Any): Unit = js.native
   def setForeignState(id: String, state: State, options: js.Any, callback: SetStateCallback): Unit = js.native
-  def setForeignStateAsync(id: String): SetStatePromise = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB. */
+  def setForeignStateAsync(id: String): SetStatePromise = js.native
   def setForeignStateAsync(id: String, state: String): SetStatePromise = js.native
   def setForeignStateAsync(id: String, state: String, ack: Boolean): SetStatePromise = js.native
   def setForeignStateAsync(id: String, state: String, ack: Boolean, options: js.Any): SetStatePromise = js.native
@@ -1100,8 +1127,8 @@ trait Adapter extends js.Object {
   def setForeignStateAsync(id: String, state: State, ack: Boolean): SetStatePromise = js.native
   def setForeignStateAsync(id: String, state: State, ack: Boolean, options: js.Any): SetStatePromise = js.native
   def setForeignStateAsync(id: String, state: State, options: js.Any): SetStatePromise = js.native
-  def setForeignStateChanged(id: String): Unit = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
+  def setForeignStateChanged(id: String): Unit = js.native
   def setForeignStateChanged(id: String, state: String): Unit = js.native
   def setForeignStateChanged(id: String, state: String, ack: Boolean): Unit = js.native
   def setForeignStateChanged(id: String, state: String, ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
@@ -1149,8 +1176,8 @@ trait Adapter extends js.Object {
   def setForeignStateChanged(id: String, state: State, callback: SetStateChangedCallback): Unit = js.native
   def setForeignStateChanged(id: String, state: State, options: js.Any): Unit = js.native
   def setForeignStateChanged(id: String, state: State, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
-  def setForeignStateChangedAsync(id: String): SetStateChangedPromise = js.native
   /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
+  def setForeignStateChangedAsync(id: String): SetStateChangedPromise = js.native
   def setForeignStateChangedAsync(id: String, state: String): SetStateChangedPromise = js.native
   def setForeignStateChangedAsync(id: String, state: String, ack: Boolean): SetStateChangedPromise = js.native
   def setForeignStateChangedAsync(id: String, state: String, ack: Boolean, options: js.Any): SetStateChangedPromise = js.native
@@ -1203,12 +1230,12 @@ trait Adapter extends js.Object {
   /** Sets a new password for the given user */
   def setPasswordAsync(user: String, password: String): js.Promise[Unit] = js.native
   def setPasswordAsync(user: String, password: String, options: js.Any): js.Promise[Unit] = js.native
-  def setState(id: String): Unit = js.native
   // ==============================
   // states
   // Multiple signatures help understanding what the parameters are about
   /** Writes a value into the states DB. */
   // tslint:disable:unified-signatures
+  def setState(id: String): Unit = js.native
   def setState(id: String, state: String): Unit = js.native
   def setState(id: String, state: String, ack: Boolean): Unit = js.native
   def setState(id: String, state: String, ack: Boolean, callback: SetStateCallback): Unit = js.native
@@ -1256,8 +1283,8 @@ trait Adapter extends js.Object {
   def setState(id: String, state: State, callback: SetStateCallback): Unit = js.native
   def setState(id: String, state: State, options: js.Any): Unit = js.native
   def setState(id: String, state: State, options: js.Any, callback: SetStateCallback): Unit = js.native
-  def setStateAsync(id: String): SetStatePromise = js.native
   /** Writes a value into the states DB. */
+  def setStateAsync(id: String): SetStatePromise = js.native
   def setStateAsync(id: String, state: String): SetStatePromise = js.native
   def setStateAsync(id: String, state: String, ack: Boolean): SetStatePromise = js.native
   def setStateAsync(id: String, state: String, ack: Boolean, options: js.Any): SetStatePromise = js.native
@@ -1281,8 +1308,8 @@ trait Adapter extends js.Object {
   def setStateAsync(id: String, state: State, ack: Boolean): SetStatePromise = js.native
   def setStateAsync(id: String, state: State, ack: Boolean, options: js.Any): SetStatePromise = js.native
   def setStateAsync(id: String, state: State, options: js.Any): SetStatePromise = js.native
-  def setStateChanged(id: String): Unit = js.native
   /** Writes a value into the states DB only if it has changed. */
+  def setStateChanged(id: String): Unit = js.native
   def setStateChanged(id: String, state: String): Unit = js.native
   def setStateChanged(id: String, state: String, ack: Boolean): Unit = js.native
   def setStateChanged(id: String, state: String, ack: Boolean, callback: SetStateChangedCallback): Unit = js.native
@@ -1330,8 +1357,8 @@ trait Adapter extends js.Object {
   def setStateChanged(id: String, state: State, callback: SetStateChangedCallback): Unit = js.native
   def setStateChanged(id: String, state: State, options: js.Any): Unit = js.native
   def setStateChanged(id: String, state: State, options: js.Any, callback: SetStateChangedCallback): Unit = js.native
-  def setStateChangedAsync(id: String): SetStateChangedPromise = js.native
   /** Writes a value into the states DB only if it has changed. */
+  def setStateChangedAsync(id: String): SetStateChangedPromise = js.native
   def setStateChangedAsync(id: String, state: String): SetStateChangedPromise = js.native
   def setStateChangedAsync(id: String, state: String, ack: Boolean): SetStateChangedPromise = js.native
   def setStateChangedAsync(id: String, state: String, ack: Boolean, options: js.Any): SetStateChangedPromise = js.native
@@ -1396,6 +1423,7 @@ trait Adapter extends js.Object {
     */
   def terminate(): scala.Nothing = js.native
   def terminate(exitCode: Double): scala.Nothing = js.native
+  def terminate(reason: js.UndefOr[scala.Nothing], exitCode: Double): scala.Nothing = js.native
   def terminate(reason: String): scala.Nothing = js.native
   def terminate(reason: String, exitCode: Double): scala.Nothing = js.native
   /**

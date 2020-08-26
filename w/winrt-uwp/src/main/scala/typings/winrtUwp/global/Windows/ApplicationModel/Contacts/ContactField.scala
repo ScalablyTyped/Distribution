@@ -39,17 +39,5 @@ class ContactField protected ()
     `type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType,
     category: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory
   ) = this()
-  /** Gets the category for the contact data. */
-  /* CompleteClass */
-  override var category: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldCategory = js.native
-  /** Gets the name of the field. */
-  /* CompleteClass */
-  override var name: String = js.native
-  /** Gets the contact field type for the data. */
-  /* CompleteClass */
-  override var `type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType = js.native
-  /** Gets the value of the contact data. */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 

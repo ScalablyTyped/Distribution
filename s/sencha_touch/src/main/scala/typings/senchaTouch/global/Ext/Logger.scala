@@ -26,6 +26,7 @@ object Logger extends js.Object {
     * @returns Ext.Logger this
     */
   def log(): ILogger = js.native
+  def log(message: js.UndefOr[scala.Nothing], priority: Double): ILogger = js.native
   def log(message: java.lang.String): ILogger = js.native
   def log(message: java.lang.String, priority: Double): ILogger = js.native
   /** [Method] Convenience method for log with priority verbose */

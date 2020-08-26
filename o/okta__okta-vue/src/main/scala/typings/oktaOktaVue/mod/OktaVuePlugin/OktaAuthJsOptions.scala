@@ -5,51 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OktaAuthJsOptions extends OktaOpenIDOptions {
-  var authorizeUrl: js.UndefOr[String] = js.undefined
-  var ignoreSignature: js.UndefOr[Boolean] = js.undefined
-  var maxClockSkew: js.UndefOr[Double] = js.undefined
-  var pkce: js.UndefOr[Boolean] = js.undefined
-  var postLogoutRedirectUri: js.UndefOr[String] = js.undefined
-  var tokenManager: js.UndefOr[AutoRenew] = js.undefined
-  var tokenUrl: js.UndefOr[String] = js.undefined
-  var userinfoUrl: js.UndefOr[String] = js.undefined
+  var authorizeUrl: js.UndefOr[String] = js.native
+  var ignoreSignature: js.UndefOr[Boolean] = js.native
+  var maxClockSkew: js.UndefOr[Double] = js.native
+  var pkce: js.UndefOr[Boolean] = js.native
+  var postLogoutRedirectUri: js.UndefOr[String] = js.native
+  var tokenManager: js.UndefOr[AutoRenew] = js.native
+  var tokenUrl: js.UndefOr[String] = js.native
+  var userinfoUrl: js.UndefOr[String] = js.native
 }
 
 object OktaAuthJsOptions {
   @scala.inline
-  def apply(
-    authorizeUrl: String = null,
-    ignoreSignature: js.UndefOr[Boolean] = js.undefined,
-    maxClockSkew: js.UndefOr[Double] = js.undefined,
-    nonce: String = null,
-    pkce: js.UndefOr[Boolean] = js.undefined,
-    postLogoutRedirectUri: String = null,
-    responseMode: String = null,
-    responseType: String | js.Array[String] = null,
-    scopes: js.Array[String] = null,
-    sessionToken: String = null,
-    state: String = null,
-    tokenManager: AutoRenew = null,
-    tokenUrl: String = null,
-    userinfoUrl: String = null
-  ): OktaAuthJsOptions = {
+  def apply(): OktaAuthJsOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizeUrl != null) __obj.updateDynamic("authorizeUrl")(authorizeUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSignature)) __obj.updateDynamic("ignoreSignature")(ignoreSignature.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxClockSkew)) __obj.updateDynamic("maxClockSkew")(maxClockSkew.get.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(pkce)) __obj.updateDynamic("pkce")(pkce.get.asInstanceOf[js.Any])
-    if (postLogoutRedirectUri != null) __obj.updateDynamic("postLogoutRedirectUri")(postLogoutRedirectUri.asInstanceOf[js.Any])
-    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (sessionToken != null) __obj.updateDynamic("sessionToken")(sessionToken.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tokenManager != null) __obj.updateDynamic("tokenManager")(tokenManager.asInstanceOf[js.Any])
-    if (tokenUrl != null) __obj.updateDynamic("tokenUrl")(tokenUrl.asInstanceOf[js.Any])
-    if (userinfoUrl != null) __obj.updateDynamic("userinfoUrl")(userinfoUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[OktaAuthJsOptions]
   }
+  @scala.inline
+  implicit class OktaAuthJsOptionsOps[Self <: OktaAuthJsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizeUrl(value: String): Self = this.set("authorizeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizeUrl: Self = this.set("authorizeUrl", js.undefined)
+    @scala.inline
+    def setIgnoreSignature(value: Boolean): Self = this.set("ignoreSignature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreSignature: Self = this.set("ignoreSignature", js.undefined)
+    @scala.inline
+    def setMaxClockSkew(value: Double): Self = this.set("maxClockSkew", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxClockSkew: Self = this.set("maxClockSkew", js.undefined)
+    @scala.inline
+    def setPkce(value: Boolean): Self = this.set("pkce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePkce: Self = this.set("pkce", js.undefined)
+    @scala.inline
+    def setPostLogoutRedirectUri(value: String): Self = this.set("postLogoutRedirectUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostLogoutRedirectUri: Self = this.set("postLogoutRedirectUri", js.undefined)
+    @scala.inline
+    def setTokenManager(value: AutoRenew): Self = this.set("tokenManager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenManager: Self = this.set("tokenManager", js.undefined)
+    @scala.inline
+    def setTokenUrl(value: String): Self = this.set("tokenUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenUrl: Self = this.set("tokenUrl", js.undefined)
+    @scala.inline
+    def setUserinfoUrl(value: String): Self = this.set("userinfoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserinfoUrl: Self = this.set("userinfoUrl", js.undefined)
+  }
+  
 }
 

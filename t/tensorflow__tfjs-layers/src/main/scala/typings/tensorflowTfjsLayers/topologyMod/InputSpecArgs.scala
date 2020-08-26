@@ -7,39 +7,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputSpecArgs extends js.Object {
   /** Dictionary mapping integer axes to a specific dimension value. */
-  var axes: js.UndefOr[NumberDictionary[Double]] = js.undefined
+  var axes: js.UndefOr[NumberDictionary[Double]] = js.native
   /** Expected datatype of the input. */
-  var dtype: js.UndefOr[DataType] = js.undefined
+  var dtype: js.UndefOr[DataType] = js.native
   /** Maximum rank of the input. */
-  var maxNDim: js.UndefOr[Double] = js.undefined
+  var maxNDim: js.UndefOr[Double] = js.native
   /** Minimum rank of the input. */
-  var minNDim: js.UndefOr[Double] = js.undefined
+  var minNDim: js.UndefOr[Double] = js.native
   /** Expected rank of the input. */
-  var ndim: js.UndefOr[Double] = js.undefined
+  var ndim: js.UndefOr[Double] = js.native
   /** Expected shape of the input (may include null for unchecked axes). */
-  var shape: js.UndefOr[Shape] = js.undefined
+  var shape: js.UndefOr[Shape] = js.native
 }
 
 object InputSpecArgs {
   @scala.inline
-  def apply(
-    axes: NumberDictionary[Double] = null,
-    dtype: DataType = null,
-    maxNDim: js.UndefOr[Double] = js.undefined,
-    minNDim: js.UndefOr[Double] = js.undefined,
-    ndim: js.UndefOr[Double] = js.undefined,
-    shape: Shape = null
-  ): InputSpecArgs = {
+  def apply(): InputSpecArgs = {
     val __obj = js.Dynamic.literal()
-    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (dtype != null) __obj.updateDynamic("dtype")(dtype.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxNDim)) __obj.updateDynamic("maxNDim")(maxNDim.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minNDim)) __obj.updateDynamic("minNDim")(minNDim.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ndim)) __obj.updateDynamic("ndim")(ndim.get.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSpecArgs]
   }
+  @scala.inline
+  implicit class InputSpecArgsOps[Self <: InputSpecArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxes(value: NumberDictionary[Double]): Self = this.set("axes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxes: Self = this.set("axes", js.undefined)
+    @scala.inline
+    def setDtype(value: DataType): Self = this.set("dtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDtype: Self = this.set("dtype", js.undefined)
+    @scala.inline
+    def setMaxNDim(value: Double): Self = this.set("maxNDim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxNDim: Self = this.set("maxNDim", js.undefined)
+    @scala.inline
+    def setMinNDim(value: Double): Self = this.set("minNDim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinNDim: Self = this.set("minNDim", js.undefined)
+    @scala.inline
+    def setNdim(value: Double): Self = this.set("ndim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNdim: Self = this.set("ndim", js.undefined)
+    @scala.inline
+    def setShapeVarargs(value: (Null | Double)*): Self = this.set("shape", js.Array(value :_*))
+    @scala.inline
+    def setShape(value: Shape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+  }
+  
 }
 

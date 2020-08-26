@@ -33,12 +33,36 @@ trait SchemaPricePerBuyer extends js.Object {
 
 object SchemaPricePerBuyer {
   @scala.inline
-  def apply(advertiserIds: js.Array[String] = null, buyer: SchemaBuyer = null, price: SchemaPrice = null): SchemaPricePerBuyer = {
+  def apply(): SchemaPricePerBuyer = {
     val __obj = js.Dynamic.literal()
-    if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds.asInstanceOf[js.Any])
-    if (buyer != null) __obj.updateDynamic("buyer")(buyer.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPricePerBuyer]
   }
+  @scala.inline
+  implicit class SchemaPricePerBuyerOps[Self <: SchemaPricePerBuyer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiserIdsVarargs(value: String*): Self = this.set("advertiserIds", js.Array(value :_*))
+    @scala.inline
+    def setAdvertiserIds(value: js.Array[String]): Self = this.set("advertiserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIds: Self = this.set("advertiserIds", js.undefined)
+    @scala.inline
+    def setBuyer(value: SchemaBuyer): Self = this.set("buyer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyer: Self = this.set("buyer", js.undefined)
+    @scala.inline
+    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends Duplexify {
   def this(writable: Writable) = this()
+  def this(writable: js.UndefOr[scala.Nothing], readable: Readable) = this()
   def this(writable: Writable, readable: Readable) = this()
+  def this(
+    writable: js.UndefOr[scala.Nothing],
+    readable: js.UndefOr[scala.Nothing],
+    streamOptions: DuplexOptions
+  ) = this()
+  def this(writable: js.UndefOr[scala.Nothing], readable: Readable, streamOptions: DuplexOptions) = this()
+  def this(writable: Writable, readable: js.UndefOr[scala.Nothing], streamOptions: DuplexOptions) = this()
   def this(writable: Writable, readable: Readable, streamOptions: DuplexOptions) = this()
 }
 

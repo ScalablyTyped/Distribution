@@ -22,14 +22,30 @@ trait ListUserImportJobsRequest extends js.Object {
 
 object ListUserImportJobsRequest {
   @scala.inline
-  def apply(
-    MaxResults: PoolQueryLimitType,
-    UserPoolId: UserPoolIdType,
-    PaginationToken: PaginationKeyType = null
-  ): ListUserImportJobsRequest = {
+  def apply(MaxResults: PoolQueryLimitType, UserPoolId: UserPoolIdType): ListUserImportJobsRequest = {
     val __obj = js.Dynamic.literal(MaxResults = MaxResults.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-    if (PaginationToken != null) __obj.updateDynamic("PaginationToken")(PaginationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserImportJobsRequest]
   }
+  @scala.inline
+  implicit class ListUserImportJobsRequestOps[Self <: ListUserImportJobsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: PoolQueryLimitType): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaginationToken(value: PaginationKeyType): Self = this.set("PaginationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationToken: Self = this.set("PaginationToken", js.undefined)
+  }
+  
 }
 

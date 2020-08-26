@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type Part = typings.formatjsIntlUtils.polyfillUtilsMod.LiteralPart | typings.formatjsIntlRelativetimeformat.mod.RelativeTimeFormatNumberPart
+  type Locale = java.lang.String
+  type RelativeTimeLocaleData = typings.formatjsIntlRelativetimeformat.mod.LocaleData[typings.formatjsIntlRelativetimeformat.mod.LocaleFieldsData]
 }

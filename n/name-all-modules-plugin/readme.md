@@ -12,7 +12,7 @@ Names all remaining modules that do not get named via NamedModulesPlugin Edit
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 12207920 |
+| # downloads        | 11025294 |
 | # stars            | 2 |
 
 ## Links

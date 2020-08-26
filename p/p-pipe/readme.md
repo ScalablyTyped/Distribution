@@ -11,8 +11,8 @@ Compose promise-returning & async functions into a reusable pipeline
 | Full name          | p-pipe |
 | Keywords           | promise, pipe, pipeline, compose, composition, combine, flow, serial, functions, reusable, async, await, promises, bluebird |
 | # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 45871044 |
+| # dependents       | 33 |
+| # downloads        | 47831125 |
 | # stars            | 0 |
 
 ## Links

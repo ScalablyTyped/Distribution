@@ -28,6 +28,7 @@ class ResourceNotifications protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceNotificationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceNotificationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceNotifications protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNotification] = js.native
   def get(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationsGet): GaxiosPromise[SchemaNotification] = js.native
   def get(params: ParamsResourceNotificationsGet, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def get(
@@ -86,6 +88,7 @@ class ResourceNotifications protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaNotifications] = js.native
   def list(callback: BodyResponseCallback[SchemaNotifications]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotifications] = js.native
   def list(params: ParamsResourceNotificationsList): GaxiosPromise[SchemaNotifications] = js.native
   def list(params: ParamsResourceNotificationsList, callback: BodyResponseCallback[SchemaNotifications]): Unit = js.native
   def list(
@@ -115,6 +118,7 @@ class ResourceNotifications protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaNotification] = js.native
   def patch(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def patch(params: ParamsResourceNotificationsPatch): GaxiosPromise[SchemaNotification] = js.native
   def patch(params: ParamsResourceNotificationsPatch, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def patch(
@@ -144,6 +148,7 @@ class ResourceNotifications protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaNotification] = js.native
   def update(callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotification] = js.native
   def update(params: ParamsResourceNotificationsUpdate): GaxiosPromise[SchemaNotification] = js.native
   def update(params: ParamsResourceNotificationsUpdate, callback: BodyResponseCallback[SchemaNotification]): Unit = js.native
   def update(

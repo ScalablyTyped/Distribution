@@ -4,47 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Opts extends js.Object {
   /*
     if true and the source is a child_process the stream will block the entire process (timeouts wont work anymore, but splitting and listening on data still works, because they work sync)
     */
-  var blocking: js.UndefOr[Boolean] = js.undefined
+  var blocking: js.UndefOr[Boolean] = js.native
   /*
     immediately call disable
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /*
     default encoding for writing strings
     */
-  var encoding: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
   /*
     defines buffer level or sets buffer to given size (see ↓setSize for more)
     */
-  var size: js.UndefOr[js.Any] = js.undefined
+  var size: js.UndefOr[js.Any] = js.native
   /*
     short form for:
     split(token, function (chunk) {emit('data', chunk)})
     */
   // String or Buffer
-  var split: js.UndefOr[js.Any] = js.undefined
+  var split: js.UndefOr[js.Any] = js.native
 }
 
 object Opts {
   @scala.inline
-  def apply(
-    blocking: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    size: js.Any = null,
-    split: js.Any = null
-  ): Opts = {
+  def apply(): Opts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blocking)) __obj.updateDynamic("blocking")(blocking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
+  @scala.inline
+  implicit class OptsOps[Self <: Opts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlocking(value: Boolean): Self = this.set("blocking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlocking: Self = this.set("blocking", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setSize(value: js.Any): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSplit(value: js.Any): Self = this.set("split", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplit: Self = this.set("split", js.undefined)
+  }
+  
 }
 

@@ -48,7 +48,9 @@ object mod extends js.Object {
   
   @js.native
   class XmlObject ()
-    extends typings.xmlCore.xmlObjectMod.XmlObject
+    extends typings.xmlCore.xmlObjectMod.XmlObject {
+    def this(properties: js.Object) = this()
+  }
   
   val APPLICATION_XML: /* "application/xml" */ String = js.native
   val DEFAULT_NAMESPACE_URI: /* "" */ String = js.native
@@ -196,7 +198,12 @@ object mod extends js.Object {
       * @returns Document
       */
     def CreateDocument(): Document = js.native
+    def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: js.UndefOr[scala.Nothing], prefix: String): Document = js.native
+    def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: String): Document = js.native
+    def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: String, prefix: String): Document = js.native
+    def CreateDocument(root: js.UndefOr[scala.Nothing], namespaceUri: Null, prefix: String): Document = js.native
     def CreateDocument(root: String): Document = js.native
+    def CreateDocument(root: String, namespaceUri: js.UndefOr[scala.Nothing], prefix: String): Document = js.native
     def CreateDocument(root: String, namespaceUri: String): Document = js.native
     def CreateDocument(root: String, namespaceUri: String, prefix: String): Document = js.native
     def CreateDocument(root: String, namespaceUri: Null, prefix: String): Document = js.native
@@ -205,6 +212,7 @@ object mod extends js.Object {
     def GetAttribute(element: Element, attrName: String, defaultValue: String, required: Boolean): String | Null = js.native
     def GetAttribute(element: Element, attrName: String, defaultValue: Null, required: Boolean): String | Null = js.native
     def GetChild(node: Element, localName: String): Element | Null = js.native
+    def GetChild(node: Element, localName: String, nameSpace: js.UndefOr[scala.Nothing], required: Boolean): Element | Null = js.native
     def GetChild(node: Element, localName: String, nameSpace: String): Element | Null = js.native
     def GetChild(node: Element, localName: String, nameSpace: String, required: Boolean): Element | Null = js.native
     def GetChildren(node: Node, localName: String): js.Array[Element] = js.native

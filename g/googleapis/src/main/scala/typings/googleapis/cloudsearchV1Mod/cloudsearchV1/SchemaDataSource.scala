@@ -65,26 +65,60 @@ trait SchemaDataSource extends js.Object {
 
 object SchemaDataSource {
   @scala.inline
-  def apply(
-    disableModifications: js.UndefOr[Boolean] = js.undefined,
-    disableServing: js.UndefOr[Boolean] = js.undefined,
-    displayName: String = null,
-    indexingServiceAccounts: js.Array[String] = null,
-    itemsVisibility: js.Array[SchemaGSuitePrincipal] = null,
-    name: String = null,
-    operationIds: js.Array[String] = null,
-    shortName: String = null
-  ): SchemaDataSource = {
+  def apply(): SchemaDataSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableModifications)) __obj.updateDynamic("disableModifications")(disableModifications.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableServing)) __obj.updateDynamic("disableServing")(disableServing.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (indexingServiceAccounts != null) __obj.updateDynamic("indexingServiceAccounts")(indexingServiceAccounts.asInstanceOf[js.Any])
-    if (itemsVisibility != null) __obj.updateDynamic("itemsVisibility")(itemsVisibility.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (operationIds != null) __obj.updateDynamic("operationIds")(operationIds.asInstanceOf[js.Any])
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataSource]
   }
+  @scala.inline
+  implicit class SchemaDataSourceOps[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableModifications(value: Boolean): Self = this.set("disableModifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableModifications: Self = this.set("disableModifications", js.undefined)
+    @scala.inline
+    def setDisableServing(value: Boolean): Self = this.set("disableServing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableServing: Self = this.set("disableServing", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setIndexingServiceAccountsVarargs(value: String*): Self = this.set("indexingServiceAccounts", js.Array(value :_*))
+    @scala.inline
+    def setIndexingServiceAccounts(value: js.Array[String]): Self = this.set("indexingServiceAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexingServiceAccounts: Self = this.set("indexingServiceAccounts", js.undefined)
+    @scala.inline
+    def setItemsVisibilityVarargs(value: SchemaGSuitePrincipal*): Self = this.set("itemsVisibility", js.Array(value :_*))
+    @scala.inline
+    def setItemsVisibility(value: js.Array[SchemaGSuitePrincipal]): Self = this.set("itemsVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsVisibility: Self = this.set("itemsVisibility", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOperationIdsVarargs(value: String*): Self = this.set("operationIds", js.Array(value :_*))
+    @scala.inline
+    def setOperationIds(value: js.Array[String]): Self = this.set("operationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationIds: Self = this.set("operationIds", js.undefined)
+    @scala.inline
+    def setShortName(value: String): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortName: Self = this.set("shortName", js.undefined)
+  }
+  
 }
 

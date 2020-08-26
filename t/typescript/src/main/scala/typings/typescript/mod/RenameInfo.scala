@@ -20,11 +20,9 @@ object RenameInfo {
     fullDisplayName: java.lang.String,
     kind: ScriptElementKind,
     kindModifiers: java.lang.String,
-    triggerSpan: TextSpan,
-    fileToRename: java.lang.String = null
+    triggerSpan: TextSpan
   ): RenameInfo = {
     val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fullDisplayName = fullDisplayName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], triggerSpan = triggerSpan.asInstanceOf[js.Any])
-    if (fileToRename != null) __obj.updateDynamic("fileToRename")(fileToRename.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameInfo]
   }
   @scala.inline

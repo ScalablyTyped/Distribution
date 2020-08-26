@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Image protected () extends js.Object {
   def this(canvas: Canvas) = this()
   def this(canvas: Canvas, height: Double) = this()
+  def this(canvas: Canvas, height: js.UndefOr[scala.Nothing], width: Double) = this()
   def this(canvas: Canvas, height: Double, width: Double) = this()
   var crossOrigin: js.UndefOr[String] = js.native
   var height: Double = js.native

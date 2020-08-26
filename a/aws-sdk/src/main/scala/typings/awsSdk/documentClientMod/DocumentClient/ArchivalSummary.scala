@@ -22,16 +22,34 @@ trait ArchivalSummary extends js.Object {
 
 object ArchivalSummary {
   @scala.inline
-  def apply(
-    ArchivalBackupArn: BackupArn = null,
-    ArchivalDateTime: Date = null,
-    ArchivalReason: ArchivalReason = null
-  ): ArchivalSummary = {
+  def apply(): ArchivalSummary = {
     val __obj = js.Dynamic.literal()
-    if (ArchivalBackupArn != null) __obj.updateDynamic("ArchivalBackupArn")(ArchivalBackupArn.asInstanceOf[js.Any])
-    if (ArchivalDateTime != null) __obj.updateDynamic("ArchivalDateTime")(ArchivalDateTime.asInstanceOf[js.Any])
-    if (ArchivalReason != null) __obj.updateDynamic("ArchivalReason")(ArchivalReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchivalSummary]
   }
+  @scala.inline
+  implicit class ArchivalSummaryOps[Self <: ArchivalSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchivalBackupArn(value: BackupArn): Self = this.set("ArchivalBackupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchivalBackupArn: Self = this.set("ArchivalBackupArn", js.undefined)
+    @scala.inline
+    def setArchivalDateTime(value: Date): Self = this.set("ArchivalDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchivalDateTime: Self = this.set("ArchivalDateTime", js.undefined)
+    @scala.inline
+    def setArchivalReason(value: ArchivalReason): Self = this.set("ArchivalReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchivalReason: Self = this.set("ArchivalReason", js.undefined)
+  }
+  
 }
 

@@ -2,7 +2,6 @@ package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.provider.ImageTileProvider.Options
 import typings.heremaps.H.map.provider.Invalidations.Mark
-import typings.heremaps.H.math.BitMask
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,63 +29,7 @@ object provider extends js.Object {
     */
   @js.native
   class Invalidations ()
-    extends typings.heremaps.H.map.provider.Invalidations {
-    /**
-      * This method returns the current invalidation mark of this invalidations object.
-      * @returns {H.map.provider.Invalidations.Mark} - the current invalidation mark
-      */
-    /* CompleteClass */
-    override def getMark(): Mark = js.native
-    /**
-      * Checks whether an add-operation occurred after the specified since mark
-      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
-      * @returns {boolean}
-      */
-    /* CompleteClass */
-    override def isAdd(since: Mark): Boolean = js.native
-    /**
-      * Checks whether any change occurred after the specified since mark
-      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
-      * @returns {boolean}
-      */
-    /* CompleteClass */
-    override def isAny(since: Mark): Boolean = js.native
-    /**
-      * Checks whether a remove operation occurred after the specified since mark
-      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
-      * @returns {boolean}
-      */
-    /* CompleteClass */
-    override def isRemove(since: Mark): Boolean = js.native
-    /**
-      * Checks whether a spatial change occurred after the specified since mark
-      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
-      * @returns {boolean}
-      */
-    /* CompleteClass */
-    override def isSpatial(since: Mark): Boolean = js.native
-    /**
-      * Checks whether a visual change occurred after the specified since mark
-      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
-      * @returns {boolean}
-      */
-    /* CompleteClass */
-    override def isVisual(since: Mark): Boolean = js.native
-    /**
-      * Checks whether a z-order change occurred after the specified since mark
-      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
-      * @returns {boolean}
-      */
-    /* CompleteClass */
-    override def isZOrder(since: Mark): Boolean = js.native
-    /**
-      * To update invalidation marks accordingly to the given the invalidation types.
-      * @param mark {H.map.provider.Invalidations.Mark} - The invalidation mark to set
-      * @param types {H.math.BitMask} - The descrete invalidation types to update
-      */
-    /* CompleteClass */
-    override def update(mark: Mark, types: BitMask): Unit = js.native
-  }
+    extends typings.heremaps.H.map.provider.Invalidations
   
   /**
     * A MarkerTileProvider uses network service to provide markers on tile basis.
@@ -175,18 +118,6 @@ object provider extends js.Object {
       */
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, data: js.Any) = this()
-    /* CompleteClass */
-    override var data: js.Any = js.native
-    /* CompleteClass */
-    override var key: String = js.native
-    /* CompleteClass */
-    override var valid: Boolean = js.native
-    /* CompleteClass */
-    override var x: Double = js.native
-    /* CompleteClass */
-    override var y: Double = js.native
-    /* CompleteClass */
-    override var z: Double = js.native
   }
   
   /**

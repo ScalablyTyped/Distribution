@@ -28,6 +28,7 @@ class ResourceMattersExports protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaExport] = js.native
   def create(callback: BodyResponseCallback[SchemaExport]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExport] = js.native
   def create(params: ParamsResourceMattersExportsCreate): GaxiosPromise[SchemaExport] = js.native
   def create(params: ParamsResourceMattersExportsCreate, callback: BodyResponseCallback[SchemaExport]): Unit = js.native
   def create(
@@ -56,6 +57,7 @@ class ResourceMattersExports protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceMattersExportsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceMattersExportsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -84,6 +86,7 @@ class ResourceMattersExports protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaExport] = js.native
   def get(callback: BodyResponseCallback[SchemaExport]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExport] = js.native
   def get(params: ParamsResourceMattersExportsGet): GaxiosPromise[SchemaExport] = js.native
   def get(params: ParamsResourceMattersExportsGet, callback: BodyResponseCallback[SchemaExport]): Unit = js.native
   def get(
@@ -113,6 +116,7 @@ class ResourceMattersExports protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListExportsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListExportsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListExportsResponse] = js.native
   def list(params: ParamsResourceMattersExportsList): GaxiosPromise[SchemaListExportsResponse] = js.native
   def list(
     params: ParamsResourceMattersExportsList,

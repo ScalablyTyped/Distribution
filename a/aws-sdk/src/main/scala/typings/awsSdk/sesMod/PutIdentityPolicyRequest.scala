@@ -26,5 +26,24 @@ object PutIdentityPolicyRequest {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutIdentityPolicyRequest]
   }
+  @scala.inline
+  implicit class PutIdentityPolicyRequestOps[Self <: PutIdentityPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentity(value: Identity): Self = this.set("Identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicy(value: Policy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyName(value: PolicyName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

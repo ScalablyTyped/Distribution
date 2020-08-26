@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "actioncable"
-version := "5.2-dt-20200515Z-00c595"
-scalaVersion := "2.13.2"
+version := "5.2-dt-20200515Z-f108a4"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

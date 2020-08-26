@@ -37,6 +37,14 @@ trait watchUtils extends js.Object {
     propertyName: String,
     eventName: String,
     eventHandler: js.Function,
+    attachedHandler: js.UndefOr[scala.Nothing],
+    detachedHandler: EventAttachedCallback
+  ): WatchHandle = js.native
+  def on(
+    obj: Accessor,
+    propertyName: String,
+    eventName: String,
+    eventHandler: js.Function,
     attachedHandler: EventAttachedCallback
   ): WatchHandle = js.native
   def on(
@@ -48,6 +56,14 @@ trait watchUtils extends js.Object {
     detachedHandler: EventAttachedCallback
   ): WatchHandle = js.native
   def on(obj: Accessor, propertyName: js.Array[String], eventName: String, eventHandler: js.Function): WatchHandle = js.native
+  def on(
+    obj: Accessor,
+    propertyName: js.Array[String],
+    eventName: String,
+    eventHandler: js.Function,
+    attachedHandler: js.UndefOr[scala.Nothing],
+    detachedHandler: EventAttachedCallback
+  ): WatchHandle = js.native
   def on(
     obj: Accessor,
     propertyName: js.Array[String],

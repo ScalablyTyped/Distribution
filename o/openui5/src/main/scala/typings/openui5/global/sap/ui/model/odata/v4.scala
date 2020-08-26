@@ -73,6 +73,12 @@ object v4 extends js.Object {
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
       oContext: typings.openui5.sap.ui.model.odata.v4.Context,
       mParameters: js.Any
     ) = this()
@@ -111,6 +117,18 @@ object v4 extends js.Object {
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.Array[Sorter]
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: Sorter
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
       oContext: typings.openui5.sap.ui.model.odata.v4.Context,
       vSorters: js.Array[Sorter]
     ) = this()
@@ -123,6 +141,62 @@ object v4 extends js.Object {
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: typings.openui5.sap.ui.model.Filter
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.Array[Sorter],
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.Array[Sorter],
+      vFilters: typings.openui5.sap.ui.model.Filter
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: Sorter,
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: Sorter,
+      vFilters: typings.openui5.sap.ui.model.Filter
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: typings.openui5.sap.ui.model.Filter
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
       oContext: typings.openui5.sap.ui.model.odata.v4.Context,
       vSorters: js.Array[Sorter],
       vFilters: js.Array[typings.openui5.sap.ui.model.Filter]
@@ -147,6 +221,110 @@ object v4 extends js.Object {
       oContext: typings.openui5.sap.ui.model.odata.v4.Context,
       vSorters: Sorter,
       vFilters: typings.openui5.sap.ui.model.Filter
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: typings.openui5.sap.ui.model.Filter,
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.Array[Sorter],
+      vFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.Array[Sorter],
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: js.Array[Sorter],
+      vFilters: typings.openui5.sap.ui.model.Filter,
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: Sorter,
+      vFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: Sorter,
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      vSorters: Sorter,
+      vFilters: typings.openui5.sap.ui.model.Filter,
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: js.Array[typings.openui5.sap.ui.model.Filter],
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: js.UndefOr[scala.Nothing],
+      vFilters: typings.openui5.sap.ui.model.Filter,
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: js.Array[Sorter],
+      vFilters: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
@@ -162,6 +340,14 @@ object v4 extends js.Object {
       oContext: typings.openui5.sap.ui.model.odata.v4.Context,
       vSorters: js.Array[Sorter],
       vFilters: typings.openui5.sap.ui.model.Filter,
+      mParameters: js.Any
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: typings.openui5.sap.ui.model.odata.v4.Context,
+      vSorters: Sorter,
+      vFilters: js.UndefOr[scala.Nothing],
       mParameters: js.Any
     ) = this()
     def this(
@@ -225,6 +411,12 @@ object v4 extends js.Object {
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
       sPath: String,
       oContext: typings.openui5.sap.ui.model.odata.v4.Context
+    ) = this()
+    def this(
+      oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,
+      sPath: String,
+      oContext: js.UndefOr[scala.Nothing],
+      mParameters: js.Any
     ) = this()
     def this(
       oModel: typings.openui5.sap.ui.model.odata.v4.ODataModel,

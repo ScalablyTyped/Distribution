@@ -34,17 +34,36 @@ trait SegmentImportResource extends js.Object {
 
 object SegmentImportResource {
   @scala.inline
-  def apply(
-    ExternalId: string,
-    Format: Format,
-    RoleArn: string,
-    S3Url: string,
-    Size: integer,
-    ChannelCounts: MapOfInteger = null
-  ): SegmentImportResource = {
+  def apply(ExternalId: string, Format: Format, RoleArn: string, S3Url: string, Size: integer): SegmentImportResource = {
     val __obj = js.Dynamic.literal(ExternalId = ExternalId.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], S3Url = S3Url.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
-    if (ChannelCounts != null) __obj.updateDynamic("ChannelCounts")(ChannelCounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentImportResource]
   }
+  @scala.inline
+  implicit class SegmentImportResourceOps[Self <: SegmentImportResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalId(value: string): Self = this.set("ExternalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: Format): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Url(value: string): Self = this.set("S3Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: integer): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChannelCounts(value: MapOfInteger): Self = this.set("ChannelCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelCounts: Self = this.set("ChannelCounts", js.undefined)
+  }
+  
 }
 

@@ -165,9 +165,11 @@ class Client protected () extends js.Object {
     * @throws {InvalidState} if the client is not connected.
     */
   def send(topic: String, payload: String): Unit = js.native
+  def send(topic: String, payload: String, qos: js.UndefOr[scala.Nothing], retained: Boolean): Unit = js.native
   def send(topic: String, payload: String, qos: Qos): Unit = js.native
   def send(topic: String, payload: String, qos: Qos, retained: Boolean): Unit = js.native
   def send(topic: String, payload: ArrayBuffer): Unit = js.native
+  def send(topic: String, payload: ArrayBuffer, qos: js.UndefOr[scala.Nothing], retained: Boolean): Unit = js.native
   def send(topic: String, payload: ArrayBuffer, qos: Qos): Unit = js.native
   def send(topic: String, payload: ArrayBuffer, qos: Qos, retained: Boolean): Unit = js.native
   /**

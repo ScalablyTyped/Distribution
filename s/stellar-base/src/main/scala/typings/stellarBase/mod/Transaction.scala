@@ -1,36 +1,20 @@
 package typings.stellarBase.mod
 
-import typings.node.Buffer
-import typings.stellarBase.anon.MaxTime
-import typings.stellarBase.mod.xdr.DecoratedSignature
-import typings.stellarBase.mod.xdr.TransactionEnvelope
+import typings.stellarBase.anon.MinTime
+import typings.stellarBase.xdrMod.default.TransactionEnvelope
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("stellar-base", "Transaction")
 @js.native
-class Transaction[TMemo /* <: Memo[MemoType] */, TOps /* <: js.Array[Operation] */] protected () extends js.Object {
-  def this(envelope: String) = this()
-  def this(envelope: TransactionEnvelope) = this()
+class Transaction[TMemo /* <: Memo[MemoType] */, TOps /* <: js.Array[Operation] */] protected () extends TransactionI {
   def this(envelope: String, networkPassphrase: String) = this()
   def this(envelope: TransactionEnvelope, networkPassphrase: String) = this()
-  var fee: Double = js.native
   var memo: TMemo = js.native
-  var networkPassphrase: String = js.native
   var operations: TOps = js.native
   var sequence: String = js.native
-  var signatures: js.Array[DecoratedSignature] = js.native
   var source: String = js.native
-  var timeBounds: js.UndefOr[MaxTime] = js.native
-  def addSignature(publicKey: String, signature: String): Unit = js.native
-  def getKeypairSignature(keypair: Keypair): String = js.native
-  def hash(): Buffer = js.native
-  def sign(keypairs: Keypair*): Unit = js.native
-  def signHashX(preimage: String): Unit = js.native
-  def signHashX(preimage: Buffer): Unit = js.native
-  def signatureBase(): Buffer = js.native
-  def toEnvelope(): TransactionEnvelope = js.native
-  def toXDR(): String = js.native
+  var timeBounds: js.UndefOr[MinTime] = js.native
 }
 

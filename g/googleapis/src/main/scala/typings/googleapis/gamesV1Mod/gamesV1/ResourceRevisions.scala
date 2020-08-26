@@ -27,6 +27,7 @@ class ResourceRevisions protected () extends js.Object {
     */
   def check(): GaxiosPromise[SchemaRevisionCheckResponse] = js.native
   def check(callback: BodyResponseCallback[SchemaRevisionCheckResponse]): Unit = js.native
+  def check(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevisionCheckResponse] = js.native
   def check(params: ParamsResourceRevisionsCheck): GaxiosPromise[SchemaRevisionCheckResponse] = js.native
   def check(params: ParamsResourceRevisionsCheck, callback: BodyResponseCallback[SchemaRevisionCheckResponse]): Unit = js.native
   def check(

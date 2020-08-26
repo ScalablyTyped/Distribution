@@ -31,16 +31,36 @@ trait SchemaServerTlsSettings extends js.Object {
 
 object SchemaServerTlsSettings {
   @scala.inline
-  def apply(
-    proxyTlsContext: SchemaTlsContext = null,
-    subjectAltNames: js.Array[String] = null,
-    tlsMode: String = null
-  ): SchemaServerTlsSettings = {
+  def apply(): SchemaServerTlsSettings = {
     val __obj = js.Dynamic.literal()
-    if (proxyTlsContext != null) __obj.updateDynamic("proxyTlsContext")(proxyTlsContext.asInstanceOf[js.Any])
-    if (subjectAltNames != null) __obj.updateDynamic("subjectAltNames")(subjectAltNames.asInstanceOf[js.Any])
-    if (tlsMode != null) __obj.updateDynamic("tlsMode")(tlsMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServerTlsSettings]
   }
+  @scala.inline
+  implicit class SchemaServerTlsSettingsOps[Self <: SchemaServerTlsSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProxyTlsContext(value: SchemaTlsContext): Self = this.set("proxyTlsContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyTlsContext: Self = this.set("proxyTlsContext", js.undefined)
+    @scala.inline
+    def setSubjectAltNamesVarargs(value: String*): Self = this.set("subjectAltNames", js.Array(value :_*))
+    @scala.inline
+    def setSubjectAltNames(value: js.Array[String]): Self = this.set("subjectAltNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectAltNames: Self = this.set("subjectAltNames", js.undefined)
+    @scala.inline
+    def setTlsMode(value: String): Self = this.set("tlsMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsMode: Self = this.set("tlsMode", js.undefined)
+  }
+  
 }
 

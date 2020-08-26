@@ -4,47 +4,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Element extends js.Object {
-  var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var attached: js.UndefOr[js.Function0[Unit]] = js.native
   var attributeChanged: js.UndefOr[
     js.Function3[/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any, Unit]
-  ] = js.undefined
-  var behaviors: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var created: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
-  var listeners: js.UndefOr[js.Object] = js.undefined
-  var observers: js.UndefOr[js.Array[String]] = js.undefined
-  var properties: js.UndefOr[js.Object] = js.undefined
-  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
+  ] = js.native
+  var behaviors: js.UndefOr[js.Array[js.Object]] = js.native
+  var created: js.UndefOr[js.Function0[Unit]] = js.native
+  var detached: js.UndefOr[js.Function0[Unit]] = js.native
+  var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var listeners: js.UndefOr[js.Object] = js.native
+  var observers: js.UndefOr[js.Array[String]] = js.native
+  var properties: js.UndefOr[js.Object] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object Element {
   @scala.inline
-  def apply(
-    attached: () => Unit = null,
-    attributeChanged: (/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any) => Unit = null,
-    behaviors: js.Array[js.Object] = null,
-    created: () => Unit = null,
-    detached: () => Unit = null,
-    factoryImpl: /* repeated */ js.Any => Unit = null,
-    listeners: js.Object = null,
-    observers: js.Array[String] = null,
-    properties: js.Object = null,
-    ready: () => Unit = null
-  ): Element = {
+  def apply(): Element = {
     val __obj = js.Dynamic.literal()
-    if (attached != null) __obj.updateDynamic("attached")(js.Any.fromFunction0(attached))
-    if (attributeChanged != null) __obj.updateDynamic("attributeChanged")(js.Any.fromFunction3(attributeChanged))
-    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(js.Any.fromFunction0(created))
-    if (detached != null) __obj.updateDynamic("detached")(js.Any.fromFunction0(detached))
-    if (factoryImpl != null) __obj.updateDynamic("factoryImpl")(js.Any.fromFunction1(factoryImpl))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (observers != null) __obj.updateDynamic("observers")(observers.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction0(ready))
     __obj.asInstanceOf[Element]
   }
+  @scala.inline
+  implicit class ElementOps[Self <: Element] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttached(value: () => Unit): Self = this.set("attached", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAttached: Self = this.set("attached", js.undefined)
+    @scala.inline
+    def setAttributeChanged(value: (/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any) => Unit): Self = this.set("attributeChanged", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAttributeChanged: Self = this.set("attributeChanged", js.undefined)
+    @scala.inline
+    def setBehaviorsVarargs(value: js.Object*): Self = this.set("behaviors", js.Array(value :_*))
+    @scala.inline
+    def setBehaviors(value: js.Array[js.Object]): Self = this.set("behaviors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBehaviors: Self = this.set("behaviors", js.undefined)
+    @scala.inline
+    def setCreated(value: () => Unit): Self = this.set("created", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setDetached(value: () => Unit): Self = this.set("detached", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDetached: Self = this.set("detached", js.undefined)
+    @scala.inline
+    def setFactoryImpl(value: /* repeated */ js.Any => Unit): Self = this.set("factoryImpl", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFactoryImpl: Self = this.set("factoryImpl", js.undefined)
+    @scala.inline
+    def setListeners(value: js.Object): Self = this.set("listeners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListeners: Self = this.set("listeners", js.undefined)
+    @scala.inline
+    def setObserversVarargs(value: String*): Self = this.set("observers", js.Array(value :_*))
+    @scala.inline
+    def setObservers(value: js.Array[String]): Self = this.set("observers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObservers: Self = this.set("observers", js.undefined)
+    @scala.inline
+    def setProperties(value: js.Object): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setReady(value: () => Unit): Self = this.set("ready", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+  }
+  
 }
 

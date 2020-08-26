@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Name extends js.Object {
-  var displayName: js.UndefOr[String] = js.undefined
-  var displayNameLastFirst: js.UndefOr[String] = js.undefined
-  var familyName: js.UndefOr[String] = js.undefined
-  var givenName: js.UndefOr[String] = js.undefined
-  var honorificPrefix: js.UndefOr[String] = js.undefined
-  var honorificSuffix: js.UndefOr[String] = js.undefined
-  var metadata: js.UndefOr[FieldMetadata] = js.undefined
-  var middleName: js.UndefOr[String] = js.undefined
-  var phoneticFamilyName: js.UndefOr[String] = js.undefined
-  var phoneticFullName: js.UndefOr[String] = js.undefined
-  var phoneticGivenName: js.UndefOr[String] = js.undefined
-  var phoneticHonorificPrefix: js.UndefOr[String] = js.undefined
-  var phoneticHonorificSuffix: js.UndefOr[String] = js.undefined
-  var phoneticMiddleName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
+  var displayNameLastFirst: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.native
+  var honorificPrefix: js.UndefOr[String] = js.native
+  var honorificSuffix: js.UndefOr[String] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var middleName: js.UndefOr[String] = js.native
+  var phoneticFamilyName: js.UndefOr[String] = js.native
+  var phoneticFullName: js.UndefOr[String] = js.native
+  var phoneticGivenName: js.UndefOr[String] = js.native
+  var phoneticHonorificPrefix: js.UndefOr[String] = js.native
+  var phoneticHonorificSuffix: js.UndefOr[String] = js.native
+  var phoneticMiddleName: js.UndefOr[String] = js.native
 }
 
 object Name {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    displayNameLastFirst: String = null,
-    familyName: String = null,
-    givenName: String = null,
-    honorificPrefix: String = null,
-    honorificSuffix: String = null,
-    metadata: FieldMetadata = null,
-    middleName: String = null,
-    phoneticFamilyName: String = null,
-    phoneticFullName: String = null,
-    phoneticGivenName: String = null,
-    phoneticHonorificPrefix: String = null,
-    phoneticHonorificSuffix: String = null,
-    phoneticMiddleName: String = null
-  ): Name = {
+  def apply(): Name = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (displayNameLastFirst != null) __obj.updateDynamic("displayNameLastFirst")(displayNameLastFirst.asInstanceOf[js.Any])
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
-    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix.asInstanceOf[js.Any])
-    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
-    if (phoneticFamilyName != null) __obj.updateDynamic("phoneticFamilyName")(phoneticFamilyName.asInstanceOf[js.Any])
-    if (phoneticFullName != null) __obj.updateDynamic("phoneticFullName")(phoneticFullName.asInstanceOf[js.Any])
-    if (phoneticGivenName != null) __obj.updateDynamic("phoneticGivenName")(phoneticGivenName.asInstanceOf[js.Any])
-    if (phoneticHonorificPrefix != null) __obj.updateDynamic("phoneticHonorificPrefix")(phoneticHonorificPrefix.asInstanceOf[js.Any])
-    if (phoneticHonorificSuffix != null) __obj.updateDynamic("phoneticHonorificSuffix")(phoneticHonorificSuffix.asInstanceOf[js.Any])
-    if (phoneticMiddleName != null) __obj.updateDynamic("phoneticMiddleName")(phoneticMiddleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
+  @scala.inline
+  implicit class NameOps[Self <: Name] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setDisplayNameLastFirst(value: String): Self = this.set("displayNameLastFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayNameLastFirst: Self = this.set("displayNameLastFirst", js.undefined)
+    @scala.inline
+    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    @scala.inline
+    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    @scala.inline
+    def setHonorificPrefix(value: String): Self = this.set("honorificPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorificPrefix: Self = this.set("honorificPrefix", js.undefined)
+    @scala.inline
+    def setHonorificSuffix(value: String): Self = this.set("honorificSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorificSuffix: Self = this.set("honorificSuffix", js.undefined)
+    @scala.inline
+    def setMetadata(value: FieldMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiddleName: Self = this.set("middleName", js.undefined)
+    @scala.inline
+    def setPhoneticFamilyName(value: String): Self = this.set("phoneticFamilyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticFamilyName: Self = this.set("phoneticFamilyName", js.undefined)
+    @scala.inline
+    def setPhoneticFullName(value: String): Self = this.set("phoneticFullName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticFullName: Self = this.set("phoneticFullName", js.undefined)
+    @scala.inline
+    def setPhoneticGivenName(value: String): Self = this.set("phoneticGivenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticGivenName: Self = this.set("phoneticGivenName", js.undefined)
+    @scala.inline
+    def setPhoneticHonorificPrefix(value: String): Self = this.set("phoneticHonorificPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticHonorificPrefix: Self = this.set("phoneticHonorificPrefix", js.undefined)
+    @scala.inline
+    def setPhoneticHonorificSuffix(value: String): Self = this.set("phoneticHonorificSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticHonorificSuffix: Self = this.set("phoneticHonorificSuffix", js.undefined)
+    @scala.inline
+    def setPhoneticMiddleName(value: String): Self = this.set("phoneticMiddleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneticMiddleName: Self = this.set("phoneticMiddleName", js.undefined)
+  }
+  
 }
 

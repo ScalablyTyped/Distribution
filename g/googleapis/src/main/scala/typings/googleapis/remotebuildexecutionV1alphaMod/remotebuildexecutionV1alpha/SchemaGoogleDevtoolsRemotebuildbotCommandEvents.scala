@@ -31,18 +31,38 @@ trait SchemaGoogleDevtoolsRemotebuildbotCommandEvents extends js.Object {
 
 object SchemaGoogleDevtoolsRemotebuildbotCommandEvents {
   @scala.inline
-  def apply(
-    dockerCacheHit: js.UndefOr[Boolean] = js.undefined,
-    inputCacheMiss: js.UndefOr[Double] = js.undefined,
-    numErrors: String = null,
-    numWarnings: String = null
-  ): SchemaGoogleDevtoolsRemotebuildbotCommandEvents = {
+  def apply(): SchemaGoogleDevtoolsRemotebuildbotCommandEvents = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dockerCacheHit)) __obj.updateDynamic("dockerCacheHit")(dockerCacheHit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputCacheMiss)) __obj.updateDynamic("inputCacheMiss")(inputCacheMiss.get.asInstanceOf[js.Any])
-    if (numErrors != null) __obj.updateDynamic("numErrors")(numErrors.asInstanceOf[js.Any])
-    if (numWarnings != null) __obj.updateDynamic("numWarnings")(numWarnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildbotCommandEvents]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemotebuildbotCommandEventsOps[Self <: SchemaGoogleDevtoolsRemotebuildbotCommandEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDockerCacheHit(value: Boolean): Self = this.set("dockerCacheHit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDockerCacheHit: Self = this.set("dockerCacheHit", js.undefined)
+    @scala.inline
+    def setInputCacheMiss(value: Double): Self = this.set("inputCacheMiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputCacheMiss: Self = this.set("inputCacheMiss", js.undefined)
+    @scala.inline
+    def setNumErrors(value: String): Self = this.set("numErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumErrors: Self = this.set("numErrors", js.undefined)
+    @scala.inline
+    def setNumWarnings(value: String): Self = this.set("numWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumWarnings: Self = this.set("numWarnings", js.undefined)
+  }
+  
 }
 

@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PluralElement
   extends BaseElement[plural]
      with _MessageFormatElement {
-  var offset: Double
-  var options: Record[ValidPluralRule, PluralOrSelectOption]
-  var pluralType: js.UndefOr[PluralRuleType] = js.undefined
+  var offset: Double = js.native
+  var options: Record[ValidPluralRule, PluralOrSelectOption] = js.native
+  var pluralType: js.UndefOr[PluralRuleType] = js.native
 }
 
 object PluralElement {
@@ -21,15 +22,32 @@ object PluralElement {
     offset: Double,
     options: Record[ValidPluralRule, PluralOrSelectOption],
     `type`: plural,
-    value: String,
-    location: Location = null,
-    pluralType: PluralRuleType = null
+    value: String
   ): PluralElement = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (pluralType != null) __obj.updateDynamic("pluralType")(pluralType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralElement]
   }
+  @scala.inline
+  implicit class PluralElementOps[Self <: PluralElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptions(value: Record[ValidPluralRule, PluralOrSelectOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPluralType(value: PluralRuleType): Self = this.set("pluralType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePluralType: Self = this.set("pluralType", js.undefined)
+  }
+  
 }
 

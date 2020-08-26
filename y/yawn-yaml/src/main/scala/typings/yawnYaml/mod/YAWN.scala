@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait YAWN extends js.Object {
-  var json: js.Any
-  var yaml: String
-  def getRemark(path: String): String
-  def setRemark(path: String, remark: String): Boolean
+  var json: js.Any = js.native
+  var yaml: String = js.native
+  def getRemark(path: String): String = js.native
+  def setRemark(path: String, remark: String): Boolean = js.native
 }
 
 object YAWN {
@@ -17,5 +18,26 @@ object YAWN {
     val __obj = js.Dynamic.literal(getRemark = js.Any.fromFunction1(getRemark), json = json.asInstanceOf[js.Any], setRemark = js.Any.fromFunction2(setRemark), yaml = yaml.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAWN]
   }
+  @scala.inline
+  implicit class YAWNOps[Self <: YAWN] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetRemark(value: String => String): Self = this.set("getRemark", js.Any.fromFunction1(value))
+    @scala.inline
+    def setJson(value: js.Any): Self = this.set("json", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetRemark(value: (String, String) => Boolean): Self = this.set("setRemark", js.Any.fromFunction2(value))
+    @scala.inline
+    def setYaml(value: String): Self = this.set("yaml", value.asInstanceOf[js.Any])
+  }
+  
 }
 

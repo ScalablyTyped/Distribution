@@ -38,24 +38,50 @@ trait RecommendationExportJob extends js.Object {
 
 object RecommendationExportJob {
   @scala.inline
-  def apply(
-    creationTimestamp: CreationTimestamp = null,
-    destination: ExportDestination = null,
-    failureReason: FailureReason = null,
-    jobId: JobId = null,
-    lastUpdatedTimestamp: LastUpdatedTimestamp = null,
-    resourceType: ResourceType = null,
-    status: JobStatus = null
-  ): RecommendationExportJob = {
+  def apply(): RecommendationExportJob = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationExportJob]
   }
+  @scala.inline
+  implicit class RecommendationExportJobOps[Self <: RecommendationExportJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimestamp(value: CreationTimestamp): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDestination(value: ExportDestination): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimestamp(value: LastUpdatedTimestamp): Self = this.set("lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestamp: Self = this.set("lastUpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -298,6 +298,7 @@ Instantiable4[
     * @return The angle in degrees.
     */
   def angle(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+  def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: js.UndefOr[scala.Nothing], y3: Double): Double = js.native
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double): Double = js.native
   def angle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): Double = js.native
   /**
@@ -311,6 +312,18 @@ Instantiable4[
     * @param callback Callback function. Will be called at the end of animation.
     */
   def animation(params: PartialRaphaelAttributes, milliseconds: Double): RaphaelAnimation = js.native
+  def animation(
+    params: PartialRaphaelAttributes,
+    milliseconds: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction0[
+      /* this */ RaphaelElement[
+        TTechnology, 
+        /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
+      ], 
+      Unit
+    ]
+  ): RaphaelAnimation = js.native
   def animation(params: PartialRaphaelAttributes, milliseconds: Double, easing: RaphaelBuiltinEasingFormula): RaphaelAnimation = js.native
   def animation(
     params: PartialRaphaelAttributes,

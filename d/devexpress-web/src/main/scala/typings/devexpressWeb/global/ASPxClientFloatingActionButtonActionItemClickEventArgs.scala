@@ -16,10 +16,5 @@ class ASPxClientFloatingActionButtonActionItemClickEventArgs protected ()
     * @param actionName A string value that specifies the action item's name.
     */
   def this(actionName: String) = this()
-  /**
-    * Gets the name of the processed action.
-    */
-  /* CompleteClass */
-  override var actionName: String = js.native
 }
 

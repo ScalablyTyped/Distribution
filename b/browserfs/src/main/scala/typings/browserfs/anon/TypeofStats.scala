@@ -18,21 +18,27 @@ import scala.scalajs.js.annotation._
 trait TypeofStats
   extends Instantiable2[/* itemType */ FileType, /* size */ Double, default]
      with Instantiable3[/* itemType */ FileType, /* size */ Double, /* mode */ Double, default]
-     with Instantiable4[/* itemType */ FileType, /* size */ Double, /* mode */ Double, /* atime */ Date, default]
+     with Instantiable4[
+      /* itemType */ FileType, 
+      /* size */ Double, 
+      js.UndefOr[/* mode */ Double], 
+      /* atime */ Date, 
+      default
+    ]
      with Instantiable5[
       /* itemType */ FileType, 
       /* size */ Double, 
-      /* mode */ Double, 
-      /* atime */ Date, 
+      js.UndefOr[/* mode */ Double], 
+      js.UndefOr[/* atime */ Date], 
       /* mtime */ Date, 
       default
     ]
      with Instantiable6[
       /* itemType */ FileType, 
       /* size */ Double, 
-      /* mode */ Double, 
-      /* atime */ Date, 
-      /* mtime */ Date, 
+      js.UndefOr[/* mode */ Double], 
+      js.UndefOr[/* atime */ Date], 
+      js.UndefOr[/* mtime */ Date], 
       /* ctime */ Date, 
       default
     ] {

@@ -12,7 +12,7 @@ Typings are for version 2.3.3
 | Keywords           | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | # releases         | 15 |
 | # dependents       | 9 |
-| # downloads        | 51739 |
+| # downloads        | 48919 |
 | # stars            | 0 |
 
 ## Links

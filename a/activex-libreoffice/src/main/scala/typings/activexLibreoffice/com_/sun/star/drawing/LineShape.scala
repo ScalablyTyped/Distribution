@@ -39,6 +39,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service is for a simple {@link Shape} with lines. */
+@js.native
 trait LineShape
   extends Shape
      with LineProperties

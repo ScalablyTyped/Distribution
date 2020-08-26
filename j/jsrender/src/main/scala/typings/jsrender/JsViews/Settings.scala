@@ -78,6 +78,7 @@ trait Settings extends js.Object {
   	 * @returns {Settings}
   	 */
   def delimiters(openChars: String): Settings = js.native
+  def delimiters(openChars: String, closeChars: js.UndefOr[scala.Nothing], link: String): Settings = js.native
   def delimiters(openChars: String, closeChars: String): Settings = js.native
   def delimiters(openChars: String, closeChars: String, link: String): Settings = js.native
 }

@@ -7,24 +7,44 @@ import scala.scalajs.js.annotation._
 /**
   * underscore.js _.throttle options.
   **/
+@js.native
 trait ThrottleSettings extends js.Object {
   /**
     * If you'd like to disable the leading-edge call, pass this as false.
     **/
-  var leading: js.UndefOr[Boolean] = js.undefined
+  var leading: js.UndefOr[Boolean] = js.native
   /**
     * If you'd like to disable the execution on the trailing-edge, pass false.
     **/
-  var trailing: js.UndefOr[Boolean] = js.undefined
+  var trailing: js.UndefOr[Boolean] = js.native
 }
 
 object ThrottleSettings {
   @scala.inline
-  def apply(leading: js.UndefOr[Boolean] = js.undefined, trailing: js.UndefOr[Boolean] = js.undefined): ThrottleSettings = {
+  def apply(): ThrottleSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottleSettings]
   }
+  @scala.inline
+  implicit class ThrottleSettingsOps[Self <: ThrottleSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLeading(value: Boolean): Self = this.set("leading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeading: Self = this.set("leading", js.undefined)
+    @scala.inline
+    def setTrailing(value: Boolean): Self = this.set("trailing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrailing: Self = this.set("trailing", js.undefined)
+  }
+  
 }
 

@@ -5,27 +5,54 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //Grid
+@js.native
 trait GridPager extends js.Object {
-  var leftControls: js.UndefOr[js.Array[_]] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var rightControls: js.UndefOr[js.Array[_]] = js.undefined
-  var sizes: js.UndefOr[js.Array[Double]] = js.undefined
+  var leftControls: js.UndefOr[js.Array[_]] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var rightControls: js.UndefOr[js.Array[_]] = js.native
+  var sizes: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object GridPager {
   @scala.inline
-  def apply(
-    leftControls: js.Array[_] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    rightControls: js.Array[_] = null,
-    sizes: js.Array[Double] = null
-  ): GridPager = {
+  def apply(): GridPager = {
     val __obj = js.Dynamic.literal()
-    if (leftControls != null) __obj.updateDynamic("leftControls")(leftControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (rightControls != null) __obj.updateDynamic("rightControls")(rightControls.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPager]
   }
+  @scala.inline
+  implicit class GridPagerOps[Self <: GridPager] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLeftControlsVarargs(value: js.Any*): Self = this.set("leftControls", js.Array(value :_*))
+    @scala.inline
+    def setLeftControls(value: js.Array[_]): Self = this.set("leftControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftControls: Self = this.set("leftControls", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setRightControlsVarargs(value: js.Any*): Self = this.set("rightControls", js.Array(value :_*))
+    @scala.inline
+    def setRightControls(value: js.Array[_]): Self = this.set("rightControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightControls: Self = this.set("rightControls", js.undefined)
+    @scala.inline
+    def setSizesVarargs(value: Double*): Self = this.set("sizes", js.Array(value :_*))
+    @scala.inline
+    def setSizes(value: js.Array[Double]): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+  }
+  
 }
 

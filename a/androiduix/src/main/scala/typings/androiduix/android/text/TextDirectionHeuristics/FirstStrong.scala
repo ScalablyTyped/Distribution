@@ -4,17 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.text.TextDirectionHeuristics.FirstStrong")
 @js.native
-class FirstStrong () extends TextDirectionAlgorithm {
-  /* CompleteClass */
-  override def checkRtl(cs: String, start: Double, count: Double): Double = js.native
-}
+trait FirstStrong extends TextDirectionAlgorithm
 
-/* static members */
-@JSGlobal("android.text.TextDirectionHeuristics.FirstStrong")
-@js.native
-object FirstStrong extends js.Object {
-  var INSTANCE: FirstStrong = js.native
+object FirstStrong {
+  @scala.inline
+  def apply(checkRtl: (String, Double, Double) => Double): FirstStrong = {
+    val __obj = js.Dynamic.literal(checkRtl = js.Any.fromFunction3(checkRtl))
+    __obj.asInstanceOf[FirstStrong]
+  }
 }
 

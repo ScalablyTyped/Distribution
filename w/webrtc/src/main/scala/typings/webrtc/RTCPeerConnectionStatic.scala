@@ -11,7 +11,11 @@ import scala.scalajs.js.annotation._
 trait RTCPeerConnectionStatic
   extends Instantiable0[RTCPeerConnection]
      with Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection]
-     with Instantiable2[/* configuration */ RTCConfiguration, /* options */ js.Any, RTCPeerConnection] {
+     with Instantiable2[
+      js.UndefOr[/* configuration */ RTCConfiguration], 
+      /* options */ js.Any, 
+      RTCPeerConnection
+    ] {
   val defaultIceServers: js.Array[RTCIceServer] = js.native
   // Extension: https://www.w3.org/TR/webrtc/#sec.cert-mgmt
   def generateCertificate(keygenAlgorithm: String): js.Promise[RTCCertificate] = js.native

@@ -36,22 +36,46 @@ trait SchemaOrderPaymentMethod extends js.Object {
 
 object SchemaOrderPaymentMethod {
   @scala.inline
-  def apply(
-    billingAddress: SchemaOrderAddress = null,
-    expirationMonth: js.UndefOr[Double] = js.undefined,
-    expirationYear: js.UndefOr[Double] = js.undefined,
-    lastFourDigits: String = null,
-    phoneNumber: String = null,
-    `type`: String = null
-  ): SchemaOrderPaymentMethod = {
+  def apply(): SchemaOrderPaymentMethod = {
     val __obj = js.Dynamic.literal()
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(expirationMonth)) __obj.updateDynamic("expirationMonth")(expirationMonth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expirationYear)) __obj.updateDynamic("expirationYear")(expirationYear.get.asInstanceOf[js.Any])
-    if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderPaymentMethod]
   }
+  @scala.inline
+  implicit class SchemaOrderPaymentMethodOps[Self <: SchemaOrderPaymentMethod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingAddress(value: SchemaOrderAddress): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    @scala.inline
+    def setExpirationMonth(value: Double): Self = this.set("expirationMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationMonth: Self = this.set("expirationMonth", js.undefined)
+    @scala.inline
+    def setExpirationYear(value: Double): Self = this.set("expirationYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationYear: Self = this.set("expirationYear", js.undefined)
+    @scala.inline
+    def setLastFourDigits(value: String): Self = this.set("lastFourDigits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFourDigits: Self = this.set("lastFourDigits", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -173,8 +173,66 @@ trait Video
     * @param markerOut Optional out marker time, in seconds, for playback of a sequence of the video.
     */
   def changeSource(key: String): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: js.UndefOr[scala.Nothing],
+    loop: js.UndefOr[scala.Nothing],
+    markerIn: js.UndefOr[scala.Nothing],
+    markerOut: integer
+  ): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: js.UndefOr[scala.Nothing],
+    loop: js.UndefOr[scala.Nothing],
+    markerIn: integer
+  ): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: js.UndefOr[scala.Nothing],
+    loop: js.UndefOr[scala.Nothing],
+    markerIn: integer,
+    markerOut: integer
+  ): this.type = js.native
+  def changeSource(key: String, autoplay: js.UndefOr[scala.Nothing], loop: Boolean): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: js.UndefOr[scala.Nothing],
+    loop: Boolean,
+    markerIn: js.UndefOr[scala.Nothing],
+    markerOut: integer
+  ): this.type = js.native
+  def changeSource(key: String, autoplay: js.UndefOr[scala.Nothing], loop: Boolean, markerIn: integer): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: js.UndefOr[scala.Nothing],
+    loop: Boolean,
+    markerIn: integer,
+    markerOut: integer
+  ): this.type = js.native
   def changeSource(key: String, autoplay: Boolean): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: Boolean,
+    loop: js.UndefOr[scala.Nothing],
+    markerIn: js.UndefOr[scala.Nothing],
+    markerOut: integer
+  ): this.type = js.native
+  def changeSource(key: String, autoplay: Boolean, loop: js.UndefOr[scala.Nothing], markerIn: integer): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: Boolean,
+    loop: js.UndefOr[scala.Nothing],
+    markerIn: integer,
+    markerOut: integer
+  ): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean): this.type = js.native
+  def changeSource(
+    key: String,
+    autoplay: Boolean,
+    loop: Boolean,
+    markerIn: js.UndefOr[scala.Nothing],
+    markerOut: integer
+  ): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer): this.type = js.native
   def changeSource(key: String, autoplay: Boolean, loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
   /**
@@ -247,6 +305,7 @@ trait Video
     * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
     */
   def loadURL(url: String): this.type = js.native
+  def loadURL(url: String, loadEvent: js.UndefOr[scala.Nothing], noAudio: Boolean): this.type = js.native
   def loadURL(url: String, loadEvent: String): this.type = js.native
   def loadURL(url: String, loadEvent: String, noAudio: Boolean): this.type = js.native
   /**
@@ -278,7 +337,11 @@ trait Video
     * @param markerOut Optional out marker time, in seconds, for playback of a sequence of the video.
     */
   def play(): this.type = js.native
+  def play(loop: js.UndefOr[scala.Nothing], markerIn: js.UndefOr[scala.Nothing], markerOut: integer): this.type = js.native
+  def play(loop: js.UndefOr[scala.Nothing], markerIn: integer): this.type = js.native
+  def play(loop: js.UndefOr[scala.Nothing], markerIn: integer, markerOut: integer): this.type = js.native
   def play(loop: Boolean): this.type = js.native
+  def play(loop: Boolean, markerIn: js.UndefOr[scala.Nothing], markerOut: integer): this.type = js.native
   def play(loop: Boolean, markerIn: integer): this.type = js.native
   def play(loop: Boolean, markerIn: integer, markerOut: integer): this.type = js.native
   /**
@@ -465,6 +528,7 @@ trait Video
     * @param height The height of the resulting CanvasTexture.
     */
   def snapshot(): CanvasTexture = js.native
+  def snapshot(width: js.UndefOr[scala.Nothing], height: integer): CanvasTexture = js.native
   def snapshot(width: integer): CanvasTexture = js.native
   def snapshot(width: integer, height: integer): CanvasTexture = js.native
   /**

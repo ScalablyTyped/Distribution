@@ -42,23 +42,48 @@ trait StartJobRequest extends js.Object {
 
 object StartJobRequest {
   @scala.inline
-  def apply(
-    appId: AppId,
-    branchName: BranchName,
-    jobType: JobType,
-    commitId: CommitId = null,
-    commitMessage: CommitMessage = null,
-    commitTime: CommitTime = null,
-    jobId: JobId = null,
-    jobReason: JobReason = null
-  ): StartJobRequest = {
+  def apply(appId: AppId, branchName: BranchName, jobType: JobType): StartJobRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any], jobType = jobType.asInstanceOf[js.Any])
-    if (commitId != null) __obj.updateDynamic("commitId")(commitId.asInstanceOf[js.Any])
-    if (commitMessage != null) __obj.updateDynamic("commitMessage")(commitMessage.asInstanceOf[js.Any])
-    if (commitTime != null) __obj.updateDynamic("commitTime")(commitTime.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (jobReason != null) __obj.updateDynamic("jobReason")(jobReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartJobRequest]
   }
+  @scala.inline
+  implicit class StartJobRequestOps[Self <: StartJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommitId(value: CommitId): Self = this.set("commitId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitId: Self = this.set("commitId", js.undefined)
+    @scala.inline
+    def setCommitMessage(value: CommitMessage): Self = this.set("commitMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitMessage: Self = this.set("commitMessage", js.undefined)
+    @scala.inline
+    def setCommitTime(value: CommitTime): Self = this.set("commitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitTime: Self = this.set("commitTime", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setJobReason(value: JobReason): Self = this.set("jobReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobReason: Self = this.set("jobReason", js.undefined)
+  }
+  
 }
 

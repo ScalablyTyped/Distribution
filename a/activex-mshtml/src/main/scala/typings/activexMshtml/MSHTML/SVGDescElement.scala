@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SVGDescElement extends js.Object {
   @JSName("MSHTML.SVGDescElement_typekey")
-  var MSHTMLDotSVGDescElement_typekey: SVGDescElement
-  val className: SVGAnimatedString
-  var focusable: SVGAnimatedEnumeration
-  var ownerSVGElement: ISVGSVGElement
-  var viewportElement: ISVGElement
-  var xmlbase: String
-  var xmllang: String
-  var xmlspace: String
+  var MSHTMLDotSVGDescElement_typekey: SVGDescElement = js.native
+  val className: SVGAnimatedString = js.native
+  var focusable: SVGAnimatedEnumeration = js.native
+  var ownerSVGElement: ISVGSVGElement = js.native
+  var viewportElement: ISVGElement = js.native
+  var xmlbase: String = js.native
+  var xmllang: String = js.native
+  var xmlspace: String = js.native
 }
 
 object SVGDescElement {
@@ -32,5 +33,34 @@ object SVGDescElement {
     __obj.updateDynamic("MSHTML.SVGDescElement_typekey")(MSHTMLDotSVGDescElement_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGDescElement]
   }
+  @scala.inline
+  implicit class SVGDescElementOps[Self <: SVGDescElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSHTMLDotSVGDescElement_typekey(value: SVGDescElement): Self = this.set("MSHTML.SVGDescElement_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClassName(value: SVGAnimatedString): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFocusable(value: SVGAnimatedEnumeration): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwnerSVGElement(value: ISVGSVGElement): Self = this.set("ownerSVGElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setViewportElement(value: ISVGElement): Self = this.set("viewportElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXmlbase(value: String): Self = this.set("xmlbase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXmllang(value: String): Self = this.set("xmllang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setXmlspace(value: String): Self = this.set("xmlspace", value.asInstanceOf[js.Any])
+  }
+  
 }
 

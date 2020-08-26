@@ -171,6 +171,7 @@ trait Http2SecureServer extends Server {
   @JSName("prependOnceListener")
   def prependOnceListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
   def setTimeout(): this.type = js.native
+  def setTimeout(msec: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def setTimeout(msec: Double): this.type = js.native
   def setTimeout(msec: Double, callback: js.Function0[Unit]): this.type = js.native
 }

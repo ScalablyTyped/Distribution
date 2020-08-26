@@ -59,6 +59,7 @@ trait Slide extends js.Object {
     * @param number [ScaleHeight=0]
     */
   def Export(FileName: String, FilterName: String): Unit = js.native
+  def Export(FileName: String, FilterName: String, ScaleWidth: js.UndefOr[scala.Nothing], ScaleHeight: Double): Unit = js.native
   def Export(FileName: String, FilterName: String, ScaleWidth: Double): Unit = js.native
   def Export(FileName: String, FilterName: String, ScaleWidth: Double, ScaleHeight: Double): Unit = js.native
   def MoveTo(toPos: Double): Unit = js.native
@@ -68,6 +69,7 @@ trait Slide extends js.Object {
     * @param boolean [UseSlideOrder=false]
     */
   def PublishSlides(SlideLibraryUrl: String): Unit = js.native
+  def PublishSlides(SlideLibraryUrl: String, Overwrite: js.UndefOr[scala.Nothing], UseSlideOrder: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean): Unit = js.native
   def PublishSlides(SlideLibraryUrl: String, Overwrite: Boolean, UseSlideOrder: Boolean): Unit = js.native
   def Scripts(Index: js.Any): Script = js.native

@@ -19,24 +19,9 @@ object computePool3DInfo extends js.Object {
     filterSize: Double | (js.Tuple3[Double, Double, Double]),
     strides: Double | (js.Tuple3[Double, Double, Double]),
     dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same_ | valid_ | Double
-  ): Conv3DInfo = js.native
-  def apply(
-    inShape: js.Tuple5[Double, Double, Double, Double, Double],
-    filterSize: Double | (js.Tuple3[Double, Double, Double]),
-    strides: Double | (js.Tuple3[Double, Double, Double]),
-    dilations: Double | (js.Tuple3[Double, Double, Double]),
     pad: same_ | valid_ | Double,
-    roundingMode: floor | round | ceil
-  ): Conv3DInfo = js.native
-  def apply(
-    inShape: js.Tuple5[Double, Double, Double, Double, Double],
-    filterSize: Double | (js.Tuple3[Double, Double, Double]),
-    strides: Double | (js.Tuple3[Double, Double, Double]),
-    dilations: Double | (js.Tuple3[Double, Double, Double]),
-    pad: same_ | valid_ | Double,
-    roundingMode: floor | round | ceil,
-    dataFormat: NDHWC | NCDHW
+    roundingMode: js.UndefOr[floor | round | ceil],
+    dataFormat: js.UndefOr[NDHWC | NCDHW]
   ): Conv3DInfo = js.native
 }
 

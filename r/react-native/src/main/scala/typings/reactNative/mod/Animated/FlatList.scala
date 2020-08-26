@@ -1,13 +1,13 @@
 package typings.reactNative.mod.Animated
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.Component
+import typings.reactNative.mod.FlatListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("react-native", "Animated.FlatList")
 @js.native
-object FlatList
-  extends TopLevel[AnimatedComponent[Instantiable0[typings.reactNative.mod.FlatList[js.Object]]]]
+class FlatList[ItemT] ()
+  extends Component[FlatListProps[ItemT] | AnimatedProps[FlatListProps[ItemT]], js.Object, js.Any]
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/data-view-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/data-view-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DataView")
 @js.native
@@ -27,12 +27,10 @@ class DataView protected () extends EntityWidget {
   @JSName("model")
   var model_FDataView: IModel = js.native
   def contents: DataViewContents = js.native
-  def contents(newValue: DataViewContents): js.Any = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def contents_=(newValue: DataViewContents): Unit = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
 }
 
 /* static members */

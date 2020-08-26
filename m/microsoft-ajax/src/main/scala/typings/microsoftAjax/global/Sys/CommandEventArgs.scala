@@ -15,27 +15,5 @@ class CommandEventArgs protected ()
   extends typings.microsoftAjax.Sys.CommandEventArgs {
   //#region Constructors
   def this(commandName: String, commandArgument: js.Any, commandSource: js.Any) = this()
-  /**
-    * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
-    */
-  /* CompleteClass */
-  override var Empty: typings.microsoftAjax.Sys.EventArgs = js.native
-  /**
-    * Gets a value that represents the command argument.
-    */
-  /* CompleteClass */
-  override def get_commandArgument(): js.Any = js.native
-  //#endregion
-  //#region Properties
-  /**
-    * Gets a string that specifies the command name.
-    */
-  /* CompleteClass */
-  override def get_commandName(): String = js.native
-  /**
-    * Gets a value that represents the command source.
-    */
-  /* CompleteClass */
-  override def get_commandSource(): js.Any = js.native
 }
 

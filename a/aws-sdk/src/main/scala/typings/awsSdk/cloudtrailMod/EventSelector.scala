@@ -26,18 +26,42 @@ trait EventSelector extends js.Object {
 
 object EventSelector {
   @scala.inline
-  def apply(
-    DataResources: DataResources = null,
-    ExcludeManagementEventSources: ExcludeManagementEventSources = null,
-    IncludeManagementEvents: js.UndefOr[Boolean] = js.undefined,
-    ReadWriteType: ReadWriteType = null
-  ): EventSelector = {
+  def apply(): EventSelector = {
     val __obj = js.Dynamic.literal()
-    if (DataResources != null) __obj.updateDynamic("DataResources")(DataResources.asInstanceOf[js.Any])
-    if (ExcludeManagementEventSources != null) __obj.updateDynamic("ExcludeManagementEventSources")(ExcludeManagementEventSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeManagementEvents)) __obj.updateDynamic("IncludeManagementEvents")(IncludeManagementEvents.get.asInstanceOf[js.Any])
-    if (ReadWriteType != null) __obj.updateDynamic("ReadWriteType")(ReadWriteType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSelector]
   }
+  @scala.inline
+  implicit class EventSelectorOps[Self <: EventSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataResourcesVarargs(value: DataResource*): Self = this.set("DataResources", js.Array(value :_*))
+    @scala.inline
+    def setDataResources(value: DataResources): Self = this.set("DataResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataResources: Self = this.set("DataResources", js.undefined)
+    @scala.inline
+    def setExcludeManagementEventSourcesVarargs(value: String*): Self = this.set("ExcludeManagementEventSources", js.Array(value :_*))
+    @scala.inline
+    def setExcludeManagementEventSources(value: ExcludeManagementEventSources): Self = this.set("ExcludeManagementEventSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeManagementEventSources: Self = this.set("ExcludeManagementEventSources", js.undefined)
+    @scala.inline
+    def setIncludeManagementEvents(value: Boolean): Self = this.set("IncludeManagementEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeManagementEvents: Self = this.set("IncludeManagementEvents", js.undefined)
+    @scala.inline
+    def setReadWriteType(value: ReadWriteType): Self = this.set("ReadWriteType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadWriteType: Self = this.set("ReadWriteType", js.undefined)
+  }
+  
 }
 

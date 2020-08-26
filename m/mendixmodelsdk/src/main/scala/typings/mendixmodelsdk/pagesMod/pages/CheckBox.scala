@@ -33,7 +33,7 @@ class CheckBox protected () extends AttributeWidget {
     * In version 8.0.0: introduced
     */
   def labelPosition: LabelPosition = js.native
-  def labelPosition(newValue: LabelPosition): js.Any = js.native
+  def labelPosition_=(newValue: LabelPosition): Unit = js.native
 }
 
 /* static members */

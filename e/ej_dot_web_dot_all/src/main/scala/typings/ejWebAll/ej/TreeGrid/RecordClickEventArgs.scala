@@ -4,50 +4,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecordClickEventArgs extends js.Object {
   /** Returns the cancel option value.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** Returns the element of clicked cell.
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[js.Any] = js.native
   /** Returns the index of the clicked cell.
     */
-  var cellIndex: js.UndefOr[Double] = js.undefined
+  var cellIndex: js.UndefOr[Double] = js.native
   /** Returns the data of clicked cell.
     */
-  var cellValue: js.UndefOr[js.Any] = js.undefined
+  var cellValue: js.UndefOr[js.Any] = js.native
   /** Returns the column name of the clicked cell.
     */
-  var columnName: js.UndefOr[String] = js.undefined
+  var columnName: js.UndefOr[String] = js.native
   /** Returns the element of the clicked row.
     */
-  var row: js.UndefOr[js.Any] = js.undefined
+  var row: js.UndefOr[js.Any] = js.native
   /** Returns the index of the clicked row.
     */
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.native
 }
 
 object RecordClickEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    cell: js.Any = null,
-    cellIndex: js.UndefOr[Double] = js.undefined,
-    cellValue: js.Any = null,
-    columnName: String = null,
-    row: js.Any = null,
-    rowIndex: js.UndefOr[Double] = js.undefined
-  ): RecordClickEventArgs = {
+  def apply(): RecordClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
-    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue.asInstanceOf[js.Any])
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordClickEventArgs]
   }
+  @scala.inline
+  implicit class RecordClickEventArgsOps[Self <: RecordClickEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCell(value: js.Any): Self = this.set("cell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCell: Self = this.set("cell", js.undefined)
+    @scala.inline
+    def setCellIndex(value: Double): Self = this.set("cellIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellIndex: Self = this.set("cellIndex", js.undefined)
+    @scala.inline
+    def setCellValue(value: js.Any): Self = this.set("cellValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellValue: Self = this.set("cellValue", js.undefined)
+    @scala.inline
+    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    @scala.inline
+    def setRow(value: js.Any): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+  }
+  
 }
 

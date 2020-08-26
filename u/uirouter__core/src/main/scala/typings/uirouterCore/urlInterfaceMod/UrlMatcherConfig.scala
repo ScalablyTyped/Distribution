@@ -28,6 +28,11 @@ trait UrlMatcherConfig extends js.Object {
   /** See: [[UrlConfig.strictMode]] */ def strictMode(): Boolean = js.native
   def strictMode(value: Boolean): Boolean = js.native
   /** See: [[UrlConfig.type]] */ def `type`(name: String): js.Any = js.native
+  def `type`(
+    name: String,
+    definition: js.UndefOr[scala.Nothing],
+    definitionFn: js.Function0[ParamTypeDefinition]
+  ): js.Any = js.native
   def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
   def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
 }

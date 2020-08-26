@@ -36,6 +36,7 @@ class SourceMapGenerator () extends js.Object {
     *        relative to the SourceMapGenerator.
     */
   def applySourceMap(sourceMapConsumer: SourceMapConsumer): Unit = js.native
+  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: js.UndefOr[scala.Nothing], sourceMapPath: String): Unit = js.native
   def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String): Unit = js.native
   def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String, sourceMapPath: String): Unit = js.native
   /**

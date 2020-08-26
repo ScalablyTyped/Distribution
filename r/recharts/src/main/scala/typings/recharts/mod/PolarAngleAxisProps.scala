@@ -1,6 +1,7 @@
 package typings.recharts.mod
 
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.recharts.rechartsNumbers.`100`
 import typings.recharts.rechartsNumbers.`200`
 import typings.recharts.rechartsNumbers.`300`
@@ -33,304 +34,517 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent recharts.recharts.EventAttributes */
 /* Inlined parent std.Partial<recharts.recharts.PresentationAttributes<number, number>> */
+@js.native
 trait PolarAngleAxisProps extends js.Object {
-  var alignmentBaseline: js.UndefOr[String] = js.undefined
-  var angle: js.UndefOr[Double] = js.undefined
-  var angleAxisId: js.UndefOr[String | Double] = js.undefined
+  var alignmentBaseline: js.UndefOr[String] = js.native
+  var angle: js.UndefOr[Double] = js.native
+  var angleAxisId: js.UndefOr[String | Double] = js.native
    // this seems not being used by the lib.
-  var axisLine: js.UndefOr[Boolean | js.Object] = js.undefined
-  var axisLineType: js.UndefOr[polygon | circle] = js.undefined
-  var baselineShift: js.UndefOr[String] = js.undefined
-  var clip: js.UndefOr[String] = js.undefined
-  var clipPath: js.UndefOr[String] = js.undefined
-  var clipRule: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var colorInterpolation: js.UndefOr[String] = js.undefined
-  var colorInterpolationFilters: js.UndefOr[String] = js.undefined
-  var colorProfile: js.UndefOr[String] = js.undefined
-  var colorRendering: js.UndefOr[String] = js.undefined
-  var cursor: js.UndefOr[String] = js.undefined
+  var axisLine: js.UndefOr[Boolean | js.Object] = js.native
+  var axisLineType: js.UndefOr[polygon | circle] = js.native
+  var baselineShift: js.UndefOr[String] = js.native
+  var clip: js.UndefOr[String] = js.native
+  var clipPath: js.UndefOr[String] = js.native
+  var clipRule: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.native
+  var colorInterpolation: js.UndefOr[String] = js.native
+  var colorInterpolationFilters: js.UndefOr[String] = js.native
+  var colorProfile: js.UndefOr[String] = js.native
+  var colorRendering: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.native
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
-  var cx: js.UndefOr[Double] = js.undefined
-  var cy: js.UndefOr[Double] = js.undefined
-  var dataKey: js.UndefOr[DataKey] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var display: js.UndefOr[String] = js.undefined
-  var dominantBaseline: js.UndefOr[String] = js.undefined
-  var dx: js.UndefOr[Double] = js.undefined
-  var dy: js.UndefOr[Double] = js.undefined
-  var fill: js.UndefOr[String] = js.undefined
-  var fillOpacity: js.UndefOr[Double | String] = js.undefined
-  var fillRule: js.UndefOr[String] = js.undefined
-  var filter: js.UndefOr[String] = js.undefined
-  var floodColor: js.UndefOr[String] = js.undefined
-  var floodOpacity: js.UndefOr[String] = js.undefined
-  var font: js.UndefOr[String] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double | String] = js.undefined
-  var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
-  var fontStretch: js.UndefOr[String] = js.undefined
-  var fontStyle: js.UndefOr[String] = js.undefined
-  var fontVariant: js.UndefOr[String] = js.undefined
+  var cx: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.native
+  var dataKey: js.UndefOr[DataKey] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.native
+  var dominantBaseline: js.UndefOr[String] = js.native
+  var dx: js.UndefOr[Double] = js.native
+  var dy: js.UndefOr[Double] = js.native
+  var fill: js.UndefOr[String] = js.native
+  var fillOpacity: js.UndefOr[Double | String] = js.native
+  var fillRule: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.native
+  var floodColor: js.UndefOr[String] = js.native
+  var floodOpacity: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double | String] = js.native
+  var fontSizeAdjust: js.UndefOr[Double | String] = js.native
+  var fontStretch: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.native
   var fontWeight: js.UndefOr[
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
-  ] = js.undefined
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hide: js.UndefOr[Boolean] = js.undefined
-  var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
-  var kerning: js.UndefOr[Double | String] = js.undefined
-  var letterSpacing: js.UndefOr[String] = js.undefined
-  var lightingColor: js.UndefOr[String] = js.undefined
-  var markerEnd: js.UndefOr[String] = js.undefined
-  var markerMid: js.UndefOr[String] = js.undefined
-  var markerStart: js.UndefOr[String] = js.undefined
-  var mask: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseDown: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseLeave: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseMove: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseOut: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseOver: js.UndefOr[RechartsFunction] = js.undefined
-  var onMouseUp: js.UndefOr[RechartsFunction] = js.undefined
-  var onTouchCancel: js.UndefOr[RechartsFunction] = js.undefined
-  var onTouchEnd: js.UndefOr[RechartsFunction] = js.undefined
-  var onTouchMove: js.UndefOr[RechartsFunction] = js.undefined
-  var onTouchStart: js.UndefOr[RechartsFunction] = js.undefined
-  var opacity: js.UndefOr[Double | String] = js.undefined
-  var orientation: js.UndefOr[inner | outer] = js.undefined
-  var overflow: js.UndefOr[String] = js.undefined
-  var pointerEvents: js.UndefOr[String] = js.undefined
-  var r: js.UndefOr[Double] = js.undefined
-  var radius: js.UndefOr[Percentage | Double] = js.undefined
-  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
-  var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
-  var stopColor: js.UndefOr[String] = js.undefined
-  var stopOpacity: js.UndefOr[Double | String] = js.undefined
-  var stroke: js.UndefOr[String] = js.undefined
-  var strokeDasharray: js.UndefOr[String] = js.undefined
-  var strokeDashoffset: js.UndefOr[Double | String] = js.undefined
-  var strokeLinecap: js.UndefOr[String] = js.undefined
-  var strokeLinejoin: js.UndefOr[String] = js.undefined
-  var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
-  var strokeOpacity: js.UndefOr[Double | String] = js.undefined
-  var strokeWidth: js.UndefOr[Double | String] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var textAnchor: js.UndefOr[String] = js.undefined
-  var textDecoration: js.UndefOr[String] = js.undefined
-  var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.undefined
-  var tick: js.UndefOr[Boolean | ContentRenderer[_] | js.Object | ReactElement] = js.undefined
-  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
-  var tickLine: js.UndefOr[Boolean | js.Object] = js.undefined
-  var ticks: js.UndefOr[js.Array[PolarAngleAxisTick]] = js.undefined
-  var transform: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[number | category] = js.undefined
-  var unicodeBidi: js.UndefOr[String] = js.undefined
-  var visibility: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var wordSpacing: js.UndefOr[Double | String] = js.undefined
-  var writingMode: js.UndefOr[String] = js.undefined
-  var x: js.UndefOr[Double] = js.undefined
-  var y: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var glyphOrientationVertical: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hide: js.UndefOr[Boolean] = js.native
+  var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.native
+  var kerning: js.UndefOr[Double | String] = js.native
+  var letterSpacing: js.UndefOr[String] = js.native
+  var lightingColor: js.UndefOr[String] = js.native
+  var markerEnd: js.UndefOr[String] = js.native
+  var markerMid: js.UndefOr[String] = js.native
+  var markerStart: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.native
+  var onClick: js.UndefOr[RechartsFunction] = js.native
+  var onMouseDown: js.UndefOr[RechartsFunction] = js.native
+  var onMouseEnter: js.UndefOr[RechartsFunction] = js.native
+  var onMouseLeave: js.UndefOr[RechartsFunction] = js.native
+  var onMouseMove: js.UndefOr[RechartsFunction] = js.native
+  var onMouseOut: js.UndefOr[RechartsFunction] = js.native
+  var onMouseOver: js.UndefOr[RechartsFunction] = js.native
+  var onMouseUp: js.UndefOr[RechartsFunction] = js.native
+  var onTouchCancel: js.UndefOr[RechartsFunction] = js.native
+  var onTouchEnd: js.UndefOr[RechartsFunction] = js.native
+  var onTouchMove: js.UndefOr[RechartsFunction] = js.native
+  var onTouchStart: js.UndefOr[RechartsFunction] = js.native
+  var opacity: js.UndefOr[Double | String] = js.native
+  var orientation: js.UndefOr[inner | outer] = js.native
+  var overflow: js.UndefOr[String] = js.native
+  var pointerEvents: js.UndefOr[String] = js.native
+  var r: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Percentage | Double] = js.native
+  var scale: js.UndefOr[ScaleType | RechartsFunction] = js.native
+  var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.native
+  var stopColor: js.UndefOr[String] = js.native
+  var stopOpacity: js.UndefOr[Double | String] = js.native
+  var stroke: js.UndefOr[String] = js.native
+  var strokeDasharray: js.UndefOr[String] = js.native
+  var strokeDashoffset: js.UndefOr[Double | String] = js.native
+  var strokeLinecap: js.UndefOr[String] = js.native
+  var strokeLinejoin: js.UndefOr[String] = js.native
+  var strokeMiterlimit: js.UndefOr[Double | String] = js.native
+  var strokeOpacity: js.UndefOr[Double | String] = js.native
+  var strokeWidth: js.UndefOr[Double | String] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var textAnchor: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.native
+  var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.native
+  var tick: js.UndefOr[Boolean | ContentRenderer[_] | js.Object | ReactElement] = js.native
+  var tickFormatter: js.UndefOr[TickFormatterFunction] = js.native
+  var tickLine: js.UndefOr[Boolean | js.Object] = js.native
+  var ticks: js.UndefOr[js.Array[PolarAngleAxisTick]] = js.native
+  var transform: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[number | category] = js.native
+  var unicodeBidi: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var wordSpacing: js.UndefOr[Double | String] = js.native
+  var writingMode: js.UndefOr[String] = js.native
+  var x: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.native
 }
 
 object PolarAngleAxisProps {
   @scala.inline
-  def apply(
-    alignmentBaseline: String = null,
-    angle: js.UndefOr[Double] = js.undefined,
-    angleAxisId: String | Double = null,
-    axisLine: Boolean | js.Object = null,
-    axisLineType: polygon | circle = null,
-    baselineShift: String = null,
-    clip: String = null,
-    clipPath: String = null,
-    clipRule: String = null,
-    color: String = null,
-    colorInterpolation: String = null,
-    colorInterpolationFilters: String = null,
-    colorProfile: String = null,
-    colorRendering: String = null,
-    cursor: String = null,
-    cx: js.UndefOr[Double] = js.undefined,
-    cy: js.UndefOr[Double] = js.undefined,
-    dataKey: DataKey = null,
-    direction: String = null,
-    display: String = null,
-    dominantBaseline: String = null,
-    dx: js.UndefOr[Double] = js.undefined,
-    dy: js.UndefOr[Double] = js.undefined,
-    fill: String = null,
-    fillOpacity: Double | String = null,
-    fillRule: String = null,
-    filter: String = null,
-    floodColor: String = null,
-    floodOpacity: String = null,
-    font: String = null,
-    fontFamily: String = null,
-    fontSize: Double | String = null,
-    fontSizeAdjust: Double | String = null,
-    fontStretch: String = null,
-    fontStyle: String = null,
-    fontVariant: String = null,
-    fontWeight: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit = null,
-    glyphOrientationVertical: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    hide: js.UndefOr[Boolean] = js.undefined,
-    imageRendering: auto | optimizeSpeed | optimizeQuality | inherit = null,
-    kerning: Double | String = null,
-    letterSpacing: String = null,
-    lightingColor: String = null,
-    markerEnd: String = null,
-    markerMid: String = null,
-    markerStart: String = null,
-    mask: String = null,
-    onClick: /* repeated */ js.Any => Unit = null,
-    onMouseDown: /* repeated */ js.Any => Unit = null,
-    onMouseEnter: /* repeated */ js.Any => Unit = null,
-    onMouseLeave: /* repeated */ js.Any => Unit = null,
-    onMouseMove: /* repeated */ js.Any => Unit = null,
-    onMouseOut: /* repeated */ js.Any => Unit = null,
-    onMouseOver: /* repeated */ js.Any => Unit = null,
-    onMouseUp: /* repeated */ js.Any => Unit = null,
-    onTouchCancel: /* repeated */ js.Any => Unit = null,
-    onTouchEnd: /* repeated */ js.Any => Unit = null,
-    onTouchMove: /* repeated */ js.Any => Unit = null,
-    onTouchStart: /* repeated */ js.Any => Unit = null,
-    opacity: Double | String = null,
-    orientation: inner | outer = null,
-    overflow: String = null,
-    pointerEvents: String = null,
-    r: js.UndefOr[Double] = js.undefined,
-    radius: Percentage | Double = null,
-    scale: ScaleType | RechartsFunction = null,
-    shapeRendering: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit = null,
-    stopColor: String = null,
-    stopOpacity: Double | String = null,
-    stroke: String = null,
-    strokeDasharray: String = null,
-    strokeDashoffset: Double | String = null,
-    strokeLinecap: String = null,
-    strokeLinejoin: String = null,
-    strokeMiterlimit: Double | String = null,
-    strokeOpacity: Double | String = null,
-    strokeWidth: Double | String = null,
-    style: js.Object = null,
-    textAnchor: String = null,
-    textDecoration: String = null,
-    textRendering: auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit = null,
-    tick: Boolean | ContentRenderer[_] | js.Object | ReactElement = null,
-    tickFormatter: /* value */ js.Any => js.Any = null,
-    tickLine: Boolean | js.Object = null,
-    ticks: js.Array[PolarAngleAxisTick] = null,
-    transform: String = null,
-    `type`: number | category = null,
-    unicodeBidi: String = null,
-    visibility: String = null,
-    width: js.UndefOr[Double] = js.undefined,
-    wordSpacing: Double | String = null,
-    writingMode: String = null,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): PolarAngleAxisProps = {
+  def apply(): PolarAngleAxisProps = {
     val __obj = js.Dynamic.literal()
-    if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (angleAxisId != null) __obj.updateDynamic("angleAxisId")(angleAxisId.asInstanceOf[js.Any])
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (axisLineType != null) __obj.updateDynamic("axisLineType")(axisLineType.asInstanceOf[js.Any])
-    if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
-    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
-    if (colorInterpolationFilters != null) __obj.updateDynamic("colorInterpolationFilters")(colorInterpolationFilters.asInstanceOf[js.Any])
-    if (colorProfile != null) __obj.updateDynamic("colorProfile")(colorProfile.asInstanceOf[js.Any])
-    if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cx)) __obj.updateDynamic("cx")(cx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cy)) __obj.updateDynamic("cy")(cy.get.asInstanceOf[js.Any])
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (!js.isUndefined(dx)) __obj.updateDynamic("dx")(dx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dy)) __obj.updateDynamic("dy")(dy.get.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
-    if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSizeAdjust != null) __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.get.asInstanceOf[js.Any])
-    if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
-    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
-    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(r)) __obj.updateDynamic("r")(r.get.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
-    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
-    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (textRendering != null) __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1(tickFormatter))
-    if (tickLine != null) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unicodeBidi != null) __obj.updateDynamic("unicodeBidi")(unicodeBidi.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
-    if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolarAngleAxisProps]
   }
+  @scala.inline
+  implicit class PolarAngleAxisPropsOps[Self <: PolarAngleAxisProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignmentBaseline(value: String): Self = this.set("alignmentBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignmentBaseline: Self = this.set("alignmentBaseline", js.undefined)
+    @scala.inline
+    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setAngleAxisId(value: String | Double): Self = this.set("angleAxisId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngleAxisId: Self = this.set("angleAxisId", js.undefined)
+    @scala.inline
+    def setAxisLine(value: Boolean | js.Object): Self = this.set("axisLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLine: Self = this.set("axisLine", js.undefined)
+    @scala.inline
+    def setAxisLineType(value: polygon | circle): Self = this.set("axisLineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisLineType: Self = this.set("axisLineType", js.undefined)
+    @scala.inline
+    def setBaselineShift(value: String): Self = this.set("baselineShift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineShift: Self = this.set("baselineShift", js.undefined)
+    @scala.inline
+    def setClip(value: String): Self = this.set("clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClip: Self = this.set("clip", js.undefined)
+    @scala.inline
+    def setClipPath(value: String): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipPath: Self = this.set("clipPath", js.undefined)
+    @scala.inline
+    def setClipRule(value: String): Self = this.set("clipRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipRule: Self = this.set("clipRule", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorInterpolation(value: String): Self = this.set("colorInterpolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInterpolation: Self = this.set("colorInterpolation", js.undefined)
+    @scala.inline
+    def setColorInterpolationFilters(value: String): Self = this.set("colorInterpolationFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInterpolationFilters: Self = this.set("colorInterpolationFilters", js.undefined)
+    @scala.inline
+    def setColorProfile(value: String): Self = this.set("colorProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorProfile: Self = this.set("colorProfile", js.undefined)
+    @scala.inline
+    def setColorRendering(value: String): Self = this.set("colorRendering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorRendering: Self = this.set("colorRendering", js.undefined)
+    @scala.inline
+    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setCx(value: Double): Self = this.set("cx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCx: Self = this.set("cx", js.undefined)
+    @scala.inline
+    def setCy(value: Double): Self = this.set("cy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCy: Self = this.set("cy", js.undefined)
+    @scala.inline
+    def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = this.set("dataKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDataKey(value: DataKey): Self = this.set("dataKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataKey: Self = this.set("dataKey", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setDominantBaseline(value: String): Self = this.set("dominantBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDominantBaseline: Self = this.set("dominantBaseline", js.undefined)
+    @scala.inline
+    def setDx(value: Double): Self = this.set("dx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDx: Self = this.set("dx", js.undefined)
+    @scala.inline
+    def setDy(value: Double): Self = this.set("dy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDy: Self = this.set("dy", js.undefined)
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setFillOpacity(value: Double | String): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    @scala.inline
+    def setFillRule(value: String): Self = this.set("fillRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillRule: Self = this.set("fillRule", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFloodColor(value: String): Self = this.set("floodColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodColor: Self = this.set("floodColor", js.undefined)
+    @scala.inline
+    def setFloodOpacity(value: String): Self = this.set("floodOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodOpacity: Self = this.set("floodOpacity", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double | String): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontSizeAdjust(value: Double | String): Self = this.set("fontSizeAdjust", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeAdjust: Self = this.set("fontSizeAdjust", js.undefined)
+    @scala.inline
+    def setFontStretch(value: String): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStretch: Self = this.set("fontStretch", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontVariant(value: String): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
+    @scala.inline
+    def setFontWeight(
+      value: normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
+    ): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setGlyphOrientationVertical(value: String): Self = this.set("glyphOrientationVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphOrientationVertical: Self = this.set("glyphOrientationVertical", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHide(value: Boolean): Self = this.set("hide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setImageRendering(value: auto | optimizeSpeed | optimizeQuality | inherit): Self = this.set("imageRendering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageRendering: Self = this.set("imageRendering", js.undefined)
+    @scala.inline
+    def setKerning(value: Double | String): Self = this.set("kerning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKerning: Self = this.set("kerning", js.undefined)
+    @scala.inline
+    def setLetterSpacing(value: String): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    @scala.inline
+    def setLightingColor(value: String): Self = this.set("lightingColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLightingColor: Self = this.set("lightingColor", js.undefined)
+    @scala.inline
+    def setMarkerEnd(value: String): Self = this.set("markerEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerEnd: Self = this.set("markerEnd", js.undefined)
+    @scala.inline
+    def setMarkerMid(value: String): Self = this.set("markerMid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerMid: Self = this.set("markerMid", js.undefined)
+    @scala.inline
+    def setMarkerStart(value: String): Self = this.set("markerStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerStart: Self = this.set("markerStart", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* repeated */ js.Any => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: /* repeated */ js.Any => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: /* repeated */ js.Any => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: /* repeated */ js.Any => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: /* repeated */ js.Any => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: /* repeated */ js.Any => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double | String): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setOrientation(value: inner | outer): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setOverflow(value: String): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setPointerEvents(value: String): Self = this.set("pointerEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointerEvents: Self = this.set("pointerEvents", js.undefined)
+    @scala.inline
+    def setR(value: Double): Self = this.set("r", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteR: Self = this.set("r", js.undefined)
+    @scala.inline
+    def setRadius(value: Percentage | Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadius: Self = this.set("radius", js.undefined)
+    @scala.inline
+    def setScaleFunction1(value: /* repeated */ js.Any => Unit): Self = this.set("scale", js.Any.fromFunction1(value))
+    @scala.inline
+    def setScale(value: ScaleType | RechartsFunction): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setShapeRendering(value: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit): Self = this.set("shapeRendering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeRendering: Self = this.set("shapeRendering", js.undefined)
+    @scala.inline
+    def setStopColor(value: String): Self = this.set("stopColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopColor: Self = this.set("stopColor", js.undefined)
+    @scala.inline
+    def setStopOpacity(value: Double | String): Self = this.set("stopOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopOpacity: Self = this.set("stopOpacity", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setStrokeDasharray(value: String): Self = this.set("strokeDasharray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeDasharray: Self = this.set("strokeDasharray", js.undefined)
+    @scala.inline
+    def setStrokeDashoffset(value: Double | String): Self = this.set("strokeDashoffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeDashoffset: Self = this.set("strokeDashoffset", js.undefined)
+    @scala.inline
+    def setStrokeLinecap(value: String): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    @scala.inline
+    def setStrokeLinejoin(value: String): Self = this.set("strokeLinejoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeLinejoin: Self = this.set("strokeLinejoin", js.undefined)
+    @scala.inline
+    def setStrokeMiterlimit(value: Double | String): Self = this.set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeMiterlimit: Self = this.set("strokeMiterlimit", js.undefined)
+    @scala.inline
+    def setStrokeOpacity(value: Double | String): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: Double | String): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTextAnchor(value: String): Self = this.set("textAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAnchor: Self = this.set("textAnchor", js.undefined)
+    @scala.inline
+    def setTextDecoration(value: String): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    @scala.inline
+    def setTextRendering(value: auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit): Self = this.set("textRendering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextRendering: Self = this.set("textRendering", js.undefined)
+    @scala.inline
+    def setTickFunction1(value: _ => ReactNode): Self = this.set("tick", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTick(value: Boolean | ContentRenderer[_] | js.Object | ReactElement): Self = this.set("tick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTick: Self = this.set("tick", js.undefined)
+    @scala.inline
+    def setTickFormatter(value: /* value */ js.Any => js.Any): Self = this.set("tickFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTickFormatter: Self = this.set("tickFormatter", js.undefined)
+    @scala.inline
+    def setTickLine(value: Boolean | js.Object): Self = this.set("tickLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickLine: Self = this.set("tickLine", js.undefined)
+    @scala.inline
+    def setTicksVarargs(value: PolarAngleAxisTick*): Self = this.set("ticks", js.Array(value :_*))
+    @scala.inline
+    def setTicks(value: js.Array[PolarAngleAxisTick]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+    @scala.inline
+    def setTransform(value: String): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setType(value: number | category): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnicodeBidi(value: String): Self = this.set("unicodeBidi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnicodeBidi: Self = this.set("unicodeBidi", js.undefined)
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWordSpacing(value: Double | String): Self = this.set("wordSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordSpacing: Self = this.set("wordSpacing", js.undefined)
+    @scala.inline
+    def setWritingMode(value: String): Self = this.set("writingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWritingMode: Self = this.set("writingMode", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

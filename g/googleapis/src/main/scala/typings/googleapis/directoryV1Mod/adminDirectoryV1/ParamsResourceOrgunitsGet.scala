@@ -26,30 +26,36 @@ trait ParamsResourceOrgunitsGet extends StandardParameters {
 
 object ParamsResourceOrgunitsGet {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    customerId: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    orgUnitPath: js.Array[String] = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    userIp: String = null
-  ): ParamsResourceOrgunitsGet = {
+  def apply(): ParamsResourceOrgunitsGet = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (orgUnitPath != null) __obj.updateDynamic("orgUnitPath")(orgUnitPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceOrgunitsGet]
   }
+  @scala.inline
+  implicit class ParamsResourceOrgunitsGetOps[Self <: ParamsResourceOrgunitsGet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setOrgUnitPathVarargs(value: String*): Self = this.set("orgUnitPath", js.Array(value :_*))
+    @scala.inline
+    def setOrgUnitPath(value: js.Array[String]): Self = this.set("orgUnitPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrgUnitPath: Self = this.set("orgUnitPath", js.undefined)
+  }
+  
 }
 

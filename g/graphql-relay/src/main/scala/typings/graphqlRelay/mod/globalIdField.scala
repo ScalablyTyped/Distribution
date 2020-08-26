@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object globalIdField extends js.Object {
   def apply(): GraphQLFieldConfig[_, _, StringDictionary[_]] = js.native
+  def apply(
+    typeName: js.UndefOr[scala.Nothing],
+    idFetcher: js.Function3[/* object */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo, String]
+  ): GraphQLFieldConfig[_, _, StringDictionary[_]] = js.native
   def apply(typeName: String): GraphQLFieldConfig[_, _, StringDictionary[_]] = js.native
   def apply(
     typeName: String,

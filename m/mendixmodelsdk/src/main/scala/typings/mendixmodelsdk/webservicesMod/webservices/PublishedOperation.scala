@@ -27,32 +27,28 @@ class PublishedOperation protected () extends PublishedResource {
   @JSName("model")
   var model_FPublishedOperation: IModel = js.native
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def entityExposedName: String = js.native
-  def entityExposedName(newValue: String): js.Any = js.native
   def entityExposedNameByContract: String = js.native
-  def entityExposedNameByContract(newValue: String): js.Any = js.native
-  def image(): js.Any = js.native
-  def image(newValue: IImage): js.Any = js.native
+  def entityExposedNameByContract_=(newValue: String): Unit = js.native
+  def entityExposedName_=(newValue: String): Unit = js.native
+  def image: IImage | Null = js.native
   def imageQualifiedName: String | Null = js.native
-  @JSName("image")
-  def image_Union: IImage | Null = js.native
+  def image_=(newValue: IImage | Null): Unit = js.native
   def isLockedByContract: Boolean = js.native
-  def isLockedByContract(newValue: Boolean): js.Any = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def isLockedByContract_=(newValue: Boolean): Unit = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   /**
     * In version 7.9.0: introduced
     */
   def operationReturnType: DataType = js.native
-  def operationReturnType(newValue: DataType): js.Any = js.native
+  def operationReturnType_=(newValue: DataType): Unit = js.native
   def parameters: IList[PublishedParameter] = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
@@ -60,15 +56,15 @@ class PublishedOperation protected () extends PublishedResource {
     * In version 7.9.0: deleted
     */
   def returnType: String = js.native
-  def returnType(newValue: String): js.Any = js.native
   def returnTypeIsNillable: Boolean = js.native
-  def returnTypeIsNillable(newValue: Boolean): js.Any = js.native
+  def returnTypeIsNillable_=(newValue: Boolean): Unit = js.native
   def returnTypeIsOptional: Boolean = js.native
-  def returnTypeIsOptional(newValue: Boolean): js.Any = js.native
+  def returnTypeIsOptional_=(newValue: Boolean): Unit = js.native
   def returnTypeNameByContract: String = js.native
-  def returnTypeNameByContract(newValue: String): js.Any = js.native
+  def returnTypeNameByContract_=(newValue: String): Unit = js.native
   def returnTypeSpecificationByContract: String = js.native
-  def returnTypeSpecificationByContract(newValue: String): js.Any = js.native
+  def returnTypeSpecificationByContract_=(newValue: String): Unit = js.native
+  def returnType_=(newValue: String): Unit = js.native
 }
 
 /* static members */

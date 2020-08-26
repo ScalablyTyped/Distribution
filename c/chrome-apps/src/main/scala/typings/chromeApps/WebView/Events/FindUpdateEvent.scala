@@ -2,7 +2,7 @@ package typings.chromeApps.WebView.Events
 
 import typings.chromeApps.WebView.SelectionRect
 import typings.chromeApps.chrome.integer
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * This might happen multiple times for a single find request as matches are found.
   */
 @js.native
-trait FindUpdateEvent extends Event_ {
+trait FindUpdateEvent extends Event {
   /**
     * The ordinal number of the current active match,
     * if it has been found. This will be 0 until then.

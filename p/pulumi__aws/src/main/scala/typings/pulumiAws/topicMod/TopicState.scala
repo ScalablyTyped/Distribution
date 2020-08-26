@@ -86,57 +86,109 @@ trait TopicState extends js.Object {
     */
   val sqsSuccessFeedbackSampleRate: js.UndefOr[Input[Double]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object TopicState {
   @scala.inline
-  def apply(
-    applicationFailureFeedbackRoleArn: Input[String] = null,
-    applicationSuccessFeedbackRoleArn: Input[String] = null,
-    applicationSuccessFeedbackSampleRate: Input[Double] = null,
-    arn: Input[ARN] = null,
-    deliveryPolicy: Input[String] = null,
-    displayName: Input[String] = null,
-    httpFailureFeedbackRoleArn: Input[String] = null,
-    httpSuccessFeedbackRoleArn: Input[String] = null,
-    httpSuccessFeedbackSampleRate: Input[Double] = null,
-    kmsMasterKeyId: Input[String] = null,
-    lambdaFailureFeedbackRoleArn: Input[String] = null,
-    lambdaSuccessFeedbackRoleArn: Input[String] = null,
-    lambdaSuccessFeedbackSampleRate: Input[Double] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    policy: Input[String] = null,
-    sqsFailureFeedbackRoleArn: Input[String] = null,
-    sqsSuccessFeedbackRoleArn: Input[String] = null,
-    sqsSuccessFeedbackSampleRate: Input[Double] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): TopicState = {
+  def apply(): TopicState = {
     val __obj = js.Dynamic.literal()
-    if (applicationFailureFeedbackRoleArn != null) __obj.updateDynamic("applicationFailureFeedbackRoleArn")(applicationFailureFeedbackRoleArn.asInstanceOf[js.Any])
-    if (applicationSuccessFeedbackRoleArn != null) __obj.updateDynamic("applicationSuccessFeedbackRoleArn")(applicationSuccessFeedbackRoleArn.asInstanceOf[js.Any])
-    if (applicationSuccessFeedbackSampleRate != null) __obj.updateDynamic("applicationSuccessFeedbackSampleRate")(applicationSuccessFeedbackSampleRate.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (deliveryPolicy != null) __obj.updateDynamic("deliveryPolicy")(deliveryPolicy.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (httpFailureFeedbackRoleArn != null) __obj.updateDynamic("httpFailureFeedbackRoleArn")(httpFailureFeedbackRoleArn.asInstanceOf[js.Any])
-    if (httpSuccessFeedbackRoleArn != null) __obj.updateDynamic("httpSuccessFeedbackRoleArn")(httpSuccessFeedbackRoleArn.asInstanceOf[js.Any])
-    if (httpSuccessFeedbackSampleRate != null) __obj.updateDynamic("httpSuccessFeedbackSampleRate")(httpSuccessFeedbackSampleRate.asInstanceOf[js.Any])
-    if (kmsMasterKeyId != null) __obj.updateDynamic("kmsMasterKeyId")(kmsMasterKeyId.asInstanceOf[js.Any])
-    if (lambdaFailureFeedbackRoleArn != null) __obj.updateDynamic("lambdaFailureFeedbackRoleArn")(lambdaFailureFeedbackRoleArn.asInstanceOf[js.Any])
-    if (lambdaSuccessFeedbackRoleArn != null) __obj.updateDynamic("lambdaSuccessFeedbackRoleArn")(lambdaSuccessFeedbackRoleArn.asInstanceOf[js.Any])
-    if (lambdaSuccessFeedbackSampleRate != null) __obj.updateDynamic("lambdaSuccessFeedbackSampleRate")(lambdaSuccessFeedbackSampleRate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (sqsFailureFeedbackRoleArn != null) __obj.updateDynamic("sqsFailureFeedbackRoleArn")(sqsFailureFeedbackRoleArn.asInstanceOf[js.Any])
-    if (sqsSuccessFeedbackRoleArn != null) __obj.updateDynamic("sqsSuccessFeedbackRoleArn")(sqsSuccessFeedbackRoleArn.asInstanceOf[js.Any])
-    if (sqsSuccessFeedbackSampleRate != null) __obj.updateDynamic("sqsSuccessFeedbackSampleRate")(sqsSuccessFeedbackSampleRate.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicState]
   }
+  @scala.inline
+  implicit class TopicStateOps[Self <: TopicState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationFailureFeedbackRoleArn(value: Input[String]): Self = this.set("applicationFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationFailureFeedbackRoleArn: Self = this.set("applicationFailureFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setApplicationSuccessFeedbackRoleArn(value: Input[String]): Self = this.set("applicationSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationSuccessFeedbackRoleArn: Self = this.set("applicationSuccessFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setApplicationSuccessFeedbackSampleRate(value: Input[Double]): Self = this.set("applicationSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationSuccessFeedbackSampleRate: Self = this.set("applicationSuccessFeedbackSampleRate", js.undefined)
+    @scala.inline
+    def setArn(value: Input[ARN]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDeliveryPolicy(value: Input[String]): Self = this.set("deliveryPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryPolicy: Self = this.set("deliveryPolicy", js.undefined)
+    @scala.inline
+    def setDisplayName(value: Input[String]): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setHttpFailureFeedbackRoleArn(value: Input[String]): Self = this.set("httpFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpFailureFeedbackRoleArn: Self = this.set("httpFailureFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setHttpSuccessFeedbackRoleArn(value: Input[String]): Self = this.set("httpSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpSuccessFeedbackRoleArn: Self = this.set("httpSuccessFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setHttpSuccessFeedbackSampleRate(value: Input[Double]): Self = this.set("httpSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpSuccessFeedbackSampleRate: Self = this.set("httpSuccessFeedbackSampleRate", js.undefined)
+    @scala.inline
+    def setKmsMasterKeyId(value: Input[String]): Self = this.set("kmsMasterKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsMasterKeyId: Self = this.set("kmsMasterKeyId", js.undefined)
+    @scala.inline
+    def setLambdaFailureFeedbackRoleArn(value: Input[String]): Self = this.set("lambdaFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaFailureFeedbackRoleArn: Self = this.set("lambdaFailureFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setLambdaSuccessFeedbackRoleArn(value: Input[String]): Self = this.set("lambdaSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaSuccessFeedbackRoleArn: Self = this.set("lambdaSuccessFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setLambdaSuccessFeedbackSampleRate(value: Input[Double]): Self = this.set("lambdaSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaSuccessFeedbackSampleRate: Self = this.set("lambdaSuccessFeedbackSampleRate", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setSqsFailureFeedbackRoleArn(value: Input[String]): Self = this.set("sqsFailureFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqsFailureFeedbackRoleArn: Self = this.set("sqsFailureFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setSqsSuccessFeedbackRoleArn(value: Input[String]): Self = this.set("sqsSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqsSuccessFeedbackRoleArn: Self = this.set("sqsSuccessFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setSqsSuccessFeedbackSampleRate(value: Input[Double]): Self = this.set("sqsSuccessFeedbackSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqsSuccessFeedbackSampleRate: Self = this.set("sqsSuccessFeedbackSampleRate", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

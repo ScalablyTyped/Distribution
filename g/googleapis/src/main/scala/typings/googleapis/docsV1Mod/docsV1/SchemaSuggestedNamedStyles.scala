@@ -24,14 +24,30 @@ trait SchemaSuggestedNamedStyles extends js.Object {
 
 object SchemaSuggestedNamedStyles {
   @scala.inline
-  def apply(
-    namedStyles: SchemaNamedStyles = null,
-    namedStylesSuggestionState: SchemaNamedStylesSuggestionState = null
-  ): SchemaSuggestedNamedStyles = {
+  def apply(): SchemaSuggestedNamedStyles = {
     val __obj = js.Dynamic.literal()
-    if (namedStyles != null) __obj.updateDynamic("namedStyles")(namedStyles.asInstanceOf[js.Any])
-    if (namedStylesSuggestionState != null) __obj.updateDynamic("namedStylesSuggestionState")(namedStylesSuggestionState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestedNamedStyles]
   }
+  @scala.inline
+  implicit class SchemaSuggestedNamedStylesOps[Self <: SchemaSuggestedNamedStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamedStyles(value: SchemaNamedStyles): Self = this.set("namedStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedStyles: Self = this.set("namedStyles", js.undefined)
+    @scala.inline
+    def setNamedStylesSuggestionState(value: SchemaNamedStylesSuggestionState): Self = this.set("namedStylesSuggestionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedStylesSuggestionState: Self = this.set("namedStylesSuggestionState", js.undefined)
+  }
+  
 }
 

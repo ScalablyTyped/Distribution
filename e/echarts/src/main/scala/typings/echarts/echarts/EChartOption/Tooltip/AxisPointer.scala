@@ -16,67 +16,114 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AxisPointer extends js.Object {
-  var animation: js.UndefOr[Boolean] = js.undefined
-  var animationDelay: js.UndefOr[Double | js.Function] = js.undefined
-  var animationDelayUpdate: js.UndefOr[Double | js.Function] = js.undefined
-  var animationDuration: js.UndefOr[Double] = js.undefined
-  var animationDurationUpdate: js.UndefOr[Double | js.Function] = js.undefined
-  var animationEasing: js.UndefOr[String] = js.undefined
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
-  var animationThreshold: js.UndefOr[Double] = js.undefined
-  var axis: js.UndefOr[auto | x | y | radius | angle] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
+  var animationDelay: js.UndefOr[Double | js.Function] = js.native
+  var animationDelayUpdate: js.UndefOr[Double | js.Function] = js.native
+  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDurationUpdate: js.UndefOr[Double | js.Function] = js.native
+  var animationEasing: js.UndefOr[String] = js.native
+  var animationEasingUpdate: js.UndefOr[String] = js.native
+  var animationThreshold: js.UndefOr[Double] = js.native
+  var axis: js.UndefOr[auto | x | y | radius | angle] = js.native
   // It is valid when axisPointer.type is 'cross'.
-  var crossStyle: js.UndefOr[LineStyle] = js.undefined
-  var label: js.UndefOr[PointerLabel] = js.undefined
-  var lineStyle: js.UndefOr[LineStyle] = js.undefined
-  var shadowStyle: js.UndefOr[Opacity] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var snap: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[line | shadow | none | cross] = js.undefined
-  var z: js.UndefOr[Double] = js.undefined
+  var crossStyle: js.UndefOr[LineStyle] = js.native
+  var label: js.UndefOr[PointerLabel] = js.native
+  var lineStyle: js.UndefOr[LineStyle] = js.native
+  var shadowStyle: js.UndefOr[Opacity] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var snap: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[line | shadow | none | cross] = js.native
+  var z: js.UndefOr[Double] = js.native
 }
 
 object AxisPointer {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: Double | js.Function = null,
-    animationDelayUpdate: Double | js.Function = null,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationDurationUpdate: Double | js.Function = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    axis: auto | x | y | radius | angle = null,
-    crossStyle: LineStyle = null,
-    label: PointerLabel = null,
-    lineStyle: LineStyle = null,
-    shadowStyle: Opacity = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    snap: js.UndefOr[Boolean] = js.undefined,
-    `type`: line | shadow | none | cross = null,
-    z: js.UndefOr[Double] = js.undefined
-  ): AxisPointer = {
+  def apply(): AxisPointer = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (crossStyle != null) __obj.updateDynamic("crossStyle")(crossStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (shadowStyle != null) __obj.updateDynamic("shadowStyle")(shadowStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisPointer]
   }
+  @scala.inline
+  implicit class AxisPointerOps[Self <: AxisPointer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: Double | js.Function): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: Double | js.Function): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: Double | js.Function): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setAxis(value: auto | typings.echarts.echartsStrings.x | y | radius | angle): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setCrossStyle(value: LineStyle): Self = this.set("crossStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossStyle: Self = this.set("crossStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: PointerLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLineStyle(value: LineStyle): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setShadowStyle(value: Opacity): Self = this.set("shadowStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowStyle: Self = this.set("shadowStyle", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setSnap(value: Boolean): Self = this.set("snap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnap: Self = this.set("snap", js.undefined)
+    @scala.inline
+    def setType(value: line | shadow | none | cross): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+  }
+  
 }
 

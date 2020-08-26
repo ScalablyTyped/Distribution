@@ -15,6 +15,7 @@ trait INode extends js.Object {
   def drawBuffer(): js.Any = js.native
   def drawScene(): js.Any = js.native
   def fire(typeStr: String): js.Any = js.native
+  def fire(typeStr: String, event: js.UndefOr[scala.Nothing], bubble: Boolean): js.Any = js.native
   def fire(typeStr: String, event: js.Any): js.Any = js.native
   def fire(typeStr: String, event: js.Any, bubble: Boolean): js.Any = js.native
   def getAbsoluteOpacity(): Double = js.native

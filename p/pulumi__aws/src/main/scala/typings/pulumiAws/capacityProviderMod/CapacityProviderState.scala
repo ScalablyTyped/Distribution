@@ -22,25 +22,45 @@ trait CapacityProviderState extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object CapacityProviderState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    autoScalingGroupProvider: Input[CapacityProviderAutoScalingGroupProvider] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): CapacityProviderState = {
+  def apply(): CapacityProviderState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoScalingGroupProvider != null) __obj.updateDynamic("autoScalingGroupProvider")(autoScalingGroupProvider.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityProviderState]
   }
+  @scala.inline
+  implicit class CapacityProviderStateOps[Self <: CapacityProviderState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoScalingGroupProvider(value: Input[CapacityProviderAutoScalingGroupProvider]): Self = this.set("autoScalingGroupProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupProvider: Self = this.set("autoScalingGroupProvider", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

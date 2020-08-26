@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserPosixAccount extends js.Object {
-  var accountId: js.UndefOr[String] = js.undefined
-  var gecos: js.UndefOr[String] = js.undefined
-  var gid: js.UndefOr[String] = js.undefined
-  var homeDirectory: js.UndefOr[String] = js.undefined
-  var operatingSystemType: js.UndefOr[String] = js.undefined
-  var primary: js.UndefOr[Boolean] = js.undefined
-  var shell: js.UndefOr[String] = js.undefined
-  var systemId: js.UndefOr[String] = js.undefined
-  var uid: js.UndefOr[String] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
+  var gecos: js.UndefOr[String] = js.native
+  var gid: js.UndefOr[String] = js.native
+  var homeDirectory: js.UndefOr[String] = js.native
+  var operatingSystemType: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[Boolean] = js.native
+  var shell: js.UndefOr[String] = js.native
+  var systemId: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object UserPosixAccount {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    gecos: String = null,
-    gid: String = null,
-    homeDirectory: String = null,
-    operatingSystemType: String = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    shell: String = null,
-    systemId: String = null,
-    uid: String = null,
-    username: String = null
-  ): UserPosixAccount = {
+  def apply(): UserPosixAccount = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (gecos != null) __obj.updateDynamic("gecos")(gecos.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (homeDirectory != null) __obj.updateDynamic("homeDirectory")(homeDirectory.asInstanceOf[js.Any])
-    if (operatingSystemType != null) __obj.updateDynamic("operatingSystemType")(operatingSystemType.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (systemId != null) __obj.updateDynamic("systemId")(systemId.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPosixAccount]
   }
+  @scala.inline
+  implicit class UserPosixAccountOps[Self <: UserPosixAccount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setGecos(value: String): Self = this.set("gecos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGecos: Self = this.set("gecos", js.undefined)
+    @scala.inline
+    def setGid(value: String): Self = this.set("gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("gid", js.undefined)
+    @scala.inline
+    def setHomeDirectory(value: String): Self = this.set("homeDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeDirectory: Self = this.set("homeDirectory", js.undefined)
+    @scala.inline
+    def setOperatingSystemType(value: String): Self = this.set("operatingSystemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystemType: Self = this.set("operatingSystemType", js.undefined)
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setShell(value: String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShell: Self = this.set("shell", js.undefined)
+    @scala.inline
+    def setSystemId(value: String): Self = this.set("systemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemId: Self = this.set("systemId", js.undefined)
+    @scala.inline
+    def setUid(value: String): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

@@ -30,6 +30,7 @@ object global extends js.Object {
         * @param options The set of available options that can be sent as request parameters to control client and/or server side request processing.
         */
       def request(source: js.Any): Unit = js.native
+      def request(source: js.Any, event: js.UndefOr[scala.Nothing], options: RequestOptions): Unit = js.native
       def request(source: js.Any, event: String): Unit = js.native
       def request(source: js.Any, event: String, options: RequestOptions): Unit = js.native
       /**

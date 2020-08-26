@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-scrollto" : "2.18.1"
+      "vue-scrollto" : "2.18.2"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-scrollto" : "2.18.1"
+      "vue-scrollto" : "2.18.2"
     }
   ],
   "compile-devDependencies" : [

@@ -128,30 +128,6 @@ trait Paragraph extends ClientObject {
     * [Api set: OneNoteApi 1.1]
     */
   val `type`: ParagraphType | typings.officeJsPreview.officeJsPreviewStrings.RichText | typings.officeJsPreview.officeJsPreviewStrings.Image | typings.officeJsPreview.officeJsPreviewStrings.Table | Ink | Other = js.native
-  def addNoteTag(
-    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: Completed
-  ): NoteTag = js.native
-  def addNoteTag(
-    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: Disabled
-  ): NoteTag = js.native
-  def addNoteTag(
-    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: Normal
-  ): NoteTag = js.native
-  def addNoteTag(
-    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: OutlookTask
-  ): NoteTag = js.native
-  def addNoteTag(
-    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: TaskNotSyncedYet
-  ): NoteTag = js.native
-  def addNoteTag(
-    `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: TaskRemoved
-  ): NoteTag = js.native
   /**
     *
     * Add NoteTag to the paragraph.
@@ -163,7 +139,7 @@ trait Paragraph extends ClientObject {
     */
   def addNoteTag(
     `type`: Unknown_ | ToDo | Important | Question | Contact | Address | PhoneNumber | Website | Idea | Critical | ToDoPriority1 | ToDoPriority2,
-    status: Unknown_
+    status: Unknown_ | Normal | Completed | Disabled | OutlookTask | TaskNotSyncedYet | TaskRemoved
   ): NoteTag = js.native
   /**
     *

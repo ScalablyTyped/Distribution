@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Material () extends js.Object {
   def this(color: Color) = this()
+  def this(color: js.UndefOr[scala.Nothing], options: MaterialOptions) = this()
   def this(color: Color, options: MaterialOptions) = this()
   var color: Color = js.native
   var defaults: MaterialOptions = js.native
@@ -16,7 +17,11 @@ class Material () extends js.Object {
   var specularColor: Color = js.native
   var specularExponent: Double = js.native
   def render(): Color = js.native
+  def render(lights: js.UndefOr[scala.Nothing], shader: js.UndefOr[scala.Nothing], renderData: RenderModel): Color = js.native
+  def render(lights: js.UndefOr[scala.Nothing], shader: Shader): Color = js.native
+  def render(lights: js.UndefOr[scala.Nothing], shader: Shader, renderData: RenderModel): Color = js.native
   def render(lights: js.Array[Light]): Color = js.native
+  def render(lights: js.Array[Light], shader: js.UndefOr[scala.Nothing], renderData: RenderModel): Color = js.native
   def render(lights: js.Array[Light], shader: Shader): Color = js.native
   def render(lights: js.Array[Light], shader: Shader, renderData: RenderModel): Color = js.native
 }

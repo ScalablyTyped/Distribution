@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sendgrid-rest" : "2.6.0"
+      "sendgrid-rest" : "2.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "sendgrid-rest" : "2.6.0"
+      "sendgrid-rest" : "2.6.1"
     }
   ],
   "compile-devDependencies" : [

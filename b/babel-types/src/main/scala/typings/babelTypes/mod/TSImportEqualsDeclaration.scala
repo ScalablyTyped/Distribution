@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSImportEqualsDeclaration
   extends Node
      with Statement {
-  var id: Identifier_
-  var isExport: Boolean | Null
-  var moduleReference: TSEntityName | TSExternalModuleReference
+  var id: Identifier_ = js.native
+  var isExport: Boolean | Null = js.native
+  var moduleReference: TSEntityName | TSExternalModuleReference = js.native
   @JSName("type")
-  var type_TSImportEqualsDeclaration: typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration
+  var type_TSImportEqualsDeclaration: typings.babelTypes.babelTypesStrings.TSImportEqualsDeclaration = js.native
 }
 
 @JSImport("babel-types", "TSImportEqualsDeclaration")

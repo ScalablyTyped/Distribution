@@ -14,10 +14,26 @@ trait ListTagsLogGroupResponse extends js.Object {
 
 object ListTagsLogGroupResponse {
   @scala.inline
-  def apply(tags: Tags = null): ListTagsLogGroupResponse = {
+  def apply(): ListTagsLogGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsLogGroupResponse]
   }
+  @scala.inline
+  implicit class ListTagsLogGroupResponseOps[Self <: ListTagsLogGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

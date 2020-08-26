@@ -38,9 +38,145 @@ object ShadowDOM extends js.Object {
     * @param {string} destinationOverride
     */
   def distributeView(): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.UndefOr[scala.Nothing], slots: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.UndefOr[scala.Nothing], slots: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.UndefOr[scala.Nothing], slots: js.Any, projectionSource: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.Any,
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.UndefOr[scala.Nothing], slots: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.UndefOr[scala.Nothing],
+    slots: js.Any,
+    projectionSource: js.Any,
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
   def distributeView(view: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.Any, slots: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.Any, slots: js.UndefOr[scala.Nothing], projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
   def distributeView(view: js.Any, slots: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
+  def distributeView(view: js.Any, slots: js.Any, projectionSource: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destinationOverride: js.Any
+  ): js.Any = js.native
   def distributeView(view: js.Any, slots: js.Any, projectionSource: js.Any): js.Any = js.native
+  def distributeView(
+    view: js.Any,
+    slots: js.Any,
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destinationOverride: js.Any
+  ): js.Any = js.native
   def distributeView(view: js.Any, slots: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
   def distributeView(view: js.Any, slots: js.Any, projectionSource: js.Any, index: js.Any, destinationOverride: js.Any): js.Any = js.native
   def getSlotName(): js.Any = js.native
@@ -50,6 +186,7 @@ object ShadowDOM extends js.Object {
     * @param {ViewSlot} projectionSource
     */
   def undistributeAll(): js.Any = js.native
+  def undistributeAll(slots: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
   def undistributeAll(slots: js.Any): js.Any = js.native
   def undistributeAll(slots: js.Any, projectionSource: js.Any): js.Any = js.native
   /**
@@ -58,7 +195,11 @@ object ShadowDOM extends js.Object {
     * @param {ViewSlot} projectionSource
     */
   def undistributeView(): js.Any = js.native
+  def undistributeView(view: js.UndefOr[scala.Nothing], slots: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def undistributeView(view: js.UndefOr[scala.Nothing], slots: js.Any): js.Any = js.native
+  def undistributeView(view: js.UndefOr[scala.Nothing], slots: js.Any, projectionSource: js.Any): js.Any = js.native
   def undistributeView(view: js.Any): js.Any = js.native
+  def undistributeView(view: js.Any, slots: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
   def undistributeView(view: js.Any, slots: js.Any): js.Any = js.native
   def undistributeView(view: js.Any, slots: js.Any, projectionSource: js.Any): js.Any = js.native
 }

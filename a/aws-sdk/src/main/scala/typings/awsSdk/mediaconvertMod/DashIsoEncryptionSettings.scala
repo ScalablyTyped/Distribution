@@ -18,14 +18,30 @@ trait DashIsoEncryptionSettings extends js.Object {
 
 object DashIsoEncryptionSettings {
   @scala.inline
-  def apply(
-    PlaybackDeviceCompatibility: DashIsoPlaybackDeviceCompatibility = null,
-    SpekeKeyProvider: SpekeKeyProvider = null
-  ): DashIsoEncryptionSettings = {
+  def apply(): DashIsoEncryptionSettings = {
     val __obj = js.Dynamic.literal()
-    if (PlaybackDeviceCompatibility != null) __obj.updateDynamic("PlaybackDeviceCompatibility")(PlaybackDeviceCompatibility.asInstanceOf[js.Any])
-    if (SpekeKeyProvider != null) __obj.updateDynamic("SpekeKeyProvider")(SpekeKeyProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashIsoEncryptionSettings]
   }
+  @scala.inline
+  implicit class DashIsoEncryptionSettingsOps[Self <: DashIsoEncryptionSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlaybackDeviceCompatibility(value: DashIsoPlaybackDeviceCompatibility): Self = this.set("PlaybackDeviceCompatibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackDeviceCompatibility: Self = this.set("PlaybackDeviceCompatibility", js.undefined)
+    @scala.inline
+    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = this.set("SpekeKeyProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpekeKeyProvider: Self = this.set("SpekeKeyProvider", js.undefined)
+  }
+  
 }
 

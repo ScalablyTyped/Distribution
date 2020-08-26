@@ -14,10 +14,26 @@ trait UpdateAssociationStatusResult extends js.Object {
 
 object UpdateAssociationStatusResult {
   @scala.inline
-  def apply(AssociationDescription: AssociationDescription = null): UpdateAssociationStatusResult = {
+  def apply(): UpdateAssociationStatusResult = {
     val __obj = js.Dynamic.literal()
-    if (AssociationDescription != null) __obj.updateDynamic("AssociationDescription")(AssociationDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAssociationStatusResult]
   }
+  @scala.inline
+  implicit class UpdateAssociationStatusResultOps[Self <: UpdateAssociationStatusResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationDescription(value: AssociationDescription): Self = this.set("AssociationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationDescription: Self = this.set("AssociationDescription", js.undefined)
+  }
+  
 }
 

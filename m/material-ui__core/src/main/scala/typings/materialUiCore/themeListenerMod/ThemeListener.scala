@@ -21,5 +21,24 @@ object ThemeListener {
     val __obj = js.Dynamic.literal(initial = js.Any.fromFunction1(initial), subscribe = js.Any.fromFunction2(subscribe), unsubscribe = js.Any.fromFunction2(unsubscribe))
     __obj.asInstanceOf[ThemeListener[S]]
   }
+  @scala.inline
+  implicit class ThemeListenerOps[Self <: ThemeListener[_], S] (val x: Self with ThemeListener[S]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitial(value: MuiContext[S] => S | Null): Self = this.set("initial", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSubscribe(value: (MuiContext[S], js.Function1[/* state */ S, Unit]) => Double | Null): Self = this.set("subscribe", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUnsubscribe(value: (MuiContext[S], Double) => Unit): Self = this.set("unsubscribe", js.Any.fromFunction2(value))
+  }
+  
 }
 

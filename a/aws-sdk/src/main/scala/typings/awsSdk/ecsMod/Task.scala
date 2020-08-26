@@ -142,76 +142,164 @@ trait Task extends js.Object {
 
 object Task {
   @scala.inline
-  def apply(
-    attachments: Attachments = null,
-    attributes: Attributes = null,
-    availabilityZone: String = null,
-    capacityProviderName: String = null,
-    clusterArn: String = null,
-    connectivity: Connectivity = null,
-    connectivityAt: Timestamp = null,
-    containerInstanceArn: String = null,
-    containers: Containers = null,
-    cpu: String = null,
-    createdAt: Timestamp = null,
-    desiredStatus: String = null,
-    executionStoppedAt: Timestamp = null,
-    group: String = null,
-    healthStatus: HealthStatus = null,
-    inferenceAccelerators: InferenceAccelerators = null,
-    lastStatus: String = null,
-    launchType: LaunchType = null,
-    memory: String = null,
-    overrides: TaskOverride = null,
-    platformVersion: String = null,
-    pullStartedAt: Timestamp = null,
-    pullStoppedAt: Timestamp = null,
-    startedAt: Timestamp = null,
-    startedBy: String = null,
-    stopCode: TaskStopCode = null,
-    stoppedAt: Timestamp = null,
-    stoppedReason: String = null,
-    stoppingAt: Timestamp = null,
-    tags: Tags = null,
-    taskArn: String = null,
-    taskDefinitionArn: String = null,
-    version: js.UndefOr[Long] = js.undefined
-  ): Task = {
+  def apply(): Task = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (capacityProviderName != null) __obj.updateDynamic("capacityProviderName")(capacityProviderName.asInstanceOf[js.Any])
-    if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn.asInstanceOf[js.Any])
-    if (connectivity != null) __obj.updateDynamic("connectivity")(connectivity.asInstanceOf[js.Any])
-    if (connectivityAt != null) __obj.updateDynamic("connectivityAt")(connectivityAt.asInstanceOf[js.Any])
-    if (containerInstanceArn != null) __obj.updateDynamic("containerInstanceArn")(containerInstanceArn.asInstanceOf[js.Any])
-    if (containers != null) __obj.updateDynamic("containers")(containers.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (desiredStatus != null) __obj.updateDynamic("desiredStatus")(desiredStatus.asInstanceOf[js.Any])
-    if (executionStoppedAt != null) __obj.updateDynamic("executionStoppedAt")(executionStoppedAt.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
-    if (inferenceAccelerators != null) __obj.updateDynamic("inferenceAccelerators")(inferenceAccelerators.asInstanceOf[js.Any])
-    if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (memory != null) __obj.updateDynamic("memory")(memory.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (pullStartedAt != null) __obj.updateDynamic("pullStartedAt")(pullStartedAt.asInstanceOf[js.Any])
-    if (pullStoppedAt != null) __obj.updateDynamic("pullStoppedAt")(pullStoppedAt.asInstanceOf[js.Any])
-    if (startedAt != null) __obj.updateDynamic("startedAt")(startedAt.asInstanceOf[js.Any])
-    if (startedBy != null) __obj.updateDynamic("startedBy")(startedBy.asInstanceOf[js.Any])
-    if (stopCode != null) __obj.updateDynamic("stopCode")(stopCode.asInstanceOf[js.Any])
-    if (stoppedAt != null) __obj.updateDynamic("stoppedAt")(stoppedAt.asInstanceOf[js.Any])
-    if (stoppedReason != null) __obj.updateDynamic("stoppedReason")(stoppedReason.asInstanceOf[js.Any])
-    if (stoppingAt != null) __obj.updateDynamic("stoppingAt")(stoppingAt.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (taskArn != null) __obj.updateDynamic("taskArn")(taskArn.asInstanceOf[js.Any])
-    if (taskDefinitionArn != null) __obj.updateDynamic("taskDefinitionArn")(taskDefinitionArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
+  @scala.inline
+  implicit class TaskOps[Self <: Task] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: Attachments): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setCapacityProviderName(value: String): Self = this.set("capacityProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderName: Self = this.set("capacityProviderName", js.undefined)
+    @scala.inline
+    def setClusterArn(value: String): Self = this.set("clusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("clusterArn", js.undefined)
+    @scala.inline
+    def setConnectivity(value: Connectivity): Self = this.set("connectivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectivity: Self = this.set("connectivity", js.undefined)
+    @scala.inline
+    def setConnectivityAt(value: Timestamp): Self = this.set("connectivityAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectivityAt: Self = this.set("connectivityAt", js.undefined)
+    @scala.inline
+    def setContainerInstanceArn(value: String): Self = this.set("containerInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerInstanceArn: Self = this.set("containerInstanceArn", js.undefined)
+    @scala.inline
+    def setContainersVarargs(value: Container*): Self = this.set("containers", js.Array(value :_*))
+    @scala.inline
+    def setContainers(value: Containers): Self = this.set("containers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainers: Self = this.set("containers", js.undefined)
+    @scala.inline
+    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDesiredStatus(value: String): Self = this.set("desiredStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredStatus: Self = this.set("desiredStatus", js.undefined)
+    @scala.inline
+    def setExecutionStoppedAt(value: Timestamp): Self = this.set("executionStoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStoppedAt: Self = this.set("executionStoppedAt", js.undefined)
+    @scala.inline
+    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setHealthStatus(value: HealthStatus): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+    @scala.inline
+    def setInferenceAcceleratorsVarargs(value: InferenceAccelerator*): Self = this.set("inferenceAccelerators", js.Array(value :_*))
+    @scala.inline
+    def setInferenceAccelerators(value: InferenceAccelerators): Self = this.set("inferenceAccelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceAccelerators: Self = this.set("inferenceAccelerators", js.undefined)
+    @scala.inline
+    def setLastStatus(value: String): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    @scala.inline
+    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setOverrides(value: TaskOverride): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setPullStartedAt(value: Timestamp): Self = this.set("pullStartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullStartedAt: Self = this.set("pullStartedAt", js.undefined)
+    @scala.inline
+    def setPullStoppedAt(value: Timestamp): Self = this.set("pullStoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullStoppedAt: Self = this.set("pullStoppedAt", js.undefined)
+    @scala.inline
+    def setStartedAt(value: Timestamp): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    @scala.inline
+    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
+    @scala.inline
+    def setStopCode(value: TaskStopCode): Self = this.set("stopCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopCode: Self = this.set("stopCode", js.undefined)
+    @scala.inline
+    def setStoppedAt(value: Timestamp): Self = this.set("stoppedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppedAt: Self = this.set("stoppedAt", js.undefined)
+    @scala.inline
+    def setStoppedReason(value: String): Self = this.set("stoppedReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppedReason: Self = this.set("stoppedReason", js.undefined)
+    @scala.inline
+    def setStoppingAt(value: Timestamp): Self = this.set("stoppingAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppingAt: Self = this.set("stoppingAt", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTaskArn(value: String): Self = this.set("taskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskArn: Self = this.set("taskArn", js.undefined)
+    @scala.inline
+    def setTaskDefinitionArn(value: String): Self = this.set("taskDefinitionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskDefinitionArn: Self = this.set("taskDefinitionArn", js.undefined)
+    @scala.inline
+    def setVersion(value: Long): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

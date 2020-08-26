@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CIMSymbol extends Symbol {
   /**
-    * The JSON payload of the CIM symbol
+    * The JSON payload of the [CIMSymbolReference](https://github.com/Esri/cim-spec/blob/master/docs/v2/CIMRenderers.md#CIMSymbolReference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#data)
     */

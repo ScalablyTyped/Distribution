@@ -42,38 +42,50 @@ trait ParamsResourceResourcerecordsetsList extends StandardParameters {
 
 object ParamsResourceResourcerecordsetsList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    fields: String = null,
-    key: String = null,
-    managedZone: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    oauth_token: String = null,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    project: String = null,
-    quotaUser: String = null,
-    `type`: String = null,
-    userIp: String = null
-  ): ParamsResourceResourcerecordsetsList = {
+  def apply(): ParamsResourceResourcerecordsetsList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (managedZone != null) __obj.updateDynamic("managedZone")(managedZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceResourcerecordsetsList]
   }
+  @scala.inline
+  implicit class ParamsResourceResourcerecordsetsListOps[Self <: ParamsResourceResourcerecordsetsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setManagedZone(value: String): Self = this.set("managedZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedZone: Self = this.set("managedZone", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProject: Self = this.set("project", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

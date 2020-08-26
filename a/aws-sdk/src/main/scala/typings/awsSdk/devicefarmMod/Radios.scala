@@ -26,18 +26,38 @@ trait Radios extends js.Object {
 
 object Radios {
   @scala.inline
-  def apply(
-    bluetooth: js.UndefOr[Boolean] = js.undefined,
-    gps: js.UndefOr[Boolean] = js.undefined,
-    nfc: js.UndefOr[Boolean] = js.undefined,
-    wifi: js.UndefOr[Boolean] = js.undefined
-  ): Radios = {
+  def apply(): Radios = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bluetooth)) __obj.updateDynamic("bluetooth")(bluetooth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gps)) __obj.updateDynamic("gps")(gps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nfc)) __obj.updateDynamic("nfc")(nfc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifi)) __obj.updateDynamic("wifi")(wifi.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Radios]
   }
+  @scala.inline
+  implicit class RadiosOps[Self <: Radios] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBluetooth(value: Boolean): Self = this.set("bluetooth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBluetooth: Self = this.set("bluetooth", js.undefined)
+    @scala.inline
+    def setGps(value: Boolean): Self = this.set("gps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGps: Self = this.set("gps", js.undefined)
+    @scala.inline
+    def setNfc(value: Boolean): Self = this.set("nfc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNfc: Self = this.set("nfc", js.undefined)
+    @scala.inline
+    def setWifi(value: Boolean): Self = this.set("wifi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWifi: Self = this.set("wifi", js.undefined)
+  }
+  
 }
 

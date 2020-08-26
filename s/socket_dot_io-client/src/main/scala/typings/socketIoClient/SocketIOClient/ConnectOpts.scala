@@ -7,27 +7,28 @@ import scala.scalajs.js.annotation._
 /**
   * Options we can pass to the socket when connecting
   */
+@js.native
 trait ConnectOpts extends js.Object {
   /**
     * `http.Agent` to use, defaults to `false` (NodeJS only)
     */
-  var agent: js.UndefOr[String | Boolean] = js.undefined
+  var agent: js.UndefOr[String | Boolean] = js.native
   /**
     * Should we automically connect?
     * @default true
     */
-  var autoConnect: js.UndefOr[Boolean] = js.undefined
+  var autoConnect: js.UndefOr[Boolean] = js.native
   /**
     * (SSL) An authority certificate or array of authority certificates to
     * check the remote host against.. Can be used in Node.js client
     * environment to manually specify certificate information.
     */
-  var ca: js.UndefOr[String | js.Array[String]] = js.undefined
+  var ca: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * (SSL) Public x509 certificate to use. Can be used in Node.js client
     * environment to manually specify certificate information.
     */
-  var cert: js.UndefOr[String] = js.undefined
+  var cert: js.UndefOr[String] = js.native
   /**
     * (SSL) A string describing the ciphers to use or exclude. Consult the
     * [cipher format list]
@@ -35,37 +36,37 @@ trait ConnectOpts extends js.Object {
     * details on the format.. Can be used in Node.js client environment to
     * manually specify certificate information.
     */
-  var ciphers: js.UndefOr[String] = js.undefined
+  var ciphers: js.UndefOr[String] = js.native
   /**
     * Enables XDomainRequest for IE8 to avoid loading bar flashing with
     * click sound. default to `false` because XDomainRequest has a flaw
     * of not sending cookie.
     * @default false
     */
-  var enablesXDR: js.UndefOr[Boolean] = js.undefined
+  var enablesXDR: js.UndefOr[Boolean] = js.native
   /**
     * Forces base 64 encoding for polling transport even when XHR2
     * responseType is available and WebSocket even if the used standard
     * supports binary.
     */
-  var forceBase64: js.UndefOr[Boolean] = js.undefined
+  var forceBase64: js.UndefOr[Boolean] = js.native
   /**
     * Forces JSONP for polling transport.
     */
-  var forceJSONP: js.UndefOr[Boolean] = js.undefined
+  var forceJSONP: js.UndefOr[Boolean] = js.native
   /**
     * Should we force a new Manager for this connection?
     * @default false
     */
-  var forceNew: js.UndefOr[Boolean] = js.undefined
+  var forceNew: js.UndefOr[Boolean] = js.native
   /**
     * The host that we're connecting to. Set from the URI passed when connecting
     */
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String] = js.native
   /**
     * The hostname for our connection. Set from the URI passed when connecting
     */
-  var hostname: js.UndefOr[String] = js.undefined
+  var hostname: js.UndefOr[String] = js.native
   /**
     * Determines whether to use JSONP when necessary for polling. If
     * disabled (by settings to false) an error will be emitted (saying
@@ -74,77 +75,77 @@ trait ConnectOpts extends js.Object {
     * WebSocket) that transport will be used instead.
     * @default true
     */
-  var jsonp: js.UndefOr[Boolean] = js.undefined
+  var jsonp: js.UndefOr[Boolean] = js.native
   /**
     * (SSL) Private key to use for SSL. Can be used in Node.js client
     * environment to manually specify certificate information.
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /**
     * Should we multiplex our connection (reuse existing Manager) ?
     * @default true
     */
-  var multiplex: js.UndefOr[Boolean] = js.undefined
+  var multiplex: js.UndefOr[Boolean] = js.native
   /**
     * Are we only interested in transports that support binary?
     */
-  var onlyBinaryUpgrades: js.UndefOr[Boolean] = js.undefined
+  var onlyBinaryUpgrades: js.UndefOr[Boolean] = js.native
   /**
     * (SSL) A string or passphrase for the private key or pfx. Can be
     * used in Node.js client environment to manually specify certificate
     * information.
     */
-  var passphrase: js.UndefOr[String] = js.undefined
+  var passphrase: js.UndefOr[String] = js.native
   /**
     * The path to get our client file from, in the case of the server
     * serving it
     * @default '/socket.io'
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.native
   /**
     * (SSL) Certificate, Private key and CA certificates to use for SSL.
     * Can be used in Node.js client environment to manually specify
     * certificate information.
     */
-  var pfx: js.UndefOr[String] = js.undefined
+  var pfx: js.UndefOr[String] = js.native
   /**
     * The port the policy server listens on
     * @default 843
     */
-  var policyPost: js.UndefOr[Double] = js.undefined
+  var policyPost: js.UndefOr[Double] = js.native
   /**
     * The port for our connection. Set from the URI passed when connecting
     */
-  var port: js.UndefOr[String] = js.undefined
+  var port: js.UndefOr[String] = js.native
   /**
     * Any query parameters in our uri. Set from the URI passed when connecting
     */
-  var query: js.UndefOr[js.Object] = js.undefined
+  var query: js.UndefOr[js.Object] = js.native
   /**
     * Used in the exponential backoff jitter when reconnecting
     * @default 0.5
     */
-  var randomizationFactor: js.UndefOr[Double] = js.undefined
+  var randomizationFactor: js.UndefOr[Double] = js.native
   /**
     * Should we allow reconnections?
     * @default true
     */
-  var reconnection: js.UndefOr[Boolean] = js.undefined
+  var reconnection: js.UndefOr[Boolean] = js.native
   /**
     * How many reconnection attempts should we try?
     * @default Infinity
     */
-  var reconnectionAttempts: js.UndefOr[Double] = js.undefined
+  var reconnectionAttempts: js.UndefOr[Double] = js.native
   /**
     * The time delay in milliseconds between reconnection attempts
     * @default 1000
     */
-  var reconnectionDelay: js.UndefOr[Double] = js.undefined
+  var reconnectionDelay: js.UndefOr[Double] = js.native
   /**
     * The max time delay in milliseconds between reconnection attempts
     * @default 5000
     */
-  var reconnectionDelayMax: js.UndefOr[Double] = js.undefined
+  var reconnectionDelayMax: js.UndefOr[Double] = js.native
   /**
     * (SSL) If true, the server certificate is verified against the list of
     * supplied CAs. An 'error' event is emitted if verification fails.
@@ -152,7 +153,7 @@ trait ConnectOpts extends js.Object {
     * is sent. Can be used in Node.js client environment to manually specify
     * certificate information.
     */
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
   /**
     * If true and if the previous websocket connection to the server succeeded,
     * the connection attempt will bypass the normal upgrade process and will
@@ -162,123 +163,209 @@ trait ConnectOpts extends js.Object {
     * not block websockets.
     * @default false
     */
-  var rememberUpgrade: js.UndefOr[Boolean] = js.undefined
+  var rememberUpgrade: js.UndefOr[Boolean] = js.native
   /**
     * If this is a secure connection. Set from the URI passed when connecting
     */
-  var secure: js.UndefOr[Boolean] = js.undefined
+  var secure: js.UndefOr[Boolean] = js.native
   /**
     * The timeout in milliseconds for our connection attempt
     * @default 20000
     */
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: js.UndefOr[Double] = js.native
   /**
     * The param name to use as our timestamp key
     * @default 't'
     */
-  var timestampParam: js.UndefOr[String] = js.undefined
+  var timestampParam: js.UndefOr[String] = js.native
   /**
     * Whether to add the timestamp with each transport request. Note: this
     * is ignored if the browser is IE or Android, in which case requests
     * are always stamped
     * @default false
     */
-  var timestampRequests: js.UndefOr[Boolean] = js.undefined
+  var timestampRequests: js.UndefOr[Boolean] = js.native
   /**
     * Transport options for Node.js client (headers etc)
     */
-  var transportOptions: js.UndefOr[js.Object] = js.undefined
+  var transportOptions: js.UndefOr[js.Object] = js.native
   /**
     * A list of transports to try (in order). Engine.io always attempts to
     * connect directly with the first one, provided the feature detection test
     * for it passes.
     * @default ['polling','websocket']
     */
-  var transports: js.UndefOr[js.Array[String]] = js.undefined
+  var transports: js.UndefOr[js.Array[String]] = js.native
   /**
     * Whether the client should try to upgrade the transport from
     * long-polling to something better.
     * @default true
     */
-  var upgrade: js.UndefOr[Boolean] = js.undefined
+  var upgrade: js.UndefOr[Boolean] = js.native
 }
 
 object ConnectOpts {
   @scala.inline
-  def apply(
-    agent: String | Boolean = null,
-    autoConnect: js.UndefOr[Boolean] = js.undefined,
-    ca: String | js.Array[String] = null,
-    cert: String = null,
-    ciphers: String = null,
-    enablesXDR: js.UndefOr[Boolean] = js.undefined,
-    forceBase64: js.UndefOr[Boolean] = js.undefined,
-    forceJSONP: js.UndefOr[Boolean] = js.undefined,
-    forceNew: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    hostname: String = null,
-    jsonp: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    multiplex: js.UndefOr[Boolean] = js.undefined,
-    onlyBinaryUpgrades: js.UndefOr[Boolean] = js.undefined,
-    passphrase: String = null,
-    path: String = null,
-    pfx: String = null,
-    policyPost: js.UndefOr[Double] = js.undefined,
-    port: String = null,
-    query: js.Object = null,
-    randomizationFactor: js.UndefOr[Double] = js.undefined,
-    reconnection: js.UndefOr[Boolean] = js.undefined,
-    reconnectionAttempts: js.UndefOr[Double] = js.undefined,
-    reconnectionDelay: js.UndefOr[Double] = js.undefined,
-    reconnectionDelayMax: js.UndefOr[Double] = js.undefined,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    rememberUpgrade: js.UndefOr[Boolean] = js.undefined,
-    secure: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    timestampParam: String = null,
-    timestampRequests: js.UndefOr[Boolean] = js.undefined,
-    transportOptions: js.Object = null,
-    transports: js.Array[String] = null,
-    upgrade: js.UndefOr[Boolean] = js.undefined
-  ): ConnectOpts = {
+  def apply(): ConnectOpts = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.get.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablesXDR)) __obj.updateDynamic("enablesXDR")(enablesXDR.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceBase64)) __obj.updateDynamic("forceBase64")(forceBase64.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceJSONP)) __obj.updateDynamic("forceJSONP")(forceJSONP.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceNew)) __obj.updateDynamic("forceNew")(forceNew.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiplex)) __obj.updateDynamic("multiplex")(multiplex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyBinaryUpgrades)) __obj.updateDynamic("onlyBinaryUpgrades")(onlyBinaryUpgrades.get.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (!js.isUndefined(policyPost)) __obj.updateDynamic("policyPost")(policyPost.get.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomizationFactor)) __obj.updateDynamic("randomizationFactor")(randomizationFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnection)) __obj.updateDynamic("reconnection")(reconnection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectionAttempts)) __obj.updateDynamic("reconnectionAttempts")(reconnectionAttempts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectionDelay)) __obj.updateDynamic("reconnectionDelay")(reconnectionDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectionDelayMax)) __obj.updateDynamic("reconnectionDelayMax")(reconnectionDelayMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberUpgrade)) __obj.updateDynamic("rememberUpgrade")(rememberUpgrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (timestampParam != null) __obj.updateDynamic("timestampParam")(timestampParam.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestampRequests)) __obj.updateDynamic("timestampRequests")(timestampRequests.get.asInstanceOf[js.Any])
-    if (transportOptions != null) __obj.updateDynamic("transportOptions")(transportOptions.asInstanceOf[js.Any])
-    if (transports != null) __obj.updateDynamic("transports")(transports.asInstanceOf[js.Any])
-    if (!js.isUndefined(upgrade)) __obj.updateDynamic("upgrade")(upgrade.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOpts]
   }
+  @scala.inline
+  implicit class ConnectOptsOps[Self <: ConnectOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgent(value: String | Boolean): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgent: Self = this.set("agent", js.undefined)
+    @scala.inline
+    def setAutoConnect(value: Boolean): Self = this.set("autoConnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoConnect: Self = this.set("autoConnect", js.undefined)
+    @scala.inline
+    def setCaVarargs(value: String*): Self = this.set("ca", js.Array(value :_*))
+    @scala.inline
+    def setCa(value: String | js.Array[String]): Self = this.set("ca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCa: Self = this.set("ca", js.undefined)
+    @scala.inline
+    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setCiphers(value: String): Self = this.set("ciphers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCiphers: Self = this.set("ciphers", js.undefined)
+    @scala.inline
+    def setEnablesXDR(value: Boolean): Self = this.set("enablesXDR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablesXDR: Self = this.set("enablesXDR", js.undefined)
+    @scala.inline
+    def setForceBase64(value: Boolean): Self = this.set("forceBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceBase64: Self = this.set("forceBase64", js.undefined)
+    @scala.inline
+    def setForceJSONP(value: Boolean): Self = this.set("forceJSONP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceJSONP: Self = this.set("forceJSONP", js.undefined)
+    @scala.inline
+    def setForceNew(value: Boolean): Self = this.set("forceNew", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceNew: Self = this.set("forceNew", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setJsonp(value: Boolean): Self = this.set("jsonp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonp: Self = this.set("jsonp", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMultiplex(value: Boolean): Self = this.set("multiplex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplex: Self = this.set("multiplex", js.undefined)
+    @scala.inline
+    def setOnlyBinaryUpgrades(value: Boolean): Self = this.set("onlyBinaryUpgrades", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyBinaryUpgrades: Self = this.set("onlyBinaryUpgrades", js.undefined)
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPfx(value: String): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfx: Self = this.set("pfx", js.undefined)
+    @scala.inline
+    def setPolicyPost(value: Double): Self = this.set("policyPost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyPost: Self = this.set("policyPost", js.undefined)
+    @scala.inline
+    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setQuery(value: js.Object): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRandomizationFactor(value: Double): Self = this.set("randomizationFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRandomizationFactor: Self = this.set("randomizationFactor", js.undefined)
+    @scala.inline
+    def setReconnection(value: Boolean): Self = this.set("reconnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnection: Self = this.set("reconnection", js.undefined)
+    @scala.inline
+    def setReconnectionAttempts(value: Double): Self = this.set("reconnectionAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectionAttempts: Self = this.set("reconnectionAttempts", js.undefined)
+    @scala.inline
+    def setReconnectionDelay(value: Double): Self = this.set("reconnectionDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectionDelay: Self = this.set("reconnectionDelay", js.undefined)
+    @scala.inline
+    def setReconnectionDelayMax(value: Double): Self = this.set("reconnectionDelayMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReconnectionDelayMax: Self = this.set("reconnectionDelayMax", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setRememberUpgrade(value: Boolean): Self = this.set("rememberUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRememberUpgrade: Self = this.set("rememberUpgrade", js.undefined)
+    @scala.inline
+    def setSecure(value: Boolean): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTimestampParam(value: String): Self = this.set("timestampParam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampParam: Self = this.set("timestampParam", js.undefined)
+    @scala.inline
+    def setTimestampRequests(value: Boolean): Self = this.set("timestampRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampRequests: Self = this.set("timestampRequests", js.undefined)
+    @scala.inline
+    def setTransportOptions(value: js.Object): Self = this.set("transportOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransportOptions: Self = this.set("transportOptions", js.undefined)
+    @scala.inline
+    def setTransportsVarargs(value: String*): Self = this.set("transports", js.Array(value :_*))
+    @scala.inline
+    def setTransports(value: js.Array[String]): Self = this.set("transports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransports: Self = this.set("transports", js.undefined)
+    @scala.inline
+    def setUpgrade(value: Boolean): Self = this.set("upgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgrade: Self = this.set("upgrade", js.undefined)
+  }
+  
 }
 

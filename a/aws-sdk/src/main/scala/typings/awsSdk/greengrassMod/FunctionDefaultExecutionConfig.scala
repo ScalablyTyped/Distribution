@@ -12,11 +12,30 @@ trait FunctionDefaultExecutionConfig extends js.Object {
 
 object FunctionDefaultExecutionConfig {
   @scala.inline
-  def apply(IsolationMode: FunctionIsolationMode = null, RunAs: FunctionRunAsConfig = null): FunctionDefaultExecutionConfig = {
+  def apply(): FunctionDefaultExecutionConfig = {
     val __obj = js.Dynamic.literal()
-    if (IsolationMode != null) __obj.updateDynamic("IsolationMode")(IsolationMode.asInstanceOf[js.Any])
-    if (RunAs != null) __obj.updateDynamic("RunAs")(RunAs.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionDefaultExecutionConfig]
   }
+  @scala.inline
+  implicit class FunctionDefaultExecutionConfigOps[Self <: FunctionDefaultExecutionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsolationMode(value: FunctionIsolationMode): Self = this.set("IsolationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsolationMode: Self = this.set("IsolationMode", js.undefined)
+    @scala.inline
+    def setRunAs(value: FunctionRunAsConfig): Self = this.set("RunAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunAs: Self = this.set("RunAs", js.undefined)
+  }
+  
 }
 

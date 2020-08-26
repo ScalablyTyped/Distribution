@@ -83,6 +83,7 @@ trait FeatureLayerView extends LayerView {
     *
     */
   def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryExtentOptions): js.Promise[_] = js.native
   def queryExtent(query: Query): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties, options: FeatureLayerViewQueryExtentOptions): js.Promise[_] = js.native
@@ -106,6 +107,7 @@ trait FeatureLayerView extends LayerView {
     *
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: FeatureLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -130,6 +132,7 @@ trait FeatureLayerView extends LayerView {
     *
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: FeatureLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -153,6 +156,7 @@ trait FeatureLayerView extends LayerView {
     *
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: FeatureLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

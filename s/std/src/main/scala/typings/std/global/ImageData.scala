@@ -13,21 +13,6 @@ class ImageData protected ()
   def this(array: typings.std.Uint8ClampedArray, width: Double) = this()
   def this(width: Double, height: Double) = this()
   def this(array: typings.std.Uint8ClampedArray, width: Double, height: Double) = this()
-  /**
-    * Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255.
-    */
-  /* CompleteClass */
-  override val data: typings.std.Uint8ClampedArray = js.native
-  /**
-    * Returns the actual dimensions of the data in the ImageData object, in pixels.
-    */
-  /* CompleteClass */
-  override val height: Double = js.native
-  /**
-    * Returns the actual dimensions of the data in the ImageData object, in pixels.
-    */
-  /* CompleteClass */
-  override val width: Double = js.native
 }
 
 @JSGlobal("ImageData")

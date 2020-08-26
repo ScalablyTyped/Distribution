@@ -27,6 +27,7 @@ object mod extends js.Object {
   class Psbt ()
     extends typings.bitcoinjsLib.psbtMod.Psbt {
     def this(opts: PsbtOptsOptional) = this()
+    def this(opts: js.UndefOr[scala.Nothing], data: typings.bip174.mod.Psbt) = this()
     def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
   }
   
@@ -38,6 +39,7 @@ object mod extends js.Object {
   class TransactionBuilder ()
     extends typings.bitcoinjsLib.transactionBuilderMod.TransactionBuilder {
     def this(network: Network) = this()
+    def this(network: js.UndefOr[scala.Nothing], maximumFeeRate: Double) = this()
     def this(network: Network, maximumFeeRate: Double) = this()
   }
   
@@ -180,6 +182,7 @@ object mod extends js.Object {
     @js.native
     object number extends js.Object {
       def decode(buffer: Buffer): Double = js.native
+      def decode(buffer: Buffer, maxLength: js.UndefOr[scala.Nothing], minimal: Boolean): Double = js.native
       def decode(buffer: Buffer, maxLength: Double): Double = js.native
       def decode(buffer: Buffer, maxLength: Double, minimal: Boolean): Double = js.native
       def encode(_number: Double): Buffer = js.native

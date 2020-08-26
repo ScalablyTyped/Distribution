@@ -10,15 +10,14 @@ Escape HTML utils.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/escape-html |
 | Keywords           | wordpress |
-| # releases         | 13 |
+| # releases         | 12 |
 | # dependents       | 4 |
-| # downloads        | 235333 |
+| # downloads        | 244776 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/escape-html/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fescape-html)
     
 

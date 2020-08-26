@@ -23,6 +23,7 @@ class Remote_ () extends js.Object {
   def defaultBranch(): js.Promise[Buf] = js.native
   def disconnect(): js.Promise[Unit] = js.native
   def download(refSpecs: js.Array[_]): js.Promise[Double] = js.native
+  def download(refSpecs: js.Array[_], opts: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
   def download(refSpecs: js.Array[_], opts: FetchOptions): js.Promise[Double] = js.native
   def download(refSpecs: js.Array[_], opts: FetchOptions, callback: js.Function): js.Promise[Double] = js.native
   def dup(): js.Promise[Remote] = js.native
@@ -37,6 +38,7 @@ class Remote_ () extends js.Object {
   def prune(callbacks: RemoteCallbacks): Double = js.native
   def pruneRefs(): Double = js.native
   def push(refSpecs: js.Array[_]): js.Promise[Double] = js.native
+  def push(refSpecs: js.Array[_], options: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
   def push(refSpecs: js.Array[_], options: PushOptions): js.Promise[Double] = js.native
   def push(refSpecs: js.Array[_], options: PushOptions, callback: js.Function): js.Promise[Double] = js.native
   def pushurl(): String = js.native

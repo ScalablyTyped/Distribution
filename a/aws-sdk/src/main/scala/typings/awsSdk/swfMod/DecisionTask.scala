@@ -43,14 +43,43 @@ object DecisionTask {
     startedEventId: EventId,
     taskToken: TaskToken,
     workflowExecution: WorkflowExecution,
-    workflowType: WorkflowType,
-    nextPageToken: PageToken = null,
-    previousStartedEventId: js.UndefOr[EventId] = js.undefined
+    workflowType: WorkflowType
   ): DecisionTask = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], taskToken = taskToken.asInstanceOf[js.Any], workflowExecution = workflowExecution.asInstanceOf[js.Any], workflowType = workflowType.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousStartedEventId)) __obj.updateDynamic("previousStartedEventId")(previousStartedEventId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTask]
   }
+  @scala.inline
+  implicit class DecisionTaskOps[Self <: DecisionTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: HistoryEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: HistoryEventList): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkflowExecution(value: WorkflowExecution): Self = this.set("workflowExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkflowType(value: WorkflowType): Self = this.set("workflowType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setPreviousStartedEventId(value: EventId): Self = this.set("previousStartedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousStartedEventId: Self = this.set("previousStartedEventId", js.undefined)
+  }
+  
 }
 

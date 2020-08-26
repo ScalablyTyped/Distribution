@@ -29,6 +29,7 @@ class ResourceOrderdocuments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOrderDocument] = js.native
   def get(callback: BodyResponseCallback[SchemaOrderDocument]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderDocument] = js.native
   def get(params: ParamsResourceOrderdocumentsGet): GaxiosPromise[SchemaOrderDocument] = js.native
   def get(params: ParamsResourceOrderdocumentsGet, callback: BodyResponseCallback[SchemaOrderDocument]): Unit = js.native
   def get(
@@ -67,6 +68,7 @@ class ResourceOrderdocuments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaOrderDocumentsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOrderDocumentsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderDocumentsListResponse] = js.native
   def list(params: ParamsResourceOrderdocumentsList): GaxiosPromise[SchemaOrderDocumentsListResponse] = js.native
   def list(
     params: ParamsResourceOrderdocumentsList,

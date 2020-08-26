@@ -18,7 +18,5 @@ class SceneRenderer protected ()
     twoColorTint: Boolean
   ) = this()
   def this(canvas: HTMLCanvasElement, context: WebGLRenderingContext, twoColorTint: Boolean) = this()
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
 }
 

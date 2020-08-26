@@ -34,6 +34,7 @@ trait MultiPath extends Element {
   def moveTo(x: Point): MultiPath = js.native
   def moveTo(x: Point, y: Double): MultiPath = js.native
   def stroke(color: String): MultiPath = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): MultiPath = js.native
   def stroke(color: String, width: Double): MultiPath = js.native
   def stroke(color: String, width: Double, opacity: Double): MultiPath = js.native
 }

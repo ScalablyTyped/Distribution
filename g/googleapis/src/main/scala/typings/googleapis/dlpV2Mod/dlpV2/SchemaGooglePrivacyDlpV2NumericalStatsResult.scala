@@ -26,16 +26,36 @@ trait SchemaGooglePrivacyDlpV2NumericalStatsResult extends js.Object {
 
 object SchemaGooglePrivacyDlpV2NumericalStatsResult {
   @scala.inline
-  def apply(
-    maxValue: SchemaGooglePrivacyDlpV2Value = null,
-    minValue: SchemaGooglePrivacyDlpV2Value = null,
-    quantileValues: js.Array[SchemaGooglePrivacyDlpV2Value] = null
-  ): SchemaGooglePrivacyDlpV2NumericalStatsResult = {
+  def apply(): SchemaGooglePrivacyDlpV2NumericalStatsResult = {
     val __obj = js.Dynamic.literal()
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (quantileValues != null) __obj.updateDynamic("quantileValues")(quantileValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2NumericalStatsResult]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2NumericalStatsResultOps[Self <: SchemaGooglePrivacyDlpV2NumericalStatsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxValue(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: SchemaGooglePrivacyDlpV2Value): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setQuantileValuesVarargs(value: SchemaGooglePrivacyDlpV2Value*): Self = this.set("quantileValues", js.Array(value :_*))
+    @scala.inline
+    def setQuantileValues(value: js.Array[SchemaGooglePrivacyDlpV2Value]): Self = this.set("quantileValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantileValues: Self = this.set("quantileValues", js.undefined)
+  }
+  
 }
 

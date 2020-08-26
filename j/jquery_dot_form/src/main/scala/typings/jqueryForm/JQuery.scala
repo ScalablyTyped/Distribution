@@ -27,6 +27,7 @@ trait JQuery extends js.Object {
   def fieldValue(successful: Boolean): js.Array[String] = js.native
   def formSerialize(): String = js.native
   def formToArray(): js.Array[_] = js.native
+  def formToArray(semantic: js.UndefOr[scala.Nothing], elements: js.Array[Element]): js.Array[_] = js.native
   def formToArray(semantic: Boolean): js.Array[_] = js.native
   def formToArray(semantic: Boolean, elements: js.Array[Element]): js.Array[_] = js.native
   def resetForm(): JQuery = js.native

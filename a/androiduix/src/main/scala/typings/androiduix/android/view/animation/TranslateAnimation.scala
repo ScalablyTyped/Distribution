@@ -4,20 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.animation.TranslateAnimation")
 @js.native
-class TranslateAnimation protected () extends Animation {
-  def this(fromXDelta: Double, toXDelta: Double, fromYDelta: Double, toYDelta: Double) = this()
-  def this(
-    fromXType: Double,
-    fromXValue: Double,
-    toXType: Double,
-    toXValue: Double,
-    fromYType: Double,
-    fromYValue: Double,
-    toYType: Double,
-    toYValue: Double
-  ) = this()
+trait TranslateAnimation extends Animation {
   var mFromXDelta: js.Any = js.native
   var mFromXType: js.Any = js.native
   var mFromXValue: js.Any = js.native

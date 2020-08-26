@@ -7,33 +7,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledMessageResponse extends MessageResponse {
   /**
     * A map containing a multi part response for each address, with the endpointId as the key and the result as the value.
     */
   @JSName("EndpointResult")
-  var EndpointResult_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledEndpointMessageResult]] = js.undefined
+  var EndpointResult_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledEndpointMessageResult]] = js.native
   /**
     * A map containing a multi part response for each address, with the address as the key(Email address, phone number or push token) and the result as the value.
     */
   @JSName("Result")
-  var Result_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledMessageResult]] = js.undefined
+  var Result_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledMessageResult]] = js.native
 }
 
 object UnmarshalledMessageResponse {
   @scala.inline
-  def apply(
-    ApplicationId: String = null,
-    EndpointResult: StringDictionary[UnmarshalledEndpointMessageResult] = null,
-    RequestId: String = null,
-    Result: StringDictionary[UnmarshalledMessageResult] = null
-  ): UnmarshalledMessageResponse = {
+  def apply(): UnmarshalledMessageResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (EndpointResult != null) __obj.updateDynamic("EndpointResult")(EndpointResult.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledMessageResponse]
   }
+  @scala.inline
+  implicit class UnmarshalledMessageResponseOps[Self <: UnmarshalledMessageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointResult(value: StringDictionary[UnmarshalledEndpointMessageResult]): Self = this.set("EndpointResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointResult: Self = this.set("EndpointResult", js.undefined)
+    @scala.inline
+    def setResult(value: StringDictionary[UnmarshalledMessageResult]): Self = this.set("Result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("Result", js.undefined)
+  }
+  
 }
 

@@ -13,7 +13,15 @@ trait JQueryStaticNotify extends js.Object {
     * @param options notification options
     */
   def apply(): JQueryStatic = js.native
+  def apply(
+    element: js.UndefOr[scala.Nothing],
+    notificationdata: js.UndefOr[scala.Nothing],
+    options: NotificationOptions
+  ): JQueryStatic = js.native
+  def apply(element: js.UndefOr[scala.Nothing], notificationdata: js.Any): JQueryStatic = js.native
+  def apply(element: js.UndefOr[scala.Nothing], notificationdata: js.Any, options: NotificationOptions): JQueryStatic = js.native
   def apply(element: js.Any): JQueryStatic = js.native
+  def apply(element: js.Any, notificationdata: js.UndefOr[scala.Nothing], options: NotificationOptions): JQueryStatic = js.native
   def apply(element: js.Any, notificationdata: js.Any): JQueryStatic = js.native
   def apply(element: js.Any, notificationdata: js.Any, options: NotificationOptions): JQueryStatic = js.native
   /**

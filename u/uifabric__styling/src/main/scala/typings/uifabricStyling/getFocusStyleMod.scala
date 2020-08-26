@@ -16,33 +16,38 @@ import scala.scalajs.js.annotation._
 object getFocusStyleMod extends js.Object {
   def focusClear(): IRawStyle = js.native
   def getFocusOutlineStyle(theme: ITheme): IRawStyle = js.native
+  def getFocusOutlineStyle(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], color: String): IRawStyle = js.native
+  def getFocusOutlineStyle(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: Double): IRawStyle = js.native
+  def getFocusOutlineStyle(theme: ITheme, inset: js.UndefOr[scala.Nothing], width: Double, color: String): IRawStyle = js.native
   def getFocusOutlineStyle(theme: ITheme, inset: Double): IRawStyle = js.native
+  def getFocusOutlineStyle(theme: ITheme, inset: Double, width: js.UndefOr[scala.Nothing], color: String): IRawStyle = js.native
   def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double): IRawStyle = js.native
   def getFocusOutlineStyle(theme: ITheme, inset: Double, width: Double, color: String): IRawStyle = js.native
   def getFocusStyle(theme: ITheme): IRawStyle = js.native
+  def getFocusStyle(
+    theme: ITheme,
+    inset: js.UndefOr[Double],
+    position: js.UndefOr[relative | absolute],
+    highContrastStyle: js.UndefOr[IRawStyle],
+    borderColor: js.UndefOr[String],
+    outlineColor: js.UndefOr[String],
+    isFocusedOnly: js.UndefOr[Boolean]
+  ): IRawStyle = js.native
   def getFocusStyle(theme: ITheme, options: IGetFocusStylesOptions): IRawStyle = js.native
-  @JSName("getFocusStyle")
-  def getFocusStyle_absolute(
-    theme: ITheme,
-    inset: js.UndefOr[Double],
-    position: js.UndefOr[absolute],
-    highContrastStyle: js.UndefOr[IRawStyle],
-    borderColor: js.UndefOr[String],
-    outlineColor: js.UndefOr[String],
-    isFocusedOnly: js.UndefOr[Boolean]
-  ): IRawStyle = js.native
-  @JSName("getFocusStyle")
-  def getFocusStyle_relative(
-    theme: ITheme,
-    inset: js.UndefOr[Double],
-    position: js.UndefOr[relative],
-    highContrastStyle: js.UndefOr[IRawStyle],
-    borderColor: js.UndefOr[String],
-    outlineColor: js.UndefOr[String],
-    isFocusedOnly: js.UndefOr[Boolean]
-  ): IRawStyle = js.native
   def getInputFocusStyle(borderColor: String, borderRadius: String): IRawStyle = js.native
+  def getInputFocusStyle(
+    borderColor: String,
+    borderRadius: String,
+    borderType: js.UndefOr[scala.Nothing],
+    borderPosition: Double
+  ): IRawStyle = js.native
   def getInputFocusStyle(borderColor: String, borderRadius: Double): IRawStyle = js.native
+  def getInputFocusStyle(
+    borderColor: String,
+    borderRadius: Double,
+    borderType: js.UndefOr[scala.Nothing],
+    borderPosition: Double
+  ): IRawStyle = js.native
   @JSName("getInputFocusStyle")
   def getInputFocusStyle_border(borderColor: String, borderRadius: String, borderType: border): IRawStyle = js.native
   @JSName("getInputFocusStyle")

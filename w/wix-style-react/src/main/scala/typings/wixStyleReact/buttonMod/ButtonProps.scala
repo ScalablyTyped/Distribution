@@ -9,48 +9,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonProps extends js.Object {
-  var as: js.UndefOr[js.Any] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var dataHook: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var fullWidth: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
-  var prefixIcon: js.UndefOr[ReactElement] = js.undefined
-  var priority: js.UndefOr[ButtonPriority] = js.undefined
-  var size: js.UndefOr[ButtonSize] = js.undefined
-  var skin: js.UndefOr[ButtonSkin] = js.undefined
-  var suffixIcon: js.UndefOr[ReactElement] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
+  var className: js.UndefOr[String] = js.native
+  var dataHook: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  var prefixIcon: js.UndefOr[ReactElement] = js.native
+  var priority: js.UndefOr[ButtonPriority] = js.native
+  var size: js.UndefOr[ButtonSize] = js.native
+  var skin: js.UndefOr[ButtonSkin] = js.native
+  var suffixIcon: js.UndefOr[ReactElement] = js.native
 }
 
 object ButtonProps {
   @scala.inline
-  def apply(
-    as: js.Any = null,
-    className: String = null,
-    dataHook: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit = null,
-    prefixIcon: ReactElement = null,
-    priority: ButtonPriority = null,
-    size: ButtonSize = null,
-    skin: ButtonSkin = null,
-    suffixIcon: ReactElement = null
-  ): ButtonProps = {
+  def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (dataHook != null) __obj.updateDynamic("dataHook")(dataHook.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (prefixIcon != null) __obj.updateDynamic("prefixIcon")(prefixIcon.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
+  @scala.inline
+  implicit class ButtonPropsOps[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDataHook(value: String): Self = this.set("dataHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataHook: Self = this.set("dataHook", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setPrefixIcon(value: ReactElement): Self = this.set("prefixIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixIcon: Self = this.set("prefixIcon", js.undefined)
+    @scala.inline
+    def setPriority(value: ButtonPriority): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSize(value: ButtonSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSkin(value: ButtonSkin): Self = this.set("skin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin: Self = this.set("skin", js.undefined)
+    @scala.inline
+    def setSuffixIcon(value: ReactElement): Self = this.set("suffixIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffixIcon: Self = this.set("suffixIcon", js.undefined)
+  }
+  
 }
 

@@ -40,18 +40,38 @@ trait SchemaAnnotation extends js.Object {
 
 object SchemaAnnotation {
   @scala.inline
-  def apply(
-    length: js.UndefOr[Double] = js.undefined,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    `type`: String = null,
-    userMention: SchemaUserMentionMetadata = null
-  ): SchemaAnnotation = {
+  def apply(): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (userMention != null) __obj.updateDynamic("userMention")(userMention.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnnotation]
   }
+  @scala.inline
+  implicit class SchemaAnnotationOps[Self <: SchemaAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUserMention(value: SchemaUserMentionMetadata): Self = this.set("userMention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserMention: Self = this.set("userMention", js.undefined)
+  }
+  
 }
 

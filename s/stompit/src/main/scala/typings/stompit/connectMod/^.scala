@@ -13,6 +13,7 @@ object ^ extends js.Object {
   def apply(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
   def apply(optionsOrPathOrPort: ConnectOptions): typings.stompit.clientMod.^ = js.native
   def apply(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
+  def apply(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
   def apply(port: Double, host: String): typings.stompit.clientMod.^ = js.native
   def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
 }

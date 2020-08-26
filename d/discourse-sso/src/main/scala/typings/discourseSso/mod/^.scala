@@ -8,11 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends DiscourseSSO {
   def this(ssoSecret: String) = this()
-  /* CompleteClass */
-  override def buildLoginString(params: UserParams): String = js.native
-  /* CompleteClass */
-  override def getNonce(payload: String): String = js.native
-  /* CompleteClass */
-  override def validate(payload: String, sig: String): Boolean = js.native
 }
 

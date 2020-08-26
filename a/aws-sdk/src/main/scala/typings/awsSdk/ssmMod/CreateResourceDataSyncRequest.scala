@@ -26,17 +26,36 @@ trait CreateResourceDataSyncRequest extends js.Object {
 
 object CreateResourceDataSyncRequest {
   @scala.inline
-  def apply(
-    SyncName: ResourceDataSyncName,
-    S3Destination: ResourceDataSyncS3Destination = null,
-    SyncSource: ResourceDataSyncSource = null,
-    SyncType: ResourceDataSyncType = null
-  ): CreateResourceDataSyncRequest = {
+  def apply(SyncName: ResourceDataSyncName): CreateResourceDataSyncRequest = {
     val __obj = js.Dynamic.literal(SyncName = SyncName.asInstanceOf[js.Any])
-    if (S3Destination != null) __obj.updateDynamic("S3Destination")(S3Destination.asInstanceOf[js.Any])
-    if (SyncSource != null) __obj.updateDynamic("SyncSource")(SyncSource.asInstanceOf[js.Any])
-    if (SyncType != null) __obj.updateDynamic("SyncType")(SyncType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateResourceDataSyncRequest]
   }
+  @scala.inline
+  implicit class CreateResourceDataSyncRequestOps[Self <: CreateResourceDataSyncRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSyncName(value: ResourceDataSyncName): Self = this.set("SyncName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3Destination(value: ResourceDataSyncS3Destination): Self = this.set("S3Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Destination: Self = this.set("S3Destination", js.undefined)
+    @scala.inline
+    def setSyncSource(value: ResourceDataSyncSource): Self = this.set("SyncSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncSource: Self = this.set("SyncSource", js.undefined)
+    @scala.inline
+    def setSyncType(value: ResourceDataSyncType): Self = this.set("SyncType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncType: Self = this.set("SyncType", js.undefined)
+  }
+  
 }
 

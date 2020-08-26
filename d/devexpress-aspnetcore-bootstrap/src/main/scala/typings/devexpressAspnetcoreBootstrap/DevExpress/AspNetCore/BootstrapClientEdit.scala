@@ -18,6 +18,14 @@ trait BootstrapClientEdit extends Control {
   def getIsValid(): Boolean = js.native
   def getReadOnly(): Boolean = js.native
   def getValue(): js.Any = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[EditValidationEventArgs | EventArgs | ProcessingModeEventArgs], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_gotFocus(eventName: gotFocus): this.type = js.native
   @JSName("off")

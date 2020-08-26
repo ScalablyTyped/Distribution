@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.frame.XDispatchProviderInterceptor
   * @since OOo 1.1.2
   */
+@js.native
 trait RelationDesign
   extends XController
      with XInitialization

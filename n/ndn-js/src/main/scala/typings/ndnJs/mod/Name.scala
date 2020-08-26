@@ -29,19 +29,31 @@ object Name extends js.Object {
     def this(value: typings.ndnJs.blobMod.Blob) = this()
     def this(value: ArrayBuffer) = this()
     def this(value: Uint8Array) = this()
+    def this(value: js.UndefOr[scala.Nothing], `type`: typings.ndnJs.nameMod.ComponentType) = this()
     def this(value: String, `type`: typings.ndnJs.nameMod.ComponentType) = this()
     def this(value: js.Array[Double], `type`: typings.ndnJs.nameMod.ComponentType) = this()
     def this(value: typings.ndnJs.blobMod.Blob, `type`: typings.ndnJs.nameMod.ComponentType) = this()
     def this(value: ArrayBuffer, `type`: typings.ndnJs.nameMod.ComponentType) = this()
     def this(value: Uint8Array, `type`: typings.ndnJs.nameMod.ComponentType) = this()
+    def this(value: js.UndefOr[scala.Nothing], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
+    def this(
+      value: js.UndefOr[scala.Nothing],
+      `type`: typings.ndnJs.nameMod.ComponentType,
+      otherTypeCode: Double
+    ) = this()
+    def this(value: String, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: String, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double) = this()
+    def this(value: js.Array[Double], `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: js.Array[Double], `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double) = this()
+    def this(value: typings.ndnJs.blobMod.Blob, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(
       value: typings.ndnJs.blobMod.Blob,
       `type`: typings.ndnJs.nameMod.ComponentType,
       otherTypeCode: Double
     ) = this()
+    def this(value: ArrayBuffer, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: ArrayBuffer, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double) = this()
+    def this(value: Uint8Array, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double) = this()
     def this(value: Uint8Array, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double) = this()
   }
   
@@ -51,6 +63,7 @@ object Name extends js.Object {
   object Component extends js.Object {
     def fromImplicitSha256Digest(digest: typings.ndnJs.blobMod.Blob): typings.ndnJs.nameMod.Name.Component = js.native
     def fromNumber(number: Double): typings.ndnJs.nameMod.Name.Component = js.native
+    def fromNumber(number: Double, `type`: js.UndefOr[scala.Nothing], otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = js.native
     def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType): typings.ndnJs.nameMod.Name.Component = js.native
     def fromNumber(number: Double, `type`: typings.ndnJs.nameMod.ComponentType, otherTypeCode: Double): typings.ndnJs.nameMod.Name.Component = js.native
     def fromNumberWithMarker(number: Double, marker: Double): typings.ndnJs.nameMod.Name.Component = js.native

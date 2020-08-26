@@ -45,18 +45,38 @@ trait SchemaBandingProperties extends js.Object {
 
 object SchemaBandingProperties {
   @scala.inline
-  def apply(
-    firstBandColor: SchemaColor = null,
-    footerColor: SchemaColor = null,
-    headerColor: SchemaColor = null,
-    secondBandColor: SchemaColor = null
-  ): SchemaBandingProperties = {
+  def apply(): SchemaBandingProperties = {
     val __obj = js.Dynamic.literal()
-    if (firstBandColor != null) __obj.updateDynamic("firstBandColor")(firstBandColor.asInstanceOf[js.Any])
-    if (footerColor != null) __obj.updateDynamic("footerColor")(footerColor.asInstanceOf[js.Any])
-    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor.asInstanceOf[js.Any])
-    if (secondBandColor != null) __obj.updateDynamic("secondBandColor")(secondBandColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBandingProperties]
   }
+  @scala.inline
+  implicit class SchemaBandingPropertiesOps[Self <: SchemaBandingProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirstBandColor(value: SchemaColor): Self = this.set("firstBandColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstBandColor: Self = this.set("firstBandColor", js.undefined)
+    @scala.inline
+    def setFooterColor(value: SchemaColor): Self = this.set("footerColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterColor: Self = this.set("footerColor", js.undefined)
+    @scala.inline
+    def setHeaderColor(value: SchemaColor): Self = this.set("headerColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderColor: Self = this.set("headerColor", js.undefined)
+    @scala.inline
+    def setSecondBandColor(value: SchemaColor): Self = this.set("secondBandColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondBandColor: Self = this.set("secondBandColor", js.undefined)
+  }
+  
 }
 

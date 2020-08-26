@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.surveyKnockout.mod.ISurveyElement because Already inherited
 - typings.surveyKnockout.mod.IElement because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name. Inlined visible, parent, renderWidth, width, minWidth, maxWidth, rightIndent, startWithNewLine, getPanel, getLayoutType, isLayoutTypeSupported, removeElement, onAnyValueChanged, clearIncorrectValues, clearErrors, dispose
+- typings.surveyKnockout.mod.ITitleOwner because var conflicts: name. Inlined no, requiredText, isRequireTextOnStart, isRequireTextBeforeTitle, isRequireTextAfterTitle, locTitle
 - typings.surveyKnockout.mod.IQuestion because var conflicts: containsErrors, isPage, isPanel, isReadOnly, isVisible, name, survey. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
@@ -156,7 +157,13 @@ class Question protected ()
   var locOwner: ILocalizableOwner = js.native
   val locRequiredErrorText: LocalizableString = js.native
   val locTitle: LocalizableString = js.native
+  /**
+    * Use it to set the specific maxWidth constraint to the question like css style (%, px, em etc).
+    */
   var maxWidth: js.UndefOr[String] = js.native
+  /**
+    * Use it to set the specific minWidth constraint to the question like css style (%, px, em etc).
+    */
   var minWidth: js.UndefOr[String] = js.native
   /**
     * The property returns the question number. If question is invisible then it returns empty string.
@@ -185,7 +192,6 @@ class Question protected ()
     * Returns the rendred question title.
     */
   val processedTitle: String = js.native
-  val questionTitlePattern: String = js.native
   /**
     * Returns questions count: 1 for the non-matrix questions and all inner visible questions that has input(s) widgets for question of matrix types.
     * @see getQuizQuestions
@@ -233,13 +239,12 @@ class Question protected ()
     * @see SurveyModel.questionTitleLocation
     */
   var titleLocation: String = js.native
+  val titlePattern: String = js.native
   /**
     * Use it to choose how other question values will be rendered in title if referenced in {}.
     * Please note, this property is hidden for question without input, for example html question.
     */
   var useDisplayValuesInTitle: Boolean = js.native
-  /* CompleteClass */
-  override var validatedValue: js.Any = js.native
   /**
     * The list of question validators.
     * Please note, this property is hidden for question without input, for example html question.
@@ -338,6 +343,7 @@ class Question protected ()
   def getAllErrors(): js.Array[SurveyError] = js.native
   def getAllValues(): js.Any = js.native
   def getConditionJson(): js.Any = js.native
+  def getConditionJson(operator: js.UndefOr[scala.Nothing], path: String): js.Any = js.native
   def getConditionJson(operator: String): js.Any = js.native
   def getConditionJson(operator: String, path: String): js.Any = js.native
   /* protected */ def getCorrectAnswerCount(): Double = js.native
@@ -347,10 +353,6 @@ class Question protected ()
   /* protected */ def getCssRoot(cssClasses: js.Any): String = js.native
   /* protected */ def getCssTitle(cssClasses: js.Any): String = js.native
   /* protected */ def getCssType(): String = js.native
-  /* CompleteClass */
-  override def getDataFilteredProperties(): js.Any = js.native
-  /* CompleteClass */
-  override def getDataFilteredValues(): js.Any = js.native
   def getDefaultValue(): js.Any = js.native
   /**
     * Return the question value as a display text. For example, for dropdown, it would return the item text instead of item value.
@@ -360,17 +362,11 @@ class Question protected ()
   def getDisplayValue(keysAsText: Boolean): js.Any = js.native
   def getDisplayValue(keysAsText: Boolean, value: js.Any): js.Any = js.native
   /* protected */ def getDisplayValueCore(keyAsText: Boolean, value: js.Any): js.Any = js.native
-  /* CompleteClass */
-  override def getErrorCustomText(text: String, error: SurveyError): String = js.native
   /* protected */ def getFirstErrorInputElementId(): String = js.native
   /* protected */ def getFirstInputElementId(): String = js.native
   /* protected */ def getIsAnswered(): Boolean = js.native
   /* protected */ def getIsRunningValidators(): Boolean = js.native
   def getLayoutType(): String = js.native
-  /* CompleteClass */
-  override def getLocale(): String = js.native
-  /* CompleteClass */
-  override def getMarkdownHtml(text: String): String = js.native
   def getOthersMaxLength(): js.Any = js.native
   def getPanel(): IPanel = js.native
   /**
@@ -380,8 +376,6 @@ class Question protected ()
     */
   def getPlainData(): js.Any = js.native
   def getPlainData(options: IncludeEmpty): js.Any = js.native
-  /* CompleteClass */
-  override def getProcessedText(text: String): String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): Unit = js.native
   /* protected */ def getQuestionComment(): String = js.native
   def getQuestionFromArray(name: String, index: Double): IQuestion = js.native
@@ -401,10 +395,6 @@ class Question protected ()
     */
   /* InferMemberOverrides */
   override def getType(): String = js.native
-  /* CompleteClass */
-  override def getValidatorTitle(): String = js.native
-  /* CompleteClass */
-  override def getValidators(): js.Array[SurveyValidator] = js.native
   /* protected */ def getValueCore(): js.Any = js.native
   def getValueName(): String = js.native
   /**
@@ -412,6 +402,7 @@ class Question protected ()
     * @param fireCallback set it to true to show an error in UI.
     */
   def hasErrors(): Boolean = js.native
+  def hasErrors(fireCallback: js.UndefOr[scala.Nothing], rec: js.Any): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
   def hasErrors(fireCallback: Boolean, rec: js.Any): Boolean = js.native
   /* protected */ def hasOtherChanged(): Unit = js.native
@@ -458,8 +449,6 @@ class Question protected ()
     * @param error
     */
   def removeError(error: SurveyError): Unit = js.native
-  /* CompleteClass */
-  override def runCondition(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
   /* protected */ def runValidators(): js.Array[SurveyError] = js.native
   /* protected */ def setCssContent(`val`: String): Unit = js.native
   /* protected */ def setCssError(`val`: String): Unit = js.native

@@ -7,7 +7,7 @@ import typings.electron.electronStrings.`spellcheck-dictionary-initialized`
 import typings.electron.electronStrings.`will-download`
 import typings.electron.electronStrings.preconnect
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,7 @@ trait Session_ extends EventEmitter {
   val cookies: Cookies = js.native
   val netLog: NetLog = js.native
   val protocol: Protocol = js.native
+  val serviceWorkers: ServiceWorkers = js.native
   val webRequest: WebRequest = js.native
   @JSName("addListener")
   def addListener_preconnect(
@@ -50,7 +51,8 @@ trait Session_ extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
-    * Whether the word was successfully written to the custom dictionary.
+    * Whether the word was successfully written to the custom dictionary. This API
+    * will not work on non-persistent (in-memory) sessions.
     *
     * **Note:** On macOS and Windows 10 this word will be written to the OS custom
     * dictionary as well
@@ -112,6 +114,13 @@ trait Session_ extends EventEmitter {
     */
   def flushStorageData(): Unit = js.native
   /**
+    * A list of all loaded extensions.
+    *
+    * **Note:** This API cannot be called before the `ready` event of the `app` module
+    * is emitted.
+    */
+  def getAllExtensions(): js.Array[Extension] = js.native
+  /**
     * resolves with blob data.
     */
   def getBlobData(identifier: String): js.Promise[Buffer] = js.native
@@ -119,6 +128,13 @@ trait Session_ extends EventEmitter {
     * the session's current cache size, in bytes.
     */
   def getCacheSize(): js.Promise[Double] = js.native
+  /**
+    * | `null` - The loaded extension with the given ID.
+    *
+    * **Note:** This API cannot be called before the `ready` event of the `app` module
+    * is emitted.
+    */
+  def getExtension(extensionId: String): Extension = js.native
   /**
     * an array of paths to preload scripts that have been registered.
     */
@@ -137,6 +153,31 @@ trait Session_ extends EventEmitter {
     * The user agent for this session.
     */
   def getUserAgent(): String = js.native
+  /**
+    * An array of all words in app's custom dictionary. Resolves when the full
+    * dictionary is loaded from disk.
+    */
+  def listWordsInSpellCheckerDictionary(): js.Promise[js.Array[String]] = js.native
+  /**
+    * resolves when the extension is loaded.
+    *
+    * This method will raise an exception if the extension could not be loaded. If
+    * there are warnings when installing the extension (e.g. if the extension requests
+    * an API that Electron does not support) then they will be logged to the console.
+    *
+    * Note that Electron does not support the full range of Chrome extensions APIs.
+    *
+    * Note that in previous versions of Electron, extensions that were loaded would be
+    * remembered for future runs of the application. This is no longer the case:
+    * `loadExtension` must be called on every boot of your app if you want the
+    * extension to be loaded.
+    *
+    * This API does not support loading packed (.crx) extensions.
+    *
+    * **Note:** This API cannot be called before the `ready` event of the `app` module
+    * is emitted.
+    */
+  def loadExtension(path: String): js.Promise[Extension] = js.native
   /**
     * Emitted when a render process requests preconnection to a URL, generally due to
     * a resource hint.
@@ -225,6 +266,13 @@ trait Session_ extends EventEmitter {
     * Preconnects the given number of sockets to an origin.
     */
   def preconnect(options: PreconnectOptions): Unit = js.native
+  /**
+    * Unloads an extension.
+    *
+    * **Note:** This API cannot be called before the `ready` event of the `app` module
+    * is emitted.
+    */
+  def removeExtension(extensionId: String): Unit = js.native
   @JSName("removeListener")
   def removeListener_preconnect(
     event: preconnect,
@@ -256,10 +304,17 @@ trait Session_ extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents_, Unit]
   ): this.type = js.native
   /**
+    * Whether the word was successfully removed from the custom dictionary. This API
+    * will not work on non-persistent (in-memory) sessions.
+    *
+    * **Note:** On macOS and Windows 10 this word will be removed from the OS custom
+    * dictionary as well
+    */
+  def removeWordFromSpellCheckerDictionary(word: String): Boolean = js.native
+  /**
     * Resolves with the proxy information for `url`.
     */
   def resolveProxy(url: String): js.Promise[String] = js.native
-  def setCertificateVerifyProc(): Unit = js.native
   /**
     * Sets the certificate verify proc for `session`, the `proc` will be called with
     * `proc(request, callback)` whenever a server certificate verification is
@@ -269,6 +324,7 @@ trait Session_ extends EventEmitter {
     * Calling `setCertificateVerifyProc(null)` will revert back to default certificate
     * verify proc.
     */
+  def setCertificateVerifyProc(): Unit = js.native
   def setCertificateVerifyProc(
     proc: js.Function2[
       /* request */ CertificateVerifyProcProcRequest, 
@@ -281,28 +337,28 @@ trait Session_ extends EventEmitter {
     * `Downloads` under the respective app folder.
     */
   def setDownloadPath(path: String): Unit = js.native
-  def setPermissionCheckHandler(): Unit = js.native
   /**
     * Sets the handler which can be used to respond to permission checks for the
     * `session`. Returning `true` will allow the permission and `false` will reject
     * it. To clear the handler, call `setPermissionCheckHandler(null)`.
     */
+  def setPermissionCheckHandler(): Unit = js.native
   def setPermissionCheckHandler(
     handler: js.Function4[
       /* webContents */ WebContents_, 
       /* permission */ String, 
       /* requestingOrigin */ String, 
-      /* details */ Details, 
+      /* details */ PermissionCheckHandlerHandlerDetails, 
       Boolean
     ]
   ): Unit = js.native
-  def setPermissionRequestHandler(): Unit = js.native
   /**
     * Sets the handler which can be used to respond to permission requests for the
     * `session`. Calling `callback(true)` will allow the permission and
     * `callback(false)` will reject it. To clear the handler, call
     * `setPermissionRequestHandler(null)`.
     */
+  def setPermissionRequestHandler(): Unit = js.native
   def setPermissionRequestHandler(
     handler: js.Function4[
       /* webContents */ WebContents_, 

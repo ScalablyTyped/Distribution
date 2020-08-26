@@ -86,48 +86,100 @@ trait CreateDevEndpointResponse extends js.Object {
 
 object CreateDevEndpointResponse {
   @scala.inline
-  def apply(
-    Arguments: MapValue = null,
-    AvailabilityZone: GenericString = null,
-    CreatedTimestamp: TimestampValue = null,
-    EndpointName: GenericString = null,
-    ExtraJarsS3Path: GenericString = null,
-    ExtraPythonLibsS3Path: GenericString = null,
-    FailureReason: GenericString = null,
-    GlueVersion: GlueVersionString = null,
-    NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    RoleArn: RoleArn = null,
-    SecurityConfiguration: NameString = null,
-    SecurityGroupIds: StringList = null,
-    Status: GenericString = null,
-    SubnetId: GenericString = null,
-    VpcId: GenericString = null,
-    WorkerType: WorkerType = null,
-    YarnEndpointAddress: GenericString = null,
-    ZeppelinRemoteSparkInterpreterPort: js.UndefOr[IntegerValue] = js.undefined
-  ): CreateDevEndpointResponse = {
+  def apply(): CreateDevEndpointResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (EndpointName != null) __obj.updateDynamic("EndpointName")(EndpointName.asInstanceOf[js.Any])
-    if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path.asInstanceOf[js.Any])
-    if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
-    if (YarnEndpointAddress != null) __obj.updateDynamic("YarnEndpointAddress")(YarnEndpointAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(ZeppelinRemoteSparkInterpreterPort)) __obj.updateDynamic("ZeppelinRemoteSparkInterpreterPort")(ZeppelinRemoteSparkInterpreterPort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDevEndpointResponse]
   }
+  @scala.inline
+  implicit class CreateDevEndpointResponseOps[Self <: CreateDevEndpointResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArguments(value: MapValue): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: GenericString): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setCreatedTimestamp(value: TimestampValue): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setEndpointName(value: GenericString): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointName: Self = this.set("EndpointName", js.undefined)
+    @scala.inline
+    def setExtraJarsS3Path(value: GenericString): Self = this.set("ExtraJarsS3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraJarsS3Path: Self = this.set("ExtraJarsS3Path", js.undefined)
+    @scala.inline
+    def setExtraPythonLibsS3Path(value: GenericString): Self = this.set("ExtraPythonLibsS3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraPythonLibsS3Path: Self = this.set("ExtraPythonLibsS3Path", js.undefined)
+    @scala.inline
+    def setFailureReason(value: GenericString): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    @scala.inline
+    def setNumberOfNodes(value: IntegerValue): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    @scala.inline
+    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: GenericString*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: StringList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setStatus(value: GenericString): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubnetId(value: GenericString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setVpcId(value: GenericString): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    @scala.inline
+    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+    @scala.inline
+    def setYarnEndpointAddress(value: GenericString): Self = this.set("YarnEndpointAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYarnEndpointAddress: Self = this.set("YarnEndpointAddress", js.undefined)
+    @scala.inline
+    def setZeppelinRemoteSparkInterpreterPort(value: IntegerValue): Self = this.set("ZeppelinRemoteSparkInterpreterPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZeppelinRemoteSparkInterpreterPort: Self = this.set("ZeppelinRemoteSparkInterpreterPort", js.undefined)
+  }
+  
 }
 

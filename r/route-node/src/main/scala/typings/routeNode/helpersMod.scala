@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object helpersMod extends js.Object {
   def buildPathFromSegments(segments: js.Array[RouteNode]): String = js.native
+  def buildPathFromSegments(segments: js.Array[RouteNode], params: js.UndefOr[scala.Nothing], options: BuildOptions): String = js.native
   def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, _]): String = js.native
   def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, _], options: BuildOptions): String = js.native
   def buildStateFromMatch(`match`: MatchResponse): RouteNodeState | Null = js.native

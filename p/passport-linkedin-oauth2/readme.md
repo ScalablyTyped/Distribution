@@ -11,8 +11,8 @@ Passport for LinkedIn OAuth2 API v2
 | Full name          | passport-linkedin-oauth2 |
 | Keywords           | passport, linkedin, auth0 |
 | # releases         | 4 |
-| # dependents       | 25 |
-| # downloads        | 392445 |
+| # dependents       | 28 |
+| # downloads        | 417009 |
 | # stars            | 7 |
 
 ## Links

@@ -26,15 +26,32 @@ trait UpdateJobStatusRequest extends js.Object {
 
 object UpdateJobStatusRequest {
   @scala.inline
-  def apply(
-    AccountId: AccountId,
-    JobId: JobId,
-    RequestedJobStatus: RequestedJobStatus,
-    StatusUpdateReason: JobStatusUpdateReason = null
-  ): UpdateJobStatusRequest = {
+  def apply(AccountId: AccountId, JobId: JobId, RequestedJobStatus: RequestedJobStatus): UpdateJobStatusRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], JobId = JobId.asInstanceOf[js.Any], RequestedJobStatus = RequestedJobStatus.asInstanceOf[js.Any])
-    if (StatusUpdateReason != null) __obj.updateDynamic("StatusUpdateReason")(StatusUpdateReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobStatusRequest]
   }
+  @scala.inline
+  implicit class UpdateJobStatusRequestOps[Self <: UpdateJobStatusRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestedJobStatus(value: RequestedJobStatus): Self = this.set("RequestedJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = this.set("StatusUpdateReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusUpdateReason: Self = this.set("StatusUpdateReason", js.undefined)
+  }
+  
 }
 

@@ -105,6 +105,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def addToMySavedAlbums(albumIds: js.Array[String]): js.Promise[SaveAlbumsForUserResponse] = js.native
+  def addToMySavedAlbums(
+    albumIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SaveAlbumsForUserResponse]
+  ): js.Promise[SaveAlbumsForUserResponse] = js.native
   def addToMySavedAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[SaveAlbumsForUserResponse] = js.native
   def addToMySavedAlbums(
     albumIds: js.Array[String],
@@ -124,6 +129,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def addToMySavedShows(showIds: js.Array[String]): js.Promise[SaveShowsForUserResponse] = js.native
+  def addToMySavedShows(
+    showIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SaveShowsForUserResponse]
+  ): js.Promise[SaveShowsForUserResponse] = js.native
   def addToMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[SaveShowsForUserResponse] = js.native
   def addToMySavedShows(showIds: js.Array[String], options: js.Object, callback: ResultsCallback[SaveShowsForUserResponse]): js.Promise[SaveShowsForUserResponse] = js.native
   /**
@@ -139,6 +149,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def addToMySavedTracks(trackIds: js.Array[String]): js.Promise[SaveTracksForUserResponse] = js.native
+  def addToMySavedTracks(
+    trackIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SaveTracksForUserResponse]
+  ): js.Promise[SaveTracksForUserResponse] = js.native
   def addToMySavedTracks(trackIds: js.Array[String], options: js.Object): js.Promise[SaveTracksForUserResponse] = js.native
   def addToMySavedTracks(
     trackIds: js.Array[String],
@@ -159,6 +174,12 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def addTracksToPlaylist(playlistId: String, uris: js.Array[String]): js.Promise[AddTracksToPlaylistResponse] = js.native
+  def addTracksToPlaylist(
+    playlistId: String,
+    uris: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[AddTracksToPlaylistResponse]
+  ): js.Promise[AddTracksToPlaylistResponse] = js.native
   def addTracksToPlaylist(playlistId: String, uris: js.Array[String], options: js.Object): js.Promise[AddTracksToPlaylistResponse] = js.native
   def addTracksToPlaylist(
     playlistId: String,
@@ -213,6 +234,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def containsMySavedAlbums(albumIds: js.Array[String]): js.Promise[CheckUserSavedAlbumsResponse] = js.native
+  def containsMySavedAlbums(
+    albumIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[CheckUserSavedAlbumsResponse]
+  ): js.Promise[CheckUserSavedAlbumsResponse] = js.native
   def containsMySavedAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[CheckUserSavedAlbumsResponse] = js.native
   def containsMySavedAlbums(
     albumIds: js.Array[String],
@@ -232,6 +258,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def containsMySavedShows(showIds: js.Array[String]): js.Promise[CheckUsersSavedShowsResponse] = js.native
+  def containsMySavedShows(
+    showIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[CheckUsersSavedShowsResponse]
+  ): js.Promise[CheckUsersSavedShowsResponse] = js.native
   def containsMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[CheckUsersSavedShowsResponse] = js.native
   def containsMySavedShows(
     showIds: js.Array[String],
@@ -251,6 +282,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def containsMySavedTracks(trackIds: js.Array[String]): js.Promise[CheckUsersSavedTracksResponse] = js.native
+  def containsMySavedTracks(
+    trackIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[CheckUsersSavedTracksResponse]
+  ): js.Promise[CheckUsersSavedTracksResponse] = js.native
   def containsMySavedTracks(trackIds: js.Array[String], options: js.Object): js.Promise[CheckUsersSavedTracksResponse] = js.native
   def containsMySavedTracks(
     trackIds: js.Array[String],
@@ -270,6 +306,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def createPlaylist(userId: String): js.Promise[CreatePlaylistResponse] = js.native
+  def createPlaylist(
+    userId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[CreatePlaylistResponse]
+  ): js.Promise[CreatePlaylistResponse] = js.native
   def createPlaylist(userId: String, options: js.Object): js.Promise[CreatePlaylistResponse] = js.native
   def createPlaylist(userId: String, options: js.Object, callback: ResultsCallback[CreatePlaylistResponse]): js.Promise[CreatePlaylistResponse] = js.native
   /**
@@ -299,6 +340,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def followPlaylist(playlistId: String): js.Promise[FollowPlaylistResponse] = js.native
+  def followPlaylist(
+    playlistId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[FollowPlaylistResponse]
+  ): js.Promise[FollowPlaylistResponse] = js.native
   def followPlaylist(playlistId: String, options: js.Object): js.Promise[FollowPlaylistResponse] = js.native
   def followPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[FollowPlaylistResponse]): js.Promise[FollowPlaylistResponse] = js.native
   /**
@@ -333,6 +379,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getAlbum(albumId: String): js.Promise[SingleAlbumResponse] = js.native
+  def getAlbum(
+    albumId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SingleAlbumResponse]
+  ): js.Promise[SingleAlbumResponse] = js.native
   def getAlbum(albumId: String, options: js.Object): js.Promise[SingleAlbumResponse] = js.native
   def getAlbum(albumId: String, options: js.Object, callback: ResultsCallback[SingleAlbumResponse]): js.Promise[SingleAlbumResponse] = js.native
   /**
@@ -348,6 +399,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getAlbumTracks(albumId: String): js.Promise[AlbumTracksResponse] = js.native
+  def getAlbumTracks(
+    albumId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[AlbumTracksResponse]
+  ): js.Promise[AlbumTracksResponse] = js.native
   def getAlbumTracks(albumId: String, options: js.Object): js.Promise[AlbumTracksResponse] = js.native
   def getAlbumTracks(albumId: String, options: js.Object, callback: ResultsCallback[AlbumTracksResponse]): js.Promise[AlbumTracksResponse] = js.native
   /**
@@ -363,6 +419,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getAlbums(albumIds: js.Array[String]): js.Promise[MultipleAlbumsResponse] = js.native
+  def getAlbums(
+    albumIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[MultipleAlbumsResponse]
+  ): js.Promise[MultipleAlbumsResponse] = js.native
   def getAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[MultipleAlbumsResponse] = js.native
   def getAlbums(albumIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleAlbumsResponse]): js.Promise[MultipleAlbumsResponse] = js.native
   /**
@@ -378,6 +439,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getArtist(artistId: String): js.Promise[SingleArtistResponse] = js.native
+  def getArtist(
+    artistId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SingleArtistResponse]
+  ): js.Promise[SingleArtistResponse] = js.native
   def getArtist(artistId: String, options: js.Object): js.Promise[SingleArtistResponse] = js.native
   def getArtist(artistId: String, options: js.Object, callback: ResultsCallback[SingleArtistResponse]): js.Promise[SingleArtistResponse] = js.native
   /**
@@ -393,6 +459,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getArtistAlbums(artistId: String): js.Promise[ArtistsAlbumsResponse] = js.native
+  def getArtistAlbums(
+    artistId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ArtistsAlbumsResponse]
+  ): js.Promise[ArtistsAlbumsResponse] = js.native
   def getArtistAlbums(artistId: String, options: js.Object): js.Promise[ArtistsAlbumsResponse] = js.native
   def getArtistAlbums(artistId: String, options: js.Object, callback: ResultsCallback[ArtistsAlbumsResponse]): js.Promise[ArtistsAlbumsResponse] = js.native
   /**
@@ -408,6 +479,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getArtistRelatedArtists(artistId: String): js.Promise[ArtistsRelatedArtistsResponse] = js.native
+  def getArtistRelatedArtists(
+    artistId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ArtistsRelatedArtistsResponse]
+  ): js.Promise[ArtistsRelatedArtistsResponse] = js.native
   def getArtistRelatedArtists(artistId: String, options: js.Object): js.Promise[ArtistsRelatedArtistsResponse] = js.native
   def getArtistRelatedArtists(artistId: String, options: js.Object, callback: ResultsCallback[ArtistsRelatedArtistsResponse]): js.Promise[ArtistsRelatedArtistsResponse] = js.native
   /**
@@ -424,6 +500,12 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getArtistTopTracks(artistId: String, countryId: String): js.Promise[ArtistsTopTracksResponse] = js.native
+  def getArtistTopTracks(
+    artistId: String,
+    countryId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ArtistsTopTracksResponse]
+  ): js.Promise[ArtistsTopTracksResponse] = js.native
   def getArtistTopTracks(artistId: String, countryId: String, options: js.Object): js.Promise[ArtistsTopTracksResponse] = js.native
   def getArtistTopTracks(
     artistId: String,
@@ -444,6 +526,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getArtists(artistIds: js.Array[String]): js.Promise[MultipleArtistsResponse] = js.native
+  def getArtists(
+    artistIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[MultipleArtistsResponse]
+  ): js.Promise[MultipleArtistsResponse] = js.native
   def getArtists(artistIds: js.Array[String], options: js.Object): js.Promise[MultipleArtistsResponse] = js.native
   def getArtists(
     artistIds: js.Array[String],
@@ -508,6 +595,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getCategories(): js.Promise[MultipleCategoriesResponse] = js.native
+  def getCategories(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[MultipleCategoriesResponse]): js.Promise[MultipleCategoriesResponse] = js.native
   def getCategories(options: js.Object): js.Promise[MultipleCategoriesResponse] = js.native
   def getCategories(options: js.Object, callback: ResultsCallback[MultipleCategoriesResponse]): js.Promise[MultipleCategoriesResponse] = js.native
   /**
@@ -522,6 +610,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getCategory(categoryId: String): js.Promise[SingleCategoryResponse] = js.native
+  def getCategory(
+    categoryId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SingleCategoryResponse]
+  ): js.Promise[SingleCategoryResponse] = js.native
   def getCategory(categoryId: String, options: js.Object): js.Promise[SingleCategoryResponse] = js.native
   def getCategory(categoryId: String, options: js.Object, callback: ResultsCallback[SingleCategoryResponse]): js.Promise[SingleCategoryResponse] = js.native
   /**
@@ -536,6 +629,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getCategoryPlaylists(categoryId: String): js.Promise[CategoryPlaylistsResponse] = js.native
+  def getCategoryPlaylists(
+    categoryId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[CategoryPlaylistsResponse]
+  ): js.Promise[CategoryPlaylistsResponse] = js.native
   def getCategoryPlaylists(categoryId: String, options: js.Object): js.Promise[CategoryPlaylistsResponse] = js.native
   def getCategoryPlaylists(categoryId: String, options: js.Object, callback: ResultsCallback[CategoryPlaylistsResponse]): js.Promise[CategoryPlaylistsResponse] = js.native
   /**
@@ -551,6 +649,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getEpisode(episodeId: String): js.Promise[SingleEpisodeResponse] = js.native
+  def getEpisode(
+    episodeId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SingleEpisodeResponse]
+  ): js.Promise[SingleEpisodeResponse] = js.native
   def getEpisode(episodeId: String, options: js.Object): js.Promise[SingleEpisodeResponse] = js.native
   def getEpisode(episodeId: String, options: js.Object, callback: ResultsCallback[SingleEpisodeResponse]): js.Promise[SingleEpisodeResponse] = js.native
   /**
@@ -566,6 +669,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getEpisodes(episodeIds: js.Array[String]): js.Promise[MultipleEpisodesResponse] = js.native
+  def getEpisodes(
+    episodeIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[MultipleEpisodesResponse]
+  ): js.Promise[MultipleEpisodesResponse] = js.native
   def getEpisodes(episodeIds: js.Array[String], options: js.Object): js.Promise[MultipleEpisodesResponse] = js.native
   def getEpisodes(
     episodeIds: js.Array[String],
@@ -583,6 +691,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getFeaturedPlaylists(): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
+  def getFeaturedPlaylists(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ListOfFeaturedPlaylistsResponse]): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
   def getFeaturedPlaylists(options: js.Object): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
   def getFeaturedPlaylists(options: js.Object, callback: ResultsCallback[ListOfFeaturedPlaylistsResponse]): js.Promise[ListOfFeaturedPlaylistsResponse] = js.native
   /**
@@ -598,6 +707,7 @@ trait SpotifyWebApiJs extends js.Object {
     * artists objects. Not returned if a callback is given.
     */
   def getFollowedArtists(): js.Promise[UsersFollowedArtistsResponse] = js.native
+  def getFollowedArtists(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersFollowedArtistsResponse]): js.Promise[UsersFollowedArtistsResponse] = js.native
   def getFollowedArtists(options: js.Object): js.Promise[UsersFollowedArtistsResponse] = js.native
   def getFollowedArtists(options: js.Object, callback: ResultsCallback[UsersFollowedArtistsResponse]): js.Promise[UsersFollowedArtistsResponse] = js.native
   /**
@@ -620,6 +730,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getMe(): js.Promise[CurrentUsersProfileResponse] = js.native
+  def getMe(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[CurrentUsersProfileResponse]): js.Promise[CurrentUsersProfileResponse] = js.native
   def getMe(options: js.Object): js.Promise[CurrentUsersProfileResponse] = js.native
   def getMe(options: js.Object, callback: ResultsCallback[CurrentUsersProfileResponse]): js.Promise[CurrentUsersProfileResponse] = js.native
   /**
@@ -689,6 +800,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getMySavedAlbums(): js.Promise[UsersSavedAlbumsResponse] = js.native
+  def getMySavedAlbums(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersSavedAlbumsResponse]): js.Promise[UsersSavedAlbumsResponse] = js.native
   def getMySavedAlbums(options: js.Object): js.Promise[UsersSavedAlbumsResponse] = js.native
   def getMySavedAlbums(options: js.Object, callback: ResultsCallback[UsersSavedAlbumsResponse]): js.Promise[UsersSavedAlbumsResponse] = js.native
   /**
@@ -702,6 +814,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getMySavedShows(): js.Promise[ListOfUsersShowsResponse] = js.native
+  def getMySavedShows(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ListOfUsersShowsResponse]): js.Promise[ListOfUsersShowsResponse] = js.native
   def getMySavedShows(options: js.Object): js.Promise[ListOfUsersShowsResponse] = js.native
   def getMySavedShows(options: js.Object, callback: ResultsCallback[ListOfUsersShowsResponse]): js.Promise[ListOfUsersShowsResponse] = js.native
   /**
@@ -715,6 +828,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getMySavedTracks(): js.Promise[UsersSavedTracksResponse] = js.native
+  def getMySavedTracks(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersSavedTracksResponse]): js.Promise[UsersSavedTracksResponse] = js.native
   def getMySavedTracks(options: js.Object): js.Promise[UsersSavedTracksResponse] = js.native
   def getMySavedTracks(options: js.Object, callback: ResultsCallback[UsersSavedTracksResponse]): js.Promise[UsersSavedTracksResponse] = js.native
   /**
@@ -728,6 +842,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getMyTopArtists(): js.Promise[UsersTopArtistsResponse] = js.native
+  def getMyTopArtists(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersTopArtistsResponse]): js.Promise[UsersTopArtistsResponse] = js.native
   def getMyTopArtists(options: js.Object): js.Promise[UsersTopArtistsResponse] = js.native
   def getMyTopArtists(options: js.Object, callback: ResultsCallback[UsersTopArtistsResponse]): js.Promise[UsersTopArtistsResponse] = js.native
   /**
@@ -741,6 +856,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getMyTopTracks(): js.Promise[UsersTopTracksResponse] = js.native
+  def getMyTopTracks(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UsersTopTracksResponse]): js.Promise[UsersTopTracksResponse] = js.native
   def getMyTopTracks(options: js.Object): js.Promise[UsersTopTracksResponse] = js.native
   def getMyTopTracks(options: js.Object, callback: ResultsCallback[UsersTopTracksResponse]): js.Promise[UsersTopTracksResponse] = js.native
   /**
@@ -754,6 +870,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getNewReleases(): js.Promise[ListOfNewReleasesResponse] = js.native
+  def getNewReleases(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ListOfNewReleasesResponse]): js.Promise[ListOfNewReleasesResponse] = js.native
   def getNewReleases(options: js.Object): js.Promise[ListOfNewReleasesResponse] = js.native
   def getNewReleases(options: js.Object, callback: ResultsCallback[ListOfNewReleasesResponse]): js.Promise[ListOfNewReleasesResponse] = js.native
   /**
@@ -769,6 +886,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getPlaylist(playlistId: String): js.Promise[SinglePlaylistResponse] = js.native
+  def getPlaylist(
+    playlistId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SinglePlaylistResponse]
+  ): js.Promise[SinglePlaylistResponse] = js.native
   def getPlaylist(playlistId: String, options: js.Object): js.Promise[SinglePlaylistResponse] = js.native
   def getPlaylist(playlistId: String, options: js.Object, callback: ResultsCallback[SinglePlaylistResponse]): js.Promise[SinglePlaylistResponse] = js.native
   /**
@@ -797,6 +919,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getPlaylistTracks(playlistId: String): js.Promise[PlaylistTrackResponse] = js.native
+  def getPlaylistTracks(
+    playlistId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[PlaylistTrackResponse]
+  ): js.Promise[PlaylistTrackResponse] = js.native
   def getPlaylistTracks(playlistId: String, options: js.Object): js.Promise[PlaylistTrackResponse] = js.native
   def getPlaylistTracks(playlistId: String, options: js.Object, callback: ResultsCallback[PlaylistTrackResponse]): js.Promise[PlaylistTrackResponse] = js.native
   /**
@@ -810,6 +937,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getRecommendations(): js.Promise[RecommendationsFromSeedsResponse] = js.native
+  def getRecommendations(options: js.UndefOr[scala.Nothing], callback: ResultsCallback[RecommendationsFromSeedsResponse]): js.Promise[RecommendationsFromSeedsResponse] = js.native
   def getRecommendations(options: RecommendationsOptionsObject): js.Promise[RecommendationsFromSeedsResponse] = js.native
   def getRecommendations(options: RecommendationsOptionsObject, callback: ResultsCallback[RecommendationsFromSeedsResponse]): js.Promise[RecommendationsFromSeedsResponse] = js.native
   /**
@@ -825,6 +953,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getShow(showId: String): js.Promise[SingleShowResponse] = js.native
+  def getShow(showId: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[SingleShowResponse]): js.Promise[SingleShowResponse] = js.native
   def getShow(showId: String, options: js.Object): js.Promise[SingleShowResponse] = js.native
   def getShow(showId: String, options: js.Object, callback: ResultsCallback[SingleShowResponse]): js.Promise[SingleShowResponse] = js.native
   /**
@@ -840,6 +969,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getShowEpisodes(showId: String): js.Promise[ShowEpisodesResponse] = js.native
+  def getShowEpisodes(
+    showId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ShowEpisodesResponse]
+  ): js.Promise[ShowEpisodesResponse] = js.native
   def getShowEpisodes(showId: String, options: js.Object): js.Promise[ShowEpisodesResponse] = js.native
   def getShowEpisodes(showId: String, options: js.Object, callback: ResultsCallback[ShowEpisodesResponse]): js.Promise[ShowEpisodesResponse] = js.native
   /**
@@ -855,6 +989,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getShows(showIds: js.Array[String]): js.Promise[MultipleShowsResponse] = js.native
+  def getShows(
+    showIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[MultipleShowsResponse]
+  ): js.Promise[MultipleShowsResponse] = js.native
   def getShows(showIds: js.Array[String], options: js.Object): js.Promise[MultipleShowsResponse] = js.native
   def getShows(showIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleShowsResponse]): js.Promise[MultipleShowsResponse] = js.native
   /**
@@ -870,6 +1009,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getTrack(trackId: String): js.Promise[SingleTrackResponse] = js.native
+  def getTrack(
+    trackId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[SingleTrackResponse]
+  ): js.Promise[SingleTrackResponse] = js.native
   def getTrack(trackId: String, options: js.Object): js.Promise[SingleTrackResponse] = js.native
   def getTrack(trackId: String, options: js.Object, callback: ResultsCallback[SingleTrackResponse]): js.Promise[SingleTrackResponse] = js.native
   /**
@@ -885,6 +1029,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getTracks(trackIds: js.Array[String]): js.Promise[MultipleTracksResponse] = js.native
+  def getTracks(
+    trackIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[MultipleTracksResponse]
+  ): js.Promise[MultipleTracksResponse] = js.native
   def getTracks(trackIds: js.Array[String], options: js.Object): js.Promise[MultipleTracksResponse] = js.native
   def getTracks(trackIds: js.Array[String], options: js.Object, callback: ResultsCallback[MultipleTracksResponse]): js.Promise[MultipleTracksResponse] = js.native
   /**
@@ -900,6 +1049,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getUser(userId: String): js.Promise[UserProfileResponse] = js.native
+  def getUser(userId: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[UserProfileResponse]): js.Promise[UserProfileResponse] = js.native
   def getUser(userId: String, options: js.Object): js.Promise[UserProfileResponse] = js.native
   def getUser(userId: String, options: js.Object, callback: ResultsCallback[UserProfileResponse]): js.Promise[UserProfileResponse] = js.native
   /**
@@ -916,7 +1066,23 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def getUserPlaylists(): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(
+    userId: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ListOfUsersPlaylistsResponse]
+  ): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(userId: js.UndefOr[scala.Nothing], options: js.Object): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(
+    userId: js.UndefOr[scala.Nothing],
+    options: js.Object,
+    callback: ResultsCallback[ListOfUsersPlaylistsResponse]
+  ): js.Promise[ListOfUsersPlaylistsResponse] = js.native
   def getUserPlaylists(userId: String): js.Promise[ListOfUsersPlaylistsResponse] = js.native
+  def getUserPlaylists(
+    userId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ListOfUsersPlaylistsResponse]
+  ): js.Promise[ListOfUsersPlaylistsResponse] = js.native
   def getUserPlaylists(userId: String, options: js.Object): js.Promise[ListOfUsersPlaylistsResponse] = js.native
   def getUserPlaylists(userId: String, options: js.Object, callback: ResultsCallback[ListOfUsersPlaylistsResponse]): js.Promise[ListOfUsersPlaylistsResponse] = js.native
   /**
@@ -988,6 +1154,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def removeFromMySavedAlbums(albumIds: js.Array[String]): js.Promise[RemoveAlbumsForUserResponse] = js.native
+  def removeFromMySavedAlbums(
+    albumIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[RemoveAlbumsForUserResponse]
+  ): js.Promise[RemoveAlbumsForUserResponse] = js.native
   def removeFromMySavedAlbums(albumIds: js.Array[String], options: js.Object): js.Promise[RemoveAlbumsForUserResponse] = js.native
   def removeFromMySavedAlbums(
     albumIds: js.Array[String],
@@ -1007,6 +1178,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def removeFromMySavedShows(showIds: js.Array[String]): js.Promise[RemoveUsersSavedShowsResponse] = js.native
+  def removeFromMySavedShows(
+    showIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[RemoveUsersSavedShowsResponse]
+  ): js.Promise[RemoveUsersSavedShowsResponse] = js.native
   def removeFromMySavedShows(showIds: js.Array[String], options: js.Object): js.Promise[RemoveUsersSavedShowsResponse] = js.native
   def removeFromMySavedShows(
     showIds: js.Array[String],
@@ -1026,6 +1202,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def removeFromMySavedTracks(trackIds: js.Array[String]): js.Promise[RemoveUsersSavedTracksResponse] = js.native
+  def removeFromMySavedTracks(
+    trackIds: js.Array[String],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[RemoveUsersSavedTracksResponse]
+  ): js.Promise[RemoveUsersSavedTracksResponse] = js.native
   def removeFromMySavedTracks(trackIds: js.Array[String], options: js.Object): js.Promise[RemoveUsersSavedTracksResponse] = js.native
   def removeFromMySavedTracks(
     trackIds: js.Array[String],
@@ -1111,6 +1292,13 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def reorderTracksInPlaylist(playlistId: String, rangeStart: Double, insertBefore: Double): js.Promise[ReorderPlaylistTracksResponse] = js.native
+  def reorderTracksInPlaylist(
+    playlistId: String,
+    rangeStart: Double,
+    insertBefore: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[ReorderPlaylistTracksResponse]
+  ): js.Promise[ReorderPlaylistTracksResponse] = js.native
   def reorderTracksInPlaylist(playlistId: String, rangeStart: Double, insertBefore: Double, options: js.Object): js.Promise[ReorderPlaylistTracksResponse] = js.native
   def reorderTracksInPlaylist(
     playlistId: String,
@@ -1155,6 +1343,12 @@ trait SpotifyWebApiJs extends js.Object {
   def search(
     query: String,
     types: js.Array[album | artist | playlist | track],
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[AlbumSearchResponse]
+  ): js.Promise[SearchResponse] = js.native
+  def search(
+    query: String,
+    types: js.Array[album | artist | playlist | track],
     options: SearchForItemParameterObject
   ): js.Promise[SearchResponse] = js.native
   def search(
@@ -1175,6 +1369,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def searchAlbums(query: String): js.Promise[AlbumSearchResponse] = js.native
+  def searchAlbums(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[AlbumSearchResponse]): js.Promise[AlbumSearchResponse] = js.native
   def searchAlbums(query: String, options: SearchForItemParameterObject): js.Promise[AlbumSearchResponse] = js.native
   def searchAlbums(
     query: String,
@@ -1193,6 +1388,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def searchArtists(query: String): js.Promise[ArtistSearchResponse] = js.native
+  def searchArtists(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ArtistSearchResponse]): js.Promise[ArtistSearchResponse] = js.native
   def searchArtists(query: String, options: SearchForItemParameterObject): js.Promise[ArtistSearchResponse] = js.native
   def searchArtists(
     query: String,
@@ -1211,6 +1407,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def searchEpisodes(query: String): js.Promise[EpisodeSearchResponse] = js.native
+  def searchEpisodes(
+    query: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[EpisodeSearchResponse]
+  ): js.Promise[EpisodeSearchResponse] = js.native
   def searchEpisodes(query: String, options: SearchForItemParameterObject): js.Promise[EpisodeSearchResponse] = js.native
   def searchEpisodes(
     query: String,
@@ -1229,6 +1430,11 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def searchPlaylists(query: String): js.Promise[PlaylistSearchResponse] = js.native
+  def searchPlaylists(
+    query: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: ResultsCallback[PlaylistSearchResponse]
+  ): js.Promise[PlaylistSearchResponse] = js.native
   def searchPlaylists(query: String, options: SearchForItemParameterObject): js.Promise[PlaylistSearchResponse] = js.native
   def searchPlaylists(
     query: String,
@@ -1247,6 +1453,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def searchShows(query: String): js.Promise[ShowSearchResponse] = js.native
+  def searchShows(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[ShowSearchResponse]): js.Promise[ShowSearchResponse] = js.native
   def searchShows(query: String, options: SearchForItemParameterObject): js.Promise[ShowSearchResponse] = js.native
   def searchShows(
     query: String,
@@ -1265,6 +1472,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
   def searchTracks(query: String): js.Promise[TrackSearchResponse] = js.native
+  def searchTracks(query: String, options: js.UndefOr[scala.Nothing], callback: ResultsCallback[TrackSearchResponse]): js.Promise[TrackSearchResponse] = js.native
   def searchTracks(query: String, options: SearchForItemParameterObject): js.Promise[TrackSearchResponse] = js.native
   def searchTracks(
     query: String,
@@ -1286,7 +1494,6 @@ trait SpotifyWebApiJs extends js.Object {
   def seek(position: Double, callback: VoidResultsCallback): Unit = js.native
   def seek(position: Double, options: DeviceSpecificParameterObject): js.Promise[Unit] = js.native
   def seek(position: Double, options: DeviceSpecificParameterObject, callback: VoidResultsCallback): Unit = js.native
-  def setAccessToken(): Unit = js.native
   /**
     * Sets the access token to be used.
     * See [the Authorization Guide](https://developer.spotify.com/web-api/authorization-guide/) on
@@ -1295,6 +1502,7 @@ trait SpotifyWebApiJs extends js.Object {
     * @param {string} accessToken The access token
     * @return {void}
     */
+  def setAccessToken(): Unit = js.native
   def setAccessToken(accessToken: String): Unit = js.native
   /**
     * Sets an implementation of Promises/A+ to be used. E.g. Q, when.

@@ -12,7 +12,7 @@ Returns true if a path is a dot-directory.
 | Keywords           | dotdir, is |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 545119 |
+| # downloads        | 531107 |
 | # stars            | 0 |
 
 ## Links

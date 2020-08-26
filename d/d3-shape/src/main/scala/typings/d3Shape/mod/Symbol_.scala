@@ -20,8 +20,12 @@ trait Symbol_[This, Datum] extends js.Object {
     *
     * @param d The datum for which the symbol is to be generated.
     */
-  def apply(): String | Null = js.native
   def apply(d: Datum, args: js.Any*): String | Null = js.native
+  def apply(d: js.UndefOr[scala.Nothing], args: js.Any*): String | Null = js.native
+  /**
+    * Returns the current rendering context, which defaults to null.
+    */
+  def context(): CanvasRenderingContext2D | Null = js.native
   /**
     * Sets the rendering context to null and returns this symbol generator.
     *
@@ -29,7 +33,7 @@ trait Symbol_[This, Datum] extends js.Object {
     *
     * @param context null, to remove rendering context.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Sets the rendering context and returns this symbol generator.
     *
@@ -38,11 +42,6 @@ trait Symbol_[This, Datum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
-  /**
-    * Returns the current rendering context, which defaults to null.
-    */
-  @JSName("context")
-  def context_Union(): CanvasRenderingContext2D | Null = js.native
   /**
     * Returns the current size accessor, which defaults to a function returning a constant value of 64.
     */

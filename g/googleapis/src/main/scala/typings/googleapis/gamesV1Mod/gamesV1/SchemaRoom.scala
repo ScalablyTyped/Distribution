@@ -82,36 +82,76 @@ trait SchemaRoom extends js.Object {
 
 object SchemaRoom {
   @scala.inline
-  def apply(
-    applicationId: String = null,
-    autoMatchingCriteria: SchemaRoomAutoMatchingCriteria = null,
-    autoMatchingStatus: SchemaRoomAutoMatchStatus = null,
-    creationDetails: SchemaRoomModification = null,
-    description: String = null,
-    inviterId: String = null,
-    kind: String = null,
-    lastUpdateDetails: SchemaRoomModification = null,
-    participants: js.Array[SchemaRoomParticipant] = null,
-    roomId: String = null,
-    roomStatusVersion: js.UndefOr[Double] = js.undefined,
-    status: String = null,
-    variant: js.UndefOr[Double] = js.undefined
-  ): SchemaRoom = {
+  def apply(): SchemaRoom = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria.asInstanceOf[js.Any])
-    if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus.asInstanceOf[js.Any])
-    if (creationDetails != null) __obj.updateDynamic("creationDetails")(creationDetails.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (inviterId != null) __obj.updateDynamic("inviterId")(inviterId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastUpdateDetails != null) __obj.updateDynamic("lastUpdateDetails")(lastUpdateDetails.asInstanceOf[js.Any])
-    if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
-    if (roomId != null) __obj.updateDynamic("roomId")(roomId.asInstanceOf[js.Any])
-    if (!js.isUndefined(roomStatusVersion)) __obj.updateDynamic("roomStatusVersion")(roomStatusVersion.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(variant)) __obj.updateDynamic("variant")(variant.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoom]
   }
+  @scala.inline
+  implicit class SchemaRoomOps[Self <: SchemaRoom] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setAutoMatchingCriteria(value: SchemaRoomAutoMatchingCriteria): Self = this.set("autoMatchingCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatchingCriteria: Self = this.set("autoMatchingCriteria", js.undefined)
+    @scala.inline
+    def setAutoMatchingStatus(value: SchemaRoomAutoMatchStatus): Self = this.set("autoMatchingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatchingStatus: Self = this.set("autoMatchingStatus", js.undefined)
+    @scala.inline
+    def setCreationDetails(value: SchemaRoomModification): Self = this.set("creationDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDetails: Self = this.set("creationDetails", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInviterId(value: String): Self = this.set("inviterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInviterId: Self = this.set("inviterId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastUpdateDetails(value: SchemaRoomModification): Self = this.set("lastUpdateDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateDetails: Self = this.set("lastUpdateDetails", js.undefined)
+    @scala.inline
+    def setParticipantsVarargs(value: SchemaRoomParticipant*): Self = this.set("participants", js.Array(value :_*))
+    @scala.inline
+    def setParticipants(value: js.Array[SchemaRoomParticipant]): Self = this.set("participants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipants: Self = this.set("participants", js.undefined)
+    @scala.inline
+    def setRoomId(value: String): Self = this.set("roomId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomId: Self = this.set("roomId", js.undefined)
+    @scala.inline
+    def setRoomStatusVersion(value: Double): Self = this.set("roomStatusVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomStatusVersion: Self = this.set("roomStatusVersion", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVariant(value: Double): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+  }
+  
 }
 

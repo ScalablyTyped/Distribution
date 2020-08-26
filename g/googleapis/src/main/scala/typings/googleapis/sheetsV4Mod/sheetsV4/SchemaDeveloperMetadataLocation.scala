@@ -31,18 +31,38 @@ trait SchemaDeveloperMetadataLocation extends js.Object {
 
 object SchemaDeveloperMetadataLocation {
   @scala.inline
-  def apply(
-    dimensionRange: SchemaDimensionRange = null,
-    locationType: String = null,
-    sheetId: js.UndefOr[Double] = js.undefined,
-    spreadsheet: js.UndefOr[Boolean] = js.undefined
-  ): SchemaDeveloperMetadataLocation = {
+  def apply(): SchemaDeveloperMetadataLocation = {
     val __obj = js.Dynamic.literal()
-    if (dimensionRange != null) __obj.updateDynamic("dimensionRange")(dimensionRange.asInstanceOf[js.Any])
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetId)) __obj.updateDynamic("sheetId")(sheetId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spreadsheet)) __obj.updateDynamic("spreadsheet")(spreadsheet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeveloperMetadataLocation]
   }
+  @scala.inline
+  implicit class SchemaDeveloperMetadataLocationOps[Self <: SchemaDeveloperMetadataLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionRange(value: SchemaDimensionRange): Self = this.set("dimensionRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionRange: Self = this.set("dimensionRange", js.undefined)
+    @scala.inline
+    def setLocationType(value: String): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationType: Self = this.set("locationType", js.undefined)
+    @scala.inline
+    def setSheetId(value: Double): Self = this.set("sheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetId: Self = this.set("sheetId", js.undefined)
+    @scala.inline
+    def setSpreadsheet(value: Boolean): Self = this.set("spreadsheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheet: Self = this.set("spreadsheet", js.undefined)
+  }
+  
 }
 

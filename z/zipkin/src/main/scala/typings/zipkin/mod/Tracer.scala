@@ -16,6 +16,7 @@ class Tracer protected () extends js.Object {
   def createChildId(): TraceId = js.native
   def createChildId(parentId: TraceId): TraceId = js.native
   def createRootId(): TraceId = js.native
+  def createRootId(isSampled: js.UndefOr[scala.Nothing], isDebug: Boolean): TraceId = js.native
   def createRootId(isSampled: IOption[Boolean]): TraceId = js.native
   def createRootId(isSampled: IOption[Boolean], isDebug: Boolean): TraceId = js.native
   def letId[V](traceId: TraceId, callback: js.Function0[V]): V = js.native

@@ -28,6 +28,7 @@ class ResourceDatafeedstatuses protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaDatafeedstatusesCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaDatafeedstatusesCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeedstatusesCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceDatafeedstatusesCustombatch): GaxiosPromise[SchemaDatafeedstatusesCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceDatafeedstatusesCustombatch,
@@ -62,6 +63,7 @@ class ResourceDatafeedstatuses protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDatafeedStatus] = js.native
   def get(callback: BodyResponseCallback[SchemaDatafeedStatus]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeedStatus] = js.native
   def get(params: ParamsResourceDatafeedstatusesGet): GaxiosPromise[SchemaDatafeedStatus] = js.native
   def get(params: ParamsResourceDatafeedstatusesGet, callback: BodyResponseCallback[SchemaDatafeedStatus]): Unit = js.native
   def get(
@@ -92,6 +94,7 @@ class ResourceDatafeedstatuses protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDatafeedstatusesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDatafeedstatusesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDatafeedstatusesListResponse] = js.native
   def list(params: ParamsResourceDatafeedstatusesList): GaxiosPromise[SchemaDatafeedstatusesListResponse] = js.native
   def list(
     params: ParamsResourceDatafeedstatusesList,

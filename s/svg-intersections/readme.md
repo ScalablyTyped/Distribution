@@ -12,7 +12,7 @@ A library of intersection algorithms covering all SVG shape types
 | Keywords           | intersection, bezier, circle, ellipse, line, polygon, rectangle, path |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 114197 |
+| # downloads        | 123989 |
 | # stars            | 1 |
 
 ## Links

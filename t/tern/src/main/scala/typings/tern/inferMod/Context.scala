@@ -9,15 +9,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Context extends js.Object {
   /** The primitive boolean type. */
-  var bool: Primnamebool
+  var bool: Primnamebool = js.native
   /** The primitive number type. */
-  var num: Primnamenumber
-  var parent: js.UndefOr[Server] = js.undefined
+  var num: Primnamenumber = js.native
+  var parent: js.UndefOr[Server] = js.native
   /** The primitive string type. */
-  var str: Primnamestring
-  var topScope: Scope
+  var str: Primnamestring = js.native
+  var topScope: Scope = js.native
 }
 
 @JSImport("tern/lib/infer", "Context")

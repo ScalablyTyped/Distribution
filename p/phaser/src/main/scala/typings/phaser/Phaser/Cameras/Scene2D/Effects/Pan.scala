@@ -81,9 +81,264 @@ trait Pan extends js.Object {
     * @param context The context in which the callback is invoked. Defaults to the Scene to which the Camera belongs.
     */
   def start(x: Double, y: Double): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: String): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: String, force: Boolean): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: String,
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: js.Function): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(x: Double, y: Double, duration: js.UndefOr[scala.Nothing], ease: js.Function, force: Boolean): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: js.UndefOr[scala.Nothing],
+    ease: js.Function,
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(x: Double, y: Double, duration: integer): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
+  def start(x: Double, y: Double, duration: integer, ease: js.UndefOr[scala.Nothing], force: Boolean): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.UndefOr[scala.Nothing],
+    force: Boolean,
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(x: Double, y: Double, duration: integer, ease: String): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(x: Double, y: Double, duration: integer, ease: String, force: Boolean): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: String,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
   def start(x: Double, y: Double, duration: integer, ease: String, force: Boolean, callback: CameraPanCallback): Camera = js.native
   def start(
     x: Double,
@@ -95,7 +350,42 @@ trait Pan extends js.Object {
     context: js.Any
   ): Camera = js.native
   def start(x: Double, y: Double, duration: integer, ease: js.Function): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback
+  ): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: js.UndefOr[scala.Nothing],
+    callback: CameraPanCallback,
+    context: js.Any
+  ): Camera = js.native
   def start(x: Double, y: Double, duration: integer, ease: js.Function, force: Boolean): Camera = js.native
+  def start(
+    x: Double,
+    y: Double,
+    duration: integer,
+    ease: js.Function,
+    force: Boolean,
+    callback: js.UndefOr[scala.Nothing],
+    context: js.Any
+  ): Camera = js.native
   def start(
     x: Double,
     y: Double,

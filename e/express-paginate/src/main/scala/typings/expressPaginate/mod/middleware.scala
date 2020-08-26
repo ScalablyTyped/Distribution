@@ -18,6 +18,12 @@ object middleware extends js.Object {
     /* next */ NextFunction, 
     Unit
   ] = js.native
+  def apply(limit: js.UndefOr[scala.Nothing], maxLimit: Double): js.Function3[
+    /* req */ Request_[ParamsDictionary, _, _, Query], 
+    /* res */ Response_[_], 
+    /* next */ NextFunction, 
+    Unit
+  ] = js.native
   def apply(limit: Double): js.Function3[
     /* req */ Request_[ParamsDictionary, _, _, Query], 
     /* res */ Response_[_], 

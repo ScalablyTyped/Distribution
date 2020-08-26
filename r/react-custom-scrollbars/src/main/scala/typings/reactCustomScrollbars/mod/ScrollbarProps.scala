@@ -10,85 +10,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScrollbarProps
   extends AllHTMLAttributes[Scrollbars]
      with ClassAttributes[Scrollbars] {
-  var autoHeight: js.UndefOr[Boolean] = js.undefined
-  var autoHeightMax: js.UndefOr[Double | String] = js.undefined
-  var autoHeightMin: js.UndefOr[Double | String] = js.undefined
-  var autoHide: js.UndefOr[Boolean] = js.undefined
-  var autoHideDuration: js.UndefOr[Double] = js.undefined
-  var autoHideTimeout: js.UndefOr[Double] = js.undefined
-  var hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.undefined
-  var onScrollFrame: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.undefined
-  var onScrollStart: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onScrollStop: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeightMax: js.UndefOr[Double | String] = js.native
+  var autoHeightMin: js.UndefOr[Double | String] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHideDuration: js.UndefOr[Double] = js.native
+  var autoHideTimeout: js.UndefOr[Double] = js.native
+  var hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.native
+  var onScrollFrame: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.native
+  var onScrollStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onScrollStop: js.UndefOr[js.Function0[Unit]] = js.native
   @JSName("onScroll")
-  var onScroll_ScrollbarProps: js.UndefOr[UIEventHandler[_]] = js.undefined
-  var onUpdate: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.undefined
-  var renderThumbHorizontal: js.UndefOr[StatelessComponent[_]] = js.undefined
-  var renderThumbVertical: js.UndefOr[StatelessComponent[_]] = js.undefined
-  var renderTrackHorizontal: js.UndefOr[StatelessComponent[_]] = js.undefined
-  var renderTrackVertical: js.UndefOr[StatelessComponent[_]] = js.undefined
-  var renderView: js.UndefOr[StatelessComponent[_]] = js.undefined
-  var tagName: js.UndefOr[String] = js.undefined
-  var thumbMinSize: js.UndefOr[Double] = js.undefined
-  var thumbSize: js.UndefOr[Double] = js.undefined
-  var universal: js.UndefOr[Boolean] = js.undefined
+  var onScroll_ScrollbarProps: js.UndefOr[UIEventHandler[_]] = js.native
+  var onUpdate: js.UndefOr[js.Function1[/* values */ positionValues, Unit]] = js.native
+  var renderThumbHorizontal: js.UndefOr[StatelessComponent[_]] = js.native
+  var renderThumbVertical: js.UndefOr[StatelessComponent[_]] = js.native
+  var renderTrackHorizontal: js.UndefOr[StatelessComponent[_]] = js.native
+  var renderTrackVertical: js.UndefOr[StatelessComponent[_]] = js.native
+  var renderView: js.UndefOr[StatelessComponent[_]] = js.native
+  var tagName: js.UndefOr[String] = js.native
+  var thumbMinSize: js.UndefOr[Double] = js.native
+  var thumbSize: js.UndefOr[Double] = js.native
+  var universal: js.UndefOr[Boolean] = js.native
 }
 
 object ScrollbarProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Scrollbars] = null,
-    ClassAttributes: ClassAttributes[Scrollbars] = null,
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    autoHeightMax: Double | String = null,
-    autoHeightMin: Double | String = null,
-    autoHide: js.UndefOr[Boolean] = js.undefined,
-    autoHideDuration: js.UndefOr[Double] = js.undefined,
-    autoHideTimeout: js.UndefOr[Double] = js.undefined,
-    hideTracksWhenNotNeeded: js.UndefOr[Boolean] = js.undefined,
-    onScroll: UIEvent[_, NativeUIEvent] => Unit = null,
-    onScrollFrame: /* values */ positionValues => Unit = null,
-    onScrollStart: () => Unit = null,
-    onScrollStop: () => Unit = null,
-    onUpdate: /* values */ positionValues => Unit = null,
-    renderThumbHorizontal: StatelessComponent[_] = null,
-    renderThumbVertical: StatelessComponent[_] = null,
-    renderTrackHorizontal: StatelessComponent[_] = null,
-    renderTrackVertical: StatelessComponent[_] = null,
-    renderView: StatelessComponent[_] = null,
-    tagName: String = null,
-    thumbMinSize: js.UndefOr[Double] = js.undefined,
-    thumbSize: js.UndefOr[Double] = js.undefined,
-    universal: js.UndefOr[Boolean] = js.undefined
-  ): ScrollbarProps = {
+  def apply(): ScrollbarProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
-    if (autoHeightMax != null) __obj.updateDynamic("autoHeightMax")(autoHeightMax.asInstanceOf[js.Any])
-    if (autoHeightMin != null) __obj.updateDynamic("autoHeightMin")(autoHeightMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHideDuration)) __obj.updateDynamic("autoHideDuration")(autoHideDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHideTimeout)) __obj.updateDynamic("autoHideTimeout")(autoHideTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideTracksWhenNotNeeded)) __obj.updateDynamic("hideTracksWhenNotNeeded")(hideTracksWhenNotNeeded.get.asInstanceOf[js.Any])
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onScrollFrame != null) __obj.updateDynamic("onScrollFrame")(js.Any.fromFunction1(onScrollFrame))
-    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(js.Any.fromFunction0(onScrollStart))
-    if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(js.Any.fromFunction0(onScrollStop))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction1(onUpdate))
-    if (renderThumbHorizontal != null) __obj.updateDynamic("renderThumbHorizontal")(renderThumbHorizontal.asInstanceOf[js.Any])
-    if (renderThumbVertical != null) __obj.updateDynamic("renderThumbVertical")(renderThumbVertical.asInstanceOf[js.Any])
-    if (renderTrackHorizontal != null) __obj.updateDynamic("renderTrackHorizontal")(renderTrackHorizontal.asInstanceOf[js.Any])
-    if (renderTrackVertical != null) __obj.updateDynamic("renderTrackVertical")(renderTrackVertical.asInstanceOf[js.Any])
-    if (renderView != null) __obj.updateDynamic("renderView")(renderView.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbMinSize)) __obj.updateDynamic("thumbMinSize")(thumbMinSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbSize)) __obj.updateDynamic("thumbSize")(thumbSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(universal)) __obj.updateDynamic("universal")(universal.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollbarProps]
   }
+  @scala.inline
+  implicit class ScrollbarPropsOps[Self <: ScrollbarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    @scala.inline
+    def setAutoHeightMax(value: Double | String): Self = this.set("autoHeightMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeightMax: Self = this.set("autoHeightMax", js.undefined)
+    @scala.inline
+    def setAutoHeightMin(value: Double | String): Self = this.set("autoHeightMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeightMin: Self = this.set("autoHeightMin", js.undefined)
+    @scala.inline
+    def setAutoHide(value: Boolean): Self = this.set("autoHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHide: Self = this.set("autoHide", js.undefined)
+    @scala.inline
+    def setAutoHideDuration(value: Double): Self = this.set("autoHideDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHideDuration: Self = this.set("autoHideDuration", js.undefined)
+    @scala.inline
+    def setAutoHideTimeout(value: Double): Self = this.set("autoHideTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHideTimeout: Self = this.set("autoHideTimeout", js.undefined)
+    @scala.inline
+    def setHideTracksWhenNotNeeded(value: Boolean): Self = this.set("hideTracksWhenNotNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideTracksWhenNotNeeded: Self = this.set("hideTracksWhenNotNeeded", js.undefined)
+    @scala.inline
+    def setOnScroll(value: UIEvent[_, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnScrollFrame(value: /* values */ positionValues => Unit): Self = this.set("onScrollFrame", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScrollFrame: Self = this.set("onScrollFrame", js.undefined)
+    @scala.inline
+    def setOnScrollStart(value: () => Unit): Self = this.set("onScrollStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnScrollStart: Self = this.set("onScrollStart", js.undefined)
+    @scala.inline
+    def setOnScrollStop(value: () => Unit): Self = this.set("onScrollStop", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnScrollStop: Self = this.set("onScrollStop", js.undefined)
+    @scala.inline
+    def setOnUpdate(value: /* values */ positionValues => Unit): Self = this.set("onUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUpdate: Self = this.set("onUpdate", js.undefined)
+    @scala.inline
+    def setRenderThumbHorizontal(value: StatelessComponent[_]): Self = this.set("renderThumbHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderThumbHorizontal: Self = this.set("renderThumbHorizontal", js.undefined)
+    @scala.inline
+    def setRenderThumbVertical(value: StatelessComponent[_]): Self = this.set("renderThumbVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderThumbVertical: Self = this.set("renderThumbVertical", js.undefined)
+    @scala.inline
+    def setRenderTrackHorizontal(value: StatelessComponent[_]): Self = this.set("renderTrackHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderTrackHorizontal: Self = this.set("renderTrackHorizontal", js.undefined)
+    @scala.inline
+    def setRenderTrackVertical(value: StatelessComponent[_]): Self = this.set("renderTrackVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderTrackVertical: Self = this.set("renderTrackVertical", js.undefined)
+    @scala.inline
+    def setRenderView(value: StatelessComponent[_]): Self = this.set("renderView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderView: Self = this.set("renderView", js.undefined)
+    @scala.inline
+    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagName: Self = this.set("tagName", js.undefined)
+    @scala.inline
+    def setThumbMinSize(value: Double): Self = this.set("thumbMinSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbMinSize: Self = this.set("thumbMinSize", js.undefined)
+    @scala.inline
+    def setThumbSize(value: Double): Self = this.set("thumbSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbSize: Self = this.set("thumbSize", js.undefined)
+    @scala.inline
+    def setUniversal(value: Boolean): Self = this.set("universal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniversal: Self = this.set("universal", js.undefined)
+  }
+  
 }
 

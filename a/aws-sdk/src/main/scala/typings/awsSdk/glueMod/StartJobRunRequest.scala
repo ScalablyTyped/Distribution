@@ -50,29 +50,60 @@ trait StartJobRunRequest extends js.Object {
 
 object StartJobRunRequest {
   @scala.inline
-  def apply(
-    JobName: NameString,
-    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
-    Arguments: GenericMap = null,
-    JobRunId: IdString = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
-    NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    SecurityConfiguration: NameString = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
-    WorkerType: WorkerType = null
-  ): StartJobRunRequest = {
+  def apply(JobName: NameString): StartJobRunRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.get.asInstanceOf[js.Any])
-    if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
-    if (JobRunId != null) __obj.updateDynamic("JobRunId")(JobRunId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartJobRunRequest]
   }
+  @scala.inline
+  implicit class StartJobRunRequestOps[Self <: StartJobRunRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllocatedCapacity(value: IntegerValue): Self = this.set("AllocatedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedCapacity: Self = this.set("AllocatedCapacity", js.undefined)
+    @scala.inline
+    def setArguments(value: GenericMap): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    @scala.inline
+    def setJobRunId(value: IdString): Self = this.set("JobRunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobRunId: Self = this.set("JobRunId", js.undefined)
+    @scala.inline
+    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    @scala.inline
+    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    @scala.inline
+    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+  }
+  
 }
 

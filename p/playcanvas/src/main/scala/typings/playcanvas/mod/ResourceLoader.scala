@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Load resource data, potentially from remote sources. Caches resource on load to prevent
-  multiple requests. Add ResourceHandlers to handle different types of resources.
+  * multiple requests. Add ResourceHandlers to handle different types of resources.
   * @param app - The application.
   */
 @JSImport("playcanvas", "ResourceLoader")

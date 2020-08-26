@@ -21,6 +21,7 @@ object valueServiceMod extends js.Object {
     /* private */ def executeValueGetter(filterValueGetter: js.Any, data: js.Any, column: js.Any, rowNode: js.Any): js.Any = js.native
     def getKeyForNode(col: Column, rowNode: RowNode): js.Any = js.native
     def getValue(column: Column, rowNode: RowNode): js.Any = js.native
+    def getValue(column: Column, rowNode: RowNode, forFilter: js.UndefOr[scala.Nothing], ignoreAggData: Boolean): js.Any = js.native
     def getValue(column: Column, rowNode: RowNode, forFilter: Boolean): js.Any = js.native
     def getValue(column: Column, rowNode: RowNode, forFilter: Boolean, ignoreAggData: Boolean): js.Any = js.native
     /* private */ def getValueCallback(node: js.Any, field: js.Any): js.Any = js.native

@@ -4,37 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UdpOptions extends CommonOptions {
   /**
     * Where to send the stats (default localhost).
     */
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String] = js.native
   /**
     * Port to contact the statsd-daemon on (default 8125).
     */
-  var port: js.UndefOr[Double] = js.undefined
+  var port: js.UndefOr[Double] = js.native
 }
 
 object UdpOptions {
   @scala.inline
-  def apply(
-    debug: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    prefix: String = null,
-    socketTimeout: js.UndefOr[Double] = js.undefined,
-    tags: Tags = null,
-    tcp: js.UndefOr[Boolean] = js.undefined
-  ): UdpOptions = {
+  def apply(): UdpOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(tcp)) __obj.updateDynamic("tcp")(tcp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UdpOptions]
   }
+  @scala.inline
+  implicit class UdpOptionsOps[Self <: UdpOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+  }
+  
 }
 

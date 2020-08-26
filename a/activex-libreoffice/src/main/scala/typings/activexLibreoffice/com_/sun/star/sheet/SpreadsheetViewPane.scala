@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents a single pane in a view of a spreadsheet document. */
+@js.native
 trait SpreadsheetViewPane
   extends XViewPane
      with XCellRangeReferrer

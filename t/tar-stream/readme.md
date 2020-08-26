@@ -11,8 +11,8 @@ tar-stream is a streaming tar parser and generator and nothing else. It is strea
 | Full name          | tar-stream |
 | Keywords           | tar, tarball, parse, parser, generate, generator, stream, stream2, streams, streams2, streaming, pack, extract, modify |
 | # releases         | 9 |
-| # dependents       | 293 |
-| # downloads        | 146858828 |
+| # dependents       | 296 |
+| # downloads        | 150615355 |
 | # stars            | 11 |
 
 ## Links

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomLauncher
   extends /**
   * you can also pass through any additional options supported by browserstack. (EG. `url`, `resolution`, etc.)
@@ -12,55 +13,95 @@ trait CustomLauncher
   */
 /* option */ StringDictionary[js.Any] {
   /** name of the browser */
-  var browser: js.UndefOr[String | Null] = js.undefined
+  var browser: js.UndefOr[String | Null] = js.native
   /** version of the browser */
-  var browser_version: js.UndefOr[String | Null] = js.undefined
+  var browser_version: js.UndefOr[String | Null] = js.native
   /** the BS worker build name (optional, defaults to global) */
-  var build: js.UndefOr[String] = js.undefined
+  var build: js.UndefOr[String] = js.native
   /** name of the device */
-  var device: js.UndefOr[String | Null] = js.undefined
+  var device: js.UndefOr[String | Null] = js.native
   /** the BS worker name (optional, defaults to global) */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** which platform */
-  var os: js.UndefOr[String | Null] = js.undefined
+  var os: js.UndefOr[String | Null] = js.native
   /** version of the platform */
-  var os_version: js.UndefOr[String | Null] = js.undefined
+  var os_version: js.UndefOr[String | Null] = js.native
   /** the BS worker project name (optional, defaults to global) */
-  var project: js.UndefOr[String] = js.undefined
+  var project: js.UndefOr[String] = js.native
   /** allows the session to run on a real mobile device instead of an emulator / simulator */
-  var realMobile: js.UndefOr[Boolean] = js.undefined
+  var realMobile: js.UndefOr[Boolean] = js.native
   /** allows the session to run on a real mobile device instead of an emulator / simulator */
-  var real_mobile: js.UndefOr[Boolean] = js.undefined
+  var real_mobile: js.UndefOr[Boolean] = js.native
 }
 
 object CustomLauncher {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    browser: js.UndefOr[Null | String] = js.undefined,
-    browser_version: js.UndefOr[Null | String] = js.undefined,
-    build: String = null,
-    device: js.UndefOr[Null | String] = js.undefined,
-    name: String = null,
-    os: js.UndefOr[Null | String] = js.undefined,
-    os_version: js.UndefOr[Null | String] = js.undefined,
-    project: String = null,
-    realMobile: js.UndefOr[Boolean] = js.undefined,
-    real_mobile: js.UndefOr[Boolean] = js.undefined
-  ): CustomLauncher = {
+  def apply(): CustomLauncher = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(browser)) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (!js.isUndefined(browser_version)) __obj.updateDynamic("browser_version")(browser_version.asInstanceOf[js.Any])
-    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (!js.isUndefined(device)) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(os)) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (!js.isUndefined(os_version)) __obj.updateDynamic("os_version")(os_version.asInstanceOf[js.Any])
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (!js.isUndefined(realMobile)) __obj.updateDynamic("realMobile")(realMobile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(real_mobile)) __obj.updateDynamic("real_mobile")(real_mobile.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLauncher]
   }
+  @scala.inline
+  implicit class CustomLauncherOps[Self <: CustomLauncher] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser: Self = this.set("browser", js.undefined)
+    @scala.inline
+    def setBrowserNull: Self = this.set("browser", null)
+    @scala.inline
+    def setBrowser_version(value: String): Self = this.set("browser_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser_version: Self = this.set("browser_version", js.undefined)
+    @scala.inline
+    def setBrowser_versionNull: Self = this.set("browser_version", null)
+    @scala.inline
+    def setBuild(value: String): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+    @scala.inline
+    def setDevice(value: String): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setDeviceNull: Self = this.set("device", null)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs: Self = this.set("os", js.undefined)
+    @scala.inline
+    def setOsNull: Self = this.set("os", null)
+    @scala.inline
+    def setOs_version(value: String): Self = this.set("os_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs_version: Self = this.set("os_version", js.undefined)
+    @scala.inline
+    def setOs_versionNull: Self = this.set("os_version", null)
+    @scala.inline
+    def setProject(value: String): Self = this.set("project", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProject: Self = this.set("project", js.undefined)
+    @scala.inline
+    def setRealMobile(value: Boolean): Self = this.set("realMobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealMobile: Self = this.set("realMobile", js.undefined)
+    @scala.inline
+    def setReal_mobile(value: Boolean): Self = this.set("real_mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReal_mobile: Self = this.set("real_mobile", js.undefined)
+  }
+  
 }
 

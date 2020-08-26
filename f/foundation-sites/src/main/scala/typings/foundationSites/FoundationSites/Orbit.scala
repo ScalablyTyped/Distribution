@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Orbit extends js.Object {
   def changeSlide(isLTR: Boolean): Unit = js.native
+  def changeSlide(isLTR: Boolean, chosenSlide: js.UndefOr[scala.Nothing], idx: Double): Unit = js.native
   def changeSlide(isLTR: Boolean, chosenSlide: JQuery): Unit = js.native
   def changeSlide(isLTR: Boolean, chosenSlide: JQuery, idx: Double): Unit = js.native
   def destroy(): Unit = js.native

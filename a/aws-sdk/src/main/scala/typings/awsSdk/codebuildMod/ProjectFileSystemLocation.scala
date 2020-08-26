@@ -30,20 +30,42 @@ trait ProjectFileSystemLocation extends js.Object {
 
 object ProjectFileSystemLocation {
   @scala.inline
-  def apply(
-    identifier: String = null,
-    location: String = null,
-    mountOptions: String = null,
-    mountPoint: String = null,
-    `type`: FileSystemType = null
-  ): ProjectFileSystemLocation = {
+  def apply(): ProjectFileSystemLocation = {
     val __obj = js.Dynamic.literal()
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (mountOptions != null) __obj.updateDynamic("mountOptions")(mountOptions.asInstanceOf[js.Any])
-    if (mountPoint != null) __obj.updateDynamic("mountPoint")(mountPoint.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectFileSystemLocation]
   }
+  @scala.inline
+  implicit class ProjectFileSystemLocationOps[Self <: ProjectFileSystemLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentifier(value: String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMountOptions(value: String): Self = this.set("mountOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountOptions: Self = this.set("mountOptions", js.undefined)
+    @scala.inline
+    def setMountPoint(value: String): Self = this.set("mountPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountPoint: Self = this.set("mountPoint", js.undefined)
+    @scala.inline
+    def setType(value: FileSystemType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

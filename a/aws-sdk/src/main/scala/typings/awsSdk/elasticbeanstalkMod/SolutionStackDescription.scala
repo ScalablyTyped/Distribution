@@ -18,11 +18,32 @@ trait SolutionStackDescription extends js.Object {
 
 object SolutionStackDescription {
   @scala.inline
-  def apply(PermittedFileTypes: SolutionStackFileTypeList = null, SolutionStackName: SolutionStackName = null): SolutionStackDescription = {
+  def apply(): SolutionStackDescription = {
     val __obj = js.Dynamic.literal()
-    if (PermittedFileTypes != null) __obj.updateDynamic("PermittedFileTypes")(PermittedFileTypes.asInstanceOf[js.Any])
-    if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SolutionStackDescription]
   }
+  @scala.inline
+  implicit class SolutionStackDescriptionOps[Self <: SolutionStackDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPermittedFileTypesVarargs(value: FileTypeExtension*): Self = this.set("PermittedFileTypes", js.Array(value :_*))
+    @scala.inline
+    def setPermittedFileTypes(value: SolutionStackFileTypeList): Self = this.set("PermittedFileTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermittedFileTypes: Self = this.set("PermittedFileTypes", js.undefined)
+    @scala.inline
+    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+  }
+  
 }
 

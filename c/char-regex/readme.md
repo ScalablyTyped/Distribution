@@ -10,9 +10,9 @@ A regex to match any full character, considering weird character ranges.
 | ------------------ | :-------------: |
 | Full name          | char-regex |
 | Keywords           | character, regex, match, split, length |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 77 |
+| # releases         | 5 |
+| # dependents       | 6 |
+| # downloads        | 9446979 |
 | # stars            | 0 |
 
 ## Links

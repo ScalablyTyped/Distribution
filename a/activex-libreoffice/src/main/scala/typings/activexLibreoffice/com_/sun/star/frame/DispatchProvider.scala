@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * @see XDispatch
   * @see XControlNotificationListener
   */
+@js.native
 trait DispatchProvider
   extends XDispatchProvider
      with XDispatchProviderInterception

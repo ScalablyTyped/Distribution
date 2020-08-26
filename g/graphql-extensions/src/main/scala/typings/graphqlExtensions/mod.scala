@@ -9,7 +9,6 @@ import typings.graphqlExtensions.anon.Context
 import typings.graphqlExtensions.anon.ExecutionArgs
 import typings.graphqlExtensions.anon.Extensions
 import typings.graphqlExtensions.anon.GraphQLSchemaextensionsEn
-import typings.graphqlExtensions.anon.GraphQLSchemaextensionsEnAstNode
 import typings.graphqlExtensions.anon.GraphqlResponse
 import typings.graphqlExtensions.anon.QueryString
 import typings.std.Error
@@ -58,7 +57,7 @@ object mod extends js.Object {
     def willSendResponse(o: GraphqlResponse[TContext]): GraphqlResponse[TContext] = js.native
   }
   
-  def enableGraphQLExtensions(schema: GraphQLSchemaextensionsEn): GraphQLSchemaextensionsEnAstNode = js.native
+  def enableGraphQLExtensions(schema: GraphQLSchemaextensionsEn): GraphQLSchemaextensionsEn = js.native
   type EndHandler = js.Function1[/* repeated */ Error, Unit]
   type FieldIteratorFn = js.Function3[
     /* fieldDef */ GraphQLField[js.Any, js.Any, StringDictionary[js.Any]], 

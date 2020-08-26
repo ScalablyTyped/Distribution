@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SubscribedWorkteam extends js.Object {
   /**
-    * 
+    * Marketplace product listing ID.
     */
   var ListingId: js.UndefOr[String] = js.native
   /**
@@ -30,19 +30,40 @@ trait SubscribedWorkteam extends js.Object {
 
 object SubscribedWorkteam {
   @scala.inline
-  def apply(
-    WorkteamArn: WorkteamArn,
-    ListingId: String = null,
-    MarketplaceDescription: String200 = null,
-    MarketplaceTitle: String200 = null,
-    SellerName: String = null
-  ): SubscribedWorkteam = {
+  def apply(WorkteamArn: WorkteamArn): SubscribedWorkteam = {
     val __obj = js.Dynamic.literal(WorkteamArn = WorkteamArn.asInstanceOf[js.Any])
-    if (ListingId != null) __obj.updateDynamic("ListingId")(ListingId.asInstanceOf[js.Any])
-    if (MarketplaceDescription != null) __obj.updateDynamic("MarketplaceDescription")(MarketplaceDescription.asInstanceOf[js.Any])
-    if (MarketplaceTitle != null) __obj.updateDynamic("MarketplaceTitle")(MarketplaceTitle.asInstanceOf[js.Any])
-    if (SellerName != null) __obj.updateDynamic("SellerName")(SellerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribedWorkteam]
   }
+  @scala.inline
+  implicit class SubscribedWorkteamOps[Self <: SubscribedWorkteam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkteamArn(value: WorkteamArn): Self = this.set("WorkteamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setListingId(value: String): Self = this.set("ListingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListingId: Self = this.set("ListingId", js.undefined)
+    @scala.inline
+    def setMarketplaceDescription(value: String200): Self = this.set("MarketplaceDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplaceDescription: Self = this.set("MarketplaceDescription", js.undefined)
+    @scala.inline
+    def setMarketplaceTitle(value: String200): Self = this.set("MarketplaceTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplaceTitle: Self = this.set("MarketplaceTitle", js.undefined)
+    @scala.inline
+    def setSellerName(value: String): Self = this.set("SellerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellerName: Self = this.set("SellerName", js.undefined)
+  }
+  
 }
 

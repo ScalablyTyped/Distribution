@@ -34,21 +34,44 @@ trait DescribeDocumentVersionsRequest extends js.Object {
 
 object DescribeDocumentVersionsRequest {
   @scala.inline
-  def apply(
-    DocumentId: ResourceIdType,
-    AuthenticationToken: AuthenticationHeaderType = null,
-    Fields: FieldNamesType = null,
-    Include: FieldNamesType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
-    Marker: PageMarkerType = null
-  ): DescribeDocumentVersionsRequest = {
+  def apply(DocumentId: ResourceIdType): DescribeDocumentVersionsRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (Fields != null) __obj.updateDynamic("Fields")(Fields.asInstanceOf[js.Any])
-    if (Include != null) __obj.updateDynamic("Include")(Include.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentVersionsRequest]
   }
+  @scala.inline
+  implicit class DescribeDocumentVersionsRequestOps[Self <: DescribeDocumentVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentId(value: ResourceIdType): Self = this.set("DocumentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    @scala.inline
+    def setFields(value: FieldNamesType): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("Fields", js.undefined)
+    @scala.inline
+    def setInclude(value: FieldNamesType): Self = this.set("Include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("Include", js.undefined)
+    @scala.inline
+    def setLimit(value: LimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

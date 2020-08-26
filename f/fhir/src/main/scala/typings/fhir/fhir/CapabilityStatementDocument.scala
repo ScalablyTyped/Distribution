@@ -7,55 +7,64 @@ import scala.scalajs.js.annotation._
 /**
   * Document definition
   */
+@js.native
 trait CapabilityStatementDocument extends BackboneElement {
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.undefined
+  var _documentation: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.undefined
+  var _mode: js.UndefOr[Element] = js.native
   /**
     * Description of document support
     */
-  var documentation: js.UndefOr[String] = js.undefined
+  var documentation: js.UndefOr[String] = js.native
   /**
     * producer | consumer
     */
-  var mode: code
+  var mode: code = js.native
   /**
     * Constraint on a resource used in the document
     */
-  var profile: Reference
+  var profile: Reference = js.native
 }
 
 object CapabilityStatementDocument {
   @scala.inline
-  def apply(
-    mode: code,
-    profile: Reference,
-    _documentation: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _mode: Element = null,
-    documentation: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): CapabilityStatementDocument = {
+  def apply(mode: code, profile: Reference): CapabilityStatementDocument = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any])
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_mode != null) __obj.updateDynamic("_mode")(_mode.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementDocument]
   }
+  @scala.inline
+  implicit class CapabilityStatementDocumentOps[Self <: CapabilityStatementDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: code): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfile(value: Reference): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    @scala.inline
+    def set_mode(value: Element): Self = this.set("_mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_mode: Self = this.set("_mode", js.undefined)
+    @scala.inline
+    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+  }
+  
 }
 

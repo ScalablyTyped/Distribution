@@ -10,6 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object updateColumnsOnResize extends js.Object {
   def apply(node: Node[_], colgroup: Element, table: Element, cellMinWidth: Double): Unit = js.native
+  def apply(
+    node: Node[_],
+    colgroup: Element,
+    table: Element,
+    cellMinWidth: Double,
+    overrideCol: js.UndefOr[scala.Nothing],
+    overrideValue: Double
+  ): Unit = js.native
   def apply(node: Node[_], colgroup: Element, table: Element, cellMinWidth: Double, overrideCol: Double): Unit = js.native
   def apply(
     node: Node[_],

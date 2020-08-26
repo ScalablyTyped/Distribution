@@ -27,17 +27,10 @@ object deleteBucketPolicyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteBucketPolicyInput) = this()
-    /* CompleteClass */
-    override val input: DeleteBucketPolicyInput = js.native
     val middlewareStack: MiddlewareStack[DeleteBucketPolicyInput, DeleteBucketPolicyOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[DeleteBucketPolicyInput, DeleteBucketPolicyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[DeleteBucketPolicyInput, DeleteBucketPolicyOutput] = js.native
   }

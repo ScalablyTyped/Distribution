@@ -25,7 +25,30 @@ trait Service_ extends IConfigurable {
     * @returns - Response Promise
     */
   def fetchLayer(layerName: String): js.Promise[_] = js.native
+  def fetchLayer(
+    layerName: String,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def fetchLayer(
+    layerName: String,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def fetchLayer(
+    layerName: String,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def fetchLayer(layerName: String, params: js.Any): js.Promise[_] = js.native
+  def fetchLayer(
+    layerName: String,
+    params: js.Any,
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def fetchLayer(layerName: String, params: js.Any, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   def fetchLayer(
     layerName: String,
@@ -44,7 +67,42 @@ trait Service_ extends IConfigurable {
     * @returns - Typed array with tile data
     */
   def fetchLayerTile(layerName: String, x: X, y: Y, z: Zoom): js.Promise[Uint8Array] = js.native
+  def fetchLayerTile(
+    layerName: String,
+    x: X,
+    y: Y,
+    z: Zoom,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[Uint8Array] = js.native
+  def fetchLayerTile(
+    layerName: String,
+    x: X,
+    y: Y,
+    z: Zoom,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit]
+  ): js.Promise[Uint8Array] = js.native
+  def fetchLayerTile(
+    layerName: String,
+    x: X,
+    y: Y,
+    z: Zoom,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[Uint8Array] = js.native
   def fetchLayerTile(layerName: String, x: X, y: Y, z: Zoom, params: js.Any): js.Promise[Uint8Array] = js.native
+  def fetchLayerTile(
+    layerName: String,
+    x: X,
+    y: Y,
+    z: Zoom,
+    params: js.Any,
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[Uint8Array] = js.native
   def fetchLayerTile(
     layerName: String,
     x: X,
@@ -73,7 +131,30 @@ trait Service_ extends IConfigurable {
     * @returns - Response Promise
     */
   def fetchQueryData(queryId: String): js.Promise[_] = js.native
+  def fetchQueryData(
+    queryId: String,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def fetchQueryData(
+    queryId: String,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def fetchQueryData(
+    queryId: String,
+    params: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def fetchQueryData(queryId: String, params: js.Any): js.Promise[_] = js.native
+  def fetchQueryData(
+    queryId: String,
+    params: js.Any,
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def fetchQueryData(queryId: String, params: js.Any, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   def fetchQueryData(
     queryId: String,
@@ -91,6 +172,12 @@ trait Service_ extends IConfigurable {
     * @returns - Response Promise
     */
   def fetchQueryStats(queryId: String, statsQuery: js.Any): js.Promise[_] = js.native
+  def fetchQueryStats(
+    queryId: String,
+    statsQuery: js.Any,
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def fetchQueryStats(queryId: String, statsQuery: js.Any, onResult: js.Function1[/* result */ js.Any, Unit]): js.Promise[_] = js.native
   def fetchQueryStats(
     queryId: String,
@@ -112,8 +199,86 @@ trait Service_ extends IConfigurable {
     * @returns - Response Promise
     */
   def request(method: String, endpoint: String): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.UndefOr[scala.Nothing],
+    body: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(method: String, endpoint: String, params: js.UndefOr[scala.Nothing], body: js.Any): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.UndefOr[scala.Nothing],
+    body: js.Any,
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.UndefOr[scala.Nothing],
+    body: js.Any,
+    onResult: js.Function1[/* result */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.UndefOr[scala.Nothing],
+    body: js.Any,
+    onResult: js.Function1[/* result */ js.Any, Unit],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def request(method: String, endpoint: String, params: js.Any): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.Any,
+    body: js.UndefOr[scala.Nothing],
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.Any,
+    body: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit]
+  ): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.Any,
+    body: js.UndefOr[scala.Nothing],
+    onResult: js.Function1[/* result */ js.Any, Unit],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def request(method: String, endpoint: String, params: js.Any, body: js.Any): js.Promise[_] = js.native
+  def request(
+    method: String,
+    endpoint: String,
+    params: js.Any,
+    body: js.Any,
+    onResult: js.UndefOr[scala.Nothing],
+    onError: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[_] = js.native
   def request(
     method: String,
     endpoint: String,

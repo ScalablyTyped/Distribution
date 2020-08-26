@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A command to lock a floating object's anchor.
   */
+@js.native
 trait ChangeFloatingObjectLockAnchorCommand extends ChangeFloatingObjectPropertyCommandBase[Boolean]
 
 object ChangeFloatingObjectLockAnchorCommand {

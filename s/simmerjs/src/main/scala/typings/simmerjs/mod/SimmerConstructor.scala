@@ -28,8 +28,13 @@ trait SimmerConstructor
   */
 Instantiable0[Simmer]
      with Instantiable1[/* scope */ Scope, Simmer]
-     with Instantiable2[/* scope */ Scope, /* options */ Options, Simmer]
-     with Instantiable3[/* scope */ Scope, /* options */ Options, /* query */ QueryEngine, Simmer] {
+     with Instantiable2[js.UndefOr[/* scope */ Scope], /* options */ Options, Simmer]
+     with Instantiable3[
+      js.UndefOr[/* scope */ Scope], 
+      js.UndefOr[/* options */ Options], 
+      /* query */ QueryEngine, 
+      Simmer
+    ] {
   /**
     * @param scope The context in which Simmer should query for elements.
     * Generally speaking this would be the window, which is the default value,
@@ -47,7 +52,11 @@ Instantiable0[Simmer]
     * can do so by passing the third argument to the Simmer constructor.
     */
   def apply(): Simmer = js.native
+  def apply(scope: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], query: QueryEngine): Simmer = js.native
+  def apply(scope: js.UndefOr[scala.Nothing], options: Options): Simmer = js.native
+  def apply(scope: js.UndefOr[scala.Nothing], options: Options, query: QueryEngine): Simmer = js.native
   def apply(scope: Scope): Simmer = js.native
+  def apply(scope: Scope, options: js.UndefOr[scala.Nothing], query: QueryEngine): Simmer = js.native
   def apply(scope: Scope, options: Options): Simmer = js.native
   def apply(scope: Scope, options: Options, query: QueryEngine): Simmer = js.native
 }

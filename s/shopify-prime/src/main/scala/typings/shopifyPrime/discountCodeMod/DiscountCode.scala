@@ -8,37 +8,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DiscountCode extends ShopifyObject {
   /**
     *  The amount of the discount.
     */
-  var amount: js.UndefOr[String] = js.undefined
+  var amount: js.UndefOr[String] = js.native
   /**
     *  The discount code.
     */
-  var code: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String] = js.native
   /**
     *  The type of discount. Known values are 'percentage', 'shipping', 'fixed_amount' and 'none'.
     */
-  var `type`: js.UndefOr[percentage | shipping | fixed_amount | String] = js.undefined
+  var `type`: js.UndefOr[percentage | shipping | fixed_amount | String] = js.native
 }
 
 object DiscountCode {
   @scala.inline
-  def apply(
-    admin_graphql_api_id: String = null,
-    amount: String = null,
-    code: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    `type`: percentage | shipping | fixed_amount | String = null
-  ): DiscountCode = {
+  def apply(): DiscountCode = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscountCode]
   }
+  @scala.inline
+  implicit class DiscountCodeOps[Self <: DiscountCode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: String): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setType(value: percentage | shipping | fixed_amount | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

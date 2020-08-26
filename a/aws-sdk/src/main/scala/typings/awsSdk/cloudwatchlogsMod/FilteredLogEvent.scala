@@ -30,20 +30,42 @@ trait FilteredLogEvent extends js.Object {
 
 object FilteredLogEvent {
   @scala.inline
-  def apply(
-    eventId: EventId = null,
-    ingestionTime: js.UndefOr[Timestamp] = js.undefined,
-    logStreamName: LogStreamName = null,
-    message: EventMessage = null,
-    timestamp: js.UndefOr[Timestamp] = js.undefined
-  ): FilteredLogEvent = {
+  def apply(): FilteredLogEvent = {
     val __obj = js.Dynamic.literal()
-    if (eventId != null) __obj.updateDynamic("eventId")(eventId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ingestionTime)) __obj.updateDynamic("ingestionTime")(ingestionTime.get.asInstanceOf[js.Any])
-    if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilteredLogEvent]
   }
+  @scala.inline
+  implicit class FilteredLogEventOps[Self <: FilteredLogEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventId(value: EventId): Self = this.set("eventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("eventId", js.undefined)
+    @scala.inline
+    def setIngestionTime(value: Timestamp): Self = this.set("ingestionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionTime: Self = this.set("ingestionTime", js.undefined)
+    @scala.inline
+    def setLogStreamName(value: LogStreamName): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamName: Self = this.set("logStreamName", js.undefined)
+    @scala.inline
+    def setMessage(value: EventMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

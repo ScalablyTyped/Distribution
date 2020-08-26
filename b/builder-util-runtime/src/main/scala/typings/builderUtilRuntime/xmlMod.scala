@@ -18,6 +18,7 @@ object xmlMod extends js.Object {
     var value: String = js.native
     def attribute(name: String): String = js.native
     def element(name: String): XElement = js.native
+    def element(name: String, ignoreCase: js.UndefOr[scala.Nothing], errorIfMissed: String): XElement = js.native
     def element(name: String, ignoreCase: Boolean): XElement = js.native
     def element(name: String, ignoreCase: Boolean, errorIfMissed: String): XElement = js.native
     def elementOrNull(name: String): XElement | Null = js.native

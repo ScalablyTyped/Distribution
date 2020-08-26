@@ -31,18 +31,40 @@ trait SchemaTrainingRun extends js.Object {
 
 object SchemaTrainingRun {
   @scala.inline
-  def apply(
-    evaluationMetrics: SchemaEvaluationMetrics = null,
-    results: js.Array[SchemaIterationResult] = null,
-    startTime: String = null,
-    trainingOptions: SchemaTrainingOptions = null
-  ): SchemaTrainingRun = {
+  def apply(): SchemaTrainingRun = {
     val __obj = js.Dynamic.literal()
-    if (evaluationMetrics != null) __obj.updateDynamic("evaluationMetrics")(evaluationMetrics.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (trainingOptions != null) __obj.updateDynamic("trainingOptions")(trainingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrainingRun]
   }
+  @scala.inline
+  implicit class SchemaTrainingRunOps[Self <: SchemaTrainingRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvaluationMetrics(value: SchemaEvaluationMetrics): Self = this.set("evaluationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMetrics: Self = this.set("evaluationMetrics", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaIterationResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaIterationResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTrainingOptions(value: SchemaTrainingOptions): Self = this.set("trainingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingOptions: Self = this.set("trainingOptions", js.undefined)
+  }
+  
 }
 

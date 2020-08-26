@@ -10,59 +10,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VoronoiProps extends js.Object {
-  var cellLineColor: js.UndefOr[String] = js.undefined
-  var cellLineWidth: js.UndefOr[Double] = js.undefined
-  var data: js.Array[VoronoiDatum]
-  var enableCells: js.UndefOr[Boolean] = js.undefined
-  var enableLinks: js.UndefOr[Boolean] = js.undefined
-  var enablePoints: js.UndefOr[Boolean] = js.undefined
-  var layers: js.UndefOr[js.Array[links | cells | points | bounds | VoronoiCustomLayer]] = js.undefined
-  var linkLineColor: js.UndefOr[String] = js.undefined
-  var linkLineWidth: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[Box] = js.undefined
-  var pointColor: js.UndefOr[String] = js.undefined
-  var pointSize: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[Theme] = js.undefined
-  var xDomain: js.UndefOr[VoronoiDomain] = js.undefined
-  var yDomain: js.UndefOr[VoronoiDomain] = js.undefined
+  var cellLineColor: js.UndefOr[String] = js.native
+  var cellLineWidth: js.UndefOr[Double] = js.native
+  var data: js.Array[VoronoiDatum] = js.native
+  var enableCells: js.UndefOr[Boolean] = js.native
+  var enableLinks: js.UndefOr[Boolean] = js.native
+  var enablePoints: js.UndefOr[Boolean] = js.native
+  var layers: js.UndefOr[js.Array[links | cells | points | bounds | VoronoiCustomLayer]] = js.native
+  var linkLineColor: js.UndefOr[String] = js.native
+  var linkLineWidth: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Box] = js.native
+  var pointColor: js.UndefOr[String] = js.native
+  var pointSize: js.UndefOr[Double] = js.native
+  var theme: js.UndefOr[Theme] = js.native
+  var xDomain: js.UndefOr[VoronoiDomain] = js.native
+  var yDomain: js.UndefOr[VoronoiDomain] = js.native
 }
 
 object VoronoiProps {
   @scala.inline
-  def apply(
-    data: js.Array[VoronoiDatum],
-    cellLineColor: String = null,
-    cellLineWidth: js.UndefOr[Double] = js.undefined,
-    enableCells: js.UndefOr[Boolean] = js.undefined,
-    enableLinks: js.UndefOr[Boolean] = js.undefined,
-    enablePoints: js.UndefOr[Boolean] = js.undefined,
-    layers: js.Array[links | cells | points | bounds | VoronoiCustomLayer] = null,
-    linkLineColor: String = null,
-    linkLineWidth: js.UndefOr[Double] = js.undefined,
-    margin: Box = null,
-    pointColor: String = null,
-    pointSize: js.UndefOr[Double] = js.undefined,
-    theme: Theme = null,
-    xDomain: VoronoiDomain = null,
-    yDomain: VoronoiDomain = null
-  ): VoronoiProps = {
+  def apply(data: js.Array[VoronoiDatum]): VoronoiProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (cellLineColor != null) __obj.updateDynamic("cellLineColor")(cellLineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellLineWidth)) __obj.updateDynamic("cellLineWidth")(cellLineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCells)) __obj.updateDynamic("enableCells")(enableCells.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints.get.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (linkLineColor != null) __obj.updateDynamic("linkLineColor")(linkLineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkLineWidth)) __obj.updateDynamic("linkLineWidth")(linkLineWidth.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (xDomain != null) __obj.updateDynamic("xDomain")(xDomain.asInstanceOf[js.Any])
-    if (yDomain != null) __obj.updateDynamic("yDomain")(yDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoronoiProps]
   }
+  @scala.inline
+  implicit class VoronoiPropsOps[Self <: VoronoiProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: VoronoiDatum*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[VoronoiDatum]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellLineColor(value: String): Self = this.set("cellLineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellLineColor: Self = this.set("cellLineColor", js.undefined)
+    @scala.inline
+    def setCellLineWidth(value: Double): Self = this.set("cellLineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellLineWidth: Self = this.set("cellLineWidth", js.undefined)
+    @scala.inline
+    def setEnableCells(value: Boolean): Self = this.set("enableCells", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCells: Self = this.set("enableCells", js.undefined)
+    @scala.inline
+    def setEnableLinks(value: Boolean): Self = this.set("enableLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLinks: Self = this.set("enableLinks", js.undefined)
+    @scala.inline
+    def setEnablePoints(value: Boolean): Self = this.set("enablePoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePoints: Self = this.set("enablePoints", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: (links | cells | points | bounds | VoronoiCustomLayer)*): Self = this.set("layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: js.Array[links | cells | points | bounds | VoronoiCustomLayer]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("layers", js.undefined)
+    @scala.inline
+    def setLinkLineColor(value: String): Self = this.set("linkLineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkLineColor: Self = this.set("linkLineColor", js.undefined)
+    @scala.inline
+    def setLinkLineWidth(value: Double): Self = this.set("linkLineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkLineWidth: Self = this.set("linkLineWidth", js.undefined)
+    @scala.inline
+    def setMargin(value: Box): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setPointColor(value: String): Self = this.set("pointColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointColor: Self = this.set("pointColor", js.undefined)
+    @scala.inline
+    def setPointSize(value: Double): Self = this.set("pointSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointSize: Self = this.set("pointSize", js.undefined)
+    @scala.inline
+    def setTheme(value: Theme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setXDomain(value: VoronoiDomain): Self = this.set("xDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXDomain: Self = this.set("xDomain", js.undefined)
+    @scala.inline
+    def setYDomain(value: VoronoiDomain): Self = this.set("yDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYDomain: Self = this.set("yDomain", js.undefined)
+  }
+  
 }
 

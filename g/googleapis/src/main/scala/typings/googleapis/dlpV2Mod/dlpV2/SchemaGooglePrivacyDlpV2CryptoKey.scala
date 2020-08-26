@@ -19,16 +19,34 @@ trait SchemaGooglePrivacyDlpV2CryptoKey extends js.Object {
 
 object SchemaGooglePrivacyDlpV2CryptoKey {
   @scala.inline
-  def apply(
-    kmsWrapped: SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey = null,
-    transient: SchemaGooglePrivacyDlpV2TransientCryptoKey = null,
-    unwrapped: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey = null
-  ): SchemaGooglePrivacyDlpV2CryptoKey = {
+  def apply(): SchemaGooglePrivacyDlpV2CryptoKey = {
     val __obj = js.Dynamic.literal()
-    if (kmsWrapped != null) __obj.updateDynamic("kmsWrapped")(kmsWrapped.asInstanceOf[js.Any])
-    if (transient != null) __obj.updateDynamic("transient")(transient.asInstanceOf[js.Any])
-    if (unwrapped != null) __obj.updateDynamic("unwrapped")(unwrapped.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CryptoKey]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2CryptoKeyOps[Self <: SchemaGooglePrivacyDlpV2CryptoKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKmsWrapped(value: SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey): Self = this.set("kmsWrapped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsWrapped: Self = this.set("kmsWrapped", js.undefined)
+    @scala.inline
+    def setTransient(value: SchemaGooglePrivacyDlpV2TransientCryptoKey): Self = this.set("transient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransient: Self = this.set("transient", js.undefined)
+    @scala.inline
+    def setUnwrapped(value: SchemaGooglePrivacyDlpV2UnwrappedCryptoKey): Self = this.set("unwrapped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnwrapped: Self = this.set("unwrapped", js.undefined)
+  }
+  
 }
 

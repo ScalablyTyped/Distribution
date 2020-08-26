@@ -11,8 +11,6 @@ import scala.scalajs.js.annotation._
 class default protected () extends Fetcher {
   def this(store: typings.rdflib.storeMod.default) = this()
   def this(store: typings.rdflib.storeMod.default, options: Options) = this()
-  /* CompleteClass */
-  override var fireCallbacks: js.Function = js.native
 }
 
 /* static members */

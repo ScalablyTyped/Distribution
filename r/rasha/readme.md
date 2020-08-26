@@ -12,7 +12,7 @@ Typings are for version 1.2
 | Keywords           | zero-dependency, PEM-to-JWK, JWK-to-PEM, RSA, 2048, 4096, asn1, x509, JWK-to-SSH, PEM-to-SSH |
 | # releases         | 21 |
 | # dependents       | 3 |
-| # downloads        | 725958 |
+| # downloads        | 786596 |
 | # stars            | 0 |
 
 ## Links

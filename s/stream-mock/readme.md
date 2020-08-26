@@ -11,8 +11,8 @@ Node stream mock module
 | Full name          | stream-mock |
 | Keywords           | stream, mock, test, writable, readable |
 | # releases         | 13 |
-| # dependents       | 4 |
-| # downloads        | 415858 |
+| # dependents       | 5 |
+| # downloads        | 435185 |
 | # stars            | 0 |
 
 ## Links

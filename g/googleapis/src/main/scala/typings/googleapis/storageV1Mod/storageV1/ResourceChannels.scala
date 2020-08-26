@@ -78,6 +78,7 @@ class ResourceChannels protected () extends js.Object {
     */
   def stop(): GaxiosPromise[Unit] = js.native
   def stop(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceChannelsStop): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceChannelsStop, callback: BodyResponseCallback[Unit]): Unit = js.native
   def stop(

@@ -46,24 +46,54 @@ trait SchemaSku extends js.Object {
 
 object SchemaSku {
   @scala.inline
-  def apply(
-    category: SchemaCategory = null,
-    description: String = null,
-    name: String = null,
-    pricingInfo: js.Array[SchemaPricingInfo] = null,
-    serviceProviderName: String = null,
-    serviceRegions: js.Array[String] = null,
-    skuId: String = null
-  ): SchemaSku = {
+  def apply(): SchemaSku = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pricingInfo != null) __obj.updateDynamic("pricingInfo")(pricingInfo.asInstanceOf[js.Any])
-    if (serviceProviderName != null) __obj.updateDynamic("serviceProviderName")(serviceProviderName.asInstanceOf[js.Any])
-    if (serviceRegions != null) __obj.updateDynamic("serviceRegions")(serviceRegions.asInstanceOf[js.Any])
-    if (skuId != null) __obj.updateDynamic("skuId")(skuId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSku]
   }
+  @scala.inline
+  implicit class SchemaSkuOps[Self <: SchemaSku] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: SchemaCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPricingInfoVarargs(value: SchemaPricingInfo*): Self = this.set("pricingInfo", js.Array(value :_*))
+    @scala.inline
+    def setPricingInfo(value: js.Array[SchemaPricingInfo]): Self = this.set("pricingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingInfo: Self = this.set("pricingInfo", js.undefined)
+    @scala.inline
+    def setServiceProviderName(value: String): Self = this.set("serviceProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceProviderName: Self = this.set("serviceProviderName", js.undefined)
+    @scala.inline
+    def setServiceRegionsVarargs(value: String*): Self = this.set("serviceRegions", js.Array(value :_*))
+    @scala.inline
+    def setServiceRegions(value: js.Array[String]): Self = this.set("serviceRegions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRegions: Self = this.set("serviceRegions", js.undefined)
+    @scala.inline
+    def setSkuId(value: String): Self = this.set("skuId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkuId: Self = this.set("skuId", js.undefined)
+  }
+  
 }
 

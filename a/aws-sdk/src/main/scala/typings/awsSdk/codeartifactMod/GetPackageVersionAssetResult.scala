@@ -26,18 +26,38 @@ trait GetPackageVersionAssetResult extends js.Object {
 
 object GetPackageVersionAssetResult {
   @scala.inline
-  def apply(
-    asset: Asset = null,
-    assetName: AssetName = null,
-    packageVersion: PackageVersion = null,
-    packageVersionRevision: PackageVersionRevision = null
-  ): GetPackageVersionAssetResult = {
+  def apply(): GetPackageVersionAssetResult = {
     val __obj = js.Dynamic.literal()
-    if (asset != null) __obj.updateDynamic("asset")(asset.asInstanceOf[js.Any])
-    if (assetName != null) __obj.updateDynamic("assetName")(assetName.asInstanceOf[js.Any])
-    if (packageVersion != null) __obj.updateDynamic("packageVersion")(packageVersion.asInstanceOf[js.Any])
-    if (packageVersionRevision != null) __obj.updateDynamic("packageVersionRevision")(packageVersionRevision.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPackageVersionAssetResult]
   }
+  @scala.inline
+  implicit class GetPackageVersionAssetResultOps[Self <: GetPackageVersionAssetResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsset(value: Asset): Self = this.set("asset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsset: Self = this.set("asset", js.undefined)
+    @scala.inline
+    def setAssetName(value: AssetName): Self = this.set("assetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetName: Self = this.set("assetName", js.undefined)
+    @scala.inline
+    def setPackageVersion(value: PackageVersion): Self = this.set("packageVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageVersion: Self = this.set("packageVersion", js.undefined)
+    @scala.inline
+    def setPackageVersionRevision(value: PackageVersionRevision): Self = this.set("packageVersionRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageVersionRevision: Self = this.set("packageVersionRevision", js.undefined)
+  }
+  
 }
 

@@ -6,73 +6,110 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KarmaCoverageReporter
   extends /* moreSettings */ StringDictionary[js.Any] {
   /** This will be used to configure minimum threshold enforcement for coverage results */
-  var check: js.UndefOr[js.Any] = js.undefined
+  var check: js.UndefOr[js.Any] = js.native
   /** This will be used to output coverage reports. When you set a relative path, the directory is resolved against the basePath. */
-  var dir: js.UndefOr[String] = js.undefined
+  var dir: js.UndefOr[String] = js.native
   /** If you use one of these reporters, `cobertura`, `lcovonly`, `teamcity`, `text` or `text-summary`, you may set the file option to specify the output file */
-  var file: js.UndefOr[String] = js.undefined
+  var file: js.UndefOr[String] = js.native
   /**
     * You can opt to include all sources files, as indicated by the coverage preprocessor,
     * in your code coverage data, even if there are no tests covering them
     */
-  var includeAllSources: js.UndefOr[Boolean] = js.undefined
+  var includeAllSources: js.UndefOr[Boolean] = js.native
   /**
     * Karma-coverage can infers the instrumenter regarding of the file extension.
     * It is possible to override this behavior and point out an instrumenter
     * for the files matching a specific pattern.
     */
-  var instrumenter: js.UndefOr[js.Any] = js.undefined
+  var instrumenter: js.UndefOr[js.Any] = js.native
   /** You can use multiple reporters, by providing array of options */
-  var reporters: js.UndefOr[js.Array[Reporter]] = js.undefined
+  var reporters: js.UndefOr[js.Array[Reporter]] = js.native
   /** You can opt to specify a source store allowing for external coverage collectors access to the instrumented code. */
-  var sourceStore: js.UndefOr[Store] = js.undefined
+  var sourceStore: js.UndefOr[Store] = js.native
   /** This will be used in complement of the coverageReporter.dir option to generate the full output directory path */
-  var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.undefined
+  var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.native
   /** Specify a reporter type */
-  var `type`: js.UndefOr[ReporterType] = js.undefined
+  var `type`: js.UndefOr[ReporterType] = js.native
   /**
     * If set to true, then CoffeeScript files instrumented with Ibrik will use
     * the .js extension for the transpiled source (without this option,
     * the JavaScript files will keep the original .coffee extension)
     */
-  var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.undefined
+  var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.native
   /** This will be used to set the coverage threshold colors */
-  var watermarks: js.UndefOr[js.Any] = js.undefined
+  var watermarks: js.UndefOr[js.Any] = js.native
 }
 
 object KarmaCoverageReporter {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    check: js.Any = null,
-    dir: String = null,
-    file: String = null,
-    includeAllSources: js.UndefOr[Boolean] = js.undefined,
-    instrumenter: js.Any = null,
-    reporters: js.Array[Reporter] = null,
-    sourceStore: Store = null,
-    subdir: String | (js.Function1[/* browser */ String, String]) = null,
-    `type`: ReporterType = null,
-    useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.undefined,
-    watermarks: js.Any = null
-  ): KarmaCoverageReporter = {
+  def apply(): KarmaCoverageReporter = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAllSources)) __obj.updateDynamic("includeAllSources")(includeAllSources.get.asInstanceOf[js.Any])
-    if (instrumenter != null) __obj.updateDynamic("instrumenter")(instrumenter.asInstanceOf[js.Any])
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
-    if (sourceStore != null) __obj.updateDynamic("sourceStore")(sourceStore.asInstanceOf[js.Any])
-    if (subdir != null) __obj.updateDynamic("subdir")(subdir.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJSExtensionForCoffeeScript)) __obj.updateDynamic("useJSExtensionForCoffeeScript")(useJSExtensionForCoffeeScript.get.asInstanceOf[js.Any])
-    if (watermarks != null) __obj.updateDynamic("watermarks")(watermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[KarmaCoverageReporter]
   }
+  @scala.inline
+  implicit class KarmaCoverageReporterOps[Self <: KarmaCoverageReporter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheck(value: js.Any): Self = this.set("check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheck: Self = this.set("check", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setIncludeAllSources(value: Boolean): Self = this.set("includeAllSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeAllSources: Self = this.set("includeAllSources", js.undefined)
+    @scala.inline
+    def setInstrumenter(value: js.Any): Self = this.set("instrumenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstrumenter: Self = this.set("instrumenter", js.undefined)
+    @scala.inline
+    def setReportersVarargs(value: Reporter*): Self = this.set("reporters", js.Array(value :_*))
+    @scala.inline
+    def setReporters(value: js.Array[Reporter]): Self = this.set("reporters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReporters: Self = this.set("reporters", js.undefined)
+    @scala.inline
+    def setSourceStore(value: Store): Self = this.set("sourceStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceStore: Self = this.set("sourceStore", js.undefined)
+    @scala.inline
+    def setSubdirFunction1(value: /* browser */ String => String): Self = this.set("subdir", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = this.set("subdir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdir: Self = this.set("subdir", js.undefined)
+    @scala.inline
+    def setType(value: ReporterType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUseJSExtensionForCoffeeScript(value: Boolean): Self = this.set("useJSExtensionForCoffeeScript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseJSExtensionForCoffeeScript: Self = this.set("useJSExtensionForCoffeeScript", js.undefined)
+    @scala.inline
+    def setWatermarks(value: js.Any): Self = this.set("watermarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatermarks: Self = this.set("watermarks", js.undefined)
+  }
+  
 }
 

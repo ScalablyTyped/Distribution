@@ -46,28 +46,58 @@ trait DescribeProjectResult extends js.Object {
 
 object DescribeProjectResult {
   @scala.inline
-  def apply(
-    arn: ProjectArn = null,
-    clientRequestToken: ClientRequestToken = null,
-    createdTimeStamp: CreatedTimestamp = null,
-    description: ProjectDescription = null,
-    id: ProjectId = null,
-    name: ProjectName = null,
-    projectTemplateId: ProjectTemplateId = null,
-    stackId: StackId = null,
-    status: ProjectStatus = null
-  ): DescribeProjectResult = {
+  def apply(): DescribeProjectResult = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (createdTimeStamp != null) __obj.updateDynamic("createdTimeStamp")(createdTimeStamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (projectTemplateId != null) __obj.updateDynamic("projectTemplateId")(projectTemplateId.asInstanceOf[js.Any])
-    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProjectResult]
   }
+  @scala.inline
+  implicit class DescribeProjectResultOps[Self <: DescribeProjectResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: ProjectArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setCreatedTimeStamp(value: CreatedTimestamp): Self = this.set("createdTimeStamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimeStamp: Self = this.set("createdTimeStamp", js.undefined)
+    @scala.inline
+    def setDescription(value: ProjectDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: ProjectId): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: ProjectName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProjectTemplateId(value: ProjectTemplateId): Self = this.set("projectTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectTemplateId: Self = this.set("projectTemplateId", js.undefined)
+    @scala.inline
+    def setStackId(value: StackId): Self = this.set("stackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("stackId", js.undefined)
+    @scala.inline
+    def setStatus(value: ProjectStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

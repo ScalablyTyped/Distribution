@@ -16,7 +16,10 @@ object Utils extends js.Object {
   def arrayify[T](): js.Array[T] = js.native
   def arrayify[T](arg: T): js.Array[T] = js.native
   def arrayify[T](arg: js.Array[T]): js.Array[T] = js.native
-  def arraysAreEqual[T](a: js.UndefOr[js.Array[T]], b: js.UndefOr[js.Array[T]], eq: Equal[T]): Boolean = js.native
+  def arraysAreEqual[T](a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], eq: Equal[T]): Boolean = js.native
+  def arraysAreEqual[T](a: js.UndefOr[scala.Nothing], b: js.Array[T], eq: Equal[T]): Boolean = js.native
+  def arraysAreEqual[T](a: js.Array[T], b: js.UndefOr[scala.Nothing], eq: Equal[T]): Boolean = js.native
+  def arraysAreEqual[T](a: js.Array[T], b: js.Array[T], eq: Equal[T]): Boolean = js.native
   def camelize(stringWithHyphens: String): String = js.native
   def dedent(strings: TemplateStringsArray, values: js.Any*): String = js.native
   def denormalizeWinPath(path: String): String = js.native

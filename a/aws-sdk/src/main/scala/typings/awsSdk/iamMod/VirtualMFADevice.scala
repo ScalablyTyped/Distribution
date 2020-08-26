@@ -30,19 +30,40 @@ trait VirtualMFADevice extends js.Object {
 
 object VirtualMFADevice {
   @scala.inline
-  def apply(
-    SerialNumber: serialNumberType,
-    Base32StringSeed: BootstrapDatum = null,
-    EnableDate: dateType = null,
-    QRCodePNG: BootstrapDatum = null,
-    User: User = null
-  ): VirtualMFADevice = {
+  def apply(SerialNumber: serialNumberType): VirtualMFADevice = {
     val __obj = js.Dynamic.literal(SerialNumber = SerialNumber.asInstanceOf[js.Any])
-    if (Base32StringSeed != null) __obj.updateDynamic("Base32StringSeed")(Base32StringSeed.asInstanceOf[js.Any])
-    if (EnableDate != null) __obj.updateDynamic("EnableDate")(EnableDate.asInstanceOf[js.Any])
-    if (QRCodePNG != null) __obj.updateDynamic("QRCodePNG")(QRCodePNG.asInstanceOf[js.Any])
-    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualMFADevice]
   }
+  @scala.inline
+  implicit class VirtualMFADeviceOps[Self <: VirtualMFADevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSerialNumber(value: serialNumberType): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase32StringSeed(value: BootstrapDatum): Self = this.set("Base32StringSeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase32StringSeed: Self = this.set("Base32StringSeed", js.undefined)
+    @scala.inline
+    def setEnableDate(value: dateType): Self = this.set("EnableDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDate: Self = this.set("EnableDate", js.undefined)
+    @scala.inline
+    def setQRCodePNG(value: BootstrapDatum): Self = this.set("QRCodePNG", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQRCodePNG: Self = this.set("QRCodePNG", js.undefined)
+    @scala.inline
+    def setUser(value: User): Self = this.set("User", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("User", js.undefined)
+  }
+  
 }
 

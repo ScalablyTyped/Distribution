@@ -32,22 +32,48 @@ trait SchemaLighthouseCategoryV5 extends js.Object {
 
 object SchemaLighthouseCategoryV5 {
   @scala.inline
-  def apply(
-    auditRefs: js.Array[Group] = null,
-    description: String = null,
-    id: String = null,
-    manualDescription: String = null,
-    score: js.Any = null,
-    title: String = null
-  ): SchemaLighthouseCategoryV5 = {
+  def apply(): SchemaLighthouseCategoryV5 = {
     val __obj = js.Dynamic.literal()
-    if (auditRefs != null) __obj.updateDynamic("auditRefs")(auditRefs.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (manualDescription != null) __obj.updateDynamic("manualDescription")(manualDescription.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLighthouseCategoryV5]
   }
+  @scala.inline
+  implicit class SchemaLighthouseCategoryV5Ops[Self <: SchemaLighthouseCategoryV5] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditRefsVarargs(value: Group*): Self = this.set("auditRefs", js.Array(value :_*))
+    @scala.inline
+    def setAuditRefs(value: js.Array[Group]): Self = this.set("auditRefs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditRefs: Self = this.set("auditRefs", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setManualDescription(value: String): Self = this.set("manualDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualDescription: Self = this.set("manualDescription", js.undefined)
+    @scala.inline
+    def setScore(value: js.Any): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

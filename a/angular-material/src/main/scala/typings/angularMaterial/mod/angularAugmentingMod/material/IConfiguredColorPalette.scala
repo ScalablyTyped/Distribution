@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IConfiguredColorPalette
   extends IColorPalette
      with /* name */ StringDictionary[IPalette]
@@ -29,8 +30,7 @@ object IConfiguredColorPalette {
     pink: IPalette,
     red: IPalette,
     teal: IPalette,
-    yellow: IPalette,
-    StringDictionary: /* name */ StringDictionary[IPalette] = null
+    yellow: IPalette
   ): IConfiguredColorPalette = {
     val __obj = js.Dynamic.literal(amber = amber.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], brown = brown.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], grey = grey.asInstanceOf[js.Any], indigo = indigo.asInstanceOf[js.Any], lime = lime.asInstanceOf[js.Any], orange = orange.asInstanceOf[js.Any], pink = pink.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any], teal = teal.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
     __obj.updateDynamic("blue-grey")(`blue-grey`.asInstanceOf[js.Any])
@@ -38,7 +38,6 @@ object IConfiguredColorPalette {
     __obj.updateDynamic("deep-purple")(`deep-purple`.asInstanceOf[js.Any])
     __obj.updateDynamic("light-blue")(`light-blue`.asInstanceOf[js.Any])
     __obj.updateDynamic("light-green")(`light-green`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IConfiguredColorPalette]
   }
 }

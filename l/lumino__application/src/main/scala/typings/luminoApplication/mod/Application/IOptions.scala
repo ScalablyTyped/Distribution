@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 /**
   * An options object for creating an application.
   */
+@js.native
 trait IOptions[T /* <: Widget */] extends js.Object {
   /**
     * A custom renderer for the context menu.
     */
-  var contextMenuRenderer: js.UndefOr[IRenderer] = js.undefined
+  var contextMenuRenderer: js.UndefOr[IRenderer] = js.native
   /**
     * The shell widget to use for the application.
     *
@@ -21,15 +22,33 @@ trait IOptions[T /* <: Widget */] extends js.Object {
     *
     * The application will attach the widget to the DOM.
     */
-  var shell: T
+  var shell: T = js.native
 }
 
 object IOptions {
   @scala.inline
-  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](shell: T, contextMenuRenderer: IRenderer = null): IOptions[T] = {
+  def apply[/* <: typings.luminoWidgets.mod.Widget */ T](shell: T): IOptions[T] = {
     val __obj = js.Dynamic.literal(shell = shell.asInstanceOf[js.Any])
-    if (contextMenuRenderer != null) __obj.updateDynamic("contextMenuRenderer")(contextMenuRenderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T]]
   }
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions[_], /* <: typings.luminoWidgets.mod.Widget */ T] (val x: Self with IOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShell(value: T): Self = this.set("shell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContextMenuRenderer(value: IRenderer): Self = this.set("contextMenuRenderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenuRenderer: Self = this.set("contextMenuRenderer", js.undefined)
+  }
+  
 }
 

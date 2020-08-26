@@ -34,22 +34,48 @@ trait DevicePool extends js.Object {
 
 object DevicePool {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName = null,
-    description: Message = null,
-    maxDevices: js.UndefOr[Integer] = js.undefined,
-    name: Name = null,
-    rules: Rules = null,
-    `type`: DevicePoolType = null
-  ): DevicePool = {
+  def apply(): DevicePool = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePool]
   }
+  @scala.inline
+  implicit class DevicePoolOps[Self <: DevicePool] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setMaxDevices(value: Integer): Self = this.set("maxDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDevices: Self = this.set("maxDevices", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: Rule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: Rules): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+    @scala.inline
+    def setType(value: DevicePoolType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

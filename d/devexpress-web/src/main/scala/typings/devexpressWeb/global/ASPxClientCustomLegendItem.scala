@@ -10,21 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientCustomLegendItem")
 @js.native
 class ASPxClientCustomLegendItem ()
-  extends typings.devexpressWeb.ASPxClientCustomLegendItem {
-  /**
-    * Gets the chart that owns the current chart element.
-    */
-  /* CompleteClass */
-  override var chart: typings.devexpressWeb.ASPxClientWebChart = js.native
-  /**
-    * Gets the name of the chart element.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * Returns the text displayed by the custom legend item.
-    */
-  /* CompleteClass */
-  override var text: String = js.native
-}
+  extends typings.devexpressWeb.ASPxClientCustomLegendItem
 

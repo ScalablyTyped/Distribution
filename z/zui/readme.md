@@ -12,7 +12,7 @@ Typings are for version 1.7
 | Keywords           | css, js, less, html5, responsive, front-end, framework, web |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 1791 |
+| # downloads        | 2013 |
 | # stars            | 1 |
 
 ## Links

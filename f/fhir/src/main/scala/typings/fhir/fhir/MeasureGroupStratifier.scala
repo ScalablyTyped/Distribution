@@ -7,57 +7,68 @@ import scala.scalajs.js.annotation._
 /**
   * Stratifier criteria for the measure
   */
+@js.native
 trait MeasureGroupStratifier extends BackboneElement {
   /**
     * Contains extended information for property 'criteria'.
     */
-  var _criteria: js.UndefOr[Element] = js.undefined
+  var _criteria: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.undefined
+  var _path: js.UndefOr[Element] = js.native
   /**
     * How the measure should be stratified
     */
-  var criteria: js.UndefOr[String] = js.undefined
+  var criteria: js.UndefOr[String] = js.native
   /**
     * The identifier for the stratifier used to coordinate the reported data back to this stratifier
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Path to the stratifier
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.native
 }
 
 object MeasureGroupStratifier {
   @scala.inline
-  def apply(
-    _criteria: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _path: Element = null,
-    criteria: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    identifier: Identifier = null,
-    modifierExtension: js.Array[Extension] = null,
-    path: String = null
-  ): MeasureGroupStratifier = {
+  def apply(): MeasureGroupStratifier = {
     val __obj = js.Dynamic.literal()
-    if (_criteria != null) __obj.updateDynamic("_criteria")(_criteria.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_path != null) __obj.updateDynamic("_path")(_path.asInstanceOf[js.Any])
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeasureGroupStratifier]
   }
+  @scala.inline
+  implicit class MeasureGroupStratifierOps[Self <: MeasureGroupStratifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_criteria(value: Element): Self = this.set("_criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_criteria: Self = this.set("_criteria", js.undefined)
+    @scala.inline
+    def set_path(value: Element): Self = this.set("_path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_path: Self = this.set("_path", js.undefined)
+    @scala.inline
+    def setCriteria(value: String): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

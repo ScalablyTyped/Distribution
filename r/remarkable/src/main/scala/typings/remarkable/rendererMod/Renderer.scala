@@ -52,7 +52,95 @@ trait Renderer extends js.Object {
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): _empty | Linefeed = js.native
   def getBreak(
     /**

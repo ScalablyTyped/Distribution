@@ -10,6 +10,12 @@ class Monitor protected () extends js.Object {
   def this(dataManager: IDataManager) = this()
   def this(dataManager: IOptionManager) = this()
   def add(name: String, changeCallback: js.Function1[/* event */ js.Object | IEvent, Unit]): Monitor = js.native
+  def add(
+    name: String,
+    changeCallback: js.Function1[/* event */ js.Object | IEvent, Unit],
+    context: js.UndefOr[scala.Nothing],
+    params: js.Any
+  ): Monitor = js.native
   def add(name: String, changeCallback: js.Function1[/* event */ js.Object | IEvent, Unit], context: js.Any): Monitor = js.native
   def add(
     name: String,
@@ -18,6 +24,12 @@ class Monitor protected () extends js.Object {
     params: js.Any
   ): Monitor = js.native
   def add(name: js.Array[String], changeCallback: js.Function1[/* event */ js.Object | IEvent, Unit]): Monitor = js.native
+  def add(
+    name: js.Array[String],
+    changeCallback: js.Function1[/* event */ js.Object | IEvent, Unit],
+    context: js.UndefOr[scala.Nothing],
+    params: js.Any
+  ): Monitor = js.native
   def add(
     name: js.Array[String],
     changeCallback: js.Function1[/* event */ js.Object | IEvent, Unit],

@@ -12,7 +12,7 @@ Rate-limit any operation, backed by Redis
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 164672 |
+| # downloads        | 169553 |
 | # stars            | 4 |
 
 ## Links

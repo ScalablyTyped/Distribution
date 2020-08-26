@@ -38,22 +38,46 @@ trait GetTraceSummariesRequest extends js.Object {
 
 object GetTraceSummariesRequest {
   @scala.inline
-  def apply(
-    EndTime: Timestamp,
-    StartTime: Timestamp,
-    FilterExpression: FilterExpression = null,
-    NextToken: String = null,
-    Sampling: js.UndefOr[NullableBoolean] = js.undefined,
-    SamplingStrategy: SamplingStrategy = null,
-    TimeRangeType: TimeRangeType = null
-  ): GetTraceSummariesRequest = {
+  def apply(EndTime: Timestamp, StartTime: Timestamp): GetTraceSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sampling)) __obj.updateDynamic("Sampling")(Sampling.get.asInstanceOf[js.Any])
-    if (SamplingStrategy != null) __obj.updateDynamic("SamplingStrategy")(SamplingStrategy.asInstanceOf[js.Any])
-    if (TimeRangeType != null) __obj.updateDynamic("TimeRangeType")(TimeRangeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesRequest]
   }
+  @scala.inline
+  implicit class GetTraceSummariesRequestOps[Self <: GetTraceSummariesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterExpression(value: FilterExpression): Self = this.set("FilterExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterExpression: Self = this.set("FilterExpression", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSampling(value: NullableBoolean): Self = this.set("Sampling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampling: Self = this.set("Sampling", js.undefined)
+    @scala.inline
+    def setSamplingStrategy(value: SamplingStrategy): Self = this.set("SamplingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingStrategy: Self = this.set("SamplingStrategy", js.undefined)
+    @scala.inline
+    def setTimeRangeType(value: TimeRangeType): Self = this.set("TimeRangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRangeType: Self = this.set("TimeRangeType", js.undefined)
+  }
+  
 }
 

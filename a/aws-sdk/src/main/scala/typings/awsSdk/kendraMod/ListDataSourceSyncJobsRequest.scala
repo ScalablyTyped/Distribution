@@ -34,20 +34,42 @@ trait ListDataSourceSyncJobsRequest extends js.Object {
 
 object ListDataSourceSyncJobsRequest {
   @scala.inline
-  def apply(
-    Id: DataSourceId,
-    IndexId: IndexId,
-    MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourceSyncJobsRequest] = js.undefined,
-    NextToken: NextToken = null,
-    StartTimeFilter: TimeRange = null,
-    StatusFilter: DataSourceSyncJobStatus = null
-  ): ListDataSourceSyncJobsRequest = {
+  def apply(Id: DataSourceId, IndexId: IndexId): ListDataSourceSyncJobsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StartTimeFilter != null) __obj.updateDynamic("StartTimeFilter")(StartTimeFilter.asInstanceOf[js.Any])
-    if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataSourceSyncJobsRequest]
   }
+  @scala.inline
+  implicit class ListDataSourceSyncJobsRequestOps[Self <: ListDataSourceSyncJobsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: DataSourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexId(value: IndexId): Self = this.set("IndexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResultsIntegerForListDataSourceSyncJobsRequest): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStartTimeFilter(value: TimeRange): Self = this.set("StartTimeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeFilter: Self = this.set("StartTimeFilter", js.undefined)
+    @scala.inline
+    def setStatusFilter(value: DataSourceSyncJobStatus): Self = this.set("StatusFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusFilter: Self = this.set("StatusFilter", js.undefined)
+  }
+  
 }
 

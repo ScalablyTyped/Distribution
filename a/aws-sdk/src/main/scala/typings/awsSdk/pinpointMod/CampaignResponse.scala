@@ -113,44 +113,107 @@ object CampaignResponse {
     Id: string,
     LastModifiedDate: string,
     SegmentId: string,
-    SegmentVersion: integer,
-    AdditionalTreatments: ListOfTreatmentResource = null,
-    CustomDeliveryConfiguration: CustomDeliveryConfiguration = null,
-    DefaultState: CampaignState = null,
-    Description: string = null,
-    HoldoutPercent: js.UndefOr[integer] = js.undefined,
-    Hook: CampaignHook = null,
-    IsPaused: js.UndefOr[boolean] = js.undefined,
-    Limits: CampaignLimits = null,
-    MessageConfiguration: MessageConfiguration = null,
-    Name: string = null,
-    Schedule: Schedule = null,
-    State: CampaignState = null,
-    TemplateConfiguration: TemplateConfiguration = null,
-    TreatmentDescription: string = null,
-    TreatmentName: string = null,
-    Version: js.UndefOr[integer] = js.undefined,
-    tags: MapOfString = null
+    SegmentVersion: integer
   ): CampaignResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], Arn = Arn.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedDate = LastModifiedDate.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], SegmentVersion = SegmentVersion.asInstanceOf[js.Any])
-    if (AdditionalTreatments != null) __obj.updateDynamic("AdditionalTreatments")(AdditionalTreatments.asInstanceOf[js.Any])
-    if (CustomDeliveryConfiguration != null) __obj.updateDynamic("CustomDeliveryConfiguration")(CustomDeliveryConfiguration.asInstanceOf[js.Any])
-    if (DefaultState != null) __obj.updateDynamic("DefaultState")(DefaultState.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(HoldoutPercent)) __obj.updateDynamic("HoldoutPercent")(HoldoutPercent.get.asInstanceOf[js.Any])
-    if (Hook != null) __obj.updateDynamic("Hook")(Hook.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPaused)) __obj.updateDynamic("IsPaused")(IsPaused.get.asInstanceOf[js.Any])
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration.asInstanceOf[js.Any])
-    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
-    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignResponse]
   }
+  @scala.inline
+  implicit class CampaignResponseOps[Self <: CampaignResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegmentId(value: string): Self = this.set("SegmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegmentVersion(value: integer): Self = this.set("SegmentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalTreatmentsVarargs(value: TreatmentResource*): Self = this.set("AdditionalTreatments", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalTreatments(value: ListOfTreatmentResource): Self = this.set("AdditionalTreatments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalTreatments: Self = this.set("AdditionalTreatments", js.undefined)
+    @scala.inline
+    def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = this.set("CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDeliveryConfiguration: Self = this.set("CustomDeliveryConfiguration", js.undefined)
+    @scala.inline
+    def setDefaultState(value: CampaignState): Self = this.set("DefaultState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultState: Self = this.set("DefaultState", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setHoldoutPercent(value: integer): Self = this.set("HoldoutPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoldoutPercent: Self = this.set("HoldoutPercent", js.undefined)
+    @scala.inline
+    def setHook(value: CampaignHook): Self = this.set("Hook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHook: Self = this.set("Hook", js.undefined)
+    @scala.inline
+    def setIsPaused(value: boolean): Self = this.set("IsPaused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPaused: Self = this.set("IsPaused", js.undefined)
+    @scala.inline
+    def setLimits(value: CampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("Limits", js.undefined)
+    @scala.inline
+    def setMessageConfiguration(value: MessageConfiguration): Self = this.set("MessageConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageConfiguration: Self = this.set("MessageConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSchedule(value: Schedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setState(value: CampaignState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTemplateConfiguration(value: TemplateConfiguration): Self = this.set("TemplateConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateConfiguration: Self = this.set("TemplateConfiguration", js.undefined)
+    @scala.inline
+    def setTreatmentDescription(value: string): Self = this.set("TreatmentDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreatmentDescription: Self = this.set("TreatmentDescription", js.undefined)
+    @scala.inline
+    def setTreatmentName(value: string): Self = this.set("TreatmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreatmentName: Self = this.set("TreatmentName", js.undefined)
+    @scala.inline
+    def setVersion(value: integer): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

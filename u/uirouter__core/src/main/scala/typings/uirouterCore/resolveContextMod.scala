@@ -63,6 +63,7 @@ object resolveContextMod extends js.Object {
       * @returns {Promise<any>|any}
       */
     def resolvePath(): js.Promise[js.Array[Token]] = js.native
+    def resolvePath(when: js.UndefOr[scala.Nothing], trans: Transition): js.Promise[js.Array[Token]] = js.native
     def resolvePath(when: PolicyWhen): js.Promise[js.Array[Token]] = js.native
     def resolvePath(when: PolicyWhen, trans: Transition): js.Promise[js.Array[Token]] = js.native
     /**

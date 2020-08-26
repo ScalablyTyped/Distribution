@@ -12,7 +12,7 @@ A simple, lightweight url parser for JavaScript (~1.7 Kb minified, ~0.7Kb gzippe
 | Keywords           | js, url |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 67209 |
+| # downloads        | 76497 |
 | # stars            | 0 |
 
 ## Links

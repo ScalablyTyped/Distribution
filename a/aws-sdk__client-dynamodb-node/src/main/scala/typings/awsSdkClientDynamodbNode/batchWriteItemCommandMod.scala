@@ -26,16 +26,9 @@ object batchWriteItemCommandMod extends js.Object {
           Readable
         ] {
     def this(input: BatchWriteItemInput) = this()
-    /* CompleteClass */
-    override val input: BatchWriteItemInput = js.native
     val middlewareStack: MiddlewareStack[BatchWriteItemInput, BatchWriteItemOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[BatchWriteItemInput, BatchWriteItemOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[BatchWriteItemInput, BatchWriteItemOutput] = js.native
   }

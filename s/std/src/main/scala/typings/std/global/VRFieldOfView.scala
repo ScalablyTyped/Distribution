@@ -8,16 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("VRFieldOfView")
 @js.native
 class VRFieldOfView ()
-  extends typings.std.VRFieldOfView {
-  /* CompleteClass */
-  override val downDegrees: Double = js.native
-  /* CompleteClass */
-  override val leftDegrees: Double = js.native
-  /* CompleteClass */
-  override val rightDegrees: Double = js.native
-  /* CompleteClass */
-  override val upDegrees: Double = js.native
-}
+  extends typings.std.VRFieldOfView
 
 @JSGlobal("VRFieldOfView")
 @js.native

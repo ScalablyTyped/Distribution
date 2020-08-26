@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createTransport extends js.Object {
   def apply(): ^ = js.native
+  def apply(transport: js.UndefOr[scala.Nothing], defaults: Options): ^ = js.native
   def apply(transport: String): ^ = js.native
   def apply(transport: String, defaults: Options): ^ = js.native
   def apply(transport: typings.nodemailer.jsonTransportMod.Options): ^ = js.native

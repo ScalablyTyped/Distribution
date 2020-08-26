@@ -41,7 +41,7 @@ object cloudshellMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Cloudshell]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Cloudshell]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object cloudshellMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.cloudshellV1alpha1Mod.cloudshellV1alpha1.Cloudshell
               ]
             ]

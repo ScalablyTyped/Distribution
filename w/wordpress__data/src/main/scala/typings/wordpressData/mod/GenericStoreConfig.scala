@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GenericStoreConfig extends js.Object {
-  var subscribe: Subscriber
-  def getActions(): DispatcherMap
-  def getSelectors(): SelectorMap
+  var subscribe: Subscriber = js.native
+  def getActions(): DispatcherMap = js.native
+  def getSelectors(): SelectorMap = js.native
 }
 
 object GenericStoreConfig {
@@ -20,5 +21,24 @@ object GenericStoreConfig {
     val __obj = js.Dynamic.literal(getActions = js.Any.fromFunction0(getActions), getSelectors = js.Any.fromFunction0(getSelectors), subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[GenericStoreConfig]
   }
+  @scala.inline
+  implicit class GenericStoreConfigOps[Self <: GenericStoreConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetActions(value: () => DispatcherMap): Self = this.set("getActions", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSelectors(value: () => SelectorMap): Self = this.set("getSelectors", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSubscribe(value: /* callback */ js.Function0[Unit] => js.Function0[Unit]): Self = this.set("subscribe", js.Any.fromFunction1(value))
+  }
+  
 }
 

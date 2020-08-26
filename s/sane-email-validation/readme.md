@@ -12,7 +12,7 @@ Sanely validate email addresses, based on HTML5's definition of email addresses
 | Keywords           | email, validation, validate |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 63712 |
+| # downloads        | 64600 |
 | # stars            | 2 |
 
 ## Links

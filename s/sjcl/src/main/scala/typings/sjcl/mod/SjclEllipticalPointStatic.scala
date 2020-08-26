@@ -13,7 +13,7 @@ trait SjclEllipticalPointStatic
      with Instantiable2[/* curve */ SjclEllipticalCurve, /* x */ BigNumber, SjclEllipticalPoint]
      with Instantiable3[
       /* curve */ SjclEllipticalCurve, 
-      /* x */ BigNumber, 
+      js.UndefOr[/* x */ BigNumber], 
       /* y */ BigNumber, 
       SjclEllipticalPoint
     ]

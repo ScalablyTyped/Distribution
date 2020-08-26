@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "NotExpr")
 @js.native
 class NotExpr protected ()
-  extends typings.angularCompiler.publicApiMod.NotExpr {
+  extends typings.angularCompiler.compilerMod.NotExpr {
   def this(condition: typings.angularCompiler.outputAstMod.Expression) = this()
   def this(
     condition: typings.angularCompiler.outputAstMod.Expression,

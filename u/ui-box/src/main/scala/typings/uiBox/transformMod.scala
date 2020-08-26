@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/transform", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/transform", JSImport.Namespace)
 @js.native
 object transformMod extends js.Object {
   val propAliases: PropAliases = js.native

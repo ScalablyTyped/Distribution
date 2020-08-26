@@ -33,7 +33,21 @@ class EventRuleEventSubscription protected ()
     name: String,
     eventRuleOrSchedule: String,
     handler: EventRuleEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ) = this()
+  def this(
+    name: String,
+    eventRuleOrSchedule: String,
+    handler: EventRuleEventHandler,
     args: EventRuleEventSubscriptionArgs,
+    opts: ComponentResourceOptions
+  ) = this()
+  def this(
+    name: String,
+    eventRuleOrSchedule: typings.pulumiAws.eventRuleMod.EventRule,
+    handler: EventRuleEventHandler,
+    args: js.UndefOr[scala.Nothing],
     opts: ComponentResourceOptions
   ) = this()
   def this(

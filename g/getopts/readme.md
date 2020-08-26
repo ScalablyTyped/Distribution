@@ -11,8 +11,8 @@ Parse CLI options, better.
 | Full name          | getopts |
 | Keywords           | getopts, cli, argv, flags, yargs, options, minimist, cli-parser |
 | # releases         | 16 |
-| # dependents       | 62 |
-| # downloads        | 6074051 |
+| # dependents       | 64 |
+| # downloads        | 6791339 |
 | # stars            | 5 |
 
 ## Links

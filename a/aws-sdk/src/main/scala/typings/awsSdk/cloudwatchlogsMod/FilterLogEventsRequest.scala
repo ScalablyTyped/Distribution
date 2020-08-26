@@ -46,27 +46,58 @@ trait FilterLogEventsRequest extends js.Object {
 
 object FilterLogEventsRequest {
   @scala.inline
-  def apply(
-    logGroupName: LogGroupName,
-    endTime: js.UndefOr[Timestamp] = js.undefined,
-    filterPattern: FilterPattern = null,
-    interleaved: js.UndefOr[Interleaved] = js.undefined,
-    limit: js.UndefOr[EventsLimit] = js.undefined,
-    logStreamNamePrefix: LogStreamName = null,
-    logStreamNames: InputLogStreamNames = null,
-    nextToken: NextToken = null,
-    startTime: js.UndefOr[Timestamp] = js.undefined
-  ): FilterLogEventsRequest = {
+  def apply(logGroupName: LogGroupName): FilterLogEventsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
-    if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(interleaved)) __obj.updateDynamic("interleaved")(interleaved.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (logStreamNamePrefix != null) __obj.updateDynamic("logStreamNamePrefix")(logStreamNamePrefix.asInstanceOf[js.Any])
-    if (logStreamNames != null) __obj.updateDynamic("logStreamNames")(logStreamNames.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterLogEventsRequest]
   }
+  @scala.inline
+  implicit class FilterLogEventsRequestOps[Self <: FilterLogEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setFilterPattern(value: FilterPattern): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterPattern: Self = this.set("filterPattern", js.undefined)
+    @scala.inline
+    def setInterleaved(value: Interleaved): Self = this.set("interleaved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterleaved: Self = this.set("interleaved", js.undefined)
+    @scala.inline
+    def setLimit(value: EventsLimit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setLogStreamNamePrefix(value: LogStreamName): Self = this.set("logStreamNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamNamePrefix: Self = this.set("logStreamNamePrefix", js.undefined)
+    @scala.inline
+    def setLogStreamNamesVarargs(value: LogStreamName*): Self = this.set("logStreamNames", js.Array(value :_*))
+    @scala.inline
+    def setLogStreamNames(value: InputLogStreamNames): Self = this.set("logStreamNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamNames: Self = this.set("logStreamNames", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class Model[T, S] () extends js.Object {
   def this(attributes: T) = this()
   def this(attributes: T, options: js.Any) = this()
+  def this(attributes: js.UndefOr[scala.Nothing], options: js.Any) = this()
   var _changing: Boolean = js.native
   var _pending: Boolean = js.native
   var _previousAttributes: js.Any = js.native
@@ -61,6 +62,7 @@ class Model[T, S] () extends js.Object {
   def initialize(): Unit = js.native
   def initialize(attributes: T): Unit = js.native
   def initialize(attributes: T, options: js.Any): Unit = js.native
+  def initialize(attributes: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def invert(): js.Any = js.native
   def isEmpty(): Boolean = js.native
   def isNew(): Boolean = js.native
@@ -85,9 +87,11 @@ class Model[T, S] () extends js.Object {
   def preinitialize(): Unit = js.native
   def preinitialize(attributes: T): Unit = js.native
   def preinitialize(attributes: T, options: js.Any): Unit = js.native
+  def preinitialize(attributes: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def previous(attribute: String): js.Any = js.native
   def previousAttributes(): js.Array[_] = js.native
   def save(): js.Any = js.native
+  def save(attributes: js.UndefOr[scala.Nothing], options: ModelSaveOptions): js.Any = js.native
   def save(attributes: js.Any): js.Any = js.native
   def save(attributes: js.Any, options: ModelSaveOptions): js.Any = js.native
   def set(attributeName: Partial[T]): Model[_, ModelSetOptions] = js.native
@@ -102,6 +106,7 @@ class Model[T, S] () extends js.Object {
   def set[a /* <: /* keyof T */ String */](attributeName: a): Model[_, ModelSetOptions] = js.native
   def set[a /* <: /* keyof T */ String */](attributeName: a, value: S): Model[_, ModelSetOptions] = js.native
   def set[a /* <: /* keyof T */ String */](attributeName: a, value: S, options: S): Model[_, ModelSetOptions] = js.native
+  def set[a /* <: /* keyof T */ String */](attributeName: a, value: js.UndefOr[scala.Nothing], options: S): Model[_, ModelSetOptions] = js.native
   def set[a /* <: /* keyof T */ String */](
     attributeName: a,
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any
@@ -112,6 +117,7 @@ class Model[T, S] () extends js.Object {
     options: S
   ): Model[_, ModelSetOptions] = js.native
   def set[a /* <: /* keyof T */ String */](attributeName: Partial[T], value: S, options: S): Model[_, ModelSetOptions] = js.native
+  def set[a /* <: /* keyof T */ String */](attributeName: Partial[T], value: js.UndefOr[scala.Nothing], options: S): Model[_, ModelSetOptions] = js.native
   def set[a /* <: /* keyof T */ String */](
     attributeName: Partial[T],
     value: /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any

@@ -3,6 +3,7 @@ package typings.mocha
 import typings.mocha.Mocha.Interface
 import typings.mocha.Mocha.MochaInstanceOptions
 import typings.mocha.Mocha.Reporter
+import typings.mocha.Mocha.ReporterConstructor
 import typings.mocha.Mocha.Runner
 import typings.mocha.Mocha.Suite
 import typings.std.RegExp
@@ -56,13 +57,6 @@ trait Mocha_ extends js.Object {
     */
   def delay(): Boolean = js.native
   /**
-    * Enable timeouts.
-    *
-    * @see https://mochajs.org/api/mocha#enableTimeouts
-    */
-  def enableTimeouts(): this.type = js.native
-  def enableTimeouts(enabled: Boolean): this.type = js.native
-  /**
     * Escape string and add it to grep as a RegExp.
     *
     * @see https://mochajs.org/api/mocha#fgrep
@@ -107,18 +101,6 @@ trait Mocha_ extends js.Object {
     */
   def growl(): this.type = js.native
   /**
-    * Do not show diffs at all.
-    *
-    * @see https://mochajs.org/api/mocha#hideDiff
-    */
-  def hideDiff(hideDiff: Boolean): this.type = js.native
-  /**
-    * Ignore global leaks.
-    *
-    * @see https://mochajs.org/api/mocha#ignoreLeaks
-    */
-  def ignoreLeaks(ignore: Boolean): this.type = js.native
-  /**
     * Invert `.grep()` matches.
     *
     * @see https://mochajs.org/api/mocha#invert
@@ -144,12 +126,23 @@ trait Mocha_ extends js.Object {
     */
   def noHighlighting(): this.type = js.native
   /**
+    * Toggles parallel mode.
+    *
+    * Must be run before calling `run`. Changes the `Runner` class to
+    * use; also enables lazy file loading if not already done so.
+    *
+    * @see https://mochajs.org/api/mocha#parallelMode
+    */
+  def parallelMode(): this.type = js.native
+  def parallelMode(enabled: Boolean): this.type = js.native
+  /**
     * Set reporter to the provided constructor, one of the built-in reporters, or loads a reporter
     * from a module path. Defaults to `"spec"`.
     *
     * @see https://mochajs.org/api/mocha#reporter
     */
   def reporter(): this.type = js.native
+  def reporter(reporter: js.UndefOr[scala.Nothing], reporterOptions: js.Any): this.type = js.native
   def reporter(reporter: String): this.type = js.native
   def reporter(reporter: String, reporterOptions: js.Any): this.type = js.native
   /**
@@ -158,8 +151,8 @@ trait Mocha_ extends js.Object {
     * @see https://mochajs.org/api/mocha#reporter
     */
   def reporter(reporter: Reporter): this.type = js.native
-  def reporter(reporter: typings.mocha.Mocha.ReporterConstructor): this.type = js.native
-  def reporter(reporter: typings.mocha.Mocha.ReporterConstructor, reporterOptions: js.Any): this.type = js.native
+  def reporter(reporter: ReporterConstructor): this.type = js.native
+  def reporter(reporter: ReporterConstructor, reporterOptions: js.Any): this.type = js.native
   def reporter(reporter: Reporter, reporterOptions: js.Any): this.type = js.native
   /**
     * Set the number of times to retry failed tests.
@@ -211,16 +204,12 @@ trait Mocha_ extends js.Object {
     */
   def ui(name: Interface): this.type = js.native
   /**
-    * Emit color output.
+    * Unloads `files` from Node's `require` cache.
     *
-    * @see https://mochajs.org/api/mocha#useColors
+    * This allows required files to be "freshly" reloaded, providing the ability
+    * to reuse a Mocha instance programmatically.
+    * Note: does not clear ESM module files from the cache
     */
-  def useColors(colors: Boolean): this.type = js.native
-  /**
-    * Use inline diffs rather than +/-.
-    *
-    * @see https://mochajs.org/api/mocha#useInlineDiffs
-    */
-  def useInlineDiffs(inlineDiffs: Boolean): this.type = js.native
+  def unloadFiles(): this.type = js.native
 }
 

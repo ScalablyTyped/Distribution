@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OverlayBox extends js.Object {
-  def hideOverlay(): Unit
-  def showOverlay(): Unit
+  def hideOverlay(): Unit = js.native
+  def showOverlay(): Unit = js.native
 }
 
 @JSImport("webix", "OverlayBox")

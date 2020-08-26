@@ -26,17 +26,36 @@ trait WebsiteAuthorizationProviderSummary extends js.Object {
 
 object WebsiteAuthorizationProviderSummary {
   @scala.inline
-  def apply(
-    AuthorizationProviderType: AuthorizationProviderType,
-    AuthorizationProviderId: Id = null,
-    CreatedTime: DateTime = null,
-    DomainName: DomainName = null
-  ): WebsiteAuthorizationProviderSummary = {
+  def apply(AuthorizationProviderType: AuthorizationProviderType): WebsiteAuthorizationProviderSummary = {
     val __obj = js.Dynamic.literal(AuthorizationProviderType = AuthorizationProviderType.asInstanceOf[js.Any])
-    if (AuthorizationProviderId != null) __obj.updateDynamic("AuthorizationProviderId")(AuthorizationProviderId.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebsiteAuthorizationProviderSummary]
   }
+  @scala.inline
+  implicit class WebsiteAuthorizationProviderSummaryOps[Self <: WebsiteAuthorizationProviderSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationProviderType(value: AuthorizationProviderType): Self = this.set("AuthorizationProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizationProviderId(value: Id): Self = this.set("AuthorizationProviderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationProviderId: Self = this.set("AuthorizationProviderId", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: DateTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+  }
+  
 }
 

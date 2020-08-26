@@ -4,33 +4,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetPullRequestsParams extends js.Object {
-  var assigneeId: js.UndefOr[js.Array[Double]] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var createdUserId: js.UndefOr[js.Array[Double]] = js.undefined
-  var issueId: js.UndefOr[js.Array[Double]] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var statusId: js.UndefOr[js.Array[Double]] = js.undefined
+  var assigneeId: js.UndefOr[js.Array[Double]] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var createdUserId: js.UndefOr[js.Array[Double]] = js.native
+  var issueId: js.UndefOr[js.Array[Double]] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var statusId: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object GetPullRequestsParams {
   @scala.inline
-  def apply(
-    assigneeId: js.Array[Double] = null,
-    count: js.UndefOr[Double] = js.undefined,
-    createdUserId: js.Array[Double] = null,
-    issueId: js.Array[Double] = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    statusId: js.Array[Double] = null
-  ): GetPullRequestsParams = {
+  def apply(): GetPullRequestsParams = {
     val __obj = js.Dynamic.literal()
-    if (assigneeId != null) __obj.updateDynamic("assigneeId")(assigneeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (createdUserId != null) __obj.updateDynamic("createdUserId")(createdUserId.asInstanceOf[js.Any])
-    if (issueId != null) __obj.updateDynamic("issueId")(issueId.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (statusId != null) __obj.updateDynamic("statusId")(statusId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPullRequestsParams]
   }
+  @scala.inline
+  implicit class GetPullRequestsParamsOps[Self <: GetPullRequestsParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssigneeIdVarargs(value: Double*): Self = this.set("assigneeId", js.Array(value :_*))
+    @scala.inline
+    def setAssigneeId(value: js.Array[Double]): Self = this.set("assigneeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssigneeId: Self = this.set("assigneeId", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setCreatedUserIdVarargs(value: Double*): Self = this.set("createdUserId", js.Array(value :_*))
+    @scala.inline
+    def setCreatedUserId(value: js.Array[Double]): Self = this.set("createdUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedUserId: Self = this.set("createdUserId", js.undefined)
+    @scala.inline
+    def setIssueIdVarargs(value: Double*): Self = this.set("issueId", js.Array(value :_*))
+    @scala.inline
+    def setIssueId(value: js.Array[Double]): Self = this.set("issueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssueId: Self = this.set("issueId", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setStatusIdVarargs(value: Double*): Self = this.set("statusId", js.Array(value :_*))
+    @scala.inline
+    def setStatusId(value: js.Array[Double]): Self = this.set("statusId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusId: Self = this.set("statusId", js.undefined)
+  }
+  
 }
 

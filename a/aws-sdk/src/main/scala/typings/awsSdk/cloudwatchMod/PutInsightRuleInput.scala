@@ -26,16 +26,36 @@ trait PutInsightRuleInput extends js.Object {
 
 object PutInsightRuleInput {
   @scala.inline
-  def apply(
-    RuleDefinition: InsightRuleDefinition,
-    RuleName: InsightRuleName,
-    RuleState: InsightRuleState = null,
-    Tags: TagList = null
-  ): PutInsightRuleInput = {
+  def apply(RuleDefinition: InsightRuleDefinition, RuleName: InsightRuleName): PutInsightRuleInput = {
     val __obj = js.Dynamic.literal(RuleDefinition = RuleDefinition.asInstanceOf[js.Any], RuleName = RuleName.asInstanceOf[js.Any])
-    if (RuleState != null) __obj.updateDynamic("RuleState")(RuleState.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutInsightRuleInput]
   }
+  @scala.inline
+  implicit class PutInsightRuleInputOps[Self <: PutInsightRuleInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleDefinition(value: InsightRuleDefinition): Self = this.set("RuleDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleName(value: InsightRuleName): Self = this.set("RuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleState(value: InsightRuleState): Self = this.set("RuleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleState: Self = this.set("RuleState", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

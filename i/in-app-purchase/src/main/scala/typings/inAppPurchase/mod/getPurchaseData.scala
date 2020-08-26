@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getPurchaseData extends js.Object {
   def apply(): js.Array[PurchasedItem] | Null = js.native
+  def apply(purchaseData: js.UndefOr[scala.Nothing], options: IgnoreCanceled): js.Array[PurchasedItem] | Null = js.native
   def apply(purchaseData: ValidationResponse): js.Array[PurchasedItem] | Null = js.native
   def apply(purchaseData: ValidationResponse, options: IgnoreCanceled): js.Array[PurchasedItem] | Null = js.native
 }

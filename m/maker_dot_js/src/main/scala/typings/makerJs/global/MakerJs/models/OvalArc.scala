@@ -1,7 +1,5 @@
 package typings.makerJs.global.MakerJs.models
 
-import typings.makerJs.MakerJs.IModelMap
-import typings.makerJs.MakerJs.IPathMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -23,14 +21,16 @@ class OvalArc protected ()
     endAngle: Double,
     sweepRadius: Double,
     slotRadius: Double,
+    selfIntersect: js.UndefOr[scala.Nothing],
+    isolateCaps: Boolean
+  ) = this()
+  def this(
+    startAngle: Double,
+    endAngle: Double,
+    sweepRadius: Double,
+    slotRadius: Double,
     selfIntersect: Boolean,
     isolateCaps: Boolean
   ) = this()
-  /* CompleteClass */
-  @JSName("models")
-  override var models_OvalArc: IModelMap = js.native
-  /* CompleteClass */
-  @JSName("paths")
-  override var paths_OvalArc: IPathMap = js.native
 }
 

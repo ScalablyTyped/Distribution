@@ -6,36 +6,63 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** https://googleapis.github.io/gax-nodejs/global.html#CallOptions */
+@js.native
 trait CallOptions extends js.Object {
-  var autoPaginate: js.UndefOr[Boolean] = js.undefined
-  var isBundling: js.UndefOr[Boolean] = js.undefined
-  var longrunning: js.UndefOr[BackoffSettings] = js.undefined
-  var pageToken: js.UndefOr[js.Object] = js.undefined
-  var promise: js.UndefOr[PromiseConstructor] = js.undefined
-  var retry: js.UndefOr[RetryOptions] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var autoPaginate: js.UndefOr[Boolean] = js.native
+  var isBundling: js.UndefOr[Boolean] = js.native
+  var longrunning: js.UndefOr[BackoffSettings] = js.native
+  var pageToken: js.UndefOr[js.Object] = js.native
+  var promise: js.UndefOr[PromiseConstructor] = js.native
+  var retry: js.UndefOr[RetryOptions] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object CallOptions {
   @scala.inline
-  def apply(
-    autoPaginate: js.UndefOr[Boolean] = js.undefined,
-    isBundling: js.UndefOr[Boolean] = js.undefined,
-    longrunning: BackoffSettings = null,
-    pageToken: js.Object = null,
-    promise: PromiseConstructor = null,
-    retry: RetryOptions = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): CallOptions = {
+  def apply(): CallOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundling)) __obj.updateDynamic("isBundling")(isBundling.get.asInstanceOf[js.Any])
-    if (longrunning != null) __obj.updateDynamic("longrunning")(longrunning.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallOptions]
   }
+  @scala.inline
+  implicit class CallOptionsOps[Self <: CallOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoPaginate(value: Boolean): Self = this.set("autoPaginate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPaginate: Self = this.set("autoPaginate", js.undefined)
+    @scala.inline
+    def setIsBundling(value: Boolean): Self = this.set("isBundling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBundling: Self = this.set("isBundling", js.undefined)
+    @scala.inline
+    def setLongrunning(value: BackoffSettings): Self = this.set("longrunning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongrunning: Self = this.set("longrunning", js.undefined)
+    @scala.inline
+    def setPageToken(value: js.Object): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPromise(value: PromiseConstructor): Self = this.set("promise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromise: Self = this.set("promise", js.undefined)
+    @scala.inline
+    def setRetry(value: RetryOptions): Self = this.set("retry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetry: Self = this.set("retry", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

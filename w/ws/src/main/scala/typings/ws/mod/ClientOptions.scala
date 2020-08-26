@@ -1,108 +1,109 @@
 package typings.ws.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
 import typings.node.httpMod.Agent
-import typings.node.tlsMod.KeyObject
-import typings.node.tlsMod.PxfObject
 import typings.node.tlsMod.SecureContextOptions
-import typings.node.tlsMod.SecureVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientOptions extends SecureContextOptions {
-  var agent: js.UndefOr[Agent] = js.undefined
-  var checkServerIdentity: js.UndefOr[js.Function2[/* servername */ String, /* cert */ CertMeta, Boolean]] = js.undefined
-  var family: js.UndefOr[Double] = js.undefined
-  var followRedirects: js.UndefOr[Boolean] = js.undefined
-  var handshakeTimeout: js.UndefOr[Double] = js.undefined
-  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var localAddress: js.UndefOr[String] = js.undefined
-  var maxPayload: js.UndefOr[Double] = js.undefined
-  var maxRedirects: js.UndefOr[Double] = js.undefined
-  var origin: js.UndefOr[String] = js.undefined
-  var perMessageDeflate: js.UndefOr[Boolean | PerMessageDeflateOptions] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var protocolVersion: js.UndefOr[Double] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  var agent: js.UndefOr[Agent] = js.native
+  var checkServerIdentity: js.UndefOr[js.Function2[/* servername */ String, /* cert */ CertMeta, Boolean]] = js.native
+  var family: js.UndefOr[Double] = js.native
+  var followRedirects: js.UndefOr[Boolean] = js.native
+  var handshakeTimeout: js.UndefOr[Double] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var host: js.UndefOr[String] = js.native
+  var localAddress: js.UndefOr[String] = js.native
+  var maxPayload: js.UndefOr[Double] = js.native
+  var maxRedirects: js.UndefOr[Double] = js.native
+  var origin: js.UndefOr[String] = js.native
+  var perMessageDeflate: js.UndefOr[Boolean | PerMessageDeflateOptions] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var protocolVersion: js.UndefOr[Double] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
 }
 
 object ClientOptions {
   @scala.inline
-  def apply(
-    agent: Agent = null,
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    checkServerIdentity: (/* servername */ String, /* cert */ CertMeta) => Boolean = null,
-    ciphers: String = null,
-    clientCertEngine: String = null,
-    crl: String | Buffer | (js.Array[String | Buffer]) = null,
-    dhparam: String | Buffer = null,
-    ecdhCurve: String = null,
-    family: js.UndefOr[Double] = js.undefined,
-    followRedirects: js.UndefOr[Boolean] = js.undefined,
-    handshakeTimeout: js.UndefOr[Double] = js.undefined,
-    headers: StringDictionary[String] = null,
-    honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
-    localAddress: String = null,
-    maxPayload: js.UndefOr[Double] = js.undefined,
-    maxRedirects: js.UndefOr[Double] = js.undefined,
-    maxVersion: SecureVersion = null,
-    minVersion: SecureVersion = null,
-    origin: String = null,
-    passphrase: String = null,
-    perMessageDeflate: Boolean | PerMessageDeflateOptions = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
-    privateKeyEngine: String = null,
-    privateKeyIdentifier: String = null,
-    protocol: String = null,
-    protocolVersion: js.UndefOr[Double] = js.undefined,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    secureOptions: js.UndefOr[Double] = js.undefined,
-    secureProtocol: String = null,
-    sessionIdContext: String = null,
-    sigalgs: String = null
-  ): ClientOptions = {
+  def apply(): ClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
-    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handshakeTimeout)) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPayload)) __obj.updateDynamic("maxPayload")(maxPayload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
-    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(protocolVersion)) __obj.updateDynamic("protocolVersion")(protocolVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
-    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
+  @scala.inline
+  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgent(value: Agent): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgent: Self = this.set("agent", js.undefined)
+    @scala.inline
+    def setCheckServerIdentity(value: (/* servername */ String, /* cert */ CertMeta) => Boolean): Self = this.set("checkServerIdentity", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCheckServerIdentity: Self = this.set("checkServerIdentity", js.undefined)
+    @scala.inline
+    def setFamily(value: Double): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setFollowRedirects(value: Boolean): Self = this.set("followRedirects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowRedirects: Self = this.set("followRedirects", js.undefined)
+    @scala.inline
+    def setHandshakeTimeout(value: Double): Self = this.set("handshakeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandshakeTimeout: Self = this.set("handshakeTimeout", js.undefined)
+    @scala.inline
+    def setHeaders(value: StringDictionary[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    @scala.inline
+    def setMaxPayload(value: Double): Self = this.set("maxPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPayload: Self = this.set("maxPayload", js.undefined)
+    @scala.inline
+    def setMaxRedirects(value: Double): Self = this.set("maxRedirects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRedirects: Self = this.set("maxRedirects", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setPerMessageDeflate(value: Boolean | PerMessageDeflateOptions): Self = this.set("perMessageDeflate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerMessageDeflate: Self = this.set("perMessageDeflate", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setProtocolVersion(value: Double): Self = this.set("protocolVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocolVersion: Self = this.set("protocolVersion", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+  }
+  
 }
 

@@ -68,7 +68,26 @@ trait EventProvider extends Object {
     * <code>true</code> if the default action should be executed, <code>false</code> otherwise.
     */
   def fireEvent(sEventId: String): EventProvider | Boolean = js.native
+  def fireEvent(
+    sEventId: String,
+    mParameters: js.UndefOr[scala.Nothing],
+    bAllowPreventDefault: js.UndefOr[scala.Nothing],
+    bEnableEventBubbling: Boolean
+  ): EventProvider | Boolean = js.native
+  def fireEvent(sEventId: String, mParameters: js.UndefOr[scala.Nothing], bAllowPreventDefault: Boolean): EventProvider | Boolean = js.native
+  def fireEvent(
+    sEventId: String,
+    mParameters: js.UndefOr[scala.Nothing],
+    bAllowPreventDefault: Boolean,
+    bEnableEventBubbling: Boolean
+  ): EventProvider | Boolean = js.native
   def fireEvent(sEventId: String, mParameters: js.Any): EventProvider | Boolean = js.native
+  def fireEvent(
+    sEventId: String,
+    mParameters: js.Any,
+    bAllowPreventDefault: js.UndefOr[scala.Nothing],
+    bEnableEventBubbling: Boolean
+  ): EventProvider | Boolean = js.native
   def fireEvent(sEventId: String, mParameters: js.Any, bAllowPreventDefault: Boolean): EventProvider | Boolean = js.native
   def fireEvent(
     sEventId: String,

@@ -7,148 +7,124 @@ import scala.scalajs.js.annotation._
 /**
   * Volume represents a named volume in a pod that may be accessed by any container in the pod.
   */
+@js.native
 trait Volume extends js.Object {
   /**
-    * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host
-    * machine and then exposed to the pod. More info:
-    * https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+    * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
     */
-  val awsElasticBlockStore: AWSElasticBlockStoreVolumeSource
+  var awsElasticBlockStore: AWSElasticBlockStoreVolumeSource = js.native
   /**
     * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
     */
-  val azureDisk: AzureDiskVolumeSource
+  var azureDisk: AzureDiskVolumeSource = js.native
   /**
     * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
     */
-  val azureFile: AzureFileVolumeSource
+  var azureFile: AzureFileVolumeSource = js.native
   /**
     * CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
     */
-  val cephfs: CephFSVolumeSource
+  var cephfs: CephFSVolumeSource = js.native
   /**
-    * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info:
-    * https://examples.k8s.io/mysql-cinder-pd/README.md
+    * Cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
     */
-  val cinder: CinderVolumeSource
+  var cinder: CinderVolumeSource = js.native
   /**
     * ConfigMap represents a configMap that should populate this volume
     */
-  val configMap: ConfigMapVolumeSource
+  var configMap: ConfigMapVolumeSource = js.native
   /**
-    * CSI (Container Storage Interface) represents storage that is handled by an external CSI
-    * driver (Alpha feature).
+    * CSI (Container Storage Interface) represents storage that is handled by an external CSI driver (Alpha feature).
     */
-  val csi: CSIVolumeSource
+  var csi: CSIVolumeSource = js.native
   /**
     * DownwardAPI represents downward API about the pod that should populate this volume
     */
-  val downwardAPI: DownwardAPIVolumeSource
+  var downwardAPI: DownwardAPIVolumeSource = js.native
   /**
-    * EmptyDir represents a temporary directory that shares a pod's lifetime. More info:
-    * https://kubernetes.io/docs/concepts/storage/volumes#emptydir
+    * EmptyDir represents a temporary directory that shares a pod's lifetime. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
     */
-  val emptyDir: EmptyDirVolumeSource
+  var emptyDir: EmptyDirVolumeSource = js.native
   /**
-    * FC represents a Fibre Channel resource that is attached to a kubelet's host machine and
-    * then exposed to the pod.
+    * FC represents a Fibre Channel resource that is attached to a kubelet's host machine and then exposed to the pod.
     */
-  val fc: FCVolumeSource
+  var fc: FCVolumeSource = js.native
   /**
-    * FlexVolume represents a generic volume resource that is provisioned/attached using an exec
-    * based plugin.
+    * FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.
     */
-  val flexVolume: FlexVolumeSource
+  var flexVolume: FlexVolumeSource = js.native
   /**
-    * Flocker represents a Flocker volume attached to a kubelet's host machine. This depends on
-    * the Flocker control service being running
+    * Flocker represents a Flocker volume attached to a kubelet's host machine. This depends on the Flocker control service being running
     */
-  val flocker: FlockerVolumeSource
+  var flocker: FlockerVolumeSource = js.native
   /**
-    * GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host
-    * machine and then exposed to the pod. More info:
-    * https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+    * GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
     */
-  val gcePersistentDisk: GCEPersistentDiskVolumeSource
+  var gcePersistentDisk: GCEPersistentDiskVolumeSource = js.native
   /**
-    * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is
-    * deprecated. To provision a container with a git repo, mount an EmptyDir into an
-    * InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's
-    * container.
+    * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.
     */
-  val gitRepo: GitRepoVolumeSource
+  var gitRepo: GitRepoVolumeSource = js.native
   /**
-    * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info:
-    * https://examples.k8s.io/volumes/glusterfs/README.md
+    * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md
     */
-  val glusterfs: GlusterfsVolumeSource
+  var glusterfs: GlusterfsVolumeSource = js.native
   /**
-    * HostPath represents a pre-existing file or directory on the host machine that is directly
-    * exposed to the container. This is generally used for system agents or other privileged
-    * things that are allowed to see the host machine. Most containers will NOT need this. More
-    * info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+    * HostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
     */
-  val hostPath: HostPathVolumeSource
+  var hostPath: HostPathVolumeSource = js.native
   /**
-    * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and
-    * then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
+    * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
     */
-  val iscsi: ISCSIVolumeSource
+  var iscsi: ISCSIVolumeSource = js.native
   /**
-    * Volume's name. Must be a DNS_LABEL and unique within the pod. More info:
-    * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    * Volume's name. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     */
-  val name: String
+  var name: String = js.native
   /**
-    * NFS represents an NFS mount on the host that shares a pod's lifetime More info:
-    * https://kubernetes.io/docs/concepts/storage/volumes#nfs
+    * NFS represents an NFS mount on the host that shares a pod's lifetime More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
     */
-  val nfs: NFSVolumeSource
+  var nfs: NFSVolumeSource = js.native
   /**
-    * PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the
-    * same namespace. More info:
-    * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+    * PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
     */
-  val persistentVolumeClaim: PersistentVolumeClaimVolumeSource
+  var persistentVolumeClaim: PersistentVolumeClaimVolumeSource = js.native
   /**
-    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on
-    * kubelets host machine
+    * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on kubelets host machine
     */
-  val photonPersistentDisk: PhotonPersistentDiskVolumeSource
+  var photonPersistentDisk: PhotonPersistentDiskVolumeSource = js.native
   /**
     * PortworxVolume represents a portworx volume attached and mounted on kubelets host machine
     */
-  val portworxVolume: PortworxVolumeSource
+  var portworxVolume: PortworxVolumeSource = js.native
   /**
     * Items for all in one resources secrets, configmaps, and downward API
     */
-  val projected: ProjectedVolumeSource
+  var projected: ProjectedVolumeSource = js.native
   /**
     * Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
     */
-  val quobyte: QuobyteVolumeSource
+  var quobyte: QuobyteVolumeSource = js.native
   /**
-    * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
-    * info: https://examples.k8s.io/volumes/rbd/README.md
+    * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md
     */
-  val rbd: RBDVolumeSource
+  var rbd: RBDVolumeSource = js.native
   /**
     * ScaleIO represents a ScaleIO persistent volume attached and mounted on Kubernetes nodes.
     */
-  val scaleIO: ScaleIOVolumeSource
+  var scaleIO: ScaleIOVolumeSource = js.native
   /**
-    * Secret represents a secret that should populate this volume. More info:
-    * https://kubernetes.io/docs/concepts/storage/volumes#secret
+    * Secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
     */
-  val secret: SecretVolumeSource
+  var secret: SecretVolumeSource = js.native
   /**
     * StorageOS represents a StorageOS volume attached and mounted on Kubernetes nodes.
     */
-  val storageos: StorageOSVolumeSource
+  var storageos: StorageOSVolumeSource = js.native
   /**
     * VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
     */
-  val vsphereVolume: VsphereVirtualDiskVolumeSource
+  var vsphereVolume: VsphereVirtualDiskVolumeSource = js.native
 }
 
 object Volume {
@@ -187,5 +163,76 @@ object Volume {
     val __obj = js.Dynamic.literal(awsElasticBlockStore = awsElasticBlockStore.asInstanceOf[js.Any], azureDisk = azureDisk.asInstanceOf[js.Any], azureFile = azureFile.asInstanceOf[js.Any], cephfs = cephfs.asInstanceOf[js.Any], cinder = cinder.asInstanceOf[js.Any], configMap = configMap.asInstanceOf[js.Any], csi = csi.asInstanceOf[js.Any], downwardAPI = downwardAPI.asInstanceOf[js.Any], emptyDir = emptyDir.asInstanceOf[js.Any], fc = fc.asInstanceOf[js.Any], flexVolume = flexVolume.asInstanceOf[js.Any], flocker = flocker.asInstanceOf[js.Any], gcePersistentDisk = gcePersistentDisk.asInstanceOf[js.Any], gitRepo = gitRepo.asInstanceOf[js.Any], glusterfs = glusterfs.asInstanceOf[js.Any], hostPath = hostPath.asInstanceOf[js.Any], iscsi = iscsi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nfs = nfs.asInstanceOf[js.Any], persistentVolumeClaim = persistentVolumeClaim.asInstanceOf[js.Any], photonPersistentDisk = photonPersistentDisk.asInstanceOf[js.Any], portworxVolume = portworxVolume.asInstanceOf[js.Any], projected = projected.asInstanceOf[js.Any], quobyte = quobyte.asInstanceOf[js.Any], rbd = rbd.asInstanceOf[js.Any], scaleIO = scaleIO.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], storageos = storageos.asInstanceOf[js.Any], vsphereVolume = vsphereVolume.asInstanceOf[js.Any])
     __obj.asInstanceOf[Volume]
   }
+  @scala.inline
+  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsElasticBlockStore(value: AWSElasticBlockStoreVolumeSource): Self = this.set("awsElasticBlockStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAzureDisk(value: AzureDiskVolumeSource): Self = this.set("azureDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAzureFile(value: AzureFileVolumeSource): Self = this.set("azureFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCephfs(value: CephFSVolumeSource): Self = this.set("cephfs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCinder(value: CinderVolumeSource): Self = this.set("cinder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigMap(value: ConfigMapVolumeSource): Self = this.set("configMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCsi(value: CSIVolumeSource): Self = this.set("csi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDownwardAPI(value: DownwardAPIVolumeSource): Self = this.set("downwardAPI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmptyDir(value: EmptyDirVolumeSource): Self = this.set("emptyDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFc(value: FCVolumeSource): Self = this.set("fc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlexVolume(value: FlexVolumeSource): Self = this.set("flexVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlocker(value: FlockerVolumeSource): Self = this.set("flocker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGcePersistentDisk(value: GCEPersistentDiskVolumeSource): Self = this.set("gcePersistentDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGitRepo(value: GitRepoVolumeSource): Self = this.set("gitRepo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlusterfs(value: GlusterfsVolumeSource): Self = this.set("glusterfs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostPath(value: HostPathVolumeSource): Self = this.set("hostPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIscsi(value: ISCSIVolumeSource): Self = this.set("iscsi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNfs(value: NFSVolumeSource): Self = this.set("nfs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPersistentVolumeClaim(value: PersistentVolumeClaimVolumeSource): Self = this.set("persistentVolumeClaim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhotonPersistentDisk(value: PhotonPersistentDiskVolumeSource): Self = this.set("photonPersistentDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortworxVolume(value: PortworxVolumeSource): Self = this.set("portworxVolume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjected(value: ProjectedVolumeSource): Self = this.set("projected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuobyte(value: QuobyteVolumeSource): Self = this.set("quobyte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRbd(value: RBDVolumeSource): Self = this.set("rbd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScaleIO(value: ScaleIOVolumeSource): Self = this.set("scaleIO", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecret(value: SecretVolumeSource): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStorageos(value: StorageOSVolumeSource): Self = this.set("storageos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVsphereVolume(value: VsphereVirtualDiskVolumeSource): Self = this.set("vsphereVolume", value.asInstanceOf[js.Any])
+  }
+  
 }
 

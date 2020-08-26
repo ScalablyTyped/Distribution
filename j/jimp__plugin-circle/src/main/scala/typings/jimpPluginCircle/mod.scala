@@ -13,6 +13,7 @@ object mod extends js.Object {
   trait Circle extends js.Object {
     def circle(): this.type = js.native
     def circle(cb: ImageCallback[this.type]): this.type = js.native
+    def circle(options: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
     def circle(options: Radius): this.type = js.native
     def circle(options: Radius, cb: ImageCallback[this.type]): this.type = js.native
   }

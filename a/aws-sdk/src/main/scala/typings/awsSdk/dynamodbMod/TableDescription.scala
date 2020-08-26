@@ -94,52 +94,116 @@ trait TableDescription extends js.Object {
 
 object TableDescription {
   @scala.inline
-  def apply(
-    ArchivalSummary: ArchivalSummary = null,
-    AttributeDefinitions: AttributeDefinitions = null,
-    BillingModeSummary: BillingModeSummary = null,
-    CreationDateTime: Date = null,
-    GlobalSecondaryIndexes: GlobalSecondaryIndexDescriptionList = null,
-    GlobalTableVersion: String = null,
-    ItemCount: js.UndefOr[Long] = js.undefined,
-    KeySchema: KeySchema = null,
-    LatestStreamArn: StreamArn = null,
-    LatestStreamLabel: String = null,
-    LocalSecondaryIndexes: LocalSecondaryIndexDescriptionList = null,
-    ProvisionedThroughput: ProvisionedThroughputDescription = null,
-    Replicas: ReplicaDescriptionList = null,
-    RestoreSummary: RestoreSummary = null,
-    SSEDescription: SSEDescription = null,
-    StreamSpecification: StreamSpecification = null,
-    TableArn: String = null,
-    TableId: TableId = null,
-    TableName: TableName = null,
-    TableSizeBytes: js.UndefOr[Long] = js.undefined,
-    TableStatus: TableStatus = null
-  ): TableDescription = {
+  def apply(): TableDescription = {
     val __obj = js.Dynamic.literal()
-    if (ArchivalSummary != null) __obj.updateDynamic("ArchivalSummary")(ArchivalSummary.asInstanceOf[js.Any])
-    if (AttributeDefinitions != null) __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions.asInstanceOf[js.Any])
-    if (BillingModeSummary != null) __obj.updateDynamic("BillingModeSummary")(BillingModeSummary.asInstanceOf[js.Any])
-    if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime.asInstanceOf[js.Any])
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (GlobalTableVersion != null) __obj.updateDynamic("GlobalTableVersion")(GlobalTableVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
-    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
-    if (LatestStreamArn != null) __obj.updateDynamic("LatestStreamArn")(LatestStreamArn.asInstanceOf[js.Any])
-    if (LatestStreamLabel != null) __obj.updateDynamic("LatestStreamLabel")(LatestStreamLabel.asInstanceOf[js.Any])
-    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes.asInstanceOf[js.Any])
-    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput.asInstanceOf[js.Any])
-    if (Replicas != null) __obj.updateDynamic("Replicas")(Replicas.asInstanceOf[js.Any])
-    if (RestoreSummary != null) __obj.updateDynamic("RestoreSummary")(RestoreSummary.asInstanceOf[js.Any])
-    if (SSEDescription != null) __obj.updateDynamic("SSEDescription")(SSEDescription.asInstanceOf[js.Any])
-    if (StreamSpecification != null) __obj.updateDynamic("StreamSpecification")(StreamSpecification.asInstanceOf[js.Any])
-    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn.asInstanceOf[js.Any])
-    if (TableId != null) __obj.updateDynamic("TableId")(TableId.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(TableSizeBytes)) __obj.updateDynamic("TableSizeBytes")(TableSizeBytes.get.asInstanceOf[js.Any])
-    if (TableStatus != null) __obj.updateDynamic("TableStatus")(TableStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableDescription]
   }
+  @scala.inline
+  implicit class TableDescriptionOps[Self <: TableDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchivalSummary(value: ArchivalSummary): Self = this.set("ArchivalSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchivalSummary: Self = this.set("ArchivalSummary", js.undefined)
+    @scala.inline
+    def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = this.set("AttributeDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setAttributeDefinitions(value: AttributeDefinitions): Self = this.set("AttributeDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeDefinitions: Self = this.set("AttributeDefinitions", js.undefined)
+    @scala.inline
+    def setBillingModeSummary(value: BillingModeSummary): Self = this.set("BillingModeSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingModeSummary: Self = this.set("BillingModeSummary", js.undefined)
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("CreationDateTime", js.undefined)
+    @scala.inline
+    def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndexDescription*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexDescriptionList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setGlobalTableVersion(value: String): Self = this.set("GlobalTableVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalTableVersion: Self = this.set("GlobalTableVersion", js.undefined)
+    @scala.inline
+    def setItemCount(value: Long): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    @scala.inline
+    def setLatestStreamArn(value: StreamArn): Self = this.set("LatestStreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestStreamArn: Self = this.set("LatestStreamArn", js.undefined)
+    @scala.inline
+    def setLatestStreamLabel(value: String): Self = this.set("LatestStreamLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestStreamLabel: Self = this.set("LatestStreamLabel", js.undefined)
+    @scala.inline
+    def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndexDescription*): Self = this.set("LocalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setLocalSecondaryIndexes(value: LocalSecondaryIndexDescriptionList): Self = this.set("LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSecondaryIndexes: Self = this.set("LocalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setProvisionedThroughput(value: ProvisionedThroughputDescription): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+    @scala.inline
+    def setReplicasVarargs(value: ReplicaDescription*): Self = this.set("Replicas", js.Array(value :_*))
+    @scala.inline
+    def setReplicas(value: ReplicaDescriptionList): Self = this.set("Replicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicas: Self = this.set("Replicas", js.undefined)
+    @scala.inline
+    def setRestoreSummary(value: RestoreSummary): Self = this.set("RestoreSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreSummary: Self = this.set("RestoreSummary", js.undefined)
+    @scala.inline
+    def setSSEDescription(value: SSEDescription): Self = this.set("SSEDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEDescription: Self = this.set("SSEDescription", js.undefined)
+    @scala.inline
+    def setStreamSpecification(value: StreamSpecification): Self = this.set("StreamSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSpecification: Self = this.set("StreamSpecification", js.undefined)
+    @scala.inline
+    def setTableArn(value: String): Self = this.set("TableArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableArn: Self = this.set("TableArn", js.undefined)
+    @scala.inline
+    def setTableId(value: TableId): Self = this.set("TableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("TableId", js.undefined)
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+    @scala.inline
+    def setTableSizeBytes(value: Long): Self = this.set("TableSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableSizeBytes: Self = this.set("TableSizeBytes", js.undefined)
+    @scala.inline
+    def setTableStatus(value: TableStatus): Self = this.set("TableStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableStatus: Self = this.set("TableStatus", js.undefined)
+  }
+  
 }
 

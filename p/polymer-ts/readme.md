@@ -12,7 +12,7 @@ Polymer 1.0 for TypeScript
 | Keywords           | polymer, typescript |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 688 |
+| # downloads        | 631 |
 | # stars            | 0 |
 
 ## Links

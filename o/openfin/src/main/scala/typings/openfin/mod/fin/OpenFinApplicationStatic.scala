@@ -22,7 +22,7 @@ Instantiable1[/* options */ ApplicationOption, OpenFinApplication]
     ]
      with Instantiable3[
       /* options */ ApplicationOption, 
-      /* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit], 
+      js.UndefOr[/* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit]], 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinApplication
     ] {
@@ -30,6 +30,11 @@ Instantiable1[/* options */ ApplicationOption, OpenFinApplication]
     * Launches the given Application manifest.
     */
   def createFromManifest(manifestUrl: String): Unit = js.native
+  def createFromManifest(
+    manifestUrl: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def createFromManifest(manifestUrl: String, callback: js.Function1[/* app */ OpenFinApplication, Unit]): Unit = js.native
   def createFromManifest(
     manifestUrl: String,

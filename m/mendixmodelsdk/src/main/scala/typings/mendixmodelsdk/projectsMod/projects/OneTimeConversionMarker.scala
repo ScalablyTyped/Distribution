@@ -25,7 +25,7 @@ class OneTimeConversionMarker protected () extends Element {
   var model_FOneTimeConversionMarker: IModel = js.native
   def containerAsProjectConversion: ProjectConversion = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
 }
 
 /* static members */

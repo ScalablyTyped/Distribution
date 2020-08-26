@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_utm"
-version := "0.0-dt-20200515Z-9681a0"
-scalaVersion := "2.13.2"
+version := "0.0-dt-20200515Z-ee4c6e"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

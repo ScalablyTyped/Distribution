@@ -90,6 +90,7 @@ trait IMsoChart extends js.Object {
   def BarGroups(): js.Any = js.native
   def BarGroups(Index: js.Any): js.Any = js.native
   def ChartGroups(): js.Any = js.native
+  def ChartGroups(pvarIndex: js.UndefOr[scala.Nothing], varIgallery: js.Any): js.Any = js.native
   def ChartGroups(pvarIndex: js.Any): js.Any = js.native
   def ChartGroups(pvarIndex: js.Any, varIgallery: js.Any): js.Any = js.native
   def ChartWizard(
@@ -116,7 +117,11 @@ trait IMsoChart extends js.Object {
     * @param Size [Size=2]
     */
   def CopyPicture(): Unit = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: js.UndefOr[scala.Nothing], Size: Double): Unit = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: Double): Unit = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: Double, Size: Double): Unit = js.native
   def CopyPicture(Appearance: Double): Unit = js.native
+  def CopyPicture(Appearance: Double, Format: js.UndefOr[scala.Nothing], Size: Double): Unit = js.native
   def CopyPicture(Appearance: Double, Format: Double): Unit = js.native
   def CopyPicture(Appearance: Double, Format: Double, Size: Double): Unit = js.native
   def Delete(): js.Any = js.native
@@ -124,12 +129,14 @@ trait IMsoChart extends js.Object {
   def DoughnutGroups(): js.Any = js.native
   def DoughnutGroups(Index: js.Any): js.Any = js.native
   def Export(bstr: String): Boolean = js.native
+  def Export(bstr: String, varFilterName: js.UndefOr[scala.Nothing], varInteractive: js.Any): Boolean = js.native
   def Export(bstr: String, varFilterName: js.Any): Boolean = js.native
   def Export(bstr: String, varFilterName: js.Any, varInteractive: js.Any): Boolean = js.native
   def FullSeriesCollection(): js.Any = js.native
   def FullSeriesCollection(Index: js.Any): js.Any = js.native
   def GetChartElement(x: Double, y: Double, ElementID: Double, Arg1: Double, Arg2: Double): Unit = js.native
   def HasAxis(): js.Any = js.native
+  def HasAxis(axisType: js.UndefOr[scala.Nothing], AxisGroup: js.Any): js.Any = js.native
   def HasAxis(axisType: js.Any): js.Any = js.native
   def HasAxis(axisType: js.Any, AxisGroup: js.Any): js.Any = js.native
   def LineGroups(): js.Any = js.native
@@ -157,8 +164,49 @@ trait IMsoChart extends js.Object {
   def XYGroups(Index: js.Any): js.Any = js.native
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): Unit = js.native
+  def _ApplyDataLabels(
+    Type: js.UndefOr[scala.Nothing],
+    IMsoLegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): Unit = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], IMsoLegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): Unit = js.native
+  def _ApplyDataLabels(
+    Type: js.UndefOr[scala.Nothing],
+    IMsoLegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.Any,
+    HasLeaderLines: js.Any
+  ): Unit = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], IMsoLegendKey: js.Any): Unit = js.native
+  def _ApplyDataLabels(
+    Type: js.UndefOr[scala.Nothing],
+    IMsoLegendKey: js.Any,
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): Unit = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], IMsoLegendKey: js.Any, AutoText: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], IMsoLegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): Unit = js.native
+  def _ApplyDataLabels(
+    Type: XlDataLabelsType,
+    IMsoLegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): Unit = js.native
+  def _ApplyDataLabels(
+    Type: XlDataLabelsType,
+    IMsoLegendKey: js.UndefOr[scala.Nothing],
+    AutoText: js.Any,
+    HasLeaderLines: js.Any
+  ): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.Any): Unit = js.native
+  def _ApplyDataLabels(
+    Type: XlDataLabelsType,
+    IMsoLegendKey: js.Any,
+    AutoText: js.UndefOr[scala.Nothing],
+    HasLeaderLines: js.Any
+  ): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.Any, AutoText: js.Any): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, IMsoLegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
 }

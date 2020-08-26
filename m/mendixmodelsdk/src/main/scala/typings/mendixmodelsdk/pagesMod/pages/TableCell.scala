@@ -28,39 +28,37 @@ class TableCell protected () extends Element {
     * In version 8.0.0: introduced
     */
   def appearance: Appearance = js.native
-  def appearance(newValue: Appearance): js.Any = js.native
+  def appearance_=(newValue: Appearance): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def `class`: String = js.native
-  def `class`(newValue: String): js.Any = js.native
+  def class_=(newValue: String): Unit = js.native
   def containerAsTable: Table = js.native
   def height: Double = js.native
-  def height(newValue: Double): js.Any = js.native
+  def height_=(newValue: Double): Unit = js.native
   def isHeader: Boolean = js.native
-  def isHeader(newValue: Boolean): js.Any = js.native
+  def isHeader_=(newValue: Boolean): Unit = js.native
   def leftColumnIndex: Double = js.native
-  def leftColumnIndex(newValue: Double): js.Any = js.native
+  def leftColumnIndex_=(newValue: Double): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def style: String = js.native
-  def style(newValue: String): js.Any = js.native
+  def style_=(newValue: String): Unit = js.native
   def topRowIndex: Double = js.native
-  def topRowIndex(newValue: Double): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def topRowIndex_=(newValue: Double): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */
   def widgets: IList[Widget] = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

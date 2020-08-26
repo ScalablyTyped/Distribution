@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__logger
 
-Typings are for version 5.0.2
+Typings are for version 5.0.4
 
 ## Library description:
 Logger utility functions for ethers.

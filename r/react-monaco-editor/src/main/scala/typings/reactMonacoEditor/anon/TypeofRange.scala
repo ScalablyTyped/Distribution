@@ -38,6 +38,7 @@ trait TypeofRange extends Instantiable4[
     * It will first compare ranges on the startPosition and then on the endPosition
     */
   def compareRangesUsingStarts(): Double = js.native
+  def compareRangesUsingStarts(a: js.UndefOr[scala.Nothing], b: IRange): Double = js.native
   def compareRangesUsingStarts(a: Null, b: IRange): Double = js.native
   def compareRangesUsingStarts(a: IRange): Double = js.native
   def compareRangesUsingStarts(a: IRange, b: IRange): Double = js.native
@@ -49,12 +50,12 @@ trait TypeofRange extends Instantiable4[
     * Test if `otherRange` is in `range`. If the ranges are equal, will return true.
     */
   def containsRange(range: IRange, otherRange: IRange): Boolean = js.native
-  def equalsRange(): Boolean = js.native
-  def equalsRange(a: Null, b: IRange): Boolean = js.native
-  def equalsRange(a: IRange): Boolean = js.native
   /**
     * Test if range `a` equals `b`.
     */
+  def equalsRange(): Boolean = js.native
+  def equalsRange(a: Null, b: IRange): Boolean = js.native
+  def equalsRange(a: IRange): Boolean = js.native
   def equalsRange(a: IRange, b: IRange): Boolean = js.native
   def fromPositions(start: IPosition): Range = js.native
   def fromPositions(start: IPosition, end: IPosition): Range = js.native

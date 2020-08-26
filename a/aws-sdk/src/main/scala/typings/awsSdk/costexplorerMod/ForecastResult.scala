@@ -26,18 +26,38 @@ trait ForecastResult extends js.Object {
 
 object ForecastResult {
   @scala.inline
-  def apply(
-    MeanValue: GenericString = null,
-    PredictionIntervalLowerBound: GenericString = null,
-    PredictionIntervalUpperBound: GenericString = null,
-    TimePeriod: DateInterval = null
-  ): ForecastResult = {
+  def apply(): ForecastResult = {
     val __obj = js.Dynamic.literal()
-    if (MeanValue != null) __obj.updateDynamic("MeanValue")(MeanValue.asInstanceOf[js.Any])
-    if (PredictionIntervalLowerBound != null) __obj.updateDynamic("PredictionIntervalLowerBound")(PredictionIntervalLowerBound.asInstanceOf[js.Any])
-    if (PredictionIntervalUpperBound != null) __obj.updateDynamic("PredictionIntervalUpperBound")(PredictionIntervalUpperBound.asInstanceOf[js.Any])
-    if (TimePeriod != null) __obj.updateDynamic("TimePeriod")(TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForecastResult]
   }
+  @scala.inline
+  implicit class ForecastResultOps[Self <: ForecastResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeanValue(value: GenericString): Self = this.set("MeanValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeanValue: Self = this.set("MeanValue", js.undefined)
+    @scala.inline
+    def setPredictionIntervalLowerBound(value: GenericString): Self = this.set("PredictionIntervalLowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictionIntervalLowerBound: Self = this.set("PredictionIntervalLowerBound", js.undefined)
+    @scala.inline
+    def setPredictionIntervalUpperBound(value: GenericString): Self = this.set("PredictionIntervalUpperBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictionIntervalUpperBound: Self = this.set("PredictionIntervalUpperBound", js.undefined)
+    @scala.inline
+    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePeriod: Self = this.set("TimePeriod", js.undefined)
+  }
+  
 }
 

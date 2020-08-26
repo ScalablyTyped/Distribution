@@ -21,47 +21,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonGroupProps extends js.Object {
-  var ariaLabel: js.UndefOr[String] = js.undefined
-  var children: ReactNode
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.undefined
-  var mode: js.UndefOr[checkbox | radio] = js.undefined
+  var ariaLabel: js.UndefOr[String] = js.native
+  var children: ReactNode = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.native
+  var mode: js.UndefOr[checkbox | radio] = js.native
   var onClick: js.UndefOr[
     js.Function2[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double, _]
-  ] = js.undefined
-  var overrides: js.UndefOr[ButtonGroupOverrides] = js.undefined
-  var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var shape: js.UndefOr[default_ | pill | round | square] = js.undefined
-  var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
+  ] = js.native
+  var overrides: js.UndefOr[ButtonGroupOverrides] = js.native
+  var selected: js.UndefOr[Double | js.Array[Double]] = js.native
+  var shape: js.UndefOr[default_ | pill | round | square] = js.native
+  var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
 }
 
 object ButtonGroupProps {
   @scala.inline
-  def apply(
-    ariaLabel: String = null,
-    children: ReactNode = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    kind: primary | secondary | tertiary | minimal = null,
-    mode: checkbox | radio = null,
-    onClick: (/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double) => _ = null,
-    overrides: ButtonGroupOverrides = null,
-    selected: Double | js.Array[Double] = null,
-    shape: default_ | pill | round | square = null,
-    size: compact | default_ | large_ | mini = null
-  ): ButtonGroupProps = {
+  def apply(): ButtonGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupProps]
   }
+  @scala.inline
+  implicit class ButtonGroupPropsOps[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAriaLabel(value: String): Self = this.set("ariaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabel: Self = this.set("ariaLabel", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setKind(value: primary | secondary | tertiary | minimal): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMode(value: checkbox | radio): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOnClick(value: (/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* index */ Double) => _): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOverrides(value: ButtonGroupOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setSelectedVarargs(value: Double*): Self = this.set("selected", js.Array(value :_*))
+    @scala.inline
+    def setSelected(value: Double | js.Array[Double]): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setShape(value: default_ | pill | round | square): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSize(value: compact | default_ | large_ | mini): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

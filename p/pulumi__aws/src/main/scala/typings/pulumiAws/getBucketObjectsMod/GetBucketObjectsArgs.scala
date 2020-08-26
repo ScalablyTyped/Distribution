@@ -38,23 +38,48 @@ trait GetBucketObjectsArgs extends js.Object {
 
 object GetBucketObjectsArgs {
   @scala.inline
-  def apply(
-    bucket: String,
-    delimiter: String = null,
-    encodingType: String = null,
-    fetchOwner: js.UndefOr[Boolean] = js.undefined,
-    maxKeys: js.UndefOr[Double] = js.undefined,
-    prefix: String = null,
-    startAfter: String = null
-  ): GetBucketObjectsArgs = {
+  def apply(bucket: String): GetBucketObjectsArgs = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchOwner)) __obj.updateDynamic("fetchOwner")(fetchOwner.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxKeys)) __obj.updateDynamic("maxKeys")(maxKeys.get.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (startAfter != null) __obj.updateDynamic("startAfter")(startAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketObjectsArgs]
   }
+  @scala.inline
+  implicit class GetBucketObjectsArgsOps[Self <: GetBucketObjectsArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setEncodingType(value: String): Self = this.set("encodingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingType: Self = this.set("encodingType", js.undefined)
+    @scala.inline
+    def setFetchOwner(value: Boolean): Self = this.set("fetchOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchOwner: Self = this.set("fetchOwner", js.undefined)
+    @scala.inline
+    def setMaxKeys(value: Double): Self = this.set("maxKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxKeys: Self = this.set("maxKeys", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setStartAfter(value: String): Self = this.set("startAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAfter: Self = this.set("startAfter", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourceProjectsLogs protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLogsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLogsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -59,6 +60,7 @@ class ResourceProjectsLogs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLogsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(params: ParamsResourceProjectsLogsList): GaxiosPromise[SchemaListLogsResponse] = js.native
   def list(params: ParamsResourceProjectsLogsList, callback: BodyResponseCallback[SchemaListLogsResponse]): Unit = js.native
   def list(

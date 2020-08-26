@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("moment", "tz")
 @js.native
-object tz
-  extends TopLevel[typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.MomentTimezone]
+object tz extends TopLevel[MomentTimezone]
 

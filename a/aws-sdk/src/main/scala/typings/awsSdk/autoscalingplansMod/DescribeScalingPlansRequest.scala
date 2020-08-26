@@ -30,20 +30,46 @@ trait DescribeScalingPlansRequest extends js.Object {
 
 object DescribeScalingPlansRequest {
   @scala.inline
-  def apply(
-    ApplicationSources: ApplicationSources = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    ScalingPlanNames: ScalingPlanNames = null,
-    ScalingPlanVersion: js.UndefOr[ScalingPlanVersion] = js.undefined
-  ): DescribeScalingPlansRequest = {
+  def apply(): DescribeScalingPlansRequest = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationSources != null) __obj.updateDynamic("ApplicationSources")(ApplicationSources.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ScalingPlanNames != null) __obj.updateDynamic("ScalingPlanNames")(ScalingPlanNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScalingPlanVersion)) __obj.updateDynamic("ScalingPlanVersion")(ScalingPlanVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPlansRequest]
   }
+  @scala.inline
+  implicit class DescribeScalingPlansRequestOps[Self <: DescribeScalingPlansRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationSourcesVarargs(value: ApplicationSource*): Self = this.set("ApplicationSources", js.Array(value :_*))
+    @scala.inline
+    def setApplicationSources(value: ApplicationSources): Self = this.set("ApplicationSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationSources: Self = this.set("ApplicationSources", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setScalingPlanNamesVarargs(value: ScalingPlanName*): Self = this.set("ScalingPlanNames", js.Array(value :_*))
+    @scala.inline
+    def setScalingPlanNames(value: ScalingPlanNames): Self = this.set("ScalingPlanNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingPlanNames: Self = this.set("ScalingPlanNames", js.undefined)
+    @scala.inline
+    def setScalingPlanVersion(value: ScalingPlanVersion): Self = this.set("ScalingPlanVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingPlanVersion: Self = this.set("ScalingPlanVersion", js.undefined)
+  }
+  
 }
 

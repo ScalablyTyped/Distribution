@@ -34,22 +34,46 @@ trait HlsSettings extends js.Object {
 
 object HlsSettings {
   @scala.inline
-  def apply(
-    AudioGroupId: string = null,
-    AudioOnlyContainer: HlsAudioOnlyContainer = null,
-    AudioRenditionSets: string = null,
-    AudioTrackType: HlsAudioTrackType = null,
-    IFrameOnlyManifest: HlsIFrameOnlyManifest = null,
-    SegmentModifier: string = null
-  ): HlsSettings = {
+  def apply(): HlsSettings = {
     val __obj = js.Dynamic.literal()
-    if (AudioGroupId != null) __obj.updateDynamic("AudioGroupId")(AudioGroupId.asInstanceOf[js.Any])
-    if (AudioOnlyContainer != null) __obj.updateDynamic("AudioOnlyContainer")(AudioOnlyContainer.asInstanceOf[js.Any])
-    if (AudioRenditionSets != null) __obj.updateDynamic("AudioRenditionSets")(AudioRenditionSets.asInstanceOf[js.Any])
-    if (AudioTrackType != null) __obj.updateDynamic("AudioTrackType")(AudioTrackType.asInstanceOf[js.Any])
-    if (IFrameOnlyManifest != null) __obj.updateDynamic("IFrameOnlyManifest")(IFrameOnlyManifest.asInstanceOf[js.Any])
-    if (SegmentModifier != null) __obj.updateDynamic("SegmentModifier")(SegmentModifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsSettings]
   }
+  @scala.inline
+  implicit class HlsSettingsOps[Self <: HlsSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioGroupId(value: string): Self = this.set("AudioGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioGroupId: Self = this.set("AudioGroupId", js.undefined)
+    @scala.inline
+    def setAudioOnlyContainer(value: HlsAudioOnlyContainer): Self = this.set("AudioOnlyContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioOnlyContainer: Self = this.set("AudioOnlyContainer", js.undefined)
+    @scala.inline
+    def setAudioRenditionSets(value: string): Self = this.set("AudioRenditionSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioRenditionSets: Self = this.set("AudioRenditionSets", js.undefined)
+    @scala.inline
+    def setAudioTrackType(value: HlsAudioTrackType): Self = this.set("AudioTrackType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioTrackType: Self = this.set("AudioTrackType", js.undefined)
+    @scala.inline
+    def setIFrameOnlyManifest(value: HlsIFrameOnlyManifest): Self = this.set("IFrameOnlyManifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIFrameOnlyManifest: Self = this.set("IFrameOnlyManifest", js.undefined)
+    @scala.inline
+    def setSegmentModifier(value: string): Self = this.set("SegmentModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentModifier: Self = this.set("SegmentModifier", js.undefined)
+  }
+  
 }
 

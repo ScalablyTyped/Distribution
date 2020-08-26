@@ -15,7 +15,39 @@ object mod extends js.Object {
     extends typings.subscriptionsTransportWs.clientMod.SubscriptionClient {
     def this(url: String) = this()
     def this(url: String, options: ClientOptions) = this()
+    def this(url: String, options: js.UndefOr[scala.Nothing], webSocketImpl: js.Any) = this()
     def this(url: String, options: ClientOptions, webSocketImpl: js.Any) = this()
+    def this(
+      url: String,
+      options: js.UndefOr[scala.Nothing],
+      webSocketImpl: js.UndefOr[scala.Nothing],
+      webSocketProtocols: String
+    ) = this()
+    def this(
+      url: String,
+      options: js.UndefOr[scala.Nothing],
+      webSocketImpl: js.UndefOr[scala.Nothing],
+      webSocketProtocols: js.Array[String]
+    ) = this()
+    def this(url: String, options: js.UndefOr[scala.Nothing], webSocketImpl: js.Any, webSocketProtocols: String) = this()
+    def this(
+      url: String,
+      options: js.UndefOr[scala.Nothing],
+      webSocketImpl: js.Any,
+      webSocketProtocols: js.Array[String]
+    ) = this()
+    def this(
+      url: String,
+      options: ClientOptions,
+      webSocketImpl: js.UndefOr[scala.Nothing],
+      webSocketProtocols: String
+    ) = this()
+    def this(
+      url: String,
+      options: ClientOptions,
+      webSocketImpl: js.UndefOr[scala.Nothing],
+      webSocketProtocols: js.Array[String]
+    ) = this()
     def this(url: String, options: ClientOptions, webSocketImpl: js.Any, webSocketProtocols: String) = this()
     def this(url: String, options: ClientOptions, webSocketImpl: js.Any, webSocketProtocols: js.Array[String]) = this()
   }

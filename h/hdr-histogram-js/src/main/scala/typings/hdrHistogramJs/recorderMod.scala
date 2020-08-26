@@ -133,7 +133,23 @@ object recorderMod extends js.Object {
     */
   class default () extends Recorder {
     def this(numberOfSignificantValueDigits: Double) = this()
+    def this(numberOfSignificantValueDigits: js.UndefOr[scala.Nothing], packed: Boolean) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean) = this()
+    def this(
+      numberOfSignificantValueDigits: js.UndefOr[scala.Nothing],
+      packed: js.UndefOr[scala.Nothing],
+      clock: js.Function0[Double]
+    ) = this()
+    def this(
+      numberOfSignificantValueDigits: js.UndefOr[scala.Nothing],
+      packed: Boolean,
+      clock: js.Function0[Double]
+    ) = this()
+    def this(
+      numberOfSignificantValueDigits: Double,
+      packed: js.UndefOr[scala.Nothing],
+      clock: js.Function0[Double]
+    ) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean, clock: js.Function0[Double]) = this()
   }
   

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/spacing", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/spacing", JSImport.Namespace)
 @js.native
 object spacingMod extends js.Object {
   val propAliases: PropAliases = js.native

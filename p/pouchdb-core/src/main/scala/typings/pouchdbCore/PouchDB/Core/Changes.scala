@@ -4,15 +4,14 @@ import typings.pouchdbCore.EventEmitter
 import typings.pouchdbCore.pouchdbCoreStrings.change
 import typings.pouchdbCore.pouchdbCoreStrings.complete
 import typings.pouchdbCore.pouchdbCoreStrings.error
-import typings.std.Promise
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait Changes[Content /* <: js.Object */]
-  extends EventEmitter
-     with Promise[ChangesResponse[Content]] {
+  extends js.Promise[ChangesResponse[Content]]
+     with EventEmitter {
   def cancel(): Unit = js.native
   @JSName("on")
   def on_change(event: change, listener: js.Function1[/* value */ ChangesResponseChange[Content], _]): this.type = js.native

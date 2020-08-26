@@ -4,33 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Cart extends GraphModel {
   /**
     * Get checkout URL for current cart
     */
-  var checkoutUrl: String
+  var checkoutUrl: String = js.native
   /**
     * Get completed at date.
     */
-  var completedAt: String | Null
+  var completedAt: String | Null = js.native
   /**
     * get ID for current cart
     */
-  var id: String | Double
+  var id: String | Double = js.native
   /**
     * Gets the total quantity of all line items. Example: you've added two variants
     * with quantities 3 and 2. lineItemCount will be 5.
     */
-  var lineItemCount: Double
+  var lineItemCount: Double = js.native
   /**
     * Get an Array of CartLineItemModel's
     */
-  var lineItems: js.Array[LineItem]
+  var lineItems: js.Array[LineItem] = js.native
   /**
     * Get current subtotal price for all line items, before shipping, taxes, and discounts.
     * Example: two items have been added to the cart that cost $1.25 then the subtotal will be 2.50
     */
-  var subtotalPrice: String
+  var subtotalPrice: String = js.native
 }
 
 object Cart {
@@ -40,15 +41,39 @@ object Cart {
     id: String | Double,
     lineItemCount: Double,
     lineItems: js.Array[LineItem],
-    subtotalPrice: String,
-    attrs: js.Any = null,
-    completedAt: String = null,
-    onlineStoreUrl: String = null
+    subtotalPrice: String
   ): Cart = {
-    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any], completedAt = completedAt.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkoutUrl = checkoutUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lineItemCount = lineItemCount.asInstanceOf[js.Any], lineItems = lineItems.asInstanceOf[js.Any], subtotalPrice = subtotalPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cart]
   }
+  @scala.inline
+  implicit class CartOps[Self <: Cart] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckoutUrl(value: String): Self = this.set("checkoutUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineItemCount(value: Double): Self = this.set("lineItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineItemsVarargs(value: LineItem*): Self = this.set("lineItems", js.Array(value :_*))
+    @scala.inline
+    def setLineItems(value: js.Array[LineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubtotalPrice(value: String): Self = this.set("subtotalPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompletedAt(value: String): Self = this.set("completedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompletedAtNull: Self = this.set("completedAt", null)
+  }
+  
 }
 

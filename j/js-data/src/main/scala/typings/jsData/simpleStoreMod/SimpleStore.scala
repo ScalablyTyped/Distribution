@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 trait SimpleStore extends Container {
   var _collections: StringDictionary[typings.jsData.collectionMod.default] = js.native
   var collectionClass: Instantiable2[
-    js.UndefOr[/* records */ js.Any], 
-    js.UndefOr[CollectionOpts | String | js.Any], 
+    /* records */ js.UndefOr[js.Any], 
+    /* opts */ js.UndefOr[CollectionOpts | String | js.Any], 
     typings.jsData.collectionMod.default
   ] = js.native
   var usePendingFind: Boolean = js.native
@@ -474,9 +474,11 @@ trait SimpleStore extends Container {
     * @since 3.0.0
     */
   def createIndex(name: String, indexName: String): Unit = js.native
+  def createIndex(name: String, indexName: String, fieldList: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
   def createIndex(name: String, indexName: String, fieldList: js.Array[String]): Unit = js.native
   def createIndex(name: String, indexName: String, fieldList: js.Array[String], opts: js.Any): Unit = js.native
   def createIndex(name: Double, indexName: String): Unit = js.native
+  def createIndex(name: Double, indexName: String, fieldList: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
   def createIndex(name: Double, indexName: String, fieldList: js.Array[String]): Unit = js.native
   def createIndex(name: Double, indexName: String, fieldList: js.Array[String], opts: js.Any): Unit = js.native
   /**
@@ -795,6 +797,7 @@ trait SimpleStore extends Container {
     * @since 3.0.0
     */
   def filter(name: js.Any): js.Any = js.native
+  def filter(name: js.Any, queryOrFn: js.UndefOr[scala.Nothing], thisArg: js.Any): js.Any = js.native
   def filter(name: js.Any, queryOrFn: js.Any): js.Any = js.native
   def filter(name: js.Any, queryOrFn: js.Any, thisArg: js.Any): js.Any = js.native
   /**

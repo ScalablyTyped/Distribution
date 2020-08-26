@@ -5,111 +5,156 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2OrdersOrderUpdate extends js.Object {
   /**
     * Required. The canonical order id referencing this order.
     * If integrators don't generate the canonical order id in their system,
     * they can simply copy over google_order_id included in order.
     */
-  var actionOrderId: js.UndefOr[String] = js.undefined
+  var actionOrderId: js.UndefOr[String] = js.native
   /**
     * Information about cancellation state.
     */
-  var cancellationInfo: js.UndefOr[GoogleActionsV2OrdersCancellationInfo] = js.undefined
+  var cancellationInfo: js.UndefOr[GoogleActionsV2OrdersCancellationInfo] = js.native
   /**
     * Information about fulfillment state.
     */
-  var fulfillmentInfo: js.UndefOr[GoogleActionsV2OrdersFulfillmentInfo] = js.undefined
+  var fulfillmentInfo: js.UndefOr[GoogleActionsV2OrdersFulfillmentInfo] = js.native
   /**
     * Id of the order is the Google-issued id.
     */
-  var googleOrderId: js.UndefOr[String] = js.undefined
+  var googleOrderId: js.UndefOr[String] = js.native
   /**
     * Information about in transit state.
     */
-  var inTransitInfo: js.UndefOr[GoogleActionsV2OrdersInTransitInfo] = js.undefined
+  var inTransitInfo: js.UndefOr[GoogleActionsV2OrdersInTransitInfo] = js.native
   /**
     * Extra data based on a custom order state or in addition to info of a
     * standard state.
     */
-  var infoExtension: js.UndefOr[ApiClientObjectMap[_]] = js.undefined
+  var infoExtension: js.UndefOr[ApiClientObjectMap[_]] = js.native
   /**
     * Map of line item-level changes, keyed by item id. Optional.
     */
-  var lineItemUpdates: js.UndefOr[ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]] = js.undefined
+  var lineItemUpdates: js.UndefOr[ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]] = js.native
   /**
     * Updated applicable management actions for the order, e.g. manage, modify,
     * contact support.
     */
-  var orderManagementActions: js.UndefOr[js.Array[GoogleActionsV2OrdersOrderUpdateAction]] = js.undefined
+  var orderManagementActions: js.UndefOr[js.Array[GoogleActionsV2OrdersOrderUpdateAction]] = js.native
   /**
     * The new state of the order.
     */
-  var orderState: js.UndefOr[GoogleActionsV2OrdersOrderState] = js.undefined
+  var orderState: js.UndefOr[GoogleActionsV2OrdersOrderState] = js.native
   /**
     * Receipt for order.
     */
-  var receipt: js.UndefOr[GoogleActionsV2OrdersReceipt] = js.undefined
+  var receipt: js.UndefOr[GoogleActionsV2OrdersReceipt] = js.native
   /**
     * Information about rejection state.
     */
-  var rejectionInfo: js.UndefOr[GoogleActionsV2OrdersRejectionInfo] = js.undefined
+  var rejectionInfo: js.UndefOr[GoogleActionsV2OrdersRejectionInfo] = js.native
   /**
     * Information about returned state.
     */
-  var returnInfo: js.UndefOr[GoogleActionsV2OrdersReturnInfo] = js.undefined
+  var returnInfo: js.UndefOr[GoogleActionsV2OrdersReturnInfo] = js.native
   /**
     * New total price of the order
     */
-  var totalPrice: js.UndefOr[GoogleActionsV2OrdersPrice] = js.undefined
+  var totalPrice: js.UndefOr[GoogleActionsV2OrdersPrice] = js.native
   /**
     * When the order was updated from the app's perspective.
     */
-  var updateTime: js.UndefOr[String] = js.undefined
+  var updateTime: js.UndefOr[String] = js.native
   /**
     * If specified, displays a notification to the user with the specified
     * title and text. Specifying a notification is a suggestion to
     * notify and is not guaranteed to result in a notification.
     */
-  var userNotification: js.UndefOr[GoogleActionsV2OrdersOrderUpdateUserNotification] = js.undefined
+  var userNotification: js.UndefOr[GoogleActionsV2OrdersOrderUpdateUserNotification] = js.native
 }
 
 object GoogleActionsV2OrdersOrderUpdate {
   @scala.inline
-  def apply(
-    actionOrderId: String = null,
-    cancellationInfo: GoogleActionsV2OrdersCancellationInfo = null,
-    fulfillmentInfo: GoogleActionsV2OrdersFulfillmentInfo = null,
-    googleOrderId: String = null,
-    inTransitInfo: GoogleActionsV2OrdersInTransitInfo = null,
-    infoExtension: ApiClientObjectMap[_] = null,
-    lineItemUpdates: ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate] = null,
-    orderManagementActions: js.Array[GoogleActionsV2OrdersOrderUpdateAction] = null,
-    orderState: GoogleActionsV2OrdersOrderState = null,
-    receipt: GoogleActionsV2OrdersReceipt = null,
-    rejectionInfo: GoogleActionsV2OrdersRejectionInfo = null,
-    returnInfo: GoogleActionsV2OrdersReturnInfo = null,
-    totalPrice: GoogleActionsV2OrdersPrice = null,
-    updateTime: String = null,
-    userNotification: GoogleActionsV2OrdersOrderUpdateUserNotification = null
-  ): GoogleActionsV2OrdersOrderUpdate = {
+  def apply(): GoogleActionsV2OrdersOrderUpdate = {
     val __obj = js.Dynamic.literal()
-    if (actionOrderId != null) __obj.updateDynamic("actionOrderId")(actionOrderId.asInstanceOf[js.Any])
-    if (cancellationInfo != null) __obj.updateDynamic("cancellationInfo")(cancellationInfo.asInstanceOf[js.Any])
-    if (fulfillmentInfo != null) __obj.updateDynamic("fulfillmentInfo")(fulfillmentInfo.asInstanceOf[js.Any])
-    if (googleOrderId != null) __obj.updateDynamic("googleOrderId")(googleOrderId.asInstanceOf[js.Any])
-    if (inTransitInfo != null) __obj.updateDynamic("inTransitInfo")(inTransitInfo.asInstanceOf[js.Any])
-    if (infoExtension != null) __obj.updateDynamic("infoExtension")(infoExtension.asInstanceOf[js.Any])
-    if (lineItemUpdates != null) __obj.updateDynamic("lineItemUpdates")(lineItemUpdates.asInstanceOf[js.Any])
-    if (orderManagementActions != null) __obj.updateDynamic("orderManagementActions")(orderManagementActions.asInstanceOf[js.Any])
-    if (orderState != null) __obj.updateDynamic("orderState")(orderState.asInstanceOf[js.Any])
-    if (receipt != null) __obj.updateDynamic("receipt")(receipt.asInstanceOf[js.Any])
-    if (rejectionInfo != null) __obj.updateDynamic("rejectionInfo")(rejectionInfo.asInstanceOf[js.Any])
-    if (returnInfo != null) __obj.updateDynamic("returnInfo")(returnInfo.asInstanceOf[js.Any])
-    if (totalPrice != null) __obj.updateDynamic("totalPrice")(totalPrice.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderUpdate]
   }
+  @scala.inline
+  implicit class GoogleActionsV2OrdersOrderUpdateOps[Self <: GoogleActionsV2OrdersOrderUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionOrderId(value: String): Self = this.set("actionOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionOrderId: Self = this.set("actionOrderId", js.undefined)
+    @scala.inline
+    def setCancellationInfo(value: GoogleActionsV2OrdersCancellationInfo): Self = this.set("cancellationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancellationInfo: Self = this.set("cancellationInfo", js.undefined)
+    @scala.inline
+    def setFulfillmentInfo(value: GoogleActionsV2OrdersFulfillmentInfo): Self = this.set("fulfillmentInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfillmentInfo: Self = this.set("fulfillmentInfo", js.undefined)
+    @scala.inline
+    def setGoogleOrderId(value: String): Self = this.set("googleOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleOrderId: Self = this.set("googleOrderId", js.undefined)
+    @scala.inline
+    def setInTransitInfo(value: GoogleActionsV2OrdersInTransitInfo): Self = this.set("inTransitInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInTransitInfo: Self = this.set("inTransitInfo", js.undefined)
+    @scala.inline
+    def setInfoExtension(value: ApiClientObjectMap[_]): Self = this.set("infoExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoExtension: Self = this.set("infoExtension", js.undefined)
+    @scala.inline
+    def setLineItemUpdates(value: ApiClientObjectMap[GoogleActionsV2OrdersLineItemUpdate]): Self = this.set("lineItemUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItemUpdates: Self = this.set("lineItemUpdates", js.undefined)
+    @scala.inline
+    def setOrderManagementActionsVarargs(value: GoogleActionsV2OrdersOrderUpdateAction*): Self = this.set("orderManagementActions", js.Array(value :_*))
+    @scala.inline
+    def setOrderManagementActions(value: js.Array[GoogleActionsV2OrdersOrderUpdateAction]): Self = this.set("orderManagementActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderManagementActions: Self = this.set("orderManagementActions", js.undefined)
+    @scala.inline
+    def setOrderState(value: GoogleActionsV2OrdersOrderState): Self = this.set("orderState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderState: Self = this.set("orderState", js.undefined)
+    @scala.inline
+    def setReceipt(value: GoogleActionsV2OrdersReceipt): Self = this.set("receipt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceipt: Self = this.set("receipt", js.undefined)
+    @scala.inline
+    def setRejectionInfo(value: GoogleActionsV2OrdersRejectionInfo): Self = this.set("rejectionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectionInfo: Self = this.set("rejectionInfo", js.undefined)
+    @scala.inline
+    def setReturnInfo(value: GoogleActionsV2OrdersReturnInfo): Self = this.set("returnInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnInfo: Self = this.set("returnInfo", js.undefined)
+    @scala.inline
+    def setTotalPrice(value: GoogleActionsV2OrdersPrice): Self = this.set("totalPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalPrice: Self = this.set("totalPrice", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setUserNotification(value: GoogleActionsV2OrdersOrderUpdateUserNotification): Self = this.set("userNotification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserNotification: Self = this.set("userNotification", js.undefined)
+  }
+  
 }
 

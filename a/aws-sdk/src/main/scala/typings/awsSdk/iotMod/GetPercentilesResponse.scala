@@ -14,10 +14,28 @@ trait GetPercentilesResponse extends js.Object {
 
 object GetPercentilesResponse {
   @scala.inline
-  def apply(percentiles: Percentiles = null): GetPercentilesResponse = {
+  def apply(): GetPercentilesResponse = {
     val __obj = js.Dynamic.literal()
-    if (percentiles != null) __obj.updateDynamic("percentiles")(percentiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPercentilesResponse]
   }
+  @scala.inline
+  implicit class GetPercentilesResponseOps[Self <: GetPercentilesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPercentilesVarargs(value: PercentPair*): Self = this.set("percentiles", js.Array(value :_*))
+    @scala.inline
+    def setPercentiles(value: Percentiles): Self = this.set("percentiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentiles: Self = this.set("percentiles", js.undefined)
+  }
+  
 }
 

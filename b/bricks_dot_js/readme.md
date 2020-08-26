@@ -12,7 +12,7 @@ A blazing fast masonry layout generator for fixed width elements.
 | Keywords           | grid, masonry, layout, packing |
 | # releases         | 1 |
 | # dependents       | 17 |
-| # downloads        | 508891 |
+| # downloads        | 510731 |
 | # stars            | 2 |
 
 ## Links

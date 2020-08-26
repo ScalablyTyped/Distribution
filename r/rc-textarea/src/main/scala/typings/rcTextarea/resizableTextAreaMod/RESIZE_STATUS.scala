@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait RESIZE_STATUS extends js.Object
 
-@JSImport("rc-textarea/lib/ResizableTextArea", "RESIZE_STATUS")
+@JSImport("rc-textarea/es/ResizableTextArea", "RESIZE_STATUS")
 @js.native
 object RESIZE_STATUS extends js.Object {
   @js.native

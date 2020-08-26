@@ -50,5 +50,32 @@ object CustomerAgentInfo {
     val __obj = js.Dynamic.literal(activeAgents = activeAgents.asInstanceOf[js.Any], blackListedAgents = blackListedAgents.asInstanceOf[js.Any], healthyAgents = healthyAgents.asInstanceOf[js.Any], shutdownAgents = shutdownAgents.asInstanceOf[js.Any], totalAgents = totalAgents.asInstanceOf[js.Any], unhealthyAgents = unhealthyAgents.asInstanceOf[js.Any], unknownAgents = unknownAgents.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerAgentInfo]
   }
+  @scala.inline
+  implicit class CustomerAgentInfoOps[Self <: CustomerAgentInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveAgents(value: Integer): Self = this.set("activeAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlackListedAgents(value: Integer): Self = this.set("blackListedAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthyAgents(value: Integer): Self = this.set("healthyAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShutdownAgents(value: Integer): Self = this.set("shutdownAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotalAgents(value: Integer): Self = this.set("totalAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnhealthyAgents(value: Integer): Self = this.set("unhealthyAgents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnknownAgents(value: Integer): Self = this.set("unknownAgents", value.asInstanceOf[js.Any])
+  }
+  
 }
 

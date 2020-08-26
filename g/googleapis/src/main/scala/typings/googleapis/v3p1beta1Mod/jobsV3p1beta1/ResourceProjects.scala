@@ -39,6 +39,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def complete(): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
   def complete(callback: BodyResponseCallback[SchemaCompleteQueryResponse]): Unit = js.native
+  def complete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
   def complete(params: ParamsResourceProjectsComplete): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
   def complete(
     params: ParamsResourceProjectsComplete,

@@ -24,6 +24,7 @@ trait RangyRange extends Range {
   def getBookmark(containerNode: Node): End = js.native
   def getDocument(): Document = js.native
   def getNodes(): js.Array[Node] = js.native
+  def getNodes(nodeTypes: js.UndefOr[scala.Nothing], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
   def getNodes(nodeTypes: js.Array[_]): js.Array[Node] = js.native
   def getNodes(nodeTypes: js.Array[_], filter: js.Function1[/* node */ Node, Boolean]): js.Array[Node] = js.native
   def inspect(): String = js.native
@@ -36,6 +37,7 @@ trait RangyRange extends Range {
   def refresh(): js.Any = js.native
   def select(): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double): js.Any = js.native
+  def setStartAndEnd(startNode: Node, startOffset: Double, endNode: js.UndefOr[scala.Nothing], endOffset: Double): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endNode: Node, endOffset: Double): js.Any = js.native
   def setStartAndEnd(startNode: Node, startOffset: Double, endOffset: Double): js.Any = js.native

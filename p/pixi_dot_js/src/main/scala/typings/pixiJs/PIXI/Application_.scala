@@ -86,6 +86,7 @@ trait Application_ extends js.Object {
     *  to true. Should it destroy the base texture of the child sprite
     */
   def destroy(): Unit = js.native
+  def destroy(removeView: js.UndefOr[scala.Nothing], stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
   def destroy(removeView: Boolean): Unit = js.native
   def destroy(removeView: Boolean, stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
   /**

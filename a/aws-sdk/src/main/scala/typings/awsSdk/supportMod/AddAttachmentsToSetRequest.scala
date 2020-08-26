@@ -18,10 +18,30 @@ trait AddAttachmentsToSetRequest extends js.Object {
 
 object AddAttachmentsToSetRequest {
   @scala.inline
-  def apply(attachments: Attachments, attachmentSetId: AttachmentSetId = null): AddAttachmentsToSetRequest = {
+  def apply(attachments: Attachments): AddAttachmentsToSetRequest = {
     val __obj = js.Dynamic.literal(attachments = attachments.asInstanceOf[js.Any])
-    if (attachmentSetId != null) __obj.updateDynamic("attachmentSetId")(attachmentSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAttachmentsToSetRequest]
   }
+  @scala.inline
+  implicit class AddAttachmentsToSetRequestOps[Self <: AddAttachmentsToSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: Attachments): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachmentSetId(value: AttachmentSetId): Self = this.set("attachmentSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentSetId: Self = this.set("attachmentSetId", js.undefined)
+  }
+  
 }
 

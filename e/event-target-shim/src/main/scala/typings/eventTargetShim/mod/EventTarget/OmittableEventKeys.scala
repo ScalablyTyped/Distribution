@@ -6,27 +6,27 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Exclude<keyof event-target-shim.event-target-shim.Event, 'type'> */
 /* Rewritten from type alias, can be one of: 
-  - typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE
-  - typings.eventTargetShim.eventTargetShimStrings.currentTarget
-  - typings.eventTargetShim.eventTargetShimStrings.NONE
-  - typings.eventTargetShim.eventTargetShimStrings.initEvent
-  - typings.eventTargetShim.eventTargetShimStrings.cancelBubble
   - typings.eventTargetShim.eventTargetShimStrings.target
-  - typings.eventTargetShim.eventTargetShimStrings.composed
-  - typings.eventTargetShim.eventTargetShimStrings.composedPath
-  - typings.eventTargetShim.eventTargetShimStrings.preventDefault
   - typings.eventTargetShim.eventTargetShimStrings.eventPhase
-  - typings.eventTargetShim.eventTargetShimStrings.cancelable
-  - typings.eventTargetShim.eventTargetShimStrings.isTrusted
-  - typings.eventTargetShim.eventTargetShimStrings.returnValue
-  - typings.eventTargetShim.eventTargetShimStrings.AT_TARGET
-  - typings.eventTargetShim.eventTargetShimStrings.bubbles
-  - typings.eventTargetShim.eventTargetShimStrings.stopPropagation
-  - typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation
+  - typings.eventTargetShim.eventTargetShimStrings.composed
   - typings.eventTargetShim.eventTargetShimStrings.CAPTURING_PHASE
-  - typings.eventTargetShim.eventTargetShimStrings.srcElement
-  - typings.eventTargetShim.eventTargetShimStrings.defaultPrevented
+  - typings.eventTargetShim.eventTargetShimStrings.stopImmediatePropagation
   - typings.eventTargetShim.eventTargetShimStrings.timeStamp
+  - typings.eventTargetShim.eventTargetShimStrings.stopPropagation
+  - typings.eventTargetShim.eventTargetShimStrings.defaultPrevented
+  - typings.eventTargetShim.eventTargetShimStrings.AT_TARGET
+  - typings.eventTargetShim.eventTargetShimStrings.NONE
+  - typings.eventTargetShim.eventTargetShimStrings.cancelable
+  - typings.eventTargetShim.eventTargetShimStrings.returnValue
+  - typings.eventTargetShim.eventTargetShimStrings.isTrusted
+  - typings.eventTargetShim.eventTargetShimStrings.bubbles
+  - typings.eventTargetShim.eventTargetShimStrings.initEvent
+  - typings.eventTargetShim.eventTargetShimStrings.srcElement
+  - typings.eventTargetShim.eventTargetShimStrings.preventDefault
+  - typings.eventTargetShim.eventTargetShimStrings.cancelBubble
+  - typings.eventTargetShim.eventTargetShimStrings.composedPath
+  - typings.eventTargetShim.eventTargetShimStrings.currentTarget
+  - typings.eventTargetShim.eventTargetShimStrings.BUBBLING_PHASE
 */
 trait OmittableEventKeys extends js.Object
 

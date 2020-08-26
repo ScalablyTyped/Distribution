@@ -22,16 +22,34 @@ trait ListTagOptionsFilters extends js.Object {
 
 object ListTagOptionsFilters {
   @scala.inline
-  def apply(
-    Active: js.UndefOr[TagOptionActive] = js.undefined,
-    Key: TagOptionKey = null,
-    Value: TagOptionValue = null
-  ): ListTagOptionsFilters = {
+  def apply(): ListTagOptionsFilters = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagOptionsFilters]
   }
+  @scala.inline
+  implicit class ListTagOptionsFiltersOps[Self <: ListTagOptionsFilters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: TagOptionActive): Self = this.set("Active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("Active", js.undefined)
+    @scala.inline
+    def setKey(value: TagOptionKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setValue(value: TagOptionValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

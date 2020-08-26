@@ -21,23 +21,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Settings extends js.Object {
   /**
     * Enables the advanced query syntax.
     */
-  val advancedSyntax: js.UndefOr[Boolean] = js.undefined
+  val advancedSyntax: js.UndefOr[Boolean] = js.native
   /**
     * AdvancedSyntaxFeatures can be exactPhrase or excludeWords
     */
-  val advancedSyntaxFeatures: js.UndefOr[js.Array[exactPhrase | excludeWords]] = js.undefined
+  val advancedSyntaxFeatures: js.UndefOr[js.Array[exactPhrase | excludeWords]] = js.native
   /**
     * Enables compression of large integer arrays.
     */
-  val allowCompressionOfIntegerArray: js.UndefOr[Boolean] = js.undefined
+  val allowCompressionOfIntegerArray: js.UndefOr[Boolean] = js.native
   /**
     * hether to allow typos on numbers (“numeric tokens”) in the query string.
     */
-  val allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.undefined
+  val allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.native
   /**
     * List of alternatives that should be considered an exact match by the exact ranking criterion.
     */
@@ -45,333 +46,507 @@ trait Settings extends js.Object {
     js.Array[
       typings.algoliaClientSearch.algoliaClientSearchStrings.ignorePlurals | singleWordSynonym | multiWordsSynonym
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Allows proximity to impact which searchable attribute is matched in the attribute ranking stage.
     */
-  val attributeCriteriaComputedByMinProximity: js.UndefOr[Boolean] = js.undefined
+  val attributeCriteriaComputedByMinProximity: js.UndefOr[Boolean] = js.native
   /**
     * Name of the de-duplication attribute to be used with the distinct feature.
     */
-  val attributeForDistinct: js.UndefOr[String] = js.undefined
+  val attributeForDistinct: js.UndefOr[String] = js.native
   /**
     * The complete list of attributes that will be used for faceting.
     */
-  val attributesForFaceting: js.UndefOr[js.Array[String]] = js.undefined
+  val attributesForFaceting: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of attributes to highlight.
     */
-  val attributesToHighlight: js.UndefOr[js.Array[String]] = js.undefined
+  val attributesToHighlight: js.UndefOr[js.Array[String]] = js.native
   /**
     * @deprecated Use `searchableAttributes` instead.
     */
-  val attributesToIndex: js.UndefOr[js.Array[String]] = js.undefined
+  val attributesToIndex: js.UndefOr[js.Array[String]] = js.native
   /**
     * Gives control over which attributes to retrieve and which not to retrieve.
     */
-  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.undefined
+  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of attributes to snippet, with an optional maximum number of words to snippet.
     */
-  val attributesToSnippet: js.UndefOr[js.Array[String]] = js.undefined
+  val attributesToSnippet: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of attributes on which to do a decomposition of camel case words.
     */
-  val camelCaseAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  val camelCaseAttributes: js.UndefOr[js.Array[String]] = js.native
   /**
     * Overrides Algolia's default normalization.
     */
-  val customNormalization: js.UndefOr[Record[String, Record[String, String]]] = js.undefined
+  val customNormalization: js.UndefOr[Record[String, Record[String, String]]] = js.native
   /**
     * Specifies the custom ranking criterion.
     */
-  val customRanking: js.UndefOr[js.Array[String]] = js.undefined
+  val customRanking: js.UndefOr[js.Array[String]] = js.native
   /**
     * Specify on which attributes in your index Algolia should apply word-splitting (“decompounding”)
     */
-  val decompoundedAttributes: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
+  val decompoundedAttributes: js.UndefOr[Record[String, js.Array[String]]] = js.native
   /**
     * List of attributes on which you want to disable the exact ranking criterion.
     */
-  val disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  val disableExactOnAttributes: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of attributes on which you want to disable prefix matching.
     */
-  val disablePrefixOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  val disablePrefixOnAttributes: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of attributes on which you want to disable typo tolerance.
     */
-  val disableTypoToleranceOnAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  val disableTypoToleranceOnAttributes: js.UndefOr[js.Array[String]] = js.native
   /**
     * List of words on which you want to disable typo tolerance.
     */
-  val disableTypoToleranceOnWords: js.UndefOr[js.Array[String]] = js.undefined
+  val disableTypoToleranceOnWords: js.UndefOr[js.Array[String]] = js.native
   /**
     * Enables de-duplication or grouping of results.
     */
-  val distinct: js.UndefOr[Boolean | Double] = js.undefined
+  val distinct: js.UndefOr[Boolean | Double] = js.native
   /**
     * Enable personalization for queries by default
     */
-  val enablePersonalization: js.UndefOr[Boolean] = js.undefined
+  val enablePersonalization: js.UndefOr[Boolean] = js.native
   /**
     * Whether rules should be globally enabled.
     */
-  val enableRules: js.UndefOr[Boolean] = js.undefined
+  val enableRules: js.UndefOr[Boolean] = js.native
   /**
     * Controls how the exact ranking criterion is computed when the query contains only one word.
     */
-  val exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.undefined
+  val exactOnSingleWordQuery: js.UndefOr[attribute | none | word] = js.native
   /**
     * The HTML string to insert after the highlighted parts in all highlight and snippet results.
     */
-  val highlightPostTag: js.UndefOr[String] = js.undefined
+  val highlightPostTag: js.UndefOr[String] = js.native
   /**
     * The HTML string to insert before the highlighted parts in all highlight and snippet results.
     */
-  val highlightPreTag: js.UndefOr[String] = js.undefined
+  val highlightPreTag: js.UndefOr[String] = js.native
   /**
     * Set the number of hits per page.
     */
-  val hitsPerPage: js.UndefOr[Double] = js.undefined
+  val hitsPerPage: js.UndefOr[Double] = js.native
   /**
     * Treats singular, plurals, and other forms of declensions as matching terms.
     */
-  val ignorePlurals: js.UndefOr[js.Array[String] | Boolean] = js.undefined
+  val ignorePlurals: js.UndefOr[js.Array[String] | Boolean] = js.native
   /**
     * A list of language ISO code.
     */
-  val indexLanguages: js.UndefOr[js.Array[String]] = js.undefined
+  val indexLanguages: js.UndefOr[js.Array[String]] = js.native
   /**
     * Characters that should not be automatically normalized by the search engine.
     */
-  val keepDiacriticsOnCharacters: js.UndefOr[String] = js.undefined
+  val keepDiacriticsOnCharacters: js.UndefOr[String] = js.native
   /**
     * Maximum number of facet hits to return during a search for facet values.
     */
-  val maxFacetHits: js.UndefOr[Double] = js.undefined
+  val maxFacetHits: js.UndefOr[Double] = js.native
   /**
     * Maximum number of facet values to return for each facet during a regular search.
     */
-  val maxValuesPerFacet: js.UndefOr[Double] = js.undefined
+  val maxValuesPerFacet: js.UndefOr[Double] = js.native
   /**
     * Precision of the proximity ranking criterion.
     */
-  val minProximity: js.UndefOr[Double] = js.undefined
+  val minProximity: js.UndefOr[Double] = js.native
   /**
     * Minimum number of characters a word in the query string must contain to accept matches with 1 typo.
     */
-  val minWordSizefor1Typo: js.UndefOr[Double] = js.undefined
+  val minWordSizefor1Typo: js.UndefOr[Double] = js.native
   /**
     * Minimum number of characters a word in the query string must contain to accept matches with 2 typos.
     */
-  val minWordSizefor2Typos: js.UndefOr[Double] = js.undefined
+  val minWordSizefor2Typos: js.UndefOr[Double] = js.native
   /**
     * List of numeric attributes that can be used as numerical filters.
     */
-  val numericAttributesForFiltering: js.UndefOr[js.Array[String]] = js.undefined
+  val numericAttributesForFiltering: js.UndefOr[js.Array[String]] = js.native
   /**
     * A list of words that should be considered as optional when found in the query.
     */
-  val optionalWords: js.UndefOr[js.Array[String]] = js.undefined
+  val optionalWords: js.UndefOr[js.Array[String]] = js.native
   /**
     * Set the maximum number of hits accessible via pagination.
     */
-  val paginationLimitedTo: js.UndefOr[Double] = js.undefined
+  val paginationLimitedTo: js.UndefOr[Double] = js.native
   /**
     * The primary parameter is automatically added to a replica's settings when the replica is created and cannot be modified.
     *
     * Can not be setted.
     */
-  val primary: js.UndefOr[String] = js.undefined
+  val primary: js.UndefOr[String] = js.native
   /**
     * Sets the languages to be used by language-specific settings and functionalities such as ignorePlurals, removeStopWords, and CJK word-detection.
     */
-  val queryLanguages: js.UndefOr[js.Array[String]] = js.undefined
+  val queryLanguages: js.UndefOr[js.Array[String]] = js.native
   /**
     * Controls if and how query words are interpreted as prefixes.
     */
-  val queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.undefined
+  val queryType: js.UndefOr[prefixLast | prefixAll | prefixNone] = js.native
   /**
     * Controls the way results are sorted.
     */
-  val ranking: js.UndefOr[js.Array[String]] = js.undefined
+  val ranking: js.UndefOr[js.Array[String]] = js.native
   /**
     * Removes stop (common) words from the query before executing it.
     */
-  val removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.undefined
+  val removeStopWords: js.UndefOr[Boolean | js.Array[String]] = js.native
   /**
     * Selects a strategy to remove words from the query when it doesn’t match any hits.
     */
-  val removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.undefined
+  val removeWordsIfNoResults: js.UndefOr[none | lastWords | firstWords | allOptional] = js.native
   /**
     * Whether to highlight and snippet the original word that matches the synonym or the synonym itself.
     */
-  val replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.undefined
+  val replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.native
   /**
     * Creates replicas, exact copies of an index.
     */
-  val replicas: js.UndefOr[js.Array[String]] = js.undefined
+  val replicas: js.UndefOr[js.Array[String]] = js.native
   /**
     * Choose which fields the response will contain. Applies to search and browse queries.
     */
-  val responseFields: js.UndefOr[js.Array[String]] = js.undefined
+  val responseFields: js.UndefOr[js.Array[String]] = js.native
   /**
     * Restrict highlighting and snippeting to items that matched the query.
     */
-  val restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.undefined
+  val restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.native
   /**
     * The complete list of attributes that will be used for searching.
     */
-  val searchableAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  val searchableAttributes: js.UndefOr[js.Array[String]] = js.native
   /**
     * Control which separators are indexed.
     */
-  val separatorsToIndex: js.UndefOr[String] = js.undefined
+  val separatorsToIndex: js.UndefOr[String] = js.native
   /**
     * @deprecated Use `replicas` instead.
     */
-  val slaves: js.UndefOr[js.Array[String]] = js.undefined
+  val slaves: js.UndefOr[js.Array[String]] = js.native
   /**
     * String used as an ellipsis indicator when a snippet is truncated.
     */
-  val snippetEllipsisText: js.UndefOr[String] = js.undefined
+  val snippetEllipsisText: js.UndefOr[String] = js.native
   /**
     * Controls how facet values are sorted.
     */
-  val sortFacetValuesBy: js.UndefOr[count | alpha] = js.undefined
+  val sortFacetValuesBy: js.UndefOr[count | alpha] = js.native
   /**
     * Controls whether typo tolerance is enabled and how it is applied.
     */
-  val typoTolerance: js.UndefOr[String | Boolean] = js.undefined
+  val typoTolerance: js.UndefOr[String | Boolean] = js.native
   /**
     * List of attributes that cannot be retrieved at query time.
     */
-  val unretrievableAttributes: js.UndefOr[js.Array[String]] = js.undefined
+  val unretrievableAttributes: js.UndefOr[js.Array[String]] = js.native
   /**
     * Custom userData that could be added to the Settings.
     */
-  val userData: js.UndefOr[js.Any] = js.undefined
+  val userData: js.UndefOr[js.Any] = js.native
 }
 
 object Settings {
   @scala.inline
-  def apply(
-    advancedSyntax: js.UndefOr[Boolean] = js.undefined,
-    advancedSyntaxFeatures: js.Array[exactPhrase | excludeWords] = null,
-    allowCompressionOfIntegerArray: js.UndefOr[Boolean] = js.undefined,
-    allowTyposOnNumericTokens: js.UndefOr[Boolean] = js.undefined,
-    alternativesAsExact: js.Array[ignorePlurals | singleWordSynonym | multiWordsSynonym] = null,
-    attributeCriteriaComputedByMinProximity: js.UndefOr[Boolean] = js.undefined,
-    attributeForDistinct: String = null,
-    attributesForFaceting: js.Array[String] = null,
-    attributesToHighlight: js.Array[String] = null,
-    attributesToIndex: js.Array[String] = null,
-    attributesToRetrieve: js.Array[String] = null,
-    attributesToSnippet: js.Array[String] = null,
-    camelCaseAttributes: js.Array[String] = null,
-    customNormalization: Record[String, Record[String, String]] = null,
-    customRanking: js.Array[String] = null,
-    decompoundedAttributes: Record[String, js.Array[String]] = null,
-    disableExactOnAttributes: js.Array[String] = null,
-    disablePrefixOnAttributes: js.Array[String] = null,
-    disableTypoToleranceOnAttributes: js.Array[String] = null,
-    disableTypoToleranceOnWords: js.Array[String] = null,
-    distinct: Boolean | Double = null,
-    enablePersonalization: js.UndefOr[Boolean] = js.undefined,
-    enableRules: js.UndefOr[Boolean] = js.undefined,
-    exactOnSingleWordQuery: attribute | none | word = null,
-    highlightPostTag: String = null,
-    highlightPreTag: String = null,
-    hitsPerPage: js.UndefOr[Double] = js.undefined,
-    ignorePlurals: js.Array[String] | Boolean = null,
-    indexLanguages: js.Array[String] = null,
-    keepDiacriticsOnCharacters: String = null,
-    maxFacetHits: js.UndefOr[Double] = js.undefined,
-    maxValuesPerFacet: js.UndefOr[Double] = js.undefined,
-    minProximity: js.UndefOr[Double] = js.undefined,
-    minWordSizefor1Typo: js.UndefOr[Double] = js.undefined,
-    minWordSizefor2Typos: js.UndefOr[Double] = js.undefined,
-    numericAttributesForFiltering: js.Array[String] = null,
-    optionalWords: js.Array[String] = null,
-    paginationLimitedTo: js.UndefOr[Double] = js.undefined,
-    primary: String = null,
-    queryLanguages: js.Array[String] = null,
-    queryType: prefixLast | prefixAll | prefixNone = null,
-    ranking: js.Array[String] = null,
-    removeStopWords: Boolean | js.Array[String] = null,
-    removeWordsIfNoResults: none | lastWords | firstWords | allOptional = null,
-    replaceSynonymsInHighlight: js.UndefOr[Boolean] = js.undefined,
-    replicas: js.Array[String] = null,
-    responseFields: js.Array[String] = null,
-    restrictHighlightAndSnippetArrays: js.UndefOr[Boolean] = js.undefined,
-    searchableAttributes: js.Array[String] = null,
-    separatorsToIndex: String = null,
-    slaves: js.Array[String] = null,
-    snippetEllipsisText: String = null,
-    sortFacetValuesBy: count | alpha = null,
-    typoTolerance: String | Boolean = null,
-    unretrievableAttributes: js.Array[String] = null,
-    userData: js.Any = null
-  ): Settings = {
+  def apply(): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(advancedSyntax)) __obj.updateDynamic("advancedSyntax")(advancedSyntax.get.asInstanceOf[js.Any])
-    if (advancedSyntaxFeatures != null) __obj.updateDynamic("advancedSyntaxFeatures")(advancedSyntaxFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCompressionOfIntegerArray)) __obj.updateDynamic("allowCompressionOfIntegerArray")(allowCompressionOfIntegerArray.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTyposOnNumericTokens)) __obj.updateDynamic("allowTyposOnNumericTokens")(allowTyposOnNumericTokens.get.asInstanceOf[js.Any])
-    if (alternativesAsExact != null) __obj.updateDynamic("alternativesAsExact")(alternativesAsExact.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributeCriteriaComputedByMinProximity)) __obj.updateDynamic("attributeCriteriaComputedByMinProximity")(attributeCriteriaComputedByMinProximity.get.asInstanceOf[js.Any])
-    if (attributeForDistinct != null) __obj.updateDynamic("attributeForDistinct")(attributeForDistinct.asInstanceOf[js.Any])
-    if (attributesForFaceting != null) __obj.updateDynamic("attributesForFaceting")(attributesForFaceting.asInstanceOf[js.Any])
-    if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight.asInstanceOf[js.Any])
-    if (attributesToIndex != null) __obj.updateDynamic("attributesToIndex")(attributesToIndex.asInstanceOf[js.Any])
-    if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve.asInstanceOf[js.Any])
-    if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet.asInstanceOf[js.Any])
-    if (camelCaseAttributes != null) __obj.updateDynamic("camelCaseAttributes")(camelCaseAttributes.asInstanceOf[js.Any])
-    if (customNormalization != null) __obj.updateDynamic("customNormalization")(customNormalization.asInstanceOf[js.Any])
-    if (customRanking != null) __obj.updateDynamic("customRanking")(customRanking.asInstanceOf[js.Any])
-    if (decompoundedAttributes != null) __obj.updateDynamic("decompoundedAttributes")(decompoundedAttributes.asInstanceOf[js.Any])
-    if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes.asInstanceOf[js.Any])
-    if (disablePrefixOnAttributes != null) __obj.updateDynamic("disablePrefixOnAttributes")(disablePrefixOnAttributes.asInstanceOf[js.Any])
-    if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes.asInstanceOf[js.Any])
-    if (disableTypoToleranceOnWords != null) __obj.updateDynamic("disableTypoToleranceOnWords")(disableTypoToleranceOnWords.asInstanceOf[js.Any])
-    if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePersonalization)) __obj.updateDynamic("enablePersonalization")(enablePersonalization.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRules)) __obj.updateDynamic("enableRules")(enableRules.get.asInstanceOf[js.Any])
-    if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
-    if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag.asInstanceOf[js.Any])
-    if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(hitsPerPage)) __obj.updateDynamic("hitsPerPage")(hitsPerPage.get.asInstanceOf[js.Any])
-    if (ignorePlurals != null) __obj.updateDynamic("ignorePlurals")(ignorePlurals.asInstanceOf[js.Any])
-    if (indexLanguages != null) __obj.updateDynamic("indexLanguages")(indexLanguages.asInstanceOf[js.Any])
-    if (keepDiacriticsOnCharacters != null) __obj.updateDynamic("keepDiacriticsOnCharacters")(keepDiacriticsOnCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFacetHits)) __obj.updateDynamic("maxFacetHits")(maxFacetHits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValuesPerFacet)) __obj.updateDynamic("maxValuesPerFacet")(maxValuesPerFacet.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minProximity)) __obj.updateDynamic("minProximity")(minProximity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWordSizefor1Typo)) __obj.updateDynamic("minWordSizefor1Typo")(minWordSizefor1Typo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWordSizefor2Typos)) __obj.updateDynamic("minWordSizefor2Typos")(minWordSizefor2Typos.get.asInstanceOf[js.Any])
-    if (numericAttributesForFiltering != null) __obj.updateDynamic("numericAttributesForFiltering")(numericAttributesForFiltering.asInstanceOf[js.Any])
-    if (optionalWords != null) __obj.updateDynamic("optionalWords")(optionalWords.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationLimitedTo)) __obj.updateDynamic("paginationLimitedTo")(paginationLimitedTo.get.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (queryLanguages != null) __obj.updateDynamic("queryLanguages")(queryLanguages.asInstanceOf[js.Any])
-    if (queryType != null) __obj.updateDynamic("queryType")(queryType.asInstanceOf[js.Any])
-    if (ranking != null) __obj.updateDynamic("ranking")(ranking.asInstanceOf[js.Any])
-    if (removeStopWords != null) __obj.updateDynamic("removeStopWords")(removeStopWords.asInstanceOf[js.Any])
-    if (removeWordsIfNoResults != null) __obj.updateDynamic("removeWordsIfNoResults")(removeWordsIfNoResults.asInstanceOf[js.Any])
-    if (!js.isUndefined(replaceSynonymsInHighlight)) __obj.updateDynamic("replaceSynonymsInHighlight")(replaceSynonymsInHighlight.get.asInstanceOf[js.Any])
-    if (replicas != null) __obj.updateDynamic("replicas")(replicas.asInstanceOf[js.Any])
-    if (responseFields != null) __obj.updateDynamic("responseFields")(responseFields.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictHighlightAndSnippetArrays)) __obj.updateDynamic("restrictHighlightAndSnippetArrays")(restrictHighlightAndSnippetArrays.get.asInstanceOf[js.Any])
-    if (searchableAttributes != null) __obj.updateDynamic("searchableAttributes")(searchableAttributes.asInstanceOf[js.Any])
-    if (separatorsToIndex != null) __obj.updateDynamic("separatorsToIndex")(separatorsToIndex.asInstanceOf[js.Any])
-    if (slaves != null) __obj.updateDynamic("slaves")(slaves.asInstanceOf[js.Any])
-    if (snippetEllipsisText != null) __obj.updateDynamic("snippetEllipsisText")(snippetEllipsisText.asInstanceOf[js.Any])
-    if (sortFacetValuesBy != null) __obj.updateDynamic("sortFacetValuesBy")(sortFacetValuesBy.asInstanceOf[js.Any])
-    if (typoTolerance != null) __obj.updateDynamic("typoTolerance")(typoTolerance.asInstanceOf[js.Any])
-    if (unretrievableAttributes != null) __obj.updateDynamic("unretrievableAttributes")(unretrievableAttributes.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  @scala.inline
+  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvancedSyntax(value: Boolean): Self = this.set("advancedSyntax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedSyntax: Self = this.set("advancedSyntax", js.undefined)
+    @scala.inline
+    def setAdvancedSyntaxFeaturesVarargs(value: (exactPhrase | excludeWords)*): Self = this.set("advancedSyntaxFeatures", js.Array(value :_*))
+    @scala.inline
+    def setAdvancedSyntaxFeatures(value: js.Array[exactPhrase | excludeWords]): Self = this.set("advancedSyntaxFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedSyntaxFeatures: Self = this.set("advancedSyntaxFeatures", js.undefined)
+    @scala.inline
+    def setAllowCompressionOfIntegerArray(value: Boolean): Self = this.set("allowCompressionOfIntegerArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCompressionOfIntegerArray: Self = this.set("allowCompressionOfIntegerArray", js.undefined)
+    @scala.inline
+    def setAllowTyposOnNumericTokens(value: Boolean): Self = this.set("allowTyposOnNumericTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowTyposOnNumericTokens: Self = this.set("allowTyposOnNumericTokens", js.undefined)
+    @scala.inline
+    def setAlternativesAsExactVarargs(value: (ignorePlurals | singleWordSynonym | multiWordsSynonym)*): Self = this.set("alternativesAsExact", js.Array(value :_*))
+    @scala.inline
+    def setAlternativesAsExact(value: js.Array[ignorePlurals | singleWordSynonym | multiWordsSynonym]): Self = this.set("alternativesAsExact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternativesAsExact: Self = this.set("alternativesAsExact", js.undefined)
+    @scala.inline
+    def setAttributeCriteriaComputedByMinProximity(value: Boolean): Self = this.set("attributeCriteriaComputedByMinProximity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeCriteriaComputedByMinProximity: Self = this.set("attributeCriteriaComputedByMinProximity", js.undefined)
+    @scala.inline
+    def setAttributeForDistinct(value: String): Self = this.set("attributeForDistinct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeForDistinct: Self = this.set("attributeForDistinct", js.undefined)
+    @scala.inline
+    def setAttributesForFacetingVarargs(value: String*): Self = this.set("attributesForFaceting", js.Array(value :_*))
+    @scala.inline
+    def setAttributesForFaceting(value: js.Array[String]): Self = this.set("attributesForFaceting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesForFaceting: Self = this.set("attributesForFaceting", js.undefined)
+    @scala.inline
+    def setAttributesToHighlightVarargs(value: String*): Self = this.set("attributesToHighlight", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToHighlight(value: js.Array[String]): Self = this.set("attributesToHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToHighlight: Self = this.set("attributesToHighlight", js.undefined)
+    @scala.inline
+    def setAttributesToIndexVarargs(value: String*): Self = this.set("attributesToIndex", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToIndex(value: js.Array[String]): Self = this.set("attributesToIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToIndex: Self = this.set("attributesToIndex", js.undefined)
+    @scala.inline
+    def setAttributesToRetrieveVarargs(value: String*): Self = this.set("attributesToRetrieve", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToRetrieve(value: js.Array[String]): Self = this.set("attributesToRetrieve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToRetrieve: Self = this.set("attributesToRetrieve", js.undefined)
+    @scala.inline
+    def setAttributesToSnippetVarargs(value: String*): Self = this.set("attributesToSnippet", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToSnippet(value: js.Array[String]): Self = this.set("attributesToSnippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToSnippet: Self = this.set("attributesToSnippet", js.undefined)
+    @scala.inline
+    def setCamelCaseAttributesVarargs(value: String*): Self = this.set("camelCaseAttributes", js.Array(value :_*))
+    @scala.inline
+    def setCamelCaseAttributes(value: js.Array[String]): Self = this.set("camelCaseAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCamelCaseAttributes: Self = this.set("camelCaseAttributes", js.undefined)
+    @scala.inline
+    def setCustomNormalization(value: Record[String, Record[String, String]]): Self = this.set("customNormalization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomNormalization: Self = this.set("customNormalization", js.undefined)
+    @scala.inline
+    def setCustomRankingVarargs(value: String*): Self = this.set("customRanking", js.Array(value :_*))
+    @scala.inline
+    def setCustomRanking(value: js.Array[String]): Self = this.set("customRanking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRanking: Self = this.set("customRanking", js.undefined)
+    @scala.inline
+    def setDecompoundedAttributes(value: Record[String, js.Array[String]]): Self = this.set("decompoundedAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecompoundedAttributes: Self = this.set("decompoundedAttributes", js.undefined)
+    @scala.inline
+    def setDisableExactOnAttributesVarargs(value: String*): Self = this.set("disableExactOnAttributes", js.Array(value :_*))
+    @scala.inline
+    def setDisableExactOnAttributes(value: js.Array[String]): Self = this.set("disableExactOnAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableExactOnAttributes: Self = this.set("disableExactOnAttributes", js.undefined)
+    @scala.inline
+    def setDisablePrefixOnAttributesVarargs(value: String*): Self = this.set("disablePrefixOnAttributes", js.Array(value :_*))
+    @scala.inline
+    def setDisablePrefixOnAttributes(value: js.Array[String]): Self = this.set("disablePrefixOnAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisablePrefixOnAttributes: Self = this.set("disablePrefixOnAttributes", js.undefined)
+    @scala.inline
+    def setDisableTypoToleranceOnAttributesVarargs(value: String*): Self = this.set("disableTypoToleranceOnAttributes", js.Array(value :_*))
+    @scala.inline
+    def setDisableTypoToleranceOnAttributes(value: js.Array[String]): Self = this.set("disableTypoToleranceOnAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableTypoToleranceOnAttributes: Self = this.set("disableTypoToleranceOnAttributes", js.undefined)
+    @scala.inline
+    def setDisableTypoToleranceOnWordsVarargs(value: String*): Self = this.set("disableTypoToleranceOnWords", js.Array(value :_*))
+    @scala.inline
+    def setDisableTypoToleranceOnWords(value: js.Array[String]): Self = this.set("disableTypoToleranceOnWords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableTypoToleranceOnWords: Self = this.set("disableTypoToleranceOnWords", js.undefined)
+    @scala.inline
+    def setDistinct(value: Boolean | Double): Self = this.set("distinct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistinct: Self = this.set("distinct", js.undefined)
+    @scala.inline
+    def setEnablePersonalization(value: Boolean): Self = this.set("enablePersonalization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePersonalization: Self = this.set("enablePersonalization", js.undefined)
+    @scala.inline
+    def setEnableRules(value: Boolean): Self = this.set("enableRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRules: Self = this.set("enableRules", js.undefined)
+    @scala.inline
+    def setExactOnSingleWordQuery(value: attribute | none | word): Self = this.set("exactOnSingleWordQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExactOnSingleWordQuery: Self = this.set("exactOnSingleWordQuery", js.undefined)
+    @scala.inline
+    def setHighlightPostTag(value: String): Self = this.set("highlightPostTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightPostTag: Self = this.set("highlightPostTag", js.undefined)
+    @scala.inline
+    def setHighlightPreTag(value: String): Self = this.set("highlightPreTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightPreTag: Self = this.set("highlightPreTag", js.undefined)
+    @scala.inline
+    def setHitsPerPage(value: Double): Self = this.set("hitsPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHitsPerPage: Self = this.set("hitsPerPage", js.undefined)
+    @scala.inline
+    def setIgnorePluralsVarargs(value: String*): Self = this.set("ignorePlurals", js.Array(value :_*))
+    @scala.inline
+    def setIgnorePlurals(value: js.Array[String] | Boolean): Self = this.set("ignorePlurals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnorePlurals: Self = this.set("ignorePlurals", js.undefined)
+    @scala.inline
+    def setIndexLanguagesVarargs(value: String*): Self = this.set("indexLanguages", js.Array(value :_*))
+    @scala.inline
+    def setIndexLanguages(value: js.Array[String]): Self = this.set("indexLanguages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexLanguages: Self = this.set("indexLanguages", js.undefined)
+    @scala.inline
+    def setKeepDiacriticsOnCharacters(value: String): Self = this.set("keepDiacriticsOnCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepDiacriticsOnCharacters: Self = this.set("keepDiacriticsOnCharacters", js.undefined)
+    @scala.inline
+    def setMaxFacetHits(value: Double): Self = this.set("maxFacetHits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFacetHits: Self = this.set("maxFacetHits", js.undefined)
+    @scala.inline
+    def setMaxValuesPerFacet(value: Double): Self = this.set("maxValuesPerFacet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValuesPerFacet: Self = this.set("maxValuesPerFacet", js.undefined)
+    @scala.inline
+    def setMinProximity(value: Double): Self = this.set("minProximity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinProximity: Self = this.set("minProximity", js.undefined)
+    @scala.inline
+    def setMinWordSizefor1Typo(value: Double): Self = this.set("minWordSizefor1Typo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWordSizefor1Typo: Self = this.set("minWordSizefor1Typo", js.undefined)
+    @scala.inline
+    def setMinWordSizefor2Typos(value: Double): Self = this.set("minWordSizefor2Typos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWordSizefor2Typos: Self = this.set("minWordSizefor2Typos", js.undefined)
+    @scala.inline
+    def setNumericAttributesForFilteringVarargs(value: String*): Self = this.set("numericAttributesForFiltering", js.Array(value :_*))
+    @scala.inline
+    def setNumericAttributesForFiltering(value: js.Array[String]): Self = this.set("numericAttributesForFiltering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumericAttributesForFiltering: Self = this.set("numericAttributesForFiltering", js.undefined)
+    @scala.inline
+    def setOptionalWordsVarargs(value: String*): Self = this.set("optionalWords", js.Array(value :_*))
+    @scala.inline
+    def setOptionalWords(value: js.Array[String]): Self = this.set("optionalWords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionalWords: Self = this.set("optionalWords", js.undefined)
+    @scala.inline
+    def setPaginationLimitedTo(value: Double): Self = this.set("paginationLimitedTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationLimitedTo: Self = this.set("paginationLimitedTo", js.undefined)
+    @scala.inline
+    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setQueryLanguagesVarargs(value: String*): Self = this.set("queryLanguages", js.Array(value :_*))
+    @scala.inline
+    def setQueryLanguages(value: js.Array[String]): Self = this.set("queryLanguages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryLanguages: Self = this.set("queryLanguages", js.undefined)
+    @scala.inline
+    def setQueryType(value: prefixLast | prefixAll | prefixNone): Self = this.set("queryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryType: Self = this.set("queryType", js.undefined)
+    @scala.inline
+    def setRankingVarargs(value: String*): Self = this.set("ranking", js.Array(value :_*))
+    @scala.inline
+    def setRanking(value: js.Array[String]): Self = this.set("ranking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanking: Self = this.set("ranking", js.undefined)
+    @scala.inline
+    def setRemoveStopWordsVarargs(value: String*): Self = this.set("removeStopWords", js.Array(value :_*))
+    @scala.inline
+    def setRemoveStopWords(value: Boolean | js.Array[String]): Self = this.set("removeStopWords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveStopWords: Self = this.set("removeStopWords", js.undefined)
+    @scala.inline
+    def setRemoveWordsIfNoResults(value: none | lastWords | firstWords | allOptional): Self = this.set("removeWordsIfNoResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveWordsIfNoResults: Self = this.set("removeWordsIfNoResults", js.undefined)
+    @scala.inline
+    def setReplaceSynonymsInHighlight(value: Boolean): Self = this.set("replaceSynonymsInHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceSynonymsInHighlight: Self = this.set("replaceSynonymsInHighlight", js.undefined)
+    @scala.inline
+    def setReplicasVarargs(value: String*): Self = this.set("replicas", js.Array(value :_*))
+    @scala.inline
+    def setReplicas(value: js.Array[String]): Self = this.set("replicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicas: Self = this.set("replicas", js.undefined)
+    @scala.inline
+    def setResponseFieldsVarargs(value: String*): Self = this.set("responseFields", js.Array(value :_*))
+    @scala.inline
+    def setResponseFields(value: js.Array[String]): Self = this.set("responseFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseFields: Self = this.set("responseFields", js.undefined)
+    @scala.inline
+    def setRestrictHighlightAndSnippetArrays(value: Boolean): Self = this.set("restrictHighlightAndSnippetArrays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictHighlightAndSnippetArrays: Self = this.set("restrictHighlightAndSnippetArrays", js.undefined)
+    @scala.inline
+    def setSearchableAttributesVarargs(value: String*): Self = this.set("searchableAttributes", js.Array(value :_*))
+    @scala.inline
+    def setSearchableAttributes(value: js.Array[String]): Self = this.set("searchableAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchableAttributes: Self = this.set("searchableAttributes", js.undefined)
+    @scala.inline
+    def setSeparatorsToIndex(value: String): Self = this.set("separatorsToIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparatorsToIndex: Self = this.set("separatorsToIndex", js.undefined)
+    @scala.inline
+    def setSlavesVarargs(value: String*): Self = this.set("slaves", js.Array(value :_*))
+    @scala.inline
+    def setSlaves(value: js.Array[String]): Self = this.set("slaves", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlaves: Self = this.set("slaves", js.undefined)
+    @scala.inline
+    def setSnippetEllipsisText(value: String): Self = this.set("snippetEllipsisText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippetEllipsisText: Self = this.set("snippetEllipsisText", js.undefined)
+    @scala.inline
+    def setSortFacetValuesBy(value: count | alpha): Self = this.set("sortFacetValuesBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortFacetValuesBy: Self = this.set("sortFacetValuesBy", js.undefined)
+    @scala.inline
+    def setTypoTolerance(value: String | Boolean): Self = this.set("typoTolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypoTolerance: Self = this.set("typoTolerance", js.undefined)
+    @scala.inline
+    def setUnretrievableAttributesVarargs(value: String*): Self = this.set("unretrievableAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUnretrievableAttributes(value: js.Array[String]): Self = this.set("unretrievableAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnretrievableAttributes: Self = this.set("unretrievableAttributes", js.undefined)
+    @scala.inline
+    def setUserData(value: js.Any): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+  }
+  
 }
 

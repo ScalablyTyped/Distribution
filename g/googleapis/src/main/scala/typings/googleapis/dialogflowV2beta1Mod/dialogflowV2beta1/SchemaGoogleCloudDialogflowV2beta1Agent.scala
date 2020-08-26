@@ -71,30 +71,64 @@ trait SchemaGoogleCloudDialogflowV2beta1Agent extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1Agent {
   @scala.inline
-  def apply(
-    avatarUri: String = null,
-    classificationThreshold: js.UndefOr[Double] = js.undefined,
-    defaultLanguageCode: String = null,
-    description: String = null,
-    displayName: String = null,
-    enableLogging: js.UndefOr[Boolean] = js.undefined,
-    matchMode: String = null,
-    parent: String = null,
-    supportedLanguageCodes: js.Array[String] = null,
-    timeZone: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1Agent = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1Agent = {
     val __obj = js.Dynamic.literal()
-    if (avatarUri != null) __obj.updateDynamic("avatarUri")(avatarUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(classificationThreshold)) __obj.updateDynamic("classificationThreshold")(classificationThreshold.get.asInstanceOf[js.Any])
-    if (defaultLanguageCode != null) __obj.updateDynamic("defaultLanguageCode")(defaultLanguageCode.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
-    if (matchMode != null) __obj.updateDynamic("matchMode")(matchMode.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (supportedLanguageCodes != null) __obj.updateDynamic("supportedLanguageCodes")(supportedLanguageCodes.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1Agent]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1AgentOps[Self <: SchemaGoogleCloudDialogflowV2beta1Agent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvatarUri(value: String): Self = this.set("avatarUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatarUri: Self = this.set("avatarUri", js.undefined)
+    @scala.inline
+    def setClassificationThreshold(value: Double): Self = this.set("classificationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassificationThreshold: Self = this.set("classificationThreshold", js.undefined)
+    @scala.inline
+    def setDefaultLanguageCode(value: String): Self = this.set("defaultLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLanguageCode: Self = this.set("defaultLanguageCode", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEnableLogging(value: Boolean): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    @scala.inline
+    def setMatchMode(value: String): Self = this.set("matchMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchMode: Self = this.set("matchMode", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setSupportedLanguageCodesVarargs(value: String*): Self = this.set("supportedLanguageCodes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedLanguageCodes(value: js.Array[String]): Self = this.set("supportedLanguageCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedLanguageCodes: Self = this.set("supportedLanguageCodes", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+  }
+  
 }
 

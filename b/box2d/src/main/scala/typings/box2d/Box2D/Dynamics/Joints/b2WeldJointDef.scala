@@ -6,26 +6,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait b2WeldJointDef extends b2JointDef {
   /**
     * The local anchor point relative to body1's origin.
     **/
-  var localAnchorA: b2Vec2
+  var localAnchorA: b2Vec2 = js.native
   /**
     * The local anchor point relative to body2's origin.
     **/
-  var localAnchorB: b2Vec2
+  var localAnchorB: b2Vec2 = js.native
   /**
     * The body2 angle minus body1 angle in the reference state (radians).
     **/
-  var referenceAngle: Double
+  var referenceAngle: Double = js.native
   /**
     * Initialize the bodies, anchors, axis, and reference angle using the world anchor and world axis.
     * @param bA Body A.
     * @param bB Body B.
     * @param anchor Anchor.
     **/
-  def Initialize(bA: b2Body, bB: b2Body, anchor: b2Vec2): Unit
+  def Initialize(bA: b2Body, bB: b2Body, anchor: b2Vec2): Unit = js.native
 }
 
 object b2WeldJointDef {
@@ -45,5 +46,26 @@ object b2WeldJointDef {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2WeldJointDef]
   }
+  @scala.inline
+  implicit class b2WeldJointDefOps[Self <: b2WeldJointDef] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialize(value: (b2Body, b2Body, b2Vec2) => Unit): Self = this.set("Initialize", js.Any.fromFunction3(value))
+    @scala.inline
+    def setLocalAnchorA(value: b2Vec2): Self = this.set("localAnchorA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocalAnchorB(value: b2Vec2): Self = this.set("localAnchorB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReferenceAngle(value: Double): Self = this.set("referenceAngle", value.asInstanceOf[js.Any])
+  }
+  
 }
 

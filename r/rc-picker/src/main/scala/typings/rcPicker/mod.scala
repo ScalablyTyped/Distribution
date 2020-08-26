@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib", JSImport.Namespace)
+@JSImport("rc-picker", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

@@ -1,7 +1,7 @@
 package typings.pulumiAws.bucketObjectMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.bucketMod.Bucket
+import typings.pulumiAws.s3Mod.Bucket
 import typings.pulumiPulumi.mod.asset.Archive
 import typings.pulumiPulumi.mod.asset.Asset
 import typings.pulumiPulumi.outputMod.Input
@@ -69,7 +69,7 @@ trait BucketObjectState extends js.Object {
     */
   val kmsKeyId: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
+    * A map of keys/values to provision metadata (will be automatically prefixed by `x-amz-meta-`, note that only lowercase label are currently supported by the AWS Go API).
     */
   val metadata: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
@@ -98,9 +98,9 @@ trait BucketObjectState extends js.Object {
     */
   val storageClass: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A unique version ID value for the object, if bucket versioning
     * is enabled.
@@ -114,56 +114,114 @@ trait BucketObjectState extends js.Object {
 
 object BucketObjectState {
   @scala.inline
-  def apply(
-    acl: Input[String] = null,
-    bucket: Input[String | Bucket] = null,
-    cacheControl: Input[String] = null,
-    content: Input[String] = null,
-    contentBase64: Input[String] = null,
-    contentDisposition: Input[String] = null,
-    contentEncoding: Input[String] = null,
-    contentLanguage: Input[String] = null,
-    contentType: Input[String] = null,
-    etag: Input[String] = null,
-    forceDestroy: Input[Boolean] = null,
-    key: Input[String] = null,
-    kmsKeyId: Input[String] = null,
-    metadata: Input[StringDictionary[Input[String]]] = null,
-    objectLockLegalHoldStatus: Input[String] = null,
-    objectLockMode: Input[String] = null,
-    objectLockRetainUntilDate: Input[String] = null,
-    serverSideEncryption: Input[String] = null,
-    source: Input[Asset | Archive] = null,
-    storageClass: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    versionId: Input[String] = null,
-    websiteRedirect: Input[String] = null
-  ): BucketObjectState = {
+  def apply(): BucketObjectState = {
     val __obj = js.Dynamic.literal()
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentBase64 != null) __obj.updateDynamic("contentBase64")(contentBase64.asInstanceOf[js.Any])
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (objectLockLegalHoldStatus != null) __obj.updateDynamic("objectLockLegalHoldStatus")(objectLockLegalHoldStatus.asInstanceOf[js.Any])
-    if (objectLockMode != null) __obj.updateDynamic("objectLockMode")(objectLockMode.asInstanceOf[js.Any])
-    if (objectLockRetainUntilDate != null) __obj.updateDynamic("objectLockRetainUntilDate")(objectLockRetainUntilDate.asInstanceOf[js.Any])
-    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
-    if (websiteRedirect != null) __obj.updateDynamic("websiteRedirect")(websiteRedirect.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketObjectState]
   }
+  @scala.inline
+  implicit class BucketObjectStateOps[Self <: BucketObjectState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcl(value: Input[String]): Self = this.set("acl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcl: Self = this.set("acl", js.undefined)
+    @scala.inline
+    def setBucket(value: Input[String | Bucket]): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setCacheControl(value: Input[String]): Self = this.set("cacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("cacheControl", js.undefined)
+    @scala.inline
+    def setContent(value: Input[String]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentBase64(value: Input[String]): Self = this.set("contentBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentBase64: Self = this.set("contentBase64", js.undefined)
+    @scala.inline
+    def setContentDisposition(value: Input[String]): Self = this.set("contentDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDisposition: Self = this.set("contentDisposition", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: Input[String]): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: Input[String]): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    @scala.inline
+    def setContentType(value: Input[String]): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setEtag(value: Input[String]): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setKey(value: Input[String]): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setMetadata(value: Input[StringDictionary[Input[String]]]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setObjectLockLegalHoldStatus(value: Input[String]): Self = this.set("objectLockLegalHoldStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockLegalHoldStatus: Self = this.set("objectLockLegalHoldStatus", js.undefined)
+    @scala.inline
+    def setObjectLockMode(value: Input[String]): Self = this.set("objectLockMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockMode: Self = this.set("objectLockMode", js.undefined)
+    @scala.inline
+    def setObjectLockRetainUntilDate(value: Input[String]): Self = this.set("objectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockRetainUntilDate: Self = this.set("objectLockRetainUntilDate", js.undefined)
+    @scala.inline
+    def setServerSideEncryption(value: Input[String]): Self = this.set("serverSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryption: Self = this.set("serverSideEncryption", js.undefined)
+    @scala.inline
+    def setSource(value: Input[Asset | Archive]): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStorageClass(value: Input[String]): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersionId(value: Input[String]): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    @scala.inline
+    def setWebsiteRedirect(value: Input[String]): Self = this.set("websiteRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteRedirect: Self = this.set("websiteRedirect", js.undefined)
+  }
+  
 }
 

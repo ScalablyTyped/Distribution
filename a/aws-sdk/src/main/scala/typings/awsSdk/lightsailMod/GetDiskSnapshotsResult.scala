@@ -18,11 +18,32 @@ trait GetDiskSnapshotsResult extends js.Object {
 
 object GetDiskSnapshotsResult {
   @scala.inline
-  def apply(diskSnapshots: DiskSnapshotList = null, nextPageToken: String = null): GetDiskSnapshotsResult = {
+  def apply(): GetDiskSnapshotsResult = {
     val __obj = js.Dynamic.literal()
-    if (diskSnapshots != null) __obj.updateDynamic("diskSnapshots")(diskSnapshots.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDiskSnapshotsResult]
   }
+  @scala.inline
+  implicit class GetDiskSnapshotsResultOps[Self <: GetDiskSnapshotsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskSnapshotsVarargs(value: DiskSnapshot*): Self = this.set("diskSnapshots", js.Array(value :_*))
+    @scala.inline
+    def setDiskSnapshots(value: DiskSnapshotList): Self = this.set("diskSnapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSnapshots: Self = this.set("diskSnapshots", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

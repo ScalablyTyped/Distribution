@@ -12,7 +12,7 @@ Helpers for using seamless-immutable with Redux
 | Keywords           | javascript, redux, immutable, seamless, router |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 2424626 |
+| # downloads        | 2382105 |
 | # stars            | 1 |
 
 ## Links

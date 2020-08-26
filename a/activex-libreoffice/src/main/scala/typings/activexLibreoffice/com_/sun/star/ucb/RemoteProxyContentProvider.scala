@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * The way this works might change, therefore this interface is marked as deprecated.
   * @deprecated Deprecated
   */
+@js.native
 trait RemoteProxyContentProvider
   extends XContentProvider
      with XContentIdentifierFactory

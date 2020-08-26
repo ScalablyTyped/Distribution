@@ -13,27 +13,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddSuffixLocale extends js.Object {
-  var addSuffix: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[typings.dateFns.Locale] = js.undefined
-  var roundingMethod: js.UndefOr[floor | ceil | round] = js.undefined
-  var unit: js.UndefOr[second | minute | hour | day | month | year] = js.undefined
+  var addSuffix: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[typings.dateFns.Locale] = js.native
+  var roundingMethod: js.UndefOr[floor | ceil | round] = js.native
+  var unit: js.UndefOr[second | minute | hour | day | month | year] = js.native
 }
 
 object AddSuffixLocale {
   @scala.inline
-  def apply(
-    addSuffix: js.UndefOr[Boolean] = js.undefined,
-    locale: typings.dateFns.Locale = null,
-    roundingMethod: floor | ceil | round = null,
-    unit: second | minute | hour | day | month | year = null
-  ): AddSuffixLocale = {
+  def apply(): AddSuffixLocale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addSuffix)) __obj.updateDynamic("addSuffix")(addSuffix.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (roundingMethod != null) __obj.updateDynamic("roundingMethod")(roundingMethod.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddSuffixLocale]
   }
+  @scala.inline
+  implicit class AddSuffixLocaleOps[Self <: AddSuffixLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddSuffix(value: Boolean): Self = this.set("addSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddSuffix: Self = this.set("addSuffix", js.undefined)
+    @scala.inline
+    def setLocale(value: typings.dateFns.Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setRoundingMethod(value: floor | ceil | round): Self = this.set("roundingMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoundingMethod: Self = this.set("roundingMethod", js.undefined)
+    @scala.inline
+    def setUnit(value: second | minute | hour | day | month | year): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

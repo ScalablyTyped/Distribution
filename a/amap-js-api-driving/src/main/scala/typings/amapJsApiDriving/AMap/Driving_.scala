@@ -50,6 +50,12 @@ trait Driving_ extends EventEmitter {
     destination: LocationValue,
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResultBase, Unit]
   ): Unit = js.native
+  def search(
+    origin: LocationValue,
+    destination: LocationValue,
+    opts: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResultBase, Unit]
+  ): Unit = js.native
   def search(origin: LocationValue, destination: LocationValue, opts: SearchOptions): Unit = js.native
   def search(
     origin: LocationValue,

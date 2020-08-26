@@ -18,10 +18,26 @@ trait SchemaAddProductToProductSetRequest extends js.Object {
 
 object SchemaAddProductToProductSetRequest {
   @scala.inline
-  def apply(product: String = null): SchemaAddProductToProductSetRequest = {
+  def apply(): SchemaAddProductToProductSetRequest = {
     val __obj = js.Dynamic.literal()
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAddProductToProductSetRequest]
   }
+  @scala.inline
+  implicit class SchemaAddProductToProductSetRequestOps[Self <: SchemaAddProductToProductSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProduct(value: String): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+  }
+  
 }
 

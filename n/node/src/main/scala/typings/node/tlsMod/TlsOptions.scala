@@ -3,12 +3,11 @@ package typings.node.tlsMod
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.std.DataView
-import typings.std.Error
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TlsOptions
   extends SecureContextOptions
      with CommonConnectionOptions {
@@ -18,7 +17,7 @@ trait TlsOptions
     * the tls.Server object whenever a handshake times out. Default:
     * 120000 (120 seconds).
     */
-  var handshakeTimeout: js.UndefOr[Double] = js.undefined
+  var handshakeTimeout: js.UndefOr[Double] = js.native
   /**
     *
     * @param socket
@@ -40,92 +39,64 @@ trait TlsOptions
     */
   var pskCallback: js.UndefOr[
     js.Function2[/* socket */ TLSSocket, /* identity */ String, DataView | TypedArray | Null]
-  ] = js.undefined
+  ] = js.native
   /**
     * hint to send to a client to help
     * with selecting the identity during TLS-PSK negotiation. Will be ignored
     * in TLS 1.3. Upon failing to set pskIdentityHint `tlsClientError` will be
     * emitted with `ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED` code.
     */
-  var pskIdentityHint: js.UndefOr[String] = js.undefined
+  var pskIdentityHint: js.UndefOr[String] = js.native
   /**
     * The number of seconds after which a TLS session created by the
     * server will no longer be resumable. See Session Resumption for more
     * information. Default: 300.
     */
-  var sessionTimeout: js.UndefOr[Double] = js.undefined
+  var sessionTimeout: js.UndefOr[Double] = js.native
   /**
     * 48-bytes of cryptographically strong pseudo-random data.
     */
-  var ticketKeys: js.UndefOr[Buffer] = js.undefined
+  var ticketKeys: js.UndefOr[Buffer] = js.native
 }
 
 object TlsOptions {
   @scala.inline
-  def apply(
-    ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
-    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    ciphers: String = null,
-    clientCertEngine: String = null,
-    crl: String | Buffer | (js.Array[String | Buffer]) = null,
-    dhparam: String | Buffer = null,
-    ecdhCurve: String = null,
-    enableTrace: js.UndefOr[Boolean] = js.undefined,
-    handshakeTimeout: js.UndefOr[Double] = js.undefined,
-    honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
-    maxVersion: SecureVersion = null,
-    minVersion: SecureVersion = null,
-    passphrase: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
-    privateKeyEngine: String = null,
-    privateKeyIdentifier: String = null,
-    pskCallback: (/* socket */ TLSSocket, /* identity */ String) => DataView | TypedArray | Null = null,
-    pskIdentityHint: String = null,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    requestCert: js.UndefOr[Boolean] = js.undefined,
-    secureContext: SecureContext = null,
-    secureOptions: js.UndefOr[Double] = js.undefined,
-    secureProtocol: String = null,
-    sessionIdContext: String = null,
-    sessionTimeout: js.UndefOr[Double] = js.undefined,
-    sigalgs: String = null,
-    ticketKeys: Buffer = null
-  ): TlsOptions = {
+  def apply(): TlsOptions = {
     val __obj = js.Dynamic.literal()
-    if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
-    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
-    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handshakeTimeout)) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
-    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
-    if (pskCallback != null) __obj.updateDynamic("pskCallback")(js.Any.fromFunction2(pskCallback))
-    if (pskIdentityHint != null) __obj.updateDynamic("pskIdentityHint")(pskIdentityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.get.asInstanceOf[js.Any])
-    if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionTimeout)) __obj.updateDynamic("sessionTimeout")(sessionTimeout.get.asInstanceOf[js.Any])
-    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
-    if (ticketKeys != null) __obj.updateDynamic("ticketKeys")(ticketKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[TlsOptions]
   }
+  @scala.inline
+  implicit class TlsOptionsOps[Self <: TlsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandshakeTimeout(value: Double): Self = this.set("handshakeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandshakeTimeout: Self = this.set("handshakeTimeout", js.undefined)
+    @scala.inline
+    def setPskCallback(value: (/* socket */ TLSSocket, /* identity */ String) => DataView | TypedArray | Null): Self = this.set("pskCallback", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePskCallback: Self = this.set("pskCallback", js.undefined)
+    @scala.inline
+    def setPskIdentityHint(value: String): Self = this.set("pskIdentityHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePskIdentityHint: Self = this.set("pskIdentityHint", js.undefined)
+    @scala.inline
+    def setSessionTimeout(value: Double): Self = this.set("sessionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTimeout: Self = this.set("sessionTimeout", js.undefined)
+    @scala.inline
+    def setTicketKeys(value: Buffer): Self = this.set("ticketKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicketKeys: Self = this.set("ticketKeys", js.undefined)
+  }
+  
 }
 

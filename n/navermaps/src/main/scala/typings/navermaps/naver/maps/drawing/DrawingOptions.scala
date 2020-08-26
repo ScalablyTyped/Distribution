@@ -10,48 +10,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawingOptions extends js.Object {
-  var arrowlineOptions: js.UndefOr[PolylineOptions] = js.undefined
-  var controlPointOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.controlPointOptions] = js.undefined
-  var drawingControl: js.UndefOr[js.Array[DrawingMode]] = js.undefined
-  var drawingControlOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.drawingControlOptions] = js.undefined
-  var drawingMode: js.UndefOr[DrawingMode] = js.undefined
-  var ellipseOptions: js.UndefOr[EllipseOptions] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
-  var markerOptions: js.UndefOr[MarkerOptions] = js.undefined
-  var polygonOptions: js.UndefOr[PolygonOptions] = js.undefined
-  var polylineOptions: js.UndefOr[PolylineOptions] = js.undefined
-  var rectangleOptions: js.UndefOr[RectangleOptions] = js.undefined
+  var arrowlineOptions: js.UndefOr[PolylineOptions] = js.native
+  var controlPointOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.controlPointOptions] = js.native
+  var drawingControl: js.UndefOr[js.Array[DrawingMode]] = js.native
+  var drawingControlOptions: js.UndefOr[typings.navermaps.naver.maps.drawing.drawingControlOptions] = js.native
+  var drawingMode: js.UndefOr[DrawingMode] = js.native
+  var ellipseOptions: js.UndefOr[EllipseOptions] = js.native
+  var map: js.UndefOr[Map] = js.native
+  var markerOptions: js.UndefOr[MarkerOptions] = js.native
+  var polygonOptions: js.UndefOr[PolygonOptions] = js.native
+  var polylineOptions: js.UndefOr[PolylineOptions] = js.native
+  var rectangleOptions: js.UndefOr[RectangleOptions] = js.native
 }
 
 object DrawingOptions {
   @scala.inline
-  def apply(
-    arrowlineOptions: PolylineOptions = null,
-    controlPointOptions: controlPointOptions = null,
-    drawingControl: js.Array[DrawingMode] = null,
-    drawingControlOptions: drawingControlOptions = null,
-    drawingMode: DrawingMode = null,
-    ellipseOptions: EllipseOptions = null,
-    map: Map = null,
-    markerOptions: MarkerOptions = null,
-    polygonOptions: PolygonOptions = null,
-    polylineOptions: PolylineOptions = null,
-    rectangleOptions: RectangleOptions = null
-  ): DrawingOptions = {
+  def apply(): DrawingOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrowlineOptions != null) __obj.updateDynamic("arrowlineOptions")(arrowlineOptions.asInstanceOf[js.Any])
-    if (controlPointOptions != null) __obj.updateDynamic("controlPointOptions")(controlPointOptions.asInstanceOf[js.Any])
-    if (drawingControl != null) __obj.updateDynamic("drawingControl")(drawingControl.asInstanceOf[js.Any])
-    if (drawingControlOptions != null) __obj.updateDynamic("drawingControlOptions")(drawingControlOptions.asInstanceOf[js.Any])
-    if (drawingMode != null) __obj.updateDynamic("drawingMode")(drawingMode.asInstanceOf[js.Any])
-    if (ellipseOptions != null) __obj.updateDynamic("ellipseOptions")(ellipseOptions.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
-    if (rectangleOptions != null) __obj.updateDynamic("rectangleOptions")(rectangleOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawingOptions]
   }
+  @scala.inline
+  implicit class DrawingOptionsOps[Self <: DrawingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrowlineOptions(value: PolylineOptions): Self = this.set("arrowlineOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowlineOptions: Self = this.set("arrowlineOptions", js.undefined)
+    @scala.inline
+    def setControlPointOptions(value: controlPointOptions): Self = this.set("controlPointOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlPointOptions: Self = this.set("controlPointOptions", js.undefined)
+    @scala.inline
+    def setDrawingControlVarargs(value: DrawingMode*): Self = this.set("drawingControl", js.Array(value :_*))
+    @scala.inline
+    def setDrawingControl(value: js.Array[DrawingMode]): Self = this.set("drawingControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawingControl: Self = this.set("drawingControl", js.undefined)
+    @scala.inline
+    def setDrawingControlOptions(value: drawingControlOptions): Self = this.set("drawingControlOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawingControlOptions: Self = this.set("drawingControlOptions", js.undefined)
+    @scala.inline
+    def setDrawingMode(value: DrawingMode): Self = this.set("drawingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawingMode: Self = this.set("drawingMode", js.undefined)
+    @scala.inline
+    def setEllipseOptions(value: EllipseOptions): Self = this.set("ellipseOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipseOptions: Self = this.set("ellipseOptions", js.undefined)
+    @scala.inline
+    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setMarkerOptions(value: MarkerOptions): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    @scala.inline
+    def setPolygonOptions(value: PolygonOptions): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    @scala.inline
+    def setPolylineOptions(value: PolylineOptions): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
+    @scala.inline
+    def setRectangleOptions(value: RectangleOptions): Self = this.set("rectangleOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRectangleOptions: Self = this.set("rectangleOptions", js.undefined)
+  }
+  
 }
 

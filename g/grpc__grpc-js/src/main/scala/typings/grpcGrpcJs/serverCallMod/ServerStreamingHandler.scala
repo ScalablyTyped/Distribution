@@ -13,6 +13,7 @@ trait ServerStreamingHandler[RequestType, ResponseType] extends Handler[RequestT
   var deserialize_Original: Deserialize[RequestType] = js.native
   @JSName("func")
   var func_Original: handleServerStreamingCall[RequestType, ResponseType] = js.native
+  var path: String = js.native
   @JSName("serialize")
   var serialize_Original: Serialize[ResponseType] = js.native
   var `type`: HandlerType = js.native

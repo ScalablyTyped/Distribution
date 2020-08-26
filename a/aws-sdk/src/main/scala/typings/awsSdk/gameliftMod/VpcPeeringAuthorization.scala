@@ -30,20 +30,42 @@ trait VpcPeeringAuthorization extends js.Object {
 
 object VpcPeeringAuthorization {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    ExpirationTime: Timestamp = null,
-    GameLiftAwsAccountId: NonZeroAndMaxString = null,
-    PeerVpcAwsAccountId: NonZeroAndMaxString = null,
-    PeerVpcId: NonZeroAndMaxString = null
-  ): VpcPeeringAuthorization = {
+  def apply(): VpcPeeringAuthorization = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (ExpirationTime != null) __obj.updateDynamic("ExpirationTime")(ExpirationTime.asInstanceOf[js.Any])
-    if (GameLiftAwsAccountId != null) __obj.updateDynamic("GameLiftAwsAccountId")(GameLiftAwsAccountId.asInstanceOf[js.Any])
-    if (PeerVpcAwsAccountId != null) __obj.updateDynamic("PeerVpcAwsAccountId")(PeerVpcAwsAccountId.asInstanceOf[js.Any])
-    if (PeerVpcId != null) __obj.updateDynamic("PeerVpcId")(PeerVpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcPeeringAuthorization]
   }
+  @scala.inline
+  implicit class VpcPeeringAuthorizationOps[Self <: VpcPeeringAuthorization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: Timestamp): Self = this.set("ExpirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("ExpirationTime", js.undefined)
+    @scala.inline
+    def setGameLiftAwsAccountId(value: NonZeroAndMaxString): Self = this.set("GameLiftAwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameLiftAwsAccountId: Self = this.set("GameLiftAwsAccountId", js.undefined)
+    @scala.inline
+    def setPeerVpcAwsAccountId(value: NonZeroAndMaxString): Self = this.set("PeerVpcAwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcAwsAccountId: Self = this.set("PeerVpcAwsAccountId", js.undefined)
+    @scala.inline
+    def setPeerVpcId(value: NonZeroAndMaxString): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+  }
+  
 }
 

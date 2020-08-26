@@ -53,17 +53,17 @@ class ReportDateRangeSelector protected () extends ReportParameter {
   var model_FReportDateRangeSelector: IModel = js.native
   def fields: IList[ReportDateRangeField] = js.native
   def fieldsPerRow: Double = js.native
-  def fieldsPerRow(newValue: Double): js.Any = js.native
+  def fieldsPerRow_=(newValue: Double): Unit = js.native
   def fromCaption: Text = js.native
-  def fromCaption(newValue: Text): js.Any = js.native
+  def fromCaption_=(newValue: Text): Unit = js.native
   def maxYear: Double = js.native
-  def maxYear(newValue: Double): js.Any = js.native
+  def maxYear_=(newValue: Double): Unit = js.native
   def minYear: Double = js.native
-  def minYear(newValue: Double): js.Any = js.native
+  def minYear_=(newValue: Double): Unit = js.native
   def showFromToRange: Boolean = js.native
-  def showFromToRange(newValue: Boolean): js.Any = js.native
+  def showFromToRange_=(newValue: Boolean): Unit = js.native
   def toCaption: Text = js.native
-  def toCaption(newValue: Text): js.Any = js.native
+  def toCaption_=(newValue: Text): Unit = js.native
 }
 
 /* static members */

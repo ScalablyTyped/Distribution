@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RowSpanningAccumulator extends js.Object {
-  def onColumn(header: String, index: Double, span: Double): Unit
+  def onColumn(header: String, index: Double, span: Double): Unit = js.native
 }
 
 object RowSpanningAccumulator {
@@ -14,5 +15,20 @@ object RowSpanningAccumulator {
     val __obj = js.Dynamic.literal(onColumn = js.Any.fromFunction3(onColumn))
     __obj.asInstanceOf[RowSpanningAccumulator]
   }
+  @scala.inline
+  implicit class RowSpanningAccumulatorOps[Self <: RowSpanningAccumulator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnColumn(value: (String, Double, Double) => Unit): Self = this.set("onColumn", js.Any.fromFunction3(value))
+  }
+  
 }
 

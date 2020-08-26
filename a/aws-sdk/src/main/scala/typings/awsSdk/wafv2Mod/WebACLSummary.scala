@@ -30,20 +30,42 @@ trait WebACLSummary extends js.Object {
 
 object WebACLSummary {
   @scala.inline
-  def apply(
-    ARN: ResourceArn = null,
-    Description: EntityDescription = null,
-    Id: EntityId = null,
-    LockToken: LockToken = null,
-    Name: EntityName = null
-  ): WebACLSummary = {
+  def apply(): WebACLSummary = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LockToken != null) __obj.updateDynamic("LockToken")(LockToken.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebACLSummary]
   }
+  @scala.inline
+  implicit class WebACLSummaryOps[Self <: WebACLSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: ResourceArn): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setDescription(value: EntityDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: EntityId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLockToken(value: LockToken): Self = this.set("LockToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockToken: Self = this.set("LockToken", js.undefined)
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tootallnate/once" : "1.0.0"
+      "@tootallnate/once" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@tootallnate/once" : "1.0.0"
+      "@tootallnate/once" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

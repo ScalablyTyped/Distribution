@@ -31,6 +31,7 @@ class ResourceProjectsCatalogs protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
   def search(params: ParamsResourceProjectsCatalogsSearch): GaxiosPromise[SchemaGoogleCloudPrivatecatalogV1beta1SearchCatalogsResponse] = js.native
   def search(
     params: ParamsResourceProjectsCatalogsSearch,

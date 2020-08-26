@@ -4,128 +4,213 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeSettings extends js.Object {
-  var autoLoad: js.UndefOr[Boolean] = js.undefined
-  var border: js.UndefOr[Boolean] = js.undefined
-  var cascadeCheck: js.UndefOr[Boolean] = js.undefined
-  var cascadeSelection: js.UndefOr[Boolean] = js.undefined
+  var autoLoad: js.UndefOr[Boolean] = js.native
+  var border: js.UndefOr[Boolean] = js.native
+  var cascadeCheck: js.UndefOr[Boolean] = js.native
+  var cascadeSelection: js.UndefOr[Boolean] = js.native
   var checkboxChange: js.UndefOr[
     js.Function4[/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String, _]
-  ] = js.undefined
-  var checkboxes: js.UndefOr[Boolean] = js.undefined
-  var checkedField: js.UndefOr[String] = js.undefined
-  var childrenField: js.UndefOr[String] = js.undefined
-  var collapse: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
-  var dataBinding: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var dataSource: js.UndefOr[js.Any] = js.undefined
-  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var disable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
-  var disabledField: js.UndefOr[String] = js.undefined
-  var dragAndDrop: js.UndefOr[Boolean] = js.undefined
-  var enable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
-  var expand: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
-  var hasChildrenField: js.UndefOr[String] = js.undefined
-  var icons: js.UndefOr[TreeIcons] = js.undefined
-  var iconsLibrary: js.UndefOr[String] = js.undefined
-  var imageCssClassField: js.UndefOr[String] = js.undefined
-  var imageHtmlField: js.UndefOr[String] = js.undefined
-  var imageUrlField: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var checkboxes: js.UndefOr[Boolean] = js.native
+  var checkedField: js.UndefOr[String] = js.native
+  var childrenField: js.UndefOr[String] = js.native
+  var collapse: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.native
+  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var disable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var disabledField: js.UndefOr[String] = js.native
+  var dragAndDrop: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var expand: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var hasChildrenField: js.UndefOr[String] = js.native
+  var icons: js.UndefOr[TreeIcons] = js.native
+  var iconsLibrary: js.UndefOr[String] = js.native
+  var imageCssClassField: js.UndefOr[String] = js.native
+  var imageHtmlField: js.UndefOr[String] = js.native
+  var imageUrlField: js.UndefOr[String] = js.native
   //Events
-  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var lazyLoading: js.UndefOr[Boolean] = js.undefined
-  var nodeDataBound: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
+  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var lazyLoading: js.UndefOr[Boolean] = js.native
+  var nodeDataBound: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
   var nodeDrop: js.UndefOr[
     js.Function4[/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double, _]
-  ] = js.undefined
-  var paramNames: js.UndefOr[TreeParamNames] = js.undefined
-  var primaryKey: js.UndefOr[String] = js.undefined
-  var select: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
-  var selectionType: js.UndefOr[String] = js.undefined
-  var textField: js.UndefOr[String] = js.undefined
-  var uiLibrary: js.UndefOr[String] = js.undefined
-  var unselect: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var paramNames: js.UndefOr[TreeParamNames] = js.native
+  var primaryKey: js.UndefOr[String] = js.native
+  var select: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var selectionType: js.UndefOr[String] = js.native
+  var textField: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.native
+  var unselect: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, _]] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object TreeSettings {
   @scala.inline
-  def apply(
-    autoLoad: js.UndefOr[Boolean] = js.undefined,
-    border: js.UndefOr[Boolean] = js.undefined,
-    cascadeCheck: js.UndefOr[Boolean] = js.undefined,
-    cascadeSelection: js.UndefOr[Boolean] = js.undefined,
-    checkboxChange: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => _ = null,
-    checkboxes: js.UndefOr[Boolean] = js.undefined,
-    checkedField: String = null,
-    childrenField: String = null,
-    collapse: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    dataBinding: /* e */ js.Any => _ = null,
-    dataBound: /* e */ js.Any => _ = null,
-    dataSource: js.Any = null,
-    destroying: /* e */ js.Any => _ = null,
-    disable: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    disabledField: String = null,
-    dragAndDrop: js.UndefOr[Boolean] = js.undefined,
-    enable: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    expand: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    hasChildrenField: String = null,
-    icons: TreeIcons = null,
-    iconsLibrary: String = null,
-    imageCssClassField: String = null,
-    imageHtmlField: String = null,
-    imageUrlField: String = null,
-    initialized: /* e */ js.Any => _ = null,
-    lazyLoading: js.UndefOr[Boolean] = js.undefined,
-    nodeDataBound: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    nodeDrop: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => _ = null,
-    paramNames: TreeParamNames = null,
-    primaryKey: String = null,
-    select: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    selectionType: String = null,
-    textField: String = null,
-    uiLibrary: String = null,
-    unselect: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _ = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): TreeSettings = {
+  def apply(): TreeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(border)) __obj.updateDynamic("border")(border.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cascadeCheck)) __obj.updateDynamic("cascadeCheck")(cascadeCheck.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cascadeSelection)) __obj.updateDynamic("cascadeSelection")(cascadeSelection.get.asInstanceOf[js.Any])
-    if (checkboxChange != null) __obj.updateDynamic("checkboxChange")(js.Any.fromFunction4(checkboxChange))
-    if (!js.isUndefined(checkboxes)) __obj.updateDynamic("checkboxes")(checkboxes.get.asInstanceOf[js.Any])
-    if (checkedField != null) __obj.updateDynamic("checkedField")(checkedField.asInstanceOf[js.Any])
-    if (childrenField != null) __obj.updateDynamic("childrenField")(childrenField.asInstanceOf[js.Any])
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction3(collapse))
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (destroying != null) __obj.updateDynamic("destroying")(js.Any.fromFunction1(destroying))
-    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction3(disable))
-    if (disabledField != null) __obj.updateDynamic("disabledField")(disabledField.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragAndDrop)) __obj.updateDynamic("dragAndDrop")(dragAndDrop.get.asInstanceOf[js.Any])
-    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction3(enable))
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction3(expand))
-    if (hasChildrenField != null) __obj.updateDynamic("hasChildrenField")(hasChildrenField.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary.asInstanceOf[js.Any])
-    if (imageCssClassField != null) __obj.updateDynamic("imageCssClassField")(imageCssClassField.asInstanceOf[js.Any])
-    if (imageHtmlField != null) __obj.updateDynamic("imageHtmlField")(imageHtmlField.asInstanceOf[js.Any])
-    if (imageUrlField != null) __obj.updateDynamic("imageUrlField")(imageUrlField.asInstanceOf[js.Any])
-    if (initialized != null) __obj.updateDynamic("initialized")(js.Any.fromFunction1(initialized))
-    if (!js.isUndefined(lazyLoading)) __obj.updateDynamic("lazyLoading")(lazyLoading.get.asInstanceOf[js.Any])
-    if (nodeDataBound != null) __obj.updateDynamic("nodeDataBound")(js.Any.fromFunction3(nodeDataBound))
-    if (nodeDrop != null) __obj.updateDynamic("nodeDrop")(js.Any.fromFunction4(nodeDrop))
-    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames.asInstanceOf[js.Any])
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction3(select))
-    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
-    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
-    if (unselect != null) __obj.updateDynamic("unselect")(js.Any.fromFunction3(unselect))
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeSettings]
   }
+  @scala.inline
+  implicit class TreeSettingsOps[Self <: TreeSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoLoad(value: Boolean): Self = this.set("autoLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoLoad: Self = this.set("autoLoad", js.undefined)
+    @scala.inline
+    def setBorder(value: Boolean): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setCascadeCheck(value: Boolean): Self = this.set("cascadeCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCascadeCheck: Self = this.set("cascadeCheck", js.undefined)
+    @scala.inline
+    def setCascadeSelection(value: Boolean): Self = this.set("cascadeSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCascadeSelection: Self = this.set("cascadeSelection", js.undefined)
+    @scala.inline
+    def setCheckboxChange(value: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => _): Self = this.set("checkboxChange", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteCheckboxChange: Self = this.set("checkboxChange", js.undefined)
+    @scala.inline
+    def setCheckboxes(value: Boolean): Self = this.set("checkboxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckboxes: Self = this.set("checkboxes", js.undefined)
+    @scala.inline
+    def setCheckedField(value: String): Self = this.set("checkedField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckedField: Self = this.set("checkedField", js.undefined)
+    @scala.inline
+    def setChildrenField(value: String): Self = this.set("childrenField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildrenField: Self = this.set("childrenField", js.undefined)
+    @scala.inline
+    def setCollapse(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("collapse", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteCollapse: Self = this.set("collapse", js.undefined)
+    @scala.inline
+    def setDataBinding(value: /* e */ js.Any => _): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ js.Any => _): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDestroying(value: /* e */ js.Any => _): Self = this.set("destroying", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroying: Self = this.set("destroying", js.undefined)
+    @scala.inline
+    def setDisable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("disable", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDisable: Self = this.set("disable", js.undefined)
+    @scala.inline
+    def setDisabledField(value: String): Self = this.set("disabledField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledField: Self = this.set("disabledField", js.undefined)
+    @scala.inline
+    def setDragAndDrop(value: Boolean): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragAndDrop: Self = this.set("dragAndDrop", js.undefined)
+    @scala.inline
+    def setEnable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("enable", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setExpand(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("expand", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setHasChildrenField(value: String): Self = this.set("hasChildrenField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasChildrenField: Self = this.set("hasChildrenField", js.undefined)
+    @scala.inline
+    def setIcons(value: TreeIcons): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setIconsLibrary(value: String): Self = this.set("iconsLibrary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconsLibrary: Self = this.set("iconsLibrary", js.undefined)
+    @scala.inline
+    def setImageCssClassField(value: String): Self = this.set("imageCssClassField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageCssClassField: Self = this.set("imageCssClassField", js.undefined)
+    @scala.inline
+    def setImageHtmlField(value: String): Self = this.set("imageHtmlField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageHtmlField: Self = this.set("imageHtmlField", js.undefined)
+    @scala.inline
+    def setImageUrlField(value: String): Self = this.set("imageUrlField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrlField: Self = this.set("imageUrlField", js.undefined)
+    @scala.inline
+    def setInitialized(value: /* e */ js.Any => _): Self = this.set("initialized", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInitialized: Self = this.set("initialized", js.undefined)
+    @scala.inline
+    def setLazyLoading(value: Boolean): Self = this.set("lazyLoading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyLoading: Self = this.set("lazyLoading", js.undefined)
+    @scala.inline
+    def setNodeDataBound(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("nodeDataBound", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteNodeDataBound: Self = this.set("nodeDataBound", js.undefined)
+    @scala.inline
+    def setNodeDrop(value: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => _): Self = this.set("nodeDrop", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteNodeDrop: Self = this.set("nodeDrop", js.undefined)
+    @scala.inline
+    def setParamNames(value: TreeParamNames): Self = this.set("paramNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParamNames: Self = this.set("paramNames", js.undefined)
+    @scala.inline
+    def setPrimaryKey(value: String): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    @scala.inline
+    def setSelect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("select", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setSelectionType(value: String): Self = this.set("selectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionType: Self = this.set("selectionType", js.undefined)
+    @scala.inline
+    def setTextField(value: String): Self = this.set("textField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextField: Self = this.set("textField", js.undefined)
+    @scala.inline
+    def setUiLibrary(value: String): Self = this.set("uiLibrary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUiLibrary: Self = this.set("uiLibrary", js.undefined)
+    @scala.inline
+    def setUnselect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => _): Self = this.set("unselect", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteUnselect: Self = this.set("unselect", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object getRecordsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetRecordsInput) = this()
-    /* CompleteClass */
-    override val input: GetRecordsInput = js.native
     val middlewareStack: MiddlewareStack[GetRecordsInput, GetRecordsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[GetRecordsInput, GetRecordsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[GetRecordsInput, GetRecordsOutput] = js.native
   }

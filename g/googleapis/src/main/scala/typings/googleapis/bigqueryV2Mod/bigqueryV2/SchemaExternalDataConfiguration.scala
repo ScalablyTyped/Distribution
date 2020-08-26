@@ -91,32 +91,68 @@ trait SchemaExternalDataConfiguration extends js.Object {
 
 object SchemaExternalDataConfiguration {
   @scala.inline
-  def apply(
-    autodetect: js.UndefOr[Boolean] = js.undefined,
-    bigtableOptions: SchemaBigtableOptions = null,
-    compression: String = null,
-    csvOptions: SchemaCsvOptions = null,
-    googleSheetsOptions: SchemaGoogleSheetsOptions = null,
-    hivePartitioningMode: String = null,
-    ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined,
-    maxBadRecords: js.UndefOr[Double] = js.undefined,
-    schema: SchemaTableSchema = null,
-    sourceFormat: String = null,
-    sourceUris: js.Array[String] = null
-  ): SchemaExternalDataConfiguration = {
+  def apply(): SchemaExternalDataConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autodetect)) __obj.updateDynamic("autodetect")(autodetect.get.asInstanceOf[js.Any])
-    if (bigtableOptions != null) __obj.updateDynamic("bigtableOptions")(bigtableOptions.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (csvOptions != null) __obj.updateDynamic("csvOptions")(csvOptions.asInstanceOf[js.Any])
-    if (googleSheetsOptions != null) __obj.updateDynamic("googleSheetsOptions")(googleSheetsOptions.asInstanceOf[js.Any])
-    if (hivePartitioningMode != null) __obj.updateDynamic("hivePartitioningMode")(hivePartitioningMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBadRecords)) __obj.updateDynamic("maxBadRecords")(maxBadRecords.get.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (sourceFormat != null) __obj.updateDynamic("sourceFormat")(sourceFormat.asInstanceOf[js.Any])
-    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExternalDataConfiguration]
   }
+  @scala.inline
+  implicit class SchemaExternalDataConfigurationOps[Self <: SchemaExternalDataConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutodetect(value: Boolean): Self = this.set("autodetect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutodetect: Self = this.set("autodetect", js.undefined)
+    @scala.inline
+    def setBigtableOptions(value: SchemaBigtableOptions): Self = this.set("bigtableOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigtableOptions: Self = this.set("bigtableOptions", js.undefined)
+    @scala.inline
+    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setCsvOptions(value: SchemaCsvOptions): Self = this.set("csvOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvOptions: Self = this.set("csvOptions", js.undefined)
+    @scala.inline
+    def setGoogleSheetsOptions(value: SchemaGoogleSheetsOptions): Self = this.set("googleSheetsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleSheetsOptions: Self = this.set("googleSheetsOptions", js.undefined)
+    @scala.inline
+    def setHivePartitioningMode(value: String): Self = this.set("hivePartitioningMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHivePartitioningMode: Self = this.set("hivePartitioningMode", js.undefined)
+    @scala.inline
+    def setIgnoreUnknownValues(value: Boolean): Self = this.set("ignoreUnknownValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnknownValues: Self = this.set("ignoreUnknownValues", js.undefined)
+    @scala.inline
+    def setMaxBadRecords(value: Double): Self = this.set("maxBadRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBadRecords: Self = this.set("maxBadRecords", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setSourceFormat(value: String): Self = this.set("sourceFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFormat: Self = this.set("sourceFormat", js.undefined)
+    @scala.inline
+    def setSourceUrisVarargs(value: String*): Self = this.set("sourceUris", js.Array(value :_*))
+    @scala.inline
+    def setSourceUris(value: js.Array[String]): Self = this.set("sourceUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUris: Self = this.set("sourceUris", js.undefined)
+  }
+  
 }
 

@@ -4,162 +4,273 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait coreVisitors[V] extends js.Object {
-  var ArrayExpression: js.UndefOr[V] = js.undefined
-  var AssignmentExpression: js.UndefOr[V] = js.undefined
-  var BinaryExpression: js.UndefOr[V] = js.undefined
-  var BlockStatement: js.UndefOr[V] = js.undefined
-  var BooleanLiteral: js.UndefOr[V] = js.undefined
-  var BreakStatement: js.UndefOr[V] = js.undefined
-  var CallExpression: js.UndefOr[V] = js.undefined
-  var CatchClause: js.UndefOr[V] = js.undefined
-  var ConditionalExpression: js.UndefOr[V] = js.undefined
-  var ContinueStatement: js.UndefOr[V] = js.undefined
-  var DebuggerStatement: js.UndefOr[V] = js.undefined
-  var Directive: js.UndefOr[V] = js.undefined
-  var DirectiveLiteral: js.UndefOr[V] = js.undefined
-  var DoWhileStatement: js.UndefOr[V] = js.undefined
-  var EmptyStatement: js.UndefOr[V] = js.undefined
-  var ExpressionStatement: js.UndefOr[V] = js.undefined
-  var File: js.UndefOr[V] = js.undefined
-  var ForInStatement: js.UndefOr[V] = js.undefined
-  var ForStatement: js.UndefOr[V] = js.undefined
-  var FunctionDeclaration: js.UndefOr[V] = js.undefined
-  var FunctionExpression: js.UndefOr[V] = js.undefined
-  var Identifier: js.UndefOr[V] = js.undefined
-  var IfStatement: js.UndefOr[V] = js.undefined
-  var LabeledStatement: js.UndefOr[V] = js.undefined
-  var LogicalExpression: js.UndefOr[V] = js.undefined
-  var MemberExpression: js.UndefOr[V] = js.undefined
-  var NewExpression: js.UndefOr[V] = js.undefined
-  var NullLiteral: js.UndefOr[V] = js.undefined
-  var NumericLiteral: js.UndefOr[V] = js.undefined
-  var ObjectExpression: js.UndefOr[V] = js.undefined
-  var ObjectMethod: js.UndefOr[V] = js.undefined
-  var ObjectProperty: js.UndefOr[V] = js.undefined
-  var Program: js.UndefOr[V] = js.undefined
-  var RegExpLiteral: js.UndefOr[V] = js.undefined
-  var RestElement: js.UndefOr[V] = js.undefined
-  var ReturnStatement: js.UndefOr[V] = js.undefined
-  var SequenceExpression: js.UndefOr[V] = js.undefined
-  var StringLiteral: js.UndefOr[V] = js.undefined
-  var SwitchCase: js.UndefOr[V] = js.undefined
-  var SwitchStatement: js.UndefOr[V] = js.undefined
-  var ThisExpression: js.UndefOr[V] = js.undefined
-  var ThrowStatement: js.UndefOr[V] = js.undefined
-  var TryStatement: js.UndefOr[V] = js.undefined
-  var UnaryExpression: js.UndefOr[V] = js.undefined
-  var UpdateExpression: js.UndefOr[V] = js.undefined
-  var VariableDeclaration: js.UndefOr[V] = js.undefined
-  var VariableDeclarator: js.UndefOr[V] = js.undefined
-  var WhileStatement: js.UndefOr[V] = js.undefined
-  var WithStatement: js.UndefOr[V] = js.undefined
+  var ArrayExpression: js.UndefOr[V] = js.native
+  var AssignmentExpression: js.UndefOr[V] = js.native
+  var BinaryExpression: js.UndefOr[V] = js.native
+  var BlockStatement: js.UndefOr[V] = js.native
+  var BooleanLiteral: js.UndefOr[V] = js.native
+  var BreakStatement: js.UndefOr[V] = js.native
+  var CallExpression: js.UndefOr[V] = js.native
+  var CatchClause: js.UndefOr[V] = js.native
+  var ConditionalExpression: js.UndefOr[V] = js.native
+  var ContinueStatement: js.UndefOr[V] = js.native
+  var DebuggerStatement: js.UndefOr[V] = js.native
+  var Directive: js.UndefOr[V] = js.native
+  var DirectiveLiteral: js.UndefOr[V] = js.native
+  var DoWhileStatement: js.UndefOr[V] = js.native
+  var EmptyStatement: js.UndefOr[V] = js.native
+  var ExpressionStatement: js.UndefOr[V] = js.native
+  var File: js.UndefOr[V] = js.native
+  var ForInStatement: js.UndefOr[V] = js.native
+  var ForStatement: js.UndefOr[V] = js.native
+  var FunctionDeclaration: js.UndefOr[V] = js.native
+  var FunctionExpression: js.UndefOr[V] = js.native
+  var Identifier: js.UndefOr[V] = js.native
+  var IfStatement: js.UndefOr[V] = js.native
+  var LabeledStatement: js.UndefOr[V] = js.native
+  var LogicalExpression: js.UndefOr[V] = js.native
+  var MemberExpression: js.UndefOr[V] = js.native
+  var NewExpression: js.UndefOr[V] = js.native
+  var NullLiteral: js.UndefOr[V] = js.native
+  var NumericLiteral: js.UndefOr[V] = js.native
+  var ObjectExpression: js.UndefOr[V] = js.native
+  var ObjectMethod: js.UndefOr[V] = js.native
+  var ObjectProperty: js.UndefOr[V] = js.native
+  var Program: js.UndefOr[V] = js.native
+  var RegExpLiteral: js.UndefOr[V] = js.native
+  var RestElement: js.UndefOr[V] = js.native
+  var ReturnStatement: js.UndefOr[V] = js.native
+  var SequenceExpression: js.UndefOr[V] = js.native
+  var StringLiteral: js.UndefOr[V] = js.native
+  var SwitchCase: js.UndefOr[V] = js.native
+  var SwitchStatement: js.UndefOr[V] = js.native
+  var ThisExpression: js.UndefOr[V] = js.native
+  var ThrowStatement: js.UndefOr[V] = js.native
+  var TryStatement: js.UndefOr[V] = js.native
+  var UnaryExpression: js.UndefOr[V] = js.native
+  var UpdateExpression: js.UndefOr[V] = js.native
+  var VariableDeclaration: js.UndefOr[V] = js.native
+  var VariableDeclarator: js.UndefOr[V] = js.native
+  var WhileStatement: js.UndefOr[V] = js.native
+  var WithStatement: js.UndefOr[V] = js.native
 }
 
 object coreVisitors {
   @scala.inline
-  def apply[V](
-    ArrayExpression: V = null,
-    AssignmentExpression: V = null,
-    BinaryExpression: V = null,
-    BlockStatement: V = null,
-    BooleanLiteral: V = null,
-    BreakStatement: V = null,
-    CallExpression: V = null,
-    CatchClause: V = null,
-    ConditionalExpression: V = null,
-    ContinueStatement: V = null,
-    DebuggerStatement: V = null,
-    Directive: V = null,
-    DirectiveLiteral: V = null,
-    DoWhileStatement: V = null,
-    EmptyStatement: V = null,
-    ExpressionStatement: V = null,
-    File: V = null,
-    ForInStatement: V = null,
-    ForStatement: V = null,
-    FunctionDeclaration: V = null,
-    FunctionExpression: V = null,
-    Identifier: V = null,
-    IfStatement: V = null,
-    LabeledStatement: V = null,
-    LogicalExpression: V = null,
-    MemberExpression: V = null,
-    NewExpression: V = null,
-    NullLiteral: V = null,
-    NumericLiteral: V = null,
-    ObjectExpression: V = null,
-    ObjectMethod: V = null,
-    ObjectProperty: V = null,
-    Program: V = null,
-    RegExpLiteral: V = null,
-    RestElement: V = null,
-    ReturnStatement: V = null,
-    SequenceExpression: V = null,
-    StringLiteral: V = null,
-    SwitchCase: V = null,
-    SwitchStatement: V = null,
-    ThisExpression: V = null,
-    ThrowStatement: V = null,
-    TryStatement: V = null,
-    UnaryExpression: V = null,
-    UpdateExpression: V = null,
-    VariableDeclaration: V = null,
-    VariableDeclarator: V = null,
-    WhileStatement: V = null,
-    WithStatement: V = null
-  ): coreVisitors[V] = {
+  def apply[V](): coreVisitors[V] = {
     val __obj = js.Dynamic.literal()
-    if (ArrayExpression != null) __obj.updateDynamic("ArrayExpression")(ArrayExpression.asInstanceOf[js.Any])
-    if (AssignmentExpression != null) __obj.updateDynamic("AssignmentExpression")(AssignmentExpression.asInstanceOf[js.Any])
-    if (BinaryExpression != null) __obj.updateDynamic("BinaryExpression")(BinaryExpression.asInstanceOf[js.Any])
-    if (BlockStatement != null) __obj.updateDynamic("BlockStatement")(BlockStatement.asInstanceOf[js.Any])
-    if (BooleanLiteral != null) __obj.updateDynamic("BooleanLiteral")(BooleanLiteral.asInstanceOf[js.Any])
-    if (BreakStatement != null) __obj.updateDynamic("BreakStatement")(BreakStatement.asInstanceOf[js.Any])
-    if (CallExpression != null) __obj.updateDynamic("CallExpression")(CallExpression.asInstanceOf[js.Any])
-    if (CatchClause != null) __obj.updateDynamic("CatchClause")(CatchClause.asInstanceOf[js.Any])
-    if (ConditionalExpression != null) __obj.updateDynamic("ConditionalExpression")(ConditionalExpression.asInstanceOf[js.Any])
-    if (ContinueStatement != null) __obj.updateDynamic("ContinueStatement")(ContinueStatement.asInstanceOf[js.Any])
-    if (DebuggerStatement != null) __obj.updateDynamic("DebuggerStatement")(DebuggerStatement.asInstanceOf[js.Any])
-    if (Directive != null) __obj.updateDynamic("Directive")(Directive.asInstanceOf[js.Any])
-    if (DirectiveLiteral != null) __obj.updateDynamic("DirectiveLiteral")(DirectiveLiteral.asInstanceOf[js.Any])
-    if (DoWhileStatement != null) __obj.updateDynamic("DoWhileStatement")(DoWhileStatement.asInstanceOf[js.Any])
-    if (EmptyStatement != null) __obj.updateDynamic("EmptyStatement")(EmptyStatement.asInstanceOf[js.Any])
-    if (ExpressionStatement != null) __obj.updateDynamic("ExpressionStatement")(ExpressionStatement.asInstanceOf[js.Any])
-    if (File != null) __obj.updateDynamic("File")(File.asInstanceOf[js.Any])
-    if (ForInStatement != null) __obj.updateDynamic("ForInStatement")(ForInStatement.asInstanceOf[js.Any])
-    if (ForStatement != null) __obj.updateDynamic("ForStatement")(ForStatement.asInstanceOf[js.Any])
-    if (FunctionDeclaration != null) __obj.updateDynamic("FunctionDeclaration")(FunctionDeclaration.asInstanceOf[js.Any])
-    if (FunctionExpression != null) __obj.updateDynamic("FunctionExpression")(FunctionExpression.asInstanceOf[js.Any])
-    if (Identifier != null) __obj.updateDynamic("Identifier")(Identifier.asInstanceOf[js.Any])
-    if (IfStatement != null) __obj.updateDynamic("IfStatement")(IfStatement.asInstanceOf[js.Any])
-    if (LabeledStatement != null) __obj.updateDynamic("LabeledStatement")(LabeledStatement.asInstanceOf[js.Any])
-    if (LogicalExpression != null) __obj.updateDynamic("LogicalExpression")(LogicalExpression.asInstanceOf[js.Any])
-    if (MemberExpression != null) __obj.updateDynamic("MemberExpression")(MemberExpression.asInstanceOf[js.Any])
-    if (NewExpression != null) __obj.updateDynamic("NewExpression")(NewExpression.asInstanceOf[js.Any])
-    if (NullLiteral != null) __obj.updateDynamic("NullLiteral")(NullLiteral.asInstanceOf[js.Any])
-    if (NumericLiteral != null) __obj.updateDynamic("NumericLiteral")(NumericLiteral.asInstanceOf[js.Any])
-    if (ObjectExpression != null) __obj.updateDynamic("ObjectExpression")(ObjectExpression.asInstanceOf[js.Any])
-    if (ObjectMethod != null) __obj.updateDynamic("ObjectMethod")(ObjectMethod.asInstanceOf[js.Any])
-    if (ObjectProperty != null) __obj.updateDynamic("ObjectProperty")(ObjectProperty.asInstanceOf[js.Any])
-    if (Program != null) __obj.updateDynamic("Program")(Program.asInstanceOf[js.Any])
-    if (RegExpLiteral != null) __obj.updateDynamic("RegExpLiteral")(RegExpLiteral.asInstanceOf[js.Any])
-    if (RestElement != null) __obj.updateDynamic("RestElement")(RestElement.asInstanceOf[js.Any])
-    if (ReturnStatement != null) __obj.updateDynamic("ReturnStatement")(ReturnStatement.asInstanceOf[js.Any])
-    if (SequenceExpression != null) __obj.updateDynamic("SequenceExpression")(SequenceExpression.asInstanceOf[js.Any])
-    if (StringLiteral != null) __obj.updateDynamic("StringLiteral")(StringLiteral.asInstanceOf[js.Any])
-    if (SwitchCase != null) __obj.updateDynamic("SwitchCase")(SwitchCase.asInstanceOf[js.Any])
-    if (SwitchStatement != null) __obj.updateDynamic("SwitchStatement")(SwitchStatement.asInstanceOf[js.Any])
-    if (ThisExpression != null) __obj.updateDynamic("ThisExpression")(ThisExpression.asInstanceOf[js.Any])
-    if (ThrowStatement != null) __obj.updateDynamic("ThrowStatement")(ThrowStatement.asInstanceOf[js.Any])
-    if (TryStatement != null) __obj.updateDynamic("TryStatement")(TryStatement.asInstanceOf[js.Any])
-    if (UnaryExpression != null) __obj.updateDynamic("UnaryExpression")(UnaryExpression.asInstanceOf[js.Any])
-    if (UpdateExpression != null) __obj.updateDynamic("UpdateExpression")(UpdateExpression.asInstanceOf[js.Any])
-    if (VariableDeclaration != null) __obj.updateDynamic("VariableDeclaration")(VariableDeclaration.asInstanceOf[js.Any])
-    if (VariableDeclarator != null) __obj.updateDynamic("VariableDeclarator")(VariableDeclarator.asInstanceOf[js.Any])
-    if (WhileStatement != null) __obj.updateDynamic("WhileStatement")(WhileStatement.asInstanceOf[js.Any])
-    if (WithStatement != null) __obj.updateDynamic("WithStatement")(WithStatement.asInstanceOf[js.Any])
     __obj.asInstanceOf[coreVisitors[V]]
   }
+  @scala.inline
+  implicit class coreVisitorsOps[Self <: coreVisitors[_], V] (val x: Self with coreVisitors[V]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayExpression(value: V): Self = this.set("ArrayExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayExpression: Self = this.set("ArrayExpression", js.undefined)
+    @scala.inline
+    def setAssignmentExpression(value: V): Self = this.set("AssignmentExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentExpression: Self = this.set("AssignmentExpression", js.undefined)
+    @scala.inline
+    def setBinaryExpression(value: V): Self = this.set("BinaryExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryExpression: Self = this.set("BinaryExpression", js.undefined)
+    @scala.inline
+    def setBlockStatement(value: V): Self = this.set("BlockStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockStatement: Self = this.set("BlockStatement", js.undefined)
+    @scala.inline
+    def setBooleanLiteral(value: V): Self = this.set("BooleanLiteral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanLiteral: Self = this.set("BooleanLiteral", js.undefined)
+    @scala.inline
+    def setBreakStatement(value: V): Self = this.set("BreakStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakStatement: Self = this.set("BreakStatement", js.undefined)
+    @scala.inline
+    def setCallExpression(value: V): Self = this.set("CallExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallExpression: Self = this.set("CallExpression", js.undefined)
+    @scala.inline
+    def setCatchClause(value: V): Self = this.set("CatchClause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatchClause: Self = this.set("CatchClause", js.undefined)
+    @scala.inline
+    def setConditionalExpression(value: V): Self = this.set("ConditionalExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionalExpression: Self = this.set("ConditionalExpression", js.undefined)
+    @scala.inline
+    def setContinueStatement(value: V): Self = this.set("ContinueStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinueStatement: Self = this.set("ContinueStatement", js.undefined)
+    @scala.inline
+    def setDebuggerStatement(value: V): Self = this.set("DebuggerStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebuggerStatement: Self = this.set("DebuggerStatement", js.undefined)
+    @scala.inline
+    def setDirective(value: V): Self = this.set("Directive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirective: Self = this.set("Directive", js.undefined)
+    @scala.inline
+    def setDirectiveLiteral(value: V): Self = this.set("DirectiveLiteral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectiveLiteral: Self = this.set("DirectiveLiteral", js.undefined)
+    @scala.inline
+    def setDoWhileStatement(value: V): Self = this.set("DoWhileStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoWhileStatement: Self = this.set("DoWhileStatement", js.undefined)
+    @scala.inline
+    def setEmptyStatement(value: V): Self = this.set("EmptyStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyStatement: Self = this.set("EmptyStatement", js.undefined)
+    @scala.inline
+    def setExpressionStatement(value: V): Self = this.set("ExpressionStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionStatement: Self = this.set("ExpressionStatement", js.undefined)
+    @scala.inline
+    def setFile(value: V): Self = this.set("File", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("File", js.undefined)
+    @scala.inline
+    def setForInStatement(value: V): Self = this.set("ForInStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForInStatement: Self = this.set("ForInStatement", js.undefined)
+    @scala.inline
+    def setForStatement(value: V): Self = this.set("ForStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForStatement: Self = this.set("ForStatement", js.undefined)
+    @scala.inline
+    def setFunctionDeclaration(value: V): Self = this.set("FunctionDeclaration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionDeclaration: Self = this.set("FunctionDeclaration", js.undefined)
+    @scala.inline
+    def setFunctionExpression(value: V): Self = this.set("FunctionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionExpression: Self = this.set("FunctionExpression", js.undefined)
+    @scala.inline
+    def setIdentifier(value: V): Self = this.set("Identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("Identifier", js.undefined)
+    @scala.inline
+    def setIfStatement(value: V): Self = this.set("IfStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfStatement: Self = this.set("IfStatement", js.undefined)
+    @scala.inline
+    def setLabeledStatement(value: V): Self = this.set("LabeledStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabeledStatement: Self = this.set("LabeledStatement", js.undefined)
+    @scala.inline
+    def setLogicalExpression(value: V): Self = this.set("LogicalExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogicalExpression: Self = this.set("LogicalExpression", js.undefined)
+    @scala.inline
+    def setMemberExpression(value: V): Self = this.set("MemberExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberExpression: Self = this.set("MemberExpression", js.undefined)
+    @scala.inline
+    def setNewExpression(value: V): Self = this.set("NewExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewExpression: Self = this.set("NewExpression", js.undefined)
+    @scala.inline
+    def setNullLiteral(value: V): Self = this.set("NullLiteral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullLiteral: Self = this.set("NullLiteral", js.undefined)
+    @scala.inline
+    def setNumericLiteral(value: V): Self = this.set("NumericLiteral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumericLiteral: Self = this.set("NumericLiteral", js.undefined)
+    @scala.inline
+    def setObjectExpression(value: V): Self = this.set("ObjectExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectExpression: Self = this.set("ObjectExpression", js.undefined)
+    @scala.inline
+    def setObjectMethod(value: V): Self = this.set("ObjectMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectMethod: Self = this.set("ObjectMethod", js.undefined)
+    @scala.inline
+    def setObjectProperty(value: V): Self = this.set("ObjectProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectProperty: Self = this.set("ObjectProperty", js.undefined)
+    @scala.inline
+    def setProgram(value: V): Self = this.set("Program", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgram: Self = this.set("Program", js.undefined)
+    @scala.inline
+    def setRegExpLiteral(value: V): Self = this.set("RegExpLiteral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegExpLiteral: Self = this.set("RegExpLiteral", js.undefined)
+    @scala.inline
+    def setRestElement(value: V): Self = this.set("RestElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestElement: Self = this.set("RestElement", js.undefined)
+    @scala.inline
+    def setReturnStatement(value: V): Self = this.set("ReturnStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnStatement: Self = this.set("ReturnStatement", js.undefined)
+    @scala.inline
+    def setSequenceExpression(value: V): Self = this.set("SequenceExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSequenceExpression: Self = this.set("SequenceExpression", js.undefined)
+    @scala.inline
+    def setStringLiteral(value: V): Self = this.set("StringLiteral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringLiteral: Self = this.set("StringLiteral", js.undefined)
+    @scala.inline
+    def setSwitchCase(value: V): Self = this.set("SwitchCase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwitchCase: Self = this.set("SwitchCase", js.undefined)
+    @scala.inline
+    def setSwitchStatement(value: V): Self = this.set("SwitchStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwitchStatement: Self = this.set("SwitchStatement", js.undefined)
+    @scala.inline
+    def setThisExpression(value: V): Self = this.set("ThisExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThisExpression: Self = this.set("ThisExpression", js.undefined)
+    @scala.inline
+    def setThrowStatement(value: V): Self = this.set("ThrowStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrowStatement: Self = this.set("ThrowStatement", js.undefined)
+    @scala.inline
+    def setTryStatement(value: V): Self = this.set("TryStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTryStatement: Self = this.set("TryStatement", js.undefined)
+    @scala.inline
+    def setUnaryExpression(value: V): Self = this.set("UnaryExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnaryExpression: Self = this.set("UnaryExpression", js.undefined)
+    @scala.inline
+    def setUpdateExpression(value: V): Self = this.set("UpdateExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateExpression: Self = this.set("UpdateExpression", js.undefined)
+    @scala.inline
+    def setVariableDeclaration(value: V): Self = this.set("VariableDeclaration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableDeclaration: Self = this.set("VariableDeclaration", js.undefined)
+    @scala.inline
+    def setVariableDeclarator(value: V): Self = this.set("VariableDeclarator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariableDeclarator: Self = this.set("VariableDeclarator", js.undefined)
+    @scala.inline
+    def setWhileStatement(value: V): Self = this.set("WhileStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhileStatement: Self = this.set("WhileStatement", js.undefined)
+    @scala.inline
+    def setWithStatement(value: V): Self = this.set("WithStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithStatement: Self = this.set("WithStatement", js.undefined)
+  }
+  
 }
 

@@ -41,9 +41,9 @@ trait CachesIscsiVolumeState extends js.Object {
     */
   val sourceVolumeArn: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
     */
@@ -68,38 +68,78 @@ trait CachesIscsiVolumeState extends js.Object {
 
 object CachesIscsiVolumeState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    chapEnabled: Input[Boolean] = null,
-    gatewayArn: Input[String] = null,
-    lunNumber: Input[Double] = null,
-    networkInterfaceId: Input[String] = null,
-    networkInterfacePort: Input[Double] = null,
-    snapshotId: Input[String] = null,
-    sourceVolumeArn: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetArn: Input[String] = null,
-    targetName: Input[String] = null,
-    volumeArn: Input[String] = null,
-    volumeId: Input[String] = null,
-    volumeSizeInBytes: Input[Double] = null
-  ): CachesIscsiVolumeState = {
+  def apply(): CachesIscsiVolumeState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (chapEnabled != null) __obj.updateDynamic("chapEnabled")(chapEnabled.asInstanceOf[js.Any])
-    if (gatewayArn != null) __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
-    if (lunNumber != null) __obj.updateDynamic("lunNumber")(lunNumber.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (networkInterfacePort != null) __obj.updateDynamic("networkInterfacePort")(networkInterfacePort.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (sourceVolumeArn != null) __obj.updateDynamic("sourceVolumeArn")(sourceVolumeArn.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
-    if (targetName != null) __obj.updateDynamic("targetName")(targetName.asInstanceOf[js.Any])
-    if (volumeArn != null) __obj.updateDynamic("volumeArn")(volumeArn.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
-    if (volumeSizeInBytes != null) __obj.updateDynamic("volumeSizeInBytes")(volumeSizeInBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CachesIscsiVolumeState]
   }
+  @scala.inline
+  implicit class CachesIscsiVolumeStateOps[Self <: CachesIscsiVolumeState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setChapEnabled(value: Input[Boolean]): Self = this.set("chapEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChapEnabled: Self = this.set("chapEnabled", js.undefined)
+    @scala.inline
+    def setGatewayArn(value: Input[String]): Self = this.set("gatewayArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayArn: Self = this.set("gatewayArn", js.undefined)
+    @scala.inline
+    def setLunNumber(value: Input[Double]): Self = this.set("lunNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLunNumber: Self = this.set("lunNumber", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setNetworkInterfacePort(value: Input[Double]): Self = this.set("networkInterfacePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfacePort: Self = this.set("networkInterfacePort", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: Input[String]): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    @scala.inline
+    def setSourceVolumeArn(value: Input[String]): Self = this.set("sourceVolumeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVolumeArn: Self = this.set("sourceVolumeArn", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetArn(value: Input[String]): Self = this.set("targetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetArn: Self = this.set("targetArn", js.undefined)
+    @scala.inline
+    def setTargetName(value: Input[String]): Self = this.set("targetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetName: Self = this.set("targetName", js.undefined)
+    @scala.inline
+    def setVolumeArn(value: Input[String]): Self = this.set("volumeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeArn: Self = this.set("volumeArn", js.undefined)
+    @scala.inline
+    def setVolumeId(value: Input[String]): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+    @scala.inline
+    def setVolumeSizeInBytes(value: Input[Double]): Self = this.set("volumeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInBytes: Self = this.set("volumeSizeInBytes", js.undefined)
+  }
+  
 }
 

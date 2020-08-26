@@ -10,9 +10,9 @@ The open source javascript graphing library that powers plotly
 | ------------------ | :-------------: |
 | Full name          | plotly.js |
 | Keywords           | graphing, plotting, data, visualization, plotly |
-| # releases         | 66 |
-| # dependents       | 59 |
-| # downloads        | 2099509 |
+| # releases         | 67 |
+| # dependents       | 60 |
+| # downloads        | 2173726 |
 | # stars            | 13 |
 
 ## Links

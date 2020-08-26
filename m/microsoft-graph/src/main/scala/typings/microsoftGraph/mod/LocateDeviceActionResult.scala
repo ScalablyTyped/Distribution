@@ -4,27 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LocateDeviceActionResult extends DeviceActionResult {
   // device location
-  var deviceLocation: js.UndefOr[DeviceGeoLocation] = js.undefined
+  var deviceLocation: js.UndefOr[DeviceGeoLocation] = js.native
 }
 
 object LocateDeviceActionResult {
   @scala.inline
-  def apply(
-    actionName: String = null,
-    actionState: ActionState = null,
-    deviceLocation: DeviceGeoLocation = null,
-    lastUpdatedDateTime: String = null,
-    startDateTime: String = null
-  ): LocateDeviceActionResult = {
+  def apply(): LocateDeviceActionResult = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (actionState != null) __obj.updateDynamic("actionState")(actionState.asInstanceOf[js.Any])
-    if (deviceLocation != null) __obj.updateDynamic("deviceLocation")(deviceLocation.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (startDateTime != null) __obj.updateDynamic("startDateTime")(startDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocateDeviceActionResult]
   }
+  @scala.inline
+  implicit class LocateDeviceActionResultOps[Self <: LocateDeviceActionResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceLocation(value: DeviceGeoLocation): Self = this.set("deviceLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceLocation: Self = this.set("deviceLocation", js.undefined)
+  }
+  
 }
 

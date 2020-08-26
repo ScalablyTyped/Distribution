@@ -28,6 +28,13 @@ trait Typeofhttp extends js.Object {
   def post(path: String): js.Any = js.native
   def resource(method: String, path: String): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
+  def sendRequest(
+    options: js.Object,
+    onOk: js.Any,
+    onError: js.Any,
+    opt_data: js.UndefOr[scala.Nothing],
+    opt_proxy: String
+  ): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
   def tryParse(str: String): js.Any = js.native

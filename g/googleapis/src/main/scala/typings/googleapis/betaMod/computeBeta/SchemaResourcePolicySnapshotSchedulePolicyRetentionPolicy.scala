@@ -22,11 +22,30 @@ trait SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy extends js.Objec
 
 object SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy {
   @scala.inline
-  def apply(maxRetentionDays: js.UndefOr[Double] = js.undefined, onSourceDiskDelete: String = null): SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
+  def apply(): SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxRetentionDays)) __obj.updateDynamic("maxRetentionDays")(maxRetentionDays.get.asInstanceOf[js.Any])
-    if (onSourceDiskDelete != null) __obj.updateDynamic("onSourceDiskDelete")(onSourceDiskDelete.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy]
   }
+  @scala.inline
+  implicit class SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicyOps[Self <: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxRetentionDays(value: Double): Self = this.set("maxRetentionDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetentionDays: Self = this.set("maxRetentionDays", js.undefined)
+    @scala.inline
+    def setOnSourceDiskDelete(value: String): Self = this.set("onSourceDiskDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSourceDiskDelete: Self = this.set("onSourceDiskDelete", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object listVaultsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListVaultsInput) = this()
-    /* CompleteClass */
-    override val input: ListVaultsInput = js.native
     val middlewareStack: MiddlewareStack[ListVaultsInput, ListVaultsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[ListVaultsInput, ListVaultsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[ListVaultsInput, ListVaultsOutput] = js.native
   }

@@ -8,36 +8,55 @@ import scala.scalajs.js.annotation._
   * Dictionary describing the arguments passed to the application on startup.
   * Use the [getArguments](Titanium.App.getArguments) method to retrieve the launch options.
   */
+@js.native
 trait launchOptions extends js.Object {
   /**
     * If set to `true`, this key indicates that the application was launched in response to an
     * incoming location event.
     */
-  var launchOptionsLocationKey: js.UndefOr[Boolean] = js.undefined
+  var launchOptionsLocationKey: js.UndefOr[Boolean] = js.native
   /**
     * This key indicates that the application was launched by another
     * application with the specified bundle ID.
     */
-  var source: js.UndefOr[java.lang.String] = js.undefined
+  var source: js.UndefOr[java.lang.String] = js.native
   /**
     * This key indicates that the application was launched in order to open
     * the specified URL.
     */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[java.lang.String] = js.native
 }
 
 object launchOptions {
   @scala.inline
-  def apply(
-    launchOptionsLocationKey: js.UndefOr[Boolean] = js.undefined,
-    source: java.lang.String = null,
-    url: java.lang.String = null
-  ): launchOptions = {
+  def apply(): launchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[launchOptions]
   }
+  @scala.inline
+  implicit class launchOptionsOps[Self <: launchOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchOptionsLocationKey(value: Boolean): Self = this.set("launchOptionsLocationKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchOptionsLocationKey: Self = this.set("launchOptionsLocationKey", js.undefined)
+    @scala.inline
+    def setSource(value: java.lang.String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

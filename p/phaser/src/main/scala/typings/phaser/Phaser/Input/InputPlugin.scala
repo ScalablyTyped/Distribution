@@ -257,10 +257,30 @@ trait InputPlugin extends EventEmitter {
     * @param dropZone Is this Game Object a drop zone or not? Default false.
     */
   def enable(gameObject: GameObject): this.type = js.native
+  def enable(
+    gameObject: GameObject,
+    shape: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    dropZone: Boolean
+  ): this.type = js.native
+  def enable(gameObject: GameObject, shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
+  def enable(
+    gameObject: GameObject,
+    shape: js.UndefOr[scala.Nothing],
+    callback: HitAreaCallback,
+    dropZone: Boolean
+  ): this.type = js.native
   def enable(gameObject: GameObject, shape: js.Any): this.type = js.native
+  def enable(gameObject: GameObject, shape: js.Any, callback: js.UndefOr[scala.Nothing], dropZone: Boolean): this.type = js.native
   def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
   def enable(gameObject: GameObject, shape: js.Any, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   def enable(gameObject: GameObject, shape: InputConfiguration): this.type = js.native
+  def enable(
+    gameObject: GameObject,
+    shape: InputConfiguration,
+    callback: js.UndefOr[scala.Nothing],
+    dropZone: Boolean
+  ): this.type = js.native
   def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback): this.type = js.native
   def enable(gameObject: GameObject, shape: InputConfiguration, callback: HitAreaCallback, dropZone: Boolean): this.type = js.native
   /**
@@ -413,6 +433,7 @@ trait InputPlugin extends EventEmitter {
     */
   def setGlobalTopOnly(value: Boolean): this.type = js.native
   def setHitArea(gameObjects: js.Array[GameObject]): this.type = js.native
+  def setHitArea(gameObjects: js.Array[GameObject], shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
   def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any): this.type = js.native
   def setHitArea(gameObjects: js.Array[GameObject], shape: js.Any, callback: HitAreaCallback): this.type = js.native
   def setHitArea(gameObjects: js.Array[GameObject], shape: InputConfiguration): this.type = js.native
@@ -434,6 +455,7 @@ trait InputPlugin extends EventEmitter {
     * @param callback The 'contains' function to invoke to check if the pointer is within the hit area.
     */
   def setHitArea(gameObjects: GameObject): this.type = js.native
+  def setHitArea(gameObjects: GameObject, shape: js.UndefOr[scala.Nothing], callback: HitAreaCallback): this.type = js.native
   def setHitArea(gameObjects: GameObject, shape: js.Any): this.type = js.native
   def setHitArea(gameObjects: GameObject, shape: js.Any, callback: HitAreaCallback): this.type = js.native
   def setHitArea(gameObjects: GameObject, shape: InputConfiguration): this.type = js.native

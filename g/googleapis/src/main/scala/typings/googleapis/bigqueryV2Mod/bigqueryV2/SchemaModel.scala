@@ -81,36 +81,80 @@ trait SchemaModel extends js.Object {
 
 object SchemaModel {
   @scala.inline
-  def apply(
-    creationTime: String = null,
-    description: String = null,
-    etag: String = null,
-    expirationTime: String = null,
-    featureColumns: js.Array[SchemaStandardSqlField] = null,
-    friendlyName: String = null,
-    labelColumns: js.Array[SchemaStandardSqlField] = null,
-    labels: StringDictionary[String] = null,
-    lastModifiedTime: String = null,
-    location: String = null,
-    modelReference: SchemaModelReference = null,
-    modelType: String = null,
-    trainingRuns: js.Array[SchemaTrainingRun] = null
-  ): SchemaModel = {
+  def apply(): SchemaModel = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
-    if (featureColumns != null) __obj.updateDynamic("featureColumns")(featureColumns.asInstanceOf[js.Any])
-    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName.asInstanceOf[js.Any])
-    if (labelColumns != null) __obj.updateDynamic("labelColumns")(labelColumns.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (modelReference != null) __obj.updateDynamic("modelReference")(modelReference.asInstanceOf[js.Any])
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
-    if (trainingRuns != null) __obj.updateDynamic("trainingRuns")(trainingRuns.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModel]
   }
+  @scala.inline
+  implicit class SchemaModelOps[Self <: SchemaModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    @scala.inline
+    def setFeatureColumnsVarargs(value: SchemaStandardSqlField*): Self = this.set("featureColumns", js.Array(value :_*))
+    @scala.inline
+    def setFeatureColumns(value: js.Array[SchemaStandardSqlField]): Self = this.set("featureColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureColumns: Self = this.set("featureColumns", js.undefined)
+    @scala.inline
+    def setFriendlyName(value: String): Self = this.set("friendlyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFriendlyName: Self = this.set("friendlyName", js.undefined)
+    @scala.inline
+    def setLabelColumnsVarargs(value: SchemaStandardSqlField*): Self = this.set("labelColumns", js.Array(value :_*))
+    @scala.inline
+    def setLabelColumns(value: js.Array[SchemaStandardSqlField]): Self = this.set("labelColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelColumns: Self = this.set("labelColumns", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: String): Self = this.set("lastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("lastModifiedTime", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setModelReference(value: SchemaModelReference): Self = this.set("modelReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelReference: Self = this.set("modelReference", js.undefined)
+    @scala.inline
+    def setModelType(value: String): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelType: Self = this.set("modelType", js.undefined)
+    @scala.inline
+    def setTrainingRunsVarargs(value: SchemaTrainingRun*): Self = this.set("trainingRuns", js.Array(value :_*))
+    @scala.inline
+    def setTrainingRuns(value: js.Array[SchemaTrainingRun]): Self = this.set("trainingRuns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingRuns: Self = this.set("trainingRuns", js.undefined)
+  }
+  
 }
 

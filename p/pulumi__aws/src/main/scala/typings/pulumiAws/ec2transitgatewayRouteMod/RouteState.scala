@@ -27,18 +27,38 @@ trait RouteState extends js.Object {
 
 object RouteState {
   @scala.inline
-  def apply(
-    blackhole: Input[Boolean] = null,
-    destinationCidrBlock: Input[String] = null,
-    transitGatewayAttachmentId: Input[String] = null,
-    transitGatewayRouteTableId: Input[String] = null
-  ): RouteState = {
+  def apply(): RouteState = {
     val __obj = js.Dynamic.literal()
-    if (blackhole != null) __obj.updateDynamic("blackhole")(blackhole.asInstanceOf[js.Any])
-    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
-    if (transitGatewayAttachmentId != null) __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
-    if (transitGatewayRouteTableId != null) __obj.updateDynamic("transitGatewayRouteTableId")(transitGatewayRouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteState]
   }
+  @scala.inline
+  implicit class RouteStateOps[Self <: RouteState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlackhole(value: Input[Boolean]): Self = this.set("blackhole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlackhole: Self = this.set("blackhole", js.undefined)
+    @scala.inline
+    def setDestinationCidrBlock(value: Input[String]): Self = this.set("destinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("destinationCidrBlock", js.undefined)
+    @scala.inline
+    def setTransitGatewayAttachmentId(value: Input[String]): Self = this.set("transitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayAttachmentId: Self = this.set("transitGatewayAttachmentId", js.undefined)
+    @scala.inline
+    def setTransitGatewayRouteTableId(value: Input[String]): Self = this.set("transitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayRouteTableId: Self = this.set("transitGatewayRouteTableId", js.undefined)
+  }
+  
 }
 

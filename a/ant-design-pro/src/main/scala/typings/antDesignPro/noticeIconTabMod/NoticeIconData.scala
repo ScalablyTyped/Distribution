@@ -6,33 +6,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoticeIconData extends js.Object {
-  var avatar: js.UndefOr[String | ReactNode] = js.undefined
-  var datetime: js.UndefOr[ReactNode] = js.undefined
-  var description: js.UndefOr[ReactNode] = js.undefined
-  var extra: js.UndefOr[ReactNode] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
+  var avatar: js.UndefOr[String | ReactNode] = js.native
+  var datetime: js.UndefOr[ReactNode] = js.native
+  var description: js.UndefOr[ReactNode] = js.native
+  var extra: js.UndefOr[ReactNode] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
 }
 
 object NoticeIconData {
   @scala.inline
-  def apply(
-    avatar: String | ReactNode = null,
-    datetime: ReactNode = null,
-    description: ReactNode = null,
-    extra: ReactNode = null,
-    style: CSSProperties = null,
-    title: ReactNode = null
-  ): NoticeIconData = {
+  def apply(): NoticeIconData = {
     val __obj = js.Dynamic.literal()
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (datetime != null) __obj.updateDynamic("datetime")(datetime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoticeIconData]
   }
+  @scala.inline
+  implicit class NoticeIconDataOps[Self <: NoticeIconData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvatar(value: String | ReactNode): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setDatetime(value: ReactNode): Self = this.set("datetime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatetime: Self = this.set("datetime", js.undefined)
+    @scala.inline
+    def setDescription(value: ReactNode): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExtra(value: ReactNode): Self = this.set("extra", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtra: Self = this.set("extra", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

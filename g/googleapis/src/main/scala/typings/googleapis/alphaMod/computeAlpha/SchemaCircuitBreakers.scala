@@ -44,22 +44,46 @@ trait SchemaCircuitBreakers extends js.Object {
 
 object SchemaCircuitBreakers {
   @scala.inline
-  def apply(
-    connectTimeout: SchemaDuration = null,
-    maxConnections: js.UndefOr[Double] = js.undefined,
-    maxPendingRequests: js.UndefOr[Double] = js.undefined,
-    maxRequests: js.UndefOr[Double] = js.undefined,
-    maxRequestsPerConnection: js.UndefOr[Double] = js.undefined,
-    maxRetries: js.UndefOr[Double] = js.undefined
-  ): SchemaCircuitBreakers = {
+  def apply(): SchemaCircuitBreakers = {
     val __obj = js.Dynamic.literal()
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPendingRequests)) __obj.updateDynamic("maxPendingRequests")(maxPendingRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRequests)) __obj.updateDynamic("maxRequests")(maxRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRequestsPerConnection)) __obj.updateDynamic("maxRequestsPerConnection")(maxRequestsPerConnection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCircuitBreakers]
   }
+  @scala.inline
+  implicit class SchemaCircuitBreakersOps[Self <: SchemaCircuitBreakers] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectTimeout(value: SchemaDuration): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    @scala.inline
+    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    @scala.inline
+    def setMaxPendingRequests(value: Double): Self = this.set("maxPendingRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPendingRequests: Self = this.set("maxPendingRequests", js.undefined)
+    @scala.inline
+    def setMaxRequests(value: Double): Self = this.set("maxRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRequests: Self = this.set("maxRequests", js.undefined)
+    @scala.inline
+    def setMaxRequestsPerConnection(value: Double): Self = this.set("maxRequestsPerConnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRequestsPerConnection: Self = this.set("maxRequestsPerConnection", js.undefined)
+    @scala.inline
+    def setMaxRetries(value: Double): Self = this.set("maxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetries: Self = this.set("maxRetries", js.undefined)
+  }
+  
 }
 

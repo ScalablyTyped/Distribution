@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TextTrackButton extends MenuButton {
+  def createItems(items: js.UndefOr[scala.Nothing], TrackMenuItem: InstantiableTextTrackMenuItem): js.Array[TextTrackMenuItem] = js.native
   def createItems(items: js.Array[TextTrackMenuItem]): js.Array[TextTrackMenuItem] = js.native
   def createItems(items: js.Array[TextTrackMenuItem], TrackMenuItem: InstantiableTextTrackMenuItem): js.Array[TextTrackMenuItem] = js.native
 }

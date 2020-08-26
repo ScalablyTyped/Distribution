@@ -8,10 +8,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParametersProjectsListCollaboratorsEndpoint extends js.Object {
-  var parameters: ProjectsListCollaboratorsEndpoint
-  var request: ProjectsListCollaboratorsRequestOptions
-  var response: OctokitResponse[ProjectsListCollaboratorsResponseData]
+  var parameters: ProjectsListCollaboratorsEndpoint = js.native
+  var request: ProjectsListCollaboratorsRequestOptions = js.native
+  var response: OctokitResponse[ProjectsListCollaboratorsResponseData] = js.native
 }
 
 object ParametersProjectsListCollaboratorsEndpoint {
@@ -24,5 +25,24 @@ object ParametersProjectsListCollaboratorsEndpoint {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersProjectsListCollaboratorsEndpoint]
   }
+  @scala.inline
+  implicit class ParametersProjectsListCollaboratorsEndpointOps[Self <: ParametersProjectsListCollaboratorsEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameters(value: ProjectsListCollaboratorsEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest(value: ProjectsListCollaboratorsRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponse(value: OctokitResponse[ProjectsListCollaboratorsResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+  }
+  
 }
 

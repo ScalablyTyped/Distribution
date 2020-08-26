@@ -26,16 +26,9 @@ object getFunctionCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetFunctionInput) = this()
-    /* CompleteClass */
-    override val input: GetFunctionInput = js.native
     val middlewareStack: MiddlewareStack[GetFunctionInput, GetFunctionOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[GetFunctionInput, GetFunctionOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[GetFunctionInput, GetFunctionOutput] = js.native
   }

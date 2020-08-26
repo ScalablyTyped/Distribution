@@ -32,6 +32,7 @@ class ResourceQuerySources protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListQuerySourcesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListQuerySourcesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListQuerySourcesResponse] = js.native
   def list(params: ParamsResourceQuerySourcesList): GaxiosPromise[SchemaListQuerySourcesResponse] = js.native
   def list(
     params: ParamsResourceQuerySourcesList,

@@ -22,15 +22,34 @@ trait DescribeExpressionsRequest extends js.Object {
 
 object DescribeExpressionsRequest {
   @scala.inline
-  def apply(
-    DomainName: DomainName,
-    Deployed: js.UndefOr[Boolean] = js.undefined,
-    ExpressionNames: StandardNameList = null
-  ): DescribeExpressionsRequest = {
+  def apply(DomainName: DomainName): DescribeExpressionsRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deployed)) __obj.updateDynamic("Deployed")(Deployed.get.asInstanceOf[js.Any])
-    if (ExpressionNames != null) __obj.updateDynamic("ExpressionNames")(ExpressionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExpressionsRequest]
   }
+  @scala.inline
+  implicit class DescribeExpressionsRequestOps[Self <: DescribeExpressionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeployed(value: Boolean): Self = this.set("Deployed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployed: Self = this.set("Deployed", js.undefined)
+    @scala.inline
+    def setExpressionNamesVarargs(value: StandardName*): Self = this.set("ExpressionNames", js.Array(value :_*))
+    @scala.inline
+    def setExpressionNames(value: StandardNameList): Self = this.set("ExpressionNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionNames: Self = this.set("ExpressionNames", js.undefined)
+  }
+  
 }
 

@@ -40,22 +40,48 @@ trait SchemaGoogleCloudMlV1TrainingOutput extends js.Object {
 
 object SchemaGoogleCloudMlV1TrainingOutput {
   @scala.inline
-  def apply(
-    builtInAlgorithmOutput: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput = null,
-    completedTrialCount: String = null,
-    consumedMLUnits: js.UndefOr[Double] = js.undefined,
-    isBuiltInAlgorithmJob: js.UndefOr[Boolean] = js.undefined,
-    isHyperparameterTuningJob: js.UndefOr[Boolean] = js.undefined,
-    trials: js.Array[SchemaGoogleCloudMlV1HyperparameterOutput] = null
-  ): SchemaGoogleCloudMlV1TrainingOutput = {
+  def apply(): SchemaGoogleCloudMlV1TrainingOutput = {
     val __obj = js.Dynamic.literal()
-    if (builtInAlgorithmOutput != null) __obj.updateDynamic("builtInAlgorithmOutput")(builtInAlgorithmOutput.asInstanceOf[js.Any])
-    if (completedTrialCount != null) __obj.updateDynamic("completedTrialCount")(completedTrialCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(consumedMLUnits)) __obj.updateDynamic("consumedMLUnits")(consumedMLUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBuiltInAlgorithmJob)) __obj.updateDynamic("isBuiltInAlgorithmJob")(isBuiltInAlgorithmJob.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHyperparameterTuningJob)) __obj.updateDynamic("isHyperparameterTuningJob")(isHyperparameterTuningJob.get.asInstanceOf[js.Any])
-    if (trials != null) __obj.updateDynamic("trials")(trials.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1TrainingOutput]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1TrainingOutputOps[Self <: SchemaGoogleCloudMlV1TrainingOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuiltInAlgorithmOutput(value: SchemaGoogleCloudMlV1BuiltInAlgorithmOutput): Self = this.set("builtInAlgorithmOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuiltInAlgorithmOutput: Self = this.set("builtInAlgorithmOutput", js.undefined)
+    @scala.inline
+    def setCompletedTrialCount(value: String): Self = this.set("completedTrialCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedTrialCount: Self = this.set("completedTrialCount", js.undefined)
+    @scala.inline
+    def setConsumedMLUnits(value: Double): Self = this.set("consumedMLUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedMLUnits: Self = this.set("consumedMLUnits", js.undefined)
+    @scala.inline
+    def setIsBuiltInAlgorithmJob(value: Boolean): Self = this.set("isBuiltInAlgorithmJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBuiltInAlgorithmJob: Self = this.set("isBuiltInAlgorithmJob", js.undefined)
+    @scala.inline
+    def setIsHyperparameterTuningJob(value: Boolean): Self = this.set("isHyperparameterTuningJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsHyperparameterTuningJob: Self = this.set("isHyperparameterTuningJob", js.undefined)
+    @scala.inline
+    def setTrialsVarargs(value: SchemaGoogleCloudMlV1HyperparameterOutput*): Self = this.set("trials", js.Array(value :_*))
+    @scala.inline
+    def setTrials(value: js.Array[SchemaGoogleCloudMlV1HyperparameterOutput]): Self = this.set("trials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrials: Self = this.set("trials", js.undefined)
+  }
+  
 }
 

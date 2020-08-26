@@ -22,16 +22,34 @@ trait UsageRecordResult extends js.Object {
 
 object UsageRecordResult {
   @scala.inline
-  def apply(
-    MeteringRecordId: String = null,
-    Status: UsageRecordResultStatus = null,
-    UsageRecord: UsageRecord = null
-  ): UsageRecordResult = {
+  def apply(): UsageRecordResult = {
     val __obj = js.Dynamic.literal()
-    if (MeteringRecordId != null) __obj.updateDynamic("MeteringRecordId")(MeteringRecordId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UsageRecord != null) __obj.updateDynamic("UsageRecord")(UsageRecord.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageRecordResult]
   }
+  @scala.inline
+  implicit class UsageRecordResultOps[Self <: UsageRecordResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeteringRecordId(value: String): Self = this.set("MeteringRecordId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeteringRecordId: Self = this.set("MeteringRecordId", js.undefined)
+    @scala.inline
+    def setStatus(value: UsageRecordResultStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUsageRecord(value: UsageRecord): Self = this.set("UsageRecord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageRecord: Self = this.set("UsageRecord", js.undefined)
+  }
+  
 }
 

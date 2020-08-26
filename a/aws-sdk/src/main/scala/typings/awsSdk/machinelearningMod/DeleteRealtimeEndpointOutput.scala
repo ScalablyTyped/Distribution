@@ -18,11 +18,30 @@ trait DeleteRealtimeEndpointOutput extends js.Object {
 
 object DeleteRealtimeEndpointOutput {
   @scala.inline
-  def apply(MLModelId: EntityId = null, RealtimeEndpointInfo: RealtimeEndpointInfo = null): DeleteRealtimeEndpointOutput = {
+  def apply(): DeleteRealtimeEndpointOutput = {
     val __obj = js.Dynamic.literal()
-    if (MLModelId != null) __obj.updateDynamic("MLModelId")(MLModelId.asInstanceOf[js.Any])
-    if (RealtimeEndpointInfo != null) __obj.updateDynamic("RealtimeEndpointInfo")(RealtimeEndpointInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRealtimeEndpointOutput]
   }
+  @scala.inline
+  implicit class DeleteRealtimeEndpointOutputOps[Self <: DeleteRealtimeEndpointOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMLModelId(value: EntityId): Self = this.set("MLModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMLModelId: Self = this.set("MLModelId", js.undefined)
+    @scala.inline
+    def setRealtimeEndpointInfo(value: RealtimeEndpointInfo): Self = this.set("RealtimeEndpointInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealtimeEndpointInfo: Self = this.set("RealtimeEndpointInfo", js.undefined)
+  }
+  
 }
 

@@ -77,6 +77,7 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def addData(): Boolean = js.native
+  def addData(key: js.UndefOr[scala.Nothing], value: String): Boolean = js.native
   def addData(key: String): Boolean = js.native
   def addData(key: String, value: String): Boolean = js.native
   /**
@@ -86,7 +87,18 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def addEventListener(): Unit = js.native
+  def addEventListener(`type`: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
+  def addEventListener(
+    `type`: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: js.UndefOr[scala.Nothing],
+    listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit],
+    capture: Boolean
+  ): Unit = js.native
   def addEventListener(`type`: String): Unit = js.native
+  def addEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, listener: js.Function2[/* result0 */ this.type, /* result1 */ Double, Unit]): Unit = js.native
   def addEventListener(
     `type`: String,
@@ -104,6 +116,7 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def addFile(): Boolean = js.native
+  def addFile(path: js.UndefOr[scala.Nothing], options: PlusUploaderUploadFileOptions): Boolean = js.native
   def addFile(path: String): Boolean = js.native
   def addFile(path: String, options: PlusUploaderUploadFileOptions): Boolean = js.native
   /**
@@ -144,6 +157,7 @@ trait PlusUploaderUpload extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def setRequestHeader(): Unit = js.native
+  def setRequestHeader(headerName: js.UndefOr[scala.Nothing], headerValue: String): Unit = js.native
   def setRequestHeader(headerName: String): Unit = js.native
   def setRequestHeader(headerName: String, headerValue: String): Unit = js.native
   /**

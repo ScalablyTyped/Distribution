@@ -12,7 +12,7 @@ Simple implementation of Object.assign
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 111 |
-| # downloads        | 4564990 |
+| # downloads        | 4528111 |
 | # stars            | 0 |
 
 ## Links

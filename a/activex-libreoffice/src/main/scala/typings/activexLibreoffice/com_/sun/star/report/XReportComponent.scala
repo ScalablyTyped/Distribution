@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * describes a component which may be part of a report.
   * @see XReportDefinition
   */
+@js.native
 trait XReportComponent
   extends typings.activexLibreoffice.com_.sun.star.drawing.XShape
      with XCloneable
@@ -32,13 +33,13 @@ trait XReportComponent
     *
     * `; 0: No border; 2: simple border; `
     */
-  var ControlBorder: Double
+  var ControlBorder: Double = js.native
   /**
     * specifies the color of the border, if present
     *
     * Not every border style (see Border) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
     */
-  var ControlBorderColor: Double
+  var ControlBorderColor: Double = js.native
   /**
     * is used for subreports and contains the names of the columns of the subreport which are related to the master fields of the parent report.
     *
@@ -53,9 +54,9 @@ trait XReportComponent
     *
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
-  var DetailFields: SafeArray[String]
+  var DetailFields: SafeArray[String] = js.native
   /** specifies the height of the control. */
-  var Height: Double
+  var Height: Double = js.native
   /**
     * is used for subreports and contains the names of columns of the parent report.
     *
@@ -64,25 +65,25 @@ trait XReportComponent
     *
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
-  var MasterFields: SafeArray[String]
+  var MasterFields: SafeArray[String] = js.native
   /** the name of the component. */
-  var Name: String
+  var Name: String = js.native
   /** specifies the horizontal position of the control. */
-  var PositionX: Double
+  var PositionX: Double = js.native
   /** specifies the vertical position of the control. */
-  var PositionY: Double
+  var PositionY: Double = js.native
   /**
     * Specifies that recurring values are printed. If set to `TRUE` then the value will be printed every time. If set to `FALSE` then the value will only be
     * printed once. The default value is `TRUE` .
     */
-  var PrintRepeatedValues: Boolean
+  var PrintRepeatedValues: Boolean = js.native
   /**
     * Specifies the section where the control belongs to. This is a shortcut to get control hierarchy up. This value is `NULL` when the control was not
     * inserted in any section.
     */
-  var Section: XSection
+  var Section: XSection = js.native
   /** specifies the width of the control. */
-  var Width: Double
+  var Width: Double = js.native
 }
 
 object XReportComponent {
@@ -129,5 +130,40 @@ object XReportComponent {
     val __obj = js.Dynamic.literal(ControlBorder = ControlBorder.asInstanceOf[js.Any], ControlBorderColor = ControlBorderColor.asInstanceOf[js.Any], DetailFields = DetailFields.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], MasterFields = MasterFields.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PrintRepeatedValues = PrintRepeatedValues.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Section = Section.asInstanceOf[js.Any], ShapeType = ShapeType.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), getParent = js.Any.fromFunction0(getParent), getPosition = js.Any.fromFunction0(getPosition), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setParent = js.Any.fromFunction1(setParent), setPosition = js.Any.fromFunction1(setPosition), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setSize = js.Any.fromFunction1(setSize))
     __obj.asInstanceOf[XReportComponent]
   }
+  @scala.inline
+  implicit class XReportComponentOps[Self <: XReportComponent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setControlBorder(value: Double): Self = this.set("ControlBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControlBorderColor(value: Double): Self = this.set("ControlBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetailFields(value: SafeArray[String]): Self = this.set("DetailFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMasterFields(value: SafeArray[String]): Self = this.set("MasterFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPositionX(value: Double): Self = this.set("PositionX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPositionY(value: Double): Self = this.set("PositionY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrintRepeatedValues(value: Boolean): Self = this.set("PrintRepeatedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSection(value: XSection): Self = this.set("Section", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("Width", value.asInstanceOf[js.Any])
+  }
+  
 }
 

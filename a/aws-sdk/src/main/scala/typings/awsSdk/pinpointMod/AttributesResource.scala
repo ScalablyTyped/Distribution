@@ -22,10 +22,32 @@ trait AttributesResource extends js.Object {
 
 object AttributesResource {
   @scala.inline
-  def apply(ApplicationId: string, AttributeType: string, Attributes: ListOfString = null): AttributesResource = {
+  def apply(ApplicationId: string, AttributeType: string): AttributesResource = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], AttributeType = AttributeType.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributesResource]
   }
+  @scala.inline
+  implicit class AttributesResourceOps[Self <: AttributesResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributeType(value: string): Self = this.set("AttributeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesVarargs(value: string*): Self = this.set("Attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: ListOfString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+  }
+  
 }
 

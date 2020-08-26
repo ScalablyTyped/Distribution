@@ -8,15 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Geolocation.Geoposition")
 @js.native
 abstract class Geoposition ()
-  extends typings.winrtUwp.Windows.Devices.Geolocation.Geoposition {
-  /** Unsupported API. */
-  /* CompleteClass */
-  override var civicAddress: typings.winrtUwp.Windows.Devices.Geolocation.CivicAddress = js.native
-  /** The latitude and longitude associated with a geographic location. */
-  /* CompleteClass */
-  override var coordinate: typings.winrtUwp.Windows.Devices.Geolocation.Geocoordinate = js.native
-  /** Represents the venue associated with a geographic location. */
-  /* CompleteClass */
-  override var venueData: typings.winrtUwp.Windows.Devices.Geolocation.VenueData = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Geolocation.Geoposition
 

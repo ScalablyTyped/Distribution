@@ -12,7 +12,7 @@ Find the best icon for a web page
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 88361 |
+| # downloads        | 86034 |
 | # stars            | 0 |
 
 ## Links

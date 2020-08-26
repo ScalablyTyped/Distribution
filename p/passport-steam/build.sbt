@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "passport-steam"
-version := "1.0-dt-20200515Z-a44f08"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-0a8769"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

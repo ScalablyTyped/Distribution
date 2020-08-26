@@ -94,42 +94,88 @@ trait SchemaQuest extends js.Object {
 
 object SchemaQuest {
   @scala.inline
-  def apply(
-    acceptedTimestampMillis: String = null,
-    applicationId: String = null,
-    bannerUrl: String = null,
-    description: String = null,
-    endTimestampMillis: String = null,
-    iconUrl: String = null,
-    id: String = null,
-    isDefaultBannerUrl: js.UndefOr[Boolean] = js.undefined,
-    isDefaultIconUrl: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    lastUpdatedTimestampMillis: String = null,
-    milestones: js.Array[SchemaQuestMilestone] = null,
-    name: String = null,
-    notifyTimestampMillis: String = null,
-    startTimestampMillis: String = null,
-    state: String = null
-  ): SchemaQuest = {
+  def apply(): SchemaQuest = {
     val __obj = js.Dynamic.literal()
-    if (acceptedTimestampMillis != null) __obj.updateDynamic("acceptedTimestampMillis")(acceptedTimestampMillis.asInstanceOf[js.Any])
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (bannerUrl != null) __obj.updateDynamic("bannerUrl")(bannerUrl.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endTimestampMillis != null) __obj.updateDynamic("endTimestampMillis")(endTimestampMillis.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultBannerUrl)) __obj.updateDynamic("isDefaultBannerUrl")(isDefaultBannerUrl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultIconUrl)) __obj.updateDynamic("isDefaultIconUrl")(isDefaultIconUrl.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastUpdatedTimestampMillis != null) __obj.updateDynamic("lastUpdatedTimestampMillis")(lastUpdatedTimestampMillis.asInstanceOf[js.Any])
-    if (milestones != null) __obj.updateDynamic("milestones")(milestones.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notifyTimestampMillis != null) __obj.updateDynamic("notifyTimestampMillis")(notifyTimestampMillis.asInstanceOf[js.Any])
-    if (startTimestampMillis != null) __obj.updateDynamic("startTimestampMillis")(startTimestampMillis.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuest]
   }
+  @scala.inline
+  implicit class SchemaQuestOps[Self <: SchemaQuest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptedTimestampMillis(value: String): Self = this.set("acceptedTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptedTimestampMillis: Self = this.set("acceptedTimestampMillis", js.undefined)
+    @scala.inline
+    def setApplicationId(value: String): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setBannerUrl(value: String): Self = this.set("bannerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerUrl: Self = this.set("bannerUrl", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndTimestampMillis(value: String): Self = this.set("endTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimestampMillis: Self = this.set("endTimestampMillis", js.undefined)
+    @scala.inline
+    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsDefaultBannerUrl(value: Boolean): Self = this.set("isDefaultBannerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultBannerUrl: Self = this.set("isDefaultBannerUrl", js.undefined)
+    @scala.inline
+    def setIsDefaultIconUrl(value: Boolean): Self = this.set("isDefaultIconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultIconUrl: Self = this.set("isDefaultIconUrl", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    @scala.inline
+    def setMilestonesVarargs(value: SchemaQuestMilestone*): Self = this.set("milestones", js.Array(value :_*))
+    @scala.inline
+    def setMilestones(value: js.Array[SchemaQuestMilestone]): Self = this.set("milestones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMilestones: Self = this.set("milestones", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotifyTimestampMillis(value: String): Self = this.set("notifyTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifyTimestampMillis: Self = this.set("notifyTimestampMillis", js.undefined)
+    @scala.inline
+    def setStartTimestampMillis(value: String): Self = this.set("startTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimestampMillis: Self = this.set("startTimestampMillis", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

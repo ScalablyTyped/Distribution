@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CrossStorageClientOptions extends js.Object {
-  var frameId: js.UndefOr[String] = js.undefined
-  var promise: js.UndefOr[js.Any] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var frameId: js.UndefOr[String] = js.native
+  var promise: js.UndefOr[js.Any] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object CrossStorageClientOptions {
   @scala.inline
-  def apply(frameId: String = null, promise: js.Any = null, timeout: js.UndefOr[Double] = js.undefined): CrossStorageClientOptions = {
+  def apply(): CrossStorageClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
-    if (promise != null) __obj.updateDynamic("promise")(promise.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrossStorageClientOptions]
   }
+  @scala.inline
+  implicit class CrossStorageClientOptionsOps[Self <: CrossStorageClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameId(value: String): Self = this.set("frameId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameId: Self = this.set("frameId", js.undefined)
+    @scala.inline
+    def setPromise(value: js.Any): Self = this.set("promise", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromise: Self = this.set("promise", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

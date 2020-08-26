@@ -2,7 +2,9 @@ package typings.awsSdk.anon
 
 import typings.awsSdk.ec2Mod.Boolean
 import typings.awsSdk.ec2Mod.DescribeNetworkInterfacesMaxResults
+import typings.awsSdk.ec2Mod.Filter
 import typings.awsSdk.ec2Mod.FilterList
+import typings.awsSdk.ec2Mod.NetworkInterfaceId
 import typings.awsSdk.ec2Mod.NetworkInterfaceIdList
 import typings.awsSdk.ec2Mod.String
 import typings.awsSdk.serviceMod.WaiterConfiguration
@@ -10,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeNetworkInterfacesRequest & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeNetworkInterfacesRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeNetworkInterfaces extends js.Object {
   @JSName("$waiter")
@@ -39,22 +41,50 @@ trait DescribeNetworkInterfaces extends js.Object {
 
 object DescribeNetworkInterfaces {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeNetworkInterfacesMaxResults] = js.undefined,
-    NetworkInterfaceIds: NetworkInterfaceIdList = null,
-    NextToken: String = null
-  ): DescribeNetworkInterfaces = {
+  def apply(): DescribeNetworkInterfaces = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNetworkInterfaces]
   }
+  @scala.inline
+  implicit class DescribeNetworkInterfacesOps[Self <: DescribeNetworkInterfaces] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeNetworkInterfacesMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceIdsVarargs(value: NetworkInterfaceId*): Self = this.set("NetworkInterfaceIds", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaceIds(value: NetworkInterfaceIdList): Self = this.set("NetworkInterfaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceIds: Self = this.set("NetworkInterfaceIds", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

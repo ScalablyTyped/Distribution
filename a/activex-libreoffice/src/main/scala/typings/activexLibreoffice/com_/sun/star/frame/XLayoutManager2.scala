@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * Unified interface for {@link LayoutManager} service.
   * @since LibreOffice 4.2
   */
+@js.native
 trait XLayoutManager2
   extends XFrameActionListener
      with XLayoutManager

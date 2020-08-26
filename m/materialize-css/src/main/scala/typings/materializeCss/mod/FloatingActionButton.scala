@@ -9,23 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "FloatingActionButton")
 @js.native
 class FloatingActionButton ()
-  extends typings.materializeCss.M.FloatingActionButton {
-  /**
-    * Describes open/close state of FAB.
-    */
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /**
-    * Close FAB
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Open FAB
-    */
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+  extends typings.materializeCss.M.FloatingActionButton
 
 /* static members */
 @JSImport("materialize-css", "FloatingActionButton")

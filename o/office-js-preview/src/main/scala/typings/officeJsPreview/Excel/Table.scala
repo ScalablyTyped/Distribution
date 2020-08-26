@@ -254,16 +254,16 @@ trait Table extends ClientObject {
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Table): Unit = js.native
   /**
-    * Sets the style applied to the slicer.
+    * Sets the style applied to the table.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param style The style to apply to the PivotTable. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
+    * @param style The style to apply to the table. An `InvalidArgumentException` is thrown if a string is provided that does not match the name of any style.
     */
   def setStyle(style: String): Unit = js.native
   def setStyle(style: BuiltInTableStyle): Unit = js.native
-  def setStyle(style: PivotTableStyle): Unit = js.native
+  def setStyle(style: TableStyle): Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.

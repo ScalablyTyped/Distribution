@@ -30,20 +30,42 @@ trait EbsBlockDevice extends js.Object {
 
 object EbsBlockDevice {
   @scala.inline
-  def apply(
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
-    SnapshotId: String = null,
-    VolumeSize: js.UndefOr[Integer] = js.undefined,
-    VolumeType: VolumeType = null
-  ): EbsBlockDevice = {
+  def apply(): EbsBlockDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
-    if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize.get.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsBlockDevice]
   }
+  @scala.inline
+  implicit class EbsBlockDeviceOps[Self <: EbsBlockDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteOnTermination(value: Boolean): Self = this.set("DeleteOnTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteOnTermination: Self = this.set("DeleteOnTermination", js.undefined)
+    @scala.inline
+    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("Iops", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    @scala.inline
+    def setVolumeSize(value: Integer): Self = this.set("VolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSize: Self = this.set("VolumeSize", js.undefined)
+    @scala.inline
+    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+  }
+  
 }
 

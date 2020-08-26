@@ -6,35 +6,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UsageReport extends js.Object {
   /** The date to which the record belongs. */
-  var date: js.UndefOr[String] = js.undefined
+  var date: js.UndefOr[String] = js.native
   /** Information about the type of the item. */
-  var entity: js.UndefOr[CustomerId] = js.undefined
+  var entity: js.UndefOr[CustomerId] = js.native
   /** ETag of the resource. */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String] = js.native
   /** The kind of object. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Parameter value pairs for various applications. */
-  var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.undefined
+  var parameters: js.UndefOr[js.Array[DatetimeValue]] = js.native
 }
 
 object UsageReport {
   @scala.inline
-  def apply(
-    date: String = null,
-    entity: CustomerId = null,
-    etag: String = null,
-    kind: String = null,
-    parameters: js.Array[DatetimeValue] = null
-  ): UsageReport = {
+  def apply(): UsageReport = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageReport]
   }
+  @scala.inline
+  implicit class UsageReportOps[Self <: UsageReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setEntity(value: CustomerId): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("entity", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: DatetimeValue*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[DatetimeValue]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

@@ -16,9 +16,15 @@ class ViewCompiler protected () extends js.Object {
     */
   def this(bindingLanguage: BindingLanguage, resources: ViewResources_) = this()
   def compile(source: String): ViewFactory = js.native
+  def compile(source: String, resources: js.UndefOr[scala.Nothing], compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: String, resources: ViewResources_): ViewFactory = js.native
   def compile(source: String, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: DocumentFragment): ViewFactory = js.native
+  def compile(
+    source: DocumentFragment,
+    resources: js.UndefOr[scala.Nothing],
+    compileInstruction: ViewCompileInstruction
+  ): ViewFactory = js.native
   def compile(source: DocumentFragment, resources: ViewResources_): ViewFactory = js.native
   def compile(source: DocumentFragment, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   /**
@@ -29,6 +35,7 @@ class ViewCompiler protected () extends js.Object {
     * @return The compiled ViewFactory.
     */
   def compile(source: Element): ViewFactory = js.native
+  def compile(source: Element, resources: js.UndefOr[scala.Nothing], compileInstruction: ViewCompileInstruction): ViewFactory = js.native
   def compile(source: Element, resources: ViewResources_): ViewFactory = js.native
   def compile(source: Element, resources: ViewResources_, compileInstruction: ViewCompileInstruction): ViewFactory = js.native
 }

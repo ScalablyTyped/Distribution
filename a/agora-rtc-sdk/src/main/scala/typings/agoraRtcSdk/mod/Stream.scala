@@ -301,6 +301,7 @@ trait Stream extends js.Object {
     * @param onFailure The callback when the method fails.
     */
   def init(): Unit = js.native
+  def init(onSuccess: js.UndefOr[scala.Nothing], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
   def init(onSuccess: js.Function0[Unit]): Unit = js.native
   def init(onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ Info, Unit]): Unit = js.native
   /**
@@ -482,6 +483,11 @@ trait Stream extends js.Object {
     *  - [[StreamPlayError]] if the playback fails.
     */
   def play(HTMLElementID: String): Unit = js.native
+  def play(
+    HTMLElementID: String,
+    option: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Null | StreamPlayError, Unit]
+  ): Unit = js.native
   def play(HTMLElementID: String, option: Fit): Unit = js.native
   def play(HTMLElementID: String, option: Fit, callback: js.Function1[/* err */ Null | StreamPlayError, Unit]): Unit = js.native
   /**
@@ -613,6 +619,11 @@ trait Stream extends js.Object {
     * - `"NO_STREAM_FOUND"`: The local stream object is not found.
     */
   def replaceTrack(MediaStreamTrack: MediaStreamTrack): Unit = js.native
+  def replaceTrack(
+    MediaStreamTrack: MediaStreamTrack,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
   def replaceTrack(MediaStreamTrack: MediaStreamTrack, onSuccess: js.Function0[Unit]): Unit = js.native
   def replaceTrack(
     MediaStreamTrack: MediaStreamTrack,
@@ -690,6 +701,11 @@ trait Stream extends js.Object {
     * @param onFailure The callback when the method fails.
     */
   def setAudioOutput(deviceId: String): Unit = js.native
+  def setAudioOutput(
+    deviceId: String,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   def setAudioOutput(deviceId: String, onSuccess: js.Function0[Unit], onFailure: js.Function1[/* err */ String, Unit]): Unit = js.native
   @JSName("setAudioProfile")
@@ -1016,6 +1032,13 @@ trait Stream extends js.Object {
   @JSName("switchDevice")
   def switchDevice_audio(`type`: audio, deviceId: String): Unit = js.native
   @JSName("switchDevice")
+  def switchDevice_audio(
+    `type`: audio,
+    deviceId: String,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
+  @JSName("switchDevice")
   def switchDevice_audio(`type`: audio, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   @JSName("switchDevice")
   def switchDevice_audio(
@@ -1026,6 +1049,13 @@ trait Stream extends js.Object {
   ): Unit = js.native
   @JSName("switchDevice")
   def switchDevice_video(`type`: video, deviceId: String): Unit = js.native
+  @JSName("switchDevice")
+  def switchDevice_video(
+    `type`: video,
+    deviceId: String,
+    onSuccess: js.UndefOr[scala.Nothing],
+    onFailure: js.Function1[/* err */ String, Unit]
+  ): Unit = js.native
   @JSName("switchDevice")
   def switchDevice_video(`type`: video, deviceId: String, onSuccess: js.Function0[Unit]): Unit = js.native
   @JSName("switchDevice")

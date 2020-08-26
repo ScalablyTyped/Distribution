@@ -12,7 +12,7 @@ copy an object but with only the specified keys
 | Keywords           | object, pick, keys, no-dependencies, just |
 | # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 258568 |
+| # downloads        | 257372 |
 | # stars            | 0 |
 
 ## Links

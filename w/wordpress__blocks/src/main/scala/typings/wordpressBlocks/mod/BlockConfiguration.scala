@@ -9,70 +9,129 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<std.Omit<@wordpress/blocks.@wordpress/blocks.Block<T>, 'icon'>> & std.Pick<@wordpress/blocks.@wordpress/blocks.Block<T>, 'attributes' | 'category' | 'title'> & {  icon ? :@wordpress/blocks.@wordpress/blocks.BlockIcon} */
+/* Inlined std.Partial<std.Omit<@wordpress/blocks.@wordpress/blocks.Block<T>, 'icon'>> & std.Pick<@wordpress/blocks.@wordpress/blocks.Block<T>, 'attributes' | 'category' | 'title'> & {  icon :@wordpress/blocks.@wordpress/blocks.BlockIcon | undefined} */
+@js.native
 trait BlockConfiguration[T /* <: Record[String, _] */] extends js.Object {
-  var attributes: js.UndefOr[
+  var attributes: (js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
     */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any]
-  ] = js.undefined
-  var category: js.UndefOr[String] = js.undefined
-  var deprecated: js.UndefOr[js.Array[BlockDeprecation[T]]] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var edit: js.UndefOr[ComponentType[BlockEditProps[T]]] = js.undefined
-  var getEditWrapperProps: js.UndefOr[js.Function1[/* attrs */ T, Record[String, String | Double | Boolean]]] = js.undefined
-  var icon: js.UndefOr[BlockIcon] = js.undefined
-  var keywords: js.UndefOr[js.Array[String]] = js.undefined
-  var merge: js.UndefOr[js.Function2[/* attributes */ T, /* attributesToMerge */ T, Partial[T]]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var parent: js.UndefOr[js.Array[String]] = js.undefined
-  var save: js.UndefOr[ComponentType[BlockSaveProps[T]]] = js.undefined
-  var styles: js.UndefOr[js.Array[BlockStyle]] = js.undefined
-  var supports: js.UndefOr[BlockSupports] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var transforms: js.UndefOr[From[T]] = js.undefined
+  ]) with typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any] = js.native
+  var category: js.UndefOr[String] with String = js.native
+  var deprecated: js.UndefOr[js.Array[BlockDeprecation[T]]] = js.native
+  var description: js.UndefOr[String] = js.native
+  var edit: js.UndefOr[ComponentType[BlockEditProps[T]]] = js.native
+  var getEditWrapperProps: js.UndefOr[js.Function1[/* attrs */ T, Record[String, String | Double | Boolean]]] = js.native
+  var icon: js.UndefOr[BlockIcon] = js.native
+  var keywords: js.UndefOr[js.Array[String]] = js.native
+  var merge: js.UndefOr[js.Function2[/* attributes */ T, /* attributesToMerge */ T, Partial[T]]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[js.Array[String]] = js.native
+  var save: js.UndefOr[ComponentType[BlockSaveProps[T]]] = js.native
+  var styles: js.UndefOr[js.Array[BlockStyle]] = js.native
+  var supports: js.UndefOr[BlockSupports] = js.native
+  var title: js.UndefOr[String] with String = js.native
+  var transforms: js.UndefOr[From[T]] = js.native
 }
 
 object BlockConfiguration {
   @scala.inline
   def apply[/* <: typings.std.Record[java.lang.String, _] */ T](
-    attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    attributes: (js.UndefOr[
+      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any] = null,
-    category: String = null,
-    deprecated: js.Array[BlockDeprecation[T]] = null,
-    description: String = null,
-    edit: ComponentType[BlockEditProps[T]] = null,
-    getEditWrapperProps: /* attrs */ T => Record[String, String | Double | Boolean] = null,
-    icon: BlockIcon = null,
-    keywords: js.Array[String] = null,
-    merge: (/* attributes */ T, /* attributesToMerge */ T) => Partial[T] = null,
-    name: String = null,
-    parent: js.Array[String] = null,
-    save: ComponentType[BlockSaveProps[T]] = null,
-    styles: js.Array[BlockStyle] = null,
-    supports: BlockSupports = null,
-    title: String = null,
-    transforms: From[T] = null
+    */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any]
+    ]) with typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any],
+    category: js.UndefOr[String] with String,
+    title: js.UndefOr[String] with String
   ): BlockConfiguration[T] = {
-    val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (getEditWrapperProps != null) __obj.updateDynamic("getEditWrapperProps")(js.Any.fromFunction1(getEditWrapperProps))
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (merge != null) __obj.updateDynamic("merge")(js.Any.fromFunction2(merge))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (supports != null) __obj.updateDynamic("supports")(supports.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockConfiguration[T]]
   }
+  @scala.inline
+  implicit class BlockConfigurationOps[Self <: BlockConfiguration[_], /* <: typings.std.Record[java.lang.String, _] */ T] (val x: Self with BlockConfiguration[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(
+      value: (js.UndefOr[
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {readonly [ k in keyof T ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<T[k] extends std.Array<infer U>? any : T[k]>}
+      */ typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any]
+        ]) with typings.wordpressBlocks.wordpressBlocksStrings.BlockConfiguration with TopLevel[js.Any]
+    ): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCategory(value: js.UndefOr[String] with String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: js.UndefOr[String] with String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeprecatedVarargs(value: BlockDeprecation[T]*): Self = this.set("deprecated", js.Array(value :_*))
+    @scala.inline
+    def setDeprecated(value: js.Array[BlockDeprecation[T]]): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEdit(value: ComponentType[BlockEditProps[T]]): Self = this.set("edit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setGetEditWrapperProps(value: /* attrs */ T => Record[String, String | Double | Boolean]): Self = this.set("getEditWrapperProps", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetEditWrapperProps: Self = this.set("getEditWrapperProps", js.undefined)
+    @scala.inline
+    def setIcon(value: BlockIcon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    @scala.inline
+    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setMerge(value: (/* attributes */ T, /* attributesToMerge */ T) => Partial[T]): Self = this.set("merge", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMerge: Self = this.set("merge", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentVarargs(value: String*): Self = this.set("parent", js.Array(value :_*))
+    @scala.inline
+    def setParent(value: js.Array[String]): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setSave(value: ComponentType[BlockSaveProps[T]]): Self = this.set("save", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setStylesVarargs(value: BlockStyle*): Self = this.set("styles", js.Array(value :_*))
+    @scala.inline
+    def setStyles(value: js.Array[BlockStyle]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setSupports(value: BlockSupports): Self = this.set("supports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupports: Self = this.set("supports", js.undefined)
+    @scala.inline
+    def setTransforms(value: From[T]): Self = this.set("transforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransforms: Self = this.set("transforms", js.undefined)
+  }
+  
 }
 

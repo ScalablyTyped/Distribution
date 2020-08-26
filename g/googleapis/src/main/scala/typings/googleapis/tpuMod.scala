@@ -41,7 +41,7 @@ object tpuMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Tpu]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Tpu]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object tpuMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu
               ]
             ]

@@ -30,6 +30,7 @@ class ResourceStates protected () extends js.Object {
     */
   def clear(): GaxiosPromise[SchemaWriteResult] = js.native
   def clear(callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
+  def clear(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWriteResult] = js.native
   def clear(params: ParamsResourceStatesClear): GaxiosPromise[SchemaWriteResult] = js.native
   def clear(params: ParamsResourceStatesClear, callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
   def clear(
@@ -61,6 +62,7 @@ class ResourceStates protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStatesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStatesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -85,6 +87,7 @@ class ResourceStates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGetResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaGetResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetResponse] = js.native
   def get(params: ParamsResourceStatesGet): GaxiosPromise[SchemaGetResponse] = js.native
   def get(params: ParamsResourceStatesGet, callback: BodyResponseCallback[SchemaGetResponse]): Unit = js.native
   def get(
@@ -112,6 +115,7 @@ class ResourceStates protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListResponse] = js.native
   def list(params: ParamsResourceStatesList): GaxiosPromise[SchemaListResponse] = js.native
   def list(params: ParamsResourceStatesList, callback: BodyResponseCallback[SchemaListResponse]): Unit = js.native
   def list(
@@ -143,6 +147,7 @@ class ResourceStates protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaWriteResult] = js.native
   def update(callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWriteResult] = js.native
   def update(params: ParamsResourceStatesUpdate): GaxiosPromise[SchemaWriteResult] = js.native
   def update(params: ParamsResourceStatesUpdate, callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
   def update(

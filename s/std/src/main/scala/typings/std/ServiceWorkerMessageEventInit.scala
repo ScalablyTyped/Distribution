@@ -4,36 +4,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ServiceWorkerMessageEventInit extends EventInit {
-  var data: js.UndefOr[js.Any] = js.undefined
-  var lastEventId: js.UndefOr[java.lang.String] = js.undefined
-  var origin: js.UndefOr[java.lang.String] = js.undefined
-  var ports: js.UndefOr[js.Array[MessagePort] | Null] = js.undefined
-  var source: js.UndefOr[ServiceWorker | MessagePort | Null] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
+  var lastEventId: js.UndefOr[java.lang.String] = js.native
+  var origin: js.UndefOr[java.lang.String] = js.native
+  var ports: js.UndefOr[js.Array[MessagePort] | Null] = js.native
+  var source: js.UndefOr[ServiceWorker | MessagePort | Null] = js.native
 }
 
 object ServiceWorkerMessageEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    data: js.Any = null,
-    lastEventId: java.lang.String = null,
-    origin: java.lang.String = null,
-    ports: js.UndefOr[Null | js.Array[MessagePort]] = js.undefined,
-    source: js.UndefOr[Null | ServiceWorker | MessagePort] = js.undefined
-  ): ServiceWorkerMessageEventInit = {
+  def apply(): ServiceWorkerMessageEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (lastEventId != null) __obj.updateDynamic("lastEventId")(lastEventId.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (!js.isUndefined(ports)) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerMessageEventInit]
   }
+  @scala.inline
+  implicit class ServiceWorkerMessageEventInitOps[Self <: ServiceWorkerMessageEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setLastEventId(value: java.lang.String): Self = this.set("lastEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEventId: Self = this.set("lastEventId", js.undefined)
+    @scala.inline
+    def setOrigin(value: java.lang.String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setPortsVarargs(value: MessagePort*): Self = this.set("ports", js.Array(value :_*))
+    @scala.inline
+    def setPorts(value: js.Array[MessagePort]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePorts: Self = this.set("ports", js.undefined)
+    @scala.inline
+    def setPortsNull: Self = this.set("ports", null)
+    @scala.inline
+    def setSource(value: ServiceWorker | MessagePort): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceNull: Self = this.set("source", null)
+  }
+  
 }
 

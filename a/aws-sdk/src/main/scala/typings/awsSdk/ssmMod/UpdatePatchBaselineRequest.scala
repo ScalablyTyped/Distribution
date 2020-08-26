@@ -58,33 +58,74 @@ trait UpdatePatchBaselineRequest extends js.Object {
 
 object UpdatePatchBaselineRequest {
   @scala.inline
-  def apply(
-    BaselineId: BaselineId,
-    ApprovalRules: PatchRuleGroup = null,
-    ApprovedPatches: PatchIdList = null,
-    ApprovedPatchesComplianceLevel: PatchComplianceLevel = null,
-    ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined,
-    Description: BaselineDescription = null,
-    GlobalFilters: PatchFilterGroup = null,
-    Name: BaselineName = null,
-    RejectedPatches: PatchIdList = null,
-    RejectedPatchesAction: PatchAction = null,
-    Replace: js.UndefOr[Boolean] = js.undefined,
-    Sources: PatchSourceList = null
-  ): UpdatePatchBaselineRequest = {
+  def apply(BaselineId: BaselineId): UpdatePatchBaselineRequest = {
     val __obj = js.Dynamic.literal(BaselineId = BaselineId.asInstanceOf[js.Any])
-    if (ApprovalRules != null) __obj.updateDynamic("ApprovalRules")(ApprovalRules.asInstanceOf[js.Any])
-    if (ApprovedPatches != null) __obj.updateDynamic("ApprovedPatches")(ApprovedPatches.asInstanceOf[js.Any])
-    if (ApprovedPatchesComplianceLevel != null) __obj.updateDynamic("ApprovedPatchesComplianceLevel")(ApprovedPatchesComplianceLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApprovedPatchesEnableNonSecurity)) __obj.updateDynamic("ApprovedPatchesEnableNonSecurity")(ApprovedPatchesEnableNonSecurity.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (GlobalFilters != null) __obj.updateDynamic("GlobalFilters")(GlobalFilters.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RejectedPatches != null) __obj.updateDynamic("RejectedPatches")(RejectedPatches.asInstanceOf[js.Any])
-    if (RejectedPatchesAction != null) __obj.updateDynamic("RejectedPatchesAction")(RejectedPatchesAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(Replace)) __obj.updateDynamic("Replace")(Replace.get.asInstanceOf[js.Any])
-    if (Sources != null) __obj.updateDynamic("Sources")(Sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePatchBaselineRequest]
   }
+  @scala.inline
+  implicit class UpdatePatchBaselineRequestOps[Self <: UpdatePatchBaselineRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaselineId(value: BaselineId): Self = this.set("BaselineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApprovalRules(value: PatchRuleGroup): Self = this.set("ApprovalRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRules: Self = this.set("ApprovalRules", js.undefined)
+    @scala.inline
+    def setApprovedPatchesVarargs(value: PatchId*): Self = this.set("ApprovedPatches", js.Array(value :_*))
+    @scala.inline
+    def setApprovedPatches(value: PatchIdList): Self = this.set("ApprovedPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovedPatches: Self = this.set("ApprovedPatches", js.undefined)
+    @scala.inline
+    def setApprovedPatchesComplianceLevel(value: PatchComplianceLevel): Self = this.set("ApprovedPatchesComplianceLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovedPatchesComplianceLevel: Self = this.set("ApprovedPatchesComplianceLevel", js.undefined)
+    @scala.inline
+    def setApprovedPatchesEnableNonSecurity(value: Boolean): Self = this.set("ApprovedPatchesEnableNonSecurity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovedPatchesEnableNonSecurity: Self = this.set("ApprovedPatchesEnableNonSecurity", js.undefined)
+    @scala.inline
+    def setDescription(value: BaselineDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGlobalFilters(value: PatchFilterGroup): Self = this.set("GlobalFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalFilters: Self = this.set("GlobalFilters", js.undefined)
+    @scala.inline
+    def setName(value: BaselineName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRejectedPatchesVarargs(value: PatchId*): Self = this.set("RejectedPatches", js.Array(value :_*))
+    @scala.inline
+    def setRejectedPatches(value: PatchIdList): Self = this.set("RejectedPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectedPatches: Self = this.set("RejectedPatches", js.undefined)
+    @scala.inline
+    def setRejectedPatchesAction(value: PatchAction): Self = this.set("RejectedPatchesAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectedPatchesAction: Self = this.set("RejectedPatchesAction", js.undefined)
+    @scala.inline
+    def setReplace(value: Boolean): Self = this.set("Replace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplace: Self = this.set("Replace", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: PatchSource*): Self = this.set("Sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: PatchSourceList): Self = this.set("Sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("Sources", js.undefined)
+  }
+  
 }
 

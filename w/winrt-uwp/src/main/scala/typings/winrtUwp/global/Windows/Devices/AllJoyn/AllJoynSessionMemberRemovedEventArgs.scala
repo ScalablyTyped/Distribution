@@ -14,8 +14,5 @@ class AllJoynSessionMemberRemovedEventArgs protected ()
     * @param uniqueName The unique bus name of the remote app removed from the session.
     */
   def this(uniqueName: String) = this()
-  /** The unique bus name of the remote app removed from the session. */
-  /* CompleteClass */
-  override var uniqueName: String = js.native
 }
 

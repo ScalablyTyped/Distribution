@@ -12,7 +12,7 @@ A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 44 |
-| # downloads        | 2084230 |
+| # downloads        | 2173069 |
 | # stars            | 15 |
 
 ## Links

@@ -11,8 +11,8 @@ Generates and consumes source maps
 | Full name          | source-map |
 | Keywords           | - |
 | # releases         | 6 |
-| # dependents       | 1720 |
-| # downloads        | 1648696694 |
+| # dependents       | 1741 |
+| # downloads        | 1689395593 |
 | # stars            | 34 |
 
 ## Links

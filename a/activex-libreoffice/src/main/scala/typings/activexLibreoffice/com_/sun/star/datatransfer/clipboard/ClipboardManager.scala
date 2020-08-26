@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * The clipboard manager is a one-instance service that holds a list of all known clipboard instances.
   * @see XClipboardManager
   */
+@js.native
 trait ClipboardManager
   extends XClipboardManager
      with XComponent

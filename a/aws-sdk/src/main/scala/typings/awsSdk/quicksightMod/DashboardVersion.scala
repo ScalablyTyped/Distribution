@@ -42,26 +42,58 @@ trait DashboardVersion extends js.Object {
 
 object DashboardVersion {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    CreatedTime: Timestamp_ = null,
-    DataSetArns: DataSetArnsList = null,
-    Description: VersionDescription = null,
-    Errors: DashboardErrorList = null,
-    SourceEntityArn: Arn = null,
-    Status: ResourceStatus = null,
-    VersionNumber: js.UndefOr[VersionNumber] = js.undefined
-  ): DashboardVersion = {
+  def apply(): DashboardVersion = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (DataSetArns != null) __obj.updateDynamic("DataSetArns")(DataSetArns.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
-    if (SourceEntityArn != null) __obj.updateDynamic("SourceEntityArn")(SourceEntityArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardVersion]
   }
+  @scala.inline
+  implicit class DashboardVersionOps[Self <: DashboardVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: Timestamp_): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDataSetArnsVarargs(value: Arn*): Self = this.set("DataSetArns", js.Array(value :_*))
+    @scala.inline
+    def setDataSetArns(value: DataSetArnsList): Self = this.set("DataSetArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSetArns: Self = this.set("DataSetArns", js.undefined)
+    @scala.inline
+    def setDescription(value: VersionDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: DashboardError*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: DashboardErrorList): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+    @scala.inline
+    def setSourceEntityArn(value: Arn): Self = this.set("SourceEntityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEntityArn: Self = this.set("SourceEntityArn", js.undefined)
+    @scala.inline
+    def setStatus(value: ResourceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setVersionNumber(value: VersionNumber): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+  }
+  
 }
 

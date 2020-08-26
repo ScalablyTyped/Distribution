@@ -18,11 +18,32 @@ trait PushSync extends js.Object {
 
 object PushSync {
   @scala.inline
-  def apply(ApplicationArns: ApplicationArnList = null, RoleArn: AssumeRoleArn = null): PushSync = {
+  def apply(): PushSync = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationArns != null) __obj.updateDynamic("ApplicationArns")(ApplicationArns.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushSync]
   }
+  @scala.inline
+  implicit class PushSyncOps[Self <: PushSync] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationArnsVarargs(value: ApplicationArn*): Self = this.set("ApplicationArns", js.Array(value :_*))
+    @scala.inline
+    def setApplicationArns(value: ApplicationArnList): Self = this.set("ApplicationArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationArns: Self = this.set("ApplicationArns", js.undefined)
+    @scala.inline
+    def setRoleArn(value: AssumeRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,28 @@ trait TargetAddress extends js.Object {
 
 object TargetAddress {
   @scala.inline
-  def apply(Ip: Ip, Port: js.UndefOr[Port] = js.undefined): TargetAddress = {
+  def apply(Ip: Ip): TargetAddress = {
     val __obj = js.Dynamic.literal(Ip = Ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetAddress]
   }
+  @scala.inline
+  implicit class TargetAddressOps[Self <: TargetAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIp(value: Ip): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPort(value: Port): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+  }
+  
 }
 

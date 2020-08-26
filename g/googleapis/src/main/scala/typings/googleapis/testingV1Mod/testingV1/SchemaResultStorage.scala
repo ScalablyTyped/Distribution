@@ -27,16 +27,34 @@ trait SchemaResultStorage extends js.Object {
 
 object SchemaResultStorage {
   @scala.inline
-  def apply(
-    googleCloudStorage: SchemaGoogleCloudStorage = null,
-    toolResultsExecution: SchemaToolResultsExecution = null,
-    toolResultsHistory: SchemaToolResultsHistory = null
-  ): SchemaResultStorage = {
+  def apply(): SchemaResultStorage = {
     val __obj = js.Dynamic.literal()
-    if (googleCloudStorage != null) __obj.updateDynamic("googleCloudStorage")(googleCloudStorage.asInstanceOf[js.Any])
-    if (toolResultsExecution != null) __obj.updateDynamic("toolResultsExecution")(toolResultsExecution.asInstanceOf[js.Any])
-    if (toolResultsHistory != null) __obj.updateDynamic("toolResultsHistory")(toolResultsHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResultStorage]
   }
+  @scala.inline
+  implicit class SchemaResultStorageOps[Self <: SchemaResultStorage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGoogleCloudStorage(value: SchemaGoogleCloudStorage): Self = this.set("googleCloudStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleCloudStorage: Self = this.set("googleCloudStorage", js.undefined)
+    @scala.inline
+    def setToolResultsExecution(value: SchemaToolResultsExecution): Self = this.set("toolResultsExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolResultsExecution: Self = this.set("toolResultsExecution", js.undefined)
+    @scala.inline
+    def setToolResultsHistory(value: SchemaToolResultsHistory): Self = this.set("toolResultsHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolResultsHistory: Self = this.set("toolResultsHistory", js.undefined)
+  }
+  
 }
 

@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddressList extends js.Object {
-  val AddressEntries: typings.activexOutlook.Outlook.AddressEntries
-  val AddressListType: OlAddressListType
-  val Application: typings.activexOutlook.Outlook.Application
-  val Class: OlObjectClass
-  val ID: String
-  val Index: Double
-  val IsInitialAddressList: Boolean
-  val IsReadOnly: Boolean
-  val Name: String
+  val AddressEntries: typings.activexOutlook.Outlook.AddressEntries = js.native
+  val AddressListType: OlAddressListType = js.native
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Class: OlObjectClass = js.native
+  val ID: String = js.native
+  val Index: Double = js.native
+  val IsInitialAddressList: Boolean = js.native
+  val IsReadOnly: Boolean = js.native
+  val Name: String = js.native
   @JSName("Outlook.AddressList_typekey")
-  var OutlookDotAddressList_typekey: AddressList
-  val Parent: js.Any
-  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
-  val ResolutionOrder: Double
-  val Session: NameSpace
-  def GetContactsFolder(): Folder
+  var OutlookDotAddressList_typekey: AddressList = js.native
+  val Parent: js.Any = js.native
+  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
+  val ResolutionOrder: Double = js.native
+  val Session: NameSpace = js.native
+  def GetContactsFolder(): Folder = js.native
 }
 
 object AddressList {
@@ -46,5 +47,48 @@ object AddressList {
     __obj.updateDynamic("Outlook.AddressList_typekey")(OutlookDotAddressList_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressList]
   }
+  @scala.inline
+  implicit class AddressListOps[Self <: AddressList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressEntries(value: AddressEntries): Self = this.set("AddressEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddressListType(value: OlAddressListType): Self = this.set("AddressListType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetContactsFolder(value: () => Folder): Self = this.set("GetContactsFolder", js.Any.fromFunction0(value))
+    @scala.inline
+    def setID(value: String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsInitialAddressList(value: Boolean): Self = this.set("IsInitialAddressList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsReadOnly(value: Boolean): Self = this.set("IsReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotAddressList_typekey(value: AddressList): Self = this.set("Outlook.AddressList_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertyAccessor(value: PropertyAccessor): Self = this.set("PropertyAccessor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResolutionOrder(value: Double): Self = this.set("ResolutionOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+  }
+  
 }
 

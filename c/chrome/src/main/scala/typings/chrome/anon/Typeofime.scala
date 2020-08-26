@@ -48,8 +48,10 @@ trait Typeofime extends js.Object {
   def keyEventHandled(requestId: String, response: Boolean): Unit = js.native
   def sendKeyEvents(parameters: SendKeyEventParameters): Unit = js.native
   def sendKeyEvents(parameters: SendKeyEventParameters, callback: js.Function0[Unit]): Unit = js.native
-  def setAssistiveWindowProperties(parameters: js.Object): Unit = js.native
-  def setAssistiveWindowProperties(parameters: js.Object, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+  def setAssistiveWindowButtonHighlighted(parameters: AnnounceString): Unit = js.native
+  def setAssistiveWindowButtonHighlighted(parameters: AnnounceString, callback: js.Function0[Unit]): Unit = js.native
+  def setAssistiveWindowProperties(parameters: ContextID): Unit = js.native
+  def setAssistiveWindowProperties(parameters: ContextID, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   def setCandidateWindowProperties(parameters: CandidateWindowParameter): Unit = js.native
   def setCandidateWindowProperties(parameters: CandidateWindowParameter, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
   def setCandidates(parameters: CandidatesParameters): Unit = js.native

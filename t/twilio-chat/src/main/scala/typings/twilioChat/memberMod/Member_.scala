@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * @classdesc A Member represents a remote Client in a Channel.
-  * @property {Object} attributes - Object with custom attributes for Member
+  * @property {any} attributes - Object with custom attributes for Member
   * @property {Channel} channel - The Channel the remote Client is a Member of
   * @property {Date} dateCreated - The Date this Member was created
   * @property {Date} dateUpdated - The Date this Member was last updated
@@ -86,9 +86,9 @@ class Member_ protected () extends EventEmitter {
   def `type`: Type = js.native
   /**
     * Edit member attributes.
-    * @param {Object} attributes new attributes for Member.
+    * @param {any} attributes new attributes for Member.
     * @returns {Promise<Member|Error|SessionError>}
     */
-  def updateAttributes(attributes: js.Object): js.Promise[this.type] = js.native
+  def updateAttributes(attributes: js.Any): js.Promise[this.type] = js.native
 }
 

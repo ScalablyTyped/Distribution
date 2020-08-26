@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait TreeStore extends js.Object {
   var name: String = js.native
   def add(obj: js.Any): String = js.native
+  def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native
   def add(obj: js.Any, index: Double): String = js.native
   def add(obj: js.Any, index: Double, parentId: String): String = js.native
   def changeId(old: String, newid: String): Unit = js.native
@@ -19,10 +20,12 @@ trait TreeStore extends js.Object {
   def count(): Double = js.native
   def each(code: WebixCallback, master: js.Any, all: Boolean, pid: String): Unit = js.native
   def eachChild(pid: String, code: WebixCallback): Unit = js.native
+  def eachChild(pid: String, code: WebixCallback, master: js.UndefOr[scala.Nothing], all: Boolean): Unit = js.native
   def eachChild(pid: String, code: WebixCallback, master: js.Any): Unit = js.native
   def eachChild(pid: String, code: WebixCallback, master: js.Any, all: Boolean): Unit = js.native
   def eachLeaf(pid: String, code: WebixCallback): Unit = js.native
   def eachOpen(code: WebixCallback): Unit = js.native
+  def eachOpen(code: WebixCallback, master: js.UndefOr[scala.Nothing], pid: String): Unit = js.native
   def eachOpen(code: WebixCallback, master: js.Any): Unit = js.native
   def eachOpen(code: WebixCallback, master: js.Any, pid: String): Unit = js.native
   def eachSubItem(pid: String, code: WebixCallback): Unit = js.native

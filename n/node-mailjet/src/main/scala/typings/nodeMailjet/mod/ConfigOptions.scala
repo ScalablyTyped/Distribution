@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigOptions extends js.Object {
-  val output: js.UndefOr[String] = js.undefined
-  val perform_api_call: js.UndefOr[Boolean] = js.undefined
-  val secured: js.UndefOr[Boolean] = js.undefined
-  val url: js.UndefOr[String] = js.undefined
-  val version: js.UndefOr[String] = js.undefined
+  val output: js.UndefOr[String] = js.native
+  val perform_api_call: js.UndefOr[Boolean] = js.native
+  val secured: js.UndefOr[Boolean] = js.native
+  val url: js.UndefOr[String] = js.native
+  val version: js.UndefOr[String] = js.native
 }
 
 object ConfigOptions {
   @scala.inline
-  def apply(
-    output: String = null,
-    perform_api_call: js.UndefOr[Boolean] = js.undefined,
-    secured: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    version: String = null
-  ): ConfigOptions = {
+  def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(perform_api_call)) __obj.updateDynamic("perform_api_call")(perform_api_call.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  @scala.inline
+  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutput(value: String): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setPerform_api_call(value: Boolean): Self = this.set("perform_api_call", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerform_api_call: Self = this.set("perform_api_call", js.undefined)
+    @scala.inline
+    def setSecured(value: Boolean): Self = this.set("secured", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecured: Self = this.set("secured", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

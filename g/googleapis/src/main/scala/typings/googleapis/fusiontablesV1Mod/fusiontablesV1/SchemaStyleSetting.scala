@@ -45,24 +45,50 @@ trait SchemaStyleSetting extends js.Object {
 
 object SchemaStyleSetting {
   @scala.inline
-  def apply(
-    kind: String = null,
-    markerOptions: SchemaPointStyle = null,
-    name: String = null,
-    polygonOptions: SchemaPolygonStyle = null,
-    polylineOptions: SchemaLineStyle = null,
-    styleId: js.UndefOr[Double] = js.undefined,
-    tableId: String = null
-  ): SchemaStyleSetting = {
+  def apply(): SchemaStyleSetting = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions.asInstanceOf[js.Any])
-    if (polylineOptions != null) __obj.updateDynamic("polylineOptions")(polylineOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(styleId)) __obj.updateDynamic("styleId")(styleId.get.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStyleSetting]
   }
+  @scala.inline
+  implicit class SchemaStyleSettingOps[Self <: SchemaStyleSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMarkerOptions(value: SchemaPointStyle): Self = this.set("markerOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerOptions: Self = this.set("markerOptions", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPolygonOptions(value: SchemaPolygonStyle): Self = this.set("polygonOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolygonOptions: Self = this.set("polygonOptions", js.undefined)
+    @scala.inline
+    def setPolylineOptions(value: SchemaLineStyle): Self = this.set("polylineOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolylineOptions: Self = this.set("polylineOptions", js.undefined)
+    @scala.inline
+    def setStyleId(value: Double): Self = this.set("styleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleId: Self = this.set("styleId", js.undefined)
+    @scala.inline
+    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("tableId", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceTiers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTiersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTiersListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTiersListResponse] = js.native
   def list(params: ParamsResourceTiersList): GaxiosPromise[SchemaTiersListResponse] = js.native
   def list(params: ParamsResourceTiersList, callback: BodyResponseCallback[SchemaTiersListResponse]): Unit = js.native
   def list(

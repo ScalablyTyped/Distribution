@@ -26,18 +26,38 @@ trait DescribeConfigurationRevisionResponse extends js.Object {
 
 object DescribeConfigurationRevisionResponse {
   @scala.inline
-  def apply(
-    ConfigurationId: string = null,
-    Created: timestampIso8601 = null,
-    Data: string = null,
-    Description: string = null
-  ): DescribeConfigurationRevisionResponse = {
+  def apply(): DescribeConfigurationRevisionResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationId != null) __obj.updateDynamic("ConfigurationId")(ConfigurationId.asInstanceOf[js.Any])
-    if (Created != null) __obj.updateDynamic("Created")(Created.asInstanceOf[js.Any])
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRevisionResponse]
   }
+  @scala.inline
+  implicit class DescribeConfigurationRevisionResponseOps[Self <: DescribeConfigurationRevisionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationId(value: string): Self = this.set("ConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationId: Self = this.set("ConfigurationId", js.undefined)
+    @scala.inline
+    def setCreated(value: timestampIso8601): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("Created", js.undefined)
+    @scala.inline
+    def setData(value: string): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

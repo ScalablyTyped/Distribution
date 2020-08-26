@@ -16,8 +16,24 @@ import scala.scalajs.js.annotation._
   */
 class OperatingSystem () extends js.Object {
   def this(family: String) = this()
+  def this(family: js.UndefOr[scala.Nothing], major: String) = this()
   def this(family: String, major: String) = this()
+  def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String) = this()
+  def this(family: js.UndefOr[scala.Nothing], major: String, minor: String) = this()
+  def this(family: String, major: js.UndefOr[scala.Nothing], minor: String) = this()
   def this(family: String, major: String, minor: String) = this()
+  def this(
+    family: js.UndefOr[scala.Nothing],
+    major: js.UndefOr[scala.Nothing],
+    minor: js.UndefOr[scala.Nothing],
+    patch: String
+  ) = this()
+  def this(family: js.UndefOr[scala.Nothing], major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
+  def this(family: js.UndefOr[scala.Nothing], major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
+  def this(family: js.UndefOr[scala.Nothing], major: String, minor: String, patch: String) = this()
+  def this(family: String, major: js.UndefOr[scala.Nothing], minor: js.UndefOr[scala.Nothing], patch: String) = this()
+  def this(family: String, major: js.UndefOr[scala.Nothing], minor: String, patch: String) = this()
+  def this(family: String, major: String, minor: js.UndefOr[scala.Nothing], patch: String) = this()
   def this(family: String, major: String, minor: String, patch: String) = this()
   var family: String = js.native
   var major: String = js.native

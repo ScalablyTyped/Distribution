@@ -15,9 +15,5 @@ class VolumeRequest protected ()
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.VolumeRequest
     */
   def this(volume: Volume) = this()
-  /* CompleteClass */
-  override var customData: js.Object = js.native
-  /* CompleteClass */
-  override var volume: Volume = js.native
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "leveldown" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "leveldown" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

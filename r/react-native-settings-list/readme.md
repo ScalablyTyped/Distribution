@@ -12,7 +12,7 @@ A clean and highly customizable React Native implementation of a list of setting
 | Keywords           | react-native, react-component, ios, android, settings-list, settings |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 23287 |
+| # downloads        | 22955 |
 | # stars            | 0 |
 
 ## Links

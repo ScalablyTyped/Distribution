@@ -41,30 +41,6 @@ class GeoboundingBox protected ()
     altitudeReferenceSystem: typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem,
     spatialReferenceId: Double
   ) = this()
-  /** Gets the altitude reference system used by the GeoboundingBox . */
-  /* CompleteClass */
-  override var altitudeReferenceSystem: typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem = js.native
-  /** Gets the center of the GeoboundingBox . */
-  /* CompleteClass */
-  override var center: BasicGeoposition = js.native
-  /** Gets the type of geographic shape represented by the GeoboundingBox . */
-  /* CompleteClass */
-  override var geoshapeType: typings.winrtUwp.Windows.Devices.Geolocation.GeoshapeType = js.native
-  /** Gets the altitude of the highest corner of the GeoboundingBox . */
-  /* CompleteClass */
-  override var maxAltitude: Double = js.native
-  /** Gets the altitude of the lowest corner of the GeoboundingBox . */
-  /* CompleteClass */
-  override var minAltitude: Double = js.native
-  /** Gets the northwest corner of the GeoboundingBox . */
-  /* CompleteClass */
-  override var northwestCorner: BasicGeoposition = js.native
-  /** Gets the southeast corner of the GeoboundingBox . */
-  /* CompleteClass */
-  override var southeastCorner: BasicGeoposition = js.native
-  /** Gets the spatial reference ID (SRID) used by the GeoboundingBox . */
-  /* CompleteClass */
-  override var spatialReferenceId: Double = js.native
 }
 
 /* static members */

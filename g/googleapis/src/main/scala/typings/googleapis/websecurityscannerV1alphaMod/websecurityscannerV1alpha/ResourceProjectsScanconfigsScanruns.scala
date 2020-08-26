@@ -30,6 +30,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaScanRun] = js.native
   def get(callback: BodyResponseCallback[SchemaScanRun]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
   def get(params: ParamsResourceProjectsScanconfigsScanrunsGet): GaxiosPromise[SchemaScanRun] = js.native
   def get(
     params: ParamsResourceProjectsScanconfigsScanrunsGet,
@@ -63,6 +64,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListScanRunsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScanRunsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScanRunsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsList): GaxiosPromise[SchemaListScanRunsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsList,
@@ -94,6 +96,7 @@ class ResourceProjectsScanconfigsScanruns protected () extends js.Object {
     */
   def stop(): GaxiosPromise[SchemaScanRun] = js.native
   def stop(callback: BodyResponseCallback[SchemaScanRun]): Unit = js.native
+  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScanRun] = js.native
   def stop(params: ParamsResourceProjectsScanconfigsScanrunsStop): GaxiosPromise[SchemaScanRun] = js.native
   def stop(
     params: ParamsResourceProjectsScanconfigsScanrunsStop,

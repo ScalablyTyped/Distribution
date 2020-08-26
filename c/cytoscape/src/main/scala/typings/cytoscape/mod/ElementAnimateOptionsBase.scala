@@ -9,39 +9,64 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#collection/animation
   */
+@js.native
 trait ElementAnimateOptionsBase extends js.Object {
   /** A function to call when the animation is done. */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function0[Unit]] = js.native
   /** The duration of the animation in milliseconds. */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /** A transition-timing-function easing style string that shapes the animation progress curve. */
-  var easing: js.UndefOr[TransitionTimingFunction] = js.undefined
+  var easing: js.UndefOr[TransitionTimingFunction] = js.native
   /** A boolean indicating whether to queue the animation. */
-  var queue: js.UndefOr[Boolean] = js.undefined
+  var queue: js.UndefOr[Boolean] = js.native
   /** A function to call each time the animation steps. */
-  var step: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var step: js.UndefOr[js.Function0[Unit]] = js.native
   /** An object containing name-value pairs of style properties to animate. */
-  var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var style: js.UndefOr[StringDictionary[js.Any]] = js.native
 }
 
 object ElementAnimateOptionsBase {
   @scala.inline
-  def apply(
-    complete: () => Unit = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: TransitionTimingFunction = null,
-    queue: js.UndefOr[Boolean] = js.undefined,
-    step: () => Unit = null,
-    style: StringDictionary[js.Any] = null
-  ): ElementAnimateOptionsBase = {
+  def apply(): ElementAnimateOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction0(complete))
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.get.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(js.Any.fromFunction0(step))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementAnimateOptionsBase]
   }
+  @scala.inline
+  implicit class ElementAnimateOptionsBaseOps[Self <: ElementAnimateOptionsBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplete(value: () => Unit): Self = this.set("complete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: TransitionTimingFunction): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setQueue(value: Boolean): Self = this.set("queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("queue", js.undefined)
+    @scala.inline
+    def setStep(value: () => Unit): Self = this.set("step", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStyle(value: StringDictionary[js.Any]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

@@ -38,7 +38,7 @@ class Member protected () extends CustomResource {
     */
   val masterId: Output_[String] = js.native
   /**
-    * The status of the relationship between the member account and its master account.
+    * The status of the member account relationship.
     */
   val memberStatus: Output_[String] = js.native
 }
@@ -54,8 +54,10 @@ object Member extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Member = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Member = js.native
   def get(name: String, id: Input[ID], state: MemberState): Member = js.native
   def get(name: String, id: Input[ID], state: MemberState, opts: CustomResourceOptions): Member = js.native
   /**

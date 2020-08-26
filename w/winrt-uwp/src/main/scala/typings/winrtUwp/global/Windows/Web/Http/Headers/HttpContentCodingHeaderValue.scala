@@ -15,9 +15,6 @@ class HttpContentCodingHeaderValue protected ()
     * @param contentCoding The value of the content-coding to use.
     */
   def this(contentCoding: String) = this()
-  /** Gets the value of the content-coding information used in the Content-Encoding HTTP header. */
-  /* CompleteClass */
-  override var contentCoding: String = js.native
 }
 
 /* static members */

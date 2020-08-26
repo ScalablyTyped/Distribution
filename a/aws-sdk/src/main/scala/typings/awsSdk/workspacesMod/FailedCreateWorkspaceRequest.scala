@@ -22,16 +22,34 @@ trait FailedCreateWorkspaceRequest extends js.Object {
 
 object FailedCreateWorkspaceRequest {
   @scala.inline
-  def apply(
-    ErrorCode: ErrorType = null,
-    ErrorMessage: Description = null,
-    WorkspaceRequest: WorkspaceRequest = null
-  ): FailedCreateWorkspaceRequest = {
+  def apply(): FailedCreateWorkspaceRequest = {
     val __obj = js.Dynamic.literal()
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (WorkspaceRequest != null) __obj.updateDynamic("WorkspaceRequest")(WorkspaceRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailedCreateWorkspaceRequest]
   }
+  @scala.inline
+  implicit class FailedCreateWorkspaceRequestOps[Self <: FailedCreateWorkspaceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: ErrorType): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: Description): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setWorkspaceRequest(value: WorkspaceRequest): Self = this.set("WorkspaceRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceRequest: Self = this.set("WorkspaceRequest", js.undefined)
+  }
+  
 }
 

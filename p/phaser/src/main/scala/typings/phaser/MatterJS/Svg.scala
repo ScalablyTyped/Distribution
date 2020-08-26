@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Svg
   */
+@js.native
 trait Svg extends js.Object
 

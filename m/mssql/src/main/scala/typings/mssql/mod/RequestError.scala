@@ -13,10 +13,6 @@ class RequestError protected () extends Error {
   var `class`: js.UndefOr[Double] = js.native
   var code: String = js.native
   var lineNumber: js.UndefOr[Double] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var number: js.UndefOr[Double] = js.native
   var procName: js.UndefOr[String] = js.native
   var serverName: js.UndefOr[String] = js.native

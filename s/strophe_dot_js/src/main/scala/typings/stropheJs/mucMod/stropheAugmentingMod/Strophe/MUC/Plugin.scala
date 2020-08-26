@@ -21,7 +21,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def ban(room: String, jid: String): String = js.native
+  def ban(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def ban(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def ban(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def ban(room: String, jid: String, reason: String): String = js.native
+  def ban(
+    room: String,
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def ban(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def ban(
     room: String,
@@ -53,6 +80,11 @@ trait Plugin extends js.Object {
     * @return id - the unique id used to send the configuration request
     */
   def configure(room: String): String = js.native
+  def configure(
+    room: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def configure(room: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def configure(
     room: String,
@@ -83,6 +115,11 @@ trait Plugin extends js.Object {
     * @return id - the unique id used to create the chat room.
     */
   def createInstantRoom(room: String): String = js.native
+  def createInstantRoom(
+    room: String,
+    success_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def createInstantRoom(room: String, success_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def createInstantRoom(
     room: String,
@@ -100,7 +137,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def deop(room: String, nick: String): String = js.native
+  def deop(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def deop(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def deop(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def deop(room: String, nick: String, reason: String): String = js.native
+  def deop(
+    room: String,
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def deop(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def deop(
     room: String,
@@ -119,6 +183,7 @@ trait Plugin extends js.Object {
     * @return msgiq - the unique id used to send the invitation
     */
   def directInvite(room: String, receiver: String): String = js.native
+  def directInvite(room: String, receiver: String, reason: js.UndefOr[scala.Nothing], password: String): String = js.native
   def directInvite(room: String, receiver: String, reason: String): String = js.native
   def directInvite(room: String, receiver: String, reason: String, password: String): String = js.native
   /**
@@ -131,6 +196,7 @@ trait Plugin extends js.Object {
     * @return msgiq - the unique id used to send the message
     */
   def groupchat(room: String, message: String): String = js.native
+  def groupchat(room: String, message: String, html_message: js.UndefOr[scala.Nothing], msgid: String): String = js.native
   def groupchat(room: String, message: String, html_message: String): String = js.native
   def groupchat(room: String, message: String, html_message: String, msgid: String): String = js.native
   /**
@@ -175,7 +241,46 @@ trait Plugin extends js.Object {
     msg_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
     pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
     roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
+    password: js.UndefOr[scala.Nothing],
+    history_attrs: js.UndefOr[scala.Nothing],
+    extended_presence: Element
+  ): Unit = js.native
+  def join(
+    room: String,
+    nick: String,
+    msg_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
+    password: js.UndefOr[scala.Nothing],
+    history_attrs: js.Any
+  ): Unit = js.native
+  def join(
+    room: String,
+    nick: String,
+    msg_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
+    password: js.UndefOr[scala.Nothing],
+    history_attrs: js.Any,
+    extended_presence: Element
+  ): Unit = js.native
+  def join(
+    room: String,
+    nick: String,
+    msg_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
     password: String
+  ): Unit = js.native
+  def join(
+    room: String,
+    nick: String,
+    msg_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    pres_handler_cb: js.Function2[/* stanza */ Element, /* room */ XmppRoom, Boolean],
+    roster_cb: js.Function2[/* occupants */ OccupantMap, /* room */ XmppRoom, Boolean],
+    password: String,
+    history_attrs: js.UndefOr[scala.Nothing],
+    extended_presence: Element
   ): Unit = js.native
   def join(
     room: String,
@@ -207,7 +312,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def kick(room: String, nick: String): String = js.native
+  def kick(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def kick(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def kick(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def kick(room: String, nick: String, reason: String): String = js.native
+  def kick(
+    room: String,
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def kick(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def kick(
     room: String,
@@ -226,6 +358,7 @@ trait Plugin extends js.Object {
     * @return iqid - The unique id for the room leave.*
     */
   def leave(room: String, nick: String): String = js.native
+  def leave(room: String, nick: String, handler_cb: js.UndefOr[scala.Nothing], exit_msg: String): String = js.native
   def leave(room: String, nick: String, handler_cb: js.Function1[/* stanza */ Element, Boolean]): String = js.native
   def leave(
     room: String,
@@ -256,7 +389,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def member(room: String, jid: String): String = js.native
+  def member(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def member(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def member(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def member(room: String, jid: String, reason: String): String = js.native
+  def member(
+    room: String,
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def member(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def member(
     room: String,
@@ -293,7 +453,38 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def modifyAffiliation(room: String, jid: String, affiliation: String): String = js.native
+  def modifyAffiliation(
+    room: String,
+    jid: String,
+    affiliation: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyAffiliation(
+    room: String,
+    jid: String,
+    affiliation: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyAffiliation(
+    room: String,
+    jid: String,
+    affiliation: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyAffiliation(room: String, jid: String, affiliation: String, reason: String): String = js.native
+  def modifyAffiliation(
+    room: String,
+    jid: String,
+    affiliation: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyAffiliation(
     room: String,
     jid: String,
@@ -323,7 +514,38 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def modifyRole(room: String, nick: String, role: String): String = js.native
+  def modifyRole(
+    room: String,
+    nick: String,
+    role: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyRole(
+    room: String,
+    nick: String,
+    role: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def modifyRole(
+    room: String,
+    nick: String,
+    role: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyRole(room: String, nick: String, role: String, reason: String): String = js.native
+  def modifyRole(
+    room: String,
+    nick: String,
+    role: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def modifyRole(
     room: String,
     nick: String,
@@ -360,7 +582,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def mute(room: String, nick: String): String = js.native
+  def mute(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def mute(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def mute(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def mute(room: String, nick: String, reason: String): String = js.native
+  def mute(
+    room: String,
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def mute(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def mute(
     room: String,
@@ -380,7 +629,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def op(room: String, nick: String): String = js.native
+  def op(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def op(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def op(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def op(room: String, nick: String, reason: String): String = js.native
+  def op(
+    room: String,
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def op(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def op(
     room: String,
@@ -400,7 +676,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def owner(room: String, jid: String): String = js.native
+  def owner(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def owner(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def owner(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def owner(room: String, jid: String, reason: String): String = js.native
+  def owner(
+    room: String,
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def owner(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def owner(
     room: String,
@@ -418,6 +721,7 @@ trait Plugin extends js.Object {
     * @return id - the unique id used to send the info request
     */
   def queryOccupants(room: String): String = js.native
+  def queryOccupants(room: String, success_cb: js.UndefOr[scala.Nothing], error_cb: js.Function1[/* error */ js.Any, _]): String = js.native
   def queryOccupants(room: String, success_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def queryOccupants(
     room: String,
@@ -448,7 +752,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def revoke(room: String, jid: String): String = js.native
+  def revoke(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def revoke(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def revoke(
+    room: String,
+    jid: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def revoke(room: String, jid: String, reason: String): String = js.native
+  def revoke(
+    room: String,
+    jid: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def revoke(room: String, jid: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def revoke(
     room: String,
@@ -467,6 +798,12 @@ trait Plugin extends js.Object {
     * @return id - the unique id used to save the configuration.
     */
   def saveConfiguration(room: String, config: js.Any): String = js.native
+  def saveConfiguration(
+    room: String,
+    config: js.Any,
+    success_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def saveConfiguration(room: String, config: js.Any, success_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def saveConfiguration(
     room: String,
@@ -515,7 +852,34 @@ trait Plugin extends js.Object {
     * @return iq - the id of the mode change request.
     */
   def voice(room: String, nick: String): String = js.native
+  def voice(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def voice(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
+  def voice(
+    room: String,
+    nick: String,
+    reason: js.UndefOr[scala.Nothing],
+    handler_cb: js.Function1[/* stanza */ Element, _],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def voice(room: String, nick: String, reason: String): String = js.native
+  def voice(
+    room: String,
+    nick: String,
+    reason: String,
+    handler_cb: js.UndefOr[scala.Nothing],
+    error_cb: js.Function1[/* stanza */ Element, _]
+  ): String = js.native
   def voice(room: String, nick: String, reason: String, handler_cb: js.Function1[/* stanza */ Element, _]): String = js.native
   def voice(
     room: String,

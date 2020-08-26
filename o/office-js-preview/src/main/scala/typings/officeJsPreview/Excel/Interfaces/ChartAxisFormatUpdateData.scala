@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`. */
+@js.native
 trait ChartAxisFormatUpdateData extends js.Object {
   /**
     *
@@ -12,23 +13,42 @@ trait ChartAxisFormatUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var font: js.UndefOr[ChartFontUpdateData] = js.undefined
+  var font: js.UndefOr[ChartFontUpdateData] = js.native
   /**
     *
     * Specifies chart line formatting.
     *
     * [Api set: ExcelApi 1.1]
     */
-  var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined
+  var line: js.UndefOr[ChartLineFormatUpdateData] = js.native
 }
 
 object ChartAxisFormatUpdateData {
   @scala.inline
-  def apply(font: ChartFontUpdateData = null, line: ChartLineFormatUpdateData = null): ChartAxisFormatUpdateData = {
+  def apply(): ChartAxisFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisFormatUpdateData]
   }
+  @scala.inline
+  implicit class ChartAxisFormatUpdateDataOps[Self <: ChartAxisFormatUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFont(value: ChartFontUpdateData): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setLine(value: ChartLineFormatUpdateData): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+  }
+  
 }
 

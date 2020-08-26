@@ -86,6 +86,7 @@ trait ASPxClientCardViewBatchEditApi extends js.Object {
     * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's WebColumnBase.Name property value).
     */
   def HasChanges(): Boolean = js.native
+  def HasChanges(visibleIndex: js.UndefOr[scala.Nothing], columnFieldNameOrId: String): Boolean = js.native
   def HasChanges(visibleIndex: Double): Boolean = js.native
   def HasChanges(visibleIndex: Double, columnFieldNameOrId: String): Boolean = js.native
   /**
@@ -132,6 +133,13 @@ trait ASPxClientCardViewBatchEditApi extends js.Object {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
+  def SetCellValue(
+    visibleIndex: Double,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: js.UndefOr[scala.Nothing],
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
   def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,

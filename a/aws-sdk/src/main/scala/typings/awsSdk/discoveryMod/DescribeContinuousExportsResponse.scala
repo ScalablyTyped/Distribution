@@ -18,11 +18,32 @@ trait DescribeContinuousExportsResponse extends js.Object {
 
 object DescribeContinuousExportsResponse {
   @scala.inline
-  def apply(descriptions: ContinuousExportDescriptions = null, nextToken: NextToken = null): DescribeContinuousExportsResponse = {
+  def apply(): DescribeContinuousExportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (descriptions != null) __obj.updateDynamic("descriptions")(descriptions.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContinuousExportsResponse]
   }
+  @scala.inline
+  implicit class DescribeContinuousExportsResponseOps[Self <: DescribeContinuousExportsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescriptionsVarargs(value: ContinuousExportDescription*): Self = this.set("descriptions", js.Array(value :_*))
+    @scala.inline
+    def setDescriptions(value: ContinuousExportDescriptions): Self = this.set("descriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescriptions: Self = this.set("descriptions", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,9 @@ object deleteEmailChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteEmailChannelInput) = this()
-    /* CompleteClass */
-    override val input: DeleteEmailChannelInput = js.native
     val middlewareStack: MiddlewareStack[DeleteEmailChannelInput, DeleteEmailChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[DeleteEmailChannelInput, DeleteEmailChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteEmailChannelInput, DeleteEmailChannelOutput] = js.native
   }

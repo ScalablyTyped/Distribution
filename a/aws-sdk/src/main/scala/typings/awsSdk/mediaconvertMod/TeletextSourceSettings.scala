@@ -14,10 +14,26 @@ trait TeletextSourceSettings extends js.Object {
 
 object TeletextSourceSettings {
   @scala.inline
-  def apply(PageNumber: stringMin3Max3Pattern1809aFAF09aEAE = null): TeletextSourceSettings = {
+  def apply(): TeletextSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (PageNumber != null) __obj.updateDynamic("PageNumber")(PageNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeletextSourceSettings]
   }
+  @scala.inline
+  implicit class TeletextSourceSettingsOps[Self <: TeletextSourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = this.set("PageNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageNumber: Self = this.set("PageNumber", js.undefined)
+  }
+  
 }
 

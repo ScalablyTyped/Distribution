@@ -1,7 +1,5 @@
 package typings.winrt.global.Windows.Media
 
-import typings.winrt.Windows.Foundation.IAsyncActionWithProgress
-import typings.winrt.Windows.Media.Transcoding.TranscodeFailureReason
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,14 +13,7 @@ object Transcoding extends js.Object {
   
   @js.native
   class PrepareTranscodeResult ()
-    extends typings.winrt.Windows.Media.Transcoding.PrepareTranscodeResult {
-    /* CompleteClass */
-    override var canTranscode: Boolean = js.native
-    /* CompleteClass */
-    override var failureReason: TranscodeFailureReason = js.native
-    /* CompleteClass */
-    override def transcodeAsync(): IAsyncActionWithProgress[Double] = js.native
-  }
+    extends typings.winrt.Windows.Media.Transcoding.PrepareTranscodeResult
   
   @js.native
   object TranscodeFailureReason extends js.Object {

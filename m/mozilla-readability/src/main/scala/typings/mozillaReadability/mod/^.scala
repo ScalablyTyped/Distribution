@@ -50,31 +50,5 @@ class ^ protected () extends Readability {
     */
   def this(doc: Document) = this()
   def this(doc: Document, options: Options) = this()
-  /**
-    * Runs readability.
-    *
-    * ## Workflow:
-    *
-    *  1. Prep the document by removing script tags, css, etc.
-    *  2. Build readability's DOM tree.
-    *  3. Grab the article content from the current dom tree.
-    *  4. Replace the current DOM tree with the new one.
-    *  5. Read peacefully.
-    *
-    * ## Additional notes:
-    *
-    * Readability's parse() works by modifying the DOM. This removes some
-    * elements in the web page. You could avoid this by passing the clone
-    * of the document object while creating a Readability object.
-    *
-    * ```js
-    * var documentClone = document.cloneNode(true);
-    * var article = new Readability(documentClone).parse();
-    * ```
-    *
-    * The response will be null if the processing failed (https://github.com/mozilla/readability/blob/52ab9b5c8916c306a47b2119270dcdabebf9d203/Readability.js#L2038)
-    */
-  /* CompleteClass */
-  override def parse(): ParseResult | Null = js.native
 }
 

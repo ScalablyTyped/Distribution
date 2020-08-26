@@ -22,6 +22,7 @@ object mod extends js.Object {
   class default protected () extends TransportNodeHid {
     def this(device: HID) = this()
     def this(device: HID, ledgerTransport: Boolean) = this()
+    def this(device: HID, ledgerTransport: js.UndefOr[scala.Nothing], timeout: Double) = this()
     def this(device: HID, ledgerTransport: Boolean, timeout: Double) = this()
   }
   

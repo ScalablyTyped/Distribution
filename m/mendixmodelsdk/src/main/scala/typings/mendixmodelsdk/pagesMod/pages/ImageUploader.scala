@@ -31,11 +31,11 @@ class ImageUploader protected () extends InputWidget {
   @JSName("model")
   var model_FImageUploader: IModel = js.native
   def allowedExtensions: String = js.native
-  def allowedExtensions(newValue: String): js.Any = js.native
+  def allowedExtensions_=(newValue: String): Unit = js.native
   def maxFileSize: Double = js.native
-  def maxFileSize(newValue: Double): js.Any = js.native
+  def maxFileSize_=(newValue: Double): Unit = js.native
   def thumbnailSize: ISize = js.native
-  def thumbnailSize(newValue: ISize): js.Any = js.native
+  def thumbnailSize_=(newValue: ISize): Unit = js.native
 }
 
 /* static members */

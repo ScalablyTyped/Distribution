@@ -18,20 +18,12 @@ object patchMod extends js.Object {
   @js.native
   class InvalidOperationError protected () extends Error {
     def this(operation: Operation) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var operation: Operation = js.native
   }
   
   @js.native
   class MissingError protected () extends Error {
     def this(path: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var path: String = js.native
   }
   
@@ -40,10 +32,6 @@ object patchMod extends js.Object {
     def this(actual: js.Any, expected: js.Any) = this()
     var actual: js.Any = js.native
     var expected: js.Any = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   def add(`object`: js.Any, operation: AddOperation): MissingError | Null = js.native

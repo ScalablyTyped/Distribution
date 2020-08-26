@@ -34,20 +34,44 @@ trait SchemaTier extends js.Object {
 
 object SchemaTier {
   @scala.inline
-  def apply(
-    DiskQuota: String = null,
-    RAM: String = null,
-    kind: String = null,
-    region: js.Array[String] = null,
-    tier: String = null
-  ): SchemaTier = {
+  def apply(): SchemaTier = {
     val __obj = js.Dynamic.literal()
-    if (DiskQuota != null) __obj.updateDynamic("DiskQuota")(DiskQuota.asInstanceOf[js.Any])
-    if (RAM != null) __obj.updateDynamic("RAM")(RAM.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (tier != null) __obj.updateDynamic("tier")(tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTier]
   }
+  @scala.inline
+  implicit class SchemaTierOps[Self <: SchemaTier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskQuota(value: String): Self = this.set("DiskQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskQuota: Self = this.set("DiskQuota", js.undefined)
+    @scala.inline
+    def setRAM(value: String): Self = this.set("RAM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRAM: Self = this.set("RAM", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRegionVarargs(value: String*): Self = this.set("region", js.Array(value :_*))
+    @scala.inline
+    def setRegion(value: js.Array[String]): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setTier(value: String): Self = this.set("tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("tier", js.undefined)
+  }
+  
 }
 

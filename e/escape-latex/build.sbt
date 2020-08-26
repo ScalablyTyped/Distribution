@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "escape-latex"
-version := "0.1.2-dt-20200515Z-b1a6f8"
-scalaVersion := "2.13.2"
+version := "0.1.2-dt-20200515Z-da0fa5"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

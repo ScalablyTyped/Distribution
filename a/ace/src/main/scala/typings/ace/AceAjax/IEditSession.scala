@@ -116,7 +116,11 @@ trait IEditSession extends OptionProvider {
   def expandFold(arg: js.Any): Unit = js.native
   def findMatchingBracket(position: Position): Unit = js.native
   def foldAll(): Unit = js.native
+  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
+  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double): Unit = js.native
+  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double, depth: Double): Unit = js.native
   def foldAll(startRow: Double): Unit = js.native
+  def foldAll(startRow: Double, endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double, depth: Double): Unit = js.native
   /**

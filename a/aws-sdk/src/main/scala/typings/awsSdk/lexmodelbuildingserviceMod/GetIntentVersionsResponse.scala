@@ -18,11 +18,32 @@ trait GetIntentVersionsResponse extends js.Object {
 
 object GetIntentVersionsResponse {
   @scala.inline
-  def apply(intents: IntentMetadataList = null, nextToken: NextToken = null): GetIntentVersionsResponse = {
+  def apply(): GetIntentVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntentVersionsResponse]
   }
+  @scala.inline
+  implicit class GetIntentVersionsResponseOps[Self <: GetIntentVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntentsVarargs(value: IntentMetadata*): Self = this.set("intents", js.Array(value :_*))
+    @scala.inline
+    def setIntents(value: IntentMetadataList): Self = this.set("intents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntents: Self = this.set("intents", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

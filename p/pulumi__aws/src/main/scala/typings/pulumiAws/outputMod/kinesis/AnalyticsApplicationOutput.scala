@@ -36,19 +36,40 @@ trait AnalyticsApplicationOutput extends js.Object {
 
 object AnalyticsApplicationOutput {
   @scala.inline
-  def apply(
-    id: String,
-    name: String,
-    schema: AnalyticsApplicationOutputSchema,
-    kinesisFirehose: AnalyticsApplicationOutputKinesisFirehose = null,
-    kinesisStream: AnalyticsApplicationOutputKinesisStream = null,
-    lambda: AnalyticsApplicationOutputLambda = null
-  ): AnalyticsApplicationOutput = {
+  def apply(id: String, name: String, schema: AnalyticsApplicationOutputSchema): AnalyticsApplicationOutput = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose.asInstanceOf[js.Any])
-    if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream.asInstanceOf[js.Any])
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationOutput]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationOutputOps[Self <: AnalyticsApplicationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: AnalyticsApplicationOutputSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKinesisFirehose(value: AnalyticsApplicationOutputKinesisFirehose): Self = this.set("kinesisFirehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisFirehose: Self = this.set("kinesisFirehose", js.undefined)
+    @scala.inline
+    def setKinesisStream(value: AnalyticsApplicationOutputKinesisStream): Self = this.set("kinesisStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisStream: Self = this.set("kinesisStream", js.undefined)
+    @scala.inline
+    def setLambda(value: AnalyticsApplicationOutputLambda): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambda: Self = this.set("lambda", js.undefined)
+  }
+  
 }
 

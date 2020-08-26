@@ -38,11 +38,9 @@ class CallMicroflowTask protected () extends WorkflowTask {
   var model_FCallMicroflowTask: IModel = js.native
   @JSName("containerAsWorkflow")
   def containerAsWorkflow_MCallMicroflowTask: Workflow = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
 }
 
 /* static members */

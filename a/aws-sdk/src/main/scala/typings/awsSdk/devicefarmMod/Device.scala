@@ -94,52 +94,108 @@ trait Device extends js.Object {
 
 object Device {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName = null,
-    availability: DeviceAvailability = null,
-    carrier: String = null,
-    cpu: CPU = null,
-    fleetName: String = null,
-    fleetType: String = null,
-    formFactor: DeviceFormFactor = null,
-    heapSize: js.UndefOr[Long] = js.undefined,
-    image: String = null,
-    instances: DeviceInstances = null,
-    manufacturer: String = null,
-    memory: js.UndefOr[Long] = js.undefined,
-    model: String = null,
-    modelId: String = null,
-    name: Name = null,
-    os: String = null,
-    platform: DevicePlatform = null,
-    radio: String = null,
-    remoteAccessEnabled: js.UndefOr[Boolean] = js.undefined,
-    remoteDebugEnabled: js.UndefOr[Boolean] = js.undefined,
-    resolution: Resolution = null
-  ): Device = {
+  def apply(): Device = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (fleetName != null) __obj.updateDynamic("fleetName")(fleetName.asInstanceOf[js.Any])
-    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
-    if (formFactor != null) __obj.updateDynamic("formFactor")(formFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(heapSize)) __obj.updateDynamic("heapSize")(heapSize.get.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (radio != null) __obj.updateDynamic("radio")(radio.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteAccessEnabled)) __obj.updateDynamic("remoteAccessEnabled")(remoteAccessEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(remoteDebugEnabled)) __obj.updateDynamic("remoteDebugEnabled")(remoteDebugEnabled.get.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[Device]
   }
+  @scala.inline
+  implicit class DeviceOps[Self <: Device] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAvailability(value: DeviceAvailability): Self = this.set("availability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailability: Self = this.set("availability", js.undefined)
+    @scala.inline
+    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarrier: Self = this.set("carrier", js.undefined)
+    @scala.inline
+    def setCpu(value: CPU): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setFleetName(value: String): Self = this.set("fleetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetName: Self = this.set("fleetName", js.undefined)
+    @scala.inline
+    def setFleetType(value: String): Self = this.set("fleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetType: Self = this.set("fleetType", js.undefined)
+    @scala.inline
+    def setFormFactor(value: DeviceFormFactor): Self = this.set("formFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormFactor: Self = this.set("formFactor", js.undefined)
+    @scala.inline
+    def setHeapSize(value: Long): Self = this.set("heapSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeapSize: Self = this.set("heapSize", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: DeviceInstance*): Self = this.set("instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: DeviceInstances): Self = this.set("instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("instances", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setMemory(value: Long): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setModelId(value: String): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelId: Self = this.set("modelId", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOs(value: String): Self = this.set("os", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs: Self = this.set("os", js.undefined)
+    @scala.inline
+    def setPlatform(value: DevicePlatform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setRadio(value: String): Self = this.set("radio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadio: Self = this.set("radio", js.undefined)
+    @scala.inline
+    def setRemoteAccessEnabled(value: Boolean): Self = this.set("remoteAccessEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAccessEnabled: Self = this.set("remoteAccessEnabled", js.undefined)
+    @scala.inline
+    def setRemoteDebugEnabled(value: Boolean): Self = this.set("remoteDebugEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteDebugEnabled: Self = this.set("remoteDebugEnabled", js.undefined)
+    @scala.inline
+    def setResolution(value: Resolution): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+  }
+  
 }
 

@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.util.SparseMap")
 @js.native
-class SparseMap[K, T] () extends js.Object {
-  def this(initialCapacity: Double) = this()
+trait SparseMap[K, T] extends js.Object {
   var map: Map[K, T] = js.native
   def append(key: js.Any, value: js.Any): Unit = js.native
   def clear(): Unit = js.native

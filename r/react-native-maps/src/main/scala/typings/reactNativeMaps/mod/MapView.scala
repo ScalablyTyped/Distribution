@@ -26,6 +26,7 @@ trait MapView
   def animateToViewingAngle(angle: Double, duration: Double): Unit = js.native
   def coordinateForPoint(point: Point): js.Promise[LatLng] = js.native
   def fitToCoordinates(): Unit = js.native
+  def fitToCoordinates(coordinates: js.UndefOr[scala.Nothing], options: Animated): Unit = js.native
   def fitToCoordinates(coordinates: js.Array[LatLng]): Unit = js.native
   def fitToCoordinates(coordinates: js.Array[LatLng], options: Animated): Unit = js.native
   def fitToElements(animated: Boolean): Unit = js.native

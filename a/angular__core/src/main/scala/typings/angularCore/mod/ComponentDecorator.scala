@@ -20,7 +20,8 @@ Instantiable1[/* obj */ Component, Component] {
     * An Angular app contains a tree of Angular components.
     *
     * Angular components are a subset of directives, always associated with a template.
-    * Unlike other directives, only one component can be instantiated per an element in a template.
+    * Unlike other directives, only one component can be instantiated for a given element in a
+    * template.
     *
     * A component must belong to an NgModule in order for it to be available
     * to another component or application. To make it a member of an NgModule,

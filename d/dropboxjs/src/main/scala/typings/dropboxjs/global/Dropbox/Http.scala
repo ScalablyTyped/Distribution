@@ -1,7 +1,5 @@
 package typings.dropboxjs.global.Dropbox
 
-import typings.dropboxjs.Dropbox.File.Stat
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,63 +13,25 @@ object Http extends js.Object {
   
   @js.native
   class PollResult ()
-    extends typings.dropboxjs.Dropbox.Http.PollResult {
-    /* CompleteClass */
-    override var hasChanges: Boolean = js.native
-    /* CompleteClass */
-    override var retryAfter: Double = js.native
-  }
+    extends typings.dropboxjs.Dropbox.Http.PollResult
   
   @js.native
   class PulledChange ()
-    extends typings.dropboxjs.Dropbox.Http.PulledChange {
-    /* CompleteClass */
-    override var path: String = js.native
-    /* CompleteClass */
-    override var stat: Stat = js.native
-    /* CompleteClass */
-    override var wasRemoved: Boolean = js.native
-  }
+    extends typings.dropboxjs.Dropbox.Http.PulledChange
   
   @js.native
   class PulledChanges ()
-    extends typings.dropboxjs.Dropbox.Http.PulledChanges {
-    /* CompleteClass */
-    override var blankSlate: Boolean = js.native
-    /* CompleteClass */
-    override var cursorTag: String = js.native
-    /* CompleteClass */
-    override var shouldBackOff: Boolean = js.native
-    /* CompleteClass */
-    override var shouldPullAgain: Boolean = js.native
-    /* CompleteClass */
-    override def cursor(): String = js.native
-  }
+    extends typings.dropboxjs.Dropbox.Http.PulledChanges
   
   @js.native
   class RangeInfo ()
-    extends typings.dropboxjs.Dropbox.Http.RangeInfo {
-    /* CompleteClass */
-    override var end: Double = js.native
-    /* CompleteClass */
-    override var size: Double = js.native
-    /* CompleteClass */
-    override var start: Double = js.native
-  }
+    extends typings.dropboxjs.Dropbox.Http.RangeInfo
   
   @js.native
   class UploadCursor protected ()
     extends typings.dropboxjs.Dropbox.Http.UploadCursor {
     def this(cursorData: String) = this()
     def this(cursorData: js.Object) = this()
-    /* CompleteClass */
-    override var expiresAt: Date = js.native
-    /* CompleteClass */
-    override var offset: Double = js.native
-    /* CompleteClass */
-    override var tag: String = js.native
-    /* CompleteClass */
-    override def toJSON(): js.Object = js.native
   }
   
   /* static members */

@@ -66,6 +66,7 @@ trait WebSocket extends EventEmitter {
   @JSName("addListener")
   def addListener_pong(event: pong, cb: js.Function2[/* data */ js.Any, /* flags */ BinaryBoolean, Unit]): this.type = js.native
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, data: js.Any): Unit = js.native
   def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
@@ -100,11 +101,19 @@ trait WebSocket extends EventEmitter {
   def onopen(event: Target): Unit = js.native
   def pause(): Unit = js.native
   def ping(): Unit = js.native
+  def ping(data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
+  def ping(data: js.UndefOr[scala.Nothing], options: Binary): Unit = js.native
+  def ping(data: js.UndefOr[scala.Nothing], options: Binary, dontFail: Boolean): Unit = js.native
   def ping(data: js.Any): Unit = js.native
+  def ping(data: js.Any, options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
   def ping(data: js.Any, options: Binary): Unit = js.native
   def ping(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
   def pong(): Unit = js.native
+  def pong(data: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
+  def pong(data: js.UndefOr[scala.Nothing], options: Binary): Unit = js.native
+  def pong(data: js.UndefOr[scala.Nothing], options: Binary, dontFail: Boolean): Unit = js.native
   def pong(data: js.Any): Unit = js.native
+  def pong(data: js.Any, options: js.UndefOr[scala.Nothing], dontFail: Boolean): Unit = js.native
   def pong(data: js.Any, options: Binary): Unit = js.native
   def pong(data: js.Any, options: Binary, dontFail: Boolean): Unit = js.native
   def resume(): Unit = js.native

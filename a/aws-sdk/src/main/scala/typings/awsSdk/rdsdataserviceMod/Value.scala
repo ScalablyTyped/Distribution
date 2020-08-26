@@ -50,30 +50,64 @@ trait Value extends js.Object {
 
 object Value {
   @scala.inline
-  def apply(
-    arrayValues: ArrayValueList = null,
-    bigIntValue: js.UndefOr[BoxedLong] = js.undefined,
-    bitValue: js.UndefOr[BoxedBoolean] = js.undefined,
-    blobValue: _Blob = null,
-    doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
-    intValue: js.UndefOr[BoxedInteger] = js.undefined,
-    isNull: js.UndefOr[BoxedBoolean] = js.undefined,
-    realValue: js.UndefOr[BoxedFloat] = js.undefined,
-    stringValue: String = null,
-    structValue: StructValue = null
-  ): Value = {
+  def apply(): Value = {
     val __obj = js.Dynamic.literal()
-    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(bigIntValue)) __obj.updateDynamic("bigIntValue")(bigIntValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bitValue)) __obj.updateDynamic("bitValue")(bitValue.get.asInstanceOf[js.Any])
-    if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(intValue)) __obj.updateDynamic("intValue")(intValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(realValue)) __obj.updateDynamic("realValue")(realValue.get.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
-    if (structValue != null) __obj.updateDynamic("structValue")(structValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
+  @scala.inline
+  implicit class ValueOps[Self <: Value] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayValuesVarargs(value: Value*): Self = this.set("arrayValues", js.Array(value :_*))
+    @scala.inline
+    def setArrayValues(value: ArrayValueList): Self = this.set("arrayValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayValues: Self = this.set("arrayValues", js.undefined)
+    @scala.inline
+    def setBigIntValue(value: BoxedLong): Self = this.set("bigIntValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigIntValue: Self = this.set("bigIntValue", js.undefined)
+    @scala.inline
+    def setBitValue(value: BoxedBoolean): Self = this.set("bitValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitValue: Self = this.set("bitValue", js.undefined)
+    @scala.inline
+    def setBlobValue(value: _Blob): Self = this.set("blobValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobValue: Self = this.set("blobValue", js.undefined)
+    @scala.inline
+    def setDoubleValue(value: BoxedDouble): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    @scala.inline
+    def setIntValue(value: BoxedInteger): Self = this.set("intValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntValue: Self = this.set("intValue", js.undefined)
+    @scala.inline
+    def setIsNull(value: BoxedBoolean): Self = this.set("isNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsNull: Self = this.set("isNull", js.undefined)
+    @scala.inline
+    def setRealValue(value: BoxedFloat): Self = this.set("realValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealValue: Self = this.set("realValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    @scala.inline
+    def setStructValue(value: StructValue): Self = this.set("structValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructValue: Self = this.set("structValue", js.undefined)
+  }
+  
 }
 

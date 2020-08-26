@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object withStatement extends js.Object {
   def apply(): WithStatement_ = js.native
+  def apply(`object`: js.UndefOr[scala.Nothing], body: BlockStatement_): WithStatement_ = js.native
+  def apply(`object`: js.UndefOr[scala.Nothing], body: Statement): WithStatement_ = js.native
   def apply(`object`: Expression): WithStatement_ = js.native
   def apply(`object`: Expression, body: BlockStatement_): WithStatement_ = js.native
   def apply(`object`: Expression, body: Statement): WithStatement_ = js.native

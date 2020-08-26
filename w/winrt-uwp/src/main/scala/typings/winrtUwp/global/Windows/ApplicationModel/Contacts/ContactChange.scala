@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactChange")
 @js.native
 abstract class ContactChange ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChange {
-  /** Gets a value that indicates the type of change that occurred. */
-  /* CompleteClass */
-  override var changeType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChangeType = js.native
-  /** Gets the Contact object that changed. */
-  /* CompleteClass */
-  override var contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactChange
 

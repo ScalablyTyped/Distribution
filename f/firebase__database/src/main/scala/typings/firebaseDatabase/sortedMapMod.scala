@@ -24,17 +24,12 @@ object sortedMapMod extends js.Object {
       *
       * @return {!LLRBEmptyNode} The node copy.
       */
-    def copy(): LLRBEmptyNode[K, V] = js.native
-    def copy(key: K): LLRBEmptyNode[K, V] = js.native
-    def copy(key: K, value: V): LLRBEmptyNode[K, V] = js.native
-    def copy(key: K, value: V, color: Boolean): LLRBEmptyNode[K, V] = js.native
-    def copy(key: K, value: V, color: Boolean, left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V])): LLRBEmptyNode[K, V] = js.native
     def copy(
-      key: K,
-      value: V,
-      color: Boolean,
-      left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]),
-      right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V])
+      key: K | Null,
+      value: V | Null,
+      color: Boolean | Null,
+      left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null,
+      right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null
     ): LLRBEmptyNode[K, V] = js.native
     /**
       * @return {number} The total number of nodes in the tree.
@@ -96,7 +91,6 @@ object sortedMapMod extends js.Object {
   
   @js.native
   class LLRBNode[K, V] protected () extends js.Object {
-    def this(key: K, value: V) = this()
     /**
       * @template K, V
       * @param {!K} key Key associated with this node.
@@ -105,17 +99,22 @@ object sortedMapMod extends js.Object {
       * @param {?(LLRBNode|LLRBEmptyNode)=} left Left child.
       * @param {?(LLRBNode|LLRBEmptyNode)=} right Right child.
       */
+    def this(key: K, value: V) = this()
     def this(key: K, value: V, color: Boolean) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBNode[K, V]) = this()
+    def this(key: K, value: V, color: Boolean, left: js.UndefOr[scala.Nothing], right: LLRBEmptyNode[K, V]) = this()
+    def this(key: K, value: V, color: Boolean, left: js.UndefOr[scala.Nothing], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: Null, right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: Null, right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBEmptyNode[K, V], right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBEmptyNode[K, V], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBNode[K, V], right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Boolean, left: LLRBNode[K, V], right: LLRBNode[K, V]) = this()
+    def this(key: K, value: V, color: Null, left: js.UndefOr[scala.Nothing], right: LLRBEmptyNode[K, V]) = this()
+    def this(key: K, value: V, color: Null, left: js.UndefOr[scala.Nothing], right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: Null, right: LLRBEmptyNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: Null, right: LLRBNode[K, V]) = this()
     def this(key: K, value: V, color: Null, left: LLRBEmptyNode[K, V], right: LLRBEmptyNode[K, V]) = this()
@@ -189,17 +188,12 @@ object sortedMapMod extends js.Object {
       * @param {?LLRBNode|LLRBEmptyNode} right New right child for the node, or null.
       * @return {!LLRBNode} The node copy.
       */
-    def copy(): LLRBNode[K, V] = js.native
-    def copy(key: K): LLRBNode[K, V] = js.native
-    def copy(key: K, value: V): LLRBNode[K, V] = js.native
-    def copy(key: K, value: V, color: Boolean): LLRBNode[K, V] = js.native
-    def copy(key: K, value: V, color: Boolean, left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V])): LLRBNode[K, V] = js.native
     def copy(
-      key: K,
-      value: V,
-      color: Boolean,
-      left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]),
-      right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V])
+      key: K | Null,
+      value: V | Null,
+      color: Boolean | Null,
+      left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null,
+      right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) | Null
     ): LLRBNode[K, V] = js.native
     /**
       * @return {number} The total number of nodes in the tree.

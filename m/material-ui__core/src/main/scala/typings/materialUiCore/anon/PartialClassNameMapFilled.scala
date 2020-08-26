@@ -24,36 +24,74 @@ trait PartialClassNameMapFilled extends js.Object {
 
 object PartialClassNameMapFilled {
   @scala.inline
-  def apply(
-    adornedEnd: String = null,
-    adornedStart: String = null,
-    disabled: String = null,
-    error: String = null,
-    focused: String = null,
-    input: String = null,
-    inputAdornedEnd: String = null,
-    inputAdornedStart: String = null,
-    inputMarginDense: String = null,
-    inputMultiline: String = null,
-    multiline: String = null,
-    root: String = null,
-    underline: String = null
-  ): PartialClassNameMapFilled = {
+  def apply(): PartialClassNameMapFilled = {
     val __obj = js.Dynamic.literal()
-    if (adornedEnd != null) __obj.updateDynamic("adornedEnd")(adornedEnd.asInstanceOf[js.Any])
-    if (adornedStart != null) __obj.updateDynamic("adornedStart")(adornedStart.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputAdornedEnd != null) __obj.updateDynamic("inputAdornedEnd")(inputAdornedEnd.asInstanceOf[js.Any])
-    if (inputAdornedStart != null) __obj.updateDynamic("inputAdornedStart")(inputAdornedStart.asInstanceOf[js.Any])
-    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense.asInstanceOf[js.Any])
-    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline.asInstanceOf[js.Any])
-    if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapFilled]
   }
+  @scala.inline
+  implicit class PartialClassNameMapFilledOps[Self <: PartialClassNameMapFilled] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdornedEnd(value: String): Self = this.set("adornedEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdornedEnd: Self = this.set("adornedEnd", js.undefined)
+    @scala.inline
+    def setAdornedStart(value: String): Self = this.set("adornedStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdornedStart: Self = this.set("adornedStart", js.undefined)
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFocused(value: String): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocused: Self = this.set("focused", js.undefined)
+    @scala.inline
+    def setInput(value: String): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setInputAdornedEnd(value: String): Self = this.set("inputAdornedEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAdornedEnd: Self = this.set("inputAdornedEnd", js.undefined)
+    @scala.inline
+    def setInputAdornedStart(value: String): Self = this.set("inputAdornedStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAdornedStart: Self = this.set("inputAdornedStart", js.undefined)
+    @scala.inline
+    def setInputMarginDense(value: String): Self = this.set("inputMarginDense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMarginDense: Self = this.set("inputMarginDense", js.undefined)
+    @scala.inline
+    def setInputMultiline(value: String): Self = this.set("inputMultiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMultiline: Self = this.set("inputMultiline", js.undefined)
+    @scala.inline
+    def setMultiline(value: String): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setUnderline(value: String): Self = this.set("underline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderline: Self = this.set("underline", js.undefined)
+  }
+  
 }
 

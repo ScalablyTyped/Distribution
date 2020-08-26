@@ -18,11 +18,30 @@ trait Layer extends js.Object {
 
 object Layer {
   @scala.inline
-  def apply(Arn: LayerVersionArn = null, CodeSize: js.UndefOr[Long] = js.undefined): Layer = {
+  def apply(): Layer = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
+  @scala.inline
+  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: LayerVersionArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCodeSize(value: Long): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
+  }
+  
 }
 

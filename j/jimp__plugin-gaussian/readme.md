@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-gaussian
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 gaussian blur an image.
@@ -10,9 +10,9 @@ gaussian blur an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-gaussian |
 | Keywords           | - |
-| # releases         | 66 |
+| # releases         | 65 |
 | # dependents       | 1 |
-| # downloads        | 14017337 |
+| # downloads        | 14392337 |
 | # stars            | 0 |
 
 ## Links

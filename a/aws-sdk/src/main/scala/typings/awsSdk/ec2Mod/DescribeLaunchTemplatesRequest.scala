@@ -34,22 +34,52 @@ trait DescribeLaunchTemplatesRequest extends js.Object {
 
 object DescribeLaunchTemplatesRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    LaunchTemplateIds: LaunchTemplateIdStringList = null,
-    LaunchTemplateNames: LaunchTemplateNameStringList = null,
-    MaxResults: js.UndefOr[DescribeLaunchTemplatesMaxResults] = js.undefined,
-    NextToken: String = null
-  ): DescribeLaunchTemplatesRequest = {
+  def apply(): DescribeLaunchTemplatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (LaunchTemplateIds != null) __obj.updateDynamic("LaunchTemplateIds")(LaunchTemplateIds.asInstanceOf[js.Any])
-    if (LaunchTemplateNames != null) __obj.updateDynamic("LaunchTemplateNames")(LaunchTemplateNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLaunchTemplatesRequest]
   }
+  @scala.inline
+  implicit class DescribeLaunchTemplatesRequestOps[Self <: DescribeLaunchTemplatesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setLaunchTemplateIdsVarargs(value: LaunchTemplateId*): Self = this.set("LaunchTemplateIds", js.Array(value :_*))
+    @scala.inline
+    def setLaunchTemplateIds(value: LaunchTemplateIdStringList): Self = this.set("LaunchTemplateIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateIds: Self = this.set("LaunchTemplateIds", js.undefined)
+    @scala.inline
+    def setLaunchTemplateNamesVarargs(value: LaunchTemplateName*): Self = this.set("LaunchTemplateNames", js.Array(value :_*))
+    @scala.inline
+    def setLaunchTemplateNames(value: LaunchTemplateNameStringList): Self = this.set("LaunchTemplateNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateNames: Self = this.set("LaunchTemplateNames", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeLaunchTemplatesMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

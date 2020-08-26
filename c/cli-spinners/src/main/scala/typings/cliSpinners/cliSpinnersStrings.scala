@@ -25,6 +25,9 @@ object cliSpinnersStrings {
   sealed trait balloon2 extends SpinnerName
   
   @js.native
+  sealed trait betaWave extends SpinnerName
+  
+  @js.native
   sealed trait bounce extends SpinnerName
   
   @js.native
@@ -88,6 +91,9 @@ object cliSpinnersStrings {
   sealed trait dots8 extends SpinnerName
   
   @js.native
+  sealed trait dots8Bit extends SpinnerName
+  
+  @js.native
   sealed trait dots9 extends SpinnerName
   
   @js.native
@@ -122,6 +128,9 @@ object cliSpinnersStrings {
   
   @js.native
   sealed trait line2 extends SpinnerName
+  
+  @js.native
+  sealed trait material extends SpinnerName
   
   @js.native
   sealed trait monkey extends SpinnerName
@@ -226,6 +235,8 @@ object cliSpinnersStrings {
   @scala.inline
   def balloon2: balloon2 = "balloon2".asInstanceOf[balloon2]
   @scala.inline
+  def betaWave: betaWave = "betaWave".asInstanceOf[betaWave]
+  @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   @scala.inline
   def bouncingBall: bouncingBall = "bouncingBall".asInstanceOf[bouncingBall]
@@ -268,6 +279,8 @@ object cliSpinnersStrings {
   @scala.inline
   def dots8: dots8 = "dots8".asInstanceOf[dots8]
   @scala.inline
+  def dots8Bit: dots8Bit = "dots8Bit".asInstanceOf[dots8Bit]
+  @scala.inline
   def dots9: dots9 = "dots9".asInstanceOf[dots9]
   @scala.inline
   def dqpb: dqpb = "dqpb".asInstanceOf[dqpb]
@@ -291,6 +304,8 @@ object cliSpinnersStrings {
   def line: line = "line".asInstanceOf[line]
   @scala.inline
   def line2: line2 = "line2".asInstanceOf[line2]
+  @scala.inline
+  def material: material = "material".asInstanceOf[material]
   @scala.inline
   def monkey: monkey = "monkey".asInstanceOf[monkey]
   @scala.inline

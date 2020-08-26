@@ -25,11 +25,30 @@ trait SchemaBasicScaling extends js.Object {
 
 object SchemaBasicScaling {
   @scala.inline
-  def apply(idleTimeout: String = null, maxInstances: js.UndefOr[Double] = js.undefined): SchemaBasicScaling = {
+  def apply(): SchemaBasicScaling = {
     val __obj = js.Dynamic.literal()
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxInstances)) __obj.updateDynamic("maxInstances")(maxInstances.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicScaling]
   }
+  @scala.inline
+  implicit class SchemaBasicScalingOps[Self <: SchemaBasicScaling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdleTimeout(value: String): Self = this.set("idleTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleTimeout: Self = this.set("idleTimeout", js.undefined)
+    @scala.inline
+    def setMaxInstances(value: Double): Self = this.set("maxInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInstances: Self = this.set("maxInstances", js.undefined)
+  }
+  
 }
 

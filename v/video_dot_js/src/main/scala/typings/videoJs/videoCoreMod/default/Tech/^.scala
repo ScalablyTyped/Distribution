@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
 class ^ ()
   extends typings.videoJs.mod.videojs.Tech {
   def this(options: js.Any) = this()
+  def this(options: js.UndefOr[scala.Nothing], ready: ReadyCallback) = this()
   def this(options: js.Any, ready: ReadyCallback) = this()
 }
 
@@ -43,7 +44,11 @@ object ^
   * @param ready
   *        Callback function to call when the `HTML5` Tech is ready.
   */
-Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options */ js.Any, typings.videoJs.mod.videojs.Tech]) with (Instantiable2[/* options */ js.Any, /* ready */ ReadyCallback, typings.videoJs.mod.videojs.Tech])
+Instantiable0[typings.videoJs.mod.videojs.Tech]) with (Instantiable1[/* options */ js.Any, typings.videoJs.mod.videojs.Tech]) with (Instantiable2[/* options */ js.Any, /* ready */ ReadyCallback, typings.videoJs.mod.videojs.Tech]) with (Instantiable2[
+        /* options */ js.UndefOr[scala.Nothing], 
+        /* ready */ ReadyCallback, 
+        typings.videoJs.mod.videojs.Tech
+      ])
     ] {
   /**
     * Check if the tech can support the given source

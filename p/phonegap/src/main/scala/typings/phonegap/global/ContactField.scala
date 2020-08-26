@@ -10,12 +10,6 @@ import scala.scalajs.js.annotation._
 class ContactField protected ()
   extends typings.phonegap.ContactField {
   def this(`type`: String, calue: String, perf: Boolean) = this()
-  /* CompleteClass */
-  override var pref: Boolean = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /* CompleteClass */
-  override var value: String = js.native
 }
 
 @JSGlobal("ContactField")

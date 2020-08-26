@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-table.react-table.TableInstance<D> & {  column  :react-table.react-table.ColumnInstance<D>,   row  :react-table.react-table.Row<D>,   cell  :react-table.react-table.Cell<D, V>,   value  :react-table.react-table.CellValue<V>} */
+/* Inlined react-table.react-table.TableInstance<D> & {  column :react-table.react-table.ColumnInstance<D>,   row :react-table.react-table.Row<D>,   cell :react-table.react-table.Cell<D, V>,   value :react-table.react-table.CellValue<V>} */
 @js.native
 trait CellProps[D /* <: js.Object */, V] extends js.Object {
   var allColumns: js.Array[ColumnInstance[D]] = js.native

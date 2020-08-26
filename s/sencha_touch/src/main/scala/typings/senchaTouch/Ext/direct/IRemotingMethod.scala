@@ -2,121 +2,121 @@ package typings.senchaTouch.Ext.direct
 
 import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRemotingMethod extends IBase {
   /** [Method] Takes the arguments for the Direct function and splits the arguments from the scope and the callback
     * @param args Array The arguments passed to the direct call
     * @returns Object An object with 3 properties, args, callback &amp; scope.
     */
-  var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], _]] = js.undefined
+  var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], _]] = js.native
   /** [Method] Returns the value of formHandler
     * @returns Object
     */
-  var getFormHandler: js.UndefOr[js.Function0[_]] = js.undefined
+  var getFormHandler: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of len
     * @returns Object
     */
-  var getLen: js.UndefOr[js.Function0[_]] = js.undefined
+  var getLen: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of name
     * @returns Object
     */
-  var getName: js.UndefOr[js.Function0[_]] = js.undefined
+  var getName: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of ordered
     * @returns Boolean
     */
-  var getOrdered: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getOrdered: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of params
     * @returns Object
     */
-  var getParams: js.UndefOr[js.Function0[_]] = js.undefined
+  var getParams: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Sets the value of formHandler
     * @param formHandler Object The new value.
     */
-  var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of len
     * @param len Object The new value.
     */
-  var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of name
     * @param name Object The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of ordered
     * @param ordered Boolean The new value.
     */
-  var setOrdered: js.UndefOr[js.Function1[/* ordered */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setOrdered: js.UndefOr[js.Function1[/* ordered */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of params
     * @param params Object The new value.
     */
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object IRemotingMethod {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getCallData: /* args */ js.UndefOr[Array] => _ = null,
-    getFormHandler: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getLen: () => _ = null,
-    getName: () => _ = null,
-    getOrdered: () => Boolean = null,
-    getParams: () => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    setFormHandler: /* formHandler */ js.UndefOr[js.Any] => Unit = null,
-    setLen: /* len */ js.UndefOr[js.Any] => Unit = null,
-    setName: /* name */ js.UndefOr[js.Any] => Unit = null,
-    setOrdered: /* ordered */ js.UndefOr[Boolean] => Unit = null,
-    setParams: /* params */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IRemotingMethod = {
+  def apply(): IRemotingMethod = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getCallData != null) __obj.updateDynamic("getCallData")(js.Any.fromFunction1(getCallData))
-    if (getFormHandler != null) __obj.updateDynamic("getFormHandler")(js.Any.fromFunction0(getFormHandler))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getLen != null) __obj.updateDynamic("getLen")(js.Any.fromFunction0(getLen))
-    if (getName != null) __obj.updateDynamic("getName")(js.Any.fromFunction0(getName))
-    if (getOrdered != null) __obj.updateDynamic("getOrdered")(js.Any.fromFunction0(getOrdered))
-    if (getParams != null) __obj.updateDynamic("getParams")(js.Any.fromFunction0(getParams))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setFormHandler != null) __obj.updateDynamic("setFormHandler")(js.Any.fromFunction1(setFormHandler))
-    if (setLen != null) __obj.updateDynamic("setLen")(js.Any.fromFunction1(setLen))
-    if (setName != null) __obj.updateDynamic("setName")(js.Any.fromFunction1(setName))
-    if (setOrdered != null) __obj.updateDynamic("setOrdered")(js.Any.fromFunction1(setOrdered))
-    if (setParams != null) __obj.updateDynamic("setParams")(js.Any.fromFunction1(setParams))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRemotingMethod]
   }
+  @scala.inline
+  implicit class IRemotingMethodOps[Self <: IRemotingMethod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetCallData(value: /* args */ js.UndefOr[Array] => _): Self = this.set("getCallData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetCallData: Self = this.set("getCallData", js.undefined)
+    @scala.inline
+    def setGetFormHandler(value: () => _): Self = this.set("getFormHandler", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetFormHandler: Self = this.set("getFormHandler", js.undefined)
+    @scala.inline
+    def setGetLen(value: () => _): Self = this.set("getLen", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLen: Self = this.set("getLen", js.undefined)
+    @scala.inline
+    def setGetName(value: () => _): Self = this.set("getName", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetName: Self = this.set("getName", js.undefined)
+    @scala.inline
+    def setGetOrdered(value: () => Boolean): Self = this.set("getOrdered", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOrdered: Self = this.set("getOrdered", js.undefined)
+    @scala.inline
+    def setGetParams(value: () => _): Self = this.set("getParams", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetParams: Self = this.set("getParams", js.undefined)
+    @scala.inline
+    def setSetFormHandler(value: /* formHandler */ js.UndefOr[js.Any] => Unit): Self = this.set("setFormHandler", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetFormHandler: Self = this.set("setFormHandler", js.undefined)
+    @scala.inline
+    def setSetLen(value: /* len */ js.UndefOr[js.Any] => Unit): Self = this.set("setLen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLen: Self = this.set("setLen", js.undefined)
+    @scala.inline
+    def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetName: Self = this.set("setName", js.undefined)
+    @scala.inline
+    def setSetOrdered(value: /* ordered */ js.UndefOr[Boolean] => Unit): Self = this.set("setOrdered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetOrdered: Self = this.set("setOrdered", js.undefined)
+    @scala.inline
+    def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("setParams", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetParams: Self = this.set("setParams", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object idate extends js.Object {
   def apply(): js.Any = js.native
+  def apply(format: js.UndefOr[scala.Nothing], timestamp: js.Any): js.Any = js.native
   def apply(format: js.Any): js.Any = js.native
   def apply(format: js.Any, timestamp: js.Any): js.Any = js.native
 }

@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDiffNavigatorOptions extends js.Object {
-  val alwaysRevealFirst: js.UndefOr[Boolean] = js.undefined
-  val followsCaret: js.UndefOr[Boolean] = js.undefined
-  val ignoreCharChanges: js.UndefOr[Boolean] = js.undefined
+  val alwaysRevealFirst: js.UndefOr[Boolean] = js.native
+  val followsCaret: js.UndefOr[Boolean] = js.native
+  val ignoreCharChanges: js.UndefOr[Boolean] = js.native
 }
 
 object IDiffNavigatorOptions {
   @scala.inline
-  def apply(
-    alwaysRevealFirst: js.UndefOr[Boolean] = js.undefined,
-    followsCaret: js.UndefOr[Boolean] = js.undefined,
-    ignoreCharChanges: js.UndefOr[Boolean] = js.undefined
-  ): IDiffNavigatorOptions = {
+  def apply(): IDiffNavigatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysRevealFirst)) __obj.updateDynamic("alwaysRevealFirst")(alwaysRevealFirst.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(followsCaret)) __obj.updateDynamic("followsCaret")(followsCaret.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCharChanges)) __obj.updateDynamic("ignoreCharChanges")(ignoreCharChanges.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDiffNavigatorOptions]
   }
+  @scala.inline
+  implicit class IDiffNavigatorOptionsOps[Self <: IDiffNavigatorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlwaysRevealFirst(value: Boolean): Self = this.set("alwaysRevealFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysRevealFirst: Self = this.set("alwaysRevealFirst", js.undefined)
+    @scala.inline
+    def setFollowsCaret(value: Boolean): Self = this.set("followsCaret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowsCaret: Self = this.set("followsCaret", js.undefined)
+    @scala.inline
+    def setIgnoreCharChanges(value: Boolean): Self = this.set("ignoreCharChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreCharChanges: Self = this.set("ignoreCharChanges", js.undefined)
+  }
+  
 }
 

@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Fullhd extends js.Object {
-  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var touch: js.UndefOr[ColumnBreakpointOptions] = js.undefined
-  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.undefined
+  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var touch: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.native
 }
 
 object Fullhd {
   @scala.inline
-  def apply(
-    desktop: ColumnBreakpointOptions = null,
-    fullhd: ColumnBreakpointOptions = null,
-    mobile: ColumnBreakpointOptions = null,
-    tablet: ColumnBreakpointOptions = null,
-    touch: ColumnBreakpointOptions = null,
-    widescreen: ColumnBreakpointOptions = null
-  ): Fullhd = {
+  def apply(): Fullhd = {
     val __obj = js.Dynamic.literal()
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (fullhd != null) __obj.updateDynamic("fullhd")(fullhd.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
-    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fullhd]
   }
+  @scala.inline
+  implicit class FullhdOps[Self <: Fullhd] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesktop(value: ColumnBreakpointOptions): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    @scala.inline
+    def setFullhd(value: ColumnBreakpointOptions): Self = this.set("fullhd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullhd: Self = this.set("fullhd", js.undefined)
+    @scala.inline
+    def setMobile(value: ColumnBreakpointOptions): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setTablet(value: ColumnBreakpointOptions): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablet: Self = this.set("tablet", js.undefined)
+    @scala.inline
+    def setTouch(value: ColumnBreakpointOptions): Self = this.set("touch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouch: Self = this.set("touch", js.undefined)
+    @scala.inline
+    def setWidescreen(value: ColumnBreakpointOptions): Self = this.set("widescreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidescreen: Self = this.set("widescreen", js.undefined)
+  }
+  
 }
 

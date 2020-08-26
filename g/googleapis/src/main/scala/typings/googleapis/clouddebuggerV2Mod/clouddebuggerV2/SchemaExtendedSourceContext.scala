@@ -23,11 +23,30 @@ trait SchemaExtendedSourceContext extends js.Object {
 
 object SchemaExtendedSourceContext {
   @scala.inline
-  def apply(context: SchemaSourceContext = null, labels: StringDictionary[String] = null): SchemaExtendedSourceContext = {
+  def apply(): SchemaExtendedSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedSourceContext]
   }
+  @scala.inline
+  implicit class SchemaExtendedSourceContextOps[Self <: SchemaExtendedSourceContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: SchemaSourceContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+  }
+  
 }
 

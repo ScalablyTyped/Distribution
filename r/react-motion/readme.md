@@ -11,7 +11,7 @@ A spring that solves your animation problems.
 | Keywords           | react, component, react-component, transitiongroup, spring, tween, motion, animation, transition, ui |
 | # releases         | 1 |
 | # dependents       | 577 |
-| # downloads        | 18035775 |
+| # downloads        | 18280654 |
 | # stars            | 43 |
 
 ## Links

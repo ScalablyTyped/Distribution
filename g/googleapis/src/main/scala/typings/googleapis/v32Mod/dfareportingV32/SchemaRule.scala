@@ -29,12 +29,34 @@ trait SchemaRule extends js.Object {
 
 object SchemaRule {
   @scala.inline
-  def apply(assetId: String = null, name: String = null, targetingTemplateId: String = null): SchemaRule = {
+  def apply(): SchemaRule = {
     val __obj = js.Dynamic.literal()
-    if (assetId != null) __obj.updateDynamic("assetId")(assetId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (targetingTemplateId != null) __obj.updateDynamic("targetingTemplateId")(targetingTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRule]
   }
+  @scala.inline
+  implicit class SchemaRuleOps[Self <: SchemaRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetId(value: String): Self = this.set("assetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetId: Self = this.set("assetId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTargetingTemplateId(value: String): Self = this.set("targetingTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetingTemplateId: Self = this.set("targetingTemplateId", js.undefined)
+  }
+  
 }
 

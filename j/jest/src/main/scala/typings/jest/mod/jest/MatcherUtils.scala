@@ -24,6 +24,7 @@ trait MatcherUtils
     *  This is a deep-equality function that will return true if two objects have the same values (recursively).
     */
   def equals(a: js.Any, b: js.Any): Boolean = js.native
+  def equals(a: js.Any, b: js.Any, customTesters: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester]): Boolean = js.native
   def equals(a: js.Any, b: js.Any, customTesters: js.Array[EqualityTester], strictCheck: Boolean): Boolean = js.native
 }

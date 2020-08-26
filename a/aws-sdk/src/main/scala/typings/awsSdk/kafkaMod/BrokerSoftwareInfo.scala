@@ -28,16 +28,34 @@ trait BrokerSoftwareInfo extends js.Object {
 
 object BrokerSoftwareInfo {
   @scala.inline
-  def apply(
-    ConfigurationArn: string = null,
-    ConfigurationRevision: js.UndefOr[long] = js.undefined,
-    KafkaVersion: string = null
-  ): BrokerSoftwareInfo = {
+  def apply(): BrokerSoftwareInfo = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationArn != null) __obj.updateDynamic("ConfigurationArn")(ConfigurationArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConfigurationRevision)) __obj.updateDynamic("ConfigurationRevision")(ConfigurationRevision.get.asInstanceOf[js.Any])
-    if (KafkaVersion != null) __obj.updateDynamic("KafkaVersion")(KafkaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerSoftwareInfo]
   }
+  @scala.inline
+  implicit class BrokerSoftwareInfoOps[Self <: BrokerSoftwareInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationArn(value: string): Self = this.set("ConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationArn: Self = this.set("ConfigurationArn", js.undefined)
+    @scala.inline
+    def setConfigurationRevision(value: long): Self = this.set("ConfigurationRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationRevision: Self = this.set("ConfigurationRevision", js.undefined)
+    @scala.inline
+    def setKafkaVersion(value: string): Self = this.set("KafkaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafkaVersion: Self = this.set("KafkaVersion", js.undefined)
+  }
+  
 }
 

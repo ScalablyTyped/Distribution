@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeCastExpression_
   extends Node
      with Expression
      with ExpressionWrapper
      with Flow {
-  var expression: Expression
-  var typeAnnotation: FlowTypeAnnotation
+  var expression: Expression = js.native
+  var typeAnnotation: FlowTypeAnnotation = js.native
   @JSName("type")
-  var type_TypeCastExpression_ : TypeCastExpression
+  var type_TypeCastExpression_ : TypeCastExpression = js.native
 }
 
 object TypeCastExpression_ {
@@ -24,17 +25,30 @@ object TypeCastExpression_ {
     loc: SourceLocation,
     start: Double,
     `type`: TypeCastExpression,
-    typeAnnotation: FlowTypeAnnotation,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
+    typeAnnotation: FlowTypeAnnotation
   ): TypeCastExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeCastExpression_]
   }
+  @scala.inline
+  implicit class TypeCastExpression_Ops[Self <: TypeCastExpression_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpression(value: Expression): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: TypeCastExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeAnnotation(value: FlowTypeAnnotation): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
+  }
+  
 }
 

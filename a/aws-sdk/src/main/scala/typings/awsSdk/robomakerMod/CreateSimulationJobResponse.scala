@@ -82,46 +82,100 @@ trait CreateSimulationJobResponse extends js.Object {
 
 object CreateSimulationJobResponse {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    clientRequestToken: ClientRequestToken = null,
-    compute: ComputeResponse = null,
-    dataSources: DataSources = null,
-    failureBehavior: FailureBehavior = null,
-    failureCode: SimulationJobErrorCode = null,
-    iamRole: IamRole = null,
-    lastStartedAt: LastStartedAt = null,
-    lastUpdatedAt: LastUpdatedAt = null,
-    loggingConfig: LoggingConfig = null,
-    maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined,
-    outputLocation: OutputLocation = null,
-    robotApplications: RobotApplicationConfigs = null,
-    simulationApplications: SimulationApplicationConfigs = null,
-    simulationTimeMillis: js.UndefOr[SimulationTimeMillis] = js.undefined,
-    status: SimulationJobStatus = null,
-    tags: TagMap = null,
-    vpcConfig: VPCConfigResponse = null
-  ): CreateSimulationJobResponse = {
+  def apply(): CreateSimulationJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (compute != null) __obj.updateDynamic("compute")(compute.asInstanceOf[js.Any])
-    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources.asInstanceOf[js.Any])
-    if (failureBehavior != null) __obj.updateDynamic("failureBehavior")(failureBehavior.asInstanceOf[js.Any])
-    if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
-    if (iamRole != null) __obj.updateDynamic("iamRole")(iamRole.asInstanceOf[js.Any])
-    if (lastStartedAt != null) __obj.updateDynamic("lastStartedAt")(lastStartedAt.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxJobDurationInSeconds)) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds.get.asInstanceOf[js.Any])
-    if (outputLocation != null) __obj.updateDynamic("outputLocation")(outputLocation.asInstanceOf[js.Any])
-    if (robotApplications != null) __obj.updateDynamic("robotApplications")(robotApplications.asInstanceOf[js.Any])
-    if (simulationApplications != null) __obj.updateDynamic("simulationApplications")(simulationApplications.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulationTimeMillis)) __obj.updateDynamic("simulationTimeMillis")(simulationTimeMillis.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSimulationJobResponse]
   }
+  @scala.inline
+  implicit class CreateSimulationJobResponseOps[Self <: CreateSimulationJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setCompute(value: ComputeResponse): Self = this.set("compute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompute: Self = this.set("compute", js.undefined)
+    @scala.inline
+    def setDataSourcesVarargs(value: DataSource*): Self = this.set("dataSources", js.Array(value :_*))
+    @scala.inline
+    def setDataSources(value: DataSources): Self = this.set("dataSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSources: Self = this.set("dataSources", js.undefined)
+    @scala.inline
+    def setFailureBehavior(value: FailureBehavior): Self = this.set("failureBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureBehavior: Self = this.set("failureBehavior", js.undefined)
+    @scala.inline
+    def setFailureCode(value: SimulationJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    @scala.inline
+    def setIamRole(value: IamRole): Self = this.set("iamRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRole: Self = this.set("iamRole", js.undefined)
+    @scala.inline
+    def setLastStartedAt(value: LastStartedAt): Self = this.set("lastStartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStartedAt: Self = this.set("lastStartedAt", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: LoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setMaxJobDurationInSeconds(value: JobDuration): Self = this.set("maxJobDurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxJobDurationInSeconds: Self = this.set("maxJobDurationInSeconds", js.undefined)
+    @scala.inline
+    def setOutputLocation(value: OutputLocation): Self = this.set("outputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocation: Self = this.set("outputLocation", js.undefined)
+    @scala.inline
+    def setRobotApplicationsVarargs(value: RobotApplicationConfig*): Self = this.set("robotApplications", js.Array(value :_*))
+    @scala.inline
+    def setRobotApplications(value: RobotApplicationConfigs): Self = this.set("robotApplications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRobotApplications: Self = this.set("robotApplications", js.undefined)
+    @scala.inline
+    def setSimulationApplicationsVarargs(value: SimulationApplicationConfig*): Self = this.set("simulationApplications", js.Array(value :_*))
+    @scala.inline
+    def setSimulationApplications(value: SimulationApplicationConfigs): Self = this.set("simulationApplications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulationApplications: Self = this.set("simulationApplications", js.undefined)
+    @scala.inline
+    def setSimulationTimeMillis(value: SimulationTimeMillis): Self = this.set("simulationTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulationTimeMillis: Self = this.set("simulationTimeMillis", js.undefined)
+    @scala.inline
+    def setStatus(value: SimulationJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VPCConfigResponse): Self = this.set("vpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("vpcConfig", js.undefined)
+  }
+  
 }
 

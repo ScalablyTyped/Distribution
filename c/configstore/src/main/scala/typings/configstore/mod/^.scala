@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends Configstore {
   def this(packageName: String) = this()
   def this(packageName: String, defaults: js.Any) = this()
+  def this(packageName: String, defaults: js.UndefOr[scala.Nothing], options: ConfigstoreOptions) = this()
   def this(packageName: String, defaults: js.Any, options: ConfigstoreOptions) = this()
 }
 

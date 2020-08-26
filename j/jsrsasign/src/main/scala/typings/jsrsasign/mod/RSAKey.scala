@@ -10,54 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsrsasign", "RSAKey")
 @js.native
 class RSAKey ()
-  extends typings.jsrsasign.jsrsasign.RSAKey {
-  /**
-    * read an ASN.1 hexadecimal string of X.509 RSA public key certificate
-    * @param h hexadecimal string of X.509 RSA public key certificate
-    * @param nthPKI nth index of publicKeyInfo. (DEFAULT: 6 for X509v3)
-    */
-  /* CompleteClass */
-  override def readCertPubKeyHex(h: String, nthPKI: Double): Unit = js.native
-  /**
-    * read an ASN.1 hexadecimal string of PKCS#1/5 plain RSA private key
-    * @param h hexadecimal string of PKCS#1/5 plain RSA private key
-    */
-  /* CompleteClass */
-  override def readPKCS5PrvKeyHex(h: String): Unit = js.native
-  /**
-    * read an ASN.1 hexadecimal string of PKCS#5 RSA public key
-    * @param h hexadecimal string of PKCS#5 public key
-    */
-  /* CompleteClass */
-  override def readPKCS5PubKeyHex(h: String): Unit = js.native
-  /**
-    * read an ASN.1 hexadecimal string of PKCS#8 plain RSA private key
-    * @param h hexadecimal string of PKCS#8 plain RSA private key
-    */
-  /* CompleteClass */
-  override def readPKCS8PrvKeyHex(h: String): Unit = js.native
-  /**
-    * read an ASN.1 hexadecimal string of PKCS#8 RSA public key
-    * @param h hexadecimal string of PKCS#8 public key
-    */
-  /* CompleteClass */
-  override def readPKCS8PubKeyHex(h: String): Unit = js.native
-  /**
-    * read PKCS#1 private key from a string
-    * @param keyPEM string of PKCS#1 private key.
-    */
-  /* CompleteClass */
-  override def readPrivateKeyFromPEMString(keyPEM: String): Unit = js.native
-  /**
-    * verifies a sigature for a message string with RSA public key.
-    * @param sMsg message string to be verified.
-    * @param hSig hexadecimal string of signature.
-    *             non-hexadecimal characters including new lines will be ignored.
-    * @return returns 1 if valid, otherwise 0
-    */
-  /* CompleteClass */
-  override def verify(sMsg: String, hSig: String): `0` | `1` = js.native
-}
+  extends typings.jsrsasign.jsrsasign.RSAKey
 
 /* static members */
 @JSImport("jsrsasign", "RSAKey")

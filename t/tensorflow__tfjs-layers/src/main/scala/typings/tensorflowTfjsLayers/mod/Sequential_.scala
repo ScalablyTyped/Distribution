@@ -23,6 +23,12 @@ object Sequential_ extends js.Object {
   var className: String = js.native
   /** @nocollapse */
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+  def fromConfig[T /* <: Serializable */](
+    cls: SerializableConstructor[T],
+    config: ConfigDict,
+    customObjects: js.UndefOr[scala.Nothing],
+    fastWeightInit: Boolean
+  ): T = js.native
   def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = js.native
   def fromConfig[T /* <: Serializable */](
     cls: SerializableConstructor[T],

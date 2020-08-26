@@ -27,7 +27,7 @@ package object ec2Mod {
   type AddressList = js.Array[typings.awsSdk.ec2Mod.Address]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.default__
-    - typings.awsSdk.awsSdkStrings.host_
+    - typings.awsSdk.awsSdkStrings.host__
     - java.lang.String
   */
   type Affinity = typings.awsSdk.ec2Mod._Affinity | java.lang.String
@@ -193,6 +193,7 @@ package object ec2Mod {
   */
   type CancelSpotInstanceRequestState = typings.awsSdk.ec2Mod._CancelSpotInstanceRequestState | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[typings.awsSdk.ec2Mod.CancelledSpotInstanceRequest]
+  type CapacityReservationGroupSet = js.Array[typings.awsSdk.ec2Mod.CapacityReservationGroup]
   type CapacityReservationId = java.lang.String
   type CapacityReservationIdSet = js.Array[typings.awsSdk.ec2Mod.CapacityReservationId]
   /* Rewritten from type alias, can be one of: 
@@ -207,6 +208,7 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.`Linux with SQL Server Standard`
     - typings.awsSdk.awsSdkStrings.`Linux with SQL Server Web`
     - typings.awsSdk.awsSdkStrings.`Linux with SQL Server Enterprise`
+    - typings.awsSdk.awsSdkStrings.`Windows BYOL`
     - java.lang.String
   */
   type CapacityReservationInstancePlatform = typings.awsSdk.ec2Mod._CapacityReservationInstancePlatform | java.lang.String
@@ -296,6 +298,7 @@ package object ec2Mod {
   type CoipPoolMaxResults = scala.Double
   type CoipPoolSet = js.Array[typings.awsSdk.ec2Mod.CoipPool]
   type ConnectionNotificationId = java.lang.String
+  type ConnectionNotificationIdsList = js.Array[typings.awsSdk.ec2Mod.ConnectionNotificationId]
   type ConnectionNotificationSet = js.Array[typings.awsSdk.ec2Mod.ConnectionNotification]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Enabled_
@@ -678,6 +681,7 @@ package object ec2Mod {
   type FreeTierEligibleFlag = scala.Boolean
   type GatewayType = typings.awsSdk.awsSdkStrings.ipsecDot1 | java.lang.String
   type GetCapacityReservationUsageRequestMaxResults = scala.Double
+  type GetGroupsForCapacityReservationRequestMaxResults = scala.Double
   type GetManagedPrefixListAssociationsMaxResults = scala.Double
   type GpuDeviceCount = scala.Double
   type GpuDeviceInfoList = js.Array[typings.awsSdk.ec2Mod.GpuDeviceInfo]
@@ -706,7 +710,7 @@ package object ec2Mod {
   type HostReservationSet = js.Array[typings.awsSdk.ec2Mod.HostReservation]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.dedicated_
-    - typings.awsSdk.awsSdkStrings.host_
+    - typings.awsSdk.awsSdkStrings.host__
     - java.lang.String
   */
   type HostTenancy = typings.awsSdk.ec2Mod._HostTenancy | java.lang.String
@@ -813,7 +817,7 @@ package object ec2Mod {
   */
   type InstanceHealthStatus = typings.awsSdk.ec2Mod._InstanceHealthStatus | java.lang.String
   type InstanceId = java.lang.String
-  type InstanceIdSet = js.Array[typings.awsSdk.ec2Mod.String]
+  type InstanceIdSet = js.Array[typings.awsSdk.ec2Mod.InstanceId]
   type InstanceIdStringList = js.Array[typings.awsSdk.ec2Mod.InstanceId]
   type InstanceIdsSet = js.Array[typings.awsSdk.ec2Mod.InstanceId]
   /* Rewritten from type alias, can be one of: 
@@ -971,6 +975,15 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.r6gDot8xlarge
     - typings.awsSdk.awsSdkStrings.r6gDot12xlarge
     - typings.awsSdk.awsSdkStrings.r6gDot16xlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDotmetal
+    - typings.awsSdk.awsSdkStrings.r6gdDotmedium
+    - typings.awsSdk.awsSdkStrings.r6gdDotlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDotxlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDot2xlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDot4xlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDot8xlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDot12xlarge
+    - typings.awsSdk.awsSdkStrings.r6gdDot16xlarge
     - typings.awsSdk.awsSdkStrings.x1Dot16xlarge
     - typings.awsSdk.awsSdkStrings.x1Dot32xlarge
     - typings.awsSdk.awsSdkStrings.x1eDotxlarge
@@ -1053,6 +1066,15 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.c6gDot8xlarge
     - typings.awsSdk.awsSdkStrings.c6gDot12xlarge
     - typings.awsSdk.awsSdkStrings.c6gDot16xlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDotmetal
+    - typings.awsSdk.awsSdkStrings.c6gdDotmedium
+    - typings.awsSdk.awsSdkStrings.c6gdDotlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDotxlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDot2xlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDot4xlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDot8xlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDot12xlarge
+    - typings.awsSdk.awsSdkStrings.c6gdDot16xlarge
     - typings.awsSdk.awsSdkStrings.cc1Dot4xlarge
     - typings.awsSdk.awsSdkStrings.cc2Dot8xlarge
     - typings.awsSdk.awsSdkStrings.g2Dot2xlarge
@@ -1184,6 +1206,15 @@ package object ec2Mod {
     - typings.awsSdk.awsSdkStrings.m6gDot8xlarge
     - typings.awsSdk.awsSdkStrings.m6gDot12xlarge
     - typings.awsSdk.awsSdkStrings.m6gDot16xlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDotmetal
+    - typings.awsSdk.awsSdkStrings.m6gdDotmedium
+    - typings.awsSdk.awsSdkStrings.m6gdDotlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDotxlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDot2xlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDot4xlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDot8xlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDot12xlarge
+    - typings.awsSdk.awsSdkStrings.m6gdDot16xlarge
     - java.lang.String
   */
   type InstanceType = typings.awsSdk.ec2Mod._InstanceType | java.lang.String
@@ -1436,7 +1467,7 @@ package object ec2Mod {
   type NetworkInterfacePermissionList = js.Array[typings.awsSdk.ec2Mod.NetworkInterfacePermission]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.pending__
-    - typings.awsSdk.awsSdkStrings.granted_
+    - typings.awsSdk.awsSdkStrings.granted__
     - typings.awsSdk.awsSdkStrings.revoking
     - typings.awsSdk.awsSdkStrings.revoked__
     - java.lang.String
@@ -1597,6 +1628,7 @@ package object ec2Mod {
   type ProductCodeValues = typings.awsSdk.ec2Mod._ProductCodeValues | java.lang.String
   type ProductDescriptionList = js.Array[typings.awsSdk.ec2Mod.String]
   type PropagatingVgwList = js.Array[typings.awsSdk.ec2Mod.PropagatingVgw]
+  type PublicIpAddress = java.lang.String
   type PublicIpStringList = js.Array[typings.awsSdk.ec2Mod.String]
   type PublicIpv4PoolIdStringList = js.Array[typings.awsSdk.ec2Mod.Ipv4PoolEc2Id]
   type PublicIpv4PoolRangeSet = js.Array[typings.awsSdk.ec2Mod.PublicIpv4PoolRange]
@@ -1950,7 +1982,7 @@ package object ec2Mod {
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.default__
     - typings.awsSdk.awsSdkStrings.dedicated_
-    - typings.awsSdk.awsSdkStrings.host_
+    - typings.awsSdk.awsSdkStrings.host__
     - java.lang.String
   */
   type Tenancy = typings.awsSdk.ec2Mod._Tenancy | java.lang.String

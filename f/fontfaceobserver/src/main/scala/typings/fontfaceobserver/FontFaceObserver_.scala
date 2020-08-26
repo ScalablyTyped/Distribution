@@ -12,6 +12,7 @@ trait FontFaceObserver_ extends js.Object {
     * @param timeout The default timeout for giving up on font loading is 3 seconds. You can increase or decrease this by passing a number of milliseconds.
     */
   def load(): js.Promise[Unit] = js.native
+  def load(testString: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[Unit] = js.native
   def load(testString: String): js.Promise[Unit] = js.native
   def load(testString: String, timeout: Double): js.Promise[Unit] = js.native
   def load(testString: Null, timeout: Double): js.Promise[Unit] = js.native

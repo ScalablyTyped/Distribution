@@ -11,12 +11,7 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends BrowsersImpl {
   def this(data: StringDictionary[js.Any]) = this()
   def this(data: StringDictionary[js.Any], options: js.Any) = this()
+  def this(data: StringDictionary[js.Any], options: js.UndefOr[scala.Nothing], browserslistOpts: Options) = this()
   def this(data: StringDictionary[js.Any], options: js.Any, browserslistOpts: Options) = this()
-  /* CompleteClass */
-  override def isSelected(browser: String): Boolean = js.native
-  /* CompleteClass */
-  override def parse(queries: Queries): js.Array[String] = js.native
-  /* CompleteClass */
-  override def prefix(browser: String): String = js.native
 }
 

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageChangedDeferral")
 @js.native
 abstract class ChatMessageChangedDeferral ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedDeferral {
-  /** Fires to indicate that the deferred change request has completed. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageChangedDeferral
 

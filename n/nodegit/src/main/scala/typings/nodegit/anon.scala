@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
-  /* Inlined node.NodeJS.EventEmitter & {start (): void} */
+  /* Inlined node.events.<global>.NodeJS.EventEmitter & {start (): void} */
   @js.native
   trait EventEmitterstartvoid extends js.Object {
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native

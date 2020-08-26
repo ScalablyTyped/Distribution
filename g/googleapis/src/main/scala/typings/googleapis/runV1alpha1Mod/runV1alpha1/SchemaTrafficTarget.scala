@@ -41,18 +41,38 @@ trait SchemaTrafficTarget extends js.Object {
 
 object SchemaTrafficTarget {
   @scala.inline
-  def apply(
-    configurationName: String = null,
-    name: String = null,
-    percent: js.UndefOr[Double] = js.undefined,
-    revisionName: String = null
-  ): SchemaTrafficTarget = {
+  def apply(): SchemaTrafficTarget = {
     val __obj = js.Dynamic.literal()
-    if (configurationName != null) __obj.updateDynamic("configurationName")(configurationName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(percent)) __obj.updateDynamic("percent")(percent.get.asInstanceOf[js.Any])
-    if (revisionName != null) __obj.updateDynamic("revisionName")(revisionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrafficTarget]
   }
+  @scala.inline
+  implicit class SchemaTrafficTargetOps[Self <: SchemaTrafficTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationName(value: String): Self = this.set("configurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationName: Self = this.set("configurationName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPercent(value: Double): Self = this.set("percent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercent: Self = this.set("percent", js.undefined)
+    @scala.inline
+    def setRevisionName(value: String): Self = this.set("revisionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionName: Self = this.set("revisionName", js.undefined)
+  }
+  
 }
 

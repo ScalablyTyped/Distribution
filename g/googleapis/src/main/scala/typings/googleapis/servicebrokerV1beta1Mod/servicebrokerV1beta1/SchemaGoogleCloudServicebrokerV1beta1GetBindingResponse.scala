@@ -47,24 +47,52 @@ trait SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse extends js.Object 
 
 object SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse {
   @scala.inline
-  def apply(
-    credentials: StringDictionary[js.Any] = null,
-    deploymentName: String = null,
-    description: String = null,
-    resourceName: String = null,
-    route_service_url: String = null,
-    syslog_drain_url: String = null,
-    volume_mounts: js.Array[StringDictionary[_]] = null
-  ): SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse = {
+  def apply(): SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (deploymentName != null) __obj.updateDynamic("deploymentName")(deploymentName.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (route_service_url != null) __obj.updateDynamic("route_service_url")(route_service_url.asInstanceOf[js.Any])
-    if (syslog_drain_url != null) __obj.updateDynamic("syslog_drain_url")(syslog_drain_url.asInstanceOf[js.Any])
-    if (volume_mounts != null) __obj.updateDynamic("volume_mounts")(volume_mounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicebrokerV1beta1GetBindingResponseOps[Self <: SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCredentials(value: StringDictionary[js.Any]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setDeploymentName(value: String): Self = this.set("deploymentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentName: Self = this.set("deploymentName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setRoute_service_url(value: String): Self = this.set("route_service_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute_service_url: Self = this.set("route_service_url", js.undefined)
+    @scala.inline
+    def setSyslog_drain_url(value: String): Self = this.set("syslog_drain_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyslog_drain_url: Self = this.set("syslog_drain_url", js.undefined)
+    @scala.inline
+    def setVolume_mountsVarargs(value: StringDictionary[js.Any]*): Self = this.set("volume_mounts", js.Array(value :_*))
+    @scala.inline
+    def setVolume_mounts(value: js.Array[StringDictionary[_]]): Self = this.set("volume_mounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume_mounts: Self = this.set("volume_mounts", js.undefined)
+  }
+  
 }
 

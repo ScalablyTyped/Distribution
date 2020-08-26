@@ -4,43 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SplitViewLayout extends FlexLayout {
   /**
     * Orientation of the views inside split
     */
-  var orientation: String
+  var orientation: String = js.native
   /**
     * SplitView height
     */
-  var splitViewHeight: Double | String
+  var splitViewHeight: Double | String = js.native
 }
 
 object SplitViewLayout {
   @scala.inline
-  def apply(
-    orientation: String,
-    splitViewHeight: Double | String,
-    alignContent: AlignContentType = null,
-    alignItems: AlignItemsType = null,
-    flexFlow: String = null,
-    flexWrap: FlexWrapType = null,
-    height: Double | String = null,
-    justifyContent: JustifyContentType = null,
-    position: PositionType = null,
-    textAlign: TextAlignType = null,
-    width: Double | String = null
-  ): SplitViewLayout = {
+  def apply(orientation: String, splitViewHeight: Double | String): SplitViewLayout = {
     val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any], splitViewHeight = splitViewHeight.asInstanceOf[js.Any])
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (flexFlow != null) __obj.updateDynamic("flexFlow")(flexFlow.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitViewLayout]
   }
+  @scala.inline
+  implicit class SplitViewLayoutOps[Self <: SplitViewLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSplitViewHeight(value: Double | String): Self = this.set("splitViewHeight", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -714,6 +714,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def getMetricsEventRate(): js.Promise[_] | Unit = js.native
+  def getMetricsEventRate(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsEventRate(params: GetMetricsEventRateParams): js.Promise[_] | Unit = js.native
   def getMetricsEventRate(params: GetMetricsEventRateParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   /**
@@ -732,6 +733,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def getMetricsQuery(): js.Promise[_] | Unit = js.native
+  def getMetricsQuery(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQuery(params: GetMetricsQueryParams): js.Promise[_] | Unit = js.native
   def getMetricsQuery(params: GetMetricsQueryParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   /**
@@ -752,6 +754,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def getMetricsQueryEvent(): js.Promise[_] | Unit = js.native
+  def getMetricsQueryEvent(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQueryEvent(params: GetMetricsQueryEventParams): js.Promise[_] | Unit = js.native
   def getMetricsQueryEvent(params: GetMetricsQueryEventParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   /**
@@ -771,6 +774,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def getMetricsQueryNoResults(): js.Promise[_] | Unit = js.native
+  def getMetricsQueryNoResults(params: js.UndefOr[scala.Nothing], callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQueryNoResults(params: GetMetricsQueryNoResultsParams): js.Promise[_] | Unit = js.native
   def getMetricsQueryNoResults(params: GetMetricsQueryNoResultsParams, callback: Callback[MetricResponse]): js.Promise[_] | Unit = js.native
   /**
@@ -788,6 +792,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def getMetricsQueryTokenEvent(): js.Promise[_] | Unit = js.native
+  def getMetricsQueryTokenEvent(params: js.UndefOr[scala.Nothing], callback: Callback[MetricTokenResponse]): js.Promise[_] | Unit = js.native
   def getMetricsQueryTokenEvent(params: GetMetricsQueryTokenEventParams): js.Promise[_] | Unit = js.native
   def getMetricsQueryTokenEvent(params: GetMetricsQueryTokenEventParams, callback: Callback[MetricTokenResponse]): js.Promise[_] | Unit = js.native
   /**
@@ -918,6 +923,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listEnvironments(): js.Promise[_] | Unit = js.native
+  def listEnvironments(params: js.UndefOr[scala.Nothing], callback: Callback[ListEnvironmentsResponse]): js.Promise[_] | Unit = js.native
   def listEnvironments(params: ListEnvironmentsParams): js.Promise[_] | Unit = js.native
   def listEnvironments(params: ListEnvironmentsParams, callback: Callback[ListEnvironmentsResponse]): js.Promise[_] | Unit = js.native
   /**
@@ -1106,6 +1112,7 @@ trait DiscoveryV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def queryLog(): js.Promise[_] | Unit = js.native
+  def queryLog(params: js.UndefOr[scala.Nothing], callback: Callback[LogQueryResponse]): js.Promise[_] | Unit = js.native
   def queryLog(params: QueryLogParams): js.Promise[_] | Unit = js.native
   def queryLog(params: QueryLogParams, callback: Callback[LogQueryResponse]): js.Promise[_] | Unit = js.native
   /**

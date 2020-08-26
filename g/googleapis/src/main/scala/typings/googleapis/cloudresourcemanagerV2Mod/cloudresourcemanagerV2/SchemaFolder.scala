@@ -43,20 +43,42 @@ trait SchemaFolder extends js.Object {
 
 object SchemaFolder {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    displayName: String = null,
-    lifecycleState: String = null,
-    name: String = null,
-    parent: String = null
-  ): SchemaFolder = {
+  def apply(): SchemaFolder = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (lifecycleState != null) __obj.updateDynamic("lifecycleState")(lifecycleState.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFolder]
   }
+  @scala.inline
+  implicit class SchemaFolderOps[Self <: SchemaFolder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLifecycleState(value: String): Self = this.set("lifecycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleState: Self = this.set("lifecycleState", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+  }
+  
 }
 

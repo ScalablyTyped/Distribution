@@ -16,11 +16,5 @@ class BitmapTypedValue protected ()
     * @param type The type of the value parameter.
     */
   def this(value: js.Any, `type`: PropertyType) = this()
-  /** Gets the PropertyType of the stored value. */
-  /* CompleteClass */
-  override var `type`: PropertyType = js.native
-  /** Gets the stored value. */
-  /* CompleteClass */
-  override var value: js.Any = js.native
 }
 

@@ -11,10 +11,26 @@ trait CreateClusterParameterGroupResult extends js.Object {
 
 object CreateClusterParameterGroupResult {
   @scala.inline
-  def apply(ClusterParameterGroup: ClusterParameterGroup = null): CreateClusterParameterGroupResult = {
+  def apply(): CreateClusterParameterGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (ClusterParameterGroup != null) __obj.updateDynamic("ClusterParameterGroup")(ClusterParameterGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterParameterGroupResult]
   }
+  @scala.inline
+  implicit class CreateClusterParameterGroupResultOps[Self <: CreateClusterParameterGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterParameterGroup(value: ClusterParameterGroup): Self = this.set("ClusterParameterGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterParameterGroup: Self = this.set("ClusterParameterGroup", js.undefined)
+  }
+  
 }
 

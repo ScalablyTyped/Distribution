@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object unaryExpression_void extends js.Object {
   def apply(operator: void): UnaryExpression_ = js.native
+  def apply(operator: void, argument: js.UndefOr[scala.Nothing], prefix: Boolean): UnaryExpression_ = js.native
   def apply(operator: void, argument: Expression): UnaryExpression_ = js.native
   def apply(operator: void, argument: Expression, prefix: Boolean): UnaryExpression_ = js.native
 }

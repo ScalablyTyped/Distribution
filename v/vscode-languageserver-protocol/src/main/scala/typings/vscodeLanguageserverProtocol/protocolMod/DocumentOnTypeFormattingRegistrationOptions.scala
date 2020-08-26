@@ -4,19 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentOnTypeFormattingRegistrationOptions
   extends TextDocumentRegistrationOptions
      with DocumentOnTypeFormattingOptions
 
 object DocumentOnTypeFormattingRegistrationOptions {
   @scala.inline
-  def apply(
-    firstTriggerCharacter: String,
-    documentSelector: DocumentSelector = null,
-    moreTriggerCharacter: js.Array[String] = null
-  ): DocumentOnTypeFormattingRegistrationOptions = {
-    val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter.asInstanceOf[js.Any], documentSelector = documentSelector.asInstanceOf[js.Any])
-    if (moreTriggerCharacter != null) __obj.updateDynamic("moreTriggerCharacter")(moreTriggerCharacter.asInstanceOf[js.Any])
+  def apply(firstTriggerCharacter: String): DocumentOnTypeFormattingRegistrationOptions = {
+    val __obj = js.Dynamic.literal(firstTriggerCharacter = firstTriggerCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentOnTypeFormattingRegistrationOptions]
   }
 }

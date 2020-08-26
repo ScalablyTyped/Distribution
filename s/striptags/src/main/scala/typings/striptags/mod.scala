@@ -17,12 +17,15 @@ object mod extends js.Object {
     * @return Returns the input string, sans any html tags that weren't allowed
     */
   def apply(html: String): String = js.native
+  def apply(html: String, allowedTags: js.UndefOr[scala.Nothing], tagReplacement: String): String = js.native
   def apply(html: String, allowedTags: String): String = js.native
   def apply(html: String, allowedTags: String, tagReplacement: String): String = js.native
   def apply(html: String, allowedTags: js.Array[String]): String = js.native
   def apply(html: String, allowedTags: js.Array[String], tagReplacement: String): String = js.native
   @JSName("init_streaming_mode")
   def initStreamingMode(): js.Function1[/* html */ String, String] = js.native
+  @JSName("init_streaming_mode")
+  def initStreamingMode(allowedTags: js.UndefOr[scala.Nothing], tagReplacement: String): js.Function1[/* html */ String, String] = js.native
   @JSName("init_streaming_mode")
   def initStreamingMode(allowedTags: String): js.Function1[/* html */ String, String] = js.native
   @JSName("init_streaming_mode")

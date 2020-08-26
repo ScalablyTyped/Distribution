@@ -12,52 +12,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CheckIfMerged extends js.Object {
   @JSName("checkIfMerged")
-  var checkIfMerged_Original: `281` = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Creates a review comment in the pull request diff. To add a regular comment to a pull request timeline, see "[Create an issue comment](https://developer.github.com/v3/issues/comments/#create-an-issue-comment)." We recommend creating a review comment using `line`, `side`, and optionally `start_line` and `start_side` if your comment applies to more than one line in the pull request diff.
-    *
-    * You can still create a review comment using the `position` parameter. When you use `position`, the `line`, `side`, `start_line`, and `start_side` parameters are not required. For more information, see [Multi-line comment summary](https://developer.github.com/v3/pulls/comments/#multi-line-comment-summary-3).
-    *
-    * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
-    *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    * @deprecated octokit.pulls.createComment() has been renamed to octokit.pulls.createReviewComment() (2020-06-05)
-    */
-  @JSName("createComment")
-  var createComment_Original: `283` = js.native
+  var checkIfMerged_Original: `289` = js.native
   /**
     * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
     *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createReplyForReviewComment")
-  var createReplyForReviewComment_Original: `284` = js.native
-  /**
-    * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
-    *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
-    * @deprecated octokit.pulls.createReviewCommentReply() has been renamed to octokit.pulls.createReplyForReviewComment() (2020-06-05)
-    */
-  @JSName("createReviewCommentReply")
-  var createReviewCommentReply_Original: `284` = js.native
+  var createReplyForReviewComment_Original: `291` = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -67,7 +29,7 @@ trait CheckIfMerged extends js.Object {
     *
     * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * **Multi-line comment summary**
     *
@@ -86,15 +48,9 @@ trait CheckIfMerged extends js.Object {
     * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("createReviewComment")
-  var createReviewComment_Original: `283` = js.native
+  var createReviewComment_Original: `293` = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
-    * @deprecated octokit.pulls.createReviewRequest() has been renamed to octokit.pulls.requestReviewers() (2020-06-05)
-    */
-  @JSName("createReviewRequest")
-  var createReviewRequest_Original: `286` = js.native
-  /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * Pull request reviews created in the `PENDING` state do not include the `submitted_at` property in the response.
     *
@@ -103,73 +59,30 @@ trait CheckIfMerged extends js.Object {
     * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     */
   @JSName("createReview")
-  var createReview_Original: `285` = js.native
+  var createReview_Original: `292` = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     *
     * You can create a new pull request.
     *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: `282` = js.native
-  /**
-    * Deletes a review comment.
-    * @deprecated octokit.pulls.deleteComment() has been renamed to octokit.pulls.deleteReviewComment() (2020-06-05)
-    */
-  @JSName("deleteComment")
-  var deleteComment_Original: `287` = js.native
+  var create_Original: `290` = js.native
   @JSName("deletePendingReview")
-  var deletePendingReview_Original: `288` = js.native
+  var deletePendingReview_Original: `294` = js.native
   /**
     * Deletes a review comment.
     */
   @JSName("deleteReviewComment")
-  var deleteReviewComment_Original: `287` = js.native
-  /**
-    * @deprecated octokit.pulls.deleteReviewRequest() has been renamed to octokit.pulls.removeRequestedReviewers() (2020-06-05)
-    */
-  @JSName("deleteReviewRequest")
-  var deleteReviewRequest_Original: `289` = js.native
+  var deleteReviewComment_Original: `295` = js.native
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   @JSName("dismissReview")
-  var dismissReview_Original: `290` = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Provides details for a review comment.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    *
-    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
-    * @deprecated octokit.pulls.getComment() has been renamed to octokit.pulls.getReviewComment() (2020-06-05)
-    */
-  @JSName("getComment")
-  var getComment_Original: `292` = js.native
-  /**
-    * List comments for a specific pull request review.
-    * @deprecated octokit.pulls.getCommentsForReview() has been renamed to octokit.pulls.listCommentsForReview() (2020-06-05)
-    */
-  @JSName("getCommentsForReview")
-  var getCommentsForReview_Original: `293` = js.native
+  var dismissReview_Original: `296` = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -194,11 +107,11 @@ trait CheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("getReviewComment")
-  var getReviewComment_Original: `292` = js.native
+  var getReviewComment_Original: `299` = js.native
   @JSName("getReview")
-  var getReview_Original: `294` = js.native
+  var getReview_Original: `298` = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Lists details of a pull request by providing its number.
     *
@@ -208,83 +121,31 @@ trait CheckIfMerged extends js.Object {
     *
     * The value of the `merge_commit_sha` attribute changes depending on the state of the pull request. Before merging a pull request, the `merge_commit_sha` attribute holds the SHA of the _test_ merge commit. After merging a pull request, the `merge_commit_sha` attribute changes depending on how you merged the pull request:
     *
-    * *   If merged as a [merge commit](https://help.github.com/articles/about-merge-methods-on-github/), `merge_commit_sha` represents the SHA of the merge commit.
-    * *   If merged via a [squash](https://help.github.com/articles/about-merge-methods-on-github/#squashing-your-merge-commits), `merge_commit_sha` represents the SHA of the squashed commit on the base branch.
-    * *   If [rebased](https://help.github.com/articles/about-merge-methods-on-github/#rebasing-and-merging-your-commits), `merge_commit_sha` represents the commit that the base branch was updated to.
+    * *   If merged as a [merge commit](https://docs.github.com/articles/about-merge-methods-on-github/), `merge_commit_sha` represents the SHA of the merge commit.
+    * *   If merged via a [squash](https://docs.github.com/articles/about-merge-methods-on-github/#squashing-your-merge-commits), `merge_commit_sha` represents the SHA of the squashed commit on the base branch.
+    * *   If [rebased](https://docs.github.com/articles/about-merge-methods-on-github/#rebasing-and-merging-your-commits), `merge_commit_sha` represents the commit that the base branch was updated to.
     *
     * Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     */
   @JSName("get")
-  var get_Original: `291` = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    *
-    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
-    * @deprecated octokit.pulls.listCommentsForRepo() has been renamed to octokit.pulls.listReviewCommentsForRepo() (2020-06-05)
-    */
-  @JSName("listCommentsForRepo")
-  var listCommentsForRepo_Original: `297` = js.native
+  var get_Original: `297` = js.native
   /**
     * List comments for a specific pull request review.
     */
   @JSName("listCommentsForReview")
-  var listCommentsForReview_Original: `293` = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Lists all review comments for a pull request. By default, review comments are in ascending order by ID.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    *
-    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
-    * @deprecated octokit.pulls.listComments() has been renamed to octokit.pulls.listReviewComments() (2020-06-05)
-    */
-  @JSName("listComments")
-  var listComments_Original: `296` = js.native
+  var listCommentsForReview_Original: `301` = js.native
   /**
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [List commits](https://developer.github.com/v3/repos/commits/#list-commits) endpoint.
     */
   @JSName("listCommits")
-  var listCommits_Original: `298` = js.native
+  var listCommits_Original: `302` = js.native
   /**
     * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   @JSName("listFiles")
-  var listFiles_Original: `299` = js.native
+  var listFiles_Original: `303` = js.native
   @JSName("listRequestedReviewers")
-  var listRequestedReviewers_Original: `300` = js.native
+  var listRequestedReviewers_Original: `304` = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -309,7 +170,7 @@ trait CheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listReviewCommentsForRepo")
-  var listReviewCommentsForRepo_Original: `297` = js.native
+  var listReviewCommentsForRepo_Original: `306` = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -334,65 +195,36 @@ trait CheckIfMerged extends js.Object {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listReviewComments")
-  var listReviewComments_Original: `296` = js.native
-  /**
-    * @deprecated octokit.pulls.listReviewRequests() has been renamed to octokit.pulls.listRequestedReviewers() (2020-06-05)
-    */
-  @JSName("listReviewRequests")
-  var listReviewRequests_Original: `300` = js.native
+  var listReviewComments_Original: `305` = js.native
   /**
     * The list of reviews returns in chronological order.
     */
   @JSName("listReviews")
-  var listReviews_Original: `301` = js.native
+  var listReviews_Original: `307` = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("list")
-  var list_Original: `295` = js.native
+  var list_Original: `300` = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("merge")
-  var merge_Original: `302` = js.native
+  var merge_Original: `308` = js.native
   @JSName("removeRequestedReviewers")
-  var removeRequestedReviewers_Original: `289` = js.native
+  var removeRequestedReviewers_Original: `309` = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("requestReviewers")
-  var requestReviewers_Original: `286` = js.native
+  var requestReviewers_Original: `310` = js.native
   @JSName("submitReview")
-  var submitReview_Original: `303` = js.native
+  var submitReview_Original: `311` = js.native
   /**
     * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
     */
   @JSName("updateBranch")
-  var updateBranch_Original: `305` = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Enables you to edit a review comment.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    * @deprecated octokit.pulls.updateComment() has been renamed to octokit.pulls.updateReviewComment() (2020-06-05)
-    */
-  @JSName("updateComment")
-  var updateComment_Original: `306` = js.native
+  var updateBranch_Original: `313` = js.native
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -415,19 +247,19 @@ trait CheckIfMerged extends js.Object {
     * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("updateReviewComment")
-  var updateReviewComment_Original: `306` = js.native
+  var updateReviewComment_Original: `315` = js.native
   /**
     * Update the review summary comment with new text.
     */
   @JSName("updateReview")
-  var updateReview_Original: `307` = js.native
+  var updateReview_Original: `314` = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
   @JSName("update")
-  var update_Original: `304` = js.native
+  var update_Original: `312` = js.native
   def checkIfMerged(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
   ] = js.native
@@ -440,13 +272,13 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
   ] = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     *
     * You can create a new pull request.
     *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def create(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls']['response'] */ js.Any
@@ -460,48 +292,9 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls']['response'] */ js.Any
   ] = js.native
   /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Creates a review comment in the pull request diff. To add a regular comment to a pull request timeline, see "[Create an issue comment](https://developer.github.com/v3/issues/comments/#create-an-issue-comment)." We recommend creating a review comment using `line`, `side`, and optionally `start_line` and `start_side` if your comment applies to more than one line in the pull request diff.
-    *
-    * You can still create a review comment using the `position` parameter. When you use `position`, the `line`, `side`, `start_line`, and `start_side` parameters are not required. For more information, see [Multi-line comment summary](https://developer.github.com/v3/pulls/comments/#multi-line-comment-summary-3).
-    *
-    * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
-    *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    * @deprecated octokit.pulls.createComment() has been renamed to octokit.pulls.createReviewComment() (2020-06-05)
-    */
-  def createComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
-  def createComment(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
-  /**
     * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
     *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createReplyForReviewComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['response'] */ js.Any
@@ -515,7 +308,7 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['response'] */ js.Any
   ] = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * Pull request reviews created in the `PENDING` state do not include the `submitted_at` property in the response.
     *
@@ -543,7 +336,7 @@ trait CheckIfMerged extends js.Object {
     *
     * **Note:** The position value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     *
     * **Multi-line comment summary**
     *
@@ -572,53 +365,6 @@ trait CheckIfMerged extends js.Object {
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
   ] = js.native
-  /**
-    * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
-    *
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
-    * @deprecated octokit.pulls.createReviewCommentReply() has been renamed to octokit.pulls.createReplyForReviewComment() (2020-06-05)
-    */
-  def createReviewCommentReply(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['response'] */ js.Any
-  ] = js.native
-  def createReviewCommentReply(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['response'] */ js.Any
-  ] = js.native
-  /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
-    * @deprecated octokit.pulls.createReviewRequest() has been renamed to octokit.pulls.requestReviewers() (2020-06-05)
-    */
-  def createReviewRequest(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
-  def createReviewRequest(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
-  /**
-    * Deletes a review comment.
-    * @deprecated octokit.pulls.deleteComment() has been renamed to octokit.pulls.deleteReviewComment() (2020-06-05)
-    */
-  def deleteComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
-  def deleteComment(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
   def deletePendingReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
   ] = js.native
@@ -645,20 +391,6 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
   ] = js.native
   /**
-    * @deprecated octokit.pulls.deleteReviewRequest() has been renamed to octokit.pulls.removeRequestedReviewers() (2020-06-05)
-    */
-  def deleteReviewRequest(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
-  def deleteReviewRequest(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
-  /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   def dismissReview(): js.Promise[
@@ -673,7 +405,7 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals']['response'] */ js.Any
   ] = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Lists details of a pull request by providing its number.
     *
@@ -683,9 +415,9 @@ trait CheckIfMerged extends js.Object {
     *
     * The value of the `merge_commit_sha` attribute changes depending on the state of the pull request. Before merging a pull request, the `merge_commit_sha` attribute holds the SHA of the _test_ merge commit. After merging a pull request, the `merge_commit_sha` attribute changes depending on how you merged the pull request:
     *
-    * *   If merged as a [merge commit](https://help.github.com/articles/about-merge-methods-on-github/), `merge_commit_sha` represents the SHA of the merge commit.
-    * *   If merged via a [squash](https://help.github.com/articles/about-merge-methods-on-github/#squashing-your-merge-commits), `merge_commit_sha` represents the SHA of the squashed commit on the base branch.
-    * *   If [rebased](https://help.github.com/articles/about-merge-methods-on-github/#rebasing-and-merging-your-commits), `merge_commit_sha` represents the commit that the base branch was updated to.
+    * *   If merged as a [merge commit](https://docs.github.com/articles/about-merge-methods-on-github/), `merge_commit_sha` represents the SHA of the merge commit.
+    * *   If merged via a [squash](https://docs.github.com/articles/about-merge-methods-on-github/#squashing-your-merge-commits), `merge_commit_sha` represents the SHA of the squashed commit on the base branch.
+    * *   If [rebased](https://docs.github.com/articles/about-merge-methods-on-github/#rebasing-and-merging-your-commits), `merge_commit_sha` represents the commit that the base branch was updated to.
     *
     * Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     */
@@ -699,56 +431,6 @@ trait CheckIfMerged extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number']['response'] */ js.Any
-  ] = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Provides details for a review comment.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    *
-    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
-    * @deprecated octokit.pulls.getComment() has been renamed to octokit.pulls.getReviewComment() (2020-06-05)
-    */
-  def getComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
-  def getComment(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
-  /**
-    * List comments for a specific pull request review.
-    * @deprecated octokit.pulls.getCommentsForReview() has been renamed to octokit.pulls.listCommentsForReview() (2020-06-05)
-    */
-  def getCommentsForReview(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments']['response'] */ js.Any
-  ] = js.native
-  def getCommentsForReview(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments']['response'] */ js.Any
   ] = js.native
   def getReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
@@ -796,7 +478,7 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
   ] = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def list(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls']['response'] */ js.Any
@@ -808,76 +490,6 @@ trait CheckIfMerged extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls']['response'] */ js.Any
-  ] = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Lists all review comments for a pull request. By default, review comments are in ascending order by ID.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    *
-    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
-    * @deprecated octokit.pulls.listComments() has been renamed to octokit.pulls.listReviewComments() (2020-06-05)
-    */
-  def listComments(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
-  def listComments(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/comments']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    *
-    * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
-    * @deprecated octokit.pulls.listCommentsForRepo() has been renamed to octokit.pulls.listReviewCommentsForRepo() (2020-06-05)
-    */
-  def listCommentsForRepo(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['response'] */ js.Any
-  ] = js.native
-  def listCommentsForRepo(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['response'] */ js.Any
   ] = js.native
   /**
     * List comments for a specific pull request review.
@@ -1001,20 +613,6 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['response'] */ js.Any
   ] = js.native
   /**
-    * @deprecated octokit.pulls.listReviewRequests() has been renamed to octokit.pulls.listRequestedReviewers() (2020-06-05)
-    */
-  def listReviewRequests(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
-  def listReviewRequests(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
-  /**
     * The list of reviews returns in chronological order.
     */
   def listReviews(): js.Promise[
@@ -1029,7 +627,7 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews']['response'] */ js.Any
   ] = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def merge(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
@@ -1054,7 +652,7 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
   ] = js.native
   /**
-    * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def requestReviewers(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
@@ -1079,7 +677,7 @@ trait CheckIfMerged extends js.Object {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events']['response'] */ js.Any
   ] = js.native
   /**
-    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://help.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
@@ -1107,39 +705,6 @@ trait CheckIfMerged extends js.Object {
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/update-branch']['response'] */ js.Any
-  ] = js.native
-  /**
-    * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
-    *
-    * Enables you to edit a review comment.
-    *
-    * **Multi-line comment summary**
-    *
-    * **Note:** New parameters and response fields are available for developers to preview. During the preview period, these response fields may change without advance notice. Please see the [blog post](https://developer.github.com/changes/2019-10-03-multi-line-comments) for full details.
-    *
-    * Use the `comfort-fade` preview header and the `line` parameter to show multi-line comment-supported fields in the response.
-    *
-    * If you use the `comfort-fade` preview header, your response will show:
-    *
-    * *   For multi-line comments, values for `start_line`, `original_start_line`, `start_side`, `line`, `original_line`, and `side`.
-    * *   For single-line comments, values for `line`, `original_line`, and `side` and a `null` value for `start_line`, `original_start_line`, and `start_side`.
-    *
-    * If you don't use the `comfort-fade` preview header, multi-line and single-line comments will appear the same way in the response with a single `position` attribute. Your response will show:
-    *
-    * *   For multi-line comments, the last line of the comment range for the `position` attribute.
-    * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
-    * @deprecated octokit.pulls.updateComment() has been renamed to octokit.pulls.updateReviewComment() (2020-06-05)
-    */
-  def updateComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
-  def updateComment(
-    params: RequestParameters with (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/comments/:comment_id']['parameters'] */ js.Any, 
-      baseUrl | headers | mediaType
-    ])
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
   ] = js.native
   /**
     * Update the review summary comment with new text.

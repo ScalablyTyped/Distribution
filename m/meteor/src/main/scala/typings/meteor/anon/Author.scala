@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Author extends js.Object {
-  var author: js.UndefOr[String] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var email: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
-  var website: js.UndefOr[String] = js.undefined
+  var author: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.native
 }
 
 object Author {
   @scala.inline
-  def apply(
-    author: String = null,
-    description: String = null,
-    email: String = null,
-    id: String = null,
-    name: String = null,
-    version: String = null,
-    website: String = null
-  ): Author = {
+  def apply(): Author = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[Author]
   }
+  @scala.inline
+  implicit class AuthorOps[Self <: Author] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setWebsite(value: String): Self = this.set("website", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsite: Self = this.set("website", js.undefined)
+  }
+  
 }
 

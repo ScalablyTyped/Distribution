@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NonceDetails extends js.Object {
-  var bin: js.UndefOr[String] = js.undefined
-  var cardType: js.UndefOr[String] = js.undefined
-  var lastTwo: js.UndefOr[String] = js.undefined
+  var bin: js.UndefOr[String] = js.native
+  var cardType: js.UndefOr[String] = js.native
+  var lastTwo: js.UndefOr[String] = js.native
 }
 
 object NonceDetails {
   @scala.inline
-  def apply(bin: String = null, cardType: String = null, lastTwo: String = null): NonceDetails = {
+  def apply(): NonceDetails = {
     val __obj = js.Dynamic.literal()
-    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
-    if (cardType != null) __obj.updateDynamic("cardType")(cardType.asInstanceOf[js.Any])
-    if (lastTwo != null) __obj.updateDynamic("lastTwo")(lastTwo.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonceDetails]
   }
+  @scala.inline
+  implicit class NonceDetailsOps[Self <: NonceDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBin(value: String): Self = this.set("bin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBin: Self = this.set("bin", js.undefined)
+    @scala.inline
+    def setCardType(value: String): Self = this.set("cardType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCardType: Self = this.set("cardType", js.undefined)
+    @scala.inline
+    def setLastTwo(value: String): Self = this.set("lastTwo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastTwo: Self = this.set("lastTwo", js.undefined)
+  }
+  
 }
 

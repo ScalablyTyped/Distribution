@@ -44,27 +44,62 @@ trait CreateFileSystemRequest extends js.Object {
 
 object CreateFileSystemRequest {
   @scala.inline
-  def apply(
-    FileSystemType: FileSystemType,
-    StorageCapacity: StorageCapacity,
-    SubnetIds: SubnetIds,
-    ClientRequestToken: ClientRequestToken = null,
-    KmsKeyId: KmsKeyId = null,
-    LustreConfiguration: CreateFileSystemLustreConfiguration = null,
-    SecurityGroupIds: SecurityGroupIds = null,
-    StorageType: StorageType = null,
-    Tags: Tags = null,
-    WindowsConfiguration: CreateFileSystemWindowsConfiguration = null
-  ): CreateFileSystemRequest = {
+  def apply(FileSystemType: FileSystemType, StorageCapacity: StorageCapacity, SubnetIds: SubnetIds): CreateFileSystemRequest = {
     val __obj = js.Dynamic.literal(FileSystemType = FileSystemType.asInstanceOf[js.Any], StorageCapacity = StorageCapacity.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LustreConfiguration != null) __obj.updateDynamic("LustreConfiguration")(LustreConfiguration.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (WindowsConfiguration != null) __obj.updateDynamic("WindowsConfiguration")(WindowsConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFileSystemRequest]
   }
+  @scala.inline
+  implicit class CreateFileSystemRequestOps[Self <: CreateFileSystemRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemType(value: FileSystemType): Self = this.set("FileSystemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStorageCapacity(value: StorageCapacity): Self = this.set("StorageCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLustreConfiguration(value: CreateFileSystemLustreConfiguration): Self = this.set("LustreConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLustreConfiguration: Self = this.set("LustreConfiguration", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setStorageType(value: StorageType): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setWindowsConfiguration(value: CreateFileSystemWindowsConfiguration): Self = this.set("WindowsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowsConfiguration: Self = this.set("WindowsConfiguration", js.undefined)
+  }
+  
 }
 

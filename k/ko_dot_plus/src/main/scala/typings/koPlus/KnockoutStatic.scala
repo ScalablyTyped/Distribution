@@ -1,6 +1,5 @@
 package typings.koPlus
 
-import typings.knockout.KnockoutObservable
 import typings.koPlus.KoPlus.Command
 import typings.koPlus.KoPlus.CommandOptions
 import typings.koPlus.KoPlus.Editable
@@ -46,13 +45,5 @@ trait KnockoutStatic extends js.Object {
   def editable[T](value: T): Editable[T] = js.native
   def editableArray[T](): EditableArray[T] = js.native
   def editableArray[T](value: js.Array[T]): EditableArray[T] = js.native
-  @JSName("editableArray")
-  def editableArray_T_KnockoutObservableArray[T](): typings.knockout.KnockoutObservableArray[T] = js.native
-  @JSName("editableArray")
-  def editableArray_T_KnockoutObservableArray[T](value: js.Array[T]): typings.knockout.KnockoutObservableArray[T] = js.native
-  @JSName("editable")
-  def editable_T_KnockoutObservable[T](): KnockoutObservable[T | Null] = js.native
-  @JSName("editable")
-  def editable_T_KnockoutObservable[T](value: T): KnockoutObservable[T] = js.native
 }
 

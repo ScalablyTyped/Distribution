@@ -1,29 +1,48 @@
 package typings.fhirKitClient.anon
 
-import typings.fhirKitClient.fhirKitClientStrings.Slot
+import typings.fhirKitClient.fhirKitClientStrings.SearchParameter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `87` extends js.Object {
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
-  var id: String
-  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
-  var resourceType: Slot
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var id: String = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var resourceType: SearchParameter = js.native
 }
 
 object `87` {
   @scala.inline
-  def apply(
-    id: String,
-    resourceType: Slot,
-    headers: typings.request.mod.Headers = null,
-    options: typings.request.mod.Options = null
-  ): `87` = {
+  def apply(id: String, resourceType: SearchParameter): `87` = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[`87`]
   }
+  @scala.inline
+  implicit class `87Ops`[Self <: `87`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: SearchParameter): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeaders(value: typings.request.mod.Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setOptions(value: typings.request.mod.Options): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ trait Mobile extends Base {
   def scrollToView(): Unit = js.native
   def updateEditorData(): Unit = js.native
   def updateEditorPosition(): Unit = js.native
+  def updateEditorPosition(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def updateEditorPosition(x: Double): Unit = js.native
   def updateEditorPosition(x: Double, y: Double): Unit = js.native
   def valueChanged(): Boolean = js.native

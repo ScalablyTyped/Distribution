@@ -30,18 +30,38 @@ trait QueryObjectsInput extends js.Object {
 
 object QueryObjectsInput {
   @scala.inline
-  def apply(
-    pipelineId: id,
-    sphere: String,
-    limit: js.UndefOr[int] = js.undefined,
-    marker: String = null,
-    query: Query = null
-  ): QueryObjectsInput = {
+  def apply(pipelineId: id, sphere: String): QueryObjectsInput = {
     val __obj = js.Dynamic.literal(pipelineId = pipelineId.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryObjectsInput]
   }
+  @scala.inline
+  implicit class QueryObjectsInputOps[Self <: QueryObjectsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipelineId(value: id): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSphere(value: String): Self = this.set("sphere", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: int): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

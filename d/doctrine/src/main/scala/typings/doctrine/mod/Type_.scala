@@ -67,10 +67,9 @@ object Type_ {
     __obj.asInstanceOf[Type_]
   }
   @scala.inline
-  def FieldType(key: String, `type`: typings.doctrine.doctrineStrings.FieldType, value: Type_ = null): Type_ = {
+  def FieldType(key: String, `type`: typings.doctrine.doctrineStrings.FieldType): Type_ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type_]
   }
   @scala.inline
@@ -130,10 +129,9 @@ object Type_ {
     __obj.asInstanceOf[Type_]
   }
   @scala.inline
-  def RestType(`type`: typings.doctrine.doctrineStrings.RestType, expression: Type_ = null): Type_ = {
+  def RestType(`type`: typings.doctrine.doctrineStrings.RestType): Type_ = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type_]
   }
   @scala.inline

@@ -28,18 +28,38 @@ trait LaunchTemplateBlockDeviceMapping extends js.Object {
 
 object LaunchTemplateBlockDeviceMapping {
   @scala.inline
-  def apply(
-    deviceName: String = null,
-    ebs: LaunchTemplateBlockDeviceMappingEbs = null,
-    noDevice: String = null,
-    virtualName: String = null
-  ): LaunchTemplateBlockDeviceMapping = {
+  def apply(): LaunchTemplateBlockDeviceMapping = {
     val __obj = js.Dynamic.literal()
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    if (ebs != null) __obj.updateDynamic("ebs")(ebs.asInstanceOf[js.Any])
-    if (noDevice != null) __obj.updateDynamic("noDevice")(noDevice.asInstanceOf[js.Any])
-    if (virtualName != null) __obj.updateDynamic("virtualName")(virtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateBlockDeviceMapping]
   }
+  @scala.inline
+  implicit class LaunchTemplateBlockDeviceMappingOps[Self <: LaunchTemplateBlockDeviceMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    @scala.inline
+    def setEbs(value: LaunchTemplateBlockDeviceMappingEbs): Self = this.set("ebs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbs: Self = this.set("ebs", js.undefined)
+    @scala.inline
+    def setNoDevice(value: String): Self = this.set("noDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDevice: Self = this.set("noDevice", js.undefined)
+    @scala.inline
+    def setVirtualName(value: String): Self = this.set("virtualName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualName: Self = this.set("virtualName", js.undefined)
+  }
+  
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TableServerSideEncryption extends js.Object {
   /**
-    * Whether to enable point-in-time recovery - note that it can take up to 10 minutes to enable for new tables. If the `pointInTimeRecovery` block is not provided then this defaults to `false`.
+    * Indicates whether ttl is enabled (true) or disabled (false).
     */
   var enabled: Input[Boolean] = js.native
   /**
@@ -20,10 +20,28 @@ trait TableServerSideEncryption extends js.Object {
 
 object TableServerSideEncryption {
   @scala.inline
-  def apply(enabled: Input[Boolean], kmsKeyArn: Input[String] = null): TableServerSideEncryption = {
+  def apply(enabled: Input[Boolean]): TableServerSideEncryption = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableServerSideEncryption]
   }
+  @scala.inline
+  implicit class TableServerSideEncryptionOps[Self <: TableServerSideEncryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+  }
+  
 }
 

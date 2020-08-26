@@ -26,10 +26,32 @@ trait CreateArchiveRuleRequest extends js.Object {
 
 object CreateArchiveRuleRequest {
   @scala.inline
-  def apply(analyzerName: Name, filter: FilterCriteriaMap, ruleName: Name, clientToken: String = null): CreateArchiveRuleRequest = {
+  def apply(analyzerName: Name, filter: FilterCriteriaMap, ruleName: Name): CreateArchiveRuleRequest = {
     val __obj = js.Dynamic.literal(analyzerName = analyzerName.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateArchiveRuleRequest]
   }
+  @scala.inline
+  implicit class CreateArchiveRuleRequestOps[Self <: CreateArchiveRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyzerName(value: Name): Self = this.set("analyzerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: FilterCriteriaMap): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleName(value: Name): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+  }
+  
 }
 

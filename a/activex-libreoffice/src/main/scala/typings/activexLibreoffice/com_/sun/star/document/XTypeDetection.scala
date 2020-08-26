@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * supports. Of course that includes a "flat" detection before. The combination of both ones should produce stable results every time.
   * @see TypeDetection
   */
+@js.native
 trait XTypeDetection extends XInterface {
   /**
     * make a "deep" detection or optional a "flat" detection by using a {@link MediaDescriptor}
@@ -32,7 +33,7 @@ trait XTypeDetection extends XInterface {
     * @param AllowDeep if it is set to `TRUE` a "deep" detection will be follow a "flat" detection ;  if it is set to `FALSE` a "flat" detection will be made only
     * @returns an internal type name which represent the detected format ;  or an empty value for unknown ones
     */
-  def queryTypeByDescriptor(Descriptor: js.Array[SeqEquiv[PropertyValue]], AllowDeep: Boolean): String
+  def queryTypeByDescriptor(Descriptor: js.Array[SeqEquiv[PropertyValue]], AllowDeep: Boolean): String = js.native
   /**
     * make a "flat" detection by using the URL of the document
     *
@@ -40,7 +41,7 @@ trait XTypeDetection extends XInterface {
     * @param URL specify the document by name
     * @returns an internal type name which represent the detected format ;  or an empty value for unknown ones
     */
-  def queryTypeByURL(URL: String): String
+  def queryTypeByURL(URL: String): String = js.native
 }
 
 object XTypeDetection {
@@ -55,5 +56,22 @@ object XTypeDetection {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), queryTypeByDescriptor = js.Any.fromFunction2(queryTypeByDescriptor), queryTypeByURL = js.Any.fromFunction1(queryTypeByURL), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTypeDetection]
   }
+  @scala.inline
+  implicit class XTypeDetectionOps[Self <: XTypeDetection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryTypeByDescriptor(value: (js.Array[SeqEquiv[PropertyValue]], Boolean) => String): Self = this.set("queryTypeByDescriptor", js.Any.fromFunction2(value))
+    @scala.inline
+    def setQueryTypeByURL(value: String => String): Self = this.set("queryTypeByURL", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -98,6 +98,11 @@ trait AsyncClient extends js.Object {
     /* args */ Parameters[js.Function0[Unit]], 
     js.Promise[ReturnType[js.Function0[Unit]]]
   ] = js.native
+  @JSName("clearMockCalls")
+  var clearMockCalls_Original: js.Function1[
+    /* args */ Parameters[js.Function2[/* mockId */ String, /* restore */ Boolean, Unit]], 
+    js.Promise[ReturnType[js.Function2[/* mockId */ String, /* restore */ Boolean, Unit]]]
+  ] = js.native
   @JSName("clearSessionStorage")
   var clearSessionStorage_Original: js.Function1[
     /* args */ Parameters[js.Function0[Unit]], 
@@ -112,6 +117,29 @@ trait AsyncClient extends js.Object {
   var closeWindow_Original: js.Function1[
     /* args */ Parameters[js.Function0[Unit]], 
     js.Promise[ReturnType[js.Function0[Unit]]]
+  ] = js.native
+  @JSName("compareImages")
+  var compareImages_Original: js.Function1[
+    /* args */ Parameters[
+      js.Function4[
+        /* mode */ String, 
+        /* firstImage */ String, 
+        /* secondImage */ String, 
+        /* options */ js.Object, 
+        ProtocolCommandResponse
+      ]
+    ], 
+    js.Promise[
+      ReturnType[
+        js.Function4[
+          /* mode */ String, 
+          /* firstImage */ String, 
+          /* secondImage */ String, 
+          /* options */ js.Object, 
+          ProtocolCommandResponse
+        ]
+      ]
+    ]
   ] = js.native
   @JSName("createWindow")
   var createWindow_Original: js.Function1[
@@ -203,24 +231,8 @@ trait AsyncClient extends js.Object {
   ] = js.native
   @JSName("elementSendKeys")
   var elementSendKeys_Original: js.Function1[
-    /* args */ Parameters[
-      js.Function3[
-        /* elementId */ String, 
-        /* text */ String, 
-        /* value */ js.UndefOr[js.Array[String]], 
-        Unit
-      ]
-    ], 
-    js.Promise[
-      ReturnType[
-        js.Function3[
-          /* elementId */ String, 
-          /* text */ String, 
-          /* value */ js.UndefOr[js.Array[String]], 
-          Unit
-        ]
-      ]
-    ]
+    /* args */ Parameters[js.Function2[/* elementId */ String, /* text */ String, Unit]], 
+    js.Promise[ReturnType[js.Function2[/* elementId */ String, /* text */ String, Unit]]]
   ] = js.native
   @JSName("elementSubmit")
   var elementSubmit_Original: js.Function1[
@@ -487,6 +499,11 @@ trait AsyncClient extends js.Object {
   var getLogs_Original: js.Function1[
     /* args */ Parameters[js.Function1[/* type */ String, js.Array[js.Object]]], 
     js.Promise[ReturnType[js.Function1[/* type */ String, js.Array[js.Object]]]]
+  ] = js.native
+  @JSName("getMockCalls")
+  var getMockCalls_Original: js.Function1[
+    /* args */ Parameters[js.Function1[/* mockId */ String, ProtocolCommandResponse]], 
+    js.Promise[ReturnType[js.Function1[/* mockId */ String, ProtocolCommandResponse]]]
   ] = js.native
   @JSName("getNamedCookie")
   var getNamedCookie_Original: js.Function1[
@@ -768,6 +785,11 @@ trait AsyncClient extends js.Object {
     /* args */ Parameters[js.Function0[Unit]], 
     js.Promise[ReturnType[js.Function0[Unit]]]
   ] = js.native
+  @JSName("launchChromeApp")
+  var launchChromeApp_Original: js.Function1[
+    /* args */ Parameters[js.Function1[/* id */ String, Unit]], 
+    js.Promise[ReturnType[js.Function1[/* id */ String, Unit]]]
+  ] = js.native
   @JSName("lock")
   var lock_Original: js.Function1[
     /* args */ Parameters[js.Function1[/* seconds */ js.UndefOr[Double], Unit]], 
@@ -813,6 +835,17 @@ trait AsyncClient extends js.Object {
   var minimizeWindow_Original: js.Function1[
     /* args */ Parameters[js.Function0[RectReturn]], 
     js.Promise[ReturnType[js.Function0[RectReturn]]]
+  ] = js.native
+  @JSName("mockRequest")
+  var mockRequest_Original: js.Function1[
+    /* args */ Parameters[
+      js.Function2[/* url */ String, /* filterOptions */ js.UndefOr[js.Object], ProtocolCommandResponse]
+    ], 
+    js.Promise[
+      ReturnType[
+        js.Function2[/* url */ String, /* filterOptions */ js.UndefOr[js.Object], ProtocolCommandResponse]
+      ]
+    ]
   ] = js.native
   @JSName("moveToElement")
   var moveToElement_Original: js.Function1[
@@ -962,6 +995,11 @@ trait AsyncClient extends js.Object {
   var reset_Original: js.Function1[
     /* args */ Parameters[js.Function0[Unit]], 
     js.Promise[ReturnType[js.Function0[Unit]]]
+  ] = js.native
+  @JSName("respondMock")
+  var respondMock_Original: js.Function1[
+    /* args */ Parameters[js.Function2[/* mockId */ String, /* payload */ js.Object, Unit]], 
+    js.Promise[ReturnType[js.Function2[/* mockId */ String, /* payload */ js.Object, Unit]]]
   ] = js.native
   @JSName("resume")
   var resume_Original: js.Function1[
@@ -1472,6 +1510,9 @@ trait AsyncClient extends js.Object {
   def clearLocalStorage(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
+  def clearMockCalls(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function2[/* mockId */ String, /* restore */ Boolean, Unit]]
+  ): js.Promise[ReturnType[js.Function2[/* mockId */ String, /* restore */ Boolean, Unit]]] = js.native
   def clearSessionStorage(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
@@ -1481,6 +1522,27 @@ trait AsyncClient extends js.Object {
   def closeWindow(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
+  def compareImages(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[
+      js.Function4[
+        /* mode */ String, 
+        /* firstImage */ String, 
+        /* secondImage */ String, 
+        /* options */ js.Object, 
+        ProtocolCommandResponse
+      ]
+    ]
+  ): js.Promise[
+    ReturnType[
+      js.Function4[
+        /* mode */ String, 
+        /* firstImage */ String, 
+        /* secondImage */ String, 
+        /* options */ js.Object, 
+        ProtocolCommandResponse
+      ]
+    ]
+  ] = js.native
   def createWindow(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* type */ String, WindowHandle]]
   ): js.Promise[ReturnType[js.Function1[/* type */ String, WindowHandle]]] = js.native
@@ -1542,24 +1604,8 @@ trait AsyncClient extends js.Object {
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* elementId */ String, Unit]]
   ): js.Promise[ReturnType[js.Function1[/* elementId */ String, Unit]]] = js.native
   def elementSendKeys(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[
-      js.Function3[
-        /* elementId */ String, 
-        /* text */ String, 
-        /* value */ js.UndefOr[js.Array[String]], 
-        Unit
-      ]
-    ]
-  ): js.Promise[
-    ReturnType[
-      js.Function3[
-        /* elementId */ String, 
-        /* text */ String, 
-        /* value */ js.UndefOr[js.Array[String]], 
-        Unit
-      ]
-    ]
-  ] = js.native
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function2[/* elementId */ String, /* text */ String, Unit]]
+  ): js.Promise[ReturnType[js.Function2[/* elementId */ String, /* text */ String, Unit]]] = js.native
   def elementSubmit(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* elementId */ String, Unit]]
   ): js.Promise[ReturnType[js.Function1[/* elementId */ String, Unit]]] = js.native
@@ -1739,6 +1785,9 @@ trait AsyncClient extends js.Object {
   def getLogs(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* type */ String, js.Array[js.Object]]]
   ): js.Promise[ReturnType[js.Function1[/* type */ String, js.Array[js.Object]]]] = js.native
+  def getMockCalls(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* mockId */ String, ProtocolCommandResponse]]
+  ): js.Promise[ReturnType[js.Function1[/* mockId */ String, ProtocolCommandResponse]]] = js.native
   def getNamedCookie(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* name */ String, Cookie]]
   ): js.Promise[ReturnType[js.Function1[/* name */ String, Cookie]]] = js.native
@@ -1931,6 +1980,9 @@ trait AsyncClient extends js.Object {
   def launchApp(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
+  def launchChromeApp(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* id */ String, Unit]]
+  ): js.Promise[ReturnType[js.Function1[/* id */ String, Unit]]] = js.native
   def lock(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function1[/* seconds */ js.UndefOr[Double], Unit]]
   ): js.Promise[ReturnType[js.Function1[/* seconds */ js.UndefOr[Double], Unit]]] = js.native
@@ -1965,6 +2017,15 @@ trait AsyncClient extends js.Object {
   def minimizeWindow(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[RectReturn]]
   ): js.Promise[ReturnType[js.Function0[RectReturn]]] = js.native
+  def mockRequest(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[
+      js.Function2[/* url */ String, /* filterOptions */ js.UndefOr[js.Object], ProtocolCommandResponse]
+    ]
+  ): js.Promise[
+    ReturnType[
+      js.Function2[/* url */ String, /* filterOptions */ js.UndefOr[js.Object], ProtocolCommandResponse]
+    ]
+  ] = js.native
   def moveToElement(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[
       js.Function3[
@@ -2072,6 +2133,9 @@ trait AsyncClient extends js.Object {
   def reset(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native
+  def respondMock(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function2[/* mockId */ String, /* payload */ js.Object, Unit]]
+  ): js.Promise[ReturnType[js.Function2[/* mockId */ String, /* payload */ js.Object, Unit]]] = js.native
   def resume(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<WebDriver.Client[K]> is not an array type */ args: Parameters[js.Function0[Unit]]
   ): js.Promise[ReturnType[js.Function0[Unit]]] = js.native

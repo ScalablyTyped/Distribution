@@ -18,11 +18,32 @@ trait DescribeSnapshotSchedulesOutputMessage extends js.Object {
 
 object DescribeSnapshotSchedulesOutputMessage {
   @scala.inline
-  def apply(Marker: String = null, SnapshotSchedules: SnapshotScheduleList = null): DescribeSnapshotSchedulesOutputMessage = {
+  def apply(): DescribeSnapshotSchedulesOutputMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (SnapshotSchedules != null) __obj.updateDynamic("SnapshotSchedules")(SnapshotSchedules.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSnapshotSchedulesOutputMessage]
   }
+  @scala.inline
+  implicit class DescribeSnapshotSchedulesOutputMessageOps[Self <: DescribeSnapshotSchedulesOutputMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setSnapshotSchedulesVarargs(value: SnapshotSchedule*): Self = this.set("SnapshotSchedules", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotSchedules(value: SnapshotScheduleList): Self = this.set("SnapshotSchedules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotSchedules: Self = this.set("SnapshotSchedules", js.undefined)
+  }
+  
 }
 

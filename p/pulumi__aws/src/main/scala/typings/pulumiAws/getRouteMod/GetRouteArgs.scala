@@ -50,29 +50,60 @@ trait GetRouteArgs extends js.Object {
 
 object GetRouteArgs {
   @scala.inline
-  def apply(
-    routeTableId: String,
-    destinationCidrBlock: String = null,
-    destinationIpv6CidrBlock: String = null,
-    egressOnlyGatewayId: String = null,
-    gatewayId: String = null,
-    instanceId: String = null,
-    natGatewayId: String = null,
-    networkInterfaceId: String = null,
-    transitGatewayId: String = null,
-    vpcPeeringConnectionId: String = null
-  ): GetRouteArgs = {
+  def apply(routeTableId: String): GetRouteArgs = {
     val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any])
-    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
-    if (destinationIpv6CidrBlock != null) __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock.asInstanceOf[js.Any])
-    if (egressOnlyGatewayId != null) __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId.asInstanceOf[js.Any])
-    if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (natGatewayId != null) __obj.updateDynamic("natGatewayId")(natGatewayId.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
-    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRouteArgs]
   }
+  @scala.inline
+  implicit class GetRouteArgsOps[Self <: GetRouteArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRouteTableId(value: String): Self = this.set("routeTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationCidrBlock(value: String): Self = this.set("destinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("destinationCidrBlock", js.undefined)
+    @scala.inline
+    def setDestinationIpv6CidrBlock(value: String): Self = this.set("destinationIpv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationIpv6CidrBlock: Self = this.set("destinationIpv6CidrBlock", js.undefined)
+    @scala.inline
+    def setEgressOnlyGatewayId(value: String): Self = this.set("egressOnlyGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgressOnlyGatewayId: Self = this.set("egressOnlyGatewayId", js.undefined)
+    @scala.inline
+    def setGatewayId(value: String): Self = this.set("gatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayId: Self = this.set("gatewayId", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setNatGatewayId(value: String): Self = this.set("natGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNatGatewayId: Self = this.set("natGatewayId", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: String): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: String): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: String): Self = this.set("vpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("vpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__signaling
 
-Typings are for version 1.3.6
+Typings are for version 1.4.3
 
 ## Library description:
 Lumino Signals and Slots
@@ -10,9 +10,9 @@ Lumino Signals and Slots
 | ------------------ | :-------------: |
 | Full name          | @lumino/signaling |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 11933 |
+| # releases         | 10 |
+| # dependents       | 73 |
+| # downloads        | 326703 |
 | # stars            | 0 |
 
 ## Links

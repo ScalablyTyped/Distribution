@@ -15,11 +15,32 @@ trait SchemaBoundingPoly extends js.Object {
 
 object SchemaBoundingPoly {
   @scala.inline
-  def apply(label: String = null, vertices: js.Array[SchemaVertex] = null): SchemaBoundingPoly = {
+  def apply(): SchemaBoundingPoly = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (vertices != null) __obj.updateDynamic("vertices")(vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBoundingPoly]
   }
+  @scala.inline
+  implicit class SchemaBoundingPolyOps[Self <: SchemaBoundingPoly] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setVerticesVarargs(value: SchemaVertex*): Self = this.set("vertices", js.Array(value :_*))
+    @scala.inline
+    def setVertices(value: js.Array[SchemaVertex]): Self = this.set("vertices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertices: Self = this.set("vertices", js.undefined)
+  }
+  
 }
 

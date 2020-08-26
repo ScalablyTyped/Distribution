@@ -30,6 +30,7 @@ object componentMod extends js.Object {
     def getComponent(key: String, index: Double): Component = js.native
     def getComponents(key: String): js.Array[Component] = js.native
     def getEl(): HTMLElement = js.native
+    def getEl(key: js.UndefOr[scala.Nothing], index: Double): HTMLElement = js.native
     def getEl(key: String): HTMLElement = js.native
     def getEl(key: String, index: Double): HTMLElement = js.native
     def getElId(key: String): String = js.native

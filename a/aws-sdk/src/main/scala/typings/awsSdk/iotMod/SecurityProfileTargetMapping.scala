@@ -18,11 +18,30 @@ trait SecurityProfileTargetMapping extends js.Object {
 
 object SecurityProfileTargetMapping {
   @scala.inline
-  def apply(securityProfileIdentifier: SecurityProfileIdentifier = null, target: SecurityProfileTarget = null): SecurityProfileTargetMapping = {
+  def apply(): SecurityProfileTargetMapping = {
     val __obj = js.Dynamic.literal()
-    if (securityProfileIdentifier != null) __obj.updateDynamic("securityProfileIdentifier")(securityProfileIdentifier.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityProfileTargetMapping]
   }
+  @scala.inline
+  implicit class SecurityProfileTargetMappingOps[Self <: SecurityProfileTargetMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecurityProfileIdentifier(value: SecurityProfileIdentifier): Self = this.set("securityProfileIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityProfileIdentifier: Self = this.set("securityProfileIdentifier", js.undefined)
+    @scala.inline
+    def setTarget(value: SecurityProfileTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

@@ -27,12 +27,34 @@ trait SchemaThreatListDescriptor extends js.Object {
 
 object SchemaThreatListDescriptor {
   @scala.inline
-  def apply(platformType: String = null, threatEntryType: String = null, threatType: String = null): SchemaThreatListDescriptor = {
+  def apply(): SchemaThreatListDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaThreatListDescriptor]
   }
+  @scala.inline
+  implicit class SchemaThreatListDescriptorOps[Self <: SchemaThreatListDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    @scala.inline
+    def setThreatEntryType(value: String): Self = this.set("threatEntryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatEntryType: Self = this.set("threatEntryType", js.undefined)
+    @scala.inline
+    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatType: Self = this.set("threatType", js.undefined)
+  }
+  
 }
 

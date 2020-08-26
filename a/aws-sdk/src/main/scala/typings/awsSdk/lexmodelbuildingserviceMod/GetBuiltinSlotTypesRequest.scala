@@ -26,18 +26,38 @@ trait GetBuiltinSlotTypesRequest extends js.Object {
 
 object GetBuiltinSlotTypesRequest {
   @scala.inline
-  def apply(
-    locale: Locale = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    signatureContains: String = null
-  ): GetBuiltinSlotTypesRequest = {
+  def apply(): GetBuiltinSlotTypesRequest = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (signatureContains != null) __obj.updateDynamic("signatureContains")(signatureContains.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBuiltinSlotTypesRequest]
   }
+  @scala.inline
+  implicit class GetBuiltinSlotTypesRequestOps[Self <: GetBuiltinSlotTypesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSignatureContains(value: String): Self = this.set("signatureContains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureContains: Self = this.set("signatureContains", js.undefined)
+  }
+  
 }
 

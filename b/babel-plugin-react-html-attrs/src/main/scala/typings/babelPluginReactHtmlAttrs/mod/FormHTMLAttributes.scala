@@ -4,53 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormHTMLAttributes[T] extends HTMLAttributes[T] {
-  var `accept-charset`: js.UndefOr[String] = js.undefined
-  var acceptCharset: js.UndefOr[String] = js.undefined
-  var action: js.UndefOr[String] = js.undefined
-  var autoComplete: js.UndefOr[String] = js.undefined
-  var autocomplete: js.UndefOr[String] = js.undefined
-  var encType: js.UndefOr[String] = js.undefined
-  var enctype: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noValidate: js.UndefOr[Boolean] = js.undefined
-  var novalidate: js.UndefOr[Boolean | String] = js.undefined
-  var target: js.UndefOr[String] = js.undefined
+  var `accept-charset`: js.UndefOr[String] = js.native
+  var acceptCharset: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.native
+  var autocomplete: js.UndefOr[String] = js.native
+  var encType: js.UndefOr[String] = js.native
+  var enctype: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noValidate: js.UndefOr[Boolean] = js.native
+  var novalidate: js.UndefOr[Boolean | String] = js.native
+  var target: js.UndefOr[String] = js.native
 }
 
 object FormHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    `accept-charset`: String = null,
-    acceptCharset: String = null,
-    action: String = null,
-    autoComplete: String = null,
-    autocomplete: String = null,
-    encType: String = null,
-    enctype: String = null,
-    method: String = null,
-    name: String = null,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    novalidate: Boolean | String = null,
-    target: String = null
-  ): FormHTMLAttributes[T] = {
+  def apply[T](): FormHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (`accept-charset` != null) __obj.updateDynamic("accept-charset")(`accept-charset`.asInstanceOf[js.Any])
-    if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
-    if (novalidate != null) __obj.updateDynamic("novalidate")(novalidate.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class FormHTMLAttributesOps[Self <: FormHTMLAttributes[_], T] (val x: Self with FormHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAccept-charset`(value: String): Self = this.set("accept-charset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAccept-charset`: Self = this.set("accept-charset", js.undefined)
+    @scala.inline
+    def setAcceptCharset(value: String): Self = this.set("acceptCharset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptCharset: Self = this.set("acceptCharset", js.undefined)
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAutoComplete(value: String): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    @scala.inline
+    def setEncType(value: String): Self = this.set("encType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncType: Self = this.set("encType", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoValidate(value: Boolean): Self = this.set("noValidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoValidate: Self = this.set("noValidate", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

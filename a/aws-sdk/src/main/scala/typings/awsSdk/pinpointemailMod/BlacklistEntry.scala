@@ -22,16 +22,34 @@ trait BlacklistEntry extends js.Object {
 
 object BlacklistEntry {
   @scala.inline
-  def apply(
-    Description: BlacklistingDescription = null,
-    ListingTime: Timestamp = null,
-    RblName: RblName = null
-  ): BlacklistEntry = {
+  def apply(): BlacklistEntry = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ListingTime != null) __obj.updateDynamic("ListingTime")(ListingTime.asInstanceOf[js.Any])
-    if (RblName != null) __obj.updateDynamic("RblName")(RblName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlacklistEntry]
   }
+  @scala.inline
+  implicit class BlacklistEntryOps[Self <: BlacklistEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: BlacklistingDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setListingTime(value: Timestamp): Self = this.set("ListingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListingTime: Self = this.set("ListingTime", js.undefined)
+    @scala.inline
+    def setRblName(value: RblName): Self = this.set("RblName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRblName: Self = this.set("RblName", js.undefined)
+  }
+  
 }
 

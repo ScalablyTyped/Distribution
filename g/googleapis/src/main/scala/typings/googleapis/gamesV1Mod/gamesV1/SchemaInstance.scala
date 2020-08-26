@@ -52,28 +52,58 @@ trait SchemaInstance extends js.Object {
 
 object SchemaInstance {
   @scala.inline
-  def apply(
-    acquisitionUri: String = null,
-    androidInstance: SchemaInstanceAndroidDetails = null,
-    iosInstance: SchemaInstanceIosDetails = null,
-    kind: String = null,
-    name: String = null,
-    platformType: String = null,
-    realtimePlay: js.UndefOr[Boolean] = js.undefined,
-    turnBasedPlay: js.UndefOr[Boolean] = js.undefined,
-    webInstance: SchemaInstanceWebDetails = null
-  ): SchemaInstance = {
+  def apply(): SchemaInstance = {
     val __obj = js.Dynamic.literal()
-    if (acquisitionUri != null) __obj.updateDynamic("acquisitionUri")(acquisitionUri.asInstanceOf[js.Any])
-    if (androidInstance != null) __obj.updateDynamic("androidInstance")(androidInstance.asInstanceOf[js.Any])
-    if (iosInstance != null) __obj.updateDynamic("iosInstance")(iosInstance.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtimePlay)) __obj.updateDynamic("realtimePlay")(realtimePlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(turnBasedPlay)) __obj.updateDynamic("turnBasedPlay")(turnBasedPlay.get.asInstanceOf[js.Any])
-    if (webInstance != null) __obj.updateDynamic("webInstance")(webInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstance]
   }
+  @scala.inline
+  implicit class SchemaInstanceOps[Self <: SchemaInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcquisitionUri(value: String): Self = this.set("acquisitionUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcquisitionUri: Self = this.set("acquisitionUri", js.undefined)
+    @scala.inline
+    def setAndroidInstance(value: SchemaInstanceAndroidDetails): Self = this.set("androidInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidInstance: Self = this.set("androidInstance", js.undefined)
+    @scala.inline
+    def setIosInstance(value: SchemaInstanceIosDetails): Self = this.set("iosInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosInstance: Self = this.set("iosInstance", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    @scala.inline
+    def setRealtimePlay(value: Boolean): Self = this.set("realtimePlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealtimePlay: Self = this.set("realtimePlay", js.undefined)
+    @scala.inline
+    def setTurnBasedPlay(value: Boolean): Self = this.set("turnBasedPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTurnBasedPlay: Self = this.set("turnBasedPlay", js.undefined)
+    @scala.inline
+    def setWebInstance(value: SchemaInstanceWebDetails): Self = this.set("webInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebInstance: Self = this.set("webInstance", js.undefined)
+  }
+  
 }
 

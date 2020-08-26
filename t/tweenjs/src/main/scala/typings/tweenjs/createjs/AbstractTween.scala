@@ -34,7 +34,26 @@ trait AbstractTween extends EventDispatcher {
   def resolve(positionOrLabel: Double): Double = js.native
   def setLabels(labels: js.Array[StringDictionary[Double]]): Unit = js.native
   def setPosition(rawPosition: Double): Unit = js.native
+  def setPosition(
+    rawPosition: Double,
+    ignoreActions: js.UndefOr[scala.Nothing],
+    jump: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* tween */ this.type, Unit]
+  ): Unit = js.native
+  def setPosition(rawPosition: Double, ignoreActions: js.UndefOr[scala.Nothing], jump: Boolean): Unit = js.native
+  def setPosition(
+    rawPosition: Double,
+    ignoreActions: js.UndefOr[scala.Nothing],
+    jump: Boolean,
+    callback: js.Function1[/* tween */ this.type, Unit]
+  ): Unit = js.native
   def setPosition(rawPosition: Double, ignoreActions: Boolean): Unit = js.native
+  def setPosition(
+    rawPosition: Double,
+    ignoreActions: Boolean,
+    jump: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* tween */ this.type, Unit]
+  ): Unit = js.native
   def setPosition(rawPosition: Double, ignoreActions: Boolean, jump: Boolean): Unit = js.native
   def setPosition(
     rawPosition: Double,

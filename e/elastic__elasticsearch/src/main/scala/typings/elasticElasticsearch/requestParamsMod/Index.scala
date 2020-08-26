@@ -12,69 +12,94 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Index[T] extends Generic {
-  var body: T
-  var id: js.UndefOr[String] = js.undefined
-  var if_primary_term: js.UndefOr[Double] = js.undefined
-  var if_seq_no: js.UndefOr[Double] = js.undefined
-  var index: String
-  var op_type: js.UndefOr[index | create] = js.undefined
-  var pipeline: js.UndefOr[String] = js.undefined
-  var refresh: js.UndefOr[`true` | `false` | wait_for] = js.undefined
-  var routing: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
-  var version_type: js.UndefOr[internal | external | external_gte] = js.undefined
-  var wait_for_active_shards: js.UndefOr[String] = js.undefined
+  var body: T = js.native
+  var id: js.UndefOr[String] = js.native
+  var if_primary_term: js.UndefOr[Double] = js.native
+  var if_seq_no: js.UndefOr[Double] = js.native
+  var index: String = js.native
+  var op_type: js.UndefOr[index | create] = js.native
+  var pipeline: js.UndefOr[String] = js.native
+  var refresh: js.UndefOr[`true` | `false` | wait_for] = js.native
+  var routing: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var version: js.UndefOr[Double] = js.native
+  var version_type: js.UndefOr[internal | external | external_gte] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.native
 }
 
 object Index {
   @scala.inline
-  def apply[T](
-    body: T,
-    index: String,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    if_primary_term: js.UndefOr[Double] = js.undefined,
-    if_seq_no: js.UndefOr[Double] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    method: String = null,
-    op_type: index | create = null,
-    pipeline: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    refresh: `true` | `false` | wait_for = null,
-    routing: String = null,
-    source: String = null,
-    timeout: String = null,
-    `type`: String = null,
-    version: js.UndefOr[Double] = js.undefined,
-    version_type: internal | external | external_gte = null,
-    wait_for_active_shards: String = null
-  ): Index[T] = {
+  def apply[T](body: T, index: String): Index[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(if_primary_term)) __obj.updateDynamic("if_primary_term")(if_primary_term.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(if_seq_no)) __obj.updateDynamic("if_seq_no")(if_seq_no.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (op_type != null) __obj.updateDynamic("op_type")(op_type.asInstanceOf[js.Any])
-    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
-    if (version_type != null) __obj.updateDynamic("version_type")(version_type.asInstanceOf[js.Any])
-    if (wait_for_active_shards != null) __obj.updateDynamic("wait_for_active_shards")(wait_for_active_shards.asInstanceOf[js.Any])
     __obj.asInstanceOf[Index[T]]
   }
+  @scala.inline
+  implicit class IndexOps[Self <: Index[_], T] (val x: Self with Index[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIf_primary_term(value: Double): Self = this.set("if_primary_term", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIf_primary_term: Self = this.set("if_primary_term", js.undefined)
+    @scala.inline
+    def setIf_seq_no(value: Double): Self = this.set("if_seq_no", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIf_seq_no: Self = this.set("if_seq_no", js.undefined)
+    @scala.inline
+    def setOp_type(value: index | create): Self = this.set("op_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOp_type: Self = this.set("op_type", js.undefined)
+    @scala.inline
+    def setPipeline(value: String): Self = this.set("pipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipeline: Self = this.set("pipeline", js.undefined)
+    @scala.inline
+    def setRefresh(value: `true` | `false` | wait_for): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    @scala.inline
+    def setRouting(value: String): Self = this.set("routing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouting: Self = this.set("routing", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersion_type(value: internal | external | external_gte): Self = this.set("version_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion_type: Self = this.set("version_type", js.undefined)
+    @scala.inline
+    def setWait_for_active_shards(value: String): Self = this.set("wait_for_active_shards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWait_for_active_shards: Self = this.set("wait_for_active_shards", js.undefined)
+  }
+  
 }
 

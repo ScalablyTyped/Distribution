@@ -20,13 +20,37 @@ class Subscriber[T] ()
   def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
   def this(destinationOrNext: PartialObserver[_]) = this()
   def this(
+    destinationOrNext: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
+  ) = this()
+  def this(
     destinationOrNext: js.Function1[/* value */ T, Unit],
     error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
   ) = this()
   def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
   def this(
+    destinationOrNext: js.UndefOr[scala.Nothing],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ) = this()
+  def this(
+    destinationOrNext: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+    complete: js.Function0[Unit]
+  ) = this()
+  def this(
+    destinationOrNext: js.Function1[/* value */ T, Unit],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ) = this()
+  def this(
     destinationOrNext: js.Function1[/* value */ T, Unit],
     error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+    complete: js.Function0[Unit]
+  ) = this()
+  def this(
+    destinationOrNext: PartialObserver[_],
+    error: js.UndefOr[scala.Nothing],
     complete: js.Function0[Unit]
   ) = this()
   def this(
@@ -53,7 +77,19 @@ object Subscriber extends js.Object {
     * @nocollapse
     */
   def create[T](): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+  def create[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+  def create[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+  def create[T](
+    next: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+    complete: js.Function0[Unit]
+  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
   def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): typings.rxjs.subscriberMod.Subscriber[T] = js.native
+  def create[T](
+    next: js.Function1[/* x */ js.UndefOr[T], Unit],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): typings.rxjs.subscriberMod.Subscriber[T] = js.native
   def create[T](
     next: js.Function1[/* x */ js.UndefOr[T], Unit],
     error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]

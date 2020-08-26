@@ -4,27 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Name extends js.Object {
-  var name: js.UndefOr[String] = js.undefined
-  var npmDependencies: js.UndefOr[js.Object] = js.undefined
-  var sources: js.UndefOr[js.Array[String]] = js.undefined
-  var use: js.UndefOr[String | js.Array[String]] = js.undefined
+  var name: js.UndefOr[String] = js.native
+  var npmDependencies: js.UndefOr[js.Object] = js.native
+  var sources: js.UndefOr[js.Array[String]] = js.native
+  var use: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object Name {
   @scala.inline
-  def apply(
-    name: String = null,
-    npmDependencies: js.Object = null,
-    sources: js.Array[String] = null,
-    use: String | js.Array[String] = null
-  ): Name = {
+  def apply(): Name = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (npmDependencies != null) __obj.updateDynamic("npmDependencies")(npmDependencies.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
-    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
+  @scala.inline
+  implicit class NameOps[Self <: Name] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNpmDependencies(value: js.Object): Self = this.set("npmDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNpmDependencies: Self = this.set("npmDependencies", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: String*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: js.Array[String]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+    @scala.inline
+    def setUseVarargs(value: String*): Self = this.set("use", js.Array(value :_*))
+    @scala.inline
+    def setUse(value: String | js.Array[String]): Self = this.set("use", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUse: Self = this.set("use", js.undefined)
+  }
+  
 }
 

@@ -15,11 +15,32 @@ trait TabWrapperProps extends js.Object {
 
 object TabWrapperProps {
   @scala.inline
-  def apply(active: Boolean, children: ReactNode = null, render: () => Element = null): TabWrapperProps = {
+  def apply(active: Boolean): TabWrapperProps = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction0(render))
     __obj.asInstanceOf[TabWrapperProps]
   }
+  @scala.inline
+  implicit class TabWrapperPropsOps[Self <: TabWrapperProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setRender(value: () => Element): Self = this.set("render", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+  }
+  
 }
 

@@ -19,14 +19,30 @@ trait UserPoolDeviceConfiguration extends js.Object {
 
 object UserPoolDeviceConfiguration {
   @scala.inline
-  def apply(
-    challengeRequiredOnNewDevice: Input[Boolean] = null,
-    deviceOnlyRememberedOnUserPrompt: Input[Boolean] = null
-  ): UserPoolDeviceConfiguration = {
+  def apply(): UserPoolDeviceConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (challengeRequiredOnNewDevice != null) __obj.updateDynamic("challengeRequiredOnNewDevice")(challengeRequiredOnNewDevice.asInstanceOf[js.Any])
-    if (deviceOnlyRememberedOnUserPrompt != null) __obj.updateDynamic("deviceOnlyRememberedOnUserPrompt")(deviceOnlyRememberedOnUserPrompt.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolDeviceConfiguration]
   }
+  @scala.inline
+  implicit class UserPoolDeviceConfigurationOps[Self <: UserPoolDeviceConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChallengeRequiredOnNewDevice(value: Input[Boolean]): Self = this.set("challengeRequiredOnNewDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeRequiredOnNewDevice: Self = this.set("challengeRequiredOnNewDevice", js.undefined)
+    @scala.inline
+    def setDeviceOnlyRememberedOnUserPrompt(value: Input[Boolean]): Self = this.set("deviceOnlyRememberedOnUserPrompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceOnlyRememberedOnUserPrompt: Self = this.set("deviceOnlyRememberedOnUserPrompt", js.undefined)
+  }
+  
 }
 

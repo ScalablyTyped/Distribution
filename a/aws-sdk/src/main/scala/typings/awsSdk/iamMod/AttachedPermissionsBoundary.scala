@@ -18,14 +18,30 @@ trait AttachedPermissionsBoundary extends js.Object {
 
 object AttachedPermissionsBoundary {
   @scala.inline
-  def apply(
-    PermissionsBoundaryArn: arnType = null,
-    PermissionsBoundaryType: PermissionsBoundaryAttachmentType = null
-  ): AttachedPermissionsBoundary = {
+  def apply(): AttachedPermissionsBoundary = {
     val __obj = js.Dynamic.literal()
-    if (PermissionsBoundaryArn != null) __obj.updateDynamic("PermissionsBoundaryArn")(PermissionsBoundaryArn.asInstanceOf[js.Any])
-    if (PermissionsBoundaryType != null) __obj.updateDynamic("PermissionsBoundaryType")(PermissionsBoundaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachedPermissionsBoundary]
   }
+  @scala.inline
+  implicit class AttachedPermissionsBoundaryOps[Self <: AttachedPermissionsBoundary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPermissionsBoundaryArn(value: arnType): Self = this.set("PermissionsBoundaryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundaryArn: Self = this.set("PermissionsBoundaryArn", js.undefined)
+    @scala.inline
+    def setPermissionsBoundaryType(value: PermissionsBoundaryAttachmentType): Self = this.set("PermissionsBoundaryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundaryType: Self = this.set("PermissionsBoundaryType", js.undefined)
+  }
+  
 }
 

@@ -39,22 +39,46 @@ trait SchemaBudget extends js.Object {
 
 object SchemaBudget {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    billingId: String = null,
-    budgetAmount: String = null,
-    currencyCode: String = null,
-    id: String = null,
-    kind: String = null
-  ): SchemaBudget = {
+  def apply(): SchemaBudget = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (billingId != null) __obj.updateDynamic("billingId")(billingId.asInstanceOf[js.Any])
-    if (budgetAmount != null) __obj.updateDynamic("budgetAmount")(budgetAmount.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBudget]
   }
+  @scala.inline
+  implicit class SchemaBudgetOps[Self <: SchemaBudget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setBillingId(value: String): Self = this.set("billingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingId: Self = this.set("billingId", js.undefined)
+    @scala.inline
+    def setBudgetAmount(value: String): Self = this.set("budgetAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudgetAmount: Self = this.set("budgetAmount", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

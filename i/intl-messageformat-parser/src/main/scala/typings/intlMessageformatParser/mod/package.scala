@@ -19,6 +19,7 @@ package object mod {
     - typings.intlMessageformatParser.mod.TimeElement
     - typings.intlMessageformatParser.mod.SelectElement
     - typings.intlMessageformatParser.mod.PluralElement
+    - typings.intlMessageformatParser.mod.TagElement
     - typings.intlMessageformatParser.mod.PoundElement
   */
   type MessageFormatElement = typings.intlMessageformatParser.mod._MessageFormatElement | typings.intlMessageformatParser.mod.LiteralElement | typings.intlMessageformatParser.mod.ArgumentElement | typings.intlMessageformatParser.mod.NumberElement | typings.intlMessageformatParser.mod.DateElement | typings.intlMessageformatParser.mod.TimeElement
@@ -26,6 +27,7 @@ package object mod {
     typings.intlMessageformatParser.mod.TYPE.number, 
     typings.intlMessageformatParser.mod.NumberSkeleton
   ]
+  type NumberFormatOptionsNotation = typings.intlMessageformatParser.mod.NumberFormatNotation
   type ParseFunction = js.Function2[
     /* input */ java.lang.String, 
     /* options */ js.UndefOr[typings.intlMessageformatParser.mod.IParseOptions], 

@@ -30,5 +30,26 @@ object CreateScalingPlanRequest {
     val __obj = js.Dynamic.literal(ApplicationSource = ApplicationSource.asInstanceOf[js.Any], ScalingInstructions = ScalingInstructions.asInstanceOf[js.Any], ScalingPlanName = ScalingPlanName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateScalingPlanRequest]
   }
+  @scala.inline
+  implicit class CreateScalingPlanRequestOps[Self <: CreateScalingPlanRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationSource(value: ApplicationSource): Self = this.set("ApplicationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingInstructionsVarargs(value: ScalingInstruction*): Self = this.set("ScalingInstructions", js.Array(value :_*))
+    @scala.inline
+    def setScalingInstructions(value: ScalingInstructions): Self = this.set("ScalingInstructions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScalingPlanName(value: ScalingPlanName): Self = this.set("ScalingPlanName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

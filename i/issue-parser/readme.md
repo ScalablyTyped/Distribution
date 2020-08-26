@@ -10,9 +10,9 @@ Parser for Github, GitLab and Bitbucket issues actions, references and mentions
 | ------------------ | :-------------: |
 | Full name          | issue-parser |
 | Keywords           | bitbucket, close, duplicate, fix, github, gitlab, issues, mentions, parser, pr, pull-request, references, resolve |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 6 |
-| # downloads        | 5250336 |
+| # downloads        | 5299176 |
 | # stars            | 0 |
 
 ## Links

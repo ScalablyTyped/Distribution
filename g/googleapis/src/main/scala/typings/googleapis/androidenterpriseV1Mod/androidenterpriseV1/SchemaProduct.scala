@@ -129,58 +129,130 @@ trait SchemaProduct extends js.Object {
 
 object SchemaProduct {
   @scala.inline
-  def apply(
-    appTracks: js.Array[SchemaTrackInfo] = null,
-    appVersion: js.Array[SchemaAppVersion] = null,
-    authorName: String = null,
-    availableCountries: js.Array[String] = null,
-    availableTracks: js.Array[String] = null,
-    category: String = null,
-    contentRating: String = null,
-    description: String = null,
-    detailsUrl: String = null,
-    distributionChannel: String = null,
-    iconUrl: String = null,
-    kind: String = null,
-    lastUpdatedTimestampMillis: String = null,
-    minAndroidSdkVersion: js.UndefOr[Double] = js.undefined,
-    permissions: js.Array[SchemaProductPermission] = null,
-    productId: String = null,
-    productPricing: String = null,
-    recentChanges: String = null,
-    requiresContainerApp: js.UndefOr[Boolean] = js.undefined,
-    screenshotUrls: js.Array[String] = null,
-    signingCertificate: SchemaProductSigningCertificate = null,
-    smallIconUrl: String = null,
-    title: String = null,
-    workDetailsUrl: String = null
-  ): SchemaProduct = {
+  def apply(): SchemaProduct = {
     val __obj = js.Dynamic.literal()
-    if (appTracks != null) __obj.updateDynamic("appTracks")(appTracks.asInstanceOf[js.Any])
-    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
-    if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
-    if (availableCountries != null) __obj.updateDynamic("availableCountries")(availableCountries.asInstanceOf[js.Any])
-    if (availableTracks != null) __obj.updateDynamic("availableTracks")(availableTracks.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (contentRating != null) __obj.updateDynamic("contentRating")(contentRating.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (detailsUrl != null) __obj.updateDynamic("detailsUrl")(detailsUrl.asInstanceOf[js.Any])
-    if (distributionChannel != null) __obj.updateDynamic("distributionChannel")(distributionChannel.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastUpdatedTimestampMillis != null) __obj.updateDynamic("lastUpdatedTimestampMillis")(lastUpdatedTimestampMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(minAndroidSdkVersion)) __obj.updateDynamic("minAndroidSdkVersion")(minAndroidSdkVersion.get.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (productPricing != null) __obj.updateDynamic("productPricing")(productPricing.asInstanceOf[js.Any])
-    if (recentChanges != null) __obj.updateDynamic("recentChanges")(recentChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresContainerApp)) __obj.updateDynamic("requiresContainerApp")(requiresContainerApp.get.asInstanceOf[js.Any])
-    if (screenshotUrls != null) __obj.updateDynamic("screenshotUrls")(screenshotUrls.asInstanceOf[js.Any])
-    if (signingCertificate != null) __obj.updateDynamic("signingCertificate")(signingCertificate.asInstanceOf[js.Any])
-    if (smallIconUrl != null) __obj.updateDynamic("smallIconUrl")(smallIconUrl.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (workDetailsUrl != null) __obj.updateDynamic("workDetailsUrl")(workDetailsUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProduct]
   }
+  @scala.inline
+  implicit class SchemaProductOps[Self <: SchemaProduct] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppTracksVarargs(value: SchemaTrackInfo*): Self = this.set("appTracks", js.Array(value :_*))
+    @scala.inline
+    def setAppTracks(value: js.Array[SchemaTrackInfo]): Self = this.set("appTracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppTracks: Self = this.set("appTracks", js.undefined)
+    @scala.inline
+    def setAppVersionVarargs(value: SchemaAppVersion*): Self = this.set("appVersion", js.Array(value :_*))
+    @scala.inline
+    def setAppVersion(value: js.Array[SchemaAppVersion]): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersion: Self = this.set("appVersion", js.undefined)
+    @scala.inline
+    def setAuthorName(value: String): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    @scala.inline
+    def setAvailableCountriesVarargs(value: String*): Self = this.set("availableCountries", js.Array(value :_*))
+    @scala.inline
+    def setAvailableCountries(value: js.Array[String]): Self = this.set("availableCountries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableCountries: Self = this.set("availableCountries", js.undefined)
+    @scala.inline
+    def setAvailableTracksVarargs(value: String*): Self = this.set("availableTracks", js.Array(value :_*))
+    @scala.inline
+    def setAvailableTracks(value: js.Array[String]): Self = this.set("availableTracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableTracks: Self = this.set("availableTracks", js.undefined)
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setContentRating(value: String): Self = this.set("contentRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentRating: Self = this.set("contentRating", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDetailsUrl(value: String): Self = this.set("detailsUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailsUrl: Self = this.set("detailsUrl", js.undefined)
+    @scala.inline
+    def setDistributionChannel(value: String): Self = this.set("distributionChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionChannel: Self = this.set("distributionChannel", js.undefined)
+    @scala.inline
+    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimestampMillis(value: String): Self = this.set("lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestampMillis: Self = this.set("lastUpdatedTimestampMillis", js.undefined)
+    @scala.inline
+    def setMinAndroidSdkVersion(value: Double): Self = this.set("minAndroidSdkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAndroidSdkVersion: Self = this.set("minAndroidSdkVersion", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: SchemaProductPermission*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[SchemaProductPermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setProductPricing(value: String): Self = this.set("productPricing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductPricing: Self = this.set("productPricing", js.undefined)
+    @scala.inline
+    def setRecentChanges(value: String): Self = this.set("recentChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecentChanges: Self = this.set("recentChanges", js.undefined)
+    @scala.inline
+    def setRequiresContainerApp(value: Boolean): Self = this.set("requiresContainerApp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresContainerApp: Self = this.set("requiresContainerApp", js.undefined)
+    @scala.inline
+    def setScreenshotUrlsVarargs(value: String*): Self = this.set("screenshotUrls", js.Array(value :_*))
+    @scala.inline
+    def setScreenshotUrls(value: js.Array[String]): Self = this.set("screenshotUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenshotUrls: Self = this.set("screenshotUrls", js.undefined)
+    @scala.inline
+    def setSigningCertificate(value: SchemaProductSigningCertificate): Self = this.set("signingCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningCertificate: Self = this.set("signingCertificate", js.undefined)
+    @scala.inline
+    def setSmallIconUrl(value: String): Self = this.set("smallIconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmallIconUrl: Self = this.set("smallIconUrl", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWorkDetailsUrl(value: String): Self = this.set("workDetailsUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkDetailsUrl: Self = this.set("workDetailsUrl", js.undefined)
+  }
+  
 }
 

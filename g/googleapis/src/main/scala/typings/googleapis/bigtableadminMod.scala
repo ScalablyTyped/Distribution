@@ -43,7 +43,7 @@ object bigtableadminMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Bigtableadmin
               ]
             ]
@@ -53,7 +53,7 @@ object bigtableadminMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin
               ]
             ]

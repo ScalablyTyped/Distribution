@@ -71,11 +71,29 @@ object open extends js.Object {
   def apply(
     path: PathLike,
     flags: String,
-    mode: js.UndefOr[Double | Null | String],
-    callback: js.Function2[ErrnoException | Null, /* fd */ Double, Unit]
+    mode: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(path: PathLike, flags: String, mode: String): js.Promise[Double] = js.native
+  def apply(
+    path: PathLike,
+    flags: String,
+    mode: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
   def apply(path: PathLike, flags: String, mode: Double): js.Promise[Double] = js.native
+  def apply(
+    path: PathLike,
+    flags: String,
+    mode: Double,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    flags: String,
+    mode: Null,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
   def apply(path: PathLike, flags: Double): js.Promise[Double] = js.native
   def apply(
     path: PathLike,
@@ -85,10 +103,28 @@ object open extends js.Object {
   def apply(
     path: PathLike,
     flags: Double,
-    mode: js.UndefOr[Double | Null | String],
-    callback: js.Function2[ErrnoException | Null, /* fd */ Double, Unit]
+    mode: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
   ): Unit = js.native
   def apply(path: PathLike, flags: Double, mode: String): js.Promise[Double] = js.native
+  def apply(
+    path: PathLike,
+    flags: Double,
+    mode: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
   def apply(path: PathLike, flags: Double, mode: Double): js.Promise[Double] = js.native
+  def apply(
+    path: PathLike,
+    flags: Double,
+    mode: Double,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    flags: Double,
+    mode: Null,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* fd */ Double, Unit]
+  ): Unit = js.native
 }
 

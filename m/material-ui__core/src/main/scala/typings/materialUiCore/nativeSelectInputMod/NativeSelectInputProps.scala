@@ -27,24 +27,52 @@ trait NativeSelectInputProps extends js.Object {
 
 object NativeSelectInputProps {
   @scala.inline
-  def apply(
-    IconComponent: ReactType[_] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    inputRef: /* ref */ HTMLSelectElement | Node => Unit = null,
-    name: String = null,
-    onChange: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit = null,
-    value: (js.Array[String | Double | Boolean]) | String | Double | Boolean = null,
-    variant: standard | outlined | filled = null
-  ): NativeSelectInputProps = {
+  def apply(): NativeSelectInputProps = {
     val __obj = js.Dynamic.literal()
-    if (IconComponent != null) __obj.updateDynamic("IconComponent")(IconComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeSelectInputProps]
   }
+  @scala.inline
+  implicit class NativeSelectInputPropsOps[Self <: NativeSelectInputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIconComponent(value: ReactType[_]): Self = this.set("IconComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconComponent: Self = this.set("IconComponent", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setInputRef(value: /* ref */ HTMLSelectElement | Node => Unit): Self = this.set("inputRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInputRef: Self = this.set("inputRef", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: (/* event */ ChangeEvent[HTMLSelectElement], /* child */ ReactNode) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: (String | Double | Boolean)*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: (js.Array[String | Double | Boolean]) | String | Double | Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVariant(value: standard | outlined | filled): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+  }
+  
 }
 

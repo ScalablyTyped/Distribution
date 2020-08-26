@@ -41,7 +41,7 @@ object redisMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Redis]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Redis]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object redisMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.redisV1beta1Mod.redisV1beta1.Redis
               ]
             ]

@@ -1,6 +1,5 @@
 package typings.jimpCore.etcMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.jimpCore.jimpCoreStrings.`before-change`
 import typings.jimpCore.jimpCoreStrings.changed
 import typings.jimpCore.jimpCoreStrings.clone
@@ -22,13 +21,8 @@ object ListenerData {
     __obj.asInstanceOf[ListenerData[T]]
   }
   @scala.inline
-  def Dictkey[/* <: typings.jimpCore.etcMod.ListenableName */ T](
-    eventName: `before-change` | changed,
-    methodName: T,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
-  ): ListenerData[T] = {
+  def Dictkey[/* <: typings.jimpCore.etcMod.ListenableName */ T](eventName: `before-change` | changed, methodName: T): ListenerData[T] = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ListenerData[T]]
   }
 }

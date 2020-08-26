@@ -1,46 +1,55 @@
 package typings.kendoUi.kendo.data
 
-import typings.kendoUi.kendoUiStrings.create
-import typings.kendoUi.kendoUiStrings.destroy
-import typings.kendoUi.kendoUiStrings.read
-import typings.kendoUi.kendoUiStrings.update
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceTransportWithObjectOperations extends DataSourceTransport {
   @JSName("create")
-  var create_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportCreate] = js.undefined
+  var create_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportCreate] = js.native
   @JSName("destroy")
-  var destroy_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportDestroy] = js.undefined
+  var destroy_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportDestroy] = js.native
   @JSName("read")
-  var read_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportRead] = js.undefined
+  var read_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportRead] = js.native
   @JSName("update")
-  var update_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportUpdate] = js.undefined
+  var update_DataSourceTransportWithObjectOperations: js.UndefOr[DataSourceTransportUpdate] = js.native
 }
 
 object DataSourceTransportWithObjectOperations {
   @scala.inline
-  def apply(
-    create: DataSourceTransportCreate = null,
-    destroy: DataSourceTransportDestroy = null,
-    parameterMap: (/* data */ DataSourceTransportParameterMapData, /* type */ create | destroy | read | update) => _ = null,
-    push: js.Function = null,
-    read: DataSourceTransportRead = null,
-    signalr: DataSourceTransportSignalr | (js.Function1[/* options */ DataSourceTransportOptions, Unit]) = null,
-    submit: js.Function = null,
-    update: DataSourceTransportUpdate = null
-  ): DataSourceTransportWithObjectOperations = {
+  def apply(): DataSourceTransportWithObjectOperations = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (parameterMap != null) __obj.updateDynamic("parameterMap")(js.Any.fromFunction2(parameterMap))
-    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (signalr != null) __obj.updateDynamic("signalr")(signalr.asInstanceOf[js.Any])
-    if (submit != null) __obj.updateDynamic("submit")(submit.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportWithObjectOperations]
   }
+  @scala.inline
+  implicit class DataSourceTransportWithObjectOperationsOps[Self <: DataSourceTransportWithObjectOperations] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: DataSourceTransportCreate): Self = this.set("create", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setDestroy(value: DataSourceTransportDestroy): Self = this.set("destroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setRead(value: DataSourceTransportRead): Self = this.set("read", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRead: Self = this.set("read", js.undefined)
+    @scala.inline
+    def setUpdate(value: DataSourceTransportUpdate): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+  }
+  
 }
 

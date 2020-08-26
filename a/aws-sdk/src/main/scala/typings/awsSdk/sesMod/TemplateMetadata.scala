@@ -18,11 +18,30 @@ trait TemplateMetadata extends js.Object {
 
 object TemplateMetadata {
   @scala.inline
-  def apply(CreatedTimestamp: Timestamp = null, Name: TemplateName = null): TemplateMetadata = {
+  def apply(): TemplateMetadata = {
     val __obj = js.Dynamic.literal()
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateMetadata]
   }
+  @scala.inline
+  implicit class TemplateMetadataOps[Self <: TemplateMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTimestamp(value: Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: TemplateName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

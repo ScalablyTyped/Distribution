@@ -15,6 +15,7 @@ trait Aws extends js.Object {
   def getServerlessDeploymentBucketName(): String = js.native
   def getStage(): String = js.native
   def request(service: String, method: String): js.Promise[_] = js.native
+  def request(service: String, method: String, params: js.UndefOr[scala.Nothing], options: Region): js.Promise[_] = js.native
   def request(service: String, method: String, params: js.Object): js.Promise[_] = js.native
   def request(service: String, method: String, params: js.Object, options: Region): js.Promise[_] = js.native
 }

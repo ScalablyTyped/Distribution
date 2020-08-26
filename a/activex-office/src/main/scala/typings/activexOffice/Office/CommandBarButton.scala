@@ -50,6 +50,7 @@ trait CommandBarButton extends js.Object {
   val accParent: js.Any = js.native
   val accSelection: js.Any = js.native
   def Copy(): CommandBarControl = js.native
+  def Copy(Bar: js.UndefOr[scala.Nothing], Before: Double): CommandBarControl = js.native
   def Copy(Bar: CommandBar): CommandBarControl = js.native
   def Copy(Bar: CommandBar, Before: Double): CommandBarControl = js.native
   def CopyFace(): Unit = js.native
@@ -57,6 +58,7 @@ trait CommandBarButton extends js.Object {
   def Delete(Temporary: Boolean): Unit = js.native
   def Execute(): Unit = js.native
   def Move(): CommandBarControl = js.native
+  def Move(Bar: js.UndefOr[scala.Nothing], Before: Double): CommandBarControl = js.native
   def Move(Bar: CommandBar): CommandBarControl = js.native
   def Move(Bar: CommandBar, Before: Double): CommandBarControl = js.native
   def PasteFace(): Unit = js.native

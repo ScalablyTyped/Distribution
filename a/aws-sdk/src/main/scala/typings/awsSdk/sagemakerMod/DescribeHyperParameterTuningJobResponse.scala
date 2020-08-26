@@ -77,26 +77,71 @@ object DescribeHyperParameterTuningJobResponse {
     HyperParameterTuningJobName: HyperParameterTuningJobName,
     HyperParameterTuningJobStatus: HyperParameterTuningJobStatus,
     ObjectiveStatusCounters: ObjectiveStatusCounters,
-    TrainingJobStatusCounters: TrainingJobStatusCounters,
-    BestTrainingJob: HyperParameterTrainingJobSummary = null,
-    FailureReason: FailureReason = null,
-    HyperParameterTuningEndTime: Timestamp = null,
-    LastModifiedTime: Timestamp = null,
-    OverallBestTrainingJob: HyperParameterTrainingJobSummary = null,
-    TrainingJobDefinition: HyperParameterTrainingJobDefinition = null,
-    TrainingJobDefinitions: HyperParameterTrainingJobDefinitions = null,
-    WarmStartConfig: HyperParameterTuningJobWarmStartConfig = null
+    TrainingJobStatusCounters: TrainingJobStatusCounters
   ): DescribeHyperParameterTuningJobResponse = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], HyperParameterTuningJobArn = HyperParameterTuningJobArn.asInstanceOf[js.Any], HyperParameterTuningJobConfig = HyperParameterTuningJobConfig.asInstanceOf[js.Any], HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any], HyperParameterTuningJobStatus = HyperParameterTuningJobStatus.asInstanceOf[js.Any], ObjectiveStatusCounters = ObjectiveStatusCounters.asInstanceOf[js.Any], TrainingJobStatusCounters = TrainingJobStatusCounters.asInstanceOf[js.Any])
-    if (BestTrainingJob != null) __obj.updateDynamic("BestTrainingJob")(BestTrainingJob.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (HyperParameterTuningEndTime != null) __obj.updateDynamic("HyperParameterTuningEndTime")(HyperParameterTuningEndTime.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (OverallBestTrainingJob != null) __obj.updateDynamic("OverallBestTrainingJob")(OverallBestTrainingJob.asInstanceOf[js.Any])
-    if (TrainingJobDefinition != null) __obj.updateDynamic("TrainingJobDefinition")(TrainingJobDefinition.asInstanceOf[js.Any])
-    if (TrainingJobDefinitions != null) __obj.updateDynamic("TrainingJobDefinitions")(TrainingJobDefinitions.asInstanceOf[js.Any])
-    if (WarmStartConfig != null) __obj.updateDynamic("WarmStartConfig")(WarmStartConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHyperParameterTuningJobResponse]
   }
+  @scala.inline
+  implicit class DescribeHyperParameterTuningJobResponseOps[Self <: DescribeHyperParameterTuningJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHyperParameterTuningJobArn(value: HyperParameterTuningJobArn): Self = this.set("HyperParameterTuningJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHyperParameterTuningJobConfig(value: HyperParameterTuningJobConfig): Self = this.set("HyperParameterTuningJobConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = this.set("HyperParameterTuningJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHyperParameterTuningJobStatus(value: HyperParameterTuningJobStatus): Self = this.set("HyperParameterTuningJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectiveStatusCounters(value: ObjectiveStatusCounters): Self = this.set("ObjectiveStatusCounters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingJobStatusCounters(value: TrainingJobStatusCounters): Self = this.set("TrainingJobStatusCounters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBestTrainingJob(value: HyperParameterTrainingJobSummary): Self = this.set("BestTrainingJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBestTrainingJob: Self = this.set("BestTrainingJob", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setHyperParameterTuningEndTime(value: Timestamp): Self = this.set("HyperParameterTuningEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperParameterTuningEndTime: Self = this.set("HyperParameterTuningEndTime", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setOverallBestTrainingJob(value: HyperParameterTrainingJobSummary): Self = this.set("OverallBestTrainingJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverallBestTrainingJob: Self = this.set("OverallBestTrainingJob", js.undefined)
+    @scala.inline
+    def setTrainingJobDefinition(value: HyperParameterTrainingJobDefinition): Self = this.set("TrainingJobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobDefinition: Self = this.set("TrainingJobDefinition", js.undefined)
+    @scala.inline
+    def setTrainingJobDefinitionsVarargs(value: HyperParameterTrainingJobDefinition*): Self = this.set("TrainingJobDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setTrainingJobDefinitions(value: HyperParameterTrainingJobDefinitions): Self = this.set("TrainingJobDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobDefinitions: Self = this.set("TrainingJobDefinitions", js.undefined)
+    @scala.inline
+    def setWarmStartConfig(value: HyperParameterTuningJobWarmStartConfig): Self = this.set("WarmStartConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmStartConfig: Self = this.set("WarmStartConfig", js.undefined)
+  }
+  
 }
 

@@ -29,16 +29,38 @@ trait SchemaDocumentChange extends js.Object {
 
 object SchemaDocumentChange {
   @scala.inline
-  def apply(
-    document: SchemaDocument = null,
-    removedTargetIds: js.Array[Double] = null,
-    targetIds: js.Array[Double] = null
-  ): SchemaDocumentChange = {
+  def apply(): SchemaDocumentChange = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds.asInstanceOf[js.Any])
-    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDocumentChange]
   }
+  @scala.inline
+  implicit class SchemaDocumentChangeOps[Self <: SchemaDocumentChange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocument(value: SchemaDocument): Self = this.set("document", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocument: Self = this.set("document", js.undefined)
+    @scala.inline
+    def setRemovedTargetIdsVarargs(value: Double*): Self = this.set("removedTargetIds", js.Array(value :_*))
+    @scala.inline
+    def setRemovedTargetIds(value: js.Array[Double]): Self = this.set("removedTargetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemovedTargetIds: Self = this.set("removedTargetIds", js.undefined)
+    @scala.inline
+    def setTargetIdsVarargs(value: Double*): Self = this.set("targetIds", js.Array(value :_*))
+    @scala.inline
+    def setTargetIds(value: js.Array[Double]): Self = this.set("targetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIds: Self = this.set("targetIds", js.undefined)
+  }
+  
 }
 

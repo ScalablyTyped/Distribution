@@ -1,33 +1,43 @@
 package typings.grommet.anon
 
+import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Heading extends js.Object {
-  var heading: js.UndefOr[Level] = js.undefined
-  var icons: js.UndefOr[Previous] = js.undefined
-  var large: js.UndefOr[DaySize] = js.undefined
-  var medium: js.UndefOr[DaySize] = js.undefined
-  var small: js.UndefOr[DaySize] = js.undefined
+  var color: js.UndefOr[ColorType] = js.native
+   // deprecated
+  var heading: js.UndefOr[`0`] = js.native
 }
 
 object Heading {
   @scala.inline
-  def apply(
-    heading: Level = null,
-    icons: Previous = null,
-    large: DaySize = null,
-    medium: DaySize = null,
-    small: DaySize = null
-  ): Heading = {
+  def apply(): Heading = {
     val __obj = js.Dynamic.literal()
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
-    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Heading]
   }
+  @scala.inline
+  implicit class HeadingOps[Self <: Heading] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: ColorType): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHeading(value: `0`): Self = this.set("heading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeading: Self = this.set("heading", js.undefined)
+  }
+  
 }
 

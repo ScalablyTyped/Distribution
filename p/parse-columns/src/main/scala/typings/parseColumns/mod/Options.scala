@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options[ValuesType /* <: js.Any */] extends js.Object {
   /**
   		Headers to use instead of the existing ones.
   		*/
-  val headers: js.UndefOr[js.Array[String]] = js.undefined
+  val headers: js.UndefOr[js.Array[String]] = js.native
   /**
   		Separator to split columns on.
   		@default ' '
   		*/
-  val separator: js.UndefOr[String] = js.undefined
+  val separator: js.UndefOr[String] = js.native
   /**
   		Transform elements.
   		Useful for being able to cleanup or change the type of elements.
@@ -26,21 +27,43 @@ trait Options[ValuesType /* <: js.Any */] extends js.Object {
       /* rowIndex */ Double, 
       ValuesType
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply[/* <: js.Any */ ValuesType](
-    headers: js.Array[String] = null,
-    separator: String = null,
-    transform: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => ValuesType = null
-  ): Options[ValuesType] = {
+  def apply[/* <: js.Any */ ValuesType](): Options[ValuesType] = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction4(transform))
     __obj.asInstanceOf[Options[ValuesType]]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options[_], /* <: js.Any */ ValuesType] (val x: Self with Options[ValuesType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeadersVarargs(value: String*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[String]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setTransform(
+      value: (/* element */ String, /* header */ String, /* columnIndex */ Double, /* rowIndex */ Double) => ValuesType
+    ): Self = this.set("transform", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

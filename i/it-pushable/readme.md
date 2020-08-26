@@ -11,8 +11,8 @@ Pushable iterable
 | Full name          | it-pushable |
 | Keywords           | push, iterable, iterator, pushable |
 | # releases         | 11 |
-| # dependents       | 6 |
-| # downloads        | 16923 |
+| # dependents       | 10 |
+| # downloads        | 22146 |
 | # stars            | 0 |
 
 ## Links

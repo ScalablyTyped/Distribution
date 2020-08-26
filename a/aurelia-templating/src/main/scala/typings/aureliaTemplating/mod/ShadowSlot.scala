@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShadowSlot () extends js.Object {
   def this(anchor: js.Any) = this()
+  def this(anchor: js.UndefOr[scala.Nothing], name: js.Any) = this()
   def this(anchor: js.Any, name: js.Any) = this()
+  def this(anchor: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], fallbackFactory: js.Any) = this()
+  def this(anchor: js.UndefOr[scala.Nothing], name: js.Any, fallbackFactory: js.Any) = this()
+  def this(anchor: js.Any, name: js.UndefOr[scala.Nothing], fallbackFactory: js.Any) = this()
   def this(anchor: js.Any, name: js.Any, fallbackFactory: js.Any) = this()
   var needsFallbackRendering: js.Any = js.native
   /**
@@ -19,9 +23,145 @@ class ShadowSlot () extends js.Object {
     * @param {string} destination
     */
   def addNode(): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.UndefOr[scala.Nothing], node: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.UndefOr[scala.Nothing], node: js.Any): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.UndefOr[scala.Nothing], node: js.Any, projectionSource: js.Any): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.UndefOr[scala.Nothing], node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def addNode(
+    view: js.UndefOr[scala.Nothing],
+    node: js.Any,
+    projectionSource: js.Any,
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
   def addNode(view: js.Any): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.Any, node: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.Any, node: js.UndefOr[scala.Nothing], projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
   def addNode(view: js.Any, node: js.Any): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
+  def addNode(view: js.Any, node: js.Any, projectionSource: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any,
+    destination: js.Any
+  ): js.Any = js.native
   def addNode(view: js.Any, node: js.Any, projectionSource: js.Any): js.Any = js.native
+  def addNode(
+    view: js.Any,
+    node: js.Any,
+    projectionSource: js.Any,
+    index: js.UndefOr[scala.Nothing],
+    destination: js.Any
+  ): js.Any = js.native
   def addNode(view: js.Any, node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
   def addNode(view: js.Any, node: js.Any, projectionSource: js.Any, index: js.Any, destination: js.Any): js.Any = js.native
   def attached(): js.Any = js.native
@@ -41,6 +181,7 @@ class ShadowSlot () extends js.Object {
     * @param {ViewSlot} projectionSource
     */
   def projectFrom(): js.Any = js.native
+  def projectFrom(view: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
   def projectFrom(view: js.Any): js.Any = js.native
   def projectFrom(view: js.Any, projectionSource: js.Any): js.Any = js.native
   /**
@@ -58,6 +199,7 @@ class ShadowSlot () extends js.Object {
     * @param {ViewSlot} projectionSource
     */
   def removeView(): js.Any = js.native
+  def removeView(view: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
   def removeView(view: js.Any): js.Any = js.native
   def removeView(view: js.Any, projectionSource: js.Any): js.Any = js.native
   /**
@@ -67,8 +209,39 @@ class ShadowSlot () extends js.Object {
     * @param {number} index
     */
   def renderFallbackContent(): js.Any = js.native
+  def renderFallbackContent(
+    view: js.UndefOr[scala.Nothing],
+    nodes: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def renderFallbackContent(
+    view: js.UndefOr[scala.Nothing],
+    nodes: js.UndefOr[scala.Nothing],
+    projectionSource: js.Any,
+    index: js.Any
+  ): js.Any = js.native
+  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.Any): js.Any = js.native
+  def renderFallbackContent(
+    view: js.UndefOr[scala.Nothing],
+    nodes: js.Any,
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.Any, projectionSource: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any): js.Any = js.native
+  def renderFallbackContent(
+    view: js.Any,
+    nodes: js.UndefOr[scala.Nothing],
+    projectionSource: js.UndefOr[scala.Nothing],
+    index: js.Any
+  ): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: js.UndefOr[scala.Nothing], projectionSource: js.Any, index: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any, nodes: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
   def unbind(): js.Any = js.native

@@ -38,21 +38,48 @@ trait DeleteStackInstancesInput extends js.Object {
 
 object DeleteStackInstancesInput {
   @scala.inline
-  def apply(
-    Regions: RegionList,
-    RetainStacks: RetainStacks,
-    StackSetName: StackSetName,
-    Accounts: AccountList = null,
-    DeploymentTargets: DeploymentTargets = null,
-    OperationId: ClientRequestToken = null,
-    OperationPreferences: StackSetOperationPreferences = null
-  ): DeleteStackInstancesInput = {
+  def apply(Regions: RegionList, RetainStacks: RetainStacks, StackSetName: StackSetName): DeleteStackInstancesInput = {
     val __obj = js.Dynamic.literal(Regions = Regions.asInstanceOf[js.Any], RetainStacks = RetainStacks.asInstanceOf[js.Any], StackSetName = StackSetName.asInstanceOf[js.Any])
-    if (Accounts != null) __obj.updateDynamic("Accounts")(Accounts.asInstanceOf[js.Any])
-    if (DeploymentTargets != null) __obj.updateDynamic("DeploymentTargets")(DeploymentTargets.asInstanceOf[js.Any])
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
-    if (OperationPreferences != null) __obj.updateDynamic("OperationPreferences")(OperationPreferences.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteStackInstancesInput]
   }
+  @scala.inline
+  implicit class DeleteStackInstancesInputOps[Self <: DeleteStackInstancesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegionsVarargs(value: Region*): Self = this.set("Regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: RegionList): Self = this.set("Regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetainStacks(value: RetainStacks): Self = this.set("RetainStacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountsVarargs(value: Account*): Self = this.set("Accounts", js.Array(value :_*))
+    @scala.inline
+    def setAccounts(value: AccountList): Self = this.set("Accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccounts: Self = this.set("Accounts", js.undefined)
+    @scala.inline
+    def setDeploymentTargets(value: DeploymentTargets): Self = this.set("DeploymentTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentTargets: Self = this.set("DeploymentTargets", js.undefined)
+    @scala.inline
+    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    @scala.inline
+    def setOperationPreferences(value: StackSetOperationPreferences): Self = this.set("OperationPreferences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationPreferences: Self = this.set("OperationPreferences", js.undefined)
+  }
+  
 }
 

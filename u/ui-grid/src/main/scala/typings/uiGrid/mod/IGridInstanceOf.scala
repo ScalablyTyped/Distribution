@@ -51,6 +51,7 @@ trait IGridInstanceOf[TEntity] extends js.Object {
     * @param {boolean} stopColumnBuild Prevents the buildColumn callback from being triggered. This is useful to improve performance of the grid during initial load.
     */
   def addRowHeaderColumn(colDef: IColumnDefOf[TEntity]): Unit = js.native
+  def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: js.UndefOr[scala.Nothing], stopColumnBuild: Boolean): Unit = js.native
   def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: Double): Unit = js.native
   def addRowHeaderColumn(colDef: IColumnDefOf[TEntity], order: Double, stopColumnBuild: Boolean): Unit = js.native
   /**
@@ -379,6 +380,7 @@ trait IGridInstanceOf[TEntity] extends js.Object {
   def scrollTo(): IPromise[_] = js.native
   def scrollTo(rowEntity: TEntity): IPromise[_] = js.native
   def scrollTo(rowEntity: TEntity, colDef: IColumnDefOf[TEntity]): IPromise[_] = js.native
+  def scrollTo(rowEntity: js.UndefOr[scala.Nothing], colDef: IColumnDefOf[TEntity]): IPromise[_] = js.native
   /**
     * Scrolls the grid to make a certain row and column combo visible,
     * in the case that it is not completely visible on the screen already.
@@ -399,6 +401,7 @@ trait IGridInstanceOf[TEntity] extends js.Object {
     * @returns {ng.IPromise<IGridColumn>} A resolved promise that supplies the column.
     */
   def sortColumn(column: IGridColumnOf[TEntity]): IPromise[IGridColumnOf[TEntity]] = js.native
+  def sortColumn(column: IGridColumnOf[TEntity], direction: js.UndefOr[scala.Nothing], add: Boolean): IPromise[IGridColumnOf[TEntity]] = js.native
   def sortColumn(column: IGridColumnOf[TEntity], direction: String): IPromise[IGridColumnOf[TEntity]] = js.native
   def sortColumn(column: IGridColumnOf[TEntity], direction: String, add: Boolean): IPromise[IGridColumnOf[TEntity]] = js.native
   /**

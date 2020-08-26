@@ -38,24 +38,52 @@ trait VpcLink extends js.Object {
 
 object VpcLink {
   @scala.inline
-  def apply(
-    description: String = null,
-    id: String = null,
-    name: String = null,
-    status: VpcLinkStatus = null,
-    statusMessage: String = null,
-    tags: MapOfStringToString = null,
-    targetArns: ListOfString = null
-  ): VpcLink = {
+  def apply(): VpcLink = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetArns != null) __obj.updateDynamic("targetArns")(targetArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcLink]
   }
+  @scala.inline
+  implicit class VpcLinkOps[Self <: VpcLink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: VpcLinkStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetArnsVarargs(value: String*): Self = this.set("targetArns", js.Array(value :_*))
+    @scala.inline
+    def setTargetArns(value: ListOfString): Self = this.set("targetArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetArns: Self = this.set("targetArns", js.undefined)
+  }
+  
 }
 

@@ -5,35 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFileUploadOptions extends FileUploadOptions {
-  var encodeURI: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var encodeURI: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object IFileUploadOptions {
   @scala.inline
-  def apply(
-    chunkedMode: js.UndefOr[Boolean] = js.undefined,
-    encodeURI: js.UndefOr[Boolean] = js.undefined,
-    fileKey: String = null,
-    fileName: String = null,
-    headers: js.Object = null,
-    httpMethod: String = null,
-    mimeType: String = null,
-    params: js.Object = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): IFileUploadOptions = {
+  def apply(): IFileUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkedMode)) __obj.updateDynamic("chunkedMode")(chunkedMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodeURI)) __obj.updateDynamic("encodeURI")(encodeURI.get.asInstanceOf[js.Any])
-    if (fileKey != null) __obj.updateDynamic("fileKey")(fileKey.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileUploadOptions]
   }
+  @scala.inline
+  implicit class IFileUploadOptionsOps[Self <: IFileUploadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncodeURI(value: Boolean): Self = this.set("encodeURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodeURI: Self = this.set("encodeURI", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

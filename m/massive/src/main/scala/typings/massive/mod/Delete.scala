@@ -13,6 +13,11 @@ class Delete protected () extends js.Object {
   def this(source: Readable, criteria: Double) = this()
   def this(source: Readable, criteria: AnyObject[_]) = this()
   def this(source: Readable, criteria: UUID) = this()
+  def this(
+    source: Readable,
+    criteria: js.UndefOr[scala.Nothing],
+    options: ResultProcessingOptions with InheritanceOptions
+  ) = this()
   def this(source: Readable, criteria: Double, options: ResultProcessingOptions with InheritanceOptions) = this()
   def this(source: Readable, criteria: AnyObject[_], options: ResultProcessingOptions with InheritanceOptions) = this()
   def this(source: Readable, criteria: UUID, options: ResultProcessingOptions with InheritanceOptions) = this()

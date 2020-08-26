@@ -30,20 +30,42 @@ trait Mp3Settings extends js.Object {
 
 object Mp3Settings {
   @scala.inline
-  def apply(
-    Bitrate: js.UndefOr[integerMin16000Max320000] = js.undefined,
-    Channels: js.UndefOr[integerMin1Max2] = js.undefined,
-    RateControlMode: Mp3RateControlMode = null,
-    SampleRate: js.UndefOr[integerMin22050Max48000] = js.undefined,
-    VbrQuality: js.UndefOr[integerMin0Max9] = js.undefined
-  ): Mp3Settings = {
+  def apply(): Mp3Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels.get.asInstanceOf[js.Any])
-    if (RateControlMode != null) __obj.updateDynamic("RateControlMode")(RateControlMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VbrQuality)) __obj.updateDynamic("VbrQuality")(VbrQuality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mp3Settings]
   }
+  @scala.inline
+  implicit class Mp3SettingsOps[Self <: Mp3Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBitrate(value: integerMin16000Max320000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    @scala.inline
+    def setChannels(value: integerMin1Max2): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("Channels", js.undefined)
+    @scala.inline
+    def setRateControlMode(value: Mp3RateControlMode): Self = this.set("RateControlMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRateControlMode: Self = this.set("RateControlMode", js.undefined)
+    @scala.inline
+    def setSampleRate(value: integerMin22050Max48000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    @scala.inline
+    def setVbrQuality(value: integerMin0Max9): Self = this.set("VbrQuality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVbrQuality: Self = this.set("VbrQuality", js.undefined)
+  }
+  
 }
 

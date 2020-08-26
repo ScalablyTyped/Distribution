@@ -2,8 +2,6 @@ package typings.preact.mod.h.JSX
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.preact.mod.ClassAttributes
-import typings.preact.mod.Key
-import typings.preact.mod.Ref
 import typings.preact.preactStrings.`lazy`
 import typings.preact.preactStrings.auto
 import typings.preact.preactStrings.eager
@@ -14,466 +12,749 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HTMLAttributes[RefType /* <: EventTarget */]
   extends ClassAttributes[RefType]
      with typings.preact.jsxMod.JSXInternal.DOMAttributes[RefType] {
   // RDFa Attributes
-  var about: js.UndefOr[String] = js.undefined
+  var about: js.UndefOr[String] = js.native
   // Standard HTML Attributes
-  var accept: js.UndefOr[String] = js.undefined
-  var acceptCharset: js.UndefOr[String] = js.undefined
-  var accessKey: js.UndefOr[String] = js.undefined
-  var action: js.UndefOr[String] = js.undefined
-  var allowFullScreen: js.UndefOr[Boolean] = js.undefined
-  var allowTransparency: js.UndefOr[Boolean] = js.undefined
-  var alt: js.UndefOr[String] = js.undefined
-  var as: js.UndefOr[String] = js.undefined
-  var async: js.UndefOr[Boolean] = js.undefined
-  var autoComplete: js.UndefOr[String] = js.undefined
-  var autoCorrect: js.UndefOr[String] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var autocomplete: js.UndefOr[String] = js.undefined
-  var autocorrect: js.UndefOr[String] = js.undefined
-  var autofocus: js.UndefOr[Boolean] = js.undefined
-  var capture: js.UndefOr[Boolean] = js.undefined
-  var cellPadding: js.UndefOr[Double | String] = js.undefined
-  var cellSpacing: js.UndefOr[Double | String] = js.undefined
-  var challenge: js.UndefOr[String] = js.undefined
-  var charSet: js.UndefOr[String] = js.undefined
-  var checked: js.UndefOr[Boolean] = js.undefined
-  var `class`: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var colSpan: js.UndefOr[Double] = js.undefined
-  var cols: js.UndefOr[Double] = js.undefined
-  var content: js.UndefOr[String] = js.undefined
-  var contentEditable: js.UndefOr[Boolean] = js.undefined
-  var contextMenu: js.UndefOr[String] = js.undefined
-  var controls: js.UndefOr[Boolean] = js.undefined
-  var controlsList: js.UndefOr[String] = js.undefined
-  var coords: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[String] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
-  var dateTime: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[Boolean] = js.undefined
-  var defer: js.UndefOr[Boolean] = js.undefined
-  var dir: js.UndefOr[auto | rtl | ltr] = js.undefined
-  var disableRemotePlayback: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var download: js.UndefOr[js.Any] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
-  var encType: js.UndefOr[String] = js.undefined
-  var `for`: js.UndefOr[String] = js.undefined
-  var form: js.UndefOr[String] = js.undefined
-  var formAction: js.UndefOr[String] = js.undefined
-  var formEncType: js.UndefOr[String] = js.undefined
-  var formMethod: js.UndefOr[String] = js.undefined
-  var formNoValidate: js.UndefOr[Boolean] = js.undefined
-  var formTarget: js.UndefOr[String] = js.undefined
-  var frameBorder: js.UndefOr[Double | String] = js.undefined
-  var headers: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var high: js.UndefOr[Double] = js.undefined
-  var href: js.UndefOr[String] = js.undefined
-  var hrefLang: js.UndefOr[String] = js.undefined
-  var htmlFor: js.UndefOr[String] = js.undefined
-  var httpEquiv: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inlist: js.UndefOr[js.Any] = js.undefined
-  var inputMode: js.UndefOr[String] = js.undefined
-  var integrity: js.UndefOr[String] = js.undefined
-  var is: js.UndefOr[String] = js.undefined
-  var itemID: js.UndefOr[String] = js.undefined
+  var accept: js.UndefOr[String] = js.native
+  var acceptCharset: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.native
+  var allowFullScreen: js.UndefOr[Boolean] = js.native
+  var allowTransparency: js.UndefOr[Boolean] = js.native
+  var alt: js.UndefOr[String] = js.native
+  var as: js.UndefOr[String] = js.native
+  var async: js.UndefOr[Boolean] = js.native
+  var autoComplete: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autocomplete: js.UndefOr[String] = js.native
+  var autocorrect: js.UndefOr[String] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.native
+  var capture: js.UndefOr[Boolean] = js.native
+  var cellPadding: js.UndefOr[Double | String] = js.native
+  var cellSpacing: js.UndefOr[Double | String] = js.native
+  var challenge: js.UndefOr[String] = js.native
+  var charSet: js.UndefOr[String] = js.native
+  var checked: js.UndefOr[Boolean] = js.native
+  var `class`: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var colSpan: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.native
+  var content: js.UndefOr[String] = js.native
+  var contentEditable: js.UndefOr[Boolean] = js.native
+  var contextMenu: js.UndefOr[String] = js.native
+  var controls: js.UndefOr[Boolean] = js.native
+  var controlsList: js.UndefOr[String] = js.native
+  var coords: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.native
+  var dateTime: js.UndefOr[String] = js.native
+  var default: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.native
+  var dir: js.UndefOr[auto | rtl | ltr] = js.native
+  var disableRemotePlayback: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[js.Any] = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
+  var encType: js.UndefOr[String] = js.native
+  var `for`: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String] = js.native
+  var formEncType: js.UndefOr[String] = js.native
+  var formMethod: js.UndefOr[String] = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.native
+  var formTarget: js.UndefOr[String] = js.native
+  var frameBorder: js.UndefOr[Double | String] = js.native
+  var headers: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var high: js.UndefOr[Double] = js.native
+  var href: js.UndefOr[String] = js.native
+  var hrefLang: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.native
+  var httpEquiv: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inlist: js.UndefOr[js.Any] = js.native
+  var inputMode: js.UndefOr[String] = js.native
+  var integrity: js.UndefOr[String] = js.native
+  var is: js.UndefOr[String] = js.native
+  var itemID: js.UndefOr[String] = js.native
   // Microdata Attributes
-  var itemProp: js.UndefOr[String] = js.undefined
-  var itemRef: js.UndefOr[String] = js.undefined
-  var itemScope: js.UndefOr[Boolean] = js.undefined
-  var itemType: js.UndefOr[String] = js.undefined
-  var keyParams: js.UndefOr[String] = js.undefined
-  var keyType: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var lang: js.UndefOr[String] = js.undefined
-  var list: js.UndefOr[String] = js.undefined
-  var loading: js.UndefOr[eager | `lazy`] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var low: js.UndefOr[Double] = js.undefined
-  var manifest: js.UndefOr[String] = js.undefined
-  var marginHeight: js.UndefOr[Double] = js.undefined
-  var marginWidth: js.UndefOr[Double] = js.undefined
-  var max: js.UndefOr[Double | String] = js.undefined
-  var maxLength: js.UndefOr[Double] = js.undefined
-  var media: js.UndefOr[String] = js.undefined
-  var mediaGroup: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var min: js.UndefOr[Double | String] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var muted: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var noValidate: js.UndefOr[Boolean] = js.undefined
-  var nonce: js.UndefOr[String] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var optimum: js.UndefOr[Double] = js.undefined
-  var pattern: js.UndefOr[String] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var playsInline: js.UndefOr[Boolean] = js.undefined
-  var poster: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var preload: js.UndefOr[String] = js.undefined
-  var property: js.UndefOr[String] = js.undefined
-  var radioGroup: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var rel: js.UndefOr[String] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var resource: js.UndefOr[String] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
-  var rowSpan: js.UndefOr[Double] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
-  var sandbox: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var scoped: js.UndefOr[Boolean] = js.undefined
-  var scrolling: js.UndefOr[String] = js.undefined
-  var seamless: js.UndefOr[Boolean] = js.undefined
-  var selected: js.UndefOr[Boolean] = js.undefined
-  var shape: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var sizes: js.UndefOr[String] = js.undefined
-  var slot: js.UndefOr[String] = js.undefined
-  var span: js.UndefOr[Double] = js.undefined
-  var spellcheck: js.UndefOr[Boolean] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var srcDoc: js.UndefOr[String] = js.undefined
-  var srcLang: js.UndefOr[String] = js.undefined
-  var srcSet: js.UndefOr[String] = js.undefined
-  var srcset: js.UndefOr[String] = js.undefined
-  var start: js.UndefOr[Double] = js.undefined
-  var step: js.UndefOr[Double | String] = js.undefined
-  var style: js.UndefOr[String | (StringDictionary[String | Double])] = js.undefined
-  var summary: js.UndefOr[String] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var target: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var typeof: js.UndefOr[String] = js.undefined
-  var useMap: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
-  var vocab: js.UndefOr[String] = js.undefined
-  var volume: js.UndefOr[String | Double] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
-  var wmode: js.UndefOr[String] = js.undefined
-  var wrap: js.UndefOr[String] = js.undefined
+  var itemProp: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemType: js.UndefOr[String] = js.native
+  var keyParams: js.UndefOr[String] = js.native
+  var keyType: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[eager | `lazy`] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var low: js.UndefOr[Double] = js.native
+  var manifest: js.UndefOr[String] = js.native
+  var marginHeight: js.UndefOr[Double] = js.native
+  var marginWidth: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double | String] = js.native
+  var maxLength: js.UndefOr[Double] = js.native
+  var media: js.UndefOr[String] = js.native
+  var mediaGroup: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
+  var min: js.UndefOr[Double | String] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
+  var muted: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var noValidate: js.UndefOr[Boolean] = js.native
+  var nonce: js.UndefOr[String] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var optimum: js.UndefOr[Double] = js.native
+  var pattern: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.native
+  var poster: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var rel: js.UndefOr[String] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var resource: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.native
+  var sandbox: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var scoped: js.UndefOr[Boolean] = js.native
+  var scrolling: js.UndefOr[String] = js.native
+  var seamless: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.native
+  var shape: js.UndefOr[String] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var sizes: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.native
+  var span: js.UndefOr[Double] = js.native
+  var spellcheck: js.UndefOr[Boolean] = js.native
+  var src: js.UndefOr[String] = js.native
+  var srcDoc: js.UndefOr[String] = js.native
+  var srcLang: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.native
+  var srcset: js.UndefOr[String] = js.native
+  var start: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double | String] = js.native
+  var style: js.UndefOr[String | (StringDictionary[String | Double])] = js.native
+  var summary: js.UndefOr[String] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var target: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var typeof: js.UndefOr[String] = js.native
+  var useMap: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var vocab: js.UndefOr[String] = js.native
+  var volume: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[Double | String] = js.native
+  var wmode: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[String] = js.native
 }
 
 object HTMLAttributes {
   @scala.inline
-  def apply[/* <: typings.std.EventTarget */ RefType](
-    DOMAttributes: typings.preact.jsxMod.JSXInternal.DOMAttributes[RefType] = null,
-    about: String = null,
-    accept: String = null,
-    acceptCharset: String = null,
-    accessKey: String = null,
-    action: String = null,
-    allowFullScreen: js.UndefOr[Boolean] = js.undefined,
-    allowTransparency: js.UndefOr[Boolean] = js.undefined,
-    alt: String = null,
-    as: String = null,
-    async: js.UndefOr[Boolean] = js.undefined,
-    autoComplete: String = null,
-    autoCorrect: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    autocomplete: String = null,
-    autocorrect: String = null,
-    autofocus: js.UndefOr[Boolean] = js.undefined,
-    capture: js.UndefOr[Boolean] = js.undefined,
-    cellPadding: Double | String = null,
-    cellSpacing: Double | String = null,
-    challenge: String = null,
-    charSet: String = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    `class`: String = null,
-    className: String = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    cols: js.UndefOr[Double] = js.undefined,
-    content: String = null,
-    contentEditable: js.UndefOr[Boolean] = js.undefined,
-    contextMenu: String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    controlsList: String = null,
-    coords: String = null,
-    crossOrigin: String = null,
-    data: String = null,
-    datatype: String = null,
-    dateTime: String = null,
-    default: js.UndefOr[Boolean] = js.undefined,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    dir: auto | rtl | ltr = null,
-    disableRemotePlayback: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    download: js.Any = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    encType: String = null,
-    `for`: String = null,
-    form: String = null,
-    formAction: String = null,
-    formEncType: String = null,
-    formMethod: String = null,
-    formNoValidate: js.UndefOr[Boolean] = js.undefined,
-    formTarget: String = null,
-    frameBorder: Double | String = null,
-    headers: String = null,
-    height: Double | String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    high: js.UndefOr[Double] = js.undefined,
-    href: String = null,
-    hrefLang: String = null,
-    htmlFor: String = null,
-    httpEquiv: String = null,
-    icon: String = null,
-    id: String = null,
-    inlist: js.Any = null,
-    inputMode: String = null,
-    integrity: String = null,
-    is: String = null,
-    itemID: String = null,
-    itemProp: String = null,
-    itemRef: String = null,
-    itemScope: js.UndefOr[Boolean] = js.undefined,
-    itemType: String = null,
-    jsx: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    keyParams: String = null,
-    keyType: String = null,
-    kind: String = null,
-    label: String = null,
-    lang: String = null,
-    list: String = null,
-    loading: eager | `lazy` = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    low: js.UndefOr[Double] = js.undefined,
-    manifest: String = null,
-    marginHeight: js.UndefOr[Double] = js.undefined,
-    marginWidth: js.UndefOr[Double] = js.undefined,
-    max: Double | String = null,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    media: String = null,
-    mediaGroup: String = null,
-    method: String = null,
-    min: Double | String = null,
-    minLength: js.UndefOr[Double] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    nonce: String = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    optimum: js.UndefOr[Double] = js.undefined,
-    pattern: String = null,
-    placeholder: String = null,
-    playsInline: js.UndefOr[Boolean] = js.undefined,
-    poster: String = null,
-    prefix: String = null,
-    preload: String = null,
-    property: String = null,
-    radioGroup: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    ref: Ref[RefType] = null,
-    rel: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    resource: String = null,
-    role: String = null,
-    rowSpan: js.UndefOr[Double] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined,
-    sandbox: String = null,
-    scope: String = null,
-    scoped: js.UndefOr[Boolean] = js.undefined,
-    scrolling: String = null,
-    seamless: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    shape: String = null,
-    size: js.UndefOr[Double] = js.undefined,
-    sizes: String = null,
-    slot: String = null,
-    span: js.UndefOr[Double] = js.undefined,
-    spellcheck: js.UndefOr[Boolean] = js.undefined,
-    src: String = null,
-    srcDoc: String = null,
-    srcLang: String = null,
-    srcSet: String = null,
-    srcset: String = null,
-    start: js.UndefOr[Double] = js.undefined,
-    step: Double | String = null,
-    style: String | (StringDictionary[String | Double]) = null,
-    summary: String = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    target: String = null,
-    title: String = null,
-    `type`: String = null,
-    typeof: String = null,
-    useMap: String = null,
-    value: String | js.Array[String] | Double = null,
-    vocab: String = null,
-    volume: String | Double = null,
-    width: Double | String = null,
-    wmode: String = null,
-    wrap: String = null
-  ): HTMLAttributes[RefType] = {
+  def apply[/* <: typings.std.EventTarget */ RefType](): HTMLAttributes[RefType] = {
     val __obj = js.Dynamic.literal()
-    if (DOMAttributes != null) js.Dynamic.global.Object.assign(__obj, DOMAttributes)
-    if (about != null) __obj.updateDynamic("about")(about.asInstanceOf[js.Any])
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (acceptCharset != null) __obj.updateDynamic("acceptCharset")(acceptCharset.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency.get.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (autocorrect != null) __obj.updateDynamic("autocorrect")(autocorrect.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.get.asInstanceOf[js.Any])
-    if (cellPadding != null) __obj.updateDynamic("cellPadding")(cellPadding.asInstanceOf[js.Any])
-    if (cellSpacing != null) __obj.updateDynamic("cellSpacing")(cellSpacing.asInstanceOf[js.Any])
-    if (challenge != null) __obj.updateDynamic("challenge")(challenge.asInstanceOf[js.Any])
-    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cols)) __obj.updateDynamic("cols")(cols.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(contentEditable)) __obj.updateDynamic("contentEditable")(contentEditable.get.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (controlsList != null) __obj.updateDynamic("controlsList")(controlsList.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.get.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableRemotePlayback)) __obj.updateDynamic("disableRemotePlayback")(disableRemotePlayback.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (encType != null) __obj.updateDynamic("encType")(encType.asInstanceOf[js.Any])
-    if (`for` != null) __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (formAction != null) __obj.updateDynamic("formAction")(formAction.asInstanceOf[js.Any])
-    if (formEncType != null) __obj.updateDynamic("formEncType")(formEncType.asInstanceOf[js.Any])
-    if (formMethod != null) __obj.updateDynamic("formMethod")(formMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate.get.asInstanceOf[js.Any])
-    if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget.asInstanceOf[js.Any])
-    if (frameBorder != null) __obj.updateDynamic("frameBorder")(frameBorder.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (hrefLang != null) __obj.updateDynamic("hrefLang")(hrefLang.asInstanceOf[js.Any])
-    if (htmlFor != null) __obj.updateDynamic("htmlFor")(htmlFor.asInstanceOf[js.Any])
-    if (httpEquiv != null) __obj.updateDynamic("httpEquiv")(httpEquiv.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlist != null) __obj.updateDynamic("inlist")(inlist.asInstanceOf[js.Any])
-    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (itemID != null) __obj.updateDynamic("itemID")(itemID.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemScope)) __obj.updateDynamic("itemScope")(itemScope.get.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyParams != null) __obj.updateDynamic("keyParams")(keyParams.asInstanceOf[js.Any])
-    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginHeight)) __obj.updateDynamic("marginHeight")(marginHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginWidth)) __obj.updateDynamic("marginWidth")(marginWidth.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (mediaGroup != null) __obj.updateDynamic("mediaGroup")(mediaGroup.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.get.asInstanceOf[js.Any])
-    if (nonce != null) __obj.updateDynamic("nonce")(nonce.asInstanceOf[js.Any])
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(optimum)) __obj.updateDynamic("optimum")(optimum.get.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
-    if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (radioGroup != null) __obj.updateDynamic("radioGroup")(radioGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(scoped)) __obj.updateDynamic("scoped")(scoped.get.asInstanceOf[js.Any])
-    if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(seamless)) __obj.updateDynamic("seamless")(seamless.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
-    if (!js.isUndefined(span)) __obj.updateDynamic("span")(span.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck.get.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcDoc != null) __obj.updateDynamic("srcDoc")(srcDoc.asInstanceOf[js.Any])
-    if (srcLang != null) __obj.updateDynamic("srcLang")(srcLang.asInstanceOf[js.Any])
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (typeof != null) __obj.updateDynamic("typeof")(typeof.asInstanceOf[js.Any])
-    if (useMap != null) __obj.updateDynamic("useMap")(useMap.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (vocab != null) __obj.updateDynamic("vocab")(vocab.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributes[RefType]]
   }
+  @scala.inline
+  implicit class HTMLAttributesOps[Self <: HTMLAttributes[_], /* <: typings.std.EventTarget */ RefType] (val x: Self with HTMLAttributes[RefType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbout(value: String): Self = this.set("about", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbout: Self = this.set("about", js.undefined)
+    @scala.inline
+    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setAcceptCharset(value: String): Self = this.set("acceptCharset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptCharset: Self = this.set("acceptCharset", js.undefined)
+    @scala.inline
+    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAllowFullScreen(value: Boolean): Self = this.set("allowFullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFullScreen: Self = this.set("allowFullScreen", js.undefined)
+    @scala.inline
+    def setAllowTransparency(value: Boolean): Self = this.set("allowTransparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowTransparency: Self = this.set("allowTransparency", js.undefined)
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setAutoComplete(value: String): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: String): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setCapture(value: Boolean): Self = this.set("capture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapture: Self = this.set("capture", js.undefined)
+    @scala.inline
+    def setCellPadding(value: Double | String): Self = this.set("cellPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellPadding: Self = this.set("cellPadding", js.undefined)
+    @scala.inline
+    def setCellSpacing(value: Double | String): Self = this.set("cellSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellSpacing: Self = this.set("cellSpacing", js.undefined)
+    @scala.inline
+    def setChallenge(value: String): Self = this.set("challenge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallenge: Self = this.set("challenge", js.undefined)
+    @scala.inline
+    def setCharSet(value: String): Self = this.set("charSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharSet: Self = this.set("charSet", js.undefined)
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecked: Self = this.set("checked", js.undefined)
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setCols(value: Double): Self = this.set("cols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCols: Self = this.set("cols", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentEditable(value: Boolean): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEditable: Self = this.set("contentEditable", js.undefined)
+    @scala.inline
+    def setContextMenu(value: String): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setControlsList(value: String): Self = this.set("controlsList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlsList: Self = this.set("controlsList", js.undefined)
+    @scala.inline
+    def setCoords(value: String): Self = this.set("coords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoords: Self = this.set("coords", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: String): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDateTime(value: String): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTime: Self = this.set("dateTime", js.undefined)
+    @scala.inline
+    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDefer(value: Boolean): Self = this.set("defer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefer: Self = this.set("defer", js.undefined)
+    @scala.inline
+    def setDir(value: auto | rtl | ltr): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDisableRemotePlayback(value: Boolean): Self = this.set("disableRemotePlayback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableRemotePlayback: Self = this.set("disableRemotePlayback", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDownload(value: js.Any): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEncType(value: String): Self = this.set("encType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncType: Self = this.set("encType", js.undefined)
+    @scala.inline
+    def setFor(value: String): Self = this.set("for", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFor: Self = this.set("for", js.undefined)
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setFormAction(value: String): Self = this.set("formAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormAction: Self = this.set("formAction", js.undefined)
+    @scala.inline
+    def setFormEncType(value: String): Self = this.set("formEncType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormEncType: Self = this.set("formEncType", js.undefined)
+    @scala.inline
+    def setFormMethod(value: String): Self = this.set("formMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormMethod: Self = this.set("formMethod", js.undefined)
+    @scala.inline
+    def setFormNoValidate(value: Boolean): Self = this.set("formNoValidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormNoValidate: Self = this.set("formNoValidate", js.undefined)
+    @scala.inline
+    def setFormTarget(value: String): Self = this.set("formTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormTarget: Self = this.set("formTarget", js.undefined)
+    @scala.inline
+    def setFrameBorder(value: Double | String): Self = this.set("frameBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameBorder: Self = this.set("frameBorder", js.undefined)
+    @scala.inline
+    def setHeaders(value: String): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHigh(value: Double): Self = this.set("high", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigh: Self = this.set("high", js.undefined)
+    @scala.inline
+    def setHref(value: String): Self = this.set("href", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHref: Self = this.set("href", js.undefined)
+    @scala.inline
+    def setHrefLang(value: String): Self = this.set("hrefLang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHrefLang: Self = this.set("hrefLang", js.undefined)
+    @scala.inline
+    def setHtmlFor(value: String): Self = this.set("htmlFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlFor: Self = this.set("htmlFor", js.undefined)
+    @scala.inline
+    def setHttpEquiv(value: String): Self = this.set("httpEquiv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEquiv: Self = this.set("httpEquiv", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInlist(value: js.Any): Self = this.set("inlist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlist: Self = this.set("inlist", js.undefined)
+    @scala.inline
+    def setInputMode(value: String): Self = this.set("inputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMode: Self = this.set("inputMode", js.undefined)
+    @scala.inline
+    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrity: Self = this.set("integrity", js.undefined)
+    @scala.inline
+    def setIs(value: String): Self = this.set("is", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    @scala.inline
+    def setItemID(value: String): Self = this.set("itemID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemID: Self = this.set("itemID", js.undefined)
+    @scala.inline
+    def setItemProp(value: String): Self = this.set("itemProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemProp: Self = this.set("itemProp", js.undefined)
+    @scala.inline
+    def setItemRef(value: String): Self = this.set("itemRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemRef: Self = this.set("itemRef", js.undefined)
+    @scala.inline
+    def setItemScope(value: Boolean): Self = this.set("itemScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemScope: Self = this.set("itemScope", js.undefined)
+    @scala.inline
+    def setItemType(value: String): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setKeyParams(value: String): Self = this.set("keyParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyParams: Self = this.set("keyParams", js.undefined)
+    @scala.inline
+    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("keyType", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setLoading(value: eager | `lazy`): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoading: Self = this.set("loading", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setLow(value: Double): Self = this.set("low", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLow: Self = this.set("low", js.undefined)
+    @scala.inline
+    def setManifest(value: String): Self = this.set("manifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifest: Self = this.set("manifest", js.undefined)
+    @scala.inline
+    def setMarginHeight(value: Double): Self = this.set("marginHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginHeight: Self = this.set("marginHeight", js.undefined)
+    @scala.inline
+    def setMarginWidth(value: Double): Self = this.set("marginWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginWidth: Self = this.set("marginWidth", js.undefined)
+    @scala.inline
+    def setMax(value: Double | String): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setMedia(value: String): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    @scala.inline
+    def setMediaGroup(value: String): Self = this.set("mediaGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaGroup: Self = this.set("mediaGroup", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMin(value: Double | String): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuted: Self = this.set("muted", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoValidate(value: Boolean): Self = this.set("noValidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoValidate: Self = this.set("noValidate", js.undefined)
+    @scala.inline
+    def setNonce(value: String): Self = this.set("nonce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonce: Self = this.set("nonce", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setOptimum(value: Double): Self = this.set("optimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptimum: Self = this.set("optimum", js.undefined)
+    @scala.inline
+    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPlaysInline(value: Boolean): Self = this.set("playsInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaysInline: Self = this.set("playsInline", js.undefined)
+    @scala.inline
+    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoster: Self = this.set("poster", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setPreload(value: String): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRadioGroup(value: String): Self = this.set("radioGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioGroup: Self = this.set("radioGroup", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRel(value: String): Self = this.set("rel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRel: Self = this.set("rel", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSandbox(value: String): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setScoped(value: Boolean): Self = this.set("scoped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoped: Self = this.set("scoped", js.undefined)
+    @scala.inline
+    def setScrolling(value: String): Self = this.set("scrolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrolling: Self = this.set("scrolling", js.undefined)
+    @scala.inline
+    def setSeamless(value: Boolean): Self = this.set("seamless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeamless: Self = this.set("seamless", js.undefined)
+    @scala.inline
+    def setSelected(value: Boolean): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setShape(value: String): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setSlot(value: String): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlot: Self = this.set("slot", js.undefined)
+    @scala.inline
+    def setSpan(value: Double): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+    @scala.inline
+    def setSpellcheck(value: Boolean): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellcheck: Self = this.set("spellcheck", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setSrcDoc(value: String): Self = this.set("srcDoc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcDoc: Self = this.set("srcDoc", js.undefined)
+    @scala.inline
+    def setSrcLang(value: String): Self = this.set("srcLang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcLang: Self = this.set("srcLang", js.undefined)
+    @scala.inline
+    def setSrcSet(value: String): Self = this.set("srcSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcSet: Self = this.set("srcSet", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStep(value: Double | String): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStyle(value: String | (StringDictionary[String | Double])): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeof(value: String): Self = this.set("typeof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeof: Self = this.set("typeof", js.undefined)
+    @scala.inline
+    def setUseMap(value: String): Self = this.set("useMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseMap: Self = this.set("useMap", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: String*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: String | js.Array[String] | Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVocab(value: String): Self = this.set("vocab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocab: Self = this.set("vocab", js.undefined)
+    @scala.inline
+    def setVolume(value: String | Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWmode(value: String): Self = this.set("wmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWmode: Self = this.set("wmode", js.undefined)
+    @scala.inline
+    def setWrap(value: String): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

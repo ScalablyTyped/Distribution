@@ -37,6 +37,7 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     */
   def batchDelete(): GaxiosPromise[SchemaDeleteAttachmentsResponse] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaDeleteAttachmentsResponse]): Unit = js.native
+  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeleteAttachmentsResponse] = js.native
   def batchDelete(params: ParamsResourceBeaconsAttachmentsBatchdelete): GaxiosPromise[SchemaDeleteAttachmentsResponse] = js.native
   def batchDelete(
     params: ParamsResourceBeaconsAttachmentsBatchdelete,
@@ -79,6 +80,7 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaBeaconAttachment] = js.native
   def create(callback: BodyResponseCallback[SchemaBeaconAttachment]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeaconAttachment] = js.native
   def create(params: ParamsResourceBeaconsAttachmentsCreate): GaxiosPromise[SchemaBeaconAttachment] = js.native
   def create(
     params: ParamsResourceBeaconsAttachmentsCreate,
@@ -117,6 +119,7 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBeaconsAttachmentsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBeaconsAttachmentsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -154,6 +157,7 @@ class ResourceBeaconsAttachments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListBeaconAttachmentsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBeaconAttachmentsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBeaconAttachmentsResponse] = js.native
   def list(params: ParamsResourceBeaconsAttachmentsList): GaxiosPromise[SchemaListBeaconAttachmentsResponse] = js.native
   def list(
     params: ParamsResourceBeaconsAttachmentsList,

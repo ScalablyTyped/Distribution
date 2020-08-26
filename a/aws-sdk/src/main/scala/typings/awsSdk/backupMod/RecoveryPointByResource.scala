@@ -34,22 +34,46 @@ trait RecoveryPointByResource extends js.Object {
 
 object RecoveryPointByResource {
   @scala.inline
-  def apply(
-    BackupSizeBytes: js.UndefOr[Long_] = js.undefined,
-    BackupVaultName: BackupVaultName = null,
-    CreationDate: timestamp = null,
-    EncryptionKeyArn: ARN = null,
-    RecoveryPointArn: ARN = null,
-    Status: RecoveryPointStatus = null
-  ): RecoveryPointByResource = {
+  def apply(): RecoveryPointByResource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes.get.asInstanceOf[js.Any])
-    if (BackupVaultName != null) __obj.updateDynamic("BackupVaultName")(BackupVaultName.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (EncryptionKeyArn != null) __obj.updateDynamic("EncryptionKeyArn")(EncryptionKeyArn.asInstanceOf[js.Any])
-    if (RecoveryPointArn != null) __obj.updateDynamic("RecoveryPointArn")(RecoveryPointArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecoveryPointByResource]
   }
+  @scala.inline
+  implicit class RecoveryPointByResourceOps[Self <: RecoveryPointByResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupSizeBytes(value: Long_): Self = this.set("BackupSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupSizeBytes: Self = this.set("BackupSizeBytes", js.undefined)
+    @scala.inline
+    def setBackupVaultName(value: BackupVaultName): Self = this.set("BackupVaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultName: Self = this.set("BackupVaultName", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setEncryptionKeyArn(value: ARN): Self = this.set("EncryptionKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKeyArn: Self = this.set("EncryptionKeyArn", js.undefined)
+    @scala.inline
+    def setRecoveryPointArn(value: ARN): Self = this.set("RecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryPointArn: Self = this.set("RecoveryPointArn", js.undefined)
+    @scala.inline
+    def setStatus(value: RecoveryPointStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

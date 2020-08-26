@@ -22,11 +22,32 @@ trait StartPipelineReprocessingRequest extends js.Object {
 
 object StartPipelineReprocessingRequest {
   @scala.inline
-  def apply(pipelineName: PipelineName, endTime: EndTime = null, startTime: StartTime = null): StartPipelineReprocessingRequest = {
+  def apply(pipelineName: PipelineName): StartPipelineReprocessingRequest = {
     val __obj = js.Dynamic.literal(pipelineName = pipelineName.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPipelineReprocessingRequest]
   }
+  @scala.inline
+  implicit class StartPipelineReprocessingRequestOps[Self <: StartPipelineReprocessingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

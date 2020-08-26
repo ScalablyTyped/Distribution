@@ -4,218 +4,311 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** Fires, on clicking the range of range navigator.
     */
-  var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
+  var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
   /** It allows to show the value between the particular periods (i.e) from 1st January to 31st February and so on. The default value is true. If we set the property as false, it allows
     * to show the value between the particular periods.(i.e) from 1st January to 31st January and so on.
     * @Default {true}
     */
-  var allowNextValue: js.UndefOr[Boolean] = js.undefined
+  var allowNextValue: js.UndefOr[Boolean] = js.native
   /** Toggles the placement of slider exactly on the place it left or on the nearest interval.
     * @Default {false}
     */
-  var allowSnapping: js.UndefOr[Boolean] = js.undefined
+  var allowSnapping: js.UndefOr[Boolean] = js.native
   /** Options for customizing the color, opacity and width of the chart border.
     */
-  var border: js.UndefOr[Border] = js.undefined
+  var border: js.UndefOr[Border] = js.native
   /** Specifies the data source for range navigator.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[js.Any] = js.native
   /** Fires, on double clicking the range of range navigator.
     */
-  var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
+  var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
   /** Enable the resize option in the rangenavigator.
     * @Default {false}
     */
-  var enableAutoResizing: js.UndefOr[Boolean] = js.undefined
+  var enableAutoResizing: js.UndefOr[Boolean] = js.native
   /** Toggles the redrawing of chart on moving the sliders.
     * @Default {true}
     */
-  var enableDeferredUpdate: js.UndefOr[Boolean] = js.undefined
+  var enableDeferredUpdate: js.UndefOr[Boolean] = js.native
   /** Toggles the direction of rendering the range navigator control.
     * @Default {false}
     */
-  var enableRTL: js.UndefOr[Boolean] = js.undefined
+  var enableRTL: js.UndefOr[Boolean] = js.native
   /** Enable the scrollbar option in the rangenavigator.
     * @Default {false}
     */
-  var enableScrollbar: js.UndefOr[Boolean] = js.undefined
+  var enableScrollbar: js.UndefOr[Boolean] = js.native
   /** Sets a value whether to make the range navigator responsive on resize.
     * @Default {false}
     */
-  var isResponsive: js.UndefOr[Boolean] = js.undefined
+  var isResponsive: js.UndefOr[Boolean] = js.native
   /** Options for customizing the labels colors, font, style, size, horizontalAlignment and opacity.
     */
-  var labelSettings: js.UndefOr[LabelSettings] = js.undefined
+  var labelSettings: js.UndefOr[LabelSettings] = js.native
   /** Fires on load of range navigator.
     */
-  var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
   /** Fires after range navigator is loaded.
     */
-  var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.undefined
+  var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.native
   /** This property is to specify the localization of range navigator.
     * @Default {en-US}
     */
-  var locale: js.UndefOr[String] = js.undefined
+  var locale: js.UndefOr[String] = js.native
   /** Options for customizing the range navigator.
     */
-  var navigatorStyleSettings: js.UndefOr[NavigatorStyleSettings] = js.undefined
+  var navigatorStyleSettings: js.UndefOr[NavigatorStyleSettings] = js.native
   /** Padding specifies the gap between the container and the range navigator.
     * @Default {0}
     */
-  var padding: js.UndefOr[String] = js.undefined
+  var padding: js.UndefOr[String] = js.native
   /** Fires on changing the range of range navigator.
     */
-  var rangeChanged: js.UndefOr[js.Function1[/* e */ RangeChangedEventArgs, Unit]] = js.undefined
+  var rangeChanged: js.UndefOr[js.Function1[/* e */ RangeChangedEventArgs, Unit]] = js.native
   /** If the range is not given explicitly, range will be calculated automatically.
     * @Default {none}
     */
-  var rangePadding: js.UndefOr[RangePadding | String] = js.undefined
+  var rangePadding: js.UndefOr[RangePadding | String] = js.native
   /** Options for customizing the starting and ending ranges.
     */
-  var rangeSettings: js.UndefOr[RangeSettings] = js.undefined
+  var rangeSettings: js.UndefOr[RangeSettings] = js.native
   /** Fires, on right clicking the range of range navigator.
     */
-  var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
+  var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
   /** Fires on changing the scrollbar position of range navigator.
     */
-  var scrollChanged: js.UndefOr[js.Function1[/* e */ ScrollChangedEventArgs, Unit]] = js.undefined
+  var scrollChanged: js.UndefOr[js.Function1[/* e */ ScrollChangedEventArgs, Unit]] = js.native
   /** Fires on changes ending the scrollbar position of range navigator.
     */
-  var scrollEnd: js.UndefOr[js.Function1[/* e */ ScrollEndEventArgs, Unit]] = js.undefined
+  var scrollEnd: js.UndefOr[js.Function1[/* e */ ScrollEndEventArgs, Unit]] = js.native
   /** Options for rendering scrollbar based on the start and end range values.
     */
-  var scrollRangeSettings: js.UndefOr[ScrollRangeSettings] = js.undefined
+  var scrollRangeSettings: js.UndefOr[ScrollRangeSettings] = js.native
   /** Fires on when starting to change the scrollbar position of range navigator.
     */
-  var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, Unit]] = js.undefined
+  var scrollStart: js.UndefOr[js.Function1[/* e */ ScrollStartEventArgs, Unit]] = js.native
   /** selectedData is for getting the data when the &quot;rangeChanged&quot; event trigger from client side.
     */
-  var selectedData: js.UndefOr[js.Any] = js.undefined
+  var selectedData: js.UndefOr[js.Any] = js.native
   /** Fires when the selection  ends in the range navigator
     */
-  var selectedRangeEnd: js.UndefOr[js.Function1[/* e */ SelectedRangeEndEventArgs, Unit]] = js.undefined
+  var selectedRangeEnd: js.UndefOr[js.Function1[/* e */ SelectedRangeEndEventArgs, Unit]] = js.native
   /** Options for customizing the start and end range values.
     */
-  var selectedRangeSettings: js.UndefOr[SelectedRangeSettings] = js.undefined
+  var selectedRangeSettings: js.UndefOr[SelectedRangeSettings] = js.native
   /** Fires on when starting to change the slider position of range navigator.
     */
-  var selectedRangeStart: js.UndefOr[js.Function1[/* e */ SelectedRangeStartEventArgs, Unit]] = js.undefined
+  var selectedRangeStart: js.UndefOr[js.Function1[/* e */ SelectedRangeStartEventArgs, Unit]] = js.native
   /** Specifies the properties used for customizing the range series.
     */
-  var series: js.UndefOr[js.Array[Series]] = js.undefined
+  var series: js.UndefOr[js.Array[Series]] = js.native
   /** Specifies the  properties used for customizing all the range series.
     */
-  var seriesSettings: js.UndefOr[js.Array[SeriesSetting]] = js.undefined
+  var seriesSettings: js.UndefOr[js.Array[SeriesSetting]] = js.native
   /** Contains property to customize the hight and width of range navigator.
     */
-  var sizeSettings: js.UndefOr[SizeSettings] = js.undefined
+  var sizeSettings: js.UndefOr[SizeSettings] = js.native
   /** By specifying this property the user can change the theme of the range navigator.
     * @Default {null}
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[String] = js.native
   /** Options for customizing the tooltip in range navigator.
     */
-  var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
+  var tooltipSettings: js.UndefOr[TooltipSettings] = js.native
   /** Options for configuring minor grid lines, major grid lines, axis line of axis.
     */
-  var valueAxisSettings: js.UndefOr[ValueAxisSettings] = js.undefined
+  var valueAxisSettings: js.UndefOr[ValueAxisSettings] = js.native
   /** You can plot data of type date time or numeric. This property determines the type of data that this axis will handle.
     * @Default {datetime}
     */
-  var valueType: js.UndefOr[ValueType | String] = js.undefined
+  var valueType: js.UndefOr[ValueType | String] = js.native
   /** Specifies the xName for dataSource. This is used to take the x values from dataSource
     */
-  var xName: js.UndefOr[js.Any] = js.undefined
+  var xName: js.UndefOr[js.Any] = js.native
   /** Specifies the yName for dataSource. This is used to take the y values from dataSource
     */
-  var yName: js.UndefOr[js.Any] = js.undefined
+  var yName: js.UndefOr[js.Any] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    Click: /* e */ ClickEventArgs => Unit = null,
-    allowNextValue: js.UndefOr[Boolean] = js.undefined,
-    allowSnapping: js.UndefOr[Boolean] = js.undefined,
-    border: Border = null,
-    dataSource: js.Any = null,
-    doubleClick: /* e */ DoubleClickEventArgs => Unit = null,
-    enableAutoResizing: js.UndefOr[Boolean] = js.undefined,
-    enableDeferredUpdate: js.UndefOr[Boolean] = js.undefined,
-    enableRTL: js.UndefOr[Boolean] = js.undefined,
-    enableScrollbar: js.UndefOr[Boolean] = js.undefined,
-    isResponsive: js.UndefOr[Boolean] = js.undefined,
-    labelSettings: LabelSettings = null,
-    load: /* e */ LoadEventArgs => Unit = null,
-    loaded: /* e */ LoadedEventArgs => Unit = null,
-    locale: String = null,
-    navigatorStyleSettings: NavigatorStyleSettings = null,
-    padding: String = null,
-    rangeChanged: /* e */ RangeChangedEventArgs => Unit = null,
-    rangePadding: RangePadding | String = null,
-    rangeSettings: RangeSettings = null,
-    rightClick: /* e */ RightClickEventArgs => Unit = null,
-    scrollChanged: /* e */ ScrollChangedEventArgs => Unit = null,
-    scrollEnd: /* e */ ScrollEndEventArgs => Unit = null,
-    scrollRangeSettings: ScrollRangeSettings = null,
-    scrollStart: /* e */ ScrollStartEventArgs => Unit = null,
-    selectedData: js.Any = null,
-    selectedRangeEnd: /* e */ SelectedRangeEndEventArgs => Unit = null,
-    selectedRangeSettings: SelectedRangeSettings = null,
-    selectedRangeStart: /* e */ SelectedRangeStartEventArgs => Unit = null,
-    series: js.Array[Series] = null,
-    seriesSettings: js.Array[SeriesSetting] = null,
-    sizeSettings: SizeSettings = null,
-    theme: String = null,
-    tooltipSettings: TooltipSettings = null,
-    valueAxisSettings: ValueAxisSettings = null,
-    valueType: ValueType | String = null,
-    xName: js.Any = null,
-    yName: js.Any = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (Click != null) __obj.updateDynamic("Click")(js.Any.fromFunction1(Click))
-    if (!js.isUndefined(allowNextValue)) __obj.updateDynamic("allowNextValue")(allowNextValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSnapping)) __obj.updateDynamic("allowSnapping")(allowSnapping.get.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(js.Any.fromFunction1(doubleClick))
-    if (!js.isUndefined(enableAutoResizing)) __obj.updateDynamic("enableAutoResizing")(enableAutoResizing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDeferredUpdate)) __obj.updateDynamic("enableDeferredUpdate")(enableDeferredUpdate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableScrollbar)) __obj.updateDynamic("enableScrollbar")(enableScrollbar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive.get.asInstanceOf[js.Any])
-    if (labelSettings != null) __obj.updateDynamic("labelSettings")(labelSettings.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
-    if (loaded != null) __obj.updateDynamic("loaded")(js.Any.fromFunction1(loaded))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (navigatorStyleSettings != null) __obj.updateDynamic("navigatorStyleSettings")(navigatorStyleSettings.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (rangeChanged != null) __obj.updateDynamic("rangeChanged")(js.Any.fromFunction1(rangeChanged))
-    if (rangePadding != null) __obj.updateDynamic("rangePadding")(rangePadding.asInstanceOf[js.Any])
-    if (rangeSettings != null) __obj.updateDynamic("rangeSettings")(rangeSettings.asInstanceOf[js.Any])
-    if (rightClick != null) __obj.updateDynamic("rightClick")(js.Any.fromFunction1(rightClick))
-    if (scrollChanged != null) __obj.updateDynamic("scrollChanged")(js.Any.fromFunction1(scrollChanged))
-    if (scrollEnd != null) __obj.updateDynamic("scrollEnd")(js.Any.fromFunction1(scrollEnd))
-    if (scrollRangeSettings != null) __obj.updateDynamic("scrollRangeSettings")(scrollRangeSettings.asInstanceOf[js.Any])
-    if (scrollStart != null) __obj.updateDynamic("scrollStart")(js.Any.fromFunction1(scrollStart))
-    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData.asInstanceOf[js.Any])
-    if (selectedRangeEnd != null) __obj.updateDynamic("selectedRangeEnd")(js.Any.fromFunction1(selectedRangeEnd))
-    if (selectedRangeSettings != null) __obj.updateDynamic("selectedRangeSettings")(selectedRangeSettings.asInstanceOf[js.Any])
-    if (selectedRangeStart != null) __obj.updateDynamic("selectedRangeStart")(js.Any.fromFunction1(selectedRangeStart))
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (seriesSettings != null) __obj.updateDynamic("seriesSettings")(seriesSettings.asInstanceOf[js.Any])
-    if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltipSettings != null) __obj.updateDynamic("tooltipSettings")(tooltipSettings.asInstanceOf[js.Any])
-    if (valueAxisSettings != null) __obj.updateDynamic("valueAxisSettings")(valueAxisSettings.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
-    if (xName != null) __obj.updateDynamic("xName")(xName.asInstanceOf[js.Any])
-    if (yName != null) __obj.updateDynamic("yName")(yName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClick(value: /* e */ ClickEventArgs => Unit): Self = this.set("Click", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteClick: Self = this.set("Click", js.undefined)
+    @scala.inline
+    def setAllowNextValue(value: Boolean): Self = this.set("allowNextValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNextValue: Self = this.set("allowNextValue", js.undefined)
+    @scala.inline
+    def setAllowSnapping(value: Boolean): Self = this.set("allowSnapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSnapping: Self = this.set("allowSnapping", js.undefined)
+    @scala.inline
+    def setBorder(value: Border): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDoubleClick(value: /* e */ DoubleClickEventArgs => Unit): Self = this.set("doubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDoubleClick: Self = this.set("doubleClick", js.undefined)
+    @scala.inline
+    def setEnableAutoResizing(value: Boolean): Self = this.set("enableAutoResizing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoResizing: Self = this.set("enableAutoResizing", js.undefined)
+    @scala.inline
+    def setEnableDeferredUpdate(value: Boolean): Self = this.set("enableDeferredUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDeferredUpdate: Self = this.set("enableDeferredUpdate", js.undefined)
+    @scala.inline
+    def setEnableRTL(value: Boolean): Self = this.set("enableRTL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRTL: Self = this.set("enableRTL", js.undefined)
+    @scala.inline
+    def setEnableScrollbar(value: Boolean): Self = this.set("enableScrollbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableScrollbar: Self = this.set("enableScrollbar", js.undefined)
+    @scala.inline
+    def setIsResponsive(value: Boolean): Self = this.set("isResponsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsResponsive: Self = this.set("isResponsive", js.undefined)
+    @scala.inline
+    def setLabelSettings(value: LabelSettings): Self = this.set("labelSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSettings: Self = this.set("labelSettings", js.undefined)
+    @scala.inline
+    def setLoad(value: /* e */ LoadEventArgs => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setLoaded(value: /* e */ LoadedEventArgs => Unit): Self = this.set("loaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoaded: Self = this.set("loaded", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setNavigatorStyleSettings(value: NavigatorStyleSettings): Self = this.set("navigatorStyleSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatorStyleSettings: Self = this.set("navigatorStyleSettings", js.undefined)
+    @scala.inline
+    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setRangeChanged(value: /* e */ RangeChangedEventArgs => Unit): Self = this.set("rangeChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRangeChanged: Self = this.set("rangeChanged", js.undefined)
+    @scala.inline
+    def setRangePadding(value: RangePadding | String): Self = this.set("rangePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangePadding: Self = this.set("rangePadding", js.undefined)
+    @scala.inline
+    def setRangeSettings(value: RangeSettings): Self = this.set("rangeSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeSettings: Self = this.set("rangeSettings", js.undefined)
+    @scala.inline
+    def setRightClick(value: /* e */ RightClickEventArgs => Unit): Self = this.set("rightClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRightClick: Self = this.set("rightClick", js.undefined)
+    @scala.inline
+    def setScrollChanged(value: /* e */ ScrollChangedEventArgs => Unit): Self = this.set("scrollChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScrollChanged: Self = this.set("scrollChanged", js.undefined)
+    @scala.inline
+    def setScrollEnd(value: /* e */ ScrollEndEventArgs => Unit): Self = this.set("scrollEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScrollEnd: Self = this.set("scrollEnd", js.undefined)
+    @scala.inline
+    def setScrollRangeSettings(value: ScrollRangeSettings): Self = this.set("scrollRangeSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollRangeSettings: Self = this.set("scrollRangeSettings", js.undefined)
+    @scala.inline
+    def setScrollStart(value: /* e */ ScrollStartEventArgs => Unit): Self = this.set("scrollStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScrollStart: Self = this.set("scrollStart", js.undefined)
+    @scala.inline
+    def setSelectedData(value: js.Any): Self = this.set("selectedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedData: Self = this.set("selectedData", js.undefined)
+    @scala.inline
+    def setSelectedRangeEnd(value: /* e */ SelectedRangeEndEventArgs => Unit): Self = this.set("selectedRangeEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelectedRangeEnd: Self = this.set("selectedRangeEnd", js.undefined)
+    @scala.inline
+    def setSelectedRangeSettings(value: SelectedRangeSettings): Self = this.set("selectedRangeSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedRangeSettings: Self = this.set("selectedRangeSettings", js.undefined)
+    @scala.inline
+    def setSelectedRangeStart(value: /* e */ SelectedRangeStartEventArgs => Unit): Self = this.set("selectedRangeStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSelectedRangeStart: Self = this.set("selectedRangeStart", js.undefined)
+    @scala.inline
+    def setSeriesVarargs(value: Series*): Self = this.set("series", js.Array(value :_*))
+    @scala.inline
+    def setSeries(value: js.Array[Series]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setSeriesSettingsVarargs(value: SeriesSetting*): Self = this.set("seriesSettings", js.Array(value :_*))
+    @scala.inline
+    def setSeriesSettings(value: js.Array[SeriesSetting]): Self = this.set("seriesSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesSettings: Self = this.set("seriesSettings", js.undefined)
+    @scala.inline
+    def setSizeSettings(value: SizeSettings): Self = this.set("sizeSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeSettings: Self = this.set("sizeSettings", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTooltipSettings(value: TooltipSettings): Self = this.set("tooltipSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipSettings: Self = this.set("tooltipSettings", js.undefined)
+    @scala.inline
+    def setValueAxisSettings(value: ValueAxisSettings): Self = this.set("valueAxisSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAxisSettings: Self = this.set("valueAxisSettings", js.undefined)
+    @scala.inline
+    def setValueType(value: ValueType | String): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueType: Self = this.set("valueType", js.undefined)
+    @scala.inline
+    def setXName(value: js.Any): Self = this.set("xName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXName: Self = this.set("xName", js.undefined)
+    @scala.inline
+    def setYName(value: js.Any): Self = this.set("yName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYName: Self = this.set("yName", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 class Reply[TOPIC /* <: String */, TYPE /* <: String | Unit */] () extends Identity {
   var topic: TOPIC = js.native
   var `type`: TYPE = js.native
-  /* CompleteClass */
-  override var uuid: String = js.native
 }
 

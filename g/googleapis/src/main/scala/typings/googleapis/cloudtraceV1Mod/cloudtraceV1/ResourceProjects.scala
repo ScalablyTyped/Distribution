@@ -89,6 +89,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def patchTraces(): GaxiosPromise[SchemaEmpty] = js.native
   def patchTraces(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def patchTraces(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def patchTraces(params: ParamsResourceProjectsPatchtraces): GaxiosPromise[SchemaEmpty] = js.native
   def patchTraces(params: ParamsResourceProjectsPatchtraces, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def patchTraces(

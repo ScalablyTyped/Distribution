@@ -9,6 +9,7 @@ import typings.devextreme.devextremeStrings.arrowTop
 import typings.devextreme.devextremeStrings.cardWithImageOnLeft
 import typings.devextreme.devextremeStrings.cardWithImageOnRight
 import typings.devextreme.devextremeStrings.cardWithImageOnTop
+import typings.devextreme.devextremeStrings.connector
 import typings.devextreme.devextremeStrings.cross
 import typings.devextreme.devextremeStrings.data
 import typings.devextreme.devextremeStrings.database
@@ -41,93 +42,219 @@ import typings.devextreme.devextremeStrings.terminator
 import typings.devextreme.devextremeStrings.text
 import typings.devextreme.devextremeStrings.triangle
 import typings.devextreme.devextremeStrings.verticalContainer
+import typings.devextreme.mod.DevExpress.core.dxSVGElement
+import typings.devextreme.mod.DevExpress.core.template
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AllowEditImage extends js.Object {
-  var allowEditImage: js.UndefOr[Boolean] = js.undefined
-  var allowEditText: js.UndefOr[Boolean] = js.undefined
-  var backgroundImageHeight: js.UndefOr[Double] = js.undefined
-  var backgroundImageLeft: js.UndefOr[Double] = js.undefined
-  var backgroundImageTop: js.UndefOr[Double] = js.undefined
-  var backgroundImageUrl: js.UndefOr[String] = js.undefined
-  var backgroundImageWidth: js.UndefOr[Double] = js.undefined
+  var allowEditImage: js.UndefOr[Boolean] = js.native
+  var allowEditText: js.UndefOr[Boolean] = js.native
+  var allowResize: js.UndefOr[Boolean] = js.native
+  var backgroundImageHeight: js.UndefOr[Double] = js.native
+  var backgroundImageLeft: js.UndefOr[Double] = js.native
+  var backgroundImageToolboxUrl: js.UndefOr[String] = js.native
+  var backgroundImageTop: js.UndefOr[Double] = js.native
+  var backgroundImageUrl: js.UndefOr[String] = js.native
+  var backgroundImageWidth: js.UndefOr[Double] = js.native
   var baseType: js.UndefOr[
-    text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-  ] = js.undefined
-  var category: js.UndefOr[String] = js.undefined
-  var connectionPoints: js.UndefOr[js.Array[Y]] = js.undefined
-  var defaultHeight: js.UndefOr[Double] = js.undefined
-  var defaultImageUrl: js.UndefOr[String] = js.undefined
-  var defaultText: js.UndefOr[String] = js.undefined
-  var defaultWidth: js.UndefOr[Double] = js.undefined
-  var imageHeight: js.UndefOr[Double] = js.undefined
-  var imageLeft: js.UndefOr[Double] = js.undefined
-  var imageTop: js.UndefOr[Double] = js.undefined
-  var imageWidth: js.UndefOr[Double] = js.undefined
-  var textHeight: js.UndefOr[Double] = js.undefined
-  var textLeft: js.UndefOr[Double] = js.undefined
-  var textTop: js.UndefOr[Double] = js.undefined
-  var textWidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+    text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
+  ] = js.native
+  var category: js.UndefOr[String] = js.native
+  var connectionPoints: js.UndefOr[js.Array[Y]] = js.native
+  var defaultHeight: js.UndefOr[Double] = js.native
+  var defaultImageUrl: js.UndefOr[String] = js.native
+  var defaultText: js.UndefOr[String] = js.native
+  var defaultWidth: js.UndefOr[Double] = js.native
+  var imageHeight: js.UndefOr[Double] = js.native
+  var imageLeft: js.UndefOr[Double] = js.native
+  var imageTop: js.UndefOr[Double] = js.native
+  var imageWidth: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var template: js.UndefOr[
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])
+  ] = js.native
+  var templateHeight: js.UndefOr[Double] = js.native
+  var templateLeft: js.UndefOr[Double] = js.native
+  var templateTop: js.UndefOr[Double] = js.native
+  var templateWidth: js.UndefOr[Double] = js.native
+  var textHeight: js.UndefOr[Double] = js.native
+  var textLeft: js.UndefOr[Double] = js.native
+  var textTop: js.UndefOr[Double] = js.native
+  var textWidth: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object AllowEditImage {
   @scala.inline
-  def apply(
-    allowEditImage: js.UndefOr[Boolean] = js.undefined,
-    allowEditText: js.UndefOr[Boolean] = js.undefined,
-    backgroundImageHeight: js.UndefOr[Double] = js.undefined,
-    backgroundImageLeft: js.UndefOr[Double] = js.undefined,
-    backgroundImageTop: js.UndefOr[Double] = js.undefined,
-    backgroundImageUrl: String = null,
-    backgroundImageWidth: js.UndefOr[Double] = js.undefined,
-    baseType: text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String = null,
-    category: String = null,
-    connectionPoints: js.Array[Y] = null,
-    defaultHeight: js.UndefOr[Double] = js.undefined,
-    defaultImageUrl: String = null,
-    defaultText: String = null,
-    defaultWidth: js.UndefOr[Double] = js.undefined,
-    imageHeight: js.UndefOr[Double] = js.undefined,
-    imageLeft: js.UndefOr[Double] = js.undefined,
-    imageTop: js.UndefOr[Double] = js.undefined,
-    imageWidth: js.UndefOr[Double] = js.undefined,
-    textHeight: js.UndefOr[Double] = js.undefined,
-    textLeft: js.UndefOr[Double] = js.undefined,
-    textTop: js.UndefOr[Double] = js.undefined,
-    textWidth: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    `type`: String = null
-  ): AllowEditImage = {
+  def apply(): AllowEditImage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEditImage)) __obj.updateDynamic("allowEditImage")(allowEditImage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditText)) __obj.updateDynamic("allowEditText")(allowEditText.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundImageHeight)) __obj.updateDynamic("backgroundImageHeight")(backgroundImageHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundImageLeft)) __obj.updateDynamic("backgroundImageLeft")(backgroundImageLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundImageTop)) __obj.updateDynamic("backgroundImageTop")(backgroundImageTop.get.asInstanceOf[js.Any])
-    if (backgroundImageUrl != null) __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundImageWidth)) __obj.updateDynamic("backgroundImageWidth")(backgroundImageWidth.get.asInstanceOf[js.Any])
-    if (baseType != null) __obj.updateDynamic("baseType")(baseType.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (connectionPoints != null) __obj.updateDynamic("connectionPoints")(connectionPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultHeight)) __obj.updateDynamic("defaultHeight")(defaultHeight.get.asInstanceOf[js.Any])
-    if (defaultImageUrl != null) __obj.updateDynamic("defaultImageUrl")(defaultImageUrl.asInstanceOf[js.Any])
-    if (defaultText != null) __obj.updateDynamic("defaultText")(defaultText.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultWidth)) __obj.updateDynamic("defaultWidth")(defaultWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageHeight)) __obj.updateDynamic("imageHeight")(imageHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageLeft)) __obj.updateDynamic("imageLeft")(imageLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageTop)) __obj.updateDynamic("imageTop")(imageTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageWidth)) __obj.updateDynamic("imageWidth")(imageWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textHeight)) __obj.updateDynamic("textHeight")(textHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textLeft)) __obj.updateDynamic("textLeft")(textLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textTop)) __obj.updateDynamic("textTop")(textTop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(textWidth)) __obj.updateDynamic("textWidth")(textWidth.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowEditImage]
   }
+  @scala.inline
+  implicit class AllowEditImageOps[Self <: AllowEditImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowEditImage(value: Boolean): Self = this.set("allowEditImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEditImage: Self = this.set("allowEditImage", js.undefined)
+    @scala.inline
+    def setAllowEditText(value: Boolean): Self = this.set("allowEditText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEditText: Self = this.set("allowEditText", js.undefined)
+    @scala.inline
+    def setAllowResize(value: Boolean): Self = this.set("allowResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowResize: Self = this.set("allowResize", js.undefined)
+    @scala.inline
+    def setBackgroundImageHeight(value: Double): Self = this.set("backgroundImageHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageHeight: Self = this.set("backgroundImageHeight", js.undefined)
+    @scala.inline
+    def setBackgroundImageLeft(value: Double): Self = this.set("backgroundImageLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageLeft: Self = this.set("backgroundImageLeft", js.undefined)
+    @scala.inline
+    def setBackgroundImageToolboxUrl(value: String): Self = this.set("backgroundImageToolboxUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageToolboxUrl: Self = this.set("backgroundImageToolboxUrl", js.undefined)
+    @scala.inline
+    def setBackgroundImageTop(value: Double): Self = this.set("backgroundImageTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageTop: Self = this.set("backgroundImageTop", js.undefined)
+    @scala.inline
+    def setBackgroundImageUrl(value: String): Self = this.set("backgroundImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageUrl: Self = this.set("backgroundImageUrl", js.undefined)
+    @scala.inline
+    def setBackgroundImageWidth(value: Double): Self = this.set("backgroundImageWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageWidth: Self = this.set("backgroundImageWidth", js.undefined)
+    @scala.inline
+    def setBaseType(
+      value: text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
+    ): Self = this.set("baseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseType: Self = this.set("baseType", js.undefined)
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setConnectionPointsVarargs(value: Y*): Self = this.set("connectionPoints", js.Array(value :_*))
+    @scala.inline
+    def setConnectionPoints(value: js.Array[Y]): Self = this.set("connectionPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionPoints: Self = this.set("connectionPoints", js.undefined)
+    @scala.inline
+    def setDefaultHeight(value: Double): Self = this.set("defaultHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultHeight: Self = this.set("defaultHeight", js.undefined)
+    @scala.inline
+    def setDefaultImageUrl(value: String): Self = this.set("defaultImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultImageUrl: Self = this.set("defaultImageUrl", js.undefined)
+    @scala.inline
+    def setDefaultText(value: String): Self = this.set("defaultText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultText: Self = this.set("defaultText", js.undefined)
+    @scala.inline
+    def setDefaultWidth(value: Double): Self = this.set("defaultWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultWidth: Self = this.set("defaultWidth", js.undefined)
+    @scala.inline
+    def setImageHeight(value: Double): Self = this.set("imageHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageHeight: Self = this.set("imageHeight", js.undefined)
+    @scala.inline
+    def setImageLeft(value: Double): Self = this.set("imageLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageLeft: Self = this.set("imageLeft", js.undefined)
+    @scala.inline
+    def setImageTop(value: Double): Self = this.set("imageTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageTop: Self = this.set("imageTop", js.undefined)
+    @scala.inline
+    def setImageWidth(value: Double): Self = this.set("imageWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageWidth: Self = this.set("imageWidth", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => _): Self = this.set("template", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTemplateHeight(value: Double): Self = this.set("templateHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateHeight: Self = this.set("templateHeight", js.undefined)
+    @scala.inline
+    def setTemplateLeft(value: Double): Self = this.set("templateLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateLeft: Self = this.set("templateLeft", js.undefined)
+    @scala.inline
+    def setTemplateTop(value: Double): Self = this.set("templateTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateTop: Self = this.set("templateTop", js.undefined)
+    @scala.inline
+    def setTemplateWidth(value: Double): Self = this.set("templateWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateWidth: Self = this.set("templateWidth", js.undefined)
+    @scala.inline
+    def setTextHeight(value: Double): Self = this.set("textHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextHeight: Self = this.set("textHeight", js.undefined)
+    @scala.inline
+    def setTextLeft(value: Double): Self = this.set("textLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextLeft: Self = this.set("textLeft", js.undefined)
+    @scala.inline
+    def setTextTop(value: Double): Self = this.set("textTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextTop: Self = this.set("textTop", js.undefined)
+    @scala.inline
+    def setTextWidth(value: Double): Self = this.set("textWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextWidth: Self = this.set("textWidth", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

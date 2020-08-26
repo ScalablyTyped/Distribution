@@ -89,6 +89,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionautoscalersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRegionautoscalersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -177,6 +178,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(callback: BodyResponseCallback[SchemaAutoscaler]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(params: ParamsResourceRegionautoscalersGet): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(params: ParamsResourceRegionautoscalersGet, callback: BodyResponseCallback[SchemaAutoscaler]): Unit = js.native
   def get(
@@ -268,6 +270,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionautoscalersInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegionautoscalersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -370,6 +373,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRegionAutoscalerList] = js.native
   def list(callback: BodyResponseCallback[SchemaRegionAutoscalerList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionAutoscalerList] = js.native
   def list(params: ParamsResourceRegionautoscalersList): GaxiosPromise[SchemaRegionAutoscalerList] = js.native
   def list(
     params: ParamsResourceRegionautoscalersList,
@@ -468,6 +472,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionautoscalersPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRegionautoscalersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -559,6 +564,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegionautoscalersTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegionautoscalersTestiampermissions,
@@ -656,6 +662,7 @@ class ResourceRegionautoscalers protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionautoscalersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRegionautoscalersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

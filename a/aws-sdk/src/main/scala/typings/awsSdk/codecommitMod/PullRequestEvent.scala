@@ -54,32 +54,66 @@ trait PullRequestEvent extends js.Object {
 
 object PullRequestEvent {
   @scala.inline
-  def apply(
-    actorArn: Arn = null,
-    approvalRuleEventMetadata: ApprovalRuleEventMetadata = null,
-    approvalRuleOverriddenEventMetadata: ApprovalRuleOverriddenEventMetadata = null,
-    approvalStateChangedEventMetadata: ApprovalStateChangedEventMetadata = null,
-    eventDate: EventDate = null,
-    pullRequestCreatedEventMetadata: PullRequestCreatedEventMetadata = null,
-    pullRequestEventType: PullRequestEventType = null,
-    pullRequestId: PullRequestId = null,
-    pullRequestMergedStateChangedEventMetadata: PullRequestMergedStateChangedEventMetadata = null,
-    pullRequestSourceReferenceUpdatedEventMetadata: PullRequestSourceReferenceUpdatedEventMetadata = null,
-    pullRequestStatusChangedEventMetadata: PullRequestStatusChangedEventMetadata = null
-  ): PullRequestEvent = {
+  def apply(): PullRequestEvent = {
     val __obj = js.Dynamic.literal()
-    if (actorArn != null) __obj.updateDynamic("actorArn")(actorArn.asInstanceOf[js.Any])
-    if (approvalRuleEventMetadata != null) __obj.updateDynamic("approvalRuleEventMetadata")(approvalRuleEventMetadata.asInstanceOf[js.Any])
-    if (approvalRuleOverriddenEventMetadata != null) __obj.updateDynamic("approvalRuleOverriddenEventMetadata")(approvalRuleOverriddenEventMetadata.asInstanceOf[js.Any])
-    if (approvalStateChangedEventMetadata != null) __obj.updateDynamic("approvalStateChangedEventMetadata")(approvalStateChangedEventMetadata.asInstanceOf[js.Any])
-    if (eventDate != null) __obj.updateDynamic("eventDate")(eventDate.asInstanceOf[js.Any])
-    if (pullRequestCreatedEventMetadata != null) __obj.updateDynamic("pullRequestCreatedEventMetadata")(pullRequestCreatedEventMetadata.asInstanceOf[js.Any])
-    if (pullRequestEventType != null) __obj.updateDynamic("pullRequestEventType")(pullRequestEventType.asInstanceOf[js.Any])
-    if (pullRequestId != null) __obj.updateDynamic("pullRequestId")(pullRequestId.asInstanceOf[js.Any])
-    if (pullRequestMergedStateChangedEventMetadata != null) __obj.updateDynamic("pullRequestMergedStateChangedEventMetadata")(pullRequestMergedStateChangedEventMetadata.asInstanceOf[js.Any])
-    if (pullRequestSourceReferenceUpdatedEventMetadata != null) __obj.updateDynamic("pullRequestSourceReferenceUpdatedEventMetadata")(pullRequestSourceReferenceUpdatedEventMetadata.asInstanceOf[js.Any])
-    if (pullRequestStatusChangedEventMetadata != null) __obj.updateDynamic("pullRequestStatusChangedEventMetadata")(pullRequestStatusChangedEventMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullRequestEvent]
   }
+  @scala.inline
+  implicit class PullRequestEventOps[Self <: PullRequestEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActorArn(value: Arn): Self = this.set("actorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActorArn: Self = this.set("actorArn", js.undefined)
+    @scala.inline
+    def setApprovalRuleEventMetadata(value: ApprovalRuleEventMetadata): Self = this.set("approvalRuleEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleEventMetadata: Self = this.set("approvalRuleEventMetadata", js.undefined)
+    @scala.inline
+    def setApprovalRuleOverriddenEventMetadata(value: ApprovalRuleOverriddenEventMetadata): Self = this.set("approvalRuleOverriddenEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalRuleOverriddenEventMetadata: Self = this.set("approvalRuleOverriddenEventMetadata", js.undefined)
+    @scala.inline
+    def setApprovalStateChangedEventMetadata(value: ApprovalStateChangedEventMetadata): Self = this.set("approvalStateChangedEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApprovalStateChangedEventMetadata: Self = this.set("approvalStateChangedEventMetadata", js.undefined)
+    @scala.inline
+    def setEventDate(value: EventDate): Self = this.set("eventDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDate: Self = this.set("eventDate", js.undefined)
+    @scala.inline
+    def setPullRequestCreatedEventMetadata(value: PullRequestCreatedEventMetadata): Self = this.set("pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestCreatedEventMetadata: Self = this.set("pullRequestCreatedEventMetadata", js.undefined)
+    @scala.inline
+    def setPullRequestEventType(value: PullRequestEventType): Self = this.set("pullRequestEventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestEventType: Self = this.set("pullRequestEventType", js.undefined)
+    @scala.inline
+    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestId: Self = this.set("pullRequestId", js.undefined)
+    @scala.inline
+    def setPullRequestMergedStateChangedEventMetadata(value: PullRequestMergedStateChangedEventMetadata): Self = this.set("pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestMergedStateChangedEventMetadata: Self = this.set("pullRequestMergedStateChangedEventMetadata", js.undefined)
+    @scala.inline
+    def setPullRequestSourceReferenceUpdatedEventMetadata(value: PullRequestSourceReferenceUpdatedEventMetadata): Self = this.set("pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestSourceReferenceUpdatedEventMetadata: Self = this.set("pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
+    @scala.inline
+    def setPullRequestStatusChangedEventMetadata(value: PullRequestStatusChangedEventMetadata): Self = this.set("pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePullRequestStatusChangedEventMetadata: Self = this.set("pullRequestStatusChangedEventMetadata", js.undefined)
+  }
+  
 }
 

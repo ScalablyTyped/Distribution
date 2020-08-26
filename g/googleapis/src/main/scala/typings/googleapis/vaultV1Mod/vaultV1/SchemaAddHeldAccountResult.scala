@@ -22,11 +22,30 @@ trait SchemaAddHeldAccountResult extends js.Object {
 
 object SchemaAddHeldAccountResult {
   @scala.inline
-  def apply(account: SchemaHeldAccount = null, status: SchemaStatus = null): SchemaAddHeldAccountResult = {
+  def apply(): SchemaAddHeldAccountResult = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAddHeldAccountResult]
   }
+  @scala.inline
+  implicit class SchemaAddHeldAccountResultOps[Self <: SchemaAddHeldAccountResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: SchemaHeldAccount): Self = this.set("account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount: Self = this.set("account", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

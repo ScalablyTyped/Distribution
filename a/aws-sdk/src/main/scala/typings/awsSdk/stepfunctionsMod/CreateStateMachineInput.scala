@@ -34,19 +34,42 @@ trait CreateStateMachineInput extends js.Object {
 
 object CreateStateMachineInput {
   @scala.inline
-  def apply(
-    definition: Definition,
-    name: Name,
-    roleArn: Arn,
-    loggingConfiguration: LoggingConfiguration = null,
-    tags: TagList = null,
-    `type`: StateMachineType = null
-  ): CreateStateMachineInput = {
+  def apply(definition: Definition, name: Name, roleArn: Arn): CreateStateMachineInput = {
     val __obj = js.Dynamic.literal(definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (loggingConfiguration != null) __obj.updateDynamic("loggingConfiguration")(loggingConfiguration.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStateMachineInput]
   }
+  @scala.inline
+  implicit class CreateStateMachineInputOps[Self <: CreateStateMachineInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinition(value: Definition): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: Arn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoggingConfiguration(value: LoggingConfiguration): Self = this.set("loggingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfiguration: Self = this.set("loggingConfiguration", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setType(value: StateMachineType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

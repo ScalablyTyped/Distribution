@@ -249,7 +249,23 @@ object abstractHistogramMod extends js.Object {
       * @param useCsvFormat  Output in CSV format if true. Otherwise use plain text form.
       */
     def outputPercentileDistribution(): String = js.native
+    def outputPercentileDistribution(
+      percentileTicksPerHalfDistance: js.UndefOr[scala.Nothing],
+      outputValueUnitScalingRatio: js.UndefOr[scala.Nothing],
+      useCsvFormat: Boolean
+    ): String = js.native
+    def outputPercentileDistribution(percentileTicksPerHalfDistance: js.UndefOr[scala.Nothing], outputValueUnitScalingRatio: Double): String = js.native
+    def outputPercentileDistribution(
+      percentileTicksPerHalfDistance: js.UndefOr[scala.Nothing],
+      outputValueUnitScalingRatio: Double,
+      useCsvFormat: Boolean
+    ): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double): String = js.native
+    def outputPercentileDistribution(
+      percentileTicksPerHalfDistance: Double,
+      outputValueUnitScalingRatio: js.UndefOr[scala.Nothing],
+      useCsvFormat: Boolean
+    ): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Double): String = js.native
     def outputPercentileDistribution(percentileTicksPerHalfDistance: Double, outputValueUnitScalingRatio: Double, useCsvFormat: Boolean): String = js.native
     def recordSingleValue(value: Double): Unit = js.native

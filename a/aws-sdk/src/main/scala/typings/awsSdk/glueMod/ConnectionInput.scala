@@ -34,19 +34,42 @@ trait ConnectionInput extends js.Object {
 
 object ConnectionInput {
   @scala.inline
-  def apply(
-    ConnectionProperties: ConnectionProperties,
-    ConnectionType: ConnectionType,
-    Name: NameString,
-    Description: DescriptionString = null,
-    MatchCriteria: MatchCriteria = null,
-    PhysicalConnectionRequirements: PhysicalConnectionRequirements = null
-  ): ConnectionInput = {
+  def apply(ConnectionProperties: ConnectionProperties, ConnectionType: ConnectionType, Name: NameString): ConnectionInput = {
     val __obj = js.Dynamic.literal(ConnectionProperties = ConnectionProperties.asInstanceOf[js.Any], ConnectionType = ConnectionType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (MatchCriteria != null) __obj.updateDynamic("MatchCriteria")(MatchCriteria.asInstanceOf[js.Any])
-    if (PhysicalConnectionRequirements != null) __obj.updateDynamic("PhysicalConnectionRequirements")(PhysicalConnectionRequirements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInput]
   }
+  @scala.inline
+  implicit class ConnectionInputOps[Self <: ConnectionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionProperties(value: ConnectionProperties): Self = this.set("ConnectionProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionType(value: ConnectionType): Self = this.set("ConnectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setMatchCriteriaVarargs(value: NameString*): Self = this.set("MatchCriteria", js.Array(value :_*))
+    @scala.inline
+    def setMatchCriteria(value: MatchCriteria): Self = this.set("MatchCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchCriteria: Self = this.set("MatchCriteria", js.undefined)
+    @scala.inline
+    def setPhysicalConnectionRequirements(value: PhysicalConnectionRequirements): Self = this.set("PhysicalConnectionRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhysicalConnectionRequirements: Self = this.set("PhysicalConnectionRequirements", js.undefined)
+  }
+  
 }
 

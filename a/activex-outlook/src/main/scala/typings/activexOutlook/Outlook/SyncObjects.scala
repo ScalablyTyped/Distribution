@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SyncObjects extends js.Object {
-  val AppFolders: SyncObject
-  val Application: typings.activexOutlook.Outlook.Application
-  val Class: OlObjectClass
-  val Count: Double
+  val AppFolders: SyncObject = js.native
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Class: OlObjectClass = js.native
+  val Count: Double = js.native
   @JSName("Outlook.SyncObjects_typekey")
-  var OutlookDotSyncObjects_typekey: SyncObjects
-  val Parent: js.Any
-  val Session: NameSpace
-  def Item(Index: js.Any): SyncObject
+  var OutlookDotSyncObjects_typekey: SyncObjects = js.native
+  val Parent: js.Any = js.native
+  val Session: NameSpace = js.native
+  def Item(Index: js.Any): SyncObject = js.native
 }
 
 object SyncObjects {
@@ -32,5 +33,34 @@ object SyncObjects {
     __obj.updateDynamic("Outlook.SyncObjects_typekey")(OutlookDotSyncObjects_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncObjects]
   }
+  @scala.inline
+  implicit class SyncObjectsOps[Self <: SyncObjects] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppFolders(value: SyncObject): Self = this.set("AppFolders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCount(value: Double): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItem(value: js.Any => SyncObject): Self = this.set("Item", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOutlookDotSyncObjects_typekey(value: SyncObjects): Self = this.set("Outlook.SyncObjects_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+  }
+  
 }
 

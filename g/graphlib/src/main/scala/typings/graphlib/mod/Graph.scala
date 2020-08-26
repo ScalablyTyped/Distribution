@@ -286,6 +286,7 @@ class Graph () extends js.Object {
     * @returns the graph, allowing this to be chained with other functions.
     */
   def setEdge(v: String, w: String): Graph = js.native
+  def setEdge(v: String, w: String, label: js.UndefOr[scala.Nothing], name: String): Graph = js.native
   def setEdge(v: String, w: String, label: js.Any): Graph = js.native
   def setEdge(v: String, w: String, label: js.Any, name: String): Graph = js.native
   /**

@@ -34,22 +34,46 @@ trait SummarizedCounter extends js.Object {
 
 object SummarizedCounter {
   @scala.inline
-  def apply(
-    Average: js.UndefOr[Double] = js.undefined,
-    Max: js.UndefOr[Double] = js.undefined,
-    N: js.UndefOr[Integer] = js.undefined,
-    Name: String = null,
-    Sum: js.UndefOr[Double] = js.undefined,
-    Unit: String = null
-  ): SummarizedCounter = {
+  def apply(): SummarizedCounter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Average)) __obj.updateDynamic("Average")(Average.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Max)) __obj.updateDynamic("Max")(Max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(N)) __obj.updateDynamic("N")(N.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sum)) __obj.updateDynamic("Sum")(Sum.get.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummarizedCounter]
   }
+  @scala.inline
+  implicit class SummarizedCounterOps[Self <: SummarizedCounter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAverage(value: Double): Self = this.set("Average", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverage: Self = this.set("Average", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("Max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("Max", js.undefined)
+    @scala.inline
+    def setN(value: Integer): Self = this.set("N", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteN: Self = this.set("N", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSum(value: Double): Self = this.set("Sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("Sum", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

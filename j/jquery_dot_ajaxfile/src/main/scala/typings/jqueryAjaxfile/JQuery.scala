@@ -163,12 +163,23 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def animate(properties: Object): JQuery = js.native
+  def animate(properties: Object, duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def animate(
+    properties: Object,
+    duration: js.UndefOr[scala.Nothing],
+    easing: js.UndefOr[scala.Nothing],
+    complete: js.Function
+  ): JQuery = js.native
+  def animate(properties: Object, duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def animate(properties: Object, duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def animate(properties: Object, duration: String): JQuery = js.native
   def animate(properties: Object, duration: String, complete: js.Function): JQuery = js.native
+  def animate(properties: Object, duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def animate(properties: Object, duration: String, easing: String): JQuery = js.native
   def animate(properties: Object, duration: String, easing: String, complete: js.Function): JQuery = js.native
   def animate(properties: Object, duration: Double): JQuery = js.native
   def animate(properties: Object, duration: Double, complete: js.Function): JQuery = js.native
+  def animate(properties: Object, duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def animate(properties: Object, duration: Double, easing: String): JQuery = js.native
   def animate(properties: Object, duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -292,6 +303,10 @@ trait JQuery
     * Trigger the "blur" event on an element
     */
   def blur(): JQuery = js.native
+  def blur(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def blur(eventData: js.Any): JQuery = js.native
   def blur(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -304,6 +319,10 @@ trait JQuery
     * Trigger the "change" event on an element.
     */
   def change(): JQuery = js.native
+  def change(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def change(eventData: js.Any): JQuery = js.native
   def change(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -330,6 +349,10 @@ trait JQuery
     * Trigger the "click" event on an element.
     */
   def click(): JQuery = js.native
+  def click(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def click(eventData: js.Any): JQuery = js.native
   def click(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -338,6 +361,7 @@ trait JQuery
     * @param eventData An object containing data that will be passed to the event handler.
     */
   def click(handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def clone(withDataAndEvents: js.UndefOr[scala.Nothing], deepWithDataAndEvents: Boolean): JQuery = js.native
   def clone(withDataAndEvents: Boolean): JQuery = js.native
   def clone(withDataAndEvents: Boolean, deepWithDataAndEvents: Boolean): JQuery = js.native
   /**
@@ -425,6 +449,10 @@ trait JQuery
     * Trigger the "dblclick" event on an element.
     */
   def dblclick(): JQuery = js.native
+  def dblclick(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def dblclick(eventData: js.Any): JQuery = js.native
   def dblclick(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -503,12 +531,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def fadeIn(): JQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def fadeIn(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def fadeIn(duration: String): JQuery = js.native
   def fadeIn(duration: String, complete: js.Function): JQuery = js.native
+  def fadeIn(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeIn(duration: String, easing: String): JQuery = js.native
   def fadeIn(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def fadeIn(duration: Double): JQuery = js.native
   def fadeIn(duration: Double, complete: js.Function): JQuery = js.native
+  def fadeIn(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeIn(duration: Double, easing: String): JQuery = js.native
   def fadeIn(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -524,12 +558,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def fadeOut(): JQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def fadeOut(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def fadeOut(duration: String): JQuery = js.native
   def fadeOut(duration: String, complete: js.Function): JQuery = js.native
+  def fadeOut(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeOut(duration: String, easing: String): JQuery = js.native
   def fadeOut(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def fadeOut(duration: Double): JQuery = js.native
   def fadeOut(duration: Double, complete: js.Function): JQuery = js.native
+  def fadeOut(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeOut(duration: Double, easing: String): JQuery = js.native
   def fadeOut(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -547,10 +587,12 @@ trait JQuery
     */
   def fadeTo(duration: String, opacity: Double): JQuery = js.native
   def fadeTo(duration: String, opacity: Double, complete: js.Function): JQuery = js.native
+  def fadeTo(duration: String, opacity: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeTo(duration: String, opacity: Double, easing: String): JQuery = js.native
   def fadeTo(duration: String, opacity: Double, easing: String, complete: js.Function): JQuery = js.native
   def fadeTo(duration: Double, opacity: Double): JQuery = js.native
   def fadeTo(duration: Double, opacity: Double, complete: js.Function): JQuery = js.native
+  def fadeTo(duration: Double, opacity: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeTo(duration: Double, opacity: Double, easing: String): JQuery = js.native
   def fadeTo(duration: Double, opacity: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -560,12 +602,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def fadeToggle(): JQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def fadeToggle(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def fadeToggle(duration: String): JQuery = js.native
   def fadeToggle(duration: String, complete: js.Function): JQuery = js.native
+  def fadeToggle(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeToggle(duration: String, easing: String): JQuery = js.native
   def fadeToggle(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def fadeToggle(duration: Double): JQuery = js.native
   def fadeToggle(duration: Double, complete: js.Function): JQuery = js.native
+  def fadeToggle(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def fadeToggle(duration: Double, easing: String): JQuery = js.native
   def fadeToggle(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -631,6 +679,10 @@ trait JQuery
     * Trigger the "focus" event on an element.
     */
   def focus(): JQuery = js.native
+  def focus(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def focus(eventData: js.Any): JQuery = js.native
   def focus(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -717,12 +769,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def hide(): JQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def hide(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def hide(duration: String): JQuery = js.native
   def hide(duration: String, complete: js.Function): JQuery = js.native
+  def hide(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def hide(duration: String, easing: String): JQuery = js.native
   def hide(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def hide(duration: Double): JQuery = js.native
   def hide(duration: Double, complete: js.Function): JQuery = js.native
+  def hide(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def hide(duration: Double, easing: String): JQuery = js.native
   def hide(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -845,6 +903,10 @@ trait JQuery
     * Trigger the "keydown" event on an element.
     */
   def keydown(): JQuery = js.native
+  def keydown(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]
+  ): JQuery = js.native
   def keydown(eventData: js.Any): JQuery = js.native
   def keydown(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]): JQuery = js.native
   /**
@@ -857,6 +919,10 @@ trait JQuery
     * Trigger the "keypress" event on an element.
     */
   def keypress(): JQuery = js.native
+  def keypress(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]
+  ): JQuery = js.native
   def keypress(eventData: js.Any): JQuery = js.native
   def keypress(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]): JQuery = js.native
   /**
@@ -869,6 +935,10 @@ trait JQuery
     * Trigger the "keyup" event on an element.
     */
   def keyup(): JQuery = js.native
+  def keyup(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]
+  ): JQuery = js.native
   def keyup(eventData: js.Any): JQuery = js.native
   def keyup(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryKeyEventObject, _]): JQuery = js.native
   /**
@@ -888,6 +958,10 @@ trait JQuery
     * @param handler A function to execute when the event is triggered.
     */
   def load(): JQuery = js.native
+  def load(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def load(eventData: js.Any): JQuery = js.native
   def load(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -904,6 +978,16 @@ trait JQuery
     * @param complete A callback function that is executed when the request completes.
     */
   def load(url: String): JQuery = js.native
+  def load(
+    url: String,
+    data: js.UndefOr[scala.Nothing],
+    complete: js.Function3[
+      /* responseText */ String, 
+      /* textStatus */ String, 
+      /* XMLHttpRequest */ XMLHttpRequest, 
+      _
+    ]
+  ): JQuery = js.native
   def load(url: String, data: String): JQuery = js.native
   def load(
     url: String,
@@ -1076,6 +1160,7 @@ trait JQuery
   def nextUntil(element: Element, filter: String): JQuery = js.native
   def nextUntil(obj: JQuery): JQuery = js.native
   def nextUntil(obj: JQuery, filter: String): JQuery = js.native
+  def nextUntil(selector: js.UndefOr[scala.Nothing], filter: String): JQuery = js.native
   def nextUntil(selector: String): JQuery = js.native
   def nextUntil(selector: String, filter: String): JQuery = js.native
   /**
@@ -1121,6 +1206,11 @@ trait JQuery
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off(
+    events: String,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def off(events: String, selector: String): JQuery = js.native
   def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -1208,6 +1298,7 @@ trait JQuery
     */
   def on(events: StringDictionary[js.Any]): JQuery = js.native
   def on(events: StringDictionary[js.Any], data: js.Any): JQuery = js.native
+  def on(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): JQuery = js.native
   def on(events: StringDictionary[js.Any], selector: String): JQuery = js.native
   def on(events: StringDictionary[js.Any], selector: String, data: js.Any): JQuery = js.native
   /**
@@ -1256,6 +1347,7 @@ trait JQuery
     */
   def one(events: StringDictionary[js.Any]): JQuery = js.native
   def one(events: StringDictionary[js.Any], data: js.Any): JQuery = js.native
+  def one(events: StringDictionary[js.Any], selector: js.UndefOr[scala.Nothing], data: js.Any): JQuery = js.native
   def one(events: StringDictionary[js.Any], selector: String): JQuery = js.native
   def one(events: StringDictionary[js.Any], selector: String, data: js.Any): JQuery = js.native
   /**
@@ -1311,6 +1403,7 @@ trait JQuery
   def parentsUntil(element: Element, filter: String): JQuery = js.native
   def parentsUntil(obj: JQuery): JQuery = js.native
   def parentsUntil(obj: JQuery, filter: String): JQuery = js.native
+  def parentsUntil(selector: js.UndefOr[scala.Nothing], filter: String): JQuery = js.native
   def parentsUntil(selector: String): JQuery = js.native
   def parentsUntil(selector: String, filter: String): JQuery = js.native
   /**
@@ -1368,6 +1461,7 @@ trait JQuery
   def prevUntil(element: Element, filter: String): JQuery = js.native
   def prevUntil(obj: JQuery): JQuery = js.native
   def prevUntil(obj: JQuery, filter: String): JQuery = js.native
+  def prevUntil(selector: js.UndefOr[scala.Nothing], filter: String): JQuery = js.native
   def prevUntil(selector: String): JQuery = js.native
   def prevUntil(selector: String, filter: String): JQuery = js.native
   /**
@@ -1377,6 +1471,7 @@ trait JQuery
     * @param target Object onto which the promise methods have to be attached
     */
   def promise(): JQueryPromise[_] = js.native
+  def promise(`type`: js.UndefOr[scala.Nothing], target: Object): JQueryPromise[_] = js.native
   def promise(`type`: String): JQueryPromise[_] = js.native
   def promise(`type`: String, target: Object): JQueryPromise[_] = js.native
   /**
@@ -1620,12 +1715,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def show(): JQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def show(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def show(duration: String): JQuery = js.native
   def show(duration: String, complete: js.Function): JQuery = js.native
+  def show(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def show(duration: String, easing: String): JQuery = js.native
   def show(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def show(duration: Double): JQuery = js.native
   def show(duration: Double, complete: js.Function): JQuery = js.native
+  def show(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def show(duration: Double, easing: String): JQuery = js.native
   def show(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -1656,12 +1757,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def slideDown(): JQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def slideDown(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def slideDown(duration: String): JQuery = js.native
   def slideDown(duration: String, complete: js.Function): JQuery = js.native
+  def slideDown(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def slideDown(duration: String, easing: String): JQuery = js.native
   def slideDown(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def slideDown(duration: Double): JQuery = js.native
   def slideDown(duration: Double, complete: js.Function): JQuery = js.native
+  def slideDown(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def slideDown(duration: Double, easing: String): JQuery = js.native
   def slideDown(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -1677,12 +1784,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def slideToggle(): JQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def slideToggle(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def slideToggle(duration: String): JQuery = js.native
   def slideToggle(duration: String, complete: js.Function): JQuery = js.native
+  def slideToggle(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def slideToggle(duration: String, easing: String): JQuery = js.native
   def slideToggle(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def slideToggle(duration: Double): JQuery = js.native
   def slideToggle(duration: Double, complete: js.Function): JQuery = js.native
+  def slideToggle(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def slideToggle(duration: Double, easing: String): JQuery = js.native
   def slideToggle(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -1698,12 +1811,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def slideUp(): JQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def slideUp(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def slideUp(duration: String): JQuery = js.native
   def slideUp(duration: String, complete: js.Function): JQuery = js.native
+  def slideUp(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def slideUp(duration: String, easing: String): JQuery = js.native
   def slideUp(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def slideUp(duration: Double): JQuery = js.native
   def slideUp(duration: Double, complete: js.Function): JQuery = js.native
+  def slideUp(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def slideUp(duration: Double, easing: String): JQuery = js.native
   def slideUp(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -1719,15 +1838,23 @@ trait JQuery
     * @param jumpToEnd A Boolean indicating whether to complete the current animation immediately. Defaults to false.
     */
   def stop(): JQuery = js.native
+  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): JQuery = js.native
   def stop(clearQueue: Boolean): JQuery = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): JQuery = js.native
+  def stop(queue: js.UndefOr[scala.Nothing], clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): JQuery = js.native
+  def stop(queue: js.UndefOr[scala.Nothing], clearQueue: Boolean, jumpToEnd: Boolean): JQuery = js.native
   def stop(queue: String): JQuery = js.native
+  def stop(queue: String, clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): JQuery = js.native
   def stop(queue: String, clearQueue: Boolean): JQuery = js.native
   def stop(queue: String, clearQueue: Boolean, jumpToEnd: Boolean): JQuery = js.native
   /**
     * Trigger the "submit" event on an element.
     */
   def submit(): JQuery = js.native
+  def submit(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def submit(eventData: js.Any): JQuery = js.native
   def submit(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**
@@ -1765,12 +1892,18 @@ trait JQuery
     * @param complete A function to call once the animation is complete.
     */
   def toggle(): JQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], easing: String): JQuery = js.native
+  def toggle(duration: js.UndefOr[scala.Nothing], easing: String, complete: js.Function): JQuery = js.native
   def toggle(duration: String): JQuery = js.native
   def toggle(duration: String, complete: js.Function): JQuery = js.native
+  def toggle(duration: String, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def toggle(duration: String, easing: String): JQuery = js.native
   def toggle(duration: String, easing: String, complete: js.Function): JQuery = js.native
   def toggle(duration: Double): JQuery = js.native
   def toggle(duration: Double, complete: js.Function): JQuery = js.native
+  def toggle(duration: Double, easing: js.UndefOr[scala.Nothing], complete: js.Function): JQuery = js.native
   def toggle(duration: Double, easing: String): JQuery = js.native
   def toggle(duration: Double, easing: String, complete: js.Function): JQuery = js.native
   /**
@@ -1850,6 +1983,10 @@ trait JQuery
     * @param handler The function that is to be no longer executed.
     */
   def unbind(): JQuery = js.native
+  def unbind(
+    eventType: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def unbind(eventType: String): JQuery = js.native
   /**
     * Remove a previously-attached event handler from the elements.
@@ -1898,6 +2035,10 @@ trait JQuery
     * @param handler A function to execute when the event is triggered.
     */
   def unload(): JQuery = js.native
+  def unload(
+    eventData: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   def unload(eventData: js.Any): JQuery = js.native
   def unload(eventData: js.Any, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   /**

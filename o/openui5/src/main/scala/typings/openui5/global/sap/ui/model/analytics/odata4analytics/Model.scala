@@ -21,34 +21,6 @@ class Model protected ()
     */
   def this(oModelReference: js.Any) = this()
   def this(oModelReference: js.Any, mParameter: js.Any) = this()
-  /**
-    * Find analytic query result by name
-    * @param sName Fully qualified name of query result entity set
-    * @returns The query result object         with this name or null if it does not exist
-    */
-  /* CompleteClass */
-  override def findQueryResultByName(sName: String): typings.openui5.sap.ui.model.analytics.odata4analytics.QueryResult = js.native
-  /**
-    * Get the names of all query results (entity sets) offered by the model
-    * @returns List of all query result names
-    */
-  /* CompleteClass */
-  override def getAllQueryResultNames(): js.Array[String] = js.native
-  /**
-    * Get all query results offered by the model
-    * @returns An object with individual JS properties for each query         result included in the
-    * model. The JS object properties all are         objects of type odata4analytics.QueryResult. The
-    * names         of the JS object properties are given by the entity set names         representing the
-    * query results.
-    */
-  /* CompleteClass */
-  override def getAllQueryResults(): js.Any = js.native
-  /**
-    * Get underlying OData model provided by SAP UI5
-    * @returns The SAP UI5 representation of the model.
-    */
-  /* CompleteClass */
-  override def getODataModel(): js.Any = js.native
 }
 
 @JSGlobal("sap.ui.model.analytics.odata4analytics.Model")

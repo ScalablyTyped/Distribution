@@ -1,32 +1,42 @@
 package typings.grammarkdown.hostMod
 
 import typings.grammarkdown.grammarkdownBooleans.`false`
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AsyncHostOptions extends HostBaseOptions {
-  var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback | `false`] = js.undefined
-  var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback | `false`] = js.undefined
+  var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback | `false`] = js.native
+  var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback | `false`] = js.native
 }
 
 object AsyncHostOptions {
   @scala.inline
-  def apply(
-    ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    knownGrammars: Record[String, String] = null,
-    readFile: ReadFileCallback | LegacyReadFileCallback | `false` = null,
-    useBuiltinGrammars: js.UndefOr[Boolean] = js.undefined,
-    writeFile: WriteFileCallback | LegacyWriteFileCallback | `false` = null
-  ): AsyncHostOptions = {
+  def apply(): AsyncHostOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
-    if (knownGrammars != null) __obj.updateDynamic("knownGrammars")(knownGrammars.asInstanceOf[js.Any])
-    if (readFile != null) __obj.updateDynamic("readFile")(readFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBuiltinGrammars)) __obj.updateDynamic("useBuiltinGrammars")(useBuiltinGrammars.get.asInstanceOf[js.Any])
-    if (writeFile != null) __obj.updateDynamic("writeFile")(writeFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncHostOptions]
   }
+  @scala.inline
+  implicit class AsyncHostOptionsOps[Self <: AsyncHostOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReadFile(value: ReadFileCallback | LegacyReadFileCallback | `false`): Self = this.set("readFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadFile: Self = this.set("readFile", js.undefined)
+    @scala.inline
+    def setWriteFile(value: WriteFileCallback | LegacyWriteFileCallback | `false`): Self = this.set("writeFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteFile: Self = this.set("writeFile", js.undefined)
+  }
+  
 }
 

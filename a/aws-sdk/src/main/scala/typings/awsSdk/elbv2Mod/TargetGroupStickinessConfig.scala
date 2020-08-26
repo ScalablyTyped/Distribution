@@ -18,14 +18,30 @@ trait TargetGroupStickinessConfig extends js.Object {
 
 object TargetGroupStickinessConfig {
   @scala.inline
-  def apply(
-    DurationSeconds: js.UndefOr[TargetGroupStickinessDurationSeconds] = js.undefined,
-    Enabled: js.UndefOr[TargetGroupStickinessEnabled] = js.undefined
-  ): TargetGroupStickinessConfig = {
+  def apply(): TargetGroupStickinessConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupStickinessConfig]
   }
+  @scala.inline
+  implicit class TargetGroupStickinessConfigOps[Self <: TargetGroupStickinessConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationSeconds(value: TargetGroupStickinessDurationSeconds): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    @scala.inline
+    def setEnabled(value: TargetGroupStickinessEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+  }
+  
 }
 

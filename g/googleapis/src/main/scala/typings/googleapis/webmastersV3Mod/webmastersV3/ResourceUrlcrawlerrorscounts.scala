@@ -31,6 +31,7 @@ class ResourceUrlcrawlerrorscounts protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaUrlCrawlErrorsCountsQueryResponse]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
   def query(params: ParamsResourceUrlcrawlerrorscountsQuery): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
   def query(
     params: ParamsResourceUrlcrawlerrorscountsQuery,

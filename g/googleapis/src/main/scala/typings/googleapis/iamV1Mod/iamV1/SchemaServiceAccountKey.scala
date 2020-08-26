@@ -62,24 +62,50 @@ trait SchemaServiceAccountKey extends js.Object {
 
 object SchemaServiceAccountKey {
   @scala.inline
-  def apply(
-    keyAlgorithm: String = null,
-    name: String = null,
-    privateKeyData: String = null,
-    privateKeyType: String = null,
-    publicKeyData: String = null,
-    validAfterTime: String = null,
-    validBeforeTime: String = null
-  ): SchemaServiceAccountKey = {
+  def apply(): SchemaServiceAccountKey = {
     val __obj = js.Dynamic.literal()
-    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (privateKeyData != null) __obj.updateDynamic("privateKeyData")(privateKeyData.asInstanceOf[js.Any])
-    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType.asInstanceOf[js.Any])
-    if (publicKeyData != null) __obj.updateDynamic("publicKeyData")(publicKeyData.asInstanceOf[js.Any])
-    if (validAfterTime != null) __obj.updateDynamic("validAfterTime")(validAfterTime.asInstanceOf[js.Any])
-    if (validBeforeTime != null) __obj.updateDynamic("validBeforeTime")(validBeforeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServiceAccountKey]
   }
+  @scala.inline
+  implicit class SchemaServiceAccountKeyOps[Self <: SchemaServiceAccountKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyAlgorithm(value: String): Self = this.set("keyAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyAlgorithm: Self = this.set("keyAlgorithm", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPrivateKeyData(value: String): Self = this.set("privateKeyData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyData: Self = this.set("privateKeyData", js.undefined)
+    @scala.inline
+    def setPrivateKeyType(value: String): Self = this.set("privateKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyType: Self = this.set("privateKeyType", js.undefined)
+    @scala.inline
+    def setPublicKeyData(value: String): Self = this.set("publicKeyData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKeyData: Self = this.set("publicKeyData", js.undefined)
+    @scala.inline
+    def setValidAfterTime(value: String): Self = this.set("validAfterTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidAfterTime: Self = this.set("validAfterTime", js.undefined)
+    @scala.inline
+    def setValidBeforeTime(value: String): Self = this.set("validBeforeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidBeforeTime: Self = this.set("validBeforeTime", js.undefined)
+  }
+  
 }
 

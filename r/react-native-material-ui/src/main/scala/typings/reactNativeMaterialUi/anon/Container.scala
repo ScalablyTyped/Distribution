@@ -6,24 +6,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Container extends js.Object {
-  var container: js.UndefOr[ViewStyle] = js.undefined
-  var icon: js.UndefOr[TextStyle] = js.undefined
-  var positionContainer: js.UndefOr[ViewStyle] = js.undefined
+  var container: js.UndefOr[ViewStyle] = js.native
+  var icon: js.UndefOr[TextStyle] = js.native
+  var positionContainer: js.UndefOr[ViewStyle] = js.native
 }
 
 object Container {
   @scala.inline
-  def apply(
-    container: js.UndefOr[Null | ViewStyle] = js.undefined,
-    icon: js.UndefOr[Null | TextStyle] = js.undefined,
-    positionContainer: js.UndefOr[Null | ViewStyle] = js.undefined
-  ): Container = {
+  def apply(): Container = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionContainer)) __obj.updateDynamic("positionContainer")(positionContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Container]
   }
+  @scala.inline
+  implicit class ContainerOps[Self <: Container] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContainerNull: Self = this.set("container", null)
+    @scala.inline
+    def setIcon(value: TextStyle): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconNull: Self = this.set("icon", null)
+    @scala.inline
+    def setPositionContainer(value: ViewStyle): Self = this.set("positionContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionContainer: Self = this.set("positionContainer", js.undefined)
+    @scala.inline
+    def setPositionContainerNull: Self = this.set("positionContainer", null)
+  }
+  
 }
 

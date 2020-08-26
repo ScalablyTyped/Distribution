@@ -5,33 +5,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined dav.dav.Partial<dav.dav.VCard> */
+@js.native
 trait VCardOptions extends js.Object {
-  var addressBook: js.UndefOr[AddressBook] = js.undefined
-  var addressData: js.UndefOr[String] = js.undefined
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
-  var data: js.UndefOr[String] = js.undefined
-  var etag: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var addressBook: js.UndefOr[AddressBook] = js.native
+  var addressData: js.UndefOr[String] = js.native
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.native
+  var data: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object VCardOptions {
   @scala.inline
-  def apply(
-    addressBook: AddressBook = null,
-    addressData: String = null,
-    constructor: /* options */ js.UndefOr[VCardOptions] => js.Any = null,
-    data: String = null,
-    etag: String = null,
-    url: String = null
-  ): VCardOptions = {
+  def apply(): VCardOptions = {
     val __obj = js.Dynamic.literal()
-    if (addressBook != null) __obj.updateDynamic("addressBook")(addressBook.asInstanceOf[js.Any])
-    if (addressData != null) __obj.updateDynamic("addressData")(addressData.asInstanceOf[js.Any])
-    if (constructor != null) __obj.updateDynamic("constructor")(js.Any.fromFunction1(constructor))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[VCardOptions]
   }
+  @scala.inline
+  implicit class VCardOptionsOps[Self <: VCardOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressBook(value: AddressBook): Self = this.set("addressBook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressBook: Self = this.set("addressBook", js.undefined)
+    @scala.inline
+    def setAddressData(value: String): Self = this.set("addressData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressData: Self = this.set("addressData", js.undefined)
+    @scala.inline
+    def setConstructor(value: /* options */ js.UndefOr[VCardOptions] => js.Any): Self = this.set("constructor", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

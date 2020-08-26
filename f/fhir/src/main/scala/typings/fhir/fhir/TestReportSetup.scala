@@ -7,32 +7,36 @@ import scala.scalajs.js.annotation._
 /**
   * The results of the series of required setup operations before the tests were executed
   */
+@js.native
 trait TestReportSetup extends BackboneElement {
   /**
     * A setup operation or assert that was executed
     */
-  var action: js.Array[TestReportSetupAction]
+  var action: js.Array[TestReportSetupAction] = js.native
 }
 
 object TestReportSetup {
   @scala.inline
-  def apply(
-    action: js.Array[TestReportSetupAction],
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): TestReportSetup = {
+  def apply(action: js.Array[TestReportSetupAction]): TestReportSetup = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReportSetup]
   }
+  @scala.inline
+  implicit class TestReportSetupOps[Self <: TestReportSetup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionVarargs(value: TestReportSetupAction*): Self = this.set("action", js.Array(value :_*))
+    @scala.inline
+    def setAction(value: js.Array[TestReportSetupAction]): Self = this.set("action", value.asInstanceOf[js.Any])
+  }
+  
 }
 

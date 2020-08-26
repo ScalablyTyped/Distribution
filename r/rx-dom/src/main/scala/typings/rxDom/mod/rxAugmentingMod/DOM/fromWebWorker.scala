@@ -1,6 +1,6 @@
 package typings.rxDom.mod.rxAugmentingMod.DOM
 
-import typings.rxCoreBinding.Rx.Subject
+import typings.rx.Rx.Subject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

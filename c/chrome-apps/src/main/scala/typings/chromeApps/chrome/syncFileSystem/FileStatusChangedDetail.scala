@@ -1,11 +1,9 @@
 package typings.chromeApps.chrome.syncFileSystem
 
-import typings.chromeApps.AnonADDED
-import typings.chromeApps.AnonCONFLICTING
-import typings.chromeApps.AnonLOCALTOREMOTE
+import typings.chromeApps.anon.ADDED
+import typings.chromeApps.anon.CONFLICTING
+import typings.chromeApps.anon.LOCALTOREMOTE
 import typings.chromeApps.chrome.ToStringLiteral
-import typings.chromeApps.chromeAppsStrings.ADDED
-import typings.chromeApps.chromeAppsStrings.CONFLICTING
 import typings.chromeApps.chromeAppsStrings.DELETED
 import typings.chromeApps.chromeAppsStrings.LOCAL_TO_REMOTE
 import typings.chromeApps.chromeAppsStrings.PENDING
@@ -26,6 +24,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FileStatusChangedDetail extends js.Object {
   /**
     * Sync action taken to fire onFileStatusChanged event.
@@ -34,11 +33,14 @@ trait FileStatusChangedDetail extends js.Object {
     */
   var action: js.UndefOr[
     ToStringLiteral[
-      AnonADDED, 
-      ADDED | UPDATED | DELETED, 
-      Exclude[ADDED | UPDATED | DELETED, added_ | updated_ | deleted_]
+      ADDED, 
+      /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
+      Exclude[
+        /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
+        added_ | updated_ | deleted_
+      ]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Sync direction for the onFileStatusChanged event.
     * Only applies if status is 'synced'.
@@ -46,27 +48,33 @@ trait FileStatusChangedDetail extends js.Object {
     */
   var direction: js.UndefOr[
     ToStringLiteral[
-      AnonLOCALTOREMOTE, 
-      LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
-      Exclude[LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, local_to_remote_ | remote_to_local_]
+      LOCALTOREMOTE, 
+      /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
+      Exclude[
+        /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
+        local_to_remote_ | remote_to_local_
+      ]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * fileEntry for the target file whose status has changed.
     * Contains name and path information of synchronized file.
     * On file deletion, fileEntry information will still be
     * available but file will no longer exist.
     */
-  var fileEntry: FileEntry
+  var fileEntry: FileEntry = js.native
   /**
     * Resulting file status after onFileStatusChanged event.
     * @see FileStatus
     */
   var status: ToStringLiteral[
-    AnonCONFLICTING, 
-    SYNCED | PENDING | CONFLICTING, 
-    Exclude[SYNCED | PENDING | CONFLICTING, synced_ | pending_ | conflicting_]
-  ]
+    CONFLICTING, 
+    /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
+    Exclude[
+      /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
+      synced_ | pending_ | conflicting_
+    ]
+  ] = js.native
 }
 
 object FileStatusChangedDetail {
@@ -74,25 +82,68 @@ object FileStatusChangedDetail {
   def apply(
     fileEntry: FileEntry,
     status: ToStringLiteral[
-      AnonCONFLICTING, 
-      SYNCED | PENDING | CONFLICTING, 
-      Exclude[SYNCED | PENDING | CONFLICTING, synced_ | pending_ | conflicting_]
-    ],
-    action: ToStringLiteral[
-      AnonADDED, 
-      ADDED | UPDATED | DELETED, 
-      Exclude[ADDED | UPDATED | DELETED, added_ | updated_ | deleted_]
-    ] = null,
-    direction: ToStringLiteral[
-      AnonLOCALTOREMOTE, 
-      LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
-      Exclude[LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, local_to_remote_ | remote_to_local_]
-    ] = null
+      CONFLICTING, 
+      /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
+      Exclude[
+        /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
+        synced_ | pending_ | conflicting_
+      ]
+    ]
   ): FileStatusChangedDetail = {
     val __obj = js.Dynamic.literal(fileEntry = fileEntry.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileStatusChangedDetail]
   }
+  @scala.inline
+  implicit class FileStatusChangedDetailOps[Self <: FileStatusChangedDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileEntry(value: FileEntry): Self = this.set("fileEntry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(
+      value: ToStringLiteral[
+          CONFLICTING, 
+          /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
+          Exclude[
+            /* keyof chrome-apps.anon.CONFLICTING */ SYNCED | PENDING | typings.chromeApps.chromeAppsStrings.CONFLICTING, 
+            synced_ | pending_ | conflicting_
+          ]
+        ]
+    ): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAction(
+      value: ToStringLiteral[
+          ADDED, 
+          /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
+          Exclude[
+            /* keyof chrome-apps.anon.ADDED */ typings.chromeApps.chromeAppsStrings.ADDED | UPDATED | DELETED, 
+            added_ | updated_ | deleted_
+          ]
+        ]
+    ): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setDirection(
+      value: ToStringLiteral[
+          LOCALTOREMOTE, 
+          /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
+          Exclude[
+            /* keyof chrome-apps.anon.LOCALTOREMOTE */ LOCAL_TO_REMOTE | REMOTE_TO_LOCAL, 
+            local_to_remote_ | remote_to_local_
+          ]
+        ]
+    ): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+  }
+  
 }
 

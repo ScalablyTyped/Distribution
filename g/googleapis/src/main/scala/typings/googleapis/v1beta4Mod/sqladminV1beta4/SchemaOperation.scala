@@ -81,40 +81,82 @@ trait SchemaOperation extends js.Object {
 
 object SchemaOperation {
   @scala.inline
-  def apply(
-    endTime: String = null,
-    error: SchemaOperationErrors = null,
-    exportContext: SchemaExportContext = null,
-    importContext: SchemaImportContext = null,
-    insertTime: String = null,
-    kind: String = null,
-    name: String = null,
-    operationType: String = null,
-    selfLink: String = null,
-    startTime: String = null,
-    status: String = null,
-    targetId: String = null,
-    targetLink: String = null,
-    targetProject: String = null,
-    user: String = null
-  ): SchemaOperation = {
+  def apply(): SchemaOperation = {
     val __obj = js.Dynamic.literal()
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (exportContext != null) __obj.updateDynamic("exportContext")(exportContext.asInstanceOf[js.Any])
-    if (importContext != null) __obj.updateDynamic("importContext")(importContext.asInstanceOf[js.Any])
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
-    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink.asInstanceOf[js.Any])
-    if (targetProject != null) __obj.updateDynamic("targetProject")(targetProject.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOperation]
   }
+  @scala.inline
+  implicit class SchemaOperationOps[Self <: SchemaOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setError(value: SchemaOperationErrors): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExportContext(value: SchemaExportContext): Self = this.set("exportContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportContext: Self = this.set("exportContext", js.undefined)
+    @scala.inline
+    def setImportContext(value: SchemaImportContext): Self = this.set("importContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportContext: Self = this.set("importContext", js.undefined)
+    @scala.inline
+    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOperationType(value: String): Self = this.set("operationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationType: Self = this.set("operationType", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetId(value: String): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    @scala.inline
+    def setTargetLink(value: String): Self = this.set("targetLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLink: Self = this.set("targetLink", js.undefined)
+    @scala.inline
+    def setTargetProject(value: String): Self = this.set("targetProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetProject: Self = this.set("targetProject", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

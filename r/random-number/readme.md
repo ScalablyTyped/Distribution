@@ -12,7 +12,7 @@ Generate pseudo-randum numbers
 | Keywords           | random-number, random, random-integer |
 | # releases         | 0 |
 | # dependents       | 37 |
-| # downloads        | 424407 |
+| # downloads        | 434655 |
 | # stars            | 0 |
 
 ## Links

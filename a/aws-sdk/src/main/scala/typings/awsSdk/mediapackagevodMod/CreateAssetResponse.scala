@@ -43,28 +43,60 @@ trait CreateAssetResponse extends js.Object {
 
 object CreateAssetResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    CreatedAt: string = null,
-    EgressEndpoints: listOfEgressEndpoint = null,
-    Id: string = null,
-    PackagingGroupId: string = null,
-    ResourceId: string = null,
-    SourceArn: string = null,
-    SourceRoleArn: string = null,
-    Tags: Tags = null
-  ): CreateAssetResponse = {
+  def apply(): CreateAssetResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (EgressEndpoints != null) __obj.updateDynamic("EgressEndpoints")(EgressEndpoints.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (PackagingGroupId != null) __obj.updateDynamic("PackagingGroupId")(PackagingGroupId.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
-    if (SourceRoleArn != null) __obj.updateDynamic("SourceRoleArn")(SourceRoleArn.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAssetResponse]
   }
+  @scala.inline
+  implicit class CreateAssetResponseOps[Self <: CreateAssetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: string): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setEgressEndpointsVarargs(value: EgressEndpoint*): Self = this.set("EgressEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setEgressEndpoints(value: listOfEgressEndpoint): Self = this.set("EgressEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgressEndpoints: Self = this.set("EgressEndpoints", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setPackagingGroupId(value: string): Self = this.set("PackagingGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackagingGroupId: Self = this.set("PackagingGroupId", js.undefined)
+    @scala.inline
+    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setSourceArn(value: string): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+    @scala.inline
+    def setSourceRoleArn(value: string): Self = this.set("SourceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRoleArn: Self = this.set("SourceRoleArn", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

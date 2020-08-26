@@ -6,69 +6,119 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Props extends js.Object {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var blockStyleFn: js.UndefOr[js.Function1[/* block */ ContentBlock, js.UndefOr[String]]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var customControls: js.UndefOr[js.Array[CustomControl]] = js.undefined
-  var customStyleMap: js.UndefOr[StringDictionary[StringDictionary[js.Any]]] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var editorClassName: js.UndefOr[String] = js.undefined
-  var editorStyle: js.UndefOr[js.Object] = js.undefined
-  var handleReturn: js.UndefOr[js.Function1[/* event */ js.Object, Boolean]] = js.undefined
-  var keyBindingFn: js.UndefOr[js.Function1[/* event */ js.Object, js.UndefOr[String]]] = js.undefined
-  var onChange: js.UndefOr[ChangeHandler] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var rootStyle: js.UndefOr[js.Object] = js.undefined
-  var toolbarClassName: js.UndefOr[String] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var blockStyleFn: js.UndefOr[js.Function1[/* block */ ContentBlock, js.UndefOr[String]]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var customControls: js.UndefOr[js.Array[CustomControl]] = js.native
+  var customStyleMap: js.UndefOr[StringDictionary[StringDictionary[js.Any]]] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var editorClassName: js.UndefOr[String] = js.native
+  var editorStyle: js.UndefOr[js.Object] = js.native
+  var handleReturn: js.UndefOr[js.Function1[/* event */ js.Object, Boolean]] = js.native
+  var keyBindingFn: js.UndefOr[js.Function1[/* event */ js.Object, js.UndefOr[String]]] = js.native
+  var onChange: js.UndefOr[ChangeHandler] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var rootStyle: js.UndefOr[js.Object] = js.native
+  var toolbarClassName: js.UndefOr[String] = js.native
    // Alias of readOnly
-  var toolbarConfig: js.UndefOr[ToolbarConfig] = js.undefined
-  var toolbarStyle: js.UndefOr[js.Object] = js.undefined
-  var value: EditorValue
+  var toolbarConfig: js.UndefOr[ToolbarConfig] = js.native
+  var toolbarStyle: js.UndefOr[js.Object] = js.native
+  var value: EditorValue = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(
-    value: EditorValue,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    blockStyleFn: /* block */ ContentBlock => js.UndefOr[String] = null,
-    className: String = null,
-    customControls: js.Array[CustomControl] = null,
-    customStyleMap: StringDictionary[StringDictionary[js.Any]] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editorClassName: String = null,
-    editorStyle: js.Object = null,
-    handleReturn: /* event */ js.Object => Boolean = null,
-    keyBindingFn: /* event */ js.Object => js.UndefOr[String] = null,
-    onChange: /* value */ EditorValue => js.Any = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rootStyle: js.Object = null,
-    toolbarClassName: String = null,
-    toolbarConfig: ToolbarConfig = null,
-    toolbarStyle: js.Object = null
-  ): Props = {
+  def apply(value: EditorValue): Props = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(js.Any.fromFunction1(blockStyleFn))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customControls != null) __obj.updateDynamic("customControls")(customControls.asInstanceOf[js.Any])
-    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (editorClassName != null) __obj.updateDynamic("editorClassName")(editorClassName.asInstanceOf[js.Any])
-    if (editorStyle != null) __obj.updateDynamic("editorStyle")(editorStyle.asInstanceOf[js.Any])
-    if (handleReturn != null) __obj.updateDynamic("handleReturn")(js.Any.fromFunction1(handleReturn))
-    if (keyBindingFn != null) __obj.updateDynamic("keyBindingFn")(js.Any.fromFunction1(keyBindingFn))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (rootStyle != null) __obj.updateDynamic("rootStyle")(rootStyle.asInstanceOf[js.Any])
-    if (toolbarClassName != null) __obj.updateDynamic("toolbarClassName")(toolbarClassName.asInstanceOf[js.Any])
-    if (toolbarConfig != null) __obj.updateDynamic("toolbarConfig")(toolbarConfig.asInstanceOf[js.Any])
-    if (toolbarStyle != null) __obj.updateDynamic("toolbarStyle")(toolbarStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: EditorValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setBlockStyleFn(value: /* block */ ContentBlock => js.UndefOr[String]): Self = this.set("blockStyleFn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBlockStyleFn: Self = this.set("blockStyleFn", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCustomControlsVarargs(value: CustomControl*): Self = this.set("customControls", js.Array(value :_*))
+    @scala.inline
+    def setCustomControls(value: js.Array[CustomControl]): Self = this.set("customControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomControls: Self = this.set("customControls", js.undefined)
+    @scala.inline
+    def setCustomStyleMap(value: StringDictionary[StringDictionary[js.Any]]): Self = this.set("customStyleMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomStyleMap: Self = this.set("customStyleMap", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEditorClassName(value: String): Self = this.set("editorClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorClassName: Self = this.set("editorClassName", js.undefined)
+    @scala.inline
+    def setEditorStyle(value: js.Object): Self = this.set("editorStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorStyle: Self = this.set("editorStyle", js.undefined)
+    @scala.inline
+    def setHandleReturn(value: /* event */ js.Object => Boolean): Self = this.set("handleReturn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHandleReturn: Self = this.set("handleReturn", js.undefined)
+    @scala.inline
+    def setKeyBindingFn(value: /* event */ js.Object => js.UndefOr[String]): Self = this.set("keyBindingFn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteKeyBindingFn: Self = this.set("keyBindingFn", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ EditorValue => js.Any): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRootStyle(value: js.Object): Self = this.set("rootStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootStyle: Self = this.set("rootStyle", js.undefined)
+    @scala.inline
+    def setToolbarClassName(value: String): Self = this.set("toolbarClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarClassName: Self = this.set("toolbarClassName", js.undefined)
+    @scala.inline
+    def setToolbarConfig(value: ToolbarConfig): Self = this.set("toolbarConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarConfig: Self = this.set("toolbarConfig", js.undefined)
+    @scala.inline
+    def setToolbarStyle(value: js.Object): Self = this.set("toolbarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbarStyle: Self = this.set("toolbarStyle", js.undefined)
+  }
+  
 }
 

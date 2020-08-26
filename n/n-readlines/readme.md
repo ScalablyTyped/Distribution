@@ -11,8 +11,8 @@ Read file line by line without buffering the whole file in memory.
 | Full name          | n-readlines |
 | Keywords           | read, line, reader, linereader, readfile, linebyline, synchronous, sync, readline, readlines |
 | # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 532129 |
+| # dependents       | 75 |
+| # downloads        | 586360 |
 | # stars            | 3 |
 
 ## Links

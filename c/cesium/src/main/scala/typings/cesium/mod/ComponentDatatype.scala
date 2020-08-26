@@ -39,6 +39,12 @@ object ComponentDatatype extends js.Object {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[ComponentDatatype with Double] = js.native
   def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
+  def createArrayBufferView(
+    componentDatatype: ComponentDatatype,
+    buffer: ArrayBuffer,
+    byteOffset: js.UndefOr[scala.Nothing],
+    length: Double
+  ): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
   def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer, byteOffset: Double): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
   def createArrayBufferView(componentDatatype: ComponentDatatype, buffer: ArrayBuffer, byteOffset: Double, length: Double): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native
   def createTypedArray(componentDatatype: ComponentDatatype, valuesOrLength: js.Array[_]): Int8Array | Uint8Array | Int16Array | Uint16Array | Float32Array | Float64Array = js.native

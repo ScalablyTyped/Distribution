@@ -39,6 +39,7 @@ trait PlusAudioAudioPlayer extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
   def play(): Unit = js.native
+  def play(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def play(successCB: js.Function0[Unit]): Unit = js.native
   def play(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   /**

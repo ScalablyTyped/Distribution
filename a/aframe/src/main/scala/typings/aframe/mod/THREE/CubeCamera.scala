@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aframe", "THREE.CubeCamera")
 @js.native
-class CubeCamera ()
-  extends typings.three.mod.CubeCamera
+class CubeCamera protected ()
+  extends typings.three.mod.CubeCamera {
+  def this(
+    near: Double,
+    far: Double,
+    renderTarget: typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
+  ) = this()
+}
 

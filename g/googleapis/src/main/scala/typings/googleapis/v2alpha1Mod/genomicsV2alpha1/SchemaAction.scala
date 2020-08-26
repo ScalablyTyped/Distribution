@@ -113,34 +113,76 @@ trait SchemaAction extends js.Object {
 
 object SchemaAction {
   @scala.inline
-  def apply(
-    commands: js.Array[String] = null,
-    credentials: SchemaSecret = null,
-    entrypoint: String = null,
-    environment: StringDictionary[String] = null,
-    flags: js.Array[String] = null,
-    imageUri: String = null,
-    labels: StringDictionary[String] = null,
-    mounts: js.Array[SchemaMount] = null,
-    name: String = null,
-    pidNamespace: String = null,
-    portMappings: StringDictionary[Double] = null,
-    timeout: String = null
-  ): SchemaAction = {
+  def apply(): SchemaAction = {
     val __obj = js.Dynamic.literal()
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (entrypoint != null) __obj.updateDynamic("entrypoint")(entrypoint.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (mounts != null) __obj.updateDynamic("mounts")(mounts.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pidNamespace != null) __obj.updateDynamic("pidNamespace")(pidNamespace.asInstanceOf[js.Any])
-    if (portMappings != null) __obj.updateDynamic("portMappings")(portMappings.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAction]
   }
+  @scala.inline
+  implicit class SchemaActionOps[Self <: SchemaAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandsVarargs(value: String*): Self = this.set("commands", js.Array(value :_*))
+    @scala.inline
+    def setCommands(value: js.Array[String]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommands: Self = this.set("commands", js.undefined)
+    @scala.inline
+    def setCredentials(value: SchemaSecret): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setEntrypoint(value: String): Self = this.set("entrypoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntrypoint: Self = this.set("entrypoint", js.undefined)
+    @scala.inline
+    def setEnvironment(value: StringDictionary[String]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setFlagsVarargs(value: String*): Self = this.set("flags", js.Array(value :_*))
+    @scala.inline
+    def setFlags(value: js.Array[String]): Self = this.set("flags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlags: Self = this.set("flags", js.undefined)
+    @scala.inline
+    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMountsVarargs(value: SchemaMount*): Self = this.set("mounts", js.Array(value :_*))
+    @scala.inline
+    def setMounts(value: js.Array[SchemaMount]): Self = this.set("mounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMounts: Self = this.set("mounts", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPidNamespace(value: String): Self = this.set("pidNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePidNamespace: Self = this.set("pidNamespace", js.undefined)
+    @scala.inline
+    def setPortMappings(value: StringDictionary[Double]): Self = this.set("portMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortMappings: Self = this.set("portMappings", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

@@ -35,22 +35,46 @@ trait UserLoginProfileState extends js.Object {
 
 object UserLoginProfileState {
   @scala.inline
-  def apply(
-    encryptedPassword: Input[String] = null,
-    keyFingerprint: Input[String] = null,
-    passwordLength: Input[Double] = null,
-    passwordResetRequired: Input[Boolean] = null,
-    pgpKey: Input[String] = null,
-    user: Input[String] = null
-  ): UserLoginProfileState = {
+  def apply(): UserLoginProfileState = {
     val __obj = js.Dynamic.literal()
-    if (encryptedPassword != null) __obj.updateDynamic("encryptedPassword")(encryptedPassword.asInstanceOf[js.Any])
-    if (keyFingerprint != null) __obj.updateDynamic("keyFingerprint")(keyFingerprint.asInstanceOf[js.Any])
-    if (passwordLength != null) __obj.updateDynamic("passwordLength")(passwordLength.asInstanceOf[js.Any])
-    if (passwordResetRequired != null) __obj.updateDynamic("passwordResetRequired")(passwordResetRequired.asInstanceOf[js.Any])
-    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserLoginProfileState]
   }
+  @scala.inline
+  implicit class UserLoginProfileStateOps[Self <: UserLoginProfileState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptedPassword(value: Input[String]): Self = this.set("encryptedPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptedPassword: Self = this.set("encryptedPassword", js.undefined)
+    @scala.inline
+    def setKeyFingerprint(value: Input[String]): Self = this.set("keyFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyFingerprint: Self = this.set("keyFingerprint", js.undefined)
+    @scala.inline
+    def setPasswordLength(value: Input[Double]): Self = this.set("passwordLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordLength: Self = this.set("passwordLength", js.undefined)
+    @scala.inline
+    def setPasswordResetRequired(value: Input[Boolean]): Self = this.set("passwordResetRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordResetRequired: Self = this.set("passwordResetRequired", js.undefined)
+    @scala.inline
+    def setPgpKey(value: Input[String]): Self = this.set("pgpKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePgpKey: Self = this.set("pgpKey", js.undefined)
+    @scala.inline
+    def setUser(value: Input[String]): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

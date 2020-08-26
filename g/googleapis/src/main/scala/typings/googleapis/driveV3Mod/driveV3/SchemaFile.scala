@@ -289,118 +289,248 @@ trait SchemaFile extends js.Object {
 
 object SchemaFile {
   @scala.inline
-  def apply(
-    appProperties: StringDictionary[String] = null,
-    capabilities: CanChangeCopyRequiresWriterPermission = null,
-    contentHints: IndexableText = null,
-    copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined,
-    createdTime: String = null,
-    description: String = null,
-    explicitlyTrashed: js.UndefOr[Boolean] = js.undefined,
-    exportLinks: StringDictionary[String] = null,
-    fileExtension: String = null,
-    folderColorRgb: String = null,
-    fullFileExtension: String = null,
-    hasAugmentedPermissions: js.UndefOr[Boolean] = js.undefined,
-    hasThumbnail: js.UndefOr[Boolean] = js.undefined,
-    headRevisionId: String = null,
-    iconLink: String = null,
-    id: String = null,
-    imageMediaMetadata: CameraMake = null,
-    isAppAuthorized: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    lastModifyingUser: SchemaUser = null,
-    md5Checksum: String = null,
-    mimeType: String = null,
-    modifiedByMe: js.UndefOr[Boolean] = js.undefined,
-    modifiedByMeTime: String = null,
-    modifiedTime: String = null,
-    name: String = null,
-    originalFilename: String = null,
-    ownedByMe: js.UndefOr[Boolean] = js.undefined,
-    owners: js.Array[SchemaUser] = null,
-    parents: js.Array[String] = null,
-    permissionIds: js.Array[String] = null,
-    permissions: js.Array[SchemaPermission] = null,
-    properties: StringDictionary[String] = null,
-    quotaBytesUsed: String = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    sharedWithMeTime: String = null,
-    sharingUser: SchemaUser = null,
-    size: String = null,
-    spaces: js.Array[String] = null,
-    starred: js.UndefOr[Boolean] = js.undefined,
-    teamDriveId: String = null,
-    thumbnailLink: String = null,
-    thumbnailVersion: String = null,
-    trashed: js.UndefOr[Boolean] = js.undefined,
-    trashedTime: String = null,
-    trashingUser: SchemaUser = null,
-    version: String = null,
-    videoMediaMetadata: DurationMillis = null,
-    viewedByMe: js.UndefOr[Boolean] = js.undefined,
-    viewedByMeTime: String = null,
-    viewersCanCopyContent: js.UndefOr[Boolean] = js.undefined,
-    webContentLink: String = null,
-    webViewLink: String = null,
-    writersCanShare: js.UndefOr[Boolean] = js.undefined
-  ): SchemaFile = {
+  def apply(): SchemaFile = {
     val __obj = js.Dynamic.literal()
-    if (appProperties != null) __obj.updateDynamic("appProperties")(appProperties.asInstanceOf[js.Any])
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (contentHints != null) __obj.updateDynamic("contentHints")(contentHints.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyRequiresWriterPermission)) __obj.updateDynamic("copyRequiresWriterPermission")(copyRequiresWriterPermission.get.asInstanceOf[js.Any])
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitlyTrashed)) __obj.updateDynamic("explicitlyTrashed")(explicitlyTrashed.get.asInstanceOf[js.Any])
-    if (exportLinks != null) __obj.updateDynamic("exportLinks")(exportLinks.asInstanceOf[js.Any])
-    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension.asInstanceOf[js.Any])
-    if (folderColorRgb != null) __obj.updateDynamic("folderColorRgb")(folderColorRgb.asInstanceOf[js.Any])
-    if (fullFileExtension != null) __obj.updateDynamic("fullFileExtension")(fullFileExtension.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasAugmentedPermissions)) __obj.updateDynamic("hasAugmentedPermissions")(hasAugmentedPermissions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasThumbnail)) __obj.updateDynamic("hasThumbnail")(hasThumbnail.get.asInstanceOf[js.Any])
-    if (headRevisionId != null) __obj.updateDynamic("headRevisionId")(headRevisionId.asInstanceOf[js.Any])
-    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageMediaMetadata != null) __obj.updateDynamic("imageMediaMetadata")(imageMediaMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAppAuthorized)) __obj.updateDynamic("isAppAuthorized")(isAppAuthorized.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifyingUser != null) __obj.updateDynamic("lastModifyingUser")(lastModifyingUser.asInstanceOf[js.Any])
-    if (md5Checksum != null) __obj.updateDynamic("md5Checksum")(md5Checksum.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifiedByMe)) __obj.updateDynamic("modifiedByMe")(modifiedByMe.get.asInstanceOf[js.Any])
-    if (modifiedByMeTime != null) __obj.updateDynamic("modifiedByMeTime")(modifiedByMeTime.asInstanceOf[js.Any])
-    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (originalFilename != null) __obj.updateDynamic("originalFilename")(originalFilename.asInstanceOf[js.Any])
-    if (!js.isUndefined(ownedByMe)) __obj.updateDynamic("ownedByMe")(ownedByMe.get.asInstanceOf[js.Any])
-    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (parents != null) __obj.updateDynamic("parents")(parents.asInstanceOf[js.Any])
-    if (permissionIds != null) __obj.updateDynamic("permissionIds")(permissionIds.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (quotaBytesUsed != null) __obj.updateDynamic("quotaBytesUsed")(quotaBytesUsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
-    if (sharedWithMeTime != null) __obj.updateDynamic("sharedWithMeTime")(sharedWithMeTime.asInstanceOf[js.Any])
-    if (sharingUser != null) __obj.updateDynamic("sharingUser")(sharingUser.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
-    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId.asInstanceOf[js.Any])
-    if (thumbnailLink != null) __obj.updateDynamic("thumbnailLink")(thumbnailLink.asInstanceOf[js.Any])
-    if (thumbnailVersion != null) __obj.updateDynamic("thumbnailVersion")(thumbnailVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(trashed)) __obj.updateDynamic("trashed")(trashed.get.asInstanceOf[js.Any])
-    if (trashedTime != null) __obj.updateDynamic("trashedTime")(trashedTime.asInstanceOf[js.Any])
-    if (trashingUser != null) __obj.updateDynamic("trashingUser")(trashingUser.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (videoMediaMetadata != null) __obj.updateDynamic("videoMediaMetadata")(videoMediaMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewedByMe)) __obj.updateDynamic("viewedByMe")(viewedByMe.get.asInstanceOf[js.Any])
-    if (viewedByMeTime != null) __obj.updateDynamic("viewedByMeTime")(viewedByMeTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewersCanCopyContent)) __obj.updateDynamic("viewersCanCopyContent")(viewersCanCopyContent.get.asInstanceOf[js.Any])
-    if (webContentLink != null) __obj.updateDynamic("webContentLink")(webContentLink.asInstanceOf[js.Any])
-    if (webViewLink != null) __obj.updateDynamic("webViewLink")(webViewLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(writersCanShare)) __obj.updateDynamic("writersCanShare")(writersCanShare.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFile]
   }
+  @scala.inline
+  implicit class SchemaFileOps[Self <: SchemaFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppProperties(value: StringDictionary[String]): Self = this.set("appProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppProperties: Self = this.set("appProperties", js.undefined)
+    @scala.inline
+    def setCapabilities(value: CanChangeCopyRequiresWriterPermission): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setContentHints(value: IndexableText): Self = this.set("contentHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHints: Self = this.set("contentHints", js.undefined)
+    @scala.inline
+    def setCopyRequiresWriterPermission(value: Boolean): Self = this.set("copyRequiresWriterPermission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyRequiresWriterPermission: Self = this.set("copyRequiresWriterPermission", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: String): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExplicitlyTrashed(value: Boolean): Self = this.set("explicitlyTrashed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitlyTrashed: Self = this.set("explicitlyTrashed", js.undefined)
+    @scala.inline
+    def setExportLinks(value: StringDictionary[String]): Self = this.set("exportLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportLinks: Self = this.set("exportLinks", js.undefined)
+    @scala.inline
+    def setFileExtension(value: String): Self = this.set("fileExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileExtension: Self = this.set("fileExtension", js.undefined)
+    @scala.inline
+    def setFolderColorRgb(value: String): Self = this.set("folderColorRgb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolderColorRgb: Self = this.set("folderColorRgb", js.undefined)
+    @scala.inline
+    def setFullFileExtension(value: String): Self = this.set("fullFileExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullFileExtension: Self = this.set("fullFileExtension", js.undefined)
+    @scala.inline
+    def setHasAugmentedPermissions(value: Boolean): Self = this.set("hasAugmentedPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasAugmentedPermissions: Self = this.set("hasAugmentedPermissions", js.undefined)
+    @scala.inline
+    def setHasThumbnail(value: Boolean): Self = this.set("hasThumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasThumbnail: Self = this.set("hasThumbnail", js.undefined)
+    @scala.inline
+    def setHeadRevisionId(value: String): Self = this.set("headRevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadRevisionId: Self = this.set("headRevisionId", js.undefined)
+    @scala.inline
+    def setIconLink(value: String): Self = this.set("iconLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconLink: Self = this.set("iconLink", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageMediaMetadata(value: CameraMake): Self = this.set("imageMediaMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageMediaMetadata: Self = this.set("imageMediaMetadata", js.undefined)
+    @scala.inline
+    def setIsAppAuthorized(value: Boolean): Self = this.set("isAppAuthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAppAuthorized: Self = this.set("isAppAuthorized", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifyingUser(value: SchemaUser): Self = this.set("lastModifyingUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifyingUser: Self = this.set("lastModifyingUser", js.undefined)
+    @scala.inline
+    def setMd5Checksum(value: String): Self = this.set("md5Checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5Checksum: Self = this.set("md5Checksum", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setModifiedByMe(value: Boolean): Self = this.set("modifiedByMe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedByMe: Self = this.set("modifiedByMe", js.undefined)
+    @scala.inline
+    def setModifiedByMeTime(value: String): Self = this.set("modifiedByMeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedByMeTime: Self = this.set("modifiedByMeTime", js.undefined)
+    @scala.inline
+    def setModifiedTime(value: String): Self = this.set("modifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTime: Self = this.set("modifiedTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOriginalFilename(value: String): Self = this.set("originalFilename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalFilename: Self = this.set("originalFilename", js.undefined)
+    @scala.inline
+    def setOwnedByMe(value: Boolean): Self = this.set("ownedByMe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnedByMe: Self = this.set("ownedByMe", js.undefined)
+    @scala.inline
+    def setOwnersVarargs(value: SchemaUser*): Self = this.set("owners", js.Array(value :_*))
+    @scala.inline
+    def setOwners(value: js.Array[SchemaUser]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwners: Self = this.set("owners", js.undefined)
+    @scala.inline
+    def setParentsVarargs(value: String*): Self = this.set("parents", js.Array(value :_*))
+    @scala.inline
+    def setParents(value: js.Array[String]): Self = this.set("parents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParents: Self = this.set("parents", js.undefined)
+    @scala.inline
+    def setPermissionIdsVarargs(value: String*): Self = this.set("permissionIds", js.Array(value :_*))
+    @scala.inline
+    def setPermissionIds(value: js.Array[String]): Self = this.set("permissionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionIds: Self = this.set("permissionIds", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: SchemaPermission*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[SchemaPermission]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setQuotaBytesUsed(value: String): Self = this.set("quotaBytesUsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaBytesUsed: Self = this.set("quotaBytesUsed", js.undefined)
+    @scala.inline
+    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+    @scala.inline
+    def setSharedWithMeTime(value: String): Self = this.set("sharedWithMeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedWithMeTime: Self = this.set("sharedWithMeTime", js.undefined)
+    @scala.inline
+    def setSharingUser(value: SchemaUser): Self = this.set("sharingUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharingUser: Self = this.set("sharingUser", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSpacesVarargs(value: String*): Self = this.set("spaces", js.Array(value :_*))
+    @scala.inline
+    def setSpaces(value: js.Array[String]): Self = this.set("spaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpaces: Self = this.set("spaces", js.undefined)
+    @scala.inline
+    def setStarred(value: Boolean): Self = this.set("starred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarred: Self = this.set("starred", js.undefined)
+    @scala.inline
+    def setTeamDriveId(value: String): Self = this.set("teamDriveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamDriveId: Self = this.set("teamDriveId", js.undefined)
+    @scala.inline
+    def setThumbnailLink(value: String): Self = this.set("thumbnailLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailLink: Self = this.set("thumbnailLink", js.undefined)
+    @scala.inline
+    def setThumbnailVersion(value: String): Self = this.set("thumbnailVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailVersion: Self = this.set("thumbnailVersion", js.undefined)
+    @scala.inline
+    def setTrashed(value: Boolean): Self = this.set("trashed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrashed: Self = this.set("trashed", js.undefined)
+    @scala.inline
+    def setTrashedTime(value: String): Self = this.set("trashedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrashedTime: Self = this.set("trashedTime", js.undefined)
+    @scala.inline
+    def setTrashingUser(value: SchemaUser): Self = this.set("trashingUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrashingUser: Self = this.set("trashingUser", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVideoMediaMetadata(value: DurationMillis): Self = this.set("videoMediaMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoMediaMetadata: Self = this.set("videoMediaMetadata", js.undefined)
+    @scala.inline
+    def setViewedByMe(value: Boolean): Self = this.set("viewedByMe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewedByMe: Self = this.set("viewedByMe", js.undefined)
+    @scala.inline
+    def setViewedByMeTime(value: String): Self = this.set("viewedByMeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewedByMeTime: Self = this.set("viewedByMeTime", js.undefined)
+    @scala.inline
+    def setViewersCanCopyContent(value: Boolean): Self = this.set("viewersCanCopyContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewersCanCopyContent: Self = this.set("viewersCanCopyContent", js.undefined)
+    @scala.inline
+    def setWebContentLink(value: String): Self = this.set("webContentLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebContentLink: Self = this.set("webContentLink", js.undefined)
+    @scala.inline
+    def setWebViewLink(value: String): Self = this.set("webViewLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebViewLink: Self = this.set("webViewLink", js.undefined)
+    @scala.inline
+    def setWritersCanShare(value: Boolean): Self = this.set("writersCanShare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWritersCanShare: Self = this.set("writersCanShare", js.undefined)
+  }
+  
 }
 

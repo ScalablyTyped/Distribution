@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TmplAstReference")
 @js.native
 class TmplAstReference protected ()
-  extends typings.angularCompiler.publicApiMod.TmplAstReference {
+  extends typings.angularCompiler.compilerMod.TmplAstReference {
   def this(name: String, value: String, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(
     name: String,

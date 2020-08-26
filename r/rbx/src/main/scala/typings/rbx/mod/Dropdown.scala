@@ -4,7 +4,7 @@ import typings.rbx.anon.AsElementType
 import typings.rbx.anon.PickDropdownContainerProp
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
 import typings.rbx.anon.TypeofDropdownContainer
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.dropdownContextMod.DropdownContextValue
 import typings.rbx.dropdownItemMod.DropdownItemProps
 import typings.rbx.dropdownTriggerMod.DropdownTriggerProps
@@ -75,7 +75,7 @@ object Dropdown extends js.Object {
   var defaultProps: AsElementType with (Partial[PickDropdownContainerProp with (Pick[_, String | Double | js.Symbol])]) = js.native
   var displayName: js.UndefOr[String] = js.native
   def apply[TAsComponent /* <: ElementType[_] */](
-    props: `7`[TAsComponent] with PickDropdownContainerProp with (Pick[
+    props: `6`[TAsComponent] with PickDropdownContainerProp with (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
         /* keyof react.react.ComponentProps<TAsComponent> */ String, 

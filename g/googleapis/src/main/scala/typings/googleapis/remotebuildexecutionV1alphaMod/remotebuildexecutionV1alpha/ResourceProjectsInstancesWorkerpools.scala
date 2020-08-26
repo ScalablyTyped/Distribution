@@ -31,6 +31,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceProjectsInstancesWorkerpoolsCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceProjectsInstancesWorkerpoolsCreate,
@@ -64,6 +65,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(params: ParamsResourceProjectsInstancesWorkerpoolsDelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(
     params: ParamsResourceProjectsInstancesWorkerpoolsDelete,
@@ -94,6 +96,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] = js.native
   def get(params: ParamsResourceProjectsInstancesWorkerpoolsGet): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] = js.native
   def get(
     params: ParamsResourceProjectsInstancesWorkerpoolsGet,
@@ -126,6 +129,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
   def list(
     callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse]
   ): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesWorkerpoolsList): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListWorkerPoolsResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesWorkerpoolsList,
@@ -160,6 +164,7 @@ class ResourceProjectsInstancesWorkerpools protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(params: ParamsResourceProjectsInstancesWorkerpoolsPatch): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(
     params: ParamsResourceProjectsInstancesWorkerpoolsPatch,

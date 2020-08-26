@@ -40,18 +40,38 @@ trait SchemaSourceCrowdingConfig extends js.Object {
 
 object SchemaSourceCrowdingConfig {
   @scala.inline
-  def apply(
-    field: String = null,
-    numResults: js.UndefOr[Double] = js.undefined,
-    numSuggestions: js.UndefOr[Double] = js.undefined,
-    source: js.UndefOr[Boolean] = js.undefined
-  ): SchemaSourceCrowdingConfig = {
+  def apply(): SchemaSourceCrowdingConfig = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numSuggestions)) __obj.updateDynamic("numSuggestions")(numSuggestions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceCrowdingConfig]
   }
+  @scala.inline
+  implicit class SchemaSourceCrowdingConfigOps[Self <: SchemaSourceCrowdingConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setNumResults(value: Double): Self = this.set("numResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("numResults", js.undefined)
+    @scala.inline
+    def setNumSuggestions(value: Double): Self = this.set("numSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumSuggestions: Self = this.set("numSuggestions", js.undefined)
+    @scala.inline
+    def setSource(value: Boolean): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

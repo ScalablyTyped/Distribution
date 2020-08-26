@@ -11,56 +11,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReactMessengerProps extends js.Object {
-  var allowLogin: js.UndefOr[Boolean] = js.undefined
-  var appId: String
-  var autoLogAppEvents: js.UndefOr[Boolean] = js.undefined
-  var centerAlign: js.UndefOr[Boolean] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var onEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
-  var origin: String
-  var pageId: String
-  var prechecked: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[small | medium | large | standard | xlarge] = js.undefined
-  var skin: js.UndefOr[light | dark] = js.undefined
-  var userRef: String
-  var version: js.UndefOr[String] = js.undefined
-  var xfbml: js.UndefOr[Boolean] = js.undefined
+  var allowLogin: js.UndefOr[Boolean] = js.native
+  var appId: String = js.native
+  var autoLogAppEvents: js.UndefOr[Boolean] = js.native
+  var centerAlign: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var language: js.UndefOr[String] = js.native
+  var onEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+  var origin: String = js.native
+  var pageId: String = js.native
+  var prechecked: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[small | medium | large | standard | xlarge] = js.native
+  var skin: js.UndefOr[light | dark] = js.native
+  var userRef: String = js.native
+  var version: js.UndefOr[String] = js.native
+  var xfbml: js.UndefOr[Boolean] = js.native
 }
 
 object ReactMessengerProps {
   @scala.inline
-  def apply(
-    appId: String,
-    origin: String,
-    pageId: String,
-    userRef: String,
-    allowLogin: js.UndefOr[Boolean] = js.undefined,
-    autoLogAppEvents: js.UndefOr[Boolean] = js.undefined,
-    centerAlign: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    onEvent: /* event */ js.Any => Unit = null,
-    prechecked: js.UndefOr[Boolean] = js.undefined,
-    size: small | medium | large | standard | xlarge = null,
-    skin: light | dark = null,
-    version: String = null,
-    xfbml: js.UndefOr[Boolean] = js.undefined
-  ): ReactMessengerProps = {
+  def apply(appId: String, origin: String, pageId: String, userRef: String): ReactMessengerProps = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], pageId = pageId.asInstanceOf[js.Any], userRef = userRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLogin)) __obj.updateDynamic("allowLogin")(allowLogin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLogAppEvents)) __obj.updateDynamic("autoLogAppEvents")(autoLogAppEvents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerAlign)) __obj.updateDynamic("centerAlign")(centerAlign.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (onEvent != null) __obj.updateDynamic("onEvent")(js.Any.fromFunction1(onEvent))
-    if (!js.isUndefined(prechecked)) __obj.updateDynamic("prechecked")(prechecked.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactMessengerProps]
   }
+  @scala.inline
+  implicit class ReactMessengerPropsOps[Self <: ReactMessengerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPageId(value: String): Self = this.set("pageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserRef(value: String): Self = this.set("userRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowLogin(value: Boolean): Self = this.set("allowLogin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowLogin: Self = this.set("allowLogin", js.undefined)
+    @scala.inline
+    def setAutoLogAppEvents(value: Boolean): Self = this.set("autoLogAppEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoLogAppEvents: Self = this.set("autoLogAppEvents", js.undefined)
+    @scala.inline
+    def setCenterAlign(value: Boolean): Self = this.set("centerAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenterAlign: Self = this.set("centerAlign", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setOnEvent(value: /* event */ js.Any => Unit): Self = this.set("onEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEvent: Self = this.set("onEvent", js.undefined)
+    @scala.inline
+    def setPrechecked(value: Boolean): Self = this.set("prechecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrechecked: Self = this.set("prechecked", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large | standard | xlarge): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSkin(value: light | dark): Self = this.set("skin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin: Self = this.set("skin", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setXfbml(value: Boolean): Self = this.set("xfbml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXfbml: Self = this.set("xfbml", js.undefined)
+  }
+  
 }
 

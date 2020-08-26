@@ -26,6 +26,19 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteBuildsOutput, Unit]
   ): Request[BatchDeleteBuildsOutput, AWSError] = js.native
   /**
+    * Retrieves information about one or more batch builds.
+    */
+  def batchGetBuildBatches(): Request[BatchGetBuildBatchesOutput, AWSError] = js.native
+  def batchGetBuildBatches(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBuildBatchesOutput, Unit]): Request[BatchGetBuildBatchesOutput, AWSError] = js.native
+  /**
+    * Retrieves information about one or more batch builds.
+    */
+  def batchGetBuildBatches(params: BatchGetBuildBatchesInput): Request[BatchGetBuildBatchesOutput, AWSError] = js.native
+  def batchGetBuildBatches(
+    params: BatchGetBuildBatchesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetBuildBatchesOutput, Unit]
+  ): Request[BatchGetBuildBatchesOutput, AWSError] = js.native
+  /**
     * Gets information about one or more builds.
     */
   def batchGetBuilds(): Request[BatchGetBuildsOutput, AWSError] = js.native
@@ -117,6 +130,19 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateWebhookOutput, Unit]
   ): Request[CreateWebhookOutput, AWSError] = js.native
   /**
+    * Deletes a batch build.
+    */
+  def deleteBuildBatch(): Request[DeleteBuildBatchOutput, AWSError] = js.native
+  def deleteBuildBatch(callback: js.Function2[/* err */ AWSError, /* data */ DeleteBuildBatchOutput, Unit]): Request[DeleteBuildBatchOutput, AWSError] = js.native
+  /**
+    * Deletes a batch build.
+    */
+  def deleteBuildBatch(params: DeleteBuildBatchInput): Request[DeleteBuildBatchOutput, AWSError] = js.native
+  def deleteBuildBatch(
+    params: DeleteBuildBatchInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteBuildBatchOutput, Unit]
+  ): Request[DeleteBuildBatchOutput, AWSError] = js.native
+  /**
     *  Deletes a build project. When you delete a project, its builds are not deleted. 
     */
   def deleteProject(): Request[DeleteProjectOutput, AWSError] = js.native
@@ -195,6 +221,19 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWebhookOutput, Unit]
   ): Request[DeleteWebhookOutput, AWSError] = js.native
   /**
+    * Retrieves one or more code coverage reports.
+    */
+  def describeCodeCoverages(): Request[DescribeCodeCoveragesOutput, AWSError] = js.native
+  def describeCodeCoverages(callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeCoveragesOutput, Unit]): Request[DescribeCodeCoveragesOutput, AWSError] = js.native
+  /**
+    * Retrieves one or more code coverage reports.
+    */
+  def describeCodeCoverages(params: DescribeCodeCoveragesInput): Request[DescribeCodeCoveragesOutput, AWSError] = js.native
+  def describeCodeCoverages(
+    params: DescribeCodeCoveragesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeCodeCoveragesOutput, Unit]
+  ): Request[DescribeCodeCoveragesOutput, AWSError] = js.native
+  /**
     *  Returns a list of details about test cases for a report. 
     */
   def describeTestCases(): Request[DescribeTestCasesOutput, AWSError] = js.native
@@ -246,6 +285,32 @@ trait CodeBuild extends Service {
     params: InvalidateProjectCacheInput,
     callback: js.Function2[/* err */ AWSError, /* data */ InvalidateProjectCacheOutput, Unit]
   ): Request[InvalidateProjectCacheOutput, AWSError] = js.native
+  /**
+    * Retrieves the identifiers of your build batches in the current region.
+    */
+  def listBuildBatches(): Request[ListBuildBatchesOutput, AWSError] = js.native
+  def listBuildBatches(callback: js.Function2[/* err */ AWSError, /* data */ ListBuildBatchesOutput, Unit]): Request[ListBuildBatchesOutput, AWSError] = js.native
+  /**
+    * Retrieves the identifiers of your build batches in the current region.
+    */
+  def listBuildBatches(params: ListBuildBatchesInput): Request[ListBuildBatchesOutput, AWSError] = js.native
+  def listBuildBatches(
+    params: ListBuildBatchesInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBuildBatchesOutput, Unit]
+  ): Request[ListBuildBatchesOutput, AWSError] = js.native
+  /**
+    * Retrieves the identifiers of the build batches for a specific project.
+    */
+  def listBuildBatchesForProject(): Request[ListBuildBatchesForProjectOutput, AWSError] = js.native
+  def listBuildBatchesForProject(callback: js.Function2[/* err */ AWSError, /* data */ ListBuildBatchesForProjectOutput, Unit]): Request[ListBuildBatchesForProjectOutput, AWSError] = js.native
+  /**
+    * Retrieves the identifiers of the build batches for a specific project.
+    */
+  def listBuildBatchesForProject(params: ListBuildBatchesForProjectInput): Request[ListBuildBatchesForProjectOutput, AWSError] = js.native
+  def listBuildBatchesForProject(
+    params: ListBuildBatchesForProjectInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBuildBatchesForProjectOutput, Unit]
+  ): Request[ListBuildBatchesForProjectOutput, AWSError] = js.native
   /**
     * Gets a list of build IDs, with each build ID representing a single build.
     */
@@ -390,6 +455,32 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyOutput, Unit]
   ): Request[PutResourcePolicyOutput, AWSError] = js.native
   /**
+    * Restarts a build.
+    */
+  def retryBuild(): Request[RetryBuildOutput, AWSError] = js.native
+  def retryBuild(callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildOutput, Unit]): Request[RetryBuildOutput, AWSError] = js.native
+  /**
+    * Restarts a build.
+    */
+  def retryBuild(params: RetryBuildInput): Request[RetryBuildOutput, AWSError] = js.native
+  def retryBuild(
+    params: RetryBuildInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildOutput, Unit]
+  ): Request[RetryBuildOutput, AWSError] = js.native
+  /**
+    * Restarts a batch build.
+    */
+  def retryBuildBatch(): Request[RetryBuildBatchOutput, AWSError] = js.native
+  def retryBuildBatch(callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildBatchOutput, Unit]): Request[RetryBuildBatchOutput, AWSError] = js.native
+  /**
+    * Restarts a batch build.
+    */
+  def retryBuildBatch(params: RetryBuildBatchInput): Request[RetryBuildBatchOutput, AWSError] = js.native
+  def retryBuildBatch(
+    params: RetryBuildBatchInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ RetryBuildBatchOutput, Unit]
+  ): Request[RetryBuildBatchOutput, AWSError] = js.native
+  /**
     * Starts running a build.
     */
   def startBuild(): Request[StartBuildOutput, AWSError] = js.native
@@ -403,6 +494,19 @@ trait CodeBuild extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartBuildOutput, Unit]
   ): Request[StartBuildOutput, AWSError] = js.native
   /**
+    * Starts a batch build for a project.
+    */
+  def startBuildBatch(): Request[StartBuildBatchOutput, AWSError] = js.native
+  def startBuildBatch(callback: js.Function2[/* err */ AWSError, /* data */ StartBuildBatchOutput, Unit]): Request[StartBuildBatchOutput, AWSError] = js.native
+  /**
+    * Starts a batch build for a project.
+    */
+  def startBuildBatch(params: StartBuildBatchInput): Request[StartBuildBatchOutput, AWSError] = js.native
+  def startBuildBatch(
+    params: StartBuildBatchInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartBuildBatchOutput, Unit]
+  ): Request[StartBuildBatchOutput, AWSError] = js.native
+  /**
     * Attempts to stop running a build.
     */
   def stopBuild(): Request[StopBuildOutput, AWSError] = js.native
@@ -415,6 +519,19 @@ trait CodeBuild extends Service {
     params: StopBuildInput,
     callback: js.Function2[/* err */ AWSError, /* data */ StopBuildOutput, Unit]
   ): Request[StopBuildOutput, AWSError] = js.native
+  /**
+    * Stops a running batch build.
+    */
+  def stopBuildBatch(): Request[StopBuildBatchOutput, AWSError] = js.native
+  def stopBuildBatch(callback: js.Function2[/* err */ AWSError, /* data */ StopBuildBatchOutput, Unit]): Request[StopBuildBatchOutput, AWSError] = js.native
+  /**
+    * Stops a running batch build.
+    */
+  def stopBuildBatch(params: StopBuildBatchInput): Request[StopBuildBatchOutput, AWSError] = js.native
+  def stopBuildBatch(
+    params: StopBuildBatchInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopBuildBatchOutput, Unit]
+  ): Request[StopBuildBatchOutput, AWSError] = js.native
   /**
     * Changes the settings of a build project.
     */

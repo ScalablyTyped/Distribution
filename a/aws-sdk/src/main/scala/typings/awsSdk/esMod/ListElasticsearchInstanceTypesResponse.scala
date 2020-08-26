@@ -18,11 +18,32 @@ trait ListElasticsearchInstanceTypesResponse extends js.Object {
 
 object ListElasticsearchInstanceTypesResponse {
   @scala.inline
-  def apply(ElasticsearchInstanceTypes: ElasticsearchInstanceTypeList = null, NextToken: NextToken = null): ListElasticsearchInstanceTypesResponse = {
+  def apply(): ListElasticsearchInstanceTypesResponse = {
     val __obj = js.Dynamic.literal()
-    if (ElasticsearchInstanceTypes != null) __obj.updateDynamic("ElasticsearchInstanceTypes")(ElasticsearchInstanceTypes.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListElasticsearchInstanceTypesResponse]
   }
+  @scala.inline
+  implicit class ListElasticsearchInstanceTypesResponseOps[Self <: ListElasticsearchInstanceTypesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElasticsearchInstanceTypesVarargs(value: ESPartitionInstanceType*): Self = this.set("ElasticsearchInstanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setElasticsearchInstanceTypes(value: ElasticsearchInstanceTypeList): Self = this.set("ElasticsearchInstanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchInstanceTypes: Self = this.set("ElasticsearchInstanceTypes", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

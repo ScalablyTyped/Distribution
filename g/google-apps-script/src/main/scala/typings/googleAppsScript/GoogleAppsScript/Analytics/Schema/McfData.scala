@@ -4,60 +4,107 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait McfData extends js.Object {
-  var columnHeaders: js.UndefOr[js.Array[McfDataColumnHeaders]] = js.undefined
-  var containsSampledData: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var itemsPerPage: js.UndefOr[Double] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var nextLink: js.UndefOr[String] = js.undefined
-  var previousLink: js.UndefOr[String] = js.undefined
-  var profileInfo: js.UndefOr[McfDataProfileInfo] = js.undefined
-  var query: js.UndefOr[McfDataQuery] = js.undefined
-  var rows: js.UndefOr[js.Array[js.Array[McfDataRows]]] = js.undefined
-  var sampleSize: js.UndefOr[String] = js.undefined
-  var sampleSpace: js.UndefOr[String] = js.undefined
-  var selfLink: js.UndefOr[String] = js.undefined
-  var totalResults: js.UndefOr[Double] = js.undefined
-  var totalsForAllResults: js.UndefOr[js.Object] = js.undefined
+  var columnHeaders: js.UndefOr[js.Array[McfDataColumnHeaders]] = js.native
+  var containsSampledData: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String] = js.native
+  var itemsPerPage: js.UndefOr[Double] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.native
+  var previousLink: js.UndefOr[String] = js.native
+  var profileInfo: js.UndefOr[McfDataProfileInfo] = js.native
+  var query: js.UndefOr[McfDataQuery] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[McfDataRows]]] = js.native
+  var sampleSize: js.UndefOr[String] = js.native
+  var sampleSpace: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.native
+  var totalResults: js.UndefOr[Double] = js.native
+  var totalsForAllResults: js.UndefOr[js.Object] = js.native
 }
 
 object McfData {
   @scala.inline
-  def apply(
-    columnHeaders: js.Array[McfDataColumnHeaders] = null,
-    containsSampledData: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    itemsPerPage: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    nextLink: String = null,
-    previousLink: String = null,
-    profileInfo: McfDataProfileInfo = null,
-    query: McfDataQuery = null,
-    rows: js.Array[js.Array[McfDataRows]] = null,
-    sampleSize: String = null,
-    sampleSpace: String = null,
-    selfLink: String = null,
-    totalResults: js.UndefOr[Double] = js.undefined,
-    totalsForAllResults: js.Object = null
-  ): McfData = {
+  def apply(): McfData = {
     val __obj = js.Dynamic.literal()
-    if (columnHeaders != null) __obj.updateDynamic("columnHeaders")(columnHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(containsSampledData)) __obj.updateDynamic("containsSampledData")(containsSampledData.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemsPerPage)) __obj.updateDynamic("itemsPerPage")(itemsPerPage.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextLink != null) __obj.updateDynamic("nextLink")(nextLink.asInstanceOf[js.Any])
-    if (previousLink != null) __obj.updateDynamic("previousLink")(previousLink.asInstanceOf[js.Any])
-    if (profileInfo != null) __obj.updateDynamic("profileInfo")(profileInfo.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
-    if (sampleSpace != null) __obj.updateDynamic("sampleSpace")(sampleSpace.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalResults)) __obj.updateDynamic("totalResults")(totalResults.get.asInstanceOf[js.Any])
-    if (totalsForAllResults != null) __obj.updateDynamic("totalsForAllResults")(totalsForAllResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[McfData]
   }
+  @scala.inline
+  implicit class McfDataOps[Self <: McfData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnHeadersVarargs(value: McfDataColumnHeaders*): Self = this.set("columnHeaders", js.Array(value :_*))
+    @scala.inline
+    def setColumnHeaders(value: js.Array[McfDataColumnHeaders]): Self = this.set("columnHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnHeaders: Self = this.set("columnHeaders", js.undefined)
+    @scala.inline
+    def setContainsSampledData(value: Boolean): Self = this.set("containsSampledData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsSampledData: Self = this.set("containsSampledData", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemsPerPage(value: Double): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNextLink(value: String): Self = this.set("nextLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextLink: Self = this.set("nextLink", js.undefined)
+    @scala.inline
+    def setPreviousLink(value: String): Self = this.set("previousLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousLink: Self = this.set("previousLink", js.undefined)
+    @scala.inline
+    def setProfileInfo(value: McfDataProfileInfo): Self = this.set("profileInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileInfo: Self = this.set("profileInfo", js.undefined)
+    @scala.inline
+    def setQuery(value: McfDataQuery): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRowsVarargs(value: js.Array[McfDataRows]*): Self = this.set("rows", js.Array(value :_*))
+    @scala.inline
+    def setRows(value: js.Array[js.Array[McfDataRows]]): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+    @scala.inline
+    def setSampleSize(value: String): Self = this.set("sampleSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleSize: Self = this.set("sampleSize", js.undefined)
+    @scala.inline
+    def setSampleSpace(value: String): Self = this.set("sampleSpace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleSpace: Self = this.set("sampleSpace", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setTotalResults(value: Double): Self = this.set("totalResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalResults: Self = this.set("totalResults", js.undefined)
+    @scala.inline
+    def setTotalsForAllResults(value: js.Object): Self = this.set("totalsForAllResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalsForAllResults: Self = this.set("totalsForAllResults", js.undefined)
+  }
+  
 }
 

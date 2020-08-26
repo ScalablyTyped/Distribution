@@ -10,9 +10,9 @@ Gijgo is a set of free open source javascript controls distributed under MIT Lic
 | ------------------ | :-------------: |
 | Full name          | gijgo |
 | Keywords           | jquery-plugin, jquery, gijgo, javascript, plugin, grid, datagrid, table, dialog, modal, draggable, droppable, tree, treeview, editor, wysiwyg, checkbox, datepicker, timepicker, datetimepicker, dropdown, slider, angular, bootstrap |
-| # releases         | 20 |
+| # releases         | 18 |
 | # dependents       | 1 |
-| # downloads        | 144239 |
+| # downloads        | 147297 |
 | # stars            | 0 |
 
 ## Links

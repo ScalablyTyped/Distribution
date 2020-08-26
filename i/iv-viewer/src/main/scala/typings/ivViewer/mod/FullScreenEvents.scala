@@ -4,32 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FullScreenEvents extends Events {
-  var onCloseBtnClick: js.UndefOr[IVEvent] = js.undefined
+  var onCloseBtnClick: js.UndefOr[IVEvent] = js.native
 }
 
 object FullScreenEvents {
   @scala.inline
-  def apply(
-    hiResImageLoad: () => Unit = null,
-    imageLoad: () => Unit = null,
-    mouseEnterSnapView: () => Unit = null,
-    mouseLeaveSnapView: () => Unit = null,
-    onCloseBtnClick: () => Unit = null,
-    onWindowResize: () => Unit = null,
-    pinchStart: () => Unit = null,
-    snapViewOnMouseMove: () => Unit = null
-  ): FullScreenEvents = {
+  def apply(): FullScreenEvents = {
     val __obj = js.Dynamic.literal()
-    if (hiResImageLoad != null) __obj.updateDynamic("hiResImageLoad")(js.Any.fromFunction0(hiResImageLoad))
-    if (imageLoad != null) __obj.updateDynamic("imageLoad")(js.Any.fromFunction0(imageLoad))
-    if (mouseEnterSnapView != null) __obj.updateDynamic("mouseEnterSnapView")(js.Any.fromFunction0(mouseEnterSnapView))
-    if (mouseLeaveSnapView != null) __obj.updateDynamic("mouseLeaveSnapView")(js.Any.fromFunction0(mouseLeaveSnapView))
-    if (onCloseBtnClick != null) __obj.updateDynamic("onCloseBtnClick")(js.Any.fromFunction0(onCloseBtnClick))
-    if (onWindowResize != null) __obj.updateDynamic("onWindowResize")(js.Any.fromFunction0(onWindowResize))
-    if (pinchStart != null) __obj.updateDynamic("pinchStart")(js.Any.fromFunction0(pinchStart))
-    if (snapViewOnMouseMove != null) __obj.updateDynamic("snapViewOnMouseMove")(js.Any.fromFunction0(snapViewOnMouseMove))
     __obj.asInstanceOf[FullScreenEvents]
   }
+  @scala.inline
+  implicit class FullScreenEventsOps[Self <: FullScreenEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnCloseBtnClick(value: () => Unit): Self = this.set("onCloseBtnClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCloseBtnClick: Self = this.set("onCloseBtnClick", js.undefined)
+  }
+  
 }
 

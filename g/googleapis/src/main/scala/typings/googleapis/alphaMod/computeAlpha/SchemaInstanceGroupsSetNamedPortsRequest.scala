@@ -24,11 +24,32 @@ trait SchemaInstanceGroupsSetNamedPortsRequest extends js.Object {
 
 object SchemaInstanceGroupsSetNamedPortsRequest {
   @scala.inline
-  def apply(fingerprint: String = null, namedPorts: js.Array[SchemaNamedPort] = null): SchemaInstanceGroupsSetNamedPortsRequest = {
+  def apply(): SchemaInstanceGroupsSetNamedPortsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (namedPorts != null) __obj.updateDynamic("namedPorts")(namedPorts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupsSetNamedPortsRequest]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupsSetNamedPortsRequestOps[Self <: SchemaInstanceGroupsSetNamedPortsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setNamedPortsVarargs(value: SchemaNamedPort*): Self = this.set("namedPorts", js.Array(value :_*))
+    @scala.inline
+    def setNamedPorts(value: js.Array[SchemaNamedPort]): Self = this.set("namedPorts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedPorts: Self = this.set("namedPorts", js.undefined)
+  }
+  
 }
 

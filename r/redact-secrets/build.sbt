@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "redact-secrets"
-version := "1.0-dt-20200528Z-0fa929"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200528Z-e6069f"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

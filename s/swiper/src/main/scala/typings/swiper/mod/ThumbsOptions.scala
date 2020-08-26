@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThumbsOptions extends js.Object {
-  var autoScrollOffset: js.UndefOr[Double] = js.undefined
-  var multipleActiveThumbs: js.UndefOr[Boolean] = js.undefined
-  var slideThumbActiveClass: js.UndefOr[String] = js.undefined
-  var swiper: js.UndefOr[Swiper] = js.undefined
-  var thumbsContainerClass: js.UndefOr[String] = js.undefined
+  var autoScrollOffset: js.UndefOr[Double] = js.native
+  var multipleActiveThumbs: js.UndefOr[Boolean] = js.native
+  var slideThumbActiveClass: js.UndefOr[String] = js.native
+  var swiper: js.UndefOr[Swiper] = js.native
+  var thumbsContainerClass: js.UndefOr[String] = js.native
 }
 
 object ThumbsOptions {
   @scala.inline
-  def apply(
-    autoScrollOffset: js.UndefOr[Double] = js.undefined,
-    multipleActiveThumbs: js.UndefOr[Boolean] = js.undefined,
-    slideThumbActiveClass: String = null,
-    swiper: Swiper = null,
-    thumbsContainerClass: String = null
-  ): ThumbsOptions = {
+  def apply(): ThumbsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoScrollOffset)) __obj.updateDynamic("autoScrollOffset")(autoScrollOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleActiveThumbs)) __obj.updateDynamic("multipleActiveThumbs")(multipleActiveThumbs.get.asInstanceOf[js.Any])
-    if (slideThumbActiveClass != null) __obj.updateDynamic("slideThumbActiveClass")(slideThumbActiveClass.asInstanceOf[js.Any])
-    if (swiper != null) __obj.updateDynamic("swiper")(swiper.asInstanceOf[js.Any])
-    if (thumbsContainerClass != null) __obj.updateDynamic("thumbsContainerClass")(thumbsContainerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbsOptions]
   }
+  @scala.inline
+  implicit class ThumbsOptionsOps[Self <: ThumbsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScrollOffset(value: Double): Self = this.set("autoScrollOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScrollOffset: Self = this.set("autoScrollOffset", js.undefined)
+    @scala.inline
+    def setMultipleActiveThumbs(value: Boolean): Self = this.set("multipleActiveThumbs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleActiveThumbs: Self = this.set("multipleActiveThumbs", js.undefined)
+    @scala.inline
+    def setSlideThumbActiveClass(value: String): Self = this.set("slideThumbActiveClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideThumbActiveClass: Self = this.set("slideThumbActiveClass", js.undefined)
+    @scala.inline
+    def setSwiper(value: Swiper): Self = this.set("swiper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwiper: Self = this.set("swiper", js.undefined)
+    @scala.inline
+    def setThumbsContainerClass(value: String): Self = this.set("thumbsContainerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbsContainerClass: Self = this.set("thumbsContainerClass", js.undefined)
+  }
+  
 }
 

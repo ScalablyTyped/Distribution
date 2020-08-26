@@ -69,13 +69,14 @@ class MarkdownSerializerState[S /* <: Schema[_, _] */] () extends js.Object {
     */
   def text(text: String): Unit = js.native
   def text(text: String, escape: Boolean): Unit = js.native
+  def wrapBlock(delim: String, firstDelim: js.UndefOr[scala.Nothing], node: Node[S], f: js.Function0[Unit]): Unit = js.native
   /**
     * Render a block, prefixing each line with `delim`, and the first
     * line in `firstDelim`. `node` should be the node that is closed at
     * the end of the block, and `f` is a function that renders the
     * content of the block.
     */
-  def wrapBlock(delim: String, firstDelim: js.UndefOr[String], node: Node[S], f: js.Function0[Unit]): Unit = js.native
+  def wrapBlock(delim: String, firstDelim: String, node: Node[S], f: js.Function0[Unit]): Unit = js.native
   /**
     * Prepare the state for writing output (closing closed paragraphs,
     * adding delimiters, and so on), and then optionally add content

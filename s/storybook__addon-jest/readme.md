@@ -10,9 +10,9 @@ React storybook addon that show component jest report
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-jest |
 | Keywords           | addon, jest, react, report, results, storybook, unit-testing |
-| # releases         | 420 |
+| # releases         | 421 |
 | # dependents       | 9 |
-| # downloads        | 849039 |
+| # downloads        | 869344 |
 | # stars            | 1 |
 
 ## Links

@@ -5,21 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserParameters
   extends /* key */ StringDictionary[js.Any] {
-  var UserID: js.UndefOr[Double] = js.undefined
+  var UserID: js.UndefOr[Double] = js.native
 }
 
 object UserParameters {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    UserID: js.UndefOr[Double] = js.undefined
-  ): UserParameters = {
+  def apply(): UserParameters = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(UserID)) __obj.updateDynamic("UserID")(UserID.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserParameters]
   }
+  @scala.inline
+  implicit class UserParametersOps[Self <: UserParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserID(value: Double): Self = this.set("UserID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserID: Self = this.set("UserID", js.undefined)
+  }
+  
 }
 

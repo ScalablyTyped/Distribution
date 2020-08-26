@@ -30,20 +30,42 @@ trait Resource extends js.Object {
 
 object Resource {
   @scala.inline
-  def apply(
-    Catalog: CatalogResource = null,
-    DataLocation: DataLocationResource = null,
-    Database: DatabaseResource = null,
-    Table: TableResource = null,
-    TableWithColumns: TableWithColumnsResource = null
-  ): Resource = {
+  def apply(): Resource = {
     val __obj = js.Dynamic.literal()
-    if (Catalog != null) __obj.updateDynamic("Catalog")(Catalog.asInstanceOf[js.Any])
-    if (DataLocation != null) __obj.updateDynamic("DataLocation")(DataLocation.asInstanceOf[js.Any])
-    if (Database != null) __obj.updateDynamic("Database")(Database.asInstanceOf[js.Any])
-    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
-    if (TableWithColumns != null) __obj.updateDynamic("TableWithColumns")(TableWithColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
+  @scala.inline
+  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalog(value: CatalogResource): Self = this.set("Catalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalog: Self = this.set("Catalog", js.undefined)
+    @scala.inline
+    def setDataLocation(value: DataLocationResource): Self = this.set("DataLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLocation: Self = this.set("DataLocation", js.undefined)
+    @scala.inline
+    def setDatabase(value: DatabaseResource): Self = this.set("Database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabase: Self = this.set("Database", js.undefined)
+    @scala.inline
+    def setTable(value: TableResource): Self = this.set("Table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("Table", js.undefined)
+    @scala.inline
+    def setTableWithColumns(value: TableWithColumnsResource): Self = this.set("TableWithColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableWithColumns: Self = this.set("TableWithColumns", js.undefined)
+  }
+  
 }
 

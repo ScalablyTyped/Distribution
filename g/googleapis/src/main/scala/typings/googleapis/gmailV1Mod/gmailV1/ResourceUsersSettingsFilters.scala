@@ -28,6 +28,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaFilter] = js.native
   def create(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def create(params: ParamsResourceUsersSettingsFiltersCreate): GaxiosPromise[SchemaFilter] = js.native
   def create(params: ParamsResourceUsersSettingsFiltersCreate, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def create(
@@ -56,6 +57,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsFiltersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsFiltersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -84,6 +86,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFilter] = js.native
   def get(callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFilter] = js.native
   def get(params: ParamsResourceUsersSettingsFiltersGet): GaxiosPromise[SchemaFilter] = js.native
   def get(params: ParamsResourceUsersSettingsFiltersGet, callback: BodyResponseCallback[SchemaFilter]): Unit = js.native
   def get(
@@ -111,6 +114,7 @@ class ResourceUsersSettingsFilters protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListFiltersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFiltersResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFiltersResponse] = js.native
   def list(params: ParamsResourceUsersSettingsFiltersList): GaxiosPromise[SchemaListFiltersResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsFiltersList,

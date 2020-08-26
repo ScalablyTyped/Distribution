@@ -35,10 +35,10 @@ trait Console extends js.Object {
     */
   def timeEnd(): Unit = js.native
   def timeEnd(label: java.lang.String): Unit = js.native
+  def timeLog(label: js.UndefOr[scala.Nothing], data: js.Any*): Unit = js.native
   /**
     * Log duration taken so far for an operation.
     */
-  def timeLog(): Unit = js.native
   def timeLog(label: java.lang.String, data: js.Any*): Unit = js.native
   /**
     * Log a message at the `warn` level.

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEditorProvider[T] {
   /**
     * Signal that an edit has occurred inside a custom editor.
@@ -26,7 +27,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * An editor should only ever fire `CustomDocumentEditEvent` events, or only ever fire `CustomDocumentContentChangeEvent` events.
     */
-  val onDidChangeCustomDocument: Event[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T]]
+  val onDidChangeCustomDocument: Event[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T]] = js.native
   /**
     * Back up a dirty custom document.
     *
@@ -48,7 +49,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     * in an operation that takes time to complete, your extension may decide to finish the ongoing backup rather
     * than cancelling it to ensure that VS Code has some valid backup.
     */
-  def backupCustomDocument(document: T, context: CustomDocumentBackupContext, cancellation: CancellationToken): Thenable[CustomDocumentBackup]
+  def backupCustomDocument(document: T, context: CustomDocumentBackupContext, cancellation: CancellationToken): Thenable[CustomDocumentBackup] = js.native
   /**
     * Revert a custom document to its last saved state.
     *
@@ -64,7 +65,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * @return Thenable signaling that the change has completed.
     */
-  def revertCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit]
+  def revertCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit] = js.native
   /**
     * Save a custom document.
     *
@@ -80,7 +81,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * @return Thenable signaling that saving has completed.
     */
-  def saveCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit]
+  def saveCustomDocument(document: T, cancellation: CancellationToken): Thenable[Unit] = js.native
   /**
     * Save a custom document to a different location.
     *
@@ -95,7 +96,7 @@ trait CustomEditorProvider[T /* <: CustomDocument */] extends CustomReadonlyEdit
     *
     * @return Thenable signaling that saving has completed.
     */
-  def saveCustomDocumentAs(document: T, destination: Uri, cancellation: CancellationToken): Thenable[Unit]
+  def saveCustomDocumentAs(document: T, destination: Uri, cancellation: CancellationToken): Thenable[Unit] = js.native
 }
 
 object CustomEditorProvider {
@@ -112,5 +113,30 @@ object CustomEditorProvider {
     val __obj = js.Dynamic.literal(backupCustomDocument = js.Any.fromFunction3(backupCustomDocument), onDidChangeCustomDocument = js.Any.fromFunction3(onDidChangeCustomDocument), openCustomDocument = js.Any.fromFunction3(openCustomDocument), resolveCustomEditor = js.Any.fromFunction3(resolveCustomEditor), revertCustomDocument = js.Any.fromFunction2(revertCustomDocument), saveCustomDocument = js.Any.fromFunction2(saveCustomDocument), saveCustomDocumentAs = js.Any.fromFunction3(saveCustomDocumentAs))
     __obj.asInstanceOf[CustomEditorProvider[T]]
   }
+  @scala.inline
+  implicit class CustomEditorProviderOps[Self <: CustomEditorProvider[_], /* <: typings.vscode.mod.CustomDocument */ T] (val x: Self with CustomEditorProvider[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupCustomDocument(value: (T, CustomDocumentBackupContext, CancellationToken) => Thenable[CustomDocumentBackup]): Self = this.set("backupCustomDocument", js.Any.fromFunction3(value))
+    @scala.inline
+    def setOnDidChangeCustomDocument(
+      value: (/* listener */ js.Function1[CustomDocumentContentChangeEvent[T] | CustomDocumentEditEvent[T], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+    ): Self = this.set("onDidChangeCustomDocument", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRevertCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = this.set("revertCustomDocument", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSaveCustomDocument(value: (T, CancellationToken) => Thenable[Unit]): Self = this.set("saveCustomDocument", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSaveCustomDocumentAs(value: (T, Uri, CancellationToken) => Thenable[Unit]): Self = this.set("saveCustomDocumentAs", js.Any.fromFunction3(value))
+  }
+  
 }
 

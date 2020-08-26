@@ -58,8 +58,8 @@ class ConstantRefExpression protected () extends Expression {
   @JSName("model")
   var model_FConstantRefExpression: IModel = js.native
   def constant: IConstant = js.native
-  def constant(newValue: IConstant): js.Any = js.native
   def constantQualifiedName: String = js.native
+  def constant_=(newValue: IConstant): Unit = js.native
 }
 
 /* static members */

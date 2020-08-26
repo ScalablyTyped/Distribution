@@ -73,7 +73,6 @@ object selectorMod extends js.Object {
     var _listContexts: js.Any = js.native
     def addSelectables(cssSelectors: js.Array[CssSelector]): Unit = js.native
     def addSelectables(cssSelectors: js.Array[CssSelector], callbackCtxt: T): Unit = js.native
-    def `match`(cssSelector: CssSelector): Boolean = js.native
     /**
       * Find the objects that have been added via `addSelectable`
       * whose css selector is contained in the given css selector.
@@ -81,6 +80,7 @@ object selectorMod extends js.Object {
       * @param matchedCallback This callback will be called with the object handed into `addSelectable`
       * @return boolean true if a match was found
       */
+    def `match`(cssSelector: CssSelector): Boolean = js.native
     def `match`(cssSelector: CssSelector, matchedCallback: js.Function2[/* c */ CssSelector, /* a */ T, Unit]): Boolean = js.native
   }
   

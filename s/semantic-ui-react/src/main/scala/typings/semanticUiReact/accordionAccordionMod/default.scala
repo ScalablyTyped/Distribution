@@ -17,5 +17,10 @@ class default protected ()
 
 @JSImport("semantic-ui-react/dist/commonjs/modules/Accordion/Accordion", JSImport.Default)
 @js.native
-object default extends TopLevel[AccordionComponent]
+object default extends TopLevel[AccordionComponent] {
+  @js.native
+  class Panel ()
+    extends typings.semanticUiReact.accordionPanelMod.default
+  
+}
 

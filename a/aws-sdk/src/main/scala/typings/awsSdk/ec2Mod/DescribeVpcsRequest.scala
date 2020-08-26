@@ -30,20 +30,46 @@ trait DescribeVpcsRequest extends js.Object {
 
 object DescribeVpcsRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeVpcsMaxResults] = js.undefined,
-    NextToken: String = null,
-    VpcIds: VpcIdStringList = null
-  ): DescribeVpcsRequest = {
+  def apply(): DescribeVpcsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (VpcIds != null) __obj.updateDynamic("VpcIds")(VpcIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVpcsRequest]
   }
+  @scala.inline
+  implicit class DescribeVpcsRequestOps[Self <: DescribeVpcsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeVpcsMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVpcIdsVarargs(value: VpcId*): Self = this.set("VpcIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcIds(value: VpcIdStringList): Self = this.set("VpcIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcIds: Self = this.set("VpcIds", js.undefined)
+  }
+  
 }
 

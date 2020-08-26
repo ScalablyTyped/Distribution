@@ -5,16 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChannelContentDetails extends js.Object {
-  var relatedPlaylists: js.UndefOr[Favorites] = js.undefined
+  var relatedPlaylists: js.UndefOr[Favorites] = js.native
 }
 
 object ChannelContentDetails {
   @scala.inline
-  def apply(relatedPlaylists: Favorites = null): ChannelContentDetails = {
+  def apply(): ChannelContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (relatedPlaylists != null) __obj.updateDynamic("relatedPlaylists")(relatedPlaylists.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelContentDetails]
   }
+  @scala.inline
+  implicit class ChannelContentDetailsOps[Self <: ChannelContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelatedPlaylists(value: Favorites): Self = this.set("relatedPlaylists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedPlaylists: Self = this.set("relatedPlaylists", js.undefined)
+  }
+  
 }
 

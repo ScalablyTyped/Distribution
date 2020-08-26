@@ -16,14 +16,14 @@ trait PDFVector extends js.Object {
   def ellipse(x: Double, y: Double, r1: Double): this.type = js.native
   def ellipse(x: Double, y: Double, r1: Double, r2: Double): this.type = js.native
   def fill(): this.type = js.native
+  def fill(color: js.UndefOr[ColorValue], rule: RuleValue): this.type = js.native
   def fill(color: ColorValue): this.type = js.native
-  def fill(color: ColorValue, rule: RuleValue): this.type = js.native
   def fill(rule: RuleValue): this.type = js.native
   def fillAndStroke(): this.type = js.native
+  def fillAndStroke(fillColor: js.UndefOr[ColorValue], strokeColor: js.UndefOr[ColorValue], rule: RuleValue): this.type = js.native
+  def fillAndStroke(fillColor: js.UndefOr[ColorValue], strokeColor: ColorValue): this.type = js.native
   def fillAndStroke(fillColor: ColorValue): this.type = js.native
   def fillAndStroke(fillColor: ColorValue, rule: RuleValue): this.type = js.native
-  def fillAndStroke(fillColor: ColorValue, strokeColor: ColorValue): this.type = js.native
-  def fillAndStroke(fillColor: ColorValue, strokeColor: ColorValue, rule: RuleValue): this.type = js.native
   def fillAndStroke(rule: RuleValue): this.type = js.native
   def lineCap(c: String): this.type = js.native
   def lineJoin(j: String): this.type = js.native
@@ -42,6 +42,7 @@ trait PDFVector extends js.Object {
   def roundedRect(x: Double, y: Double, w: Double, h: Double, r: Double): this.type = js.native
   def save(): this.type = js.native
   def scale(xFactor: Double): this.type = js.native
+  def scale(xFactor: Double, yFactor: js.UndefOr[scala.Nothing], options: Origin): this.type = js.native
   def scale(xFactor: Double, yFactor: Double): this.type = js.native
   def scale(xFactor: Double, yFactor: Double, options: Origin): this.type = js.native
   def stroke(): this.type = js.native

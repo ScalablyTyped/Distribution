@@ -11,8 +11,8 @@ Wrapper implmentation for interface-datastore
 | Full name          | datastore-core |
 | Keywords           | interface, key-value, ipfs, datastore |
 | # releases         | 5 |
-| # dependents       | 15 |
-| # downloads        | 188503 |
+| # dependents       | 16 |
+| # downloads        | 205597 |
 | # stars            | 0 |
 
 ## Links

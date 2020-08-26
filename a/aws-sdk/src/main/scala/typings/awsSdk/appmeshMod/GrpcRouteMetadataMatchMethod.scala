@@ -30,20 +30,42 @@ trait GrpcRouteMetadataMatchMethod extends js.Object {
 
 object GrpcRouteMetadataMatchMethod {
   @scala.inline
-  def apply(
-    exact: HeaderMatch = null,
-    prefix: HeaderMatch = null,
-    range: MatchRange = null,
-    regex: HeaderMatch = null,
-    suffix: HeaderMatch = null
-  ): GrpcRouteMetadataMatchMethod = {
+  def apply(): GrpcRouteMetadataMatchMethod = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrpcRouteMetadataMatchMethod]
   }
+  @scala.inline
+  implicit class GrpcRouteMetadataMatchMethodOps[Self <: GrpcRouteMetadataMatchMethod] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExact(value: HeaderMatch): Self = this.set("exact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExact: Self = this.set("exact", js.undefined)
+    @scala.inline
+    def setPrefix(value: HeaderMatch): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setRange(value: MatchRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRegex(value: HeaderMatch): Self = this.set("regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegex: Self = this.set("regex", js.undefined)
+    @scala.inline
+    def setSuffix(value: HeaderMatch): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+  }
+  
 }
 

@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
   * @property id - Unique number associated with instance of input source. Same physical devices when reconnected will not share this ID.
   * @property inputSource - XRInputSource object that is associated with this input source.
   * @property targetRayMode - Type of ray Input Device is based on. Can be one of the following:
-  
-  * {@link pc.XRTARGETRAY_GAZE}: Gaze - indicates the target ray will originate at the viewer and follow the direction it is facing. (This is commonly referred to as a "gaze input" device in the context of head-mounted displays.)
-  * {@link pc.XRTARGETRAY_SCREEN}: Screen - indicates that the input source was an interaction with the canvas element associated with an inline session’s output context, such as a mouse click or touch event.
-  * {@link pc.XRTARGETRAY_POINTER}: Tracked Pointer - indicates that the target ray originates from either a handheld device or other hand-tracking mechanism and represents that the user is using their hands or the held device for pointing.
+  *
+  * * {@link pc.XRTARGETRAY_GAZE}: Gaze - indicates the target ray will originate at the viewer and follow the direction it is facing. (This is commonly referred to as a "gaze input" device in the context of head-mounted displays.)
+  * * {@link pc.XRTARGETRAY_SCREEN}: Screen - indicates that the input source was an interaction with the canvas element associated with an inline session’s output context, such as a mouse click or touch event.
+  * * {@link pc.XRTARGETRAY_POINTER}: Tracked Pointer - indicates that the target ray originates from either a handheld device or other hand-tracking mechanism and represents that the user is using their hands or the held device for pointing.
   * @property handedness - Describes which hand input source is associated with. Can be one of the following:
-  
-  * {@link pc.XRHAND_NONE}: None - input source is not meant to be held in hands.
-  * {@link pc.XRHAND_LEFT}: Left - indicates that input source is meant to be held in left hand.
-  * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
+  *
+  * * {@link pc.XRHAND_NONE}: None - input source is not meant to be held in hands.
+  * * {@link pc.XRHAND_LEFT}: Left - indicates that input source is meant to be held in left hand.
+  * * {@link pc.XRHAND_RIGHT}: Right - indicates that input source is meant to be held in right hand.
   * @property profiles - List of input profile names indicating both the prefered visual representation and behavior of the input source.
   * @property grip - If input source can be held, then it will have node with its world transformation, that can be used to position and rotate virtual joystics based on it.
   * @property gamepad - If input source has buttons, triggers, thumbstick or touchpad, then this object provides access to its states.

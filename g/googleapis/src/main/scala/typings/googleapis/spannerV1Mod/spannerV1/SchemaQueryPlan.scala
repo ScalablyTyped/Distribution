@@ -19,10 +19,28 @@ trait SchemaQueryPlan extends js.Object {
 
 object SchemaQueryPlan {
   @scala.inline
-  def apply(planNodes: js.Array[SchemaPlanNode] = null): SchemaQueryPlan = {
+  def apply(): SchemaQueryPlan = {
     val __obj = js.Dynamic.literal()
-    if (planNodes != null) __obj.updateDynamic("planNodes")(planNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryPlan]
   }
+  @scala.inline
+  implicit class SchemaQueryPlanOps[Self <: SchemaQueryPlan] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlanNodesVarargs(value: SchemaPlanNode*): Self = this.set("planNodes", js.Array(value :_*))
+    @scala.inline
+    def setPlanNodes(value: js.Array[SchemaPlanNode]): Self = this.set("planNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanNodes: Self = this.set("planNodes", js.undefined)
+  }
+  
 }
 

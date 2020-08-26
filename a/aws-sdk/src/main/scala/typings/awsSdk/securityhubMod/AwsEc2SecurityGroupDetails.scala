@@ -34,22 +34,50 @@ trait AwsEc2SecurityGroupDetails extends js.Object {
 
 object AwsEc2SecurityGroupDetails {
   @scala.inline
-  def apply(
-    GroupId: NonEmptyString = null,
-    GroupName: NonEmptyString = null,
-    IpPermissions: AwsEc2SecurityGroupIpPermissionList = null,
-    IpPermissionsEgress: AwsEc2SecurityGroupIpPermissionList = null,
-    OwnerId: NonEmptyString = null,
-    VpcId: NonEmptyString = null
-  ): AwsEc2SecurityGroupDetails = {
+  def apply(): AwsEc2SecurityGroupDetails = {
     val __obj = js.Dynamic.literal()
-    if (GroupId != null) __obj.updateDynamic("GroupId")(GroupId.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (IpPermissions != null) __obj.updateDynamic("IpPermissions")(IpPermissions.asInstanceOf[js.Any])
-    if (IpPermissionsEgress != null) __obj.updateDynamic("IpPermissionsEgress")(IpPermissionsEgress.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsEc2SecurityGroupDetails]
   }
+  @scala.inline
+  implicit class AwsEc2SecurityGroupDetailsOps[Self <: AwsEc2SecurityGroupDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupId(value: NonEmptyString): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("GroupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: NonEmptyString): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setIpPermissionsVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = this.set("IpPermissions", js.Array(value :_*))
+    @scala.inline
+    def setIpPermissions(value: AwsEc2SecurityGroupIpPermissionList): Self = this.set("IpPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPermissions: Self = this.set("IpPermissions", js.undefined)
+    @scala.inline
+    def setIpPermissionsEgressVarargs(value: AwsEc2SecurityGroupIpPermission*): Self = this.set("IpPermissionsEgress", js.Array(value :_*))
+    @scala.inline
+    def setIpPermissionsEgress(value: AwsEc2SecurityGroupIpPermissionList): Self = this.set("IpPermissionsEgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPermissionsEgress: Self = this.set("IpPermissionsEgress", js.undefined)
+    @scala.inline
+    def setOwnerId(value: NonEmptyString): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setVpcId(value: NonEmptyString): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

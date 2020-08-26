@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait TouchDevice extends EventHandler {
   /**
     * Attach a device to an element in the DOM.
-    If the device is already attached to an element this method will detach it first.
+    * If the device is already attached to an element this method will detach it first.
     * @param element - The element to attach to.
     */
   def attach(element: Element): Unit = js.native

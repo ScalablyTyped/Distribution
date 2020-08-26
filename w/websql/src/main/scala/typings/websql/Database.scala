@@ -21,7 +21,34 @@ trait Database extends js.Object {
     * the fifth argument
     */
   def changeVersion(oldVersion: DOMString, newVersion: DOMString): Unit = js.native
+  def changeVersion(
+    oldVersion: DOMString,
+    newVersion: DOMString,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: SQLVoidCallback
+  ): Unit = js.native
+  def changeVersion(
+    oldVersion: DOMString,
+    newVersion: DOMString,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: SQLTransactionErrorCallback
+  ): Unit = js.native
+  def changeVersion(
+    oldVersion: DOMString,
+    newVersion: DOMString,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: SQLTransactionErrorCallback,
+    successCallback: SQLVoidCallback
+  ): Unit = js.native
   def changeVersion(oldVersion: DOMString, newVersion: DOMString, callback: SQLTransactionCallback): Unit = js.native
+  def changeVersion(
+    oldVersion: DOMString,
+    newVersion: DOMString,
+    callback: SQLTransactionCallback,
+    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: SQLVoidCallback
+  ): Unit = js.native
   def changeVersion(
     oldVersion: DOMString,
     newVersion: DOMString,
@@ -36,6 +63,11 @@ trait Database extends js.Object {
     successCallback: SQLVoidCallback
   ): Unit = js.native
   def readTransaction(callback: SQLTransactionCallback): Unit = js.native
+  def readTransaction(
+    callback: SQLTransactionCallback,
+    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: SQLVoidCallback
+  ): Unit = js.native
   def readTransaction(callback: SQLTransactionCallback, errorCallback: SQLTransactionErrorCallback): Unit = js.native
   def readTransaction(
     callback: SQLTransactionCallback,
@@ -43,6 +75,11 @@ trait Database extends js.Object {
     successCallback: SQLVoidCallback
   ): Unit = js.native
   def transaction(callback: SQLTransactionCallback): Unit = js.native
+  def transaction(
+    callback: SQLTransactionCallback,
+    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: SQLVoidCallback
+  ): Unit = js.native
   def transaction(callback: SQLTransactionCallback, errorCallback: SQLTransactionErrorCallback): Unit = js.native
   def transaction(
     callback: SQLTransactionCallback,

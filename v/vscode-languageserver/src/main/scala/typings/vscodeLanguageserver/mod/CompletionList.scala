@@ -14,6 +14,7 @@ object CompletionList extends js.Object {
     * @param isIncomplete The list is not complete.
     */
   def create(): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
+  def create(items: js.UndefOr[scala.Nothing], isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
   def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem]): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
   def create(items: js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], isIncomplete: Boolean): typings.vscodeLanguageserverTypes.mod.CompletionList = js.native
 }

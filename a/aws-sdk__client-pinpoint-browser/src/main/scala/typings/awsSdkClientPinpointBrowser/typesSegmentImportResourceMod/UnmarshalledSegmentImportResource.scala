@@ -1,38 +1,41 @@
 package typings.awsSdkClientPinpointBrowser.typesSegmentImportResourceMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.CSV
-import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.JSON
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledSegmentImportResource extends SegmentImportResource {
   /**
     * The number of channel types in the imported segment.
     */
   @JSName("ChannelCounts")
-  var ChannelCounts_UnmarshalledSegmentImportResource: js.UndefOr[StringDictionary[Double]] = js.undefined
+  var ChannelCounts_UnmarshalledSegmentImportResource: js.UndefOr[StringDictionary[Double]] = js.native
 }
 
 object UnmarshalledSegmentImportResource {
   @scala.inline
-  def apply(
-    ChannelCounts: StringDictionary[Double] = null,
-    ExternalId: String = null,
-    Format: CSV | JSON | String = null,
-    RoleArn: String = null,
-    S3Url: String = null,
-    Size: js.UndefOr[Double] = js.undefined
-  ): UnmarshalledSegmentImportResource = {
+  def apply(): UnmarshalledSegmentImportResource = {
     val __obj = js.Dynamic.literal()
-    if (ChannelCounts != null) __obj.updateDynamic("ChannelCounts")(ChannelCounts.asInstanceOf[js.Any])
-    if (ExternalId != null) __obj.updateDynamic("ExternalId")(ExternalId.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (S3Url != null) __obj.updateDynamic("S3Url")(S3Url.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledSegmentImportResource]
   }
+  @scala.inline
+  implicit class UnmarshalledSegmentImportResourceOps[Self <: UnmarshalledSegmentImportResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelCounts(value: StringDictionary[Double]): Self = this.set("ChannelCounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelCounts: Self = this.set("ChannelCounts", js.undefined)
+  }
+  
 }
 

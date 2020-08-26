@@ -30,20 +30,42 @@ trait ClusterScalingConfiguration extends js.Object {
 
 object ClusterScalingConfiguration {
   @scala.inline
-  def apply(
-    autoPause: js.UndefOr[Boolean] = js.undefined,
-    maxCapacity: js.UndefOr[Double] = js.undefined,
-    minCapacity: js.UndefOr[Double] = js.undefined,
-    secondsUntilAutoPause: js.UndefOr[Double] = js.undefined,
-    timeoutAction: String = null
-  ): ClusterScalingConfiguration = {
+  def apply(): ClusterScalingConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxCapacity)) __obj.updateDynamic("maxCapacity")(maxCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minCapacity)) __obj.updateDynamic("minCapacity")(minCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secondsUntilAutoPause)) __obj.updateDynamic("secondsUntilAutoPause")(secondsUntilAutoPause.get.asInstanceOf[js.Any])
-    if (timeoutAction != null) __obj.updateDynamic("timeoutAction")(timeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterScalingConfiguration]
   }
+  @scala.inline
+  implicit class ClusterScalingConfigurationOps[Self <: ClusterScalingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoPause(value: Boolean): Self = this.set("autoPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPause: Self = this.set("autoPause", js.undefined)
+    @scala.inline
+    def setMaxCapacity(value: Double): Self = this.set("maxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("maxCapacity", js.undefined)
+    @scala.inline
+    def setMinCapacity(value: Double): Self = this.set("minCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCapacity: Self = this.set("minCapacity", js.undefined)
+    @scala.inline
+    def setSecondsUntilAutoPause(value: Double): Self = this.set("secondsUntilAutoPause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondsUntilAutoPause: Self = this.set("secondsUntilAutoPause", js.undefined)
+    @scala.inline
+    def setTimeoutAction(value: String): Self = this.set("timeoutAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutAction: Self = this.set("timeoutAction", js.undefined)
+  }
+  
 }
 

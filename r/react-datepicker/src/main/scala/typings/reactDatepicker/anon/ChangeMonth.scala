@@ -5,18 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChangeMonth extends js.Object {
-  var date: Date
-  var nextMonthButtonDisabled: Boolean
-  var nextYearButtonDisabled: Boolean
-  var prevMonthButtonDisabled: Boolean
-  var prevYearButtonDisabled: Boolean
-  def changeMonth(month: Double): Unit
-  def changeYear(year: Double): Unit
-  def decreaseMonth(): Unit
-  def decreaseYear(): Unit
-  def increaseMonth(): Unit
-  def increaseYear(): Unit
+  var date: Date = js.native
+  var nextMonthButtonDisabled: Boolean = js.native
+  var nextYearButtonDisabled: Boolean = js.native
+  var prevMonthButtonDisabled: Boolean = js.native
+  var prevYearButtonDisabled: Boolean = js.native
+  def changeMonth(month: Double): Unit = js.native
+  def changeYear(year: Double): Unit = js.native
+  def decreaseMonth(): Unit = js.native
+  def decreaseYear(): Unit = js.native
+  def increaseMonth(): Unit = js.native
+  def increaseYear(): Unit = js.native
 }
 
 object ChangeMonth {
@@ -37,5 +38,40 @@ object ChangeMonth {
     val __obj = js.Dynamic.literal(changeMonth = js.Any.fromFunction1(changeMonth), changeYear = js.Any.fromFunction1(changeYear), date = date.asInstanceOf[js.Any], decreaseMonth = js.Any.fromFunction0(decreaseMonth), decreaseYear = js.Any.fromFunction0(decreaseYear), increaseMonth = js.Any.fromFunction0(increaseMonth), increaseYear = js.Any.fromFunction0(increaseYear), nextMonthButtonDisabled = nextMonthButtonDisabled.asInstanceOf[js.Any], nextYearButtonDisabled = nextYearButtonDisabled.asInstanceOf[js.Any], prevMonthButtonDisabled = prevMonthButtonDisabled.asInstanceOf[js.Any], prevYearButtonDisabled = prevYearButtonDisabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeMonth]
   }
+  @scala.inline
+  implicit class ChangeMonthOps[Self <: ChangeMonth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeMonth(value: Double => Unit): Self = this.set("changeMonth", js.Any.fromFunction1(value))
+    @scala.inline
+    def setChangeYear(value: Double => Unit): Self = this.set("changeYear", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecreaseMonth(value: () => Unit): Self = this.set("decreaseMonth", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDecreaseYear(value: () => Unit): Self = this.set("decreaseYear", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIncreaseMonth(value: () => Unit): Self = this.set("increaseMonth", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIncreaseYear(value: () => Unit): Self = this.set("increaseYear", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNextMonthButtonDisabled(value: Boolean): Self = this.set("nextMonthButtonDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextYearButtonDisabled(value: Boolean): Self = this.set("nextYearButtonDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrevMonthButtonDisabled(value: Boolean): Self = this.set("prevMonthButtonDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrevYearButtonDisabled(value: Boolean): Self = this.set("prevYearButtonDisabled", value.asInstanceOf[js.Any])
+  }
+  
 }
 

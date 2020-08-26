@@ -15,15 +15,11 @@ object mod extends js.Object {
   class CDataValue protected ()
     extends typings.xmlpoke.XmlPoke.CDataValue {
     def this(value: String) = this()
-    /* CompleteClass */
-    override var value: String = js.native
   }
   
   @js.native
   class XmlString protected () extends XmlValue {
     def this(value: String) = this()
-    /* CompleteClass */
-    override var value: String = js.native
   }
   
   def apply(xml: String, modify: js.Function1[/* api */ API, Unit]): String = js.native

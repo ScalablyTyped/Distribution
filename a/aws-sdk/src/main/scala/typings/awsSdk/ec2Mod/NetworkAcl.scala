@@ -38,24 +38,56 @@ trait NetworkAcl extends js.Object {
 
 object NetworkAcl {
   @scala.inline
-  def apply(
-    Associations: NetworkAclAssociationList = null,
-    Entries: NetworkAclEntryList = null,
-    IsDefault: js.UndefOr[Boolean] = js.undefined,
-    NetworkAclId: String = null,
-    OwnerId: String = null,
-    Tags: TagList = null,
-    VpcId: String = null
-  ): NetworkAcl = {
+  def apply(): NetworkAcl = {
     val __obj = js.Dynamic.literal()
-    if (Associations != null) __obj.updateDynamic("Associations")(Associations.asInstanceOf[js.Any])
-    if (Entries != null) __obj.updateDynamic("Entries")(Entries.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefault)) __obj.updateDynamic("IsDefault")(IsDefault.get.asInstanceOf[js.Any])
-    if (NetworkAclId != null) __obj.updateDynamic("NetworkAclId")(NetworkAclId.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkAcl]
   }
+  @scala.inline
+  implicit class NetworkAclOps[Self <: NetworkAcl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationsVarargs(value: NetworkAclAssociation*): Self = this.set("Associations", js.Array(value :_*))
+    @scala.inline
+    def setAssociations(value: NetworkAclAssociationList): Self = this.set("Associations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociations: Self = this.set("Associations", js.undefined)
+    @scala.inline
+    def setEntriesVarargs(value: NetworkAclEntry*): Self = this.set("Entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: NetworkAclEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("Entries", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("IsDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("IsDefault", js.undefined)
+    @scala.inline
+    def setNetworkAclId(value: String): Self = this.set("NetworkAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkAclId: Self = this.set("NetworkAclId", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

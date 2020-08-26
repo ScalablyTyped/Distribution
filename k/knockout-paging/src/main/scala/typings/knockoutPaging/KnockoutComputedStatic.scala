@@ -11,6 +11,7 @@ trait KnockoutComputedStatic extends js.Object {
   def apply[T](`def`: KnockoutComputedDefine[T]): KnockoutComputed[T] = js.native
   def apply[T](`def`: KnockoutComputedDefine[T], context: js.Any): KnockoutComputed[T] = js.native
   def apply[T](func: js.Function0[T]): KnockoutComputed[T] = js.native
+  def apply[T](func: js.Function0[T], context: js.UndefOr[scala.Nothing], options: js.Any): KnockoutComputed[T] = js.native
   def apply[T](func: js.Function0[T], context: js.Any): KnockoutComputed[T] = js.native
   def apply[T](func: js.Function0[T], context: js.Any, options: js.Any): KnockoutComputed[T] = js.native
 }

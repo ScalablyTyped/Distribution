@@ -11,8 +11,8 @@ Constants enumerating the HTTP status codes. Based on the Java Apache HttpStatus
 | Full name          | http-status-codes |
 | Keywords           | node, http, apache, HttpStatus, httpclient, status, codes |
 | # releases         | 4 |
-| # dependents       | 449 |
-| # downloads        | 10512248 |
+| # dependents       | 455 |
+| # downloads        | 12391543 |
 | # stars            | 26 |
 
 ## Links

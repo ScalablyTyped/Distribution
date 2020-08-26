@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait ReactiveDictStatic
   extends Instantiable0[ReactiveDict]
      with Instantiable1[/* name */ String, ReactiveDict]
-     with Instantiable2[/* name */ String, /* initialValue */ EJSONable, ReactiveDict]
+     with Instantiable2[js.UndefOr[/* name */ String], /* initialValue */ EJSONable, ReactiveDict]
 

@@ -13,10 +13,10 @@ class FileWriter protected () extends js.Object {
     */
   def copyFile(source: String, dest: String): Unit = js.native
   def copyFile(source: String, dest: String, header: String): Unit = js.native
-  def writeFile(): ContentWriter = js.native
   /**
     * returns a content writer for writing content to the supplied file.
     */
+  def writeFile(): ContentWriter = js.native
   def writeFile(file: String): ContentWriter = js.native
   /**
     * returns a FileWriter that is rooted at the supplied subdirectory

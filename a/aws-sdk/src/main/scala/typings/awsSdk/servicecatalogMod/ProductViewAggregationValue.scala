@@ -18,11 +18,30 @@ trait ProductViewAggregationValue extends js.Object {
 
 object ProductViewAggregationValue {
   @scala.inline
-  def apply(ApproximateCount: js.UndefOr[ApproximateCount] = js.undefined, Value: AttributeValue = null): ProductViewAggregationValue = {
+  def apply(): ProductViewAggregationValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ApproximateCount)) __obj.updateDynamic("ApproximateCount")(ApproximateCount.get.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductViewAggregationValue]
   }
+  @scala.inline
+  implicit class ProductViewAggregationValueOps[Self <: ProductViewAggregationValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproximateCount(value: ApproximateCount): Self = this.set("ApproximateCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproximateCount: Self = this.set("ApproximateCount", js.undefined)
+    @scala.inline
+    def setValue(value: AttributeValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

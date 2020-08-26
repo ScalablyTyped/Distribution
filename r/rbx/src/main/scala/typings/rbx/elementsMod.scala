@@ -5,7 +5,7 @@ import typings.rbx.anon.NoneTAsComponentextendsElItem
 import typings.rbx.anon.PickBadgeHelpersPropsFloa
 import typings.rbx.anon.PreferHelpersPropsOverrid
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.buttonButtonMod.ButtonModifierProps
 import typings.rbx.buttonGroupMod.ButtonGroupProps
 import typings.rbx.containerContainerMod.ContainerProps
@@ -137,7 +137,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ButtonModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ButtonModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -157,7 +157,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ContentModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ContentModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -178,7 +178,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with FieldModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with FieldModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -202,7 +202,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with FileModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with FileModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -222,7 +222,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ImageModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ImageModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -243,7 +243,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -268,7 +268,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TableModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TableModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
@@ -288,7 +288,7 @@ object elementsMod extends js.Object {
       ]) = js.native
     var displayName: js.UndefOr[String] = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TagModifierProps with (Pick[
+      props: `6`[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with TagModifierProps with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 

@@ -46,28 +46,58 @@ trait ListTasksRequest extends js.Object {
 
 object ListTasksRequest {
   @scala.inline
-  def apply(
-    cluster: String = null,
-    containerInstance: String = null,
-    desiredStatus: DesiredStatus = null,
-    family: String = null,
-    launchType: LaunchType = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
-    nextToken: String = null,
-    serviceName: String = null,
-    startedBy: String = null
-  ): ListTasksRequest = {
+  def apply(): ListTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (containerInstance != null) __obj.updateDynamic("containerInstance")(containerInstance.asInstanceOf[js.Any])
-    if (desiredStatus != null) __obj.updateDynamic("desiredStatus")(desiredStatus.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (startedBy != null) __obj.updateDynamic("startedBy")(startedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTasksRequest]
   }
+  @scala.inline
+  implicit class ListTasksRequestOps[Self <: ListTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setContainerInstance(value: String): Self = this.set("containerInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerInstance: Self = this.set("containerInstance", js.undefined)
+    @scala.inline
+    def setDesiredStatus(value: DesiredStatus): Self = this.set("desiredStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredStatus: Self = this.set("desiredStatus", js.undefined)
+    @scala.inline
+    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setMaxResults(value: BoxedInteger): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
+  }
+  
 }
 

@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MessagingSubscribeOptions extends js.Object {
-  var invocationContext: js.UndefOr[js.Object] = js.undefined
-  var onFailure: js.UndefOr[js.Function] = js.undefined
-  var onSuccess: js.UndefOr[js.Function] = js.undefined
-  var qos: js.UndefOr[MessagingQOS] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var invocationContext: js.UndefOr[js.Object] = js.native
+  var onFailure: js.UndefOr[js.Function] = js.native
+  var onSuccess: js.UndefOr[js.Function] = js.native
+  var qos: js.UndefOr[MessagingQOS] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object MessagingSubscribeOptions {
   @scala.inline
-  def apply(
-    invocationContext: js.Object = null,
-    onFailure: js.Function = null,
-    onSuccess: js.Function = null,
-    qos: MessagingQOS = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): MessagingSubscribeOptions = {
+  def apply(): MessagingSubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
-    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingSubscribeOptions]
   }
+  @scala.inline
+  implicit class MessagingSubscribeOptionsOps[Self <: MessagingSubscribeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInvocationContext(value: js.Object): Self = this.set("invocationContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationContext: Self = this.set("invocationContext", js.undefined)
+    @scala.inline
+    def setOnFailure(value: js.Function): Self = this.set("onFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    @scala.inline
+    def setOnSuccess(value: js.Function): Self = this.set("onSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    @scala.inline
+    def setQos(value: MessagingQOS): Self = this.set("qos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQos: Self = this.set("qos", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

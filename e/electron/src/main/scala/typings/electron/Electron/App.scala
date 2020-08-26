@@ -19,8 +19,8 @@ import typings.electron.electronStrings.`remote-get-builtin`
 import typings.electron.electronStrings.`remote-get-current-web-contents`
 import typings.electron.electronStrings.`remote-get-current-window`
 import typings.electron.electronStrings.`remote-get-global`
-import typings.electron.electronStrings.`remote-get-guest-web-contents`
 import typings.electron.electronStrings.`remote-require`
+import typings.electron.electronStrings.`render-process-gone`
 import typings.electron.electronStrings.`renderer-process-crashed`
 import typings.electron.electronStrings.`second-instance`
 import typings.electron.electronStrings.`select-client-certificate`
@@ -31,11 +31,13 @@ import typings.electron.electronStrings.`will-continue-activity`
 import typings.electron.electronStrings.`will-finish-launching`
 import typings.electron.electronStrings.`will-quit`
 import typings.electron.electronStrings.`window-all-closed`
+import typings.electron.electronStrings.accessory
 import typings.electron.electronStrings.activate
 import typings.electron.electronStrings.appData
 import typings.electron.electronStrings.basic
 import typings.electron.electronStrings.cache
 import typings.electron.electronStrings.complete
+import typings.electron.electronStrings.crashDumps
 import typings.electron.electronStrings.desktop
 import typings.electron.electronStrings.documents
 import typings.electron.electronStrings.downloads
@@ -47,12 +49,14 @@ import typings.electron.electronStrings.module
 import typings.electron.electronStrings.music
 import typings.electron.electronStrings.pepperFlashSystemPlugin
 import typings.electron.electronStrings.pictures
+import typings.electron.electronStrings.prohibited
 import typings.electron.electronStrings.quit
 import typings.electron.electronStrings.ready
+import typings.electron.electronStrings.regular
 import typings.electron.electronStrings.temp
 import typings.electron.electronStrings.userData
 import typings.electron.electronStrings.videos
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -79,7 +83,7 @@ trait App extends EventEmitter {
   /**
     * A `Boolean` which when `true` disables the overrides that Electron has in place
     * to ensure renderer processes are restarted on every navigation.  The current
-    * default value for this property is `false`.
+    * default value for this property is `true`.
     *
     * The intention is for these overrides to become disabled by default and then at
     * some point in the future this property will be removed.  This property impacts
@@ -113,8 +117,8 @@ trait App extends EventEmitter {
     */
   val commandLine: CommandLine = js.native
   /**
-    * A `Dock` object that allows you to perform actions on your app icon in the
-    * user's dock on macOS.
+    * A `Dock` `| undefined` object that allows you to perform actions on your app
+    * icon in the user's dock on macOS.
     *
     * @platform darwin
     */
@@ -253,16 +257,6 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* guestWebContents */ WebContents_, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
   def addListener_remoterequire(
     event: `remote-require`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
@@ -271,6 +265,11 @@ trait App extends EventEmitter {
   def addListener_rendererprocesscrashed(
     event: `renderer-process-crashed`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_secondinstance(
@@ -330,7 +329,7 @@ trait App extends EventEmitter {
   /**
     * By default, Chromium disables 3D APIs (e.g. WebGL) until restart on a per domain
     * basis if the GPU processes crashes too frequently. This function disables that
-    * behaviour.
+    * behavior.
   This method can only be called before app is ready.
     */
   def disableDomainBlockingFor3DAPIs(): Unit = js.native
@@ -497,6 +496,20 @@ trait App extends EventEmitter {
     * over `name` by Electron.
     */
   def getName(): String = js.native
+  @JSName("getPath")
+  def getPath_appData(name: appData): String = js.native
+  @JSName("getPath")
+  def getPath_cache(name: cache): String = js.native
+  @JSName("getPath")
+  def getPath_crashDumps(name: crashDumps): String = js.native
+  @JSName("getPath")
+  def getPath_desktop(name: desktop): String = js.native
+  @JSName("getPath")
+  def getPath_documents(name: documents): String = js.native
+  @JSName("getPath")
+  def getPath_downloads(name: downloads): String = js.native
+  @JSName("getPath")
+  def getPath_exe(name: exe): String = js.native
   /**
     * A path to a special directory or file associated with `name`. On failure, an
     * `Error` is thrown.
@@ -505,9 +518,24 @@ trait App extends EventEmitter {
     * called first, a default log directory will be created equivalent to calling
     * `app.setAppLogsPath()` without a `path` parameter.
     */
-  def getPath(
-    name: home | appData | userData | cache | temp | exe | module | desktop | documents | downloads | music | pictures | videos | logs | pepperFlashSystemPlugin
-  ): String = js.native
+  @JSName("getPath")
+  def getPath_home(name: home): String = js.native
+  @JSName("getPath")
+  def getPath_logs(name: logs): String = js.native
+  @JSName("getPath")
+  def getPath_module(name: module): String = js.native
+  @JSName("getPath")
+  def getPath_music(name: music): String = js.native
+  @JSName("getPath")
+  def getPath_pepperFlashSystemPlugin(name: pepperFlashSystemPlugin): String = js.native
+  @JSName("getPath")
+  def getPath_pictures(name: pictures): String = js.native
+  @JSName("getPath")
+  def getPath_temp(name: temp): String = js.native
+  @JSName("getPath")
+  def getPath_userData(name: userData): String = js.native
+  @JSName("getPath")
+  def getPath_videos(name: videos): String = js.native
   /**
     * The version of the loaded application. If no version is found in the
     * application's `package.json` file, the version of the current bundle or
@@ -565,6 +593,7 @@ trait App extends EventEmitter {
     * internally.
     */
   def isDefaultProtocolClient(protocol: String): Boolean = js.native
+  def isDefaultProtocolClient(protocol: String, path: js.UndefOr[scala.Nothing], args: js.Array[String]): Boolean = js.native
   def isDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def isDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
   /**
@@ -579,7 +608,8 @@ trait App extends EventEmitter {
     */
   def isInApplicationsFolder(): Boolean = js.native
   /**
-    * `true` if Electron has finished initializing, `false` otherwise.
+    * `true` if Electron has finished initializing, `false` otherwise. See also
+    * `app.whenReady()`.
     */
   def isReady(): Boolean = js.native
   /**
@@ -832,10 +862,11 @@ trait App extends EventEmitter {
   @JSName("on")
   def on_quit(event: quit, listener: js.Function2[/* event */ Event, /* exitCode */ Double, Unit]): this.type = js.native
   /**
-    * Emitted when Electron has finished initializing. On macOS, `launchInfo` holds
-    * the `userInfo` of the `NSUserNotification` that was used to open the
-    * application, if it was launched from Notification Center. You can call
-    * `app.isReady()` to check if this event has already fired.
+    * Emitted once, when Electron has finished initializing. On macOS, `launchInfo`
+    * holds the `userInfo` of the `NSUserNotification` that was used to open the
+    * application, if it was launched from Notification Center. You can also call
+    * `app.isReady()` to check if this event has already fired and `app.whenReady()`
+    * to get a Promise that is fulfilled when Electron is initialized.
     */
   @JSName("on")
   def on_ready(event: ready, listener: js.Function1[/* launchInfo */ js.Any, Unit]): this.type = js.native
@@ -880,21 +911,6 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
   ): this.type = js.native
   /**
-    * Emitted when `<webview>.getWebContents()` is called in the renderer process of
-    * `webContents`. Calling `event.preventDefault()` will prevent the object from
-    * being returned. Custom value can be returned by setting `event.returnValue`.
-    */
-  @JSName("on")
-  def on_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* guestWebContents */ WebContents_, 
-      Unit
-    ]
-  ): this.type = js.native
-  /**
     * Emitted when `remote.require()` is called in the renderer process of
     * `webContents`. Calling `event.preventDefault()` will prevent the module from
     * being returned. Custom value can be returned by setting `event.returnValue`.
@@ -904,13 +920,19 @@ trait App extends EventEmitter {
     event: `remote-require`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
   ): this.type = js.native
-  /**
-    * Emitted when the renderer process of `webContents` crashes or is killed.
-    */
   @JSName("on")
   def on_rendererprocesscrashed(
     event: `renderer-process-crashed`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when the renderer process unexpectedly dissapears.  This is normally
+    * because it was crashed or killed.
+    */
+  @JSName("on")
+  def on_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
   ): this.type = js.native
   /**
     * This event will be emitted inside the primary instance of your application when
@@ -960,7 +982,7 @@ trait App extends EventEmitter {
     * Emitted when Handoff is about to be resumed on another device. If you need to
     * update the state to be transferred, you should call `event.preventDefault()`
     * immediately, construct a new `userInfo` dictionary and call
-    * `app.updateCurrentActiviy()` in a timely manner. Otherwise, the operation will
+    * `app.updateCurrentActivity()` in a timely manner. Otherwise, the operation will
     * fail and `continue-activity-error` will be called.
     *
     * @platform darwin
@@ -1003,8 +1025,8 @@ trait App extends EventEmitter {
   def on_willfinishlaunching(event: `will-finish-launching`, listener: js.Function): this.type = js.native
   /**
     * Emitted when all windows have been closed and the application will quit. Calling
-    * `event.preventDefault()` will prevent the default behaviour, which is
-    * terminating the application.
+    * `event.preventDefault()` will prevent the default behavior, which is terminating
+    * the application.
     *
     * See the description of the `window-all-closed` event for the differences between
     * the `will-quit` and `window-all-closed` events.
@@ -1133,16 +1155,6 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* guestWebContents */ WebContents_, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
   def once_remoterequire(
     event: `remote-require`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
@@ -1151,6 +1163,11 @@ trait App extends EventEmitter {
   def once_rendererprocesscrashed(
     event: `renderer-process-crashed`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("once")
   def once_secondinstance(
@@ -1235,6 +1252,7 @@ trait App extends EventEmitter {
     * @platform darwin,win32
     */
   def removeAsDefaultProtocolClient(protocol: String): Boolean = js.native
+  def removeAsDefaultProtocolClient(protocol: String, path: js.UndefOr[scala.Nothing], args: js.Array[String]): Boolean = js.native
   def removeAsDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def removeAsDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
   @JSName("removeListener")
@@ -1344,16 +1362,6 @@ trait App extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* globalName */ String, Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_remotegetguestwebcontents(
-    event: `remote-get-guest-web-contents`,
-    listener: js.Function3[
-      /* event */ Event, 
-      /* webContents */ WebContents_, 
-      /* guestWebContents */ WebContents_, 
-      Unit
-    ]
-  ): this.type = js.native
-  @JSName("removeListener")
   def removeListener_remoterequire(
     event: `remote-require`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* moduleName */ String, Unit]
@@ -1362,6 +1370,11 @@ trait App extends EventEmitter {
   def removeListener_rendererprocesscrashed(
     event: `renderer-process-crashed`,
     listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* killed */ Boolean, Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_renderprocessgone(
+    event: `render-process-gone`,
+    listener: js.Function3[/* event */ Event, /* webContents */ WebContents_, /* details */ Details, Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_secondinstance(
@@ -1432,7 +1445,7 @@ trait App extends EventEmitter {
   def resignCurrentActivity(): Unit = js.native
   /**
     * Set the about panel options. This will override the values defined in the app's
-    * `.plist` file on MacOS. See the Apple docs for more details. On Linux, values
+    * `.plist` file on macOS. See the Apple docs for more details. On Linux, values
     * must be set in order to be shown; there are no defaults.
     *
     * If you do not set `credits` but still wish to surface them in your app, AppKit
@@ -1455,6 +1468,27 @@ trait App extends EventEmitter {
     * @platform darwin,win32
     */
   def setAccessibilitySupportEnabled(enabled: Boolean): Unit = js.native
+  @JSName("setActivationPolicy")
+  def setActivationPolicy_accessory(policy: accessory): Unit = js.native
+  @JSName("setActivationPolicy")
+  def setActivationPolicy_prohibited(policy: prohibited): Unit = js.native
+  /**
+    * Sets the activation policy for a given app.
+    *
+    * Activation policy types:
+    *
+    * * 'regular' - The application is an ordinary app that appears in the Dock and
+    * may have a user interface.
+    * * 'accessory' - The application doesn’t appear in the Dock and doesn’t have a
+    * menu bar, but it may be activated programmatically or by clicking on one of its
+    * windows.
+    * * 'prohibited' - The application doesn’t appear in the Dock and may not create
+    * windows or be activated.
+    *
+    * @platform darwin
+    */
+  @JSName("setActivationPolicy")
+  def setActivationPolicy_regular(policy: regular): Unit = js.native
   /**
     * Sets or creates a directory your app's logs which can then be manipulated with
     * `app.getPath()` or `app.setPath(pathName, newPath)`.
@@ -1496,6 +1530,7 @@ trait App extends EventEmitter {
     * internally.
     */
   def setAsDefaultProtocolClient(protocol: String): Boolean = js.native
+  def setAsDefaultProtocolClient(protocol: String, path: js.UndefOr[scala.Nothing], args: js.Array[String]): Boolean = js.native
   def setAsDefaultProtocolClient(protocol: String, path: String): Boolean = js.native
   def setAsDefaultProtocolClient(protocol: String, path: String, args: js.Array[String]): Boolean = js.native
   /**
@@ -1512,7 +1547,6 @@ trait App extends EventEmitter {
     * @platform linux,darwin
     */
   def setBadgeCount(count: Double): Boolean = js.native
-  def setJumpList(): Unit = js.native
   /**
     * Sets or removes a custom Jump List for the application, and returns one of the
     * following strings:
@@ -1547,6 +1581,7 @@ trait App extends EventEmitter {
     *
     * @platform win32
     */
+  def setJumpList(): Unit = js.native
   def setJumpList(categories: js.Array[JumpListCategory]): Unit = js.native
   /**
     * Set the app's login item settings.

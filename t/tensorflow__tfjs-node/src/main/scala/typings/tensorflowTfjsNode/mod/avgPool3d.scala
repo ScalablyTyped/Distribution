@@ -18,31 +18,12 @@ object avgPool3d extends js.Object {
     x: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
     strides: (js.Tuple3[Double, Double, Double]) | Double,
-    pad: valid | same | Double
-  ): T = js.native
-  def apply[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filterSize: (js.Tuple3[Double, Double, Double]) | Double,
-    strides: (js.Tuple3[Double, Double, Double]) | Double,
     pad: valid | same | Double,
-    dimRoundingMode: typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil
-  ): T = js.native
-  def apply[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filterSize: (js.Tuple3[Double, Double, Double]) | Double,
-    strides: (js.Tuple3[Double, Double, Double]) | Double,
-    pad: valid | same | Double,
-    dimRoundingMode: typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil,
-    dataFormat: NDHWC | NCDHW
-  ): T = js.native
-  def apply[T /* <: Tensor4D | Tensor5D */](
-    x: T | TensorLike,
-    filterSize: (js.Tuple3[Double, Double, Double]) | Double,
-    strides: (js.Tuple3[Double, Double, Double]) | Double,
-    pad: valid | same | Double,
-    dimRoundingMode: typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil,
-    dataFormat: NDHWC | NCDHW,
-    dilations: (js.Tuple3[Double, Double, Double]) | Double
+    dimRoundingMode: js.UndefOr[
+      typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil
+    ],
+    dataFormat: js.UndefOr[NDHWC | NCDHW],
+    dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
   ): T = js.native
 }
 

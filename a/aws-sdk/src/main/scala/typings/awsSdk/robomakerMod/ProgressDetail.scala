@@ -26,18 +26,38 @@ trait ProgressDetail extends js.Object {
 
 object ProgressDetail {
   @scala.inline
-  def apply(
-    currentProgress: RobotDeploymentStep = null,
-    estimatedTimeRemainingSeconds: js.UndefOr[GenericInteger] = js.undefined,
-    percentDone: js.UndefOr[PercentDone] = js.undefined,
-    targetResource: GenericString = null
-  ): ProgressDetail = {
+  def apply(): ProgressDetail = {
     val __obj = js.Dynamic.literal()
-    if (currentProgress != null) __obj.updateDynamic("currentProgress")(currentProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(estimatedTimeRemainingSeconds)) __obj.updateDynamic("estimatedTimeRemainingSeconds")(estimatedTimeRemainingSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentDone)) __obj.updateDynamic("percentDone")(percentDone.get.asInstanceOf[js.Any])
-    if (targetResource != null) __obj.updateDynamic("targetResource")(targetResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressDetail]
   }
+  @scala.inline
+  implicit class ProgressDetailOps[Self <: ProgressDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentProgress(value: RobotDeploymentStep): Self = this.set("currentProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentProgress: Self = this.set("currentProgress", js.undefined)
+    @scala.inline
+    def setEstimatedTimeRemainingSeconds(value: GenericInteger): Self = this.set("estimatedTimeRemainingSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedTimeRemainingSeconds: Self = this.set("estimatedTimeRemainingSeconds", js.undefined)
+    @scala.inline
+    def setPercentDone(value: PercentDone): Self = this.set("percentDone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentDone: Self = this.set("percentDone", js.undefined)
+    @scala.inline
+    def setTargetResource(value: GenericString): Self = this.set("targetResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetResource: Self = this.set("targetResource", js.undefined)
+  }
+  
 }
 

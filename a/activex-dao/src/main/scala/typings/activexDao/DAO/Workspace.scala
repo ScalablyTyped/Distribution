@@ -42,10 +42,15 @@ trait Workspace extends js.Object {
   def CreateDatabase(Name: String, Connect: String): Database = js.native
   def CreateDatabase(Name: String, Connect: String, Option: DatabaseTypeEnum): Database = js.native
   def CreateGroup(): Group = js.native
+  def CreateGroup(Name: js.UndefOr[scala.Nothing], PID: String): Group = js.native
   def CreateGroup(Name: String): Group = js.native
   def CreateGroup(Name: String, PID: String): Group = js.native
   def CreateUser(): User = js.native
+  def CreateUser(Name: js.UndefOr[scala.Nothing], PID: js.UndefOr[scala.Nothing], Password: String): User = js.native
+  def CreateUser(Name: js.UndefOr[scala.Nothing], PID: String): User = js.native
+  def CreateUser(Name: js.UndefOr[scala.Nothing], PID: String, Password: String): User = js.native
   def CreateUser(Name: String): User = js.native
+  def CreateUser(Name: String, PID: js.UndefOr[scala.Nothing], Password: String): User = js.native
   def CreateUser(Name: String, PID: String): User = js.native
   def CreateUser(Name: String, PID: String, Password: String): User = js.native
   def Databases(Item: String): Database = js.native
@@ -56,17 +61,37 @@ trait Workspace extends js.Object {
     * @param Connect ODBC connection string; prepend with `ODBC;`
     */
   def OpenConnection(Name: String): Connection = js.native
+  def OpenConnection(
+    Name: String,
+    Options: js.UndefOr[scala.Nothing],
+    ReadOnly: js.UndefOr[scala.Nothing],
+    Connect: String
+  ): Connection = js.native
+  def OpenConnection(Name: String, Options: js.UndefOr[scala.Nothing], ReadOnly: Boolean): Connection = js.native
+  def OpenConnection(Name: String, Options: js.UndefOr[scala.Nothing], ReadOnly: Boolean, Connect: String): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum): Connection = js.native
+  def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: js.UndefOr[scala.Nothing], Connect: String): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Boolean): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Boolean, Connect: String): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`): Connection = js.native
   @JSName("OpenConnection")
+  def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: js.UndefOr[scala.Nothing], Connect: String): Connection = js.native
+  @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Boolean): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Boolean, Connect: String): Connection = js.native
   def OpenDatabase(Name: String): Database = js.native
+  def OpenDatabase(
+    Name: String,
+    Exclusive: js.UndefOr[scala.Nothing],
+    ReadOnly: js.UndefOr[scala.Nothing],
+    Connect: String
+  ): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: js.UndefOr[scala.Nothing], ReadOnly: Boolean): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: js.UndefOr[scala.Nothing], ReadOnly: Boolean, Connect: String): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: js.UndefOr[scala.Nothing], Connect: String): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Boolean): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Boolean, Connect: String): Database = js.native
   def Properties(Item: String): Property = js.native

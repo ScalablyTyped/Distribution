@@ -4,21 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetStreamOptions extends js.Object {
    // image process params, will send with x-oss-process e.g.: {process: 'image/resize,w_200'}
-  var headers: js.UndefOr[js.Object] = js.undefined
-  var process: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var headers: js.UndefOr[js.Object] = js.native
+  var process: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object GetStreamOptions {
   @scala.inline
-  def apply(headers: js.Object = null, process: String = null, timeout: js.UndefOr[Double] = js.undefined): GetStreamOptions = {
+  def apply(): GetStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStreamOptions]
   }
+  @scala.inline
+  implicit class GetStreamOptionsOps[Self <: GetStreamOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setProcess(value: String): Self = this.set("process", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcess: Self = this.set("process", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

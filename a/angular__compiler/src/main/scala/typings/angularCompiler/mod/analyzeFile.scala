@@ -1,7 +1,7 @@
 package typings.angularCompiler.mod
 
-import typings.angularCompiler.compilerMod.NgAnalyzeModulesHost
-import typings.angularCompiler.compilerMod.NgAnalyzedFile
+import typings.angularCompiler.aotCompilerMod.NgAnalyzeModulesHost
+import typings.angularCompiler.aotCompilerMod.NgAnalyzedFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -469,6 +469,7 @@ trait win extends EventEmitter {
     * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
     */
   def showDevTools(): Unit = js.native
+  def showDevTools(iframe: js.UndefOr[scala.Nothing], callback: js.Function1[/* dev_win */ js.UndefOr[Window], Unit]): Unit = js.native
   def showDevTools(iframe: String): Unit = js.native
   def showDevTools(iframe: String, callback: js.Function1[/* dev_win */ js.UndefOr[Window], Unit]): Unit = js.native
   def showDevTools(iframe: HTMLIFrameElement): Unit = js.native

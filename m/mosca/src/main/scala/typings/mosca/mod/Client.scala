@@ -17,6 +17,7 @@ class Client protected () extends js.Object {
   var server: Server = js.native
   var subscriptions: js.Any = js.native
   def close(): Unit = js.native
+  def close(callback: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native
   def close(callback: js.Function0[Unit], reason: String): Unit = js.native
 }

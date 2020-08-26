@@ -12,7 +12,7 @@ Renamed to rehype
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 28966 |
+| # downloads        | 32498 |
 | # stars            | 0 |
 
 ## Links

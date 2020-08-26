@@ -36,6 +36,7 @@ class ResourceServicesConnections protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceServicesConnectionsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceServicesConnectionsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -65,6 +66,7 @@ class ResourceServicesConnections protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListConnectionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListConnectionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListConnectionsResponse] = js.native
   def list(params: ParamsResourceServicesConnectionsList): GaxiosPromise[SchemaListConnectionsResponse] = js.native
   def list(
     params: ParamsResourceServicesConnectionsList,

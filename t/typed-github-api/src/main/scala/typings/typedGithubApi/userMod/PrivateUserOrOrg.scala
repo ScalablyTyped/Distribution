@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PrivateUserOrOrg extends UserOrOrg {
-  var collaborators: Double
-  var disk_usage: Double
-  var owned_private_repos: Double
-  var plan: Collaborators
-  var private_gists: Double
-  var total_private_repos: Double
+  var collaborators: Double = js.native
+  var disk_usage: Double = js.native
+  var owned_private_repos: Double = js.native
+  var plan: Collaborators = js.native
+  var private_gists: Double = js.native
+  var total_private_repos: Double = js.native
 }
 
 object PrivateUserOrOrg {
@@ -47,5 +48,30 @@ object PrivateUserOrOrg {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateUserOrOrg]
   }
+  @scala.inline
+  implicit class PrivateUserOrOrgOps[Self <: PrivateUserOrOrg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollaborators(value: Double): Self = this.set("collaborators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisk_usage(value: Double): Self = this.set("disk_usage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwned_private_repos(value: Double): Self = this.set("owned_private_repos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlan(value: Collaborators): Self = this.set("plan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivate_gists(value: Double): Self = this.set("private_gists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotal_private_repos(value: Double): Self = this.set("total_private_repos", value.asInstanceOf[js.Any])
+  }
+  
 }
 

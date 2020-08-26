@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   * classes which implement this interface are:- sap.m.IconTabFilter- sap.m.IconTabSeparator
   * @resource sap/m/library.js
   */
+@js.native
 trait IconTab extends js.Object
 

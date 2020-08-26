@@ -229,7 +229,11 @@ object EventObject extends js.Object {
     * @returns HTMLElement
     */
   def getRelatedTarget(): HTMLElement = js.native
+  def getRelatedTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
+  def getRelatedTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any): HTMLElement = js.native
+  def getRelatedTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
   def getRelatedTarget(selector: java.lang.String): HTMLElement = js.native
+  def getRelatedTarget(selector: java.lang.String, maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
   def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = js.native
   def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
   /** [Method] Gets the target for the event
@@ -239,7 +243,11 @@ object EventObject extends js.Object {
     * @returns HTMLElement
     */
   def getTarget(): HTMLElement = js.native
+  def getTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
+  def getTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any): HTMLElement = js.native
+  def getTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
   def getTarget(selector: java.lang.String): HTMLElement = js.native
+  def getTarget(selector: java.lang.String, maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
   def getTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = js.native
   def getTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
   /** [Method] Normalizes mouse wheel y delta across browsers
@@ -292,7 +300,11 @@ object EventObject extends js.Object {
     * @returns Boolean
     */
   def within(): Boolean = js.native
+  def within(el: js.UndefOr[scala.Nothing], related: js.UndefOr[scala.Nothing], allowEl: Boolean): Boolean = js.native
+  def within(el: js.UndefOr[scala.Nothing], related: Boolean): Boolean = js.native
+  def within(el: js.UndefOr[scala.Nothing], related: Boolean, allowEl: Boolean): Boolean = js.native
   def within(el: js.Any): Boolean = js.native
+  def within(el: js.Any, related: js.UndefOr[scala.Nothing], allowEl: Boolean): Boolean = js.native
   def within(el: js.Any, related: Boolean): Boolean = js.native
   def within(el: js.Any, related: Boolean, allowEl: Boolean): Boolean = js.native
 }

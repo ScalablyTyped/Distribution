@@ -30,18 +30,14 @@ class CorsConfiguration protected () extends Element {
   @JSName("model")
   var model_FCorsConfiguration: IModel = js.native
   def allowAuthentication: Boolean = js.native
-  def allowAuthentication(newValue: Boolean): js.Any = js.native
-  def allowedOrigins(): js.Any = js.native
-  def allowedOrigins(newValue: IConstant): js.Any = js.native
+  def allowAuthentication_=(newValue: Boolean): Unit = js.native
+  def allowedOrigins: IConstant | Null = js.native
   def allowedOriginsQualifiedName: String | Null = js.native
-  @JSName("allowedOrigins")
-  def allowedOrigins_Union: IConstant | Null = js.native
+  def allowedOrigins_=(newValue: IConstant | Null): Unit = js.native
   def containerAsPublishedRestService: PublishedRestService = js.native
-  def maxAge(): js.Any = js.native
-  def maxAge(newValue: IConstant): js.Any = js.native
+  def maxAge: IConstant | Null = js.native
   def maxAgeQualifiedName: String | Null = js.native
-  @JSName("maxAge")
-  def maxAge_Union: IConstant | Null = js.native
+  def maxAge_=(newValue: IConstant | Null): Unit = js.native
 }
 
 /* static members */

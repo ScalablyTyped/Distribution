@@ -109,6 +109,11 @@ class Worker_ () extends EventEmitter {
   @JSName("prependOnceListener")
   def prependOnceListener_online(event: online, listener: js.Function0[Unit]): this.type = js.native
   def send(message: Serializable): Boolean = js.native
+  def send(
+    message: Serializable,
+    sendHandle: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ Error | Null, Unit]
+  ): Boolean = js.native
   def send(message: Serializable, sendHandle: SendHandle): Boolean = js.native
   def send(
     message: Serializable,

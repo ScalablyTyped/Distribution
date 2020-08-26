@@ -14,7 +14,7 @@ trait MixedSchema[T /* <: js.Any */] extends Schema[T] {
   def concat[U](schema: Schema[U]): MixedSchema[T | U] = js.native
   def defined(): MixedSchema[Exclude[T, js.UndefOr[scala.Nothing]]] = js.native
   def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): MixedSchema[MaintainOptionality[T, U]] = js.native
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): MixedSchema[MaintainOptionality[T, U]] = js.native
+  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): MixedSchema[MaintainOptionality[T, U]] = js.native
   def notRequired(): MixedSchema[js.UndefOr[T]] = js.native
   def nullable(): MixedSchema[T | Null] = js.native
   def nullable(isNullable: Boolean): MixedSchema[T] = js.native
@@ -23,7 +23,7 @@ trait MixedSchema[T /* <: js.Any */] extends Schema[T] {
   @JSName("nullable")
   def nullable_true(isNullable: `true`): MixedSchema[T | Null] = js.native
   def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): MixedSchema[MaintainOptionality[T, U]] = js.native
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: TestOptionsMessage[Values, _]): MixedSchema[MaintainOptionality[T, U]] = js.native
+  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, _]]): MixedSchema[MaintainOptionality[T, U]] = js.native
   def optional(): MixedSchema[js.UndefOr[T]] = js.native
   def required(): MixedSchema[Exclude[T, js.UndefOr[Null]]] = js.native
   def required(message: TestOptionsMessage[js.Object, _]): MixedSchema[Exclude[T, js.UndefOr[Null]]] = js.native

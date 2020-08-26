@@ -22,14 +22,30 @@ trait RenewDomainRequest extends js.Object {
 
 object RenewDomainRequest {
   @scala.inline
-  def apply(
-    CurrentExpiryYear: CurrentExpiryYear,
-    DomainName: DomainName,
-    DurationInYears: js.UndefOr[DurationInYears] = js.undefined
-  ): RenewDomainRequest = {
+  def apply(CurrentExpiryYear: CurrentExpiryYear, DomainName: DomainName): RenewDomainRequest = {
     val __obj = js.Dynamic.literal(CurrentExpiryYear = CurrentExpiryYear.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DurationInYears)) __obj.updateDynamic("DurationInYears")(DurationInYears.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewDomainRequest]
   }
+  @scala.inline
+  implicit class RenewDomainRequestOps[Self <: RenewDomainRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentExpiryYear(value: CurrentExpiryYear): Self = this.set("CurrentExpiryYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDurationInYears(value: DurationInYears): Self = this.set("DurationInYears", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationInYears: Self = this.set("DurationInYears", js.undefined)
+  }
+  
 }
 

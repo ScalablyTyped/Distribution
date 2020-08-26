@@ -41,44 +41,36 @@ abstract class MappingDocument protected () extends Document {
   var model_FMappingDocument: IModel = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MMappingDocument: FolderBase = js.native
-  def importedWebService(): js.Any = js.native
-  def importedWebService(newValue: IImportedWebService): js.Any = js.native
+  def importedWebService: IImportedWebService | Null = js.native
   def importedWebServiceQualifiedName: String | Null = js.native
-  @JSName("importedWebService")
-  def importedWebService_Union: IImportedWebService | Null = js.native
-  def jsonStructure(): js.Any = js.native
-  def jsonStructure(newValue: IJsonStructure): js.Any = js.native
-  def jsonStructureQualifiedName: String | Null = js.native
+  def importedWebService_=(newValue: IImportedWebService | Null): Unit = js.native
   /**
     * In version 6.4.0: introduced
     */
-  @JSName("jsonStructure")
-  def jsonStructure_Union: IJsonStructure | Null = js.native
-  def messageDefinition(): js.Any = js.native
-  def messageDefinition(newValue: IMessageDefinition): js.Any = js.native
-  def messageDefinitionQualifiedName: String | Null = js.native
+  def jsonStructure: IJsonStructure | Null = js.native
+  def jsonStructureQualifiedName: String | Null = js.native
+  def jsonStructure_=(newValue: IJsonStructure | Null): Unit = js.native
   /**
     * In version 7.6.0: introduced
     */
-  @JSName("messageDefinition")
-  def messageDefinition_Union: IMessageDefinition | Null = js.native
+  def messageDefinition: IMessageDefinition | Null = js.native
+  def messageDefinitionQualifiedName: String | Null = js.native
+  def messageDefinition_=(newValue: IMessageDefinition | Null): Unit = js.native
   def operationName: String = js.native
-  def operationName(newValue: String): js.Any = js.native
+  def operationName_=(newValue: String): Unit = js.native
   /**
     * In version 7.14.0: introduced
     */
   def publicName: String = js.native
-  def publicName(newValue: String): js.Any = js.native
+  def publicName_=(newValue: String): Unit = js.native
   def rootElementName: String = js.native
-  def rootElementName(newValue: String): js.Any = js.native
+  def rootElementName_=(newValue: String): Unit = js.native
   def rootMappingElements: IList[ObjectMappingElement] = js.native
   def serviceName: String = js.native
-  def serviceName(newValue: String): js.Any = js.native
-  def xmlSchema(): js.Any = js.native
-  def xmlSchema(newValue: IXmlSchema): js.Any = js.native
+  def serviceName_=(newValue: String): Unit = js.native
+  def xmlSchema: IXmlSchema | Null = js.native
   def xmlSchemaQualifiedName: String | Null = js.native
-  @JSName("xmlSchema")
-  def xmlSchema_Union: IXmlSchema | Null = js.native
+  def xmlSchema_=(newValue: IXmlSchema | Null): Unit = js.native
 }
 
 /* static members */

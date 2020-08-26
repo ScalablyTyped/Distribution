@@ -54,30 +54,62 @@ trait AccountPasswordPolicyState extends js.Object {
 
 object AccountPasswordPolicyState {
   @scala.inline
-  def apply(
-    allowUsersToChangePassword: Input[Boolean] = null,
-    expirePasswords: Input[Boolean] = null,
-    hardExpiry: Input[Boolean] = null,
-    maxPasswordAge: Input[Double] = null,
-    minimumPasswordLength: Input[Double] = null,
-    passwordReusePrevention: Input[Double] = null,
-    requireLowercaseCharacters: Input[Boolean] = null,
-    requireNumbers: Input[Boolean] = null,
-    requireSymbols: Input[Boolean] = null,
-    requireUppercaseCharacters: Input[Boolean] = null
-  ): AccountPasswordPolicyState = {
+  def apply(): AccountPasswordPolicyState = {
     val __obj = js.Dynamic.literal()
-    if (allowUsersToChangePassword != null) __obj.updateDynamic("allowUsersToChangePassword")(allowUsersToChangePassword.asInstanceOf[js.Any])
-    if (expirePasswords != null) __obj.updateDynamic("expirePasswords")(expirePasswords.asInstanceOf[js.Any])
-    if (hardExpiry != null) __obj.updateDynamic("hardExpiry")(hardExpiry.asInstanceOf[js.Any])
-    if (maxPasswordAge != null) __obj.updateDynamic("maxPasswordAge")(maxPasswordAge.asInstanceOf[js.Any])
-    if (minimumPasswordLength != null) __obj.updateDynamic("minimumPasswordLength")(minimumPasswordLength.asInstanceOf[js.Any])
-    if (passwordReusePrevention != null) __obj.updateDynamic("passwordReusePrevention")(passwordReusePrevention.asInstanceOf[js.Any])
-    if (requireLowercaseCharacters != null) __obj.updateDynamic("requireLowercaseCharacters")(requireLowercaseCharacters.asInstanceOf[js.Any])
-    if (requireNumbers != null) __obj.updateDynamic("requireNumbers")(requireNumbers.asInstanceOf[js.Any])
-    if (requireSymbols != null) __obj.updateDynamic("requireSymbols")(requireSymbols.asInstanceOf[js.Any])
-    if (requireUppercaseCharacters != null) __obj.updateDynamic("requireUppercaseCharacters")(requireUppercaseCharacters.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountPasswordPolicyState]
   }
+  @scala.inline
+  implicit class AccountPasswordPolicyStateOps[Self <: AccountPasswordPolicyState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowUsersToChangePassword(value: Input[Boolean]): Self = this.set("allowUsersToChangePassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUsersToChangePassword: Self = this.set("allowUsersToChangePassword", js.undefined)
+    @scala.inline
+    def setExpirePasswords(value: Input[Boolean]): Self = this.set("expirePasswords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirePasswords: Self = this.set("expirePasswords", js.undefined)
+    @scala.inline
+    def setHardExpiry(value: Input[Boolean]): Self = this.set("hardExpiry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHardExpiry: Self = this.set("hardExpiry", js.undefined)
+    @scala.inline
+    def setMaxPasswordAge(value: Input[Double]): Self = this.set("maxPasswordAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPasswordAge: Self = this.set("maxPasswordAge", js.undefined)
+    @scala.inline
+    def setMinimumPasswordLength(value: Input[Double]): Self = this.set("minimumPasswordLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumPasswordLength: Self = this.set("minimumPasswordLength", js.undefined)
+    @scala.inline
+    def setPasswordReusePrevention(value: Input[Double]): Self = this.set("passwordReusePrevention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordReusePrevention: Self = this.set("passwordReusePrevention", js.undefined)
+    @scala.inline
+    def setRequireLowercaseCharacters(value: Input[Boolean]): Self = this.set("requireLowercaseCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireLowercaseCharacters: Self = this.set("requireLowercaseCharacters", js.undefined)
+    @scala.inline
+    def setRequireNumbers(value: Input[Boolean]): Self = this.set("requireNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireNumbers: Self = this.set("requireNumbers", js.undefined)
+    @scala.inline
+    def setRequireSymbols(value: Input[Boolean]): Self = this.set("requireSymbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireSymbols: Self = this.set("requireSymbols", js.undefined)
+    @scala.inline
+    def setRequireUppercaseCharacters(value: Input[Boolean]): Self = this.set("requireUppercaseCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireUppercaseCharacters: Self = this.set("requireUppercaseCharacters", js.undefined)
+  }
+  
 }
 

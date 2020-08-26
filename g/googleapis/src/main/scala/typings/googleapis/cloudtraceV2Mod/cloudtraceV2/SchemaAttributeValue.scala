@@ -25,16 +25,34 @@ trait SchemaAttributeValue extends js.Object {
 
 object SchemaAttributeValue {
   @scala.inline
-  def apply(
-    boolValue: js.UndefOr[Boolean] = js.undefined,
-    intValue: String = null,
-    stringValue: SchemaTruncatableString = null
-  ): SchemaAttributeValue = {
+  def apply(): SchemaAttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue.get.asInstanceOf[js.Any])
-    if (intValue != null) __obj.updateDynamic("intValue")(intValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributeValue]
   }
+  @scala.inline
+  implicit class SchemaAttributeValueOps[Self <: SchemaAttributeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoolValue(value: Boolean): Self = this.set("boolValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoolValue: Self = this.set("boolValue", js.undefined)
+    @scala.inline
+    def setIntValue(value: String): Self = this.set("intValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntValue: Self = this.set("intValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: SchemaTruncatableString): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

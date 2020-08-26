@@ -12,7 +12,26 @@ class ButNotSymbol protected ()
   extends Node[typings.grammarkdown.tokensMod.SyntaxKind.ButNotSymbol] {
   def this(left: LexicalSymbol) = this()
   def this(left: LexicalSymbol, butKeyword: Token[ButKeyword]) = this()
+  def this(left: LexicalSymbol, butKeyword: js.UndefOr[scala.Nothing], notKeyword: Token[NotKeyword]) = this()
   def this(left: LexicalSymbol, butKeyword: Token[ButKeyword], notKeyword: Token[NotKeyword]) = this()
+  def this(
+    left: LexicalSymbol,
+    butKeyword: js.UndefOr[scala.Nothing],
+    notKeyword: js.UndefOr[scala.Nothing],
+    right: LexicalSymbol
+  ) = this()
+  def this(
+    left: LexicalSymbol,
+    butKeyword: js.UndefOr[scala.Nothing],
+    notKeyword: Token[NotKeyword],
+    right: LexicalSymbol
+  ) = this()
+  def this(
+    left: LexicalSymbol,
+    butKeyword: Token[ButKeyword],
+    notKeyword: js.UndefOr[scala.Nothing],
+    right: LexicalSymbol
+  ) = this()
   def this(
     left: LexicalSymbol,
     butKeyword: Token[ButKeyword],

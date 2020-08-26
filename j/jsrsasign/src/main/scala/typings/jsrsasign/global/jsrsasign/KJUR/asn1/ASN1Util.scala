@@ -1,7 +1,5 @@
 package typings.jsrsasign.global.jsrsasign.KJUR.asn1
 
-import typings.jsrsasign.jsrsasign.BigInteger
-import typings.jsrsasign.jsrsasign.KJUR.asn1.ASNObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,72 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("jsrsasign.KJUR.asn1.ASN1Util")
 @js.native
 class ASN1Util ()
-  extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Util {
-  /* CompleteClass */
-  override def bigIntToMinTwosComplementsHex(bigIntegerValue: BigInteger): String = js.native
-  /* CompleteClass */
-  override def integerToByteHex(i: Double): String = js.native
-  /**
-    * get encoded hexadecimal string of ASN1Object specifed by JSON parameters
-    *
-    * @param param JSON parameter to generate ASN1Object
-    * @return hexadecimal string of ASN1Object
-    * @description
-    * As for ASN.1 object representation of JSON object,
-    * please see `newObject`.
-    * @example
-    * jsonToASN1HEX({'prnstr': 'aaa'});
-    */
-  /* CompleteClass */
-  override def jsonToASN1HEX(param: ASNObject): String = js.native
-  /**
-    * generate ASN1Object specifed by JSON parameters
-    * @param param JSON parameter to generate ASN1Object
-    * @description
-    * generate any ASN1Object specified by JSON param
-    * including ASN.1 primitive or structured.
-    * Generally 'param' can be described as follows:
-    * ```
-    * {TYPE-OF-ASNOBJ: ASN1OBJ-PARAMETER}
-    * ```
-    * 'TYPE-OF-ASN1OBJ' can be one of following symbols:
-    *
-    * - 'bool' - DERBoolean
-    * - 'int' - DERInteger
-    * - 'bitstr' - DERBitString
-    * - 'octstr' - DEROctetString
-    * - 'null' - DERNull
-    * - 'oid' - DERObjectIdentifier
-    * - 'enum' - DEREnumerated
-    * - 'utf8str' - DERUTF8String
-    * - 'numstr' - DERNumericString
-    * - 'prnstr' - DERPrintableString
-    * - 'telstr' - DERTeletexString
-    * - 'ia5str' - DERIA5String
-    * - 'utctime' - DERUTCTime
-    * - 'gentime' - DERGeneralizedTime
-    * - 'seq' - DERSequence
-    * - 'set' - DERSet
-    * - 'tag' - DERTaggedObject
-    *
-    * @example
-    * newObject({'prnstr': 'aaa'});
-    * newObject({'seq': [{'int': 3}, {'prnstr': 'aaa'}]})
-    * // ASN.1 Tagged Object
-    * newObject({'tag': {'tag': 'a1',
-    *                    'explicit': true,
-    *                    'obj': {'seq': [{'int': 3}, {'prnstr': 'aaa'}]}}});
-    * // more simple representation of ASN.1 Tagged Object
-    * newObject({'tag': ['a1',
-    *                    true,
-    *                    {'seq': [
-    *                      {'int': 3},
-    *                      {'prnstr': 'aaa'}]}
-    *                   ]});
-    */
-  /* CompleteClass */
-  override def newObject(param: ASNObject): typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object = js.native
-}
+  extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Util
 
 /* static members */
 @JSGlobal("jsrsasign.KJUR.asn1.ASN1Util")

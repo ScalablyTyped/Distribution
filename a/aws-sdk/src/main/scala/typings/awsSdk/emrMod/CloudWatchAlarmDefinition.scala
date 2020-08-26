@@ -50,20 +50,53 @@ object CloudWatchAlarmDefinition {
     ComparisonOperator: ComparisonOperator,
     MetricName: String,
     Period: Integer,
-    Threshold: NonNegativeDouble,
-    Dimensions: MetricDimensionList = null,
-    EvaluationPeriods: js.UndefOr[Integer] = js.undefined,
-    Namespace: String = null,
-    Statistic: Statistic = null,
-    Unit: Unit = null
+    Threshold: NonNegativeDouble
   ): CloudWatchAlarmDefinition = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], MetricName = MetricName.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], Threshold = Threshold.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(EvaluationPeriods)) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.get.asInstanceOf[js.Any])
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
-    if (Statistic != null) __obj.updateDynamic("Statistic")(Statistic.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchAlarmDefinition]
   }
+  @scala.inline
+  implicit class CloudWatchAlarmDefinitionOps[Self <: CloudWatchAlarmDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperator): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricName(value: String): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPeriod(value: Integer): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThreshold(value: NonNegativeDouble): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensionsVarargs(value: MetricDimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: MetricDimensionList): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setEvaluationPeriods(value: Integer): Self = this.set("EvaluationPeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationPeriods: Self = this.set("EvaluationPeriods", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    @scala.inline
+    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistic: Self = this.set("Statistic", js.undefined)
+    @scala.inline
+    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

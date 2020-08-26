@@ -27,18 +27,38 @@ trait ParamValidation extends js.Object {
 
 object ParamValidation {
   @scala.inline
-  def apply(
-    enum: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Boolean] = js.undefined,
-    min: js.UndefOr[Boolean] = js.undefined,
-    pattern: js.UndefOr[Boolean] = js.undefined
-  ): ParamValidation = {
+  def apply(): ParamValidation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enum)) __obj.updateDynamic("enum")(enum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamValidation]
   }
+  @scala.inline
+  implicit class ParamValidationOps[Self <: ParamValidation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnum(value: Boolean): Self = this.set("enum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnum: Self = this.set("enum", js.undefined)
+    @scala.inline
+    def setMax(value: Boolean): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Boolean): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setPattern(value: Boolean): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+  }
+  
 }
 

@@ -31,6 +31,7 @@ trait ShellFolderView extends js.Object {
   def FilterView(bstrFilterText: String): Unit = js.native
   /** Show items menu and return command selected */
   def PopupItemMenu(pfi: ShellFolderItem): String = js.native
+  def PopupItemMenu(pfi: ShellFolderItem, vx: js.UndefOr[scala.Nothing], vy: js.Any): String = js.native
   def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any): String = js.native
   def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any, vy: js.Any): String = js.native
   /** Select the item */

@@ -3,58 +3,101 @@ package typings.reactChartjs2.mod
 import typings.chartJs.mod.ChartLegendOptions
 import typings.chartJs.mod.ChartOptions
 import typings.chartJs.mod.ChartType
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartComponentProps extends js.Object {
-  var data: ChartData[typings.chartJs.mod.ChartData]
-  var datasetKeyProvider: js.UndefOr[js.Function1[/* any */ js.Any, _]] = js.undefined
-  var getDatasetAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
-  var getElementAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
-  var getElementsAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var legend: js.UndefOr[ChartLegendOptions] = js.undefined
-  var onElementsClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+  var data: ChartData[typings.chartJs.mod.ChartData] = js.native
+  var datasetKeyProvider: js.UndefOr[js.Function1[/* any */ js.Any, _]] = js.native
+  var getDatasetAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+  var getElementAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+  var getElementsAtEvent: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var legend: js.UndefOr[ChartLegendOptions] = js.native
+  var onElementsClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
    // alias for getElementsAtEvent (backward compatibility)
-  var options: js.UndefOr[ChartOptions] = js.undefined
-  var plugins: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var redraw: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[ChartType] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var options: js.UndefOr[ChartOptions] = js.native
+  var plugins: js.UndefOr[js.Array[js.Object]] = js.native
+  var redraw: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[ChartType] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ChartComponentProps {
   @scala.inline
-  def apply(
-    data: ChartData[typings.chartJs.mod.ChartData],
-    datasetKeyProvider: /* any */ js.Any => _ = null,
-    getDatasetAtEvent: /* e */ js.Any => Unit = null,
-    getElementAtEvent: /* e */ js.Any => Unit = null,
-    getElementsAtEvent: /* e */ js.Any => Unit = null,
-    height: js.UndefOr[Double] = js.undefined,
-    legend: ChartLegendOptions = null,
-    onElementsClick: /* e */ js.Any => Unit = null,
-    options: ChartOptions = null,
-    plugins: js.Array[js.Object] = null,
-    redraw: js.UndefOr[Boolean] = js.undefined,
-    `type`: ChartType = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ChartComponentProps = {
+  def apply(data: ChartData[typings.chartJs.mod.ChartData]): ChartComponentProps = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (datasetKeyProvider != null) __obj.updateDynamic("datasetKeyProvider")(js.Any.fromFunction1(datasetKeyProvider))
-    if (getDatasetAtEvent != null) __obj.updateDynamic("getDatasetAtEvent")(js.Any.fromFunction1(getDatasetAtEvent))
-    if (getElementAtEvent != null) __obj.updateDynamic("getElementAtEvent")(js.Any.fromFunction1(getElementAtEvent))
-    if (getElementsAtEvent != null) __obj.updateDynamic("getElementsAtEvent")(js.Any.fromFunction1(getElementsAtEvent))
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (onElementsClick != null) __obj.updateDynamic("onElementsClick")(js.Any.fromFunction1(onElementsClick))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(redraw)) __obj.updateDynamic("redraw")(redraw.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartComponentProps]
   }
+  @scala.inline
+  implicit class ChartComponentPropsOps[Self <: ChartComponentProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataFunction1(value: /* element */ HTMLElement => typings.chartJs.mod.ChartData): Self = this.set("data", js.Any.fromFunction1(value))
+    @scala.inline
+    def setData(value: ChartData[typings.chartJs.mod.ChartData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatasetKeyProvider(value: /* any */ js.Any => _): Self = this.set("datasetKeyProvider", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDatasetKeyProvider: Self = this.set("datasetKeyProvider", js.undefined)
+    @scala.inline
+    def setGetDatasetAtEvent(value: /* e */ js.Any => Unit): Self = this.set("getDatasetAtEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetDatasetAtEvent: Self = this.set("getDatasetAtEvent", js.undefined)
+    @scala.inline
+    def setGetElementAtEvent(value: /* e */ js.Any => Unit): Self = this.set("getElementAtEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetElementAtEvent: Self = this.set("getElementAtEvent", js.undefined)
+    @scala.inline
+    def setGetElementsAtEvent(value: /* e */ js.Any => Unit): Self = this.set("getElementsAtEvent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetElementsAtEvent: Self = this.set("getElementsAtEvent", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLegend(value: ChartLegendOptions): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegend: Self = this.set("legend", js.undefined)
+    @scala.inline
+    def setOnElementsClick(value: /* e */ js.Any => Unit): Self = this.set("onElementsClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnElementsClick: Self = this.set("onElementsClick", js.undefined)
+    @scala.inline
+    def setOptions(value: ChartOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: js.Object*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[js.Object]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setRedraw(value: Boolean): Self = this.set("redraw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedraw: Self = this.set("redraw", js.undefined)
+    @scala.inline
+    def setType(value: ChartType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

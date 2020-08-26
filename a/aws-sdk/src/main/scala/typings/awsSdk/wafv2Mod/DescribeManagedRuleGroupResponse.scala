@@ -18,11 +18,32 @@ trait DescribeManagedRuleGroupResponse extends js.Object {
 
 object DescribeManagedRuleGroupResponse {
   @scala.inline
-  def apply(Capacity: js.UndefOr[CapacityUnit] = js.undefined, Rules: RuleSummaries = null): DescribeManagedRuleGroupResponse = {
+  def apply(): DescribeManagedRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
-    if (Rules != null) __obj.updateDynamic("Rules")(Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeManagedRuleGroupResponse]
   }
+  @scala.inline
+  implicit class DescribeManagedRuleGroupResponseOps[Self <: DescribeManagedRuleGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacity(value: CapacityUnit): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacity: Self = this.set("Capacity", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: RuleSummary*): Self = this.set("Rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: RuleSummaries): Self = this.set("Rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("Rules", js.undefined)
+  }
+  
 }
 

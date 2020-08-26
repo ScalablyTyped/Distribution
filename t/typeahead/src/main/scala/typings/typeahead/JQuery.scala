@@ -42,6 +42,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_typeaheadactive(events: typeaheadColonactive, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
+  def off_typeaheadactive(
+    events: typeaheadColonactive,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_typeaheadactive(events: typeaheadColonactive, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadactive(
@@ -65,6 +71,12 @@ trait JQuery extends js.Object {
     */
   @JSName("off")
   def off_typeaheadasynccancel(events: typeaheadColonasynccancel, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadasynccancel(
+    events: typeaheadColonasynccancel,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   @JSName("off")
   def off_typeaheadasynccancel(events: typeaheadColonasynccancel, selector: String): JQuery = js.native
   @JSName("off")
@@ -90,6 +102,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
+  def off_typeaheadasyncreceive(
+    events: typeaheadColonasyncreceive,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadasyncreceive(
@@ -113,6 +131,12 @@ trait JQuery extends js.Object {
     */
   @JSName("off")
   def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadasyncrequest(
+    events: typeaheadColonasyncrequest,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   @JSName("off")
   def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest, selector: String): JQuery = js.native
   @JSName("off")
@@ -138,6 +162,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_typeaheadautocomplete(events: typeaheadColonautocomplete, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
+  def off_typeaheadautocomplete(
+    events: typeaheadColonautocomplete,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_typeaheadautocomplete(events: typeaheadColonautocomplete, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadautocomplete(
@@ -161,6 +191,12 @@ trait JQuery extends js.Object {
     */
   @JSName("off")
   def off_typeaheadchange(events: typeaheadColonchange, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadchange(
+    events: typeaheadColonchange,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   @JSName("off")
   def off_typeaheadchange(events: typeaheadColonchange, selector: String): JQuery = js.native
   @JSName("off")
@@ -186,6 +222,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_typeaheadclose(events: typeaheadColonclose, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
+  def off_typeaheadclose(
+    events: typeaheadColonclose,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_typeaheadclose(events: typeaheadColonclose, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadclose(
@@ -209,6 +251,12 @@ trait JQuery extends js.Object {
     */
   @JSName("off")
   def off_typeaheadcursorchange(events: typeaheadColoncursorchange, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadcursorchange(
+    events: typeaheadColoncursorchange,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   @JSName("off")
   def off_typeaheadcursorchange(events: typeaheadColoncursorchange, selector: String): JQuery = js.native
   @JSName("off")
@@ -234,6 +282,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_typeaheadidle(events: typeaheadColonidle, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
+  def off_typeaheadidle(
+    events: typeaheadColonidle,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_typeaheadidle(events: typeaheadColonidle, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadidle(
@@ -257,6 +311,12 @@ trait JQuery extends js.Object {
     */
   @JSName("off")
   def off_typeaheadopen(events: typeaheadColonopen, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadopen(
+    events: typeaheadColonopen,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   @JSName("off")
   def off_typeaheadopen(events: typeaheadColonopen, selector: String): JQuery = js.native
   @JSName("off")
@@ -282,6 +342,12 @@ trait JQuery extends js.Object {
   @JSName("off")
   def off_typeaheadrender(events: typeaheadColonrender, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
   @JSName("off")
+  def off_typeaheadrender(
+    events: typeaheadColonrender,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
+  @JSName("off")
   def off_typeaheadrender(events: typeaheadColonrender, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadrender(
@@ -305,6 +371,12 @@ trait JQuery extends js.Object {
     */
   @JSName("off")
   def off_typeaheadselect(events: typeaheadColonselect, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadselect(
+    events: typeaheadColonselect,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+  ): JQuery = js.native
   @JSName("off")
   def off_typeaheadselect(events: typeaheadColonselect, selector: String): JQuery = js.native
   @JSName("off")

@@ -23,6 +23,10 @@ class SnapshotCopy protected () extends CustomResource {
   def this(name: String, args: SnapshotCopyArgs) = this()
   def this(name: String, args: SnapshotCopyArgs, opts: CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of the EBS Snapshot.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The data encryption key identifier for the snapshot.
     * * `sourceSnapshotId` The ARN of the copied snapshot.
     * * `sourceRegion` The region of the source snapshot.
@@ -38,8 +42,6 @@ class SnapshotCopy protected () extends CustomResource {
   val encrypted: Output_[js.UndefOr[Boolean]] = js.native
   /**
     * The ARN for the KMS encryption key.
-    * * `sourceSnapshotId` The ARN for the snapshot to be copied.
-    * * `sourceRegion` The region of the source snapshot.
     */
   val kmsKeyId: Output_[js.UndefOr[String]] = js.native
   /**
@@ -50,12 +52,18 @@ class SnapshotCopy protected () extends CustomResource {
     * The AWS account ID of the snapshot owner.
     */
   val ownerId: Output_[String] = js.native
+  /**
+    * The region of the source snapshot.
+    */
   val sourceRegion: Output_[String] = js.native
+  /**
+    * The ARN for the snapshot to be copied.
+    */
   val sourceSnapshotId: Output_[String] = js.native
   /**
-    * A mapping of tags for the snapshot.
+    * A map of tags for the snapshot.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   val volumeId: Output_[String] = js.native
   /**
     * The size of the drive in GiBs.
@@ -74,8 +82,10 @@ object SnapshotCopy extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SnapshotCopy = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotCopy = js.native
   def get(name: String, id: Input[ID], state: SnapshotCopyState): SnapshotCopy = js.native
   def get(name: String, id: Input[ID], state: SnapshotCopyState, opts: CustomResourceOptions): SnapshotCopy = js.native
   /**

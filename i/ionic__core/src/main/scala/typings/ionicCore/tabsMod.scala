@@ -29,7 +29,7 @@ object tabsMod extends js.Object {
       * Emitted when the navigation is about to transition to a new component.
       */
     var ionTabsWillChange: EventEmitter[Tab] = js.native
-    var leavingTab: js.UndefOr[js.Any] = js.native
+    var leavingTab: js.Any = js.native
     var notifyRouter: js.Any = js.native
     var onTabClicked: js.Any = js.native
     var selectedTab: js.UndefOr[HTMLIonTabElement] = js.native

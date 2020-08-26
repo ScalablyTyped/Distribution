@@ -34,22 +34,50 @@ trait DatasetSummary extends js.Object {
 
 object DatasetSummary {
   @scala.inline
-  def apply(
-    actions: DatasetActionSummaries = null,
-    creationTime: Timestamp = null,
-    datasetName: DatasetName = null,
-    lastUpdateTime: Timestamp = null,
-    status: DatasetStatus = null,
-    triggers: DatasetTriggers = null
-  ): DatasetSummary = {
+  def apply(): DatasetSummary = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (datasetName != null) __obj.updateDynamic("datasetName")(datasetName.asInstanceOf[js.Any])
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetSummary]
   }
+  @scala.inline
+  implicit class DatasetSummaryOps[Self <: DatasetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: DatasetActionSummary*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: DatasetActionSummaries): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDatasetName(value: DatasetName): Self = this.set("datasetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetName: Self = this.set("datasetName", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setStatus(value: DatasetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTriggersVarargs(value: DatasetTrigger*): Self = this.set("triggers", js.Array(value :_*))
+    @scala.inline
+    def setTriggers(value: DatasetTriggers): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggers: Self = this.set("triggers", js.undefined)
+  }
+  
 }
 

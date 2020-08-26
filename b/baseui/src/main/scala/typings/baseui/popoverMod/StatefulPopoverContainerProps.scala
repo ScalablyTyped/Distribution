@@ -26,7 +26,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined baseui.baseui/popover.StatefulPopoverProps & {children (props : baseui.baseui/popover.PopoverProps & {  children  :never}): react.react.ReactNode} */
+/* Inlined baseui.baseui/popover.StatefulPopoverProps & {children (props : baseui.baseui/popover.PopoverProps & {  children :never}): react.react.ReactNode} */
 @js.native
 trait StatefulPopoverContainerProps extends js.Object {
   var accessibilityType: js.UndefOr[none | menu | tooltip] = js.native

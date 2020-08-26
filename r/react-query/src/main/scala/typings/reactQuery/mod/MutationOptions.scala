@@ -4,29 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MutationOptions[TResult, TVariables] extends MutateOptions[TResult, TVariables] {
-  var onMutate: js.UndefOr[js.Function1[/* variables */ TVariables, js.Promise[_] | _]] = js.undefined
-  var useErrorBoundary: js.UndefOr[Boolean] = js.undefined
+  var onMutate: js.UndefOr[js.Function1[/* variables */ TVariables, js.Promise[_] | _]] = js.native
+  var useErrorBoundary: js.UndefOr[Boolean] = js.native
 }
 
 object MutationOptions {
   @scala.inline
-  def apply[TResult, TVariables](
-    onError: (/* error */ js.Any, TVariables, /* snapshotValue */ js.Any) => js.Promise[Unit] | Unit = null,
-    onMutate: /* variables */ TVariables => js.Promise[_] | _ = null,
-    onSettled: (/* data */ js.UndefOr[TResult], /* error */ js.Any | Null, TVariables, /* snapshotValue */ js.UndefOr[js.Any]) => js.Promise[Unit] | Unit = null,
-    onSuccess: (TResult, TVariables) => js.Promise[Unit] | Unit = null,
-    throwOnError: js.UndefOr[Boolean] = js.undefined,
-    useErrorBoundary: js.UndefOr[Boolean] = js.undefined
-  ): MutationOptions[TResult, TVariables] = {
+  def apply[TResult, TVariables](): MutationOptions[TResult, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction3(onError))
-    if (onMutate != null) __obj.updateDynamic("onMutate")(js.Any.fromFunction1(onMutate))
-    if (onSettled != null) __obj.updateDynamic("onSettled")(js.Any.fromFunction4(onSettled))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction2(onSuccess))
-    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useErrorBoundary)) __obj.updateDynamic("useErrorBoundary")(useErrorBoundary.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationOptions[TResult, TVariables]]
   }
+  @scala.inline
+  implicit class MutationOptionsOps[Self <: MutationOptions[_, _], TResult, TVariables] (val x: Self with (MutationOptions[TResult, TVariables])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnMutate(value: /* variables */ TVariables => js.Promise[_] | _): Self = this.set("onMutate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMutate: Self = this.set("onMutate", js.undefined)
+    @scala.inline
+    def setUseErrorBoundary(value: Boolean): Self = this.set("useErrorBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseErrorBoundary: Self = this.set("useErrorBoundary", js.undefined)
+  }
+  
 }
 

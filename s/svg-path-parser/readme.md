@@ -11,8 +11,8 @@ A parser for SVG's path syntax
 | Full name          | svg-path-parser |
 | Keywords           | svg, path, d, attribute, parser, lines, drawing |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 84327 |
+| # dependents       | 16 |
+| # downloads        | 85821 |
 | # stars            | 2 |
 
 ## Links

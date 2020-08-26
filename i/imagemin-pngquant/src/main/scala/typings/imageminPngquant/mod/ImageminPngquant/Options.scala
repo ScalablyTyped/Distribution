@@ -6,36 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var dithering: js.UndefOr[Double | Boolean] = js.undefined
-  var input: js.UndefOr[Buffer | Stream] = js.undefined
-  var posterize: js.UndefOr[Double] = js.undefined
-  var quality: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
-  var speed: js.UndefOr[Double] = js.undefined
-  var strip: js.UndefOr[Boolean] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var dithering: js.UndefOr[Double | Boolean] = js.native
+  var input: js.UndefOr[Buffer | Stream] = js.native
+  var posterize: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var speed: js.UndefOr[Double] = js.native
+  var strip: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    dithering: Double | Boolean = null,
-    input: Buffer | Stream = null,
-    posterize: js.UndefOr[Double] = js.undefined,
-    quality: js.Tuple2[Double, Double] = null,
-    speed: js.UndefOr[Double] = js.undefined,
-    strip: js.UndefOr[Boolean] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (dithering != null) __obj.updateDynamic("dithering")(dithering.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (!js.isUndefined(posterize)) __obj.updateDynamic("posterize")(posterize.get.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDithering(value: Double | Boolean): Self = this.set("dithering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDithering: Self = this.set("dithering", js.undefined)
+    @scala.inline
+    def setInput(value: Buffer | Stream): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setPosterize(value: Double): Self = this.set("posterize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosterize: Self = this.set("posterize", js.undefined)
+    @scala.inline
+    def setQuality(value: js.Tuple2[Double, Double]): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+    @scala.inline
+    def setStrip(value: Boolean): Self = this.set("strip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrip: Self = this.set("strip", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

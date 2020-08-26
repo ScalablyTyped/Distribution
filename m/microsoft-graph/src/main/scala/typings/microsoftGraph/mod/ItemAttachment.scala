@@ -4,31 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ItemAttachment extends Attachment {
   // The attached message or event. Navigation property.
-  var item: js.UndefOr[OutlookItem] = js.undefined
+  var item: js.UndefOr[OutlookItem] = js.native
 }
 
 object ItemAttachment {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    id: String = null,
-    isInline: js.UndefOr[Boolean] = js.undefined,
-    item: OutlookItem = null,
-    lastModifiedDateTime: String = null,
-    name: String = null,
-    size: js.UndefOr[Double] = js.undefined
-  ): ItemAttachment = {
+  def apply(): ItemAttachment = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInline)) __obj.updateDynamic("isInline")(isInline.get.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemAttachment]
   }
+  @scala.inline
+  implicit class ItemAttachmentOps[Self <: ItemAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItem(value: OutlookItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+  }
+  
 }
 

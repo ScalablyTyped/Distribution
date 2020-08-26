@@ -30,18 +30,40 @@ trait CreateNatGatewayRequest extends js.Object {
 
 object CreateNatGatewayRequest {
   @scala.inline
-  def apply(
-    AllocationId: AllocationId,
-    SubnetId: SubnetId,
-    ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    TagSpecifications: TagSpecificationList = null
-  ): CreateNatGatewayRequest = {
+  def apply(AllocationId: AllocationId, SubnetId: SubnetId): CreateNatGatewayRequest = {
     val __obj = js.Dynamic.literal(AllocationId = AllocationId.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNatGatewayRequest]
   }
+  @scala.inline
+  implicit class CreateNatGatewayRequestOps[Self <: CreateNatGatewayRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: AllocationId): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+  }
+  
 }
 

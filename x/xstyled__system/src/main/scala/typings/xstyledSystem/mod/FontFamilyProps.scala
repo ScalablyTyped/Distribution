@@ -1,20 +1,44 @@
 package typings.xstyledSystem.mod
 
-import typings.csstype.mod.FontFamilyProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FontFamilyProps extends js.Object {
-  val fontFamily: js.UndefOr[ResponsiveValue[FontFamilyProperty | Double]] = js.undefined
+  val fontFamily: js.UndefOr[
+    ResponsiveValue[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FontFamilyProperty */ _) | Double
+    ]
+  ] = js.native
 }
 
 object FontFamilyProps {
   @scala.inline
-  def apply(fontFamily: ResponsiveValue[FontFamilyProperty | Double] = null): FontFamilyProps = {
+  def apply(): FontFamilyProps = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFamilyProps]
   }
+  @scala.inline
+  implicit class FontFamilyPropsOps[Self <: FontFamilyProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontFamily(
+      value: ResponsiveValue[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FontFamilyProperty */ _) | Double
+        ]
+    ): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+  }
+  
 }
 

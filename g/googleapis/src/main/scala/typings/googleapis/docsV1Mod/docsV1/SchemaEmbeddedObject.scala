@@ -61,32 +61,66 @@ trait SchemaEmbeddedObject extends js.Object {
 
 object SchemaEmbeddedObject {
   @scala.inline
-  def apply(
-    description: String = null,
-    embeddedDrawingProperties: SchemaEmbeddedDrawingProperties = null,
-    embeddedObjectBorder: SchemaEmbeddedObjectBorder = null,
-    imageProperties: SchemaImageProperties = null,
-    linkedContentReference: SchemaLinkedContentReference = null,
-    marginBottom: SchemaDimension = null,
-    marginLeft: SchemaDimension = null,
-    marginRight: SchemaDimension = null,
-    marginTop: SchemaDimension = null,
-    size: SchemaSize = null,
-    title: String = null
-  ): SchemaEmbeddedObject = {
+  def apply(): SchemaEmbeddedObject = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (embeddedDrawingProperties != null) __obj.updateDynamic("embeddedDrawingProperties")(embeddedDrawingProperties.asInstanceOf[js.Any])
-    if (embeddedObjectBorder != null) __obj.updateDynamic("embeddedObjectBorder")(embeddedObjectBorder.asInstanceOf[js.Any])
-    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties.asInstanceOf[js.Any])
-    if (linkedContentReference != null) __obj.updateDynamic("linkedContentReference")(linkedContentReference.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEmbeddedObject]
   }
+  @scala.inline
+  implicit class SchemaEmbeddedObjectOps[Self <: SchemaEmbeddedObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEmbeddedDrawingProperties(value: SchemaEmbeddedDrawingProperties): Self = this.set("embeddedDrawingProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddedDrawingProperties: Self = this.set("embeddedDrawingProperties", js.undefined)
+    @scala.inline
+    def setEmbeddedObjectBorder(value: SchemaEmbeddedObjectBorder): Self = this.set("embeddedObjectBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbeddedObjectBorder: Self = this.set("embeddedObjectBorder", js.undefined)
+    @scala.inline
+    def setImageProperties(value: SchemaImageProperties): Self = this.set("imageProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageProperties: Self = this.set("imageProperties", js.undefined)
+    @scala.inline
+    def setLinkedContentReference(value: SchemaLinkedContentReference): Self = this.set("linkedContentReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedContentReference: Self = this.set("linkedContentReference", js.undefined)
+    @scala.inline
+    def setMarginBottom(value: SchemaDimension): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    @scala.inline
+    def setMarginLeft(value: SchemaDimension): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    @scala.inline
+    def setMarginRight(value: SchemaDimension): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    @scala.inline
+    def setMarginTop(value: SchemaDimension): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    @scala.inline
+    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

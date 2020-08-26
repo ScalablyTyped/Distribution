@@ -12,7 +12,23 @@ trait InvalidatedProjectBase extends js.Object {
     *  To dispose this project and ensure that all the necessary actions are taken and state is updated accordingly
     */
   def done(): ExitStatus = js.native
+  def done(
+    cancellationToken: js.UndefOr[scala.Nothing],
+    writeFile: js.UndefOr[scala.Nothing],
+    customTransformers: CustomTransformers
+  ): ExitStatus = js.native
+  def done(cancellationToken: js.UndefOr[scala.Nothing], writeFile: WriteFileCallback): ExitStatus = js.native
+  def done(
+    cancellationToken: js.UndefOr[scala.Nothing],
+    writeFile: WriteFileCallback,
+    customTransformers: CustomTransformers
+  ): ExitStatus = js.native
   def done(cancellationToken: CancellationToken): ExitStatus = js.native
+  def done(
+    cancellationToken: CancellationToken,
+    writeFile: js.UndefOr[scala.Nothing],
+    customTransformers: CustomTransformers
+  ): ExitStatus = js.native
   def done(cancellationToken: CancellationToken, writeFile: WriteFileCallback): ExitStatus = js.native
   def done(
     cancellationToken: CancellationToken,

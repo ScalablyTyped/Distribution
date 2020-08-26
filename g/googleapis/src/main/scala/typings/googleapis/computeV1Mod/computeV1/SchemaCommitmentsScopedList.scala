@@ -20,11 +20,32 @@ trait SchemaCommitmentsScopedList extends js.Object {
 
 object SchemaCommitmentsScopedList {
   @scala.inline
-  def apply(commitments: js.Array[SchemaCommitment] = null, warning: Code = null): SchemaCommitmentsScopedList = {
+  def apply(): SchemaCommitmentsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (commitments != null) __obj.updateDynamic("commitments")(commitments.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommitmentsScopedList]
   }
+  @scala.inline
+  implicit class SchemaCommitmentsScopedListOps[Self <: SchemaCommitmentsScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitmentsVarargs(value: SchemaCommitment*): Self = this.set("commitments", js.Array(value :_*))
+    @scala.inline
+    def setCommitments(value: js.Array[SchemaCommitment]): Self = this.set("commitments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitments: Self = this.set("commitments", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

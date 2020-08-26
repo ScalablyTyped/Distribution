@@ -11,12 +11,12 @@ object rrulesetMod extends js.Object {
   @js.native
   trait RRuleSet
     extends typings.rrule.rruleMod.default {
-    var _dtstart: js.UndefOr[js.Any] = js.native
+    var _dtstart: js.Any = js.native
     val _exdate: js.Array[Date] = js.native
     val _exrule: js.Array[typings.rrule.rruleMod.default] = js.native
     val _rdate: js.Array[Date] = js.native
     val _rrule: js.Array[typings.rrule.rruleMod.default] = js.native
-    var _tzid: js.UndefOr[js.Any] = js.native
+    var _tzid: js.Any = js.native
     var dtstart: js.Any = js.native
     var tzid: js.Any = js.native
     /**

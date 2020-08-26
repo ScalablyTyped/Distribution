@@ -4,29 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UrlWithStringQuery extends Url {
   @JSName("query")
-  var query_UrlWithStringQuery: String | Null
+  var query_UrlWithStringQuery: String | Null = js.native
 }
 
 object UrlWithStringQuery {
   @scala.inline
-  def apply(
-    href: String,
-    auth: String = null,
-    hash: String = null,
-    host: String = null,
-    hostname: String = null,
-    path: String = null,
-    pathname: String = null,
-    port: String = null,
-    protocol: String = null,
-    query: String = null,
-    search: String = null,
-    slashes: Boolean = null.asInstanceOf[Boolean]
-  ): UrlWithStringQuery = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = auth.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
+  def apply(href: String): UrlWithStringQuery = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlWithStringQuery]
   }
+  @scala.inline
+  implicit class UrlWithStringQueryOps[Self <: UrlWithStringQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueryNull: Self = this.set("query", null)
+  }
+  
 }
 

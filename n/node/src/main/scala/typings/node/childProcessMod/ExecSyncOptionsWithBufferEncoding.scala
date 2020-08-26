@@ -1,48 +1,40 @@
 package typings.node.childProcessMod
 
-import typings.node.NodeJS.ProcessEnv
-import typings.node.NodeJS.Signals
 import typings.node.nodeStrings.buffer_
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExecSyncOptionsWithBufferEncoding extends ExecSyncOptions {
   @JSName("encoding")
-  var encoding_ExecSyncOptionsWithBufferEncoding: js.UndefOr[buffer_ | Null] = js.undefined
+  var encoding_ExecSyncOptionsWithBufferEncoding: js.UndefOr[buffer_ | Null] = js.native
 }
 
 object ExecSyncOptionsWithBufferEncoding {
   @scala.inline
-  def apply(
-    cwd: String = null,
-    encoding: js.UndefOr[Null | buffer_] = js.undefined,
-    env: ProcessEnv = null,
-    gid: js.UndefOr[Double] = js.undefined,
-    input: String | Uint8Array = null,
-    killSignal: Signals | Double = null,
-    maxBuffer: js.UndefOr[Double] = js.undefined,
-    shell: String = null,
-    stdio: StdioOptions = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    uid: js.UndefOr[Double] = js.undefined,
-    windowsHide: js.UndefOr[Boolean] = js.undefined
-  ): ExecSyncOptionsWithBufferEncoding = {
+  def apply(): ExecSyncOptionsWithBufferEncoding = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(encoding)) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecSyncOptionsWithBufferEncoding]
   }
+  @scala.inline
+  implicit class ExecSyncOptionsWithBufferEncodingOps[Self <: ExecSyncOptionsWithBufferEncoding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: buffer_): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setEncodingNull: Self = this.set("encoding", null)
+  }
+  
 }
 

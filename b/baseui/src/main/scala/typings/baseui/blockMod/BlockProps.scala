@@ -4,236 +4,492 @@ import typings.react.mod.ElementType
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.styletronReact.mod.StyleProp
+import typings.styletronStandard.mod.StyleObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BlockProps extends js.Object {
   @JSName("$style")
-  var $style: js.UndefOr[StyleProp[BlockProps]] = js.undefined
+  var $style: js.UndefOr[StyleProp[BlockProps]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content */
-  var alignContent: js.UndefOr[Responsive[AlignContent]] = js.undefined
+  var alignContent: js.UndefOr[Responsive[AlignContent]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
-  var alignItems: js.UndefOr[Responsive[AlignItems]] = js.undefined
+  var alignItems: js.UndefOr[Responsive[AlignItems]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self */
-  var alignSelf: js.UndefOr[Responsive[AlignSelf]] = js.undefined
-  var as: js.UndefOr[ElementType[_]] = js.undefined
-  var backgroundColor: js.UndefOr[Responsive[String]] = js.undefined
-  var bottom: js.UndefOr[Responsive[Scale]] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var color: js.UndefOr[Responsive[String]] = js.undefined
+  var alignSelf: js.UndefOr[Responsive[AlignSelf]] = js.native
+  var as: js.UndefOr[ElementType[_]] = js.native
+  var backgroundColor: js.UndefOr[Responsive[String]] = js.native
+  var bottom: js.UndefOr[Responsive[Scale]] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var color: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/display */
-  var display: js.UndefOr[Responsive[Display]] = js.undefined
+  var display: js.UndefOr[Responsive[Display]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
-  var flex: js.UndefOr[Responsive[Flex]] = js.undefined
+  var flex: js.UndefOr[Responsive[Flex]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction */
-  var flexDirection: js.UndefOr[Responsive[FlexDirection]] = js.undefined
-  var flexWrap: js.UndefOr[Responsive[Boolean]] = js.undefined
-  var font: js.UndefOr[String | js.Array[String]] = js.undefined
+  var flexDirection: js.UndefOr[Responsive[FlexDirection]] = js.native
+  var flexWrap: js.UndefOr[Responsive[Boolean]] = js.native
+  var font: js.UndefOr[String | js.Array[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid */
-  var grid: js.UndefOr[Responsive[String]] = js.undefined
+  var grid: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area */
-  var gridArea: js.UndefOr[Responsive[String]] = js.undefined
+  var gridArea: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns */
-  var gridAutoColumns: js.UndefOr[Responsive[String]] = js.undefined
+  var gridAutoColumns: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow */
-  var gridAutoFlow: js.UndefOr[Responsive[GridAutoFlow]] = js.undefined
+  var gridAutoFlow: js.UndefOr[Responsive[GridAutoFlow]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows */
-  var gridAutoRows: js.UndefOr[Responsive[String]] = js.undefined
+  var gridAutoRows: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column */
-  var gridColumn: js.UndefOr[Responsive[String]] = js.undefined
+  var gridColumn: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end */
-  var gridColumnEnd: js.UndefOr[Responsive[String]] = js.undefined
+  var gridColumnEnd: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-gap */
-  var gridColumnGap: js.UndefOr[Responsive[Scale]] = js.undefined
+  var gridColumnGap: js.UndefOr[Responsive[Scale]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start */
-  var gridColumnStart: js.UndefOr[Responsive[String]] = js.undefined
+  var gridColumnStart: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-gap */
-  var gridGap: js.UndefOr[Responsive[Scale]] = js.undefined
+  var gridGap: js.UndefOr[Responsive[Scale]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row */
-  var gridRow: js.UndefOr[Responsive[String]] = js.undefined
+  var gridRow: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end */
-  var gridRowEnd: js.UndefOr[Responsive[String]] = js.undefined
+  var gridRowEnd: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-gap */
-  var gridRowGap: js.UndefOr[Responsive[Scale]] = js.undefined
+  var gridRowGap: js.UndefOr[Responsive[Scale]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start */
-  var gridRowStart: js.UndefOr[Responsive[String]] = js.undefined
+  var gridRowStart: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template */
-  var gridTemplate: js.UndefOr[Responsive[String]] = js.undefined
+  var gridTemplate: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
-  var gridTemplateAreas: js.UndefOr[Responsive[String]] = js.undefined
+  var gridTemplateAreas: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns */
-  var gridTemplateColumns: js.UndefOr[Responsive[String]] = js.undefined
+  var gridTemplateColumns: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows */
-  var gridTemplateRows: js.UndefOr[Responsive[String]] = js.undefined
-  var height: js.UndefOr[Responsive[Scale]] = js.undefined
+  var gridTemplateRows: js.UndefOr[Responsive[String]] = js.native
+  var height: js.UndefOr[Responsive[Scale]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
-  var justifyContent: js.UndefOr[Responsive[JustifyContent]] = js.undefined
+  var justifyContent: js.UndefOr[Responsive[JustifyContent]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items */
-  var justifyItems: js.UndefOr[Responsive[JustifyItems]] = js.undefined
+  var justifyItems: js.UndefOr[Responsive[JustifyItems]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self */
-  var justifySelf: js.UndefOr[Responsive[JustifySelf]] = js.undefined
-  var left: js.UndefOr[Responsive[Scale]] = js.undefined
-  var margin: js.UndefOr[Responsive[Scale]] = js.undefined
-  var marginBottom: js.UndefOr[Responsive[Scale]] = js.undefined
-  var marginLeft: js.UndefOr[Responsive[Scale]] = js.undefined
-  var marginRight: js.UndefOr[Responsive[Scale]] = js.undefined
-  var marginTop: js.UndefOr[Responsive[Scale]] = js.undefined
-  var maxHeight: js.UndefOr[Responsive[Scale]] = js.undefined
-  var maxWidth: js.UndefOr[Responsive[Scale]] = js.undefined
-  var minHeight: js.UndefOr[Responsive[Scale]] = js.undefined
-  var minWidth: js.UndefOr[Responsive[Scale]] = js.undefined
-  var overflow: js.UndefOr[Responsive[Overflow]] = js.undefined
-  var overrides: js.UndefOr[BlockOverrides] = js.undefined
-  var padding: js.UndefOr[Responsive[Scale]] = js.undefined
-  var paddingBottom: js.UndefOr[Responsive[Scale]] = js.undefined
-  var paddingLeft: js.UndefOr[Responsive[Scale]] = js.undefined
-  var paddingRight: js.UndefOr[Responsive[Scale]] = js.undefined
-  var paddingTop: js.UndefOr[Responsive[Scale]] = js.undefined
+  var justifySelf: js.UndefOr[Responsive[JustifySelf]] = js.native
+  var left: js.UndefOr[Responsive[Scale]] = js.native
+  var margin: js.UndefOr[Responsive[Scale]] = js.native
+  var marginBottom: js.UndefOr[Responsive[Scale]] = js.native
+  var marginLeft: js.UndefOr[Responsive[Scale]] = js.native
+  var marginRight: js.UndefOr[Responsive[Scale]] = js.native
+  var marginTop: js.UndefOr[Responsive[Scale]] = js.native
+  var maxHeight: js.UndefOr[Responsive[Scale]] = js.native
+  var maxWidth: js.UndefOr[Responsive[Scale]] = js.native
+  var minHeight: js.UndefOr[Responsive[Scale]] = js.native
+  var minWidth: js.UndefOr[Responsive[Scale]] = js.native
+  var overflow: js.UndefOr[Responsive[Overflow]] = js.native
+  var overrides: js.UndefOr[BlockOverrides] = js.native
+  var padding: js.UndefOr[Responsive[Scale]] = js.native
+  var paddingBottom: js.UndefOr[Responsive[Scale]] = js.native
+  var paddingLeft: js.UndefOr[Responsive[Scale]] = js.native
+  var paddingRight: js.UndefOr[Responsive[Scale]] = js.native
+  var paddingTop: js.UndefOr[Responsive[Scale]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-content */
-  var placeContent: js.UndefOr[Responsive[String]] = js.undefined
+  var placeContent: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-items */
-  var placeItems: js.UndefOr[Responsive[String]] = js.undefined
+  var placeItems: js.UndefOr[Responsive[String]] = js.native
   /** available values: https://developer.mozilla.org/en-US/docs/Web/CSS/place-self */
-  var placeSelf: js.UndefOr[Responsive[String]] = js.undefined
-  var position: js.UndefOr[Responsive[Position]] = js.undefined
-  var ref: js.UndefOr[Ref[_]] = js.undefined
-  var right: js.UndefOr[Responsive[Scale]] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var top: js.UndefOr[Responsive[Scale]] = js.undefined
-  var width: js.UndefOr[Responsive[Scale]] = js.undefined
+  var placeSelf: js.UndefOr[Responsive[String]] = js.native
+  var position: js.UndefOr[Responsive[Position]] = js.native
+  var ref: js.UndefOr[Ref[_]] = js.native
+  var right: js.UndefOr[Responsive[Scale]] = js.native
+  var src: js.UndefOr[String] = js.native
+  var top: js.UndefOr[Responsive[Scale]] = js.native
+  var width: js.UndefOr[Responsive[Scale]] = js.native
 }
 
 object BlockProps {
   @scala.inline
-  def apply(
-    $style: StyleProp[BlockProps] = null,
-    alignContent: Responsive[AlignContent] = null,
-    alignItems: Responsive[AlignItems] = null,
-    alignSelf: Responsive[AlignSelf] = null,
-    as: ElementType[_] = null,
-    backgroundColor: Responsive[String] = null,
-    bottom: Responsive[Scale] = null,
-    children: ReactNode = null,
-    color: Responsive[String] = null,
-    display: Responsive[Display] = null,
-    flex: Responsive[Flex] = null,
-    flexDirection: Responsive[FlexDirection] = null,
-    flexWrap: Responsive[Boolean] = null,
-    font: String | js.Array[String] = null,
-    grid: Responsive[String] = null,
-    gridArea: Responsive[String] = null,
-    gridAutoColumns: Responsive[String] = null,
-    gridAutoFlow: Responsive[GridAutoFlow] = null,
-    gridAutoRows: Responsive[String] = null,
-    gridColumn: Responsive[String] = null,
-    gridColumnEnd: Responsive[String] = null,
-    gridColumnGap: Responsive[Scale] = null,
-    gridColumnStart: Responsive[String] = null,
-    gridGap: Responsive[Scale] = null,
-    gridRow: Responsive[String] = null,
-    gridRowEnd: Responsive[String] = null,
-    gridRowGap: Responsive[Scale] = null,
-    gridRowStart: Responsive[String] = null,
-    gridTemplate: Responsive[String] = null,
-    gridTemplateAreas: Responsive[String] = null,
-    gridTemplateColumns: Responsive[String] = null,
-    gridTemplateRows: Responsive[String] = null,
-    height: Responsive[Scale] = null,
-    justifyContent: Responsive[JustifyContent] = null,
-    justifyItems: Responsive[JustifyItems] = null,
-    justifySelf: Responsive[JustifySelf] = null,
-    left: Responsive[Scale] = null,
-    margin: Responsive[Scale] = null,
-    marginBottom: Responsive[Scale] = null,
-    marginLeft: Responsive[Scale] = null,
-    marginRight: Responsive[Scale] = null,
-    marginTop: Responsive[Scale] = null,
-    maxHeight: Responsive[Scale] = null,
-    maxWidth: Responsive[Scale] = null,
-    minHeight: Responsive[Scale] = null,
-    minWidth: Responsive[Scale] = null,
-    overflow: Responsive[Overflow] = null,
-    overrides: BlockOverrides = null,
-    padding: Responsive[Scale] = null,
-    paddingBottom: Responsive[Scale] = null,
-    paddingLeft: Responsive[Scale] = null,
-    paddingRight: Responsive[Scale] = null,
-    paddingTop: Responsive[Scale] = null,
-    placeContent: Responsive[String] = null,
-    placeItems: Responsive[String] = null,
-    placeSelf: Responsive[String] = null,
-    position: Responsive[Position] = null,
-    ref: js.UndefOr[Null | Ref[_]] = js.undefined,
-    right: Responsive[Scale] = null,
-    src: String = null,
-    top: Responsive[Scale] = null,
-    width: Responsive[Scale] = null
-  ): BlockProps = {
+  def apply(): BlockProps = {
     val __obj = js.Dynamic.literal()
-    if ($style != null) __obj.updateDynamic("$style")($style.asInstanceOf[js.Any])
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (gridAutoColumns != null) __obj.updateDynamic("gridAutoColumns")(gridAutoColumns.asInstanceOf[js.Any])
-    if (gridAutoFlow != null) __obj.updateDynamic("gridAutoFlow")(gridAutoFlow.asInstanceOf[js.Any])
-    if (gridAutoRows != null) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
-    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
-    if (gridColumnEnd != null) __obj.updateDynamic("gridColumnEnd")(gridColumnEnd.asInstanceOf[js.Any])
-    if (gridColumnGap != null) __obj.updateDynamic("gridColumnGap")(gridColumnGap.asInstanceOf[js.Any])
-    if (gridColumnStart != null) __obj.updateDynamic("gridColumnStart")(gridColumnStart.asInstanceOf[js.Any])
-    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
-    if (gridRow != null) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
-    if (gridRowEnd != null) __obj.updateDynamic("gridRowEnd")(gridRowEnd.asInstanceOf[js.Any])
-    if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
-    if (gridRowStart != null) __obj.updateDynamic("gridRowStart")(gridRowStart.asInstanceOf[js.Any])
-    if (gridTemplate != null) __obj.updateDynamic("gridTemplate")(gridTemplate.asInstanceOf[js.Any])
-    if (gridTemplateAreas != null) __obj.updateDynamic("gridTemplateAreas")(gridTemplateAreas.asInstanceOf[js.Any])
-    if (gridTemplateColumns != null) __obj.updateDynamic("gridTemplateColumns")(gridTemplateColumns.asInstanceOf[js.Any])
-    if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
-    if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (placeContent != null) __obj.updateDynamic("placeContent")(placeContent.asInstanceOf[js.Any])
-    if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
-    if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockProps]
   }
+  @scala.inline
+  implicit class BlockPropsOps[Self <: BlockProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$styleFunction1(value: BlockProps => StyleObject): Self = this.set("$style", js.Any.fromFunction1(value))
+    @scala.inline
+    def set$style(value: StyleProp[BlockProps]): Self = this.set("$style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$style: Self = this.set("$style", js.undefined)
+    @scala.inline
+    def setAlignContentVarargs(value: AlignContent*): Self = this.set("alignContent", js.Array(value :_*))
+    @scala.inline
+    def setAlignContent(value: Responsive[AlignContent]): Self = this.set("alignContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignContent: Self = this.set("alignContent", js.undefined)
+    @scala.inline
+    def setAlignItemsVarargs(value: AlignItems*): Self = this.set("alignItems", js.Array(value :_*))
+    @scala.inline
+    def setAlignItems(value: Responsive[AlignItems]): Self = this.set("alignItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignItems: Self = this.set("alignItems", js.undefined)
+    @scala.inline
+    def setAlignSelfVarargs(value: AlignSelf*): Self = this.set("alignSelf", js.Array(value :_*))
+    @scala.inline
+    def setAlignSelf(value: Responsive[AlignSelf]): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setAs(value: ElementType[_]): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setBackgroundColorVarargs(value: String*): Self = this.set("backgroundColor", js.Array(value :_*))
+    @scala.inline
+    def setBackgroundColor(value: Responsive[String]): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBottomVarargs(value: Scale*): Self = this.set("bottom", js.Array(value :_*))
+    @scala.inline
+    def setBottom(value: Responsive[Scale]): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setColorVarargs(value: String*): Self = this.set("color", js.Array(value :_*))
+    @scala.inline
+    def setColor(value: Responsive[String]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDisplayVarargs(value: Display*): Self = this.set("display", js.Array(value :_*))
+    @scala.inline
+    def setDisplay(value: Responsive[Display]): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setFlexVarargs(value: Flex*): Self = this.set("flex", js.Array(value :_*))
+    @scala.inline
+    def setFlex(value: Responsive[Flex]): Self = this.set("flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlex: Self = this.set("flex", js.undefined)
+    @scala.inline
+    def setFlexDirectionVarargs(value: FlexDirection*): Self = this.set("flexDirection", js.Array(value :_*))
+    @scala.inline
+    def setFlexDirection(value: Responsive[FlexDirection]): Self = this.set("flexDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexDirection: Self = this.set("flexDirection", js.undefined)
+    @scala.inline
+    def setFlexWrapVarargs(value: Boolean*): Self = this.set("flexWrap", js.Array(value :_*))
+    @scala.inline
+    def setFlexWrap(value: Responsive[Boolean]): Self = this.set("flexWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexWrap: Self = this.set("flexWrap", js.undefined)
+    @scala.inline
+    def setFontVarargs(value: String*): Self = this.set("font", js.Array(value :_*))
+    @scala.inline
+    def setFont(value: String | js.Array[String]): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setGridVarargs(value: String*): Self = this.set("grid", js.Array(value :_*))
+    @scala.inline
+    def setGrid(value: Responsive[String]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setGridAreaVarargs(value: String*): Self = this.set("gridArea", js.Array(value :_*))
+    @scala.inline
+    def setGridArea(value: Responsive[String]): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setGridAutoColumnsVarargs(value: String*): Self = this.set("gridAutoColumns", js.Array(value :_*))
+    @scala.inline
+    def setGridAutoColumns(value: Responsive[String]): Self = this.set("gridAutoColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridAutoColumns: Self = this.set("gridAutoColumns", js.undefined)
+    @scala.inline
+    def setGridAutoFlowVarargs(value: GridAutoFlow*): Self = this.set("gridAutoFlow", js.Array(value :_*))
+    @scala.inline
+    def setGridAutoFlow(value: Responsive[GridAutoFlow]): Self = this.set("gridAutoFlow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridAutoFlow: Self = this.set("gridAutoFlow", js.undefined)
+    @scala.inline
+    def setGridAutoRowsVarargs(value: String*): Self = this.set("gridAutoRows", js.Array(value :_*))
+    @scala.inline
+    def setGridAutoRows(value: Responsive[String]): Self = this.set("gridAutoRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridAutoRows: Self = this.set("gridAutoRows", js.undefined)
+    @scala.inline
+    def setGridColumnVarargs(value: String*): Self = this.set("gridColumn", js.Array(value :_*))
+    @scala.inline
+    def setGridColumn(value: Responsive[String]): Self = this.set("gridColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridColumn: Self = this.set("gridColumn", js.undefined)
+    @scala.inline
+    def setGridColumnEndVarargs(value: String*): Self = this.set("gridColumnEnd", js.Array(value :_*))
+    @scala.inline
+    def setGridColumnEnd(value: Responsive[String]): Self = this.set("gridColumnEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridColumnEnd: Self = this.set("gridColumnEnd", js.undefined)
+    @scala.inline
+    def setGridColumnGapVarargs(value: Scale*): Self = this.set("gridColumnGap", js.Array(value :_*))
+    @scala.inline
+    def setGridColumnGap(value: Responsive[Scale]): Self = this.set("gridColumnGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridColumnGap: Self = this.set("gridColumnGap", js.undefined)
+    @scala.inline
+    def setGridColumnStartVarargs(value: String*): Self = this.set("gridColumnStart", js.Array(value :_*))
+    @scala.inline
+    def setGridColumnStart(value: Responsive[String]): Self = this.set("gridColumnStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridColumnStart: Self = this.set("gridColumnStart", js.undefined)
+    @scala.inline
+    def setGridGapVarargs(value: Scale*): Self = this.set("gridGap", js.Array(value :_*))
+    @scala.inline
+    def setGridGap(value: Responsive[Scale]): Self = this.set("gridGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridGap: Self = this.set("gridGap", js.undefined)
+    @scala.inline
+    def setGridRowVarargs(value: String*): Self = this.set("gridRow", js.Array(value :_*))
+    @scala.inline
+    def setGridRow(value: Responsive[String]): Self = this.set("gridRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridRow: Self = this.set("gridRow", js.undefined)
+    @scala.inline
+    def setGridRowEndVarargs(value: String*): Self = this.set("gridRowEnd", js.Array(value :_*))
+    @scala.inline
+    def setGridRowEnd(value: Responsive[String]): Self = this.set("gridRowEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridRowEnd: Self = this.set("gridRowEnd", js.undefined)
+    @scala.inline
+    def setGridRowGapVarargs(value: Scale*): Self = this.set("gridRowGap", js.Array(value :_*))
+    @scala.inline
+    def setGridRowGap(value: Responsive[Scale]): Self = this.set("gridRowGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridRowGap: Self = this.set("gridRowGap", js.undefined)
+    @scala.inline
+    def setGridRowStartVarargs(value: String*): Self = this.set("gridRowStart", js.Array(value :_*))
+    @scala.inline
+    def setGridRowStart(value: Responsive[String]): Self = this.set("gridRowStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridRowStart: Self = this.set("gridRowStart", js.undefined)
+    @scala.inline
+    def setGridTemplateVarargs(value: String*): Self = this.set("gridTemplate", js.Array(value :_*))
+    @scala.inline
+    def setGridTemplate(value: Responsive[String]): Self = this.set("gridTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridTemplate: Self = this.set("gridTemplate", js.undefined)
+    @scala.inline
+    def setGridTemplateAreasVarargs(value: String*): Self = this.set("gridTemplateAreas", js.Array(value :_*))
+    @scala.inline
+    def setGridTemplateAreas(value: Responsive[String]): Self = this.set("gridTemplateAreas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridTemplateAreas: Self = this.set("gridTemplateAreas", js.undefined)
+    @scala.inline
+    def setGridTemplateColumnsVarargs(value: String*): Self = this.set("gridTemplateColumns", js.Array(value :_*))
+    @scala.inline
+    def setGridTemplateColumns(value: Responsive[String]): Self = this.set("gridTemplateColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridTemplateColumns: Self = this.set("gridTemplateColumns", js.undefined)
+    @scala.inline
+    def setGridTemplateRowsVarargs(value: String*): Self = this.set("gridTemplateRows", js.Array(value :_*))
+    @scala.inline
+    def setGridTemplateRows(value: Responsive[String]): Self = this.set("gridTemplateRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridTemplateRows: Self = this.set("gridTemplateRows", js.undefined)
+    @scala.inline
+    def setHeightVarargs(value: Scale*): Self = this.set("height", js.Array(value :_*))
+    @scala.inline
+    def setHeight(value: Responsive[Scale]): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setJustifyContentVarargs(value: JustifyContent*): Self = this.set("justifyContent", js.Array(value :_*))
+    @scala.inline
+    def setJustifyContent(value: Responsive[JustifyContent]): Self = this.set("justifyContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustifyContent: Self = this.set("justifyContent", js.undefined)
+    @scala.inline
+    def setJustifyItemsVarargs(value: JustifyItems*): Self = this.set("justifyItems", js.Array(value :_*))
+    @scala.inline
+    def setJustifyItems(value: Responsive[JustifyItems]): Self = this.set("justifyItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustifyItems: Self = this.set("justifyItems", js.undefined)
+    @scala.inline
+    def setJustifySelfVarargs(value: JustifySelf*): Self = this.set("justifySelf", js.Array(value :_*))
+    @scala.inline
+    def setJustifySelf(value: Responsive[JustifySelf]): Self = this.set("justifySelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustifySelf: Self = this.set("justifySelf", js.undefined)
+    @scala.inline
+    def setLeftVarargs(value: Scale*): Self = this.set("left", js.Array(value :_*))
+    @scala.inline
+    def setLeft(value: Responsive[Scale]): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setMarginVarargs(value: Scale*): Self = this.set("margin", js.Array(value :_*))
+    @scala.inline
+    def setMargin(value: Responsive[Scale]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMarginBottomVarargs(value: Scale*): Self = this.set("marginBottom", js.Array(value :_*))
+    @scala.inline
+    def setMarginBottom(value: Responsive[Scale]): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    @scala.inline
+    def setMarginLeftVarargs(value: Scale*): Self = this.set("marginLeft", js.Array(value :_*))
+    @scala.inline
+    def setMarginLeft(value: Responsive[Scale]): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    @scala.inline
+    def setMarginRightVarargs(value: Scale*): Self = this.set("marginRight", js.Array(value :_*))
+    @scala.inline
+    def setMarginRight(value: Responsive[Scale]): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    @scala.inline
+    def setMarginTopVarargs(value: Scale*): Self = this.set("marginTop", js.Array(value :_*))
+    @scala.inline
+    def setMarginTop(value: Responsive[Scale]): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    @scala.inline
+    def setMaxHeightVarargs(value: Scale*): Self = this.set("maxHeight", js.Array(value :_*))
+    @scala.inline
+    def setMaxHeight(value: Responsive[Scale]): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidthVarargs(value: Scale*): Self = this.set("maxWidth", js.Array(value :_*))
+    @scala.inline
+    def setMaxWidth(value: Responsive[Scale]): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeightVarargs(value: Scale*): Self = this.set("minHeight", js.Array(value :_*))
+    @scala.inline
+    def setMinHeight(value: Responsive[Scale]): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidthVarargs(value: Scale*): Self = this.set("minWidth", js.Array(value :_*))
+    @scala.inline
+    def setMinWidth(value: Responsive[Scale]): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOverflowVarargs(value: Overflow*): Self = this.set("overflow", js.Array(value :_*))
+    @scala.inline
+    def setOverflow(value: Responsive[Overflow]): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setOverrides(value: BlockOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPaddingVarargs(value: Scale*): Self = this.set("padding", js.Array(value :_*))
+    @scala.inline
+    def setPadding(value: Responsive[Scale]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPaddingBottomVarargs(value: Scale*): Self = this.set("paddingBottom", js.Array(value :_*))
+    @scala.inline
+    def setPaddingBottom(value: Responsive[Scale]): Self = this.set("paddingBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingBottom: Self = this.set("paddingBottom", js.undefined)
+    @scala.inline
+    def setPaddingLeftVarargs(value: Scale*): Self = this.set("paddingLeft", js.Array(value :_*))
+    @scala.inline
+    def setPaddingLeft(value: Responsive[Scale]): Self = this.set("paddingLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingLeft: Self = this.set("paddingLeft", js.undefined)
+    @scala.inline
+    def setPaddingRightVarargs(value: Scale*): Self = this.set("paddingRight", js.Array(value :_*))
+    @scala.inline
+    def setPaddingRight(value: Responsive[Scale]): Self = this.set("paddingRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingRight: Self = this.set("paddingRight", js.undefined)
+    @scala.inline
+    def setPaddingTopVarargs(value: Scale*): Self = this.set("paddingTop", js.Array(value :_*))
+    @scala.inline
+    def setPaddingTop(value: Responsive[Scale]): Self = this.set("paddingTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingTop: Self = this.set("paddingTop", js.undefined)
+    @scala.inline
+    def setPlaceContentVarargs(value: String*): Self = this.set("placeContent", js.Array(value :_*))
+    @scala.inline
+    def setPlaceContent(value: Responsive[String]): Self = this.set("placeContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceContent: Self = this.set("placeContent", js.undefined)
+    @scala.inline
+    def setPlaceItemsVarargs(value: String*): Self = this.set("placeItems", js.Array(value :_*))
+    @scala.inline
+    def setPlaceItems(value: Responsive[String]): Self = this.set("placeItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceItems: Self = this.set("placeItems", js.undefined)
+    @scala.inline
+    def setPlaceSelfVarargs(value: String*): Self = this.set("placeSelf", js.Array(value :_*))
+    @scala.inline
+    def setPlaceSelf(value: Responsive[String]): Self = this.set("placeSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceSelf: Self = this.set("placeSelf", js.undefined)
+    @scala.inline
+    def setPositionVarargs(value: Position*): Self = this.set("position", js.Array(value :_*))
+    @scala.inline
+    def setPosition(value: Responsive[Position]): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: Ref[_]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRefNull: Self = this.set("ref", null)
+    @scala.inline
+    def setRightVarargs(value: Scale*): Self = this.set("right", js.Array(value :_*))
+    @scala.inline
+    def setRight(value: Responsive[Scale]): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setTopVarargs(value: Scale*): Self = this.set("top", js.Array(value :_*))
+    @scala.inline
+    def setTop(value: Responsive[Scale]): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setWidthVarargs(value: Scale*): Self = this.set("width", js.Array(value :_*))
+    @scala.inline
+    def setWidth(value: Responsive[Scale]): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

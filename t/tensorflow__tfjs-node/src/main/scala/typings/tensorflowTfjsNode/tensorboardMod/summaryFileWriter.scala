@@ -8,7 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object summaryFileWriter extends js.Object {
   def apply(logdir: String): SummaryFileWriter_ = js.native
+  def apply(
+    logdir: String,
+    maxQueue: js.UndefOr[scala.Nothing],
+    flushMillis: js.UndefOr[scala.Nothing],
+    filenameSuffix: String
+  ): SummaryFileWriter_ = js.native
+  def apply(logdir: String, maxQueue: js.UndefOr[scala.Nothing], flushMillis: Double): SummaryFileWriter_ = js.native
+  def apply(logdir: String, maxQueue: js.UndefOr[scala.Nothing], flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = js.native
   def apply(logdir: String, maxQueue: Double): SummaryFileWriter_ = js.native
+  def apply(logdir: String, maxQueue: Double, flushMillis: js.UndefOr[scala.Nothing], filenameSuffix: String): SummaryFileWriter_ = js.native
   def apply(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter_ = js.native
   def apply(logdir: String, maxQueue: Double, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = js.native
 }

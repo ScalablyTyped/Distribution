@@ -70,6 +70,9 @@ object aceBuildsStrings {
   sealed trait dragEnabled extends js.Object
   
   @js.native
+  sealed trait enableAutoIndent extends js.Object
+  
+  @js.native
   sealed trait exec extends js.Object
   
   @js.native
@@ -95,6 +98,9 @@ object aceBuildsStrings {
   
   @js.native
   sealed trait fontSize extends js.Object
+  
+  @js.native
+  sealed trait free extends js.Object
   
   @js.native
   sealed trait fullLine extends js.Object
@@ -160,6 +166,9 @@ object aceBuildsStrings {
   sealed trait newLineMode extends js.Object
   
   @js.native
+  sealed trait off extends js.Object
+  
+  @js.native
   sealed trait overwrite extends js.Object
   
   @js.native
@@ -173,6 +182,9 @@ object aceBuildsStrings {
   
   @js.native
   sealed trait printMarginColumn extends js.Object
+  
+  @js.native
+  sealed trait printmargin_ extends js.Object
   
   @js.native
   sealed trait readOnly extends js.Object
@@ -307,6 +319,8 @@ object aceBuildsStrings {
   @scala.inline
   def dragEnabled: dragEnabled = "dragEnabled".asInstanceOf[dragEnabled]
   @scala.inline
+  def enableAutoIndent: enableAutoIndent = "enableAutoIndent".asInstanceOf[enableAutoIndent]
+  @scala.inline
   def exec: exec = "exec".asInstanceOf[exec]
   @scala.inline
   def fadeFoldWidgets: fadeFoldWidgets = "fadeFoldWidgets".asInstanceOf[fadeFoldWidgets]
@@ -324,6 +338,8 @@ object aceBuildsStrings {
   def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
   @scala.inline
   def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
+  @scala.inline
+  def free: free = "free".asInstanceOf[free]
   @scala.inline
   def fullLine: fullLine = "fullLine".asInstanceOf[fullLine]
   @scala.inline
@@ -367,6 +383,8 @@ object aceBuildsStrings {
   @scala.inline
   def newLineMode: newLineMode = "newLineMode".asInstanceOf[newLineMode]
   @scala.inline
+  def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
@@ -376,6 +394,8 @@ object aceBuildsStrings {
   def printMargin: printMargin = "printMargin".asInstanceOf[printMargin]
   @scala.inline
   def printMarginColumn: printMarginColumn = "printMarginColumn".asInstanceOf[printMarginColumn]
+  @scala.inline
+  def printmargin_ : printmargin_ = "printmargin".asInstanceOf[printmargin_]
   @scala.inline
   def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   @scala.inline

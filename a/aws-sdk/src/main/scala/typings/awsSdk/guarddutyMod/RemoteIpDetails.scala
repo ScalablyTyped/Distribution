@@ -30,20 +30,42 @@ trait RemoteIpDetails extends js.Object {
 
 object RemoteIpDetails {
   @scala.inline
-  def apply(
-    City: City = null,
-    Country: Country = null,
-    GeoLocation: GeoLocation = null,
-    IpAddressV4: String = null,
-    Organization: Organization = null
-  ): RemoteIpDetails = {
+  def apply(): RemoteIpDetails = {
     val __obj = js.Dynamic.literal()
-    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (GeoLocation != null) __obj.updateDynamic("GeoLocation")(GeoLocation.asInstanceOf[js.Any])
-    if (IpAddressV4 != null) __obj.updateDynamic("IpAddressV4")(IpAddressV4.asInstanceOf[js.Any])
-    if (Organization != null) __obj.updateDynamic("Organization")(Organization.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteIpDetails]
   }
+  @scala.inline
+  implicit class RemoteIpDetailsOps[Self <: RemoteIpDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCity(value: City): Self = this.set("City", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("City", js.undefined)
+    @scala.inline
+    def setCountry(value: Country): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setGeoLocation(value: GeoLocation): Self = this.set("GeoLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoLocation: Self = this.set("GeoLocation", js.undefined)
+    @scala.inline
+    def setIpAddressV4(value: String): Self = this.set("IpAddressV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressV4: Self = this.set("IpAddressV4", js.undefined)
+    @scala.inline
+    def setOrganization(value: Organization): Self = this.set("Organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("Organization", js.undefined)
+  }
+  
 }
 

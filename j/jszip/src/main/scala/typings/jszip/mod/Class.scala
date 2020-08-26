@@ -18,6 +18,6 @@ import scala.scalajs.js.annotation._
   */
 class Class () extends JSZip {
   def this(data: InputFileFormat) = this()
-  def this(data: InputFileFormat, options: JSZipLoadOptions) = this()
+  def this(data: js.UndefOr[InputFileFormat], options: JSZipLoadOptions) = this()
 }
 

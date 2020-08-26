@@ -14,10 +14,26 @@ trait LifecycleEventConfiguration extends js.Object {
 
 object LifecycleEventConfiguration {
   @scala.inline
-  def apply(Shutdown: ShutdownEventConfiguration = null): LifecycleEventConfiguration = {
+  def apply(): LifecycleEventConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (Shutdown != null) __obj.updateDynamic("Shutdown")(Shutdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleEventConfiguration]
   }
+  @scala.inline
+  implicit class LifecycleEventConfigurationOps[Self <: LifecycleEventConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShutdown(value: ShutdownEventConfiguration): Self = this.set("Shutdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShutdown: Self = this.set("Shutdown", js.undefined)
+  }
+  
 }
 

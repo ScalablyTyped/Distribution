@@ -34,16 +34,38 @@ trait SchemaUsage extends js.Object {
 
 object SchemaUsage {
   @scala.inline
-  def apply(
-    producerNotificationChannel: String = null,
-    requirements: js.Array[String] = null,
-    rules: js.Array[SchemaUsageRule] = null
-  ): SchemaUsage = {
+  def apply(): SchemaUsage = {
     val __obj = js.Dynamic.literal()
-    if (producerNotificationChannel != null) __obj.updateDynamic("producerNotificationChannel")(producerNotificationChannel.asInstanceOf[js.Any])
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUsage]
   }
+  @scala.inline
+  implicit class SchemaUsageOps[Self <: SchemaUsage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProducerNotificationChannel(value: String): Self = this.set("producerNotificationChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducerNotificationChannel: Self = this.set("producerNotificationChannel", js.undefined)
+    @scala.inline
+    def setRequirementsVarargs(value: String*): Self = this.set("requirements", js.Array(value :_*))
+    @scala.inline
+    def setRequirements(value: js.Array[String]): Self = this.set("requirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequirements: Self = this.set("requirements", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: SchemaUsageRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[SchemaUsageRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

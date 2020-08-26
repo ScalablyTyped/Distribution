@@ -26,18 +26,38 @@ trait DeliveryStreamEncryptionConfiguration extends js.Object {
 
 object DeliveryStreamEncryptionConfiguration {
   @scala.inline
-  def apply(
-    FailureDescription: FailureDescription = null,
-    KeyARN: AWSKMSKeyARN = null,
-    KeyType: KeyType = null,
-    Status: DeliveryStreamEncryptionStatus = null
-  ): DeliveryStreamEncryptionConfiguration = {
+  def apply(): DeliveryStreamEncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (FailureDescription != null) __obj.updateDynamic("FailureDescription")(FailureDescription.asInstanceOf[js.Any])
-    if (KeyARN != null) __obj.updateDynamic("KeyARN")(KeyARN.asInstanceOf[js.Any])
-    if (KeyType != null) __obj.updateDynamic("KeyType")(KeyType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryStreamEncryptionConfiguration]
   }
+  @scala.inline
+  implicit class DeliveryStreamEncryptionConfigurationOps[Self <: DeliveryStreamEncryptionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureDescription(value: FailureDescription): Self = this.set("FailureDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDescription: Self = this.set("FailureDescription", js.undefined)
+    @scala.inline
+    def setKeyARN(value: AWSKMSKeyARN): Self = this.set("KeyARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyARN: Self = this.set("KeyARN", js.undefined)
+    @scala.inline
+    def setKeyType(value: KeyType): Self = this.set("KeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyType: Self = this.set("KeyType", js.undefined)
+    @scala.inline
+    def setStatus(value: DeliveryStreamEncryptionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

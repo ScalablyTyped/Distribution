@@ -13,6 +13,12 @@ object sale extends js.Object {
   def get(id: String, config: CallbackFunction[PaymentResponse]): Unit = js.native
   def get(id: String, config: CallbackFunction[PaymentResponse], cb: CallbackFunction[PaymentResponse]): Unit = js.native
   def refund(id: String, data: RequestOptions): Unit = js.native
+  def refund(
+    id: String,
+    data: RequestOptions,
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[RefundResource]
+  ): Unit = js.native
   def refund(id: String, data: RequestOptions, config: RequestOptions): Unit = js.native
   def refund(id: String, data: RequestOptions, config: RequestOptions, cb: CallbackFunction[RefundResource]): Unit = js.native
   def refund(id: String, data: RequestOptions, config: CallbackFunction[RefundResource]): Unit = js.native
@@ -23,6 +29,12 @@ object sale extends js.Object {
     cb: CallbackFunction[RefundResource]
   ): Unit = js.native
   def refund(id: String, data: CallbackFunction[RefundResource]): Unit = js.native
+  def refund(
+    id: String,
+    data: CallbackFunction[RefundResource],
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[RefundResource]
+  ): Unit = js.native
   def refund(id: String, data: CallbackFunction[RefundResource], config: RequestOptions): Unit = js.native
   def refund(
     id: String,
@@ -38,6 +50,12 @@ object sale extends js.Object {
     cb: CallbackFunction[RefundResource]
   ): Unit = js.native
   def refund(id: String, data: RefundRequest): Unit = js.native
+  def refund(
+    id: String,
+    data: RefundRequest,
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[RefundResource]
+  ): Unit = js.native
   def refund(id: String, data: RefundRequest, config: RequestOptions): Unit = js.native
   def refund(id: String, data: RefundRequest, config: RequestOptions, cb: CallbackFunction[RefundResource]): Unit = js.native
   def refund(id: String, data: RefundRequest, config: CallbackFunction[RefundResource]): Unit = js.native

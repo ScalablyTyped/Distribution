@@ -26,17 +26,36 @@ trait GetTagsRequest extends js.Object {
 
 object GetTagsRequest {
   @scala.inline
-  def apply(
-    TimePeriod: DateInterval,
-    NextPageToken: NextPageToken = null,
-    SearchString: SearchString = null,
-    TagKey: TagKey = null
-  ): GetTagsRequest = {
+  def apply(TimePeriod: DateInterval): GetTagsRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (SearchString != null) __obj.updateDynamic("SearchString")(SearchString.asInstanceOf[js.Any])
-    if (TagKey != null) __obj.updateDynamic("TagKey")(TagKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTagsRequest]
   }
+  @scala.inline
+  implicit class GetTagsRequestOps[Self <: GetTagsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setSearchString(value: SearchString): Self = this.set("SearchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("SearchString", js.undefined)
+    @scala.inline
+    def setTagKey(value: TagKey): Self = this.set("TagKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKey: Self = this.set("TagKey", js.undefined)
+  }
+  
 }
 

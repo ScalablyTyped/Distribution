@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ResourceDetails extends js.Object {
   /**
+    * Details for an autoscaling group.
+    */
+  var AwsAutoScalingAutoScalingGroup: js.UndefOr[AwsAutoScalingAutoScalingGroupDetails] = js.native
+  /**
     * Details about a CloudFront distribution.
     */
   var AwsCloudFrontDistribution: js.UndefOr[AwsCloudFrontDistributionDetails] = js.native
@@ -26,6 +30,14 @@ trait ResourceDetails extends js.Object {
     * Details for an EC2 security group.
     */
   var AwsEc2SecurityGroup: js.UndefOr[AwsEc2SecurityGroupDetails] = js.native
+  /**
+    * Details for an EC2 volume.
+    */
+  var AwsEc2Volume: js.UndefOr[AwsEc2VolumeDetails] = js.native
+  /**
+    * Details for an EC2 VPC.
+    */
+  var AwsEc2Vpc: js.UndefOr[AwsEc2VpcDetails] = js.native
   /**
     * Details for an Elasticsearch domain.
     */
@@ -90,50 +102,114 @@ trait ResourceDetails extends js.Object {
 
 object ResourceDetails {
   @scala.inline
-  def apply(
-    AwsCloudFrontDistribution: AwsCloudFrontDistributionDetails = null,
-    AwsCodeBuildProject: AwsCodeBuildProjectDetails = null,
-    AwsEc2Instance: AwsEc2InstanceDetails = null,
-    AwsEc2NetworkInterface: AwsEc2NetworkInterfaceDetails = null,
-    AwsEc2SecurityGroup: AwsEc2SecurityGroupDetails = null,
-    AwsElasticsearchDomain: AwsElasticsearchDomainDetails = null,
-    AwsElbv2LoadBalancer: AwsElbv2LoadBalancerDetails = null,
-    AwsIamAccessKey: AwsIamAccessKeyDetails = null,
-    AwsIamRole: AwsIamRoleDetails = null,
-    AwsKmsKey: AwsKmsKeyDetails = null,
-    AwsLambdaFunction: AwsLambdaFunctionDetails = null,
-    AwsLambdaLayerVersion: AwsLambdaLayerVersionDetails = null,
-    AwsRdsDbInstance: AwsRdsDbInstanceDetails = null,
-    AwsS3Bucket: AwsS3BucketDetails = null,
-    AwsS3Object: AwsS3ObjectDetails = null,
-    AwsSnsTopic: AwsSnsTopicDetails = null,
-    AwsSqsQueue: AwsSqsQueueDetails = null,
-    AwsWafWebAcl: AwsWafWebAclDetails = null,
-    Container: ContainerDetails = null,
-    Other: FieldMap = null
-  ): ResourceDetails = {
+  def apply(): ResourceDetails = {
     val __obj = js.Dynamic.literal()
-    if (AwsCloudFrontDistribution != null) __obj.updateDynamic("AwsCloudFrontDistribution")(AwsCloudFrontDistribution.asInstanceOf[js.Any])
-    if (AwsCodeBuildProject != null) __obj.updateDynamic("AwsCodeBuildProject")(AwsCodeBuildProject.asInstanceOf[js.Any])
-    if (AwsEc2Instance != null) __obj.updateDynamic("AwsEc2Instance")(AwsEc2Instance.asInstanceOf[js.Any])
-    if (AwsEc2NetworkInterface != null) __obj.updateDynamic("AwsEc2NetworkInterface")(AwsEc2NetworkInterface.asInstanceOf[js.Any])
-    if (AwsEc2SecurityGroup != null) __obj.updateDynamic("AwsEc2SecurityGroup")(AwsEc2SecurityGroup.asInstanceOf[js.Any])
-    if (AwsElasticsearchDomain != null) __obj.updateDynamic("AwsElasticsearchDomain")(AwsElasticsearchDomain.asInstanceOf[js.Any])
-    if (AwsElbv2LoadBalancer != null) __obj.updateDynamic("AwsElbv2LoadBalancer")(AwsElbv2LoadBalancer.asInstanceOf[js.Any])
-    if (AwsIamAccessKey != null) __obj.updateDynamic("AwsIamAccessKey")(AwsIamAccessKey.asInstanceOf[js.Any])
-    if (AwsIamRole != null) __obj.updateDynamic("AwsIamRole")(AwsIamRole.asInstanceOf[js.Any])
-    if (AwsKmsKey != null) __obj.updateDynamic("AwsKmsKey")(AwsKmsKey.asInstanceOf[js.Any])
-    if (AwsLambdaFunction != null) __obj.updateDynamic("AwsLambdaFunction")(AwsLambdaFunction.asInstanceOf[js.Any])
-    if (AwsLambdaLayerVersion != null) __obj.updateDynamic("AwsLambdaLayerVersion")(AwsLambdaLayerVersion.asInstanceOf[js.Any])
-    if (AwsRdsDbInstance != null) __obj.updateDynamic("AwsRdsDbInstance")(AwsRdsDbInstance.asInstanceOf[js.Any])
-    if (AwsS3Bucket != null) __obj.updateDynamic("AwsS3Bucket")(AwsS3Bucket.asInstanceOf[js.Any])
-    if (AwsS3Object != null) __obj.updateDynamic("AwsS3Object")(AwsS3Object.asInstanceOf[js.Any])
-    if (AwsSnsTopic != null) __obj.updateDynamic("AwsSnsTopic")(AwsSnsTopic.asInstanceOf[js.Any])
-    if (AwsSqsQueue != null) __obj.updateDynamic("AwsSqsQueue")(AwsSqsQueue.asInstanceOf[js.Any])
-    if (AwsWafWebAcl != null) __obj.updateDynamic("AwsWafWebAcl")(AwsWafWebAcl.asInstanceOf[js.Any])
-    if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
-    if (Other != null) __obj.updateDynamic("Other")(Other.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDetails]
   }
+  @scala.inline
+  implicit class ResourceDetailsOps[Self <: ResourceDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAutoScalingAutoScalingGroup(value: AwsAutoScalingAutoScalingGroupDetails): Self = this.set("AwsAutoScalingAutoScalingGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAutoScalingAutoScalingGroup: Self = this.set("AwsAutoScalingAutoScalingGroup", js.undefined)
+    @scala.inline
+    def setAwsCloudFrontDistribution(value: AwsCloudFrontDistributionDetails): Self = this.set("AwsCloudFrontDistribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsCloudFrontDistribution: Self = this.set("AwsCloudFrontDistribution", js.undefined)
+    @scala.inline
+    def setAwsCodeBuildProject(value: AwsCodeBuildProjectDetails): Self = this.set("AwsCodeBuildProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsCodeBuildProject: Self = this.set("AwsCodeBuildProject", js.undefined)
+    @scala.inline
+    def setAwsEc2Instance(value: AwsEc2InstanceDetails): Self = this.set("AwsEc2Instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsEc2Instance: Self = this.set("AwsEc2Instance", js.undefined)
+    @scala.inline
+    def setAwsEc2NetworkInterface(value: AwsEc2NetworkInterfaceDetails): Self = this.set("AwsEc2NetworkInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsEc2NetworkInterface: Self = this.set("AwsEc2NetworkInterface", js.undefined)
+    @scala.inline
+    def setAwsEc2SecurityGroup(value: AwsEc2SecurityGroupDetails): Self = this.set("AwsEc2SecurityGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsEc2SecurityGroup: Self = this.set("AwsEc2SecurityGroup", js.undefined)
+    @scala.inline
+    def setAwsEc2Volume(value: AwsEc2VolumeDetails): Self = this.set("AwsEc2Volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsEc2Volume: Self = this.set("AwsEc2Volume", js.undefined)
+    @scala.inline
+    def setAwsEc2Vpc(value: AwsEc2VpcDetails): Self = this.set("AwsEc2Vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsEc2Vpc: Self = this.set("AwsEc2Vpc", js.undefined)
+    @scala.inline
+    def setAwsElasticsearchDomain(value: AwsElasticsearchDomainDetails): Self = this.set("AwsElasticsearchDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsElasticsearchDomain: Self = this.set("AwsElasticsearchDomain", js.undefined)
+    @scala.inline
+    def setAwsElbv2LoadBalancer(value: AwsElbv2LoadBalancerDetails): Self = this.set("AwsElbv2LoadBalancer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsElbv2LoadBalancer: Self = this.set("AwsElbv2LoadBalancer", js.undefined)
+    @scala.inline
+    def setAwsIamAccessKey(value: AwsIamAccessKeyDetails): Self = this.set("AwsIamAccessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIamAccessKey: Self = this.set("AwsIamAccessKey", js.undefined)
+    @scala.inline
+    def setAwsIamRole(value: AwsIamRoleDetails): Self = this.set("AwsIamRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIamRole: Self = this.set("AwsIamRole", js.undefined)
+    @scala.inline
+    def setAwsKmsKey(value: AwsKmsKeyDetails): Self = this.set("AwsKmsKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsKmsKey: Self = this.set("AwsKmsKey", js.undefined)
+    @scala.inline
+    def setAwsLambdaFunction(value: AwsLambdaFunctionDetails): Self = this.set("AwsLambdaFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsLambdaFunction: Self = this.set("AwsLambdaFunction", js.undefined)
+    @scala.inline
+    def setAwsLambdaLayerVersion(value: AwsLambdaLayerVersionDetails): Self = this.set("AwsLambdaLayerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsLambdaLayerVersion: Self = this.set("AwsLambdaLayerVersion", js.undefined)
+    @scala.inline
+    def setAwsRdsDbInstance(value: AwsRdsDbInstanceDetails): Self = this.set("AwsRdsDbInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRdsDbInstance: Self = this.set("AwsRdsDbInstance", js.undefined)
+    @scala.inline
+    def setAwsS3Bucket(value: AwsS3BucketDetails): Self = this.set("AwsS3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsS3Bucket: Self = this.set("AwsS3Bucket", js.undefined)
+    @scala.inline
+    def setAwsS3Object(value: AwsS3ObjectDetails): Self = this.set("AwsS3Object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsS3Object: Self = this.set("AwsS3Object", js.undefined)
+    @scala.inline
+    def setAwsSnsTopic(value: AwsSnsTopicDetails): Self = this.set("AwsSnsTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsSnsTopic: Self = this.set("AwsSnsTopic", js.undefined)
+    @scala.inline
+    def setAwsSqsQueue(value: AwsSqsQueueDetails): Self = this.set("AwsSqsQueue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsSqsQueue: Self = this.set("AwsSqsQueue", js.undefined)
+    @scala.inline
+    def setAwsWafWebAcl(value: AwsWafWebAclDetails): Self = this.set("AwsWafWebAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsWafWebAcl: Self = this.set("AwsWafWebAcl", js.undefined)
+    @scala.inline
+    def setContainer(value: ContainerDetails): Self = this.set("Container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("Container", js.undefined)
+    @scala.inline
+    def setOther(value: FieldMap): Self = this.set("Other", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOther: Self = this.set("Other", js.undefined)
+  }
+  
 }
 

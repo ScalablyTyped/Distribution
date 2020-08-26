@@ -46,6 +46,7 @@ object lossesMod extends js.Object {
   def poisson(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
   def sigmoidCrossEntropyWithLogits(labels: Tensor[Rank], logits: Tensor[Rank]): Tensor[Rank] = js.native
   def sparseCategoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank]): Tensor[Rank] = js.native
+  def sparseCategoricalCrossentropy(target: Tensor[Rank], output: Tensor[Rank], fromLogits: Boolean): Tensor[Rank] = js.native
   def squaredHinge(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
   @js.native
   object lossesMap extends /* functionName */ StringDictionary[LossOrMetricFn]

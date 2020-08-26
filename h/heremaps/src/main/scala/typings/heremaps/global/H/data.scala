@@ -40,24 +40,6 @@ object data extends js.Object {
         */
       def this(target: typings.heremaps.H.data.AbstractReader, `type`: String, state: State, message: String) = this()
       def this(target: Object, `type`: String, state: State, message: String) = this()
-      /* CompleteClass */
-      override var currentTarget: js.Any = js.native
-      /* CompleteClass */
-      override var defaultPrevented: Boolean = js.native
-      /* CompleteClass */
-      override var target: js.Any = js.native
-      /* CompleteClass */
-      override var `type`: String = js.native
-      /**
-        * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-        */
-      /* CompleteClass */
-      override def preventDefault(): Unit = js.native
-      /**
-        * Stops propagation for current event.
-        */
-      /* CompleteClass */
-      override def stopPropagation(): Unit = js.native
     }
     
     /**

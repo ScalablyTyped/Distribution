@@ -42,6 +42,7 @@ object daxMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ParameterGroupArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ParameterGroupArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -69,8 +70,10 @@ object daxMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.daxClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.daxClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.daxClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.daxClusterMod.Cluster = js.native
     /**
@@ -90,8 +93,10 @@ object daxMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.parameterGroupMod.ParameterGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.parameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState): typings.pulumiAws.parameterGroupMod.ParameterGroup = js.native
     def get(name: String, id: Input[ID], state: ParameterGroupState, opts: CustomResourceOptions): typings.pulumiAws.parameterGroupMod.ParameterGroup = js.native
     /**
@@ -111,8 +116,10 @@ object daxMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.subnetGroupMod.SubnetGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.subnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState): typings.pulumiAws.subnetGroupMod.SubnetGroup = js.native
     def get(name: String, id: Input[ID], state: SubnetGroupState, opts: CustomResourceOptions): typings.pulumiAws.subnetGroupMod.SubnetGroup = js.native
     /**

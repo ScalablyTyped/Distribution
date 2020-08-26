@@ -11,8 +11,8 @@ A tiny secp256k1 native/JS wrapper
 | Full name          | tiny-secp256k1 |
 | Keywords           | - |
 | # releases         | 20 |
-| # dependents       | 54 |
-| # downloads        | 858047 |
+| # dependents       | 58 |
+| # downloads        | 887631 |
 | # stars            | 0 |
 
 ## Links

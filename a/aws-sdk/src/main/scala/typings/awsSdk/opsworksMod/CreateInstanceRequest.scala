@@ -82,43 +82,92 @@ trait CreateInstanceRequest extends js.Object {
 
 object CreateInstanceRequest {
   @scala.inline
-  def apply(
-    InstanceType: String,
-    LayerIds: Strings,
-    StackId: String,
-    AgentVersion: String = null,
-    AmiId: String = null,
-    Architecture: Architecture = null,
-    AutoScalingType: AutoScalingType = null,
-    AvailabilityZone: String = null,
-    BlockDeviceMappings: BlockDeviceMappings = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
-    Hostname: String = null,
-    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
-    Os: String = null,
-    RootDeviceType: RootDeviceType = null,
-    SshKeyName: String = null,
-    SubnetId: String = null,
-    Tenancy: String = null,
-    VirtualizationType: String = null
-  ): CreateInstanceRequest = {
+  def apply(InstanceType: String, LayerIds: Strings, StackId: String): CreateInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceType = InstanceType.asInstanceOf[js.Any], LayerIds = LayerIds.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
-    if (AgentVersion != null) __obj.updateDynamic("AgentVersion")(AgentVersion.asInstanceOf[js.Any])
-    if (AmiId != null) __obj.updateDynamic("AmiId")(AmiId.asInstanceOf[js.Any])
-    if (Architecture != null) __obj.updateDynamic("Architecture")(Architecture.asInstanceOf[js.Any])
-    if (AutoScalingType != null) __obj.updateDynamic("AutoScalingType")(AutoScalingType.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
-    if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.get.asInstanceOf[js.Any])
-    if (Os != null) __obj.updateDynamic("Os")(Os.asInstanceOf[js.Any])
-    if (RootDeviceType != null) __obj.updateDynamic("RootDeviceType")(RootDeviceType.asInstanceOf[js.Any])
-    if (SshKeyName != null) __obj.updateDynamic("SshKeyName")(SshKeyName.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
-    if (VirtualizationType != null) __obj.updateDynamic("VirtualizationType")(VirtualizationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceRequest]
   }
+  @scala.inline
+  implicit class CreateInstanceRequestOps[Self <: CreateInstanceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLayerIdsVarargs(value: String*): Self = this.set("LayerIds", js.Array(value :_*))
+    @scala.inline
+    def setLayerIds(value: Strings): Self = this.set("LayerIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAgentVersion(value: String): Self = this.set("AgentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentVersion: Self = this.set("AgentVersion", js.undefined)
+    @scala.inline
+    def setAmiId(value: String): Self = this.set("AmiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiId: Self = this.set("AmiId", js.undefined)
+    @scala.inline
+    def setArchitecture(value: Architecture): Self = this.set("Architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("Architecture", js.undefined)
+    @scala.inline
+    def setAutoScalingType(value: AutoScalingType): Self = this.set("AutoScalingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingType: Self = this.set("AutoScalingType", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    @scala.inline
+    def setBlockDeviceMappings(value: BlockDeviceMappings): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("Hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("Hostname", js.undefined)
+    @scala.inline
+    def setInstallUpdatesOnBoot(value: Boolean): Self = this.set("InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallUpdatesOnBoot: Self = this.set("InstallUpdatesOnBoot", js.undefined)
+    @scala.inline
+    def setOs(value: String): Self = this.set("Os", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs: Self = this.set("Os", js.undefined)
+    @scala.inline
+    def setRootDeviceType(value: RootDeviceType): Self = this.set("RootDeviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootDeviceType: Self = this.set("RootDeviceType", js.undefined)
+    @scala.inline
+    def setSshKeyName(value: String): Self = this.set("SshKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshKeyName: Self = this.set("SshKeyName", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTenancy(value: String): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+    @scala.inline
+    def setVirtualizationType(value: String): Self = this.set("VirtualizationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualizationType: Self = this.set("VirtualizationType", js.undefined)
+  }
+  
 }
 

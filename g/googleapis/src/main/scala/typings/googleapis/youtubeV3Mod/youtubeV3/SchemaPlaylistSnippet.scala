@@ -54,28 +54,60 @@ trait SchemaPlaylistSnippet extends js.Object {
 
 object SchemaPlaylistSnippet {
   @scala.inline
-  def apply(
-    channelId: String = null,
-    channelTitle: String = null,
-    defaultLanguage: String = null,
-    description: String = null,
-    localized: SchemaPlaylistLocalization = null,
-    publishedAt: String = null,
-    tags: js.Array[String] = null,
-    thumbnails: SchemaThumbnailDetails = null,
-    title: String = null
-  ): SchemaPlaylistSnippet = {
+  def apply(): SchemaPlaylistSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle.asInstanceOf[js.Any])
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlaylistSnippet]
   }
+  @scala.inline
+  implicit class SchemaPlaylistSnippetOps[Self <: SchemaPlaylistSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setChannelTitle(value: String): Self = this.set("channelTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelTitle: Self = this.set("channelTitle", js.undefined)
+    @scala.inline
+    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLocalized(value: SchemaPlaylistLocalization): Self = this.set("localized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalized: Self = this.set("localized", js.undefined)
+    @scala.inline
+    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setThumbnails(value: SchemaThumbnailDetails): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

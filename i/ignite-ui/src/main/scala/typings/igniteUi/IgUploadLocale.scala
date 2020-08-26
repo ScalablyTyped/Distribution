@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgUploadLocale
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,250 +15,328 @@ trait IgUploadLocale
     * Get or set error message when AJAX Request to get file size throws error.
     *
     */
-  var errorMessageAJAXRequestFileSize: js.UndefOr[String] = js.undefined
+  var errorMessageAJAXRequestFileSize: js.UndefOr[String] = js.native
   /**
     * Get or set error message when ajax call to send cancel upload command.
     *
     */
-  var errorMessageCancelUpload: js.UndefOr[String] = js.undefined
+  var errorMessageCancelUpload: js.UndefOr[String] = js.native
   /**
     * Get or set error message when trying to drop more than 1 file and mode is single.
     *
     */
-  var errorMessageDropMultipleFilesWhenSingleModel: js.UndefOr[String] = js.undefined
+  var errorMessageDropMultipleFilesWhenSingleModel: js.UndefOr[String] = js.native
   /**
     * Get or set message shown when max file size of the uploaded file exceeds the limit.
     *
     */
-  var errorMessageFileSizeExceeded: js.UndefOr[String] = js.undefined
+  var errorMessageFileSizeExceeded: js.UndefOr[String] = js.native
   /**
     * Get or set error message when ajax call to get file status throws error.
     *
     */
-  var errorMessageGetFileStatus: js.UndefOr[String] = js.undefined
+  var errorMessageGetFileStatus: js.UndefOr[String] = js.native
   /**
     * Get or set error message when maximum simultaneous files is less or equal to 0.
     *
     */
-  var errorMessageMaxSimultaneousFiles: js.UndefOr[String] = js.undefined
+  var errorMessageMaxSimultaneousFiles: js.UndefOr[String] = js.native
   /**
     * Get or set error message when maximum allowed files exceeded.
     *
     */
-  var errorMessageMaxUploadedFiles: js.UndefOr[String] = js.undefined
+  var errorMessageMaxUploadedFiles: js.UndefOr[String] = js.native
   /**
     * Get or set error message when file is not found.
     *
     */
-  var errorMessageNoSuchFile: js.UndefOr[String] = js.undefined
+  var errorMessageNoSuchFile: js.UndefOr[String] = js.native
   /**
     * Get or set error message different from the other messages.
     *
     */
-  var errorMessageOther: js.UndefOr[String] = js.undefined
+  var errorMessageOther: js.UndefOr[String] = js.native
   /**
     * Get or set error message when trying to remove non existing file.
     *
     */
-  var errorMessageTryToRemoveNonExistingFile: js.UndefOr[String] = js.undefined
+  var errorMessageTryToRemoveNonExistingFile: js.UndefOr[String] = js.native
   /**
     * Get or set error message when trying to start non existing file.
     *
     */
-  var errorMessageTryToStartNonExistingFile: js.UndefOr[String] = js.undefined
+  var errorMessageTryToStartNonExistingFile: js.UndefOr[String] = js.native
   /**
     * Get or set error message when file extension validation failed.
     *
     */
-  var errorMessageValidatingFileExtension: js.UndefOr[String] = js.undefined
+  var errorMessageValidatingFileExtension: js.UndefOr[String] = js.native
   /**
     * Get or set label for browse button in main container.
     *
     */
-  var labelAddButton: js.UndefOr[String] = js.undefined
+  var labelAddButton: js.UndefOr[String] = js.native
   /**
     * Get or set label for summary Clear all button. It will be shown only in multiple upload mode.
     *
     */
-  var labelClearAllButton: js.UndefOr[String] = js.undefined
+  var labelClearAllButton: js.UndefOr[String] = js.native
   /**
     * Get or set label for show/hide details button when main container is shown.
     *
     */
-  var labelHideDetails: js.UndefOr[String] = js.undefined
+  var labelHideDetails: js.UndefOr[String] = js.native
   /**
     * Get or set filename when it could not be shown the whole file name and should be shorten.
     *
     */
-  var labelProgressBarFileNameContinue: js.UndefOr[String] = js.undefined
+  var labelProgressBarFileNameContinue: js.UndefOr[String] = js.native
   /**
     * Get or set label for show/hide details button when main container is hidden.
     *
     */
-  var labelShowDetails: js.UndefOr[String] = js.undefined
+  var labelShowDetails: js.UndefOr[String] = js.native
   /**
     * Get or set template for showing uploading information in summary progress bar. It will be shown only in multiple upload mode. {0} uploaded filesize. {1} - total file size.
     *
     */
-  var labelSummaryProgressBarTemplate: js.UndefOr[String] = js.undefined
+  var labelSummaryProgressBarTemplate: js.UndefOr[String] = js.native
   /**
     * Get or set label for button cancelling all files. Shown only in multiple upload mode.
     *
     */
-  var labelSummaryProgressButtonCancel: js.UndefOr[String] = js.undefined
+  var labelSummaryProgressButtonCancel: js.UndefOr[String] = js.native
   /**
     * Get or set label for start upload batch files. Shown only in multiple upload mode and autostartupload is false.
     *
     */
-  var labelSummaryProgressButtonContinue: js.UndefOr[String] = js.undefined
+  var labelSummaryProgressButtonContinue: js.UndefOr[String] = js.native
   /**
     * Get or set label when upload is finished. Shown only in multiple upload mode.
     *
     */
-  var labelSummaryProgressButtonDone: js.UndefOr[String] = js.undefined
+  var labelSummaryProgressButtonDone: js.UndefOr[String] = js.native
   /**
     * Get or set template for showing summary template. {0} is count of uploaded files. {1} is total count of file to be uploaded.
     *
     */
-  var labelSummaryTemplate: js.UndefOr[String] = js.undefined
+  var labelSummaryTemplate: js.UndefOr[String] = js.native
   /**
     * Get or set label for the first shown browse button. When file is selected for the first time this button is hidden.
     *
     */
-  var labelUploadButton: js.UndefOr[String] = js.undefined
+  var labelUploadButton: js.UndefOr[String] = js.native
   /**
     * Get or set title for browse button in main container.
     *
     */
-  var titleAddFileButton: js.UndefOr[String] = js.undefined
+  var titleAddFileButton: js.UndefOr[String] = js.native
   /**
     * Get or set title for the cancel upload button.
     *
     */
-  var titleCancelUploadButton: js.UndefOr[String] = js.undefined
+  var titleCancelUploadButton: js.UndefOr[String] = js.native
   /**
     * Get or set title for summary Clear all button. It will be shown only in multiple upload mode.
     *
     */
-  var titleClearAllButton: js.UndefOr[String] = js.undefined
+  var titleClearAllButton: js.UndefOr[String] = js.native
   /**
     * Get or set title for summary Clear all button. It will be shown only in multiple upload mode.
     *
     */
-  var titleClearUploaded: js.UndefOr[String] = js.undefined
+  var titleClearUploaded: js.UndefOr[String] = js.native
   /**
     * Get or set title for hide details button.
     *
     */
-  var titleHideDetailsButton: js.UndefOr[String] = js.undefined
+  var titleHideDetailsButton: js.UndefOr[String] = js.native
   /**
     * Get or set title for show details button.
     *
     */
-  var titleShowDetailsButton: js.UndefOr[String] = js.undefined
+  var titleShowDetailsButton: js.UndefOr[String] = js.native
   /**
     * Get or set title for Continue button.
     *
     */
-  var titleSingleUploadButtonContinue: js.UndefOr[String] = js.undefined
+  var titleSingleUploadButtonContinue: js.UndefOr[String] = js.native
   /**
     * Get or set title for button cancelling all files. Shown only in multiple upload mode.
     *
     */
-  var titleSummaryProgressButtonCancel: js.UndefOr[String] = js.undefined
+  var titleSummaryProgressButtonCancel: js.UndefOr[String] = js.native
   /**
     * Get or set title for start upload batch files. Shown only in multiple upload mode and autostartupload is false.
     *
     */
-  var titleSummaryProgressButtonContinue: js.UndefOr[String] = js.undefined
+  var titleSummaryProgressButtonContinue: js.UndefOr[String] = js.native
   /**
     * Get or set title when upload is finished. Shown only in multiple upload mode.
     *
     */
-  var titleSummaryProgressButtonDone: js.UndefOr[String] = js.undefined
+  var titleSummaryProgressButtonDone: js.UndefOr[String] = js.native
   /**
     * Get or set title for the first shown browse button. When file is selected for the first time this button is hidden.
     *
     */
-  var titleUploadFileButtonInit: js.UndefOr[String] = js.undefined
+  var titleUploadFileButtonInit: js.UndefOr[String] = js.native
 }
 
 object IgUploadLocale {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    errorMessageAJAXRequestFileSize: String = null,
-    errorMessageCancelUpload: String = null,
-    errorMessageDropMultipleFilesWhenSingleModel: String = null,
-    errorMessageFileSizeExceeded: String = null,
-    errorMessageGetFileStatus: String = null,
-    errorMessageMaxSimultaneousFiles: String = null,
-    errorMessageMaxUploadedFiles: String = null,
-    errorMessageNoSuchFile: String = null,
-    errorMessageOther: String = null,
-    errorMessageTryToRemoveNonExistingFile: String = null,
-    errorMessageTryToStartNonExistingFile: String = null,
-    errorMessageValidatingFileExtension: String = null,
-    labelAddButton: String = null,
-    labelClearAllButton: String = null,
-    labelHideDetails: String = null,
-    labelProgressBarFileNameContinue: String = null,
-    labelShowDetails: String = null,
-    labelSummaryProgressBarTemplate: String = null,
-    labelSummaryProgressButtonCancel: String = null,
-    labelSummaryProgressButtonContinue: String = null,
-    labelSummaryProgressButtonDone: String = null,
-    labelSummaryTemplate: String = null,
-    labelUploadButton: String = null,
-    titleAddFileButton: String = null,
-    titleCancelUploadButton: String = null,
-    titleClearAllButton: String = null,
-    titleClearUploaded: String = null,
-    titleHideDetailsButton: String = null,
-    titleShowDetailsButton: String = null,
-    titleSingleUploadButtonContinue: String = null,
-    titleSummaryProgressButtonCancel: String = null,
-    titleSummaryProgressButtonContinue: String = null,
-    titleSummaryProgressButtonDone: String = null,
-    titleUploadFileButtonInit: String = null
-  ): IgUploadLocale = {
+  def apply(): IgUploadLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (errorMessageAJAXRequestFileSize != null) __obj.updateDynamic("errorMessageAJAXRequestFileSize")(errorMessageAJAXRequestFileSize.asInstanceOf[js.Any])
-    if (errorMessageCancelUpload != null) __obj.updateDynamic("errorMessageCancelUpload")(errorMessageCancelUpload.asInstanceOf[js.Any])
-    if (errorMessageDropMultipleFilesWhenSingleModel != null) __obj.updateDynamic("errorMessageDropMultipleFilesWhenSingleModel")(errorMessageDropMultipleFilesWhenSingleModel.asInstanceOf[js.Any])
-    if (errorMessageFileSizeExceeded != null) __obj.updateDynamic("errorMessageFileSizeExceeded")(errorMessageFileSizeExceeded.asInstanceOf[js.Any])
-    if (errorMessageGetFileStatus != null) __obj.updateDynamic("errorMessageGetFileStatus")(errorMessageGetFileStatus.asInstanceOf[js.Any])
-    if (errorMessageMaxSimultaneousFiles != null) __obj.updateDynamic("errorMessageMaxSimultaneousFiles")(errorMessageMaxSimultaneousFiles.asInstanceOf[js.Any])
-    if (errorMessageMaxUploadedFiles != null) __obj.updateDynamic("errorMessageMaxUploadedFiles")(errorMessageMaxUploadedFiles.asInstanceOf[js.Any])
-    if (errorMessageNoSuchFile != null) __obj.updateDynamic("errorMessageNoSuchFile")(errorMessageNoSuchFile.asInstanceOf[js.Any])
-    if (errorMessageOther != null) __obj.updateDynamic("errorMessageOther")(errorMessageOther.asInstanceOf[js.Any])
-    if (errorMessageTryToRemoveNonExistingFile != null) __obj.updateDynamic("errorMessageTryToRemoveNonExistingFile")(errorMessageTryToRemoveNonExistingFile.asInstanceOf[js.Any])
-    if (errorMessageTryToStartNonExistingFile != null) __obj.updateDynamic("errorMessageTryToStartNonExistingFile")(errorMessageTryToStartNonExistingFile.asInstanceOf[js.Any])
-    if (errorMessageValidatingFileExtension != null) __obj.updateDynamic("errorMessageValidatingFileExtension")(errorMessageValidatingFileExtension.asInstanceOf[js.Any])
-    if (labelAddButton != null) __obj.updateDynamic("labelAddButton")(labelAddButton.asInstanceOf[js.Any])
-    if (labelClearAllButton != null) __obj.updateDynamic("labelClearAllButton")(labelClearAllButton.asInstanceOf[js.Any])
-    if (labelHideDetails != null) __obj.updateDynamic("labelHideDetails")(labelHideDetails.asInstanceOf[js.Any])
-    if (labelProgressBarFileNameContinue != null) __obj.updateDynamic("labelProgressBarFileNameContinue")(labelProgressBarFileNameContinue.asInstanceOf[js.Any])
-    if (labelShowDetails != null) __obj.updateDynamic("labelShowDetails")(labelShowDetails.asInstanceOf[js.Any])
-    if (labelSummaryProgressBarTemplate != null) __obj.updateDynamic("labelSummaryProgressBarTemplate")(labelSummaryProgressBarTemplate.asInstanceOf[js.Any])
-    if (labelSummaryProgressButtonCancel != null) __obj.updateDynamic("labelSummaryProgressButtonCancel")(labelSummaryProgressButtonCancel.asInstanceOf[js.Any])
-    if (labelSummaryProgressButtonContinue != null) __obj.updateDynamic("labelSummaryProgressButtonContinue")(labelSummaryProgressButtonContinue.asInstanceOf[js.Any])
-    if (labelSummaryProgressButtonDone != null) __obj.updateDynamic("labelSummaryProgressButtonDone")(labelSummaryProgressButtonDone.asInstanceOf[js.Any])
-    if (labelSummaryTemplate != null) __obj.updateDynamic("labelSummaryTemplate")(labelSummaryTemplate.asInstanceOf[js.Any])
-    if (labelUploadButton != null) __obj.updateDynamic("labelUploadButton")(labelUploadButton.asInstanceOf[js.Any])
-    if (titleAddFileButton != null) __obj.updateDynamic("titleAddFileButton")(titleAddFileButton.asInstanceOf[js.Any])
-    if (titleCancelUploadButton != null) __obj.updateDynamic("titleCancelUploadButton")(titleCancelUploadButton.asInstanceOf[js.Any])
-    if (titleClearAllButton != null) __obj.updateDynamic("titleClearAllButton")(titleClearAllButton.asInstanceOf[js.Any])
-    if (titleClearUploaded != null) __obj.updateDynamic("titleClearUploaded")(titleClearUploaded.asInstanceOf[js.Any])
-    if (titleHideDetailsButton != null) __obj.updateDynamic("titleHideDetailsButton")(titleHideDetailsButton.asInstanceOf[js.Any])
-    if (titleShowDetailsButton != null) __obj.updateDynamic("titleShowDetailsButton")(titleShowDetailsButton.asInstanceOf[js.Any])
-    if (titleSingleUploadButtonContinue != null) __obj.updateDynamic("titleSingleUploadButtonContinue")(titleSingleUploadButtonContinue.asInstanceOf[js.Any])
-    if (titleSummaryProgressButtonCancel != null) __obj.updateDynamic("titleSummaryProgressButtonCancel")(titleSummaryProgressButtonCancel.asInstanceOf[js.Any])
-    if (titleSummaryProgressButtonContinue != null) __obj.updateDynamic("titleSummaryProgressButtonContinue")(titleSummaryProgressButtonContinue.asInstanceOf[js.Any])
-    if (titleSummaryProgressButtonDone != null) __obj.updateDynamic("titleSummaryProgressButtonDone")(titleSummaryProgressButtonDone.asInstanceOf[js.Any])
-    if (titleUploadFileButtonInit != null) __obj.updateDynamic("titleUploadFileButtonInit")(titleUploadFileButtonInit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgUploadLocale]
   }
+  @scala.inline
+  implicit class IgUploadLocaleOps[Self <: IgUploadLocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorMessageAJAXRequestFileSize(value: String): Self = this.set("errorMessageAJAXRequestFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageAJAXRequestFileSize: Self = this.set("errorMessageAJAXRequestFileSize", js.undefined)
+    @scala.inline
+    def setErrorMessageCancelUpload(value: String): Self = this.set("errorMessageCancelUpload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageCancelUpload: Self = this.set("errorMessageCancelUpload", js.undefined)
+    @scala.inline
+    def setErrorMessageDropMultipleFilesWhenSingleModel(value: String): Self = this.set("errorMessageDropMultipleFilesWhenSingleModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageDropMultipleFilesWhenSingleModel: Self = this.set("errorMessageDropMultipleFilesWhenSingleModel", js.undefined)
+    @scala.inline
+    def setErrorMessageFileSizeExceeded(value: String): Self = this.set("errorMessageFileSizeExceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageFileSizeExceeded: Self = this.set("errorMessageFileSizeExceeded", js.undefined)
+    @scala.inline
+    def setErrorMessageGetFileStatus(value: String): Self = this.set("errorMessageGetFileStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageGetFileStatus: Self = this.set("errorMessageGetFileStatus", js.undefined)
+    @scala.inline
+    def setErrorMessageMaxSimultaneousFiles(value: String): Self = this.set("errorMessageMaxSimultaneousFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageMaxSimultaneousFiles: Self = this.set("errorMessageMaxSimultaneousFiles", js.undefined)
+    @scala.inline
+    def setErrorMessageMaxUploadedFiles(value: String): Self = this.set("errorMessageMaxUploadedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageMaxUploadedFiles: Self = this.set("errorMessageMaxUploadedFiles", js.undefined)
+    @scala.inline
+    def setErrorMessageNoSuchFile(value: String): Self = this.set("errorMessageNoSuchFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageNoSuchFile: Self = this.set("errorMessageNoSuchFile", js.undefined)
+    @scala.inline
+    def setErrorMessageOther(value: String): Self = this.set("errorMessageOther", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageOther: Self = this.set("errorMessageOther", js.undefined)
+    @scala.inline
+    def setErrorMessageTryToRemoveNonExistingFile(value: String): Self = this.set("errorMessageTryToRemoveNonExistingFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageTryToRemoveNonExistingFile: Self = this.set("errorMessageTryToRemoveNonExistingFile", js.undefined)
+    @scala.inline
+    def setErrorMessageTryToStartNonExistingFile(value: String): Self = this.set("errorMessageTryToStartNonExistingFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageTryToStartNonExistingFile: Self = this.set("errorMessageTryToStartNonExistingFile", js.undefined)
+    @scala.inline
+    def setErrorMessageValidatingFileExtension(value: String): Self = this.set("errorMessageValidatingFileExtension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessageValidatingFileExtension: Self = this.set("errorMessageValidatingFileExtension", js.undefined)
+    @scala.inline
+    def setLabelAddButton(value: String): Self = this.set("labelAddButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAddButton: Self = this.set("labelAddButton", js.undefined)
+    @scala.inline
+    def setLabelClearAllButton(value: String): Self = this.set("labelClearAllButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelClearAllButton: Self = this.set("labelClearAllButton", js.undefined)
+    @scala.inline
+    def setLabelHideDetails(value: String): Self = this.set("labelHideDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHideDetails: Self = this.set("labelHideDetails", js.undefined)
+    @scala.inline
+    def setLabelProgressBarFileNameContinue(value: String): Self = this.set("labelProgressBarFileNameContinue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelProgressBarFileNameContinue: Self = this.set("labelProgressBarFileNameContinue", js.undefined)
+    @scala.inline
+    def setLabelShowDetails(value: String): Self = this.set("labelShowDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelShowDetails: Self = this.set("labelShowDetails", js.undefined)
+    @scala.inline
+    def setLabelSummaryProgressBarTemplate(value: String): Self = this.set("labelSummaryProgressBarTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSummaryProgressBarTemplate: Self = this.set("labelSummaryProgressBarTemplate", js.undefined)
+    @scala.inline
+    def setLabelSummaryProgressButtonCancel(value: String): Self = this.set("labelSummaryProgressButtonCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSummaryProgressButtonCancel: Self = this.set("labelSummaryProgressButtonCancel", js.undefined)
+    @scala.inline
+    def setLabelSummaryProgressButtonContinue(value: String): Self = this.set("labelSummaryProgressButtonContinue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSummaryProgressButtonContinue: Self = this.set("labelSummaryProgressButtonContinue", js.undefined)
+    @scala.inline
+    def setLabelSummaryProgressButtonDone(value: String): Self = this.set("labelSummaryProgressButtonDone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSummaryProgressButtonDone: Self = this.set("labelSummaryProgressButtonDone", js.undefined)
+    @scala.inline
+    def setLabelSummaryTemplate(value: String): Self = this.set("labelSummaryTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSummaryTemplate: Self = this.set("labelSummaryTemplate", js.undefined)
+    @scala.inline
+    def setLabelUploadButton(value: String): Self = this.set("labelUploadButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelUploadButton: Self = this.set("labelUploadButton", js.undefined)
+    @scala.inline
+    def setTitleAddFileButton(value: String): Self = this.set("titleAddFileButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleAddFileButton: Self = this.set("titleAddFileButton", js.undefined)
+    @scala.inline
+    def setTitleCancelUploadButton(value: String): Self = this.set("titleCancelUploadButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleCancelUploadButton: Self = this.set("titleCancelUploadButton", js.undefined)
+    @scala.inline
+    def setTitleClearAllButton(value: String): Self = this.set("titleClearAllButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleClearAllButton: Self = this.set("titleClearAllButton", js.undefined)
+    @scala.inline
+    def setTitleClearUploaded(value: String): Self = this.set("titleClearUploaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleClearUploaded: Self = this.set("titleClearUploaded", js.undefined)
+    @scala.inline
+    def setTitleHideDetailsButton(value: String): Self = this.set("titleHideDetailsButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleHideDetailsButton: Self = this.set("titleHideDetailsButton", js.undefined)
+    @scala.inline
+    def setTitleShowDetailsButton(value: String): Self = this.set("titleShowDetailsButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleShowDetailsButton: Self = this.set("titleShowDetailsButton", js.undefined)
+    @scala.inline
+    def setTitleSingleUploadButtonContinue(value: String): Self = this.set("titleSingleUploadButtonContinue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleSingleUploadButtonContinue: Self = this.set("titleSingleUploadButtonContinue", js.undefined)
+    @scala.inline
+    def setTitleSummaryProgressButtonCancel(value: String): Self = this.set("titleSummaryProgressButtonCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleSummaryProgressButtonCancel: Self = this.set("titleSummaryProgressButtonCancel", js.undefined)
+    @scala.inline
+    def setTitleSummaryProgressButtonContinue(value: String): Self = this.set("titleSummaryProgressButtonContinue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleSummaryProgressButtonContinue: Self = this.set("titleSummaryProgressButtonContinue", js.undefined)
+    @scala.inline
+    def setTitleSummaryProgressButtonDone(value: String): Self = this.set("titleSummaryProgressButtonDone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleSummaryProgressButtonDone: Self = this.set("titleSummaryProgressButtonDone", js.undefined)
+    @scala.inline
+    def setTitleUploadFileButtonInit(value: String): Self = this.set("titleUploadFileButtonInit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleUploadFileButtonInit: Self = this.set("titleUploadFileButtonInit", js.undefined)
+  }
+  
 }
 

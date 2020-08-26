@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isDisabledMod extends js.Object {
   def default(): Unit = js.native
+  def default(message: js.UndefOr[scala.Nothing], options: Inverted): Unit = js.native
   def default(message: String): Unit = js.native
   def default(message: String, options: Inverted): Unit = js.native
 }

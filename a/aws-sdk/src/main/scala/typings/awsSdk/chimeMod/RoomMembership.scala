@@ -27,20 +27,42 @@ trait RoomMembership extends js.Object {
 
 object RoomMembership {
   @scala.inline
-  def apply(
-    InvitedBy: NonEmptyString = null,
-    Member: Member = null,
-    Role: RoomMembershipRole = null,
-    RoomId: NonEmptyString = null,
-    UpdatedTimestamp: Iso8601Timestamp = null
-  ): RoomMembership = {
+  def apply(): RoomMembership = {
     val __obj = js.Dynamic.literal()
-    if (InvitedBy != null) __obj.updateDynamic("InvitedBy")(InvitedBy.asInstanceOf[js.Any])
-    if (Member != null) __obj.updateDynamic("Member")(Member.asInstanceOf[js.Any])
-    if (Role != null) __obj.updateDynamic("Role")(Role.asInstanceOf[js.Any])
-    if (RoomId != null) __obj.updateDynamic("RoomId")(RoomId.asInstanceOf[js.Any])
-    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoomMembership]
   }
+  @scala.inline
+  implicit class RoomMembershipOps[Self <: RoomMembership] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInvitedBy(value: NonEmptyString): Self = this.set("InvitedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedBy: Self = this.set("InvitedBy", js.undefined)
+    @scala.inline
+    def setMember(value: Member): Self = this.set("Member", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMember: Self = this.set("Member", js.undefined)
+    @scala.inline
+    def setRole(value: RoomMembershipRole): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("Role", js.undefined)
+    @scala.inline
+    def setRoomId(value: NonEmptyString): Self = this.set("RoomId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomId: Self = this.set("RoomId", js.undefined)
+    @scala.inline
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+  }
+  
 }
 

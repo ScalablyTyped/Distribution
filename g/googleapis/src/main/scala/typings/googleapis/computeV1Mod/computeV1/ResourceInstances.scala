@@ -98,6 +98,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def addAccessConfig(): GaxiosPromise[SchemaOperation] = js.native
   def addAccessConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addAccessConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addAccessConfig(params: ParamsResourceInstancesAddaccessconfig): GaxiosPromise[SchemaOperation] = js.native
   def addAccessConfig(params: ParamsResourceInstancesAddaccessconfig, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addAccessConfig(
@@ -197,6 +198,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaInstanceAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaInstanceAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceInstancesAggregatedlist): GaxiosPromise[SchemaInstanceAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceInstancesAggregatedlist,
@@ -298,6 +300,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def attachDisk(): GaxiosPromise[SchemaOperation] = js.native
   def attachDisk(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def attachDisk(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def attachDisk(params: ParamsResourceInstancesAttachdisk): GaxiosPromise[SchemaOperation] = js.native
   def attachDisk(params: ParamsResourceInstancesAttachdisk, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def attachDisk(
@@ -388,6 +391,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -485,6 +489,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def deleteAccessConfig(): GaxiosPromise[SchemaOperation] = js.native
   def deleteAccessConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def deleteAccessConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def deleteAccessConfig(params: ParamsResourceInstancesDeleteaccessconfig): GaxiosPromise[SchemaOperation] = js.native
   def deleteAccessConfig(params: ParamsResourceInstancesDeleteaccessconfig, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def deleteAccessConfig(
@@ -578,6 +583,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def detachDisk(): GaxiosPromise[SchemaOperation] = js.native
   def detachDisk(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def detachDisk(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def detachDisk(params: ParamsResourceInstancesDetachdisk): GaxiosPromise[SchemaOperation] = js.native
   def detachDisk(params: ParamsResourceInstancesDetachdisk, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def detachDisk(
@@ -667,6 +673,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstance] = js.native
   def get(params: ParamsResourceInstancesGet): GaxiosPromise[SchemaInstance] = js.native
   def get(params: ParamsResourceInstancesGet, callback: BodyResponseCallback[SchemaInstance]): Unit = js.native
   def get(
@@ -697,6 +704,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInstancesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInstancesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -786,6 +794,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def getSerialPortOutput(): GaxiosPromise[SchemaSerialPortOutput] = js.native
   def getSerialPortOutput(callback: BodyResponseCallback[SchemaSerialPortOutput]): Unit = js.native
+  def getSerialPortOutput(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSerialPortOutput] = js.native
   def getSerialPortOutput(params: ParamsResourceInstancesGetserialportoutput): GaxiosPromise[SchemaSerialPortOutput] = js.native
   def getSerialPortOutput(
     params: ParamsResourceInstancesGetserialportoutput,
@@ -818,6 +827,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def getShieldedInstanceIdentity(): GaxiosPromise[SchemaShieldedInstanceIdentity] = js.native
   def getShieldedInstanceIdentity(callback: BodyResponseCallback[SchemaShieldedInstanceIdentity]): Unit = js.native
+  def getShieldedInstanceIdentity(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaShieldedInstanceIdentity] = js.native
   def getShieldedInstanceIdentity(params: ParamsResourceInstancesGetshieldedinstanceidentity): GaxiosPromise[SchemaShieldedInstanceIdentity] = js.native
   def getShieldedInstanceIdentity(
     params: ParamsResourceInstancesGetshieldedinstanceidentity,
@@ -913,6 +923,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -1015,6 +1026,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaInstanceList] = js.native
   def list(callback: BodyResponseCallback[SchemaInstanceList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceList] = js.native
   def list(params: ParamsResourceInstancesList): GaxiosPromise[SchemaInstanceList] = js.native
   def list(params: ParamsResourceInstancesList, callback: BodyResponseCallback[SchemaInstanceList]): Unit = js.native
   def list(
@@ -1050,6 +1062,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def listReferrers(): GaxiosPromise[SchemaInstanceListReferrers] = js.native
   def listReferrers(callback: BodyResponseCallback[SchemaInstanceListReferrers]): Unit = js.native
+  def listReferrers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceListReferrers] = js.native
   def listReferrers(params: ParamsResourceInstancesListreferrers): GaxiosPromise[SchemaInstanceListReferrers] = js.native
   def listReferrers(
     params: ParamsResourceInstancesListreferrers,
@@ -1144,6 +1157,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def reset(): GaxiosPromise[SchemaOperation] = js.native
   def reset(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def reset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def reset(params: ParamsResourceInstancesReset): GaxiosPromise[SchemaOperation] = js.native
   def reset(params: ParamsResourceInstancesReset, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def reset(
@@ -1232,6 +1246,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setDeletionProtection(): GaxiosPromise[SchemaOperation] = js.native
   def setDeletionProtection(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setDeletionProtection(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setDeletionProtection(params: ParamsResourceInstancesSetdeletionprotection): GaxiosPromise[SchemaOperation] = js.native
   def setDeletionProtection(
     params: ParamsResourceInstancesSetdeletionprotection,
@@ -1332,6 +1347,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setDiskAutoDelete(): GaxiosPromise[SchemaOperation] = js.native
   def setDiskAutoDelete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setDiskAutoDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setDiskAutoDelete(params: ParamsResourceInstancesSetdiskautodelete): GaxiosPromise[SchemaOperation] = js.native
   def setDiskAutoDelete(params: ParamsResourceInstancesSetdiskautodelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setDiskAutoDelete(
@@ -1363,6 +1379,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInstancesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInstancesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -1458,6 +1475,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceInstancesSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceInstancesSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -1551,6 +1569,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setMachineResources(): GaxiosPromise[SchemaOperation] = js.native
   def setMachineResources(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setMachineResources(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMachineResources(params: ParamsResourceInstancesSetmachineresources): GaxiosPromise[SchemaOperation] = js.native
   def setMachineResources(
     params: ParamsResourceInstancesSetmachineresources,
@@ -1649,6 +1668,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setMachineType(): GaxiosPromise[SchemaOperation] = js.native
   def setMachineType(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setMachineType(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMachineType(params: ParamsResourceInstancesSetmachinetype): GaxiosPromise[SchemaOperation] = js.native
   def setMachineType(params: ParamsResourceInstancesSetmachinetype, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMachineType(
@@ -1744,6 +1764,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setMetadata(): GaxiosPromise[SchemaOperation] = js.native
   def setMetadata(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMetadata(params: ParamsResourceInstancesSetmetadata): GaxiosPromise[SchemaOperation] = js.native
   def setMetadata(params: ParamsResourceInstancesSetmetadata, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMetadata(
@@ -1840,6 +1861,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setMinCpuPlatform(): GaxiosPromise[SchemaOperation] = js.native
   def setMinCpuPlatform(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setMinCpuPlatform(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setMinCpuPlatform(params: ParamsResourceInstancesSetmincpuplatform): GaxiosPromise[SchemaOperation] = js.native
   def setMinCpuPlatform(params: ParamsResourceInstancesSetmincpuplatform, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setMinCpuPlatform(
@@ -1934,6 +1956,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setScheduling(): GaxiosPromise[SchemaOperation] = js.native
   def setScheduling(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setScheduling(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setScheduling(params: ParamsResourceInstancesSetscheduling): GaxiosPromise[SchemaOperation] = js.native
   def setScheduling(params: ParamsResourceInstancesSetscheduling, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setScheduling(
@@ -2029,6 +2052,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setServiceAccount(): GaxiosPromise[SchemaOperation] = js.native
   def setServiceAccount(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setServiceAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setServiceAccount(params: ParamsResourceInstancesSetserviceaccount): GaxiosPromise[SchemaOperation] = js.native
   def setServiceAccount(params: ParamsResourceInstancesSetserviceaccount, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setServiceAccount(
@@ -2063,6 +2087,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setShieldedInstanceIntegrityPolicy(): GaxiosPromise[SchemaOperation] = js.native
   def setShieldedInstanceIntegrityPolicy(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setShieldedInstanceIntegrityPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setShieldedInstanceIntegrityPolicy(params: ParamsResourceInstancesSetshieldedinstanceintegritypolicy): GaxiosPromise[SchemaOperation] = js.native
   def setShieldedInstanceIntegrityPolicy(
     params: ParamsResourceInstancesSetshieldedinstanceintegritypolicy,
@@ -2161,6 +2186,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def setTags(): GaxiosPromise[SchemaOperation] = js.native
   def setTags(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setTags(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setTags(params: ParamsResourceInstancesSettags): GaxiosPromise[SchemaOperation] = js.native
   def setTags(params: ParamsResourceInstancesSettags, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setTags(
@@ -2190,6 +2216,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def simulateMaintenanceEvent(): GaxiosPromise[SchemaOperation] = js.native
   def simulateMaintenanceEvent(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def simulateMaintenanceEvent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def simulateMaintenanceEvent(params: ParamsResourceInstancesSimulatemaintenanceevent): GaxiosPromise[SchemaOperation] = js.native
   def simulateMaintenanceEvent(
     params: ParamsResourceInstancesSimulatemaintenanceevent,
@@ -2283,6 +2310,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def start(): GaxiosPromise[SchemaOperation] = js.native
   def start(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def start(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def start(params: ParamsResourceInstancesStart): GaxiosPromise[SchemaOperation] = js.native
   def start(params: ParamsResourceInstancesStart, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def start(
@@ -2376,6 +2404,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def startWithEncryptionKey(): GaxiosPromise[SchemaOperation] = js.native
   def startWithEncryptionKey(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def startWithEncryptionKey(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def startWithEncryptionKey(params: ParamsResourceInstancesStartwithencryptionkey): GaxiosPromise[SchemaOperation] = js.native
   def startWithEncryptionKey(
     params: ParamsResourceInstancesStartwithencryptionkey,
@@ -2473,6 +2502,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def stop(): GaxiosPromise[SchemaOperation] = js.native
   def stop(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def stop(params: ParamsResourceInstancesStop): GaxiosPromise[SchemaOperation] = js.native
   def stop(params: ParamsResourceInstancesStop, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def stop(
@@ -2503,6 +2533,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInstancesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInstancesTestiampermissions,
@@ -2541,6 +2572,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def updateAccessConfig(): GaxiosPromise[SchemaOperation] = js.native
   def updateAccessConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateAccessConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateAccessConfig(params: ParamsResourceInstancesUpdateaccessconfig): GaxiosPromise[SchemaOperation] = js.native
   def updateAccessConfig(params: ParamsResourceInstancesUpdateaccessconfig, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updateAccessConfig(
@@ -2574,6 +2606,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def updateNetworkInterface(): GaxiosPromise[SchemaOperation] = js.native
   def updateNetworkInterface(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateNetworkInterface(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateNetworkInterface(params: ParamsResourceInstancesUpdatenetworkinterface): GaxiosPromise[SchemaOperation] = js.native
   def updateNetworkInterface(
     params: ParamsResourceInstancesUpdatenetworkinterface,
@@ -2610,6 +2643,7 @@ class ResourceInstances protected () extends js.Object {
     */
   def updateShieldedInstanceConfig(): GaxiosPromise[SchemaOperation] = js.native
   def updateShieldedInstanceConfig(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateShieldedInstanceConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateShieldedInstanceConfig(params: ParamsResourceInstancesUpdateshieldedinstanceconfig): GaxiosPromise[SchemaOperation] = js.native
   def updateShieldedInstanceConfig(
     params: ParamsResourceInstancesUpdateshieldedinstanceconfig,

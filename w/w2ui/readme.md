@@ -12,7 +12,7 @@ JavaScript UI library. Includes grid, layout, toolbars, trees, popups.
 | Keywords           | JavaScript, JS, UI, grid, layout, tree, popup |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6283 |
+| # downloads        | 7059 |
 | # stars            | 0 |
 
 ## Links

@@ -23,24 +23,47 @@ trait CreateLoadBalancerTlsCertificateRequest extends js.Object {
     */
   var loadBalancerName: ResourceName = js.native
   /**
-    * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
+    * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.native
 }
 
 object CreateLoadBalancerTlsCertificateRequest {
   @scala.inline
-  def apply(
-    certificateDomainName: DomainName,
-    certificateName: ResourceName,
-    loadBalancerName: ResourceName,
-    certificateAlternativeNames: DomainNameList = null,
-    tags: TagList = null
-  ): CreateLoadBalancerTlsCertificateRequest = {
+  def apply(certificateDomainName: DomainName, certificateName: ResourceName, loadBalancerName: ResourceName): CreateLoadBalancerTlsCertificateRequest = {
     val __obj = js.Dynamic.literal(certificateDomainName = certificateDomainName.asInstanceOf[js.Any], certificateName = certificateName.asInstanceOf[js.Any], loadBalancerName = loadBalancerName.asInstanceOf[js.Any])
-    if (certificateAlternativeNames != null) __obj.updateDynamic("certificateAlternativeNames")(certificateAlternativeNames.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoadBalancerTlsCertificateRequest]
   }
+  @scala.inline
+  implicit class CreateLoadBalancerTlsCertificateRequestOps[Self <: CreateLoadBalancerTlsCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateDomainName(value: DomainName): Self = this.set("certificateDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateName(value: ResourceName): Self = this.set("certificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancerName(value: ResourceName): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateAlternativeNamesVarargs(value: DomainName*): Self = this.set("certificateAlternativeNames", js.Array(value :_*))
+    @scala.inline
+    def setCertificateAlternativeNames(value: DomainNameList): Self = this.set("certificateAlternativeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAlternativeNames: Self = this.set("certificateAlternativeNames", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -22,12 +22,34 @@ trait Rule extends js.Object {
 
 object Rule {
   @scala.inline
-  def apply(attribute: DeviceAttribute = null, operator: RuleOperator = null, value: String = null): Rule = {
+  def apply(): Rule = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rule]
   }
+  @scala.inline
+  implicit class RuleOps[Self <: Rule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribute(value: DeviceAttribute): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    @scala.inline
+    def setOperator(value: RuleOperator): Self = this.set("operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("operator", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

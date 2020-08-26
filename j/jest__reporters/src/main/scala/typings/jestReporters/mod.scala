@@ -1,18 +1,13 @@
 package typings.jestReporters
 
+import typings.jestReporters.anon.Basename
 import typings.jestReporters.coverageReporterMod.default
-import typings.jestReporters.typesMod.Context
 import typings.jestReporters.typesMod.CoverageReporterOptions
-import typings.jestReporters.typesMod.ReporterOnStartOptions
-import typings.jestReporters.typesMod.Test
 import typings.jestReporters.typesMod.TestSchedulerContext
-import typings.jestTestResult.typesMod.AggregatedResult
 import typings.jestTestResult.typesMod.AssertionResult
 import typings.jestTestResult.typesMod.Suite
-import typings.jestTestResult.typesMod.TestResult
 import typings.jestTypes.configMod.GlobalConfig
-import typings.std.Error
-import typings.std.Set
+import typings.jestTypes.configMod.ProjectConfig
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,22 +17,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   @js.native
   class BaseReporter ()
-    extends typings.jestReporters.baseReporterMod.BaseReporter {
-    /* CompleteClass */
-    /* protected */ override def _setError(error: Error): Unit = js.native
-    /* CompleteClass */
-    override def getLastError(): Error | Unit = js.native
-    /* CompleteClass */
-    override def log(message: String): Unit = js.native
-    /* CompleteClass */
-    override def onRunComplete(contexts: Set[Context], results: AggregatedResult): js.Promise[Unit] | Unit = js.native
-    /* CompleteClass */
-    override def onRunStart(results: AggregatedResult, options: ReporterOnStartOptions): js.Promise[Unit] | Unit = js.native
-    /* CompleteClass */
-    override def onTestResult(test: Test, testResult: TestResult, aggregatedResult: AggregatedResult): js.Promise[Unit] | Unit = js.native
-    /* CompleteClass */
-    override def onTestStart(test: Test): js.Promise[Unit] | Unit = js.native
-  }
+    extends typings.jestReporters.baseReporterMod.BaseReporter
   
   @js.native
   class CoverageReporter protected () extends default {
@@ -78,6 +58,17 @@ object mod extends js.Object {
   object VerboseReporter extends js.Object {
     def filterTestResults(testResults: js.Array[AssertionResult]): js.Array[AssertionResult] = js.native
     def groupTestsBySuites(testResults: js.Array[AssertionResult]): Suite = js.native
+  }
+  
+  @js.native
+  object utils extends js.Object {
+    def formatTestPath(config: GlobalConfig, testPath: String): String = js.native
+    def formatTestPath(config: ProjectConfig, testPath: String): String = js.native
+    def printDisplayName(config: ProjectConfig): String = js.native
+    def relativePath(config: GlobalConfig, testPath: String): Basename = js.native
+    def relativePath(config: ProjectConfig, testPath: String): Basename = js.native
+    def trimAndFormatPath(pad: Double, config: GlobalConfig, testPath: String, columns: Double): String = js.native
+    def trimAndFormatPath(pad: Double, config: ProjectConfig, testPath: String, columns: Double): String = js.native
   }
   
 }

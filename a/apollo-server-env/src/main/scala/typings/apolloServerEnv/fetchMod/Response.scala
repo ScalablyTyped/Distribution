@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Response () extends Body {
   def this(body: BodyInit) = this()
-  def this(body: BodyInit, init: ResponseInit) = this()
+  def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
   val headers: Headers = js.native
   val ok: Boolean = js.native
   val redirected: Boolean = js.native

@@ -22,14 +22,32 @@ trait IdentityDkimAttributes extends js.Object {
 
 object IdentityDkimAttributes {
   @scala.inline
-  def apply(
-    DkimEnabled: Enabled,
-    DkimVerificationStatus: VerificationStatus,
-    DkimTokens: VerificationTokenList = null
-  ): IdentityDkimAttributes = {
+  def apply(DkimEnabled: Enabled, DkimVerificationStatus: VerificationStatus): IdentityDkimAttributes = {
     val __obj = js.Dynamic.literal(DkimEnabled = DkimEnabled.asInstanceOf[js.Any], DkimVerificationStatus = DkimVerificationStatus.asInstanceOf[js.Any])
-    if (DkimTokens != null) __obj.updateDynamic("DkimTokens")(DkimTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityDkimAttributes]
   }
+  @scala.inline
+  implicit class IdentityDkimAttributesOps[Self <: IdentityDkimAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDkimEnabled(value: Enabled): Self = this.set("DkimEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDkimVerificationStatus(value: VerificationStatus): Self = this.set("DkimVerificationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDkimTokensVarargs(value: VerificationToken*): Self = this.set("DkimTokens", js.Array(value :_*))
+    @scala.inline
+    def setDkimTokens(value: VerificationTokenList): Self = this.set("DkimTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDkimTokens: Self = this.set("DkimTokens", js.undefined)
+  }
+  
 }
 

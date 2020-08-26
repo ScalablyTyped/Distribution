@@ -18,11 +18,30 @@ trait GetPhoneNumberSettingsResponse extends js.Object {
 
 object GetPhoneNumberSettingsResponse {
   @scala.inline
-  def apply(CallingName: CallingName = null, CallingNameUpdatedTimestamp: Iso8601Timestamp = null): GetPhoneNumberSettingsResponse = {
+  def apply(): GetPhoneNumberSettingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (CallingName != null) __obj.updateDynamic("CallingName")(CallingName.asInstanceOf[js.Any])
-    if (CallingNameUpdatedTimestamp != null) __obj.updateDynamic("CallingNameUpdatedTimestamp")(CallingNameUpdatedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPhoneNumberSettingsResponse]
   }
+  @scala.inline
+  implicit class GetPhoneNumberSettingsResponseOps[Self <: GetPhoneNumberSettingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallingName(value: CallingName): Self = this.set("CallingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallingName: Self = this.set("CallingName", js.undefined)
+    @scala.inline
+    def setCallingNameUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("CallingNameUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallingNameUpdatedTimestamp: Self = this.set("CallingNameUpdatedTimestamp", js.undefined)
+  }
+  
 }
 

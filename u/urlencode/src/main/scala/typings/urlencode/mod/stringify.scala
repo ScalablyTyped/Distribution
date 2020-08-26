@@ -13,6 +13,7 @@ object stringify extends js.Object {
     * @param charsetParam The charset for parsing
     */
   def apply(obj: js.Any): String = js.native
+  def apply(obj: js.Any, prefix: js.UndefOr[scala.Nothing], charsetParam: charsetParam): String = js.native
   def apply(obj: js.Any, prefix: charsetParam): String = js.native
   def apply(obj: js.Any, prefix: charsetParam, charsetParam: charsetParam): String = js.native
 }

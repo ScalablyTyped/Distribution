@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-progress" : "2.6.1"
+      "rc-progress" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-progress" : "2.6.1"
+      "rc-progress" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

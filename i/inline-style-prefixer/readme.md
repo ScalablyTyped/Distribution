@@ -10,9 +10,9 @@ Run-time Autoprefixer for JavaScript style objects
 | ------------------ | :-------------: |
 | Full name          | inline-style-prefixer |
 | Keywords           | react, react styling, prefixer, inline styles, autoprefixer, vendor prefix, userAgent |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 313 |
-| # downloads        | 40192162 |
+| # downloads        | 39752054 |
 | # stars            | 5 |
 
 ## Links

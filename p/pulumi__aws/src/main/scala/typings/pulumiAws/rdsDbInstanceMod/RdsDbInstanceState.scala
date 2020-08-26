@@ -27,18 +27,38 @@ trait RdsDbInstanceState extends js.Object {
 
 object RdsDbInstanceState {
   @scala.inline
-  def apply(
-    dbPassword: Input[String] = null,
-    dbUser: Input[String] = null,
-    rdsDbInstanceArn: Input[String] = null,
-    stackId: Input[String] = null
-  ): RdsDbInstanceState = {
+  def apply(): RdsDbInstanceState = {
     val __obj = js.Dynamic.literal()
-    if (dbPassword != null) __obj.updateDynamic("dbPassword")(dbPassword.asInstanceOf[js.Any])
-    if (dbUser != null) __obj.updateDynamic("dbUser")(dbUser.asInstanceOf[js.Any])
-    if (rdsDbInstanceArn != null) __obj.updateDynamic("rdsDbInstanceArn")(rdsDbInstanceArn.asInstanceOf[js.Any])
-    if (stackId != null) __obj.updateDynamic("stackId")(stackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RdsDbInstanceState]
   }
+  @scala.inline
+  implicit class RdsDbInstanceStateOps[Self <: RdsDbInstanceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDbPassword(value: Input[String]): Self = this.set("dbPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbPassword: Self = this.set("dbPassword", js.undefined)
+    @scala.inline
+    def setDbUser(value: Input[String]): Self = this.set("dbUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbUser: Self = this.set("dbUser", js.undefined)
+    @scala.inline
+    def setRdsDbInstanceArn(value: Input[String]): Self = this.set("rdsDbInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRdsDbInstanceArn: Self = this.set("rdsDbInstanceArn", js.undefined)
+    @scala.inline
+    def setStackId(value: Input[String]): Self = this.set("stackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("stackId", js.undefined)
+  }
+  
 }
 

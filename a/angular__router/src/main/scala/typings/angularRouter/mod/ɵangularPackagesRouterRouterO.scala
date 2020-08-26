@@ -29,11 +29,5 @@ class ɵangularPackagesRouterRouterO protected () extends OnDestroy {
   var store: js.Any = js.native
   /** @docsNotRequired */ val viewportScroller: ViewportScroller = js.native
   def init(): Unit = js.native
-  /**
-    * A callback method that performs custom clean-up, invoked immediately
-    * before a directive, pipe, or service instance is destroyed.
-    */
-  /* CompleteClass */
-  override def ngOnDestroy(): Unit = js.native
 }
 

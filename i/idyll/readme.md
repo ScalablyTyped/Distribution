@@ -12,7 +12,7 @@ Command line interface for idyll lang
 | Keywords           | idyll |
 | # releases         | 147 |
 | # dependents       | 0 |
-| # downloads        | 24974 |
+| # downloads        | 25381 |
 | # stars            | 0 |
 
 ## Links

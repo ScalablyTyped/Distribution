@@ -26,6 +26,9 @@ object grammarMod extends js.Object {
   class Grammar protected () extends js.Object {
     def this(rootNames: Iterable[String]) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions) = this()
+    def this(rootNames: Iterable[String], options: js.UndefOr[scala.Nothing], host: AsyncHost) = this()
+    def this(rootNames: Iterable[String], options: js.UndefOr[scala.Nothing], host: Host) = this()
+    def this(rootNames: Iterable[String], options: js.UndefOr[scala.Nothing], host: SyncHost) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: AsyncHost) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: Host) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: SyncHost) = this()
@@ -70,10 +73,14 @@ object grammarMod extends js.Object {
     def bindSync(cancelable: CancellationToken): Unit = js.native
     /* protected */ def binder: Binder = js.native
     def check(): js.Promise[Unit] = js.native
+    def check(sourceFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): js.Promise[Unit] = js.native
+    def check(sourceFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): js.Promise[Unit] = js.native
     def check(sourceFile: SourceFile): js.Promise[Unit] = js.native
     def check(sourceFile: SourceFile, cancelable: Cancelable): js.Promise[Unit] = js.native
     def check(sourceFile: SourceFile, cancelable: CancellationToken): js.Promise[Unit] = js.native
     def checkSync(): Unit = js.native
+    def checkSync(sourceFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): Unit = js.native
+    def checkSync(sourceFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): Unit = js.native
     def checkSync(sourceFile: SourceFile): Unit = js.native
     def checkSync(sourceFile: SourceFile, cancelable: Cancelable): Unit = js.native
     def checkSync(sourceFile: SourceFile, cancelable: CancellationToken): Unit = js.native
@@ -83,7 +90,52 @@ object grammarMod extends js.Object {
     /* protected */ def createEmitter(options: CompilerOptions): Emitter = js.native
     /* protected */ def createResolver(bindings: BindingTable): Resolver = js.native
     def emit(): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.UndefOr[scala.Nothing],
+      cancelable: Cancelable
+    ): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.UndefOr[scala.Nothing],
+      cancelable: CancellationToken
+    ): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]]
+    ): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]],
+      cancelable: Cancelable
+    ): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]],
+      cancelable: CancellationToken
+    ): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function3[
+          /* file */ String, 
+          /* output */ String, 
+          /* cancelToken */ js.UndefOr[CancelToken], 
+          Unit | js.Thenable[Unit]
+        ]
+    ): js.Promise[Unit] = js.native
+    def emit(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function3[
+          /* file */ String, 
+          /* output */ String, 
+          /* cancelToken */ js.UndefOr[CancelToken], 
+          Unit | js.Thenable[Unit]
+        ],
+      cancelable: Cancelable
+    ): js.Promise[Unit] = js.native
     def emit(sourceFile: SourceFile): js.Promise[Unit] = js.native
+    def emit(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): js.Promise[Unit] = js.native
+    def emit(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): js.Promise[Unit] = js.native
     def emit(
       sourceFile: SourceFile,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]]
@@ -124,7 +176,52 @@ object grammarMod extends js.Object {
     def emitStringSync(sourceFile: SourceFile, cancelable: Cancelable): String = js.native
     def emitStringSync(sourceFile: SourceFile, cancelable: CancellationToken): String = js.native
     def emitSync(): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.UndefOr[scala.Nothing],
+      cancelable: Cancelable
+    ): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.UndefOr[scala.Nothing],
+      cancelable: CancellationToken
+    ): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function2[/* file */ String, /* output */ String, Unit]
+    ): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function2[/* file */ String, /* output */ String, Unit],
+      cancelable: Cancelable
+    ): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function2[/* file */ String, /* output */ String, Unit],
+      cancelable: CancellationToken
+    ): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function3[
+          /* file */ String, 
+          /* output */ String, 
+          /* cancelToken */ js.UndefOr[CancelToken], 
+          Unit
+        ]
+    ): Unit = js.native
+    def emitSync(
+      sourceFile: js.UndefOr[scala.Nothing],
+      writeFile: js.Function3[
+          /* file */ String, 
+          /* output */ String, 
+          /* cancelToken */ js.UndefOr[CancelToken], 
+          Unit
+        ],
+      cancelable: Cancelable
+    ): Unit = js.native
     def emitSync(sourceFile: SourceFile): Unit = js.native
+    def emitSync(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): Unit = js.native
+    def emitSync(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): Unit = js.native
     def emitSync(sourceFile: SourceFile, writeFile: js.Function2[/* file */ String, /* output */ String, Unit]): Unit = js.native
     def emitSync(
       sourceFile: SourceFile,
@@ -181,7 +278,65 @@ object grammarMod extends js.Object {
   object Grammar extends js.Object {
     /** @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable` */
     def convert(content: String): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: js.UndefOr[scala.Nothing],
+      cancelable: Cancelable
+    ): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: js.UndefOr[scala.Nothing],
+      cancelable: CancellationToken
+    ): String = js.native
+    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: AsyncHost): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: AsyncHost,
+      cancelable: Cancelable
+    ): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: AsyncHost,
+      cancelable: CancellationToken
+    ): String = js.native
+    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: Host): String = js.native
+    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: Host, cancelable: Cancelable): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: Host,
+      cancelable: CancellationToken
+    ): String = js.native
+    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: SyncHost): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: SyncHost,
+      cancelable: Cancelable
+    ): String = js.native
+    def convert(
+      content: String,
+      options: js.UndefOr[scala.Nothing],
+      hostFallback: SyncHost,
+      cancelable: CancellationToken
+    ): String = js.native
     def convert(content: String, options: CompilerOptions): String = js.native
+    def convert(
+      content: String,
+      options: CompilerOptions,
+      hostFallback: js.UndefOr[scala.Nothing],
+      cancelable: Cancelable
+    ): String = js.native
+    def convert(
+      content: String,
+      options: CompilerOptions,
+      hostFallback: js.UndefOr[scala.Nothing],
+      cancelable: CancellationToken
+    ): String = js.native
     def convert(content: String, options: CompilerOptions, hostFallback: AsyncHost): String = js.native
     def convert(content: String, options: CompilerOptions, hostFallback: AsyncHost, cancelable: Cancelable): String = js.native
     def convert(content: String, options: CompilerOptions, hostFallback: AsyncHost, cancelable: CancellationToken): String = js.native

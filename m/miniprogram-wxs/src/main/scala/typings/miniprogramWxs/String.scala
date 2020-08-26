@@ -45,6 +45,7 @@ trait String
     * @param that String to compare to target string
     */
   def localeCompare(that: java.lang.String): Double = js.native
+  def localeCompare(that: java.lang.String, locales: js.UndefOr[scala.Nothing], options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: java.lang.String): Double = js.native
   def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String]): Double = js.native
@@ -88,6 +89,7 @@ trait String
     * If this value is not specified, the substring continues to the end of stringObj.
     */
   def slice(): java.lang.String = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): java.lang.String = js.native
   def slice(start: Double): java.lang.String = js.native
   def slice(start: Double, end: Double): java.lang.String = js.native
   /**

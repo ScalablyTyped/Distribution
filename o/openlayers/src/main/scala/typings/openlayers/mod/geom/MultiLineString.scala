@@ -56,6 +56,7 @@ class MultiLineString protected () extends SimpleGeometry {
     * @api stable
     */
   def getCoordinateAtM(m: Double): Coordinate_ = js.native
+  def getCoordinateAtM(m: Double, opt_extrapolate: js.UndefOr[scala.Nothing], opt_interpolate: Boolean): Coordinate_ = js.native
   def getCoordinateAtM(m: Double, opt_extrapolate: Boolean): Coordinate_ = js.native
   def getCoordinateAtM(m: Double, opt_extrapolate: Boolean, opt_interpolate: Boolean): Coordinate_ = js.native
   /**

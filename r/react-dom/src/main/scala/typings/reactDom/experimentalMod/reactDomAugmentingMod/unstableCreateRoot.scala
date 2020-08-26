@@ -16,7 +16,6 @@ object unstableCreateRoot extends js.Object {
     *
     * @see https://reactjs.org/docs/concurrent-mode-reference.html#createroot
     */
-  def apply(container: Element | Document | DocumentFragment | Comment): Root = js.native
-  def apply(container: Element | Document | DocumentFragment | Comment, options: RootOptions): Root = js.native
+  def apply(container: Element | Document | DocumentFragment | Comment, options: js.UndefOr[RootOptions]): Root = js.native
 }
 

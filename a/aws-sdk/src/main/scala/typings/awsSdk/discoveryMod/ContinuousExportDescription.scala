@@ -42,26 +42,54 @@ trait ContinuousExportDescription extends js.Object {
 
 object ContinuousExportDescription {
   @scala.inline
-  def apply(
-    dataSource: DataSource = null,
-    exportId: ConfigurationsExportId = null,
-    s3Bucket: S3Bucket = null,
-    schemaStorageConfig: SchemaStorageConfig = null,
-    startTime: TimeStamp = null,
-    status: ContinuousExportStatus = null,
-    statusDetail: StringMax255 = null,
-    stopTime: TimeStamp = null
-  ): ContinuousExportDescription = {
+  def apply(): ContinuousExportDescription = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (exportId != null) __obj.updateDynamic("exportId")(exportId.asInstanceOf[js.Any])
-    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
-    if (schemaStorageConfig != null) __obj.updateDynamic("schemaStorageConfig")(schemaStorageConfig.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusDetail != null) __obj.updateDynamic("statusDetail")(statusDetail.asInstanceOf[js.Any])
-    if (stopTime != null) __obj.updateDynamic("stopTime")(stopTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousExportDescription]
   }
+  @scala.inline
+  implicit class ContinuousExportDescriptionOps[Self <: ContinuousExportDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSource(value: DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setExportId(value: ConfigurationsExportId): Self = this.set("exportId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportId: Self = this.set("exportId", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: S3Bucket): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    @scala.inline
+    def setSchemaStorageConfig(value: SchemaStorageConfig): Self = this.set("schemaStorageConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaStorageConfig: Self = this.set("schemaStorageConfig", js.undefined)
+    @scala.inline
+    def setStartTime(value: TimeStamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: ContinuousExportStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: StringMax255): Self = this.set("statusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("statusDetail", js.undefined)
+    @scala.inline
+    def setStopTime(value: TimeStamp): Self = this.set("stopTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopTime: Self = this.set("stopTime", js.undefined)
+  }
+  
 }
 

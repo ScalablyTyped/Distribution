@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScreenviewParams
   extends /* key */ StringDictionary[js.Any] {
   /**
@@ -16,7 +17,7 @@ trait ScreenviewParams
     *
     * Example value: `com.company.app`
     */
-  var aid: js.UndefOr[String] = js.undefined
+  var aid: js.UndefOr[String] = js.native
   /**
     * Application Installer ID
     *
@@ -26,7 +27,7 @@ trait ScreenviewParams
     *
     * Example value: `com.platform.vending`
     */
-  var aiid: js.UndefOr[String] = js.undefined
+  var aiid: js.UndefOr[String] = js.native
   /**
     * Application Name
     *
@@ -37,7 +38,7 @@ trait ScreenviewParams
     *
     * Example value: `My App`
     */
-  var an: js.UndefOr[String] = js.undefined
+  var an: js.UndefOr[String] = js.native
   /**
     * Application Version
     *
@@ -47,7 +48,7 @@ trait ScreenviewParams
     *
     * Example value: `1.2`
     */
-  var av: js.UndefOr[String] = js.undefined
+  var av: js.UndefOr[String] = js.native
   /**
     * Screen Name
     *
@@ -58,27 +59,47 @@ trait ScreenviewParams
     *
     * Example value: `High Scores`
     */
-  var cd: js.UndefOr[String] = js.undefined
+  var cd: js.UndefOr[String] = js.native
 }
 
 object ScreenviewParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    aid: String = null,
-    aiid: String = null,
-    an: String = null,
-    av: String = null,
-    cd: String = null
-  ): ScreenviewParams = {
+  def apply(): ScreenviewParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (aid != null) __obj.updateDynamic("aid")(aid.asInstanceOf[js.Any])
-    if (aiid != null) __obj.updateDynamic("aiid")(aiid.asInstanceOf[js.Any])
-    if (an != null) __obj.updateDynamic("an")(an.asInstanceOf[js.Any])
-    if (av != null) __obj.updateDynamic("av")(av.asInstanceOf[js.Any])
-    if (cd != null) __obj.updateDynamic("cd")(cd.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenviewParams]
   }
+  @scala.inline
+  implicit class ScreenviewParamsOps[Self <: ScreenviewParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAid(value: String): Self = this.set("aid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAid: Self = this.set("aid", js.undefined)
+    @scala.inline
+    def setAiid(value: String): Self = this.set("aiid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAiid: Self = this.set("aiid", js.undefined)
+    @scala.inline
+    def setAn(value: String): Self = this.set("an", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAn: Self = this.set("an", js.undefined)
+    @scala.inline
+    def setAv(value: String): Self = this.set("av", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAv: Self = this.set("av", js.undefined)
+    @scala.inline
+    def setCd(value: String): Self = this.set("cd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCd: Self = this.set("cd", js.undefined)
+  }
+  
 }
 

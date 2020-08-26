@@ -34,20 +34,44 @@ trait CopyDBClusterSnapshotMessage extends js.Object {
 
 object CopyDBClusterSnapshotMessage {
   @scala.inline
-  def apply(
-    SourceDBClusterSnapshotIdentifier: String,
-    TargetDBClusterSnapshotIdentifier: String,
-    CopyTags: js.UndefOr[BooleanOptional] = js.undefined,
-    KmsKeyId: String = null,
-    PreSignedUrl: String = null,
-    Tags: TagList = null
-  ): CopyDBClusterSnapshotMessage = {
+  def apply(SourceDBClusterSnapshotIdentifier: String, TargetDBClusterSnapshotIdentifier: String): CopyDBClusterSnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceDBClusterSnapshotIdentifier = SourceDBClusterSnapshotIdentifier.asInstanceOf[js.Any], TargetDBClusterSnapshotIdentifier = TargetDBClusterSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTags)) __obj.updateDynamic("CopyTags")(CopyTags.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (PreSignedUrl != null) __obj.updateDynamic("PreSignedUrl")(PreSignedUrl.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyDBClusterSnapshotMessage]
   }
+  @scala.inline
+  implicit class CopyDBClusterSnapshotMessageOps[Self <: CopyDBClusterSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceDBClusterSnapshotIdentifier(value: String): Self = this.set("SourceDBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetDBClusterSnapshotIdentifier(value: String): Self = this.set("TargetDBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopyTags(value: BooleanOptional): Self = this.set("CopyTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTags: Self = this.set("CopyTags", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setPreSignedUrl(value: String): Self = this.set("PreSignedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreSignedUrl: Self = this.set("PreSignedUrl", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

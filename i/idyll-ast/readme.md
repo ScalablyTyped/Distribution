@@ -12,7 +12,7 @@ Utilities for manipulating Idyll's AST
 | Keywords           | idyll, ast |
 | # releases         | 25 |
 | # dependents       | 6 |
-| # downloads        | 4910 |
+| # downloads        | 4981 |
 | # stars            | 0 |
 
 ## Links

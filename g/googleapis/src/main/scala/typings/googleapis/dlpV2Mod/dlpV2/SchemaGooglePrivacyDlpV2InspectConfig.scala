@@ -59,26 +59,62 @@ trait SchemaGooglePrivacyDlpV2InspectConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2InspectConfig {
   @scala.inline
-  def apply(
-    contentOptions: js.Array[String] = null,
-    customInfoTypes: js.Array[SchemaGooglePrivacyDlpV2CustomInfoType] = null,
-    excludeInfoTypes: js.UndefOr[Boolean] = js.undefined,
-    includeQuote: js.UndefOr[Boolean] = js.undefined,
-    infoTypes: js.Array[SchemaGooglePrivacyDlpV2InfoType] = null,
-    limits: SchemaGooglePrivacyDlpV2FindingLimits = null,
-    minLikelihood: String = null,
-    ruleSet: js.Array[SchemaGooglePrivacyDlpV2InspectionRuleSet] = null
-  ): SchemaGooglePrivacyDlpV2InspectConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2InspectConfig = {
     val __obj = js.Dynamic.literal()
-    if (contentOptions != null) __obj.updateDynamic("contentOptions")(contentOptions.asInstanceOf[js.Any])
-    if (customInfoTypes != null) __obj.updateDynamic("customInfoTypes")(customInfoTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeInfoTypes)) __obj.updateDynamic("excludeInfoTypes")(excludeInfoTypes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeQuote)) __obj.updateDynamic("includeQuote")(includeQuote.get.asInstanceOf[js.Any])
-    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes.asInstanceOf[js.Any])
-    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (minLikelihood != null) __obj.updateDynamic("minLikelihood")(minLikelihood.asInstanceOf[js.Any])
-    if (ruleSet != null) __obj.updateDynamic("ruleSet")(ruleSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2InspectConfigOps[Self <: SchemaGooglePrivacyDlpV2InspectConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentOptionsVarargs(value: String*): Self = this.set("contentOptions", js.Array(value :_*))
+    @scala.inline
+    def setContentOptions(value: js.Array[String]): Self = this.set("contentOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentOptions: Self = this.set("contentOptions", js.undefined)
+    @scala.inline
+    def setCustomInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2CustomInfoType*): Self = this.set("customInfoTypes", js.Array(value :_*))
+    @scala.inline
+    def setCustomInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2CustomInfoType]): Self = this.set("customInfoTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomInfoTypes: Self = this.set("customInfoTypes", js.undefined)
+    @scala.inline
+    def setExcludeInfoTypes(value: Boolean): Self = this.set("excludeInfoTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeInfoTypes: Self = this.set("excludeInfoTypes", js.undefined)
+    @scala.inline
+    def setIncludeQuote(value: Boolean): Self = this.set("includeQuote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeQuote: Self = this.set("includeQuote", js.undefined)
+    @scala.inline
+    def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = this.set("infoTypes", js.Array(value :_*))
+    @scala.inline
+    def setInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2InfoType]): Self = this.set("infoTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoTypes: Self = this.set("infoTypes", js.undefined)
+    @scala.inline
+    def setLimits(value: SchemaGooglePrivacyDlpV2FindingLimits): Self = this.set("limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("limits", js.undefined)
+    @scala.inline
+    def setMinLikelihood(value: String): Self = this.set("minLikelihood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLikelihood: Self = this.set("minLikelihood", js.undefined)
+    @scala.inline
+    def setRuleSetVarargs(value: SchemaGooglePrivacyDlpV2InspectionRuleSet*): Self = this.set("ruleSet", js.Array(value :_*))
+    @scala.inline
+    def setRuleSet(value: js.Array[SchemaGooglePrivacyDlpV2InspectionRuleSet]): Self = this.set("ruleSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleSet: Self = this.set("ruleSet", js.undefined)
+  }
+  
 }
 

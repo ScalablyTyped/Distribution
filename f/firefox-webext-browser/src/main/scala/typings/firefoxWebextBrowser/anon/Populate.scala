@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Populate extends js.Object {
   /**
     * If true, the `windows.Window` returned will have a `tabs` property that contains a list of the `tabs.Tab`
@@ -11,24 +12,43 @@ trait Populate extends js.Object {
     * manifest file includes the `"tabs"` permission. If false, the `windows.Window` won't have the `tabs`
     * property.
     */
-  var populate: js.UndefOr[Boolean] = js.undefined
+  var populate: js.UndefOr[Boolean] = js.native
   /** One or more tab indices to highlight. */
-  var tabs: js.Array[Double] | Double
+  var tabs: js.Array[Double] | Double = js.native
   /** The window that contains the tabs. */
-  var windowId: js.UndefOr[Double] = js.undefined
+  var windowId: js.UndefOr[Double] = js.native
 }
 
 object Populate {
   @scala.inline
-  def apply(
-    tabs: js.Array[Double] | Double,
-    populate: js.UndefOr[Boolean] = js.undefined,
-    windowId: js.UndefOr[Double] = js.undefined
-  ): Populate = {
+  def apply(tabs: js.Array[Double] | Double): Populate = {
     val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
-    if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Populate]
   }
+  @scala.inline
+  implicit class PopulateOps[Self <: Populate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTabsVarargs(value: Double*): Self = this.set("tabs", js.Array(value :_*))
+    @scala.inline
+    def setTabs(value: js.Array[Double] | Double): Self = this.set("tabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPopulate(value: Boolean): Self = this.set("populate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopulate: Self = this.set("populate", js.undefined)
+    @scala.inline
+    def setWindowId(value: Double): Self = this.set("windowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowId: Self = this.set("windowId", js.undefined)
+  }
+  
 }
 

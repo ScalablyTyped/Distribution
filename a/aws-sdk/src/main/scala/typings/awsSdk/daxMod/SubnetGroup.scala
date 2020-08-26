@@ -26,18 +26,40 @@ trait SubnetGroup extends js.Object {
 
 object SubnetGroup {
   @scala.inline
-  def apply(
-    Description: String = null,
-    SubnetGroupName: String = null,
-    Subnets: SubnetList = null,
-    VpcId: String = null
-  ): SubnetGroup = {
+  def apply(): SubnetGroup = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (SubnetGroupName != null) __obj.updateDynamic("SubnetGroupName")(SubnetGroupName.asInstanceOf[js.Any])
-    if (Subnets != null) __obj.updateDynamic("Subnets")(Subnets.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetGroup]
   }
+  @scala.inline
+  implicit class SubnetGroupOps[Self <: SubnetGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setSubnetGroupName(value: String): Self = this.set("SubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetGroupName: Self = this.set("SubnetGroupName", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: Subnet*): Self = this.set("Subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: SubnetList): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("Subnets", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

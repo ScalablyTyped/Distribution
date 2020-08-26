@@ -67,6 +67,9 @@ object prettierStrings {
   sealed trait css extends BuiltInParserName
   
   @js.native
+  sealed trait cursor extends js.Object
+  
+  @js.native
   sealed trait es5 extends js.Object
   
   @js.native
@@ -151,6 +154,9 @@ object prettierStrings {
   sealed trait strict extends js.Object
   
   @js.native
+  sealed trait trim extends js.Object
+  
+  @js.native
   sealed trait typescript extends BuiltInParserName
   
   @js.native
@@ -199,6 +205,8 @@ object prettierStrings {
   def crlf: crlf = "crlf".asInstanceOf[crlf]
   @scala.inline
   def css: css = "css".asInstanceOf[css]
+  @scala.inline
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
   def es5: es5 = "es5".asInstanceOf[es5]
   @scala.inline
@@ -255,6 +263,8 @@ object prettierStrings {
   def scss: scss = "scss".asInstanceOf[scss]
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
+  def trim: trim = "trim".asInstanceOf[trim]
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   @scala.inline

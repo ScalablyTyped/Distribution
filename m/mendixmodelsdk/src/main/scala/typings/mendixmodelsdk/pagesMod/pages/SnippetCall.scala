@@ -24,11 +24,9 @@ class SnippetCall protected () extends Element {
   @JSName("model")
   var model_FSnippetCall: IModel = js.native
   def containerAsSnippetCallWidget: SnippetCallWidget = js.native
-  def snippet(): js.Any = js.native
-  def snippet(newValue: ISnippet): js.Any = js.native
+  def snippet: ISnippet | Null = js.native
   def snippetQualifiedName: String | Null = js.native
-  @JSName("snippet")
-  def snippet_Union: ISnippet | Null = js.native
+  def snippet_=(newValue: ISnippet | Null): Unit = js.native
 }
 
 /* static members */

@@ -24,6 +24,7 @@ object libMod extends js.Object {
       * Changes the browser URL and notifies all the listeners assigned with `route(callback)`.
       */
     def apply(to: String): Unit = js.native
+    def apply(to: String, title: js.UndefOr[scala.Nothing], shouldReplace: Boolean): Unit = js.native
     def apply(to: String, title: String): Unit = js.native
     def apply(to: String, title: String, shouldReplace: Boolean): Unit = js.native
     /**

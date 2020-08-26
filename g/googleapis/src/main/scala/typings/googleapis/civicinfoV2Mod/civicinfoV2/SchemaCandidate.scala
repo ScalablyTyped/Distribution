@@ -48,26 +48,56 @@ trait SchemaCandidate extends js.Object {
 
 object SchemaCandidate {
   @scala.inline
-  def apply(
-    candidateUrl: String = null,
-    channels: js.Array[SchemaChannel] = null,
-    email: String = null,
-    name: String = null,
-    orderOnBallot: String = null,
-    party: String = null,
-    phone: String = null,
-    photoUrl: String = null
-  ): SchemaCandidate = {
+  def apply(): SchemaCandidate = {
     val __obj = js.Dynamic.literal()
-    if (candidateUrl != null) __obj.updateDynamic("candidateUrl")(candidateUrl.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orderOnBallot != null) __obj.updateDynamic("orderOnBallot")(orderOnBallot.asInstanceOf[js.Any])
-    if (party != null) __obj.updateDynamic("party")(party.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCandidate]
   }
+  @scala.inline
+  implicit class SchemaCandidateOps[Self <: SchemaCandidate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCandidateUrl(value: String): Self = this.set("candidateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandidateUrl: Self = this.set("candidateUrl", js.undefined)
+    @scala.inline
+    def setChannelsVarargs(value: SchemaChannel*): Self = this.set("channels", js.Array(value :_*))
+    @scala.inline
+    def setChannels(value: js.Array[SchemaChannel]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrderOnBallot(value: String): Self = this.set("orderOnBallot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderOnBallot: Self = this.set("orderOnBallot", js.undefined)
+    @scala.inline
+    def setParty(value: String): Self = this.set("party", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParty: Self = this.set("party", js.undefined)
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhone: Self = this.set("phone", js.undefined)
+    @scala.inline
+    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+  }
+  
 }
 

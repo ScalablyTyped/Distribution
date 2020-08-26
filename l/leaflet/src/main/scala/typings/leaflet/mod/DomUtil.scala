@@ -14,6 +14,7 @@ object DomUtil extends js.Object {
   var TRANSITION_END: String = js.native
   def addClass(el: HTMLElement, name: String): Unit = js.native
   def create(tagName: String): HTMLElement = js.native
+  def create(tagName: String, className: js.UndefOr[scala.Nothing], container: HTMLElement): HTMLElement = js.native
   def create(tagName: String, className: String): HTMLElement = js.native
   def create(tagName: String, className: String, container: HTMLElement): HTMLElement = js.native
   def disableImageDrag(): Unit = js.native

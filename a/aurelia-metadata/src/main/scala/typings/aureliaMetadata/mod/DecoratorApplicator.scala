@@ -14,6 +14,7 @@ trait DecoratorApplicator extends js.Object {
     * @param descriptor If applying to a method, you may supply an initial descriptor to pass to the decorators.
     */
   def on(target: js.Any): js.Any = js.native
+  def on(target: js.Any, key: js.UndefOr[scala.Nothing], descriptor: PropertyDescriptor): js.Any = js.native
   def on(target: js.Any, key: String): js.Any = js.native
   def on(target: js.Any, key: String, descriptor: PropertyDescriptor): js.Any = js.native
 }

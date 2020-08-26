@@ -43,8 +43,66 @@ trait TablesOfFigures extends js.Object {
   ): TableOfFigures = js.native
   def Item(Index: Double): TableOfFigures = js.native
   def MarkEntry(Range: Range): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.UndefOr[scala.Nothing],
+    EntryAutoText: js.UndefOr[scala.Nothing],
+    TableID: js.UndefOr[scala.Nothing],
+    Level: js.Any
+  ): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.UndefOr[scala.Nothing],
+    EntryAutoText: js.UndefOr[scala.Nothing],
+    TableID: js.Any
+  ): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.UndefOr[scala.Nothing],
+    EntryAutoText: js.UndefOr[scala.Nothing],
+    TableID: js.Any,
+    Level: js.Any
+  ): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.UndefOr[scala.Nothing], EntryAutoText: js.Any): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.UndefOr[scala.Nothing],
+    EntryAutoText: js.Any,
+    TableID: js.UndefOr[scala.Nothing],
+    Level: js.Any
+  ): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.UndefOr[scala.Nothing], EntryAutoText: js.Any, TableID: js.Any): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.UndefOr[scala.Nothing],
+    EntryAutoText: js.Any,
+    TableID: js.Any,
+    Level: js.Any
+  ): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.Any,
+    EntryAutoText: js.UndefOr[scala.Nothing],
+    TableID: js.UndefOr[scala.Nothing],
+    Level: js.Any
+  ): Field = js.native
+  def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.UndefOr[scala.Nothing], TableID: js.Any): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.Any,
+    EntryAutoText: js.UndefOr[scala.Nothing],
+    TableID: js.Any,
+    Level: js.Any
+  ): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any): Field = js.native
+  def MarkEntry(
+    Range: Range,
+    Entry: js.Any,
+    EntryAutoText: js.Any,
+    TableID: js.UndefOr[scala.Nothing],
+    Level: js.Any
+  ): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any, TableID: js.Any): Field = js.native
   def MarkEntry(Range: Range, Entry: js.Any, EntryAutoText: js.Any, TableID: js.Any, Level: js.Any): Field = js.native
 }

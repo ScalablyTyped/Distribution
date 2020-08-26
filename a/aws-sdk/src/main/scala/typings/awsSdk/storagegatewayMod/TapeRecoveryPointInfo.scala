@@ -26,18 +26,38 @@ trait TapeRecoveryPointInfo extends js.Object {
 
 object TapeRecoveryPointInfo {
   @scala.inline
-  def apply(
-    TapeARN: TapeARN = null,
-    TapeRecoveryPointTime: Time = null,
-    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
-    TapeStatus: TapeRecoveryPointStatus = null
-  ): TapeRecoveryPointInfo = {
+  def apply(): TapeRecoveryPointInfo = {
     val __obj = js.Dynamic.literal()
-    if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
-    if (TapeRecoveryPointTime != null) __obj.updateDynamic("TapeRecoveryPointTime")(TapeRecoveryPointTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.get.asInstanceOf[js.Any])
-    if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TapeRecoveryPointInfo]
   }
+  @scala.inline
+  implicit class TapeRecoveryPointInfoOps[Self <: TapeRecoveryPointInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTapeARN(value: TapeARN): Self = this.set("TapeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeARN: Self = this.set("TapeARN", js.undefined)
+    @scala.inline
+    def setTapeRecoveryPointTime(value: Time): Self = this.set("TapeRecoveryPointTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeRecoveryPointTime: Self = this.set("TapeRecoveryPointTime", js.undefined)
+    @scala.inline
+    def setTapeSizeInBytes(value: TapeSize): Self = this.set("TapeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeSizeInBytes: Self = this.set("TapeSizeInBytes", js.undefined)
+    @scala.inline
+    def setTapeStatus(value: TapeRecoveryPointStatus): Self = this.set("TapeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeStatus: Self = this.set("TapeStatus", js.undefined)
+  }
+  
 }
 

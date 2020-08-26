@@ -53,6 +53,7 @@ trait ByteBuffer extends js.Object {
   def LE(): ByteBuffer = js.native
   def LE(bigEndian: Boolean): ByteBuffer = js.native
   def append(source: String): ByteBuffer = js.native
+  def append(source: String, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def append(source: String, encoding: String): ByteBuffer = js.native
   def append(source: String, encoding: String, offset: Double): ByteBuffer = js.native
   def append(source: String, encoding: Double): ByteBuffer = js.native
@@ -61,21 +62,25 @@ trait ByteBuffer extends js.Object {
     * Appends some data to this ByteBuffer. This will overwrite any contents behind the specified offset up to the appended data's length.
     */
   def append(source: ByteBuffer): ByteBuffer = js.native
+  def append(source: ByteBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def append(source: ByteBuffer, encoding: String): ByteBuffer = js.native
   def append(source: ByteBuffer, encoding: String, offset: Double): ByteBuffer = js.native
   def append(source: ByteBuffer, encoding: Double): ByteBuffer = js.native
   def append(source: ByteBuffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def append(source: Buffer): ByteBuffer = js.native
+  def append(source: Buffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def append(source: Buffer, encoding: String): ByteBuffer = js.native
   def append(source: Buffer, encoding: String, offset: Double): ByteBuffer = js.native
   def append(source: Buffer, encoding: Double): ByteBuffer = js.native
   def append(source: Buffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def append(source: ArrayBuffer): ByteBuffer = js.native
+  def append(source: ArrayBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def append(source: ArrayBuffer, encoding: String): ByteBuffer = js.native
   def append(source: ArrayBuffer, encoding: String, offset: Double): ByteBuffer = js.native
   def append(source: ArrayBuffer, encoding: Double): ByteBuffer = js.native
   def append(source: ArrayBuffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def append(source: Uint8Array): ByteBuffer = js.native
+  def append(source: Uint8Array, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def append(source: Uint8Array, encoding: String): ByteBuffer = js.native
   def append(source: Uint8Array, encoding: String, offset: Double): ByteBuffer = js.native
   def append(source: Uint8Array, encoding: Double): ByteBuffer = js.native
@@ -103,19 +108,40 @@ trait ByteBuffer extends js.Object {
     * Compacts this ByteBuffer to be backed by a ByteBuffer#buffer of its contents' length. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit. Will set offset = 0 and limit = capacity and adapt ByteBuffer#markedOffset to the same relative position if set.
     */
   def compact(): ByteBuffer = js.native
+  def compact(begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
   def compact(begin: Double): ByteBuffer = js.native
   def compact(begin: Double, end: Double): ByteBuffer = js.native
   /**
     * Creates a copy of this ByteBuffer's contents. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit.
     */
   def copy(): ByteBuffer = js.native
+  def copy(begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
   def copy(begin: Double): ByteBuffer = js.native
   def copy(begin: Double, end: Double): ByteBuffer = js.native
   /**
     * Copies this ByteBuffer's contents to another ByteBuffer. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit.
     */
   def copyTo(target: ByteBuffer): ByteBuffer = js.native
+  def copyTo(
+    target: ByteBuffer,
+    targetOffset: js.UndefOr[scala.Nothing],
+    sourceOffset: js.UndefOr[scala.Nothing],
+    sourceLimit: Double
+  ): ByteBuffer = js.native
+  def copyTo(target: ByteBuffer, targetOffset: js.UndefOr[scala.Nothing], sourceOffset: Double): ByteBuffer = js.native
+  def copyTo(
+    target: ByteBuffer,
+    targetOffset: js.UndefOr[scala.Nothing],
+    sourceOffset: Double,
+    sourceLimit: Double
+  ): ByteBuffer = js.native
   def copyTo(target: ByteBuffer, targetOffset: Double): ByteBuffer = js.native
+  def copyTo(
+    target: ByteBuffer,
+    targetOffset: Double,
+    sourceOffset: js.UndefOr[scala.Nothing],
+    sourceLimit: Double
+  ): ByteBuffer = js.native
   def copyTo(target: ByteBuffer, targetOffset: Double, sourceOffset: Double): ByteBuffer = js.native
   def copyTo(target: ByteBuffer, targetOffset: Double, sourceOffset: Double, sourceLimit: Double): ByteBuffer = js.native
   /**
@@ -123,12 +149,14 @@ trait ByteBuffer extends js.Object {
     */
   def ensureCapacity(capacity: Double): ByteBuffer = js.native
   def fill(value: String): ByteBuffer = js.native
+  def fill(value: String, begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
   def fill(value: String, begin: Double): ByteBuffer = js.native
   def fill(value: String, begin: Double, end: Double): ByteBuffer = js.native
   /**
     * Overwrites this ByteBuffer's contents with the specified value. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit.
     */
   def fill(value: Double): ByteBuffer = js.native
+  def fill(value: Double, begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
   def fill(value: Double, begin: Double): ByteBuffer = js.native
   def fill(value: Double, begin: Double, end: Double): ByteBuffer = js.native
   /**
@@ -145,6 +173,7 @@ trait ByteBuffer extends js.Object {
     */
   def order(littleEndian: Boolean): ByteBuffer = js.native
   def prepend(source: String): ByteBuffer = js.native
+  def prepend(source: String, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def prepend(source: String, encoding: String): ByteBuffer = js.native
   def prepend(source: String, encoding: String, offset: Double): ByteBuffer = js.native
   def prepend(source: String, encoding: Double): ByteBuffer = js.native
@@ -153,16 +182,19 @@ trait ByteBuffer extends js.Object {
     * Prepends some data to this ByteBuffer. This will overwrite any contents before the specified offset up to the prepended data's length. If there is not enough space available before the specified offset, the backing buffer will be resized and its contents moved accordingly.
     */
   def prepend(source: ByteBuffer): ByteBuffer = js.native
+  def prepend(source: ByteBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def prepend(source: ByteBuffer, encoding: String): ByteBuffer = js.native
   def prepend(source: ByteBuffer, encoding: String, offset: Double): ByteBuffer = js.native
   def prepend(source: ByteBuffer, encoding: Double): ByteBuffer = js.native
   def prepend(source: ByteBuffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def prepend(source: Buffer): ByteBuffer = js.native
+  def prepend(source: Buffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def prepend(source: Buffer, encoding: String): ByteBuffer = js.native
   def prepend(source: Buffer, encoding: String, offset: Double): ByteBuffer = js.native
   def prepend(source: Buffer, encoding: Double): ByteBuffer = js.native
   def prepend(source: Buffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def prepend(source: ArrayBuffer): ByteBuffer = js.native
+  def prepend(source: ArrayBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def prepend(source: ArrayBuffer, encoding: String): ByteBuffer = js.native
   def prepend(source: ArrayBuffer, encoding: String, offset: Double): ByteBuffer = js.native
   def prepend(source: ArrayBuffer, encoding: Double): ByteBuffer = js.native
@@ -325,6 +357,7 @@ trait ByteBuffer extends js.Object {
     * Reverses this ByteBuffer's contents
     */
   def reverse(): ByteBuffer = js.native
+  def reverse(begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
   def reverse(begin: Double): ByteBuffer = js.native
   def reverse(begin: Double, end: Double): ByteBuffer = js.native
   /**
@@ -335,6 +368,7 @@ trait ByteBuffer extends js.Object {
     * Slices this ByteBuffer by creating a cloned instance with offset = begin and limit = end.
     */
   def slice(): ByteBuffer = js.native
+  def slice(begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
   def slice(begin: Double): ByteBuffer = js.native
   def slice(begin: Double, end: Double): ByteBuffer = js.native
   /**
@@ -346,12 +380,14 @@ trait ByteBuffer extends js.Object {
     * Encodes this ByteBuffer's contents to a base64 encoded string.
     */
   def toBase64(): String = js.native
+  def toBase64(begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def toBase64(begin: Double): String = js.native
   def toBase64(begin: Double, end: Double): String = js.native
   /**
     * Encodes this ByteBuffer to a binary encoded string, that is using only characters 0x00-0xFF as bytes.
     */
   def toBinary(): String = js.native
+  def toBinary(begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def toBinary(begin: Double): String = js.native
   def toBinary(begin: Double, end: Double): String = js.native
   /**
@@ -375,6 +411,7 @@ trait ByteBuffer extends js.Object {
     * Encodes this ByteBuffer's contents to a hex encoded string.
     */
   def toHex(): String = js.native
+  def toHex(begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
   def toHex(begin: Double): String = js.native
   def toHex(begin: Double, end: Double): String = js.native
   def toString(encoding: String): String = js.native
@@ -388,6 +425,7 @@ trait ByteBuffer extends js.Object {
   def writeByte(value: Double): ByteBuffer = js.native
   def writeByte(value: Double, offset: Double): ByteBuffer = js.native
   def writeBytes(source: String): ByteBuffer = js.native
+  def writeBytes(source: String, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def writeBytes(source: String, encoding: String): ByteBuffer = js.native
   def writeBytes(source: String, encoding: String, offset: Double): ByteBuffer = js.native
   def writeBytes(source: String, encoding: Double): ByteBuffer = js.native
@@ -396,21 +434,25 @@ trait ByteBuffer extends js.Object {
     * Writes an array of bytes. This is an alias for append
     */
   def writeBytes(source: ByteBuffer): ByteBuffer = js.native
+  def writeBytes(source: ByteBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def writeBytes(source: ByteBuffer, encoding: String): ByteBuffer = js.native
   def writeBytes(source: ByteBuffer, encoding: String, offset: Double): ByteBuffer = js.native
   def writeBytes(source: ByteBuffer, encoding: Double): ByteBuffer = js.native
   def writeBytes(source: ByteBuffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def writeBytes(source: Buffer): ByteBuffer = js.native
+  def writeBytes(source: Buffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def writeBytes(source: Buffer, encoding: String): ByteBuffer = js.native
   def writeBytes(source: Buffer, encoding: String, offset: Double): ByteBuffer = js.native
   def writeBytes(source: Buffer, encoding: Double): ByteBuffer = js.native
   def writeBytes(source: Buffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def writeBytes(source: ArrayBuffer): ByteBuffer = js.native
+  def writeBytes(source: ArrayBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def writeBytes(source: ArrayBuffer, encoding: String): ByteBuffer = js.native
   def writeBytes(source: ArrayBuffer, encoding: String, offset: Double): ByteBuffer = js.native
   def writeBytes(source: ArrayBuffer, encoding: Double): ByteBuffer = js.native
   def writeBytes(source: ArrayBuffer, encoding: Double, offset: Double): ByteBuffer = js.native
   def writeBytes(source: Uint8Array): ByteBuffer = js.native
+  def writeBytes(source: Uint8Array, encoding: js.UndefOr[scala.Nothing], offset: Double): ByteBuffer = js.native
   def writeBytes(source: Uint8Array, encoding: String): ByteBuffer = js.native
   def writeBytes(source: Uint8Array, encoding: String, offset: Double): ByteBuffer = js.native
   def writeBytes(source: Uint8Array, encoding: Double): ByteBuffer = js.native

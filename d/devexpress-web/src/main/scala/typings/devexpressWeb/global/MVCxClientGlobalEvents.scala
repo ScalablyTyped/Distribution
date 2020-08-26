@@ -3,10 +3,7 @@ package typings.devexpressWeb.global
 import typings.devexpressWeb.ASPxClientCallbackErrorEventHandler
 import typings.devexpressWeb.ASPxClientControlsInitializedEventHandler
 import typings.devexpressWeb.ASPxClientEndCallbackEventHandler
-import typings.devexpressWeb.ASPxClientGlobalCallbackErrorEventHandler
-import typings.devexpressWeb.ASPxClientGlobalEndCallbackEventHandler
 import typings.devexpressWeb.MVCxClientBeginCallbackEventHandler
-import typings.devexpressWeb.MVCxClientGlobalBeginCallbackEventHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,36 +14,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MVCxClientGlobalEvents")
 @js.native
 class MVCxClientGlobalEvents ()
-  extends typings.devexpressWeb.MVCxClientGlobalEvents {
-  /**
-    * Occurs on the client when a callback for server-side processing is initiated.
-    */
-  /* CompleteClass */
-  override var BeginCallback: typings.devexpressWeb.ASPxClientEvent[
-    MVCxClientGlobalBeginCallbackEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
-  ] = js.native
-  /**
-    * Fires on the client if any server error occurs during server-side processing of a callback sent by a DevExpress MVC extension.
-    */
-  /* CompleteClass */
-  override var CallbackError: typings.devexpressWeb.ASPxClientEvent[
-    ASPxClientGlobalCallbackErrorEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
-  ] = js.native
-  /**
-    * Occurs on the client side after client object models of all DevExpress MVC extensions contained within the page have been initialized.
-    */
-  /* CompleteClass */
-  override var ControlsInitialized: typings.devexpressWeb.ASPxClientEvent[
-    ASPxClientControlsInitializedEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
-  ] = js.native
-  /**
-    * Occurs on the client after a callback's server-side processing has been completed.
-    */
-  /* CompleteClass */
-  override var EndCallback: typings.devexpressWeb.ASPxClientEvent[
-    ASPxClientGlobalEndCallbackEventHandler[typings.devexpressWeb.MVCxClientGlobalEvents]
-  ] = js.native
-}
+  extends typings.devexpressWeb.MVCxClientGlobalEvents
 
 /* static members */
 @JSGlobal("MVCxClientGlobalEvents")

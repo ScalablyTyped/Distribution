@@ -13,6 +13,9 @@ trait HlsPackage extends js.Object {
   markers (comments) taken directly from the input HTTP Live Streaming (HLS) manifest.
   "SCTE35_ENHANCED" generates ad markers and blackout tags based on SCTE-35
   messages in the input source.
+  "DATERANGE" inserts EXT-X-DATERANGE tags to signal ad and program transition events 
+  in HLS and CMAF manifests. For this option, you must set a programDateTimeIntervalSeconds value 
+  that is greater than 0.
     */
   var AdMarkers: js.UndefOr[typings.awsSdk.mediapackageMod.AdMarkers] = js.native
   var AdTriggers: js.UndefOr[typings.awsSdk.mediapackageMod.AdTriggers] = js.native
@@ -58,32 +61,68 @@ trait HlsPackage extends js.Object {
 
 object HlsPackage {
   @scala.inline
-  def apply(
-    AdMarkers: AdMarkers = null,
-    AdTriggers: AdTriggers = null,
-    AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
-    Encryption: HlsEncryption = null,
-    IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined,
-    PlaylistType: PlaylistType = null,
-    PlaylistWindowSeconds: js.UndefOr[integer] = js.undefined,
-    ProgramDateTimeIntervalSeconds: js.UndefOr[integer] = js.undefined,
-    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
-    StreamSelection: StreamSelection = null,
-    UseAudioRenditionGroup: js.UndefOr[boolean] = js.undefined
-  ): HlsPackage = {
+  def apply(): HlsPackage = {
     val __obj = js.Dynamic.literal()
-    if (AdMarkers != null) __obj.updateDynamic("AdMarkers")(AdMarkers.asInstanceOf[js.Any])
-    if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers.asInstanceOf[js.Any])
-    if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeIframeOnlyStream)) __obj.updateDynamic("IncludeIframeOnlyStream")(IncludeIframeOnlyStream.get.asInstanceOf[js.Any])
-    if (PlaylistType != null) __obj.updateDynamic("PlaylistType")(PlaylistType.asInstanceOf[js.Any])
-    if (!js.isUndefined(PlaylistWindowSeconds)) __obj.updateDynamic("PlaylistWindowSeconds")(PlaylistWindowSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramDateTimeIntervalSeconds)) __obj.updateDynamic("ProgramDateTimeIntervalSeconds")(ProgramDateTimeIntervalSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
-    if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseAudioRenditionGroup)) __obj.updateDynamic("UseAudioRenditionGroup")(UseAudioRenditionGroup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsPackage]
   }
+  @scala.inline
+  implicit class HlsPackageOps[Self <: HlsPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdMarkers(value: AdMarkers): Self = this.set("AdMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdMarkers: Self = this.set("AdMarkers", js.undefined)
+    @scala.inline
+    def setAdTriggersVarargs(value: AdTriggersElement*): Self = this.set("AdTriggers", js.Array(value :_*))
+    @scala.inline
+    def setAdTriggers(value: AdTriggers): Self = this.set("AdTriggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdTriggers: Self = this.set("AdTriggers", js.undefined)
+    @scala.inline
+    def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = this.set("AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsOnDeliveryRestrictions: Self = this.set("AdsOnDeliveryRestrictions", js.undefined)
+    @scala.inline
+    def setEncryption(value: HlsEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setIncludeIframeOnlyStream(value: boolean): Self = this.set("IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeIframeOnlyStream: Self = this.set("IncludeIframeOnlyStream", js.undefined)
+    @scala.inline
+    def setPlaylistType(value: PlaylistType): Self = this.set("PlaylistType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylistType: Self = this.set("PlaylistType", js.undefined)
+    @scala.inline
+    def setPlaylistWindowSeconds(value: integer): Self = this.set("PlaylistWindowSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylistWindowSeconds: Self = this.set("PlaylistWindowSeconds", js.undefined)
+    @scala.inline
+    def setProgramDateTimeIntervalSeconds(value: integer): Self = this.set("ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramDateTimeIntervalSeconds: Self = this.set("ProgramDateTimeIntervalSeconds", js.undefined)
+    @scala.inline
+    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    @scala.inline
+    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+    @scala.inline
+    def setUseAudioRenditionGroup(value: boolean): Self = this.set("UseAudioRenditionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAudioRenditionGroup: Self = this.set("UseAudioRenditionGroup", js.undefined)
+  }
+  
 }
 

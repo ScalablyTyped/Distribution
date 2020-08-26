@@ -25,6 +25,11 @@ object PullSymbol extends js.Object {
   def getTypeParameterString(typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]): String = js.native
   def getTypeParameterString(
     typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    useContraintInName: Boolean
+  ): String = js.native
+  def getTypeParameterString(
+    typars: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
   ): String = js.native
   def getTypeParameterString(
@@ -35,7 +40,30 @@ object PullSymbol extends js.Object {
   def getTypeParameterStringEx(typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol]): typings.typescriptServices.TypeScript.MemberNameArray = js.native
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    getTypeParamMarkerInfo: js.UndefOr[scala.Nothing],
+    useContraintInName: Boolean
+  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
+  def getTypeParameterStringEx(
+    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    getTypeParamMarkerInfo: Boolean
+  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
+  def getTypeParameterStringEx(
+    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: js.UndefOr[scala.Nothing],
+    getTypeParamMarkerInfo: Boolean,
+    useContraintInName: Boolean
+  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
+  def getTypeParameterStringEx(
+    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
     scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol
+  ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
+  def getTypeParameterStringEx(
+    typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],
+    scopeSymbol: typings.typescriptServices.TypeScript.PullSymbol,
+    getTypeParamMarkerInfo: js.UndefOr[scala.Nothing],
+    useContraintInName: Boolean
   ): typings.typescriptServices.TypeScript.MemberNameArray = js.native
   def getTypeParameterStringEx(
     typeParameters: js.Array[typings.typescriptServices.TypeScript.PullTypeSymbol],

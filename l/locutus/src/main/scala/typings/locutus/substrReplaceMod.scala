@@ -8,8 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 object substrReplaceMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(
+    str: js.UndefOr[scala.Nothing],
+    replace: js.UndefOr[scala.Nothing],
+    start: js.UndefOr[scala.Nothing],
+    length: js.Any
+  ): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], replace: js.UndefOr[scala.Nothing], start: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], replace: js.UndefOr[scala.Nothing], start: js.Any, length: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], replace: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], replace: js.Any, start: js.UndefOr[scala.Nothing], length: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], replace: js.Any, start: js.Any): js.Any = js.native
+  def apply(str: js.UndefOr[scala.Nothing], replace: js.Any, start: js.Any, length: js.Any): js.Any = js.native
   def apply(str: js.Any): js.Any = js.native
+  def apply(str: js.Any, replace: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], length: js.Any): js.Any = js.native
+  def apply(str: js.Any, replace: js.UndefOr[scala.Nothing], start: js.Any): js.Any = js.native
+  def apply(str: js.Any, replace: js.UndefOr[scala.Nothing], start: js.Any, length: js.Any): js.Any = js.native
   def apply(str: js.Any, replace: js.Any): js.Any = js.native
+  def apply(str: js.Any, replace: js.Any, start: js.UndefOr[scala.Nothing], length: js.Any): js.Any = js.native
   def apply(str: js.Any, replace: js.Any, start: js.Any): js.Any = js.native
   def apply(str: js.Any, replace: js.Any, start: js.Any, length: js.Any): js.Any = js.native
 }

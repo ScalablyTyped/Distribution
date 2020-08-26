@@ -24,6 +24,7 @@ object skeletonMod extends js.Object {
     	 */
     var useVertexTexture: Boolean = js.native
     def calculateInverses(bone: Bone): Unit = js.native
+    def dispose(): Unit = js.native
     def getBoneByName(name: String): js.UndefOr[Bone] = js.native
     def pose(): Unit = js.native
     def update(): Unit = js.native

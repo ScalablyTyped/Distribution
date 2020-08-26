@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.WebUI.ActivatedOperation")
 @js.native
 abstract class ActivatedOperation ()
-  extends typings.winrtUwp.Windows.UI.WebUI.ActivatedOperation {
-  /**
-    * Requests that the completion of app activation be delayed.
-    * @return The activation deferral object.
-    */
-  /* CompleteClass */
-  override def getDeferral(): typings.winrtUwp.Windows.UI.WebUI.ActivatedDeferral = js.native
-}
+  extends typings.winrtUwp.Windows.UI.WebUI.ActivatedOperation
 

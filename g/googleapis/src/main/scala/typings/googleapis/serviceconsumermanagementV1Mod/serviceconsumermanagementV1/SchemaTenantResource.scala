@@ -27,12 +27,34 @@ trait SchemaTenantResource extends js.Object {
 
 object SchemaTenantResource {
   @scala.inline
-  def apply(resource: String = null, status: String = null, tag: String = null): SchemaTenantResource = {
+  def apply(): SchemaTenantResource = {
     val __obj = js.Dynamic.literal()
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTenantResource]
   }
+  @scala.inline
+  implicit class SchemaTenantResourceOps[Self <: SchemaTenantResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

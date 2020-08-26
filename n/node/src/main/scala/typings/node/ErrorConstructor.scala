@@ -6,7 +6,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// Declare "static" methods in Error
 @js.native
 trait ErrorConstructor extends js.Object {
   /**

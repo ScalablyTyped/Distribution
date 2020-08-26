@@ -12,7 +12,7 @@ Run your Atom package tests using Mocha
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 9094 |
+| # downloads        | 8896 |
 | # stars            | 0 |
 
 ## Links

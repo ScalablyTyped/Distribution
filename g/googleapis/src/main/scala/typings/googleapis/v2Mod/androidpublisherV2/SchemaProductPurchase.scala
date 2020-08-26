@@ -51,24 +51,50 @@ trait SchemaProductPurchase extends js.Object {
 
 object SchemaProductPurchase {
   @scala.inline
-  def apply(
-    consumptionState: js.UndefOr[Double] = js.undefined,
-    developerPayload: String = null,
-    kind: String = null,
-    orderId: String = null,
-    purchaseState: js.UndefOr[Double] = js.undefined,
-    purchaseTimeMillis: String = null,
-    purchaseType: js.UndefOr[Double] = js.undefined
-  ): SchemaProductPurchase = {
+  def apply(): SchemaProductPurchase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(consumptionState)) __obj.updateDynamic("consumptionState")(consumptionState.get.asInstanceOf[js.Any])
-    if (developerPayload != null) __obj.updateDynamic("developerPayload")(developerPayload.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (!js.isUndefined(purchaseState)) __obj.updateDynamic("purchaseState")(purchaseState.get.asInstanceOf[js.Any])
-    if (purchaseTimeMillis != null) __obj.updateDynamic("purchaseTimeMillis")(purchaseTimeMillis.asInstanceOf[js.Any])
-    if (!js.isUndefined(purchaseType)) __obj.updateDynamic("purchaseType")(purchaseType.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductPurchase]
   }
+  @scala.inline
+  implicit class SchemaProductPurchaseOps[Self <: SchemaProductPurchase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumptionState(value: Double): Self = this.set("consumptionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumptionState: Self = this.set("consumptionState", js.undefined)
+    @scala.inline
+    def setDeveloperPayload(value: String): Self = this.set("developerPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperPayload: Self = this.set("developerPayload", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    @scala.inline
+    def setPurchaseState(value: Double): Self = this.set("purchaseState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchaseState: Self = this.set("purchaseState", js.undefined)
+    @scala.inline
+    def setPurchaseTimeMillis(value: String): Self = this.set("purchaseTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchaseTimeMillis: Self = this.set("purchaseTimeMillis", js.undefined)
+    @scala.inline
+    def setPurchaseType(value: Double): Self = this.set("purchaseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchaseType: Self = this.set("purchaseType", js.undefined)
+  }
+  
 }
 

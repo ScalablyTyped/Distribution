@@ -22,16 +22,34 @@ trait RevisionTarget extends js.Object {
 
 object RevisionTarget {
   @scala.inline
-  def apply(
-    DatabaseRevision: String = null,
-    DatabaseRevisionReleaseDate: TStamp = null,
-    Description: String = null
-  ): RevisionTarget = {
+  def apply(): RevisionTarget = {
     val __obj = js.Dynamic.literal()
-    if (DatabaseRevision != null) __obj.updateDynamic("DatabaseRevision")(DatabaseRevision.asInstanceOf[js.Any])
-    if (DatabaseRevisionReleaseDate != null) __obj.updateDynamic("DatabaseRevisionReleaseDate")(DatabaseRevisionReleaseDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevisionTarget]
   }
+  @scala.inline
+  implicit class RevisionTargetOps[Self <: RevisionTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseRevision(value: String): Self = this.set("DatabaseRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseRevision: Self = this.set("DatabaseRevision", js.undefined)
+    @scala.inline
+    def setDatabaseRevisionReleaseDate(value: TStamp): Self = this.set("DatabaseRevisionReleaseDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseRevisionReleaseDate: Self = this.set("DatabaseRevisionReleaseDate", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

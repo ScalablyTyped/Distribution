@@ -5,28 +5,29 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Record<intl-relativeformat.intl-relativeformat/lib/types.SUPPORTED_FIELD, number> */
+@js.native
 trait RecordSUPPORTEDFIELDnumbe extends js.Object {
-  var day: Double
-  var `day-narrow`: Double
-  var `day-short`: Double
-  var hour: Double
-  var `hour-narrow`: Double
-  var `hour-short`: Double
-  var minute: Double
-  var `minute-narrow`: Double
-  var `minute-short`: Double
-  var month: Double
-  var `month-narrow`: Double
-  var `month-short`: Double
-  var second: Double
-  var `second-narrow`: Double
-  var `second-short`: Double
-  var week: Double
-  var `week-narrow`: Double
-  var `week-short`: Double
-  var year: Double
-  var `year-narrow`: Double
-  var `year-short`: Double
+  var day: Double = js.native
+  var `day-narrow`: Double = js.native
+  var `day-short`: Double = js.native
+  var hour: Double = js.native
+  var `hour-narrow`: Double = js.native
+  var `hour-short`: Double = js.native
+  var minute: Double = js.native
+  var `minute-narrow`: Double = js.native
+  var `minute-short`: Double = js.native
+  var month: Double = js.native
+  var `month-narrow`: Double = js.native
+  var `month-short`: Double = js.native
+  var second: Double = js.native
+  var `second-narrow`: Double = js.native
+  var `second-short`: Double = js.native
+  var week: Double = js.native
+  var `week-narrow`: Double = js.native
+  var `week-short`: Double = js.native
+  var year: Double = js.native
+  var `year-narrow`: Double = js.native
+  var `year-short`: Double = js.native
 }
 
 object RecordSUPPORTEDFIELDnumbe {
@@ -71,5 +72,60 @@ object RecordSUPPORTEDFIELDnumbe {
     __obj.updateDynamic("year-short")(`year-short`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordSUPPORTEDFIELDnumbe]
   }
+  @scala.inline
+  implicit class RecordSUPPORTEDFIELDnumbeOps[Self <: RecordSUPPORTEDFIELDnumbe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDay(value: Double): Self = this.set("day", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setDay-narrow`(value: Double): Self = this.set("day-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setDay-short`(value: Double): Self = this.set("day-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHour(value: Double): Self = this.set("hour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setHour-narrow`(value: Double): Self = this.set("hour-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setHour-short`(value: Double): Self = this.set("hour-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinute(value: Double): Self = this.set("minute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMinute-narrow`(value: Double): Self = this.set("minute-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMinute-short`(value: Double): Self = this.set("minute-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonth(value: Double): Self = this.set("month", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMonth-narrow`(value: Double): Self = this.set("month-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMonth-short`(value: Double): Self = this.set("month-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecond(value: Double): Self = this.set("second", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setSecond-narrow`(value: Double): Self = this.set("second-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setSecond-short`(value: Double): Self = this.set("second-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWeek(value: Double): Self = this.set("week", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWeek-narrow`(value: Double): Self = this.set("week-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWeek-short`(value: Double): Self = this.set("week-short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setYear-narrow`(value: Double): Self = this.set("year-narrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setYear-short`(value: Double): Self = this.set("year-short", value.asInstanceOf[js.Any])
+  }
+  
 }
 

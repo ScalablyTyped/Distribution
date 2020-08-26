@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to a range based smart tag recognizer. */
+@js.native
 trait XRangeBasedSmartTagRecognizer extends XInitialization {
   /**
     * recognizes smart tags.
@@ -26,7 +27,7 @@ trait XRangeBasedSmartTagRecognizer extends XInitialization {
     xTextMarkup: XTextMarkup,
     aApplicationName: String,
     xController: XController
-  ): Unit
+  ): Unit = js.native
 }
 
 object XRangeBasedSmartTagRecognizer {
@@ -41,5 +42,20 @@ object XRangeBasedSmartTagRecognizer {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), recognizeTextRange = js.Any.fromFunction5(recognizeTextRange), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XRangeBasedSmartTagRecognizer]
   }
+  @scala.inline
+  implicit class XRangeBasedSmartTagRecognizerOps[Self <: XRangeBasedSmartTagRecognizer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecognizeTextRange(value: (XTextRange, SmartTagRecognizerMode, XTextMarkup, String, XController) => Unit): Self = this.set("recognizeTextRange", js.Any.fromFunction5(value))
+  }
+  
 }
 

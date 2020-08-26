@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service providers a means to browse and execute scripts. */
+@js.native
 trait ScriptProvider
   extends XBrowseNode
      with XInvocation

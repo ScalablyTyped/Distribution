@@ -30,17 +30,36 @@ trait NeighborConnectionDetail extends js.Object {
 
 object NeighborConnectionDetail {
   @scala.inline
-  def apply(
-    connectionsCount: Long,
-    destinationServerId: ConfigurationId,
-    sourceServerId: ConfigurationId,
-    destinationPort: js.UndefOr[BoxedInteger] = js.undefined,
-    transportProtocol: String = null
-  ): NeighborConnectionDetail = {
+  def apply(connectionsCount: Long, destinationServerId: ConfigurationId, sourceServerId: ConfigurationId): NeighborConnectionDetail = {
     val __obj = js.Dynamic.literal(connectionsCount = connectionsCount.asInstanceOf[js.Any], destinationServerId = destinationServerId.asInstanceOf[js.Any], sourceServerId = sourceServerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(destinationPort)) __obj.updateDynamic("destinationPort")(destinationPort.get.asInstanceOf[js.Any])
-    if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[NeighborConnectionDetail]
   }
+  @scala.inline
+  implicit class NeighborConnectionDetailOps[Self <: NeighborConnectionDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionsCount(value: Long): Self = this.set("connectionsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationServerId(value: ConfigurationId): Self = this.set("destinationServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceServerId(value: ConfigurationId): Self = this.set("sourceServerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationPort(value: BoxedInteger): Self = this.set("destinationPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPort: Self = this.set("destinationPort", js.undefined)
+    @scala.inline
+    def setTransportProtocol(value: String): Self = this.set("transportProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransportProtocol: Self = this.set("transportProtocol", js.undefined)
+  }
+  
 }
 

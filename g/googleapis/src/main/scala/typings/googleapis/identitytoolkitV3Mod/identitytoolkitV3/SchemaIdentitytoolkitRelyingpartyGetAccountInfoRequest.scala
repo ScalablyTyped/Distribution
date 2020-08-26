@@ -34,20 +34,48 @@ trait SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequest extends js.Object {
 
 object SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequest {
   @scala.inline
-  def apply(
-    delegatedProjectNumber: String = null,
-    email: js.Array[String] = null,
-    idToken: String = null,
-    localId: js.Array[String] = null,
-    phoneNumber: js.Array[String] = null
-  ): SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequest = {
     val __obj = js.Dynamic.literal()
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyGetAccountInfoRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    @scala.inline
+    def setEmailVarargs(value: String*): Self = this.set("email", js.Array(value :_*))
+    @scala.inline
+    def setEmail(value: js.Array[String]): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setLocalIdVarargs(value: String*): Self = this.set("localId", js.Array(value :_*))
+    @scala.inline
+    def setLocalId(value: js.Array[String]): Self = this.set("localId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalId: Self = this.set("localId", js.undefined)
+    @scala.inline
+    def setPhoneNumberVarargs(value: String*): Self = this.set("phoneNumber", js.Array(value :_*))
+    @scala.inline
+    def setPhoneNumber(value: js.Array[String]): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+  }
+  
 }
 

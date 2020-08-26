@@ -12,7 +12,7 @@ Express Routers 🚦 - just another way to create router in express apps.
 | Keywords           | express, router, express router, express routing, typescript |
 | # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 582 |
+| # downloads        | 479 |
 | # stars            | 0 |
 
 ## Links

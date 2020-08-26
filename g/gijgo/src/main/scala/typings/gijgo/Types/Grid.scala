@@ -14,9 +14,11 @@ trait Grid[Entity, Params] extends JQuery {
   def collapseAll(): Grid[Entity, Params] = js.native
   def count(): Double = js.native
   def destroy(): Unit = js.native
+  def destroy(keepTableTag: js.UndefOr[scala.Nothing], keepWrapperTag: Boolean): Unit = js.native
   def destroy(keepTableTag: Boolean): Unit = js.native
   def destroy(keepTableTag: Boolean, keepWrapperTag: Boolean): Unit = js.native
   def downloadCSV(): Grid[Entity, Params] = js.native
+  def downloadCSV(filename: js.UndefOr[scala.Nothing], includeAllRecords: Boolean): Grid[Entity, Params] = js.native
   def downloadCSV(filename: String): Grid[Entity, Params] = js.native
   def downloadCSV(filename: String, includeAllRecords: Boolean): Grid[Entity, Params] = js.native
   def edit(id: String): Grid[Entity, Params] = js.native

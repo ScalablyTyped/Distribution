@@ -15,6 +15,8 @@ trait RangyStatic extends js.Object {
   var supported: Boolean = js.native
   def addInitListener(listener: js.Function1[/* rangy */ this.type, Unit]): js.Any = js.native
   def createClassApplier(theClass: String): RangyClassApplier = js.native
+  def createClassApplier(theClass: String, options: js.UndefOr[scala.Nothing], tagNames: String): RangyClassApplier = js.native
+  def createClassApplier(theClass: String, options: js.UndefOr[scala.Nothing], tagNames: js.Array[String]): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: String): RangyClassApplier = js.native
   def createClassApplier(theClass: String, options: RangyClassApplierOptions, tagNames: js.Array[String]): RangyClassApplier = js.native

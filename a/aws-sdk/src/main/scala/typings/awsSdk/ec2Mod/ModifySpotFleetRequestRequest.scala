@@ -26,17 +26,36 @@ trait ModifySpotFleetRequestRequest extends js.Object {
 
 object ModifySpotFleetRequestRequest {
   @scala.inline
-  def apply(
-    SpotFleetRequestId: SpotFleetRequestId,
-    ExcessCapacityTerminationPolicy: ExcessCapacityTerminationPolicy = null,
-    OnDemandTargetCapacity: js.UndefOr[Integer] = js.undefined,
-    TargetCapacity: js.UndefOr[Integer] = js.undefined
-  ): ModifySpotFleetRequestRequest = {
+  def apply(SpotFleetRequestId: SpotFleetRequestId): ModifySpotFleetRequestRequest = {
     val __obj = js.Dynamic.literal(SpotFleetRequestId = SpotFleetRequestId.asInstanceOf[js.Any])
-    if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(OnDemandTargetCapacity)) __obj.updateDynamic("OnDemandTargetCapacity")(OnDemandTargetCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TargetCapacity)) __obj.updateDynamic("TargetCapacity")(TargetCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifySpotFleetRequestRequest]
   }
+  @scala.inline
+  implicit class ModifySpotFleetRequestRequestOps[Self <: ModifySpotFleetRequestRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpotFleetRequestId(value: SpotFleetRequestId): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExcessCapacityTerminationPolicy(value: ExcessCapacityTerminationPolicy): Self = this.set("ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcessCapacityTerminationPolicy: Self = this.set("ExcessCapacityTerminationPolicy", js.undefined)
+    @scala.inline
+    def setOnDemandTargetCapacity(value: Integer): Self = this.set("OnDemandTargetCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandTargetCapacity: Self = this.set("OnDemandTargetCapacity", js.undefined)
+    @scala.inline
+    def setTargetCapacity(value: Integer): Self = this.set("TargetCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCapacity: Self = this.set("TargetCapacity", js.undefined)
+  }
+  
 }
 

@@ -21,11 +21,30 @@ trait SchemaSetFindingStateRequest extends js.Object {
 
 object SchemaSetFindingStateRequest {
   @scala.inline
-  def apply(startTime: String = null, state: String = null): SchemaSetFindingStateRequest = {
+  def apply(): SchemaSetFindingStateRequest = {
     val __obj = js.Dynamic.literal()
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSetFindingStateRequest]
   }
+  @scala.inline
+  implicit class SchemaSetFindingStateRequestOps[Self <: SchemaSetFindingStateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

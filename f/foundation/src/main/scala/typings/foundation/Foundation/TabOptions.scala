@@ -5,30 +5,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/tabs.html
+@js.native
 trait TabOptions extends js.Object {
-  var active_class: js.UndefOr[String] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
-  var deep_linking: js.UndefOr[Boolean] = js.undefined
-  var is_hover: js.UndefOr[Boolean] = js.undefined
-  var scroll_to_content: js.UndefOr[Boolean] = js.undefined
+  var active_class: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[js.Function0[_]] = js.native
+  var deep_linking: js.UndefOr[Boolean] = js.native
+  var is_hover: js.UndefOr[Boolean] = js.native
+  var scroll_to_content: js.UndefOr[Boolean] = js.native
 }
 
 object TabOptions {
   @scala.inline
-  def apply(
-    active_class: String = null,
-    callback: () => _ = null,
-    deep_linking: js.UndefOr[Boolean] = js.undefined,
-    is_hover: js.UndefOr[Boolean] = js.undefined,
-    scroll_to_content: js.UndefOr[Boolean] = js.undefined
-  ): TabOptions = {
+  def apply(): TabOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction0(callback))
-    if (!js.isUndefined(deep_linking)) __obj.updateDynamic("deep_linking")(deep_linking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_hover)) __obj.updateDynamic("is_hover")(is_hover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll_to_content)) __obj.updateDynamic("scroll_to_content")(scroll_to_content.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabOptions]
   }
+  @scala.inline
+  implicit class TabOptionsOps[Self <: TabOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive_class(value: String): Self = this.set("active_class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive_class: Self = this.set("active_class", js.undefined)
+    @scala.inline
+    def setCallback(value: () => _): Self = this.set("callback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setDeep_linking(value: Boolean): Self = this.set("deep_linking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeep_linking: Self = this.set("deep_linking", js.undefined)
+    @scala.inline
+    def setIs_hover(value: Boolean): Self = this.set("is_hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs_hover: Self = this.set("is_hover", js.undefined)
+    @scala.inline
+    def setScroll_to_content(value: Boolean): Self = this.set("scroll_to_content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll_to_content: Self = this.set("scroll_to_content", js.undefined)
+  }
+  
 }
 

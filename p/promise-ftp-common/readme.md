@@ -11,8 +11,8 @@ error classes and other common code used in promise-ftp and promise-sftp
 | Full name          | promise-ftp-common |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 602762 |
+| # dependents       | 12 |
+| # downloads        | 619656 |
 | # stars            | 0 |
 
 ## Links

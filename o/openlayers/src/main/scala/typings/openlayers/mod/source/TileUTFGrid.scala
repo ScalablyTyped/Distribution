@@ -42,6 +42,13 @@ class TileUTFGrid protected () extends Tile {
     coordinate: Coordinate_,
     resolution: Double,
     callback: js.Function1[/* d */ js.Any, _],
+    opt_this: js.UndefOr[scala.Nothing],
+    opt_request: Boolean
+  ): Unit = js.native
+  def forDataAtCoordinateAndResolution(
+    coordinate: Coordinate_,
+    resolution: Double,
+    callback: js.Function1[/* d */ js.Any, _],
     opt_this: js.Any
   ): Unit = js.native
   def forDataAtCoordinateAndResolution(

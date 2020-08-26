@@ -101,22 +101,48 @@ trait SchemaVariable extends js.Object {
 
 object SchemaVariable {
   @scala.inline
-  def apply(
-    members: js.Array[SchemaVariable] = null,
-    name: String = null,
-    status: SchemaStatusMessage = null,
-    `type`: String = null,
-    value: String = null,
-    varTableIndex: js.UndefOr[Double] = js.undefined
-  ): SchemaVariable = {
+  def apply(): SchemaVariable = {
     val __obj = js.Dynamic.literal()
-    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(varTableIndex)) __obj.updateDynamic("varTableIndex")(varTableIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVariable]
   }
+  @scala.inline
+  implicit class SchemaVariableOps[Self <: SchemaVariable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembersVarargs(value: SchemaVariable*): Self = this.set("members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: js.Array[SchemaVariable]): Self = this.set("members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembers: Self = this.set("members", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatusMessage): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVarTableIndex(value: Double): Self = this.set("varTableIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVarTableIndex: Self = this.set("varTableIndex", js.undefined)
+  }
+  
 }
 

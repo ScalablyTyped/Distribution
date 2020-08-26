@@ -40,10 +40,10 @@ class DataSet protected () extends Document {
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MDataSet: FolderBase = js.native
   def dataSetAccess: DataSetAccess = js.native
-  def dataSetAccess(newValue: DataSetAccess): js.Any = js.native
+  def dataSetAccess_=(newValue: DataSetAccess): Unit = js.native
   def parameters: IList[DataSetParameter] = js.native
   def source: DataSetSource = js.native
-  def source(newValue: DataSetSource): js.Any = js.native
+  def source_=(newValue: DataSetSource): Unit = js.native
 }
 
 /* static members */

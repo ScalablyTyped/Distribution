@@ -7,24 +7,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @name dxChartSeriesTypes.StockSeries.aggregation */
+@js.native
 trait dxChartSeriesTypesStockSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
   /** @name dxChartSeriesTypes.StockSeries.aggregation.method */
   @JSName("method")
-  var method_dxChartSeriesTypesStockSeriesAggregation: js.UndefOr[ohlc | custom] = js.undefined
+  var method_dxChartSeriesTypesStockSeriesAggregation: js.UndefOr[ohlc | custom] = js.native
 }
 
 object dxChartSeriesTypesStockSeriesAggregation {
   @scala.inline
-  def apply(
-    calculate: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => _ | js.Array[_] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    method: ohlc | custom = null
-  ): dxChartSeriesTypesStockSeriesAggregation = {
+  def apply(): dxChartSeriesTypesStockSeriesAggregation = {
     val __obj = js.Dynamic.literal()
-    if (calculate != null) __obj.updateDynamic("calculate")(js.Any.fromFunction2(calculate))
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesStockSeriesAggregation]
   }
+  @scala.inline
+  implicit class dxChartSeriesTypesStockSeriesAggregationOps[Self <: dxChartSeriesTypesStockSeriesAggregation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: ohlc | custom): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

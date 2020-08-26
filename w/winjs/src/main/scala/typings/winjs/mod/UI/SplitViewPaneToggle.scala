@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 class SplitViewPaneToggle ()
   extends typings.winjs.WinJS.UI.SplitViewPaneToggle {
   def this(element: HTMLButtonElement) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLButtonElement, options: js.Any) = this()
 }
 

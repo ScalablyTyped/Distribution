@@ -4,103 +4,156 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Corpora extends js.Object {
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /**
     * Bodies of items (files/documents) to which the query applies. Supported bodies are 'user', 'domain', 'drive' and 'allDrives'. Prefer 'user' or 'drive'
     * to 'allDrives' for efficiency.
     */
-  var corpora: js.UndefOr[String] = js.undefined
+  var corpora: js.UndefOr[String] = js.native
   /** The source of files to list. Deprecated: use 'corpora' instead. */
-  var corpus: js.UndefOr[String] = js.undefined
+  var corpus: js.UndefOr[String] = js.native
   /** ID of the shared drive to search. */
-  var driveId: js.UndefOr[String] = js.undefined
+  var driveId: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /** Whether both My Drive and shared drive items should be included in results. */
-  var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined
+  var includeItemsFromAllDrives: js.UndefOr[Boolean] = js.native
   /** Deprecated use includeItemsFromAllDrives instead. */
-  var includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined
+  var includeTeamDriveItems: js.UndefOr[Boolean] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /**
     * A comma-separated list of sort keys. Valid keys are 'createdTime', 'folder', 'modifiedByMeTime', 'modifiedTime', 'name', 'name_natural',
     * 'quotaBytesUsed', 'recency', 'sharedWithMeTime', 'starred', and 'viewedByMeTime'. Each key sorts ascending by default, but may be reversed with the
     * 'desc' modifier. Example usage: ?orderBy=folder,modifiedTime desc,name. Please note that there is a current limitation for users with approximately one
     * million files in which the requested sort order is ignored.
     */
-  var orderBy: js.UndefOr[String] = js.undefined
+  var orderBy: js.UndefOr[String] = js.native
   /** The maximum number of files to return per page. Partial or empty result pages are possible even before the end of the files list has been reached. */
-  var pageSize: js.UndefOr[Double] = js.undefined
+  var pageSize: js.UndefOr[Double] = js.native
   /** The token for continuing a previous list request on the next page. This should be set to the value of 'nextPageToken' from the previous response. */
-  var pageToken: js.UndefOr[String] = js.undefined
+  var pageToken: js.UndefOr[String] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /** A query for filtering the file results. See the "Search for Files" guide for supported syntax. */
-  var q: js.UndefOr[String] = js.undefined
+  var q: js.UndefOr[String] = js.native
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /** A comma-separated list of spaces to query within the corpus. Supported values are 'drive', 'appDataFolder' and 'photos'. */
-  var spaces: js.UndefOr[String] = js.undefined
+  var spaces: js.UndefOr[String] = js.native
   /** Whether the requesting application supports both My Drives and shared drives. */
-  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
+  var supportsAllDrives: js.UndefOr[Boolean] = js.native
   /** Deprecated use supportsAllDrives instead. */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
   /** Deprecated use driveId instead. */
-  var teamDriveId: js.UndefOr[String] = js.undefined
+  var teamDriveId: js.UndefOr[String] = js.native
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.undefined
+  var userIp: js.UndefOr[String] = js.native
 }
 
 object Corpora {
   @scala.inline
-  def apply(
-    alt: String = null,
-    corpora: String = null,
-    corpus: String = null,
-    driveId: String = null,
-    fields: String = null,
-    includeItemsFromAllDrives: js.UndefOr[Boolean] = js.undefined,
-    includeTeamDriveItems: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    oauth_token: String = null,
-    orderBy: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    q: String = null,
-    quotaUser: String = null,
-    spaces: String = null,
-    supportsAllDrives: js.UndefOr[Boolean] = js.undefined,
-    supportsTeamDrives: js.UndefOr[Boolean] = js.undefined,
-    teamDriveId: String = null,
-    userIp: String = null
-  ): Corpora = {
+  def apply(): Corpora = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (corpora != null) __obj.updateDynamic("corpora")(corpora.asInstanceOf[js.Any])
-    if (corpus != null) __obj.updateDynamic("corpus")(corpus.asInstanceOf[js.Any])
-    if (driveId != null) __obj.updateDynamic("driveId")(driveId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeItemsFromAllDrives)) __obj.updateDynamic("includeItemsFromAllDrives")(includeItemsFromAllDrives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeTeamDriveItems)) __obj.updateDynamic("includeTeamDriveItems")(includeTeamDriveItems.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (spaces != null) __obj.updateDynamic("spaces")(spaces.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsAllDrives)) __obj.updateDynamic("supportsAllDrives")(supportsAllDrives.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives.get.asInstanceOf[js.Any])
-    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Corpora]
   }
+  @scala.inline
+  implicit class CorporaOps[Self <: Corpora] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setCorpora(value: String): Self = this.set("corpora", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorpora: Self = this.set("corpora", js.undefined)
+    @scala.inline
+    def setCorpus(value: String): Self = this.set("corpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorpus: Self = this.set("corpus", js.undefined)
+    @scala.inline
+    def setDriveId(value: String): Self = this.set("driveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriveId: Self = this.set("driveId", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setIncludeItemsFromAllDrives(value: Boolean): Self = this.set("includeItemsFromAllDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeItemsFromAllDrives: Self = this.set("includeItemsFromAllDrives", js.undefined)
+    @scala.inline
+    def setIncludeTeamDriveItems(value: Boolean): Self = this.set("includeTeamDriveItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeTeamDriveItems: Self = this.set("includeTeamDriveItems", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    @scala.inline
+    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    @scala.inline
+    def setSpaces(value: String): Self = this.set("spaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpaces: Self = this.set("spaces", js.undefined)
+    @scala.inline
+    def setSupportsAllDrives(value: Boolean): Self = this.set("supportsAllDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsAllDrives: Self = this.set("supportsAllDrives", js.undefined)
+    @scala.inline
+    def setSupportsTeamDrives(value: Boolean): Self = this.set("supportsTeamDrives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsTeamDrives: Self = this.set("supportsTeamDrives", js.undefined)
+    @scala.inline
+    def setTeamDriveId(value: String): Self = this.set("teamDriveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamDriveId: Self = this.set("teamDriveId", js.undefined)
+    @scala.inline
+    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIp: Self = this.set("userIp", js.undefined)
+  }
+  
 }
 

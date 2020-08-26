@@ -1,8 +1,5 @@
 package typings.jestWorker
 
-import typings.jestWorker.typesMod.ChildMessage
-import typings.jestWorker.typesMod.OnEnd
-import typings.jestWorker.typesMod.OnStart
 import typings.jestWorker.typesMod.WorkerInterface
 import typings.jestWorker.typesMod.WorkerOptions
 import typings.jestWorker.typesMod.WorkerPoolInterface
@@ -31,20 +28,7 @@ object workerPoolMod extends js.Object {
   }
   
   @js.native
-  class default () extends WorkerPool {
-    /* CompleteClass */
-    override def createWorker(options: WorkerOptions): WorkerInterface = js.native
-    /* CompleteClass */
-    override def end(): Unit = js.native
-    /* CompleteClass */
-    override def getStderr(): ReadableStream = js.native
-    /* CompleteClass */
-    override def getStdout(): ReadableStream = js.native
-    /* CompleteClass */
-    override def getWorkers(): js.Array[WorkerInterface] = js.native
-    /* CompleteClass */
-    override def send(workerId: Double, request: ChildMessage, onStart: OnStart, onEnd: OnEnd): Unit = js.native
-  }
+  class default () extends WorkerPool
   
 }
 

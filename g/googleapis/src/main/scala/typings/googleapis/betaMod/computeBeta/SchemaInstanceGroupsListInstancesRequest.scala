@@ -16,10 +16,26 @@ trait SchemaInstanceGroupsListInstancesRequest extends js.Object {
 
 object SchemaInstanceGroupsListInstancesRequest {
   @scala.inline
-  def apply(instanceState: String = null): SchemaInstanceGroupsListInstancesRequest = {
+  def apply(): SchemaInstanceGroupsListInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (instanceState != null) __obj.updateDynamic("instanceState")(instanceState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupsListInstancesRequest]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupsListInstancesRequestOps[Self <: SchemaInstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceState(value: String): Self = this.set("instanceState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceState: Self = this.set("instanceState", js.undefined)
+  }
+  
 }
 

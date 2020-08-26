@@ -51,14 +51,6 @@ object userAgentMod extends js.Object {
       */
     var attemptReconnection: js.Any = js.native
     /**
-      * User agent configuration.
-      */
-    val configuration: RequiredUserAgentOptions = js.native
-    /**
-      * User agent contact.
-      */
-    val contact: Contact = js.native
-    /**
       * Property reserved for use by instance owner.
       * @defaultValue `undefined`
       */
@@ -86,33 +78,25 @@ object userAgentMod extends js.Object {
     /** Options. */
     var options: js.Any = js.native
     /**
-      * User agent state.
-      */
-    val state: UserAgentState = js.native
-    /**
-      * User agent state change emitter.
-      */
-    val stateChange: Emitter[UserAgentState] = js.native
-    /**
       * Transition state.
       */
     var transitionState: js.Any = js.native
-    /**
-      * User agent transport.
-      */
-    val transport: Transport = js.native
     /** Unload listener. */
     var unloadListener: js.Any = js.native
-    /**
-      * User agent core.
-      */
-    val userAgentCore: UserAgentCore = js.native
     /**
       * Used to avoid circular references.
       * @internal
       */
     def _makeInviter(targetURI: URI): Inviter = js.native
     def _makeInviter(targetURI: URI, options: InviterOptions): Inviter = js.native
+    /**
+      * User agent configuration.
+      */
+    def configuration: RequiredUserAgentOptions = js.native
+    /**
+      * User agent contact.
+      */
+    def contact: Contact = js.native
     /**
       * The logger.
       */
@@ -149,6 +133,14 @@ object userAgentMod extends js.Object {
       */
     def start(): js.Promise[Unit] = js.native
     /**
+      * User agent state.
+      */
+    def state: UserAgentState = js.native
+    /**
+      * User agent state change emitter.
+      */
+    def stateChange: Emitter[UserAgentState] = js.native
+    /**
       * Stop the user agent.
       *
       * @remarks
@@ -177,13 +169,21 @@ object userAgentMod extends js.Object {
       * not wait for the Promise returned by `stop()` to complete.
       */
     def stop(): js.Promise[Unit] = js.native
+    /**
+      * User agent transport.
+      */
+    def transport: Transport = js.native
+    /**
+      * User agent core.
+      */
+    def userAgentCore: UserAgentCore = js.native
   }
   
   /* static members */
   @js.native
   object UserAgent extends js.Object {
     /** Default user agent options. */
-    val defaultOptions: js.Any = js.native
+    var defaultOptions: js.Any = js.native
     /**
       * Strip properties with undefined values from options.
       * This is a work around while waiting for missing vs undefined to be addressed (or not)...

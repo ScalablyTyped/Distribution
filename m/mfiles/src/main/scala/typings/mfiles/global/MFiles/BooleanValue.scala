@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.BooleanValue")
 @js.native
-class BooleanValue () extends IBooleanValue {
-  /* CompleteClass */
-  override var Value: Boolean = js.native
-  /* CompleteClass */
-  override def Clone(): IBooleanValue = js.native
-}
+class BooleanValue () extends IBooleanValue
 
 @JSGlobal("MFiles.BooleanValue")
 @js.native

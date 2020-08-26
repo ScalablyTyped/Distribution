@@ -2,7 +2,7 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.angularCore.anon.ReadAny
+import typings.angularCore.anon.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,13 +15,13 @@ trait ViewChildrenDecorator
     ]
      with Instantiable2[
       (/* selector */ js.Function) | (/* selector */ String) | (/* selector */ Type[js.Any]), 
-      /* opts */ ReadAny, 
+      /* opts */ `0`, 
       ViewChildren
     ] {
   def apply(selector: String): js.Any = js.native
-  def apply(selector: String, opts: ReadAny): js.Any = js.native
+  def apply(selector: String, opts: `0`): js.Any = js.native
   def apply(selector: js.Function): js.Any = js.native
-  def apply(selector: js.Function, opts: ReadAny): js.Any = js.native
+  def apply(selector: js.Function, opts: `0`): js.Any = js.native
   /**
     * Parameter decorator that configures a view query.
     *
@@ -34,7 +34,7 @@ trait ViewChildrenDecorator
     * **Metadata Properties**:
     *
     * * **selector** - The directive type or the name used for querying.
-    * * **read** - True to read a different token from the queried elements.
+    * * **read** - Used to read a different token from the queried elements.
     *
     * @usageNotes
     *
@@ -47,6 +47,6 @@ trait ViewChildrenDecorator
     * @Annotation
     */
   def apply(selector: Type[_]): js.Any = js.native
-  def apply(selector: Type[_], opts: ReadAny): js.Any = js.native
+  def apply(selector: Type[_], opts: `0`): js.Any = js.native
 }
 

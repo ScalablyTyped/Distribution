@@ -11,93 +11,131 @@ import scala.scalajs.js.annotation._
   * <Titanium.App.iOS.UserNotificationCenter.getPendingNotifications> and
   * <Titanium.App.iOS.UserNotificationCenter.getDeliveredNotifications>.
   */
+@js.native
 trait UserNotificationDictionary extends js.Object {
   /**
     * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)
     * type: String
     */
-  var alertAction: js.UndefOr[java.lang.String] = js.undefined
+  var alertAction: js.UndefOr[java.lang.String] = js.native
   /**
     * Alert message.
     */
-  var alertBody: js.UndefOr[java.lang.String] = js.undefined
+  var alertBody: js.UndefOr[java.lang.String] = js.native
   /**
     * Image displayed instead of `Default.png` when launching the application.
     */
-  var alertLaunchImage: js.UndefOr[java.lang.String] = js.undefined
+  var alertLaunchImage: js.UndefOr[java.lang.String] = js.native
   /**
     * Subtitle of the notification.
     */
-  var alertSubtitle: js.UndefOr[java.lang.String] = js.undefined
+  var alertSubtitle: js.UndefOr[java.lang.String] = js.native
   /**
     * Title of the notification.
     */
-  var alertTitle: js.UndefOr[java.lang.String] = js.undefined
+  var alertTitle: js.UndefOr[java.lang.String] = js.native
   /**
     * Application badge value.
     */
-  var badge: js.UndefOr[Double] = js.undefined
+  var badge: js.UndefOr[Double] = js.native
   /**
     * Category identifier of the notification.
     */
-  var category: js.UndefOr[java.lang.String] = js.undefined
+  var category: js.UndefOr[java.lang.String] = js.native
   /**
     * Date and time when the notification was configured to fire.
     */
-  var date: js.UndefOr[Date] = js.undefined
+  var date: js.UndefOr[Date] = js.native
   /**
     * The notification identifier.
     */
-  var identifier: java.lang.String
+  var identifier: java.lang.String = js.native
   /**
     * Region of the notification.
     */
-  var region: js.UndefOr[js.Any] = js.undefined
+  var region: js.UndefOr[js.Any] = js.native
   /**
     * Path to the sound file configured to play when the notification was fired.
     */
-  var sound: js.UndefOr[java.lang.String] = js.undefined
+  var sound: js.UndefOr[java.lang.String] = js.native
   /**
     * Timezone of the date when the notification was configured to fire.
     */
-  var timezone: js.UndefOr[java.lang.String] = js.undefined
+  var timezone: js.UndefOr[java.lang.String] = js.native
   /**
     * Custom data object.
     */
-  var userInfo: js.UndefOr[js.Any] = js.undefined
+  var userInfo: js.UndefOr[js.Any] = js.native
 }
 
 object UserNotificationDictionary {
   @scala.inline
-  def apply(
-    identifier: java.lang.String,
-    alertAction: java.lang.String = null,
-    alertBody: java.lang.String = null,
-    alertLaunchImage: java.lang.String = null,
-    alertSubtitle: java.lang.String = null,
-    alertTitle: java.lang.String = null,
-    badge: js.UndefOr[Double] = js.undefined,
-    category: java.lang.String = null,
-    date: Date = null,
-    region: js.Any = null,
-    sound: java.lang.String = null,
-    timezone: java.lang.String = null,
-    userInfo: js.Any = null
-  ): UserNotificationDictionary = {
+  def apply(identifier: java.lang.String): UserNotificationDictionary = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
-    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction.asInstanceOf[js.Any])
-    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody.asInstanceOf[js.Any])
-    if (alertLaunchImage != null) __obj.updateDynamic("alertLaunchImage")(alertLaunchImage.asInstanceOf[js.Any])
-    if (alertSubtitle != null) __obj.updateDynamic("alertSubtitle")(alertSubtitle.asInstanceOf[js.Any])
-    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.get.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserNotificationDictionary]
   }
+  @scala.inline
+  implicit class UserNotificationDictionaryOps[Self <: UserNotificationDictionary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentifier(value: java.lang.String): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlertAction(value: java.lang.String): Self = this.set("alertAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertAction: Self = this.set("alertAction", js.undefined)
+    @scala.inline
+    def setAlertBody(value: java.lang.String): Self = this.set("alertBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertBody: Self = this.set("alertBody", js.undefined)
+    @scala.inline
+    def setAlertLaunchImage(value: java.lang.String): Self = this.set("alertLaunchImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertLaunchImage: Self = this.set("alertLaunchImage", js.undefined)
+    @scala.inline
+    def setAlertSubtitle(value: java.lang.String): Self = this.set("alertSubtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertSubtitle: Self = this.set("alertSubtitle", js.undefined)
+    @scala.inline
+    def setAlertTitle(value: java.lang.String): Self = this.set("alertTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlertTitle: Self = this.set("alertTitle", js.undefined)
+    @scala.inline
+    def setBadge(value: Double): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setCategory(value: java.lang.String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setRegion(value: js.Any): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSound(value: java.lang.String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSound: Self = this.set("sound", js.undefined)
+    @scala.inline
+    def setTimezone(value: java.lang.String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    @scala.inline
+    def setUserInfo(value: js.Any): Self = this.set("userInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserInfo: Self = this.set("userInfo", js.undefined)
+  }
+  
 }
 

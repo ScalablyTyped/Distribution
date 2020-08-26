@@ -31,6 +31,7 @@ object Driver extends js.Object {
     * @return {!Driver} A new driver instance.
     */
   def createSession(): Driver = js.native
+  def createSession(options: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
   def createSession(options: Options): Driver = js.native
   def createSession(options: Options, opt_service: DriverService): Driver = js.native
   def createSession(options: Capabilities): Driver = js.native

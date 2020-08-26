@@ -22,12 +22,34 @@ trait ModerationLabel extends js.Object {
 
 object ModerationLabel {
   @scala.inline
-  def apply(Confidence: js.UndefOr[Percent] = js.undefined, Name: String = null, ParentName: String = null): ModerationLabel = {
+  def apply(): ModerationLabel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ParentName != null) __obj.updateDynamic("ParentName")(ParentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModerationLabel]
   }
+  @scala.inline
+  implicit class ModerationLabelOps[Self <: ModerationLabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfidence(value: Percent): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setParentName(value: String): Self = this.set("ParentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentName: Self = this.set("ParentName", js.undefined)
+  }
+  
 }
 

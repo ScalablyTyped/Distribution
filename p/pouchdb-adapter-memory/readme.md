@@ -10,9 +10,9 @@ PouchDB adapter using in-memory as its data store.
 | ------------------ | :-------------: |
 | Full name          | pouchdb-adapter-memory |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 44 |
-| # downloads        | 388167 |
+| # releases         | 6 |
+| # dependents       | 46 |
+| # downloads        | 405910 |
 | # stars            | 2 |
 
 ## Links

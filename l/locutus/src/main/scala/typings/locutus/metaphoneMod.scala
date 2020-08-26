@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object metaphoneMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(word: js.UndefOr[scala.Nothing], maxPhonemes: js.Any): js.Any = js.native
   def apply(word: js.Any): js.Any = js.native
   def apply(word: js.Any, maxPhonemes: js.Any): js.Any = js.native
 }

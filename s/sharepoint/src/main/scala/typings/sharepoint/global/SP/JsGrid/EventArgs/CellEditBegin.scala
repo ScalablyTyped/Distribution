@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class CellEditBegin protected ()
   extends typings.sharepoint.SP.JsGrid.EventArgs.CellEditBegin {
   def this(recordKey: Double, fieldKey: String) = this()
-  /* CompleteClass */
-  override var fieldKey: String = js.native
-  /* CompleteClass */
-  override var recordKey: Double = js.native
 }
 

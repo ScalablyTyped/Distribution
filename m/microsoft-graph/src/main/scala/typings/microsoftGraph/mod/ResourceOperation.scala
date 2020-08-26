@@ -4,35 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceOperation extends Entity {
   /**
     * Type of action this operation is going to perform. The actionName should be concise and limited to as few words as
     * possible.
     */
-  var actionName: js.UndefOr[String] = js.undefined
+  var actionName: js.UndefOr[String] = js.native
   /**
     * Description of the resource operation. The description is used in mouse-over text for the operation when shown in the
     * Azure Portal.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   // Name of the Resource this operation is performed on.
-  var resourceName: js.UndefOr[String] = js.undefined
+  var resourceName: js.UndefOr[String] = js.native
 }
 
 object ResourceOperation {
   @scala.inline
-  def apply(
-    actionName: String = null,
-    description: String = null,
-    id: String = null,
-    resourceName: String = null
-  ): ResourceOperation = {
+  def apply(): ResourceOperation = {
     val __obj = js.Dynamic.literal()
-    if (actionName != null) __obj.updateDynamic("actionName")(actionName.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceOperation]
   }
+  @scala.inline
+  implicit class ResourceOperationOps[Self <: ResourceOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionName(value: String): Self = this.set("actionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionName: Self = this.set("actionName", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+  }
+  
 }
 

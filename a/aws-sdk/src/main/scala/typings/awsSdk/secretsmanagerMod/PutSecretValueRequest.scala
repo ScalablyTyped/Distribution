@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutSecretValueRequest extends js.Object {
   /**
-    * (Optional) Specifies a unique identifier for the new version of the secret.   If you use the AWS CLI or one of the AWS SDK to call this operation, then you can leave this parameter empty. The CLI or SDK generates a random UUID for you and includes that in the request. If you don't use the SDK and instead generate a raw HTTP request to the Secrets Manager service endpoint, then you must generate a ClientRequestToken yourself for new versions and include that value in the request.   This value helps ensure idempotency. Secrets Manager uses this value to prevent the accidental creation of duplicate versions if there are failures and retries during the Lambda rotation function's processing. We recommend that you generate a UUID-type value to ensure uniqueness within the specified secret.    If the ClientRequestToken value isn't already associated with a version of the secret then a new version of the secret is created.    If a version with this value already exists and that version's SecretString or SecretBinary values are the same as those in the request then the request is ignored (the operation is idempotent).    If a version with this value already exists and that version's SecretString and SecretBinary values are different from those in the request then the request fails because you cannot modify an existing secret version. You can only create new versions to store new secret values.   This value becomes the VersionId of the new version.
+    * (Optional) Specifies a unique identifier for the new version of the secret.   If you use the AWS CLI or one of the AWS SDK to call this operation, then you can leave this parameter empty. The CLI or SDK generates a random UUID for you and includes that in the request. If you don't use the SDK and instead generate a raw HTTP request to the Secrets Manager service endpoint, then you must generate a ClientRequestToken yourself for new versions and include that value in the request.   This value helps ensure idempotency. Secrets Manager uses this value to prevent the accidental creation of duplicate versions if there are failures and retries during the Lambda rotation function's processing. We recommend that you generate a UUID-type value to ensure uniqueness within the specified secret.    If the ClientRequestToken value isn't already associated with a version of the secret then a new version of the secret is created.    If a version with this value already exists and that version's SecretString or SecretBinary values are the same as those in the request then the request is ignored (the operation is idempotent).    If a version with this value already exists and the version of the SecretString and SecretBinary values are different from those in the request then the request fails because you cannot modify an existing secret version. You can only create new versions to store new secret values.   This value becomes the VersionId of the new version.
     */
   var ClientRequestToken: js.UndefOr[ClientRequestTokenType] = js.native
   /**
@@ -15,7 +15,7 @@ trait PutSecretValueRequest extends js.Object {
     */
   var SecretBinary: js.UndefOr[SecretBinaryType] = js.native
   /**
-    * Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.  If you specify an ARN, we generally recommend that you specify a complete ARN. You can specify a partial ARN too—for example, if you don’t include the final hyphen and six random characters that Secrets Manager adds at the end of the ARN when you created the secret. A partial ARN match can work as long as it uniquely matches only one secret. However, if your secret has a name that ends in a hyphen followed by six characters (before Secrets Manager adds the hyphen and six characters to the ARN) and you try to use that as a partial ARN, then those characters cause Secrets Manager to assume that you’re specifying a complete ARN. This confusion can cause unexpected results. To avoid this situation, we recommend that you don’t create secret names that end with a hyphen followed by six characters. 
+    * Specifies the secret to which you want to add a new version. You can specify either the Amazon Resource Name (ARN) or the friendly name of the secret. The secret must already exist.  If you specify an ARN, we generally recommend that you specify a complete ARN. You can specify a partial ARN too—for example, if you don’t include the final hyphen and six random characters that Secrets Manager adds at the end of the ARN when you created the secret. A partial ARN match can work as long as it uniquely matches only one secret. However, if your secret has a name that ends in a hyphen followed by six characters (before Secrets Manager adds the hyphen and six characters to the ARN) and you try to use that as a partial ARN, then those characters cause Secrets Manager to assume that you’re specifying a complete ARN. This confusion can cause unexpected results. To avoid this situation, we recommend that you don’t create secret names ending with a hyphen followed by six characters. If you specify an incomplete ARN without the random suffix, and instead provide the 'friendly name', you must not include the random suffix. If you do include the random suffix added by Secrets Manager, you receive either a ResourceNotFoundException or an AccessDeniedException error, depending on your permissions. 
     */
   var SecretId: SecretIdType = js.native
   /**
@@ -30,19 +30,42 @@ trait PutSecretValueRequest extends js.Object {
 
 object PutSecretValueRequest {
   @scala.inline
-  def apply(
-    SecretId: SecretIdType,
-    ClientRequestToken: ClientRequestTokenType = null,
-    SecretBinary: SecretBinaryType = null,
-    SecretString: SecretStringType = null,
-    VersionStages: SecretVersionStagesType = null
-  ): PutSecretValueRequest = {
+  def apply(SecretId: SecretIdType): PutSecretValueRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (SecretBinary != null) __obj.updateDynamic("SecretBinary")(SecretBinary.asInstanceOf[js.Any])
-    if (SecretString != null) __obj.updateDynamic("SecretString")(SecretString.asInstanceOf[js.Any])
-    if (VersionStages != null) __obj.updateDynamic("VersionStages")(VersionStages.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutSecretValueRequest]
   }
+  @scala.inline
+  implicit class PutSecretValueRequestOps[Self <: PutSecretValueRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecretId(value: SecretIdType): Self = this.set("SecretId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestTokenType): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setSecretBinary(value: SecretBinaryType): Self = this.set("SecretBinary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretBinary: Self = this.set("SecretBinary", js.undefined)
+    @scala.inline
+    def setSecretString(value: SecretStringType): Self = this.set("SecretString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretString: Self = this.set("SecretString", js.undefined)
+    @scala.inline
+    def setVersionStagesVarargs(value: SecretVersionStageType*): Self = this.set("VersionStages", js.Array(value :_*))
+    @scala.inline
+    def setVersionStages(value: SecretVersionStagesType): Self = this.set("VersionStages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionStages: Self = this.set("VersionStages", js.undefined)
+  }
+  
 }
 

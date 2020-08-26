@@ -31,18 +31,38 @@ trait SchemaMaterial extends js.Object {
 
 object SchemaMaterial {
   @scala.inline
-  def apply(
-    driveFile: SchemaSharedDriveFile = null,
-    form: SchemaForm = null,
-    link: SchemaLink = null,
-    youtubeVideo: SchemaYouTubeVideo = null
-  ): SchemaMaterial = {
+  def apply(): SchemaMaterial = {
     val __obj = js.Dynamic.literal()
-    if (driveFile != null) __obj.updateDynamic("driveFile")(driveFile.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (youtubeVideo != null) __obj.updateDynamic("youtubeVideo")(youtubeVideo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMaterial]
   }
+  @scala.inline
+  implicit class SchemaMaterialOps[Self <: SchemaMaterial] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDriveFile(value: SchemaSharedDriveFile): Self = this.set("driveFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriveFile: Self = this.set("driveFile", js.undefined)
+    @scala.inline
+    def setForm(value: SchemaForm): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setLink(value: SchemaLink): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setYoutubeVideo(value: SchemaYouTubeVideo): Self = this.set("youtubeVideo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYoutubeVideo: Self = this.set("youtubeVideo", js.undefined)
+  }
+  
 }
 

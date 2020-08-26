@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Duration extends js.Object {
-  var delay: js.UndefOr[String] = js.undefined
-  var duration: js.UndefOr[String] = js.undefined
-  var endOpacity: js.UndefOr[Double] = js.undefined
-  var persist: js.UndefOr[String] = js.undefined
-  var startOpacity: js.UndefOr[Double] = js.undefined
-  var timingFunction: js.UndefOr[String] = js.undefined
+  var delay: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.native
+  var endOpacity: js.UndefOr[Double] = js.native
+  var persist: js.UndefOr[String] = js.native
+  var startOpacity: js.UndefOr[Double] = js.native
+  var timingFunction: js.UndefOr[String] = js.native
 }
 
 object Duration {
   @scala.inline
-  def apply(
-    delay: String = null,
-    duration: String = null,
-    endOpacity: js.UndefOr[Double] = js.undefined,
-    persist: String = null,
-    startOpacity: js.UndefOr[Double] = js.undefined,
-    timingFunction: String = null
-  ): Duration = {
+  def apply(): Duration = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOpacity)) __obj.updateDynamic("endOpacity")(endOpacity.get.asInstanceOf[js.Any])
-    if (persist != null) __obj.updateDynamic("persist")(persist.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOpacity)) __obj.updateDynamic("startOpacity")(startOpacity.get.asInstanceOf[js.Any])
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
+  @scala.inline
+  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelay(value: String): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEndOpacity(value: Double): Self = this.set("endOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOpacity: Self = this.set("endOpacity", js.undefined)
+    @scala.inline
+    def setPersist(value: String): Self = this.set("persist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersist: Self = this.set("persist", js.undefined)
+    @scala.inline
+    def setStartOpacity(value: Double): Self = this.set("startOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartOpacity: Self = this.set("startOpacity", js.undefined)
+    @scala.inline
+    def setTimingFunction(value: String): Self = this.set("timingFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimingFunction: Self = this.set("timingFunction", js.undefined)
+  }
+  
 }
 

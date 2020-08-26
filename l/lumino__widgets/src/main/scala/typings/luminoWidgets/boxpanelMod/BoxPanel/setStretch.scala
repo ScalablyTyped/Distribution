@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/boxpanel", "BoxPanel.setStretch")
+@JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.setStretch")
 @js.native
 object setStretch extends js.Object {
   /**

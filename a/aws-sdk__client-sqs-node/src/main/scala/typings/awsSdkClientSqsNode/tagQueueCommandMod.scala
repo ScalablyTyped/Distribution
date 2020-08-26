@@ -26,16 +26,9 @@ object tagQueueCommandMod extends js.Object {
           Readable
         ] {
     def this(input: TagQueueInput) = this()
-    /* CompleteClass */
-    override val input: TagQueueInput = js.native
     val middlewareStack: MiddlewareStack[TagQueueInput, TagQueueOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[TagQueueInput, TagQueueOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[TagQueueInput, TagQueueOutput] = js.native
   }

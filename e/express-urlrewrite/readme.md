@@ -12,7 +12,7 @@ URL rewrite middleware for express
 | Keywords           | express, middleware, rewrite, redirect, url |
 | # releases         | 1 |
 | # dependents       | 52 |
-| # downloads        | 4455237 |
+| # downloads        | 4603822 |
 | # stars            | 10 |
 
 ## Links

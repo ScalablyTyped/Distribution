@@ -27,16 +27,36 @@ trait SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig {
   @scala.inline
-  def apply(
-    actions: js.Array[SchemaGooglePrivacyDlpV2Action] = null,
-    privacyMetric: SchemaGooglePrivacyDlpV2PrivacyMetric = null,
-    sourceTable: SchemaGooglePrivacyDlpV2BigQueryTable = null
-  ): SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (privacyMetric != null) __obj.updateDynamic("privacyMetric")(privacyMetric.asInstanceOf[js.Any])
-    if (sourceTable != null) __obj.updateDynamic("sourceTable")(sourceTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2RiskAnalysisJobConfigOps[Self <: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: js.Array[SchemaGooglePrivacyDlpV2Action]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setPrivacyMetric(value: SchemaGooglePrivacyDlpV2PrivacyMetric): Self = this.set("privacyMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivacyMetric: Self = this.set("privacyMetric", js.undefined)
+    @scala.inline
+    def setSourceTable(value: SchemaGooglePrivacyDlpV2BigQueryTable): Self = this.set("sourceTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTable: Self = this.set("sourceTable", js.undefined)
+  }
+  
 }
 

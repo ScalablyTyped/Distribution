@@ -11,8 +11,8 @@ Automatically install npm, bower, tsd, and pip packages/dependencies if the rela
 | Full name          | gulp-install |
 | Keywords           | gulpplugin, bower, npm, install |
 | # releases         | 0 |
-| # dependents       | 557 |
-| # downloads        | 1299424 |
+| # dependents       | 558 |
+| # downloads        | 1329786 |
 | # stars            | 25 |
 
 ## Links

@@ -18,10 +18,28 @@ trait KinesisConfiguration extends js.Object {
 
 object KinesisConfiguration {
   @scala.inline
-  def apply(StreamArn: Arn, AggregationEnabled: js.UndefOr[Boolean] = js.undefined): KinesisConfiguration = {
+  def apply(StreamArn: Arn): KinesisConfiguration = {
     val __obj = js.Dynamic.literal(StreamArn = StreamArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(AggregationEnabled)) __obj.updateDynamic("AggregationEnabled")(AggregationEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisConfiguration]
   }
+  @scala.inline
+  implicit class KinesisConfigurationOps[Self <: KinesisConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamArn(value: Arn): Self = this.set("StreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAggregationEnabled(value: Boolean): Self = this.set("AggregationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationEnabled: Self = this.set("AggregationEnabled", js.undefined)
+  }
+  
 }
 

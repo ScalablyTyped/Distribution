@@ -20,37 +20,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ErrorModel extends js.Object {
   // Column where the error happened (if applicable)
-  var column: js.UndefOr[Double] = js.undefined
+  var column: js.UndefOr[Double] = js.native
   // Line where the error happened (if applicable)
-  var line: js.UndefOr[Double] = js.undefined
+  var line: js.UndefOr[Double] = js.native
   // descriptive message about the error
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String] = js.native
   // Internal trace ID to help with debugging
-  var trace_id: js.UndefOr[String] = js.undefined
+  var trace_id: js.UndefOr[String] = js.native
   // category of the error
   var `type`: js.UndefOr[
     AUTHEXCEPTION | VERSIONEXCEPTION | INTERNALERROR | INVALIDINPUT | NOTIMPLEMENTEDYET | RESOURCEEXCEEDED | ALREADYEXISTS | NOTFOUND | DEPENDENTRESOURCES | QUERY_ERROR | NOT_READY | FORBIDDEN | QUERY_TIMEOUT | INTEGRATION_NOT_FOUND | ROLE_NOT_FOUND | CONNECTION_ERROR
-  ] = js.undefined
+  ] = js.native
 }
 
 object ErrorModel {
   @scala.inline
-  def apply(
-    column: js.UndefOr[Double] = js.undefined,
-    line: js.UndefOr[Double] = js.undefined,
-    message: String = null,
-    trace_id: String = null,
-    `type`: AUTHEXCEPTION | VERSIONEXCEPTION | INTERNALERROR | INVALIDINPUT | NOTIMPLEMENTEDYET | RESOURCEEXCEEDED | ALREADYEXISTS | NOTFOUND | DEPENDENTRESOURCES | QUERY_ERROR | NOT_READY | FORBIDDEN | QUERY_TIMEOUT | INTEGRATION_NOT_FOUND | ROLE_NOT_FOUND | CONNECTION_ERROR = null
-  ): ErrorModel = {
+  def apply(): ErrorModel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (trace_id != null) __obj.updateDynamic("trace_id")(trace_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorModel]
   }
+  @scala.inline
+  implicit class ErrorModelOps[Self <: ErrorModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setTrace_id(value: String): Self = this.set("trace_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrace_id: Self = this.set("trace_id", js.undefined)
+    @scala.inline
+    def setType(
+      value: AUTHEXCEPTION | VERSIONEXCEPTION | INTERNALERROR | INVALIDINPUT | NOTIMPLEMENTEDYET | RESOURCEEXCEEDED | ALREADYEXISTS | NOTFOUND | DEPENDENTRESOURCES | QUERY_ERROR | NOT_READY | FORBIDDEN | QUERY_TIMEOUT | INTEGRATION_NOT_FOUND | ROLE_NOT_FOUND | CONNECTION_ERROR
+    ): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

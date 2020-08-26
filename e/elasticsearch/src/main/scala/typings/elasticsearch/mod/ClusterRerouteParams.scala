@@ -4,45 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterRerouteParams extends GenericParams {
-  var dryRun: js.UndefOr[Boolean] = js.undefined
-  var explain: js.UndefOr[Boolean] = js.undefined
-  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
-  var metric: js.UndefOr[NameList] = js.undefined
-  var retryFailed: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[TimeSpan] = js.undefined
+  var dryRun: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var metric: js.UndefOr[NameList] = js.native
+  var retryFailed: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.native
 }
 
 object ClusterRerouteParams {
   @scala.inline
-  def apply(
-    body: js.Any = null,
-    dryRun: js.UndefOr[Boolean] = js.undefined,
-    explain: js.UndefOr[Boolean] = js.undefined,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    masterTimeout: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    metric: NameList = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    retryFailed: js.UndefOr[Boolean] = js.undefined,
-    timeout: TimeSpan = null
-  ): ClusterRerouteParams = {
+  def apply(): ClusterRerouteParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryFailed)) __obj.updateDynamic("retryFailed")(retryFailed.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterRerouteParams]
   }
+  @scala.inline
+  implicit class ClusterRerouteParamsOps[Self <: ClusterRerouteParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    @scala.inline
+    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplain: Self = this.set("explain", js.undefined)
+    @scala.inline
+    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    @scala.inline
+    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
+    @scala.inline
+    def setMetric(value: NameList): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setRetryFailed(value: Boolean): Self = this.set("retryFailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryFailed: Self = this.set("retryFailed", js.undefined)
+    @scala.inline
+    def setTimeout(value: TimeSpan): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

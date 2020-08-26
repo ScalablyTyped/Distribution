@@ -58,24 +58,50 @@ trait SchemaPose extends js.Object {
 
 object SchemaPose {
   @scala.inline
-  def apply(
-    accuracyMeters: js.UndefOr[Double] = js.undefined,
-    altitude: js.UndefOr[Double] = js.undefined,
-    heading: js.UndefOr[Double] = js.undefined,
-    latLngPair: SchemaLatLng = null,
-    level: SchemaLevel = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    roll: js.UndefOr[Double] = js.undefined
-  ): SchemaPose = {
+  def apply(): SchemaPose = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accuracyMeters)) __obj.updateDynamic("accuracyMeters")(accuracyMeters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(heading)) __obj.updateDynamic("heading")(heading.get.asInstanceOf[js.Any])
-    if (latLngPair != null) __obj.updateDynamic("latLngPair")(latLngPair.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(roll)) __obj.updateDynamic("roll")(roll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPose]
   }
+  @scala.inline
+  implicit class SchemaPoseOps[Self <: SchemaPose] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccuracyMeters(value: Double): Self = this.set("accuracyMeters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracyMeters: Self = this.set("accuracyMeters", js.undefined)
+    @scala.inline
+    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    @scala.inline
+    def setHeading(value: Double): Self = this.set("heading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeading: Self = this.set("heading", js.undefined)
+    @scala.inline
+    def setLatLngPair(value: SchemaLatLng): Self = this.set("latLngPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatLngPair: Self = this.set("latLngPair", js.undefined)
+    @scala.inline
+    def setLevel(value: SchemaLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setPitch(value: Double): Self = this.set("pitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePitch: Self = this.set("pitch", js.undefined)
+    @scala.inline
+    def setRoll(value: Double): Self = this.set("roll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoll: Self = this.set("roll", js.undefined)
+  }
+  
 }
 

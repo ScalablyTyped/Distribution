@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServiceDescriptorProto_ () extends Message {
   def addMethod(): MethodDescriptorProto = js.native
+  def addMethod(value: js.UndefOr[scala.Nothing], index: Double): MethodDescriptorProto = js.native
   def addMethod(value: MethodDescriptorProto): MethodDescriptorProto = js.native
   def addMethod(value: MethodDescriptorProto, index: Double): MethodDescriptorProto = js.native
   def clearMethodList(): Unit = js.native

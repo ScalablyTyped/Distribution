@@ -7,90 +7,133 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * The local path of a CSS file to stylize the prompt window.
     * Defaults to `null`.
     */
-  var customStylesheet: js.UndefOr[String | Null] = js.undefined
+  var customStylesheet: js.UndefOr[String | Null] = js.native
   /** The height of the prompt window. Defaults to `130`. */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * The path to an icon image to use in the title bar. Defaults to `null`
     * and uses electron's icon.
     */
-  var icon: js.UndefOr[String | Null] = js.undefined
+  var icon: js.UndefOr[String | Null] = js.native
   /**
     * The attributes of the input field, analagous to the HTML attributes:
     * `{type: 'text', required: true}` -> `<input type="text" required>`.
     * Used if the type is `'input'`.
     */
-  var inputAttrs: js.UndefOr[Record[String, _]] = js.undefined
+  var inputAttrs: js.UndefOr[Record[String, _]] = js.native
   /**
     * The label which appears on the prompt for the input field. Defaults
     * to `'Please input a value:'`.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * Whether the prompt window can be resized or not. Defaults to
     * `false`.
     */
-  var resizable: js.UndefOr[Boolean] = js.undefined
+  var resizable: js.UndefOr[Boolean] = js.native
   /**
     * The items for the select dropdown if using the `'select'` type in the
     * format `'value'`: `'display text'`, where the value is what will be
     * given to the then block and the display text is what the user will
     * see.
     */
-  var selectOptions: js.UndefOr[js.Object] = js.undefined
+  var selectOptions: js.UndefOr[js.Object] = js.native
   /** The title of the prompt window. Defaults to `'Prompt'`. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * The type of input field, either `'input'` for a standard text input
     * field or 'select' for a dropdown type input. Defaults to `'input'`.
     */
-  var `type`: js.UndefOr[ApostropheinputApostrophe | select] = js.undefined
+  var `type`: js.UndefOr[ApostropheinputApostrophe | select] = js.native
   /**
     * Whether the label should be interpreted as HTML or not. Defaults to
     * `false`.
     */
-  var useHtmlLabel: js.UndefOr[Boolean] = js.undefined
+  var useHtmlLabel: js.UndefOr[Boolean] = js.native
   /** The default value for the input field. Defaults to `null`. */
-  var value: js.UndefOr[String | Null] = js.undefined
+  var value: js.UndefOr[String | Null] = js.native
   /** The width of the prompt window. Defaults to `370`. */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    customStylesheet: js.UndefOr[Null | String] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    icon: js.UndefOr[Null | String] = js.undefined,
-    inputAttrs: Record[String, _] = null,
-    label: String = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    selectOptions: js.Object = null,
-    title: String = null,
-    `type`: ApostropheinputApostrophe | select = null,
-    useHtmlLabel: js.UndefOr[Boolean] = js.undefined,
-    value: js.UndefOr[Null | String] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(customStylesheet)) __obj.updateDynamic("customStylesheet")(customStylesheet.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (inputAttrs != null) __obj.updateDynamic("inputAttrs")(inputAttrs.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtmlLabel)) __obj.updateDynamic("useHtmlLabel")(useHtmlLabel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomStylesheet(value: String): Self = this.set("customStylesheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomStylesheet: Self = this.set("customStylesheet", js.undefined)
+    @scala.inline
+    def setCustomStylesheetNull: Self = this.set("customStylesheet", null)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconNull: Self = this.set("icon", null)
+    @scala.inline
+    def setInputAttrs(value: Record[String, _]): Self = this.set("inputAttrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAttrs: Self = this.set("inputAttrs", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setSelectOptions(value: js.Object): Self = this.set("selectOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOptions: Self = this.set("selectOptions", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: ApostropheinputApostrophe | select): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUseHtmlLabel(value: Boolean): Self = this.set("useHtmlLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHtmlLabel: Self = this.set("useHtmlLabel", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextDecoderOptions extends js.Object {
-  var fatal: js.UndefOr[Boolean] = js.undefined
-  var ignoreBOM: js.UndefOr[Boolean] = js.undefined
+  var fatal: js.UndefOr[Boolean] = js.native
+  var ignoreBOM: js.UndefOr[Boolean] = js.native
 }
 
 object TextDecoderOptions {
   @scala.inline
-  def apply(fatal: js.UndefOr[Boolean] = js.undefined, ignoreBOM: js.UndefOr[Boolean] = js.undefined): TextDecoderOptions = {
+  def apply(): TextDecoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fatal)) __obj.updateDynamic("fatal")(fatal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBOM)) __obj.updateDynamic("ignoreBOM")(ignoreBOM.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextDecoderOptions]
   }
+  @scala.inline
+  implicit class TextDecoderOptionsOps[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFatal(value: Boolean): Self = this.set("fatal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFatal: Self = this.set("fatal", js.undefined)
+    @scala.inline
+    def setIgnoreBOM(value: Boolean): Self = this.set("ignoreBOM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreBOM: Self = this.set("ignoreBOM", js.undefined)
+  }
+  
 }
 

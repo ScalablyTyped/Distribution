@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Agent extends js.Object {
-  var maxSockets: Double
-  var requests: js.Any
-  var sockets: js.Any
+  var maxSockets: Double = js.native
+  var requests: js.Any = js.native
+  var sockets: js.Any = js.native
 }
 
 @JSImport("https", "Agent")

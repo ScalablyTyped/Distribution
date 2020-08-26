@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoCompleteOptions extends js.Object {
   /**
     * Indicate if the autocomplete is going to be strict case-sensitive to match the options.
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  var caseSensitive: js.UndefOr[Boolean] = js.native
   /**
     * Indicate the KeyCodes for trigger confirm completion, by default those keys are: `[39, 35, 9]` which are the code for `[right, end, tab]`.
     * @default [39, 35, 9]
     */
-  var confirmKeys: js.UndefOr[js.Array[Double]] = js.undefined
+  var confirmKeys: js.UndefOr[js.Array[Double]] = js.native
   /**
     * Pick one of the two strategies, or define a custom filter function.
     *
@@ -21,7 +22,7 @@ trait AutoCompleteOptions extends js.Object {
     *
     * 'contain': Contains the user's input or not, e.g. 'pl' matches 'apple' too.
     */
-  var filter: js.UndefOr[AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])] = js.undefined
+  var filter: js.UndefOr[AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])] = js.native
   /**
     * This function will return your possible options for create the autocomplete selection,
     * you can control dynamically which options you want to display according to the current active editing node.
@@ -38,7 +39,7 @@ trait AutoCompleteOptions extends js.Object {
       /* editor */ JSONEditor, 
       AutoCompleteCompletion | js.Promise[AutoCompleteCompletion]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Indicate the way to trigger autocomplete menu.
     *
@@ -47,25 +48,53 @@ trait AutoCompleteOptions extends js.Object {
     * 'focus': When you focus in the field or value, it will trigger the autocomplete.
     * @default 'keydown'
     */
-  var trigger: js.UndefOr[AutoCompleteTrigger] = js.undefined
+  var trigger: js.UndefOr[AutoCompleteTrigger] = js.native
 }
 
 object AutoCompleteOptions {
   @scala.inline
-  def apply(
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    confirmKeys: js.Array[Double] = null,
-    filter: AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean]) = null,
-    getOptions: (/* text */ String, /* path */ JSONPath, /* input */ AutoCompleteElementType, /* editor */ JSONEditor) => AutoCompleteCompletion | js.Promise[AutoCompleteCompletion] = null,
-    trigger: AutoCompleteTrigger = null
-  ): AutoCompleteOptions = {
+  def apply(): AutoCompleteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
-    if (confirmKeys != null) __obj.updateDynamic("confirmKeys")(confirmKeys.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (getOptions != null) __obj.updateDynamic("getOptions")(js.Any.fromFunction4(getOptions))
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteOptions]
   }
+  @scala.inline
+  implicit class AutoCompleteOptionsOps[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    @scala.inline
+    def setConfirmKeysVarargs(value: Double*): Self = this.set("confirmKeys", js.Array(value :_*))
+    @scala.inline
+    def setConfirmKeys(value: js.Array[Double]): Self = this.set("confirmKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmKeys: Self = this.set("confirmKeys", js.undefined)
+    @scala.inline
+    def setFilterFunction1(value: /* query */ String => Boolean): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFilter(value: AutoCompleteMatchingStrategy | (js.Function1[/* query */ String, Boolean])): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setGetOptions(
+      value: (/* text */ String, /* path */ JSONPath, /* input */ AutoCompleteElementType, /* editor */ JSONEditor) => AutoCompleteCompletion | js.Promise[AutoCompleteCompletion]
+    ): Self = this.set("getOptions", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteGetOptions: Self = this.set("getOptions", js.undefined)
+    @scala.inline
+    def setTrigger(value: AutoCompleteTrigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+  }
+  
 }
 

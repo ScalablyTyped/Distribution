@@ -28,6 +28,7 @@ class ResourceNamespacesDomainmappings protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaDomainMapping] = js.native
   def create(callback: BodyResponseCallback[SchemaDomainMapping]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomainMapping] = js.native
   def create(params: ParamsResourceNamespacesDomainmappingsCreate): GaxiosPromise[SchemaDomainMapping] = js.native
   def create(
     params: ParamsResourceNamespacesDomainmappingsCreate,
@@ -62,6 +63,7 @@ class ResourceNamespacesDomainmappings protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceNamespacesDomainmappingsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceNamespacesDomainmappingsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -89,6 +91,7 @@ class ResourceNamespacesDomainmappings protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDomainMapping] = js.native
   def get(callback: BodyResponseCallback[SchemaDomainMapping]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDomainMapping] = js.native
   def get(params: ParamsResourceNamespacesDomainmappingsGet): GaxiosPromise[SchemaDomainMapping] = js.native
   def get(
     params: ParamsResourceNamespacesDomainmappingsGet,
@@ -126,6 +129,7 @@ class ResourceNamespacesDomainmappings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDomainMappingsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
   def list(params: ParamsResourceNamespacesDomainmappingsList): GaxiosPromise[SchemaListDomainMappingsResponse] = js.native
   def list(
     params: ParamsResourceNamespacesDomainmappingsList,

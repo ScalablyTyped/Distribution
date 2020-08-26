@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListValue_ () extends Message {
   def addValues(): Value = js.native
+  def addValues(value: js.UndefOr[scala.Nothing], index: Double): Value = js.native
   def addValues(value: Value): Value = js.native
   def addValues(value: Value, index: Double): Value = js.native
   def clearValuesList(): Unit = js.native

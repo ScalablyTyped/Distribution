@@ -22,16 +22,34 @@ trait ErrorStatistics extends js.Object {
 
 object ErrorStatistics {
   @scala.inline
-  def apply(
-    OtherCount: js.UndefOr[NullableLong] = js.undefined,
-    ThrottleCount: js.UndefOr[NullableLong] = js.undefined,
-    TotalCount: js.UndefOr[NullableLong] = js.undefined
-  ): ErrorStatistics = {
+  def apply(): ErrorStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(OtherCount)) __obj.updateDynamic("OtherCount")(OtherCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ThrottleCount)) __obj.updateDynamic("ThrottleCount")(ThrottleCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalCount)) __obj.updateDynamic("TotalCount")(TotalCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorStatistics]
   }
+  @scala.inline
+  implicit class ErrorStatisticsOps[Self <: ErrorStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOtherCount(value: NullableLong): Self = this.set("OtherCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOtherCount: Self = this.set("OtherCount", js.undefined)
+    @scala.inline
+    def setThrottleCount(value: NullableLong): Self = this.set("ThrottleCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrottleCount: Self = this.set("ThrottleCount", js.undefined)
+    @scala.inline
+    def setTotalCount(value: NullableLong): Self = this.set("TotalCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCount: Self = this.set("TotalCount", js.undefined)
+  }
+  
 }
 

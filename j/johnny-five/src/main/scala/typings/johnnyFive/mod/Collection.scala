@@ -18,6 +18,7 @@ class Collection[Base] protected () extends js.Object {
   def indexOf(item: Base): Double = js.native
   def map(callback: js.Function2[/* item */ Base, /* index */ Double, Unit]): js.Array[_] = js.native
   def slice(): Collection[Base] = js.native
+  def slice(begin: js.UndefOr[scala.Nothing], end: Double): Collection[Base] = js.native
   def slice(begin: Double): Collection[Base] = js.native
   def slice(begin: Double, end: Double): Collection[Base] = js.native
 }

@@ -39,12 +39,37 @@ object UploadLayerPartRequest {
     partFirstByte: PartSize,
     partLastByte: PartSize,
     repositoryName: RepositoryName,
-    uploadId: UploadId,
-    registryId: RegistryId = null
+    uploadId: UploadId
   ): UploadLayerPartRequest = {
     val __obj = js.Dynamic.literal(layerPartBlob = layerPartBlob.asInstanceOf[js.Any], partFirstByte = partFirstByte.asInstanceOf[js.Any], partLastByte = partLastByte.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLayerPartRequest]
   }
+  @scala.inline
+  implicit class UploadLayerPartRequestOps[Self <: UploadLayerPartRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayerPartBlob(value: LayerPartBlob): Self = this.set("layerPartBlob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartFirstByte(value: PartSize): Self = this.set("partFirstByte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPartLastByte(value: PartSize): Self = this.set("partLastByte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUploadId(value: UploadId): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+  }
+  
 }
 

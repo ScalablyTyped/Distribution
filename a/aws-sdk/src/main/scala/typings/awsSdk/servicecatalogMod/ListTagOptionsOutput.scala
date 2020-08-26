@@ -18,11 +18,32 @@ trait ListTagOptionsOutput extends js.Object {
 
 object ListTagOptionsOutput {
   @scala.inline
-  def apply(PageToken: PageToken = null, TagOptionDetails: TagOptionDetails = null): ListTagOptionsOutput = {
+  def apply(): ListTagOptionsOutput = {
     val __obj = js.Dynamic.literal()
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
-    if (TagOptionDetails != null) __obj.updateDynamic("TagOptionDetails")(TagOptionDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagOptionsOutput]
   }
+  @scala.inline
+  implicit class ListTagOptionsOutputOps[Self <: ListTagOptionsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    @scala.inline
+    def setTagOptionDetailsVarargs(value: TagOptionDetail*): Self = this.set("TagOptionDetails", js.Array(value :_*))
+    @scala.inline
+    def setTagOptionDetails(value: TagOptionDetails): Self = this.set("TagOptionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagOptionDetails: Self = this.set("TagOptionDetails", js.undefined)
+  }
+  
 }
 

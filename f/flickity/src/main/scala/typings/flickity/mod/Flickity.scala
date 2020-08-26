@@ -262,9 +262,11 @@ trait Flickity extends js.Object {
     * @param isInstant (Optional) If true, immediately view the selected cell without animation.
     */
   def select(index: Double): Unit = js.native
+  def select(index: Double, isWrapped: js.UndefOr[scala.Nothing], isInstant: Boolean): Unit = js.native
   def select(index: Double, isWrapped: Boolean): Unit = js.native
   def select(index: Double, isWrapped: Boolean, isInstant: Boolean): Unit = js.native
   def selectCell(index: String): Unit = js.native
+  def selectCell(index: String, isWrapped: js.UndefOr[scala.Nothing], isInstant: Boolean): Unit = js.native
   def selectCell(index: String, isWrapped: Boolean): Unit = js.native
   def selectCell(index: String, isWrapped: Boolean, isInstant: Boolean): Unit = js.native
   /**
@@ -275,6 +277,7 @@ trait Flickity extends js.Object {
     * @param isInstant If true, immediately view the selected slide without animation.
     */
   def selectCell(index: Double): Unit = js.native
+  def selectCell(index: Double, isWrapped: js.UndefOr[scala.Nothing], isInstant: Boolean): Unit = js.native
   def selectCell(index: Double, isWrapped: Boolean): Unit = js.native
   def selectCell(index: Double, isWrapped: Boolean, isInstant: Boolean): Unit = js.native
   /**

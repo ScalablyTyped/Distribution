@@ -18,6 +18,9 @@ object formatjsIntlListformatStrings {
   sealed trait element extends js.Object
   
   @js.native
+  sealed trait literal extends js.Object
+  
+  @js.native
   sealed trait long extends js.Object
   
   @js.native
@@ -40,6 +43,8 @@ object formatjsIntlListformatStrings {
   def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
   @scala.inline
   def element: element = "element".asInstanceOf[element]
+  @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline

@@ -10,14 +10,6 @@ import scala.scalajs.js.annotation._
 class ApiError protected ()
   extends typings.dropboxjs.Dropbox.ApiError {
   def this(xhr: XMLHttpRequest, method: String, url: String) = this()
-  /* CompleteClass */
-  override var method: String = js.native
-  /* CompleteClass */
-  override var responseText: String = js.native
-  /* CompleteClass */
-  override var status: Double = js.native
-  /* CompleteClass */
-  override var url: String = js.native
 }
 
 /* static members */

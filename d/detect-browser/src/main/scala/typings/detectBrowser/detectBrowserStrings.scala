@@ -1,6 +1,7 @@
 package typings.detectBrowser
 
 import typings.detectBrowser.mod.Browser
+import typings.detectBrowser.mod.DetectedInfoType
 import typings.detectBrowser.mod.OperatingSystem
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,9 +37,6 @@ object detectBrowserStrings {
   
   @js.native
   sealed trait QNX extends OperatingSystem
-  
-  @js.native
-  sealed trait `Search Bot` extends OperatingSystem
   
   @js.native
   sealed trait `Sun OS` extends OperatingSystem
@@ -95,7 +93,13 @@ object detectBrowserStrings {
   sealed trait beaker extends Browser
   
   @js.native
-  sealed trait bot extends js.Object
+  sealed trait bot extends DetectedInfoType
+  
+  @js.native
+  sealed trait `bot-device` extends DetectedInfoType
+  
+  @js.native
+  sealed trait browser extends DetectedInfoType
   
   @js.native
   sealed trait chrome extends Browser
@@ -146,7 +150,7 @@ object detectBrowserStrings {
   sealed trait miui extends Browser
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait node extends DetectedInfoType
   
   @js.native
   sealed trait opera extends Browser
@@ -156,6 +160,9 @@ object detectBrowserStrings {
   
   @js.native
   sealed trait phantomjs extends Browser
+  
+  @js.native
+  sealed trait `react-native` extends DetectedInfoType
   
   @js.native
   sealed trait safari extends Browser
@@ -168,9 +175,6 @@ object detectBrowserStrings {
   
   @js.native
   sealed trait silk extends Browser
-  
-  @js.native
-  sealed trait vivaldi extends Browser
   
   @js.native
   sealed trait yandexbrowser extends Browser
@@ -195,8 +199,6 @@ object detectBrowserStrings {
   def `Open BSD`: `Open BSD` = ("Open BSD").asInstanceOf[`Open BSD`]
   @scala.inline
   def QNX: QNX = "QNX".asInstanceOf[QNX]
-  @scala.inline
-  def `Search Bot`: `Search Bot` = ("Search Bot").asInstanceOf[`Search Bot`]
   @scala.inline
   def `Sun OS`: `Sun OS` = ("Sun OS").asInstanceOf[`Sun OS`]
   @scala.inline
@@ -235,6 +237,10 @@ object detectBrowserStrings {
   def beaker: beaker = "beaker".asInstanceOf[beaker]
   @scala.inline
   def bot: bot = "bot".asInstanceOf[bot]
+  @scala.inline
+  def `bot-device`: `bot-device` = "bot-device".asInstanceOf[`bot-device`]
+  @scala.inline
+  def browser: browser = "browser".asInstanceOf[browser]
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
   @scala.inline
@@ -276,6 +282,8 @@ object detectBrowserStrings {
   @scala.inline
   def phantomjs: phantomjs = "phantomjs".asInstanceOf[phantomjs]
   @scala.inline
+  def `react-native`: `react-native` = "react-native".asInstanceOf[`react-native`]
+  @scala.inline
   def safari: safari = "safari".asInstanceOf[safari]
   @scala.inline
   def samsung: samsung = "samsung".asInstanceOf[samsung]
@@ -283,8 +291,6 @@ object detectBrowserStrings {
   def searchbot: searchbot = "searchbot".asInstanceOf[searchbot]
   @scala.inline
   def silk: silk = "silk".asInstanceOf[silk]
-  @scala.inline
-  def vivaldi: vivaldi = "vivaldi".asInstanceOf[vivaldi]
   @scala.inline
   def yandexbrowser: yandexbrowser = "yandexbrowser".asInstanceOf[yandexbrowser]
 }

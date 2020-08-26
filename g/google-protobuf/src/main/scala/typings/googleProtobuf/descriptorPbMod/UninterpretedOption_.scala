@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UninterpretedOption_ () extends Message {
   def addName(): NamePart = js.native
+  def addName(value: js.UndefOr[scala.Nothing], index: Double): NamePart = js.native
   def addName(value: NamePart): NamePart = js.native
   def addName(value: NamePart, index: Double): NamePart = js.native
   def clearAggregateValue(): Unit = js.native

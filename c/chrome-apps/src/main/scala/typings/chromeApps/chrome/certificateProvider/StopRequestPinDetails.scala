@@ -1,6 +1,6 @@
 package typings.chromeApps.chrome.certificateProvider
 
-import typings.chromeApps.AnonINVALIDPIN
+import typings.chromeApps.anon.INVALIDPIN
 import typings.chromeApps.chrome.ToStringLiteral
 import typings.chromeApps.chromeAppsStrings.INVALID_PIN
 import typings.chromeApps.chromeAppsStrings.INVALID_PUK
@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StopRequestPinDetails extends js.Object {
   /**
     * The error template. If present it is displayed to user. Intended to
@@ -20,36 +21,53 @@ trait StopRequestPinDetails extends js.Object {
     */
   var errorType: js.UndefOr[
     ToStringLiteral[
-      AnonINVALIDPIN, 
-      INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+      INVALIDPIN, 
+      /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
       Exclude[
-        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+        /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
         INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
       ]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * The ID given by Chrome in SignRequest
     */
-  var signRequestId: Double
+  var signRequestId: Double = js.native
 }
 
 object StopRequestPinDetails {
   @scala.inline
-  def apply(
-    signRequestId: Double,
-    errorType: ToStringLiteral[
-      AnonINVALIDPIN, 
-      INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-      Exclude[
-        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
-        INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
-      ]
-    ] = null
-  ): StopRequestPinDetails = {
+  def apply(signRequestId: Double): StopRequestPinDetails = {
     val __obj = js.Dynamic.literal(signRequestId = signRequestId.asInstanceOf[js.Any])
-    if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopRequestPinDetails]
   }
+  @scala.inline
+  implicit class StopRequestPinDetailsOps[Self <: StopRequestPinDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSignRequestId(value: Double): Self = this.set("signRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorType(
+      value: ToStringLiteral[
+          INVALIDPIN, 
+          /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+          Exclude[
+            /* keyof chrome-apps.anon.INVALIDPIN */ INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR, 
+            INVALID_PIN | INVALID_PUK | MAX_ATTEMPTS_EXCEEDED | UNKNOWN_ERROR
+          ]
+        ]
+    ): Self = this.set("errorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorType: Self = this.set("errorType", js.undefined)
+  }
+  
 }
 

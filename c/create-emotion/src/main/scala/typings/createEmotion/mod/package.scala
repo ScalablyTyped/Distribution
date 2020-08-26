@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type CSSBaseObject = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String]
+  type CSSBaseObject = typings.csstype.mod.PropertiesFallback[scala.Double | java.lang.String, java.lang.String with js.Object]
   type ClassNameArg = js.UndefOr[
     scala.Null | scala.Boolean | java.lang.String | (org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Null | scala.Boolean | java.lang.String]]) | typings.createEmotion.mod.ArrayClassNameArg
   ]

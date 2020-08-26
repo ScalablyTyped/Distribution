@@ -17,10 +17,28 @@ trait SchemaVulnerableParameters extends js.Object {
 
 object SchemaVulnerableParameters {
   @scala.inline
-  def apply(parameterNames: js.Array[String] = null): SchemaVulnerableParameters = {
+  def apply(): SchemaVulnerableParameters = {
     val __obj = js.Dynamic.literal()
-    if (parameterNames != null) __obj.updateDynamic("parameterNames")(parameterNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVulnerableParameters]
   }
+  @scala.inline
+  implicit class SchemaVulnerableParametersOps[Self <: SchemaVulnerableParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameterNamesVarargs(value: String*): Self = this.set("parameterNames", js.Array(value :_*))
+    @scala.inline
+    def setParameterNames(value: js.Array[String]): Self = this.set("parameterNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterNames: Self = this.set("parameterNames", js.undefined)
+  }
+  
 }
 

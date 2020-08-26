@@ -9,7 +9,7 @@ package object Events {
     * Fired when the guest window attempts to close itself.
     * The following example code navigates the webview to about:blank when the guest attempts to close itself.
     */
-  type CloseEvent = typings.std.Event_
+  type CloseEvent = typings.std.Event
   /**
     * Fired when the guest window fires a load event, i.e., when a new document is loaded. This does not include page navigation within the current document or asynchronous resource loads.
     * The following example code modifies the default font size of the guest's body element after the page loads:
@@ -18,7 +18,7 @@ package object Events {
     *  webview.executeScript({ code: 'document.body.style.fontSize = '42px'' })
     * });
     */
-  type ContentLoadEvent = typings.std.Event_
+  type ContentLoadEvent = typings.std.Event
   /**
     * Fired when all frame-level loads in a guest page (including all its subframes) have completed.
     * This includes navigation within the current document as well as subframe document-level loads,
@@ -34,5 +34,5 @@ package object Events {
     * When a committed load is aborted, a loadstop event will eventually follow a loadabort event,
     * even if all committed loads since the last loadstop event (if any) were aborted.
     */
-  type LoadStopEvent = typings.std.Event_
+  type LoadStopEvent = typings.std.Event
 }

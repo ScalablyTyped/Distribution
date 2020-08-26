@@ -8,7 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebCLProgram extends js.Object {
   def build(): Unit = js.native
+  def build(
+    devices: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    whenFinished: WebCLCallback
+  ): Unit = js.native
+  def build(devices: js.UndefOr[scala.Nothing], options: String): Unit = js.native
+  def build(devices: js.UndefOr[scala.Nothing], options: String, whenFinished: WebCLCallback): Unit = js.native
   def build(devices: js.Array[WebCLDevice]): Unit = js.native
+  def build(devices: js.Array[WebCLDevice], options: js.UndefOr[scala.Nothing], whenFinished: WebCLCallback): Unit = js.native
   def build(devices: js.Array[WebCLDevice], options: String): Unit = js.native
   def build(devices: js.Array[WebCLDevice], options: String, whenFinished: WebCLCallback): Unit = js.native
   def createKernel(kernelName: String): WebCLKernel = js.native

@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Username extends js.Object {
   /**
     * Retrieves GitHub's username from the GitHub API
     * @return Resolved with the GitHub username or rejected if unable to
     *         get the information
     */
-  def username(): js.Promise[String]
+  def username(): js.Promise[String] = js.native
 }
 
 object Username {
@@ -19,5 +20,20 @@ object Username {
     val __obj = js.Dynamic.literal(username = js.Any.fromFunction0(username))
     __obj.asInstanceOf[Username]
   }
+  @scala.inline
+  implicit class UsernameOps[Self <: Username] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUsername(value: () => js.Promise[String]): Self = this.set("username", js.Any.fromFunction0(value))
+  }
+  
 }
 

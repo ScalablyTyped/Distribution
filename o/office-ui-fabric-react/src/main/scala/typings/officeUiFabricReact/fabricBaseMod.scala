@@ -14,7 +14,7 @@ object fabricBaseMod extends js.Object {
     extends Component[IFabricProps, js.Object, js.Any] {
     var _addClassNameToBody: js.Any = js.native
     var _getClassNames: js.Any = js.native
-    var _removeClassNameFromBody: js.UndefOr[js.Any] = js.native
+    var _removeClassNameFromBody: js.Any = js.native
     var _rootElement: js.Any = js.native
     @JSName("componentDidMount")
     def componentDidMount_MFabricBase(): Unit = js.native

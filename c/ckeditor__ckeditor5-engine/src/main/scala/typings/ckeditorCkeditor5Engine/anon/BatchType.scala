@@ -4,27 +4,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BatchType extends js.Object {
-  var batchType: js.UndefOr[String] = js.undefined
-  var lastRangeBackward: js.UndefOr[Boolean] = js.undefined
-  var rootName: js.UndefOr[String] = js.undefined
-  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var batchType: js.UndefOr[String] = js.native
+  var lastRangeBackward: js.UndefOr[Boolean] = js.native
+  var rootName: js.UndefOr[String] = js.native
+  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.native
 }
 
 object BatchType {
   @scala.inline
-  def apply(
-    batchType: String = null,
-    lastRangeBackward: js.UndefOr[Boolean] = js.undefined,
-    rootName: String = null,
-    selectionAttributes: js.Array[js.Object] = null
-  ): BatchType = {
+  def apply(): BatchType = {
     val __obj = js.Dynamic.literal()
-    if (batchType != null) __obj.updateDynamic("batchType")(batchType.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastRangeBackward)) __obj.updateDynamic("lastRangeBackward")(lastRangeBackward.get.asInstanceOf[js.Any])
-    if (rootName != null) __obj.updateDynamic("rootName")(rootName.asInstanceOf[js.Any])
-    if (selectionAttributes != null) __obj.updateDynamic("selectionAttributes")(selectionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchType]
   }
+  @scala.inline
+  implicit class BatchTypeOps[Self <: BatchType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchType(value: String): Self = this.set("batchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchType: Self = this.set("batchType", js.undefined)
+    @scala.inline
+    def setLastRangeBackward(value: Boolean): Self = this.set("lastRangeBackward", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRangeBackward: Self = this.set("lastRangeBackward", js.undefined)
+    @scala.inline
+    def setRootName(value: String): Self = this.set("rootName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootName: Self = this.set("rootName", js.undefined)
+    @scala.inline
+    def setSelectionAttributesVarargs(value: js.Object*): Self = this.set("selectionAttributes", js.Array(value :_*))
+    @scala.inline
+    def setSelectionAttributes(value: js.Array[js.Object]): Self = this.set("selectionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionAttributes: Self = this.set("selectionAttributes", js.undefined)
+  }
+  
 }
 

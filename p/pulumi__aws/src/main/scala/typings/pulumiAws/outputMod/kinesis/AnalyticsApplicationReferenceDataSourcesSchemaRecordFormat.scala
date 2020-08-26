@@ -19,13 +19,28 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat extends js.Obje
 
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
   @scala.inline
-  def apply(
-    recordFormatType: String,
-    mappingParameters: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters = null
-  ): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat = {
+  def apply(recordFormatType: String): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat = {
     val __obj = js.Dynamic.literal(recordFormatType = recordFormatType.asInstanceOf[js.Any])
-    if (mappingParameters != null) __obj.updateDynamic("mappingParameters")(mappingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOps[Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordFormatType(value: String): Self = this.set("recordFormatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMappingParameters(value: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters): Self = this.set("mappingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMappingParameters: Self = this.set("mappingParameters", js.undefined)
+  }
+  
 }
 

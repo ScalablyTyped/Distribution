@@ -32,8 +32,10 @@ object helpersMod extends js.Object {
     always: Boolean,
     container: HTMLElement,
     name: String,
-    value: js.UndefOr[Null | String],
+    value: js.UndefOr[scala.Nothing],
     disabled: Boolean
   ): Unit = js.native
+  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: String, disabled: Boolean): Unit = js.native
+  def renderHiddenInput(always: Boolean, container: HTMLElement, name: String, value: Null, disabled: Boolean): Unit = js.native
 }
 

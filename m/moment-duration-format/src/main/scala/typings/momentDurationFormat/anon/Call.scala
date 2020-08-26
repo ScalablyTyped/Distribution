@@ -27,26 +27,40 @@ trait Call extends js.Object {
   val unitOfTime: js.Any = js.native
   var version: String = js.native
   def apply(): Moment = js.native
+  def apply(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): Moment = js.native
+  def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
+  def apply(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: String,
+    strict: Boolean
+  ): Moment = js.native
+  def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
+  def apply(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
+  def apply(inp: js.UndefOr[MomentInput], strict: Boolean): Moment = js.native
   def apply(inp: MomentInput): Moment = js.native
-  def apply(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  def apply(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
-  def apply(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
-  def apply(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
-  def apply(inp: MomentInput, strict: Boolean): Moment = js.native
   def calendarFormat(m: Moment, now: Moment): String = js.native
   def defineLocale(language: String, localeSpec: Unit): Locale_ = js.native
   def defineLocale(language: String, localeSpec: LocaleSpecification): Locale_ = js.native
+  def duration(inp: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Duration_ = js.native
   def duration(inp: DurationInputArg1): Duration_ = js.native
-  def duration(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = js.native
   def invalid(): Moment = js.native
   def invalid(flags: MomentParsingFlagsOpt): Moment = js.native
   def isDate(m: js.Any): /* is std.Date */ Boolean = js.native
   def isDuration(d: js.Any): /* is moment.moment.Duration */ Boolean = js.native
   def isMoment(m: js.Any): /* is moment.moment.Moment */ Boolean = js.native
   def lang(): String = js.native
+  def lang(language: js.UndefOr[scala.Nothing], definition: Locale_): String = js.native
   def lang(language: String): String = js.native
   def lang(language: String, definition: Locale_): String = js.native
   def locale(): String = js.native
+  def locale(language: js.UndefOr[scala.Nothing], definition: Unit): String = js.native
+  def locale(language: js.UndefOr[scala.Nothing], definition: LocaleSpecification): String = js.native
   def locale(language: String): String = js.native
   def locale(language: String, definition: Unit): String = js.native
   def locale(language: String, definition: LocaleSpecification): String = js.native
@@ -71,11 +85,22 @@ trait Call extends js.Object {
   def now(): Double = js.native
   def parseTwoDigitYear(input: String): Double = js.native
   def parseZone(): Moment = js.native
+  def parseZone(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): Moment = js.native
+  def parseZone(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
+  def parseZone(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: String,
+    strict: Boolean
+  ): Moment = js.native
+  def parseZone(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
+  def parseZone(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
   def parseZone(inp: MomentInput): Moment = js.native
-  def parseZone(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
-  def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
-  def parseZone(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
   def relativeTimeRounding(): js.Function1[/* num */ Double, Double] = js.native
   def relativeTimeRounding(fn: js.Function1[/* num */ Double, Double]): Boolean = js.native
   def relativeTimeThreshold(threshold: String): Double | Boolean = js.native
@@ -84,11 +109,22 @@ trait Call extends js.Object {
   def updateLocale(language: String, localeSpec: Unit): Locale_ = js.native
   def updateLocale(language: String, localeSpec: LocaleSpecification): Locale_ = js.native
   def utc(): Moment = js.native
+  def utc(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): Moment = js.native
+  def utc(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
+  def utc(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: String,
+    strict: Boolean
+  ): Moment = js.native
+  def utc(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
+  def utc(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
   def utc(inp: MomentInput): Moment = js.native
-  def utc(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  def utc(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
-  def utc(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
-  def utc(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
   def weekdays(): js.Array[String] = js.native
   def weekdays(format: String): js.Array[String] = js.native
   def weekdays(format: String, index: Double): String = js.native

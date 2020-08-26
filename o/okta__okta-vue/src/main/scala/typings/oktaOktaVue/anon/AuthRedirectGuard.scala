@@ -17,6 +17,7 @@ trait AuthRedirectGuard extends js.Object {
   def handleAuthentication(): js.Promise[Unit] = js.native
   def isAuthenticated(): js.Promise[Boolean] = js.native
   def loginRedirect(): Unit = js.native
+  def loginRedirect(fromUri: js.UndefOr[scala.Nothing], additionalParams: OktaOpenIDOptions): Unit = js.native
   def loginRedirect(fromUri: String): Unit = js.native
   def loginRedirect(fromUri: String, additionalParams: OktaOpenIDOptions): Unit = js.native
   def logout(): js.Promise[Unit] = js.native

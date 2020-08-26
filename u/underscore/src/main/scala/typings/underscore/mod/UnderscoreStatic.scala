@@ -1,9 +1,14 @@
 package typings.underscore.mod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Partial
 import typings.std.Pick
+import typings.underscore.anon.FnCall
+import typings.underscore.anon.FnCallCollectionIterateeMemoContext
+import typings.underscore.anon.FnCallListIsSortedIterateeContext
+import typings.underscore.anon.FnCallListN
 import typings.underscore.underscoreBooleans.`false`
-import typings.underscore.underscoreNumbers.`0`
-import typings.underscore.underscoreStrings._empty
+import typings.underscore.underscoreBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,14 +20,125 @@ trait UnderscoreStatic extends js.Object {
     */
   val VERSION: String = js.native
   /**
-    * @see _.map
+    * @see every
     **/
-  var collect: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _.map */ js.Any = js.native
+  @JSName("all")
+  var all_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_]]]], 
+    /* context */ js.UndefOr[js.Any], 
+    Boolean
+  ] = js.native
+  /**
+    * @see some
+    **/
+  @JSName("any")
+  var any_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_]]]], 
+    /* context */ js.UndefOr[js.Any], 
+    Boolean
+  ] = js.native
+  /**
+    * @see map
+    **/
+  @JSName("collect")
+  var collect_Original: FnCall = js.native
+  /**
+    * @see find
+    **/
+  @JSName("detect")
+  var detect_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_]]]], 
+    /* context */ js.UndefOr[js.Any], 
+    js.UndefOr[TypeOfCollection[Collection[_]]]
+  ] = js.native
+  /**
+    * @see rest
+    **/
+  @JSName("drop")
+  var drop_Original: js.Function2[/* list */ List[_], /* index */ js.UndefOr[Double], js.Array[TypeOfList[List[_]]]] = js.native
+  /**
+    * @see reduce
+    **/
+  @JSName("foldl")
+  var foldl_Original: FnCallCollectionIterateeMemoContext = js.native
+  /**
+    * @see reduceRight
+    **/
+  @JSName("foldr")
+  var foldr_Original: FnCallCollectionIterateeMemoContext = js.native
+  /**
+    * @see each
+    **/
+  @JSName("forEach")
+  var forEach_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* iteratee */ CollectionIterator[TypeOfCollection[Collection[_]], Unit, Collection[_]], 
+    /* context */ js.UndefOr[js.Any], 
+    Collection[_]
+  ] = js.native
+  /**
+    * @see first
+    **/
+  @JSName("head")
+  var head_Original: FnCallListN = js.native
+  /**
+    * @see contains
+    **/
+  @JSName("include")
+  var include_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* value */ js.Any, 
+    /* fromIndex */ js.UndefOr[Double], 
+    Boolean
+  ] = js.native
+  /**
+    * @see contains
+    **/
+  @JSName("includes")
+  var includes_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* value */ js.Any, 
+    /* fromIndex */ js.UndefOr[Double], 
+    Boolean
+  ] = js.native
+  /**
+    * @see reduce
+    **/
+  @JSName("inject")
+  var inject_Original: FnCallCollectionIterateeMemoContext = js.native
+  /**
+    * @see filter
+    **/
+  @JSName("select")
+  var select_Original: js.Function3[
+    /* collection */ Collection[_], 
+    /* iteratee */ js.UndefOr[Iteratee[Collection[_], Boolean, TypeOfCollection[Collection[_]]]], 
+    /* context */ js.UndefOr[js.Any], 
+    js.Array[TypeOfCollection[Collection[_]]]
+  ] = js.native
+  /**
+    * @see rest
+    **/
+  @JSName("tail")
+  var tail_Original: js.Function2[/* list */ List[_], /* index */ js.UndefOr[Double], js.Array[TypeOfList[List[_]]]] = js.native
+  /**
+    * @see first
+    **/
+  @JSName("take")
+  var take_Original: FnCallListN = js.native
   /**
     * By default, Underscore uses ERB-style template delimiters, change the
     * following template settings to use alternative delimiters.
     **/
   var templateSettings: TemplateSettings = js.native
+  /**
+    * @see uniq
+    **/
+  @JSName("unique")
+  var unique_Original: FnCallListIsSortedIterateeContext = js.native
   /**
     * Underscore OOP Wrapper, all Underscore functions that take an object
     * as the first parameter can be invoked through this function.
@@ -40,17 +156,11 @@ trait UnderscoreStatic extends js.Object {
     **/
   def after(count: Double, fn: js.Function): js.Function = js.native
   /**
-    * @see _.every
+    * @see every
     **/
-  def all[T](list: Dictionary[T]): Boolean = js.native
-  def all[T](list: Dictionary[T], iterator: ObjectIterator[T, Boolean]): Boolean = js.native
-  def all[T](list: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): Boolean = js.native
-  /**
-    * @see _.every
-    **/
-  def all[T](list: List[T]): Boolean = js.native
-  def all[T](list: List[T], iterator: ListIterator[T, Boolean]): Boolean = js.native
-  def all[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): Boolean = js.native
+  def all[V /* <: Collection[_] */](collection: V): Boolean = js.native
+  def all[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): Boolean = js.native
+  def all[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): Boolean = js.native
   /**
     * Retrieve all the names of object's own and inherited properties.
     * @param object Retrieve the key or property names from this object.
@@ -58,18 +168,11 @@ trait UnderscoreStatic extends js.Object {
     **/
   def allKeys(`object`: js.Any): js.Array[String] = js.native
   /**
-    * @see _.some
+    * @see some
     **/
-  def any[T](list: List[T]): Boolean = js.native
-  def any[T](list: List[T], iterator: ListIterator[T, Boolean]): Boolean = js.native
-  def any[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): Boolean = js.native
-  def any[T](list: List[T], value: T): Boolean = js.native
-  /**
-    * @see _.some
-    **/
-  def any[T](`object`: Dictionary[T]): Boolean = js.native
-  def any[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): Boolean = js.native
-  def any[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): Boolean = js.native
+  def any[V /* <: Collection[_] */](collection: V): Boolean = js.native
+  def any[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): Boolean = js.native
+  def any[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): Boolean = js.native
   /**
     * Like extend, but only copies own properties over to the destination object. (alias: extendOwn)
     */
@@ -120,7 +223,7 @@ trait UnderscoreStatic extends js.Object {
     * @param length The maximum size of the inner arrays.
     * @returns The chunked list.
     **/
-  def chunk[T](list: List[T], length: Double): js.Array[js.Array[T]] = js.native
+  def chunk[V /* <: List[_] */](list: V, length: Double): js.Array[js.Array[TypeOfList[V]]] = js.native
   /**
     * Create a shallow-copied clone of the object.
     * Any nested objects or arrays will be copied by reference, not duplicated.
@@ -129,13 +232,43 @@ trait UnderscoreStatic extends js.Object {
     **/
   def clone[T](`object`: T): T = js.native
   /**
-    * Returns a copy of the array with all falsy values removed. In JavaScript, false, null, 0, "",
-    * undefined and NaN are all falsy.
-    * @param array Array to compact.
-    * @return Copy of `array` without false values.
+    * @see map
     **/
-  def compact[T](): js.Array[T] = js.native
-  def compact[T](array: List[js.UndefOr[T | Null | `false` | _empty | `0`]]): js.Array[T] = js.native
+  def collect[V /* <: Collection[_] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V]]] = js.native
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], TypeOfCollection[V]]] = js.native
+  /**
+    * @see map
+    **/
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V]]] = js.native
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: String, context: js.Any): js.Array[IterateeResult[String, TypeOfCollection[V]]] = js.native
+  /**
+    * @see map
+    **/
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: js.Array[EnumerableKey]): js.Array[IterateeResult[js.Array[EnumerableKey], TypeOfCollection[V]]] = js.native
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: js.Array[EnumerableKey], context: js.Any): js.Array[IterateeResult[js.Array[EnumerableKey], TypeOfCollection[V]]] = js.native
+  /**
+    * @see map
+    **/
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: Double): js.Array[IterateeResult[Double, TypeOfCollection[V]]] = js.native
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, TypeOfCollection[V]]] = js.native
+  def collect[V /* <: Collection[_] */](collection: V, iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, TypeOfCollection[V]]] = js.native
+  /**
+    * @see map
+    **/
+  def collect[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof underscore.underscore.TypeOfCollection<V> ]:? underscore.underscore.TypeOfCollection<V>[P]}
+    */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[TypeOfCollection[V]]) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V]]] = js.native
+  def collect[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof underscore.underscore.TypeOfCollection<V> ]:? underscore.underscore.TypeOfCollection<V>[P]}
+    */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[TypeOfCollection[V]]) */](collection: V, iteratee: I, context: js.Any): js.Array[IterateeResult[I, TypeOfCollection[V]]] = js.native
+  /**
+    * Returns a copy of `list` with all falsy values removed. In
+    * JavaScript, false, null, 0, "", undefined and NaN are all falsy.
+    * @param list The list to compact.
+    * @returns An array containing the elements of `list` without falsy
+    * values.
+    **/
+  def compact[V /* <: js.UndefOr[List[_] | Null] */](list: V): js.Array[Truthy[TypeOfList[V]]] = js.native
   /**
     * Returns the composition of a list of functions, where each function consumes the return value of the
     * function that follows. In math terms, composing the functions f(), g(), and h() produces f(g(h())).
@@ -150,18 +283,18 @@ trait UnderscoreStatic extends js.Object {
     **/
   def constant[T](value: T): js.Function0[T] = js.native
   /**
-    * Returns true if the value is present in the list. Uses indexOf internally,
-    * if list is an Array.
-    * @param list Checks each element to see if `value` is present.
-    * @param value The value to check for within `list`.
-    * @return True if `value` is present in `list`, otherwise false.
+    * Returns true if the value is present in `collection`. Uses indexOf
+    * internally, if `collection` is a List. Use `fromIndex` to start your
+    * search at a given index.
+    * @param collection The collection to check for `value`.
+    * @param value The value to check `collection` for.
+    * @param fromIndex The index to start searching from, optional,
+    * default = 0, only used when `collection` is a List.
+    * @returns True if `value` is present in `collection` after
+    * `fromIndex`, otherwise false.
     **/
-  def contains[T](list: List[T], value: T): Boolean = js.native
-  def contains[T](list: List[T], value: T, fromIndex: Double): Boolean = js.native
-  /**
-    * @see _.contains
-    **/
-  def contains[T](`object`: Dictionary[T], value: T): Boolean = js.native
+  def contains[V /* <: Collection[_] */](collection: V, value: js.Any): Boolean = js.native
+  def contains[V /* <: Collection[_] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
   /**
     * Sorts a list into groups and returns a count for the number of objects in each group. Similar
     * to groupBy, but instead of returning a list of values, returns a count for the number of values
@@ -172,14 +305,15 @@ trait UnderscoreStatic extends js.Object {
     * @return An object with the group names as properties where each property contains the number of elements in that group.
     **/
   def countBy[T](list: List[T]): Dictionary[Double] = js.native
+  def countBy[T](list: List[T], iterator: js.UndefOr[scala.Nothing], context: js.Any): Dictionary[Double] = js.native
   /**
     * @see _.countBy
     * @param iterator Function name
     **/
   def countBy[T](list: List[T], iterator: String): Dictionary[Double] = js.native
   def countBy[T](list: List[T], iterator: String, context: js.Any): Dictionary[Double] = js.native
-  def countBy[T](list: List[T], iterator: ListIterator[T, _]): Dictionary[Double] = js.native
-  def countBy[T](list: List[T], iterator: ListIterator[T, _], context: js.Any): Dictionary[Double] = js.native
+  def countBy[T](list: List[T], iterator: ListIterator[T, _, List[T]]): Dictionary[Double] = js.native
+  def countBy[T](list: List[T], iterator: ListIterator[T, _, List[T]], context: js.Any): Dictionary[Double] = js.native
   /**
     * Creates an object that inherits from the given prototype object.
     * If additional properties are provided then they will be added to the
@@ -235,25 +369,11 @@ trait UnderscoreStatic extends js.Object {
     **/
   def delay(func: js.Function, wait: Double, args: js.Any*): js.Any = js.native
   /**
-    * @see _.find
+    * @see find
     **/
-  def detect[T](list: List[T], iterator: ListIterator[T, Boolean]): js.UndefOr[T] = js.native
-  def detect[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): js.UndefOr[T] = js.native
-  def detect[T](`object`: Dictionary[T], iterator: String): js.UndefOr[T] = js.native
-  /**
-    * @see _.find
-    **/
-  def detect[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): js.UndefOr[T] = js.native
-  def detect[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): js.UndefOr[T] = js.native
-  /**
-    * @see _.find
-    **/
-  def detect[T](`object`: List[T], iterator: String): js.UndefOr[T] = js.native
-  def detect[T, U /* <: js.Object */](`object`: Dictionary[T], iterator: U): js.UndefOr[T] = js.native
-  /**
-    * @see _.find
-    **/
-  def detect[T, U /* <: js.Object */](`object`: List[T], iterator: U): js.UndefOr[T] = js.native
+  def detect[V /* <: Collection[_] */](collection: V): js.UndefOr[TypeOfCollection[V]] = js.native
+  def detect[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): js.UndefOr[TypeOfCollection[V]] = js.native
+  def detect[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): js.UndefOr[TypeOfCollection[V]] = js.native
   /**
     * Similar to without, but returns the values from array that are not present in the other arrays.
     * @param array Keeps values that are within `others`.
@@ -262,32 +382,26 @@ trait UnderscoreStatic extends js.Object {
     **/
   def difference[T](array: List[T], others: List[T]*): js.Array[T] = js.native
   /**
-    * @see _.rest
+    * @see rest
     **/
-  def drop[T](array: List[T]): js.Array[T] = js.native
-  def drop[T](array: List[T], n: Double): js.Array[T] = js.native
+  def drop[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
+  def drop[V /* <: List[_] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
   /* *************
     * Collections *
     ************* */
   /**
-    * Iterates over a list of elements, yielding each in turn to an iterator function. The iterator is
-    * bound to the context object, if one is passed. Each invocation of iterator is called with three
-    * arguments: (element, index, list). If list is a JavaScript object, iterator's arguments will be
-    * (value, key, object). Delegates to the native forEach function if it exists.
-    * @param list Iterates over this list of elements.
-    * @param iterator Iterator function for each element `list`.
-    * @param context 'this' object in `iterator`, optional.
+    * Iterates over a collection of elements, yielding each in turn to an
+    * iteratee. The iteratee is bound to the context object, if one is
+    * passed. Each invocation of `iteratee` is called with three
+    * arguments: (element, key, collection).
+    * @param collection The collection of elements to iterate over.
+    * @param iteratee The iteratee to call for each element in
+    * `collection`.
+    * @param context 'this' object in `iteratee`, optional.
+    * @returns The original collection.
     **/
-  def each[T](list: List[T], iterator: ListIterator[T, Unit]): List[T] = js.native
-  def each[T](list: List[T], iterator: ListIterator[T, Unit], context: js.Any): List[T] = js.native
-  /**
-    * @see _.each
-    * @param object Iterates over properties of this object.
-    * @param iterator Iterator function for each property on `object`.
-    * @param context 'this' object in `iterator`, optional.
-    **/
-  def each[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Unit]): Dictionary[T] = js.native
-  def each[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Unit], context: js.Any): Dictionary[T] = js.native
+  def each[V /* <: Collection[_] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V], Unit, V]): V = js.native
+  def each[V /* <: Collection[_] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V], Unit, V], context: js.Any): V = js.native
   /**
     * Escapes a string for insertion into HTML, replacing &, <, >, ", ', and / characters.
     * @param str Raw string to escape.
@@ -295,22 +409,17 @@ trait UnderscoreStatic extends js.Object {
     **/
   def escape(str: String): String = js.native
   /**
-    * @see _.every
+    * Returns true if all of the values in `collection` pass the `iteratee`
+    * truth test. Short-circuits and stops traversing `collection` if a false
+    * element is found.
+    * @param collection The collection to evaluate.
+    * @param iteratee The truth test to apply.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns True if all elements pass the truth test, otherwise false.
     **/
-  def every[T](list: Dictionary[T]): Boolean = js.native
-  def every[T](list: Dictionary[T], iterator: ObjectIterator[T, Boolean]): Boolean = js.native
-  def every[T](list: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): Boolean = js.native
-  /**
-    * Returns true if all of the values in the list pass the iterator truth test. Delegates to the
-    * native method every, if present.
-    * @param list Truth test against all elements within this list.
-    * @param iterator Trust test iterator function for each element in `list`.
-    * @param context `this` object in `iterator`, optional.
-    * @return True if all elements passed the truth test, otherwise false.
-    **/
-  def every[T](list: List[T]): Boolean = js.native
-  def every[T](list: List[T], iterator: ListIterator[T, Boolean]): Boolean = js.native
-  def every[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): Boolean = js.native
+  def every[V /* <: Collection[_] */](collection: V): Boolean = js.native
+  def every[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): Boolean = js.native
+  def every[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): Boolean = js.native
   /**
     * Copy all of the properties in the source objects over to the destination object, and return
     * the destination object. It's in-order, so the last source will override properties of the
@@ -325,46 +434,30 @@ trait UnderscoreStatic extends js.Object {
     */
   def extendOwn(destination: js.Any, source: js.Any*): js.Any = js.native
   /**
-    * Looks through each value in the list, returning an array of all the values that pass a truth
-    * test (iterator). Delegates to the native filter method, if it exists.
-    * @param list Filter elements out of this list.
-    * @param iterator Filter iterator function for each element in `list`.
-    * @param context `this` object in `iterator`, optional.
-    * @return The filtered list of elements.
+    * Looks through each value in the collection, returning an array of all the values that pass a truth
+    * test (iteratee).
+    * @param collection The collection to filter.
+    * @param iteratee The truth test to apply.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns The set of values that pass the truth test.
     **/
-  def filter[T](list: List[T], iterator: ListIterator[T, Boolean]): js.Array[T] = js.native
-  def filter[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): js.Array[T] = js.native
+  def filter[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V]] = js.native
+  def filter[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): js.Array[TypeOfCollection[V]] = js.native
+  def filter[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): js.Array[TypeOfCollection[V]] = js.native
   /**
-    * @see _.filter
+    * Looks through each value in the collection, returning the first one that passes a
+    * truth test (iteratee), or undefined if no value passes the test. The function
+    * returns as soon as it finds an acceptable element, and doesn't traverse the entire
+    * collection.
+    * @param collection Searches for a value in this collection.
+    * @param iteratee The truth test to apply.
+    * @param context `this` object in `iteratee`, optional.
+    * @return The first element in `collection` that passes the truth test or undefined
+    * if no elements pass.
     **/
-  def filter[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): js.Array[T] = js.native
-  def filter[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): js.Array[T] = js.native
-  /**
-    * Looks through each value in the list, returning the first one that passes a truth
-    * test (iterator). The function returns as soon as it finds an acceptable element,
-    * and doesn't traverse the entire list.
-    * @param list Searches for a value in this list.
-    * @param iterator Search iterator function for each element in `list`.
-    * @param context `this` object in `iterator`, optional.
-    * @return The first acceptable found element in `list`, if nothing is found undefined/null is returned.
-    **/
-  def find[T](list: List[T], iterator: ListIterator[T, Boolean]): js.UndefOr[T] = js.native
-  def find[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): js.UndefOr[T] = js.native
-  def find[T](`object`: Dictionary[T], iterator: String): js.UndefOr[T] = js.native
-  /**
-    * @see _.find
-    **/
-  def find[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): js.UndefOr[T] = js.native
-  def find[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): js.UndefOr[T] = js.native
-  /**
-    * @see _.find
-    **/
-  def find[T](`object`: List[T], iterator: String): js.UndefOr[T] = js.native
-  def find[T, U /* <: js.Object */](`object`: Dictionary[T], iterator: U): js.UndefOr[T] = js.native
-  /**
-    * @see _.find
-    **/
-  def find[T, U /* <: js.Object */](`object`: List[T], iterator: U): js.UndefOr[T] = js.native
+  def find[V /* <: Collection[_] */](collection: V): js.UndefOr[TypeOfCollection[V]] = js.native
+  def find[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): js.UndefOr[TypeOfCollection[V]] = js.native
+  def find[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): js.UndefOr[TypeOfCollection[V]] = js.native
   def findIndex[T](array: List[T], predicate: js.Object): Double = js.native
   def findIndex[T](array: List[T], predicate: js.Object, context: js.Any): Double = js.native
   /**
@@ -374,16 +467,16 @@ trait UnderscoreStatic extends js.Object {
     * @param context `this` object in `predicate`, optional.
     * @return Returns the index of an element in `array` where the predicate truth test passes or -1.`
     **/
-  def findIndex[T](array: List[T], predicate: ListIterator[T, Boolean]): Double = js.native
-  def findIndex[T](array: List[T], predicate: ListIterator[T, Boolean], context: js.Any): Double = js.native
+  def findIndex[T](array: List[T], predicate: ListIterator[T, Boolean, List[T]]): Double = js.native
+  def findIndex[T](array: List[T], predicate: ListIterator[T, Boolean, List[T]], context: js.Any): Double = js.native
   /**
     * Returns the first key on an object that passes a predicate test.
     * @param obj the object to search in
     * @param predicate Predicate function.
     * @param context `this` object in `iterator`, optional.
     */
-  def findKey[T](obj: Dictionary[T], predicate: ObjectIterator[T, Boolean]): String = js.native
-  def findKey[T](obj: Dictionary[T], predicate: ObjectIterator[T, Boolean], context: js.Any): String = js.native
+  def findKey[T](obj: Dictionary[T], predicate: ObjectIterator[T, Boolean, Dictionary[T]]): String = js.native
+  def findKey[T](obj: Dictionary[T], predicate: ObjectIterator[T, Boolean, Dictionary[T]], context: js.Any): String = js.native
   def findLastIndex[T](array: List[T], predicate: js.Object): Double = js.native
   def findLastIndex[T](array: List[T], predicate: js.Object, context: js.Any): Double = js.native
   /**
@@ -393,60 +486,82 @@ trait UnderscoreStatic extends js.Object {
     * @param context `this` object in `predicate`, optional.
     * @return Returns the index of an element in `array` where the predicate truth test passes or -1.`
     **/
-  def findLastIndex[T](array: List[T], predicate: ListIterator[T, Boolean]): Double = js.native
-  def findLastIndex[T](array: List[T], predicate: ListIterator[T, Boolean], context: js.Any): Double = js.native
+  def findLastIndex[T](array: List[T], predicate: ListIterator[T, Boolean, List[T]]): Double = js.native
+  def findLastIndex[T](array: List[T], predicate: ListIterator[T, Boolean, List[T]], context: js.Any): Double = js.native
   /**
-    * Looks through the list and returns the first value that matches all of the key-value pairs listed in properties.
-    * @param list Search through this list's elements for the first object with all `properties`.
-    * @param properties Properties to look for on the elements within `list`.
-    * @return The first element in `list` that has all `properties`.
+    * Looks through the collection and returns the first value that matches all of the key-value
+    * pairs listed in `properties`.
+    * If no match is found, or if list is empty, undefined will be returned.
+    * @param collection The collection in which to find an element that matches `properties`.
+    * @param properties The properties to check for on the elements within `collection`.
+    * @return The first element in `collection` that matches `properties` or undefined if
+    * no match is found.
     **/
-  def findWhere[T, U /* <: js.Object */](list: List[T], properties: U): js.UndefOr[T] = js.native
+  def findWhere[V /* <: Collection[_] */](collection: V, properties: Partial[TypeOfCollection[V]]): js.UndefOr[TypeOfCollection[V]] = js.native
   /*********
     * Arrays *
     **********/
   /**
-    * Returns the first element of an array. Passing n will return the first n elements of the array.
-    * @param array Retrieves the first element of this array.
-    * @return Returns the first element of `array`.
+    * Returns the first element of `list`. Passing `n` will return the
+    * first `n` elements of `list`.
+    * @param list The list to retrieve elements from.
+    * @param n The number of elements to retrieve, optional.
+    * @returns The first `n` elements of `list` or the first element if
+    * `n` is omitted.
     **/
-  def first[T](array: List[T]): js.UndefOr[T] = js.native
-  /**
-    * @see _.first
-    * @param n Return more than one element from `array`.
-    **/
-  def first[T](array: List[T], n: Double): js.Array[T] = js.native
+  def first[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+  def first[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   /**
     * Flattens a nested array (the nesting can be to any depth). If you pass shallow, the array will
     * only be flattened a single level.
-    * @param array The array to flatten.
+    * @param list The array to flatten.
     * @param shallow If true then only flatten one level, optional, default = false.
-    * @return `array` flattened.
+    * @returns The flattened list.
     **/
-  def flatten(array: List[_]): js.Array[_] = js.native
-  def flatten(array: List[_], shallow: Boolean): js.Array[_] = js.native
+  def flatten[V /* <: List[_] */](list: V): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+  @JSName("flatten")
+  def flatten_false[V /* <: List[_] */](list: V, shallow: `false`): js.Array[DeepestListItemOrSelf[TypeOfList[V]]] = js.native
+  @JSName("flatten")
+  def flatten_true[V /* <: List[_] */](list: V, shallow: `true`): js.Array[ListItemOrSelf[TypeOfList[V]]] = js.native
   /**
-    * @see _.reduce
+    * @see reduce
     **/
-  def foldl[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult]): TResult = js.native
-  def foldl[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult], memo: TResult): TResult = js.native
-  def foldl[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def foldl[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult | TypeOfCollection[V], V]
+  ): js.UndefOr[TResult | TypeOfCollection[V]] = js.native
   /**
-    * @see _.reduceRight
+    * @see reduce
     **/
-  def foldr[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult]): TResult = js.native
-  def foldr[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult], memo: TResult): TResult = js.native
-  def foldr[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def foldl[V /* <: Collection[_] */, TResult](collection: V, iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V], memo: TResult): TResult = js.native
+  def foldl[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V],
+    memo: TResult,
+    context: js.Any
+  ): TResult = js.native
   /**
-    * @see _.each
+    * @see reduceRight
     **/
-  def forEach[T](list: List[T], iterator: ListIterator[T, Unit]): List[T] = js.native
-  def forEach[T](list: List[T], iterator: ListIterator[T, Unit], context: js.Any): List[T] = js.native
+  def foldr[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult | TypeOfCollection[V], V]
+  ): js.UndefOr[TResult | TypeOfCollection[V]] = js.native
   /**
-    * @see _.each
+    * @see reduceRight
     **/
-  def forEach[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Unit]): Dictionary[T] = js.native
-  def forEach[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Unit], context: js.Any): Dictionary[T] = js.native
+  def foldr[V /* <: Collection[_] */, TResult](collection: V, iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V], memo: TResult): TResult = js.native
+  def foldr[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V],
+    memo: TResult,
+    context: js.Any
+  ): TResult = js.native
+  /**
+    * @see each
+    **/
+  def forEach[V /* <: Collection[_] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V], Unit, V]): V = js.native
+  def forEach[V /* <: Collection[_] */](collection: V, iteratee: CollectionIterator[TypeOfCollection[V], Unit, V], context: js.Any): V = js.native
   /**
     * Returns a sorted list of the names of every method in an object - that is to say,
     * the name of every function property of the object.
@@ -455,23 +570,14 @@ trait UnderscoreStatic extends js.Object {
     **/
   def functions(`object`: js.Any): js.Array[String] = js.native
   /**
-    * Splits a collection into sets, grouped by the result of running each value through iterator.
-    * If iterator is a string instead of a function, groups by the property named by iterator on
-    * each of the values.
-    * @param list Groups this list.
-    * @param iterator Group iterator for each element within `list`, return the key to group the element by.
-    * @param context `this` object in `iterator`, optional.
-    * @return An object with the group names as properties where each property contains the grouped elements from `list`.
+    * Splits a collection into sets, grouped by the result of running each value through iteratee.
+    * @param collection The collection to group.
+    * @param iteratee An iteratee that provides the value to group by for each item in the collection.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns A dictionary with the group names as properties where each property contains the grouped elements from the collection.
     **/
-  def groupBy[T](list: List[T]): Dictionary[js.Array[T]] = js.native
-  /**
-    * @see _.groupBy
-    * @param iterator Property on each object to group them by.
-    **/
-  def groupBy[T](list: List[T], iterator: String): Dictionary[js.Array[T]] = js.native
-  def groupBy[T](list: List[T], iterator: String, context: js.Any): Dictionary[js.Array[T]] = js.native
-  def groupBy[T](list: List[T], iterator: ListIterator[T, _]): Dictionary[js.Array[T]] = js.native
-  def groupBy[T](list: List[T], iterator: ListIterator[T, _], context: js.Any): Dictionary[js.Array[T]] = js.native
+  def groupBy[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, _, TypeOfCollection[V]]): Dictionary[js.Array[TypeOfCollection[V]]] = js.native
+  def groupBy[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, _, TypeOfCollection[V]], context: js.Any): Dictionary[js.Array[TypeOfCollection[V]]] = js.native
   /**
     * Does the object contain the given key? Identical to object.hasOwnProperty(key), but uses a safe
     * reference to the hasOwnProperty function, in case it's been overridden accidentally.
@@ -481,13 +587,13 @@ trait UnderscoreStatic extends js.Object {
     **/
   def has(`object`: js.Any, key: String): Boolean = js.native
   /**
-    * @see _.first
+    * @see first
     **/
-  def head[T](array: List[T]): js.UndefOr[T] = js.native
+  def head[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
   /**
-    * @see _.first
+    * @see first
     **/
-  def head[T](array: List[T], n: Double): js.Array[T] = js.native
+  def head[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   /**
     * Returns the same value that is used as the argument. In math: f(x) = x
     * This function looks useless, but is used throughout Underscore as a default iterator.
@@ -496,23 +602,15 @@ trait UnderscoreStatic extends js.Object {
     **/
   def identity[T](value: T): T = js.native
   /**
-    * @see _.contains
+    * @see contains
     **/
-  def include[T](list: Collection[T], value: T): Boolean = js.native
-  def include[T](list: Collection[T], value: T, fromIndex: Double): Boolean = js.native
+  def include[V /* <: Collection[_] */](collection: V, value: js.Any): Boolean = js.native
+  def include[V /* <: Collection[_] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
   /**
-    * @see _.contains
+    * @see contains
     **/
-  def include[T](`object`: Dictionary[T], value: T): Boolean = js.native
-  /**
-    * @see _.contains
-    **/
-  def includes[T](list: Collection[T], value: T): Boolean = js.native
-  def includes[T](list: Collection[T], value: T, fromIndex: Double): Boolean = js.native
-  /**
-    * @see _.contains
-    **/
-  def includes[T](`object`: Dictionary[T], value: T): Boolean = js.native
+  def includes[V /* <: Collection[_] */](collection: V, value: js.Any): Boolean = js.native
+  def includes[V /* <: Collection[_] */](collection: V, value: js.Any, fromIndex: Double): Boolean = js.native
   /**
     * @see _.indexBy
     * @param iterator Property on each object to index them by.
@@ -523,8 +621,8 @@ trait UnderscoreStatic extends js.Object {
     * Given a `list`, and an `iterator` function that returns a key for each element in the list (or a property name),
     * returns an object with an index of each item.  Just like _.groupBy, but for when you know your keys are unique.
     **/
-  def indexBy[T](list: List[T], iterator: ListIterator[T, _]): Dictionary[T] = js.native
-  def indexBy[T](list: List[T], iterator: ListIterator[T, _], context: js.Any): Dictionary[T] = js.native
+  def indexBy[T](list: List[T], iterator: ListIterator[T, _, List[T]]): Dictionary[T] = js.native
+  def indexBy[T](list: List[T], iterator: ListIterator[T, _, List[T]], context: js.Any): Dictionary[T] = js.native
   /**
     * Returns the index at which value can be found in the array, or -1 if value is not present in the array.
     * Uses the native indexOf function unless it's missing. If you're working with a large array, and you know
@@ -542,23 +640,33 @@ trait UnderscoreStatic extends js.Object {
     **/
   def indexOf[T](array: List[T], value: T, startFrom: Double): Double = js.native
   /**
-    * Returns everything but the last entry of the array. Especially useful on the arguments object.
-    * Pass n to exclude the last n elements from the result.
-    * @param array Retrieve all elements except the last `n`.
-    * @param n Leaves this many elements behind, optional.
-    * @return Returns everything but the last `n` elements of `array`.
+    * Returns everything but the last entry of `list`. Especially useful
+    * on the arguments object. Pass `n` to exclude the last
+    * `n` elements from the result.
+    * @param list The list to retrieve elements from.
+    * @param n The number of elements from the end of `list` to omit,
+    * optional, default = 1.
+    * @returns The elements of `list` with the last `n` items omitted.
     **/
-  def initial[T](array: List[T]): js.Array[T] = js.native
-  def initial[T](array: List[T], n: Double): js.Array[T] = js.native
-  def inject[T, TResult](list: Dictionary[T], iterator: MemoObjectIterator[T, TResult]): TResult = js.native
-  def inject[T, TResult](list: Dictionary[T], iterator: MemoObjectIterator[T, TResult], memo: TResult): TResult = js.native
-  def inject[T, TResult](list: Dictionary[T], iterator: MemoObjectIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def initial[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
+  def initial[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   /**
-    * @see _.reduce
+    * @see reduce
     **/
-  def inject[T, TResult](list: List[T], iterator: MemoIterator[T, TResult]): TResult = js.native
-  def inject[T, TResult](list: List[T], iterator: MemoIterator[T, TResult], memo: TResult): TResult = js.native
-  def inject[T, TResult](list: List[T], iterator: MemoIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def inject[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult | TypeOfCollection[V], V]
+  ): js.UndefOr[TResult | TypeOfCollection[V]] = js.native
+  /**
+    * @see reduce
+    **/
+  def inject[V /* <: Collection[_] */, TResult](collection: V, iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V], memo: TResult): TResult = js.native
+  def inject[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V],
+    memo: TResult,
+    context: js.Any
+  ): TResult = js.native
   /**
     * Computes the list of values that are the intersection of all the arrays. Each value in the result
     * is present in each of the arrays.
@@ -582,132 +690,126 @@ trait UnderscoreStatic extends js.Object {
     **/
   def invoke[T /* <: js.Object */](list: List[T], methodName: String, args: js.Any*): js.Any = js.native
   /**
-    * Returns true if object is an Arguments object.
-    * @param object Check if this object is an Arguments object.
-    * @return True if `object` is an Arguments object, otherwise false.
+    * Returns true if `object` is an Arguments object.
+    * @param object The object to check.
+    * @returns True if `object` is an Arguments object, otherwise false.
     **/
   def isArguments(`object`: js.Any): /* is std.IArguments */ Boolean = js.native
   /**
-    * Returns true if object is an Array.
-    * @param object Check if this object is an Array.
-    * @return True if `object` is an Array, otherwise false.
+    * Returns true if `object` is an Array.
+    * @param object The object to check.
+    * @returns True if `object` is an Array, otherwise false.
     **/
   def isArray(`object`: js.Any): /* is std.Array<any> */ Boolean = js.native
   /**
-    * Returns true if object is an Array.
-    * @param object Check if this object is an Array.
-    * @return True if `object` is an Array, otherwise false.
-    **/
-  @JSName("isArray")
-  def isArray_T[T](`object`: js.Any): /* is std.Array<T> */ Boolean = js.native
-  /**
-    * Returns true if object is either true or false.
-    * @param object Check if this object is a bool.
-    * @return True if `object` is a bool, otherwise false.
+    * Returns true if `object` is a Boolean.
+    * @param object The object to check.
+    * @returns True if `object` is a Boolean, otherwise false.
     **/
   def isBoolean(`object`: js.Any): /* is boolean */ Boolean = js.native
   /**
-    * Returns true if object is a Date.
-    * @param object Check if this object is a Date.
-    * @return True if `object` is a Date, otherwise false.
+    * Returns true if `object` is a Date.
+    * @param object The object to check.
+    * @returns True if `object` is a Date, otherwise false.
     **/
   def isDate(`object`: js.Any): /* is std.Date */ Boolean = js.native
   /**
-    * Returns true if object is a DOM element.
-    * @param object Check if this object is a DOM element.
-    * @return True if `object` is a DOM element, otherwise false.
+    * Returns true if `object` is a DOM element.
+    * @param object The object to check.
+    * @returns True if `object` is a DOM element, otherwise false.
     **/
   def isElement(`object`: js.Any): /* is std.Element */ Boolean = js.native
   /**
-    * Returns true if object contains no values.
-    * @param object Check if this object has no properties or values.
-    * @return True if `object` is empty.
+    * Returns true if `collection` contains no values.
+    * For strings and array-like objects checks if the length property is 0.
+    * @param collection The collection to check.
+    * @returns True if `collection` has no elements.
     **/
-  def isEmpty(`object`: js.Any): Boolean = js.native
+  def isEmpty(collection: js.Any): Boolean = js.native
   /**
-    * Performs an optimized deep comparison between the two objects,
+    * Performs an optimized deep comparison between `object` and `other`
     * to determine if they should be considered equal.
     * @param object Compare to `other`.
     * @param other Compare to `object`.
-    * @return True if `object` is equal to `other`.
+    * @returns True if `object` should be considered equal to `other`.
     **/
   def isEqual(`object`: js.Any, other: js.Any): Boolean = js.native
   /**
-    * Returns true if object inherits from an Error.
-    * @param object Check if this object is an Error.
-    * @return True if `object` is a Error, otherwise false.
+    * Returns true if `object` is an Error.
+    * @param object The object to check.
+    * @returns True if `object` is a Error, otherwise false.
     **/
   def isError(`object`: js.Any): /* is std.Error */ Boolean = js.native
   /**
-    * Returns true if object is a finite Number.
-    * @param object Check if this object is a finite Number.
-    * @return True if `object` is a finite Number.
+    * Returns true if `object` is a finite Number.
+    * @param object The object to check.
+    * @returns True if `object` is a finite Number.
     **/
   def isFinite(`object`: js.Any): Boolean = js.native
   /**
-    * Returns true if object is a Function.
-    * @param object Check if this object is a Function.
-    * @return True if `object` is a Function, otherwise false.
+    * Returns true if `object` is a Function.
+    * @param object The object to check.
+    * @returns True if `object` is a Function, otherwise false.
     **/
   def isFunction(`object`: js.Any): /* is std.Function */ Boolean = js.native
   /**
-    * Returns true if the keys and values in `properties` matches with the `object` properties.
-    * @param object Object to be compared with `properties`.
-    * @param properties Properties be compared with `object`
-    * @return True if `object` has matching keys and values, otherwise false.
+    * Returns true if the keys and values in `properties` are contained in `object`.
+    * @param object The object to check.
+    * @param properties The properties to check for in `object`.
+    * @returns True if all keys and values in `properties` are also in `object`.
     **/
   def isMatch(`object`: js.Any, properties: js.Any): Boolean = js.native
   /**
-    * Returns true if object is NaN.
+    * Returns true if `object` is NaN.
     * Note: this is not the same as the native isNaN function,
     * which will also return true if the variable is undefined.
-    * @param object Check if this object is NaN.
-    * @return True if `object` is NaN, otherwise false.
+    * @param object The object to check.
+    * @returns True if `object` is NaN, otherwise false.
     **/
   def isNaN(`object`: js.Any): Boolean = js.native
   /**
-    * Returns true if the value of object is null.
-    * @param object Check if this object is null.
-    * @return True if `object` is null, otherwise false.
+    * Returns true if `object` is null.
+    * @param object The object to check.
+    * @returns True if `object` is null, otherwise false.
     **/
-  def isNull(`object`: js.Any): Boolean = js.native
+  def isNull(`object`: js.Any): /* is null */ Boolean = js.native
   /**
-    * Returns true if object is a Number (including NaN).
-    * @param object Check if this object is a Number.
-    * @return True if `object` is a Number, otherwise false.
+    * Returns true if `object` is a Number (including NaN).
+    * @param object The object to check.
+    * @returns True if `object` is a Number, otherwise false.
     **/
   def isNumber(`object`: js.Any): /* is number */ Boolean = js.native
   /**
-    * Returns true if value is an Object. Note that JavaScript arrays and functions are objects,
+    * Returns true if `object` is an Object. Note that JavaScript arrays and functions are objects,
     * while (normal) strings and numbers are not.
-    * @param object Check if this object is an Object.
-    * @return True of `object` is an Object, otherwise false.
+    * @param object The object to check.
+    * @returns True if `object` is an Object, otherwise false.
     **/
   def isObject(`object`: js.Any): Boolean = js.native
   /**
-    * Returns true if object is a RegExp.
-    * @param object Check if this object is a RegExp.
-    * @return True if `object` is a RegExp, otherwise false.
+    * Returns true if `object` is a RegExp.
+    * @param object The object to check.
+    * @returns True if `object` is a RegExp, otherwise false.
     **/
   def isRegExp(`object`: js.Any): /* is std.RegExp */ Boolean = js.native
   /**
-    * Returns true if object is a String.
-    * @param object Check if this object is a String.
-    * @return True if `object` is a String, otherwise false.
+    * Returns true if `object` is a String.
+    * @param object The object to check.
+    * @returns True if `object` is a String, otherwise false.
     **/
   def isString(`object`: js.Any): /* is string */ Boolean = js.native
   /**
-    * Returns true if object is a Symbol.
-    * @param object Check if this object is a Symbol.
-    * @return True if `object` is a Symbol, otherwise false.
+    * Returns true if `object` is a Symbol.
+    * @param object The object to check.
+    * @returns True if `object` is a Symbol, otherwise false.
     **/
   def isSymbol(`object`: js.Any): /* is symbol */ Boolean = js.native
   /**
-    * Returns true if value is undefined.
-    * @param object Check if this object is undefined.
-    * @return True if `object` is undefined, otherwise false.
+    * Returns true if `object` is undefined.
+    * @param object The object to check.
+    * @returns True if `object` is undefined, otherwise false.
     **/
-  def isUndefined(value: js.Any): Boolean = js.native
+  def isUndefined(`object`: js.Any): /* is undefined */ Boolean = js.native
   /**
     * A mostly-internal function to generate callbacks that can be applied to each element
     * in a collection, returning the desired result -- either identity, an arbitrary callback,
@@ -730,16 +832,15 @@ trait UnderscoreStatic extends js.Object {
     **/
   def keys(`object`: js.Any): js.Array[String] = js.native
   /**
-    * Returns the last element of an array. Passing n will return the last n elements of the array.
-    * @param array Retrieves the last element of this array.
-    * @return Returns the last element of `array`.
+    * Returns the last element of `list`. Passing `n` will return the last
+    * `n` elements of `list`.
+    * @param list The list to retrieve elements from.
+    * @param n The number of elements to retrieve, optional.
+    * @returns The last `n` elements of `list` or the last element if `n`
+    * is omitted.
     **/
-  def last[T](array: List[T]): js.UndefOr[T] = js.native
-  /**
-    * @see _.last
-    * @param n Return more than one element from `array`.
-    **/
-  def last[T](array: List[T], n: Double): js.Array[T] = js.native
+  def last[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
+  def last[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   /**
     * Returns the index of the last occurrence of value in the array, or -1 if value is not present. Uses the
     * native lastIndexOf function if possible. Pass fromIndex to start your search at a given index.
@@ -750,30 +851,30 @@ trait UnderscoreStatic extends js.Object {
     **/
   def lastIndexOf[T](array: List[T], value: T): Double = js.native
   def lastIndexOf[T](array: List[T], value: T, from: Double): Double = js.native
-  def map[T](list: List[T], iterator: IterateeMatcherShorthand[_]): js.Array[Boolean] = js.native
-  def map[T](list: List[T], iterator: IterateeMatcherShorthand[_], context: js.Any): js.Array[Boolean] = js.native
-  def map[T](list: List[T], iterator: IterateePropertyShorthand): js.Array[_] = js.native
-  def map[T](list: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[_] = js.native
+  def map[V /* <: Collection[_] */](collection: V): js.Array[IterateeResult[Null, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[scala.Nothing], context: js.Any): js.Array[IterateeResult[js.UndefOr[scala.Nothing], TypeOfCollection[V]]] = js.native
   /**
-    * Produces a new array of values by mapping each value in list through a transformation function
-    * (iterator). If the native map method exists, it will be used instead. If list is a JavaScript
-    * object, iterator's arguments will be (value, key, object).
-    * @param list Maps the elements of this array.
-    * @param iterator Map iterator function for each element in `list`.
-    * @param context `this` object in `iterator`, optional.
-    * @return The mapped array result.
+    * Produces a new array of values by mapping each value in the collection through a transformation function
+    * (iteratee). For function iteratees, each invocation of iteratee is called with three arguments:
+    * (value, key, collection).
+    * @param collection Maps the elements of this collection.
+    * @param iteratee Map iteratee for each element in the collection.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns The mapped result.
     **/
-  def map[T, TResult](list: List[T], iterator: ListIterator[T, TResult]): js.Array[TResult] = js.native
-  def map[T, TResult](list: List[T], iterator: ListIterator[T, TResult], context: js.Any): js.Array[TResult] = js.native
-  /**
-    * @see _.map
-    * @param object Maps the properties of this object.
-    * @param iterator Map iterator function for each property on `object`.
-    * @param context `this` object in `iterator`, optional.
-    * @return The mapped object result.
-    **/
-  def map[T, TResult](`object`: Dictionary[T], iterator: ObjectIterator[T, TResult]): js.Array[TResult] = js.native
-  def map[T, TResult](`object`: Dictionary[T], iterator: ObjectIterator[T, TResult], context: js.Any): js.Array[TResult] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: String): js.Array[IterateeResult[String, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: String, context: js.Any): js.Array[IterateeResult[String, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: js.Array[EnumerableKey]): js.Array[IterateeResult[js.Array[EnumerableKey], TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: js.Array[EnumerableKey], context: js.Any): js.Array[IterateeResult[js.Array[EnumerableKey], TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: Double): js.Array[IterateeResult[Double, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: Double, context: js.Any): js.Array[IterateeResult[Double, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */](collection: V, iteratee: Null, context: js.Any): js.Array[IterateeResult[Null, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof underscore.underscore.TypeOfCollection<V> ]:? underscore.underscore.TypeOfCollection<V>[P]}
+    */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[TypeOfCollection[V]]) */](collection: V, iteratee: I): js.Array[IterateeResult[I, TypeOfCollection[V]]] = js.native
+  def map[V /* <: Collection[_] */, I /* <: (CollectionIterator[TypeOfCollection[V], _, V]) | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof underscore.underscore.TypeOfCollection<V> ]:? underscore.underscore.TypeOfCollection<V>[P]}
+    */ typings.underscore.underscoreStrings.UnderscoreStatic with TopLevel[TypeOfCollection[V]]) */](collection: V, iteratee: I, context: js.Any): js.Array[IterateeResult[I, TypeOfCollection[V]]] = js.native
   /**
     * Like map, but for objects. Retrieves a property from each entry in the object, as if by _.property
     * @param object The object to transform
@@ -836,10 +937,12 @@ trait UnderscoreStatic extends js.Object {
     * @see _.max
     */
   def max(`object`: Dictionary[Double]): Double = js.native
-  def max[T](list: Dictionary[T], iterator: ObjectIterator[T, _]): T = js.native
-  def max[T](list: Dictionary[T], iterator: ObjectIterator[T, _], context: js.Any): T = js.native
-  def max[T](list: List[T], iterator: ListIterator[T, _]): T = js.native
-  def max[T](list: List[T], iterator: ListIterator[T, _], context: js.Any): T = js.native
+  def max[T](list: Dictionary[T], iterator: js.UndefOr[scala.Nothing], context: js.Any): T = js.native
+  def max[T](list: Dictionary[T], iterator: ObjectIterator[T, _, Dictionary[T]]): T = js.native
+  def max[T](list: Dictionary[T], iterator: ObjectIterator[T, _, Dictionary[T]], context: js.Any): T = js.native
+  def max[T](list: List[T], iterator: js.UndefOr[scala.Nothing], context: js.Any): T = js.native
+  def max[T](list: List[T], iterator: ListIterator[T, _, List[T]]): T = js.native
+  def max[T](list: List[T], iterator: ListIterator[T, _, List[T]], context: js.Any): T = js.native
   /**
     * @see _.max
     */
@@ -880,10 +983,12 @@ trait UnderscoreStatic extends js.Object {
     * @see _.min
     */
   def min(o: Dictionary[Double]): Double = js.native
-  def min[T](list: Dictionary[T], iterator: ObjectIterator[T, _]): T = js.native
-  def min[T](list: Dictionary[T], iterator: ObjectIterator[T, _], context: js.Any): T = js.native
-  def min[T](list: List[T], iterator: ListIterator[T, _]): T = js.native
-  def min[T](list: List[T], iterator: ListIterator[T, _], context: js.Any): T = js.native
+  def min[T](list: Dictionary[T], iterator: js.UndefOr[scala.Nothing], context: js.Any): T = js.native
+  def min[T](list: Dictionary[T], iterator: ObjectIterator[T, _, Dictionary[T]]): T = js.native
+  def min[T](list: Dictionary[T], iterator: ObjectIterator[T, _, Dictionary[T]], context: js.Any): T = js.native
+  def min[T](list: List[T], iterator: js.UndefOr[scala.Nothing], context: js.Any): T = js.native
+  def min[T](list: List[T], iterator: ListIterator[T, _, List[T]]): T = js.native
+  def min[T](list: List[T], iterator: ListIterator[T, _, List[T]], context: js.Any): T = js.native
   /**
     * @see _.min
     */
@@ -2977,15 +3082,19 @@ trait UnderscoreStatic extends js.Object {
     p7: T7
   ): js.Function6[/* p1 */ T1, /* p2 */ T2, /* p3 */ T3, /* p4 */ T4, /* p5 */ T5, /* p6 */ T6, T8] = js.native
   /**
-    * Split array into two arrays:
-    * one whose elements all satisfy predicate and one whose elements all do not satisfy predicate.
-    * @param array Array to split in two.
-    * @param iterator Filter iterator function for each element in `array`.
-    * @param context `this` object in `iterator`, optional.
-    * @return Array where Array[0] are the elements in `array` that satisfies the predicate, and Array[1] the elements that did not.
+    * Splits `collection` into two arrays: one whose elements all satisfy
+    * `iteratee` and one whose elements all do not satisfy `iteratee`.
+    * @param collection The collection to partition.
+    * @param iteratee The iteratee that defines the partitioning scheme
+    * for each element in `collection`.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns An array composed of two elements, where the first element
+    * contains the elements in `collection` that satisfied the predicate
+    * and the second element contains the elements that did not.
     **/
-  def partition[T](array: js.Array[T], iterator: ListIterator[T, Boolean]): js.Array[js.Array[T]] = js.native
-  def partition[T](array: js.Array[T], iterator: ListIterator[T, Boolean], context: js.Any): js.Array[js.Array[T]] = js.native
+  def partition[V /* <: Collection[_] */](list: V): js.Tuple2[js.Array[TypeOfCollection[V]], js.Array[TypeOfCollection[V]]] = js.native
+  def partition[V /* <: Collection[_] */](list: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): js.Tuple2[js.Array[TypeOfCollection[V]], js.Array[TypeOfCollection[V]]] = js.native
+  def partition[V /* <: Collection[_] */](list: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): js.Tuple2[js.Array[TypeOfCollection[V]], js.Array[TypeOfCollection[V]]] = js.native
   /**
     * Return a copy of the object, filtered to only have values for the whitelisted keys
     * (or array of valid keys).
@@ -2999,20 +3108,21 @@ trait UnderscoreStatic extends js.Object {
     obj: T,
     predicate: ObjectIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any, 
-      Boolean
+      Boolean, 
+      Dictionary[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ]
     ]
   ): Pick[T, K] = js.native
-  def pluck(list: List[_], propertyName: String): js.Array[_] = js.native
   /**
     * A convenient version of what is perhaps the most common use-case for map: extracting a list of
     * property values.
-    * @param list The list to pluck elements out of that have the property `propertyName`.
-    * @param propertyName The property to look for on each element within `list`.
-    * @return The list of elements within `list` that have the property `propertyName`.
+    * @param collection The collection of items.
+    * @param propertyName The name of a specific property to retrieve from all items.
+    * @returns The set of values for the specified property for each item in the collection.
     **/
-  def pluck[T /* <: js.Object */, K /* <: /* keyof T */ String */](list: List[T], propertyName: K): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-  ] = js.native
+  def pluck[V /* <: Collection[_] */](collection: V, propertyName: String): js.Array[PropertyTypeOrAny[TypeOfCollection[V], String]] = js.native
+  def pluck[V /* <: Collection[_] */](collection: V, propertyName: Double): js.Array[PropertyTypeOrAny[TypeOfCollection[V], Double]] = js.native
   /**
     * Returns a function that will itself return the key property of any passed-in object.
     * @param key Property of the object.
@@ -3041,78 +3151,97 @@ trait UnderscoreStatic extends js.Object {
     **/
   def random(min: Double, max: Double): Double = js.native
   /**
-    * A function to create flexibly-numbered lists of integers, handy for each and map loops. start, if omitted,
-    * defaults to 0; step defaults to 1. Returns a list of integers from start to stop, incremented (or decremented)
-    * by step, exclusive.
-    * @param start Start here.
-    * @param stop Stop here.
-    * @param step The number to count up by each iteration, optional, default = 1.
-    * @return Array of numbers from `start` to `stop` with increments of `step`.
+    * A function to create flexibly-numbered lists of integers, handy for
+    * `each` and `map` loops. Returns a list of integers from
+    * `startOrStop` (inclusive) to `stop` (exclusive), incremented
+    * (or decremented) by `step`. Note that ranges that `stop` before they
+    * `start` are considered to be zero-length instead of negative - if
+    * you'd like a negative range, use a negative `step`.
+    *
+    * If `stop` is not specified, `startOrStop` will be the number to stop
+    * at and the default start of 0 will be used.
+    * @param startOrStop If `stop` is specified, the number to start at.
+    * Otherwise, this is the number to stop at and the default start of 0
+    * will be used.
+    * @param stop The number to stop at.
+    * @param step The number to count up by each iteration, optional,
+    * default = 1.
+    * @returns An array of numbers from start to `stop` with increments
+    * of `step`.
     **/
-  def range(start: Double, stop: Double): js.Array[Double] = js.native
-  def range(start: Double, stop: Double, step: Double): js.Array[Double] = js.native
+  def range(startOrStop: Double): js.Array[Double] = js.native
+  def range(startOrStop: Double, stop: js.UndefOr[scala.Nothing], step: Double): js.Array[Double] = js.native
+  def range(startOrStop: Double, stop: Double): js.Array[Double] = js.native
+  def range(startOrStop: Double, stop: Double, step: Double): js.Array[Double] = js.native
+  def reduce[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult | TypeOfCollection[V], V]
+  ): js.UndefOr[TResult | TypeOfCollection[V]] = js.native
   /**
-    * @see _.range
-    * @param stop Stop here.
-    * @return Array of numbers from 0 to `stop` with increments of 1.
-    * @note If start is not specified the implementation will never pull the step (step = arguments[2] || 0)
+    * Also known as inject and foldl, reduce boils down a collection of values into a
+    * single value. Memo is the initial state of the reduction, and each successive
+    * step of it should be returned by iteratee. The iteratee is passed four arguments:
+    * the memo, then the value and index (or key) of the iteration, and finally a reference
+    * to the entire collection.
+    *
+    * If no memo is passed to the initial invocation of reduce, the iteratee is not invoked
+    * on the first element of the collection. The first element is instead passed as the memo
+    * in the invocation of the iteratee on the next element in the collection.
+    * @param collection Reduces the elements of this collection.
+    * @param iteratee Reduce iteratee function for each element in `collection`.
+    * @param memo Initial reduce state or undefined to use the first collection item as initial state.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns The reduced result.
     **/
-  def range(stop: Double): js.Array[Double] = js.native
-  def reduce[T, TResult](list: Dictionary[T], iterator: MemoObjectIterator[T, TResult]): TResult = js.native
-  def reduce[T, TResult](list: Dictionary[T], iterator: MemoObjectIterator[T, TResult], memo: TResult): TResult = js.native
-  def reduce[T, TResult](list: Dictionary[T], iterator: MemoObjectIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def reduce[V /* <: Collection[_] */, TResult](collection: V, iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V], memo: TResult): TResult = js.native
+  def reduce[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V],
+    memo: TResult,
+    context: js.Any
+  ): TResult = js.native
+  def reduceRight[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult | TypeOfCollection[V], V]
+  ): js.UndefOr[TResult | TypeOfCollection[V]] = js.native
   /**
-    * Also known as inject and foldl, reduce boils down a list of values into a single value.
-    * Memo is the initial state of the reduction, and each successive step of it should be
-    * returned by iterator. The iterator is passed four arguments: the memo, then the value
-    * and index (or key) of the iteration, and finally a reference to the entire list.
-    * @param list Reduces the elements of this array.
-    * @param iterator Reduce iterator function for each element in `list`.
-    * @param memo Initial reduce state.
-    * @param context `this` object in `iterator`, optional.
-    * @return Reduced object result.
+    * The right-associative version of reduce.
+    *
+    * This is not as useful in JavaScript as it would be in a language with lazy evaluation.
+    * @param collection Reduces the elements of this array.
+    * @param iteratee Reduce iteratee function for each element in `collection`.
+    * @param memo Initial reduce state or undefined to use the first collection item as initial state.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns The reduced result.
     **/
-  def reduce[T, TResult](list: List[T], iterator: MemoIterator[T, TResult]): TResult = js.native
-  def reduce[T, TResult](list: List[T], iterator: MemoIterator[T, TResult], memo: TResult): TResult = js.native
-  def reduce[T, TResult](list: List[T], iterator: MemoIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
+  def reduceRight[V /* <: Collection[_] */, TResult](collection: V, iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V], memo: TResult): TResult = js.native
+  def reduceRight[V /* <: Collection[_] */, TResult](
+    collection: V,
+    iteratee: MemoCollectionIterator[TypeOfCollection[V], TResult, V],
+    memo: TResult,
+    context: js.Any
+  ): TResult = js.native
   /**
-    * The right-associative version of reduce. Delegates to the JavaScript 1.8 version of
-    * reduceRight, if it exists. `foldr` is not as useful in JavaScript as it would be in a
-    * language with lazy evaluation.
-    * @param list Reduces the elements of this array.
-    * @param iterator Reduce iterator function for each element in `list`.
-    * @param memo Initial reduce state.
-    * @param context `this` object in `iterator`, optional.
-    * @return Reduced object result.
-    **/
-  def reduceRight[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult]): TResult = js.native
-  def reduceRight[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult], memo: TResult): TResult = js.native
-  def reduceRight[T, TResult](list: Collection[T], iterator: MemoIterator[T, TResult], memo: TResult, context: js.Any): TResult = js.native
-  /**
-    * Returns the values in list without the elements that the truth test (iterator) passes.
+    * Returns the values in `collection` without the elements that pass a truth test (iteratee).
     * The opposite of filter.
-    * Return all the elements for which a truth test fails.
-    * @param list Reject elements within this list.
-    * @param iterator Reject iterator function for each element in `list`.
-    * @param context `this` object in `iterator`, optional.
-    * @return The rejected list of elements.
+    * @param collection The collection to filter.
+    * @param iteratee The truth test to apply.
+    * @param context `this` object in `iteratee`, optional.
+    * @return The set of values that fail the truth test.
     **/
-  def reject[T](list: List[T], iterator: ListIterator[T, Boolean]): js.Array[T] = js.native
-  def reject[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): js.Array[T] = js.native
+  def reject[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V]] = js.native
+  def reject[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): js.Array[TypeOfCollection[V]] = js.native
+  def reject[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): js.Array[TypeOfCollection[V]] = js.native
   /**
-    * @see _.reject
+    * Returns the rest of the elements in `list`. Pass an `index` to
+    * return the values of the list from that index onward.
+    * @param list The list to retrieve elements from.
+    * @param index The index to start retrieving elements from, optional,
+    * default = 1.
+    * @returns The elements of `list` from `index` to the end of the list.
     **/
-  def reject[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): js.Array[T] = js.native
-  def reject[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): js.Array[T] = js.native
-  /**
-    * Returns the rest of the elements in an array. Pass an index to return the values of the array
-    * from that index onward.
-    * @param array The array to retrieve all but the first `index` elements.
-    * @param n The index to start retrieving elements forward from, optional, default = 1.
-    * @return Returns the elements of `array` from `index` to the end of `array`.
-    **/
-  def rest[T](array: List[T]): js.Array[T] = js.native
-  def rest[T](array: List[T], n: Double): js.Array[T] = js.native
+  def rest[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
+  def rest[V /* <: List[_] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
   /**
     * Similar to ES6's rest param (http://ariya.ofilabs.com/2013/03/es6-and-rest-parameter.html)
     * This accumulates the arguments passed into an array, after a given index.
@@ -3128,32 +3257,27 @@ trait UnderscoreStatic extends js.Object {
     **/
   def result(`object`: js.Any, property: String): js.Any = js.native
   def result(`object`: js.Any, property: String, defaultValue: js.Any): js.Any = js.native
+  def sample[V /* <: Collection[_] */](collection: V): js.UndefOr[TypeOfCollection[V]] = js.native
   /**
-    * @see _.sample
+    * Produce a random sample from the collection. Pass a number to return `n` random elements from the collection.
+    * Otherwise a single random item will be returned.
+    * @param collection The collection to sample.
+    * @param n The number of elements to sample from the collection.
+    * @return A random sample of `n` elements from `collection` or a single element if `n` is not specified.
     **/
-  def sample[T](list: Collection[T]): T = js.native
+  def sample[V /* <: Collection[_] */](collection: V, n: Double): js.Array[TypeOfCollection[V]] = js.native
   /**
-    * Produce a random sample from the `list`.  Pass a number to return `n` random elements from the list.  Otherwise a single random item will be returned.
-    * @param list List to sample.
-    * @return Random sample of `n` elements in `list`.
+    * @see filter
     **/
-  def sample[T](list: Collection[T], n: Double): js.Array[T] = js.native
+  def select[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V]] = js.native
+  def select[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): js.Array[TypeOfCollection[V]] = js.native
+  def select[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): js.Array[TypeOfCollection[V]] = js.native
   /**
-    * @see _.filter
+    * Returns a shuffled copy of the collection, using a version of the Fisher-Yates shuffle.
+    * @param collection The collection to shuffle.
+    * @return A shuffled copy of `collection`.
     **/
-  def select[T](list: List[T], iterator: ListIterator[T, Boolean]): js.Array[T] = js.native
-  def select[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): js.Array[T] = js.native
-  /**
-    * @see _.filter
-    **/
-  def select[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): js.Array[T] = js.native
-  def select[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): js.Array[T] = js.native
-  /**
-    * Returns a shuffled copy of the list, using a version of the Fisher-Yates shuffle.
-    * @param list List to shuffle.
-    * @return Shuffled copy of `list`.
-    **/
-  def shuffle[T](list: Collection[T]): js.Array[T] = js.native
+  def shuffle[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V]] = js.native
   /**
     * Return the number of values in the list.
     * @param list Count the number of values/elements in this list.
@@ -3161,22 +3285,17 @@ trait UnderscoreStatic extends js.Object {
     **/
   def size[T](list: Collection[T]): Double = js.native
   /**
-    * Returns true if any of the values in the list pass the iterator truth test. Short-circuits and
-    * stops traversing the list if a true element is found. Delegates to the native method some, if present.
-    * @param list Truth test against all elements within this list.
-    * @param iterator Trust test iterator function for each element in `list`.
-    * @param context `this` object in `iterator`, optional.
-    * @return True if any elements passed the truth test, otherwise false.
+    * Returns true if any of the values in `collection` pass the `iteratee`
+    * truth test. Short-circuits and stops traversing `collection` if a
+    * true element is found.
+    * @param collection The collection to evaluate.
+    * @param iteratee The truth test to apply.
+    * @param context `this` object in `iteratee`, optional.
+    * @returns True if any element passed the truth test, otherwise false.
     **/
-  def some[T](list: List[T]): Boolean = js.native
-  def some[T](list: List[T], iterator: ListIterator[T, Boolean]): Boolean = js.native
-  def some[T](list: List[T], iterator: ListIterator[T, Boolean], context: js.Any): Boolean = js.native
-  /**
-    * @see _.some
-    **/
-  def some[T](`object`: Dictionary[T]): Boolean = js.native
-  def some[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean]): Boolean = js.native
-  def some[T](`object`: Dictionary[T], iterator: ObjectIterator[T, Boolean], context: js.Any): Boolean = js.native
+  def some[V /* <: Collection[_] */](collection: V): Boolean = js.native
+  def some[V /* <: Collection[_] */](collection: V, iteratee: js.UndefOr[Iteratee[V, Boolean, TypeOfCollection[V]]], context: js.Any): Boolean = js.native
+  def some[V /* <: Collection[_] */](collection: V, iteratee: Iteratee[V, Boolean, TypeOfCollection[V]]): Boolean = js.native
   /**
     * @see _.sortBy
     * @param iterator Sort iterator for each element within `list`.
@@ -3192,36 +3311,43 @@ trait UnderscoreStatic extends js.Object {
     * @return A sorted copy of `list`.
     **/
   def sortBy[T, TSort](list: List[T]): js.Array[T] = js.native
-  def sortBy[T, TSort](list: List[T], iterator: ListIterator[T, TSort]): js.Array[T] = js.native
-  def sortBy[T, TSort](list: List[T], iterator: ListIterator[T, TSort], context: js.Any): js.Array[T] = js.native
+  def sortBy[T, TSort](list: List[T], iterator: js.UndefOr[scala.Nothing], context: js.Any): js.Array[T] = js.native
+  def sortBy[T, TSort](list: List[T], iterator: ListIterator[T, TSort, List[T]]): js.Array[T] = js.native
+  def sortBy[T, TSort](list: List[T], iterator: ListIterator[T, TSort, List[T]], context: js.Any): js.Array[T] = js.native
   /**
-    * Uses a binary search to determine the index at which the value should be inserted into the list in order
-    * to maintain the list's sorted order. If an iterator is passed, it will be used to compute the sort ranking
-    * of each value, including the value you pass.
-    * @param list The sorted list.
-    * @param value The value to determine its index within `list`.
-    * @param iterator Iterator to compute the sort ranking of each value, optional.
-    * @param context `this` object in `iterator`, optional.
+    * Uses a binary search to determine the lowest index at which the
+    * value should be inserted into `list` in order to maintain `list`'s
+    * sorted order. If an iteratee is provided, it will be used to compute
+    * the sort ranking of each value, including the value you pass.
+    * @param list A sorted list.
+    * @param value The value to determine an insert index for to mainain
+    * the sorting in `list`.
+    * @param iteratee Iteratee to compute the sort ranking of each
+    * element including `value`, optional.
+    * @param context `this` object in `iteratee`, optional.
     * @return The index where `value` should be inserted into `list`.
     **/
-  def sortedIndex[T, TSort](list: List[T], value: T): Double = js.native
-  def sortedIndex[T, TSort](list: List[T], value: T, iterator: String): Double = js.native
-  def sortedIndex[T, TSort](list: List[T], value: T, iterator: String, context: js.Any): Double = js.native
-  def sortedIndex[T, TSort](list: List[T], value: T, iterator: js.Function1[/* x */ T, TSort]): Double = js.native
-  def sortedIndex[T, TSort](list: List[T], value: T, iterator: js.Function1[/* x */ T, TSort], context: js.Any): Double = js.native
+  def sortedIndex[V /* <: List[_] */](list: V, value: TypeOfList[V]): Double = js.native
+  def sortedIndex[V /* <: List[_] */](
+    list: V,
+    value: TypeOfList[V],
+    iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]],
+    context: js.Any
+  ): Double = js.native
+  def sortedIndex[V /* <: List[_] */](list: V, value: TypeOfList[V], iteratee: Iteratee[V, _, TypeOfCollection[V]]): Double = js.native
   /**
-    * @see _.rest
+    * @see rest
     **/
-  def tail[T](array: List[T]): js.Array[T] = js.native
-  def tail[T](array: List[T], n: Double): js.Array[T] = js.native
+  def tail[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
+  def tail[V /* <: List[_] */](list: V, index: Double): js.Array[TypeOfList[V]] = js.native
   /**
-    * @see _.first
+    * @see first
     **/
-  def take[T](array: List[T]): T = js.native
+  def take[V /* <: List[_] */](list: V): js.UndefOr[TypeOfList[V]] = js.native
   /**
-    * @see _.first
+    * @see first
     **/
-  def take[T](array: List[T], n: Double): js.Array[T] = js.native
+  def take[V /* <: List[_] */](list: V, n: Double): js.Array[TypeOfList[V]] = js.native
   /**
     * Invokes interceptor with the object, and then returns object. The primary purpose of this method
     * is to "tap into" a method chain, in order to perform operations on intermediate results within the chain.
@@ -3272,12 +3398,12 @@ trait UnderscoreStatic extends js.Object {
   def times[TResult](n: Double, iterator: js.Function1[/* n */ Double, TResult]): js.Array[TResult] = js.native
   def times[TResult](n: Double, iterator: js.Function1[/* n */ Double, TResult], context: js.Any): js.Array[TResult] = js.native
   /**
-    * Converts the list (anything that can be iterated over), into a real Array. Useful for transmuting
-    * the arguments object.
-    * @param list object to transform into an array.
-    * @return `list` as an array.
+    * Creates a real Array from the collection (anything that can be
+    * iterated over). Useful for transmuting the arguments object.
+    * @param collection The collection to transform into an array.
+    * @returns An array containing the elements of `collection`.
     **/
-  def toArray[T](list: Collection[T]): js.Array[T] = js.native
+  def toArray[V /* <: Collection[_] */](collection: V): js.Array[TypeOfCollection[V]] = js.native
   /**
     * The opposite of escape, replaces &amp;, &lt;, &gt;, &quot;, and &#x27; with their unescaped counterparts.
     * @param str HTML escaped string.
@@ -3292,38 +3418,58 @@ trait UnderscoreStatic extends js.Object {
     **/
   def union[T](arrays: List[T]*): js.Array[T] = js.native
   /**
-    * Produces a duplicate-free version of the array, using === to test object equality. If you know in
-    * advance that the array is sorted, passing true for isSorted will run a much faster algorithm. If
-    * you want to compute unique items based on a transformation, pass an iterator function.
-    * @param array Array to remove duplicates from.
-    * @param isSorted True if `array` is already sorted, optional, default = false.
-    * @param iterator Transform the elements of `array` before comparisons for uniqueness.
-    * @param context 'this' object in `iterator`, optional.
-    * @return Copy of `array` where all elements are unique.
+    * Produces a duplicate-free version of `list`, using === to test
+    * object equality. If you know in advance that `list` is sorted,
+    * passing true for isSorted will run a much faster algorithm. If you
+    * want to compute unique items based on a transformation, pass an
+    * iteratee function.
+    * @param list The list to remove duplicates from.
+    * @param isSorted True if `list` is already sorted, optional,
+    * default = false.
+    * @param iteratee Transform the elements of `list` before comparisons
+    * for uniqueness.
+    * @param context 'this' object in `iteratee`, optional.
+    * @return An array containing only the unique elements in `list`.
     **/
-  def uniq[T, TSort](array: List[T]): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], isSorted: Boolean): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], isSorted: Boolean, iterator: IterateePropertyShorthand): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], isSorted: Boolean, iterator: IterateePropertyShorthand, context: js.Any): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], isSorted: Boolean, iterator: ListIterator[T, TSort]): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], isSorted: Boolean, iterator: ListIterator[T, TSort], context: js.Any): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], iterator: IterateePropertyShorthand): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], iterator: ListIterator[T, TSort]): js.Array[T] = js.native
-  def uniq[T, TSort](array: List[T], iterator: ListIterator[T, TSort], context: js.Any): js.Array[T] = js.native
+  def uniq[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](
+    list: V,
+    isSorted: js.UndefOr[scala.Nothing],
+    iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]],
+    context: js.Any
+  ): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](list: V, isSorted: js.UndefOr[scala.Nothing], iteratee: Iteratee[V, _, TypeOfCollection[V]]): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](
+    list: V,
+    isSorted: Boolean,
+    iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]],
+    context: js.Any
+  ): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V]]): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](list: V, iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]], context: js.Any): js.Array[TypeOfList[V]] = js.native
+  def uniq[V /* <: List[_] */](list: V, iteratee: Iteratee[V, _, TypeOfCollection[V]]): js.Array[TypeOfList[V]] = js.native
   /**
-    * @see _.uniq
+    * @see uniq
     **/
-  def unique[T, TSort](array: List[T]): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], isSorted: Boolean): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], isSorted: Boolean, iterator: IterateePropertyShorthand): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], isSorted: Boolean, iterator: IterateePropertyShorthand, context: js.Any): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], isSorted: Boolean, iterator: ListIterator[T, TSort]): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], isSorted: Boolean, iterator: ListIterator[T, TSort], context: js.Any): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], iterator: IterateePropertyShorthand): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], iterator: IterateePropertyShorthand, context: js.Any): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], iterator: ListIterator[T, TSort]): js.Array[T] = js.native
-  def unique[T, TSort](array: List[T], iterator: ListIterator[T, TSort], context: js.Any): js.Array[T] = js.native
+  def unique[V /* <: List[_] */](list: V): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](
+    list: V,
+    isSorted: js.UndefOr[scala.Nothing],
+    iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]],
+    context: js.Any
+  ): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](list: V, isSorted: js.UndefOr[scala.Nothing], iteratee: Iteratee[V, _, TypeOfCollection[V]]): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](list: V, isSorted: Boolean): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](
+    list: V,
+    isSorted: Boolean,
+    iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]],
+    context: js.Any
+  ): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](list: V, isSorted: Boolean, iteratee: Iteratee[V, _, TypeOfCollection[V]]): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](list: V, iteratee: js.UndefOr[Iteratee[V, _, TypeOfCollection[V]]], context: js.Any): js.Array[TypeOfList[V]] = js.native
+  def unique[V /* <: List[_] */](list: V, iteratee: Iteratee[V, _, TypeOfCollection[V]]): js.Array[TypeOfList[V]] = js.native
   /**
     * Generate a globally-unique id for client-side models or DOM elements that need one.
     * If prefix is passed, the id will be appended to it. Without prefix, returns an integer.
@@ -3354,20 +3500,21 @@ trait UnderscoreStatic extends js.Object {
     **/
   def values[T](`object`: Dictionary[T]): js.Array[T] = js.native
   /**
-    * Looks through each value in the list, returning an array of all the values that contain all
-    * of the key-value pairs listed in properties.
-    * @param list List to match elements again `properties`.
-    * @param properties The properties to check for on each element within `list`.
-    * @return The elements within `list` that contain the required `properties`.
+    * Looks through each value in the collection, returning an array of all the values that matches the
+    * key-value pairs listed in `properties`.
+    * @param collection The collection in which to find elements that match `properties`.
+    * @param properties The properties to check for on the elements within `collection`.
+    * @return The elements in `collection` that match `properties`.
     **/
-  def where[T, U /* <: js.Object */](list: List[T], properties: U): js.Array[T] = js.native
+  def where[V /* <: Collection[_] */](collection: V, properties: Partial[TypeOfCollection[V]]): js.Array[TypeOfCollection[V]] = js.native
   /**
-    * Returns a copy of the array with all instances of the values removed.
-    * @param array The array to remove `values` from.
-    * @param values The values to remove from `array`.
-    * @return Copy of `array` without `values`.
+    * Returns a copy of `list` with all instances of `values` removed.
+    * @param list The list to exclude `values` from.
+    * @param values The values to exclude from `list`.
+    * @return An array that contains all elements of `list` except for
+    * `values`.
     **/
-  def without[T](array: List[T], values: T*): js.Array[T] = js.native
+  def without[V /* <: List[_] */](list: V, values: TypeOfList[V]*): js.Array[TypeOfList[V]] = js.native
   /**
     * Wraps the first function inside of the wrapper function, passing it as the first argument. This allows
     * the wrapper to execute code before and after the function runs, adjust the arguments, and execute it

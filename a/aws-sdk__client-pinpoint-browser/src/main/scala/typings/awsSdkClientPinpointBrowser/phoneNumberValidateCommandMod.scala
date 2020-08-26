@@ -26,16 +26,9 @@ object phoneNumberValidateCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PhoneNumberValidateInput) = this()
-    /* CompleteClass */
-    override val input: PhoneNumberValidateInput = js.native
     val middlewareStack: MiddlewareStack[PhoneNumberValidateInput, PhoneNumberValidateOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[PhoneNumberValidateInput, PhoneNumberValidateOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[PhoneNumberValidateInput, PhoneNumberValidateOutput] = js.native
   }

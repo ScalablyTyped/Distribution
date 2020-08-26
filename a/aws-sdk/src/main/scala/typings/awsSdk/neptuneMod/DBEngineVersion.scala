@@ -58,34 +58,78 @@ trait DBEngineVersion extends js.Object {
 
 object DBEngineVersion {
   @scala.inline
-  def apply(
-    DBEngineDescription: String = null,
-    DBEngineVersionDescription: String = null,
-    DBParameterGroupFamily: String = null,
-    DefaultCharacterSet: CharacterSet = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    ExportableLogTypes: LogTypeList = null,
-    SupportedCharacterSets: SupportedCharacterSetsList = null,
-    SupportedTimezones: SupportedTimezonesList = null,
-    SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined,
-    SupportsReadReplica: js.UndefOr[Boolean] = js.undefined,
-    ValidUpgradeTarget: ValidUpgradeTargetList = null
-  ): DBEngineVersion = {
+  def apply(): DBEngineVersion = {
     val __obj = js.Dynamic.literal()
-    if (DBEngineDescription != null) __obj.updateDynamic("DBEngineDescription")(DBEngineDescription.asInstanceOf[js.Any])
-    if (DBEngineVersionDescription != null) __obj.updateDynamic("DBEngineVersionDescription")(DBEngineVersionDescription.asInstanceOf[js.Any])
-    if (DBParameterGroupFamily != null) __obj.updateDynamic("DBParameterGroupFamily")(DBParameterGroupFamily.asInstanceOf[js.Any])
-    if (DefaultCharacterSet != null) __obj.updateDynamic("DefaultCharacterSet")(DefaultCharacterSet.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (ExportableLogTypes != null) __obj.updateDynamic("ExportableLogTypes")(ExportableLogTypes.asInstanceOf[js.Any])
-    if (SupportedCharacterSets != null) __obj.updateDynamic("SupportedCharacterSets")(SupportedCharacterSets.asInstanceOf[js.Any])
-    if (SupportedTimezones != null) __obj.updateDynamic("SupportedTimezones")(SupportedTimezones.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsLogExportsToCloudwatchLogs)) __obj.updateDynamic("SupportsLogExportsToCloudwatchLogs")(SupportsLogExportsToCloudwatchLogs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsReadReplica)) __obj.updateDynamic("SupportsReadReplica")(SupportsReadReplica.get.asInstanceOf[js.Any])
-    if (ValidUpgradeTarget != null) __obj.updateDynamic("ValidUpgradeTarget")(ValidUpgradeTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBEngineVersion]
   }
+  @scala.inline
+  implicit class DBEngineVersionOps[Self <: DBEngineVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBEngineDescription(value: String): Self = this.set("DBEngineDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBEngineDescription: Self = this.set("DBEngineDescription", js.undefined)
+    @scala.inline
+    def setDBEngineVersionDescription(value: String): Self = this.set("DBEngineVersionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBEngineVersionDescription: Self = this.set("DBEngineVersionDescription", js.undefined)
+    @scala.inline
+    def setDBParameterGroupFamily(value: String): Self = this.set("DBParameterGroupFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroupFamily: Self = this.set("DBParameterGroupFamily", js.undefined)
+    @scala.inline
+    def setDefaultCharacterSet(value: CharacterSet): Self = this.set("DefaultCharacterSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCharacterSet: Self = this.set("DefaultCharacterSet", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setExportableLogTypesVarargs(value: String*): Self = this.set("ExportableLogTypes", js.Array(value :_*))
+    @scala.inline
+    def setExportableLogTypes(value: LogTypeList): Self = this.set("ExportableLogTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportableLogTypes: Self = this.set("ExportableLogTypes", js.undefined)
+    @scala.inline
+    def setSupportedCharacterSetsVarargs(value: CharacterSet*): Self = this.set("SupportedCharacterSets", js.Array(value :_*))
+    @scala.inline
+    def setSupportedCharacterSets(value: SupportedCharacterSetsList): Self = this.set("SupportedCharacterSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedCharacterSets: Self = this.set("SupportedCharacterSets", js.undefined)
+    @scala.inline
+    def setSupportedTimezonesVarargs(value: Timezone*): Self = this.set("SupportedTimezones", js.Array(value :_*))
+    @scala.inline
+    def setSupportedTimezones(value: SupportedTimezonesList): Self = this.set("SupportedTimezones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedTimezones: Self = this.set("SupportedTimezones", js.undefined)
+    @scala.inline
+    def setSupportsLogExportsToCloudwatchLogs(value: Boolean): Self = this.set("SupportsLogExportsToCloudwatchLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsLogExportsToCloudwatchLogs: Self = this.set("SupportsLogExportsToCloudwatchLogs", js.undefined)
+    @scala.inline
+    def setSupportsReadReplica(value: Boolean): Self = this.set("SupportsReadReplica", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsReadReplica: Self = this.set("SupportsReadReplica", js.undefined)
+    @scala.inline
+    def setValidUpgradeTargetVarargs(value: UpgradeTarget*): Self = this.set("ValidUpgradeTarget", js.Array(value :_*))
+    @scala.inline
+    def setValidUpgradeTarget(value: ValidUpgradeTargetList): Self = this.set("ValidUpgradeTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUpgradeTarget: Self = this.set("ValidUpgradeTarget", js.undefined)
+  }
+  
 }
 

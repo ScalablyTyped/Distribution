@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextEncoderOptions extends js.Object {
-  var NONSTANDARD_allowLegacyEncoding: js.UndefOr[Boolean] = js.undefined
+  var NONSTANDARD_allowLegacyEncoding: js.UndefOr[Boolean] = js.native
 }
 
 object TextEncoderOptions {
   @scala.inline
-  def apply(NONSTANDARD_allowLegacyEncoding: js.UndefOr[Boolean] = js.undefined): TextEncoderOptions = {
+  def apply(): TextEncoderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(NONSTANDARD_allowLegacyEncoding)) __obj.updateDynamic("NONSTANDARD_allowLegacyEncoding")(NONSTANDARD_allowLegacyEncoding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEncoderOptions]
   }
+  @scala.inline
+  implicit class TextEncoderOptionsOps[Self <: TextEncoderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNONSTANDARD_allowLegacyEncoding(value: Boolean): Self = this.set("NONSTANDARD_allowLegacyEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNONSTANDARD_allowLegacyEncoding: Self = this.set("NONSTANDARD_allowLegacyEncoding", js.undefined)
+  }
+  
 }
 

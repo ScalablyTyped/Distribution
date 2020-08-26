@@ -1,7 +1,7 @@
 
 # Scala.js typings for split_dot_js
 
-Typings are for version 1.6.1
+Typings are for version 1.6.2
 
 ## Library description:
 2kb unopinionated utility for resizeable split views
@@ -12,7 +12,7 @@ Typings are for version 1.6.1
 | Keywords           | css, split, flexbox, tiny, split-layout |
 | # releases         | 14 |
 | # dependents       | 62 |
-| # downloads        | 641327 |
+| # downloads        | 659475 |
 | # stars            | 5 |
 
 ## Links

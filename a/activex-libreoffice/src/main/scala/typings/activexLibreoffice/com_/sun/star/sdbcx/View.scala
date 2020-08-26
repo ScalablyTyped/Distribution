@@ -15,17 +15,18 @@ import scala.scalajs.js.annotation._
   * If a view is going to be added to a database, the view must have a unique name within the view and the table container, as it can be used like a
   * table. ** Note: ** After addition, both the containers for views and the container for tables must contain an element for the view.
   */
+@js.native
 trait View
   extends XRename
      with XPropertySet
      with XAlterView {
   /** is the name of the views catalog, may be empty. */
-  var CatalogName: String
+  var CatalogName: String = js.native
   /**
     * indicates if a check option should be used for the view.
     * @see com.sun.star.sdbcx.CheckOption
     */
-  var CheckOption: Double
+  var CheckOption: Double = js.native
   /**
     * is the command for creating the view.
     *
@@ -34,11 +35,11 @@ trait View
     * This property might be empty when a backend does not support retrieving the current SQL command of a view. However, if the `View` supports altering
     * its command via the {@link XAlterView} interface, then it's required to also provide the current SQL command in the `Command` property.
     */
-  var Command: String
+  var Command: String = js.native
   /** is the name of the view. */
-  var Name: String
+  var Name: String = js.native
   /** is the name of the view's schema, may be empty. */
-  var SchemaName: String
+  var SchemaName: String = js.native
 }
 
 object View {
@@ -66,5 +67,28 @@ object View {
     val __obj = js.Dynamic.literal(CatalogName = CatalogName.asInstanceOf[js.Any], CheckOption = CheckOption.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), alterCommand = js.Any.fromFunction1(alterCommand), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), rename = js.Any.fromFunction1(rename), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[View]
   }
+  @scala.inline
+  implicit class ViewOps[Self <: View] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalogName(value: String): Self = this.set("CatalogName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckOption(value: Double): Self = this.set("CheckOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

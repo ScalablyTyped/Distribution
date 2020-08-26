@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UserPoolEmailConfiguration extends js.Object {
   /**
-    * Instruct Cognito to either use its built-in functional or Amazon SES to send out emails.
+    * The email delivery method to use. `COGNITO_DEFAULT` for the default email functionality built into Cognito or `DEVELOPER` to use your Amazon SES configuration.
     */
   var emailSendingAccount: js.UndefOr[Input[String]] = js.native
   /**
-    * Sender’s email address or sender’s name with their email address (e.g. "john@smith.com" or "John Smith <john@smith.com>")
+    * Sender’s email address or sender’s display name with their email address (e.g. `john@example.com`, `John Smith <john@example.com>` or `\"John Smith Ph.D.\" <john@example.com>`). Escaped double quotes are required around display names that contain certain characters as specified in [RFC 5322](https://tools.ietf.org/html/rfc5322).
     */
   var fromEmailAddress: js.UndefOr[Input[String]] = js.native
   /**
@@ -20,25 +20,45 @@ trait UserPoolEmailConfiguration extends js.Object {
     */
   var replyToEmailAddress: js.UndefOr[Input[String]] = js.native
   /**
-    * The ARN of the email source.
+    * The ARN of the SES verified email identity to to use. Required if `emailSendingAccount` is set to `DEVELOPER`.
     */
   var sourceArn: js.UndefOr[Input[String]] = js.native
 }
 
 object UserPoolEmailConfiguration {
   @scala.inline
-  def apply(
-    emailSendingAccount: Input[String] = null,
-    fromEmailAddress: Input[String] = null,
-    replyToEmailAddress: Input[String] = null,
-    sourceArn: Input[String] = null
-  ): UserPoolEmailConfiguration = {
+  def apply(): UserPoolEmailConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (emailSendingAccount != null) __obj.updateDynamic("emailSendingAccount")(emailSendingAccount.asInstanceOf[js.Any])
-    if (fromEmailAddress != null) __obj.updateDynamic("fromEmailAddress")(fromEmailAddress.asInstanceOf[js.Any])
-    if (replyToEmailAddress != null) __obj.updateDynamic("replyToEmailAddress")(replyToEmailAddress.asInstanceOf[js.Any])
-    if (sourceArn != null) __obj.updateDynamic("sourceArn")(sourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolEmailConfiguration]
   }
+  @scala.inline
+  implicit class UserPoolEmailConfigurationOps[Self <: UserPoolEmailConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailSendingAccount(value: Input[String]): Self = this.set("emailSendingAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSendingAccount: Self = this.set("emailSendingAccount", js.undefined)
+    @scala.inline
+    def setFromEmailAddress(value: Input[String]): Self = this.set("fromEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromEmailAddress: Self = this.set("fromEmailAddress", js.undefined)
+    @scala.inline
+    def setReplyToEmailAddress(value: Input[String]): Self = this.set("replyToEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyToEmailAddress: Self = this.set("replyToEmailAddress", js.undefined)
+    @scala.inline
+    def setSourceArn(value: Input[String]): Self = this.set("sourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArn: Self = this.set("sourceArn", js.undefined)
+  }
+  
 }
 

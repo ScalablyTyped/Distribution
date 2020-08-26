@@ -19,6 +19,7 @@ object box3Mod extends js.Object {
   @js.native
   class Box3 () extends js.Object {
     def this(min: Vector3) = this()
+    def this(min: js.UndefOr[scala.Nothing], max: Vector3) = this()
     def this(min: Vector3, max: Vector3) = this()
     val isBox3: `true` = js.native
     var max: Vector3 = js.native
@@ -40,7 +41,7 @@ object box3Mod extends js.Object {
     def expandByVector(vector: Vector3): this.type = js.native
     def getBoundingSphere(target: Sphere): Sphere = js.native
     def getCenter(target: Vector3): Vector3 = js.native
-    def getParameter(point: Vector3): Vector3 = js.native
+    def getParameter(point: Vector3, target: Vector3): Vector3 = js.native
     def getSize(target: Vector3): Vector3 = js.native
     def intersect(box: Box3): this.type = js.native
     def intersectsBox(box: Box3): Boolean = js.native

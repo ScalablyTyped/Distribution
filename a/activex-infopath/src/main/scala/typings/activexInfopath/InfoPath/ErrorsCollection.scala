@@ -20,7 +20,38 @@ trait ErrorsCollection extends js.Object {
     varNode: js.Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
+    lErrorCode: js.UndefOr[scala.Nothing],
+    bstrType: String
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
+    lErrorCode: Double
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
+    lErrorCode: Double,
+    bstrType: String
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String
+  ): Error = js.native
+  def Add(
+    varNode: js.Any,
+    bstrConditionName: String,
+    bstrShortErrorMessage: String,
+    bstrDetailedErrorMessage: String,
+    lErrorCode: js.UndefOr[scala.Nothing],
+    bstrType: String
   ): Error = js.native
   def Add(
     varNode: js.Any,

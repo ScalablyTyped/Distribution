@@ -34,18 +34,42 @@ trait BudgetNotification extends js.Object {
 
 object BudgetNotification {
   @scala.inline
-  def apply(
-    comparisonOperator: String,
-    notificationType: String,
-    threshold: Double,
-    thresholdType: String,
-    subscriberEmailAddresses: js.Array[String] = null,
-    subscriberSnsTopicArns: js.Array[String] = null
-  ): BudgetNotification = {
+  def apply(comparisonOperator: String, notificationType: String, threshold: Double, thresholdType: String): BudgetNotification = {
     val __obj = js.Dynamic.literal(comparisonOperator = comparisonOperator.asInstanceOf[js.Any], notificationType = notificationType.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], thresholdType = thresholdType.asInstanceOf[js.Any])
-    if (subscriberEmailAddresses != null) __obj.updateDynamic("subscriberEmailAddresses")(subscriberEmailAddresses.asInstanceOf[js.Any])
-    if (subscriberSnsTopicArns != null) __obj.updateDynamic("subscriberSnsTopicArns")(subscriberSnsTopicArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[BudgetNotification]
   }
+  @scala.inline
+  implicit class BudgetNotificationOps[Self <: BudgetNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: String): Self = this.set("comparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotificationType(value: String): Self = this.set("notificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThresholdType(value: String): Self = this.set("thresholdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubscriberEmailAddressesVarargs(value: String*): Self = this.set("subscriberEmailAddresses", js.Array(value :_*))
+    @scala.inline
+    def setSubscriberEmailAddresses(value: js.Array[String]): Self = this.set("subscriberEmailAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriberEmailAddresses: Self = this.set("subscriberEmailAddresses", js.undefined)
+    @scala.inline
+    def setSubscriberSnsTopicArnsVarargs(value: String*): Self = this.set("subscriberSnsTopicArns", js.Array(value :_*))
+    @scala.inline
+    def setSubscriberSnsTopicArns(value: js.Array[String]): Self = this.set("subscriberSnsTopicArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriberSnsTopicArns: Self = this.set("subscriberSnsTopicArns", js.undefined)
+  }
+  
 }
 

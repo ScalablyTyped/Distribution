@@ -16,6 +16,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.min
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
+import typings.arcgisJsApi.arcgisJsApiStrings.thumb
 import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
@@ -42,6 +43,13 @@ trait Slider extends Widget_ {
     * @default true
     */
   var draggableSegmentsEnabled: Boolean = js.native
+  /**
+    * A function that provides the developer with access to the input elements when [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) and/or [labelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled) are set to `true`. This allows the developer to customize the input elements corresponding to slider min/max and thumb values to validate user input. For example, you can access input elements and customize them with `type` and `pattern` attributes.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputCreatedFunction)
+    */
+  @JSName("inputCreatedFunction")
+  var inputCreatedFunction_Original: InputCreatedFunction = js.native
   /**
     * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
     *
@@ -221,11 +229,29 @@ trait Slider extends Widget_ {
     */
   var visibleElements: SliderVisibleElements = js.native
   /**
+    * A function that provides the developer with access to the input elements when [rangeLabelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#rangeLabelInputsEnabled) and/or [labelInputsEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelInputsEnabled) are set to `true`. This allows the developer to customize the input elements corresponding to slider min/max and thumb values to validate user input. For example, you can access input elements and customize them with `type` and `pattern` attributes.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputCreatedFunction)
+    */
+  @JSName("inputCreatedFunction")
+  def inputCreatedFunction_max(inputElement: js.Any, `type`: max): Unit = js.native
+  @JSName("inputCreatedFunction")
+  def inputCreatedFunction_max(inputElement: js.Any, `type`: max, thumbIndex: Double): Unit = js.native
+  @JSName("inputCreatedFunction")
+  def inputCreatedFunction_min(inputElement: js.Any, `type`: min): Unit = js.native
+  @JSName("inputCreatedFunction")
+  def inputCreatedFunction_min(inputElement: js.Any, `type`: min, thumbIndex: Double): Unit = js.native
+  @JSName("inputCreatedFunction")
+  def inputCreatedFunction_thumb(inputElement: js.Any, `type`: thumb): Unit = js.native
+  @JSName("inputCreatedFunction")
+  def inputCreatedFunction_thumb(inputElement: js.Any, `type`: thumb, thumbIndex: Double): Unit = js.native
+  /**
     * A function used to format user inputs. As opposed to [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which formats thumb labels, the `inputFormatFunction` formats thumb values in the input element when the user begins to edit them.  The image below demonstrates how slider input values resemble corresponding slider values by default and won't match the formatting set in `labelFormatFunction`.  ![Slider without input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-no-input-formatter.png%20%22Slider%20without%20input%20formatter%22)  If you want to format slider input values so they match thumb labels, you can pass the same function set in `labelFormatFunction` to `inputFormatFunction` for consistent formatting.  ![Slider with input formatter](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/sliders/slider-input-formatter.png%20%22Slider%20with%20input%20formatter%22)  However, if an `inputFormatFunction` is specified, you must also write a corresponding [inputParseFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction) to parse user inputs to understandable slider values. In most cases, if you specify an `inputFormatFunction`, you should set the [labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction) to the same value for consistency between labels and inputs.  This property overrides the default input formatter, which formats by calling `toString()` on the input value.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("inputFormatFunction")
   def inputFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("inputFormatFunction")
@@ -252,6 +278,7 @@ trait Slider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
+  def inputParseFunction(value: String, `type`: js.UndefOr[scala.Nothing], index: Double): Double = js.native
   @JSName("inputParseFunction")
   def inputParseFunction_average(value: String, `type`: average): Double = js.native
   @JSName("inputParseFunction")
@@ -283,6 +310,7 @@ trait Slider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("labelFormatFunction")
   def labelFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("labelFormatFunction")

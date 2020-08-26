@@ -11,7 +11,7 @@ Flash message middleware for Connect.
 | Keywords           | connect, express, flash, messages |
 | # releases         | 1 |
 | # dependents       | 424 |
-| # downloads        | 5670383 |
+| # downloads        | 5728341 |
 | # stars            | 93 |
 
 ## Links

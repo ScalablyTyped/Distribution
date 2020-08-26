@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MultipleTextItem () extends MultipleTextItemModel {
   def this(name: js.Any) = this()
+  def this(name: js.UndefOr[scala.Nothing], title: String) = this()
   def this(name: js.Any, title: String) = this()
 }
 

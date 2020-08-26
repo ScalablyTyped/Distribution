@@ -18,10 +18,28 @@ trait UpdateCodeRepositoryInput extends js.Object {
 
 object UpdateCodeRepositoryInput {
   @scala.inline
-  def apply(CodeRepositoryName: EntityName, GitConfig: GitConfigForUpdate = null): UpdateCodeRepositoryInput = {
+  def apply(CodeRepositoryName: EntityName): UpdateCodeRepositoryInput = {
     val __obj = js.Dynamic.literal(CodeRepositoryName = CodeRepositoryName.asInstanceOf[js.Any])
-    if (GitConfig != null) __obj.updateDynamic("GitConfig")(GitConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCodeRepositoryInput]
   }
+  @scala.inline
+  implicit class UpdateCodeRepositoryInputOps[Self <: UpdateCodeRepositoryInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeRepositoryName(value: EntityName): Self = this.set("CodeRepositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGitConfig(value: GitConfigForUpdate): Self = this.set("GitConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitConfig: Self = this.set("GitConfig", js.undefined)
+  }
+  
 }
 

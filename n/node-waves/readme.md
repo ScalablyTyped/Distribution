@@ -12,7 +12,7 @@ Click effect insipired by Google Material Design
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 27 |
-| # downloads        | 252523 |
+| # downloads        | 256058 |
 | # stars            | 2 |
 
 ## Links

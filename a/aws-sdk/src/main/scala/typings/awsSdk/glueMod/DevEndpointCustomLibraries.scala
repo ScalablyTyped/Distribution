@@ -18,11 +18,30 @@ trait DevEndpointCustomLibraries extends js.Object {
 
 object DevEndpointCustomLibraries {
   @scala.inline
-  def apply(ExtraJarsS3Path: GenericString = null, ExtraPythonLibsS3Path: GenericString = null): DevEndpointCustomLibraries = {
+  def apply(): DevEndpointCustomLibraries = {
     val __obj = js.Dynamic.literal()
-    if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path.asInstanceOf[js.Any])
-    if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevEndpointCustomLibraries]
   }
+  @scala.inline
+  implicit class DevEndpointCustomLibrariesOps[Self <: DevEndpointCustomLibraries] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtraJarsS3Path(value: GenericString): Self = this.set("ExtraJarsS3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraJarsS3Path: Self = this.set("ExtraJarsS3Path", js.undefined)
+    @scala.inline
+    def setExtraPythonLibsS3Path(value: GenericString): Self = this.set("ExtraPythonLibsS3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraPythonLibsS3Path: Self = this.set("ExtraPythonLibsS3Path", js.undefined)
+  }
+  
 }
 

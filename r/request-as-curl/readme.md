@@ -12,7 +12,7 @@ Serializes http.ClientRequest as curl(1) command string
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 179271 |
+| # downloads        | 203485 |
 | # stars            | 1 |
 
 ## Links

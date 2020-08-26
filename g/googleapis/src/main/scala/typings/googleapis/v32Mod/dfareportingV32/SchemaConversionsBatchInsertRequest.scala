@@ -28,16 +28,36 @@ trait SchemaConversionsBatchInsertRequest extends js.Object {
 
 object SchemaConversionsBatchInsertRequest {
   @scala.inline
-  def apply(
-    conversions: js.Array[SchemaConversion] = null,
-    encryptionInfo: SchemaEncryptionInfo = null,
-    kind: String = null
-  ): SchemaConversionsBatchInsertRequest = {
+  def apply(): SchemaConversionsBatchInsertRequest = {
     val __obj = js.Dynamic.literal()
-    if (conversions != null) __obj.updateDynamic("conversions")(conversions.asInstanceOf[js.Any])
-    if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConversionsBatchInsertRequest]
   }
+  @scala.inline
+  implicit class SchemaConversionsBatchInsertRequestOps[Self <: SchemaConversionsBatchInsertRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConversionsVarargs(value: SchemaConversion*): Self = this.set("conversions", js.Array(value :_*))
+    @scala.inline
+    def setConversions(value: js.Array[SchemaConversion]): Self = this.set("conversions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversions: Self = this.set("conversions", js.undefined)
+    @scala.inline
+    def setEncryptionInfo(value: SchemaEncryptionInfo): Self = this.set("encryptionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionInfo: Self = this.set("encryptionInfo", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShapeDataSourceSettings
   extends /**
   * Option for JSONPDataSourceSettings
@@ -13,71 +14,99 @@ trait ShapeDataSourceSettings
   /**
     * Callback function to call when data binding is complete.
     */
-  var callback: js.UndefOr[js.Function] = js.undefined
+  var callback: js.UndefOr[js.Function] = js.native
   /**
     * Object on which to invoke the callback function.
     */
-  var callee: js.UndefOr[js.Any] = js.undefined
+  var callee: js.UndefOr[js.Any] = js.native
   /**
     * The Uri of the .dbf portion of the Shapefile.
     */
-  var databaseSource: js.UndefOr[String] = js.undefined
+  var databaseSource: js.UndefOr[String] = js.native
   /**
     * The unique identifier.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Callback function to call when the import process has been completed
     * paramType="object" the ShapeDataSource instance
     */
-  var importCompleted: js.UndefOr[js.Function] = js.undefined
+  var importCompleted: js.UndefOr[js.Function] = js.native
   /**
     * The Uri of the .shp portion of the Shapefile.
     */
-  var shapefileSource: js.UndefOr[String] = js.undefined
+  var shapefileSource: js.UndefOr[String] = js.native
   /**
     * Callback function to call to allow the bounds of the shape data source to be transformed.
     * paramType="object" the bounds of the shape datasource to be transformed in place. The object will look like { top: value, left: value, width: value, height: value }
     */
-  var transformBounds: js.UndefOr[js.Function] = js.undefined
+  var transformBounds: js.UndefOr[js.Function] = js.native
   /**
     * Callback function to call to allow points in the shape records to be transformed.
     * paramType="object" the point to be transformed in place. The object will look like { x: value, y: value2 }
     */
-  var transformPoint: js.UndefOr[js.Function] = js.undefined
+  var transformPoint: js.UndefOr[js.Function] = js.native
   /**
     * Callback function to call to allow shape records to be transformed.
     * paramType="object" the shape record to be transformed.
     */
-  var transformRecord: js.UndefOr[js.Function] = js.undefined
+  var transformRecord: js.UndefOr[js.Function] = js.native
 }
 
 object ShapeDataSourceSettings {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    callback: js.Function = null,
-    callee: js.Any = null,
-    databaseSource: String = null,
-    id: String = null,
-    importCompleted: js.Function = null,
-    shapefileSource: String = null,
-    transformBounds: js.Function = null,
-    transformPoint: js.Function = null,
-    transformRecord: js.Function = null
-  ): ShapeDataSourceSettings = {
+  def apply(): ShapeDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (callee != null) __obj.updateDynamic("callee")(callee.asInstanceOf[js.Any])
-    if (databaseSource != null) __obj.updateDynamic("databaseSource")(databaseSource.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (importCompleted != null) __obj.updateDynamic("importCompleted")(importCompleted.asInstanceOf[js.Any])
-    if (shapefileSource != null) __obj.updateDynamic("shapefileSource")(shapefileSource.asInstanceOf[js.Any])
-    if (transformBounds != null) __obj.updateDynamic("transformBounds")(transformBounds.asInstanceOf[js.Any])
-    if (transformPoint != null) __obj.updateDynamic("transformPoint")(transformPoint.asInstanceOf[js.Any])
-    if (transformRecord != null) __obj.updateDynamic("transformRecord")(transformRecord.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeDataSourceSettings]
   }
+  @scala.inline
+  implicit class ShapeDataSourceSettingsOps[Self <: ShapeDataSourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallback(value: js.Function): Self = this.set("callback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setCallee(value: js.Any): Self = this.set("callee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallee: Self = this.set("callee", js.undefined)
+    @scala.inline
+    def setDatabaseSource(value: String): Self = this.set("databaseSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseSource: Self = this.set("databaseSource", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImportCompleted(value: js.Function): Self = this.set("importCompleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportCompleted: Self = this.set("importCompleted", js.undefined)
+    @scala.inline
+    def setShapefileSource(value: String): Self = this.set("shapefileSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapefileSource: Self = this.set("shapefileSource", js.undefined)
+    @scala.inline
+    def setTransformBounds(value: js.Function): Self = this.set("transformBounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformBounds: Self = this.set("transformBounds", js.undefined)
+    @scala.inline
+    def setTransformPoint(value: js.Function): Self = this.set("transformPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformPoint: Self = this.set("transformPoint", js.undefined)
+    @scala.inline
+    def setTransformRecord(value: js.Function): Self = this.set("transformRecord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformRecord: Self = this.set("transformRecord", js.undefined)
+  }
+  
 }
 

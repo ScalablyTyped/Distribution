@@ -12,7 +12,7 @@ A flux implementation
 | Keywords           | alt, es6, flow, flux, react, unidirectional |
 | # releases         | 0 |
 | # dependents       | 47 |
-| # downloads        | 478532 |
+| # downloads        | 483223 |
 | # stars            | 9 |
 
 ## Links

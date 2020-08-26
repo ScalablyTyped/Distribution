@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModifyOptions extends js.Object {
-  var each: js.UndefOr[Boolean] = js.undefined
-  var once: js.UndefOr[Boolean] = js.undefined
-  var ref: js.UndefOr[Boolean] = js.undefined
-  var schema: js.UndefOr[Boolean] = js.undefined
+  var each: js.UndefOr[Boolean] = js.native
+  var once: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[Boolean] = js.native
+  var schema: js.UndefOr[Boolean] = js.native
 }
 
 object ModifyOptions {
   @scala.inline
-  def apply(
-    each: js.UndefOr[Boolean] = js.undefined,
-    once: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Boolean] = js.undefined,
-    schema: js.UndefOr[Boolean] = js.undefined
-  ): ModifyOptions = {
+  def apply(): ModifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptions]
   }
+  @scala.inline
+  implicit class ModifyOptionsOps[Self <: ModifyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEach(value: Boolean): Self = this.set("each", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEach: Self = this.set("each", js.undefined)
+    @scala.inline
+    def setOnce(value: Boolean): Self = this.set("once", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnce: Self = this.set("once", js.undefined)
+    @scala.inline
+    def setRef(value: Boolean): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setSchema(value: Boolean): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+  }
+  
 }
 

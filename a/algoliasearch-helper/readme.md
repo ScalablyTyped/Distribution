@@ -1,7 +1,7 @@
 
 # Scala.js typings for algoliasearch-helper
 
-Typings are for version 2.26
+Typings are for version 3.2.2
 
 ## Library description:
 Helper for implementing advanced search features with algolia
@@ -10,9 +10,9 @@ Helper for implementing advanced search features with algolia
 | ------------------ | :-------------: |
 | Full name          | algoliasearch-helper |
 | Keywords           | - |
-| # releases         | 17 |
+| # releases         | 16 |
 | # dependents       | 16 |
-| # downloads        | 4579015 |
+| # downloads        | 4737107 |
 | # stars            | 4 |
 
 ## Links
@@ -24,7 +24,7 @@ Helper for implementing advanced search features with algolia
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

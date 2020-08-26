@@ -17,10 +17,28 @@ trait SchemaIosDeviceList extends js.Object {
 
 object SchemaIosDeviceList {
   @scala.inline
-  def apply(iosDevices: js.Array[SchemaIosDevice] = null): SchemaIosDeviceList = {
+  def apply(): SchemaIosDeviceList = {
     val __obj = js.Dynamic.literal()
-    if (iosDevices != null) __obj.updateDynamic("iosDevices")(iosDevices.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIosDeviceList]
   }
+  @scala.inline
+  implicit class SchemaIosDeviceListOps[Self <: SchemaIosDeviceList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIosDevicesVarargs(value: SchemaIosDevice*): Self = this.set("iosDevices", js.Array(value :_*))
+    @scala.inline
+    def setIosDevices(value: js.Array[SchemaIosDevice]): Self = this.set("iosDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosDevices: Self = this.set("iosDevices", js.undefined)
+  }
+  
 }
 

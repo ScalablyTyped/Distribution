@@ -4,14 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TickerEvent extends js.Object {
-  var delta: Double
-  var paused: Boolean
-  var runTime: Double
+  var delta: Double = js.native
+  var paused: Boolean = js.native
+  var runTime: Double = js.native
   // properties
-  var target: js.Object
-  var time: Double
-  var `type`: String
+  var target: js.Object = js.native
+  var time: Double = js.native
+  var `type`: String = js.native
 }
 
 object TickerEvent {
@@ -21,5 +22,30 @@ object TickerEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TickerEvent]
   }
+  @scala.inline
+  implicit class TickerEventOps[Self <: TickerEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelta(value: Double): Self = this.set("delta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaused(value: Boolean): Self = this.set("paused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRunTime(value: Double): Self = this.set("runTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTarget(value: js.Object): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: Double): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

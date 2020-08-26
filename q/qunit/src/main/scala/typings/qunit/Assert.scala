@@ -200,6 +200,7 @@ trait Assert extends js.Object {
     */
   def pushResult(assertResult: Actual): Unit = js.native
   def raises(block: js.Function0[Unit]): Unit = js.native
+  def raises(block: js.Function0[Unit], expected: js.UndefOr[scala.Nothing], message: js.Any): Unit = js.native
   def raises(block: js.Function0[Unit], expected: js.Any): Unit = js.native
   def raises(block: js.Function0[Unit], expected: js.Any, message: js.Any): Unit = js.native
   /**
@@ -224,6 +225,7 @@ trait Assert extends js.Object {
     * @param message A short description of the assertion
     */
   def rejects(promise: js.Promise[_]): js.Promise[Unit] = js.native
+  def rejects(promise: js.Promise[_], expectedMatcher: js.UndefOr[scala.Nothing], message: String): js.Promise[Unit] = js.native
   def rejects(promise: js.Promise[_], expectedMatcher: js.Any): js.Promise[Unit] = js.native
   def rejects(promise: js.Promise[_], expectedMatcher: js.Any, message: String): js.Promise[Unit] = js.native
   def rejects(promise: js.Promise[_], message: String): js.Promise[Unit] = js.native
@@ -270,6 +272,7 @@ trait Assert extends js.Object {
     * different name.
     */
   def throws(block: js.Function0[Unit]): Unit = js.native
+  def throws(block: js.Function0[Unit], expected: js.UndefOr[scala.Nothing], message: js.Any): Unit = js.native
   def throws(block: js.Function0[Unit], expected: js.Any): Unit = js.native
   def throws(block: js.Function0[Unit], expected: js.Any, message: js.Any): Unit = js.native
   /**

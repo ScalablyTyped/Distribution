@@ -15,14 +15,10 @@ object simulatedClockMod extends js.Object {
     var flushTimeouts: js.Any = js.native
     var getId: js.Any = js.native
     var timeouts: js.Any = js.native
-    /* CompleteClass */
-    override def clearTimeout(id: js.Any): Unit = js.native
     def clearTimeout(id: Double): Unit = js.native
     def increment(ms: Double): Unit = js.native
     def now(): Double = js.native
     def set(ms: Double): Unit = js.native
-    /* CompleteClass */
-    override def setTimeout(fn: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): js.Any = js.native
     def start(speed: Double): Unit = js.native
   }
   

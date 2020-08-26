@@ -30,184 +30,324 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Manifest
   extends /* key */ StringDictionary[js.Any] {
   // Optional
-  var author: js.UndefOr[js.Any] = js.undefined
-  var automation: js.UndefOr[js.Any] = js.undefined
-  var background: js.UndefOr[Page] = js.undefined
-  var background_page: js.UndefOr[String] = js.undefined
+  var author: js.UndefOr[js.Any] = js.native
+  var automation: js.UndefOr[js.Any] = js.native
+  var background: js.UndefOr[Page] = js.native
+  var background_page: js.UndefOr[String] = js.native
   // Pick one (or none)
-  var browser_action: js.UndefOr[ManifestAction] = js.undefined
-  var chrome_settings_overrides: js.UndefOr[Homepage] = js.undefined
-  var chrome_ui_overrides: js.UndefOr[Bookmarksui] = js.undefined
-  var chrome_url_overrides: js.UndefOr[Bookmarks] = js.undefined
-  var commands: js.UndefOr[StringDictionary[Description]] = js.undefined
-  var content_capabilities: js.UndefOr[Matches] = js.undefined
-  var content_scripts: js.UndefOr[js.Array[Allframes]] = js.undefined
-  var content_security_policy: js.UndefOr[String] = js.undefined
-  var converted_from_user_script: js.UndefOr[Boolean] = js.undefined
-  var copresence: js.UndefOr[js.Any] = js.undefined
-  var current_locale: js.UndefOr[String] = js.undefined
+  var browser_action: js.UndefOr[ManifestAction] = js.native
+  var chrome_settings_overrides: js.UndefOr[Homepage] = js.native
+  var chrome_ui_overrides: js.UndefOr[Bookmarksui] = js.native
+  var chrome_url_overrides: js.UndefOr[Bookmarks] = js.native
+  var commands: js.UndefOr[StringDictionary[Description]] = js.native
+  var content_capabilities: js.UndefOr[Matches] = js.native
+  var content_scripts: js.UndefOr[js.Array[Allframes]] = js.native
+  var content_security_policy: js.UndefOr[String] = js.native
+  var converted_from_user_script: js.UndefOr[Boolean] = js.native
+  var copresence: js.UndefOr[js.Any] = js.native
+  var current_locale: js.UndefOr[String] = js.native
   // Recommended
-  var default_locale: js.UndefOr[String] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var devtools_page: js.UndefOr[String] = js.undefined
-  var event_rules: js.UndefOr[js.Array[Actions]] = js.undefined
-  var export: js.UndefOr[Whitelist] = js.undefined
-  var externally_connectable: js.UndefOr[Acceptstlschannelid] = js.undefined
-  var file_browser_handlers: js.UndefOr[js.Array[Defaulttitle]] = js.undefined
-  var file_system_provider_capabilities: js.UndefOr[Configurable] = js.undefined
-  var homepage_url: js.UndefOr[String] = js.undefined
-  var icons: js.UndefOr[ManifestIcons] = js.undefined
-  var `import`: js.UndefOr[js.Array[Id]] = js.undefined
-  var incognito: js.UndefOr[String] = js.undefined
-  var input_components: js.UndefOr[js.Array[Language]] = js.undefined
-  var key: js.UndefOr[String] = js.undefined
+  var default_locale: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.native
+  var devtools_page: js.UndefOr[String] = js.native
+  var event_rules: js.UndefOr[js.Array[Actions]] = js.native
+  var export: js.UndefOr[Whitelist] = js.native
+  var externally_connectable: js.UndefOr[Acceptstlschannelid] = js.native
+  var file_browser_handlers: js.UndefOr[js.Array[Defaulttitle]] = js.native
+  var file_system_provider_capabilities: js.UndefOr[Configurable] = js.native
+  var homepage_url: js.UndefOr[String] = js.native
+  var icons: js.UndefOr[ManifestIcons] = js.native
+  var `import`: js.UndefOr[js.Array[Id]] = js.native
+  var incognito: js.UndefOr[String] = js.native
+  var input_components: js.UndefOr[js.Array[Language]] = js.native
+  var key: js.UndefOr[String] = js.native
   // Required
-  var manifest_version: Double
-  var minimum_chrome_version: js.UndefOr[String] = js.undefined
-  var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.undefined
-  var name: String
-  var oauth2: js.UndefOr[Clientid] = js.undefined
-  var offline_enabled: js.UndefOr[Boolean] = js.undefined
-  var omnibox: js.UndefOr[Keyword] = js.undefined
-  var optional_permissions: js.UndefOr[js.Array[String]] = js.undefined
-  var options_page: js.UndefOr[String] = js.undefined
-  var options_ui: js.UndefOr[Chromestyle] = js.undefined
-  var page_action: js.UndefOr[ManifestAction] = js.undefined
-  var permissions: js.UndefOr[js.Array[String]] = js.undefined
-  var platforms: js.UndefOr[js.Array[Naclarch]] = js.undefined
-  var plugins: js.UndefOr[js.Array[Path]] = js.undefined
-  var requirements: js.UndefOr[`3D`] = js.undefined
-  var sandbox: js.UndefOr[Contentsecuritypolicy] = js.undefined
-  var short_name: js.UndefOr[String] = js.undefined
-  var signature: js.UndefOr[js.Any] = js.undefined
-  var spellcheck: js.UndefOr[Dictionaryformat] = js.undefined
-  var storage: js.UndefOr[Managedschema] = js.undefined
-  var system_indicator: js.UndefOr[js.Any] = js.undefined
-  var tts_engine: js.UndefOr[Voices] = js.undefined
-  var update_url: js.UndefOr[String] = js.undefined
-  var version: String
-  var version_name: js.UndefOr[String] = js.undefined
-  var web_accessible_resources: js.UndefOr[js.Array[String]] = js.undefined
+  var manifest_version: Double = js.native
+  var minimum_chrome_version: js.UndefOr[String] = js.native
+  var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.native
+  var name: String = js.native
+  var oauth2: js.UndefOr[Clientid] = js.native
+  var offline_enabled: js.UndefOr[Boolean] = js.native
+  var omnibox: js.UndefOr[Keyword] = js.native
+  var optional_permissions: js.UndefOr[js.Array[String]] = js.native
+  var options_page: js.UndefOr[String] = js.native
+  var options_ui: js.UndefOr[Chromestyle] = js.native
+  var page_action: js.UndefOr[ManifestAction] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var platforms: js.UndefOr[js.Array[Naclarch]] = js.native
+  var plugins: js.UndefOr[js.Array[Path]] = js.native
+  var requirements: js.UndefOr[`3D`] = js.native
+  var sandbox: js.UndefOr[Contentsecuritypolicy] = js.native
+  var short_name: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[js.Any] = js.native
+  var spellcheck: js.UndefOr[Dictionaryformat] = js.native
+  var storage: js.UndefOr[Managedschema] = js.native
+  var system_indicator: js.UndefOr[js.Any] = js.native
+  var tts_engine: js.UndefOr[Voices] = js.native
+  var update_url: js.UndefOr[String] = js.native
+  var version: String = js.native
+  var version_name: js.UndefOr[String] = js.native
+  var web_accessible_resources: js.UndefOr[js.Array[String]] = js.native
 }
 
 object Manifest {
   @scala.inline
-  def apply(
-    manifest_version: Double,
-    name: String,
-    version: String,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    author: js.Any = null,
-    automation: js.Any = null,
-    background: Page = null,
-    background_page: String = null,
-    browser_action: ManifestAction = null,
-    chrome_settings_overrides: Homepage = null,
-    chrome_ui_overrides: Bookmarksui = null,
-    chrome_url_overrides: Bookmarks = null,
-    commands: StringDictionary[Description] = null,
-    content_capabilities: Matches = null,
-    content_scripts: js.Array[Allframes] = null,
-    content_security_policy: String = null,
-    converted_from_user_script: js.UndefOr[Boolean] = js.undefined,
-    copresence: js.Any = null,
-    current_locale: String = null,
-    default_locale: String = null,
-    description: String = null,
-    devtools_page: String = null,
-    event_rules: js.Array[Actions] = null,
-    export: Whitelist = null,
-    externally_connectable: Acceptstlschannelid = null,
-    file_browser_handlers: js.Array[Defaulttitle] = null,
-    file_system_provider_capabilities: Configurable = null,
-    homepage_url: String = null,
-    icons: ManifestIcons = null,
-    `import`: js.Array[Id] = null,
-    incognito: String = null,
-    input_components: js.Array[Language] = null,
-    key: String = null,
-    minimum_chrome_version: String = null,
-    nacl_modules: js.Array[Mimetype] = null,
-    oauth2: Clientid = null,
-    offline_enabled: js.UndefOr[Boolean] = js.undefined,
-    omnibox: Keyword = null,
-    optional_permissions: js.Array[String] = null,
-    options_page: String = null,
-    options_ui: Chromestyle = null,
-    page_action: ManifestAction = null,
-    permissions: js.Array[String] = null,
-    platforms: js.Array[Naclarch] = null,
-    plugins: js.Array[Path] = null,
-    requirements: `3D` = null,
-    sandbox: Contentsecuritypolicy = null,
-    short_name: String = null,
-    signature: js.Any = null,
-    spellcheck: Dictionaryformat = null,
-    storage: Managedschema = null,
-    system_indicator: js.Any = null,
-    tts_engine: Voices = null,
-    update_url: String = null,
-    version_name: String = null,
-    web_accessible_resources: js.Array[String] = null
-  ): Manifest = {
+  def apply(manifest_version: Double, name: String, version: String): Manifest = {
     val __obj = js.Dynamic.literal(manifest_version = manifest_version.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (automation != null) __obj.updateDynamic("automation")(automation.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (background_page != null) __obj.updateDynamic("background_page")(background_page.asInstanceOf[js.Any])
-    if (browser_action != null) __obj.updateDynamic("browser_action")(browser_action.asInstanceOf[js.Any])
-    if (chrome_settings_overrides != null) __obj.updateDynamic("chrome_settings_overrides")(chrome_settings_overrides.asInstanceOf[js.Any])
-    if (chrome_ui_overrides != null) __obj.updateDynamic("chrome_ui_overrides")(chrome_ui_overrides.asInstanceOf[js.Any])
-    if (chrome_url_overrides != null) __obj.updateDynamic("chrome_url_overrides")(chrome_url_overrides.asInstanceOf[js.Any])
-    if (commands != null) __obj.updateDynamic("commands")(commands.asInstanceOf[js.Any])
-    if (content_capabilities != null) __obj.updateDynamic("content_capabilities")(content_capabilities.asInstanceOf[js.Any])
-    if (content_scripts != null) __obj.updateDynamic("content_scripts")(content_scripts.asInstanceOf[js.Any])
-    if (content_security_policy != null) __obj.updateDynamic("content_security_policy")(content_security_policy.asInstanceOf[js.Any])
-    if (!js.isUndefined(converted_from_user_script)) __obj.updateDynamic("converted_from_user_script")(converted_from_user_script.get.asInstanceOf[js.Any])
-    if (copresence != null) __obj.updateDynamic("copresence")(copresence.asInstanceOf[js.Any])
-    if (current_locale != null) __obj.updateDynamic("current_locale")(current_locale.asInstanceOf[js.Any])
-    if (default_locale != null) __obj.updateDynamic("default_locale")(default_locale.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (devtools_page != null) __obj.updateDynamic("devtools_page")(devtools_page.asInstanceOf[js.Any])
-    if (event_rules != null) __obj.updateDynamic("event_rules")(event_rules.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (externally_connectable != null) __obj.updateDynamic("externally_connectable")(externally_connectable.asInstanceOf[js.Any])
-    if (file_browser_handlers != null) __obj.updateDynamic("file_browser_handlers")(file_browser_handlers.asInstanceOf[js.Any])
-    if (file_system_provider_capabilities != null) __obj.updateDynamic("file_system_provider_capabilities")(file_system_provider_capabilities.asInstanceOf[js.Any])
-    if (homepage_url != null) __obj.updateDynamic("homepage_url")(homepage_url.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (`import` != null) __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
-    if (incognito != null) __obj.updateDynamic("incognito")(incognito.asInstanceOf[js.Any])
-    if (input_components != null) __obj.updateDynamic("input_components")(input_components.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (minimum_chrome_version != null) __obj.updateDynamic("minimum_chrome_version")(minimum_chrome_version.asInstanceOf[js.Any])
-    if (nacl_modules != null) __obj.updateDynamic("nacl_modules")(nacl_modules.asInstanceOf[js.Any])
-    if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2.asInstanceOf[js.Any])
-    if (!js.isUndefined(offline_enabled)) __obj.updateDynamic("offline_enabled")(offline_enabled.get.asInstanceOf[js.Any])
-    if (omnibox != null) __obj.updateDynamic("omnibox")(omnibox.asInstanceOf[js.Any])
-    if (optional_permissions != null) __obj.updateDynamic("optional_permissions")(optional_permissions.asInstanceOf[js.Any])
-    if (options_page != null) __obj.updateDynamic("options_page")(options_page.asInstanceOf[js.Any])
-    if (options_ui != null) __obj.updateDynamic("options_ui")(options_ui.asInstanceOf[js.Any])
-    if (page_action != null) __obj.updateDynamic("page_action")(page_action.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (platforms != null) __obj.updateDynamic("platforms")(platforms.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (requirements != null) __obj.updateDynamic("requirements")(requirements.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (short_name != null) __obj.updateDynamic("short_name")(short_name.asInstanceOf[js.Any])
-    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
-    if (spellcheck != null) __obj.updateDynamic("spellcheck")(spellcheck.asInstanceOf[js.Any])
-    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
-    if (system_indicator != null) __obj.updateDynamic("system_indicator")(system_indicator.asInstanceOf[js.Any])
-    if (tts_engine != null) __obj.updateDynamic("tts_engine")(tts_engine.asInstanceOf[js.Any])
-    if (update_url != null) __obj.updateDynamic("update_url")(update_url.asInstanceOf[js.Any])
-    if (version_name != null) __obj.updateDynamic("version_name")(version_name.asInstanceOf[js.Any])
-    if (web_accessible_resources != null) __obj.updateDynamic("web_accessible_resources")(web_accessible_resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
+  @scala.inline
+  implicit class ManifestOps[Self <: Manifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManifest_version(value: Double): Self = this.set("manifest_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthor(value: js.Any): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setAutomation(value: js.Any): Self = this.set("automation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomation: Self = this.set("automation", js.undefined)
+    @scala.inline
+    def setBackground(value: Page): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBackground_page(value: String): Self = this.set("background_page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground_page: Self = this.set("background_page", js.undefined)
+    @scala.inline
+    def setBrowser_action(value: ManifestAction): Self = this.set("browser_action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser_action: Self = this.set("browser_action", js.undefined)
+    @scala.inline
+    def setChrome_settings_overrides(value: Homepage): Self = this.set("chrome_settings_overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChrome_settings_overrides: Self = this.set("chrome_settings_overrides", js.undefined)
+    @scala.inline
+    def setChrome_ui_overrides(value: Bookmarksui): Self = this.set("chrome_ui_overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChrome_ui_overrides: Self = this.set("chrome_ui_overrides", js.undefined)
+    @scala.inline
+    def setChrome_url_overrides(value: Bookmarks): Self = this.set("chrome_url_overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChrome_url_overrides: Self = this.set("chrome_url_overrides", js.undefined)
+    @scala.inline
+    def setCommands(value: StringDictionary[Description]): Self = this.set("commands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommands: Self = this.set("commands", js.undefined)
+    @scala.inline
+    def setContent_capabilities(value: Matches): Self = this.set("content_capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_capabilities: Self = this.set("content_capabilities", js.undefined)
+    @scala.inline
+    def setContent_scriptsVarargs(value: Allframes*): Self = this.set("content_scripts", js.Array(value :_*))
+    @scala.inline
+    def setContent_scripts(value: js.Array[Allframes]): Self = this.set("content_scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_scripts: Self = this.set("content_scripts", js.undefined)
+    @scala.inline
+    def setContent_security_policy(value: String): Self = this.set("content_security_policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_security_policy: Self = this.set("content_security_policy", js.undefined)
+    @scala.inline
+    def setConverted_from_user_script(value: Boolean): Self = this.set("converted_from_user_script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConverted_from_user_script: Self = this.set("converted_from_user_script", js.undefined)
+    @scala.inline
+    def setCopresence(value: js.Any): Self = this.set("copresence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopresence: Self = this.set("copresence", js.undefined)
+    @scala.inline
+    def setCurrent_locale(value: String): Self = this.set("current_locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrent_locale: Self = this.set("current_locale", js.undefined)
+    @scala.inline
+    def setDefault_locale(value: String): Self = this.set("default_locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_locale: Self = this.set("default_locale", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDevtools_page(value: String): Self = this.set("devtools_page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevtools_page: Self = this.set("devtools_page", js.undefined)
+    @scala.inline
+    def setEvent_rulesVarargs(value: Actions*): Self = this.set("event_rules", js.Array(value :_*))
+    @scala.inline
+    def setEvent_rules(value: js.Array[Actions]): Self = this.set("event_rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent_rules: Self = this.set("event_rules", js.undefined)
+    @scala.inline
+    def setExport(value: Whitelist): Self = this.set("export", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExport: Self = this.set("export", js.undefined)
+    @scala.inline
+    def setExternally_connectable(value: Acceptstlschannelid): Self = this.set("externally_connectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternally_connectable: Self = this.set("externally_connectable", js.undefined)
+    @scala.inline
+    def setFile_browser_handlersVarargs(value: Defaulttitle*): Self = this.set("file_browser_handlers", js.Array(value :_*))
+    @scala.inline
+    def setFile_browser_handlers(value: js.Array[Defaulttitle]): Self = this.set("file_browser_handlers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile_browser_handlers: Self = this.set("file_browser_handlers", js.undefined)
+    @scala.inline
+    def setFile_system_provider_capabilities(value: Configurable): Self = this.set("file_system_provider_capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile_system_provider_capabilities: Self = this.set("file_system_provider_capabilities", js.undefined)
+    @scala.inline
+    def setHomepage_url(value: String): Self = this.set("homepage_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomepage_url: Self = this.set("homepage_url", js.undefined)
+    @scala.inline
+    def setIcons(value: ManifestIcons): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setImportVarargs(value: Id*): Self = this.set("import", js.Array(value :_*))
+    @scala.inline
+    def setImport(value: js.Array[Id]): Self = this.set("import", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImport: Self = this.set("import", js.undefined)
+    @scala.inline
+    def setIncognito(value: String): Self = this.set("incognito", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncognito: Self = this.set("incognito", js.undefined)
+    @scala.inline
+    def setInput_componentsVarargs(value: Language*): Self = this.set("input_components", js.Array(value :_*))
+    @scala.inline
+    def setInput_components(value: js.Array[Language]): Self = this.set("input_components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput_components: Self = this.set("input_components", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMinimum_chrome_version(value: String): Self = this.set("minimum_chrome_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum_chrome_version: Self = this.set("minimum_chrome_version", js.undefined)
+    @scala.inline
+    def setNacl_modulesVarargs(value: Mimetype*): Self = this.set("nacl_modules", js.Array(value :_*))
+    @scala.inline
+    def setNacl_modules(value: js.Array[Mimetype]): Self = this.set("nacl_modules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNacl_modules: Self = this.set("nacl_modules", js.undefined)
+    @scala.inline
+    def setOauth2(value: Clientid): Self = this.set("oauth2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth2: Self = this.set("oauth2", js.undefined)
+    @scala.inline
+    def setOffline_enabled(value: Boolean): Self = this.set("offline_enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffline_enabled: Self = this.set("offline_enabled", js.undefined)
+    @scala.inline
+    def setOmnibox(value: Keyword): Self = this.set("omnibox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOmnibox: Self = this.set("omnibox", js.undefined)
+    @scala.inline
+    def setOptional_permissionsVarargs(value: String*): Self = this.set("optional_permissions", js.Array(value :_*))
+    @scala.inline
+    def setOptional_permissions(value: js.Array[String]): Self = this.set("optional_permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptional_permissions: Self = this.set("optional_permissions", js.undefined)
+    @scala.inline
+    def setOptions_page(value: String): Self = this.set("options_page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions_page: Self = this.set("options_page", js.undefined)
+    @scala.inline
+    def setOptions_ui(value: Chromestyle): Self = this.set("options_ui", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions_ui: Self = this.set("options_ui", js.undefined)
+    @scala.inline
+    def setPage_action(value: ManifestAction): Self = this.set("page_action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage_action: Self = this.set("page_action", js.undefined)
+    @scala.inline
+    def setPermissionsVarargs(value: String*): Self = this.set("permissions", js.Array(value :_*))
+    @scala.inline
+    def setPermissions(value: js.Array[String]): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setPlatformsVarargs(value: Naclarch*): Self = this.set("platforms", js.Array(value :_*))
+    @scala.inline
+    def setPlatforms(value: js.Array[Naclarch]): Self = this.set("platforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatforms: Self = this.set("platforms", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: Path*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: js.Array[Path]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setRequirements(value: `3D`): Self = this.set("requirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequirements: Self = this.set("requirements", js.undefined)
+    @scala.inline
+    def setSandbox(value: Contentsecuritypolicy): Self = this.set("sandbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSandbox: Self = this.set("sandbox", js.undefined)
+    @scala.inline
+    def setShort_name(value: String): Self = this.set("short_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShort_name: Self = this.set("short_name", js.undefined)
+    @scala.inline
+    def setSignature(value: js.Any): Self = this.set("signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("signature", js.undefined)
+    @scala.inline
+    def setSpellcheck(value: Dictionaryformat): Self = this.set("spellcheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellcheck: Self = this.set("spellcheck", js.undefined)
+    @scala.inline
+    def setStorage(value: Managedschema): Self = this.set("storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("storage", js.undefined)
+    @scala.inline
+    def setSystem_indicator(value: js.Any): Self = this.set("system_indicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem_indicator: Self = this.set("system_indicator", js.undefined)
+    @scala.inline
+    def setTts_engine(value: Voices): Self = this.set("tts_engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTts_engine: Self = this.set("tts_engine", js.undefined)
+    @scala.inline
+    def setUpdate_url(value: String): Self = this.set("update_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate_url: Self = this.set("update_url", js.undefined)
+    @scala.inline
+    def setVersion_name(value: String): Self = this.set("version_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion_name: Self = this.set("version_name", js.undefined)
+    @scala.inline
+    def setWeb_accessible_resourcesVarargs(value: String*): Self = this.set("web_accessible_resources", js.Array(value :_*))
+    @scala.inline
+    def setWeb_accessible_resources(value: js.Array[String]): Self = this.set("web_accessible_resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeb_accessible_resources: Self = this.set("web_accessible_resources", js.undefined)
+  }
+  
 }
 

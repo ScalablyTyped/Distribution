@@ -50,28 +50,58 @@ trait Event extends js.Object {
 
 object Event {
   @scala.inline
-  def apply(
-    EventType: string,
-    Timestamp: string,
-    AppPackageName: string = null,
-    AppTitle: string = null,
-    AppVersionCode: string = null,
-    Attributes: MapOfString = null,
-    ClientSdkVersion: string = null,
-    Metrics: MapOfDouble = null,
-    SdkName: string = null,
-    Session: Session = null
-  ): Event = {
+  def apply(EventType: string, Timestamp: string): Event = {
     val __obj = js.Dynamic.literal(EventType = EventType.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
-    if (AppPackageName != null) __obj.updateDynamic("AppPackageName")(AppPackageName.asInstanceOf[js.Any])
-    if (AppTitle != null) __obj.updateDynamic("AppTitle")(AppTitle.asInstanceOf[js.Any])
-    if (AppVersionCode != null) __obj.updateDynamic("AppVersionCode")(AppVersionCode.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (ClientSdkVersion != null) __obj.updateDynamic("ClientSdkVersion")(ClientSdkVersion.asInstanceOf[js.Any])
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
-    if (SdkName != null) __obj.updateDynamic("SdkName")(SdkName.asInstanceOf[js.Any])
-    if (Session != null) __obj.updateDynamic("Session")(Session.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
+  @scala.inline
+  implicit class EventOps[Self <: Event] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventType(value: string): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: string): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppPackageName(value: string): Self = this.set("AppPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppPackageName: Self = this.set("AppPackageName", js.undefined)
+    @scala.inline
+    def setAppTitle(value: string): Self = this.set("AppTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppTitle: Self = this.set("AppTitle", js.undefined)
+    @scala.inline
+    def setAppVersionCode(value: string): Self = this.set("AppVersionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersionCode: Self = this.set("AppVersionCode", js.undefined)
+    @scala.inline
+    def setAttributes(value: MapOfString): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setClientSdkVersion(value: string): Self = this.set("ClientSdkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientSdkVersion: Self = this.set("ClientSdkVersion", js.undefined)
+    @scala.inline
+    def setMetrics(value: MapOfDouble): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    @scala.inline
+    def setSdkName(value: string): Self = this.set("SdkName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdkName: Self = this.set("SdkName", js.undefined)
+    @scala.inline
+    def setSession(value: Session): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("Session", js.undefined)
+  }
+  
 }
 

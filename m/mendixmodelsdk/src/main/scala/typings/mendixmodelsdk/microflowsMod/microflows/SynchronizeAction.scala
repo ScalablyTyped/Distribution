@@ -32,7 +32,7 @@ class SynchronizeAction protected () extends MicroflowAction {
     * In version 8.10.0: introduced
     */
   def `type`: SynchronizationType = js.native
-  def `type`(newValue: SynchronizationType): js.Any = js.native
+  def type_=(newValue: SynchronizationType): Unit = js.native
   /**
     * In version 8.10.0: introduced
     */

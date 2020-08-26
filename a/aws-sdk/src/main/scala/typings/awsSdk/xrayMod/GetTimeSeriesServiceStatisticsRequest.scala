@@ -38,22 +38,46 @@ trait GetTimeSeriesServiceStatisticsRequest extends js.Object {
 
 object GetTimeSeriesServiceStatisticsRequest {
   @scala.inline
-  def apply(
-    EndTime: Timestamp,
-    StartTime: Timestamp,
-    EntitySelectorExpression: EntitySelectorExpression = null,
-    GroupARN: GroupARN = null,
-    GroupName: GroupName = null,
-    NextToken: String = null,
-    Period: js.UndefOr[NullableInteger] = js.undefined
-  ): GetTimeSeriesServiceStatisticsRequest = {
+  def apply(EndTime: Timestamp, StartTime: Timestamp): GetTimeSeriesServiceStatisticsRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (EntitySelectorExpression != null) __obj.updateDynamic("EntitySelectorExpression")(EntitySelectorExpression.asInstanceOf[js.Any])
-    if (GroupARN != null) __obj.updateDynamic("GroupARN")(GroupARN.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(Period)) __obj.updateDynamic("Period")(Period.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsRequest]
   }
+  @scala.inline
+  implicit class GetTimeSeriesServiceStatisticsRequestOps[Self <: GetTimeSeriesServiceStatisticsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntitySelectorExpression(value: EntitySelectorExpression): Self = this.set("EntitySelectorExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitySelectorExpression: Self = this.set("EntitySelectorExpression", js.undefined)
+    @scala.inline
+    def setGroupARN(value: GroupARN): Self = this.set("GroupARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupARN: Self = this.set("GroupARN", js.undefined)
+    @scala.inline
+    def setGroupName(value: GroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPeriod(value: NullableInteger): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("Period", js.undefined)
+  }
+  
 }
 

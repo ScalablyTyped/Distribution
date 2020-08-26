@@ -41,6 +41,12 @@ class ^ protected () extends ManagementGroupsClient {
   def this(
     credentials: ServiceClientCredentials,
     groupId: String,
+    baseUri: js.UndefOr[scala.Nothing],
+    options: AzureServiceClientOptions
+  ) = this()
+  def this(
+    credentials: ServiceClientCredentials,
+    groupId: String,
     baseUri: String,
     options: AzureServiceClientOptions
   ) = this()

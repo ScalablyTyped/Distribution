@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * Depending on the numbering types, the parameters for bullets or bit maps may be ignored. The character style name for the numbering symbol is also
   * ignored.
   */
+@js.native
 trait ChapterNumberingRule
   extends NumberingAlignment
      with typings.activexLibreoffice.com_.sun.star.style.NumberingLevel {
@@ -26,7 +27,7 @@ trait ChapterNumberingRule
     *
     * It is necessary that each style name appears only once in the sequence of numbering rules.
     */
-  var HeadingStyleName: String
+  var HeadingStyleName: String = js.native
 }
 
 object ChapterNumberingRule {
@@ -50,5 +51,20 @@ object ChapterNumberingRule {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], BulletFontName = BulletFontName.asInstanceOf[js.Any], BulletId = BulletId.asInstanceOf[js.Any], CharStyleName = CharStyleName.asInstanceOf[js.Any], GraphicURL = GraphicURL.asInstanceOf[js.Any], HeadingStyleName = HeadingStyleName.asInstanceOf[js.Any], Insertion = Insertion.asInstanceOf[js.Any], NumberingType = NumberingType.asInstanceOf[js.Any], ParentNumbering = ParentNumbering.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any], StartWith = StartWith.asInstanceOf[js.Any], Suffix = Suffix.asInstanceOf[js.Any], TextMarginDistance = TextMarginDistance.asInstanceOf[js.Any], TextNumberingDistance = TextNumberingDistance.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChapterNumberingRule]
   }
+  @scala.inline
+  implicit class ChapterNumberingRuleOps[Self <: ChapterNumberingRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeadingStyleName(value: String): Self = this.set("HeadingStyleName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

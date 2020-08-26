@@ -82,22 +82,12 @@ class SpinButton protected ()
   var _validate: js.Any = js.native
   var _valueToValidate: js.Any = js.native
   /**
-    * Gets the value of the spin button.
-    */
-  @JSName("value")
-  val value_SpinButton: js.UndefOr[String] = js.native
-  /**
     * Invoked when a component is receiving new props. This method is not called for the initial render.
     */
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MSpinButton(newProps: ISpinButtonProps): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSpinButton(): Unit = js.native
-  /**
-    * Sets focus to the control.
-    */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

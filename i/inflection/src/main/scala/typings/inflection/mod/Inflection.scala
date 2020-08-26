@@ -17,6 +17,12 @@ trait Inflection extends js.Object {
   def humanize(str: String): String = js.native
   def humanize(str: String, low_first_letter: Boolean): String = js.native
   def indexOf[T, T2](arr: js.Array[T], item: T2): Double = js.native
+  def indexOf[T, T2](
+    arr: js.Array[T],
+    item: T2,
+    from_index: js.UndefOr[scala.Nothing],
+    compare_func: js.Function2[/* arr_item */ T, /* item */ T2, Boolean]
+  ): Double = js.native
   def indexOf[T, T2](arr: js.Array[T], item: T2, from_index: Double): Double = js.native
   def indexOf[T, T2](
     arr: js.Array[T],
@@ -25,6 +31,7 @@ trait Inflection extends js.Object {
     compare_func: js.Function2[/* arr_item */ T, /* item */ T2, Boolean]
   ): Double = js.native
   def inflect(str: String, count: Double): String = js.native
+  def inflect(str: String, count: Double, singular: js.UndefOr[scala.Nothing], plural: String): String = js.native
   def inflect(str: String, count: Double, singular: String): String = js.native
   def inflect(str: String, count: Double, singular: String, plural: String): String = js.native
   def ordinalize(str: String): String = js.native

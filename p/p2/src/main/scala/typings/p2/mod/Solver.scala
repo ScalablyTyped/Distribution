@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Solver () extends EventEmitter {
   def this(options: js.Object) = this()
+  def this(options: js.UndefOr[scala.Nothing], `type`: Double) = this()
   def this(options: js.Object, `type`: Double) = this()
   var equationSortFunction: Equation | Boolean = js.native
   var equations: js.Array[Equation] = js.native

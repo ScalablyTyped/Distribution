@@ -12,7 +12,7 @@ object twilsockupstreamerrorMod extends js.Object {
   class TwilsockUpstreamError protected () extends TwilsockError {
     def this(status: Double, description: String) = this()
     def this(status: Double, description: String, body: js.Any) = this()
-    val body: js.UndefOr[js.Any] = js.native
+    val body: js.Any = js.native
     val description: js.Any = js.native
     val status: js.Any = js.native
   }

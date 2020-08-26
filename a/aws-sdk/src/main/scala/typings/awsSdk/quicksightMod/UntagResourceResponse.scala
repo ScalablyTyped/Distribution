@@ -18,11 +18,30 @@ trait UntagResourceResponse extends js.Object {
 
 object UntagResourceResponse {
   @scala.inline
-  def apply(RequestId: String = null, Status: js.UndefOr[StatusCode] = js.undefined): UntagResourceResponse = {
+  def apply(): UntagResourceResponse = {
     val __obj = js.Dynamic.literal()
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourceResponse]
   }
+  @scala.inline
+  implicit class UntagResourceResponseOps[Self <: UntagResourceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -67,18 +67,19 @@ import scala.scalajs.js.annotation._
   * invoked. Thus, when deploying a custom interaction handler, ensure that the types you specify are general enough to cover all requests you want to
   * handle, but also specific enough to not cover requests which other handlers might be interested in.
   */
+@js.native
 trait InteractionHandler extends XInteractionHandler2 {
   /**
     * Creates an instance.
     * @param parent denotes the parent window for any GUI dialogs the interaction handler pops up; may be null.
     */
-  def createWithParent(parent: XWindow): Unit
+  def createWithParent(parent: XWindow): Unit = js.native
   /**
     * Creates an instance with an additional context.
     * @param parent denotes the parent window for any GUI dialogs the interaction handler pops up; may be null.
     * @param context is a textual description of the current context (used, e.g., as a first line of text in error boxes).
     */
-  def createWithParentAndContext(parent: XWindow, context: String): Unit
+  def createWithParentAndContext(parent: XWindow, context: String): Unit = js.native
 }
 
 object InteractionHandler {
@@ -95,5 +96,22 @@ object InteractionHandler {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createWithParent = js.Any.fromFunction1(createWithParent), createWithParentAndContext = js.Any.fromFunction2(createWithParentAndContext), handle = js.Any.fromFunction1(handle), handleInteractionRequest = js.Any.fromFunction1(handleInteractionRequest), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[InteractionHandler]
   }
+  @scala.inline
+  implicit class InteractionHandlerOps[Self <: InteractionHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateWithParent(value: XWindow => Unit): Self = this.set("createWithParent", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCreateWithParentAndContext(value: (XWindow, String) => Unit): Self = this.set("createWithParentAndContext", js.Any.fromFunction2(value))
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceAccountpermissiongroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAccountPermissionGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaAccountPermissionGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountPermissionGroup] = js.native
   def get(params: ParamsResourceAccountpermissiongroupsGet): GaxiosPromise[SchemaAccountPermissionGroup] = js.native
   def get(
     params: ParamsResourceAccountpermissiongroupsGet,
@@ -58,6 +59,7 @@ class ResourceAccountpermissiongroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAccountPermissionGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAccountPermissionGroupsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountPermissionGroupsListResponse] = js.native
   def list(params: ParamsResourceAccountpermissiongroupsList): GaxiosPromise[SchemaAccountPermissionGroupsListResponse] = js.native
   def list(
     params: ParamsResourceAccountpermissiongroupsList,

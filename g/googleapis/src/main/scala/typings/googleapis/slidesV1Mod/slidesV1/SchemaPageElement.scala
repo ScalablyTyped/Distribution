@@ -76,36 +76,74 @@ trait SchemaPageElement extends js.Object {
 
 object SchemaPageElement {
   @scala.inline
-  def apply(
-    description: String = null,
-    elementGroup: SchemaGroup = null,
-    image: SchemaImage = null,
-    line: SchemaLine = null,
-    objectId: String = null,
-    shape: SchemaShape = null,
-    sheetsChart: SchemaSheetsChart = null,
-    size: SchemaSize = null,
-    table: SchemaTable = null,
-    title: String = null,
-    transform: SchemaAffineTransform = null,
-    video: SchemaVideo = null,
-    wordArt: SchemaWordArt = null
-  ): SchemaPageElement = {
+  def apply(): SchemaPageElement = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (elementGroup != null) __obj.updateDynamic("elementGroup")(elementGroup.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (sheetsChart != null) __obj.updateDynamic("sheetsChart")(sheetsChart.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (wordArt != null) __obj.updateDynamic("wordArt")(wordArt.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPageElement]
   }
+  @scala.inline
+  implicit class SchemaPageElementOps[Self <: SchemaPageElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setElementGroup(value: SchemaGroup): Self = this.set("elementGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElementGroup: Self = this.set("elementGroup", js.undefined)
+    @scala.inline
+    def setImage(value: SchemaImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setLine(value: SchemaLine): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setShape(value: SchemaShape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSheetsChart(value: SchemaSheetsChart): Self = this.set("sheetsChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetsChart: Self = this.set("sheetsChart", js.undefined)
+    @scala.inline
+    def setSize(value: SchemaSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTable(value: SchemaTable): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransform(value: SchemaAffineTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setVideo(value: SchemaVideo): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+    @scala.inline
+    def setWordArt(value: SchemaWordArt): Self = this.set("wordArt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordArt: Self = this.set("wordArt", js.undefined)
+  }
+  
 }
 

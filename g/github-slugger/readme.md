@@ -11,8 +11,8 @@ Generate a slug just like GitHub does for markdown headings.
 | Full name          | github-slugger |
 | Keywords           | anchor, github, hash, heading, markdown, slug, slugger, url |
 | # releases         | 3 |
-| # dependents       | 144 |
-| # downloads        | 25459013 |
+| # dependents       | 160 |
+| # downloads        | 30190158 |
 | # stars            | 2 |
 
 ## Links

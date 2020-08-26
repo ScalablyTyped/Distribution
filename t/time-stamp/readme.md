@@ -11,8 +11,8 @@ Get a formatted timestamp.
 | Full name          | time-stamp |
 | Keywords           | console, date, format, formatting, log, pretty, stamp, terminal, time, time-stamp |
 | # releases         | 4 |
-| # dependents       | 123 |
-| # downloads        | 167620370 |
+| # dependents       | 130 |
+| # downloads        | 163234759 |
 | # stars            | 15 |
 
 ## Links

@@ -29,16 +29,34 @@ trait ListClustersRequest extends js.Object {
 
 object ListClustersRequest {
   @scala.inline
-  def apply(
-    ClusterNameFilter: string = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: string = null
-  ): ListClustersRequest = {
+  def apply(): ListClustersRequest = {
     val __obj = js.Dynamic.literal()
-    if (ClusterNameFilter != null) __obj.updateDynamic("ClusterNameFilter")(ClusterNameFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClustersRequest]
   }
+  @scala.inline
+  implicit class ListClustersRequestOps[Self <: ListClustersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterNameFilter(value: string): Self = this.set("ClusterNameFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterNameFilter: Self = this.set("ClusterNameFilter", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

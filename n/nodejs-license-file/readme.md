@@ -10,9 +10,9 @@ A lightweight License file generator and parser for NodeJS.
 | ------------------ | :-------------: |
 | Full name          | nodejs-license-file |
 | Keywords           | license, file, generation, parsing, validation |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 59687 |
+| # downloads        | 50680 |
 | # stars            | 1 |
 
 ## Links

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-safe-area-view" : "0.11.0"
+      "react-native-safe-area-view" : "0.14.9"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-safe-area-view" : "0.11.0"
+      "react-native-safe-area-view" : "0.14.9"
     }
   ],
   "compile-devDependencies" : [

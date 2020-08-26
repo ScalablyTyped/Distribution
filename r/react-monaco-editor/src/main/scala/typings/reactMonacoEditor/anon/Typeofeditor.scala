@@ -40,6 +40,7 @@ trait Typeofeditor extends js.Object {
   def colorizeModelLine(model: ITextModel, lineNumber: Double): String = js.native
   def colorizeModelLine(model: ITextModel, lineNumber: Double, tabSize: Double): String = js.native
   def create(domElement: HTMLElement): IStandaloneCodeEditor = js.native
+  def create(domElement: HTMLElement, options: js.UndefOr[scala.Nothing], `override`: IEditorOverrideServices): IStandaloneCodeEditor = js.native
   def create(domElement: HTMLElement, options: IStandaloneEditorConstructionOptions): IStandaloneCodeEditor = js.native
   def create(
     domElement: HTMLElement,
@@ -47,6 +48,7 @@ trait Typeofeditor extends js.Object {
     `override`: IEditorOverrideServices
   ): IStandaloneCodeEditor = js.native
   def createDiffEditor(domElement: HTMLElement): IStandaloneDiffEditor = js.native
+  def createDiffEditor(domElement: HTMLElement, options: js.UndefOr[scala.Nothing], `override`: IEditorOverrideServices): IStandaloneDiffEditor = js.native
   def createDiffEditor(domElement: HTMLElement, options: IDiffEditorConstructionOptions): IStandaloneDiffEditor = js.native
   def createDiffEditor(
     domElement: HTMLElement,
@@ -56,6 +58,7 @@ trait Typeofeditor extends js.Object {
   def createDiffNavigator(diffEditor: IStandaloneDiffEditor): IDiffNavigator = js.native
   def createDiffNavigator(diffEditor: IStandaloneDiffEditor, opts: IDiffNavigatorOptions): IDiffNavigator = js.native
   def createModel(value: String): ITextModel = js.native
+  def createModel(value: String, language: js.UndefOr[scala.Nothing], uri: Uri): ITextModel = js.native
   def createModel(value: String, language: String): ITextModel = js.native
   def createModel(value: String, language: String, uri: Uri): ITextModel = js.native
   def createWebWorker[T](opts: IWebWorkerOptions): MonacoWebWorker[T] = js.native

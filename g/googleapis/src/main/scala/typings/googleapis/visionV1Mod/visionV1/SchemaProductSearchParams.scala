@@ -39,18 +39,40 @@ trait SchemaProductSearchParams extends js.Object {
 
 object SchemaProductSearchParams {
   @scala.inline
-  def apply(
-    boundingPoly: SchemaBoundingPoly = null,
-    filter: String = null,
-    productCategories: js.Array[String] = null,
-    productSet: String = null
-  ): SchemaProductSearchParams = {
+  def apply(): SchemaProductSearchParams = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (productCategories != null) __obj.updateDynamic("productCategories")(productCategories.asInstanceOf[js.Any])
-    if (productSet != null) __obj.updateDynamic("productSet")(productSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductSearchParams]
   }
+  @scala.inline
+  implicit class SchemaProductSearchParamsOps[Self <: SchemaProductSearchParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: SchemaBoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setProductCategoriesVarargs(value: String*): Self = this.set("productCategories", js.Array(value :_*))
+    @scala.inline
+    def setProductCategories(value: js.Array[String]): Self = this.set("productCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCategories: Self = this.set("productCategories", js.undefined)
+    @scala.inline
+    def setProductSet(value: String): Self = this.set("productSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductSet: Self = this.set("productSet", js.undefined)
+  }
+  
 }
 

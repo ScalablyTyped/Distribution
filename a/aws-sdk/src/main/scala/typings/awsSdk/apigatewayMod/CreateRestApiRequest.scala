@@ -50,29 +50,62 @@ trait CreateRestApiRequest extends js.Object {
 
 object CreateRestApiRequest {
   @scala.inline
-  def apply(
-    name: String,
-    apiKeySource: ApiKeySourceType = null,
-    binaryMediaTypes: ListOfString = null,
-    cloneFrom: String = null,
-    description: String = null,
-    endpointConfiguration: EndpointConfiguration = null,
-    minimumCompressionSize: js.UndefOr[NullableInteger] = js.undefined,
-    policy: String = null,
-    tags: MapOfStringToString = null,
-    version: String = null
-  ): CreateRestApiRequest = {
+  def apply(name: String): CreateRestApiRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (apiKeySource != null) __obj.updateDynamic("apiKeySource")(apiKeySource.asInstanceOf[js.Any])
-    if (binaryMediaTypes != null) __obj.updateDynamic("binaryMediaTypes")(binaryMediaTypes.asInstanceOf[js.Any])
-    if (cloneFrom != null) __obj.updateDynamic("cloneFrom")(cloneFrom.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumCompressionSize)) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize.get.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRestApiRequest]
   }
+  @scala.inline
+  implicit class CreateRestApiRequestOps[Self <: CreateRestApiRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiKeySource(value: ApiKeySourceType): Self = this.set("apiKeySource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiKeySource: Self = this.set("apiKeySource", js.undefined)
+    @scala.inline
+    def setBinaryMediaTypesVarargs(value: String*): Self = this.set("binaryMediaTypes", js.Array(value :_*))
+    @scala.inline
+    def setBinaryMediaTypes(value: ListOfString): Self = this.set("binaryMediaTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryMediaTypes: Self = this.set("binaryMediaTypes", js.undefined)
+    @scala.inline
+    def setCloneFrom(value: String): Self = this.set("cloneFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneFrom: Self = this.set("cloneFrom", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndpointConfiguration(value: EndpointConfiguration): Self = this.set("endpointConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointConfiguration: Self = this.set("endpointConfiguration", js.undefined)
+    @scala.inline
+    def setMinimumCompressionSize(value: NullableInteger): Self = this.set("minimumCompressionSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumCompressionSize: Self = this.set("minimumCompressionSize", js.undefined)
+    @scala.inline
+    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfStringToString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

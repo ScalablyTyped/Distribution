@@ -86,48 +86,98 @@ trait TableStatistics extends js.Object {
 
 object TableStatistics {
   @scala.inline
-  def apply(
-    Ddls: js.UndefOr[Long] = js.undefined,
-    Deletes: js.UndefOr[Long] = js.undefined,
-    FullLoadCondtnlChkFailedRows: js.UndefOr[Long] = js.undefined,
-    FullLoadEndTime: TStamp = null,
-    FullLoadErrorRows: js.UndefOr[Long] = js.undefined,
-    FullLoadReloaded: js.UndefOr[BooleanOptional] = js.undefined,
-    FullLoadRows: js.UndefOr[Long] = js.undefined,
-    FullLoadStartTime: TStamp = null,
-    Inserts: js.UndefOr[Long] = js.undefined,
-    LastUpdateTime: TStamp = null,
-    SchemaName: String = null,
-    TableName: String = null,
-    TableState: String = null,
-    Updates: js.UndefOr[Long] = js.undefined,
-    ValidationFailedRecords: js.UndefOr[Long] = js.undefined,
-    ValidationPendingRecords: js.UndefOr[Long] = js.undefined,
-    ValidationState: String = null,
-    ValidationStateDetails: String = null,
-    ValidationSuspendedRecords: js.UndefOr[Long] = js.undefined
-  ): TableStatistics = {
+  def apply(): TableStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Ddls)) __obj.updateDynamic("Ddls")(Ddls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deletes)) __obj.updateDynamic("Deletes")(Deletes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadCondtnlChkFailedRows)) __obj.updateDynamic("FullLoadCondtnlChkFailedRows")(FullLoadCondtnlChkFailedRows.get.asInstanceOf[js.Any])
-    if (FullLoadEndTime != null) __obj.updateDynamic("FullLoadEndTime")(FullLoadEndTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadErrorRows)) __obj.updateDynamic("FullLoadErrorRows")(FullLoadErrorRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadReloaded)) __obj.updateDynamic("FullLoadReloaded")(FullLoadReloaded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FullLoadRows)) __obj.updateDynamic("FullLoadRows")(FullLoadRows.get.asInstanceOf[js.Any])
-    if (FullLoadStartTime != null) __obj.updateDynamic("FullLoadStartTime")(FullLoadStartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Inserts)) __obj.updateDynamic("Inserts")(Inserts.get.asInstanceOf[js.Any])
-    if (LastUpdateTime != null) __obj.updateDynamic("LastUpdateTime")(LastUpdateTime.asInstanceOf[js.Any])
-    if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
-    if (TableState != null) __obj.updateDynamic("TableState")(TableState.asInstanceOf[js.Any])
-    if (!js.isUndefined(Updates)) __obj.updateDynamic("Updates")(Updates.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ValidationFailedRecords)) __obj.updateDynamic("ValidationFailedRecords")(ValidationFailedRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ValidationPendingRecords)) __obj.updateDynamic("ValidationPendingRecords")(ValidationPendingRecords.get.asInstanceOf[js.Any])
-    if (ValidationState != null) __obj.updateDynamic("ValidationState")(ValidationState.asInstanceOf[js.Any])
-    if (ValidationStateDetails != null) __obj.updateDynamic("ValidationStateDetails")(ValidationStateDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(ValidationSuspendedRecords)) __obj.updateDynamic("ValidationSuspendedRecords")(ValidationSuspendedRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStatistics]
   }
+  @scala.inline
+  implicit class TableStatisticsOps[Self <: TableStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDdls(value: Long): Self = this.set("Ddls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDdls: Self = this.set("Ddls", js.undefined)
+    @scala.inline
+    def setDeletes(value: Long): Self = this.set("Deletes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletes: Self = this.set("Deletes", js.undefined)
+    @scala.inline
+    def setFullLoadCondtnlChkFailedRows(value: Long): Self = this.set("FullLoadCondtnlChkFailedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadCondtnlChkFailedRows: Self = this.set("FullLoadCondtnlChkFailedRows", js.undefined)
+    @scala.inline
+    def setFullLoadEndTime(value: TStamp): Self = this.set("FullLoadEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadEndTime: Self = this.set("FullLoadEndTime", js.undefined)
+    @scala.inline
+    def setFullLoadErrorRows(value: Long): Self = this.set("FullLoadErrorRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadErrorRows: Self = this.set("FullLoadErrorRows", js.undefined)
+    @scala.inline
+    def setFullLoadReloaded(value: BooleanOptional): Self = this.set("FullLoadReloaded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadReloaded: Self = this.set("FullLoadReloaded", js.undefined)
+    @scala.inline
+    def setFullLoadRows(value: Long): Self = this.set("FullLoadRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadRows: Self = this.set("FullLoadRows", js.undefined)
+    @scala.inline
+    def setFullLoadStartTime(value: TStamp): Self = this.set("FullLoadStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullLoadStartTime: Self = this.set("FullLoadStartTime", js.undefined)
+    @scala.inline
+    def setInserts(value: Long): Self = this.set("Inserts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInserts: Self = this.set("Inserts", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: TStamp): Self = this.set("LastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("LastUpdateTime", js.undefined)
+    @scala.inline
+    def setSchemaName(value: String): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
+    @scala.inline
+    def setTableName(value: String): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+    @scala.inline
+    def setTableState(value: String): Self = this.set("TableState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableState: Self = this.set("TableState", js.undefined)
+    @scala.inline
+    def setUpdates(value: Long): Self = this.set("Updates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdates: Self = this.set("Updates", js.undefined)
+    @scala.inline
+    def setValidationFailedRecords(value: Long): Self = this.set("ValidationFailedRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationFailedRecords: Self = this.set("ValidationFailedRecords", js.undefined)
+    @scala.inline
+    def setValidationPendingRecords(value: Long): Self = this.set("ValidationPendingRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationPendingRecords: Self = this.set("ValidationPendingRecords", js.undefined)
+    @scala.inline
+    def setValidationState(value: String): Self = this.set("ValidationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationState: Self = this.set("ValidationState", js.undefined)
+    @scala.inline
+    def setValidationStateDetails(value: String): Self = this.set("ValidationStateDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationStateDetails: Self = this.set("ValidationStateDetails", js.undefined)
+    @scala.inline
+    def setValidationSuspendedRecords(value: Long): Self = this.set("ValidationSuspendedRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationSuspendedRecords: Self = this.set("ValidationSuspendedRecords", js.undefined)
+  }
+  
 }
 

@@ -17,9 +17,9 @@ trait GetDirectConnectGatewayAttachmentArgs extends js.Object {
     */
   val filters: js.UndefOr[js.Array[GetDirectConnectGatewayAttachmentFilter]] = js.native
   /**
-    * A mapping of tags, each pair of which must exactly match a pair on the desired Transit Gateway Direct Connect Gateway Attachment.
+    * A map of tags, each pair of which must exactly match a pair on the desired Transit Gateway Direct Connect Gateway Attachment.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * Identifier of the EC2 Transit Gateway.
     */
@@ -28,18 +28,40 @@ trait GetDirectConnectGatewayAttachmentArgs extends js.Object {
 
 object GetDirectConnectGatewayAttachmentArgs {
   @scala.inline
-  def apply(
-    dxGatewayId: String = null,
-    filters: js.Array[GetDirectConnectGatewayAttachmentFilter] = null,
-    tags: StringDictionary[js.Any] = null,
-    transitGatewayId: String = null
-  ): GetDirectConnectGatewayAttachmentArgs = {
+  def apply(): GetDirectConnectGatewayAttachmentArgs = {
     val __obj = js.Dynamic.literal()
-    if (dxGatewayId != null) __obj.updateDynamic("dxGatewayId")(dxGatewayId.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDirectConnectGatewayAttachmentArgs]
   }
+  @scala.inline
+  implicit class GetDirectConnectGatewayAttachmentArgsOps[Self <: GetDirectConnectGatewayAttachmentArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDxGatewayId(value: String): Self = this.set("dxGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDxGatewayId: Self = this.set("dxGatewayId", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: GetDirectConnectGatewayAttachmentFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetDirectConnectGatewayAttachmentFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: String): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("transitGatewayId", js.undefined)
+  }
+  
 }
 

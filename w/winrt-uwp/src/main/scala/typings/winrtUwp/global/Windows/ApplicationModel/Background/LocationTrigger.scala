@@ -14,8 +14,5 @@ class LocationTrigger protected ()
     * @param triggerType The type of location event for this trigger.
     */
   def this(triggerType: typings.winrtUwp.Windows.ApplicationModel.Background.LocationTriggerType) = this()
-  /** The type of location event for this trigger. */
-  /* CompleteClass */
-  override var triggerType: typings.winrtUwp.Windows.ApplicationModel.Background.LocationTriggerType = js.native
 }
 

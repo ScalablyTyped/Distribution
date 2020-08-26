@@ -72,9 +72,9 @@ trait ClusterState extends js.Object {
     */
   val openMonitoring: js.UndefOr[Input[ClusterOpenMonitoring]] = js.native
   /**
-    * A mapping of tags to assign to the resource
+    * A map of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
     */
@@ -83,42 +83,86 @@ trait ClusterState extends js.Object {
 
 object ClusterState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    bootstrapBrokers: Input[String] = null,
-    bootstrapBrokersTls: Input[String] = null,
-    brokerNodeGroupInfo: Input[ClusterBrokerNodeGroupInfo] = null,
-    clientAuthentication: Input[ClusterClientAuthentication] = null,
-    clusterName: Input[String] = null,
-    configurationInfo: Input[ClusterConfigurationInfo] = null,
-    currentVersion: Input[String] = null,
-    encryptionInfo: Input[ClusterEncryptionInfo] = null,
-    enhancedMonitoring: Input[String] = null,
-    kafkaVersion: Input[String] = null,
-    loggingInfo: Input[ClusterLoggingInfo] = null,
-    numberOfBrokerNodes: Input[Double] = null,
-    openMonitoring: Input[ClusterOpenMonitoring] = null,
-    tags: Input[StringDictionary[_]] = null,
-    zookeeperConnectString: Input[String] = null
-  ): ClusterState = {
+  def apply(): ClusterState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (bootstrapBrokers != null) __obj.updateDynamic("bootstrapBrokers")(bootstrapBrokers.asInstanceOf[js.Any])
-    if (bootstrapBrokersTls != null) __obj.updateDynamic("bootstrapBrokersTls")(bootstrapBrokersTls.asInstanceOf[js.Any])
-    if (brokerNodeGroupInfo != null) __obj.updateDynamic("brokerNodeGroupInfo")(brokerNodeGroupInfo.asInstanceOf[js.Any])
-    if (clientAuthentication != null) __obj.updateDynamic("clientAuthentication")(clientAuthentication.asInstanceOf[js.Any])
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (configurationInfo != null) __obj.updateDynamic("configurationInfo")(configurationInfo.asInstanceOf[js.Any])
-    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
-    if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo.asInstanceOf[js.Any])
-    if (enhancedMonitoring != null) __obj.updateDynamic("enhancedMonitoring")(enhancedMonitoring.asInstanceOf[js.Any])
-    if (kafkaVersion != null) __obj.updateDynamic("kafkaVersion")(kafkaVersion.asInstanceOf[js.Any])
-    if (loggingInfo != null) __obj.updateDynamic("loggingInfo")(loggingInfo.asInstanceOf[js.Any])
-    if (numberOfBrokerNodes != null) __obj.updateDynamic("numberOfBrokerNodes")(numberOfBrokerNodes.asInstanceOf[js.Any])
-    if (openMonitoring != null) __obj.updateDynamic("openMonitoring")(openMonitoring.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (zookeeperConnectString != null) __obj.updateDynamic("zookeeperConnectString")(zookeeperConnectString.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]
   }
+  @scala.inline
+  implicit class ClusterStateOps[Self <: ClusterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setBootstrapBrokers(value: Input[String]): Self = this.set("bootstrapBrokers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapBrokers: Self = this.set("bootstrapBrokers", js.undefined)
+    @scala.inline
+    def setBootstrapBrokersTls(value: Input[String]): Self = this.set("bootstrapBrokersTls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapBrokersTls: Self = this.set("bootstrapBrokersTls", js.undefined)
+    @scala.inline
+    def setBrokerNodeGroupInfo(value: Input[ClusterBrokerNodeGroupInfo]): Self = this.set("brokerNodeGroupInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerNodeGroupInfo: Self = this.set("brokerNodeGroupInfo", js.undefined)
+    @scala.inline
+    def setClientAuthentication(value: Input[ClusterClientAuthentication]): Self = this.set("clientAuthentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAuthentication: Self = this.set("clientAuthentication", js.undefined)
+    @scala.inline
+    def setClusterName(value: Input[String]): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setConfigurationInfo(value: Input[ClusterConfigurationInfo]): Self = this.set("configurationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationInfo: Self = this.set("configurationInfo", js.undefined)
+    @scala.inline
+    def setCurrentVersion(value: Input[String]): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    @scala.inline
+    def setEncryptionInfo(value: Input[ClusterEncryptionInfo]): Self = this.set("encryptionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionInfo: Self = this.set("encryptionInfo", js.undefined)
+    @scala.inline
+    def setEnhancedMonitoring(value: Input[String]): Self = this.set("enhancedMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedMonitoring: Self = this.set("enhancedMonitoring", js.undefined)
+    @scala.inline
+    def setKafkaVersion(value: Input[String]): Self = this.set("kafkaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafkaVersion: Self = this.set("kafkaVersion", js.undefined)
+    @scala.inline
+    def setLoggingInfo(value: Input[ClusterLoggingInfo]): Self = this.set("loggingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingInfo: Self = this.set("loggingInfo", js.undefined)
+    @scala.inline
+    def setNumberOfBrokerNodes(value: Input[Double]): Self = this.set("numberOfBrokerNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfBrokerNodes: Self = this.set("numberOfBrokerNodes", js.undefined)
+    @scala.inline
+    def setOpenMonitoring(value: Input[ClusterOpenMonitoring]): Self = this.set("openMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenMonitoring: Self = this.set("openMonitoring", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setZookeeperConnectString(value: Input[String]): Self = this.set("zookeeperConnectString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZookeeperConnectString: Self = this.set("zookeeperConnectString", js.undefined)
+  }
+  
 }
 

@@ -17,6 +17,7 @@ object urlSearchParamsMod extends js.Object {
   @js.native
   class URLSearchParams () extends js.Object {
     def this(rawParams: String) = this()
+    def this(rawParams: js.UndefOr[scala.Nothing], queryEncoder: QueryEncoder) = this()
     def this(rawParams: String, queryEncoder: QueryEncoder) = this()
     var paramsMap: Map[String, js.Array[String]] = js.native
     var queryEncoder: js.Any = js.native

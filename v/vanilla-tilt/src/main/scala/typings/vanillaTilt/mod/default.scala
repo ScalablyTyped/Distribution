@@ -15,31 +15,6 @@ class default protected () extends VanillaTilt {
     */
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, settings: TiltOptions) = this()
-  /**
-    * Start listening to events
-    */
-  /* CompleteClass */
-  override def addEventListeners(): Unit = js.native
-  /**
-    * Destroys the instance and removes the listeners.
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
-  /**
-    * Get values of instance
-    */
-  /* CompleteClass */
-  override def getValues(): TiltValues = js.native
-  /**
-    * Stop listening to events
-    */
-  /* CompleteClass */
-  override def removeEventListener(): Unit = js.native
-  /**
-    * Resets the styling
-    */
-  /* CompleteClass */
-  override def reset(): Unit = js.native
 }
 
 /* static members */

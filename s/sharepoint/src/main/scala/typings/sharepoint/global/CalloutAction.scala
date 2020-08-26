@@ -9,29 +9,5 @@ import scala.scalajs.js.annotation._
 class CalloutAction protected ()
   extends typings.sharepoint.CalloutAction {
   def this(options: typings.sharepoint.CalloutActionOptions) = this()
-  /* CompleteClass */
-  override def getDisabledToolTip(): String = js.native
-  /* CompleteClass */
-  override def getIsDisabledCallback(action: typings.sharepoint.CalloutAction): Boolean = js.native
-  /* CompleteClass */
-  override def getIsMenu(): Boolean = js.native
-  /* CompleteClass */
-  override def getIsVisibleCallback(action: typings.sharepoint.CalloutAction): Boolean = js.native
-  /* CompleteClass */
-  override def getMenuEntries(): js.Array[typings.sharepoint.CalloutActionMenuEntry] = js.native
-  /* CompleteClass */
-  override def getOnClickCallback(event: js.Any, action: typings.sharepoint.CalloutAction): js.Any = js.native
-  /* CompleteClass */
-  override def getText(): String = js.native
-  /* CompleteClass */
-  override def getToolTop(): String = js.native
-  /* CompleteClass */
-  override def isEnabled(): Boolean = js.native
-  /* CompleteClass */
-  override def isVisible(): Boolean = js.native
-  /* CompleteClass */
-  override def render(): Unit = js.native
-  /* CompleteClass */
-  override def set(options: typings.sharepoint.CalloutActionOptions): Unit = js.native
 }
 

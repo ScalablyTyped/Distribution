@@ -10,72 +10,125 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnswerCorrect extends js.Object {
-  var answerCorrect: js.UndefOr[Boolean] = js.undefined
-  var autoConfirmUser: js.UndefOr[Boolean] = js.undefined
-  var autoVerifyEmail: js.UndefOr[Boolean] = js.undefined
-  var autoVerifyPhone: js.UndefOr[Boolean] = js.undefined
-  var challengeMetadata: js.UndefOr[String] = js.undefined
-  var challengeName: js.UndefOr[String] = js.undefined
-  var claimsOverrideDetails: js.UndefOr[ClaimsToAddOrOverride] = js.undefined
-  var desiredDeliveryMediums: js.UndefOr[js.Array[EMAIL | SMS]] = js.undefined
-  var emailMessage: js.UndefOr[String] = js.undefined
-  var emailSubject: js.UndefOr[String] = js.undefined
-  var failAuthentication: js.UndefOr[Boolean] = js.undefined
-  var finalUserStatus: js.UndefOr[CONFIRMED | RESET_REQUIRED] = js.undefined
-  var forceAliasCreation: js.UndefOr[Boolean] = js.undefined
-  var issueTokens: js.UndefOr[Boolean] = js.undefined
-  var messageAction: js.UndefOr[SUPPRESS] = js.undefined
-  var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
-  var publicChallengeParameters: js.UndefOr[StringDictionary[String]] = js.undefined
-  var smsMessage: js.UndefOr[String] = js.undefined
-  var userAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
+  var answerCorrect: js.UndefOr[Boolean] = js.native
+  var autoConfirmUser: js.UndefOr[Boolean] = js.native
+  var autoVerifyEmail: js.UndefOr[Boolean] = js.native
+  var autoVerifyPhone: js.UndefOr[Boolean] = js.native
+  var challengeMetadata: js.UndefOr[String] = js.native
+  var challengeName: js.UndefOr[String] = js.native
+  var claimsOverrideDetails: js.UndefOr[ClaimsToAddOrOverride] = js.native
+  var desiredDeliveryMediums: js.UndefOr[js.Array[EMAIL | SMS]] = js.native
+  var emailMessage: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.native
+  var failAuthentication: js.UndefOr[Boolean] = js.native
+  var finalUserStatus: js.UndefOr[CONFIRMED | RESET_REQUIRED] = js.native
+  var forceAliasCreation: js.UndefOr[Boolean] = js.native
+  var issueTokens: js.UndefOr[Boolean] = js.native
+  var messageAction: js.UndefOr[SUPPRESS] = js.native
+  var privateChallengeParameters: js.UndefOr[StringDictionary[String]] = js.native
+  var publicChallengeParameters: js.UndefOr[StringDictionary[String]] = js.native
+  var smsMessage: js.UndefOr[String] = js.native
+  var userAttributes: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object AnswerCorrect {
   @scala.inline
-  def apply(
-    answerCorrect: js.UndefOr[Boolean] = js.undefined,
-    autoConfirmUser: js.UndefOr[Boolean] = js.undefined,
-    autoVerifyEmail: js.UndefOr[Boolean] = js.undefined,
-    autoVerifyPhone: js.UndefOr[Boolean] = js.undefined,
-    challengeMetadata: String = null,
-    challengeName: String = null,
-    claimsOverrideDetails: ClaimsToAddOrOverride = null,
-    desiredDeliveryMediums: js.Array[EMAIL | SMS] = null,
-    emailMessage: String = null,
-    emailSubject: String = null,
-    failAuthentication: js.UndefOr[Boolean] = js.undefined,
-    finalUserStatus: CONFIRMED | RESET_REQUIRED = null,
-    forceAliasCreation: js.UndefOr[Boolean] = js.undefined,
-    issueTokens: js.UndefOr[Boolean] = js.undefined,
-    messageAction: SUPPRESS = null,
-    privateChallengeParameters: StringDictionary[String] = null,
-    publicChallengeParameters: StringDictionary[String] = null,
-    smsMessage: String = null,
-    userAttributes: StringDictionary[String] = null
-  ): AnswerCorrect = {
+  def apply(): AnswerCorrect = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(answerCorrect)) __obj.updateDynamic("answerCorrect")(answerCorrect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConfirmUser)) __obj.updateDynamic("autoConfirmUser")(autoConfirmUser.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoVerifyEmail)) __obj.updateDynamic("autoVerifyEmail")(autoVerifyEmail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoVerifyPhone)) __obj.updateDynamic("autoVerifyPhone")(autoVerifyPhone.get.asInstanceOf[js.Any])
-    if (challengeMetadata != null) __obj.updateDynamic("challengeMetadata")(challengeMetadata.asInstanceOf[js.Any])
-    if (challengeName != null) __obj.updateDynamic("challengeName")(challengeName.asInstanceOf[js.Any])
-    if (claimsOverrideDetails != null) __obj.updateDynamic("claimsOverrideDetails")(claimsOverrideDetails.asInstanceOf[js.Any])
-    if (desiredDeliveryMediums != null) __obj.updateDynamic("desiredDeliveryMediums")(desiredDeliveryMediums.asInstanceOf[js.Any])
-    if (emailMessage != null) __obj.updateDynamic("emailMessage")(emailMessage.asInstanceOf[js.Any])
-    if (emailSubject != null) __obj.updateDynamic("emailSubject")(emailSubject.asInstanceOf[js.Any])
-    if (!js.isUndefined(failAuthentication)) __obj.updateDynamic("failAuthentication")(failAuthentication.get.asInstanceOf[js.Any])
-    if (finalUserStatus != null) __obj.updateDynamic("finalUserStatus")(finalUserStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceAliasCreation)) __obj.updateDynamic("forceAliasCreation")(forceAliasCreation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(issueTokens)) __obj.updateDynamic("issueTokens")(issueTokens.get.asInstanceOf[js.Any])
-    if (messageAction != null) __obj.updateDynamic("messageAction")(messageAction.asInstanceOf[js.Any])
-    if (privateChallengeParameters != null) __obj.updateDynamic("privateChallengeParameters")(privateChallengeParameters.asInstanceOf[js.Any])
-    if (publicChallengeParameters != null) __obj.updateDynamic("publicChallengeParameters")(publicChallengeParameters.asInstanceOf[js.Any])
-    if (smsMessage != null) __obj.updateDynamic("smsMessage")(smsMessage.asInstanceOf[js.Any])
-    if (userAttributes != null) __obj.updateDynamic("userAttributes")(userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerCorrect]
   }
+  @scala.inline
+  implicit class AnswerCorrectOps[Self <: AnswerCorrect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnswerCorrect(value: Boolean): Self = this.set("answerCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnswerCorrect: Self = this.set("answerCorrect", js.undefined)
+    @scala.inline
+    def setAutoConfirmUser(value: Boolean): Self = this.set("autoConfirmUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoConfirmUser: Self = this.set("autoConfirmUser", js.undefined)
+    @scala.inline
+    def setAutoVerifyEmail(value: Boolean): Self = this.set("autoVerifyEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoVerifyEmail: Self = this.set("autoVerifyEmail", js.undefined)
+    @scala.inline
+    def setAutoVerifyPhone(value: Boolean): Self = this.set("autoVerifyPhone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoVerifyPhone: Self = this.set("autoVerifyPhone", js.undefined)
+    @scala.inline
+    def setChallengeMetadata(value: String): Self = this.set("challengeMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeMetadata: Self = this.set("challengeMetadata", js.undefined)
+    @scala.inline
+    def setChallengeName(value: String): Self = this.set("challengeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeName: Self = this.set("challengeName", js.undefined)
+    @scala.inline
+    def setClaimsOverrideDetails(value: ClaimsToAddOrOverride): Self = this.set("claimsOverrideDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimsOverrideDetails: Self = this.set("claimsOverrideDetails", js.undefined)
+    @scala.inline
+    def setDesiredDeliveryMediumsVarargs(value: (EMAIL | SMS)*): Self = this.set("desiredDeliveryMediums", js.Array(value :_*))
+    @scala.inline
+    def setDesiredDeliveryMediums(value: js.Array[EMAIL | SMS]): Self = this.set("desiredDeliveryMediums", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredDeliveryMediums: Self = this.set("desiredDeliveryMediums", js.undefined)
+    @scala.inline
+    def setEmailMessage(value: String): Self = this.set("emailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("emailMessage", js.undefined)
+    @scala.inline
+    def setEmailSubject(value: String): Self = this.set("emailSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSubject: Self = this.set("emailSubject", js.undefined)
+    @scala.inline
+    def setFailAuthentication(value: Boolean): Self = this.set("failAuthentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailAuthentication: Self = this.set("failAuthentication", js.undefined)
+    @scala.inline
+    def setFinalUserStatus(value: CONFIRMED | RESET_REQUIRED): Self = this.set("finalUserStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalUserStatus: Self = this.set("finalUserStatus", js.undefined)
+    @scala.inline
+    def setForceAliasCreation(value: Boolean): Self = this.set("forceAliasCreation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceAliasCreation: Self = this.set("forceAliasCreation", js.undefined)
+    @scala.inline
+    def setIssueTokens(value: Boolean): Self = this.set("issueTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssueTokens: Self = this.set("issueTokens", js.undefined)
+    @scala.inline
+    def setMessageAction(value: SUPPRESS): Self = this.set("messageAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAction: Self = this.set("messageAction", js.undefined)
+    @scala.inline
+    def setPrivateChallengeParameters(value: StringDictionary[String]): Self = this.set("privateChallengeParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateChallengeParameters: Self = this.set("privateChallengeParameters", js.undefined)
+    @scala.inline
+    def setPublicChallengeParameters(value: StringDictionary[String]): Self = this.set("publicChallengeParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicChallengeParameters: Self = this.set("publicChallengeParameters", js.undefined)
+    @scala.inline
+    def setSmsMessage(value: String): Self = this.set("smsMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsMessage: Self = this.set("smsMessage", js.undefined)
+    @scala.inline
+    def setUserAttributes(value: StringDictionary[String]): Self = this.set("userAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAttributes: Self = this.set("userAttributes", js.undefined)
+  }
+  
 }
 

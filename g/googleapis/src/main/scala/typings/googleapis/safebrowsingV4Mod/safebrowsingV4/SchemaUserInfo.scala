@@ -21,11 +21,30 @@ trait SchemaUserInfo extends js.Object {
 
 object SchemaUserInfo {
   @scala.inline
-  def apply(regionCode: String = null, userId: String = null): SchemaUserInfo = {
+  def apply(): SchemaUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserInfo]
   }
+  @scala.inline
+  implicit class SchemaUserInfoOps[Self <: SchemaUserInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

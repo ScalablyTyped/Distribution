@@ -34,8 +34,6 @@ object bignumberMod extends js.Object {
     def shl(value: Double): BigNumber = js.native
     def shr(value: Double): BigNumber = js.native
     def sub(other: BigNumberish): BigNumber = js.native
-    /* CompleteClass */
-    override def toHexString(): String = js.native
     def toNumber(): Double = js.native
     def toTwos(value: Double): BigNumber = js.native
     def xor(other: BigNumberish): BigNumber = js.native

@@ -149,7 +149,7 @@ object socksclientMod extends js.Object {
     /**
       * Internal state setter. If the SocksClient is in an error state, it cannot be changed to a non error state.
       */
-    /* private */ def state(value: js.Any): js.Any = js.native
+    /* private */ def state_=(value: js.Any): Unit = js.native
   }
   
   /* static members */

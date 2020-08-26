@@ -16,8 +16,66 @@ trait EmitAndSemanticDiagnosticsBuilderProgram extends SemanticDiagnosticsBuilde
     * in that order would be used to write the files
     */
   def emitNextAffectedFile(): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: js.UndefOr[scala.Nothing],
+    cancellationToken: js.UndefOr[scala.Nothing],
+    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: js.UndefOr[scala.Nothing],
+    cancellationToken: js.UndefOr[scala.Nothing],
+    emitOnlyDtsFiles: Boolean
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: js.UndefOr[scala.Nothing],
+    cancellationToken: js.UndefOr[scala.Nothing],
+    emitOnlyDtsFiles: Boolean,
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(writeFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: js.UndefOr[scala.Nothing],
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: js.UndefOr[scala.Nothing],
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: Boolean
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: js.UndefOr[scala.Nothing],
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: Boolean,
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
   def emitNextAffectedFile(writeFile: WriteFileCallback): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: WriteFileCallback,
+    cancellationToken: js.UndefOr[scala.Nothing],
+    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: WriteFileCallback,
+    cancellationToken: js.UndefOr[scala.Nothing],
+    emitOnlyDtsFiles: Boolean
+  ): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: WriteFileCallback,
+    cancellationToken: js.UndefOr[scala.Nothing],
+    emitOnlyDtsFiles: Boolean,
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
   def emitNextAffectedFile(writeFile: WriteFileCallback, cancellationToken: CancellationToken): AffectedFileResult[EmitResult] = js.native
+  def emitNextAffectedFile(
+    writeFile: WriteFileCallback,
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    customTransformers: CustomTransformers
+  ): AffectedFileResult[EmitResult] = js.native
   def emitNextAffectedFile(writeFile: WriteFileCallback, cancellationToken: CancellationToken, emitOnlyDtsFiles: Boolean): AffectedFileResult[EmitResult] = js.native
   def emitNextAffectedFile(
     writeFile: WriteFileCallback,

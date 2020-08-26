@@ -34,22 +34,46 @@ trait Source extends js.Object {
 
 object Source {
   @scala.inline
-  def apply(
-    Password: String = null,
-    Revision: String = null,
-    SshKey: String = null,
-    Type: SourceType = null,
-    Url: String = null,
-    Username: String = null
-  ): Source = {
+  def apply(): Source = {
     val __obj = js.Dynamic.literal()
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Revision != null) __obj.updateDynamic("Revision")(Revision.asInstanceOf[js.Any])
-    if (SshKey != null) __obj.updateDynamic("SshKey")(SshKey.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
+  @scala.inline
+  implicit class SourceOps[Self <: Source] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setRevision(value: String): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("Revision", js.undefined)
+    @scala.inline
+    def setSshKey(value: String): Self = this.set("SshKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshKey: Self = this.set("SshKey", js.undefined)
+    @scala.inline
+    def setType(value: SourceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

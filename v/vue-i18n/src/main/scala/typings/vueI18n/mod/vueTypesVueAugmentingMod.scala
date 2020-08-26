@@ -36,6 +36,8 @@ object vueTypesVueAugmentingMod extends js.Object {
     @JSName("$d")
     def $d(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
     @JSName("$d")
+    def $d(value: Double, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
+    @JSName("$d")
     def $d(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
     @JSName("$d")
     def $d(value: Double, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
@@ -44,6 +46,8 @@ object vueTypesVueAugmentingMod extends js.Object {
     @JSName("$d")
     def $d(value: Date, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
     @JSName("$d")
+    def $d(value: Date, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
+    @JSName("$d")
     def $d(value: Date, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
     @JSName("$d")
     def $d(value: Date, key: typings.vueI18n.mod.VueI18n.Path, locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.DateTimeFormatResult = js.native
@@ -51,6 +55,8 @@ object vueTypesVueAugmentingMod extends js.Object {
     def $n(value: Double): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
     @JSName("$n")
     def $n(value: Double, args: StringDictionary[String]): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
+    @JSName("$n")
+    def $n(value: Double, key: js.UndefOr[scala.Nothing], locale: typings.vueI18n.mod.VueI18n.Locale): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
     @JSName("$n")
     def $n(value: Double, key: typings.vueI18n.mod.VueI18n.Path): typings.vueI18n.mod.VueI18n.NumberFormatResult = js.native
     @JSName("$n")
@@ -69,6 +75,12 @@ object vueTypesVueAugmentingMod extends js.Object {
     def $t(key: typings.vueI18n.mod.VueI18n.Path, values: typings.vueI18n.mod.VueI18n.Values): typings.vueI18n.mod.VueI18n.TranslateResult = js.native
     @JSName("$tc")
     def $tc(key: typings.vueI18n.mod.VueI18n.Path): String = js.native
+    @JSName("$tc")
+    def $tc(
+      key: typings.vueI18n.mod.VueI18n.Path,
+      choice: js.UndefOr[scala.Nothing],
+      values: typings.vueI18n.mod.VueI18n.Values
+    ): String = js.native
     @JSName("$tc")
     def $tc(key: typings.vueI18n.mod.VueI18n.Path, choice: typings.vueI18n.mod.VueI18n.Choice): String = js.native
     @JSName("$tc")

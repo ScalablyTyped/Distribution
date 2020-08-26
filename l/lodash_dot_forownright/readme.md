@@ -12,7 +12,7 @@ The lodash method `_.forOwnRight` exported as a module.
 | Keywords           | lodash-modularized, forownright |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1260 |
+| # downloads        | 1343 |
 | # stars            | 0 |
 
 ## Links

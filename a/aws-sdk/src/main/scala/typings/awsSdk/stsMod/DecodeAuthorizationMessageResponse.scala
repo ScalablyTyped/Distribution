@@ -14,10 +14,26 @@ trait DecodeAuthorizationMessageResponse extends js.Object {
 
 object DecodeAuthorizationMessageResponse {
   @scala.inline
-  def apply(DecodedMessage: decodedMessageType = null): DecodeAuthorizationMessageResponse = {
+  def apply(): DecodeAuthorizationMessageResponse = {
     val __obj = js.Dynamic.literal()
-    if (DecodedMessage != null) __obj.updateDynamic("DecodedMessage")(DecodedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodeAuthorizationMessageResponse]
   }
+  @scala.inline
+  implicit class DecodeAuthorizationMessageResponseOps[Self <: DecodeAuthorizationMessageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDecodedMessage(value: decodedMessageType): Self = this.set("DecodedMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecodedMessage: Self = this.set("DecodedMessage", js.undefined)
+  }
+  
 }
 

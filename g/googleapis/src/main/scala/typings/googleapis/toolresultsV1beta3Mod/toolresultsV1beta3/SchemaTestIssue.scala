@@ -38,22 +38,46 @@ trait SchemaTestIssue extends js.Object {
 
 object SchemaTestIssue {
   @scala.inline
-  def apply(
-    category: String = null,
-    errorMessage: String = null,
-    severity: String = null,
-    stackTrace: SchemaStackTrace = null,
-    `type`: String = null,
-    warning: SchemaAny = null
-  ): SchemaTestIssue = {
+  def apply(): SchemaTestIssue = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestIssue]
   }
+  @scala.inline
+  implicit class SchemaTestIssueOps[Self <: SchemaTestIssue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setSeverity(value: String): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setStackTrace(value: SchemaStackTrace): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackTrace: Self = this.set("stackTrace", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWarning(value: SchemaAny): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

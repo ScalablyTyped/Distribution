@@ -18,10 +18,28 @@ trait DeletePolicyType extends js.Object {
 
 object DeletePolicyType {
   @scala.inline
-  def apply(PolicyName: ResourceName, AutoScalingGroupName: ResourceName = null): DeletePolicyType = {
+  def apply(PolicyName: ResourceName): DeletePolicyType = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any])
-    if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePolicyType]
   }
+  @scala.inline
+  implicit class DeletePolicyTypeOps[Self <: DeletePolicyType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyName(value: ResourceName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+  }
+  
 }
 

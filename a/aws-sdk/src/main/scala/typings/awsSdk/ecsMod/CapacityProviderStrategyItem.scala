@@ -22,15 +22,32 @@ trait CapacityProviderStrategyItem extends js.Object {
 
 object CapacityProviderStrategyItem {
   @scala.inline
-  def apply(
-    capacityProvider: String,
-    base: js.UndefOr[CapacityProviderStrategyItemBase] = js.undefined,
-    weight: js.UndefOr[CapacityProviderStrategyItemWeight] = js.undefined
-  ): CapacityProviderStrategyItem = {
+  def apply(capacityProvider: String): CapacityProviderStrategyItem = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapacityProviderStrategyItem]
   }
+  @scala.inline
+  implicit class CapacityProviderStrategyItemOps[Self <: CapacityProviderStrategyItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProvider(value: String): Self = this.set("capacityProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase(value: CapacityProviderStrategyItemBase): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setWeight(value: CapacityProviderStrategyItemWeight): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

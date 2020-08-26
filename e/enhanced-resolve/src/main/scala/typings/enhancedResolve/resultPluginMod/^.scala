@@ -8,10 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ protected () extends ResultPlugin {
   def this(source: String) = this()
-  /* CompleteClass */
-  override var source: String = js.native
-  /* CompleteClass */
-  @JSName("apply")
-  override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
 }
 

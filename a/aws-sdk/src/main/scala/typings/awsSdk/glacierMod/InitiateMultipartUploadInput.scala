@@ -26,11 +26,34 @@ trait InitiateMultipartUploadInput extends js.Object {
 
 object InitiateMultipartUploadInput {
   @scala.inline
-  def apply(accountId: String, vaultName: String, archiveDescription: String = null, partSize: String = null): InitiateMultipartUploadInput = {
+  def apply(accountId: String, vaultName: String): InitiateMultipartUploadInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-    if (archiveDescription != null) __obj.updateDynamic("archiveDescription")(archiveDescription.asInstanceOf[js.Any])
-    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateMultipartUploadInput]
   }
+  @scala.inline
+  implicit class InitiateMultipartUploadInputOps[Self <: InitiateMultipartUploadInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArchiveDescription(value: String): Self = this.set("archiveDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveDescription: Self = this.set("archiveDescription", js.undefined)
+    @scala.inline
+    def setPartSize(value: String): Self = this.set("partSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartSize: Self = this.set("partSize", js.undefined)
+  }
+  
 }
 

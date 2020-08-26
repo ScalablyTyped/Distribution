@@ -1,7 +1,7 @@
 
 # Scala.js typings for sendgrid-rest
 
-Typings are for version 2.6.0
+Typings are for version 2.6.1
 
 ## Library description:
 HTTP REST client, simplified for Node.js.
@@ -10,9 +10,9 @@ HTTP REST client, simplified for Node.js.
 | ------------------ | :-------------: |
 | Full name          | sendgrid-rest |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 2436377 |
+| # downloads        | 2677345 |
 | # stars            | 3 |
 
 ## Links

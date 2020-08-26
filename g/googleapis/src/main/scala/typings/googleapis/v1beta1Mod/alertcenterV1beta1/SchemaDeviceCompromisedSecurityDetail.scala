@@ -42,24 +42,50 @@ trait SchemaDeviceCompromisedSecurityDetail extends js.Object {
 
 object SchemaDeviceCompromisedSecurityDetail {
   @scala.inline
-  def apply(
-    deviceCompromisedState: String = null,
-    deviceId: String = null,
-    deviceModel: String = null,
-    deviceType: String = null,
-    iosVendorId: String = null,
-    resourceId: String = null,
-    serialNumber: String = null
-  ): SchemaDeviceCompromisedSecurityDetail = {
+  def apply(): SchemaDeviceCompromisedSecurityDetail = {
     val __obj = js.Dynamic.literal()
-    if (deviceCompromisedState != null) __obj.updateDynamic("deviceCompromisedState")(deviceCompromisedState.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (deviceModel != null) __obj.updateDynamic("deviceModel")(deviceModel.asInstanceOf[js.Any])
-    if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
-    if (iosVendorId != null) __obj.updateDynamic("iosVendorId")(iosVendorId.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeviceCompromisedSecurityDetail]
   }
+  @scala.inline
+  implicit class SchemaDeviceCompromisedSecurityDetailOps[Self <: SchemaDeviceCompromisedSecurityDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceCompromisedState(value: String): Self = this.set("deviceCompromisedState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceCompromisedState: Self = this.set("deviceCompromisedState", js.undefined)
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceId: Self = this.set("deviceId", js.undefined)
+    @scala.inline
+    def setDeviceModel(value: String): Self = this.set("deviceModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceModel: Self = this.set("deviceModel", js.undefined)
+    @scala.inline
+    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    @scala.inline
+    def setIosVendorId(value: String): Self = this.set("iosVendorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosVendorId: Self = this.set("iosVendorId", js.undefined)
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: String): Self = this.set("serialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("serialNumber", js.undefined)
+  }
+  
 }
 

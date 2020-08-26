@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PosCustomBatchResponseEntry extends js.Object {
-  var batchId: js.UndefOr[Double] = js.undefined
-  var errors: js.UndefOr[Errors] = js.undefined
-  var inventory: js.UndefOr[PosInventory] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var sale: js.UndefOr[PosSale] = js.undefined
-  var store: js.UndefOr[PosStore] = js.undefined
+  var batchId: js.UndefOr[Double] = js.native
+  var errors: js.UndefOr[Errors] = js.native
+  var inventory: js.UndefOr[PosInventory] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var sale: js.UndefOr[PosSale] = js.native
+  var store: js.UndefOr[PosStore] = js.native
 }
 
 object PosCustomBatchResponseEntry {
   @scala.inline
-  def apply(
-    batchId: js.UndefOr[Double] = js.undefined,
-    errors: Errors = null,
-    inventory: PosInventory = null,
-    kind: String = null,
-    sale: PosSale = null,
-    store: PosStore = null
-  ): PosCustomBatchResponseEntry = {
+  def apply(): PosCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (inventory != null) __obj.updateDynamic("inventory")(inventory.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (sale != null) __obj.updateDynamic("sale")(sale.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
     __obj.asInstanceOf[PosCustomBatchResponseEntry]
   }
+  @scala.inline
+  implicit class PosCustomBatchResponseEntryOps[Self <: PosCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    @scala.inline
+    def setErrors(value: Errors): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setInventory(value: PosInventory): Self = this.set("inventory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventory: Self = this.set("inventory", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSale(value: PosSale): Self = this.set("sale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSale: Self = this.set("sale", js.undefined)
+    @scala.inline
+    def setStore(value: PosStore): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+  }
+  
 }
 

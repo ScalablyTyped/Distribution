@@ -18,11 +18,32 @@ trait DescribeAlarmHistoryOutput extends js.Object {
 
 object DescribeAlarmHistoryOutput {
   @scala.inline
-  def apply(AlarmHistoryItems: AlarmHistoryItems = null, NextToken: NextToken = null): DescribeAlarmHistoryOutput = {
+  def apply(): DescribeAlarmHistoryOutput = {
     val __obj = js.Dynamic.literal()
-    if (AlarmHistoryItems != null) __obj.updateDynamic("AlarmHistoryItems")(AlarmHistoryItems.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlarmHistoryOutput]
   }
+  @scala.inline
+  implicit class DescribeAlarmHistoryOutputOps[Self <: DescribeAlarmHistoryOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmHistoryItemsVarargs(value: AlarmHistoryItem*): Self = this.set("AlarmHistoryItems", js.Array(value :_*))
+    @scala.inline
+    def setAlarmHistoryItems(value: AlarmHistoryItems): Self = this.set("AlarmHistoryItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarmHistoryItems: Self = this.set("AlarmHistoryItems", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

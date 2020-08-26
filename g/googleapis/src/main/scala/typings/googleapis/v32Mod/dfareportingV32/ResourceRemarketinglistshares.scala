@@ -28,6 +28,7 @@ class ResourceRemarketinglistshares protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def get(callback: BodyResponseCallback[SchemaRemarketingListShare]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def get(params: ParamsResourceRemarketinglistsharesGet): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def get(
     params: ParamsResourceRemarketinglistsharesGet,
@@ -61,6 +62,7 @@ class ResourceRemarketinglistshares protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def patch(callback: BodyResponseCallback[SchemaRemarketingListShare]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def patch(params: ParamsResourceRemarketinglistsharesPatch): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def patch(
     params: ParamsResourceRemarketinglistsharesPatch,
@@ -92,6 +94,7 @@ class ResourceRemarketinglistshares protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def update(callback: BodyResponseCallback[SchemaRemarketingListShare]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def update(params: ParamsResourceRemarketinglistsharesUpdate): GaxiosPromise[SchemaRemarketingListShare] = js.native
   def update(
     params: ParamsResourceRemarketinglistsharesUpdate,

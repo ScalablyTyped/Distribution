@@ -34,18 +34,38 @@ trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails ext
 
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails {
   @scala.inline
-  def apply(
-    errorCount: String = null,
-    fhirStore: String = null,
-    inputSize: String = null,
-    successCount: String = null
-  ): SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails = {
+  def apply(): SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails = {
     val __obj = js.Dynamic.literal()
-    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount.asInstanceOf[js.Any])
-    if (fhirStore != null) __obj.updateDynamic("fhirStore")(fhirStore.asInstanceOf[js.Any])
-    if (inputSize != null) __obj.updateDynamic("inputSize")(inputSize.asInstanceOf[js.Any])
-    if (successCount != null) __obj.updateDynamic("successCount")(successCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetailsOps[Self <: SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCount(value: String): Self = this.set("errorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCount: Self = this.set("errorCount", js.undefined)
+    @scala.inline
+    def setFhirStore(value: String): Self = this.set("fhirStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFhirStore: Self = this.set("fhirStore", js.undefined)
+    @scala.inline
+    def setInputSize(value: String): Self = this.set("inputSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSize: Self = this.set("inputSize", js.undefined)
+    @scala.inline
+    def setSuccessCount(value: String): Self = this.set("successCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessCount: Self = this.set("successCount", js.undefined)
+  }
+  
 }
 

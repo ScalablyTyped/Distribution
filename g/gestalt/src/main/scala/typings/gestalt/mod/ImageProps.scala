@@ -13,49 +13,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImageProps extends js.Object {
-  var alt: String
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var color: String
-  var fit: js.UndefOr[cover | contain | none] = js.undefined
-  var importance: js.UndefOr[high | low | auto] = js.undefined
-  var loading: js.UndefOr[eager | `lazy` | auto] = js.undefined
-  var naturalHeight: Double
-  var naturalWidth: Double
-  var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var sizes: js.UndefOr[String] = js.undefined
-  var src: String
-  var srcSet: js.UndefOr[String] = js.undefined
+  var alt: String = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var color: String = js.native
+  var fit: js.UndefOr[cover | contain | none] = js.native
+  var importance: js.UndefOr[high | low | auto] = js.native
+  var loading: js.UndefOr[eager | `lazy` | auto] = js.native
+  var naturalHeight: Double = js.native
+  var naturalWidth: Double = js.native
+  var onError: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+  var sizes: js.UndefOr[String] = js.native
+  var src: String = js.native
+  var srcSet: js.UndefOr[String] = js.native
 }
 
 object ImageProps {
   @scala.inline
-  def apply(
-    alt: String,
-    color: String,
-    naturalHeight: Double,
-    naturalWidth: Double,
-    src: String,
-    children: ReactNode = null,
-    fit: cover | contain | none = null,
-    importance: high | low | auto = null,
-    loading: eager | `lazy` | auto = null,
-    onError: () => Unit = null,
-    onLoad: () => Unit = null,
-    sizes: String = null,
-    srcSet: String = null
-  ): ImageProps = {
+  def apply(alt: String, color: String, naturalHeight: Double, naturalWidth: Double, src: String): ImageProps = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], naturalHeight = naturalHeight.asInstanceOf[js.Any], naturalWidth = naturalWidth.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
-    if (importance != null) __obj.updateDynamic("importance")(importance.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }
+  @scala.inline
+  implicit class ImagePropsOps[Self <: ImageProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNaturalHeight(value: Double): Self = this.set("naturalHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNaturalWidth(value: Double): Self = this.set("naturalWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setFit(value: cover | contain | none): Self = this.set("fit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFit: Self = this.set("fit", js.undefined)
+    @scala.inline
+    def setImportance(value: high | low | auto): Self = this.set("importance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportance: Self = this.set("importance", js.undefined)
+    @scala.inline
+    def setLoading(value: eager | `lazy` | auto): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoading: Self = this.set("loading", js.undefined)
+    @scala.inline
+    def setOnError(value: () => Unit): Self = this.set("onError", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnLoad(value: () => Unit): Self = this.set("onLoad", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setSrcSet(value: String): Self = this.set("srcSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcSet: Self = this.set("srcSet", js.undefined)
+  }
+  
 }
 

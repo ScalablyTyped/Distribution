@@ -155,6 +155,9 @@ object devextremeStrings {
   sealed trait add extends js.Object
   
   @js.native
+  sealed trait addTask extends js.Object
+  
+  @js.native
   sealed trait after extends js.Object
   
   @js.native
@@ -206,10 +209,16 @@ object devextremeStrings {
   sealed trait anticlockwise extends js.Object
   
   @js.native
+  sealed trait anyof extends js.Object
+  
+  @js.native
   sealed trait area extends js.Object
   
   @js.native
   sealed trait array extends js.Object
+  
+  @js.native
+  sealed trait arrow extends js.Object
   
   @js.native
   sealed trait arrowBottom extends js.Object
@@ -237,12 +246,6 @@ object devextremeStrings {
   
   @js.native
   sealed trait auto extends js.Object
-  
-  @js.native
-  sealed trait autoLayout extends js.Object
-  
-  @js.native
-  sealed trait autoZoom extends js.Object
   
   @js.native
   sealed trait avg extends js.Object
@@ -359,6 +362,9 @@ object devextremeStrings {
   sealed trait clear extends js.Object
   
   @js.native
+  sealed trait clearSelection extends js.Object
+  
+  @js.native
   sealed trait click extends js.Object
   
   @js.native
@@ -378,6 +384,12 @@ object devextremeStrings {
   
   @js.native
   sealed trait col extends js.Object
+  
+  @js.native
+  sealed trait collapseAll extends js.Object
+  
+  @js.native
+  sealed trait collapsed extends js.Object
   
   @js.native
   sealed trait color extends js.Object
@@ -529,6 +541,9 @@ object devextremeStrings {
   sealed trait deleteShapeImage extends js.Object
   
   @js.native
+  sealed trait deleteTask extends js.Object
+  
+  @js.native
   sealed trait desc extends js.Object
   
   @js.native
@@ -584,6 +599,9 @@ object devextremeStrings {
   
   @js.native
   sealed trait download extends js.Object
+  
+  @js.native
+  sealed trait drag extends js.Object
   
   @js.native
   sealed trait dragAndDrop extends js.Object
@@ -715,10 +733,19 @@ object devextremeStrings {
   sealed trait expand extends js.Object
   
   @js.native
+  sealed trait expandAll extends js.Object
+  
+  @js.native
   sealed trait exponential extends _format
   
   @js.native
-  sealed trait export extends js.Object
+  sealed trait exportJpg extends js.Object
+  
+  @js.native
+  sealed trait exportPng extends js.Object
+  
+  @js.native
+  sealed trait exportSvg extends js.Object
   
   @js.native
   sealed trait extrapolate extends js.Object
@@ -740,6 +767,9 @@ object devextremeStrings {
   
   @js.native
   sealed trait filled extends js.Object
+  
+  @js.native
+  sealed trait filledTriangle extends js.Object
   
   @js.native
   sealed trait filter extends js.Object
@@ -1020,6 +1050,30 @@ object devextremeStrings {
   sealed trait layered extends js.Object
   
   @js.native
+  sealed trait layoutLayeredBottomToTop extends js.Object
+  
+  @js.native
+  sealed trait layoutLayeredLeftToRight extends js.Object
+  
+  @js.native
+  sealed trait layoutLayeredRightToLeft extends js.Object
+  
+  @js.native
+  sealed trait layoutLayeredTopToBottom extends js.Object
+  
+  @js.native
+  sealed trait layoutTreeBottomToTop extends js.Object
+  
+  @js.native
+  sealed trait layoutTreeLeftToRight extends js.Object
+  
+  @js.native
+  sealed trait layoutTreeRightToLeft extends js.Object
+  
+  @js.native
+  sealed trait layoutTreeTopToBottom extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -1233,6 +1287,9 @@ object devextremeStrings {
   sealed trait `none flipfit` extends js.Object
   
   @js.native
+  sealed trait noneof extends js.Object
+  
+  @js.native
   sealed trait normal extends js.Object
   
   @js.native
@@ -1308,7 +1365,13 @@ object devextremeStrings {
   sealed trait orgChart extends js.Object
   
   @js.native
+  sealed trait orthogonal extends js.Object
+  
+  @js.native
   sealed trait outlined extends js.Object
+  
+  @js.native
+  sealed trait outlinedTriangle extends js.Object
   
   @js.native
   sealed trait outside extends js.Object
@@ -1750,6 +1813,9 @@ object devextremeStrings {
   sealed trait swipe extends js.Object
   
   @js.native
+  sealed trait switchView extends js.Object
+  
+  @js.native
   sealed trait tabbed extends js.Object
   
   @js.native
@@ -1897,10 +1963,10 @@ object devextremeStrings {
   sealed trait verticalContainer extends js.Object
   
   @js.native
-  sealed trait viewSwitcher extends js.Object
+  sealed trait virtual extends js.Object
   
   @js.native
-  sealed trait virtual extends js.Object
+  sealed trait visible extends js.Object
   
   @js.native
   sealed trait walking extends js.Object
@@ -1944,7 +2010,13 @@ object devextremeStrings {
   sealed trait zoom extends js.Object
   
   @js.native
+  sealed trait zoomIn extends js.Object
+  
+  @js.native
   sealed trait zoomLevel extends js.Object
+  
+  @js.native
+  sealed trait zoomOut extends js.Object
   
   @scala.inline
   def A: A = "A".asInstanceOf[A]
@@ -2045,6 +2117,8 @@ object devextremeStrings {
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline
+  def addTask: addTask = "addTask".asInstanceOf[addTask]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
   @scala.inline
   def agenda: agenda = "agenda".asInstanceOf[agenda]
@@ -2079,9 +2153,13 @@ object devextremeStrings {
   @scala.inline
   def anticlockwise: anticlockwise = "anticlockwise".asInstanceOf[anticlockwise]
   @scala.inline
+  def anyof: anyof = "anyof".asInstanceOf[anyof]
+  @scala.inline
   def area: area = "area".asInstanceOf[area]
   @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
   @scala.inline
   def arrowBottom: arrowBottom = "arrowBottom".asInstanceOf[arrowBottom]
   @scala.inline
@@ -2100,10 +2178,6 @@ object devextremeStrings {
   def async: async = "async".asInstanceOf[async]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def autoLayout: autoLayout = "autoLayout".asInstanceOf[autoLayout]
-  @scala.inline
-  def autoZoom: autoZoom = "autoZoom".asInstanceOf[autoZoom]
   @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
   @scala.inline
@@ -2181,6 +2255,8 @@ object devextremeStrings {
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
+  def clearSelection: clearSelection = "clearSelection".asInstanceOf[clearSelection]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
   @scala.inline
   def clockwise: clockwise = "clockwise".asInstanceOf[clockwise]
@@ -2194,6 +2270,10 @@ object devextremeStrings {
   def codeBlock: codeBlock = "codeBlock".asInstanceOf[codeBlock]
   @scala.inline
   def col: col = "col".asInstanceOf[col]
+  @scala.inline
+  def collapseAll: collapseAll = "collapseAll".asInstanceOf[collapseAll]
+  @scala.inline
+  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   @scala.inline
@@ -2293,6 +2373,8 @@ object devextremeStrings {
   @scala.inline
   def deleteShapeImage: deleteShapeImage = "deleteShapeImage".asInstanceOf[deleteShapeImage]
   @scala.inline
+  def deleteTask: deleteTask = "deleteTask".asInstanceOf[deleteTask]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
@@ -2330,6 +2412,8 @@ object devextremeStrings {
   def down: down = "down".asInstanceOf[down]
   @scala.inline
   def download: download = "download".asInstanceOf[download]
+  @scala.inline
+  def drag: drag = "drag".asInstanceOf[drag]
   @scala.inline
   def dragAndDrop: dragAndDrop = "dragAndDrop".asInstanceOf[dragAndDrop]
   @scala.inline
@@ -2417,9 +2501,15 @@ object devextremeStrings {
   @scala.inline
   def expand: expand = "expand".asInstanceOf[expand]
   @scala.inline
+  def expandAll: expandAll = "expandAll".asInstanceOf[expandAll]
+  @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
   @scala.inline
-  def export: export = "export".asInstanceOf[export]
+  def exportJpg: exportJpg = "exportJpg".asInstanceOf[exportJpg]
+  @scala.inline
+  def exportPng: exportPng = "exportPng".asInstanceOf[exportPng]
+  @scala.inline
+  def exportSvg: exportSvg = "exportSvg".asInstanceOf[exportSvg]
   @scala.inline
   def extrapolate: extrapolate = "extrapolate".asInstanceOf[extrapolate]
   @scala.inline
@@ -2434,6 +2524,8 @@ object devextremeStrings {
   def fillColor: fillColor = "fillColor".asInstanceOf[fillColor]
   @scala.inline
   def filled: filled = "filled".asInstanceOf[filled]
+  @scala.inline
+  def filledTriangle: filledTriangle = "filledTriangle".asInstanceOf[filledTriangle]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
   @scala.inline
@@ -2619,6 +2711,22 @@ object devextremeStrings {
   @scala.inline
   def layered: layered = "layered".asInstanceOf[layered]
   @scala.inline
+  def layoutLayeredBottomToTop: layoutLayeredBottomToTop = "layoutLayeredBottomToTop".asInstanceOf[layoutLayeredBottomToTop]
+  @scala.inline
+  def layoutLayeredLeftToRight: layoutLayeredLeftToRight = "layoutLayeredLeftToRight".asInstanceOf[layoutLayeredLeftToRight]
+  @scala.inline
+  def layoutLayeredRightToLeft: layoutLayeredRightToLeft = "layoutLayeredRightToLeft".asInstanceOf[layoutLayeredRightToLeft]
+  @scala.inline
+  def layoutLayeredTopToBottom: layoutLayeredTopToBottom = "layoutLayeredTopToBottom".asInstanceOf[layoutLayeredTopToBottom]
+  @scala.inline
+  def layoutTreeBottomToTop: layoutTreeBottomToTop = "layoutTreeBottomToTop".asInstanceOf[layoutTreeBottomToTop]
+  @scala.inline
+  def layoutTreeLeftToRight: layoutTreeLeftToRight = "layoutTreeLeftToRight".asInstanceOf[layoutTreeLeftToRight]
+  @scala.inline
+  def layoutTreeRightToLeft: layoutTreeRightToLeft = "layoutTreeRightToLeft".asInstanceOf[layoutTreeRightToLeft]
+  @scala.inline
+  def layoutTreeTopToBottom: layoutTreeTopToBottom = "layoutTreeTopToBottom".asInstanceOf[layoutTreeTopToBottom]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def `left bottom`: `left bottom` = ("left bottom").asInstanceOf[`left bottom`]
@@ -2757,6 +2865,8 @@ object devextremeStrings {
   @scala.inline
   def `none flipfit`: `none flipfit` = ("none flipfit").asInstanceOf[`none flipfit`]
   @scala.inline
+  def noneof: noneof = "noneof".asInstanceOf[noneof]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def notAnd: notAnd = "notAnd".asInstanceOf[notAnd]
@@ -2807,7 +2917,11 @@ object devextremeStrings {
   @scala.inline
   def orgChart: orgChart = "orgChart".asInstanceOf[orgChart]
   @scala.inline
+  def orthogonal: orthogonal = "orthogonal".asInstanceOf[orthogonal]
+  @scala.inline
   def outlined: outlined = "outlined".asInstanceOf[outlined]
+  @scala.inline
+  def outlinedTriangle: outlinedTriangle = "outlinedTriangle".asInstanceOf[outlinedTriangle]
   @scala.inline
   def outside: outside = "outside".asInstanceOf[outside]
   @scala.inline
@@ -3099,6 +3213,8 @@ object devextremeStrings {
   @scala.inline
   def swipe: swipe = "swipe".asInstanceOf[swipe]
   @scala.inline
+  def switchView: switchView = "switchView".asInstanceOf[switchView]
+  @scala.inline
   def tabbed: tabbed = "tabbed".asInstanceOf[tabbed]
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
@@ -3197,9 +3313,9 @@ object devextremeStrings {
   @scala.inline
   def verticalContainer: verticalContainer = "verticalContainer".asInstanceOf[verticalContainer]
   @scala.inline
-  def viewSwitcher: viewSwitcher = "viewSwitcher".asInstanceOf[viewSwitcher]
-  @scala.inline
   def virtual: virtual = "virtual".asInstanceOf[virtual]
+  @scala.inline
+  def visible: visible = "visible".asInstanceOf[visible]
   @scala.inline
   def walking: walking = "walking".asInstanceOf[walking]
   @scala.inline
@@ -3227,6 +3343,10 @@ object devextremeStrings {
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   @scala.inline
+  def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
+  @scala.inline
   def zoomLevel: zoomLevel = "zoomLevel".asInstanceOf[zoomLevel]
+  @scala.inline
+  def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
 }
 

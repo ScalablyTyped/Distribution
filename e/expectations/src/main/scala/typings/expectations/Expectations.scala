@@ -15,6 +15,7 @@ object Expectations extends js.Object {
     var parent: Expect = js.native
     var value: js.Any = js.native
     def fail(): js.Any = js.native
+    def fail(why: js.UndefOr[scala.Nothing], what: js.Any): js.Any = js.native
     def fail(why: String): js.Any = js.native
     def fail(why: String, what: js.Any): js.Any = js.native
     def generateMessage(value: js.Any, expr: js.Any, toDo: String): String = js.native

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * ListItem or Paragraph, but cannot itself contain any other element. For more
   * information on document structure, see the guide to extending Google Docs.
   */
+@js.native
 trait HorizontalRule extends Element
 
 object HorizontalRule {

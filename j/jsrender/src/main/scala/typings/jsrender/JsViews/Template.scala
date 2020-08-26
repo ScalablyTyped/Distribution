@@ -31,7 +31,12 @@ trait Template extends TemplateRender {
   	 * @returns {string}   rendered template
   	 */
   def render(): String = js.native
+  def render(data: js.UndefOr[scala.Nothing], helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
+  def render(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_]): String = js.native
+  def render(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
+  def render(data: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def render(data: js.Any): String = js.native
+  def render(data: js.Any, helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def render(data: js.Any, helpersOrContext: Hash[_]): String = js.native
   def render(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def render(data: js.Any, noIteration: Boolean): String = js.native

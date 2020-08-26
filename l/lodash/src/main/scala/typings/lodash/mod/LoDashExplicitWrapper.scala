@@ -348,6 +348,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.debounce
     */
   def debounce(): LoDashExplicitWrapper[TValue with Cancelable] = js.native
+  def debounce(wait: js.UndefOr[scala.Nothing], options: DebounceSettings): LoDashExplicitWrapper[TValue with Cancelable] = js.native
   def debounce(wait: Double): LoDashExplicitWrapper[TValue with Cancelable] = js.native
   def debounce(wait: Double, options: DebounceSettings): LoDashExplicitWrapper[TValue with Cancelable] = js.native
   /**
@@ -500,6 +501,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.endsWith
     */
   def endsWith(): LoDashExplicitWrapper[Boolean] = js.native
+  def endsWith(target: js.UndefOr[scala.Nothing], position: Double): LoDashExplicitWrapper[Boolean] = js.native
   def endsWith(target: String): LoDashExplicitWrapper[Boolean] = js.native
   def endsWith(target: String, position: Double): LoDashExplicitWrapper[Boolean] = js.native
   /**
@@ -602,6 +604,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.fill
     */
   def fill[T](value: T): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def fill[T, U](value: T, start: js.UndefOr[scala.Nothing], end: Double): LoDashExplicitWrapper[js.Array[T | U]] = js.native
   def fill[T, U](value: T, start: Double): LoDashExplicitWrapper[js.Array[T | U]] = js.native
   def fill[T, U](value: T, start: Double, end: Double): LoDashExplicitWrapper[js.Array[T | U]] = js.native
   /**
@@ -649,8 +652,8 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.find
     */
   def find[T](): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
+  def find[T](predicate: js.UndefOr[ListIterateeCustom[T, Boolean]], fromIndex: Double): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
   def find[T](predicate: ListIterateeCustom[T, Boolean]): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
-  def find[T](predicate: ListIterateeCustom[T, Boolean], fromIndex: Double): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
   /**
     * @see _.find
     */
@@ -660,8 +663,8 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findIndex
     */
   def findIndex[T](): LoDashExplicitWrapper[Double] = js.native
+  def findIndex[T](predicate: js.UndefOr[ListIterateeCustom[T, Boolean]], fromIndex: Double): LoDashExplicitWrapper[Double] = js.native
   def findIndex[T](predicate: ListIterateeCustom[T, Boolean]): LoDashExplicitWrapper[Double] = js.native
-  def findIndex[T](predicate: ListIterateeCustom[T, Boolean], fromIndex: Double): LoDashExplicitWrapper[Double] = js.native
   /**
     * @see _.findKey
     */
@@ -671,8 +674,8 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findLast
     */
   def findLast[T](): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
+  def findLast[T](predicate: js.UndefOr[ListIterateeCustom[T, Boolean]], fromIndex: Double): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
   def findLast[T](predicate: ListIterateeCustom[T, Boolean]): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
-  def findLast[T](predicate: ListIterateeCustom[T, Boolean], fromIndex: Double): LoDashExplicitWrapper[js.UndefOr[T]] = js.native
   /**
     * @see _.findLast
     */
@@ -682,8 +685,8 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findLastIndex
     */
   def findLastIndex[T](): LoDashExplicitWrapper[Double] = js.native
+  def findLastIndex[T](predicate: js.UndefOr[ListIterateeCustom[T, Boolean]], fromIndex: Double): LoDashExplicitWrapper[Double] = js.native
   def findLastIndex[T](predicate: ListIterateeCustom[T, Boolean]): LoDashExplicitWrapper[Double] = js.native
-  def findLastIndex[T](predicate: ListIterateeCustom[T, Boolean], fromIndex: Double): LoDashExplicitWrapper[Double] = js.native
   /**
     * @see _.findLastKey
     */
@@ -706,13 +709,13 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     ]
   ] = js.native
   @JSName("findLast")
-  def findLast_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
+  def findLast_T_Object[T /* <: js.Object */](predicate: js.UndefOr[ObjectIterateeCustom[T, Boolean]], fromIndex: Double): LoDashExplicitWrapper[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   @JSName("findLast")
-  def findLast_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean], fromIndex: Double): LoDashExplicitWrapper[
+  def findLast_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -734,13 +737,13 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     ]
   ] = js.native
   @JSName("find")
-  def find_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
+  def find_T_Object[T /* <: js.Object */](predicate: js.UndefOr[ObjectIterateeCustom[T, Boolean]], fromIndex: Double): LoDashExplicitWrapper[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   @JSName("find")
-  def find_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean], fromIndex: Double): LoDashExplicitWrapper[
+  def find_T_Object[T /* <: js.Object */](predicate: ObjectIterateeCustom[T, Boolean]): LoDashExplicitWrapper[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -2052,8 +2055,11 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.orderBy
     */
   def orderBy[T](): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def orderBy[T](
+    iteratees: js.UndefOr[Many[ListIteratee[T] | (ListIterator[T, NotVoid])]],
+    orders: Many[Boolean | asc | desc]
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
   def orderBy[T](iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def orderBy[T](iteratees: Many[ListIteratee[T] | (ListIterator[T, NotVoid])], orders: Many[Boolean | asc | desc]): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.orderBy
     */
@@ -2064,16 +2070,16 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     ]
   ] = js.native
   @JSName("orderBy")
-  def orderBy_T_Object[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]): LoDashExplicitWrapper[
+  def orderBy_T_Object[T /* <: js.Object */](
+    iteratees: js.UndefOr[Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]],
+    orders: Many[Boolean | asc | desc]
+  ): LoDashExplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
   ] = js.native
   @JSName("orderBy")
-  def orderBy_T_Object[T /* <: js.Object */](
-    iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])],
-    orders: Many[Boolean | asc | desc]
-  ): LoDashExplicitWrapper[
+  def orderBy_T_Object[T /* <: js.Object */](iteratees: Many[ObjectIteratee[T] | (ObjectIterator[T, NotVoid])]): LoDashExplicitWrapper[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
@@ -2098,18 +2104,21 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.pad
     */
   def pad(): LoDashExplicitWrapper[String] = js.native
+  def pad(length: js.UndefOr[scala.Nothing], chars: String): LoDashExplicitWrapper[String] = js.native
   def pad(length: Double): LoDashExplicitWrapper[String] = js.native
   def pad(length: Double, chars: String): LoDashExplicitWrapper[String] = js.native
   /**
     * @see _.padEnd
     */
   def padEnd(): LoDashExplicitWrapper[String] = js.native
+  def padEnd(length: js.UndefOr[scala.Nothing], chars: String): LoDashExplicitWrapper[String] = js.native
   def padEnd(length: Double): LoDashExplicitWrapper[String] = js.native
   def padEnd(length: Double, chars: String): LoDashExplicitWrapper[String] = js.native
   /**
     * @see _.padStart
     */
   def padStart(): LoDashExplicitWrapper[String] = js.native
+  def padStart(length: js.UndefOr[scala.Nothing], chars: String): LoDashExplicitWrapper[String] = js.native
   def padStart(length: Double): LoDashExplicitWrapper[String] = js.native
   def padStart(length: Double, chars: String): LoDashExplicitWrapper[String] = js.native
   /**
@@ -2493,12 +2502,14 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.range
     */
   def range(): LoDashExplicitWrapper[js.Array[Double]] = js.native
+  def range(end: js.UndefOr[scala.Nothing], step: Double): LoDashExplicitWrapper[js.Array[Double]] = js.native
   def range(end: Double): LoDashExplicitWrapper[js.Array[Double]] = js.native
   def range(end: Double, step: Double): LoDashExplicitWrapper[js.Array[Double]] = js.native
   /**
     * @see _.rangeRight
     */
   def rangeRight(): LoDashExplicitWrapper[js.Array[Double]] = js.native
+  def rangeRight(end: js.UndefOr[scala.Nothing], step: Double): LoDashExplicitWrapper[js.Array[Double]] = js.native
   def rangeRight(end: Double): LoDashExplicitWrapper[js.Array[Double]] = js.native
   def rangeRight(end: Double, step: Double): LoDashExplicitWrapper[js.Array[Double]] = js.native
   /**
@@ -2715,6 +2726,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.slice
     */
   def slice[T](): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def slice[T](start: js.UndefOr[scala.Nothing], end: Double): LoDashExplicitWrapper[js.Array[T]] = js.native
   def slice[T](start: Double): LoDashExplicitWrapper[js.Array[T]] = js.native
   def slice[T](start: Double, end: Double): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
@@ -2781,12 +2793,13 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.sortedUniqBy
     */
   def sortedUniqBy[T](iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def splice[T](start: Double): this.type = js.native
+  def splice[T](start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): this.type = js.native
   def splice[T](start: Double, deleteCount: Double, items: T*): this.type = js.native
   /**
     * @see _.split
     */
   def split(): LoDashExplicitWrapper[js.Array[String]] = js.native
+  def split(separator: js.UndefOr[scala.Nothing], limit: Double): LoDashExplicitWrapper[js.Array[String]] = js.native
   def split(separator: String): LoDashExplicitWrapper[js.Array[String]] = js.native
   def split(separator: String, limit: Double): LoDashExplicitWrapper[js.Array[String]] = js.native
   def split(separator: RegExp): LoDashExplicitWrapper[js.Array[String]] = js.native
@@ -2807,6 +2820,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.startsWith
     */
   def startsWith(): LoDashExplicitWrapper[Boolean] = js.native
+  def startsWith(target: js.UndefOr[scala.Nothing], position: Double): LoDashExplicitWrapper[Boolean] = js.native
   def startsWith(target: String): LoDashExplicitWrapper[Boolean] = js.native
   def startsWith(target: String, position: Double): LoDashExplicitWrapper[Boolean] = js.native
   /**
@@ -2876,6 +2890,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.throttle
     */
   def throttle(): LoDashExplicitWrapper[TValue with Cancelable] = js.native
+  def throttle(wait: js.UndefOr[scala.Nothing], options: ThrottleSettings): LoDashExplicitWrapper[TValue with Cancelable] = js.native
   def throttle(wait: Double): LoDashExplicitWrapper[TValue with Cancelable] = js.native
   def throttle(wait: Double, options: ThrottleSettings): LoDashExplicitWrapper[TValue with Cancelable] = js.native
   /**
@@ -3011,123 +3026,82 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.unionBy
     */
   def unionBy[T](): LoDashExplicitWrapper[js.Array[T]] = js.native
+  /**
+    * @see _.unionBy
+    */
   def unionBy[T](
-    arrays2: Null,
-    arrays3: Null,
-    arrays4: Null,
-    arrays5: List[T],
+    arrays2: js.UndefOr[List[T] | Null],
+    arrays3: js.UndefOr[List[T] | Null],
+    arrays4: js.UndefOr[List[T] | Null],
+    arrays5: js.UndefOr[List[T] | Null],
     iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
   ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: Null, arrays4: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: Null, arrays4: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  /**
+    * @see _.unionBy
+    */
   def unionBy[T](
-    arrays2: Null,
-    arrays3: Null,
-    arrays4: List[T],
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
+    arrays2: js.UndefOr[List[T] | Null],
+    arrays3: js.UndefOr[List[T] | Null],
+    arrays4: js.UndefOr[List[T] | Null],
+    iteratee: js.UndefOr[ValueIteratee[T]]
   ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: Null,
-    arrays3: Null,
-    arrays4: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: Null, arrays4: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: js.UndefOr[scala.Nothing], arrays3: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: js.UndefOr[scala.Nothing], arrays3: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: js.UndefOr[scala.Nothing], arrays3: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: js.UndefOr[scala.Nothing], arrays3: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: Null, arrays3: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: Null, arrays3: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: Null, arrays3: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: Null,
-    arrays3: List[T],
-    arrays4: Null,
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: List[T], arrays4: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: List[T], arrays4: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: Null,
-    arrays3: List[T],
-    arrays4: List[T],
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: Null,
-    arrays3: List[T],
-    arrays4: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: List[T], arrays4: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: Null, arrays3: List[T], iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: Null, arrays3: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: List[T],
-    arrays3: Null,
-    arrays4: Null,
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: Null, arrays4: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: Null, arrays4: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: List[T],
-    arrays3: Null,
-    arrays4: List[T],
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: List[T],
-    arrays3: Null,
-    arrays4: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: Null, arrays4: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionBy[T](arrays2: List[T], arrays3: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: List[T], arrays3: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: List[T], arrays3: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: List[T],
-    arrays3: List[T],
-    arrays4: Null,
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: List[T], arrays4: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: List[T], arrays4: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: List[T],
-    arrays3: List[T],
-    arrays4: List[T],
-    arrays5: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](
-    arrays2: List[T],
-    arrays3: List[T],
-    arrays4: List[T],
-    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
-  ): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: List[T], arrays4: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], arrays3: List[T], iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: List[T], arrays3: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](arrays2: List[T], iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](arrays2: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionBy[T](iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionBy[T](iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.unionWith
     */
   def unionWith[T](): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: js.UndefOr[scala.Nothing],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: Null,
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: List[T],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](arrays2: js.UndefOr[scala.Nothing], comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](
+    arrays2: Null,
+    arrays3: js.UndefOr[scala.Nothing],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](arrays2: Null, arrays3: Null, comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionWith[T](arrays2: Null, arrays3: List[T], comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionWith[T](arrays2: Null, comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionWith[T](arrays2: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](
+    arrays2: List[T],
+    arrays3: js.UndefOr[scala.Nothing],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def unionWith[T](arrays2: List[T], arrays3: Null, comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
+  /**
+    * @see _.unionWith
+    */
   def unionWith[T](arrays2: List[T], arrays3: List[T], comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionWith[T](arrays2: List[T], comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionWith[T](arrays2: List[T], comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def unionWith[T](comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def unionWith[T](comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.uniq
@@ -3253,25 +3227,83 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.xorBy
     */
   def xorBy[T](): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: js.UndefOr[scala.Nothing],
+    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: Null,
+    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: List[T],
+    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](arrays2: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](
+    arrays2: Null,
+    arrays3: js.UndefOr[scala.Nothing],
+    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](arrays2: Null, arrays3: Null, iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorBy[T](arrays2: Null, arrays3: List[T], iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorBy[T](arrays2: Null, iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorBy[T](arrays2: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](
+    arrays2: List[T],
+    arrays3: js.UndefOr[scala.Nothing],
+    iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorBy[T](arrays2: List[T], arrays3: Null, iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
+  /**
+    * @see _.xorBy
+    */
   def xorBy[T](arrays2: List[T], arrays3: List[T], iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def xorBy[T](arrays2: List[T], iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorBy[T](arrays2: List[T], iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def xorBy[T](iteratee: (js.UndefOr[ValueIteratee[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorBy[T](iteratee: ValueIteratee[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.xorWith
     */
   def xorWith[T](): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: js.UndefOr[scala.Nothing],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: Null,
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](
+    arrays2: js.UndefOr[scala.Nothing],
+    arrays3: List[T],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](arrays2: js.UndefOr[scala.Nothing], comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](
+    arrays2: Null,
+    arrays3: js.UndefOr[scala.Nothing],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](arrays2: Null, arrays3: Null, comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorWith[T](arrays2: Null, arrays3: List[T], comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorWith[T](arrays2: Null, comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorWith[T](arrays2: List[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](
+    arrays2: List[T],
+    arrays3: js.UndefOr[scala.Nothing],
+    comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*
+  ): LoDashExplicitWrapper[js.Array[T]] = js.native
+  def xorWith[T](arrays2: List[T], arrays3: Null, comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
+  /**
+    * @see _.xorWith
+    */
   def xorWith[T](arrays2: List[T], arrays3: List[T], comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def xorWith[T](arrays2: List[T], comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorWith[T](arrays2: List[T], comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
-  def xorWith[T](comparator: (js.UndefOr[Comparator[T] | List[T] | Null])*): LoDashExplicitWrapper[js.Array[T]] = js.native
   def xorWith[T](comparator: Comparator[T]): LoDashExplicitWrapper[js.Array[T]] = js.native
   /**
     * @see _.zip

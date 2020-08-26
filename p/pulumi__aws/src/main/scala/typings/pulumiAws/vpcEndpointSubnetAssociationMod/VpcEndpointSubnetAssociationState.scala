@@ -19,11 +19,30 @@ trait VpcEndpointSubnetAssociationState extends js.Object {
 
 object VpcEndpointSubnetAssociationState {
   @scala.inline
-  def apply(subnetId: Input[String] = null, vpcEndpointId: Input[String] = null): VpcEndpointSubnetAssociationState = {
+  def apply(): VpcEndpointSubnetAssociationState = {
     val __obj = js.Dynamic.literal()
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (vpcEndpointId != null) __obj.updateDynamic("vpcEndpointId")(vpcEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointSubnetAssociationState]
   }
+  @scala.inline
+  implicit class VpcEndpointSubnetAssociationStateOps[Self <: VpcEndpointSubnetAssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setVpcEndpointId(value: Input[String]): Self = this.set("vpcEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointId: Self = this.set("vpcEndpointId", js.undefined)
+  }
+  
 }
 

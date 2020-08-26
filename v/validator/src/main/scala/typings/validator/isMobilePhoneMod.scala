@@ -15,6 +15,11 @@ object isMobilePhoneMod extends js.Object {
     * @param [options] - Options
     */
   def default(str: String): Boolean = js.native
+  def default(
+    str: String,
+    locale: js.UndefOr[scala.Nothing],
+    options: typings.validator.mod.validator.IsMobilePhoneOptions
+  ): Boolean = js.native
   def default(str: String, locale: js.Array[typings.validator.mod.validator.MobilePhoneLocale]): Boolean = js.native
   def default(
     str: String,

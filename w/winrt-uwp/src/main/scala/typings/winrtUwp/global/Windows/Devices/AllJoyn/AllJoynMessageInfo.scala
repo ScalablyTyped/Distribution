@@ -14,8 +14,5 @@ class AllJoynMessageInfo protected ()
     * @param senderUniqueName The unique name of the sender.
     */
   def this(senderUniqueName: String) = this()
-  /** The unique bus name of the message sender. */
-  /* CompleteClass */
-  override var senderUniqueName: String = js.native
 }
 

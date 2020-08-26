@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("openfin/_v2/transport/transport", JSImport.Default)
 @js.native
 class default protected () extends Transport {
-  def this(wireType: WireConstructor, environment: Environment) = this()
+  def this(WireType: WireConstructor, environment: Environment) = this()
 }
 

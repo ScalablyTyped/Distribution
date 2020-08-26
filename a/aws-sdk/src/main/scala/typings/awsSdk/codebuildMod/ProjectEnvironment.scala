@@ -42,24 +42,51 @@ trait ProjectEnvironment extends js.Object {
 
 object ProjectEnvironment {
   @scala.inline
-  def apply(
-    computeType: ComputeType,
-    image: NonEmptyString,
-    `type`: EnvironmentType,
-    certificate: String = null,
-    environmentVariables: EnvironmentVariables = null,
-    imagePullCredentialsType: ImagePullCredentialsType = null,
-    privilegedMode: js.UndefOr[WrapperBoolean] = js.undefined,
-    registryCredential: RegistryCredential = null
-  ): ProjectEnvironment = {
+  def apply(computeType: ComputeType, image: NonEmptyString, `type`: EnvironmentType): ProjectEnvironment = {
     val __obj = js.Dynamic.literal(computeType = computeType.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables.asInstanceOf[js.Any])
-    if (imagePullCredentialsType != null) __obj.updateDynamic("imagePullCredentialsType")(imagePullCredentialsType.asInstanceOf[js.Any])
-    if (!js.isUndefined(privilegedMode)) __obj.updateDynamic("privilegedMode")(privilegedMode.get.asInstanceOf[js.Any])
-    if (registryCredential != null) __obj.updateDynamic("registryCredential")(registryCredential.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectEnvironment]
   }
+  @scala.inline
+  implicit class ProjectEnvironmentOps[Self <: ProjectEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeType(value: ComputeType): Self = this.set("computeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: NonEmptyString): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: EnvironmentType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setEnvironmentVariablesVarargs(value: EnvironmentVariable*): Self = this.set("environmentVariables", js.Array(value :_*))
+    @scala.inline
+    def setEnvironmentVariables(value: EnvironmentVariables): Self = this.set("environmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentVariables: Self = this.set("environmentVariables", js.undefined)
+    @scala.inline
+    def setImagePullCredentialsType(value: ImagePullCredentialsType): Self = this.set("imagePullCredentialsType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePullCredentialsType: Self = this.set("imagePullCredentialsType", js.undefined)
+    @scala.inline
+    def setPrivilegedMode(value: WrapperBoolean): Self = this.set("privilegedMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivilegedMode: Self = this.set("privilegedMode", js.undefined)
+    @scala.inline
+    def setRegistryCredential(value: RegistryCredential): Self = this.set("registryCredential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryCredential: Self = this.set("registryCredential", js.undefined)
+  }
+  
 }
 

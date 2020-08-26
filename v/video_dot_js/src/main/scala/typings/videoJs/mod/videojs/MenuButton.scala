@@ -35,6 +35,7 @@ trait MenuButton extends Component {
     * @return - The control text when getting
     */
   def controlText(): String = js.native
+  def controlText(text: js.UndefOr[scala.Nothing], el: Element): String = js.native
   def controlText(text: String, el: Element): String = js.native
   /**
     * Create the list of menu items. Specific to each subclass.

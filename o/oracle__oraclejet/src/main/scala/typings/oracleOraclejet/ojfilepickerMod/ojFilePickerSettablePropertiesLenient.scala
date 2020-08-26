@@ -12,27 +12,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojfilepicker.ojFilePickerSettableProperties> */
+@js.native
 trait ojFilePickerSettablePropertiesLenient
   extends /* key */ StringDictionary[js.Any] {
-  var accept: js.UndefOr[js.Array[String]] = js.undefined
-  var selectOn: js.UndefOr[auto | click | drop | clickAndDrop] = js.undefined
-  var selectionMode: js.UndefOr[multiple | single] = js.undefined
+  var accept: js.UndefOr[js.Array[String] | Null] = js.native
+  var selectOn: js.UndefOr[auto | click | drop | clickAndDrop] = js.native
+  var selectionMode: js.UndefOr[multiple | single] = js.native
 }
 
 object ojFilePickerSettablePropertiesLenient {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    accept: js.Array[String] = null,
-    selectOn: auto | click | drop | clickAndDrop = null,
-    selectionMode: multiple | single = null
-  ): ojFilePickerSettablePropertiesLenient = {
+  def apply(): ojFilePickerSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (selectOn != null) __obj.updateDynamic("selectOn")(selectOn.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojFilePickerSettablePropertiesLenient]
   }
+  @scala.inline
+  implicit class ojFilePickerSettablePropertiesLenientOps[Self <: ojFilePickerSettablePropertiesLenient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptVarargs(value: String*): Self = this.set("accept", js.Array(value :_*))
+    @scala.inline
+    def setAccept(value: js.Array[String]): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setAcceptNull: Self = this.set("accept", null)
+    @scala.inline
+    def setSelectOn(value: auto | click | drop | clickAndDrop): Self = this.set("selectOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOn: Self = this.set("selectOn", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: multiple | single): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+  }
+  
 }
 

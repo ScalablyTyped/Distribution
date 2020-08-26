@@ -1,45 +1,51 @@
 package typings.knockstrap
 
-import typings.knockout.KnockoutAllBindingsAccessor
-import typings.knockout.KnockoutBindingContext
-import typings.knockout.KnockoutBindingHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ProgressKnockoutBindingHandler
-  extends KnockoutBindingHandler[js.Any, js.Any, js.Any] {
-  var defaults: KnockstrapProgressDefaults
-  @JSName("init")
-  var init_ProgressKnockoutBindingHandler: js.UndefOr[
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler * / any */ @js.native
+trait ProgressKnockoutBindingHandler extends js.Object {
+  var defaults: KnockstrapProgressDefaults = js.native
+  var init: js.UndefOr[
     js.Function5[
       /* element */ js.Any, 
       /* valueAccessor */ js.Function0[_], 
-      /* allBindingsAccessor */ KnockoutAllBindingsAccessor, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ js.Any, 
       /* viewModel */ js.Any, 
-      /* bindingContext */ KnockoutBindingContext, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ js.Any, 
       KnockoutControlsDescendantBindings
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object ProgressKnockoutBindingHandler {
   @scala.inline
-  def apply(
-    defaults: KnockstrapProgressDefaults,
-    after: js.Array[String] = null,
-    init: (/* element */ js.Any, /* valueAccessor */ js.Function0[_], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, /* viewModel */ js.Any, /* bindingContext */ KnockoutBindingContext) => KnockoutControlsDescendantBindings = null,
-    options: js.Any = null,
-    preprocess: (/* value */ String, /* name */ String, /* addBindingCallback */ js.UndefOr[js.Function2[/* name */ String, /* value */ String, Unit]]) => String = null,
-    update: (js.Any, /* valueAccessor */ js.Function0[js.Any], /* allBindingsAccessor */ KnockoutAllBindingsAccessor, js.Any, /* bindingContext */ KnockoutBindingContext) => Unit = null
-  ): ProgressKnockoutBindingHandler = {
+  def apply(defaults: KnockstrapProgressDefaults): ProgressKnockoutBindingHandler = {
     val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction5(init))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (preprocess != null) __obj.updateDynamic("preprocess")(js.Any.fromFunction3(preprocess))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction5(update))
     __obj.asInstanceOf[ProgressKnockoutBindingHandler]
   }
+  @scala.inline
+  implicit class ProgressKnockoutBindingHandlerOps[Self <: ProgressKnockoutBindingHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaults(value: KnockstrapProgressDefaults): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInit(
+      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[_], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ js.Any, /* viewModel */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ js.Any) => KnockoutControlsDescendantBindings
+    ): Self = this.set("init", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+  }
+  
 }
 

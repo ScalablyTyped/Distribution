@@ -11,7 +11,7 @@ factory for building JavaScript objects, mostly useful for setting up test data.
 | Keywords           | factory, rosie, test |
 | # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 2268671 |
+| # downloads        | 2310311 |
 | # stars            | 6 |
 
 ## Links

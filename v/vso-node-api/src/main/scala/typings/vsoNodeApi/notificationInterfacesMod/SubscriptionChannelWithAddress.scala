@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubscriptionChannelWithAddress extends js.Object {
-  var address: String
-  var `type`: String
-  var useCustomAddress: Boolean
+  var address: String = js.native
+  var `type`: String = js.native
+  var useCustomAddress: Boolean = js.native
 }
 
 object SubscriptionChannelWithAddress {
@@ -17,5 +18,24 @@ object SubscriptionChannelWithAddress {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionChannelWithAddress]
   }
+  @scala.inline
+  implicit class SubscriptionChannelWithAddressOps[Self <: SubscriptionChannelWithAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseCustomAddress(value: Boolean): Self = this.set("useCustomAddress", value.asInstanceOf[js.Any])
+  }
+  
 }
 

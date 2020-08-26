@@ -2,7 +2,7 @@ package typings.echarts.echarts.EChartOption
 
 import typings.echarts.anon.Arguments
 import typings.echarts.anon.BorderType
-import typings.echarts.anon.ItemStyleBorderType
+import typings.echarts.anon.`2`
 import typings.echarts.echarts.EChartOption.SeriesCustom.DataObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -141,6 +141,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-custom
   */
+@js.native
 trait SeriesCustom_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -150,7 +151,7 @@ trait SeriesCustom_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-custom.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -166,7 +167,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -182,7 +183,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -194,7 +195,7 @@ trait SeriesCustom_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-custom.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -206,7 +207,7 @@ trait SeriesCustom_ extends js.Object {
     * 300
     * @see https://echarts.apache.org/en/option.html#series-custom.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -218,7 +219,7 @@ trait SeriesCustom_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-custom.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -227,7 +228,7 @@ trait SeriesCustom_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-custom.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  var animationEasingUpdate: js.UndefOr[String] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -238,7 +239,7 @@ trait SeriesCustom_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-custom.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * Index of
     * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
@@ -248,7 +249,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.calendarIndex
     */
-  var calendarIndex: js.UndefOr[Double] = js.undefined
+  var calendarIndex: js.UndefOr[Double] = js.native
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -286,7 +287,7 @@ trait SeriesCustom_ extends js.Object {
     * "cartesian2d"
     * @see https://echarts.apache.org/en/option.html#series-custom.coordinateSystem
     */
-  var coordinateSystem: js.UndefOr[String] = js.undefined
+  var coordinateSystem: js.UndefOr[String] = js.native
   /**
     * Data array of series, which can be in the following forms:
     *
@@ -423,7 +424,7 @@ trait SeriesCustom_ extends js.Object {
     js.Array[
       (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * If
     * [series.data](https://echarts.apache.org/en/option.html#series.data)
@@ -435,7 +436,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.datasetIndex
     */
-  var datasetIndex: js.UndefOr[Double] = js.undefined
+  var datasetIndex: js.UndefOr[Double] = js.native
   /**
     * `dimensions` can be used to define dimension info for `series.data`
     * or `dataset.source`.
@@ -483,11 +484,11 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.dimensions
     */
-  var dimensions: js.UndefOr[js.Array[_]] = js.undefined
+  var dimensions: js.UndefOr[js.Array[_]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-custom.emphasis
     */
-  var emphasis: js.UndefOr[ItemStyleBorderType] = js.undefined
+  var emphasis: js.UndefOr[`2`] = js.native
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -524,7 +525,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.encode
     */
-  var encode: js.UndefOr[js.Object] = js.undefined
+  var encode: js.UndefOr[js.Object] = js.native
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -534,7 +535,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.geoIndex
     */
-  var geoIndex: js.UndefOr[Double] = js.undefined
+  var geoIndex: js.UndefOr[Double] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -543,7 +544,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -551,7 +552,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderType] = js.undefined
+  var itemStyle: js.UndefOr[BorderType] = js.native
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -562,7 +563,7 @@ trait SeriesCustom_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-custom.legendHoverLink
     */
-  var legendHoverLink: js.UndefOr[Boolean] = js.undefined
+  var legendHoverLink: js.UndefOr[Boolean] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -573,7 +574,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Index of
     * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
@@ -583,7 +584,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.polarIndex
     */
-  var polarIndex: js.UndefOr[Double] = js.undefined
+  var polarIndex: js.UndefOr[Double] = js.native
   /**
     * `custom series` requires developers to write a render logic by
     * themselves. This render logic is called
@@ -646,7 +647,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem
     */
-  var renderItem: js.UndefOr[Arguments] = js.undefined
+  var renderItem: js.UndefOr[Arguments] = js.native
   /**
     * When
     * [dataset](https://echarts.apache.org/en/option.html#dataset)
@@ -668,7 +669,7 @@ trait SeriesCustom_ extends js.Object {
     * "column"
     * @see https://echarts.apache.org/en/option.html#series-custom.seriesLayoutBy
     */
-  var seriesLayoutBy: js.UndefOr[String] = js.undefined
+  var seriesLayoutBy: js.UndefOr[String] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -677,20 +678,20 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * @default
     * "custom"
     * @see https://echarts.apache.org/en/option.html#series-custom.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -699,7 +700,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.xAxisIndex
     */
-  var xAxisIndex: js.UndefOr[Double] = js.undefined
+  var xAxisIndex: js.UndefOr[Double] = js.native
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -708,7 +709,7 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.yAxisIndex
     */
-  var yAxisIndex: js.UndefOr[Double] = js.undefined
+  var yAxisIndex: js.UndefOr[Double] = js.native
   /**
     * `z` value of all graghical elements in custom series, which controls
     * order of drawing graphical components.
@@ -723,7 +724,7 @@ trait SeriesCustom_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-custom.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in custom series.
     *
@@ -741,77 +742,155 @@ trait SeriesCustom_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesCustom_ {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: js.Function | Double = null,
-    animationDelayUpdate: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    calendarIndex: js.UndefOr[Double] = js.undefined,
-    coordinateSystem: String = null,
-    data: js.Array[
-      (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
-    ] = null,
-    datasetIndex: js.UndefOr[Double] = js.undefined,
-    dimensions: js.Array[_] = null,
-    emphasis: ItemStyleBorderType = null,
-    encode: js.Object = null,
-    geoIndex: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    itemStyle: BorderType = null,
-    legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    polarIndex: js.UndefOr[Double] = js.undefined,
-    renderItem: Arguments = null,
-    seriesLayoutBy: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    tooltip: BaseTooltip = null,
-    `type`: String = null,
-    xAxisIndex: js.UndefOr[Double] = js.undefined,
-    yAxisIndex: js.UndefOr[Double] = js.undefined,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesCustom_ = {
+  def apply(): SeriesCustom_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(calendarIndex)) __obj.updateDynamic("calendarIndex")(calendarIndex.get.asInstanceOf[js.Any])
-    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(datasetIndex)) __obj.updateDynamic("datasetIndex")(datasetIndex.get.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (!js.isUndefined(geoIndex)) __obj.updateDynamic("geoIndex")(geoIndex.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(polarIndex)) __obj.updateDynamic("polarIndex")(polarIndex.get.asInstanceOf[js.Any])
-    if (renderItem != null) __obj.updateDynamic("renderItem")(renderItem.asInstanceOf[js.Any])
-    if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesCustom_]
   }
+  @scala.inline
+  implicit class SeriesCustom_Ops[Self <: SeriesCustom_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setCalendarIndex(value: Double): Self = this.set("calendarIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarIndex: Self = this.set("calendarIndex", js.undefined)
+    @scala.inline
+    def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: ((js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit)*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(
+      value: js.Array[
+          (js.Array[Unit | String | Double | DataObject]) | DataObject | Double | String | Unit
+        ]
+    ): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDatasetIndex(value: Double): Self = this.set("datasetIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetIndex: Self = this.set("datasetIndex", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: js.Any*): Self = this.set("dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: js.Array[_]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setEmphasis(value: `2`): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setEncode(value: js.Object): Self = this.set("encode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncode: Self = this.set("encode", js.undefined)
+    @scala.inline
+    def setGeoIndex(value: Double): Self = this.set("geoIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoIndex: Self = this.set("geoIndex", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: BorderType): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLegendHoverLink(value: Boolean): Self = this.set("legendHoverLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegendHoverLink: Self = this.set("legendHoverLink", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPolarIndex(value: Double): Self = this.set("polarIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolarIndex: Self = this.set("polarIndex", js.undefined)
+    @scala.inline
+    def setRenderItem(value: Arguments): Self = this.set("renderItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderItem: Self = this.set("renderItem", js.undefined)
+    @scala.inline
+    def setSeriesLayoutBy(value: String): Self = this.set("seriesLayoutBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesLayoutBy: Self = this.set("seriesLayoutBy", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    @scala.inline
+    def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

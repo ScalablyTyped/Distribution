@@ -18,11 +18,34 @@ trait BatchGetCrawlersResponse extends js.Object {
 
 object BatchGetCrawlersResponse {
   @scala.inline
-  def apply(Crawlers: CrawlerList = null, CrawlersNotFound: CrawlerNameList = null): BatchGetCrawlersResponse = {
+  def apply(): BatchGetCrawlersResponse = {
     val __obj = js.Dynamic.literal()
-    if (Crawlers != null) __obj.updateDynamic("Crawlers")(Crawlers.asInstanceOf[js.Any])
-    if (CrawlersNotFound != null) __obj.updateDynamic("CrawlersNotFound")(CrawlersNotFound.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetCrawlersResponse]
   }
+  @scala.inline
+  implicit class BatchGetCrawlersResponseOps[Self <: BatchGetCrawlersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrawlersVarargs(value: Crawler*): Self = this.set("Crawlers", js.Array(value :_*))
+    @scala.inline
+    def setCrawlers(value: CrawlerList): Self = this.set("Crawlers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlers: Self = this.set("Crawlers", js.undefined)
+    @scala.inline
+    def setCrawlersNotFoundVarargs(value: NameString*): Self = this.set("CrawlersNotFound", js.Array(value :_*))
+    @scala.inline
+    def setCrawlersNotFound(value: CrawlerNameList): Self = this.set("CrawlersNotFound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlersNotFound: Self = this.set("CrawlersNotFound", js.undefined)
+  }
+  
 }
 

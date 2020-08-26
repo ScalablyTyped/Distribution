@@ -1,7 +1,7 @@
 
 # Scala.js typings for latest-semver
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get the latest stable semver version from an array of versions
@@ -11,8 +11,8 @@ Get the latest stable semver version from an array of versions
 | Full name          | latest-semver |
 | Keywords           | semver, semantic, version, versioning, latest, stable, max, maximum, highest, newest, git, tag, tags |
 | # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 44698 |
+| # dependents       | 12 |
+| # downloads        | 45698 |
 | # stars            | 0 |
 
 ## Links

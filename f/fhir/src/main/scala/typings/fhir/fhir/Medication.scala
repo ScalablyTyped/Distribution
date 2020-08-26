@@ -8,114 +8,129 @@ import scala.scalajs.js.annotation._
   * Definition of a Medication
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Medication extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Medication extends DomainResource {
   /**
     * Contains extended information for property 'isBrand'.
     */
-  var _isBrand: js.UndefOr[Element] = js.undefined
+  var _isBrand: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'isOverTheCounter'.
     */
-  var _isOverTheCounter: js.UndefOr[Element] = js.undefined
+  var _isOverTheCounter: js.UndefOr[Element] = js.native
   /**
     * Details about packaged medications
     */
   @JSName("package")
-  var _package: js.UndefOr[MedicationPackage] = js.undefined
+  var _package: js.UndefOr[MedicationPackage] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Codes that identify this medication
     */
-  var code: js.UndefOr[CodeableConcept] = js.undefined
+  var code: js.UndefOr[CodeableConcept] = js.native
   /**
     * powder | tablets | capsule +
     */
-  var form: js.UndefOr[CodeableConcept] = js.undefined
+  var form: js.UndefOr[CodeableConcept] = js.native
   /**
     * Picture of the medication
     */
-  var image: js.UndefOr[js.Array[Attachment]] = js.undefined
+  var image: js.UndefOr[js.Array[Attachment]] = js.native
   /**
     * Active or inactive ingredient
     */
-  var ingredient: js.UndefOr[js.Array[MedicationIngredient]] = js.undefined
+  var ingredient: js.UndefOr[js.Array[MedicationIngredient]] = js.native
   /**
     * True if a brand
     */
-  var isBrand: js.UndefOr[Boolean] = js.undefined
+  var isBrand: js.UndefOr[Boolean] = js.native
   /**
     * True if medication does not require a prescription
     */
-  var isOverTheCounter: js.UndefOr[Boolean] = js.undefined
+  var isOverTheCounter: js.UndefOr[Boolean] = js.native
   /**
     * Manufacturer of the item
     */
-  var manufacturer: js.UndefOr[Reference] = js.undefined
+  var manufacturer: js.UndefOr[Reference] = js.native
   /**
     * active | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
 }
 
 object Medication {
   @scala.inline
-  def apply(
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _isBrand: Element = null,
-    _isOverTheCounter: Element = null,
-    _language: Element = null,
-    _package: MedicationPackage = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    code: CodeableConcept = null,
-    contained: js.Array[Resource] = null,
-    extension: js.Array[Extension] = null,
-    form: CodeableConcept = null,
-    id: id = null,
-    image: js.Array[Attachment] = null,
-    implicitRules: uri = null,
-    ingredient: js.Array[MedicationIngredient] = null,
-    isBrand: js.UndefOr[Boolean] = js.undefined,
-    isOverTheCounter: js.UndefOr[Boolean] = js.undefined,
-    language: code = null,
-    manufacturer: Reference = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    resourceType: code = null,
-    status: code = null,
-    text: Narrative = null
-  ): Medication = {
+  def apply(): Medication = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_isBrand != null) __obj.updateDynamic("_isBrand")(_isBrand.asInstanceOf[js.Any])
-    if (_isOverTheCounter != null) __obj.updateDynamic("_isOverTheCounter")(_isOverTheCounter.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (ingredient != null) __obj.updateDynamic("ingredient")(ingredient.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBrand)) __obj.updateDynamic("isBrand")(isBrand.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOverTheCounter)) __obj.updateDynamic("isOverTheCounter")(isOverTheCounter.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Medication]
   }
+  @scala.inline
+  implicit class MedicationOps[Self <: Medication] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_isBrand(value: Element): Self = this.set("_isBrand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_isBrand: Self = this.set("_isBrand", js.undefined)
+    @scala.inline
+    def set_isOverTheCounter(value: Element): Self = this.set("_isOverTheCounter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_isOverTheCounter: Self = this.set("_isOverTheCounter", js.undefined)
+    @scala.inline
+    def set_package(value: MedicationPackage): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_package: Self = this.set("package", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setForm(value: CodeableConcept): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setImageVarargs(value: Attachment*): Self = this.set("image", js.Array(value :_*))
+    @scala.inline
+    def setImage(value: js.Array[Attachment]): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setIngredientVarargs(value: MedicationIngredient*): Self = this.set("ingredient", js.Array(value :_*))
+    @scala.inline
+    def setIngredient(value: js.Array[MedicationIngredient]): Self = this.set("ingredient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngredient: Self = this.set("ingredient", js.undefined)
+    @scala.inline
+    def setIsBrand(value: Boolean): Self = this.set("isBrand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBrand: Self = this.set("isBrand", js.undefined)
+    @scala.inline
+    def setIsOverTheCounter(value: Boolean): Self = this.set("isOverTheCounter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOverTheCounter: Self = this.set("isOverTheCounter", js.undefined)
+    @scala.inline
+    def setManufacturer(value: Reference): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

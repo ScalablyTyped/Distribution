@@ -12,7 +12,7 @@ The lodash method `_.range` exported as a module.
 | Keywords           | lodash-modularized, range |
 | # releases         | 0 |
 | # dependents       | 135 |
-| # downloads        | 3233318 |
+| # downloads        | 3216726 |
 | # stars            | 0 |
 
 ## Links

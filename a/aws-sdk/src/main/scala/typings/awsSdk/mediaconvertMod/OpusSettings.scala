@@ -22,16 +22,34 @@ trait OpusSettings extends js.Object {
 
 object OpusSettings {
   @scala.inline
-  def apply(
-    Bitrate: js.UndefOr[integerMin32000Max192000] = js.undefined,
-    Channels: js.UndefOr[integerMin1Max2] = js.undefined,
-    SampleRate: js.UndefOr[integerMin16000Max48000] = js.undefined
-  ): OpusSettings = {
+  def apply(): OpusSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Bitrate)) __obj.updateDynamic("Bitrate")(Bitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpusSettings]
   }
+  @scala.inline
+  implicit class OpusSettingsOps[Self <: OpusSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBitrate(value: integerMin32000Max192000): Self = this.set("Bitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrate: Self = this.set("Bitrate", js.undefined)
+    @scala.inline
+    def setChannels(value: integerMin1Max2): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("Channels", js.undefined)
+    @scala.inline
+    def setSampleRate(value: integerMin16000Max48000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+  }
+  
 }
 

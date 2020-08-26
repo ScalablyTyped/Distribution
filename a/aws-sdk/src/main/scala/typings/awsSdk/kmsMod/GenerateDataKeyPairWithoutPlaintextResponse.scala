@@ -26,18 +26,38 @@ trait GenerateDataKeyPairWithoutPlaintextResponse extends js.Object {
 
 object GenerateDataKeyPairWithoutPlaintextResponse {
   @scala.inline
-  def apply(
-    KeyId: KeyIdType = null,
-    KeyPairSpec: DataKeyPairSpec = null,
-    PrivateKeyCiphertextBlob: CiphertextType = null,
-    PublicKey: PublicKeyType = null
-  ): GenerateDataKeyPairWithoutPlaintextResponse = {
+  def apply(): GenerateDataKeyPairWithoutPlaintextResponse = {
     val __obj = js.Dynamic.literal()
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (KeyPairSpec != null) __obj.updateDynamic("KeyPairSpec")(KeyPairSpec.asInstanceOf[js.Any])
-    if (PrivateKeyCiphertextBlob != null) __obj.updateDynamic("PrivateKeyCiphertextBlob")(PrivateKeyCiphertextBlob.asInstanceOf[js.Any])
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataKeyPairWithoutPlaintextResponse]
   }
+  @scala.inline
+  implicit class GenerateDataKeyPairWithoutPlaintextResponseOps[Self <: GenerateDataKeyPairWithoutPlaintextResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setKeyPairSpec(value: DataKeyPairSpec): Self = this.set("KeyPairSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairSpec: Self = this.set("KeyPairSpec", js.undefined)
+    @scala.inline
+    def setPrivateKeyCiphertextBlob(value: CiphertextType): Self = this.set("PrivateKeyCiphertextBlob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyCiphertextBlob: Self = this.set("PrivateKeyCiphertextBlob", js.undefined)
+    @scala.inline
+    def setPublicKey(value: PublicKeyType): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+  }
+  
 }
 

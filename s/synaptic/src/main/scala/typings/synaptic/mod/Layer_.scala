@@ -53,9 +53,11 @@ class Layer_ protected () extends js.Object {
     * @param connectionType If not specified, the connection type is always Layer.connectionType.ALL_TO_ALL when connecting two different layers, and is Layer.connectionType.ONE_TO_ONE when connecting a layer to itself (ie myLayer.project(myLayer)).
     */
   def project(layer: Layer): LayerConnection = js.native
+  def project(layer: Layer, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
   def project(layer: Layer, connectionType: connectionType): LayerConnection = js.native
   def project(layer: Layer, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   def project(layer: Network): LayerConnection = js.native
+  def project(layer: Network, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
   def project(layer: Network, connectionType: connectionType): LayerConnection = js.native
   def project(layer: Network, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   /**

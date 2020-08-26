@@ -22,6 +22,7 @@ class Group protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: GroupArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: GroupArgs, opts: CustomResourceOptions) = this()
 }
 
@@ -36,8 +37,10 @@ object Group extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): typings.pulumiAws.iamGroupMod.Group = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.iamGroupMod.Group = js.native
   def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.iamGroupMod.Group = js.native
   def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.iamGroupMod.Group = js.native
   /**

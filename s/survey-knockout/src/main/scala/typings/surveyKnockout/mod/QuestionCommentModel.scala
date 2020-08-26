@@ -27,6 +27,18 @@ class QuestionCommentModel protected () extends Question {
     * The html rows attribute.
     */
   var rows: Double = js.native
+  /**
+    * Gets or sets a value that specifies how the question updates it's value.
+    *
+    * The following options are available:
+    * - `default` - get the value from survey.textUpdateMode
+    * - `onBlur` - the value is updated after an input loses the focus.
+    * - `onTyping` - update the value of text questions, "text" and "comment", on every key press.
+    *
+    * Note, that setting to "onTyping" may lead to a performance degradation, in case you have many expressions in the survey.
+    * @see survey.textUpdateMode
+    */
+  var textUpdateMode: String = js.native
   def getMaxLength(): js.Any = js.native
 }
 

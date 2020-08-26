@@ -23,13 +23,17 @@ trait UpdateDashboardRequest extends js.Object {
     */
   var Name: DashboardName = js.native
   /**
-    * A structure that contains the parameters of the dashboard. These are parameter overrides for a dashboard. A dashboard can have any type of parameters, and some parameters might accept multiple values. 
+    * A structure that contains the parameters of the dashboard. These are parameter overrides for a dashboard. A dashboard can have any type of parameters, and some parameters might accept multiple values.
     */
   var Parameters: js.UndefOr[typings.awsSdk.quicksightMod.Parameters] = js.native
   /**
     * The entity that you are using as a source when you update the dashboard. In SourceEntity, you specify the type of object you're using as source. You can only update a dashboard from a template, so you use a SourceTemplate entity. If you need to update a dashboard from an analysis, first convert the analysis to a template by using the CreateTemplate API operation. For SourceTemplate, specify the Amazon Resource Name (ARN) of the source template. The SourceTemplate ARN can contain any AWS Account and any QuickSight-supported AWS Region.  Use the DataSetReferences entity within SourceTemplate to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder. 
     */
   var SourceEntity: DashboardSourceEntity = js.native
+  /**
+    * The Amazon Resource Name (ARN) of the theme that is being used for this dashboard. If you add a value for this field, it overrides the value that was originally associated with the entity. The theme ARN must exist in the same AWS account where you create the dashboard.
+    */
+  var ThemeArn: js.UndefOr[Arn] = js.native
   /**
     * A description for the first version of the dashboard being created.
     */
@@ -42,16 +46,47 @@ object UpdateDashboardRequest {
     AwsAccountId: AwsAccountId,
     DashboardId: RestrictiveResourceId,
     Name: DashboardName,
-    SourceEntity: DashboardSourceEntity,
-    DashboardPublishOptions: DashboardPublishOptions = null,
-    Parameters: Parameters = null,
-    VersionDescription: VersionDescription = null
+    SourceEntity: DashboardSourceEntity
   ): UpdateDashboardRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SourceEntity = SourceEntity.asInstanceOf[js.Any])
-    if (DashboardPublishOptions != null) __obj.updateDynamic("DashboardPublishOptions")(DashboardPublishOptions.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (VersionDescription != null) __obj.updateDynamic("VersionDescription")(VersionDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDashboardRequest]
   }
+  @scala.inline
+  implicit class UpdateDashboardRequestOps[Self <: UpdateDashboardRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDashboardId(value: RestrictiveResourceId): Self = this.set("DashboardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: DashboardName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceEntity(value: DashboardSourceEntity): Self = this.set("SourceEntity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDashboardPublishOptions(value: DashboardPublishOptions): Self = this.set("DashboardPublishOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardPublishOptions: Self = this.set("DashboardPublishOptions", js.undefined)
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setThemeArn(value: Arn): Self = this.set("ThemeArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeArn: Self = this.set("ThemeArn", js.undefined)
+    @scala.inline
+    def setVersionDescription(value: VersionDescription): Self = this.set("VersionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionDescription: Self = this.set("VersionDescription", js.undefined)
+  }
+  
 }
 

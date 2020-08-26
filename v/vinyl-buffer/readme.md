@@ -10,9 +10,9 @@ Convert streaming vinyl files to use buffers
 | ------------------ | :-------------: |
 | Full name          | vinyl-buffer |
 | Keywords           | vinyl, gulpfriendly, convert, buffer, stream |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 485 |
-| # downloads        | 4964999 |
+| # downloads        | 4974504 |
 | # stars            | 35 |
 
 ## Links

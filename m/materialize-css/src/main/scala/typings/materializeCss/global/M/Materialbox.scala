@@ -9,43 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("M.Materialbox")
 @js.native
 class Materialbox ()
-  extends typings.materializeCss.M.Materialbox {
-  /**
-    * Caption if specified
-    */
-  /* CompleteClass */
-  override var caption: String = js.native
-  /**
-    * If the materialbox is no longer being animated
-    */
-  /* CompleteClass */
-  override var doneAnimating: Boolean = js.native
-  /**
-    * Original height of image
-    */
-  /* CompleteClass */
-  override var originalHeight: Double = js.native
-  /**
-    * Original width of image
-    */
-  /* CompleteClass */
-  override var originalWidth: Double = js.native
-  /**
-    * If the materialbox overlay is showing
-    */
-  /* CompleteClass */
-  override var overlayActive: Boolean = js.native
-  /**
-    * Close materialbox
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Open materialbox
-    */
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+  extends typings.materializeCss.M.Materialbox
 
 /* static members */
 @JSGlobal("M.Materialbox")

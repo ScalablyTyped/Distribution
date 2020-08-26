@@ -5,43 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StdError extends Error {
-  var code: js.UndefOr[String] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var hostname: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var response: js.UndefOr[js.Any] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var code: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var response: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object StdError {
   @scala.inline
-  def apply(
-    message: String,
-    name: String,
-    code: String = null,
-    host: String = null,
-    hostname: String = null,
-    method: String = null,
-    path: String = null,
-    protocol: String = null,
-    response: js.Any = null,
-    stack: String = null,
-    url: String = null
-  ): StdError = {
+  def apply(message: String, name: String): StdError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[StdError]
   }
+  @scala.inline
+  implicit class StdErrorOps[Self <: StdError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setResponse(value: js.Any): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

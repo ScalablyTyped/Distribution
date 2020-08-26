@@ -26,18 +26,38 @@ trait DescribeOrderableClusterOptionsMessage extends js.Object {
 
 object DescribeOrderableClusterOptionsMessage {
   @scala.inline
-  def apply(
-    ClusterVersion: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    NodeType: String = null
-  ): DescribeOrderableClusterOptionsMessage = {
+  def apply(): DescribeOrderableClusterOptionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ClusterVersion != null) __obj.updateDynamic("ClusterVersion")(ClusterVersion.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (NodeType != null) __obj.updateDynamic("NodeType")(NodeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrderableClusterOptionsMessage]
   }
+  @scala.inline
+  implicit class DescribeOrderableClusterOptionsMessageOps[Self <: DescribeOrderableClusterOptionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterVersion(value: String): Self = this.set("ClusterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterVersion: Self = this.set("ClusterVersion", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("NodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("NodeType", js.undefined)
+  }
+  
 }
 

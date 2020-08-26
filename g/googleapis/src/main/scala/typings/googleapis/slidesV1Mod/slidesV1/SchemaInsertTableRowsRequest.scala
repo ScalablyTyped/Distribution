@@ -33,18 +33,38 @@ trait SchemaInsertTableRowsRequest extends js.Object {
 
 object SchemaInsertTableRowsRequest {
   @scala.inline
-  def apply(
-    cellLocation: SchemaTableCellLocation = null,
-    insertBelow: js.UndefOr[Boolean] = js.undefined,
-    number: js.UndefOr[Double] = js.undefined,
-    tableObjectId: String = null
-  ): SchemaInsertTableRowsRequest = {
+  def apply(): SchemaInsertTableRowsRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
-    if (tableObjectId != null) __obj.updateDynamic("tableObjectId")(tableObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInsertTableRowsRequest]
   }
+  @scala.inline
+  implicit class SchemaInsertTableRowsRequestOps[Self <: SchemaInsertTableRowsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellLocation(value: SchemaTableCellLocation): Self = this.set("cellLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellLocation: Self = this.set("cellLocation", js.undefined)
+    @scala.inline
+    def setInsertBelow(value: Boolean): Self = this.set("insertBelow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertBelow: Self = this.set("insertBelow", js.undefined)
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setTableObjectId(value: String): Self = this.set("tableObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableObjectId: Self = this.set("tableObjectId", js.undefined)
+  }
+  
 }
 

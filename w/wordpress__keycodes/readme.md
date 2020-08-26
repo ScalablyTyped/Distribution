@@ -11,8 +11,8 @@ Keycodes utilities for WordPress. Used to check for keyboard events across brows
 | Full name          | @wordpress/keycodes |
 | Keywords           | wordpress, keycodes |
 | # releases         | 25 |
-| # dependents       | 11 |
-| # downloads        | 191121 |
+| # dependents       | 12 |
+| # downloads        | 196545 |
 | # stars            | 0 |
 
 ## Links

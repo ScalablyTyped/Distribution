@@ -22,16 +22,34 @@ trait BookingOptions extends js.Object {
 
 object BookingOptions {
   @scala.inline
-  def apply(
-    AutoAcceptRequests: js.UndefOr[Boolean] = js.undefined,
-    AutoDeclineConflictingRequests: js.UndefOr[Boolean] = js.undefined,
-    AutoDeclineRecurringRequests: js.UndefOr[Boolean] = js.undefined
-  ): BookingOptions = {
+  def apply(): BookingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoAcceptRequests)) __obj.updateDynamic("AutoAcceptRequests")(AutoAcceptRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeclineConflictingRequests)) __obj.updateDynamic("AutoDeclineConflictingRequests")(AutoDeclineConflictingRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeclineRecurringRequests)) __obj.updateDynamic("AutoDeclineRecurringRequests")(AutoDeclineRecurringRequests.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookingOptions]
   }
+  @scala.inline
+  implicit class BookingOptionsOps[Self <: BookingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoAcceptRequests(value: Boolean): Self = this.set("AutoAcceptRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAcceptRequests: Self = this.set("AutoAcceptRequests", js.undefined)
+    @scala.inline
+    def setAutoDeclineConflictingRequests(value: Boolean): Self = this.set("AutoDeclineConflictingRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeclineConflictingRequests: Self = this.set("AutoDeclineConflictingRequests", js.undefined)
+    @scala.inline
+    def setAutoDeclineRecurringRequests(value: Boolean): Self = this.set("AutoDeclineRecurringRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeclineRecurringRequests: Self = this.set("AutoDeclineRecurringRequests", js.undefined)
+  }
+  
 }
 

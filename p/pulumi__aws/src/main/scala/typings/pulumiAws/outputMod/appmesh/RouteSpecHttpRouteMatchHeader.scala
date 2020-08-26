@@ -22,15 +22,32 @@ trait RouteSpecHttpRouteMatchHeader extends js.Object {
 
 object RouteSpecHttpRouteMatchHeader {
   @scala.inline
-  def apply(
-    name: String,
-    invert: js.UndefOr[Boolean] = js.undefined,
-    `match`: RouteSpecHttpRouteMatchHeaderMatch = null
-  ): RouteSpecHttpRouteMatchHeader = {
+  def apply(name: String): RouteSpecHttpRouteMatchHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.get.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecHttpRouteMatchHeader]
   }
+  @scala.inline
+  implicit class RouteSpecHttpRouteMatchHeaderOps[Self <: RouteSpecHttpRouteMatchHeader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInvert(value: Boolean): Self = this.set("invert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvert: Self = this.set("invert", js.undefined)
+    @scala.inline
+    def setMatch(value: RouteSpecHttpRouteMatchHeaderMatch): Self = this.set("match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatch: Self = this.set("match", js.undefined)
+  }
+  
 }
 

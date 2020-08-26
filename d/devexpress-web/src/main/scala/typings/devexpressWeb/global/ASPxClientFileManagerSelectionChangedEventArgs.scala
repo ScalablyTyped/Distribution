@@ -24,25 +24,5 @@ class ASPxClientFileManagerSelectionChangedEventArgs protected ()
     fullName: String,
     isSelected: Boolean
   ) = this()
-  /**
-    * Gets the full name of the file currently being processed.
-    */
-  /* CompleteClass */
-  override var fullName: String = js.native
-  /**
-    * Gets whether the item has been selected.
-    */
-  /* CompleteClass */
-  override var isSelected: Boolean = js.native
-  /**
-    * Gets the file manager item object related to the event.
-    */
-  /* CompleteClass */
-  override var item: typings.devexpressWeb.ASPxClientFileManagerItem = js.native
-  /**
-    * Gets the name of the currently processed file.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

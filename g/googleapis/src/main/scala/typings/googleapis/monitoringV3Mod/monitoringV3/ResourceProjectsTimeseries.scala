@@ -78,6 +78,7 @@ class ResourceProjectsTimeseries protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaEmpty] = js.native
   def create(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceProjectsTimeseriesCreate): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceProjectsTimeseriesCreate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def create(
@@ -170,6 +171,7 @@ class ResourceProjectsTimeseries protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTimeSeriesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(params: ParamsResourceProjectsTimeseriesList): GaxiosPromise[SchemaListTimeSeriesResponse] = js.native
   def list(
     params: ParamsResourceProjectsTimeseriesList,

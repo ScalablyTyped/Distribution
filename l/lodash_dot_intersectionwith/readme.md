@@ -12,7 +12,7 @@ The lodash method `_.intersectionWith` exported as a module.
 | Keywords           | lodash-modularized, intersectionwith |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 119868 |
+| # downloads        | 122149 |
 | # stars            | 0 |
 
 ## Links

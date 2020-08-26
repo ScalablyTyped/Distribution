@@ -19,10 +19,28 @@ trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponse extends js.Objec
 
 object SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponse {
   @scala.inline
-  def apply(annotationResults: js.Array[SchemaGoogleCloudVideointelligenceV1VideoAnnotationResults] = null): SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponse = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponse = {
     val __obj = js.Dynamic.literal()
-    if (annotationResults != null) __obj.updateDynamic("annotationResults")(annotationResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponseOps[Self <: SchemaGoogleCloudVideointelligenceV1AnnotateVideoResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationResultsVarargs(value: SchemaGoogleCloudVideointelligenceV1VideoAnnotationResults*): Self = this.set("annotationResults", js.Array(value :_*))
+    @scala.inline
+    def setAnnotationResults(value: js.Array[SchemaGoogleCloudVideointelligenceV1VideoAnnotationResults]): Self = this.set("annotationResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationResults: Self = this.set("annotationResults", js.undefined)
+  }
+  
 }
 

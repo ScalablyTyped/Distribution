@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-mask
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 mask an image.
@@ -10,9 +10,9 @@ mask an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-mask |
 | Keywords           | - |
-| # releases         | 71 |
+| # releases         | 70 |
 | # dependents       | 1 |
-| # downloads        | 14021551 |
+| # downloads        | 14396439 |
 | # stars            | 0 |
 
 ## Links

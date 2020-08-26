@@ -34,22 +34,46 @@ trait ListUserProfilesRequest extends js.Object {
 
 object ListUserProfilesRequest {
   @scala.inline
-  def apply(
-    DomainIdEquals: DomainId = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    SortBy: UserProfileSortKey = null,
-    SortOrder: SortOrder = null,
-    UserProfileNameContains: UserProfileName = null
-  ): ListUserProfilesRequest = {
+  def apply(): ListUserProfilesRequest = {
     val __obj = js.Dynamic.literal()
-    if (DomainIdEquals != null) __obj.updateDynamic("DomainIdEquals")(DomainIdEquals.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
-    if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
-    if (UserProfileNameContains != null) __obj.updateDynamic("UserProfileNameContains")(UserProfileNameContains.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserProfilesRequest]
   }
+  @scala.inline
+  implicit class ListUserProfilesRequestOps[Self <: ListUserProfilesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainIdEquals(value: DomainId): Self = this.set("DomainIdEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainIdEquals: Self = this.set("DomainIdEquals", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSortBy(value: UserProfileSortKey): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("SortBy", js.undefined)
+    @scala.inline
+    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+    @scala.inline
+    def setUserProfileNameContains(value: UserProfileName): Self = this.set("UserProfileNameContains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProfileNameContains: Self = this.set("UserProfileNameContains", js.undefined)
+  }
+  
 }
 

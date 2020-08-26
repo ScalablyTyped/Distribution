@@ -109,11 +109,15 @@ object mod extends js.Object {
   @JSName("DebounceAll")
   def DebounceAll_(): LodashMethodDecorator = js.native
   @JSName("DebounceAll")
+  def DebounceAll_(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashMethodDecorator = js.native
+  @JSName("DebounceAll")
   def DebounceAll_(wait: Double): LodashMethodDecorator = js.native
   @JSName("DebounceAll")
   def DebounceAll_(wait: Double, options: DebounceOptions): LodashMethodDecorator = js.native
   @JSName("Debounce")
   def Debounce_(): LodashDecorator = js.native
+  @JSName("Debounce")
+  def Debounce_(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashDecorator = js.native
   @JSName("Debounce")
   def Debounce_(wait: Double): LodashDecorator = js.native
   @JSName("Debounce")
@@ -145,6 +149,8 @@ object mod extends js.Object {
   @JSName("ThrottleAll")
   def ThrottleAll_(): LodashMethodDecorator = js.native
   @JSName("ThrottleAll")
+  def ThrottleAll_(wait: js.UndefOr[scala.Nothing], options: ThrottleOptions): LodashMethodDecorator = js.native
+  @JSName("ThrottleAll")
   def ThrottleAll_(wait: Double): LodashMethodDecorator = js.native
   @JSName("ThrottleAll")
   def ThrottleAll_(wait: Double, options: ThrottleOptions): LodashMethodDecorator = js.native
@@ -160,9 +166,11 @@ object mod extends js.Object {
   def bindAll(): ClassDecorator = js.native
   def bindAll(methods: js.Array[String]): ClassDecorator = js.native
   def debounce(): LodashDecorator = js.native
+  def debounce(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashDecorator = js.native
   def debounce(wait: Double): LodashDecorator = js.native
   def debounce(wait: Double, options: DebounceOptions): LodashDecorator = js.native
   def debounceAll(): LodashMethodDecorator = js.native
+  def debounceAll(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashMethodDecorator = js.native
   def debounceAll(wait: Double): LodashMethodDecorator = js.native
   def debounceAll(wait: Double, options: DebounceOptions): LodashMethodDecorator = js.native
   def delay(wait: Double, args: js.Any*): LodashMethodDecorator = js.native
@@ -178,6 +186,7 @@ object mod extends js.Object {
   def rearg(indexes: Double, args: (Double | js.Array[Double])*): LodashDecorator = js.native
   def rearg(indexes: ResolvableFunction, args: (Double | js.Array[Double])*): LodashDecorator = js.native
   def throttleAll(): LodashMethodDecorator = js.native
+  def throttleAll(wait: js.UndefOr[scala.Nothing], options: ThrottleOptions): LodashMethodDecorator = js.native
   def throttleAll(wait: Double): LodashMethodDecorator = js.native
   def throttleAll(wait: Double, options: ThrottleOptions): LodashMethodDecorator = js.native
   def wrap(): LodashMethodDecorator = js.native

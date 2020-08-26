@@ -363,6 +363,11 @@ object Platform extends js.Object {
     * Opens this URL using the system's default application for its protocol/scheme.
     */
   def openURL(url: String): Boolean = js.native
+  def openURL(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, Unit]
+  ): Boolean = js.native
   def openURL(url: String, options: OpenURLOptions): Boolean = js.native
   def openURL(url: String, options: OpenURLOptions, callback: js.Function1[/* repeated */ js.Any, Unit]): Boolean = js.native
   /**

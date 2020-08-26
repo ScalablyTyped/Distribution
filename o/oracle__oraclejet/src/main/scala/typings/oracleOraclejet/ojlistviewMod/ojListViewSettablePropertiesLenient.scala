@@ -22,66 +22,111 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojlistview.ojListViewSettableProperties<K, D>> */
+@js.native
 trait ojListViewSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var as: js.UndefOr[String] = js.undefined
-  var currentItem: js.UndefOr[K] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var dnd: js.UndefOr[DragDrop] = js.undefined
-  var drillMode: js.UndefOr[collapsible | none] = js.undefined
-  var expanded: js.UndefOr[KeySet[K]] = js.undefined
-  var firstSelectedItem: js.UndefOr[Key[K, D]] = js.undefined
-  var groupHeaderPosition: js.UndefOr[static | sticky] = js.undefined
-  var item: js.UndefOr[Focusable[K, D]] = js.undefined
-  var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll] = js.undefined
-  var scrollPolicyOptions: js.UndefOr[FetchSize] = js.undefined
-  var scrollPosition: js.UndefOr[OffsetX[K]] = js.undefined
-  var selection: js.UndefOr[js.Array[K]] = js.undefined
-  var selectionMode: js.UndefOr[none | single | multiple] = js.undefined
-  var selectionRequired: js.UndefOr[Boolean] = js.undefined
-  var translations: js.UndefOr[AccessibleNavigateSkipItems] = js.undefined
+  var as: js.UndefOr[String] = js.native
+  var currentItem: js.UndefOr[K] = js.native
+  var data: js.UndefOr[DataProvider[K, D]] = js.native
+  var dnd: js.UndefOr[DragDrop] = js.native
+  var drillMode: js.UndefOr[collapsible | none] = js.native
+  var expanded: js.UndefOr[KeySet[K]] = js.native
+  var firstSelectedItem: js.UndefOr[Key[K, D]] = js.native
+  var groupHeaderPosition: js.UndefOr[static | sticky] = js.native
+  var item: js.UndefOr[Focusable[K, D]] = js.native
+  var scrollPolicy: js.UndefOr[auto | loadMoreOnScroll] = js.native
+  var scrollPolicyOptions: js.UndefOr[FetchSize] = js.native
+  var scrollPosition: js.UndefOr[OffsetX[K]] = js.native
+  var selection: js.UndefOr[js.Array[K]] = js.native
+  var selectionMode: js.UndefOr[none | single | multiple] = js.native
+  var selectionRequired: js.UndefOr[Boolean] = js.native
+  var translations: js.UndefOr[AccessibleNavigateSkipItems] = js.native
 }
 
 object ojListViewSettablePropertiesLenient {
   @scala.inline
-  def apply[K, D](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    as: String = null,
-    currentItem: K = null,
-    data: DataProvider[K, D] = null,
-    dnd: DragDrop = null,
-    drillMode: collapsible | none = null,
-    expanded: KeySet[K] = null,
-    firstSelectedItem: Key[K, D] = null,
-    groupHeaderPosition: static | sticky = null,
-    item: Focusable[K, D] = null,
-    scrollPolicy: auto | loadMoreOnScroll = null,
-    scrollPolicyOptions: FetchSize = null,
-    scrollPosition: OffsetX[K] = null,
-    selection: js.Array[K] = null,
-    selectionMode: none | single | multiple = null,
-    selectionRequired: js.UndefOr[Boolean] = js.undefined,
-    translations: AccessibleNavigateSkipItems = null
-  ): ojListViewSettablePropertiesLenient[K, D] = {
+  def apply[K, D](): ojListViewSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (currentItem != null) __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dnd != null) __obj.updateDynamic("dnd")(dnd.asInstanceOf[js.Any])
-    if (drillMode != null) __obj.updateDynamic("drillMode")(drillMode.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (firstSelectedItem != null) __obj.updateDynamic("firstSelectedItem")(firstSelectedItem.asInstanceOf[js.Any])
-    if (groupHeaderPosition != null) __obj.updateDynamic("groupHeaderPosition")(groupHeaderPosition.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (scrollPolicy != null) __obj.updateDynamic("scrollPolicy")(scrollPolicy.asInstanceOf[js.Any])
-    if (scrollPolicyOptions != null) __obj.updateDynamic("scrollPolicyOptions")(scrollPolicyOptions.asInstanceOf[js.Any])
-    if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectionRequired)) __obj.updateDynamic("selectionRequired")(selectionRequired.get.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojListViewSettablePropertiesLenient[K, D]]
   }
+  @scala.inline
+  implicit class ojListViewSettablePropertiesLenientOps[Self <: ojListViewSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojListViewSettablePropertiesLenient[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setCurrentItem(value: K): Self = this.set("currentItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentItem: Self = this.set("currentItem", js.undefined)
+    @scala.inline
+    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDnd(value: DragDrop): Self = this.set("dnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnd: Self = this.set("dnd", js.undefined)
+    @scala.inline
+    def setDrillMode(value: collapsible | none): Self = this.set("drillMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrillMode: Self = this.set("drillMode", js.undefined)
+    @scala.inline
+    def setExpanded(value: KeySet[K]): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setFirstSelectedItem(value: Key[K, D]): Self = this.set("firstSelectedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstSelectedItem: Self = this.set("firstSelectedItem", js.undefined)
+    @scala.inline
+    def setGroupHeaderPosition(value: static | sticky): Self = this.set("groupHeaderPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupHeaderPosition: Self = this.set("groupHeaderPosition", js.undefined)
+    @scala.inline
+    def setItem(value: Focusable[K, D]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setScrollPolicy(value: auto | loadMoreOnScroll): Self = this.set("scrollPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPolicy: Self = this.set("scrollPolicy", js.undefined)
+    @scala.inline
+    def setScrollPolicyOptions(value: FetchSize): Self = this.set("scrollPolicyOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPolicyOptions: Self = this.set("scrollPolicyOptions", js.undefined)
+    @scala.inline
+    def setScrollPosition(value: OffsetX[K]): Self = this.set("scrollPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPosition: Self = this.set("scrollPosition", js.undefined)
+    @scala.inline
+    def setSelectionVarargs(value: K*): Self = this.set("selection", js.Array(value :_*))
+    @scala.inline
+    def setSelection(value: js.Array[K]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: none | single | multiple): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setSelectionRequired(value: Boolean): Self = this.set("selectionRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionRequired: Self = this.set("selectionRequired", js.undefined)
+    @scala.inline
+    def setTranslations(value: AccessibleNavigateSkipItems): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

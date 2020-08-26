@@ -26,6 +26,7 @@ object glacierMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: VaultArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: VaultArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -53,8 +54,10 @@ object glacierMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.glacierVaultMod.Vault = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.glacierVaultMod.Vault = js.native
     def get(name: String, id: Input[ID], state: VaultState): typings.pulumiAws.glacierVaultMod.Vault = js.native
     def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): typings.pulumiAws.glacierVaultMod.Vault = js.native
     /**
@@ -74,8 +77,10 @@ object glacierMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.vaultLockMod.VaultLock = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vaultLockMod.VaultLock = js.native
     def get(name: String, id: Input[ID], state: VaultLockState): typings.pulumiAws.vaultLockMod.VaultLock = js.native
     def get(name: String, id: Input[ID], state: VaultLockState, opts: CustomResourceOptions): typings.pulumiAws.vaultLockMod.VaultLock = js.native
     /**

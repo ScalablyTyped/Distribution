@@ -9,12 +9,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait settings extends js.Object {
-  var baseURL: String
-  var cache: Ttl
-  var headers: StringDictionary[String]
-  var live: PollTime
-  var params: RequestObject
+  var baseURL: String = js.native
+  var cache: Ttl = js.native
+  var headers: StringDictionary[String] = js.native
+  var live: PollTime = js.native
+  var maxConcurrentRequests: Double = js.native
+  var params: RequestObject = js.native
 }
 
 @JSImport("vexdb/out/constants/settings", "settings")

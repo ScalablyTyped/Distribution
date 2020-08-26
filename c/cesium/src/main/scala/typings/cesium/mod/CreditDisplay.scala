@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CreditDisplay protected () extends js.Object {
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, delimiter: String) = this()
+  def this(container: HTMLElement, delimiter: js.UndefOr[scala.Nothing], viewport: HTMLElement) = this()
   def this(container: HTMLElement, delimiter: String, viewport: HTMLElement) = this()
   var container: HTMLElement = js.native
   def addCredit(credit: Credit): Unit = js.native

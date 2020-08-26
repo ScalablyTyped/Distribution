@@ -11,8 +11,8 @@ Express style path to RegExp utility
 | Full name          | path-to-regexp |
 | Keywords           | express, regexp, route, routing |
 | # releases         | 18 |
-| # dependents       | 2283 |
-| # downloads        | 632349731 |
+| # dependents       | 2327 |
+| # downloads        | 649287665 |
 | # stars            | 112 |
 
 ## Links

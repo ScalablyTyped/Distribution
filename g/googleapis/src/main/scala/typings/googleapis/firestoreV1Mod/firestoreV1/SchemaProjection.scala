@@ -18,10 +18,28 @@ trait SchemaProjection extends js.Object {
 
 object SchemaProjection {
   @scala.inline
-  def apply(fields: js.Array[SchemaFieldReference] = null): SchemaProjection = {
+  def apply(): SchemaProjection = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjection]
   }
+  @scala.inline
+  implicit class SchemaProjectionOps[Self <: SchemaProjection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldsVarargs(value: SchemaFieldReference*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: js.Array[SchemaFieldReference]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+  }
+  
 }
 

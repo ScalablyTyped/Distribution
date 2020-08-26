@@ -4,40 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BeforeSelectEventArgs extends js.Object {
   /** if the event should be canceled; otherwise, false.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** returns the TreeView model
     */
-  var model: js.UndefOr[Model] = js.undefined
+  var model: js.UndefOr[Model] = js.native
   /** returns the given target node values
     */
-  var nodeDetails: js.UndefOr[js.Any] = js.undefined
+  var nodeDetails: js.UndefOr[js.Any] = js.native
   /** returns the target element, the given node to be selected
     */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[js.Any] = js.native
   /** returns the name of the event
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object BeforeSelectEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    model: Model = null,
-    nodeDetails: js.Any = null,
-    target: js.Any = null,
-    `type`: String = null
-  ): BeforeSelectEventArgs = {
+  def apply(): BeforeSelectEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeSelectEventArgs]
   }
+  @scala.inline
+  implicit class BeforeSelectEventArgsOps[Self <: BeforeSelectEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setNodeDetails(value: js.Any): Self = this.set("nodeDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeDetails: Self = this.set("nodeDetails", js.undefined)
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

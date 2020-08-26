@@ -22,11 +22,32 @@ trait DescribeTagsRequest extends js.Object {
 
 object DescribeTagsRequest {
   @scala.inline
-  def apply(FileSystemId: FileSystemId, Marker: Marker = null, MaxItems: js.UndefOr[MaxItems] = js.undefined): DescribeTagsRequest = {
+  def apply(FileSystemId: FileSystemId): DescribeTagsRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsRequest]
   }
+  @scala.inline
+  implicit class DescribeTagsRequestOps[Self <: DescribeTagsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: MaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+  }
+  
 }
 

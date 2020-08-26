@@ -20,12 +20,19 @@ object begin extends js.Object {
     * completed with `end`. `onEnd` does not receive any arguments.
     */
   def apply(): XMLDocumentCB = js.native
+  def apply(options: js.UndefOr[scala.Nothing], onData: js.UndefOr[scala.Nothing], onEnd: OnEndCallback): XMLDocumentCB = js.native
+  def apply(options: js.UndefOr[scala.Nothing], onData: OnDataCallback): XMLDocumentCB = js.native
+  def apply(options: js.UndefOr[scala.Nothing], onData: OnDataCallback, onEnd: OnEndCallback): XMLDocumentCB = js.native
+  def apply(options: js.UndefOr[scala.Nothing], onData: OnEndCallback): XMLDocumentCB = js.native
+  def apply(options: js.UndefOr[scala.Nothing], onData: OnEndCallback, onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions): XMLDocumentCB = js.native
+  def apply(options: BeginOptions, onData: js.UndefOr[scala.Nothing], onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnDataCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnDataCallback, onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: BeginOptions, onData: OnEndCallback, onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: OnDataCallback): XMLDocumentCB = js.native
+  def apply(options: OnDataCallback, onData: js.UndefOr[scala.Nothing], onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: OnDataCallback, onData: OnDataCallback): XMLDocumentCB = js.native
   def apply(options: OnDataCallback, onData: OnDataCallback, onEnd: OnEndCallback): XMLDocumentCB = js.native
   def apply(options: OnDataCallback, onData: OnEndCallback): XMLDocumentCB = js.native

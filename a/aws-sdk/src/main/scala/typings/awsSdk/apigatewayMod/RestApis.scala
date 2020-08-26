@@ -15,11 +15,32 @@ trait RestApis extends js.Object {
 
 object RestApis {
   @scala.inline
-  def apply(items: ListOfRestApi = null, position: String = null): RestApis = {
+  def apply(): RestApis = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestApis]
   }
+  @scala.inline
+  implicit class RestApisOps[Self <: RestApis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: RestApi*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: ListOfRestApi): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+  }
+  
 }
 

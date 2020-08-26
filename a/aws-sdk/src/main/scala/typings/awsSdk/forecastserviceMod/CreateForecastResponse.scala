@@ -14,10 +14,26 @@ trait CreateForecastResponse extends js.Object {
 
 object CreateForecastResponse {
   @scala.inline
-  def apply(ForecastArn: Arn = null): CreateForecastResponse = {
+  def apply(): CreateForecastResponse = {
     val __obj = js.Dynamic.literal()
-    if (ForecastArn != null) __obj.updateDynamic("ForecastArn")(ForecastArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateForecastResponse]
   }
+  @scala.inline
+  implicit class CreateForecastResponseOps[Self <: CreateForecastResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForecastArn(value: Arn): Self = this.set("ForecastArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastArn: Self = this.set("ForecastArn", js.undefined)
+  }
+  
 }
 

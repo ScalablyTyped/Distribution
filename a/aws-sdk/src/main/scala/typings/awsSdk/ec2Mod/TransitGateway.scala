@@ -42,26 +42,56 @@ trait TransitGateway extends js.Object {
 
 object TransitGateway {
   @scala.inline
-  def apply(
-    CreationTime: DateTime = null,
-    Description: String = null,
-    Options: TransitGatewayOptions = null,
-    OwnerId: String = null,
-    State: TransitGatewayState = null,
-    Tags: TagList = null,
-    TransitGatewayArn: String = null,
-    TransitGatewayId: String = null
-  ): TransitGateway = {
+  def apply(): TransitGateway = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TransitGatewayArn != null) __obj.updateDynamic("TransitGatewayArn")(TransitGatewayArn.asInstanceOf[js.Any])
-    if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGateway]
   }
+  @scala.inline
+  implicit class TransitGatewayOps[Self <: TransitGateway] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setOptions(value: TransitGatewayOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setState(value: TransitGatewayState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayArn(value: String): Self = this.set("TransitGatewayArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayArn: Self = this.set("TransitGatewayArn", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: String): Self = this.set("TransitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("TransitGatewayId", js.undefined)
+  }
+  
 }
 

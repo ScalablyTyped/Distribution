@@ -10,9 +10,9 @@ List an author's packages.
 | ------------------ | :-------------: |
 | Full name          | npm-list-author-packages |
 | Keywords           | npm, list, ls, packages, pkgs, author, modules, public, cli |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 614 |
+| # downloads        | 602 |
 | # stars            | 1 |
 
 ## Links

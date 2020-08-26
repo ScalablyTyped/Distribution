@@ -18,6 +18,7 @@ object xhrBackendMod extends js.Object {
   @js.native
   class CookieXSRFStrategy () extends XSRFStrategy {
     def this(_cookieName: String) = this()
+    def this(_cookieName: js.UndefOr[scala.Nothing], _headerName: String) = this()
     def this(_cookieName: String, _headerName: String) = this()
     var _cookieName: js.Any = js.native
     var _headerName: js.Any = js.native

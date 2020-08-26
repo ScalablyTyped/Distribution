@@ -91,36 +91,89 @@ object DescribeTransformJobResponse {
     TransformJobArn: TransformJobArn,
     TransformJobName: TransformJobName,
     TransformJobStatus: TransformJobStatus,
-    TransformResources: TransformResources,
-    AutoMLJobArn: AutoMLJobArn = null,
-    BatchStrategy: BatchStrategy = null,
-    DataProcessing: DataProcessing = null,
-    Environment: TransformEnvironmentMap = null,
-    ExperimentConfig: ExperimentConfig = null,
-    FailureReason: FailureReason = null,
-    LabelingJobArn: LabelingJobArn = null,
-    MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
-    MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
-    ModelClientConfig: ModelClientConfig = null,
-    TransformEndTime: Timestamp = null,
-    TransformOutput: TransformOutput = null,
-    TransformStartTime: Timestamp = null
+    TransformResources: TransformResources
   ): DescribeTransformJobResponse = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any], TransformInput = TransformInput.asInstanceOf[js.Any], TransformJobArn = TransformJobArn.asInstanceOf[js.Any], TransformJobName = TransformJobName.asInstanceOf[js.Any], TransformJobStatus = TransformJobStatus.asInstanceOf[js.Any], TransformResources = TransformResources.asInstanceOf[js.Any])
-    if (AutoMLJobArn != null) __obj.updateDynamic("AutoMLJobArn")(AutoMLJobArn.asInstanceOf[js.Any])
-    if (BatchStrategy != null) __obj.updateDynamic("BatchStrategy")(BatchStrategy.asInstanceOf[js.Any])
-    if (DataProcessing != null) __obj.updateDynamic("DataProcessing")(DataProcessing.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (ExperimentConfig != null) __obj.updateDynamic("ExperimentConfig")(ExperimentConfig.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (LabelingJobArn != null) __obj.updateDynamic("LabelingJobArn")(LabelingJobArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB.get.asInstanceOf[js.Any])
-    if (ModelClientConfig != null) __obj.updateDynamic("ModelClientConfig")(ModelClientConfig.asInstanceOf[js.Any])
-    if (TransformEndTime != null) __obj.updateDynamic("TransformEndTime")(TransformEndTime.asInstanceOf[js.Any])
-    if (TransformOutput != null) __obj.updateDynamic("TransformOutput")(TransformOutput.asInstanceOf[js.Any])
-    if (TransformStartTime != null) __obj.updateDynamic("TransformStartTime")(TransformStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTransformJobResponse]
   }
+  @scala.inline
+  implicit class DescribeTransformJobResponseOps[Self <: DescribeTransformJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransformInput(value: TransformInput): Self = this.set("TransformInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransformJobArn(value: TransformJobArn): Self = this.set("TransformJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransformJobName(value: TransformJobName): Self = this.set("TransformJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransformJobStatus(value: TransformJobStatus): Self = this.set("TransformJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransformResources(value: TransformResources): Self = this.set("TransformResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoMLJobArn(value: AutoMLJobArn): Self = this.set("AutoMLJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLJobArn: Self = this.set("AutoMLJobArn", js.undefined)
+    @scala.inline
+    def setBatchStrategy(value: BatchStrategy): Self = this.set("BatchStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchStrategy: Self = this.set("BatchStrategy", js.undefined)
+    @scala.inline
+    def setDataProcessing(value: DataProcessing): Self = this.set("DataProcessing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataProcessing: Self = this.set("DataProcessing", js.undefined)
+    @scala.inline
+    def setEnvironment(value: TransformEnvironmentMap): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setExperimentConfig(value: ExperimentConfig): Self = this.set("ExperimentConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentConfig: Self = this.set("ExperimentConfig", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setLabelingJobArn(value: LabelingJobArn): Self = this.set("LabelingJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelingJobArn: Self = this.set("LabelingJobArn", js.undefined)
+    @scala.inline
+    def setMaxConcurrentTransforms(value: MaxConcurrentTransforms): Self = this.set("MaxConcurrentTransforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrentTransforms: Self = this.set("MaxConcurrentTransforms", js.undefined)
+    @scala.inline
+    def setMaxPayloadInMB(value: MaxPayloadInMB): Self = this.set("MaxPayloadInMB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPayloadInMB: Self = this.set("MaxPayloadInMB", js.undefined)
+    @scala.inline
+    def setModelClientConfig(value: ModelClientConfig): Self = this.set("ModelClientConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelClientConfig: Self = this.set("ModelClientConfig", js.undefined)
+    @scala.inline
+    def setTransformEndTime(value: Timestamp): Self = this.set("TransformEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformEndTime: Self = this.set("TransformEndTime", js.undefined)
+    @scala.inline
+    def setTransformOutput(value: TransformOutput): Self = this.set("TransformOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformOutput: Self = this.set("TransformOutput", js.undefined)
+    @scala.inline
+    def setTransformStartTime(value: Timestamp): Self = this.set("TransformStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformStartTime: Self = this.set("TransformStartTime", js.undefined)
+  }
+  
 }
 

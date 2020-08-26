@@ -26,12 +26,34 @@ trait SchemaCollectionOverride extends js.Object {
 
 object SchemaCollectionOverride {
   @scala.inline
-  def apply(collection: String = null, methodMap: SchemaMethodMap = null, options: SchemaOptions = null): SchemaCollectionOverride = {
+  def apply(): SchemaCollectionOverride = {
     val __obj = js.Dynamic.literal()
-    if (collection != null) __obj.updateDynamic("collection")(collection.asInstanceOf[js.Any])
-    if (methodMap != null) __obj.updateDynamic("methodMap")(methodMap.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCollectionOverride]
   }
+  @scala.inline
+  implicit class SchemaCollectionOverrideOps[Self <: SchemaCollectionOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollection(value: String): Self = this.set("collection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollection: Self = this.set("collection", js.undefined)
+    @scala.inline
+    def setMethodMap(value: SchemaMethodMap): Self = this.set("methodMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethodMap: Self = this.set("methodMap", js.undefined)
+    @scala.inline
+    def setOptions(value: SchemaOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

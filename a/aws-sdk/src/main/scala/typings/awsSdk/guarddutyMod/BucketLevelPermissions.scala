@@ -22,16 +22,34 @@ trait BucketLevelPermissions extends js.Object {
 
 object BucketLevelPermissions {
   @scala.inline
-  def apply(
-    AccessControlList: AccessControlList = null,
-    BlockPublicAccess: BlockPublicAccess = null,
-    BucketPolicy: BucketPolicy = null
-  ): BucketLevelPermissions = {
+  def apply(): BucketLevelPermissions = {
     val __obj = js.Dynamic.literal()
-    if (AccessControlList != null) __obj.updateDynamic("AccessControlList")(AccessControlList.asInstanceOf[js.Any])
-    if (BlockPublicAccess != null) __obj.updateDynamic("BlockPublicAccess")(BlockPublicAccess.asInstanceOf[js.Any])
-    if (BucketPolicy != null) __obj.updateDynamic("BucketPolicy")(BucketPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketLevelPermissions]
   }
+  @scala.inline
+  implicit class BucketLevelPermissionsOps[Self <: BucketLevelPermissions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessControlList(value: AccessControlList): Self = this.set("AccessControlList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessControlList: Self = this.set("AccessControlList", js.undefined)
+    @scala.inline
+    def setBlockPublicAccess(value: BlockPublicAccess): Self = this.set("BlockPublicAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockPublicAccess: Self = this.set("BlockPublicAccess", js.undefined)
+    @scala.inline
+    def setBucketPolicy(value: BucketPolicy): Self = this.set("BucketPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketPolicy: Self = this.set("BucketPolicy", js.undefined)
+  }
+  
 }
 

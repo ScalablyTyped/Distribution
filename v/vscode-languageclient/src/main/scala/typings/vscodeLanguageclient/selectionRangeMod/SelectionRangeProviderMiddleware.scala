@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectionRangeProviderMiddleware extends js.Object {
   var provideSelectionRanges: js.UndefOr[
     js.ThisFunction4[
@@ -19,24 +20,40 @@ trait SelectionRangeProviderMiddleware extends js.Object {
       /* next */ ProvideSelectionRangeSignature, 
       ProviderResult[js.Array[SelectionRange]]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object SelectionRangeProviderMiddleware {
   @scala.inline
-  def apply(
-    provideSelectionRanges: js.ThisFunction4[
-      /* this */ Unit, 
-      /* document */ TextDocument, 
-      /* positions */ js.Array[Position], 
-      /* token */ CancellationToken, 
-      /* next */ ProvideSelectionRangeSignature, 
-      ProviderResult[js.Array[SelectionRange]]
-    ] = null
-  ): SelectionRangeProviderMiddleware = {
+  def apply(): SelectionRangeProviderMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (provideSelectionRanges != null) __obj.updateDynamic("provideSelectionRanges")(provideSelectionRanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionRangeProviderMiddleware]
   }
+  @scala.inline
+  implicit class SelectionRangeProviderMiddlewareOps[Self <: SelectionRangeProviderMiddleware] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideSelectionRanges(
+      value: js.ThisFunction4[
+          /* this */ Unit, 
+          /* document */ TextDocument, 
+          /* positions */ js.Array[Position], 
+          /* token */ CancellationToken, 
+          /* next */ ProvideSelectionRangeSignature, 
+          ProviderResult[js.Array[SelectionRange]]
+        ]
+    ): Self = this.set("provideSelectionRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvideSelectionRanges: Self = this.set("provideSelectionRanges", js.undefined)
+  }
+  
 }
 

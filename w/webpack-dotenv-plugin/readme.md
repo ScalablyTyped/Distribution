@@ -12,7 +12,7 @@ Use dotenv with webpack.
 | Keywords           | webpack, dotenv, dot, env, environment, variables, plugin |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 177807 |
+| # downloads        | 188333 |
 | # stars            | 1 |
 
 ## Links

@@ -10,9 +10,9 @@ A library to convert javascript objects into form data.
 | ------------------ | :-------------: |
 | Full name          | json-form-data |
 | Keywords           | json, formdata, form, data, convert |
-| # releases         | 14 |
+| # releases         | 15 |
 | # dependents       | 1 |
-| # downloads        | 61349 |
+| # downloads        | 71040 |
 | # stars            | 0 |
 
 ## Links

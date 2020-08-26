@@ -13,6 +13,11 @@ object mc extends js.Object {
     extends typings.ranjs.mod._mc.MCMC {
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double]) = this()
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double], config: Dim) = this()
+    def this(
+      logDensity: js.Function1[/* x */ js.Array[Double], Double],
+      config: js.UndefOr[scala.Nothing],
+      initialState: State
+    ) = this()
     def this(logDensity: js.Function1[/* x */ js.Array[Double], Double], config: Dim, initialState: State) = this()
   }
   

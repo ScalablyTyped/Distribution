@@ -46,6 +46,7 @@ object utils extends js.Object {
     * @see https://mochajs.org/api/Mocha.utils.html#.exports.lookupFiles
     */
   def lookupFiles(filepath: String): js.Array[String] = js.native
+  def lookupFiles(filepath: String, extensions: js.UndefOr[scala.Nothing], recursive: Boolean): js.Array[String] = js.native
   def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = js.native
   def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = js.native
   /**

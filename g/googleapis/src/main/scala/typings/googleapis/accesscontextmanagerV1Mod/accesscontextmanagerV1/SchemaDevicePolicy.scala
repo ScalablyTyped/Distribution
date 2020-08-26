@@ -47,22 +47,52 @@ trait SchemaDevicePolicy extends js.Object {
 
 object SchemaDevicePolicy {
   @scala.inline
-  def apply(
-    allowedDeviceManagementLevels: js.Array[String] = null,
-    allowedEncryptionStatuses: js.Array[String] = null,
-    osConstraints: js.Array[SchemaOsConstraint] = null,
-    requireAdminApproval: js.UndefOr[Boolean] = js.undefined,
-    requireCorpOwned: js.UndefOr[Boolean] = js.undefined,
-    requireScreenlock: js.UndefOr[Boolean] = js.undefined
-  ): SchemaDevicePolicy = {
+  def apply(): SchemaDevicePolicy = {
     val __obj = js.Dynamic.literal()
-    if (allowedDeviceManagementLevels != null) __obj.updateDynamic("allowedDeviceManagementLevels")(allowedDeviceManagementLevels.asInstanceOf[js.Any])
-    if (allowedEncryptionStatuses != null) __obj.updateDynamic("allowedEncryptionStatuses")(allowedEncryptionStatuses.asInstanceOf[js.Any])
-    if (osConstraints != null) __obj.updateDynamic("osConstraints")(osConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireAdminApproval)) __obj.updateDynamic("requireAdminApproval")(requireAdminApproval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireCorpOwned)) __obj.updateDynamic("requireCorpOwned")(requireCorpOwned.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireScreenlock)) __obj.updateDynamic("requireScreenlock")(requireScreenlock.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevicePolicy]
   }
+  @scala.inline
+  implicit class SchemaDevicePolicyOps[Self <: SchemaDevicePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedDeviceManagementLevelsVarargs(value: String*): Self = this.set("allowedDeviceManagementLevels", js.Array(value :_*))
+    @scala.inline
+    def setAllowedDeviceManagementLevels(value: js.Array[String]): Self = this.set("allowedDeviceManagementLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedDeviceManagementLevels: Self = this.set("allowedDeviceManagementLevels", js.undefined)
+    @scala.inline
+    def setAllowedEncryptionStatusesVarargs(value: String*): Self = this.set("allowedEncryptionStatuses", js.Array(value :_*))
+    @scala.inline
+    def setAllowedEncryptionStatuses(value: js.Array[String]): Self = this.set("allowedEncryptionStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedEncryptionStatuses: Self = this.set("allowedEncryptionStatuses", js.undefined)
+    @scala.inline
+    def setOsConstraintsVarargs(value: SchemaOsConstraint*): Self = this.set("osConstraints", js.Array(value :_*))
+    @scala.inline
+    def setOsConstraints(value: js.Array[SchemaOsConstraint]): Self = this.set("osConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsConstraints: Self = this.set("osConstraints", js.undefined)
+    @scala.inline
+    def setRequireAdminApproval(value: Boolean): Self = this.set("requireAdminApproval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireAdminApproval: Self = this.set("requireAdminApproval", js.undefined)
+    @scala.inline
+    def setRequireCorpOwned(value: Boolean): Self = this.set("requireCorpOwned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireCorpOwned: Self = this.set("requireCorpOwned", js.undefined)
+    @scala.inline
+    def setRequireScreenlock(value: Boolean): Self = this.set("requireScreenlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireScreenlock: Self = this.set("requireScreenlock", js.undefined)
+  }
+  
 }
 

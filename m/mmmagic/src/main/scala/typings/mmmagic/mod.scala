@@ -13,6 +13,7 @@ object mod extends js.Object {
   class Magic () extends js.Object {
     def this(magicPath: String) = this()
     def this(mask: bitmask) = this()
+    def this(magicPath: js.UndefOr[scala.Nothing], mask: bitmask) = this()
     def this(magicPath: String, mask: bitmask) = this()
     def detect(data: Buffer, callback: js.Function2[/* err */ Error, /* result */ String, Unit]): Unit = js.native
     def detectFile(path: String, callback: js.Function2[/* err */ Error, /* result */ String, Unit]): Unit = js.native

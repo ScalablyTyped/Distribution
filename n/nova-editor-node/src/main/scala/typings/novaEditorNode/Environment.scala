@@ -29,9 +29,11 @@ trait Environment extends js.Object {
   def isReleasedVersion(): Boolean = js.native
   def localize(): String = js.native
   def localize(key: String): String = js.native
+  def localize(key: String, value: js.UndefOr[scala.Nothing], tableName: String): String = js.native
   def localize(key: String, value: String): String = js.native
   def localize(key: String, value: String, tableName: String): String = js.native
   def localize(key: String, value: Null, tableName: String): String = js.native
+  def localize(key: Null, value: js.UndefOr[scala.Nothing], tableName: String): String = js.native
   def localize(key: Null, value: String): String = js.native
   def localize(key: Null, value: String, tableName: String): String = js.native
   def localize(key: Null, value: Null, tableName: String): String = js.native

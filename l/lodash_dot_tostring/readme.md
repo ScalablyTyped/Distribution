@@ -12,7 +12,7 @@ The lodash method `_.toString` exported as a module.
 | Keywords           | lodash-modularized, tostring |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 2002620 |
+| # downloads        | 1938864 |
 | # stars            | 0 |
 
 ## Links

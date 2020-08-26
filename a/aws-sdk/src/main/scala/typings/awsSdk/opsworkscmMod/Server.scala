@@ -106,58 +106,124 @@ trait Server extends js.Object {
 
 object Server {
   @scala.inline
-  def apply(
-    AssociatePublicIpAddress: js.UndefOr[Boolean] = js.undefined,
-    BackupRetentionCount: js.UndefOr[Integer] = js.undefined,
-    CloudFormationStackArn: String = null,
-    CreatedAt: Timestamp = null,
-    CustomDomain: CustomDomain = null,
-    DisableAutomatedBackup: js.UndefOr[Boolean] = js.undefined,
-    Endpoint: String = null,
-    Engine: String = null,
-    EngineAttributes: EngineAttributes = null,
-    EngineModel: String = null,
-    EngineVersion: String = null,
-    InstanceProfileArn: String = null,
-    InstanceType: String = null,
-    KeyPair: String = null,
-    MaintenanceStatus: MaintenanceStatus = null,
-    PreferredBackupWindow: TimeWindowDefinition = null,
-    PreferredMaintenanceWindow: TimeWindowDefinition = null,
-    SecurityGroupIds: Strings = null,
-    ServerArn: String = null,
-    ServerName: String = null,
-    ServiceRoleArn: String = null,
-    Status: ServerStatus = null,
-    StatusReason: String = null,
-    SubnetIds: Strings = null
-  ): Server = {
+  def apply(): Server = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AssociatePublicIpAddress)) __obj.updateDynamic("AssociatePublicIpAddress")(AssociatePublicIpAddress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupRetentionCount)) __obj.updateDynamic("BackupRetentionCount")(BackupRetentionCount.get.asInstanceOf[js.Any])
-    if (CloudFormationStackArn != null) __obj.updateDynamic("CloudFormationStackArn")(CloudFormationStackArn.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CustomDomain != null) __obj.updateDynamic("CustomDomain")(CustomDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableAutomatedBackup)) __obj.updateDynamic("DisableAutomatedBackup")(DisableAutomatedBackup.get.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineAttributes != null) __obj.updateDynamic("EngineAttributes")(EngineAttributes.asInstanceOf[js.Any])
-    if (EngineModel != null) __obj.updateDynamic("EngineModel")(EngineModel.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (InstanceProfileArn != null) __obj.updateDynamic("InstanceProfileArn")(InstanceProfileArn.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KeyPair != null) __obj.updateDynamic("KeyPair")(KeyPair.asInstanceOf[js.Any])
-    if (MaintenanceStatus != null) __obj.updateDynamic("MaintenanceStatus")(MaintenanceStatus.asInstanceOf[js.Any])
-    if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (ServerArn != null) __obj.updateDynamic("ServerArn")(ServerArn.asInstanceOf[js.Any])
-    if (ServerName != null) __obj.updateDynamic("ServerName")(ServerName.asInstanceOf[js.Any])
-    if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Server]
   }
+  @scala.inline
+  implicit class ServerOps[Self <: Server] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociatePublicIpAddress(value: Boolean): Self = this.set("AssociatePublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatePublicIpAddress: Self = this.set("AssociatePublicIpAddress", js.undefined)
+    @scala.inline
+    def setBackupRetentionCount(value: Integer): Self = this.set("BackupRetentionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionCount: Self = this.set("BackupRetentionCount", js.undefined)
+    @scala.inline
+    def setCloudFormationStackArn(value: String): Self = this.set("CloudFormationStackArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudFormationStackArn: Self = this.set("CloudFormationStackArn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCustomDomain(value: CustomDomain): Self = this.set("CustomDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDomain: Self = this.set("CustomDomain", js.undefined)
+    @scala.inline
+    def setDisableAutomatedBackup(value: Boolean): Self = this.set("DisableAutomatedBackup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableAutomatedBackup: Self = this.set("DisableAutomatedBackup", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineAttributesVarargs(value: EngineAttribute*): Self = this.set("EngineAttributes", js.Array(value :_*))
+    @scala.inline
+    def setEngineAttributes(value: EngineAttributes): Self = this.set("EngineAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineAttributes: Self = this.set("EngineAttributes", js.undefined)
+    @scala.inline
+    def setEngineModel(value: String): Self = this.set("EngineModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineModel: Self = this.set("EngineModel", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setInstanceProfileArn(value: String): Self = this.set("InstanceProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceProfileArn: Self = this.set("InstanceProfileArn", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKeyPair(value: String): Self = this.set("KeyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPair: Self = this.set("KeyPair", js.undefined)
+    @scala.inline
+    def setMaintenanceStatus(value: MaintenanceStatus): Self = this.set("MaintenanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceStatus: Self = this.set("MaintenanceStatus", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: TimeWindowDefinition): Self = this.set("PreferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("PreferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: TimeWindowDefinition): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Strings): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setServerArn(value: String): Self = this.set("ServerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerArn: Self = this.set("ServerArn", js.undefined)
+    @scala.inline
+    def setServerName(value: String): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerName: Self = this.set("ServerName", js.undefined)
+    @scala.inline
+    def setServiceRoleArn(value: String): Self = this.set("ServiceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRoleArn: Self = this.set("ServiceRoleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: ServerStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Strings): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+  }
+  
 }
 

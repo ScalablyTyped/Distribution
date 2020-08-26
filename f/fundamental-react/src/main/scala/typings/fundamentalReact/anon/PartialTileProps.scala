@@ -5,39 +5,68 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Tile/Tile.TileProps> */
+@js.native
 trait PartialTileProps extends js.Object {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var backgroundImage: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
-  var productTile: js.UndefOr[Boolean] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var backgroundImage: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var productTile: js.UndefOr[Boolean] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
 }
 
 object PartialTileProps {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    backgroundImage: String = null,
-    className: String = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onClick: /* repeated */ js.Any => _ = null,
-    productTile: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined
-  ): PartialTileProps = {
+  def apply(): PartialTileProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (backgroundImage != null) __obj.updateDynamic("backgroundImage")(backgroundImage.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(productTile)) __obj.updateDynamic("productTile")(productTile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialTileProps]
   }
+  @scala.inline
+  implicit class PartialTilePropsOps[Self <: PartialTileProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setBackgroundImage(value: String): Self = this.set("backgroundImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImage: Self = this.set("backgroundImage", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* repeated */ js.Any => _): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setProductTile(value: Boolean): Self = this.set("productTile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductTile: Self = this.set("productTile", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+  }
+  
 }
 

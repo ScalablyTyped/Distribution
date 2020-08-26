@@ -10,9 +10,9 @@ A TDS driver, for connecting to MS SQLServer databases.
 | ------------------ | :-------------: |
 | Full name          | tedious |
 | Keywords           | sql, database, mssql, sqlserver, sql-server, tds, msnodesql, azure |
-| # releases         | 48 |
-| # dependents       | 278 |
-| # downloads        | 6784805 |
+| # releases         | 51 |
+| # dependents       | 279 |
+| # downloads        | 6867895 |
 | # stars            | 48 |
 
 ## Links

@@ -35,22 +35,46 @@ trait UserPoolPasswordPolicy extends js.Object {
 
 object UserPoolPasswordPolicy {
   @scala.inline
-  def apply(
-    minimumLength: Input[Double] = null,
-    requireLowercase: Input[Boolean] = null,
-    requireNumbers: Input[Boolean] = null,
-    requireSymbols: Input[Boolean] = null,
-    requireUppercase: Input[Boolean] = null,
-    temporaryPasswordValidityDays: Input[Double] = null
-  ): UserPoolPasswordPolicy = {
+  def apply(): UserPoolPasswordPolicy = {
     val __obj = js.Dynamic.literal()
-    if (minimumLength != null) __obj.updateDynamic("minimumLength")(minimumLength.asInstanceOf[js.Any])
-    if (requireLowercase != null) __obj.updateDynamic("requireLowercase")(requireLowercase.asInstanceOf[js.Any])
-    if (requireNumbers != null) __obj.updateDynamic("requireNumbers")(requireNumbers.asInstanceOf[js.Any])
-    if (requireSymbols != null) __obj.updateDynamic("requireSymbols")(requireSymbols.asInstanceOf[js.Any])
-    if (requireUppercase != null) __obj.updateDynamic("requireUppercase")(requireUppercase.asInstanceOf[js.Any])
-    if (temporaryPasswordValidityDays != null) __obj.updateDynamic("temporaryPasswordValidityDays")(temporaryPasswordValidityDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolPasswordPolicy]
   }
+  @scala.inline
+  implicit class UserPoolPasswordPolicyOps[Self <: UserPoolPasswordPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMinimumLength(value: Input[Double]): Self = this.set("minimumLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumLength: Self = this.set("minimumLength", js.undefined)
+    @scala.inline
+    def setRequireLowercase(value: Input[Boolean]): Self = this.set("requireLowercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireLowercase: Self = this.set("requireLowercase", js.undefined)
+    @scala.inline
+    def setRequireNumbers(value: Input[Boolean]): Self = this.set("requireNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireNumbers: Self = this.set("requireNumbers", js.undefined)
+    @scala.inline
+    def setRequireSymbols(value: Input[Boolean]): Self = this.set("requireSymbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireSymbols: Self = this.set("requireSymbols", js.undefined)
+    @scala.inline
+    def setRequireUppercase(value: Input[Boolean]): Self = this.set("requireUppercase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireUppercase: Self = this.set("requireUppercase", js.undefined)
+    @scala.inline
+    def setTemporaryPasswordValidityDays(value: Input[Double]): Self = this.set("temporaryPasswordValidityDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporaryPasswordValidityDays: Self = this.set("temporaryPasswordValidityDays", js.undefined)
+  }
+  
 }
 

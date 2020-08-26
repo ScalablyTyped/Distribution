@@ -18,6 +18,7 @@ object BackgroundHelper extends js.Object {
     * @param sBgImgUrl the configured custom background image for the control, if any
     */
   def addBackgroundColorStyles(rm: RenderManager): Unit = js.native
+  def addBackgroundColorStyles(rm: RenderManager, sBgColor: js.UndefOr[scala.Nothing], sBgImgUrl: js.Any): Unit = js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: String): Unit = js.native
   def addBackgroundColorStyles(rm: RenderManager, sBgColor: String, sBgImgUrl: js.Any): Unit = js.native
   /**
@@ -34,7 +35,38 @@ object BackgroundHelper extends js.Object {
     * @param fOpacity the background image opacity, if any
     */
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: String): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: String,
+    sBgImgUrl: js.UndefOr[scala.Nothing],
+    bRepeat: js.UndefOr[scala.Nothing],
+    fOpacity: Double
+  ): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: String,
+    sBgImgUrl: js.UndefOr[scala.Nothing],
+    bRepeat: Boolean
+  ): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: String,
+    sBgImgUrl: js.UndefOr[scala.Nothing],
+    bRepeat: Boolean,
+    fOpacity: Double
+  ): Unit = js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: String, sBgImgUrl: js.Any): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: String,
+    sBgImgUrl: js.Any,
+    bRepeat: js.UndefOr[scala.Nothing],
+    fOpacity: Double
+  ): Unit = js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: String, sBgImgUrl: js.Any, bRepeat: Boolean): Unit = js.native
   def renderBackgroundImageTag(
     rm: js.Any,
@@ -45,7 +77,38 @@ object BackgroundHelper extends js.Object {
     fOpacity: Double
   ): Unit = js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: js.Array[String]): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: js.Array[String],
+    sBgImgUrl: js.UndefOr[scala.Nothing],
+    bRepeat: js.UndefOr[scala.Nothing],
+    fOpacity: Double
+  ): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: js.Array[String],
+    sBgImgUrl: js.UndefOr[scala.Nothing],
+    bRepeat: Boolean
+  ): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: js.Array[String],
+    sBgImgUrl: js.UndefOr[scala.Nothing],
+    bRepeat: Boolean,
+    fOpacity: Double
+  ): Unit = js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: js.Array[String], sBgImgUrl: js.Any): Unit = js.native
+  def renderBackgroundImageTag(
+    rm: js.Any,
+    oControl: Control,
+    vCssClass: js.Array[String],
+    sBgImgUrl: js.Any,
+    bRepeat: js.UndefOr[scala.Nothing],
+    fOpacity: Double
+  ): Unit = js.native
   def renderBackgroundImageTag(rm: js.Any, oControl: Control, vCssClass: js.Array[String], sBgImgUrl: js.Any, bRepeat: Boolean): Unit = js.native
   def renderBackgroundImageTag(
     rm: js.Any,

@@ -10,6 +10,8 @@ trait Cluster
   extends EventEmitter
      with Commander
      with Commands {
+  val options: ClusterOptions = js.native
+  val status: String = js.native
   def connect(): js.Promise[Unit] = js.native
   def disconnect(): Unit = js.native
   def nodes(): js.Array[Redis] = js.native

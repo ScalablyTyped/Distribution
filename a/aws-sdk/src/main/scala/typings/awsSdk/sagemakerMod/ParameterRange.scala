@@ -22,16 +22,34 @@ trait ParameterRange extends js.Object {
 
 object ParameterRange {
   @scala.inline
-  def apply(
-    CategoricalParameterRangeSpecification: CategoricalParameterRangeSpecification = null,
-    ContinuousParameterRangeSpecification: ContinuousParameterRangeSpecification = null,
-    IntegerParameterRangeSpecification: IntegerParameterRangeSpecification = null
-  ): ParameterRange = {
+  def apply(): ParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (CategoricalParameterRangeSpecification != null) __obj.updateDynamic("CategoricalParameterRangeSpecification")(CategoricalParameterRangeSpecification.asInstanceOf[js.Any])
-    if (ContinuousParameterRangeSpecification != null) __obj.updateDynamic("ContinuousParameterRangeSpecification")(ContinuousParameterRangeSpecification.asInstanceOf[js.Any])
-    if (IntegerParameterRangeSpecification != null) __obj.updateDynamic("IntegerParameterRangeSpecification")(IntegerParameterRangeSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRange]
   }
+  @scala.inline
+  implicit class ParameterRangeOps[Self <: ParameterRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategoricalParameterRangeSpecification(value: CategoricalParameterRangeSpecification): Self = this.set("CategoricalParameterRangeSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoricalParameterRangeSpecification: Self = this.set("CategoricalParameterRangeSpecification", js.undefined)
+    @scala.inline
+    def setContinuousParameterRangeSpecification(value: ContinuousParameterRangeSpecification): Self = this.set("ContinuousParameterRangeSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuousParameterRangeSpecification: Self = this.set("ContinuousParameterRangeSpecification", js.undefined)
+    @scala.inline
+    def setIntegerParameterRangeSpecification(value: IntegerParameterRangeSpecification): Self = this.set("IntegerParameterRangeSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerParameterRangeSpecification: Self = this.set("IntegerParameterRangeSpecification", js.undefined)
+  }
+  
 }
 

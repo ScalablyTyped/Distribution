@@ -38,22 +38,46 @@ trait LifecycleHookSpecification extends js.Object {
 
 object LifecycleHookSpecification {
   @scala.inline
-  def apply(
-    LifecycleHookName: AsciiStringMaxLen255,
-    LifecycleTransition: LifecycleTransition,
-    DefaultResult: LifecycleActionResult = null,
-    HeartbeatTimeout: js.UndefOr[HeartbeatTimeout] = js.undefined,
-    NotificationMetadata: XmlStringMaxLen1023 = null,
-    NotificationTargetARN: NotificationTargetResourceName = null,
-    RoleARN: ResourceName = null
-  ): LifecycleHookSpecification = {
+  def apply(LifecycleHookName: AsciiStringMaxLen255, LifecycleTransition: LifecycleTransition): LifecycleHookSpecification = {
     val __obj = js.Dynamic.literal(LifecycleHookName = LifecycleHookName.asInstanceOf[js.Any], LifecycleTransition = LifecycleTransition.asInstanceOf[js.Any])
-    if (DefaultResult != null) __obj.updateDynamic("DefaultResult")(DefaultResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(HeartbeatTimeout)) __obj.updateDynamic("HeartbeatTimeout")(HeartbeatTimeout.get.asInstanceOf[js.Any])
-    if (NotificationMetadata != null) __obj.updateDynamic("NotificationMetadata")(NotificationMetadata.asInstanceOf[js.Any])
-    if (NotificationTargetARN != null) __obj.updateDynamic("NotificationTargetARN")(NotificationTargetARN.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleHookSpecification]
   }
+  @scala.inline
+  implicit class LifecycleHookSpecificationOps[Self <: LifecycleHookSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLifecycleHookName(value: AsciiStringMaxLen255): Self = this.set("LifecycleHookName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifecycleTransition(value: LifecycleTransition): Self = this.set("LifecycleTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultResult(value: LifecycleActionResult): Self = this.set("DefaultResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultResult: Self = this.set("DefaultResult", js.undefined)
+    @scala.inline
+    def setHeartbeatTimeout(value: HeartbeatTimeout): Self = this.set("HeartbeatTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeartbeatTimeout: Self = this.set("HeartbeatTimeout", js.undefined)
+    @scala.inline
+    def setNotificationMetadata(value: XmlStringMaxLen1023): Self = this.set("NotificationMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationMetadata: Self = this.set("NotificationMetadata", js.undefined)
+    @scala.inline
+    def setNotificationTargetARN(value: NotificationTargetResourceName): Self = this.set("NotificationTargetARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTargetARN: Self = this.set("NotificationTargetARN", js.undefined)
+    @scala.inline
+    def setRoleARN(value: ResourceName): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+  }
+  
 }
 

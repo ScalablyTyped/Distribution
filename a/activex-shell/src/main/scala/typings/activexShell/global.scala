@@ -22,17 +22,7 @@ object global extends js.Object {
     /** Definition of interface FolderItemVerb */
     @js.native
     class FolderItemVerb protected ()
-      extends typings.activexShell.Shell32.FolderItemVerb {
-      /** Get display name for item */
-      /* CompleteClass */
-      override val Name: String = js.native
-      /* CompleteClass */
-      @JSName("Shell32.FolderItemVerb_typekey")
-      override var Shell32DotFolderItemVerb_typekey: typings.activexShell.Shell32.FolderItemVerb = js.native
-      /** Execute the verb */
-      /* CompleteClass */
-      override def DoIt(): Unit = js.native
-    }
+      extends typings.activexShell.Shell32.FolderItemVerb
     
     /** Definition of interface FolderItemVerbs */
     @js.native
@@ -52,11 +42,7 @@ object global extends js.Object {
     /** ShellDispatch Load in Shell Context */
     @js.native
     class ShellDispatchInproc protected ()
-      extends typings.activexShell.Shell32.ShellDispatchInproc {
-      /* CompleteClass */
-      @JSName("Shell32.ShellDispatchInproc_typekey")
-      override var Shell32DotShellDispatchInproc_typekey: typings.activexShell.Shell32.ShellDispatchInproc = js.native
-    }
+      extends typings.activexShell.Shell32.ShellDispatchInproc
     
     /** Shell Folder Item */
     @js.native
@@ -80,14 +66,7 @@ object global extends js.Object {
       */
     @js.native
     class ShellFolderViewOC protected ()
-      extends typings.activexShell.Shell32.ShellFolderViewOC {
-      /* CompleteClass */
-      @JSName("Shell32.ShellFolderViewOC_typekey")
-      override var Shell32DotShellFolderViewOC_typekey: typings.activexShell.Shell32.ShellFolderViewOC = js.native
-      /** Set the ShellFolderView object to monitor events of. */
-      /* CompleteClass */
-      override def SetFolderView(pdisp: typings.activexShell.Shell32.ShellFolderView): Unit = js.native
-    }
+      extends typings.activexShell.Shell32.ShellFolderViewOC
     
     /** Shell Link object */
     @js.native

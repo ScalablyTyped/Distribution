@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StockChartNavigatorCategoryAxisAutoBaseUnitSteps extends js.Object {
-  var days: js.UndefOr[js.Any] = js.undefined
-  var hours: js.UndefOr[js.Any] = js.undefined
-  var minutes: js.UndefOr[js.Any] = js.undefined
-  var months: js.UndefOr[js.Any] = js.undefined
-  var seconds: js.UndefOr[js.Any] = js.undefined
-  var weeks: js.UndefOr[js.Any] = js.undefined
-  var years: js.UndefOr[js.Any] = js.undefined
+  var days: js.UndefOr[js.Any] = js.native
+  var hours: js.UndefOr[js.Any] = js.native
+  var minutes: js.UndefOr[js.Any] = js.native
+  var months: js.UndefOr[js.Any] = js.native
+  var seconds: js.UndefOr[js.Any] = js.native
+  var weeks: js.UndefOr[js.Any] = js.native
+  var years: js.UndefOr[js.Any] = js.native
 }
 
 object StockChartNavigatorCategoryAxisAutoBaseUnitSteps {
   @scala.inline
-  def apply(
-    days: js.Any = null,
-    hours: js.Any = null,
-    minutes: js.Any = null,
-    months: js.Any = null,
-    seconds: js.Any = null,
-    weeks: js.Any = null,
-    years: js.Any = null
-  ): StockChartNavigatorCategoryAxisAutoBaseUnitSteps = {
+  def apply(): StockChartNavigatorCategoryAxisAutoBaseUnitSteps = {
     val __obj = js.Dynamic.literal()
-    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
-    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
-    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
-    if (weeks != null) __obj.updateDynamic("weeks")(weeks.asInstanceOf[js.Any])
-    if (years != null) __obj.updateDynamic("years")(years.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNavigatorCategoryAxisAutoBaseUnitSteps]
   }
+  @scala.inline
+  implicit class StockChartNavigatorCategoryAxisAutoBaseUnitStepsOps[Self <: StockChartNavigatorCategoryAxisAutoBaseUnitSteps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDays(value: js.Any): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+    @scala.inline
+    def setHours(value: js.Any): Self = this.set("hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHours: Self = this.set("hours", js.undefined)
+    @scala.inline
+    def setMinutes(value: js.Any): Self = this.set("minutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinutes: Self = this.set("minutes", js.undefined)
+    @scala.inline
+    def setMonths(value: js.Any): Self = this.set("months", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonths: Self = this.set("months", js.undefined)
+    @scala.inline
+    def setSeconds(value: js.Any): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    @scala.inline
+    def setWeeks(value: js.Any): Self = this.set("weeks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeks: Self = this.set("weeks", js.undefined)
+    @scala.inline
+    def setYears(value: js.Any): Self = this.set("years", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYears: Self = this.set("years", js.undefined)
+  }
+  
 }
 

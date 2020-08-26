@@ -26,18 +26,42 @@ trait DescribeLoadBalancersInput extends js.Object {
 
 object DescribeLoadBalancersInput {
   @scala.inline
-  def apply(
-    LoadBalancerArns: LoadBalancerArns = null,
-    Marker: Marker = null,
-    Names: LoadBalancerNames = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined
-  ): DescribeLoadBalancersInput = {
+  def apply(): DescribeLoadBalancersInput = {
     val __obj = js.Dynamic.literal()
-    if (LoadBalancerArns != null) __obj.updateDynamic("LoadBalancerArns")(LoadBalancerArns.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (Names != null) __obj.updateDynamic("Names")(Names.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBalancersInput]
   }
+  @scala.inline
+  implicit class DescribeLoadBalancersInputOps[Self <: DescribeLoadBalancersInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = this.set("LoadBalancerArns", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancerArns(value: LoadBalancerArns): Self = this.set("LoadBalancerArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerArns: Self = this.set("LoadBalancerArns", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setNamesVarargs(value: LoadBalancerName*): Self = this.set("Names", js.Array(value :_*))
+    @scala.inline
+    def setNames(value: LoadBalancerNames): Self = this.set("Names", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNames: Self = this.set("Names", js.undefined)
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+  }
+  
 }
 

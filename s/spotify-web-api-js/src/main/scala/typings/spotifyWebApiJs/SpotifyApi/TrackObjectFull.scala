@@ -9,10 +9,11 @@ import scala.scalajs.js.annotation._
   * Full Track Object
   * [track object (full)](https://developer.spotify.com/web-api/object-model/#track-object-full)
   */
+@js.native
 trait TrackObjectFull extends TrackObjectSimplified {
-  var album: AlbumObjectSimplified
-  var external_ids: ExternalIdObject
-  var popularity: Double
+  var album: AlbumObjectSimplified = js.native
+  var external_ids: ExternalIdObject = js.native
+  var popularity: Double = js.native
 }
 
 object TrackObjectFull {
@@ -32,17 +33,30 @@ object TrackObjectFull {
     preview_url: String,
     track_number: Double,
     `type`: track,
-    uri: String,
-    available_markets: js.Array[String] = null,
-    is_playable: js.UndefOr[Boolean] = js.undefined,
-    linked_from: TrackLinkObject = null
+    uri: String
   ): TrackObjectFull = {
     val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], disc_number = disc_number.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], external_ids = external_ids.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], popularity = popularity.asInstanceOf[js.Any], preview_url = preview_url.asInstanceOf[js.Any], track_number = track_number.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_playable)) __obj.updateDynamic("is_playable")(is_playable.get.asInstanceOf[js.Any])
-    if (linked_from != null) __obj.updateDynamic("linked_from")(linked_from.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackObjectFull]
   }
+  @scala.inline
+  implicit class TrackObjectFullOps[Self <: TrackObjectFull] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbum(value: AlbumObjectSimplified): Self = this.set("album", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternal_ids(value: ExternalIdObject): Self = this.set("external_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPopularity(value: Double): Self = this.set("popularity", value.asInstanceOf[js.Any])
+  }
+  
 }
 

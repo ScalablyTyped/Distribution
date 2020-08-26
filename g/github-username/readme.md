@@ -12,7 +12,7 @@ Get a GitHub username from an email address
 | Keywords           | github, user, username, email, address, gh, git |
 | # releases         | 3 |
 | # dependents       | 104 |
-| # downloads        | 14380530 |
+| # downloads        | 14249894 |
 | # stars            | 4 |
 
 ## Links

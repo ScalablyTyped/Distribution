@@ -6,54 +6,81 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-color.react-color/lib/components/chrome/Chrome.ChromePickerStylesProps> */
+@js.native
 trait PartialChromePickerStyles extends js.Object {
-  var Alpha: js.UndefOr[CSSProperties] = js.undefined
-  var Hue: js.UndefOr[CSSProperties] = js.undefined
-  var Saturation: js.UndefOr[CSSProperties] = js.undefined
-  var active: js.UndefOr[CSSProperties] = js.undefined
-  var alpha: js.UndefOr[CSSProperties] = js.undefined
-  var body: js.UndefOr[CSSProperties] = js.undefined
-  var color: js.UndefOr[CSSProperties] = js.undefined
-  var controls: js.UndefOr[CSSProperties] = js.undefined
-  var hue: js.UndefOr[CSSProperties] = js.undefined
-  var picker: js.UndefOr[CSSProperties] = js.undefined
-  var saturation: js.UndefOr[CSSProperties] = js.undefined
-  var swatch: js.UndefOr[CSSProperties] = js.undefined
-  var toggles: js.UndefOr[CSSProperties] = js.undefined
+  var Alpha: js.UndefOr[CSSProperties] = js.native
+  var Hue: js.UndefOr[CSSProperties] = js.native
+  var Saturation: js.UndefOr[CSSProperties] = js.native
+  var active: js.UndefOr[CSSProperties] = js.native
+  var alpha: js.UndefOr[CSSProperties] = js.native
+  var body: js.UndefOr[CSSProperties] = js.native
+  var color: js.UndefOr[CSSProperties] = js.native
+  var controls: js.UndefOr[CSSProperties] = js.native
+  var hue: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.native
+  var saturation: js.UndefOr[CSSProperties] = js.native
+  var swatch: js.UndefOr[CSSProperties] = js.native
+  var toggles: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialChromePickerStyles {
   @scala.inline
-  def apply(
-    Alpha: CSSProperties = null,
-    Hue: CSSProperties = null,
-    Saturation: CSSProperties = null,
-    active: CSSProperties = null,
-    alpha: CSSProperties = null,
-    body: CSSProperties = null,
-    color: CSSProperties = null,
-    controls: CSSProperties = null,
-    hue: CSSProperties = null,
-    picker: CSSProperties = null,
-    saturation: CSSProperties = null,
-    swatch: CSSProperties = null,
-    toggles: CSSProperties = null
-  ): PartialChromePickerStyles = {
+  def apply(): PartialChromePickerStyles = {
     val __obj = js.Dynamic.literal()
-    if (Alpha != null) __obj.updateDynamic("Alpha")(Alpha.asInstanceOf[js.Any])
-    if (Hue != null) __obj.updateDynamic("Hue")(Hue.asInstanceOf[js.Any])
-    if (Saturation != null) __obj.updateDynamic("Saturation")(Saturation.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
-    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
-    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
-    if (swatch != null) __obj.updateDynamic("swatch")(swatch.asInstanceOf[js.Any])
-    if (toggles != null) __obj.updateDynamic("toggles")(toggles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialChromePickerStyles]
   }
+  @scala.inline
+  implicit class PartialChromePickerStylesOps[Self <: PartialChromePickerStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: CSSProperties): Self = this.set("Alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("Alpha", js.undefined)
+    @scala.inline
+    def setHue(value: CSSProperties): Self = this.set("Hue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHue: Self = this.set("Hue", js.undefined)
+    @scala.inline
+    def setSaturation(value: CSSProperties): Self = this.set("Saturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaturation: Self = this.set("Saturation", js.undefined)
+    @scala.inline
+    def setActive(value: CSSProperties): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setBody(value: CSSProperties): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setColor(value: CSSProperties): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setControls(value: CSSProperties): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setPicker(value: CSSProperties): Self = this.set("picker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePicker: Self = this.set("picker", js.undefined)
+    @scala.inline
+    def setSwatch(value: CSSProperties): Self = this.set("swatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwatch: Self = this.set("swatch", js.undefined)
+    @scala.inline
+    def setToggles(value: CSSProperties): Self = this.set("toggles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggles: Self = this.set("toggles", js.undefined)
+  }
+  
 }
 

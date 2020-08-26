@@ -21,7 +21,168 @@ object mod extends js.Object {
   def buildSVGAttrs(hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState): SVGAttrs = js.native
   def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState]
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.Function1[/* state */ State, ResolvedState]
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: js.UndefOr[scala.Nothing],
+    totalPathLength: Double,
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
     dimensions: Dimensions
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState]
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: js.UndefOr[scala.Nothing],
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
   ): SVGAttrs = js.native
   def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
@@ -32,7 +193,38 @@ object mod extends js.Object {
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
     dimensions: Dimensions,
     totalPathLength: Double,
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: Double,
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: Double,
+    cssBuilder: js.UndefOr[scala.Nothing],
+    attrs: SVGAttrs,
+    isDashCase: Boolean
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: Double,
     cssBuilder: js.Function1[/* state */ State, ResolvedState]
+  ): SVGAttrs = js.native
+  def buildSVGAttrs(
+    hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,
+    dimensions: Dimensions,
+    totalPathLength: Double,
+    cssBuilder: js.Function1[/* state */ State, ResolvedState],
+    attrs: js.UndefOr[scala.Nothing],
+    isDashCase: Boolean
   ): SVGAttrs = js.native
   def buildSVGAttrs(
     hasAttrXAttrYOriginXOriginYPathLengthPathSpacingPathOffsetState: State with SVGState,

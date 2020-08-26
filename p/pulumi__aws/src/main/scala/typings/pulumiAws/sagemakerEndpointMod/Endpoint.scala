@@ -37,7 +37,7 @@ class Endpoint protected () extends CustomResource {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -51,8 +51,10 @@ object Endpoint extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Endpoint = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
   /**

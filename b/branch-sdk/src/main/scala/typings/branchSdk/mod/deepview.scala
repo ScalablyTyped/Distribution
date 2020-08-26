@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object deepview extends js.Object {
   def apply(deepview_data: DeepLinkData): Unit = js.native
+  def apply(
+    deepview_data: DeepLinkData,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ BranchError, Unit]
+  ): Unit = js.native
   def apply(deepview_data: DeepLinkData, options: DeepViewOptions): Unit = js.native
   def apply(
     deepview_data: DeepLinkData,

@@ -14,10 +14,28 @@ trait ListSourceCredentialsOutput extends js.Object {
 
 object ListSourceCredentialsOutput {
   @scala.inline
-  def apply(sourceCredentialsInfos: SourceCredentialsInfos = null): ListSourceCredentialsOutput = {
+  def apply(): ListSourceCredentialsOutput = {
     val __obj = js.Dynamic.literal()
-    if (sourceCredentialsInfos != null) __obj.updateDynamic("sourceCredentialsInfos")(sourceCredentialsInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSourceCredentialsOutput]
   }
+  @scala.inline
+  implicit class ListSourceCredentialsOutputOps[Self <: ListSourceCredentialsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceCredentialsInfosVarargs(value: SourceCredentialsInfo*): Self = this.set("sourceCredentialsInfos", js.Array(value :_*))
+    @scala.inline
+    def setSourceCredentialsInfos(value: SourceCredentialsInfos): Self = this.set("sourceCredentialsInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCredentialsInfos: Self = this.set("sourceCredentialsInfos", js.undefined)
+  }
+  
 }
 

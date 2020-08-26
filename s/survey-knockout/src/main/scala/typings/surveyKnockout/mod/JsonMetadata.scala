@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class JsonMetadata () extends js.Object {
   def addAlterNativeClassName(name: String, alternativeName: String): Unit = js.native
   def addClass(name: String, properties: js.Array[_]): JsonMetadataClass = js.native
+  def addClass(name: String, properties: js.Array[_], creator: js.UndefOr[scala.Nothing], parentName: String): JsonMetadataClass = js.native
   def addClass(name: String, properties: js.Array[_], creator: js.Function1[/* json */ js.UndefOr[js.Any], _]): JsonMetadataClass = js.native
   def addClass(
     name: String,
@@ -23,6 +24,8 @@ class JsonMetadata () extends js.Object {
   def findClass(name: String): JsonMetadataClass = js.native
   def findProperties(className: String, propertyNames: js.Array[String]): js.Array[JsonObjectProperty] = js.native
   def findProperty(className: String, propertyName: String): JsonObjectProperty = js.native
+  def getAllClasses(): js.Array[String] = js.native
+  def getAllPropertiesByName(propertyName: String): js.Array[JsonObjectProperty] = js.native
   def getChildrenClasses(name: String): js.Array[JsonMetadataClass] = js.native
   def getChildrenClasses(name: String, canBeCreated: Boolean): js.Array[JsonMetadataClass] = js.native
   def getDynamicPropertiesByObj(obj: js.Any): js.Array[JsonObjectProperty] = js.native

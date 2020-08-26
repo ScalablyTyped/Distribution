@@ -25,7 +25,16 @@ trait Constructor
   def asin(instance: Double): Double = js.native
   def atan(instance: Double): Double = js.native
   def bytes(instance: Double): String = js.native
+  def bytes(
+    instance: Double,
+    precision: js.UndefOr[scala.Nothing],
+    binary: js.UndefOr[scala.Nothing],
+    units: String
+  ): String = js.native
+  def bytes(instance: Double, precision: js.UndefOr[scala.Nothing], binary: Boolean): String = js.native
+  def bytes(instance: Double, precision: js.UndefOr[scala.Nothing], binary: Boolean, units: String): String = js.native
   def bytes(instance: Double, precision: Double): String = js.native
+  def bytes(instance: Double, precision: Double, binary: js.UndefOr[scala.Nothing], units: String): String = js.native
   def bytes(instance: Double, precision: Double, binary: Boolean): String = js.native
   def bytes(instance: Double, precision: Double, binary: Boolean, units: String): String = js.native
   def cap(instance: Double): Double = js.native
@@ -34,6 +43,7 @@ trait Constructor
   def ceil(instance: Double, precision: Double): Double = js.native
   def chr(instance: Double): String = js.native
   def clamp(instance: Double): Double = js.native
+  def clamp(instance: Double, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def clamp(instance: Double, start: Double): Double = js.native
   def clamp(instance: Double, start: Double, end: Double): Double = js.native
   def cos(instance: Double): Double = js.native
@@ -71,6 +81,12 @@ trait Constructor
   def downto[T](
     instance: Double,
     num: Double,
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
+  ): Array[T] = js.native
+  def downto[T](
+    instance: Double,
+    num: Double,
+    step: js.UndefOr[scala.Nothing],
     everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
   ): Array[T] = js.native
   def downto[T](instance: Double, num: Double, step: Double): Array[T] = js.native
@@ -127,6 +143,7 @@ trait Constructor
   def log(instance: Double): Double = js.native
   def log(instance: Double, base: Double): Double = js.native
   def metric(instance: Double): String = js.native
+  def metric(instance: Double, precision: js.UndefOr[scala.Nothing], units: String): String = js.native
   def metric(instance: Double, precision: Double): String = js.native
   def metric(instance: Double, precision: Double, units: String): String = js.native
   def millisecond(instance: Double): Double = js.native
@@ -221,14 +238,20 @@ trait Constructor
   def monthsFromNow(instance: Double): Date = js.native
   def ordinalize(instance: Double): String = js.native
   def pad(instance: Double): String = js.native
+  def pad(instance: Double, place: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], base: Double): String = js.native
+  def pad(instance: Double, place: js.UndefOr[scala.Nothing], sign: Boolean): String = js.native
+  def pad(instance: Double, place: js.UndefOr[scala.Nothing], sign: Boolean, base: Double): String = js.native
   def pad(instance: Double, place: Double): String = js.native
+  def pad(instance: Double, place: Double, sign: js.UndefOr[scala.Nothing], base: Double): String = js.native
   def pad(instance: Double, place: Double, sign: Boolean): String = js.native
   def pad(instance: Double, place: Double, sign: Boolean, base: Double): String = js.native
   def pow(instance: Double): Double = js.native
   def random(): Double = js.native
+  def random(n1: js.UndefOr[scala.Nothing], n2: Double): Double = js.native
   def random(n1: Double): Double = js.native
   def random(n1: Double, n2: Double): Double = js.native
   def range(): Range = js.native
+  def range(start: js.UndefOr[scala.Nothing], end: Double): Range = js.native
   def range(start: Double): Range = js.native
   def range(start: Double, end: Double): Range = js.native
   def round(instance: Double): Double = js.native
@@ -274,6 +297,12 @@ trait Constructor
   def upto[T](
     instance: Double,
     num: Double,
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
+  ): Array[T] = js.native
+  def upto[T](
+    instance: Double,
+    num: Double,
+    step: js.UndefOr[scala.Nothing],
     everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
   ): Array[T] = js.native
   def upto[T](instance: Double, num: Double, step: Double): Array[T] = js.native

@@ -10,9 +10,9 @@ Google APIs Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | googleapis |
 | Keywords           | google, api, google apis, client, client library |
-| # releases         | 34 |
-| # dependents       | 878 |
-| # downloads        | 18762950 |
+| # releases         | 32 |
+| # dependents       | 910 |
+| # downloads        | 19437564 |
 | # stars            | 98 |
 
 ## Links

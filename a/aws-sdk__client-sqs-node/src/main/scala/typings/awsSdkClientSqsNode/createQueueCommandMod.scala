@@ -26,16 +26,9 @@ object createQueueCommandMod extends js.Object {
           Readable
         ] {
     def this(input: CreateQueueInput) = this()
-    /* CompleteClass */
-    override val input: CreateQueueInput = js.native
     val middlewareStack: MiddlewareStack[CreateQueueInput, CreateQueueOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[CreateQueueInput, CreateQueueOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[CreateQueueInput, CreateQueueOutput] = js.native
   }

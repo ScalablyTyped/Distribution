@@ -1,45 +1,61 @@
 package typings.mongodb.mod
 
-import typings.mongodb.mongodbStrings.majority
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DbCollectionOptions extends CommonOptions {
-  var pkFactory: js.UndefOr[js.Object] = js.undefined
-  var raw: js.UndefOr[Boolean] = js.undefined
-  var readConcern: js.UndefOr[ReadConcern] = js.undefined
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
-  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
-  var strict: js.UndefOr[Boolean] = js.undefined
+  var pkFactory: js.UndefOr[js.Object] = js.native
+  var raw: js.UndefOr[Boolean] = js.native
+  var readConcern: js.UndefOr[ReadConcern] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.native
 }
 
 object DbCollectionOptions {
   @scala.inline
-  def apply(
-    j: js.UndefOr[Boolean] = js.undefined,
-    pkFactory: js.Object = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    readConcern: ReadConcern = null,
-    readPreference: ReadPreferenceOrMode = null,
-    serializeFunctions: js.UndefOr[Boolean] = js.undefined,
-    session: ClientSession = null,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    w: scala.Double | majority | String = null,
-    wtimeout: js.UndefOr[scala.Double] = js.undefined
-  ): DbCollectionOptions = {
+  def apply(): DbCollectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.get.asInstanceOf[js.Any])
-    if (pkFactory != null) __obj.updateDynamic("pkFactory")(pkFactory.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.get.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (!js.isUndefined(wtimeout)) __obj.updateDynamic("wtimeout")(wtimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbCollectionOptions]
   }
+  @scala.inline
+  implicit class DbCollectionOptionsOps[Self <: DbCollectionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPkFactory(value: js.Object): Self = this.set("pkFactory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePkFactory: Self = this.set("pkFactory", js.undefined)
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+    @scala.inline
+    def setReadConcern(value: ReadConcern): Self = this.set("readConcern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadConcern: Self = this.set("readConcern", js.undefined)
+    @scala.inline
+    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    @scala.inline
+    def setSerializeFunctions(value: Boolean): Self = this.set("serializeFunctions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerializeFunctions: Self = this.set("serializeFunctions", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+  }
+  
 }
 

@@ -16,6 +16,10 @@ trait ClientRuntimeContext extends IDisposable {
   def castTo(obj: ClientObject, `type`: js.Any): ClientObject = js.native
   def executeQueryAsync(): Unit = js.native
   def executeQueryAsync(
+    succeededCallback: js.UndefOr[scala.Nothing],
+    failedCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestFailedEventArgs, Unit]
+  ): Unit = js.native
+  def executeQueryAsync(
     succeededCallback: js.Function2[/* sender */ js.Any, /* args */ ClientRequestSucceededEventArgs, Unit]
   ): Unit = js.native
   def executeQueryAsync(

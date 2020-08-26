@@ -105,7 +105,26 @@ class Time_ protected () extends js.Object {
     *        The maximum in axis values
     */
   def getTimeTicks(normalizedInterval: TimeNormalizedObject): AxisTickPositionsArray = js.native
+  def getTimeTicks(
+    normalizedInterval: TimeNormalizedObject,
+    min: js.UndefOr[scala.Nothing],
+    max: js.UndefOr[scala.Nothing],
+    startOfWeek: Double
+  ): AxisTickPositionsArray = js.native
+  def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: js.UndefOr[scala.Nothing], max: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(
+    normalizedInterval: TimeNormalizedObject,
+    min: js.UndefOr[scala.Nothing],
+    max: Double,
+    startOfWeek: Double
+  ): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double): AxisTickPositionsArray = js.native
+  def getTimeTicks(
+    normalizedInterval: TimeNormalizedObject,
+    min: Double,
+    max: js.UndefOr[scala.Nothing],
+    startOfWeek: Double
+  ): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Double): AxisTickPositionsArray = js.native
   def getTimeTicks(normalizedInterval: TimeNormalizedObject, min: Double, max: Double, startOfWeek: Double): AxisTickPositionsArray = js.native
   /**
@@ -144,8 +163,74 @@ class Time_ protected () extends js.Object {
     * @return The time in milliseconds since January 1st 1970.
     */
   def makeTime(year: Double, month: Double): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double
+  ): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: Double
+  ): Double = js.native
+  def makeTime(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def makeTime(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double, minutes: Double): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Double,
+    seconds: Double
+  ): Double = js.native
   def makeTime(year: Double, month: Double, date: Double): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def makeTime(year: Double, month: Double, date: Double, hours: js.UndefOr[scala.Nothing], minutes: Double): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: Double
+  ): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double): Double = js.native
+  def makeTime(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Double): Double = js.native
   def makeTime(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
   /**

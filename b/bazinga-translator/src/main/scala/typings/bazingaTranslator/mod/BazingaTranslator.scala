@@ -39,6 +39,7 @@ trait BazingaTranslator extends js.Object {
     * @param locale   The locale or null to use the default
     */
   def add(id: String, message: String): BazingaTranslator = js.native
+  def add(id: String, message: String, domain: js.UndefOr[scala.Nothing], locale: String): BazingaTranslator = js.native
   def add(id: String, message: String, domain: String): BazingaTranslator = js.native
   def add(id: String, message: String, domain: String, locale: String): BazingaTranslator = js.native
   /**
@@ -57,7 +58,16 @@ trait BazingaTranslator extends js.Object {
     * @param locale         The locale or null to use the default
     */
   def trans(id: String): String = js.native
+  def trans(
+    id: String,
+    parameters: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String = js.native
+  def trans(id: String, parameters: js.UndefOr[scala.Nothing], domain: String): String = js.native
+  def trans(id: String, parameters: js.UndefOr[scala.Nothing], domain: String, locale: String): String = js.native
   def trans(id: String, parameters: js.Any): String = js.native
+  def trans(id: String, parameters: js.Any, domain: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def trans(id: String, parameters: js.Any, domain: String): String = js.native
   def trans(id: String, parameters: js.Any, domain: String, locale: String): String = js.native
   /**
@@ -70,7 +80,17 @@ trait BazingaTranslator extends js.Object {
     * @param locale         The locale or null to use the default
     */
   def transChoice(id: String, number: Double): String = js.native
+  def transChoice(
+    id: String,
+    number: Double,
+    parameters: js.UndefOr[scala.Nothing],
+    domain: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String = js.native
+  def transChoice(id: String, number: Double, parameters: js.UndefOr[scala.Nothing], domain: String): String = js.native
+  def transChoice(id: String, number: Double, parameters: js.UndefOr[scala.Nothing], domain: String, locale: String): String = js.native
   def transChoice(id: String, number: Double, parameters: js.Any): String = js.native
+  def transChoice(id: String, number: Double, parameters: js.Any, domain: js.UndefOr[scala.Nothing], locale: String): String = js.native
   def transChoice(id: String, number: Double, parameters: js.Any, domain: String): String = js.native
   def transChoice(id: String, number: Double, parameters: js.Any, domain: String, locale: String): String = js.native
 }

@@ -7,75 +7,96 @@ import scala.scalajs.js.annotation._
 /**
   * A contact party (e.g. guardian, partner, friend) for the patient
   */
+@js.native
 trait PatientContact extends BackboneElement {
   /**
     * Contains extended information for property 'gender'.
     */
-  var _gender: js.UndefOr[Element] = js.undefined
+  var _gender: js.UndefOr[Element] = js.native
   /**
     * Address for the contact person
     */
-  var address: js.UndefOr[Address] = js.undefined
+  var address: js.UndefOr[Address] = js.native
   /**
     * male | female | other | unknown
     */
-  var gender: js.UndefOr[code] = js.undefined
+  var gender: js.UndefOr[code] = js.native
   /**
     * A name associated with the contact person
     */
-  var name: js.UndefOr[HumanName] = js.undefined
+  var name: js.UndefOr[HumanName] = js.native
   /**
     * Organization that is associated with the contact
     */
-  var organization: js.UndefOr[Reference] = js.undefined
+  var organization: js.UndefOr[Reference] = js.native
   /**
     * The period during which this contact person or organization is valid to be contacted relating to this patient
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * The kind of relationship
     */
-  var relationship: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var relationship: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * A contact detail for the person
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
 }
 
 object PatientContact {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _gender: Element = null,
-    _id: Element = null,
-    address: Address = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    gender: code = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: HumanName = null,
-    organization: Reference = null,
-    period: Period = null,
-    relationship: js.Array[CodeableConcept] = null,
-    telecom: js.Array[ContactPoint] = null
-  ): PatientContact = {
+  def apply(): PatientContact = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_gender != null) __obj.updateDynamic("_gender")(_gender.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (relationship != null) __obj.updateDynamic("relationship")(relationship.asInstanceOf[js.Any])
-    if (telecom != null) __obj.updateDynamic("telecom")(telecom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatientContact]
   }
+  @scala.inline
+  implicit class PatientContactOps[Self <: PatientContact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_gender(value: Element): Self = this.set("_gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_gender: Self = this.set("_gender", js.undefined)
+    @scala.inline
+    def setAddress(value: Address): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setGender(value: code): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setName(value: HumanName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setRelationshipVarargs(value: CodeableConcept*): Self = this.set("relationship", js.Array(value :_*))
+    @scala.inline
+    def setRelationship(value: js.Array[CodeableConcept]): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationship: Self = this.set("relationship", js.undefined)
+    @scala.inline
+    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
+    @scala.inline
+    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelecom: Self = this.set("telecom", js.undefined)
+  }
+  
 }
 

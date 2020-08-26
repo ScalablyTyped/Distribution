@@ -4,30 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpProviderOptions extends js.Object {
-  var agent: js.UndefOr[HttpProviderAgent] = js.undefined
-  var headers: js.UndefOr[js.Array[HttpHeader]] = js.undefined
-  var keepAlive: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var withCredentials: js.UndefOr[Boolean] = js.undefined
+  var agent: js.UndefOr[HttpProviderAgent] = js.native
+  var headers: js.UndefOr[js.Array[HttpHeader]] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.native
 }
 
 object HttpProviderOptions {
   @scala.inline
-  def apply(
-    agent: HttpProviderAgent = null,
-    headers: js.Array[HttpHeader] = null,
-    keepAlive: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    withCredentials: js.UndefOr[Boolean] = js.undefined
-  ): HttpProviderOptions = {
+  def apply(): HttpProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpProviderOptions]
   }
+  @scala.inline
+  implicit class HttpProviderOptionsOps[Self <: HttpProviderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgent(value: HttpProviderAgent): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgent: Self = this.set("agent", js.undefined)
+    @scala.inline
+    def setHeadersVarargs(value: HttpHeader*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: js.Array[HttpHeader]): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setKeepAlive(value: Boolean): Self = this.set("keepAlive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepAlive: Self = this.set("keepAlive", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+  }
+  
 }
 

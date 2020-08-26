@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * TODO: Maybe more than alpha has to be overridden from render state. TODO: Provide means to change the output area
   */
+@js.native
 trait XCustomSprite extends XSprite {
   /**
     * Query a render canvas for this sprite's content.
@@ -24,7 +25,7 @@ trait XCustomSprite extends XSprite {
     * corner, i.e. the origin of the sprite's canvas device coordinate system will move with the sprite across the screen.
     * @returns the canvas the sprite content can be rendered into.
     */
-  val ContentCanvas: XCanvas
+  val ContentCanvas: XCanvas = js.native
   /**
     * Query a render canvas for this sprite's content.
     *
@@ -33,7 +34,7 @@ trait XCustomSprite extends XSprite {
     * corner, i.e. the origin of the sprite's canvas device coordinate system will move with the sprite across the screen.
     * @returns the canvas the sprite content can be rendered into.
     */
-  def getContentCanvas(): XCanvas
+  def getContentCanvas(): XCanvas = js.native
 }
 
 object XCustomSprite {
@@ -55,5 +56,22 @@ object XCustomSprite {
     val __obj = js.Dynamic.literal(ContentCanvas = ContentCanvas.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clip = js.Any.fromFunction1(clip), getContentCanvas = js.Any.fromFunction0(getContentCanvas), hide = js.Any.fromFunction0(hide), move = js.Any.fromFunction3(move), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setAlpha = js.Any.fromFunction1(setAlpha), setPriority = js.Any.fromFunction1(setPriority), show = js.Any.fromFunction0(show), transform = js.Any.fromFunction1(transform))
     __obj.asInstanceOf[XCustomSprite]
   }
+  @scala.inline
+  implicit class XCustomSpriteOps[Self <: XCustomSprite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentCanvas(value: XCanvas): Self = this.set("ContentCanvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetContentCanvas(value: () => XCanvas): Self = this.set("getContentCanvas", js.Any.fromFunction0(value))
+  }
+  
 }
 

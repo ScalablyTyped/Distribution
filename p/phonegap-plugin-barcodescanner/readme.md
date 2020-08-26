@@ -9,9 +9,9 @@ You can use the BarcodeScanner plugin to scan different types of barcodes (using
 | ------------------ | :-------------: |
 | Full name          | phonegap-plugin-barcodescanner |
 | Keywords           | ecosystem:cordova, ecosystem:phonegap, cordova-ios, cordova-android, cordova-windows, cordova-browser, cordova:plugin |
-| # releases         | 11 |
+| # releases         | 10 |
 | # dependents       | 7 |
-| # downloads        | 436934 |
+| # downloads        | 438958 |
 | # stars            | 13 |
 
 ## Links

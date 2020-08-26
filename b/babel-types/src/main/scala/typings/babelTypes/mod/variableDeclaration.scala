@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object variableDeclaration extends js.Object {
   def apply(): VariableDeclaration_ = js.native
+  def apply(kind: js.UndefOr[scala.Nothing], declarations: js.Array[VariableDeclarator_]): VariableDeclaration_ = js.native
 }
 

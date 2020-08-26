@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "vfile"
-version := "4.1.1-d5ff25"
-scalaVersion := "2.13.2"
+version := "4.2.0-722c9d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-0c6228",
-  "org.scalablytyped" %%% "vfile-message" % "2.0.4-7e3ace")
+  "org.scalablytyped" %%% "std" % "3.9-bafc13",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-95e8cb",
+  "org.scalablytyped" %%% "vfile-message" % "2.0.4-60ed86")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

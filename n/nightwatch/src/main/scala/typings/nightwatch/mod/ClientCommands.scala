@@ -197,6 +197,11 @@ trait ClientCommands extends js.Object {
     * };
     */
   def injectScript(scriptUrl: String): this.type = js.native
+  def injectScript(
+    scriptUrl: String,
+    id: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
   def injectScript(scriptUrl: String, id: String): this.type = js.native
   def injectScript(
     scriptUrl: String,
@@ -245,6 +250,7 @@ trait ClientCommands extends js.Object {
     * };
     */
   def pause(): this.type = js.native
+  def pause(ms: js.UndefOr[scala.Nothing], callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
   def pause(ms: Double): this.type = js.native
   def pause(ms: Double, callback: js.ThisFunction0[/* this */ NightwatchAPI, Unit]): this.type = js.native
   /**

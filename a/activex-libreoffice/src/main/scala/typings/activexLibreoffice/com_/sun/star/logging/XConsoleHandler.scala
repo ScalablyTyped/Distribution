@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * .
   * @since OOo 2.3
   */
+@js.native
 trait XConsoleHandler extends XLogHandler {
   /**
     * denotes the {@link LogLevel} threshold used to determine to which console the events should be logged.
@@ -21,7 +22,7 @@ trait XConsoleHandler extends XLogHandler {
     *
     * The default value for this attribute is {@link LogLevel.SEVERE} .
     */
-  var Threshold: Double
+  var Threshold: Double = js.native
 }
 
 object XConsoleHandler {
@@ -43,5 +44,20 @@ object XConsoleHandler {
     val __obj = js.Dynamic.literal(Encoding = Encoding.asInstanceOf[js.Any], Formatter = Formatter.asInstanceOf[js.Any], Level = Level.asInstanceOf[js.Any], Threshold = Threshold.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), dispose = js.Any.fromFunction0(dispose), flush = js.Any.fromFunction0(flush), publish = js.Any.fromFunction1(publish), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener))
     __obj.asInstanceOf[XConsoleHandler]
   }
+  @scala.inline
+  implicit class XConsoleHandlerOps[Self <: XConsoleHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+  }
+  
 }
 

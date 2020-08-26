@@ -1,7 +1,5 @@
 package typings.bingmaps.global.Microsoft.Maps
 
-import typings.bingmaps.Microsoft.Maps.Search.IGeocodeRequestOptions
-import typings.bingmaps.Microsoft.Maps.Search.ReverseGeocodeRequestOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -22,21 +20,6 @@ object Search extends js.Object {
       * @param map A Map object
       */
     def this(map: typings.bingmaps.Microsoft.Maps.Map) = this()
-    /**
-      * Matches the address or place query in the specified request 
-      * options to a location and returns the results to the request 
-      * options callback function.
-      * @param request Options for sending geocode request
-      */
-    /* CompleteClass */
-    override def geocode(request: IGeocodeRequestOptions): Unit = js.native
-    /**
-      * Matches the specified location to an address and returns the 
-      * address results to the specified request options callback function.
-      * @param request Options for sending reverse geocode request
-      */
-    /* CompleteClass */
-    override def reverseGeocode(request: ReverseGeocodeRequestOptions): Unit = js.native
   }
   
   @js.native

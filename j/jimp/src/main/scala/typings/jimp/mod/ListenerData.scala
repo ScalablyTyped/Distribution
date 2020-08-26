@@ -1,6 +1,5 @@
 package typings.jimp.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.jimp.jimpStrings.`before-change`
 import typings.jimp.jimpStrings.changed
 import typings.jimp.jimpStrings.clone
@@ -22,13 +21,8 @@ object ListenerData {
     __obj.asInstanceOf[ListenerData[T]]
   }
   @scala.inline
-  def Dictkey[/* <: typings.jimp.mod.ListenableName */ T](
-    eventName: `before-change` | changed,
-    methodName: T,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null
-  ): ListenerData[T] = {
+  def Dictkey[/* <: typings.jimp.mod.ListenableName */ T](eventName: `before-change` | changed, methodName: T): ListenerData[T] = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ListenerData[T]]
   }
 }

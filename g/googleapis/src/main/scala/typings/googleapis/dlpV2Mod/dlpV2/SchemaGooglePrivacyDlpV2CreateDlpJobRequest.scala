@@ -23,16 +23,34 @@ trait SchemaGooglePrivacyDlpV2CreateDlpJobRequest extends js.Object {
 
 object SchemaGooglePrivacyDlpV2CreateDlpJobRequest {
   @scala.inline
-  def apply(
-    inspectJob: SchemaGooglePrivacyDlpV2InspectJobConfig = null,
-    jobId: String = null,
-    riskJob: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig = null
-  ): SchemaGooglePrivacyDlpV2CreateDlpJobRequest = {
+  def apply(): SchemaGooglePrivacyDlpV2CreateDlpJobRequest = {
     val __obj = js.Dynamic.literal()
-    if (inspectJob != null) __obj.updateDynamic("inspectJob")(inspectJob.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (riskJob != null) __obj.updateDynamic("riskJob")(riskJob.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2CreateDlpJobRequest]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2CreateDlpJobRequestOps[Self <: SchemaGooglePrivacyDlpV2CreateDlpJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInspectJob(value: SchemaGooglePrivacyDlpV2InspectJobConfig): Self = this.set("inspectJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInspectJob: Self = this.set("inspectJob", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setRiskJob(value: SchemaGooglePrivacyDlpV2RiskAnalysisJobConfig): Self = this.set("riskJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRiskJob: Self = this.set("riskJob", js.undefined)
+  }
+  
 }
 

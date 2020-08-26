@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object datetimeMod extends js.Object {
   @js.native
   class Datetime () extends ComponentInterface {
-    var buttonEl: js.UndefOr[js.Any] = js.native
+    var buttonEl: js.Any = js.native
     var calcMinMax: js.Any = js.native
     /**
       * The text to display on the picker's cancel button.

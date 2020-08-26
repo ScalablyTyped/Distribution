@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Handler[Props] extends js.Object {
-  var ref: RefObject[_]
-  def receiveProps(props: Props): Unit
+  var ref: RefObject[_] = js.native
+  def receiveProps(props: Props): Unit = js.native
 }
 
 object Handler {
@@ -16,5 +17,22 @@ object Handler {
     val __obj = js.Dynamic.literal(receiveProps = js.Any.fromFunction1(receiveProps), ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[Handler[Props]]
   }
+  @scala.inline
+  implicit class HandlerOps[Self <: Handler[_], Props] (val x: Self with Handler[Props]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReceiveProps(value: Props => Unit): Self = this.set("receiveProps", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRef(value: RefObject[_]): Self = this.set("ref", value.asInstanceOf[js.Any])
+  }
+  
 }
 

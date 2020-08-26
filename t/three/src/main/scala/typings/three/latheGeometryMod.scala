@@ -15,7 +15,26 @@ object latheGeometryMod extends js.Object {
   class LatheBufferGeometry protected () extends BufferGeometry {
     def this(points: js.Array[Vector2]) = this()
     def this(points: js.Array[Vector2], segments: Double) = this()
+    def this(points: js.Array[Vector2], segments: js.UndefOr[scala.Nothing], phiStart: Double) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double) = this()
+    def this(
+      points: js.Array[Vector2],
+      segments: js.UndefOr[scala.Nothing],
+      phiStart: js.UndefOr[scala.Nothing],
+      phiLength: Double
+    ) = this()
+    def this(
+      points: js.Array[Vector2],
+      segments: js.UndefOr[scala.Nothing],
+      phiStart: Double,
+      phiLength: Double
+    ) = this()
+    def this(
+      points: js.Array[Vector2],
+      segments: Double,
+      phiStart: js.UndefOr[scala.Nothing],
+      phiLength: Double
+    ) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double, phiLength: Double) = this()
     var parameters: PhiLength = js.native
   }
@@ -24,7 +43,26 @@ object latheGeometryMod extends js.Object {
   class LatheGeometry protected () extends Geometry {
     def this(points: js.Array[Vector2]) = this()
     def this(points: js.Array[Vector2], segments: Double) = this()
+    def this(points: js.Array[Vector2], segments: js.UndefOr[scala.Nothing], phiStart: Double) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double) = this()
+    def this(
+      points: js.Array[Vector2],
+      segments: js.UndefOr[scala.Nothing],
+      phiStart: js.UndefOr[scala.Nothing],
+      phiLength: Double
+    ) = this()
+    def this(
+      points: js.Array[Vector2],
+      segments: js.UndefOr[scala.Nothing],
+      phiStart: Double,
+      phiLength: Double
+    ) = this()
+    def this(
+      points: js.Array[Vector2],
+      segments: Double,
+      phiStart: js.UndefOr[scala.Nothing],
+      phiLength: Double
+    ) = this()
     def this(points: js.Array[Vector2], segments: Double, phiStart: Double, phiLength: Double) = this()
     var parameters: PhiLength = js.native
   }

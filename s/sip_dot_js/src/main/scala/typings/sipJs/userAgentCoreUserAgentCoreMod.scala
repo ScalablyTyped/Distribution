@@ -49,8 +49,6 @@ object userAgentCoreUserAgentCoreMod extends js.Object {
     /** Dialogs. */
     var dialogs: Map[String, Dialog] = js.native
     var logger: js.Any = js.native
-    /** Logger factory. */
-    val loggerFactory: LoggerFactory = js.native
     /**
       * Once a dialog has been established between two UAs, either of them
       * MAY initiate new transactions as needed within the dialog.  The UA
@@ -104,8 +102,6 @@ object userAgentCoreUserAgentCoreMod extends js.Object {
     var receiveResponseFromTransport: js.Any = js.native
     /** Subscribers. */
     var subscribers: Map[String, SubscribeUserAgentClient] = js.native
-    /** Transport. */
-    val transport: Transport = js.native
     /** UACs. */
     var userAgentClients: Map[String, UserAgentClient] = js.native
     /** UASs. */
@@ -119,6 +115,8 @@ object userAgentCoreUserAgentCoreMod extends js.Object {
       */
     def invite(request: OutgoingRequestMessage): OutgoingInviteRequest = js.native
     def invite(request: OutgoingRequestMessage, delegate: OutgoingInviteRequestDelegate): OutgoingInviteRequest = js.native
+    /** Logger factory. */
+    def loggerFactory: LoggerFactory = js.native
     /**
       * Outgoing request message factory function.
       * @param method - Method.
@@ -130,6 +128,15 @@ object userAgentCoreUserAgentCoreMod extends js.Object {
       * @param body - Message body.
       */
     def makeOutgoingRequestMessage(method: String, requestURI: URI, fromURI: URI, toURI: URI, options: OutgoingRequestMessageOptions): OutgoingRequestMessage = js.native
+    def makeOutgoingRequestMessage(
+      method: String,
+      requestURI: URI,
+      fromURI: URI,
+      toURI: URI,
+      options: OutgoingRequestMessageOptions,
+      extraHeaders: js.UndefOr[scala.Nothing],
+      body: Body
+    ): OutgoingRequestMessage = js.native
     def makeOutgoingRequestMessage(
       method: String,
       requestURI: URI,
@@ -211,6 +218,8 @@ object userAgentCoreUserAgentCoreMod extends js.Object {
       */
     def subscribe(request: OutgoingRequestMessage): OutgoingSubscribeRequest = js.native
     def subscribe(request: OutgoingRequestMessage, delegate: OutgoingSubscribeRequestDelegate): OutgoingSubscribeRequest = js.native
+    /** Transport. */
+    def transport: Transport = js.native
   }
   
 }

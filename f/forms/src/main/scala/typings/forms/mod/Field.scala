@@ -29,6 +29,7 @@ trait Field extends FieldParameters {
     * which returns a HTML representation of the field label, error message and widget wrapped in a div.
     */
   def toHTML(): String = js.native
+  def toHTML(name: js.UndefOr[scala.Nothing], iterator: FieldIterator): String = js.native
   def toHTML(name: String): String = js.native
   def toHTML(name: String, iterator: FieldIterator): String = js.native
 }

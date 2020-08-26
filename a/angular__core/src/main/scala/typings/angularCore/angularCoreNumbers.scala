@@ -6,7 +6,6 @@ import typings.angularCore.mod.OutputType
 import typings.angularCore.mod.PreOrderHookFlags
 import typings.angularCore.mod.RootContextFlags
 import typings.angularCore.mod.SelectorFlags
-import typings.angularCore.mod.StyleSanitizeMode
 import typings.angularCore.mod.TNodeFlags
 import typings.angularCore.mod.TNodeProviderIndexes
 import typings.angularCore.mod.TNodeType
@@ -58,7 +57,6 @@ object angularCoreNumbers {
        with OutputType
        with RootContextFlags
        with SelectorFlags
-       with StyleSanitizeMode
        with TNodeFlags
        with TNodeType
        with TViewType
@@ -85,7 +83,12 @@ object angularCoreNumbers {
        with ɵNodeFlags
   
   @js.native
-  sealed trait `1048576` extends ɵNodeFlags
+  sealed trait `1048575` extends TNodeProviderIndexes
+  
+  @js.native
+  sealed trait `1048576`
+    extends TNodeProviderIndexes
+       with ɵNodeFlags
   
   @js.native
   sealed trait `1073741824` extends ɵNodeFlags
@@ -120,7 +123,6 @@ object angularCoreNumbers {
     extends LViewFlags
        with PreOrderHookFlags
        with TNodeFlags
-       with TNodeProviderIndexes
        with ViewState
        with ɵBindingFlags
        with ɵNodeFlags
@@ -138,7 +140,6 @@ object angularCoreNumbers {
   sealed trait `2`
     extends RootContextFlags
        with SelectorFlags
-       with StyleSanitizeMode
        with TNodeFlags
        with TNodeType
        with TViewType
@@ -153,6 +154,9 @@ object angularCoreNumbers {
        with ɵQueryValueType
        with ɵRenderFlags
        with ɵViewFlags
+  
+  @js.native
+  sealed trait `20` extends TNodeProviderIndexes
   
   @js.native
   sealed trait `200` extends ɵPlayState
@@ -195,7 +199,6 @@ object angularCoreNumbers {
   @js.native
   sealed trait `3`
     extends LViewFlags
-       with StyleSanitizeMode
        with TNodeType
        with ɵAttributeMarker
        with ɵNodeFlags
@@ -268,14 +271,11 @@ object angularCoreNumbers {
        with ɵNodeFlags
   
   @js.native
-  sealed trait `65535`
-    extends PreOrderHookFlags
-       with TNodeProviderIndexes
+  sealed trait `65535` extends PreOrderHookFlags
   
   @js.native
   sealed trait `65536`
     extends PreOrderHookFlags
-       with TNodeProviderIndexes
        with ɵNodeFlags
   
   @js.native
@@ -314,6 +314,8 @@ object angularCoreNumbers {
   @scala.inline
   def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   @scala.inline
+  def `1048575`: `1048575` = 1048575.asInstanceOf[`1048575`]
+  @scala.inline
   def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
   @scala.inline
   def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
@@ -341,6 +343,8 @@ object angularCoreNumbers {
   def `1792`: `1792` = 1792.asInstanceOf[`1792`]
   @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
+  def `20`: `20` = 20.asInstanceOf[`20`]
   @scala.inline
   def `200`: `200` = 200.asInstanceOf[`200`]
   @scala.inline

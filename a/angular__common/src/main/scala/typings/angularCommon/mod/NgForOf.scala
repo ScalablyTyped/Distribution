@@ -28,25 +28,15 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
   var _trackByFn: js.Any = js.native
   var _viewContainer: js.Any = js.native
   /**
-    * A callback method that performs change-detection, invoked
-    * after the default change-detector runs.
-    * See `KeyValueDiffers` and `IterableDiffers` for implementing
-    * custom change checking for collections.
-    *
-    */
-  /* CompleteClass */
-  override def ngDoCheck(): Unit = js.native
-  /**
     * The value of the iterable expression, which can be used as a
     * [template input variable](guide/structural-directives#template-input-variable).
     */
-  def ngForOf(): js.Any = js.native
-  def ngForOf(ngForOf: U with NgIterable[T]): js.Any = js.native
+  def ngForOf_=(ngForOf: js.UndefOr[(U with NgIterable[T]) | Null]): Unit = js.native
   /**
     * A reference to the template that is stamped out for each item in the iterable.
-    * @see [template reference variable](guide/template-syntax#template-reference-variables--var-)
+    * @see [template reference variable](guide/template-reference-variables)
     */
-  def ngForTemplate(value: TemplateRef[NgForOfContext[T, U]]): js.Any = js.native
+  def ngForTemplate_=(value: TemplateRef[NgForOfContext[T, U]]): Unit = js.native
   def ngForTrackBy: TrackByFunction[T] = js.native
   /**
     * A function that defines how to track changes for items in the iterable.
@@ -65,7 +55,7 @@ class NgForOf[T, U /* <: NgIterable[T] */] protected () extends DoCheck {
     * The function receives two inputs,
     * the iteration index and the node object ID.
     */
-  def ngForTrackBy(fn: TrackByFunction[T]): js.Any = js.native
+  def ngForTrackBy_=(fn: TrackByFunction[T]): Unit = js.native
 }
 
 /* static members */

@@ -14,10 +14,26 @@ trait UpstreamRepositoryInfo extends js.Object {
 
 object UpstreamRepositoryInfo {
   @scala.inline
-  def apply(repositoryName: RepositoryName = null): UpstreamRepositoryInfo = {
+  def apply(): UpstreamRepositoryInfo = {
     val __obj = js.Dynamic.literal()
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpstreamRepositoryInfo]
   }
+  @scala.inline
+  implicit class UpstreamRepositoryInfoOps[Self <: UpstreamRepositoryInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Wrapper library to ServiceNow's JSON/REST plugin
 | ------------------ | :-------------: |
 | Full name          | servicenow |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2244 |
+| # downloads        | 2030 |
 | # stars            | 1 |
 
 ## Links

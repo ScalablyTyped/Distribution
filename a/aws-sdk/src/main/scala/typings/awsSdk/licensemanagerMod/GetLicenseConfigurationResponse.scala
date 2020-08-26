@@ -74,42 +74,96 @@ trait GetLicenseConfigurationResponse extends js.Object {
 
 object GetLicenseConfigurationResponse {
   @scala.inline
-  def apply(
-    AutomatedDiscoveryInformation: AutomatedDiscoveryInformation = null,
-    ConsumedLicenseSummaryList: ConsumedLicenseSummaryList = null,
-    ConsumedLicenses: js.UndefOr[BoxLong] = js.undefined,
-    Description: String = null,
-    LicenseConfigurationArn: String = null,
-    LicenseConfigurationId: String = null,
-    LicenseCount: js.UndefOr[BoxLong] = js.undefined,
-    LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined,
-    LicenseCountingType: LicenseCountingType = null,
-    LicenseRules: StringList = null,
-    ManagedResourceSummaryList: ManagedResourceSummaryList = null,
-    Name: String = null,
-    OwnerAccountId: String = null,
-    ProductInformationList: ProductInformationList = null,
-    Status: String = null,
-    Tags: TagList = null
-  ): GetLicenseConfigurationResponse = {
+  def apply(): GetLicenseConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (AutomatedDiscoveryInformation != null) __obj.updateDynamic("AutomatedDiscoveryInformation")(AutomatedDiscoveryInformation.asInstanceOf[js.Any])
-    if (ConsumedLicenseSummaryList != null) __obj.updateDynamic("ConsumedLicenseSummaryList")(ConsumedLicenseSummaryList.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsumedLicenses)) __obj.updateDynamic("ConsumedLicenses")(ConsumedLicenses.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LicenseConfigurationArn != null) __obj.updateDynamic("LicenseConfigurationArn")(LicenseConfigurationArn.asInstanceOf[js.Any])
-    if (LicenseConfigurationId != null) __obj.updateDynamic("LicenseConfigurationId")(LicenseConfigurationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCount)) __obj.updateDynamic("LicenseCount")(LicenseCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.get.asInstanceOf[js.Any])
-    if (LicenseCountingType != null) __obj.updateDynamic("LicenseCountingType")(LicenseCountingType.asInstanceOf[js.Any])
-    if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules.asInstanceOf[js.Any])
-    if (ManagedResourceSummaryList != null) __obj.updateDynamic("ManagedResourceSummaryList")(ManagedResourceSummaryList.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OwnerAccountId != null) __obj.updateDynamic("OwnerAccountId")(OwnerAccountId.asInstanceOf[js.Any])
-    if (ProductInformationList != null) __obj.updateDynamic("ProductInformationList")(ProductInformationList.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLicenseConfigurationResponse]
   }
+  @scala.inline
+  implicit class GetLicenseConfigurationResponseOps[Self <: GetLicenseConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomatedDiscoveryInformation(value: AutomatedDiscoveryInformation): Self = this.set("AutomatedDiscoveryInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomatedDiscoveryInformation: Self = this.set("AutomatedDiscoveryInformation", js.undefined)
+    @scala.inline
+    def setConsumedLicenseSummaryListVarargs(value: ConsumedLicenseSummary*): Self = this.set("ConsumedLicenseSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setConsumedLicenseSummaryList(value: ConsumedLicenseSummaryList): Self = this.set("ConsumedLicenseSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedLicenseSummaryList: Self = this.set("ConsumedLicenseSummaryList", js.undefined)
+    @scala.inline
+    def setConsumedLicenses(value: BoxLong): Self = this.set("ConsumedLicenses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedLicenses: Self = this.set("ConsumedLicenses", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLicenseConfigurationArn(value: String): Self = this.set("LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseConfigurationArn: Self = this.set("LicenseConfigurationArn", js.undefined)
+    @scala.inline
+    def setLicenseConfigurationId(value: String): Self = this.set("LicenseConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseConfigurationId: Self = this.set("LicenseConfigurationId", js.undefined)
+    @scala.inline
+    def setLicenseCount(value: BoxLong): Self = this.set("LicenseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCount: Self = this.set("LicenseCount", js.undefined)
+    @scala.inline
+    def setLicenseCountHardLimit(value: BoxBoolean): Self = this.set("LicenseCountHardLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCountHardLimit: Self = this.set("LicenseCountHardLimit", js.undefined)
+    @scala.inline
+    def setLicenseCountingType(value: LicenseCountingType): Self = this.set("LicenseCountingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCountingType: Self = this.set("LicenseCountingType", js.undefined)
+    @scala.inline
+    def setLicenseRulesVarargs(value: String*): Self = this.set("LicenseRules", js.Array(value :_*))
+    @scala.inline
+    def setLicenseRules(value: StringList): Self = this.set("LicenseRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseRules: Self = this.set("LicenseRules", js.undefined)
+    @scala.inline
+    def setManagedResourceSummaryListVarargs(value: ManagedResourceSummary*): Self = this.set("ManagedResourceSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setManagedResourceSummaryList(value: ManagedResourceSummaryList): Self = this.set("ManagedResourceSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedResourceSummaryList: Self = this.set("ManagedResourceSummaryList", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwnerAccountId(value: String): Self = this.set("OwnerAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccountId: Self = this.set("OwnerAccountId", js.undefined)
+    @scala.inline
+    def setProductInformationListVarargs(value: ProductInformation*): Self = this.set("ProductInformationList", js.Array(value :_*))
+    @scala.inline
+    def setProductInformationList(value: ProductInformationList): Self = this.set("ProductInformationList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductInformationList: Self = this.set("ProductInformationList", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

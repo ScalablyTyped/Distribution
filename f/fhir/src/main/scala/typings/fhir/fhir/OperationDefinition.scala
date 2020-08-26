@@ -8,167 +8,168 @@ import scala.scalajs.js.annotation._
   * Definition of an operation or a named query
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait OperationDefinition extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait OperationDefinition extends DomainResource {
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.undefined
+  var _code: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.undefined
+  var _comment: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.undefined
+  var _experimental: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'idempotent'.
     */
-  var _idempotent: js.UndefOr[Element] = js.undefined
+  var _idempotent: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'instance'.
     */
-  var _instance: js.UndefOr[Element] = js.undefined
+  var _instance: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'kind'.
     */
-  var _kind: js.UndefOr[Element] = js.undefined
+  var _kind: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.undefined
+  var _publisher: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'purpose'.
     */
-  var _purpose: js.UndefOr[Element] = js.undefined
+  var _purpose: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'resource'.
     */
-  var _resource: js.UndefOr[js.Array[Element]] = js.undefined
+  var _resource: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.undefined
+  var _system: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.undefined
+  var _url: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.undefined
+  var _version: js.UndefOr[Element] = js.native
   /**
     * Marks this as a profile of the base
     */
-  var base: js.UndefOr[Reference] = js.undefined
+  var base: js.UndefOr[Reference] = js.native
   /**
     * Name used to invoke the operation
     */
-  var code: typings.fhir.fhir.code
+  var code: typings.fhir.fhir.code = js.native
   /**
     * Additional information about use
     */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.undefined
+  var date: js.UndefOr[dateTime] = js.native
   /**
     * Natural language description of the operation definition
     */
-  var description: js.UndefOr[markdown] = js.undefined
+  var description: js.UndefOr[markdown] = js.native
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.undefined
+  var experimental: js.UndefOr[Boolean] = js.native
   /**
     * Whether content is unchanged by the operation
     */
-  var idempotent: js.UndefOr[Boolean] = js.undefined
+  var idempotent: js.UndefOr[Boolean] = js.native
   /**
     * Invoke on an instance?
     */
-  var instance: Boolean
+  var instance: Boolean = js.native
   /**
     * Intended jurisdiction for operation definition (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * operation | query
     */
-  var kind: code
+  var kind: code = js.native
   /**
     * Name for this operation definition (computer friendly)
     */
-  var name: String
+  var name: String = js.native
   /**
     * Define overloaded variants for when  generating code
     */
-  var overload: js.UndefOr[js.Array[OperationDefinitionOverload]] = js.undefined
+  var overload: js.UndefOr[js.Array[OperationDefinitionOverload]] = js.native
   /**
     * Parameters for the operation/query
     */
-  var parameter: js.UndefOr[js.Array[OperationDefinitionParameter]] = js.undefined
+  var parameter: js.UndefOr[js.Array[OperationDefinitionParameter]] = js.native
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.undefined
+  var publisher: js.UndefOr[String] = js.native
   /**
     * Why this operation definition is defined
     */
-  var purpose: js.UndefOr[markdown] = js.undefined
+  var purpose: js.UndefOr[markdown] = js.native
   /**
     * Types this operation applies to
     */
-  var resource: js.UndefOr[js.Array[code]] = js.undefined
+  var resource: js.UndefOr[js.Array[code]] = js.native
   /**
     * draft | active | retired | unknown
     */
-  var status: code
+  var status: code = js.native
   /**
     * Invoke at the system level?
     */
-  var system: Boolean
+  var system: Boolean = js.native
   /**
     * Invole at the type level?
     */
-  var `type`: Boolean
+  var `type`: Boolean = js.native
   /**
     * Logical URI to reference this operation definition (globally unique)
     */
-  var url: js.UndefOr[uri] = js.undefined
+  var url: js.UndefOr[uri] = js.native
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
   /**
     * Business version of the operation definition
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object OperationDefinition {
@@ -180,103 +181,184 @@ object OperationDefinition {
     name: String,
     status: code,
     system: Boolean,
-    `type`: Boolean,
-    _code: Element = null,
-    _comment: Element = null,
-    _date: Element = null,
-    _description: Element = null,
-    _experimental: Element = null,
-    _id: Element = null,
-    _idempotent: Element = null,
-    _implicitRules: Element = null,
-    _instance: Element = null,
-    _kind: Element = null,
-    _language: Element = null,
-    _name: Element = null,
-    _publisher: Element = null,
-    _purpose: Element = null,
-    _resource: js.Array[Element] = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    _system: Element = null,
-    _type: Element = null,
-    _url: Element = null,
-    _version: Element = null,
-    base: Reference = null,
-    comment: String = null,
-    contact: js.Array[ContactDetail] = null,
-    contained: js.Array[Resource] = null,
-    date: dateTime = null,
-    description: markdown = null,
-    experimental: js.UndefOr[Boolean] = js.undefined,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    idempotent: js.UndefOr[Boolean] = js.undefined,
-    implicitRules: uri = null,
-    jurisdiction: js.Array[CodeableConcept] = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    overload: js.Array[OperationDefinitionOverload] = null,
-    parameter: js.Array[OperationDefinitionParameter] = null,
-    publisher: String = null,
-    purpose: markdown = null,
-    resource: js.Array[code] = null,
-    resourceType: code = null,
-    text: Narrative = null,
-    url: uri = null,
-    useContext: js.Array[UsageContext] = null,
-    version: String = null
+    `type`: Boolean
   ): OperationDefinition = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_idempotent != null) __obj.updateDynamic("_idempotent")(_idempotent.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_instance != null) __obj.updateDynamic("_instance")(_instance.asInstanceOf[js.Any])
-    if (_kind != null) __obj.updateDynamic("_kind")(_kind.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher.asInstanceOf[js.Any])
-    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose.asInstanceOf[js.Any])
-    if (_resource != null) __obj.updateDynamic("_resource")(_resource.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_system != null) __obj.updateDynamic("_system")(_system.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
-    if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(idempotent)) __obj.updateDynamic("idempotent")(idempotent.get.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (overload != null) __obj.updateDynamic("overload")(overload.asInstanceOf[js.Any])
-    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (useContext != null) __obj.updateDynamic("useContext")(useContext.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDefinition]
   }
+  @scala.inline
+  implicit class OperationDefinitionOps[Self <: OperationDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstance(value: Boolean): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKind(value: code): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSystem(value: Boolean): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Boolean): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_code: Self = this.set("_code", js.undefined)
+    @scala.inline
+    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_date: Self = this.set("_date", js.undefined)
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_experimental(value: Element): Self = this.set("_experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_experimental: Self = this.set("_experimental", js.undefined)
+    @scala.inline
+    def set_idempotent(value: Element): Self = this.set("_idempotent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_idempotent: Self = this.set("_idempotent", js.undefined)
+    @scala.inline
+    def set_instance(value: Element): Self = this.set("_instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_instance: Self = this.set("_instance", js.undefined)
+    @scala.inline
+    def set_kind(value: Element): Self = this.set("_kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_kind: Self = this.set("_kind", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_publisher(value: Element): Self = this.set("_publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_publisher: Self = this.set("_publisher", js.undefined)
+    @scala.inline
+    def set_purpose(value: Element): Self = this.set("_purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_purpose: Self = this.set("_purpose", js.undefined)
+    @scala.inline
+    def set_resourceVarargs(value: Element*): Self = this.set("_resource", js.Array(value :_*))
+    @scala.inline
+    def set_resource(value: js.Array[Element]): Self = this.set("_resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_resource: Self = this.set("_resource", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_system(value: Element): Self = this.set("_system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_system: Self = this.set("_system", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_url: Self = this.set("_url", js.undefined)
+    @scala.inline
+    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_version: Self = this.set("_version", js.undefined)
+    @scala.inline
+    def setBase(value: Reference): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+    @scala.inline
+    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExperimental(value: Boolean): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    @scala.inline
+    def setIdempotent(value: Boolean): Self = this.set("idempotent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdempotent: Self = this.set("idempotent", js.undefined)
+    @scala.inline
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    @scala.inline
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    @scala.inline
+    def setOverloadVarargs(value: OperationDefinitionOverload*): Self = this.set("overload", js.Array(value :_*))
+    @scala.inline
+    def setOverload(value: js.Array[OperationDefinitionOverload]): Self = this.set("overload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverload: Self = this.set("overload", js.undefined)
+    @scala.inline
+    def setParameterVarargs(value: OperationDefinitionParameter*): Self = this.set("parameter", js.Array(value :_*))
+    @scala.inline
+    def setParameter(value: js.Array[OperationDefinitionParameter]): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameter: Self = this.set("parameter", js.undefined)
+    @scala.inline
+    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisher: Self = this.set("publisher", js.undefined)
+    @scala.inline
+    def setPurpose(value: markdown): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setResourceVarargs(value: code*): Self = this.set("resource", js.Array(value :_*))
+    @scala.inline
+    def setResource(value: js.Array[code]): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUseContextVarargs(value: UsageContext*): Self = this.set("useContext", js.Array(value :_*))
+    @scala.inline
+    def setUseContext(value: js.Array[UsageContext]): Self = this.set("useContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseContext: Self = this.set("useContext", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

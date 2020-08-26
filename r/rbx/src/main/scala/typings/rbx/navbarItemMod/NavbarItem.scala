@@ -3,7 +3,7 @@ package typings.rbx.navbarItemMod
 import typings.rbx.anon.AsElementType
 import typings.rbx.anon.PickNavbarItemContainerPrActive
 import typings.rbx.anon.TypeofNavbarItemContainer
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.rbxStrings.active
 import typings.rbx.rbxStrings.as
@@ -67,7 +67,7 @@ object NavbarItem extends js.Object {
   var defaultProps: AsElementType with (Partial[PickNavbarItemContainerPrActive with (Pick[_, String | Double | js.Symbol])]) = js.native
   var displayName: js.UndefOr[String] = js.native
   def apply[TAsComponent /* <: ElementType[_] */](
-    props: `7`[TAsComponent] with PickNavbarItemContainerPrActive with (Pick[
+    props: `6`[TAsComponent] with PickNavbarItemContainerPrActive with (Pick[
       ComponentProps[TAsComponent], 
       Exclude[
         /* keyof react.react.ComponentProps<TAsComponent> */ String, 

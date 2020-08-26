@@ -11,7 +11,7 @@ Adds the ability to provide a task listing for your gulpfile
 | Keywords           | gulpfriendly |
 | # releases         | 2 |
 | # dependents       | 49 |
-| # downloads        | 730619 |
+| # downloads        | 710812 |
 | # stars            | 19 |
 
 ## Links

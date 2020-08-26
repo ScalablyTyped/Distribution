@@ -27,49 +27,5 @@ class PlaceHolderCls protected ()
     mainClass: String,
     othersClass: String
   ) = this()
-  /**
-    * PlaceHolder.cancel()
-    * TODO
-    **/
-  /* CompleteClass */
-  override def cancel(): Unit = js.native
-  /**
-    * PlaceHolder.detach()
-    * TODO
-    **/
-  /* CompleteClass */
-  override def detach(): Unit = js.native
-  /**
-    * PlaceHolder.hideOtherMarkers()
-    * Hides all over markers in the [[EditSession `EditSession`]] that are not the currently selected one.
-    **/
-  /* CompleteClass */
-  override def hideOtherMarkers(): Unit = js.native
-  /* CompleteClass */
-  override def on(event: String, fn: js.Function1[/* e */ js.Any, _]): Unit = js.native
-  /**
-    * PlaceHolder@onCursorChange(e)
-    * Emitted when the cursor changes.
-    **/
-  /* CompleteClass */
-  override def onCursorChange(): Unit = js.native
-  /**
-    * PlaceHolder@onUpdate(e)
-    * Emitted when the place holder updates.
-    **/
-  /* CompleteClass */
-  override def onUpdate(): Unit = js.native
-  /**
-    * PlaceHolder.setup()
-    * TODO
-    **/
-  /* CompleteClass */
-  override def setup(): Unit = js.native
-  /**
-    * PlaceHolder.showOtherMarkers()
-    * TODO
-    **/
-  /* CompleteClass */
-  override def showOtherMarkers(): Unit = js.native
 }
 

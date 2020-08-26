@@ -6,13 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IWorkflow extends js.Object {
-  var ID: Double
-  var Name: String
-  var ObjectClass: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double
-  def Clone(): IWorkflow
-  def GetAsLookup(): ILookup
-  def GetAsTypedValue(): ITypedValue
+  var ID: Double = js.native
+  var Name: String = js.native
+  var ObjectClass: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double = js.native
+  def Clone(): IWorkflow = js.native
+  def GetAsLookup(): ILookup = js.native
+  def GetAsTypedValue(): ITypedValue = js.native
 }
 
 object IWorkflow {
@@ -28,5 +29,30 @@ object IWorkflow {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), GetAsLookup = js.Any.fromFunction0(GetAsLookup), GetAsTypedValue = js.Any.fromFunction0(GetAsTypedValue), ID = ID.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ObjectClass = ObjectClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkflow]
   }
+  @scala.inline
+  implicit class IWorkflowOps[Self <: IWorkflow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClone(value: () => IWorkflow): Self = this.set("Clone", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetAsLookup(value: () => ILookup): Self = this.set("GetAsLookup", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetAsTypedValue(value: () => ITypedValue): Self = this.set("GetAsTypedValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectClass(value: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double): Self = this.set("ObjectClass", value.asInstanceOf[js.Any])
+  }
+  
 }
 

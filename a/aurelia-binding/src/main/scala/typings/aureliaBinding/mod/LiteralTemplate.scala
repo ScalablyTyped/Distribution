@@ -10,7 +10,62 @@ import scala.scalajs.js.annotation._
 class LiteralTemplate protected () extends Expression {
   def this(cooked: js.Array[String]) = this()
   def this(cooked: js.Array[String], expressions: js.Array[Expression]) = this()
+  def this(cooked: js.Array[String], expressions: js.UndefOr[scala.Nothing], raw: js.Array[String]) = this()
   def this(cooked: js.Array[String], expressions: js.Array[Expression], raw: js.Array[String]) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.UndefOr[scala.Nothing],
+    raw: js.UndefOr[scala.Nothing],
+    func: AccessKeyed
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.UndefOr[scala.Nothing],
+    raw: js.UndefOr[scala.Nothing],
+    func: AccessMember
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.UndefOr[scala.Nothing],
+    raw: js.UndefOr[scala.Nothing],
+    func: AccessScope
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.UndefOr[scala.Nothing],
+    raw: js.Array[String],
+    func: AccessKeyed
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.UndefOr[scala.Nothing],
+    raw: js.Array[String],
+    func: AccessMember
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.UndefOr[scala.Nothing],
+    raw: js.Array[String],
+    func: AccessScope
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.Array[Expression],
+    raw: js.UndefOr[scala.Nothing],
+    func: AccessKeyed
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.Array[Expression],
+    raw: js.UndefOr[scala.Nothing],
+    func: AccessMember
+  ) = this()
+  def this(
+    cooked: js.Array[String],
+    expressions: js.Array[Expression],
+    raw: js.UndefOr[scala.Nothing],
+    func: AccessScope
+  ) = this()
   def this(
     cooked: js.Array[String],
     expressions: js.Array[Expression],

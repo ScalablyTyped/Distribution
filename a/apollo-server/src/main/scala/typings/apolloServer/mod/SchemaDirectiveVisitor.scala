@@ -1,32 +1,38 @@
 package typings.apolloServer.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.mod.GraphQLDirective
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.anon.Args
-import typings.graphqlTools.anon.TypeofSchemaDirectiveVisi
+import typings.graphqlToolsUtils.anon.Args
+import typings.graphqlToolsUtils.schemaDirectiveVisitorMod.SchemaDirectiveVisitorClass
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("apollo-server", "SchemaDirectiveVisitor")
 @js.native
-class SchemaDirectiveVisitor protected ()
-  extends typings.apolloServer.exportsMod.SchemaDirectiveVisitor {
-  protected def this(config: Args) = this()
+class SchemaDirectiveVisitor[TArgs, TContext] protected ()
+  extends typings.apolloServer.exportsMod.SchemaDirectiveVisitor[TArgs, TContext] {
+  protected def this(config: Args[TArgs, TContext]) = this()
 }
 
 /* static members */
 @JSImport("apollo-server", "SchemaDirectiveVisitor")
 @js.native
 object SchemaDirectiveVisitor extends js.Object {
-  /* protected */ def getDeclaredDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi]): StringDictionary[GraphQLDirective] = js.native
-  def getDirectiveDeclaration(directiveName: String, schema: GraphQLSchema): GraphQLDirective = js.native
-  def visitSchemaDirectives(schema: GraphQLSchema, directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi]): StringDictionary[js.Array[typings.graphqlTools.schemaVisitorMod.SchemaDirectiveVisitor]] = js.native
+  /* protected */ def getDeclaredDirectives(schema: GraphQLSchema, directiveVisitors: Record[String, SchemaDirectiveVisitorClass]): Record[String, GraphQLDirective] = js.native
+  def getDirectiveDeclaration(directiveName: String, schema: GraphQLSchema): js.UndefOr[GraphQLDirective | Null] = js.native
+  def visitSchemaDirectives(schema: GraphQLSchema, directiveVisitors: Record[String, SchemaDirectiveVisitorClass]): Record[
+    String, 
+    js.Array[typings.graphqlToolsUtils.schemaDirectiveVisitorMod.SchemaDirectiveVisitor[_, _]]
+  ] = js.native
   def visitSchemaDirectives(
     schema: GraphQLSchema,
-    directiveVisitors: StringDictionary[TypeofSchemaDirectiveVisi],
-    context: StringDictionary[js.Any]
-  ): StringDictionary[js.Array[typings.graphqlTools.schemaVisitorMod.SchemaDirectiveVisitor]] = js.native
+    directiveVisitors: Record[String, SchemaDirectiveVisitorClass],
+    context: Record[String, _]
+  ): Record[
+    String, 
+    js.Array[typings.graphqlToolsUtils.schemaDirectiveVisitorMod.SchemaDirectiveVisitor[_, _]]
+  ] = js.native
 }
 

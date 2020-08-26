@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoalEventDetailsEventConditions extends js.Object {
-  var comparisonType: js.UndefOr[String] = js.undefined
-  var comparisonValue: js.UndefOr[String] = js.undefined
-  var expression: js.UndefOr[String] = js.undefined
-  var matchType: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var comparisonType: js.UndefOr[String] = js.native
+  var comparisonValue: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object GoalEventDetailsEventConditions {
   @scala.inline
-  def apply(
-    comparisonType: String = null,
-    comparisonValue: String = null,
-    expression: String = null,
-    matchType: String = null,
-    `type`: String = null
-  ): GoalEventDetailsEventConditions = {
+  def apply(): GoalEventDetailsEventConditions = {
     val __obj = js.Dynamic.literal()
-    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType.asInstanceOf[js.Any])
-    if (comparisonValue != null) __obj.updateDynamic("comparisonValue")(comparisonValue.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (matchType != null) __obj.updateDynamic("matchType")(matchType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalEventDetailsEventConditions]
   }
+  @scala.inline
+  implicit class GoalEventDetailsEventConditionsOps[Self <: GoalEventDetailsEventConditions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonType(value: String): Self = this.set("comparisonType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonType: Self = this.set("comparisonType", js.undefined)
+    @scala.inline
+    def setComparisonValue(value: String): Self = this.set("comparisonValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonValue: Self = this.set("comparisonValue", js.undefined)
+    @scala.inline
+    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setMatchType(value: String): Self = this.set("matchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchType: Self = this.set("matchType", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

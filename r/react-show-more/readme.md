@@ -12,7 +12,7 @@ React component for truncating multi-line spans and adding an ellipsis
 | Keywords           | react, show more, ellipsis, multiline |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 215064 |
+| # downloads        | 231067 |
 | # stars            | 3 |
 
 ## Links

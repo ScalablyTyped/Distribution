@@ -24,6 +24,7 @@ object dialog extends js.Object {
   def alert(title: String): js.Promise[buttonType] = js.native
   def alert(title: String, message: String): js.Promise[buttonType] = js.native
   def confirm(title: String): js.Promise[buttonType] = js.native
+  def confirm(title: String, message: js.UndefOr[scala.Nothing], buttons: js.Array[DialogButton]): js.Promise[buttonType] = js.native
   def confirm(title: String, message: String): js.Promise[buttonType] = js.native
   def confirm(title: String, message: String, buttons: js.Array[DialogButton]): js.Promise[buttonType] = js.native
   def date(config: DialogDateConfig): js.Promise[DialogDateResult] = js.native

@@ -83,6 +83,7 @@ class Geometry () extends Object {
     * @api
     */
   def scale(sx: Double): Unit = js.native
+  def scale(sx: Double, opt_sy: js.UndefOr[scala.Nothing], opt_anchor: Coordinate_): Unit = js.native
   def scale(sx: Double, opt_sy: Double): Unit = js.native
   def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate_): Unit = js.native
   /**

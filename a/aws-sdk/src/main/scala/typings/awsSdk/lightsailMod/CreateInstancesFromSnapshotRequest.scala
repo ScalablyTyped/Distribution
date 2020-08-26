@@ -43,7 +43,7 @@ trait CreateInstancesFromSnapshotRequest extends js.Object {
     */
   var sourceInstanceName: js.UndefOr[String] = js.native
   /**
-    * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
+    * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
   var tags: js.UndefOr[TagList] = js.native
   /**
@@ -58,31 +58,70 @@ trait CreateInstancesFromSnapshotRequest extends js.Object {
 
 object CreateInstancesFromSnapshotRequest {
   @scala.inline
-  def apply(
-    availabilityZone: String,
-    bundleId: NonEmptyString,
-    instanceNames: StringList,
-    addOns: AddOnRequestList = null,
-    attachedDiskMapping: AttachedDiskMap = null,
-    instanceSnapshotName: ResourceName = null,
-    keyPairName: ResourceName = null,
-    restoreDate: String = null,
-    sourceInstanceName: String = null,
-    tags: TagList = null,
-    useLatestRestorableAutoSnapshot: js.UndefOr[Boolean] = js.undefined,
-    userData: String = null
-  ): CreateInstancesFromSnapshotRequest = {
+  def apply(availabilityZone: String, bundleId: NonEmptyString, instanceNames: StringList): CreateInstancesFromSnapshotRequest = {
     val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any], instanceNames = instanceNames.asInstanceOf[js.Any])
-    if (addOns != null) __obj.updateDynamic("addOns")(addOns.asInstanceOf[js.Any])
-    if (attachedDiskMapping != null) __obj.updateDynamic("attachedDiskMapping")(attachedDiskMapping.asInstanceOf[js.Any])
-    if (instanceSnapshotName != null) __obj.updateDynamic("instanceSnapshotName")(instanceSnapshotName.asInstanceOf[js.Any])
-    if (keyPairName != null) __obj.updateDynamic("keyPairName")(keyPairName.asInstanceOf[js.Any])
-    if (restoreDate != null) __obj.updateDynamic("restoreDate")(restoreDate.asInstanceOf[js.Any])
-    if (sourceInstanceName != null) __obj.updateDynamic("sourceInstanceName")(sourceInstanceName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLatestRestorableAutoSnapshot)) __obj.updateDynamic("useLatestRestorableAutoSnapshot")(useLatestRestorableAutoSnapshot.get.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstancesFromSnapshotRequest]
   }
+  @scala.inline
+  implicit class CreateInstancesFromSnapshotRequestOps[Self <: CreateInstancesFromSnapshotRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBundleId(value: NonEmptyString): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceNamesVarargs(value: String*): Self = this.set("instanceNames", js.Array(value :_*))
+    @scala.inline
+    def setInstanceNames(value: StringList): Self = this.set("instanceNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddOnsVarargs(value: AddOnRequest*): Self = this.set("addOns", js.Array(value :_*))
+    @scala.inline
+    def setAddOns(value: AddOnRequestList): Self = this.set("addOns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddOns: Self = this.set("addOns", js.undefined)
+    @scala.inline
+    def setAttachedDiskMapping(value: AttachedDiskMap): Self = this.set("attachedDiskMapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedDiskMapping: Self = this.set("attachedDiskMapping", js.undefined)
+    @scala.inline
+    def setInstanceSnapshotName(value: ResourceName): Self = this.set("instanceSnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceSnapshotName: Self = this.set("instanceSnapshotName", js.undefined)
+    @scala.inline
+    def setKeyPairName(value: ResourceName): Self = this.set("keyPairName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairName: Self = this.set("keyPairName", js.undefined)
+    @scala.inline
+    def setRestoreDate(value: String): Self = this.set("restoreDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreDate: Self = this.set("restoreDate", js.undefined)
+    @scala.inline
+    def setSourceInstanceName(value: String): Self = this.set("sourceInstanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceInstanceName: Self = this.set("sourceInstanceName", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUseLatestRestorableAutoSnapshot(value: Boolean): Self = this.set("useLatestRestorableAutoSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseLatestRestorableAutoSnapshot: Self = this.set("useLatestRestorableAutoSnapshot", js.undefined)
+    @scala.inline
+    def setUserData(value: String): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+  }
+  
 }
 

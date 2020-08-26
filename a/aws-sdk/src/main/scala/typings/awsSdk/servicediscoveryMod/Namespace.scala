@@ -46,28 +46,58 @@ trait Namespace extends js.Object {
 
 object Namespace {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    CreateDate: Timestamp = null,
-    CreatorRequestId: ResourceId = null,
-    Description: ResourceDescription = null,
-    Id: ResourceId = null,
-    Name: NamespaceName = null,
-    Properties: NamespaceProperties = null,
-    ServiceCount: js.UndefOr[ResourceCount] = js.undefined,
-    Type: NamespaceType = null
-  ): Namespace = {
+  def apply(): Namespace = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Properties != null) __obj.updateDynamic("Properties")(Properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(ServiceCount)) __obj.updateDynamic("ServiceCount")(ServiceCount.get.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Namespace]
   }
+  @scala.inline
+  implicit class NamespaceOps[Self <: Namespace] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setCreatorRequestId(value: ResourceId): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setDescription(value: ResourceDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: NamespaceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProperties(value: NamespaceProperties): Self = this.set("Properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("Properties", js.undefined)
+    @scala.inline
+    def setServiceCount(value: ResourceCount): Self = this.set("ServiceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCount: Self = this.set("ServiceCount", js.undefined)
+    @scala.inline
+    def setType(value: NamespaceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

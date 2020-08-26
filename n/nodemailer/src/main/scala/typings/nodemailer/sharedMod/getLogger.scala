@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getLogger extends js.Object {
   def apply(): Logger = js.native
+  def apply(options: js.UndefOr[scala.Nothing], defaults: StringDictionary[js.Any]): Logger = js.native
   def apply(options: StringDictionary[js.Any]): Logger = js.native
   def apply(options: StringDictionary[js.Any], defaults: StringDictionary[js.Any]): Logger = js.native
 }

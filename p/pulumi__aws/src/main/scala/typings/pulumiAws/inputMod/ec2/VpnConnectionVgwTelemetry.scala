@@ -16,20 +16,42 @@ trait VpnConnectionVgwTelemetry extends js.Object {
 
 object VpnConnectionVgwTelemetry {
   @scala.inline
-  def apply(
-    acceptedRouteCount: Input[Double] = null,
-    lastStatusChange: Input[String] = null,
-    outsideIpAddress: Input[String] = null,
-    status: Input[String] = null,
-    statusMessage: Input[String] = null
-  ): VpnConnectionVgwTelemetry = {
+  def apply(): VpnConnectionVgwTelemetry = {
     val __obj = js.Dynamic.literal()
-    if (acceptedRouteCount != null) __obj.updateDynamic("acceptedRouteCount")(acceptedRouteCount.asInstanceOf[js.Any])
-    if (lastStatusChange != null) __obj.updateDynamic("lastStatusChange")(lastStatusChange.asInstanceOf[js.Any])
-    if (outsideIpAddress != null) __obj.updateDynamic("outsideIpAddress")(outsideIpAddress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnConnectionVgwTelemetry]
   }
+  @scala.inline
+  implicit class VpnConnectionVgwTelemetryOps[Self <: VpnConnectionVgwTelemetry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptedRouteCount(value: Input[Double]): Self = this.set("acceptedRouteCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptedRouteCount: Self = this.set("acceptedRouteCount", js.undefined)
+    @scala.inline
+    def setLastStatusChange(value: Input[String]): Self = this.set("lastStatusChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatusChange: Self = this.set("lastStatusChange", js.undefined)
+    @scala.inline
+    def setOutsideIpAddress(value: Input[String]): Self = this.set("outsideIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutsideIpAddress: Self = this.set("outsideIpAddress", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: Input[String]): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+  }
+  
 }
 

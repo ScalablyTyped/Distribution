@@ -18,10 +18,11 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/check", "Match.test")
 @js.native
 object test extends js.Object {
-  def apply(value: js.Any): /* is meteor.meteor/check.Match.PatternMatch<undefined> */ Boolean = js.native
+  def apply(value: js.Any, pattern: js.UndefOr[scala.Nothing]): /* is meteor.meteor/check.Match.PatternMatch<undefined> */ Boolean = js.native
   def apply(value: js.Any, pattern: String): /* is meteor.meteor/check.Match.PatternMatch<string> */ Boolean = js.native
   def apply(value: js.Any, pattern: Boolean): /* is meteor.meteor/check.Match.PatternMatch<boolean> */ Boolean = js.native
   def apply(value: js.Any, pattern: Double): /* is meteor.meteor/check.Match.PatternMatch<number> */ Boolean = js.native
+  def apply(value: js.Any, pattern: Null): /* is meteor.meteor/check.Match.PatternMatch<null> */ Boolean = js.native
   def apply[T /* <: (StringConstructor with Instantiable0[typings.std.global.String]) | (NumberConstructor with Instantiable0[Number]) | (BooleanConstructor with Instantiable0[typings.std.global.Boolean]) | (ObjectConstructor with Instantiable0[Object]) | (FunctionConstructor with (Instantiable1[/* args (repeated) */ String, Function])) | (Instantiable1[/* args (repeated) */ js.Any, js.Any]) | js.Array[Pattern] | StringDictionary[Pattern] | Matcher[_] */](value: js.Any, pattern: T): /* is meteor.meteor/check.Match.PatternMatch<T> */ Boolean = js.native
 }
 

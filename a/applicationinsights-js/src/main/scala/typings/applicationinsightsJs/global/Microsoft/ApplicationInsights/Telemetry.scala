@@ -1,18 +1,6 @@
 package typings.applicationinsightsJs.global.Microsoft.ApplicationInsights
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.applicationinsightsJs.AI.DataPoint
-import typings.applicationinsightsJs.AI.DataPointType
-import typings.applicationinsightsJs.AI.DependencyKind
-import typings.applicationinsightsJs.AI.DependencySourceType
-import typings.applicationinsightsJs.AI.ExceptionDetails
 import typings.applicationinsightsJs.AI.SeverityLevel
-import typings.applicationinsightsJs.anon.DomProcessing
-import typings.applicationinsightsJs.anon.Duration
-import typings.applicationinsightsJs.anon.Exceptions
-import typings.applicationinsightsJs.anon.Measurements
-import typings.applicationinsightsJs.anon.Message
-import typings.applicationinsightsJs.anon.Metrics
 import typings.std.Error
 import typings.std.PerformanceTiming
 import scala.scalajs.js
@@ -30,25 +18,8 @@ object Telemetry extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, properties: js.Any) = this()
+    def this(name: String, properties: js.UndefOr[scala.Nothing], measurements: js.Any) = this()
     def this(name: String, properties: js.Any, measurements: js.Any) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    @JSName("aiDataContract")
-    override var aiDataContract_Event: Measurements = js.native
-    /* CompleteClass */
-    override var measurements: js.Any = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
   }
   
   @js.native
@@ -59,8 +30,66 @@ object Telemetry extends js.Object {
       */
     def this(exception: Error) = this()
     def this(exception: Error, handledAt: String) = this()
+    def this(exception: Error, handledAt: js.UndefOr[scala.Nothing], properties: js.Any) = this()
     def this(exception: Error, handledAt: String, properties: js.Any) = this()
+    def this(
+      exception: Error,
+      handledAt: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(exception: Error, handledAt: js.UndefOr[scala.Nothing], properties: js.Any, measurements: js.Any) = this()
+    def this(exception: Error, handledAt: String, properties: js.UndefOr[scala.Nothing], measurements: js.Any) = this()
     def this(exception: Error, handledAt: String, properties: js.Any, measurements: js.Any) = this()
+    def this(
+      exception: Error,
+      handledAt: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.UndefOr[scala.Nothing],
+      severityLevel: SeverityLevel
+    ) = this()
+    def this(
+      exception: Error,
+      handledAt: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any,
+      severityLevel: SeverityLevel
+    ) = this()
+    def this(
+      exception: Error,
+      handledAt: js.UndefOr[scala.Nothing],
+      properties: js.Any,
+      measurements: js.UndefOr[scala.Nothing],
+      severityLevel: SeverityLevel
+    ) = this()
+    def this(
+      exception: Error,
+      handledAt: js.UndefOr[scala.Nothing],
+      properties: js.Any,
+      measurements: js.Any,
+      severityLevel: SeverityLevel
+    ) = this()
+    def this(
+      exception: Error,
+      handledAt: String,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.UndefOr[scala.Nothing],
+      severityLevel: SeverityLevel
+    ) = this()
+    def this(
+      exception: Error,
+      handledAt: String,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any,
+      severityLevel: SeverityLevel
+    ) = this()
+    def this(
+      exception: Error,
+      handledAt: String,
+      properties: js.Any,
+      measurements: js.UndefOr[scala.Nothing],
+      severityLevel: SeverityLevel
+    ) = this()
     def this(
       exception: Error,
       handledAt: String,
@@ -68,32 +97,6 @@ object Telemetry extends js.Object {
       measurements: js.Any,
       severityLevel: SeverityLevel
     ) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    @JSName("aiDataContract")
-    override var aiDataContract_Exception: Exceptions = js.native
-    /* CompleteClass */
-    override var crashThreadId: Double = js.native
-    /* CompleteClass */
-    override var exceptions: js.Array[ExceptionDetails] = js.native
-    /* CompleteClass */
-    override var handledAt: String = js.native
-    /* CompleteClass */
-    override var measurements: js.Any = js.native
-    /* CompleteClass */
-    override var problemId: String = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var severityLevel: SeverityLevel = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
   }
   
   @js.native
@@ -104,25 +107,75 @@ object Telemetry extends js.Object {
       */
     def this(name: String, value: Double) = this()
     def this(name: String, value: Double, count: Double) = this()
+    def this(name: String, value: Double, count: js.UndefOr[scala.Nothing], min: Double) = this()
     def this(name: String, value: Double, count: Double, min: Double) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: js.UndefOr[scala.Nothing],
+      min: js.UndefOr[scala.Nothing],
+      max: Double
+    ) = this()
+    def this(name: String, value: Double, count: js.UndefOr[scala.Nothing], min: Double, max: Double) = this()
+    def this(name: String, value: Double, count: Double, min: js.UndefOr[scala.Nothing], max: Double) = this()
     def this(name: String, value: Double, count: Double, min: Double, max: Double) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: js.UndefOr[scala.Nothing],
+      min: js.UndefOr[scala.Nothing],
+      max: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: js.UndefOr[scala.Nothing],
+      min: js.UndefOr[scala.Nothing],
+      max: Double,
+      properties: js.Any
+    ) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: js.UndefOr[scala.Nothing],
+      min: Double,
+      max: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: js.UndefOr[scala.Nothing],
+      min: Double,
+      max: Double,
+      properties: js.Any
+    ) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: Double,
+      min: js.UndefOr[scala.Nothing],
+      max: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: Double,
+      min: js.UndefOr[scala.Nothing],
+      max: Double,
+      properties: js.Any
+    ) = this()
+    def this(
+      name: String,
+      value: Double,
+      count: Double,
+      min: Double,
+      max: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
     def this(name: String, value: Double, count: Double, min: Double, max: Double, properties: js.Any) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    @JSName("aiDataContract")
-    override var aiDataContract_Metric: Metrics = js.native
-    /* CompleteClass */
-    override var metrics: js.Array[DataPoint] = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
   }
   
   @js.native
@@ -132,36 +185,146 @@ object Telemetry extends js.Object {
   class PageView ()
     extends typings.applicationinsightsJs.Microsoft.ApplicationInsights.Telemetry.PageView {
     def this(name: String) = this()
+    def this(name: js.UndefOr[scala.Nothing], url: String) = this()
     def this(name: String, url: String) = this()
+    def this(name: js.UndefOr[scala.Nothing], url: js.UndefOr[scala.Nothing], durationMs: Double) = this()
+    def this(name: js.UndefOr[scala.Nothing], url: String, durationMs: Double) = this()
+    def this(name: String, url: js.UndefOr[scala.Nothing], durationMs: Double) = this()
     def this(name: String, url: String, durationMs: Double) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: js.UndefOr[scala.Nothing],
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: js.UndefOr[scala.Nothing],
+      durationMs: Double,
+      properties: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: String,
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
+    def this(name: js.UndefOr[scala.Nothing], url: String, durationMs: Double, properties: js.Any) = this()
+    def this(
+      name: String,
+      url: js.UndefOr[scala.Nothing],
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any
+    ) = this()
+    def this(name: String, url: js.UndefOr[scala.Nothing], durationMs: Double, properties: js.Any) = this()
+    def this(name: String, url: String, durationMs: js.UndefOr[scala.Nothing], properties: js.Any) = this()
     def this(name: String, url: String, durationMs: Double, properties: js.Any) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: js.UndefOr[scala.Nothing],
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: js.UndefOr[scala.Nothing],
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: js.UndefOr[scala.Nothing],
+      durationMs: Double,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: js.UndefOr[scala.Nothing],
+      durationMs: Double,
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: String,
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: String,
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: String,
+      durationMs: Double,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: js.UndefOr[scala.Nothing],
+      url: String,
+      durationMs: Double,
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: js.UndefOr[scala.Nothing],
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: js.UndefOr[scala.Nothing],
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: js.UndefOr[scala.Nothing],
+      durationMs: Double,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: js.UndefOr[scala.Nothing],
+      durationMs: Double,
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: String,
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: String,
+      durationMs: js.UndefOr[scala.Nothing],
+      properties: js.Any,
+      measurements: js.Any
+    ) = this()
+    def this(
+      name: String,
+      url: String,
+      durationMs: Double,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
     def this(name: String, url: String, durationMs: Double, properties: js.Any, measurements: js.Any) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    @JSName("aiDataContract")
-    override var aiDataContract_PageView: Duration = js.native
-    /* CompleteClass */
-    override var duration: String = js.native
-    /* CompleteClass */
-    override var measurements: js.Any = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var referrer: String = js.native
-    /* CompleteClass */
-    override var referrerData: String = js.native
-    /* CompleteClass */
-    override var url: String = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
   }
   
   @js.native
@@ -172,60 +335,14 @@ object Telemetry extends js.Object {
       */
     def this(name: String, url: String, unused: Double) = this()
     def this(name: String, url: String, unused: Double, properties: js.Any) = this()
+    def this(
+      name: String,
+      url: String,
+      unused: Double,
+      properties: js.UndefOr[scala.Nothing],
+      measurements: js.Any
+    ) = this()
     def this(name: String, url: String, unused: Double, properties: js.Any, measurements: js.Any) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    @JSName("aiDataContract")
-    override var aiDataContract_PageViewPerformance: DomProcessing = js.native
-    /* CompleteClass */
-    override var domProcessing: String = js.native
-    /* CompleteClass */
-    override var duration: String = js.native
-    /* CompleteClass */
-    override var durationMs: js.Any = js.native
-    /**
-      * Field indicating whether this instance of PageViewPerformance is valid and should be sent
-      */
-    /* CompleteClass */
-    override var isValid: js.Any = js.native
-    /* CompleteClass */
-    override var measurements: js.Any = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var networkConnect: String = js.native
-    /* CompleteClass */
-    override var perfTotal: String = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var receivedResponse: String = js.native
-    /* CompleteClass */
-    override var referrer: String = js.native
-    /* CompleteClass */
-    override var referrerData: String = js.native
-    /* CompleteClass */
-    override var sentRequest: String = js.native
-    /* CompleteClass */
-    override var url: String = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
-    /**
-      * Gets the total duration (PLT) in milliseconds. Check getIsValid() before using this method.
-      */
-    /* CompleteClass */
-    override def getDurationMs(): Double = js.native
-    /**
-      * Indicates whether this instance of PageViewPerformance is valid and should be sent
-      */
-    /* CompleteClass */
-    override def getIsValid(): Boolean = js.native
   }
   
   @js.native
@@ -251,49 +368,6 @@ object Telemetry extends js.Object {
       resultCode: Double,
       method: String
     ) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    override var async: Boolean = js.native
-    /* CompleteClass */
-    override var commandName: String = js.native
-    /* CompleteClass */
-    override var count: Double = js.native
-    /* CompleteClass */
-    override var dependencyKind: DependencyKind = js.native
-    /* CompleteClass */
-    override var dependencySource: DependencySourceType = js.native
-    /* CompleteClass */
-    override var dependencyTypeName: String = js.native
-    /* CompleteClass */
-    override var id: String = js.native
-    /* CompleteClass */
-    override var kind: DataPointType = js.native
-    /* CompleteClass */
-    override var max: Double = js.native
-    /* CompleteClass */
-    override var min: Double = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var resultCode: String = js.native
-    /* CompleteClass */
-    override var stdDev: Double = js.native
-    /* CompleteClass */
-    override var success: Boolean = js.native
-    /* CompleteClass */
-    override var value: Double = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
-    /* CompleteClass */
-    /* private */ override def formatDependencyName(method: js.Any, absoluteUrl: js.Any): js.Any = js.native
   }
   
   @js.native
@@ -304,41 +378,13 @@ object Telemetry extends js.Object {
       */
     def this(message: String) = this()
     def this(message: String, properties: js.Any) = this()
-    /**
-      * The set of fields for a serializeable object.
-      * This defines the serialization order and a value of true/false
-      * for each field defines whether the field is required or not.
-      */
-    /* CompleteClass */
-    override var aiDataContract: js.Any = js.native
-    /* CompleteClass */
-    @JSName("aiDataContract")
-    override var aiDataContract_Trace: Message = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var properties: js.Any = js.native
-    /* CompleteClass */
-    override var severityLevel: SeverityLevel = js.native
-    /* CompleteClass */
-    override var ver: Double = js.native
   }
   
   @js.native
   object Common extends js.Object {
     @js.native
     class Base ()
-      extends typings.applicationinsightsJs.Microsoft.ApplicationInsights.Telemetry.Common.Base {
-      /**
-        * The set of fields for a serializeable object.
-        * This defines the serialization order and a value of true/false
-        * for each field defines whether the field is required or not.
-        */
-      /* CompleteClass */
-      override var aiDataContract: js.Any = js.native
-      /* CompleteClass */
-      override var baseType: String = js.native
-    }
+      extends typings.applicationinsightsJs.Microsoft.ApplicationInsights.Telemetry.Common.Base
     
     @js.native
     class Data[TDomain] protected ()
@@ -347,17 +393,6 @@ object Telemetry extends js.Object {
         * Constructs a new instance of telemetry data.
         */
       def this(`type`: String, data: TDomain) = this()
-      /**
-        * The set of fields for a serializeable object.
-        * This defines the serialization order and a value of true/false
-        * for each field defines whether the field is required or not.
-        */
-      /* CompleteClass */
-      override var aiDataContract: js.Any = js.native
-      /* CompleteClass */
-      override var baseData: TDomain = js.native
-      /* CompleteClass */
-      override var baseType: String = js.native
     }
     
     @js.native
@@ -371,46 +406,6 @@ object Telemetry extends js.Object {
         * Constructs a new instance of telemetry data.
         */
       def this(data: typings.applicationinsightsJs.Microsoft.Telemetry.Base, name: String) = this()
-      /**
-        * The set of fields for a serializeable object.
-        * This defines the serialization order and a value of true/false
-        * for each field defines whether the field is required or not.
-        */
-      /* CompleteClass */
-      override var aiDataContract: js.Any = js.native
-      /* CompleteClass */
-      override var appId: String = js.native
-      /* CompleteClass */
-      override var appVer: String = js.native
-      /* CompleteClass */
-      override var data: js.Any = js.native
-      /* CompleteClass */
-      @JSName("data")
-      override var data_Envelope: typings.applicationinsightsJs.Microsoft.ApplicationInsights.Telemetry.Common.Base = js.native
-      /* CompleteClass */
-      override var deviceId: String = js.native
-      /* CompleteClass */
-      override var flags: Double = js.native
-      /* CompleteClass */
-      override var iKey: String = js.native
-      /* CompleteClass */
-      override var name: String = js.native
-      /* CompleteClass */
-      override var os: String = js.native
-      /* CompleteClass */
-      override var osVer: String = js.native
-      /* CompleteClass */
-      override var sampleRate: Double = js.native
-      /* CompleteClass */
-      override var seq: String = js.native
-      /* CompleteClass */
-      override var tags: StringDictionary[js.Any] = js.native
-      /* CompleteClass */
-      override var time: String = js.native
-      /* CompleteClass */
-      override var userId: String = js.native
-      /* CompleteClass */
-      override var ver: Double = js.native
     }
     
     /* static members */

@@ -5,161 +5,270 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQueryColorpickerOptions extends js.Object {
-  var alpha: js.UndefOr[Boolean] = js.undefined
-  var altAlpha: js.UndefOr[Boolean] = js.undefined
-  var altField: js.UndefOr[String] = js.undefined
-  var altOnChange: js.UndefOr[Boolean] = js.undefined
-  var altProperties: js.UndefOr[String] = js.undefined
-  var autoOpen: js.UndefOr[Boolean] = js.undefined
-  var buttonClass: js.UndefOr[String] = js.undefined
-  var buttonColorize: js.UndefOr[Boolean] = js.undefined
-  var buttonImage: js.UndefOr[String] = js.undefined
-  var buttonImageOnly: js.UndefOr[Boolean] = js.undefined
-  var buttonText: js.UndefOr[String] = js.undefined
+  var alpha: js.UndefOr[Boolean] = js.native
+  var altAlpha: js.UndefOr[Boolean] = js.native
+  var altField: js.UndefOr[String] = js.native
+  var altOnChange: js.UndefOr[Boolean] = js.native
+  var altProperties: js.UndefOr[String] = js.native
+  var autoOpen: js.UndefOr[Boolean] = js.native
+  var buttonClass: js.UndefOr[String] = js.native
+  var buttonColorize: js.UndefOr[Boolean] = js.native
+  var buttonImage: js.UndefOr[String] = js.native
+  var buttonImageOnly: js.UndefOr[Boolean] = js.native
+  var buttonText: js.UndefOr[String] = js.native
   // Events
   // TODO: Figure out actual types.
-  var cancel: js.UndefOr[js.Function] = js.undefined
-  var close: js.UndefOr[js.Function] = js.undefined
-  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
-  var closeOnOutside: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var colorFormat: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
-  var duration: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var horizontal: js.UndefOr[Boolean] = js.undefined
-  var hsv: js.UndefOr[Boolean] = js.undefined
-  var init: js.UndefOr[js.Function] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var inlineFrame: js.UndefOr[Boolean] = js.undefined
-  var layout: js.UndefOr[StringDictionary[js.Array[Double]]] = js.undefined
-  var limit: js.UndefOr[String] = js.undefined
-  var modal: js.UndefOr[Boolean] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var ok: js.UndefOr[js.Function] = js.undefined
-  var okOnEnter: js.UndefOr[Boolean] = js.undefined
-  var open: js.UndefOr[js.Function] = js.undefined
-  var part: js.UndefOr[js.Any] = js.undefined
-  var parts: js.UndefOr[js.Any] = js.undefined
-  var regional: js.UndefOr[String] = js.undefined
-  var revert: js.UndefOr[Boolean] = js.undefined
-  var rgb: js.UndefOr[Boolean] = js.undefined
-  var select: js.UndefOr[js.Function] = js.undefined
-  var showAnim: js.UndefOr[String] = js.undefined
-  var showCancelButton: js.UndefOr[Boolean] = js.undefined
-  var showCloseButton: js.UndefOr[Boolean] = js.undefined
-  var showNoneButton: js.UndefOr[Boolean] = js.undefined
-  var showOn: js.UndefOr[String] = js.undefined
-  var showOptions: js.UndefOr[js.Any] = js.undefined
-  var swatches: js.UndefOr[js.Any] = js.undefined
-  var swatchesWidth: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var cancel: js.UndefOr[js.Function] = js.native
+  var close: js.UndefOr[js.Function] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeOnOutside: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[String] = js.native
+  var colorFormat: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
+  var duration: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.native
+  var hsv: js.UndefOr[Boolean] = js.native
+  var init: js.UndefOr[js.Function] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var inlineFrame: js.UndefOr[Boolean] = js.native
+  var layout: js.UndefOr[StringDictionary[js.Array[Double]]] = js.native
+  var limit: js.UndefOr[String] = js.native
+  var modal: js.UndefOr[Boolean] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var ok: js.UndefOr[js.Function] = js.native
+  var okOnEnter: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[js.Function] = js.native
+  var part: js.UndefOr[js.Any] = js.native
+  var parts: js.UndefOr[js.Any] = js.native
+  var regional: js.UndefOr[String] = js.native
+  var revert: js.UndefOr[Boolean] = js.native
+  var rgb: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[js.Function] = js.native
+  var showAnim: js.UndefOr[String] = js.native
+  var showCancelButton: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var showNoneButton: js.UndefOr[Boolean] = js.native
+  var showOn: js.UndefOr[String] = js.native
+  var showOptions: js.UndefOr[js.Any] = js.native
+  var swatches: js.UndefOr[js.Any] = js.native
+  var swatchesWidth: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object JQueryColorpickerOptions {
   @scala.inline
-  def apply(
-    alpha: js.UndefOr[Boolean] = js.undefined,
-    altAlpha: js.UndefOr[Boolean] = js.undefined,
-    altField: String = null,
-    altOnChange: js.UndefOr[Boolean] = js.undefined,
-    altProperties: String = null,
-    autoOpen: js.UndefOr[Boolean] = js.undefined,
-    buttonClass: String = null,
-    buttonColorize: js.UndefOr[Boolean] = js.undefined,
-    buttonImage: String = null,
-    buttonImageOnly: js.UndefOr[Boolean] = js.undefined,
-    buttonText: String = null,
-    cancel: js.Function = null,
-    close: js.Function = null,
-    closeOnEscape: js.UndefOr[Boolean] = js.undefined,
-    closeOnOutside: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    colorFormat: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    duration: String = null,
-    format: String = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    hsv: js.UndefOr[Boolean] = js.undefined,
-    init: js.Function = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    inlineFrame: js.UndefOr[Boolean] = js.undefined,
-    layout: StringDictionary[js.Array[Double]] = null,
-    limit: String = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    mode: String = null,
-    ok: js.Function = null,
-    okOnEnter: js.UndefOr[Boolean] = js.undefined,
-    open: js.Function = null,
-    part: js.Any = null,
-    parts: js.Any = null,
-    regional: String = null,
-    revert: js.UndefOr[Boolean] = js.undefined,
-    rgb: js.UndefOr[Boolean] = js.undefined,
-    select: js.Function = null,
-    showAnim: String = null,
-    showCancelButton: js.UndefOr[Boolean] = js.undefined,
-    showCloseButton: js.UndefOr[Boolean] = js.undefined,
-    showNoneButton: js.UndefOr[Boolean] = js.undefined,
-    showOn: String = null,
-    showOptions: js.Any = null,
-    swatches: js.Any = null,
-    swatchesWidth: js.UndefOr[Double] = js.undefined,
-    title: String = null
-  ): JQueryColorpickerOptions = {
+  def apply(): JQueryColorpickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(altAlpha)) __obj.updateDynamic("altAlpha")(altAlpha.get.asInstanceOf[js.Any])
-    if (altField != null) __obj.updateDynamic("altField")(altField.asInstanceOf[js.Any])
-    if (!js.isUndefined(altOnChange)) __obj.updateDynamic("altOnChange")(altOnChange.get.asInstanceOf[js.Any])
-    if (altProperties != null) __obj.updateDynamic("altProperties")(altProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen.get.asInstanceOf[js.Any])
-    if (buttonClass != null) __obj.updateDynamic("buttonClass")(buttonClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonColorize)) __obj.updateDynamic("buttonColorize")(buttonColorize.get.asInstanceOf[js.Any])
-    if (buttonImage != null) __obj.updateDynamic("buttonImage")(buttonImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonImageOnly)) __obj.updateDynamic("buttonImageOnly")(buttonImageOnly.get.asInstanceOf[js.Any])
-    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnOutside)) __obj.updateDynamic("closeOnOutside")(closeOnOutside.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorFormat != null) __obj.updateDynamic("colorFormat")(colorFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hsv)) __obj.updateDynamic("hsv")(hsv.get.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineFrame)) __obj.updateDynamic("inlineFrame")(inlineFrame.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
-    if (!js.isUndefined(okOnEnter)) __obj.updateDynamic("okOnEnter")(okOnEnter.get.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (!js.isUndefined(revert)) __obj.updateDynamic("revert")(revert.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rgb)) __obj.updateDynamic("rgb")(rgb.get.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (showAnim != null) __obj.updateDynamic("showAnim")(showAnim.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancelButton)) __obj.updateDynamic("showCancelButton")(showCancelButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNoneButton)) __obj.updateDynamic("showNoneButton")(showNoneButton.get.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (showOptions != null) __obj.updateDynamic("showOptions")(showOptions.asInstanceOf[js.Any])
-    if (swatches != null) __obj.updateDynamic("swatches")(swatches.asInstanceOf[js.Any])
-    if (!js.isUndefined(swatchesWidth)) __obj.updateDynamic("swatchesWidth")(swatchesWidth.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryColorpickerOptions]
   }
+  @scala.inline
+  implicit class JQueryColorpickerOptionsOps[Self <: JQueryColorpickerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: Boolean): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def setAltAlpha(value: Boolean): Self = this.set("altAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltAlpha: Self = this.set("altAlpha", js.undefined)
+    @scala.inline
+    def setAltField(value: String): Self = this.set("altField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltField: Self = this.set("altField", js.undefined)
+    @scala.inline
+    def setAltOnChange(value: Boolean): Self = this.set("altOnChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltOnChange: Self = this.set("altOnChange", js.undefined)
+    @scala.inline
+    def setAltProperties(value: String): Self = this.set("altProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltProperties: Self = this.set("altProperties", js.undefined)
+    @scala.inline
+    def setAutoOpen(value: Boolean): Self = this.set("autoOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoOpen: Self = this.set("autoOpen", js.undefined)
+    @scala.inline
+    def setButtonClass(value: String): Self = this.set("buttonClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonClass: Self = this.set("buttonClass", js.undefined)
+    @scala.inline
+    def setButtonColorize(value: Boolean): Self = this.set("buttonColorize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonColorize: Self = this.set("buttonColorize", js.undefined)
+    @scala.inline
+    def setButtonImage(value: String): Self = this.set("buttonImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonImage: Self = this.set("buttonImage", js.undefined)
+    @scala.inline
+    def setButtonImageOnly(value: Boolean): Self = this.set("buttonImageOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonImageOnly: Self = this.set("buttonImageOnly", js.undefined)
+    @scala.inline
+    def setButtonText(value: String): Self = this.set("buttonText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonText: Self = this.set("buttonText", js.undefined)
+    @scala.inline
+    def setCancel(value: js.Function): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setClose(value: js.Function): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setCloseOnEscape(value: Boolean): Self = this.set("closeOnEscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnEscape: Self = this.set("closeOnEscape", js.undefined)
+    @scala.inline
+    def setCloseOnOutside(value: Boolean): Self = this.set("closeOnOutside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnOutside: Self = this.set("closeOnOutside", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorFormat(value: String): Self = this.set("colorFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorFormat: Self = this.set("colorFormat", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setHsv(value: Boolean): Self = this.set("hsv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsv: Self = this.set("hsv", js.undefined)
+    @scala.inline
+    def setInit(value: js.Function): Self = this.set("init", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setInlineFrame(value: Boolean): Self = this.set("inlineFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineFrame: Self = this.set("inlineFrame", js.undefined)
+    @scala.inline
+    def setLayout(value: StringDictionary[js.Array[Double]]): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setLimit(value: String): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOk(value: js.Function): Self = this.set("ok", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOk: Self = this.set("ok", js.undefined)
+    @scala.inline
+    def setOkOnEnter(value: Boolean): Self = this.set("okOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOkOnEnter: Self = this.set("okOnEnter", js.undefined)
+    @scala.inline
+    def setOpen(value: js.Function): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPart(value: js.Any): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setParts(value: js.Any): Self = this.set("parts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParts: Self = this.set("parts", js.undefined)
+    @scala.inline
+    def setRegional(value: String): Self = this.set("regional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegional: Self = this.set("regional", js.undefined)
+    @scala.inline
+    def setRevert(value: Boolean): Self = this.set("revert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevert: Self = this.set("revert", js.undefined)
+    @scala.inline
+    def setRgb(value: Boolean): Self = this.set("rgb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRgb: Self = this.set("rgb", js.undefined)
+    @scala.inline
+    def setSelect(value: js.Function): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelect: Self = this.set("select", js.undefined)
+    @scala.inline
+    def setShowAnim(value: String): Self = this.set("showAnim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAnim: Self = this.set("showAnim", js.undefined)
+    @scala.inline
+    def setShowCancelButton(value: Boolean): Self = this.set("showCancelButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCancelButton: Self = this.set("showCancelButton", js.undefined)
+    @scala.inline
+    def setShowCloseButton(value: Boolean): Self = this.set("showCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCloseButton: Self = this.set("showCloseButton", js.undefined)
+    @scala.inline
+    def setShowNoneButton(value: Boolean): Self = this.set("showNoneButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNoneButton: Self = this.set("showNoneButton", js.undefined)
+    @scala.inline
+    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    @scala.inline
+    def setShowOptions(value: js.Any): Self = this.set("showOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOptions: Self = this.set("showOptions", js.undefined)
+    @scala.inline
+    def setSwatches(value: js.Any): Self = this.set("swatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwatches: Self = this.set("swatches", js.undefined)
+    @scala.inline
+    def setSwatchesWidth(value: Double): Self = this.set("swatchesWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwatchesWidth: Self = this.set("swatchesWidth", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

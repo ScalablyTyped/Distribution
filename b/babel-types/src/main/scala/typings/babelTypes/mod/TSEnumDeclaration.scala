@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSEnumDeclaration
   extends Node
      with Declaration
      with Statement {
-  var const: Boolean | Null
-  var declare: Boolean | Null
-  var id: Identifier_
-  var initializer: Expression | Null
-  var members: js.Array[TSEnumMember]
+  var const: Boolean | Null = js.native
+  var declare: Boolean | Null = js.native
+  var id: Identifier_ = js.native
+  var initializer: Expression | Null = js.native
+  var members: js.Array[TSEnumMember] = js.native
   @JSName("type")
-  var type_TSEnumDeclaration: typings.babelTypes.babelTypesStrings.TSEnumDeclaration
+  var type_TSEnumDeclaration: typings.babelTypes.babelTypesStrings.TSEnumDeclaration = js.native
 }
 
 @JSImport("babel-types", "TSEnumDeclaration")

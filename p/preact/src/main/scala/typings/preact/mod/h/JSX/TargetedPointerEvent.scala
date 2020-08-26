@@ -35,7 +35,7 @@ trait TargetedPointerEvent[Target /* <: EventTarget */] extends js.Object {
   @JSName("initEvent")
   var initEvent_Original: js.Function1[/* type */ String, Unit] = js.native
   @JSName("initMouseEvent")
-  var initMouseEvent_Original: js.Function15[
+  var initMouseEvent_Original: js.Function14[
     /* typeArg */ String, 
     /* canBubbleArg */ Boolean, 
     /* cancelableArg */ Boolean, 
@@ -50,7 +50,6 @@ trait TargetedPointerEvent[Target /* <: EventTarget */] extends js.Object {
     /* shiftKeyArg */ Boolean, 
     /* metaKeyArg */ Boolean, 
     /* buttonArg */ Double, 
-    /* relatedTargetArg */ EventTarget, 
     Unit
   ] = js.native
   var isPrimary: Boolean = js.native
@@ -67,24 +66,24 @@ trait TargetedPointerEvent[Target /* <: EventTarget */] extends js.Object {
   var pressure: Double = js.native
   @JSName("preventDefault")
   var preventDefault_Original: js.Function0[Unit] = js.native
-  var relatedTarget: js.UndefOr[EventTarget] = js.native
+  var relatedTarget: js.UndefOr[EventTarget | Null] = js.native
   var returnValue: Boolean = js.native
   var screenX: Double = js.native
   var screenY: Double = js.native
   var shiftKey: Boolean = js.native
-  var srcElement: js.UndefOr[EventTarget] = js.native
+  var srcElement: js.UndefOr[EventTarget | Null] = js.native
   @JSName("stopImmediatePropagation")
   var stopImmediatePropagation_Original: js.Function0[Unit] = js.native
   @JSName("stopPropagation")
   var stopPropagation_Original: js.Function0[Unit] = js.native
   var tangentialPressure: Double = js.native
-  var target: js.UndefOr[EventTarget] = js.native
+  var target: js.UndefOr[EventTarget | Null] = js.native
   var tiltX: Double = js.native
   var tiltY: Double = js.native
   var timeStamp: Double = js.native
   var twist: Double = js.native
   var `type`: String = js.native
-  var view: js.UndefOr[Window] = js.native
+  var view: js.UndefOr[Window | Null] = js.native
   var which: Double = js.native
   var width: Double = js.native
   var x: Double = js.native
@@ -106,8 +105,7 @@ trait TargetedPointerEvent[Target /* <: EventTarget */] extends js.Object {
     altKeyArg: Boolean,
     shiftKeyArg: Boolean,
     metaKeyArg: Boolean,
-    buttonArg: Double,
-    relatedTargetArg: EventTarget
+    buttonArg: Double
   ): Unit = js.native
   def preventDefault(): Unit = js.native
   def stopImmediatePropagation(): Unit = js.native

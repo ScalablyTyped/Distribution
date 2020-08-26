@@ -115,62 +115,126 @@ trait CreateMultipartUploadRequest extends js.Object {
 
 object CreateMultipartUploadRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Key: ObjectKey,
-    ACL: ObjectCannedACL = null,
-    CacheControl: CacheControl = null,
-    ContentDisposition: ContentDisposition = null,
-    ContentEncoding: ContentEncoding = null,
-    ContentLanguage: ContentLanguage = null,
-    ContentType: ContentType = null,
-    Expires: Expires = null,
-    GrantFullControl: GrantFullControl = null,
-    GrantRead: GrantRead = null,
-    GrantReadACP: GrantReadACP = null,
-    GrantWriteACP: GrantWriteACP = null,
-    Metadata: Metadata = null,
-    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = null,
-    ObjectLockMode: ObjectLockMode = null,
-    ObjectLockRetainUntilDate: ObjectLockRetainUntilDate = null,
-    RequestPayer: RequestPayer = null,
-    SSECustomerAlgorithm: SSECustomerAlgorithm = null,
-    SSECustomerKey: SSECustomerKey = null,
-    SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
-    SSEKMSEncryptionContext: SSEKMSEncryptionContext = null,
-    SSEKMSKeyId: SSEKMSKeyId = null,
-    ServerSideEncryption: ServerSideEncryption = null,
-    StorageClass: StorageClass = null,
-    Tagging: TaggingHeader = null,
-    WebsiteRedirectLocation: WebsiteRedirectLocation = null
-  ): CreateMultipartUploadRequest = {
+  def apply(Bucket: BucketName, Key: ObjectKey): CreateMultipartUploadRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (ACL != null) __obj.updateDynamic("ACL")(ACL.asInstanceOf[js.Any])
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
-    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
-    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
-    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
-    if (GrantFullControl != null) __obj.updateDynamic("GrantFullControl")(GrantFullControl.asInstanceOf[js.Any])
-    if (GrantRead != null) __obj.updateDynamic("GrantRead")(GrantRead.asInstanceOf[js.Any])
-    if (GrantReadACP != null) __obj.updateDynamic("GrantReadACP")(GrantReadACP.asInstanceOf[js.Any])
-    if (GrantWriteACP != null) __obj.updateDynamic("GrantWriteACP")(GrantWriteACP.asInstanceOf[js.Any])
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (ObjectLockLegalHoldStatus != null) __obj.updateDynamic("ObjectLockLegalHoldStatus")(ObjectLockLegalHoldStatus.asInstanceOf[js.Any])
-    if (ObjectLockMode != null) __obj.updateDynamic("ObjectLockMode")(ObjectLockMode.asInstanceOf[js.Any])
-    if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
-    if (SSECustomerKey != null) __obj.updateDynamic("SSECustomerKey")(SSECustomerKey.asInstanceOf[js.Any])
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
-    if (SSEKMSEncryptionContext != null) __obj.updateDynamic("SSEKMSEncryptionContext")(SSEKMSEncryptionContext.asInstanceOf[js.Any])
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
-    if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (Tagging != null) __obj.updateDynamic("Tagging")(Tagging.asInstanceOf[js.Any])
-    if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMultipartUploadRequest]
   }
+  @scala.inline
+  implicit class CreateMultipartUploadRequestOps[Self <: CreateMultipartUploadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setACL(value: ObjectCannedACL): Self = this.set("ACL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteACL: Self = this.set("ACL", js.undefined)
+    @scala.inline
+    def setCacheControl(value: CacheControl): Self = this.set("CacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("CacheControl", js.undefined)
+    @scala.inline
+    def setContentDisposition(value: ContentDisposition): Self = this.set("ContentDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDisposition: Self = this.set("ContentDisposition", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: ContentEncoding): Self = this.set("ContentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("ContentEncoding", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: ContentLanguage): Self = this.set("ContentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("ContentLanguage", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("Expires", js.undefined)
+    @scala.inline
+    def setGrantFullControl(value: GrantFullControl): Self = this.set("GrantFullControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantFullControl: Self = this.set("GrantFullControl", js.undefined)
+    @scala.inline
+    def setGrantRead(value: GrantRead): Self = this.set("GrantRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantRead: Self = this.set("GrantRead", js.undefined)
+    @scala.inline
+    def setGrantReadACP(value: GrantReadACP): Self = this.set("GrantReadACP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantReadACP: Self = this.set("GrantReadACP", js.undefined)
+    @scala.inline
+    def setGrantWriteACP(value: GrantWriteACP): Self = this.set("GrantWriteACP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantWriteACP: Self = this.set("GrantWriteACP", js.undefined)
+    @scala.inline
+    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    @scala.inline
+    def setObjectLockLegalHoldStatus(value: ObjectLockLegalHoldStatus): Self = this.set("ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockLegalHoldStatus: Self = this.set("ObjectLockLegalHoldStatus", js.undefined)
+    @scala.inline
+    def setObjectLockMode(value: ObjectLockMode): Self = this.set("ObjectLockMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockMode: Self = this.set("ObjectLockMode", js.undefined)
+    @scala.inline
+    def setObjectLockRetainUntilDate(value: ObjectLockRetainUntilDate): Self = this.set("ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockRetainUntilDate: Self = this.set("ObjectLockRetainUntilDate", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    @scala.inline
+    def setSSECustomerKey(value: SSECustomerKey): Self = this.set("SSECustomerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKey: Self = this.set("SSECustomerKey", js.undefined)
+    @scala.inline
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    @scala.inline
+    def setSSEKMSEncryptionContext(value: SSEKMSEncryptionContext): Self = this.set("SSEKMSEncryptionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEKMSEncryptionContext: Self = this.set("SSEKMSEncryptionContext", js.undefined)
+    @scala.inline
+    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = this.set("SSEKMSKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEKMSKeyId: Self = this.set("SSEKMSKeyId", js.undefined)
+    @scala.inline
+    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("ServerSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryption: Self = this.set("ServerSideEncryption", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    @scala.inline
+    def setTagging(value: TaggingHeader): Self = this.set("Tagging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagging: Self = this.set("Tagging", js.undefined)
+    @scala.inline
+    def setWebsiteRedirectLocation(value: WebsiteRedirectLocation): Self = this.set("WebsiteRedirectLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteRedirectLocation: Self = this.set("WebsiteRedirectLocation", js.undefined)
+  }
+  
 }
 

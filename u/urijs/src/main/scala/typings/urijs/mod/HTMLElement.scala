@@ -6,5 +6,6 @@ import scala.scalajs.js.annotation._
 
 // Compatability with node.js
 // tslint:disable-next-line:no-empty-interface
+@js.native
 trait HTMLElement extends js.Object
 

@@ -18,11 +18,32 @@ trait LogSetup extends js.Object {
 
 object LogSetup {
   @scala.inline
-  def apply(enabled: js.UndefOr[BoxedBoolean] = js.undefined, types: LogTypes = null): LogSetup = {
+  def apply(): LogSetup = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogSetup]
   }
+  @scala.inline
+  implicit class LogSetupOps[Self <: LogSetup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: BoxedBoolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: LogType*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: LogTypes): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

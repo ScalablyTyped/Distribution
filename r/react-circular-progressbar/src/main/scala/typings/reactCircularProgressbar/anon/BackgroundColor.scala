@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackgroundColor extends js.Object {
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var pathColor: js.UndefOr[String] = js.undefined
-  var pathTransition: js.UndefOr[String] = js.undefined
-  var pathTransitionDuration: js.UndefOr[Double] = js.undefined
-  var rotation: js.UndefOr[Double] = js.undefined
-  var strokeLinecap: js.UndefOr[js.Any] = js.undefined
-  var textColor: js.UndefOr[String] = js.undefined
-  var textSize: js.UndefOr[String | Double] = js.undefined
-  var trailColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
+  var pathColor: js.UndefOr[String] = js.native
+  var pathTransition: js.UndefOr[String] = js.native
+  var pathTransitionDuration: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.native
+  var strokeLinecap: js.UndefOr[js.Any] = js.native
+  var textColor: js.UndefOr[String] = js.native
+  var textSize: js.UndefOr[String | Double] = js.native
+  var trailColor: js.UndefOr[String] = js.native
 }
 
 object BackgroundColor {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    pathColor: String = null,
-    pathTransition: String = null,
-    pathTransitionDuration: js.UndefOr[Double] = js.undefined,
-    rotation: js.UndefOr[Double] = js.undefined,
-    strokeLinecap: js.Any = null,
-    textColor: String = null,
-    textSize: String | Double = null,
-    trailColor: String = null
-  ): BackgroundColor = {
+  def apply(): BackgroundColor = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (pathColor != null) __obj.updateDynamic("pathColor")(pathColor.asInstanceOf[js.Any])
-    if (pathTransition != null) __obj.updateDynamic("pathTransition")(pathTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(pathTransitionDuration)) __obj.updateDynamic("pathTransitionDuration")(pathTransitionDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
-    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundColor]
   }
+  @scala.inline
+  implicit class BackgroundColorOps[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setPathColor(value: String): Self = this.set("pathColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathColor: Self = this.set("pathColor", js.undefined)
+    @scala.inline
+    def setPathTransition(value: String): Self = this.set("pathTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathTransition: Self = this.set("pathTransition", js.undefined)
+    @scala.inline
+    def setPathTransitionDuration(value: Double): Self = this.set("pathTransitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathTransitionDuration: Self = this.set("pathTransitionDuration", js.undefined)
+    @scala.inline
+    def setRotation(value: Double): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setStrokeLinecap(value: js.Any): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    @scala.inline
+    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    @scala.inline
+    def setTextSize(value: String | Double): Self = this.set("textSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextSize: Self = this.set("textSize", js.undefined)
+    @scala.inline
+    def setTrailColor(value: String): Self = this.set("trailColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrailColor: Self = this.set("trailColor", js.undefined)
+  }
+  
 }
 

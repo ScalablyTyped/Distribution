@@ -4,27 +4,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountCreateRequest extends js.Object {
-  var contact: js.UndefOr[js.Array[String]] = js.undefined
-  var externalAccountBinding: js.UndefOr[js.Object] = js.undefined
-  var onlyReturnExisting: js.UndefOr[Boolean] = js.undefined
-  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
+  var contact: js.UndefOr[js.Array[String]] = js.native
+  var externalAccountBinding: js.UndefOr[js.Object] = js.native
+  var onlyReturnExisting: js.UndefOr[Boolean] = js.native
+  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.native
 }
 
 object AccountCreateRequest {
   @scala.inline
-  def apply(
-    contact: js.Array[String] = null,
-    externalAccountBinding: js.Object = null,
-    onlyReturnExisting: js.UndefOr[Boolean] = js.undefined,
-    termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
-  ): AccountCreateRequest = {
+  def apply(): AccountCreateRequest = {
     val __obj = js.Dynamic.literal()
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (externalAccountBinding != null) __obj.updateDynamic("externalAccountBinding")(externalAccountBinding.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyReturnExisting)) __obj.updateDynamic("onlyReturnExisting")(onlyReturnExisting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(termsOfServiceAgreed)) __obj.updateDynamic("termsOfServiceAgreed")(termsOfServiceAgreed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountCreateRequest]
   }
+  @scala.inline
+  implicit class AccountCreateRequestOps[Self <: AccountCreateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactVarargs(value: String*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[String]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+    @scala.inline
+    def setExternalAccountBinding(value: js.Object): Self = this.set("externalAccountBinding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalAccountBinding: Self = this.set("externalAccountBinding", js.undefined)
+    @scala.inline
+    def setOnlyReturnExisting(value: Boolean): Self = this.set("onlyReturnExisting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyReturnExisting: Self = this.set("onlyReturnExisting", js.undefined)
+    @scala.inline
+    def setTermsOfServiceAgreed(value: Boolean): Self = this.set("termsOfServiceAgreed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTermsOfServiceAgreed: Self = this.set("termsOfServiceAgreed", js.undefined)
+  }
+  
 }
 

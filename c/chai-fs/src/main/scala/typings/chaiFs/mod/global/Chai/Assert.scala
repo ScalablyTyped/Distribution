@@ -41,6 +41,7 @@ trait Assert extends js.Object {
   def directorySubDirs(path: String, array: js.Array[_], msg: String): Unit = js.native
   // Dirname
   def dirname(path: String): Unit = js.native
+  def dirname(path: String, name: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
   def dirname(path: String, name: String): Unit = js.native
   def dirname(path: String, name: String, msg: String): Unit = js.native
   // Еxtname

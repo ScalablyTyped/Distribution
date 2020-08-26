@@ -25,11 +25,30 @@ trait SchemaConsolidationStrategy extends js.Object {
 
 object SchemaConsolidationStrategy {
   @scala.inline
-  def apply(legacy: SchemaLegacy = null, none: SchemaNoConsolidation = null): SchemaConsolidationStrategy = {
+  def apply(): SchemaConsolidationStrategy = {
     val __obj = js.Dynamic.literal()
-    if (legacy != null) __obj.updateDynamic("legacy")(legacy.asInstanceOf[js.Any])
-    if (none != null) __obj.updateDynamic("none")(none.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConsolidationStrategy]
   }
+  @scala.inline
+  implicit class SchemaConsolidationStrategyOps[Self <: SchemaConsolidationStrategy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLegacy(value: SchemaLegacy): Self = this.set("legacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegacy: Self = this.set("legacy", js.undefined)
+    @scala.inline
+    def setNone(value: SchemaNoConsolidation): Self = this.set("none", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNone: Self = this.set("none", js.undefined)
+  }
+  
 }
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stat-mode" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stat-mode" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

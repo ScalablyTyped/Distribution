@@ -12,7 +12,7 @@ XMPP client for JavaScript
 | Keywords           | client, XMPP, C2S, WebSocket, BOSH |
 | # releases         | 1 |
 | # dependents       | 69 |
-| # downloads        | 460298 |
+| # downloads        | 474519 |
 | # stars            | 4 |
 
 ## Links

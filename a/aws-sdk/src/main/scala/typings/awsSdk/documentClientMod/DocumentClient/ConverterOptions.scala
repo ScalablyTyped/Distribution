@@ -21,14 +21,30 @@ trait ConverterOptions extends js.Object {
 
 object ConverterOptions {
   @scala.inline
-  def apply(
-    convertEmptyValues: js.UndefOr[Boolean] = js.undefined,
-    wrapNumbers: js.UndefOr[Boolean] = js.undefined
-  ): ConverterOptions = {
+  def apply(): ConverterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convertEmptyValues)) __obj.updateDynamic("convertEmptyValues")(convertEmptyValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapNumbers)) __obj.updateDynamic("wrapNumbers")(wrapNumbers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConverterOptions]
   }
+  @scala.inline
+  implicit class ConverterOptionsOps[Self <: ConverterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvertEmptyValues(value: Boolean): Self = this.set("convertEmptyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConvertEmptyValues: Self = this.set("convertEmptyValues", js.undefined)
+    @scala.inline
+    def setWrapNumbers(value: Boolean): Self = this.set("wrapNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapNumbers: Self = this.set("wrapNumbers", js.undefined)
+  }
+  
 }
 

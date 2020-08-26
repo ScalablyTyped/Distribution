@@ -69,7 +69,30 @@ object batcherMod extends js.Object {
       * "current" arguments match the "batch" arguments.
       */
     def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T]): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: js.UndefOr[scala.Nothing],
+      removeOldLimit: js.UndefOr[scala.Nothing],
+      updateLimit: Double
+    ): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: js.UndefOr[scala.Nothing],
+      removeOldLimit: Double
+    ): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: js.UndefOr[scala.Nothing],
+      removeOldLimit: Double,
+      updateLimit: Double
+    ): Unit = js.native
     def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Double): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: Double,
+      removeOldLimit: js.UndefOr[scala.Nothing],
+      updateLimit: Double
+    ): Unit = js.native
     def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Double, removeOldLimit: Double): Unit = js.native
     def removeOldAddNew(
       callback: js.Function1[/* repeated */ js.Any, T],

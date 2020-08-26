@@ -28,8 +28,6 @@ class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protec
   def UNSAFE_componentWillReceiveProps_MBaseSelectedItemsList(newProps: P): Unit = js.native
   @JSName("UNSAFE_componentWillUpdate")
   def UNSAFE_componentWillUpdate_MBaseSelectedItemsList(newProps: P, newState: IBaseSelectedItemsListState[_]): Unit = js.native
-  /* CompleteClass */
-  override def addItems(items: js.Array[T]): Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MBaseSelectedItemsList(): Unit = js.native
   /* protected */ def copyItems(items: js.Array[T]): Unit = js.native

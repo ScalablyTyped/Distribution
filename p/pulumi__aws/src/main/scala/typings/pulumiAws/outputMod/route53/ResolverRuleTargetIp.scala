@@ -18,10 +18,28 @@ trait ResolverRuleTargetIp extends js.Object {
 
 object ResolverRuleTargetIp {
   @scala.inline
-  def apply(ip: String, port: js.UndefOr[Double] = js.undefined): ResolverRuleTargetIp = {
+  def apply(ip: String): ResolverRuleTargetIp = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverRuleTargetIp]
   }
+  @scala.inline
+  implicit class ResolverRuleTargetIpOps[Self <: ResolverRuleTargetIp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+  }
+  
 }
 

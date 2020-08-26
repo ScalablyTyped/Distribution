@@ -29,12 +29,33 @@ object MergeBranchesByFastForwardInput {
   def apply(
     destinationCommitSpecifier: CommitName,
     repositoryName: RepositoryName,
-    sourceCommitSpecifier: CommitName,
-    targetBranch: BranchName = null
+    sourceCommitSpecifier: CommitName
   ): MergeBranchesByFastForwardInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any], sourceCommitSpecifier = sourceCommitSpecifier.asInstanceOf[js.Any])
-    if (targetBranch != null) __obj.updateDynamic("targetBranch")(targetBranch.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeBranchesByFastForwardInput]
   }
+  @scala.inline
+  implicit class MergeBranchesByFastForwardInputOps[Self <: MergeBranchesByFastForwardInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCommitSpecifier(value: CommitName): Self = this.set("destinationCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceCommitSpecifier(value: CommitName): Self = this.set("sourceCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetBranch(value: BranchName): Self = this.set("targetBranch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetBranch: Self = this.set("targetBranch", js.undefined)
+  }
+  
 }
 

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Graphics.Printing.PrintTaskCompletedEventArgs")
 @js.native
 abstract class PrintTaskCompletedEventArgs ()
-  extends typings.winrtUwp.Windows.Graphics.Printing.PrintTaskCompletedEventArgs {
-  /** Gets the completion status of the print task. */
-  /* CompleteClass */
-  override var completion: typings.winrtUwp.Windows.Graphics.Printing.PrintTaskCompletion = js.native
-}
+  extends typings.winrtUwp.Windows.Graphics.Printing.PrintTaskCompletedEventArgs
 

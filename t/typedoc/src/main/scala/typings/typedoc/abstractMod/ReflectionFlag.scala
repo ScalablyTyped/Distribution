@@ -51,6 +51,9 @@ object ReflectionFlag extends js.Object {
   sealed trait Public extends ReflectionFlag
   
   @js.native
+  sealed trait Readonly extends ReflectionFlag
+  
+  @js.native
   sealed trait Rest extends ReflectionFlag
   
   @js.native
@@ -96,6 +99,9 @@ object ReflectionFlag extends js.Object {
   
   /* 4 */ @js.native
   object Public extends TopLevel[Public with Double]
+  
+  /* 16384 */ @js.native
+  object Readonly extends TopLevel[Readonly with Double]
   
   /* 512 */ @js.native
   object Rest extends TopLevel[Rest with Double]

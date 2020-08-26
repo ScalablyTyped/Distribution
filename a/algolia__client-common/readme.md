@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-common
 
-Typings are for version 4.3.0
+Typings are for version 4.3.1
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 4.3.0
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-common |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 28 |
 | # dependents       | 7 |
-| # downloads        | 65574 |
+| # downloads        | 1742794 |
 | # stars            | 0 |
 
 ## Links

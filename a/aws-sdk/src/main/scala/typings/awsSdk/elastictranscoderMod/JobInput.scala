@@ -50,30 +50,62 @@ trait JobInput extends js.Object {
 
 object JobInput {
   @scala.inline
-  def apply(
-    AspectRatio: AspectRatio = null,
-    Container: JobContainer = null,
-    DetectedProperties: DetectedProperties = null,
-    Encryption: Encryption = null,
-    FrameRate: FrameRate = null,
-    InputCaptions: InputCaptions = null,
-    Interlaced: Interlaced = null,
-    Key: LongKey = null,
-    Resolution: Resolution = null,
-    TimeSpan: TimeSpan = null
-  ): JobInput = {
+  def apply(): JobInput = {
     val __obj = js.Dynamic.literal()
-    if (AspectRatio != null) __obj.updateDynamic("AspectRatio")(AspectRatio.asInstanceOf[js.Any])
-    if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
-    if (DetectedProperties != null) __obj.updateDynamic("DetectedProperties")(DetectedProperties.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate.asInstanceOf[js.Any])
-    if (InputCaptions != null) __obj.updateDynamic("InputCaptions")(InputCaptions.asInstanceOf[js.Any])
-    if (Interlaced != null) __obj.updateDynamic("Interlaced")(Interlaced.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (Resolution != null) __obj.updateDynamic("Resolution")(Resolution.asInstanceOf[js.Any])
-    if (TimeSpan != null) __obj.updateDynamic("TimeSpan")(TimeSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobInput]
   }
+  @scala.inline
+  implicit class JobInputOps[Self <: JobInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatio(value: AspectRatio): Self = this.set("AspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatio: Self = this.set("AspectRatio", js.undefined)
+    @scala.inline
+    def setContainer(value: JobContainer): Self = this.set("Container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("Container", js.undefined)
+    @scala.inline
+    def setDetectedProperties(value: DetectedProperties): Self = this.set("DetectedProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectedProperties: Self = this.set("DetectedProperties", js.undefined)
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setFrameRate(value: FrameRate): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    @scala.inline
+    def setInputCaptions(value: InputCaptions): Self = this.set("InputCaptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputCaptions: Self = this.set("InputCaptions", js.undefined)
+    @scala.inline
+    def setInterlaced(value: Interlaced): Self = this.set("Interlaced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterlaced: Self = this.set("Interlaced", js.undefined)
+    @scala.inline
+    def setKey(value: LongKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setResolution(value: Resolution): Self = this.set("Resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("Resolution", js.undefined)
+    @scala.inline
+    def setTimeSpan(value: TimeSpan): Self = this.set("TimeSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeSpan: Self = this.set("TimeSpan", js.undefined)
+  }
+  
 }
 

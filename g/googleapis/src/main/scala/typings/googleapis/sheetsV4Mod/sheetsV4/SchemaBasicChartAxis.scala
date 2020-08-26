@@ -32,18 +32,38 @@ trait SchemaBasicChartAxis extends js.Object {
 
 object SchemaBasicChartAxis {
   @scala.inline
-  def apply(
-    format: SchemaTextFormat = null,
-    position: String = null,
-    title: String = null,
-    titleTextPosition: SchemaTextPosition = null
-  ): SchemaBasicChartAxis = {
+  def apply(): SchemaBasicChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleTextPosition != null) __obj.updateDynamic("titleTextPosition")(titleTextPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicChartAxis]
   }
+  @scala.inline
+  implicit class SchemaBasicChartAxisOps[Self <: SchemaBasicChartAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: SchemaTextFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleTextPosition(value: SchemaTextPosition): Self = this.set("titleTextPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextPosition: Self = this.set("titleTextPosition", js.undefined)
+  }
+  
 }
 

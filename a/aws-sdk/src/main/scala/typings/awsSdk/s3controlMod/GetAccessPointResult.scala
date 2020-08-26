@@ -31,22 +31,46 @@ trait GetAccessPointResult extends js.Object {
 
 object GetAccessPointResult {
   @scala.inline
-  def apply(
-    Bucket: BucketName = null,
-    CreationDate: CreationDate = null,
-    Name: AccessPointName = null,
-    NetworkOrigin: NetworkOrigin = null,
-    PublicAccessBlockConfiguration: PublicAccessBlockConfiguration = null,
-    VpcConfiguration: VpcConfiguration = null
-  ): GetAccessPointResult = {
+  def apply(): GetAccessPointResult = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NetworkOrigin != null) __obj.updateDynamic("NetworkOrigin")(NetworkOrigin.asInstanceOf[js.Any])
-    if (PublicAccessBlockConfiguration != null) __obj.updateDynamic("PublicAccessBlockConfiguration")(PublicAccessBlockConfiguration.asInstanceOf[js.Any])
-    if (VpcConfiguration != null) __obj.updateDynamic("VpcConfiguration")(VpcConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessPointResult]
   }
+  @scala.inline
+  implicit class GetAccessPointResultOps[Self <: GetAccessPointResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setCreationDate(value: CreationDate): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setName(value: AccessPointName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNetworkOrigin(value: NetworkOrigin): Self = this.set("NetworkOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkOrigin: Self = this.set("NetworkOrigin", js.undefined)
+    @scala.inline
+    def setPublicAccessBlockConfiguration(value: PublicAccessBlockConfiguration): Self = this.set("PublicAccessBlockConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicAccessBlockConfiguration: Self = this.set("PublicAccessBlockConfiguration", js.undefined)
+    @scala.inline
+    def setVpcConfiguration(value: VpcConfiguration): Self = this.set("VpcConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfiguration: Self = this.set("VpcConfiguration", js.undefined)
+  }
+  
 }
 

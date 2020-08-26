@@ -12,7 +12,7 @@ Generates a service worker to cache your local App Shell resources.
 | Keywords           | caching, offline, precaching, service-worker, serviceworker, appshell, pwa |
 | # releases         | 2 |
 | # dependents       | 56 |
-| # downloads        | 33795031 |
+| # downloads        | 32810318 |
 | # stars            | 19 |
 
 ## Links

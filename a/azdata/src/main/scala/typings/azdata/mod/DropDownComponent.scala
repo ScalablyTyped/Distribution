@@ -18,6 +18,11 @@ trait DropDownComponent extends Component {
   var value: js.UndefOr[String | CategoryValue] = js.native
   var values: js.UndefOr[js.Array[CategoryValue | String]] = js.native
   def onValueChanged(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onValueChanged(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onValueChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onValueChanged(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

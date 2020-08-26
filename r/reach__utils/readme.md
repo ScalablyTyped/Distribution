@@ -11,8 +11,8 @@ Internal, shared utilities for Reach UI.
 | Full name          | @reach/utils |
 | Keywords           | - |
 | # releases         | 18 |
-| # dependents       | 17 |
-| # downloads        | 1729042 |
+| # dependents       | 18 |
+| # downloads        | 1784965 |
 | # stars            | 0 |
 
 ## Links

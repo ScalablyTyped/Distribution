@@ -15,10 +15,20 @@ class ReadVarExpr protected ()
     name: typings.angularCompiler.outputAstMod.BuiltinVar,
     `type`: typings.angularCompiler.outputAstMod.Type
   ) = this()
+  def this(
+    name: String,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
   def this(name: String, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
   def this(
     name: String,
     `type`: typings.angularCompiler.outputAstMod.Type,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: typings.angularCompiler.outputAstMod.BuiltinVar,
+    `type`: js.UndefOr[scala.Nothing],
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

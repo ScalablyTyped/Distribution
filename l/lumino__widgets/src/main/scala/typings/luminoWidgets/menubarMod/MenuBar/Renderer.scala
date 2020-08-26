@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * #### Notes
   * Subclasses are free to reimplement rendering methods as needed.
   */
-@JSImport("@lumino/widgets/lib/menubar", "MenuBar.Renderer")
+@JSImport("@lumino/widgets/types/menubar", "MenuBar.Renderer")
 @js.native
 /**
   * Construct a new renderer.
@@ -59,15 +59,6 @@ class Renderer () extends IRenderer {
     * @returns A virtual element representing the item icon.
     */
   def renderIcon(data: IRenderData): VirtualElement = js.native
-  /**
-    * Render the virtual element for a menu bar item.
-    *
-    * @param data - The data to use for rendering the item.
-    *
-    * @returns A virtual element representing the item.
-    */
-  /* CompleteClass */
-  override def renderItem(data: IRenderData): VirtualElement = js.native
   /**
     * Render the label element for a menu item.
     *

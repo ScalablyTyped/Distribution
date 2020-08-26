@@ -30,18 +30,38 @@ trait SchemaStageSource extends js.Object {
 
 object SchemaStageSource {
   @scala.inline
-  def apply(
-    name: String = null,
-    originalTransformOrCollection: String = null,
-    sizeBytes: String = null,
-    userName: String = null
-  ): SchemaStageSource = {
+  def apply(): SchemaStageSource = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (originalTransformOrCollection != null) __obj.updateDynamic("originalTransformOrCollection")(originalTransformOrCollection.asInstanceOf[js.Any])
-    if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStageSource]
   }
+  @scala.inline
+  implicit class SchemaStageSourceOps[Self <: SchemaStageSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOriginalTransformOrCollection(value: String): Self = this.set("originalTransformOrCollection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalTransformOrCollection: Self = this.set("originalTransformOrCollection", js.undefined)
+    @scala.inline
+    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+    @scala.inline
+    def setUserName(value: String): Self = this.set("userName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("userName", js.undefined)
+  }
+  
 }
 

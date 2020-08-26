@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgLayoutManager
   extends /**
   * Option for JSONPDataSourceSettings
@@ -15,32 +16,32 @@ trait IgLayoutManager
     * Options specific to a border layout
     *
     */
-  var borderLayout: js.UndefOr[IgLayoutManagerBorderLayout] = js.undefined
+  var borderLayout: js.UndefOr[IgLayoutManagerBorderLayout] = js.native
   /**
     * Options specific to grid layout mode
     *
     */
-  var gridLayout: js.UndefOr[IgLayoutManagerGridLayout] = js.undefined
+  var gridLayout: js.UndefOr[IgLayoutManagerGridLayout] = js.native
   /**
     * Gets/Sets height of the layout container.
     *
     */
-  var height: js.UndefOr[String | Double] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
   /**
     * Event fired after items are resized.
     *                     Use ui.owner to get a reference to the layout manager performing resizing.
     */
-  var internalResized: js.UndefOr[InternalResizedEvent] = js.undefined
+  var internalResized: js.UndefOr[InternalResizedEvent] = js.native
   /**
     * Event fired before items are resized.
     *                     Use ui.owner to get a reference to the layout manager performing resizing.
     */
-  var internalResizing: js.UndefOr[InternalResizingEvent] = js.undefined
+  var internalResizing: js.UndefOr[InternalResizingEvent] = js.native
   /**
     * Number of items to render, this is only applicable to layouts: vertical and flow
     *
     */
-  var itemCount: js.UndefOr[Double] = js.undefined
+  var itemCount: js.UndefOr[Double] = js.native
   /**
     * Event fired after an item has been rendered in the container.
     *                     Function takes arguments evt and ui.
@@ -49,7 +50,7 @@ trait IgLayoutManager
     *                     Use ui.index to get a reference of the item's index, if the layout is flow or vertical
     *                     Use ui.item to get a reference to the rendered item
     */
-  var itemRendered: js.UndefOr[ItemRenderedEvent] = js.undefined
+  var itemRendered: js.UndefOr[ItemRenderedEvent] = js.native
   /**
     * Event fired before an item is rendered in the container.
     *                     Function takes arguments evt and ui.
@@ -58,7 +59,7 @@ trait IgLayoutManager
     *                     Use ui.index to get a reference of the item's index, if the layout is flow or vertical
     *                     Use ui.item to get a reference to the rendered item
     */
-  var itemRendering: js.UndefOr[ItemRenderingEvent] = js.undefined
+  var itemRendering: js.UndefOr[ItemRenderingEvent] = js.native
   /**
     * An array of item descriptions
     *                     this assumes the container is empty, and every item
@@ -69,7 +70,7 @@ trait IgLayoutManager
     *                     for example rowSpan/colSpan/colIndex/rowIndex are only applicable to gridlayout
     *
     */
-  var items: js.UndefOr[js.Array[IgLayoutManagerItem]] = js.undefined
+  var items: js.UndefOr[js.Array[IgLayoutManagerItem]] = js.native
   /**
     * Defines the layout type
     *                 grid Column type can be set with grid layout
@@ -86,52 +87,88 @@ trait IgLayoutManager
     * "column"
     * "vertical"
     */
-  var layoutMode: js.UndefOr[js.Any] = js.undefined
+  var layoutMode: js.UndefOr[js.Any] = js.native
   /**
     * Event fired after all items are rendered.
     *                     Function takes arguments evt and ui.
     *                     Use ui.owner to get reference to the igLayoutManager.
     */
-  var rendered: js.UndefOr[RenderedEvent] = js.undefined
+  var rendered: js.UndefOr[RenderedEvent] = js.native
   /**
     * Gets/Sets width of the layout container.
     *
     */
-  var width: js.UndefOr[String | Double] = js.undefined
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object IgLayoutManager {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    borderLayout: IgLayoutManagerBorderLayout = null,
-    gridLayout: IgLayoutManagerGridLayout = null,
-    height: String | Double = null,
-    internalResized: (/* event */ Event, /* ui */ InternalResizedEventUIParam) => Unit = null,
-    internalResizing: (/* event */ Event, /* ui */ InternalResizingEventUIParam) => Unit = null,
-    itemCount: js.UndefOr[Double] = js.undefined,
-    itemRendered: (/* event */ Event, /* ui */ ItemRenderedEventUIParam) => Unit = null,
-    itemRendering: (/* event */ Event, /* ui */ ItemRenderingEventUIParam) => Unit = null,
-    items: js.Array[IgLayoutManagerItem] = null,
-    layoutMode: js.Any = null,
-    rendered: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit = null,
-    width: String | Double = null
-  ): IgLayoutManager = {
+  def apply(): IgLayoutManager = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (borderLayout != null) __obj.updateDynamic("borderLayout")(borderLayout.asInstanceOf[js.Any])
-    if (gridLayout != null) __obj.updateDynamic("gridLayout")(gridLayout.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (internalResized != null) __obj.updateDynamic("internalResized")(js.Any.fromFunction2(internalResized))
-    if (internalResizing != null) __obj.updateDynamic("internalResizing")(js.Any.fromFunction2(internalResizing))
-    if (!js.isUndefined(itemCount)) __obj.updateDynamic("itemCount")(itemCount.get.asInstanceOf[js.Any])
-    if (itemRendered != null) __obj.updateDynamic("itemRendered")(js.Any.fromFunction2(itemRendered))
-    if (itemRendering != null) __obj.updateDynamic("itemRendering")(js.Any.fromFunction2(itemRendering))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2(rendered))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgLayoutManager]
   }
+  @scala.inline
+  implicit class IgLayoutManagerOps[Self <: IgLayoutManager] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderLayout(value: IgLayoutManagerBorderLayout): Self = this.set("borderLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderLayout: Self = this.set("borderLayout", js.undefined)
+    @scala.inline
+    def setGridLayout(value: IgLayoutManagerGridLayout): Self = this.set("gridLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridLayout: Self = this.set("gridLayout", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setInternalResized(value: (/* event */ Event, /* ui */ InternalResizedEventUIParam) => Unit): Self = this.set("internalResized", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInternalResized: Self = this.set("internalResized", js.undefined)
+    @scala.inline
+    def setInternalResizing(value: (/* event */ Event, /* ui */ InternalResizingEventUIParam) => Unit): Self = this.set("internalResizing", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteInternalResizing: Self = this.set("internalResizing", js.undefined)
+    @scala.inline
+    def setItemCount(value: Double): Self = this.set("itemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCount: Self = this.set("itemCount", js.undefined)
+    @scala.inline
+    def setItemRendered(value: (/* event */ Event, /* ui */ ItemRenderedEventUIParam) => Unit): Self = this.set("itemRendered", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemRendered: Self = this.set("itemRendered", js.undefined)
+    @scala.inline
+    def setItemRendering(value: (/* event */ Event, /* ui */ ItemRenderingEventUIParam) => Unit): Self = this.set("itemRendering", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemRendering: Self = this.set("itemRendering", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: IgLayoutManagerItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[IgLayoutManagerItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLayoutMode(value: js.Any): Self = this.set("layoutMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutMode: Self = this.set("layoutMode", js.undefined)
+    @scala.inline
+    def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Unit): Self = this.set("rendered", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRendered: Self = this.set("rendered", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

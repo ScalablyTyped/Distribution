@@ -143,11 +143,29 @@ trait Core extends Object {
     * @param mSettings the settings object for the component
     */
   def createComponent(vComponent: String): Unit = js.native
+  def createComponent(
+    vComponent: String,
+    sUrl: js.UndefOr[scala.Nothing],
+    sId: js.UndefOr[scala.Nothing],
+    mSettings: js.Any
+  ): Unit = js.native
+  def createComponent(vComponent: String, sUrl: js.UndefOr[scala.Nothing], sId: String): Unit = js.native
+  def createComponent(vComponent: String, sUrl: js.UndefOr[scala.Nothing], sId: String, mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: String, sUrl: String): Unit = js.native
+  def createComponent(vComponent: String, sUrl: String, sId: js.UndefOr[scala.Nothing], mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: String, sUrl: String, sId: String): Unit = js.native
   def createComponent(vComponent: String, sUrl: String, sId: String, mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any): Unit = js.native
+  def createComponent(
+    vComponent: js.Any,
+    sUrl: js.UndefOr[scala.Nothing],
+    sId: js.UndefOr[scala.Nothing],
+    mSettings: js.Any
+  ): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: js.UndefOr[scala.Nothing], sId: String): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: js.UndefOr[scala.Nothing], sId: String, mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String): Unit = js.native
+  def createComponent(vComponent: js.Any, sUrl: String, sId: js.UndefOr[scala.Nothing], mSettings: js.Any): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String, sId: String): Unit = js.native
   def createComponent(vComponent: js.Any, sUrl: String, sId: String, mSettings: js.Any): Unit = js.native
   /**
@@ -386,6 +404,7 @@ trait Core extends Object {
     * @param sQuery to be used only by the Core
     */
   def includeLibraryTheme(sLibName: String): Unit = js.native
+  def includeLibraryTheme(sLibName: String, sVariant: js.UndefOr[scala.Nothing], sQuery: String): Unit = js.native
   def includeLibraryTheme(sLibName: String, sVariant: String): Unit = js.native
   def includeLibraryTheme(sLibName: String, sVariant: String, sQuery: String): Unit = js.native
   /**

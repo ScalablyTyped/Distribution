@@ -28,6 +28,7 @@ class ResourceCreativegroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(params: ParamsResourceCreativegroupsGet): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(params: ParamsResourceCreativegroupsGet, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceCreativegroups protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(params: ParamsResourceCreativegroupsInsert): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(params: ParamsResourceCreativegroupsInsert, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def insert(
@@ -92,6 +94,7 @@ class ResourceCreativegroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCreativeGroupsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(params: ParamsResourceCreativegroupsList): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(
     params: ParamsResourceCreativegroupsList,
@@ -125,6 +128,7 @@ class ResourceCreativegroups protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(params: ParamsResourceCreativegroupsPatch): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(params: ParamsResourceCreativegroupsPatch, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def patch(
@@ -153,6 +157,7 @@ class ResourceCreativegroups protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(params: ParamsResourceCreativegroupsUpdate): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(params: ParamsResourceCreativegroupsUpdate, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def update(

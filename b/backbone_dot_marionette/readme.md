@@ -12,7 +12,7 @@ The Backbone Framework
 | Keywords           | backbone, plugin, marionette, composite, architecture, single, page, app, client, browser |
 | # releases         | 7 |
 | # dependents       | 91 |
-| # downloads        | 1742943 |
+| # downloads        | 1755888 |
 | # stars            | 8 |
 
 ## Links

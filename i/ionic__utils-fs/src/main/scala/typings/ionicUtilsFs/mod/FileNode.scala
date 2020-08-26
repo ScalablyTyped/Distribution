@@ -20,10 +20,9 @@ object FileNode {
     __obj.asInstanceOf[FileNode]
   }
   @scala.inline
-  def DirectoryNode(children: js.Array[FileNode], path: String, `type`: directory, parent: FileNode = null): FileNode = {
+  def DirectoryNode(children: js.Array[FileNode], path: String, `type`: directory): FileNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileNode]
   }
 }

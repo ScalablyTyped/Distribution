@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridFeatureChooserPopover
   extends /**
   * Option for JSONPDataSourceSettings
@@ -15,7 +16,7 @@ trait IgGridFeatureChooserPopover
     * Sets the time popover fades in and out when showing/hiding
     *
     */
-  var animationDuration: js.UndefOr[Double] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
   /**
     * Controls where the popover DOM should be attached to.
     *
@@ -24,9 +25,9 @@ trait IgGridFeatureChooserPopover
     * "string" A valid jQuery selector for the element
     * "object" A reference to the parent jQuery object
     */
-  var appendTo: js.UndefOr[String | js.Object] = js.undefined
-  var closeOnBlur: js.UndefOr[Boolean] = js.undefined
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var appendTo: js.UndefOr[String | js.Object] = js.native
+  var closeOnBlur: js.UndefOr[Boolean] = js.native
+  var containment: js.UndefOr[js.Any] = js.native
   /**
     * sets the content for the popover container. If left null the content will be get from the target.
     *
@@ -35,7 +36,7 @@ trait IgGridFeatureChooserPopover
     * "string" String content of the popover container
     * "function" Function which is a callback that should return the content. Use the 'this' value to access the target DOM element.
     */
-  var contentTemplate: js.UndefOr[String | js.Function] = js.undefined
+  var contentTemplate: js.UndefOr[String | js.Function] = js.native
   /**
     * controls the direction in which the control shows relative to the target element
     *
@@ -47,47 +48,47 @@ trait IgGridFeatureChooserPopover
     * "top" shows popover on the top of the target element
     * "bottom" shows popover on the bottom of the target element
     */
-  var direction: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[String] = js.native
   /**
     * Controls the priority in which the control searches for space to show relative to the target element.
     * This property has effect only if the [direction](ui.%%WidgetNameLowered%%#options:direction) property value is "auto" or unset.
     *
     */
-  var directionPriority: js.UndefOr[js.Array[_]] = js.undefined
-  var gridId: js.UndefOr[String] = js.undefined
+  var directionPriority: js.UndefOr[js.Array[_]] = js.native
+  var gridId: js.UndefOr[String] = js.native
   /**
     * Sets the content for the popover header
     *
     */
-  var headerTemplate: js.UndefOr[IgPopoverHeaderTemplate] = js.undefined
+  var headerTemplate: js.UndefOr[IgPopoverHeaderTemplate] = js.native
   /**
     * defines height for the popover. leave null for auto
     *
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Event fired after popover is hidden.
     */
-  var hidden: js.UndefOr[HiddenEvent] = js.undefined
+  var hidden: js.UndefOr[HiddenEvent] = js.native
   /**
     * Event fired before popover is hidden.
     */
-  var hiding: js.UndefOr[HidingEvent] = js.undefined
+  var hiding: js.UndefOr[HidingEvent] = js.native
   /**
     * defines height the popover won't exceed even if no specific one is set.
     *
     */
-  var maxHeight: js.UndefOr[Double | String] = js.undefined
+  var maxHeight: js.UndefOr[Double | String] = js.native
   /**
     * defines width the popover won't exceed even if no specific one is set.
     *
     */
-  var maxWidth: js.UndefOr[Double | String] = js.undefined
+  var maxWidth: js.UndefOr[Double | String] = js.native
   /**
     * defines width the popover won't go under the value even if no specific one is set.
     *
     */
-  var minWidth: js.UndefOr[Double | String] = js.undefined
+  var minWidth: js.UndefOr[Double | String] = js.native
   /**
     * controls the position of the popover according to the target element in case the popover is larger than the target on the side we want to position, if the popover is smaller it should always be in the middle of the visible area
     *
@@ -98,12 +99,12 @@ trait IgGridFeatureChooserPopover
     * "start" the popover is positioned at the beginning of the target element
     * "end" the popover is positioned at the end of the target element
     */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /**
     * Selectors indicating which items should show popovers. The predefined value is [title]. Customize if you're using something other then the title attribute for the popover content, or if you need a different selector for event delegation. When changing this option, you likely need to also change the contentTemplate option
     *
     */
-  var selectors: js.UndefOr[String] = js.undefined
+  var selectors: js.UndefOr[String] = js.native
   /**
     * sets the event on which the popover will be shown. Predefined values are "mouseenter", "click" and "focus"
     *
@@ -113,75 +114,131 @@ trait IgGridFeatureChooserPopover
     * "click" the popover is shown on click on the target element
     * "focus" the popover is shown on focusing the target element
     */
-  var showOn: js.UndefOr[String] = js.undefined
+  var showOn: js.UndefOr[String] = js.native
   /**
     * Event fired before popover is shown.
     */
-  var showing: js.UndefOr[ShowingEvent] = js.undefined
+  var showing: js.UndefOr[ShowingEvent] = js.native
   /**
     * Event fired after popover is shown.
     */
-  var shown: js.UndefOr[ShownEvent] = js.undefined
-  var targetButton: js.UndefOr[js.Any] = js.undefined
+  var shown: js.UndefOr[ShownEvent] = js.native
+  var targetButton: js.UndefOr[js.Any] = js.native
   /**
     * defines width for the popover. leave null for auto.
     *
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object IgGridFeatureChooserPopover {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    appendTo: String | js.Object = null,
-    closeOnBlur: js.UndefOr[Boolean] = js.undefined,
-    containment: js.Any = null,
-    contentTemplate: String | js.Function = null,
-    direction: String = null,
-    directionPriority: js.Array[_] = null,
-    gridId: String = null,
-    headerTemplate: IgPopoverHeaderTemplate = null,
-    height: Double | String = null,
-    hidden: (/* event */ Event, /* ui */ HiddenEventUIParam) => Unit = null,
-    hiding: (/* event */ Event, /* ui */ HidingEventUIParam) => Unit = null,
-    maxHeight: Double | String = null,
-    maxWidth: Double | String = null,
-    minWidth: Double | String = null,
-    position: String = null,
-    selectors: String = null,
-    showOn: String = null,
-    showing: (/* event */ Event, /* ui */ ShowingEventUIParam) => Unit = null,
-    shown: (/* event */ Event, /* ui */ ShownEventUIParam) => Unit = null,
-    targetButton: js.Any = null,
-    width: Double | String = null
-  ): IgGridFeatureChooserPopover = {
+  def apply(): IgGridFeatureChooserPopover = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.get.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (directionPriority != null) __obj.updateDynamic("directionPriority")(directionPriority.asInstanceOf[js.Any])
-    if (gridId != null) __obj.updateDynamic("gridId")(gridId.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hidden != null) __obj.updateDynamic("hidden")(js.Any.fromFunction2(hidden))
-    if (hiding != null) __obj.updateDynamic("hiding")(js.Any.fromFunction2(hiding))
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (showing != null) __obj.updateDynamic("showing")(js.Any.fromFunction2(showing))
-    if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction2(shown))
-    if (targetButton != null) __obj.updateDynamic("targetButton")(targetButton.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFeatureChooserPopover]
   }
+  @scala.inline
+  implicit class IgGridFeatureChooserPopoverOps[Self <: IgGridFeatureChooserPopover] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAppendTo(value: String | js.Object): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setCloseOnBlur(value: Boolean): Self = this.set("closeOnBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnBlur: Self = this.set("closeOnBlur", js.undefined)
+    @scala.inline
+    def setContainment(value: js.Any): Self = this.set("containment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainment: Self = this.set("containment", js.undefined)
+    @scala.inline
+    def setContentTemplate(value: String | js.Function): Self = this.set("contentTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentTemplate: Self = this.set("contentTemplate", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDirectionPriorityVarargs(value: js.Any*): Self = this.set("directionPriority", js.Array(value :_*))
+    @scala.inline
+    def setDirectionPriority(value: js.Array[_]): Self = this.set("directionPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectionPriority: Self = this.set("directionPriority", js.undefined)
+    @scala.inline
+    def setGridId(value: String): Self = this.set("gridId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridId: Self = this.set("gridId", js.undefined)
+    @scala.inline
+    def setHeaderTemplate(value: IgPopoverHeaderTemplate): Self = this.set("headerTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderTemplate: Self = this.set("headerTemplate", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: (/* event */ Event, /* ui */ HiddenEventUIParam) => Unit): Self = this.set("hidden", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHiding(value: (/* event */ Event, /* ui */ HidingEventUIParam) => Unit): Self = this.set("hiding", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHiding: Self = this.set("hiding", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double | String): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double | String): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double | String): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSelectors(value: String): Self = this.set("selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectors: Self = this.set("selectors", js.undefined)
+    @scala.inline
+    def setShowOn(value: String): Self = this.set("showOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOn: Self = this.set("showOn", js.undefined)
+    @scala.inline
+    def setShowing(value: (/* event */ Event, /* ui */ ShowingEventUIParam) => Unit): Self = this.set("showing", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShowing: Self = this.set("showing", js.undefined)
+    @scala.inline
+    def setShown(value: (/* event */ Event, /* ui */ ShownEventUIParam) => Unit): Self = this.set("shown", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShown: Self = this.set("shown", js.undefined)
+    @scala.inline
+    def setTargetButton(value: js.Any): Self = this.set("targetButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetButton: Self = this.set("targetButton", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

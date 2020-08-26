@@ -27,12 +27,36 @@ trait SchemaAccountTax extends js.Object {
 
 object SchemaAccountTax {
   @scala.inline
-  def apply(accountId: String = null, kind: String = null, rules: js.Array[SchemaAccountTaxTaxRule] = null): SchemaAccountTax = {
+  def apply(): SchemaAccountTax = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountTax]
   }
+  @scala.inline
+  implicit class SchemaAccountTaxOps[Self <: SchemaAccountTax] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: SchemaAccountTaxTaxRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[SchemaAccountTaxTaxRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

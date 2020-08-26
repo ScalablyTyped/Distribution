@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Active extends js.Object {
-  var active: Validator[Boolean]
-  var api: Validator[PickAPIonoffemitgetQueryP]
-  var onReset: Validator[js.UndefOr[js.Object]]
+  var active: Validator[Boolean] = js.native
+  var api: Validator[PickAPIonoffemitgetQueryP] = js.native
+  var onReset: Validator[js.UndefOr[js.Object]] = js.native
 }
 
 object Active {
@@ -21,5 +22,24 @@ object Active {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], api = api.asInstanceOf[js.Any], onReset = onReset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Active]
   }
+  @scala.inline
+  implicit class ActiveOps[Self <: Active] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Validator[Boolean]): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApi(value: Validator[PickAPIonoffemitgetQueryP]): Self = this.set("api", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnReset(value: Validator[js.UndefOr[js.Object]]): Self = this.set("onReset", value.asInstanceOf[js.Any])
+  }
+  
 }
 

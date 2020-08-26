@@ -24,6 +24,16 @@ trait BootstrapUploadControl extends Control {
   def getSelectedFiles(inputIndex: Double): js.Array[BootstrapUploadControlFile] = js.native
   def getText(index: Double): String = js.native
   def getUploadButtonText(): String = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        EventArgs | UploadControlDropZoneEnterEventArgs | UploadControlDropZoneLeaveEventArgs | UploadControlFileUploadCompleteEventArgs | UploadControlFilesUploadCompleteEventArgs | UploadControlFilesUploadStartEventArgs | UploadControlTextChangedEventArgs | UploadControlUploadingProgressChangedEventArgs | UploadControlValidationErrorOccurredEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_dropZoneEnter(eventName: dropZoneEnter): this.type = js.native
   @JSName("off")

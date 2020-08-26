@@ -28,6 +28,7 @@ class ResourceLanguages protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaLanguagesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLanguagesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLanguagesListResponse] = js.native
   def list(params: ParamsResourceLanguagesList): GaxiosPromise[SchemaLanguagesListResponse] = js.native
   def list(params: ParamsResourceLanguagesList, callback: BodyResponseCallback[SchemaLanguagesListResponse]): Unit = js.native
   def list(

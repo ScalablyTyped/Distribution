@@ -22,16 +22,34 @@ trait GetSavingsPlansPurchaseRecommendationResponse extends js.Object {
 
 object GetSavingsPlansPurchaseRecommendationResponse {
   @scala.inline
-  def apply(
-    Metadata: SavingsPlansPurchaseRecommendationMetadata = null,
-    NextPageToken: NextPageToken = null,
-    SavingsPlansPurchaseRecommendation: SavingsPlansPurchaseRecommendation = null
-  ): GetSavingsPlansPurchaseRecommendationResponse = {
+  def apply(): GetSavingsPlansPurchaseRecommendationResponse = {
     val __obj = js.Dynamic.literal()
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (SavingsPlansPurchaseRecommendation != null) __obj.updateDynamic("SavingsPlansPurchaseRecommendation")(SavingsPlansPurchaseRecommendation.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansPurchaseRecommendationResponse]
   }
+  @scala.inline
+  implicit class GetSavingsPlansPurchaseRecommendationResponseOps[Self <: GetSavingsPlansPurchaseRecommendationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: SavingsPlansPurchaseRecommendationMetadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setSavingsPlansPurchaseRecommendation(value: SavingsPlansPurchaseRecommendation): Self = this.set("SavingsPlansPurchaseRecommendation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsPlansPurchaseRecommendation: Self = this.set("SavingsPlansPurchaseRecommendation", js.undefined)
+  }
+  
 }
 

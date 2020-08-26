@@ -22,11 +22,32 @@ trait SchemaCreativeDealIds extends js.Object {
 
 object SchemaCreativeDealIds {
   @scala.inline
-  def apply(dealStatuses: js.Array[ArcStatus] = null, kind: String = null): SchemaCreativeDealIds = {
+  def apply(): SchemaCreativeDealIds = {
     val __obj = js.Dynamic.literal()
-    if (dealStatuses != null) __obj.updateDynamic("dealStatuses")(dealStatuses.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeDealIds]
   }
+  @scala.inline
+  implicit class SchemaCreativeDealIdsOps[Self <: SchemaCreativeDealIds] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDealStatusesVarargs(value: ArcStatus*): Self = this.set("dealStatuses", js.Array(value :_*))
+    @scala.inline
+    def setDealStatuses(value: js.Array[ArcStatus]): Self = this.set("dealStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDealStatuses: Self = this.set("dealStatuses", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

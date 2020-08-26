@@ -11,7 +11,7 @@ Use the Node.js crypto module API without having to worry if it is being run in 
 | Keywords           | crypto |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 25052 |
+| # downloads        | 29024 |
 | # stars            | 0 |
 
 ## Links

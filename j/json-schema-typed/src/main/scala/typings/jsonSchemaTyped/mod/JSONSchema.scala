@@ -26,6 +26,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JSONSchema extends js.Object {
   /**
     * This keyword is reserved for comments from schema authors to readers or
@@ -54,7 +55,7 @@ trait JSONSchema extends js.Object {
     * on the presence, absence, or contents of "$comment" properties.
     */
   @JSName("$comment")
-  var $comment: js.UndefOr[String] = js.undefined
+  var $comment: js.UndefOr[String] = js.native
   /**
     * The "$id" keyword defines a URI for the schema, and the base URI that other
     * URI references within the schema are resolved against. A subschema's "$id"
@@ -69,7 +70,7 @@ trait JSONSchema extends js.Object {
     * [RFC3986]: http://json-schema.org/latest/json-schema-core.html#RFC3986
     */
   @JSName("$id")
-  var $id: js.UndefOr[String] = js.undefined
+  var $id: js.UndefOr[String] = js.native
   /**
     * The "$ref" keyword is used to reference a schema, and provides the ability
     * to validate recursive structures through self-reference.
@@ -91,7 +92,7 @@ trait JSONSchema extends js.Object {
     * of infinite recursive nesting like this; the behavior is undefined.
     */
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.undefined
+  var $ref: js.UndefOr[String] = js.native
   /**
     * The "$schema" keyword is both used as a JSON Schema version identifier and
     * the location of a resource which is itself a JSON Schema, which describes
@@ -115,7 +116,7 @@ trait JSONSchema extends js.Object {
     * [RFC3986]: http://json-schema.org/latest/json-schema-core.html#RFC3986
     */
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.undefined
+  var $schema: js.UndefOr[String] = js.native
   /**
     * The value of "additionalItems" MUST be a valid JSON Schema.
     *
@@ -131,7 +132,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var additionalItems: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var additionalItems: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * The value of "additionalProperties" MUST be a valid JSON Schema.
     *
@@ -147,7 +148,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var additionalProperties: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var additionalProperties: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
     * be a valid JSON Schema.
@@ -155,7 +156,7 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against all schemas defined by this keyword's value.
     */
-  var allOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
+  var allOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
     * be a valid JSON Schema.
@@ -163,21 +164,21 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against at least one schema defined by this keyword's value.
     */
-  var anyOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
+  var anyOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
   /**
     * The value of this keyword MAY be of any type, including null.
     *
     * An instance validates successfully against this keyword if its value is
     * equal to the value of the keyword.
     */
-  var const: js.UndefOr[js.Any] = js.undefined
+  var const: js.UndefOr[js.Any] = js.native
   /**
     * The value of this keyword MUST be a valid JSON Schema.
     *
     * An array instance is valid against "contains" if at least one of its
     * elements is valid against the given schema.
     */
-  var contains: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var contains: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * If the instance value is a string, this property defines that the string
     * SHOULD be interpreted as binary data and decoded using the encoding named
@@ -189,7 +190,7 @@ trait JSONSchema extends js.Object {
     *
     * [RFC2045]: https://tools.ietf.org/html/rfc2045#section-6.1
     */
-  var contentEncoding: js.UndefOr[JSONSchemaContentEncodingName | JSONSchemaContentEncoding] = js.undefined
+  var contentEncoding: js.UndefOr[JSONSchemaContentEncodingName | JSONSchemaContentEncoding] = js.native
   /**
     * The value of this property must be a media type, as defined by
     * [RFC 2046][RFC2046]. This property defines the media type of instances
@@ -205,7 +206,7 @@ trait JSONSchema extends js.Object {
     *
     * [RFC2046]: https://tools.ietf.org/html/rfc2046
     */
-  var contentMediaType: js.UndefOr[String] = js.undefined
+  var contentMediaType: js.UndefOr[String] = js.native
   /**
     * There are no restrictions placed on the value of this keyword. When
     * multiple occurrences of this keyword are applicable to a single
@@ -215,7 +216,7 @@ trait JSONSchema extends js.Object {
     * particular schema. It is RECOMMENDED that a default value be valid against
     * the associated schema.
     */
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[js.Any] = js.native
   /**
     * The "definitions" keywords provides a standardized location for schema
     * authors to inline re-usable JSON Schemas into a more general schema. The
@@ -224,7 +225,7 @@ trait JSONSchema extends js.Object {
     * This keyword's value MUST be an object. Each member value of this object
     * MUST be a valid JSON Schema.
     */
-  var definitions: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
+  var definitions: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.native
   /**
     * This keyword specifies rules that are evaluated if the instance is an
     * object and contains a certain property.
@@ -243,12 +244,12 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var dependencies: js.UndefOr[(StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String]] = js.undefined
+  var dependencies: js.UndefOr[(StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String]] = js.native
   /**
     * Can be used to decorate a user interface with explanation or information
     * about the data produced.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * This keyword's value MUST be a valid JSON Schema.
     *
@@ -261,7 +262,7 @@ trait JSONSchema extends js.Object {
     * evaluate the instance against this keyword, for either validation or
     * annotation collection purposes, in such cases.
     */
-  var `else`: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var `else`: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * The value of this keyword MUST be an array. This array SHOULD have at least
     * one element. Elements in the array SHOULD be unique.
@@ -271,7 +272,7 @@ trait JSONSchema extends js.Object {
     *
     * Elements in the array might be of any value, including null.
     */
-  var enum: js.UndefOr[js.Array[_]] = js.undefined
+  var enum: js.UndefOr[js.Array[_]] = js.native
   /**
     * The value of this keyword MUST be an array. There are no restrictions
     * placed on the values within the array. When multiple occurrences of this
@@ -286,7 +287,7 @@ trait JSONSchema extends js.Object {
     * additional example. If "examples" is absent, "default" MAY still be used in
     * this manner.
     */
-  var examples: js.UndefOr[js.Array[_]] = js.undefined
+  var examples: js.UndefOr[js.Array[_]] = js.native
   /**
     * The value of "exclusiveMaximum" MUST be number, representing an exclusive
     * upper limit for a numeric instance.
@@ -294,7 +295,7 @@ trait JSONSchema extends js.Object {
     * If the instance is a number, then the instance is valid only if it has a
     * value strictly less than (not equal to) "exclusiveMaximum".
     */
-  var exclusiveMaximum: js.UndefOr[Double] = js.undefined
+  var exclusiveMaximum: js.UndefOr[Double] = js.native
   /**
     * The value of "exclusiveMinimum" MUST be number, representing an exclusive
     * lower limit for a numeric instance.
@@ -302,7 +303,7 @@ trait JSONSchema extends js.Object {
     * If the instance is a number, then the instance is valid only if it has a
     * value strictly greater than (not equal to) "exclusiveMinimum".
     */
-  var exclusiveMinimum: js.UndefOr[Double] = js.undefined
+  var exclusiveMinimum: js.UndefOr[Double] = js.native
   /**
     * The "format" keyword functions as both an [annotation][annotation] and as
     * an [assertion][assertion]. While no special effort is required to implement
@@ -324,7 +325,7 @@ trait JSONSchema extends js.Object {
     */
   var format: js.UndefOr[
     JSONSchemaFormat | date | `date-time` | email | `full-date` | `full-time` | hostname | `idn-email` | `idn-hostname` | ipv4 | ipv6 | iri | `iri-reference` | `json-pointer` | `json-pointer-uri-fragment` | regex | `relative-json-pointer` | time | uri | `uri-reference` | `uri-template` | uuid
-  ] = js.undefined
+  ] = js.native
   /**
     * This keyword's value MUST be a valid JSON Schema.
     *
@@ -345,7 +346,7 @@ trait JSONSchema extends js.Object {
     *
     * [annotations]: http://json-schema.org/latest/json-schema-validation.html#annotations
     */
-  var `if`: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var `if`: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * The value of "items" MUST be either a valid JSON Schema or an array of
     * valid JSON Schemas.
@@ -361,14 +362,14 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var items: js.UndefOr[JSONSchema | Boolean | (js.Array[JSONSchema | Boolean])] = js.undefined
+  var items: js.UndefOr[JSONSchema | Boolean | (js.Array[JSONSchema | Boolean])] = js.native
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
     * An array instance is valid against "maxItems" if its size is less than, or
     * equal to, the value of this keyword.
     */
-  var maxItems: js.UndefOr[Double] = js.undefined
+  var maxItems: js.UndefOr[Double] = js.native
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
@@ -380,14 +381,14 @@ trait JSONSchema extends js.Object {
     *
     * [RFC7159]: http://json-schema.org/latest/json-schema-validation.html#RFC7159
     */
-  var maxLength: js.UndefOr[Double] = js.undefined
+  var maxLength: js.UndefOr[Double] = js.native
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
     * An object instance is valid against "maxProperties" if its number of
     * properties is less than, or equal to, the value of this keyword.
     */
-  var maxProperties: js.UndefOr[Double] = js.undefined
+  var maxProperties: js.UndefOr[Double] = js.native
   /**
     * The value of "maximum" MUST be a number, representing an inclusive upper
     * limit for a numeric instance.
@@ -395,7 +396,7 @@ trait JSONSchema extends js.Object {
     * If the instance is a number, then this keyword validates only if the
     * instance is less than or exactly equal to "maximum".
     */
-  var maximum: js.UndefOr[Double] = js.undefined
+  var maximum: js.UndefOr[Double] = js.native
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
@@ -404,7 +405,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as a value of 0.
     */
-  var minItems: js.UndefOr[Double] = js.undefined
+  var minItems: js.UndefOr[Double] = js.native
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
@@ -418,7 +419,7 @@ trait JSONSchema extends js.Object {
     *
     * [RFC7159]: http://json-schema.org/latest/json-schema-validation.html#RFC7159
     */
-  var minLength: js.UndefOr[Double] = js.undefined
+  var minLength: js.UndefOr[Double] = js.native
   /**
     * The value of this keyword MUST be a non-negative integer.
     *
@@ -427,7 +428,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as a value of 0.
     */
-  var minProperties: js.UndefOr[Double] = js.undefined
+  var minProperties: js.UndefOr[Double] = js.native
   /**
     * The value of "minimum" MUST be a number, representing an inclusive lower
     * limit for a numeric instance.
@@ -435,21 +436,21 @@ trait JSONSchema extends js.Object {
     * If the instance is a number, then this keyword validates only if the
     * instance is greater than or exactly equal to "minimum".
     */
-  var minimum: js.UndefOr[Double] = js.undefined
+  var minimum: js.UndefOr[Double] = js.native
   /**
     * The value of "multipleOf" MUST be a number, strictly greater than 0.
     *
     * A numeric instance is valid only if division by this keyword's value
     * results in an integer.
     */
-  var multipleOf: js.UndefOr[Double] = js.undefined
+  var multipleOf: js.UndefOr[Double] = js.native
   /**
     * This keyword's value MUST be a valid JSON Schema.
     *
     * An instance is valid against this keyword if it fails to validate
     * successfully against the schema defined by this keyword.
     */
-  var not: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var not: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * This keyword's value MUST be a non-empty array. Each item of the array MUST
     * be a valid JSON Schema.
@@ -457,7 +458,7 @@ trait JSONSchema extends js.Object {
     * An instance validates successfully against this keyword if it validates
     * successfully against exactly one schema defined by this keyword's value.
     */
-  var oneOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.undefined
+  var oneOf: js.UndefOr[js.Array[JSONSchema | Boolean]] = js.native
   /**
     * The value of this keyword MUST be a string. This string SHOULD be a valid
     * regular expression, according to the ECMA 262 regular expression dialect.
@@ -466,7 +467,7 @@ trait JSONSchema extends js.Object {
     * instance successfully. Recall: regular expressions are not implicitly
     * anchored.
     */
-  var pattern: js.UndefOr[String] = js.undefined
+  var pattern: js.UndefOr[String] = js.native
   /**
     * The value of "patternProperties" MUST be an object. Each property name of
     * this object SHOULD be a valid regular expression, according to the ECMA 262
@@ -484,7 +485,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var patternProperties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
+  var patternProperties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.native
   /**
     * The value of "properties" MUST be an object. Each value of this object MUST
     * be a valid JSON Schema.
@@ -498,7 +499,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty object.
     */
-  var properties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[JSONSchema | Boolean]] = js.native
   /**
     * The value of "propertyNames" MUST be a valid JSON Schema.
     *
@@ -508,7 +509,7 @@ trait JSONSchema extends js.Object {
     *
     * Omitting this keyword has the same behavior as an empty schema.
     */
-  var propertyNames: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var propertyNames: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * The value of this keywords MUST be a boolean. When multiple occurrences of
     * this keyword are applicable to a single sub-instance, the resulting value
@@ -531,7 +532,7 @@ trait JSONSchema extends js.Object {
     *
     * @default false
     */
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+  var readOnly: js.UndefOr[Boolean] = js.native
   /**
     * The value of this keyword MUST be an array. Elements of this array, if any,
     * MUST be strings, and MUST be unique.
@@ -543,7 +544,7 @@ trait JSONSchema extends js.Object {
     *
     * @default []
     */
-  var required: js.UndefOr[js.Array[String]] = js.undefined
+  var required: js.UndefOr[js.Array[String]] = js.native
   /**
     * This keyword's value MUST be a valid JSON Schema.
     *
@@ -556,12 +557,12 @@ trait JSONSchema extends js.Object {
     * instance against this keyword, for either validation or annotation
     * collection purposes, in such cases.
     */
-  var `then`: js.UndefOr[JSONSchema | Boolean] = js.undefined
+  var `then`: js.UndefOr[JSONSchema | Boolean] = js.native
   /**
     * Can be used to decorate a user interface with a short label about the data
     * produced.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * The value of this keyword MUST be either a string or an array. If it is an
     * array, elements of the array MUST be strings and MUST be unique.
@@ -575,7 +576,7 @@ trait JSONSchema extends js.Object {
     */
   var `type`: js.UndefOr[
     JSONSchemaType | JSONSchemaTypeName | (js.Array[JSONSchemaType | JSONSchemaTypeName])
-  ] = js.undefined
+  ] = js.native
   /**
     * The value of this keyword MUST be a boolean.
     *
@@ -587,7 +588,7 @@ trait JSONSchema extends js.Object {
     *
     * @default false
     */
-  var uniqueItems: js.UndefOr[Boolean] = js.undefined
+  var uniqueItems: js.UndefOr[Boolean] = js.native
   /**
     * The value of this keyword MUST be a boolean. When multiple occurrences of
     * this keyword is applicable to a single sub-instance, the resulting value
@@ -613,107 +614,231 @@ trait JSONSchema extends js.Object {
     *
     * @default false
     */
-  var writeOnly: js.UndefOr[Boolean] = js.undefined
+  var writeOnly: js.UndefOr[Boolean] = js.native
 }
 
 object JSONSchema {
   @scala.inline
-  def apply(
-    $comment: String = null,
-    $id: String = null,
-    $ref: String = null,
-    $schema: String = null,
-    additionalItems: JSONSchema | Boolean = null,
-    additionalProperties: JSONSchema | Boolean = null,
-    allOf: js.Array[JSONSchema | Boolean] = null,
-    anyOf: js.Array[JSONSchema | Boolean] = null,
-    const: js.Any = null,
-    contains: JSONSchema | Boolean = null,
-    contentEncoding: JSONSchemaContentEncodingName | JSONSchemaContentEncoding = null,
-    contentMediaType: String = null,
-    default: js.Any = null,
-    definitions: StringDictionary[JSONSchema | Boolean] = null,
-    dependencies: (StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String] = null,
-    description: String = null,
-    `else`: JSONSchema | Boolean = null,
-    enum: js.Array[_] = null,
-    examples: js.Array[_] = null,
-    exclusiveMaximum: js.UndefOr[Double] = js.undefined,
-    exclusiveMinimum: js.UndefOr[Double] = js.undefined,
-    format: JSONSchemaFormat | date | `date-time` | email | `full-date` | `full-time` | hostname | `idn-email` | `idn-hostname` | ipv4 | ipv6 | iri | `iri-reference` | `json-pointer` | `json-pointer-uri-fragment` | regex | `relative-json-pointer` | time | uri | `uri-reference` | `uri-template` | uuid = null,
-    `if`: JSONSchema | Boolean = null,
-    items: JSONSchema | Boolean | (js.Array[JSONSchema | Boolean]) = null,
-    maxItems: js.UndefOr[Double] = js.undefined,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    maxProperties: js.UndefOr[Double] = js.undefined,
-    maximum: js.UndefOr[Double] = js.undefined,
-    minItems: js.UndefOr[Double] = js.undefined,
-    minLength: js.UndefOr[Double] = js.undefined,
-    minProperties: js.UndefOr[Double] = js.undefined,
-    minimum: js.UndefOr[Double] = js.undefined,
-    multipleOf: js.UndefOr[Double] = js.undefined,
-    not: JSONSchema | Boolean = null,
-    oneOf: js.Array[JSONSchema | Boolean] = null,
-    pattern: String = null,
-    patternProperties: StringDictionary[JSONSchema | Boolean] = null,
-    properties: StringDictionary[JSONSchema | Boolean] = null,
-    propertyNames: JSONSchema | Boolean = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    required: js.Array[String] = null,
-    `then`: JSONSchema | Boolean = null,
-    title: String = null,
-    `type`: JSONSchemaType | JSONSchemaTypeName | (js.Array[JSONSchemaType | JSONSchemaTypeName]) = null,
-    uniqueItems: js.UndefOr[Boolean] = js.undefined,
-    writeOnly: js.UndefOr[Boolean] = js.undefined
-  ): JSONSchema = {
+  def apply(): JSONSchema = {
     val __obj = js.Dynamic.literal()
-    if ($comment != null) __obj.updateDynamic("$comment")($comment.asInstanceOf[js.Any])
-    if ($id != null) __obj.updateDynamic("$id")($id.asInstanceOf[js.Any])
-    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
-    if ($schema != null) __obj.updateDynamic("$schema")($schema.asInstanceOf[js.Any])
-    if (additionalItems != null) __obj.updateDynamic("additionalItems")(additionalItems.asInstanceOf[js.Any])
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (allOf != null) __obj.updateDynamic("allOf")(allOf.asInstanceOf[js.Any])
-    if (anyOf != null) __obj.updateDynamic("anyOf")(anyOf.asInstanceOf[js.Any])
-    if (const != null) __obj.updateDynamic("const")(const.asInstanceOf[js.Any])
-    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (contentMediaType != null) __obj.updateDynamic("contentMediaType")(contentMediaType.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (definitions != null) __obj.updateDynamic("definitions")(definitions.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (`else` != null) __obj.updateDynamic("else")(`else`.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (`if` != null) __obj.updateDynamic("if")(`if`.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxItems)) __obj.updateDynamic("maxItems")(maxItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxProperties)) __obj.updateDynamic("maxProperties")(maxProperties.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minItems)) __obj.updateDynamic("minItems")(minItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minProperties)) __obj.updateDynamic("minProperties")(minProperties.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleOf)) __obj.updateDynamic("multipleOf")(multipleOf.get.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (patternProperties != null) __obj.updateDynamic("patternProperties")(patternProperties.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (propertyNames != null) __obj.updateDynamic("propertyNames")(propertyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeOnly)) __obj.updateDynamic("writeOnly")(writeOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONSchema]
   }
+  @scala.inline
+  implicit class JSONSchemaOps[Self <: JSONSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$comment(value: String): Self = this.set("$comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$comment: Self = this.set("$comment", js.undefined)
+    @scala.inline
+    def set$id(value: String): Self = this.set("$id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$id: Self = this.set("$id", js.undefined)
+    @scala.inline
+    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$ref: Self = this.set("$ref", js.undefined)
+    @scala.inline
+    def set$schema(value: String): Self = this.set("$schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$schema: Self = this.set("$schema", js.undefined)
+    @scala.inline
+    def setAdditionalItems(value: JSONSchema | Boolean): Self = this.set("additionalItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalItems: Self = this.set("additionalItems", js.undefined)
+    @scala.inline
+    def setAdditionalProperties(value: JSONSchema | Boolean): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    @scala.inline
+    def setAllOfVarargs(value: (JSONSchema | Boolean)*): Self = this.set("allOf", js.Array(value :_*))
+    @scala.inline
+    def setAllOf(value: js.Array[JSONSchema | Boolean]): Self = this.set("allOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllOf: Self = this.set("allOf", js.undefined)
+    @scala.inline
+    def setAnyOfVarargs(value: (JSONSchema | Boolean)*): Self = this.set("anyOf", js.Array(value :_*))
+    @scala.inline
+    def setAnyOf(value: js.Array[JSONSchema | Boolean]): Self = this.set("anyOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnyOf: Self = this.set("anyOf", js.undefined)
+    @scala.inline
+    def setConst(value: js.Any): Self = this.set("const", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConst: Self = this.set("const", js.undefined)
+    @scala.inline
+    def setContains(value: JSONSchema | Boolean): Self = this.set("contains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContains: Self = this.set("contains", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: JSONSchemaContentEncodingName | JSONSchemaContentEncoding): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    @scala.inline
+    def setContentMediaType(value: String): Self = this.set("contentMediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMediaType: Self = this.set("contentMediaType", js.undefined)
+    @scala.inline
+    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDefinitions(value: StringDictionary[JSONSchema | Boolean]): Self = this.set("definitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinitions: Self = this.set("definitions", js.undefined)
+    @scala.inline
+    def setDependenciesVarargs(value: String*): Self = this.set("dependencies", js.Array(value :_*))
+    @scala.inline
+    def setDependencies(value: (StringDictionary[JSONSchema | Boolean | js.Array[String]]) | js.Array[String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setElse(value: JSONSchema | Boolean): Self = this.set("else", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElse: Self = this.set("else", js.undefined)
+    @scala.inline
+    def setEnumVarargs(value: js.Any*): Self = this.set("enum", js.Array(value :_*))
+    @scala.inline
+    def setEnum(value: js.Array[_]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnum: Self = this.set("enum", js.undefined)
+    @scala.inline
+    def setExamplesVarargs(value: js.Any*): Self = this.set("examples", js.Array(value :_*))
+    @scala.inline
+    def setExamples(value: js.Array[_]): Self = this.set("examples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExamples: Self = this.set("examples", js.undefined)
+    @scala.inline
+    def setExclusiveMaximum(value: Double): Self = this.set("exclusiveMaximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveMaximum: Self = this.set("exclusiveMaximum", js.undefined)
+    @scala.inline
+    def setExclusiveMinimum(value: Double): Self = this.set("exclusiveMinimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveMinimum: Self = this.set("exclusiveMinimum", js.undefined)
+    @scala.inline
+    def setFormat(
+      value: JSONSchemaFormat | date | `date-time` | email | `full-date` | `full-time` | hostname | `idn-email` | `idn-hostname` | ipv4 | ipv6 | iri | `iri-reference` | `json-pointer` | `json-pointer-uri-fragment` | regex | `relative-json-pointer` | time | uri | `uri-reference` | `uri-template` | uuid
+    ): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setIf(value: JSONSchema | Boolean): Self = this.set("if", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIf: Self = this.set("if", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: (JSONSchema | Boolean)*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: JSONSchema | Boolean | (js.Array[JSONSchema | Boolean])): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setMaxItems(value: Double): Self = this.set("maxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("maxItems", js.undefined)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setMaxProperties(value: Double): Self = this.set("maxProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxProperties: Self = this.set("maxProperties", js.undefined)
+    @scala.inline
+    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinItems(value: Double): Self = this.set("minItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinItems: Self = this.set("minItems", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setMinProperties(value: Double): Self = this.set("minProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinProperties: Self = this.set("minProperties", js.undefined)
+    @scala.inline
+    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setMultipleOf(value: Double): Self = this.set("multipleOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleOf: Self = this.set("multipleOf", js.undefined)
+    @scala.inline
+    def setNot(value: JSONSchema | Boolean): Self = this.set("not", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNot: Self = this.set("not", js.undefined)
+    @scala.inline
+    def setOneOfVarargs(value: (JSONSchema | Boolean)*): Self = this.set("oneOf", js.Array(value :_*))
+    @scala.inline
+    def setOneOf(value: js.Array[JSONSchema | Boolean]): Self = this.set("oneOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOneOf: Self = this.set("oneOf", js.undefined)
+    @scala.inline
+    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setPatternProperties(value: StringDictionary[JSONSchema | Boolean]): Self = this.set("patternProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatternProperties: Self = this.set("patternProperties", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[JSONSchema | Boolean]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setPropertyNames(value: JSONSchema | Boolean): Self = this.set("propertyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyNames: Self = this.set("propertyNames", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRequiredVarargs(value: String*): Self = this.set("required", js.Array(value :_*))
+    @scala.inline
+    def setRequired(value: js.Array[String]): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setThen(value: JSONSchema | Boolean): Self = this.set("then", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThen: Self = this.set("then", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: (JSONSchemaType | JSONSchemaTypeName)*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: JSONSchemaType | JSONSchemaTypeName | (js.Array[JSONSchemaType | JSONSchemaTypeName])): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUniqueItems(value: Boolean): Self = this.set("uniqueItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueItems: Self = this.set("uniqueItems", js.undefined)
+    @scala.inline
+    def setWriteOnly(value: Boolean): Self = this.set("writeOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteOnly: Self = this.set("writeOnly", js.undefined)
+  }
+  
 }
 

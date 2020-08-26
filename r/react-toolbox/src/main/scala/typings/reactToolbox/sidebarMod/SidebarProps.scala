@@ -1,12 +1,9 @@
 package typings.reactToolbox.sidebarMod
 
-import typings.react.mod.ReactNode
 import typings.reactToolbox.drawerDrawerMod.DrawerCommonProps
-import typings.reactToolbox.reactToolboxStrings.left
 import typings.reactToolbox.reactToolboxStrings.lg
 import typings.reactToolbox.reactToolboxStrings.lgTablet
 import typings.reactToolbox.reactToolboxStrings.md
-import typings.reactToolbox.reactToolboxStrings.right
 import typings.reactToolbox.reactToolboxStrings.sm
 import typings.reactToolbox.reactToolboxStrings.smTablet
 import typings.reactToolbox.reactToolboxStrings.xl
@@ -16,60 +13,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SidebarProps extends DrawerCommonProps {
   /**
     * If true, when the `AppBar` gets pinned, it will stand over the `Drawer`.
     * @default false
     */
-  var clipped: js.UndefOr[Boolean] = js.undefined
+  var clipped: js.UndefOr[Boolean] = js.native
   /**
     * The breakpoint at which the drawer is automatically pinned.
     */
-  var permanentAt: js.UndefOr[sm | smTablet | md | lg | lgTablet | xl | xxl | xxxl] = js.undefined
+  var permanentAt: js.UndefOr[sm | smTablet | md | lg | lgTablet | xl | xxl | xxxl] = js.native
   /**
     * If true, the sidebar will be pinned open.
     * @default false
     */
-  var pinned: js.UndefOr[Boolean] = js.undefined
+  var pinned: js.UndefOr[Boolean] = js.native
   /**
     * Classnames object defining the component style.
     */
-  var theme: js.UndefOr[SidebarTheme] = js.undefined
+  var theme: js.UndefOr[SidebarTheme] = js.native
   /**
     * Width in standard increments (1-12) or percentage (25, 33, 50, 66, 75, 100)
     * @default 5
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object SidebarProps {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    clipped: js.UndefOr[Boolean] = js.undefined,
-    insideTree: js.UndefOr[Boolean] = js.undefined,
-    onOverlayClick: js.Function = null,
-    permanentAt: sm | smTablet | md | lg | lgTablet | xl | xxl | xxxl = null,
-    pinned: js.UndefOr[Boolean] = js.undefined,
-    theme: SidebarTheme = null,
-    `type`: left | right = null,
-    width: js.UndefOr[Double] = js.undefined,
-    withOverlay: js.UndefOr[Boolean] = js.undefined
-  ): SidebarProps = {
+  def apply(): SidebarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insideTree)) __obj.updateDynamic("insideTree")(insideTree.get.asInstanceOf[js.Any])
-    if (onOverlayClick != null) __obj.updateDynamic("onOverlayClick")(onOverlayClick.asInstanceOf[js.Any])
-    if (permanentAt != null) __obj.updateDynamic("permanentAt")(permanentAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withOverlay)) __obj.updateDynamic("withOverlay")(withOverlay.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarProps]
   }
+  @scala.inline
+  implicit class SidebarPropsOps[Self <: SidebarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClipped(value: Boolean): Self = this.set("clipped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipped: Self = this.set("clipped", js.undefined)
+    @scala.inline
+    def setPermanentAt(value: sm | smTablet | md | lg | lgTablet | xl | xxl | xxxl): Self = this.set("permanentAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermanentAt: Self = this.set("permanentAt", js.undefined)
+    @scala.inline
+    def setPinned(value: Boolean): Self = this.set("pinned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinned: Self = this.set("pinned", js.undefined)
+    @scala.inline
+    def setTheme(value: SidebarTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

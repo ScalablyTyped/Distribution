@@ -1,7 +1,7 @@
 
 # Scala.js typings for uirouter__core
 
-Typings are for version 6.0.5
+Typings are for version 6.0.6
 
 ## Library description:
 UI-Router Core: Framework agnostic, State-based routing for JavaScript Single Page Apps
@@ -10,9 +10,9 @@ UI-Router Core: Framework agnostic, State-based routing for JavaScript Single Pa
 | ------------------ | :-------------: |
 | Full name          | @uirouter/core |
 | Keywords           | - |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 11 |
-| # downloads        | 4273153 |
+| # downloads        | 4270218 |
 | # stars            | 0 |
 
 ## Links

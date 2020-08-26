@@ -58,34 +58,70 @@ trait CertificateAuthority extends js.Object {
 
 object CertificateAuthority {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    CertificateAuthorityConfiguration: CertificateAuthorityConfiguration = null,
-    CreatedAt: TStamp = null,
-    FailureReason: FailureReason = null,
-    LastStateChangeAt: TStamp = null,
-    NotAfter: TStamp = null,
-    NotBefore: TStamp = null,
-    RestorableUntil: TStamp = null,
-    RevocationConfiguration: RevocationConfiguration = null,
-    Serial: String = null,
-    Status: CertificateAuthorityStatus = null,
-    Type: CertificateAuthorityType = null
-  ): CertificateAuthority = {
+  def apply(): CertificateAuthority = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CertificateAuthorityConfiguration != null) __obj.updateDynamic("CertificateAuthorityConfiguration")(CertificateAuthorityConfiguration.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (LastStateChangeAt != null) __obj.updateDynamic("LastStateChangeAt")(LastStateChangeAt.asInstanceOf[js.Any])
-    if (NotAfter != null) __obj.updateDynamic("NotAfter")(NotAfter.asInstanceOf[js.Any])
-    if (NotBefore != null) __obj.updateDynamic("NotBefore")(NotBefore.asInstanceOf[js.Any])
-    if (RestorableUntil != null) __obj.updateDynamic("RestorableUntil")(RestorableUntil.asInstanceOf[js.Any])
-    if (RevocationConfiguration != null) __obj.updateDynamic("RevocationConfiguration")(RevocationConfiguration.asInstanceOf[js.Any])
-    if (Serial != null) __obj.updateDynamic("Serial")(Serial.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthority]
   }
+  @scala.inline
+  implicit class CertificateAuthorityOps[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCertificateAuthorityConfiguration(value: CertificateAuthorityConfiguration): Self = this.set("CertificateAuthorityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthorityConfiguration: Self = this.set("CertificateAuthorityConfiguration", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: TStamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setLastStateChangeAt(value: TStamp): Self = this.set("LastStateChangeAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStateChangeAt: Self = this.set("LastStateChangeAt", js.undefined)
+    @scala.inline
+    def setNotAfter(value: TStamp): Self = this.set("NotAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAfter: Self = this.set("NotAfter", js.undefined)
+    @scala.inline
+    def setNotBefore(value: TStamp): Self = this.set("NotBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotBefore: Self = this.set("NotBefore", js.undefined)
+    @scala.inline
+    def setRestorableUntil(value: TStamp): Self = this.set("RestorableUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestorableUntil: Self = this.set("RestorableUntil", js.undefined)
+    @scala.inline
+    def setRevocationConfiguration(value: RevocationConfiguration): Self = this.set("RevocationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocationConfiguration: Self = this.set("RevocationConfiguration", js.undefined)
+    @scala.inline
+    def setSerial(value: String): Self = this.set("Serial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerial: Self = this.set("Serial", js.undefined)
+    @scala.inline
+    def setStatus(value: CertificateAuthorityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setType(value: CertificateAuthorityType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

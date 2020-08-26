@@ -12,7 +12,7 @@ A flexible react-native dialog
 | Keywords           | react-native, dialog, alert, modal, button, input, switch |
 | # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 249335 |
+| # downloads        | 267456 |
 | # stars            | 0 |
 
 ## Links

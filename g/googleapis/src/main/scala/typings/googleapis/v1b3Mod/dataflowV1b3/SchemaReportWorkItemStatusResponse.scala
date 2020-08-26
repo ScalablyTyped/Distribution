@@ -25,14 +25,32 @@ trait SchemaReportWorkItemStatusResponse extends js.Object {
 
 object SchemaReportWorkItemStatusResponse {
   @scala.inline
-  def apply(
-    unifiedWorkerResponse: StringDictionary[js.Any] = null,
-    workItemServiceStates: js.Array[SchemaWorkItemServiceState] = null
-  ): SchemaReportWorkItemStatusResponse = {
+  def apply(): SchemaReportWorkItemStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (unifiedWorkerResponse != null) __obj.updateDynamic("unifiedWorkerResponse")(unifiedWorkerResponse.asInstanceOf[js.Any])
-    if (workItemServiceStates != null) __obj.updateDynamic("workItemServiceStates")(workItemServiceStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportWorkItemStatusResponse]
   }
+  @scala.inline
+  implicit class SchemaReportWorkItemStatusResponseOps[Self <: SchemaReportWorkItemStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUnifiedWorkerResponse(value: StringDictionary[js.Any]): Self = this.set("unifiedWorkerResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnifiedWorkerResponse: Self = this.set("unifiedWorkerResponse", js.undefined)
+    @scala.inline
+    def setWorkItemServiceStatesVarargs(value: SchemaWorkItemServiceState*): Self = this.set("workItemServiceStates", js.Array(value :_*))
+    @scala.inline
+    def setWorkItemServiceStates(value: js.Array[SchemaWorkItemServiceState]): Self = this.set("workItemServiceStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkItemServiceStates: Self = this.set("workItemServiceStates", js.undefined)
+  }
+  
 }
 

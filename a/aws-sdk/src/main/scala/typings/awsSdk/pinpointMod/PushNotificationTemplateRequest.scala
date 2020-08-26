@@ -46,28 +46,58 @@ trait PushNotificationTemplateRequest extends js.Object {
 
 object PushNotificationTemplateRequest {
   @scala.inline
-  def apply(
-    ADM: AndroidPushNotificationTemplate = null,
-    APNS: APNSPushNotificationTemplate = null,
-    Baidu: AndroidPushNotificationTemplate = null,
-    Default: DefaultPushNotificationTemplate = null,
-    DefaultSubstitutions: string = null,
-    GCM: AndroidPushNotificationTemplate = null,
-    RecommenderId: string = null,
-    TemplateDescription: string = null,
-    tags: MapOfString = null
-  ): PushNotificationTemplateRequest = {
+  def apply(): PushNotificationTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (ADM != null) __obj.updateDynamic("ADM")(ADM.asInstanceOf[js.Any])
-    if (APNS != null) __obj.updateDynamic("APNS")(APNS.asInstanceOf[js.Any])
-    if (Baidu != null) __obj.updateDynamic("Baidu")(Baidu.asInstanceOf[js.Any])
-    if (Default != null) __obj.updateDynamic("Default")(Default.asInstanceOf[js.Any])
-    if (DefaultSubstitutions != null) __obj.updateDynamic("DefaultSubstitutions")(DefaultSubstitutions.asInstanceOf[js.Any])
-    if (GCM != null) __obj.updateDynamic("GCM")(GCM.asInstanceOf[js.Any])
-    if (RecommenderId != null) __obj.updateDynamic("RecommenderId")(RecommenderId.asInstanceOf[js.Any])
-    if (TemplateDescription != null) __obj.updateDynamic("TemplateDescription")(TemplateDescription.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationTemplateRequest]
   }
+  @scala.inline
+  implicit class PushNotificationTemplateRequestOps[Self <: PushNotificationTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setADM(value: AndroidPushNotificationTemplate): Self = this.set("ADM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteADM: Self = this.set("ADM", js.undefined)
+    @scala.inline
+    def setAPNS(value: APNSPushNotificationTemplate): Self = this.set("APNS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAPNS: Self = this.set("APNS", js.undefined)
+    @scala.inline
+    def setBaidu(value: AndroidPushNotificationTemplate): Self = this.set("Baidu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaidu: Self = this.set("Baidu", js.undefined)
+    @scala.inline
+    def setDefault(value: DefaultPushNotificationTemplate): Self = this.set("Default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("Default", js.undefined)
+    @scala.inline
+    def setDefaultSubstitutions(value: string): Self = this.set("DefaultSubstitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSubstitutions: Self = this.set("DefaultSubstitutions", js.undefined)
+    @scala.inline
+    def setGCM(value: AndroidPushNotificationTemplate): Self = this.set("GCM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGCM: Self = this.set("GCM", js.undefined)
+    @scala.inline
+    def setRecommenderId(value: string): Self = this.set("RecommenderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommenderId: Self = this.set("RecommenderId", js.undefined)
+    @scala.inline
+    def setTemplateDescription(value: string): Self = this.set("TemplateDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateDescription: Self = this.set("TemplateDescription", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

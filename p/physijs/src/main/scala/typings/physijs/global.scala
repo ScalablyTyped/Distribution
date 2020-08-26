@@ -46,8 +46,6 @@ object global extends js.Object {
     class ConeTwistConstraint protected ()
       extends typings.physijs.Physijs.ConeTwistConstraint {
       def this(objecta: Object3D, objectb: Object3D, position: Vector3) = this()
-      /* CompleteClass */
-      override def getDefinition(): js.Any = js.native
     }
     
     @js.native
@@ -69,22 +67,6 @@ object global extends js.Object {
       extends typings.physijs.Physijs.DOFConstraint {
       def this(objecta: Object3D, objectb: Object3D) = this()
       def this(objecta: Object3D, objectb: Object3D, position: Vector3) = this()
-      /* CompleteClass */
-      override def configureAngularMotor(which: Double, low_angle: Double, high_angle: Double, velocity: Double, max_force: Double): Unit = js.native
-      /* CompleteClass */
-      override def disableAngularMotor(which: Double): Unit = js.native
-      /* CompleteClass */
-      override def enableAngularMotor(which: Double): Unit = js.native
-      /* CompleteClass */
-      override def getDefinition(): js.Any = js.native
-      /* CompleteClass */
-      override def setAngularLowerLimit(limit: Vector3): Unit = js.native
-      /* CompleteClass */
-      override def setAngularUpperLimit(limit: Vector3): Unit = js.native
-      /* CompleteClass */
-      override def setLinearLowerLimit(limit: Vector3): Unit = js.native
-      /* CompleteClass */
-      override def setLinearUpperLimit(limit: Vector3): Unit = js.native
     }
     
     @js.native
@@ -92,7 +74,29 @@ object global extends js.Object {
       extends typings.physijs.Physijs.Mesh {
       def this(geometry: Geometry, material: Material) = this()
       def this(geometry: Geometry, material: Material, mass: Double) = this()
+      def this(geometry: Geometry, material: Material, mass: js.UndefOr[scala.Nothing], xdiv: Double) = this()
       def this(geometry: Geometry, material: Material, mass: Double, xdiv: Double) = this()
+      def this(
+        geometry: Geometry,
+        material: Material,
+        mass: js.UndefOr[scala.Nothing],
+        xdiv: js.UndefOr[scala.Nothing],
+        ydiv: Double
+      ) = this()
+      def this(
+        geometry: Geometry,
+        material: Material,
+        mass: js.UndefOr[scala.Nothing],
+        xdiv: Double,
+        ydiv: Double
+      ) = this()
+      def this(
+        geometry: Geometry,
+        material: Material,
+        mass: Double,
+        xdiv: js.UndefOr[scala.Nothing],
+        ydiv: Double
+      ) = this()
       def this(geometry: Geometry, material: Material, mass: Double, xdiv: Double, ydiv: Double) = this()
     }
     
@@ -101,14 +105,6 @@ object global extends js.Object {
       extends typings.physijs.Physijs.HingeConstraint {
       def this(objecta: Object3D, objectb: Object3D, position: Vector3) = this()
       def this(objecta: Object3D, objectb: Object3D, position: Vector3, axis: Vector3) = this()
-      /* CompleteClass */
-      override def disableMotor(): Unit = js.native
-      /* CompleteClass */
-      override def enableAngularMotor(velocity: Double, acceleration: Double): Unit = js.native
-      /* CompleteClass */
-      override def getDefinition(): js.Any = js.native
-      /* CompleteClass */
-      override def setLimits(low: Double, high: Double, bias_factor: Double, relaxation_factor: Double): Unit = js.native
     }
     
     @js.native
@@ -116,6 +112,7 @@ object global extends js.Object {
       extends typings.physijs.Physijs.Mesh {
       def this(geometry: Geometry) = this()
       def this(geometry: Geometry, material: Material) = this()
+      def this(geometry: Geometry, material: js.UndefOr[scala.Nothing], mass: Double) = this()
       def this(geometry: Geometry, material: Material, mass: Double) = this()
     }
     
@@ -131,8 +128,6 @@ object global extends js.Object {
       extends typings.physijs.Physijs.PointConstraint {
       def this(objecta: Object3D, objectb: Object3D) = this()
       def this(objecta: Object3D, objectb: Object3D, position: Vector3) = this()
-      /* CompleteClass */
-      override def getDefinition(): js.Any = js.native
     }
     
     @js.native
@@ -146,20 +141,6 @@ object global extends js.Object {
       extends typings.physijs.Physijs.SliderConstraint {
       def this(objecta: Object3D, objectb: Object3D, position: Vector3) = this()
       def this(objecta: Object3D, objectb: Object3D, position: Vector3, axis: Vector3) = this()
-      /* CompleteClass */
-      override def disableAngularMotor(): Unit = js.native
-      /* CompleteClass */
-      override def disableLinearMotor(): Unit = js.native
-      /* CompleteClass */
-      override def enableAngularMotor(velocity: Double, acceleration: Double): Unit = js.native
-      /* CompleteClass */
-      override def enableLinearMotor(velocity: Double, acceleration: Double): Unit = js.native
-      /* CompleteClass */
-      override def getDefinition(): js.Any = js.native
-      /* CompleteClass */
-      override def setLimits(lin_lower: Double, lin_upper: Double, ang_lower: Double, ang_upper: Double): Unit = js.native
-      /* CompleteClass */
-      override def setRestitution(linear: Double, angular: Double): Unit = js.native
     }
     
     @js.native
@@ -187,21 +168,10 @@ object global extends js.Object {
         friction_slip: js.UndefOr[Double],
         max_suspension_force: js.UndefOr[Double]
       ) = this()
-      /* CompleteClass */
-      override var friction_slip: Double = js.native
-      /* CompleteClass */
-      override var max_suspension_force: Double = js.native
-      /* CompleteClass */
-      override var max_suspension_travel: Double = js.native
-      /* CompleteClass */
-      override var suspension_compression: Double = js.native
-      /* CompleteClass */
-      override var suspension_damping: Double = js.native
-      /* CompleteClass */
-      override var suspension_stiffness: Double = js.native
     }
     
     def createMaterial(material: Material): typings.physijs.Physijs.Material = js.native
+    def createMaterial(material: Material, friction: js.UndefOr[scala.Nothing], restitution: Double): typings.physijs.Physijs.Material = js.native
     def createMaterial(material: Material, friction: Double): typings.physijs.Physijs.Material = js.native
     def createMaterial(material: Material, friction: Double, restitution: Double): typings.physijs.Physijs.Material = js.native
     def noConflict(): js.Object = js.native

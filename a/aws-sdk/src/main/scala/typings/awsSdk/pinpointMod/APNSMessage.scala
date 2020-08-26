@@ -82,46 +82,94 @@ trait APNSMessage extends js.Object {
 
 object APNSMessage {
   @scala.inline
-  def apply(
-    APNSPushType: string = null,
-    Action: Action = null,
-    Badge: js.UndefOr[integer] = js.undefined,
-    Body: string = null,
-    Category: string = null,
-    CollapseId: string = null,
-    Data: MapOfString = null,
-    MediaUrl: string = null,
-    PreferredAuthenticationMethod: string = null,
-    Priority: string = null,
-    RawContent: string = null,
-    SilentPush: js.UndefOr[boolean] = js.undefined,
-    Sound: string = null,
-    Substitutions: MapOfListOfString = null,
-    ThreadId: string = null,
-    TimeToLive: js.UndefOr[integer] = js.undefined,
-    Title: string = null,
-    Url: string = null
-  ): APNSMessage = {
+  def apply(): APNSMessage = {
     val __obj = js.Dynamic.literal()
-    if (APNSPushType != null) __obj.updateDynamic("APNSPushType")(APNSPushType.asInstanceOf[js.Any])
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (!js.isUndefined(Badge)) __obj.updateDynamic("Badge")(Badge.get.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (CollapseId != null) __obj.updateDynamic("CollapseId")(CollapseId.asInstanceOf[js.Any])
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
-    if (MediaUrl != null) __obj.updateDynamic("MediaUrl")(MediaUrl.asInstanceOf[js.Any])
-    if (PreferredAuthenticationMethod != null) __obj.updateDynamic("PreferredAuthenticationMethod")(PreferredAuthenticationMethod.asInstanceOf[js.Any])
-    if (Priority != null) __obj.updateDynamic("Priority")(Priority.asInstanceOf[js.Any])
-    if (RawContent != null) __obj.updateDynamic("RawContent")(RawContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(SilentPush)) __obj.updateDynamic("SilentPush")(SilentPush.get.asInstanceOf[js.Any])
-    if (Sound != null) __obj.updateDynamic("Sound")(Sound.asInstanceOf[js.Any])
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
-    if (ThreadId != null) __obj.updateDynamic("ThreadId")(ThreadId.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeToLive)) __obj.updateDynamic("TimeToLive")(TimeToLive.get.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[APNSMessage]
   }
+  @scala.inline
+  implicit class APNSMessageOps[Self <: APNSMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAPNSPushType(value: string): Self = this.set("APNSPushType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAPNSPushType: Self = this.set("APNSPushType", js.undefined)
+    @scala.inline
+    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setBadge(value: integer): Self = this.set("Badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("Badge", js.undefined)
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setCategory(value: string): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("Category", js.undefined)
+    @scala.inline
+    def setCollapseId(value: string): Self = this.set("CollapseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseId: Self = this.set("CollapseId", js.undefined)
+    @scala.inline
+    def setData(value: MapOfString): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+    @scala.inline
+    def setMediaUrl(value: string): Self = this.set("MediaUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaUrl: Self = this.set("MediaUrl", js.undefined)
+    @scala.inline
+    def setPreferredAuthenticationMethod(value: string): Self = this.set("PreferredAuthenticationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredAuthenticationMethod: Self = this.set("PreferredAuthenticationMethod", js.undefined)
+    @scala.inline
+    def setPriority(value: string): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setRawContent(value: string): Self = this.set("RawContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawContent: Self = this.set("RawContent", js.undefined)
+    @scala.inline
+    def setSilentPush(value: boolean): Self = this.set("SilentPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilentPush: Self = this.set("SilentPush", js.undefined)
+    @scala.inline
+    def setSound(value: string): Self = this.set("Sound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSound: Self = this.set("Sound", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
+    @scala.inline
+    def setThreadId(value: string): Self = this.set("ThreadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreadId: Self = this.set("ThreadId", js.undefined)
+    @scala.inline
+    def setTimeToLive(value: integer): Self = this.set("TimeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeToLive: Self = this.set("TimeToLive", js.undefined)
+    @scala.inline
+    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

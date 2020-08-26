@@ -27,17 +27,36 @@ trait HlsOutputSettings extends js.Object {
 
 object HlsOutputSettings {
   @scala.inline
-  def apply(
-    HlsSettings: HlsSettings,
-    H265PackagingType: HlsH265PackagingType = null,
-    NameModifier: stringMin1 = null,
-    SegmentModifier: string = null
-  ): HlsOutputSettings = {
+  def apply(HlsSettings: HlsSettings): HlsOutputSettings = {
     val __obj = js.Dynamic.literal(HlsSettings = HlsSettings.asInstanceOf[js.Any])
-    if (H265PackagingType != null) __obj.updateDynamic("H265PackagingType")(H265PackagingType.asInstanceOf[js.Any])
-    if (NameModifier != null) __obj.updateDynamic("NameModifier")(NameModifier.asInstanceOf[js.Any])
-    if (SegmentModifier != null) __obj.updateDynamic("SegmentModifier")(SegmentModifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsOutputSettings]
   }
+  @scala.inline
+  implicit class HlsOutputSettingsOps[Self <: HlsOutputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHlsSettings(value: HlsSettings): Self = this.set("HlsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH265PackagingType(value: HlsH265PackagingType): Self = this.set("H265PackagingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH265PackagingType: Self = this.set("H265PackagingType", js.undefined)
+    @scala.inline
+    def setNameModifier(value: stringMin1): Self = this.set("NameModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameModifier: Self = this.set("NameModifier", js.undefined)
+    @scala.inline
+    def setSegmentModifier(value: string): Self = this.set("SegmentModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentModifier: Self = this.set("SegmentModifier", js.undefined)
+  }
+  
 }
 

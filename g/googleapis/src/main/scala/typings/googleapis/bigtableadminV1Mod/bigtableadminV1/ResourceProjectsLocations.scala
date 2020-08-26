@@ -27,6 +27,7 @@ class ResourceProjectsLocations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLocation] = js.native
   def get(callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
   def get(params: ParamsResourceProjectsLocationsGet): GaxiosPromise[SchemaLocation] = js.native
   def get(params: ParamsResourceProjectsLocationsGet, callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
   def get(
@@ -57,6 +58,7 @@ class ResourceProjectsLocations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLocationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsList): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsList,

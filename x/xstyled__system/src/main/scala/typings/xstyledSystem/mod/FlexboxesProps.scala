@@ -1,21 +1,10 @@
 package typings.xstyledSystem.mod
 
-import typings.csstype.mod.AlignContentProperty
-import typings.csstype.mod.AlignItemsProperty
-import typings.csstype.mod.AlignSelfProperty
-import typings.csstype.mod.DisplayProperty
-import typings.csstype.mod.FlexBasisProperty
-import typings.csstype.mod.FlexDirectionProperty
-import typings.csstype.mod.FlexProperty
-import typings.csstype.mod.FlexWrapProperty
-import typings.csstype.mod.GlobalsNumber
-import typings.csstype.mod.JustifyContentProperty
-import typings.csstype.mod.JustifyItemsProperty
-import typings.csstype.mod.JustifySelfProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlexboxesProps
   extends DisplayProps
      with AlignItemsProps
@@ -32,33 +21,8 @@ trait FlexboxesProps
 
 object FlexboxesProps {
   @scala.inline
-  def apply(
-    alignContent: ResponsiveValue[AlignContentProperty] = null,
-    alignItems: ResponsiveValue[AlignItemsProperty] = null,
-    alignSelf: ResponsiveValue[AlignSelfProperty] = null,
-    display: ResponsiveValue[DisplayProperty] = null,
-    flex: ResponsiveValue[FlexProperty[StyledSystemLength]] = null,
-    flexBasis: ResponsiveValue[FlexBasisProperty[StyledSystemLength]] = null,
-    flexDirection: ResponsiveValue[FlexDirectionProperty] = null,
-    flexWrap: ResponsiveValue[FlexWrapProperty] = null,
-    justifyContent: ResponsiveValue[JustifyContentProperty] = null,
-    justifyItems: ResponsiveValue[JustifyItemsProperty] = null,
-    justifySelf: ResponsiveValue[JustifySelfProperty] = null,
-    order: ResponsiveValue[GlobalsNumber] = null
-  ): FlexboxesProps = {
+  def apply(): FlexboxesProps = {
     val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (justifyItems != null) __obj.updateDynamic("justifyItems")(justifyItems.asInstanceOf[js.Any])
-    if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexboxesProps]
   }
 }

@@ -31,18 +31,38 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext extends j
 
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext {
   @scala.inline
-  def apply(
-    aliasContext: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext = null,
-    gerritProject: String = null,
-    hostUri: String = null,
-    revisionId: String = null
-  ): SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext = {
+  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (aliasContext != null) __obj.updateDynamic("aliasContext")(aliasContext.asInstanceOf[js.Any])
-    if (gerritProject != null) __obj.updateDynamic("gerritProject")(gerritProject.asInstanceOf[js.Any])
-    if (hostUri != null) __obj.updateDynamic("hostUri")(hostUri.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContextOps[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasContext(value: SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext): Self = this.set("aliasContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasContext: Self = this.set("aliasContext", js.undefined)
+    @scala.inline
+    def setGerritProject(value: String): Self = this.set("gerritProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGerritProject: Self = this.set("gerritProject", js.undefined)
+    @scala.inline
+    def setHostUri(value: String): Self = this.set("hostUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostUri: Self = this.set("hostUri", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+  }
+  
 }
 

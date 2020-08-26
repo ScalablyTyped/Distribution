@@ -71,10 +71,43 @@ trait datatable extends baseview {
   def addCss(id: Double, css: String, silent: Boolean): Unit = js.native
   def addRowCss(id: String, css: String): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean): Unit = js.native
+  def addSelectArea(
+    start: js.Any,
+    end: js.Any,
+    preserve: Boolean,
+    area_name: js.UndefOr[scala.Nothing],
+    css: js.UndefOr[scala.Nothing],
+    handle: Boolean
+  ): Unit = js.native
+  def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: js.UndefOr[scala.Nothing], css: String): Unit = js.native
+  def addSelectArea(
+    start: js.Any,
+    end: js.Any,
+    preserve: Boolean,
+    area_name: js.UndefOr[scala.Nothing],
+    css: String,
+    handle: Boolean
+  ): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String): Unit = js.native
+  def addSelectArea(
+    start: js.Any,
+    end: js.Any,
+    preserve: Boolean,
+    area_name: String,
+    css: js.UndefOr[scala.Nothing],
+    handle: Boolean
+  ): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: String): Unit = js.native
   def addSelectArea(start: js.Any, end: js.Any, preserve: Boolean, area_name: String, css: String, handle: Boolean): Unit = js.native
   def addSpan(id: js.Any, column: String, width: Double, height: Double): Unit = js.native
+  def addSpan(
+    id: js.Any,
+    column: String,
+    width: Double,
+    height: Double,
+    value: js.UndefOr[scala.Nothing],
+    css: String
+  ): Unit = js.native
   def addSpan(id: js.Any, column: String, width: Double, height: Double, value: String): Unit = js.native
   def addSpan(id: js.Any, column: String, width: Double, height: Double, value: String, css: String): Unit = js.native
   def adjustColumn(id: String): Unit = js.native
@@ -82,6 +115,7 @@ trait datatable extends baseview {
   def adjustColumn(id: Double): Unit = js.native
   def adjustColumn(id: Double, mode: String): Unit = js.native
   def adjustRowHeight(): Unit = js.native
+  def adjustRowHeight(columnId: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
   def adjustRowHeight(columnId: String): Unit = js.native
   def adjustRowHeight(columnId: String, silent: Boolean): Unit = js.native
   def attachEvent(`type`: datatableEventName, functor: WebixCallback): String | Double = js.native
@@ -100,9 +134,11 @@ trait datatable extends baseview {
   def collectValues(id: Double, mode: js.Any): js.Array[_] = js.native
   def columnId(index: Double): String | Double = js.native
   def copy(sid: String, tindex: Double): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def copy(sid: String, tindex: Double, tobj: js.Any): Unit = js.native
   def copy(sid: String, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double, tobj: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
   def count(): Double = js.native
@@ -114,15 +150,19 @@ trait datatable extends baseview {
   def edit(id: js.Any): Unit = js.native
   def editCancel(): Unit = js.native
   def editCell(row: String, col: String): Unit = js.native
+  def editCell(row: String, col: String, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: String, col: String, preserve: Boolean): Unit = js.native
   def editCell(row: String, col: String, preserve: Boolean, show: Boolean): Unit = js.native
   def editCell(row: String, col: Double): Unit = js.native
+  def editCell(row: String, col: Double, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: String, col: Double, preserve: Boolean): Unit = js.native
   def editCell(row: String, col: Double, preserve: Boolean, show: Boolean): Unit = js.native
   def editCell(row: Double, col: String): Unit = js.native
+  def editCell(row: Double, col: String, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: Double, col: String, preserve: Boolean): Unit = js.native
   def editCell(row: Double, col: String, preserve: Boolean, show: Boolean): Unit = js.native
   def editCell(row: Double, col: Double): Unit = js.native
+  def editCell(row: Double, col: Double, preserve: js.UndefOr[scala.Nothing], show: Boolean): Unit = js.native
   def editCell(row: Double, col: Double, preserve: Boolean): Unit = js.native
   def editCell(row: Double, col: Double, preserve: Boolean, show: Boolean): Unit = js.native
   def editColumn(id: String): Unit = js.native
@@ -132,9 +172,11 @@ trait datatable extends baseview {
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
+  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def filterByAll(): Unit = js.native
@@ -153,6 +195,8 @@ trait datatable extends baseview {
   def getCss(rowId: Double, columnId: Double): String = js.native
   def getEditState(): js.Any = js.native
   def getEditor(): js.Any = js.native
+  def getEditor(row: js.UndefOr[scala.Nothing], column: String): js.Any = js.native
+  def getEditor(row: js.UndefOr[scala.Nothing], column: Double): js.Any = js.native
   def getEditor(row: js.Any): js.Any = js.native
   def getEditor(row: js.Any, column: String): js.Any = js.native
   def getEditor(row: js.Any, column: Double): js.Any = js.native
@@ -203,11 +247,19 @@ trait datatable extends baseview {
   def hasCss(id: Double, css: String): Boolean = js.native
   def hasEvent(name: String): Boolean = js.native
   def hideColumn(id: String): Unit = js.native
+  def hideColumn(id: String, options: js.UndefOr[scala.Nothing], silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
+  def hideColumn(id: String, options: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
+  def hideColumn(id: String, options: js.UndefOr[scala.Nothing], silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: String, options: js.Any): Unit = js.native
+  def hideColumn(id: String, options: js.Any, silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
   def hideColumn(id: String, options: js.Any, silent: Boolean): Unit = js.native
   def hideColumn(id: String, options: js.Any, silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: Double): Unit = js.native
+  def hideColumn(id: Double, options: js.UndefOr[scala.Nothing], silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
+  def hideColumn(id: Double, options: js.UndefOr[scala.Nothing], silent: Boolean, mode: Boolean): Unit = js.native
   def hideColumn(id: Double, options: js.Any): Unit = js.native
+  def hideColumn(id: Double, options: js.Any, silent: js.UndefOr[scala.Nothing], mode: Boolean): Unit = js.native
   def hideColumn(id: Double, options: js.Any, silent: Boolean): Unit = js.native
   def hideColumn(id: Double, options: js.Any, silent: Boolean, mode: Boolean): Unit = js.native
   def hideOverlay(): Unit = js.native
@@ -217,6 +269,7 @@ trait datatable extends baseview {
   def isSelected(id: String): Unit = js.native
   def isSelected(id: Double): Unit = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
@@ -227,6 +280,7 @@ trait datatable extends baseview {
   def mapSelection(callback: WebixCallback): Unit = js.native
   def markSorting(column_id: String, direction: String): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
   def moveBottom(id: String): Unit = js.native
@@ -249,6 +303,7 @@ trait datatable extends baseview {
   def refresh(id: String): Unit = js.native
   def refresh(id: Double): Unit = js.native
   def refreshColumns(): Unit = js.native
+  def refreshColumns(config: js.UndefOr[scala.Nothing], reset: Boolean): Unit = js.native
   def refreshColumns(config: js.Array[_]): Unit = js.native
   def refreshColumns(config: js.Array[_], reset: Boolean): Unit = js.native
   def refreshFilter(id: String): Unit = js.native
@@ -302,6 +357,7 @@ trait datatable extends baseview {
   def showItemByIndex(index: Double): Unit = js.native
   def showOverlay(message: String): Unit = js.native
   def sort(by: String): Unit = js.native
+  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native

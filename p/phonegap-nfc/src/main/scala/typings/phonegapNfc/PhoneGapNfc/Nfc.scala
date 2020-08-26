@@ -19,6 +19,12 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit]): Unit = js.native
+  def addMimeTypeListener(
+    mimeType: String,
+    callback: js.Function0[Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit], win: js.Function0[Unit]): Unit = js.native
   def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -31,6 +37,11 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def addNdefFormatableListener(callback: js.Function1[/* event */ NdefTagEvent, Unit]): Unit = js.native
+  def addNdefFormatableListener(
+    callback: js.Function1[/* event */ NdefTagEvent, Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def addNdefFormatableListener(callback: js.Function1[/* event */ NdefTagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
   def addNdefFormatableListener(
     callback: js.Function1[/* event */ NdefTagEvent, Unit],
@@ -47,6 +58,11 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def addNdefListener(callback: js.Function1[/* event */ NdefTagEvent, Unit]): Unit = js.native
+  def addNdefListener(
+    callback: js.Function1[/* event */ NdefTagEvent, Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def addNdefListener(callback: js.Function1[/* event */ NdefTagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
   def addNdefListener(
     callback: js.Function1[/* event */ NdefTagEvent, Unit],
@@ -61,6 +77,11 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def addTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
+  def addTagDiscoveredListener(
+    callback: js.Function1[/* event */ TagEvent, Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def addTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
   def addTagDiscoveredListener(
     callback: js.Function1[/* event */ TagEvent, Unit],
@@ -80,6 +101,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called when NFC is disabled or missing.
     */
   def enabled(): Unit = js.native
+  def enabled(win: js.UndefOr[scala.Nothing], fail: js.Function1[/* status */ String, Unit]): Unit = js.native
   def enabled(win: js.Function1[/* status */ String, Unit]): Unit = js.native
   def enabled(win: js.Function1[/* status */ String, Unit], fail: js.Function1[/* status */ String, Unit]): Unit = js.native
   /**
@@ -90,6 +112,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def erase(): Unit = js.native
+  def erase(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def erase(win: js.Function0[Unit]): Unit = js.native
   def erase(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -102,9 +125,11 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def handover(uris: String): Unit = js.native
+  def handover(uris: String, win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def handover(uris: String, win: js.Function0[Unit]): Unit = js.native
   def handover(uris: String, win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   def handover(uris: js.Array[String]): Unit = js.native
+  def handover(uris: js.Array[String], win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def handover(uris: js.Array[String], win: js.Function0[Unit]): Unit = js.native
   def handover(uris: js.Array[String], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -115,6 +140,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def makeReadOnly(): Unit = js.native
+  def makeReadOnly(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def makeReadOnly(win: js.Function0[Unit]): Unit = js.native
   def makeReadOnly(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -125,6 +151,12 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error during removal.
     */
   def removeMimeTypeListener(mimeType: String, callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
+  def removeMimeTypeListener(
+    mimeType: String,
+    callback: js.Function1[/* event */ TagEvent, Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def removeMimeTypeListener(mimeType: String, callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
   def removeMimeTypeListener(
     mimeType: String,
@@ -139,6 +171,11 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error during removal.
     */
   def removeNdefListener(callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
+  def removeNdefListener(
+    callback: js.Function1[/* event */ TagEvent, Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def removeNdefListener(callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
   def removeNdefListener(
     callback: js.Function1[/* event */ TagEvent, Unit],
@@ -152,6 +189,11 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error during removal.
     */
   def removeTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
+  def removeTagDiscoveredListener(
+    callback: js.Function1[/* event */ TagEvent, Unit],
+    win: js.UndefOr[scala.Nothing],
+    fail: js.Function0[Unit]
+  ): Unit = js.native
   def removeTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
   def removeTagDiscoveredListener(
     callback: js.Function1[/* event */ TagEvent, Unit],
@@ -166,6 +208,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def share(ndefMessage: js.Array[NdefRecord]): Unit = js.native
+  def share(ndefMessage: js.Array[NdefRecord], win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def share(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit]): Unit = js.native
   def share(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -174,6 +217,7 @@ trait Nfc extends Util {
     * @param fail Error callback function, invoked when error occurs.
     */
   def showSettings(): Unit = js.native
+  def showSettings(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def showSettings(win: js.Function0[Unit]): Unit = js.native
   def showSettings(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -182,6 +226,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def stopHandover(): Unit = js.native
+  def stopHandover(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def stopHandover(win: js.Function0[Unit]): Unit = js.native
   def stopHandover(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -190,6 +235,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def unshare(): Unit = js.native
+  def unshare(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def unshare(win: js.Function0[Unit]): Unit = js.native
   def unshare(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
   /**
@@ -203,6 +249,7 @@ trait Nfc extends Util {
     * @param fail The callback that is called if there was an error.
     */
   def write(ndefMessage: js.Array[NdefRecord]): Unit = js.native
+  def write(ndefMessage: js.Array[NdefRecord], win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
   def write(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit]): Unit = js.native
   def write(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
 }

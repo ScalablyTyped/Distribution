@@ -24,6 +24,11 @@ class ChaptersButtonCls protected ()
     */
   def this(player: typings.videoJs.mod.videojs.Player) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions) = this()
+  def this(
+    player: typings.videoJs.mod.videojs.Player,
+    options: js.UndefOr[scala.Nothing],
+    ready: ReadyCallback
+  ) = this()
   def this(player: typings.videoJs.mod.videojs.Player, options: TrackButtonOptions, ready: ReadyCallback) = this()
 }
 

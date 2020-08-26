@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "get-caller-file" : "2.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "get-caller-file" : "2.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

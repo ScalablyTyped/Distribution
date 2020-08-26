@@ -18,11 +18,30 @@ trait GetComponentResponse extends js.Object {
 
 object GetComponentResponse {
   @scala.inline
-  def apply(component: Component = null, requestId: NonEmptyString = null): GetComponentResponse = {
+  def apply(): GetComponentResponse = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComponentResponse]
   }
+  @scala.inline
+  implicit class GetComponentResponseOps[Self <: GetComponentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: Component): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

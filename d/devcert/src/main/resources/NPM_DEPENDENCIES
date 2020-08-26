@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devcert" : "1.1.1"
+      "devcert" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "devcert" : "1.1.1"
+      "devcert" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

@@ -22,12 +22,34 @@ trait ListHostedZonesRequest extends js.Object {
 
 object ListHostedZonesRequest {
   @scala.inline
-  def apply(DelegationSetId: ResourceId = null, Marker: PageMarker = null, MaxItems: PageMaxItems = null): ListHostedZonesRequest = {
+  def apply(): ListHostedZonesRequest = {
     val __obj = js.Dynamic.literal()
-    if (DelegationSetId != null) __obj.updateDynamic("DelegationSetId")(DelegationSetId.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHostedZonesRequest]
   }
+  @scala.inline
+  implicit class ListHostedZonesRequestOps[Self <: ListHostedZonesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelegationSetId(value: ResourceId): Self = this.set("DelegationSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegationSetId: Self = this.set("DelegationSetId", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait RecoveryPointCreator extends js.Object {
 
 object RecoveryPointCreator {
   @scala.inline
-  def apply(
-    BackupPlanArn: ARN = null,
-    BackupPlanId: String = null,
-    BackupPlanVersion: String = null,
-    BackupRuleId: String = null
-  ): RecoveryPointCreator = {
+  def apply(): RecoveryPointCreator = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanArn != null) __obj.updateDynamic("BackupPlanArn")(BackupPlanArn.asInstanceOf[js.Any])
-    if (BackupPlanId != null) __obj.updateDynamic("BackupPlanId")(BackupPlanId.asInstanceOf[js.Any])
-    if (BackupPlanVersion != null) __obj.updateDynamic("BackupPlanVersion")(BackupPlanVersion.asInstanceOf[js.Any])
-    if (BackupRuleId != null) __obj.updateDynamic("BackupRuleId")(BackupRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecoveryPointCreator]
   }
+  @scala.inline
+  implicit class RecoveryPointCreatorOps[Self <: RecoveryPointCreator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanArn(value: ARN): Self = this.set("BackupPlanArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanArn: Self = this.set("BackupPlanArn", js.undefined)
+    @scala.inline
+    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    @scala.inline
+    def setBackupPlanVersion(value: String): Self = this.set("BackupPlanVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanVersion: Self = this.set("BackupPlanVersion", js.undefined)
+    @scala.inline
+    def setBackupRuleId(value: String): Self = this.set("BackupRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRuleId: Self = this.set("BackupRuleId", js.undefined)
+  }
+  
 }
 

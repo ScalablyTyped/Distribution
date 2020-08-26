@@ -22,14 +22,32 @@ trait AddIpRoutesRequest extends js.Object {
 
 object AddIpRoutesRequest {
   @scala.inline
-  def apply(
-    DirectoryId: DirectoryId,
-    IpRoutes: IpRoutes,
-    UpdateSecurityGroupForDirectoryControllers: js.UndefOr[UpdateSecurityGroupForDirectoryControllers] = js.undefined
-  ): AddIpRoutesRequest = {
+  def apply(DirectoryId: DirectoryId, IpRoutes: IpRoutes): AddIpRoutesRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], IpRoutes = IpRoutes.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpdateSecurityGroupForDirectoryControllers)) __obj.updateDynamic("UpdateSecurityGroupForDirectoryControllers")(UpdateSecurityGroupForDirectoryControllers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddIpRoutesRequest]
   }
+  @scala.inline
+  implicit class AddIpRoutesRequestOps[Self <: AddIpRoutesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpRoutesVarargs(value: IpRoute*): Self = this.set("IpRoutes", js.Array(value :_*))
+    @scala.inline
+    def setIpRoutes(value: IpRoutes): Self = this.set("IpRoutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdateSecurityGroupForDirectoryControllers(value: UpdateSecurityGroupForDirectoryControllers): Self = this.set("UpdateSecurityGroupForDirectoryControllers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSecurityGroupForDirectoryControllers: Self = this.set("UpdateSecurityGroupForDirectoryControllers", js.undefined)
+  }
+  
 }
 

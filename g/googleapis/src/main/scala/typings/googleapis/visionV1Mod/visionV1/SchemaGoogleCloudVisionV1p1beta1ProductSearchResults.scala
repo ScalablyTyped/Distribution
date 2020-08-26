@@ -29,16 +29,38 @@ trait SchemaGoogleCloudVisionV1p1beta1ProductSearchResults extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1ProductSearchResults {
   @scala.inline
-  def apply(
-    indexTime: String = null,
-    productGroupedResults: js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult] = null,
-    results: js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult] = null
-  ): SchemaGoogleCloudVisionV1p1beta1ProductSearchResults = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1ProductSearchResults = {
     val __obj = js.Dynamic.literal()
-    if (indexTime != null) __obj.updateDynamic("indexTime")(indexTime.asInstanceOf[js.Any])
-    if (productGroupedResults != null) __obj.updateDynamic("productGroupedResults")(productGroupedResults.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1ProductSearchResults]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsOps[Self <: SchemaGoogleCloudVisionV1p1beta1ProductSearchResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexTime(value: String): Self = this.set("indexTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexTime: Self = this.set("indexTime", js.undefined)
+    @scala.inline
+    def setProductGroupedResultsVarargs(value: SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult*): Self = this.set("productGroupedResults", js.Array(value :_*))
+    @scala.inline
+    def setProductGroupedResults(value: js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsGroupedResult]): Self = this.set("productGroupedResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductGroupedResults: Self = this.set("productGroupedResults", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaGoogleCloudVisionV1p1beta1ProductSearchResultsResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+  }
+  
 }
 

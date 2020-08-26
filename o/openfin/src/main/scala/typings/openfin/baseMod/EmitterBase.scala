@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
   def this(wire: default, emitterAccessor: EmitterAccessor) = this()
+  var deleteEmitterIfNothingRegistered: js.Any = js.native
   var emitterAccessor: js.Any = js.native
   var getEmitter: js.Any = js.native
   var hasEmitter: js.Any = js.native
@@ -69,8 +70,8 @@ class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     ],
     options: SubOptions
   ): js.Promise[this.type] = js.native
-  /* protected */ def deregisterAllListeners(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[Unit | EventEmitter] = js.native
-  /* protected */ def deregisterAllListeners(eventType: js.Symbol): js.Promise[Unit | EventEmitter] = js.native
+  /* protected */ def deregisterAllListeners(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[EventEmitter | Unit] = js.native
+  /* protected */ def deregisterAllListeners(eventType: js.Symbol): js.Promise[EventEmitter | Unit] = js.native
   /* protected */ def deregisterEventListener(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[Unit | EventEmitter] = js.native
   /* protected */ def deregisterEventListener(eventType: (Extract[/* keyof EventTypes */ String, String]) | String, options: SubOptions): js.Promise[Unit | EventEmitter] = js.native
   /* protected */ def deregisterEventListener(eventType: js.Symbol): js.Promise[Unit | EventEmitter] = js.native

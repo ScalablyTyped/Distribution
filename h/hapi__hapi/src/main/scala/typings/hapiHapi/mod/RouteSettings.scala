@@ -1,78 +1,36 @@
 package typings.hapiHapi.mod
 
-import typings.hapiHapi.anon.Collect
-import typings.hapiHapi.anon.FailAction
-import typings.hapiHapi.anon.RelativeTo
-import typings.hapiHapi.anon.Server
-import typings.hapiHapi.anon.keyinRouteRequestExtTypeR
-import typings.hapiHapi.hapiHapiBooleans.`false`
-import typings.hapiHapi.mod.Json.StringifyArguments
-import typings.hapiHapi.mod.Lifecycle.Method
-import typings.hapiHapi.mod.Util.Dictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteSettings extends CommonRouteProperties {
-  var auth: js.UndefOr[AuthSettings] = js.undefined
+  var auth: js.UndefOr[AuthSettings] = js.native
 }
 
 object RouteSettings {
   @scala.inline
-  def apply(
-    app: RouteOptionsApp = null,
-    auth: AuthSettings = null,
-    bind: js.UndefOr[Null | js.Object] = js.undefined,
-    cache: `false` | RouteOptionsCache = null,
-    compression: Dictionary[RouteCompressionEncoderSettings] = null,
-    cors: Boolean | RouteOptionsCors = null,
-    description: String = null,
-    ext: keyinRouteRequestExtTypeR = null,
-    files: RelativeTo = null,
-    handler: Method | js.Object = null,
-    id: String = null,
-    isInternal: js.UndefOr[Boolean] = js.undefined,
-    json: StringifyArguments = null,
-    jsonp: String = null,
-    log: Collect = null,
-    notes: String | js.Array[String] = null,
-    payload: RouteOptionsPayload = null,
-    plugins: PluginSpecificConfiguration = null,
-    pre: RouteOptionsPreArray = null,
-    response: RouteOptionsResponse = null,
-    security: RouteOptionsSecure = null,
-    state: FailAction = null,
-    tags: js.Array[String] = null,
-    timeout: Server = null,
-    validate: RouteOptionsValidate = null
-  ): RouteSettings = {
+  def apply(): RouteSettings = {
     val __obj = js.Dynamic.literal()
-    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (!js.isUndefined(bind)) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInternal)) __obj.updateDynamic("isInternal")(isInternal.get.asInstanceOf[js.Any])
-    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSettings]
   }
+  @scala.inline
+  implicit class RouteSettingsOps[Self <: RouteSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: AuthSettings): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+  }
+  
 }
 

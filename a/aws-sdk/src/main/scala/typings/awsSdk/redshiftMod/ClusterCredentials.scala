@@ -22,12 +22,34 @@ trait ClusterCredentials extends js.Object {
 
 object ClusterCredentials {
   @scala.inline
-  def apply(DbPassword: SensitiveString = null, DbUser: String = null, Expiration: TStamp = null): ClusterCredentials = {
+  def apply(): ClusterCredentials = {
     val __obj = js.Dynamic.literal()
-    if (DbPassword != null) __obj.updateDynamic("DbPassword")(DbPassword.asInstanceOf[js.Any])
-    if (DbUser != null) __obj.updateDynamic("DbUser")(DbUser.asInstanceOf[js.Any])
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterCredentials]
   }
+  @scala.inline
+  implicit class ClusterCredentialsOps[Self <: ClusterCredentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDbPassword(value: SensitiveString): Self = this.set("DbPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbPassword: Self = this.set("DbPassword", js.undefined)
+    @scala.inline
+    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbUser: Self = this.set("DbUser", js.undefined)
+    @scala.inline
+    def setExpiration(value: TStamp): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+  }
+  
 }
 

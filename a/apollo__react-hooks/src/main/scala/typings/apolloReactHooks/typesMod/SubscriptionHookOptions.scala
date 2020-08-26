@@ -1,40 +1,38 @@
 package typings.apolloReactHooks.typesMod
 
-import typings.apolloClient.mod.default
-import typings.apolloClient.watchQueryOptionsMod.FetchPolicy
 import typings.apolloReactCommon.typesMod.BaseSubscriptionOptions
-import typings.apolloReactCommon.typesMod.OnSubscriptionDataOptions
 import typings.graphql.astMod.DocumentNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SubscriptionHookOptions[TData, TVariables] extends BaseSubscriptionOptions[TData, TVariables] {
-  var subscription: js.UndefOr[DocumentNode] = js.undefined
+  var subscription: js.UndefOr[DocumentNode] = js.native
 }
 
 object SubscriptionHookOptions {
   @scala.inline
-  def apply[TData, TVariables](
-    client: default[js.Object] = null,
-    fetchPolicy: FetchPolicy = null,
-    onSubscriptionComplete: () => Unit = null,
-    onSubscriptionData: /* options */ OnSubscriptionDataOptions[TData] => _ = null,
-    shouldResubscribe: Boolean | (js.Function1[/* options */ BaseSubscriptionOptions[TData, TVariables], Boolean]) = null,
-    skip: js.UndefOr[Boolean] = js.undefined,
-    subscription: DocumentNode = null,
-    variables: TVariables = null
-  ): SubscriptionHookOptions[TData, TVariables] = {
+  def apply[TData, TVariables](): SubscriptionHookOptions[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (onSubscriptionComplete != null) __obj.updateDynamic("onSubscriptionComplete")(js.Any.fromFunction0(onSubscriptionComplete))
-    if (onSubscriptionData != null) __obj.updateDynamic("onSubscriptionData")(js.Any.fromFunction1(onSubscriptionData))
-    if (shouldResubscribe != null) __obj.updateDynamic("shouldResubscribe")(shouldResubscribe.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionHookOptions[TData, TVariables]]
   }
+  @scala.inline
+  implicit class SubscriptionHookOptionsOps[Self <: SubscriptionHookOptions[_, _], TData, TVariables] (val x: Self with (SubscriptionHookOptions[TData, TVariables])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubscription(value: DocumentNode): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("subscription", js.undefined)
+  }
+  
 }
 

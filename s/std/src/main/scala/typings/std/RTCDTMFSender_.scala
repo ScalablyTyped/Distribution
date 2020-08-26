@@ -28,6 +28,7 @@ trait RTCDTMFSender_ extends EventTarget {
     options: AddEventListenerOptions
   ): Unit = js.native
   def insertDTMF(tones: java.lang.String): Unit = js.native
+  def insertDTMF(tones: java.lang.String, duration: js.UndefOr[scala.Nothing], interToneGap: Double): Unit = js.native
   def insertDTMF(tones: java.lang.String, duration: Double): Unit = js.native
   def insertDTMF(tones: java.lang.String, duration: Double, interToneGap: Double): Unit = js.native
   @JSName("removeEventListener")

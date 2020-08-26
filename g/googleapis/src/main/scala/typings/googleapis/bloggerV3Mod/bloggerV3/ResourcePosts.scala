@@ -28,6 +28,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePostsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePostsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPost] = js.native
   def get(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def get(params: ParamsResourcePostsGet): GaxiosPromise[SchemaPost] = js.native
   def get(params: ParamsResourcePostsGet, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def get(
@@ -82,6 +84,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def getByPath(): GaxiosPromise[SchemaPost] = js.native
   def getByPath(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def getByPath(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def getByPath(params: ParamsResourcePostsGetbypath): GaxiosPromise[SchemaPost] = js.native
   def getByPath(params: ParamsResourcePostsGetbypath, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def getByPath(
@@ -113,6 +116,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaPost] = js.native
   def insert(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def insert(params: ParamsResourcePostsInsert): GaxiosPromise[SchemaPost] = js.native
   def insert(params: ParamsResourcePostsInsert, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def insert(
@@ -150,6 +154,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPostList] = js.native
   def list(callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
   def list(params: ParamsResourcePostsList): GaxiosPromise[SchemaPostList] = js.native
   def list(params: ParamsResourcePostsList, callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def list(
@@ -184,6 +189,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaPost] = js.native
   def patch(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def patch(params: ParamsResourcePostsPatch): GaxiosPromise[SchemaPost] = js.native
   def patch(params: ParamsResourcePostsPatch, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def patch(
@@ -214,6 +220,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def publish(): GaxiosPromise[SchemaPost] = js.native
   def publish(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def publish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def publish(params: ParamsResourcePostsPublish): GaxiosPromise[SchemaPost] = js.native
   def publish(params: ParamsResourcePostsPublish, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def publish(
@@ -242,6 +249,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def revert(): GaxiosPromise[SchemaPost] = js.native
   def revert(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def revert(params: ParamsResourcePostsRevert): GaxiosPromise[SchemaPost] = js.native
   def revert(params: ParamsResourcePostsRevert, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def revert(
@@ -272,6 +280,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaPostList] = js.native
   def search(callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
   def search(params: ParamsResourcePostsSearch): GaxiosPromise[SchemaPostList] = js.native
   def search(params: ParamsResourcePostsSearch, callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def search(
@@ -306,6 +315,7 @@ class ResourcePosts protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPost] = js.native
   def update(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def update(params: ParamsResourcePostsUpdate): GaxiosPromise[SchemaPost] = js.native
   def update(params: ParamsResourcePostsUpdate, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def update(

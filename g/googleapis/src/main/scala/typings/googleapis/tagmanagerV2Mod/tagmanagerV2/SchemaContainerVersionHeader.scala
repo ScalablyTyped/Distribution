@@ -65,36 +65,74 @@ trait SchemaContainerVersionHeader extends js.Object {
 
 object SchemaContainerVersionHeader {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    containerId: String = null,
-    containerVersionId: String = null,
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    numCustomTemplates: String = null,
-    numMacros: String = null,
-    numRules: String = null,
-    numTags: String = null,
-    numTriggers: String = null,
-    numVariables: String = null,
-    numZones: String = null,
-    path: String = null
-  ): SchemaContainerVersionHeader = {
+  def apply(): SchemaContainerVersionHeader = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numCustomTemplates != null) __obj.updateDynamic("numCustomTemplates")(numCustomTemplates.asInstanceOf[js.Any])
-    if (numMacros != null) __obj.updateDynamic("numMacros")(numMacros.asInstanceOf[js.Any])
-    if (numRules != null) __obj.updateDynamic("numRules")(numRules.asInstanceOf[js.Any])
-    if (numTags != null) __obj.updateDynamic("numTags")(numTags.asInstanceOf[js.Any])
-    if (numTriggers != null) __obj.updateDynamic("numTriggers")(numTriggers.asInstanceOf[js.Any])
-    if (numVariables != null) __obj.updateDynamic("numVariables")(numVariables.asInstanceOf[js.Any])
-    if (numZones != null) __obj.updateDynamic("numZones")(numZones.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerVersionHeader]
   }
+  @scala.inline
+  implicit class SchemaContainerVersionHeaderOps[Self <: SchemaContainerVersionHeader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setContainerVersionId(value: String): Self = this.set("containerVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerVersionId: Self = this.set("containerVersionId", js.undefined)
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumCustomTemplates(value: String): Self = this.set("numCustomTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumCustomTemplates: Self = this.set("numCustomTemplates", js.undefined)
+    @scala.inline
+    def setNumMacros(value: String): Self = this.set("numMacros", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumMacros: Self = this.set("numMacros", js.undefined)
+    @scala.inline
+    def setNumRules(value: String): Self = this.set("numRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRules: Self = this.set("numRules", js.undefined)
+    @scala.inline
+    def setNumTags(value: String): Self = this.set("numTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumTags: Self = this.set("numTags", js.undefined)
+    @scala.inline
+    def setNumTriggers(value: String): Self = this.set("numTriggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumTriggers: Self = this.set("numTriggers", js.undefined)
+    @scala.inline
+    def setNumVariables(value: String): Self = this.set("numVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumVariables: Self = this.set("numVariables", js.undefined)
+    @scala.inline
+    def setNumZones(value: String): Self = this.set("numZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumZones: Self = this.set("numZones", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

@@ -27,14 +27,12 @@ class IndexedAttribute protected () extends Element {
     * In version 7.14.0: introduced
     */
   def ascending: Boolean = js.native
-  def ascending(newValue: Boolean): js.Any = js.native
-  def attribute(): js.Any = js.native
-  def attribute(newValue: Attribute): js.Any = js.native
-  @JSName("attribute")
-  def attribute_Union: Attribute | Null = js.native
+  def ascending_=(newValue: Boolean): Unit = js.native
+  def attribute: Attribute | Null = js.native
+  def attribute_=(newValue: Attribute | Null): Unit = js.native
   def containerAsIndex: Index = js.native
   def `type`: IndexedAttributeType = js.native
-  def `type`(newValue: IndexedAttributeType): js.Any = js.native
+  def type_=(newValue: IndexedAttributeType): Unit = js.native
 }
 
 /* static members */

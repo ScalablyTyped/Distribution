@@ -18,10 +18,26 @@ trait SchemaUserMakeAdmin extends js.Object {
 
 object SchemaUserMakeAdmin {
   @scala.inline
-  def apply(status: js.UndefOr[Boolean] = js.undefined): SchemaUserMakeAdmin = {
+  def apply(): SchemaUserMakeAdmin = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserMakeAdmin]
   }
+  @scala.inline
+  implicit class SchemaUserMakeAdminOps[Self <: SchemaUserMakeAdmin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

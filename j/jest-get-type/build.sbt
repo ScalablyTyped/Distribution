@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jest-get-type"
-version := "25.2.6-6d588a"
-scalaVersion := "2.13.2"
+version := "26.0.0-8da991"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

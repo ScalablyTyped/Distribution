@@ -38,24 +38,50 @@ trait JobListEntry extends js.Object {
 
 object JobListEntry {
   @scala.inline
-  def apply(
-    CreationDate: Timestamp = null,
-    Description: String = null,
-    IsMaster: js.UndefOr[Boolean] = js.undefined,
-    JobId: String = null,
-    JobState: JobState = null,
-    JobType: JobType = null,
-    SnowballType: SnowballType = null
-  ): JobListEntry = {
+  def apply(): JobListEntry = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsMaster)) __obj.updateDynamic("IsMaster")(IsMaster.get.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (JobState != null) __obj.updateDynamic("JobState")(JobState.asInstanceOf[js.Any])
-    if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
-    if (SnowballType != null) __obj.updateDynamic("SnowballType")(SnowballType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobListEntry]
   }
+  @scala.inline
+  implicit class JobListEntryOps[Self <: JobListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setIsMaster(value: Boolean): Self = this.set("IsMaster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMaster: Self = this.set("IsMaster", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setJobState(value: JobState): Self = this.set("JobState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobState: Self = this.set("JobState", js.undefined)
+    @scala.inline
+    def setJobType(value: JobType): Self = this.set("JobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobType: Self = this.set("JobType", js.undefined)
+    @scala.inline
+    def setSnowballType(value: SnowballType): Self = this.set("SnowballType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowballType: Self = this.set("SnowballType", js.undefined)
+  }
+  
 }
 

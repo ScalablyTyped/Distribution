@@ -3,225 +3,1354 @@ package typings.antDesignProLayout.baseMenuMod
 import typings.antDesignProLayout.anon.DefaultOpenAll
 import typings.antDesignProLayout.anon.MenuDataItemisUrlboolean
 import typings.antDesignProLayout.anon.Pathname
-import typings.antDesignProLayout.antDesignProLayoutStrings.click
-import typings.antDesignProLayout.antDesignProLayoutStrings.hover
+import typings.antDesignProLayout.antDesignProLayoutStrings.`additions text`
+import typings.antDesignProLayout.antDesignProLayoutStrings.`inline`
+import typings.antDesignProLayout.antDesignProLayoutStrings.additions
+import typings.antDesignProLayout.antDesignProLayoutStrings.all
+import typings.antDesignProLayout.antDesignProLayoutStrings.ascending
+import typings.antDesignProLayout.antDesignProLayoutStrings.assertive
+import typings.antDesignProLayout.antDesignProLayoutStrings.both
+import typings.antDesignProLayout.antDesignProLayoutStrings.copy
+import typings.antDesignProLayout.antDesignProLayoutStrings.date
+import typings.antDesignProLayout.antDesignProLayoutStrings.decimal
+import typings.antDesignProLayout.antDesignProLayoutStrings.descending
+import typings.antDesignProLayout.antDesignProLayoutStrings.dialog
+import typings.antDesignProLayout.antDesignProLayoutStrings.email
+import typings.antDesignProLayout.antDesignProLayoutStrings.execute
+import typings.antDesignProLayout.antDesignProLayoutStrings.grammar
+import typings.antDesignProLayout.antDesignProLayoutStrings.grid
+import typings.antDesignProLayout.antDesignProLayoutStrings.horizontal
+import typings.antDesignProLayout.antDesignProLayoutStrings.inherit
+import typings.antDesignProLayout.antDesignProLayoutStrings.link
+import typings.antDesignProLayout.antDesignProLayoutStrings.list
+import typings.antDesignProLayout.antDesignProLayoutStrings.listbox
+import typings.antDesignProLayout.antDesignProLayoutStrings.location
+import typings.antDesignProLayout.antDesignProLayoutStrings.ltr
+import typings.antDesignProLayout.antDesignProLayoutStrings.menu
+import typings.antDesignProLayout.antDesignProLayoutStrings.mix
+import typings.antDesignProLayout.antDesignProLayoutStrings.mixed
+import typings.antDesignProLayout.antDesignProLayoutStrings.move
+import typings.antDesignProLayout.antDesignProLayoutStrings.no
+import typings.antDesignProLayout.antDesignProLayoutStrings.none
+import typings.antDesignProLayout.antDesignProLayoutStrings.numeric
+import typings.antDesignProLayout.antDesignProLayoutStrings.off
+import typings.antDesignProLayout.antDesignProLayoutStrings.on
+import typings.antDesignProLayout.antDesignProLayoutStrings.other
+import typings.antDesignProLayout.antDesignProLayoutStrings.page
+import typings.antDesignProLayout.antDesignProLayoutStrings.polite
+import typings.antDesignProLayout.antDesignProLayoutStrings.popup
 import typings.antDesignProLayout.antDesignProLayoutStrings.realDark
-import typings.antDesignProLayout.antDesignProLayoutStrings.sidemenu
-import typings.antDesignProLayout.antDesignProLayoutStrings.topmenu
+import typings.antDesignProLayout.antDesignProLayoutStrings.removals
+import typings.antDesignProLayout.antDesignProLayoutStrings.rtl
+import typings.antDesignProLayout.antDesignProLayoutStrings.search
+import typings.antDesignProLayout.antDesignProLayoutStrings.side
+import typings.antDesignProLayout.antDesignProLayoutStrings.spelling
+import typings.antDesignProLayout.antDesignProLayoutStrings.step
+import typings.antDesignProLayout.antDesignProLayoutStrings.tel
+import typings.antDesignProLayout.antDesignProLayoutStrings.text
+import typings.antDesignProLayout.antDesignProLayoutStrings.time
+import typings.antDesignProLayout.antDesignProLayoutStrings.top
+import typings.antDesignProLayout.antDesignProLayoutStrings.tree
+import typings.antDesignProLayout.antDesignProLayoutStrings.url
+import typings.antDesignProLayout.antDesignProLayoutStrings.vertical
+import typings.antDesignProLayout.antDesignProLayoutStrings.yes
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.typingsMod.MenuDataItem
 import typings.antDesignProLayout.typingsMod.MessageDescriptor
 import typings.antDesignProLayout.typingsMod.Route
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.antd.menuContextMod.MenuTheme
-import typings.antd.menuMod.ClickParam
 import typings.antd.menuMod.MenuMode
 import typings.antd.menuMod.MenuProps
-import typings.antd.menuMod.SelectParam
 import typings.history.mod.History
 import typings.history.mod.Location
 import typings.history.mod.LocationState
+import typings.rcMenu.anon.PartialkeyinMenuModeother
+import typings.rcMenu.interfaceMod.BuiltinPlacements
+import typings.rcMenu.interfaceMod.DestroyEventHandler
+import typings.rcMenu.interfaceMod.MenuClickEventHandler
+import typings.rcMenu.interfaceMod.MenuInfo
+import typings.rcMenu.interfaceMod.OpenAnimation
+import typings.rcMenu.interfaceMod.RenderIconType
+import typings.rcMenu.interfaceMod.SelectEventHandler
+import typings.rcMenu.interfaceMod.SelectInfo
+import typings.rcMenu.interfaceMod.TriggerSubMenuAction
+import typings.rcTrigger.interfaceMod.MotionType
+import typings.react.anon.Html
+import typings.react.mod.AnimationEvent
+import typings.react.mod.AnimationEventHandler
+import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
+import typings.react.mod.ClipboardEvent
+import typings.react.mod.ClipboardEventHandler
+import typings.react.mod.CompositionEvent
+import typings.react.mod.CompositionEventHandler
+import typings.react.mod.DragEvent
+import typings.react.mod.DragEventHandler
+import typings.react.mod.FocusEvent
+import typings.react.mod.FocusEventHandler
+import typings.react.mod.FormEvent
+import typings.react.mod.FormEventHandler
+import typings.react.mod.Key
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
+import typings.react.mod.MouseEventHandler
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.NativeUIEvent
+import typings.react.mod.PointerEvent
+import typings.react.mod.PointerEventHandler
+import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
+import typings.react.mod.TouchEvent
+import typings.react.mod.TouchEventHandler
+import typings.react.mod.TransitionEvent
+import typings.react.mod.TransitionEventHandler
+import typings.react.mod.UIEvent
+import typings.react.mod.UIEventHandler
+import typings.react.mod.WheelEvent
+import typings.react.mod.WheelEventHandler
 import typings.reactRouter.mod.StaticContext
 import typings.reactRouter.mod.`match`
+import typings.std.Event
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
-import typings.std.MouseEvent
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.RouterTypes<@ant-design/pro-layout.@ant-design/pro-layout/lib/typings.Route>> */
 /* Inlined parent std.Omit<antd.antd/lib/menu.MenuProps, 'openKeys' | 'onOpenChange'> */
-/* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.Settings> */
+/* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.PureSettings> */
+@js.native
 trait BaseMenuProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var collapsed: js.UndefOr[Boolean] = js.undefined
-  var colorWeak: js.UndefOr[Boolean] = js.undefined
-  var computedMatch: js.UndefOr[`match`[Route]] = js.undefined
-  var contentWidth: js.UndefOr[ContentWidth] = js.undefined
-  var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.undefined
-  var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.undefined
-  var fixSiderbar: js.UndefOr[Boolean] = js.undefined
-  var fixedHeader: js.UndefOr[Boolean] = js.undefined
-  var focusable: js.UndefOr[Boolean] = js.undefined
-  var forceSubMenuRender: js.UndefOr[Boolean] = js.undefined
-  var formatMessage: js.UndefOr[js.Function1[/* message */ MessageDescriptor, String]] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
-  var handleOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.undefined
-  var history: js.UndefOr[History[LocationState]] = js.undefined
-  var iconfontUrl: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inlineCollapsed: js.UndefOr[Boolean] = js.undefined
-  var inlineIndent: js.UndefOr[Double] = js.undefined
-  var isMobile: js.UndefOr[Boolean] = js.undefined
-  var layout: js.UndefOr[sidemenu | topmenu] = js.undefined
-  var location: js.UndefOr[Location[LocationState] | Pathname] = js.undefined
-  var `match`: js.UndefOr[typings.reactRouter.mod.`match`[js.Object]] = js.undefined
-  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
-  var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
+  var about: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.native
+  var activeKey: js.UndefOr[String] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var autoCapitalize: js.UndefOr[String] = js.native
+  var autoCorrect: js.UndefOr[String] = js.native
+  var autoSave: js.UndefOr[String] = js.native
+  var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsedWidth: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String] = js.native
+  var colorWeak: js.UndefOr[Boolean] = js.native
+  var computedMatch: js.UndefOr[`match`[Route]] = js.native
+  var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  var contentWidth: js.UndefOr[ContentWidth] = js.native
+  var contextMenu: js.UndefOr[String] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  var datatype: js.UndefOr[String] = js.native
+  var defaultActiveFirst: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultMotions: js.UndefOr[PartialkeyinMenuModeother] = js.native
+  var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.native
+  var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.native
+  var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[ltr | rtl] = js.native
+  var draggable: js.UndefOr[Booleanish] = js.native
+  var expandIcon: js.UndefOr[RenderIconType] = js.native
+  var fixSiderbar: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.native
+  var forceSubMenuRender: js.UndefOr[Boolean] = js.native
+  var formatMessage: js.UndefOr[js.Function1[/* message */ MessageDescriptor, String]] = js.native
+  var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+  var handleOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[String], Unit]] = js.native
+  var headerHeight: js.UndefOr[Double] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var history: js.UndefOr[History[LocationState]] = js.native
+  var iconfontUrl: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inlineCollapsed: js.UndefOr[Boolean] = js.native
+  var inlineIndent: js.UndefOr[Double] = js.native
+  var inlist: js.UndefOr[js.Any] = js.native
+  var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var is: js.UndefOr[String] = js.native
+  var isMobile: js.UndefOr[Boolean] = js.native
+  var itemID: js.UndefOr[String] = js.native
+  var itemIcon: js.UndefOr[RenderIconType] = js.native
+  var itemProp: js.UndefOr[String] = js.native
+  var itemRef: js.UndefOr[String] = js.native
+  var itemScope: js.UndefOr[Boolean] = js.native
+  var itemType: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[side | top | mix] = js.native
+  var level: js.UndefOr[Double] = js.native
+  var location: js.UndefOr[Location[LocationState] | Pathname] = js.native
+  var `match`: js.UndefOr[typings.reactRouter.mod.`match`[js.Object]] = js.native
+  var menu: js.UndefOr[DefaultOpenAll] = js.native
+  var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.native
   var menuItemRender: js.UndefOr[
     WithFalse[
       js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * 要给菜单的props, 参考antd-menu的属性。https://ant.design/components/menu-cn/
     */
-  var menuProps: js.UndefOr[MenuProps] = js.undefined
-  var mode: js.UndefOr[MenuMode] = js.undefined
-  var motion: js.UndefOr[js.Object] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, Unit]] = js.undefined
-  var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
-  var onDeselect: js.UndefOr[js.Function1[/* param */ SelectParam, Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* e */ MouseEvent, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* param */ SelectParam, Unit]] = js.undefined
-  var openAnimation: js.UndefOr[String] = js.undefined
-  var openKeys: js.UndefOr[WithFalse[js.Array[String]]] = js.undefined
-  var openTransitionName: js.UndefOr[String] = js.undefined
-  var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
+  var menuProps: js.UndefOr[MenuProps] = js.native
+  var mode: js.UndefOr[MenuMode] = js.native
+  var motion: js.UndefOr[MotionType] = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+  var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.native
+  var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onClick: js.UndefOr[MenuClickEventHandler] = js.native
+  var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.native
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onCopy: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+  var onDeselect: js.UndefOr[SelectEventHandler] = js.native
+  var onDestroy: js.UndefOr[DestroyEventHandler] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[HTMLDivElement]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerDown: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[HTMLDivElement]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSelect: js.UndefOr[SelectEventHandler] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.native
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLDivElement]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.native
+  var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.native
+  var openAnimation: js.UndefOr[OpenAnimation] = js.native
+  var openKeys: js.UndefOr[WithFalse[js.Array[String]]] = js.native
+  var openTransitionName: js.UndefOr[String] = js.native
+  var overflowedIndicator: js.UndefOr[ReactNode] = js.native
+  var placeholder: js.UndefOr[String] = js.native
   var postMenuData: js.UndefOr[
     js.Function1[/* menusData */ js.UndefOr[js.Array[MenuDataItem]], js.Array[MenuDataItem]]
-  ] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var primaryColor: js.UndefOr[String] = js.undefined
-  var route: js.UndefOr[Route] = js.undefined
-  var selectable: js.UndefOr[Boolean] = js.undefined
-  var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
-  var staticContext: js.UndefOr[StaticContext] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var subMenuCloseDelay: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.native
+  var radioGroup: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.native
+  var results: js.UndefOr[Double] = js.native
+  var role: js.UndefOr[String] = js.native
+  var route: js.UndefOr[Route] = js.native
+  var security: js.UndefOr[String] = js.native
+  var selectable: js.UndefOr[Boolean] = js.native
+  var selectedKeys: js.UndefOr[js.Array[String]] = js.native
+  var siderCollapsed: js.UndefOr[Boolean] = js.native
+  var slot: js.UndefOr[String] = js.native
+  var spellCheck: js.UndefOr[Booleanish] = js.native
+  var splitMenus: js.UndefOr[Boolean] = js.native
+  var staticContext: js.UndefOr[StaticContext] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var subMenuCloseDelay: js.UndefOr[Double] = js.native
   var subMenuItemRender: js.UndefOr[
     WithFalse[
       js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
     ]
-  ] = js.undefined
-  var subMenuOpenDelay: js.UndefOr[Double] = js.undefined
-  var theme: js.UndefOr[MenuTheme] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var triggerSubMenuAction: js.UndefOr[hover | click] = js.undefined
+  ] = js.native
+  var subMenuOpenDelay: js.UndefOr[Double] = js.native
+  var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var theme: js.UndefOr[MenuTheme] = js.native
+  var title: js.UndefOr[String] = js.native
+  var translate: js.UndefOr[yes | no] = js.native
+  var triggerSubMenuAction: js.UndefOr[TriggerSubMenuAction] = js.native
+  var typeof: js.UndefOr[String] = js.native
+  var unselectable: js.UndefOr[on | off] = js.native
+  var vocab: js.UndefOr[String] = js.native
 }
 
 object BaseMenuProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    colorWeak: js.UndefOr[Boolean] = js.undefined,
-    computedMatch: `match`[Route] = null,
-    contentWidth: ContentWidth = null,
-    defaultOpenKeys: js.Array[String] = null,
-    defaultSelectedKeys: js.Array[String] = null,
-    fixSiderbar: js.UndefOr[Boolean] = js.undefined,
-    fixedHeader: js.UndefOr[Boolean] = js.undefined,
-    focusable: js.UndefOr[Boolean] = js.undefined,
-    forceSubMenuRender: js.UndefOr[Boolean] = js.undefined,
-    formatMessage: /* message */ MessageDescriptor => String = null,
-    getPopupContainer: /* triggerNode */ HTMLElement => HTMLElement = null,
-    handleOpenChange: /* openKeys */ js.Array[String] => Unit = null,
-    history: History[LocationState] = null,
-    iconfontUrl: String = null,
-    id: String = null,
-    inlineCollapsed: js.UndefOr[Boolean] = js.undefined,
-    inlineIndent: js.UndefOr[Double] = js.undefined,
-    isMobile: js.UndefOr[Boolean] = js.undefined,
-    layout: sidemenu | topmenu = null,
-    location: Location[LocationState] | Pathname = null,
-    `match`: `match`[js.Object] = null,
-    menu: DefaultOpenAll = null,
-    menuData: js.Array[MenuDataItem] = null,
-    menuItemRender: WithFalse[
-      js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
-    ] = null,
-    menuProps: MenuProps = null,
-    mode: MenuMode = null,
-    motion: js.Object = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    navTheme: MenuTheme | realDark = null,
-    onClick: /* param */ ClickParam => Unit = null,
-    onCollapse: /* collapsed */ Boolean => Unit = null,
-    onDeselect: /* param */ SelectParam => Unit = null,
-    onMouseEnter: /* e */ MouseEvent => Unit = null,
-    onSelect: /* param */ SelectParam => Unit = null,
-    openAnimation: String = null,
-    openKeys: WithFalse[js.Array[String]] = null,
-    openTransitionName: String = null,
-    overflowedIndicator: ReactNode = null,
-    postMenuData: /* menusData */ js.UndefOr[js.Array[MenuDataItem]] => js.Array[MenuDataItem] = null,
-    prefixCls: String = null,
-    primaryColor: String = null,
-    route: Route = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selectedKeys: js.Array[String] = null,
-    staticContext: StaticContext = null,
-    style: CSSProperties = null,
-    subMenuCloseDelay: js.UndefOr[Double] = js.undefined,
-    subMenuItemRender: WithFalse[
-      js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
-    ] = null,
-    subMenuOpenDelay: js.UndefOr[Double] = js.undefined,
-    theme: MenuTheme = null,
-    title: String = null,
-    triggerSubMenuAction: hover | click = null
-  ): BaseMenuProps = {
+  def apply(): BaseMenuProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorWeak)) __obj.updateDynamic("colorWeak")(colorWeak.get.asInstanceOf[js.Any])
-    if (computedMatch != null) __obj.updateDynamic("computedMatch")(computedMatch.asInstanceOf[js.Any])
-    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
-    if (defaultOpenKeys != null) __obj.updateDynamic("defaultOpenKeys")(defaultOpenKeys.asInstanceOf[js.Any])
-    if (defaultSelectedKeys != null) __obj.updateDynamic("defaultSelectedKeys")(defaultSelectedKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixSiderbar)) __obj.updateDynamic("fixSiderbar")(fixSiderbar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSubMenuRender)) __obj.updateDynamic("forceSubMenuRender")(forceSubMenuRender.get.asInstanceOf[js.Any])
-    if (formatMessage != null) __obj.updateDynamic("formatMessage")(js.Any.fromFunction1(formatMessage))
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
-    if (handleOpenChange != null) __obj.updateDynamic("handleOpenChange")(js.Any.fromFunction1(handleOpenChange))
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (iconfontUrl != null) __obj.updateDynamic("iconfontUrl")(iconfontUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineCollapsed)) __obj.updateDynamic("inlineCollapsed")(inlineCollapsed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineIndent)) __obj.updateDynamic("inlineIndent")(inlineIndent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (menuData != null) __obj.updateDynamic("menuData")(menuData.asInstanceOf[js.Any])
-    if (menuItemRender != null) __obj.updateDynamic("menuItemRender")(menuItemRender.asInstanceOf[js.Any])
-    if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (navTheme != null) __obj.updateDynamic("navTheme")(navTheme.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))
-    if (onDeselect != null) __obj.updateDynamic("onDeselect")(js.Any.fromFunction1(onDeselect))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation.asInstanceOf[js.Any])
-    if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys.asInstanceOf[js.Any])
-    if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])
-    if (overflowedIndicator != null) __obj.updateDynamic("overflowedIndicator")(overflowedIndicator.asInstanceOf[js.Any])
-    if (postMenuData != null) __obj.updateDynamic("postMenuData")(js.Any.fromFunction1(postMenuData))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
-    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys.asInstanceOf[js.Any])
-    if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(subMenuCloseDelay)) __obj.updateDynamic("subMenuCloseDelay")(subMenuCloseDelay.get.asInstanceOf[js.Any])
-    if (subMenuItemRender != null) __obj.updateDynamic("subMenuItemRender")(subMenuItemRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(subMenuOpenDelay)) __obj.updateDynamic("subMenuOpenDelay")(subMenuOpenDelay.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (triggerSubMenuAction != null) __obj.updateDynamic("triggerSubMenuAction")(triggerSubMenuAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMenuProps]
   }
+  @scala.inline
+  implicit class BaseMenuPropsOps[Self <: BaseMenuProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbout(value: String): Self = this.set("about", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbout: Self = this.set("about", js.undefined)
+    @scala.inline
+    def setAccessKey(value: String): Self = this.set("accessKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKey: Self = this.set("accessKey", js.undefined)
+    @scala.inline
+    def setActiveKey(value: String): Self = this.set("activeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveKey: Self = this.set("activeKey", js.undefined)
+    @scala.inline
+    def `setAria-activedescendant`(value: String): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: Boolean): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: none | `inline` | list | both): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: Boolean): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: Boolean | mixed): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: Double): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: Double): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: Double): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: String): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: Boolean | page | step | location | date | time): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: String): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: String): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: Boolean): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: String): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: Boolean): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: String): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: Boolean): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: Boolean): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: Boolean | grammar | spelling): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: String): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: String): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: Double): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: off | assertive | polite): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: Boolean): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: Boolean): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: Boolean): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: horizontal | vertical): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: String): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: String): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: Double): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: Boolean | mixed): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Boolean): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: additions | (`additions text`) | all | removals | text): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: Boolean): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: String): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: Double): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: Double): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: Double): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: Boolean): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: Double): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: none | ascending | descending | other): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: Double): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: Double): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: Double): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: String): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    @scala.inline
+    def setAutoCapitalize(value: String): Self = this.set("autoCapitalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCapitalize: Self = this.set("autoCapitalize", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: String): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setAutoSave(value: String): Self = this.set("autoSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSave: Self = this.set("autoSave", js.undefined)
+    @scala.inline
+    def setBuiltinPlacements(value: BuiltinPlacements): Self = this.set("builtinPlacements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuiltinPlacements: Self = this.set("builtinPlacements", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setCollapsedWidth(value: String | Double): Self = this.set("collapsedWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsedWidth: Self = this.set("collapsedWidth", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorWeak(value: Boolean): Self = this.set("colorWeak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorWeak: Self = this.set("colorWeak", js.undefined)
+    @scala.inline
+    def setComputedMatch(value: `match`[Route]): Self = this.set("computedMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputedMatch: Self = this.set("computedMatch", js.undefined)
+    @scala.inline
+    def setContentEditable(value: Booleanish | inherit): Self = this.set("contentEditable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEditable: Self = this.set("contentEditable", js.undefined)
+    @scala.inline
+    def setContentWidth(value: ContentWidth): Self = this.set("contentWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentWidth: Self = this.set("contentWidth", js.undefined)
+    @scala.inline
+    def setContextMenu(value: String): Self = this.set("contextMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContextMenu: Self = this.set("contextMenu", js.undefined)
+    @scala.inline
+    def setDangerouslySetInnerHTML(value: Html): Self = this.set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerouslySetInnerHTML: Self = this.set("dangerouslySetInnerHTML", js.undefined)
+    @scala.inline
+    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDefaultActiveFirst(value: Boolean): Self = this.set("defaultActiveFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActiveFirst: Self = this.set("defaultActiveFirst", js.undefined)
+    @scala.inline
+    def setDefaultChecked(value: Boolean): Self = this.set("defaultChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultChecked: Self = this.set("defaultChecked", js.undefined)
+    @scala.inline
+    def setDefaultMotions(value: PartialkeyinMenuModeother): Self = this.set("defaultMotions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultMotions: Self = this.set("defaultMotions", js.undefined)
+    @scala.inline
+    def setDefaultOpenKeysVarargs(value: String*): Self = this.set("defaultOpenKeys", js.Array(value :_*))
+    @scala.inline
+    def setDefaultOpenKeys(value: js.Array[String]): Self = this.set("defaultOpenKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOpenKeys: Self = this.set("defaultOpenKeys", js.undefined)
+    @scala.inline
+    def setDefaultSelectedKeysVarargs(value: String*): Self = this.set("defaultSelectedKeys", js.Array(value :_*))
+    @scala.inline
+    def setDefaultSelectedKeys(value: js.Array[String]): Self = this.set("defaultSelectedKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSelectedKeys: Self = this.set("defaultSelectedKeys", js.undefined)
+    @scala.inline
+    def setDefaultValueVarargs(value: String*): Self = this.set("defaultValue", js.Array(value :_*))
+    @scala.inline
+    def setDefaultValue(value: String | Double | js.Array[String]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setDirection(value: ltr | rtl): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDraggable(value: Booleanish): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setExpandIconFunction1(value: /* props */ js.Any => ReactNode): Self = this.set("expandIcon", js.Any.fromFunction1(value))
+    @scala.inline
+    def setExpandIcon(value: RenderIconType): Self = this.set("expandIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandIcon: Self = this.set("expandIcon", js.undefined)
+    @scala.inline
+    def setFixSiderbar(value: Boolean): Self = this.set("fixSiderbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixSiderbar: Self = this.set("fixSiderbar", js.undefined)
+    @scala.inline
+    def setFixedHeader(value: Boolean): Self = this.set("fixedHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedHeader: Self = this.set("fixedHeader", js.undefined)
+    @scala.inline
+    def setFocusable(value: Boolean): Self = this.set("focusable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusable: Self = this.set("focusable", js.undefined)
+    @scala.inline
+    def setForceSubMenuRender(value: Boolean): Self = this.set("forceSubMenuRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceSubMenuRender: Self = this.set("forceSubMenuRender", js.undefined)
+    @scala.inline
+    def setFormatMessage(value: /* message */ MessageDescriptor => String): Self = this.set("formatMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatMessage: Self = this.set("formatMessage", js.undefined)
+    @scala.inline
+    def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = this.set("getPopupContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    @scala.inline
+    def setHandleOpenChange(value: /* openKeys */ js.Array[String] => Unit): Self = this.set("handleOpenChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHandleOpenChange: Self = this.set("handleOpenChange", js.undefined)
+    @scala.inline
+    def setHeaderHeight(value: Double): Self = this.set("headerHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderHeight: Self = this.set("headerHeight", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setHistory(value: History[LocationState]): Self = this.set("history", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistory: Self = this.set("history", js.undefined)
+    @scala.inline
+    def setIconfontUrl(value: String): Self = this.set("iconfontUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconfontUrl: Self = this.set("iconfontUrl", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInlineCollapsed(value: Boolean): Self = this.set("inlineCollapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineCollapsed: Self = this.set("inlineCollapsed", js.undefined)
+    @scala.inline
+    def setInlineIndent(value: Double): Self = this.set("inlineIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineIndent: Self = this.set("inlineIndent", js.undefined)
+    @scala.inline
+    def setInlist(value: js.Any): Self = this.set("inlist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlist: Self = this.set("inlist", js.undefined)
+    @scala.inline
+    def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = this.set("inputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMode: Self = this.set("inputMode", js.undefined)
+    @scala.inline
+    def setIs(value: String): Self = this.set("is", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    @scala.inline
+    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMobile: Self = this.set("isMobile", js.undefined)
+    @scala.inline
+    def setItemID(value: String): Self = this.set("itemID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemID: Self = this.set("itemID", js.undefined)
+    @scala.inline
+    def setItemIconFunction1(value: /* props */ js.Any => ReactNode): Self = this.set("itemIcon", js.Any.fromFunction1(value))
+    @scala.inline
+    def setItemIcon(value: RenderIconType): Self = this.set("itemIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemIcon: Self = this.set("itemIcon", js.undefined)
+    @scala.inline
+    def setItemProp(value: String): Self = this.set("itemProp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemProp: Self = this.set("itemProp", js.undefined)
+    @scala.inline
+    def setItemRef(value: String): Self = this.set("itemRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemRef: Self = this.set("itemRef", js.undefined)
+    @scala.inline
+    def setItemScope(value: Boolean): Self = this.set("itemScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemScope: Self = this.set("itemScope", js.undefined)
+    @scala.inline
+    def setItemType(value: String): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setLang(value: String): Self = this.set("lang", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLang: Self = this.set("lang", js.undefined)
+    @scala.inline
+    def setLayout(value: side | top | mix): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setLevel(value: Double): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLocation(value: Location[LocationState] | Pathname): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMatch(value: `match`[js.Object]): Self = this.set("match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatch: Self = this.set("match", js.undefined)
+    @scala.inline
+    def setMenu(value: DefaultOpenAll): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenu: Self = this.set("menu", js.undefined)
+    @scala.inline
+    def setMenuDataVarargs(value: MenuDataItem*): Self = this.set("menuData", js.Array(value :_*))
+    @scala.inline
+    def setMenuData(value: js.Array[MenuDataItem]): Self = this.set("menuData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuData: Self = this.set("menuData", js.undefined)
+    @scala.inline
+    def setMenuItemRenderFunction2(value: (/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode) => ReactNode): Self = this.set("menuItemRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def setMenuItemRender(
+      value: WithFalse[
+          js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
+        ]
+    ): Self = this.set("menuItemRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuItemRender: Self = this.set("menuItemRender", js.undefined)
+    @scala.inline
+    def setMenuProps(value: MenuProps): Self = this.set("menuProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuProps: Self = this.set("menuProps", js.undefined)
+    @scala.inline
+    def setMode(value: MenuMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setMotion(value: MotionType): Self = this.set("motion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMotion: Self = this.set("motion", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setNavTheme(value: MenuTheme | realDark): Self = this.set("navTheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavTheme: Self = this.set("navTheme", js.undefined)
+    @scala.inline
+    def setOnAbort(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onAbort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: AnimationEvent[HTMLDivElement] => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: AnimationEvent[HTMLDivElement] => Unit): Self = this.set("onAnimationIteration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: AnimationEvent[HTMLDivElement] => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAuxClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onAuxClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    @scala.inline
+    def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = this.set("onBeforeInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBeforeInput: Self = this.set("onBeforeInput", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[HTMLDivElement] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnCanPlay(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onCanPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    @scala.inline
+    def setOnCanPlayThrough(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onCanPlayThrough", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    @scala.inline
+    def setOnChange(value: FormEvent[HTMLDivElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* info */ MenuInfo => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnCollapse(value: /* collapsed */ Boolean => Unit): Self = this.set("onCollapse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCollapse: Self = this.set("onCollapse", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: CompositionEvent[HTMLDivElement] => Unit): Self = this.set("onCompositionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: CompositionEvent[HTMLDivElement] => Unit): Self = this.set("onCompositionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: CompositionEvent[HTMLDivElement] => Unit): Self = this.set("onCompositionUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnCopy(value: ClipboardEvent[HTMLDivElement] => Unit): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCut(value: ClipboardEvent[HTMLDivElement] => Unit): Self = this.set("onCut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnDeselect(value: /* info */ SelectInfo => Unit): Self = this.set("onDeselect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDeselect: Self = this.set("onDeselect", js.undefined)
+    @scala.inline
+    def setOnDestroy(value: /* key */ Key => Unit): Self = this.set("onDestroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDestroy: Self = this.set("onDestroy", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnDrag(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDragEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDragExit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDragLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDragOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDrop(value: DragEvent[HTMLDivElement] => Unit): Self = this.set("onDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnEmptied(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onEmptied", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    @scala.inline
+    def setOnEncrypted(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onEncrypted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    @scala.inline
+    def setOnEnded(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnError(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[HTMLDivElement] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = this.set("onInvalid", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: KeyboardEvent[HTMLDivElement] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: KeyboardEvent[HTMLDivElement] => Unit): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnLoad(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadStart(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onLoadStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    @scala.inline
+    def setOnLoadedData(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onLoadedData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadata(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onLoadedMetadata", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnPaste(value: ClipboardEvent[HTMLDivElement] => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPause(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnPlaying(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onPlaying", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: PointerEvent[HTMLDivElement] => Unit): Self = this.set("onPointerUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnProgress(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnRateChange(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onRateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    @scala.inline
+    def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = this.set("onReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnScroll(value: UIEvent[HTMLDivElement, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSeeked(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    @scala.inline
+    def setOnSeeking(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* info */ SelectInfo => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnStalled(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onStalled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSuspend(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onSuspend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    @scala.inline
+    def setOnTimeUpdate(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: TouchEvent[HTMLDivElement] => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: TouchEvent[HTMLDivElement] => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: TouchEvent[HTMLDivElement] => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: TouchEvent[HTMLDivElement] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: TransitionEvent[HTMLDivElement] => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setOnWaiting(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
+    @scala.inline
+    def setOnWheel(value: WheelEvent[HTMLDivElement] => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setOpenAnimation(value: OpenAnimation): Self = this.set("openAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenAnimation: Self = this.set("openAnimation", js.undefined)
+    @scala.inline
+    def setOpenKeysVarargs(value: String*): Self = this.set("openKeys", js.Array(value :_*))
+    @scala.inline
+    def setOpenKeys(value: WithFalse[js.Array[String]]): Self = this.set("openKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenKeys: Self = this.set("openKeys", js.undefined)
+    @scala.inline
+    def setOpenTransitionName(value: String): Self = this.set("openTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenTransitionName: Self = this.set("openTransitionName", js.undefined)
+    @scala.inline
+    def setOverflowedIndicator(value: ReactNode): Self = this.set("overflowedIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflowedIndicator: Self = this.set("overflowedIndicator", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPostMenuData(value: /* menusData */ js.UndefOr[js.Array[MenuDataItem]] => js.Array[MenuDataItem]): Self = this.set("postMenuData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePostMenuData: Self = this.set("postMenuData", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setPrimaryColor(value: String): Self = this.set("primaryColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryColor: Self = this.set("primaryColor", js.undefined)
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRadioGroup(value: String): Self = this.set("radioGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadioGroup: Self = this.set("radioGroup", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setRoute(value: Route): Self = this.set("route", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute: Self = this.set("route", js.undefined)
+    @scala.inline
+    def setSecurity(value: String): Self = this.set("security", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurity: Self = this.set("security", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setSelectedKeysVarargs(value: String*): Self = this.set("selectedKeys", js.Array(value :_*))
+    @scala.inline
+    def setSelectedKeys(value: js.Array[String]): Self = this.set("selectedKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedKeys: Self = this.set("selectedKeys", js.undefined)
+    @scala.inline
+    def setSiderCollapsed(value: Boolean): Self = this.set("siderCollapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiderCollapsed: Self = this.set("siderCollapsed", js.undefined)
+    @scala.inline
+    def setSlot(value: String): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlot: Self = this.set("slot", js.undefined)
+    @scala.inline
+    def setSpellCheck(value: Booleanish): Self = this.set("spellCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpellCheck: Self = this.set("spellCheck", js.undefined)
+    @scala.inline
+    def setSplitMenus(value: Boolean): Self = this.set("splitMenus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitMenus: Self = this.set("splitMenus", js.undefined)
+    @scala.inline
+    def setStaticContext(value: StaticContext): Self = this.set("staticContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticContext: Self = this.set("staticContext", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSubMenuCloseDelay(value: Double): Self = this.set("subMenuCloseDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubMenuCloseDelay: Self = this.set("subMenuCloseDelay", js.undefined)
+    @scala.inline
+    def setSubMenuItemRenderFunction2(value: (/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode) => ReactNode): Self = this.set("subMenuItemRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSubMenuItemRender(
+      value: WithFalse[
+          js.Function2[/* item */ MenuDataItemisUrlboolean, /* defaultDom */ ReactNode, ReactNode]
+        ]
+    ): Self = this.set("subMenuItemRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubMenuItemRender: Self = this.set("subMenuItemRender", js.undefined)
+    @scala.inline
+    def setSubMenuOpenDelay(value: Double): Self = this.set("subMenuOpenDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubMenuOpenDelay: Self = this.set("subMenuOpenDelay", js.undefined)
+    @scala.inline
+    def setSuppressContentEditableWarning(value: Boolean): Self = this.set("suppressContentEditableWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressContentEditableWarning: Self = this.set("suppressContentEditableWarning", js.undefined)
+    @scala.inline
+    def setSuppressHydrationWarning(value: Boolean): Self = this.set("suppressHydrationWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHydrationWarning: Self = this.set("suppressHydrationWarning", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTheme(value: MenuTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTranslate(value: yes | no): Self = this.set("translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslate: Self = this.set("translate", js.undefined)
+    @scala.inline
+    def setTriggerSubMenuAction(value: TriggerSubMenuAction): Self = this.set("triggerSubMenuAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerSubMenuAction: Self = this.set("triggerSubMenuAction", js.undefined)
+    @scala.inline
+    def setTypeof(value: String): Self = this.set("typeof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeof: Self = this.set("typeof", js.undefined)
+    @scala.inline
+    def setUnselectable(value: on | off): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    @scala.inline
+    def setVocab(value: String): Self = this.set("vocab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVocab: Self = this.set("vocab", js.undefined)
+  }
+  
 }
 

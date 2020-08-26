@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends Agenda {
   def this(config: AgendaConfiguration) = this()
+  def this(config: js.UndefOr[scala.Nothing], cb: ResultCallback[Collection[DefaultSchema]]) = this()
   def this(config: AgendaConfiguration, cb: ResultCallback[Collection[DefaultSchema]]) = this()
 }
 

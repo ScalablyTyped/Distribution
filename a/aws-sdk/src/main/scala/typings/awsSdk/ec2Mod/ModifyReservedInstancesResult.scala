@@ -14,10 +14,26 @@ trait ModifyReservedInstancesResult extends js.Object {
 
 object ModifyReservedInstancesResult {
   @scala.inline
-  def apply(ReservedInstancesModificationId: String = null): ModifyReservedInstancesResult = {
+  def apply(): ModifyReservedInstancesResult = {
     val __obj = js.Dynamic.literal()
-    if (ReservedInstancesModificationId != null) __obj.updateDynamic("ReservedInstancesModificationId")(ReservedInstancesModificationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyReservedInstancesResult]
   }
+  @scala.inline
+  implicit class ModifyReservedInstancesResultOps[Self <: ModifyReservedInstancesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReservedInstancesModificationId(value: String): Self = this.set("ReservedInstancesModificationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstancesModificationId: Self = this.set("ReservedInstancesModificationId", js.undefined)
+  }
+  
 }
 

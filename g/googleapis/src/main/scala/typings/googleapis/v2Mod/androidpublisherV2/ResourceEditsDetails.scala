@@ -29,6 +29,7 @@ class ResourceEditsDetails protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAppDetails] = js.native
   def get(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def get(params: ParamsResourceEditsDetailsGet): GaxiosPromise[SchemaAppDetails] = js.native
   def get(params: ParamsResourceEditsDetailsGet, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourceEditsDetails protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(params: ParamsResourceEditsDetailsPatch): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(params: ParamsResourceEditsDetailsPatch, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def patch(
@@ -88,6 +90,7 @@ class ResourceEditsDetails protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaAppDetails] = js.native
   def update(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def update(params: ParamsResourceEditsDetailsUpdate): GaxiosPromise[SchemaAppDetails] = js.native
   def update(params: ParamsResourceEditsDetailsUpdate, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def update(

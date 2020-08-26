@@ -53,30 +53,62 @@ trait SchemaBookshelf extends js.Object {
 
 object SchemaBookshelf {
   @scala.inline
-  def apply(
-    access: String = null,
-    created: String = null,
-    description: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    selfLink: String = null,
-    title: String = null,
-    updated: String = null,
-    volumeCount: js.UndefOr[Double] = js.undefined,
-    volumesLastUpdated: String = null
-  ): SchemaBookshelf = {
+  def apply(): SchemaBookshelf = {
     val __obj = js.Dynamic.literal()
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (!js.isUndefined(volumeCount)) __obj.updateDynamic("volumeCount")(volumeCount.get.asInstanceOf[js.Any])
-    if (volumesLastUpdated != null) __obj.updateDynamic("volumesLastUpdated")(volumesLastUpdated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBookshelf]
   }
+  @scala.inline
+  implicit class SchemaBookshelfOps[Self <: SchemaBookshelf] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccess(value: String): Self = this.set("access", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccess: Self = this.set("access", js.undefined)
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setVolumeCount(value: Double): Self = this.set("volumeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeCount: Self = this.set("volumeCount", js.undefined)
+    @scala.inline
+    def setVolumesLastUpdated(value: String): Self = this.set("volumesLastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumesLastUpdated: Self = this.set("volumesLastUpdated", js.undefined)
+  }
+  
 }
 

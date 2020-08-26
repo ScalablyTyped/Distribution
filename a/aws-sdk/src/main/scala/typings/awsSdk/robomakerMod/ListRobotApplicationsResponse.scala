@@ -18,11 +18,32 @@ trait ListRobotApplicationsResponse extends js.Object {
 
 object ListRobotApplicationsResponse {
   @scala.inline
-  def apply(nextToken: PaginationToken = null, robotApplicationSummaries: RobotApplicationSummaries = null): ListRobotApplicationsResponse = {
+  def apply(): ListRobotApplicationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (robotApplicationSummaries != null) __obj.updateDynamic("robotApplicationSummaries")(robotApplicationSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRobotApplicationsResponse]
   }
+  @scala.inline
+  implicit class ListRobotApplicationsResponseOps[Self <: ListRobotApplicationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRobotApplicationSummariesVarargs(value: RobotApplicationSummary*): Self = this.set("robotApplicationSummaries", js.Array(value :_*))
+    @scala.inline
+    def setRobotApplicationSummaries(value: RobotApplicationSummaries): Self = this.set("robotApplicationSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRobotApplicationSummaries: Self = this.set("robotApplicationSummaries", js.undefined)
+  }
+  
 }
 

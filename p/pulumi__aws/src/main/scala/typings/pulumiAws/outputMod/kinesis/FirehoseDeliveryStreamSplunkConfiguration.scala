@@ -45,20 +45,49 @@ object FirehoseDeliveryStreamSplunkConfiguration {
   def apply(
     cloudwatchLoggingOptions: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions,
     hecEndpoint: String,
-    hecToken: String,
-    hecAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined,
-    hecEndpointType: String = null,
-    processingConfiguration: FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration = null,
-    retryDuration: js.UndefOr[Double] = js.undefined,
-    s3BackupMode: String = null
+    hecToken: String
   ): FirehoseDeliveryStreamSplunkConfiguration = {
     val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], hecEndpoint = hecEndpoint.asInstanceOf[js.Any], hecToken = hecToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(hecAcknowledgmentTimeout)) __obj.updateDynamic("hecAcknowledgmentTimeout")(hecAcknowledgmentTimeout.get.asInstanceOf[js.Any])
-    if (hecEndpointType != null) __obj.updateDynamic("hecEndpointType")(hecEndpointType.asInstanceOf[js.Any])
-    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryDuration)) __obj.updateDynamic("retryDuration")(retryDuration.get.asInstanceOf[js.Any])
-    if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamSplunkConfiguration]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamSplunkConfigurationOps[Self <: FirehoseDeliveryStreamSplunkConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHecEndpoint(value: String): Self = this.set("hecEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHecToken(value: String): Self = this.set("hecToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHecAcknowledgmentTimeout(value: Double): Self = this.set("hecAcknowledgmentTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHecAcknowledgmentTimeout: Self = this.set("hecAcknowledgmentTimeout", js.undefined)
+    @scala.inline
+    def setHecEndpointType(value: String): Self = this.set("hecEndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHecEndpointType: Self = this.set("hecEndpointType", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    @scala.inline
+    def setRetryDuration(value: Double): Self = this.set("retryDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryDuration: Self = this.set("retryDuration", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: String): Self = this.set("s3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("s3BackupMode", js.undefined)
+  }
+  
 }
 

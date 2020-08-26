@@ -12,16 +12,25 @@ import scala.scalajs.js.annotation._
 trait DocConstructor
   extends Instantiable1[/* text */ String, Doc]
      with Instantiable2[/* text */ String, /* mode */ js.Any, Doc]
-     with Instantiable3[/* text */ String, /* mode */ js.Any, /* firstLineNumber */ Double, Doc]
+     with Instantiable3[/* text */ String, js.UndefOr[/* mode */ js.Any], /* firstLineNumber */ Double, Doc]
      with Instantiable4[
       /* text */ String, 
-      /* mode */ js.Any, 
-      /* firstLineNumber */ Double, 
+      js.UndefOr[/* mode */ js.Any], 
+      js.UndefOr[/* firstLineNumber */ Double], 
       /* lineSep */ String, 
       Doc
     ] {
   def apply(text: String): Doc = js.native
+  def apply(
+    text: String,
+    mode: js.UndefOr[scala.Nothing],
+    firstLineNumber: js.UndefOr[scala.Nothing],
+    lineSep: String
+  ): Doc = js.native
+  def apply(text: String, mode: js.UndefOr[scala.Nothing], firstLineNumber: Double): Doc = js.native
+  def apply(text: String, mode: js.UndefOr[scala.Nothing], firstLineNumber: Double, lineSep: String): Doc = js.native
   def apply(text: String, mode: js.Any): Doc = js.native
+  def apply(text: String, mode: js.Any, firstLineNumber: js.UndefOr[scala.Nothing], lineSep: String): Doc = js.native
   def apply(text: String, mode: js.Any, firstLineNumber: Double): Doc = js.native
   def apply(text: String, mode: js.Any, firstLineNumber: Double, lineSep: String): Doc = js.native
 }

@@ -9,12 +9,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Progress extends js.Object {
-  var current: Double
-  var status: ok | skip | fail
-  var title: String
-  var total: Double
-  var `type`: `step-begin` | `step-end`
+  var current: Double = js.native
+  var status: ok | skip | fail = js.native
+  var title: String = js.native
+  var total: Double = js.native
+  var `type`: `step-begin` | `step-end` = js.native
 }
 
 object Progress {
@@ -30,5 +31,28 @@ object Progress {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Progress]
   }
+  @scala.inline
+  implicit class ProgressOps[Self <: Progress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrent(value: Double): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: ok | skip | fail): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: `step-begin` | `step-end`): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -25,7 +25,7 @@ class MsdVersion protected () extends Element {
   var model_FMsdVersion: IModel = js.native
   def containerAsMsd: Msd = js.native
   def version: Double = js.native
-  def version(newValue: Double): js.Any = js.native
+  def version_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

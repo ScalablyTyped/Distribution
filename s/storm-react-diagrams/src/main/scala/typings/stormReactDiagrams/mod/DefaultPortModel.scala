@@ -10,6 +10,7 @@ class DefaultPortModel protected ()
   extends typings.stormReactDiagrams.defaultPortModelMod.DefaultPortModel {
   def this(isInput: Boolean, name: String) = this()
   def this(isInput: Boolean, name: String, label: String) = this()
+  def this(isInput: Boolean, name: String, label: js.UndefOr[scala.Nothing], id: String) = this()
   def this(isInput: Boolean, name: String, label: String, id: String) = this()
 }
 

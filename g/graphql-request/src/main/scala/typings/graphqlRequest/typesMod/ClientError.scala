@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClientError protected () extends Error {
   def this(response: GraphQLResponse, request: GraphQLRequestContext) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var request: GraphQLRequestContext = js.native
   var response: GraphQLResponse = js.native
 }

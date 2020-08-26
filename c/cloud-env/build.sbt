@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cloud-env"
-version := "0.2.2-dt-20200515Z-3c19e1"
-scalaVersion := "2.13.2"
+version := "0.2.2-dt-20200515Z-964a69"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

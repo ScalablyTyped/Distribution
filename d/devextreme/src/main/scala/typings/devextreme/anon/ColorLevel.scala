@@ -8,18 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColorLevel extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
-  var level: js.UndefOr[close | high | low | open] = js.undefined
+  var color: js.UndefOr[String] = js.native
+  var level: js.UndefOr[close | high | low | open] = js.native
 }
 
 object ColorLevel {
   @scala.inline
-  def apply(color: String = null, level: close | high | low | open = null): ColorLevel = {
+  def apply(): ColorLevel = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorLevel]
   }
+  @scala.inline
+  implicit class ColorLevelOps[Self <: ColorLevel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setLevel(value: close | high | low | open): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+  }
+  
 }
 

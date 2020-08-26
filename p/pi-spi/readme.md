@@ -11,7 +11,7 @@ Simple async SPI library for Raspberry Pi
 | Keywords           | raspi, spi |
 | # releases         | 5 |
 | # dependents       | 23 |
-| # downloads        | 5032 |
+| # downloads        | 4884 |
 | # stars            | 2 |
 
 ## Links

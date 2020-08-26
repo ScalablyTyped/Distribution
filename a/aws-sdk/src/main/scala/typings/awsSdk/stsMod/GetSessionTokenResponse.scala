@@ -14,10 +14,26 @@ trait GetSessionTokenResponse extends js.Object {
 
 object GetSessionTokenResponse {
   @scala.inline
-  def apply(Credentials: Credentials = null): GetSessionTokenResponse = {
+  def apply(): GetSessionTokenResponse = {
     val __obj = js.Dynamic.literal()
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSessionTokenResponse]
   }
+  @scala.inline
+  implicit class GetSessionTokenResponseOps[Self <: GetSessionTokenResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+  }
+  
 }
 

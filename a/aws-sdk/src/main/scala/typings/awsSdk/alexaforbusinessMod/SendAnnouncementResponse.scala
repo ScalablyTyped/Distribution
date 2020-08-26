@@ -14,10 +14,26 @@ trait SendAnnouncementResponse extends js.Object {
 
 object SendAnnouncementResponse {
   @scala.inline
-  def apply(AnnouncementArn: Arn = null): SendAnnouncementResponse = {
+  def apply(): SendAnnouncementResponse = {
     val __obj = js.Dynamic.literal()
-    if (AnnouncementArn != null) __obj.updateDynamic("AnnouncementArn")(AnnouncementArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAnnouncementResponse]
   }
+  @scala.inline
+  implicit class SendAnnouncementResponseOps[Self <: SendAnnouncementResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnouncementArn(value: Arn): Self = this.set("AnnouncementArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnouncementArn: Self = this.set("AnnouncementArn", js.undefined)
+  }
+  
 }
 

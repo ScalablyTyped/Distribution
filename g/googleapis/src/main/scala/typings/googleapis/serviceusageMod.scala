@@ -43,7 +43,7 @@ object serviceusageMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Serviceusage
               ]
             ]
@@ -53,7 +53,7 @@ object serviceusageMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage
               ]
             ]

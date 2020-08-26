@@ -1,89 +1,84 @@
 package typings.extjs.Ext.util
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISorter extends IBase {
   /** [Config Option] (String) */
-  var direction: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var property: js.UndefOr[String] = js.undefined
+  var property: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.undefined
+  var root: js.UndefOr[String] = js.native
   /** [Method] Set the sorting direction for this sorter
     * @param direction String The direction to sort in. Should be either 'ASC' or 'DESC'.
     */
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
   /** [Config Option] (Function) */
-  var sorterFn: js.UndefOr[js.Any] = js.undefined
+  var sorterFn: js.UndefOr[js.Any] = js.native
   /** [Method] Toggles the sorting direction for this sorter  */
-  var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var toggle: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Function) */
-  var transform: js.UndefOr[js.Any] = js.undefined
+  var transform: js.UndefOr[js.Any] = js.native
   /** [Method] Update the sort function for this sorter
     * @param fn Function A new sorter function for this sorter. If not specified it will use the default sorting function.
     */
-  var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updateSortFunction: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object ISorter {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    direction: String = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => ISorter = null,
-    mixins: js.Any = null,
-    property: String = null,
-    requires: Array = null,
-    root: String = null,
-    self: IClass = null,
-    setDirection: /* direction */ js.UndefOr[String] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    sorterFn: js.Any = null,
-    statics: js.Any = null,
-    toggle: () => Unit = null,
-    transform: js.Any = null,
-    updateSortFunction: /* fn */ js.UndefOr[js.Any] => Unit = null,
-    uses: Array = null
-  ): ISorter = {
+  def apply(): ISorter = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1(setDirection))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (sorterFn != null) __obj.updateDynamic("sorterFn")(sorterFn.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (updateSortFunction != null) __obj.updateDynamic("updateSortFunction")(js.Any.fromFunction1(updateSortFunction))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISorter]
   }
+  @scala.inline
+  implicit class ISorterOps[Self <: ISorter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setProperty(value: String): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = this.set("setDirection", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDirection: Self = this.set("setDirection", js.undefined)
+    @scala.inline
+    def setSorterFn(value: js.Any): Self = this.set("sorterFn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSorterFn: Self = this.set("sorterFn", js.undefined)
+    @scala.inline
+    def setToggle(value: () => Unit): Self = this.set("toggle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteToggle: Self = this.set("toggle", js.undefined)
+    @scala.inline
+    def setTransform(value: js.Any): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setUpdateSortFunction(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = this.set("updateSortFunction", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUpdateSortFunction: Self = this.set("updateSortFunction", js.undefined)
+  }
+  
 }
 

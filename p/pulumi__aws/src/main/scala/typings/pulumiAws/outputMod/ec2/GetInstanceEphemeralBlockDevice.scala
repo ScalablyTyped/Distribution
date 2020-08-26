@@ -22,11 +22,32 @@ trait GetInstanceEphemeralBlockDevice extends js.Object {
 
 object GetInstanceEphemeralBlockDevice {
   @scala.inline
-  def apply(deviceName: String, noDevice: js.UndefOr[Boolean] = js.undefined, virtualName: String = null): GetInstanceEphemeralBlockDevice = {
+  def apply(deviceName: String): GetInstanceEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(noDevice)) __obj.updateDynamic("noDevice")(noDevice.get.asInstanceOf[js.Any])
-    if (virtualName != null) __obj.updateDynamic("virtualName")(virtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceEphemeralBlockDevice]
   }
+  @scala.inline
+  implicit class GetInstanceEphemeralBlockDeviceOps[Self <: GetInstanceEphemeralBlockDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoDevice(value: Boolean): Self = this.set("noDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDevice: Self = this.set("noDevice", js.undefined)
+    @scala.inline
+    def setVirtualName(value: String): Self = this.set("virtualName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualName: Self = this.set("virtualName", js.undefined)
+  }
+  
 }
 

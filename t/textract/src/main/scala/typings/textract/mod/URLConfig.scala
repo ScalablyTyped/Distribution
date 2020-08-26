@@ -1,48 +1,39 @@
 package typings.textract.mod
 
-import typings.node.childProcessMod.ExecException
-import typings.textract.anon.Cmd
-import typings.textract.anon.Crop
-import typings.textract.anon.Lang
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait URLConfig extends Config {
   /**
     * Used with fromUrl, if set, rather than using the content-type from the URL request, will use the provided typeOverride.
     */
-  var typeOverride: js.UndefOr[String] = js.undefined
+  var typeOverride: js.UndefOr[String] = js.native
 }
 
 object URLConfig {
   @scala.inline
-  def apply(
-    doc: extractorExecOpts = null,
-    dxf: extractorExecOpts = null,
-    exec: ExecException = null,
-    images: extractorExecOpts = null,
-    includeAltText: js.UndefOr[Boolean] = js.undefined,
-    pdftotextOptions: Crop = null,
-    preserveLineBreaks: js.UndefOr[Boolean] = js.undefined,
-    preserveOnlyMultipleLineBreaks: js.UndefOr[Boolean] = js.undefined,
-    rtf: extractorExecOpts = null,
-    tesseract: Lang | Cmd = null,
-    typeOverride: String = null
-  ): URLConfig = {
+  def apply(): URLConfig = {
     val __obj = js.Dynamic.literal()
-    if (doc != null) __obj.updateDynamic("doc")(doc.asInstanceOf[js.Any])
-    if (dxf != null) __obj.updateDynamic("dxf")(dxf.asInstanceOf[js.Any])
-    if (exec != null) __obj.updateDynamic("exec")(exec.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeAltText)) __obj.updateDynamic("includeAltText")(includeAltText.get.asInstanceOf[js.Any])
-    if (pdftotextOptions != null) __obj.updateDynamic("pdftotextOptions")(pdftotextOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLineBreaks)) __obj.updateDynamic("preserveLineBreaks")(preserveLineBreaks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveOnlyMultipleLineBreaks)) __obj.updateDynamic("preserveOnlyMultipleLineBreaks")(preserveOnlyMultipleLineBreaks.get.asInstanceOf[js.Any])
-    if (rtf != null) __obj.updateDynamic("rtf")(rtf.asInstanceOf[js.Any])
-    if (tesseract != null) __obj.updateDynamic("tesseract")(tesseract.asInstanceOf[js.Any])
-    if (typeOverride != null) __obj.updateDynamic("typeOverride")(typeOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[URLConfig]
   }
+  @scala.inline
+  implicit class URLConfigOps[Self <: URLConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTypeOverride(value: String): Self = this.set("typeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeOverride: Self = this.set("typeOverride", js.undefined)
+  }
+  
 }
 

@@ -28,18 +28,6 @@ class HttpContentRangeHeaderValue protected ()
     * @param length The length, in bytes, of the full content entity body.
     */
   def this(from: Double, to: Double, length: Double) = this()
-  /** Gets the position at which to start sending data in the Content-Range HTTP header. */
-  /* CompleteClass */
-  override var firstBytePosition: Double = js.native
-  /** Gets the position at which to stop sending data in the Content-Range HTTP header. */
-  /* CompleteClass */
-  override var lastBytePosition: Double = js.native
-  /** Gets the length of the full content entity body in the Content-Range HTTP header. */
-  /* CompleteClass */
-  override var length: Double = js.native
-  /** Gets or sets the value of the range units used in the Content-Range HTTP header. */
-  /* CompleteClass */
-  override var unit: String = js.native
 }
 
 /* static members */

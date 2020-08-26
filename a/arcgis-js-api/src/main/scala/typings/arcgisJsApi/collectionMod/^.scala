@@ -21,7 +21,13 @@ class ^[T] () extends Collection[T] {
 object ^ extends js.Object {
   def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
   def isCollection[T](value: Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
-  def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], Collection[T]] = js.native
-  def ofType[T /* <: Base */, Base](`type`: Types[T, Base]): Instantiable1[js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], Collection[T]] = js.native
+  def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[
+    /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
+    Collection[T]
+  ] = js.native
+  def ofType[T /* <: Base */, Base](`type`: Types[T, Base]): Instantiable1[
+    /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
+    Collection[T]
+  ] = js.native
 }
 

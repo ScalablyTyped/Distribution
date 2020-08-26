@@ -16,6 +16,13 @@ object cloudwatchMixinsMod extends js.Object {
     name: String,
     schedule: String,
     handler: EventRuleEventHandler,
+    args: js.UndefOr[scala.Nothing],
+    opts: ComponentResourceOptions
+  ): EventRuleEventSubscription = js.native
+  def onSchedule(
+    name: String,
+    schedule: String,
+    handler: EventRuleEventHandler,
     args: EventRuleEventSubscriptionArgs
   ): EventRuleEventSubscription = js.native
   def onSchedule(

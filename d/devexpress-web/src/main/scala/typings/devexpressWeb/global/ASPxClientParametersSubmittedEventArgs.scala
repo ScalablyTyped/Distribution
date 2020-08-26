@@ -13,9 +13,5 @@ import scala.scalajs.js.annotation._
 class ASPxClientParametersSubmittedEventArgs protected ()
   extends typings.devexpressWeb.ASPxClientParametersSubmittedEventArgs {
   def this(parameters: StringDictionary[js.Any]) = this()
-  /* CompleteClass */
-  override var Parameters: StringDictionary[js.Any] = js.native
-  /* CompleteClass */
-  override var ParametersViewModel: js.Any = js.native
 }
 

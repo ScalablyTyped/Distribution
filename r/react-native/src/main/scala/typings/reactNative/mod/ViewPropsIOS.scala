@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewPropsIOS extends TVViewPropsIOS {
   /**
     * Whether this view should be rendered as a bitmap before compositing.
@@ -15,31 +16,31 @@ trait ViewPropsIOS extends TVViewPropsIOS {
     * Rasterization incurs an off-screen drawing pass and the bitmap consumes memory.
     * Test and measure when using this property.
     */
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
 }
 
 object ViewPropsIOS {
   @scala.inline
-  def apply(
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    tvParallaxMagnification: js.UndefOr[Double] = js.undefined,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined,
-    tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined,
-    tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
-  ): ViewPropsIOS = {
+  def apply(): ViewPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxMagnification)) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.get.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxShiftDistanceX)) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxShiftDistanceY)) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tvParallaxTiltAngle)) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsIOS]
   }
+  @scala.inline
+  implicit class ViewPropsIOSOps[Self <: ViewPropsIOS] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShouldRasterizeIOS(value: Boolean): Self = this.set("shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldRasterizeIOS: Self = this.set("shouldRasterizeIOS", js.undefined)
+  }
+  
 }
 

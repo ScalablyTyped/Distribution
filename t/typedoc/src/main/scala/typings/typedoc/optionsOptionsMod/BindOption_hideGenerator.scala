@@ -2,8 +2,7 @@ package typings.typedoc.optionsOptionsMod
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.PropertyKey
-import typings.typedoc.anon.ApplicationApplication
-import typings.typedoc.anon.OptionsOptions
+import typings.typedoc.anon.Application
 import typings.typedoc.typedocStrings.hideGenerator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -13,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object BindOption_hideGenerator extends js.Object {
   def apply(name: hideGenerator): js.Function2[
-    /* target */ (ApplicationApplication | OptionsOptions) with typings.typedoc.typedocStrings.BindOption with TopLevel[js.Any], 
+    /* target */ (Application | typings.typedoc.anon.Options) with typings.typedoc.typedocStrings.BindOption with TopLevel[js.Any], 
     /* key */ PropertyKey, 
     Unit
   ] = js.native

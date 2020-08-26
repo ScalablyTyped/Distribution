@@ -21,10 +21,14 @@ trait RangeConstructor
   */
 Instantiable0[typings.std.Range]
      with Instantiable1[/* begin */ Endpoint, typings.std.Range]
-     with Instantiable2[(/* begin */ Endpoint) | (/* begin */ Null), /* end */ Endpoint, typings.std.Range]
+     with Instantiable2[
+      js.UndefOr[(/* begin */ Endpoint) | (/* begin */ Null)], 
+      /* end */ Endpoint, 
+      typings.std.Range
+    ]
      with Instantiable3[
-      (/* begin */ Endpoint) | (/* begin */ Null), 
-      (/* end */ Endpoint) | (/* end */ Null), 
+      js.UndefOr[(/* begin */ Endpoint) | (/* begin */ Null)], 
+      js.UndefOr[(/* end */ Endpoint) | (/* end */ Null)], 
       /* bounds */ Bounds, 
       typings.std.Range
     ] {
@@ -38,9 +42,15 @@ Instantiable0[typings.std.Range]
   def apply[T /* <: Endpoint */](begin: T): typings.std.Range = js.native
   def apply[T /* <: Endpoint */](begin: T, end: T): typings.std.Range = js.native
   def apply[T /* <: Endpoint */](begin: T, end: T, bounds: Bounds): typings.std.Range = js.native
+  def apply[T /* <: Endpoint */](begin: T, end: js.UndefOr[scala.Nothing], bounds: Bounds): typings.std.Range = js.native
   def apply[T /* <: Endpoint */](begin: T, end: Null, bounds: Bounds): typings.std.Range = js.native
+  def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: T): typings.std.Range = js.native
+  def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: T, bounds: Bounds): typings.std.Range = js.native
+  def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], bounds: Bounds): typings.std.Range = js.native
+  def apply[T /* <: Endpoint */](begin: js.UndefOr[scala.Nothing], end: Null, bounds: Bounds): typings.std.Range = js.native
   def apply[T /* <: Endpoint */](begin: Null, end: T): typings.std.Range = js.native
   def apply[T /* <: Endpoint */](begin: Null, end: T, bounds: Bounds): typings.std.Range = js.native
+  def apply[T /* <: Endpoint */](begin: Null, end: js.UndefOr[scala.Nothing], bounds: Bounds): typings.std.Range = js.native
   def apply[T /* <: Endpoint */](begin: Null, end: Null, bounds: Bounds): typings.std.Range = js.native
   /**
     * Compares two range's beginnings.

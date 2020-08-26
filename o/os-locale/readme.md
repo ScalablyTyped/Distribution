@@ -1,7 +1,7 @@
 
 # Scala.js typings for os-locale
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Get the system locale

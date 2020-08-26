@@ -52,7 +52,7 @@ object osloginMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Oslogin]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Oslogin]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object osloginMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.osloginV1alphaMod.osloginV1alpha.Oslogin
               ]
             ]
@@ -70,7 +70,7 @@ object osloginMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.osloginV1betaMod.osloginV1beta.Oslogin
               ]
             ]

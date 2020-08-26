@@ -4,7 +4,7 @@ import typings.openfin.baseMod.EmitterBase
 import typings.openfin.channelMod.ChannelEvents
 import typings.openfin.clientMod.ChannelClient
 import typings.openfin.providerMod.ChannelProvider
-import typings.openfin.shapesMod.ProviderIdentity
+import typings.openfin.shapesIdentityMod.ProviderIdentity
 import typings.openfin.transportMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`

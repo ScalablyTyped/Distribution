@@ -25,10 +25,26 @@ trait SchemaGetNotificationChannelVerificationCodeRequest extends js.Object {
 
 object SchemaGetNotificationChannelVerificationCodeRequest {
   @scala.inline
-  def apply(expireTime: String = null): SchemaGetNotificationChannelVerificationCodeRequest = {
+  def apply(): SchemaGetNotificationChannelVerificationCodeRequest = {
     val __obj = js.Dynamic.literal()
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGetNotificationChannelVerificationCodeRequest]
   }
+  @scala.inline
+  implicit class SchemaGetNotificationChannelVerificationCodeRequestOps[Self <: SchemaGetNotificationChannelVerificationCodeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+  }
+  
 }
 

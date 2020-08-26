@@ -4,101 +4,156 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InventoryItem extends js.Object {
   /** Account ID of this inventory item. */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
   /**
     * Ad slots of this inventory item. If this inventory item represents a standalone placement, there will be exactly one ad slot. If this inventory item
     * represents a placement group, there will be more than one ad slot, each representing one child placement in that placement group.
     */
-  var adSlots: js.UndefOr[js.Array[AdSlot]] = js.undefined
+  var adSlots: js.UndefOr[js.Array[AdSlot]] = js.native
   /** Advertiser ID of this inventory item. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: js.UndefOr[String] = js.native
   /** Content category ID of this inventory item. */
-  var contentCategoryId: js.UndefOr[String] = js.undefined
+  var contentCategoryId: js.UndefOr[String] = js.native
   /** Estimated click-through rate of this inventory item. */
-  var estimatedClickThroughRate: js.UndefOr[String] = js.undefined
+  var estimatedClickThroughRate: js.UndefOr[String] = js.native
   /** Estimated conversion rate of this inventory item. */
-  var estimatedConversionRate: js.UndefOr[String] = js.undefined
+  var estimatedConversionRate: js.UndefOr[String] = js.native
   /** ID of this inventory item. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** Whether this inventory item is in plan. */
-  var inPlan: js.UndefOr[Boolean] = js.undefined
+  var inPlan: js.UndefOr[Boolean] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#inventoryItem". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Information about the most recent modification of this inventory item. */
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
   /**
     * Name of this inventory item. For standalone inventory items, this is the same name as that of its only ad slot. For group inventory items, this can
     * differ from the name of any of its ad slots.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Negotiation channel ID of this inventory item. */
-  var negotiationChannelId: js.UndefOr[String] = js.undefined
+  var negotiationChannelId: js.UndefOr[String] = js.native
   /** Order ID of this inventory item. */
-  var orderId: js.UndefOr[String] = js.undefined
+  var orderId: js.UndefOr[String] = js.native
   /** Placement strategy ID of this inventory item. */
-  var placementStrategyId: js.UndefOr[String] = js.undefined
+  var placementStrategyId: js.UndefOr[String] = js.native
   /** Pricing of this inventory item. */
-  var pricing: js.UndefOr[Pricing] = js.undefined
+  var pricing: js.UndefOr[Pricing] = js.native
   /** Project ID of this inventory item. */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String] = js.native
   /** RFP ID of this inventory item. */
-  var rfpId: js.UndefOr[String] = js.undefined
+  var rfpId: js.UndefOr[String] = js.native
   /** ID of the site this inventory item is associated with. */
-  var siteId: js.UndefOr[String] = js.undefined
+  var siteId: js.UndefOr[String] = js.native
   /** Subaccount ID of this inventory item. */
-  var subaccountId: js.UndefOr[String] = js.undefined
+  var subaccountId: js.UndefOr[String] = js.native
   /** Type of inventory item. */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object InventoryItem {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    adSlots: js.Array[AdSlot] = null,
-    advertiserId: String = null,
-    contentCategoryId: String = null,
-    estimatedClickThroughRate: String = null,
-    estimatedConversionRate: String = null,
-    id: String = null,
-    inPlan: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    lastModifiedInfo: LastModifiedInfo = null,
-    name: String = null,
-    negotiationChannelId: String = null,
-    orderId: String = null,
-    placementStrategyId: String = null,
-    pricing: Pricing = null,
-    projectId: String = null,
-    rfpId: String = null,
-    siteId: String = null,
-    subaccountId: String = null,
-    `type`: String = null
-  ): InventoryItem = {
+  def apply(): InventoryItem = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (adSlots != null) __obj.updateDynamic("adSlots")(adSlots.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (contentCategoryId != null) __obj.updateDynamic("contentCategoryId")(contentCategoryId.asInstanceOf[js.Any])
-    if (estimatedClickThroughRate != null) __obj.updateDynamic("estimatedClickThroughRate")(estimatedClickThroughRate.asInstanceOf[js.Any])
-    if (estimatedConversionRate != null) __obj.updateDynamic("estimatedConversionRate")(estimatedConversionRate.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inPlan)) __obj.updateDynamic("inPlan")(inPlan.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (negotiationChannelId != null) __obj.updateDynamic("negotiationChannelId")(negotiationChannelId.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (placementStrategyId != null) __obj.updateDynamic("placementStrategyId")(placementStrategyId.asInstanceOf[js.Any])
-    if (pricing != null) __obj.updateDynamic("pricing")(pricing.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (rfpId != null) __obj.updateDynamic("rfpId")(rfpId.asInstanceOf[js.Any])
-    if (siteId != null) __obj.updateDynamic("siteId")(siteId.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryItem]
   }
+  @scala.inline
+  implicit class InventoryItemOps[Self <: InventoryItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAdSlotsVarargs(value: AdSlot*): Self = this.set("adSlots", js.Array(value :_*))
+    @scala.inline
+    def setAdSlots(value: js.Array[AdSlot]): Self = this.set("adSlots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdSlots: Self = this.set("adSlots", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setContentCategoryId(value: String): Self = this.set("contentCategoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCategoryId: Self = this.set("contentCategoryId", js.undefined)
+    @scala.inline
+    def setEstimatedClickThroughRate(value: String): Self = this.set("estimatedClickThroughRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedClickThroughRate: Self = this.set("estimatedClickThroughRate", js.undefined)
+    @scala.inline
+    def setEstimatedConversionRate(value: String): Self = this.set("estimatedConversionRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedConversionRate: Self = this.set("estimatedConversionRate", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInPlan(value: Boolean): Self = this.set("inPlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInPlan: Self = this.set("inPlan", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModifiedInfo(value: LastModifiedInfo): Self = this.set("lastModifiedInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedInfo: Self = this.set("lastModifiedInfo", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNegotiationChannelId(value: String): Self = this.set("negotiationChannelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegotiationChannelId: Self = this.set("negotiationChannelId", js.undefined)
+    @scala.inline
+    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    @scala.inline
+    def setPlacementStrategyId(value: String): Self = this.set("placementStrategyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategyId: Self = this.set("placementStrategyId", js.undefined)
+    @scala.inline
+    def setPricing(value: Pricing): Self = this.set("pricing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricing: Self = this.set("pricing", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setRfpId(value: String): Self = this.set("rfpId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRfpId: Self = this.set("rfpId", js.undefined)
+    @scala.inline
+    def setSiteId(value: String): Self = this.set("siteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteId: Self = this.set("siteId", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

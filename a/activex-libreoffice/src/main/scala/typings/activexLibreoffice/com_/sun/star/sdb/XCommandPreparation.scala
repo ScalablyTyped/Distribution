@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   *
   * A command could be a table, query, or any kind of SQL statement prepared by the user.
   */
+@js.native
 trait XCommandPreparation extends XInterface {
   /**
     * creates a {@link com.sun.star.sdbc.PreparedStatement} object for sending parameterized SQL statements to the database.
@@ -23,7 +24,7 @@ trait XCommandPreparation extends XInterface {
     * @returns the {@link PreparedStatement} object
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def prepareCommand(command: String, commandType: Double): XPreparedStatement
+  def prepareCommand(command: String, commandType: Double): XPreparedStatement = js.native
 }
 
 object XCommandPreparation {
@@ -37,5 +38,20 @@ object XCommandPreparation {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), prepareCommand = js.Any.fromFunction2(prepareCommand), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCommandPreparation]
   }
+  @scala.inline
+  implicit class XCommandPreparationOps[Self <: XCommandPreparation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrepareCommand(value: (String, Double) => XPreparedStatement): Self = this.set("prepareCommand", js.Any.fromFunction2(value))
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A handy wrapper for the Web Notifications API
 | Keywords           | web, notification, nofity |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 537141 |
+| # downloads        | 531794 |
 | # stars            | 2 |
 
 ## Links

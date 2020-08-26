@@ -22,16 +22,34 @@ trait ImageFailure extends js.Object {
 
 object ImageFailure {
   @scala.inline
-  def apply(
-    failureCode: ImageFailureCode = null,
-    failureReason: ImageFailureReason = null,
-    imageId: ImageIdentifier = null
-  ): ImageFailure = {
+  def apply(): ImageFailure = {
     val __obj = js.Dynamic.literal()
-    if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageFailure]
   }
+  @scala.inline
+  implicit class ImageFailureOps[Self <: ImageFailure] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureCode(value: ImageFailureCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    @scala.inline
+    def setFailureReason(value: ImageFailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setImageId(value: ImageIdentifier): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("imageId", js.undefined)
+  }
+  
 }
 

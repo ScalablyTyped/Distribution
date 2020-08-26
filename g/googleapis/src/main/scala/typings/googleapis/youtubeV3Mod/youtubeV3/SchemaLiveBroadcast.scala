@@ -50,24 +50,50 @@ trait SchemaLiveBroadcast extends js.Object {
 
 object SchemaLiveBroadcast {
   @scala.inline
-  def apply(
-    contentDetails: SchemaLiveBroadcastContentDetails = null,
-    etag: String = null,
-    id: String = null,
-    kind: String = null,
-    snippet: SchemaLiveBroadcastSnippet = null,
-    statistics: SchemaLiveBroadcastStatistics = null,
-    status: SchemaLiveBroadcastStatus = null
-  ): SchemaLiveBroadcast = {
+  def apply(): SchemaLiveBroadcast = {
     val __obj = js.Dynamic.literal()
-    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveBroadcast]
   }
+  @scala.inline
+  implicit class SchemaLiveBroadcastOps[Self <: SchemaLiveBroadcast] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentDetails(value: SchemaLiveBroadcastContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSnippet(value: SchemaLiveBroadcastSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setStatistics(value: SchemaLiveBroadcastStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaLiveBroadcastStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

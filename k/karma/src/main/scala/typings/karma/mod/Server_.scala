@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class Server_ () extends EventEmitter {
   def this(options: ConfigFile) = this()
   def this(options: ConfigOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], callback: ServerCallback) = this()
   def this(options: ConfigFile, callback: ServerCallback) = this()
   def this(options: ConfigOptions, callback: ServerCallback) = this()
   /**

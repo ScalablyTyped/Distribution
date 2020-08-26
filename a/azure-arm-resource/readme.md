@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure-arm-resource
 
-Typings are for version 7.3.0
+Typings are for version 7.4.0
 
 ## Library description:
 Microsoft Azure Resource Management Client Library for node

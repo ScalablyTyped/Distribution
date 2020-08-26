@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Tab")
+@JSImport("grommet/es6", "Tab")
 @js.native
 class Tab protected ()
   extends Component[
@@ -38,7 +38,7 @@ class Tab protected ()
   ) = this()
 }
 
-@JSImport("grommet", "Tab")
+@JSImport("grommet/es6", "Tab")
 @js.native
 object Tab extends TopLevel[
       ComponentClass[

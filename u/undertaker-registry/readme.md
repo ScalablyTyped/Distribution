@@ -12,7 +12,7 @@ Default registry in gulp 4.
 | Keywords           | registry, tasks, undertaker, gulp |
 | # releases         | 1 |
 | # dependents       | 34 |
-| # downloads        | 27169661 |
+| # downloads        | 27986462 |
 | # stars            | 0 |
 
 ## Links

@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkDoneProgressOptions extends js.Object {
-  var workDoneProgress: js.UndefOr[Boolean] = js.undefined
+  var workDoneProgress: js.UndefOr[Boolean] = js.native
 }
 
 @JSImport("vscode-languageserver-protocol/lib/protocol", "WorkDoneProgressOptions")

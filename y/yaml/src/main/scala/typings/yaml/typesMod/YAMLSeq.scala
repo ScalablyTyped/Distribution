@@ -29,8 +29,17 @@ class YAMLSeq () extends Collection {
   def set(key: String, value: js.Any): Unit = js.native
   def set(key: Double, value: js.Any): Unit = js.native
   def set(key: Scalar, value: js.Any): Unit = js.native
+  def toJSON(arg: js.UndefOr[scala.Nothing], ctx: NodeToJsonContext): js.Array[_] = js.native
   def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Array[_] = js.native
+  def toString(
+    ctx: js.UndefOr[scala.Nothing],
+    onComment: js.UndefOr[scala.Nothing],
+    onChompKeep: js.Function0[Unit]
+  ): String = js.native
+  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit]): String = js.native
+  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext): String = js.native
+  def toString(ctx: StringifyContext, onComment: js.UndefOr[scala.Nothing], onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
 }

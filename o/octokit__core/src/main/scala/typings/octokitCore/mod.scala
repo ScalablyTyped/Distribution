@@ -78,11 +78,11 @@ object mod extends js.Object {
       * @param {string} route Request method + URL. Example: `'GET /orgs/:org'`
       * @param {object} [parameters] URL, query or body parameters, as well as `headers`, `mediaType.{format|previews}`, `request`, or `baseUrl`.
       */
-    def request[R /* <: Route */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 608 */ js.Any): js.Promise[
+    def request[R /* <: Route */](route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 631 */ js.Any): js.Promise[
         (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | OctokitResponse[_]
       ] = js.native
     def request[R /* <: Route */](
-      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 608 */ js.Any,
+      route: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 631 */ js.Any,
       options: typings.octokitTypes.requestParametersMod.RequestParameters | ((/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['parameters'] */ js.Any) with typings.octokitTypes.requestParametersMod.RequestParameters)
     ): js.Promise[
         (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints[R]['response'] */ js.Any) | OctokitResponse[_]
@@ -101,6 +101,7 @@ object mod extends js.Object {
   object Octokit extends js.Object {
     var VERSION: String = js.native
     var plugins: js.Array[OctokitPlugin] = js.native
+    def defaults[S /* <: Constructor[_] */](defaults: js.Function): Instantiable with S = js.native
     def defaults[S /* <: Constructor[_] */](defaults: OctokitOptions): Instantiable with S = js.native
     /**
       * Attach a plugin (or many) to your Octokit instance.
@@ -108,10 +109,9 @@ object mod extends js.Object {
       * @example
       * const API = Octokit.plugin(plugin1, plugin2, plugin3, ...)
       */
-    def plugin[S /* <: Constructor[_] with Plugins */, T1 /* <: OctokitPlugin | js.Array[OctokitPlugin] */, T2 /* <: js.Array[OctokitPlugin] */](
-      p1: T1,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param p2 because its type T2 is not an array type */ p2: T2
-    ): InstantiablePlugins with S with (Constructor[UnionToIntersection[ReturnTypeOf[T1] with ReturnTypeOf[T2]]]) = js.native
+    def plugin[S /* <: Constructor[_] with Plugins */, T /* <: js.Array[OctokitPlugin] */](
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param newPlugins because its type T is not an array type */ newPlugins: T
+    ): InstantiablePlugins with S with Constructor[UnionToIntersection[ReturnTypeOf[T]]] = js.native
   }
   
 }

@@ -7,30 +7,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotificationSystemTheme extends js.Object {
-  var notificationClassName: js.UndefOr[typings.reapop.anon.Button] = js.undefined
-  var notificationsContainerClassName: js.UndefOr[Main] = js.undefined
-  var notificationsContainerTransition: js.UndefOr[EnterTimeout] = js.undefined
-  var notificationsSystem: js.UndefOr[ClassName] = js.undefined
-  var smallScreenMin: js.UndefOr[Double] = js.undefined
+  var notificationClassName: js.UndefOr[typings.reapop.anon.Button] = js.native
+  var notificationsContainerClassName: js.UndefOr[Main] = js.native
+  var notificationsContainerTransition: js.UndefOr[EnterTimeout] = js.native
+  var notificationsSystem: js.UndefOr[ClassName] = js.native
+  var smallScreenMin: js.UndefOr[Double] = js.native
 }
 
 object NotificationSystemTheme {
   @scala.inline
-  def apply(
-    notificationClassName: typings.reapop.anon.Button = null,
-    notificationsContainerClassName: Main = null,
-    notificationsContainerTransition: EnterTimeout = null,
-    notificationsSystem: ClassName = null,
-    smallScreenMin: js.UndefOr[Double] = js.undefined
-  ): NotificationSystemTheme = {
+  def apply(): NotificationSystemTheme = {
     val __obj = js.Dynamic.literal()
-    if (notificationClassName != null) __obj.updateDynamic("notificationClassName")(notificationClassName.asInstanceOf[js.Any])
-    if (notificationsContainerClassName != null) __obj.updateDynamic("notificationsContainerClassName")(notificationsContainerClassName.asInstanceOf[js.Any])
-    if (notificationsContainerTransition != null) __obj.updateDynamic("notificationsContainerTransition")(notificationsContainerTransition.asInstanceOf[js.Any])
-    if (notificationsSystem != null) __obj.updateDynamic("notificationsSystem")(notificationsSystem.asInstanceOf[js.Any])
-    if (!js.isUndefined(smallScreenMin)) __obj.updateDynamic("smallScreenMin")(smallScreenMin.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSystemTheme]
   }
+  @scala.inline
+  implicit class NotificationSystemThemeOps[Self <: NotificationSystemTheme] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotificationClassName(value: typings.reapop.anon.Button): Self = this.set("notificationClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationClassName: Self = this.set("notificationClassName", js.undefined)
+    @scala.inline
+    def setNotificationsContainerClassName(value: Main): Self = this.set("notificationsContainerClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationsContainerClassName: Self = this.set("notificationsContainerClassName", js.undefined)
+    @scala.inline
+    def setNotificationsContainerTransition(value: EnterTimeout): Self = this.set("notificationsContainerTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationsContainerTransition: Self = this.set("notificationsContainerTransition", js.undefined)
+    @scala.inline
+    def setNotificationsSystem(value: ClassName): Self = this.set("notificationsSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationsSystem: Self = this.set("notificationsSystem", js.undefined)
+    @scala.inline
+    def setSmallScreenMin(value: Double): Self = this.set("smallScreenMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmallScreenMin: Self = this.set("smallScreenMin", js.undefined)
+  }
+  
 }
 

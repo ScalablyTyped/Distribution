@@ -43,6 +43,14 @@ class Volume protected () extends CustomResource {
     */
   val kmsKeyId: Output_[String] = js.native
   /**
+    * Specifies whether to enable Amazon EBS Multi-Attach. Multi-Attach is supported exclusively on `io1` volumes.
+    */
+  val multiAttachEnabled: Output_[js.UndefOr[Boolean]] = js.native
+  /**
+    * The Amazon Resource Name (ARN) of the Outpost.
+    */
+  val outpostArn: Output_[js.UndefOr[String]] = js.native
+  /**
     * The size of the drive in GiBs.
     */
   val size: Output_[Double] = js.native
@@ -51,9 +59,9 @@ class Volume protected () extends CustomResource {
     */
   val snapshotId: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The type of EBS volume. Can be "standard", "gp2", "io1", "sc1" or "st1" (Default: "gp2").
     */
@@ -71,8 +79,10 @@ object Volume extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Volume = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Volume = js.native
   def get(name: String, id: Input[ID], state: VolumeState): Volume = js.native
   def get(name: String, id: Input[ID], state: VolumeState, opts: CustomResourceOptions): Volume = js.native
   /**

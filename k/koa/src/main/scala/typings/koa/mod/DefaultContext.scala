@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
   * This interface can be augmented by users to add types to Koa's default context
   */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Lifted 0 members from Set(koa.koa.DefaultContextExtends) */ trait DefaultContext
+- Lifted 0 members from Set(koa.koa.DefaultContextExtends) */ @js.native
+trait DefaultContext
   extends /**
   * Custom properties.
   */
@@ -17,9 +18,8 @@ import scala.scalajs.js.annotation._
 
 object DefaultContext {
   @scala.inline
-  def apply(StringDictionary: /* name */ StringDictionary[js.Any] = null): DefaultContext = {
+  def apply(): DefaultContext = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[DefaultContext]
   }
 }

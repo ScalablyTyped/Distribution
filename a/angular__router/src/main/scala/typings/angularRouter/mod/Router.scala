@@ -130,14 +130,15 @@ class Router protected () extends js.Object {
     */
   var urlUpdateStrategy: deferred | eager = js.native
   /**
-    * Applies an array of commands to the current URL tree and creates a new URL tree.
+    * Appends URL segments to the current URL tree to create a new URL tree.
     *
-    * When given an activated route, applies the given commands starting from the route.
-    * Otherwise, applies the given command starting from the root.
-    *
-    * @param commands An array of commands to apply.
+    * @param commands An array of URL fragments with which to construct the new URL tree.
+    * If the path is static, can be the literal URL string. For a dynamic path, pass an array of path
+    * segments, followed by the parameters for each segment.
+    * The fragments are applied to the current URL tree or the one provided  in the `relativeTo`
+    * property of the options object, if supplied.
     * @param navigationExtras Options that control the navigation strategy. This function
-    * only utilizes properties in `NavigationExtras` that would change the provided URL.
+    * only uses properties in `NavigationExtras` that would change the provided URL.
     * @returns The new URL tree.
     *
     * @usageNotes
@@ -202,35 +203,39 @@ class Router protected () extends js.Object {
     * Navigate based on the provided array of commands and a starting point.
     * If no starting route is provided, the navigation is absolute.
     *
-    * Returns a promise that:
-    * - resolves to 'true' when navigation succeeds,
-    * - resolves to 'false' when navigation fails,
-    * - is rejected when an error happens.
+    * @param commands An array of URL fragments with which to construct the target URL.
+    * If the path is static, can be the literal URL string. For a dynamic path, pass an array of path
+    * segments, followed by the parameters for each segment.
+    * The fragments are applied to the current URL or the one provided  in the `relativeTo` property
+    * of the options object, if supplied.
+    * @param extras An options object that determines how the URL should be constructed or
+    *     interpreted.
+    *
+    * @returns A Promise that resolves to `true` when navigation succeeds, to `false` when navigation
+    *     fails,
+    * or is rejected on error.
     *
     * @usageNotes
+    *
+    * The following calls request navigation to a dynamic route path relative to the current URL.
     *
     * ```
     * router.navigate(['team', 33, 'user', 11], {relativeTo: route});
     *
-    * // Navigate without updating the URL
+    * // Navigate without updating the URL, overriding the default behavior
     * router.navigate(['team', 33, 'user', 11], {relativeTo: route, skipLocationChange: true});
     * ```
     *
-    * The first parameter of `navigate()` is a delta to be applied to the current URL
-    * or the one provided in the `relativeTo` property of the second parameter (the
-    * `NavigationExtras`).
+    * @see [Routing and Navigation guide](guide/router)
     *
-    * In order to affect this browser's `history.state` entry, the `state`
-    * parameter can be passed. This must be an object because the router
-    * will add the `navigationId` property to this object before creating
-    * the new history item.
     */
   def navigate(commands: js.Array[_]): js.Promise[Boolean] = js.native
   def navigate(commands: js.Array[_], extras: NavigationExtras): js.Promise[Boolean] = js.native
   /**
-    * Navigate based on the provided URL, which must be absolute.
+    * Navigates to a view using an absolute route path.
     *
-    * @param url An absolute URL. The function does not apply any delta to the current URL.
+    * @param url An absolute path for a defined route. The function does not apply any delta to the
+    *     current URL.
     * @param extras An object containing properties that modify the navigation strategy.
     * The function ignores any properties in the `NavigationExtras` that would change the
     * provided URL.
@@ -240,12 +245,16 @@ class Router protected () extends js.Object {
     *
     * @usageNotes
     *
+    * The following calls request navigation to an absolute path.
+    *
     * ```
     * router.navigateByUrl("/team/33/user/11");
     *
     * // Navigate without updating the URL
     * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
     * ```
+    *
+    * @see [Routing and Navigation guide](guide/router)
     *
     */
   def navigateByUrl(url: String): js.Promise[Boolean] = js.native
@@ -257,7 +266,7 @@ class Router protected () extends js.Object {
   /** Parses a string into a `UrlTree` */
   def parseUrl(url: String): UrlTree = js.native
   /**
-    * Resets the configuration used for navigation and generating links.
+    * Resets the route configuration used for navigation and generating links.
     *
     * @param config The route array for the new configuration.
     *

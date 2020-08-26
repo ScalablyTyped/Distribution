@@ -4,63 +4,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AggregateRequest extends js.Object {
   /**
     * The specification of data to be aggregated. At least one aggregateBy spec must be provided. All data that is specified will be aggregated using the
     * same bucketing criteria. There will be one dataset in the response for every aggregateBy spec.
     */
-  var aggregateBy: js.UndefOr[js.Array[AggregateBy]] = js.undefined
+  var aggregateBy: js.UndefOr[js.Array[AggregateBy]] = js.native
   /**
     * Specifies that data be aggregated each activity segment recored for a user. Similar to bucketByActivitySegment, but bucketing is done for each activity
     * segment rather than all segments of the same type. Mutually exclusive of other bucketing specifications.
     */
-  var bucketByActivitySegment: js.UndefOr[BucketByActivity] = js.undefined
+  var bucketByActivitySegment: js.UndefOr[BucketByActivity] = js.native
   /**
     * Specifies that data be aggregated by the type of activity being performed when the data was recorded. All data that was recorded during a certain
     * activity type (for the given time range) will be aggregated into the same bucket. Data that was recorded while the user was not active will not be
     * included in the response. Mutually exclusive of other bucketing specifications.
     */
-  var bucketByActivityType: js.UndefOr[BucketByActivity] = js.undefined
+  var bucketByActivityType: js.UndefOr[BucketByActivity] = js.native
   /**
     * Specifies that data be aggregated by user sessions. Data that does not fall within the time range of a session will not be included in the response.
     * Mutually exclusive of other bucketing specifications.
     */
-  var bucketBySession: js.UndefOr[BucketBySession] = js.undefined
+  var bucketBySession: js.UndefOr[BucketBySession] = js.native
   /** Specifies that data be aggregated by a single time interval. Mutually exclusive of other bucketing specifications. */
-  var bucketByTime: js.UndefOr[BucketByTime] = js.undefined
+  var bucketByTime: js.UndefOr[BucketByTime] = js.native
   /** The end of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive. */
-  var endTimeMillis: js.UndefOr[String] = js.undefined
+  var endTimeMillis: js.UndefOr[String] = js.native
   /**
     * A list of acceptable data quality standards. Only data points which conform to at least one of the specified data quality standards will be returned.
     * If the list is empty, all data points are returned.
     */
-  var filteredDataQualityStandard: js.UndefOr[js.Array[String]] = js.undefined
+  var filteredDataQualityStandard: js.UndefOr[js.Array[String]] = js.native
   /** The start of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive. */
-  var startTimeMillis: js.UndefOr[String] = js.undefined
+  var startTimeMillis: js.UndefOr[String] = js.native
 }
 
 object AggregateRequest {
   @scala.inline
-  def apply(
-    aggregateBy: js.Array[AggregateBy] = null,
-    bucketByActivitySegment: BucketByActivity = null,
-    bucketByActivityType: BucketByActivity = null,
-    bucketBySession: BucketBySession = null,
-    bucketByTime: BucketByTime = null,
-    endTimeMillis: String = null,
-    filteredDataQualityStandard: js.Array[String] = null,
-    startTimeMillis: String = null
-  ): AggregateRequest = {
+  def apply(): AggregateRequest = {
     val __obj = js.Dynamic.literal()
-    if (aggregateBy != null) __obj.updateDynamic("aggregateBy")(aggregateBy.asInstanceOf[js.Any])
-    if (bucketByActivitySegment != null) __obj.updateDynamic("bucketByActivitySegment")(bucketByActivitySegment.asInstanceOf[js.Any])
-    if (bucketByActivityType != null) __obj.updateDynamic("bucketByActivityType")(bucketByActivityType.asInstanceOf[js.Any])
-    if (bucketBySession != null) __obj.updateDynamic("bucketBySession")(bucketBySession.asInstanceOf[js.Any])
-    if (bucketByTime != null) __obj.updateDynamic("bucketByTime")(bucketByTime.asInstanceOf[js.Any])
-    if (endTimeMillis != null) __obj.updateDynamic("endTimeMillis")(endTimeMillis.asInstanceOf[js.Any])
-    if (filteredDataQualityStandard != null) __obj.updateDynamic("filteredDataQualityStandard")(filteredDataQualityStandard.asInstanceOf[js.Any])
-    if (startTimeMillis != null) __obj.updateDynamic("startTimeMillis")(startTimeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateRequest]
   }
+  @scala.inline
+  implicit class AggregateRequestOps[Self <: AggregateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregateByVarargs(value: AggregateBy*): Self = this.set("aggregateBy", js.Array(value :_*))
+    @scala.inline
+    def setAggregateBy(value: js.Array[AggregateBy]): Self = this.set("aggregateBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateBy: Self = this.set("aggregateBy", js.undefined)
+    @scala.inline
+    def setBucketByActivitySegment(value: BucketByActivity): Self = this.set("bucketByActivitySegment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketByActivitySegment: Self = this.set("bucketByActivitySegment", js.undefined)
+    @scala.inline
+    def setBucketByActivityType(value: BucketByActivity): Self = this.set("bucketByActivityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketByActivityType: Self = this.set("bucketByActivityType", js.undefined)
+    @scala.inline
+    def setBucketBySession(value: BucketBySession): Self = this.set("bucketBySession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketBySession: Self = this.set("bucketBySession", js.undefined)
+    @scala.inline
+    def setBucketByTime(value: BucketByTime): Self = this.set("bucketByTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketByTime: Self = this.set("bucketByTime", js.undefined)
+    @scala.inline
+    def setEndTimeMillis(value: String): Self = this.set("endTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimeMillis: Self = this.set("endTimeMillis", js.undefined)
+    @scala.inline
+    def setFilteredDataQualityStandardVarargs(value: String*): Self = this.set("filteredDataQualityStandard", js.Array(value :_*))
+    @scala.inline
+    def setFilteredDataQualityStandard(value: js.Array[String]): Self = this.set("filteredDataQualityStandard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilteredDataQualityStandard: Self = this.set("filteredDataQualityStandard", js.undefined)
+    @scala.inline
+    def setStartTimeMillis(value: String): Self = this.set("startTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimeMillis: Self = this.set("startTimeMillis", js.undefined)
+  }
+  
 }
 

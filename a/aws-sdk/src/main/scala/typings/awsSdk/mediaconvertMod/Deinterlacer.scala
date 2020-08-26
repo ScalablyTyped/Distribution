@@ -22,16 +22,34 @@ trait Deinterlacer extends js.Object {
 
 object Deinterlacer {
   @scala.inline
-  def apply(
-    Algorithm: DeinterlaceAlgorithm = null,
-    Control: DeinterlacerControl = null,
-    Mode: DeinterlacerMode = null
-  ): Deinterlacer = {
+  def apply(): Deinterlacer = {
     val __obj = js.Dynamic.literal()
-    if (Algorithm != null) __obj.updateDynamic("Algorithm")(Algorithm.asInstanceOf[js.Any])
-    if (Control != null) __obj.updateDynamic("Control")(Control.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deinterlacer]
   }
+  @scala.inline
+  implicit class DeinterlacerOps[Self <: Deinterlacer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithm(value: DeinterlaceAlgorithm): Self = this.set("Algorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithm: Self = this.set("Algorithm", js.undefined)
+    @scala.inline
+    def setControl(value: DeinterlacerControl): Self = this.set("Control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControl: Self = this.set("Control", js.undefined)
+    @scala.inline
+    def setMode(value: DeinterlacerMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+  }
+  
 }
 

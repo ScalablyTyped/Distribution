@@ -22,6 +22,7 @@ class Eip protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: EipArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: EipArgs, opts: CustomResourceOptions) = this()
   val allocationId: Output_[String] = js.native
   /**
@@ -31,6 +32,14 @@ class Eip protected () extends CustomResource {
     */
   val associateWithPrivateIp: Output_[js.UndefOr[String]] = js.native
   val associationId: Output_[String] = js.native
+  /**
+    * Customer owned IP.
+    */
+  val customerOwnedIp: Output_[String] = js.native
+  /**
+    * The  ID  of a customer-owned address pool. For more on customer owned IP addressed check out [Customer-owned IP addresses guide](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-networking-components.html#ip-addressing)
+    */
+  val customerOwnedIpv4Pool: Output_[js.UndefOr[String]] = js.native
   val domain: Output_[String] = js.native
   /**
     * EC2 instance ID.
@@ -61,9 +70,9 @@ class Eip protected () extends CustomResource {
     */
   val publicIpv4Pool: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Boolean if the EIP is in a VPC or not.
     */
@@ -81,8 +90,10 @@ object Eip extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Eip = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Eip = js.native
   def get(name: String, id: Input[ID], state: EipState): Eip = js.native
   def get(name: String, id: Input[ID], state: EipState, opts: CustomResourceOptions): Eip = js.native
   /**

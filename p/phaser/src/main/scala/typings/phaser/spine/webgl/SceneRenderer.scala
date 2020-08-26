@@ -29,6 +29,14 @@ trait SceneRenderer extends Disposable {
   var twoColorTint: js.Any = js.native
   def begin(): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double): Unit = js.native
+  def circle(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    radius: Double,
+    color: js.UndefOr[scala.Nothing],
+    segments: Double
+  ): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color, segments: Double): Unit = js.native
   def curve(
@@ -55,6 +63,15 @@ trait SceneRenderer extends Disposable {
     color: Color
   ): Unit = js.native
   def drawRegion(region: TextureAtlasRegion, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def drawRegion(
+    region: TextureAtlasRegion,
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    color: js.UndefOr[scala.Nothing],
+    premultipliedAlpha: Boolean
+  ): Unit = js.native
   def drawRegion(region: TextureAtlasRegion, x: Double, y: Double, width: Double, height: Double, color: Color): Unit = js.native
   def drawRegion(
     region: TextureAtlasRegion,
@@ -66,10 +83,30 @@ trait SceneRenderer extends Disposable {
     premultipliedAlpha: Boolean
   ): Unit = js.native
   def drawSkeleton(skeleton: Skeleton): Unit = js.native
+  def drawSkeleton(
+    skeleton: Skeleton,
+    premultipliedAlpha: js.UndefOr[scala.Nothing],
+    slotRangeStart: js.UndefOr[scala.Nothing],
+    slotRangeEnd: Double
+  ): Unit = js.native
+  def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: js.UndefOr[scala.Nothing], slotRangeStart: Double): Unit = js.native
+  def drawSkeleton(
+    skeleton: Skeleton,
+    premultipliedAlpha: js.UndefOr[scala.Nothing],
+    slotRangeStart: Double,
+    slotRangeEnd: Double
+  ): Unit = js.native
   def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean): Unit = js.native
+  def drawSkeleton(
+    skeleton: Skeleton,
+    premultipliedAlpha: Boolean,
+    slotRangeStart: js.UndefOr[scala.Nothing],
+    slotRangeEnd: Double
+  ): Unit = js.native
   def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean, slotRangeStart: Double): Unit = js.native
   def drawSkeleton(skeleton: Skeleton, premultipliedAlpha: Boolean, slotRangeStart: Double, slotRangeEnd: Double): Unit = js.native
   def drawSkeletonDebug(skeleton: Skeleton): Unit = js.native
+  def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: js.UndefOr[scala.Nothing], ignoredBones: js.Array[String]): Unit = js.native
   def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: Boolean): Unit = js.native
   def drawSkeletonDebug(skeleton: Skeleton, premultipliedAlpha: Boolean, ignoredBones: js.Array[String]): Unit = js.native
   def drawTexture(texture: GLTexture, x: Double, y: Double, width: Double, height: Double): Unit = js.native
@@ -83,6 +120,18 @@ trait SceneRenderer extends Disposable {
     pivotX: Double,
     pivotY: Double,
     angle: Double
+  ): Unit = js.native
+  def drawTextureRotated(
+    texture: GLTexture,
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    pivotX: Double,
+    pivotY: Double,
+    angle: Double,
+    color: js.UndefOr[scala.Nothing],
+    premultipliedAlpha: Boolean
   ): Unit = js.native
   def drawTextureRotated(
     texture: GLTexture,
@@ -132,6 +181,7 @@ trait SceneRenderer extends Disposable {
   ): Unit = js.native
   def end(): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double): Unit = js.native
+  def line(x: Double, y: Double, x2: Double, y2: Double, color: js.UndefOr[scala.Nothing], color2: Color): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double, color: Color): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double, color: Color, color2: Color): Unit = js.native
   def polygon(polygonVertices: ArrayLike[Double], offset: Double, count: Double): Unit = js.native
@@ -157,6 +207,107 @@ trait SceneRenderer extends Disposable {
     y3: Double,
     x4: Double,
     y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: js.UndefOr[scala.Nothing],
+    color3: js.UndefOr[scala.Nothing],
+    color4: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: js.UndefOr[scala.Nothing],
+    color3: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: js.UndefOr[scala.Nothing],
+    color3: Color,
+    color4: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: Color,
+    color3: js.UndefOr[scala.Nothing],
+    color4: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: Color,
+    color3: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: Color,
+    color3: Color,
+    color4: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
     color: Color
   ): Unit = js.native
   def quad(
@@ -170,7 +321,66 @@ trait SceneRenderer extends Disposable {
     x4: Double,
     y4: Double,
     color: Color,
+    color2: js.UndefOr[scala.Nothing],
+    color3: js.UndefOr[scala.Nothing],
+    color4: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: Color,
+    color2: js.UndefOr[scala.Nothing],
+    color3: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: Color,
+    color2: js.UndefOr[scala.Nothing],
+    color3: Color,
+    color4: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: Color,
     color2: Color
+  ): Unit = js.native
+  def quad(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    color: Color,
+    color2: Color,
+    color3: js.UndefOr[scala.Nothing],
+    color4: Color
   ): Unit = js.native
   def quad(
     filled: Boolean,
@@ -215,7 +425,54 @@ trait SceneRenderer extends Disposable {
     y2: Double,
     x3: Double,
     y3: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: js.UndefOr[scala.Nothing],
+    color3: Color
+  ): Unit = js.native
+  def triangle(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: Color
+  ): Unit = js.native
+  def triangle(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    color: js.UndefOr[scala.Nothing],
+    color2: Color,
+    color3: Color
+  ): Unit = js.native
+  def triangle(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
     color: Color
+  ): Unit = js.native
+  def triangle(
+    filled: Boolean,
+    x: Double,
+    y: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    color: Color,
+    color2: js.UndefOr[scala.Nothing],
+    color3: Color
   ): Unit = js.native
   def triangle(
     filled: Boolean,

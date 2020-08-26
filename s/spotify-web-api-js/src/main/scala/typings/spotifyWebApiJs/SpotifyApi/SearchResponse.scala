@@ -16,33 +16,58 @@ import scala.scalajs.js.annotation._
 /* Inlined parent std.Partial<spotify-web-api-js.SpotifyApi.PlaylistSearchResponse> */
 /* Inlined parent std.Partial<spotify-web-api-js.SpotifyApi.ShowSearchResponse> */
 /* Inlined parent std.Partial<spotify-web-api-js.SpotifyApi.EpisodeSearchResponse> */
+@js.native
 trait SearchResponse extends js.Object {
-  var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.undefined
-  var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.undefined
-  var episodes: js.UndefOr[PagingObject[EpisodeObjectSimplified]] = js.undefined
-  var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.undefined
-  var shows: js.UndefOr[PagingObject[ShowObjectSimplified]] = js.undefined
-  var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.undefined
+  var albums: js.UndefOr[PagingObject[AlbumObjectSimplified]] = js.native
+  var artists: js.UndefOr[PagingObject[ArtistObjectFull]] = js.native
+  var episodes: js.UndefOr[PagingObject[EpisodeObjectSimplified]] = js.native
+  var playlists: js.UndefOr[PagingObject[PlaylistObjectSimplified]] = js.native
+  var shows: js.UndefOr[PagingObject[ShowObjectSimplified]] = js.native
+  var tracks: js.UndefOr[PagingObject[TrackObjectFull]] = js.native
 }
 
 object SearchResponse {
   @scala.inline
-  def apply(
-    albums: PagingObject[AlbumObjectSimplified] = null,
-    artists: PagingObject[ArtistObjectFull] = null,
-    episodes: PagingObject[EpisodeObjectSimplified] = null,
-    playlists: PagingObject[PlaylistObjectSimplified] = null,
-    shows: PagingObject[ShowObjectSimplified] = null,
-    tracks: PagingObject[TrackObjectFull] = null
-  ): SearchResponse = {
+  def apply(): SearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (albums != null) __obj.updateDynamic("albums")(albums.asInstanceOf[js.Any])
-    if (artists != null) __obj.updateDynamic("artists")(artists.asInstanceOf[js.Any])
-    if (episodes != null) __obj.updateDynamic("episodes")(episodes.asInstanceOf[js.Any])
-    if (playlists != null) __obj.updateDynamic("playlists")(playlists.asInstanceOf[js.Any])
-    if (shows != null) __obj.updateDynamic("shows")(shows.asInstanceOf[js.Any])
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchResponse]
   }
+  @scala.inline
+  implicit class SearchResponseOps[Self <: SearchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = this.set("albums", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbums: Self = this.set("albums", js.undefined)
+    @scala.inline
+    def setArtists(value: PagingObject[ArtistObjectFull]): Self = this.set("artists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtists: Self = this.set("artists", js.undefined)
+    @scala.inline
+    def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = this.set("episodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEpisodes: Self = this.set("episodes", js.undefined)
+    @scala.inline
+    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = this.set("playlists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylists: Self = this.set("playlists", js.undefined)
+    @scala.inline
+    def setShows(value: PagingObject[ShowObjectSimplified]): Self = this.set("shows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShows: Self = this.set("shows", js.undefined)
+    @scala.inline
+    def setTracks(value: PagingObject[TrackObjectFull]): Self = this.set("tracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracks: Self = this.set("tracks", js.undefined)
+  }
+  
 }
 

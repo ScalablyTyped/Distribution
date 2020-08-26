@@ -26,16 +26,9 @@ object getPolicyCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetPolicyInput) = this()
-    /* CompleteClass */
-    override val input: GetPolicyInput = js.native
     val middlewareStack: MiddlewareStack[GetPolicyInput, GetPolicyOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[GetPolicyInput, GetPolicyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[GetPolicyInput, GetPolicyOutput] = js.native
   }

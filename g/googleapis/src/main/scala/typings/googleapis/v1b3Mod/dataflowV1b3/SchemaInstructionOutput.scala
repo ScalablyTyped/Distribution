@@ -42,22 +42,46 @@ trait SchemaInstructionOutput extends js.Object {
 
 object SchemaInstructionOutput {
   @scala.inline
-  def apply(
-    codec: StringDictionary[js.Any] = null,
-    name: String = null,
-    onlyCountKeyBytes: js.UndefOr[Boolean] = js.undefined,
-    onlyCountValueBytes: js.UndefOr[Boolean] = js.undefined,
-    originalName: String = null,
-    systemName: String = null
-  ): SchemaInstructionOutput = {
+  def apply(): SchemaInstructionOutput = {
     val __obj = js.Dynamic.literal()
-    if (codec != null) __obj.updateDynamic("codec")(codec.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyCountKeyBytes)) __obj.updateDynamic("onlyCountKeyBytes")(onlyCountKeyBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyCountValueBytes)) __obj.updateDynamic("onlyCountValueBytes")(onlyCountValueBytes.get.asInstanceOf[js.Any])
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstructionOutput]
   }
+  @scala.inline
+  implicit class SchemaInstructionOutputOps[Self <: SchemaInstructionOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodec(value: StringDictionary[js.Any]): Self = this.set("codec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodec: Self = this.set("codec", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnlyCountKeyBytes(value: Boolean): Self = this.set("onlyCountKeyBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyCountKeyBytes: Self = this.set("onlyCountKeyBytes", js.undefined)
+    @scala.inline
+    def setOnlyCountValueBytes(value: Boolean): Self = this.set("onlyCountValueBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyCountValueBytes: Self = this.set("onlyCountValueBytes", js.undefined)
+    @scala.inline
+    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    @scala.inline
+    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemName: Self = this.set("systemName", js.undefined)
+  }
+  
 }
 

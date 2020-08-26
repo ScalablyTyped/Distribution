@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeListColumnMenu extends js.Object {
-  var columns: js.UndefOr[Boolean] = js.undefined
-  var filterable: js.UndefOr[Boolean] = js.undefined
-  var messages: js.UndefOr[TreeListColumnMenuMessages] = js.undefined
-  var sortable: js.UndefOr[Boolean] = js.undefined
+  var columns: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[TreeListColumnMenuMessages] = js.native
+  var sortable: js.UndefOr[Boolean] = js.native
 }
 
 object TreeListColumnMenu {
   @scala.inline
-  def apply(
-    columns: js.UndefOr[Boolean] = js.undefined,
-    filterable: js.UndefOr[Boolean] = js.undefined,
-    messages: TreeListColumnMenuMessages = null,
-    sortable: js.UndefOr[Boolean] = js.undefined
-  ): TreeListColumnMenu = {
+  def apply(): TreeListColumnMenu = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnMenu]
   }
+  @scala.inline
+  implicit class TreeListColumnMenuOps[Self <: TreeListColumnMenu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: Boolean): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setMessages(value: TreeListColumnMenuMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortable: Self = this.set("sortable", js.undefined)
+  }
+  
 }
 

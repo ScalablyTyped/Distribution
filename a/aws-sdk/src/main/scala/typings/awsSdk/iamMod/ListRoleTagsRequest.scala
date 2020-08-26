@@ -22,15 +22,32 @@ trait ListRoleTagsRequest extends js.Object {
 
 object ListRoleTagsRequest {
   @scala.inline
-  def apply(
-    RoleName: roleNameType,
-    Marker: markerType = null,
-    MaxItems: js.UndefOr[maxItemsType] = js.undefined
-  ): ListRoleTagsRequest = {
+  def apply(RoleName: roleNameType): ListRoleTagsRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRoleTagsRequest]
   }
+  @scala.inline
+  implicit class ListRoleTagsRequestOps[Self <: ListRoleTagsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleName(value: roleNameType): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: markerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: maxItemsType): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+  }
+  
 }
 

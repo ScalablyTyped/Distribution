@@ -78,44 +78,92 @@ trait Job extends js.Object {
 
 object Job {
   @scala.inline
-  def apply(
-    abortConfig: AbortConfig = null,
-    comment: Comment = null,
-    completedAt: DateType = null,
-    createdAt: DateType = null,
-    description: JobDescription = null,
-    forceCanceled: js.UndefOr[Forced] = js.undefined,
-    jobArn: JobArn = null,
-    jobExecutionsRolloutConfig: JobExecutionsRolloutConfig = null,
-    jobId: JobId = null,
-    jobProcessDetails: JobProcessDetails = null,
-    lastUpdatedAt: DateType = null,
-    presignedUrlConfig: PresignedUrlConfig = null,
-    reasonCode: ReasonCode = null,
-    status: JobStatus = null,
-    targetSelection: TargetSelection = null,
-    targets: JobTargets = null,
-    timeoutConfig: TimeoutConfig = null
-  ): Job = {
+  def apply(): Job = {
     val __obj = js.Dynamic.literal()
-    if (abortConfig != null) __obj.updateDynamic("abortConfig")(abortConfig.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (completedAt != null) __obj.updateDynamic("completedAt")(completedAt.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceCanceled)) __obj.updateDynamic("forceCanceled")(forceCanceled.get.asInstanceOf[js.Any])
-    if (jobArn != null) __obj.updateDynamic("jobArn")(jobArn.asInstanceOf[js.Any])
-    if (jobExecutionsRolloutConfig != null) __obj.updateDynamic("jobExecutionsRolloutConfig")(jobExecutionsRolloutConfig.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (jobProcessDetails != null) __obj.updateDynamic("jobProcessDetails")(jobProcessDetails.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (presignedUrlConfig != null) __obj.updateDynamic("presignedUrlConfig")(presignedUrlConfig.asInstanceOf[js.Any])
-    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetSelection != null) __obj.updateDynamic("targetSelection")(targetSelection.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
-    if (timeoutConfig != null) __obj.updateDynamic("timeoutConfig")(timeoutConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Job]
   }
+  @scala.inline
+  implicit class JobOps[Self <: Job] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortConfig(value: AbortConfig): Self = this.set("abortConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortConfig: Self = this.set("abortConfig", js.undefined)
+    @scala.inline
+    def setComment(value: Comment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCompletedAt(value: DateType): Self = this.set("completedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedAt: Self = this.set("completedAt", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateType): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDescription(value: JobDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setForceCanceled(value: Forced): Self = this.set("forceCanceled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceCanceled: Self = this.set("forceCanceled", js.undefined)
+    @scala.inline
+    def setJobArn(value: JobArn): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    @scala.inline
+    def setJobExecutionsRolloutConfig(value: JobExecutionsRolloutConfig): Self = this.set("jobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobExecutionsRolloutConfig: Self = this.set("jobExecutionsRolloutConfig", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setJobProcessDetails(value: JobProcessDetails): Self = this.set("jobProcessDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobProcessDetails: Self = this.set("jobProcessDetails", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setPresignedUrlConfig(value: PresignedUrlConfig): Self = this.set("presignedUrlConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresignedUrlConfig: Self = this.set("presignedUrlConfig", js.undefined)
+    @scala.inline
+    def setReasonCode(value: ReasonCode): Self = this.set("reasonCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonCode: Self = this.set("reasonCode", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetSelection(value: TargetSelection): Self = this.set("targetSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetSelection: Self = this.set("targetSelection", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: TargetArn*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: JobTargets): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+    @scala.inline
+    def setTimeoutConfig(value: TimeoutConfig): Self = this.set("timeoutConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutConfig: Self = this.set("timeoutConfig", js.undefined)
+  }
+  
 }
 

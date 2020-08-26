@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents a data pilot table on a spreadsheet. */
+@js.native
 trait DataPilotTable
   extends XDataPilotDescriptor
      with XDataPilotTable

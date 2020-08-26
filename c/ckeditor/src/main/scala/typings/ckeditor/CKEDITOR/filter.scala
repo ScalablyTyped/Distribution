@@ -25,17 +25,37 @@ trait filter extends js.Object {
   def addFeature(feature: feature): Boolean = js.native
   def addTransformations(transformations: js.Array[js.Array[String | transformation]]): Unit = js.native
   def allow(newRules: allowedContentRules): Boolean = js.native
+  def allow(newRules: allowedContentRules, featureName: js.UndefOr[scala.Nothing], overrideCustom: Boolean): Boolean = js.native
   def allow(newRules: allowedContentRules, featureName: String): Boolean = js.native
   def allow(newRules: allowedContentRules, featureName: String, overrideCustom: Boolean): Boolean = js.native
   def applyTo(fragment: element): Boolean = js.native
+  def applyTo(
+    fragment: element,
+    toHtml: js.UndefOr[scala.Nothing],
+    transformOnly: js.UndefOr[scala.Nothing],
+    enterMode: Double
+  ): Boolean = js.native
+  def applyTo(fragment: element, toHtml: js.UndefOr[scala.Nothing], transformOnly: Boolean): Boolean = js.native
+  def applyTo(fragment: element, toHtml: js.UndefOr[scala.Nothing], transformOnly: Boolean, enterMode: Double): Boolean = js.native
   def applyTo(fragment: element, toHtml: Boolean): Boolean = js.native
+  def applyTo(fragment: element, toHtml: Boolean, transformOnly: js.UndefOr[scala.Nothing], enterMode: Double): Boolean = js.native
   def applyTo(fragment: element, toHtml: Boolean, transformOnly: Boolean): Boolean = js.native
   def applyTo(fragment: element, toHtml: Boolean, transformOnly: Boolean, enterMode: Double): Boolean = js.native
   def applyTo(fragment: fragment): Boolean = js.native
+  def applyTo(
+    fragment: fragment,
+    toHtml: js.UndefOr[scala.Nothing],
+    transformOnly: js.UndefOr[scala.Nothing],
+    enterMode: Double
+  ): Boolean = js.native
+  def applyTo(fragment: fragment, toHtml: js.UndefOr[scala.Nothing], transformOnly: Boolean): Boolean = js.native
+  def applyTo(fragment: fragment, toHtml: js.UndefOr[scala.Nothing], transformOnly: Boolean, enterMode: Double): Boolean = js.native
   def applyTo(fragment: fragment, toHtml: Boolean): Boolean = js.native
+  def applyTo(fragment: fragment, toHtml: Boolean, transformOnly: js.UndefOr[scala.Nothing], enterMode: Double): Boolean = js.native
   def applyTo(fragment: fragment, toHtml: Boolean, transformOnly: Boolean): Boolean = js.native
   def applyTo(fragment: fragment, toHtml: Boolean, transformOnly: Boolean, enterMode: Double): Boolean = js.native
   def check(test: contentRule): Boolean = js.native
+  def check(test: contentRule, applyTransformations: js.UndefOr[scala.Nothing], strictCheck: Boolean): Boolean = js.native
   def check(test: contentRule, applyTransformations: Boolean): Boolean = js.native
   def check(test: contentRule, applyTransformations: Boolean, strictCheck: Boolean): Boolean = js.native
   def checkFeature(feature: feature): Boolean = js.native

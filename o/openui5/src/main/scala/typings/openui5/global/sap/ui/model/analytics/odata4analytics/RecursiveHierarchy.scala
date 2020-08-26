@@ -28,41 +28,5 @@ class RecursiveHierarchy protected ()
     oNodeLevelProperty: js.Any,
     oNodeValueProperty: js.Any
   ) = this()
-  /**
-    * Get the property holding the node ID of the hierarchy node
-    * @returns The DataJS object representing this property
-    */
-  /* CompleteClass */
-  override def getNodeIDProperty(): js.Any = js.native
-  /**
-    * Get the property holding the level of the hierarchy node
-    * @returns The DataJS object representing this property
-    */
-  /* CompleteClass */
-  override def getNodeLevelProperty(): js.Any = js.native
-  /**
-    * Get the property holding the value that is structurally organized by thehierarchy
-    * @returns The DataJS object representing this property
-    */
-  /* CompleteClass */
-  override def getNodeValueProperty(): js.Any = js.native
-  /**
-    * Get the property holding the parent node ID of the hierarchy node
-    * @returns The DataJS object representing this property
-    */
-  /* CompleteClass */
-  override def getParentNodeIDProperty(): js.Any = js.native
-  /**
-    * Get indicator if this is a leveled hierarchy
-    * @returns False
-    */
-  /* CompleteClass */
-  override def isLeveledHierarchy(): Boolean = js.native
-  /**
-    * Get indicator if this is a recursive hierarchy
-    * @returns True
-    */
-  /* CompleteClass */
-  override def isRecursiveHierarchy(): Boolean = js.native
 }
 

@@ -19,6 +19,7 @@ object ^ extends js.Object {
     */
   // tslint:disable-next-line no-unnecessary-generics
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Transform = js.native
+  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: js.UndefOr[scala.Nothing], options: Options[TCommit, TContext]): Transform = js.native
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext]): Transform = js.native
   def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext], options: Options[TCommit, TContext]): Transform = js.native
 }

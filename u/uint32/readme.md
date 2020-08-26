@@ -11,8 +11,8 @@ a javascript library for dealing with (bitwise) uint32 operations
 | Full name          | uint32 |
 | Keywords           | uint32, bitwise, binary, shift, rotate |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 21845 |
+| # dependents       | 8 |
+| # downloads        | 22555 |
 | # stars            | 1 |
 
 ## Links

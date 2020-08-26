@@ -30,6 +30,11 @@ trait Window extends EventEmitter {
     * - (Optional) new_win {object} New opened window object.
     */
   def open(url: String): Unit = js.native
+  def open(
+    url: String,
+    option: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* new_win */ js.UndefOr[win], Unit]
+  ): Unit = js.native
   def open(url: String, option: WindowOpenOption): Unit = js.native
   def open(url: String, option: WindowOpenOption, callback: js.Function1[/* new_win */ js.UndefOr[win], Unit]): Unit = js.native
 }

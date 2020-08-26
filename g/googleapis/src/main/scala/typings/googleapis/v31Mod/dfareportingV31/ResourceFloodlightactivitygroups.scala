@@ -28,6 +28,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaFloodlightActivityGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def get(params: ParamsResourceFloodlightactivitygroupsGet): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def get(
     params: ParamsResourceFloodlightactivitygroupsGet,
@@ -59,6 +60,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaFloodlightActivityGroup]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def insert(params: ParamsResourceFloodlightactivitygroupsInsert): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def insert(
     params: ParamsResourceFloodlightactivitygroupsInsert,
@@ -99,6 +101,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFloodlightActivityGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaFloodlightActivityGroupsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivityGroupsListResponse] = js.native
   def list(params: ParamsResourceFloodlightactivitygroupsList): GaxiosPromise[SchemaFloodlightActivityGroupsListResponse] = js.native
   def list(
     params: ParamsResourceFloodlightactivitygroupsList,
@@ -132,6 +135,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def patch(callback: BodyResponseCallback[SchemaFloodlightActivityGroup]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def patch(params: ParamsResourceFloodlightactivitygroupsPatch): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def patch(
     params: ParamsResourceFloodlightactivitygroupsPatch,
@@ -163,6 +167,7 @@ class ResourceFloodlightactivitygroups protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaFloodlightActivityGroup]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def update(params: ParamsResourceFloodlightactivitygroupsUpdate): GaxiosPromise[SchemaFloodlightActivityGroup] = js.native
   def update(
     params: ParamsResourceFloodlightactivitygroupsUpdate,

@@ -34,6 +34,13 @@ trait Executor extends js.Object {
     context: CanvasRenderingContext2D,
     transform: Transform,
     viewRotation: Double,
+    opt_featureCallback: js.UndefOr[scala.Nothing],
+    opt_hitExtent: Extent
+  ): T = js.native
+  def executeHitDetection[T](
+    context: CanvasRenderingContext2D,
+    transform: Transform,
+    viewRotation: Double,
     opt_featureCallback: js.Function0[Unit]
   ): T = js.native
   def executeHitDetection[T](

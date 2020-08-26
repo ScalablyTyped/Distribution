@@ -18,11 +18,32 @@ trait DescribeAccountAttributesResponse extends js.Object {
 
 object DescribeAccountAttributesResponse {
   @scala.inline
-  def apply(AccountQuotas: AccountQuotaList = null, UniqueAccountIdentifier: String = null): DescribeAccountAttributesResponse = {
+  def apply(): DescribeAccountAttributesResponse = {
     val __obj = js.Dynamic.literal()
-    if (AccountQuotas != null) __obj.updateDynamic("AccountQuotas")(AccountQuotas.asInstanceOf[js.Any])
-    if (UniqueAccountIdentifier != null) __obj.updateDynamic("UniqueAccountIdentifier")(UniqueAccountIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountAttributesResponse]
   }
+  @scala.inline
+  implicit class DescribeAccountAttributesResponseOps[Self <: DescribeAccountAttributesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountQuotasVarargs(value: AccountQuota*): Self = this.set("AccountQuotas", js.Array(value :_*))
+    @scala.inline
+    def setAccountQuotas(value: AccountQuotaList): Self = this.set("AccountQuotas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountQuotas: Self = this.set("AccountQuotas", js.undefined)
+    @scala.inline
+    def setUniqueAccountIdentifier(value: String): Self = this.set("UniqueAccountIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueAccountIdentifier: Self = this.set("UniqueAccountIdentifier", js.undefined)
+  }
+  
 }
 

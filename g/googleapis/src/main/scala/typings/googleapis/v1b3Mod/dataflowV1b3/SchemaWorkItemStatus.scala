@@ -105,38 +105,84 @@ trait SchemaWorkItemStatus extends js.Object {
 
 object SchemaWorkItemStatus {
   @scala.inline
-  def apply(
-    completed: js.UndefOr[Boolean] = js.undefined,
-    counterUpdates: js.Array[SchemaCounterUpdate] = null,
-    dynamicSourceSplit: SchemaDynamicSourceSplit = null,
-    errors: js.Array[SchemaStatus] = null,
-    metricUpdates: js.Array[SchemaMetricUpdate] = null,
-    progress: SchemaApproximateProgress = null,
-    reportIndex: String = null,
-    reportedProgress: SchemaApproximateReportedProgress = null,
-    requestedLeaseDuration: String = null,
-    sourceFork: SchemaSourceFork = null,
-    sourceOperationResponse: SchemaSourceOperationResponse = null,
-    stopPosition: SchemaPosition = null,
-    totalThrottlerWaitTimeSeconds: js.UndefOr[Double] = js.undefined,
-    workItemId: String = null
-  ): SchemaWorkItemStatus = {
+  def apply(): SchemaWorkItemStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.get.asInstanceOf[js.Any])
-    if (counterUpdates != null) __obj.updateDynamic("counterUpdates")(counterUpdates.asInstanceOf[js.Any])
-    if (dynamicSourceSplit != null) __obj.updateDynamic("dynamicSourceSplit")(dynamicSourceSplit.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (metricUpdates != null) __obj.updateDynamic("metricUpdates")(metricUpdates.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (reportIndex != null) __obj.updateDynamic("reportIndex")(reportIndex.asInstanceOf[js.Any])
-    if (reportedProgress != null) __obj.updateDynamic("reportedProgress")(reportedProgress.asInstanceOf[js.Any])
-    if (requestedLeaseDuration != null) __obj.updateDynamic("requestedLeaseDuration")(requestedLeaseDuration.asInstanceOf[js.Any])
-    if (sourceFork != null) __obj.updateDynamic("sourceFork")(sourceFork.asInstanceOf[js.Any])
-    if (sourceOperationResponse != null) __obj.updateDynamic("sourceOperationResponse")(sourceOperationResponse.asInstanceOf[js.Any])
-    if (stopPosition != null) __obj.updateDynamic("stopPosition")(stopPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalThrottlerWaitTimeSeconds)) __obj.updateDynamic("totalThrottlerWaitTimeSeconds")(totalThrottlerWaitTimeSeconds.get.asInstanceOf[js.Any])
-    if (workItemId != null) __obj.updateDynamic("workItemId")(workItemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkItemStatus]
   }
+  @scala.inline
+  implicit class SchemaWorkItemStatusOps[Self <: SchemaWorkItemStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompleted(value: Boolean): Self = this.set("completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleted: Self = this.set("completed", js.undefined)
+    @scala.inline
+    def setCounterUpdatesVarargs(value: SchemaCounterUpdate*): Self = this.set("counterUpdates", js.Array(value :_*))
+    @scala.inline
+    def setCounterUpdates(value: js.Array[SchemaCounterUpdate]): Self = this.set("counterUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCounterUpdates: Self = this.set("counterUpdates", js.undefined)
+    @scala.inline
+    def setDynamicSourceSplit(value: SchemaDynamicSourceSplit): Self = this.set("dynamicSourceSplit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamicSourceSplit: Self = this.set("dynamicSourceSplit", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: SchemaStatus*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[SchemaStatus]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setMetricUpdatesVarargs(value: SchemaMetricUpdate*): Self = this.set("metricUpdates", js.Array(value :_*))
+    @scala.inline
+    def setMetricUpdates(value: js.Array[SchemaMetricUpdate]): Self = this.set("metricUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricUpdates: Self = this.set("metricUpdates", js.undefined)
+    @scala.inline
+    def setProgress(value: SchemaApproximateProgress): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setReportIndex(value: String): Self = this.set("reportIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportIndex: Self = this.set("reportIndex", js.undefined)
+    @scala.inline
+    def setReportedProgress(value: SchemaApproximateReportedProgress): Self = this.set("reportedProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportedProgress: Self = this.set("reportedProgress", js.undefined)
+    @scala.inline
+    def setRequestedLeaseDuration(value: String): Self = this.set("requestedLeaseDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedLeaseDuration: Self = this.set("requestedLeaseDuration", js.undefined)
+    @scala.inline
+    def setSourceFork(value: SchemaSourceFork): Self = this.set("sourceFork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFork: Self = this.set("sourceFork", js.undefined)
+    @scala.inline
+    def setSourceOperationResponse(value: SchemaSourceOperationResponse): Self = this.set("sourceOperationResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceOperationResponse: Self = this.set("sourceOperationResponse", js.undefined)
+    @scala.inline
+    def setStopPosition(value: SchemaPosition): Self = this.set("stopPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopPosition: Self = this.set("stopPosition", js.undefined)
+    @scala.inline
+    def setTotalThrottlerWaitTimeSeconds(value: Double): Self = this.set("totalThrottlerWaitTimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalThrottlerWaitTimeSeconds: Self = this.set("totalThrottlerWaitTimeSeconds", js.undefined)
+    @scala.inline
+    def setWorkItemId(value: String): Self = this.set("workItemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkItemId: Self = this.set("workItemId", js.undefined)
+  }
+  
 }
 

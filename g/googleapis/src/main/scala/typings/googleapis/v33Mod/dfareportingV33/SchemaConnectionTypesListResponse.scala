@@ -22,11 +22,32 @@ trait SchemaConnectionTypesListResponse extends js.Object {
 
 object SchemaConnectionTypesListResponse {
   @scala.inline
-  def apply(connectionTypes: js.Array[SchemaConnectionType] = null, kind: String = null): SchemaConnectionTypesListResponse = {
+  def apply(): SchemaConnectionTypesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (connectionTypes != null) __obj.updateDynamic("connectionTypes")(connectionTypes.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConnectionTypesListResponse]
   }
+  @scala.inline
+  implicit class SchemaConnectionTypesListResponseOps[Self <: SchemaConnectionTypesListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionTypesVarargs(value: SchemaConnectionType*): Self = this.set("connectionTypes", js.Array(value :_*))
+    @scala.inline
+    def setConnectionTypes(value: js.Array[SchemaConnectionType]): Self = this.set("connectionTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTypes: Self = this.set("connectionTypes", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

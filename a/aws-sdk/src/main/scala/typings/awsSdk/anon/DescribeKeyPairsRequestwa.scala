@@ -1,15 +1,18 @@
 package typings.awsSdk.anon
 
 import typings.awsSdk.ec2Mod.Boolean
+import typings.awsSdk.ec2Mod.Filter
 import typings.awsSdk.ec2Mod.FilterList
 import typings.awsSdk.ec2Mod.KeyNameStringList
+import typings.awsSdk.ec2Mod.KeyPairId
 import typings.awsSdk.ec2Mod.KeyPairIdStringList
+import typings.awsSdk.ec2Mod.KeyPairName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeKeyPairsRequest & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/ec2.DescribeKeyPairsRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeKeyPairsRequestwa extends js.Object {
   @JSName("$waiter")
@@ -34,20 +37,48 @@ trait DescribeKeyPairsRequestwa extends js.Object {
 
 object DescribeKeyPairsRequestwa {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    KeyNames: KeyNameStringList = null,
-    KeyPairIds: KeyPairIdStringList = null
-  ): DescribeKeyPairsRequestwa = {
+  def apply(): DescribeKeyPairsRequestwa = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (KeyNames != null) __obj.updateDynamic("KeyNames")(KeyNames.asInstanceOf[js.Any])
-    if (KeyPairIds != null) __obj.updateDynamic("KeyPairIds")(KeyPairIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeKeyPairsRequestwa]
   }
+  @scala.inline
+  implicit class DescribeKeyPairsRequestwaOps[Self <: DescribeKeyPairsRequestwa] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setKeyNamesVarargs(value: KeyPairName*): Self = this.set("KeyNames", js.Array(value :_*))
+    @scala.inline
+    def setKeyNames(value: KeyNameStringList): Self = this.set("KeyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyNames: Self = this.set("KeyNames", js.undefined)
+    @scala.inline
+    def setKeyPairIdsVarargs(value: KeyPairId*): Self = this.set("KeyPairIds", js.Array(value :_*))
+    @scala.inline
+    def setKeyPairIds(value: KeyPairIdStringList): Self = this.set("KeyPairIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairIds: Self = this.set("KeyPairIds", js.undefined)
+  }
+  
 }
 

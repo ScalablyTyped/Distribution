@@ -1,8 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Calls
 
-import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedReason
-import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangeKind
-import typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineProperties
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,63 +11,22 @@ object Background extends js.Object {
   /** Used to provide the details about a call that was just blocked. */
   @js.native
   abstract class PhoneCallBlockedTriggerDetails ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedTriggerDetails {
-    /** Gets the reason why a phone call was blocked. */
-    /* CompleteClass */
-    override var callBlockedReason: PhoneCallBlockedReason = js.native
-    /** Gets the ID of the phone call that was just blocked. */
-    /* CompleteClass */
-    override var lineId: String = js.native
-    /** Gets the phone number of the blocked call. */
-    /* CompleteClass */
-    override var phoneNumber: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallBlockedTriggerDetails
   
   /** Used to provide the origin details of the phone call. */
   @js.native
   abstract class PhoneCallOriginDataRequestTriggerDetails ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallOriginDataRequestTriggerDetails {
-    /** Gets the phone number for the origin of the phone call. */
-    /* CompleteClass */
-    override var phoneNumber: String = js.native
-    /** Gets the unique identifier for this phone call. */
-    /* CompleteClass */
-    override var requestId: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneCallOriginDataRequestTriggerDetails
   
   /** Used to provide the details about a change to the properties of a phone line. */
   @js.native
   abstract class PhoneLineChangedTriggerDetails ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangedTriggerDetails {
-    /** Gets a PhoneLineChangeKind value that indicates if the phone line was added, removed, or changed. */
-    /* CompleteClass */
-    override var changeType: PhoneLineChangeKind = js.native
-    /** Gets the ID of the phone line that was added, removed, or changed. */
-    /* CompleteClass */
-    override var lineId: String = js.native
-    /**
-      * Checks a phone line against a set of flags to see if any of the specified properties of the phone line have changed.
-      * @param lineProperty A set of flags which indicate the phone line properties to query for changes.
-      * @return Returns true if any of the properties indicated by the lineProperty parameter have changed on the phone line.
-      */
-    /* CompleteClass */
-    override def hasLinePropertyChanged(lineProperty: PhoneLineProperties): Boolean = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneLineChangedTriggerDetails
   
   /** Used to provide the details about a new voice mail message on a phone line. */
   @js.native
   abstract class PhoneNewVoicemailMessageTriggerDetails ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneNewVoicemailMessageTriggerDetails {
-    /** Gets the ID of the phone line for which the new voice mail arrived. */
-    /* CompleteClass */
-    override var lineId: String = js.native
-    /** Gets the optional voice mail changed message set by an operator when they send a voice mail changed SMS. */
-    /* CompleteClass */
-    override var operatorMessage: String = js.native
-    /** Gets the new count of voice mail messages for the phone line. */
-    /* CompleteClass */
-    override var voicemailCount: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Calls.Background.PhoneNewVoicemailMessageTriggerDetails
   
   /** Provides the reason why a phone call was rejected. */
   @js.native

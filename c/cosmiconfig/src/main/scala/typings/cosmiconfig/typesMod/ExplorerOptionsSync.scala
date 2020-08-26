@@ -11,7 +11,7 @@ trait ExplorerOptionsSync extends js.Object {
   var cache: Boolean = js.native
   var ignoreEmptySearchPlaces: Boolean = js.native
   var loaders: LoadersSync = js.native
-  var packageProp: String = js.native
+  var packageProp: String | js.Array[String] = js.native
   var searchPlaces: js.Array[String] = js.native
   var stopDir: String = js.native
   @JSName("transform")

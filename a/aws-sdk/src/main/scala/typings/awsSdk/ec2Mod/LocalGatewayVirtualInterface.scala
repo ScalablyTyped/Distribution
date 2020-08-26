@@ -42,26 +42,56 @@ trait LocalGatewayVirtualInterface extends js.Object {
 
 object LocalGatewayVirtualInterface {
   @scala.inline
-  def apply(
-    LocalAddress: String = null,
-    LocalBgpAsn: js.UndefOr[Integer] = js.undefined,
-    LocalGatewayId: String = null,
-    LocalGatewayVirtualInterfaceId: LocalGatewayVirtualInterfaceId = null,
-    PeerAddress: String = null,
-    PeerBgpAsn: js.UndefOr[Integer] = js.undefined,
-    Tags: TagList = null,
-    Vlan: js.UndefOr[Integer] = js.undefined
-  ): LocalGatewayVirtualInterface = {
+  def apply(): LocalGatewayVirtualInterface = {
     val __obj = js.Dynamic.literal()
-    if (LocalAddress != null) __obj.updateDynamic("LocalAddress")(LocalAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(LocalBgpAsn)) __obj.updateDynamic("LocalBgpAsn")(LocalBgpAsn.get.asInstanceOf[js.Any])
-    if (LocalGatewayId != null) __obj.updateDynamic("LocalGatewayId")(LocalGatewayId.asInstanceOf[js.Any])
-    if (LocalGatewayVirtualInterfaceId != null) __obj.updateDynamic("LocalGatewayVirtualInterfaceId")(LocalGatewayVirtualInterfaceId.asInstanceOf[js.Any])
-    if (PeerAddress != null) __obj.updateDynamic("PeerAddress")(PeerAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(PeerBgpAsn)) __obj.updateDynamic("PeerBgpAsn")(PeerBgpAsn.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(Vlan)) __obj.updateDynamic("Vlan")(Vlan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalGatewayVirtualInterface]
   }
+  @scala.inline
+  implicit class LocalGatewayVirtualInterfaceOps[Self <: LocalGatewayVirtualInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalAddress(value: String): Self = this.set("LocalAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalAddress: Self = this.set("LocalAddress", js.undefined)
+    @scala.inline
+    def setLocalBgpAsn(value: Integer): Self = this.set("LocalBgpAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalBgpAsn: Self = this.set("LocalBgpAsn", js.undefined)
+    @scala.inline
+    def setLocalGatewayId(value: String): Self = this.set("LocalGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayId: Self = this.set("LocalGatewayId", js.undefined)
+    @scala.inline
+    def setLocalGatewayVirtualInterfaceId(value: LocalGatewayVirtualInterfaceId): Self = this.set("LocalGatewayVirtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayVirtualInterfaceId: Self = this.set("LocalGatewayVirtualInterfaceId", js.undefined)
+    @scala.inline
+    def setPeerAddress(value: String): Self = this.set("PeerAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerAddress: Self = this.set("PeerAddress", js.undefined)
+    @scala.inline
+    def setPeerBgpAsn(value: Integer): Self = this.set("PeerBgpAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerBgpAsn: Self = this.set("PeerBgpAsn", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVlan(value: Integer): Self = this.set("Vlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVlan: Self = this.set("Vlan", js.undefined)
+  }
+  
 }
 

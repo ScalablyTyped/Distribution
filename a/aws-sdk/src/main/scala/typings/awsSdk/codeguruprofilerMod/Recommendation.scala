@@ -45,5 +45,32 @@ object Recommendation {
     val __obj = js.Dynamic.literal(allMatchesCount = allMatchesCount.asInstanceOf[js.Any], allMatchesSum = allMatchesSum.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], topMatches = topMatches.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recommendation]
   }
+  @scala.inline
+  implicit class RecommendationOps[Self <: Recommendation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllMatchesCount(value: Integer): Self = this.set("allMatchesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllMatchesSum(value: Double): Self = this.set("allMatchesSum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPattern(value: Pattern): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopMatchesVarargs(value: Match*): Self = this.set("topMatches", js.Array(value :_*))
+    @scala.inline
+    def setTopMatches(value: Matches): Self = this.set("topMatches", value.asInstanceOf[js.Any])
+  }
+  
 }
 

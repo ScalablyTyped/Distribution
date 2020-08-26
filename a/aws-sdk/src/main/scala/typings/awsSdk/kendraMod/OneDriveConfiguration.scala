@@ -34,19 +34,46 @@ trait OneDriveConfiguration extends js.Object {
 
 object OneDriveConfiguration {
   @scala.inline
-  def apply(
-    OneDriveUsers: OneDriveUsers,
-    SecretArn: SecretArn,
-    TenantDomain: TenantDomain,
-    ExclusionPatterns: DataSourceInclusionsExclusionsStrings = null,
-    FieldMappings: DataSourceToIndexFieldMappingList = null,
-    InclusionPatterns: DataSourceInclusionsExclusionsStrings = null
-  ): OneDriveConfiguration = {
+  def apply(OneDriveUsers: OneDriveUsers, SecretArn: SecretArn, TenantDomain: TenantDomain): OneDriveConfiguration = {
     val __obj = js.Dynamic.literal(OneDriveUsers = OneDriveUsers.asInstanceOf[js.Any], SecretArn = SecretArn.asInstanceOf[js.Any], TenantDomain = TenantDomain.asInstanceOf[js.Any])
-    if (ExclusionPatterns != null) __obj.updateDynamic("ExclusionPatterns")(ExclusionPatterns.asInstanceOf[js.Any])
-    if (FieldMappings != null) __obj.updateDynamic("FieldMappings")(FieldMappings.asInstanceOf[js.Any])
-    if (InclusionPatterns != null) __obj.updateDynamic("InclusionPatterns")(InclusionPatterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[OneDriveConfiguration]
   }
+  @scala.inline
+  implicit class OneDriveConfigurationOps[Self <: OneDriveConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOneDriveUsers(value: OneDriveUsers): Self = this.set("OneDriveUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecretArn(value: SecretArn): Self = this.set("SecretArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTenantDomain(value: TenantDomain): Self = this.set("TenantDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("ExclusionPatterns", js.Array(value :_*))
+    @scala.inline
+    def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("ExclusionPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusionPatterns: Self = this.set("ExclusionPatterns", js.undefined)
+    @scala.inline
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
+    @scala.inline
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
+    @scala.inline
+    def setInclusionPatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("InclusionPatterns", js.Array(value :_*))
+    @scala.inline
+    def setInclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("InclusionPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclusionPatterns: Self = this.set("InclusionPatterns", js.undefined)
+  }
+  
 }
 

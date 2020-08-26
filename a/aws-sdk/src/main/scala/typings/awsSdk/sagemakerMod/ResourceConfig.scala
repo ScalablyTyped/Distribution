@@ -29,12 +29,33 @@ object ResourceConfig {
   def apply(
     InstanceCount: TrainingInstanceCount,
     InstanceType: TrainingInstanceType,
-    VolumeSizeInGB: VolumeSizeInGB,
-    VolumeKmsKeyId: KmsKeyId = null
+    VolumeSizeInGB: VolumeSizeInGB
   ): ResourceConfig = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], VolumeSizeInGB = VolumeSizeInGB.asInstanceOf[js.Any])
-    if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceConfig]
   }
+  @scala.inline
+  implicit class ResourceConfigOps[Self <: ResourceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceCount(value: TrainingInstanceCount): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: TrainingInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeSizeInGB(value: VolumeSizeInGB): Self = this.set("VolumeSizeInGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
+  }
+  
 }
 

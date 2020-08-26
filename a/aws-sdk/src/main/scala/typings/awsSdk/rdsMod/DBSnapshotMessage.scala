@@ -18,11 +18,32 @@ trait DBSnapshotMessage extends js.Object {
 
 object DBSnapshotMessage {
   @scala.inline
-  def apply(DBSnapshots: DBSnapshotList = null, Marker: String = null): DBSnapshotMessage = {
+  def apply(): DBSnapshotMessage = {
     val __obj = js.Dynamic.literal()
-    if (DBSnapshots != null) __obj.updateDynamic("DBSnapshots")(DBSnapshots.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBSnapshotMessage]
   }
+  @scala.inline
+  implicit class DBSnapshotMessageOps[Self <: DBSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBSnapshotsVarargs(value: DBSnapshot*): Self = this.set("DBSnapshots", js.Array(value :_*))
+    @scala.inline
+    def setDBSnapshots(value: DBSnapshotList): Self = this.set("DBSnapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSnapshots: Self = this.set("DBSnapshots", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

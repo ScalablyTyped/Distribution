@@ -63,32 +63,68 @@ trait SchemaTestMatrix extends js.Object {
 
 object SchemaTestMatrix {
   @scala.inline
-  def apply(
-    clientInfo: SchemaClientInfo = null,
-    environmentMatrix: SchemaEnvironmentMatrix = null,
-    flakyTestAttempts: js.UndefOr[Double] = js.undefined,
-    invalidMatrixDetails: String = null,
-    projectId: String = null,
-    resultStorage: SchemaResultStorage = null,
-    state: String = null,
-    testExecutions: js.Array[SchemaTestExecution] = null,
-    testMatrixId: String = null,
-    testSpecification: SchemaTestSpecification = null,
-    timestamp: String = null
-  ): SchemaTestMatrix = {
+  def apply(): SchemaTestMatrix = {
     val __obj = js.Dynamic.literal()
-    if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo.asInstanceOf[js.Any])
-    if (environmentMatrix != null) __obj.updateDynamic("environmentMatrix")(environmentMatrix.asInstanceOf[js.Any])
-    if (!js.isUndefined(flakyTestAttempts)) __obj.updateDynamic("flakyTestAttempts")(flakyTestAttempts.get.asInstanceOf[js.Any])
-    if (invalidMatrixDetails != null) __obj.updateDynamic("invalidMatrixDetails")(invalidMatrixDetails.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (resultStorage != null) __obj.updateDynamic("resultStorage")(resultStorage.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (testExecutions != null) __obj.updateDynamic("testExecutions")(testExecutions.asInstanceOf[js.Any])
-    if (testMatrixId != null) __obj.updateDynamic("testMatrixId")(testMatrixId.asInstanceOf[js.Any])
-    if (testSpecification != null) __obj.updateDynamic("testSpecification")(testSpecification.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestMatrix]
   }
+  @scala.inline
+  implicit class SchemaTestMatrixOps[Self <: SchemaTestMatrix] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientInfo(value: SchemaClientInfo): Self = this.set("clientInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientInfo: Self = this.set("clientInfo", js.undefined)
+    @scala.inline
+    def setEnvironmentMatrix(value: SchemaEnvironmentMatrix): Self = this.set("environmentMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentMatrix: Self = this.set("environmentMatrix", js.undefined)
+    @scala.inline
+    def setFlakyTestAttempts(value: Double): Self = this.set("flakyTestAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlakyTestAttempts: Self = this.set("flakyTestAttempts", js.undefined)
+    @scala.inline
+    def setInvalidMatrixDetails(value: String): Self = this.set("invalidMatrixDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidMatrixDetails: Self = this.set("invalidMatrixDetails", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setResultStorage(value: SchemaResultStorage): Self = this.set("resultStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultStorage: Self = this.set("resultStorage", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTestExecutionsVarargs(value: SchemaTestExecution*): Self = this.set("testExecutions", js.Array(value :_*))
+    @scala.inline
+    def setTestExecutions(value: js.Array[SchemaTestExecution]): Self = this.set("testExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestExecutions: Self = this.set("testExecutions", js.undefined)
+    @scala.inline
+    def setTestMatrixId(value: String): Self = this.set("testMatrixId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestMatrixId: Self = this.set("testMatrixId", js.undefined)
+    @scala.inline
+    def setTestSpecification(value: SchemaTestSpecification): Self = this.set("testSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSpecification: Self = this.set("testSpecification", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

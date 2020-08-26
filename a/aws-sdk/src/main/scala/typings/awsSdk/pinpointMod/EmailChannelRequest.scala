@@ -30,18 +30,38 @@ trait EmailChannelRequest extends js.Object {
 
 object EmailChannelRequest {
   @scala.inline
-  def apply(
-    FromAddress: string,
-    Identity: string,
-    ConfigurationSet: string = null,
-    Enabled: js.UndefOr[boolean] = js.undefined,
-    RoleArn: string = null
-  ): EmailChannelRequest = {
+  def apply(FromAddress: string, Identity: string): EmailChannelRequest = {
     val __obj = js.Dynamic.literal(FromAddress = FromAddress.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any])
-    if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelRequest]
   }
+  @scala.inline
+  implicit class EmailChannelRequestOps[Self <: EmailChannelRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFromAddress(value: string): Self = this.set("FromAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentity(value: string): Self = this.set("Identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationSet(value: string): Self = this.set("ConfigurationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationSet: Self = this.set("ConfigurationSet", js.undefined)
+    @scala.inline
+    def setEnabled(value: boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+  }
+  
 }
 

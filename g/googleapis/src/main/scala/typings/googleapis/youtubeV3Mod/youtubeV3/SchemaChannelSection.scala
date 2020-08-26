@@ -43,24 +43,50 @@ trait SchemaChannelSection extends js.Object {
 
 object SchemaChannelSection {
   @scala.inline
-  def apply(
-    contentDetails: SchemaChannelSectionContentDetails = null,
-    etag: String = null,
-    id: String = null,
-    kind: String = null,
-    localizations: StringDictionary[SchemaChannelSectionLocalization] = null,
-    snippet: SchemaChannelSectionSnippet = null,
-    targeting: SchemaChannelSectionTargeting = null
-  ): SchemaChannelSection = {
+  def apply(): SchemaChannelSection = {
     val __obj = js.Dynamic.literal()
-    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (localizations != null) __obj.updateDynamic("localizations")(localizations.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (targeting != null) __obj.updateDynamic("targeting")(targeting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannelSection]
   }
+  @scala.inline
+  implicit class SchemaChannelSectionOps[Self <: SchemaChannelSection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentDetails(value: SchemaChannelSectionContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocalizations(value: StringDictionary[SchemaChannelSectionLocalization]): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    @scala.inline
+    def setSnippet(value: SchemaChannelSectionSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setTargeting(value: SchemaChannelSectionTargeting): Self = this.set("targeting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargeting: Self = this.set("targeting", js.undefined)
+  }
+  
 }
 

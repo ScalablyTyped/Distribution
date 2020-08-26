@@ -34,20 +34,42 @@ trait UpdateNodegroupVersionRequest extends js.Object {
 
 object UpdateNodegroupVersionRequest {
   @scala.inline
-  def apply(
-    clusterName: String,
-    nodegroupName: String,
-    clientRequestToken: String = null,
-    force: js.UndefOr[Boolean] = js.undefined,
-    releaseVersion: String = null,
-    version: String = null
-  ): UpdateNodegroupVersionRequest = {
+  def apply(clusterName: String, nodegroupName: String): UpdateNodegroupVersionRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.get.asInstanceOf[js.Any])
-    if (releaseVersion != null) __obj.updateDynamic("releaseVersion")(releaseVersion.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodegroupVersionRequest]
   }
+  @scala.inline
+  implicit class UpdateNodegroupVersionRequestOps[Self <: UpdateNodegroupVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodegroupName(value: String): Self = this.set("nodegroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: String): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setReleaseVersion(value: String): Self = this.set("releaseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseVersion: Self = this.set("releaseVersion", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

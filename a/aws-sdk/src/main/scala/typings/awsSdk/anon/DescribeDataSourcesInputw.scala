@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/machinelearning.DescribeDataSourcesInput & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/machinelearning.DescribeDataSourcesInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeDataSourcesInputw extends js.Object {
   @JSName("$waiter")
@@ -63,34 +63,70 @@ trait DescribeDataSourcesInputw extends js.Object {
 
 object DescribeDataSourcesInputw {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    EQ: ComparatorValue = null,
-    FilterVariable: DataSourceFilterVariable = null,
-    GE: ComparatorValue = null,
-    GT: ComparatorValue = null,
-    LE: ComparatorValue = null,
-    LT: ComparatorValue = null,
-    Limit: js.UndefOr[PageLimit] = js.undefined,
-    NE: ComparatorValue = null,
-    NextToken: StringType = null,
-    Prefix: ComparatorValue = null,
-    SortOrder: SortOrder = null
-  ): DescribeDataSourcesInputw = {
+  def apply(): DescribeDataSourcesInputw = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (EQ != null) __obj.updateDynamic("EQ")(EQ.asInstanceOf[js.Any])
-    if (FilterVariable != null) __obj.updateDynamic("FilterVariable")(FilterVariable.asInstanceOf[js.Any])
-    if (GE != null) __obj.updateDynamic("GE")(GE.asInstanceOf[js.Any])
-    if (GT != null) __obj.updateDynamic("GT")(GT.asInstanceOf[js.Any])
-    if (LE != null) __obj.updateDynamic("LE")(LE.asInstanceOf[js.Any])
-    if (LT != null) __obj.updateDynamic("LT")(LT.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NE != null) __obj.updateDynamic("NE")(NE.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataSourcesInputw]
   }
+  @scala.inline
+  implicit class DescribeDataSourcesInputwOps[Self <: DescribeDataSourcesInputw] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setEQ(value: ComparatorValue): Self = this.set("EQ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEQ: Self = this.set("EQ", js.undefined)
+    @scala.inline
+    def setFilterVariable(value: DataSourceFilterVariable): Self = this.set("FilterVariable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterVariable: Self = this.set("FilterVariable", js.undefined)
+    @scala.inline
+    def setGE(value: ComparatorValue): Self = this.set("GE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGE: Self = this.set("GE", js.undefined)
+    @scala.inline
+    def setGT(value: ComparatorValue): Self = this.set("GT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGT: Self = this.set("GT", js.undefined)
+    @scala.inline
+    def setLE(value: ComparatorValue): Self = this.set("LE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLE: Self = this.set("LE", js.undefined)
+    @scala.inline
+    def setLT(value: ComparatorValue): Self = this.set("LT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLT: Self = this.set("LT", js.undefined)
+    @scala.inline
+    def setLimit(value: PageLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNE(value: ComparatorValue): Self = this.set("NE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNE: Self = this.set("NE", js.undefined)
+    @scala.inline
+    def setNextToken(value: StringType): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPrefix(value: ComparatorValue): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setSortOrder(value: SortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+  }
+  
 }
 

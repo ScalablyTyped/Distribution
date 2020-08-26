@@ -17,17 +17,6 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends FileSystem {
   def this(options: Options) = this()
-  /**
-    * Get a file system item.
-    *
-    * @param filepath Path to item.
-    * @return The item (or null if not found).
-    */
-  /* CompleteClass */
-  override def getItem(filepath: String): typings.mockFs.itemMod.^ = js.native
-  /** Get the root directory. */
-  /* CompleteClass */
-  override def getRoot(): typings.mockFs.directoryMod.^ = js.native
 }
 
 @JSImport("mock-fs/lib/filesystem", JSImport.Namespace)
@@ -45,6 +34,7 @@ object ^ extends js.Object {
     * @return Mock file system.
     */
   def create(): FileSystem = js.native
+  def create(paths: js.UndefOr[scala.Nothing], options: Options): FileSystem = js.native
   def create(paths: DirectoryItems): FileSystem = js.native
   def create(paths: DirectoryItems, options: Options): FileSystem = js.native
   /**

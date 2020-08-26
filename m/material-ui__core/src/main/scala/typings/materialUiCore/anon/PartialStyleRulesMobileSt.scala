@@ -20,26 +20,54 @@ trait PartialStyleRulesMobileSt extends js.Object {
 
 object PartialStyleRulesMobileSt {
   @scala.inline
-  def apply(
-    dot: CSSProperties = null,
-    dotActive: CSSProperties = null,
-    dots: CSSProperties = null,
-    positionBottom: CSSProperties = null,
-    positionStatic: CSSProperties = null,
-    positionTop: CSSProperties = null,
-    progress: CSSProperties = null,
-    root: CSSProperties = null
-  ): PartialStyleRulesMobileSt = {
+  def apply(): PartialStyleRulesMobileSt = {
     val __obj = js.Dynamic.literal()
-    if (dot != null) __obj.updateDynamic("dot")(dot.asInstanceOf[js.Any])
-    if (dotActive != null) __obj.updateDynamic("dotActive")(dotActive.asInstanceOf[js.Any])
-    if (dots != null) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
-    if (positionBottom != null) __obj.updateDynamic("positionBottom")(positionBottom.asInstanceOf[js.Any])
-    if (positionStatic != null) __obj.updateDynamic("positionStatic")(positionStatic.asInstanceOf[js.Any])
-    if (positionTop != null) __obj.updateDynamic("positionTop")(positionTop.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesMobileSt]
   }
+  @scala.inline
+  implicit class PartialStyleRulesMobileStOps[Self <: PartialStyleRulesMobileSt] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDot(value: CSSProperties): Self = this.set("dot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDot: Self = this.set("dot", js.undefined)
+    @scala.inline
+    def setDotActive(value: CSSProperties): Self = this.set("dotActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDotActive: Self = this.set("dotActive", js.undefined)
+    @scala.inline
+    def setDots(value: CSSProperties): Self = this.set("dots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDots: Self = this.set("dots", js.undefined)
+    @scala.inline
+    def setPositionBottom(value: CSSProperties): Self = this.set("positionBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionBottom: Self = this.set("positionBottom", js.undefined)
+    @scala.inline
+    def setPositionStatic(value: CSSProperties): Self = this.set("positionStatic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionStatic: Self = this.set("positionStatic", js.undefined)
+    @scala.inline
+    def setPositionTop(value: CSSProperties): Self = this.set("positionTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionTop: Self = this.set("positionTop", js.undefined)
+    @scala.inline
+    def setProgress(value: CSSProperties): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

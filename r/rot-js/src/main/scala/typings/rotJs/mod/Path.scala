@@ -31,7 +31,7 @@ object Path extends js.Object {
             /* toX */ Double, 
             /* toY */ Double, 
             /* passableCallback */ PassableCallback, 
-            js.UndefOr[/* options */ PartialOptions], 
+            /* options */ js.UndefOr[PartialOptions], 
             default
           ]
         ]

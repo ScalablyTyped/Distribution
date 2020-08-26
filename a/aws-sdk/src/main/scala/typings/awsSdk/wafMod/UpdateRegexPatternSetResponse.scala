@@ -14,10 +14,26 @@ trait UpdateRegexPatternSetResponse extends js.Object {
 
 object UpdateRegexPatternSetResponse {
   @scala.inline
-  def apply(ChangeToken: ChangeToken = null): UpdateRegexPatternSetResponse = {
+  def apply(): UpdateRegexPatternSetResponse = {
     val __obj = js.Dynamic.literal()
-    if (ChangeToken != null) __obj.updateDynamic("ChangeToken")(ChangeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRegexPatternSetResponse]
   }
+  @scala.inline
+  implicit class UpdateRegexPatternSetResponseOps[Self <: UpdateRegexPatternSetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeToken: Self = this.set("ChangeToken", js.undefined)
+  }
+  
 }
 

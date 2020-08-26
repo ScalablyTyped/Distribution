@@ -26,18 +26,38 @@ trait SearchRecord extends js.Object {
 
 object SearchRecord {
   @scala.inline
-  def apply(
-    Experiment: Experiment = null,
-    TrainingJob: TrainingJob = null,
-    Trial: Trial = null,
-    TrialComponent: TrialComponent = null
-  ): SearchRecord = {
+  def apply(): SearchRecord = {
     val __obj = js.Dynamic.literal()
-    if (Experiment != null) __obj.updateDynamic("Experiment")(Experiment.asInstanceOf[js.Any])
-    if (TrainingJob != null) __obj.updateDynamic("TrainingJob")(TrainingJob.asInstanceOf[js.Any])
-    if (Trial != null) __obj.updateDynamic("Trial")(Trial.asInstanceOf[js.Any])
-    if (TrialComponent != null) __obj.updateDynamic("TrialComponent")(TrialComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchRecord]
   }
+  @scala.inline
+  implicit class SearchRecordOps[Self <: SearchRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExperiment(value: Experiment): Self = this.set("Experiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperiment: Self = this.set("Experiment", js.undefined)
+    @scala.inline
+    def setTrainingJob(value: TrainingJob): Self = this.set("TrainingJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJob: Self = this.set("TrainingJob", js.undefined)
+    @scala.inline
+    def setTrial(value: Trial): Self = this.set("Trial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrial: Self = this.set("Trial", js.undefined)
+    @scala.inline
+    def setTrialComponent(value: TrialComponent): Self = this.set("TrialComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialComponent: Self = this.set("TrialComponent", js.undefined)
+  }
+  
 }
 

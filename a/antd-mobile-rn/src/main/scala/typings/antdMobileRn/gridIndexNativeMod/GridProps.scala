@@ -1,47 +1,52 @@
 package typings.antdMobileRn.gridIndexNativeMod
 
 import typings.antdMobileRn.carouselIndexNativeMod.CarouselProps
-import typings.antdMobileRn.gridPropsTypeMod.DataItem
 import typings.antdMobileRn.gridPropsTypeMod.GridPropsType
-import typings.react.mod.ReactElement
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridProps extends GridPropsType {
-  var carouselProps: js.UndefOr[CarouselProps] = js.undefined
-  var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
-  var styles: js.UndefOr[js.Any] = js.undefined
+  var carouselProps: js.UndefOr[CarouselProps] = js.native
+  var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var styles: js.UndefOr[js.Any] = js.native
 }
 
 object GridProps {
   @scala.inline
-  def apply(
-    carouselMaxRow: js.UndefOr[Double] = js.undefined,
-    carouselProps: CarouselProps = null,
-    columnNum: js.UndefOr[Double] = js.undefined,
-    data: js.Array[js.UndefOr[DataItem]] = null,
-    hasLine: js.UndefOr[Boolean] = js.undefined,
-    isCarousel: js.UndefOr[Boolean] = js.undefined,
-    itemStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    onClick: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double) => Unit = null,
-    renderItem: (/* dataItem */ js.UndefOr[DataItem], /* itemIndex */ Double) => ReactElement = null,
-    styles: js.Any = null
-  ): GridProps = {
+  def apply(): GridProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(carouselMaxRow)) __obj.updateDynamic("carouselMaxRow")(carouselMaxRow.get.asInstanceOf[js.Any])
-    if (carouselProps != null) __obj.updateDynamic("carouselProps")(carouselProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnNum)) __obj.updateDynamic("columnNum")(columnNum.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasLine)) __obj.updateDynamic("hasLine")(hasLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCarousel)) __obj.updateDynamic("isCarousel")(isCarousel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemStyle)) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction2(renderItem))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
+  @scala.inline
+  implicit class GridPropsOps[Self <: GridProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCarouselProps(value: CarouselProps): Self = this.set("carouselProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarouselProps: Self = this.set("carouselProps", js.undefined)
+    @scala.inline
+    def setItemStyle(value: StyleProp[ViewStyle]): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setItemStyleNull: Self = this.set("itemStyle", null)
+    @scala.inline
+    def setStyles(value: js.Any): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+  }
+  
 }
 

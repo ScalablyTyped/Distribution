@@ -232,6 +232,7 @@ trait HTMLMapElement extends js.Object {
   def appendChild(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def applyElement(apply: IHTMLElement, where: String): IHTMLElement = js.native
   def areas(): js.Any = js.native
+  def areas(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def areas(name: js.Any): js.Any = js.native
   def areas(name: js.Any, index: js.Any): js.Any = js.native
   def attachEvent(event: String, pdisp: js.Any): Boolean = js.native

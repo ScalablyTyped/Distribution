@@ -38,24 +38,50 @@ trait DBProxyTarget extends js.Object {
 
 object DBProxyTarget {
   @scala.inline
-  def apply(
-    Endpoint: String = null,
-    Port: js.UndefOr[Integer] = js.undefined,
-    RdsResourceId: String = null,
-    TargetArn: String = null,
-    TargetHealth: TargetHealth = null,
-    TrackedClusterId: String = null,
-    Type: TargetType = null
-  ): DBProxyTarget = {
+  def apply(): DBProxyTarget = {
     val __obj = js.Dynamic.literal()
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (RdsResourceId != null) __obj.updateDynamic("RdsResourceId")(RdsResourceId.asInstanceOf[js.Any])
-    if (TargetArn != null) __obj.updateDynamic("TargetArn")(TargetArn.asInstanceOf[js.Any])
-    if (TargetHealth != null) __obj.updateDynamic("TargetHealth")(TargetHealth.asInstanceOf[js.Any])
-    if (TrackedClusterId != null) __obj.updateDynamic("TrackedClusterId")(TrackedClusterId.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBProxyTarget]
   }
+  @scala.inline
+  implicit class DBProxyTargetOps[Self <: DBProxyTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setPort(value: Integer): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setRdsResourceId(value: String): Self = this.set("RdsResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRdsResourceId: Self = this.set("RdsResourceId", js.undefined)
+    @scala.inline
+    def setTargetArn(value: String): Self = this.set("TargetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetArn: Self = this.set("TargetArn", js.undefined)
+    @scala.inline
+    def setTargetHealth(value: TargetHealth): Self = this.set("TargetHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetHealth: Self = this.set("TargetHealth", js.undefined)
+    @scala.inline
+    def setTrackedClusterId(value: String): Self = this.set("TrackedClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackedClusterId: Self = this.set("TrackedClusterId", js.undefined)
+    @scala.inline
+    def setType(value: TargetType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

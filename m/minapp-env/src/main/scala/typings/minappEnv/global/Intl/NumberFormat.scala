@@ -18,11 +18,12 @@ object NumberFormat
       typings.minappEnv.Intl.NumberFormat
     ]
      with Instantiable2[
-      (/* locales */ Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ Array[String]) | (/* locales */ String)], 
       /* options */ NumberFormatOptions, 
       typings.minappEnv.Intl.NumberFormat
     ] {
   def apply(): typings.minappEnv.Intl.NumberFormat = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = js.native
   def apply(locales: String): typings.minappEnv.Intl.NumberFormat = js.native
   def apply(locales: String, options: NumberFormatOptions): typings.minappEnv.Intl.NumberFormat = js.native
   def apply(locales: Array[String]): typings.minappEnv.Intl.NumberFormat = js.native

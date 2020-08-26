@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nosleep_dot_js"
-version := "0.9-dt-20200127Z-e5ee72"
-scalaVersion := "2.13.2"
+version := "0.9-dt-20200127Z-201212"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

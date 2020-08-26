@@ -4,30 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BlobSnapshotOptions extends GetBlobPropertiesOptions {
-  var metadata: js.UndefOr[StorageMetadata] = js.undefined
+  var metadata: js.UndefOr[StorageMetadata] = js.native
 }
 
 object BlobSnapshotOptions {
   @scala.inline
-  def apply(
-    accessConditions: StorageAccessCondition = null,
-    leaseId: String = null,
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    metadata: StorageMetadata = null,
-    snapshotId: String = null,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): BlobSnapshotOptions = {
+  def apply(): BlobSnapshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobSnapshotOptions]
   }
+  @scala.inline
+  implicit class BlobSnapshotOptionsOps[Self <: BlobSnapshotOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: StorageMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+  }
+  
 }
 

@@ -27,19 +27,19 @@ class EndEvent protected () extends MicroflowObject {
   @JSName("model")
   var model_FEndEvent: IModel = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def returnValue: String = js.native
-  def returnValue(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
   def returnValueModel: Expression = js.native
-  def returnValueModel(newValue: Expression): js.Any = js.native
+  def returnValueModel_=(newValue: Expression): Unit = js.native
+  def returnValue_=(newValue: String): Unit = js.native
 }
 
 /* static members */

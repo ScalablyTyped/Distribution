@@ -12,7 +12,7 @@ Simple customizable navbar component for react-native
 | Keywords           | react-native, navbar |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 113047 |
+| # downloads        | 111715 |
 | # stars            | 6 |
 
 ## Links

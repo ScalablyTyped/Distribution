@@ -15,16 +15,28 @@ import scala.scalajs.js.annotation._
 class TransformStream[I, O] ()
   extends typings.std.TransformStream[I, O] {
   def this(transformer: Transformer[I, O]) = this()
+  def this(transformer: js.UndefOr[scala.Nothing], writableStrategy: QueuingStrategy[I]) = this()
   def this(transformer: Transformer[I, O], writableStrategy: QueuingStrategy[I]) = this()
+  def this(
+    transformer: js.UndefOr[scala.Nothing],
+    writableStrategy: js.UndefOr[scala.Nothing],
+    readableStrategy: QueuingStrategy[O]
+  ) = this()
+  def this(
+    transformer: js.UndefOr[scala.Nothing],
+    writableStrategy: QueuingStrategy[I],
+    readableStrategy: QueuingStrategy[O]
+  ) = this()
+  def this(
+    transformer: Transformer[I, O],
+    writableStrategy: js.UndefOr[scala.Nothing],
+    readableStrategy: QueuingStrategy[O]
+  ) = this()
   def this(
     transformer: Transformer[I, O],
     writableStrategy: QueuingStrategy[I],
     readableStrategy: QueuingStrategy[O]
   ) = this()
-  /* CompleteClass */
-  override val readable: typings.std.ReadableStream[O] = js.native
-  /* CompleteClass */
-  override val writable: typings.std.WritableStream[I] = js.native
 }
 
 @JSGlobal("TransformStream")
@@ -36,13 +48,13 @@ object TransformStream
       typings.std.TransformStream[js.Object, js.Object]
     ]
      with Instantiable2[
-      /* transformer */ Transformer[js.Object, js.Object], 
+      js.UndefOr[/* transformer */ Transformer[js.Object, js.Object]], 
       /* writableStrategy */ QueuingStrategy[js.Object], 
       typings.std.TransformStream[js.Object, js.Object]
     ]
      with Instantiable3[
-      /* transformer */ Transformer[js.Object, js.Object], 
-      /* writableStrategy */ QueuingStrategy[js.Object], 
+      js.UndefOr[/* transformer */ Transformer[js.Object, js.Object]], 
+      js.UndefOr[/* writableStrategy */ QueuingStrategy[js.Object]], 
       /* readableStrategy */ QueuingStrategy[js.Object], 
       typings.std.TransformStream[js.Object, js.Object]
     ]

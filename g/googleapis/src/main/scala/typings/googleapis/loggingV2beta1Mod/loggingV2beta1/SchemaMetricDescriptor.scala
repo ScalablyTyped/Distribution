@@ -87,28 +87,60 @@ trait SchemaMetricDescriptor extends js.Object {
 
 object SchemaMetricDescriptor {
   @scala.inline
-  def apply(
-    description: String = null,
-    displayName: String = null,
-    labels: js.Array[SchemaLabelDescriptor] = null,
-    metadata: SchemaMetricDescriptorMetadata = null,
-    metricKind: String = null,
-    name: String = null,
-    `type`: String = null,
-    unit: String = null,
-    valueType: String = null
-  ): SchemaMetricDescriptor = {
+  def apply(): SchemaMetricDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (metricKind != null) __obj.updateDynamic("metricKind")(metricKind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetricDescriptor]
   }
+  @scala.inline
+  implicit class SchemaMetricDescriptorOps[Self <: SchemaMetricDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SchemaLabelDescriptor*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[SchemaLabelDescriptor]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaMetricDescriptorMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMetricKind(value: String): Self = this.set("metricKind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricKind: Self = this.set("metricKind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setValueType(value: String): Self = this.set("valueType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueType: Self = this.set("valueType", js.undefined)
+  }
+  
 }
 

@@ -1,125 +1,168 @@
 package typings.pacote.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pacote.anon.Directory
-import typings.pacote.anon.Email
 import typings.pacote.pacoteBooleans.`false`
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Manifest_
   extends CommonMetadata
      with // Non-standard properties may also appear when fullMetadata = true.
 /* key */ StringDictionary[js.Any] {
-  var _id: js.UndefOr[String] = js.undefined
-  var _nodeVersion: js.UndefOr[String] = js.undefined
-  var _npmUser: js.UndefOr[Person] = js.undefined
-  var _npmVersion: js.UndefOr[String] = js.undefined
-  var bin: js.UndefOr[Record[String, String]] = js.undefined
+  var _id: js.UndefOr[String] = js.native
+  var _nodeVersion: js.UndefOr[String] = js.native
+  var _npmUser: js.UndefOr[Person] = js.native
+  var _npmVersion: js.UndefOr[String] = js.native
+  var bin: js.UndefOr[Record[String, String]] = js.native
   // These properties usually only appear when fullMetadata = true.
-  var browser: js.UndefOr[String] = js.undefined
-  var bundledDependencies: js.UndefOr[`false` | js.Array[String]] = js.undefined
-  var config: js.UndefOr[Record[String, _]] = js.undefined
-  var cpu: js.UndefOr[js.Array[String]] = js.undefined
+  var browser: js.UndefOr[String] = js.native
+  var bundledDependencies: js.UndefOr[`false` | js.Array[String]] = js.native
+  var config: js.UndefOr[Record[String, _]] = js.native
+  var cpu: js.UndefOr[js.Array[String]] = js.native
   // These properties usually appear in all requests.
-  var dependencies: js.UndefOr[Record[String, String]] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var devDependencies: js.UndefOr[Record[String, String]] = js.undefined
-  var directories: js.UndefOr[Record[String, String]] = js.undefined
-  var dist: PackageDist
-  var engines: js.UndefOr[Record[String, String]] = js.undefined
-  var files: js.UndefOr[js.Array[String]] = js.undefined
-  var main: js.UndefOr[String] = js.undefined
-  var man: js.UndefOr[String | js.Array[String]] = js.undefined
-  var name: String
-  var optionalDependencies: js.UndefOr[Record[String, String]] = js.undefined
-  var os: js.UndefOr[js.Array[String]] = js.undefined
-  var peerDependencies: js.UndefOr[Record[String, String]] = js.undefined
-  var publishConfig: js.UndefOr[Record[String, _]] = js.undefined
-  var scripts: js.UndefOr[Record[String, String]] = js.undefined
-  var version: String
+  var dependencies: js.UndefOr[Record[String, String]] = js.native
+  var description: js.UndefOr[String] = js.native
+  var devDependencies: js.UndefOr[Record[String, String]] = js.native
+  var directories: js.UndefOr[Record[String, String]] = js.native
+  var dist: PackageDist = js.native
+  var engines: js.UndefOr[Record[String, String]] = js.native
+  var files: js.UndefOr[js.Array[String]] = js.native
+  var main: js.UndefOr[String] = js.native
+  var man: js.UndefOr[String | js.Array[String]] = js.native
+  var name: String = js.native
+  var optionalDependencies: js.UndefOr[Record[String, String]] = js.native
+  var os: js.UndefOr[js.Array[String]] = js.native
+  var peerDependencies: js.UndefOr[Record[String, String]] = js.native
+  var publishConfig: js.UndefOr[Record[String, _]] = js.native
+  var scripts: js.UndefOr[Record[String, String]] = js.native
+  var version: String = js.native
 }
 
 object Manifest_ {
   @scala.inline
-  def apply(
-    dist: PackageDist,
-    name: String,
-    version: String,
-    StringDictionary: // Non-standard properties may also appear when fullMetadata = true.
-  /* key */ StringDictionary[js.Any] = null,
-    _id: String = null,
-    _nodeVersion: String = null,
-    _npmUser: Person = null,
-    _npmVersion: String = null,
-    author: Person = null,
-    bin: Record[String, String] = null,
-    browser: String = null,
-    bugs: Email = null,
-    bundledDependencies: `false` | js.Array[String] = null,
-    config: Record[String, _] = null,
-    contributors: js.Array[Person] = null,
-    cpu: js.Array[String] = null,
-    dependencies: Record[String, String] = null,
-    description: String = null,
-    devDependencies: Record[String, String] = null,
-    directories: Record[String, String] = null,
-    engines: Record[String, String] = null,
-    files: js.Array[String] = null,
-    homepage: String = null,
-    keywords: js.Array[String] = null,
-    license: String = null,
-    main: String = null,
-    maintainers: js.Array[Person] = null,
-    man: String | js.Array[String] = null,
-    optionalDependencies: Record[String, String] = null,
-    os: js.Array[String] = null,
-    peerDependencies: Record[String, String] = null,
-    publishConfig: Record[String, _] = null,
-    readme: String = null,
-    readmeFilename: String = null,
-    repository: Directory = null,
-    scripts: Record[String, String] = null,
-    users: Record[String, Boolean] = null
-  ): Manifest_ = {
+  def apply(dist: PackageDist, name: String, version: String): Manifest_ = {
     val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_nodeVersion != null) __obj.updateDynamic("_nodeVersion")(_nodeVersion.asInstanceOf[js.Any])
-    if (_npmUser != null) __obj.updateDynamic("_npmUser")(_npmUser.asInstanceOf[js.Any])
-    if (_npmVersion != null) __obj.updateDynamic("_npmVersion")(_npmVersion.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])
-    if (bundledDependencies != null) __obj.updateDynamic("bundledDependencies")(bundledDependencies.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
-    if (cpu != null) __obj.updateDynamic("cpu")(cpu.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
-    if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
-    if (engines != null) __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
-    if (man != null) __obj.updateDynamic("man")(man.asInstanceOf[js.Any])
-    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies.asInstanceOf[js.Any])
-    if (os != null) __obj.updateDynamic("os")(os.asInstanceOf[js.Any])
-    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies.asInstanceOf[js.Any])
-    if (publishConfig != null) __obj.updateDynamic("publishConfig")(publishConfig.asInstanceOf[js.Any])
-    if (readme != null) __obj.updateDynamic("readme")(readme.asInstanceOf[js.Any])
-    if (readmeFilename != null) __obj.updateDynamic("readmeFilename")(readmeFilename.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest_]
   }
+  @scala.inline
+  implicit class Manifest_Ops[Self <: Manifest_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDist(value: PackageDist): Self = this.set("dist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_id: Self = this.set("_id", js.undefined)
+    @scala.inline
+    def set_nodeVersion(value: String): Self = this.set("_nodeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_nodeVersion: Self = this.set("_nodeVersion", js.undefined)
+    @scala.inline
+    def set_npmUser(value: Person): Self = this.set("_npmUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_npmUser: Self = this.set("_npmUser", js.undefined)
+    @scala.inline
+    def set_npmVersion(value: String): Self = this.set("_npmVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_npmVersion: Self = this.set("_npmVersion", js.undefined)
+    @scala.inline
+    def setBin(value: Record[String, String]): Self = this.set("bin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBin: Self = this.set("bin", js.undefined)
+    @scala.inline
+    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser: Self = this.set("browser", js.undefined)
+    @scala.inline
+    def setBundledDependenciesVarargs(value: String*): Self = this.set("bundledDependencies", js.Array(value :_*))
+    @scala.inline
+    def setBundledDependencies(value: `false` | js.Array[String]): Self = this.set("bundledDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundledDependencies: Self = this.set("bundledDependencies", js.undefined)
+    @scala.inline
+    def setConfig(value: Record[String, _]): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setCpuVarargs(value: String*): Self = this.set("cpu", js.Array(value :_*))
+    @scala.inline
+    def setCpu(value: js.Array[String]): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setDependencies(value: Record[String, String]): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDevDependencies(value: Record[String, String]): Self = this.set("devDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevDependencies: Self = this.set("devDependencies", js.undefined)
+    @scala.inline
+    def setDirectories(value: Record[String, String]): Self = this.set("directories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectories: Self = this.set("directories", js.undefined)
+    @scala.inline
+    def setEngines(value: Record[String, String]): Self = this.set("engines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngines: Self = this.set("engines", js.undefined)
+    @scala.inline
+    def setFilesVarargs(value: String*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[String]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMain: Self = this.set("main", js.undefined)
+    @scala.inline
+    def setManVarargs(value: String*): Self = this.set("man", js.Array(value :_*))
+    @scala.inline
+    def setMan(value: String | js.Array[String]): Self = this.set("man", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMan: Self = this.set("man", js.undefined)
+    @scala.inline
+    def setOptionalDependencies(value: Record[String, String]): Self = this.set("optionalDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionalDependencies: Self = this.set("optionalDependencies", js.undefined)
+    @scala.inline
+    def setOsVarargs(value: String*): Self = this.set("os", js.Array(value :_*))
+    @scala.inline
+    def setOs(value: js.Array[String]): Self = this.set("os", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOs: Self = this.set("os", js.undefined)
+    @scala.inline
+    def setPeerDependencies(value: Record[String, String]): Self = this.set("peerDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerDependencies: Self = this.set("peerDependencies", js.undefined)
+    @scala.inline
+    def setPublishConfig(value: Record[String, _]): Self = this.set("publishConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishConfig: Self = this.set("publishConfig", js.undefined)
+    @scala.inline
+    def setScripts(value: Record[String, String]): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScripts: Self = this.set("scripts", js.undefined)
+  }
+  
 }
 

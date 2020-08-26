@@ -28,6 +28,7 @@ class ResourceRooms protected () extends js.Object {
     */
   def reset(): GaxiosPromise[Unit] = js.native
   def reset(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def reset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceRoomsReset): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceRoomsReset, callback: BodyResponseCallback[Unit]): Unit = js.native
   def reset(
@@ -52,6 +53,7 @@ class ResourceRooms protected () extends js.Object {
     */
   def resetForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def resetForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceRoomsResetforallplayers): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceRoomsResetforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetForAllPlayers(

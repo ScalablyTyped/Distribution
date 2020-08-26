@@ -18,10 +18,28 @@ trait SchemaSourceInfo extends js.Object {
 
 object SchemaSourceInfo {
   @scala.inline
-  def apply(sourceFiles: js.Array[StringDictionary[_]] = null): SchemaSourceInfo = {
+  def apply(): SchemaSourceInfo = {
     val __obj = js.Dynamic.literal()
-    if (sourceFiles != null) __obj.updateDynamic("sourceFiles")(sourceFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceInfo]
   }
+  @scala.inline
+  implicit class SchemaSourceInfoOps[Self <: SchemaSourceInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceFilesVarargs(value: StringDictionary[js.Any]*): Self = this.set("sourceFiles", js.Array(value :_*))
+    @scala.inline
+    def setSourceFiles(value: js.Array[StringDictionary[_]]): Self = this.set("sourceFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFiles: Self = this.set("sourceFiles", js.undefined)
+  }
+  
 }
 

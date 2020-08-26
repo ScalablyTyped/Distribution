@@ -30,19 +30,42 @@ trait GetReservationUtilizationRequest extends js.Object {
 
 object GetReservationUtilizationRequest {
   @scala.inline
-  def apply(
-    TimePeriod: DateInterval,
-    Filter: Expression = null,
-    Granularity: Granularity = null,
-    GroupBy: GroupDefinitions = null,
-    NextPageToken: NextPageToken = null
-  ): GetReservationUtilizationRequest = {
+  def apply(TimePeriod: DateInterval): GetReservationUtilizationRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (Granularity != null) __obj.updateDynamic("Granularity")(Granularity.asInstanceOf[js.Any])
-    if (GroupBy != null) __obj.updateDynamic("GroupBy")(GroupBy.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReservationUtilizationRequest]
   }
+  @scala.inline
+  implicit class GetReservationUtilizationRequestOps[Self <: GetReservationUtilizationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimePeriod(value: DateInterval): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setGranularity(value: Granularity): Self = this.set("Granularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGranularity: Self = this.set("Granularity", js.undefined)
+    @scala.inline
+    def setGroupByVarargs(value: GroupDefinition*): Self = this.set("GroupBy", js.Array(value :_*))
+    @scala.inline
+    def setGroupBy(value: GroupDefinitions): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBy: Self = this.set("GroupBy", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+  }
+  
 }
 

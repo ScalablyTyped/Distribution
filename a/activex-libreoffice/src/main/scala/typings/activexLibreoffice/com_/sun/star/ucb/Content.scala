@@ -17,6 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A {@link Content} is a service that provides access to data of a content provided by an implementation of the service {@link ContentProvider} . */
+@js.native
 trait Content
   extends XCommandProcessor2
      with XContent

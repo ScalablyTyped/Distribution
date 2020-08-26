@@ -9,8 +9,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("tableau.VizManager")
 @js.native
 class VizManager ()
-  extends typings.tableau.tableau.VizManager {
-  /* CompleteClass */
-  override def getVizs(): js.Array[typings.tableau.tableau.Viz] = js.native
-}
+  extends typings.tableau.tableau.VizManager
 

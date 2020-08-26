@@ -30,19 +30,40 @@ trait UpdateStreamInput extends js.Object {
 
 object UpdateStreamInput {
   @scala.inline
-  def apply(
-    CurrentVersion: Version,
-    DeviceName: DeviceName = null,
-    MediaType: MediaType = null,
-    StreamARN: ResourceARN = null,
-    StreamName: StreamName = null
-  ): UpdateStreamInput = {
+  def apply(CurrentVersion: Version): UpdateStreamInput = {
     val __obj = js.Dynamic.literal(CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (MediaType != null) __obj.updateDynamic("MediaType")(MediaType.asInstanceOf[js.Any])
-    if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStreamInput]
   }
+  @scala.inline
+  implicit class UpdateStreamInputOps[Self <: UpdateStreamInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentVersion(value: Version): Self = this.set("CurrentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeviceName(value: DeviceName): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    @scala.inline
+    def setMediaType(value: MediaType): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaType: Self = this.set("MediaType", js.undefined)
+    @scala.inline
+    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+  }
+  
 }
 

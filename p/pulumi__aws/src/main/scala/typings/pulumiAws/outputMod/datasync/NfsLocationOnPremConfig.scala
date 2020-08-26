@@ -18,5 +18,22 @@ object NfsLocationOnPremConfig {
     val __obj = js.Dynamic.literal(agentArns = agentArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[NfsLocationOnPremConfig]
   }
+  @scala.inline
+  implicit class NfsLocationOnPremConfigOps[Self <: NfsLocationOnPremConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentArnsVarargs(value: String*): Self = this.set("agentArns", js.Array(value :_*))
+    @scala.inline
+    def setAgentArns(value: js.Array[String]): Self = this.set("agentArns", value.asInstanceOf[js.Any])
+  }
+  
 }
 

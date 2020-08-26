@@ -42,18 +42,40 @@ trait SchemaGoogleCloudDialogflowV2IntentTrainingPhrase extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2IntentTrainingPhrase {
   @scala.inline
-  def apply(
-    name: String = null,
-    parts: js.Array[SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart] = null,
-    timesAddedCount: js.UndefOr[Double] = js.undefined,
-    `type`: String = null
-  ): SchemaGoogleCloudDialogflowV2IntentTrainingPhrase = {
+  def apply(): SchemaGoogleCloudDialogflowV2IntentTrainingPhrase = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parts != null) __obj.updateDynamic("parts")(parts.asInstanceOf[js.Any])
-    if (!js.isUndefined(timesAddedCount)) __obj.updateDynamic("timesAddedCount")(timesAddedCount.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentTrainingPhrase]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2IntentTrainingPhraseOps[Self <: SchemaGoogleCloudDialogflowV2IntentTrainingPhrase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPartsVarargs(value: SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart*): Self = this.set("parts", js.Array(value :_*))
+    @scala.inline
+    def setParts(value: js.Array[SchemaGoogleCloudDialogflowV2IntentTrainingPhrasePart]): Self = this.set("parts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParts: Self = this.set("parts", js.undefined)
+    @scala.inline
+    def setTimesAddedCount(value: Double): Self = this.set("timesAddedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimesAddedCount: Self = this.set("timesAddedCount", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

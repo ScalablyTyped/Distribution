@@ -11,8 +11,8 @@ A fullscreen control for Leaflet
 | Full name          | leaflet-fullscreen |
 | Keywords           | leaflet, maps, fullscreen, client |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 329543 |
+| # dependents       | 14 |
+| # downloads        | 335548 |
 | # stars            | 1 |
 
 ## Links

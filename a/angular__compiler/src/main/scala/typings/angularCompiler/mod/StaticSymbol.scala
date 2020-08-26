@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "StaticSymbol")
 @js.native
 class StaticSymbol protected ()
-  extends typings.angularCompiler.publicApiMod.StaticSymbol {
+  extends typings.angularCompiler.compilerMod.StaticSymbol {
   def this(filePath: String, name: String, members: js.Array[String]) = this()
 }
 

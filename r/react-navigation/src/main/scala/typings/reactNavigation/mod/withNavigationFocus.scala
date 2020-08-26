@@ -3,7 +3,7 @@ package typings.reactNavigation.mod
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
-import typings.reactNavigation.anon.`0`
+import typings.reactNavigation.anon.`4`
 import typings.reactNavigation.reactNavigationStrings.isFocused
 import typings.reactNavigation.reactNavigationStrings.navigation
 import scala.scalajs.js
@@ -23,7 +23,7 @@ object withNavigationFocus extends js.Object {
     (Omit[
       P, 
       /* keyof react-navigation.react-navigation.NavigationFocusInjectedProps<react-navigation.react-navigation.NavigationParams> */ isFocused | navigation
-    ]) with (`0`[T, P])
+    ]) with (`4`[T, P])
   ] = js.native
 }
 

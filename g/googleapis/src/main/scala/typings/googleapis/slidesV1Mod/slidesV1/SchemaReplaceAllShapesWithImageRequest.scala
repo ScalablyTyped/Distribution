@@ -51,20 +51,44 @@ trait SchemaReplaceAllShapesWithImageRequest extends js.Object {
 
 object SchemaReplaceAllShapesWithImageRequest {
   @scala.inline
-  def apply(
-    containsText: SchemaSubstringMatchCriteria = null,
-    imageReplaceMethod: String = null,
-    imageUrl: String = null,
-    pageObjectIds: js.Array[String] = null,
-    replaceMethod: String = null
-  ): SchemaReplaceAllShapesWithImageRequest = {
+  def apply(): SchemaReplaceAllShapesWithImageRequest = {
     val __obj = js.Dynamic.literal()
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
-    if (imageReplaceMethod != null) __obj.updateDynamic("imageReplaceMethod")(imageReplaceMethod.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds.asInstanceOf[js.Any])
-    if (replaceMethod != null) __obj.updateDynamic("replaceMethod")(replaceMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReplaceAllShapesWithImageRequest]
   }
+  @scala.inline
+  implicit class SchemaReplaceAllShapesWithImageRequestOps[Self <: SchemaReplaceAllShapesWithImageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainsText(value: SchemaSubstringMatchCriteria): Self = this.set("containsText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsText: Self = this.set("containsText", js.undefined)
+    @scala.inline
+    def setImageReplaceMethod(value: String): Self = this.set("imageReplaceMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageReplaceMethod: Self = this.set("imageReplaceMethod", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setPageObjectIdsVarargs(value: String*): Self = this.set("pageObjectIds", js.Array(value :_*))
+    @scala.inline
+    def setPageObjectIds(value: js.Array[String]): Self = this.set("pageObjectIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageObjectIds: Self = this.set("pageObjectIds", js.undefined)
+    @scala.inline
+    def setReplaceMethod(value: String): Self = this.set("replaceMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceMethod: Self = this.set("replaceMethod", js.undefined)
+  }
+  
 }
 

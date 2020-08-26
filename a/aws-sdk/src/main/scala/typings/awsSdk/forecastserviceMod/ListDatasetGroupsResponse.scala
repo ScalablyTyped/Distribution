@@ -18,11 +18,32 @@ trait ListDatasetGroupsResponse extends js.Object {
 
 object ListDatasetGroupsResponse {
   @scala.inline
-  def apply(DatasetGroups: DatasetGroups = null, NextToken: NextToken = null): ListDatasetGroupsResponse = {
+  def apply(): ListDatasetGroupsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DatasetGroups != null) __obj.updateDynamic("DatasetGroups")(DatasetGroups.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatasetGroupsResponse]
   }
+  @scala.inline
+  implicit class ListDatasetGroupsResponseOps[Self <: ListDatasetGroupsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetGroupsVarargs(value: DatasetGroupSummary*): Self = this.set("DatasetGroups", js.Array(value :_*))
+    @scala.inline
+    def setDatasetGroups(value: DatasetGroups): Self = this.set("DatasetGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroups: Self = this.set("DatasetGroups", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

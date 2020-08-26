@@ -10,8 +10,8 @@ Efficient implementation of Levenshtein algorithm  with locale-specific collator
 | Full name          | fast-levenshtein |
 | Keywords           | levenshtein, distance, string |
 | # releases         | 1 |
-| # dependents       | 178 |
-| # downloads        | 366425250 |
+| # dependents       | 179 |
+| # downloads        | 374748475 |
 | # stars            | 17 |
 
 ## Links

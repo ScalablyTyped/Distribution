@@ -26,14 +26,6 @@ object visualization extends js.Object {
     extends typings.navermaps.naver.maps.visualization.WeightedLocation {
     def this(lat: Double, lng: Double) = this()
     def this(lat: Double, lng: Double, weight: Double) = this()
-    /* CompleteClass */
-    override def getLocation(): typings.navermaps.naver.maps.LatLng = js.native
-    /* CompleteClass */
-    override def getWeight(): Double = js.native
-    /* CompleteClass */
-    override def lat(): Double = js.native
-    /* CompleteClass */
-    override def lng(): Double = js.native
   }
   
   // Sub module: visualization

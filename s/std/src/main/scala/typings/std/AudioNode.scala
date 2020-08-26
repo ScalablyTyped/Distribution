@@ -14,6 +14,7 @@ trait AudioNode extends EventTarget {
   val numberOfInputs: Double = js.native
   val numberOfOutputs: Double = js.native
   def connect(destinationNode: AudioNode): AudioNode = js.native
+  def connect(destinationNode: AudioNode, output: js.UndefOr[scala.Nothing], input: Double): AudioNode = js.native
   def connect(destinationNode: AudioNode, output: Double): AudioNode = js.native
   def connect(destinationNode: AudioNode, output: Double, input: Double): AudioNode = js.native
   def connect(destinationParam: AudioParam): Unit = js.native

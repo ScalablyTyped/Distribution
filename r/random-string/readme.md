@@ -10,8 +10,8 @@ Simple Module for generating Random Strings
 | Full name          | random-string |
 | Keywords           | random, string |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 758376 |
+| # dependents       | 70 |
+| # downloads        | 763375 |
 | # stars            | 9 |
 
 ## Links

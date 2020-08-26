@@ -71,28 +71,62 @@ trait SchemaPipelineResources extends js.Object {
 
 object SchemaPipelineResources {
   @scala.inline
-  def apply(
-    acceleratorCount: String = null,
-    acceleratorType: String = null,
-    bootDiskSizeGb: js.UndefOr[Double] = js.undefined,
-    disks: js.Array[SchemaDisk] = null,
-    minimumCpuCores: js.UndefOr[Double] = js.undefined,
-    minimumRamGb: js.UndefOr[Double] = js.undefined,
-    noAddress: js.UndefOr[Boolean] = js.undefined,
-    preemptible: js.UndefOr[Boolean] = js.undefined,
-    zones: js.Array[String] = null
-  ): SchemaPipelineResources = {
+  def apply(): SchemaPipelineResources = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorCount != null) __obj.updateDynamic("acceleratorCount")(acceleratorCount.asInstanceOf[js.Any])
-    if (acceleratorType != null) __obj.updateDynamic("acceleratorType")(acceleratorType.asInstanceOf[js.Any])
-    if (!js.isUndefined(bootDiskSizeGb)) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.get.asInstanceOf[js.Any])
-    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumCpuCores)) __obj.updateDynamic("minimumCpuCores")(minimumCpuCores.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumRamGb)) __obj.updateDynamic("minimumRamGb")(minimumRamGb.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAddress)) __obj.updateDynamic("noAddress")(noAddress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
-    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPipelineResources]
   }
+  @scala.inline
+  implicit class SchemaPipelineResourcesOps[Self <: SchemaPipelineResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorCount(value: String): Self = this.set("acceleratorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorCount: Self = this.set("acceleratorCount", js.undefined)
+    @scala.inline
+    def setAcceleratorType(value: String): Self = this.set("acceleratorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorType: Self = this.set("acceleratorType", js.undefined)
+    @scala.inline
+    def setBootDiskSizeGb(value: Double): Self = this.set("bootDiskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootDiskSizeGb: Self = this.set("bootDiskSizeGb", js.undefined)
+    @scala.inline
+    def setDisksVarargs(value: SchemaDisk*): Self = this.set("disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: js.Array[SchemaDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("disks", js.undefined)
+    @scala.inline
+    def setMinimumCpuCores(value: Double): Self = this.set("minimumCpuCores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumCpuCores: Self = this.set("minimumCpuCores", js.undefined)
+    @scala.inline
+    def setMinimumRamGb(value: Double): Self = this.set("minimumRamGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumRamGb: Self = this.set("minimumRamGb", js.undefined)
+    @scala.inline
+    def setNoAddress(value: Boolean): Self = this.set("noAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoAddress: Self = this.set("noAddress", js.undefined)
+    @scala.inline
+    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+    @scala.inline
+    def setZonesVarargs(value: String*): Self = this.set("zones", js.Array(value :_*))
+    @scala.inline
+    def setZones(value: js.Array[String]): Self = this.set("zones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZones: Self = this.set("zones", js.undefined)
+  }
+  
 }
 

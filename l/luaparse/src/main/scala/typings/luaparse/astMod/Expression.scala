@@ -1,6 +1,5 @@
 package typings.luaparse.astMod
 
-import typings.luaparse.anon.End
 import typings.luaparse.luaparseStrings.Ampersand
 import typings.luaparse.luaparseStrings.Asterisk
 import typings.luaparse.luaparseStrings.Colon
@@ -56,80 +55,54 @@ object Expression {
     body: js.Array[Statement],
     isLocal: Boolean,
     parameters: js.Array[Identifier | VarargLiteral],
-    `type`: typings.luaparse.luaparseStrings.FunctionDeclaration,
-    identifier: Identifier | MemberExpression = null,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.FunctionDeclaration
   ): Expression = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isLocal = isLocal.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], isLocal = isLocal.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def IndexExpression(
-    base: Expression,
-    index: Expression,
-    `type`: typings.luaparse.luaparseStrings.IndexExpression,
-    loc: End = null
-  ): Expression = {
+  def IndexExpression(base: Expression, index: Expression, `type`: typings.luaparse.luaparseStrings.IndexExpression): Expression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def VarargLiteral(
-    raw: String,
-    `type`: typings.luaparse.luaparseStrings.VarargLiteral,
-    value: String,
-    loc: End = null
-  ): Expression = {
+  def VarargLiteral(raw: String, `type`: typings.luaparse.luaparseStrings.VarargLiteral, value: String): Expression = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
   def StringCallExpression(
     argument: Expression,
     base: Expression,
-    `type`: typings.luaparse.luaparseStrings.StringCallExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.StringCallExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def NilLiteral(raw: String, `type`: typings.luaparse.luaparseStrings.NilLiteral, value: Null, loc: End = null): Expression = {
+  def NilLiteral(raw: String, `type`: typings.luaparse.luaparseStrings.NilLiteral, value: Null): Expression = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
   def CallExpression(
     arguments: js.Array[Expression],
     base: Expression,
-    `type`: typings.luaparse.luaparseStrings.CallExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.CallExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def BooleanLiteral(
-    raw: String,
-    `type`: typings.luaparse.luaparseStrings.BooleanLiteral,
-    value: Boolean,
-    loc: End = null
-  ): Expression = {
+  def BooleanLiteral(raw: String, `type`: typings.luaparse.luaparseStrings.BooleanLiteral, value: Boolean): Expression = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
@@ -137,12 +110,10 @@ object Expression {
     base: Expression,
     identifier: Identifier,
     indexer: Dot | Colon,
-    `type`: typings.luaparse.luaparseStrings.MemberExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.MemberExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], indexer = indexer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
@@ -150,36 +121,26 @@ object Expression {
     left: Expression,
     operator: Plussign | `-_` | Asterisk | Percentsign | ^  | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign,
     right: Expression,
-    `type`: typings.luaparse.luaparseStrings.BinaryExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.BinaryExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def NumericLiteral(
-    raw: String,
-    `type`: typings.luaparse.luaparseStrings.NumericLiteral,
-    value: Double,
-    loc: End = null
-  ): Expression = {
+  def NumericLiteral(raw: String, `type`: typings.luaparse.luaparseStrings.NumericLiteral, value: Double): Expression = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
   def UnaryExpression(
     argument: Expression,
     operator: not | `-_` | Tilde | Numbersign,
-    `type`: typings.luaparse.luaparseStrings.UnaryExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.UnaryExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
@@ -187,54 +148,41 @@ object Expression {
     left: Expression,
     operator: or | and,
     right: Expression,
-    `type`: typings.luaparse.luaparseStrings.LogicalExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.LogicalExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
   def TableConstructorExpression(
     fields: js.Array[TableKey | TableKeyString | TableValue],
-    `type`: typings.luaparse.luaparseStrings.TableConstructorExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.TableConstructorExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def Identifier(name: String, `type`: typings.luaparse.luaparseStrings.Identifier, loc: End = null): Expression = {
+  def Identifier(name: String, `type`: typings.luaparse.luaparseStrings.Identifier): Expression = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
   def TableCallExpression(
     arguments: Expression,
     base: Expression,
-    `type`: typings.luaparse.luaparseStrings.TableCallExpression,
-    loc: End = null
+    `type`: typings.luaparse.luaparseStrings.TableCallExpression
   ): Expression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
   @scala.inline
-  def StringLiteral(
-    raw: String,
-    `type`: typings.luaparse.luaparseStrings.StringLiteral,
-    value: String,
-    loc: End = null
-  ): Expression = {
+  def StringLiteral(raw: String, `type`: typings.luaparse.luaparseStrings.StringLiteral, value: String): Expression = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expression]
   }
 }

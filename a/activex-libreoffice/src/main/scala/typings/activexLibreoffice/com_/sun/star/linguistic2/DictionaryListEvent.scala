@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.linguistic2.XDictionaryListEventListener
   * @see com.sun.star.lang.EventObject
   */
+@js.native
 trait DictionaryListEvent extends EventObject {
   /**
     * list of accumulated dictionary events.
@@ -26,14 +27,14 @@ trait DictionaryListEvent extends EventObject {
     * com.sun.star.linguistic2.DictionaryListEvent.nCondensedEvent()} .
     * @see com.sun.star.linguistic2.DictionaryEvent
     */
-  var aDictionaryEvents: SafeArray[DictionaryEvent]
+  var aDictionaryEvents: SafeArray[DictionaryEvent] = js.native
   /**
     * the combined type of the accumulated events.
     *
     * The value can be the combination of multiple {@link com.sun.star.linguistic2.DictionaryListEventFlags} by applying the logical OR to them.
     * @see com.sun.star.linguistic2.DictionaryListEventFlags
     */
-  var nCondensedEvent: Double
+  var nCondensedEvent: Double = js.native
 }
 
 object DictionaryListEvent {
@@ -42,5 +43,22 @@ object DictionaryListEvent {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], aDictionaryEvents = aDictionaryEvents.asInstanceOf[js.Any], nCondensedEvent = nCondensedEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictionaryListEvent]
   }
+  @scala.inline
+  implicit class DictionaryListEventOps[Self <: DictionaryListEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setADictionaryEvents(value: SafeArray[DictionaryEvent]): Self = this.set("aDictionaryEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNCondensedEvent(value: Double): Self = this.set("nCondensedEvent", value.asInstanceOf[js.Any])
+  }
+  
 }
 

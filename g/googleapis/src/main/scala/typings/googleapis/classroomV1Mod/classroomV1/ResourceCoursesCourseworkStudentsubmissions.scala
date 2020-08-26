@@ -33,6 +33,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def get(): GaxiosPromise[SchemaStudentSubmission] = js.native
   def get(callback: BodyResponseCallback[SchemaStudentSubmission]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStudentSubmission] = js.native
   def get(params: ParamsResourceCoursesCourseworkStudentsubmissionsGet): GaxiosPromise[SchemaStudentSubmission] = js.native
   def get(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsGet,
@@ -78,6 +79,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def list(): GaxiosPromise[SchemaListStudentSubmissionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListStudentSubmissionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListStudentSubmissionsResponse] = js.native
   def list(params: ParamsResourceCoursesCourseworkStudentsubmissionsList): GaxiosPromise[SchemaListStudentSubmissionsResponse] = js.native
   def list(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsList,
@@ -122,6 +124,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def modifyAttachments(): GaxiosPromise[SchemaStudentSubmission] = js.native
   def modifyAttachments(callback: BodyResponseCallback[SchemaStudentSubmission]): Unit = js.native
+  def modifyAttachments(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStudentSubmission] = js.native
   def modifyAttachments(params: ParamsResourceCoursesCourseworkStudentsubmissionsModifyattachments): GaxiosPromise[SchemaStudentSubmission] = js.native
   def modifyAttachments(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsModifyattachments,
@@ -167,6 +170,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def patch(): GaxiosPromise[SchemaStudentSubmission] = js.native
   def patch(callback: BodyResponseCallback[SchemaStudentSubmission]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStudentSubmission] = js.native
   def patch(params: ParamsResourceCoursesCourseworkStudentsubmissionsPatch): GaxiosPromise[SchemaStudentSubmission] = js.native
   def patch(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsPatch,
@@ -213,6 +217,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def reclaim(): GaxiosPromise[SchemaEmpty] = js.native
   def reclaim(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def reclaim(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def reclaim(params: ParamsResourceCoursesCourseworkStudentsubmissionsReclaim): GaxiosPromise[SchemaEmpty] = js.native
   def reclaim(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsReclaim,
@@ -259,6 +264,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def `return`(): GaxiosPromise[SchemaEmpty] = js.native
   def `return`(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def `return`(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def `return`(params: ParamsResourceCoursesCourseworkStudentsubmissionsReturn): GaxiosPromise[SchemaEmpty] = js.native
   def `return`(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsReturn,
@@ -303,6 +309,7 @@ class ResourceCoursesCourseworkStudentsubmissions protected () extends js.Object
     */
   def turnIn(): GaxiosPromise[SchemaEmpty] = js.native
   def turnIn(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def turnIn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def turnIn(params: ParamsResourceCoursesCourseworkStudentsubmissionsTurnin): GaxiosPromise[SchemaEmpty] = js.native
   def turnIn(
     params: ParamsResourceCoursesCourseworkStudentsubmissionsTurnin,

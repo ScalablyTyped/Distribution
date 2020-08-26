@@ -4,262 +4,431 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Settings extends js.Object {
   // Animation settings
-  var animationsTime: js.UndefOr[Double] = js.undefined
-  var autoRescale: js.UndefOr[js.Any] = js.undefined
+  var animationsTime: js.UndefOr[Double] = js.native
+  var autoRescale: js.UndefOr[js.Any] = js.native
   // Global settings
-  var autoResize: js.UndefOr[Boolean] = js.undefined
+  var autoResize: js.UndefOr[Boolean] = js.native
   // Batch edge drawing
-  var batchEdgesDrawing: js.UndefOr[Boolean] = js.undefined
+  var batchEdgesDrawing: js.UndefOr[Boolean] = js.native
   // hovered node customizations
-  var borderSize: js.UndefOr[Double] = js.undefined
-  var canvasEdgesBatchSize: js.UndefOr[Double] = js.undefined
+  var borderSize: js.UndefOr[Double] = js.native
+  var canvasEdgesBatchSize: js.UndefOr[Double] = js.native
   // Graph settings
   @JSName("clone")
-  var clone_FSettings: js.UndefOr[Boolean] = js.undefined
-  var defaultEdgeColor: js.UndefOr[String] = js.undefined
-  var defaultEdgeHoverColor: js.UndefOr[String] = js.undefined
-  var defaultEdgeType: js.UndefOr[String] = js.undefined
-  var defaultHoverLabelBGColor: js.UndefOr[String] = js.undefined
-  var defaultLabelColor: js.UndefOr[String] = js.undefined
-  var defaultLabelHoverColor: js.UndefOr[String] = js.undefined
-  var defaultLabelSize: js.UndefOr[String] = js.undefined
-  var defaultNodeBorderColor: js.UndefOr[String] = js.undefined
-  var defaultNodeColor: js.UndefOr[String] = js.undefined
-  var defaultNodeHoverColor: js.UndefOr[String] = js.undefined
+  var clone_FSettings: js.UndefOr[Boolean] = js.native
+  var defaultEdgeColor: js.UndefOr[String] = js.native
+  var defaultEdgeHoverColor: js.UndefOr[String] = js.native
+  var defaultEdgeType: js.UndefOr[String] = js.native
+  var defaultHoverLabelBGColor: js.UndefOr[String] = js.native
+  var defaultLabelColor: js.UndefOr[String] = js.native
+  var defaultLabelHoverColor: js.UndefOr[String] = js.native
+  var defaultLabelSize: js.UndefOr[String] = js.native
+  var defaultNodeBorderColor: js.UndefOr[String] = js.native
+  var defaultNodeColor: js.UndefOr[String] = js.native
+  var defaultNodeHoverColor: js.UndefOr[String] = js.native
   // Renderers settings
-  var defaultNodeType: js.UndefOr[String] = js.undefined
-  var doubleClickEnabled: js.UndefOr[Boolean] = js.undefined
-  var doubleClickTimeout: js.UndefOr[Double] = js.undefined
-  var doubleClickZoomDuration: js.UndefOr[Double] = js.undefined
-  var doubleClickZoomingRatio: js.UndefOr[Double] = js.undefined
-  var doubleTapTimeout: js.UndefOr[Double] = js.undefined
-  var dragTimeout: js.UndefOr[Double] = js.undefined
-  var drawEdges: js.UndefOr[Boolean] = js.undefined
+  var defaultNodeType: js.UndefOr[String] = js.native
+  var doubleClickEnabled: js.UndefOr[Boolean] = js.native
+  var doubleClickTimeout: js.UndefOr[Double] = js.native
+  var doubleClickZoomDuration: js.UndefOr[Double] = js.native
+  var doubleClickZoomingRatio: js.UndefOr[Double] = js.native
+  var doubleTapTimeout: js.UndefOr[Double] = js.native
+  var dragTimeout: js.UndefOr[Double] = js.native
+  var drawEdges: js.UndefOr[Boolean] = js.native
   // Draw settings for labels, edges, and nodes
-  var drawLabels: js.UndefOr[Boolean] = js.undefined
-  var drawNodes: js.UndefOr[Boolean] = js.undefined
-  var edgeColor: js.UndefOr[String] = js.undefined
+  var drawLabels: js.UndefOr[Boolean] = js.native
+  var drawNodes: js.UndefOr[Boolean] = js.native
+  var edgeColor: js.UndefOr[String] = js.native
   // hovered edge customizations
-  var edgeHoverColor: js.UndefOr[String] = js.undefined
-  var edgeHoverExtremities: js.UndefOr[Boolean] = js.undefined
-  var edgeHoverPrecision: js.UndefOr[Double] = js.undefined
-  var edgeHoverSizeRatio: js.UndefOr[Double] = js.undefined
-  var edgesPowRatio: js.UndefOr[Double] = js.undefined
-  var enableCamera: js.UndefOr[Boolean] = js.undefined
-  var enableEdgeHovering: js.UndefOr[Boolean] = js.undefined
-  var enableHovering: js.UndefOr[Boolean] = js.undefined
-  var eventsEnabled: js.UndefOr[Boolean] = js.undefined
-  var font: js.UndefOr[String] = js.undefined
-  var fontStyle: js.UndefOr[String] = js.undefined
-  var hideEdgesOnMove: js.UndefOr[Boolean] = js.undefined
-  var hoverFont: js.UndefOr[Double] = js.undefined
-  var hoverFontStyle: js.UndefOr[String] = js.undefined
-  var immutable: js.UndefOr[Boolean] = js.undefined
-  var labelAlignment: js.UndefOr[String] = js.undefined
-  var labelColor: js.UndefOr[String] = js.undefined
-  var labelHoverBGColor: js.UndefOr[String] = js.undefined
-  var labelHoverColor: js.UndefOr[String] = js.undefined
-  var labelHoverShadow: js.UndefOr[String] = js.undefined
-  var labelHoverShadowColor: js.UndefOr[String] = js.undefined
-  var labelSize: js.UndefOr[String] = js.undefined
-  var labelSizeRatio: js.UndefOr[String] = js.undefined
-  var labelThreshold: js.UndefOr[Double] = js.undefined
-  var maxEdgeSize: js.UndefOr[Double] = js.undefined
-  var maxNodeSize: js.UndefOr[Double] = js.undefined
-  var minArrowSize: js.UndefOr[Double] = js.undefined
+  var edgeHoverColor: js.UndefOr[String] = js.native
+  var edgeHoverExtremities: js.UndefOr[Boolean] = js.native
+  var edgeHoverPrecision: js.UndefOr[Double] = js.native
+  var edgeHoverSizeRatio: js.UndefOr[Double] = js.native
+  var edgesPowRatio: js.UndefOr[Double] = js.native
+  var enableCamera: js.UndefOr[Boolean] = js.native
+  var enableEdgeHovering: js.UndefOr[Boolean] = js.native
+  var enableHovering: js.UndefOr[Boolean] = js.native
+  var eventsEnabled: js.UndefOr[Boolean] = js.native
+  var font: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.native
+  var hideEdgesOnMove: js.UndefOr[Boolean] = js.native
+  var hoverFont: js.UndefOr[Double] = js.native
+  var hoverFontStyle: js.UndefOr[String] = js.native
+  var immutable: js.UndefOr[Boolean] = js.native
+  var labelAlignment: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.native
+  var labelHoverBGColor: js.UndefOr[String] = js.native
+  var labelHoverColor: js.UndefOr[String] = js.native
+  var labelHoverShadow: js.UndefOr[String] = js.native
+  var labelHoverShadowColor: js.UndefOr[String] = js.native
+  var labelSize: js.UndefOr[String] = js.native
+  var labelSizeRatio: js.UndefOr[String] = js.native
+  var labelThreshold: js.UndefOr[Double] = js.native
+  var maxEdgeSize: js.UndefOr[Double] = js.native
+  var maxNodeSize: js.UndefOr[Double] = js.native
+  var minArrowSize: js.UndefOr[Double] = js.native
   // max/min node and edge size
-  var minEdgeSize: js.UndefOr[Double] = js.undefined
-  var minNodeSize: js.UndefOr[Double] = js.undefined
-  var mouseEnabled: js.UndefOr[Boolean] = js.undefined
-  var mouseInertiaDuration: js.UndefOr[Double] = js.undefined
-  var mouseInertiaRatio: js.UndefOr[Double] = js.undefined
-  var mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined
-  var mouseZoomDuration: js.UndefOr[Double] = js.undefined
-  var nodeHoverColor: js.UndefOr[String] = js.undefined
+  var minEdgeSize: js.UndefOr[Double] = js.native
+  var minNodeSize: js.UndefOr[Double] = js.native
+  var mouseEnabled: js.UndefOr[Boolean] = js.native
+  var mouseInertiaDuration: js.UndefOr[Double] = js.native
+  var mouseInertiaRatio: js.UndefOr[Double] = js.native
+  var mouseWheelEnabled: js.UndefOr[Boolean] = js.native
+  var mouseZoomDuration: js.UndefOr[Double] = js.native
+  var nodeHoverColor: js.UndefOr[String] = js.native
   // Camera settings
-  var nodesPowRatio: js.UndefOr[Double] = js.undefined
-  var rescaleIgnoreSize: js.UndefOr[Boolean] = js.undefined
+  var nodesPowRatio: js.UndefOr[Double] = js.native
+  var rescaleIgnoreSize: js.UndefOr[Boolean] = js.native
   // Rescale settings
-  var scalingMode: js.UndefOr[String] = js.undefined
-  var sideMargin: js.UndefOr[Double] = js.undefined
-  var singleHover: js.UndefOr[Boolean] = js.undefined
-  var skipErrors: js.UndefOr[Boolean] = js.undefined
+  var scalingMode: js.UndefOr[String] = js.native
+  var sideMargin: js.UndefOr[Double] = js.native
+  var singleHover: js.UndefOr[Boolean] = js.native
+  var skipErrors: js.UndefOr[Boolean] = js.native
   // Captor settings
-  var touchEnabled: js.UndefOr[Boolean] = js.undefined
-  var touchInertiaDuration: js.UndefOr[Double] = js.undefined
-  var touchInertiaRatio: js.UndefOr[Double] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
-  var webglEdgesBatchSize: js.UndefOr[Double] = js.undefined
-  var webglOversamplingRatio: js.UndefOr[Double] = js.undefined
-  var zoomMax: js.UndefOr[Double] = js.undefined
-  var zoomMin: js.UndefOr[Double] = js.undefined
-  var zoomingRatio: js.UndefOr[Double] = js.undefined
+  var touchEnabled: js.UndefOr[Boolean] = js.native
+  var touchInertiaDuration: js.UndefOr[Double] = js.native
+  var touchInertiaRatio: js.UndefOr[Double] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
+  var webglEdgesBatchSize: js.UndefOr[Double] = js.native
+  var webglOversamplingRatio: js.UndefOr[Double] = js.native
+  var zoomMax: js.UndefOr[Double] = js.native
+  var zoomMin: js.UndefOr[Double] = js.native
+  var zoomingRatio: js.UndefOr[Double] = js.native
 }
 
 object Settings {
   @scala.inline
-  def apply(
-    animationsTime: js.UndefOr[Double] = js.undefined,
-    autoRescale: js.Any = null,
-    autoResize: js.UndefOr[Boolean] = js.undefined,
-    batchEdgesDrawing: js.UndefOr[Boolean] = js.undefined,
-    borderSize: js.UndefOr[Double] = js.undefined,
-    canvasEdgesBatchSize: js.UndefOr[Double] = js.undefined,
-    clone: js.UndefOr[Boolean] = js.undefined,
-    defaultEdgeColor: String = null,
-    defaultEdgeHoverColor: String = null,
-    defaultEdgeType: String = null,
-    defaultHoverLabelBGColor: String = null,
-    defaultLabelColor: String = null,
-    defaultLabelHoverColor: String = null,
-    defaultLabelSize: String = null,
-    defaultNodeBorderColor: String = null,
-    defaultNodeColor: String = null,
-    defaultNodeHoverColor: String = null,
-    defaultNodeType: String = null,
-    doubleClickEnabled: js.UndefOr[Boolean] = js.undefined,
-    doubleClickTimeout: js.UndefOr[Double] = js.undefined,
-    doubleClickZoomDuration: js.UndefOr[Double] = js.undefined,
-    doubleClickZoomingRatio: js.UndefOr[Double] = js.undefined,
-    doubleTapTimeout: js.UndefOr[Double] = js.undefined,
-    dragTimeout: js.UndefOr[Double] = js.undefined,
-    drawEdges: js.UndefOr[Boolean] = js.undefined,
-    drawLabels: js.UndefOr[Boolean] = js.undefined,
-    drawNodes: js.UndefOr[Boolean] = js.undefined,
-    edgeColor: String = null,
-    edgeHoverColor: String = null,
-    edgeHoverExtremities: js.UndefOr[Boolean] = js.undefined,
-    edgeHoverPrecision: js.UndefOr[Double] = js.undefined,
-    edgeHoverSizeRatio: js.UndefOr[Double] = js.undefined,
-    edgesPowRatio: js.UndefOr[Double] = js.undefined,
-    enableCamera: js.UndefOr[Boolean] = js.undefined,
-    enableEdgeHovering: js.UndefOr[Boolean] = js.undefined,
-    enableHovering: js.UndefOr[Boolean] = js.undefined,
-    eventsEnabled: js.UndefOr[Boolean] = js.undefined,
-    font: String = null,
-    fontStyle: String = null,
-    hideEdgesOnMove: js.UndefOr[Boolean] = js.undefined,
-    hoverFont: js.UndefOr[Double] = js.undefined,
-    hoverFontStyle: String = null,
-    immutable: js.UndefOr[Boolean] = js.undefined,
-    labelAlignment: String = null,
-    labelColor: String = null,
-    labelHoverBGColor: String = null,
-    labelHoverColor: String = null,
-    labelHoverShadow: String = null,
-    labelHoverShadowColor: String = null,
-    labelSize: String = null,
-    labelSizeRatio: String = null,
-    labelThreshold: js.UndefOr[Double] = js.undefined,
-    maxEdgeSize: js.UndefOr[Double] = js.undefined,
-    maxNodeSize: js.UndefOr[Double] = js.undefined,
-    minArrowSize: js.UndefOr[Double] = js.undefined,
-    minEdgeSize: js.UndefOr[Double] = js.undefined,
-    minNodeSize: js.UndefOr[Double] = js.undefined,
-    mouseEnabled: js.UndefOr[Boolean] = js.undefined,
-    mouseInertiaDuration: js.UndefOr[Double] = js.undefined,
-    mouseInertiaRatio: js.UndefOr[Double] = js.undefined,
-    mouseWheelEnabled: js.UndefOr[Boolean] = js.undefined,
-    mouseZoomDuration: js.UndefOr[Double] = js.undefined,
-    nodeHoverColor: String = null,
-    nodesPowRatio: js.UndefOr[Double] = js.undefined,
-    rescaleIgnoreSize: js.UndefOr[Boolean] = js.undefined,
-    scalingMode: String = null,
-    sideMargin: js.UndefOr[Double] = js.undefined,
-    singleHover: js.UndefOr[Boolean] = js.undefined,
-    skipErrors: js.UndefOr[Boolean] = js.undefined,
-    touchEnabled: js.UndefOr[Boolean] = js.undefined,
-    touchInertiaDuration: js.UndefOr[Double] = js.undefined,
-    touchInertiaRatio: js.UndefOr[Double] = js.undefined,
-    verbose: js.UndefOr[Boolean] = js.undefined,
-    webglEdgesBatchSize: js.UndefOr[Double] = js.undefined,
-    webglOversamplingRatio: js.UndefOr[Double] = js.undefined,
-    zoomMax: js.UndefOr[Double] = js.undefined,
-    zoomMin: js.UndefOr[Double] = js.undefined,
-    zoomingRatio: js.UndefOr[Double] = js.undefined
-  ): Settings = {
+  def apply(): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animationsTime)) __obj.updateDynamic("animationsTime")(animationsTime.get.asInstanceOf[js.Any])
-    if (autoRescale != null) __obj.updateDynamic("autoRescale")(autoRescale.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchEdgesDrawing)) __obj.updateDynamic("batchEdgesDrawing")(batchEdgesDrawing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderSize)) __obj.updateDynamic("borderSize")(borderSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(canvasEdgesBatchSize)) __obj.updateDynamic("canvasEdgesBatchSize")(canvasEdgesBatchSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone.get.asInstanceOf[js.Any])
-    if (defaultEdgeColor != null) __obj.updateDynamic("defaultEdgeColor")(defaultEdgeColor.asInstanceOf[js.Any])
-    if (defaultEdgeHoverColor != null) __obj.updateDynamic("defaultEdgeHoverColor")(defaultEdgeHoverColor.asInstanceOf[js.Any])
-    if (defaultEdgeType != null) __obj.updateDynamic("defaultEdgeType")(defaultEdgeType.asInstanceOf[js.Any])
-    if (defaultHoverLabelBGColor != null) __obj.updateDynamic("defaultHoverLabelBGColor")(defaultHoverLabelBGColor.asInstanceOf[js.Any])
-    if (defaultLabelColor != null) __obj.updateDynamic("defaultLabelColor")(defaultLabelColor.asInstanceOf[js.Any])
-    if (defaultLabelHoverColor != null) __obj.updateDynamic("defaultLabelHoverColor")(defaultLabelHoverColor.asInstanceOf[js.Any])
-    if (defaultLabelSize != null) __obj.updateDynamic("defaultLabelSize")(defaultLabelSize.asInstanceOf[js.Any])
-    if (defaultNodeBorderColor != null) __obj.updateDynamic("defaultNodeBorderColor")(defaultNodeBorderColor.asInstanceOf[js.Any])
-    if (defaultNodeColor != null) __obj.updateDynamic("defaultNodeColor")(defaultNodeColor.asInstanceOf[js.Any])
-    if (defaultNodeHoverColor != null) __obj.updateDynamic("defaultNodeHoverColor")(defaultNodeHoverColor.asInstanceOf[js.Any])
-    if (defaultNodeType != null) __obj.updateDynamic("defaultNodeType")(defaultNodeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickEnabled)) __obj.updateDynamic("doubleClickEnabled")(doubleClickEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickTimeout)) __obj.updateDynamic("doubleClickTimeout")(doubleClickTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoomDuration)) __obj.updateDynamic("doubleClickZoomDuration")(doubleClickZoomDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoomingRatio)) __obj.updateDynamic("doubleClickZoomingRatio")(doubleClickZoomingRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleTapTimeout)) __obj.updateDynamic("doubleTapTimeout")(doubleTapTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragTimeout)) __obj.updateDynamic("dragTimeout")(dragTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawEdges)) __obj.updateDynamic("drawEdges")(drawEdges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLabels)) __obj.updateDynamic("drawLabels")(drawLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawNodes)) __obj.updateDynamic("drawNodes")(drawNodes.get.asInstanceOf[js.Any])
-    if (edgeColor != null) __obj.updateDynamic("edgeColor")(edgeColor.asInstanceOf[js.Any])
-    if (edgeHoverColor != null) __obj.updateDynamic("edgeHoverColor")(edgeHoverColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeHoverExtremities)) __obj.updateDynamic("edgeHoverExtremities")(edgeHoverExtremities.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeHoverPrecision)) __obj.updateDynamic("edgeHoverPrecision")(edgeHoverPrecision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgeHoverSizeRatio)) __obj.updateDynamic("edgeHoverSizeRatio")(edgeHoverSizeRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(edgesPowRatio)) __obj.updateDynamic("edgesPowRatio")(edgesPowRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCamera)) __obj.updateDynamic("enableCamera")(enableCamera.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableEdgeHovering)) __obj.updateDynamic("enableEdgeHovering")(enableEdgeHovering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableHovering)) __obj.updateDynamic("enableHovering")(enableHovering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.get.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEdgesOnMove)) __obj.updateDynamic("hideEdgesOnMove")(hideEdgesOnMove.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverFont)) __obj.updateDynamic("hoverFont")(hoverFont.get.asInstanceOf[js.Any])
-    if (hoverFontStyle != null) __obj.updateDynamic("hoverFontStyle")(hoverFontStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(immutable)) __obj.updateDynamic("immutable")(immutable.get.asInstanceOf[js.Any])
-    if (labelAlignment != null) __obj.updateDynamic("labelAlignment")(labelAlignment.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelHoverBGColor != null) __obj.updateDynamic("labelHoverBGColor")(labelHoverBGColor.asInstanceOf[js.Any])
-    if (labelHoverColor != null) __obj.updateDynamic("labelHoverColor")(labelHoverColor.asInstanceOf[js.Any])
-    if (labelHoverShadow != null) __obj.updateDynamic("labelHoverShadow")(labelHoverShadow.asInstanceOf[js.Any])
-    if (labelHoverShadowColor != null) __obj.updateDynamic("labelHoverShadowColor")(labelHoverShadowColor.asInstanceOf[js.Any])
-    if (labelSize != null) __obj.updateDynamic("labelSize")(labelSize.asInstanceOf[js.Any])
-    if (labelSizeRatio != null) __obj.updateDynamic("labelSizeRatio")(labelSizeRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelThreshold)) __obj.updateDynamic("labelThreshold")(labelThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxEdgeSize)) __obj.updateDynamic("maxEdgeSize")(maxEdgeSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxNodeSize)) __obj.updateDynamic("maxNodeSize")(maxNodeSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minArrowSize)) __obj.updateDynamic("minArrowSize")(minArrowSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minEdgeSize)) __obj.updateDynamic("minEdgeSize")(minEdgeSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minNodeSize)) __obj.updateDynamic("minNodeSize")(minNodeSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseEnabled)) __obj.updateDynamic("mouseEnabled")(mouseEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseInertiaDuration)) __obj.updateDynamic("mouseInertiaDuration")(mouseInertiaDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseInertiaRatio)) __obj.updateDynamic("mouseInertiaRatio")(mouseInertiaRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseWheelEnabled)) __obj.updateDynamic("mouseWheelEnabled")(mouseWheelEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseZoomDuration)) __obj.updateDynamic("mouseZoomDuration")(mouseZoomDuration.get.asInstanceOf[js.Any])
-    if (nodeHoverColor != null) __obj.updateDynamic("nodeHoverColor")(nodeHoverColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodesPowRatio)) __obj.updateDynamic("nodesPowRatio")(nodesPowRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rescaleIgnoreSize)) __obj.updateDynamic("rescaleIgnoreSize")(rescaleIgnoreSize.get.asInstanceOf[js.Any])
-    if (scalingMode != null) __obj.updateDynamic("scalingMode")(scalingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(sideMargin)) __obj.updateDynamic("sideMargin")(sideMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleHover)) __obj.updateDynamic("singleHover")(singleHover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipErrors)) __obj.updateDynamic("skipErrors")(skipErrors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchInertiaDuration)) __obj.updateDynamic("touchInertiaDuration")(touchInertiaDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchInertiaRatio)) __obj.updateDynamic("touchInertiaRatio")(touchInertiaRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(webglEdgesBatchSize)) __obj.updateDynamic("webglEdgesBatchSize")(webglEdgesBatchSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(webglOversamplingRatio)) __obj.updateDynamic("webglOversamplingRatio")(webglOversamplingRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomMax)) __obj.updateDynamic("zoomMax")(zoomMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomMin)) __obj.updateDynamic("zoomMin")(zoomMin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomingRatio)) __obj.updateDynamic("zoomingRatio")(zoomingRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  @scala.inline
+  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationsTime(value: Double): Self = this.set("animationsTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationsTime: Self = this.set("animationsTime", js.undefined)
+    @scala.inline
+    def setAutoRescale(value: js.Any): Self = this.set("autoRescale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRescale: Self = this.set("autoRescale", js.undefined)
+    @scala.inline
+    def setAutoResize(value: Boolean): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    @scala.inline
+    def setBatchEdgesDrawing(value: Boolean): Self = this.set("batchEdgesDrawing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchEdgesDrawing: Self = this.set("batchEdgesDrawing", js.undefined)
+    @scala.inline
+    def setBorderSize(value: Double): Self = this.set("borderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderSize: Self = this.set("borderSize", js.undefined)
+    @scala.inline
+    def setCanvasEdgesBatchSize(value: Double): Self = this.set("canvasEdgesBatchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanvasEdgesBatchSize: Self = this.set("canvasEdgesBatchSize", js.undefined)
+    @scala.inline
+    def setClone(value: Boolean): Self = this.set("clone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClone: Self = this.set("clone", js.undefined)
+    @scala.inline
+    def setDefaultEdgeColor(value: String): Self = this.set("defaultEdgeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEdgeColor: Self = this.set("defaultEdgeColor", js.undefined)
+    @scala.inline
+    def setDefaultEdgeHoverColor(value: String): Self = this.set("defaultEdgeHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEdgeHoverColor: Self = this.set("defaultEdgeHoverColor", js.undefined)
+    @scala.inline
+    def setDefaultEdgeType(value: String): Self = this.set("defaultEdgeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEdgeType: Self = this.set("defaultEdgeType", js.undefined)
+    @scala.inline
+    def setDefaultHoverLabelBGColor(value: String): Self = this.set("defaultHoverLabelBGColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultHoverLabelBGColor: Self = this.set("defaultHoverLabelBGColor", js.undefined)
+    @scala.inline
+    def setDefaultLabelColor(value: String): Self = this.set("defaultLabelColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLabelColor: Self = this.set("defaultLabelColor", js.undefined)
+    @scala.inline
+    def setDefaultLabelHoverColor(value: String): Self = this.set("defaultLabelHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLabelHoverColor: Self = this.set("defaultLabelHoverColor", js.undefined)
+    @scala.inline
+    def setDefaultLabelSize(value: String): Self = this.set("defaultLabelSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLabelSize: Self = this.set("defaultLabelSize", js.undefined)
+    @scala.inline
+    def setDefaultNodeBorderColor(value: String): Self = this.set("defaultNodeBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultNodeBorderColor: Self = this.set("defaultNodeBorderColor", js.undefined)
+    @scala.inline
+    def setDefaultNodeColor(value: String): Self = this.set("defaultNodeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultNodeColor: Self = this.set("defaultNodeColor", js.undefined)
+    @scala.inline
+    def setDefaultNodeHoverColor(value: String): Self = this.set("defaultNodeHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultNodeHoverColor: Self = this.set("defaultNodeHoverColor", js.undefined)
+    @scala.inline
+    def setDefaultNodeType(value: String): Self = this.set("defaultNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultNodeType: Self = this.set("defaultNodeType", js.undefined)
+    @scala.inline
+    def setDoubleClickEnabled(value: Boolean): Self = this.set("doubleClickEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleClickEnabled: Self = this.set("doubleClickEnabled", js.undefined)
+    @scala.inline
+    def setDoubleClickTimeout(value: Double): Self = this.set("doubleClickTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleClickTimeout: Self = this.set("doubleClickTimeout", js.undefined)
+    @scala.inline
+    def setDoubleClickZoomDuration(value: Double): Self = this.set("doubleClickZoomDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleClickZoomDuration: Self = this.set("doubleClickZoomDuration", js.undefined)
+    @scala.inline
+    def setDoubleClickZoomingRatio(value: Double): Self = this.set("doubleClickZoomingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleClickZoomingRatio: Self = this.set("doubleClickZoomingRatio", js.undefined)
+    @scala.inline
+    def setDoubleTapTimeout(value: Double): Self = this.set("doubleTapTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleTapTimeout: Self = this.set("doubleTapTimeout", js.undefined)
+    @scala.inline
+    def setDragTimeout(value: Double): Self = this.set("dragTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragTimeout: Self = this.set("dragTimeout", js.undefined)
+    @scala.inline
+    def setDrawEdges(value: Boolean): Self = this.set("drawEdges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawEdges: Self = this.set("drawEdges", js.undefined)
+    @scala.inline
+    def setDrawLabels(value: Boolean): Self = this.set("drawLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawLabels: Self = this.set("drawLabels", js.undefined)
+    @scala.inline
+    def setDrawNodes(value: Boolean): Self = this.set("drawNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawNodes: Self = this.set("drawNodes", js.undefined)
+    @scala.inline
+    def setEdgeColor(value: String): Self = this.set("edgeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeColor: Self = this.set("edgeColor", js.undefined)
+    @scala.inline
+    def setEdgeHoverColor(value: String): Self = this.set("edgeHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeHoverColor: Self = this.set("edgeHoverColor", js.undefined)
+    @scala.inline
+    def setEdgeHoverExtremities(value: Boolean): Self = this.set("edgeHoverExtremities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeHoverExtremities: Self = this.set("edgeHoverExtremities", js.undefined)
+    @scala.inline
+    def setEdgeHoverPrecision(value: Double): Self = this.set("edgeHoverPrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeHoverPrecision: Self = this.set("edgeHoverPrecision", js.undefined)
+    @scala.inline
+    def setEdgeHoverSizeRatio(value: Double): Self = this.set("edgeHoverSizeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeHoverSizeRatio: Self = this.set("edgeHoverSizeRatio", js.undefined)
+    @scala.inline
+    def setEdgesPowRatio(value: Double): Self = this.set("edgesPowRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgesPowRatio: Self = this.set("edgesPowRatio", js.undefined)
+    @scala.inline
+    def setEnableCamera(value: Boolean): Self = this.set("enableCamera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCamera: Self = this.set("enableCamera", js.undefined)
+    @scala.inline
+    def setEnableEdgeHovering(value: Boolean): Self = this.set("enableEdgeHovering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableEdgeHovering: Self = this.set("enableEdgeHovering", js.undefined)
+    @scala.inline
+    def setEnableHovering(value: Boolean): Self = this.set("enableHovering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableHovering: Self = this.set("enableHovering", js.undefined)
+    @scala.inline
+    def setEventsEnabled(value: Boolean): Self = this.set("eventsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventsEnabled: Self = this.set("eventsEnabled", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setHideEdgesOnMove(value: Boolean): Self = this.set("hideEdgesOnMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideEdgesOnMove: Self = this.set("hideEdgesOnMove", js.undefined)
+    @scala.inline
+    def setHoverFont(value: Double): Self = this.set("hoverFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverFont: Self = this.set("hoverFont", js.undefined)
+    @scala.inline
+    def setHoverFontStyle(value: String): Self = this.set("hoverFontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverFontStyle: Self = this.set("hoverFontStyle", js.undefined)
+    @scala.inline
+    def setImmutable(value: Boolean): Self = this.set("immutable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImmutable: Self = this.set("immutable", js.undefined)
+    @scala.inline
+    def setLabelAlignment(value: String): Self = this.set("labelAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAlignment: Self = this.set("labelAlignment", js.undefined)
+    @scala.inline
+    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    @scala.inline
+    def setLabelHoverBGColor(value: String): Self = this.set("labelHoverBGColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHoverBGColor: Self = this.set("labelHoverBGColor", js.undefined)
+    @scala.inline
+    def setLabelHoverColor(value: String): Self = this.set("labelHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHoverColor: Self = this.set("labelHoverColor", js.undefined)
+    @scala.inline
+    def setLabelHoverShadow(value: String): Self = this.set("labelHoverShadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHoverShadow: Self = this.set("labelHoverShadow", js.undefined)
+    @scala.inline
+    def setLabelHoverShadowColor(value: String): Self = this.set("labelHoverShadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelHoverShadowColor: Self = this.set("labelHoverShadowColor", js.undefined)
+    @scala.inline
+    def setLabelSize(value: String): Self = this.set("labelSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSize: Self = this.set("labelSize", js.undefined)
+    @scala.inline
+    def setLabelSizeRatio(value: String): Self = this.set("labelSizeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelSizeRatio: Self = this.set("labelSizeRatio", js.undefined)
+    @scala.inline
+    def setLabelThreshold(value: Double): Self = this.set("labelThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelThreshold: Self = this.set("labelThreshold", js.undefined)
+    @scala.inline
+    def setMaxEdgeSize(value: Double): Self = this.set("maxEdgeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEdgeSize: Self = this.set("maxEdgeSize", js.undefined)
+    @scala.inline
+    def setMaxNodeSize(value: Double): Self = this.set("maxNodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxNodeSize: Self = this.set("maxNodeSize", js.undefined)
+    @scala.inline
+    def setMinArrowSize(value: Double): Self = this.set("minArrowSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinArrowSize: Self = this.set("minArrowSize", js.undefined)
+    @scala.inline
+    def setMinEdgeSize(value: Double): Self = this.set("minEdgeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinEdgeSize: Self = this.set("minEdgeSize", js.undefined)
+    @scala.inline
+    def setMinNodeSize(value: Double): Self = this.set("minNodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinNodeSize: Self = this.set("minNodeSize", js.undefined)
+    @scala.inline
+    def setMouseEnabled(value: Boolean): Self = this.set("mouseEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseEnabled: Self = this.set("mouseEnabled", js.undefined)
+    @scala.inline
+    def setMouseInertiaDuration(value: Double): Self = this.set("mouseInertiaDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseInertiaDuration: Self = this.set("mouseInertiaDuration", js.undefined)
+    @scala.inline
+    def setMouseInertiaRatio(value: Double): Self = this.set("mouseInertiaRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseInertiaRatio: Self = this.set("mouseInertiaRatio", js.undefined)
+    @scala.inline
+    def setMouseWheelEnabled(value: Boolean): Self = this.set("mouseWheelEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseWheelEnabled: Self = this.set("mouseWheelEnabled", js.undefined)
+    @scala.inline
+    def setMouseZoomDuration(value: Double): Self = this.set("mouseZoomDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseZoomDuration: Self = this.set("mouseZoomDuration", js.undefined)
+    @scala.inline
+    def setNodeHoverColor(value: String): Self = this.set("nodeHoverColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeHoverColor: Self = this.set("nodeHoverColor", js.undefined)
+    @scala.inline
+    def setNodesPowRatio(value: Double): Self = this.set("nodesPowRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodesPowRatio: Self = this.set("nodesPowRatio", js.undefined)
+    @scala.inline
+    def setRescaleIgnoreSize(value: Boolean): Self = this.set("rescaleIgnoreSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRescaleIgnoreSize: Self = this.set("rescaleIgnoreSize", js.undefined)
+    @scala.inline
+    def setScalingMode(value: String): Self = this.set("scalingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingMode: Self = this.set("scalingMode", js.undefined)
+    @scala.inline
+    def setSideMargin(value: Double): Self = this.set("sideMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSideMargin: Self = this.set("sideMargin", js.undefined)
+    @scala.inline
+    def setSingleHover(value: Boolean): Self = this.set("singleHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleHover: Self = this.set("singleHover", js.undefined)
+    @scala.inline
+    def setSkipErrors(value: Boolean): Self = this.set("skipErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipErrors: Self = this.set("skipErrors", js.undefined)
+    @scala.inline
+    def setTouchEnabled(value: Boolean): Self = this.set("touchEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchEnabled: Self = this.set("touchEnabled", js.undefined)
+    @scala.inline
+    def setTouchInertiaDuration(value: Double): Self = this.set("touchInertiaDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchInertiaDuration: Self = this.set("touchInertiaDuration", js.undefined)
+    @scala.inline
+    def setTouchInertiaRatio(value: Double): Self = this.set("touchInertiaRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchInertiaRatio: Self = this.set("touchInertiaRatio", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+    @scala.inline
+    def setWebglEdgesBatchSize(value: Double): Self = this.set("webglEdgesBatchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebglEdgesBatchSize: Self = this.set("webglEdgesBatchSize", js.undefined)
+    @scala.inline
+    def setWebglOversamplingRatio(value: Double): Self = this.set("webglOversamplingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebglOversamplingRatio: Self = this.set("webglOversamplingRatio", js.undefined)
+    @scala.inline
+    def setZoomMax(value: Double): Self = this.set("zoomMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomMax: Self = this.set("zoomMax", js.undefined)
+    @scala.inline
+    def setZoomMin(value: Double): Self = this.set("zoomMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomMin: Self = this.set("zoomMin", js.undefined)
+    @scala.inline
+    def setZoomingRatio(value: Double): Self = this.set("zoomingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomingRatio: Self = this.set("zoomingRatio", js.undefined)
+  }
+  
 }
 

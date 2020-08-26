@@ -5,32 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormDataOptions extends FormOptions {
-  var autoClean: js.UndefOr[Boolean] = js.undefined
+  var autoClean: js.UndefOr[Boolean] = js.native
 }
 
 object FormDataOptions {
   @scala.inline
-  def apply(
-    autoClean: js.UndefOr[Boolean] = js.undefined,
-    autoFields: js.UndefOr[Boolean] = js.undefined,
-    autoFiles: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    maxFields: js.UndefOr[Double] = js.undefined,
-    maxFieldsSize: js.UndefOr[Double] = js.undefined,
-    maxFilesSize: js.UndefOr[Double] = js.undefined,
-    uploadDir: String = null
-  ): FormDataOptions = {
+  def apply(): FormDataOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClean)) __obj.updateDynamic("autoClean")(autoClean.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFields)) __obj.updateDynamic("autoFields")(autoFields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFiles)) __obj.updateDynamic("autoFiles")(autoFiles.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFields)) __obj.updateDynamic("maxFields")(maxFields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFieldsSize)) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFilesSize)) __obj.updateDynamic("maxFilesSize")(maxFilesSize.get.asInstanceOf[js.Any])
-    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormDataOptions]
   }
+  @scala.inline
+  implicit class FormDataOptionsOps[Self <: FormDataOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoClean(value: Boolean): Self = this.set("autoClean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoClean: Self = this.set("autoClean", js.undefined)
+  }
+  
 }
 

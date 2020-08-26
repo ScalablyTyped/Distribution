@@ -94,34 +94,80 @@ trait CreateCloudFormationChangeSetRequest extends js.Object {
 
 object CreateCloudFormationChangeSetRequest {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    StackName: string,
-    Capabilities: listOfString = null,
-    ChangeSetName: string = null,
-    ClientToken: string = null,
-    Description: string = null,
-    NotificationArns: listOfString = null,
-    ParameterOverrides: listOfParameterValue = null,
-    ResourceTypes: listOfString = null,
-    RollbackConfiguration: RollbackConfiguration = null,
-    SemanticVersion: string = null,
-    Tags: listOfTag = null,
-    TemplateId: string = null
-  ): CreateCloudFormationChangeSetRequest = {
+  def apply(ApplicationId: string, StackName: string): CreateCloudFormationChangeSetRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (NotificationArns != null) __obj.updateDynamic("NotificationArns")(NotificationArns.asInstanceOf[js.Any])
-    if (ParameterOverrides != null) __obj.updateDynamic("ParameterOverrides")(ParameterOverrides.asInstanceOf[js.Any])
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
-    if (RollbackConfiguration != null) __obj.updateDynamic("RollbackConfiguration")(RollbackConfiguration.asInstanceOf[js.Any])
-    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCloudFormationChangeSetRequest]
   }
+  @scala.inline
+  implicit class CreateCloudFormationChangeSetRequestOps[Self <: CreateCloudFormationChangeSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: string): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapabilitiesVarargs(value: string*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: listOfString): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setChangeSetName(value: string): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    @scala.inline
+    def setClientToken(value: string): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setNotificationArnsVarargs(value: string*): Self = this.set("NotificationArns", js.Array(value :_*))
+    @scala.inline
+    def setNotificationArns(value: listOfString): Self = this.set("NotificationArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationArns: Self = this.set("NotificationArns", js.undefined)
+    @scala.inline
+    def setParameterOverridesVarargs(value: ParameterValue*): Self = this.set("ParameterOverrides", js.Array(value :_*))
+    @scala.inline
+    def setParameterOverrides(value: listOfParameterValue): Self = this.set("ParameterOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterOverrides: Self = this.set("ParameterOverrides", js.undefined)
+    @scala.inline
+    def setResourceTypesVarargs(value: string*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: listOfString): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    @scala.inline
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    @scala.inline
+    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemanticVersion: Self = this.set("SemanticVersion", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: listOfTag): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTemplateId(value: string): Self = this.set("TemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateId: Self = this.set("TemplateId", js.undefined)
+  }
+  
 }
 

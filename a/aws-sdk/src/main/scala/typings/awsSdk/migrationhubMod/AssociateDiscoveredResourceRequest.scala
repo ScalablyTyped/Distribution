@@ -29,12 +29,33 @@ object AssociateDiscoveredResourceRequest {
   def apply(
     DiscoveredResource: DiscoveredResource,
     MigrationTaskName: MigrationTaskName,
-    ProgressUpdateStream: ProgressUpdateStream,
-    DryRun: js.UndefOr[DryRun] = js.undefined
+    ProgressUpdateStream: ProgressUpdateStream
   ): AssociateDiscoveredResourceRequest = {
     val __obj = js.Dynamic.literal(DiscoveredResource = DiscoveredResource.asInstanceOf[js.Any], MigrationTaskName = MigrationTaskName.asInstanceOf[js.Any], ProgressUpdateStream = ProgressUpdateStream.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateDiscoveredResourceRequest]
   }
+  @scala.inline
+  implicit class AssociateDiscoveredResourceRequestOps[Self <: AssociateDiscoveredResourceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiscoveredResource(value: DiscoveredResource): Self = this.set("DiscoveredResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMigrationTaskName(value: MigrationTaskName): Self = this.set("MigrationTaskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgressUpdateStream(value: ProgressUpdateStream): Self = this.set("ProgressUpdateStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: DryRun): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

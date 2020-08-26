@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "BoundElementProperty")
 @js.native
 class BoundElementProperty protected ()
-  extends typings.angularCompiler.publicApiMod.BoundElementProperty {
+  extends typings.angularCompiler.compilerMod.BoundElementProperty {
   def this(
     name: String,
     `type`: BindingType,

@@ -4,38 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PsbtInput extends PsbtInputUpdate {
-  var unknownKeyVals: js.UndefOr[js.Array[KeyValue]] = js.undefined
+  var unknownKeyVals: js.UndefOr[js.Array[KeyValue]] = js.native
 }
 
 object PsbtInput {
   @scala.inline
-  def apply(
-    bip32Derivation: js.Array[Bip32Derivation] = null,
-    finalScriptSig: FinalScriptSig = null,
-    finalScriptWitness: FinalScriptWitness = null,
-    nonWitnessUtxo: NonWitnessUtxo = null,
-    partialSig: js.Array[PartialSig] = null,
-    porCommitment: PorCommitment = null,
-    redeemScript: RedeemScript = null,
-    sighashType: js.UndefOr[SighashType] = js.undefined,
-    unknownKeyVals: js.Array[KeyValue] = null,
-    witnessScript: WitnessScript = null,
-    witnessUtxo: WitnessUtxo = null
-  ): PsbtInput = {
+  def apply(): PsbtInput = {
     val __obj = js.Dynamic.literal()
-    if (bip32Derivation != null) __obj.updateDynamic("bip32Derivation")(bip32Derivation.asInstanceOf[js.Any])
-    if (finalScriptSig != null) __obj.updateDynamic("finalScriptSig")(finalScriptSig.asInstanceOf[js.Any])
-    if (finalScriptWitness != null) __obj.updateDynamic("finalScriptWitness")(finalScriptWitness.asInstanceOf[js.Any])
-    if (nonWitnessUtxo != null) __obj.updateDynamic("nonWitnessUtxo")(nonWitnessUtxo.asInstanceOf[js.Any])
-    if (partialSig != null) __obj.updateDynamic("partialSig")(partialSig.asInstanceOf[js.Any])
-    if (porCommitment != null) __obj.updateDynamic("porCommitment")(porCommitment.asInstanceOf[js.Any])
-    if (redeemScript != null) __obj.updateDynamic("redeemScript")(redeemScript.asInstanceOf[js.Any])
-    if (!js.isUndefined(sighashType)) __obj.updateDynamic("sighashType")(sighashType.get.asInstanceOf[js.Any])
-    if (unknownKeyVals != null) __obj.updateDynamic("unknownKeyVals")(unknownKeyVals.asInstanceOf[js.Any])
-    if (witnessScript != null) __obj.updateDynamic("witnessScript")(witnessScript.asInstanceOf[js.Any])
-    if (witnessUtxo != null) __obj.updateDynamic("witnessUtxo")(witnessUtxo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PsbtInput]
   }
+  @scala.inline
+  implicit class PsbtInputOps[Self <: PsbtInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUnknownKeyValsVarargs(value: KeyValue*): Self = this.set("unknownKeyVals", js.Array(value :_*))
+    @scala.inline
+    def setUnknownKeyVals(value: js.Array[KeyValue]): Self = this.set("unknownKeyVals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnknownKeyVals: Self = this.set("unknownKeyVals", js.undefined)
+  }
+  
 }
 

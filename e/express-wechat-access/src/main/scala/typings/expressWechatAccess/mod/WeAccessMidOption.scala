@@ -4,28 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WeAccessMidOption extends js.Object {
-  var accessTokenUrl: js.UndefOr[String] = js.undefined
-  var appId: String
-  var appSecret: String
-  var https: js.UndefOr[Boolean] = js.undefined
-  var ticketUrl: js.UndefOr[String] = js.undefined
+  var accessTokenUrl: js.UndefOr[String] = js.native
+  var appId: String = js.native
+  var appSecret: String = js.native
+  var https: js.UndefOr[Boolean] = js.native
+  var ticketUrl: js.UndefOr[String] = js.native
 }
 
 object WeAccessMidOption {
   @scala.inline
-  def apply(
-    appId: String,
-    appSecret: String,
-    accessTokenUrl: String = null,
-    https: js.UndefOr[Boolean] = js.undefined,
-    ticketUrl: String = null
-  ): WeAccessMidOption = {
+  def apply(appId: String, appSecret: String): WeAccessMidOption = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], appSecret = appSecret.asInstanceOf[js.Any])
-    if (accessTokenUrl != null) __obj.updateDynamic("accessTokenUrl")(accessTokenUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.get.asInstanceOf[js.Any])
-    if (ticketUrl != null) __obj.updateDynamic("ticketUrl")(ticketUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeAccessMidOption]
   }
+  @scala.inline
+  implicit class WeAccessMidOptionOps[Self <: WeAccessMidOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppSecret(value: String): Self = this.set("appSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessTokenUrl(value: String): Self = this.set("accessTokenUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessTokenUrl: Self = this.set("accessTokenUrl", js.undefined)
+    @scala.inline
+    def setHttps(value: Boolean): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+    @scala.inline
+    def setTicketUrl(value: String): Self = this.set("ticketUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicketUrl: Self = this.set("ticketUrl", js.undefined)
+  }
+  
 }
 

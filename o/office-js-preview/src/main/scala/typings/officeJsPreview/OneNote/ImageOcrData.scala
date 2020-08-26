@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
+@js.native
 trait ImageOcrData extends js.Object {
   /**
     *
@@ -17,14 +18,14 @@ trait ImageOcrData extends js.Object {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ocrLanguageId: String
+  var ocrLanguageId: String = js.native
   /**
     *
     * Represents the text obtained by OCR of the image
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ocrText: String
+  var ocrText: String = js.native
 }
 
 object ImageOcrData {
@@ -33,5 +34,22 @@ object ImageOcrData {
     val __obj = js.Dynamic.literal(ocrLanguageId = ocrLanguageId.asInstanceOf[js.Any], ocrText = ocrText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOcrData]
   }
+  @scala.inline
+  implicit class ImageOcrDataOps[Self <: ImageOcrData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOcrLanguageId(value: String): Self = this.set("ocrLanguageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOcrText(value: String): Self = this.set("ocrText", value.asInstanceOf[js.Any])
+  }
+  
 }
 

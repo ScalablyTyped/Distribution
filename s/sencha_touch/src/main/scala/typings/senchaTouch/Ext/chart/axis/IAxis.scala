@@ -1,7 +1,6 @@
 package typings.senchaTouch.Ext.chart.axis
 
 import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.chart.IAbstractChart
 import typings.senchaTouch.Ext.mixin.IObservable
 import typings.senchaTouch.Ext.util.IMixedCollection
@@ -9,21 +8,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAxis extends IObservable {
   /** [Config Option] (Object) */
-  var background: js.UndefOr[js.Any] = js.undefined
+  var background: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Ext.chart.AbstractChart) */
-  var chart: js.UndefOr[IAbstractChart] = js.undefined
+  var chart: js.UndefOr[IAbstractChart] = js.native
   /** [Config Option] (Array) */
-  var fields: js.UndefOr[Array] = js.undefined
+  var fields: js.UndefOr[Array] = js.native
   /** [Method] Returns the value of background
     * @returns Object
     */
-  var getBackground: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBackground: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of chart
     * @returns Ext.chart.AbstractChart
     */
-  var getChart: js.UndefOr[js.Function0[IAbstractChart]] = js.undefined
+  var getChart: js.UndefOr[js.Function0[IAbstractChart]] = js.native
   /** [Method] Mapping data value into coordinate
     * @param value *
     * @param field String
@@ -39,125 +39,125 @@ trait IAxis extends IObservable {
       /* items */ js.UndefOr[IMixedCollection], 
       Double
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns the value of fields
     * @returns Array
     */
-  var getFields: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getFields: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the value of grid
     * @returns Object
     */
-  var getGrid: js.UndefOr[js.Function0[_]] = js.undefined
+  var getGrid: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of hidden
     * @returns Boolean
     */
-  var getHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getHidden: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of increment
     * @returns Number
     */
-  var getIncrement: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getIncrement: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of label
     * @returns Object
     */
-  var getLabel: js.UndefOr[js.Function0[_]] = js.undefined
+  var getLabel: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of labelInSpan
     * @returns Boolean
     */
-  var getLabelInSpan: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getLabelInSpan: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of layout
     * @returns Object|Ext.chart.axis.layout.Layout
     */
-  var getLayout: js.UndefOr[js.Function0[_]] = js.undefined
+  var getLayout: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of majorTickSteps
     * @returns Number
     */
-  var getMajorTickSteps: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMajorTickSteps: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of maxZoom
     * @returns Number
     */
-  var getMaxZoom: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMaxZoom: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of maximum
     * @returns Number
     */
-  var getMaximum: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMaximum: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minZoom
     * @returns Number
     */
-  var getMinZoom: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinZoom: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minimum
     * @returns Number
     */
-  var getMinimum: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinimum: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minorTickSteps
     * @returns Number
     */
-  var getMinorTickSteps: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinorTickSteps: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of needHighPrecision
     * @returns Boolean
     */
-  var getNeedHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getNeedHighPrecision: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of position
     * @returns String
     */
-  var getPosition: js.UndefOr[js.Function0[String]] = js.undefined
+  var getPosition: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Get the range derived from all the bound series
     * @returns Array
     */
-  var getRange: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getRange: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the value of renderer
     * @returns Function
     */
-  var getRenderer: js.UndefOr[js.Function0[_]] = js.undefined
+  var getRenderer: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of segmenter
     * @returns Object|Ext.chart.axis.segmenter.Segmenter
     */
-  var getSegmenter: js.UndefOr[js.Function0[_]] = js.undefined
+  var getSegmenter: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of style
     * @returns Object
     */
-  var getStyle: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStyle: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of title
     * @returns String|Object
     */
-  var getTitle: js.UndefOr[js.Function0[_]] = js.undefined
+  var getTitle: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of titleMargin
     * @returns Number
     */
-  var getTitleMargin: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getTitleMargin: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of visibleRange
     * @returns Array
     */
-  var getVisibleRange: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getVisibleRange: js.UndefOr[js.Function0[Array]] = js.native
   /** [Config Option] (Object) */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var hidden: js.UndefOr[Boolean] = js.undefined
+  var hidden: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var increment: js.UndefOr[Double] = js.undefined
+  var increment: js.UndefOr[Double] = js.native
   /** [Config Option] (Object) */
-  var label: js.UndefOr[js.Any] = js.undefined
+  var label: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Boolean) */
-  var labelInSpan: js.UndefOr[Boolean] = js.undefined
+  var labelInSpan: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Object|Ext.chart.axis.layout.Layout) */
-  var layout: js.UndefOr[js.Any] = js.undefined
+  var layout: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number) */
-  var majorTickSteps: js.UndefOr[Double] = js.undefined
+  var majorTickSteps: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var maxZoom: js.UndefOr[Double] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var maximum: js.UndefOr[Double] = js.undefined
+  var maximum: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minZoom: js.UndefOr[Double] = js.undefined
+  var minZoom: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minimum: js.UndefOr[Double] = js.undefined
+  var minimum: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minorTickSteps: js.UndefOr[Double] = js.undefined
+  var minorTickSteps: js.UndefOr[Double] = js.native
   /** [Config Option] (Boolean) */
-  var needHighPrecision: js.UndefOr[Boolean] = js.undefined
+  var needHighPrecision: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /** [Method] Invoked when data has changed  */
-  var processData: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var processData: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
     * @param events String/Array/Object Array of event names to relay.
@@ -166,366 +166,432 @@ trait IAxis extends IObservable {
   @JSName("relayEvents")
   var relayEvents_IAxis: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Invokes renderFrame on this axis s surface s  */
-  var renderFrame: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var renderFrame: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Function) */
-  var renderer: js.UndefOr[js.Any] = js.undefined
+  var renderer: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object|Ext.chart.axis.segmenter.Segmenter) */
-  var segmenter: js.UndefOr[js.Any] = js.undefined
+  var segmenter: js.UndefOr[js.Any] = js.native
   /** [Method] Sets the value of background
     * @param background Object The new value.
     */
-  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBackground: js.UndefOr[js.Function1[/* background */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of chart
     * @param chart Ext.chart.AbstractChart The new value.
     */
-  var setChart: js.UndefOr[js.Function1[/* chart */ js.UndefOr[IAbstractChart], Unit]] = js.undefined
+  var setChart: js.UndefOr[js.Function1[/* chart */ js.UndefOr[IAbstractChart], Unit]] = js.native
   /** [Method] Sets the value of fields
     * @param fields Array The new value.
     */
-  var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[Array], Unit]] = js.undefined
+  var setFields: js.UndefOr[js.Function1[/* fields */ js.UndefOr[Array], Unit]] = js.native
   /** [Method] Sets the value of grid
     * @param grid Object The new value.
     */
-  var setGrid: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setGrid: js.UndefOr[js.Function1[/* grid */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of hidden
     * @param hidden Boolean The new value.
     */
-  var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of increment
     * @param increment Number The new value.
     */
-  var setIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Unit]] = js.undefined
+  var setIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of label
     * @param label Object The new value.
     */
-  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of labelInSpan
     * @param labelInSpan Boolean The new value.
     */
-  var setLabelInSpan: js.UndefOr[js.Function1[/* labelInSpan */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setLabelInSpan: js.UndefOr[js.Function1[/* labelInSpan */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of layout
     * @param layout Object|Ext.chart.axis.layout.Layout The new value.
     */
-  var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of majorTickSteps
     * @param majorTickSteps Number The new value.
     */
-  var setMajorTickSteps: js.UndefOr[js.Function1[/* majorTickSteps */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMajorTickSteps: js.UndefOr[js.Function1[/* majorTickSteps */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of maxZoom
     * @param maxZoom Number The new value.
     */
-  var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMaxZoom: js.UndefOr[js.Function1[/* maxZoom */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of maximum
     * @param maximum Number The new value.
     */
-  var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minZoom
     * @param minZoom Number The new value.
     */
-  var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinZoom: js.UndefOr[js.Function1[/* minZoom */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minimum
     * @param minimum Number The new value.
     */
-  var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minorTickSteps
     * @param minorTickSteps Number The new value.
     */
-  var setMinorTickSteps: js.UndefOr[js.Function1[/* minorTickSteps */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinorTickSteps: js.UndefOr[js.Function1[/* minorTickSteps */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of needHighPrecision
     * @param needHighPrecision Boolean The new value.
     */
-  var setNeedHighPrecision: js.UndefOr[js.Function1[/* needHighPrecision */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setNeedHighPrecision: js.UndefOr[js.Function1[/* needHighPrecision */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of position
     * @param position String The new value.
     */
-  var setPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[String], Unit]] = js.undefined
+  var setPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of renderer
     * @param renderer Function The new value.
     * @returns String The label to display.
     */
-  var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], String]] = js.undefined
+  var setRenderer: js.UndefOr[js.Function1[/* renderer */ js.UndefOr[js.Any], String]] = js.native
   /** [Method] Sets the value of segmenter
     * @param segmenter Object|Ext.chart.axis.segmenter.Segmenter The new value.
     */
-  var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSegmenter: js.UndefOr[js.Function1[/* segmenter */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of style
     * @param style Object The new value.
     */
-  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of title
     * @param title String|Object The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of titleMargin
     * @param titleMargin Number The new value.
     */
-  var setTitleMargin: js.UndefOr[js.Function1[/* titleMargin */ js.UndefOr[Double], Unit]] = js.undefined
+  var setTitleMargin: js.UndefOr[js.Function1[/* titleMargin */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of visibleRange
     * @param visibleRange Array The new value.
     */
-  var setVisibleRange: js.UndefOr[js.Function1[/* visibleRange */ js.UndefOr[Array], Unit]] = js.undefined
+  var setVisibleRange: js.UndefOr[js.Function1[/* visibleRange */ js.UndefOr[Array], Unit]] = js.native
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.undefined
+  var style: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String|Object) */
-  var title: js.UndefOr[js.Any] = js.undefined
+  var title: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Number) */
-  var titleMargin: js.UndefOr[Double] = js.undefined
+  var titleMargin: js.UndefOr[Double] = js.native
   /** [Config Option] (Array) */
-  var visibleRange: js.UndefOr[Array] = js.undefined
+  var visibleRange: js.UndefOr[Array] = js.native
 }
 
 object IAxis {
   @scala.inline
-  def apply(
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    background: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    chart: IAbstractChart = null,
-    clearListeners: () => Unit = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: String = null,
-    fields: Array = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    getBackground: () => _ = null,
-    getBubbleEvents: () => _ = null,
-    getChart: () => IAbstractChart = null,
-    getCoordFor: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double = null,
-    getFields: () => Array = null,
-    getGrid: () => _ = null,
-    getHidden: () => Boolean = null,
-    getId: () => _ = null,
-    getIncrement: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getLabel: () => _ = null,
-    getLabelInSpan: () => Boolean = null,
-    getLayout: () => _ = null,
-    getListeners: () => _ = null,
-    getMajorTickSteps: () => Double = null,
-    getMaxZoom: () => Double = null,
-    getMaximum: () => Double = null,
-    getMinZoom: () => Double = null,
-    getMinimum: () => Double = null,
-    getMinorTickSteps: () => Double = null,
-    getNeedHighPrecision: () => Boolean = null,
-    getPosition: () => String = null,
-    getRange: () => Array = null,
-    getRenderer: () => _ = null,
-    getSegmenter: () => _ = null,
-    getStyle: () => _ = null,
-    getTitle: () => _ = null,
-    getTitleMargin: () => Double = null,
-    getVisibleRange: () => Array = null,
-    grid: js.Any = null,
-    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    increment: js.UndefOr[Double] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    label: js.Any = null,
-    labelInSpan: js.UndefOr[Boolean] = js.undefined,
-    layout: js.Any = null,
-    listeners: js.Any = null,
-    majorTickSteps: js.UndefOr[Double] = js.undefined,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    maximum: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    minimum: js.UndefOr[Double] = js.undefined,
-    minorTickSteps: js.UndefOr[Double] = js.undefined,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    needHighPrecision: js.UndefOr[Boolean] = js.undefined,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    platformConfig: js.Any = null,
-    position: String = null,
-    processData: () => Unit = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    renderFrame: () => Unit = null,
-    renderer: js.Any = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    segmenter: js.Any = null,
-    self: IClass = null,
-    setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setChart: /* chart */ js.UndefOr[IAbstractChart] => Unit = null,
-    setFields: /* fields */ js.UndefOr[Array] => Unit = null,
-    setGrid: /* grid */ js.UndefOr[js.Any] => Unit = null,
-    setHidden: /* hidden */ js.UndefOr[Boolean] => Unit = null,
-    setIncrement: /* increment */ js.UndefOr[Double] => Unit = null,
-    setLabel: /* label */ js.UndefOr[js.Any] => Unit = null,
-    setLabelInSpan: /* labelInSpan */ js.UndefOr[Boolean] => Unit = null,
-    setLayout: /* layout */ js.UndefOr[js.Any] => Unit = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMajorTickSteps: /* majorTickSteps */ js.UndefOr[Double] => Unit = null,
-    setMaxZoom: /* maxZoom */ js.UndefOr[Double] => Unit = null,
-    setMaximum: /* maximum */ js.UndefOr[Double] => Unit = null,
-    setMinZoom: /* minZoom */ js.UndefOr[Double] => Unit = null,
-    setMinimum: /* minimum */ js.UndefOr[Double] => Unit = null,
-    setMinorTickSteps: /* minorTickSteps */ js.UndefOr[Double] => Unit = null,
-    setNeedHighPrecision: /* needHighPrecision */ js.UndefOr[Boolean] => Unit = null,
-    setPosition: /* position */ js.UndefOr[String] => Unit = null,
-    setRenderer: /* renderer */ js.UndefOr[js.Any] => String = null,
-    setSegmenter: /* segmenter */ js.UndefOr[js.Any] => Unit = null,
-    setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
-    setTitle: /* title */ js.UndefOr[js.Any] => Unit = null,
-    setTitleMargin: /* titleMargin */ js.UndefOr[Double] => Unit = null,
-    setVisibleRange: /* visibleRange */ js.UndefOr[Array] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    style: js.Any = null,
-    suspendEvents: () => Unit = null,
-    title: js.Any = null,
-    titleMargin: js.UndefOr[Double] = js.undefined,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null,
-    visibleRange: Array = null
-  ): IAxis = {
+  def apply(): IAxis = {
     val __obj = js.Dynamic.literal()
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getChart != null) __obj.updateDynamic("getChart")(js.Any.fromFunction0(getChart))
-    if (getCoordFor != null) __obj.updateDynamic("getCoordFor")(js.Any.fromFunction4(getCoordFor))
-    if (getFields != null) __obj.updateDynamic("getFields")(js.Any.fromFunction0(getFields))
-    if (getGrid != null) __obj.updateDynamic("getGrid")(js.Any.fromFunction0(getGrid))
-    if (getHidden != null) __obj.updateDynamic("getHidden")(js.Any.fromFunction0(getHidden))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getIncrement != null) __obj.updateDynamic("getIncrement")(js.Any.fromFunction0(getIncrement))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction0(getLabel))
-    if (getLabelInSpan != null) __obj.updateDynamic("getLabelInSpan")(js.Any.fromFunction0(getLabelInSpan))
-    if (getLayout != null) __obj.updateDynamic("getLayout")(js.Any.fromFunction0(getLayout))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getMajorTickSteps != null) __obj.updateDynamic("getMajorTickSteps")(js.Any.fromFunction0(getMajorTickSteps))
-    if (getMaxZoom != null) __obj.updateDynamic("getMaxZoom")(js.Any.fromFunction0(getMaxZoom))
-    if (getMaximum != null) __obj.updateDynamic("getMaximum")(js.Any.fromFunction0(getMaximum))
-    if (getMinZoom != null) __obj.updateDynamic("getMinZoom")(js.Any.fromFunction0(getMinZoom))
-    if (getMinimum != null) __obj.updateDynamic("getMinimum")(js.Any.fromFunction0(getMinimum))
-    if (getMinorTickSteps != null) __obj.updateDynamic("getMinorTickSteps")(js.Any.fromFunction0(getMinorTickSteps))
-    if (getNeedHighPrecision != null) __obj.updateDynamic("getNeedHighPrecision")(js.Any.fromFunction0(getNeedHighPrecision))
-    if (getPosition != null) __obj.updateDynamic("getPosition")(js.Any.fromFunction0(getPosition))
-    if (getRange != null) __obj.updateDynamic("getRange")(js.Any.fromFunction0(getRange))
-    if (getRenderer != null) __obj.updateDynamic("getRenderer")(js.Any.fromFunction0(getRenderer))
-    if (getSegmenter != null) __obj.updateDynamic("getSegmenter")(js.Any.fromFunction0(getSegmenter))
-    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction0(getStyle))
-    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
-    if (getTitleMargin != null) __obj.updateDynamic("getTitleMargin")(js.Any.fromFunction0(getTitleMargin))
-    if (getVisibleRange != null) __obj.updateDynamic("getVisibleRange")(js.Any.fromFunction0(getVisibleRange))
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelInSpan)) __obj.updateDynamic("labelInSpan")(labelInSpan.get.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (!js.isUndefined(majorTickSteps)) __obj.updateDynamic("majorTickSteps")(majorTickSteps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTickSteps)) __obj.updateDynamic("minorTickSteps")(minorTickSteps.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(needHighPrecision)) __obj.updateDynamic("needHighPrecision")(needHighPrecision.get.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (processData != null) __obj.updateDynamic("processData")(js.Any.fromFunction0(processData))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (renderFrame != null) __obj.updateDynamic("renderFrame")(js.Any.fromFunction0(renderFrame))
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (segmenter != null) __obj.updateDynamic("segmenter")(segmenter.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1(setBackground))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setChart != null) __obj.updateDynamic("setChart")(js.Any.fromFunction1(setChart))
-    if (setFields != null) __obj.updateDynamic("setFields")(js.Any.fromFunction1(setFields))
-    if (setGrid != null) __obj.updateDynamic("setGrid")(js.Any.fromFunction1(setGrid))
-    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
-    if (setIncrement != null) __obj.updateDynamic("setIncrement")(js.Any.fromFunction1(setIncrement))
-    if (setLabel != null) __obj.updateDynamic("setLabel")(js.Any.fromFunction1(setLabel))
-    if (setLabelInSpan != null) __obj.updateDynamic("setLabelInSpan")(js.Any.fromFunction1(setLabelInSpan))
-    if (setLayout != null) __obj.updateDynamic("setLayout")(js.Any.fromFunction1(setLayout))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setMajorTickSteps != null) __obj.updateDynamic("setMajorTickSteps")(js.Any.fromFunction1(setMajorTickSteps))
-    if (setMaxZoom != null) __obj.updateDynamic("setMaxZoom")(js.Any.fromFunction1(setMaxZoom))
-    if (setMaximum != null) __obj.updateDynamic("setMaximum")(js.Any.fromFunction1(setMaximum))
-    if (setMinZoom != null) __obj.updateDynamic("setMinZoom")(js.Any.fromFunction1(setMinZoom))
-    if (setMinimum != null) __obj.updateDynamic("setMinimum")(js.Any.fromFunction1(setMinimum))
-    if (setMinorTickSteps != null) __obj.updateDynamic("setMinorTickSteps")(js.Any.fromFunction1(setMinorTickSteps))
-    if (setNeedHighPrecision != null) __obj.updateDynamic("setNeedHighPrecision")(js.Any.fromFunction1(setNeedHighPrecision))
-    if (setPosition != null) __obj.updateDynamic("setPosition")(js.Any.fromFunction1(setPosition))
-    if (setRenderer != null) __obj.updateDynamic("setRenderer")(js.Any.fromFunction1(setRenderer))
-    if (setSegmenter != null) __obj.updateDynamic("setSegmenter")(js.Any.fromFunction1(setSegmenter))
-    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (setTitleMargin != null) __obj.updateDynamic("setTitleMargin")(js.Any.fromFunction1(setTitleMargin))
-    if (setVisibleRange != null) __obj.updateDynamic("setVisibleRange")(js.Any.fromFunction1(setVisibleRange))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleMargin)) __obj.updateDynamic("titleMargin")(titleMargin.get.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAxis]
   }
+  @scala.inline
+  implicit class IAxisOps[Self <: IAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: js.Any): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setChart(value: IAbstractChart): Self = this.set("chart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChart: Self = this.set("chart", js.undefined)
+    @scala.inline
+    def setFields(value: Array): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setGetBackground(value: () => _): Self = this.set("getBackground", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBackground: Self = this.set("getBackground", js.undefined)
+    @scala.inline
+    def setGetChart(value: () => IAbstractChart): Self = this.set("getChart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetChart: Self = this.set("getChart", js.undefined)
+    @scala.inline
+    def setGetCoordFor(
+      value: (/* value */ js.UndefOr[js.Any], /* field */ js.UndefOr[String], /* idx */ js.UndefOr[Double], /* items */ js.UndefOr[IMixedCollection]) => Double
+    ): Self = this.set("getCoordFor", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteGetCoordFor: Self = this.set("getCoordFor", js.undefined)
+    @scala.inline
+    def setGetFields(value: () => Array): Self = this.set("getFields", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetFields: Self = this.set("getFields", js.undefined)
+    @scala.inline
+    def setGetGrid(value: () => _): Self = this.set("getGrid", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetGrid: Self = this.set("getGrid", js.undefined)
+    @scala.inline
+    def setGetHidden(value: () => Boolean): Self = this.set("getHidden", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetHidden: Self = this.set("getHidden", js.undefined)
+    @scala.inline
+    def setGetIncrement(value: () => Double): Self = this.set("getIncrement", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetIncrement: Self = this.set("getIncrement", js.undefined)
+    @scala.inline
+    def setGetLabel(value: () => _): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLabel: Self = this.set("getLabel", js.undefined)
+    @scala.inline
+    def setGetLabelInSpan(value: () => Boolean): Self = this.set("getLabelInSpan", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLabelInSpan: Self = this.set("getLabelInSpan", js.undefined)
+    @scala.inline
+    def setGetLayout(value: () => _): Self = this.set("getLayout", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetLayout: Self = this.set("getLayout", js.undefined)
+    @scala.inline
+    def setGetMajorTickSteps(value: () => Double): Self = this.set("getMajorTickSteps", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMajorTickSteps: Self = this.set("getMajorTickSteps", js.undefined)
+    @scala.inline
+    def setGetMaxZoom(value: () => Double): Self = this.set("getMaxZoom", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaxZoom: Self = this.set("getMaxZoom", js.undefined)
+    @scala.inline
+    def setGetMaximum(value: () => Double): Self = this.set("getMaximum", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaximum: Self = this.set("getMaximum", js.undefined)
+    @scala.inline
+    def setGetMinZoom(value: () => Double): Self = this.set("getMinZoom", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinZoom: Self = this.set("getMinZoom", js.undefined)
+    @scala.inline
+    def setGetMinimum(value: () => Double): Self = this.set("getMinimum", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinimum: Self = this.set("getMinimum", js.undefined)
+    @scala.inline
+    def setGetMinorTickSteps(value: () => Double): Self = this.set("getMinorTickSteps", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinorTickSteps: Self = this.set("getMinorTickSteps", js.undefined)
+    @scala.inline
+    def setGetNeedHighPrecision(value: () => Boolean): Self = this.set("getNeedHighPrecision", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetNeedHighPrecision: Self = this.set("getNeedHighPrecision", js.undefined)
+    @scala.inline
+    def setGetPosition(value: () => String): Self = this.set("getPosition", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPosition: Self = this.set("getPosition", js.undefined)
+    @scala.inline
+    def setGetRange(value: () => Array): Self = this.set("getRange", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRange: Self = this.set("getRange", js.undefined)
+    @scala.inline
+    def setGetRenderer(value: () => _): Self = this.set("getRenderer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRenderer: Self = this.set("getRenderer", js.undefined)
+    @scala.inline
+    def setGetSegmenter(value: () => _): Self = this.set("getSegmenter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetSegmenter: Self = this.set("getSegmenter", js.undefined)
+    @scala.inline
+    def setGetStyle(value: () => _): Self = this.set("getStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStyle: Self = this.set("getStyle", js.undefined)
+    @scala.inline
+    def setGetTitle(value: () => _): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTitle: Self = this.set("getTitle", js.undefined)
+    @scala.inline
+    def setGetTitleMargin(value: () => Double): Self = this.set("getTitleMargin", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTitleMargin: Self = this.set("getTitleMargin", js.undefined)
+    @scala.inline
+    def setGetVisibleRange(value: () => Array): Self = this.set("getVisibleRange", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetVisibleRange: Self = this.set("getVisibleRange", js.undefined)
+    @scala.inline
+    def setGrid(value: js.Any): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrement: Self = this.set("increment", js.undefined)
+    @scala.inline
+    def setLabel(value: js.Any): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelInSpan(value: Boolean): Self = this.set("labelInSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelInSpan: Self = this.set("labelInSpan", js.undefined)
+    @scala.inline
+    def setLayout(value: js.Any): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setMajorTickSteps(value: Double): Self = this.set("majorTickSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorTickSteps: Self = this.set("majorTickSteps", js.undefined)
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    @scala.inline
+    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setMinorTickSteps(value: Double): Self = this.set("minorTickSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorTickSteps: Self = this.set("minorTickSteps", js.undefined)
+    @scala.inline
+    def setNeedHighPrecision(value: Boolean): Self = this.set("needHighPrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedHighPrecision: Self = this.set("needHighPrecision", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setProcessData(value: () => Unit): Self = this.set("processData", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteProcessData: Self = this.set("processData", js.undefined)
+    @scala.inline
+    def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = this.set("relayEvents", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRelayEvents: Self = this.set("relayEvents", js.undefined)
+    @scala.inline
+    def setRenderFrame(value: () => Unit): Self = this.set("renderFrame", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteRenderFrame: Self = this.set("renderFrame", js.undefined)
+    @scala.inline
+    def setRenderer(value: js.Any): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    @scala.inline
+    def setSegmenter(value: js.Any): Self = this.set("segmenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmenter: Self = this.set("segmenter", js.undefined)
+    @scala.inline
+    def setSetBackground(value: /* background */ js.UndefOr[js.Any] => Unit): Self = this.set("setBackground", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBackground: Self = this.set("setBackground", js.undefined)
+    @scala.inline
+    def setSetChart(value: /* chart */ js.UndefOr[IAbstractChart] => Unit): Self = this.set("setChart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetChart: Self = this.set("setChart", js.undefined)
+    @scala.inline
+    def setSetFields(value: /* fields */ js.UndefOr[Array] => Unit): Self = this.set("setFields", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetFields: Self = this.set("setFields", js.undefined)
+    @scala.inline
+    def setSetGrid(value: /* grid */ js.UndefOr[js.Any] => Unit): Self = this.set("setGrid", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetGrid: Self = this.set("setGrid", js.undefined)
+    @scala.inline
+    def setSetHidden(value: /* hidden */ js.UndefOr[Boolean] => Unit): Self = this.set("setHidden", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetHidden: Self = this.set("setHidden", js.undefined)
+    @scala.inline
+    def setSetIncrement(value: /* increment */ js.UndefOr[Double] => Unit): Self = this.set("setIncrement", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetIncrement: Self = this.set("setIncrement", js.undefined)
+    @scala.inline
+    def setSetLabel(value: /* label */ js.UndefOr[js.Any] => Unit): Self = this.set("setLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLabel: Self = this.set("setLabel", js.undefined)
+    @scala.inline
+    def setSetLabelInSpan(value: /* labelInSpan */ js.UndefOr[Boolean] => Unit): Self = this.set("setLabelInSpan", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLabelInSpan: Self = this.set("setLabelInSpan", js.undefined)
+    @scala.inline
+    def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = this.set("setLayout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetLayout: Self = this.set("setLayout", js.undefined)
+    @scala.inline
+    def setSetMajorTickSteps(value: /* majorTickSteps */ js.UndefOr[Double] => Unit): Self = this.set("setMajorTickSteps", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMajorTickSteps: Self = this.set("setMajorTickSteps", js.undefined)
+    @scala.inline
+    def setSetMaxZoom(value: /* maxZoom */ js.UndefOr[Double] => Unit): Self = this.set("setMaxZoom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxZoom: Self = this.set("setMaxZoom", js.undefined)
+    @scala.inline
+    def setSetMaximum(value: /* maximum */ js.UndefOr[Double] => Unit): Self = this.set("setMaximum", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaximum: Self = this.set("setMaximum", js.undefined)
+    @scala.inline
+    def setSetMinZoom(value: /* minZoom */ js.UndefOr[Double] => Unit): Self = this.set("setMinZoom", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinZoom: Self = this.set("setMinZoom", js.undefined)
+    @scala.inline
+    def setSetMinimum(value: /* minimum */ js.UndefOr[Double] => Unit): Self = this.set("setMinimum", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinimum: Self = this.set("setMinimum", js.undefined)
+    @scala.inline
+    def setSetMinorTickSteps(value: /* minorTickSteps */ js.UndefOr[Double] => Unit): Self = this.set("setMinorTickSteps", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinorTickSteps: Self = this.set("setMinorTickSteps", js.undefined)
+    @scala.inline
+    def setSetNeedHighPrecision(value: /* needHighPrecision */ js.UndefOr[Boolean] => Unit): Self = this.set("setNeedHighPrecision", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetNeedHighPrecision: Self = this.set("setNeedHighPrecision", js.undefined)
+    @scala.inline
+    def setSetPosition(value: /* position */ js.UndefOr[String] => Unit): Self = this.set("setPosition", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPosition: Self = this.set("setPosition", js.undefined)
+    @scala.inline
+    def setSetRenderer(value: /* renderer */ js.UndefOr[js.Any] => String): Self = this.set("setRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRenderer: Self = this.set("setRenderer", js.undefined)
+    @scala.inline
+    def setSetSegmenter(value: /* segmenter */ js.UndefOr[js.Any] => Unit): Self = this.set("setSegmenter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetSegmenter: Self = this.set("setSegmenter", js.undefined)
+    @scala.inline
+    def setSetStyle(value: /* style */ js.UndefOr[js.Any] => Unit): Self = this.set("setStyle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStyle: Self = this.set("setStyle", js.undefined)
+    @scala.inline
+    def setSetTitle(value: /* title */ js.UndefOr[js.Any] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    @scala.inline
+    def setSetTitleMargin(value: /* titleMargin */ js.UndefOr[Double] => Unit): Self = this.set("setTitleMargin", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTitleMargin: Self = this.set("setTitleMargin", js.undefined)
+    @scala.inline
+    def setSetVisibleRange(value: /* visibleRange */ js.UndefOr[Array] => Unit): Self = this.set("setVisibleRange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetVisibleRange: Self = this.set("setVisibleRange", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Any): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: js.Any): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleMargin(value: Double): Self = this.set("titleMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleMargin: Self = this.set("titleMargin", js.undefined)
+    @scala.inline
+    def setVisibleRange(value: Array): Self = this.set("visibleRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleRange: Self = this.set("visibleRange", js.undefined)
+  }
+  
 }
 

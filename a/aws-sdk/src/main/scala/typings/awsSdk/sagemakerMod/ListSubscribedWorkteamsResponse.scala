@@ -18,10 +18,30 @@ trait ListSubscribedWorkteamsResponse extends js.Object {
 
 object ListSubscribedWorkteamsResponse {
   @scala.inline
-  def apply(SubscribedWorkteams: SubscribedWorkteams, NextToken: NextToken = null): ListSubscribedWorkteamsResponse = {
+  def apply(SubscribedWorkteams: SubscribedWorkteams): ListSubscribedWorkteamsResponse = {
     val __obj = js.Dynamic.literal(SubscribedWorkteams = SubscribedWorkteams.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSubscribedWorkteamsResponse]
   }
+  @scala.inline
+  implicit class ListSubscribedWorkteamsResponseOps[Self <: ListSubscribedWorkteamsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubscribedWorkteamsVarargs(value: SubscribedWorkteam*): Self = this.set("SubscribedWorkteams", js.Array(value :_*))
+    @scala.inline
+    def setSubscribedWorkteams(value: SubscribedWorkteams): Self = this.set("SubscribedWorkteams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

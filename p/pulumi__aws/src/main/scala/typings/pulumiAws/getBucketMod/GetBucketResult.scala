@@ -24,7 +24,7 @@ trait GetBucketResult extends js.Object {
     */
   val hostedZoneId: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -57,5 +57,36 @@ object GetBucketResult {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], bucketDomainName = bucketDomainName.asInstanceOf[js.Any], bucketRegionalDomainName = bucketRegionalDomainName.asInstanceOf[js.Any], hostedZoneId = hostedZoneId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], websiteDomain = websiteDomain.asInstanceOf[js.Any], websiteEndpoint = websiteEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketResult]
   }
+  @scala.inline
+  implicit class GetBucketResultOps[Self <: GetBucketResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBucketDomainName(value: String): Self = this.set("bucketDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBucketRegionalDomainName(value: String): Self = this.set("bucketRegionalDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHostedZoneId(value: String): Self = this.set("hostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebsiteDomain(value: String): Self = this.set("websiteDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebsiteEndpoint(value: String): Self = this.set("websiteEndpoint", value.asInstanceOf[js.Any])
+  }
+  
 }
 

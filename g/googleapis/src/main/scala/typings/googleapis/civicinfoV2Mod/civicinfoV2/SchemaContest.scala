@@ -143,60 +143,132 @@ trait SchemaContest extends js.Object {
 
 object SchemaContest {
   @scala.inline
-  def apply(
-    ballotPlacement: String = null,
-    ballotTitle: String = null,
-    candidates: js.Array[SchemaCandidate] = null,
-    district: SchemaElectoralDistrict = null,
-    electorateSpecifications: String = null,
-    id: String = null,
-    level: js.Array[String] = null,
-    numberElected: String = null,
-    numberVotingFor: String = null,
-    office: String = null,
-    primaryParty: String = null,
-    referendumBallotResponses: js.Array[String] = null,
-    referendumBrief: String = null,
-    referendumConStatement: String = null,
-    referendumEffectOfAbstain: String = null,
-    referendumPassageThreshold: String = null,
-    referendumProStatement: String = null,
-    referendumSubtitle: String = null,
-    referendumText: String = null,
-    referendumTitle: String = null,
-    referendumUrl: String = null,
-    roles: js.Array[String] = null,
-    sources: js.Array[SchemaSource] = null,
-    special: String = null,
-    `type`: String = null
-  ): SchemaContest = {
+  def apply(): SchemaContest = {
     val __obj = js.Dynamic.literal()
-    if (ballotPlacement != null) __obj.updateDynamic("ballotPlacement")(ballotPlacement.asInstanceOf[js.Any])
-    if (ballotTitle != null) __obj.updateDynamic("ballotTitle")(ballotTitle.asInstanceOf[js.Any])
-    if (candidates != null) __obj.updateDynamic("candidates")(candidates.asInstanceOf[js.Any])
-    if (district != null) __obj.updateDynamic("district")(district.asInstanceOf[js.Any])
-    if (electorateSpecifications != null) __obj.updateDynamic("electorateSpecifications")(electorateSpecifications.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (numberElected != null) __obj.updateDynamic("numberElected")(numberElected.asInstanceOf[js.Any])
-    if (numberVotingFor != null) __obj.updateDynamic("numberVotingFor")(numberVotingFor.asInstanceOf[js.Any])
-    if (office != null) __obj.updateDynamic("office")(office.asInstanceOf[js.Any])
-    if (primaryParty != null) __obj.updateDynamic("primaryParty")(primaryParty.asInstanceOf[js.Any])
-    if (referendumBallotResponses != null) __obj.updateDynamic("referendumBallotResponses")(referendumBallotResponses.asInstanceOf[js.Any])
-    if (referendumBrief != null) __obj.updateDynamic("referendumBrief")(referendumBrief.asInstanceOf[js.Any])
-    if (referendumConStatement != null) __obj.updateDynamic("referendumConStatement")(referendumConStatement.asInstanceOf[js.Any])
-    if (referendumEffectOfAbstain != null) __obj.updateDynamic("referendumEffectOfAbstain")(referendumEffectOfAbstain.asInstanceOf[js.Any])
-    if (referendumPassageThreshold != null) __obj.updateDynamic("referendumPassageThreshold")(referendumPassageThreshold.asInstanceOf[js.Any])
-    if (referendumProStatement != null) __obj.updateDynamic("referendumProStatement")(referendumProStatement.asInstanceOf[js.Any])
-    if (referendumSubtitle != null) __obj.updateDynamic("referendumSubtitle")(referendumSubtitle.asInstanceOf[js.Any])
-    if (referendumText != null) __obj.updateDynamic("referendumText")(referendumText.asInstanceOf[js.Any])
-    if (referendumTitle != null) __obj.updateDynamic("referendumTitle")(referendumTitle.asInstanceOf[js.Any])
-    if (referendumUrl != null) __obj.updateDynamic("referendumUrl")(referendumUrl.asInstanceOf[js.Any])
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
-    if (special != null) __obj.updateDynamic("special")(special.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContest]
   }
+  @scala.inline
+  implicit class SchemaContestOps[Self <: SchemaContest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBallotPlacement(value: String): Self = this.set("ballotPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBallotPlacement: Self = this.set("ballotPlacement", js.undefined)
+    @scala.inline
+    def setBallotTitle(value: String): Self = this.set("ballotTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBallotTitle: Self = this.set("ballotTitle", js.undefined)
+    @scala.inline
+    def setCandidatesVarargs(value: SchemaCandidate*): Self = this.set("candidates", js.Array(value :_*))
+    @scala.inline
+    def setCandidates(value: js.Array[SchemaCandidate]): Self = this.set("candidates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandidates: Self = this.set("candidates", js.undefined)
+    @scala.inline
+    def setDistrict(value: SchemaElectoralDistrict): Self = this.set("district", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistrict: Self = this.set("district", js.undefined)
+    @scala.inline
+    def setElectorateSpecifications(value: String): Self = this.set("electorateSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElectorateSpecifications: Self = this.set("electorateSpecifications", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLevelVarargs(value: String*): Self = this.set("level", js.Array(value :_*))
+    @scala.inline
+    def setLevel(value: js.Array[String]): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setNumberElected(value: String): Self = this.set("numberElected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberElected: Self = this.set("numberElected", js.undefined)
+    @scala.inline
+    def setNumberVotingFor(value: String): Self = this.set("numberVotingFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberVotingFor: Self = this.set("numberVotingFor", js.undefined)
+    @scala.inline
+    def setOffice(value: String): Self = this.set("office", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffice: Self = this.set("office", js.undefined)
+    @scala.inline
+    def setPrimaryParty(value: String): Self = this.set("primaryParty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryParty: Self = this.set("primaryParty", js.undefined)
+    @scala.inline
+    def setReferendumBallotResponsesVarargs(value: String*): Self = this.set("referendumBallotResponses", js.Array(value :_*))
+    @scala.inline
+    def setReferendumBallotResponses(value: js.Array[String]): Self = this.set("referendumBallotResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumBallotResponses: Self = this.set("referendumBallotResponses", js.undefined)
+    @scala.inline
+    def setReferendumBrief(value: String): Self = this.set("referendumBrief", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumBrief: Self = this.set("referendumBrief", js.undefined)
+    @scala.inline
+    def setReferendumConStatement(value: String): Self = this.set("referendumConStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumConStatement: Self = this.set("referendumConStatement", js.undefined)
+    @scala.inline
+    def setReferendumEffectOfAbstain(value: String): Self = this.set("referendumEffectOfAbstain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumEffectOfAbstain: Self = this.set("referendumEffectOfAbstain", js.undefined)
+    @scala.inline
+    def setReferendumPassageThreshold(value: String): Self = this.set("referendumPassageThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumPassageThreshold: Self = this.set("referendumPassageThreshold", js.undefined)
+    @scala.inline
+    def setReferendumProStatement(value: String): Self = this.set("referendumProStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumProStatement: Self = this.set("referendumProStatement", js.undefined)
+    @scala.inline
+    def setReferendumSubtitle(value: String): Self = this.set("referendumSubtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumSubtitle: Self = this.set("referendumSubtitle", js.undefined)
+    @scala.inline
+    def setReferendumText(value: String): Self = this.set("referendumText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumText: Self = this.set("referendumText", js.undefined)
+    @scala.inline
+    def setReferendumTitle(value: String): Self = this.set("referendumTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumTitle: Self = this.set("referendumTitle", js.undefined)
+    @scala.inline
+    def setReferendumUrl(value: String): Self = this.set("referendumUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferendumUrl: Self = this.set("referendumUrl", js.undefined)
+    @scala.inline
+    def setRolesVarargs(value: String*): Self = this.set("roles", js.Array(value :_*))
+    @scala.inline
+    def setRoles(value: js.Array[String]): Self = this.set("roles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoles: Self = this.set("roles", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: SchemaSource*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: js.Array[SchemaSource]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+    @scala.inline
+    def setSpecial(value: String): Self = this.set("special", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecial: Self = this.set("special", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

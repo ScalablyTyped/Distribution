@@ -10,6 +10,11 @@ trait WebResponseHeadersEvent
   extends Event[js.Function1[/* details */ WebResponseHeadersDetails, BlockingResponse | Unit]] {
   def addListener(
     callback: js.Function1[/* details */ WebResponseHeadersDetails, BlockingResponse | Unit],
+    filter: js.UndefOr[scala.Nothing],
+    opt_extraInfoSpec: js.Array[String]
+  ): Unit = js.native
+  def addListener(
+    callback: js.Function1[/* details */ WebResponseHeadersDetails, BlockingResponse | Unit],
     filter: RequestFilter
   ): Unit = js.native
   def addListener(

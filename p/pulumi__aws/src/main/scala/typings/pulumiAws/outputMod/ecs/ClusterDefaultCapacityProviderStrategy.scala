@@ -6,22 +6,48 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ClusterDefaultCapacityProviderStrategy extends js.Object {
+  /**
+    * The number of tasks, at a minimum, to run on the specified capacity provider. Only one capacity provider in a capacity provider strategy can have a base defined.
+    */
   var base: js.UndefOr[Double] = js.native
+  /**
+    * The short name of the capacity provider.
+    */
   var capacityProvider: String = js.native
+  /**
+    * The relative percentage of the total number of launched tasks that should use the specified capacity provider.
+    */
   var weight: js.UndefOr[Double] = js.native
 }
 
 object ClusterDefaultCapacityProviderStrategy {
   @scala.inline
-  def apply(
-    capacityProvider: String,
-    base: js.UndefOr[Double] = js.undefined,
-    weight: js.UndefOr[Double] = js.undefined
-  ): ClusterDefaultCapacityProviderStrategy = {
+  def apply(capacityProvider: String): ClusterDefaultCapacityProviderStrategy = {
     val __obj = js.Dynamic.literal(capacityProvider = capacityProvider.asInstanceOf[js.Any])
-    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterDefaultCapacityProviderStrategy]
   }
+  @scala.inline
+  implicit class ClusterDefaultCapacityProviderStrategyOps[Self <: ClusterDefaultCapacityProviderStrategy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProvider(value: String): Self = this.set("capacityProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase(value: Double): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setWeight(value: Double): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

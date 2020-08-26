@@ -14,10 +14,26 @@ trait GetThirdPartyJobDetailsOutput extends js.Object {
 
 object GetThirdPartyJobDetailsOutput {
   @scala.inline
-  def apply(jobDetails: ThirdPartyJobDetails = null): GetThirdPartyJobDetailsOutput = {
+  def apply(): GetThirdPartyJobDetailsOutput = {
     val __obj = js.Dynamic.literal()
-    if (jobDetails != null) __obj.updateDynamic("jobDetails")(jobDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetThirdPartyJobDetailsOutput]
   }
+  @scala.inline
+  implicit class GetThirdPartyJobDetailsOutputOps[Self <: GetThirdPartyJobDetailsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobDetails(value: ThirdPartyJobDetails): Self = this.set("jobDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDetails: Self = this.set("jobDetails", js.undefined)
+  }
+  
 }
 

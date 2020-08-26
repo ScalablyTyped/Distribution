@@ -26,18 +26,38 @@ trait CoipAddressUsage extends js.Object {
 
 object CoipAddressUsage {
   @scala.inline
-  def apply(
-    AllocationId: String = null,
-    AwsAccountId: String = null,
-    AwsService: String = null,
-    CoIp: String = null
-  ): CoipAddressUsage = {
+  def apply(): CoipAddressUsage = {
     val __obj = js.Dynamic.literal()
-    if (AllocationId != null) __obj.updateDynamic("AllocationId")(AllocationId.asInstanceOf[js.Any])
-    if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId.asInstanceOf[js.Any])
-    if (AwsService != null) __obj.updateDynamic("AwsService")(AwsService.asInstanceOf[js.Any])
-    if (CoIp != null) __obj.updateDynamic("CoIp")(CoIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoipAddressUsage]
   }
+  @scala.inline
+  implicit class CoipAddressUsageOps[Self <: CoipAddressUsage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: String): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    @scala.inline
+    def setAwsAccountId(value: String): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("AwsAccountId", js.undefined)
+    @scala.inline
+    def setAwsService(value: String): Self = this.set("AwsService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsService: Self = this.set("AwsService", js.undefined)
+    @scala.inline
+    def setCoIp(value: String): Self = this.set("CoIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoIp: Self = this.set("CoIp", js.undefined)
+  }
+  
 }
 

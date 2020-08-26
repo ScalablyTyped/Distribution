@@ -26,18 +26,38 @@ trait WorkgroupConfiguration extends js.Object {
 
 object WorkgroupConfiguration {
   @scala.inline
-  def apply(
-    bytesScannedCutoffPerQuery: js.UndefOr[Double] = js.undefined,
-    enforceWorkgroupConfiguration: js.UndefOr[Boolean] = js.undefined,
-    publishCloudwatchMetricsEnabled: js.UndefOr[Boolean] = js.undefined,
-    resultConfiguration: WorkgroupConfigurationResultConfiguration = null
-  ): WorkgroupConfiguration = {
+  def apply(): WorkgroupConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bytesScannedCutoffPerQuery)) __obj.updateDynamic("bytesScannedCutoffPerQuery")(bytesScannedCutoffPerQuery.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceWorkgroupConfiguration)) __obj.updateDynamic("enforceWorkgroupConfiguration")(enforceWorkgroupConfiguration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishCloudwatchMetricsEnabled)) __obj.updateDynamic("publishCloudwatchMetricsEnabled")(publishCloudwatchMetricsEnabled.get.asInstanceOf[js.Any])
-    if (resultConfiguration != null) __obj.updateDynamic("resultConfiguration")(resultConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkgroupConfiguration]
   }
+  @scala.inline
+  implicit class WorkgroupConfigurationOps[Self <: WorkgroupConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesScannedCutoffPerQuery(value: Double): Self = this.set("bytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesScannedCutoffPerQuery: Self = this.set("bytesScannedCutoffPerQuery", js.undefined)
+    @scala.inline
+    def setEnforceWorkgroupConfiguration(value: Boolean): Self = this.set("enforceWorkgroupConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceWorkgroupConfiguration: Self = this.set("enforceWorkgroupConfiguration", js.undefined)
+    @scala.inline
+    def setPublishCloudwatchMetricsEnabled(value: Boolean): Self = this.set("publishCloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishCloudwatchMetricsEnabled: Self = this.set("publishCloudwatchMetricsEnabled", js.undefined)
+    @scala.inline
+    def setResultConfiguration(value: WorkgroupConfigurationResultConfiguration): Self = this.set("resultConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultConfiguration: Self = this.set("resultConfiguration", js.undefined)
+  }
+  
 }
 

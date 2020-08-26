@@ -18,10 +18,28 @@ trait EnableVolumeIORequest extends js.Object {
 
 object EnableVolumeIORequest {
   @scala.inline
-  def apply(VolumeId: VolumeId, DryRun: js.UndefOr[Boolean] = js.undefined): EnableVolumeIORequest = {
+  def apply(VolumeId: VolumeId): EnableVolumeIORequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableVolumeIORequest]
   }
+  @scala.inline
+  implicit class EnableVolumeIORequestOps[Self <: EnableVolumeIORequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVolumeId(value: VolumeId): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

@@ -22,14 +22,30 @@ trait Message extends js.Object {
 
 object Message {
   @scala.inline
-  def apply(
-    content: ContentString,
-    contentType: ContentType,
-    groupNumber: js.UndefOr[GroupNumber] = js.undefined
-  ): Message = {
+  def apply(content: ContentString, contentType: ContentType): Message = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupNumber)) __obj.updateDynamic("groupNumber")(groupNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
+  @scala.inline
+  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: ContentString): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupNumber(value: GroupNumber): Self = this.set("groupNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupNumber: Self = this.set("groupNumber", js.undefined)
+  }
+  
 }
 

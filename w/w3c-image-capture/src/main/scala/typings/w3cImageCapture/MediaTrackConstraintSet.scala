@@ -8,57 +8,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MediaTrackConstraintSet extends js.Object {
-  var brightness: js.UndefOr[ConstrainDouble] = js.undefined
-  var colorTemperature: js.UndefOr[ConstrainDouble] = js.undefined
-  var contrast: js.UndefOr[ConstrainDouble] = js.undefined
-  var exposureCompensation: js.UndefOr[ConstrainDouble] = js.undefined
-  var exposureMode: js.UndefOr[ConstrainString] = js.undefined
-  var focusDistance: js.UndefOr[ConstrainDouble] = js.undefined
-  var focusMode: js.UndefOr[ConstrainString] = js.undefined
-  var iso: js.UndefOr[ConstrainDouble] = js.undefined
-  var pointsOfInterest: js.UndefOr[ConstrainPoint2D] = js.undefined
-  var saturation: js.UndefOr[ConstrainDouble] = js.undefined
-  var sharpness: js.UndefOr[ConstrainDouble] = js.undefined
-  var torch: js.UndefOr[ConstrainBoolean] = js.undefined
-  var whiteBalanceMode: js.UndefOr[ConstrainString] = js.undefined
-  var zoom: js.UndefOr[ConstrainDouble] = js.undefined
+  var brightness: js.UndefOr[ConstrainDouble] = js.native
+  var colorTemperature: js.UndefOr[ConstrainDouble] = js.native
+  var contrast: js.UndefOr[ConstrainDouble] = js.native
+  var exposureCompensation: js.UndefOr[ConstrainDouble] = js.native
+  var exposureMode: js.UndefOr[ConstrainString] = js.native
+  var focusDistance: js.UndefOr[ConstrainDouble] = js.native
+  var focusMode: js.UndefOr[ConstrainString] = js.native
+  var iso: js.UndefOr[ConstrainDouble] = js.native
+  var pointsOfInterest: js.UndefOr[ConstrainPoint2D] = js.native
+  var saturation: js.UndefOr[ConstrainDouble] = js.native
+  var sharpness: js.UndefOr[ConstrainDouble] = js.native
+  var torch: js.UndefOr[ConstrainBoolean] = js.native
+  var whiteBalanceMode: js.UndefOr[ConstrainString] = js.native
+  var zoom: js.UndefOr[ConstrainDouble] = js.native
 }
 
 object MediaTrackConstraintSet {
   @scala.inline
-  def apply(
-    brightness: ConstrainDouble = null,
-    colorTemperature: ConstrainDouble = null,
-    contrast: ConstrainDouble = null,
-    exposureCompensation: ConstrainDouble = null,
-    exposureMode: ConstrainString = null,
-    focusDistance: ConstrainDouble = null,
-    focusMode: ConstrainString = null,
-    iso: ConstrainDouble = null,
-    pointsOfInterest: ConstrainPoint2D = null,
-    saturation: ConstrainDouble = null,
-    sharpness: ConstrainDouble = null,
-    torch: ConstrainBoolean = null,
-    whiteBalanceMode: ConstrainString = null,
-    zoom: ConstrainDouble = null
-  ): MediaTrackConstraintSet = {
+  def apply(): MediaTrackConstraintSet = {
     val __obj = js.Dynamic.literal()
-    if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
-    if (colorTemperature != null) __obj.updateDynamic("colorTemperature")(colorTemperature.asInstanceOf[js.Any])
-    if (contrast != null) __obj.updateDynamic("contrast")(contrast.asInstanceOf[js.Any])
-    if (exposureCompensation != null) __obj.updateDynamic("exposureCompensation")(exposureCompensation.asInstanceOf[js.Any])
-    if (exposureMode != null) __obj.updateDynamic("exposureMode")(exposureMode.asInstanceOf[js.Any])
-    if (focusDistance != null) __obj.updateDynamic("focusDistance")(focusDistance.asInstanceOf[js.Any])
-    if (focusMode != null) __obj.updateDynamic("focusMode")(focusMode.asInstanceOf[js.Any])
-    if (iso != null) __obj.updateDynamic("iso")(iso.asInstanceOf[js.Any])
-    if (pointsOfInterest != null) __obj.updateDynamic("pointsOfInterest")(pointsOfInterest.asInstanceOf[js.Any])
-    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
-    if (sharpness != null) __obj.updateDynamic("sharpness")(sharpness.asInstanceOf[js.Any])
-    if (torch != null) __obj.updateDynamic("torch")(torch.asInstanceOf[js.Any])
-    if (whiteBalanceMode != null) __obj.updateDynamic("whiteBalanceMode")(whiteBalanceMode.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackConstraintSet]
   }
+  @scala.inline
+  implicit class MediaTrackConstraintSetOps[Self <: MediaTrackConstraintSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrightness(value: ConstrainDouble): Self = this.set("brightness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrightness: Self = this.set("brightness", js.undefined)
+    @scala.inline
+    def setColorTemperature(value: ConstrainDouble): Self = this.set("colorTemperature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorTemperature: Self = this.set("colorTemperature", js.undefined)
+    @scala.inline
+    def setContrast(value: ConstrainDouble): Self = this.set("contrast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContrast: Self = this.set("contrast", js.undefined)
+    @scala.inline
+    def setExposureCompensation(value: ConstrainDouble): Self = this.set("exposureCompensation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposureCompensation: Self = this.set("exposureCompensation", js.undefined)
+    @scala.inline
+    def setExposureModeVarargs(value: String*): Self = this.set("exposureMode", js.Array(value :_*))
+    @scala.inline
+    def setExposureMode(value: ConstrainString): Self = this.set("exposureMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposureMode: Self = this.set("exposureMode", js.undefined)
+    @scala.inline
+    def setFocusDistance(value: ConstrainDouble): Self = this.set("focusDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusDistance: Self = this.set("focusDistance", js.undefined)
+    @scala.inline
+    def setFocusModeVarargs(value: String*): Self = this.set("focusMode", js.Array(value :_*))
+    @scala.inline
+    def setFocusMode(value: ConstrainString): Self = this.set("focusMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusMode: Self = this.set("focusMode", js.undefined)
+    @scala.inline
+    def setIso(value: ConstrainDouble): Self = this.set("iso", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIso: Self = this.set("iso", js.undefined)
+    @scala.inline
+    def setPointsOfInterestVarargs(value: Point2D*): Self = this.set("pointsOfInterest", js.Array(value :_*))
+    @scala.inline
+    def setPointsOfInterest(value: ConstrainPoint2D): Self = this.set("pointsOfInterest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointsOfInterest: Self = this.set("pointsOfInterest", js.undefined)
+    @scala.inline
+    def setSaturation(value: ConstrainDouble): Self = this.set("saturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaturation: Self = this.set("saturation", js.undefined)
+    @scala.inline
+    def setSharpness(value: ConstrainDouble): Self = this.set("sharpness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharpness: Self = this.set("sharpness", js.undefined)
+    @scala.inline
+    def setTorch(value: ConstrainBoolean): Self = this.set("torch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTorch: Self = this.set("torch", js.undefined)
+    @scala.inline
+    def setWhiteBalanceModeVarargs(value: String*): Self = this.set("whiteBalanceMode", js.Array(value :_*))
+    @scala.inline
+    def setWhiteBalanceMode(value: ConstrainString): Self = this.set("whiteBalanceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhiteBalanceMode: Self = this.set("whiteBalanceMode", js.undefined)
+    @scala.inline
+    def setZoom(value: ConstrainDouble): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

@@ -7,10 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Core.VisibilityChangedEventArgs")
 @js.native
 class VisibilityChangedEventArgs ()
-  extends typings.winrt.Windows.UI.Core.VisibilityChangedEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-}
+  extends typings.winrt.Windows.UI.Core.VisibilityChangedEventArgs
 

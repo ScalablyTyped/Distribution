@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation._
 
 object daterangepickerStrings {
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait center extends js.Object
   
   @js.native
@@ -23,6 +26,8 @@ object daterangepickerStrings {
   @js.native
   sealed trait up extends js.Object
   
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   @scala.inline

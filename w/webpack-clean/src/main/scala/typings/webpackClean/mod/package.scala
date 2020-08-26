@@ -8,5 +8,5 @@ package object mod {
   /**
     * A webpack plugin to clean specified files after build
     */
-  type WebpackCleanPlugin = typings.webpack.mod.Plugin
+  type WebpackCleanPlugin = typings.std.Plugin
 }

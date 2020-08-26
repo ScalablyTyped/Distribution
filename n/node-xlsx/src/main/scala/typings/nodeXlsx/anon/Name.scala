@@ -4,18 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Name extends js.Object {
-  var data: js.Array[js.Array[_]]
-  var name: String
-  var options: js.UndefOr[js.Object] = js.undefined
+  var data: js.Array[js.Array[_]] = js.native
+  var name: String = js.native
+  var options: js.UndefOr[js.Object] = js.native
 }
 
 object Name {
   @scala.inline
-  def apply(data: js.Array[js.Array[_]], name: String, options: js.Object = null): Name = {
+  def apply(data: js.Array[js.Array[_]], name: String): Name = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
+  @scala.inline
+  implicit class NameOps[Self <: Name] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataVarargs(value: js.Array[js.Any]*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[js.Array[_]]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptions(value: js.Object): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

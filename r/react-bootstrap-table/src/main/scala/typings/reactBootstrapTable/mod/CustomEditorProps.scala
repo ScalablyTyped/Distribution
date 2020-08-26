@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomEditorProps[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */]
   extends EditableAttrs
      with /**
@@ -14,34 +15,38 @@ trait CustomEditorProps[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String
   /**
     * Default value for the editor cell.
     */
-  var defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any
+  var defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any = js.native
   /**
     * The row data for the cell being edited.
     */
-  var row: TRow
+  var row: TRow = js.native
 }
 
 object CustomEditorProps {
   @scala.inline
   def apply[/* <: js.Object */ TRow, /* <: / * keyof TRow * / java.lang.String */ K](
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any,
-    row: TRow,
-    StringDictionary: /**
-    * Contents of the customEditorParameters object.
-    */
-  /* parameterName */ StringDictionary[js.Any] = null,
-    onBlur: () => Unit = null,
-    onKeyDown: () => Unit = null,
-    placeholder: String = null,
-    ref: /* ref */ js.Any => _ = null
+    row: TRow
   ): CustomEditorProps[TRow, K] = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction0(onKeyDown))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
     __obj.asInstanceOf[CustomEditorProps[TRow, K]]
   }
+  @scala.inline
+  implicit class CustomEditorPropsOps[Self <: CustomEditorProps[_, _], /* <: js.Object */ TRow, /* <: / * keyof TRow * / java.lang.String */ K] (val x: Self with (CustomEditorProps[TRow, K])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRow(value: TRow): Self = this.set("row", value.asInstanceOf[js.Any])
+  }
+  
 }
 

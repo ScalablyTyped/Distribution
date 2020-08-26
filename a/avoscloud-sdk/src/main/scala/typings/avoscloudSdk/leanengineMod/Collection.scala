@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation._
 class Collection[T] ()
   extends typings.avoscloudSdk.mod.Collection[T] {
   def this(models: js.Array[typings.avoscloudSdk.mod.Object]) = this()
+  def this(models: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(models: js.Array[typings.avoscloudSdk.mod.Object], options: Options) = this()
 }
 

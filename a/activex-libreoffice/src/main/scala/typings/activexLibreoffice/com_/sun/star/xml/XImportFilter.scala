@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * interface to implement for an XML-based import filter.
   * @since OOo 1.1.2
   */
+@js.native
 trait XImportFilter extends XInterface {
   /**
     * performs the import.
@@ -24,7 +25,7 @@ trait XImportFilter extends XInterface {
     * @param xDocHandler target for the XML document representation
     * @returns `TRUE` if import process is successful
     */
-  def importer(aSourceData: SeqEquiv[PropertyValue], xDocHandler: XDocumentHandler, msUserData: SeqEquiv[String]): Boolean
+  def importer(aSourceData: SeqEquiv[PropertyValue], xDocHandler: XDocumentHandler, msUserData: SeqEquiv[String]): Boolean = js.native
 }
 
 object XImportFilter {
@@ -38,5 +39,20 @@ object XImportFilter {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), importer = js.Any.fromFunction3(importer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XImportFilter]
   }
+  @scala.inline
+  implicit class XImportFilterOps[Self <: XImportFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImporter(value: (SeqEquiv[PropertyValue], XDocumentHandler, SeqEquiv[String]) => Boolean): Self = this.set("importer", js.Any.fromFunction3(value))
+  }
+  
 }
 

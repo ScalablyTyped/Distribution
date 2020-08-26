@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "leaflet-fullscreen"
-version := "1.0-dt-20200515Z-d6920a"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-b5dcc4"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

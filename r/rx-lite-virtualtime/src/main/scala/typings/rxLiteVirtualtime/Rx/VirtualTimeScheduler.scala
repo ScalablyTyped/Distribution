@@ -7,30 +7,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VirtualTimeScheduler[TAbsolute, TRelative] extends IScheduler {
-  var isEnabled: Boolean
-  /* protected abstract */ def add(from: TAbsolute, by: TRelative): TAbsolute
+  var isEnabled: Boolean = js.native
+  /* protected abstract */ def add(from: TAbsolute, by: TRelative): TAbsolute = js.native
   // protected constructor(initialClock: TAbsolute, comparer: (first: TAbsolute, second: TAbsolute) => number);
-  def advanceBy(time: TRelative): Unit
-  def advanceTo(time: TAbsolute): Unit
-  /* protected */ def getNext(): ScheduledItem[TAbsolute]
-  def scheduleAbsolute(dueTime: TAbsolute, action: js.Function0[Unit]): IDisposable
+  def advanceBy(time: TRelative): Unit = js.native
+  def advanceTo(time: TAbsolute): Unit = js.native
+  /* protected */ def getNext(): ScheduledItem[TAbsolute] = js.native
+  def scheduleAbsolute(dueTime: TAbsolute, action: js.Function0[Unit]): IDisposable = js.native
   def scheduleAbsoluteWithState[TState](
     state: TState,
     dueTime: TAbsolute,
     action: js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, /* state */ TState, IDisposable]
-  ): IDisposable
-  def scheduleRelative(dueTime: TRelative, action: js.Function0[Unit]): IDisposable
+  ): IDisposable = js.native
+  def scheduleRelative(dueTime: TRelative, action: js.Function0[Unit]): IDisposable = js.native
   def scheduleRelativeWithState[TState](
     state: TState,
     dueTime: TRelative,
     action: js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, /* state */ TState, IDisposable]
-  ): IDisposable
-  def sleep(time: TRelative): Unit
-  def start(): IDisposable
-  def stop(): Unit
-  /* protected abstract */ def toDateTimeOffset(duetime: TAbsolute): Double
-  /* protected abstract */ def toRelative(duetime: Double): TRelative
+  ): IDisposable = js.native
+  def sleep(time: TRelative): Unit = js.native
+  def start(): IDisposable = js.native
+  def stop(): Unit = js.native
+  /* protected abstract */ def toDateTimeOffset(duetime: TAbsolute): Double = js.native
+  /* protected abstract */ def toRelative(duetime: Double): TRelative = js.native
 }
 
 object VirtualTimeScheduler {
@@ -70,5 +71,50 @@ object VirtualTimeScheduler {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), advanceBy = js.Any.fromFunction1(advanceBy), advanceTo = js.Any.fromFunction1(advanceTo), getNext = js.Any.fromFunction0(getNext), isEnabled = isEnabled.asInstanceOf[js.Any], isScheduler = js.Any.fromFunction1(isScheduler), now = js.Any.fromFunction0(now), schedule = js.Any.fromFunction1(schedule), scheduleAbsolute = js.Any.fromFunction2(scheduleAbsolute), scheduleAbsoluteWithState = js.Any.fromFunction3(scheduleAbsoluteWithState), schedulePeriodic = js.Any.fromFunction2(schedulePeriodic), schedulePeriodicWithState = js.Any.fromFunction3(schedulePeriodicWithState), scheduleRecursive = js.Any.fromFunction1(scheduleRecursive), scheduleRecursiveWithAbsolute = js.Any.fromFunction2(scheduleRecursiveWithAbsolute), scheduleRecursiveWithAbsoluteAndState = js.Any.fromFunction3(scheduleRecursiveWithAbsoluteAndState), scheduleRecursiveWithRelative = js.Any.fromFunction2(scheduleRecursiveWithRelative), scheduleRecursiveWithRelativeAndState = js.Any.fromFunction3(scheduleRecursiveWithRelativeAndState), scheduleRecursiveWithState = js.Any.fromFunction2(scheduleRecursiveWithState), scheduleRelative = js.Any.fromFunction2(scheduleRelative), scheduleRelativeWithState = js.Any.fromFunction3(scheduleRelativeWithState), scheduleWithAbsolute = js.Any.fromFunction2(scheduleWithAbsolute), scheduleWithAbsoluteAndState = js.Any.fromFunction3(scheduleWithAbsoluteAndState), scheduleWithRelative = js.Any.fromFunction2(scheduleWithRelative), scheduleWithRelativeAndState = js.Any.fromFunction3(scheduleWithRelativeAndState), scheduleWithState = js.Any.fromFunction2(scheduleWithState), sleep = js.Any.fromFunction1(sleep), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), toDateTimeOffset = js.Any.fromFunction1(toDateTimeOffset), toRelative = js.Any.fromFunction1(toRelative))
     __obj.asInstanceOf[VirtualTimeScheduler[TAbsolute, TRelative]]
   }
+  @scala.inline
+  implicit class VirtualTimeSchedulerOps[Self <: VirtualTimeScheduler[_, _], TAbsolute, TRelative] (val x: Self with (VirtualTimeScheduler[TAbsolute, TRelative])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: (TAbsolute, TRelative) => TAbsolute): Self = this.set("add", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAdvanceBy(value: TRelative => Unit): Self = this.set("advanceBy", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAdvanceTo(value: TAbsolute => Unit): Self = this.set("advanceTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetNext(value: () => ScheduledItem[TAbsolute]): Self = this.set("getNext", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduleAbsolute(value: (TAbsolute, js.Function0[Unit]) => IDisposable): Self = this.set("scheduleAbsolute", js.Any.fromFunction2(value))
+    @scala.inline
+    def setScheduleAbsoluteWithState(
+      value: (js.Any, TAbsolute, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable
+    ): Self = this.set("scheduleAbsoluteWithState", js.Any.fromFunction3(value))
+    @scala.inline
+    def setScheduleRelative(value: (TRelative, js.Function0[Unit]) => IDisposable): Self = this.set("scheduleRelative", js.Any.fromFunction2(value))
+    @scala.inline
+    def setScheduleRelativeWithState(
+      value: (js.Any, TRelative, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable
+    ): Self = this.set("scheduleRelativeWithState", js.Any.fromFunction3(value))
+    @scala.inline
+    def setSleep(value: TRelative => Unit): Self = this.set("sleep", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStart(value: () => IDisposable): Self = this.set("start", js.Any.fromFunction0(value))
+    @scala.inline
+    def setStop(value: () => Unit): Self = this.set("stop", js.Any.fromFunction0(value))
+    @scala.inline
+    def setToDateTimeOffset(value: TAbsolute => Double): Self = this.set("toDateTimeOffset", js.Any.fromFunction1(value))
+    @scala.inline
+    def setToRelative(value: Double => TRelative): Self = this.set("toRelative", js.Any.fromFunction1(value))
+  }
+  
 }
 

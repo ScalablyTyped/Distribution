@@ -22,15 +22,34 @@ trait StreamingConfiguration extends js.Object {
 
 object StreamingConfiguration {
   @scala.inline
-  def apply(
-    DataRetentionInHours: DataRetentionInHours,
-    Disabled: js.UndefOr[Boolean] = js.undefined,
-    StreamingNotificationTargets: StreamingNotificationTargetList = null
-  ): StreamingConfiguration = {
+  def apply(DataRetentionInHours: DataRetentionInHours): StreamingConfiguration = {
     val __obj = js.Dynamic.literal(DataRetentionInHours = DataRetentionInHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
-    if (StreamingNotificationTargets != null) __obj.updateDynamic("StreamingNotificationTargets")(StreamingNotificationTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingConfiguration]
   }
+  @scala.inline
+  implicit class StreamingConfigurationOps[Self <: StreamingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRetentionInHours(value: DataRetentionInHours): Self = this.set("DataRetentionInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    @scala.inline
+    def setStreamingNotificationTargetsVarargs(value: StreamingNotificationTarget*): Self = this.set("StreamingNotificationTargets", js.Array(value :_*))
+    @scala.inline
+    def setStreamingNotificationTargets(value: StreamingNotificationTargetList): Self = this.set("StreamingNotificationTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingNotificationTargets: Self = this.set("StreamingNotificationTargets", js.undefined)
+  }
+  
 }
 

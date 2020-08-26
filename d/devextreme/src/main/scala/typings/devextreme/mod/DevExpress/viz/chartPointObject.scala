@@ -5,23 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait chartPointObject extends basePointObject {
   /** @name chartPointObject.aggregationInfo */
-  var aggregationInfo: js.UndefOr[chartPointAggregationInfoObject] = js.undefined
+  var aggregationInfo: js.UndefOr[chartPointAggregationInfoObject] = js.native
   /** @name chartPointObject.originalCloseValue */
-  var originalCloseValue: js.UndefOr[Double | String] = js.undefined
+  var originalCloseValue: js.UndefOr[Double | String] = js.native
   /** @name chartPointObject.originalHighValue */
-  var originalHighValue: js.UndefOr[Double | String] = js.undefined
+  var originalHighValue: js.UndefOr[Double | String] = js.native
   /** @name chartPointObject.originalLowValue */
-  var originalLowValue: js.UndefOr[Double | String] = js.undefined
+  var originalLowValue: js.UndefOr[Double | String] = js.native
   /** @name chartPointObject.originalMinValue */
-  var originalMinValue: js.UndefOr[String | Double | Date] = js.undefined
+  var originalMinValue: js.UndefOr[String | Double | Date] = js.native
   /** @name chartPointObject.originalOpenValue */
-  var originalOpenValue: js.UndefOr[Double | String] = js.undefined
+  var originalOpenValue: js.UndefOr[Double | String] = js.native
   /** @name chartPointObject.size */
-  var size: js.UndefOr[Double | String] = js.undefined
+  var size: js.UndefOr[Double | String] = js.native
   /** @name chartPointObject.getBoundingRect() */
-  def getBoundingRect(): js.Any
+  def getBoundingRect(): js.Any = js.native
 }
 
 object chartPointObject {
@@ -37,36 +38,53 @@ object chartPointObject {
     isHovered: () => Boolean,
     isSelected: () => Boolean,
     select: () => Unit,
-    showTooltip: () => Unit,
-    aggregationInfo: chartPointAggregationInfoObject = null,
-    data: js.Any = null,
-    fullState: js.UndefOr[Double] = js.undefined,
-    originalArgument: String | Double | Date = null,
-    originalCloseValue: Double | String = null,
-    originalHighValue: Double | String = null,
-    originalLowValue: Double | String = null,
-    originalMinValue: String | Double | Date = null,
-    originalOpenValue: Double | String = null,
-    originalValue: String | Double | Date = null,
-    series: js.Any = null,
-    size: Double | String = null,
-    tag: js.Any = null
+    showTooltip: () => Unit
   ): chartPointObject = {
     val __obj = js.Dynamic.literal(clearHover = js.Any.fromFunction0(clearHover), clearSelection = js.Any.fromFunction0(clearSelection), getBoundingRect = js.Any.fromFunction0(getBoundingRect), getColor = js.Any.fromFunction0(getColor), getLabel = js.Any.fromFunction0(getLabel), hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction0(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), select = js.Any.fromFunction0(select), showTooltip = js.Any.fromFunction0(showTooltip))
-    if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullState)) __obj.updateDynamic("fullState")(fullState.get.asInstanceOf[js.Any])
-    if (originalArgument != null) __obj.updateDynamic("originalArgument")(originalArgument.asInstanceOf[js.Any])
-    if (originalCloseValue != null) __obj.updateDynamic("originalCloseValue")(originalCloseValue.asInstanceOf[js.Any])
-    if (originalHighValue != null) __obj.updateDynamic("originalHighValue")(originalHighValue.asInstanceOf[js.Any])
-    if (originalLowValue != null) __obj.updateDynamic("originalLowValue")(originalLowValue.asInstanceOf[js.Any])
-    if (originalMinValue != null) __obj.updateDynamic("originalMinValue")(originalMinValue.asInstanceOf[js.Any])
-    if (originalOpenValue != null) __obj.updateDynamic("originalOpenValue")(originalOpenValue.asInstanceOf[js.Any])
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[chartPointObject]
   }
+  @scala.inline
+  implicit class chartPointObjectOps[Self <: chartPointObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetBoundingRect(value: () => js.Any): Self = this.set("getBoundingRect", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAggregationInfo(value: chartPointAggregationInfoObject): Self = this.set("aggregationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationInfo: Self = this.set("aggregationInfo", js.undefined)
+    @scala.inline
+    def setOriginalCloseValue(value: Double | String): Self = this.set("originalCloseValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalCloseValue: Self = this.set("originalCloseValue", js.undefined)
+    @scala.inline
+    def setOriginalHighValue(value: Double | String): Self = this.set("originalHighValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalHighValue: Self = this.set("originalHighValue", js.undefined)
+    @scala.inline
+    def setOriginalLowValue(value: Double | String): Self = this.set("originalLowValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalLowValue: Self = this.set("originalLowValue", js.undefined)
+    @scala.inline
+    def setOriginalMinValue(value: String | Double | Date): Self = this.set("originalMinValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalMinValue: Self = this.set("originalMinValue", js.undefined)
+    @scala.inline
+    def setOriginalOpenValue(value: Double | String): Self = this.set("originalOpenValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalOpenValue: Self = this.set("originalOpenValue", js.undefined)
+    @scala.inline
+    def setSize(value: Double | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

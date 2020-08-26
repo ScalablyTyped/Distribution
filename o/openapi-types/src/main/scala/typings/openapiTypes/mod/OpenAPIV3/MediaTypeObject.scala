@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MediaTypeObject extends js.Object {
-  var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.undefined
-  var example: js.UndefOr[js.Any] = js.undefined
-  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
-  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
+  var encoding: js.UndefOr[StringDictionary[EncodingObject]] = js.native
+  var example: js.UndefOr[js.Any] = js.native
+  var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.native
+  var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.native
 }
 
 object MediaTypeObject {
   @scala.inline
-  def apply(
-    encoding: StringDictionary[EncodingObject] = null,
-    example: js.Any = null,
-    examples: StringDictionary[ReferenceObject | ExampleObject] = null,
-    schema: ReferenceObject | SchemaObject = null
-  ): MediaTypeObject = {
+  def apply(): MediaTypeObject = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTypeObject]
   }
+  @scala.inline
+  implicit class MediaTypeObjectOps[Self <: MediaTypeObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: StringDictionary[EncodingObject]): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setExample(value: js.Any): Self = this.set("example", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExample: Self = this.set("example", js.undefined)
+    @scala.inline
+    def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = this.set("examples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExamples: Self = this.set("examples", js.undefined)
+    @scala.inline
+    def setSchema(value: ReferenceObject | SchemaObject): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+  }
+  
 }
 

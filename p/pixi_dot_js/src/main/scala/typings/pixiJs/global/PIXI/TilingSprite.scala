@@ -20,6 +20,7 @@ class TilingSprite protected ()
   extends typings.pixiJs.PIXI.TilingSprite {
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, width: Double) = this()
+  def this(texture: typings.pixiJs.PIXI.Texture, width: js.UndefOr[scala.Nothing], height: Double) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, width: Double, height: Double) = this()
 }
 

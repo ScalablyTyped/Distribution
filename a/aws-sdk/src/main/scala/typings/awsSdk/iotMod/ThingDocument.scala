@@ -38,24 +38,52 @@ trait ThingDocument extends js.Object {
 
 object ThingDocument {
   @scala.inline
-  def apply(
-    attributes: Attributes = null,
-    connectivity: ThingConnectivity = null,
-    shadow: JsonDocument = null,
-    thingGroupNames: ThingGroupNameList = null,
-    thingId: ThingId = null,
-    thingName: ThingName = null,
-    thingTypeName: ThingTypeName = null
-  ): ThingDocument = {
+  def apply(): ThingDocument = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (connectivity != null) __obj.updateDynamic("connectivity")(connectivity.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (thingGroupNames != null) __obj.updateDynamic("thingGroupNames")(thingGroupNames.asInstanceOf[js.Any])
-    if (thingId != null) __obj.updateDynamic("thingId")(thingId.asInstanceOf[js.Any])
-    if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
-    if (thingTypeName != null) __obj.updateDynamic("thingTypeName")(thingTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingDocument]
   }
+  @scala.inline
+  implicit class ThingDocumentOps[Self <: ThingDocument] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setConnectivity(value: ThingConnectivity): Self = this.set("connectivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectivity: Self = this.set("connectivity", js.undefined)
+    @scala.inline
+    def setShadow(value: JsonDocument): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setThingGroupNamesVarargs(value: ThingGroupName*): Self = this.set("thingGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setThingGroupNames(value: ThingGroupNameList): Self = this.set("thingGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupNames: Self = this.set("thingGroupNames", js.undefined)
+    @scala.inline
+    def setThingId(value: ThingId): Self = this.set("thingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingId: Self = this.set("thingId", js.undefined)
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingName: Self = this.set("thingName", js.undefined)
+    @scala.inline
+    def setThingTypeName(value: ThingTypeName): Self = this.set("thingTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingTypeName: Self = this.set("thingTypeName", js.undefined)
+  }
+  
 }
 

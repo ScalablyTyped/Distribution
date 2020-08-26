@@ -4,33 +4,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MapTask extends js.Object {
   /** The instructions in the MapTask. */
-  var instructions: js.UndefOr[js.Array[ParallelInstruction]] = js.undefined
+  var instructions: js.UndefOr[js.Array[ParallelInstruction]] = js.native
   /**
     * System-defined name of the stage containing this MapTask.
     * Unique across the workflow.
     */
-  var stageName: js.UndefOr[String] = js.undefined
+  var stageName: js.UndefOr[String] = js.native
   /**
     * System-defined name of this MapTask.
     * Unique across the workflow.
     */
-  var systemName: js.UndefOr[String] = js.undefined
+  var systemName: js.UndefOr[String] = js.native
 }
 
 object MapTask {
   @scala.inline
-  def apply(
-    instructions: js.Array[ParallelInstruction] = null,
-    stageName: String = null,
-    systemName: String = null
-  ): MapTask = {
+  def apply(): MapTask = {
     val __obj = js.Dynamic.literal()
-    if (instructions != null) __obj.updateDynamic("instructions")(instructions.asInstanceOf[js.Any])
-    if (stageName != null) __obj.updateDynamic("stageName")(stageName.asInstanceOf[js.Any])
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTask]
   }
+  @scala.inline
+  implicit class MapTaskOps[Self <: MapTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstructionsVarargs(value: ParallelInstruction*): Self = this.set("instructions", js.Array(value :_*))
+    @scala.inline
+    def setInstructions(value: js.Array[ParallelInstruction]): Self = this.set("instructions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstructions: Self = this.set("instructions", js.undefined)
+    @scala.inline
+    def setStageName(value: String): Self = this.set("stageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("stageName", js.undefined)
+    @scala.inline
+    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemName: Self = this.set("systemName", js.undefined)
+  }
+  
 }
 

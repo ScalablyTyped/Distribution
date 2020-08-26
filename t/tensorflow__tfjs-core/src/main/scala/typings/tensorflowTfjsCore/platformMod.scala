@@ -27,6 +27,7 @@ object platformMod extends js.Object {
       *     https://developer.mozilla.org/en-US/docs/Web/API/Request/Request
       */
     def fetch(path: String): js.Promise[Response] = js.native
+    def fetch(path: String, requestInits: js.UndefOr[scala.Nothing], options: RequestDetails): js.Promise[Response] = js.native
     def fetch(path: String, requestInits: RequestInit): js.Promise[Response] = js.native
     def fetch(path: String, requestInits: RequestInit, options: RequestDetails): js.Promise[Response] = js.native
     /**

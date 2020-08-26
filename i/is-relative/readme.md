@@ -12,7 +12,7 @@ Returns `true` if the path appears to be relative.
 | Keywords           | absolute, check, file, filepath, is, normalize, path, path.relative, relative, resolve, slash, slashes, uri, url |
 | # releases         | 0 |
 | # dependents       | 78 |
-| # downloads        | 129162711 |
+| # downloads        | 129619415 |
 | # stars            | 1 |
 
 ## Links

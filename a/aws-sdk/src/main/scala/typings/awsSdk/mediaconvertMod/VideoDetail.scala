@@ -18,11 +18,30 @@ trait VideoDetail extends js.Object {
 
 object VideoDetail {
   @scala.inline
-  def apply(HeightInPx: js.UndefOr[integer] = js.undefined, WidthInPx: js.UndefOr[integer] = js.undefined): VideoDetail = {
+  def apply(): VideoDetail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(HeightInPx)) __obj.updateDynamic("HeightInPx")(HeightInPx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(WidthInPx)) __obj.updateDynamic("WidthInPx")(WidthInPx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoDetail]
   }
+  @scala.inline
+  implicit class VideoDetailOps[Self <: VideoDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeightInPx(value: integer): Self = this.set("HeightInPx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightInPx: Self = this.set("HeightInPx", js.undefined)
+    @scala.inline
+    def setWidthInPx(value: integer): Self = this.set("WidthInPx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidthInPx: Self = this.set("WidthInPx", js.undefined)
+  }
+  
 }
 

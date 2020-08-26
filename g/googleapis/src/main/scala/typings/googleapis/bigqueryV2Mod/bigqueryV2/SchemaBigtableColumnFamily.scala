@@ -46,20 +46,44 @@ trait SchemaBigtableColumnFamily extends js.Object {
 
 object SchemaBigtableColumnFamily {
   @scala.inline
-  def apply(
-    columns: js.Array[SchemaBigtableColumn] = null,
-    encoding: String = null,
-    familyId: String = null,
-    onlyReadLatest: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null
-  ): SchemaBigtableColumnFamily = {
+  def apply(): SchemaBigtableColumnFamily = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (familyId != null) __obj.updateDynamic("familyId")(familyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyReadLatest)) __obj.updateDynamic("onlyReadLatest")(onlyReadLatest.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBigtableColumnFamily]
   }
+  @scala.inline
+  implicit class SchemaBigtableColumnFamilyOps[Self <: SchemaBigtableColumnFamily] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: SchemaBigtableColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[SchemaBigtableColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFamilyId(value: String): Self = this.set("familyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilyId: Self = this.set("familyId", js.undefined)
+    @scala.inline
+    def setOnlyReadLatest(value: Boolean): Self = this.set("onlyReadLatest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyReadLatest: Self = this.set("onlyReadLatest", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

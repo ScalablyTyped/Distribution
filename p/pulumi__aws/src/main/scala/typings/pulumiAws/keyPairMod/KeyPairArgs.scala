@@ -21,24 +21,43 @@ trait KeyPairArgs extends js.Object {
     */
   val publicKey: Input[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object KeyPairArgs {
   @scala.inline
-  def apply(
-    publicKey: Input[String],
-    keyName: Input[String] = null,
-    keyNamePrefix: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): KeyPairArgs = {
+  def apply(publicKey: Input[String]): KeyPairArgs = {
     val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (keyNamePrefix != null) __obj.updateDynamic("keyNamePrefix")(keyNamePrefix.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPairArgs]
   }
+  @scala.inline
+  implicit class KeyPairArgsOps[Self <: KeyPairArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPublicKey(value: Input[String]): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyName(value: Input[String]): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setKeyNamePrefix(value: Input[String]): Self = this.set("keyNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyNamePrefix: Self = this.set("keyNamePrefix", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

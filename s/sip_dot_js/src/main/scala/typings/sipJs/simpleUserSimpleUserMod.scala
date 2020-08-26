@@ -8,6 +8,7 @@ import typings.sipJs.registererRegisterOptionsMod.RegistererRegisterOptions
 import typings.sipJs.registererUnregisterOptionsMod.RegistererUnregisterOptions
 import typings.sipJs.simpleUserDelegateMod.SimpleUserDelegate
 import typings.sipJs.simpleUserOptionsMod.SimpleUserOptions
+import typings.std.MediaStream
 import typings.std.MediaStreamTrack
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,40 +35,21 @@ object simpleUserSimpleUserMod extends js.Object {
     /** Helper function to remove media from html elements. */
     var cleanupMedia: js.Any = js.native
     var connectRequested: js.Any = js.native
-    /** Media constraints. */
-    val constraints: js.Any = js.native
     /** Delegate. */
     var delegate: js.UndefOr[SimpleUserDelegate] = js.native
     /** Helper function to enable/disable media tracks. */
     var enableSenderTracks: js.Any = js.native
-    /** The receiver media track, if available. */
-    var getReceiverTrack: js.Any = js.native
-    /** The sender media track, if available. */
-    var getSenderTrack: js.Any = js.native
     var held: js.Any = js.native
-    /**
-      * Instance identifier.
-      * @internal
-      */
-    val id: String = js.native
     /**
       * Setup session delegate and state change handler.
       * @param session - Session to setup
       * @param referralInviterOptions - Options for any Inviter created as result of a REFER.
       */
     var initSession: js.Any = js.native
-    /** The local audio track, if available. */
-    val localAudioTrack: js.UndefOr[MediaStreamTrack] = js.native
-    /** The local video track, if available. */
-    val localVideoTrack: js.UndefOr[MediaStreamTrack] = js.native
     var logger: js.Any = js.native
     var options: js.Any = js.native
     var registerRequested: js.Any = js.native
     var registerer: js.Any = js.native
-    /** The remote audio track, if available. */
-    val remoteAudioTrack: js.UndefOr[MediaStreamTrack] = js.native
-    /** The remote video track, if available. */
-    val remoteVideoTrack: js.UndefOr[MediaStreamTrack] = js.native
     /** Helper function to init send then send invite. */
     var sendInvite: js.Any = js.native
     var session: js.Any = js.native
@@ -100,6 +82,7 @@ object simpleUserSimpleUserMod extends js.Object {
       * Accept an incoming INVITE request creating a new Session.
       * Resolves with the response is sent, otherwise rejects.
       * Use `onCallAnswered` delegate method to determine if and when call is established.
+      * @param invitationAcceptOptions - Optional options for Inviter.accept().
       */
     def answer(): js.Promise[Unit] = js.native
     def answer(invitationAcceptOptions: InvitationAcceptOptions): js.Promise[Unit] = js.native
@@ -110,8 +93,15 @@ object simpleUserSimpleUserMod extends js.Object {
       * Resolves when the INVITE request is sent, otherwise rejects.
       * Use `onCallAnswered` delegate method to determine if Session is established.
       * @param destination - The target destination to call. A SIP address to send the INVITE to.
+      * @param inviterOptions - Optional options for Inviter constructor.
+      * @param inviterInviteOptions - Optional options for Inviter.invite().
       */
     def call(destination: String): js.Promise[Unit] = js.native
+    def call(
+      destination: String,
+      inviterOptions: js.UndefOr[scala.Nothing],
+      inviterInviteOptions: InviterInviteOptions
+    ): js.Promise[Unit] = js.native
     def call(destination: String, inviterOptions: InviterOptions): js.Promise[Unit] = js.native
     def call(destination: String, inviterOptions: InviterOptions, inviterInviteOptions: InviterInviteOptions): js.Promise[Unit] = js.native
     /**
@@ -120,6 +110,8 @@ object simpleUserSimpleUserMod extends js.Object {
       * Start the UserAgent's WebSocket Transport.
       */
     def connect(): js.Promise[Unit] = js.native
+    /** Media constraints. */
+    /* private */ def constraints: js.Any = js.native
     /**
       * Decline an incoming call.
       * @remarks
@@ -152,6 +144,11 @@ object simpleUserSimpleUserMod extends js.Object {
       */
     def hold(): js.Promise[Unit] = js.native
     /**
+      * Instance identifier.
+      * @internal
+      */
+    def id: String = js.native
+    /**
       * Return true if connected.
       */
     def isConnected(): Boolean = js.native
@@ -167,6 +164,18 @@ object simpleUserSimpleUserMod extends js.Object {
       * True if sender's media track is disabled.
       */
     def isMuted(): Boolean = js.native
+    /**
+      * The local audio track, if available.
+      * @deprecated Use localMediaStream and get track from the stream.
+      */
+    def localAudioTrack: js.UndefOr[MediaStreamTrack] = js.native
+    /** The local media stream. Undefined if call not answered. */
+    def localMediaStream: js.UndefOr[MediaStream] = js.native
+    /**
+      * The local video track, if available.
+      * @deprecated Use localMediaStream and get track from the stream.
+      */
+    def localVideoTrack: js.UndefOr[MediaStreamTrack] = js.native
     /**
       * Send a message.
       * @remarks
@@ -187,8 +196,21 @@ object simpleUserSimpleUserMod extends js.Object {
       * Resolves when the REGISTER request is sent, otherwise rejects.
       */
     def register(): js.Promise[Unit] = js.native
+    def register(registererOptions: js.UndefOr[scala.Nothing], registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
     def register(registererOptions: RegistererOptions): js.Promise[Unit] = js.native
     def register(registererOptions: RegistererOptions, registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
+    /**
+      * The remote audio track, if available.
+      * @deprecated Use remoteMediaStream and get track from the stream.
+      */
+    def remoteAudioTrack: js.UndefOr[MediaStreamTrack] = js.native
+    /** The remote media stream. Undefined if call not answered. */
+    def remoteMediaStream: js.UndefOr[MediaStream] = js.native
+    /**
+      * The remote video track, if available.
+      * @deprecated Use remoteMediaStream and get track from the stream.
+      */
+    def remoteVideoTrack: js.UndefOr[MediaStreamTrack] = js.native
     /**
       * Send DTMF.
       * @remarks

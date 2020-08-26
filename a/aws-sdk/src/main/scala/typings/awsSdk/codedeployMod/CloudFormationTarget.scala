@@ -38,24 +38,52 @@ trait CloudFormationTarget extends js.Object {
 
 object CloudFormationTarget {
   @scala.inline
-  def apply(
-    deploymentId: DeploymentId = null,
-    lastUpdatedAt: Time = null,
-    lifecycleEvents: LifecycleEventList = null,
-    resourceType: CloudFormationResourceType = null,
-    status: TargetStatus = null,
-    targetId: TargetId = null,
-    targetVersionWeight: js.UndefOr[TrafficWeight] = js.undefined
-  ): CloudFormationTarget = {
+  def apply(): CloudFormationTarget = {
     val __obj = js.Dynamic.literal()
-    if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (lifecycleEvents != null) __obj.updateDynamic("lifecycleEvents")(lifecycleEvents.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetVersionWeight)) __obj.updateDynamic("targetVersionWeight")(targetVersionWeight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFormationTarget]
   }
+  @scala.inline
+  implicit class CloudFormationTargetOps[Self <: CloudFormationTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: Time): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = this.set("lifecycleEvents", js.Array(value :_*))
+    @scala.inline
+    def setLifecycleEvents(value: LifecycleEventList): Self = this.set("lifecycleEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleEvents: Self = this.set("lifecycleEvents", js.undefined)
+    @scala.inline
+    def setResourceType(value: CloudFormationResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setStatus(value: TargetStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetId(value: TargetId): Self = this.set("targetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("targetId", js.undefined)
+    @scala.inline
+    def setTargetVersionWeight(value: TrafficWeight): Self = this.set("targetVersionWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetVersionWeight: Self = this.set("targetVersionWeight", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RenewLeaseRequest extends js.Object {
   /**
     * Required.
@@ -14,7 +15,7 @@ trait RenewLeaseRequest extends js.Object {
     * The maximum lease duration is 1 week.
     * `new_lease_duration` will be truncated to the nearest second.
     */
-  var newLeaseDuration: js.UndefOr[String] = js.undefined
+  var newLeaseDuration: js.UndefOr[String] = js.native
   /**
     * The response_view specifies which subset of the Task will be
     * returned.
@@ -29,7 +30,7 @@ trait RenewLeaseRequest extends js.Object {
     * [Google IAM](/iam/) permission on the
     * Task.name resource.
     */
-  var responseView: js.UndefOr[String] = js.undefined
+  var responseView: js.UndefOr[String] = js.native
   /**
     * Required.
     *
@@ -38,17 +39,39 @@ trait RenewLeaseRequest extends js.Object {
     * CloudTasks.RenewLease. This restriction is to check that
     * the caller is renewing the correct task.
     */
-  var scheduleTime: js.UndefOr[String] = js.undefined
+  var scheduleTime: js.UndefOr[String] = js.native
 }
 
 object RenewLeaseRequest {
   @scala.inline
-  def apply(newLeaseDuration: String = null, responseView: String = null, scheduleTime: String = null): RenewLeaseRequest = {
+  def apply(): RenewLeaseRequest = {
     val __obj = js.Dynamic.literal()
-    if (newLeaseDuration != null) __obj.updateDynamic("newLeaseDuration")(newLeaseDuration.asInstanceOf[js.Any])
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewLeaseRequest]
   }
+  @scala.inline
+  implicit class RenewLeaseRequestOps[Self <: RenewLeaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewLeaseDuration(value: String): Self = this.set("newLeaseDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewLeaseDuration: Self = this.set("newLeaseDuration", js.undefined)
+    @scala.inline
+    def setResponseView(value: String): Self = this.set("responseView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseView: Self = this.set("responseView", js.undefined)
+    @scala.inline
+    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 package typings.mochaSugarFree.mod
 
 import typings.mocha.mod.Test_
-import typings.mochaSugarFree.anon.OptionsasyncfalsefnTestCa
+import typings.mochaSugarFree.anon.Optionsasyncfalseundefine
 import typings.mochaSugarFree.anon.OptionsasynctruefnTestCas
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,14 +32,14 @@ trait TestFunction extends js.Object {
   var skip_Original: PendingTestFunction = js.native
   def apply(fn: TestCase): Test_ = js.native
   // tslint:disable-next-line: unified-signatures
-  def apply(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def apply(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def apply(options: Optionsasyncfalseundefine): Test_ = js.native
+  def apply(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   def apply(options: OptionsasynctruefnTestCas): Test_ = js.native
   def apply(options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
   def apply(title: String): Test_ = js.native
   def apply(title: String, fn: TestCase): Test_ = js.native
-  def apply(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def apply(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def apply(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def apply(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   def apply(title: String, options: OptionsasynctruefnTestCas): Test_ = js.native
   def apply(title: String, options: OptionsasynctruefnTestCas, fn: TestCaseWithDone): Test_ = js.native
   /**
@@ -54,8 +54,8 @@ trait TestFunction extends js.Object {
     *
     * Indicates this test should be executed exclusively.
     */
-  def only(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def only(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def only(options: Optionsasyncfalseundefine): Test_ = js.native
+  def only(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd, tdd, qunit]
     *
@@ -75,8 +75,8 @@ trait TestFunction extends js.Object {
     *
     * Indicates this test should be executed exclusively.
     */
-  def only(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def only(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def only(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def only(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd, tdd, qunit]
     *
@@ -96,8 +96,8 @@ trait TestFunction extends js.Object {
     *
     * Indicates this test should not be executed.
     */
-  def skip(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def skip(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def skip(options: Optionsasyncfalseundefine): Test_ = js.native
+  def skip(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd, tdd, qunit]
     *
@@ -117,8 +117,8 @@ trait TestFunction extends js.Object {
     *
     * Indicates this test should not be executed.
     */
-  def skip(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def skip(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def skip(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def skip(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd, tdd, qunit]
     *

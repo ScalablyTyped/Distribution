@@ -12,11 +12,30 @@ trait IsInTrial extends js.Object {
 
 object IsInTrial {
   @scala.inline
-  def apply(isInTrial: js.UndefOr[Boolean] = js.undefined, trialEndTime: String = null): IsInTrial = {
+  def apply(): IsInTrial = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isInTrial)) __obj.updateDynamic("isInTrial")(isInTrial.get.asInstanceOf[js.Any])
-    if (trialEndTime != null) __obj.updateDynamic("trialEndTime")(trialEndTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsInTrial]
   }
+  @scala.inline
+  implicit class IsInTrialOps[Self <: IsInTrial] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsInTrial(value: Boolean): Self = this.set("isInTrial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsInTrial: Self = this.set("isInTrial", js.undefined)
+    @scala.inline
+    def setTrialEndTime(value: String): Self = this.set("trialEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialEndTime: Self = this.set("trialEndTime", js.undefined)
+  }
+  
 }
 

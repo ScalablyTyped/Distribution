@@ -20,7 +20,7 @@ object treeBuilderMod extends js.Object {
     var newNode: js.Any = js.native
     var nodes: js.Any = js.native
     var rewriteAndNormalizeError: js.Any = js.native
-    var rewriteError: js.UndefOr[js.Any] = js.native
+    var rewriteError: js.Any = js.native
     var rootNode: js.Any = js.native
     var startHrTime: js.UndefOr[js.Tuple2[Double, Double]] = js.native
     var stopped: js.Any = js.native

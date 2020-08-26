@@ -698,9 +698,145 @@ object PersistedModel extends js.Object {
     * argument for the next replication
     */
   def replicate(): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: js.UndefOr[scala.Nothing], targetModel: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    optionsFilter: js.Any
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: js.UndefOr[scala.Nothing], targetModel: Model): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: Model,
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: Model,
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: Model,
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: js.UndefOr[scala.Nothing], targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: Model,
+    options: js.Any,
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: js.UndefOr[scala.Nothing], targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: js.UndefOr[scala.Nothing],
+    targetModel: Model,
+    options: js.Any,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
   def replicate(since: Double): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double, targetModel: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double, targetModel: js.UndefOr[scala.Nothing], options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
   def replicate(since: Double, targetModel: Model): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: Model,
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
+  def replicate(since: Double, targetModel: Model, options: js.UndefOr[scala.Nothing], optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: Model,
+    options: js.UndefOr[scala.Nothing],
+    optionsFilter: js.Any,
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
   def replicate(since: Double, targetModel: Model, options: js.Any): js.Promise[Conflicts] | Unit = js.native
+  def replicate(
+    since: Double,
+    targetModel: Model,
+    options: js.Any,
+    optionsFilter: js.UndefOr[scala.Nothing],
+    callback: js.Function3[/* err */ Error, /* conflicts */ js.Array[Conflict], /* param */ js.Any, Unit]
+  ): js.Promise[Conflicts] | Unit = js.native
   def replicate(since: Double, targetModel: Model, options: js.Any, optionsFilter: js.Any): js.Promise[Conflicts] | Unit = js.native
   def replicate(
     since: Double,
@@ -764,6 +900,7 @@ object PersistedModel extends js.Object {
     *
     */
   def updateAll(whereOrData: js.Any, callback: CallbackWithMultipleResults[_, Double]): Unit = js.native
+  def updateAll(where: js.UndefOr[scala.Nothing], data: js.Any): js.Promise[Double] = js.native
   def updateAll(where: js.Any): js.Promise[Double] = js.native
   def updateAll(where: js.Any, data: js.Any): js.Promise[Double] = js.native
   /**

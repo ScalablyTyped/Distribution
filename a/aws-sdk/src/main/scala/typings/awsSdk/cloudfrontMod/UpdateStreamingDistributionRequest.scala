@@ -22,10 +22,30 @@ trait UpdateStreamingDistributionRequest extends js.Object {
 
 object UpdateStreamingDistributionRequest {
   @scala.inline
-  def apply(Id: String, StreamingDistributionConfig: StreamingDistributionConfig, IfMatch: String = null): UpdateStreamingDistributionRequest = {
+  def apply(Id: String, StreamingDistributionConfig: StreamingDistributionConfig): UpdateStreamingDistributionRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], StreamingDistributionConfig = StreamingDistributionConfig.asInstanceOf[js.Any])
-    if (IfMatch != null) __obj.updateDynamic("IfMatch")(IfMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStreamingDistributionRequest]
   }
+  @scala.inline
+  implicit class UpdateStreamingDistributionRequestOps[Self <: UpdateStreamingDistributionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamingDistributionConfig(value: StreamingDistributionConfig): Self = this.set("StreamingDistributionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIfMatch(value: String): Self = this.set("IfMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMatch: Self = this.set("IfMatch", js.undefined)
+  }
+  
 }
 

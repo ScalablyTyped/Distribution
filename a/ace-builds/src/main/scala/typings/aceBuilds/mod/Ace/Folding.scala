@@ -15,7 +15,11 @@ trait Folding extends js.Object {
   def expandFold(fold: Fold): Unit = js.native
   def expandFolds(folds: js.Array[Fold]): Unit = js.native
   def foldAll(): Unit = js.native
+  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
+  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double): Unit = js.native
+  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double, depth: Double): Unit = js.native
   def foldAll(startRow: Double): Unit = js.native
+  def foldAll(startRow: Double, endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double, depth: Double): Unit = js.native
   def getAllFolds(): js.Array[Fold] = js.native
@@ -52,6 +56,7 @@ trait Folding extends js.Object {
   def getFoldRowStart(docRow: Double): Double = js.native
   def getFoldRowStart(docRow: Double, startFoldRow: FoldLine): Double = js.native
   def getFoldStringAt(row: Double, column: Double): String | Null = js.native
+  def getFoldStringAt(row: Double, column: Double, trim: js.UndefOr[scala.Nothing], foldLine: FoldLine): String | Null = js.native
   def getFoldStringAt(row: Double, column: Double, trim: Double): String | Null = js.native
   def getFoldStringAt(row: Double, column: Double, trim: Double, foldLine: FoldLine): String | Null = js.native
   def getFoldedRowCount(first: Double, last: Double): Double = js.native

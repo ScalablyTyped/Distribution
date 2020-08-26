@@ -33,6 +33,7 @@ class RNN_ protected () extends Layer {
   val unroll: Boolean = js.native
   def getInitialState(inputs: Tensor[Rank]): js.Array[Tensor[Rank]] = js.native
   def getStates(): js.Array[Tensor[Rank]] = js.native
+  def resetStates(states: js.UndefOr[scala.Nothing], training: Boolean): Unit = js.native
   def resetStates(states: js.Array[Tensor[Rank]]): Unit = js.native
   def resetStates(states: js.Array[Tensor[Rank]], training: Boolean): Unit = js.native
   def resetStates(states: Tensor[Rank]): Unit = js.native

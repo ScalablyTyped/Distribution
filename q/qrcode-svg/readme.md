@@ -12,7 +12,7 @@ A simple QR Code generator in pure JavaScript
 | Keywords           | qrcode, svg |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 73120 |
+| # downloads        | 76603 |
 | # stars            | 1 |
 
 ## Links

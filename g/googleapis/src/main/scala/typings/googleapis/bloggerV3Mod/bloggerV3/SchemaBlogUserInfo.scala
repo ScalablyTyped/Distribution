@@ -22,12 +22,34 @@ trait SchemaBlogUserInfo extends js.Object {
 
 object SchemaBlogUserInfo {
   @scala.inline
-  def apply(blog: SchemaBlog = null, blog_user_info: SchemaBlogPerUserInfo = null, kind: String = null): SchemaBlogUserInfo = {
+  def apply(): SchemaBlogUserInfo = {
     val __obj = js.Dynamic.literal()
-    if (blog != null) __obj.updateDynamic("blog")(blog.asInstanceOf[js.Any])
-    if (blog_user_info != null) __obj.updateDynamic("blog_user_info")(blog_user_info.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBlogUserInfo]
   }
+  @scala.inline
+  implicit class SchemaBlogUserInfoOps[Self <: SchemaBlogUserInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlog(value: SchemaBlog): Self = this.set("blog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlog: Self = this.set("blog", js.undefined)
+    @scala.inline
+    def setBlog_user_info(value: SchemaBlogPerUserInfo): Self = this.set("blog_user_info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlog_user_info: Self = this.set("blog_user_info", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

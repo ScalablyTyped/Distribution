@@ -12,7 +12,7 @@ Dependency Injection for Node.js. Heavily inspired by AngularJS.
 | Keywords           | di, dependency, injection, injector |
 | # releases         | 1 |
 | # dependents       | 96 |
-| # downloads        | 61549442 |
+| # downloads        | 63675110 |
 | # stars            | 6 |
 
 ## Links

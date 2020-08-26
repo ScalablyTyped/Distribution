@@ -14,10 +14,26 @@ trait CreateRouteTableResult extends js.Object {
 
 object CreateRouteTableResult {
   @scala.inline
-  def apply(RouteTable: RouteTable = null): CreateRouteTableResult = {
+  def apply(): CreateRouteTableResult = {
     val __obj = js.Dynamic.literal()
-    if (RouteTable != null) __obj.updateDynamic("RouteTable")(RouteTable.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRouteTableResult]
   }
+  @scala.inline
+  implicit class CreateRouteTableResultOps[Self <: CreateRouteTableResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRouteTable(value: RouteTable): Self = this.set("RouteTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteTable: Self = this.set("RouteTable", js.undefined)
+  }
+  
 }
 

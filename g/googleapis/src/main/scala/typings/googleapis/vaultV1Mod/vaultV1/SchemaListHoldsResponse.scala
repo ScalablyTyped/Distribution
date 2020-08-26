@@ -22,11 +22,32 @@ trait SchemaListHoldsResponse extends js.Object {
 
 object SchemaListHoldsResponse {
   @scala.inline
-  def apply(holds: js.Array[SchemaHold] = null, nextPageToken: String = null): SchemaListHoldsResponse = {
+  def apply(): SchemaListHoldsResponse = {
     val __obj = js.Dynamic.literal()
-    if (holds != null) __obj.updateDynamic("holds")(holds.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListHoldsResponse]
   }
+  @scala.inline
+  implicit class SchemaListHoldsResponseOps[Self <: SchemaListHoldsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHoldsVarargs(value: SchemaHold*): Self = this.set("holds", js.Array(value :_*))
+    @scala.inline
+    def setHolds(value: js.Array[SchemaHold]): Self = this.set("holds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHolds: Self = this.set("holds", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

@@ -6,42 +6,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableProps
   extends AllHTMLAttributes[Table]
      with ClassAttributes[Table] {
-  var bordered: js.UndefOr[Boolean] = js.undefined
-  var bsClass: js.UndefOr[String] = js.undefined
-  var condensed: js.UndefOr[Boolean] = js.undefined
-  var fill: js.UndefOr[Boolean] = js.undefined
-  var hover: js.UndefOr[Boolean] = js.undefined
-  var responsive: js.UndefOr[Boolean] = js.undefined
-  var striped: js.UndefOr[Boolean] = js.undefined
+  var bordered: js.UndefOr[Boolean] = js.native
+  var bsClass: js.UndefOr[String] = js.native
+  var condensed: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.native
+  var hover: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.native
+  var striped: js.UndefOr[Boolean] = js.native
 }
 
 object TableProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Table] = null,
-    ClassAttributes: ClassAttributes[Table] = null,
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    bsClass: String = null,
-    condensed: js.UndefOr[Boolean] = js.undefined,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    hover: js.UndefOr[Boolean] = js.undefined,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    striped: js.UndefOr[Boolean] = js.undefined
-  ): TableProps = {
+  def apply(): TableProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(condensed)) __obj.updateDynamic("condensed")(condensed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hover)) __obj.updateDynamic("hover")(hover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableProps]
   }
+  @scala.inline
+  implicit class TablePropsOps[Self <: TableProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBordered(value: Boolean): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBordered: Self = this.set("bordered", js.undefined)
+    @scala.inline
+    def setBsClass(value: String): Self = this.set("bsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsClass: Self = this.set("bsClass", js.undefined)
+    @scala.inline
+    def setCondensed(value: Boolean): Self = this.set("condensed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondensed: Self = this.set("condensed", js.undefined)
+    @scala.inline
+    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setHover(value: Boolean): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setStriped(value: Boolean): Self = this.set("striped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStriped: Self = this.set("striped", js.undefined)
+  }
+  
 }
 

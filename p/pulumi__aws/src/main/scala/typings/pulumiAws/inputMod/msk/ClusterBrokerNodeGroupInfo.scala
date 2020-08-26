@@ -35,12 +35,39 @@ object ClusterBrokerNodeGroupInfo {
     clientSubnets: Input[js.Array[Input[String]]],
     ebsVolumeSize: Input[Double],
     instanceType: Input[String],
-    securityGroups: Input[js.Array[Input[String]]],
-    azDistribution: Input[String] = null
+    securityGroups: Input[js.Array[Input[String]]]
   ): ClusterBrokerNodeGroupInfo = {
     val __obj = js.Dynamic.literal(clientSubnets = clientSubnets.asInstanceOf[js.Any], ebsVolumeSize = ebsVolumeSize.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any])
-    if (azDistribution != null) __obj.updateDynamic("azDistribution")(azDistribution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterBrokerNodeGroupInfo]
   }
+  @scala.inline
+  implicit class ClusterBrokerNodeGroupInfoOps[Self <: ClusterBrokerNodeGroupInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientSubnetsVarargs(value: Input[String]*): Self = this.set("clientSubnets", js.Array(value :_*))
+    @scala.inline
+    def setClientSubnets(value: Input[js.Array[Input[String]]]): Self = this.set("clientSubnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEbsVolumeSize(value: Input[Double]): Self = this.set("ebsVolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: Input[String]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAzDistribution(value: Input[String]): Self = this.set("azDistribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAzDistribution: Self = this.set("azDistribution", js.undefined)
+  }
+  
 }
 

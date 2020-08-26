@@ -10,6 +10,7 @@ class KeyIterator protected ()
   extends typings.ydnDb.ydn.db.Iterator {
   def this(store_name: String) = this()
   def this(store_name: String, key_range: js.Any) = this()
+  def this(store_name: String, key_range: js.UndefOr[scala.Nothing], reverse: Boolean) = this()
   def this(store_name: String, key_range: js.Any, reverse: Boolean) = this()
 }
 

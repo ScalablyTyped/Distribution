@@ -17,5 +17,6 @@ import scala.scalajs.js.annotation._
   * generated via DraftEntity.create() and used to obtain entity metadata
   * via DraftEntity.get().
   */
+@js.native
 trait DraftEntity extends js.Object
 

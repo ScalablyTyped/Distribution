@@ -26,16 +26,9 @@ object updateApnsVoipChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateApnsVoipChannelInput) = this()
-    /* CompleteClass */
-    override val input: UpdateApnsVoipChannelInput = js.native
     val middlewareStack: MiddlewareStack[UpdateApnsVoipChannelInput, UpdateApnsVoipChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateApnsVoipChannelInput, UpdateApnsVoipChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateApnsVoipChannelInput, UpdateApnsVoipChannelOutput] = js.native
   }

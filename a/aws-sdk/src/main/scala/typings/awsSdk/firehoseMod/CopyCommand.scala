@@ -22,15 +22,32 @@ trait CopyCommand extends js.Object {
 
 object CopyCommand {
   @scala.inline
-  def apply(
-    DataTableName: DataTableName,
-    CopyOptions: CopyOptions = null,
-    DataTableColumns: DataTableColumns = null
-  ): CopyCommand = {
+  def apply(DataTableName: DataTableName): CopyCommand = {
     val __obj = js.Dynamic.literal(DataTableName = DataTableName.asInstanceOf[js.Any])
-    if (CopyOptions != null) __obj.updateDynamic("CopyOptions")(CopyOptions.asInstanceOf[js.Any])
-    if (DataTableColumns != null) __obj.updateDynamic("DataTableColumns")(DataTableColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyCommand]
   }
+  @scala.inline
+  implicit class CopyCommandOps[Self <: CopyCommand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataTableName(value: DataTableName): Self = this.set("DataTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopyOptions(value: CopyOptions): Self = this.set("CopyOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyOptions: Self = this.set("CopyOptions", js.undefined)
+    @scala.inline
+    def setDataTableColumns(value: DataTableColumns): Self = this.set("DataTableColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTableColumns: Self = this.set("DataTableColumns", js.undefined)
+  }
+  
 }
 

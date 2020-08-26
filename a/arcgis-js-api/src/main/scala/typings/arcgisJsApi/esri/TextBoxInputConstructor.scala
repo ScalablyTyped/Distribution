@@ -1,0 +1,15 @@
+package typings.arcgisJsApi.esri
+
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable1
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TextBoxInputConstructor
+  extends Instantiable0[TextBoxInput]
+     with Instantiable1[/* properties */ TextBoxInputProperties, TextBoxInput] {
+  def fromJSON(json: js.Any): TextBoxInput = js.native
+}
+

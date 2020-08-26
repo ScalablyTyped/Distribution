@@ -1001,10 +1001,18 @@ trait ojChart_[K, D] extends dvtBaseComponent[ojChartSettableProperties[K, D]] {
   def getY2Axis(): js.Object = js.native
   def getYAxis(): js.Object = js.native
   def setProperties(properties: ojChartSettablePropertiesLenient[K, D]): Unit = js.native
-  def setProperty(
-    property: `type`,
-    value: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
-  ): Unit = js.native
+  def setProperty(property: `type`, value: area): Unit = js.native
+  def setProperty(property: `type`, value: bar): Unit = js.native
+  def setProperty(property: `type`, value: boxPlot): Unit = js.native
+  def setProperty(property: `type`, value: bubble): Unit = js.native
+  def setProperty(property: `type`, value: combo): Unit = js.native
+  def setProperty(property: `type`, value: funnel): Unit = js.native
+  def setProperty(property: `type`, value: line): Unit = js.native
+  def setProperty(property: `type`, value: lineWithArea): Unit = js.native
+  def setProperty(property: `type`, value: pie): Unit = js.native
+  def setProperty(property: `type`, value: pyramid): Unit = js.native
+  def setProperty(property: `type`, value: scatter): Unit = js.native
+  def setProperty(property: `type`, value: stock): Unit = js.native
   def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
   def setProperty(property: animationOnDataChange, value: none): Unit = js.native
   def setProperty(property: animationOnDataChange, value: slideToLeft): Unit = js.native

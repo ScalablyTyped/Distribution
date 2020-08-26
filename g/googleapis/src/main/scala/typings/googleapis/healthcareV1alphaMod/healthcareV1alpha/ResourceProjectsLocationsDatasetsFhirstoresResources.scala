@@ -38,6 +38,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def _search(): GaxiosPromise[SchemaHttpBody] = js.native
   def _search(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def _search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def _search(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesSearch): GaxiosPromise[SchemaHttpBody] = js.native
   def _search(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesSearch,
@@ -75,6 +76,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def conditionalDeleteResource(): GaxiosPromise[SchemaEmpty] = js.native
   def conditionalDeleteResource(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def conditionalDeleteResource(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def conditionalDeleteResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesConditionaldeleteresource): GaxiosPromise[SchemaEmpty] = js.native
   def conditionalDeleteResource(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesConditionaldeleteresource,
@@ -112,6 +114,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def conditionalPatchResource(): GaxiosPromise[SchemaHttpBody] = js.native
   def conditionalPatchResource(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def conditionalPatchResource(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def conditionalPatchResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesConditionalpatchresource): GaxiosPromise[SchemaHttpBody] = js.native
   def conditionalPatchResource(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesConditionalpatchresource,
@@ -149,6 +152,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def conditionalUpdateResource(): GaxiosPromise[SchemaHttpBody] = js.native
   def conditionalUpdateResource(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def conditionalUpdateResource(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def conditionalUpdateResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesConditionalupdateresource): GaxiosPromise[SchemaHttpBody] = js.native
   def conditionalUpdateResource(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesConditionalupdateresource,
@@ -185,6 +189,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def createResource(): GaxiosPromise[SchemaHttpBody] = js.native
   def createResource(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def createResource(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def createResource(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesCreateresource): GaxiosPromise[SchemaHttpBody] = js.native
   def createResource(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesCreateresource,
@@ -222,6 +227,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def delete(): GaxiosPromise[SchemaHttpBody] = js.native
   def delete(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesDelete): GaxiosPromise[SchemaHttpBody] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesDelete,
@@ -257,6 +263,8 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
   def delete$purge(): GaxiosPromise[SchemaEmpty] = js.native
   @JSName("delete$purge")
   def delete$purge(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  @JSName("delete$purge")
+  def delete$purge(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   @JSName("delete$purge")
   def delete$purge(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesDeletepurge): GaxiosPromise[SchemaEmpty] = js.native
   @JSName("delete$purge")
@@ -295,6 +303,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def get(): GaxiosPromise[SchemaHttpBody] = js.native
   def get(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesGet): GaxiosPromise[SchemaHttpBody] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesGet,
@@ -326,6 +335,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def getMetadata(): GaxiosPromise[SchemaHttpBody] = js.native
   def getMetadata(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def getMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def getMetadata(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesGetmetadata): GaxiosPromise[SchemaHttpBody] = js.native
   def getMetadata(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesGetmetadata,
@@ -360,6 +370,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def patch(): GaxiosPromise[SchemaHttpBody] = js.native
   def patch(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def patch(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesPatch): GaxiosPromise[SchemaHttpBody] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesPatch,
@@ -399,6 +410,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def searchResources(): GaxiosPromise[SchemaHttpBody] = js.native
   def searchResources(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def searchResources(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def searchResources(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesSearchresources): GaxiosPromise[SchemaHttpBody] = js.native
   def searchResources(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesSearchresources,
@@ -435,6 +447,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResources protected () extends 
     */
   def update(): GaxiosPromise[SchemaHttpBody] = js.native
   def update(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def update(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesUpdate): GaxiosPromise[SchemaHttpBody] = js.native
   def update(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesUpdate,

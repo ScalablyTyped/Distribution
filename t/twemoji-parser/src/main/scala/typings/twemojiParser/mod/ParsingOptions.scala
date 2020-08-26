@@ -6,24 +6,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParsingOptions extends js.Object {
   /**
     * @default 'svg'
     */
-  var assetType: js.UndefOr[png | svg] = js.undefined
-  var buildUrl: js.UndefOr[js.Function2[/* codepoints */ String, /* assetType */ String, String]] = js.undefined
+  var assetType: js.UndefOr[png | svg] = js.native
+  var buildUrl: js.UndefOr[js.Function2[/* codepoints */ String, /* assetType */ String, String]] = js.native
 }
 
 object ParsingOptions {
   @scala.inline
-  def apply(
-    assetType: png | svg = null,
-    buildUrl: (/* codepoints */ String, /* assetType */ String) => String = null
-  ): ParsingOptions = {
+  def apply(): ParsingOptions = {
     val __obj = js.Dynamic.literal()
-    if (assetType != null) __obj.updateDynamic("assetType")(assetType.asInstanceOf[js.Any])
-    if (buildUrl != null) __obj.updateDynamic("buildUrl")(js.Any.fromFunction2(buildUrl))
     __obj.asInstanceOf[ParsingOptions]
   }
+  @scala.inline
+  implicit class ParsingOptionsOps[Self <: ParsingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetType(value: png | svg): Self = this.set("assetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetType: Self = this.set("assetType", js.undefined)
+    @scala.inline
+    def setBuildUrl(value: (/* codepoints */ String, /* assetType */ String) => String): Self = this.set("buildUrl", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBuildUrl: Self = this.set("buildUrl", js.undefined)
+  }
+  
 }
 

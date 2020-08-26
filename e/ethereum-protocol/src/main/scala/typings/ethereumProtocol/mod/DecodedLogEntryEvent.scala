@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DecodedLogEntryEvent[A] extends DecodedLogEntry[A] {
-  var removed: Boolean
+  var removed: Boolean = js.native
 }
 
 object DecodedLogEntryEvent {
@@ -17,14 +18,25 @@ object DecodedLogEntryEvent {
     event: String,
     removed: Boolean,
     topics: js.Array[String],
-    transactionHash: String,
-    blockHash: String = null,
-    blockNumber: Double = null.asInstanceOf[Double],
-    logIndex: Double = null.asInstanceOf[Double],
-    transactionIndex: Double = null.asInstanceOf[Double]
+    transactionHash: String
   ): DecodedLogEntryEvent[A] = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], args = args.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecodedLogEntryEvent[A]]
   }
+  @scala.inline
+  implicit class DecodedLogEntryEventOps[Self <: DecodedLogEntryEvent[_], A] (val x: Self with DecodedLogEntryEvent[A]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRemoved(value: Boolean): Self = this.set("removed", value.asInstanceOf[js.Any])
+  }
+  
 }
 

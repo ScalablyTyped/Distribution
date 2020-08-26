@@ -11,8 +11,8 @@ Automatic transforms on text input for ProseMirror
 | Full name          | prosemirror-inputrules |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 48 |
-| # downloads        | 2115306 |
+| # dependents       | 51 |
+| # downloads        | 2286739 |
 | # stars            | 0 |
 
 ## Links

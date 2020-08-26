@@ -70,40 +70,86 @@ trait FpgaImage extends js.Object {
 
 object FpgaImage {
   @scala.inline
-  def apply(
-    CreateTime: DateTime = null,
-    DataRetentionSupport: js.UndefOr[Boolean] = js.undefined,
-    Description: String = null,
-    FpgaImageGlobalId: String = null,
-    FpgaImageId: String = null,
-    Name: String = null,
-    OwnerAlias: String = null,
-    OwnerId: String = null,
-    PciId: PciId = null,
-    ProductCodes: ProductCodeList = null,
-    Public: js.UndefOr[Boolean] = js.undefined,
-    ShellVersion: String = null,
-    State: FpgaImageState = null,
-    Tags: TagList = null,
-    UpdateTime: DateTime = null
-  ): FpgaImage = {
+  def apply(): FpgaImage = {
     val __obj = js.Dynamic.literal()
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataRetentionSupport)) __obj.updateDynamic("DataRetentionSupport")(DataRetentionSupport.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FpgaImageGlobalId != null) __obj.updateDynamic("FpgaImageGlobalId")(FpgaImageGlobalId.asInstanceOf[js.Any])
-    if (FpgaImageId != null) __obj.updateDynamic("FpgaImageId")(FpgaImageId.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OwnerAlias != null) __obj.updateDynamic("OwnerAlias")(OwnerAlias.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (PciId != null) __obj.updateDynamic("PciId")(PciId.asInstanceOf[js.Any])
-    if (ProductCodes != null) __obj.updateDynamic("ProductCodes")(ProductCodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(Public)) __obj.updateDynamic("Public")(Public.get.asInstanceOf[js.Any])
-    if (ShellVersion != null) __obj.updateDynamic("ShellVersion")(ShellVersion.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (UpdateTime != null) __obj.updateDynamic("UpdateTime")(UpdateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[FpgaImage]
   }
+  @scala.inline
+  implicit class FpgaImageOps[Self <: FpgaImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setDataRetentionSupport(value: Boolean): Self = this.set("DataRetentionSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRetentionSupport: Self = this.set("DataRetentionSupport", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFpgaImageGlobalId(value: String): Self = this.set("FpgaImageGlobalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFpgaImageGlobalId: Self = this.set("FpgaImageGlobalId", js.undefined)
+    @scala.inline
+    def setFpgaImageId(value: String): Self = this.set("FpgaImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFpgaImageId: Self = this.set("FpgaImageId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwnerAlias(value: String): Self = this.set("OwnerAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAlias: Self = this.set("OwnerAlias", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setPciId(value: PciId): Self = this.set("PciId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePciId: Self = this.set("PciId", js.undefined)
+    @scala.inline
+    def setProductCodesVarargs(value: ProductCode*): Self = this.set("ProductCodes", js.Array(value :_*))
+    @scala.inline
+    def setProductCodes(value: ProductCodeList): Self = this.set("ProductCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCodes: Self = this.set("ProductCodes", js.undefined)
+    @scala.inline
+    def setPublic(value: Boolean): Self = this.set("Public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("Public", js.undefined)
+    @scala.inline
+    def setShellVersion(value: String): Self = this.set("ShellVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShellVersion: Self = this.set("ShellVersion", js.undefined)
+    @scala.inline
+    def setState(value: FpgaImageState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: DateTime): Self = this.set("UpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("UpdateTime", js.undefined)
+  }
+  
 }
 

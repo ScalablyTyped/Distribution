@@ -6,28 +6,28 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Exclude<keyof evaporate.evaporate.CreateConfig, evaporate.evaporate.ImmutableOptionKeys> */
 /* Rewritten from type alias, can be one of: 
-  - typings.evaporate.evaporateStrings.sendCanonicalRequestToSignerUrl
-  - typings.evaporate.evaporateStrings.aws_url
-  - typings.evaporate.evaporateStrings.signerUrl
-  - typings.evaporate.evaporateStrings.maxFileSize
-  - typings.evaporate.evaporateStrings.progressIntervalMS
-  - typings.evaporate.evaporateStrings.s3Acceleration
-  - typings.evaporate.evaporateStrings.s3FileCacheHoursAgo
-  - typings.evaporate.evaporateStrings.mockLocalStorage
-  - typings.evaporate.evaporateStrings.readableStreamPartMethod
-  - typings.evaporate.evaporateStrings.signParams
-  - typings.evaporate.evaporateStrings.signHeaders
-  - typings.evaporate.evaporateStrings.partSize
   - typings.evaporate.evaporateStrings.maxRetryBackoffSecs
-  - typings.evaporate.evaporateStrings.xhrWithCredentials
-  - typings.evaporate.evaporateStrings.bucket
-  - typings.evaporate.evaporateStrings.customAuthMethod
-  - typings.evaporate.evaporateStrings.retryBackoffPower
+  - typings.evaporate.evaporateStrings.signerUrl
   - typings.evaporate.evaporateStrings.abortCompletionThrottlingMs
-  - typings.evaporate.evaporateStrings.localTimeOffset
-  - typings.evaporate.evaporateStrings.signResponseHandler
-  - typings.evaporate.evaporateStrings.aws_key
   - typings.evaporate.evaporateStrings.readableStreams
+  - typings.evaporate.evaporateStrings.sendCanonicalRequestToSignerUrl
+  - typings.evaporate.evaporateStrings.customAuthMethod
+  - typings.evaporate.evaporateStrings.signResponseHandler
+  - typings.evaporate.evaporateStrings.bucket
+  - typings.evaporate.evaporateStrings.s3FileCacheHoursAgo
+  - typings.evaporate.evaporateStrings.retryBackoffPower
+  - typings.evaporate.evaporateStrings.xhrWithCredentials
+  - typings.evaporate.evaporateStrings.progressIntervalMS
+  - typings.evaporate.evaporateStrings.maxFileSize
+  - typings.evaporate.evaporateStrings.partSize
+  - typings.evaporate.evaporateStrings.s3Acceleration
+  - typings.evaporate.evaporateStrings.aws_key
+  - typings.evaporate.evaporateStrings.signHeaders
+  - typings.evaporate.evaporateStrings.signParams
+  - typings.evaporate.evaporateStrings.readableStreamPartMethod
+  - typings.evaporate.evaporateStrings.localTimeOffset
+  - typings.evaporate.evaporateStrings.mockLocalStorage
+  - typings.evaporate.evaporateStrings.aws_url
 */
 trait AddOverrideOptionKeys extends js.Object
 

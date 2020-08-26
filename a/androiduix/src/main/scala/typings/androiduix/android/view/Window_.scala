@@ -9,10 +9,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.Window")
 @js.native
-class Window_ protected () extends js.Object {
-  def this(context: Context) = this()
+trait Window_ extends js.Object {
   var mAttachInfo: js.Any = js.native
   var mCallback: js.Any = js.native
   var mChildWindowManager: js.Any = js.native
@@ -66,6 +64,12 @@ class Window_ protected () extends js.Object {
   def setTitle(title: String): Unit = js.native
   def setType(`type`: Double): Unit = js.native
   def setWindowAnimations(enterAnimation: Animation, exitAnimation: Animation): Unit = js.native
+  def setWindowAnimations(
+    enterAnimation: Animation,
+    exitAnimation: Animation,
+    resumeAnimation: js.UndefOr[scala.Nothing],
+    hideAnimation: Animation
+  ): Unit = js.native
   def setWindowAnimations(enterAnimation: Animation, exitAnimation: Animation, resumeAnimation: Animation): Unit = js.native
   def setWindowAnimations(
     enterAnimation: Animation,

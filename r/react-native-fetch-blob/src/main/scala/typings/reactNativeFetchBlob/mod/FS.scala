@@ -47,6 +47,7 @@ trait FS extends js.Object {
     * @return RNFetchBlobStream stream instance.
     */
   def readStream(path: String, encoding: Encoding): js.Promise[RNFetchBlobReadStream] = js.native
+  def readStream(path: String, encoding: Encoding, bufferSize: js.UndefOr[scala.Nothing], tick: Double): js.Promise[RNFetchBlobReadStream] = js.native
   def readStream(path: String, encoding: Encoding, bufferSize: Double): js.Promise[RNFetchBlobReadStream] = js.native
   def readStream(path: String, encoding: Encoding, bufferSize: Double, tick: Double): js.Promise[RNFetchBlobReadStream] = js.native
   /**

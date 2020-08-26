@@ -1,5 +1,6 @@
 package typings.expoKeepAwake
 
+import typings.unimodulesReactNativeAdapter.nativeModulesProxyTypesMod.ProxyNativeModule
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo-keep-awake/build/ExpoKeepAwake", JSImport.Namespace)
 @js.native
 object expoKeepAwakeMod extends js.Object {
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_core.ProxyNativeModule */ js.Any = js.native
+  val default: ProxyNativeModule = js.native
 }
 

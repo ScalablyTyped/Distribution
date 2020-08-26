@@ -22,15 +22,32 @@ trait SetTimerAction extends js.Object {
 
 object SetTimerAction {
   @scala.inline
-  def apply(
-    timerName: TimerName,
-    durationExpression: VariableValue = null,
-    seconds: js.UndefOr[Seconds] = js.undefined
-  ): SetTimerAction = {
+  def apply(timerName: TimerName): SetTimerAction = {
     val __obj = js.Dynamic.literal(timerName = timerName.asInstanceOf[js.Any])
-    if (durationExpression != null) __obj.updateDynamic("durationExpression")(durationExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTimerAction]
   }
+  @scala.inline
+  implicit class SetTimerActionOps[Self <: SetTimerAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimerName(value: TimerName): Self = this.set("timerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDurationExpression(value: VariableValue): Self = this.set("durationExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationExpression: Self = this.set("durationExpression", js.undefined)
+    @scala.inline
+    def setSeconds(value: Seconds): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeconds: Self = this.set("seconds", js.undefined)
+  }
+  
 }
 

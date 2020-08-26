@@ -12,15 +12,13 @@ trait ShareContent extends js.Object
 
 object ShareContent {
   @scala.inline
-  def Message(message: String, title: String = null): ShareContent = {
+  def Message(message: String): ShareContent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareContent]
   }
   @scala.inline
-  def Title(url: String, title: String = null): ShareContent = {
+  def Title(url: String): ShareContent = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareContent]
   }
 }

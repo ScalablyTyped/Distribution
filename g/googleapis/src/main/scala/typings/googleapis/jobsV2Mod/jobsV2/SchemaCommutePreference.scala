@@ -47,22 +47,46 @@ trait SchemaCommutePreference extends js.Object {
 
 object SchemaCommutePreference {
   @scala.inline
-  def apply(
-    allowNonStreetLevelAddress: js.UndefOr[Boolean] = js.undefined,
-    departureHourLocal: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    roadTraffic: String = null,
-    startLocation: SchemaLatLng = null,
-    travelTime: String = null
-  ): SchemaCommutePreference = {
+  def apply(): SchemaCommutePreference = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNonStreetLevelAddress)) __obj.updateDynamic("allowNonStreetLevelAddress")(allowNonStreetLevelAddress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(departureHourLocal)) __obj.updateDynamic("departureHourLocal")(departureHourLocal.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (roadTraffic != null) __obj.updateDynamic("roadTraffic")(roadTraffic.asInstanceOf[js.Any])
-    if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation.asInstanceOf[js.Any])
-    if (travelTime != null) __obj.updateDynamic("travelTime")(travelTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommutePreference]
   }
+  @scala.inline
+  implicit class SchemaCommutePreferenceOps[Self <: SchemaCommutePreference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowNonStreetLevelAddress(value: Boolean): Self = this.set("allowNonStreetLevelAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNonStreetLevelAddress: Self = this.set("allowNonStreetLevelAddress", js.undefined)
+    @scala.inline
+    def setDepartureHourLocal(value: Double): Self = this.set("departureHourLocal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepartureHourLocal: Self = this.set("departureHourLocal", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setRoadTraffic(value: String): Self = this.set("roadTraffic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoadTraffic: Self = this.set("roadTraffic", js.undefined)
+    @scala.inline
+    def setStartLocation(value: SchemaLatLng): Self = this.set("startLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartLocation: Self = this.set("startLocation", js.undefined)
+    @scala.inline
+    def setTravelTime(value: String): Self = this.set("travelTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTravelTime: Self = this.set("travelTime", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,14 @@ object dialog extends js.Object {
     title: String,
     minWidth: Double,
     minHeight: Double,
+    onContentLoad: js.UndefOr[scala.Nothing],
+    userDefinition: StringDictionary[js.Any]
+  ): Unit = js.native
+  def addIframe(
+    name: String,
+    title: String,
+    minWidth: Double,
+    minHeight: Double,
     onContentLoad: js.Function0[Unit]
   ): Unit = js.native
   def addIframe(

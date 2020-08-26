@@ -4,63 +4,132 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IQueryLatencyStats extends js.Object {
   /** QueryLatencyStats cacheHits */
-  var cacheHits: js.UndefOr[Double | Null] = js.undefined
+  var cacheHits: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats cacheLatencyCount */
-  var cacheLatencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var cacheLatencyCount: js.UndefOr[js.Array[Double] | Null] = js.native
   /** QueryLatencyStats forbiddenOperationCount */
-  var forbiddenOperationCount: js.UndefOr[Double | Null] = js.undefined
+  var forbiddenOperationCount: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats latencyCount */
-  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.native
   /** QueryLatencyStats persistedQueryHits */
-  var persistedQueryHits: js.UndefOr[Double | Null] = js.undefined
+  var persistedQueryHits: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats persistedQueryMisses */
-  var persistedQueryMisses: js.UndefOr[Double | Null] = js.undefined
+  var persistedQueryMisses: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats privateCacheTtlCount */
-  var privateCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var privateCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.native
   /** QueryLatencyStats publicCacheTtlCount */
-  var publicCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
+  var publicCacheTtlCount: js.UndefOr[js.Array[Double] | Null] = js.native
   /** QueryLatencyStats registeredOperationCount */
-  var registeredOperationCount: js.UndefOr[Double | Null] = js.undefined
+  var registeredOperationCount: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats requestCount */
-  var requestCount: js.UndefOr[Double | Null] = js.undefined
+  var requestCount: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats requestsWithErrorsCount */
-  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.undefined
+  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.native
   /** QueryLatencyStats rootErrorStats */
-  var rootErrorStats: js.UndefOr[IPathErrorStats | Null] = js.undefined
+  var rootErrorStats: js.UndefOr[IPathErrorStats | Null] = js.native
 }
 
 object IQueryLatencyStats {
   @scala.inline
-  def apply(
-    cacheHits: js.UndefOr[Null | Double] = js.undefined,
-    cacheLatencyCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
-    forbiddenOperationCount: js.UndefOr[Null | Double] = js.undefined,
-    latencyCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
-    persistedQueryHits: js.UndefOr[Null | Double] = js.undefined,
-    persistedQueryMisses: js.UndefOr[Null | Double] = js.undefined,
-    privateCacheTtlCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
-    publicCacheTtlCount: js.UndefOr[Null | js.Array[Double]] = js.undefined,
-    registeredOperationCount: js.UndefOr[Null | Double] = js.undefined,
-    requestCount: js.UndefOr[Null | Double] = js.undefined,
-    requestsWithErrorsCount: js.UndefOr[Null | Double] = js.undefined,
-    rootErrorStats: js.UndefOr[Null | IPathErrorStats] = js.undefined
-  ): IQueryLatencyStats = {
+  def apply(): IQueryLatencyStats = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheHits)) __obj.updateDynamic("cacheHits")(cacheHits.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheLatencyCount)) __obj.updateDynamic("cacheLatencyCount")(cacheLatencyCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(forbiddenOperationCount)) __obj.updateDynamic("forbiddenOperationCount")(forbiddenOperationCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(latencyCount)) __obj.updateDynamic("latencyCount")(latencyCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistedQueryHits)) __obj.updateDynamic("persistedQueryHits")(persistedQueryHits.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistedQueryMisses)) __obj.updateDynamic("persistedQueryMisses")(persistedQueryMisses.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateCacheTtlCount)) __obj.updateDynamic("privateCacheTtlCount")(privateCacheTtlCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(publicCacheTtlCount)) __obj.updateDynamic("publicCacheTtlCount")(publicCacheTtlCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(registeredOperationCount)) __obj.updateDynamic("registeredOperationCount")(registeredOperationCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCount)) __obj.updateDynamic("requestCount")(requestCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestsWithErrorsCount)) __obj.updateDynamic("requestsWithErrorsCount")(requestsWithErrorsCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootErrorStats)) __obj.updateDynamic("rootErrorStats")(rootErrorStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQueryLatencyStats]
   }
+  @scala.inline
+  implicit class IQueryLatencyStatsOps[Self <: IQueryLatencyStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheHits(value: Double): Self = this.set("cacheHits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheHits: Self = this.set("cacheHits", js.undefined)
+    @scala.inline
+    def setCacheHitsNull: Self = this.set("cacheHits", null)
+    @scala.inline
+    def setCacheLatencyCountVarargs(value: Double*): Self = this.set("cacheLatencyCount", js.Array(value :_*))
+    @scala.inline
+    def setCacheLatencyCount(value: js.Array[Double]): Self = this.set("cacheLatencyCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheLatencyCount: Self = this.set("cacheLatencyCount", js.undefined)
+    @scala.inline
+    def setCacheLatencyCountNull: Self = this.set("cacheLatencyCount", null)
+    @scala.inline
+    def setForbiddenOperationCount(value: Double): Self = this.set("forbiddenOperationCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForbiddenOperationCount: Self = this.set("forbiddenOperationCount", js.undefined)
+    @scala.inline
+    def setForbiddenOperationCountNull: Self = this.set("forbiddenOperationCount", null)
+    @scala.inline
+    def setLatencyCountVarargs(value: Double*): Self = this.set("latencyCount", js.Array(value :_*))
+    @scala.inline
+    def setLatencyCount(value: js.Array[Double]): Self = this.set("latencyCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatencyCount: Self = this.set("latencyCount", js.undefined)
+    @scala.inline
+    def setLatencyCountNull: Self = this.set("latencyCount", null)
+    @scala.inline
+    def setPersistedQueryHits(value: Double): Self = this.set("persistedQueryHits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistedQueryHits: Self = this.set("persistedQueryHits", js.undefined)
+    @scala.inline
+    def setPersistedQueryHitsNull: Self = this.set("persistedQueryHits", null)
+    @scala.inline
+    def setPersistedQueryMisses(value: Double): Self = this.set("persistedQueryMisses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistedQueryMisses: Self = this.set("persistedQueryMisses", js.undefined)
+    @scala.inline
+    def setPersistedQueryMissesNull: Self = this.set("persistedQueryMisses", null)
+    @scala.inline
+    def setPrivateCacheTtlCountVarargs(value: Double*): Self = this.set("privateCacheTtlCount", js.Array(value :_*))
+    @scala.inline
+    def setPrivateCacheTtlCount(value: js.Array[Double]): Self = this.set("privateCacheTtlCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateCacheTtlCount: Self = this.set("privateCacheTtlCount", js.undefined)
+    @scala.inline
+    def setPrivateCacheTtlCountNull: Self = this.set("privateCacheTtlCount", null)
+    @scala.inline
+    def setPublicCacheTtlCountVarargs(value: Double*): Self = this.set("publicCacheTtlCount", js.Array(value :_*))
+    @scala.inline
+    def setPublicCacheTtlCount(value: js.Array[Double]): Self = this.set("publicCacheTtlCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicCacheTtlCount: Self = this.set("publicCacheTtlCount", js.undefined)
+    @scala.inline
+    def setPublicCacheTtlCountNull: Self = this.set("publicCacheTtlCount", null)
+    @scala.inline
+    def setRegisteredOperationCount(value: Double): Self = this.set("registeredOperationCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredOperationCount: Self = this.set("registeredOperationCount", js.undefined)
+    @scala.inline
+    def setRegisteredOperationCountNull: Self = this.set("registeredOperationCount", null)
+    @scala.inline
+    def setRequestCount(value: Double): Self = this.set("requestCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCount: Self = this.set("requestCount", js.undefined)
+    @scala.inline
+    def setRequestCountNull: Self = this.set("requestCount", null)
+    @scala.inline
+    def setRequestsWithErrorsCount(value: Double): Self = this.set("requestsWithErrorsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestsWithErrorsCount: Self = this.set("requestsWithErrorsCount", js.undefined)
+    @scala.inline
+    def setRequestsWithErrorsCountNull: Self = this.set("requestsWithErrorsCount", null)
+    @scala.inline
+    def setRootErrorStats(value: IPathErrorStats): Self = this.set("rootErrorStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootErrorStats: Self = this.set("rootErrorStats", js.undefined)
+    @scala.inline
+    def setRootErrorStatsNull: Self = this.set("rootErrorStats", null)
+  }
+  
 }
 

@@ -34,12 +34,37 @@ object CreateOptionGroupMessage {
     EngineName: String,
     MajorEngineVersion: String,
     OptionGroupDescription: String,
-    OptionGroupName: String,
-    Tags: TagList = null
+    OptionGroupName: String
   ): CreateOptionGroupMessage = {
     val __obj = js.Dynamic.literal(EngineName = EngineName.asInstanceOf[js.Any], MajorEngineVersion = MajorEngineVersion.asInstanceOf[js.Any], OptionGroupDescription = OptionGroupDescription.asInstanceOf[js.Any], OptionGroupName = OptionGroupName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOptionGroupMessage]
   }
+  @scala.inline
+  implicit class CreateOptionGroupMessageOps[Self <: CreateOptionGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngineName(value: String): Self = this.set("EngineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMajorEngineVersion(value: String): Self = this.set("MajorEngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionGroupDescription(value: String): Self = this.set("OptionGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

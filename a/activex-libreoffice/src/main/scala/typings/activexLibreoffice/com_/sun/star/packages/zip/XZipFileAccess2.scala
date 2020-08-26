@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * Merged interface for {@link ZipFileAccess} service.
   * @since LibreOffice 4.1
   */
+@js.native
 trait XZipFileAccess2
   extends XNameAccess
      with XZipFileAccess

@@ -26,17 +26,36 @@ trait UpdateComputeEnvironmentRequest extends js.Object {
 
 object UpdateComputeEnvironmentRequest {
   @scala.inline
-  def apply(
-    computeEnvironment: String,
-    computeResources: ComputeResourceUpdate = null,
-    serviceRole: String = null,
-    state: CEState = null
-  ): UpdateComputeEnvironmentRequest = {
+  def apply(computeEnvironment: String): UpdateComputeEnvironmentRequest = {
     val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any])
-    if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
-    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateComputeEnvironmentRequest]
   }
+  @scala.inline
+  implicit class UpdateComputeEnvironmentRequestOps[Self <: UpdateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeEnvironment(value: String): Self = this.set("computeEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeResources(value: ComputeResourceUpdate): Self = this.set("computeResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeResources: Self = this.set("computeResources", js.undefined)
+    @scala.inline
+    def setServiceRole(value: String): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("serviceRole", js.undefined)
+    @scala.inline
+    def setState(value: CEState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

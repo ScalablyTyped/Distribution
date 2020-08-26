@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExceptionParams
   extends /* key */ StringDictionary[js.Any] {
   /**
@@ -16,27 +17,41 @@ trait ExceptionParams
     *
     * Example value: `DatabaseError`
     */
-  var exd: js.UndefOr[String] = js.undefined
+  var exd: js.UndefOr[String] = js.native
   /**
     * Is Exception Fatal?
     *
     * Specifies whether the exception was fatal.
     */
-  var exf: js.UndefOr[Boolean] = js.undefined
+  var exf: js.UndefOr[Boolean] = js.native
 }
 
 object ExceptionParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    exd: String = null,
-    exf: js.UndefOr[Boolean] = js.undefined
-  ): ExceptionParams = {
+  def apply(): ExceptionParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (exd != null) __obj.updateDynamic("exd")(exd.asInstanceOf[js.Any])
-    if (!js.isUndefined(exf)) __obj.updateDynamic("exf")(exf.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionParams]
   }
+  @scala.inline
+  implicit class ExceptionParamsOps[Self <: ExceptionParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExd(value: String): Self = this.set("exd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExd: Self = this.set("exd", js.undefined)
+    @scala.inline
+    def setExf(value: Boolean): Self = this.set("exf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExf: Self = this.set("exf", js.undefined)
+  }
+  
 }
 

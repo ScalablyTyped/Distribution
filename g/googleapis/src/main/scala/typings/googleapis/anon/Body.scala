@@ -18,11 +18,30 @@ trait Body extends js.Object {
 
 object Body {
   @scala.inline
-  def apply(body: js.Any = null, mimeType: String = null): Body = {
+  def apply(): Body = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Body]
   }
+  @scala.inline
+  implicit class BodyOps[Self <: Body] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: js.Any): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Tabs")
+@JSImport("grommet/es6", "Tabs")
 @js.native
 object Tabs extends TopLevel[
       FC[

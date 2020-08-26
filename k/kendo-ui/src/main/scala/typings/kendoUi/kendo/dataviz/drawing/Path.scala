@@ -35,6 +35,7 @@ trait Path
   def moveTo(x: Point): typings.kendoUi.kendo.drawing.Path = js.native
   def moveTo(x: Point, y: Double): typings.kendoUi.kendo.drawing.Path = js.native
   def stroke(color: String): typings.kendoUi.kendo.drawing.Path = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): typings.kendoUi.kendo.drawing.Path = js.native
   def stroke(color: String, width: Double): typings.kendoUi.kendo.drawing.Path = js.native
   def stroke(color: String, width: Double, opacity: Double): typings.kendoUi.kendo.drawing.Path = js.native
 }

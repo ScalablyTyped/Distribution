@@ -38,19 +38,30 @@ trait Selection extends js.Object {
   def compare(otherSelection: Selection): Double = js.native
   /** Copies the current selection to the clipboard. */
   def copy(): Unit = js.native
+  def copy(maintainClipboard: js.UndefOr[scala.Nothing], fullLine: Boolean): Unit = js.native
   def copy(maintainClipboard: Boolean): Unit = js.native
   def copy(maintainClipboard: Boolean, fullLine: Boolean): Unit = js.native
   /** Copies the selection to the clipboard and then deletes it. */
   def cut(): Unit = js.native
+  def cut(
+    maintainClipboard: js.UndefOr[scala.Nothing],
+    fullLine: js.UndefOr[scala.Nothing],
+    options: ReadonlyEditOptions
+  ): Unit = js.native
+  def cut(maintainClipboard: js.UndefOr[scala.Nothing], fullLine: Boolean): Unit = js.native
+  def cut(maintainClipboard: js.UndefOr[scala.Nothing], fullLine: Boolean, options: ReadonlyEditOptions): Unit = js.native
   def cut(maintainClipboard: Boolean): Unit = js.native
+  def cut(maintainClipboard: Boolean, fullLine: js.UndefOr[scala.Nothing], options: ReadonlyEditOptions): Unit = js.native
   def cut(maintainClipboard: Boolean, fullLine: Boolean): Unit = js.native
   def cut(maintainClipboard: Boolean, fullLine: Boolean, options: ReadonlyEditOptions): Unit = js.native
   /** Cuts the selection until the end of the buffer line. */
   def cutToEndOfBufferLine(): Unit = js.native
+  def cutToEndOfBufferLine(maintainClipboard: js.UndefOr[scala.Nothing], options: ReadonlyEditOptions): Unit = js.native
   def cutToEndOfBufferLine(maintainClipboard: Boolean): Unit = js.native
   def cutToEndOfBufferLine(maintainClipboard: Boolean, options: ReadonlyEditOptions): Unit = js.native
   /** Cuts the selection until the end of the screen line. */
   def cutToEndOfLine(): Unit = js.native
+  def cutToEndOfLine(maintainClipboard: js.UndefOr[scala.Nothing], options: ReadonlyEditOptions): Unit = js.native
   def cutToEndOfLine(maintainClipboard: Boolean): Unit = js.native
   def cutToEndOfLine(maintainClipboard: Boolean, options: ReadonlyEditOptions): Unit = js.native
   /**

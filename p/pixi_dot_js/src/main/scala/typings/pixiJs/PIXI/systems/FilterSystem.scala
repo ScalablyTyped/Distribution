@@ -124,6 +124,7 @@ trait FilterSystem extends System {
     * @returns {PIXI.RenderTexture}
     */
   def getFilterTexture(): RenderTexture = js.native
+  def getFilterTexture(input: js.UndefOr[scala.Nothing], resolution: Double): RenderTexture = js.native
   def getFilterTexture(input: RenderTexture): RenderTexture = js.native
   def getFilterTexture(input: RenderTexture, resolution: Double): RenderTexture = js.native
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for commander
 
-Typings are for version 4.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 the complete solution for node.js command-line programs
@@ -10,9 +10,9 @@ the complete solution for node.js command-line programs
 | ------------------ | :-------------: |
 | Full name          | commander |
 | Keywords           | commander, command, option, parser |
-| # releases         | 23 |
-| # dependents       | 35124 |
-| # downloads        | 1369347821 |
+| # releases         | 22 |
+| # dependents       | 35164 |
+| # downloads        | 1369209723 |
 | # stars            | 1011 |
 
 ## Links

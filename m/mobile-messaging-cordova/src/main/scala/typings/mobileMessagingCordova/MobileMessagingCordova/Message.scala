@@ -5,41 +5,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Message extends js.Object {
-  var body: js.UndefOr[String] = js.undefined
-  var category: js.UndefOr[String] = js.undefined
-  var customPayload: js.UndefOr[Record[String, String]] = js.undefined
-  var internalData: js.UndefOr[String] = js.undefined
-  var messageId: String
-  var silent: js.UndefOr[String] = js.undefined
-  var sound: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var vibrate: js.UndefOr[String] = js.undefined
+  var body: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.native
+  var customPayload: js.UndefOr[Record[String, String]] = js.native
+  var internalData: js.UndefOr[String] = js.native
+  var messageId: String = js.native
+  var silent: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var vibrate: js.UndefOr[String] = js.native
 }
 
 object Message {
   @scala.inline
-  def apply(
-    messageId: String,
-    body: String = null,
-    category: String = null,
-    customPayload: Record[String, String] = null,
-    internalData: String = null,
-    silent: String = null,
-    sound: String = null,
-    title: String = null,
-    vibrate: String = null
-  ): Message = {
+  def apply(messageId: String): Message = {
     val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (customPayload != null) __obj.updateDynamic("customPayload")(customPayload.asInstanceOf[js.Any])
-    if (internalData != null) __obj.updateDynamic("internalData")(internalData.asInstanceOf[js.Any])
-    if (silent != null) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (vibrate != null) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
+  @scala.inline
+  implicit class MessageOps[Self <: Message] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageId(value: String): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setCustomPayload(value: Record[String, String]): Self = this.set("customPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomPayload: Self = this.set("customPayload", js.undefined)
+    @scala.inline
+    def setInternalData(value: String): Self = this.set("internalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalData: Self = this.set("internalData", js.undefined)
+    @scala.inline
+    def setSilent(value: String): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSound(value: String): Self = this.set("sound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSound: Self = this.set("sound", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVibrate(value: String): Self = this.set("vibrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVibrate: Self = this.set("vibrate", js.undefined)
+  }
+  
 }
 

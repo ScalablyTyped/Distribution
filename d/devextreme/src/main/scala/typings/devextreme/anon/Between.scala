@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Between extends js.Object {
-  var between: js.UndefOr[String] = js.undefined
-  var contains: js.UndefOr[String] = js.undefined
-  var endsWith: js.UndefOr[String] = js.undefined
-  var equal: js.UndefOr[String] = js.undefined
-  var greaterThan: js.UndefOr[String] = js.undefined
-  var greaterThanOrEqual: js.UndefOr[String] = js.undefined
-  var lessThan: js.UndefOr[String] = js.undefined
-  var lessThanOrEqual: js.UndefOr[String] = js.undefined
-  var notContains: js.UndefOr[String] = js.undefined
-  var notEqual: js.UndefOr[String] = js.undefined
-  var startsWith: js.UndefOr[String] = js.undefined
+  var between: js.UndefOr[String] = js.native
+  var contains: js.UndefOr[String] = js.native
+  var endsWith: js.UndefOr[String] = js.native
+  var equal: js.UndefOr[String] = js.native
+  var greaterThan: js.UndefOr[String] = js.native
+  var greaterThanOrEqual: js.UndefOr[String] = js.native
+  var lessThan: js.UndefOr[String] = js.native
+  var lessThanOrEqual: js.UndefOr[String] = js.native
+  var notContains: js.UndefOr[String] = js.native
+  var notEqual: js.UndefOr[String] = js.native
+  var startsWith: js.UndefOr[String] = js.native
 }
 
 object Between {
   @scala.inline
-  def apply(
-    between: String = null,
-    contains: String = null,
-    endsWith: String = null,
-    equal: String = null,
-    greaterThan: String = null,
-    greaterThanOrEqual: String = null,
-    lessThan: String = null,
-    lessThanOrEqual: String = null,
-    notContains: String = null,
-    notEqual: String = null,
-    startsWith: String = null
-  ): Between = {
+  def apply(): Between = {
     val __obj = js.Dynamic.literal()
-    if (between != null) __obj.updateDynamic("between")(between.asInstanceOf[js.Any])
-    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
-    if (endsWith != null) __obj.updateDynamic("endsWith")(endsWith.asInstanceOf[js.Any])
-    if (equal != null) __obj.updateDynamic("equal")(equal.asInstanceOf[js.Any])
-    if (greaterThan != null) __obj.updateDynamic("greaterThan")(greaterThan.asInstanceOf[js.Any])
-    if (greaterThanOrEqual != null) __obj.updateDynamic("greaterThanOrEqual")(greaterThanOrEqual.asInstanceOf[js.Any])
-    if (lessThan != null) __obj.updateDynamic("lessThan")(lessThan.asInstanceOf[js.Any])
-    if (lessThanOrEqual != null) __obj.updateDynamic("lessThanOrEqual")(lessThanOrEqual.asInstanceOf[js.Any])
-    if (notContains != null) __obj.updateDynamic("notContains")(notContains.asInstanceOf[js.Any])
-    if (notEqual != null) __obj.updateDynamic("notEqual")(notEqual.asInstanceOf[js.Any])
-    if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[Between]
   }
+  @scala.inline
+  implicit class BetweenOps[Self <: Between] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBetween(value: String): Self = this.set("between", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBetween: Self = this.set("between", js.undefined)
+    @scala.inline
+    def setContains(value: String): Self = this.set("contains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContains: Self = this.set("contains", js.undefined)
+    @scala.inline
+    def setEndsWith(value: String): Self = this.set("endsWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndsWith: Self = this.set("endsWith", js.undefined)
+    @scala.inline
+    def setEqual(value: String): Self = this.set("equal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEqual: Self = this.set("equal", js.undefined)
+    @scala.inline
+    def setGreaterThan(value: String): Self = this.set("greaterThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThan: Self = this.set("greaterThan", js.undefined)
+    @scala.inline
+    def setGreaterThanOrEqual(value: String): Self = this.set("greaterThanOrEqual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanOrEqual: Self = this.set("greaterThanOrEqual", js.undefined)
+    @scala.inline
+    def setLessThan(value: String): Self = this.set("lessThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThan: Self = this.set("lessThan", js.undefined)
+    @scala.inline
+    def setLessThanOrEqual(value: String): Self = this.set("lessThanOrEqual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanOrEqual: Self = this.set("lessThanOrEqual", js.undefined)
+    @scala.inline
+    def setNotContains(value: String): Self = this.set("notContains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotContains: Self = this.set("notContains", js.undefined)
+    @scala.inline
+    def setNotEqual(value: String): Self = this.set("notEqual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotEqual: Self = this.set("notEqual", js.undefined)
+    @scala.inline
+    def setStartsWith(value: String): Self = this.set("startsWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartsWith: Self = this.set("startsWith", js.undefined)
+  }
+  
 }
 

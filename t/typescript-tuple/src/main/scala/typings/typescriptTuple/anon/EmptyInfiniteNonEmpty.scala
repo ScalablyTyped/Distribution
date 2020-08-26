@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmptyInfiniteNonEmpty[Holder /* <: js.Array[_] */, Tuple /* <: js.Array[_] */] extends js.Object {
-  var empty: Holder
-  var infinite: js.Any
-  var nonEmpty: js.Any
+  var empty: Holder = js.native
+  var infinite: js.Any = js.native
+  var nonEmpty: js.Any = js.native
 }
 
 object EmptyInfiniteNonEmpty {
@@ -16,5 +17,24 @@ object EmptyInfiniteNonEmpty {
     val __obj = js.Dynamic.literal(empty = empty.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], nonEmpty = nonEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmptyInfiniteNonEmpty[Holder, Tuple]]
   }
+  @scala.inline
+  implicit class EmptyInfiniteNonEmptyOps[Self <: EmptyInfiniteNonEmpty[_, _], /* <: js.Array[_] */ Holder, /* <: js.Array[_] */ Tuple] (val x: Self with (EmptyInfiniteNonEmpty[Holder, Tuple])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmpty(value: Holder): Self = this.set("empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInfinite(value: js.Any): Self = this.set("infinite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNonEmpty(value: js.Any): Self = this.set("nonEmpty", value.asInstanceOf[js.Any])
+  }
+  
 }
 

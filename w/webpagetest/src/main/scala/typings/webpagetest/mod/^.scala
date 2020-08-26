@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   */
 class ^ () extends WebPageTest {
   def this(server: String) = this()
+  def this(server: js.UndefOr[scala.Nothing], key: String) = this()
   def this(server: String, key: String) = this()
 }
 

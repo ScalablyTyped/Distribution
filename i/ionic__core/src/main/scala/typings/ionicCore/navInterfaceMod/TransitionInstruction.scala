@@ -4,48 +4,89 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransitionInstruction extends js.Object {
-  var done: js.UndefOr[TransitionDoneFn] = js.undefined
-  var enteringRequiresTransition: js.UndefOr[Boolean] = js.undefined
-  var insertStart: js.UndefOr[Double] = js.undefined
-  var insertViews: js.UndefOr[js.Array[_]] = js.undefined
-  var leavingRequiresTransition: js.UndefOr[Boolean] = js.undefined
-  var opts: js.UndefOr[NavOptions | Null] = js.undefined
-  var reject: js.UndefOr[js.Function1[/* rejectReason */ String, Unit]] = js.undefined
-  var removeCount: js.UndefOr[Double] = js.undefined
-  var removeStart: js.UndefOr[Double] = js.undefined
-  var removeView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.undefined
-  var resolve: js.UndefOr[js.Function1[/* hasCompleted */ Boolean, Unit]] = js.undefined
+  var done: js.UndefOr[TransitionDoneFn] = js.native
+  var enteringRequiresTransition: js.UndefOr[Boolean] = js.native
+  var insertStart: js.UndefOr[Double] = js.native
+  var insertViews: js.UndefOr[js.Array[_]] = js.native
+  var leavingRequiresTransition: js.UndefOr[Boolean] = js.native
+  var opts: js.UndefOr[NavOptions | Null] = js.native
+  var reject: js.UndefOr[js.Function1[/* rejectReason */ String, Unit]] = js.native
+  var removeCount: js.UndefOr[Double] = js.native
+  var removeStart: js.UndefOr[Double] = js.native
+  var removeView: js.UndefOr[typings.ionicCore.viewControllerMod.ViewController] = js.native
+  var resolve: js.UndefOr[js.Function1[/* hasCompleted */ Boolean, Unit]] = js.native
 }
 
 object TransitionInstruction {
   @scala.inline
-  def apply(
-    done: (/* hasCompleted */ Boolean, /* requiresTransition */ Boolean, /* enteringView */ js.UndefOr[typings.ionicCore.viewControllerMod.ViewController], /* leavingView */ js.UndefOr[typings.ionicCore.viewControllerMod.ViewController], /* direction */ js.UndefOr[String]) => Unit = null,
-    enteringRequiresTransition: js.UndefOr[Boolean] = js.undefined,
-    insertStart: js.UndefOr[Double] = js.undefined,
-    insertViews: js.Array[_] = null,
-    leavingRequiresTransition: js.UndefOr[Boolean] = js.undefined,
-    opts: js.UndefOr[Null | NavOptions] = js.undefined,
-    reject: /* rejectReason */ String => Unit = null,
-    removeCount: js.UndefOr[Double] = js.undefined,
-    removeStart: js.UndefOr[Double] = js.undefined,
-    removeView: typings.ionicCore.viewControllerMod.ViewController = null,
-    resolve: /* hasCompleted */ Boolean => Unit = null
-  ): TransitionInstruction = {
+  def apply(): TransitionInstruction = {
     val __obj = js.Dynamic.literal()
-    if (done != null) __obj.updateDynamic("done")(js.Any.fromFunction5(done))
-    if (!js.isUndefined(enteringRequiresTransition)) __obj.updateDynamic("enteringRequiresTransition")(enteringRequiresTransition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertStart)) __obj.updateDynamic("insertStart")(insertStart.get.asInstanceOf[js.Any])
-    if (insertViews != null) __obj.updateDynamic("insertViews")(insertViews.asInstanceOf[js.Any])
-    if (!js.isUndefined(leavingRequiresTransition)) __obj.updateDynamic("leavingRequiresTransition")(leavingRequiresTransition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opts)) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
-    if (reject != null) __obj.updateDynamic("reject")(js.Any.fromFunction1(reject))
-    if (!js.isUndefined(removeCount)) __obj.updateDynamic("removeCount")(removeCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeStart)) __obj.updateDynamic("removeStart")(removeStart.get.asInstanceOf[js.Any])
-    if (removeView != null) __obj.updateDynamic("removeView")(removeView.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     __obj.asInstanceOf[TransitionInstruction]
   }
+  @scala.inline
+  implicit class TransitionInstructionOps[Self <: TransitionInstruction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDone(
+      value: (/* hasCompleted */ Boolean, /* requiresTransition */ Boolean, /* enteringView */ js.UndefOr[typings.ionicCore.viewControllerMod.ViewController], /* leavingView */ js.UndefOr[typings.ionicCore.viewControllerMod.ViewController], /* direction */ js.UndefOr[String]) => Unit
+    ): Self = this.set("done", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteDone: Self = this.set("done", js.undefined)
+    @scala.inline
+    def setEnteringRequiresTransition(value: Boolean): Self = this.set("enteringRequiresTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnteringRequiresTransition: Self = this.set("enteringRequiresTransition", js.undefined)
+    @scala.inline
+    def setInsertStart(value: Double): Self = this.set("insertStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertStart: Self = this.set("insertStart", js.undefined)
+    @scala.inline
+    def setInsertViewsVarargs(value: js.Any*): Self = this.set("insertViews", js.Array(value :_*))
+    @scala.inline
+    def setInsertViews(value: js.Array[_]): Self = this.set("insertViews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertViews: Self = this.set("insertViews", js.undefined)
+    @scala.inline
+    def setLeavingRequiresTransition(value: Boolean): Self = this.set("leavingRequiresTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeavingRequiresTransition: Self = this.set("leavingRequiresTransition", js.undefined)
+    @scala.inline
+    def setOpts(value: NavOptions): Self = this.set("opts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpts: Self = this.set("opts", js.undefined)
+    @scala.inline
+    def setOptsNull: Self = this.set("opts", null)
+    @scala.inline
+    def setReject(value: /* rejectReason */ String => Unit): Self = this.set("reject", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReject: Self = this.set("reject", js.undefined)
+    @scala.inline
+    def setRemoveCount(value: Double): Self = this.set("removeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveCount: Self = this.set("removeCount", js.undefined)
+    @scala.inline
+    def setRemoveStart(value: Double): Self = this.set("removeStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveStart: Self = this.set("removeStart", js.undefined)
+    @scala.inline
+    def setRemoveView(value: typings.ionicCore.viewControllerMod.ViewController): Self = this.set("removeView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveView: Self = this.set("removeView", js.undefined)
+    @scala.inline
+    def setResolve(value: /* hasCompleted */ Boolean => Unit): Self = this.set("resolve", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResolve: Self = this.set("resolve", js.undefined)
+  }
+  
 }
 

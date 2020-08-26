@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+@js.native
 trait CommentUpdateData extends js.Object {
   /**
     *
@@ -12,23 +13,42 @@ trait CommentUpdateData extends js.Object {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String] = js.native
   /**
     *
     * The comment thread status. A value of "true" means the comment thread is resolved.
     *
     * [Api set: ExcelApi 1.11]
     */
-  var resolved: js.UndefOr[Boolean] = js.undefined
+  var resolved: js.UndefOr[Boolean] = js.native
 }
 
 object CommentUpdateData {
   @scala.inline
-  def apply(content: String = null, resolved: js.UndefOr[Boolean] = js.undefined): CommentUpdateData = {
+  def apply(): CommentUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentUpdateData]
   }
+  @scala.inline
+  implicit class CommentUpdateDataOps[Self <: CommentUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setResolved(value: Boolean): Self = this.set("resolved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolved: Self = this.set("resolved", js.undefined)
+  }
+  
 }
 

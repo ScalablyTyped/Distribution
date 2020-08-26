@@ -30,9 +30,11 @@ trait NamedRouter extends js.Object {
     options: PartialRouteOptions
   ): Unit = js.native
   def build(name: String): String = js.native
+  def build(name: String, params: js.UndefOr[scala.Nothing], method: String): String = js.native
   def build(name: String, params: RouteParams): String = js.native
   def build(name: String, params: RouteParams, method: String): String = js.native
   def dispatch(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
+  def dispatch(req: Request_[ParamsDictionary, _, _, Query], res: js.UndefOr[scala.Nothing], next: NextFunction): Unit = js.native
   def dispatch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Unit = js.native
   def dispatch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): Unit = js.native
   def extendExpress(app: Express): NamedRouter = js.native

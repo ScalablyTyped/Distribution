@@ -29,16 +29,34 @@ trait SchemaQueryTestablePermissionsRequest extends js.Object {
 
 object SchemaQueryTestablePermissionsRequest {
   @scala.inline
-  def apply(
-    fullResourceName: String = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageToken: String = null
-  ): SchemaQueryTestablePermissionsRequest = {
+  def apply(): SchemaQueryTestablePermissionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fullResourceName != null) __obj.updateDynamic("fullResourceName")(fullResourceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryTestablePermissionsRequest]
   }
+  @scala.inline
+  implicit class SchemaQueryTestablePermissionsRequestOps[Self <: SchemaQueryTestablePermissionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFullResourceName(value: String): Self = this.set("fullResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullResourceName: Self = this.set("fullResourceName", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+  }
+  
 }
 

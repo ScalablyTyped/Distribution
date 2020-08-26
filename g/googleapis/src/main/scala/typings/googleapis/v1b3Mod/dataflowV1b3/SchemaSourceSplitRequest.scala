@@ -31,11 +31,30 @@ trait SchemaSourceSplitRequest extends js.Object {
 
 object SchemaSourceSplitRequest {
   @scala.inline
-  def apply(options: SchemaSourceSplitOptions = null, source: SchemaSource = null): SchemaSourceSplitRequest = {
+  def apply(): SchemaSourceSplitRequest = {
     val __obj = js.Dynamic.literal()
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceSplitRequest]
   }
+  @scala.inline
+  implicit class SchemaSourceSplitRequestOps[Self <: SchemaSourceSplitRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOptions(value: SchemaSourceSplitOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

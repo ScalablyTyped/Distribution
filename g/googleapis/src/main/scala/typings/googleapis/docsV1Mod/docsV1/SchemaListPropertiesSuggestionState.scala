@@ -22,10 +22,28 @@ trait SchemaListPropertiesSuggestionState extends js.Object {
 
 object SchemaListPropertiesSuggestionState {
   @scala.inline
-  def apply(nestingLevelsSuggestionStates: js.Array[SchemaNestingLevelSuggestionState] = null): SchemaListPropertiesSuggestionState = {
+  def apply(): SchemaListPropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (nestingLevelsSuggestionStates != null) __obj.updateDynamic("nestingLevelsSuggestionStates")(nestingLevelsSuggestionStates.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListPropertiesSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaListPropertiesSuggestionStateOps[Self <: SchemaListPropertiesSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNestingLevelsSuggestionStatesVarargs(value: SchemaNestingLevelSuggestionState*): Self = this.set("nestingLevelsSuggestionStates", js.Array(value :_*))
+    @scala.inline
+    def setNestingLevelsSuggestionStates(value: js.Array[SchemaNestingLevelSuggestionState]): Self = this.set("nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestingLevelsSuggestionStates: Self = this.set("nestingLevelsSuggestionStates", js.undefined)
+  }
+  
 }
 

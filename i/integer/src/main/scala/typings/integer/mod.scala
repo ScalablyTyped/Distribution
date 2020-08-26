@@ -89,6 +89,8 @@ object mod extends js.Object {
   def fromNumber(`val`: Double, defaultVal: Double): IntClass = js.native
   def fromNumber(`val`: Double, defaultVal: IntClass): IntClass = js.native
   def fromString(`val`: String): IntClass = js.native
+  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: String): IntClass = js.native
+  def fromString(`val`: String, radix: js.UndefOr[scala.Nothing], defaultVal: IntClass): IntClass = js.native
   def fromString(`val`: String, radix: Double): IntClass = js.native
   def fromString(`val`: String, radix: Double, defaultVal: String): IntClass = js.native
   def fromString(`val`: String, radix: Double, defaultVal: IntClass): IntClass = js.native

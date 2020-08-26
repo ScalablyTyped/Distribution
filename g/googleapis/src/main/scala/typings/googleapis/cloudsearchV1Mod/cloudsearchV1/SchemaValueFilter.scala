@@ -24,11 +24,30 @@ trait SchemaValueFilter extends js.Object {
 
 object SchemaValueFilter {
   @scala.inline
-  def apply(operatorName: String = null, value: SchemaValue = null): SchemaValueFilter = {
+  def apply(): SchemaValueFilter = {
     val __obj = js.Dynamic.literal()
-    if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaValueFilter]
   }
+  @scala.inline
+  implicit class SchemaValueFilterOps[Self <: SchemaValueFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    @scala.inline
+    def setValue(value: SchemaValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

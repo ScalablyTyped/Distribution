@@ -14,10 +14,26 @@ trait GetPartitionResponse extends js.Object {
 
 object GetPartitionResponse {
   @scala.inline
-  def apply(Partition: Partition = null): GetPartitionResponse = {
+  def apply(): GetPartitionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Partition != null) __obj.updateDynamic("Partition")(Partition.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPartitionResponse]
   }
+  @scala.inline
+  implicit class GetPartitionResponseOps[Self <: GetPartitionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPartition(value: Partition): Self = this.set("Partition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartition: Self = this.set("Partition", js.undefined)
+  }
+  
 }
 

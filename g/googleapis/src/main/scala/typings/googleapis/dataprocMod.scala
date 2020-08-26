@@ -41,7 +41,7 @@ object dataprocMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Dataproc]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataproc]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object dataprocMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc
               ]
             ]

@@ -19,10 +19,6 @@ object customErrorUmdMod extends js.Object {
   @js.native
   class CustomError () extends Error {
     def this(message: String) = this()
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native

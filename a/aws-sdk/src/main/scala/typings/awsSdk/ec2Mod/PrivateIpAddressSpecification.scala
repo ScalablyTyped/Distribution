@@ -18,11 +18,30 @@ trait PrivateIpAddressSpecification extends js.Object {
 
 object PrivateIpAddressSpecification {
   @scala.inline
-  def apply(Primary: js.UndefOr[Boolean] = js.undefined, PrivateIpAddress: String = null): PrivateIpAddressSpecification = {
+  def apply(): PrivateIpAddressSpecification = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary.get.asInstanceOf[js.Any])
-    if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrivateIpAddressSpecification]
   }
+  @scala.inline
+  implicit class PrivateIpAddressSpecificationOps[Self <: PrivateIpAddressSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("Primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("Primary", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+  }
+  
 }
 

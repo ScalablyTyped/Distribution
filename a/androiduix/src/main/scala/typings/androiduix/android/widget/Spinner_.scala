@@ -1,7 +1,6 @@
 package typings.androiduix.android.widget
 
 import typings.androiduix.android.content.Context
-import typings.androiduix.android.content.DialogInterface
 import typings.androiduix.android.content.DialogInterface.OnClickListener
 import typings.androiduix.android.content.res.Resources
 import typings.androiduix.android.content.res.TypedArray
@@ -37,23 +36,17 @@ import typings.androiduix.android.widget.AdapterView.OnItemClickListener
 import typings.androiduix.android.widget.AdapterView.OnItemLongClickListener
 import typings.androiduix.android.widget.AdapterView.OnItemSelectedListener
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
-import typings.androiduix.java.lang.Runnable
-import typings.androiduix.java.util.ArrayList
+import typings.androiduix.java_.lang.Runnable
+import typings.androiduix.java_.util.ArrayList
 import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.Spinner")
 @js.native
-class Spinner_ protected ()
+trait Spinner_
   extends AbsSpinner
      with OnClickListener {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String], mode: Double) = this()
   var mDisableChildrenWhenDisabled: js.Any = js.native
   var mDropDownWidth: Double = js.native
   var mGravity: js.Any = js.native
@@ -66,8 +59,6 @@ class Spinner_ protected ()
   /* private */ override def _getBinderAttrValue(key: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _initAttrObserver(): js.Any = js.native
-  /* InferMemberOverrides */
-  /* private */ override def _invalidateCache(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _invalidateCache(invalidateCache: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -121,6 +112,8 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def awakenScrollBars(): Boolean = js.native
   /* InferMemberOverrides */
+  override def awakenScrollBars(startDelay: js.UndefOr[scala.Nothing], invalidate: Boolean): Boolean = js.native
+  /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double): Boolean = js.native
   /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double, invalidate: Boolean): Boolean = js.native
@@ -148,8 +141,6 @@ class Spinner_ protected ()
   /* private */ override def cancelTouchTarget(view: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def checkFocus(): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def checkForLongClick(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def checkForLongClick(delayOffset: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -253,8 +244,6 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def draw(canvas: Canvas): Unit = js.native
   /* InferMemberOverrides */
-  /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any): js.Any = js.native
-  /* InferMemberOverrides */
   /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any, scalingRequired: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* protected */ override def drawChild(canvas: Canvas, child: View, drawingTime: Double): Boolean = js.native
@@ -326,9 +315,13 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def getChildDrawingOrder(childCount: Double, i: Double): Double = js.native
   /* InferMemberOverrides */
+  override def getChildHeight(child: View): Double = js.native
+  /* InferMemberOverrides */
   /* protected */ override def getChildStaticTransformation(child: View, t: Transformation): Boolean = js.native
   /* InferMemberOverrides */
   override def getChildTransformation(): Transformation = js.native
+  /* InferMemberOverrides */
+  override def getChildWidth(child: View): Double = js.native
   /* InferMemberOverrides */
   override def getClipBounds(): Rect = js.native
   /* InferMemberOverrides */
@@ -588,13 +581,13 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def indexOfChild(child: View): Double = js.native
   /* InferMemberOverrides */
+  /* private */ override def initAbsSpinner(): js.Any = js.native
+  /* InferMemberOverrides */
   /* protected */ override def initBindAttr(): Unit = js.native
   /* InferMemberOverrides */
   /* protected */ override def initBindElement(): Unit = js.native
   /* InferMemberOverrides */
   /* protected */ override def initBindElement(bindElement: HTMLElement): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def initFromAttributes(context: js.Any, attrs: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def initFromAttributes(context: js.Any, attrs: js.Any, defStyle: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -710,6 +703,8 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def layout(l: Double, t: Double, r: Double, b: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def layoutSpinner(delta: Double, animate: Boolean): Unit = js.native
+  /* InferMemberOverrides */
   override def lookForSelectablePosition(position: Double, lookDown: Boolean): Double = js.native
   /* private */ def makeView(position: js.Any, addChild: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -753,8 +748,6 @@ class Spinner_ protected ()
   override def onCancelPendingInputEvents(): Unit = js.native
   /* InferMemberOverrides */
   override def onChildVisibilityChanged(child: View, oldVisibility: Double, newVisibility: Double): Unit = js.native
-  /* CompleteClass */
-  override def onClick(dialog: DialogInterface, which: Double): Unit = js.native
   /* InferMemberOverrides */
   /* protected */ override def onCreateDrawableState(extraSpace: Double): js.Array[Double] = js.native
   /* InferMemberOverrides */
@@ -846,15 +839,44 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def pointInView(localX: Double, localY: Double, slop: Double): Boolean = js.native
   /* InferMemberOverrides */
+  override def pointToPosition(x: Double, y: Double): Double = js.native
+  /* InferMemberOverrides */
   override def post(action: Runnable): Boolean = js.native
   /* InferMemberOverrides */
   override def postDelayed(action: Runnable, delayMillis: Double): Boolean = js.native
   /* InferMemberOverrides */
   override def postInvalidate(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(
+    l: js.UndefOr[scala.Nothing],
+    t: js.UndefOr[scala.Nothing],
+    r: js.UndefOr[scala.Nothing],
+    b: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double, r: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -862,9 +884,78 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -872,9 +963,36 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -883,6 +1001,8 @@ class Spinner_ protected ()
   override def postOnAnimation(action: Runnable): Boolean = js.native
   /* InferMemberOverrides */
   override def postOnAnimationDelayed(action: Runnable, delayMillis: Double): Boolean = js.native
+  /* InferMemberOverrides */
+  override def recycleAllViews(): Unit = js.native
   /* InferMemberOverrides */
   override def refreshDrawableState(): Unit = js.native
   /* InferMemberOverrides */
@@ -897,8 +1017,6 @@ class Spinner_ protected ()
   /* private */ override def removeChildElement(childElement: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   override def removeDetachedView(child: View, animate: Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def removeFromArray(index: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def removeFromArray(index: js.Any, count: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -932,6 +1050,8 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def requestFocus(): Boolean = js.native
   /* InferMemberOverrides */
+  override def requestFocus(direction: js.UndefOr[scala.Nothing], previouslyFocusedRect: js.Any): Boolean = js.native
+  /* InferMemberOverrides */
   override def requestFocus(direction: Double): Boolean = js.native
   /* InferMemberOverrides */
   override def requestFocus(direction: Double, previouslyFocusedRect: js.Any): Boolean = js.native
@@ -949,6 +1069,8 @@ class Spinner_ protected ()
   override def requestSyncBoundToElement(): Unit = js.native
   /* InferMemberOverrides */
   override def requestSyncBoundToElement(immediately: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def resetList(): Unit = js.native
   /* InferMemberOverrides */
   override def resetPressedState(): Unit = js.native
   /* InferMemberOverrides */
@@ -1008,7 +1130,30 @@ class Spinner_ protected ()
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: js.UndefOr[scala.Nothing], radiusBottomRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: Double,
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: Double,
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -1174,6 +1319,10 @@ class Spinner_ protected ()
   override def setSelectedPositionInt(position: Double): Unit = js.native
   /* InferMemberOverrides */
   override def setSelection(position: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setSelection(position: Double, animate: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def setSelectionInt(position: Double, animate: Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def setShadowView(radius: Double, dx: Double, dy: Double, color: Double): Unit = js.native
   /* InferMemberOverrides */

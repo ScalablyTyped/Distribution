@@ -11,20 +11,21 @@ import scala.scalajs.js.annotation._
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IFormPanel
+- typings.extjs.Ext.form.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ @js.native
+trait IFormPanel
   extends typings.extjs.Ext.panel.IPanel {
   /** [Method] Forces each field within the form panel to check if its value has changed  */
-  var checkChange: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var checkChange: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
+  var fieldDefaults: js.UndefOr[js.Any] = js.native
   /** [Method] Provides access to the Form which this Panel contains
     * @returns Ext.form.Basic The Form which this Panel contains.
     */
-  var getForm: js.UndefOr[js.Function0[IBasic]] = js.undefined
+  var getForm: js.UndefOr[js.Function0[IBasic]] = js.native
   /** [Method] Returns the currently loaded Ext data Model instance if one was loaded via loadRecord
     * @returns Ext.data.Model The loaded instance
     */
-  var getRecord: js.UndefOr[js.Function0[IModel]] = js.undefined
+  var getRecord: js.UndefOr[js.Function0[IModel]] = js.native
   /** [Method] Convenience function for fetching the current value of each field in the form
     * @param asString Boolean If true, will return the key/value collection as a single URL-encoded param string.
     * @param dirtyOnly Boolean If true, only fields that are dirty will be included in the result.
@@ -40,105 +41,155 @@ import scala.scalajs.js.annotation._
       /* useDataValues */ js.UndefOr[Boolean], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Convenience function to check if the form has any invalid fields  */
-  var hasInvalidField: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var hasInvalidField: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
-  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Convenience function to check if the form has any dirty fields
     * @returns Boolean
     */
-  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Convenience function to check if the form has all valid fields
     * @returns Boolean
     */
-  var isValid: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isValid: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] This is a proxy for the underlying BasicForm s Ext form Basic load call
     * @param options Object The options to pass to the action (see Ext.form.Basic.load and Ext.form.Basic.doAction for details)
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Loads an Ext data Model into this form internally just calls Ext form Basic loadRecord See also trackResetOnLoad
     * @param record Ext.data.Model The record to load
     * @returns Ext.form.Basic The Ext.form.Basic attached to this FormPanel
     */
-  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.undefined
+  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.native
   /** [Method] Fired when the error message of any field within the container changes
     * @param field Ext.form.Labelable The sub-field whose active error changed
     * @param error String The new active error message
     */
-  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[java.lang.String], Unit]] = js.undefined
+  var onFieldErrorChange: js.UndefOr[js.Function2[js.UndefOr[ILabelable], js.UndefOr[java.lang.String], Unit]] = js.native
   /** [Method] Fired when the validity of any field within the container changes
     * @param field Ext.form.field.Field The sub-field whose validity changed
     * @param valid Boolean The new validity state
     */
-  var onFieldValidityChange: js.UndefOr[js.Function2[js.UndefOr[IField], js.UndefOr[Boolean], Unit]] = js.undefined
+  var onFieldValidityChange: js.UndefOr[js.Function2[js.UndefOr[IField], js.UndefOr[Boolean], Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var pollForChanges: js.UndefOr[Boolean] = js.undefined
+  var pollForChanges: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var pollInterval: js.UndefOr[Double] = js.undefined
+  var pollInterval: js.UndefOr[Double] = js.native
   /** [Method] Start an interval task to continuously poll all the fields in the form for changes in their values
     * @param interval Number The interval in milliseconds at which the check should run.
     */
-  var startPolling: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
+  var startPolling: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Stop a running interval task that was started by startPolling  */
-  var stopPolling: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var stopPolling: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] This is a proxy for the underlying BasicForm s Ext form Basic submit call
     * @param options Object The options to pass to the action (see Ext.form.Basic.submit and Ext.form.Basic.doAction for details)
     */
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Persists the values in this form into the passed Ext data Model object in a beginEdit endEdit block
     * @param record Ext.data.Model The record to edit
     * @returns Ext.form.Basic The Ext.form.Basic attached to this FormPanel
     */
-  var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.undefined
+  var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], IBasic]] = js.native
 }
 
 object IFormPanel {
   @scala.inline
-  def apply(
-    IPanel: typings.extjs.Ext.panel.IPanel = null,
-    checkChange: () => Unit = null,
-    fieldDefaults: js.Any = null,
-    getForm: () => IBasic = null,
-    getRecord: () => IModel = null,
-    getValues: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => _ = null,
-    hasInvalidField: () => Unit = null,
-    initFieldAncestor: () => Unit = null,
-    isDirty: () => Boolean = null,
-    isValid: () => Boolean = null,
-    load: /* options */ js.UndefOr[js.Any] => Unit = null,
-    loadRecord: /* record */ js.UndefOr[IModel] => IBasic = null,
-    onFieldErrorChange: (js.UndefOr[ILabelable], js.UndefOr[java.lang.String]) => Unit = null,
-    onFieldValidityChange: (js.UndefOr[IField], js.UndefOr[Boolean]) => Unit = null,
-    pollForChanges: js.UndefOr[Boolean] = js.undefined,
-    pollInterval: js.UndefOr[Double] = js.undefined,
-    startPolling: /* interval */ js.UndefOr[Double] => Unit = null,
-    stopPolling: () => Unit = null,
-    submit: /* options */ js.UndefOr[js.Any] => Unit = null,
-    updateRecord: /* record */ js.UndefOr[IModel] => IBasic = null
-  ): IFormPanel = {
+  def apply(): IFormPanel = {
     val __obj = js.Dynamic.literal()
-    if (IPanel != null) js.Dynamic.global.Object.assign(__obj, IPanel)
-    if (checkChange != null) __obj.updateDynamic("checkChange")(js.Any.fromFunction0(checkChange))
-    if (fieldDefaults != null) __obj.updateDynamic("fieldDefaults")(fieldDefaults.asInstanceOf[js.Any])
-    if (getForm != null) __obj.updateDynamic("getForm")(js.Any.fromFunction0(getForm))
-    if (getRecord != null) __obj.updateDynamic("getRecord")(js.Any.fromFunction0(getRecord))
-    if (getValues != null) __obj.updateDynamic("getValues")(js.Any.fromFunction4(getValues))
-    if (hasInvalidField != null) __obj.updateDynamic("hasInvalidField")(js.Any.fromFunction0(hasInvalidField))
-    if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(js.Any.fromFunction0(initFieldAncestor))
-    if (isDirty != null) __obj.updateDynamic("isDirty")(js.Any.fromFunction0(isDirty))
-    if (isValid != null) __obj.updateDynamic("isValid")(js.Any.fromFunction0(isValid))
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction1(load))
-    if (loadRecord != null) __obj.updateDynamic("loadRecord")(js.Any.fromFunction1(loadRecord))
-    if (onFieldErrorChange != null) __obj.updateDynamic("onFieldErrorChange")(js.Any.fromFunction2(onFieldErrorChange))
-    if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(js.Any.fromFunction2(onFieldValidityChange))
-    if (!js.isUndefined(pollForChanges)) __obj.updateDynamic("pollForChanges")(pollForChanges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pollInterval)) __obj.updateDynamic("pollInterval")(pollInterval.get.asInstanceOf[js.Any])
-    if (startPolling != null) __obj.updateDynamic("startPolling")(js.Any.fromFunction1(startPolling))
-    if (stopPolling != null) __obj.updateDynamic("stopPolling")(js.Any.fromFunction0(stopPolling))
-    if (submit != null) __obj.updateDynamic("submit")(js.Any.fromFunction1(submit))
-    if (updateRecord != null) __obj.updateDynamic("updateRecord")(js.Any.fromFunction1(updateRecord))
     __obj.asInstanceOf[IFormPanel]
   }
+  @scala.inline
+  implicit class IFormPanelOps[Self <: IFormPanel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckChange(value: () => Unit): Self = this.set("checkChange", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteCheckChange: Self = this.set("checkChange", js.undefined)
+    @scala.inline
+    def setFieldDefaults(value: js.Any): Self = this.set("fieldDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldDefaults: Self = this.set("fieldDefaults", js.undefined)
+    @scala.inline
+    def setGetForm(value: () => IBasic): Self = this.set("getForm", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetForm: Self = this.set("getForm", js.undefined)
+    @scala.inline
+    def setGetRecord(value: () => IModel): Self = this.set("getRecord", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRecord: Self = this.set("getRecord", js.undefined)
+    @scala.inline
+    def setGetValues(
+      value: (/* asString */ js.UndefOr[Boolean], /* dirtyOnly */ js.UndefOr[Boolean], /* includeEmptyText */ js.UndefOr[Boolean], /* useDataValues */ js.UndefOr[Boolean]) => _
+    ): Self = this.set("getValues", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteGetValues: Self = this.set("getValues", js.undefined)
+    @scala.inline
+    def setHasInvalidField(value: () => Unit): Self = this.set("hasInvalidField", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHasInvalidField: Self = this.set("hasInvalidField", js.undefined)
+    @scala.inline
+    def setInitFieldAncestor(value: () => Unit): Self = this.set("initFieldAncestor", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteInitFieldAncestor: Self = this.set("initFieldAncestor", js.undefined)
+    @scala.inline
+    def setIsDirty(value: () => Boolean): Self = this.set("isDirty", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsDirty: Self = this.set("isDirty", js.undefined)
+    @scala.inline
+    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    @scala.inline
+    def setLoad(value: /* options */ js.UndefOr[js.Any] => Unit): Self = this.set("load", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setLoadRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = this.set("loadRecord", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLoadRecord: Self = this.set("loadRecord", js.undefined)
+    @scala.inline
+    def setOnFieldErrorChange(value: (js.UndefOr[ILabelable], js.UndefOr[java.lang.String]) => Unit): Self = this.set("onFieldErrorChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnFieldErrorChange: Self = this.set("onFieldErrorChange", js.undefined)
+    @scala.inline
+    def setOnFieldValidityChange(value: (js.UndefOr[IField], js.UndefOr[Boolean]) => Unit): Self = this.set("onFieldValidityChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnFieldValidityChange: Self = this.set("onFieldValidityChange", js.undefined)
+    @scala.inline
+    def setPollForChanges(value: Boolean): Self = this.set("pollForChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollForChanges: Self = this.set("pollForChanges", js.undefined)
+    @scala.inline
+    def setPollInterval(value: Double): Self = this.set("pollInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePollInterval: Self = this.set("pollInterval", js.undefined)
+    @scala.inline
+    def setStartPolling(value: /* interval */ js.UndefOr[Double] => Unit): Self = this.set("startPolling", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStartPolling: Self = this.set("startPolling", js.undefined)
+    @scala.inline
+    def setStopPolling(value: () => Unit): Self = this.set("stopPolling", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteStopPolling: Self = this.set("stopPolling", js.undefined)
+    @scala.inline
+    def setSubmit(value: /* options */ js.UndefOr[js.Any] => Unit): Self = this.set("submit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSubmit: Self = this.set("submit", js.undefined)
+    @scala.inline
+    def setUpdateRecord(value: /* record */ js.UndefOr[IModel] => IBasic): Self = this.set("updateRecord", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUpdateRecord: Self = this.set("updateRecord", js.undefined)
+  }
+  
 }
 

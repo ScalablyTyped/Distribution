@@ -82,46 +82,102 @@ trait SpotFleetLaunchSpecification extends js.Object {
 
 object SpotFleetLaunchSpecification {
   @scala.inline
-  def apply(
-    AddressingType: String = null,
-    BlockDeviceMappings: BlockDeviceMappingList = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
-    IamInstanceProfile: IamInstanceProfileSpecification = null,
-    ImageId: String = null,
-    InstanceType: InstanceType = null,
-    KernelId: String = null,
-    KeyName: String = null,
-    Monitoring: SpotFleetMonitoring = null,
-    NetworkInterfaces: InstanceNetworkInterfaceSpecificationList = null,
-    Placement: SpotPlacement = null,
-    RamdiskId: String = null,
-    SecurityGroups: GroupIdentifierList = null,
-    SpotPrice: String = null,
-    SubnetId: String = null,
-    TagSpecifications: SpotFleetTagSpecificationList = null,
-    UserData: String = null,
-    WeightedCapacity: js.UndefOr[Double] = js.undefined
-  ): SpotFleetLaunchSpecification = {
+  def apply(): SpotFleetLaunchSpecification = {
     val __obj = js.Dynamic.literal()
-    if (AddressingType != null) __obj.updateDynamic("AddressingType")(AddressingType.asInstanceOf[js.Any])
-    if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
-    if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
-    if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])
-    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])
-    if (Monitoring != null) __obj.updateDynamic("Monitoring")(Monitoring.asInstanceOf[js.Any])
-    if (NetworkInterfaces != null) __obj.updateDynamic("NetworkInterfaces")(NetworkInterfaces.asInstanceOf[js.Any])
-    if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
-    if (RamdiskId != null) __obj.updateDynamic("RamdiskId")(RamdiskId.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (SpotPrice != null) __obj.updateDynamic("SpotPrice")(SpotPrice.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
-    if (UserData != null) __obj.updateDynamic("UserData")(UserData.asInstanceOf[js.Any])
-    if (!js.isUndefined(WeightedCapacity)) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetLaunchSpecification]
   }
+  @scala.inline
+  implicit class SpotFleetLaunchSpecificationOps[Self <: SpotFleetLaunchSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressingType(value: String): Self = this.set("AddressingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressingType: Self = this.set("AddressingType", js.undefined)
+    @scala.inline
+    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    @scala.inline
+    def setBlockDeviceMappings(value: BlockDeviceMappingList): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setIamInstanceProfile(value: IamInstanceProfileSpecification): Self = this.set("IamInstanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamInstanceProfile: Self = this.set("IamInstanceProfile", js.undefined)
+    @scala.inline
+    def setImageId(value: String): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKernelId(value: String): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    @scala.inline
+    def setMonitoring(value: SpotFleetMonitoring): Self = this.set("Monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("Monitoring", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: InstanceNetworkInterfaceSpecification*): Self = this.set("NetworkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: InstanceNetworkInterfaceSpecificationList): Self = this.set("NetworkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("NetworkInterfaces", js.undefined)
+    @scala.inline
+    def setPlacement(value: SpotPlacement): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("Placement", js.undefined)
+    @scala.inline
+    def setRamdiskId(value: String): Self = this.set("RamdiskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamdiskId: Self = this.set("RamdiskId", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: GroupIdentifier*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: GroupIdentifierList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setSpotPrice(value: String): Self = this.set("SpotPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotPrice: Self = this.set("SpotPrice", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: SpotFleetTagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: SpotFleetTagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+    @scala.inline
+    def setUserData(value: String): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("UserData", js.undefined)
+    @scala.inline
+    def setWeightedCapacity(value: Double): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+  }
+  
 }
 

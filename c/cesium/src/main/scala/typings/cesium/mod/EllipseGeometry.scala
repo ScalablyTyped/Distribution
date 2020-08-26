@@ -17,6 +17,7 @@ class EllipseGeometry protected () extends Packable {
 object EllipseGeometry extends js.Object {
   def createGeometry(ellipseGeometry: EllipseGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): EllipseGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: EllipseGeometry): EllipseGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): EllipseGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: EllipseGeometry): EllipseGeometry = js.native
 }

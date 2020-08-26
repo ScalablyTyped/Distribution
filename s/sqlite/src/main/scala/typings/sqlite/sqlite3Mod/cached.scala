@@ -13,6 +13,11 @@ object cached extends js.Object {
     filename: String,
     callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
   ): typings.sqlite.sqlite3Mod.Database = js.native
+  def Database(
+    filename: String,
+    mode: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ typings.sqlite.sqlite3Mod.Database, /* err */ Error | Null, Unit]
+  ): typings.sqlite.sqlite3Mod.Database = js.native
   def Database(filename: String, mode: Double): typings.sqlite.sqlite3Mod.Database = js.native
   def Database(
     filename: String,

@@ -26,10 +26,34 @@ trait PutEventsRequest extends js.Object {
 
 object PutEventsRequest {
   @scala.inline
-  def apply(eventList: EventList, sessionId: StringType, trackingId: StringType, userId: UserId = null): PutEventsRequest = {
+  def apply(eventList: EventList, sessionId: StringType, trackingId: StringType): PutEventsRequest = {
     val __obj = js.Dynamic.literal(eventList = eventList.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], trackingId = trackingId.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsRequest]
   }
+  @scala.inline
+  implicit class PutEventsRequestOps[Self <: PutEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventListVarargs(value: Event*): Self = this.set("eventList", js.Array(value :_*))
+    @scala.inline
+    def setEventList(value: EventList): Self = this.set("eventList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSessionId(value: StringType): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrackingId(value: StringType): Self = this.set("trackingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

@@ -20,6 +20,7 @@ object mod extends js.Object {
   }
   
   def default[T](): Lru[T] = js.native
+  def default[T](max: js.UndefOr[scala.Nothing], ttl: Double): Lru[T] = js.native
   def default[T](max: Double): Lru[T] = js.native
   def default[T](max: Double, ttl: Double): Lru[T] = js.native
 }

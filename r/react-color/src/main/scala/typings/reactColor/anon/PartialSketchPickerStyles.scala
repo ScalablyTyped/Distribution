@@ -6,48 +6,71 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-color.react-color/lib/components/sketch/Sketch.SketchPickerStylesProps> */
+@js.native
 trait PartialSketchPickerStyles extends js.Object {
-  var Alpha: js.UndefOr[CSSProperties] = js.undefined
-  var Hue: js.UndefOr[CSSProperties] = js.undefined
-  var Saturation: js.UndefOr[CSSProperties] = js.undefined
-  var activeColor: js.UndefOr[CSSProperties] = js.undefined
-  var alpha: js.UndefOr[CSSProperties] = js.undefined
-  var color: js.UndefOr[CSSProperties] = js.undefined
-  var controls: js.UndefOr[CSSProperties] = js.undefined
-  var hue: js.UndefOr[CSSProperties] = js.undefined
-  var picker: js.UndefOr[CSSProperties] = js.undefined
-  var saturation: js.UndefOr[CSSProperties] = js.undefined
-  var sliders: js.UndefOr[CSSProperties] = js.undefined
+  var Alpha: js.UndefOr[CSSProperties] = js.native
+  var Hue: js.UndefOr[CSSProperties] = js.native
+  var Saturation: js.UndefOr[CSSProperties] = js.native
+  var activeColor: js.UndefOr[CSSProperties] = js.native
+  var alpha: js.UndefOr[CSSProperties] = js.native
+  var color: js.UndefOr[CSSProperties] = js.native
+  var controls: js.UndefOr[CSSProperties] = js.native
+  var hue: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.native
+  var saturation: js.UndefOr[CSSProperties] = js.native
+  var sliders: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialSketchPickerStyles {
   @scala.inline
-  def apply(
-    Alpha: CSSProperties = null,
-    Hue: CSSProperties = null,
-    Saturation: CSSProperties = null,
-    activeColor: CSSProperties = null,
-    alpha: CSSProperties = null,
-    color: CSSProperties = null,
-    controls: CSSProperties = null,
-    hue: CSSProperties = null,
-    picker: CSSProperties = null,
-    saturation: CSSProperties = null,
-    sliders: CSSProperties = null
-  ): PartialSketchPickerStyles = {
+  def apply(): PartialSketchPickerStyles = {
     val __obj = js.Dynamic.literal()
-    if (Alpha != null) __obj.updateDynamic("Alpha")(Alpha.asInstanceOf[js.Any])
-    if (Hue != null) __obj.updateDynamic("Hue")(Hue.asInstanceOf[js.Any])
-    if (Saturation != null) __obj.updateDynamic("Saturation")(Saturation.asInstanceOf[js.Any])
-    if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor.asInstanceOf[js.Any])
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (hue != null) __obj.updateDynamic("hue")(hue.asInstanceOf[js.Any])
-    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
-    if (saturation != null) __obj.updateDynamic("saturation")(saturation.asInstanceOf[js.Any])
-    if (sliders != null) __obj.updateDynamic("sliders")(sliders.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialSketchPickerStyles]
   }
+  @scala.inline
+  implicit class PartialSketchPickerStylesOps[Self <: PartialSketchPickerStyles] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: CSSProperties): Self = this.set("Alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("Alpha", js.undefined)
+    @scala.inline
+    def setHue(value: CSSProperties): Self = this.set("Hue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHue: Self = this.set("Hue", js.undefined)
+    @scala.inline
+    def setSaturation(value: CSSProperties): Self = this.set("Saturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaturation: Self = this.set("Saturation", js.undefined)
+    @scala.inline
+    def setActiveColor(value: CSSProperties): Self = this.set("activeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveColor: Self = this.set("activeColor", js.undefined)
+    @scala.inline
+    def setColor(value: CSSProperties): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setControls(value: CSSProperties): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setPicker(value: CSSProperties): Self = this.set("picker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePicker: Self = this.set("picker", js.undefined)
+    @scala.inline
+    def setSliders(value: CSSProperties): Self = this.set("sliders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSliders: Self = this.set("sliders", js.undefined)
+  }
+  
 }
 

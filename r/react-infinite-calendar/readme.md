@@ -12,7 +12,7 @@ Infinite scrolling date-picker built with React, with localization, themes, keyb
 | Keywords           | react, reactjs, react-component, infinite, calendar, endless, date, date-picker, month, day, year, scrolling, virtual, picker, material, flat |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 480374 |
+| # downloads        | 497405 |
 | # stars            | 5 |
 
 ## Links

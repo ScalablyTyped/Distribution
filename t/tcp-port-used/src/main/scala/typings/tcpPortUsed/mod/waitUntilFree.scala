@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object waitUntilFree extends js.Object {
   def apply(port: Double): js.Promise[Unit] = js.native
+  def apply(port: Double, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
   def apply(port: Double, retryTimeMs: Double): js.Promise[Unit] = js.native
   def apply(port: Double, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
   def apply(port: TcpPortUsedOptions): js.Promise[Unit] = js.native
+  def apply(port: TcpPortUsedOptions, retryTimeMs: js.UndefOr[scala.Nothing], timeOutMs: Double): js.Promise[Unit] = js.native
   def apply(port: TcpPortUsedOptions, retryTimeMs: Double): js.Promise[Unit] = js.native
   def apply(port: TcpPortUsedOptions, retryTimeMs: Double, timeOutMs: Double): js.Promise[Unit] = js.native
 }

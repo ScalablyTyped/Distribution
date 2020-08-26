@@ -12,7 +12,7 @@ Response time for Node.js servers
 | Keywords           | http, res, response time, x-response-time |
 | # releases         | 1 |
 | # dependents       | 183 |
-| # downloads        | 10217231 |
+| # downloads        | 10102735 |
 | # stars            | 32 |
 
 ## Links

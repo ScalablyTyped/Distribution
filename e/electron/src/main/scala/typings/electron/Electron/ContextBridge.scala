@@ -1,6 +1,6 @@
 package typings.electron.Electron
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`

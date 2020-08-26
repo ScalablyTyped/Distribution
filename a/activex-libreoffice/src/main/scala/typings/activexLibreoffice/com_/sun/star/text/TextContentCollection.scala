@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * Objects of this type are collections of text contents of the same type.
   * @see Text
   */
+@js.native
 trait TextContentCollection
   extends XNameAccess
      with XContainer

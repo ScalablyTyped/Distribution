@@ -39,12 +39,37 @@ object TrafficPolicy {
     Id: TrafficPolicyId,
     Name: TrafficPolicyName,
     Type: RRType,
-    Version: TrafficPolicyVersion,
-    Comment: TrafficPolicyComment = null
+    Version: TrafficPolicyVersion
   ): TrafficPolicy = {
     val __obj = js.Dynamic.literal(Document = Document.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrafficPolicy]
   }
+  @scala.inline
+  implicit class TrafficPolicyOps[Self <: TrafficPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocument(value: TrafficPolicyDocument): Self = this.set("Document", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: TrafficPolicyId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: TrafficPolicyName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: RRType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: TrafficPolicyVersion): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: TrafficPolicyComment): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+  }
+  
 }
 

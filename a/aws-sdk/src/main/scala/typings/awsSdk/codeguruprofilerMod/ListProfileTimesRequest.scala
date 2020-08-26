@@ -42,16 +42,43 @@ object ListProfileTimesRequest {
     endTime: Timestamp,
     period: AggregationPeriod,
     profilingGroupName: ProfilingGroupName,
-    startTime: Timestamp,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: PaginationToken = null,
-    orderBy: OrderBy = null
+    startTime: Timestamp
   ): ListProfileTimesRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProfileTimesRequest]
   }
+  @scala.inline
+  implicit class ListProfileTimesRequestOps[Self <: ListProfileTimesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPeriod(value: AggregationPeriod): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setOrderBy(value: OrderBy): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+  }
+  
 }
 

@@ -5,32 +5,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledAliasConfiguration extends AliasConfiguration {
   /**
     * <p>Specifies an additional function versions the alias points to, allowing you to dictate what percentage of traffic will invoke each version.</p>
     */
   @JSName("RoutingConfig")
-  var RoutingConfig_UnmarshalledAliasConfiguration: js.UndefOr[UnmarshalledAliasRoutingConfiguration] = js.undefined
+  var RoutingConfig_UnmarshalledAliasConfiguration: js.UndefOr[UnmarshalledAliasRoutingConfiguration] = js.native
 }
 
 object UnmarshalledAliasConfiguration {
   @scala.inline
-  def apply(
-    AliasArn: String = null,
-    Description: String = null,
-    FunctionVersion: String = null,
-    Name: String = null,
-    RevisionId: String = null,
-    RoutingConfig: UnmarshalledAliasRoutingConfiguration = null
-  ): UnmarshalledAliasConfiguration = {
+  def apply(): UnmarshalledAliasConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AliasArn != null) __obj.updateDynamic("AliasArn")(AliasArn.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FunctionVersion != null) __obj.updateDynamic("FunctionVersion")(FunctionVersion.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
-    if (RoutingConfig != null) __obj.updateDynamic("RoutingConfig")(RoutingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledAliasConfiguration]
   }
+  @scala.inline
+  implicit class UnmarshalledAliasConfigurationOps[Self <: UnmarshalledAliasConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoutingConfig(value: UnmarshalledAliasRoutingConfiguration): Self = this.set("RoutingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingConfig: Self = this.set("RoutingConfig", js.undefined)
+  }
+  
 }
 

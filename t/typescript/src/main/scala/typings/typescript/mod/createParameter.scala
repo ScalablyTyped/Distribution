@@ -11,61 +11,10 @@ object createParameter extends js.Object {
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
     dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: java.lang.String
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: java.lang.String,
-    questionToken: QuestionToken
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: java.lang.String,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: java.lang.String,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: BindingName
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: BindingName,
-    questionToken: QuestionToken
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: BindingName,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): ParameterDeclaration = js.native
-  def apply(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: BindingName,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
+    name: java.lang.String | BindingName,
+    questionToken: js.UndefOr[QuestionToken],
+    `type`: js.UndefOr[TypeNode],
+    initializer: js.UndefOr[Expression]
   ): ParameterDeclaration = js.native
 }
 

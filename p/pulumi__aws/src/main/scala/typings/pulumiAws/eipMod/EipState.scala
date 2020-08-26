@@ -16,6 +16,14 @@ trait EipState extends js.Object {
     */
   val associateWithPrivateIp: js.UndefOr[Input[String]] = js.native
   val associationId: js.UndefOr[Input[String]] = js.native
+  /**
+    * Customer owned IP.
+    */
+  val customerOwnedIp: js.UndefOr[Input[String]] = js.native
+  /**
+    * The  ID  of a customer-owned address pool. For more on customer owned IP addressed check out [Customer-owned IP addresses guide](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-networking-components.html#ip-addressing)
+    */
+  val customerOwnedIpv4Pool: js.UndefOr[Input[String]] = js.native
   val domain: js.UndefOr[Input[String]] = js.native
   /**
     * EC2 instance ID.
@@ -46,9 +54,9 @@ trait EipState extends js.Object {
     */
   val publicIpv4Pool: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Boolean if the EIP is in a VPC or not.
     */
@@ -57,36 +65,82 @@ trait EipState extends js.Object {
 
 object EipState {
   @scala.inline
-  def apply(
-    allocationId: Input[String] = null,
-    associateWithPrivateIp: Input[String] = null,
-    associationId: Input[String] = null,
-    domain: Input[String] = null,
-    instance: Input[String] = null,
-    networkInterface: Input[String] = null,
-    privateDns: Input[String] = null,
-    privateIp: Input[String] = null,
-    publicDns: Input[String] = null,
-    publicIp: Input[String] = null,
-    publicIpv4Pool: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpc: Input[Boolean] = null
-  ): EipState = {
+  def apply(): EipState = {
     val __obj = js.Dynamic.literal()
-    if (allocationId != null) __obj.updateDynamic("allocationId")(allocationId.asInstanceOf[js.Any])
-    if (associateWithPrivateIp != null) __obj.updateDynamic("associateWithPrivateIp")(associateWithPrivateIp.asInstanceOf[js.Any])
-    if (associationId != null) __obj.updateDynamic("associationId")(associationId.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface.asInstanceOf[js.Any])
-    if (privateDns != null) __obj.updateDynamic("privateDns")(privateDns.asInstanceOf[js.Any])
-    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
-    if (publicDns != null) __obj.updateDynamic("publicDns")(publicDns.asInstanceOf[js.Any])
-    if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
-    if (publicIpv4Pool != null) __obj.updateDynamic("publicIpv4Pool")(publicIpv4Pool.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpc != null) __obj.updateDynamic("vpc")(vpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[EipState]
   }
+  @scala.inline
+  implicit class EipStateOps[Self <: EipState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: Input[String]): Self = this.set("allocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationId: Self = this.set("allocationId", js.undefined)
+    @scala.inline
+    def setAssociateWithPrivateIp(value: Input[String]): Self = this.set("associateWithPrivateIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociateWithPrivateIp: Self = this.set("associateWithPrivateIp", js.undefined)
+    @scala.inline
+    def setAssociationId(value: Input[String]): Self = this.set("associationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("associationId", js.undefined)
+    @scala.inline
+    def setCustomerOwnedIp(value: Input[String]): Self = this.set("customerOwnedIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOwnedIp: Self = this.set("customerOwnedIp", js.undefined)
+    @scala.inline
+    def setCustomerOwnedIpv4Pool(value: Input[String]): Self = this.set("customerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOwnedIpv4Pool: Self = this.set("customerOwnedIpv4Pool", js.undefined)
+    @scala.inline
+    def setDomain(value: Input[String]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setInstance(value: Input[String]): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setNetworkInterface(value: Input[String]): Self = this.set("networkInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterface: Self = this.set("networkInterface", js.undefined)
+    @scala.inline
+    def setPrivateDns(value: Input[String]): Self = this.set("privateDns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDns: Self = this.set("privateDns", js.undefined)
+    @scala.inline
+    def setPrivateIp(value: Input[String]): Self = this.set("privateIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIp: Self = this.set("privateIp", js.undefined)
+    @scala.inline
+    def setPublicDns(value: Input[String]): Self = this.set("publicDns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicDns: Self = this.set("publicDns", js.undefined)
+    @scala.inline
+    def setPublicIp(value: Input[String]): Self = this.set("publicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("publicIp", js.undefined)
+    @scala.inline
+    def setPublicIpv4Pool(value: Input[String]): Self = this.set("publicIpv4Pool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIpv4Pool: Self = this.set("publicIpv4Pool", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpc(value: Input[Boolean]): Self = this.set("vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpc: Self = this.set("vpc", js.undefined)
+  }
+  
 }
 

@@ -42,24 +42,50 @@ trait Origin extends js.Object {
 
 object Origin {
   @scala.inline
-  def apply(
-    DomainName: String,
-    Id: String,
-    ConnectionAttempts: js.UndefOr[integer] = js.undefined,
-    ConnectionTimeout: js.UndefOr[integer] = js.undefined,
-    CustomHeaders: CustomHeaders = null,
-    CustomOriginConfig: CustomOriginConfig = null,
-    OriginPath: String = null,
-    S3OriginConfig: S3OriginConfig = null
-  ): Origin = {
+  def apply(DomainName: String, Id: String): Origin = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionAttempts)) __obj.updateDynamic("ConnectionAttempts")(ConnectionAttempts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectionTimeout)) __obj.updateDynamic("ConnectionTimeout")(ConnectionTimeout.get.asInstanceOf[js.Any])
-    if (CustomHeaders != null) __obj.updateDynamic("CustomHeaders")(CustomHeaders.asInstanceOf[js.Any])
-    if (CustomOriginConfig != null) __obj.updateDynamic("CustomOriginConfig")(CustomOriginConfig.asInstanceOf[js.Any])
-    if (OriginPath != null) __obj.updateDynamic("OriginPath")(OriginPath.asInstanceOf[js.Any])
-    if (S3OriginConfig != null) __obj.updateDynamic("S3OriginConfig")(S3OriginConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Origin]
   }
+  @scala.inline
+  implicit class OriginOps[Self <: Origin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: String): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionAttempts(value: integer): Self = this.set("ConnectionAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionAttempts: Self = this.set("ConnectionAttempts", js.undefined)
+    @scala.inline
+    def setConnectionTimeout(value: integer): Self = this.set("ConnectionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTimeout: Self = this.set("ConnectionTimeout", js.undefined)
+    @scala.inline
+    def setCustomHeaders(value: CustomHeaders): Self = this.set("CustomHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomHeaders: Self = this.set("CustomHeaders", js.undefined)
+    @scala.inline
+    def setCustomOriginConfig(value: CustomOriginConfig): Self = this.set("CustomOriginConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomOriginConfig: Self = this.set("CustomOriginConfig", js.undefined)
+    @scala.inline
+    def setOriginPath(value: String): Self = this.set("OriginPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginPath: Self = this.set("OriginPath", js.undefined)
+    @scala.inline
+    def setS3OriginConfig(value: S3OriginConfig): Self = this.set("S3OriginConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3OriginConfig: Self = this.set("S3OriginConfig", js.undefined)
+  }
+  
 }
 

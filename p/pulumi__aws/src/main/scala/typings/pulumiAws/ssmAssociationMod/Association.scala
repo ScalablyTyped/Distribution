@@ -24,6 +24,7 @@ class Association protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: AssociationArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AssociationArgs, opts: CustomResourceOptions) = this()
   /**
     * The ID of the SSM association.
@@ -68,7 +69,7 @@ class Association protected () extends CustomResource {
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
-  val parameters: Output_[StringDictionary[_]] = js.native
+  val parameters: Output_[StringDictionary[String]] = js.native
   /**
     * A cron expression when the association will be applied to the target(s).
     */
@@ -90,8 +91,10 @@ object Association extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Association = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Association = js.native
   def get(name: String, id: Input[ID], state: AssociationState): Association = js.native
   def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = js.native
   /**

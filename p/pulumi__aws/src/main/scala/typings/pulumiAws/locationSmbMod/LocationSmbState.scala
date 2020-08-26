@@ -40,7 +40,7 @@ trait LocationSmbState extends js.Object {
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   val uri: js.UndefOr[Input[String]] = js.native
   /**
     * The user who can mount the share and has file and folder permissions in the SMB share.
@@ -50,30 +50,64 @@ trait LocationSmbState extends js.Object {
 
 object LocationSmbState {
   @scala.inline
-  def apply(
-    agentArns: Input[js.Array[Input[String]]] = null,
-    arn: Input[String] = null,
-    domain: Input[String] = null,
-    mountOptions: Input[LocationSmbMountOptions] = null,
-    password: Input[String] = null,
-    serverHostname: Input[String] = null,
-    subdirectory: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    uri: Input[String] = null,
-    user: Input[String] = null
-  ): LocationSmbState = {
+  def apply(): LocationSmbState = {
     val __obj = js.Dynamic.literal()
-    if (agentArns != null) __obj.updateDynamic("agentArns")(agentArns.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (mountOptions != null) __obj.updateDynamic("mountOptions")(mountOptions.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (serverHostname != null) __obj.updateDynamic("serverHostname")(serverHostname.asInstanceOf[js.Any])
-    if (subdirectory != null) __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationSmbState]
   }
+  @scala.inline
+  implicit class LocationSmbStateOps[Self <: LocationSmbState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentArnsVarargs(value: Input[String]*): Self = this.set("agentArns", js.Array(value :_*))
+    @scala.inline
+    def setAgentArns(value: Input[js.Array[Input[String]]]): Self = this.set("agentArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentArns: Self = this.set("agentArns", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDomain(value: Input[String]): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setMountOptions(value: Input[LocationSmbMountOptions]): Self = this.set("mountOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountOptions: Self = this.set("mountOptions", js.undefined)
+    @scala.inline
+    def setPassword(value: Input[String]): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setServerHostname(value: Input[String]): Self = this.set("serverHostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerHostname: Self = this.set("serverHostname", js.undefined)
+    @scala.inline
+    def setSubdirectory(value: Input[String]): Self = this.set("subdirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdirectory: Self = this.set("subdirectory", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUri(value: Input[String]): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+    @scala.inline
+    def setUser(value: Input[String]): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

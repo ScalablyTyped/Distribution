@@ -9,30 +9,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FontOffset extends js.Object {
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var text: js.UndefOr[String] = js.native
+  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+  var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
 }
 
 object FontOffset {
   @scala.inline
-  def apply(
-    font: typings.devextreme.mod.DevExpress.viz.Font = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    textOverflow: ellipsis | hide | none = null,
-    wordWrap: normal | breakWord | none = null
-  ): FontOffset = {
+  def apply(): FontOffset = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
-    if (wordWrap != null) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontOffset]
   }
+  @scala.inline
+  implicit class FontOffsetOps[Self <: FontOffset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextOverflow(value: ellipsis | hide | none): Self = this.set("textOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextOverflow: Self = this.set("textOverflow", js.undefined)
+    @scala.inline
+    def setWordWrap(value: normal | breakWord | none): Self = this.set("wordWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordWrap: Self = this.set("wordWrap", js.undefined)
+  }
+  
 }
 

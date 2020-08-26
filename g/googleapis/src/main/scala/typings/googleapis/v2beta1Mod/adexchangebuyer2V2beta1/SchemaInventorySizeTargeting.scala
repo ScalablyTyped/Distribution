@@ -24,14 +24,34 @@ trait SchemaInventorySizeTargeting extends js.Object {
 
 object SchemaInventorySizeTargeting {
   @scala.inline
-  def apply(
-    excludedInventorySizes: js.Array[SchemaAdSize] = null,
-    targetedInventorySizes: js.Array[SchemaAdSize] = null
-  ): SchemaInventorySizeTargeting = {
+  def apply(): SchemaInventorySizeTargeting = {
     val __obj = js.Dynamic.literal()
-    if (excludedInventorySizes != null) __obj.updateDynamic("excludedInventorySizes")(excludedInventorySizes.asInstanceOf[js.Any])
-    if (targetedInventorySizes != null) __obj.updateDynamic("targetedInventorySizes")(targetedInventorySizes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInventorySizeTargeting]
   }
+  @scala.inline
+  implicit class SchemaInventorySizeTargetingOps[Self <: SchemaInventorySizeTargeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludedInventorySizesVarargs(value: SchemaAdSize*): Self = this.set("excludedInventorySizes", js.Array(value :_*))
+    @scala.inline
+    def setExcludedInventorySizes(value: js.Array[SchemaAdSize]): Self = this.set("excludedInventorySizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedInventorySizes: Self = this.set("excludedInventorySizes", js.undefined)
+    @scala.inline
+    def setTargetedInventorySizesVarargs(value: SchemaAdSize*): Self = this.set("targetedInventorySizes", js.Array(value :_*))
+    @scala.inline
+    def setTargetedInventorySizes(value: js.Array[SchemaAdSize]): Self = this.set("targetedInventorySizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetedInventorySizes: Self = this.set("targetedInventorySizes", js.undefined)
+  }
+  
 }
 

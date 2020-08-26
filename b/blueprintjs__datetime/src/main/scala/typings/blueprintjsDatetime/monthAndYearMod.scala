@@ -11,6 +11,7 @@ object monthAndYearMod extends js.Object {
   @js.native
   class MonthAndYear () extends js.Object {
     def this(month: Double) = this()
+    def this(month: js.UndefOr[scala.Nothing], year: Double) = this()
     def this(month: Double, year: Double) = this()
     var date: js.Any = js.native
     def getFullDate(): Date = js.native

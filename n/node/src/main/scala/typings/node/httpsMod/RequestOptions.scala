@@ -12,17 +12,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.http.RequestOptions & node.tls.SecureContextOptions & {  rejectUnauthorized ? :boolean,   servername ? :string} */
+/* Inlined node.http.RequestOptions & node.tls.SecureContextOptions & {  rejectUnauthorized :boolean | undefined,   servername :string | undefined} */
+@js.native
 trait RequestOptions extends js.Object {
-  var _defaultAgent: js.UndefOr[typings.node.httpMod.Agent] = js.undefined
-  var agent: js.UndefOr[typings.node.httpMod.Agent | Boolean] = js.undefined
-  var auth: js.UndefOr[String | Null] = js.undefined
+  var _defaultAgent: js.UndefOr[typings.node.httpMod.Agent] = js.native
+  var agent: js.UndefOr[typings.node.httpMod.Agent | Boolean] = js.native
+  var auth: js.UndefOr[String | Null] = js.native
   /**
     * Optionally override the trusted CA certificates. Default is to trust
     * the well-known CAs curated by Mozilla. Mozilla's CAs are completely
     * replaced when CAs are explicitly specified using this option.
     */
-  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
+  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   /**
     *  Cert chains in PEM format. One cert chain should be provided per
     *  private key. Each cert chain should consist of the PEM formatted
@@ -34,18 +35,18 @@ trait RequestOptions extends js.Object {
     *  intermediate certificates are not provided, the peer will not be
     *  able to validate the certificate, and the handshake will fail.
     */
-  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
+  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
   /**
     * Cipher suite specification, replacing the default. For more
     * information, see modifying the default cipher suite. Permitted
     * ciphers can be obtained via tls.getCiphers(). Cipher names must be
     * uppercased in order for OpenSSL to accept them.
     */
-  var ciphers: js.UndefOr[String] = js.undefined
+  var ciphers: js.UndefOr[String] = js.native
   /**
     * Name of an OpenSSL engine which can provide the client certificate.
     */
-  var clientCertEngine: js.UndefOr[String] = js.undefined
+  var clientCertEngine: js.UndefOr[String] = js.native
   // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
   var createConnection: js.UndefOr[
     js.Function2[
@@ -53,12 +54,12 @@ trait RequestOptions extends js.Object {
       /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
       Socket
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * PEM formatted CRLs (Certificate Revocation Lists).
     */
-  var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var defaultPort: js.UndefOr[Double | String] = js.undefined
+  var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var defaultPort: js.UndefOr[Double | String] = js.native
   /**
     * Diffie Hellman parameters, required for Perfect Forward Secrecy. Use
     * openssl dhparam to create the parameters. The key length must be
@@ -67,7 +68,7 @@ trait RequestOptions extends js.Object {
     * stronger security. If omitted or invalid, the parameters are
     * silently discarded and DHE ciphers will not be available.
     */
-  var dhparam: js.UndefOr[String | Buffer] = js.undefined
+  var dhparam: js.UndefOr[String | Buffer] = js.native
   /**
     * A string describing a named curve or a colon separated list of curve
     * NIDs or names, for example P-521:P-384:P-256, to use for ECDH key
@@ -77,17 +78,17 @@ trait RequestOptions extends js.Object {
     * name and description of each available elliptic curve. Default:
     * tls.DEFAULT_ECDH_CURVE.
     */
-  var ecdhCurve: js.UndefOr[String] = js.undefined
-  var family: js.UndefOr[Double] = js.undefined
-  var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
+  var ecdhCurve: js.UndefOr[String] = js.native
+  var family: js.UndefOr[Double] = js.native
+  var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
   /**
     * Attempt to use the server's cipher suite preferences instead of the
     * client's. When true, causes SSL_OP_CIPHER_SERVER_PREFERENCE to be
     * set in secureOptions
     */
-  var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
-  var host: js.UndefOr[String | Null] = js.undefined
-  var hostname: js.UndefOr[String | Null] = js.undefined
+  var honorCipherOrder: js.UndefOr[Boolean] = js.native
+  var host: js.UndefOr[String | Null] = js.native
+  var hostname: js.UndefOr[String | Null] = js.native
   /**
     * Private keys in PEM format. PEM allows the option of private keys
     * being encrypted. Encrypted keys will be decrypted with
@@ -98,12 +99,12 @@ trait RequestOptions extends js.Object {
     * object.passphrase is optional. Encrypted keys will be decrypted with
     * object.passphrase if provided, or options.passphrase if it is not.
     */
-  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
-  var localAddress: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+  var localAddress: js.UndefOr[String] = js.native
   /**
     * @default 8192
     */
-  var maxHeaderSize: js.UndefOr[Double] = js.undefined
+  var maxHeaderSize: js.UndefOr[Double] = js.native
   /**
     * Optionally set the maximum TLS version to allow. One
     * of `'TLSv1.3'`, `'TLSv1.2'`, `'TLSv1.1'`, or `'TLSv1'`. Cannot be specified along with the
@@ -112,8 +113,8 @@ trait RequestOptions extends js.Object {
     * `--tls-max-v1.2` sets the default to `'TLSv1.2'`. Using `--tls-max-v1.3` sets the default to
     * `'TLSv1.3'`. If multiple of the options are provided, the highest maximum is used.
     */
-  var maxVersion: js.UndefOr[SecureVersion] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
+  var maxVersion: js.UndefOr[SecureVersion] = js.native
+  var method: js.UndefOr[String] = js.native
   /**
     * Optionally set the minimum TLS version to allow. One
     * of `'TLSv1.3'`, `'TLSv1.2'`, `'TLSv1.1'`, or `'TLSv1'`. Cannot be specified along with the
@@ -124,12 +125,12 @@ trait RequestOptions extends js.Object {
     * `'TLSv1.1'`. Using `--tls-min-v1.3` sets the default to
     * 'TLSv1.3'. If multiple of the options are provided, the lowest minimum is used.
     */
-  var minVersion: js.UndefOr[SecureVersion] = js.undefined
+  var minVersion: js.UndefOr[SecureVersion] = js.native
   /**
     * Shared passphrase used for a single private key and/or a PFX.
     */
-  var passphrase: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String | Null] = js.undefined
+  var passphrase: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String | Null] = js.native
   /**
     * PFX or PKCS12 encoded private key and certificate chain. pfx is an
     * alternative to providing key and cert individually. PFX is usually
@@ -140,27 +141,27 @@ trait RequestOptions extends js.Object {
     * object.passphrase is optional. Encrypted PFX will be decrypted with
     * object.passphrase if provided, or options.passphrase if it is not.
     */
-  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
-  var port: js.UndefOr[Double | String | Null] = js.undefined
+  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+  var port: js.UndefOr[Double | String | Null] = js.native
   /**
     * Name of an OpenSSL engine to get private key from. Should be used
     * together with privateKeyIdentifier.
     */
-  var privateKeyEngine: js.UndefOr[String] = js.undefined
+  var privateKeyEngine: js.UndefOr[String] = js.native
   /**
     * Identifier of a private key managed by an OpenSSL engine. Should be
     * used together with privateKeyEngine. Should not be set together with
     * key, because both options define a private key in different ways.
     */
-  var privateKeyIdentifier: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[String | Null] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  var privateKeyIdentifier: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String | Null] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
   /**
     * Optionally affect the OpenSSL protocol behavior, which is not
     * usually necessary. This should be used carefully if at all! Value is
     * a numeric bitmask of the SSL_OP_* options from OpenSSL Options
     */
-  var secureOptions: js.UndefOr[Double] = js.undefined
+  var secureOptions: js.UndefOr[Double] = js.native
    // Value is a numeric bitmask of the `SSL_OP_*` options
   /**
     * Legacy mechanism to select the TLS protocol version to use, it does
@@ -173,110 +174,224 @@ trait RequestOptions extends js.Object {
     * TLS versions less than 1.2, but it may be required for
     * interoperability. Default: none, see minVersion.
     */
-  var secureProtocol: js.UndefOr[String] = js.undefined
+  var secureProtocol: js.UndefOr[String] = js.native
    // Defaults to true
-  var servername: js.UndefOr[String] = js.undefined
+  var servername: js.UndefOr[String] = js.native
   /**
     * Opaque identifier used by servers to ensure session state is not
     * shared between applications. Unused by clients.
     */
-  var sessionIdContext: js.UndefOr[String] = js.undefined
-  var setHost: js.UndefOr[Boolean] = js.undefined
+  var sessionIdContext: js.UndefOr[String] = js.native
+  var setHost: js.UndefOr[Boolean] = js.native
   /**
     *  Colon-separated list of supported signature algorithms. The list
     *  can contain digest algorithms (SHA256, MD5 etc.), public key
     *  algorithms (RSA-PSS, ECDSA etc.), combination of both (e.g
     *  'RSA+SHA384') or TLS v1.3 scheme names (e.g. rsa_pss_pss_sha512).
     */
-  var sigalgs: js.UndefOr[String] = js.undefined
-  var socketPath: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var sigalgs: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object RequestOptions {
   @scala.inline
-  def apply(
-    _defaultAgent: typings.node.httpMod.Agent = null,
-    agent: typings.node.httpMod.Agent | Boolean = null,
-    auth: js.UndefOr[Null | String] = js.undefined,
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    ciphers: String = null,
-    clientCertEngine: String = null,
-    createConnection: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket = null,
-    crl: String | Buffer | (js.Array[String | Buffer]) = null,
-    defaultPort: Double | String = null,
-    dhparam: String | Buffer = null,
-    ecdhCurve: String = null,
-    family: js.UndefOr[Double] = js.undefined,
-    headers: OutgoingHttpHeaders = null,
-    honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    host: js.UndefOr[Null | String] = js.undefined,
-    hostname: js.UndefOr[Null | String] = js.undefined,
-    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
-    localAddress: String = null,
-    maxHeaderSize: js.UndefOr[Double] = js.undefined,
-    maxVersion: SecureVersion = null,
-    method: String = null,
-    minVersion: SecureVersion = null,
-    passphrase: String = null,
-    path: js.UndefOr[Null | String] = js.undefined,
-    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
-    port: js.UndefOr[Null | Double | String] = js.undefined,
-    privateKeyEngine: String = null,
-    privateKeyIdentifier: String = null,
-    protocol: js.UndefOr[Null | String] = js.undefined,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    secureOptions: js.UndefOr[Double] = js.undefined,
-    secureProtocol: String = null,
-    servername: String = null,
-    sessionIdContext: String = null,
-    setHost: js.UndefOr[Boolean] = js.undefined,
-    sigalgs: String = null,
-    socketPath: String = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): RequestOptions = {
+  def apply(): RequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (_defaultAgent != null) __obj.updateDynamic("_defaultAgent")(_defaultAgent.asInstanceOf[js.Any])
-    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
-    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
-    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
-    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (defaultPort != null) __obj.updateDynamic("defaultPort")(defaultPort.asInstanceOf[js.Any])
-    if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(family)) __obj.updateDynamic("family")(family.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(host)) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(hostname)) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeaderSize)) __obj.updateDynamic("maxHeaderSize")(maxHeaderSize.get.asInstanceOf[js.Any])
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
-    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(protocol)) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
-    if (servername != null) __obj.updateDynamic("servername")(servername.asInstanceOf[js.Any])
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(setHost)) __obj.updateDynamic("setHost")(setHost.get.asInstanceOf[js.Any])
-    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOptions]
   }
+  @scala.inline
+  implicit class RequestOptionsOps[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_defaultAgent(value: typings.node.httpMod.Agent): Self = this.set("_defaultAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_defaultAgent: Self = this.set("_defaultAgent", js.undefined)
+    @scala.inline
+    def setAgent(value: typings.node.httpMod.Agent | Boolean): Self = this.set("agent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgent: Self = this.set("agent", js.undefined)
+    @scala.inline
+    def setAuth(value: String): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setAuthNull: Self = this.set("auth", null)
+    @scala.inline
+    def setCaVarargs(value: (String | Buffer)*): Self = this.set("ca", js.Array(value :_*))
+    @scala.inline
+    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("ca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCa: Self = this.set("ca", js.undefined)
+    @scala.inline
+    def setCertVarargs(value: (String | Buffer)*): Self = this.set("cert", js.Array(value :_*))
+    @scala.inline
+    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setCiphers(value: String): Self = this.set("ciphers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCiphers: Self = this.set("ciphers", js.undefined)
+    @scala.inline
+    def setClientCertEngine(value: String): Self = this.set("clientCertEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertEngine: Self = this.set("clientCertEngine", js.undefined)
+    @scala.inline
+    def setCreateConnection(
+      value: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+    ): Self = this.set("createConnection", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCreateConnection: Self = this.set("createConnection", js.undefined)
+    @scala.inline
+    def setCrlVarargs(value: (String | Buffer)*): Self = this.set("crl", js.Array(value :_*))
+    @scala.inline
+    def setCrl(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("crl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrl: Self = this.set("crl", js.undefined)
+    @scala.inline
+    def setDefaultPort(value: Double | String): Self = this.set("defaultPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPort: Self = this.set("defaultPort", js.undefined)
+    @scala.inline
+    def setDhparam(value: String | Buffer): Self = this.set("dhparam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhparam: Self = this.set("dhparam", js.undefined)
+    @scala.inline
+    def setEcdhCurve(value: String): Self = this.set("ecdhCurve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcdhCurve: Self = this.set("ecdhCurve", js.undefined)
+    @scala.inline
+    def setFamily(value: Double): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setHeaders(value: OutgoingHttpHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHonorCipherOrder(value: Boolean): Self = this.set("honorCipherOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorCipherOrder: Self = this.set("honorCipherOrder", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostNull: Self = this.set("host", null)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setHostnameNull: Self = this.set("hostname", null)
+    @scala.inline
+    def setKeyVarargs(value: (Buffer | KeyObject)*): Self = this.set("key", js.Array(value :_*))
+    @scala.inline
+    def setKey(value: String | Buffer | (js.Array[Buffer | KeyObject])): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setLocalAddress(value: String): Self = this.set("localAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalAddress: Self = this.set("localAddress", js.undefined)
+    @scala.inline
+    def setMaxHeaderSize(value: Double): Self = this.set("maxHeaderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeaderSize: Self = this.set("maxHeaderSize", js.undefined)
+    @scala.inline
+    def setMaxVersion(value: SecureVersion): Self = this.set("maxVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxVersion: Self = this.set("maxVersion", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setMinVersion(value: SecureVersion): Self = this.set("minVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinVersion: Self = this.set("minVersion", js.undefined)
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPathNull: Self = this.set("path", null)
+    @scala.inline
+    def setPfxVarargs(value: (String | Buffer | PxfObject)*): Self = this.set("pfx", js.Array(value :_*))
+    @scala.inline
+    def setPfx(value: String | Buffer | (js.Array[String | Buffer | PxfObject])): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfx: Self = this.set("pfx", js.undefined)
+    @scala.inline
+    def setPort(value: Double | String): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPortNull: Self = this.set("port", null)
+    @scala.inline
+    def setPrivateKeyEngine(value: String): Self = this.set("privateKeyEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyEngine: Self = this.set("privateKeyEngine", js.undefined)
+    @scala.inline
+    def setPrivateKeyIdentifier(value: String): Self = this.set("privateKeyIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyIdentifier: Self = this.set("privateKeyIdentifier", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setProtocolNull: Self = this.set("protocol", null)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setSecureOptions(value: Double): Self = this.set("secureOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureOptions: Self = this.set("secureOptions", js.undefined)
+    @scala.inline
+    def setSecureProtocol(value: String): Self = this.set("secureProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureProtocol: Self = this.set("secureProtocol", js.undefined)
+    @scala.inline
+    def setServername(value: String): Self = this.set("servername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServername: Self = this.set("servername", js.undefined)
+    @scala.inline
+    def setSessionIdContext(value: String): Self = this.set("sessionIdContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionIdContext: Self = this.set("sessionIdContext", js.undefined)
+    @scala.inline
+    def setSetHost(value: Boolean): Self = this.set("setHost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetHost: Self = this.set("setHost", js.undefined)
+    @scala.inline
+    def setSigalgs(value: String): Self = this.set("sigalgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigalgs: Self = this.set("sigalgs", js.undefined)
+    @scala.inline
+    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

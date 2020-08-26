@@ -34,22 +34,48 @@ trait Environment extends js.Object {
 
 object Environment {
   @scala.inline
-  def apply(
-    ApplicationId: Id = null,
-    Description: Description = null,
-    Id: Id = null,
-    Monitors: MonitorList = null,
-    Name: Name = null,
-    State: EnvironmentState = null
-  ): Environment = {
+  def apply(): Environment = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Monitors != null) __obj.updateDynamic("Monitors")(Monitors.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[Environment]
   }
+  @scala.inline
+  implicit class EnvironmentOps[Self <: Environment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Id): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setMonitorsVarargs(value: Monitor*): Self = this.set("Monitors", js.Array(value :_*))
+    @scala.inline
+    def setMonitors(value: MonitorList): Self = this.set("Monitors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitors: Self = this.set("Monitors", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setState(value: EnvironmentState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

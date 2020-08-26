@@ -101,42 +101,90 @@ trait SchemaCommitment extends js.Object {
 
 object SchemaCommitment {
   @scala.inline
-  def apply(
-    creationTimestamp: String = null,
-    description: String = null,
-    endTimestamp: String = null,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    plan: String = null,
-    region: String = null,
-    reservations: js.Array[SchemaReservation] = null,
-    resources: js.Array[SchemaResourceCommitment] = null,
-    selfLink: String = null,
-    selfLinkWithId: String = null,
-    startTimestamp: String = null,
-    status: String = null,
-    statusMessage: String = null,
-    `type`: String = null
-  ): SchemaCommitment = {
+  def apply(): SchemaCommitment = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endTimestamp != null) __obj.updateDynamic("endTimestamp")(endTimestamp.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (plan != null) __obj.updateDynamic("plan")(plan.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (reservations != null) __obj.updateDynamic("reservations")(reservations.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (selfLinkWithId != null) __obj.updateDynamic("selfLinkWithId")(selfLinkWithId.asInstanceOf[js.Any])
-    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCommitment]
   }
+  @scala.inline
+  implicit class SchemaCommitmentOps[Self <: SchemaCommitment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndTimestamp(value: String): Self = this.set("endTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimestamp: Self = this.set("endTimestamp", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlan(value: String): Self = this.set("plan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlan: Self = this.set("plan", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setReservationsVarargs(value: SchemaReservation*): Self = this.set("reservations", js.Array(value :_*))
+    @scala.inline
+    def setReservations(value: js.Array[SchemaReservation]): Self = this.set("reservations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservations: Self = this.set("reservations", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: SchemaResourceCommitment*): Self = this.set("resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: js.Array[SchemaResourceCommitment]): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSelfLinkWithId(value: String): Self = this.set("selfLinkWithId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLinkWithId: Self = this.set("selfLinkWithId", js.undefined)
+    @scala.inline
+    def setStartTimestamp(value: String): Self = this.set("startTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTimestamp: Self = this.set("startTimestamp", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

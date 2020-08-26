@@ -69,6 +69,7 @@ object venues extends js.Object {
       */
     def this(provider: ObjectProvider, uid: String) = this()
     def this(provider: ObjectProvider, uid: String, data: js.Any) = this()
+    def this(provider: ObjectProvider, uid: String, data: js.UndefOr[scala.Nothing], opt_isFloorSpace: Boolean) = this()
     def this(provider: ObjectProvider, uid: String, data: js.Any, opt_isFloorSpace: Boolean) = this()
   }
   

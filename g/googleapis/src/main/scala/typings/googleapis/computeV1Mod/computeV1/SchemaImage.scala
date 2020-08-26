@@ -180,66 +180,140 @@ trait SchemaImage extends js.Object {
 
 object SchemaImage {
   @scala.inline
-  def apply(
-    archiveSizeBytes: String = null,
-    creationTimestamp: String = null,
-    deprecated: SchemaDeprecationStatus = null,
-    description: String = null,
-    diskSizeGb: String = null,
-    family: String = null,
-    guestOsFeatures: js.Array[SchemaGuestOsFeature] = null,
-    id: String = null,
-    imageEncryptionKey: SchemaCustomerEncryptionKey = null,
-    kind: String = null,
-    labelFingerprint: String = null,
-    labels: StringDictionary[String] = null,
-    licenseCodes: js.Array[String] = null,
-    licenses: js.Array[String] = null,
-    name: String = null,
-    rawDisk: ContainerType = null,
-    selfLink: String = null,
-    sourceDisk: String = null,
-    sourceDiskEncryptionKey: SchemaCustomerEncryptionKey = null,
-    sourceDiskId: String = null,
-    sourceImage: String = null,
-    sourceImageEncryptionKey: SchemaCustomerEncryptionKey = null,
-    sourceImageId: String = null,
-    sourceSnapshot: String = null,
-    sourceSnapshotEncryptionKey: SchemaCustomerEncryptionKey = null,
-    sourceSnapshotId: String = null,
-    sourceType: String = null,
-    status: String = null
-  ): SchemaImage = {
+  def apply(): SchemaImage = {
     val __obj = js.Dynamic.literal()
-    if (archiveSizeBytes != null) __obj.updateDynamic("archiveSizeBytes")(archiveSizeBytes.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (guestOsFeatures != null) __obj.updateDynamic("guestOsFeatures")(guestOsFeatures.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageEncryptionKey != null) __obj.updateDynamic("imageEncryptionKey")(imageEncryptionKey.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (licenseCodes != null) __obj.updateDynamic("licenseCodes")(licenseCodes.asInstanceOf[js.Any])
-    if (licenses != null) __obj.updateDynamic("licenses")(licenses.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rawDisk != null) __obj.updateDynamic("rawDisk")(rawDisk.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sourceDisk != null) __obj.updateDynamic("sourceDisk")(sourceDisk.asInstanceOf[js.Any])
-    if (sourceDiskEncryptionKey != null) __obj.updateDynamic("sourceDiskEncryptionKey")(sourceDiskEncryptionKey.asInstanceOf[js.Any])
-    if (sourceDiskId != null) __obj.updateDynamic("sourceDiskId")(sourceDiskId.asInstanceOf[js.Any])
-    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage.asInstanceOf[js.Any])
-    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey.asInstanceOf[js.Any])
-    if (sourceImageId != null) __obj.updateDynamic("sourceImageId")(sourceImageId.asInstanceOf[js.Any])
-    if (sourceSnapshot != null) __obj.updateDynamic("sourceSnapshot")(sourceSnapshot.asInstanceOf[js.Any])
-    if (sourceSnapshotEncryptionKey != null) __obj.updateDynamic("sourceSnapshotEncryptionKey")(sourceSnapshotEncryptionKey.asInstanceOf[js.Any])
-    if (sourceSnapshotId != null) __obj.updateDynamic("sourceSnapshotId")(sourceSnapshotId.asInstanceOf[js.Any])
-    if (sourceType != null) __obj.updateDynamic("sourceType")(sourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImage]
   }
+  @scala.inline
+  implicit class SchemaImageOps[Self <: SchemaImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveSizeBytes(value: String): Self = this.set("archiveSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveSizeBytes: Self = this.set("archiveSizeBytes", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDeprecated(value: SchemaDeprecationStatus): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = this.set("guestOsFeatures", js.Array(value :_*))
+    @scala.inline
+    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = this.set("guestOsFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestOsFeatures: Self = this.set("guestOsFeatures", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("imageEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageEncryptionKey: Self = this.set("imageEncryptionKey", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLicenseCodesVarargs(value: String*): Self = this.set("licenseCodes", js.Array(value :_*))
+    @scala.inline
+    def setLicenseCodes(value: js.Array[String]): Self = this.set("licenseCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCodes: Self = this.set("licenseCodes", js.undefined)
+    @scala.inline
+    def setLicensesVarargs(value: String*): Self = this.set("licenses", js.Array(value :_*))
+    @scala.inline
+    def setLicenses(value: js.Array[String]): Self = this.set("licenses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenses: Self = this.set("licenses", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRawDisk(value: ContainerType): Self = this.set("rawDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawDisk: Self = this.set("rawDisk", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSourceDisk(value: String): Self = this.set("sourceDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDisk: Self = this.set("sourceDisk", js.undefined)
+    @scala.inline
+    def setSourceDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceDiskEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDiskEncryptionKey: Self = this.set("sourceDiskEncryptionKey", js.undefined)
+    @scala.inline
+    def setSourceDiskId(value: String): Self = this.set("sourceDiskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDiskId: Self = this.set("sourceDiskId", js.undefined)
+    @scala.inline
+    def setSourceImage(value: String): Self = this.set("sourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImage: Self = this.set("sourceImage", js.undefined)
+    @scala.inline
+    def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageEncryptionKey: Self = this.set("sourceImageEncryptionKey", js.undefined)
+    @scala.inline
+    def setSourceImageId(value: String): Self = this.set("sourceImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceImageId: Self = this.set("sourceImageId", js.undefined)
+    @scala.inline
+    def setSourceSnapshot(value: String): Self = this.set("sourceSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshot: Self = this.set("sourceSnapshot", js.undefined)
+    @scala.inline
+    def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = this.set("sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshotEncryptionKey: Self = this.set("sourceSnapshotEncryptionKey", js.undefined)
+    @scala.inline
+    def setSourceSnapshotId(value: String): Self = this.set("sourceSnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSnapshotId: Self = this.set("sourceSnapshotId", js.undefined)
+    @scala.inline
+    def setSourceType(value: String): Self = this.set("sourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceType: Self = this.set("sourceType", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -193,6 +193,7 @@ trait ClassUrlObject extends ClassObject {
     *
     */
   def parse(url: String): Unit = js.native
+  def parse(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): Unit = js.native
   def parse(url: String, parseQueryString: Boolean): Unit = js.native
   def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Unit = js.native
   /**

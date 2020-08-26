@@ -18,11 +18,32 @@ trait ListDatabasesOutput extends js.Object {
 
 object ListDatabasesOutput {
   @scala.inline
-  def apply(DatabaseList: DatabaseList = null, NextToken: Token = null): ListDatabasesOutput = {
+  def apply(): ListDatabasesOutput = {
     val __obj = js.Dynamic.literal()
-    if (DatabaseList != null) __obj.updateDynamic("DatabaseList")(DatabaseList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDatabasesOutput]
   }
+  @scala.inline
+  implicit class ListDatabasesOutputOps[Self <: ListDatabasesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseListVarargs(value: Database*): Self = this.set("DatabaseList", js.Array(value :_*))
+    @scala.inline
+    def setDatabaseList(value: DatabaseList): Self = this.set("DatabaseList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseList: Self = this.set("DatabaseList", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

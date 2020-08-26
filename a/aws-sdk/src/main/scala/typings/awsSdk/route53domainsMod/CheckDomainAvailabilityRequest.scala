@@ -18,10 +18,28 @@ trait CheckDomainAvailabilityRequest extends js.Object {
 
 object CheckDomainAvailabilityRequest {
   @scala.inline
-  def apply(DomainName: DomainName, IdnLangCode: LangCode = null): CheckDomainAvailabilityRequest = {
+  def apply(DomainName: DomainName): CheckDomainAvailabilityRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (IdnLangCode != null) __obj.updateDynamic("IdnLangCode")(IdnLangCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckDomainAvailabilityRequest]
   }
+  @scala.inline
+  implicit class CheckDomainAvailabilityRequestOps[Self <: CheckDomainAvailabilityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdnLangCode(value: LangCode): Self = this.set("IdnLangCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdnLangCode: Self = this.set("IdnLangCode", js.undefined)
+  }
+  
 }
 

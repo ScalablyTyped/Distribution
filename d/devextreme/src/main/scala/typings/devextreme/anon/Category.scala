@@ -9,6 +9,7 @@ import typings.devextreme.devextremeStrings.arrowTop
 import typings.devextreme.devextremeStrings.cardWithImageOnLeft
 import typings.devextreme.devextremeStrings.cardWithImageOnRight
 import typings.devextreme.devextremeStrings.cardWithImageOnTop
+import typings.devextreme.devextremeStrings.connector
 import typings.devextreme.devextremeStrings.containers
 import typings.devextreme.devextremeStrings.cross
 import typings.devextreme.devextremeStrings.custom
@@ -52,36 +53,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Category extends js.Object {
-  var category: js.UndefOr[general | flowchart | orgChart | containers | custom | String] = js.undefined
-  var displayMode: js.UndefOr[icons | texts] = js.undefined
-  var expanded: js.UndefOr[Boolean] = js.undefined
+  var category: js.UndefOr[general | flowchart | orgChart | containers | custom | String] = js.native
+  var displayMode: js.UndefOr[icons | texts] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
   var shapes: js.UndefOr[
     js.Array[
-      text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
+      text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
     ]
-  ] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  ] = js.native
 }
 
 object Category {
   @scala.inline
-  def apply(
-    category: general | flowchart | orgChart | containers | custom | String = null,
-    displayMode: icons | texts = null,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    shapes: js.Array[
-      text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-    ] = null,
-    title: String = null
-  ): Category = {
+  def apply(): Category = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
-    if (shapes != null) __obj.updateDynamic("shapes")(shapes.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Category]
   }
+  @scala.inline
+  implicit class CategoryOps[Self <: Category] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: general | flowchart | orgChart | containers | custom | String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDisplayMode(value: icons | texts): Self = this.set("displayMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayMode: Self = this.set("displayMode", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setShapesVarargs(
+      value: (text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String)*
+    ): Self = this.set("shapes", js.Array(value :_*))
+    @scala.inline
+    def setShapes(
+      value: js.Array[
+          text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
+        ]
+    ): Self = this.set("shapes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapes: Self = this.set("shapes", js.undefined)
+  }
+  
 }
 

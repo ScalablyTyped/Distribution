@@ -12,7 +12,7 @@ Adds an isDeprecated method to the React.PropTypes object
 | Keywords           | react, propTypes, isDeprecated |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 876703 |
+| # downloads        | 902148 |
 | # stars            | 0 |
 
 ## Links

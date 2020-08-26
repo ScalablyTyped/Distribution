@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MonitorStreamInfo extends js.Object {
   /** If you have set the enableMonitorStream property to true, then this property determines the length of the live broadcast delay. */
-  var broadcastStreamDelayMs: js.UndefOr[Double] = js.undefined
+  var broadcastStreamDelayMs: js.UndefOr[Double] = js.native
   /** HTML code that embeds a player that plays the monitor stream. */
-  var embedHtml: js.UndefOr[String] = js.undefined
+  var embedHtml: js.UndefOr[String] = js.native
   /**
     * This value determines whether the monitor stream is enabled for the broadcast. If the monitor stream is enabled, then YouTube will broadcast the event
     * content on a special stream intended only for the broadcaster's consumption. The broadcaster can use the stream to review the event content and also to
@@ -18,21 +19,39 @@ trait MonitorStreamInfo extends js.Object {
     *
     * Note: This property cannot be updated once the broadcast is in the testing or live state.
     */
-  var enableMonitorStream: js.UndefOr[Boolean] = js.undefined
+  var enableMonitorStream: js.UndefOr[Boolean] = js.native
 }
 
 object MonitorStreamInfo {
   @scala.inline
-  def apply(
-    broadcastStreamDelayMs: js.UndefOr[Double] = js.undefined,
-    embedHtml: String = null,
-    enableMonitorStream: js.UndefOr[Boolean] = js.undefined
-  ): MonitorStreamInfo = {
+  def apply(): MonitorStreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(broadcastStreamDelayMs)) __obj.updateDynamic("broadcastStreamDelayMs")(broadcastStreamDelayMs.get.asInstanceOf[js.Any])
-    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMonitorStream)) __obj.updateDynamic("enableMonitorStream")(enableMonitorStream.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorStreamInfo]
   }
+  @scala.inline
+  implicit class MonitorStreamInfoOps[Self <: MonitorStreamInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBroadcastStreamDelayMs(value: Double): Self = this.set("broadcastStreamDelayMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBroadcastStreamDelayMs: Self = this.set("broadcastStreamDelayMs", js.undefined)
+    @scala.inline
+    def setEmbedHtml(value: String): Self = this.set("embedHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedHtml: Self = this.set("embedHtml", js.undefined)
+    @scala.inline
+    def setEnableMonitorStream(value: Boolean): Self = this.set("enableMonitorStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMonitorStream: Self = this.set("enableMonitorStream", js.undefined)
+  }
+  
 }
 

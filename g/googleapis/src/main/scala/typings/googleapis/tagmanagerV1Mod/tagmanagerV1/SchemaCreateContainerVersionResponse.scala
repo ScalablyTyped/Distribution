@@ -21,11 +21,30 @@ trait SchemaCreateContainerVersionResponse extends js.Object {
 
 object SchemaCreateContainerVersionResponse {
   @scala.inline
-  def apply(compilerError: js.UndefOr[Boolean] = js.undefined, containerVersion: SchemaContainerVersion = null): SchemaCreateContainerVersionResponse = {
+  def apply(): SchemaCreateContainerVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(compilerError)) __obj.updateDynamic("compilerError")(compilerError.get.asInstanceOf[js.Any])
-    if (containerVersion != null) __obj.updateDynamic("containerVersion")(containerVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateContainerVersionResponse]
   }
+  @scala.inline
+  implicit class SchemaCreateContainerVersionResponseOps[Self <: SchemaCreateContainerVersionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompilerError(value: Boolean): Self = this.set("compilerError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompilerError: Self = this.set("compilerError", js.undefined)
+    @scala.inline
+    def setContainerVersion(value: SchemaContainerVersion): Self = this.set("containerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerVersion: Self = this.set("containerVersion", js.undefined)
+  }
+  
 }
 

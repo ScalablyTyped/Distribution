@@ -39,22 +39,48 @@ trait SchemaCondition extends js.Object {
 
 object SchemaCondition {
   @scala.inline
-  def apply(
-    iam: String = null,
-    op: String = null,
-    svc: String = null,
-    sys: String = null,
-    value: String = null,
-    values: js.Array[String] = null
-  ): SchemaCondition = {
+  def apply(): SchemaCondition = {
     val __obj = js.Dynamic.literal()
-    if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
-    if (svc != null) __obj.updateDynamic("svc")(svc.asInstanceOf[js.Any])
-    if (sys != null) __obj.updateDynamic("sys")(sys.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCondition]
   }
+  @scala.inline
+  implicit class SchemaConditionOps[Self <: SchemaCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIam(value: String): Self = this.set("iam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIam: Self = this.set("iam", js.undefined)
+    @scala.inline
+    def setOp(value: String): Self = this.set("op", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOp: Self = this.set("op", js.undefined)
+    @scala.inline
+    def setSvc(value: String): Self = this.set("svc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvc: Self = this.set("svc", js.undefined)
+    @scala.inline
+    def setSys(value: String): Self = this.set("sys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSys: Self = this.set("sys", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: String*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[String]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

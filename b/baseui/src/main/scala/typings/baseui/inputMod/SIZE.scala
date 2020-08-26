@@ -7,11 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SIZE extends js.Object {
-  var compact: typings.baseui.baseuiStrings.compact
-  var default: default_
-  var large: large_
-  var mini: typings.baseui.baseuiStrings.mini
+  var compact: typings.baseui.baseuiStrings.compact = js.native
+  var default: default_ = js.native
+  var large: large_ = js.native
+  var mini: typings.baseui.baseuiStrings.mini = js.native
 }
 
 @JSImport("baseui/input", "SIZE")

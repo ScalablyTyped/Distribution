@@ -30,8 +30,6 @@ object libGenerateMod extends js.Object {
     def createOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): GenerateOptions = js.native
     def ensureCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
     def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
-    /* CompleteClass */
-    override def run(options: T): js.Promise[Unit] = js.native
   }
   
   @js.native

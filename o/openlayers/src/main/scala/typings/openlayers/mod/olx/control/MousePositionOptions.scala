@@ -9,33 +9,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MousePositionOptions extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var coordinateFormat: js.UndefOr[CoordinateFormatType] = js.undefined
-  var projection: ProjectionLike
-  var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.undefined
-  var target: js.UndefOr[Element] = js.undefined
-  var undefinedHTML: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var coordinateFormat: js.UndefOr[CoordinateFormatType] = js.native
+  var projection: ProjectionLike = js.native
+  var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+  var target: js.UndefOr[Element] = js.native
+  var undefinedHTML: js.UndefOr[String] = js.native
 }
 
 object MousePositionOptions {
   @scala.inline
-  def apply(
-    className: String = null,
-    coordinateFormat: /* coords */ js.UndefOr[Coordinate_] => String = null,
-    projection: ProjectionLike = null,
-    render: /* event */ MapEvent => _ = null,
-    target: Element = null,
-    undefinedHTML: String = null
-  ): MousePositionOptions = {
+  def apply(): MousePositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (coordinateFormat != null) __obj.updateDynamic("coordinateFormat")(js.Any.fromFunction1(coordinateFormat))
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (undefinedHTML != null) __obj.updateDynamic("undefinedHTML")(undefinedHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[MousePositionOptions]
   }
+  @scala.inline
+  implicit class MousePositionOptionsOps[Self <: MousePositionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCoordinateFormat(value: /* coords */ js.UndefOr[Coordinate_] => String): Self = this.set("coordinateFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCoordinateFormat: Self = this.set("coordinateFormat", js.undefined)
+    @scala.inline
+    def setProjection(value: ProjectionLike): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRender(value: /* event */ MapEvent => _): Self = this.set("render", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setTarget(value: Element): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setUndefinedHTML(value: String): Self = this.set("undefinedHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndefinedHTML: Self = this.set("undefinedHTML", js.undefined)
+  }
+  
 }
 

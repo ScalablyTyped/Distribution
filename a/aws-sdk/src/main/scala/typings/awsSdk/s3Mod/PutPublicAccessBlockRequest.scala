@@ -22,14 +22,30 @@ trait PutPublicAccessBlockRequest extends js.Object {
 
 object PutPublicAccessBlockRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    PublicAccessBlockConfiguration: PublicAccessBlockConfiguration,
-    ContentMD5: ContentMD5 = null
-  ): PutPublicAccessBlockRequest = {
+  def apply(Bucket: BucketName, PublicAccessBlockConfiguration: PublicAccessBlockConfiguration): PutPublicAccessBlockRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], PublicAccessBlockConfiguration = PublicAccessBlockConfiguration.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPublicAccessBlockRequest]
   }
+  @scala.inline
+  implicit class PutPublicAccessBlockRequestOps[Self <: PutPublicAccessBlockRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublicAccessBlockConfiguration(value: PublicAccessBlockConfiguration): Self = this.set("PublicAccessBlockConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+  }
+  
 }
 

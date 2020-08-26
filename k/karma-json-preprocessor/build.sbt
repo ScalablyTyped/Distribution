@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "karma-json-preprocessor"
-version := "0.3-dt-20200302Z-847b5a"
-scalaVersion := "2.13.2"
+version := "0.3-dt-20200302Z-2dee94"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

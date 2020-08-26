@@ -5,25 +5,35 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ trait AssemblyFor
+- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
+trait AssemblyFor
   extends AssemblyItem
      with BaseASTNode {
   @JSName("type")
-  var type_AssemblyFor: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor
+  var type_AssemblyFor: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor = js.native
 }
 
 object AssemblyFor {
   @scala.inline
-  def apply(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyFor = {
+  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor): AssemblyFor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssemblyFor]
   }
+  @scala.inline
+  implicit class AssemblyForOps[Self <: AssemblyFor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyFor): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -17,20 +17,7 @@ import scala.scalajs.js.annotation._
 class Point ()
   extends typings.pixiJs.PIXI.Point {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  /**
-    * X coord
-    * @memberof PIXI.IPointData#
-    * @member {number} x
-    */
-  /* CompleteClass */
-  override var x: Double = js.native
-  /**
-    * Y coord
-    * @memberof PIXI.IPointData#
-    * @member {number} y
-    */
-  /* CompleteClass */
-  override var y: Double = js.native
 }
 

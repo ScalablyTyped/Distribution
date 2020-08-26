@@ -8,14 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.Language")
 @js.native
-class Language () extends ILanguage {
-  /* CompleteClass */
-  override val ID: Double = js.native
-  /* CompleteClass */
-  override var LanguageCode: String = js.native
-  /* CompleteClass */
-  override var Name: String = js.native
-}
+class Language () extends ILanguage
 
 @JSGlobal("MFiles.Language")
 @js.native

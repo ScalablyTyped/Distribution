@@ -59,6 +59,7 @@ object Time extends js.Object {
       * @param callbackScope The scope (`this` object) to call the function with.
       */
     def delayedCall(delay: Double, callback: js.Function): TimerEvent = js.native
+    def delayedCall(delay: Double, callback: js.Function, args: js.UndefOr[scala.Nothing], callbackScope: js.Any): TimerEvent = js.native
     def delayedCall(delay: Double, callback: js.Function, args: js.Array[_]): TimerEvent = js.native
     def delayedCall(delay: Double, callback: js.Function, args: js.Array[_], callbackScope: js.Any): TimerEvent = js.native
     /**

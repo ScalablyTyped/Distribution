@@ -22,16 +22,34 @@ trait SendQuota extends js.Object {
 
 object SendQuota {
   @scala.inline
-  def apply(
-    Max24HourSend: js.UndefOr[Max24HourSend] = js.undefined,
-    MaxSendRate: js.UndefOr[MaxSendRate] = js.undefined,
-    SentLast24Hours: js.UndefOr[SentLast24Hours] = js.undefined
-  ): SendQuota = {
+  def apply(): SendQuota = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Max24HourSend)) __obj.updateDynamic("Max24HourSend")(Max24HourSend.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSendRate)) __obj.updateDynamic("MaxSendRate")(MaxSendRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SentLast24Hours)) __obj.updateDynamic("SentLast24Hours")(SentLast24Hours.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendQuota]
   }
+  @scala.inline
+  implicit class SendQuotaOps[Self <: SendQuota] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMax24HourSend(value: Max24HourSend): Self = this.set("Max24HourSend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax24HourSend: Self = this.set("Max24HourSend", js.undefined)
+    @scala.inline
+    def setMaxSendRate(value: MaxSendRate): Self = this.set("MaxSendRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSendRate: Self = this.set("MaxSendRate", js.undefined)
+    @scala.inline
+    def setSentLast24Hours(value: SentLast24Hours): Self = this.set("SentLast24Hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentLast24Hours: Self = this.set("SentLast24Hours", js.undefined)
+  }
+  
 }
 

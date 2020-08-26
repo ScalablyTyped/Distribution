@@ -46,28 +46,62 @@ trait ListRecordsResponse extends js.Object {
 
 object ListRecordsResponse {
   @scala.inline
-  def apply(
-    Count: js.UndefOr[Integer] = js.undefined,
-    DatasetDeletedAfterRequestedSyncCount: js.UndefOr[Boolean] = js.undefined,
-    DatasetExists: js.UndefOr[Boolean] = js.undefined,
-    DatasetSyncCount: js.UndefOr[Long] = js.undefined,
-    LastModifiedBy: String = null,
-    MergedDatasetNames: MergedDatasetNameList = null,
-    NextToken: String = null,
-    Records: RecordList = null,
-    SyncSessionToken: String = null
-  ): ListRecordsResponse = {
+  def apply(): ListRecordsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatasetDeletedAfterRequestedSyncCount)) __obj.updateDynamic("DatasetDeletedAfterRequestedSyncCount")(DatasetDeletedAfterRequestedSyncCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatasetExists)) __obj.updateDynamic("DatasetExists")(DatasetExists.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DatasetSyncCount)) __obj.updateDynamic("DatasetSyncCount")(DatasetSyncCount.get.asInstanceOf[js.Any])
-    if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
-    if (MergedDatasetNames != null) __obj.updateDynamic("MergedDatasetNames")(MergedDatasetNames.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Records != null) __obj.updateDynamic("Records")(Records.asInstanceOf[js.Any])
-    if (SyncSessionToken != null) __obj.updateDynamic("SyncSessionToken")(SyncSessionToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecordsResponse]
   }
+  @scala.inline
+  implicit class ListRecordsResponseOps[Self <: ListRecordsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("Count", js.undefined)
+    @scala.inline
+    def setDatasetDeletedAfterRequestedSyncCount(value: Boolean): Self = this.set("DatasetDeletedAfterRequestedSyncCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetDeletedAfterRequestedSyncCount: Self = this.set("DatasetDeletedAfterRequestedSyncCount", js.undefined)
+    @scala.inline
+    def setDatasetExists(value: Boolean): Self = this.set("DatasetExists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetExists: Self = this.set("DatasetExists", js.undefined)
+    @scala.inline
+    def setDatasetSyncCount(value: Long): Self = this.set("DatasetSyncCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetSyncCount: Self = this.set("DatasetSyncCount", js.undefined)
+    @scala.inline
+    def setLastModifiedBy(value: String): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    @scala.inline
+    def setMergedDatasetNamesVarargs(value: String*): Self = this.set("MergedDatasetNames", js.Array(value :_*))
+    @scala.inline
+    def setMergedDatasetNames(value: MergedDatasetNameList): Self = this.set("MergedDatasetNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergedDatasetNames: Self = this.set("MergedDatasetNames", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRecordsVarargs(value: Record*): Self = this.set("Records", js.Array(value :_*))
+    @scala.inline
+    def setRecords(value: RecordList): Self = this.set("Records", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecords: Self = this.set("Records", js.undefined)
+    @scala.inline
+    def setSyncSessionToken(value: String): Self = this.set("SyncSessionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyncSessionToken: Self = this.set("SyncSessionToken", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TensorBoardCallback () extends CustomCallback {
   def this(logdir: String) = this()
+  def this(logdir: js.UndefOr[scala.Nothing], args: TensorBoardCallbackArgs) = this()
   def this(logdir: String, args: TensorBoardCallbackArgs) = this()
   val args: js.Any = js.native
   var batchesSeen: js.Any = js.native

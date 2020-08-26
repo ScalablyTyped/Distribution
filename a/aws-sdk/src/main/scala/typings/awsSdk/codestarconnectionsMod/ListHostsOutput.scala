@@ -18,11 +18,32 @@ trait ListHostsOutput extends js.Object {
 
 object ListHostsOutput {
   @scala.inline
-  def apply(Hosts: HostList = null, NextToken: NextToken = null): ListHostsOutput = {
+  def apply(): ListHostsOutput = {
     val __obj = js.Dynamic.literal()
-    if (Hosts != null) __obj.updateDynamic("Hosts")(Hosts.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHostsOutput]
   }
+  @scala.inline
+  implicit class ListHostsOutputOps[Self <: ListHostsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostsVarargs(value: Host*): Self = this.set("Hosts", js.Array(value :_*))
+    @scala.inline
+    def setHosts(value: HostList): Self = this.set("Hosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHosts: Self = this.set("Hosts", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

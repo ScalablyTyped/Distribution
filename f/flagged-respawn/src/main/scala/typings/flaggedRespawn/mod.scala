@@ -1,6 +1,6 @@
 package typings.flaggedRespawn
 
-import typings.node.NodeJS.Process
+import typings.node.processMod.global.NodeJS.Process
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

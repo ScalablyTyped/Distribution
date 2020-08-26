@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait jsxVisitors[V] extends js.Object {
-  var JSXAttribute: js.UndefOr[V] = js.undefined
-  var JSXClosingElement: js.UndefOr[V] = js.undefined
-  var JSXElement: js.UndefOr[V] = js.undefined
-  var JSXEmptyExpression: js.UndefOr[V] = js.undefined
-  var JSXExpressionContainer: js.UndefOr[V] = js.undefined
-  var JSXIdentifier: js.UndefOr[V] = js.undefined
-  var JSXMemberExpression: js.UndefOr[V] = js.undefined
-  var JSXNamespacedName: js.UndefOr[V] = js.undefined
-  var JSXOpeningElement: js.UndefOr[V] = js.undefined
-  var JSXSpreadAttribute: js.UndefOr[V] = js.undefined
-  var JSXText: js.UndefOr[V] = js.undefined
+  var JSXAttribute: js.UndefOr[V] = js.native
+  var JSXClosingElement: js.UndefOr[V] = js.native
+  var JSXElement: js.UndefOr[V] = js.native
+  var JSXEmptyExpression: js.UndefOr[V] = js.native
+  var JSXExpressionContainer: js.UndefOr[V] = js.native
+  var JSXIdentifier: js.UndefOr[V] = js.native
+  var JSXMemberExpression: js.UndefOr[V] = js.native
+  var JSXNamespacedName: js.UndefOr[V] = js.native
+  var JSXOpeningElement: js.UndefOr[V] = js.native
+  var JSXSpreadAttribute: js.UndefOr[V] = js.native
+  var JSXText: js.UndefOr[V] = js.native
 }
 
 object jsxVisitors {
   @scala.inline
-  def apply[V](
-    JSXAttribute: V = null,
-    JSXClosingElement: V = null,
-    JSXElement: V = null,
-    JSXEmptyExpression: V = null,
-    JSXExpressionContainer: V = null,
-    JSXIdentifier: V = null,
-    JSXMemberExpression: V = null,
-    JSXNamespacedName: V = null,
-    JSXOpeningElement: V = null,
-    JSXSpreadAttribute: V = null,
-    JSXText: V = null
-  ): jsxVisitors[V] = {
+  def apply[V](): jsxVisitors[V] = {
     val __obj = js.Dynamic.literal()
-    if (JSXAttribute != null) __obj.updateDynamic("JSXAttribute")(JSXAttribute.asInstanceOf[js.Any])
-    if (JSXClosingElement != null) __obj.updateDynamic("JSXClosingElement")(JSXClosingElement.asInstanceOf[js.Any])
-    if (JSXElement != null) __obj.updateDynamic("JSXElement")(JSXElement.asInstanceOf[js.Any])
-    if (JSXEmptyExpression != null) __obj.updateDynamic("JSXEmptyExpression")(JSXEmptyExpression.asInstanceOf[js.Any])
-    if (JSXExpressionContainer != null) __obj.updateDynamic("JSXExpressionContainer")(JSXExpressionContainer.asInstanceOf[js.Any])
-    if (JSXIdentifier != null) __obj.updateDynamic("JSXIdentifier")(JSXIdentifier.asInstanceOf[js.Any])
-    if (JSXMemberExpression != null) __obj.updateDynamic("JSXMemberExpression")(JSXMemberExpression.asInstanceOf[js.Any])
-    if (JSXNamespacedName != null) __obj.updateDynamic("JSXNamespacedName")(JSXNamespacedName.asInstanceOf[js.Any])
-    if (JSXOpeningElement != null) __obj.updateDynamic("JSXOpeningElement")(JSXOpeningElement.asInstanceOf[js.Any])
-    if (JSXSpreadAttribute != null) __obj.updateDynamic("JSXSpreadAttribute")(JSXSpreadAttribute.asInstanceOf[js.Any])
-    if (JSXText != null) __obj.updateDynamic("JSXText")(JSXText.asInstanceOf[js.Any])
     __obj.asInstanceOf[jsxVisitors[V]]
   }
+  @scala.inline
+  implicit class jsxVisitorsOps[Self <: jsxVisitors[_], V] (val x: Self with jsxVisitors[V]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJSXAttribute(value: V): Self = this.set("JSXAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXAttribute: Self = this.set("JSXAttribute", js.undefined)
+    @scala.inline
+    def setJSXClosingElement(value: V): Self = this.set("JSXClosingElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXClosingElement: Self = this.set("JSXClosingElement", js.undefined)
+    @scala.inline
+    def setJSXElement(value: V): Self = this.set("JSXElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXElement: Self = this.set("JSXElement", js.undefined)
+    @scala.inline
+    def setJSXEmptyExpression(value: V): Self = this.set("JSXEmptyExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXEmptyExpression: Self = this.set("JSXEmptyExpression", js.undefined)
+    @scala.inline
+    def setJSXExpressionContainer(value: V): Self = this.set("JSXExpressionContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXExpressionContainer: Self = this.set("JSXExpressionContainer", js.undefined)
+    @scala.inline
+    def setJSXIdentifier(value: V): Self = this.set("JSXIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXIdentifier: Self = this.set("JSXIdentifier", js.undefined)
+    @scala.inline
+    def setJSXMemberExpression(value: V): Self = this.set("JSXMemberExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXMemberExpression: Self = this.set("JSXMemberExpression", js.undefined)
+    @scala.inline
+    def setJSXNamespacedName(value: V): Self = this.set("JSXNamespacedName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXNamespacedName: Self = this.set("JSXNamespacedName", js.undefined)
+    @scala.inline
+    def setJSXOpeningElement(value: V): Self = this.set("JSXOpeningElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXOpeningElement: Self = this.set("JSXOpeningElement", js.undefined)
+    @scala.inline
+    def setJSXSpreadAttribute(value: V): Self = this.set("JSXSpreadAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXSpreadAttribute: Self = this.set("JSXSpreadAttribute", js.undefined)
+    @scala.inline
+    def setJSXText(value: V): Self = this.set("JSXText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSXText: Self = this.set("JSXText", js.undefined)
+  }
+  
 }
 

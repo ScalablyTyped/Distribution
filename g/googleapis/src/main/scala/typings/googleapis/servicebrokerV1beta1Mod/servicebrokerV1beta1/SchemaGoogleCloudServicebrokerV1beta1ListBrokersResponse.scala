@@ -25,14 +25,32 @@ trait SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse extends js.Object
 
 object SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse {
   @scala.inline
-  def apply(
-    brokers: js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker] = null,
-    nextPageToken: String = null
-  ): SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse = {
+  def apply(): SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse = {
     val __obj = js.Dynamic.literal()
-    if (brokers != null) __obj.updateDynamic("brokers")(brokers.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponseOps[Self <: SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokersVarargs(value: SchemaGoogleCloudServicebrokerV1beta1Broker*): Self = this.set("brokers", js.Array(value :_*))
+    @scala.inline
+    def setBrokers(value: js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]): Self = this.set("brokers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokers: Self = this.set("brokers", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Icon library
 | Keywords           | icons8, i8, icon, icon set, svg icon, svg set, svg sprite, jquery-plugin, angular module |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1927 |
+| # downloads        | 1952 |
 | # stars            | 1 |
 
 ## Links

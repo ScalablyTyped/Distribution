@@ -12,7 +12,7 @@ set value at property, create intermediate properties if necessary
 | Keywords           | object, safe, set, no-dependencies, just |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 553065 |
+| # downloads        | 525181 |
 | # stars            | 0 |
 
 ## Links

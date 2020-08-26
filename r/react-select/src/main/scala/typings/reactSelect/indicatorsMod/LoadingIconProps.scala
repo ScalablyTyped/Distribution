@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  innerProps  :any,   isFocused  :boolean,   isRtl  :boolean,   size  :number} & react-select.react-select/src/types.CommonProps<OptionType> */
+/* Inlined {  innerProps :any,   isFocused :boolean,   isRtl :boolean,   size :number} & react-select.react-select/src/types.CommonProps<OptionType> */
 @js.native
 trait LoadingIconProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   var className: js.UndefOr[String] = js.native
@@ -27,12 +27,9 @@ trait LoadingIconProps[OptionType /* <: OptionTypeBase */] extends js.Object {
   /** Set size of the container. */
   var size: Double = js.native
   def clearValue(): Unit = js.native
-  def cx(): String | Unit = js.native
-  def cx(a: String): String | Unit = js.native
-  def cx(a: String, b: ClassNamesState): String | Unit = js.native
-  def cx(a: String, b: ClassNamesState, c: String): String | Unit = js.native
-  def cx(a: Null, b: ClassNamesState): String | Unit = js.native
-  def cx(a: Null, b: ClassNamesState, c: String): String | Unit = js.native
+  def cx(): String = js.native
+  def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
+  def cx(state: ClassNamesState): String = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the
     property as the first argument, and the current props as the second argument.

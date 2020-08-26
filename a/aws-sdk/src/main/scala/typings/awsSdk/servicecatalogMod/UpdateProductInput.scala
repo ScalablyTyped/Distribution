@@ -54,31 +54,68 @@ trait UpdateProductInput extends js.Object {
 
 object UpdateProductInput {
   @scala.inline
-  def apply(
-    Id: Id,
-    AcceptLanguage: AcceptLanguage = null,
-    AddTags: AddTags = null,
-    Description: ProductViewShortDescription = null,
-    Distributor: ProductViewOwner = null,
-    Name: ProductViewName = null,
-    Owner: ProductViewOwner = null,
-    RemoveTags: TagKeys = null,
-    SupportDescription: SupportDescription = null,
-    SupportEmail: SupportEmail = null,
-    SupportUrl: SupportUrl = null
-  ): UpdateProductInput = {
+  def apply(Id: Id): UpdateProductInput = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (AddTags != null) __obj.updateDynamic("AddTags")(AddTags.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Distributor != null) __obj.updateDynamic("Distributor")(Distributor.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (RemoveTags != null) __obj.updateDynamic("RemoveTags")(RemoveTags.asInstanceOf[js.Any])
-    if (SupportDescription != null) __obj.updateDynamic("SupportDescription")(SupportDescription.asInstanceOf[js.Any])
-    if (SupportEmail != null) __obj.updateDynamic("SupportEmail")(SupportEmail.asInstanceOf[js.Any])
-    if (SupportUrl != null) __obj.updateDynamic("SupportUrl")(SupportUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProductInput]
   }
+  @scala.inline
+  implicit class UpdateProductInputOps[Self <: UpdateProductInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setAddTagsVarargs(value: Tag*): Self = this.set("AddTags", js.Array(value :_*))
+    @scala.inline
+    def setAddTags(value: AddTags): Self = this.set("AddTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddTags: Self = this.set("AddTags", js.undefined)
+    @scala.inline
+    def setDescription(value: ProductViewShortDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDistributor(value: ProductViewOwner): Self = this.set("Distributor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributor: Self = this.set("Distributor", js.undefined)
+    @scala.inline
+    def setName(value: ProductViewName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwner(value: ProductViewOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setRemoveTagsVarargs(value: TagKey*): Self = this.set("RemoveTags", js.Array(value :_*))
+    @scala.inline
+    def setRemoveTags(value: TagKeys): Self = this.set("RemoveTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveTags: Self = this.set("RemoveTags", js.undefined)
+    @scala.inline
+    def setSupportDescription(value: SupportDescription): Self = this.set("SupportDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportDescription: Self = this.set("SupportDescription", js.undefined)
+    @scala.inline
+    def setSupportEmail(value: SupportEmail): Self = this.set("SupportEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportEmail: Self = this.set("SupportEmail", js.undefined)
+    @scala.inline
+    def setSupportUrl(value: SupportUrl): Self = this.set("SupportUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportUrl: Self = this.set("SupportUrl", js.undefined)
+  }
+  
 }
 

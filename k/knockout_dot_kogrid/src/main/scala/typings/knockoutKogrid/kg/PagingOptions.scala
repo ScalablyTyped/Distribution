@@ -1,36 +1,71 @@
 package typings.knockoutKogrid.kg
 
-import typings.knockout.KnockoutObservable
-import typings.knockout.KnockoutObservableArray
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PagingOptions extends js.Object {
   /** currentPage: the uhm... current page. */
-  var currentPage: js.UndefOr[KnockoutObservable[Double]] = js.undefined
+  var currentPage: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+  ] = js.native
   /** pageSize: currently selected page size.  */
-  var pageSize: js.UndefOr[KnockoutObservable[Double]] = js.undefined
+  var pageSize: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+  ] = js.native
   /**  pageSizes: list of available page sizes.  */
-  var pageSizes: js.UndefOr[KnockoutObservableArray[Double]] = js.undefined
+  var pageSizes: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ js.Any
+  ] = js.native
   /** totalServerItems: Total items are on the server.  */
-  var totalServerItems: js.UndefOr[KnockoutObservable[Double]] = js.undefined
+  var totalServerItems: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+  ] = js.native
 }
 
 object PagingOptions {
   @scala.inline
-  def apply(
-    currentPage: KnockoutObservable[Double] = null,
-    pageSize: KnockoutObservable[Double] = null,
-    pageSizes: KnockoutObservableArray[Double] = null,
-    totalServerItems: KnockoutObservable[Double] = null
-  ): PagingOptions = {
+  def apply(): PagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
-    if (totalServerItems != null) __obj.updateDynamic("totalServerItems")(totalServerItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagingOptions]
   }
+  @scala.inline
+  implicit class PagingOptionsOps[Self <: PagingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentPage(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+    ): Self = this.set("currentPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPage: Self = this.set("currentPage", js.undefined)
+    @scala.inline
+    def setPageSize(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+    ): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageSizes(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<number> */ js.Any
+    ): Self = this.set("pageSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSizes: Self = this.set("pageSizes", js.undefined)
+    @scala.inline
+    def setTotalServerItems(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<number> */ js.Any
+    ): Self = this.set("totalServerItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalServerItems: Self = this.set("totalServerItems", js.undefined)
+  }
+  
 }
 

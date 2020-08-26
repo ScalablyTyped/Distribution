@@ -12,7 +12,7 @@ Encrypt your Redux store.
 | Keywords           | redux, redux-persist, redux-persist-transform, encryption |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 277777 |
+| # downloads        | 292038 |
 | # stars            | 3 |
 
 ## Links

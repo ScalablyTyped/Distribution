@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.imageSlashicns
   - typings.fileType.fileTypeStrings.`imageSlashvndDotms-photo`
   - typings.fileType.fileTypeStrings.imageSlashvndDotadobeDotphotoshop
+  - typings.fileType.fileTypeStrings.`applicationSlashx-indesign`
   - typings.fileType.fileTypeStrings.applicationSlashepubPlussignzip
   - typings.fileType.fileTypeStrings.`applicationSlashx-xpinstall`
   - typings.fileType.fileTypeStrings.applicationSlashvndDotoasisDotopendocumentDottext
@@ -129,6 +130,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.imageSlashavif
   - typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`
   - typings.fileType.fileTypeStrings.`applicationSlashpgp-encrypted`
+  - typings.fileType.fileTypeStrings.`applicationSlashx-asar`
 */
 trait MimeType extends js.Object
 
@@ -184,6 +186,8 @@ object MimeType {
   @scala.inline
   def `applicationSlashx-apple-diskimage`: typings.fileType.fileTypeStrings.`applicationSlashx-apple-diskimage` = "application/x-apple-diskimage".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-apple-diskimage`]
   @scala.inline
+  def `applicationSlashx-asar`: typings.fileType.fileTypeStrings.`applicationSlashx-asar` = "application/x-asar".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-asar`]
+  @scala.inline
   def `applicationSlashx-blender`: typings.fileType.fileTypeStrings.`applicationSlashx-blender` = "application/x-blender".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-blender`]
   @scala.inline
   def `applicationSlashx-bzip2`: typings.fileType.fileTypeStrings.`applicationSlashx-bzip2` = "application/x-bzip2".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-bzip2`]
@@ -195,6 +199,8 @@ object MimeType {
   def `applicationSlashx-esri-shape`: typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape` = "application/x-esri-shape".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-esri-shape`]
   @scala.inline
   def `applicationSlashx-google-chrome-extension`: typings.fileType.fileTypeStrings.`applicationSlashx-google-chrome-extension` = "application/x-google-chrome-extension".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-google-chrome-extension`]
+  @scala.inline
+  def `applicationSlashx-indesign`: typings.fileType.fileTypeStrings.`applicationSlashx-indesign` = "application/x-indesign".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-indesign`]
   @scala.inline
   def `applicationSlashx-lzh-compressed`: typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed` = "application/x-lzh-compressed".asInstanceOf[typings.fileType.fileTypeStrings.`applicationSlashx-lzh-compressed`]
   @scala.inline

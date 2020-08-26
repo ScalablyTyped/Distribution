@@ -1,17 +1,23 @@
 package typings.jointjs
 
-import typings.jointjs.jointjsMod.VectorizerNs.TextVerticalAnchor
-import typings.jointjs.jointjsMod.anchorsNs.AnchorType
-import typings.jointjs.jointjsMod.connectionPointsNs.ConnectionPointType
-import typings.jointjs.jointjsMod.connectorsNs.ConnectorType
-import typings.jointjs.jointjsMod.diaNs.Direction
-import typings.jointjs.jointjsMod.diaNs.LinkEnd
-import typings.jointjs.jointjsMod.diaNs.OrthogonalDirection
-import typings.jointjs.jointjsMod.gNs.CardinalDirection
-import typings.jointjs.jointjsMod.gNs.RectangleSide
-import typings.jointjs.jointjsMod.gNs.SegmentType
-import typings.jointjs.jointjsMod.highlightersNs.HighlighterType
-import typings.jointjs.jointjsMod.routersNs.RouterType
+import typings.jointjs.mod.Vectorizer.TextVerticalAnchor
+import typings.jointjs.mod.anchors.AnchorArguments
+import typings.jointjs.mod.anchors.AnchorType
+import typings.jointjs.mod.connectionPoints.ConnectionPointAlignment
+import typings.jointjs.mod.connectionPoints.ConnectionPointArguments
+import typings.jointjs.mod.connectionPoints.ConnectionPointType
+import typings.jointjs.mod.connectors.ConnectorArguments
+import typings.jointjs.mod.connectors.ConnectorType
+import typings.jointjs.mod.dia.Direction
+import typings.jointjs.mod.dia.LinkEnd
+import typings.jointjs.mod.dia.OrthogonalDirection
+import typings.jointjs.mod.g.CardinalDirection
+import typings.jointjs.mod.g.RectangleSide
+import typings.jointjs.mod.g.SegmentType
+import typings.jointjs.mod.highlighters.HighlighterArguments
+import typings.jointjs.mod.highlighters.HighlighterType
+import typings.jointjs.mod.routers.RouterArguments
+import typings.jointjs.mod.routers.RouterType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,6 +84,9 @@ object jointjsStrings {
   sealed trait arc extends js.Object
   
   @js.native
+  sealed trait attrs extends HighlighterArguments
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -88,8 +97,10 @@ object jointjsStrings {
   
   @js.native
   sealed trait bottom
-    extends OrthogonalDirection
-       with AnchorType
+    extends AnchorType
+       with ConnectionPointAlignment
+       with Direction
+       with OrthogonalDirection
        with RectangleSide
        with TextVerticalAnchor
   
@@ -115,10 +126,13 @@ object jointjsStrings {
   sealed trait brightness extends js.Object
   
   @js.native
-  sealed trait c extends js.Object
+  sealed trait c_ extends js.Object
   
   @js.native
   sealed trait center extends AnchorType
+  
+  @js.native
+  sealed trait className extends HighlighterArguments
   
   @js.native
   sealed trait connectionClosest extends AnchorType
@@ -151,6 +165,33 @@ object jointjsStrings {
   sealed trait dropShadow extends js.Object
   
   @js.native
+  sealed trait dx extends AnchorArguments
+  
+  @js.native
+  sealed trait dy extends AnchorArguments
+  
+  @js.native
+  sealed trait elementPadding extends RouterArguments
+  
+  @js.native
+  sealed trait endDirections extends RouterArguments
+  
+  @js.native
+  sealed trait excludeEnds extends RouterArguments
+  
+  @js.native
+  sealed trait excludeTypes extends RouterArguments
+  
+  @js.native
+  sealed trait extrapolate extends ConnectionPointArguments
+  
+  @js.native
+  sealed trait fallbackAt extends AnchorArguments
+  
+  @js.native
+  sealed trait fixedAt extends AnchorArguments
+  
+  @js.native
   sealed trait fixedDot extends js.Object
   
   @js.native
@@ -160,31 +201,39 @@ object jointjsStrings {
   sealed trait grayscale extends js.Object
   
   @js.native
-  sealed trait height extends js.Object
-  
-  @js.native
   sealed trait highlight extends js.Object
   
   @js.native
   sealed trait hueRotate extends js.Object
   
   @js.native
+  sealed trait insideout extends ConnectionPointArguments
+  
+  @js.native
   sealed trait invert extends js.Object
+  
+  @js.native
+  sealed trait jump extends ConnectorArguments
   
   @js.native
   sealed trait jumpover extends ConnectorType
   
   @js.native
-  sealed trait l extends js.Object
+  sealed trait l_ extends js.Object
   
   @js.native
   sealed trait left
-    extends OrthogonalDirection
-       with AnchorType
+    extends AnchorType
+       with ConnectionPointAlignment
+       with Direction
+       with OrthogonalDirection
        with RectangleSide
   
   @js.native
   sealed trait leftMiddle extends js.Object
+  
+  @js.native
+  sealed trait length extends AnchorArguments
   
   @js.native
   sealed trait linearGradient extends js.Object
@@ -194,6 +243,12 @@ object jointjsStrings {
   
   @js.native
   sealed trait manhattan extends RouterType
+  
+  @js.native
+  sealed trait maxAllowedDirectionChange extends RouterArguments
+  
+  @js.native
+  sealed trait maximumLoops extends RouterArguments
   
   @js.native
   sealed trait mesh extends js.Object
@@ -222,6 +277,9 @@ object jointjsStrings {
        with RouterType
   
   @js.native
+  sealed trait offset extends ConnectionPointArguments
+  
+  @js.native
   sealed trait oneSide extends RouterType
   
   @js.native
@@ -237,10 +295,21 @@ object jointjsStrings {
   sealed trait outline extends js.Object
   
   @js.native
-  sealed trait perpendicular extends AnchorType
+  sealed trait padding
+    extends AnchorArguments
+       with HighlighterArguments
+       with RouterArguments
+  
+  @js.native
+  sealed trait perpendicular
+    extends AnchorType
+       with RouterArguments
   
   @js.native
   sealed trait positive extends js.Object
+  
+  @js.native
+  sealed trait precision extends ConnectionPointArguments
   
   @js.native
   sealed trait r extends js.Object
@@ -249,12 +318,20 @@ object jointjsStrings {
   sealed trait radialGradient extends js.Object
   
   @js.native
+  sealed trait radius extends ConnectorArguments
+  
+  @js.native
+  sealed trait raw extends ConnectorArguments
+  
+  @js.native
   sealed trait rectangle extends ConnectionPointType
   
   @js.native
   sealed trait right
-    extends OrthogonalDirection
-       with AnchorType
+    extends AnchorType
+       with ConnectionPointAlignment
+       with Direction
+       with OrthogonalDirection
        with RectangleSide
   
   @js.native
@@ -264,10 +341,25 @@ object jointjsStrings {
   sealed trait rounded extends ConnectorType
   
   @js.native
+  sealed trait rx extends HighlighterArguments
+  
+  @js.native
+  sealed trait ry extends HighlighterArguments
+  
+  @js.native
   sealed trait saturate extends js.Object
   
   @js.native
+  sealed trait selector extends ConnectionPointArguments
+  
+  @js.native
   sealed trait sepia extends js.Object
+  
+  @js.native
+  sealed trait side extends RouterArguments
+  
+  @js.native
+  sealed trait size extends ConnectorArguments
   
   @js.native
   sealed trait smooth extends ConnectorType
@@ -276,7 +368,18 @@ object jointjsStrings {
   sealed trait source extends LinkEnd
   
   @js.native
-  sealed trait stroke extends HighlighterType
+  sealed trait startDirections extends RouterArguments
+  
+  @js.native
+  sealed trait step extends RouterArguments
+  
+  @js.native
+  sealed trait sticky extends ConnectionPointArguments
+  
+  @js.native
+  sealed trait stroke
+    extends ConnectionPointArguments
+       with HighlighterType
   
   @js.native
   sealed trait target extends LinkEnd
@@ -286,8 +389,10 @@ object jointjsStrings {
   
   @js.native
   sealed trait top
-    extends OrthogonalDirection
-       with AnchorType
+    extends AnchorType
+       with ConnectionPointAlignment
+       with Direction
+       with OrthogonalDirection
        with RectangleSide
        with TextVerticalAnchor
   
@@ -307,10 +412,7 @@ object jointjsStrings {
   sealed trait topRight extends AnchorType
   
   @js.native
-  sealed trait width extends js.Object
-  
-  @js.native
-  sealed trait z extends SegmentType
+  sealed trait z_ extends SegmentType
   
   @scala.inline
   def BT: BT = "BT".asInstanceOf[BT]
@@ -353,6 +455,8 @@ object jointjsStrings {
   @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]
   @scala.inline
+  def attrs: attrs = "attrs".asInstanceOf[attrs]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def bbox: bbox = "bbox".asInstanceOf[bbox]
@@ -375,9 +479,11 @@ object jointjsStrings {
   @scala.inline
   def brightness: brightness = "brightness".asInstanceOf[brightness]
   @scala.inline
-  def c: c = "c".asInstanceOf[c]
+  def c_ : c_ = "c".asInstanceOf[c_]
   @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def className: className = "className".asInstanceOf[className]
   @scala.inline
   def connectionClosest: connectionClosest = "connectionClosest".asInstanceOf[connectionClosest]
   @scala.inline
@@ -399,33 +505,59 @@ object jointjsStrings {
   @scala.inline
   def dropShadow: dropShadow = "dropShadow".asInstanceOf[dropShadow]
   @scala.inline
+  def dx: dx = "dx".asInstanceOf[dx]
+  @scala.inline
+  def dy: dy = "dy".asInstanceOf[dy]
+  @scala.inline
+  def elementPadding: elementPadding = "elementPadding".asInstanceOf[elementPadding]
+  @scala.inline
+  def endDirections: endDirections = "endDirections".asInstanceOf[endDirections]
+  @scala.inline
+  def excludeEnds: excludeEnds = "excludeEnds".asInstanceOf[excludeEnds]
+  @scala.inline
+  def excludeTypes: excludeTypes = "excludeTypes".asInstanceOf[excludeTypes]
+  @scala.inline
+  def extrapolate: extrapolate = "extrapolate".asInstanceOf[extrapolate]
+  @scala.inline
+  def fallbackAt: fallbackAt = "fallbackAt".asInstanceOf[fallbackAt]
+  @scala.inline
+  def fixedAt: fixedAt = "fixedAt".asInstanceOf[fixedAt]
+  @scala.inline
   def fixedDot: fixedDot = "fixedDot".asInstanceOf[fixedDot]
   @scala.inline
   def gap: gap = "gap".asInstanceOf[gap]
   @scala.inline
   def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
   @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
   def highlight: highlight = "highlight".asInstanceOf[highlight]
   @scala.inline
   def hueRotate: hueRotate = "hueRotate".asInstanceOf[hueRotate]
   @scala.inline
+  def insideout: insideout = "insideout".asInstanceOf[insideout]
+  @scala.inline
   def invert: invert = "invert".asInstanceOf[invert]
+  @scala.inline
+  def jump: jump = "jump".asInstanceOf[jump]
   @scala.inline
   def jumpover: jumpover = "jumpover".asInstanceOf[jumpover]
   @scala.inline
-  def l: l = "l".asInstanceOf[l]
+  def l_ : l_ = "l".asInstanceOf[l_]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def leftMiddle: leftMiddle = "leftMiddle".asInstanceOf[leftMiddle]
+  @scala.inline
+  def length: length = "length".asInstanceOf[length]
   @scala.inline
   def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   @scala.inline
   def `longest-path`: `longest-path` = "longest-path".asInstanceOf[`longest-path`]
   @scala.inline
   def manhattan: manhattan = "manhattan".asInstanceOf[manhattan]
+  @scala.inline
+  def maxAllowedDirectionChange: maxAllowedDirectionChange = "maxAllowedDirectionChange".asInstanceOf[maxAllowedDirectionChange]
+  @scala.inline
+  def maximumLoops: maximumLoops = "maximumLoops".asInstanceOf[maximumLoops]
   @scala.inline
   def mesh: mesh = "mesh".asInstanceOf[mesh]
   @scala.inline
@@ -443,6 +575,8 @@ object jointjsStrings {
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
+  def offset: offset = "offset".asInstanceOf[offset]
+  @scala.inline
   def oneSide: oneSide = "oneSide".asInstanceOf[oneSide]
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
@@ -453,13 +587,21 @@ object jointjsStrings {
   @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
   @scala.inline
+  def padding: padding = "padding".asInstanceOf[padding]
+  @scala.inline
   def perpendicular: perpendicular = "perpendicular".asInstanceOf[perpendicular]
   @scala.inline
   def positive: positive = "positive".asInstanceOf[positive]
   @scala.inline
+  def precision: precision = "precision".asInstanceOf[precision]
+  @scala.inline
   def r: r = "r".asInstanceOf[r]
   @scala.inline
   def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
+  @scala.inline
+  def radius: radius = "radius".asInstanceOf[radius]
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
   def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   @scala.inline
@@ -469,13 +611,29 @@ object jointjsStrings {
   @scala.inline
   def rounded: rounded = "rounded".asInstanceOf[rounded]
   @scala.inline
+  def rx: rx = "rx".asInstanceOf[rx]
+  @scala.inline
+  def ry: ry = "ry".asInstanceOf[ry]
+  @scala.inline
   def saturate: saturate = "saturate".asInstanceOf[saturate]
   @scala.inline
+  def selector: selector = "selector".asInstanceOf[selector]
+  @scala.inline
   def sepia: sepia = "sepia".asInstanceOf[sepia]
+  @scala.inline
+  def side: side = "side".asInstanceOf[side]
+  @scala.inline
+  def size: size = "size".asInstanceOf[size]
   @scala.inline
   def smooth: smooth = "smooth".asInstanceOf[smooth]
   @scala.inline
   def source: source = "source".asInstanceOf[source]
+  @scala.inline
+  def startDirections: startDirections = "startDirections".asInstanceOf[startDirections]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
+  @scala.inline
+  def sticky: sticky = "sticky".asInstanceOf[sticky]
   @scala.inline
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   @scala.inline
@@ -495,8 +653,6 @@ object jointjsStrings {
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def z: z = "z".asInstanceOf[z]
+  def z_ : z_ = "z".asInstanceOf[z_]
 }
 

@@ -21,6 +21,12 @@ trait FacebookConnectPluginStatic extends js.Object {
   def api(
     graphPath: String,
     permissions: js.Array[String],
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  def api(
+    graphPath: String,
+    permissions: js.Array[String],
     successCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def api(
@@ -36,6 +42,10 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def getAccessToken(): Unit = js.native
+  def getAccessToken(
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def getAccessToken(successCallback: js.Function1[/* token */ String, Unit]): Unit = js.native
   def getAccessToken(
     successCallback: js.Function1[/* token */ String, Unit],
@@ -48,6 +58,10 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def getLoginStatus(): Unit = js.native
+  def getLoginStatus(
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def getLoginStatus(successCallback: js.Function1[/* status */ LoginResult, Unit]): Unit = js.native
   def getLoginStatus(
     successCallback: js.Function1[/* status */ LoginResult, Unit],
@@ -65,8 +79,76 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def logEvent(name: String): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    valueToSum: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    valueToSum: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    valueToSum: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  def logEvent(name: String, params: js.UndefOr[scala.Nothing], valueToSum: Double): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    valueToSum: Double,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    valueToSum: Double,
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.UndefOr[scala.Nothing],
+    valueToSum: Double,
+    successCallback: js.Function0[Unit],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def logEvent(name: String, params: js.Any): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.Any,
+    valueToSum: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.Any,
+    valueToSum: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.Any,
+    valueToSum: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def logEvent(name: String, params: js.Any, valueToSum: Double): Unit = js.native
+  def logEvent(
+    name: String,
+    params: js.Any,
+    valueToSum: Double,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def logEvent(name: String, params: js.Any, valueToSum: Double, successCallback: js.Function0[Unit]): Unit = js.native
   def logEvent(
     name: String,
@@ -84,6 +166,12 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def logPurchase(value: Double, currency: String): Unit = js.native
+  def logPurchase(
+    value: Double,
+    currency: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def logPurchase(value: Double, currency: String, successCallback: js.Function0[Unit]): Unit = js.native
   def logPurchase(
     value: Double,
@@ -100,6 +188,11 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def login(permissions: js.Array[String]): Unit = js.native
+  def login(
+    permissions: js.Array[String],
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def login(permissions: js.Array[String], successCallback: js.Function1[/* result */ LoginResult, Unit]): Unit = js.native
   def login(
     permissions: js.Array[String],
@@ -113,6 +206,10 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def logout(): Unit = js.native
+  def logout(
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def logout(successCallback: js.Function0[Unit]): Unit = js.native
   def logout(successCallback: js.Function0[Unit], failureCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
   /**
@@ -123,6 +220,11 @@ trait FacebookConnectPluginStatic extends js.Object {
     * @param failureCallback The callback to be executed when the call fails.
     */
   def showDialog(options: BaseDialogOptions): Unit = js.native
+  def showDialog(
+    options: BaseDialogOptions,
+    successCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* error */ String, Unit]
+  ): Unit = js.native
   def showDialog(options: BaseDialogOptions, successCallback: js.Function1[/* status */ BaseDialogResult, Unit]): Unit = js.native
   def showDialog(
     options: BaseDialogOptions,

@@ -7,50 +7,58 @@ import scala.scalajs.js.annotation._
 /**
   * Rule parameter template
   */
+@js.native
 trait TestScriptRuleParam extends BackboneElement {
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.undefined
+  var _value: js.UndefOr[Element] = js.native
   /**
     * Parameter name matching external assert rule parameter
     */
-  var name: String
+  var name: String = js.native
   /**
     * Parameter value defined either explicitly or dynamically
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.native
 }
 
 object TestScriptRuleParam {
   @scala.inline
-  def apply(
-    name: String,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _name: Element = null,
-    _value: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    value: String = null
-  ): TestScriptRuleParam = {
+  def apply(name: String): TestScriptRuleParam = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_value != null) __obj.updateDynamic("_value")(_value.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptRuleParam]
   }
+  @scala.inline
+  implicit class TestScriptRuleParamOps[Self <: TestScriptRuleParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_value(value: Element): Self = this.set("_value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_value: Self = this.set("_value", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

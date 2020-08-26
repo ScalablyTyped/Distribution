@@ -14,8 +14,5 @@ class AllJoynSessionMemberAddedEventArgs protected ()
     * @param uniqueName The unique Consumer name.
     */
   def this(uniqueName: String) = this()
-  /** The unique bus name of the remote app new to the session. */
-  /* CompleteClass */
-  override var uniqueName: String = js.native
 }
 

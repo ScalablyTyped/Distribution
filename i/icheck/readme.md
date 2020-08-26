@@ -12,7 +12,7 @@ Highly customizable checkboxes and radio buttons (jQuery & Zepto)
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 612367 |
+| # downloads        | 637324 |
 | # stars            | 4 |
 
 ## Links

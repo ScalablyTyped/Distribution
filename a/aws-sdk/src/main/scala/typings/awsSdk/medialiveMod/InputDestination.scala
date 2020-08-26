@@ -25,13 +25,38 @@ trait InputDestination extends js.Object {
 
 object InputDestination {
   @scala.inline
-  def apply(Ip: string = null, Port: string = null, Url: string = null, Vpc: InputDestinationVpc = null): InputDestination = {
+  def apply(): InputDestination = {
     val __obj = js.Dynamic.literal()
-    if (Ip != null) __obj.updateDynamic("Ip")(Ip.asInstanceOf[js.Any])
-    if (Port != null) __obj.updateDynamic("Port")(Port.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
-    if (Vpc != null) __obj.updateDynamic("Vpc")(Vpc.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDestination]
   }
+  @scala.inline
+  implicit class InputDestinationOps[Self <: InputDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIp(value: string): Self = this.set("Ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp: Self = this.set("Ip", js.undefined)
+    @scala.inline
+    def setPort(value: string): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+    @scala.inline
+    def setVpc(value: InputDestinationVpc): Self = this.set("Vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpc: Self = this.set("Vpc", js.undefined)
+  }
+  
 }
 

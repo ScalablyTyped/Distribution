@@ -11,7 +11,7 @@ Asyncronous JavaScript loader and dependency manager
 | Keywords           | ender, script, dependency, ajax, jsonp, loader |
 | # releases         | 2 |
 | # dependents       | 175 |
-| # downloads        | 16470614 |
+| # downloads        | 16933229 |
 | # stars            | 9 |
 
 ## Links

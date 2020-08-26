@@ -18,5 +18,22 @@ object DescribeEndpointsResponse {
     val __obj = js.Dynamic.literal(Endpoints = Endpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointsResponse]
   }
+  @scala.inline
+  implicit class DescribeEndpointsResponseOps[Self <: DescribeEndpointsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointsVarargs(value: Endpoint*): Self = this.set("Endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: Endpoints): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+  }
+  
 }
 

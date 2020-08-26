@@ -16,15 +16,13 @@ trait Output extends js.Object
 
 object Output {
   @scala.inline
-  def RegularOutput(address: String, amount: String, script_type: String = null): Output = {
+  def RegularOutput(address: String, amount: String): Output = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any])
-    if (script_type != null) __obj.updateDynamic("script_type")(script_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   @scala.inline
-  def InternalOutput(address_n: js.Array[Double], amount: String, script_type: String = null): Output = {
+  def InternalOutput(address_n: js.Array[Double], amount: String): Output = {
     val __obj = js.Dynamic.literal(address_n = address_n.asInstanceOf[js.Any], amount = amount.asInstanceOf[js.Any])
-    if (script_type != null) __obj.updateDynamic("script_type")(script_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   @scala.inline

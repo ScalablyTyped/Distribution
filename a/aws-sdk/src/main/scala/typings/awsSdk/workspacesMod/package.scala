@@ -14,6 +14,7 @@ package object workspacesMod {
   type AccessPropertyValue = typings.awsSdk.workspacesMod._AccessPropertyValue | java.lang.String
   type AccountModificationList = js.Array[typings.awsSdk.workspacesMod.AccountModification]
   type Alias = java.lang.String
+  type AwsAccount = java.lang.String
   type BooleanObject = scala.Boolean
   type BundleId = java.lang.String
   type BundleIdList = js.Array[typings.awsSdk.workspacesMod.BundleId]
@@ -71,6 +72,13 @@ package object workspacesMod {
   type FailedStartWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
   type FailedStopWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
   type FailedTerminateWorkspaceRequests = js.Array[typings.awsSdk.workspacesMod.FailedWorkspaceChangeRequest]
+  type ImagePermissions = js.Array[typings.awsSdk.workspacesMod.ImagePermission]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.OWNED
+    - typings.awsSdk.awsSdkStrings.SHARED
+    - java.lang.String
+  */
+  type ImageType = typings.awsSdk.workspacesMod._ImageType | java.lang.String
   type IpAddress = java.lang.String
   type IpGroupDesc = java.lang.String
   type IpGroupId = java.lang.String

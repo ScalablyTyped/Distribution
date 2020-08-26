@@ -10,9 +10,9 @@ Graph theory (a.k.a. network) library for analysis and visualisation
 | ------------------ | :-------------: |
 | Full name          | cytoscape |
 | Keywords           | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
-| # releases         | 78 |
+| # releases         | 77 |
 | # dependents       | 92 |
-| # downloads        | 947534 |
+| # downloads        | 985186 |
 | # stars            | 7 |
 
 ## Links

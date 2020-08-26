@@ -33,15 +33,15 @@ class AccessRule protected () extends Element {
   @JSName("model")
   var model_FAccessRule: IModel = js.native
   def allowCreate: Boolean = js.native
-  def allowCreate(newValue: Boolean): js.Any = js.native
+  def allowCreate_=(newValue: Boolean): Unit = js.native
   def allowDelete: Boolean = js.native
-  def allowDelete(newValue: Boolean): js.Any = js.native
+  def allowDelete_=(newValue: Boolean): Unit = js.native
   def containerAsAccessRuleContainerBase: AccessRuleContainerBase = js.native
   def containerAsEntity: Entity = js.native
   def defaultMemberAccessRights: MemberAccessRights = js.native
-  def defaultMemberAccessRights(newValue: MemberAccessRights): js.Any = js.native
+  def defaultMemberAccessRights_=(newValue: MemberAccessRights): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def memberAccesses: IList[MemberAccess] = js.native
   def moduleRoles: IList[IModuleRole] = js.native
   def moduleRolesQualifiedNames: js.Array[String] = js.native
@@ -49,7 +49,7 @@ class AccessRule protected () extends Element {
     * The value of this property is conceptually of type xPathConstraints.XPathConstraint.
     */
   def xPathConstraint: String = js.native
-  def xPathConstraint(newValue: String): js.Any = js.native
+  def xPathConstraint_=(newValue: String): Unit = js.native
 }
 
 /* static members */

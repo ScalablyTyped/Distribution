@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait PhononI18n extends js.Object {
   def bind(): Unit = js.native
   def bind(callback: js.Function0[Unit]): Unit = js.native
+  def bind(element: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def bind(element: Element): Unit = js.native
   def bind(element: Element, callback: js.Function0[Unit]): Unit = js.native
   def get(key: String, callback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native

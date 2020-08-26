@@ -30,20 +30,42 @@ trait EmailConfigurationType extends js.Object {
 
 object EmailConfigurationType {
   @scala.inline
-  def apply(
-    ConfigurationSet: SESConfigurationSet = null,
-    EmailSendingAccount: EmailSendingAccountType = null,
-    From: StringType = null,
-    ReplyToEmailAddress: EmailAddressType = null,
-    SourceArn: ArnType = null
-  ): EmailConfigurationType = {
+  def apply(): EmailConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationSet != null) __obj.updateDynamic("ConfigurationSet")(ConfigurationSet.asInstanceOf[js.Any])
-    if (EmailSendingAccount != null) __obj.updateDynamic("EmailSendingAccount")(EmailSendingAccount.asInstanceOf[js.Any])
-    if (From != null) __obj.updateDynamic("From")(From.asInstanceOf[js.Any])
-    if (ReplyToEmailAddress != null) __obj.updateDynamic("ReplyToEmailAddress")(ReplyToEmailAddress.asInstanceOf[js.Any])
-    if (SourceArn != null) __obj.updateDynamic("SourceArn")(SourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailConfigurationType]
   }
+  @scala.inline
+  implicit class EmailConfigurationTypeOps[Self <: EmailConfigurationType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationSet(value: SESConfigurationSet): Self = this.set("ConfigurationSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationSet: Self = this.set("ConfigurationSet", js.undefined)
+    @scala.inline
+    def setEmailSendingAccount(value: EmailSendingAccountType): Self = this.set("EmailSendingAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailSendingAccount: Self = this.set("EmailSendingAccount", js.undefined)
+    @scala.inline
+    def setFrom(value: StringType): Self = this.set("From", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("From", js.undefined)
+    @scala.inline
+    def setReplyToEmailAddress(value: EmailAddressType): Self = this.set("ReplyToEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyToEmailAddress: Self = this.set("ReplyToEmailAddress", js.undefined)
+    @scala.inline
+    def setSourceArn(value: ArnType): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceArn: Self = this.set("SourceArn", js.undefined)
+  }
+  
 }
 

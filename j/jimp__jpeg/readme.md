@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__jpeg
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 Default Jimp jpeg encoder/decoder.
@@ -10,9 +10,9 @@ Default Jimp jpeg encoder/decoder.
 | ------------------ | :-------------: |
 | Full name          | @jimp/jpeg |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 69 |
 | # dependents       | 3 |
-| # downloads        | 14060265 |
+| # downloads        | 14439529 |
 | # stars            | 0 |
 
 ## Links

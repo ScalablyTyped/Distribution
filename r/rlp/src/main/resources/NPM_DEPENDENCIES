@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rlp" : "2.2.4"
+      "rlp" : "2.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "rlp" : "2.2.4"
+      "rlp" : "2.2.6"
     }
   ],
   "compile-devDependencies" : [

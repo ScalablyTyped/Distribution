@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 trait UIDGeneratorClass
   extends Instantiable0[UIDGeneratorInstance]
      with Instantiable1[(/* bitSize */ Double) | (/* baseEncoding */ String), UIDGeneratorInstance]
-     with Instantiable2[/* bitSize */ Double, /* baseEncoding */ String, UIDGeneratorInstance] {
+     with Instantiable2[js.UndefOr[/* bitSize */ Double], /* baseEncoding */ String, UIDGeneratorInstance] {
   val BASE16: `0123456789abcdef` = js.native
   val BASE36: `0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ` = js.native
   val BASE58: `123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz` = js.native

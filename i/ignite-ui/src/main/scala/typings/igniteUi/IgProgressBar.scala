@@ -6,60 +6,95 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgProgressBar
   extends /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var animateTimeout: js.UndefOr[Double] = js.undefined
-  var change: js.UndefOr[ChangeEvent] = js.undefined
-  var endValue: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[String] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
+  var animateTimeout: js.UndefOr[Double] = js.native
+  var change: js.UndefOr[ChangeEvent] = js.native
+  var endValue: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[String] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[String] = js.native
   /**
     * A Boolean indicating whether to place the animation in the effects queue. If false, the animation will begin immediately.
     */
-  var queue: js.UndefOr[Boolean] = js.undefined
-  var range: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
+  var queue: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[String] = js.native
 }
 
 object IgProgressBar {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animateTimeout: js.UndefOr[Double] = js.undefined,
-    change: (/* event */ Event, /* ui */ ChangeEventUIParam) => Unit = null,
-    endValue: js.UndefOr[Double] = js.undefined,
-    height: String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    orientation: String = null,
-    queue: js.UndefOr[Boolean] = js.undefined,
-    range: js.UndefOr[Boolean] = js.undefined,
-    value: js.UndefOr[Double] = js.undefined,
-    width: String = null
-  ): IgProgressBar = {
+  def apply(): IgProgressBar = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateTimeout)) __obj.updateDynamic("animateTimeout")(animateTimeout.get.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (!js.isUndefined(endValue)) __obj.updateDynamic("endValue")(endValue.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgProgressBar]
   }
+  @scala.inline
+  implicit class IgProgressBarOps[Self <: IgProgressBar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setAnimateTimeout(value: Double): Self = this.set("animateTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimateTimeout: Self = this.set("animateTimeout", js.undefined)
+    @scala.inline
+    def setChange(value: (/* event */ Event, /* ui */ ChangeEventUIParam) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setEndValue(value: Double): Self = this.set("endValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndValue: Self = this.set("endValue", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setQueue(value: Boolean): Self = this.set("queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("queue", js.undefined)
+    @scala.inline
+    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

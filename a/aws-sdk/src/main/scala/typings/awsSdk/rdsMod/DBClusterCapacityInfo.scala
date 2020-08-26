@@ -30,20 +30,42 @@ trait DBClusterCapacityInfo extends js.Object {
 
 object DBClusterCapacityInfo {
   @scala.inline
-  def apply(
-    CurrentCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    DBClusterIdentifier: String = null,
-    PendingCapacity: js.UndefOr[IntegerOptional] = js.undefined,
-    SecondsBeforeTimeout: js.UndefOr[IntegerOptional] = js.undefined,
-    TimeoutAction: String = null
-  ): DBClusterCapacityInfo = {
+  def apply(): DBClusterCapacityInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CurrentCapacity)) __obj.updateDynamic("CurrentCapacity")(CurrentCapacity.get.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(PendingCapacity)) __obj.updateDynamic("PendingCapacity")(PendingCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SecondsBeforeTimeout)) __obj.updateDynamic("SecondsBeforeTimeout")(SecondsBeforeTimeout.get.asInstanceOf[js.Any])
-    if (TimeoutAction != null) __obj.updateDynamic("TimeoutAction")(TimeoutAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterCapacityInfo]
   }
+  @scala.inline
+  implicit class DBClusterCapacityInfoOps[Self <: DBClusterCapacityInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentCapacity(value: IntegerOptional): Self = this.set("CurrentCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentCapacity: Self = this.set("CurrentCapacity", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setPendingCapacity(value: IntegerOptional): Self = this.set("PendingCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingCapacity: Self = this.set("PendingCapacity", js.undefined)
+    @scala.inline
+    def setSecondsBeforeTimeout(value: IntegerOptional): Self = this.set("SecondsBeforeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondsBeforeTimeout: Self = this.set("SecondsBeforeTimeout", js.undefined)
+    @scala.inline
+    def setTimeoutAction(value: String): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutAction: Self = this.set("TimeoutAction", js.undefined)
+  }
+  
 }
 

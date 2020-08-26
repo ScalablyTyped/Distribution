@@ -19,15 +19,5 @@ class SessionStorage protected () extends Storage {
   var storageId: js.Any = js.native
   var storageKey: js.Any = js.native
   /* private */ def isReady: js.Any = js.native
-  /* CompleteClass */
-  override def read(`type`: String, id: String): js.Object = js.native
-  /* CompleteClass */
-  override def remove(`type`: String, sid: String, uniqueName: String): js.Any = js.native
-  /* CompleteClass */
-  override def store(`type`: String, id: String, value: js.Object): js.Any = js.native
-  /* CompleteClass */
-  override def update(`type`: String, id: String, uniqueName: String, patch: js.Object): js.Any = js.native
-  /* CompleteClass */
-  override def updateStorageId(storageId: String): js.Any = js.native
 }
 

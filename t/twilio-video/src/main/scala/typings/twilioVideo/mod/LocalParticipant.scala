@@ -14,6 +14,7 @@ class LocalParticipant () extends Participant {
   var audioTracks_LocalParticipant: Map[SID, LocalAudioTrackPublication] = js.native
   @JSName("dataTracks")
   var dataTracks_LocalParticipant: Map[SID, LocalDataTrackPublication] = js.native
+  var signalingRegion: String = js.native
   @JSName("tracks")
   var tracks_LocalParticipant: Map[SID, LocalTrackPublication] = js.native
   @JSName("videoTracks")

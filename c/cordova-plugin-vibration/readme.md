@@ -10,9 +10,9 @@ Cordova Vibration Plugin
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-vibration |
 | Keywords           | cordova, vibration, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
-| # releases         | 5 |
-| # dependents       | 8 |
-| # downloads        | 336928 |
+| # releases         | 2 |
+| # dependents       | 9 |
+| # downloads        | 336076 |
 | # stars            | 9 |
 
 ## Links

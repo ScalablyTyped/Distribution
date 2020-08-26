@@ -12,6 +12,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object reauthorize extends js.Object {
   def apply(id: String, data: RequestOptions): Unit = js.native
+  def apply(
+    id: String,
+    data: RequestOptions,
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[AuthorizationResource]
+  ): Unit = js.native
   def apply(id: String, data: RequestOptions, config: RequestOptions): Unit = js.native
   def apply(
     id: String,
@@ -27,6 +33,12 @@ object reauthorize extends js.Object {
     cb: CallbackFunction[AuthorizationResource]
   ): Unit = js.native
   def apply(id: String, data: Amount): Unit = js.native
+  def apply(
+    id: String,
+    data: Amount,
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[AuthorizationResource]
+  ): Unit = js.native
   def apply(id: String, data: Amount, config: RequestOptions): Unit = js.native
   def apply(id: String, data: Amount, config: RequestOptions, cb: CallbackFunction[AuthorizationResource]): Unit = js.native
   def apply(id: String, data: Amount, config: CallbackFunction[AuthorizationResource]): Unit = js.native
@@ -37,6 +49,12 @@ object reauthorize extends js.Object {
     cb: CallbackFunction[AuthorizationResource]
   ): Unit = js.native
   def apply(id: String, data: CallbackFunction[AuthorizationResource]): Unit = js.native
+  def apply(
+    id: String,
+    data: CallbackFunction[AuthorizationResource],
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[AuthorizationResource]
+  ): Unit = js.native
   def apply(id: String, data: CallbackFunction[AuthorizationResource], config: RequestOptions): Unit = js.native
   def apply(
     id: String,

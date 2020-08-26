@@ -26,18 +26,40 @@ trait EntityRecognizerMetadata extends js.Object {
 
 object EntityRecognizerMetadata {
   @scala.inline
-  def apply(
-    EntityTypes: EntityRecognizerMetadataEntityTypesList = null,
-    EvaluationMetrics: EntityRecognizerEvaluationMetrics = null,
-    NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined,
-    NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
-  ): EntityRecognizerMetadata = {
+  def apply(): EntityRecognizerMetadata = {
     val __obj = js.Dynamic.literal()
-    if (EntityTypes != null) __obj.updateDynamic("EntityTypes")(EntityTypes.asInstanceOf[js.Any])
-    if (EvaluationMetrics != null) __obj.updateDynamic("EvaluationMetrics")(EvaluationMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfTestDocuments)) __obj.updateDynamic("NumberOfTestDocuments")(NumberOfTestDocuments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfTrainedDocuments)) __obj.updateDynamic("NumberOfTrainedDocuments")(NumberOfTrainedDocuments.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerMetadata]
   }
+  @scala.inline
+  implicit class EntityRecognizerMetadataOps[Self <: EntityRecognizerMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityTypesVarargs(value: EntityRecognizerMetadataEntityTypesListItem*): Self = this.set("EntityTypes", js.Array(value :_*))
+    @scala.inline
+    def setEntityTypes(value: EntityRecognizerMetadataEntityTypesList): Self = this.set("EntityTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityTypes: Self = this.set("EntityTypes", js.undefined)
+    @scala.inline
+    def setEvaluationMetrics(value: EntityRecognizerEvaluationMetrics): Self = this.set("EvaluationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationMetrics: Self = this.set("EvaluationMetrics", js.undefined)
+    @scala.inline
+    def setNumberOfTestDocuments(value: Integer): Self = this.set("NumberOfTestDocuments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfTestDocuments: Self = this.set("NumberOfTestDocuments", js.undefined)
+    @scala.inline
+    def setNumberOfTrainedDocuments(value: Integer): Self = this.set("NumberOfTrainedDocuments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfTrainedDocuments: Self = this.set("NumberOfTrainedDocuments", js.undefined)
+  }
+  
 }
 

@@ -100,8 +100,10 @@ object appsync extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.appsyncApiKeyMod.ApiKey = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.appsyncApiKeyMod.ApiKey = js.native
     def get(name: String, id: Input[ID], state: ApiKeyState): typings.pulumiAws.appsyncApiKeyMod.ApiKey = js.native
     def get(name: String, id: Input[ID], state: ApiKeyState, opts: CustomResourceOptions): typings.pulumiAws.appsyncApiKeyMod.ApiKey = js.native
     /**
@@ -121,8 +123,10 @@ object appsync extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.dataSourceMod.DataSource = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.dataSourceMod.DataSource = js.native
     def get(name: String, id: Input[ID], state: DataSourceState): typings.pulumiAws.dataSourceMod.DataSource = js.native
     def get(name: String, id: Input[ID], state: DataSourceState, opts: CustomResourceOptions): typings.pulumiAws.dataSourceMod.DataSource = js.native
     /**
@@ -142,8 +146,10 @@ object appsync extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.functionMod.Function = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.functionMod.Function = js.native
     def get(name: String, id: Input[ID], state: FunctionState): typings.pulumiAws.functionMod.Function = js.native
     def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): typings.pulumiAws.functionMod.Function = js.native
     /**
@@ -163,8 +169,10 @@ object appsync extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.graphQLApiMod.GraphQLApi = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.graphQLApiMod.GraphQLApi = js.native
     def get(name: String, id: Input[ID], state: GraphQLApiState): typings.pulumiAws.graphQLApiMod.GraphQLApi = js.native
     def get(name: String, id: Input[ID], state: GraphQLApiState, opts: CustomResourceOptions): typings.pulumiAws.graphQLApiMod.GraphQLApi = js.native
     /**
@@ -184,8 +192,10 @@ object appsync extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.resolverMod.Resolver = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverMod.Resolver = js.native
     def get(name: String, id: Input[ID], state: ResolverState): typings.pulumiAws.resolverMod.Resolver = js.native
     def get(name: String, id: Input[ID], state: ResolverState, opts: CustomResourceOptions): typings.pulumiAws.resolverMod.Resolver = js.native
     /**

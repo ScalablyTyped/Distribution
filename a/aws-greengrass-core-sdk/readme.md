@@ -12,7 +12,7 @@ The **AWS Greengrass Core SDK for JavaScript** allows developers to write JavaSc
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 0 |
-| # downloads        | 4006 |
+| # downloads        | 7124 |
 | # stars            | 0 |
 
 ## Links

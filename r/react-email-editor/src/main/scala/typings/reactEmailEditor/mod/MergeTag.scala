@@ -18,9 +18,8 @@ object MergeTag {
     __obj.asInstanceOf[MergeTag]
   }
   @scala.inline
-  def ConditionalMergeTag(name: String, rules: js.Array[ConditionalMergeTagRule], mergeTags: js.Array[SimpleMergeTag] = null): MergeTag = {
+  def ConditionalMergeTag(name: String, rules: js.Array[ConditionalMergeTagRule]): MergeTag = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
-    if (mergeTags != null) __obj.updateDynamic("mergeTags")(mergeTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeTag]
   }
   @scala.inline

@@ -23,6 +23,12 @@ class BindingEngine () extends js.Object {
     * @param lookupFunctions Lookup functions for value converter and binding behavior resources.
     */
   def createBindingExpression(targetProperty: String, sourceExpression: String): BindingExpression = js.native
+  def createBindingExpression(
+    targetProperty: String,
+    sourceExpression: String,
+    mode: js.UndefOr[scala.Nothing],
+    lookupFunctions: LookupFunctions
+  ): BindingExpression = js.native
   def createBindingExpression(targetProperty: String, sourceExpression: String, mode: bindingMode): BindingExpression = js.native
   def createBindingExpression(
     targetProperty: String,

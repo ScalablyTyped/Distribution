@@ -35,20 +35,42 @@ trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadata extends js.Object 
 
 object SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadata {
   @scala.inline
-  def apply(
-    common: SchemaGoogleDatastoreAdminV1beta1CommonMetadata = null,
-    entityFilter: SchemaGoogleDatastoreAdminV1beta1EntityFilter = null,
-    inputUrl: String = null,
-    progressBytes: SchemaGoogleDatastoreAdminV1beta1Progress = null,
-    progressEntities: SchemaGoogleDatastoreAdminV1beta1Progress = null
-  ): SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadata = {
+  def apply(): SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadata = {
     val __obj = js.Dynamic.literal()
-    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
-    if (entityFilter != null) __obj.updateDynamic("entityFilter")(entityFilter.asInstanceOf[js.Any])
-    if (inputUrl != null) __obj.updateDynamic("inputUrl")(inputUrl.asInstanceOf[js.Any])
-    if (progressBytes != null) __obj.updateDynamic("progressBytes")(progressBytes.asInstanceOf[js.Any])
-    if (progressEntities != null) __obj.updateDynamic("progressEntities")(progressEntities.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadataOps[Self <: SchemaGoogleDatastoreAdminV1beta1ImportEntitiesMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommon(value: SchemaGoogleDatastoreAdminV1beta1CommonMetadata): Self = this.set("common", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommon: Self = this.set("common", js.undefined)
+    @scala.inline
+    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1beta1EntityFilter): Self = this.set("entityFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityFilter: Self = this.set("entityFilter", js.undefined)
+    @scala.inline
+    def setInputUrl(value: String): Self = this.set("inputUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputUrl: Self = this.set("inputUrl", js.undefined)
+    @scala.inline
+    def setProgressBytes(value: SchemaGoogleDatastoreAdminV1beta1Progress): Self = this.set("progressBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressBytes: Self = this.set("progressBytes", js.undefined)
+    @scala.inline
+    def setProgressEntities(value: SchemaGoogleDatastoreAdminV1beta1Progress): Self = this.set("progressEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressEntities: Self = this.set("progressEntities", js.undefined)
+  }
+  
 }
 

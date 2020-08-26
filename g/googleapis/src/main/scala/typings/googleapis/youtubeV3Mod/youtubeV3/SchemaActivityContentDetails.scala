@@ -75,32 +75,66 @@ trait SchemaActivityContentDetails extends js.Object {
 
 object SchemaActivityContentDetails {
   @scala.inline
-  def apply(
-    bulletin: SchemaActivityContentDetailsBulletin = null,
-    channelItem: SchemaActivityContentDetailsChannelItem = null,
-    comment: SchemaActivityContentDetailsComment = null,
-    favorite: SchemaActivityContentDetailsFavorite = null,
-    like: SchemaActivityContentDetailsLike = null,
-    playlistItem: SchemaActivityContentDetailsPlaylistItem = null,
-    promotedItem: SchemaActivityContentDetailsPromotedItem = null,
-    recommendation: SchemaActivityContentDetailsRecommendation = null,
-    social: SchemaActivityContentDetailsSocial = null,
-    subscription: SchemaActivityContentDetailsSubscription = null,
-    upload: SchemaActivityContentDetailsUpload = null
-  ): SchemaActivityContentDetails = {
+  def apply(): SchemaActivityContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (bulletin != null) __obj.updateDynamic("bulletin")(bulletin.asInstanceOf[js.Any])
-    if (channelItem != null) __obj.updateDynamic("channelItem")(channelItem.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (favorite != null) __obj.updateDynamic("favorite")(favorite.asInstanceOf[js.Any])
-    if (like != null) __obj.updateDynamic("like")(like.asInstanceOf[js.Any])
-    if (playlistItem != null) __obj.updateDynamic("playlistItem")(playlistItem.asInstanceOf[js.Any])
-    if (promotedItem != null) __obj.updateDynamic("promotedItem")(promotedItem.asInstanceOf[js.Any])
-    if (recommendation != null) __obj.updateDynamic("recommendation")(recommendation.asInstanceOf[js.Any])
-    if (social != null) __obj.updateDynamic("social")(social.asInstanceOf[js.Any])
-    if (subscription != null) __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaActivityContentDetails]
   }
+  @scala.inline
+  implicit class SchemaActivityContentDetailsOps[Self <: SchemaActivityContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBulletin(value: SchemaActivityContentDetailsBulletin): Self = this.set("bulletin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBulletin: Self = this.set("bulletin", js.undefined)
+    @scala.inline
+    def setChannelItem(value: SchemaActivityContentDetailsChannelItem): Self = this.set("channelItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelItem: Self = this.set("channelItem", js.undefined)
+    @scala.inline
+    def setComment(value: SchemaActivityContentDetailsComment): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setFavorite(value: SchemaActivityContentDetailsFavorite): Self = this.set("favorite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFavorite: Self = this.set("favorite", js.undefined)
+    @scala.inline
+    def setLike(value: SchemaActivityContentDetailsLike): Self = this.set("like", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLike: Self = this.set("like", js.undefined)
+    @scala.inline
+    def setPlaylistItem(value: SchemaActivityContentDetailsPlaylistItem): Self = this.set("playlistItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaylistItem: Self = this.set("playlistItem", js.undefined)
+    @scala.inline
+    def setPromotedItem(value: SchemaActivityContentDetailsPromotedItem): Self = this.set("promotedItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotedItem: Self = this.set("promotedItem", js.undefined)
+    @scala.inline
+    def setRecommendation(value: SchemaActivityContentDetailsRecommendation): Self = this.set("recommendation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendation: Self = this.set("recommendation", js.undefined)
+    @scala.inline
+    def setSocial(value: SchemaActivityContentDetailsSocial): Self = this.set("social", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocial: Self = this.set("social", js.undefined)
+    @scala.inline
+    def setSubscription(value: SchemaActivityContentDetailsSubscription): Self = this.set("subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("subscription", js.undefined)
+    @scala.inline
+    def setUpload(value: SchemaActivityContentDetailsUpload): Self = this.set("upload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpload: Self = this.set("upload", js.undefined)
+  }
+  
 }
 

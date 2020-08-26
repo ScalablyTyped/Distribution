@@ -9,12 +9,6 @@ import scala.scalajs.js.annotation._
 class TextEdit protected ()
   extends typings.typescriptServices.TypeScript.Services.TextEdit {
   def this(minChar: Double, limChar: Double, text: String) = this()
-  /* CompleteClass */
-  override var limChar: Double = js.native
-  /* CompleteClass */
-  override var minChar: Double = js.native
-  /* CompleteClass */
-  override var text: String = js.native
 }
 
 /* static members */

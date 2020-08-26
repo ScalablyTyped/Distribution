@@ -4,103 +4,168 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PerformanceReport extends js.Object {
   /** The number of bid responses with an ad. */
-  var bidRate: js.UndefOr[Double] = js.undefined
+  var bidRate: js.UndefOr[Double] = js.native
   /** The number of bid requests sent to your bidder. */
-  var bidRequestRate: js.UndefOr[Double] = js.undefined
+  var bidRequestRate: js.UndefOr[Double] = js.native
   /** Rate of various prefiltering statuses per match. Please refer to the callout-status-codes.txt file for different statuses. */
-  var calloutStatusRate: js.UndefOr[js.Array[_]] = js.undefined
+  var calloutStatusRate: js.UndefOr[js.Array[_]] = js.native
   /** Average QPS for cookie matcher operations. */
-  var cookieMatcherStatusRate: js.UndefOr[js.Array[_]] = js.undefined
+  var cookieMatcherStatusRate: js.UndefOr[js.Array[_]] = js.native
   /** Rate of ads with a given status. Please refer to the creative-status-codes.txt file for different statuses. */
-  var creativeStatusRate: js.UndefOr[js.Array[_]] = js.undefined
+  var creativeStatusRate: js.UndefOr[js.Array[_]] = js.native
   /** The number of bid responses that were filtered due to a policy violation or other errors. */
-  var filteredBidRate: js.UndefOr[Double] = js.undefined
+  var filteredBidRate: js.UndefOr[Double] = js.native
   /** Average QPS for hosted match operations. */
-  var hostedMatchStatusRate: js.UndefOr[js.Array[_]] = js.undefined
+  var hostedMatchStatusRate: js.UndefOr[js.Array[_]] = js.native
   /** The number of potential queries based on your pretargeting settings. */
-  var inventoryMatchRate: js.UndefOr[Double] = js.undefined
+  var inventoryMatchRate: js.UndefOr[Double] = js.native
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** The 50th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report. */
-  var latency50thPercentile: js.UndefOr[Double] = js.undefined
+  var latency50thPercentile: js.UndefOr[Double] = js.native
   /** The 85th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report. */
-  var latency85thPercentile: js.UndefOr[Double] = js.undefined
+  var latency85thPercentile: js.UndefOr[Double] = js.native
   /** The 95th percentile round trip latency(ms) as perceived from Google servers for the duration period covered by the report. */
-  var latency95thPercentile: js.UndefOr[Double] = js.undefined
+  var latency95thPercentile: js.UndefOr[Double] = js.native
   /** Rate of various quota account statuses per quota check. */
-  var noQuotaInRegion: js.UndefOr[Double] = js.undefined
+  var noQuotaInRegion: js.UndefOr[Double] = js.native
   /** Rate of various quota account statuses per quota check. */
-  var outOfQuota: js.UndefOr[Double] = js.undefined
+  var outOfQuota: js.UndefOr[Double] = js.native
   /** Average QPS for pixel match requests from clients. */
-  var pixelMatchRequests: js.UndefOr[Double] = js.undefined
+  var pixelMatchRequests: js.UndefOr[Double] = js.native
   /** Average QPS for pixel match responses from clients. */
-  var pixelMatchResponses: js.UndefOr[Double] = js.undefined
+  var pixelMatchResponses: js.UndefOr[Double] = js.native
   /** The configured quota limits for this account. */
-  var quotaConfiguredLimit: js.UndefOr[Double] = js.undefined
+  var quotaConfiguredLimit: js.UndefOr[Double] = js.native
   /** The throttled quota limits for this account. */
-  var quotaThrottledLimit: js.UndefOr[Double] = js.undefined
+  var quotaThrottledLimit: js.UndefOr[Double] = js.native
   /** The trading location of this data. */
-  var region: js.UndefOr[String] = js.undefined
+  var region: js.UndefOr[String] = js.native
   /** The number of properly formed bid responses received by our servers within the deadline. */
-  var successfulRequestRate: js.UndefOr[Double] = js.undefined
+  var successfulRequestRate: js.UndefOr[Double] = js.native
   /** The unix timestamp of the starting time of this performance data. */
-  var timestamp: js.UndefOr[String] = js.undefined
+  var timestamp: js.UndefOr[String] = js.native
   /** The number of bid responses that were unsuccessful due to timeouts, incorrect formatting, etc. */
-  var unsuccessfulRequestRate: js.UndefOr[Double] = js.undefined
+  var unsuccessfulRequestRate: js.UndefOr[Double] = js.native
 }
 
 object PerformanceReport {
   @scala.inline
-  def apply(
-    bidRate: js.UndefOr[Double] = js.undefined,
-    bidRequestRate: js.UndefOr[Double] = js.undefined,
-    calloutStatusRate: js.Array[_] = null,
-    cookieMatcherStatusRate: js.Array[_] = null,
-    creativeStatusRate: js.Array[_] = null,
-    filteredBidRate: js.UndefOr[Double] = js.undefined,
-    hostedMatchStatusRate: js.Array[_] = null,
-    inventoryMatchRate: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    latency50thPercentile: js.UndefOr[Double] = js.undefined,
-    latency85thPercentile: js.UndefOr[Double] = js.undefined,
-    latency95thPercentile: js.UndefOr[Double] = js.undefined,
-    noQuotaInRegion: js.UndefOr[Double] = js.undefined,
-    outOfQuota: js.UndefOr[Double] = js.undefined,
-    pixelMatchRequests: js.UndefOr[Double] = js.undefined,
-    pixelMatchResponses: js.UndefOr[Double] = js.undefined,
-    quotaConfiguredLimit: js.UndefOr[Double] = js.undefined,
-    quotaThrottledLimit: js.UndefOr[Double] = js.undefined,
-    region: String = null,
-    successfulRequestRate: js.UndefOr[Double] = js.undefined,
-    timestamp: String = null,
-    unsuccessfulRequestRate: js.UndefOr[Double] = js.undefined
-  ): PerformanceReport = {
+  def apply(): PerformanceReport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bidRate)) __obj.updateDynamic("bidRate")(bidRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bidRequestRate)) __obj.updateDynamic("bidRequestRate")(bidRequestRate.get.asInstanceOf[js.Any])
-    if (calloutStatusRate != null) __obj.updateDynamic("calloutStatusRate")(calloutStatusRate.asInstanceOf[js.Any])
-    if (cookieMatcherStatusRate != null) __obj.updateDynamic("cookieMatcherStatusRate")(cookieMatcherStatusRate.asInstanceOf[js.Any])
-    if (creativeStatusRate != null) __obj.updateDynamic("creativeStatusRate")(creativeStatusRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(filteredBidRate)) __obj.updateDynamic("filteredBidRate")(filteredBidRate.get.asInstanceOf[js.Any])
-    if (hostedMatchStatusRate != null) __obj.updateDynamic("hostedMatchStatusRate")(hostedMatchStatusRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(inventoryMatchRate)) __obj.updateDynamic("inventoryMatchRate")(inventoryMatchRate.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(latency50thPercentile)) __obj.updateDynamic("latency50thPercentile")(latency50thPercentile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latency85thPercentile)) __obj.updateDynamic("latency85thPercentile")(latency85thPercentile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latency95thPercentile)) __obj.updateDynamic("latency95thPercentile")(latency95thPercentile.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noQuotaInRegion)) __obj.updateDynamic("noQuotaInRegion")(noQuotaInRegion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(outOfQuota)) __obj.updateDynamic("outOfQuota")(outOfQuota.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelMatchRequests)) __obj.updateDynamic("pixelMatchRequests")(pixelMatchRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelMatchResponses)) __obj.updateDynamic("pixelMatchResponses")(pixelMatchResponses.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quotaConfiguredLimit)) __obj.updateDynamic("quotaConfiguredLimit")(quotaConfiguredLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quotaThrottledLimit)) __obj.updateDynamic("quotaThrottledLimit")(quotaThrottledLimit.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (!js.isUndefined(successfulRequestRate)) __obj.updateDynamic("successfulRequestRate")(successfulRequestRate.get.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(unsuccessfulRequestRate)) __obj.updateDynamic("unsuccessfulRequestRate")(unsuccessfulRequestRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformanceReport]
   }
+  @scala.inline
+  implicit class PerformanceReportOps[Self <: PerformanceReport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBidRate(value: Double): Self = this.set("bidRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidRate: Self = this.set("bidRate", js.undefined)
+    @scala.inline
+    def setBidRequestRate(value: Double): Self = this.set("bidRequestRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBidRequestRate: Self = this.set("bidRequestRate", js.undefined)
+    @scala.inline
+    def setCalloutStatusRateVarargs(value: js.Any*): Self = this.set("calloutStatusRate", js.Array(value :_*))
+    @scala.inline
+    def setCalloutStatusRate(value: js.Array[_]): Self = this.set("calloutStatusRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutStatusRate: Self = this.set("calloutStatusRate", js.undefined)
+    @scala.inline
+    def setCookieMatcherStatusRateVarargs(value: js.Any*): Self = this.set("cookieMatcherStatusRate", js.Array(value :_*))
+    @scala.inline
+    def setCookieMatcherStatusRate(value: js.Array[_]): Self = this.set("cookieMatcherStatusRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieMatcherStatusRate: Self = this.set("cookieMatcherStatusRate", js.undefined)
+    @scala.inline
+    def setCreativeStatusRateVarargs(value: js.Any*): Self = this.set("creativeStatusRate", js.Array(value :_*))
+    @scala.inline
+    def setCreativeStatusRate(value: js.Array[_]): Self = this.set("creativeStatusRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeStatusRate: Self = this.set("creativeStatusRate", js.undefined)
+    @scala.inline
+    def setFilteredBidRate(value: Double): Self = this.set("filteredBidRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilteredBidRate: Self = this.set("filteredBidRate", js.undefined)
+    @scala.inline
+    def setHostedMatchStatusRateVarargs(value: js.Any*): Self = this.set("hostedMatchStatusRate", js.Array(value :_*))
+    @scala.inline
+    def setHostedMatchStatusRate(value: js.Array[_]): Self = this.set("hostedMatchStatusRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedMatchStatusRate: Self = this.set("hostedMatchStatusRate", js.undefined)
+    @scala.inline
+    def setInventoryMatchRate(value: Double): Self = this.set("inventoryMatchRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryMatchRate: Self = this.set("inventoryMatchRate", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLatency50thPercentile(value: Double): Self = this.set("latency50thPercentile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency50thPercentile: Self = this.set("latency50thPercentile", js.undefined)
+    @scala.inline
+    def setLatency85thPercentile(value: Double): Self = this.set("latency85thPercentile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency85thPercentile: Self = this.set("latency85thPercentile", js.undefined)
+    @scala.inline
+    def setLatency95thPercentile(value: Double): Self = this.set("latency95thPercentile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency95thPercentile: Self = this.set("latency95thPercentile", js.undefined)
+    @scala.inline
+    def setNoQuotaInRegion(value: Double): Self = this.set("noQuotaInRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoQuotaInRegion: Self = this.set("noQuotaInRegion", js.undefined)
+    @scala.inline
+    def setOutOfQuota(value: Double): Self = this.set("outOfQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutOfQuota: Self = this.set("outOfQuota", js.undefined)
+    @scala.inline
+    def setPixelMatchRequests(value: Double): Self = this.set("pixelMatchRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelMatchRequests: Self = this.set("pixelMatchRequests", js.undefined)
+    @scala.inline
+    def setPixelMatchResponses(value: Double): Self = this.set("pixelMatchResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelMatchResponses: Self = this.set("pixelMatchResponses", js.undefined)
+    @scala.inline
+    def setQuotaConfiguredLimit(value: Double): Self = this.set("quotaConfiguredLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaConfiguredLimit: Self = this.set("quotaConfiguredLimit", js.undefined)
+    @scala.inline
+    def setQuotaThrottledLimit(value: Double): Self = this.set("quotaThrottledLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaThrottledLimit: Self = this.set("quotaThrottledLimit", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSuccessfulRequestRate(value: Double): Self = this.set("successfulRequestRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulRequestRate: Self = this.set("successfulRequestRate", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setUnsuccessfulRequestRate(value: Double): Self = this.set("unsuccessfulRequestRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsuccessfulRequestRate: Self = this.set("unsuccessfulRequestRate", js.undefined)
+  }
+  
 }
 

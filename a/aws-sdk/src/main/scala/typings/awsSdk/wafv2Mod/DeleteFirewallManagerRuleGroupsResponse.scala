@@ -14,10 +14,26 @@ trait DeleteFirewallManagerRuleGroupsResponse extends js.Object {
 
 object DeleteFirewallManagerRuleGroupsResponse {
   @scala.inline
-  def apply(NextWebACLLockToken: LockToken = null): DeleteFirewallManagerRuleGroupsResponse = {
+  def apply(): DeleteFirewallManagerRuleGroupsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextWebACLLockToken != null) __obj.updateDynamic("NextWebACLLockToken")(NextWebACLLockToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFirewallManagerRuleGroupsResponse]
   }
+  @scala.inline
+  implicit class DeleteFirewallManagerRuleGroupsResponseOps[Self <: DeleteFirewallManagerRuleGroupsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextWebACLLockToken(value: LockToken): Self = this.set("NextWebACLLockToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextWebACLLockToken: Self = this.set("NextWebACLLockToken", js.undefined)
+  }
+  
 }
 

@@ -24,10 +24,30 @@ trait DistributionOrderedCacheBehaviorLambdaFunctionAssociation extends js.Objec
 
 object DistributionOrderedCacheBehaviorLambdaFunctionAssociation {
   @scala.inline
-  def apply(eventType: String, lambdaArn: String, includeBody: js.UndefOr[Boolean] = js.undefined): DistributionOrderedCacheBehaviorLambdaFunctionAssociation = {
+  def apply(eventType: String, lambdaArn: String): DistributionOrderedCacheBehaviorLambdaFunctionAssociation = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], lambdaArn = lambdaArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeBody)) __obj.updateDynamic("includeBody")(includeBody.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOrderedCacheBehaviorLambdaFunctionAssociation]
   }
+  @scala.inline
+  implicit class DistributionOrderedCacheBehaviorLambdaFunctionAssociationOps[Self <: DistributionOrderedCacheBehaviorLambdaFunctionAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLambdaArn(value: String): Self = this.set("lambdaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeBody(value: Boolean): Self = this.set("includeBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeBody: Self = this.set("includeBody", js.undefined)
+  }
+  
 }
 

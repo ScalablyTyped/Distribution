@@ -23,11 +23,30 @@ trait SchemaCreateProjectRequest extends js.Object {
 
 object SchemaCreateProjectRequest {
   @scala.inline
-  def apply(parentId: String = null, title: String = null): SchemaCreateProjectRequest = {
+  def apply(): SchemaCreateProjectRequest = {
     val __obj = js.Dynamic.literal()
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateProjectRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateProjectRequestOps[Self <: SchemaCreateProjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

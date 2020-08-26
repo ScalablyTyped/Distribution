@@ -12,7 +12,7 @@ Makes React components pure.
 | Keywords           | react, pure, render, decorator |
 | # releases         | 1 |
 | # dependents       | 42 |
-| # downloads        | 364809 |
+| # downloads        | 346894 |
 | # stars            | 8 |
 
 ## Links

@@ -18,10 +18,30 @@ trait DescribeAcceleratorOfferingsRequest extends js.Object {
 
 object DescribeAcceleratorOfferingsRequest {
   @scala.inline
-  def apply(locationType: LocationType, acceleratorTypes: AcceleratorTypeNameList = null): DescribeAcceleratorOfferingsRequest = {
+  def apply(locationType: LocationType): DescribeAcceleratorOfferingsRequest = {
     val __obj = js.Dynamic.literal(locationType = locationType.asInstanceOf[js.Any])
-    if (acceleratorTypes != null) __obj.updateDynamic("acceleratorTypes")(acceleratorTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAcceleratorOfferingsRequest]
   }
+  @scala.inline
+  implicit class DescribeAcceleratorOfferingsRequestOps[Self <: DescribeAcceleratorOfferingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocationType(value: LocationType): Self = this.set("locationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceleratorTypesVarargs(value: AcceleratorTypeName*): Self = this.set("acceleratorTypes", js.Array(value :_*))
+    @scala.inline
+    def setAcceleratorTypes(value: AcceleratorTypeNameList): Self = this.set("acceleratorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorTypes: Self = this.set("acceleratorTypes", js.undefined)
+  }
+  
 }
 

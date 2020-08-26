@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MountDatastore
   extends Datastore[js.Any] {
-  var mounts: js.Array[Mount[_]]
+  var mounts: js.Array[Mount[_]] = js.native
 }
 
 @JSImport("datastore-core", "MountDatastore")

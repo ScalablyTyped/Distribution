@@ -49,29 +49,197 @@ class CurrencyPipe protected () extends PipeTransform {
     * See [Setting your app locale](guide/i18n#setting-up-the-locale-of-your-app).
     */
   def transform(value: js.Any): String | Null = js.native
-  /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: js.UndefOr[scala.Nothing],
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: js.UndefOr[scala.Nothing],
+    digitsInfo: String
+  ): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: js.UndefOr[scala.Nothing],
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
+  def transform(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: String): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: String,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  def transform(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: String, digitsInfo: String): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: String,
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
+  def transform(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: Boolean): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: Boolean,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  def transform(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: Boolean, digitsInfo: String): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: Boolean,
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
   def transform(value: js.Any, currencyCode: String): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: String,
+    display: js.UndefOr[scala.Nothing],
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  def transform(value: js.Any, currencyCode: String, display: js.UndefOr[scala.Nothing], digitsInfo: String): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: String,
+    display: js.UndefOr[scala.Nothing],
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
   def transform(value: js.Any, currencyCode: String, display: String): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: String,
+    display: String,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
   def transform(value: js.Any, currencyCode: String, display: String, digitsInfo: String): String | Null = js.native
   def transform(value: js.Any, currencyCode: String, display: String, digitsInfo: String, locale: String): String | Null = js.native
   def transform(value: js.Any, currencyCode: String, display: Boolean): String | Null = js.native
+  def transform(
+    value: js.Any,
+    currencyCode: String,
+    display: Boolean,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
   def transform(value: js.Any, currencyCode: String, display: Boolean, digitsInfo: String): String | Null = js.native
   def transform(value: js.Any, currencyCode: String, display: Boolean, digitsInfo: String, locale: String): String | Null = js.native
   @JSName("transform")
+  def transform_code(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: code): String | Null = js.native
+  @JSName("transform")
+  def transform_code(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: code,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  @JSName("transform")
+  def transform_code(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: code, digitsInfo: String): String | Null = js.native
+  @JSName("transform")
+  def transform_code(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: code,
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
+  @JSName("transform")
   def transform_code(value: js.Any, currencyCode: String, display: code): String | Null = js.native
+  @JSName("transform")
+  def transform_code(
+    value: js.Any,
+    currencyCode: String,
+    display: code,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
   @JSName("transform")
   def transform_code(value: js.Any, currencyCode: String, display: code, digitsInfo: String): String | Null = js.native
   @JSName("transform")
   def transform_code(value: js.Any, currencyCode: String, display: code, digitsInfo: String, locale: String): String | Null = js.native
   @JSName("transform")
+  def transform_symbol(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: symbol): String | Null = js.native
+  @JSName("transform")
+  def transform_symbol(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: symbol,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  @JSName("transform")
+  def transform_symbol(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: symbol, digitsInfo: String): String | Null = js.native
+  @JSName("transform")
+  def transform_symbol(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: symbol,
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
+  @JSName("transform")
   def transform_symbol(value: js.Any, currencyCode: String, display: symbol): String | Null = js.native
+  @JSName("transform")
+  def transform_symbol(
+    value: js.Any,
+    currencyCode: String,
+    display: symbol,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
   @JSName("transform")
   def transform_symbol(value: js.Any, currencyCode: String, display: symbol, digitsInfo: String): String | Null = js.native
   @JSName("transform")
   def transform_symbol(value: js.Any, currencyCode: String, display: symbol, digitsInfo: String, locale: String): String | Null = js.native
   @JSName("transform")
+  def transform_symbolnarrow(value: js.Any, currencyCode: js.UndefOr[scala.Nothing], display: `symbol-narrow`): String | Null = js.native
+  @JSName("transform")
+  def transform_symbolnarrow(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: `symbol-narrow`,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  @JSName("transform")
+  def transform_symbolnarrow(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: `symbol-narrow`,
+    digitsInfo: String
+  ): String | Null = js.native
+  @JSName("transform")
+  def transform_symbolnarrow(
+    value: js.Any,
+    currencyCode: js.UndefOr[scala.Nothing],
+    display: `symbol-narrow`,
+    digitsInfo: String,
+    locale: String
+  ): String | Null = js.native
+  @JSName("transform")
   def transform_symbolnarrow(value: js.Any, currencyCode: String, display: `symbol-narrow`): String | Null = js.native
+  @JSName("transform")
+  def transform_symbolnarrow(
+    value: js.Any,
+    currencyCode: String,
+    display: `symbol-narrow`,
+    digitsInfo: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
   @JSName("transform")
   def transform_symbolnarrow(value: js.Any, currencyCode: String, display: `symbol-narrow`, digitsInfo: String): String | Null = js.native
   @JSName("transform")

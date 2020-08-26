@@ -31,6 +31,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaVpnGatewayAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaVpnGatewayAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnGatewayAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceVpngatewaysAggregatedlist): GaxiosPromise[SchemaVpnGatewayAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceVpngatewaysAggregatedlist,
@@ -64,6 +65,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceVpngatewaysDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceVpngatewaysDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -94,6 +96,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVpnGateway] = js.native
   def get(callback: BodyResponseCallback[SchemaVpnGateway]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnGateway] = js.native
   def get(params: ParamsResourceVpngatewaysGet): GaxiosPromise[SchemaVpnGateway] = js.native
   def get(params: ParamsResourceVpngatewaysGet, callback: BodyResponseCallback[SchemaVpnGateway]): Unit = js.native
   def get(
@@ -123,6 +126,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def getStatus(): GaxiosPromise[SchemaVpnGatewaysGetStatusResponse] = js.native
   def getStatus(callback: BodyResponseCallback[SchemaVpnGatewaysGetStatusResponse]): Unit = js.native
+  def getStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnGatewaysGetStatusResponse] = js.native
   def getStatus(params: ParamsResourceVpngatewaysGetstatus): GaxiosPromise[SchemaVpnGatewaysGetStatusResponse] = js.native
   def getStatus(
     params: ParamsResourceVpngatewaysGetstatus,
@@ -157,6 +161,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceVpngatewaysInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceVpngatewaysInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -190,6 +195,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVpnGatewayList] = js.native
   def list(callback: BodyResponseCallback[SchemaVpnGatewayList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnGatewayList] = js.native
   def list(params: ParamsResourceVpngatewaysList): GaxiosPromise[SchemaVpnGatewayList] = js.native
   def list(params: ParamsResourceVpngatewaysList, callback: BodyResponseCallback[SchemaVpnGatewayList]): Unit = js.native
   def list(
@@ -222,6 +228,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceVpngatewaysSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceVpngatewaysSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -252,6 +259,7 @@ class ResourceVpngateways protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceVpngatewaysTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceVpngatewaysTestiampermissions,

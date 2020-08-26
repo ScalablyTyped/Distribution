@@ -25,16 +25,14 @@ abstract class ColumnGrid protected () extends Grid {
   var model_FColumnGrid: IModel = js.native
   def columns: IList[GridColumn] = js.native
   def numberOfRows: Double = js.native
-  def numberOfRows(newValue: Double): js.Any = js.native
+  def numberOfRows_=(newValue: Double): Unit = js.native
   def showEmptyRows: Boolean = js.native
-  def showEmptyRows(newValue: Boolean): js.Any = js.native
-  def tooltipPage(): js.Any = js.native
-  def tooltipPage(newValue: IPage): js.Any = js.native
+  def showEmptyRows_=(newValue: Boolean): Unit = js.native
+  def tooltipPage: IPage | Null = js.native
   def tooltipPageQualifiedName: String | Null = js.native
-  @JSName("tooltipPage")
-  def tooltipPage_Union: IPage | Null = js.native
+  def tooltipPage_=(newValue: IPage | Null): Unit = js.native
   def widthUnit: UnitEnum = js.native
-  def widthUnit(newValue: UnitEnum): js.Any = js.native
+  def widthUnit_=(newValue: UnitEnum): Unit = js.native
 }
 
 /* static members */

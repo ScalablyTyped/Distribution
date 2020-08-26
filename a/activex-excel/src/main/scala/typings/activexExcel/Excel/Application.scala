@@ -334,6 +334,7 @@ trait Application extends js.Object {
   def CheckAbort(): Unit = js.native
   def CheckAbort(KeepAbort: Boolean): Unit = js.native
   def CheckSpelling(Word: String): Boolean = js.native
+  def CheckSpelling(Word: String, CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean): Boolean = js.native
   def CheckSpelling(Word: String, CustomDictionary: String): Boolean = js.native
   def CheckSpelling(Word: String, CustomDictionary: String, IgnoreUppercase: Boolean): Boolean = js.native
   def ClipboardFormats(Index: Double): XlClipboardFormat = js.native
@@ -343,7 +344,34 @@ trait Application extends js.Object {
   def CommandBars(Index: String): CommandBar = js.native
   def CommandBars(Index: Double): CommandBar = js.native
   def ConvertFormula(Formula: String, FromReferenceStyle: XlReferenceStyle): String = js.native
+  def ConvertFormula(
+    Formula: String,
+    FromReferenceStyle: XlReferenceStyle,
+    ToReferenceStyle: js.UndefOr[scala.Nothing],
+    ToAbsolute: js.UndefOr[scala.Nothing],
+    RelativeTo: Range
+  ): String = js.native
+  def ConvertFormula(
+    Formula: String,
+    FromReferenceStyle: XlReferenceStyle,
+    ToReferenceStyle: js.UndefOr[scala.Nothing],
+    ToAbsolute: XlReferenceType
+  ): String = js.native
+  def ConvertFormula(
+    Formula: String,
+    FromReferenceStyle: XlReferenceStyle,
+    ToReferenceStyle: js.UndefOr[scala.Nothing],
+    ToAbsolute: XlReferenceType,
+    RelativeTo: Range
+  ): String = js.native
   def ConvertFormula(Formula: String, FromReferenceStyle: XlReferenceStyle, ToReferenceStyle: XlReferenceStyle): String = js.native
+  def ConvertFormula(
+    Formula: String,
+    FromReferenceStyle: XlReferenceStyle,
+    ToReferenceStyle: XlReferenceStyle,
+    ToAbsolute: js.UndefOr[scala.Nothing],
+    RelativeTo: Range
+  ): String = js.native
   def ConvertFormula(
     Formula: String,
     FromReferenceStyle: XlReferenceStyle,
@@ -372,8 +400,24 @@ trait Application extends js.Object {
   def DisplayXMLSourcePane(XmlMap: XmlMap): Unit = js.native
   def DoubleClick(): Unit = js.native
   def Dummy1(): js.Any = js.native
+  def Dummy1(
+    Arg1: js.UndefOr[scala.Nothing],
+    Arg2: js.UndefOr[scala.Nothing],
+    Arg3: js.UndefOr[scala.Nothing],
+    Arg4: js.Any
+  ): js.Any = js.native
+  def Dummy1(Arg1: js.UndefOr[scala.Nothing], Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.UndefOr[scala.Nothing], Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.UndefOr[scala.Nothing], Arg2: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.UndefOr[scala.Nothing], Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.UndefOr[scala.Nothing], Arg2: js.Any, Arg3: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.UndefOr[scala.Nothing], Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Dummy1(Arg1: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.Any, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Dummy1(Arg1: js.Any, Arg2: js.Any): js.Any = js.native
+  def Dummy1(Arg1: js.Any, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): js.Any = js.native
   def Dummy1(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any): js.Any = js.native
   def Dummy1(Arg1: js.Any, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): js.Any = js.native
   def Dummy10(): Boolean = js.native
@@ -471,6 +515,7 @@ trait Application extends js.Object {
   def Excel4MacroSheets(Index: Double): Sheet = js.native
   def ExecuteExcel4Macro(String: String): js.Any = js.native
   def FileConverters(): SafeArray[_] = js.native
+  def FileConverters(Index1: js.UndefOr[scala.Nothing], Index2: String): SafeArray[_] = js.native
   def FileConverters(Index1: String): SafeArray[_] = js.native
   def FileConverters(Index1: String, Index2: String): SafeArray[_] = js.native
   def FileDialog(fileDialogType: MsoFileDialogType): typings.activexOffice.Office.FileDialog = js.native
@@ -480,9 +525,133 @@ trait Application extends js.Object {
   def GetCustomListNum(ListArray: SafeArray[String]): Double = js.native
   /** @param ButtonText Macintosh only */
   def GetOpenFilename(): String = js.native
+  def GetOpenFilename(FileFilter: js.UndefOr[scala.Nothing], FilterIndex: js.UndefOr[scala.Nothing], Title: String): String = js.native
+  def GetOpenFilename(FileFilter: js.UndefOr[scala.Nothing], FilterIndex: Double): String = js.native
+  def GetOpenFilename(FileFilter: js.UndefOr[scala.Nothing], FilterIndex: Double, Title: String): String = js.native
   def GetOpenFilename(FileFilter: String): String = js.native
+  def GetOpenFilename(FileFilter: String, FilterIndex: js.UndefOr[scala.Nothing], Title: String): String = js.native
   def GetOpenFilename(FileFilter: String, FilterIndex: Double): String = js.native
   def GetOpenFilename(FileFilter: String, FilterIndex: Double, Title: String): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String,
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String,
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: Double,
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: Double,
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: Double,
+    Title: String,
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: Double,
+    Title: String,
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String,
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String,
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: Double,
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: Double,
+    Title: js.UndefOr[scala.Nothing],
+    ButtonText: Null,
+    MultiSelect: `false`
+  ): String = js.native
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
+    FileFilter: String,
+    FilterIndex: Double,
+    Title: String,
+    ButtonText: js.UndefOr[scala.Nothing],
+    MultiSelect: `false`
+  ): String = js.native
   @JSName("GetOpenFilename")
   def GetOpenFilename_false(FileFilter: String, FilterIndex: Double, Title: String, ButtonText: Null, MultiSelect: `false`): String = js.native
   /** @param ButtonText Macintosh only */
@@ -506,16 +675,53 @@ trait Application extends js.Object {
   def GetPhonetic(Text: String): String = js.native
   /** @param ButtonText Macintosh only */
   def GetSaveAsFilename(): String = js.native
+  def GetSaveAsFilename(
+    InitialFilename: js.UndefOr[scala.Nothing],
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String
+  ): String = js.native
+  def GetSaveAsFilename(
+    InitialFilename: js.UndefOr[scala.Nothing],
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: Double
+  ): String = js.native
+  def GetSaveAsFilename(
+    InitialFilename: js.UndefOr[scala.Nothing],
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: Double,
+    Title: String
+  ): String = js.native
+  def GetSaveAsFilename(InitialFilename: js.UndefOr[scala.Nothing], FileFilter: String): String = js.native
+  def GetSaveAsFilename(
+    InitialFilename: js.UndefOr[scala.Nothing],
+    FileFilter: String,
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String
+  ): String = js.native
+  def GetSaveAsFilename(InitialFilename: js.UndefOr[scala.Nothing], FileFilter: String, FilterIndex: Double): String = js.native
+  def GetSaveAsFilename(InitialFilename: js.UndefOr[scala.Nothing], FileFilter: String, FilterIndex: Double, Title: String): String = js.native
   def GetSaveAsFilename(InitialFilename: String): String = js.native
+  def GetSaveAsFilename(
+    InitialFilename: String,
+    FileFilter: js.UndefOr[scala.Nothing],
+    FilterIndex: js.UndefOr[scala.Nothing],
+    Title: String
+  ): String = js.native
+  def GetSaveAsFilename(InitialFilename: String, FileFilter: js.UndefOr[scala.Nothing], FilterIndex: Double): String = js.native
+  def GetSaveAsFilename(InitialFilename: String, FileFilter: js.UndefOr[scala.Nothing], FilterIndex: Double, Title: String): String = js.native
   def GetSaveAsFilename(InitialFilename: String, FileFilter: String): String = js.native
+  def GetSaveAsFilename(InitialFilename: String, FileFilter: String, FilterIndex: js.UndefOr[scala.Nothing], Title: String): String = js.native
   def GetSaveAsFilename(InitialFilename: String, FileFilter: String, FilterIndex: Double): String = js.native
   def GetSaveAsFilename(InitialFilename: String, FileFilter: String, FilterIndex: Double, Title: String): String = js.native
   def Goto(): Unit = js.native
+  def Goto(Reference: js.UndefOr[scala.Nothing], Scroll: Boolean): Unit = js.native
   def Goto(Reference: String): Unit = js.native
   def Goto(Reference: String, Scroll: Boolean): Unit = js.native
   def Goto(Reference: Range): Unit = js.native
   def Goto(Reference: Range, Scroll: Boolean): Unit = js.native
   def Help(): Unit = js.native
+  def Help(HelpFile: js.UndefOr[scala.Nothing], HelpContextID: Double): Unit = js.native
   def Help(HelpFile: String): Unit = js.native
   def Help(HelpFile: String, HelpContextID: Double): Unit = js.native
   def InchesToPoints(Inches: Double): Double = js.native
@@ -577,7 +783,11 @@ trait Application extends js.Object {
   ): Unit = js.native
   def MailLogoff(): Unit = js.native
   def MailLogon(): Unit = js.native
+  def MailLogon(Name: js.UndefOr[scala.Nothing], Password: js.UndefOr[scala.Nothing], DownloadNewMail: Boolean): Unit = js.native
+  def MailLogon(Name: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
+  def MailLogon(Name: js.UndefOr[scala.Nothing], Password: String, DownloadNewMail: Boolean): Unit = js.native
   def MailLogon(Name: String): Unit = js.native
+  def MailLogon(Name: String, Password: js.UndefOr[scala.Nothing], DownloadNewMail: Boolean): Unit = js.native
   def MailLogon(Name: String, Password: String): Unit = js.native
   def MailLogon(Name: String, Password: String, DownloadNewMail: Boolean): Unit = js.native
   def MenuBars(Index: js.Any): MenuBar = js.native
@@ -593,6 +803,7 @@ trait Application extends js.Object {
   def OnKey(Key: String, Procedure: String): Unit = js.native
   def OnRepeat(Text: String, Procedure: String): Unit = js.native
   def OnTime(EarliestTime: js.Any, Procedure: String): Unit = js.native
+  def OnTime(EarliestTime: js.Any, Procedure: String, LatestTime: js.UndefOr[scala.Nothing], Schedule: Boolean): Unit = js.native
   def OnTime(EarliestTime: js.Any, Procedure: String, LatestTime: js.Any): Unit = js.native
   def OnTime(EarliestTime: js.Any, Procedure: String, LatestTime: js.Any, Schedule: Boolean): Unit = js.native
   def OnUndo(Text: String, Procedure: String): Unit = js.native
@@ -619,6 +830,7 @@ trait Application extends js.Object {
   def RecordMacro(BasicCode: _empty, XlmCode: _empty): Unit = js.native
   def RegisterXLL(Filename: String): Boolean = js.native
   def RegisteredFunctions(): SafeArray[_] | Null = js.native
+  def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: String): SafeArray[_] | Null = js.native
   def RegisteredFunctions(Index1: String): SafeArray[_] | Null = js.native
   def RegisteredFunctions(Index1: String, Index2: String): SafeArray[_] | Null = js.native
   def Repeat(): Unit = js.native
@@ -627,7 +839,7 @@ trait Application extends js.Object {
   def Rows(RowIndex: Double): Range = js.native
   def Rows(RowIndex: Double, ColumnIndex: Double): Range = js.native
   def Run(
-    Macro: js.UndefOr[Double | Range | String],
+    Macro: js.UndefOr[String | Range | Double],
     Arg1: js.UndefOr[js.Any],
     Arg2: js.UndefOr[js.Any],
     Arg3: js.UndefOr[js.Any],
@@ -667,6 +879,7 @@ trait Application extends js.Object {
   def SendKeys(Keys: String): Unit = js.native
   def SendKeys(Keys: String, Wait: Boolean): Unit = js.native
   def SetDefaultChart(): Unit = js.native
+  def SetDefaultChart(FormatName: js.UndefOr[scala.Nothing], Gallery: js.Any): Unit = js.native
   def SetDefaultChart(FormatName: js.Any): Unit = js.native
   def SetDefaultChart(FormatName: js.Any, Gallery: js.Any): Unit = js.native
   def SharePointVersion(bstrUrl: String): Double = js.native

@@ -31,6 +31,7 @@ class ResourceProjectsBrokersInstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
   def get(params: ParamsResourceProjectsBrokersInstancesGet): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ServiceInstance] = js.native
   def get(
     params: ParamsResourceProjectsBrokersInstancesGet,
@@ -65,6 +66,7 @@ class ResourceProjectsBrokersInstances protected () extends js.Object {
     */
   def getLast_operation(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1Operation]): Unit = js.native
+  def getLast_operation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(params: ParamsResourceProjectsBrokersInstancesGetlastOperation): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1Operation] = js.native
   def getLast_operation(
     params: ParamsResourceProjectsBrokersInstancesGetlastOperation,
@@ -98,6 +100,7 @@ class ResourceProjectsBrokersInstances protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
   def list(params: ParamsResourceProjectsBrokersInstancesList): GaxiosPromise[SchemaGoogleCloudServicebrokerV1beta1ListServiceInstancesResponse] = js.native
   def list(
     params: ParamsResourceProjectsBrokersInstancesList,

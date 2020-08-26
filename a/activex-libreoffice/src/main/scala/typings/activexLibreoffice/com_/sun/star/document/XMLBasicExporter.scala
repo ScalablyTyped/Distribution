@@ -16,10 +16,11 @@ import scala.scalajs.js.annotation._
   * data should be exported. After that, the export is started by calling the {@link XFilter.filter()} method.
   * @since OOo 2.0
   */
+@js.native
 trait XMLBasicExporter
   extends XExporter
      with XFilter {
-  def createWithHandler(DocumentHandler: XDocumentHandler): Unit
+  def createWithHandler(DocumentHandler: XDocumentHandler): Unit = js.native
 }
 
 object XMLBasicExporter {
@@ -36,5 +37,20 @@ object XMLBasicExporter {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), createWithHandler = js.Any.fromFunction1(createWithHandler), filter = js.Any.fromFunction1(filter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setSourceDocument = js.Any.fromFunction1(setSourceDocument))
     __obj.asInstanceOf[XMLBasicExporter]
   }
+  @scala.inline
+  implicit class XMLBasicExporterOps[Self <: XMLBasicExporter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateWithHandler(value: XDocumentHandler => Unit): Self = this.set("createWithHandler", js.Any.fromFunction1(value))
+  }
+  
 }
 

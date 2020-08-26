@@ -5,87 +5,154 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContainerCreateOptions extends js.Object {
-  var AttachStderr: js.UndefOr[Boolean] = js.undefined
-  var AttachStdin: js.UndefOr[Boolean] = js.undefined
-  var AttachStdout: js.UndefOr[Boolean] = js.undefined
-  var Cmd: js.UndefOr[js.Array[String]] = js.undefined
-  var Domainname: js.UndefOr[String] = js.undefined
-  var Entrypoint: js.UndefOr[String | js.Array[String]] = js.undefined
-  var Env: js.UndefOr[js.Array[String]] = js.undefined
-  var ExposedPorts: js.UndefOr[StringDictionary[js.Object]] = js.undefined
-  var HostConfig: js.UndefOr[typings.dockerode.mod.HostConfig] = js.undefined
-  var Hostname: js.UndefOr[String] = js.undefined
-  var Image: js.UndefOr[String] = js.undefined
-  var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
-  var MacAddress: js.UndefOr[Boolean] = js.undefined
-  var NetworkDisabled: js.UndefOr[Boolean] = js.undefined
-  var NetworkingConfig: js.UndefOr[typings.dockerode.anon.EndpointsConfig] = js.undefined
-  var OpenStdin: js.UndefOr[Boolean] = js.undefined
-  var StdinOnce: js.UndefOr[Boolean] = js.undefined
-  var StopSignal: js.UndefOr[String] = js.undefined
-  var StopTimeout: js.UndefOr[Double] = js.undefined
-  var Tty: js.UndefOr[Boolean] = js.undefined
-  var User: js.UndefOr[String] = js.undefined
-  var Volumes: js.UndefOr[StringDictionary[js.Object]] = js.undefined
-  var WorkingDir: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
+  var AttachStderr: js.UndefOr[Boolean] = js.native
+  var AttachStdin: js.UndefOr[Boolean] = js.native
+  var AttachStdout: js.UndefOr[Boolean] = js.native
+  var Cmd: js.UndefOr[js.Array[String]] = js.native
+  var Domainname: js.UndefOr[String] = js.native
+  var Entrypoint: js.UndefOr[String | js.Array[String]] = js.native
+  var Env: js.UndefOr[js.Array[String]] = js.native
+  var ExposedPorts: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var HostConfig: js.UndefOr[typings.dockerode.mod.HostConfig] = js.native
+  var Hostname: js.UndefOr[String] = js.native
+  var Image: js.UndefOr[String] = js.native
+  var Labels: js.UndefOr[StringDictionary[String]] = js.native
+  var MacAddress: js.UndefOr[Boolean] = js.native
+  var NetworkDisabled: js.UndefOr[Boolean] = js.native
+  var NetworkingConfig: js.UndefOr[typings.dockerode.anon.EndpointsConfig] = js.native
+  var OpenStdin: js.UndefOr[Boolean] = js.native
+  var StdinOnce: js.UndefOr[Boolean] = js.native
+  var StopSignal: js.UndefOr[String] = js.native
+  var StopTimeout: js.UndefOr[Double] = js.native
+  var Tty: js.UndefOr[Boolean] = js.native
+  var User: js.UndefOr[String] = js.native
+  var Volumes: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var WorkingDir: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
 }
 
 object ContainerCreateOptions {
   @scala.inline
-  def apply(
-    AttachStderr: js.UndefOr[Boolean] = js.undefined,
-    AttachStdin: js.UndefOr[Boolean] = js.undefined,
-    AttachStdout: js.UndefOr[Boolean] = js.undefined,
-    Cmd: js.Array[String] = null,
-    Domainname: String = null,
-    Entrypoint: String | js.Array[String] = null,
-    Env: js.Array[String] = null,
-    ExposedPorts: StringDictionary[js.Object] = null,
-    HostConfig: HostConfig = null,
-    Hostname: String = null,
-    Image: String = null,
-    Labels: StringDictionary[String] = null,
-    MacAddress: js.UndefOr[Boolean] = js.undefined,
-    NetworkDisabled: js.UndefOr[Boolean] = js.undefined,
-    NetworkingConfig: typings.dockerode.anon.EndpointsConfig = null,
-    OpenStdin: js.UndefOr[Boolean] = js.undefined,
-    StdinOnce: js.UndefOr[Boolean] = js.undefined,
-    StopSignal: String = null,
-    StopTimeout: js.UndefOr[Double] = js.undefined,
-    Tty: js.UndefOr[Boolean] = js.undefined,
-    User: String = null,
-    Volumes: StringDictionary[js.Object] = null,
-    WorkingDir: String = null,
-    name: String = null
-  ): ContainerCreateOptions = {
+  def apply(): ContainerCreateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AttachStderr)) __obj.updateDynamic("AttachStderr")(AttachStderr.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttachStdin)) __obj.updateDynamic("AttachStdin")(AttachStdin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttachStdout)) __obj.updateDynamic("AttachStdout")(AttachStdout.get.asInstanceOf[js.Any])
-    if (Cmd != null) __obj.updateDynamic("Cmd")(Cmd.asInstanceOf[js.Any])
-    if (Domainname != null) __obj.updateDynamic("Domainname")(Domainname.asInstanceOf[js.Any])
-    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint.asInstanceOf[js.Any])
-    if (Env != null) __obj.updateDynamic("Env")(Env.asInstanceOf[js.Any])
-    if (ExposedPorts != null) __obj.updateDynamic("ExposedPorts")(ExposedPorts.asInstanceOf[js.Any])
-    if (HostConfig != null) __obj.updateDynamic("HostConfig")(HostConfig.asInstanceOf[js.Any])
-    if (Hostname != null) __obj.updateDynamic("Hostname")(Hostname.asInstanceOf[js.Any])
-    if (Image != null) __obj.updateDynamic("Image")(Image.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(MacAddress)) __obj.updateDynamic("MacAddress")(MacAddress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NetworkDisabled)) __obj.updateDynamic("NetworkDisabled")(NetworkDisabled.get.asInstanceOf[js.Any])
-    if (NetworkingConfig != null) __obj.updateDynamic("NetworkingConfig")(NetworkingConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(OpenStdin)) __obj.updateDynamic("OpenStdin")(OpenStdin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(StdinOnce)) __obj.updateDynamic("StdinOnce")(StdinOnce.get.asInstanceOf[js.Any])
-    if (StopSignal != null) __obj.updateDynamic("StopSignal")(StopSignal.asInstanceOf[js.Any])
-    if (!js.isUndefined(StopTimeout)) __obj.updateDynamic("StopTimeout")(StopTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Tty)) __obj.updateDynamic("Tty")(Tty.get.asInstanceOf[js.Any])
-    if (User != null) __obj.updateDynamic("User")(User.asInstanceOf[js.Any])
-    if (Volumes != null) __obj.updateDynamic("Volumes")(Volumes.asInstanceOf[js.Any])
-    if (WorkingDir != null) __obj.updateDynamic("WorkingDir")(WorkingDir.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerCreateOptions]
   }
+  @scala.inline
+  implicit class ContainerCreateOptionsOps[Self <: ContainerCreateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachStderr(value: Boolean): Self = this.set("AttachStderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachStderr: Self = this.set("AttachStderr", js.undefined)
+    @scala.inline
+    def setAttachStdin(value: Boolean): Self = this.set("AttachStdin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachStdin: Self = this.set("AttachStdin", js.undefined)
+    @scala.inline
+    def setAttachStdout(value: Boolean): Self = this.set("AttachStdout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachStdout: Self = this.set("AttachStdout", js.undefined)
+    @scala.inline
+    def setCmdVarargs(value: String*): Self = this.set("Cmd", js.Array(value :_*))
+    @scala.inline
+    def setCmd(value: js.Array[String]): Self = this.set("Cmd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCmd: Self = this.set("Cmd", js.undefined)
+    @scala.inline
+    def setDomainname(value: String): Self = this.set("Domainname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainname: Self = this.set("Domainname", js.undefined)
+    @scala.inline
+    def setEntrypointVarargs(value: String*): Self = this.set("Entrypoint", js.Array(value :_*))
+    @scala.inline
+    def setEntrypoint(value: String | js.Array[String]): Self = this.set("Entrypoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntrypoint: Self = this.set("Entrypoint", js.undefined)
+    @scala.inline
+    def setEnvVarargs(value: String*): Self = this.set("Env", js.Array(value :_*))
+    @scala.inline
+    def setEnv(value: js.Array[String]): Self = this.set("Env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("Env", js.undefined)
+    @scala.inline
+    def setExposedPorts(value: StringDictionary[js.Object]): Self = this.set("ExposedPorts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposedPorts: Self = this.set("ExposedPorts", js.undefined)
+    @scala.inline
+    def setHostConfig(value: HostConfig): Self = this.set("HostConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostConfig: Self = this.set("HostConfig", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("Hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("Hostname", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("Image", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setMacAddress(value: Boolean): Self = this.set("MacAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacAddress: Self = this.set("MacAddress", js.undefined)
+    @scala.inline
+    def setNetworkDisabled(value: Boolean): Self = this.set("NetworkDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDisabled: Self = this.set("NetworkDisabled", js.undefined)
+    @scala.inline
+    def setNetworkingConfig(value: typings.dockerode.anon.EndpointsConfig): Self = this.set("NetworkingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkingConfig: Self = this.set("NetworkingConfig", js.undefined)
+    @scala.inline
+    def setOpenStdin(value: Boolean): Self = this.set("OpenStdin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenStdin: Self = this.set("OpenStdin", js.undefined)
+    @scala.inline
+    def setStdinOnce(value: Boolean): Self = this.set("StdinOnce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdinOnce: Self = this.set("StdinOnce", js.undefined)
+    @scala.inline
+    def setStopSignal(value: String): Self = this.set("StopSignal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopSignal: Self = this.set("StopSignal", js.undefined)
+    @scala.inline
+    def setStopTimeout(value: Double): Self = this.set("StopTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopTimeout: Self = this.set("StopTimeout", js.undefined)
+    @scala.inline
+    def setTty(value: Boolean): Self = this.set("Tty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTty: Self = this.set("Tty", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("User", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("User", js.undefined)
+    @scala.inline
+    def setVolumes(value: StringDictionary[js.Object]): Self = this.set("Volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("Volumes", js.undefined)
+    @scala.inline
+    def setWorkingDir(value: String): Self = this.set("WorkingDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingDir: Self = this.set("WorkingDir", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

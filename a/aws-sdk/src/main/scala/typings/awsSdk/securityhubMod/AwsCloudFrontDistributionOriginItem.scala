@@ -22,12 +22,34 @@ trait AwsCloudFrontDistributionOriginItem extends js.Object {
 
 object AwsCloudFrontDistributionOriginItem {
   @scala.inline
-  def apply(DomainName: NonEmptyString = null, Id: NonEmptyString = null, OriginPath: NonEmptyString = null): AwsCloudFrontDistributionOriginItem = {
+  def apply(): AwsCloudFrontDistributionOriginItem = {
     val __obj = js.Dynamic.literal()
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (OriginPath != null) __obj.updateDynamic("OriginPath")(OriginPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginItem]
   }
+  @scala.inline
+  implicit class AwsCloudFrontDistributionOriginItemOps[Self <: AwsCloudFrontDistributionOriginItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: NonEmptyString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setOriginPath(value: NonEmptyString): Self = this.set("OriginPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginPath: Self = this.set("OriginPath", js.undefined)
+  }
+  
 }
 

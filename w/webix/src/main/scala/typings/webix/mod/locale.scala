@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait locale extends js.Object {
-  var pager: js.Any
+  var pager: js.Any = js.native
 }
 
 @JSImport("webix", "locale")

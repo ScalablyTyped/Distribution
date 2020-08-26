@@ -23,8 +23,6 @@ class CompositeDisposable protected () extends DisposableLike {
   def clear(): Unit = js.native
   /** Alias to CompositeDisposable::remove. */
   def delete(disposable: DisposableLike): Unit = js.native
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /** Remove a previously added disposable. */
   def remove(disposable: DisposableLike): Unit = js.native
 }

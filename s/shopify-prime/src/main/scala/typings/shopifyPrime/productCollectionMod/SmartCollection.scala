@@ -1,16 +1,16 @@
 package typings.shopifyPrime.productCollectionMod
 
-import typings.shopifyPrime.anon.Attachment
 import typings.shopifyPrime.anon.Column
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SmartCollection extends ProductCollection {
   /**
     * If false, products must match all of the rules to be included in the collection. If true, products can only match one of the rules.
     */
-  var disjunctive: js.UndefOr[Boolean] = js.undefined
+  var disjunctive: js.UndefOr[Boolean] = js.native
   /**
     * The list of rules that define what products go into the smart collection. Each rule has the following properties:
     *
@@ -51,41 +51,37 @@ trait SmartCollection extends ProductCollection {
     *
     * tag: product tag.
     */
-  var rules: js.UndefOr[js.Array[Column]] = js.undefined
+  var rules: js.UndefOr[js.Array[Column]] = js.native
 }
 
 object SmartCollection {
   @scala.inline
-  def apply(
-    admin_graphql_api_id: String = null,
-    body_html: String = null,
-    disjunctive: js.UndefOr[Boolean] = js.undefined,
-    handle: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    image: Attachment = null,
-    published_at: String = null,
-    published_scope: String = null,
-    rules: js.Array[Column] = null,
-    sort_order: String = null,
-    template_suffix: String = null,
-    title: String = null,
-    updated_at: String = null
-  ): SmartCollection = {
+  def apply(): SmartCollection = {
     val __obj = js.Dynamic.literal()
-    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id.asInstanceOf[js.Any])
-    if (body_html != null) __obj.updateDynamic("body_html")(body_html.asInstanceOf[js.Any])
-    if (!js.isUndefined(disjunctive)) __obj.updateDynamic("disjunctive")(disjunctive.get.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (published_at != null) __obj.updateDynamic("published_at")(published_at.asInstanceOf[js.Any])
-    if (published_scope != null) __obj.updateDynamic("published_scope")(published_scope.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (sort_order != null) __obj.updateDynamic("sort_order")(sort_order.asInstanceOf[js.Any])
-    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartCollection]
   }
+  @scala.inline
+  implicit class SmartCollectionOps[Self <: SmartCollection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisjunctive(value: Boolean): Self = this.set("disjunctive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisjunctive: Self = this.set("disjunctive", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: Column*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[Column]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

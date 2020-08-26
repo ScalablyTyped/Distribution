@@ -35,11 +35,11 @@ trait DescribeClassificationJobResponse extends js.Object {
     */
   var jobId: js.UndefOr[string] = js.native
   /**
-    * The current status of the job. Possible value are: CANCELLED - The job was cancelled by you or a user of the master account for your organization. A job might also be cancelled if ownership of an S3 bucket changed while the job was running, and that change affected the job's access to the bucket. COMPLETE - Amazon Macie finished processing all the data specified for the job. IDLE - For a recurring job, the previous scheduled run is complete and the next scheduled run is pending. This value doesn't apply to jobs that occur only once. PAUSED - Amazon Macie started the job, but completion of the job would exceed one or more quotas for your account. RUNNING - The job is in progress.
+    * The current status of the job. Possible values are: CANCELLED - The job was cancelled by you or a user of the master account for your organization. A job might also be cancelled if ownership of an S3 bucket changed while the job was running, and that change affected the job's access to the bucket. COMPLETE - Amazon Macie finished processing all the data specified for the job. IDLE - For a recurring job, the previous scheduled run is complete and the next scheduled run is pending. This value doesn't apply to jobs that occur only once. PAUSED - Amazon Macie started the job, but completion of the job would exceed one or more quotas for your account. RUNNING - The job is in progress.
     */
   var jobStatus: js.UndefOr[JobStatus] = js.native
   /**
-    * The schedule for running the job. Possible value are: ONE_TIME - The job ran or will run only once. SCHEDULED - The job runs on a daily, weekly, or monthly basis. The scheduleFrequency property indicates the recurrence pattern for the job.
+    * The schedule for running the job. Possible values are: ONE_TIME - The job ran or will run only once. SCHEDULED - The job runs on a daily, weekly, or monthly basis. The scheduleFrequency property indicates the recurrence pattern for the job.
     */
   var jobType: js.UndefOr[JobType] = js.native
   /**
@@ -59,7 +59,7 @@ trait DescribeClassificationJobResponse extends js.Object {
     */
   var samplingPercentage: js.UndefOr[integer] = js.native
   /**
-    * The recurrence pattern for running the job. If the job is configured to run every day, this value is an empty dailySchedule object. If the job is configured to run only once, this value is null.
+    * The recurrence pattern for running the job. If the job is configured to run only once, this value is null.
     */
   var scheduleFrequency: js.UndefOr[JobScheduleFrequency] = js.native
   /**
@@ -74,42 +74,88 @@ trait DescribeClassificationJobResponse extends js.Object {
 
 object DescribeClassificationJobResponse {
   @scala.inline
-  def apply(
-    clientToken: string = null,
-    createdAt: timestampIso8601 = null,
-    customDataIdentifierIds: listOfString = null,
-    description: string = null,
-    initialRun: js.UndefOr[boolean] = js.undefined,
-    jobArn: string = null,
-    jobId: string = null,
-    jobStatus: JobStatus = null,
-    jobType: JobType = null,
-    lastRunTime: timestampIso8601 = null,
-    name: string = null,
-    s3JobDefinition: S3JobDefinition = null,
-    samplingPercentage: js.UndefOr[integer] = js.undefined,
-    scheduleFrequency: JobScheduleFrequency = null,
-    statistics: Statistics = null,
-    tags: TagMap = null
-  ): DescribeClassificationJobResponse = {
+  def apply(): DescribeClassificationJobResponse = {
     val __obj = js.Dynamic.literal()
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (customDataIdentifierIds != null) __obj.updateDynamic("customDataIdentifierIds")(customDataIdentifierIds.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialRun)) __obj.updateDynamic("initialRun")(initialRun.get.asInstanceOf[js.Any])
-    if (jobArn != null) __obj.updateDynamic("jobArn")(jobArn.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (jobStatus != null) __obj.updateDynamic("jobStatus")(jobStatus.asInstanceOf[js.Any])
-    if (jobType != null) __obj.updateDynamic("jobType")(jobType.asInstanceOf[js.Any])
-    if (lastRunTime != null) __obj.updateDynamic("lastRunTime")(lastRunTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (s3JobDefinition != null) __obj.updateDynamic("s3JobDefinition")(s3JobDefinition.asInstanceOf[js.Any])
-    if (!js.isUndefined(samplingPercentage)) __obj.updateDynamic("samplingPercentage")(samplingPercentage.get.asInstanceOf[js.Any])
-    if (scheduleFrequency != null) __obj.updateDynamic("scheduleFrequency")(scheduleFrequency.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeClassificationJobResponse]
   }
+  @scala.inline
+  implicit class DescribeClassificationJobResponseOps[Self <: DescribeClassificationJobResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setCustomDataIdentifierIdsVarargs(value: string*): Self = this.set("customDataIdentifierIds", js.Array(value :_*))
+    @scala.inline
+    def setCustomDataIdentifierIds(value: listOfString): Self = this.set("customDataIdentifierIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDataIdentifierIds: Self = this.set("customDataIdentifierIds", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setInitialRun(value: boolean): Self = this.set("initialRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialRun: Self = this.set("initialRun", js.undefined)
+    @scala.inline
+    def setJobArn(value: string): Self = this.set("jobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobArn: Self = this.set("jobArn", js.undefined)
+    @scala.inline
+    def setJobId(value: string): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setJobStatus(value: JobStatus): Self = this.set("jobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("jobStatus", js.undefined)
+    @scala.inline
+    def setJobType(value: JobType): Self = this.set("jobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobType: Self = this.set("jobType", js.undefined)
+    @scala.inline
+    def setLastRunTime(value: timestampIso8601): Self = this.set("lastRunTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRunTime: Self = this.set("lastRunTime", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setS3JobDefinition(value: S3JobDefinition): Self = this.set("s3JobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3JobDefinition: Self = this.set("s3JobDefinition", js.undefined)
+    @scala.inline
+    def setSamplingPercentage(value: integer): Self = this.set("samplingPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamplingPercentage: Self = this.set("samplingPercentage", js.undefined)
+    @scala.inline
+    def setScheduleFrequency(value: JobScheduleFrequency): Self = this.set("scheduleFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleFrequency: Self = this.set("scheduleFrequency", js.undefined)
+    @scala.inline
+    def setStatistics(value: Statistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

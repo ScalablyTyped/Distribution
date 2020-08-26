@@ -34,22 +34,46 @@ trait VpnDetails extends js.Object {
 
 object VpnDetails {
   @scala.inline
-  def apply(
-    VpnGatewayIp: String = null,
-    VpnId: String = null,
-    VpnName: String = null,
-    VpnPSK: StringSensitive = null,
-    VpnState: String = null,
-    VpnTunnelOriginatorIP: String = null
-  ): VpnDetails = {
+  def apply(): VpnDetails = {
     val __obj = js.Dynamic.literal()
-    if (VpnGatewayIp != null) __obj.updateDynamic("VpnGatewayIp")(VpnGatewayIp.asInstanceOf[js.Any])
-    if (VpnId != null) __obj.updateDynamic("VpnId")(VpnId.asInstanceOf[js.Any])
-    if (VpnName != null) __obj.updateDynamic("VpnName")(VpnName.asInstanceOf[js.Any])
-    if (VpnPSK != null) __obj.updateDynamic("VpnPSK")(VpnPSK.asInstanceOf[js.Any])
-    if (VpnState != null) __obj.updateDynamic("VpnState")(VpnState.asInstanceOf[js.Any])
-    if (VpnTunnelOriginatorIP != null) __obj.updateDynamic("VpnTunnelOriginatorIP")(VpnTunnelOriginatorIP.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpnDetails]
   }
+  @scala.inline
+  implicit class VpnDetailsOps[Self <: VpnDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpnGatewayIp(value: String): Self = this.set("VpnGatewayIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnGatewayIp: Self = this.set("VpnGatewayIp", js.undefined)
+    @scala.inline
+    def setVpnId(value: String): Self = this.set("VpnId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnId: Self = this.set("VpnId", js.undefined)
+    @scala.inline
+    def setVpnName(value: String): Self = this.set("VpnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnName: Self = this.set("VpnName", js.undefined)
+    @scala.inline
+    def setVpnPSK(value: StringSensitive): Self = this.set("VpnPSK", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnPSK: Self = this.set("VpnPSK", js.undefined)
+    @scala.inline
+    def setVpnState(value: String): Self = this.set("VpnState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnState: Self = this.set("VpnState", js.undefined)
+    @scala.inline
+    def setVpnTunnelOriginatorIP(value: String): Self = this.set("VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnTunnelOriginatorIP: Self = this.set("VpnTunnelOriginatorIP", js.undefined)
+  }
+  
 }
 

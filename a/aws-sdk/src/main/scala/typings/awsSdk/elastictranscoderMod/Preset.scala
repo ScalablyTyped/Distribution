@@ -46,28 +46,58 @@ trait Preset extends js.Object {
 
 object Preset {
   @scala.inline
-  def apply(
-    Arn: String = null,
-    Audio: AudioParameters = null,
-    Container: PresetContainer = null,
-    Description: Description = null,
-    Id: Id = null,
-    Name: Name = null,
-    Thumbnails: Thumbnails = null,
-    Type: PresetType = null,
-    Video: VideoParameters = null
-  ): Preset = {
+  def apply(): Preset = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Audio != null) __obj.updateDynamic("Audio")(Audio.asInstanceOf[js.Any])
-    if (Container != null) __obj.updateDynamic("Container")(Container.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Thumbnails != null) __obj.updateDynamic("Thumbnails")(Thumbnails.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Video != null) __obj.updateDynamic("Video")(Video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Preset]
   }
+  @scala.inline
+  implicit class PresetOps[Self <: Preset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAudio(value: AudioParameters): Self = this.set("Audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("Audio", js.undefined)
+    @scala.inline
+    def setContainer(value: PresetContainer): Self = this.set("Container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("Container", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setThumbnails(value: Thumbnails): Self = this.set("Thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("Thumbnails", js.undefined)
+    @scala.inline
+    def setType(value: PresetType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setVideo(value: VideoParameters): Self = this.set("Video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("Video", js.undefined)
+  }
+  
 }
 

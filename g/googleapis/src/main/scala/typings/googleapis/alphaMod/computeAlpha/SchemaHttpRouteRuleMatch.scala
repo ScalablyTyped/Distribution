@@ -70,24 +70,56 @@ trait SchemaHttpRouteRuleMatch extends js.Object {
 
 object SchemaHttpRouteRuleMatch {
   @scala.inline
-  def apply(
-    fullPathMatch: String = null,
-    headerMatches: js.Array[SchemaHttpHeaderMatch] = null,
-    ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    metadataFilters: js.Array[SchemaMetadataFilter] = null,
-    prefixMatch: String = null,
-    queryParameterMatches: js.Array[SchemaHttpQueryParameterMatch] = null,
-    regexMatch: String = null
-  ): SchemaHttpRouteRuleMatch = {
+  def apply(): SchemaHttpRouteRuleMatch = {
     val __obj = js.Dynamic.literal()
-    if (fullPathMatch != null) __obj.updateDynamic("fullPathMatch")(fullPathMatch.asInstanceOf[js.Any])
-    if (headerMatches != null) __obj.updateDynamic("headerMatches")(headerMatches.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.get.asInstanceOf[js.Any])
-    if (metadataFilters != null) __obj.updateDynamic("metadataFilters")(metadataFilters.asInstanceOf[js.Any])
-    if (prefixMatch != null) __obj.updateDynamic("prefixMatch")(prefixMatch.asInstanceOf[js.Any])
-    if (queryParameterMatches != null) __obj.updateDynamic("queryParameterMatches")(queryParameterMatches.asInstanceOf[js.Any])
-    if (regexMatch != null) __obj.updateDynamic("regexMatch")(regexMatch.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRouteRuleMatch]
   }
+  @scala.inline
+  implicit class SchemaHttpRouteRuleMatchOps[Self <: SchemaHttpRouteRuleMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFullPathMatch(value: String): Self = this.set("fullPathMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullPathMatch: Self = this.set("fullPathMatch", js.undefined)
+    @scala.inline
+    def setHeaderMatchesVarargs(value: SchemaHttpHeaderMatch*): Self = this.set("headerMatches", js.Array(value :_*))
+    @scala.inline
+    def setHeaderMatches(value: js.Array[SchemaHttpHeaderMatch]): Self = this.set("headerMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderMatches: Self = this.set("headerMatches", js.undefined)
+    @scala.inline
+    def setIgnoreCase(value: Boolean): Self = this.set("ignoreCase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreCase: Self = this.set("ignoreCase", js.undefined)
+    @scala.inline
+    def setMetadataFiltersVarargs(value: SchemaMetadataFilter*): Self = this.set("metadataFilters", js.Array(value :_*))
+    @scala.inline
+    def setMetadataFilters(value: js.Array[SchemaMetadataFilter]): Self = this.set("metadataFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataFilters: Self = this.set("metadataFilters", js.undefined)
+    @scala.inline
+    def setPrefixMatch(value: String): Self = this.set("prefixMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixMatch: Self = this.set("prefixMatch", js.undefined)
+    @scala.inline
+    def setQueryParameterMatchesVarargs(value: SchemaHttpQueryParameterMatch*): Self = this.set("queryParameterMatches", js.Array(value :_*))
+    @scala.inline
+    def setQueryParameterMatches(value: js.Array[SchemaHttpQueryParameterMatch]): Self = this.set("queryParameterMatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryParameterMatches: Self = this.set("queryParameterMatches", js.undefined)
+    @scala.inline
+    def setRegexMatch(value: String): Self = this.set("regexMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatch: Self = this.set("regexMatch", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait UpdateRoleAliasResponse extends js.Object {
 
 object UpdateRoleAliasResponse {
   @scala.inline
-  def apply(roleAlias: RoleAlias = null, roleAliasArn: RoleAliasArn = null): UpdateRoleAliasResponse = {
+  def apply(): UpdateRoleAliasResponse = {
     val __obj = js.Dynamic.literal()
-    if (roleAlias != null) __obj.updateDynamic("roleAlias")(roleAlias.asInstanceOf[js.Any])
-    if (roleAliasArn != null) __obj.updateDynamic("roleAliasArn")(roleAliasArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRoleAliasResponse]
   }
+  @scala.inline
+  implicit class UpdateRoleAliasResponseOps[Self <: UpdateRoleAliasResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleAlias(value: RoleAlias): Self = this.set("roleAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleAlias: Self = this.set("roleAlias", js.undefined)
+    @scala.inline
+    def setRoleAliasArn(value: RoleAliasArn): Self = this.set("roleAliasArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleAliasArn: Self = this.set("roleAliasArn", js.undefined)
+  }
+  
 }
 

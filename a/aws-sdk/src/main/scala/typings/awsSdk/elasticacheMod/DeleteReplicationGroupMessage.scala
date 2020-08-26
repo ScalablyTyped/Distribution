@@ -22,15 +22,32 @@ trait DeleteReplicationGroupMessage extends js.Object {
 
 object DeleteReplicationGroupMessage {
   @scala.inline
-  def apply(
-    ReplicationGroupId: String,
-    FinalSnapshotIdentifier: String = null,
-    RetainPrimaryCluster: js.UndefOr[BooleanOptional] = js.undefined
-  ): DeleteReplicationGroupMessage = {
+  def apply(ReplicationGroupId: String): DeleteReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-    if (FinalSnapshotIdentifier != null) __obj.updateDynamic("FinalSnapshotIdentifier")(FinalSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(RetainPrimaryCluster)) __obj.updateDynamic("RetainPrimaryCluster")(RetainPrimaryCluster.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReplicationGroupMessage]
   }
+  @scala.inline
+  implicit class DeleteReplicationGroupMessageOps[Self <: DeleteReplicationGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFinalSnapshotIdentifier(value: String): Self = this.set("FinalSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalSnapshotIdentifier: Self = this.set("FinalSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setRetainPrimaryCluster(value: BooleanOptional): Self = this.set("RetainPrimaryCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainPrimaryCluster: Self = this.set("RetainPrimaryCluster", js.undefined)
+  }
+  
 }
 

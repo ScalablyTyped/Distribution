@@ -5,26 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StyledTextProps extends js.Object {
-  var style: js.UndefOr[BackgroundColor] = js.undefined
+  var style: js.UndefOr[BackgroundColor] = js.native
   /**
     * The x coordinate of the text's top left corner. (Only in a top level text component.)
     */
-  var x: js.UndefOr[Double | String] = js.undefined
+  var x: js.UndefOr[Double | String] = js.native
   /**
     * The y coordinate of the text's top left corner. (Only in a top level text component.)
     */
-  var y: js.UndefOr[Double | String] = js.undefined
+  var y: js.UndefOr[Double | String] = js.native
 }
 
 object StyledTextProps {
   @scala.inline
-  def apply(style: BackgroundColor = null, x: Double | String = null, y: Double | String = null): StyledTextProps = {
+  def apply(): StyledTextProps = {
     val __obj = js.Dynamic.literal()
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyledTextProps]
   }
+  @scala.inline
+  implicit class StyledTextPropsOps[Self <: StyledTextProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyle(value: BackgroundColor): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

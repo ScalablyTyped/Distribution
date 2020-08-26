@@ -30,19 +30,40 @@ trait ExecutePolicyType extends js.Object {
 
 object ExecutePolicyType {
   @scala.inline
-  def apply(
-    PolicyName: ResourceName,
-    AutoScalingGroupName: ResourceName = null,
-    BreachThreshold: js.UndefOr[MetricScale] = js.undefined,
-    HonorCooldown: js.UndefOr[HonorCooldown] = js.undefined,
-    MetricValue: js.UndefOr[MetricScale] = js.undefined
-  ): ExecutePolicyType = {
+  def apply(PolicyName: ResourceName): ExecutePolicyType = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any])
-    if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(BreachThreshold)) __obj.updateDynamic("BreachThreshold")(BreachThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HonorCooldown)) __obj.updateDynamic("HonorCooldown")(HonorCooldown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MetricValue)) __obj.updateDynamic("MetricValue")(MetricValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecutePolicyType]
   }
+  @scala.inline
+  implicit class ExecutePolicyTypeOps[Self <: ExecutePolicyType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyName(value: ResourceName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    @scala.inline
+    def setBreachThreshold(value: MetricScale): Self = this.set("BreachThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreachThreshold: Self = this.set("BreachThreshold", js.undefined)
+    @scala.inline
+    def setHonorCooldown(value: HonorCooldown): Self = this.set("HonorCooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorCooldown: Self = this.set("HonorCooldown", js.undefined)
+    @scala.inline
+    def setMetricValue(value: MetricScale): Self = this.set("MetricValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricValue: Self = this.set("MetricValue", js.undefined)
+  }
+  
 }
 

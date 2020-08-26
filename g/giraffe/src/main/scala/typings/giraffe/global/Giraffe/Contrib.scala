@@ -1,6 +1,5 @@
 package typings.giraffe.global.Giraffe
 
-import typings.giraffe.Giraffe.App
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,10 +13,7 @@ object Contrib extends js.Object {
   
   @js.native
   class Controller ()
-    extends typings.giraffe.Giraffe.Contrib.Controller {
-    /* CompleteClass */
-    override var app: App = js.native
-  }
+    extends typings.giraffe.Giraffe.Contrib.Controller
   
   @js.native
   class FastCollectionView[TModel /* <: typings.giraffe.Giraffe.Model */] ()

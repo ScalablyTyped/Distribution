@@ -977,9 +977,17 @@ trait ojChartGroup extends JetElement[ojChartGroupSettableProperties] {
   def setProperty(property: drilling, value: on): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojChartGroupSettableProperties]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_drilling(property: drilling): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_labelStyle(property: labelStyle): Unit = js.native
+  @JSName("setProperty")
   def setProperty_labelStyle(property: labelStyle, value: js.Object): Unit = js.native
   @JSName("setProperty")
+  def setProperty_name(property: name): Unit = js.native
+  @JSName("setProperty")
   def setProperty_name(property: name, value: String): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shortDesc(property: shortDesc): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
 }

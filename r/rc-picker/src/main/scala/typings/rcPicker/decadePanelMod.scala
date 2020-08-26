@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/panels/DecadePanel", JSImport.Namespace)
+@JSImport("rc-picker/es/panels/DecadePanel", JSImport.Namespace)
 @js.native
 object decadePanelMod extends js.Object {
   val DECADE_DISTANCE_COUNT: Double = js.native

@@ -14,10 +14,26 @@ trait GetStaticIpResult extends js.Object {
 
 object GetStaticIpResult {
   @scala.inline
-  def apply(staticIp: StaticIp = null): GetStaticIpResult = {
+  def apply(): GetStaticIpResult = {
     val __obj = js.Dynamic.literal()
-    if (staticIp != null) __obj.updateDynamic("staticIp")(staticIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStaticIpResult]
   }
+  @scala.inline
+  implicit class GetStaticIpResultOps[Self <: GetStaticIpResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStaticIp(value: StaticIp): Self = this.set("staticIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticIp: Self = this.set("staticIp", js.undefined)
+  }
+  
 }
 

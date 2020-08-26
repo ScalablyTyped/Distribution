@@ -197,14 +197,16 @@ trait Animation extends js.Object {
     */
   def play(): js.Promise[Unit] = js.native
   def play(opts: AnimationPlayOptions): js.Promise[Unit] = js.native
+  def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double): Unit = js.native
+  def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double, dur: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_0(playTo: js.UndefOr[`0`], step: Double): Unit = js.native
+  def progressEnd_0(playTo: `0`, step: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_0(playTo: js.UndefOr[`0`], step: Double, dur: Double): Unit = js.native
+  def progressEnd_0(playTo: `0`, step: Double, dur: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_1(playTo: js.UndefOr[`1`], step: Double): Unit = js.native
+  def progressEnd_1(playTo: `1`, step: Double): Unit = js.native
   @JSName("progressEnd")
-  def progressEnd_1(playTo: js.UndefOr[`1`], step: Double, dur: Double): Unit = js.native
+  def progressEnd_1(playTo: `1`, step: Double, dur: Double): Unit = js.native
   def progressStart(forceLinearEasing: Boolean): Unit = js.native
   def progressStart(forceLinearEasing: Boolean, step: Double): Unit = js.native
   def progressStep(step: Double): Unit = js.native

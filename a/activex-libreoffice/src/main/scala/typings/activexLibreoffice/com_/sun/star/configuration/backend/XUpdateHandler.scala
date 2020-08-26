@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * receives a description of a configuration update or layer as a sequence of events.
   * @since OOo 1.1.2
   */
+@js.native
 trait XUpdateHandler extends XInterface {
   /**
     * receives notification that a node is started as a new item.
@@ -26,7 +27,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to an
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceNode(aName: String, aAttributes: Double): Unit
+  def addOrReplaceNode(aName: String, aAttributes: Double): Unit = js.native
   /**
     * receives notification that a node is started as a new item based on a particular template.
     *
@@ -41,7 +42,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to an
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceNodeFromTemplate(aName: String, aAttributes: Double, aTemplate: TemplateIdentifier): Unit
+  def addOrReplaceNodeFromTemplate(aName: String, aAttributes: Double, aTemplate: TemplateIdentifier): Unit = js.native
   /**
     * receives notification that a property having a value of `VOID` is added to the current node.
     *
@@ -53,7 +54,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceProperty(aName: String, aAttributes: Double, aType: `type`): Unit
+  def addOrReplaceProperty(aName: String, aAttributes: Double, aType: `type`): Unit = js.native
   /**
     * receives notification that a property having a non- `NULL` value is added to the current node.
     *
@@ -65,7 +66,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplacePropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit
+  def addOrReplacePropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit = js.native
   /**
     * receives notification that a node modification is complete.
     *
@@ -74,7 +75,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the nodeif no node is started at all**Not every imp
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endNode(): Unit
+  def endNode(): Unit = js.native
   /**
     * receives notification that a property modification is complete.
     *
@@ -82,7 +83,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the propertyif no property is started at all**Not e
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endProperty(): Unit
+  def endProperty(): Unit = js.native
   /**
     * receives notification that the current update description is complete.
     *
@@ -91,7 +92,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::lang::IllegalAccessException if the target layer is read-only
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endUpdate(): Unit
+  def endUpdate(): Unit = js.native
   /**
     * receives notification that a modification of a node is started.
     *
@@ -105,7 +106,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't an update in progress at allif a node is not valid in this placeif
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def modifyNode(aName: String, aAttributes: Double, aAttributeMask: Double, bReset: Boolean): Unit
+  def modifyNode(aName: String, aAttributes: Double, aAttributeMask: Double, bReset: Boolean): Unit = js.native
   /**
     * receives notification that modification of an existing property is started.
     *
@@ -118,7 +119,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def modifyProperty(aName: String, aAttributes: Double, aAttributeMask: Double, aType: `type`): Unit
+  def modifyProperty(aName: String, aAttributes: Double, aAttributeMask: Double, aType: `type`): Unit = js.native
   /**
     * receives notification that an item is to be dropped from a set.
     *
@@ -127,7 +128,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def removeNode(aName: String): Unit
+  def removeNode(aName: String): Unit = js.native
   /**
     * receives notification that a property is dropped from the current node.
     *
@@ -136,7 +137,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there is no prop
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def removeProperty(aName: String): Unit
+  def removeProperty(aName: String): Unit = js.native
   /**
     * receives notification that a property is reset to its default state.
     * @param aName specifies the name of the property.
@@ -144,14 +145,14 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def resetProperty(aName: String): Unit
+  def resetProperty(aName: String): Unit = js.native
   /**
     * receives notification that the value of the current property should be reset to its default.
     * @see com.sun.star.configuration.backend.NodeAttribute
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property modification in progress currentlyif there already was a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def resetPropertyValue(): Unit
+  def resetPropertyValue(): Unit = js.native
   /**
     * receives notification that the value of the current property for a specific locale should be reset to its default.
     * @param aLocale specifies the locale the change applies to.
@@ -159,7 +160,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property modification in progress currentlyif the property is not
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def resetPropertyValueForLocale(aLocale: String): Unit
+  def resetPropertyValueForLocale(aLocale: String): Unit = js.native
   /**
     * receives notification about a change to the value of the current property.
     * @param aValue specifies the new value of the property.  The value must match the type of the existing property. If the property does not have the {@link
@@ -167,7 +168,7 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property modification in progress currentlyif there already was a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValue(aValue: js.Any): Unit
+  def setPropertyValue(aValue: js.Any): Unit = js.native
   /**
     * receives notification about a change to the value of the current property for a specific locale.
     * @param aValue specifies the new value of the property for the given locale.  The value must match the type of the existing property. If the property doe
@@ -176,14 +177,14 @@ trait XUpdateHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property modification in progress currentlyif the property is not
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit
+  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit = js.native
   /**
     * receives notification that a update or description is started.
     * @throws com::sun::star::configuration::backend::MalformedDataException if the update already was started
     * @throws com::sun::star::lang::IllegalAccessException if the target layer is read-only**Some implementations can only detect this when executing XUpdateHa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startUpdate(): Unit
+  def startUpdate(): Unit = js.native
 }
 
 object XUpdateHandler {
@@ -213,5 +214,52 @@ object XUpdateHandler {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), addOrReplaceNode = js.Any.fromFunction2(addOrReplaceNode), addOrReplaceNodeFromTemplate = js.Any.fromFunction3(addOrReplaceNodeFromTemplate), addOrReplaceProperty = js.Any.fromFunction3(addOrReplaceProperty), addOrReplacePropertyWithValue = js.Any.fromFunction3(addOrReplacePropertyWithValue), endNode = js.Any.fromFunction0(endNode), endProperty = js.Any.fromFunction0(endProperty), endUpdate = js.Any.fromFunction0(endUpdate), modifyNode = js.Any.fromFunction4(modifyNode), modifyProperty = js.Any.fromFunction4(modifyProperty), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeNode = js.Any.fromFunction1(removeNode), removeProperty = js.Any.fromFunction1(removeProperty), resetProperty = js.Any.fromFunction1(resetProperty), resetPropertyValue = js.Any.fromFunction0(resetPropertyValue), resetPropertyValueForLocale = js.Any.fromFunction1(resetPropertyValueForLocale), setPropertyValue = js.Any.fromFunction1(setPropertyValue), setPropertyValueForLocale = js.Any.fromFunction2(setPropertyValueForLocale), startUpdate = js.Any.fromFunction0(startUpdate))
     __obj.asInstanceOf[XUpdateHandler]
   }
+  @scala.inline
+  implicit class XUpdateHandlerOps[Self <: XUpdateHandler] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddOrReplaceNode(value: (String, Double) => Unit): Self = this.set("addOrReplaceNode", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAddOrReplaceNodeFromTemplate(value: (String, Double, TemplateIdentifier) => Unit): Self = this.set("addOrReplaceNodeFromTemplate", js.Any.fromFunction3(value))
+    @scala.inline
+    def setAddOrReplaceProperty(value: (String, Double, `type`) => Unit): Self = this.set("addOrReplaceProperty", js.Any.fromFunction3(value))
+    @scala.inline
+    def setAddOrReplacePropertyWithValue(value: (String, Double, js.Any) => Unit): Self = this.set("addOrReplacePropertyWithValue", js.Any.fromFunction3(value))
+    @scala.inline
+    def setEndNode(value: () => Unit): Self = this.set("endNode", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEndProperty(value: () => Unit): Self = this.set("endProperty", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEndUpdate(value: () => Unit): Self = this.set("endUpdate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setModifyNode(value: (String, Double, Double, Boolean) => Unit): Self = this.set("modifyNode", js.Any.fromFunction4(value))
+    @scala.inline
+    def setModifyProperty(value: (String, Double, Double, `type`) => Unit): Self = this.set("modifyProperty", js.Any.fromFunction4(value))
+    @scala.inline
+    def setRemoveNode(value: String => Unit): Self = this.set("removeNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveProperty(value: String => Unit): Self = this.set("removeProperty", js.Any.fromFunction1(value))
+    @scala.inline
+    def setResetProperty(value: String => Unit): Self = this.set("resetProperty", js.Any.fromFunction1(value))
+    @scala.inline
+    def setResetPropertyValue(value: () => Unit): Self = this.set("resetPropertyValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setResetPropertyValueForLocale(value: String => Unit): Self = this.set("resetPropertyValueForLocale", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetPropertyValue(value: js.Any => Unit): Self = this.set("setPropertyValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetPropertyValueForLocale(value: (js.Any, String) => Unit): Self = this.set("setPropertyValueForLocale", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStartUpdate(value: () => Unit): Self = this.set("startUpdate", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -43,7 +43,7 @@ object servicenetworkingMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Servicenetworking
               ]
             ]
@@ -53,7 +53,7 @@ object servicenetworkingMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking
               ]
             ]

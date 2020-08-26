@@ -10,15 +10,14 @@ Action Logger addon for storybook
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-actions |
 | Keywords           | storybook |
-| # releases         | 418 |
-| # dependents       | 178 |
-| # downloads        | 36878474 |
+| # releases         | 419 |
+| # dependents       | 180 |
+| # downloads        | 37833848 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/actions)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
-- [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-actions)
     
 

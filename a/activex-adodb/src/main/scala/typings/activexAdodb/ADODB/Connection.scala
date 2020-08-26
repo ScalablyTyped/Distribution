@@ -52,8 +52,39 @@ trait Connection extends js.Object {
     * @param Options [Options=-1]
     */
   def Open(): Unit = js.native
+  def Open(
+    ConnectionString: js.UndefOr[scala.Nothing],
+    UserID: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    Options: Double
+  ): Unit = js.native
+  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
+  def Open(
+    ConnectionString: js.UndefOr[scala.Nothing],
+    UserID: js.UndefOr[scala.Nothing],
+    Password: String,
+    Options: Double
+  ): Unit = js.native
+  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: String): Unit = js.native
+  def Open(
+    ConnectionString: js.UndefOr[scala.Nothing],
+    UserID: String,
+    Password: js.UndefOr[scala.Nothing],
+    Options: Double
+  ): Unit = js.native
+  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: String, Password: String): Unit = js.native
+  def Open(ConnectionString: js.UndefOr[scala.Nothing], UserID: String, Password: String, Options: Double): Unit = js.native
   def Open(ConnectionString: String): Unit = js.native
+  def Open(
+    ConnectionString: String,
+    UserID: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    Options: Double
+  ): Unit = js.native
+  def Open(ConnectionString: String, UserID: js.UndefOr[scala.Nothing], Password: String): Unit = js.native
+  def Open(ConnectionString: String, UserID: js.UndefOr[scala.Nothing], Password: String, Options: Double): Unit = js.native
   def Open(ConnectionString: String, UserID: String): Unit = js.native
+  def Open(ConnectionString: String, UserID: String, Password: js.UndefOr[scala.Nothing], Options: Double): Unit = js.native
   def Open(ConnectionString: String, UserID: String, Password: String): Unit = js.native
   def Open(ConnectionString: String, UserID: String, Password: String, Options: Double): Unit = js.native
   /**

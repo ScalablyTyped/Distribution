@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppServiceRegistration extends js.Object {
-  var sender_localpart: String
+  var sender_localpart: String = js.native
 }
 
 @JSImport("matrix-appservice-bridge", "AppServiceRegistration")

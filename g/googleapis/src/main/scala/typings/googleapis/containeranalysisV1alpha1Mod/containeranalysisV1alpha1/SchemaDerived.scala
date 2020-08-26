@@ -35,18 +35,40 @@ trait SchemaDerived extends js.Object {
 
 object SchemaDerived {
   @scala.inline
-  def apply(
-    baseResourceUrl: String = null,
-    distance: js.UndefOr[Double] = js.undefined,
-    fingerprint: SchemaFingerprint = null,
-    layerInfo: js.Array[SchemaLayer] = null
-  ): SchemaDerived = {
+  def apply(): SchemaDerived = {
     val __obj = js.Dynamic.literal()
-    if (baseResourceUrl != null) __obj.updateDynamic("baseResourceUrl")(baseResourceUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(distance)) __obj.updateDynamic("distance")(distance.get.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (layerInfo != null) __obj.updateDynamic("layerInfo")(layerInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDerived]
   }
+  @scala.inline
+  implicit class SchemaDerivedOps[Self <: SchemaDerived] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseResourceUrl(value: String): Self = this.set("baseResourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseResourceUrl: Self = this.set("baseResourceUrl", js.undefined)
+    @scala.inline
+    def setDistance(value: Double): Self = this.set("distance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistance: Self = this.set("distance", js.undefined)
+    @scala.inline
+    def setFingerprint(value: SchemaFingerprint): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setLayerInfoVarargs(value: SchemaLayer*): Self = this.set("layerInfo", js.Array(value :_*))
+    @scala.inline
+    def setLayerInfo(value: js.Array[SchemaLayer]): Self = this.set("layerInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerInfo: Self = this.set("layerInfo", js.undefined)
+  }
+  
 }
 

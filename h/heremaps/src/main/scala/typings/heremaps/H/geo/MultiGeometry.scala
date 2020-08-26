@@ -43,6 +43,7 @@ trait MultiGeometry[T] extends AbstractGeometry {
     * @return {T[]} - the removed geometries.
     */
   def splice(index: Double): js.Array[T] = js.native
+  def splice(index: Double, opt_deleteCount: js.UndefOr[scala.Nothing], opt_items: js.Array[T]): js.Array[T] = js.native
   def splice(index: Double, opt_deleteCount: Double): js.Array[T] = js.native
   def splice(index: Double, opt_deleteCount: Double, opt_items: js.Array[T]): js.Array[T] = js.native
 }

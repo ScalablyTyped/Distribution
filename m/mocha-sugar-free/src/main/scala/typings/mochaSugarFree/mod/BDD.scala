@@ -2,10 +2,10 @@ package typings.mochaSugarFree.mod
 
 import typings.mocha.mod.Suite_
 import typings.mocha.mod.Test_
-import typings.mochaSugarFree.anon.OptionsasyncfalsefnTestCa
+import typings.mochaSugarFree.anon.Optionsasyncfalseundefine
 import typings.mochaSugarFree.anon.OptionsasynctruefnTestCas
-import typings.mochaSugarFree.anon.OptionsfnHookFunc
-import typings.mochaSugarFree.anon.OptionsfnSuiteFunc
+import typings.mochaSugarFree.anon.OptionsfnHookFuncundefine
+import typings.mochaSugarFree.anon.OptionsfnSuiteFuncundefin
 import typings.mochaSugarFree.anon.OptionstitlestringfnSuite
 import typings.mochaSugarFree.mochaSugarFreeStrings.bdd
 import scala.scalajs.js
@@ -140,8 +140,8 @@ trait BDD extends BaseInterface {
     *
     * @see https://mochajs.org/api/global.html#after
     */
-  def after(options: OptionsfnHookFunc): Unit = js.native
-  def after(options: OptionsfnHookFunc, fn: HookFunc): Unit = js.native
+  def after(options: OptionsfnHookFuncundefine): Unit = js.native
+  def after(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
   /**
     * [bdd]
     *
@@ -158,8 +158,8 @@ trait BDD extends BaseInterface {
     *
     * @see https://mochajs.org/api/global.html#afterEach
     */
-  def afterEach(options: OptionsfnHookFunc): Unit = js.native
-  def afterEach(options: OptionsfnHookFunc, fn: HookFunc): Unit = js.native
+  def afterEach(options: OptionsfnHookFuncundefine): Unit = js.native
+  def afterEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
   /**
     * [bdd]
     *
@@ -176,8 +176,8 @@ trait BDD extends BaseInterface {
     *
     * @see https://mochajs.org/api/global.html#before
     */
-  def before(options: OptionsfnHookFunc): Unit = js.native
-  def before(options: OptionsfnHookFunc, fn: HookFunc): Unit = js.native
+  def before(options: OptionsfnHookFuncundefine): Unit = js.native
+  def before(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
   /**
     * [bdd]
     *
@@ -194,8 +194,8 @@ trait BDD extends BaseInterface {
     *
     * @see https://mochajs.org/api/global.html#beforeEach
     */
-  def beforeEach(options: OptionsfnHookFunc): Unit = js.native
-  def beforeEach(options: OptionsfnHookFunc, fn: HookFunc): Unit = js.native
+  def beforeEach(options: OptionsfnHookFuncundefine): Unit = js.native
+  def beforeEach(options: OptionsfnHookFuncundefine, fn: HookFunc): Unit = js.native
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -211,8 +211,9 @@ trait BDD extends BaseInterface {
     */
   def context(title: String): Suite_ = js.native
   def context(title: String, fn: SuiteFunc): Suite_ = js.native
-  def context(title: String, options: OptionsfnSuiteFunc): Suite_ = js.native
-  def context(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ = js.native
+  def context(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+  def context(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
+  def context(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -228,8 +229,9 @@ trait BDD extends BaseInterface {
     */
   def describe(title: String): Suite_ = js.native
   def describe(title: String, fn: SuiteFunc): Suite_ = js.native
-  def describe(title: String, options: OptionsfnSuiteFunc): Suite_ = js.native
-  def describe(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ = js.native
+  def describe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+  def describe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
+  def describe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
   /**
     * [bdd]
     *
@@ -246,8 +248,8 @@ trait BDD extends BaseInterface {
     *
     * The name of the function is used as the name of the test if `title` is not supplied.
     */
-  def it(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def it(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def it(options: Optionsasyncfalseundefine): Test_ = js.native
+  def it(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -273,8 +275,8 @@ trait BDD extends BaseInterface {
     *
     * The name of the function is used as the name of the test if `title` is not supplied.
     */
-  def it(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def it(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def it(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def it(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -300,8 +302,8 @@ trait BDD extends BaseInterface {
     *
     * The name of the function is used as the name of the test if `title` is not supplied.
     */
-  def specify(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def specify(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def specify(options: Optionsasyncfalseundefine): Test_ = js.native
+  def specify(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -327,8 +329,8 @@ trait BDD extends BaseInterface {
     *
     * The name of the function is used as the name of the test if `title` is not supplied.
     */
-  def specify(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def specify(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def specify(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def specify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -357,8 +359,9 @@ trait BDD extends BaseInterface {
     */
   def xcontext(title: String): Suite_ | Unit = js.native
   def xcontext(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-  def xcontext(title: String, options: OptionsfnSuiteFunc): Suite_ | Unit = js.native
-  def xcontext(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ | Unit = js.native
+  def xcontext(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
+  def xcontext(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
+  def xcontext(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd]
@@ -378,8 +381,9 @@ trait BDD extends BaseInterface {
     */
   def xdescribe(title: String): Suite_ | Unit = js.native
   def xdescribe(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-  def xdescribe(title: String, options: OptionsfnSuiteFunc): Suite_ | Unit = js.native
-  def xdescribe(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ | Unit = js.native
+  def xdescribe(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
+  def xdescribe(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
+  def xdescribe(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
   /**
     * [bdd]
     *
@@ -400,8 +404,8 @@ trait BDD extends BaseInterface {
     *
     * Indicates this test should not be executed.
     */
-  def xit(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def xit(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def xit(options: Optionsasyncfalseundefine): Test_ = js.native
+  def xit(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -433,8 +437,8 @@ trait BDD extends BaseInterface {
     *
     * Indicates this test should not be executed.
     */
-  def xit(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def xit(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def xit(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def xit(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -466,8 +470,8 @@ trait BDD extends BaseInterface {
     *
     * Indicates this test should not be executed.
     */
-  def xspecify(options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def xspecify(options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def xspecify(options: Optionsasyncfalseundefine): Test_ = js.native
+  def xspecify(options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *
@@ -499,8 +503,8 @@ trait BDD extends BaseInterface {
     *
     * Indicates this test should not be executed.
     */
-  def xspecify(title: String, options: OptionsasyncfalsefnTestCa): Test_ = js.native
-  def xspecify(title: String, options: OptionsasyncfalsefnTestCa, fn: TestCase): Test_ = js.native
+  def xspecify(title: String, options: Optionsasyncfalseundefine): Test_ = js.native
+  def xspecify(title: String, options: Optionsasyncfalseundefine, fn: TestCase): Test_ = js.native
   /**
     * [bdd]
     *

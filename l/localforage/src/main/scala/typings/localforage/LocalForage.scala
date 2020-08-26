@@ -26,6 +26,11 @@ trait LocalForage
     */
   def createInstance(options: LocalForageOptions): LocalForage = js.native
   def defineDriver(driver: LocalForageDriver): js.Promise[Unit] = js.native
+  def defineDriver(
+    driver: LocalForageDriver,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[Unit] = js.native
   def defineDriver(driver: LocalForageDriver, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def defineDriver(
     driver: LocalForageDriver,
@@ -47,6 +52,11 @@ trait LocalForage
     * @param {string} driver
     */
   def setDriver(driver: String): js.Promise[Unit] = js.native
+  def setDriver(
+    driver: String,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[Unit] = js.native
   def setDriver(driver: String, callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def setDriver(
     driver: String,
@@ -54,6 +64,11 @@ trait LocalForage
     errorCallback: js.Function1[/* error */ js.Any, Unit]
   ): js.Promise[Unit] = js.native
   def setDriver(driver: js.Array[String]): js.Promise[Unit] = js.native
+  def setDriver(
+    driver: js.Array[String],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ js.Any, Unit]
+  ): js.Promise[Unit] = js.native
   def setDriver(driver: js.Array[String], callback: js.Function0[Unit]): js.Promise[Unit] = js.native
   def setDriver(
     driver: js.Array[String],

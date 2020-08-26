@@ -12,6 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Service of {@link SAXEventKeeper} */
+@js.native
 trait SAXEventKeeper
   extends XSecuritySAXEventKeeper
      with XReferenceResolvedBroadcaster

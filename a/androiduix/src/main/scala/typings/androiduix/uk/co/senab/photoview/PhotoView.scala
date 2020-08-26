@@ -33,22 +33,17 @@ import typings.androiduix.android.view.animation.Animation
 import typings.androiduix.android.widget.ImageView
 import typings.androiduix.android.widget.ImageView.ScaleType
 import typings.androiduix.androidui.attr.AttrBinder.ClassBinderMap
-import typings.androiduix.java.lang.Runnable
-import typings.androiduix.java.util.ArrayList
+import typings.androiduix.java_.lang.Runnable
+import typings.androiduix.java_.util.ArrayList
 import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("uk.co.senab.photoview.PhotoView")
 @js.native
-class PhotoView protected ()
+trait PhotoView
   extends ImageView
      with IPhotoView {
-  def this(context: Context) = this()
-  def this(context: Context, bindElement: HTMLElement) = this()
-  def this(context: Context, bindElement: HTMLElement, defStyle: Map[String, String]) = this()
   var mAttacher: js.Any = js.native
   var mPendingScaleType: js.Any = js.native
   /* InferMemberOverrides */
@@ -57,8 +52,6 @@ class PhotoView protected ()
   /* private */ override def _getBinderAttrValue(key: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _initAttrObserver(): js.Any = js.native
-  /* InferMemberOverrides */
-  /* private */ override def _invalidateCache(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def _invalidateCache(invalidateCache: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -82,6 +75,8 @@ class PhotoView protected ()
   /* InferMemberOverrides */
   override def awakenScrollBars(): Boolean = js.native
   /* InferMemberOverrides */
+  override def awakenScrollBars(startDelay: js.UndefOr[scala.Nothing], invalidate: Boolean): Boolean = js.native
+  /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double): Boolean = js.native
   /* InferMemberOverrides */
   override def awakenScrollBars(startDelay: Double, invalidate: Boolean): Boolean = js.native
@@ -101,8 +96,6 @@ class PhotoView protected ()
   override def cancelLongPress(): Unit = js.native
   /* InferMemberOverrides */
   override def cancelPendingInputEvents(): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def checkForLongClick(): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def checkForLongClick(delayOffset: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -179,8 +172,6 @@ class PhotoView protected ()
   override def dispatchWindowVisibilityChanged(visibility: Double): Unit = js.native
   /* InferMemberOverrides */
   override def draw(canvas: Canvas): Unit = js.native
-  /* InferMemberOverrides */
-  /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any): js.Any = js.native
   /* InferMemberOverrides */
   /* private */ override def drawAnimation(parent: js.Any, drawingTime: js.Any, a: js.Any, scalingRequired: js.Any): js.Any = js.native
   /* InferMemberOverrides */
@@ -634,9 +625,36 @@ class PhotoView protected ()
   /* InferMemberOverrides */
   override def postInvalidate(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(
+    l: js.UndefOr[scala.Nothing],
+    t: js.UndefOr[scala.Nothing],
+    r: js.UndefOr[scala.Nothing],
+    b: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: js.UndefOr[scala.Nothing], t: Double, r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: js.UndefOr[scala.Nothing], r: Double, b: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidate(l: Double, t: Double, r: js.UndefOr[scala.Nothing], b: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidate(l: Double, t: Double, r: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -644,9 +662,78 @@ class PhotoView protected ()
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: js.UndefOr[scala.Nothing],
+    top: Double,
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: js.UndefOr[scala.Nothing],
+    right: Double,
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateDelayed(
+    delayMilliseconds: Double,
+    left: Double,
+    top: Double,
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateDelayed(delayMilliseconds: Double, left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -654,9 +741,36 @@ class PhotoView protected ()
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(
+    left: js.UndefOr[scala.Nothing],
+    top: js.UndefOr[scala.Nothing],
+    right: js.UndefOr[scala.Nothing],
+    bottom: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: js.UndefOr[scala.Nothing], top: Double, right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: js.UndefOr[scala.Nothing], right: Double, bottom: Double): Unit = js.native
+  /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def postInvalidateOnAnimation(left: Double, top: Double, right: js.UndefOr[scala.Nothing], bottom: Double): Unit = js.native
   /* InferMemberOverrides */
   override def postInvalidateOnAnimation(left: Double, top: Double, right: Double): Unit = js.native
   /* InferMemberOverrides */
@@ -683,6 +797,8 @@ class PhotoView protected ()
   /* private */ override def removeUnsetPressCallback(): js.Any = js.native
   /* InferMemberOverrides */
   override def requestFocus(): Boolean = js.native
+  /* InferMemberOverrides */
+  override def requestFocus(direction: js.UndefOr[scala.Nothing], previouslyFocusedRect: js.Any): Boolean = js.native
   /* InferMemberOverrides */
   override def requestFocus(direction: Double): Boolean = js.native
   /* InferMemberOverrides */
@@ -736,7 +852,30 @@ class PhotoView protected ()
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double): Unit = js.native
   /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: js.UndefOr[scala.Nothing], radiusBottomRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: js.UndefOr[scala.Nothing],
+    radiusBottomRight: Double,
+    radiusBottomLeft: Double
+  ): Unit = js.native
+  /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double): Unit = js.native
+  /* InferMemberOverrides */
+  override def setCornerRadius(
+    radiusTopLeft: Double,
+    radiusTopRight: Double,
+    radiusBottomRight: js.UndefOr[scala.Nothing],
+    radiusBottomLeft: Double
+  ): Unit = js.native
   /* InferMemberOverrides */
   override def setCornerRadius(radiusTopLeft: Double, radiusTopRight: Double, radiusBottomRight: Double): Unit = js.native
   /* InferMemberOverrides */

@@ -22,6 +22,7 @@ import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.ionicCore.textareaInterfaceMod.TextareaChangeEventDetail
+import typings.std.FocusEvent
 import typings.std.HTMLElement
 import typings.std.HTMLTextAreaElement
 import typings.std.KeyboardEvent
@@ -95,7 +96,7 @@ object textareaMod extends js.Object {
     /**
       * Emitted when the input loses focus.
       */
-    var ionBlur: EventEmitter[Unit] = js.native
+    var ionBlur: EventEmitter[FocusEvent] = js.native
     /**
       * Emitted when the input value has changed.
       */
@@ -103,7 +104,7 @@ object textareaMod extends js.Object {
     /**
       * Emitted when the input has focus.
       */
-    var ionFocus: EventEmitter[Unit] = js.native
+    var ionFocus: EventEmitter[FocusEvent] = js.native
     /**
       * Emitted when a keyboard input occurred.
       */
@@ -125,7 +126,7 @@ object textareaMod extends js.Object {
       * The name of the control, which is submitted with the form data.
       */
     var name: String = js.native
-    var nativeInput: js.UndefOr[js.Any] = js.native
+    var nativeInput: js.Any = js.native
     var onBlur: js.Any = js.native
     var onFocus: js.Any = js.native
     var onInput: js.Any = js.native
@@ -151,7 +152,7 @@ object textareaMod extends js.Object {
       * If `true`, the element will have its spelling and grammar checked.
       */
     var spellcheck: Boolean = js.native
-    var textareaWrapper: js.UndefOr[js.Any] = js.native
+    var textareaWrapper: js.Any = js.native
     /**
       * The value of the textarea.
       */

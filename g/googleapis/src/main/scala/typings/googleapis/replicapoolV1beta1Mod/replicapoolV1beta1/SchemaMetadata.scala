@@ -23,11 +23,32 @@ trait SchemaMetadata extends js.Object {
 
 object SchemaMetadata {
   @scala.inline
-  def apply(fingerPrint: String = null, items: js.Array[SchemaMetadataItem] = null): SchemaMetadata = {
+  def apply(): SchemaMetadata = {
     val __obj = js.Dynamic.literal()
-    if (fingerPrint != null) __obj.updateDynamic("fingerPrint")(fingerPrint.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetadata]
   }
+  @scala.inline
+  implicit class SchemaMetadataOps[Self <: SchemaMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFingerPrint(value: String): Self = this.set("fingerPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerPrint: Self = this.set("fingerPrint", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: SchemaMetadataItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[SchemaMetadataItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+  }
+  
 }
 

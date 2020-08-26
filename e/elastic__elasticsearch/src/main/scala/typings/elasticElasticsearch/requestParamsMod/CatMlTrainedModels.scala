@@ -21,62 +21,87 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatMlTrainedModels extends Generic {
-  var allow_no_match: js.UndefOr[Boolean] = js.undefined
-  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var from: js.UndefOr[Double] = js.undefined
-  var h: js.UndefOr[String | js.Array[String]] = js.undefined
-  var help: js.UndefOr[Boolean] = js.undefined
-  var model_id: js.UndefOr[String] = js.undefined
-  var s: js.UndefOr[String | js.Array[String]] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.undefined
-  var v: js.UndefOr[Boolean] = js.undefined
+  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.native
+  var format: js.UndefOr[String] = js.native
+  var from: js.UndefOr[Double] = js.native
+  var h: js.UndefOr[String | js.Array[String]] = js.native
+  var help: js.UndefOr[Boolean] = js.native
+  var model_id: js.UndefOr[String] = js.native
+  var s: js.UndefOr[String | js.Array[String]] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[d | h | m | s | ms | micros | nanos] = js.native
+  var v: js.UndefOr[Boolean] = js.native
 }
 
 object CatMlTrainedModels {
   @scala.inline
-  def apply(
-    allow_no_match: js.UndefOr[Boolean] = js.undefined,
-    bytes: b | k | kb | m | mb | g | gb | t | tb | p | pb = null,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    format: String = null,
-    from: js.UndefOr[Double] = js.undefined,
-    h: String | js.Array[String] = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    method: String = null,
-    model_id: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    s: String | js.Array[String] = null,
-    size: js.UndefOr[Double] = js.undefined,
-    source: String = null,
-    time: d | h | m | s | ms | micros | nanos = null,
-    v: js.UndefOr[Boolean] = js.undefined
-  ): CatMlTrainedModels = {
+  def apply(): CatMlTrainedModels = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allow_no_match)) __obj.updateDynamic("allow_no_match")(allow_no_match.get.asInstanceOf[js.Any])
-    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatMlTrainedModels]
   }
+  @scala.inline
+  implicit class CatMlTrainedModelsOps[Self <: CatMlTrainedModels] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllow_no_match(value: Boolean): Self = this.set("allow_no_match", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllow_no_match: Self = this.set("allow_no_match", js.undefined)
+    @scala.inline
+    def setBytes(value: b | k | kb | m | mb | g | gb | t | tb | p | pb): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytes: Self = this.set("bytes", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setHVarargs(value: String*): Self = this.set("h", js.Array(value :_*))
+    @scala.inline
+    def setH(value: String | js.Array[String]): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setHelp(value: Boolean): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelp: Self = this.set("help", js.undefined)
+    @scala.inline
+    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    @scala.inline
+    def setSVarargs(value: String*): Self = this.set("s", js.Array(value :_*))
+    @scala.inline
+    def setS(value: String | js.Array[String]): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS: Self = this.set("s", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTime(value: d | h | m | s | ms | micros | nanos): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setV(value: Boolean): Self = this.set("v", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV: Self = this.set("v", js.undefined)
+  }
+  
 }
 

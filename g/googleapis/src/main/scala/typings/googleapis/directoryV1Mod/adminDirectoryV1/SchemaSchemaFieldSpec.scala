@@ -58,30 +58,62 @@ trait SchemaSchemaFieldSpec extends js.Object {
 
 object SchemaSchemaFieldSpec {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    etag: String = null,
-    fieldId: String = null,
-    fieldName: String = null,
-    fieldType: String = null,
-    indexed: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    multiValued: js.UndefOr[Boolean] = js.undefined,
-    numericIndexingSpec: MaxValue = null,
-    readAccessType: String = null
-  ): SchemaSchemaFieldSpec = {
+  def apply(): SchemaSchemaFieldSpec = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId.asInstanceOf[js.Any])
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (fieldType != null) __obj.updateDynamic("fieldType")(fieldType.asInstanceOf[js.Any])
-    if (!js.isUndefined(indexed)) __obj.updateDynamic("indexed")(indexed.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiValued)) __obj.updateDynamic("multiValued")(multiValued.get.asInstanceOf[js.Any])
-    if (numericIndexingSpec != null) __obj.updateDynamic("numericIndexingSpec")(numericIndexingSpec.asInstanceOf[js.Any])
-    if (readAccessType != null) __obj.updateDynamic("readAccessType")(readAccessType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchemaFieldSpec]
   }
+  @scala.inline
+  implicit class SchemaSchemaFieldSpecOps[Self <: SchemaSchemaFieldSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setFieldId(value: String): Self = this.set("fieldId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldId: Self = this.set("fieldId", js.undefined)
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    @scala.inline
+    def setFieldType(value: String): Self = this.set("fieldType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldType: Self = this.set("fieldType", js.undefined)
+    @scala.inline
+    def setIndexed(value: Boolean): Self = this.set("indexed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexed: Self = this.set("indexed", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMultiValued(value: Boolean): Self = this.set("multiValued", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiValued: Self = this.set("multiValued", js.undefined)
+    @scala.inline
+    def setNumericIndexingSpec(value: MaxValue): Self = this.set("numericIndexingSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumericIndexingSpec: Self = this.set("numericIndexingSpec", js.undefined)
+    @scala.inline
+    def setReadAccessType(value: String): Self = this.set("readAccessType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadAccessType: Self = this.set("readAccessType", js.undefined)
+  }
+  
 }
 

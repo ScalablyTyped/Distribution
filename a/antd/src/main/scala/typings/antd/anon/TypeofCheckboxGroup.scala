@@ -1,8 +1,8 @@
 package typings.antd.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.antd.groupMod.CheckboxGroupProps
-import typings.antd.groupMod.default
+import typings.antd.checkboxGroupMod.CheckboxGroupProps
+import typings.antd.checkboxGroupMod.default
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

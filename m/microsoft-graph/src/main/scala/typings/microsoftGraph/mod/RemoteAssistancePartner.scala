@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RemoteAssistancePartner extends Entity {
   // Display name of the partner.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
   // Timestamp of the last request sent to Intune by the TEM partner.
-  var lastConnectionDateTime: js.UndefOr[String] = js.undefined
+  var lastConnectionDateTime: js.UndefOr[String] = js.native
   // TBD. Possible values are: notOnboarded, onboarding, onboarded.
-  var onboardingStatus: js.UndefOr[RemoteAssistanceOnboardingStatus] = js.undefined
+  var onboardingStatus: js.UndefOr[RemoteAssistanceOnboardingStatus] = js.native
   // URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
-  var onboardingUrl: js.UndefOr[String] = js.undefined
+  var onboardingUrl: js.UndefOr[String] = js.native
 }
 
 object RemoteAssistancePartner {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    id: String = null,
-    lastConnectionDateTime: String = null,
-    onboardingStatus: RemoteAssistanceOnboardingStatus = null,
-    onboardingUrl: String = null
-  ): RemoteAssistancePartner = {
+  def apply(): RemoteAssistancePartner = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastConnectionDateTime != null) __obj.updateDynamic("lastConnectionDateTime")(lastConnectionDateTime.asInstanceOf[js.Any])
-    if (onboardingStatus != null) __obj.updateDynamic("onboardingStatus")(onboardingStatus.asInstanceOf[js.Any])
-    if (onboardingUrl != null) __obj.updateDynamic("onboardingUrl")(onboardingUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteAssistancePartner]
   }
+  @scala.inline
+  implicit class RemoteAssistancePartnerOps[Self <: RemoteAssistancePartner] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLastConnectionDateTime(value: String): Self = this.set("lastConnectionDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastConnectionDateTime: Self = this.set("lastConnectionDateTime", js.undefined)
+    @scala.inline
+    def setOnboardingStatus(value: RemoteAssistanceOnboardingStatus): Self = this.set("onboardingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnboardingStatus: Self = this.set("onboardingStatus", js.undefined)
+    @scala.inline
+    def setOnboardingUrl(value: String): Self = this.set("onboardingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnboardingUrl: Self = this.set("onboardingUrl", js.undefined)
+  }
+  
 }
 

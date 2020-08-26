@@ -4,24 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommandOptions extends js.Object {
-  var errorStack: js.UndefOr[String] = js.undefined
-  var keyPrefix: js.UndefOr[String] = js.undefined
-  var replyEncoding: js.UndefOr[String | Null] = js.undefined
+  var errorStack: js.UndefOr[String] = js.native
+  var keyPrefix: js.UndefOr[String] = js.native
+  var replyEncoding: js.UndefOr[String | Null] = js.native
 }
 
 object CommandOptions {
   @scala.inline
-  def apply(
-    errorStack: String = null,
-    keyPrefix: String = null,
-    replyEncoding: js.UndefOr[Null | String] = js.undefined
-  ): CommandOptions = {
+  def apply(): CommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorStack != null) __obj.updateDynamic("errorStack")(errorStack.asInstanceOf[js.Any])
-    if (keyPrefix != null) __obj.updateDynamic("keyPrefix")(keyPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(replyEncoding)) __obj.updateDynamic("replyEncoding")(replyEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandOptions]
   }
+  @scala.inline
+  implicit class CommandOptionsOps[Self <: CommandOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorStack(value: String): Self = this.set("errorStack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorStack: Self = this.set("errorStack", js.undefined)
+    @scala.inline
+    def setKeyPrefix(value: String): Self = this.set("keyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPrefix: Self = this.set("keyPrefix", js.undefined)
+    @scala.inline
+    def setReplyEncoding(value: String): Self = this.set("replyEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyEncoding: Self = this.set("replyEncoding", js.undefined)
+    @scala.inline
+    def setReplyEncodingNull: Self = this.set("replyEncoding", null)
+  }
+  
 }
 

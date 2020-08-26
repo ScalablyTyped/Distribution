@@ -14,10 +14,26 @@ trait AwsEc2SecurityGroupIpRange extends js.Object {
 
 object AwsEc2SecurityGroupIpRange {
   @scala.inline
-  def apply(CidrIp: NonEmptyString = null): AwsEc2SecurityGroupIpRange = {
+  def apply(): AwsEc2SecurityGroupIpRange = {
     val __obj = js.Dynamic.literal()
-    if (CidrIp != null) __obj.updateDynamic("CidrIp")(CidrIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsEc2SecurityGroupIpRange]
   }
+  @scala.inline
+  implicit class AwsEc2SecurityGroupIpRangeOps[Self <: AwsEc2SecurityGroupIpRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrIp(value: NonEmptyString): Self = this.set("CidrIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrIp: Self = this.set("CidrIp", js.undefined)
+  }
+  
 }
 

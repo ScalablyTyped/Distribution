@@ -25,6 +25,7 @@ object ^ extends js.Object {
   var mimeType: String = js.native
   var versions: js.Tuple3[`2Dot1`, `3Dot0`, `4Dot0`] = js.native
   /* private */ def foldLine(input: String): String = js.native
+  /* private */ def foldLine(input: String, maxLength: js.UndefOr[scala.Nothing], hardWrap: Boolean): String = js.native
   /* private */ def foldLine(input: String, maxLength: Double): String = js.native
   /* private */ def foldLine(input: String, maxLength: Double, hardWrap: Boolean): String = js.native
   def format(card: vCard): String = js.native

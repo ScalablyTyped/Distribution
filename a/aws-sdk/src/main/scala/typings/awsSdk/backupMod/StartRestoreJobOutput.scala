@@ -14,10 +14,26 @@ trait StartRestoreJobOutput extends js.Object {
 
 object StartRestoreJobOutput {
   @scala.inline
-  def apply(RestoreJobId: RestoreJobId = null): StartRestoreJobOutput = {
+  def apply(): StartRestoreJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (RestoreJobId != null) __obj.updateDynamic("RestoreJobId")(RestoreJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartRestoreJobOutput]
   }
+  @scala.inline
+  implicit class StartRestoreJobOutputOps[Self <: StartRestoreJobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestoreJobId(value: RestoreJobId): Self = this.set("RestoreJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestoreJobId: Self = this.set("RestoreJobId", js.undefined)
+  }
+  
 }
 

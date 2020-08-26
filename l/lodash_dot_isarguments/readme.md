@@ -12,7 +12,7 @@ The lodash method `_.isArguments` exported as a module.
 | Keywords           | lodash-modularized, isarguments |
 | # releases         | 0 |
 | # dependents       | 37 |
-| # downloads        | 147803737 |
+| # downloads        | 147628281 |
 | # stars            | 0 |
 
 ## Links

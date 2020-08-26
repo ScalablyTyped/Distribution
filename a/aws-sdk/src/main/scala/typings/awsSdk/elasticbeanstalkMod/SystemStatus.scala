@@ -18,11 +18,32 @@ trait SystemStatus extends js.Object {
 
 object SystemStatus {
   @scala.inline
-  def apply(CPUUtilization: CPUUtilization = null, LoadAverage: LoadAverage = null): SystemStatus = {
+  def apply(): SystemStatus = {
     val __obj = js.Dynamic.literal()
-    if (CPUUtilization != null) __obj.updateDynamic("CPUUtilization")(CPUUtilization.asInstanceOf[js.Any])
-    if (LoadAverage != null) __obj.updateDynamic("LoadAverage")(LoadAverage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemStatus]
   }
+  @scala.inline
+  implicit class SystemStatusOps[Self <: SystemStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCPUUtilization(value: CPUUtilization): Self = this.set("CPUUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCPUUtilization: Self = this.set("CPUUtilization", js.undefined)
+    @scala.inline
+    def setLoadAverageVarargs(value: LoadAverageValue*): Self = this.set("LoadAverage", js.Array(value :_*))
+    @scala.inline
+    def setLoadAverage(value: LoadAverage): Self = this.set("LoadAverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadAverage: Self = this.set("LoadAverage", js.undefined)
+  }
+  
 }
 

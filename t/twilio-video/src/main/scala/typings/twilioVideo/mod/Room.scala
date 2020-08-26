@@ -13,6 +13,7 @@ class Room () extends EventEmitter {
   var dominantSpeaker: RemoteParticipant | Null = js.native
   var isRecording: Boolean = js.native
   var localParticipant: LocalParticipant = js.native
+  var mediaRegion: String = js.native
   var name: String = js.native
   var participants: Map[SID, RemoteParticipant] = js.native
   var sid: typings.twilioVideo.mod.Room.SID = js.native

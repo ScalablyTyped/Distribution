@@ -19,24 +19,46 @@ trait GetInstancesArgs extends js.Object {
     */
   val instanceStateNames: js.UndefOr[js.Array[String]] = js.native
   /**
-    * A mapping of tags, each pair of which must
+    * A map of tags, each pair of which must
     * exactly match a pair on desired instances.
     */
-  val instanceTags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val instanceTags: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object GetInstancesArgs {
   @scala.inline
-  def apply(
-    filters: js.Array[GetInstancesFilter] = null,
-    instanceStateNames: js.Array[String] = null,
-    instanceTags: StringDictionary[js.Any] = null
-  ): GetInstancesArgs = {
+  def apply(): GetInstancesArgs = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (instanceStateNames != null) __obj.updateDynamic("instanceStateNames")(instanceStateNames.asInstanceOf[js.Any])
-    if (instanceTags != null) __obj.updateDynamic("instanceTags")(instanceTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstancesArgs]
   }
+  @scala.inline
+  implicit class GetInstancesArgsOps[Self <: GetInstancesArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: GetInstancesFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetInstancesFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setInstanceStateNamesVarargs(value: String*): Self = this.set("instanceStateNames", js.Array(value :_*))
+    @scala.inline
+    def setInstanceStateNames(value: js.Array[String]): Self = this.set("instanceStateNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceStateNames: Self = this.set("instanceStateNames", js.undefined)
+    @scala.inline
+    def setInstanceTags(value: StringDictionary[String]): Self = this.set("instanceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTags: Self = this.set("instanceTags", js.undefined)
+  }
+  
 }
 

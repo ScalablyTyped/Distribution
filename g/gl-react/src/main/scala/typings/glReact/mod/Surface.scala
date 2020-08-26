@@ -22,8 +22,24 @@ class Surface[T] ()
   var root: Node = js.native
   var shaders: StringDictionary[js.Any] = js.native
   def capture(): js.Array[_] = js.native
+  def capture(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    w: js.UndefOr[scala.Nothing],
+    h: Double
+  ): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double, h: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: Double): js.Array[_] = js.native
+  def capture(x: js.UndefOr[scala.Nothing], y: Double, w: Double, h: Double): js.Array[_] = js.native
   def capture(x: Double): js.Array[_] = js.native
+  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
+  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: Double): js.Array[_] = js.native
+  def capture(x: Double, y: js.UndefOr[scala.Nothing], w: Double, h: Double): js.Array[_] = js.native
   def capture(x: Double, y: Double): js.Array[_] = js.native
+  def capture(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): js.Array[_] = js.native
   def capture(x: Double, y: Double, w: Double): js.Array[_] = js.native
   def capture(x: Double, y: Double, w: Double, h: Double): js.Array[_] = js.native
   def captureAsBlob(args: js.Any*): js.Promise[Blob] = js.native

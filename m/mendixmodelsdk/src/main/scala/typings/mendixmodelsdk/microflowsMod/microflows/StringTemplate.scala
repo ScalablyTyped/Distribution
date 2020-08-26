@@ -25,7 +25,7 @@ class StringTemplate protected () extends Template {
   @JSName("model")
   var model_FStringTemplate: IModel = js.native
   def text: String = js.native
-  def text(newValue: String): js.Any = js.native
+  def text_=(newValue: String): Unit = js.native
 }
 
 /* static members */

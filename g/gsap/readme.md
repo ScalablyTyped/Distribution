@@ -10,9 +10,9 @@ GSAP is a JavaScript library for building high-performance animations that work 
 | ------------------ | :-------------: |
 | Full name          | gsap |
 | Keywords           | GSAP, GreenSock, animation, MotionPathPlugin, motion, motionPath, easing, JavaScript, PixiPlugin, CustomEase, SVG, 3D, 2D, transform, morph, morphing, tweening |
-| # releases         | 17 |
-| # dependents       | 336 |
-| # downloads        | 4918784 |
+| # releases         | 19 |
+| # dependents       | 346 |
+| # downloads        | 5040767 |
 | # stars            | 51 |
 
 ## Links

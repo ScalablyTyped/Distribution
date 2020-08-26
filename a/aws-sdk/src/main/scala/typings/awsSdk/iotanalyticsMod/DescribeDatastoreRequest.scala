@@ -18,10 +18,28 @@ trait DescribeDatastoreRequest extends js.Object {
 
 object DescribeDatastoreRequest {
   @scala.inline
-  def apply(datastoreName: DatastoreName, includeStatistics: js.UndefOr[IncludeStatisticsFlag] = js.undefined): DescribeDatastoreRequest = {
+  def apply(datastoreName: DatastoreName): DescribeDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeStatistics)) __obj.updateDynamic("includeStatistics")(includeStatistics.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDatastoreRequest]
   }
+  @scala.inline
+  implicit class DescribeDatastoreRequestOps[Self <: DescribeDatastoreRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatastoreName(value: DatastoreName): Self = this.set("datastoreName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeStatistics(value: IncludeStatisticsFlag): Self = this.set("includeStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeStatistics: Self = this.set("includeStatistics", js.undefined)
+  }
+  
 }
 

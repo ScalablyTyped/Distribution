@@ -4,38 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AdministrationRegion extends js.Object {
   /** The election administration body for this area. */
-  var electionAdministrationBody: js.UndefOr[AdministrativeBody] = js.undefined
+  var electionAdministrationBody: js.UndefOr[AdministrativeBody] = js.native
   /**
     * An ID for this object. IDs may change in future requests and should not be cached. Access to this field requires special access that can be requested
     * from the Request more link on the Quotas page.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** The city or county that provides election information for this voter. This object can have the same elements as state. */
-  var local_jurisdiction: js.UndefOr[AdministrationRegion] = js.undefined
+  var local_jurisdiction: js.UndefOr[AdministrationRegion] = js.native
   /** The name of the jurisdiction. */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** A list of sources for this area. If multiple sources are listed the data has been aggregated from those sources. */
-  var sources: js.UndefOr[js.Array[Source]] = js.undefined
+  var sources: js.UndefOr[js.Array[Source]] = js.native
 }
 
 object AdministrationRegion {
   @scala.inline
-  def apply(
-    electionAdministrationBody: AdministrativeBody = null,
-    id: String = null,
-    local_jurisdiction: AdministrationRegion = null,
-    name: String = null,
-    sources: js.Array[Source] = null
-  ): AdministrationRegion = {
+  def apply(): AdministrationRegion = {
     val __obj = js.Dynamic.literal()
-    if (electionAdministrationBody != null) __obj.updateDynamic("electionAdministrationBody")(electionAdministrationBody.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (local_jurisdiction != null) __obj.updateDynamic("local_jurisdiction")(local_jurisdiction.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdministrationRegion]
   }
+  @scala.inline
+  implicit class AdministrationRegionOps[Self <: AdministrationRegion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElectionAdministrationBody(value: AdministrativeBody): Self = this.set("electionAdministrationBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElectionAdministrationBody: Self = this.set("electionAdministrationBody", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLocal_jurisdiction(value: AdministrationRegion): Self = this.set("local_jurisdiction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocal_jurisdiction: Self = this.set("local_jurisdiction", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: Source*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: js.Array[Source]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+  }
+  
 }
 

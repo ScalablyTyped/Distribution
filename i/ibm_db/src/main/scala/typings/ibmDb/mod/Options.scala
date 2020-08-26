@@ -4,33 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var connectTimeout: js.UndefOr[Double | Null] = js.undefined
-  var connected: js.UndefOr[Boolean] = js.undefined
-  var fetchMode: js.UndefOr[Double | Null] = js.undefined
-  var odbc: js.UndefOr[ODBC] = js.undefined
-  var queue: js.UndefOr[SimpleQueue | js.Array[_]] = js.undefined
-  var systemNaming: js.UndefOr[Boolean] = js.undefined
+  var connectTimeout: js.UndefOr[Double | Null] = js.native
+  var connected: js.UndefOr[Boolean] = js.native
+  var fetchMode: js.UndefOr[Double | Null] = js.native
+  var odbc: js.UndefOr[ODBC] = js.native
+  var queue: js.UndefOr[SimpleQueue | js.Array[_]] = js.native
+  var systemNaming: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    connectTimeout: js.UndefOr[Null | Double] = js.undefined,
-    connected: js.UndefOr[Boolean] = js.undefined,
-    fetchMode: js.UndefOr[Null | Double] = js.undefined,
-    odbc: ODBC = null,
-    queue: SimpleQueue | js.Array[_] = null,
-    systemNaming: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchMode)) __obj.updateDynamic("fetchMode")(fetchMode.asInstanceOf[js.Any])
-    if (odbc != null) __obj.updateDynamic("odbc")(odbc.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (!js.isUndefined(systemNaming)) __obj.updateDynamic("systemNaming")(systemNaming.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    @scala.inline
+    def setConnectTimeoutNull: Self = this.set("connectTimeout", null)
+    @scala.inline
+    def setConnected(value: Boolean): Self = this.set("connected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnected: Self = this.set("connected", js.undefined)
+    @scala.inline
+    def setFetchMode(value: Double): Self = this.set("fetchMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchMode: Self = this.set("fetchMode", js.undefined)
+    @scala.inline
+    def setFetchModeNull: Self = this.set("fetchMode", null)
+    @scala.inline
+    def setOdbc(value: ODBC): Self = this.set("odbc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOdbc: Self = this.set("odbc", js.undefined)
+    @scala.inline
+    def setQueueVarargs(value: js.Any*): Self = this.set("queue", js.Array(value :_*))
+    @scala.inline
+    def setQueue(value: SimpleQueue | js.Array[_]): Self = this.set("queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("queue", js.undefined)
+    @scala.inline
+    def setSystemNaming(value: Boolean): Self = this.set("systemNaming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemNaming: Self = this.set("systemNaming", js.undefined)
+  }
+  
 }
 

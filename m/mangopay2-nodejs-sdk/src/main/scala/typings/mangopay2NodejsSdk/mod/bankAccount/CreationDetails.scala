@@ -34,9 +34,8 @@ object CreationDetails {
     __obj.asInstanceOf[CreationDetails]
   }
   @scala.inline
-  def IBANDetails(IBAN: String, OwnerAddress: AddressType, OwnerName: String, Type: IBAN, BIC: String = null): CreationDetails = {
+  def IBANDetails(IBAN: String, OwnerAddress: AddressType, OwnerName: String, Type: IBAN): CreationDetails = {
     val __obj = js.Dynamic.literal(IBAN = IBAN.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (BIC != null) __obj.updateDynamic("BIC")(BIC.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreationDetails]
   }
   @scala.inline
@@ -57,16 +56,8 @@ object CreationDetails {
     __obj.asInstanceOf[CreationDetails]
   }
   @scala.inline
-  def USDetails(
-    ABA: String,
-    AccountNumber: String,
-    OwnerAddress: AddressType,
-    OwnerName: String,
-    Type: US,
-    DepositAccountType: DepositAccountType = null
-  ): CreationDetails = {
+  def USDetails(ABA: String, AccountNumber: String, OwnerAddress: AddressType, OwnerName: String, Type: US): CreationDetails = {
     val __obj = js.Dynamic.literal(ABA = ABA.asInstanceOf[js.Any], AccountNumber = AccountNumber.asInstanceOf[js.Any], OwnerAddress = OwnerAddress.asInstanceOf[js.Any], OwnerName = OwnerName.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (DepositAccountType != null) __obj.updateDynamic("DepositAccountType")(DepositAccountType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreationDetails]
   }
 }

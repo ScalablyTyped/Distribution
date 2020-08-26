@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/styles", JSImport.Namespace)
+@JSImport("ui-box/dist/src/styles", JSImport.Namespace)
 @js.native
 object stylesMod extends js.Object {
   def add(styles: String): Unit = js.native

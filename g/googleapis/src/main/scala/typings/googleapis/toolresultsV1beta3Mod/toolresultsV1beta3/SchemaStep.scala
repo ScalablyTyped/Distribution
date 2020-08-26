@@ -156,40 +156,86 @@ trait SchemaStep extends js.Object {
 
 object SchemaStep {
   @scala.inline
-  def apply(
-    completionTime: SchemaTimestamp = null,
-    creationTime: SchemaTimestamp = null,
-    description: String = null,
-    deviceUsageDuration: SchemaDuration = null,
-    dimensionValue: js.Array[SchemaStepDimensionValueEntry] = null,
-    hasImages: js.UndefOr[Boolean] = js.undefined,
-    labels: js.Array[SchemaStepLabelsEntry] = null,
-    multiStep: SchemaMultiStep = null,
-    name: String = null,
-    outcome: SchemaOutcome = null,
-    runDuration: SchemaDuration = null,
-    state: String = null,
-    stepId: String = null,
-    testExecutionStep: SchemaTestExecutionStep = null,
-    toolExecutionStep: SchemaToolExecutionStep = null
-  ): SchemaStep = {
+  def apply(): SchemaStep = {
     val __obj = js.Dynamic.literal()
-    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceUsageDuration != null) __obj.updateDynamic("deviceUsageDuration")(deviceUsageDuration.asInstanceOf[js.Any])
-    if (dimensionValue != null) __obj.updateDynamic("dimensionValue")(dimensionValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasImages)) __obj.updateDynamic("hasImages")(hasImages.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (multiStep != null) __obj.updateDynamic("multiStep")(multiStep.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
-    if (runDuration != null) __obj.updateDynamic("runDuration")(runDuration.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
-    if (testExecutionStep != null) __obj.updateDynamic("testExecutionStep")(testExecutionStep.asInstanceOf[js.Any])
-    if (toolExecutionStep != null) __obj.updateDynamic("toolExecutionStep")(toolExecutionStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStep]
   }
+  @scala.inline
+  implicit class SchemaStepOps[Self <: SchemaStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTime(value: SchemaTimestamp): Self = this.set("completionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTime: Self = this.set("completionTime", js.undefined)
+    @scala.inline
+    def setCreationTime(value: SchemaTimestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDeviceUsageDuration(value: SchemaDuration): Self = this.set("deviceUsageDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceUsageDuration: Self = this.set("deviceUsageDuration", js.undefined)
+    @scala.inline
+    def setDimensionValueVarargs(value: SchemaStepDimensionValueEntry*): Self = this.set("dimensionValue", js.Array(value :_*))
+    @scala.inline
+    def setDimensionValue(value: js.Array[SchemaStepDimensionValueEntry]): Self = this.set("dimensionValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionValue: Self = this.set("dimensionValue", js.undefined)
+    @scala.inline
+    def setHasImages(value: Boolean): Self = this.set("hasImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasImages: Self = this.set("hasImages", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SchemaStepLabelsEntry*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[SchemaStepLabelsEntry]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMultiStep(value: SchemaMultiStep): Self = this.set("multiStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiStep: Self = this.set("multiStep", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutcome(value: SchemaOutcome): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    @scala.inline
+    def setRunDuration(value: SchemaDuration): Self = this.set("runDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunDuration: Self = this.set("runDuration", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepId: Self = this.set("stepId", js.undefined)
+    @scala.inline
+    def setTestExecutionStep(value: SchemaTestExecutionStep): Self = this.set("testExecutionStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestExecutionStep: Self = this.set("testExecutionStep", js.undefined)
+    @scala.inline
+    def setToolExecutionStep(value: SchemaToolExecutionStep): Self = this.set("toolExecutionStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolExecutionStep: Self = this.set("toolExecutionStep", js.undefined)
+  }
+  
 }
 

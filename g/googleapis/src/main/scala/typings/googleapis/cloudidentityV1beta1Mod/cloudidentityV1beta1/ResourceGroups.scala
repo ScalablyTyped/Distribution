@@ -28,6 +28,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceGroupsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceGroupsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -55,6 +56,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGroupsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceGroupsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -82,6 +84,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def get(params: ParamsResourceGroupsGet): GaxiosPromise[SchemaGroup] = js.native
   def get(params: ParamsResourceGroupsGet, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def get(
@@ -112,6 +115,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def lookup(): GaxiosPromise[SchemaLookupGroupNameResponse] = js.native
   def lookup(callback: BodyResponseCallback[SchemaLookupGroupNameResponse]): Unit = js.native
+  def lookup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLookupGroupNameResponse] = js.native
   def lookup(params: ParamsResourceGroupsLookup): GaxiosPromise[SchemaLookupGroupNameResponse] = js.native
   def lookup(params: ParamsResourceGroupsLookup, callback: BodyResponseCallback[SchemaLookupGroupNameResponse]): Unit = js.native
   def lookup(
@@ -141,6 +145,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceGroupsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceGroupsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -171,6 +176,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchGroupsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchGroupsResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchGroupsResponse] = js.native
   def search(params: ParamsResourceGroupsSearch): GaxiosPromise[SchemaSearchGroupsResponse] = js.native
   def search(params: ParamsResourceGroupsSearch, callback: BodyResponseCallback[SchemaSearchGroupsResponse]): Unit = js.native
   def search(

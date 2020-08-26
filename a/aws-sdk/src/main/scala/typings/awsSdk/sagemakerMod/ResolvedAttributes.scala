@@ -16,16 +16,34 @@ trait ResolvedAttributes extends js.Object {
 
 object ResolvedAttributes {
   @scala.inline
-  def apply(
-    AutoMLJobObjective: AutoMLJobObjective = null,
-    CompletionCriteria: AutoMLJobCompletionCriteria = null,
-    ProblemType: ProblemType = null
-  ): ResolvedAttributes = {
+  def apply(): ResolvedAttributes = {
     val __obj = js.Dynamic.literal()
-    if (AutoMLJobObjective != null) __obj.updateDynamic("AutoMLJobObjective")(AutoMLJobObjective.asInstanceOf[js.Any])
-    if (CompletionCriteria != null) __obj.updateDynamic("CompletionCriteria")(CompletionCriteria.asInstanceOf[js.Any])
-    if (ProblemType != null) __obj.updateDynamic("ProblemType")(ProblemType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedAttributes]
   }
+  @scala.inline
+  implicit class ResolvedAttributesOps[Self <: ResolvedAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMLJobObjective(value: AutoMLJobObjective): Self = this.set("AutoMLJobObjective", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLJobObjective: Self = this.set("AutoMLJobObjective", js.undefined)
+    @scala.inline
+    def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = this.set("CompletionCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionCriteria: Self = this.set("CompletionCriteria", js.undefined)
+    @scala.inline
+    def setProblemType(value: ProblemType): Self = this.set("ProblemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProblemType: Self = this.set("ProblemType", js.undefined)
+  }
+  
 }
 

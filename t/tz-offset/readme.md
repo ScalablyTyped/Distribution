@@ -12,7 +12,7 @@ Javascript Timezone Offset
 | Keywords           | timezone, offset, time, zone |
 | # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 1856450 |
+| # downloads        | 2016080 |
 | # stars            | 0 |
 
 ## Links

@@ -18,11 +18,30 @@ trait DeleteChapCredentialsOutput extends js.Object {
 
 object DeleteChapCredentialsOutput {
   @scala.inline
-  def apply(InitiatorName: IqnName = null, TargetARN: TargetARN = null): DeleteChapCredentialsOutput = {
+  def apply(): DeleteChapCredentialsOutput = {
     val __obj = js.Dynamic.literal()
-    if (InitiatorName != null) __obj.updateDynamic("InitiatorName")(InitiatorName.asInstanceOf[js.Any])
-    if (TargetARN != null) __obj.updateDynamic("TargetARN")(TargetARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteChapCredentialsOutput]
   }
+  @scala.inline
+  implicit class DeleteChapCredentialsOutputOps[Self <: DeleteChapCredentialsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitiatorName(value: IqnName): Self = this.set("InitiatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiatorName: Self = this.set("InitiatorName", js.undefined)
+    @scala.inline
+    def setTargetARN(value: TargetARN): Self = this.set("TargetARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetARN: Self = this.set("TargetARN", js.undefined)
+  }
+  
 }
 

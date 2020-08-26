@@ -15,20 +15,42 @@ trait BannerImageUrl extends js.Object {
 
 object BannerImageUrl {
   @scala.inline
-  def apply(
-    bannerImageUrl: String = null,
-    imageUrl: String = null,
-    seriesId: String = null,
-    seriesType: String = null,
-    title: String = null
-  ): BannerImageUrl = {
+  def apply(): BannerImageUrl = {
     val __obj = js.Dynamic.literal()
-    if (bannerImageUrl != null) __obj.updateDynamic("bannerImageUrl")(bannerImageUrl.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (seriesId != null) __obj.updateDynamic("seriesId")(seriesId.asInstanceOf[js.Any])
-    if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerImageUrl]
   }
+  @scala.inline
+  implicit class BannerImageUrlOps[Self <: BannerImageUrl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBannerImageUrl(value: String): Self = this.set("bannerImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerImageUrl: Self = this.set("bannerImageUrl", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setSeriesId(value: String): Self = this.set("seriesId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesId: Self = this.set("seriesId", js.undefined)
+    @scala.inline
+    def setSeriesType(value: String): Self = this.set("seriesType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesType: Self = this.set("seriesType", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

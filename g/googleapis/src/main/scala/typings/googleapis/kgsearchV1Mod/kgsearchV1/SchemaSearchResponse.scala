@@ -27,12 +27,36 @@ trait SchemaSearchResponse extends js.Object {
 
 object SchemaSearchResponse {
   @scala.inline
-  def apply(`@context`: js.Any = null, `@type`: js.Any = null, itemListElement: js.Array[_] = null): SchemaSearchResponse = {
+  def apply(): SchemaSearchResponse = {
     val __obj = js.Dynamic.literal()
-    if (`@context` != null) __obj.updateDynamic("@context")(`@context`.asInstanceOf[js.Any])
-    if (`@type` != null) __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
-    if (itemListElement != null) __obj.updateDynamic("itemListElement")(itemListElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchResponse]
   }
+  @scala.inline
+  implicit class SchemaSearchResponseOps[Self <: SchemaSearchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `set@context`(value: js.Any): Self = this.set("@context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete@context`: Self = this.set("@context", js.undefined)
+    @scala.inline
+    def `set@type`(value: js.Any): Self = this.set("@type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete@type`: Self = this.set("@type", js.undefined)
+    @scala.inline
+    def setItemListElementVarargs(value: js.Any*): Self = this.set("itemListElement", js.Array(value :_*))
+    @scala.inline
+    def setItemListElement(value: js.Array[_]): Self = this.set("itemListElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemListElement: Self = this.set("itemListElement", js.undefined)
+  }
+  
 }
 

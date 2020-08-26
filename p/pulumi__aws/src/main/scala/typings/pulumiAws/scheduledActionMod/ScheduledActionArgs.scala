@@ -44,24 +44,50 @@ trait ScheduledActionArgs extends js.Object {
 
 object ScheduledActionArgs {
   @scala.inline
-  def apply(
-    resourceId: Input[String],
-    serviceNamespace: Input[String],
-    endTime: Input[String] = null,
-    name: Input[String] = null,
-    scalableDimension: Input[String] = null,
-    scalableTargetAction: Input[ScheduledActionScalableTargetAction] = null,
-    schedule: Input[String] = null,
-    startTime: Input[String] = null
-  ): ScheduledActionArgs = {
+  def apply(resourceId: Input[String], serviceNamespace: Input[String]): ScheduledActionArgs = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], serviceNamespace = serviceNamespace.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (scalableDimension != null) __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
-    if (scalableTargetAction != null) __obj.updateDynamic("scalableTargetAction")(scalableTargetAction.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledActionArgs]
   }
+  @scala.inline
+  implicit class ScheduledActionArgsOps[Self <: ScheduledActionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceId(value: Input[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceNamespace(value: Input[String]): Self = this.set("serviceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: Input[String]): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setScalableDimension(value: Input[String]): Self = this.set("scalableDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalableDimension: Self = this.set("scalableDimension", js.undefined)
+    @scala.inline
+    def setScalableTargetAction(value: Input[ScheduledActionScalableTargetAction]): Self = this.set("scalableTargetAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalableTargetAction: Self = this.set("scalableTargetAction", js.undefined)
+    @scala.inline
+    def setSchedule(value: Input[String]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setStartTime(value: Input[String]): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

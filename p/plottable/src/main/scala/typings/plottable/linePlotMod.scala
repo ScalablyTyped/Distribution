@@ -68,6 +68,7 @@ object linePlotMod extends js.Object {
       * @private
       */
     /* protected */ def _d3LineFactory(dataset: Dataset): Line_[_] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: js.UndefOr[scala.Nothing], yProjector: IAccessor[_]): Line_[_] = js.native
     /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[_]): Line_[_] = js.native
     /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[_], yProjector: IAccessor[_]): Line_[_] = js.native
     /* private */ def _filterCroppedRendering(dataset: js.Any, indices: js.Any): js.Any = js.native

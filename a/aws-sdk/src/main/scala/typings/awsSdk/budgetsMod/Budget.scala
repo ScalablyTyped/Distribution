@@ -50,27 +50,56 @@ trait Budget extends js.Object {
 
 object Budget {
   @scala.inline
-  def apply(
-    BudgetName: BudgetName,
-    BudgetType: BudgetType,
-    TimeUnit: TimeUnit,
-    BudgetLimit: Spend = null,
-    CalculatedSpend: CalculatedSpend = null,
-    CostFilters: CostFilters = null,
-    CostTypes: CostTypes = null,
-    LastUpdatedTime: GenericTimestamp = null,
-    PlannedBudgetLimits: PlannedBudgetLimits = null,
-    TimePeriod: TimePeriod = null
-  ): Budget = {
+  def apply(BudgetName: BudgetName, BudgetType: BudgetType, TimeUnit: TimeUnit): Budget = {
     val __obj = js.Dynamic.literal(BudgetName = BudgetName.asInstanceOf[js.Any], BudgetType = BudgetType.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])
-    if (BudgetLimit != null) __obj.updateDynamic("BudgetLimit")(BudgetLimit.asInstanceOf[js.Any])
-    if (CalculatedSpend != null) __obj.updateDynamic("CalculatedSpend")(CalculatedSpend.asInstanceOf[js.Any])
-    if (CostFilters != null) __obj.updateDynamic("CostFilters")(CostFilters.asInstanceOf[js.Any])
-    if (CostTypes != null) __obj.updateDynamic("CostTypes")(CostTypes.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (PlannedBudgetLimits != null) __obj.updateDynamic("PlannedBudgetLimits")(PlannedBudgetLimits.asInstanceOf[js.Any])
-    if (TimePeriod != null) __obj.updateDynamic("TimePeriod")(TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Budget]
   }
+  @scala.inline
+  implicit class BudgetOps[Self <: Budget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBudgetName(value: BudgetName): Self = this.set("BudgetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBudgetType(value: BudgetType): Self = this.set("BudgetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeUnit(value: TimeUnit): Self = this.set("TimeUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBudgetLimit(value: Spend): Self = this.set("BudgetLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudgetLimit: Self = this.set("BudgetLimit", js.undefined)
+    @scala.inline
+    def setCalculatedSpend(value: CalculatedSpend): Self = this.set("CalculatedSpend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculatedSpend: Self = this.set("CalculatedSpend", js.undefined)
+    @scala.inline
+    def setCostFilters(value: CostFilters): Self = this.set("CostFilters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostFilters: Self = this.set("CostFilters", js.undefined)
+    @scala.inline
+    def setCostTypes(value: CostTypes): Self = this.set("CostTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostTypes: Self = this.set("CostTypes", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: GenericTimestamp): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setPlannedBudgetLimits(value: PlannedBudgetLimits): Self = this.set("PlannedBudgetLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlannedBudgetLimits: Self = this.set("PlannedBudgetLimits", js.undefined)
+    @scala.inline
+    def setTimePeriod(value: TimePeriod): Self = this.set("TimePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePeriod: Self = this.set("TimePeriod", js.undefined)
+  }
+  
 }
 

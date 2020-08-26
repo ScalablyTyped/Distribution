@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBankAccountTokenCreationOptions extends ITokenCreationOptionsBase {
   /**
     * The bank account this token will represent. If you also pass in
@@ -13,22 +14,29 @@ trait IBankAccountTokenCreationOptions extends ITokenCreationOptionsBase {
     * customer, a object containing a user's bank account details,
     * with the options described below.
     */
-  var bank_account: String | ISourceCreationOptions
+  var bank_account: String | ISourceCreationOptions = js.native
 }
 
 object IBankAccountTokenCreationOptions {
   @scala.inline
-  def apply(
-    bank_account: String | ISourceCreationOptions,
-    customer: String = null,
-    expand: js.Array[String] = null,
-    include: js.Array[String] = null
-  ): IBankAccountTokenCreationOptions = {
+  def apply(bank_account: String | ISourceCreationOptions): IBankAccountTokenCreationOptions = {
     val __obj = js.Dynamic.literal(bank_account = bank_account.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBankAccountTokenCreationOptions]
   }
+  @scala.inline
+  implicit class IBankAccountTokenCreationOptionsOps[Self <: IBankAccountTokenCreationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBank_account(value: String | ISourceCreationOptions): Self = this.set("bank_account", value.asInstanceOf[js.Any])
+  }
+  
 }
 

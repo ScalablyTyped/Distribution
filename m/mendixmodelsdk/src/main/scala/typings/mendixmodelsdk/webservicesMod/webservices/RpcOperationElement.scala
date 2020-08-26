@@ -27,7 +27,7 @@ class RpcOperationElement protected () extends Element {
   def containerAsOperationInfo: OperationInfo = js.native
   def messagePartElements: IList[RpcMessagePartElement] = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
 }
 
 /* static members */

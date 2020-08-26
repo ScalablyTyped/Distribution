@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__auto-init
 
-Typings are for version 0.35
+Typings are for version 7.0.0
 
 ## Library description:
 Declarative, easy-to-use auto-initialization for Material Components for the web
@@ -10,9 +10,9 @@ Declarative, easy-to-use auto-initialization for Material Components for the web
 | ------------------ | :-------------: |
 | Full name          | @material/auto-init |
 | Keywords           | - |
-| # releases         | 93 |
+| # releases         | 143 |
 | # dependents       | 10 |
-| # downloads        | 914462 |
+| # downloads        | 934672 |
 | # stars            | 0 |
 
 ## Links
@@ -24,7 +24,7 @@ Declarative, easy-to-use auto-initialization for Material Components for the web
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

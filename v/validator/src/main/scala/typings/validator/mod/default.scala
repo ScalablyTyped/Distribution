@@ -353,6 +353,7 @@ object default extends js.Object {
     * @param [options] - Options
     */
   def isMobilePhone(str: String): Boolean = js.native
+  def isMobilePhone(str: String, locale: js.UndefOr[scala.Nothing], options: IsMobilePhoneOptions): Boolean = js.native
   def isMobilePhone(str: String, locale: js.Array[MobilePhoneLocale]): Boolean = js.native
   def isMobilePhone(str: String, locale: js.Array[MobilePhoneLocale], options: IsMobilePhoneOptions): Boolean = js.native
   def isMobilePhone(str: String, locale: MobilePhoneLocale): Boolean = js.native

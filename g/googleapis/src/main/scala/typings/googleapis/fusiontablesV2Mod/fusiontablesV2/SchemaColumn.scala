@@ -90,34 +90,72 @@ trait SchemaColumn extends js.Object {
 
 object SchemaColumn {
   @scala.inline
-  def apply(
-    baseColumn: ColumnId = null,
-    columnId: js.UndefOr[Double] = js.undefined,
-    columnJsonSchema: String = null,
-    columnPropertiesJson: String = null,
-    description: String = null,
-    formatPattern: String = null,
-    graphPredicate: String = null,
-    kind: String = null,
-    name: String = null,
-    `type`: String = null,
-    validValues: js.Array[String] = null,
-    validateData: js.UndefOr[Boolean] = js.undefined
-  ): SchemaColumn = {
+  def apply(): SchemaColumn = {
     val __obj = js.Dynamic.literal()
-    if (baseColumn != null) __obj.updateDynamic("baseColumn")(baseColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnId)) __obj.updateDynamic("columnId")(columnId.get.asInstanceOf[js.Any])
-    if (columnJsonSchema != null) __obj.updateDynamic("columnJsonSchema")(columnJsonSchema.asInstanceOf[js.Any])
-    if (columnPropertiesJson != null) __obj.updateDynamic("columnPropertiesJson")(columnPropertiesJson.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (formatPattern != null) __obj.updateDynamic("formatPattern")(formatPattern.asInstanceOf[js.Any])
-    if (graphPredicate != null) __obj.updateDynamic("graphPredicate")(graphPredicate.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validValues != null) __obj.updateDynamic("validValues")(validValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateData)) __obj.updateDynamic("validateData")(validateData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaColumn]
   }
+  @scala.inline
+  implicit class SchemaColumnOps[Self <: SchemaColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseColumn(value: ColumnId): Self = this.set("baseColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseColumn: Self = this.set("baseColumn", js.undefined)
+    @scala.inline
+    def setColumnId(value: Double): Self = this.set("columnId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnId: Self = this.set("columnId", js.undefined)
+    @scala.inline
+    def setColumnJsonSchema(value: String): Self = this.set("columnJsonSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnJsonSchema: Self = this.set("columnJsonSchema", js.undefined)
+    @scala.inline
+    def setColumnPropertiesJson(value: String): Self = this.set("columnPropertiesJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnPropertiesJson: Self = this.set("columnPropertiesJson", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFormatPattern(value: String): Self = this.set("formatPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatPattern: Self = this.set("formatPattern", js.undefined)
+    @scala.inline
+    def setGraphPredicate(value: String): Self = this.set("graphPredicate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraphPredicate: Self = this.set("graphPredicate", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValidValuesVarargs(value: String*): Self = this.set("validValues", js.Array(value :_*))
+    @scala.inline
+    def setValidValues(value: js.Array[String]): Self = this.set("validValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidValues: Self = this.set("validValues", js.undefined)
+    @scala.inline
+    def setValidateData(value: Boolean): Self = this.set("validateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateData: Self = this.set("validateData", js.undefined)
+  }
+  
 }
 

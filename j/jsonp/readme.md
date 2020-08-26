@@ -11,8 +11,8 @@ A sane JSONP implementation.
 | Full name          | jsonp |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 201 |
-| # downloads        | 6839010 |
+| # dependents       | 206 |
+| # downloads        | 6980319 |
 | # stars            | 17 |
 
 ## Links

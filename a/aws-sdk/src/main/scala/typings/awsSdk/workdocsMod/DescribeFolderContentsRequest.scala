@@ -42,25 +42,52 @@ trait DescribeFolderContentsRequest extends js.Object {
 
 object DescribeFolderContentsRequest {
   @scala.inline
-  def apply(
-    FolderId: ResourceIdType,
-    AuthenticationToken: AuthenticationHeaderType = null,
-    Include: FieldNamesType = null,
-    Limit: js.UndefOr[LimitType] = js.undefined,
-    Marker: PageMarkerType = null,
-    Order: OrderType = null,
-    Sort: ResourceSortType = null,
-    Type: FolderContentType = null
-  ): DescribeFolderContentsRequest = {
+  def apply(FolderId: ResourceIdType): DescribeFolderContentsRequest = {
     val __obj = js.Dynamic.literal(FolderId = FolderId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (Include != null) __obj.updateDynamic("Include")(Include.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (Order != null) __obj.updateDynamic("Order")(Order.asInstanceOf[js.Any])
-    if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFolderContentsRequest]
   }
+  @scala.inline
+  implicit class DescribeFolderContentsRequestOps[Self <: DescribeFolderContentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFolderId(value: ResourceIdType): Self = this.set("FolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    @scala.inline
+    def setInclude(value: FieldNamesType): Self = this.set("Include", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude: Self = this.set("Include", js.undefined)
+    @scala.inline
+    def setLimit(value: LimitType): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setOrder(value: OrderType): Self = this.set("Order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("Order", js.undefined)
+    @scala.inline
+    def setSort(value: ResourceSortType): Self = this.set("Sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("Sort", js.undefined)
+    @scala.inline
+    def setType(value: FolderContentType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

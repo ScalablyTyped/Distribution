@@ -4,51 +4,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridPageable extends js.Object {
-  var alwaysVisible: js.UndefOr[Boolean] = js.undefined
-  var buttonCount: js.UndefOr[Double] = js.undefined
-  var info: js.UndefOr[Boolean] = js.undefined
-  var input: js.UndefOr[Boolean] = js.undefined
-  var messages: js.UndefOr[GridPageableMessages] = js.undefined
-  var numeric: js.UndefOr[Boolean] = js.undefined
-  var pageSize: js.UndefOr[Double] = js.undefined
-  var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var previousNext: js.UndefOr[Boolean] = js.undefined
-  var refresh: js.UndefOr[Boolean] = js.undefined
-  var responsive: js.UndefOr[Boolean] = js.undefined
+  var alwaysVisible: js.UndefOr[Boolean] = js.native
+  var buttonCount: js.UndefOr[Double] = js.native
+  var info: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[GridPageableMessages] = js.native
+  var numeric: js.UndefOr[Boolean] = js.native
+  var pageSize: js.UndefOr[Double] = js.native
+  var pageSizes: js.UndefOr[Boolean | js.Any] = js.native
+  var position: js.UndefOr[String] = js.native
+  var previousNext: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.native
 }
 
 object GridPageable {
   @scala.inline
-  def apply(
-    alwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    buttonCount: js.UndefOr[Double] = js.undefined,
-    info: js.UndefOr[Boolean] = js.undefined,
-    input: js.UndefOr[Boolean] = js.undefined,
-    messages: GridPageableMessages = null,
-    numeric: js.UndefOr[Boolean] = js.undefined,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    pageSizes: Boolean | js.Any = null,
-    position: String = null,
-    previousNext: js.UndefOr[Boolean] = js.undefined,
-    refresh: js.UndefOr[Boolean] = js.undefined,
-    responsive: js.UndefOr[Boolean] = js.undefined
-  ): GridPageable = {
+  def apply(): GridPageable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buttonCount)) __obj.updateDynamic("buttonCount")(buttonCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPageable]
   }
+  @scala.inline
+  implicit class GridPageableOps[Self <: GridPageable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlwaysVisible(value: Boolean): Self = this.set("alwaysVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysVisible: Self = this.set("alwaysVisible", js.undefined)
+    @scala.inline
+    def setButtonCount(value: Double): Self = this.set("buttonCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonCount: Self = this.set("buttonCount", js.undefined)
+    @scala.inline
+    def setInfo(value: Boolean): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfo: Self = this.set("info", js.undefined)
+    @scala.inline
+    def setInput(value: Boolean): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setMessages(value: GridPageableMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setNumeric(value: Boolean): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumeric: Self = this.set("numeric", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPageSizes(value: Boolean | js.Any): Self = this.set("pageSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSizes: Self = this.set("pageSizes", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPreviousNext(value: Boolean): Self = this.set("previousNext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousNext: Self = this.set("previousNext", js.undefined)
+    @scala.inline
+    def setRefresh(value: Boolean): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefresh: Self = this.set("refresh", js.undefined)
+    @scala.inline
+    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+  }
+  
 }
 

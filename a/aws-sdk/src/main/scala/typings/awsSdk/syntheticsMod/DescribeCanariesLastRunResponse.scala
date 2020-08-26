@@ -18,11 +18,32 @@ trait DescribeCanariesLastRunResponse extends js.Object {
 
 object DescribeCanariesLastRunResponse {
   @scala.inline
-  def apply(CanariesLastRun: CanariesLastRun = null, NextToken: Token = null): DescribeCanariesLastRunResponse = {
+  def apply(): DescribeCanariesLastRunResponse = {
     val __obj = js.Dynamic.literal()
-    if (CanariesLastRun != null) __obj.updateDynamic("CanariesLastRun")(CanariesLastRun.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCanariesLastRunResponse]
   }
+  @scala.inline
+  implicit class DescribeCanariesLastRunResponseOps[Self <: DescribeCanariesLastRunResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = this.set("CanariesLastRun", js.Array(value :_*))
+    @scala.inline
+    def setCanariesLastRun(value: CanariesLastRun): Self = this.set("CanariesLastRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanariesLastRun: Self = this.set("CanariesLastRun", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

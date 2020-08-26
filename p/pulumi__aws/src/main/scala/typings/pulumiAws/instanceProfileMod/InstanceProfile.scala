@@ -21,6 +21,7 @@ class InstanceProfile protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: InstanceProfileArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: InstanceProfileArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN assigned by AWS to the instance profile.
@@ -47,8 +48,9 @@ class InstanceProfile protected () extends CustomResource {
     */
   val role: Output_[String] = js.native
   /**
-    *
     * A list of role names to include in the profile.  The current default is 1.  If you see an error message similar to `Cannot exceed quota for InstanceSessionsPerInstanceProfile: 1`, then you must contact AWS support and ask for a limit increase.
+    *
+    * @deprecated Use `role` instead. Only a single role can be passed to an IAM Instance Profile
     */
   val roles: Output_[js.Array[String]] = js.native
   /**
@@ -68,8 +70,10 @@ object InstanceProfile extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): InstanceProfile = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InstanceProfile = js.native
   def get(name: String, id: Input[ID], state: InstanceProfileState): InstanceProfile = js.native
   def get(name: String, id: Input[ID], state: InstanceProfileState, opts: CustomResourceOptions): InstanceProfile = js.native
   /**

@@ -14,6 +14,7 @@ class Opacity protected () extends js.Object {
   def isActive(): Boolean = js.native
   def onUpdate(): Unit = js.native
   def set(value: Double): Opacity = js.native
+  def set(value: Double, transition: js.UndefOr[scala.Nothing], callback: js.Function): Opacity = js.native
   def set(value: Double, transition: js.Any): Opacity = js.native
   def set(value: Double, transition: js.Any, callback: js.Function): Opacity = js.native
   def update(): Unit = js.native

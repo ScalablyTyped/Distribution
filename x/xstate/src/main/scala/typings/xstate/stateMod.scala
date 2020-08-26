@@ -95,16 +95,16 @@ object stateMod extends js.Object {
       * @param delimiter The character(s) that separate each subpath in the string state node path.
       */
     def toStrings(): js.Array[String] = js.native
+    def toStrings(stateValue: js.UndefOr[StateValue], delimiter: String): js.Array[String] = js.native
     def toStrings(stateValue: StateValue): js.Array[String] = js.native
-    def toStrings(stateValue: StateValue, delimiter: String): js.Array[String] = js.native
   }
   
   def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, _, Value[TC]]): ActionObject[TC, TE] = js.native
   def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: String): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
   def isState[TContext, TEvent /* <: EventObject */, TStateSchema /* <: StateSchema[TContext] */, TTypestate /* <: Typestate[TContext] */](state: js.Object): /* is xstate.xstate/lib/State.State<TContext, TEvent, TStateSchema, TTypestate> */ Boolean = js.native
   def stateValuesEqual(): Boolean = js.native
+  def stateValuesEqual(a: js.UndefOr[StateValue], b: StateValue): Boolean = js.native
   def stateValuesEqual(a: StateValue): Boolean = js.native
-  def stateValuesEqual(a: StateValue, b: StateValue): Boolean = js.native
   /* static members */
   @js.native
   object State extends js.Object {

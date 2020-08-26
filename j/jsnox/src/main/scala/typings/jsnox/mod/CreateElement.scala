@@ -32,6 +32,11 @@ trait CreateElement extends js.Object {
   def apply[P](component: ComponentClass[P, ComponentState], children: ReactNode): ReactElement = js.native
   def apply[P](component: ComponentClass[P, ComponentState], props: P): ReactElement = js.native
   def apply[P](component: ComponentClass[P, ComponentState], props: P, children: ReactNode): ReactElement = js.native
+  def apply[P](
+    component: ComponentClass[P, ComponentState],
+    props: js.UndefOr[scala.Nothing],
+    children: ReactNode
+  ): ReactElement = js.native
   /**
     * Renders an HTML element from the given spec string, with optional props
     * and children
@@ -51,6 +56,7 @@ trait CreateElement extends js.Object {
     * Note that unlike with React itself, multiple children must be placed into an array.
     */
   def apply[P](specString: String, children: ReactNode): DOMElement[P, Element] = js.native
+  def apply[P](specString: String, props: js.UndefOr[scala.Nothing], children: ReactNode): DOMElement[P, Element] = js.native
   def apply[P](specString: String, props: HTMLAttributes[js.Object]): DOMElement[P, Element] = js.native
   def apply[P](specString: String, props: HTMLAttributes[js.Object], children: ReactNode): DOMElement[P, Element] = js.native
 }

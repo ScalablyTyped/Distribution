@@ -31,6 +31,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaRouterAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaRouterAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRouterAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceRoutersAggregatedlist): GaxiosPromise[SchemaRouterAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceRoutersAggregatedlist,
@@ -64,6 +65,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRoutersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceRoutersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -94,6 +96,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRouter] = js.native
   def get(callback: BodyResponseCallback[SchemaRouter]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRouter] = js.native
   def get(params: ParamsResourceRoutersGet): GaxiosPromise[SchemaRouter] = js.native
   def get(params: ParamsResourceRoutersGet, callback: BodyResponseCallback[SchemaRouter]): Unit = js.native
   def get(
@@ -128,6 +131,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def getNatMappingInfo(): GaxiosPromise[SchemaVmEndpointNatMappingsList] = js.native
   def getNatMappingInfo(callback: BodyResponseCallback[SchemaVmEndpointNatMappingsList]): Unit = js.native
+  def getNatMappingInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVmEndpointNatMappingsList] = js.native
   def getNatMappingInfo(params: ParamsResourceRoutersGetnatmappinginfo): GaxiosPromise[SchemaVmEndpointNatMappingsList] = js.native
   def getNatMappingInfo(
     params: ParamsResourceRoutersGetnatmappinginfo,
@@ -160,6 +164,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def getRouterStatus(): GaxiosPromise[SchemaRouterStatusResponse] = js.native
   def getRouterStatus(callback: BodyResponseCallback[SchemaRouterStatusResponse]): Unit = js.native
+  def getRouterStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRouterStatusResponse] = js.native
   def getRouterStatus(params: ParamsResourceRoutersGetrouterstatus): GaxiosPromise[SchemaRouterStatusResponse] = js.native
   def getRouterStatus(
     params: ParamsResourceRoutersGetrouterstatus,
@@ -194,6 +199,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRoutersInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRoutersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -227,6 +233,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRouterList] = js.native
   def list(callback: BodyResponseCallback[SchemaRouterList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRouterList] = js.native
   def list(params: ParamsResourceRoutersList): GaxiosPromise[SchemaRouterList] = js.native
   def list(params: ParamsResourceRoutersList, callback: BodyResponseCallback[SchemaRouterList]): Unit = js.native
   def list(
@@ -260,6 +267,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRoutersPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceRoutersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -291,6 +299,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def preview(): GaxiosPromise[SchemaRoutersPreviewResponse] = js.native
   def preview(callback: BodyResponseCallback[SchemaRoutersPreviewResponse]): Unit = js.native
+  def preview(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoutersPreviewResponse] = js.native
   def preview(params: ParamsResourceRoutersPreview): GaxiosPromise[SchemaRoutersPreviewResponse] = js.native
   def preview(params: ParamsResourceRoutersPreview, callback: BodyResponseCallback[SchemaRoutersPreviewResponse]): Unit = js.native
   def preview(
@@ -321,6 +330,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRoutersTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRoutersTestiampermissions,
@@ -356,6 +366,7 @@ class ResourceRouters protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRoutersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceRoutersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

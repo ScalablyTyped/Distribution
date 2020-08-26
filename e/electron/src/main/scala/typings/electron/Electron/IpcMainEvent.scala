@@ -12,6 +12,10 @@ trait IpcMainEvent extends Event {
     */
   var frameId: Double = js.native
   /**
+    * A list of MessagePorts that were transferred with this message
+    */
+  var ports: js.Array[MessagePortMain] = js.native
+  /**
     * A function that will send an IPC message to the renderer frame that sent the
     * original message that you are currently handling.  You should use this method to
     * "reply" to the sent message in order to guarantee the reply will go to the

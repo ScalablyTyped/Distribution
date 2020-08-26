@@ -38,22 +38,46 @@ trait SchemaAchievementConfigurationDetail extends js.Object {
 
 object SchemaAchievementConfigurationDetail {
   @scala.inline
-  def apply(
-    description: SchemaLocalizedStringBundle = null,
-    iconUrl: String = null,
-    kind: String = null,
-    name: SchemaLocalizedStringBundle = null,
-    pointValue: js.UndefOr[Double] = js.undefined,
-    sortRank: js.UndefOr[Double] = js.undefined
-  ): SchemaAchievementConfigurationDetail = {
+  def apply(): SchemaAchievementConfigurationDetail = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointValue)) __obj.updateDynamic("pointValue")(pointValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortRank)) __obj.updateDynamic("sortRank")(sortRank.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAchievementConfigurationDetail]
   }
+  @scala.inline
+  implicit class SchemaAchievementConfigurationDetailOps[Self <: SchemaAchievementConfigurationDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: SchemaLocalizedStringBundle): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: SchemaLocalizedStringBundle): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPointValue(value: Double): Self = this.set("pointValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointValue: Self = this.set("pointValue", js.undefined)
+    @scala.inline
+    def setSortRank(value: Double): Self = this.set("sortRank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortRank: Self = this.set("sortRank", js.undefined)
+  }
+  
 }
 

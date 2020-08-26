@@ -10,9 +10,9 @@ The interactive prompts portion of Ionic CLI Framework
 | ------------------ | :-------------: |
 | Full name          | @ionic/cli-framework-prompts |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 280026 |
+| # downloads        | 413369 |
 | # stars            | 0 |
 
 ## Links

@@ -28,6 +28,7 @@ class ResourceWebfonts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaWebfontList] = js.native
   def list(callback: BodyResponseCallback[SchemaWebfontList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebfontList] = js.native
   def list(params: ParamsResourceWebfontsList): GaxiosPromise[SchemaWebfontList] = js.native
   def list(params: ParamsResourceWebfontsList, callback: BodyResponseCallback[SchemaWebfontList]): Unit = js.native
   def list(

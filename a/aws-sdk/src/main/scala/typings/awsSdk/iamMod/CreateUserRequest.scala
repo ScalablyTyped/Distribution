@@ -26,17 +26,38 @@ trait CreateUserRequest extends js.Object {
 
 object CreateUserRequest {
   @scala.inline
-  def apply(
-    UserName: userNameType,
-    Path: pathType = null,
-    PermissionsBoundary: arnType = null,
-    Tags: tagListType = null
-  ): CreateUserRequest = {
+  def apply(UserName: userNameType): CreateUserRequest = {
     val __obj = js.Dynamic.literal(UserName = UserName.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
-    if (PermissionsBoundary != null) __obj.updateDynamic("PermissionsBoundary")(PermissionsBoundary.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
+  @scala.inline
+  implicit class CreateUserRequestOps[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserName(value: userNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+    @scala.inline
+    def setPermissionsBoundary(value: arnType): Self = this.set("PermissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundary: Self = this.set("PermissionsBoundary", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: tagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

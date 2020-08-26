@@ -115,64 +115,136 @@ trait CacheCluster extends js.Object {
 
 object CacheCluster {
   @scala.inline
-  def apply(
-    ARN: String = null,
-    AtRestEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    AuthTokenLastModifiedDate: TStamp = null,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    CacheClusterCreateTime: TStamp = null,
-    CacheClusterId: String = null,
-    CacheClusterStatus: String = null,
-    CacheNodeType: String = null,
-    CacheNodes: CacheNodeList = null,
-    CacheParameterGroup: CacheParameterGroupStatus = null,
-    CacheSecurityGroups: CacheSecurityGroupMembershipList = null,
-    CacheSubnetGroupName: String = null,
-    ClientDownloadLandingPage: String = null,
-    ConfigurationEndpoint: Endpoint = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    NotificationConfiguration: NotificationConfiguration = null,
-    NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined,
-    PendingModifiedValues: PendingModifiedValues = null,
-    PreferredAvailabilityZone: String = null,
-    PreferredMaintenanceWindow: String = null,
-    ReplicationGroupId: String = null,
-    SecurityGroups: SecurityGroupMembershipList = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
-    SnapshotWindow: String = null,
-    TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
-  ): CacheCluster = {
+  def apply(): CacheCluster = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(AtRestEncryptionEnabled)) __obj.updateDynamic("AtRestEncryptionEnabled")(AtRestEncryptionEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AuthTokenEnabled)) __obj.updateDynamic("AuthTokenEnabled")(AuthTokenEnabled.get.asInstanceOf[js.Any])
-    if (AuthTokenLastModifiedDate != null) __obj.updateDynamic("AuthTokenLastModifiedDate")(AuthTokenLastModifiedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (CacheClusterCreateTime != null) __obj.updateDynamic("CacheClusterCreateTime")(CacheClusterCreateTime.asInstanceOf[js.Any])
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (CacheClusterStatus != null) __obj.updateDynamic("CacheClusterStatus")(CacheClusterStatus.asInstanceOf[js.Any])
-    if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (CacheNodes != null) __obj.updateDynamic("CacheNodes")(CacheNodes.asInstanceOf[js.Any])
-    if (CacheParameterGroup != null) __obj.updateDynamic("CacheParameterGroup")(CacheParameterGroup.asInstanceOf[js.Any])
-    if (CacheSecurityGroups != null) __obj.updateDynamic("CacheSecurityGroups")(CacheSecurityGroups.asInstanceOf[js.Any])
-    if (CacheSubnetGroupName != null) __obj.updateDynamic("CacheSubnetGroupName")(CacheSubnetGroupName.asInstanceOf[js.Any])
-    if (ClientDownloadLandingPage != null) __obj.updateDynamic("ClientDownloadLandingPage")(ClientDownloadLandingPage.asInstanceOf[js.Any])
-    if (ConfigurationEndpoint != null) __obj.updateDynamic("ConfigurationEndpoint")(ConfigurationEndpoint.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumCacheNodes)) __obj.updateDynamic("NumCacheNodes")(NumCacheNodes.get.asInstanceOf[js.Any])
-    if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues.asInstanceOf[js.Any])
-    if (PreferredAvailabilityZone != null) __obj.updateDynamic("PreferredAvailabilityZone")(PreferredAvailabilityZone.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
-    if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(TransitEncryptionEnabled)) __obj.updateDynamic("TransitEncryptionEnabled")(TransitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheCluster]
   }
+  @scala.inline
+  implicit class CacheClusterOps[Self <: CacheCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: String): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setAtRestEncryptionEnabled(value: BooleanOptional): Self = this.set("AtRestEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtRestEncryptionEnabled: Self = this.set("AtRestEncryptionEnabled", js.undefined)
+    @scala.inline
+    def setAuthTokenEnabled(value: BooleanOptional): Self = this.set("AuthTokenEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthTokenEnabled: Self = this.set("AuthTokenEnabled", js.undefined)
+    @scala.inline
+    def setAuthTokenLastModifiedDate(value: TStamp): Self = this.set("AuthTokenLastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthTokenLastModifiedDate: Self = this.set("AuthTokenLastModifiedDate", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setCacheClusterCreateTime(value: TStamp): Self = this.set("CacheClusterCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterCreateTime: Self = this.set("CacheClusterCreateTime", js.undefined)
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setCacheClusterStatus(value: String): Self = this.set("CacheClusterStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterStatus: Self = this.set("CacheClusterStatus", js.undefined)
+    @scala.inline
+    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    @scala.inline
+    def setCacheNodesVarargs(value: CacheNode*): Self = this.set("CacheNodes", js.Array(value :_*))
+    @scala.inline
+    def setCacheNodes(value: CacheNodeList): Self = this.set("CacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodes: Self = this.set("CacheNodes", js.undefined)
+    @scala.inline
+    def setCacheParameterGroup(value: CacheParameterGroupStatus): Self = this.set("CacheParameterGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheParameterGroup: Self = this.set("CacheParameterGroup", js.undefined)
+    @scala.inline
+    def setCacheSecurityGroupsVarargs(value: CacheSecurityGroupMembership*): Self = this.set("CacheSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setCacheSecurityGroups(value: CacheSecurityGroupMembershipList): Self = this.set("CacheSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSecurityGroups: Self = this.set("CacheSecurityGroups", js.undefined)
+    @scala.inline
+    def setCacheSubnetGroupName(value: String): Self = this.set("CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSubnetGroupName: Self = this.set("CacheSubnetGroupName", js.undefined)
+    @scala.inline
+    def setClientDownloadLandingPage(value: String): Self = this.set("ClientDownloadLandingPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientDownloadLandingPage: Self = this.set("ClientDownloadLandingPage", js.undefined)
+    @scala.inline
+    def setConfigurationEndpoint(value: Endpoint): Self = this.set("ConfigurationEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationEndpoint: Self = this.set("ConfigurationEndpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setNotificationConfiguration(value: NotificationConfiguration): Self = this.set("NotificationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfiguration: Self = this.set("NotificationConfiguration", js.undefined)
+    @scala.inline
+    def setNumCacheNodes(value: IntegerOptional): Self = this.set("NumCacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumCacheNodes: Self = this.set("NumCacheNodes", js.undefined)
+    @scala.inline
+    def setPendingModifiedValues(value: PendingModifiedValues): Self = this.set("PendingModifiedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingModifiedValues: Self = this.set("PendingModifiedValues", js.undefined)
+    @scala.inline
+    def setPreferredAvailabilityZone(value: String): Self = this.set("PreferredAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredAvailabilityZone: Self = this.set("PreferredAvailabilityZone", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: SecurityGroupMembership*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: SecurityGroupMembershipList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setSnapshotRetentionLimit(value: IntegerOptional): Self = this.set("SnapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotRetentionLimit: Self = this.set("SnapshotRetentionLimit", js.undefined)
+    @scala.inline
+    def setSnapshotWindow(value: String): Self = this.set("SnapshotWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotWindow: Self = this.set("SnapshotWindow", js.undefined)
+    @scala.inline
+    def setTransitEncryptionEnabled(value: BooleanOptional): Self = this.set("TransitEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitEncryptionEnabled: Self = this.set("TransitEncryptionEnabled", js.undefined)
+  }
+  
 }
 

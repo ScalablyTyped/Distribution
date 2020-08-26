@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   *
   * In a chart there may be the following titles: the main title, the sub title, and axis titles of the x- and y-axis.
   */
+@js.native
 trait ChartTitle
   extends Shape
      with UserDefinedAttributesSupplier {
@@ -35,20 +36,20 @@ trait ChartTitle
     * If this property is `TRUE` the position is calculated by the application automatically. Setting this property to false will have no effect. Instead
     * use the interface {@link com.sun.star.drawing.XShape} to set a concrete position.
     */
-  var AutomaticPosition: Boolean
+  var AutomaticPosition: Boolean = js.native
   /**
     * contains the text of the title.
     *
     * Note that you cannot change attributes of parts of a title, e.g., put one word in bold characters. All formatting affects the entire string.
     */
-  var String: java.lang.String
+  var String: java.lang.String = js.native
   /**
     * specifies the rotation of the shape in 100th of degrees.
     *
     * Especially in three-dimensional charts, this property comes in handy if you want to align the axis titles with the axis, which are usually not
     * vertical or horizontal in the two-dimensional projection.
     */
-  var TextRotation: Double
+  var TextRotation: Double = js.native
 }
 
 object ChartTitle {
@@ -107,5 +108,24 @@ object ChartTitle {
     val __obj = js.Dynamic.literal(AutomaticPosition = AutomaticPosition.asInstanceOf[js.Any], GluePoints = GluePoints.asInstanceOf[js.Any], Hyperlink = Hyperlink.asInstanceOf[js.Any], InteropGrabBag = InteropGrabBag.asInstanceOf[js.Any], LayerID = LayerID.asInstanceOf[js.Any], LayerName = LayerName.asInstanceOf[js.Any], MoveProtect = MoveProtect.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NavigationOrder = NavigationOrder.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RelativeHeight = RelativeHeight.asInstanceOf[js.Any], RelativeHeightRelation = RelativeHeightRelation.asInstanceOf[js.Any], RelativeWidth = RelativeWidth.asInstanceOf[js.Any], RelativeWidthRelation = RelativeWidthRelation.asInstanceOf[js.Any], ShapeType = ShapeType.asInstanceOf[js.Any], ShapeUserDefinedAttributes = ShapeUserDefinedAttributes.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], SizeProtect = SizeProtect.asInstanceOf[js.Any], String = String.asInstanceOf[js.Any], Style = Style.asInstanceOf[js.Any], TextRotation = TextRotation.asInstanceOf[js.Any], Transformation = Transformation.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], Visible = Visible.asInstanceOf[js.Any], ZOrder = ZOrder.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getDirectPropertyValuesTolerant = js.Any.fromFunction1(getDirectPropertyValuesTolerant), getGluePoints = js.Any.fromFunction0(getGluePoints), getPosition = js.Any.fromFunction0(getPosition), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValuesTolerant = js.Any.fromFunction1(getPropertyValuesTolerant), getShapeType = js.Any.fromFunction0(getShapeType), getSize = js.Any.fromFunction0(getSize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPosition = js.Any.fromFunction1(setPosition), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValuesTolerant = js.Any.fromFunction2(setPropertyValuesTolerant), setSize = js.Any.fromFunction1(setSize))
     __obj.asInstanceOf[ChartTitle]
   }
+  @scala.inline
+  implicit class ChartTitleOps[Self <: ChartTitle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticPosition(value: Boolean): Self = this.set("AutomaticPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setString(value: String): Self = this.set("String", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextRotation(value: Double): Self = this.set("TextRotation", value.asInstanceOf[js.Any])
+  }
+  
 }
 

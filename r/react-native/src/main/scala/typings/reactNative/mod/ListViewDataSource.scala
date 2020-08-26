@@ -66,6 +66,11 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     * Note: this returns a new object!
     */
   def cloneWithRowsAndSections(dataBlob: js.Array[_]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(
+    dataBlob: js.Array[_],
+    sectionIdentities: js.UndefOr[scala.Nothing],
+    rowIdentities: js.Array[js.Array[String | Double]]
+  ): ListViewDataSource = js.native
   def cloneWithRowsAndSections(dataBlob: js.Array[_], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
     dataBlob: js.Array[_],
@@ -73,6 +78,11 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
   def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(
+    dataBlob: StringDictionary[js.Any],
+    sectionIdentities: js.UndefOr[scala.Nothing],
+    rowIdentities: js.Array[js.Array[String | Double]]
+  ): ListViewDataSource = js.native
   def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
     dataBlob: StringDictionary[js.Any],

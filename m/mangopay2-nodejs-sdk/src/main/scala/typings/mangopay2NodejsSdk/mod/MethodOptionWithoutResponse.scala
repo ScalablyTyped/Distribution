@@ -1,37 +1,37 @@
 package typings.mangopay2NodejsSdk.mod
 
-import typings.mangopay2NodejsSdk.anon.DeepPartialPartialHeaders
-import typings.mangopay2NodejsSdk.anon.DeepPartialclientIdstring
-import typings.mangopay2NodejsSdk.anon.DeepPartialtimeoutnumber
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkBooleans.`false`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MethodOptionWithoutResponse extends MethodOptions {
-  var resolveWithFullResponse: js.UndefOr[`false`] = js.undefined
+  var resolveWithFullResponse: js.UndefOr[`false`] = js.native
 }
 
 object MethodOptionWithoutResponse {
   @scala.inline
-  def apply(
-    data: WithToJson[js.Object] | String = null,
-    headers: DeepPartialPartialHeaders = null,
-    parameters: FilterOptions with PaginationOptions = null,
-    path: DeepPartialclientIdstring = null,
-    requestConfig: DeepPartialtimeoutnumber = null,
-    resolveWithFullResponse: `false` = null,
-    responseConfig: DeepPartialtimeoutnumber = null
-  ): MethodOptionWithoutResponse = {
+  def apply(): MethodOptionWithoutResponse = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (requestConfig != null) __obj.updateDynamic("requestConfig")(requestConfig.asInstanceOf[js.Any])
-    if (resolveWithFullResponse != null) __obj.updateDynamic("resolveWithFullResponse")(resolveWithFullResponse.asInstanceOf[js.Any])
-    if (responseConfig != null) __obj.updateDynamic("responseConfig")(responseConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodOptionWithoutResponse]
   }
+  @scala.inline
+  implicit class MethodOptionWithoutResponseOps[Self <: MethodOptionWithoutResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolveWithFullResponse(value: `false`): Self = this.set("resolveWithFullResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolveWithFullResponse: Self = this.set("resolveWithFullResponse", js.undefined)
+  }
+  
 }
 

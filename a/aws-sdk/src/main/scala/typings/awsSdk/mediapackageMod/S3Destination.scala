@@ -26,5 +26,24 @@ object S3Destination {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any], ManifestKey = ManifestKey.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Destination]
   }
+  @scala.inline
+  implicit class S3DestinationOps[Self <: S3Destination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: string): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setManifestKey(value: string): Self = this.set("ManifestKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

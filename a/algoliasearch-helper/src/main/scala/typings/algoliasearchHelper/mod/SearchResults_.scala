@@ -1,5 +1,6 @@
 package typings.algoliasearchHelper.mod
 
+import typings.algoliasearchHelper.anon.ObjectID
 import typings.algoliasearchHelper.mod.SearchResults.Facet
 import typings.algoliasearchHelper.mod.SearchResults.FacetValue
 import typings.algoliasearchHelper.mod.SearchResults.HierarchicalFacet
@@ -8,11 +9,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("algoliasearch-helper", "SearchResults")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof algoliasearch-helper.algoliasearch-helper.SearchResponse<T>, 'facets' | 'params'> ]: algoliasearch-helper.algoliasearch-helper.SearchResponse<T>[P]} */ @JSImport("algoliasearch-helper", "SearchResults")
 @js.native
-class SearchResults_ protected () extends js.Object {
-  def this(state: SearchParameters, results: js.Array[_]) = this()
-  var _rawResults: js.Any = js.native
+class SearchResults_[T] protected () extends js.Object {
+  def this(state: SearchParameters, results: js.Array[SearchResponse[T]]) = this()
+  var _rawResults: js.Array[SearchResponse[T]] = js.native
   var _state: SearchParameters = js.native
   /**
     * The position if the position was guessed by IP.
@@ -51,7 +53,7 @@ class SearchResults_ protected () extends js.Object {
     *  - `value` : the value of the facet highlighted (html)
     *  - `matchLevel`: full, partial or none depending on how the query terms match
     */
-  var hits: js.Array[_] = js.native
+  var hits: js.Array[T with ObjectID] = js.native
   /**
     * number of hits per page requested
     */
@@ -167,7 +169,7 @@ class SearchResults_ protected () extends js.Object {
     *   });
     * });
     */
-  def getFacetValues(attribute: String, opts: js.Any): js.Array[FacetValue] | HierarchicalFacet = js.native
+  def getFacetValues(attribute: String, opts: js.Any): js.UndefOr[js.Array[FacetValue] | HierarchicalFacet] = js.native
   /**
     * Returns all refinements for all filters + tags. It also provides
     * additional information: count and exhausistivity for each filter.

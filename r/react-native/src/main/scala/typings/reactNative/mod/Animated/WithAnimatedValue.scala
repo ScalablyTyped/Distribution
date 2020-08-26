@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WithAnimatedValue[T]
   extends ThisType[
       T | Value | AnimatedInterpolation | js.Array[WithAnimatedValue[js.Any]] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 

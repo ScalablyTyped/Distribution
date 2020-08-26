@@ -22,15 +22,32 @@ trait ConfirmPrivateVirtualInterfaceRequest extends js.Object {
 
 object ConfirmPrivateVirtualInterfaceRequest {
   @scala.inline
-  def apply(
-    virtualInterfaceId: VirtualInterfaceId,
-    directConnectGatewayId: DirectConnectGatewayId = null,
-    virtualGatewayId: VirtualGatewayId = null
-  ): ConfirmPrivateVirtualInterfaceRequest = {
+  def apply(virtualInterfaceId: VirtualInterfaceId): ConfirmPrivateVirtualInterfaceRequest = {
     val __obj = js.Dynamic.literal(virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
-    if (directConnectGatewayId != null) __obj.updateDynamic("directConnectGatewayId")(directConnectGatewayId.asInstanceOf[js.Any])
-    if (virtualGatewayId != null) __obj.updateDynamic("virtualGatewayId")(virtualGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmPrivateVirtualInterfaceRequest]
   }
+  @scala.inline
+  implicit class ConfirmPrivateVirtualInterfaceRequestOps[Self <: ConfirmPrivateVirtualInterfaceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = this.set("directConnectGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectConnectGatewayId: Self = this.set("directConnectGatewayId", js.undefined)
+    @scala.inline
+    def setVirtualGatewayId(value: VirtualGatewayId): Self = this.set("virtualGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualGatewayId: Self = this.set("virtualGatewayId", js.undefined)
+  }
+  
 }
 

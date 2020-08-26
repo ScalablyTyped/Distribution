@@ -33,21 +33,41 @@ trait EventContext
   def json(str: String): js.Any = js.native
   def json(str: js.Any): js.Any = js.native
   def load(location: js.Any): js.Any = js.native
+  def load(location: js.Any, options: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
   def load(location: js.Any, options: js.Any): js.Any = js.native
   def load(location: js.Any, options: js.Any, callback: js.Function): js.Any = js.native
   def loadPartials(): js.Any = js.native
   def loadPartials(partials: js.Any): js.Any = js.native
   def notFound(): js.Any = js.native
   def partial(location: String): RenderContext = js.native
+  def partial(
+    location: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    partials: js.Any
+  ): RenderContext = js.native
+  def partial(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
+  def partial(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function, partials: js.Any): RenderContext = js.native
   def partial(location: String, data: js.Any): RenderContext = js.native
+  def partial(location: String, data: js.Any, callback: js.UndefOr[scala.Nothing], partials: js.Any): RenderContext = js.native
   def partial(location: String, data: js.Any, callback: js.Function): RenderContext = js.native
   def partial(location: String, data: js.Any, callback: js.Function, partials: js.Any): RenderContext = js.native
   def redirect(params: js.Any*): Unit = js.native
   def render(location: String): RenderContext = js.native
+  def render(
+    location: String,
+    data: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    partials: js.Any
+  ): RenderContext = js.native
+  def render(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
+  def render(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function, partials: js.Any): RenderContext = js.native
   def render(location: String, data: js.Any): RenderContext = js.native
+  def render(location: String, data: js.Any, callback: js.UndefOr[scala.Nothing], partials: js.Any): RenderContext = js.native
   def render(location: String, data: js.Any, callback: js.Function): RenderContext = js.native
   def render(location: String, data: js.Any, callback: js.Function, partials: js.Any): RenderContext = js.native
   def renderEach(location: js.Any): RenderContext = js.native
+  def renderEach(location: js.Any, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
   def renderEach(location: js.Any, data: js.Array[Data]): RenderContext = js.native
   def renderEach(location: js.Any, data: js.Array[Data], callback: js.Function): RenderContext = js.native
   def send(params: js.Any*): RenderContext = js.native

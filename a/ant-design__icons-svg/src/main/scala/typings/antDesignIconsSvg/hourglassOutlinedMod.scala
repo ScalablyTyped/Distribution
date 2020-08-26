@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/HourglassOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/HourglassOutlined", JSImport.Namespace)
 @js.native
 object hourglassOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

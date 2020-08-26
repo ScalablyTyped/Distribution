@@ -21,12 +21,34 @@ trait SchemaGooglePrivacyDlpV2SummaryResult extends js.Object {
 
 object SchemaGooglePrivacyDlpV2SummaryResult {
   @scala.inline
-  def apply(code: String = null, count: String = null, details: String = null): SchemaGooglePrivacyDlpV2SummaryResult = {
+  def apply(): SchemaGooglePrivacyDlpV2SummaryResult = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2SummaryResult]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2SummaryResultOps[Self <: SchemaGooglePrivacyDlpV2SummaryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDetails(value: String): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+  }
+  
 }
 

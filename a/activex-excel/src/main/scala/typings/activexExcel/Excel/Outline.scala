@@ -15,6 +15,7 @@ trait Outline extends js.Object {
   var SummaryColumn: XlSummaryColumn = js.native
   var SummaryRow: XlSummaryRow = js.native
   def ShowLevels(): js.Any = js.native
+  def ShowLevels(RowLevels: js.UndefOr[scala.Nothing], ColumnLevels: Double): js.Any = js.native
   def ShowLevels(RowLevels: Double): js.Any = js.native
   def ShowLevels(RowLevels: Double, ColumnLevels: Double): js.Any = js.native
 }

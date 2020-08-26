@@ -15,7 +15,16 @@ trait Phonon extends js.Object {
   var event: PhononEventObject = js.native
   def ajax(request: PhononAjaxObject): PhononAjaxReturnObject = js.native
   def alert(text: String): PhononDialogComponent = js.native
+  def alert(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String
+  ): PhononDialogComponent = js.native
+  def alert(text: String, title: js.UndefOr[scala.Nothing], cancelable: Boolean): PhononDialogComponent = js.native
+  def alert(text: String, title: js.UndefOr[scala.Nothing], cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
   def alert(text: String, title: String): PhononDialogComponent = js.native
+  def alert(text: String, title: String, cancelable: js.UndefOr[scala.Nothing], textOk: String): PhononDialogComponent = js.native
   def alert(text: String, title: String, cancelable: Boolean): PhononDialogComponent = js.native
   def alert(text: String, title: String, cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
   def autocomplete(input: String): js.Any = js.native
@@ -25,8 +34,66 @@ trait Phonon extends js.Object {
   def autocomplete(input: HTMLElement): js.Any = js.native
   def autocomplete(input: HTMLElement, o: Options): js.Any = js.native
   def confirm(text: String): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String
+  ): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String,
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def confirm(text: String, title: js.UndefOr[scala.Nothing], cancelable: Boolean): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: Boolean,
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def confirm(text: String, title: js.UndefOr[scala.Nothing], cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: Boolean,
+    textOk: String,
+    textCancel: String
+  ): PhononDialogComponent = js.native
   def confirm(text: String, title: String): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: String,
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def confirm(text: String, title: String, cancelable: js.UndefOr[scala.Nothing], textOk: String): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: String,
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String,
+    textCancel: String
+  ): PhononDialogComponent = js.native
   def confirm(text: String, title: String, cancelable: Boolean): PhononDialogComponent = js.native
+  def confirm(
+    text: String,
+    title: String,
+    cancelable: Boolean,
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
   def confirm(text: String, title: String, cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
   def confirm(text: String, title: String, cancelable: Boolean, textOk: String, textCancel: String): PhononDialogComponent = js.native
   def dialog(id: String): PhononCustomDialogComponent = js.native
@@ -35,7 +102,16 @@ trait Phonon extends js.Object {
   def indicator(title: String, cancelable: Boolean): PhononIndicatorComponent = js.native
   def navigator(): PhononNavigator = js.native
   def notif(textOrId: String): PhononNotifComponent = js.native
+  def notif(
+    textOrId: String,
+    timeout: js.UndefOr[scala.Nothing],
+    showButton: js.UndefOr[scala.Nothing],
+    textButton: String
+  ): PhononNotifComponent = js.native
+  def notif(textOrId: String, timeout: js.UndefOr[scala.Nothing], showButton: Boolean): PhononNotifComponent = js.native
+  def notif(textOrId: String, timeout: js.UndefOr[scala.Nothing], showButton: Boolean, textButton: String): PhononNotifComponent = js.native
   def notif(textOrId: String, timeout: Double): PhononNotifComponent = js.native
+  def notif(textOrId: String, timeout: Double, showButton: js.UndefOr[scala.Nothing], textButton: String): PhononNotifComponent = js.native
   def notif(textOrId: String, timeout: Double, showButton: Boolean): PhononNotifComponent = js.native
   def notif(textOrId: String, timeout: Double, showButton: Boolean, textButton: String): PhononNotifComponent = js.native
   def onReady(callback: js.Function0[Unit]): Unit = js.native
@@ -46,8 +122,66 @@ trait Phonon extends js.Object {
   def preloader(element: String): PhononPreloaderComponent = js.native
   def preloader(element: Element): PhononPreloaderComponent = js.native
   def prompt(text: String): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String
+  ): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String,
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def prompt(text: String, title: js.UndefOr[scala.Nothing], cancelable: Boolean): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: Boolean,
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def prompt(text: String, title: js.UndefOr[scala.Nothing], cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: js.UndefOr[scala.Nothing],
+    cancelable: Boolean,
+    textOk: String,
+    textCancel: String
+  ): PhononDialogComponent = js.native
   def prompt(text: String, title: String): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: String,
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
+  def prompt(text: String, title: String, cancelable: js.UndefOr[scala.Nothing], textOk: String): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: String,
+    cancelable: js.UndefOr[scala.Nothing],
+    textOk: String,
+    textCancel: String
+  ): PhononDialogComponent = js.native
   def prompt(text: String, title: String, cancelable: Boolean): PhononDialogComponent = js.native
+  def prompt(
+    text: String,
+    title: String,
+    cancelable: Boolean,
+    textOk: js.UndefOr[scala.Nothing],
+    textCancel: String
+  ): PhononDialogComponent = js.native
   def prompt(text: String, title: String, cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
   def prompt(text: String, title: String, cancelable: Boolean, textOk: String, textCancel: String): PhononDialogComponent = js.native
   def sidePanel(id: String): PhononSidePanelComponent = js.native

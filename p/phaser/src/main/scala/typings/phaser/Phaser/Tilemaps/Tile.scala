@@ -184,6 +184,7 @@ trait Tile
     * @param output Optional Rectangle object to store the results in.
     */
   def getBounds(): Rectangle | js.Object = js.native
+  def getBounds(camera: js.UndefOr[scala.Nothing], output: Rectangle): Rectangle | js.Object = js.native
   def getBounds(camera: Camera): Rectangle | js.Object = js.native
   def getBounds(camera: Camera, output: Rectangle): Rectangle | js.Object = js.native
   /**
@@ -269,8 +270,61 @@ trait Tile
     * for this tile and its neighbors. Default true.
     */
   def setCollision(left: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: js.UndefOr[scala.Nothing],
+    up: js.UndefOr[scala.Nothing],
+    down: js.UndefOr[scala.Nothing],
+    recalculateFaces: Boolean
+  ): Tile = js.native
+  def setCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: js.UndefOr[scala.Nothing], down: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: js.UndefOr[scala.Nothing],
+    up: js.UndefOr[scala.Nothing],
+    down: Boolean,
+    recalculateFaces: Boolean
+  ): Tile = js.native
+  def setCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: js.UndefOr[scala.Nothing],
+    up: Boolean,
+    down: js.UndefOr[scala.Nothing],
+    recalculateFaces: Boolean
+  ): Tile = js.native
+  def setCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: Boolean, down: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: js.UndefOr[scala.Nothing],
+    up: Boolean,
+    down: Boolean,
+    recalculateFaces: Boolean
+  ): Tile = js.native
   def setCollision(left: Boolean, right: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: Boolean,
+    up: js.UndefOr[scala.Nothing],
+    down: js.UndefOr[scala.Nothing],
+    recalculateFaces: Boolean
+  ): Tile = js.native
+  def setCollision(left: Boolean, right: Boolean, up: js.UndefOr[scala.Nothing], down: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: Boolean,
+    up: js.UndefOr[scala.Nothing],
+    down: Boolean,
+    recalculateFaces: Boolean
+  ): Tile = js.native
   def setCollision(left: Boolean, right: Boolean, up: Boolean): Tile = js.native
+  def setCollision(
+    left: Boolean,
+    right: Boolean,
+    up: Boolean,
+    down: js.UndefOr[scala.Nothing],
+    recalculateFaces: Boolean
+  ): Tile = js.native
   def setCollision(left: Boolean, right: Boolean, up: Boolean, down: Boolean): Tile = js.native
   def setCollision(left: Boolean, right: Boolean, up: Boolean, down: Boolean, recalculateFaces: Boolean): Tile = js.native
   /**

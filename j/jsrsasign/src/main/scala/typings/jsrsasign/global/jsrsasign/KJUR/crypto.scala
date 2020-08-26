@@ -1,6 +1,5 @@
 package typings.jsrsasign.global.jsrsasign.KJUR
 
-import typings.jsrsasign.anon.AlgString
 import typings.jsrsasign.anon.Curve
 import typings.jsrsasign.anon.Hmacmd5
 import typings.jsrsasign.anon.Md2
@@ -8,6 +7,7 @@ import typings.jsrsasign.anon.Md5
 import typings.jsrsasign.anon.Pass
 import typings.jsrsasign.anon.Prov
 import typings.jsrsasign.anon.Ripemd160
+import typings.jsrsasign.anon.`0`
 import typings.jsrsasign.anon.`2a864886f70d010101`
 import typings.jsrsasign.jsrsasign.BigInteger
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECParameter
@@ -96,85 +96,6 @@ object crypto extends js.Object {
   class Mac protected ()
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.Mac {
     def this(params: Pass) = this()
-    /**
-      * completes hash calculation and returns hash result
-      * @example
-      * mac.digest()
-      */
-    /* CompleteClass */
-    override def doFinal(): Unit = js.native
-    /**
-      * performs final update on the digest using hexadecimal string,
-      * then completes the digest computation
-      * @param hex hexadecimal string to final update
-      * @example
-      * mac.digestHex('0f2abd')
-      */
-    /* CompleteClass */
-    override def doFinalHex(hex: String): Unit = js.native
-    /**
-      * performs final update on the digest using string, then completes the digest computation
-      * @param str string to final update
-      * @example
-      * mac.digestString('aaa')
-      */
-    /* CompleteClass */
-    override def doFinalString(str: String): Unit = js.native
-    /* CompleteClass */
-    override def setAlgAndProvider(alg: String, prov: String): Unit = js.native
-    /**
-      * set password for Mac
-      * @param pass password for Mac
-      * @description
-      * This method will set password for (H)Mac internally.
-      * Argument 'pass' can be specified as following:
-      * - even length string of 0..9, a..f or A-F: implicitly specified as hexadecimal string
-      * - not above string: implicitly specified as raw string
-      * - {rstr: "\x65\x70"}: explicitly specified as raw string
-      * - {hex: "6570"}: explicitly specified as hexacedimal string
-      * - {utf8: "秘密"}: explicitly specified as UTF8 string
-      * - {b64: "Mi78..=="}: explicitly specified as Base64 string
-      * - {b64u: "Mi7-_"}: explicitly specified as Base64URL string
-      * It is *STRONGLY RECOMMENDED* that explicit representation of password argument
-      * to avoid ambiguity. For example string  "6161" can mean a string "6161" or
-      * a hexadecimal string of "aa" (i.e. \x61\x61).
-      * @example
-      * mac = KJUR.crypto.Mac({'alg': 'hmacsha256'});
-      * // set password by implicit raw string
-      * mac.setPassword("\x65\x70\xb9\x0b");
-      * mac.setPassword("password");
-      * // set password by implicit hexadecimal string
-      * mac.setPassword("6570b90b");
-      * mac.setPassword("6570B90B");
-      * // set password by explicit raw string
-      * mac.setPassword({"rstr": "\x65\x70\xb9\x0b"});
-      * // set password by explicit hexadecimal string
-      * mac.setPassword({"hex": "6570b90b"});
-      * // set password by explicit utf8 string
-      * mac.setPassword({"utf8": "passwordパスワード");
-      * // set password by explicit Base64 string
-      * mac.setPassword({"b64": "Mb+c3f/=="});
-      * // set password by explicit Base64URL string
-      * mac.setPassword({"b64u": "Mb-c3f_"});
-      */
-    /* CompleteClass */
-    override def setPassword(pass: String): Unit = js.native
-    /**
-      * update digest by specified hexadecimal string
-      * @param hex hexadecimal string to update
-      * @example
-      * mac.updateHex('0afe36');
-      */
-    /* CompleteClass */
-    override def updateHex(hex: String): Unit = js.native
-    /**
-      * update digest by specified string
-      * @param str string to update
-      * @example
-      * mac.updateString('New York');
-      */
-    /* CompleteClass */
-    override def updateString(str: String): Unit = js.native
   }
   
   /**
@@ -209,76 +130,6 @@ object crypto extends js.Object {
   class MessageDigest protected ()
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.MessageDigest {
     def this(params: Prov) = this()
-    /**
-      * completes hash calculation and returns hash result
-      * @description
-      * @example
-      * md.digest()
-      */
-    /* CompleteClass */
-    override def digest(): Unit = js.native
-    /**
-      * performs final update on the digest using hexadecimal string, then completes the digest computation
-      * @param hex hexadecimal string to final update
-      * @description
-      * @example
-      * md.digestHex('0f2abd')
-      */
-    /* CompleteClass */
-    override def digestHex(hex: String): Unit = js.native
-    /**
-      * performs final update on the digest using string, then completes the digest computation
-      * @param str string to final update
-      * @description
-      * @example
-      * md.digestString('aaa')
-      */
-    /* CompleteClass */
-    override def digestString(str: String): Unit = js.native
-    /**
-      * set hash algorithm and provider
-      * @param alg hash algorithm name
-      * @param prov provider name
-      * @description
-      * This methods set an algorithm and a cryptographic provider.
-      * Here is acceptable algorithm names ignoring cases and hyphens:
-      * - MD5
-      * - SHA1
-      * - SHA224
-      * - SHA256
-      * - SHA384
-      * - SHA512
-      * - RIPEMD160
-      * NOTE: Since jsrsasign 6.2.0 crypto 1.1.10, this method ignores
-      * upper or lower cases. Also any hyphens (i.e. "-") will be ignored
-      * so that "SHA1" or "SHA-1" will be acceptable.
-      * @example
-      * // for SHA1
-      * md.setAlgAndProvider('sha1', 'cryptojs');
-      * md.setAlgAndProvider('SHA1');
-      * // for RIPEMD160
-      * md.setAlgAndProvider('ripemd160', 'cryptojs');
-      */
-    /* CompleteClass */
-    override def setAlgAndProvider(alg: String, prov: String): Unit = js.native
-    /**
-      * update digest by specified hexadecimal string
-      * @param hex hexadecimal string to update
-      * @description
-      * @example
-      * md.updateHex('0afe36');
-      */
-    /* CompleteClass */
-    override def updateHex(hex: String): Unit = js.native
-    /**
-      * update digest by specified string
-      * @param str string to update
-      * @description
-      * @example
-      * md.updateString('New York');
-      */
-    /* CompleteClass */
-    override def updateString(str: String): Unit = js.native
   }
   
   /**
@@ -348,7 +199,7 @@ object crypto extends js.Object {
   @js.native
   class Signature ()
     extends typings.jsrsasign.jsrsasign.KJUR.crypto.Signature {
-    def this(params: AlgString) = this()
+    def this(params: `0`) = this()
   }
   
   /**

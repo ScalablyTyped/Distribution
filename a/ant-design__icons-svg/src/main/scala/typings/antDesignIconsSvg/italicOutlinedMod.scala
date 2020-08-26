@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/ItalicOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/ItalicOutlined", JSImport.Namespace)
 @js.native
 object italicOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

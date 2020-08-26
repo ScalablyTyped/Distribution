@@ -34,22 +34,50 @@ trait UpdateAppRequest extends js.Object {
 
 object UpdateAppRequest {
   @scala.inline
-  def apply(
-    appId: AppId = null,
-    description: AppDescription = null,
-    name: AppName = null,
-    roleName: RoleName = null,
-    serverGroups: ServerGroups = null,
-    tags: Tags = null
-  ): UpdateAppRequest = {
+  def apply(): UpdateAppRequest = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (roleName != null) __obj.updateDynamic("roleName")(roleName.asInstanceOf[js.Any])
-    if (serverGroups != null) __obj.updateDynamic("serverGroups")(serverGroups.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAppRequest]
   }
+  @scala.inline
+  implicit class UpdateAppRequestOps[Self <: UpdateAppRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setDescription(value: AppDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setName(value: AppName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRoleName(value: RoleName): Self = this.set("roleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("roleName", js.undefined)
+    @scala.inline
+    def setServerGroupsVarargs(value: ServerGroup*): Self = this.set("serverGroups", js.Array(value :_*))
+    @scala.inline
+    def setServerGroups(value: ServerGroups): Self = this.set("serverGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerGroups: Self = this.set("serverGroups", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

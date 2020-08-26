@@ -20,8 +20,39 @@ import scala.scalajs.js.annotation._
 class ClassWebSocketMessage ()
   extends typings.fibjs.ClassWebSocketMessage {
   def this(`type`: Double) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], masked: Boolean) = this()
   def this(`type`: Double, masked: Boolean) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], masked: js.UndefOr[scala.Nothing], compress: Boolean) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], masked: Boolean, compress: Boolean) = this()
+  def this(`type`: Double, masked: js.UndefOr[scala.Nothing], compress: Boolean) = this()
   def this(`type`: Double, masked: Boolean, compress: Boolean) = this()
+  def this(
+    `type`: js.UndefOr[scala.Nothing],
+    masked: js.UndefOr[scala.Nothing],
+    compress: js.UndefOr[scala.Nothing],
+    maxSize: Double
+  ) = this()
+  def this(
+    `type`: js.UndefOr[scala.Nothing],
+    masked: js.UndefOr[scala.Nothing],
+    compress: Boolean,
+    maxSize: Double
+  ) = this()
+  def this(
+    `type`: js.UndefOr[scala.Nothing],
+    masked: Boolean,
+    compress: js.UndefOr[scala.Nothing],
+    maxSize: Double
+  ) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], masked: Boolean, compress: Boolean, maxSize: Double) = this()
+  def this(
+    `type`: Double,
+    masked: js.UndefOr[scala.Nothing],
+    compress: js.UndefOr[scala.Nothing],
+    maxSize: Double
+  ) = this()
+  def this(`type`: Double, masked: js.UndefOr[scala.Nothing], compress: Boolean, maxSize: Double) = this()
+  def this(`type`: Double, masked: Boolean, compress: js.UndefOr[scala.Nothing], maxSize: Double) = this()
   def this(`type`: Double, masked: Boolean, compress: Boolean, maxSize: Double) = this()
 }
 

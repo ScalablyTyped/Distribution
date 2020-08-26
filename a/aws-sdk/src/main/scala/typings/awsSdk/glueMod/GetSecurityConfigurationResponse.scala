@@ -14,10 +14,26 @@ trait GetSecurityConfigurationResponse extends js.Object {
 
 object GetSecurityConfigurationResponse {
   @scala.inline
-  def apply(SecurityConfiguration: SecurityConfiguration = null): GetSecurityConfigurationResponse = {
+  def apply(): GetSecurityConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSecurityConfigurationResponse]
   }
+  @scala.inline
+  implicit class GetSecurityConfigurationResponseOps[Self <: GetSecurityConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecurityConfiguration(value: SecurityConfiguration): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+  }
+  
 }
 

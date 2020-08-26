@@ -50,30 +50,64 @@ trait ResourceShare extends js.Object {
 
 object ResourceShare {
   @scala.inline
-  def apply(
-    allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined,
-    creationTime: DateTime = null,
-    featureSet: ResourceShareFeatureSet = null,
-    lastUpdatedTime: DateTime = null,
-    name: String = null,
-    owningAccountId: String = null,
-    resourceShareArn: String = null,
-    status: ResourceShareStatus = null,
-    statusMessage: String = null,
-    tags: TagList = null
-  ): ResourceShare = {
+  def apply(): ResourceShare = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowExternalPrincipals)) __obj.updateDynamic("allowExternalPrincipals")(allowExternalPrincipals.get.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (featureSet != null) __obj.updateDynamic("featureSet")(featureSet.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owningAccountId != null) __obj.updateDynamic("owningAccountId")(owningAccountId.asInstanceOf[js.Any])
-    if (resourceShareArn != null) __obj.updateDynamic("resourceShareArn")(resourceShareArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceShare]
   }
+  @scala.inline
+  implicit class ResourceShareOps[Self <: ResourceShare] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowExternalPrincipals(value: Boolean): Self = this.set("allowExternalPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowExternalPrincipals: Self = this.set("allowExternalPrincipals", js.undefined)
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setFeatureSet(value: ResourceShareFeatureSet): Self = this.set("featureSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureSet: Self = this.set("featureSet", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: DateTime): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwningAccountId(value: String): Self = this.set("owningAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwningAccountId: Self = this.set("owningAccountId", js.undefined)
+    @scala.inline
+    def setResourceShareArn(value: String): Self = this.set("resourceShareArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareArn: Self = this.set("resourceShareArn", js.undefined)
+    @scala.inline
+    def setStatus(value: ResourceShareStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

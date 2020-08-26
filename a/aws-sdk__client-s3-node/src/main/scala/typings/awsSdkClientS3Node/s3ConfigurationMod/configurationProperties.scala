@@ -28,55 +28,83 @@ import scala.scalajs.js.annotation._
 @js.native
 object configurationProperties extends js.Object {
   val _user_injected_http_handler: ConfigurationPropertyDefinition[_, js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val base64Decoder: ConfigurationPropertyDefinition[js.UndefOr[Decoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val base64Encoder: ConfigurationPropertyDefinition[js.UndefOr[Encoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
+  val base64Decoder: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Decoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val base64Encoder: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Encoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
   val bodyLengthChecker: ConfigurationPropertyDefinition[
     js.Function1[/* body */ _, js.UndefOr[Double]], 
     js.UndefOr[_], 
     S3ResolvableConfiguration, 
     S3ResolvedConfiguration
   ] = js.native
-  val bucketEndpoint: ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val credentials: ConfigurationPropertyDefinition[
-    js.UndefOr[Credentials | Provider[Credentials]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val bucketEndpoint: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
   ] = js.native
-  val delayDecider: ConfigurationPropertyDefinition[
-    js.UndefOr[DelayDecider], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val credentials: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Credentials | Provider[Credentials]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
-  val disableBodySigning: ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val endpoint: ConfigurationPropertyDefinition[
-    js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val delayDecider: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[DelayDecider], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
-  val endpointProvider: ConfigurationPropertyDefinition[js.UndefOr[_], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val forcePathStyle: ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val handler: ConfigurationPropertyDefinition[
-    js.UndefOr[Terminalware[_, Readable]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val disableBodySigning: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
   ] = js.native
-  val httpHandler: ConfigurationPropertyDefinition[
-    js.UndefOr[HttpHandler[Readable, HttpOptions]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val endpoint: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
-  val maxRedirects: ConfigurationPropertyDefinition[js.UndefOr[Double], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val maxRetries: ConfigurationPropertyDefinition[js.UndefOr[Double], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val md5: ConfigurationPropertyDefinition[
-    js.UndefOr[Instantiable], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val endpointProvider: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[_], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val forcePathStyle: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val handler: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Terminalware[_, Readable]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
+  ] = js.native
+  val httpHandler: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[HttpHandler[Readable, HttpOptions]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
+  ] = js.native
+  val maxRedirects: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Double], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val maxRetries: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Double], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val md5: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[Instantiable], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
   val parser: ConfigurationPropertyDefinition[
     ResponseParser[Readable], 
@@ -84,18 +112,24 @@ object configurationProperties extends js.Object {
     S3ResolvableConfiguration, 
     S3ResolvedConfiguration
   ] = js.native
-  val profile: ConfigurationPropertyDefinition[js.UndefOr[String], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val region: ConfigurationPropertyDefinition[
-    js.UndefOr[String | Provider[String]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val profile: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[String], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
   ] = js.native
-  val retryDecider: ConfigurationPropertyDefinition[
-    js.UndefOr[RetryDecider], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val region: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[String | Provider[String]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
+  ] = js.native
+  val retryDecider: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[RetryDecider], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
   val serializer: ConfigurationPropertyDefinition[
     Provider[RequestSerializer[Readable]], 
@@ -103,41 +137,63 @@ object configurationProperties extends js.Object {
     S3ResolvableConfiguration, 
     S3ResolvedConfiguration
   ] = js.native
-  val sha256: ConfigurationPropertyDefinition[
-    js.UndefOr[HashConstructor], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val sha256: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[HashConstructor], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
-  val signer: ConfigurationPropertyDefinition[
-    js.UndefOr[RequestSigner], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val signer: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[RequestSigner], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
-  val signingName: ConfigurationPropertyDefinition[js.UndefOr[String], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val sslEnabled: ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val streamCollector: ConfigurationPropertyDefinition[
-    js.UndefOr[StreamCollector[Readable]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val signingName: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[String], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
   ] = js.native
-  val streamHasher: ConfigurationPropertyDefinition[
-    js.UndefOr[StreamHasher[Readable]], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val sslEnabled: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
   ] = js.native
-  val urlParser: ConfigurationPropertyDefinition[
-    js.UndefOr[UrlParser], 
-    js.UndefOr[_], 
-    S3ResolvableConfiguration, 
-    S3ResolvedConfiguration
+  val streamCollector: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[StreamCollector[Readable]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
   ] = js.native
-  val useAccelerateEndpoint: ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val useDualstackEndpoint: ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val utf8Decoder: ConfigurationPropertyDefinition[js.UndefOr[Decoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
-  val utf8Encoder: ConfigurationPropertyDefinition[js.UndefOr[Encoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration] = js.native
+  val streamHasher: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[StreamHasher[Readable]], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
+  ] = js.native
+  val urlParser: js.UndefOr[
+    ConfigurationPropertyDefinition[
+      js.UndefOr[UrlParser], 
+      js.UndefOr[_], 
+      S3ResolvableConfiguration, 
+      S3ResolvedConfiguration
+    ]
+  ] = js.native
+  val useAccelerateEndpoint: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val useDualstackEndpoint: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Boolean], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val utf8Decoder: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Decoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
+  val utf8Encoder: js.UndefOr[
+    ConfigurationPropertyDefinition[js.UndefOr[Encoder], js.UndefOr[_], S3ResolvableConfiguration, S3ResolvedConfiguration]
+  ] = js.native
 }
 

@@ -16,15 +16,5 @@ class ASPxClientAppointmentToolTipShowingEventArgs protected ()
     * @param appointment An ASPxClientAppointment object representing the appointment.
     */
   def this(appointment: typings.devexpressWeb.ASPxClientAppointment) = this()
-  /**
-    * Gets the appointment.
-    */
-  /* CompleteClass */
-  override var appointment: typings.devexpressWeb.ASPxClientAppointment = js.native
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
 }
 

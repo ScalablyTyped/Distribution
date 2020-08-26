@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends PgLiteral {
   def this(str: String) = this()
-  /* CompleteClass */
-  override val _str: js.Any = js.native
 }
 
 /* static members */

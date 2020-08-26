@@ -64,24 +64,56 @@ trait SchemaApi extends js.Object {
 
 object SchemaApi {
   @scala.inline
-  def apply(
-    methods: js.Array[SchemaMethod] = null,
-    mixins: js.Array[SchemaMixin] = null,
-    name: String = null,
-    options: js.Array[SchemaOption] = null,
-    sourceContext: SchemaSourceContext = null,
-    syntax: String = null,
-    version: String = null
-  ): SchemaApi = {
+  def apply(): SchemaApi = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApi]
   }
+  @scala.inline
+  implicit class SchemaApiOps[Self <: SchemaApi] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethodsVarargs(value: SchemaMethod*): Self = this.set("methods", js.Array(value :_*))
+    @scala.inline
+    def setMethods(value: js.Array[SchemaMethod]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethods: Self = this.set("methods", js.undefined)
+    @scala.inline
+    def setMixinsVarargs(value: SchemaMixin*): Self = this.set("mixins", js.Array(value :_*))
+    @scala.inline
+    def setMixins(value: js.Array[SchemaMixin]): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixins: Self = this.set("mixins", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: SchemaOption*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[SchemaOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSourceContext(value: SchemaSourceContext): Self = this.set("sourceContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceContext: Self = this.set("sourceContext", js.undefined)
+    @scala.inline
+    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyntax: Self = this.set("syntax", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

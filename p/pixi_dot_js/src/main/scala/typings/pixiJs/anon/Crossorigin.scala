@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Crossorigin extends js.Object {
-  var autoLoad: js.UndefOr[Boolean] = js.undefined
-  var autoPlay: js.UndefOr[Boolean] = js.undefined
-  var createBitmap: js.UndefOr[Boolean] = js.undefined
-  var crossorigin: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var scale: js.UndefOr[Double] = js.undefined
-  var updateFPS: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.native
+  var createBitmap: js.UndefOr[Boolean] = js.native
+  var crossorigin: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.native
+  var updateFPS: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Crossorigin {
   @scala.inline
-  def apply(
-    autoLoad: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.UndefOr[Boolean] = js.undefined,
-    createBitmap: js.UndefOr[Boolean] = js.undefined,
-    crossorigin: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Double] = js.undefined,
-    updateFPS: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): Crossorigin = {
+  def apply(): Crossorigin = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPlay)) __obj.updateDynamic("autoPlay")(autoPlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(createBitmap)) __obj.updateDynamic("createBitmap")(createBitmap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(crossorigin)) __obj.updateDynamic("crossorigin")(crossorigin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateFPS)) __obj.updateDynamic("updateFPS")(updateFPS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crossorigin]
   }
+  @scala.inline
+  implicit class CrossoriginOps[Self <: Crossorigin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoLoad(value: Boolean): Self = this.set("autoLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoLoad: Self = this.set("autoLoad", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: Boolean): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setCreateBitmap(value: Boolean): Self = this.set("createBitmap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateBitmap: Self = this.set("createBitmap", js.undefined)
+    @scala.inline
+    def setCrossorigin(value: Boolean): Self = this.set("crossorigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossorigin: Self = this.set("crossorigin", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setScale(value: Double): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setUpdateFPS(value: Double): Self = this.set("updateFPS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateFPS: Self = this.set("updateFPS", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

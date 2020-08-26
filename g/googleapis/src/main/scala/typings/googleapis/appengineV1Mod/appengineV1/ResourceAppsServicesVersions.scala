@@ -30,6 +30,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAppsServicesVersionsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAppsServicesVersionsCreate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def create(
@@ -59,6 +60,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAppsServicesVersionsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAppsServicesVersionsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -91,6 +93,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVersion] = js.native
   def get(callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
   def get(params: ParamsResourceAppsServicesVersionsGet): GaxiosPromise[SchemaVersion] = js.native
   def get(params: ParamsResourceAppsServicesVersionsGet, callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
   def get(
@@ -122,6 +125,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVersionsResponse] = js.native
   def list(params: ParamsResourceAppsServicesVersionsList): GaxiosPromise[SchemaListVersionsResponse] = js.native
   def list(
     params: ParamsResourceAppsServicesVersionsList,
@@ -185,6 +189,7 @@ class ResourceAppsServicesVersions protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAppsServicesVersionsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAppsServicesVersionsPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(

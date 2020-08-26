@@ -31,16 +31,36 @@ trait SchemaBackendServiceCdnPolicy extends js.Object {
 
 object SchemaBackendServiceCdnPolicy {
   @scala.inline
-  def apply(
-    cacheKeyPolicy: SchemaCacheKeyPolicy = null,
-    signedUrlCacheMaxAgeSec: String = null,
-    signedUrlKeyNames: js.Array[String] = null
-  ): SchemaBackendServiceCdnPolicy = {
+  def apply(): SchemaBackendServiceCdnPolicy = {
     val __obj = js.Dynamic.literal()
-    if (cacheKeyPolicy != null) __obj.updateDynamic("cacheKeyPolicy")(cacheKeyPolicy.asInstanceOf[js.Any])
-    if (signedUrlCacheMaxAgeSec != null) __obj.updateDynamic("signedUrlCacheMaxAgeSec")(signedUrlCacheMaxAgeSec.asInstanceOf[js.Any])
-    if (signedUrlKeyNames != null) __obj.updateDynamic("signedUrlKeyNames")(signedUrlKeyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendServiceCdnPolicy]
   }
+  @scala.inline
+  implicit class SchemaBackendServiceCdnPolicyOps[Self <: SchemaBackendServiceCdnPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheKeyPolicy(value: SchemaCacheKeyPolicy): Self = this.set("cacheKeyPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheKeyPolicy: Self = this.set("cacheKeyPolicy", js.undefined)
+    @scala.inline
+    def setSignedUrlCacheMaxAgeSec(value: String): Self = this.set("signedUrlCacheMaxAgeSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignedUrlCacheMaxAgeSec: Self = this.set("signedUrlCacheMaxAgeSec", js.undefined)
+    @scala.inline
+    def setSignedUrlKeyNamesVarargs(value: String*): Self = this.set("signedUrlKeyNames", js.Array(value :_*))
+    @scala.inline
+    def setSignedUrlKeyNames(value: js.Array[String]): Self = this.set("signedUrlKeyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignedUrlKeyNames: Self = this.set("signedUrlKeyNames", js.undefined)
+  }
+  
 }
 

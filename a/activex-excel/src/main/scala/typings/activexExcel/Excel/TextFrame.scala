@@ -25,6 +25,7 @@ trait TextFrame extends js.Object {
   var VerticalAlignment: XlVAlign = js.native
   var VerticalOverflow: XlOartVerticalOverflow = js.native
   def Characters(): typings.activexExcel.Excel.Characters = js.native
+  def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double): typings.activexExcel.Excel.Characters = js.native
   def Characters(Start: Double, Length: Double): typings.activexExcel.Excel.Characters = js.native
 }

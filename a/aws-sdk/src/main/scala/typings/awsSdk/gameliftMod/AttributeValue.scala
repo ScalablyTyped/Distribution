@@ -26,18 +26,40 @@ trait AttributeValue extends js.Object {
 
 object AttributeValue {
   @scala.inline
-  def apply(
-    N: js.UndefOr[DoubleObject] = js.undefined,
-    S: NonZeroAndMaxString = null,
-    SDM: StringDoubleMap = null,
-    SL: StringList = null
-  ): AttributeValue = {
+  def apply(): AttributeValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(N)) __obj.updateDynamic("N")(N.get.asInstanceOf[js.Any])
-    if (S != null) __obj.updateDynamic("S")(S.asInstanceOf[js.Any])
-    if (SDM != null) __obj.updateDynamic("SDM")(SDM.asInstanceOf[js.Any])
-    if (SL != null) __obj.updateDynamic("SL")(SL.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeValue]
   }
+  @scala.inline
+  implicit class AttributeValueOps[Self <: AttributeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setN(value: DoubleObject): Self = this.set("N", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteN: Self = this.set("N", js.undefined)
+    @scala.inline
+    def setS(value: NonZeroAndMaxString): Self = this.set("S", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS: Self = this.set("S", js.undefined)
+    @scala.inline
+    def setSDM(value: StringDoubleMap): Self = this.set("SDM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSDM: Self = this.set("SDM", js.undefined)
+    @scala.inline
+    def setSLVarargs(value: NonZeroAndMaxString*): Self = this.set("SL", js.Array(value :_*))
+    @scala.inline
+    def setSL(value: StringList): Self = this.set("SL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSL: Self = this.set("SL", js.undefined)
+  }
+  
 }
 

@@ -9,32 +9,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MenuProps[T /* <: HTMLElement */]
   extends AllHTMLAttributes[T]
      with ClassAttributes[T] {
   @JSName("children")
-  var children_MenuProps: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])
+  var children_MenuProps: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element]) = js.native
   /**
     * The HTML tag for this element. Default: 'span'.
     */
   var tag: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object MenuProps {
   @scala.inline
-  def apply[/* <: typings.std.HTMLElement */ T](
-    children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element]),
-    AllHTMLAttributes: AllHTMLAttributes[T] = null,
-    ClassAttributes: ClassAttributes[T] = null,
-    tag: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any = null
-  ): MenuProps[T] = {
+  def apply[/* <: typings.std.HTMLElement */ T](children: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): MenuProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuProps[T]]
   }
+  @scala.inline
+  implicit class MenuPropsOps[Self <: MenuProps[_], /* <: typings.std.HTMLElement */ T] (val x: Self with MenuProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenFunction1(value: /* hasIsOpen */ IsOpen => Element): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def setChildren(value: Element | (js.Function1[/* hasIsOpen */ IsOpen, Element])): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTag(value: /* import warning: importer.ImportType#apply Failed type conversion: T['tagName'] */ js.Any): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

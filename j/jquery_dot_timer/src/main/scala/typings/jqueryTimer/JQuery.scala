@@ -11,7 +11,11 @@ trait JQuery extends js.Object {
   var timer_Original: JQueryTimer = js.native
   // #region Constructors
   def timer(): js.Object = js.native
+  def timer(action: js.UndefOr[scala.Nothing], time: js.UndefOr[scala.Nothing], autostart: Boolean): js.Object = js.native
+  def timer(action: js.UndefOr[scala.Nothing], time: Number): js.Object = js.native
+  def timer(action: js.UndefOr[scala.Nothing], time: Number, autostart: Boolean): js.Object = js.native
   def timer(action: js.Function): js.Object = js.native
+  def timer(action: js.Function, time: js.UndefOr[scala.Nothing], autostart: Boolean): js.Object = js.native
   def timer(action: js.Function, time: Number): js.Object = js.native
   def timer(action: js.Function, time: Number, autostart: Boolean): js.Object = js.native
 }

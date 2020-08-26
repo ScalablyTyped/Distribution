@@ -44,22 +44,46 @@ trait SchemaHolidaysHoliday extends js.Object {
 
 object SchemaHolidaysHoliday {
   @scala.inline
-  def apply(
-    countryCode: String = null,
-    date: String = null,
-    deliveryGuaranteeDate: String = null,
-    deliveryGuaranteeHour: String = null,
-    id: String = null,
-    `type`: String = null
-  ): SchemaHolidaysHoliday = {
+  def apply(): SchemaHolidaysHoliday = {
     val __obj = js.Dynamic.literal()
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (deliveryGuaranteeDate != null) __obj.updateDynamic("deliveryGuaranteeDate")(deliveryGuaranteeDate.asInstanceOf[js.Any])
-    if (deliveryGuaranteeHour != null) __obj.updateDynamic("deliveryGuaranteeHour")(deliveryGuaranteeHour.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHolidaysHoliday]
   }
+  @scala.inline
+  implicit class SchemaHolidaysHolidayOps[Self <: SchemaHolidaysHoliday] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDeliveryGuaranteeDate(value: String): Self = this.set("deliveryGuaranteeDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryGuaranteeDate: Self = this.set("deliveryGuaranteeDate", js.undefined)
+    @scala.inline
+    def setDeliveryGuaranteeHour(value: String): Self = this.set("deliveryGuaranteeHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryGuaranteeHour: Self = this.set("deliveryGuaranteeHour", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

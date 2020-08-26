@@ -30,18 +30,38 @@ trait ListAttachedIndicesRequest extends js.Object {
 
 object ListAttachedIndicesRequest {
   @scala.inline
-  def apply(
-    DirectoryArn: Arn,
-    TargetReference: ObjectReference,
-    ConsistencyLevel: ConsistencyLevel = null,
-    MaxResults: js.UndefOr[NumberResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListAttachedIndicesRequest = {
+  def apply(DirectoryArn: Arn, TargetReference: ObjectReference): ListAttachedIndicesRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], TargetReference = TargetReference.asInstanceOf[js.Any])
-    if (ConsistencyLevel != null) __obj.updateDynamic("ConsistencyLevel")(ConsistencyLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttachedIndicesRequest]
   }
+  @scala.inline
+  implicit class ListAttachedIndicesRequestOps[Self <: ListAttachedIndicesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetReference(value: ObjectReference): Self = this.set("TargetReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConsistencyLevel(value: ConsistencyLevel): Self = this.set("ConsistencyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistencyLevel: Self = this.set("ConsistencyLevel", js.undefined)
+    @scala.inline
+    def setMaxResults(value: NumberResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

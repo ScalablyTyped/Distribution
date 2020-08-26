@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
   * If you need to declare that a given property exists on `import.meta`,
   * this type may be augmented via interface merging.
   */
+@js.native
 trait ImportMeta extends js.Object
 

@@ -22,6 +22,7 @@ class Scalar protected () extends Node {
   @JSName("type")
   var type_Scalar: js.UndefOr[Type] = js.native
   var value: js.Any = js.native
+  def toJSON(arg: js.UndefOr[scala.Nothing], ctx: NodeToJsonContext): js.Any = js.native
   def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Any = js.native
 }
 

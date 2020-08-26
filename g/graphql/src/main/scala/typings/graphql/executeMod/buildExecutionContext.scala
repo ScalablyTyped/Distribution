@@ -31,7 +31,7 @@ object buildExecutionContext extends js.Object {
     rawVariableValues: Maybe[StringDictionary[_]],
     operationName: Maybe[String],
     fieldResolver: Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]],
-    typeResolver: Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]
+    typeResolver: Maybe[GraphQLTypeResolver[_, _]]
   ): js.Array[GraphQLError] | ExecutionContext = js.native
 }
 

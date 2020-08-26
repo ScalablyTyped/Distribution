@@ -57,7 +57,15 @@ trait CommonDialog extends js.Object {
     * @param boolean [CancelError=false]
     */
   def ShowSelectDevice(): Device | Null = js.native
+  def ShowSelectDevice(
+    DeviceType: js.UndefOr[scala.Nothing],
+    AlwaysSelectDevice: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Device | Null = js.native
+  def ShowSelectDevice(DeviceType: js.UndefOr[scala.Nothing], AlwaysSelectDevice: Boolean): Device | Null = js.native
+  def ShowSelectDevice(DeviceType: js.UndefOr[scala.Nothing], AlwaysSelectDevice: Boolean, CancelError: Boolean): Device | Null = js.native
   def ShowSelectDevice(DeviceType: WiaDeviceType): Device | Null = js.native
+  def ShowSelectDevice(DeviceType: WiaDeviceType, AlwaysSelectDevice: js.UndefOr[scala.Nothing], CancelError: Boolean): Device | Null = js.native
   def ShowSelectDevice(DeviceType: WiaDeviceType, AlwaysSelectDevice: Boolean): Device | Null = js.native
   def ShowSelectDevice(DeviceType: WiaDeviceType, AlwaysSelectDevice: Boolean, CancelError: Boolean): Device | Null = js.native
   /**
@@ -70,9 +78,187 @@ trait CommonDialog extends js.Object {
     * @param boolean [CancelError=false]
     */
   def ShowSelectItems(Device: Device): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean,
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean,
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean,
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(Device: Device, Intent: js.UndefOr[scala.Nothing], Bias: WiaImageBias): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: WiaImageBias,
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: WiaImageBias,
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: WiaImageBias,
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(Device: Device, Intent: js.UndefOr[scala.Nothing], Bias: WiaImageBias, SingleSelect: Boolean): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: WiaImageBias,
+    SingleSelect: Boolean,
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: WiaImageBias,
+    SingleSelect: Boolean,
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: js.UndefOr[scala.Nothing],
+    Bias: WiaImageBias,
+    SingleSelect: Boolean,
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
   def ShowSelectItems(Device: Device, Intent: WiaImageIntent): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(Device: Device, Intent: WiaImageIntent, Bias: js.UndefOr[scala.Nothing], SingleSelect: Boolean): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean,
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean,
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: js.UndefOr[scala.Nothing],
+    SingleSelect: Boolean,
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
   def ShowSelectItems(Device: Device, Intent: WiaImageIntent, Bias: WiaImageBias): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: WiaImageBias,
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: WiaImageBias,
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean
+  ): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: WiaImageBias,
+    SingleSelect: js.UndefOr[scala.Nothing],
+    UseCommonUI: Boolean,
+    CancelError: Boolean
+  ): Items | Null = js.native
   def ShowSelectItems(Device: Device, Intent: WiaImageIntent, Bias: WiaImageBias, SingleSelect: Boolean): Items | Null = js.native
+  def ShowSelectItems(
+    Device: Device,
+    Intent: WiaImageIntent,
+    Bias: WiaImageBias,
+    SingleSelect: Boolean,
+    UseCommonUI: js.UndefOr[scala.Nothing],
+    CancelError: Boolean
+  ): Items | Null = js.native
   def ShowSelectItems(
     Device: Device,
     Intent: WiaImageIntent,
@@ -94,6 +280,7 @@ trait CommonDialog extends js.Object {
     * @param boolean [CancelError=false]
     */
   def ShowTransfer(Item: Item): ImageFile = js.native
+  def ShowTransfer(Item: Item, FormatID: js.UndefOr[scala.Nothing], CancelError: Boolean): ImageFile = js.native
   def ShowTransfer(Item: Item, FormatID: String): ImageFile = js.native
   def ShowTransfer(Item: Item, FormatID: String, CancelError: Boolean): ImageFile = js.native
 }

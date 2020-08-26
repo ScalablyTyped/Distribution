@@ -29,12 +29,35 @@ object TranslateTextRequest {
   def apply(
     SourceLanguageCode: LanguageCodeString,
     TargetLanguageCode: LanguageCodeString,
-    Text: BoundedLengthString,
-    TerminologyNames: ResourceNameList = null
+    Text: BoundedLengthString
   ): TranslateTextRequest = {
     val __obj = js.Dynamic.literal(SourceLanguageCode = SourceLanguageCode.asInstanceOf[js.Any], TargetLanguageCode = TargetLanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
-    if (TerminologyNames != null) __obj.updateDynamic("TerminologyNames")(TerminologyNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateTextRequest]
   }
+  @scala.inline
+  implicit class TranslateTextRequestOps[Self <: TranslateTextRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetLanguageCode(value: LanguageCodeString): Self = this.set("TargetLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: BoundedLengthString): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTerminologyNamesVarargs(value: ResourceName*): Self = this.set("TerminologyNames", js.Array(value :_*))
+    @scala.inline
+    def setTerminologyNames(value: ResourceNameList): Self = this.set("TerminologyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminologyNames: Self = this.set("TerminologyNames", js.undefined)
+  }
+  
 }
 

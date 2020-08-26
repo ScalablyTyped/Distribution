@@ -23,138 +23,233 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Annotations> */
+@js.native
 trait PartialAnnotationsArrowcolor extends js.Object {
-  var align: js.UndefOr[left | center | right] = js.undefined
-  var arrowcolor: js.UndefOr[String] = js.undefined
-  var arrowhead: js.UndefOr[Double] = js.undefined
-  var arrowside: js.UndefOr[end | start] = js.undefined
-  var arrowsize: js.UndefOr[Double] = js.undefined
-  var arrowwidth: js.UndefOr[Double] = js.undefined
-  var ax: js.UndefOr[Double] = js.undefined
-  var axref: js.UndefOr[pixel] = js.undefined
-  var ay: js.UndefOr[Double] = js.undefined
-  var ayref: js.UndefOr[pixel] = js.undefined
-  var bgcolor: js.UndefOr[String] = js.undefined
-  var bordercolor: js.UndefOr[String] = js.undefined
-  var borderpad: js.UndefOr[Double] = js.undefined
-  var borderwidth: js.UndefOr[Double] = js.undefined
-  var captureevents: js.UndefOr[Boolean] = js.undefined
-  var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.undefined
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hoverlabel: js.UndefOr[Partial[HoverLabel]] = js.undefined
-  var hovertext: js.UndefOr[String] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var showarrow: js.UndefOr[Boolean] = js.undefined
-  var standoff: js.UndefOr[Double] = js.undefined
-  var startarrowhead: js.UndefOr[Double] = js.undefined
-  var startarrowsize: js.UndefOr[Double] = js.undefined
-  var startstandoff: js.UndefOr[Double] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var textangle: js.UndefOr[String] = js.undefined
-  var valign: js.UndefOr[top | middle | bottom] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var x: js.UndefOr[Double | String] = js.undefined
-  var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
-  var xclick: js.UndefOr[js.Any] = js.undefined
-  var xref: js.UndefOr[paper | x] = js.undefined
-  var xshift: js.UndefOr[Double] = js.undefined
-  var y: js.UndefOr[Double | String] = js.undefined
-  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
-  var yclick: js.UndefOr[js.Any] = js.undefined
-  var yref: js.UndefOr[paper | y] = js.undefined
-  var yshift: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[left | center | right] = js.native
+  var arrowcolor: js.UndefOr[String] = js.native
+  var arrowhead: js.UndefOr[Double] = js.native
+  var arrowside: js.UndefOr[end | start] = js.native
+  var arrowsize: js.UndefOr[Double] = js.native
+  var arrowwidth: js.UndefOr[Double] = js.native
+  var ax: js.UndefOr[Double] = js.native
+  var axref: js.UndefOr[pixel] = js.native
+  var ay: js.UndefOr[Double] = js.native
+  var ayref: js.UndefOr[pixel] = js.native
+  var bgcolor: js.UndefOr[String] = js.native
+  var bordercolor: js.UndefOr[String] = js.native
+  var borderpad: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.native
+  var captureevents: js.UndefOr[Boolean] = js.native
+  var clicktoshow: js.UndefOr[`false` | onoff | onout] = js.native
+  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hoverlabel: js.UndefOr[Partial[HoverLabel]] = js.native
+  var hovertext: js.UndefOr[String] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var showarrow: js.UndefOr[Boolean] = js.native
+  var standoff: js.UndefOr[Double] = js.native
+  var startarrowhead: js.UndefOr[Double] = js.native
+  var startarrowsize: js.UndefOr[Double] = js.native
+  var startstandoff: js.UndefOr[Double] = js.native
+  var text: js.UndefOr[String] = js.native
+  var textangle: js.UndefOr[String] = js.native
+  var valign: js.UndefOr[top | middle | bottom] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double | String] = js.native
+  var xanchor: js.UndefOr[auto | left | center | right] = js.native
+  var xclick: js.UndefOr[js.Any] = js.native
+  var xref: js.UndefOr[paper | x] = js.native
+  var xshift: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double | String] = js.native
+  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.native
+  var yclick: js.UndefOr[js.Any] = js.native
+  var yref: js.UndefOr[paper | y] = js.native
+  var yshift: js.UndefOr[Double] = js.native
 }
 
 object PartialAnnotationsArrowcolor {
   @scala.inline
-  def apply(
-    align: left | center | right = null,
-    arrowcolor: String = null,
-    arrowhead: js.UndefOr[Double] = js.undefined,
-    arrowside: end | start = null,
-    arrowsize: js.UndefOr[Double] = js.undefined,
-    arrowwidth: js.UndefOr[Double] = js.undefined,
-    ax: js.UndefOr[Double] = js.undefined,
-    axref: pixel = null,
-    ay: js.UndefOr[Double] = js.undefined,
-    ayref: pixel = null,
-    bgcolor: String = null,
-    bordercolor: String = null,
-    borderpad: js.UndefOr[Double] = js.undefined,
-    borderwidth: js.UndefOr[Double] = js.undefined,
-    captureevents: js.UndefOr[Boolean] = js.undefined,
-    clicktoshow: `false` | onoff | onout = null,
-    font: Partial[typings.plotlyJs.mod.Font] = null,
-    height: js.UndefOr[Double] = js.undefined,
-    hoverlabel: Partial[HoverLabel] = null,
-    hovertext: String = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    showarrow: js.UndefOr[Boolean] = js.undefined,
-    standoff: js.UndefOr[Double] = js.undefined,
-    startarrowhead: js.UndefOr[Double] = js.undefined,
-    startarrowsize: js.UndefOr[Double] = js.undefined,
-    startstandoff: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    textangle: String = null,
-    valign: top | middle | bottom = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    x: Double | String = null,
-    xanchor: auto | left | center | right = null,
-    xclick: js.Any = null,
-    xref: paper | x = null,
-    xshift: js.UndefOr[Double] = js.undefined,
-    y: Double | String = null,
-    yanchor: auto | top | middle | bottom = null,
-    yclick: js.Any = null,
-    yref: paper | y = null,
-    yshift: js.UndefOr[Double] = js.undefined
-  ): PartialAnnotationsArrowcolor = {
+  def apply(): PartialAnnotationsArrowcolor = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (arrowcolor != null) __obj.updateDynamic("arrowcolor")(arrowcolor.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowhead)) __obj.updateDynamic("arrowhead")(arrowhead.get.asInstanceOf[js.Any])
-    if (arrowside != null) __obj.updateDynamic("arrowside")(arrowside.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowsize)) __obj.updateDynamic("arrowsize")(arrowsize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowwidth)) __obj.updateDynamic("arrowwidth")(arrowwidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ax)) __obj.updateDynamic("ax")(ax.get.asInstanceOf[js.Any])
-    if (axref != null) __obj.updateDynamic("axref")(axref.asInstanceOf[js.Any])
-    if (!js.isUndefined(ay)) __obj.updateDynamic("ay")(ay.get.asInstanceOf[js.Any])
-    if (ayref != null) __obj.updateDynamic("ayref")(ayref.asInstanceOf[js.Any])
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (bordercolor != null) __obj.updateDynamic("bordercolor")(bordercolor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderpad)) __obj.updateDynamic("borderpad")(borderpad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderwidth)) __obj.updateDynamic("borderwidth")(borderwidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureevents)) __obj.updateDynamic("captureevents")(captureevents.get.asInstanceOf[js.Any])
-    if (clicktoshow != null) __obj.updateDynamic("clicktoshow")(clicktoshow.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (hoverlabel != null) __obj.updateDynamic("hoverlabel")(hoverlabel.asInstanceOf[js.Any])
-    if (hovertext != null) __obj.updateDynamic("hovertext")(hovertext.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showarrow)) __obj.updateDynamic("showarrow")(showarrow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(standoff)) __obj.updateDynamic("standoff")(standoff.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startarrowhead)) __obj.updateDynamic("startarrowhead")(startarrowhead.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startarrowsize)) __obj.updateDynamic("startarrowsize")(startarrowsize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startstandoff)) __obj.updateDynamic("startstandoff")(startstandoff.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textangle != null) __obj.updateDynamic("textangle")(textangle.asInstanceOf[js.Any])
-    if (valign != null) __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xanchor != null) __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    if (xclick != null) __obj.updateDynamic("xclick")(xclick.asInstanceOf[js.Any])
-    if (xref != null) __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
-    if (!js.isUndefined(xshift)) __obj.updateDynamic("xshift")(xshift.get.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (yanchor != null) __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
-    if (yclick != null) __obj.updateDynamic("yclick")(yclick.asInstanceOf[js.Any])
-    if (yref != null) __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
-    if (!js.isUndefined(yshift)) __obj.updateDynamic("yshift")(yshift.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialAnnotationsArrowcolor]
   }
+  @scala.inline
+  implicit class PartialAnnotationsArrowcolorOps[Self <: PartialAnnotationsArrowcolor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: left | center | right): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setArrowcolor(value: String): Self = this.set("arrowcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowcolor: Self = this.set("arrowcolor", js.undefined)
+    @scala.inline
+    def setArrowhead(value: Double): Self = this.set("arrowhead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowhead: Self = this.set("arrowhead", js.undefined)
+    @scala.inline
+    def setArrowside(value: end | start): Self = this.set("arrowside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowside: Self = this.set("arrowside", js.undefined)
+    @scala.inline
+    def setArrowsize(value: Double): Self = this.set("arrowsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowsize: Self = this.set("arrowsize", js.undefined)
+    @scala.inline
+    def setArrowwidth(value: Double): Self = this.set("arrowwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowwidth: Self = this.set("arrowwidth", js.undefined)
+    @scala.inline
+    def setAx(value: Double): Self = this.set("ax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAx: Self = this.set("ax", js.undefined)
+    @scala.inline
+    def setAxref(value: pixel): Self = this.set("axref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxref: Self = this.set("axref", js.undefined)
+    @scala.inline
+    def setAy(value: Double): Self = this.set("ay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAy: Self = this.set("ay", js.undefined)
+    @scala.inline
+    def setAyref(value: pixel): Self = this.set("ayref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAyref: Self = this.set("ayref", js.undefined)
+    @scala.inline
+    def setBgcolor(value: String): Self = this.set("bgcolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgcolor: Self = this.set("bgcolor", js.undefined)
+    @scala.inline
+    def setBordercolor(value: String): Self = this.set("bordercolor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBordercolor: Self = this.set("bordercolor", js.undefined)
+    @scala.inline
+    def setBorderpad(value: Double): Self = this.set("borderpad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderpad: Self = this.set("borderpad", js.undefined)
+    @scala.inline
+    def setBorderwidth(value: Double): Self = this.set("borderwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderwidth: Self = this.set("borderwidth", js.undefined)
+    @scala.inline
+    def setCaptureevents(value: Boolean): Self = this.set("captureevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureevents: Self = this.set("captureevents", js.undefined)
+    @scala.inline
+    def setClicktoshow(value: `false` | onoff | onout): Self = this.set("clicktoshow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClicktoshow: Self = this.set("clicktoshow", js.undefined)
+    @scala.inline
+    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHoverlabel(value: Partial[HoverLabel]): Self = this.set("hoverlabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverlabel: Self = this.set("hoverlabel", js.undefined)
+    @scala.inline
+    def setHovertext(value: String): Self = this.set("hovertext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHovertext: Self = this.set("hovertext", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setShowarrow(value: Boolean): Self = this.set("showarrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowarrow: Self = this.set("showarrow", js.undefined)
+    @scala.inline
+    def setStandoff(value: Double): Self = this.set("standoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandoff: Self = this.set("standoff", js.undefined)
+    @scala.inline
+    def setStartarrowhead(value: Double): Self = this.set("startarrowhead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartarrowhead: Self = this.set("startarrowhead", js.undefined)
+    @scala.inline
+    def setStartarrowsize(value: Double): Self = this.set("startarrowsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartarrowsize: Self = this.set("startarrowsize", js.undefined)
+    @scala.inline
+    def setStartstandoff(value: Double): Self = this.set("startstandoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartstandoff: Self = this.set("startstandoff", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextangle(value: String): Self = this.set("textangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextangle: Self = this.set("textangle", js.undefined)
+    @scala.inline
+    def setValign(value: top | middle | bottom): Self = this.set("valign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValign: Self = this.set("valign", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setXanchor(value: auto | left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXanchor: Self = this.set("xanchor", js.undefined)
+    @scala.inline
+    def setXclick(value: js.Any): Self = this.set("xclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXclick: Self = this.set("xclick", js.undefined)
+    @scala.inline
+    def setXref(value: paper | typings.plotlyJs.plotlyJsStrings.x): Self = this.set("xref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXref: Self = this.set("xref", js.undefined)
+    @scala.inline
+    def setXshift(value: Double): Self = this.set("xshift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXshift: Self = this.set("xshift", js.undefined)
+    @scala.inline
+    def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    @scala.inline
+    def setYanchor(value: auto | top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYanchor: Self = this.set("yanchor", js.undefined)
+    @scala.inline
+    def setYclick(value: js.Any): Self = this.set("yclick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYclick: Self = this.set("yclick", js.undefined)
+    @scala.inline
+    def setYref(value: paper | y): Self = this.set("yref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYref: Self = this.set("yref", js.undefined)
+    @scala.inline
+    def setYshift(value: Double): Self = this.set("yshift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYshift: Self = this.set("yshift", js.undefined)
+  }
+  
 }
 

@@ -18,22 +18,46 @@ trait PartialStyleRulesListSubh extends js.Object {
 
 object PartialStyleRulesListSubh {
   @scala.inline
-  def apply(
-    colorInherit: CSSProperties = null,
-    colorPrimary: CSSProperties = null,
-    gutters: CSSProperties = null,
-    inset: CSSProperties = null,
-    root: CSSProperties = null,
-    sticky: CSSProperties = null
-  ): PartialStyleRulesListSubh = {
+  def apply(): PartialStyleRulesListSubh = {
     val __obj = js.Dynamic.literal()
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (sticky != null) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesListSubh]
   }
+  @scala.inline
+  implicit class PartialStyleRulesListSubhOps[Self <: PartialStyleRulesListSubh] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorInherit(value: CSSProperties): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: CSSProperties): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setGutters(value: CSSProperties): Self = this.set("gutters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutters: Self = this.set("gutters", js.undefined)
+    @scala.inline
+    def setInset(value: CSSProperties): Self = this.set("inset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInset: Self = this.set("inset", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSticky(value: CSSProperties): Self = this.set("sticky", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSticky: Self = this.set("sticky", js.undefined)
+  }
+  
 }
 

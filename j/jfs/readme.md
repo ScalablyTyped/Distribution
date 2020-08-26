@@ -12,7 +12,7 @@ A simple JSON file store
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 37 |
-| # downloads        | 425794 |
+| # downloads        | 418399 |
 | # stars            | 1 |
 
 ## Links

@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommentThreadSnippet extends js.Object {
-  var canReply: js.UndefOr[Boolean] = js.undefined
-  var channelId: js.UndefOr[String] = js.undefined
-  var isPublic: js.UndefOr[Boolean] = js.undefined
-  var topLevelComment: js.UndefOr[Comment] = js.undefined
-  var totalReplyCount: js.UndefOr[Double] = js.undefined
-  var videoId: js.UndefOr[String] = js.undefined
+  var canReply: js.UndefOr[Boolean] = js.native
+  var channelId: js.UndefOr[String] = js.native
+  var isPublic: js.UndefOr[Boolean] = js.native
+  var topLevelComment: js.UndefOr[Comment] = js.native
+  var totalReplyCount: js.UndefOr[Double] = js.native
+  var videoId: js.UndefOr[String] = js.native
 }
 
 object CommentThreadSnippet {
   @scala.inline
-  def apply(
-    canReply: js.UndefOr[Boolean] = js.undefined,
-    channelId: String = null,
-    isPublic: js.UndefOr[Boolean] = js.undefined,
-    topLevelComment: Comment = null,
-    totalReplyCount: js.UndefOr[Double] = js.undefined,
-    videoId: String = null
-  ): CommentThreadSnippet = {
+  def apply(): CommentThreadSnippet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canReply)) __obj.updateDynamic("canReply")(canReply.get.asInstanceOf[js.Any])
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic.get.asInstanceOf[js.Any])
-    if (topLevelComment != null) __obj.updateDynamic("topLevelComment")(topLevelComment.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalReplyCount)) __obj.updateDynamic("totalReplyCount")(totalReplyCount.get.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentThreadSnippet]
   }
+  @scala.inline
+  implicit class CommentThreadSnippetOps[Self <: CommentThreadSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanReply(value: Boolean): Self = this.set("canReply", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanReply: Self = this.set("canReply", js.undefined)
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setIsPublic(value: Boolean): Self = this.set("isPublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPublic: Self = this.set("isPublic", js.undefined)
+    @scala.inline
+    def setTopLevelComment(value: Comment): Self = this.set("topLevelComment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopLevelComment: Self = this.set("topLevelComment", js.undefined)
+    @scala.inline
+    def setTotalReplyCount(value: Double): Self = this.set("totalReplyCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalReplyCount: Self = this.set("totalReplyCount", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+  }
+  
 }
 

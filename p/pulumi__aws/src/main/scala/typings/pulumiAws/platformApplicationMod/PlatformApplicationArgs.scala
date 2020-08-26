@@ -32,15 +32,15 @@ trait PlatformApplicationArgs extends js.Object {
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
-    * The platform that the app is registered with. See [Platform][1] for supported platforms.
+    * The platform that the app is registered with. See [Platform](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) for supported platforms.
     */
   val platform: Input[String] = js.native
   /**
-    * Application Platform credential. See [Credential][1] for type of credential required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
+    * Application Platform credential. See [Credential](http://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) for type of credential required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
     */
   val platformCredential: Input[String] = js.native
   /**
-    * Application Platform principal. See [Principal][2] for type of principal required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
+    * Application Platform principal. See [Principal](http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html) for type of principal required for platform. The value of this attribute when stored into the state is only a hash of the real value, so therefore it is not practical to use this as an attribute for other resources.
     */
   val platformPrincipal: js.UndefOr[Input[String]] = js.native
   /**
@@ -55,30 +55,62 @@ trait PlatformApplicationArgs extends js.Object {
 
 object PlatformApplicationArgs {
   @scala.inline
-  def apply(
-    platform: Input[String],
-    platformCredential: Input[String],
-    eventDeliveryFailureTopicArn: Input[String] = null,
-    eventEndpointCreatedTopicArn: Input[String] = null,
-    eventEndpointDeletedTopicArn: Input[String] = null,
-    eventEndpointUpdatedTopicArn: Input[String] = null,
-    failureFeedbackRoleArn: Input[String] = null,
-    name: Input[String] = null,
-    platformPrincipal: Input[String] = null,
-    successFeedbackRoleArn: Input[String] = null,
-    successFeedbackSampleRate: Input[String] = null
-  ): PlatformApplicationArgs = {
+  def apply(platform: Input[String], platformCredential: Input[String]): PlatformApplicationArgs = {
     val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any], platformCredential = platformCredential.asInstanceOf[js.Any])
-    if (eventDeliveryFailureTopicArn != null) __obj.updateDynamic("eventDeliveryFailureTopicArn")(eventDeliveryFailureTopicArn.asInstanceOf[js.Any])
-    if (eventEndpointCreatedTopicArn != null) __obj.updateDynamic("eventEndpointCreatedTopicArn")(eventEndpointCreatedTopicArn.asInstanceOf[js.Any])
-    if (eventEndpointDeletedTopicArn != null) __obj.updateDynamic("eventEndpointDeletedTopicArn")(eventEndpointDeletedTopicArn.asInstanceOf[js.Any])
-    if (eventEndpointUpdatedTopicArn != null) __obj.updateDynamic("eventEndpointUpdatedTopicArn")(eventEndpointUpdatedTopicArn.asInstanceOf[js.Any])
-    if (failureFeedbackRoleArn != null) __obj.updateDynamic("failureFeedbackRoleArn")(failureFeedbackRoleArn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platformPrincipal != null) __obj.updateDynamic("platformPrincipal")(platformPrincipal.asInstanceOf[js.Any])
-    if (successFeedbackRoleArn != null) __obj.updateDynamic("successFeedbackRoleArn")(successFeedbackRoleArn.asInstanceOf[js.Any])
-    if (successFeedbackSampleRate != null) __obj.updateDynamic("successFeedbackSampleRate")(successFeedbackSampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformApplicationArgs]
   }
+  @scala.inline
+  implicit class PlatformApplicationArgsOps[Self <: PlatformApplicationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlatform(value: Input[String]): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlatformCredential(value: Input[String]): Self = this.set("platformCredential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventDeliveryFailureTopicArn(value: Input[String]): Self = this.set("eventDeliveryFailureTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDeliveryFailureTopicArn: Self = this.set("eventDeliveryFailureTopicArn", js.undefined)
+    @scala.inline
+    def setEventEndpointCreatedTopicArn(value: Input[String]): Self = this.set("eventEndpointCreatedTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventEndpointCreatedTopicArn: Self = this.set("eventEndpointCreatedTopicArn", js.undefined)
+    @scala.inline
+    def setEventEndpointDeletedTopicArn(value: Input[String]): Self = this.set("eventEndpointDeletedTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventEndpointDeletedTopicArn: Self = this.set("eventEndpointDeletedTopicArn", js.undefined)
+    @scala.inline
+    def setEventEndpointUpdatedTopicArn(value: Input[String]): Self = this.set("eventEndpointUpdatedTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventEndpointUpdatedTopicArn: Self = this.set("eventEndpointUpdatedTopicArn", js.undefined)
+    @scala.inline
+    def setFailureFeedbackRoleArn(value: Input[String]): Self = this.set("failureFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureFeedbackRoleArn: Self = this.set("failureFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlatformPrincipal(value: Input[String]): Self = this.set("platformPrincipal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformPrincipal: Self = this.set("platformPrincipal", js.undefined)
+    @scala.inline
+    def setSuccessFeedbackRoleArn(value: Input[String]): Self = this.set("successFeedbackRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessFeedbackRoleArn: Self = this.set("successFeedbackRoleArn", js.undefined)
+    @scala.inline
+    def setSuccessFeedbackSampleRate(value: Input[String]): Self = this.set("successFeedbackSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessFeedbackSampleRate: Self = this.set("successFeedbackSampleRate", js.undefined)
+  }
+  
 }
 

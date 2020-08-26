@@ -1,40 +1,39 @@
 package typings.msRestAzure.mod
 
-import typings.msRestAzure.msRestAzureStrings.batch
-import typings.msRestAzure.msRestAzureStrings.graph
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InteractiveLoginOptions extends DeviceTokenCredentialsOptions {
   /**
     * The language code specifying how the message should be localized to. Default value 'en-us'.
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
 }
 
 object InteractiveLoginOptions {
   @scala.inline
-  def apply(
-    authorizationScheme: String = null,
-    clientId: String = null,
-    domain: String = null,
-    environment: AzureEnvironment = null,
-    language: String = null,
-    tokenAudience: graph | batch | String = null,
-    tokenCache: js.Any = null,
-    username: String = null
-  ): InteractiveLoginOptions = {
+  def apply(): InteractiveLoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveLoginOptions]
   }
+  @scala.inline
+  implicit class InteractiveLoginOptionsOps[Self <: InteractiveLoginOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListDevEndpointsResponse extends js.Object {
 
 object ListDevEndpointsResponse {
   @scala.inline
-  def apply(DevEndpointNames: DevEndpointNameList = null, NextToken: GenericString = null): ListDevEndpointsResponse = {
+  def apply(): ListDevEndpointsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DevEndpointNames != null) __obj.updateDynamic("DevEndpointNames")(DevEndpointNames.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDevEndpointsResponse]
   }
+  @scala.inline
+  implicit class ListDevEndpointsResponseOps[Self <: ListDevEndpointsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevEndpointNamesVarargs(value: NameString*): Self = this.set("DevEndpointNames", js.Array(value :_*))
+    @scala.inline
+    def setDevEndpointNames(value: DevEndpointNameList): Self = this.set("DevEndpointNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevEndpointNames: Self = this.set("DevEndpointNames", js.undefined)
+    @scala.inline
+    def setNextToken(value: GenericString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

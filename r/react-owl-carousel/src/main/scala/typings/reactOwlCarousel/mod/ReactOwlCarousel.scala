@@ -13,7 +13,7 @@ trait ReactOwlCarousel
   extends Component[OwlCarouselProps, js.Object, js.Any] {
   @JSName("$ele")
   var $ele: js.UndefOr[JQuery[HTMLElement]] = js.native
-  var container: js.UndefOr[js.Any] = js.native
+  var container: js.Any = js.native
   var containerRef: js.Any = js.native
   var options: js.Any = js.native
   var propsWithoutOptions: js.Any = js.native

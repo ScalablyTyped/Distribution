@@ -10,9 +10,9 @@ Merge objects using descriptors
 | ------------------ | :-------------: |
 | Full name          | merge-descriptors |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 284 |
-| # downloads        | 387201005 |
+| # releases         | 0 |
+| # dependents       | 286 |
+| # downloads        | 397866725 |
 | # stars            | 18 |
 
 ## Links

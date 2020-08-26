@@ -19,6 +19,7 @@ class GridFSBucket protected () extends js.Object {
   def drop(callback: GridFSBucketErrorCallback): Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#find */
   def find(): Cursor[_] = js.native
+  def find(filter: js.UndefOr[scala.Nothing], options: GridFSBucketFindOptions): Cursor[_] = js.native
   def find(filter: js.Object): Cursor[_] = js.native
   def find(filter: js.Object, options: GridFSBucketFindOptions): Cursor[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openDownloadStream */

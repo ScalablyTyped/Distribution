@@ -22,10 +22,11 @@ import scala.scalajs.js.annotation._
   *       .build();
   *     checkBoxItem.setValidation(checkBoxValidation);
   */
+@js.native
 trait CheckboxValidation extends js.Object {
-  def requireSelectAtLeast(number: Integer): CheckboxValidation
-  def requireSelectAtMost(number: Integer): CheckboxValidation
-  def requireSelectExactly(number: Integer): CheckboxValidation
+  def requireSelectAtLeast(number: Integer): CheckboxValidation = js.native
+  def requireSelectAtMost(number: Integer): CheckboxValidation = js.native
+  def requireSelectExactly(number: Integer): CheckboxValidation = js.native
 }
 
 object CheckboxValidation {
@@ -38,5 +39,24 @@ object CheckboxValidation {
     val __obj = js.Dynamic.literal(requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
     __obj.asInstanceOf[CheckboxValidation]
   }
+  @scala.inline
+  implicit class CheckboxValidationOps[Self <: CheckboxValidation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequireSelectAtLeast(value: Integer => CheckboxValidation): Self = this.set("requireSelectAtLeast", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRequireSelectAtMost(value: Integer => CheckboxValidation): Self = this.set("requireSelectAtMost", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRequireSelectExactly(value: Integer => CheckboxValidation): Self = this.set("requireSelectExactly", js.Any.fromFunction1(value))
+  }
+  
 }
 

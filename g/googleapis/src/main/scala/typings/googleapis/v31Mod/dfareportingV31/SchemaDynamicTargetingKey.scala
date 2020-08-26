@@ -38,13 +38,38 @@ trait SchemaDynamicTargetingKey extends js.Object {
 
 object SchemaDynamicTargetingKey {
   @scala.inline
-  def apply(kind: String = null, name: String = null, objectId: String = null, objectType: String = null): SchemaDynamicTargetingKey = {
+  def apply(): SchemaDynamicTargetingKey = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDynamicTargetingKey]
   }
+  @scala.inline
+  implicit class SchemaDynamicTargetingKeyOps[Self <: SchemaDynamicTargetingKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectType: Self = this.set("objectType", js.undefined)
+  }
+  
 }
 

@@ -8,7 +8,26 @@ import scala.scalajs.js.annotation._
 @js.native
 object init extends js.Object {
   def apply(apiKey: String): Unit = js.native
+  def apply(
+    apiKey: String,
+    userId: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* client */ AmplitudeClient, Unit]
+  ): Unit = js.native
+  def apply(apiKey: String, userId: js.UndefOr[scala.Nothing], options: Config): Unit = js.native
+  def apply(
+    apiKey: String,
+    userId: js.UndefOr[scala.Nothing],
+    options: Config,
+    callback: js.Function1[/* client */ AmplitudeClient, Unit]
+  ): Unit = js.native
   def apply(apiKey: String, userId: String): Unit = js.native
+  def apply(
+    apiKey: String,
+    userId: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* client */ AmplitudeClient, Unit]
+  ): Unit = js.native
   def apply(apiKey: String, userId: String, options: Config): Unit = js.native
   def apply(
     apiKey: String,

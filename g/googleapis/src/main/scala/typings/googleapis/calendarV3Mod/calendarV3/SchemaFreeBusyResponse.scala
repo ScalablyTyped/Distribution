@@ -31,20 +31,42 @@ trait SchemaFreeBusyResponse extends js.Object {
 
 object SchemaFreeBusyResponse {
   @scala.inline
-  def apply(
-    calendars: StringDictionary[SchemaFreeBusyCalendar] = null,
-    groups: StringDictionary[SchemaFreeBusyGroup] = null,
-    kind: String = null,
-    timeMax: String = null,
-    timeMin: String = null
-  ): SchemaFreeBusyResponse = {
+  def apply(): SchemaFreeBusyResponse = {
     val __obj = js.Dynamic.literal()
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax.asInstanceOf[js.Any])
-    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFreeBusyResponse]
   }
+  @scala.inline
+  implicit class SchemaFreeBusyResponseOps[Self <: SchemaFreeBusyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalendars(value: StringDictionary[SchemaFreeBusyCalendar]): Self = this.set("calendars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendars: Self = this.set("calendars", js.undefined)
+    @scala.inline
+    def setGroups(value: StringDictionary[SchemaFreeBusyGroup]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setTimeMax(value: String): Self = this.set("timeMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeMax: Self = this.set("timeMax", js.undefined)
+    @scala.inline
+    def setTimeMin(value: String): Self = this.set("timeMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeMin: Self = this.set("timeMin", js.undefined)
+  }
+  
 }
 

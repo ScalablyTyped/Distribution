@@ -48,16 +48,34 @@ trait SchemaHistogramRule extends js.Object {
 
 object SchemaHistogramRule {
   @scala.inline
-  def apply(
-    end: js.UndefOr[Double] = js.undefined,
-    interval: js.UndefOr[Double] = js.undefined,
-    start: js.UndefOr[Double] = js.undefined
-  ): SchemaHistogramRule = {
+  def apply(): SchemaHistogramRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(end)) __obj.updateDynamic("end")(end.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHistogramRule]
   }
+  @scala.inline
+  implicit class SchemaHistogramRuleOps[Self <: SchemaHistogramRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnd(value: Double): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setInterval(value: Double): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

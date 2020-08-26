@@ -44,6 +44,7 @@ trait Store extends js.Object {
     * the data ids that were provided.
     */
   def lookupInvalidationState(dataIDs: js.Array[DataID]): InvalidationState = js.native
+  def notify(sourceOperation: js.UndefOr[scala.Nothing], invalidateStore: Boolean): js.Array[RequestDescriptor] = js.native
   def notify(sourceOperation: OperationDescriptor): js.Array[RequestDescriptor] = js.native
   def notify(sourceOperation: OperationDescriptor, invalidateStore: Boolean): js.Array[RequestDescriptor] = js.native
   /**

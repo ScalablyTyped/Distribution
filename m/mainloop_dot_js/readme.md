@@ -12,7 +12,7 @@ A well-constructed JavaScript main loop useful for games and other animated appl
 | Keywords           | main, loop, game, animation, time |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 4882 |
+| # downloads        | 4929 |
 | # stars            | 1 |
 
 ## Links

@@ -1,7 +1,7 @@
 package typings.momentTimezone.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.MomentTimezone
+import typings.momentTimezone.mod.momentAugmentingMod.MomentTimezone
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

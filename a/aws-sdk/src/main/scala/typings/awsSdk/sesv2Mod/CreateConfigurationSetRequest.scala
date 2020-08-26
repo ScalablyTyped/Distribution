@@ -35,23 +35,50 @@ trait CreateConfigurationSetRequest extends js.Object {
 
 object CreateConfigurationSetRequest {
   @scala.inline
-  def apply(
-    ConfigurationSetName: ConfigurationSetName,
-    DeliveryOptions: DeliveryOptions = null,
-    ReputationOptions: ReputationOptions = null,
-    SendingOptions: SendingOptions = null,
-    SuppressionOptions: SuppressionOptions = null,
-    Tags: TagList = null,
-    TrackingOptions: TrackingOptions = null
-  ): CreateConfigurationSetRequest = {
+  def apply(ConfigurationSetName: ConfigurationSetName): CreateConfigurationSetRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
-    if (DeliveryOptions != null) __obj.updateDynamic("DeliveryOptions")(DeliveryOptions.asInstanceOf[js.Any])
-    if (ReputationOptions != null) __obj.updateDynamic("ReputationOptions")(ReputationOptions.asInstanceOf[js.Any])
-    if (SendingOptions != null) __obj.updateDynamic("SendingOptions")(SendingOptions.asInstanceOf[js.Any])
-    if (SuppressionOptions != null) __obj.updateDynamic("SuppressionOptions")(SuppressionOptions.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TrackingOptions != null) __obj.updateDynamic("TrackingOptions")(TrackingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationSetRequest]
   }
+  @scala.inline
+  implicit class CreateConfigurationSetRequestOps[Self <: CreateConfigurationSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationSetName(value: ConfigurationSetName): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryOptions(value: DeliveryOptions): Self = this.set("DeliveryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryOptions: Self = this.set("DeliveryOptions", js.undefined)
+    @scala.inline
+    def setReputationOptions(value: ReputationOptions): Self = this.set("ReputationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReputationOptions: Self = this.set("ReputationOptions", js.undefined)
+    @scala.inline
+    def setSendingOptions(value: SendingOptions): Self = this.set("SendingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendingOptions: Self = this.set("SendingOptions", js.undefined)
+    @scala.inline
+    def setSuppressionOptions(value: SuppressionOptions): Self = this.set("SuppressionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressionOptions: Self = this.set("SuppressionOptions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTrackingOptions(value: TrackingOptions): Self = this.set("TrackingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingOptions: Self = this.set("TrackingOptions", js.undefined)
+  }
+  
 }
 

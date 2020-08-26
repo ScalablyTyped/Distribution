@@ -34,11 +34,34 @@ trait SchemaGoogleDatastoreAdminV1EntityFilter extends js.Object {
 
 object SchemaGoogleDatastoreAdminV1EntityFilter {
   @scala.inline
-  def apply(kinds: js.Array[String] = null, namespaceIds: js.Array[String] = null): SchemaGoogleDatastoreAdminV1EntityFilter = {
+  def apply(): SchemaGoogleDatastoreAdminV1EntityFilter = {
     val __obj = js.Dynamic.literal()
-    if (kinds != null) __obj.updateDynamic("kinds")(kinds.asInstanceOf[js.Any])
-    if (namespaceIds != null) __obj.updateDynamic("namespaceIds")(namespaceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1EntityFilter]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1EntityFilterOps[Self <: SchemaGoogleDatastoreAdminV1EntityFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKindsVarargs(value: String*): Self = this.set("kinds", js.Array(value :_*))
+    @scala.inline
+    def setKinds(value: js.Array[String]): Self = this.set("kinds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinds: Self = this.set("kinds", js.undefined)
+    @scala.inline
+    def setNamespaceIdsVarargs(value: String*): Self = this.set("namespaceIds", js.Array(value :_*))
+    @scala.inline
+    def setNamespaceIds(value: js.Array[String]): Self = this.set("namespaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceIds: Self = this.set("namespaceIds", js.undefined)
+  }
+  
 }
 

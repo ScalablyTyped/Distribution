@@ -121,14 +121,14 @@ class Ractive[T /* <: Ractive[T] */] () extends js.Object {
   	 * @param name
   	 */
   def findParent(name: String): Ractive[Ractive[_]] = js.native
+  def fire(name: String, ctx: js.UndefOr[scala.Nothing], args: js.Any*): Boolean = js.native
+  def fire(name: String, ctx: js.Object, args: js.Any*): Boolean = js.native
   /**
   	 * Fire a Ractive instance event.
   	 * @param name the name of the event
   	 * @param ctx an optional context or object to be merged with a context
   	 * @param args additional args to pass to the event listeners
   	 */
-  def fire(name: String): Boolean = js.native
-  def fire(name: String, ctx: js.Object, args: js.Any*): Boolean = js.native
   def fire(name: String, ctx: ContextHelper, args: js.Any*): Boolean = js.native
   /**
   	 * Retrieve the root object of this instance's data.
@@ -219,6 +219,7 @@ class Ractive[T /* <: Ractive[T] */] () extends js.Object {
   	 * @param handler
   	 */
   def off(): Ractive[Ractive[_]] = js.native
+  def off(event: js.UndefOr[scala.Nothing], handler: ListenerCallback[T]): Ractive[Ractive[_]] = js.native
   def off(event: String): Ractive[Ractive[_]] = js.native
   def off(event: String, handler: ListenerCallback[T]): Ractive[Ractive[_]] = js.native
   /**

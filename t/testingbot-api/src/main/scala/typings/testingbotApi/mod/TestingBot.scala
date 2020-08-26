@@ -11,12 +11,21 @@ trait TestingBot extends js.Object {
   def deleteTest(testID: String): Unit = js.native
   def deleteTest(testID: String, callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _]): Unit = js.native
   def getBrowsers(): Unit = js.native
+  def getBrowsers(callback: js.UndefOr[scala.Nothing], `type`: BrowserType): Unit = js.native
   def getBrowsers(callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _]): Unit = js.native
   def getBrowsers(callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _], `type`: BrowserType): Unit = js.native
   def getLabTestDetails(testID: String): Unit = js.native
   def getLabTestDetails(testID: String, callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _]): Unit = js.native
   def getLabTests(): Unit = js.native
+  def getLabTests(callback: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], limit: Double): Unit = js.native
+  def getLabTests(callback: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
+  def getLabTests(callback: js.UndefOr[scala.Nothing], offset: Double, limit: Double): Unit = js.native
   def getLabTests(callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _]): Unit = js.native
+  def getLabTests(
+    callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _],
+    offset: js.UndefOr[scala.Nothing],
+    limit: Double
+  ): Unit = js.native
   def getLabTests(callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _], offset: Double): Unit = js.native
   def getLabTests(
     callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _],
@@ -26,7 +35,15 @@ trait TestingBot extends js.Object {
   def getTestDetails(testID: String): Unit = js.native
   def getTestDetails(testID: String, callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _]): Unit = js.native
   def getTests(): Unit = js.native
+  def getTests(callback: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], limit: Double): Unit = js.native
+  def getTests(callback: js.UndefOr[scala.Nothing], offset: Double): Unit = js.native
+  def getTests(callback: js.UndefOr[scala.Nothing], offset: Double, limit: Double): Unit = js.native
   def getTests(callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _]): Unit = js.native
+  def getTests(
+    callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _],
+    offset: js.UndefOr[scala.Nothing],
+    limit: Double
+  ): Unit = js.native
   def getTests(callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _], offset: Double): Unit = js.native
   def getTests(
     callback: js.Function2[/* error */ js.Any, /* responseBody */ js.Any, _],

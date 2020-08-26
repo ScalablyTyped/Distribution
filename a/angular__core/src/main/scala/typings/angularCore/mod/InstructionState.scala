@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * PERF NOTE: Turns out that writing to a true global variable is slower than
   * having an intermediate object with properties.
   */
+@js.native
 trait InstructionState extends js.Object {
   /**
     * Stores whether directives should be matched to elements.
@@ -32,19 +33,19 @@ trait InstructionState extends js.Object {
     * </div>
     * ```
     */
-  var bindingsEnabled: Boolean
+  var bindingsEnabled: Boolean = js.native
   /**
     * In this mode, any changes in bindings will throw an ExpressionChangedAfterChecked error.
     *
     * Necessary to support ChangeDetectorRef.checkNoChanges().
     */
-  var checkNoChangesMode: Boolean
+  var checkNoChangesMode: Boolean = js.native
   /**
     * Current `LFrame`
     *
     * `null` if we have not called `enterView`
     */
-  var lFrame: LFrame
+  var lFrame: LFrame = js.native
 }
 
 object InstructionState {
@@ -53,5 +54,24 @@ object InstructionState {
     val __obj = js.Dynamic.literal(bindingsEnabled = bindingsEnabled.asInstanceOf[js.Any], checkNoChangesMode = checkNoChangesMode.asInstanceOf[js.Any], lFrame = lFrame.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstructionState]
   }
+  @scala.inline
+  implicit class InstructionStateOps[Self <: InstructionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindingsEnabled(value: Boolean): Self = this.set("bindingsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckNoChangesMode(value: Boolean): Self = this.set("checkNoChangesMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLFrame(value: LFrame): Self = this.set("lFrame", value.asInstanceOf[js.Any])
+  }
+  
 }
 

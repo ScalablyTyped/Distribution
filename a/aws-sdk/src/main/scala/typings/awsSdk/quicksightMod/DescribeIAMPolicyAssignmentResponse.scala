@@ -22,16 +22,34 @@ trait DescribeIAMPolicyAssignmentResponse extends js.Object {
 
 object DescribeIAMPolicyAssignmentResponse {
   @scala.inline
-  def apply(
-    IAMPolicyAssignment: IAMPolicyAssignment = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
-  ): DescribeIAMPolicyAssignmentResponse = {
+  def apply(): DescribeIAMPolicyAssignmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (IAMPolicyAssignment != null) __obj.updateDynamic("IAMPolicyAssignment")(IAMPolicyAssignment.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIAMPolicyAssignmentResponse]
   }
+  @scala.inline
+  implicit class DescribeIAMPolicyAssignmentResponseOps[Self <: DescribeIAMPolicyAssignmentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIAMPolicyAssignment(value: IAMPolicyAssignment): Self = this.set("IAMPolicyAssignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMPolicyAssignment: Self = this.set("IAMPolicyAssignment", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

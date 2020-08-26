@@ -1,53 +1,58 @@
 package typings.reactNativeIndicators.mod
 
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaterialIndicatorProps extends BaseIndicatorProps {
   /**
     * Component color
     * @default 'rgb(0, 0, 0)'
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * Base component size
     * @default 40
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /**
     * Indicator track width
     * @default 'size / 10'
     */
-  var trackWidth: js.UndefOr[Double] = js.undefined
+  var trackWidth: js.UndefOr[Double] = js.native
 }
 
 object MaterialIndicatorProps {
   @scala.inline
-  def apply(
-    animating: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: /* value */ Double => Double = null,
-    color: String = null,
-    hidesWhenStopped: js.UndefOr[Boolean] = js.undefined,
-    interaction: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    trackWidth: js.UndefOr[Double] = js.undefined
-  ): MaterialIndicatorProps = {
+  def apply(): MaterialIndicatorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(js.Any.fromFunction1(animationEasing))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidesWhenStopped)) __obj.updateDynamic("hidesWhenStopped")(hidesWhenStopped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackWidth)) __obj.updateDynamic("trackWidth")(trackWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaterialIndicatorProps]
   }
+  @scala.inline
+  implicit class MaterialIndicatorPropsOps[Self <: MaterialIndicatorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTrackWidth(value: Double): Self = this.set("trackWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackWidth: Self = this.set("trackWidth", js.undefined)
+  }
+  
 }
 

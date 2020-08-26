@@ -4,76 +4,117 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DownloadDelta extends js.Object {
   /** Optional. The change in canResume, if any.  */
-  var canResume: js.UndefOr[BooleanDelta] = js.undefined
+  var canResume: js.UndefOr[BooleanDelta] = js.native
   /** Optional. The change in danger, if any.  */
-  var danger: js.UndefOr[StringDelta] = js.undefined
+  var danger: js.UndefOr[StringDelta] = js.native
   /** Optional. The change in endTime, if any.  */
-  var endTime: js.UndefOr[StringDelta] = js.undefined
+  var endTime: js.UndefOr[StringDelta] = js.native
   /** Optional. The change in error, if any.  */
-  var error: js.UndefOr[StringDelta] = js.undefined
+  var error: js.UndefOr[StringDelta] = js.native
   /** Optional. The change in exists, if any.  */
-  var exists: js.UndefOr[BooleanDelta] = js.undefined
+  var exists: js.UndefOr[BooleanDelta] = js.native
   /** Optional. The change in fileSize, if any.  */
-  var fileSize: js.UndefOr[DoubleDelta] = js.undefined
+  var fileSize: js.UndefOr[DoubleDelta] = js.native
   /** Optional. The change in filename, if any.  */
-  var filename: js.UndefOr[StringDelta] = js.undefined
+  var filename: js.UndefOr[StringDelta] = js.native
   /**
     * Optional. The change in finalUrl, if any.
     * @since Since Chrome 54.
     */
-  var finalUrl: StringDelta
+  var finalUrl: StringDelta = js.native
   /** The id of the DownloadItem that changed. */
-  var id: Double
+  var id: Double = js.native
   /** Optional. The change in mime, if any.  */
-  var mime: js.UndefOr[StringDelta] = js.undefined
+  var mime: js.UndefOr[StringDelta] = js.native
   /** Optional. The change in paused, if any.  */
-  var paused: js.UndefOr[BooleanDelta] = js.undefined
+  var paused: js.UndefOr[BooleanDelta] = js.native
   /** Optional. The change in startTime, if any.  */
-  var startTime: js.UndefOr[StringDelta] = js.undefined
+  var startTime: js.UndefOr[StringDelta] = js.native
   /** Optional. The change in state, if any.  */
-  var state: js.UndefOr[StringDelta] = js.undefined
+  var state: js.UndefOr[StringDelta] = js.native
   /** Optional. The change in totalBytes, if any.  */
-  var totalBytes: js.UndefOr[DoubleDelta] = js.undefined
+  var totalBytes: js.UndefOr[DoubleDelta] = js.native
   /** Optional. The change in url, if any.  */
-  var url: js.UndefOr[StringDelta] = js.undefined
+  var url: js.UndefOr[StringDelta] = js.native
 }
 
 object DownloadDelta {
   @scala.inline
-  def apply(
-    finalUrl: StringDelta,
-    id: Double,
-    canResume: BooleanDelta = null,
-    danger: StringDelta = null,
-    endTime: StringDelta = null,
-    error: StringDelta = null,
-    exists: BooleanDelta = null,
-    fileSize: DoubleDelta = null,
-    filename: StringDelta = null,
-    mime: StringDelta = null,
-    paused: BooleanDelta = null,
-    startTime: StringDelta = null,
-    state: StringDelta = null,
-    totalBytes: DoubleDelta = null,
-    url: StringDelta = null
-  ): DownloadDelta = {
+  def apply(finalUrl: StringDelta, id: Double): DownloadDelta = {
     val __obj = js.Dynamic.literal(finalUrl = finalUrl.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (canResume != null) __obj.updateDynamic("canResume")(canResume.asInstanceOf[js.Any])
-    if (danger != null) __obj.updateDynamic("danger")(danger.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (exists != null) __obj.updateDynamic("exists")(exists.asInstanceOf[js.Any])
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
-    if (paused != null) __obj.updateDynamic("paused")(paused.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (totalBytes != null) __obj.updateDynamic("totalBytes")(totalBytes.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadDelta]
   }
+  @scala.inline
+  implicit class DownloadDeltaOps[Self <: DownloadDelta] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinalUrl(value: StringDelta): Self = this.set("finalUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCanResume(value: BooleanDelta): Self = this.set("canResume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanResume: Self = this.set("canResume", js.undefined)
+    @scala.inline
+    def setDanger(value: StringDelta): Self = this.set("danger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDanger: Self = this.set("danger", js.undefined)
+    @scala.inline
+    def setEndTime(value: StringDelta): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setError(value: StringDelta): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExists(value: BooleanDelta): Self = this.set("exists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExists: Self = this.set("exists", js.undefined)
+    @scala.inline
+    def setFileSize(value: DoubleDelta): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSize: Self = this.set("fileSize", js.undefined)
+    @scala.inline
+    def setFilename(value: StringDelta): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setMime(value: StringDelta): Self = this.set("mime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMime: Self = this.set("mime", js.undefined)
+    @scala.inline
+    def setPaused(value: BooleanDelta): Self = this.set("paused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaused: Self = this.set("paused", js.undefined)
+    @scala.inline
+    def setStartTime(value: StringDelta): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setState(value: StringDelta): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTotalBytes(value: DoubleDelta): Self = this.set("totalBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytes: Self = this.set("totalBytes", js.undefined)
+    @scala.inline
+    def setUrl(value: StringDelta): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

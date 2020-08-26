@@ -91,7 +91,32 @@ trait WshShell extends js.Object {
   def LogEvent(Type: EventType, Message: String): Boolean = js.native
   def LogEvent(Type: EventType, Message: String, Target: String): Boolean = js.native
   def Popup(Text: String): PopupSelection = js.native
+  def Popup(
+    Text: String,
+    SecondsToWait: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    Type: ButtonType
+  ): PopupSelection = js.native
+  def Popup(
+    Text: String,
+    SecondsToWait: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    Type: IconType
+  ): PopupSelection = js.native
+  def Popup(
+    Text: String,
+    SecondsToWait: js.UndefOr[scala.Nothing],
+    Title: js.UndefOr[scala.Nothing],
+    Type: PopupType
+  ): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String, Type: ButtonType): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String, Type: IconType): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: js.UndefOr[scala.Nothing], Title: String, Type: PopupType): PopupSelection = js.native
   def Popup(Text: String, SecondsToWait: Double): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: Double, Title: js.UndefOr[scala.Nothing], Type: ButtonType): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: Double, Title: js.UndefOr[scala.Nothing], Type: IconType): PopupSelection = js.native
+  def Popup(Text: String, SecondsToWait: Double, Title: js.UndefOr[scala.Nothing], Type: PopupType): PopupSelection = js.native
   def Popup(Text: String, SecondsToWait: Double, Title: String): PopupSelection = js.native
   def Popup(Text: String, SecondsToWait: Double, Title: String, Type: ButtonType): PopupSelection = js.native
   def Popup(Text: String, SecondsToWait: Double, Title: String, Type: IconType): PopupSelection = js.native
@@ -156,6 +181,7 @@ trait WshShell extends js.Object {
     * * **10** -- Sets the show-state based on the state of the program that started the application.
     */
   def Run(Command: String): Double = js.native
+  def Run(Command: String, WindowStyle: js.UndefOr[scala.Nothing], WaitOnReturn: Boolean): Double = js.native
   def Run(Command: String, WindowStyle: WindowStyle): Double = js.native
   def Run(Command: String, WindowStyle: WindowStyle, WaitOnReturn: Boolean): Double = js.native
   def SendKeys(Keys: String): Unit = js.native

@@ -24,23 +24,5 @@ class ^[T /* <: Answers */] protected () extends Choice[T] {
     * An object which contains the answers to the questions.
     */
   def this(value: js.Any, answers: T) = this()
-  /**
-    * @inheritdoc
-    */
-  /* CompleteClass */
-  @JSName("disabled")
-  override var disabled_Choice: Boolean = js.native
-  /**
-    * @inheritdoc
-    */
-  /* CompleteClass */
-  @JSName("name")
-  override var name_Choice: String = js.native
-  /**
-    * @inheritdoc
-    */
-  /* CompleteClass */
-  @JSName("short")
-  override var short_Choice: String = js.native
 }
 

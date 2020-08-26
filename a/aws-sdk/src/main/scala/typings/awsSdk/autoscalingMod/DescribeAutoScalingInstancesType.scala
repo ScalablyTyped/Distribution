@@ -22,16 +22,36 @@ trait DescribeAutoScalingInstancesType extends js.Object {
 
 object DescribeAutoScalingInstancesType {
   @scala.inline
-  def apply(
-    InstanceIds: InstanceIds = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
-    NextToken: XmlString = null
-  ): DescribeAutoScalingInstancesType = {
+  def apply(): DescribeAutoScalingInstancesType = {
     val __obj = js.Dynamic.literal()
-    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAutoScalingInstancesType]
   }
+  @scala.inline
+  implicit class DescribeAutoScalingInstancesTypeOps[Self <: DescribeAutoScalingInstancesType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: InstanceIds): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

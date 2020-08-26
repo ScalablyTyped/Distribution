@@ -11,10 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object identifiersMod extends js.Object {
   def compareIdentifiers(): `1` | `0` | `-1` = js.native
+  def compareIdentifiers(a: js.UndefOr[scala.Nothing], b: String): `1` | `0` | `-1` = js.native
   def compareIdentifiers(a: String): `1` | `0` | `-1` = js.native
   def compareIdentifiers(a: String, b: String): `1` | `0` | `-1` = js.native
   def compareIdentifiers(a: Null, b: String): `1` | `0` | `-1` = js.native
   def rcompareIdentifiers(): `1` | `0` | `-1` = js.native
+  def rcompareIdentifiers(a: js.UndefOr[scala.Nothing], b: String): `1` | `0` | `-1` = js.native
   def rcompareIdentifiers(a: String): `1` | `0` | `-1` = js.native
   def rcompareIdentifiers(a: String, b: String): `1` | `0` | `-1` = js.native
   def rcompareIdentifiers(a: Null, b: String): `1` | `0` | `-1` = js.native

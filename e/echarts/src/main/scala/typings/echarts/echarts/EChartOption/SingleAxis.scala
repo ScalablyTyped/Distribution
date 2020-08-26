@@ -1,22 +1,8 @@
 package typings.echarts.echarts.EChartOption
 
-import typings.echarts.anon.Max
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.DataObject
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Label
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.MinorSplitLine
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.MinorTick
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Pointer
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.SplitArea
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.SplitLine
-import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Tick
 import typings.echarts.echarts.EChartOption.BasicComponents.CartesianAxis.Type
-import typings.echarts.echarts.EChartOption.BasicComponents.Line
-import typings.echarts.echartsStrings.center
-import typings.echarts.echartsStrings.end
 import typings.echarts.echartsStrings.horizontal
-import typings.echarts.echartsStrings.middle
-import typings.echarts.echartsStrings.start
 import typings.echarts.echartsStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,6 +13,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#xAxis
   */
+@js.native
 trait SingleAxis extends CartesianAxis {
   /**
     * Distance between grid component and the bottom side of the container.
@@ -35,13 +22,13 @@ trait SingleAxis extends CartesianAxis {
     *
     * @default '5%'
     */
-  var bottom: js.UndefOr[String | Double] = js.undefined
+  var bottom: js.UndefOr[String | Double] = js.native
   /**
     * Height of grid component. Adaptive by default.
     *
     * @default 'auto'
     */
-  var height: js.UndefOr[String | Double] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
   /**
     * Distance between grid component and the left side of the container.
     * left value can be instant pixel value like 20;
@@ -52,14 +39,14 @@ trait SingleAxis extends CartesianAxis {
     *
     * @default '5%'
     */
-  var left: js.UndefOr[String | Double] = js.undefined
+  var left: js.UndefOr[String | Double] = js.native
   /**
     * Orientation of the axis. By default, it's 'horizontal'.
     * You can set it to be 'vertical' to make a vertical axis.
     *
     * @default 'horizontal'
     */
-  var orient: js.UndefOr[horizontal | vertical] = js.undefined
+  var orient: js.UndefOr[horizontal | vertical] = js.native
   /**
     * Distance between grid component and the right side of the container.
     * right value can be instant pixel value like 20;
@@ -67,7 +54,7 @@ trait SingleAxis extends CartesianAxis {
     *
     * @default '5%'
     */
-  var right: js.UndefOr[String | Double] = js.undefined
+  var right: js.UndefOr[String | Double] = js.native
   /**
     * Distance between grid component and the top side of the container.
     * top value can be instant pixel value like 20;
@@ -78,7 +65,7 @@ trait SingleAxis extends CartesianAxis {
     *
     * @default '5%'
     */
-  var top: js.UndefOr[String | Double] = js.undefined
+  var top: js.UndefOr[String | Double] = js.native
   /**
     * Options:
     * + 'value' - Numerical axis, suitable for continuous data.
@@ -94,99 +81,65 @@ trait SingleAxis extends CartesianAxis {
     * @default 'value'
     * @see https://echarts.apache.org/en/option.html#singleAxis.type
     */
-  var `type`: js.UndefOr[Type] = js.undefined
+  var `type`: js.UndefOr[Type] = js.native
   /**
     * Width of grid component. Adaptive by default.
     *
     * @default 'auto'
     */
-  var width: js.UndefOr[String | Double] = js.undefined
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object SingleAxis {
   @scala.inline
-  def apply(
-    axisLabel: Label = null,
-    axisLine: Line = null,
-    axisPointer: Pointer = null,
-    axisTick: Tick = null,
-    bottom: String | Double = null,
-    boundaryGap: Boolean | (js.Array[String | Double]) = null,
-    data: js.Array[String | Double | DataObject] = null,
-    gridIndex: js.UndefOr[Double] = js.undefined,
-    height: String | Double = null,
-    id: String = null,
-    interval: js.UndefOr[Double] = js.undefined,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    left: String | Double = null,
-    logBase: js.UndefOr[Double] = js.undefined,
-    max: Double | String | (js.Function1[/* value */ Max, Double]) = null,
-    min: Double | String | (js.Function1[/* value */ Max, Double]) = null,
-    minInterval: js.Any = null,
-    minorSplitLine: MinorSplitLine = null,
-    minorTick: MinorTick = null,
-    name: String = null,
-    nameGap: js.UndefOr[Double] = js.undefined,
-    nameLocation: start | middle | center | end = null,
-    nameRotate: js.UndefOr[Double] = js.undefined,
-    nameTextStyle: TextStyleWithRich = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    orient: horizontal | vertical = null,
-    right: String | Double = null,
-    scale: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    splitArea: SplitArea = null,
-    splitLine: SplitLine = null,
-    splitNumber: js.UndefOr[Double] = js.undefined,
-    top: String | Double = null,
-    triggerEvent: js.UndefOr[Boolean] = js.undefined,
-    `type`: Type = null,
-    width: String | Double = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SingleAxis = {
+  def apply(): SingleAxis = {
     val __obj = js.Dynamic.literal()
-    if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel.asInstanceOf[js.Any])
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (axisPointer != null) __obj.updateDynamic("axisPointer")(axisPointer.asInstanceOf[js.Any])
-    if (axisTick != null) __obj.updateDynamic("axisTick")(axisTick.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (boundaryGap != null) __obj.updateDynamic("boundaryGap")(boundaryGap.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridIndex)) __obj.updateDynamic("gridIndex")(gridIndex.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval)) __obj.updateDynamic("interval")(interval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(logBase)) __obj.updateDynamic("logBase")(logBase.get.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minInterval != null) __obj.updateDynamic("minInterval")(minInterval.asInstanceOf[js.Any])
-    if (minorSplitLine != null) __obj.updateDynamic("minorSplitLine")(minorSplitLine.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nameGap)) __obj.updateDynamic("nameGap")(nameGap.get.asInstanceOf[js.Any])
-    if (nameLocation != null) __obj.updateDynamic("nameLocation")(nameLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(nameRotate)) __obj.updateDynamic("nameRotate")(nameRotate.get.asInstanceOf[js.Any])
-    if (nameTextStyle != null) __obj.updateDynamic("nameTextStyle")(nameTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (splitArea != null) __obj.updateDynamic("splitArea")(splitArea.asInstanceOf[js.Any])
-    if (splitLine != null) __obj.updateDynamic("splitLine")(splitLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(splitNumber)) __obj.updateDynamic("splitNumber")(splitNumber.get.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggerEvent)) __obj.updateDynamic("triggerEvent")(triggerEvent.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleAxis]
   }
+  @scala.inline
+  implicit class SingleAxisOps[Self <: SingleAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: String | Double): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLeft(value: String | Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setOrient(value: horizontal | vertical): Self = this.set("orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrient: Self = this.set("orient", js.undefined)
+    @scala.inline
+    def setRight(value: String | Double): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setTop(value: String | Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setType(value: Type): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

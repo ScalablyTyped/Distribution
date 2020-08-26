@@ -62,32 +62,68 @@ trait SchemaQueryOperator extends js.Object {
 
 object SchemaQueryOperator {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    enumValues: js.Array[String] = null,
-    greaterThanOperatorName: String = null,
-    isFacetable: js.UndefOr[Boolean] = js.undefined,
-    isRepeatable: js.UndefOr[Boolean] = js.undefined,
-    isReturnable: js.UndefOr[Boolean] = js.undefined,
-    isSortable: js.UndefOr[Boolean] = js.undefined,
-    isSuggestable: js.UndefOr[Boolean] = js.undefined,
-    lessThanOperatorName: String = null,
-    operatorName: String = null,
-    `type`: String = null
-  ): SchemaQueryOperator = {
+  def apply(): SchemaQueryOperator = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (enumValues != null) __obj.updateDynamic("enumValues")(enumValues.asInstanceOf[js.Any])
-    if (greaterThanOperatorName != null) __obj.updateDynamic("greaterThanOperatorName")(greaterThanOperatorName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFacetable)) __obj.updateDynamic("isFacetable")(isFacetable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRepeatable)) __obj.updateDynamic("isRepeatable")(isRepeatable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isReturnable)) __obj.updateDynamic("isReturnable")(isReturnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSuggestable)) __obj.updateDynamic("isSuggestable")(isSuggestable.get.asInstanceOf[js.Any])
-    if (lessThanOperatorName != null) __obj.updateDynamic("lessThanOperatorName")(lessThanOperatorName.asInstanceOf[js.Any])
-    if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryOperator]
   }
+  @scala.inline
+  implicit class SchemaQueryOperatorOps[Self <: SchemaQueryOperator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEnumValuesVarargs(value: String*): Self = this.set("enumValues", js.Array(value :_*))
+    @scala.inline
+    def setEnumValues(value: js.Array[String]): Self = this.set("enumValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnumValues: Self = this.set("enumValues", js.undefined)
+    @scala.inline
+    def setGreaterThanOperatorName(value: String): Self = this.set("greaterThanOperatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanOperatorName: Self = this.set("greaterThanOperatorName", js.undefined)
+    @scala.inline
+    def setIsFacetable(value: Boolean): Self = this.set("isFacetable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFacetable: Self = this.set("isFacetable", js.undefined)
+    @scala.inline
+    def setIsRepeatable(value: Boolean): Self = this.set("isRepeatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRepeatable: Self = this.set("isRepeatable", js.undefined)
+    @scala.inline
+    def setIsReturnable(value: Boolean): Self = this.set("isReturnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsReturnable: Self = this.set("isReturnable", js.undefined)
+    @scala.inline
+    def setIsSortable(value: Boolean): Self = this.set("isSortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSortable: Self = this.set("isSortable", js.undefined)
+    @scala.inline
+    def setIsSuggestable(value: Boolean): Self = this.set("isSuggestable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSuggestable: Self = this.set("isSuggestable", js.undefined)
+    @scala.inline
+    def setLessThanOperatorName(value: String): Self = this.set("lessThanOperatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanOperatorName: Self = this.set("lessThanOperatorName", js.undefined)
+    @scala.inline
+    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -70,38 +70,82 @@ trait CreateDevEndpointRequest extends js.Object {
 
 object CreateDevEndpointRequest {
   @scala.inline
-  def apply(
-    EndpointName: GenericString,
-    RoleArn: RoleArn,
-    Arguments: MapValue = null,
-    ExtraJarsS3Path: GenericString = null,
-    ExtraPythonLibsS3Path: GenericString = null,
-    GlueVersion: GlueVersionString = null,
-    NumberOfNodes: js.UndefOr[IntegerValue] = js.undefined,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    PublicKey: GenericString = null,
-    PublicKeys: PublicKeysList = null,
-    SecurityConfiguration: NameString = null,
-    SecurityGroupIds: StringList = null,
-    SubnetId: GenericString = null,
-    Tags: TagsMap = null,
-    WorkerType: WorkerType = null
-  ): CreateDevEndpointRequest = {
+  def apply(EndpointName: GenericString, RoleArn: RoleArn): CreateDevEndpointRequest = {
     val __obj = js.Dynamic.literal(EndpointName = EndpointName.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
-    if (ExtraJarsS3Path != null) __obj.updateDynamic("ExtraJarsS3Path")(ExtraJarsS3Path.asInstanceOf[js.Any])
-    if (ExtraPythonLibsS3Path != null) __obj.updateDynamic("ExtraPythonLibsS3Path")(ExtraPythonLibsS3Path.asInstanceOf[js.Any])
-    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfNodes)) __obj.updateDynamic("NumberOfNodes")(NumberOfNodes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
-    if (PublicKeys != null) __obj.updateDynamic("PublicKeys")(PublicKeys.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDevEndpointRequest]
   }
+  @scala.inline
+  implicit class CreateDevEndpointRequestOps[Self <: CreateDevEndpointRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointName(value: GenericString): Self = this.set("EndpointName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArguments(value: MapValue): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    @scala.inline
+    def setExtraJarsS3Path(value: GenericString): Self = this.set("ExtraJarsS3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraJarsS3Path: Self = this.set("ExtraJarsS3Path", js.undefined)
+    @scala.inline
+    def setExtraPythonLibsS3Path(value: GenericString): Self = this.set("ExtraPythonLibsS3Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraPythonLibsS3Path: Self = this.set("ExtraPythonLibsS3Path", js.undefined)
+    @scala.inline
+    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    @scala.inline
+    def setNumberOfNodes(value: IntegerValue): Self = this.set("NumberOfNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfNodes: Self = this.set("NumberOfNodes", js.undefined)
+    @scala.inline
+    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    @scala.inline
+    def setPublicKey(value: GenericString): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+    @scala.inline
+    def setPublicKeysVarargs(value: GenericString*): Self = this.set("PublicKeys", js.Array(value :_*))
+    @scala.inline
+    def setPublicKeys(value: PublicKeysList): Self = this.set("PublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKeys: Self = this.set("PublicKeys", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: GenericString*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: StringList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetId(value: GenericString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTags(value: TagsMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+  }
+  
 }
 

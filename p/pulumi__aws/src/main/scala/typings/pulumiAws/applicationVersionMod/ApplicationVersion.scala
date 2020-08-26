@@ -52,9 +52,9 @@ class ApplicationVersion protected () extends CustomResource {
     */
   val name: Output_[String] = js.native
   /**
-    * Key-value mapping of tags for the Elastic Beanstalk Application Version.
+    * Key-value map of tags for the Elastic Beanstalk Application Version.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -68,8 +68,10 @@ object ApplicationVersion extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ApplicationVersion = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ApplicationVersion = js.native
   def get(name: String, id: Input[ID], state: ApplicationVersionState): ApplicationVersion = js.native
   def get(name: String, id: Input[ID], state: ApplicationVersionState, opts: CustomResourceOptions): ApplicationVersion = js.native
   /**

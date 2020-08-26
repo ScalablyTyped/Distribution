@@ -16,7 +16,7 @@ trait GetComputeEnvironmentResult extends js.Object {
     */
   val ecsClusterArn: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -58,5 +58,36 @@ object GetComputeEnvironmentResult {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetComputeEnvironmentResult]
   }
+  @scala.inline
+  implicit class GetComputeEnvironmentResultOps[Self <: GetComputeEnvironmentResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeEnvironmentName(value: String): Self = this.set("computeEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEcsClusterArn(value: String): Self = this.set("ecsClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceRole(value: String): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

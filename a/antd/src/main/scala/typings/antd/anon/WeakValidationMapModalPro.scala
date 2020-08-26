@@ -15,123 +15,204 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined react.react.WeakValidationMap<antd.antd/lib/modal/Modal.ModalProps> */
+@js.native
 trait WeakValidationMapModalPro extends js.Object {
-  var afterClose: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.undefined
-  var bodyStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
-  var cancelButtonProps: js.UndefOr[Validator[js.UndefOr[ButtonProps | Null]]] = js.undefined
-  var cancelText: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var centered: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var closable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var closeIcon: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var confirmLoading: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var destroyOnClose: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var footer: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var forceRender: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var getContainer: js.UndefOr[Validator[js.UndefOr[`false` | HTMLElement | Null | String | getContainerFunc]]] = js.undefined
-  var keyboard: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var mask: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var maskClosable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var maskStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
-  var maskTransitionName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var okButtonProps: js.UndefOr[Validator[js.UndefOr[ButtonProps | Null]]] = js.undefined
-  var okText: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.undefined
-  var okType: js.UndefOr[Validator[js.UndefOr[LegacyButtonType | Null]]] = js.undefined
+  var afterClose: js.UndefOr[Validator[js.UndefOr[js.Function0[Unit] | Null]]] = js.native
+  var bodyStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var cancelButtonProps: js.UndefOr[Validator[js.UndefOr[ButtonProps | Null]]] = js.native
+  var cancelText: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var centered: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var className: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var closable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var closeIcon: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var confirmLoading: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var destroyOnClose: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var footer: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var forceRender: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var getContainer: js.UndefOr[Validator[js.UndefOr[`false` | HTMLElement | Null | String | getContainerFunc]]] = js.native
+  var keyboard: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var mask: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var maskClosable: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var maskStyle: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var maskTransitionName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var okButtonProps: js.UndefOr[Validator[js.UndefOr[ButtonProps | Null]]] = js.native
+  var okText: js.UndefOr[Validator[js.UndefOr[Null | ReactNode]]] = js.native
+  var okType: js.UndefOr[Validator[js.UndefOr[LegacyButtonType | Null]]] = js.native
   var onCancel: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]) | Null]
     ]
-  ] = js.undefined
+  ] = js.native
   var onOk: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]) | Null]
     ]
-  ] = js.undefined
-  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.undefined
-  var title: js.UndefOr[Validator[js.UndefOr[Null | ReactNode | String]]] = js.undefined
-  var transitionName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var visible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
-  var width: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.undefined
-  var wrapClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
-  var wrapProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.undefined
-  var zIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
+  ] = js.native
+  var prefixCls: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var style: js.UndefOr[Validator[js.UndefOr[CSSProperties | Null]]] = js.native
+  var title: js.UndefOr[Validator[js.UndefOr[Null | ReactNode | String]]] = js.native
+  var transitionName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var visible: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var width: js.UndefOr[Validator[js.UndefOr[Double | Null | String]]] = js.native
+  var wrapClassName: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.native
+  var wrapProps: js.UndefOr[Validator[js.UndefOr[_ | Null]]] = js.native
+  var zIndex: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.native
 }
 
 object WeakValidationMapModalPro {
   @scala.inline
-  def apply(
-    afterClose: Validator[js.UndefOr[js.Function0[Unit] | Null]] = null,
-    bodyStyle: Validator[js.UndefOr[CSSProperties | Null]] = null,
-    cancelButtonProps: Validator[js.UndefOr[ButtonProps | Null]] = null,
-    cancelText: Validator[js.UndefOr[Null | ReactNode]] = null,
-    centered: Validator[js.UndefOr[Boolean | Null]] = null,
-    className: Validator[js.UndefOr[Null | String]] = null,
-    closable: Validator[js.UndefOr[Boolean | Null]] = null,
-    closeIcon: Validator[js.UndefOr[Null | ReactNode]] = null,
-    confirmLoading: Validator[js.UndefOr[Boolean | Null]] = null,
-    destroyOnClose: Validator[js.UndefOr[Boolean | Null]] = null,
-    footer: Validator[js.UndefOr[Null | ReactNode]] = null,
-    forceRender: Validator[js.UndefOr[Boolean | Null]] = null,
-    getContainer: Validator[js.UndefOr[`false` | HTMLElement | Null | String | getContainerFunc]] = null,
-    keyboard: Validator[js.UndefOr[Boolean | Null]] = null,
-    mask: Validator[js.UndefOr[Boolean | Null]] = null,
-    maskClosable: Validator[js.UndefOr[Boolean | Null]] = null,
-    maskStyle: Validator[js.UndefOr[CSSProperties | Null]] = null,
-    maskTransitionName: Validator[js.UndefOr[Null | String]] = null,
-    okButtonProps: Validator[js.UndefOr[ButtonProps | Null]] = null,
-    okText: Validator[js.UndefOr[Null | ReactNode]] = null,
-    okType: Validator[js.UndefOr[LegacyButtonType | Null]] = null,
-    onCancel: Validator[
-      js.UndefOr[(js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]) | Null]
-    ] = null,
-    onOk: Validator[
-      js.UndefOr[(js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]) | Null]
-    ] = null,
-    prefixCls: Validator[js.UndefOr[Null | String]] = null,
-    style: Validator[js.UndefOr[CSSProperties | Null]] = null,
-    title: Validator[js.UndefOr[Null | ReactNode | String]] = null,
-    transitionName: Validator[js.UndefOr[Null | String]] = null,
-    visible: Validator[js.UndefOr[Boolean | Null]] = null,
-    width: Validator[js.UndefOr[Double | Null | String]] = null,
-    wrapClassName: Validator[js.UndefOr[Null | String]] = null,
-    wrapProps: Validator[js.UndefOr[_ | Null]] = null,
-    zIndex: Validator[js.UndefOr[Double | Null]] = null
-  ): WeakValidationMapModalPro = {
+  def apply(): WeakValidationMapModalPro = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose.asInstanceOf[js.Any])
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps.asInstanceOf[js.Any])
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
-    if (centered != null) __obj.updateDynamic("centered")(centered.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closable != null) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (confirmLoading != null) __obj.updateDynamic("confirmLoading")(confirmLoading.asInstanceOf[js.Any])
-    if (destroyOnClose != null) __obj.updateDynamic("destroyOnClose")(destroyOnClose.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (forceRender != null) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
-    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maskClosable != null) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
-    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
-    if (okButtonProps != null) __obj.updateDynamic("okButtonProps")(okButtonProps.asInstanceOf[js.Any])
-    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
-    if (okType != null) __obj.updateDynamic("okType")(okType.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel.asInstanceOf[js.Any])
-    if (onOk != null) __obj.updateDynamic("onOk")(onOk.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName.asInstanceOf[js.Any])
-    if (wrapProps != null) __obj.updateDynamic("wrapProps")(wrapProps.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeakValidationMapModalPro]
   }
+  @scala.inline
+  implicit class WeakValidationMapModalProOps[Self <: WeakValidationMapModalPro] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterClose(value: Validator[js.UndefOr[js.Function0[Unit] | Null]]): Self = this.set("afterClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterClose: Self = this.set("afterClose", js.undefined)
+    @scala.inline
+    def setBodyStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    @scala.inline
+    def setCancelButtonProps(value: Validator[js.UndefOr[ButtonProps | Null]]): Self = this.set("cancelButtonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelButtonProps: Self = this.set("cancelButtonProps", js.undefined)
+    @scala.inline
+    def setCancelText(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    @scala.inline
+    def setCentered(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("centered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentered: Self = this.set("centered", js.undefined)
+    @scala.inline
+    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClosable(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("closable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosable: Self = this.set("closable", js.undefined)
+    @scala.inline
+    def setCloseIcon(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    @scala.inline
+    def setConfirmLoading(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("confirmLoading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmLoading: Self = this.set("confirmLoading", js.undefined)
+    @scala.inline
+    def setDestroyOnClose(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("destroyOnClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroyOnClose: Self = this.set("destroyOnClose", js.undefined)
+    @scala.inline
+    def setFooter(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setForceRender(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("forceRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceRender: Self = this.set("forceRender", js.undefined)
+    @scala.inline
+    def setGetContainer(value: Validator[js.UndefOr[`false` | HTMLElement | Null | String | getContainerFunc]]): Self = this.set("getContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetContainer: Self = this.set("getContainer", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setMask(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskClosable(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("maskClosable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskClosable: Self = this.set("maskClosable", js.undefined)
+    @scala.inline
+    def setMaskStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("maskStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskStyle: Self = this.set("maskStyle", js.undefined)
+    @scala.inline
+    def setMaskTransitionName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskTransitionName: Self = this.set("maskTransitionName", js.undefined)
+    @scala.inline
+    def setOkButtonProps(value: Validator[js.UndefOr[ButtonProps | Null]]): Self = this.set("okButtonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOkButtonProps: Self = this.set("okButtonProps", js.undefined)
+    @scala.inline
+    def setOkText(value: Validator[js.UndefOr[Null | ReactNode]]): Self = this.set("okText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOkText: Self = this.set("okText", js.undefined)
+    @scala.inline
+    def setOkType(value: Validator[js.UndefOr[LegacyButtonType | Null]]): Self = this.set("okType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOkType: Self = this.set("okType", js.undefined)
+    @scala.inline
+    def setOnCancel(
+      value: Validator[
+          js.UndefOr[(js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]) | Null]
+        ]
+    ): Self = this.set("onCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    @scala.inline
+    def setOnOk(
+      value: Validator[
+          js.UndefOr[(js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]) | Null]
+        ]
+    ): Self = this.set("onOk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: Validator[js.UndefOr[Null | String]]): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: Validator[js.UndefOr[CSSProperties | Null]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: Validator[js.UndefOr[Null | ReactNode | String]]): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransitionName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setVisible(value: Validator[js.UndefOr[Boolean | Null]]): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Validator[js.UndefOr[Double | Null | String]]): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapClassName(value: Validator[js.UndefOr[Null | String]]): Self = this.set("wrapClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapClassName: Self = this.set("wrapClassName", js.undefined)
+    @scala.inline
+    def setWrapProps(value: Validator[js.UndefOr[_ | Null]]): Self = this.set("wrapProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapProps: Self = this.set("wrapProps", js.undefined)
+    @scala.inline
+    def setZIndex(value: Validator[js.UndefOr[Double | Null]]): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

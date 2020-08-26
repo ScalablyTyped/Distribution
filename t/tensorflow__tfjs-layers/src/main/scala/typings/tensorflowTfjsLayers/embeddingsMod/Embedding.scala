@@ -12,9 +12,9 @@ class Embedding protected () extends Layer {
   def this(args: EmbeddingLayerArgs) = this()
   val DEFAULT_EMBEDDINGS_INITIALIZER: InitializerIdentifier = js.native
   var embeddings: js.Any = js.native
-  val embeddingsConstraint: js.UndefOr[js.Any] = js.native
+  val embeddingsConstraint: js.Any = js.native
   var embeddingsInitializer: js.Any = js.native
-  val embeddingsRegularizer: js.UndefOr[js.Any] = js.native
+  val embeddingsRegularizer: js.Any = js.native
   var inputDim: js.Any = js.native
   var inputLength: js.Any = js.native
   var maskZero: js.Any = js.native

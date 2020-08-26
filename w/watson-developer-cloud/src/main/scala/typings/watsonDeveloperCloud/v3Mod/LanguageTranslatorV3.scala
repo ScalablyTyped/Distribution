@@ -105,6 +105,7 @@ trait LanguageTranslatorV3 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listIdentifiableLanguages(): js.Promise[_] | Unit = js.native
+  def listIdentifiableLanguages(params: js.UndefOr[scala.Nothing], callback: Callback[IdentifiableLanguages]): js.Promise[_] | Unit = js.native
   def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams): js.Promise[_] | Unit = js.native
   def listIdentifiableLanguages(params: ListIdentifiableLanguagesParams, callback: Callback[IdentifiableLanguages]): js.Promise[_] | Unit = js.native
   /**
@@ -124,6 +125,7 @@ trait LanguageTranslatorV3 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listModels(): js.Promise[_] | Unit = js.native
+  def listModels(params: js.UndefOr[scala.Nothing], callback: Callback[TranslationModels]): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams): js.Promise[_] | Unit = js.native
   def listModels(params: ListModelsParams, callback: Callback[TranslationModels]): js.Promise[_] | Unit = js.native
   /*************************

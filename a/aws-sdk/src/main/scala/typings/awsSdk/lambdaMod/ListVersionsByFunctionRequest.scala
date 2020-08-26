@@ -22,15 +22,32 @@ trait ListVersionsByFunctionRequest extends js.Object {
 
 object ListVersionsByFunctionRequest {
   @scala.inline
-  def apply(
-    FunctionName: NamespacedFunctionName,
-    Marker: String = null,
-    MaxItems: js.UndefOr[MaxListItems] = js.undefined
-  ): ListVersionsByFunctionRequest = {
+  def apply(FunctionName: NamespacedFunctionName): ListVersionsByFunctionRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxItems)) __obj.updateDynamic("MaxItems")(MaxItems.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVersionsByFunctionRequest]
   }
+  @scala.inline
+  implicit class ListVersionsByFunctionRequestOps[Self <: ListVersionsByFunctionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionName(value: NamespacedFunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxItems(value: MaxListItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+  }
+  
 }
 

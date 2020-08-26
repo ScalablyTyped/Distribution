@@ -91,38 +91,91 @@ object Fleet {
     ComputeCapacityStatus: ComputeCapacityStatus,
     InstanceType: String,
     Name: String,
-    State: FleetState,
-    CreatedTime: Timestamp = null,
-    Description: String = null,
-    DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
-    DisplayName: String = null,
-    DomainJoinInfo: DomainJoinInfo = null,
-    EnableDefaultInternetAccess: js.UndefOr[BooleanObject] = js.undefined,
-    FleetErrors: FleetErrors = null,
-    FleetType: FleetType = null,
-    IamRoleArn: Arn = null,
-    IdleDisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined,
-    ImageArn: Arn = null,
-    ImageName: String = null,
-    MaxUserDurationInSeconds: js.UndefOr[Integer] = js.undefined,
-    VpcConfig: VpcConfig = null
+    State: FleetState
   ): Fleet = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], ComputeCapacityStatus = ComputeCapacityStatus.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisconnectTimeoutInSeconds)) __obj.updateDynamic("DisconnectTimeoutInSeconds")(DisconnectTimeoutInSeconds.get.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (DomainJoinInfo != null) __obj.updateDynamic("DomainJoinInfo")(DomainJoinInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableDefaultInternetAccess)) __obj.updateDynamic("EnableDefaultInternetAccess")(EnableDefaultInternetAccess.get.asInstanceOf[js.Any])
-    if (FleetErrors != null) __obj.updateDynamic("FleetErrors")(FleetErrors.asInstanceOf[js.Any])
-    if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IdleDisconnectTimeoutInSeconds)) __obj.updateDynamic("IdleDisconnectTimeoutInSeconds")(IdleDisconnectTimeoutInSeconds.get.asInstanceOf[js.Any])
-    if (ImageArn != null) __obj.updateDynamic("ImageArn")(ImageArn.asInstanceOf[js.Any])
-    if (ImageName != null) __obj.updateDynamic("ImageName")(ImageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxUserDurationInSeconds)) __obj.updateDynamic("MaxUserDurationInSeconds")(MaxUserDurationInSeconds.get.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fleet]
   }
+  @scala.inline
+  implicit class FleetOps[Self <: Fleet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputeCapacityStatus(value: ComputeCapacityStatus): Self = this.set("ComputeCapacityStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: FleetState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedTime(value: Timestamp): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDisconnectTimeoutInSeconds(value: Integer): Self = this.set("DisconnectTimeoutInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisconnectTimeoutInSeconds: Self = this.set("DisconnectTimeoutInSeconds", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setDomainJoinInfo(value: DomainJoinInfo): Self = this.set("DomainJoinInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainJoinInfo: Self = this.set("DomainJoinInfo", js.undefined)
+    @scala.inline
+    def setEnableDefaultInternetAccess(value: BooleanObject): Self = this.set("EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDefaultInternetAccess: Self = this.set("EnableDefaultInternetAccess", js.undefined)
+    @scala.inline
+    def setFleetErrorsVarargs(value: FleetError*): Self = this.set("FleetErrors", js.Array(value :_*))
+    @scala.inline
+    def setFleetErrors(value: FleetErrors): Self = this.set("FleetErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetErrors: Self = this.set("FleetErrors", js.undefined)
+    @scala.inline
+    def setFleetType(value: FleetType): Self = this.set("FleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetType: Self = this.set("FleetType", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: Arn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setIdleDisconnectTimeoutInSeconds(value: Integer): Self = this.set("IdleDisconnectTimeoutInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleDisconnectTimeoutInSeconds: Self = this.set("IdleDisconnectTimeoutInSeconds", js.undefined)
+    @scala.inline
+    def setImageArn(value: Arn): Self = this.set("ImageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageArn: Self = this.set("ImageArn", js.undefined)
+    @scala.inline
+    def setImageName(value: String): Self = this.set("ImageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageName: Self = this.set("ImageName", js.undefined)
+    @scala.inline
+    def setMaxUserDurationInSeconds(value: Integer): Self = this.set("MaxUserDurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUserDurationInSeconds: Self = this.set("MaxUserDurationInSeconds", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

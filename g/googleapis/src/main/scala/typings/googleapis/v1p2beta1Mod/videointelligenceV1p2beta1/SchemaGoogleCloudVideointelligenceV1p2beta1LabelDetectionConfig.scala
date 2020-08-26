@@ -49,20 +49,42 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfig extends js
 
 object SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfig {
   @scala.inline
-  def apply(
-    frameConfidenceThreshold: js.UndefOr[Double] = js.undefined,
-    labelDetectionMode: String = null,
-    model: String = null,
-    stationaryCamera: js.UndefOr[Boolean] = js.undefined,
-    videoConfidenceThreshold: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfig = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(frameConfidenceThreshold)) __obj.updateDynamic("frameConfidenceThreshold")(frameConfidenceThreshold.get.asInstanceOf[js.Any])
-    if (labelDetectionMode != null) __obj.updateDynamic("labelDetectionMode")(labelDetectionMode.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(stationaryCamera)) __obj.updateDynamic("stationaryCamera")(stationaryCamera.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoConfidenceThreshold)) __obj.updateDynamic("videoConfidenceThreshold")(videoConfidenceThreshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfigOps[Self <: SchemaGoogleCloudVideointelligenceV1p2beta1LabelDetectionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameConfidenceThreshold(value: Double): Self = this.set("frameConfidenceThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameConfidenceThreshold: Self = this.set("frameConfidenceThreshold", js.undefined)
+    @scala.inline
+    def setLabelDetectionMode(value: String): Self = this.set("labelDetectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelDetectionMode: Self = this.set("labelDetectionMode", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setStationaryCamera(value: Boolean): Self = this.set("stationaryCamera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStationaryCamera: Self = this.set("stationaryCamera", js.undefined)
+    @scala.inline
+    def setVideoConfidenceThreshold(value: Double): Self = this.set("videoConfidenceThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoConfidenceThreshold: Self = this.set("videoConfidenceThreshold", js.undefined)
+  }
+  
 }
 

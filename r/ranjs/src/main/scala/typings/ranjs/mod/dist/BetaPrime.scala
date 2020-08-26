@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class BetaPrime ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.BetaPrime] {
   def this(alpha: Double) = this()
+  def this(alpha: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(alpha: Double, beta: Double) = this()
 }
 

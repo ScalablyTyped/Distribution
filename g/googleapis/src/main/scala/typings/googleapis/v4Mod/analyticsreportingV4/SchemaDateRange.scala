@@ -23,11 +23,30 @@ trait SchemaDateRange extends js.Object {
 
 object SchemaDateRange {
   @scala.inline
-  def apply(endDate: String = null, startDate: String = null): SchemaDateRange = {
+  def apply(): SchemaDateRange = {
     val __obj = js.Dynamic.literal()
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDateRange]
   }
+  @scala.inline
+  implicit class SchemaDateRangeOps[Self <: SchemaDateRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndDate(value: String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setStartDate(value: String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+  }
+  
 }
 

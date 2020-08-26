@@ -56,6 +56,8 @@ trait ChainableBase[RawValue] extends js.Object {
   def isString(): SugarDefaultChainable[Boolean] = js.native
   def keys[T](): SugarDefaultChainable[Array[T]] = js.native
   def least[T, U](): SugarDefaultChainable[T] = js.native
+  def least[T, U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[T] = js.native
+  def least[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def least[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
   def least[T, U](all: Boolean, map: String): SugarDefaultChainable[T] = js.native
   def least[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
@@ -64,6 +66,8 @@ trait ChainableBase[RawValue] extends js.Object {
   def map[T, U](map: String): SugarDefaultChainable[js.Object] = js.native
   def map[T, U](map: mapFn[T, U]): SugarDefaultChainable[js.Object] = js.native
   def max[T, U](): SugarDefaultChainable[T] = js.native
+  def max[T, U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[T] = js.native
+  def max[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def max[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
   def max[T, U](all: Boolean, map: String): SugarDefaultChainable[T] = js.native
   def max[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
@@ -77,12 +81,16 @@ trait ChainableBase[RawValue] extends js.Object {
   def mergeAll[T](sources: Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
   def mergeAll[T](sources: Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
   def min[T, U](): SugarDefaultChainable[T] = js.native
+  def min[T, U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[T] = js.native
+  def min[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def min[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
   def min[T, U](all: Boolean, map: String): SugarDefaultChainable[T] = js.native
   def min[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def min[T, U](map: String): SugarDefaultChainable[T] = js.native
   def min[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def most[T, U](): SugarDefaultChainable[T] = js.native
+  def most[T, U](all: js.UndefOr[scala.Nothing], map: String): SugarDefaultChainable[T] = js.native
+  def most[T, U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
   def most[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
   def most[T, U](all: Boolean, map: String): SugarDefaultChainable[T] = js.native
   def most[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native

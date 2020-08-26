@@ -7,24 +7,45 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-instantsearch-core.react-instantsearch-core.CurrentRefinementsProvided> */
+@js.native
 trait PartialCurrentRefinements extends js.Object {
-  var items: js.UndefOr[js.Array[Refinement]] = js.undefined
-  var query: js.UndefOr[String] = js.undefined
-  var refine: js.UndefOr[js.Function1[/* refinement */ RefinementValue | js.Array[RefinementValue], Unit]] = js.undefined
+  var items: js.UndefOr[js.Array[Refinement]] = js.native
+  var query: js.UndefOr[String] = js.native
+  var refine: js.UndefOr[js.Function1[/* refinement */ RefinementValue | js.Array[RefinementValue], Unit]] = js.native
 }
 
 object PartialCurrentRefinements {
   @scala.inline
-  def apply(
-    items: js.Array[Refinement] = null,
-    query: String = null,
-    refine: /* refinement */ RefinementValue | js.Array[RefinementValue] => Unit = null
-  ): PartialCurrentRefinements = {
+  def apply(): PartialCurrentRefinements = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (refine != null) __obj.updateDynamic("refine")(js.Any.fromFunction1(refine))
     __obj.asInstanceOf[PartialCurrentRefinements]
   }
+  @scala.inline
+  implicit class PartialCurrentRefinementsOps[Self <: PartialCurrentRefinements] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: Refinement*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Refinement]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRefine(value: /* refinement */ RefinementValue | js.Array[RefinementValue] => Unit): Self = this.set("refine", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRefine: Self = this.set("refine", js.undefined)
+  }
+  
 }
 

@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Vocabulary
   extends typings.yadda.languageMod.Vocabulary {
-  var background: String
-  var examples: String
-  var feature: String
-  var given: String
-  var only: String
-  var pending: String
-  var scenario: String
-  var `then`: String
-  var when: String
+  var background: String = js.native
+  var examples: String = js.native
+  var feature: String = js.native
+  var given: String = js.native
+  var only: String = js.native
+  var pending: String = js.native
+  var scenario: String = js.native
+  var `then`: String = js.native
+  var when: String = js.native
 }
 
 object Vocabulary {
@@ -35,5 +36,36 @@ object Vocabulary {
     __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vocabulary]
   }
+  @scala.inline
+  implicit class VocabularyOps[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExamples(value: String): Self = this.set("examples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeature(value: String): Self = this.set("feature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGiven(value: String): Self = this.set("given", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnly(value: String): Self = this.set("only", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPending(value: String): Self = this.set("pending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScenario(value: String): Self = this.set("scenario", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThen(value: String): Self = this.set("then", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWhen(value: String): Self = this.set("when", value.asInstanceOf[js.Any])
+  }
+  
 }
 

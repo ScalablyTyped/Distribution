@@ -4,45 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResourceProviderOperationDisplayProperties extends js.Object {
   /**
     * Operation description.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * Resource provider operation.
     */
-  var operation: js.UndefOr[String] = js.undefined
+  var operation: js.UndefOr[String] = js.native
   /**
     * Operation provider.
     */
-  var provider: js.UndefOr[String] = js.undefined
+  var provider: js.UndefOr[String] = js.native
   /**
     * Operation description.
     */
-  var publisher: js.UndefOr[String] = js.undefined
+  var publisher: js.UndefOr[String] = js.native
   /**
     * Operation resource.
     */
-  var resource: js.UndefOr[String] = js.undefined
+  var resource: js.UndefOr[String] = js.native
 }
 
 object ResourceProviderOperationDisplayProperties {
   @scala.inline
-  def apply(
-    description: String = null,
-    operation: String = null,
-    provider: String = null,
-    publisher: String = null,
-    resource: String = null
-  ): ResourceProviderOperationDisplayProperties = {
+  def apply(): ResourceProviderOperationDisplayProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceProviderOperationDisplayProperties]
   }
+  @scala.inline
+  implicit class ResourceProviderOperationDisplayPropertiesOps[Self <: ResourceProviderOperationDisplayProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisher: Self = this.set("publisher", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+  }
+  
 }
 

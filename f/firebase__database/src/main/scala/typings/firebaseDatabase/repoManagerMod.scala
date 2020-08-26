@@ -3,6 +3,7 @@ package typings.firebaseDatabase
 import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
+import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
 import typings.firebaseDatabase.databaseMod.Database
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.repoMod.Repo
@@ -32,7 +33,7 @@ object repoManagerMod extends js.Object {
       * @param {!FirebaseApp} app
       * @return {!Repo} The Repo object for the specified server / repoName.
       */
-    def createRepo(repoInfo: RepoInfo, app: FirebaseApp, authProvider: Provider[FirebaseAuthInternalName]): Repo = js.native
+    def createRepo(repoInfo: RepoInfo, app: FirebaseApp, authTokenProvider: AuthTokenProvider): Repo = js.native
     /**
       * This function should only ever be called to CREATE a new database instance.
       *

@@ -48,24 +48,50 @@ trait SchemaFile extends js.Object {
 
 object SchemaFile {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    functionSet: SchemaGoogleAppsScriptTypeFunctionSet = null,
-    lastModifyUser: SchemaGoogleAppsScriptTypeUser = null,
-    name: String = null,
-    source: String = null,
-    `type`: String = null,
-    updateTime: String = null
-  ): SchemaFile = {
+  def apply(): SchemaFile = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (functionSet != null) __obj.updateDynamic("functionSet")(functionSet.asInstanceOf[js.Any])
-    if (lastModifyUser != null) __obj.updateDynamic("lastModifyUser")(lastModifyUser.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFile]
   }
+  @scala.inline
+  implicit class SchemaFileOps[Self <: SchemaFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setFunctionSet(value: SchemaGoogleAppsScriptTypeFunctionSet): Self = this.set("functionSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionSet: Self = this.set("functionSet", js.undefined)
+    @scala.inline
+    def setLastModifyUser(value: SchemaGoogleAppsScriptTypeUser): Self = this.set("lastModifyUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifyUser: Self = this.set("lastModifyUser", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

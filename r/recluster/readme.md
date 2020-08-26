@@ -12,7 +12,7 @@ Clustering library with support for zero-downtime reloading
 | Keywords           | load, balancer, cluster, zero, downtime, reload, sticky, websockets, socket.io |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 143748 |
+| # downloads        | 143936 |
 | # stars            | 5 |
 
 ## Links

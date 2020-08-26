@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   *
   * Read/Write access to the value represented by this component is supported, as well as (optionally) active broadcasting of value changes
   */
+@js.native
 trait ValueBinding
   extends XPropertySet
      with XValueBinding
@@ -33,7 +34,7 @@ trait ValueBinding
     * As long as this property is `TRUE` , the value binding should throw a {@link InvalidBindingStateException} when its {@link XValueBinding.setValue()}
     * method is invoked.
     */
-  var ReadOnly: Boolean
+  var ReadOnly: Boolean = js.native
   /**
     * determines the relevance of the value represented by the binding
     *
@@ -45,7 +46,7 @@ trait ValueBinding
     * One possible reaction could be that user interface elements which are associated with the {@link XBindableValue} are disabled as long as {@link
     * Relevant} is `FALSE` .
     */
-  var Relevant: Boolean
+  var Relevant: Boolean = js.native
 }
 
 object ValueBinding {
@@ -78,5 +79,22 @@ object ValueBinding {
     val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], Relevant = Relevant.asInstanceOf[js.Any], SupportedValueTypes = SupportedValueTypes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addModifyListener = js.Any.fromFunction1(addModifyListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSupportedValueTypes = js.Any.fromFunction0(getSupportedValueTypes), getValue = js.Any.fromFunction1(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeModifyListener = js.Any.fromFunction1(removeModifyListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setValue = js.Any.fromFunction1(setValue), supportsType = js.Any.fromFunction1(supportsType))
     __obj.asInstanceOf[ValueBinding]
   }
+  @scala.inline
+  implicit class ValueBindingOps[Self <: ValueBinding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelevant(value: Boolean): Self = this.set("Relevant", value.asInstanceOf[js.Any])
+  }
+  
 }
 

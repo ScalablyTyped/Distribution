@@ -12,7 +12,7 @@ AVOSCloud JavaScript SDK.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 5851 |
+| # downloads        | 5699 |
 | # stars            | 3 |
 
 ## Links

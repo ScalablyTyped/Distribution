@@ -50,30 +50,62 @@ trait Problem extends js.Object {
 
 object Problem {
   @scala.inline
-  def apply(
-    AffectedResource: AffectedResource = null,
-    EndTime: EndTime = null,
-    Feedback: Feedback = null,
-    Id: ProblemId = null,
-    Insights: Insights = null,
-    ResourceGroupName: ResourceGroupName = null,
-    SeverityLevel: SeverityLevel = null,
-    StartTime: StartTime = null,
-    Status: Status = null,
-    Title: Title = null
-  ): Problem = {
+  def apply(): Problem = {
     val __obj = js.Dynamic.literal()
-    if (AffectedResource != null) __obj.updateDynamic("AffectedResource")(AffectedResource.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (Feedback != null) __obj.updateDynamic("Feedback")(Feedback.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Insights != null) __obj.updateDynamic("Insights")(Insights.asInstanceOf[js.Any])
-    if (ResourceGroupName != null) __obj.updateDynamic("ResourceGroupName")(ResourceGroupName.asInstanceOf[js.Any])
-    if (SeverityLevel != null) __obj.updateDynamic("SeverityLevel")(SeverityLevel.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Problem]
   }
+  @scala.inline
+  implicit class ProblemOps[Self <: Problem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffectedResource(value: AffectedResource): Self = this.set("AffectedResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectedResource: Self = this.set("AffectedResource", js.undefined)
+    @scala.inline
+    def setEndTime(value: EndTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setFeedback(value: Feedback): Self = this.set("Feedback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeedback: Self = this.set("Feedback", js.undefined)
+    @scala.inline
+    def setId(value: ProblemId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInsights(value: Insights): Self = this.set("Insights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsights: Self = this.set("Insights", js.undefined)
+    @scala.inline
+    def setResourceGroupName(value: ResourceGroupName): Self = this.set("ResourceGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceGroupName: Self = this.set("ResourceGroupName", js.undefined)
+    @scala.inline
+    def setSeverityLevel(value: SeverityLevel): Self = this.set("SeverityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityLevel: Self = this.set("SeverityLevel", js.undefined)
+    @scala.inline
+    def setStartTime(value: StartTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTitle(value: Title): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

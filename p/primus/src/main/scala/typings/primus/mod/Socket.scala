@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
 class Socket () extends Stream {
   def this(options: SocketOptions) = this()
   def this(url: String) = this()
+  def this(url: js.UndefOr[scala.Nothing], options: SocketOptions) = this()
   def this(url: String, options: SocketOptions) = this()
   @JSName("emits")
   var emits_Original: typings.primus.mod.emits.emits = js.native

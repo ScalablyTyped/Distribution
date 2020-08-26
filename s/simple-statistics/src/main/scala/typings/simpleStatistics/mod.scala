@@ -2,9 +2,6 @@ package typings.simpleStatistics
 
 import typings.simpleStatistics.anon.B
 import typings.simpleStatistics.anon.M
-import typings.simpleStatistics.bayesianClassifierMod.Data
-import typings.simpleStatistics.bayesianClassifierMod.Item
-import typings.simpleStatistics.bayesianClassifierMod.OddsSums
 import typings.simpleStatistics.chiSquaredDistributionTableMod.DistributionTable
 import typings.simpleStatistics.kernelDensityEstimationMod.BandwidthMethods
 import typings.simpleStatistics.kernelDensityEstimationMod.Kernels
@@ -20,58 +17,22 @@ object mod extends js.Object {
     */
   @js.native
   class BayesianClassifier ()
-    extends typings.simpleStatistics.bayesianClassifierMod.BayesianClassifier {
-    /* CompleteClass */
-    override var data: Data = js.native
-    /* CompleteClass */
-    override var totalCount: Double = js.native
-    /* CompleteClass */
-    override def score(item: Item): OddsSums = js.native
-    /* CompleteClass */
-    override def train(item: Item, category: String): Unit = js.native
-  }
+    extends typings.simpleStatistics.bayesianClassifierMod.BayesianClassifier
   
   @js.native
   class PerceptronModel ()
-    extends typings.simpleStatistics.perceptronMod.PerceptronModel {
-    /* CompleteClass */
-    override var bias: Double = js.native
-    /* CompleteClass */
-    override var weights: js.Array[Double] = js.native
-    /* CompleteClass */
-    override def predict(features: js.Array[Double]): Double = js.native
-    /* CompleteClass */
-    override def train(features: js.Array[Double], label: Double): typings.simpleStatistics.perceptronMod.PerceptronModel = js.native
-  }
+    extends typings.simpleStatistics.perceptronMod.PerceptronModel
   
   /**
     * https://simplestatistics.org/docs/#bayesianclassifier
     */
   @js.native
   class bayesian ()
-    extends typings.simpleStatistics.bayesianClassifierMod.BayesianClassifier {
-    /* CompleteClass */
-    override var data: Data = js.native
-    /* CompleteClass */
-    override var totalCount: Double = js.native
-    /* CompleteClass */
-    override def score(item: Item): OddsSums = js.native
-    /* CompleteClass */
-    override def train(item: Item, category: String): Unit = js.native
-  }
+    extends typings.simpleStatistics.bayesianClassifierMod.BayesianClassifier
   
   @js.native
   class perceptron ()
-    extends typings.simpleStatistics.perceptronMod.PerceptronModel {
-    /* CompleteClass */
-    override var bias: Double = js.native
-    /* CompleteClass */
-    override var weights: js.Array[Double] = js.native
-    /* CompleteClass */
-    override def predict(features: js.Array[Double]): Double = js.native
-    /* CompleteClass */
-    override def train(features: js.Array[Double], label: Double): typings.simpleStatistics.perceptronMod.PerceptronModel = js.native
-  }
+    extends typings.simpleStatistics.perceptronMod.PerceptronModel
   
   val epsilon: Double = js.native
   val standardNormalTable: js.Array[Double] = js.native
@@ -107,6 +68,8 @@ object mod extends js.Object {
     * https://simplestatistics.org/docs/#kde
     */
   def kde(X: js.Array[Double]): js.Function1[/* x */ Double, Double] = js.native
+  def kde(X: js.Array[Double], kernel: js.UndefOr[scala.Nothing], bandwidthMethod: Double): js.Function1[/* x */ Double, Double] = js.native
+  def kde(X: js.Array[Double], kernel: js.UndefOr[scala.Nothing], bandwidthMethod: BandwidthMethods): js.Function1[/* x */ Double, Double] = js.native
   def kde(X: js.Array[Double], kernel: js.Function1[/* u */ Double, Double]): js.Function1[/* x */ Double, Double] = js.native
   def kde(X: js.Array[Double], kernel: js.Function1[/* u */ Double, Double], bandwidthMethod: Double): js.Function1[/* x */ Double, Double] = js.native
   def kde(
@@ -121,6 +84,8 @@ object mod extends js.Object {
     * https://simplestatistics.org/docs/#kde
     */
   def kernelDensityEstimation(X: js.Array[Double]): js.Function1[/* x */ Double, Double] = js.native
+  def kernelDensityEstimation(X: js.Array[Double], kernel: js.UndefOr[scala.Nothing], bandwidthMethod: Double): js.Function1[/* x */ Double, Double] = js.native
+  def kernelDensityEstimation(X: js.Array[Double], kernel: js.UndefOr[scala.Nothing], bandwidthMethod: BandwidthMethods): js.Function1[/* x */ Double, Double] = js.native
   def kernelDensityEstimation(X: js.Array[Double], kernel: js.Function1[/* u */ Double, Double]): js.Function1[/* x */ Double, Double] = js.native
   def kernelDensityEstimation(X: js.Array[Double], kernel: js.Function1[/* u */ Double, Double], bandwidthMethod: Double): js.Function1[/* x */ Double, Double] = js.native
   def kernelDensityEstimation(
@@ -156,6 +121,7 @@ object mod extends js.Object {
   def quantileRankSorted(x: js.Array[Double], value: Double): Double = js.native
   def quantileSorted(x: js.Array[Double], p: Double): Double = js.native
   def quickselect(arr: js.Array[Double], k: Double): Unit = js.native
+  def quickselect(arr: js.Array[Double], k: Double, left: js.UndefOr[scala.Nothing], right: Double): Unit = js.native
   def quickselect(arr: js.Array[Double], k: Double, left: Double): Unit = js.native
   def quickselect(arr: js.Array[Double], k: Double, left: Double, right: Double): Unit = js.native
   def rSquared(x: js.Array[js.Array[Double]], func: js.Function1[/* x */ Double, Double]): Double = js.native

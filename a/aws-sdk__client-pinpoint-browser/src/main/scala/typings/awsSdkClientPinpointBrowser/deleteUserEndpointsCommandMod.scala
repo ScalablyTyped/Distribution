@@ -26,16 +26,9 @@ object deleteUserEndpointsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteUserEndpointsInput) = this()
-    /* CompleteClass */
-    override val input: DeleteUserEndpointsInput = js.native
     val middlewareStack: MiddlewareStack[DeleteUserEndpointsInput, DeleteUserEndpointsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[DeleteUserEndpointsInput, DeleteUserEndpointsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteUserEndpointsInput, DeleteUserEndpointsOutput] = js.native
   }

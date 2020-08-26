@@ -72,6 +72,7 @@ trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
     * length+end.
     */
   def fill(value: Double): this.type = js.native
+  def fill(value: Double, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: Double, start: Double): this.type = js.native
   def fill(value: Double, start: Double, end: Double): this.type = js.native
   /**
@@ -292,6 +293,7 @@ trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): Uint8ClampedArray = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): Uint8ClampedArray = js.native
   def slice(start: Double): Uint8ClampedArray = js.native
   def slice(start: Double, end: Double): Uint8ClampedArray = js.native
   /**
@@ -325,6 +327,7 @@ trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
     * @param end The index of the end of the array.
     */
   def subarray(): Uint8ClampedArray = js.native
+  def subarray(begin: js.UndefOr[scala.Nothing], end: Double): Uint8ClampedArray = js.native
   def subarray(begin: Double): Uint8ClampedArray = js.native
   def subarray(begin: Double, end: Double): Uint8ClampedArray = js.native
   /**

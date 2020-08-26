@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-trigger/lib/PopupInner", JSImport.Default)
+@JSImport("rc-trigger/es/PopupInner", JSImport.Default)
 @js.native
 object default extends TopLevel[ForwardRefExoticComponent[PopupInnerProps with RefAttributes[HTMLDivElement]]]
 

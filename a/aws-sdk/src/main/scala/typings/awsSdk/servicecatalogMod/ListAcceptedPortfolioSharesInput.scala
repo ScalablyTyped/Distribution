@@ -26,18 +26,38 @@ trait ListAcceptedPortfolioSharesInput extends js.Object {
 
 object ListAcceptedPortfolioSharesInput {
   @scala.inline
-  def apply(
-    AcceptLanguage: AcceptLanguage = null,
-    PageSize: js.UndefOr[PageSize] = js.undefined,
-    PageToken: PageToken = null,
-    PortfolioShareType: PortfolioShareType = null
-  ): ListAcceptedPortfolioSharesInput = {
+  def apply(): ListAcceptedPortfolioSharesInput = {
     val __obj = js.Dynamic.literal()
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
-    if (PageToken != null) __obj.updateDynamic("PageToken")(PageToken.asInstanceOf[js.Any])
-    if (PortfolioShareType != null) __obj.updateDynamic("PortfolioShareType")(PortfolioShareType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAcceptedPortfolioSharesInput]
   }
+  @scala.inline
+  implicit class ListAcceptedPortfolioSharesInputOps[Self <: ListAcceptedPortfolioSharesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setPageToken(value: PageToken): Self = this.set("PageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("PageToken", js.undefined)
+    @scala.inline
+    def setPortfolioShareType(value: PortfolioShareType): Self = this.set("PortfolioShareType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortfolioShareType: Self = this.set("PortfolioShareType", js.undefined)
+  }
+  
 }
 

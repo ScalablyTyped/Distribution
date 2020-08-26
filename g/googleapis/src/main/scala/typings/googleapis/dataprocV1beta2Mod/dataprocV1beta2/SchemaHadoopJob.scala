@@ -63,26 +63,62 @@ trait SchemaHadoopJob extends js.Object {
 
 object SchemaHadoopJob {
   @scala.inline
-  def apply(
-    archiveUris: js.Array[String] = null,
-    args: js.Array[String] = null,
-    fileUris: js.Array[String] = null,
-    jarFileUris: js.Array[String] = null,
-    loggingConfig: SchemaLoggingConfig = null,
-    mainClass: String = null,
-    mainJarFileUri: String = null,
-    properties: StringDictionary[String] = null
-  ): SchemaHadoopJob = {
+  def apply(): SchemaHadoopJob = {
     val __obj = js.Dynamic.literal()
-    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris.asInstanceOf[js.Any])
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (mainClass != null) __obj.updateDynamic("mainClass")(mainClass.asInstanceOf[js.Any])
-    if (mainJarFileUri != null) __obj.updateDynamic("mainJarFileUri")(mainJarFileUri.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHadoopJob]
   }
+  @scala.inline
+  implicit class SchemaHadoopJobOps[Self <: SchemaHadoopJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveUrisVarargs(value: String*): Self = this.set("archiveUris", js.Array(value :_*))
+    @scala.inline
+    def setArchiveUris(value: js.Array[String]): Self = this.set("archiveUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveUris: Self = this.set("archiveUris", js.undefined)
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setFileUrisVarargs(value: String*): Self = this.set("fileUris", js.Array(value :_*))
+    @scala.inline
+    def setFileUris(value: js.Array[String]): Self = this.set("fileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileUris: Self = this.set("fileUris", js.undefined)
+    @scala.inline
+    def setJarFileUrisVarargs(value: String*): Self = this.set("jarFileUris", js.Array(value :_*))
+    @scala.inline
+    def setJarFileUris(value: js.Array[String]): Self = this.set("jarFileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJarFileUris: Self = this.set("jarFileUris", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: SchemaLoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setMainClass(value: String): Self = this.set("mainClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainClass: Self = this.set("mainClass", js.undefined)
+    @scala.inline
+    def setMainJarFileUri(value: String): Self = this.set("mainJarFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainJarFileUri: Self = this.set("mainJarFileUri", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

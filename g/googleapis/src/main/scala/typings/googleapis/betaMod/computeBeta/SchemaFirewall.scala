@@ -164,50 +164,118 @@ trait SchemaFirewall extends js.Object {
 
 object SchemaFirewall {
   @scala.inline
-  def apply(
-    allowed: js.Array[IPProtocol] = null,
-    creationTimestamp: String = null,
-    denied: js.Array[IPProtocol] = null,
-    description: String = null,
-    destinationRanges: js.Array[String] = null,
-    direction: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enableLogging: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    kind: String = null,
-    logConfig: SchemaFirewallLogConfig = null,
-    name: String = null,
-    network: String = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    selfLink: String = null,
-    sourceRanges: js.Array[String] = null,
-    sourceServiceAccounts: js.Array[String] = null,
-    sourceTags: js.Array[String] = null,
-    targetServiceAccounts: js.Array[String] = null,
-    targetTags: js.Array[String] = null
-  ): SchemaFirewall = {
+  def apply(): SchemaFirewall = {
     val __obj = js.Dynamic.literal()
-    if (allowed != null) __obj.updateDynamic("allowed")(allowed.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (denied != null) __obj.updateDynamic("denied")(denied.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (destinationRanges != null) __obj.updateDynamic("destinationRanges")(destinationRanges.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLogging)) __obj.updateDynamic("enableLogging")(enableLogging.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sourceRanges != null) __obj.updateDynamic("sourceRanges")(sourceRanges.asInstanceOf[js.Any])
-    if (sourceServiceAccounts != null) __obj.updateDynamic("sourceServiceAccounts")(sourceServiceAccounts.asInstanceOf[js.Any])
-    if (sourceTags != null) __obj.updateDynamic("sourceTags")(sourceTags.asInstanceOf[js.Any])
-    if (targetServiceAccounts != null) __obj.updateDynamic("targetServiceAccounts")(targetServiceAccounts.asInstanceOf[js.Any])
-    if (targetTags != null) __obj.updateDynamic("targetTags")(targetTags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFirewall]
   }
+  @scala.inline
+  implicit class SchemaFirewallOps[Self <: SchemaFirewall] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedVarargs(value: IPProtocol*): Self = this.set("allowed", js.Array(value :_*))
+    @scala.inline
+    def setAllowed(value: js.Array[IPProtocol]): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowed: Self = this.set("allowed", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDeniedVarargs(value: IPProtocol*): Self = this.set("denied", js.Array(value :_*))
+    @scala.inline
+    def setDenied(value: js.Array[IPProtocol]): Self = this.set("denied", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDenied: Self = this.set("denied", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDestinationRangesVarargs(value: String*): Self = this.set("destinationRanges", js.Array(value :_*))
+    @scala.inline
+    def setDestinationRanges(value: js.Array[String]): Self = this.set("destinationRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationRanges: Self = this.set("destinationRanges", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setEnableLogging(value: Boolean): Self = this.set("enableLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableLogging: Self = this.set("enableLogging", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLogConfig(value: SchemaFirewallLogConfig): Self = this.set("logConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogConfig: Self = this.set("logConfig", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSourceRangesVarargs(value: String*): Self = this.set("sourceRanges", js.Array(value :_*))
+    @scala.inline
+    def setSourceRanges(value: js.Array[String]): Self = this.set("sourceRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRanges: Self = this.set("sourceRanges", js.undefined)
+    @scala.inline
+    def setSourceServiceAccountsVarargs(value: String*): Self = this.set("sourceServiceAccounts", js.Array(value :_*))
+    @scala.inline
+    def setSourceServiceAccounts(value: js.Array[String]): Self = this.set("sourceServiceAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceServiceAccounts: Self = this.set("sourceServiceAccounts", js.undefined)
+    @scala.inline
+    def setSourceTagsVarargs(value: String*): Self = this.set("sourceTags", js.Array(value :_*))
+    @scala.inline
+    def setSourceTags(value: js.Array[String]): Self = this.set("sourceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTags: Self = this.set("sourceTags", js.undefined)
+    @scala.inline
+    def setTargetServiceAccountsVarargs(value: String*): Self = this.set("targetServiceAccounts", js.Array(value :_*))
+    @scala.inline
+    def setTargetServiceAccounts(value: js.Array[String]): Self = this.set("targetServiceAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetServiceAccounts: Self = this.set("targetServiceAccounts", js.undefined)
+    @scala.inline
+    def setTargetTagsVarargs(value: String*): Self = this.set("targetTags", js.Array(value :_*))
+    @scala.inline
+    def setTargetTags(value: js.Array[String]): Self = this.set("targetTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTags: Self = this.set("targetTags", js.undefined)
+  }
+  
 }
 

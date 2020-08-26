@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "notify"
-version := "0.0-unknown-dt-20200515Z-d420ab"
-scalaVersion := "2.13.2"
+version := "0.0-unknown-dt-20200515Z-6fde20"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

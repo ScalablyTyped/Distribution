@@ -102,8 +102,8 @@ trait ChartAPI extends js.Object {
     * @param options Options object.
     */
   def hide(): Unit = js.native
+  def hide(targetIds: js.UndefOr[ArrayOrString], options: ShowHideOptions): Unit = js.native
   def hide(targetIds: ArrayOrString): Unit = js.native
-  def hide(targetIds: ArrayOrString, options: ShowHideOptions): Unit = js.native
   def legend(): Unit = js.native
   /**
     * Load data to the chart.
@@ -138,7 +138,11 @@ trait ChartAPI extends js.Object {
     * @param resetOther If this argument is set true, the data points that are not specified by ids, indices will be unselected.
     */
   def select(): Unit = js.native
+  def select(ids: js.UndefOr[scala.Nothing], indices: js.UndefOr[scala.Nothing], resetOther: Boolean): Unit = js.native
+  def select(ids: js.UndefOr[scala.Nothing], indices: js.Array[Double]): Unit = js.native
+  def select(ids: js.UndefOr[scala.Nothing], indices: js.Array[Double], resetOther: Boolean): Unit = js.native
   def select(ids: js.Array[String]): Unit = js.native
+  def select(ids: js.Array[String], indices: js.UndefOr[scala.Nothing], resetOther: Boolean): Unit = js.native
   def select(ids: js.Array[String], indices: js.Array[Double]): Unit = js.native
   def select(ids: js.Array[String], indices: js.Array[Double], resetOther: Boolean): Unit = js.native
   /**
@@ -153,16 +157,16 @@ trait ChartAPI extends js.Object {
     * @param options Options object.
     */
   def show(): Unit = js.native
+  def show(targetIds: js.UndefOr[ArrayOrString], options: ShowHideOptions): Unit = js.native
   def show(targetIds: ArrayOrString): Unit = js.native
-  def show(targetIds: ArrayOrString, options: ShowHideOptions): Unit = js.native
   /**
     * This API toggles (shows or hides) specified targets.
     * @param targetIds You can specify multiple data sets by giving an array of ID strings. If no argument is given, all of data will be toggled.
     * @param options Options object.
     */
   def toggle(): Unit = js.native
+  def toggle(targetIds: js.UndefOr[ArrayOrString], options: ShowHideOptions): Unit = js.native
   def toggle(targetIds: ArrayOrString): Unit = js.native
-  def toggle(targetIds: ArrayOrString, options: ShowHideOptions): Unit = js.native
   def tooltip(): Unit = js.native
   /**
     * Change the type of the chart.
@@ -185,6 +189,7 @@ trait ChartAPI extends js.Object {
     * @param indices Specify indices to be unselected. If this argument is not given, all data points will be the candidate.
     */
   def unselect(): Unit = js.native
+  def unselect(ids: js.UndefOr[scala.Nothing], indices: js.Array[Double]): Unit = js.native
   def unselect(ids: js.Array[String]): Unit = js.native
   def unselect(ids: js.Array[String], indices: js.Array[Double]): Unit = js.native
   /**

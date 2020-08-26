@@ -30,29 +30,53 @@ trait LifecyclePolicyState extends js.Object {
     */
   val state: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object LifecyclePolicyState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    description: Input[String] = null,
-    executionRoleArn: Input[String] = null,
-    policyDetails: Input[LifecyclePolicyPolicyDetails] = null,
-    state: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): LifecyclePolicyState = {
+  def apply(): LifecyclePolicyState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (executionRoleArn != null) __obj.updateDynamic("executionRoleArn")(executionRoleArn.asInstanceOf[js.Any])
-    if (policyDetails != null) __obj.updateDynamic("policyDetails")(policyDetails.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecyclePolicyState]
   }
+  @scala.inline
+  implicit class LifecyclePolicyStateOps[Self <: LifecyclePolicyState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExecutionRoleArn(value: Input[String]): Self = this.set("executionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleArn: Self = this.set("executionRoleArn", js.undefined)
+    @scala.inline
+    def setPolicyDetails(value: Input[LifecyclePolicyPolicyDetails]): Self = this.set("policyDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyDetails: Self = this.set("policyDetails", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

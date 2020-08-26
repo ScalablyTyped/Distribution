@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object parse extends js.Object {
   def apply(str: String, kb: default, base: String): Unit = js.native
+  def apply(
+    str: String,
+    kb: default,
+    base: String,
+    contentType: js.UndefOr[scala.Nothing],
+    callback: CallbackFunc
+  ): Unit = js.native
   def apply(str: String, kb: default, base: String, contentType: String): Unit = js.native
   def apply(str: String, kb: default, base: String, contentType: String, callback: CallbackFunc): Unit = js.native
   def apply(str: String, kb: default, base: String, contentType: ContentType): Unit = js.native

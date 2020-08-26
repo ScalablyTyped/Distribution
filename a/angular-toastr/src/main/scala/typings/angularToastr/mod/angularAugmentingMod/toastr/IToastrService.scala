@@ -25,6 +25,7 @@ trait IToastrService extends js.Object {
     * @param {IToastOptions} options Override default toast options
     */
   def error(message: String): IToast = js.native
+  def error(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def error(message: String, title: String): IToast = js.native
   def error(message: String, title: String, options: IToastOptions): IToast = js.native
   /**
@@ -35,6 +36,7 @@ trait IToastrService extends js.Object {
     * @param {IToastOptions} options Override default toast options
     */
   def info(message: String): IToast = js.native
+  def info(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def info(message: String, title: String): IToast = js.native
   def info(message: String, title: String, options: IToastOptions): IToast = js.native
   /**
@@ -45,6 +47,7 @@ trait IToastrService extends js.Object {
     * @param {IToastOptions} options Override default toast options
     */
   def success(message: String): IToast = js.native
+  def success(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def success(message: String, title: String): IToast = js.native
   def success(message: String, title: String, options: IToastOptions): IToast = js.native
   /**
@@ -55,6 +58,7 @@ trait IToastrService extends js.Object {
     * @param {IToastOptions} options Override default toast options
     */
   def warning(message: String): IToast = js.native
+  def warning(message: String, title: js.UndefOr[scala.Nothing], options: IToastOptions): IToast = js.native
   def warning(message: String, title: String): IToast = js.native
   def warning(message: String, title: String, options: IToastOptions): IToast = js.native
 }

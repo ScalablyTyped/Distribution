@@ -22,16 +22,34 @@ trait GetDedicatedIpsRequest extends js.Object {
 
 object GetDedicatedIpsRequest {
   @scala.inline
-  def apply(
-    NextToken: NextToken = null,
-    PageSize: js.UndefOr[MaxItems] = js.undefined,
-    PoolName: PoolName = null
-  ): GetDedicatedIpsRequest = {
+  def apply(): GetDedicatedIpsRequest = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
-    if (PoolName != null) __obj.updateDynamic("PoolName")(PoolName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDedicatedIpsRequest]
   }
+  @scala.inline
+  implicit class GetDedicatedIpsRequestOps[Self <: GetDedicatedIpsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: MaxItems): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setPoolName(value: PoolName): Self = this.set("PoolName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolName: Self = this.set("PoolName", js.undefined)
+  }
+  
 }
 

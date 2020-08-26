@@ -32,6 +32,7 @@ trait IRoot extends js.Object {
     * @return - A promise of a Qlik engine reply.
     */
   def callRepository(path: String): IPromise[_] = js.native
+  def callRepository(path: String, method: js.UndefOr[scala.Nothing], body: String): IPromise[_] = js.native
   def callRepository(path: String, method: String): IPromise[_] = js.native
   def callRepository(path: String, method: String, body: String): IPromise[_] = js.native
   /**

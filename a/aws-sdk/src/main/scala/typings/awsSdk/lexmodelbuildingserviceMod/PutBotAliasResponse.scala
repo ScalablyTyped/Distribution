@@ -46,28 +46,60 @@ trait PutBotAliasResponse extends js.Object {
 
 object PutBotAliasResponse {
   @scala.inline
-  def apply(
-    botName: BotName = null,
-    botVersion: Version = null,
-    checksum: String = null,
-    conversationLogs: ConversationLogsResponse = null,
-    createdDate: Timestamp = null,
-    description: Description = null,
-    lastUpdatedDate: Timestamp = null,
-    name: AliasName = null,
-    tags: TagList = null
-  ): PutBotAliasResponse = {
+  def apply(): PutBotAliasResponse = {
     val __obj = js.Dynamic.literal()
-    if (botName != null) __obj.updateDynamic("botName")(botName.asInstanceOf[js.Any])
-    if (botVersion != null) __obj.updateDynamic("botVersion")(botVersion.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (conversationLogs != null) __obj.updateDynamic("conversationLogs")(conversationLogs.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotAliasResponse]
   }
+  @scala.inline
+  implicit class PutBotAliasResponseOps[Self <: PutBotAliasResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBotName: Self = this.set("botName", js.undefined)
+    @scala.inline
+    def setBotVersion(value: Version): Self = this.set("botVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBotVersion: Self = this.set("botVersion", js.undefined)
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setConversationLogs(value: ConversationLogsResponse): Self = this.set("conversationLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversationLogs: Self = this.set("conversationLogs", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLastUpdatedDate(value: Timestamp): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
+    @scala.inline
+    def setName(value: AliasName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

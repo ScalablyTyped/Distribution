@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StackData extends js.Object {
-  var column: js.UndefOr[Double] = js.undefined
-  var constructor: js.UndefOr[Boolean] = js.undefined
-  var evalOrigin: js.UndefOr[String] = js.undefined
-  var file: js.UndefOr[String] = js.undefined
-  var function: js.UndefOr[String] = js.undefined
-  var line: js.UndefOr[Double] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
-  var native: js.UndefOr[Boolean] = js.undefined
+  var column: js.UndefOr[Double] = js.native
+  var constructor: js.UndefOr[Boolean] = js.native
+  var evalOrigin: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.native
+  var line: js.UndefOr[Double] = js.native
+  var method: js.UndefOr[String] = js.native
+  var native: js.UndefOr[Boolean] = js.native
 }
 
 object StackData {
   @scala.inline
-  def apply(
-    column: js.UndefOr[Double] = js.undefined,
-    constructor: js.UndefOr[Boolean] = js.undefined,
-    evalOrigin: String = null,
-    file: String = null,
-    function: String = null,
-    line: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    native: js.UndefOr[Boolean] = js.undefined
-  ): StackData = {
+  def apply(): StackData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(constructor)) __obj.updateDynamic("constructor")(constructor.get.asInstanceOf[js.Any])
-    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(line)) __obj.updateDynamic("line")(line.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackData]
   }
+  @scala.inline
+  implicit class StackDataOps[Self <: StackData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumn(value: Double): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setConstructor(value: Boolean): Self = this.set("constructor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    @scala.inline
+    def setEvalOrigin(value: String): Self = this.set("evalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvalOrigin: Self = this.set("evalOrigin", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunction: Self = this.set("function", js.undefined)
+    @scala.inline
+    def setLine(value: Double): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setNative(value: Boolean): Self = this.set("native", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNative: Self = this.set("native", js.undefined)
+  }
+  
 }
 

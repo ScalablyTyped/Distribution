@@ -104,7 +104,7 @@ object mod extends js.Object {
       * @param group A D3 selection of SVG G elements.
       * @param selection Use null to clear the active brush selection.
       */
-    def move(group: Selection_[SVGGElement, Datum, _, _]): Unit = js.native
+    def move(group: Selection_[SVGGElement, Datum, _, _], selection: Null): Unit = js.native
     /**
       * Sets the active selection of the brush on the specified SVG G element(s) selection
       * to the provided array.
@@ -157,6 +157,16 @@ object mod extends js.Object {
       */
     def move(group: TransitionLike[SVGGElement, Datum], selection: ValueFn[SVGGElement, Datum, BrushSelection_]): Unit = js.native
     /**
+      * Returns the first currently-assigned listener matching the specified typenames, if any.
+      *
+      * @param typenames The typenames is a string containing one or more typename separated by whitespace.
+      * Each typename is a type, optionally followed by a period (.) and a name, such as "brush.foo"" and "brush.bar";
+      * the name allows multiple listeners to be registered for the same type. The type must be one of the following:
+      * start (at the start of a brush gesture, such as on mousedown), brush (when the brush moves, such as on mousemove), or
+      * end (at the end of a brush gesture, such as on mouseup.)
+      */
+    def on(typenames: String): js.UndefOr[ValueFn[SVGGElement, Datum, Unit]] = js.native
+    /**
       * Removes the current event listeners for the specified typenames, if any.
       *
       * @param typenames The typenames is a string containing one or more typename separated by whitespace.
@@ -166,7 +176,7 @@ object mod extends js.Object {
       * end (at the end of a brush gesture, such as on mouseup.)
       * @param listener Use null to remove the listener.
       */
-    def on(typenames: String): this.type = js.native
+    def on(typenames: String, listener: Null): this.type = js.native
     /**
       * Sets the event listener for the specified typenames and returns the brush.
       * If an event listener was already registered for the same type and name,
@@ -183,17 +193,6 @@ object mod extends js.Object {
       * with this as the current DOM element.
       */
     def on(typenames: String, listener: ValueFn[SVGGElement, Datum, Unit]): this.type = js.native
-    /**
-      * Returns the first currently-assigned listener matching the specified typenames, if any.
-      *
-      * @param typenames The typenames is a string containing one or more typename separated by whitespace.
-      * Each typename is a type, optionally followed by a period (.) and a name, such as "brush.foo"" and "brush.bar";
-      * the name allows multiple listeners to be registered for the same type. The type must be one of the following:
-      * start (at the start of a brush gesture, such as on mousedown), brush (when the brush moves, such as on mousemove), or
-      * end (at the end of a brush gesture, such as on mouseup.)
-      */
-    @JSName("on")
-    def on_Union(typenames: String): js.UndefOr[ValueFn[SVGGElement, Datum, Unit]] = js.native
   }
   
   @js.native

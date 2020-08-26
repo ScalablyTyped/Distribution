@@ -20,11 +20,26 @@ object mkdtemp extends js.Object {
   ): Unit = js.native
   def apply(
     prefix: String,
-    options: js.UndefOr[`1` | BufferEncoding | Encoding | Null | String],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
   ): Unit = js.native
   def apply(prefix: String, options: String): js.Promise[String | Buffer] = js.native
+  def apply(
+    prefix: String,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    prefix: String,
+    options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* folder */ String), Unit]
+  ): Unit = js.native
   def apply(prefix: String, options: Encoding): js.Promise[String] = js.native
+  def apply(
+    prefix: String,
+    options: Encoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
+  ): Unit = js.native
   def apply(prefix: String, options: `0`): js.Promise[Buffer] = js.native
   def apply(
     prefix: String,
@@ -32,6 +47,16 @@ object mkdtemp extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ Buffer, Unit]
   ): Unit = js.native
   def apply(prefix: String, options: `1`): js.Promise[String | Buffer] = js.native
+  def apply(
+    prefix: String,
+    options: `1`,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String | Buffer, Unit]
+  ): Unit = js.native
   def apply(prefix: String, options: BufferEncoding): js.Promise[String] = js.native
+  def apply(
+    prefix: String,
+    options: BufferEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* folder */ String, Unit]
+  ): Unit = js.native
 }
 

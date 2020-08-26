@@ -28,6 +28,7 @@ class ResourceThreatlistupdates protected () extends js.Object {
     */
   def fetch(): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def fetch(callback: BodyResponseCallback[SchemaFetchThreatListUpdatesResponse]): Unit = js.native
+  def fetch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def fetch(params: ParamsResourceThreatlistupdatesFetch): GaxiosPromise[SchemaFetchThreatListUpdatesResponse] = js.native
   def fetch(
     params: ParamsResourceThreatlistupdatesFetch,

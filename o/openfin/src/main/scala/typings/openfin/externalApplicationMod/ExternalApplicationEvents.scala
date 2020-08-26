@@ -9,9 +9,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExternalApplicationEvents extends BaseEventMap {
-  var connected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.connected]
-  var disconnected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.disconnected]
+  var connected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.connected] = js.native
+  var disconnected: RuntimeEvent[externalapplication, typings.openfin.openfinStrings.disconnected] = js.native
 }
 
 object ExternalApplicationEvents {
@@ -25,5 +26,22 @@ object ExternalApplicationEvents {
     val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], disconnected = disconnected.asInstanceOf[js.Any], listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalApplicationEvents]
   }
+  @scala.inline
+  implicit class ExternalApplicationEventsOps[Self <: ExternalApplicationEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnected(value: RuntimeEvent[externalapplication, connected]): Self = this.set("connected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisconnected(value: RuntimeEvent[externalapplication, disconnected]): Self = this.set("disconnected", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -39,24 +39,54 @@ trait BucketCriteriaAdditionalProperties extends js.Object {
 
 object BucketCriteriaAdditionalProperties {
   @scala.inline
-  def apply(
-    eq: listOfString = null,
-    gt: js.UndefOr[long] = js.undefined,
-    gte: js.UndefOr[long] = js.undefined,
-    lt: js.UndefOr[long] = js.undefined,
-    lte: js.UndefOr[long] = js.undefined,
-    neq: listOfString = null,
-    prefix: string = null
-  ): BucketCriteriaAdditionalProperties = {
+  def apply(): BucketCriteriaAdditionalProperties = {
     val __obj = js.Dynamic.literal()
-    if (eq != null) __obj.updateDynamic("eq")(eq.asInstanceOf[js.Any])
-    if (!js.isUndefined(gt)) __obj.updateDynamic("gt")(gt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gte)) __obj.updateDynamic("gte")(gte.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lt)) __obj.updateDynamic("lt")(lt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lte)) __obj.updateDynamic("lte")(lte.get.asInstanceOf[js.Any])
-    if (neq != null) __obj.updateDynamic("neq")(neq.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketCriteriaAdditionalProperties]
   }
+  @scala.inline
+  implicit class BucketCriteriaAdditionalPropertiesOps[Self <: BucketCriteriaAdditionalProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEqVarargs(value: string*): Self = this.set("eq", js.Array(value :_*))
+    @scala.inline
+    def setEq(value: listOfString): Self = this.set("eq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEq: Self = this.set("eq", js.undefined)
+    @scala.inline
+    def setGt(value: long): Self = this.set("gt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGt: Self = this.set("gt", js.undefined)
+    @scala.inline
+    def setGte(value: long): Self = this.set("gte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGte: Self = this.set("gte", js.undefined)
+    @scala.inline
+    def setLt(value: long): Self = this.set("lt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLt: Self = this.set("lt", js.undefined)
+    @scala.inline
+    def setLte(value: long): Self = this.set("lte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLte: Self = this.set("lte", js.undefined)
+    @scala.inline
+    def setNeqVarargs(value: string*): Self = this.set("neq", js.Array(value :_*))
+    @scala.inline
+    def setNeq(value: listOfString): Self = this.set("neq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeq: Self = this.set("neq", js.undefined)
+    @scala.inline
+    def setPrefix(value: string): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+  }
+  
 }
 

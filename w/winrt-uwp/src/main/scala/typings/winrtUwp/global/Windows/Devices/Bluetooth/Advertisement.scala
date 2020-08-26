@@ -1,11 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Bluetooth
 
-import typings.std.Date
-import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFlags
-import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatus
-import typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,45 +13,7 @@ object Advertisement extends js.Object {
   @js.native
   /** Creates a new BluetoothLEAdvertisement object. */
   class BluetoothLEAdvertisement ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement {
-    /** Gets the list of raw data sections. */
-    /* CompleteClass */
-    override var dataSections: IVector[
-        typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataSection
-      ] = js.native
-    /** Bluetooth LE advertisement flags. */
-    /* CompleteClass */
-    override var flags: BluetoothLEAdvertisementFlags = js.native
-    /** The local name contained within the advertisement. */
-    /* CompleteClass */
-    override var localName: String = js.native
-    /** Gets the list of manufacturer-specific data sections in a BluetoothLEAdvertisement . */
-    /* CompleteClass */
-    override var manufacturerData: IVector[
-        typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEManufacturerData
-      ] = js.native
-    /** The list of service UUIDs in 128-bit GUID format in a BluetoothLEAdvertisement . */
-    /* CompleteClass */
-    override var serviceUuids: IVector[String] = js.native
-    /**
-      * Return a list of all manufacturer data sections in the BluetoothLEAdvertisement payload matching the specified company ID.
-      * @param companyId The company identifier code defined by the Bluetooth Special Interest Group (SIG).
-      * @return A vector of BluetoothLEManufacturerData contained within the payload.
-      */
-    /* CompleteClass */
-    override def getManufacturerDataByCompanyId(companyId: Double): IVectorView[
-        typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEManufacturerData
-      ] = js.native
-    /**
-      * Return a list of advertisement data sections that matches a given advertisement section type in a BluetoothLEAdvertisement .
-      * @param type The advertisement section type
-      * @return A vector of all the BluetoothLEAdvertisementDataSection matching the given advertisement type.
-      */
-    /* CompleteClass */
-    override def getSectionsByType(`type`: Double): IVectorView[
-        typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataSection
-      ] = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement
   
   /** A Bluetooth LE advertisement byte pattern for filters to match. */
   @js.native
@@ -71,15 +27,6 @@ object Advertisement extends js.Object {
       * @param data The Bluetooth LE advertisement data byte pattern to match.
       */
     def this(dataType: Double, offset: Double, data: IBuffer) = this()
-    /** The Bluetooth LE advertisement data byte pattern to match. */
-    /* CompleteClass */
-    override var data: IBuffer = js.native
-    /** The Bluetooth LE advertisement data type defined by the Bluetooth Special Interest Group (SIG) to match. */
-    /* CompleteClass */
-    override var dataType: Double = js.native
-    /** The offset of byte pattern from beginning of advertisement data section. */
-    /* CompleteClass */
-    override var offset: Double = js.native
   }
   
   /** A Bluetooth LE advertisement section. */
@@ -93,12 +40,6 @@ object Advertisement extends js.Object {
       * @param data The Bluetooth LE advertisement data payload.
       */
     def this(dataType: Double, data: IBuffer) = this()
-    /** The Bluetooth LE advertisement data payload. */
-    /* CompleteClass */
-    override var data: IBuffer = js.native
-    /** The Bluetooth LE advertisement data type as defined by the Bluetooth Special Interest Group (SIG). */
-    /* CompleteClass */
-    override var dataType: Double = js.native
   }
   
   /** Some of the Bluetooth LE advertisement types defined in the Generic Access Profile (GAP) by the Bluetooth Special Interest Group (SIG). */
@@ -110,16 +51,7 @@ object Advertisement extends js.Object {
   @js.native
   /** Creates a new BluetoothLEAdvertisementFilter object. */
   class BluetoothLEAdvertisementFilter ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFilter {
-    /** A BluetoothLEAdvertisement object that can be applied as filters to received Bluetooth LE advertisements. */
-    /* CompleteClass */
-    override var advertisement: typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement = js.native
-    /** Gets a vector of byte patterns with offsets to match advertisement sections in a received Bluetooth LE advertisement. */
-    /* CompleteClass */
-    override var bytePatterns: IVector[
-        typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementBytePattern
-      ] = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFilter
   
   /** An object to send Bluetooth Low Energy (LE) advertisements. */
   @js.native
@@ -136,35 +68,12 @@ object Advertisement extends js.Object {
   /** Provides data for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
   @js.native
   abstract class BluetoothLEAdvertisementPublisherStatusChangedEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
-    /** Gets the error status for a StatusChanged event on a BluetoothLEAdvertisementPublisher . */
-    /* CompleteClass */
-    override var error: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothError = js.native
-    /** Gets the new status of the BluetoothLEAdvertisementPublisher . */
-    /* CompleteClass */
-    override var status: BluetoothLEAdvertisementPublisherStatus = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs
   
   /** Provides data for a Received event on a BluetoothLEAdvertisementWatcher . */
   @js.native
   abstract class BluetoothLEAdvertisementReceivedEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementReceivedEventArgs {
-    /** Gets the Bluetooth LE advertisement payload data received. */
-    /* CompleteClass */
-    override var advertisement: typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement = js.native
-    /** Gets the type of the received Bluetooth LE advertisement packet. */
-    /* CompleteClass */
-    override var advertisementType: BluetoothLEAdvertisementType = js.native
-    /** Gets the Bluetooth address of the device sending the Bluetooth LE advertisement. */
-    /* CompleteClass */
-    override var bluetoothAddress: Double = js.native
-    /** Gets the received signal strength indicator (RSSI) value, in dBm, for this received Bluetooth LE advertisement event. */
-    /* CompleteClass */
-    override var rawSignalStrengthInDBm: Double = js.native
-    /** Gets the timestamp when the Received event occurred. */
-    /* CompleteClass */
-    override var timestamp: Date = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementReceivedEventArgs
   
   /** An object to receive Bluetooth Low Energy (LE) advertisements. */
   @js.native
@@ -181,11 +90,7 @@ object Advertisement extends js.Object {
   /** Provides data for a Stopped event on a BluetoothLEAdvertisementWatcher . */
   @js.native
   abstract class BluetoothLEAdvertisementWatcherStoppedEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs {
-    /** Gets the error status for Stopped event. */
-    /* CompleteClass */
-    override var error: typings.winrtUwp.Windows.Devices.Bluetooth.BluetoothError = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs
   
   /** A Bluetooth LE manufacturer-specific data section (one particular type of LE advertisement section) */
   @js.native
@@ -198,12 +103,6 @@ object Advertisement extends js.Object {
       * @param data Bluetooth LE manufacturer-specific section data.
       */
     def this(companyId: Double, data: IBuffer) = this()
-    /** The Bluetooth LE company identifier code as defined by the Bluetooth Special Interest Group (SIG). */
-    /* CompleteClass */
-    override var companyId: Double = js.native
-    /** Bluetooth LE manufacturer-specific section data. */
-    /* CompleteClass */
-    override var data: IBuffer = js.native
   }
   
   /* static members */

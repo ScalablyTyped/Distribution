@@ -5,69 +5,114 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResponseHeaders
   extends /* header */ StringDictionary[js.UndefOr[String | Double]] {
-  var `cache-control`: js.UndefOr[String] = js.undefined
-  var `content-length`: js.UndefOr[Double] = js.undefined
-  var `content-type`: js.UndefOr[String] = js.undefined
-  var date: js.UndefOr[String] = js.undefined
-  var etag: js.UndefOr[String] = js.undefined
-  var `last-modified`: js.UndefOr[String] = js.undefined
-  var link: js.UndefOr[String] = js.undefined
-  var location: js.UndefOr[String] = js.undefined
-  var server: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[String] = js.undefined
-  var vary: js.UndefOr[String] = js.undefined
-  var `x-github-mediatype`: js.UndefOr[String] = js.undefined
-  var `x-github-request-id`: js.UndefOr[String] = js.undefined
-  var `x-oauth-scopes`: js.UndefOr[String] = js.undefined
-  var `x-ratelimit-limit`: js.UndefOr[String] = js.undefined
-  var `x-ratelimit-remaining`: js.UndefOr[String] = js.undefined
-  var `x-ratelimit-reset`: js.UndefOr[String] = js.undefined
+  var `cache-control`: js.UndefOr[String] = js.native
+  var `content-length`: js.UndefOr[Double] = js.native
+  var `content-type`: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.native
+  var `last-modified`: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.native
+  var server: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.native
+  var vary: js.UndefOr[String] = js.native
+  var `x-github-mediatype`: js.UndefOr[String] = js.native
+  var `x-github-request-id`: js.UndefOr[String] = js.native
+  var `x-oauth-scopes`: js.UndefOr[String] = js.native
+  var `x-ratelimit-limit`: js.UndefOr[String] = js.native
+  var `x-ratelimit-remaining`: js.UndefOr[String] = js.native
+  var `x-ratelimit-reset`: js.UndefOr[String] = js.native
 }
 
 object ResponseHeaders {
   @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.UndefOr[String | Double]] = null,
-    `cache-control`: String = null,
-    `content-length`: js.UndefOr[Double] = js.undefined,
-    `content-type`: String = null,
-    date: String = null,
-    etag: String = null,
-    `last-modified`: String = null,
-    link: String = null,
-    location: String = null,
-    server: String = null,
-    status: String = null,
-    vary: String = null,
-    `x-github-mediatype`: String = null,
-    `x-github-request-id`: String = null,
-    `x-oauth-scopes`: String = null,
-    `x-ratelimit-limit`: String = null,
-    `x-ratelimit-remaining`: String = null,
-    `x-ratelimit-reset`: String = null
-  ): ResponseHeaders = {
+  def apply(): ResponseHeaders = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`cache-control` != null) __obj.updateDynamic("cache-control")(`cache-control`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`content-length`)) __obj.updateDynamic("content-length")(`content-length`.get.asInstanceOf[js.Any])
-    if (`content-type` != null) __obj.updateDynamic("content-type")(`content-type`.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (`last-modified` != null) __obj.updateDynamic("last-modified")(`last-modified`.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (vary != null) __obj.updateDynamic("vary")(vary.asInstanceOf[js.Any])
-    if (`x-github-mediatype` != null) __obj.updateDynamic("x-github-mediatype")(`x-github-mediatype`.asInstanceOf[js.Any])
-    if (`x-github-request-id` != null) __obj.updateDynamic("x-github-request-id")(`x-github-request-id`.asInstanceOf[js.Any])
-    if (`x-oauth-scopes` != null) __obj.updateDynamic("x-oauth-scopes")(`x-oauth-scopes`.asInstanceOf[js.Any])
-    if (`x-ratelimit-limit` != null) __obj.updateDynamic("x-ratelimit-limit")(`x-ratelimit-limit`.asInstanceOf[js.Any])
-    if (`x-ratelimit-remaining` != null) __obj.updateDynamic("x-ratelimit-remaining")(`x-ratelimit-remaining`.asInstanceOf[js.Any])
-    if (`x-ratelimit-reset` != null) __obj.updateDynamic("x-ratelimit-reset")(`x-ratelimit-reset`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseHeaders]
   }
+  @scala.inline
+  implicit class ResponseHeadersOps[Self <: ResponseHeaders] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setCache-control`(value: String): Self = this.set("cache-control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteCache-control`: Self = this.set("cache-control", js.undefined)
+    @scala.inline
+    def `setContent-length`(value: Double): Self = this.set("content-length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteContent-length`: Self = this.set("content-length", js.undefined)
+    @scala.inline
+    def `setContent-type`(value: String): Self = this.set("content-type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteContent-type`: Self = this.set("content-type", js.undefined)
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def `setLast-modified`(value: String): Self = this.set("last-modified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLast-modified`: Self = this.set("last-modified", js.undefined)
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setServer(value: String): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServer: Self = this.set("server", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVary(value: String): Self = this.set("vary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVary: Self = this.set("vary", js.undefined)
+    @scala.inline
+    def `setX-github-mediatype`(value: String): Self = this.set("x-github-mediatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-github-mediatype`: Self = this.set("x-github-mediatype", js.undefined)
+    @scala.inline
+    def `setX-github-request-id`(value: String): Self = this.set("x-github-request-id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-github-request-id`: Self = this.set("x-github-request-id", js.undefined)
+    @scala.inline
+    def `setX-oauth-scopes`(value: String): Self = this.set("x-oauth-scopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-oauth-scopes`: Self = this.set("x-oauth-scopes", js.undefined)
+    @scala.inline
+    def `setX-ratelimit-limit`(value: String): Self = this.set("x-ratelimit-limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-ratelimit-limit`: Self = this.set("x-ratelimit-limit", js.undefined)
+    @scala.inline
+    def `setX-ratelimit-remaining`(value: String): Self = this.set("x-ratelimit-remaining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-ratelimit-remaining`: Self = this.set("x-ratelimit-remaining", js.undefined)
+    @scala.inline
+    def `setX-ratelimit-reset`(value: String): Self = this.set("x-ratelimit-reset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteX-ratelimit-reset`: Self = this.set("x-ratelimit-reset", js.undefined)
+  }
+  
 }
 

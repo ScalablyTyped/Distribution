@@ -26,6 +26,7 @@ object anon extends js.Object {
   @js.native
   trait Fn0 extends js.Object {
     def apply(command: String): ChildProcessWithoutNullStreams = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
     def apply(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
     def apply(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
     def apply(
@@ -53,6 +54,9 @@ object anon extends js.Object {
   @js.native
   trait FnCallCommandArgsOptions extends js.Object {
     def apply(command: String): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
+    def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
     def apply(command: String, args: js.Array[String]): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
     def apply(command: String, args: js.Array[String], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CookieJar_ () extends js.Object {
   def this(store: Store) = this()
+  def this(store: js.UndefOr[scala.Nothing], options: Options) = this()
   def this(store: Store, options: Options) = this()
   def clone(cb: js.Function2[/* err */ Error | Null, /* newJar */ this.type, Unit]): Unit = js.native
   def clone(store: Store): js.Promise[CookieJar] = js.native

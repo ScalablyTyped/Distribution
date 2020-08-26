@@ -14,10 +14,26 @@ trait CreateLayerResult extends js.Object {
 
 object CreateLayerResult {
   @scala.inline
-  def apply(LayerId: String = null): CreateLayerResult = {
+  def apply(): CreateLayerResult = {
     val __obj = js.Dynamic.literal()
-    if (LayerId != null) __obj.updateDynamic("LayerId")(LayerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLayerResult]
   }
+  @scala.inline
+  implicit class CreateLayerResultOps[Self <: CreateLayerResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("LayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("LayerId", js.undefined)
+  }
+  
 }
 

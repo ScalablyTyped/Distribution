@@ -26,11 +26,32 @@ trait SchemaCreativeAssetSelection extends js.Object {
 
 object SchemaCreativeAssetSelection {
   @scala.inline
-  def apply(defaultAssetId: String = null, rules: js.Array[SchemaRule] = null): SchemaCreativeAssetSelection = {
+  def apply(): SchemaCreativeAssetSelection = {
     val __obj = js.Dynamic.literal()
-    if (defaultAssetId != null) __obj.updateDynamic("defaultAssetId")(defaultAssetId.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeAssetSelection]
   }
+  @scala.inline
+  implicit class SchemaCreativeAssetSelectionOps[Self <: SchemaCreativeAssetSelection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultAssetId(value: String): Self = this.set("defaultAssetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAssetId: Self = this.set("defaultAssetId", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: SchemaRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[SchemaRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

@@ -61,7 +61,7 @@ trait CertificateAuthorityState extends js.Object {
   /**
     * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The type of the certificate authority. Defaults to `SUBORDINATE`. Valid values: `ROOT` and `SUBORDINATE`.
     */
@@ -70,38 +70,78 @@ trait CertificateAuthorityState extends js.Object {
 
 object CertificateAuthorityState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    certificate: Input[String] = null,
-    certificateAuthorityConfiguration: Input[CertificateAuthorityCertificateAuthorityConfiguration] = null,
-    certificateChain: Input[String] = null,
-    certificateSigningRequest: Input[String] = null,
-    enabled: Input[Boolean] = null,
-    notAfter: Input[String] = null,
-    notBefore: Input[String] = null,
-    permanentDeletionTimeInDays: Input[Double] = null,
-    revocationConfiguration: Input[CertificateAuthorityRevocationConfiguration] = null,
-    serial: Input[String] = null,
-    status: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    `type`: Input[String] = null
-  ): CertificateAuthorityState = {
+  def apply(): CertificateAuthorityState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (certificateAuthorityConfiguration != null) __obj.updateDynamic("certificateAuthorityConfiguration")(certificateAuthorityConfiguration.asInstanceOf[js.Any])
-    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
-    if (certificateSigningRequest != null) __obj.updateDynamic("certificateSigningRequest")(certificateSigningRequest.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (notAfter != null) __obj.updateDynamic("notAfter")(notAfter.asInstanceOf[js.Any])
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
-    if (permanentDeletionTimeInDays != null) __obj.updateDynamic("permanentDeletionTimeInDays")(permanentDeletionTimeInDays.asInstanceOf[js.Any])
-    if (revocationConfiguration != null) __obj.updateDynamic("revocationConfiguration")(revocationConfiguration.asInstanceOf[js.Any])
-    if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthorityState]
   }
+  @scala.inline
+  implicit class CertificateAuthorityStateOps[Self <: CertificateAuthorityState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCertificate(value: Input[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setCertificateAuthorityConfiguration(value: Input[CertificateAuthorityCertificateAuthorityConfiguration]): Self = this.set("certificateAuthorityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthorityConfiguration: Self = this.set("certificateAuthorityConfiguration", js.undefined)
+    @scala.inline
+    def setCertificateChain(value: Input[String]): Self = this.set("certificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateChain: Self = this.set("certificateChain", js.undefined)
+    @scala.inline
+    def setCertificateSigningRequest(value: Input[String]): Self = this.set("certificateSigningRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateSigningRequest: Self = this.set("certificateSigningRequest", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setNotAfter(value: Input[String]): Self = this.set("notAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAfter: Self = this.set("notAfter", js.undefined)
+    @scala.inline
+    def setNotBefore(value: Input[String]): Self = this.set("notBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotBefore: Self = this.set("notBefore", js.undefined)
+    @scala.inline
+    def setPermanentDeletionTimeInDays(value: Input[Double]): Self = this.set("permanentDeletionTimeInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermanentDeletionTimeInDays: Self = this.set("permanentDeletionTimeInDays", js.undefined)
+    @scala.inline
+    def setRevocationConfiguration(value: Input[CertificateAuthorityRevocationConfiguration]): Self = this.set("revocationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocationConfiguration: Self = this.set("revocationConfiguration", js.undefined)
+    @scala.inline
+    def setSerial(value: Input[String]): Self = this.set("serial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerial: Self = this.set("serial", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

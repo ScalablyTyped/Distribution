@@ -25,38 +25,78 @@ trait PartialClassNameMapDialog extends js.Object {
 
 object PartialClassNameMapDialog {
   @scala.inline
-  def apply(
-    container: String = null,
-    paper: String = null,
-    paperFullScreen: String = null,
-    paperFullWidth: String = null,
-    paperScrollBody: String = null,
-    paperScrollPaper: String = null,
-    paperWidthLg: String = null,
-    paperWidthMd: String = null,
-    paperWidthSm: String = null,
-    paperWidthXl: String = null,
-    paperWidthXs: String = null,
-    root: String = null,
-    scrollBody: String = null,
-    scrollPaper: String = null
-  ): PartialClassNameMapDialog = {
+  def apply(): PartialClassNameMapDialog = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (paper != null) __obj.updateDynamic("paper")(paper.asInstanceOf[js.Any])
-    if (paperFullScreen != null) __obj.updateDynamic("paperFullScreen")(paperFullScreen.asInstanceOf[js.Any])
-    if (paperFullWidth != null) __obj.updateDynamic("paperFullWidth")(paperFullWidth.asInstanceOf[js.Any])
-    if (paperScrollBody != null) __obj.updateDynamic("paperScrollBody")(paperScrollBody.asInstanceOf[js.Any])
-    if (paperScrollPaper != null) __obj.updateDynamic("paperScrollPaper")(paperScrollPaper.asInstanceOf[js.Any])
-    if (paperWidthLg != null) __obj.updateDynamic("paperWidthLg")(paperWidthLg.asInstanceOf[js.Any])
-    if (paperWidthMd != null) __obj.updateDynamic("paperWidthMd")(paperWidthMd.asInstanceOf[js.Any])
-    if (paperWidthSm != null) __obj.updateDynamic("paperWidthSm")(paperWidthSm.asInstanceOf[js.Any])
-    if (paperWidthXl != null) __obj.updateDynamic("paperWidthXl")(paperWidthXl.asInstanceOf[js.Any])
-    if (paperWidthXs != null) __obj.updateDynamic("paperWidthXs")(paperWidthXs.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (scrollBody != null) __obj.updateDynamic("scrollBody")(scrollBody.asInstanceOf[js.Any])
-    if (scrollPaper != null) __obj.updateDynamic("scrollPaper")(scrollPaper.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapDialog]
   }
+  @scala.inline
+  implicit class PartialClassNameMapDialogOps[Self <: PartialClassNameMapDialog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setPaper(value: String): Self = this.set("paper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaper: Self = this.set("paper", js.undefined)
+    @scala.inline
+    def setPaperFullScreen(value: String): Self = this.set("paperFullScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperFullScreen: Self = this.set("paperFullScreen", js.undefined)
+    @scala.inline
+    def setPaperFullWidth(value: String): Self = this.set("paperFullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperFullWidth: Self = this.set("paperFullWidth", js.undefined)
+    @scala.inline
+    def setPaperScrollBody(value: String): Self = this.set("paperScrollBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperScrollBody: Self = this.set("paperScrollBody", js.undefined)
+    @scala.inline
+    def setPaperScrollPaper(value: String): Self = this.set("paperScrollPaper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperScrollPaper: Self = this.set("paperScrollPaper", js.undefined)
+    @scala.inline
+    def setPaperWidthLg(value: String): Self = this.set("paperWidthLg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperWidthLg: Self = this.set("paperWidthLg", js.undefined)
+    @scala.inline
+    def setPaperWidthMd(value: String): Self = this.set("paperWidthMd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperWidthMd: Self = this.set("paperWidthMd", js.undefined)
+    @scala.inline
+    def setPaperWidthSm(value: String): Self = this.set("paperWidthSm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperWidthSm: Self = this.set("paperWidthSm", js.undefined)
+    @scala.inline
+    def setPaperWidthXl(value: String): Self = this.set("paperWidthXl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperWidthXl: Self = this.set("paperWidthXl", js.undefined)
+    @scala.inline
+    def setPaperWidthXs(value: String): Self = this.set("paperWidthXs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperWidthXs: Self = this.set("paperWidthXs", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setScrollBody(value: String): Self = this.set("scrollBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollBody: Self = this.set("scrollBody", js.undefined)
+    @scala.inline
+    def setScrollPaper(value: String): Self = this.set("scrollPaper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPaper: Self = this.set("scrollPaper", js.undefined)
+  }
+  
 }
 

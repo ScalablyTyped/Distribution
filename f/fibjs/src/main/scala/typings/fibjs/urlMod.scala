@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 object urlMod extends js.Object {
   def format(args: js.Object): String = js.native
   def parse(url: String): ClassUrlObject = js.native
+  def parse(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): ClassUrlObject = js.native
   def parse(url: String, parseQueryString: Boolean): ClassUrlObject = js.native
   def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): ClassUrlObject = js.native
 }

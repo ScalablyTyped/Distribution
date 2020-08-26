@@ -19,10 +19,33 @@ class TaskRouterCapability protected () extends js.Object {
   /* protected */ def _setupResource(): Unit = js.native
   /* private */ def _validateJWT(): Unit = js.native
   def addPolicy(url: String, method: String): Unit = js.native
+  def addPolicy(
+    url: String,
+    method: String,
+    allowed: js.UndefOr[scala.Nothing],
+    queryFilter: js.UndefOr[scala.Nothing],
+    postFilter: js.Any
+  ): Unit = js.native
+  def addPolicy(url: String, method: String, allowed: js.UndefOr[scala.Nothing], queryFilter: js.Any): Unit = js.native
+  def addPolicy(
+    url: String,
+    method: String,
+    allowed: js.UndefOr[scala.Nothing],
+    queryFilter: js.Any,
+    postFilter: js.Any
+  ): Unit = js.native
   def addPolicy(url: String, method: String, allowed: Boolean): Unit = js.native
+  def addPolicy(
+    url: String,
+    method: String,
+    allowed: Boolean,
+    queryFilter: js.UndefOr[scala.Nothing],
+    postFilter: js.Any
+  ): Unit = js.native
   def addPolicy(url: String, method: String, allowed: Boolean, queryFilter: js.Any): Unit = js.native
   def addPolicy(url: String, method: String, allowed: Boolean, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
   def allow(url: String, method: String): Unit = js.native
+  def allow(url: String, method: String, queryFilter: js.UndefOr[scala.Nothing], postFilter: js.Any): Unit = js.native
   def allow(url: String, method: String, queryFilter: js.Any): Unit = js.native
   def allow(url: String, method: String, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
   def allowDelete(): Unit = js.native
@@ -34,6 +57,7 @@ class TaskRouterCapability protected () extends js.Object {
   def allowWorkerActivityUpdates(): Unit = js.native
   def allowWorkerFetchAttributes(): Unit = js.native
   def deny(url: String, method: String): Unit = js.native
+  def deny(url: String, method: String, queryFilter: js.UndefOr[scala.Nothing], postFilter: js.Any): Unit = js.native
   def deny(url: String, method: String, queryFilter: js.Any): Unit = js.native
   def deny(url: String, method: String, queryFilter: js.Any, postFilter: js.Any): Unit = js.native
   def generate(ttl: Double): String = js.native

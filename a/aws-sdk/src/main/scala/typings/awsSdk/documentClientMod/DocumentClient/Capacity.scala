@@ -22,16 +22,34 @@ trait Capacity extends js.Object {
 
 object Capacity {
   @scala.inline
-  def apply(
-    CapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
-    ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined,
-    WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
-  ): Capacity = {
+  def apply(): Capacity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CapacityUnits)) __obj.updateDynamic("CapacityUnits")(CapacityUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadCapacityUnits)) __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(WriteCapacityUnits)) __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Capacity]
   }
+  @scala.inline
+  implicit class CapacityOps[Self <: Capacity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityUnits(value: ConsumedCapacityUnits): Self = this.set("CapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityUnits: Self = this.set("CapacityUnits", js.undefined)
+    @scala.inline
+    def setReadCapacityUnits(value: ConsumedCapacityUnits): Self = this.set("ReadCapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadCapacityUnits: Self = this.set("ReadCapacityUnits", js.undefined)
+    @scala.inline
+    def setWriteCapacityUnits(value: ConsumedCapacityUnits): Self = this.set("WriteCapacityUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteCapacityUnits: Self = this.set("WriteCapacityUnits", js.undefined)
+  }
+  
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined popmotion.popmotion/lib/observer/types.ObserverProps & {  init  :popmotion.popmotion/lib/action/types.ActionInit} */
+/* Inlined popmotion.popmotion/lib/observer/types.ObserverProps & {  init :popmotion.popmotion/lib/action/types.ActionInit} */
 @js.native
 trait ActionProps extends js.Object {
   var complete: js.UndefOr[Complete] = js.native

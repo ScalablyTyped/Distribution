@@ -4,86 +4,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormatCodeSettings extends EditorSettings {
-  val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterCommaDelimiter: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterConstructor: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterOpeningAndBeforeClosingEmptyBraces: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterSemicolonInForStatements: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.undefined
-  val insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.undefined
-  val placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.undefined
-  val placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.undefined
-  val semicolons: js.UndefOr[SemicolonPreference] = js.undefined
+  val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterCommaDelimiter: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterConstructor: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingEmptyBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterSemicolonInForStatements: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.native
+  val insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[Boolean] = js.native
+  val insertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.native
+  val insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.native
+  val placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.native
+  val placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.native
+  val semicolons: js.UndefOr[SemicolonPreference] = js.native
 }
 
 object FormatCodeSettings {
   @scala.inline
-  def apply(
-    baseIndentSize: js.UndefOr[Double] = js.undefined,
-    convertTabsToSpaces: js.UndefOr[Boolean] = js.undefined,
-    indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[Boolean] = js.undefined,
-    indentSize: js.UndefOr[Double] = js.undefined,
-    indentStyle: IndentStyle = null,
-    insertSpaceAfterCommaDelimiter: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterConstructor: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterOpeningAndBeforeClosingEmptyBraces: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterSemicolonInForStatements: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.undefined,
-    insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.undefined,
-    newLineCharacter: java.lang.String = null,
-    placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.undefined,
-    placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.undefined,
-    semicolons: SemicolonPreference = null,
-    tabSize: js.UndefOr[Double] = js.undefined,
-    trimTrailingWhitespace: js.UndefOr[Boolean] = js.undefined
-  ): FormatCodeSettings = {
+  def apply(): FormatCodeSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(baseIndentSize)) __obj.updateDynamic("baseIndentSize")(baseIndentSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(convertTabsToSpaces)) __obj.updateDynamic("convertTabsToSpaces")(convertTabsToSpaces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentMultiLineObjectLiteralBeginningOnBlankLine)) __obj.updateDynamic("indentMultiLineObjectLiteralBeginningOnBlankLine")(indentMultiLineObjectLiteralBeginningOnBlankLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentSize)) __obj.updateDynamic("indentSize")(indentSize.get.asInstanceOf[js.Any])
-    if (indentStyle != null) __obj.updateDynamic("indentStyle")(indentStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterCommaDelimiter)) __obj.updateDynamic("insertSpaceAfterCommaDelimiter")(insertSpaceAfterCommaDelimiter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterConstructor)) __obj.updateDynamic("insertSpaceAfterConstructor")(insertSpaceAfterConstructor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterFunctionKeywordForAnonymousFunctions)) __obj.updateDynamic("insertSpaceAfterFunctionKeywordForAnonymousFunctions")(insertSpaceAfterFunctionKeywordForAnonymousFunctions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterKeywordsInControlFlowStatements)) __obj.updateDynamic("insertSpaceAfterKeywordsInControlFlowStatements")(insertSpaceAfterKeywordsInControlFlowStatements.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterOpeningAndBeforeClosingEmptyBraces)) __obj.updateDynamic("insertSpaceAfterOpeningAndBeforeClosingEmptyBraces")(insertSpaceAfterOpeningAndBeforeClosingEmptyBraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces)) __obj.updateDynamic("insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces")(insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces)) __obj.updateDynamic("insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces")(insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets)) __obj.updateDynamic("insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets")(insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis)) __obj.updateDynamic("insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis")(insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces)) __obj.updateDynamic("insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces")(insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterSemicolonInForStatements)) __obj.updateDynamic("insertSpaceAfterSemicolonInForStatements")(insertSpaceAfterSemicolonInForStatements.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceAfterTypeAssertion)) __obj.updateDynamic("insertSpaceAfterTypeAssertion")(insertSpaceAfterTypeAssertion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceBeforeAndAfterBinaryOperators)) __obj.updateDynamic("insertSpaceBeforeAndAfterBinaryOperators")(insertSpaceBeforeAndAfterBinaryOperators.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceBeforeFunctionParenthesis)) __obj.updateDynamic("insertSpaceBeforeFunctionParenthesis")(insertSpaceBeforeFunctionParenthesis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertSpaceBeforeTypeAnnotation)) __obj.updateDynamic("insertSpaceBeforeTypeAnnotation")(insertSpaceBeforeTypeAnnotation.get.asInstanceOf[js.Any])
-    if (newLineCharacter != null) __obj.updateDynamic("newLineCharacter")(newLineCharacter.asInstanceOf[js.Any])
-    if (!js.isUndefined(placeOpenBraceOnNewLineForControlBlocks)) __obj.updateDynamic("placeOpenBraceOnNewLineForControlBlocks")(placeOpenBraceOnNewLineForControlBlocks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(placeOpenBraceOnNewLineForFunctions)) __obj.updateDynamic("placeOpenBraceOnNewLineForFunctions")(placeOpenBraceOnNewLineForFunctions.get.asInstanceOf[js.Any])
-    if (semicolons != null) __obj.updateDynamic("semicolons")(semicolons.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabSize)) __obj.updateDynamic("tabSize")(tabSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimTrailingWhitespace)) __obj.updateDynamic("trimTrailingWhitespace")(trimTrailingWhitespace.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatCodeSettings]
   }
+  @scala.inline
+  implicit class FormatCodeSettingsOps[Self <: FormatCodeSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndentMultiLineObjectLiteralBeginningOnBlankLine(value: Boolean): Self = this.set("indentMultiLineObjectLiteralBeginningOnBlankLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentMultiLineObjectLiteralBeginningOnBlankLine: Self = this.set("indentMultiLineObjectLiteralBeginningOnBlankLine", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterCommaDelimiter(value: Boolean): Self = this.set("insertSpaceAfterCommaDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterCommaDelimiter: Self = this.set("insertSpaceAfterCommaDelimiter", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterConstructor(value: Boolean): Self = this.set("insertSpaceAfterConstructor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterConstructor: Self = this.set("insertSpaceAfterConstructor", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterFunctionKeywordForAnonymousFunctions(value: Boolean): Self = this.set("insertSpaceAfterFunctionKeywordForAnonymousFunctions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterFunctionKeywordForAnonymousFunctions: Self = this.set("insertSpaceAfterFunctionKeywordForAnonymousFunctions", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterKeywordsInControlFlowStatements(value: Boolean): Self = this.set("insertSpaceAfterKeywordsInControlFlowStatements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterKeywordsInControlFlowStatements: Self = this.set("insertSpaceAfterKeywordsInControlFlowStatements", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterOpeningAndBeforeClosingEmptyBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingEmptyBraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterOpeningAndBeforeClosingEmptyBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingEmptyBraces", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces(value: Boolean): Self = this.set("insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: Self = this.set("insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterSemicolonInForStatements(value: Boolean): Self = this.set("insertSpaceAfterSemicolonInForStatements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterSemicolonInForStatements: Self = this.set("insertSpaceAfterSemicolonInForStatements", js.undefined)
+    @scala.inline
+    def setInsertSpaceAfterTypeAssertion(value: Boolean): Self = this.set("insertSpaceAfterTypeAssertion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceAfterTypeAssertion: Self = this.set("insertSpaceAfterTypeAssertion", js.undefined)
+    @scala.inline
+    def setInsertSpaceBeforeAndAfterBinaryOperators(value: Boolean): Self = this.set("insertSpaceBeforeAndAfterBinaryOperators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceBeforeAndAfterBinaryOperators: Self = this.set("insertSpaceBeforeAndAfterBinaryOperators", js.undefined)
+    @scala.inline
+    def setInsertSpaceBeforeFunctionParenthesis(value: Boolean): Self = this.set("insertSpaceBeforeFunctionParenthesis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceBeforeFunctionParenthesis: Self = this.set("insertSpaceBeforeFunctionParenthesis", js.undefined)
+    @scala.inline
+    def setInsertSpaceBeforeTypeAnnotation(value: Boolean): Self = this.set("insertSpaceBeforeTypeAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertSpaceBeforeTypeAnnotation: Self = this.set("insertSpaceBeforeTypeAnnotation", js.undefined)
+    @scala.inline
+    def setPlaceOpenBraceOnNewLineForControlBlocks(value: Boolean): Self = this.set("placeOpenBraceOnNewLineForControlBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceOpenBraceOnNewLineForControlBlocks: Self = this.set("placeOpenBraceOnNewLineForControlBlocks", js.undefined)
+    @scala.inline
+    def setPlaceOpenBraceOnNewLineForFunctions(value: Boolean): Self = this.set("placeOpenBraceOnNewLineForFunctions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceOpenBraceOnNewLineForFunctions: Self = this.set("placeOpenBraceOnNewLineForFunctions", js.undefined)
+    @scala.inline
+    def setSemicolons(value: SemicolonPreference): Self = this.set("semicolons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemicolons: Self = this.set("semicolons", js.undefined)
+  }
+  
 }
 

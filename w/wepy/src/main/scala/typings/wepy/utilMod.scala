@@ -22,6 +22,8 @@ object utilMod extends js.Object {
     @JSName("$isDeepEqual")
     def $isDeepEqual(a: js.Any, b: js.Any): Boolean = js.native
     @JSName("$isDeepEqual")
+    def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.UndefOr[scala.Nothing], bStack: js.Array[_]): Boolean = js.native
+    @JSName("$isDeepEqual")
     def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[_]): Boolean = js.native
     @JSName("$isDeepEqual")
     def $isDeepEqual(a: js.Any, b: js.Any, aStack: js.Array[_], bStack: js.Array[_]): Boolean = js.native
@@ -29,6 +31,8 @@ object utilMod extends js.Object {
     def $isEmpty(obj: js.Object): Boolean = js.native
     @JSName("$isEqual")
     def $isEqual(a: js.Any, b: js.Any): Boolean = js.native
+    @JSName("$isEqual")
+    def $isEqual(a: js.Any, b: js.Any, aStack: js.UndefOr[scala.Nothing], bStack: js.Array[_]): Boolean = js.native
     @JSName("$isEqual")
     def $isEqual(a: js.Any, b: js.Any, aStack: js.Array[_]): Boolean = js.native
     @JSName("$isEqual")

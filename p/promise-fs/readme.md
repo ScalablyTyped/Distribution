@@ -12,7 +12,7 @@ Wraps FS methods using Promise
 | Keywords           | promise, promisify, fs |
 | # releases         | 5 |
 | # dependents       | 24 |
-| # downloads        | 950237 |
+| # downloads        | 981425 |
 | # stars            | 0 |
 
 ## Links

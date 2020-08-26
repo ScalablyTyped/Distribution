@@ -49,10 +49,10 @@ trait GetVpcPeeringConnectionArgs extends js.Object {
     */
   val status: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags, each pair of which must exactly match
+    * A map of tags, each pair of which must exactly match
     * a pair on the desired VPC Peering Connection.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * The ID of the requester VPC of the specific VPC Peering Connection to retrieve.
     */
@@ -61,34 +61,72 @@ trait GetVpcPeeringConnectionArgs extends js.Object {
 
 object GetVpcPeeringConnectionArgs {
   @scala.inline
-  def apply(
-    cidrBlock: String = null,
-    filters: js.Array[GetVpcPeeringConnectionFilter] = null,
-    id: String = null,
-    ownerId: String = null,
-    peerCidrBlock: String = null,
-    peerOwnerId: String = null,
-    peerRegion: String = null,
-    peerVpcId: String = null,
-    region: String = null,
-    status: String = null,
-    tags: StringDictionary[js.Any] = null,
-    vpcId: String = null
-  ): GetVpcPeeringConnectionArgs = {
+  def apply(): GetVpcPeeringConnectionArgs = {
     val __obj = js.Dynamic.literal()
-    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
-    if (peerCidrBlock != null) __obj.updateDynamic("peerCidrBlock")(peerCidrBlock.asInstanceOf[js.Any])
-    if (peerOwnerId != null) __obj.updateDynamic("peerOwnerId")(peerOwnerId.asInstanceOf[js.Any])
-    if (peerRegion != null) __obj.updateDynamic("peerRegion")(peerRegion.asInstanceOf[js.Any])
-    if (peerVpcId != null) __obj.updateDynamic("peerVpcId")(peerVpcId.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcPeeringConnectionArgs]
   }
+  @scala.inline
+  implicit class GetVpcPeeringConnectionArgsOps[Self <: GetVpcPeeringConnectionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("cidrBlock", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: GetVpcPeeringConnectionFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetVpcPeeringConnectionFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    @scala.inline
+    def setPeerCidrBlock(value: String): Self = this.set("peerCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerCidrBlock: Self = this.set("peerCidrBlock", js.undefined)
+    @scala.inline
+    def setPeerOwnerId(value: String): Self = this.set("peerOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerOwnerId: Self = this.set("peerOwnerId", js.undefined)
+    @scala.inline
+    def setPeerRegion(value: String): Self = this.set("peerRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerRegion: Self = this.set("peerRegion", js.undefined)
+    @scala.inline
+    def setPeerVpcId(value: String): Self = this.set("peerVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcId: Self = this.set("peerVpcId", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

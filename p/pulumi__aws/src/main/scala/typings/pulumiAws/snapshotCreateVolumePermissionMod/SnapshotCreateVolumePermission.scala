@@ -42,8 +42,10 @@ object SnapshotCreateVolumePermission extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SnapshotCreateVolumePermission = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotCreateVolumePermission = js.native
   def get(name: String, id: Input[ID], state: SnapshotCreateVolumePermissionState): SnapshotCreateVolumePermission = js.native
   def get(
     name: String,

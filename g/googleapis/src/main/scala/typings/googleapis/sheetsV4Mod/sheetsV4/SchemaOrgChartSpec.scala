@@ -51,22 +51,46 @@ trait SchemaOrgChartSpec extends js.Object {
 
 object SchemaOrgChartSpec {
   @scala.inline
-  def apply(
-    labels: SchemaChartData = null,
-    nodeColor: SchemaColor = null,
-    nodeSize: String = null,
-    parentLabels: SchemaChartData = null,
-    selectedNodeColor: SchemaColor = null,
-    tooltips: SchemaChartData = null
-  ): SchemaOrgChartSpec = {
+  def apply(): SchemaOrgChartSpec = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (nodeColor != null) __obj.updateDynamic("nodeColor")(nodeColor.asInstanceOf[js.Any])
-    if (nodeSize != null) __obj.updateDynamic("nodeSize")(nodeSize.asInstanceOf[js.Any])
-    if (parentLabels != null) __obj.updateDynamic("parentLabels")(parentLabels.asInstanceOf[js.Any])
-    if (selectedNodeColor != null) __obj.updateDynamic("selectedNodeColor")(selectedNodeColor.asInstanceOf[js.Any])
-    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrgChartSpec]
   }
+  @scala.inline
+  implicit class SchemaOrgChartSpecOps[Self <: SchemaOrgChartSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabels(value: SchemaChartData): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setNodeColor(value: SchemaColor): Self = this.set("nodeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeColor: Self = this.set("nodeColor", js.undefined)
+    @scala.inline
+    def setNodeSize(value: String): Self = this.set("nodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeSize: Self = this.set("nodeSize", js.undefined)
+    @scala.inline
+    def setParentLabels(value: SchemaChartData): Self = this.set("parentLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentLabels: Self = this.set("parentLabels", js.undefined)
+    @scala.inline
+    def setSelectedNodeColor(value: SchemaColor): Self = this.set("selectedNodeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedNodeColor: Self = this.set("selectedNodeColor", js.undefined)
+    @scala.inline
+    def setTooltips(value: SchemaChartData): Self = this.set("tooltips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltips: Self = this.set("tooltips", js.undefined)
+  }
+  
 }
 

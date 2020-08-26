@@ -6,53 +6,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeolocateControlProps extends BaseControlProps {
-  var className: js.UndefOr[String] = js.undefined
-  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var onGeolocate: js.UndefOr[js.Function1[/* options */ PositionOptions, Unit]] = js.undefined
-  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
-  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
-  var positionOptions: js.UndefOr[typings.mapboxGl.mod.PositionOptions] = js.undefined
-  var showUserLocation: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var trackUserLocation: js.UndefOr[Boolean] = js.undefined
+  var auto: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.native
+  var label: js.UndefOr[String] = js.native
+  var onGeolocate: js.UndefOr[js.Function1[/* options */ PositionOptions, Unit]] = js.native
+  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.native
+  var positionOptions: js.UndefOr[typings.mapboxGl.mod.PositionOptions] = js.native
+  var showUserLocation: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var trackUserLocation: js.UndefOr[Boolean] = js.native
 }
 
 object GeolocateControlProps {
   @scala.inline
-  def apply(
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    fitBoundsOptions: FitBoundsOptions = null,
-    label: String = null,
-    onGeolocate: /* options */ PositionOptions => Unit = null,
-    onViewStateChange: /* info */ ViewStateChangeInfo => Unit = null,
-    onViewportChange: /* viewState */ ViewportProps => Unit = null,
-    positionOptions: typings.mapboxGl.mod.PositionOptions = null,
-    showUserLocation: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    trackUserLocation: js.UndefOr[Boolean] = js.undefined
-  ): GeolocateControlProps = {
+  def apply(): GeolocateControlProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onGeolocate != null) __obj.updateDynamic("onGeolocate")(js.Any.fromFunction1(onGeolocate))
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1(onViewStateChange))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction1(onViewportChange))
-    if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackUserLocation)) __obj.updateDynamic("trackUserLocation")(trackUserLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeolocateControlProps]
   }
+  @scala.inline
+  implicit class GeolocateControlPropsOps[Self <: GeolocateControlProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuto(value: Boolean): Self = this.set("auto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuto: Self = this.set("auto", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setFitBoundsOptions(value: FitBoundsOptions): Self = this.set("fitBoundsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFitBoundsOptions: Self = this.set("fitBoundsOptions", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOnGeolocate(value: /* options */ PositionOptions => Unit): Self = this.set("onGeolocate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnGeolocate: Self = this.set("onGeolocate", js.undefined)
+    @scala.inline
+    def setOnViewStateChange(value: /* info */ ViewStateChangeInfo => Unit): Self = this.set("onViewStateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnViewStateChange: Self = this.set("onViewStateChange", js.undefined)
+    @scala.inline
+    def setOnViewportChange(value: /* viewState */ ViewportProps => Unit): Self = this.set("onViewportChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnViewportChange: Self = this.set("onViewportChange", js.undefined)
+    @scala.inline
+    def setPositionOptions(value: typings.mapboxGl.mod.PositionOptions): Self = this.set("positionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionOptions: Self = this.set("positionOptions", js.undefined)
+    @scala.inline
+    def setShowUserLocation(value: Boolean): Self = this.set("showUserLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowUserLocation: Self = this.set("showUserLocation", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTrackUserLocation(value: Boolean): Self = this.set("trackUserLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackUserLocation: Self = this.set("trackUserLocation", js.undefined)
+  }
+  
 }
 

@@ -33,20 +33,42 @@ trait SchemaBuildBazelRemoteExecutionV2ServerCapabilities extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2ServerCapabilities {
   @scala.inline
-  def apply(
-    cacheCapabilities: SchemaBuildBazelRemoteExecutionV2CacheCapabilities = null,
-    deprecatedApiVersion: SchemaBuildBazelSemverSemVer = null,
-    executionCapabilities: SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities = null,
-    highApiVersion: SchemaBuildBazelSemverSemVer = null,
-    lowApiVersion: SchemaBuildBazelSemverSemVer = null
-  ): SchemaBuildBazelRemoteExecutionV2ServerCapabilities = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2ServerCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (cacheCapabilities != null) __obj.updateDynamic("cacheCapabilities")(cacheCapabilities.asInstanceOf[js.Any])
-    if (deprecatedApiVersion != null) __obj.updateDynamic("deprecatedApiVersion")(deprecatedApiVersion.asInstanceOf[js.Any])
-    if (executionCapabilities != null) __obj.updateDynamic("executionCapabilities")(executionCapabilities.asInstanceOf[js.Any])
-    if (highApiVersion != null) __obj.updateDynamic("highApiVersion")(highApiVersion.asInstanceOf[js.Any])
-    if (lowApiVersion != null) __obj.updateDynamic("lowApiVersion")(lowApiVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2ServerCapabilities]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2ServerCapabilitiesOps[Self <: SchemaBuildBazelRemoteExecutionV2ServerCapabilities] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheCapabilities(value: SchemaBuildBazelRemoteExecutionV2CacheCapabilities): Self = this.set("cacheCapabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheCapabilities: Self = this.set("cacheCapabilities", js.undefined)
+    @scala.inline
+    def setDeprecatedApiVersion(value: SchemaBuildBazelSemverSemVer): Self = this.set("deprecatedApiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecatedApiVersion: Self = this.set("deprecatedApiVersion", js.undefined)
+    @scala.inline
+    def setExecutionCapabilities(value: SchemaBuildBazelRemoteExecutionV2ExecutionCapabilities): Self = this.set("executionCapabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionCapabilities: Self = this.set("executionCapabilities", js.undefined)
+    @scala.inline
+    def setHighApiVersion(value: SchemaBuildBazelSemverSemVer): Self = this.set("highApiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighApiVersion: Self = this.set("highApiVersion", js.undefined)
+    @scala.inline
+    def setLowApiVersion(value: SchemaBuildBazelSemverSemVer): Self = this.set("lowApiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowApiVersion: Self = this.set("lowApiVersion", js.undefined)
+  }
+  
 }
 

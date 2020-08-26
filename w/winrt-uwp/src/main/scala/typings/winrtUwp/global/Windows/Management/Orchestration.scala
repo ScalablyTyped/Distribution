@@ -9,17 +9,11 @@ import scala.scalajs.js.annotation._
 object Orchestration extends js.Object {
   @js.native
   abstract class CurrentAppOrchestration ()
-    extends typings.winrtUwp.Windows.Management.Orchestration.CurrentAppOrchestration {
-     /* unmapped type */ /* CompleteClass */
-    override var startSingleAppMode: js.Any = js.native
-  }
+    extends typings.winrtUwp.Windows.Management.Orchestration.CurrentAppOrchestration
   
   @js.native
   abstract class SingleAppModeContext ()
-    extends typings.winrtUwp.Windows.Management.Orchestration.SingleAppModeContext {
-    /* CompleteClass */
-    override var close: js.Any = js.native
-  }
+    extends typings.winrtUwp.Windows.Management.Orchestration.SingleAppModeContext
   
   /* static members */
   @js.native

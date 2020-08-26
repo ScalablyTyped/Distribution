@@ -38,24 +38,52 @@ trait ElasticGpus extends js.Object {
 
 object ElasticGpus {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    ElasticGpuHealth: ElasticGpuHealth = null,
-    ElasticGpuId: String = null,
-    ElasticGpuState: ElasticGpuState = null,
-    ElasticGpuType: String = null,
-    InstanceId: String = null,
-    Tags: TagList = null
-  ): ElasticGpus = {
+  def apply(): ElasticGpus = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (ElasticGpuHealth != null) __obj.updateDynamic("ElasticGpuHealth")(ElasticGpuHealth.asInstanceOf[js.Any])
-    if (ElasticGpuId != null) __obj.updateDynamic("ElasticGpuId")(ElasticGpuId.asInstanceOf[js.Any])
-    if (ElasticGpuState != null) __obj.updateDynamic("ElasticGpuState")(ElasticGpuState.asInstanceOf[js.Any])
-    if (ElasticGpuType != null) __obj.updateDynamic("ElasticGpuType")(ElasticGpuType.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticGpus]
   }
+  @scala.inline
+  implicit class ElasticGpusOps[Self <: ElasticGpus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setElasticGpuHealth(value: ElasticGpuHealth): Self = this.set("ElasticGpuHealth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticGpuHealth: Self = this.set("ElasticGpuHealth", js.undefined)
+    @scala.inline
+    def setElasticGpuId(value: String): Self = this.set("ElasticGpuId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticGpuId: Self = this.set("ElasticGpuId", js.undefined)
+    @scala.inline
+    def setElasticGpuState(value: ElasticGpuState): Self = this.set("ElasticGpuState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticGpuState: Self = this.set("ElasticGpuState", js.undefined)
+    @scala.inline
+    def setElasticGpuType(value: String): Self = this.set("ElasticGpuType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticGpuType: Self = this.set("ElasticGpuType", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

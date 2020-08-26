@@ -22,16 +22,34 @@ trait StartPosition extends js.Object {
 
 object StartPosition {
   @scala.inline
-  def apply(
-    AbsoluteTime: Instant = null,
-    Id: ChatItemId = null,
-    MostRecent: js.UndefOr[MostRecent] = js.undefined
-  ): StartPosition = {
+  def apply(): StartPosition = {
     val __obj = js.Dynamic.literal()
-    if (AbsoluteTime != null) __obj.updateDynamic("AbsoluteTime")(AbsoluteTime.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(MostRecent)) __obj.updateDynamic("MostRecent")(MostRecent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPosition]
   }
+  @scala.inline
+  implicit class StartPositionOps[Self <: StartPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsoluteTime(value: Instant): Self = this.set("AbsoluteTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsoluteTime: Self = this.set("AbsoluteTime", js.undefined)
+    @scala.inline
+    def setId(value: ChatItemId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setMostRecent(value: MostRecent): Self = this.set("MostRecent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostRecent: Self = this.set("MostRecent", js.undefined)
+  }
+  
 }
 

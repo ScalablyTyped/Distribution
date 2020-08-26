@@ -6,11 +6,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Annotation extends Modifier {
-  def getJustification(): Justify
-  def setFont(family: String, size: Double, weight: String): Annotation
-  def setJustification(justification: Justify): Annotation
-  def setVerticalJustification(just: VerticalJustify): Annotation
+  def getJustification(): Justify = js.native
+  def setFont(family: String, size: Double, weight: String): Annotation = js.native
+  def setJustification(justification: Justify): Annotation = js.native
+  def setVerticalJustification(just: VerticalJustify): Annotation = js.native
 }
 
 @JSGlobal("Vex.Flow.Annotation")

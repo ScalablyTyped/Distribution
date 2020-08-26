@@ -23,10 +23,30 @@ trait DistributionDefaultCacheBehaviorForwardedValuesCookies extends js.Object {
 
 object DistributionDefaultCacheBehaviorForwardedValuesCookies {
   @scala.inline
-  def apply(forward: String, whitelistedNames: js.Array[String] = null): DistributionDefaultCacheBehaviorForwardedValuesCookies = {
+  def apply(forward: String): DistributionDefaultCacheBehaviorForwardedValuesCookies = {
     val __obj = js.Dynamic.literal(forward = forward.asInstanceOf[js.Any])
-    if (whitelistedNames != null) __obj.updateDynamic("whitelistedNames")(whitelistedNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionDefaultCacheBehaviorForwardedValuesCookies]
   }
+  @scala.inline
+  implicit class DistributionDefaultCacheBehaviorForwardedValuesCookiesOps[Self <: DistributionDefaultCacheBehaviorForwardedValuesCookies] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForward(value: String): Self = this.set("forward", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWhitelistedNamesVarargs(value: String*): Self = this.set("whitelistedNames", js.Array(value :_*))
+    @scala.inline
+    def setWhitelistedNames(value: js.Array[String]): Self = this.set("whitelistedNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhitelistedNames: Self = this.set("whitelistedNames", js.undefined)
+  }
+  
 }
 

@@ -41,6 +41,11 @@ object mod extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def gray(text: js.Any*): String = js.native
@@ -55,6 +60,11 @@ object mod extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -71,6 +81,11 @@ object mod extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def orange(text: js.Any*): String = js.native
@@ -85,6 +100,11 @@ object mod extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def orange(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -101,6 +121,11 @@ object mod extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def pink(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def purple(text: js.Any*): String = js.native
@@ -116,6 +141,11 @@ object mod extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def purple(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def red(text: js.Any*): String = js.native
@@ -130,6 +160,11 @@ object mod extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native

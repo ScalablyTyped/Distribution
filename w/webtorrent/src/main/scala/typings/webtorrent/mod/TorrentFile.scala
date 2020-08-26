@@ -1,8 +1,8 @@
 package typings.webtorrent.mod
 
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
 import typings.node.NodeJS.ReadableStream
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Blob
 import typings.std.Error
 import typings.std.HTMLElement
@@ -25,6 +25,11 @@ trait TorrentFile extends EventEmitter {
     rootElement: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
+  def appendTo(
+    rootElement: String,
+    opts: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+  ): Unit = js.native
   def appendTo(rootElement: String, opts: Autoplay): Unit = js.native
   def appendTo(
     rootElement: String,
@@ -34,6 +39,11 @@ trait TorrentFile extends EventEmitter {
   def appendTo(rootElement: HTMLElement): Unit = js.native
   def appendTo(
     rootElement: HTMLElement,
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+  ): Unit = js.native
+  def appendTo(
+    rootElement: HTMLElement,
+    opts: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
   def appendTo(rootElement: HTMLElement, opts: Autoplay): Unit = js.native
@@ -57,6 +67,11 @@ trait TorrentFile extends EventEmitter {
     rootElement: String,
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
+  def renderTo(
+    rootElement: String,
+    opts: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+  ): Unit = js.native
   def renderTo(rootElement: String, opts: Autoplay): Unit = js.native
   def renderTo(
     rootElement: String,
@@ -66,6 +81,11 @@ trait TorrentFile extends EventEmitter {
   def renderTo(rootElement: HTMLMediaElement): Unit = js.native
   def renderTo(
     rootElement: HTMLMediaElement,
+    callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
+  ): Unit = js.native
+  def renderTo(
+    rootElement: HTMLMediaElement,
+    opts: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ js.UndefOr[Error], /* element */ HTMLMediaElement, Unit]
   ): Unit = js.native
   def renderTo(rootElement: HTMLMediaElement, opts: Autoplay): Unit = js.native

@@ -14,6 +14,7 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def any(): Document[T] = js.native
   def byExample(example: Partial[Document[T]]): Cursor[Document[T]] = js.native
   def checksum(): CollectionChecksum = js.native
+  def checksum(withRevisions: js.UndefOr[scala.Nothing], withData: Boolean): CollectionChecksum = js.native
   def checksum(withRevisions: Boolean): CollectionChecksum = js.native
   def checksum(withRevisions: Boolean, withData: Boolean): CollectionChecksum = js.native
   def count(): Double = js.native
@@ -65,6 +66,7 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def remove(selector: DocumentLike, options: RemoveOptions): RemoveResult[_] = js.native
   def removeByExample(example: Partial[Document[T]]): Double = js.native
   def removeByExample(example: Partial[Document[T]], options: RemoveByExampleOptions): Double = js.native
+  def removeByExample(example: Partial[Document[T]], waitForSync: js.UndefOr[scala.Nothing], limit: Double): Double = js.native
   def removeByExample(example: Partial[Document[T]], waitForSync: Boolean): Double = js.native
   def removeByExample(example: Partial[Document[T]], waitForSync: Boolean, limit: Double): Double = js.native
   def rename(newName: String): Unit = js.native
@@ -80,6 +82,12 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def replace(selector: DocumentLike, data: DocumentData[T], options: ReplaceOptions): UpdateResult[T] = js.native
   def replaceByExample(example: Partial[Document[T]], newValue: DocumentData[T]): Double = js.native
   def replaceByExample(example: Partial[Document[T]], newValue: DocumentData[T], options: Limit): Double = js.native
+  def replaceByExample(
+    example: Partial[Document[T]],
+    newValue: DocumentData[T],
+    waitForSync: js.UndefOr[scala.Nothing],
+    limit: Double
+  ): Double = js.native
   def replaceByExample(example: Partial[Document[T]], newValue: DocumentData[T], waitForSync: Boolean): Double = js.native
   def replaceByExample(example: Partial[Document[T]], newValue: DocumentData[T], waitForSync: Boolean, limit: Double): Double = js.native
   def revision(): String = js.native
@@ -105,7 +113,34 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def update(selector: DocumentLike, data: Patch[Document[T]]): UpdateResult[T] = js.native
   def update(selector: DocumentLike, data: Patch[Document[T]], options: UpdateOptions): UpdateResult[T] = js.native
   def updateByExample(example: Partial[Document[T]], newValue: Patch[Document[T]]): Double = js.native
+  def updateByExample(
+    example: Partial[Document[T]],
+    newValue: Patch[Document[T]],
+    keepNull: js.UndefOr[scala.Nothing],
+    waitForSync: js.UndefOr[scala.Nothing],
+    limit: Double
+  ): Double = js.native
+  def updateByExample(
+    example: Partial[Document[T]],
+    newValue: Patch[Document[T]],
+    keepNull: js.UndefOr[scala.Nothing],
+    waitForSync: Boolean
+  ): Double = js.native
+  def updateByExample(
+    example: Partial[Document[T]],
+    newValue: Patch[Document[T]],
+    keepNull: js.UndefOr[scala.Nothing],
+    waitForSync: Boolean,
+    limit: Double
+  ): Double = js.native
   def updateByExample(example: Partial[Document[T]], newValue: Patch[Document[T]], keepNull: Boolean): Double = js.native
+  def updateByExample(
+    example: Partial[Document[T]],
+    newValue: Patch[Document[T]],
+    keepNull: Boolean,
+    waitForSync: js.UndefOr[scala.Nothing],
+    limit: Double
+  ): Double = js.native
   def updateByExample(
     example: Partial[Document[T]],
     newValue: Patch[Document[T]],

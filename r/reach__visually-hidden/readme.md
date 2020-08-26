@@ -10,12 +10,15 @@ Render text that is announced to screen readers but visually hidden.
 | ------------------ | :-------------: |
 | Full name          | @reach/visually-hidden |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 36 |
-| # downloads        | 634251 |
+| # releases         | 16 |
+| # dependents       | 41 |
+| # downloads        | 826324 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/reach/reach-ui#readme)
+- [Bugs](https://github.com/reach/reach-ui/issues)
+- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fvisually-hidden)
     
 

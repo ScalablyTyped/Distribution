@@ -10,9 +10,9 @@ A resizable and movable dock for Redux DevTools monitors
 | ------------------ | :-------------: |
 | Full name          | redux-devtools-dock-monitor |
 | Keywords           | redux, devtools, flux, react, hot reloading, time travel, live edit |
-| # releases         | 2 |
-| # dependents       | 95 |
-| # downloads        | 2266000 |
+| # releases         | 0 |
+| # dependents       | 96 |
+| # downloads        | 2277305 |
 | # stars            | 6 |
 
 ## Links

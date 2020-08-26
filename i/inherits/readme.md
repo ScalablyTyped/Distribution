@@ -10,8 +10,8 @@ Browser-friendly inheritance fully compatible with standard node.js inherits()
 | Full name          | inherits |
 | Keywords           | inheritance, class, klass, oop, object-oriented, inherits, browser, browserify |
 | # releases         | 2 |
-| # dependents       | 2063 |
-| # downloads        | 1111897856 |
+| # dependents       | 2072 |
+| # downloads        | 1151379284 |
 | # stars            | 46 |
 
 ## Links

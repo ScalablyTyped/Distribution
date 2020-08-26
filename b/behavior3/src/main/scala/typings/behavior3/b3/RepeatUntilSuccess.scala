@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * number of repetitions can be defined.
   *
   */
+@js.native
 trait RepeatUntilSuccess extends BaseNode
 
 object RepeatUntilSuccess {

@@ -23,6 +23,7 @@ import scala.scalajs.js.annotation._
   * To use, simply inject the historyService into any controller that needs it, and make
   * sure the umbraco.services module is accesible - which it should be by default.
   */
+@js.native
 trait IHistoryService extends js.Object {
   /**
     * @ngdoc method
@@ -38,7 +39,7 @@ trait IHistoryService extends js.Object {
     * @param {String} item.name friendly name for the history listing
     * @returns {Object} history item object
     */
-  def add(item: IHistoryItem): IHistoryItem
+  def add(item: IHistoryItem): IHistoryItem = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.historyService#getCurrent
@@ -47,7 +48,7 @@ trait IHistoryService extends js.Object {
     * @description
     * Method to return the current history collection.
     */
-  def getCurrent(): js.Array[IHistoryItem]
+  def getCurrent(): js.Array[IHistoryItem] = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.historyService#remove
@@ -58,7 +59,7 @@ trait IHistoryService extends js.Object {
     *
     * @param {Int} index index to remove item from
     */
-  def remove(index: Double): Unit
+  def remove(index: Double): Unit = js.native
   /**
     * @ngdoc method
     * @name umbraco.services.historyService#removeAll
@@ -67,7 +68,7 @@ trait IHistoryService extends js.Object {
     * @description
     * Removes all history items from the users history collection
     */
-  def removeAll(): Unit
+  def removeAll(): Unit = js.native
 }
 
 object IHistoryService {
@@ -81,5 +82,26 @@ object IHistoryService {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), getCurrent = js.Any.fromFunction0(getCurrent), remove = js.Any.fromFunction1(remove), removeAll = js.Any.fromFunction0(removeAll))
     __obj.asInstanceOf[IHistoryService]
   }
+  @scala.inline
+  implicit class IHistoryServiceOps[Self <: IHistoryService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: IHistoryItem => IHistoryItem): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetCurrent(value: () => js.Array[IHistoryItem]): Self = this.set("getCurrent", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemove(value: Double => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveAll(value: () => Unit): Self = this.set("removeAll", js.Any.fromFunction0(value))
+  }
+  
 }
 

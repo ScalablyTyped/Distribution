@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class ActiveInputStateEventData protected ()
   extends typings.chromecastCafSender.cast.framework.ActiveInputStateEventData {
   def this(activeInputState: typings.chromecastCafSender.cast.framework.ActiveInputState) = this()
-  /* CompleteClass */
-  override var activeInputState: typings.chromecastCafSender.cast.framework.ActiveInputState = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
 }
 

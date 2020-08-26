@@ -22,12 +22,34 @@ trait DescribeSecurityConfigurationOutput extends js.Object {
 
 object DescribeSecurityConfigurationOutput {
   @scala.inline
-  def apply(CreationDateTime: Date = null, Name: XmlString = null, SecurityConfiguration: String = null): DescribeSecurityConfigurationOutput = {
+  def apply(): DescribeSecurityConfigurationOutput = {
     val __obj = js.Dynamic.literal()
-    if (CreationDateTime != null) __obj.updateDynamic("CreationDateTime")(CreationDateTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecurityConfigurationOutput]
   }
+  @scala.inline
+  implicit class DescribeSecurityConfigurationOutputOps[Self <: DescribeSecurityConfigurationOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("CreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("CreationDateTime", js.undefined)
+    @scala.inline
+    def setName(value: XmlString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: String): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+  }
+  
 }
 

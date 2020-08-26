@@ -1,11 +1,10 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`picture-fill`
-import typings.arcgisJsApi.arcgisJsApiStrings.`simple-fill`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PictureFillSymbolProperties extends FillSymbolProperties {
   /**
     * The height of the image in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
@@ -14,13 +13,13 @@ trait PictureFillSymbolProperties extends FillSymbolProperties {
     *
     * @default 12
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * The URL to the image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#url)
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String] = js.native
   /**
     * The width of the image in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
     *
@@ -28,7 +27,7 @@ trait PictureFillSymbolProperties extends FillSymbolProperties {
     *
     * @default 12
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
   /**
     * The offset on the x-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
     *
@@ -36,7 +35,7 @@ trait PictureFillSymbolProperties extends FillSymbolProperties {
     *
     * @default 0
     */
-  var xoffset: js.UndefOr[Double | String] = js.undefined
+  var xoffset: js.UndefOr[Double | String] = js.native
   /**
     * The scale factor on the x axis of the symbol.
     *
@@ -44,7 +43,7 @@ trait PictureFillSymbolProperties extends FillSymbolProperties {
     *
     * @default 1
     */
-  var xscale: js.UndefOr[Double] = js.undefined
+  var xscale: js.UndefOr[Double] = js.native
   /**
     * The offset on the y-axis in pixels or points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
     *
@@ -52,7 +51,7 @@ trait PictureFillSymbolProperties extends FillSymbolProperties {
     *
     * @default 0
     */
-  var yoffset: js.UndefOr[Double | String] = js.undefined
+  var yoffset: js.UndefOr[Double | String] = js.native
   /**
     * The scale factor on the y axis of the symbol.
     *
@@ -60,35 +59,55 @@ trait PictureFillSymbolProperties extends FillSymbolProperties {
     *
     * @default 1
     */
-  var yscale: js.UndefOr[Double] = js.undefined
+  var yscale: js.UndefOr[Double] = js.native
 }
 
 object PictureFillSymbolProperties {
   @scala.inline
-  def apply(
-    color: Color_ | js.Array[Double] | String = null,
-    height: Double | String = null,
-    outline: SimpleLineSymbolProperties = null,
-    `type`: `simple-fill` | `picture-fill` = null,
-    url: String = null,
-    width: Double | String = null,
-    xoffset: Double | String = null,
-    xscale: js.UndefOr[Double] = js.undefined,
-    yoffset: Double | String = null,
-    yscale: js.UndefOr[Double] = js.undefined
-  ): PictureFillSymbolProperties = {
+  def apply(): PictureFillSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(xscale)) __obj.updateDynamic("xscale")(xscale.get.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(yscale)) __obj.updateDynamic("yscale")(yscale.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureFillSymbolProperties]
   }
+  @scala.inline
+  implicit class PictureFillSymbolPropertiesOps[Self <: PictureFillSymbolProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setXoffset(value: Double | String): Self = this.set("xoffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXoffset: Self = this.set("xoffset", js.undefined)
+    @scala.inline
+    def setXscale(value: Double): Self = this.set("xscale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXscale: Self = this.set("xscale", js.undefined)
+    @scala.inline
+    def setYoffset(value: Double | String): Self = this.set("yoffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYoffset: Self = this.set("yoffset", js.undefined)
+    @scala.inline
+    def setYscale(value: Double): Self = this.set("yscale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYscale: Self = this.set("yscale", js.undefined)
+  }
+  
 }
 

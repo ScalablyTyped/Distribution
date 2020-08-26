@@ -50,30 +50,62 @@ trait SnapshotDetail extends js.Object {
 
 object SnapshotDetail {
   @scala.inline
-  def apply(
-    Description: String = null,
-    DeviceName: String = null,
-    DiskImageSize: js.UndefOr[Double] = js.undefined,
-    Format: String = null,
-    Progress: String = null,
-    SnapshotId: String = null,
-    Status: String = null,
-    StatusMessage: String = null,
-    Url: String = null,
-    UserBucket: UserBucketDetails = null
-  ): SnapshotDetail = {
+  def apply(): SnapshotDetail = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DiskImageSize)) __obj.updateDynamic("DiskImageSize")(DiskImageSize.get.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (Progress != null) __obj.updateDynamic("Progress")(Progress.asInstanceOf[js.Any])
-    if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
-    if (UserBucket != null) __obj.updateDynamic("UserBucket")(UserBucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotDetail]
   }
+  @scala.inline
+  implicit class SnapshotDetailOps[Self <: SnapshotDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    @scala.inline
+    def setDiskImageSize(value: Double): Self = this.set("DiskImageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskImageSize: Self = this.set("DiskImageSize", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setProgress(value: String): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("Progress", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+    @scala.inline
+    def setUserBucket(value: UserBucketDetails): Self = this.set("UserBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserBucket: Self = this.set("UserBucket", js.undefined)
+  }
+  
 }
 

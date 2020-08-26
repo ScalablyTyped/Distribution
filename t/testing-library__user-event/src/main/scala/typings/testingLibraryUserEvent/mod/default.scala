@@ -12,9 +12,11 @@ import scala.scalajs.js.annotation._
 object default extends js.Object {
   def clear(element: TargetElement): Unit = js.native
   def click(element: TargetElement): Unit = js.native
+  def click(element: TargetElement, init: js.UndefOr[scala.Nothing], options: IClickOptions): Unit = js.native
   def click(element: TargetElement, init: MouseEventInit): Unit = js.native
   def click(element: TargetElement, init: MouseEventInit, options: IClickOptions): Unit = js.native
   def dblClick(element: TargetElement): Unit = js.native
+  def dblClick(element: TargetElement, init: js.UndefOr[scala.Nothing], options: IClickOptions): Unit = js.native
   def dblClick(element: TargetElement, init: MouseEventInit): Unit = js.native
   def dblClick(element: TargetElement, init: MouseEventInit, options: IClickOptions): Unit = js.native
   def deselectOptions(element: TargetElement, values: String): Unit = js.native
@@ -26,6 +28,7 @@ object default extends js.Object {
   def hover(element: TargetElement): Unit = js.native
   def hover(element: TargetElement, init: MouseEventInit): Unit = js.native
   def paste(element: TargetElement): Unit = js.native
+  def paste(element: TargetElement, init: js.UndefOr[scala.Nothing], pasteOptions: InitialSelectionEnd): Unit = js.native
   def paste(element: TargetElement, init: js.Object): Unit = js.native
   def paste(element: TargetElement, init: js.Object, pasteOptions: InitialSelectionEnd): Unit = js.native
   def selectOptions(element: TargetElement, values: String): Unit = js.native

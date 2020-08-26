@@ -33,6 +33,7 @@ class ResourceNamespaces protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListNamespacesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNamespacesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNamespacesResponse] = js.native
   def list(params: ParamsResourceNamespacesList): GaxiosPromise[SchemaListNamespacesResponse] = js.native
   def list(params: ParamsResourceNamespacesList, callback: BodyResponseCallback[SchemaListNamespacesResponse]): Unit = js.native
   def list(
@@ -63,6 +64,7 @@ class ResourceNamespaces protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaNamespace] = js.native
   def update(callback: BodyResponseCallback[SchemaNamespace]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNamespace] = js.native
   def update(params: ParamsResourceNamespacesUpdate): GaxiosPromise[SchemaNamespace] = js.native
   def update(params: ParamsResourceNamespacesUpdate, callback: BodyResponseCallback[SchemaNamespace]): Unit = js.native
   def update(

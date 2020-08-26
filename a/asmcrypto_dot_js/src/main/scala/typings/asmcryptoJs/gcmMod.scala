@@ -13,6 +13,7 @@ object gcmMod extends js.Object {
   class AES_GCM protected () extends AES {
     def this(key: Uint8Array, nonce: Uint8Array) = this()
     def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array) = this()
+    def this(key: Uint8Array, nonce: Uint8Array, adata: js.UndefOr[scala.Nothing], tagSize: Double) = this()
     def this(key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagSize: Double) = this()
     var AES_GCM_decrypt: js.Any = js.native
     var AES_GCM_encrypt: js.Any = js.native
@@ -33,9 +34,23 @@ object gcmMod extends js.Object {
   @js.native
   object AES_GCM extends js.Object {
     def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+    def decrypt(
+      ciphertext: Uint8Array,
+      key: Uint8Array,
+      nonce: Uint8Array,
+      adata: js.UndefOr[scala.Nothing],
+      tagsize: Double
+    ): Uint8Array = js.native
     def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
     def decrypt(ciphertext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
     def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = js.native
+    def encrypt(
+      cleartext: Uint8Array,
+      key: Uint8Array,
+      nonce: Uint8Array,
+      adata: js.UndefOr[scala.Nothing],
+      tagsize: Double
+    ): Uint8Array = js.native
     def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array): Uint8Array = js.native
     def encrypt(cleartext: Uint8Array, key: Uint8Array, nonce: Uint8Array, adata: Uint8Array, tagsize: Double): Uint8Array = js.native
   }

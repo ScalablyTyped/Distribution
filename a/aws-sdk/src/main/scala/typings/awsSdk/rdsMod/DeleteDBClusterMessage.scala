@@ -22,15 +22,32 @@ trait DeleteDBClusterMessage extends js.Object {
 
 object DeleteDBClusterMessage {
   @scala.inline
-  def apply(
-    DBClusterIdentifier: String,
-    FinalDBSnapshotIdentifier: String = null,
-    SkipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
-  ): DeleteDBClusterMessage = {
+  def apply(DBClusterIdentifier: String): DeleteDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-    if (FinalDBSnapshotIdentifier != null) __obj.updateDynamic("FinalDBSnapshotIdentifier")(FinalDBSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(SkipFinalSnapshot)) __obj.updateDynamic("SkipFinalSnapshot")(SkipFinalSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBClusterMessage]
   }
+  @scala.inline
+  implicit class DeleteDBClusterMessageOps[Self <: DeleteDBClusterMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFinalDBSnapshotIdentifier(value: String): Self = this.set("FinalDBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalDBSnapshotIdentifier: Self = this.set("FinalDBSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setSkipFinalSnapshot(value: Boolean): Self = this.set("SkipFinalSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalSnapshot: Self = this.set("SkipFinalSnapshot", js.undefined)
+  }
+  
 }
 

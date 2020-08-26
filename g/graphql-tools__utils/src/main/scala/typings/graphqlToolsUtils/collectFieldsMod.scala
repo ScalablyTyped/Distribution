@@ -1,6 +1,5 @@
 package typings.graphqlToolsUtils
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.astMod.FieldNode
 import typings.graphql.astMod.SelectionSetNode
 import typings.graphql.mod.GraphQLObjectType
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation._
 object collectFieldsMod extends js.Object {
   def collectFields(
     exeContext: GraphQLExecutionContext,
-    runtimeType: GraphQLObjectType[_, _, StringDictionary[_]],
+    runtimeType: GraphQLObjectType[_, _],
     selectionSet: SelectionSetNode,
     fields: Record[String, js.Array[FieldNode]],
     visitedFragmentNames: Record[String, Boolean]

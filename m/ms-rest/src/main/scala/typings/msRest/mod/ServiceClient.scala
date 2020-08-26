@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 class ServiceClient () extends js.Object {
   def this(credentials: ServiceClientCredentials) = this()
+  def this(credentials: js.UndefOr[scala.Nothing], options: ServiceClientOptions) = this()
   def this(credentials: ServiceClientCredentials, options: ServiceClientOptions) = this()
   /**
     * Adds custom information to user agent header

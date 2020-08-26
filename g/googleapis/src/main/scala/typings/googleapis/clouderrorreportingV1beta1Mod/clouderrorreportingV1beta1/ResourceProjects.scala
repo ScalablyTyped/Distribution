@@ -30,6 +30,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def deleteEvents(): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
   def deleteEvents(callback: BodyResponseCallback[SchemaDeleteEventsResponse]): Unit = js.native
+  def deleteEvents(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
   def deleteEvents(params: ParamsResourceProjectsDeleteevents): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
   def deleteEvents(
     params: ParamsResourceProjectsDeleteevents,

@@ -28,7 +28,11 @@ object DomHelper extends js.Object {
     * @returns HTMLElement/Ext.Element The new node
     */
   def append(): js.Any = js.native
+  def append(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+  def append(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+  def append(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
   def append(el: js.Any): js.Any = js.native
+  def append(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
   def append(el: js.Any, o: js.Any): js.Any = js.native
   def append(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
   /** [Method] Applies a style specification to an element
@@ -36,6 +40,7 @@ object DomHelper extends js.Object {
     * @param styles String/Object/Function A style specification string e.g. 'width:100px', or object in the form {width:'100px'}, or a function which returns such a specification.
     */
   def applyStyles(): Unit = js.native
+  def applyStyles(el: js.UndefOr[scala.Nothing], styles: js.Any): Unit = js.native
   def applyStyles(el: js.Any): Unit = js.native
   def applyStyles(el: js.Any, styles: js.Any): Unit = js.native
   /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
@@ -80,6 +85,7 @@ object DomHelper extends js.Object {
     * @returns String/String[] If buffer is passed, it is returned. Otherwise the style string is returned.
     */
   def generateStyles(): js.Any = js.native
+  def generateStyles(styles: js.UndefOr[scala.Nothing], buffer: typings.extjs.Ext.Array): js.Any = js.native
   def generateStyles(styles: js.Any): js.Any = js.native
   def generateStyles(styles: js.Any, buffer: typings.extjs.Ext.Array): js.Any = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -101,7 +107,11 @@ object DomHelper extends js.Object {
     * @returns HTMLElement/Ext.Element The new node
     */
   def insertAfter(): js.Any = js.native
+  def insertAfter(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+  def insertAfter(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+  def insertAfter(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
   def insertAfter(el: js.Any): js.Any = js.native
+  def insertAfter(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
   def insertAfter(el: js.Any, o: js.Any): js.Any = js.native
   def insertAfter(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
   /** [Method] Creates new DOM element s and inserts them before el
@@ -111,7 +121,11 @@ object DomHelper extends js.Object {
     * @returns HTMLElement/Ext.Element The new node
     */
   def insertBefore(): js.Any = js.native
+  def insertBefore(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+  def insertBefore(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+  def insertBefore(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
   def insertBefore(el: js.Any): js.Any = js.native
+  def insertBefore(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
   def insertBefore(el: js.Any, o: js.Any): js.Any = js.native
   def insertBefore(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
   /** [Method] Creates new DOM element s and inserts them as the first child of el
@@ -121,7 +135,11 @@ object DomHelper extends js.Object {
     * @returns HTMLElement/Ext.Element The new node
     */
   def insertFirst(): js.Any = js.native
+  def insertFirst(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+  def insertFirst(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+  def insertFirst(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
   def insertFirst(el: js.Any): js.Any = js.native
+  def insertFirst(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
   def insertFirst(el: js.Any, o: js.Any): js.Any = js.native
   def insertFirst(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
   /** [Method] Inserts an HTML fragment into the DOM
@@ -131,7 +149,11 @@ object DomHelper extends js.Object {
     * @returns HTMLElement The new node
     */
   def insertHtml(): HTMLElement = js.native
+  def insertHtml(where: js.UndefOr[scala.Nothing], el: js.UndefOr[scala.Nothing], html: java.lang.String): HTMLElement = js.native
+  def insertHtml(where: js.UndefOr[scala.Nothing], el: js.Any): HTMLElement = js.native
+  def insertHtml(where: js.UndefOr[scala.Nothing], el: js.Any, html: java.lang.String): HTMLElement = js.native
   def insertHtml(where: java.lang.String): HTMLElement = js.native
+  def insertHtml(where: java.lang.String, el: js.UndefOr[scala.Nothing], html: java.lang.String): HTMLElement = js.native
   def insertHtml(where: java.lang.String, el: js.Any): HTMLElement = js.native
   def insertHtml(where: java.lang.String, el: js.Any, html: java.lang.String): HTMLElement = js.native
   /** [Method] Returns the markup for the passed Element s config
@@ -147,7 +169,11 @@ object DomHelper extends js.Object {
     * @returns HTMLElement/Ext.Element The new node
     */
   def overwrite(): js.Any = js.native
+  def overwrite(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+  def overwrite(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+  def overwrite(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
   def overwrite(el: js.Any): js.Any = js.native
+  def overwrite(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
   def overwrite(el: js.Any, o: js.Any): js.Any = js.native
   def overwrite(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

@@ -130,6 +130,10 @@ trait Recurrence extends js.Object {
     */
   def getAsync(): Unit = js.native
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
+  def getAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
+  ): Unit = js.native
   def getAsync(options: AsyncContextOptions): Unit = js.native
   def getAsync(
     options: AsyncContextOptions,
@@ -160,6 +164,11 @@ trait Recurrence extends js.Object {
     */
   def setAsync(recurrencePattern: Recurrence): Unit = js.native
   def setAsync(recurrencePattern: Recurrence, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setAsync(
+    recurrencePattern: Recurrence,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setAsync(recurrencePattern: Recurrence, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     recurrencePattern: Recurrence,

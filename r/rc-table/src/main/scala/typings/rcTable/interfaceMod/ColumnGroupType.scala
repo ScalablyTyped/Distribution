@@ -1,37 +1,36 @@
 package typings.rcTable.interfaceMod
 
-import typings.react.mod.HTMLAttributes
-import typings.react.mod.ReactNode
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnGroupType[RecordType] extends ColumnSharedType[RecordType] {
-  var children: ColumnsType[RecordType]
+  var children: ColumnsType[RecordType] = js.native
 }
 
 object ColumnGroupType {
   @scala.inline
-  def apply[RecordType](
-    children: ColumnsType[RecordType],
-    align: AlignType = null,
-    className: String = null,
-    ellipsis: CellEllipsisType = null,
-    fixed: FixedType = null,
-    key: Key = null,
-    onHeaderCell: (/* import warning: importer.ImportType#apply Failed type conversion: rc-table.rc-table/lib/interface.ColumnsType<RecordType>[number] */ js.Any, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    title: ReactNode = null
-  ): ColumnGroupType[RecordType] = {
+  def apply[RecordType](children: ColumnsType[RecordType]): ColumnGroupType[RecordType] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onHeaderCell != null) __obj.updateDynamic("onHeaderCell")(js.Any.fromFunction2(onHeaderCell))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupType[RecordType]]
   }
+  @scala.inline
+  implicit class ColumnGroupTypeOps[Self <: ColumnGroupType[_], RecordType] (val x: Self with ColumnGroupType[RecordType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: ColumnsType[RecordType]): Self = this.set("children", value.asInstanceOf[js.Any])
+  }
+  
 }
 

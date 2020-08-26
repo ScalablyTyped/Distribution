@@ -4,46 +4,47 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlotTreemapClusterOptions extends js.Object {
   /**
     * (Highcharts, Highmaps) When set to `false` prevent cluster overlapping -
     * this option works only when `layoutAlgorithm.type = "grid"`.
     */
-  var allowOverlap: js.UndefOr[Boolean] = js.undefined
+  var allowOverlap: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highmaps) Options for the cluster marker animation.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.native
   /**
     * (Highcharts, Highmaps) Options for the cluster data labels.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptions] = js.undefined
+  var dataLabels: js.UndefOr[DataLabelsOptions] = js.native
   /**
     * (Highcharts, Highmaps) Zoom the plot area to the cluster points range
     * when a cluster is clicked.
     */
-  var drillToCluster: js.UndefOr[Boolean] = js.undefined
+  var drillToCluster: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highmaps) Whether to enable the marker-clusters module.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var events: js.UndefOr[PlotTreemapClusterEventsOptions] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
+  var events: js.UndefOr[PlotTreemapClusterEventsOptions] = js.native
   /**
     * (Highcharts, Highmaps) Options for layout algorithm. Inside there are
     * options to change the type of the algorithm, gridSize, distance or
     * iterations.
     */
-  var layoutAlgorithm: js.UndefOr[PlotTreemapClusterLayoutAlgorithmOptions] = js.undefined
+  var layoutAlgorithm: js.UndefOr[PlotTreemapClusterLayoutAlgorithmOptions] = js.native
   /**
     * (Highcharts, Highmaps) Options for the cluster marker.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
   /**
     * (Highcharts, Highmaps) The minimum amount of points to be combined into a
     * cluster. This value has to be greater or equal to 2.
     */
-  var minimumClusterSize: js.UndefOr[Double] = js.undefined
-  var states: js.UndefOr[PlotTreemapClusterStatesOptions] = js.undefined
+  var minimumClusterSize: js.UndefOr[Double] = js.native
+  var states: js.UndefOr[PlotTreemapClusterStatesOptions] = js.native
   /**
     * (Highcharts, Highmaps) An array defining zones within marker clusters.
     *
@@ -51,37 +52,73 @@ trait PlotTreemapClusterOptions extends js.Object {
     * `.highcharts-cluster-zone-{n}` class, or custom classed from the
     * `className` option.
     */
-  var zones: js.UndefOr[js.Array[PlotTreemapClusterZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[PlotTreemapClusterZonesOptions]] = js.native
 }
 
 object PlotTreemapClusterOptions {
   @scala.inline
-  def apply(
-    allowOverlap: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject = null,
-    dataLabels: DataLabelsOptions = null,
-    drillToCluster: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    events: PlotTreemapClusterEventsOptions = null,
-    layoutAlgorithm: PlotTreemapClusterLayoutAlgorithmOptions = null,
-    marker: PointMarkerOptionsObject = null,
-    minimumClusterSize: js.UndefOr[Double] = js.undefined,
-    states: PlotTreemapClusterStatesOptions = null,
-    zones: js.Array[PlotTreemapClusterZonesOptions] = null
-  ): PlotTreemapClusterOptions = {
+  def apply(): PlotTreemapClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drillToCluster)) __obj.updateDynamic("drillToCluster")(drillToCluster.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (layoutAlgorithm != null) __obj.updateDynamic("layoutAlgorithm")(layoutAlgorithm.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumClusterSize)) __obj.updateDynamic("minimumClusterSize")(minimumClusterSize.get.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTreemapClusterOptions]
   }
+  @scala.inline
+  implicit class PlotTreemapClusterOptionsOps[Self <: PlotTreemapClusterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowOverlap(value: Boolean): Self = this.set("allowOverlap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOverlap: Self = this.set("allowOverlap", js.undefined)
+    @scala.inline
+    def setAnimation(value: Boolean | AnimationOptionsObject): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setDataLabels(value: DataLabelsOptions): Self = this.set("dataLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLabels: Self = this.set("dataLabels", js.undefined)
+    @scala.inline
+    def setDrillToCluster(value: Boolean): Self = this.set("drillToCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrillToCluster: Self = this.set("drillToCluster", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEvents(value: PlotTreemapClusterEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setLayoutAlgorithm(value: PlotTreemapClusterLayoutAlgorithmOptions): Self = this.set("layoutAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayoutAlgorithm: Self = this.set("layoutAlgorithm", js.undefined)
+    @scala.inline
+    def setMarker(value: PointMarkerOptionsObject): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setMinimumClusterSize(value: Double): Self = this.set("minimumClusterSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumClusterSize: Self = this.set("minimumClusterSize", js.undefined)
+    @scala.inline
+    def setStates(value: PlotTreemapClusterStatesOptions): Self = this.set("states", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStates: Self = this.set("states", js.undefined)
+    @scala.inline
+    def setZonesVarargs(value: PlotTreemapClusterZonesOptions*): Self = this.set("zones", js.Array(value :_*))
+    @scala.inline
+    def setZones(value: js.Array[PlotTreemapClusterZonesOptions]): Self = this.set("zones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZones: Self = this.set("zones", js.undefined)
+  }
+  
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * can be defined.
   *
   */
+@js.native
 trait Repeater extends BaseNode
 
 object Repeater {

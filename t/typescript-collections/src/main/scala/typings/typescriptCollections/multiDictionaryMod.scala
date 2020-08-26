@@ -116,7 +116,23 @@ object multiDictionaryMod extends js.Object {
     */
   class default[K, V] () extends MultiDictionary[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
+    def this(toStrFunction: js.UndefOr[scala.Nothing], valuesEqualsFunction: IEqualsFunction[V]) = this()
     def this(toStrFunction: js.Function1[/* key */ K, String], valuesEqualsFunction: IEqualsFunction[V]) = this()
+    def this(
+      toStrFunction: js.UndefOr[scala.Nothing],
+      valuesEqualsFunction: js.UndefOr[scala.Nothing],
+      allowDuplicateValues: Boolean
+    ) = this()
+    def this(
+      toStrFunction: js.UndefOr[scala.Nothing],
+      valuesEqualsFunction: IEqualsFunction[V],
+      allowDuplicateValues: Boolean
+    ) = this()
+    def this(
+      toStrFunction: js.Function1[/* key */ K, String],
+      valuesEqualsFunction: js.UndefOr[scala.Nothing],
+      allowDuplicateValues: Boolean
+    ) = this()
     def this(
       toStrFunction: js.Function1[/* key */ K, String],
       valuesEqualsFunction: IEqualsFunction[V],

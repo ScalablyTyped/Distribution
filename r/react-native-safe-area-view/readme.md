@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-safe-area-view
 
-Typings are for version 0.11.0
+Typings are for version 0.14.9
 
 ## Library description:
 Add padding to your views to account for notches, home indicators, status bar, and possibly other future things.

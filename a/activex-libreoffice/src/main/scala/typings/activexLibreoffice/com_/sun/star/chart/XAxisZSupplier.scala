@@ -12,47 +12,48 @@ import scala.scalajs.js.annotation._
   * gives access to the **z** -axis of a chart.
   * @see XDiagram
   */
+@js.native
 trait XAxisZSupplier extends XInterface {
   /**
     * @returns the properties of the **z** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  val ZAxis: XPropertySet
+  val ZAxis: XPropertySet = js.native
   /**
     * @returns the **z** -axis title shape.
     * @see ChartTitle
     */
-  val ZAxisTitle: XShape
+  val ZAxisTitle: XShape = js.native
   /**
     * @returns the properties of the help grid (minor grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  val ZHelpGrid: XPropertySet
+  val ZHelpGrid: XPropertySet = js.native
   /**
     * @returns the properties of the main grid (major grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  val ZMainGrid: XPropertySet
+  val ZMainGrid: XPropertySet = js.native
   /**
     * @returns the properties of the **z** -axis of the diagram.  The returned property set contains scaling properties as well as formatting properties.
     * @see ChartAxis
     */
-  def getZAxis(): XPropertySet
+  def getZAxis(): XPropertySet = js.native
   /**
     * @returns the **z** -axis title shape.
     * @see ChartTitle
     */
-  def getZAxisTitle(): XShape
+  def getZAxisTitle(): XShape = js.native
   /**
     * @returns the properties of the help grid (minor grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  def getZHelpGrid(): XPropertySet
+  def getZHelpGrid(): XPropertySet = js.native
   /**
     * @returns the properties of the main grid (major grid) of the **z** -axis of the diagram.
     * @see ChartGrid
     */
-  def getZMainGrid(): XPropertySet
+  def getZMainGrid(): XPropertySet = js.native
 }
 
 object XAxisZSupplier {
@@ -73,5 +74,34 @@ object XAxisZSupplier {
     val __obj = js.Dynamic.literal(ZAxis = ZAxis.asInstanceOf[js.Any], ZAxisTitle = ZAxisTitle.asInstanceOf[js.Any], ZHelpGrid = ZHelpGrid.asInstanceOf[js.Any], ZMainGrid = ZMainGrid.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getZAxis = js.Any.fromFunction0(getZAxis), getZAxisTitle = js.Any.fromFunction0(getZAxisTitle), getZHelpGrid = js.Any.fromFunction0(getZHelpGrid), getZMainGrid = js.Any.fromFunction0(getZMainGrid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAxisZSupplier]
   }
+  @scala.inline
+  implicit class XAxisZSupplierOps[Self <: XAxisZSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setZAxis(value: XPropertySet): Self = this.set("ZAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZAxisTitle(value: XShape): Self = this.set("ZAxisTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZHelpGrid(value: XPropertySet): Self = this.set("ZHelpGrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZMainGrid(value: XPropertySet): Self = this.set("ZMainGrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetZAxis(value: () => XPropertySet): Self = this.set("getZAxis", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetZAxisTitle(value: () => XShape): Self = this.set("getZAxisTitle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetZHelpGrid(value: () => XPropertySet): Self = this.set("getZHelpGrid", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetZMainGrid(value: () => XPropertySet): Self = this.set("getZMainGrid", js.Any.fromFunction0(value))
+  }
+  
 }
 

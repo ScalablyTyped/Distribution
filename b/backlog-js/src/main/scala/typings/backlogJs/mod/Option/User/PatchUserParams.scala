@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PatchUserParams extends js.Object {
-  var mailAddress: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var roleType: js.UndefOr[RoleType] = js.undefined
+  var mailAddress: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.native
+  var roleType: js.UndefOr[RoleType] = js.native
 }
 
 object PatchUserParams {
   @scala.inline
-  def apply(
-    mailAddress: String = null,
-    name: String = null,
-    password: String = null,
-    roleType: RoleType = null
-  ): PatchUserParams = {
+  def apply(): PatchUserParams = {
     val __obj = js.Dynamic.literal()
-    if (mailAddress != null) __obj.updateDynamic("mailAddress")(mailAddress.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (roleType != null) __obj.updateDynamic("roleType")(roleType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchUserParams]
   }
+  @scala.inline
+  implicit class PatchUserParamsOps[Self <: PatchUserParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMailAddress(value: String): Self = this.set("mailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailAddress: Self = this.set("mailAddress", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setRoleType(value: RoleType): Self = this.set("roleType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleType: Self = this.set("roleType", js.undefined)
+  }
+  
 }
 

@@ -45,6 +45,7 @@ object httpMod extends js.Object {
       */
     def this(serverUrl: String) = this()
     def this(serverUrl: String, opt_agent: js.Any) = this()
+    def this(serverUrl: String, opt_agent: js.UndefOr[scala.Nothing], opt_proxy: String) = this()
     def this(serverUrl: String, opt_agent: js.Any, opt_proxy: String) = this()
     /**
       * Sends a request to the server. The client will automatically follow any
@@ -88,6 +89,13 @@ object httpMod extends js.Object {
   def post(path: String): js.Any = js.native
   def resource(method: String, path: String): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
+  def sendRequest(
+    options: js.Object,
+    onOk: js.Any,
+    onError: js.Any,
+    opt_data: js.UndefOr[scala.Nothing],
+    opt_proxy: String
+  ): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
   def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
   def tryParse(str: String): js.Any = js.native

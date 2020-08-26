@@ -11,8 +11,8 @@ Easily execute a function when you scroll to an element
 | Full name          | waypoints |
 | Keywords           | scroll |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 1547966 |
+| # dependents       | 34 |
+| # downloads        | 1568421 |
 | # stars            | 10 |
 
 ## Links

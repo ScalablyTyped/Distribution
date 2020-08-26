@@ -33,6 +33,7 @@ class ResourceUsersLikedassets protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListLikedAssetsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLikedAssetsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLikedAssetsResponse] = js.native
   def list(params: ParamsResourceUsersLikedassetsList): GaxiosPromise[SchemaListLikedAssetsResponse] = js.native
   def list(
     params: ParamsResourceUsersLikedassetsList,

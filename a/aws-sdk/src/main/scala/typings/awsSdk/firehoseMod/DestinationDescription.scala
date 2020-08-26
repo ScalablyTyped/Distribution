@@ -19,6 +19,10 @@ trait DestinationDescription extends js.Object {
     */
   var ExtendedS3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationDescription] = js.native
   /**
+    * Describes the specified HTTP endpoint destination.
+    */
+  var HttpEndpointDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationDescription] = js.native
+  /**
     * The destination in Amazon Redshift.
     */
   var RedshiftDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.RedshiftDestinationDescription] = js.native
@@ -34,21 +38,48 @@ trait DestinationDescription extends js.Object {
 
 object DestinationDescription {
   @scala.inline
-  def apply(
-    DestinationId: DestinationId,
-    ElasticsearchDestinationDescription: ElasticsearchDestinationDescription = null,
-    ExtendedS3DestinationDescription: ExtendedS3DestinationDescription = null,
-    RedshiftDestinationDescription: RedshiftDestinationDescription = null,
-    S3DestinationDescription: S3DestinationDescription = null,
-    SplunkDestinationDescription: SplunkDestinationDescription = null
-  ): DestinationDescription = {
+  def apply(DestinationId: DestinationId): DestinationDescription = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any])
-    if (ElasticsearchDestinationDescription != null) __obj.updateDynamic("ElasticsearchDestinationDescription")(ElasticsearchDestinationDescription.asInstanceOf[js.Any])
-    if (ExtendedS3DestinationDescription != null) __obj.updateDynamic("ExtendedS3DestinationDescription")(ExtendedS3DestinationDescription.asInstanceOf[js.Any])
-    if (RedshiftDestinationDescription != null) __obj.updateDynamic("RedshiftDestinationDescription")(RedshiftDestinationDescription.asInstanceOf[js.Any])
-    if (S3DestinationDescription != null) __obj.updateDynamic("S3DestinationDescription")(S3DestinationDescription.asInstanceOf[js.Any])
-    if (SplunkDestinationDescription != null) __obj.updateDynamic("SplunkDestinationDescription")(SplunkDestinationDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationDescription]
   }
+  @scala.inline
+  implicit class DestinationDescriptionOps[Self <: DestinationDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationId(value: DestinationId): Self = this.set("DestinationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setElasticsearchDestinationDescription(value: ElasticsearchDestinationDescription): Self = this.set("ElasticsearchDestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchDestinationDescription: Self = this.set("ElasticsearchDestinationDescription", js.undefined)
+    @scala.inline
+    def setExtendedS3DestinationDescription(value: ExtendedS3DestinationDescription): Self = this.set("ExtendedS3DestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedS3DestinationDescription: Self = this.set("ExtendedS3DestinationDescription", js.undefined)
+    @scala.inline
+    def setHttpEndpointDestinationDescription(value: HttpEndpointDestinationDescription): Self = this.set("HttpEndpointDestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpointDestinationDescription: Self = this.set("HttpEndpointDestinationDescription", js.undefined)
+    @scala.inline
+    def setRedshiftDestinationDescription(value: RedshiftDestinationDescription): Self = this.set("RedshiftDestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftDestinationDescription: Self = this.set("RedshiftDestinationDescription", js.undefined)
+    @scala.inline
+    def setS3DestinationDescription(value: S3DestinationDescription): Self = this.set("S3DestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3DestinationDescription: Self = this.set("S3DestinationDescription", js.undefined)
+    @scala.inline
+    def setSplunkDestinationDescription(value: SplunkDestinationDescription): Self = this.set("SplunkDestinationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplunkDestinationDescription: Self = this.set("SplunkDestinationDescription", js.undefined)
+  }
+  
 }
 

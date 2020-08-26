@@ -63,34 +63,70 @@ trait SchemaEnvironment extends js.Object {
 
 object SchemaEnvironment {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    authorizationCode: String = null,
-    authorizationTimestampMs: String = null,
-    containerId: String = null,
-    containerVersionId: String = null,
-    description: String = null,
-    enableDebug: js.UndefOr[Boolean] = js.undefined,
-    environmentId: String = null,
-    fingerprint: String = null,
-    name: String = null,
-    `type`: String = null,
-    url: String = null
-  ): SchemaEnvironment = {
+  def apply(): SchemaEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (authorizationCode != null) __obj.updateDynamic("authorizationCode")(authorizationCode.asInstanceOf[js.Any])
-    if (authorizationTimestampMs != null) __obj.updateDynamic("authorizationTimestampMs")(authorizationTimestampMs.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDebug)) __obj.updateDynamic("enableDebug")(enableDebug.get.asInstanceOf[js.Any])
-    if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnvironment]
   }
+  @scala.inline
+  implicit class SchemaEnvironmentOps[Self <: SchemaEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAuthorizationCode(value: String): Self = this.set("authorizationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationCode: Self = this.set("authorizationCode", js.undefined)
+    @scala.inline
+    def setAuthorizationTimestampMs(value: String): Self = this.set("authorizationTimestampMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationTimestampMs: Self = this.set("authorizationTimestampMs", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setContainerVersionId(value: String): Self = this.set("containerVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerVersionId: Self = this.set("containerVersionId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnableDebug(value: Boolean): Self = this.set("enableDebug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDebug: Self = this.set("enableDebug", js.undefined)
+    @scala.inline
+    def setEnvironmentId(value: String): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -13,10 +13,6 @@ object graphQLSchemaValidationErrorMod extends js.Object {
   class GraphQLSchemaValidationError protected () extends Error {
     def this(errors: js.Array[GraphQLError]) = this()
     var errors: js.Array[GraphQLError] = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

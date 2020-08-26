@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * This interface is typically used in conjunction with the {@link XAccessibleText} interface and extents it with a notion of line numbers
   * @since OOo 3.0
   */
+@js.native
 trait XAccessibleMultiLineText extends XAccessibleText {
   /**
     * Returns the number of the line in which the caret is located.
@@ -28,7 +29,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the index of the line in which the caret is located or -1 if the paragraph does not have a valid caret position.
     */
-  val NumberOfLineWithCaret: Double
+  val NumberOfLineWithCaret: Double = js.native
   /**
     * Returns the text of the line in which the caret is located.
     *
@@ -40,7 +41,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the requested text portion. This portion may be empty or invalid if the paragraph object does not have a valid caret position.
     */
-  val TextAtLineWithCaret: TextSegment
+  val TextAtLineWithCaret: TextSegment = js.native
   /**
     * Returns the line number at the specified index.
     *
@@ -49,7 +50,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * @returns Returns the line number of the specified text index.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid.
     */
-  def getLineNumberAtIndex(nIndex: Double): Double
+  def getLineNumberAtIndex(nIndex: Double): Double = js.native
   /**
     * Returns the number of the line in which the caret is located.
     *
@@ -61,7 +62,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the index of the line in which the caret is located or -1 if the paragraph does not have a valid caret position.
     */
-  def getNumberOfLineWithCaret(): Double
+  def getNumberOfLineWithCaret(): Double = js.native
   /**
     * Returns the text of the specified line.
     *
@@ -74,7 +75,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * @returns Returns the requested text portion. This portion may be empty or invalid when no appropriate text portion is found.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the line number is invalid
     */
-  def getTextAtLineNumber(nLineNo: Double): TextSegment
+  def getTextAtLineNumber(nLineNo: Double): TextSegment = js.native
   /**
     * Returns the text of the line in which the caret is located.
     *
@@ -86,7 +87,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the requested text portion. This portion may be empty or invalid if the paragraph object does not have a valid caret position.
     */
-  def getTextAtLineWithCaret(): TextSegment
+  def getTextAtLineWithCaret(): TextSegment = js.native
 }
 
 object XAccessibleMultiLineText {
@@ -128,5 +129,30 @@ object XAccessibleMultiLineText {
     val __obj = js.Dynamic.literal(CaretPosition = CaretPosition.asInstanceOf[js.Any], CharacterCount = CharacterCount.asInstanceOf[js.Any], NumberOfLineWithCaret = NumberOfLineWithCaret.asInstanceOf[js.Any], SelectedText = SelectedText.asInstanceOf[js.Any], SelectionEnd = SelectionEnd.asInstanceOf[js.Any], SelectionStart = SelectionStart.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], TextAtLineWithCaret = TextAtLineWithCaret.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), copyText = js.Any.fromFunction2(copyText), getCaretPosition = js.Any.fromFunction0(getCaretPosition), getCharacter = js.Any.fromFunction1(getCharacter), getCharacterAttributes = js.Any.fromFunction2(getCharacterAttributes), getCharacterBounds = js.Any.fromFunction1(getCharacterBounds), getCharacterCount = js.Any.fromFunction0(getCharacterCount), getIndexAtPoint = js.Any.fromFunction1(getIndexAtPoint), getLineNumberAtIndex = js.Any.fromFunction1(getLineNumberAtIndex), getNumberOfLineWithCaret = js.Any.fromFunction0(getNumberOfLineWithCaret), getSelectedText = js.Any.fromFunction0(getSelectedText), getSelectionEnd = js.Any.fromFunction0(getSelectionEnd), getSelectionStart = js.Any.fromFunction0(getSelectionStart), getText = js.Any.fromFunction0(getText), getTextAtIndex = js.Any.fromFunction2(getTextAtIndex), getTextAtLineNumber = js.Any.fromFunction1(getTextAtLineNumber), getTextAtLineWithCaret = js.Any.fromFunction0(getTextAtLineWithCaret), getTextBeforeIndex = js.Any.fromFunction2(getTextBeforeIndex), getTextBehindIndex = js.Any.fromFunction2(getTextBehindIndex), getTextRange = js.Any.fromFunction2(getTextRange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setCaretPosition = js.Any.fromFunction1(setCaretPosition), setSelection = js.Any.fromFunction2(setSelection))
     __obj.asInstanceOf[XAccessibleMultiLineText]
   }
+  @scala.inline
+  implicit class XAccessibleMultiLineTextOps[Self <: XAccessibleMultiLineText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNumberOfLineWithCaret(value: Double): Self = this.set("NumberOfLineWithCaret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextAtLineWithCaret(value: TextSegment): Self = this.set("TextAtLineWithCaret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetLineNumberAtIndex(value: Double => Double): Self = this.set("getLineNumberAtIndex", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetNumberOfLineWithCaret(value: () => Double): Self = this.set("getNumberOfLineWithCaret", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetTextAtLineNumber(value: Double => TextSegment): Self = this.set("getTextAtLineNumber", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetTextAtLineWithCaret(value: () => TextSegment): Self = this.set("getTextAtLineWithCaret", js.Any.fromFunction0(value))
+  }
+  
 }
 

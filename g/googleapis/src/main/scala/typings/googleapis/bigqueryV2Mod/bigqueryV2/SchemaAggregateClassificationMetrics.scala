@@ -52,24 +52,50 @@ trait SchemaAggregateClassificationMetrics extends js.Object {
 
 object SchemaAggregateClassificationMetrics {
   @scala.inline
-  def apply(
-    accuracy: js.UndefOr[Double] = js.undefined,
-    f1Score: js.UndefOr[Double] = js.undefined,
-    logLoss: js.UndefOr[Double] = js.undefined,
-    precision: js.UndefOr[Double] = js.undefined,
-    recall: js.UndefOr[Double] = js.undefined,
-    rocAuc: js.UndefOr[Double] = js.undefined,
-    threshold: js.UndefOr[Double] = js.undefined
-  ): SchemaAggregateClassificationMetrics = {
+  def apply(): SchemaAggregateClassificationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(accuracy)) __obj.updateDynamic("accuracy")(accuracy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(f1Score)) __obj.updateDynamic("f1Score")(f1Score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(logLoss)) __obj.updateDynamic("logLoss")(logLoss.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(recall)) __obj.updateDynamic("recall")(recall.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rocAuc)) __obj.updateDynamic("rocAuc")(rocAuc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(threshold)) __obj.updateDynamic("threshold")(threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAggregateClassificationMetrics]
   }
+  @scala.inline
+  implicit class SchemaAggregateClassificationMetricsOps[Self <: SchemaAggregateClassificationMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccuracy(value: Double): Self = this.set("accuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracy: Self = this.set("accuracy", js.undefined)
+    @scala.inline
+    def setF1Score(value: Double): Self = this.set("f1Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF1Score: Self = this.set("f1Score", js.undefined)
+    @scala.inline
+    def setLogLoss(value: Double): Self = this.set("logLoss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLoss: Self = this.set("logLoss", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setRecall(value: Double): Self = this.set("recall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecall: Self = this.set("recall", js.undefined)
+    @scala.inline
+    def setRocAuc(value: Double): Self = this.set("rocAuc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRocAuc: Self = this.set("rocAuc", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("threshold", js.undefined)
+  }
+  
 }
 

@@ -7,49 +7,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait symbolPreviewRenderPreviewHTMLOptions extends Object {
   /**
     * Indicates whether to disable upsampling for raster images.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var disableUpsampling: js.UndefOr[Boolean] = js.undefined
+  var disableUpsampling: js.UndefOr[Boolean] = js.native
   /**
     * The maximum size of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var maxSize: js.UndefOr[Double] = js.undefined
+  var maxSize: js.UndefOr[Double] = js.native
   /**
     * The parent node to append to the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var node: js.UndefOr[HTMLElement] = js.undefined
+  var node: js.UndefOr[HTMLElement] = js.native
   /**
     * The opacity of the layer represented by the `symbol`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var opacity: js.UndefOr[Double] = js.undefined
+  var opacity: js.UndefOr[Double] = js.native
   /**
     * Indicates whether to scale the symbol preview.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var scale: js.UndefOr[Boolean] = js.undefined
+  var scale: js.UndefOr[Boolean] = js.native
   /**
     * The size of the symbol preview in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /**
     * For "tall" symbols in portrait view, then the `tall` value should be used here.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolPreview.html#renderPreviewHTML)
     */
-  var symbolConfig: js.UndefOr[String] = js.undefined
+  var symbolConfig: js.UndefOr[String] = js.native
 }
 
 object symbolPreviewRenderPreviewHTMLOptions {
@@ -57,24 +58,51 @@ object symbolPreviewRenderPreviewHTMLOptions {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    disableUpsampling: js.UndefOr[Boolean] = js.undefined,
-    maxSize: js.UndefOr[Double] = js.undefined,
-    node: HTMLElement = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    scale: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    symbolConfig: String = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): symbolPreviewRenderPreviewHTMLOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(disableUpsampling)) __obj.updateDynamic("disableUpsampling")(disableUpsampling.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (symbolConfig != null) __obj.updateDynamic("symbolConfig")(symbolConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[symbolPreviewRenderPreviewHTMLOptions]
   }
+  @scala.inline
+  implicit class symbolPreviewRenderPreviewHTMLOptionsOps[Self <: symbolPreviewRenderPreviewHTMLOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisableUpsampling(value: Boolean): Self = this.set("disableUpsampling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableUpsampling: Self = this.set("disableUpsampling", js.undefined)
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setNode(value: HTMLElement): Self = this.set("node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode: Self = this.set("node", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setScale(value: Boolean): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSymbolConfig(value: String): Self = this.set("symbolConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolConfig: Self = this.set("symbolConfig", js.undefined)
+  }
+  
 }
 

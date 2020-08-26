@@ -27,6 +27,7 @@ class ResourceProjectsGroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaErrorGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaErrorGroup] = js.native
   def get(params: ParamsResourceProjectsGroupsGet): GaxiosPromise[SchemaErrorGroup] = js.native
   def get(params: ParamsResourceProjectsGroupsGet, callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceProjectsGroups protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaErrorGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaErrorGroup] = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate): GaxiosPromise[SchemaErrorGroup] = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate, callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
   def update(

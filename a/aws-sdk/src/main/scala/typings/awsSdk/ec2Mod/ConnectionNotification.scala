@@ -38,24 +38,52 @@ trait ConnectionNotification extends js.Object {
 
 object ConnectionNotification {
   @scala.inline
-  def apply(
-    ConnectionEvents: ValueStringList = null,
-    ConnectionNotificationArn: String = null,
-    ConnectionNotificationId: String = null,
-    ConnectionNotificationState: ConnectionNotificationState = null,
-    ConnectionNotificationType: ConnectionNotificationType = null,
-    ServiceId: String = null,
-    VpcEndpointId: String = null
-  ): ConnectionNotification = {
+  def apply(): ConnectionNotification = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionEvents != null) __obj.updateDynamic("ConnectionEvents")(ConnectionEvents.asInstanceOf[js.Any])
-    if (ConnectionNotificationArn != null) __obj.updateDynamic("ConnectionNotificationArn")(ConnectionNotificationArn.asInstanceOf[js.Any])
-    if (ConnectionNotificationId != null) __obj.updateDynamic("ConnectionNotificationId")(ConnectionNotificationId.asInstanceOf[js.Any])
-    if (ConnectionNotificationState != null) __obj.updateDynamic("ConnectionNotificationState")(ConnectionNotificationState.asInstanceOf[js.Any])
-    if (ConnectionNotificationType != null) __obj.updateDynamic("ConnectionNotificationType")(ConnectionNotificationType.asInstanceOf[js.Any])
-    if (ServiceId != null) __obj.updateDynamic("ServiceId")(ServiceId.asInstanceOf[js.Any])
-    if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionNotification]
   }
+  @scala.inline
+  implicit class ConnectionNotificationOps[Self <: ConnectionNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionEventsVarargs(value: String*): Self = this.set("ConnectionEvents", js.Array(value :_*))
+    @scala.inline
+    def setConnectionEvents(value: ValueStringList): Self = this.set("ConnectionEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionEvents: Self = this.set("ConnectionEvents", js.undefined)
+    @scala.inline
+    def setConnectionNotificationArn(value: String): Self = this.set("ConnectionNotificationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionNotificationArn: Self = this.set("ConnectionNotificationArn", js.undefined)
+    @scala.inline
+    def setConnectionNotificationId(value: String): Self = this.set("ConnectionNotificationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionNotificationId: Self = this.set("ConnectionNotificationId", js.undefined)
+    @scala.inline
+    def setConnectionNotificationState(value: ConnectionNotificationState): Self = this.set("ConnectionNotificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionNotificationState: Self = this.set("ConnectionNotificationState", js.undefined)
+    @scala.inline
+    def setConnectionNotificationType(value: ConnectionNotificationType): Self = this.set("ConnectionNotificationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionNotificationType: Self = this.set("ConnectionNotificationType", js.undefined)
+    @scala.inline
+    def setServiceId(value: String): Self = this.set("ServiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceId: Self = this.set("ServiceId", js.undefined)
+    @scala.inline
+    def setVpcEndpointId(value: String): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+  }
+  
 }
 

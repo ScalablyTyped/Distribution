@@ -43,7 +43,7 @@ object securitycenterMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Securitycenter
               ]
             ]
@@ -53,7 +53,7 @@ object securitycenterMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1.Securitycenter
               ]
             ]

@@ -12,7 +12,7 @@ The blazing fast, batteries-included ES2015 compiler
 | Keywords           | javascript, transpilation, compilation, esnext, es2015, es2017, es6, es7 |
 | # releases         | 10 |
 | # dependents       | 137 |
-| # downloads        | 13138561 |
+| # downloads        | 13420461 |
 | # stars            | 17 |
 
 ## Links

@@ -37,22 +37,46 @@ trait SchemaOrdersUpdateShipmentRequest extends js.Object {
 
 object SchemaOrdersUpdateShipmentRequest {
   @scala.inline
-  def apply(
-    carrier: String = null,
-    deliveryDate: String = null,
-    operationId: String = null,
-    shipmentId: String = null,
-    status: String = null,
-    trackingId: String = null
-  ): SchemaOrdersUpdateShipmentRequest = {
+  def apply(): SchemaOrdersUpdateShipmentRequest = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
-    if (deliveryDate != null) __obj.updateDynamic("deliveryDate")(deliveryDate.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (trackingId != null) __obj.updateDynamic("trackingId")(trackingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrdersUpdateShipmentRequest]
   }
+  @scala.inline
+  implicit class SchemaOrdersUpdateShipmentRequestOps[Self <: SchemaOrdersUpdateShipmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarrier: Self = this.set("carrier", js.undefined)
+    @scala.inline
+    def setDeliveryDate(value: String): Self = this.set("deliveryDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryDate: Self = this.set("deliveryDate", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setShipmentId(value: String): Self = this.set("shipmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipmentId: Self = this.set("shipmentId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTrackingId(value: String): Self = this.set("trackingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingId: Self = this.set("trackingId", js.undefined)
+  }
+  
 }
 

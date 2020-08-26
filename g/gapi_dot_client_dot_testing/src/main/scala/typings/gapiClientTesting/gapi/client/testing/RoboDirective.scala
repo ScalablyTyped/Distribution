@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RoboDirective extends js.Object {
   /**
     * The type of action that Robo should perform on the specified element.
     * Required.
     */
-  var actionType: js.UndefOr[String] = js.undefined
+  var actionType: js.UndefOr[String] = js.native
   /**
     * The text that Robo is directed to set. If left empty, the directive will be
     * treated as a CLICK on the element matching the resource_name.
     * Optional
     */
-  var inputText: js.UndefOr[String] = js.undefined
+  var inputText: js.UndefOr[String] = js.native
   /**
     * The android resource name of the target UI element
     * For example,
@@ -26,17 +27,39 @@ trait RoboDirective extends js.Object {
     * https://developer.android.com/guide/topics/resources/accessing-resources.html
     * Required
     */
-  var resourceName: js.UndefOr[String] = js.undefined
+  var resourceName: js.UndefOr[String] = js.native
 }
 
 object RoboDirective {
   @scala.inline
-  def apply(actionType: String = null, inputText: String = null, resourceName: String = null): RoboDirective = {
+  def apply(): RoboDirective = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
-    if (inputText != null) __obj.updateDynamic("inputText")(inputText.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoboDirective]
   }
+  @scala.inline
+  implicit class RoboDirectiveOps[Self <: RoboDirective] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionType(value: String): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionType: Self = this.set("actionType", js.undefined)
+    @scala.inline
+    def setInputText(value: String): Self = this.set("inputText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputText: Self = this.set("inputText", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+  }
+  
 }
 

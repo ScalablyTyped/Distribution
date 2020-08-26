@@ -21,7 +21,21 @@ trait IResourceService extends js.Object {
     * @param options Hash with custom settings that should extend the default $resourceProvider behavior
     */
   def apply(url: String): IResourceClass[IResource[_]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: js.UndefOr[scala.Nothing],
+    actions: js.UndefOr[scala.Nothing],
+    options: IResourceOptions
+  ): IResourceClass[IResource[_]] = js.native
+  def apply(url: String, paramDefaults: js.UndefOr[scala.Nothing], actions: IActionHash): IResourceClass[IResource[_]] = js.native
+  def apply(
+    url: String,
+    paramDefaults: js.UndefOr[scala.Nothing],
+    actions: IActionHash,
+    options: IResourceOptions
+  ): IResourceClass[IResource[_]] = js.native
   def apply(url: String, paramDefaults: js.Any): IResourceClass[IResource[_]] = js.native
+  def apply(url: String, paramDefaults: js.Any, actions: js.UndefOr[scala.Nothing], options: IResourceOptions): IResourceClass[IResource[_]] = js.native
   def apply(url: String, paramDefaults: js.Any, actions: IActionHash): IResourceClass[IResource[_]] = js.native
   def apply(url: String, paramDefaults: js.Any, actions: IActionHash, options: IResourceOptions): IResourceClass[IResource[_]] = js.native
 }

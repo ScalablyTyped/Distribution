@@ -10,9 +10,9 @@ automate your life - platfom
 | ------------------ | :-------------: |
 | Full name          | iobroker |
 | Keywords           | ioBroker, Smarthome, Home Automation, Smart Metering, Homematic, Hue, KNX, Z-Wave, ZigBee, Bidcos, TV, Sonos, AV Receiver |
-| # releases         | 16 |
+| # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 103564 |
+| # downloads        | 102077 |
 | # stars            | 4 |
 
 ## Links

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Skellam ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Skellam] {
   def this(mu1: Double) = this()
+  def this(mu1: js.UndefOr[scala.Nothing], mu2: Double) = this()
   def this(mu1: Double, mu2: Double) = this()
 }
 

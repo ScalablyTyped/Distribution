@@ -36,8 +36,8 @@ trait Spine extends js.Object {
   ] = js.native
   var tintRgb: ArrayLike[Double] = js.native
   def autoUpdate: Boolean = js.native
-  def autoUpdate(value: Boolean): js.Any = js.native
   def autoUpdateTransform(): Unit = js.native
+  def autoUpdate_=(value: Boolean): Unit = js.native
   def createGraphics(slot: Slot, clip: ClippingAttachment): js.Any = js.native
   def createMesh(slot: Slot, attachment: MeshAttachment): SpineMesh = js.native
   def createSprite(slot: Slot, attachment: RegionAttachment, defName: String): SpineSprite = js.native
@@ -48,6 +48,11 @@ trait Spine extends js.Object {
   def hackTextureBySlotIndex(slotIndex: Double): Boolean = js.native
   def hackTextureBySlotIndex(
     slotIndex: Double,
+    texture: js.UndefOr[scala.Nothing],
+    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
+  ): Boolean = js.native
+  def hackTextureBySlotIndex(
+    slotIndex: Double,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotIndex(
@@ -56,6 +61,11 @@ trait Spine extends js.Object {
     size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
   ): Boolean = js.native
   def hackTextureBySlotName(slotName: String): Boolean = js.native
+  def hackTextureBySlotName(
+    slotName: String,
+    texture: js.UndefOr[scala.Nothing],
+    size: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Rectangle */ js.Any
+  ): Boolean = js.native
   def hackTextureBySlotName(
     slotName: String,
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
@@ -72,12 +82,84 @@ trait Spine extends js.Object {
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: js.UndefOr[scala.Nothing],
+    indices: js.UndefOr[scala.Nothing],
+    drawMode: Double
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: js.UndefOr[scala.Nothing],
+    indices: Uint16Array
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: js.UndefOr[scala.Nothing],
+    indices: Uint16Array,
+    drawMode: Double
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: Float32Array
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: Float32Array,
+    indices: js.UndefOr[scala.Nothing],
+    drawMode: Double
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: Float32Array,
+    indices: Uint16Array
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: js.UndefOr[scala.Nothing],
+    uvs: Float32Array,
+    indices: Uint16Array,
+    drawMode: Double
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
     vertices: Float32Array,
+    uvs: js.UndefOr[scala.Nothing],
+    indices: js.UndefOr[scala.Nothing],
+    drawMode: Double
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: Float32Array,
+    uvs: js.UndefOr[scala.Nothing],
+    indices: Uint16Array
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: Float32Array,
+    uvs: js.UndefOr[scala.Nothing],
+    indices: Uint16Array,
+    drawMode: Double
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: Float32Array,
     uvs: Float32Array
+  ): SpineMesh = js.native
+  def newMesh(
+    texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
+    vertices: Float32Array,
+    uvs: Float32Array,
+    indices: js.UndefOr[scala.Nothing],
+    drawMode: Double
   ): SpineMesh = js.native
   def newMesh(
     texture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any,
@@ -96,11 +178,11 @@ trait Spine extends js.Object {
     tex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.Texture */ js.Any
   ): SpineSprite = js.native
   def tint: Double = js.native
-  def tint(value: Double): js.Any = js.native
+  def tint_=(value: Double): Unit = js.native
   def transformHack(): Double = js.native
   def update(dt: Double): Unit = js.native
   def updateGraphics(slot: Slot, clip: ClippingAttachment): Unit = js.native
   def visible: Boolean = js.native
-  def visible(value: Boolean): js.Any = js.native
+  def visible_=(value: Boolean): Unit = js.native
 }
 

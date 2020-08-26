@@ -162,66 +162,150 @@ trait SchemaGoogleApiService extends js.Object {
 
 object SchemaGoogleApiService {
   @scala.inline
-  def apply(
-    apis: js.Array[SchemaApi] = null,
-    authentication: SchemaAuthentication = null,
-    backend: SchemaBackend = null,
-    billing: SchemaBilling = null,
-    configVersion: js.UndefOr[Double] = js.undefined,
-    context: SchemaContext = null,
-    control: SchemaControl = null,
-    customError: SchemaCustomError = null,
-    documentation: SchemaDocumentation = null,
-    endpoints: js.Array[SchemaEndpoint] = null,
-    enums: js.Array[SchemaEnum] = null,
-    experimental: SchemaExperimental = null,
-    http: SchemaHttp = null,
-    id: String = null,
-    logging: SchemaLogging = null,
-    logs: js.Array[SchemaLogDescriptor] = null,
-    metrics: js.Array[SchemaMetricDescriptor] = null,
-    monitoredResources: js.Array[SchemaMonitoredResourceDescriptor] = null,
-    monitoring: SchemaMonitoring = null,
-    name: String = null,
-    producerProjectId: String = null,
-    quota: SchemaQuota = null,
-    sourceInfo: SchemaSourceInfo = null,
-    systemParameters: SchemaSystemParameters = null,
-    systemTypes: js.Array[SchemaType] = null,
-    title: String = null,
-    types: js.Array[SchemaType] = null,
-    usage: SchemaUsage = null
-  ): SchemaGoogleApiService = {
+  def apply(): SchemaGoogleApiService = {
     val __obj = js.Dynamic.literal()
-    if (apis != null) __obj.updateDynamic("apis")(apis.asInstanceOf[js.Any])
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
-    if (backend != null) __obj.updateDynamic("backend")(backend.asInstanceOf[js.Any])
-    if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
-    if (!js.isUndefined(configVersion)) __obj.updateDynamic("configVersion")(configVersion.get.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (customError != null) __obj.updateDynamic("customError")(customError.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
-    if (enums != null) __obj.updateDynamic("enums")(enums.asInstanceOf[js.Any])
-    if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (monitoredResources != null) __obj.updateDynamic("monitoredResources")(monitoredResources.asInstanceOf[js.Any])
-    if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (producerProjectId != null) __obj.updateDynamic("producerProjectId")(producerProjectId.asInstanceOf[js.Any])
-    if (quota != null) __obj.updateDynamic("quota")(quota.asInstanceOf[js.Any])
-    if (sourceInfo != null) __obj.updateDynamic("sourceInfo")(sourceInfo.asInstanceOf[js.Any])
-    if (systemParameters != null) __obj.updateDynamic("systemParameters")(systemParameters.asInstanceOf[js.Any])
-    if (systemTypes != null) __obj.updateDynamic("systemTypes")(systemTypes.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleApiService]
   }
+  @scala.inline
+  implicit class SchemaGoogleApiServiceOps[Self <: SchemaGoogleApiService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApisVarargs(value: SchemaApi*): Self = this.set("apis", js.Array(value :_*))
+    @scala.inline
+    def setApis(value: js.Array[SchemaApi]): Self = this.set("apis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApis: Self = this.set("apis", js.undefined)
+    @scala.inline
+    def setAuthentication(value: SchemaAuthentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    @scala.inline
+    def setBackend(value: SchemaBackend): Self = this.set("backend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackend: Self = this.set("backend", js.undefined)
+    @scala.inline
+    def setBilling(value: SchemaBilling): Self = this.set("billing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBilling: Self = this.set("billing", js.undefined)
+    @scala.inline
+    def setConfigVersion(value: Double): Self = this.set("configVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigVersion: Self = this.set("configVersion", js.undefined)
+    @scala.inline
+    def setContext(value: SchemaContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setControl(value: SchemaControl): Self = this.set("control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControl: Self = this.set("control", js.undefined)
+    @scala.inline
+    def setCustomError(value: SchemaCustomError): Self = this.set("customError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomError: Self = this.set("customError", js.undefined)
+    @scala.inline
+    def setDocumentation(value: SchemaDocumentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setEndpointsVarargs(value: SchemaEndpoint*): Self = this.set("endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: js.Array[SchemaEndpoint]): Self = this.set("endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("endpoints", js.undefined)
+    @scala.inline
+    def setEnumsVarargs(value: SchemaEnum*): Self = this.set("enums", js.Array(value :_*))
+    @scala.inline
+    def setEnums(value: js.Array[SchemaEnum]): Self = this.set("enums", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnums: Self = this.set("enums", js.undefined)
+    @scala.inline
+    def setExperimental(value: SchemaExperimental): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    @scala.inline
+    def setHttp(value: SchemaHttp): Self = this.set("http", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp: Self = this.set("http", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLogging(value: SchemaLogging): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setLogsVarargs(value: SchemaLogDescriptor*): Self = this.set("logs", js.Array(value :_*))
+    @scala.inline
+    def setLogs(value: js.Array[SchemaLogDescriptor]): Self = this.set("logs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogs: Self = this.set("logs", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: SchemaMetricDescriptor*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[SchemaMetricDescriptor]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setMonitoredResourcesVarargs(value: SchemaMonitoredResourceDescriptor*): Self = this.set("monitoredResources", js.Array(value :_*))
+    @scala.inline
+    def setMonitoredResources(value: js.Array[SchemaMonitoredResourceDescriptor]): Self = this.set("monitoredResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoredResources: Self = this.set("monitoredResources", js.undefined)
+    @scala.inline
+    def setMonitoring(value: SchemaMonitoring): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("monitoring", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProducerProjectId(value: String): Self = this.set("producerProjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducerProjectId: Self = this.set("producerProjectId", js.undefined)
+    @scala.inline
+    def setQuota(value: SchemaQuota): Self = this.set("quota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuota: Self = this.set("quota", js.undefined)
+    @scala.inline
+    def setSourceInfo(value: SchemaSourceInfo): Self = this.set("sourceInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceInfo: Self = this.set("sourceInfo", js.undefined)
+    @scala.inline
+    def setSystemParameters(value: SchemaSystemParameters): Self = this.set("systemParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemParameters: Self = this.set("systemParameters", js.undefined)
+    @scala.inline
+    def setSystemTypesVarargs(value: SchemaType*): Self = this.set("systemTypes", js.Array(value :_*))
+    @scala.inline
+    def setSystemTypes(value: js.Array[SchemaType]): Self = this.set("systemTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemTypes: Self = this.set("systemTypes", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: SchemaType*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[SchemaType]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+    @scala.inline
+    def setUsage(value: SchemaUsage): Self = this.set("usage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsage: Self = this.set("usage", js.undefined)
+  }
+  
 }
 

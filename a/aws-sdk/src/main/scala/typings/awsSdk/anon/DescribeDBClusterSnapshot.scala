@@ -1,6 +1,7 @@
 package typings.awsSdk.anon
 
 import typings.awsSdk.rdsMod.Boolean
+import typings.awsSdk.rdsMod.Filter
 import typings.awsSdk.rdsMod.FilterList
 import typings.awsSdk.rdsMod.IntegerOptional
 import typings.awsSdk.rdsMod.String
@@ -9,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/rds.DescribeDBClusterSnapshotsMessage & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/rds.DescribeDBClusterSnapshotsMessage & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeDBClusterSnapshot extends js.Object {
   @JSName("$waiter")
@@ -50,28 +51,60 @@ trait DescribeDBClusterSnapshot extends js.Object {
 
 object DescribeDBClusterSnapshot {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    DBClusterIdentifier: String = null,
-    DBClusterSnapshotIdentifier: String = null,
-    Filters: FilterList = null,
-    IncludePublic: js.UndefOr[Boolean] = js.undefined,
-    IncludeShared: js.UndefOr[Boolean] = js.undefined,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    SnapshotType: String = null
-  ): DescribeDBClusterSnapshot = {
+  def apply(): DescribeDBClusterSnapshot = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (DBClusterSnapshotIdentifier != null) __obj.updateDynamic("DBClusterSnapshotIdentifier")(DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludePublic)) __obj.updateDynamic("IncludePublic")(IncludePublic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeShared)) __obj.updateDynamic("IncludeShared")(IncludeShared.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (SnapshotType != null) __obj.updateDynamic("SnapshotType")(SnapshotType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBClusterSnapshot]
   }
+  @scala.inline
+  implicit class DescribeDBClusterSnapshotOps[Self <: DescribeDBClusterSnapshot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setDBClusterSnapshotIdentifier(value: String): Self = this.set("DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterSnapshotIdentifier: Self = this.set("DBClusterSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setIncludePublic(value: Boolean): Self = this.set("IncludePublic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludePublic: Self = this.set("IncludePublic", js.undefined)
+    @scala.inline
+    def setIncludeShared(value: Boolean): Self = this.set("IncludeShared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeShared: Self = this.set("IncludeShared", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setSnapshotType(value: String): Self = this.set("SnapshotType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotType: Self = this.set("SnapshotType", js.undefined)
+  }
+  
 }
 

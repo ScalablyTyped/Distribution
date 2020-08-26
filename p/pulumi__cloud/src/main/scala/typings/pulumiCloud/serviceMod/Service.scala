@@ -29,6 +29,7 @@ trait Service extends js.Object {
     * Only usable on the inside.
     */
   def getEndpoint(): js.Promise[Endpoint] = js.native
+  def getEndpoint(containerName: js.UndefOr[scala.Nothing], containerPort: Double): js.Promise[Endpoint] = js.native
   def getEndpoint(containerName: String): js.Promise[Endpoint] = js.native
   def getEndpoint(containerName: String, containerPort: Double): js.Promise[Endpoint] = js.native
 }

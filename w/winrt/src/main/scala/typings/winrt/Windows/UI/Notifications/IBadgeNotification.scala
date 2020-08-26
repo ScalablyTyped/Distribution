@@ -6,9 +6,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBadgeNotification extends js.Object {
-  var content: XmlDocument
-  var expirationTime: Date
+  var content: XmlDocument = js.native
+  var expirationTime: Date = js.native
 }
 
 object IBadgeNotification {
@@ -17,5 +18,22 @@ object IBadgeNotification {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBadgeNotification]
   }
+  @scala.inline
+  implicit class IBadgeNotificationOps[Self <: IBadgeNotification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: XmlDocument): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpirationTime(value: Date): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+  }
+  
 }
 

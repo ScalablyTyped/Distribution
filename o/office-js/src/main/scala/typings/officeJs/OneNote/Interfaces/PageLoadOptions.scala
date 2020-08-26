@@ -10,100 +10,133 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: OneNoteApi 1.1]
   */
+@js.native
 trait PageLoadOptions extends js.Object {
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the ClassNotebookPageSource to the page.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var classNotebookPageSource: js.UndefOr[Boolean] = js.undefined
+  var classNotebookPageSource: js.UndefOr[Boolean] = js.native
   /**
     *
     * The client url of the page. Read only
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var clientUrl: js.UndefOr[Boolean] = js.undefined
+  var clientUrl: js.UndefOr[Boolean] = js.native
   /**
     *
     * The collection of PageContent objects on the page. Read only
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var contents: js.UndefOr[PageContentCollectionLoadOptions] = js.undefined
+  var contents: js.UndefOr[PageContentCollectionLoadOptions] = js.native
   /**
     *
     * Gets the ID of the page. Read-only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.undefined
+  var id: js.UndefOr[Boolean] = js.native
   /**
     *
     * Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkAnalysisOrNull: js.UndefOr[InkAnalysisLoadOptions] = js.undefined
+  var inkAnalysisOrNull: js.UndefOr[InkAnalysisLoadOptions] = js.native
   /**
     *
     * Gets or sets the indentation level of the page.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var pageLevel: js.UndefOr[Boolean] = js.undefined
+  var pageLevel: js.UndefOr[Boolean] = js.native
   /**
     *
     * Gets the section that contains the page.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentSection: js.UndefOr[SectionLoadOptions] = js.undefined
+  var parentSection: js.UndefOr[SectionLoadOptions] = js.native
   /**
     *
     * Gets or sets the title of the page.
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var title: js.UndefOr[Boolean] = js.undefined
+  var title: js.UndefOr[Boolean] = js.native
   /**
     *
     * The web url of the page. Read only
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var webUrl: js.UndefOr[Boolean] = js.undefined
+  var webUrl: js.UndefOr[Boolean] = js.native
 }
 
 object PageLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    classNotebookPageSource: js.UndefOr[Boolean] = js.undefined,
-    clientUrl: js.UndefOr[Boolean] = js.undefined,
-    contents: PageContentCollectionLoadOptions = null,
-    id: js.UndefOr[Boolean] = js.undefined,
-    inkAnalysisOrNull: InkAnalysisLoadOptions = null,
-    pageLevel: js.UndefOr[Boolean] = js.undefined,
-    parentSection: SectionLoadOptions = null,
-    title: js.UndefOr[Boolean] = js.undefined,
-    webUrl: js.UndefOr[Boolean] = js.undefined
-  ): PageLoadOptions = {
+  def apply(): PageLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(classNotebookPageSource)) __obj.updateDynamic("classNotebookPageSource")(classNotebookPageSource.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientUrl)) __obj.updateDynamic("clientUrl")(clientUrl.get.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageLevel)) __obj.updateDynamic("pageLevel")(pageLevel.get.asInstanceOf[js.Any])
-    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(webUrl)) __obj.updateDynamic("webUrl")(webUrl.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageLoadOptions]
   }
+  @scala.inline
+  implicit class PageLoadOptionsOps[Self <: PageLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setClassNotebookPageSource(value: Boolean): Self = this.set("classNotebookPageSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassNotebookPageSource: Self = this.set("classNotebookPageSource", js.undefined)
+    @scala.inline
+    def setClientUrl(value: Boolean): Self = this.set("clientUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientUrl: Self = this.set("clientUrl", js.undefined)
+    @scala.inline
+    def setContents(value: PageContentCollectionLoadOptions): Self = this.set("contents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContents: Self = this.set("contents", js.undefined)
+    @scala.inline
+    def setId(value: Boolean): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInkAnalysisOrNull(value: InkAnalysisLoadOptions): Self = this.set("inkAnalysisOrNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInkAnalysisOrNull: Self = this.set("inkAnalysisOrNull", js.undefined)
+    @scala.inline
+    def setPageLevel(value: Boolean): Self = this.set("pageLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageLevel: Self = this.set("pageLevel", js.undefined)
+    @scala.inline
+    def setParentSection(value: SectionLoadOptions): Self = this.set("parentSection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentSection: Self = this.set("parentSection", js.undefined)
+    @scala.inline
+    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWebUrl(value: Boolean): Self = this.set("webUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebUrl: Self = this.set("webUrl", js.undefined)
+  }
+  
 }
 

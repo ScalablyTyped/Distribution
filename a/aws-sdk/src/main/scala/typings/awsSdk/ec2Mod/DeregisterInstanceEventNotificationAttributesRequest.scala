@@ -18,14 +18,30 @@ trait DeregisterInstanceEventNotificationAttributesRequest extends js.Object {
 
 object DeregisterInstanceEventNotificationAttributesRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    InstanceTagAttribute: DeregisterInstanceTagAttributeRequest = null
-  ): DeregisterInstanceEventNotificationAttributesRequest = {
+  def apply(): DeregisterInstanceEventNotificationAttributesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (InstanceTagAttribute != null) __obj.updateDynamic("InstanceTagAttribute")(InstanceTagAttribute.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterInstanceEventNotificationAttributesRequest]
   }
+  @scala.inline
+  implicit class DeregisterInstanceEventNotificationAttributesRequestOps[Self <: DeregisterInstanceEventNotificationAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setInstanceTagAttribute(value: DeregisterInstanceTagAttributeRequest): Self = this.set("InstanceTagAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTagAttribute: Self = this.set("InstanceTagAttribute", js.undefined)
+  }
+  
 }
 

@@ -229,6 +229,7 @@ trait HTMLFormElement extends js.Object {
   val uniqueNumber: Double = js.native
   var xmsAcceleratorKey: String = js.native
   def apply(): js.Any = js.native
+  def apply(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def apply(name: js.Any): js.Any = js.native
   def apply(name: js.Any, index: js.Any): js.Any = js.native
   def FireEvent(bstrEventName: String): Boolean = js.native
@@ -243,6 +244,7 @@ trait HTMLFormElement extends js.Object {
     * @param filename [filename='']
     */
   def appendNameFilePair(): Unit = js.native
+  def appendNameFilePair(name: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
   def appendNameFilePair(name: String): Unit = js.native
   def appendNameFilePair(name: String, filename: String): Unit = js.native
   /**
@@ -250,6 +252,7 @@ trait HTMLFormElement extends js.Object {
     * @param value [value='']
     */
   def appendNameValuePair(): Unit = js.native
+  def appendNameValuePair(name: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def appendNameValuePair(name: String): Unit = js.native
   def appendNameValuePair(name: String, value: String): Unit = js.native
   def applyElement(apply: IHTMLElement, where: String): IHTMLElement = js.native
@@ -304,6 +307,7 @@ trait HTMLFormElement extends js.Object {
   def insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
   def item(): js.Any = js.native
+  def item(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def item(name: js.Any): js.Any = js.native
   def item(name: js.Any, index: js.Any): js.Any = js.native
   def mergeAttributes(mergeThis: IHTMLElement): Unit = js.native

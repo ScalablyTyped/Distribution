@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSInterfaceDeclaration
   extends Node
      with Declaration
      with Statement {
-  var body: TSInterfaceBody
-  var declare: Boolean | Null
-  var `extends`: js.Array[TSExpressionWithTypeArguments] | Null
-  var id: Identifier_
-  var typeParameters: TypeParameterDeclaration_ | Null
+  var body: TSInterfaceBody = js.native
+  var declare: Boolean | Null = js.native
+  var `extends`: js.Array[TSExpressionWithTypeArguments] | Null = js.native
+  var id: Identifier_ = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null = js.native
   @JSName("type")
-  var type_TSInterfaceDeclaration: typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration
+  var type_TSInterfaceDeclaration: typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration = js.native
 }
 
 @JSImport("babel-types", "TSInterfaceDeclaration")
@@ -22,9 +23,37 @@ trait TSInterfaceDeclaration
 object TSInterfaceDeclaration extends js.Object {
   def apply(
     id: Identifier_,
-    typeParameters: js.UndefOr[Null | TypeParameterDeclaration_],
-    extends_ : js.UndefOr[js.Array[TSExpressionWithTypeArguments] | Null],
+    typeParameters: js.UndefOr[scala.Nothing],
+    extends_ : js.UndefOr[scala.Nothing],
     body: TSInterfaceBody
   ): TSInterfaceDeclaration = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: js.UndefOr[scala.Nothing],
+    extends_ : js.Array[TSExpressionWithTypeArguments],
+    body: TSInterfaceBody
+  ): TSInterfaceDeclaration = js.native
+  def apply(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
+  def apply(id: Identifier_, typeParameters: Null, extends_ : js.UndefOr[scala.Nothing], body: TSInterfaceBody): TSInterfaceDeclaration = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: Null,
+    extends_ : js.Array[TSExpressionWithTypeArguments],
+    body: TSInterfaceBody
+  ): TSInterfaceDeclaration = js.native
+  def apply(id: Identifier_, typeParameters: Null, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TypeParameterDeclaration_,
+    extends_ : js.UndefOr[scala.Nothing],
+    body: TSInterfaceBody
+  ): TSInterfaceDeclaration = js.native
+  def apply(
+    id: Identifier_,
+    typeParameters: TypeParameterDeclaration_,
+    extends_ : js.Array[TSExpressionWithTypeArguments],
+    body: TSInterfaceBody
+  ): TSInterfaceDeclaration = js.native
+  def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
 }
 

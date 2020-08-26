@@ -32,6 +32,17 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def createAttachment(
+    documentLink: String,
+    body: IAttachment,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def createAttachment(documentLink: String, body: IAttachment, options: ICreateOptions): Boolean = js.native
   def createAttachment(
     documentLink: String,
@@ -55,6 +66,17 @@ trait ICollection extends IQueryAPI {
   def createDocument(
     collectionLink: String,
     body: js.Object,
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def createDocument(
+    collectionLink: String,
+    body: js.Object,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IRequestCallbackError, 
       /* resources */ js.Object, 
@@ -90,6 +112,16 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def deleteAttachment(
+    attachmentLink: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def deleteAttachment(attachmentLink: String, options: IDeleteOptions): Boolean = js.native
   def deleteAttachment(
     attachmentLink: String,
@@ -110,6 +142,16 @@ trait ICollection extends IQueryAPI {
   def deleteDocument(documentLink: String): Boolean = js.native
   def deleteDocument(
     documentLink: String,
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def deleteDocument(
+    documentLink: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IRequestCallbackError, 
       /* resources */ js.Object, 
@@ -150,6 +192,17 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def queryAttachments(
+    documentLink: String,
+    query: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def queryAttachments(documentLink: String, query: String, options: IFeedOptions): Boolean = js.native
   def queryAttachments(
     documentLink: String,
@@ -166,6 +219,17 @@ trait ICollection extends IQueryAPI {
   def queryAttachments(
     documentLink: String,
     query: IParameterizedQuery,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def queryAttachments(
+    documentLink: String,
+    query: IParameterizedQuery,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IFeedCallbackError, 
       /* resources */ js.Array[js.Object], 
@@ -203,6 +267,17 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def queryDocuments(
+    collectionLink: String,
+    filterQuery: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def queryDocuments(collectionLink: String, filterQuery: String, options: IFeedOptions): Boolean = js.native
   def queryDocuments(
     collectionLink: String,
@@ -219,6 +294,17 @@ trait ICollection extends IQueryAPI {
   def queryDocuments(
     collectionLink: String,
     filterQuery: IParameterizedQuery,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def queryDocuments(
+    collectionLink: String,
+    filterQuery: IParameterizedQuery,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IFeedCallbackError, 
       /* resources */ js.Array[js.Object], 
@@ -252,6 +338,18 @@ trait ICollection extends IQueryAPI {
     ]
   ): Boolean = js.native
   @JSName("queryDocuments")
+  def queryDocuments_T[T](
+    collectionLink: String,
+    filterQuery: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  @JSName("queryDocuments")
   def queryDocuments_T[T](collectionLink: String, filterQuery: String, options: IFeedOptions): Boolean = js.native
   @JSName("queryDocuments")
   def queryDocuments_T[T](
@@ -271,6 +369,18 @@ trait ICollection extends IQueryAPI {
   def queryDocuments_T[T](
     collectionLink: String,
     filterQuery: IParameterizedQuery,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  @JSName("queryDocuments")
+  def queryDocuments_T[T](
+    collectionLink: String,
+    filterQuery: IParameterizedQuery,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IFeedCallbackError, 
       /* resources */ js.Array[T], 
@@ -308,6 +418,16 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def readAttachment(
+    attachmenLink: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def readAttachment(attachmenLink: String, options: IReadOptions): Boolean = js.native
   def readAttachment(
     attachmenLink: String,
@@ -328,6 +448,16 @@ trait ICollection extends IQueryAPI {
   def readAttachments(documentLink: String): Boolean = js.native
   def readAttachments(
     documentLink: String,
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def readAttachments(
+    documentLink: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IFeedCallbackError, 
       /* resources */ js.Array[js.Object], 
@@ -362,6 +492,16 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def readDocument(
+    documentLink: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def readDocument(documentLink: String, options: IReadOptions): Boolean = js.native
   def readDocument(
     documentLink: String,
@@ -375,6 +515,17 @@ trait ICollection extends IQueryAPI {
   ): Boolean = js.native
   @JSName("readDocument")
   def readDocument_T[T](documentLink: String): Boolean = js.native
+  @JSName("readDocument")
+  def readDocument_T[T](
+    documentLink: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ T, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   @JSName("readDocument")
   def readDocument_T[T](documentLink: String, options: IReadOptions): Boolean = js.native
   @JSName("readDocument")
@@ -404,6 +555,16 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def readDocuments(
+    collectionLink: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[js.Object], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def readDocuments(collectionLink: String, options: IFeedOptions): Boolean = js.native
   def readDocuments(
     collectionLink: String,
@@ -417,6 +578,17 @@ trait ICollection extends IQueryAPI {
   ): Boolean = js.native
   @JSName("readDocuments")
   def readDocuments_T[T](collectionLink: String): Boolean = js.native
+  @JSName("readDocuments")
+  def readDocuments_T[T](
+    collectionLink: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IFeedCallbackError, 
+      /* resources */ js.Array[T], 
+      /* options */ IFeedCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   @JSName("readDocuments")
   def readDocuments_T[T](collectionLink: String, options: IFeedOptions): Boolean = js.native
   @JSName("readDocuments")
@@ -441,6 +613,17 @@ trait ICollection extends IQueryAPI {
   def replaceAttachment(
     attachmentLink: String,
     attachment: js.Object,
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def replaceAttachment(
+    attachmentLink: String,
+    attachment: js.Object,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IRequestCallbackError, 
       /* resources */ js.Object, 
@@ -478,6 +661,17 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def replaceDocument(
+    documentLink: String,
+    document: js.Object,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def replaceDocument(documentLink: String, document: js.Object, options: IReplaceOptions): Boolean = js.native
   def replaceDocument(
     documentLink: String,
@@ -508,6 +702,17 @@ trait ICollection extends IQueryAPI {
       Unit
     ]
   ): Boolean = js.native
+  def upsertAttachment(
+    documentLink: String,
+    body: js.Object,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
   def upsertAttachment(documentLink: String, body: js.Object, options: IUpsertOptions): Boolean = js.native
   def upsertAttachment(
     documentLink: String,
@@ -531,6 +736,17 @@ trait ICollection extends IQueryAPI {
   def upsertDocument(
     collectionLink: String,
     body: js.Object,
+    callback: js.Function3[
+      /* error */ IRequestCallbackError, 
+      /* resources */ js.Object, 
+      /* options */ IRequestCallbackOptions, 
+      Unit
+    ]
+  ): Boolean = js.native
+  def upsertDocument(
+    collectionLink: String,
+    body: js.Object,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function3[
       /* error */ IRequestCallbackError, 
       /* resources */ js.Object, 

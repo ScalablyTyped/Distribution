@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SchemaDefinition extends js.Object {
-  var allowedValues: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.undefined
-  var autoValue: js.UndefOr[js.Function0[_]] = js.undefined
-  var blackbox: js.UndefOr[Boolean] = js.undefined
+  var allowedValues: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.native
+  var autoValue: js.UndefOr[js.Function0[_]] = js.native
+  var blackbox: js.UndefOr[Boolean] = js.native
   /**
     * For custom validation function. If you use an arrow function the context
     * for "this" will not be available. Use "custom: function() { return
@@ -20,65 +21,130 @@ trait SchemaDefinition extends js.Object {
       /* this */ CustomValidationContext, 
       js.UndefOr[String | SimpleSchemaValidationError]
     ]
-  ] = js.undefined
-  var decimal: js.UndefOr[Boolean] = js.undefined
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
-  var exclusiveMax: js.UndefOr[Boolean] = js.undefined
-  var exclusiveMin: js.UndefOr[Boolean] = js.undefined
-  var label: js.UndefOr[String | js.Function0[String]] = js.undefined
-  var max: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.undefined
-  var maxCount: js.UndefOr[Double | js.Function0[Double]] = js.undefined
-  var min: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.undefined
-  var minCount: js.UndefOr[Double | js.Function0[Double]] = js.undefined
-  var optional: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
-  var regEx: js.UndefOr[RegExp | js.Array[RegExp]] = js.undefined
-  var trim: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.Any
+  ] = js.native
+  var decimal: js.UndefOr[Boolean] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.native
+  var exclusiveMax: js.UndefOr[Boolean] = js.native
+  var exclusiveMin: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[String | js.Function0[String]] = js.native
+  var max: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.native
+  var maxCount: js.UndefOr[Double | js.Function0[Double]] = js.native
+  var min: js.UndefOr[Double | Boolean | Date | (js.Function0[Double | Boolean | Date])] = js.native
+  var minCount: js.UndefOr[Double | js.Function0[Double]] = js.native
+  var optional: js.UndefOr[Boolean | js.Function0[Boolean]] = js.native
+  var regEx: js.UndefOr[RegExp | js.Array[RegExp]] = js.native
+  var trim: js.UndefOr[Boolean] = js.native
+  var `type`: js.Any = js.native
 }
 
 object SchemaDefinition {
   @scala.inline
-  def apply(
-    `type`: js.Any,
-    allowedValues: js.Array[_] | js.Function0[js.Array[_]] = null,
-    autoValue: () => _ = null,
-    blackbox: js.UndefOr[Boolean] = js.undefined,
-    custom: js.ThisFunction0[
-      /* this */ CustomValidationContext, 
-      js.UndefOr[String | SimpleSchemaValidationError]
-    ] = null,
-    decimal: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: js.Any = null,
-    exclusiveMax: js.UndefOr[Boolean] = js.undefined,
-    exclusiveMin: js.UndefOr[Boolean] = js.undefined,
-    label: String | js.Function0[String] = null,
-    max: Double | Boolean | Date | (js.Function0[Double | Boolean | Date]) = null,
-    maxCount: Double | js.Function0[Double] = null,
-    min: Double | Boolean | Date | (js.Function0[Double | Boolean | Date]) = null,
-    minCount: Double | js.Function0[Double] = null,
-    optional: Boolean | js.Function0[Boolean] = null,
-    regEx: RegExp | js.Array[RegExp] = null,
-    trim: js.UndefOr[Boolean] = js.undefined
-  ): SchemaDefinition = {
+  def apply(`type`: js.Any): SchemaDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues.asInstanceOf[js.Any])
-    if (autoValue != null) __obj.updateDynamic("autoValue")(js.Any.fromFunction0(autoValue))
-    if (!js.isUndefined(blackbox)) __obj.updateDynamic("blackbox")(blackbox.get.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimal)) __obj.updateDynamic("decimal")(decimal.get.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMax)) __obj.updateDynamic("exclusiveMax")(exclusiveMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMin)) __obj.updateDynamic("exclusiveMin")(exclusiveMin.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxCount != null) __obj.updateDynamic("maxCount")(maxCount.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minCount != null) __obj.updateDynamic("minCount")(minCount.asInstanceOf[js.Any])
-    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (regEx != null) __obj.updateDynamic("regEx")(regEx.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDefinition]
   }
+  @scala.inline
+  implicit class SchemaDefinitionOps[Self <: SchemaDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: js.Any): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedValuesVarargs(value: js.Any*): Self = this.set("allowedValues", js.Array(value :_*))
+    @scala.inline
+    def setAllowedValuesFunction0(value: () => js.Array[_]): Self = this.set("allowedValues", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAllowedValues(value: js.Array[_] | js.Function0[js.Array[_]]): Self = this.set("allowedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedValues: Self = this.set("allowedValues", js.undefined)
+    @scala.inline
+    def setAutoValue(value: () => _): Self = this.set("autoValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAutoValue: Self = this.set("autoValue", js.undefined)
+    @scala.inline
+    def setBlackbox(value: Boolean): Self = this.set("blackbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlackbox: Self = this.set("blackbox", js.undefined)
+    @scala.inline
+    def setCustom(
+      value: js.ThisFunction0[
+          /* this */ CustomValidationContext, 
+          js.UndefOr[String | SimpleSchemaValidationError]
+        ]
+    ): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDecimal(value: Boolean): Self = this.set("decimal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimal: Self = this.set("decimal", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setExclusiveMax(value: Boolean): Self = this.set("exclusiveMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveMax: Self = this.set("exclusiveMax", js.undefined)
+    @scala.inline
+    def setExclusiveMin(value: Boolean): Self = this.set("exclusiveMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveMin: Self = this.set("exclusiveMin", js.undefined)
+    @scala.inline
+    def setLabelFunction0(value: () => String): Self = this.set("label", js.Any.fromFunction0(value))
+    @scala.inline
+    def setLabel(value: String | js.Function0[String]): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMaxFunction0(value: () => Double | Boolean | Date): Self = this.set("max", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMax(value: Double | Boolean | Date | (js.Function0[Double | Boolean | Date])): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxCountFunction0(value: () => Double): Self = this.set("maxCount", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMaxCount(value: Double | js.Function0[Double]): Self = this.set("maxCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCount: Self = this.set("maxCount", js.undefined)
+    @scala.inline
+    def setMinFunction0(value: () => Double | Boolean | Date): Self = this.set("min", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMin(value: Double | Boolean | Date | (js.Function0[Double | Boolean | Date])): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setMinCountFunction0(value: () => Double): Self = this.set("minCount", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMinCount(value: Double | js.Function0[Double]): Self = this.set("minCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCount: Self = this.set("minCount", js.undefined)
+    @scala.inline
+    def setOptionalFunction0(value: () => Boolean): Self = this.set("optional", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOptional(value: Boolean | js.Function0[Boolean]): Self = this.set("optional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptional: Self = this.set("optional", js.undefined)
+    @scala.inline
+    def setRegExVarargs(value: RegExp*): Self = this.set("regEx", js.Array(value :_*))
+    @scala.inline
+    def setRegEx(value: RegExp | js.Array[RegExp]): Self = this.set("regEx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegEx: Self = this.set("regEx", js.undefined)
+    @scala.inline
+    def setTrim(value: Boolean): Self = this.set("trim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrim: Self = this.set("trim", js.undefined)
+  }
+  
 }
 

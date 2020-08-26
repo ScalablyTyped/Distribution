@@ -34,22 +34,52 @@ trait DirectoryConnectSettingsDescription extends js.Object {
 
 object DirectoryConnectSettingsDescription {
   @scala.inline
-  def apply(
-    AvailabilityZones: AvailabilityZones = null,
-    ConnectIps: IpAddrs = null,
-    CustomerUserName: UserName = null,
-    SecurityGroupId: SecurityGroupId = null,
-    SubnetIds: SubnetIds = null,
-    VpcId: VpcId = null
-  ): DirectoryConnectSettingsDescription = {
+  def apply(): DirectoryConnectSettingsDescription = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (ConnectIps != null) __obj.updateDynamic("ConnectIps")(ConnectIps.asInstanceOf[js.Any])
-    if (CustomerUserName != null) __obj.updateDynamic("CustomerUserName")(CustomerUserName.asInstanceOf[js.Any])
-    if (SecurityGroupId != null) __obj.updateDynamic("SecurityGroupId")(SecurityGroupId.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryConnectSettingsDescription]
   }
+  @scala.inline
+  implicit class DirectoryConnectSettingsDescriptionOps[Self <: DirectoryConnectSettingsDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setConnectIpsVarargs(value: IpAddr*): Self = this.set("ConnectIps", js.Array(value :_*))
+    @scala.inline
+    def setConnectIps(value: IpAddrs): Self = this.set("ConnectIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectIps: Self = this.set("ConnectIps", js.undefined)
+    @scala.inline
+    def setCustomerUserName(value: UserName): Self = this.set("CustomerUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerUserName: Self = this.set("CustomerUserName", js.undefined)
+    @scala.inline
+    def setSecurityGroupId(value: SecurityGroupId): Self = this.set("SecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupId: Self = this.set("SecurityGroupId", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

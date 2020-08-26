@@ -4,93 +4,158 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvertedIndexCharNode extends js.Object {
-  var a: js.UndefOr[InvertedIndexNode] = js.undefined
-  var b: js.UndefOr[InvertedIndexNode] = js.undefined
-  var c: js.UndefOr[InvertedIndexNode] = js.undefined
-  var d: js.UndefOr[InvertedIndexNode] = js.undefined
-  var e: js.UndefOr[InvertedIndexNode] = js.undefined
-  var f: js.UndefOr[InvertedIndexNode] = js.undefined
-  var g: js.UndefOr[InvertedIndexNode] = js.undefined
-  var h: js.UndefOr[InvertedIndexNode] = js.undefined
-  var i: js.UndefOr[InvertedIndexNode] = js.undefined
-  var j: js.UndefOr[InvertedIndexNode] = js.undefined
-  var k: js.UndefOr[InvertedIndexNode] = js.undefined
-  var l: js.UndefOr[InvertedIndexNode] = js.undefined
-  var m: js.UndefOr[InvertedIndexNode] = js.undefined
-  var n: js.UndefOr[InvertedIndexNode] = js.undefined
-  var o: js.UndefOr[InvertedIndexNode] = js.undefined
-  var p: js.UndefOr[InvertedIndexNode] = js.undefined
-  var q: js.UndefOr[InvertedIndexNode] = js.undefined
-  var r: js.UndefOr[InvertedIndexNode] = js.undefined
-  var s: js.UndefOr[InvertedIndexNode] = js.undefined
-  var t: js.UndefOr[InvertedIndexNode] = js.undefined
-  var u: js.UndefOr[InvertedIndexNode] = js.undefined
-  var v: js.UndefOr[InvertedIndexNode] = js.undefined
-  var w: js.UndefOr[InvertedIndexNode] = js.undefined
-  var x: js.UndefOr[InvertedIndexNode] = js.undefined
-  var y: js.UndefOr[InvertedIndexNode] = js.undefined
-  var z: js.UndefOr[InvertedIndexNode] = js.undefined
+  var a: js.UndefOr[InvertedIndexNode] = js.native
+  var b: js.UndefOr[InvertedIndexNode] = js.native
+  var c: js.UndefOr[InvertedIndexNode] = js.native
+  var d: js.UndefOr[InvertedIndexNode] = js.native
+  var e: js.UndefOr[InvertedIndexNode] = js.native
+  var f: js.UndefOr[InvertedIndexNode] = js.native
+  var g: js.UndefOr[InvertedIndexNode] = js.native
+  var h: js.UndefOr[InvertedIndexNode] = js.native
+  var i: js.UndefOr[InvertedIndexNode] = js.native
+  var j: js.UndefOr[InvertedIndexNode] = js.native
+  var k: js.UndefOr[InvertedIndexNode] = js.native
+  var l: js.UndefOr[InvertedIndexNode] = js.native
+  var m: js.UndefOr[InvertedIndexNode] = js.native
+  var n: js.UndefOr[InvertedIndexNode] = js.native
+  var o: js.UndefOr[InvertedIndexNode] = js.native
+  var p: js.UndefOr[InvertedIndexNode] = js.native
+  var q: js.UndefOr[InvertedIndexNode] = js.native
+  var r: js.UndefOr[InvertedIndexNode] = js.native
+  var s: js.UndefOr[InvertedIndexNode] = js.native
+  var t: js.UndefOr[InvertedIndexNode] = js.native
+  var u: js.UndefOr[InvertedIndexNode] = js.native
+  var v: js.UndefOr[InvertedIndexNode] = js.native
+  var w: js.UndefOr[InvertedIndexNode] = js.native
+  var x: js.UndefOr[InvertedIndexNode] = js.native
+  var y: js.UndefOr[InvertedIndexNode] = js.native
+  var z: js.UndefOr[InvertedIndexNode] = js.native
 }
 
 object InvertedIndexCharNode {
   @scala.inline
-  def apply(
-    a: InvertedIndexNode = null,
-    b: InvertedIndexNode = null,
-    c: InvertedIndexNode = null,
-    d: InvertedIndexNode = null,
-    e: InvertedIndexNode = null,
-    f: InvertedIndexNode = null,
-    g: InvertedIndexNode = null,
-    h: InvertedIndexNode = null,
-    i: InvertedIndexNode = null,
-    j: InvertedIndexNode = null,
-    k: InvertedIndexNode = null,
-    l: InvertedIndexNode = null,
-    m: InvertedIndexNode = null,
-    n: InvertedIndexNode = null,
-    o: InvertedIndexNode = null,
-    p: InvertedIndexNode = null,
-    q: InvertedIndexNode = null,
-    r: InvertedIndexNode = null,
-    s: InvertedIndexNode = null,
-    t: InvertedIndexNode = null,
-    u: InvertedIndexNode = null,
-    v: InvertedIndexNode = null,
-    w: InvertedIndexNode = null,
-    x: InvertedIndexNode = null,
-    y: InvertedIndexNode = null,
-    z: InvertedIndexNode = null
-  ): InvertedIndexCharNode = {
+  def apply(): InvertedIndexCharNode = {
     val __obj = js.Dynamic.literal()
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
-    if (j != null) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (l != null) __obj.updateDynamic("l")(l.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (o != null) __obj.updateDynamic("o")(o.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (t != null) __obj.updateDynamic("t")(t.asInstanceOf[js.Any])
-    if (u != null) __obj.updateDynamic("u")(u.asInstanceOf[js.Any])
-    if (v != null) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvertedIndexCharNode]
   }
+  @scala.inline
+  implicit class InvertedIndexCharNodeOps[Self <: InvertedIndexCharNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA(value: InvertedIndexNode): Self = this.set("a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA: Self = this.set("a", js.undefined)
+    @scala.inline
+    def setB(value: InvertedIndexNode): Self = this.set("b", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteB: Self = this.set("b", js.undefined)
+    @scala.inline
+    def setC(value: InvertedIndexNode): Self = this.set("c", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteC: Self = this.set("c", js.undefined)
+    @scala.inline
+    def setD(value: InvertedIndexNode): Self = this.set("d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
+    def setE(value: InvertedIndexNode): Self = this.set("e", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteE: Self = this.set("e", js.undefined)
+    @scala.inline
+    def setF(value: InvertedIndexNode): Self = this.set("f", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF: Self = this.set("f", js.undefined)
+    @scala.inline
+    def setG(value: InvertedIndexNode): Self = this.set("g", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteG: Self = this.set("g", js.undefined)
+    @scala.inline
+    def setH(value: InvertedIndexNode): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setI(value: InvertedIndexNode): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI: Self = this.set("i", js.undefined)
+    @scala.inline
+    def setJ(value: InvertedIndexNode): Self = this.set("j", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJ: Self = this.set("j", js.undefined)
+    @scala.inline
+    def setK(value: InvertedIndexNode): Self = this.set("k", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteK: Self = this.set("k", js.undefined)
+    @scala.inline
+    def setL(value: InvertedIndexNode): Self = this.set("l", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteL: Self = this.set("l", js.undefined)
+    @scala.inline
+    def setM(value: InvertedIndexNode): Self = this.set("m", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM: Self = this.set("m", js.undefined)
+    @scala.inline
+    def setN(value: InvertedIndexNode): Self = this.set("n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteN: Self = this.set("n", js.undefined)
+    @scala.inline
+    def setO(value: InvertedIndexNode): Self = this.set("o", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteO: Self = this.set("o", js.undefined)
+    @scala.inline
+    def setP(value: InvertedIndexNode): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+    @scala.inline
+    def setQ(value: InvertedIndexNode): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setR(value: InvertedIndexNode): Self = this.set("r", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteR: Self = this.set("r", js.undefined)
+    @scala.inline
+    def setS(value: InvertedIndexNode): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS: Self = this.set("s", js.undefined)
+    @scala.inline
+    def setT(value: InvertedIndexNode): Self = this.set("t", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteT: Self = this.set("t", js.undefined)
+    @scala.inline
+    def setU(value: InvertedIndexNode): Self = this.set("u", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteU: Self = this.set("u", js.undefined)
+    @scala.inline
+    def setV(value: InvertedIndexNode): Self = this.set("v", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV: Self = this.set("v", js.undefined)
+    @scala.inline
+    def setW(value: InvertedIndexNode): Self = this.set("w", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteW: Self = this.set("w", js.undefined)
+    @scala.inline
+    def setX(value: InvertedIndexNode): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: InvertedIndexNode): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    @scala.inline
+    def setZ(value: InvertedIndexNode): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+  }
+  
 }
 

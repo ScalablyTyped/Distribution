@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DropDownListPopup extends js.Object {
-  var appendTo: js.UndefOr[String] = js.undefined
-  var origin: js.UndefOr[String] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
+  var appendTo: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.native
 }
 
 object DropDownListPopup {
   @scala.inline
-  def apply(appendTo: String = null, origin: String = null, position: String = null): DropDownListPopup = {
+  def apply(): DropDownListPopup = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownListPopup]
   }
+  @scala.inline
+  implicit class DropDownListPopupOps[Self <: DropDownListPopup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: String): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+  }
+  
 }
 

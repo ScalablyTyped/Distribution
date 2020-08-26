@@ -40,10 +40,9 @@ object CharacterClassElement {
     parent: Alternative | Quantifier | CharacterClass,
     raw: String,
     start: Double,
-    `type`: typings.regexpp.regexppStrings.CharacterSet,
-    value: String = null
+    `type`: typings.regexpp.regexppStrings.CharacterSet
   ): CharacterClassElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CharacterClassElement]
   }

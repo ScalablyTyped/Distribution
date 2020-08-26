@@ -57,26 +57,58 @@ trait SchemaPipeline extends js.Object {
 
 object SchemaPipeline {
   @scala.inline
-  def apply(
-    description: String = null,
-    docker: SchemaDockerExecutor = null,
-    inputParameters: js.Array[SchemaPipelineParameter] = null,
-    name: String = null,
-    outputParameters: js.Array[SchemaPipelineParameter] = null,
-    pipelineId: String = null,
-    projectId: String = null,
-    resources: SchemaPipelineResources = null
-  ): SchemaPipeline = {
+  def apply(): SchemaPipeline = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (docker != null) __obj.updateDynamic("docker")(docker.asInstanceOf[js.Any])
-    if (inputParameters != null) __obj.updateDynamic("inputParameters")(inputParameters.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outputParameters != null) __obj.updateDynamic("outputParameters")(outputParameters.asInstanceOf[js.Any])
-    if (pipelineId != null) __obj.updateDynamic("pipelineId")(pipelineId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPipeline]
   }
+  @scala.inline
+  implicit class SchemaPipelineOps[Self <: SchemaPipeline] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDocker(value: SchemaDockerExecutor): Self = this.set("docker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocker: Self = this.set("docker", js.undefined)
+    @scala.inline
+    def setInputParametersVarargs(value: SchemaPipelineParameter*): Self = this.set("inputParameters", js.Array(value :_*))
+    @scala.inline
+    def setInputParameters(value: js.Array[SchemaPipelineParameter]): Self = this.set("inputParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputParameters: Self = this.set("inputParameters", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOutputParametersVarargs(value: SchemaPipelineParameter*): Self = this.set("outputParameters", js.Array(value :_*))
+    @scala.inline
+    def setOutputParameters(value: js.Array[SchemaPipelineParameter]): Self = this.set("outputParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputParameters: Self = this.set("outputParameters", js.undefined)
+    @scala.inline
+    def setPipelineId(value: String): Self = this.set("pipelineId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineId: Self = this.set("pipelineId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setResources(value: SchemaPipelineResources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+  }
+  
 }
 

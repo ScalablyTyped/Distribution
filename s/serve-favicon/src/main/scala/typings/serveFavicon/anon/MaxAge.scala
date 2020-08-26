@@ -4,19 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaxAge extends js.Object {
   /**
     * The cache-control max-age directive in ms, defaulting to 1 day. This can also be a string accepted by the ms module.
     */
-  var maxAge: js.UndefOr[Double] = js.undefined
+  var maxAge: js.UndefOr[Double] = js.native
 }
 
 object MaxAge {
   @scala.inline
-  def apply(maxAge: js.UndefOr[Double] = js.undefined): MaxAge = {
+  def apply(): MaxAge = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxAge]
   }
+  @scala.inline
+  implicit class MaxAgeOps[Self <: MaxAge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+  }
+  
 }
 

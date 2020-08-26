@@ -4,45 +4,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CountrySelectDropdown extends js.Object {
   var CountrySelectDropdown: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var CountrySelectDropdownDialcodeColumn: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var CountrySelectDropdownFlagColumn: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var CountrySelectDropdownListItem: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var CountrySelectDropdownNameColumn: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var FlagContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object CountrySelectDropdown {
   @scala.inline
-  def apply(
-    CountrySelectDropdown: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    CountrySelectDropdownDialcodeColumn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    CountrySelectDropdownFlagColumn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    CountrySelectDropdownListItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    CountrySelectDropdownNameColumn: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    FlagContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null
-  ): CountrySelectDropdown = {
+  def apply(): CountrySelectDropdown = {
     val __obj = js.Dynamic.literal()
-    if (CountrySelectDropdown != null) __obj.updateDynamic("CountrySelectDropdown")(CountrySelectDropdown.asInstanceOf[js.Any])
-    if (CountrySelectDropdownDialcodeColumn != null) __obj.updateDynamic("CountrySelectDropdownDialcodeColumn")(CountrySelectDropdownDialcodeColumn.asInstanceOf[js.Any])
-    if (CountrySelectDropdownFlagColumn != null) __obj.updateDynamic("CountrySelectDropdownFlagColumn")(CountrySelectDropdownFlagColumn.asInstanceOf[js.Any])
-    if (CountrySelectDropdownListItem != null) __obj.updateDynamic("CountrySelectDropdownListItem")(CountrySelectDropdownListItem.asInstanceOf[js.Any])
-    if (CountrySelectDropdownNameColumn != null) __obj.updateDynamic("CountrySelectDropdownNameColumn")(CountrySelectDropdownNameColumn.asInstanceOf[js.Any])
-    if (FlagContainer != null) __obj.updateDynamic("FlagContainer")(FlagContainer.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountrySelectDropdown]
   }
+  @scala.inline
+  implicit class CountrySelectDropdownOps[Self <: CountrySelectDropdown] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCountrySelectDropdown(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("CountrySelectDropdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountrySelectDropdown: Self = this.set("CountrySelectDropdown", js.undefined)
+    @scala.inline
+    def setCountrySelectDropdownDialcodeColumn(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("CountrySelectDropdownDialcodeColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountrySelectDropdownDialcodeColumn: Self = this.set("CountrySelectDropdownDialcodeColumn", js.undefined)
+    @scala.inline
+    def setCountrySelectDropdownFlagColumn(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("CountrySelectDropdownFlagColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountrySelectDropdownFlagColumn: Self = this.set("CountrySelectDropdownFlagColumn", js.undefined)
+    @scala.inline
+    def setCountrySelectDropdownListItem(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("CountrySelectDropdownListItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountrySelectDropdownListItem: Self = this.set("CountrySelectDropdownListItem", js.undefined)
+    @scala.inline
+    def setCountrySelectDropdownNameColumn(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("CountrySelectDropdownNameColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountrySelectDropdownNameColumn: Self = this.set("CountrySelectDropdownNameColumn", js.undefined)
+    @scala.inline
+    def setFlagContainer(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("FlagContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlagContainer: Self = this.set("FlagContainer", js.undefined)
+  }
+  
 }
 

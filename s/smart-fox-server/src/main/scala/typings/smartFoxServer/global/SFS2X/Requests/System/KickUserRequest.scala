@@ -16,6 +16,7 @@ class KickUserRequest protected ()
     */
   def this(userId: Double) = this()
   def this(userId: Double, message: String) = this()
+  def this(userId: Double, message: js.UndefOr[scala.Nothing], delaySeconds: Double) = this()
   def this(userId: Double, message: String, delaySeconds: Double) = this()
 }
 

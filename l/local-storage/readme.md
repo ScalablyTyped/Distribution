@@ -12,7 +12,7 @@ A simplified localStorage API that just works
 | Keywords           | localstorage, local-storage, persistance |
 | # releases         | 2 |
 | # dependents       | 41 |
-| # downloads        | 966452 |
+| # downloads        | 1013959 |
 | # stars            | 3 |
 
 ## Links

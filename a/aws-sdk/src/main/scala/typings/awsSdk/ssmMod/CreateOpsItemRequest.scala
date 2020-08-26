@@ -50,27 +50,62 @@ trait CreateOpsItemRequest extends js.Object {
 
 object CreateOpsItemRequest {
   @scala.inline
-  def apply(
-    Description: OpsItemDescription,
-    Source: OpsItemSource,
-    Title: OpsItemTitle,
-    Category: OpsItemCategory = null,
-    Notifications: OpsItemNotifications = null,
-    OperationalData: OpsItemOperationalData = null,
-    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
-    RelatedOpsItems: RelatedOpsItems = null,
-    Severity: OpsItemSeverity = null,
-    Tags: TagList = null
-  ): CreateOpsItemRequest = {
+  def apply(Description: OpsItemDescription, Source: OpsItemSource, Title: OpsItemTitle): CreateOpsItemRequest = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Title = Title.asInstanceOf[js.Any])
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications.asInstanceOf[js.Any])
-    if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (RelatedOpsItems != null) __obj.updateDynamic("RelatedOpsItems")(RelatedOpsItems.asInstanceOf[js.Any])
-    if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOpsItemRequest]
   }
+  @scala.inline
+  implicit class CreateOpsItemRequestOps[Self <: CreateOpsItemRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: OpsItemDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: OpsItemSource): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: OpsItemTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCategory(value: OpsItemCategory): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("Category", js.undefined)
+    @scala.inline
+    def setNotificationsVarargs(value: OpsItemNotification*): Self = this.set("Notifications", js.Array(value :_*))
+    @scala.inline
+    def setNotifications(value: OpsItemNotifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+    @scala.inline
+    def setOperationalData(value: OpsItemOperationalData): Self = this.set("OperationalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationalData: Self = this.set("OperationalData", js.undefined)
+    @scala.inline
+    def setPriority(value: OpsItemPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = this.set("RelatedOpsItems", js.Array(value :_*))
+    @scala.inline
+    def setRelatedOpsItems(value: RelatedOpsItems): Self = this.set("RelatedOpsItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedOpsItems: Self = this.set("RelatedOpsItems", js.undefined)
+    @scala.inline
+    def setSeverity(value: OpsItemSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

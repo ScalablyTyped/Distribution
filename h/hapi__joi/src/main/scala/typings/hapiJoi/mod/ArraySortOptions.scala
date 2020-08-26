@@ -6,21 +6,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArraySortOptions extends js.Object {
-  var by: js.UndefOr[String | Reference] = js.undefined
+  var by: js.UndefOr[String | Reference] = js.native
   /**
     * @default 'ascending'
     */
-  var order: js.UndefOr[ascending | descending] = js.undefined
+  var order: js.UndefOr[ascending | descending] = js.native
 }
 
 object ArraySortOptions {
   @scala.inline
-  def apply(by: String | Reference = null, order: ascending | descending = null): ArraySortOptions = {
+  def apply(): ArraySortOptions = {
     val __obj = js.Dynamic.literal()
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArraySortOptions]
   }
+  @scala.inline
+  implicit class ArraySortOptionsOps[Self <: ArraySortOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBy(value: String | Reference): Self = this.set("by", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBy: Self = this.set("by", js.undefined)
+    @scala.inline
+    def setOrder(value: ascending | descending): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+  }
+  
 }
 

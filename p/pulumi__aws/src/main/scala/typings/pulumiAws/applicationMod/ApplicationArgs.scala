@@ -20,12 +20,34 @@ trait ApplicationArgs extends js.Object {
 
 object ApplicationArgs {
   @scala.inline
-  def apply(computePlatform: Input[String] = null, name: Input[String] = null, uniqueId: Input[String] = null): ApplicationArgs = {
+  def apply(): ApplicationArgs = {
     val __obj = js.Dynamic.literal()
-    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationArgs]
   }
+  @scala.inline
+  implicit class ApplicationArgsOps[Self <: ApplicationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputePlatform(value: Input[String]): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUniqueId(value: Input[String]): Self = this.set("uniqueId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUniqueId: Self = this.set("uniqueId", js.undefined)
+  }
+  
 }
 

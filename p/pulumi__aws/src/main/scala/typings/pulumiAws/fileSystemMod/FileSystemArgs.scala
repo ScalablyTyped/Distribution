@@ -37,9 +37,9 @@ trait FileSystemArgs extends js.Object {
     */
   val provisionedThroughputInMibps: js.UndefOr[Input[Double]] = js.native
   /**
-    * A mapping of tags to assign to the file system.
+    * A map of tags to assign to the file system.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Throughput mode for the file system. Defaults to `bursting`. Valid values: `bursting`, `provisioned`. When using `provisioned`, also set `provisionedThroughputInMibps`.
     */
@@ -48,26 +48,54 @@ trait FileSystemArgs extends js.Object {
 
 object FileSystemArgs {
   @scala.inline
-  def apply(
-    creationToken: Input[String] = null,
-    encrypted: Input[Boolean] = null,
-    kmsKeyId: Input[String] = null,
-    lifecyclePolicy: Input[FileSystemLifecyclePolicy] = null,
-    performanceMode: Input[String] = null,
-    provisionedThroughputInMibps: Input[Double] = null,
-    tags: Input[StringDictionary[_]] = null,
-    throughputMode: Input[String] = null
-  ): FileSystemArgs = {
+  def apply(): FileSystemArgs = {
     val __obj = js.Dynamic.literal()
-    if (creationToken != null) __obj.updateDynamic("creationToken")(creationToken.asInstanceOf[js.Any])
-    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (lifecyclePolicy != null) __obj.updateDynamic("lifecyclePolicy")(lifecyclePolicy.asInstanceOf[js.Any])
-    if (performanceMode != null) __obj.updateDynamic("performanceMode")(performanceMode.asInstanceOf[js.Any])
-    if (provisionedThroughputInMibps != null) __obj.updateDynamic("provisionedThroughputInMibps")(provisionedThroughputInMibps.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (throughputMode != null) __obj.updateDynamic("throughputMode")(throughputMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemArgs]
   }
+  @scala.inline
+  implicit class FileSystemArgsOps[Self <: FileSystemArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationToken(value: Input[String]): Self = this.set("creationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationToken: Self = this.set("creationToken", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Input[Boolean]): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setLifecyclePolicy(value: Input[FileSystemLifecyclePolicy]): Self = this.set("lifecyclePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecyclePolicy: Self = this.set("lifecyclePolicy", js.undefined)
+    @scala.inline
+    def setPerformanceMode(value: Input[String]): Self = this.set("performanceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceMode: Self = this.set("performanceMode", js.undefined)
+    @scala.inline
+    def setProvisionedThroughputInMibps(value: Input[Double]): Self = this.set("provisionedThroughputInMibps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughputInMibps: Self = this.set("provisionedThroughputInMibps", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setThroughputMode(value: Input[String]): Self = this.set("throughputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputMode: Self = this.set("throughputMode", js.undefined)
+  }
+  
 }
 

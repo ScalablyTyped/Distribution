@@ -20,14 +20,7 @@ object Threading extends js.Object {
   
   @js.native
   class ThreadPoolTimer ()
-    extends typings.winrt.Windows.System.Threading.ThreadPoolTimer {
-    /* CompleteClass */
-    override var delay: Double = js.native
-    /* CompleteClass */
-    override var period: Double = js.native
-    /* CompleteClass */
-    override def cancel(): Unit = js.native
-  }
+    extends typings.winrt.Windows.System.Threading.ThreadPoolTimer
   
   @js.native
   object Core extends js.Object {
@@ -37,18 +30,11 @@ object Threading extends js.Object {
       def this(handler: WorkItemHandler) = this()
       def this(handler: WorkItemHandler, priority: WorkItemPriority) = this()
       def this(handler: WorkItemHandler, priority: WorkItemPriority, options: WorkItemOptions) = this()
-      /* CompleteClass */
-      override def runAsync(): IAsyncAction = js.native
     }
     
     @js.native
     class SignalNotifier ()
-      extends typings.winrt.Windows.System.Threading.Core.SignalNotifier {
-      /* CompleteClass */
-      override def enable(): Unit = js.native
-      /* CompleteClass */
-      override def terminate(): Unit = js.native
-    }
+      extends typings.winrt.Windows.System.Threading.Core.SignalNotifier
     
     /* static members */
     @js.native

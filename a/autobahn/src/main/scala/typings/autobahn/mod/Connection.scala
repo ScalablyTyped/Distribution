@@ -15,6 +15,7 @@ class Connection () extends js.Object {
   val session: js.UndefOr[Session] = js.native
   val transport: ITransport = js.native
   def close(): Unit = js.native
+  def close(reason: js.UndefOr[scala.Nothing], message: String): Unit = js.native
   def close(reason: String): Unit = js.native
   def close(reason: String, message: String): Unit = js.native
   def onclose(reason: String, details: js.Any): Boolean = js.native

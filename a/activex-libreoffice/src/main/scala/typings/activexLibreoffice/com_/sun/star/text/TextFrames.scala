@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This is the collection of all {@link TextFrame} instances within a context (e.g. a document). */
+@js.native
 trait TextFrames
   extends XNameAccess
      with XIndexAccess

@@ -1,47 +1,50 @@
 package typings.stubby.mod
 
 import typings.node.Buffer
-import typings.node.tlsMod.TlsOptions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StubbyWithKeyCertOptions
   extends StubbyCommonOptions
      with StubbyOptions {
    // tslint:disable-line:ban-types
   /** certificate file contents (in PEM format) */
-  var cert: String | Buffer | (js.Array[String | Buffer])
+  var cert: String | Buffer | (js.Array[String | Buffer]) = js.native
   /** keyfile contents (in PEM format) */
-  var key: String | Buffer | (js.Array[Buffer | js.Object])
+  var key: String | Buffer | (js.Array[Buffer | js.Object]) = js.native
 }
 
 object StubbyWithKeyCertOptions {
   @scala.inline
   def apply(
     cert: String | Buffer | (js.Array[String | Buffer]),
-    key: String | Buffer | (js.Array[Buffer | js.Object]),
-    _httpsOptions: TlsOptions = null,
-    admin: js.UndefOr[Double] = js.undefined,
-    data: StubbyData | js.Array[StubbyData] = null,
-    datadir: String = null,
-    location: String = null,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    stubs: js.UndefOr[Double] = js.undefined,
-    tls: js.UndefOr[Double] = js.undefined,
-    watch: String = null
+    key: String | Buffer | (js.Array[Buffer | js.Object])
   ): StubbyWithKeyCertOptions = {
     val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-    if (_httpsOptions != null) __obj.updateDynamic("_httpsOptions")(_httpsOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datadir != null) __obj.updateDynamic("datadir")(datadir.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stubs)) __obj.updateDynamic("stubs")(stubs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls.get.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
     __obj.asInstanceOf[StubbyWithKeyCertOptions]
   }
+  @scala.inline
+  implicit class StubbyWithKeyCertOptionsOps[Self <: StubbyWithKeyCertOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertVarargs(value: (String | Buffer)*): Self = this.set("cert", js.Array(value :_*))
+    @scala.inline
+    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyVarargs(value: (Buffer | js.Object)*): Self = this.set("key", js.Array(value :_*))
+    @scala.inline
+    def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = this.set("key", value.asInstanceOf[js.Any])
+  }
+  
 }
 

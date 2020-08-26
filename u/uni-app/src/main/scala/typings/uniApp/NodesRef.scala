@@ -20,6 +20,7 @@ trait NodesRef extends js.Object {
     * 获取节点的相关信息，需要获取的字段在fields中指定
     */
   def fields(): SelectorQuery = js.native
+  def fields(fields: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ NodeInfo, Unit]): SelectorQuery = js.native
   def fields(fields: NodeField): SelectorQuery = js.native
   def fields(fields: NodeField, callback: js.Function1[/* result */ NodeInfo, Unit]): SelectorQuery = js.native
   /**

@@ -17,6 +17,7 @@ object dialogflowMod extends js.Object {
   class ContextValues[TContexts /* <: Contexts */] ()
     extends typings.actionsOnGoogle.contextMod.ContextValues[TContexts] {
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context]) = this()
+    def this(outputContexts: js.UndefOr[scala.Nothing], _session: String) = this()
     def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context], _session: String) = this()
   }
   

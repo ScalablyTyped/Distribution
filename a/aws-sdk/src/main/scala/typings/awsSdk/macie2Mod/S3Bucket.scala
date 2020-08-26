@@ -38,24 +38,52 @@ trait S3Bucket extends js.Object {
 
 object S3Bucket {
   @scala.inline
-  def apply(
-    arn: string = null,
-    createdAt: timestampIso8601 = null,
-    defaultServerSideEncryption: ServerSideEncryption = null,
-    name: string = null,
-    owner: S3BucketOwner = null,
-    publicAccess: BucketPublicAccess = null,
-    tags: KeyValuePairList = null
-  ): S3Bucket = {
+  def apply(): S3Bucket = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (defaultServerSideEncryption != null) __obj.updateDynamic("defaultServerSideEncryption")(defaultServerSideEncryption.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (publicAccess != null) __obj.updateDynamic("publicAccess")(publicAccess.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Bucket]
   }
+  @scala.inline
+  implicit class S3BucketOps[Self <: S3Bucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDefaultServerSideEncryption(value: ServerSideEncryption): Self = this.set("defaultServerSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultServerSideEncryption: Self = this.set("defaultServerSideEncryption", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwner(value: S3BucketOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setPublicAccess(value: BucketPublicAccess): Self = this.set("publicAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicAccess: Self = this.set("publicAccess", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: KeyValuePair*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: KeyValuePairList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -40,6 +40,8 @@ trait Sandbox extends js.Object {
     * @return {Sandbox} Sandbox instance
     */
   def restore(): Unit = js.native
+  def restore(`object`: js.UndefOr[scala.Nothing], methodNames: String): Unit = js.native
+  def restore(`object`: js.UndefOr[scala.Nothing], methodNames: js.Array[String]): Unit = js.native
   def restore(`object`: js.Object): Unit = js.native
   def restore(`object`: js.Object, methodNames: String): Unit = js.native
   def restore(`object`: js.Object, methodNames: js.Array[String]): Unit = js.native

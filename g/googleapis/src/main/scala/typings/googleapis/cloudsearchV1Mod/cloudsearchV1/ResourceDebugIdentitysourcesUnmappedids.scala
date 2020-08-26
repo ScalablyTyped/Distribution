@@ -31,6 +31,7 @@ class ResourceDebugIdentitysourcesUnmappedids protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListUnmappedIdentitiesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUnmappedIdentitiesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUnmappedIdentitiesResponse] = js.native
   def list(params: ParamsResourceDebugIdentitysourcesUnmappedidsList): GaxiosPromise[SchemaListUnmappedIdentitiesResponse] = js.native
   def list(
     params: ParamsResourceDebugIdentitysourcesUnmappedidsList,

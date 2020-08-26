@@ -8,87 +8,90 @@ import scala.scalajs.js.annotation._
   * Key Object Selection
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait ImagingManifest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait ImagingManifest extends DomainResource {
   /**
     * Contains extended information for property 'authoringTime'.
     */
-  var _authoringTime: js.UndefOr[Element] = js.undefined
+  var _authoringTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Author (human or machine)
     */
-  var author: js.UndefOr[Reference] = js.undefined
+  var author: js.UndefOr[Reference] = js.native
   /**
     * Time when the selection of instances was made
     */
-  var authoringTime: js.UndefOr[dateTime] = js.undefined
+  var authoringTime: js.UndefOr[dateTime] = js.native
   /**
     * Description text
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * SOP Instance UID
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Patient of the selected objects
     */
-  var patient: Reference
+  var patient: Reference = js.native
   /**
     * Study identity of the selected instances
     */
-  var study: js.Array[ImagingManifestStudy]
+  var study: js.Array[ImagingManifestStudy] = js.native
 }
 
 object ImagingManifest {
   @scala.inline
-  def apply(
-    patient: Reference,
-    study: js.Array[ImagingManifestStudy],
-    _authoringTime: Element = null,
-    _description: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    author: Reference = null,
-    authoringTime: dateTime = null,
-    contained: js.Array[Resource] = null,
-    description: String = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    resourceType: code = null,
-    text: Narrative = null
-  ): ImagingManifest = {
+  def apply(patient: Reference, study: js.Array[ImagingManifestStudy]): ImagingManifest = {
     val __obj = js.Dynamic.literal(patient = patient.asInstanceOf[js.Any], study = study.asInstanceOf[js.Any])
-    if (_authoringTime != null) __obj.updateDynamic("_authoringTime")(_authoringTime.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (authoringTime != null) __obj.updateDynamic("authoringTime")(authoringTime.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagingManifest]
   }
+  @scala.inline
+  implicit class ImagingManifestOps[Self <: ImagingManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStudyVarargs(value: ImagingManifestStudy*): Self = this.set("study", js.Array(value :_*))
+    @scala.inline
+    def setStudy(value: js.Array[ImagingManifestStudy]): Self = this.set("study", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_authoringTime(value: Element): Self = this.set("_authoringTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_authoringTime: Self = this.set("_authoringTime", js.undefined)
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def setAuthor(value: Reference): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setAuthoringTime(value: dateTime): Self = this.set("authoringTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthoringTime: Self = this.set("authoringTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+  }
+  
 }
 

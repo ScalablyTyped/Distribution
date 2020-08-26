@@ -34,6 +34,7 @@ class ResourceOperations protected () extends js.Object {
     */
   def waitExecution(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def waitExecution(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def waitExecution(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def waitExecution(params: ParamsResourceOperationsWaitexecution): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def waitExecution(
     params: ParamsResourceOperationsWaitexecution,

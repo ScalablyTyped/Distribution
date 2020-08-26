@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-types
 
-Typings are for version 1.11
+Typings are for version 2.2.0
 
 ## Library description:
 Query result type converters for node-postgres
@@ -24,7 +24,7 @@ Query result type converters for node-postgres
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

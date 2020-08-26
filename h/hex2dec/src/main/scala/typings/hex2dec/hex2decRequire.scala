@@ -1,0 +1,12 @@
+package typings.hex2dec
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("hex2dec", JSImport.Namespace)
+@js.native
+object hex2decRequire extends js.Object
+

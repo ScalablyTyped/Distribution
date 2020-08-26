@@ -1,25 +1,36 @@
 package typings.reactNavigation.anon
 
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
-import typings.react.mod.Ref
-import typings.reactNavigation.mod.NavigationFocusInjectedProps
-import typings.reactNavigation.mod.NavigationParams
-import typings.std.InstanceType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait `0`[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationFocusInjectedProps[NavigationParams] */] extends js.Object {
-  var onRef: js.UndefOr[Ref[InstanceType[T]]] = js.undefined
+@js.native
+trait `0`[Params] extends js.Object {
+  var params: js.UndefOr[Params] = js.native
 }
 
 object `0` {
   @scala.inline
-  def apply[/* <: typings.react.mod.ComponentClass[P, typings.react.mod.ComponentState] */ T, /* <: typings.reactNavigation.mod.NavigationFocusInjectedProps[typings.reactNavigation.mod.NavigationParams] */ P](onRef: js.UndefOr[Null | Ref[InstanceType[T]]] = js.undefined): `0`[T, P] = {
+  def apply[Params](): `0`[Params] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(onRef)) __obj.updateDynamic("onRef")(onRef.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`0`[T, P]]
+    __obj.asInstanceOf[`0`[Params]]
   }
+  @scala.inline
+  implicit class `0Ops`[Self <: `0`[_], Params] (val x: Self with `0`[Params]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParams(value: Params): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+  }
+  
 }
 

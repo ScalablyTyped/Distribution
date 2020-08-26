@@ -15,8 +15,24 @@ import scala.scalajs.js.annotation._
 class PerspectiveCamera ()
   extends typings.three.perspectiveCameraMod.PerspectiveCamera {
   def this(fov: Double) = this()
+  def this(fov: js.UndefOr[scala.Nothing], aspect: Double) = this()
   def this(fov: Double, aspect: Double) = this()
+  def this(fov: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double) = this()
+  def this(fov: js.UndefOr[scala.Nothing], aspect: Double, near: Double) = this()
+  def this(fov: Double, aspect: js.UndefOr[scala.Nothing], near: Double) = this()
   def this(fov: Double, aspect: Double, near: Double) = this()
+  def this(
+    fov: js.UndefOr[scala.Nothing],
+    aspect: js.UndefOr[scala.Nothing],
+    near: js.UndefOr[scala.Nothing],
+    far: Double
+  ) = this()
+  def this(fov: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
+  def this(fov: js.UndefOr[scala.Nothing], aspect: Double, near: js.UndefOr[scala.Nothing], far: Double) = this()
+  def this(fov: js.UndefOr[scala.Nothing], aspect: Double, near: Double, far: Double) = this()
+  def this(fov: Double, aspect: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double) = this()
+  def this(fov: Double, aspect: js.UndefOr[scala.Nothing], near: Double, far: Double) = this()
+  def this(fov: Double, aspect: Double, near: js.UndefOr[scala.Nothing], far: Double) = this()
   def this(fov: Double, aspect: Double, near: Double, far: Double) = this()
 }
 

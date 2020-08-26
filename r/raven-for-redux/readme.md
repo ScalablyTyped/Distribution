@@ -10,9 +10,9 @@ Middleware for propagating Redux state/actions to Sentry via Raven.
 | ------------------ | :-------------: |
 | Full name          | raven-for-redux |
 | Keywords           | middleware, raven, redux, error, logging, context |
-| # releases         | 5 |
+| # releases         | 4 |
 | # dependents       | 10 |
-| # downloads        | 1615451 |
+| # downloads        | 1573142 |
 | # stars            | 1 |
 
 ## Links

@@ -36,20 +36,44 @@ trait SchemaHTTPGetAction extends js.Object {
 
 object SchemaHTTPGetAction {
   @scala.inline
-  def apply(
-    host: String = null,
-    httpHeaders: js.Array[SchemaHTTPHeader] = null,
-    path: String = null,
-    port: SchemaIntOrString = null,
-    scheme: String = null
-  ): SchemaHTTPGetAction = {
+  def apply(): SchemaHTTPGetAction = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHTTPGetAction]
   }
+  @scala.inline
+  implicit class SchemaHTTPGetActionOps[Self <: SchemaHTTPGetAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHttpHeadersVarargs(value: SchemaHTTPHeader*): Self = this.set("httpHeaders", js.Array(value :_*))
+    @scala.inline
+    def setHttpHeaders(value: js.Array[SchemaHTTPHeader]): Self = this.set("httpHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpHeaders: Self = this.set("httpHeaders", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPort(value: SchemaIntOrString): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setScheme(value: String): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+  }
+  
 }
 

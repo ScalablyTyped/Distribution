@@ -49,22 +49,48 @@ trait SchemaLien extends js.Object {
 
 object SchemaLien {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    name: String = null,
-    origin: String = null,
-    parent: String = null,
-    reason: String = null,
-    restrictions: js.Array[String] = null
-  ): SchemaLien = {
+  def apply(): SchemaLien = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLien]
   }
+  @scala.inline
+  implicit class SchemaLienOps[Self <: SchemaLien] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setReason(value: String): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setRestrictionsVarargs(value: String*): Self = this.set("restrictions", js.Array(value :_*))
+    @scala.inline
+    def setRestrictions(value: js.Array[String]): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+  }
+  
 }
 

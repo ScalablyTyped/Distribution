@@ -38,6 +38,7 @@ object dom extends js.Object {
       * @param origin String/Object The original method name
       */
     def createAlias(): Unit = js.native
+    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
     def createAlias(alias: js.Any): Unit = js.native
     def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
     /** [Method] Gets the globally shared flyweight Element with the passed node as the active element
@@ -46,6 +47,7 @@ object dom extends js.Object {
       * @returns Ext.dom.Element The shared Element object (or null if no matching element was found).
       */
     def fly(): IElement = js.native
+    def fly(element: js.UndefOr[scala.Nothing], named: java.lang.String): IElement = js.native
     def fly(element: js.Any): IElement = js.native
     def fly(element: js.Any, named: java.lang.String): IElement = js.native
     /** [Method] Returns the top Element that is located at the passed coordinates
@@ -54,6 +56,7 @@ object dom extends js.Object {
       * @returns String The found Element
       */
     def fromPoint(): java.lang.String = js.native
+    def fromPoint(x: js.UndefOr[scala.Nothing], y: Double): java.lang.String = js.native
     def fromPoint(x: Double): java.lang.String = js.native
     def fromPoint(x: Double, y: Double): java.lang.String = js.native
     /** [Method] Retrieves Ext dom Element objects
@@ -121,7 +124,11 @@ object dom extends js.Object {
       * @returns Ext.dom.CompositeElementLite/Ext.dom.CompositeElement
       */
     def select(): ICompositeElementLite = js.native
+    def select(selector: js.UndefOr[scala.Nothing], composite: js.UndefOr[scala.Nothing], root: js.Any): ICompositeElementLite = js.native
+    def select(selector: js.UndefOr[scala.Nothing], composite: Boolean): ICompositeElementLite = js.native
+    def select(selector: js.UndefOr[scala.Nothing], composite: Boolean, root: js.Any): ICompositeElementLite = js.native
     def select(selector: js.Any): ICompositeElementLite = js.native
+    def select(selector: js.Any, composite: js.UndefOr[scala.Nothing], root: js.Any): ICompositeElementLite = js.native
     def select(selector: js.Any, composite: Boolean): ICompositeElementLite = js.native
     def select(selector: js.Any, composite: Boolean, root: js.Any): ICompositeElementLite = js.native
     /** [Method] Serializes a DOM form into a url encoded string
@@ -142,6 +149,7 @@ object dom extends js.Object {
       * @returns String An string with unitized (px if units is not specified) metrics for top, right, bottom and left
       */
     def unitizeBox(): java.lang.String = js.native
+    def unitizeBox(box: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
     def unitizeBox(box: js.Any): java.lang.String = js.native
     def unitizeBox(box: js.Any, units: java.lang.String): java.lang.String = js.native
   }

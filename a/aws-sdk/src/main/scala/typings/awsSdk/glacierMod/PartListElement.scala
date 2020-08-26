@@ -18,11 +18,30 @@ trait PartListElement extends js.Object {
 
 object PartListElement {
   @scala.inline
-  def apply(RangeInBytes: String = null, SHA256TreeHash: String = null): PartListElement = {
+  def apply(): PartListElement = {
     val __obj = js.Dynamic.literal()
-    if (RangeInBytes != null) __obj.updateDynamic("RangeInBytes")(RangeInBytes.asInstanceOf[js.Any])
-    if (SHA256TreeHash != null) __obj.updateDynamic("SHA256TreeHash")(SHA256TreeHash.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartListElement]
   }
+  @scala.inline
+  implicit class PartListElementOps[Self <: PartListElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRangeInBytes(value: String): Self = this.set("RangeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeInBytes: Self = this.set("RangeInBytes", js.undefined)
+    @scala.inline
+    def setSHA256TreeHash(value: String): Self = this.set("SHA256TreeHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSHA256TreeHash: Self = this.set("SHA256TreeHash", js.undefined)
+  }
+  
 }
 

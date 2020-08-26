@@ -4,34 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CameraForBoundsOptions extends CameraOptions {
-  var maxZoom: js.UndefOr[Double] = js.undefined
-  var offset: js.UndefOr[PointLike] = js.undefined
-  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
+  var maxZoom: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[PointLike] = js.native
+  var padding: js.UndefOr[Double | PaddingOptions] = js.native
 }
 
 object CameraForBoundsOptions {
   @scala.inline
-  def apply(
-    around: LngLatLike = null,
-    bearing: js.UndefOr[Double] = js.undefined,
-    center: LngLatLike = null,
-    maxZoom: js.UndefOr[Double] = js.undefined,
-    offset: PointLike = null,
-    padding: Double | PaddingOptions = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): CameraForBoundsOptions = {
+  def apply(): CameraForBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoom)) __obj.updateDynamic("maxZoom")(maxZoom.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraForBoundsOptions]
   }
+  @scala.inline
+  implicit class CameraForBoundsOptionsOps[Self <: CameraForBoundsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxZoom(value: Double): Self = this.set("maxZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoom: Self = this.set("maxZoom", js.undefined)
+    @scala.inline
+    def setOffset(value: PointLike): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | PaddingOptions): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,42 @@ trait Http extends js.Object {
 
 object Http {
   @scala.inline
-  def apply(
-    ClientIp: String = null,
-    HttpMethod: String = null,
-    HttpStatus: js.UndefOr[NullableInteger] = js.undefined,
-    HttpURL: String = null,
-    UserAgent: String = null
-  ): Http = {
+  def apply(): Http = {
     val __obj = js.Dynamic.literal()
-    if (ClientIp != null) __obj.updateDynamic("ClientIp")(ClientIp.asInstanceOf[js.Any])
-    if (HttpMethod != null) __obj.updateDynamic("HttpMethod")(HttpMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(HttpStatus)) __obj.updateDynamic("HttpStatus")(HttpStatus.get.asInstanceOf[js.Any])
-    if (HttpURL != null) __obj.updateDynamic("HttpURL")(HttpURL.asInstanceOf[js.Any])
-    if (UserAgent != null) __obj.updateDynamic("UserAgent")(UserAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Http]
   }
+  @scala.inline
+  implicit class HttpOps[Self <: Http] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientIp(value: String): Self = this.set("ClientIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientIp: Self = this.set("ClientIp", js.undefined)
+    @scala.inline
+    def setHttpMethod(value: String): Self = this.set("HttpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("HttpMethod", js.undefined)
+    @scala.inline
+    def setHttpStatus(value: NullableInteger): Self = this.set("HttpStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpStatus: Self = this.set("HttpStatus", js.undefined)
+    @scala.inline
+    def setHttpURL(value: String): Self = this.set("HttpURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpURL: Self = this.set("HttpURL", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("UserAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("UserAgent", js.undefined)
+  }
+  
 }
 

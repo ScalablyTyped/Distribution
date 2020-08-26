@@ -126,68 +126,144 @@ trait Cluster extends js.Object {
 
 object Cluster {
   @scala.inline
-  def apply(
-    Applications: ApplicationList = null,
-    AutoScalingRole: XmlString = null,
-    AutoTerminate: js.UndefOr[Boolean] = js.undefined,
-    ClusterArn: ArnType = null,
-    Configurations: ConfigurationList = null,
-    CustomAmiId: XmlStringMaxLen256 = null,
-    EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined,
-    Ec2InstanceAttributes: Ec2InstanceAttributes = null,
-    Id: ClusterId = null,
-    InstanceCollectionType: InstanceCollectionType = null,
-    KerberosAttributes: KerberosAttributes = null,
-    LogEncryptionKmsKeyId: String = null,
-    LogUri: String = null,
-    MasterPublicDnsName: String = null,
-    Name: String = null,
-    NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined,
-    OutpostArn: OptionalArnType = null,
-    ReleaseLabel: String = null,
-    RepoUpgradeOnBoot: RepoUpgradeOnBoot = null,
-    RequestedAmiVersion: String = null,
-    RunningAmiVersion: String = null,
-    ScaleDownBehavior: ScaleDownBehavior = null,
-    SecurityConfiguration: XmlString = null,
-    ServiceRole: String = null,
-    Status: ClusterStatus = null,
-    StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined,
-    Tags: TagList = null,
-    TerminationProtected: js.UndefOr[Boolean] = js.undefined,
-    VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
-  ): Cluster = {
+  def apply(): Cluster = {
     val __obj = js.Dynamic.literal()
-    if (Applications != null) __obj.updateDynamic("Applications")(Applications.asInstanceOf[js.Any])
-    if (AutoScalingRole != null) __obj.updateDynamic("AutoScalingRole")(AutoScalingRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoTerminate)) __obj.updateDynamic("AutoTerminate")(AutoTerminate.get.asInstanceOf[js.Any])
-    if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn.asInstanceOf[js.Any])
-    if (Configurations != null) __obj.updateDynamic("Configurations")(Configurations.asInstanceOf[js.Any])
-    if (CustomAmiId != null) __obj.updateDynamic("CustomAmiId")(CustomAmiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsRootVolumeSize)) __obj.updateDynamic("EbsRootVolumeSize")(EbsRootVolumeSize.get.asInstanceOf[js.Any])
-    if (Ec2InstanceAttributes != null) __obj.updateDynamic("Ec2InstanceAttributes")(Ec2InstanceAttributes.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InstanceCollectionType != null) __obj.updateDynamic("InstanceCollectionType")(InstanceCollectionType.asInstanceOf[js.Any])
-    if (KerberosAttributes != null) __obj.updateDynamic("KerberosAttributes")(KerberosAttributes.asInstanceOf[js.Any])
-    if (LogEncryptionKmsKeyId != null) __obj.updateDynamic("LogEncryptionKmsKeyId")(LogEncryptionKmsKeyId.asInstanceOf[js.Any])
-    if (LogUri != null) __obj.updateDynamic("LogUri")(LogUri.asInstanceOf[js.Any])
-    if (MasterPublicDnsName != null) __obj.updateDynamic("MasterPublicDnsName")(MasterPublicDnsName.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(NormalizedInstanceHours)) __obj.updateDynamic("NormalizedInstanceHours")(NormalizedInstanceHours.get.asInstanceOf[js.Any])
-    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (ReleaseLabel != null) __obj.updateDynamic("ReleaseLabel")(ReleaseLabel.asInstanceOf[js.Any])
-    if (RepoUpgradeOnBoot != null) __obj.updateDynamic("RepoUpgradeOnBoot")(RepoUpgradeOnBoot.asInstanceOf[js.Any])
-    if (RequestedAmiVersion != null) __obj.updateDynamic("RequestedAmiVersion")(RequestedAmiVersion.asInstanceOf[js.Any])
-    if (RunningAmiVersion != null) __obj.updateDynamic("RunningAmiVersion")(RunningAmiVersion.asInstanceOf[js.Any])
-    if (ScaleDownBehavior != null) __obj.updateDynamic("ScaleDownBehavior")(ScaleDownBehavior.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (ServiceRole != null) __obj.updateDynamic("ServiceRole")(ServiceRole.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(StepConcurrencyLevel)) __obj.updateDynamic("StepConcurrencyLevel")(StepConcurrencyLevel.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminationProtected)) __obj.updateDynamic("TerminationProtected")(TerminationProtected.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VisibleToAllUsers)) __obj.updateDynamic("VisibleToAllUsers")(VisibleToAllUsers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cluster]
   }
+  @scala.inline
+  implicit class ClusterOps[Self <: Cluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationsVarargs(value: Application*): Self = this.set("Applications", js.Array(value :_*))
+    @scala.inline
+    def setApplications(value: ApplicationList): Self = this.set("Applications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplications: Self = this.set("Applications", js.undefined)
+    @scala.inline
+    def setAutoScalingRole(value: XmlString): Self = this.set("AutoScalingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingRole: Self = this.set("AutoScalingRole", js.undefined)
+    @scala.inline
+    def setAutoTerminate(value: Boolean): Self = this.set("AutoTerminate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoTerminate: Self = this.set("AutoTerminate", js.undefined)
+    @scala.inline
+    def setClusterArn(value: ArnType): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    @scala.inline
+    def setConfigurationsVarargs(value: Configuration*): Self = this.set("Configurations", js.Array(value :_*))
+    @scala.inline
+    def setConfigurations(value: ConfigurationList): Self = this.set("Configurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurations: Self = this.set("Configurations", js.undefined)
+    @scala.inline
+    def setCustomAmiId(value: XmlStringMaxLen256): Self = this.set("CustomAmiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAmiId: Self = this.set("CustomAmiId", js.undefined)
+    @scala.inline
+    def setEbsRootVolumeSize(value: Integer): Self = this.set("EbsRootVolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsRootVolumeSize: Self = this.set("EbsRootVolumeSize", js.undefined)
+    @scala.inline
+    def setEc2InstanceAttributes(value: Ec2InstanceAttributes): Self = this.set("Ec2InstanceAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceAttributes: Self = this.set("Ec2InstanceAttributes", js.undefined)
+    @scala.inline
+    def setId(value: ClusterId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInstanceCollectionType(value: InstanceCollectionType): Self = this.set("InstanceCollectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCollectionType: Self = this.set("InstanceCollectionType", js.undefined)
+    @scala.inline
+    def setKerberosAttributes(value: KerberosAttributes): Self = this.set("KerberosAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKerberosAttributes: Self = this.set("KerberosAttributes", js.undefined)
+    @scala.inline
+    def setLogEncryptionKmsKeyId(value: String): Self = this.set("LogEncryptionKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogEncryptionKmsKeyId: Self = this.set("LogEncryptionKmsKeyId", js.undefined)
+    @scala.inline
+    def setLogUri(value: String): Self = this.set("LogUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUri: Self = this.set("LogUri", js.undefined)
+    @scala.inline
+    def setMasterPublicDnsName(value: String): Self = this.set("MasterPublicDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterPublicDnsName: Self = this.set("MasterPublicDnsName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNormalizedInstanceHours(value: Integer): Self = this.set("NormalizedInstanceHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormalizedInstanceHours: Self = this.set("NormalizedInstanceHours", js.undefined)
+    @scala.inline
+    def setOutpostArn(value: OptionalArnType): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    @scala.inline
+    def setReleaseLabel(value: String): Self = this.set("ReleaseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseLabel: Self = this.set("ReleaseLabel", js.undefined)
+    @scala.inline
+    def setRepoUpgradeOnBoot(value: RepoUpgradeOnBoot): Self = this.set("RepoUpgradeOnBoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepoUpgradeOnBoot: Self = this.set("RepoUpgradeOnBoot", js.undefined)
+    @scala.inline
+    def setRequestedAmiVersion(value: String): Self = this.set("RequestedAmiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedAmiVersion: Self = this.set("RequestedAmiVersion", js.undefined)
+    @scala.inline
+    def setRunningAmiVersion(value: String): Self = this.set("RunningAmiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningAmiVersion: Self = this.set("RunningAmiVersion", js.undefined)
+    @scala.inline
+    def setScaleDownBehavior(value: ScaleDownBehavior): Self = this.set("ScaleDownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleDownBehavior: Self = this.set("ScaleDownBehavior", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: XmlString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setServiceRole(value: String): Self = this.set("ServiceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("ServiceRole", js.undefined)
+    @scala.inline
+    def setStatus(value: ClusterStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStepConcurrencyLevel(value: Integer): Self = this.set("StepConcurrencyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepConcurrencyLevel: Self = this.set("StepConcurrencyLevel", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTerminationProtected(value: Boolean): Self = this.set("TerminationProtected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationProtected: Self = this.set("TerminationProtected", js.undefined)
+    @scala.inline
+    def setVisibleToAllUsers(value: Boolean): Self = this.set("VisibleToAllUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleToAllUsers: Self = this.set("VisibleToAllUsers", js.undefined)
+  }
+  
 }
 

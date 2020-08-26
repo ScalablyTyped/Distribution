@@ -37,12 +37,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ArchiveFindingsResponse, Unit]
   ): Request[ArchiveFindingsResponse, AWSError] = js.native
   /**
-    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region.
+    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.
     */
   def createDetector(): Request[CreateDetectorResponse, AWSError] = js.native
   def createDetector(callback: js.Function2[/* err */ AWSError, /* data */ CreateDetectorResponse, Unit]): Request[CreateDetectorResponse, AWSError] = js.native
   /**
-    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region.
+    * Creates a single Amazon GuardDuty detector. A detector is a resource that represents the GuardDuty service. To start using GuardDuty, you must create a detector in each Region where you enable the service. You can have only one detector per account per Region. All data sources are enabled in a new detector by default.
     */
   def createDetector(params: CreateDetectorRequest): Request[CreateDetectorResponse, AWSError] = js.native
   def createDetector(
@@ -76,12 +76,12 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIPSetResponse, Unit]
   ): Request[CreateIPSetResponse, AWSError] = js.native
   /**
-    * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. The current AWS account can then invite these members to manage GuardDuty in their accounts.
+    * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization master account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
     */
   def createMembers(): Request[CreateMembersResponse, AWSError] = js.native
   def createMembers(callback: js.Function2[/* err */ AWSError, /* data */ CreateMembersResponse, Unit]): Request[CreateMembersResponse, AWSError] = js.native
   /**
-    * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. The current AWS account can then invite these members to manage GuardDuty in their accounts.
+    * Creates member accounts of the current AWS account by specifying a list of AWS account IDs. This step is a prerequisite for managing the associated member accounts either by invitation or through an organization. When using Create Members as an organizations delegated administrator this action will enable GuardDuty in the added member accounts, with the exception of the organization master account, which must enable GuardDuty prior to being added as a member. If you are adding accounts by invitation use this action after GuardDuty has been enabled in potential member accounts and before using  Invite Members .
     */
   def createMembers(params: CreateMembersRequest): Request[CreateMembersResponse, AWSError] = js.native
   def createMembers(
@@ -407,6 +407,19 @@ trait GuardDuty extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetMasterAccountResponse, Unit]
   ): Request[GetMasterAccountResponse, AWSError] = js.native
   /**
+    * Describes which data sources are enabled for the member account's detector.
+    */
+  def getMemberDetectors(): Request[GetMemberDetectorsResponse, AWSError] = js.native
+  def getMemberDetectors(callback: js.Function2[/* err */ AWSError, /* data */ GetMemberDetectorsResponse, Unit]): Request[GetMemberDetectorsResponse, AWSError] = js.native
+  /**
+    * Describes which data sources are enabled for the member account's detector.
+    */
+  def getMemberDetectors(params: GetMemberDetectorsRequest): Request[GetMemberDetectorsResponse, AWSError] = js.native
+  def getMemberDetectors(
+    params: GetMemberDetectorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetMemberDetectorsResponse, Unit]
+  ): Request[GetMemberDetectorsResponse, AWSError] = js.native
+  /**
     * Retrieves GuardDuty member accounts (to the current GuardDuty master account) specified by the account IDs.
     */
   def getMembers(): Request[GetMembersResponse, AWSError] = js.native
@@ -432,6 +445,19 @@ trait GuardDuty extends Service {
     params: GetThreatIntelSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetThreatIntelSetResponse, Unit]
   ): Request[GetThreatIntelSetResponse, AWSError] = js.native
+  /**
+    * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources the cost returned will include only the usage so far under 30 days, this may differ from the cost metrics in the console, which projects usage over 30 days to provide a monthly cost estimate. For more information see Understanding How Usage Costs are Calculated.
+    */
+  def getUsageStatistics(): Request[GetUsageStatisticsResponse, AWSError] = js.native
+  def getUsageStatistics(callback: js.Function2[/* err */ AWSError, /* data */ GetUsageStatisticsResponse, Unit]): Request[GetUsageStatisticsResponse, AWSError] = js.native
+  /**
+    * Lists Amazon GuardDuty usage statistics over the last 30 days for the specified detector ID. For newly enabled detectors or data sources the cost returned will include only the usage so far under 30 days, this may differ from the cost metrics in the console, which projects usage over 30 days to provide a monthly cost estimate. For more information see Understanding How Usage Costs are Calculated.
+    */
+  def getUsageStatistics(params: GetUsageStatisticsRequest): Request[GetUsageStatisticsResponse, AWSError] = js.native
+  def getUsageStatistics(
+    params: GetUsageStatisticsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetUsageStatisticsResponse, Unit]
+  ): Request[GetUsageStatisticsResponse, AWSError] = js.native
   /**
     * Invites other AWS accounts (created as members of the current AWS account by CreateMembers) to enable GuardDuty, and allow the current AWS account to view and manage these accounts' GuardDuty findings on their behalf as the master account.
     */
@@ -692,6 +718,19 @@ trait GuardDuty extends Service {
     params: UpdateIPSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateIPSetResponse, Unit]
   ): Request[UpdateIPSetResponse, AWSError] = js.native
+  /**
+    * Contains information on member accounts to be updated.
+    */
+  def updateMemberDetectors(): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
+  def updateMemberDetectors(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberDetectorsResponse, Unit]): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
+  /**
+    * Contains information on member accounts to be updated.
+    */
+  def updateMemberDetectors(params: UpdateMemberDetectorsRequest): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
+  def updateMemberDetectors(
+    params: UpdateMemberDetectorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMemberDetectorsResponse, Unit]
+  ): Request[UpdateMemberDetectorsResponse, AWSError] = js.native
   /**
     * Updates the delegated administrator account with the values provided.
     */

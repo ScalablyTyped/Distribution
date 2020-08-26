@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Search extends js.Object {
-  val Application: typings.activexOutlook.Outlook.Application
-  val Class: OlObjectClass
-  val Filter: String
-  val IsSynchronous: Boolean
+  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Class: OlObjectClass = js.native
+  val Filter: String = js.native
+  val IsSynchronous: Boolean = js.native
   @JSName("Outlook.Search_typekey")
-  var OutlookDotSearch_typekey: Search
-  val Parent: js.Any
-  val Results: typings.activexOutlook.Outlook.Results
-  val Scope: String
-  val SearchSubFolders: Boolean
-  val Session: NameSpace
-  val Tag: String
-  def GetTable(): Table
-  def Save(Name: String): Folder
-  def Stop(): Unit
+  var OutlookDotSearch_typekey: Search = js.native
+  val Parent: js.Any = js.native
+  val Results: typings.activexOutlook.Outlook.Results = js.native
+  val Scope: String = js.native
+  val SearchSubFolders: Boolean = js.native
+  val Session: NameSpace = js.native
+  val Tag: String = js.native
+  def GetTable(): Table = js.native
+  def Save(Name: String): Folder = js.native
+  def Stop(): Unit = js.native
 }
 
 object Search {
@@ -44,5 +45,46 @@ object Search {
     __obj.updateDynamic("Outlook.Search_typekey")(OutlookDotSearch_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Search]
   }
+  @scala.inline
+  implicit class SearchOps[Self <: Search] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClass(value: OlObjectClass): Self = this.set("Class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetTable(value: () => Table): Self = this.set("GetTable", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsSynchronous(value: Boolean): Self = this.set("IsSynchronous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutlookDotSearch_typekey(value: Search): Self = this.set("Outlook.Search_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResults(value: Results): Self = this.set("Results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSave(value: String => Folder): Self = this.set("Save", js.Any.fromFunction1(value))
+    @scala.inline
+    def setScope(value: String): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSearchSubFolders(value: Boolean): Self = this.set("SearchSubFolders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSession(value: NameSpace): Self = this.set("Session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStop(value: () => Unit): Self = this.set("Stop", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+  }
+  
 }
 

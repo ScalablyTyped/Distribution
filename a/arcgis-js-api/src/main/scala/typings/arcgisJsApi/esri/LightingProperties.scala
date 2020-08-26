@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LightingProperties extends js.Object {
   /**
     * The time and date for which the sun position and light direction is computed.
@@ -12,7 +13,7 @@ trait LightingProperties extends js.Object {
     *
     * @default null
     */
-  var date: js.UndefOr[DateProperties] = js.undefined
+  var date: js.UndefOr[DateProperties] = js.native
   /**
     * Indicates whether to show shadows cast by the sun. Shadows are only displayed for real world 3D objects. Terrain doesn't cast shadows. In local scenes at small zoom levels, shadows are not displayed.
     *
@@ -20,7 +21,7 @@ trait LightingProperties extends js.Object {
     *
     * @default false
     */
-  var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
+  var directShadowsEnabled: js.UndefOr[Boolean] = js.native
   /**
     * The UTC time zone offset in hours that should be displayed in the UI to represent the date. This value does not have an impact on the actual lighting of the scene.
     *
@@ -28,21 +29,39 @@ trait LightingProperties extends js.Object {
     *
     * @default null
     */
-  var displayUTCOffset: js.UndefOr[Double] = js.undefined
+  var displayUTCOffset: js.UndefOr[Double] = js.native
 }
 
 object LightingProperties {
   @scala.inline
-  def apply(
-    date: DateProperties = null,
-    directShadowsEnabled: js.UndefOr[Boolean] = js.undefined,
-    displayUTCOffset: js.UndefOr[Double] = js.undefined
-  ): LightingProperties = {
+  def apply(): LightingProperties = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (!js.isUndefined(directShadowsEnabled)) __obj.updateDynamic("directShadowsEnabled")(directShadowsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayUTCOffset)) __obj.updateDynamic("displayUTCOffset")(displayUTCOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightingProperties]
   }
+  @scala.inline
+  implicit class LightingPropertiesOps[Self <: LightingProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: DateProperties): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDirectShadowsEnabled(value: Boolean): Self = this.set("directShadowsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectShadowsEnabled: Self = this.set("directShadowsEnabled", js.undefined)
+    @scala.inline
+    def setDisplayUTCOffset(value: Double): Self = this.set("displayUTCOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayUTCOffset: Self = this.set("displayUTCOffset", js.undefined)
+  }
+  
 }
 

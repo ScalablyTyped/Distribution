@@ -165,76 +165,158 @@ trait SchemaRequestLog extends js.Object {
 
 object SchemaRequestLog {
   @scala.inline
-  def apply(
-    appEngineRelease: String = null,
-    appId: String = null,
-    cost: js.UndefOr[Double] = js.undefined,
-    endTime: String = null,
-    finished: js.UndefOr[Boolean] = js.undefined,
-    first: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    httpVersion: String = null,
-    instanceId: String = null,
-    instanceIndex: js.UndefOr[Double] = js.undefined,
-    ip: String = null,
-    latency: String = null,
-    line: js.Array[SchemaLogLine] = null,
-    megaCycles: String = null,
-    method: String = null,
-    moduleId: String = null,
-    nickname: String = null,
-    pendingTime: String = null,
-    referrer: String = null,
-    requestId: String = null,
-    resource: String = null,
-    responseSize: String = null,
-    sourceReference: js.Array[SchemaSourceReference] = null,
-    startTime: String = null,
-    status: js.UndefOr[Double] = js.undefined,
-    taskName: String = null,
-    taskQueueName: String = null,
-    traceId: String = null,
-    traceSampled: js.UndefOr[Boolean] = js.undefined,
-    urlMapEntry: String = null,
-    userAgent: String = null,
-    versionId: String = null,
-    wasLoadingRequest: js.UndefOr[Boolean] = js.undefined
-  ): SchemaRequestLog = {
+  def apply(): SchemaRequestLog = {
     val __obj = js.Dynamic.literal()
-    if (appEngineRelease != null) __obj.updateDynamic("appEngineRelease")(appEngineRelease.asInstanceOf[js.Any])
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cost)) __obj.updateDynamic("cost")(cost.get.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(finished)) __obj.updateDynamic("finished")(finished.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(instanceIndex)) __obj.updateDynamic("instanceIndex")(instanceIndex.get.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (megaCycles != null) __obj.updateDynamic("megaCycles")(megaCycles.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (moduleId != null) __obj.updateDynamic("moduleId")(moduleId.asInstanceOf[js.Any])
-    if (nickname != null) __obj.updateDynamic("nickname")(nickname.asInstanceOf[js.Any])
-    if (pendingTime != null) __obj.updateDynamic("pendingTime")(pendingTime.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (responseSize != null) __obj.updateDynamic("responseSize")(responseSize.asInstanceOf[js.Any])
-    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
-    if (taskName != null) __obj.updateDynamic("taskName")(taskName.asInstanceOf[js.Any])
-    if (taskQueueName != null) __obj.updateDynamic("taskQueueName")(taskQueueName.asInstanceOf[js.Any])
-    if (traceId != null) __obj.updateDynamic("traceId")(traceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceSampled)) __obj.updateDynamic("traceSampled")(traceSampled.get.asInstanceOf[js.Any])
-    if (urlMapEntry != null) __obj.updateDynamic("urlMapEntry")(urlMapEntry.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(wasLoadingRequest)) __obj.updateDynamic("wasLoadingRequest")(wasLoadingRequest.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequestLog]
   }
+  @scala.inline
+  implicit class SchemaRequestLogOps[Self <: SchemaRequestLog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppEngineRelease(value: String): Self = this.set("appEngineRelease", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppEngineRelease: Self = this.set("appEngineRelease", js.undefined)
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setCost(value: Double): Self = this.set("cost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCost: Self = this.set("cost", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setFinished(value: Boolean): Self = this.set("finished", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinished: Self = this.set("finished", js.undefined)
+    @scala.inline
+    def setFirst(value: Boolean): Self = this.set("first", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst: Self = this.set("first", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHttpVersion(value: String): Self = this.set("httpVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpVersion: Self = this.set("httpVersion", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setInstanceIndex(value: Double): Self = this.set("instanceIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIndex: Self = this.set("instanceIndex", js.undefined)
+    @scala.inline
+    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp: Self = this.set("ip", js.undefined)
+    @scala.inline
+    def setLatency(value: String): Self = this.set("latency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency: Self = this.set("latency", js.undefined)
+    @scala.inline
+    def setLineVarargs(value: SchemaLogLine*): Self = this.set("line", js.Array(value :_*))
+    @scala.inline
+    def setLine(value: js.Array[SchemaLogLine]): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setMegaCycles(value: String): Self = this.set("megaCycles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMegaCycles: Self = this.set("megaCycles", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setModuleId(value: String): Self = this.set("moduleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModuleId: Self = this.set("moduleId", js.undefined)
+    @scala.inline
+    def setNickname(value: String): Self = this.set("nickname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNickname: Self = this.set("nickname", js.undefined)
+    @scala.inline
+    def setPendingTime(value: String): Self = this.set("pendingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingTime: Self = this.set("pendingTime", js.undefined)
+    @scala.inline
+    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setResponseSize(value: String): Self = this.set("responseSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseSize: Self = this.set("responseSize", js.undefined)
+    @scala.inline
+    def setSourceReferenceVarargs(value: SchemaSourceReference*): Self = this.set("sourceReference", js.Array(value :_*))
+    @scala.inline
+    def setSourceReference(value: js.Array[SchemaSourceReference]): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceReference: Self = this.set("sourceReference", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTaskName(value: String): Self = this.set("taskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskName: Self = this.set("taskName", js.undefined)
+    @scala.inline
+    def setTaskQueueName(value: String): Self = this.set("taskQueueName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskQueueName: Self = this.set("taskQueueName", js.undefined)
+    @scala.inline
+    def setTraceId(value: String): Self = this.set("traceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceId: Self = this.set("traceId", js.undefined)
+    @scala.inline
+    def setTraceSampled(value: Boolean): Self = this.set("traceSampled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceSampled: Self = this.set("traceSampled", js.undefined)
+    @scala.inline
+    def setUrlMapEntry(value: String): Self = this.set("urlMapEntry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrlMapEntry: Self = this.set("urlMapEntry", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    @scala.inline
+    def setVersionId(value: String): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+    @scala.inline
+    def setWasLoadingRequest(value: Boolean): Self = this.set("wasLoadingRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWasLoadingRequest: Self = this.set("wasLoadingRequest", js.undefined)
+  }
+  
 }
 

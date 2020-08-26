@@ -24,29 +24,50 @@ import scala.scalajs.js.annotation._
   * }
   * ```
   */
+@js.native
 trait PaymentDataCallbacks extends js.Object {
   /**
     * This method is called when a payment is authorized in the payment
     * sheet.
     */
-  var onPaymentAuthorized: js.UndefOr[PaymentAuthorizedHandler] = js.undefined
+  var onPaymentAuthorized: js.UndefOr[PaymentAuthorizedHandler] = js.native
   /**
     * This method handles payment data changes in the payment sheet such as
     * shipping address and shipping options.
     */
-  var onPaymentDataChanged: js.UndefOr[PaymentDataChangedHandler] = js.undefined
+  var onPaymentDataChanged: js.UndefOr[PaymentDataChangedHandler] = js.native
 }
 
 object PaymentDataCallbacks {
   @scala.inline
-  def apply(
-    onPaymentAuthorized: /* paymentData */ PaymentData => js.Promise[PaymentAuthorizationResult] | PaymentAuthorizationResult = null,
-    onPaymentDataChanged: /* intermediatePaymentData */ IntermediatePaymentData => js.Promise[PaymentDataRequestUpdate] | PaymentDataRequestUpdate = null
-  ): PaymentDataCallbacks = {
+  def apply(): PaymentDataCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onPaymentAuthorized != null) __obj.updateDynamic("onPaymentAuthorized")(js.Any.fromFunction1(onPaymentAuthorized))
-    if (onPaymentDataChanged != null) __obj.updateDynamic("onPaymentDataChanged")(js.Any.fromFunction1(onPaymentDataChanged))
     __obj.asInstanceOf[PaymentDataCallbacks]
   }
+  @scala.inline
+  implicit class PaymentDataCallbacksOps[Self <: PaymentDataCallbacks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnPaymentAuthorized(
+      value: /* paymentData */ PaymentData => js.Promise[PaymentAuthorizationResult] | PaymentAuthorizationResult
+    ): Self = this.set("onPaymentAuthorized", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaymentAuthorized: Self = this.set("onPaymentAuthorized", js.undefined)
+    @scala.inline
+    def setOnPaymentDataChanged(
+      value: /* intermediatePaymentData */ IntermediatePaymentData => js.Promise[PaymentDataRequestUpdate] | PaymentDataRequestUpdate
+    ): Self = this.set("onPaymentDataChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaymentDataChanged: Self = this.set("onPaymentDataChanged", js.undefined)
+  }
+  
 }
 

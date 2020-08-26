@@ -82,54 +82,90 @@ trait ParamsResourceCampaignsList extends StandardParameters {
 
 object ParamsResourceCampaignsList {
   @scala.inline
-  def apply(
-    advertiserGroupIds: js.Array[String] = null,
-    advertiserIds: js.Array[String] = null,
-    alt: String = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    atLeastOneOptimizationActivity: js.UndefOr[Boolean] = js.undefined,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    excludedIds: js.Array[String] = null,
-    fields: String = null,
-    ids: js.Array[String] = null,
-    key: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    overriddenEventTagId: String = null,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    profileId: String = null,
-    quotaUser: String = null,
-    searchString: String = null,
-    sortField: String = null,
-    sortOrder: String = null,
-    subaccountId: String = null,
-    userIp: String = null
-  ): ParamsResourceCampaignsList = {
+  def apply(): ParamsResourceCampaignsList = {
     val __obj = js.Dynamic.literal()
-    if (advertiserGroupIds != null) __obj.updateDynamic("advertiserGroupIds")(advertiserGroupIds.asInstanceOf[js.Any])
-    if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(atLeastOneOptimizationActivity)) __obj.updateDynamic("atLeastOneOptimizationActivity")(atLeastOneOptimizationActivity.get.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (excludedIds != null) __obj.updateDynamic("excludedIds")(excludedIds.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (overriddenEventTagId != null) __obj.updateDynamic("overriddenEventTagId")(overriddenEventTagId.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (profileId != null) __obj.updateDynamic("profileId")(profileId.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceCampaignsList]
   }
+  @scala.inline
+  implicit class ParamsResourceCampaignsListOps[Self <: ParamsResourceCampaignsList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiserGroupIdsVarargs(value: String*): Self = this.set("advertiserGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setAdvertiserGroupIds(value: js.Array[String]): Self = this.set("advertiserGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserGroupIds: Self = this.set("advertiserGroupIds", js.undefined)
+    @scala.inline
+    def setAdvertiserIdsVarargs(value: String*): Self = this.set("advertiserIds", js.Array(value :_*))
+    @scala.inline
+    def setAdvertiserIds(value: js.Array[String]): Self = this.set("advertiserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIds: Self = this.set("advertiserIds", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setAtLeastOneOptimizationActivity(value: Boolean): Self = this.set("atLeastOneOptimizationActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtLeastOneOptimizationActivity: Self = this.set("atLeastOneOptimizationActivity", js.undefined)
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setExcludedIdsVarargs(value: String*): Self = this.set("excludedIds", js.Array(value :_*))
+    @scala.inline
+    def setExcludedIds(value: js.Array[String]): Self = this.set("excludedIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedIds: Self = this.set("excludedIds", js.undefined)
+    @scala.inline
+    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    @scala.inline
+    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setOverriddenEventTagId(value: String): Self = this.set("overriddenEventTagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverriddenEventTagId: Self = this.set("overriddenEventTagId", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileId: Self = this.set("profileId", js.undefined)
+    @scala.inline
+    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    @scala.inline
+    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortField: Self = this.set("sortField", js.undefined)
+    @scala.inline
+    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+  }
+  
 }
 

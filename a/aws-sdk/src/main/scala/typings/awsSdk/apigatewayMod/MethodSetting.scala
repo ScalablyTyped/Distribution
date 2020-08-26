@@ -50,30 +50,62 @@ trait MethodSetting extends js.Object {
 
 object MethodSetting {
   @scala.inline
-  def apply(
-    cacheDataEncrypted: js.UndefOr[Boolean] = js.undefined,
-    cacheTtlInSeconds: js.UndefOr[Integer] = js.undefined,
-    cachingEnabled: js.UndefOr[Boolean] = js.undefined,
-    dataTraceEnabled: js.UndefOr[Boolean] = js.undefined,
-    loggingLevel: String = null,
-    metricsEnabled: js.UndefOr[Boolean] = js.undefined,
-    requireAuthorizationForCacheControl: js.UndefOr[Boolean] = js.undefined,
-    throttlingBurstLimit: js.UndefOr[Integer] = js.undefined,
-    throttlingRateLimit: js.UndefOr[Double] = js.undefined,
-    unauthorizedCacheControlHeaderStrategy: UnauthorizedCacheControlHeaderStrategy = null
-  ): MethodSetting = {
+  def apply(): MethodSetting = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheDataEncrypted)) __obj.updateDynamic("cacheDataEncrypted")(cacheDataEncrypted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheTtlInSeconds)) __obj.updateDynamic("cacheTtlInSeconds")(cacheTtlInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cachingEnabled)) __obj.updateDynamic("cachingEnabled")(cachingEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataTraceEnabled)) __obj.updateDynamic("dataTraceEnabled")(dataTraceEnabled.get.asInstanceOf[js.Any])
-    if (loggingLevel != null) __obj.updateDynamic("loggingLevel")(loggingLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(metricsEnabled)) __obj.updateDynamic("metricsEnabled")(metricsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireAuthorizationForCacheControl)) __obj.updateDynamic("requireAuthorizationForCacheControl")(requireAuthorizationForCacheControl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(throttlingBurstLimit)) __obj.updateDynamic("throttlingBurstLimit")(throttlingBurstLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(throttlingRateLimit)) __obj.updateDynamic("throttlingRateLimit")(throttlingRateLimit.get.asInstanceOf[js.Any])
-    if (unauthorizedCacheControlHeaderStrategy != null) __obj.updateDynamic("unauthorizedCacheControlHeaderStrategy")(unauthorizedCacheControlHeaderStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodSetting]
   }
+  @scala.inline
+  implicit class MethodSettingOps[Self <: MethodSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheDataEncrypted(value: Boolean): Self = this.set("cacheDataEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheDataEncrypted: Self = this.set("cacheDataEncrypted", js.undefined)
+    @scala.inline
+    def setCacheTtlInSeconds(value: Integer): Self = this.set("cacheTtlInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheTtlInSeconds: Self = this.set("cacheTtlInSeconds", js.undefined)
+    @scala.inline
+    def setCachingEnabled(value: Boolean): Self = this.set("cachingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCachingEnabled: Self = this.set("cachingEnabled", js.undefined)
+    @scala.inline
+    def setDataTraceEnabled(value: Boolean): Self = this.set("dataTraceEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTraceEnabled: Self = this.set("dataTraceEnabled", js.undefined)
+    @scala.inline
+    def setLoggingLevel(value: String): Self = this.set("loggingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingLevel: Self = this.set("loggingLevel", js.undefined)
+    @scala.inline
+    def setMetricsEnabled(value: Boolean): Self = this.set("metricsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsEnabled: Self = this.set("metricsEnabled", js.undefined)
+    @scala.inline
+    def setRequireAuthorizationForCacheControl(value: Boolean): Self = this.set("requireAuthorizationForCacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireAuthorizationForCacheControl: Self = this.set("requireAuthorizationForCacheControl", js.undefined)
+    @scala.inline
+    def setThrottlingBurstLimit(value: Integer): Self = this.set("throttlingBurstLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrottlingBurstLimit: Self = this.set("throttlingBurstLimit", js.undefined)
+    @scala.inline
+    def setThrottlingRateLimit(value: Double): Self = this.set("throttlingRateLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrottlingRateLimit: Self = this.set("throttlingRateLimit", js.undefined)
+    @scala.inline
+    def setUnauthorizedCacheControlHeaderStrategy(value: UnauthorizedCacheControlHeaderStrategy): Self = this.set("unauthorizedCacheControlHeaderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnauthorizedCacheControlHeaderStrategy: Self = this.set("unauthorizedCacheControlHeaderStrategy", js.undefined)
+  }
+  
 }
 

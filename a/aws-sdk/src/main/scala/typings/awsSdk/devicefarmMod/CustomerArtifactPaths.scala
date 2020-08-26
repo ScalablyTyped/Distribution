@@ -22,16 +22,40 @@ trait CustomerArtifactPaths extends js.Object {
 
 object CustomerArtifactPaths {
   @scala.inline
-  def apply(
-    androidPaths: AndroidPaths = null,
-    deviceHostPaths: DeviceHostPaths = null,
-    iosPaths: IosPaths = null
-  ): CustomerArtifactPaths = {
+  def apply(): CustomerArtifactPaths = {
     val __obj = js.Dynamic.literal()
-    if (androidPaths != null) __obj.updateDynamic("androidPaths")(androidPaths.asInstanceOf[js.Any])
-    if (deviceHostPaths != null) __obj.updateDynamic("deviceHostPaths")(deviceHostPaths.asInstanceOf[js.Any])
-    if (iosPaths != null) __obj.updateDynamic("iosPaths")(iosPaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerArtifactPaths]
   }
+  @scala.inline
+  implicit class CustomerArtifactPathsOps[Self <: CustomerArtifactPaths] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidPathsVarargs(value: String*): Self = this.set("androidPaths", js.Array(value :_*))
+    @scala.inline
+    def setAndroidPaths(value: AndroidPaths): Self = this.set("androidPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidPaths: Self = this.set("androidPaths", js.undefined)
+    @scala.inline
+    def setDeviceHostPathsVarargs(value: String*): Self = this.set("deviceHostPaths", js.Array(value :_*))
+    @scala.inline
+    def setDeviceHostPaths(value: DeviceHostPaths): Self = this.set("deviceHostPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceHostPaths: Self = this.set("deviceHostPaths", js.undefined)
+    @scala.inline
+    def setIosPathsVarargs(value: String*): Self = this.set("iosPaths", js.Array(value :_*))
+    @scala.inline
+    def setIosPaths(value: IosPaths): Self = this.set("iosPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosPaths: Self = this.set("iosPaths", js.undefined)
+  }
+  
 }
 

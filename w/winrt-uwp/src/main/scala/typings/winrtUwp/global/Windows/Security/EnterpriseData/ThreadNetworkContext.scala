@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Security.EnterpriseData.ThreadNetworkContext")
 @js.native
 abstract class ThreadNetworkContext ()
-  extends typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext {
-  /** Closes the protected network context. The app must call Close after access to the protected resource is completed. */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.Security.EnterpriseData.ThreadNetworkContext
 

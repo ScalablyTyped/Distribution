@@ -18,11 +18,32 @@ trait ListBackupVaultsOutput extends js.Object {
 
 object ListBackupVaultsOutput {
   @scala.inline
-  def apply(BackupVaultList: BackupVaultList = null, NextToken: String = null): ListBackupVaultsOutput = {
+  def apply(): ListBackupVaultsOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupVaultList != null) __obj.updateDynamic("BackupVaultList")(BackupVaultList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupVaultsOutput]
   }
+  @scala.inline
+  implicit class ListBackupVaultsOutputOps[Self <: ListBackupVaultsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupVaultListVarargs(value: BackupVaultListMember*): Self = this.set("BackupVaultList", js.Array(value :_*))
+    @scala.inline
+    def setBackupVaultList(value: BackupVaultList): Self = this.set("BackupVaultList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupVaultList: Self = this.set("BackupVaultList", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

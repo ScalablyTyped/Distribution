@@ -46,28 +46,58 @@ trait Robot extends js.Object {
 
 object Robot {
   @scala.inline
-  def apply(
-    architecture: Architecture = null,
-    arn: Arn = null,
-    createdAt: CreatedAt = null,
-    fleetArn: Arn = null,
-    greenGrassGroupId: Id = null,
-    lastDeploymentJob: Arn = null,
-    lastDeploymentTime: CreatedAt = null,
-    name: Name = null,
-    status: RobotStatus = null
-  ): Robot = {
+  def apply(): Robot = {
     val __obj = js.Dynamic.literal()
-    if (architecture != null) __obj.updateDynamic("architecture")(architecture.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (fleetArn != null) __obj.updateDynamic("fleetArn")(fleetArn.asInstanceOf[js.Any])
-    if (greenGrassGroupId != null) __obj.updateDynamic("greenGrassGroupId")(greenGrassGroupId.asInstanceOf[js.Any])
-    if (lastDeploymentJob != null) __obj.updateDynamic("lastDeploymentJob")(lastDeploymentJob.asInstanceOf[js.Any])
-    if (lastDeploymentTime != null) __obj.updateDynamic("lastDeploymentTime")(lastDeploymentTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Robot]
   }
+  @scala.inline
+  implicit class RobotOps[Self <: Robot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchitecture(value: Architecture): Self = this.set("architecture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchitecture: Self = this.set("architecture", js.undefined)
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: CreatedAt): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setFleetArn(value: Arn): Self = this.set("fleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("fleetArn", js.undefined)
+    @scala.inline
+    def setGreenGrassGroupId(value: Id): Self = this.set("greenGrassGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreenGrassGroupId: Self = this.set("greenGrassGroupId", js.undefined)
+    @scala.inline
+    def setLastDeploymentJob(value: Arn): Self = this.set("lastDeploymentJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDeploymentJob: Self = this.set("lastDeploymentJob", js.undefined)
+    @scala.inline
+    def setLastDeploymentTime(value: CreatedAt): Self = this.set("lastDeploymentTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDeploymentTime: Self = this.set("lastDeploymentTime", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: RobotStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

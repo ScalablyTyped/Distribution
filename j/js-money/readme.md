@@ -12,7 +12,7 @@ JavaScript implementation of the Money value object.
 | Keywords           | money, javascript, currency |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 194281 |
+| # downloads        | 201076 |
 | # stars            | 4 |
 
 ## Links

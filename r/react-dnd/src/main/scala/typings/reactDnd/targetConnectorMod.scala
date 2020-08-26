@@ -30,7 +30,7 @@ object targetConnectorMod extends js.Object {
     def connectTarget_MTargetConnector: js.Any = js.native
     /* private */ def dropTarget: js.Any = js.native
     def dropTargetOptions: js.Any = js.native
-    def dropTargetOptions(options: js.Any): js.Any = js.native
+    def dropTargetOptions_=(options: js.Any): Unit = js.native
   }
   
 }

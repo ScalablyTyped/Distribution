@@ -28,7 +28,7 @@ trait GetVpcAttachmentResult extends js.Object {
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment
     */
-  val tags: StringDictionary[js.Any] = js.native
+  val tags: StringDictionary[String] = js.native
   /**
     * EC2 Transit Gateway identifier
     */
@@ -49,17 +49,52 @@ object GetVpcAttachmentResult {
     dnsSupport: String,
     ipv6Support: String,
     subnetIds: js.Array[String],
-    tags: StringDictionary[js.Any],
+    tags: StringDictionary[String],
     transitGatewayId: String,
     vpcId: String,
-    vpcOwnerId: String,
-    filters: js.Array[GetVpcAttachmentFilter] = null,
-    id: String = null
+    vpcOwnerId: String
   ): GetVpcAttachmentResult = {
     val __obj = js.Dynamic.literal(dnsSupport = dnsSupport.asInstanceOf[js.Any], ipv6Support = ipv6Support.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], transitGatewayId = transitGatewayId.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any], vpcOwnerId = vpcOwnerId.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcAttachmentResult]
   }
+  @scala.inline
+  implicit class GetVpcAttachmentResultOps[Self <: GetVpcAttachmentResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsSupport(value: String): Self = this.set("dnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpv6Support(value: String): Self = this.set("ipv6Support", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: js.Array[String]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransitGatewayId(value: String): Self = this.set("transitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcOwnerId(value: String): Self = this.set("vpcOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFiltersVarargs(value: GetVpcAttachmentFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetVpcAttachmentFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

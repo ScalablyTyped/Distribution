@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KawaiiProps extends js.Object {
-  var color: js.UndefOr[String] = js.undefined
-  var mood: js.UndefOr[KawaiiMood] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
+  var color: js.UndefOr[String] = js.native
+  var mood: js.UndefOr[KawaiiMood] = js.native
+  var size: js.UndefOr[Double] = js.native
 }
 
 object KawaiiProps {
   @scala.inline
-  def apply(color: String = null, mood: KawaiiMood = null, size: js.UndefOr[Double] = js.undefined): KawaiiProps = {
+  def apply(): KawaiiProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (mood != null) __obj.updateDynamic("mood")(mood.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[KawaiiProps]
   }
+  @scala.inline
+  implicit class KawaiiPropsOps[Self <: KawaiiProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setMood(value: KawaiiMood): Self = this.set("mood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMood: Self = this.set("mood", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

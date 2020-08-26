@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/styles/CommonStyles", JSImport.Namespace)
 @js.native
 object commonStylesMod extends js.Object {
-  val EdgeChromiumHighContrastSelector: /* "@media screen and (-ms-high-contrast: active) and (forced-colors: active)" */ String = js.native
+  val EdgeChromiumHighContrastSelector: /* "@media screen and (forced-colors: active)" */ String = js.native
   val HighContrastSelector: /* "@media screen and (-ms-high-contrast: active)" */ String = js.native
   val HighContrastSelectorBlack: /* "@media screen and (-ms-high-contrast: white-on-black)" */ String = js.native
   val HighContrastSelectorWhite: /* "@media screen and (-ms-high-contrast: black-on-white)" */ String = js.native

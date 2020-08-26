@@ -12,7 +12,7 @@ A simple, universal document store
 | Keywords           | - |
 | # releases         | 15 |
 | # dependents       | 1 |
-| # downloads        | 1035 |
+| # downloads        | 1099 |
 | # stars            | 0 |
 
 ## Links

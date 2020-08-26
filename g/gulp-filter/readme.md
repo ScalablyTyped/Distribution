@@ -10,9 +10,9 @@ Filter files in a `vinyl` stream
 | ------------------ | :-------------: |
 | Full name          | gulp-filter |
 | Keywords           | gulpplugin, filter, ignore, file, files, match, minimatch, glob, globbing, vinyl |
-| # releases         | 3 |
-| # dependents       | 469 |
-| # downloads        | 9364959 |
+| # releases         | 2 |
+| # dependents       | 480 |
+| # downloads        | 9414322 |
 | # stars            | 100 |
 
 ## Links

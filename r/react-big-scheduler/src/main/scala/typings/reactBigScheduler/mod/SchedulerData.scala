@@ -29,7 +29,15 @@ class SchedulerData protected () extends js.Object {
   def setEvents(events: js.Array[Event]): Unit = js.native
   def setResources(resources: js.Array[Resource]): Unit = js.native
   def setViewType(): Unit = js.native
+  def setViewType(
+    viewType: js.UndefOr[scala.Nothing],
+    showAgenda: js.UndefOr[scala.Nothing],
+    isEventPerspective: Boolean
+  ): Unit = js.native
+  def setViewType(viewType: js.UndefOr[scala.Nothing], showAgenda: Boolean): Unit = js.native
+  def setViewType(viewType: js.UndefOr[scala.Nothing], showAgenda: Boolean, isEventPerspective: Boolean): Unit = js.native
   def setViewType(viewType: ViewTypes): Unit = js.native
+  def setViewType(viewType: ViewTypes, showAgenda: js.UndefOr[scala.Nothing], isEventPerspective: Boolean): Unit = js.native
   def setViewType(viewType: ViewTypes, showAgenda: Boolean): Unit = js.native
   def setViewType(viewType: ViewTypes, showAgenda: Boolean, isEventPerspective: Boolean): Unit = js.native
 }

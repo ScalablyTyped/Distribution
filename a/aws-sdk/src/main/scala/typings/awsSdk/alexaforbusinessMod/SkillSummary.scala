@@ -30,20 +30,42 @@ trait SkillSummary extends js.Object {
 
 object SkillSummary {
   @scala.inline
-  def apply(
-    EnablementType: EnablementType = null,
-    SkillId: SkillId = null,
-    SkillName: SkillName = null,
-    SkillType: SkillType = null,
-    SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
-  ): SkillSummary = {
+  def apply(): SkillSummary = {
     val __obj = js.Dynamic.literal()
-    if (EnablementType != null) __obj.updateDynamic("EnablementType")(EnablementType.asInstanceOf[js.Any])
-    if (SkillId != null) __obj.updateDynamic("SkillId")(SkillId.asInstanceOf[js.Any])
-    if (SkillName != null) __obj.updateDynamic("SkillName")(SkillName.asInstanceOf[js.Any])
-    if (SkillType != null) __obj.updateDynamic("SkillType")(SkillType.asInstanceOf[js.Any])
-    if (!js.isUndefined(SupportsLinking)) __obj.updateDynamic("SupportsLinking")(SupportsLinking.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkillSummary]
   }
+  @scala.inline
+  implicit class SkillSummaryOps[Self <: SkillSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnablementType(value: EnablementType): Self = this.set("EnablementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablementType: Self = this.set("EnablementType", js.undefined)
+    @scala.inline
+    def setSkillId(value: SkillId): Self = this.set("SkillId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkillId: Self = this.set("SkillId", js.undefined)
+    @scala.inline
+    def setSkillName(value: SkillName): Self = this.set("SkillName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkillName: Self = this.set("SkillName", js.undefined)
+    @scala.inline
+    def setSkillType(value: SkillType): Self = this.set("SkillType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkillType: Self = this.set("SkillType", js.undefined)
+    @scala.inline
+    def setSupportsLinking(value: scala.Boolean): Self = this.set("SupportsLinking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsLinking: Self = this.set("SupportsLinking", js.undefined)
+  }
+  
 }
 

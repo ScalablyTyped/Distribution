@@ -4,27 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AchievementSetStepsAtLeastResponse extends js.Object {
   /** The current steps recorded for this incremental achievement. */
-  var currentSteps: js.UndefOr[Double] = js.undefined
+  var currentSteps: js.UndefOr[Double] = js.native
   /** Uniquely identifies the type of this resource. Value is always the fixed string games#achievementSetStepsAtLeastResponse. */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Whether the the current steps for the achievement has reached the number of steps required to unlock. */
-  var newlyUnlocked: js.UndefOr[Boolean] = js.undefined
+  var newlyUnlocked: js.UndefOr[Boolean] = js.native
 }
 
 object AchievementSetStepsAtLeastResponse {
   @scala.inline
-  def apply(
-    currentSteps: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    newlyUnlocked: js.UndefOr[Boolean] = js.undefined
-  ): AchievementSetStepsAtLeastResponse = {
+  def apply(): AchievementSetStepsAtLeastResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(currentSteps)) __obj.updateDynamic("currentSteps")(currentSteps.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(newlyUnlocked)) __obj.updateDynamic("newlyUnlocked")(newlyUnlocked.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AchievementSetStepsAtLeastResponse]
   }
+  @scala.inline
+  implicit class AchievementSetStepsAtLeastResponseOps[Self <: AchievementSetStepsAtLeastResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentSteps(value: Double): Self = this.set("currentSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentSteps: Self = this.set("currentSteps", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNewlyUnlocked(value: Boolean): Self = this.set("newlyUnlocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewlyUnlocked: Self = this.set("newlyUnlocked", js.undefined)
+  }
+  
 }
 

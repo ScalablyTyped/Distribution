@@ -13,25 +13,26 @@ import scala.scalajs.js.annotation._
   * It is usually implemented by {@link AccessibleContext} .
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleEventObject extends EventObject {
   /**
     * specifies the type of this event.
     *
     * For a list of possible events see {@link AccessibleEventId} .
     */
-  var EventId: Double
+  var EventId: Double = js.native
   /**
     * for events that specifies a value change, this is the new value.
     *
     * Depending on the {@link EventId} , this can be void.
     */
-  var NewValue: js.Any
+  var NewValue: js.Any = js.native
   /**
     * for events that specifies a value change, this is the old value.
     *
     * Depending on the {@link EventId} , this can be void.
     */
-  var OldValue: js.Any
+  var OldValue: js.Any = js.native
 }
 
 object AccessibleEventObject {
@@ -40,5 +41,24 @@ object AccessibleEventObject {
     val __obj = js.Dynamic.literal(EventId = EventId.asInstanceOf[js.Any], NewValue = NewValue.asInstanceOf[js.Any], OldValue = OldValue.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibleEventObject]
   }
+  @scala.inline
+  implicit class AccessibleEventObjectOps[Self <: AccessibleEventObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventId(value: Double): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewValue(value: js.Any): Self = this.set("NewValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOldValue(value: js.Any): Self = this.set("OldValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

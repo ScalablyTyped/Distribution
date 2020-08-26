@@ -19,6 +19,7 @@ class Provider protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: ProviderArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
   def this(name: String, args: ProviderArgs, opts: ResourceOptions) = this()
 }
 

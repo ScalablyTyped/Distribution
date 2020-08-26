@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * In fact a named range is a named formula expression. A cell range address is one possible content of a named range.
   * @see com.sun.star.sheet.NamedRanges
   */
+@js.native
 trait NamedRange
   extends XNamedRange
      with XCellRangeReferrer {
@@ -26,7 +27,7 @@ trait NamedRange
     * referring to this defined name will show the formula definition contained in the name instead.
     * @since OOo 3.0
     */
-  var IsSharedFormula: Boolean
+  var IsSharedFormula: Boolean = js.native
   /**
     * returns the index used to refer to this name in token arrays.
     *
@@ -36,7 +37,7 @@ trait NamedRange
     * @see com.sun.star.sheet.FormulaMapGroupSpecialOffset.NAME
     * @since OOo 3.0
     */
-  var TokenIndex: Double
+  var TokenIndex: Double = js.native
 }
 
 object NamedRange {
@@ -65,5 +66,22 @@ object NamedRange {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], IsSharedFormula = IsSharedFormula.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ReferencePosition = ReferencePosition.asInstanceOf[js.Any], ReferredCells = ReferredCells.asInstanceOf[js.Any], TokenIndex = TokenIndex.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getContent = js.Any.fromFunction0(getContent), getName = js.Any.fromFunction0(getName), getReferencePosition = js.Any.fromFunction0(getReferencePosition), getReferredCells = js.Any.fromFunction0(getReferredCells), getType = js.Any.fromFunction0(getType), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setContent = js.Any.fromFunction1(setContent), setName = js.Any.fromFunction1(setName), setReferencePosition = js.Any.fromFunction1(setReferencePosition), setType = js.Any.fromFunction1(setType))
     __obj.asInstanceOf[NamedRange]
   }
+  @scala.inline
+  implicit class NamedRangeOps[Self <: NamedRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsSharedFormula(value: Boolean): Self = this.set("IsSharedFormula", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTokenIndex(value: Double): Self = this.set("TokenIndex", value.asInstanceOf[js.Any])
+  }
+  
 }
 

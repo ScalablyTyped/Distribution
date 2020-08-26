@@ -19,6 +19,7 @@ object Version_ extends js.Object {
     * @returns Number Returns -1 if the current version is smaller than the target version, 1 if greater, and 0 if they're equivalent.
     */
   def compare(): Double = js.native
+  def compare(current: js.UndefOr[scala.Nothing], target: java.lang.String): Double = js.native
   def compare(current: java.lang.String): Double = js.native
   def compare(current: java.lang.String, target: java.lang.String): Double = js.native
   /** [Method] Converts a version component to a comparable value

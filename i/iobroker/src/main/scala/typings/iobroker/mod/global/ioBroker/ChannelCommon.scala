@@ -4,21 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChannelCommon extends ObjectCommon {
   // Only states can have common.custom
-  var custom: js.UndefOr[scala.Nothing] = js.undefined
+  var custom: js.UndefOr[scala.Nothing] = js.native
   /** description of this channel */
-  var desc: js.UndefOr[String] = js.undefined
+  var desc: js.UndefOr[String] = js.native
 }
 
 object ChannelCommon {
   @scala.inline
-  def apply(name: String, desc: String = null, icon: String = null, role: String = null): ChannelCommon = {
+  def apply(name: String): ChannelCommon = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelCommon]
   }
+  @scala.inline
+  implicit class ChannelCommonOps[Self <: ChannelCommon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesc: Self = this.set("desc", js.undefined)
+  }
+  
 }
 

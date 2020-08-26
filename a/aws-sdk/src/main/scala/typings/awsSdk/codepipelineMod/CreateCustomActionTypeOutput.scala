@@ -18,10 +18,30 @@ trait CreateCustomActionTypeOutput extends js.Object {
 
 object CreateCustomActionTypeOutput {
   @scala.inline
-  def apply(actionType: ActionType, tags: TagList = null): CreateCustomActionTypeOutput = {
+  def apply(actionType: ActionType): CreateCustomActionTypeOutput = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomActionTypeOutput]
   }
+  @scala.inline
+  implicit class CreateCustomActionTypeOutputOps[Self <: CreateCustomActionTypeOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionType(value: ActionType): Self = this.set("actionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

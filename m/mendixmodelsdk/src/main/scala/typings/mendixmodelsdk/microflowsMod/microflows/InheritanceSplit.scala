@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/inheritance-split relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/object-type-decision relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.InheritanceSplit")
 @js.native
@@ -26,11 +26,11 @@ class InheritanceSplit protected () extends MicroflowObject {
   @JSName("model")
   var model_FInheritanceSplit: IModel = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def splitVariableName: String = js.native
-  def splitVariableName(newValue: String): js.Any = js.native
+  def splitVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

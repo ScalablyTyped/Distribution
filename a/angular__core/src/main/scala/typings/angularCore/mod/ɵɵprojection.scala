@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ɵɵprojection extends js.Object {
   def apply(nodeIndex: Double): Unit = js.native
+  def apply(nodeIndex: Double, selectorIndex: js.UndefOr[scala.Nothing], attrs: TAttributes): Unit = js.native
   def apply(nodeIndex: Double, selectorIndex: Double): Unit = js.native
   def apply(nodeIndex: Double, selectorIndex: Double, attrs: TAttributes): Unit = js.native
 }

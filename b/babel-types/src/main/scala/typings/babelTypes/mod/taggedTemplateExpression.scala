@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object taggedTemplateExpression extends js.Object {
   def apply(): TaggedTemplateExpression_ = js.native
+  def apply(tag: js.UndefOr[scala.Nothing], quasi: TemplateLiteral_): TaggedTemplateExpression_ = js.native
   def apply(tag: Expression): TaggedTemplateExpression_ = js.native
   def apply(tag: Expression, quasi: TemplateLiteral_): TaggedTemplateExpression_ = js.native
 }

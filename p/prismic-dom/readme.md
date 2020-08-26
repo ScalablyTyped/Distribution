@@ -12,7 +12,7 @@ render prismic json fragments in HTML
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 25 |
-| # downloads        | 1009150 |
+| # downloads        | 1040943 |
 | # stars            | 0 |
 
 ## Links

@@ -26,16 +26,34 @@ trait CreateGovCloudAccountRequest extends js.Object {
 
 object CreateGovCloudAccountRequest {
   @scala.inline
-  def apply(
-    AccountName: AccountName,
-    Email: Email,
-    IamUserAccessToBilling: IAMUserAccessToBilling = null,
-    RoleName: RoleName = null
-  ): CreateGovCloudAccountRequest = {
+  def apply(AccountName: AccountName, Email: Email): CreateGovCloudAccountRequest = {
     val __obj = js.Dynamic.literal(AccountName = AccountName.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any])
-    if (IamUserAccessToBilling != null) __obj.updateDynamic("IamUserAccessToBilling")(IamUserAccessToBilling.asInstanceOf[js.Any])
-    if (RoleName != null) __obj.updateDynamic("RoleName")(RoleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGovCloudAccountRequest]
   }
+  @scala.inline
+  implicit class CreateGovCloudAccountRequestOps[Self <: CreateGovCloudAccountRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountName(value: AccountName): Self = this.set("AccountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIamUserAccessToBilling(value: IAMUserAccessToBilling): Self = this.set("IamUserAccessToBilling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamUserAccessToBilling: Self = this.set("IamUserAccessToBilling", js.undefined)
+    @scala.inline
+    def setRoleName(value: RoleName): Self = this.set("RoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleName: Self = this.set("RoleName", js.undefined)
+  }
+  
 }
 

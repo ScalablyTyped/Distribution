@@ -25,11 +25,11 @@ class WidgetReturnType protected () extends Element {
   var model_FWidgetReturnType: IModel = js.native
   def containerAsWidgetValueType: WidgetValueType = js.native
   def entityProperty: String = js.native
-  def entityProperty(newValue: String): js.Any = js.native
+  def entityProperty_=(newValue: String): Unit = js.native
   def isList: Boolean = js.native
-  def isList(newValue: Boolean): js.Any = js.native
+  def isList_=(newValue: Boolean): Unit = js.native
   def `type`: WidgetReturnTypeEnum = js.native
-  def `type`(newValue: WidgetReturnTypeEnum): js.Any = js.native
+  def type_=(newValue: WidgetReturnTypeEnum): Unit = js.native
 }
 
 /* static members */

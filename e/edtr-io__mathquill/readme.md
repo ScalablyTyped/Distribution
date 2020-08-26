@@ -11,8 +11,8 @@ Easily type math in your webapp
 | Full name          | @edtr-io/mathquill |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 8873 |
+| # dependents       | 3 |
+| # downloads        | 13887 |
 | # stars            | 0 |
 
 ## Links

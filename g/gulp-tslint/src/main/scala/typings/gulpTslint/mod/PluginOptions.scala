@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PluginOptions extends js.Object {
-  var configuration: js.UndefOr[js.Any] = js.undefined
-  var fix: js.UndefOr[Boolean] = js.undefined
-  var formatter: js.UndefOr[String | js.Function] = js.undefined
-  var formattersDirectory: js.UndefOr[String] = js.undefined
-  var program: js.UndefOr[js.Any] = js.undefined
-  var rulesDirectory: js.UndefOr[String] = js.undefined
-  var tslint: js.UndefOr[js.Any] = js.undefined
+  var configuration: js.UndefOr[js.Any] = js.native
+  var fix: js.UndefOr[Boolean] = js.native
+  var formatter: js.UndefOr[String | js.Function] = js.native
+  var formattersDirectory: js.UndefOr[String] = js.native
+  var program: js.UndefOr[js.Any] = js.native
+  var rulesDirectory: js.UndefOr[String] = js.native
+  var tslint: js.UndefOr[js.Any] = js.native
 }
 
 object PluginOptions {
   @scala.inline
-  def apply(
-    configuration: js.Any = null,
-    fix: js.UndefOr[Boolean] = js.undefined,
-    formatter: String | js.Function = null,
-    formattersDirectory: String = null,
-    program: js.Any = null,
-    rulesDirectory: String = null,
-    tslint: js.Any = null
-  ): PluginOptions = {
+  def apply(): PluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix.get.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory.asInstanceOf[js.Any])
-    if (program != null) __obj.updateDynamic("program")(program.asInstanceOf[js.Any])
-    if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])
-    if (tslint != null) __obj.updateDynamic("tslint")(tslint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
+  @scala.inline
+  implicit class PluginOptionsOps[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: js.Any): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setFix(value: Boolean): Self = this.set("fix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFix: Self = this.set("fix", js.undefined)
+    @scala.inline
+    def setFormatter(value: String | js.Function): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setFormattersDirectory(value: String): Self = this.set("formattersDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattersDirectory: Self = this.set("formattersDirectory", js.undefined)
+    @scala.inline
+    def setProgram(value: js.Any): Self = this.set("program", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgram: Self = this.set("program", js.undefined)
+    @scala.inline
+    def setRulesDirectory(value: String): Self = this.set("rulesDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesDirectory: Self = this.set("rulesDirectory", js.undefined)
+    @scala.inline
+    def setTslint(value: js.Any): Self = this.set("tslint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTslint: Self = this.set("tslint", js.undefined)
+  }
+  
 }
 

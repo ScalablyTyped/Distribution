@@ -4,25 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProcessCpuInfo extends ProcessInfo {
-  var cpu: js.UndefOr[Double] = js.undefined
+  var cpu: js.UndefOr[Double] = js.native
 }
 
 object ProcessCpuInfo {
   @scala.inline
-  def apply(
-    name: String,
-    pid: Double,
-    ppid: Double,
-    commandLine: String = null,
-    cpu: js.UndefOr[Double] = js.undefined,
-    memory: js.UndefOr[Double] = js.undefined
-  ): ProcessCpuInfo = {
+  def apply(name: String, pid: Double, ppid: Double): ProcessCpuInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], ppid = ppid.asInstanceOf[js.Any])
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessCpuInfo]
   }
+  @scala.inline
+  implicit class ProcessCpuInfoOps[Self <: ProcessCpuInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpu(value: Double): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+  }
+  
 }
 

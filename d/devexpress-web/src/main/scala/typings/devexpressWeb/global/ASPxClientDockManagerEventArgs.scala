@@ -15,10 +15,5 @@ class ASPxClientDockManagerEventArgs protected ()
     * For internal use only.
     */
   def this(panel: typings.devexpressWeb.ASPxClientDockPanel) = this()
-  /**
-    * Gets the panel currently being processed.
-    */
-  /* CompleteClass */
-  override var panel: typings.devexpressWeb.ASPxClientDockPanel = js.native
 }
 

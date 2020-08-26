@@ -143,6 +143,7 @@ class ContextualMenuBase protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MContextualMenuBase(): Unit = js.native
   def dismiss(): Unit = js.native
+  def dismiss(ev: js.UndefOr[scala.Nothing], dismissAll: Boolean): Unit = js.native
   def dismiss(ev: js.Any): Unit = js.native
   def dismiss(ev: js.Any, dismissAll: Boolean): Unit = js.native
   @JSName("shouldComponentUpdate")

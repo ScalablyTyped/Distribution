@@ -10,9 +10,9 @@ A simple json config file loader for node
 | ------------------ | :-------------: |
 | Full name          | @cyberblast/config |
 | Keywords           | node, config, file, json |
-| # releases         | 8 |
+| # releases         | 10 |
 | # dependents       | 2 |
-| # downloads        | 502 |
+| # downloads        | 641 |
 | # stars            | 0 |
 
 ## Links

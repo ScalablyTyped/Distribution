@@ -18,11 +18,30 @@ trait ObjectIdentifierAndLinkNameTuple extends js.Object {
 
 object ObjectIdentifierAndLinkNameTuple {
   @scala.inline
-  def apply(LinkName: LinkName = null, ObjectIdentifier: ObjectIdentifier = null): ObjectIdentifierAndLinkNameTuple = {
+  def apply(): ObjectIdentifierAndLinkNameTuple = {
     val __obj = js.Dynamic.literal()
-    if (LinkName != null) __obj.updateDynamic("LinkName")(LinkName.asInstanceOf[js.Any])
-    if (ObjectIdentifier != null) __obj.updateDynamic("ObjectIdentifier")(ObjectIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectIdentifierAndLinkNameTuple]
   }
+  @scala.inline
+  implicit class ObjectIdentifierAndLinkNameTupleOps[Self <: ObjectIdentifierAndLinkNameTuple] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkName: Self = this.set("LinkName", js.undefined)
+    @scala.inline
+    def setObjectIdentifier(value: ObjectIdentifier): Self = this.set("ObjectIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectIdentifier: Self = this.set("ObjectIdentifier", js.undefined)
+  }
+  
 }
 

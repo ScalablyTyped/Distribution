@@ -18,18 +18,23 @@ trait Validators extends js.Object {
   @JSName("url")
   var url_Original: Validator = js.native
   def email(): `true` | String = js.native
+  def email(input: js.UndefOr[scala.Nothing], key: String): `true` | String = js.native
   def email(input: String): `true` | String = js.native
   def email(input: String, key: String): `true` | String = js.native
   def numeric(): `true` | String = js.native
+  def numeric(input: js.UndefOr[scala.Nothing], key: String): `true` | String = js.native
   def numeric(input: String): `true` | String = js.native
   def numeric(input: String, key: String): `true` | String = js.native
   def required(): `true` | String = js.native
+  def required(input: js.UndefOr[scala.Nothing], key: String): `true` | String = js.native
   def required(input: String): `true` | String = js.native
   def required(input: String, key: String): `true` | String = js.native
   def slug(): `true` | String = js.native
+  def slug(input: js.UndefOr[scala.Nothing], key: String): `true` | String = js.native
   def slug(input: String): `true` | String = js.native
   def slug(input: String, key: String): `true` | String = js.native
   def url(): `true` | String = js.native
+  def url(input: js.UndefOr[scala.Nothing], key: String): `true` | String = js.native
   def url(input: String): `true` | String = js.native
   def url(input: String, key: String): `true` | String = js.native
 }

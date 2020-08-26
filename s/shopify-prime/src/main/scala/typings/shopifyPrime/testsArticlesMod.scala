@@ -21,7 +21,6 @@ object testsArticlesMod extends js.Object {
     def ListsTags(): js.Promise[Unit] = js.native
     def ListsTagsForBlog(): js.Promise[Unit] = js.native
     def UpdatesArticles(): js.Promise[Unit] = js.native
-    /* private */ def create(): js.Any = js.native
     /* private */ def create(scheduleForDeletion: js.Any): js.Any = js.native
     /* private */ def setupAsync(): js.Any = js.native
     /* private */ def teardownAsync(): js.Any = js.native

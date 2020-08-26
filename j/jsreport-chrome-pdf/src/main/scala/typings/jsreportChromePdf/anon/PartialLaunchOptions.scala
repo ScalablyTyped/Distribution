@@ -8,69 +8,122 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<jsreport-chrome-pdf.jsreport-chrome-pdf.LaunchOptions> */
+@js.native
 trait PartialLaunchOptions extends js.Object {
-  var args: js.UndefOr[js.Array[String]] = js.undefined
-  var defaultViewport: js.UndefOr[Partialwidthstringheights] = js.undefined
-  var devtools: js.UndefOr[Boolean] = js.undefined
-  var dumpio: js.UndefOr[Boolean] = js.undefined
-  var env: js.UndefOr[StringDictionary[String]] = js.undefined
-  var executablePath: js.UndefOr[String] = js.undefined
-  var extraPrefsFirefox: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var handleSIGHUP: js.UndefOr[Boolean] = js.undefined
-  var handleSIGINT: js.UndefOr[Boolean] = js.undefined
-  var handleSIGTERM: js.UndefOr[Boolean] = js.undefined
-  var headless: js.UndefOr[Boolean] = js.undefined
-  var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.undefined
-  var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
-  var pipe: js.UndefOr[Boolean] = js.undefined
-  var product: js.UndefOr[chrome | firefox] = js.undefined
-  var slowMo: js.UndefOr[Double] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var userDataDir: js.UndefOr[String] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
+  var defaultViewport: js.UndefOr[Partialwidthstringheights] = js.native
+  var devtools: js.UndefOr[Boolean] = js.native
+  var dumpio: js.UndefOr[Boolean] = js.native
+  var env: js.UndefOr[StringDictionary[String]] = js.native
+  var executablePath: js.UndefOr[String] = js.native
+  var extraPrefsFirefox: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var handleSIGHUP: js.UndefOr[Boolean] = js.native
+  var handleSIGINT: js.UndefOr[Boolean] = js.native
+  var handleSIGTERM: js.UndefOr[Boolean] = js.native
+  var headless: js.UndefOr[Boolean] = js.native
+  var ignoreDefaultArgs: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.native
+  var pipe: js.UndefOr[Boolean] = js.native
+  var product: js.UndefOr[chrome | firefox] = js.native
+  var slowMo: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var userDataDir: js.UndefOr[String] = js.native
 }
 
 object PartialLaunchOptions {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    defaultViewport: Partialwidthstringheights = null,
-    devtools: js.UndefOr[Boolean] = js.undefined,
-    dumpio: js.UndefOr[Boolean] = js.undefined,
-    env: StringDictionary[String] = null,
-    executablePath: String = null,
-    extraPrefsFirefox: StringDictionary[js.Any] = null,
-    handleSIGHUP: js.UndefOr[Boolean] = js.undefined,
-    handleSIGINT: js.UndefOr[Boolean] = js.undefined,
-    handleSIGTERM: js.UndefOr[Boolean] = js.undefined,
-    headless: js.UndefOr[Boolean] = js.undefined,
-    ignoreDefaultArgs: Boolean | js.Array[String] = null,
-    ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined,
-    pipe: js.UndefOr[Boolean] = js.undefined,
-    product: chrome | firefox = null,
-    slowMo: js.UndefOr[Double] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    userDataDir: String = null
-  ): PartialLaunchOptions = {
+  def apply(): PartialLaunchOptions = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(devtools)) __obj.updateDynamic("devtools")(devtools.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dumpio)) __obj.updateDynamic("dumpio")(dumpio.get.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (executablePath != null) __obj.updateDynamic("executablePath")(executablePath.asInstanceOf[js.Any])
-    if (extraPrefsFirefox != null) __obj.updateDynamic("extraPrefsFirefox")(extraPrefsFirefox.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSIGHUP)) __obj.updateDynamic("handleSIGHUP")(handleSIGHUP.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSIGINT)) __obj.updateDynamic("handleSIGINT")(handleSIGINT.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleSIGTERM)) __obj.updateDynamic("handleSIGTERM")(handleSIGTERM.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(headless)) __obj.updateDynamic("headless")(headless.get.asInstanceOf[js.Any])
-    if (ignoreDefaultArgs != null) __obj.updateDynamic("ignoreDefaultArgs")(ignoreDefaultArgs.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHTTPSErrors)) __obj.updateDynamic("ignoreHTTPSErrors")(ignoreHTTPSErrors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pipe)) __obj.updateDynamic("pipe")(pipe.get.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(slowMo)) __obj.updateDynamic("slowMo")(slowMo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (userDataDir != null) __obj.updateDynamic("userDataDir")(userDataDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialLaunchOptions]
   }
+  @scala.inline
+  implicit class PartialLaunchOptionsOps[Self <: PartialLaunchOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setDefaultViewport(value: Partialwidthstringheights): Self = this.set("defaultViewport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultViewport: Self = this.set("defaultViewport", js.undefined)
+    @scala.inline
+    def setDevtools(value: Boolean): Self = this.set("devtools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevtools: Self = this.set("devtools", js.undefined)
+    @scala.inline
+    def setDumpio(value: Boolean): Self = this.set("dumpio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDumpio: Self = this.set("dumpio", js.undefined)
+    @scala.inline
+    def setEnv(value: StringDictionary[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setExecutablePath(value: String): Self = this.set("executablePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutablePath: Self = this.set("executablePath", js.undefined)
+    @scala.inline
+    def setExtraPrefsFirefox(value: StringDictionary[js.Any]): Self = this.set("extraPrefsFirefox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraPrefsFirefox: Self = this.set("extraPrefsFirefox", js.undefined)
+    @scala.inline
+    def setHandleSIGHUP(value: Boolean): Self = this.set("handleSIGHUP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleSIGHUP: Self = this.set("handleSIGHUP", js.undefined)
+    @scala.inline
+    def setHandleSIGINT(value: Boolean): Self = this.set("handleSIGINT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleSIGINT: Self = this.set("handleSIGINT", js.undefined)
+    @scala.inline
+    def setHandleSIGTERM(value: Boolean): Self = this.set("handleSIGTERM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleSIGTERM: Self = this.set("handleSIGTERM", js.undefined)
+    @scala.inline
+    def setHeadless(value: Boolean): Self = this.set("headless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadless: Self = this.set("headless", js.undefined)
+    @scala.inline
+    def setIgnoreDefaultArgsVarargs(value: String*): Self = this.set("ignoreDefaultArgs", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreDefaultArgs(value: Boolean | js.Array[String]): Self = this.set("ignoreDefaultArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreDefaultArgs: Self = this.set("ignoreDefaultArgs", js.undefined)
+    @scala.inline
+    def setIgnoreHTTPSErrors(value: Boolean): Self = this.set("ignoreHTTPSErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreHTTPSErrors: Self = this.set("ignoreHTTPSErrors", js.undefined)
+    @scala.inline
+    def setPipe(value: Boolean): Self = this.set("pipe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipe: Self = this.set("pipe", js.undefined)
+    @scala.inline
+    def setProduct(value: chrome | firefox): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+    @scala.inline
+    def setSlowMo(value: Double): Self = this.set("slowMo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlowMo: Self = this.set("slowMo", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUserDataDir(value: String): Self = this.set("userDataDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDataDir: Self = this.set("userDataDir", js.undefined)
+  }
+  
 }
 

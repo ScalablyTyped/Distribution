@@ -42,26 +42,54 @@ trait Instance extends js.Object {
 
 object Instance {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DnsName: DnsName = null,
-    FleetId: FleetId = null,
-    InstanceId: InstanceId = null,
-    IpAddress: IpAddress = null,
-    OperatingSystem: OperatingSystem = null,
-    Status: InstanceStatus = null,
-    Type: EC2InstanceType = null
-  ): Instance = {
+  def apply(): Instance = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DnsName != null) __obj.updateDynamic("DnsName")(DnsName.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
-    if (OperatingSystem != null) __obj.updateDynamic("OperatingSystem")(OperatingSystem.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
+  @scala.inline
+  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDnsName(value: DnsName): Self = this.set("DnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("DnsName", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setIpAddress(value: IpAddress): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    @scala.inline
+    def setOperatingSystem(value: OperatingSystem): Self = this.set("OperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystem: Self = this.set("OperatingSystem", js.undefined)
+    @scala.inline
+    def setStatus(value: InstanceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setType(value: EC2InstanceType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

@@ -22,11 +22,30 @@ trait SchemaWatchResponse extends js.Object {
 
 object SchemaWatchResponse {
   @scala.inline
-  def apply(expiration: String = null, historyId: String = null): SchemaWatchResponse = {
+  def apply(): SchemaWatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (expiration != null) __obj.updateDynamic("expiration")(expiration.asInstanceOf[js.Any])
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWatchResponse]
   }
+  @scala.inline
+  implicit class SchemaWatchResponseOps[Self <: SchemaWatchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpiration(value: String): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    @scala.inline
+    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+  }
+  
 }
 

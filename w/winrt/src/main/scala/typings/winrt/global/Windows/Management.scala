@@ -1,7 +1,6 @@
 package typings.winrt.global.Windows
 
 import typings.winrt.Windows.Management.Core.IApplicationDataManager
-import typings.winrt.Windows.Management.Deployment.PackageInstallState
 import typings.winrt.Windows.Storage.ApplicationData
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,14 +26,7 @@ object Management extends js.Object {
   object Deployment extends js.Object {
     @js.native
     class DeploymentResult ()
-      extends typings.winrt.Windows.Management.Deployment.DeploymentResult {
-      /* CompleteClass */
-      override var activityId: String = js.native
-      /* CompleteClass */
-      override var errorText: String = js.native
-      /* CompleteClass */
-      override var extendedErrorCode: Double = js.native
-    }
+      extends typings.winrt.Windows.Management.Deployment.DeploymentResult
     
     @js.native
     class PackageManager ()
@@ -42,12 +34,7 @@ object Management extends js.Object {
     
     @js.native
     class PackageUserInformation ()
-      extends typings.winrt.Windows.Management.Deployment.PackageUserInformation {
-      /* CompleteClass */
-      override var installState: PackageInstallState = js.native
-      /* CompleteClass */
-      override var userSecurityId: String = js.native
-    }
+      extends typings.winrt.Windows.Management.Deployment.PackageUserInformation
     
     @js.native
     object DeploymentOptions extends js.Object {

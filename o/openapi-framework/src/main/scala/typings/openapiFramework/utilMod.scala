@@ -1,6 +1,9 @@
 package typings.openapiFramework
 
 import typings.openapiFramework.basePathMod.default
+import typings.openapiFramework.openapiFrameworkNumbers.`-1`
+import typings.openapiFramework.openapiFrameworkNumbers.`0`
+import typings.openapiFramework.openapiFrameworkNumbers.`1`
 import typings.openapiFramework.typesMod.IOpenAPIFramework
 import typings.openapiTypes.mod.OpenAPIV3.ServerObject
 import typings.tsLog.mod.Logger
@@ -23,6 +26,7 @@ object utilMod extends js.Object {
   def byMethods(name: js.Any): Boolean = js.native
   def byRoute(a: js.Any, b: js.Any): Double = js.native
   def byString(el: js.Any): Boolean = js.native
+  def byTag(a: js.Any, b: js.Any): `1` | `-1` | `0` = js.native
   def copy(obj: js.Any): js.Any = js.native
   def getAdditionalFeatures(framework: IOpenAPIFramework, logger: Logger, docs: js.Any*): js.Array[_] = js.native
   def getBasePathsFromServers(servers: js.Array[ServerObject]): js.Array[default] = js.native

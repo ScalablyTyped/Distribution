@@ -8,60 +8,86 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IRadioGroupProps extends IProps {
   /**
     * Whether the group and _all_ its radios are disabled.
     * Individual radios can be disabled using their `disabled` prop.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /**
     * Whether the radio buttons are to be displayed inline horizontally.
     */
-  var `inline`: js.UndefOr[Boolean] = js.undefined
+  var `inline`: js.UndefOr[Boolean] = js.native
   /** Optional label text to display above the radio buttons. */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * Name of the group, used to link radio buttons together in HTML.
     * If omitted, a unique name will be generated internally.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Array of options to render in the group. This prop is mutually exclusive
     * with `children`: either provide an array of `IOptionProps` objects or
     * provide `<Radio>` children elements.
     */
-  var options: js.UndefOr[js.Array[IOptionProps]] = js.undefined
+  var options: js.UndefOr[js.Array[IOptionProps]] = js.native
   /** Value of the selected radio. The child with this value will be `:checked`. */
-  var selectedValue: js.UndefOr[String | Double] = js.undefined
+  var selectedValue: js.UndefOr[String | Double] = js.native
   /**
     * Callback invoked when the currently selected radio changes.
     * Use `event.currentTarget.value` to read the currently selected value.
     * This prop is required because this component only supports controlled usage.
     */
-  def onChange(event: FormEvent[HTMLInputElement]): Unit
+  def onChange(event: FormEvent[HTMLInputElement]): Unit = js.native
 }
 
 object IRadioGroupProps {
   @scala.inline
-  def apply(
-    onChange: FormEvent[HTMLInputElement] => Unit,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    name: String = null,
-    options: js.Array[IOptionProps] = null,
-    selectedValue: String | Double = null
-  ): IRadioGroupProps = {
+  def apply(onChange: FormEvent[HTMLInputElement] => Unit): IRadioGroupProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRadioGroupProps]
   }
+  @scala.inline
+  implicit class IRadioGroupPropsOps[Self <: IRadioGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: IOptionProps*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[IOptionProps]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSelectedValue(value: String | Double): Self = this.set("selectedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedValue: Self = this.set("selectedValue", js.undefined)
+  }
+  
 }
 

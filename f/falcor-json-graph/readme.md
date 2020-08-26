@@ -10,9 +10,9 @@ A set of factory functions for creating JSON Graph values.
 | ------------------ | :-------------: |
 | Full name          | falcor-json-graph |
 | Keywords           | falcorjs, Observable, JSON, JSON Graph |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 17 |
-| # downloads        | 47383 |
+| # downloads        | 46471 |
 | # stars            | 1 |
 
 ## Links

@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Shadow extends js.Object {
-  var alignment: js.UndefOr[String] = js.undefined
-  var alpha: js.UndefOr[Double] = js.undefined
-  var blurRadius: js.UndefOr[Dimension] = js.undefined
-  var color: js.UndefOr[OpaqueColor] = js.undefined
-  var propertyState: js.UndefOr[String] = js.undefined
-  var rotateWithShape: js.UndefOr[Boolean] = js.undefined
-  var transform: js.UndefOr[AffineTransform] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var alignment: js.UndefOr[String] = js.native
+  var alpha: js.UndefOr[Double] = js.native
+  var blurRadius: js.UndefOr[Dimension] = js.native
+  var color: js.UndefOr[OpaqueColor] = js.native
+  var propertyState: js.UndefOr[String] = js.native
+  var rotateWithShape: js.UndefOr[Boolean] = js.native
+  var transform: js.UndefOr[AffineTransform] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object Shadow {
   @scala.inline
-  def apply(
-    alignment: String = null,
-    alpha: js.UndefOr[Double] = js.undefined,
-    blurRadius: Dimension = null,
-    color: OpaqueColor = null,
-    propertyState: String = null,
-    rotateWithShape: js.UndefOr[Boolean] = js.undefined,
-    transform: AffineTransform = null,
-    `type`: String = null
-  ): Shadow = {
+  def apply(): Shadow = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha.get.asInstanceOf[js.Any])
-    if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateWithShape)) __obj.updateDynamic("rotateWithShape")(rotateWithShape.get.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shadow]
   }
+  @scala.inline
+  implicit class ShadowOps[Self <: Shadow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: String): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setAlpha(value: Double): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def setBlurRadius(value: Dimension): Self = this.set("blurRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlurRadius: Self = this.set("blurRadius", js.undefined)
+    @scala.inline
+    def setColor(value: OpaqueColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setPropertyState(value: String): Self = this.set("propertyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyState: Self = this.set("propertyState", js.undefined)
+    @scala.inline
+    def setRotateWithShape(value: Boolean): Self = this.set("rotateWithShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotateWithShape: Self = this.set("rotateWithShape", js.undefined)
+    @scala.inline
+    def setTransform(value: AffineTransform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -35,20 +35,42 @@ trait ClassifierState extends js.Object {
 
 object ClassifierState {
   @scala.inline
-  def apply(
-    csvClassifier: Input[ClassifierCsvClassifier] = null,
-    grokClassifier: Input[ClassifierGrokClassifier] = null,
-    jsonClassifier: Input[ClassifierJsonClassifier] = null,
-    name: Input[String] = null,
-    xmlClassifier: Input[ClassifierXmlClassifier] = null
-  ): ClassifierState = {
+  def apply(): ClassifierState = {
     val __obj = js.Dynamic.literal()
-    if (csvClassifier != null) __obj.updateDynamic("csvClassifier")(csvClassifier.asInstanceOf[js.Any])
-    if (grokClassifier != null) __obj.updateDynamic("grokClassifier")(grokClassifier.asInstanceOf[js.Any])
-    if (jsonClassifier != null) __obj.updateDynamic("jsonClassifier")(jsonClassifier.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (xmlClassifier != null) __obj.updateDynamic("xmlClassifier")(xmlClassifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierState]
   }
+  @scala.inline
+  implicit class ClassifierStateOps[Self <: ClassifierState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCsvClassifier(value: Input[ClassifierCsvClassifier]): Self = this.set("csvClassifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsvClassifier: Self = this.set("csvClassifier", js.undefined)
+    @scala.inline
+    def setGrokClassifier(value: Input[ClassifierGrokClassifier]): Self = this.set("grokClassifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrokClassifier: Self = this.set("grokClassifier", js.undefined)
+    @scala.inline
+    def setJsonClassifier(value: Input[ClassifierJsonClassifier]): Self = this.set("jsonClassifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonClassifier: Self = this.set("jsonClassifier", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setXmlClassifier(value: Input[ClassifierXmlClassifier]): Self = this.set("xmlClassifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXmlClassifier: Self = this.set("xmlClassifier", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,6 +57,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def generateAuthenticationToken(): GaxiosPromise[SchemaAuthenticationToken] = js.native
   def generateAuthenticationToken(callback: BodyResponseCallback[SchemaAuthenticationToken]): Unit = js.native
+  def generateAuthenticationToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAuthenticationToken] = js.native
   def generateAuthenticationToken(params: ParamsResourceUsersGenerateauthenticationtoken): GaxiosPromise[SchemaAuthenticationToken] = js.native
   def generateAuthenticationToken(
     params: ParamsResourceUsersGenerateauthenticationtoken,
@@ -89,6 +91,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def generateToken(): GaxiosPromise[SchemaUserToken] = js.native
   def generateToken(callback: BodyResponseCallback[SchemaUserToken]): Unit = js.native
+  def generateToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserToken] = js.native
   def generateToken(params: ParamsResourceUsersGeneratetoken): GaxiosPromise[SchemaUserToken] = js.native
   def generateToken(params: ParamsResourceUsersGeneratetoken, callback: BodyResponseCallback[SchemaUserToken]): Unit = js.native
   def generateToken(
@@ -117,6 +120,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUser] = js.native
   def get(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet): GaxiosPromise[SchemaUser] = js.native
   def get(params: ParamsResourceUsersGet, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def get(
@@ -141,6 +145,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def getAvailableProductSet(): GaxiosPromise[SchemaProductSet] = js.native
   def getAvailableProductSet(callback: BodyResponseCallback[SchemaProductSet]): Unit = js.native
+  def getAvailableProductSet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductSet] = js.native
   def getAvailableProductSet(params: ParamsResourceUsersGetavailableproductset): GaxiosPromise[SchemaProductSet] = js.native
   def getAvailableProductSet(
     params: ParamsResourceUsersGetavailableproductset,
@@ -176,6 +181,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaUser] = js.native
   def insert(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def insert(params: ParamsResourceUsersInsert): GaxiosPromise[SchemaUser] = js.native
   def insert(params: ParamsResourceUsersInsert, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def insert(
@@ -207,6 +213,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUsersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaUsersListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsersListResponse] = js.native
   def list(params: ParamsResourceUsersList): GaxiosPromise[SchemaUsersListResponse] = js.native
   def list(params: ParamsResourceUsersList, callback: BodyResponseCallback[SchemaUsersListResponse]): Unit = js.native
   def list(
@@ -240,6 +247,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaUser] = js.native
   def patch(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def patch(params: ParamsResourceUsersPatch): GaxiosPromise[SchemaUser] = js.native
   def patch(params: ParamsResourceUsersPatch, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def patch(
@@ -270,6 +278,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def revokeDeviceAccess(): GaxiosPromise[Unit] = js.native
   def revokeDeviceAccess(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def revokeDeviceAccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def revokeDeviceAccess(params: ParamsResourceUsersRevokedeviceaccess): GaxiosPromise[Unit] = js.native
   def revokeDeviceAccess(params: ParamsResourceUsersRevokedeviceaccess, callback: BodyResponseCallback[Unit]): Unit = js.native
   def revokeDeviceAccess(
@@ -299,6 +308,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def revokeToken(): GaxiosPromise[Unit] = js.native
   def revokeToken(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def revokeToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def revokeToken(params: ParamsResourceUsersRevoketoken): GaxiosPromise[Unit] = js.native
   def revokeToken(params: ParamsResourceUsersRevoketoken, callback: BodyResponseCallback[Unit]): Unit = js.native
   def revokeToken(
@@ -331,6 +341,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def setAvailableProductSet(): GaxiosPromise[SchemaProductSet] = js.native
   def setAvailableProductSet(callback: BodyResponseCallback[SchemaProductSet]): Unit = js.native
+  def setAvailableProductSet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductSet] = js.native
   def setAvailableProductSet(params: ParamsResourceUsersSetavailableproductset): GaxiosPromise[SchemaProductSet] = js.native
   def setAvailableProductSet(
     params: ParamsResourceUsersSetavailableproductset,
@@ -367,6 +378,7 @@ class ResourceUsers protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaUser] = js.native
   def update(callback: BodyResponseCallback[SchemaUser]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUser] = js.native
   def update(params: ParamsResourceUsersUpdate): GaxiosPromise[SchemaUser] = js.native
   def update(params: ParamsResourceUsersUpdate, callback: BodyResponseCallback[SchemaUser]): Unit = js.native
   def update(

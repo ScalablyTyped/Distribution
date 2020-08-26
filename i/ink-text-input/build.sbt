@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ink-text-input"
-version := "2.0-dt-20200515Z-481277"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200515Z-f6ae02"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

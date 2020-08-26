@@ -18,24 +18,50 @@ trait PartialDuration extends js.Object {
 
 object PartialDuration {
   @scala.inline
-  def apply(
-    complex: js.UndefOr[Double] = js.undefined,
-    enteringScreen: js.UndefOr[Double] = js.undefined,
-    leavingScreen: js.UndefOr[Double] = js.undefined,
-    short: js.UndefOr[Double] = js.undefined,
-    shorter: js.UndefOr[Double] = js.undefined,
-    shortest: js.UndefOr[Double] = js.undefined,
-    standard: js.UndefOr[Double] = js.undefined
-  ): PartialDuration = {
+  def apply(): PartialDuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(complex)) __obj.updateDynamic("complex")(complex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enteringScreen)) __obj.updateDynamic("enteringScreen")(enteringScreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(leavingScreen)) __obj.updateDynamic("leavingScreen")(leavingScreen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(short)) __obj.updateDynamic("short")(short.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shorter)) __obj.updateDynamic("shorter")(shorter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shortest)) __obj.updateDynamic("shortest")(shortest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(standard)) __obj.updateDynamic("standard")(standard.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialDuration]
   }
+  @scala.inline
+  implicit class PartialDurationOps[Self <: PartialDuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplex(value: Double): Self = this.set("complex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplex: Self = this.set("complex", js.undefined)
+    @scala.inline
+    def setEnteringScreen(value: Double): Self = this.set("enteringScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnteringScreen: Self = this.set("enteringScreen", js.undefined)
+    @scala.inline
+    def setLeavingScreen(value: Double): Self = this.set("leavingScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeavingScreen: Self = this.set("leavingScreen", js.undefined)
+    @scala.inline
+    def setShort(value: Double): Self = this.set("short", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShort: Self = this.set("short", js.undefined)
+    @scala.inline
+    def setShorter(value: Double): Self = this.set("shorter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShorter: Self = this.set("shorter", js.undefined)
+    @scala.inline
+    def setShortest(value: Double): Self = this.set("shortest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortest: Self = this.set("shortest", js.undefined)
+    @scala.inline
+    def setStandard(value: Double): Self = this.set("standard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandard: Self = this.set("standard", js.undefined)
+  }
+  
 }
 

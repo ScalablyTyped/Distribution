@@ -32,6 +32,11 @@ object multiPolygonMod extends js.Object {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
+      opt_layout: js.UndefOr[scala.Nothing],
+      opt_endss: js.Array[js.Array[Double]]
+    ) = this()
+    def this(
+      coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
       opt_layout: GeometryLayout,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()

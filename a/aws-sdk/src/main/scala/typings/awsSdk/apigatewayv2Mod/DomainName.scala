@@ -26,17 +26,38 @@ trait DomainName extends js.Object {
 
 object DomainName {
   @scala.inline
-  def apply(
-    DomainName: StringWithLengthBetween1And512,
-    ApiMappingSelectionExpression: SelectionExpression = null,
-    DomainNameConfigurations: DomainNameConfigurations = null,
-    Tags: Tags = null
-  ): DomainName = {
+  def apply(DomainName: StringWithLengthBetween1And512): DomainName = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (ApiMappingSelectionExpression != null) __obj.updateDynamic("ApiMappingSelectionExpression")(ApiMappingSelectionExpression.asInstanceOf[js.Any])
-    if (DomainNameConfigurations != null) __obj.updateDynamic("DomainNameConfigurations")(DomainNameConfigurations.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainName]
   }
+  @scala.inline
+  implicit class DomainNameOps[Self <: DomainName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: StringWithLengthBetween1And512): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiMappingSelectionExpression(value: SelectionExpression): Self = this.set("ApiMappingSelectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiMappingSelectionExpression: Self = this.set("ApiMappingSelectionExpression", js.undefined)
+    @scala.inline
+    def setDomainNameConfigurationsVarargs(value: DomainNameConfiguration*): Self = this.set("DomainNameConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setDomainNameConfigurations(value: DomainNameConfigurations): Self = this.set("DomainNameConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainNameConfigurations: Self = this.set("DomainNameConfigurations", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

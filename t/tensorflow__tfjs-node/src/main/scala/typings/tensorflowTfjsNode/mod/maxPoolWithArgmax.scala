@@ -12,18 +12,176 @@ import scala.scalajs.js.annotation._
 @JSImport("@tensorflow/tfjs-node", "maxPoolWithArgmax")
 @js.native
 object maxPoolWithArgmax extends js.Object {
+  def apply[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = js.native
   def apply[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double
-  ): NamedTensorMap = js.native
-  def apply[T /* <: Tensor4D */](
-    x: T | TensorLike,
-    filterSize: (js.Tuple2[Double, Double]) | Double,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double,
+    x: T,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
     includeBatchInIndex: Boolean
   ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: valid,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: Double,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: same,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: valid,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: same,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: T,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: valid,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: same, includeBatchInIndex: Boolean): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: valid, includeBatchInIndex: Boolean): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: same,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: valid
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: js.Tuple2[Double, Double],
+    pad: valid,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: Double,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: same,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: js.Tuple2[Double, Double],
+    strides: Double,
+    pad: valid,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: Double,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: same,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](
+    x: TensorLike,
+    filterSize: Double,
+    strides: js.Tuple2[Double, Double],
+    pad: valid,
+    includeBatchInIndex: Boolean
+  ): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: same): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: same, includeBatchInIndex: Boolean): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: valid): NamedTensorMap = js.native
+  def apply[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: valid, includeBatchInIndex: Boolean): NamedTensorMap = js.native
 }
 

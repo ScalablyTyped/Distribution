@@ -12,7 +12,7 @@ Webpack block for babel 6+.
 | Keywords           | webpack, webpack-blocks |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 140269 |
+| # downloads        | 125687 |
 | # stars            | 0 |
 
 ## Links

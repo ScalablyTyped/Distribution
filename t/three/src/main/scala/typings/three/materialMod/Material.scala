@@ -221,6 +221,10 @@ class Material () extends EventDispatcher {
   	 */
   def copy(material: Material): this.type = js.native
   /**
+  	 * In case onBeforeCompile is used, this callback can be used to identify values of settings used in onBeforeCompile, so three.js can reuse a cached shader or recompile the shader as needed.
+  	 */
+  def customProgramCacheKey(): String = js.native
+  /**
   	 * This disposes the material. Textures of a material don't get disposed. These needs to be disposed by {@link Texture}.
   	 */
   def dispose(): Unit = js.native

@@ -30,6 +30,7 @@ class diffMatchPatch () extends js.Object {
   def diff_levenshtein(diffs: js.Array[Diff]): Double = js.native
   def diff_linesToChars_(text1: String, text2: String): Chars1 = js.native
   def diff_main(text1: String, text2: String): js.Array[Diff] = js.native
+  def diff_main(text1: String, text2: String, opt_checklines: js.UndefOr[scala.Nothing], opt_deadline: Double): js.Array[Diff] = js.native
   def diff_main(text1: String, text2: String, opt_checklines: Boolean): js.Array[Diff] = js.native
   def diff_main(text1: String, text2: String, opt_checklines: Boolean, opt_deadline: Double): js.Array[Diff] = js.native
   def diff_prettyHtml(diffs: js.Array[Diff]): String = js.native

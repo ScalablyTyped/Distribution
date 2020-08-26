@@ -23,6 +23,16 @@ object scriptLoader extends js.Object {
       /* failedUrls */ js.Array[String], 
       Unit
     ],
+    scope: js.UndefOr[scala.Nothing],
+    showBusy: Boolean
+  ): Unit = js.native
+  def load(
+    scriptUrls: String,
+    callback: js.Function2[
+      /* succeededUrls */ Boolean | js.Array[String], 
+      /* failedUrls */ js.Array[String], 
+      Unit
+    ],
     scope: js.Any
   ): Unit = js.native
   def load(
@@ -42,6 +52,16 @@ object scriptLoader extends js.Object {
       /* failedUrls */ js.Array[String], 
       Unit
     ]
+  ): Unit = js.native
+  def load(
+    scriptUrls: js.Array[String],
+    callback: js.Function2[
+      /* succeededUrls */ Boolean | js.Array[String], 
+      /* failedUrls */ js.Array[String], 
+      Unit
+    ],
+    scope: js.UndefOr[scala.Nothing],
+    showBusy: Boolean
   ): Unit = js.native
   def load(
     scriptUrls: js.Array[String],

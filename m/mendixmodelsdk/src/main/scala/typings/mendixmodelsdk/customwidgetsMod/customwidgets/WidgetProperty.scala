@@ -24,20 +24,16 @@ class WidgetProperty protected () extends Element {
   @JSName("model")
   var model_FWidgetProperty: IModel = js.native
   def containerAsWidgetObject: WidgetObject = js.native
-  def `type`(): js.Any = js.native
-  def `type`(newValue: WidgetPropertyType): js.Any = js.native
   /**
     * In version 7.13.0: added optional
     */
-  @JSName("type")
-  def type_Union: WidgetPropertyType | Null = js.native
-  def value(): js.Any = js.native
-  def value(newValue: WidgetValue): js.Any = js.native
+  def `type`: WidgetPropertyType | Null = js.native
+  def type_=(newValue: WidgetPropertyType | Null): Unit = js.native
   /**
     * In version 7.13.0: added optional
     */
-  @JSName("value")
-  def value_Union: WidgetValue | Null = js.native
+  def value: WidgetValue | Null = js.native
+  def value_=(newValue: WidgetValue | Null): Unit = js.native
 }
 
 /* static members */

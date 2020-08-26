@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkspaceEdit extends js.Object {
   /**
     * Holds changes to existing resources.
     */
-  var changes: js.UndefOr[StringDictionary[js.Array[TextEdit]]] = js.undefined
+  var changes: js.UndefOr[StringDictionary[js.Array[TextEdit]]] = js.native
   /**
     * Depending on the client capability `workspace.workspaceEdit.resourceOperations` document changes
     * are either an array of `TextDocumentEdit`s to express changes to n different text documents
@@ -22,7 +23,7 @@ trait WorkspaceEdit extends js.Object {
     * If a client neither supports `documentChanges` nor `workspace.workspaceEdit.resourceOperations` then
     * only plain `TextEdit`s using the `changes` property are supported.
     */
-  var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.undefined
+  var documentChanges: js.UndefOr[js.Array[TextDocumentEdit | CreateFile | RenameFile | DeleteFile]] = js.native
 }
 
 @JSImport("vscode-languageserver-types", "WorkspaceEdit")

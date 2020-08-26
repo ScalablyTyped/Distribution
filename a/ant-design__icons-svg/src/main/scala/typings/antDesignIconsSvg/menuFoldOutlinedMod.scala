@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/MenuFoldOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/MenuFoldOutlined", JSImport.Namespace)
 @js.native
 object menuFoldOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

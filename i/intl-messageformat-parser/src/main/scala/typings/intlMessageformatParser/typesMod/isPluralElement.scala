@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("intl-messageformat-parser/lib/types", "isPluralElement")
+@JSImport("intl-messageformat-parser/lib/src/types", "isPluralElement")
 @js.native
 object isPluralElement extends js.Object {
-  def apply(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.PluralElement */ Boolean = js.native
+  def apply(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.PluralElement */ Boolean = js.native
 }
 

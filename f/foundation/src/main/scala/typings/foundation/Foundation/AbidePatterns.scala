@@ -6,60 +6,103 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/abide.html#optional-javascript-configuration
+@js.native
 trait AbidePatterns extends js.Object {
-  var alpha: js.UndefOr[RegExp] = js.undefined
-  var alpha_numeric: js.UndefOr[RegExp] = js.undefined
-  var card: js.UndefOr[RegExp] = js.undefined
-  var color: js.UndefOr[RegExp] = js.undefined
-  var cvv: js.UndefOr[RegExp] = js.undefined
-  var date: js.UndefOr[RegExp] = js.undefined
-  var dateISO: js.UndefOr[RegExp] = js.undefined
-  var datetime: js.UndefOr[RegExp] = js.undefined
-  var domain: js.UndefOr[RegExp] = js.undefined
-  var email: js.UndefOr[RegExp] = js.undefined
-  var integer: js.UndefOr[RegExp] = js.undefined
-  var month_day_year: js.UndefOr[RegExp] = js.undefined
-  var number: js.UndefOr[RegExp] = js.undefined
-  var time: js.UndefOr[RegExp] = js.undefined
-  var url: js.UndefOr[RegExp] = js.undefined
+  var alpha: js.UndefOr[RegExp] = js.native
+  var alpha_numeric: js.UndefOr[RegExp] = js.native
+  var card: js.UndefOr[RegExp] = js.native
+  var color: js.UndefOr[RegExp] = js.native
+  var cvv: js.UndefOr[RegExp] = js.native
+  var date: js.UndefOr[RegExp] = js.native
+  var dateISO: js.UndefOr[RegExp] = js.native
+  var datetime: js.UndefOr[RegExp] = js.native
+  var domain: js.UndefOr[RegExp] = js.native
+  var email: js.UndefOr[RegExp] = js.native
+  var integer: js.UndefOr[RegExp] = js.native
+  var month_day_year: js.UndefOr[RegExp] = js.native
+  var number: js.UndefOr[RegExp] = js.native
+  var time: js.UndefOr[RegExp] = js.native
+  var url: js.UndefOr[RegExp] = js.native
 }
 
 object AbidePatterns {
   @scala.inline
-  def apply(
-    alpha: RegExp = null,
-    alpha_numeric: RegExp = null,
-    card: RegExp = null,
-    color: RegExp = null,
-    cvv: RegExp = null,
-    date: RegExp = null,
-    dateISO: RegExp = null,
-    datetime: RegExp = null,
-    domain: RegExp = null,
-    email: RegExp = null,
-    integer: RegExp = null,
-    month_day_year: RegExp = null,
-    number: RegExp = null,
-    time: RegExp = null,
-    url: RegExp = null
-  ): AbidePatterns = {
+  def apply(): AbidePatterns = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (alpha_numeric != null) __obj.updateDynamic("alpha_numeric")(alpha_numeric.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (cvv != null) __obj.updateDynamic("cvv")(cvv.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dateISO != null) __obj.updateDynamic("dateISO")(dateISO.asInstanceOf[js.Any])
-    if (datetime != null) __obj.updateDynamic("datetime")(datetime.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (integer != null) __obj.updateDynamic("integer")(integer.asInstanceOf[js.Any])
-    if (month_day_year != null) __obj.updateDynamic("month_day_year")(month_day_year.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbidePatterns]
   }
+  @scala.inline
+  implicit class AbidePatternsOps[Self <: AbidePatterns] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlpha(value: RegExp): Self = this.set("alpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha: Self = this.set("alpha", js.undefined)
+    @scala.inline
+    def setAlpha_numeric(value: RegExp): Self = this.set("alpha_numeric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlpha_numeric: Self = this.set("alpha_numeric", js.undefined)
+    @scala.inline
+    def setCard(value: RegExp): Self = this.set("card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCard: Self = this.set("card", js.undefined)
+    @scala.inline
+    def setColor(value: RegExp): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCvv(value: RegExp): Self = this.set("cvv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCvv: Self = this.set("cvv", js.undefined)
+    @scala.inline
+    def setDate(value: RegExp): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDateISO(value: RegExp): Self = this.set("dateISO", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateISO: Self = this.set("dateISO", js.undefined)
+    @scala.inline
+    def setDatetime(value: RegExp): Self = this.set("datetime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatetime: Self = this.set("datetime", js.undefined)
+    @scala.inline
+    def setDomain(value: RegExp): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setEmail(value: RegExp): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setInteger(value: RegExp): Self = this.set("integer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteger: Self = this.set("integer", js.undefined)
+    @scala.inline
+    def setMonth_day_year(value: RegExp): Self = this.set("month_day_year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonth_day_year: Self = this.set("month_day_year", js.undefined)
+    @scala.inline
+    def setNumber(value: RegExp): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setTime(value: RegExp): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setUrl(value: RegExp): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -54,12 +54,32 @@ trait Crop extends js.Object {
     * @param height The height of the crop rectangle in pixels.
     */
   def setCrop(): this.type = js.native
+  def setCrop(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
+  def setCrop(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
   def setCrop(x: Double): this.type = js.native
+  def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setCrop(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def setCrop(x: Double, y: Double): this.type = js.native
+  def setCrop(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setCrop(x: Double, y: Double, width: Double): this.type = js.native
   def setCrop(x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def setCrop(x: Rectangle): this.type = js.native
+  def setCrop(x: Rectangle, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setCrop(x: Rectangle, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setCrop(x: Rectangle, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double): this.type = js.native
+  def setCrop(x: Rectangle, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double, width: Double): this.type = js.native
   def setCrop(x: Rectangle, y: Double, width: Double, height: Double): this.type = js.native
 }

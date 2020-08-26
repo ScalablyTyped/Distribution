@@ -29,7 +29,7 @@ trait AbstractSoundInstance extends EventDispatcher {
   def getPosition(): Double = js.native
   def getVolume(): Double = js.native
   def play(
-    interrupt: js.UndefOr[js.Object | String],
+    interrupt: js.UndefOr[String | js.Object],
     delay: js.UndefOr[Double],
     offset: js.UndefOr[Double],
     loop: js.UndefOr[Double],

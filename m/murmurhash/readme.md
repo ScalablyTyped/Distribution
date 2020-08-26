@@ -11,8 +11,8 @@ A Node.js module for the optimized JavaScript implementation of the MurmurHash a
 | Full name          | murmurhash |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 70 |
-| # downloads        | 2861113 |
+| # dependents       | 71 |
+| # downloads        | 2952769 |
 | # stars            | 2 |
 
 ## Links

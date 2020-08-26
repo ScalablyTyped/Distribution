@@ -14,10 +14,28 @@ trait DescribeStorediSCSIVolumesOutput extends js.Object {
 
 object DescribeStorediSCSIVolumesOutput {
   @scala.inline
-  def apply(StorediSCSIVolumes: StorediSCSIVolumes = null): DescribeStorediSCSIVolumesOutput = {
+  def apply(): DescribeStorediSCSIVolumesOutput = {
     val __obj = js.Dynamic.literal()
-    if (StorediSCSIVolumes != null) __obj.updateDynamic("StorediSCSIVolumes")(StorediSCSIVolumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStorediSCSIVolumesOutput]
   }
+  @scala.inline
+  implicit class DescribeStorediSCSIVolumesOutputOps[Self <: DescribeStorediSCSIVolumesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStorediSCSIVolumesVarargs(value: StorediSCSIVolume*): Self = this.set("StorediSCSIVolumes", js.Array(value :_*))
+    @scala.inline
+    def setStorediSCSIVolumes(value: StorediSCSIVolumes): Self = this.set("StorediSCSIVolumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorediSCSIVolumes: Self = this.set("StorediSCSIVolumes", js.undefined)
+  }
+  
 }
 

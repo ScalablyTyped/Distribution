@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
 class HtmlControl ()
   extends typings.winjs.WinJS.UI.HtmlControl {
   def this(element: HTMLElement) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 

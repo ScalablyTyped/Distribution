@@ -25,12 +25,34 @@ trait SchemaStateHistory extends js.Object {
 
 object SchemaStateHistory {
   @scala.inline
-  def apply(actorUserId: String = null, state: String = null, stateTimestamp: String = null): SchemaStateHistory = {
+  def apply(): SchemaStateHistory = {
     val __obj = js.Dynamic.literal()
-    if (actorUserId != null) __obj.updateDynamic("actorUserId")(actorUserId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (stateTimestamp != null) __obj.updateDynamic("stateTimestamp")(stateTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStateHistory]
   }
+  @scala.inline
+  implicit class SchemaStateHistoryOps[Self <: SchemaStateHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActorUserId(value: String): Self = this.set("actorUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActorUserId: Self = this.set("actorUserId", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStateTimestamp(value: String): Self = this.set("stateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateTimestamp: Self = this.set("stateTimestamp", js.undefined)
+  }
+  
 }
 

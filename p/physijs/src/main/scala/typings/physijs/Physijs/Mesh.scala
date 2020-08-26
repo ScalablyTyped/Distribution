@@ -1,6 +1,8 @@
 package typings.physijs.Physijs
 
 import typings.physijs.anon.Target
+import typings.three.bufferGeometryMod.BufferGeometry
+import typings.three.geometryMod.Geometry
 import typings.three.mod.Vector3
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -8,7 +10,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Mesh
-  extends typings.three.mod.Mesh {
+  extends typings.three.mod.Mesh[
+      Geometry | BufferGeometry, 
+      typings.three.materialMod.Material | js.Array[typings.three.materialMod.Material]
+    ] {
   def applyCentralForce(force: Vector3): Unit = js.native
   def applyCentralImpulse(force: Vector3): Unit = js.native
   def applyForce(force: Vector3, offset: Vector3): Unit = js.native

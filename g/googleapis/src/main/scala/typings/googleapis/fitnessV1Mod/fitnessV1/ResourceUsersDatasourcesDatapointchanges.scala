@@ -30,6 +30,7 @@ class ResourceUsersDatasourcesDatapointchanges protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDataPointChangesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
   def list(params: ParamsResourceUsersDatasourcesDatapointchangesList): GaxiosPromise[SchemaListDataPointChangesResponse] = js.native
   def list(
     params: ParamsResourceUsersDatasourcesDatapointchangesList,

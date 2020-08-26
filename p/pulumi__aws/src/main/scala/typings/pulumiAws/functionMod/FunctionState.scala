@@ -47,28 +47,58 @@ trait FunctionState extends js.Object {
 
 object FunctionState {
   @scala.inline
-  def apply(
-    apiId: Input[String] = null,
-    arn: Input[String] = null,
-    dataSource: Input[String] = null,
-    description: Input[String] = null,
-    functionId: Input[String] = null,
-    functionVersion: Input[String] = null,
-    name: Input[String] = null,
-    requestMappingTemplate: Input[String] = null,
-    responseMappingTemplate: Input[String] = null
-  ): FunctionState = {
+  def apply(): FunctionState = {
     val __obj = js.Dynamic.literal()
-    if (apiId != null) __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (functionId != null) __obj.updateDynamic("functionId")(functionId.asInstanceOf[js.Any])
-    if (functionVersion != null) __obj.updateDynamic("functionVersion")(functionVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (requestMappingTemplate != null) __obj.updateDynamic("requestMappingTemplate")(requestMappingTemplate.asInstanceOf[js.Any])
-    if (responseMappingTemplate != null) __obj.updateDynamic("responseMappingTemplate")(responseMappingTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionState]
   }
+  @scala.inline
+  implicit class FunctionStateOps[Self <: FunctionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: Input[String]): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiId: Self = this.set("apiId", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDataSource(value: Input[String]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFunctionId(value: Input[String]): Self = this.set("functionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionId: Self = this.set("functionId", js.undefined)
+    @scala.inline
+    def setFunctionVersion(value: Input[String]): Self = this.set("functionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionVersion: Self = this.set("functionVersion", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRequestMappingTemplate(value: Input[String]): Self = this.set("requestMappingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestMappingTemplate: Self = this.set("requestMappingTemplate", js.undefined)
+    @scala.inline
+    def setResponseMappingTemplate(value: Input[String]): Self = this.set("responseMappingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseMappingTemplate: Self = this.set("responseMappingTemplate", js.undefined)
+  }
+  
 }
 

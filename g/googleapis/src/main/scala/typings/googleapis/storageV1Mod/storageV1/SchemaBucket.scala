@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.anon.BucketPolicyOnly
 import typings.googleapis.anon.DefaultKmsKeyName
 import typings.googleapis.anon.EffectiveTime
-import typings.googleapis.anon.EnabledBoolean
 import typings.googleapis.anon.Entity
 import typings.googleapis.anon.LogBucket
 import typings.googleapis.anon.MainPageSuffix
 import typings.googleapis.anon.MaxAgeSeconds
 import typings.googleapis.anon.RequesterPays
 import typings.googleapis.anon.Rule
+import typings.googleapis.anon.`9`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -147,7 +147,7 @@ trait SchemaBucket extends js.Object {
   /**
     * The bucket&#39;s versioning configuration.
     */
-  var versioning: js.UndefOr[EnabledBoolean] = js.native
+  var versioning: js.UndefOr[`9`] = js.native
   /**
     * The bucket&#39;s website configuration, controlling how the service
     * behaves when accessing bucket contents as a web site. See the Static
@@ -158,60 +158,128 @@ trait SchemaBucket extends js.Object {
 
 object SchemaBucket {
   @scala.inline
-  def apply(
-    acl: js.Array[SchemaBucketAccessControl] = null,
-    billing: RequesterPays = null,
-    cors: js.Array[MaxAgeSeconds] = null,
-    defaultEventBasedHold: js.UndefOr[Boolean] = js.undefined,
-    defaultObjectAcl: js.Array[SchemaObjectAccessControl] = null,
-    encryption: DefaultKmsKeyName = null,
-    etag: String = null,
-    iamConfiguration: BucketPolicyOnly = null,
-    id: String = null,
-    kind: String = null,
-    labels: StringDictionary[String] = null,
-    lifecycle: Rule = null,
-    location: String = null,
-    logging: LogBucket = null,
-    metageneration: String = null,
-    name: String = null,
-    owner: Entity = null,
-    projectNumber: String = null,
-    retentionPolicy: EffectiveTime = null,
-    selfLink: String = null,
-    storageClass: String = null,
-    timeCreated: String = null,
-    updated: String = null,
-    versioning: EnabledBoolean = null,
-    website: MainPageSuffix = null
-  ): SchemaBucket = {
+  def apply(): SchemaBucket = {
     val __obj = js.Dynamic.literal()
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (billing != null) __obj.updateDynamic("billing")(billing.asInstanceOf[js.Any])
-    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultEventBasedHold)) __obj.updateDynamic("defaultEventBasedHold")(defaultEventBasedHold.get.asInstanceOf[js.Any])
-    if (defaultObjectAcl != null) __obj.updateDynamic("defaultObjectAcl")(defaultObjectAcl.asInstanceOf[js.Any])
-    if (encryption != null) __obj.updateDynamic("encryption")(encryption.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (iamConfiguration != null) __obj.updateDynamic("iamConfiguration")(iamConfiguration.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lifecycle != null) __obj.updateDynamic("lifecycle")(lifecycle.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (metageneration != null) __obj.updateDynamic("metageneration")(metageneration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber.asInstanceOf[js.Any])
-    if (retentionPolicy != null) __obj.updateDynamic("retentionPolicy")(retentionPolicy.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (versioning != null) __obj.updateDynamic("versioning")(versioning.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBucket]
   }
+  @scala.inline
+  implicit class SchemaBucketOps[Self <: SchemaBucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAclVarargs(value: SchemaBucketAccessControl*): Self = this.set("acl", js.Array(value :_*))
+    @scala.inline
+    def setAcl(value: js.Array[SchemaBucketAccessControl]): Self = this.set("acl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcl: Self = this.set("acl", js.undefined)
+    @scala.inline
+    def setBilling(value: RequesterPays): Self = this.set("billing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBilling: Self = this.set("billing", js.undefined)
+    @scala.inline
+    def setCorsVarargs(value: MaxAgeSeconds*): Self = this.set("cors", js.Array(value :_*))
+    @scala.inline
+    def setCors(value: js.Array[MaxAgeSeconds]): Self = this.set("cors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCors: Self = this.set("cors", js.undefined)
+    @scala.inline
+    def setDefaultEventBasedHold(value: Boolean): Self = this.set("defaultEventBasedHold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEventBasedHold: Self = this.set("defaultEventBasedHold", js.undefined)
+    @scala.inline
+    def setDefaultObjectAclVarargs(value: SchemaObjectAccessControl*): Self = this.set("defaultObjectAcl", js.Array(value :_*))
+    @scala.inline
+    def setDefaultObjectAcl(value: js.Array[SchemaObjectAccessControl]): Self = this.set("defaultObjectAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultObjectAcl: Self = this.set("defaultObjectAcl", js.undefined)
+    @scala.inline
+    def setEncryption(value: DefaultKmsKeyName): Self = this.set("encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("encryption", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setIamConfiguration(value: BucketPolicyOnly): Self = this.set("iamConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamConfiguration: Self = this.set("iamConfiguration", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLifecycle(value: Rule): Self = this.set("lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("lifecycle", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setLogging(value: LogBucket): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setMetageneration(value: String): Self = this.set("metageneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetageneration: Self = this.set("metageneration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwner(value: Entity): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setProjectNumber(value: String): Self = this.set("projectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectNumber: Self = this.set("projectNumber", js.undefined)
+    @scala.inline
+    def setRetentionPolicy(value: EffectiveTime): Self = this.set("retentionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetentionPolicy: Self = this.set("retentionPolicy", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStorageClass(value: String): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    @scala.inline
+    def setTimeCreated(value: String): Self = this.set("timeCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCreated: Self = this.set("timeCreated", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setVersioning(value: `9`): Self = this.set("versioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersioning: Self = this.set("versioning", js.undefined)
+    @scala.inline
+    def setWebsite(value: MainPageSuffix): Self = this.set("website", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsite: Self = this.set("website", js.undefined)
+  }
+  
 }
 

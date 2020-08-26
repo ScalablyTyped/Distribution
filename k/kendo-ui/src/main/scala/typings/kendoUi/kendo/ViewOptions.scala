@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewOptions extends js.Object {
-  var evalTemplate: js.UndefOr[Boolean] = js.undefined
-  var hide: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.undefined
-  var init: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.undefined
-  var model: js.UndefOr[js.Object] = js.undefined
-  var show: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.undefined
-  var tagName: js.UndefOr[String] = js.undefined
-  var wrap: js.UndefOr[Boolean] = js.undefined
+  var evalTemplate: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.native
+  var model: js.UndefOr[js.Object] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ ViewEvent, Unit]] = js.native
+  var tagName: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[Boolean] = js.native
 }
 
 object ViewOptions {
   @scala.inline
-  def apply(
-    evalTemplate: js.UndefOr[Boolean] = js.undefined,
-    hide: /* e */ ViewEvent => Unit = null,
-    init: /* e */ ViewEvent => Unit = null,
-    model: js.Object = null,
-    show: /* e */ ViewEvent => Unit = null,
-    tagName: String = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): ViewOptions = {
+  def apply(): ViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(evalTemplate)) __obj.updateDynamic("evalTemplate")(evalTemplate.get.asInstanceOf[js.Any])
-    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction1(hide))
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1(init))
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1(show))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewOptions]
   }
+  @scala.inline
+  implicit class ViewOptionsOps[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvalTemplate(value: Boolean): Self = this.set("evalTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvalTemplate: Self = this.set("evalTemplate", js.undefined)
+    @scala.inline
+    def setHide(value: /* e */ ViewEvent => Unit): Self = this.set("hide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setInit(value: /* e */ ViewEvent => Unit): Self = this.set("init", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    @scala.inline
+    def setModel(value: js.Object): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setShow(value: /* e */ ViewEvent => Unit): Self = this.set("show", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTagName(value: String): Self = this.set("tagName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagName: Self = this.set("tagName", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

@@ -39,6 +39,12 @@ object plotlyJsStrings {
   sealed trait `above traces` extends js.Object
   
   @js.native
+  sealed trait across extends js.Object
+  
+  @js.native
+  sealed trait acrossPlussignmarker extends js.Object
+  
+  @js.native
   sealed trait address extends js.Object
   
   @js.native
@@ -286,6 +292,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait `cubic-out` extends js.Object
+  
+  @js.native
+  sealed trait cursor extends js.Object
   
   @js.native
   sealed trait d extends js.Object
@@ -624,6 +633,9 @@ object plotlyJsStrings {
   sealed trait hoverCompareCartesian extends ModeBarDefaultButtons
   
   @js.native
+  sealed trait `hovered data` extends js.Object
+  
+  @js.native
   sealed trait hr extends js.Object
   
   @js.native
@@ -862,6 +874,9 @@ object plotlyJsStrings {
   
   @js.native
   sealed trait month extends js.Object
+  
+  @js.native
+  sealed trait multicategory extends AxisType
   
   @js.native
   sealed trait name extends js.Object
@@ -1392,6 +1407,18 @@ object plotlyJsStrings {
   sealed trait toImage extends ModeBarDefaultButtons
   
   @js.native
+  sealed trait toaxis extends js.Object
+  
+  @js.native
+  sealed trait toaxisPlussignacross extends js.Object
+  
+  @js.native
+  sealed trait toaxisPlussignacrossPlussignmarker extends js.Object
+  
+  @js.native
+  sealed trait toaxisPlussignmarker extends js.Object
+  
+  @js.native
   sealed trait todate extends js.Object
   
   @js.native
@@ -1647,6 +1674,9 @@ object plotlyJsStrings {
   sealed trait year extends js.Object
   
   @js.native
+  sealed trait z extends js.Object
+  
+  @js.native
   sealed trait zPlussignx extends js.Object
   
   @js.native
@@ -1712,6 +1742,10 @@ object plotlyJsStrings {
   def above: above = "above".asInstanceOf[above]
   @scala.inline
   def `above traces`: `above traces` = ("above traces").asInstanceOf[`above traces`]
+  @scala.inline
+  def across: across = "across".asInstanceOf[across]
+  @scala.inline
+  def acrossPlussignmarker: acrossPlussignmarker = "across+marker".asInstanceOf[acrossPlussignmarker]
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline
@@ -1878,6 +1912,8 @@ object plotlyJsStrings {
   def `cubic-in-out`: `cubic-in-out` = "cubic-in-out".asInstanceOf[`cubic-in-out`]
   @scala.inline
   def `cubic-out`: `cubic-out` = "cubic-out".asInstanceOf[`cubic-out`]
+  @scala.inline
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
   def d: d = "d".asInstanceOf[d]
   @scala.inline
@@ -2103,6 +2139,8 @@ object plotlyJsStrings {
   @scala.inline
   def hoverCompareCartesian: hoverCompareCartesian = "hoverCompareCartesian".asInstanceOf[hoverCompareCartesian]
   @scala.inline
+  def `hovered data`: `hovered data` = ("hovered data").asInstanceOf[`hovered data`]
+  @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   @scala.inline
   def html: html = "html".asInstanceOf[html]
@@ -2262,6 +2300,8 @@ object plotlyJsStrings {
   def mode: mode = "mode".asInstanceOf[mode]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
+  def multicategory: multicategory = "multicategory".asInstanceOf[multicategory]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
@@ -2615,6 +2655,14 @@ object plotlyJsStrings {
   @scala.inline
   def toImage: toImage = "toImage".asInstanceOf[toImage]
   @scala.inline
+  def toaxis: toaxis = "toaxis".asInstanceOf[toaxis]
+  @scala.inline
+  def toaxisPlussignacross: toaxisPlussignacross = "toaxis+across".asInstanceOf[toaxisPlussignacross]
+  @scala.inline
+  def toaxisPlussignacrossPlussignmarker: toaxisPlussignacrossPlussignmarker = "toaxis+across+marker".asInstanceOf[toaxisPlussignacrossPlussignmarker]
+  @scala.inline
+  def toaxisPlussignmarker: toaxisPlussignmarker = "toaxis+marker".asInstanceOf[toaxisPlussignmarker]
+  @scala.inline
   def todate: todate = "todate".asInstanceOf[todate]
   @scala.inline
   def toggleHover: toggleHover = "toggleHover".asInstanceOf[toggleHover]
@@ -2784,6 +2832,8 @@ object plotlyJsStrings {
   def yPlussignzPlussigntext: yPlussignzPlussigntext = "y+z+text".asInstanceOf[yPlussignzPlussigntext]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def z: z = "z".asInstanceOf[z]
   @scala.inline
   def zPlussignx: zPlussignx = "z+x".asInstanceOf[zPlussignx]
   @scala.inline

@@ -50,27 +50,66 @@ trait CreateTableInput extends js.Object {
 
 object CreateTableInput {
   @scala.inline
-  def apply(
-    AttributeDefinitions: AttributeDefinitions,
-    KeySchema: KeySchema,
-    TableName: TableName,
-    BillingMode: BillingMode = null,
-    GlobalSecondaryIndexes: GlobalSecondaryIndexList = null,
-    LocalSecondaryIndexes: LocalSecondaryIndexList = null,
-    ProvisionedThroughput: ProvisionedThroughput = null,
-    SSESpecification: SSESpecification = null,
-    StreamSpecification: StreamSpecification = null,
-    Tags: TagList = null
-  ): CreateTableInput = {
+  def apply(AttributeDefinitions: AttributeDefinitions, KeySchema: KeySchema, TableName: TableName): CreateTableInput = {
     val __obj = js.Dynamic.literal(AttributeDefinitions = AttributeDefinitions.asInstanceOf[js.Any], KeySchema = KeySchema.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
-    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes.asInstanceOf[js.Any])
-    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes.asInstanceOf[js.Any])
-    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput.asInstanceOf[js.Any])
-    if (SSESpecification != null) __obj.updateDynamic("SSESpecification")(SSESpecification.asInstanceOf[js.Any])
-    if (StreamSpecification != null) __obj.updateDynamic("StreamSpecification")(StreamSpecification.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTableInput]
   }
+  @scala.inline
+  implicit class CreateTableInputOps[Self <: CreateTableInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeDefinitionsVarargs(value: AttributeDefinition*): Self = this.set("AttributeDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setAttributeDefinitions(value: AttributeDefinitions): Self = this.set("AttributeDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBillingMode(value: BillingMode): Self = this.set("BillingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMode: Self = this.set("BillingMode", js.undefined)
+    @scala.inline
+    def setGlobalSecondaryIndexesVarargs(value: GlobalSecondaryIndex*): Self = this.set("GlobalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexes(value: GlobalSecondaryIndexList): Self = this.set("GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexes: Self = this.set("GlobalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setLocalSecondaryIndexesVarargs(value: LocalSecondaryIndex*): Self = this.set("LocalSecondaryIndexes", js.Array(value :_*))
+    @scala.inline
+    def setLocalSecondaryIndexes(value: LocalSecondaryIndexList): Self = this.set("LocalSecondaryIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSecondaryIndexes: Self = this.set("LocalSecondaryIndexes", js.undefined)
+    @scala.inline
+    def setProvisionedThroughput(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughput: Self = this.set("ProvisionedThroughput", js.undefined)
+    @scala.inline
+    def setSSESpecification(value: SSESpecification): Self = this.set("SSESpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSESpecification: Self = this.set("SSESpecification", js.undefined)
+    @scala.inline
+    def setStreamSpecification(value: StreamSpecification): Self = this.set("StreamSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSpecification: Self = this.set("StreamSpecification", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

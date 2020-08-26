@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.DDELinks
   * @since OOo 3.0
   */
+@js.native
 trait XDDELinks extends XNameAccess {
   /**
     * adds a DDE link to the spreadsheet without updating it.
@@ -23,7 +24,7 @@ trait XDDELinks extends XNameAccess {
     * @param nMode the DDE link mode.
     * @returns the DDE link.
     */
-  def addDDELink(aApplication: String, aTopic: String, aItem: String, nMode: DDELinkMode): XDDELink
+  def addDDELink(aApplication: String, aTopic: String, aItem: String, nMode: DDELinkMode): XDDELink = js.native
 }
 
 object XDDELinks {
@@ -44,5 +45,20 @@ object XDDELinks {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addDDELink = js.Any.fromFunction4(addDDELink), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDDELinks]
   }
+  @scala.inline
+  implicit class XDDELinksOps[Self <: XDDELinks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddDDELink(value: (String, String, String, DDELinkMode) => XDDELink): Self = this.set("addDDELink", js.Any.fromFunction4(value))
+  }
+  
 }
 

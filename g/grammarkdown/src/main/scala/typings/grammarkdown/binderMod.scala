@@ -41,7 +41,8 @@ object binderMod extends js.Object {
     var symbolDeclarations: js.Any = js.native
     var symbolLocals: js.Any = js.native
     var symbolReferences: js.Any = js.native
-    def getAncestor(node: js.UndefOr[Node[SyntaxKind]], kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
+    def getAncestor(node: js.UndefOr[scala.Nothing], kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
+    def getAncestor(node: Node[SyntaxKind], kind: SyntaxKind): js.UndefOr[Node[SyntaxKind]] = js.native
     def getDeclarations(): js.Array[SourceFile | Production | Parameter] = js.native
     def getDeclarations(symbol: Symbol): js.Array[SourceFile | Production | Parameter] = js.native
     def getParent(): js.UndefOr[Node[SyntaxKind]] = js.native
@@ -57,7 +58,10 @@ object binderMod extends js.Object {
     def hasSymbol(): Boolean = js.native
     def hasSymbol(node: Node[SyntaxKind]): Boolean = js.native
     def isEmpty: Boolean = js.native
-    def resolveSymbol(location: js.UndefOr[Node[SyntaxKind]], name: js.UndefOr[String], meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: js.UndefOr[scala.Nothing], name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: Node[SyntaxKind], name: js.UndefOr[scala.Nothing], meaning: SymbolKind): js.UndefOr[Symbol] = js.native
+    def resolveSymbol(location: Node[SyntaxKind], name: String, meaning: SymbolKind): js.UndefOr[Symbol] = js.native
   }
   
 }

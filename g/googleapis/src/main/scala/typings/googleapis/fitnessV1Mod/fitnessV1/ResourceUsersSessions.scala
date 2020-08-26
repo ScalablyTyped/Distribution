@@ -29,6 +29,7 @@ class ResourceUsersSessions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSessionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSessionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,6 +61,7 @@ class ResourceUsersSessions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSessionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(params: ParamsResourceUsersSessionsList): GaxiosPromise[SchemaListSessionsResponse] = js.native
   def list(
     params: ParamsResourceUsersSessionsList,
@@ -93,6 +95,7 @@ class ResourceUsersSessions protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaSession] = js.native
   def update(callback: BodyResponseCallback[SchemaSession]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSession] = js.native
   def update(params: ParamsResourceUsersSessionsUpdate): GaxiosPromise[SchemaSession] = js.native
   def update(params: ParamsResourceUsersSessionsUpdate, callback: BodyResponseCallback[SchemaSession]): Unit = js.native
   def update(

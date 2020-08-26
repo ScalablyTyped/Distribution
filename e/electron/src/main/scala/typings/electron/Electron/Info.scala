@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Info extends js.Object {
   /**
     * Content Security Policy for the isolated world.
     */
-  var csp: js.UndefOr[String] = js.undefined
+  var csp: js.UndefOr[String] = js.native
   /**
     * Name for isolated world. Useful in devtools.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Security origin for the isolated world.
     */
-  var securityOrigin: js.UndefOr[String] = js.undefined
+  var securityOrigin: js.UndefOr[String] = js.native
 }
 
 object Info {
   @scala.inline
-  def apply(csp: String = null, name: String = null, securityOrigin: String = null): Info = {
+  def apply(): Info = {
     val __obj = js.Dynamic.literal()
-    if (csp != null) __obj.updateDynamic("csp")(csp.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (securityOrigin != null) __obj.updateDynamic("securityOrigin")(securityOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
+  @scala.inline
+  implicit class InfoOps[Self <: Info] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCsp(value: String): Self = this.set("csp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsp: Self = this.set("csp", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSecurityOrigin(value: String): Self = this.set("securityOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityOrigin: Self = this.set("securityOrigin", js.undefined)
+  }
+  
 }
 

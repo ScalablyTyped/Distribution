@@ -14,10 +14,26 @@ trait DescribeGameServerOutput extends js.Object {
 
 object DescribeGameServerOutput {
   @scala.inline
-  def apply(GameServer: GameServer = null): DescribeGameServerOutput = {
+  def apply(): DescribeGameServerOutput = {
     val __obj = js.Dynamic.literal()
-    if (GameServer != null) __obj.updateDynamic("GameServer")(GameServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGameServerOutput]
   }
+  @scala.inline
+  implicit class DescribeGameServerOutputOps[Self <: DescribeGameServerOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameServer(value: GameServer): Self = this.set("GameServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServer: Self = this.set("GameServer", js.undefined)
+  }
+  
 }
 

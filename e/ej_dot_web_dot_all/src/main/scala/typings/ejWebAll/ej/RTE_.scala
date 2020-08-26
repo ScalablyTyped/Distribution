@@ -74,6 +74,7 @@ trait RTE_ extends Widget_ {
     * @returns {HTMLElement}
     */
   def insertColumn(): HTMLElement = js.native
+  def insertColumn(before: js.UndefOr[scala.Nothing], cell: JQuery): HTMLElement = js.native
   def insertColumn(before: Boolean): HTMLElement = js.native
   def insertColumn(before: Boolean, cell: JQuery): HTMLElement = js.native
   /** Inserts new item to the target contextmenu node.
@@ -86,6 +87,7 @@ trait RTE_ extends Widget_ {
     * @returns {HTMLElement}
     */
   def insertRow(): HTMLElement = js.native
+  def insertRow(before: js.UndefOr[scala.Nothing], cell: JQuery): HTMLElement = js.native
   def insertRow(before: Boolean): HTMLElement = js.native
   def insertRow(before: Boolean, cell: JQuery): HTMLElement = js.native
   /** This method helps to insert/paste the content at the current cursor (caret) position or the selected content to be replaced with our text by passing the value as parameter to the

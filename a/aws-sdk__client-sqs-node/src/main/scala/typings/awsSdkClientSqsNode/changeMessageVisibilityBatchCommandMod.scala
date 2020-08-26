@@ -26,16 +26,9 @@ object changeMessageVisibilityBatchCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ChangeMessageVisibilityBatchInput) = this()
-    /* CompleteClass */
-    override val input: ChangeMessageVisibilityBatchInput = js.native
     val middlewareStack: MiddlewareStack[ChangeMessageVisibilityBatchInput, ChangeMessageVisibilityBatchOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[ChangeMessageVisibilityBatchInput, ChangeMessageVisibilityBatchOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[ChangeMessageVisibilityBatchInput, ChangeMessageVisibilityBatchOutput] = js.native
   }

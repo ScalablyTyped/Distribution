@@ -1,6 +1,6 @@
 package typings.electronSettings.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,6 +54,7 @@ trait Settings extends EventEmitter {
     * @see #getAll
     */
   def get(keyPath: String): JsonValue = js.native
+  def get(keyPath: String, defaultValue: js.UndefOr[scala.Nothing], options: SettingsOptions): JsonValue = js.native
   def get(keyPath: String, defaultValue: js.Any): JsonValue = js.native
   def get(keyPath: String, defaultValue: js.Any, options: SettingsOptions): JsonValue = js.native
   /**

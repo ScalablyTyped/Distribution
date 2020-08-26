@@ -29,8 +29,9 @@ import scala.scalajs.js.annotation._
   *      aACompromise            (8) }
   * ```
   */
+@js.native
 trait DistributionPointName extends js.Object {
-  def getEncodedHex(): String
+  def getEncodedHex(): String = js.native
 }
 
 object DistributionPointName {
@@ -39,5 +40,20 @@ object DistributionPointName {
     val __obj = js.Dynamic.literal(getEncodedHex = js.Any.fromFunction0(getEncodedHex))
     __obj.asInstanceOf[DistributionPointName]
   }
+  @scala.inline
+  implicit class DistributionPointNameOps[Self <: DistributionPointName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetEncodedHex(value: () => String): Self = this.set("getEncodedHex", js.Any.fromFunction0(value))
+  }
+  
 }
 

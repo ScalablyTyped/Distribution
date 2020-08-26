@@ -26,18 +26,40 @@ trait DescribeDBProxiesRequest extends js.Object {
 
 object DescribeDBProxiesRequest {
   @scala.inline
-  def apply(
-    DBProxyName: String = null,
-    Filters: FilterList = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined
-  ): DescribeDBProxiesRequest = {
+  def apply(): DescribeDBProxiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (DBProxyName != null) __obj.updateDynamic("DBProxyName")(DBProxyName.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDBProxiesRequest]
   }
+  @scala.inline
+  implicit class DescribeDBProxiesRequestOps[Self <: DescribeDBProxiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBProxyName(value: String): Self = this.set("DBProxyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBProxyName: Self = this.set("DBProxyName", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+  }
+  
 }
 

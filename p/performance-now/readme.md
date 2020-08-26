@@ -11,8 +11,8 @@ Implements performance.now (based on process.hrtime).
 | Full name          | performance-now |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 332 |
-| # downloads        | 559010104 |
+| # dependents       | 335 |
+| # downloads        | 584967817 |
 | # stars            | 18 |
 
 ## Links

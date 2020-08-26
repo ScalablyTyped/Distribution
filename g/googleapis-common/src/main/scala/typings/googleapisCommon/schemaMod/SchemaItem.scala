@@ -5,43 +5,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SchemaItem extends js.Object {
   @JSName("$ref")
-  var $ref: js.UndefOr[String] = js.undefined
-  var additionalProperties: js.UndefOr[StringDictionary[SchemaItem]] = js.undefined
-  var default: js.UndefOr[String] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[ParameterFormat] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[StringDictionary[SchemaItem]] = js.undefined
-  var properties: js.UndefOr[StringDictionary[SchemaItem]] = js.undefined
-  var `type`: js.UndefOr[SchemaType] = js.undefined
+  var $ref: js.UndefOr[String] = js.native
+  var additionalProperties: js.UndefOr[StringDictionary[SchemaItem]] = js.native
+  var default: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.native
+  var format: js.UndefOr[ParameterFormat] = js.native
+  var id: js.UndefOr[String] = js.native
+  var items: js.UndefOr[StringDictionary[SchemaItem]] = js.native
+  var properties: js.UndefOr[StringDictionary[SchemaItem]] = js.native
+  var `type`: js.UndefOr[SchemaType] = js.native
 }
 
 object SchemaItem {
   @scala.inline
-  def apply(
-    $ref: String = null,
-    additionalProperties: StringDictionary[SchemaItem] = null,
-    default: String = null,
-    description: String = null,
-    format: ParameterFormat = null,
-    id: String = null,
-    items: StringDictionary[SchemaItem] = null,
-    properties: StringDictionary[SchemaItem] = null,
-    `type`: SchemaType = null
-  ): SchemaItem = {
+  def apply(): SchemaItem = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaItem]
   }
+  @scala.inline
+  implicit class SchemaItemOps[Self <: SchemaItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$ref: Self = this.set("$ref", js.undefined)
+    @scala.inline
+    def setAdditionalProperties(value: StringDictionary[SchemaItem]): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    @scala.inline
+    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFormat(value: ParameterFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItems(value: StringDictionary[SchemaItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[SchemaItem]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setType(value: SchemaType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

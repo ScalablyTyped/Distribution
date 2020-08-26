@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethereumjs-common
 
-Typings are for version 1.5.0
+Typings are for version 1.5.2
 
 ## Library description:
 Resources common to all Ethereum implementations
@@ -10,9 +10,9 @@ Resources common to all Ethereum implementations
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-common |
 | Keywords           | ethereum, ethereumjs, constants, parameters, genesis, networks, bootstrap |
-| # releases         | 21 |
-| # dependents       | 31 |
-| # downloads        | 1882892 |
+| # releases         | 20 |
+| # dependents       | 32 |
+| # downloads        | 1949295 |
 | # stars            | 0 |
 
 ## Links

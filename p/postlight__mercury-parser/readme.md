@@ -12,7 +12,7 @@ Mercury transforms web pages into clean text. Publishers and programmers use it 
 | Keywords           | mercury, parser, reader, web, content |
 | # releases         | 15 |
 | # dependents       | 11 |
-| # downloads        | 38444 |
+| # downloads        | 51242 |
 | # stars            | 0 |
 
 ## Links

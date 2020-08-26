@@ -14,11 +14,30 @@ trait PartialStyleRulesModalCla extends js.Object {
 
 object PartialStyleRulesModalCla {
   @scala.inline
-  def apply(hidden: CSSProperties = null, root: CSSProperties = null): PartialStyleRulesModalCla = {
+  def apply(): PartialStyleRulesModalCla = {
     val __obj = js.Dynamic.literal()
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesModalCla]
   }
+  @scala.inline
+  implicit class PartialStyleRulesModalClaOps[Self <: PartialStyleRulesModalCla] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHidden(value: CSSProperties): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

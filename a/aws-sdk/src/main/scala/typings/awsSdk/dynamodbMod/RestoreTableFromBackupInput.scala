@@ -38,22 +38,50 @@ trait RestoreTableFromBackupInput extends js.Object {
 
 object RestoreTableFromBackupInput {
   @scala.inline
-  def apply(
-    BackupArn: BackupArn,
-    TargetTableName: TableName,
-    BillingModeOverride: BillingMode = null,
-    GlobalSecondaryIndexOverride: GlobalSecondaryIndexList = null,
-    LocalSecondaryIndexOverride: LocalSecondaryIndexList = null,
-    ProvisionedThroughputOverride: ProvisionedThroughput = null,
-    SSESpecificationOverride: SSESpecification = null
-  ): RestoreTableFromBackupInput = {
+  def apply(BackupArn: BackupArn, TargetTableName: TableName): RestoreTableFromBackupInput = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any], TargetTableName = TargetTableName.asInstanceOf[js.Any])
-    if (BillingModeOverride != null) __obj.updateDynamic("BillingModeOverride")(BillingModeOverride.asInstanceOf[js.Any])
-    if (GlobalSecondaryIndexOverride != null) __obj.updateDynamic("GlobalSecondaryIndexOverride")(GlobalSecondaryIndexOverride.asInstanceOf[js.Any])
-    if (LocalSecondaryIndexOverride != null) __obj.updateDynamic("LocalSecondaryIndexOverride")(LocalSecondaryIndexOverride.asInstanceOf[js.Any])
-    if (ProvisionedThroughputOverride != null) __obj.updateDynamic("ProvisionedThroughputOverride")(ProvisionedThroughputOverride.asInstanceOf[js.Any])
-    if (SSESpecificationOverride != null) __obj.updateDynamic("SSESpecificationOverride")(SSESpecificationOverride.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreTableFromBackupInput]
   }
+  @scala.inline
+  implicit class RestoreTableFromBackupInputOps[Self <: RestoreTableFromBackupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupArn(value: BackupArn): Self = this.set("BackupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetTableName(value: TableName): Self = this.set("TargetTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBillingModeOverride(value: BillingMode): Self = this.set("BillingModeOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingModeOverride: Self = this.set("BillingModeOverride", js.undefined)
+    @scala.inline
+    def setGlobalSecondaryIndexOverrideVarargs(value: GlobalSecondaryIndex*): Self = this.set("GlobalSecondaryIndexOverride", js.Array(value :_*))
+    @scala.inline
+    def setGlobalSecondaryIndexOverride(value: GlobalSecondaryIndexList): Self = this.set("GlobalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalSecondaryIndexOverride: Self = this.set("GlobalSecondaryIndexOverride", js.undefined)
+    @scala.inline
+    def setLocalSecondaryIndexOverrideVarargs(value: LocalSecondaryIndex*): Self = this.set("LocalSecondaryIndexOverride", js.Array(value :_*))
+    @scala.inline
+    def setLocalSecondaryIndexOverride(value: LocalSecondaryIndexList): Self = this.set("LocalSecondaryIndexOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalSecondaryIndexOverride: Self = this.set("LocalSecondaryIndexOverride", js.undefined)
+    @scala.inline
+    def setProvisionedThroughputOverride(value: ProvisionedThroughput): Self = this.set("ProvisionedThroughputOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedThroughputOverride: Self = this.set("ProvisionedThroughputOverride", js.undefined)
+    @scala.inline
+    def setSSESpecificationOverride(value: SSESpecification): Self = this.set("SSESpecificationOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSESpecificationOverride: Self = this.set("SSESpecificationOverride", js.undefined)
+  }
+  
 }
 

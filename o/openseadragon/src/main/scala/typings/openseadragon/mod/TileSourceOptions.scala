@@ -5,57 +5,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TileSourceOptions extends js.Object {
-  var ajaxHeaders: js.UndefOr[js.Object] = js.undefined
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
-  var getTileUrl: js.UndefOr[js.Function3[/* l */ Double, /* x */ Double, /* y */ Double, String]] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var maxLevel: js.UndefOr[Double] = js.undefined
-  var minLevel: js.UndefOr[Double] = js.undefined
-  var referenceStripThumbnailUrl: js.UndefOr[String] = js.undefined
-  var success: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var tileHeight: js.UndefOr[Double] = js.undefined
-  var tileOverlap: js.UndefOr[Double] = js.undefined
-  var tileSize: js.UndefOr[Double] = js.undefined
-  var tileWidth: js.UndefOr[Double] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var ajaxHeaders: js.UndefOr[js.Object] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var getTileUrl: js.UndefOr[js.Function3[/* l */ Double, /* x */ Double, /* y */ Double, String]] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var maxLevel: js.UndefOr[Double] = js.native
+  var minLevel: js.UndefOr[Double] = js.native
+  var referenceStripThumbnailUrl: js.UndefOr[String] = js.native
+  var success: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var tileHeight: js.UndefOr[Double] = js.native
+  var tileOverlap: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.native
+  var url: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object TileSourceOptions {
   @scala.inline
-  def apply(
-    ajaxHeaders: js.Object = null,
-    ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined,
-    getTileUrl: (/* l */ Double, /* x */ Double, /* y */ Double) => String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    maxLevel: js.UndefOr[Double] = js.undefined,
-    minLevel: js.UndefOr[Double] = js.undefined,
-    referenceStripThumbnailUrl: String = null,
-    success: /* event */ Event => Unit = null,
-    tileHeight: js.UndefOr[Double] = js.undefined,
-    tileOverlap: js.UndefOr[Double] = js.undefined,
-    tileSize: js.UndefOr[Double] = js.undefined,
-    tileWidth: js.UndefOr[Double] = js.undefined,
-    url: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): TileSourceOptions = {
+  def apply(): TileSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (ajaxHeaders != null) __obj.updateDynamic("ajaxHeaders")(ajaxHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(ajaxWithCredentials)) __obj.updateDynamic("ajaxWithCredentials")(ajaxWithCredentials.get.asInstanceOf[js.Any])
-    if (getTileUrl != null) __obj.updateDynamic("getTileUrl")(js.Any.fromFunction3(getTileUrl))
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLevel)) __obj.updateDynamic("maxLevel")(maxLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLevel)) __obj.updateDynamic("minLevel")(minLevel.get.asInstanceOf[js.Any])
-    if (referenceStripThumbnailUrl != null) __obj.updateDynamic("referenceStripThumbnailUrl")(referenceStripThumbnailUrl.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
-    if (!js.isUndefined(tileHeight)) __obj.updateDynamic("tileHeight")(tileHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileOverlap)) __obj.updateDynamic("tileOverlap")(tileOverlap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileSize)) __obj.updateDynamic("tileSize")(tileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileWidth)) __obj.updateDynamic("tileWidth")(tileWidth.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileSourceOptions]
   }
+  @scala.inline
+  implicit class TileSourceOptionsOps[Self <: TileSourceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxHeaders(value: js.Object): Self = this.set("ajaxHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxHeaders: Self = this.set("ajaxHeaders", js.undefined)
+    @scala.inline
+    def setAjaxWithCredentials(value: Boolean): Self = this.set("ajaxWithCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxWithCredentials: Self = this.set("ajaxWithCredentials", js.undefined)
+    @scala.inline
+    def setGetTileUrl(value: (/* l */ Double, /* x */ Double, /* y */ Double) => String): Self = this.set("getTileUrl", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteGetTileUrl: Self = this.set("getTileUrl", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMaxLevel(value: Double): Self = this.set("maxLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLevel: Self = this.set("maxLevel", js.undefined)
+    @scala.inline
+    def setMinLevel(value: Double): Self = this.set("minLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLevel: Self = this.set("minLevel", js.undefined)
+    @scala.inline
+    def setReferenceStripThumbnailUrl(value: String): Self = this.set("referenceStripThumbnailUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceStripThumbnailUrl: Self = this.set("referenceStripThumbnailUrl", js.undefined)
+    @scala.inline
+    def setSuccess(value: /* event */ Event => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setTileHeight(value: Double): Self = this.set("tileHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileHeight: Self = this.set("tileHeight", js.undefined)
+    @scala.inline
+    def setTileOverlap(value: Double): Self = this.set("tileOverlap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileOverlap: Self = this.set("tileOverlap", js.undefined)
+    @scala.inline
+    def setTileSize(value: Double): Self = this.set("tileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileSize: Self = this.set("tileSize", js.undefined)
+    @scala.inline
+    def setTileWidth(value: Double): Self = this.set("tileWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileWidth: Self = this.set("tileWidth", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

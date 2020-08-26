@@ -26,16 +26,9 @@ object listRetirableGrantsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: ListRetirableGrantsInput) = this()
-    /* CompleteClass */
-    override val input: ListRetirableGrantsInput = js.native
     val middlewareStack: MiddlewareStack[ListRetirableGrantsInput, ListRetirableGrantsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[ListRetirableGrantsInput, ListRetirableGrantsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[ListRetirableGrantsInput, ListRetirableGrantsOutput] = js.native
   }

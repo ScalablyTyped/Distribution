@@ -1,60 +1,61 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.ComponentRow
-import typings.devextreme.devextremeStrings.batch
-import typings.devextreme.devextremeStrings.cell
-import typings.devextreme.devextremeStrings.click
-import typings.devextreme.devextremeStrings.dblClick
-import typings.devextreme.devextremeStrings.form
-import typings.devextreme.devextremeStrings.full
-import typings.devextreme.devextremeStrings.popup
-import typings.devextreme.devextremeStrings.repaint
-import typings.devextreme.devextremeStrings.reshape
-import typings.devextreme.devextremeStrings.row
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxDataGridEditing extends GridBaseEditing {
   /** @name dxDataGrid.Options.editing.allowAdding */
-  var allowAdding: js.UndefOr[Boolean] = js.undefined
+  var allowAdding: js.UndefOr[Boolean] = js.native
   /** @name dxDataGrid.Options.editing.allowDeleting */
-  var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.undefined
+  var allowDeleting: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.native
   /** @name dxDataGrid.Options.editing.allowUpdating */
-  var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.undefined
+  var allowUpdating: js.UndefOr[Boolean | (js.Function1[/* options */ ComponentRow, Boolean])] = js.native
   /** @name dxDataGrid.Options.editing.texts */
   @JSName("texts")
-  var texts_dxDataGridEditing: js.UndefOr[js.Any] = js.undefined
+  var texts_dxDataGridEditing: js.UndefOr[js.Any] = js.native
 }
 
 object dxDataGridEditing {
   @scala.inline
-  def apply(
-    allowAdding: js.UndefOr[Boolean] = js.undefined,
-    allowDeleting: Boolean | (js.Function1[/* options */ ComponentRow, Boolean]) = null,
-    allowUpdating: Boolean | (js.Function1[/* options */ ComponentRow, Boolean]) = null,
-    form: dxFormOptions = null,
-    mode: batch | cell | row | form | popup = null,
-    popup: dxPopupOptions[dxPopup] = null,
-    refreshMode: full | reshape | repaint = null,
-    selectTextOnEditStart: js.UndefOr[Boolean] = js.undefined,
-    startEditAction: click | dblClick = null,
-    texts: js.Any = null,
-    useIcons: js.UndefOr[Boolean] = js.undefined
-  ): dxDataGridEditing = {
+  def apply(): dxDataGridEditing = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding.get.asInstanceOf[js.Any])
-    if (allowDeleting != null) __obj.updateDynamic("allowDeleting")(allowDeleting.asInstanceOf[js.Any])
-    if (allowUpdating != null) __obj.updateDynamic("allowUpdating")(allowUpdating.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (refreshMode != null) __obj.updateDynamic("refreshMode")(refreshMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectTextOnEditStart)) __obj.updateDynamic("selectTextOnEditStart")(selectTextOnEditStart.get.asInstanceOf[js.Any])
-    if (startEditAction != null) __obj.updateDynamic("startEditAction")(startEditAction.asInstanceOf[js.Any])
-    if (texts != null) __obj.updateDynamic("texts")(texts.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIcons)) __obj.updateDynamic("useIcons")(useIcons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxDataGridEditing]
   }
+  @scala.inline
+  implicit class dxDataGridEditingOps[Self <: dxDataGridEditing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAdding(value: Boolean): Self = this.set("allowAdding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAdding: Self = this.set("allowAdding", js.undefined)
+    @scala.inline
+    def setAllowDeletingFunction1(value: /* options */ ComponentRow => Boolean): Self = this.set("allowDeleting", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAllowDeleting(value: Boolean | (js.Function1[/* options */ ComponentRow, Boolean])): Self = this.set("allowDeleting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDeleting: Self = this.set("allowDeleting", js.undefined)
+    @scala.inline
+    def setAllowUpdatingFunction1(value: /* options */ ComponentRow => Boolean): Self = this.set("allowUpdating", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAllowUpdating(value: Boolean | (js.Function1[/* options */ ComponentRow, Boolean])): Self = this.set("allowUpdating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUpdating: Self = this.set("allowUpdating", js.undefined)
+    @scala.inline
+    def setTexts(value: js.Any): Self = this.set("texts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTexts: Self = this.set("texts", js.undefined)
+  }
+  
 }
 

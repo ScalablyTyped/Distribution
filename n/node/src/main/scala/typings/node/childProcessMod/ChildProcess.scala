@@ -1,12 +1,12 @@
 package typings.node.childProcessMod
 
-import typings.node.NodeJS.Signals
 import typings.node.eventsMod.EventEmitter
 import typings.node.nodeStrings.close
 import typings.node.nodeStrings.disconnect
 import typings.node.nodeStrings.error
 import typings.node.nodeStrings.exit
 import typings.node.nodeStrings.message
+import typings.node.processMod.global.NodeJS.Signals
 import typings.node.streamMod.Pipe
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
@@ -123,10 +123,34 @@ trait ChildProcess extends EventEmitter {
   def ref(): Unit = js.native
   def send(message: Serializable): Boolean = js.native
   def send(message: Serializable, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
+  def send(
+    message: Serializable,
+    sendHandle: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ Error | Null, Unit]
+  ): Boolean = js.native
+  def send(
+    message: Serializable,
+    sendHandle: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* error */ Error | Null, Unit]
+  ): Boolean = js.native
+  def send(message: Serializable, sendHandle: js.UndefOr[scala.Nothing], options: MessageOptions): Boolean = js.native
+  def send(
+    message: Serializable,
+    sendHandle: js.UndefOr[scala.Nothing],
+    options: MessageOptions,
+    callback: js.Function1[/* error */ Error | Null, Unit]
+  ): Boolean = js.native
   def send(message: Serializable, sendHandle: SendHandle): Boolean = js.native
   def send(
     message: Serializable,
     sendHandle: SendHandle,
+    callback: js.Function1[/* error */ Error | Null, Unit]
+  ): Boolean = js.native
+  def send(
+    message: Serializable,
+    sendHandle: SendHandle,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native
   def send(message: Serializable, sendHandle: SendHandle, options: MessageOptions): Boolean = js.native

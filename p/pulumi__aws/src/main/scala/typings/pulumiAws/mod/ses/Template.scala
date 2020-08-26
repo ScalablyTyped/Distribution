@@ -22,6 +22,7 @@ class Template protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: TemplateArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: TemplateArgs, opts: CustomResourceOptions) = this()
 }
 
@@ -36,8 +37,10 @@ object Template extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): typings.pulumiAws.templateMod.Template = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.templateMod.Template = js.native
   def get(name: String, id: Input[ID], state: TemplateState): typings.pulumiAws.templateMod.Template = js.native
   def get(name: String, id: Input[ID], state: TemplateState, opts: CustomResourceOptions): typings.pulumiAws.templateMod.Template = js.native
   /**

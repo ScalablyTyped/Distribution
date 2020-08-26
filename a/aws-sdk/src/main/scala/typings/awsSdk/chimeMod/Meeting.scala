@@ -26,18 +26,38 @@ trait Meeting extends js.Object {
 
 object Meeting {
   @scala.inline
-  def apply(
-    ExternalMeetingId: ExternalMeetingIdType = null,
-    MediaPlacement: MediaPlacement = null,
-    MediaRegion: String = null,
-    MeetingId: GuidString = null
-  ): Meeting = {
+  def apply(): Meeting = {
     val __obj = js.Dynamic.literal()
-    if (ExternalMeetingId != null) __obj.updateDynamic("ExternalMeetingId")(ExternalMeetingId.asInstanceOf[js.Any])
-    if (MediaPlacement != null) __obj.updateDynamic("MediaPlacement")(MediaPlacement.asInstanceOf[js.Any])
-    if (MediaRegion != null) __obj.updateDynamic("MediaRegion")(MediaRegion.asInstanceOf[js.Any])
-    if (MeetingId != null) __obj.updateDynamic("MeetingId")(MeetingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meeting]
   }
+  @scala.inline
+  implicit class MeetingOps[Self <: Meeting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternalMeetingId(value: ExternalMeetingIdType): Self = this.set("ExternalMeetingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalMeetingId: Self = this.set("ExternalMeetingId", js.undefined)
+    @scala.inline
+    def setMediaPlacement(value: MediaPlacement): Self = this.set("MediaPlacement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaPlacement: Self = this.set("MediaPlacement", js.undefined)
+    @scala.inline
+    def setMediaRegion(value: String): Self = this.set("MediaRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaRegion: Self = this.set("MediaRegion", js.undefined)
+    @scala.inline
+    def setMeetingId(value: GuidString): Self = this.set("MeetingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeetingId: Self = this.set("MeetingId", js.undefined)
+  }
+  
 }
 

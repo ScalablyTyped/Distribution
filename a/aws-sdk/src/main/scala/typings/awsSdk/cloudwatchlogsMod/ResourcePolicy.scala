@@ -22,16 +22,34 @@ trait ResourcePolicy extends js.Object {
 
 object ResourcePolicy {
   @scala.inline
-  def apply(
-    lastUpdatedTime: js.UndefOr[Timestamp] = js.undefined,
-    policyDocument: PolicyDocument = null,
-    policyName: PolicyName = null
-  ): ResourcePolicy = {
+  def apply(): ResourcePolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastUpdatedTime)) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.get.asInstanceOf[js.Any])
-    if (policyDocument != null) __obj.updateDynamic("policyDocument")(policyDocument.asInstanceOf[js.Any])
-    if (policyName != null) __obj.updateDynamic("policyName")(policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourcePolicy]
   }
+  @scala.inline
+  implicit class ResourcePolicyOps[Self <: ResourcePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastUpdatedTime(value: Timestamp): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setPolicyDocument(value: PolicyDocument): Self = this.set("policyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyDocument: Self = this.set("policyDocument", js.undefined)
+    @scala.inline
+    def setPolicyName(value: PolicyName): Self = this.set("policyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyName: Self = this.set("policyName", js.undefined)
+  }
+  
 }
 

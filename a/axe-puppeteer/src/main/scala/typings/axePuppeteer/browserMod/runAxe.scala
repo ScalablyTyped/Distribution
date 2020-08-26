@@ -12,8 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object runAxe extends js.Object {
   def apply(): js.Promise[AxeResults] = js.native
+  def apply(config: js.UndefOr[scala.Nothing], context: js.UndefOr[ElementContext], options: RunOptions): js.Promise[AxeResults] = js.native
+  def apply(config: js.UndefOr[scala.Nothing], context: ElementContext): js.Promise[AxeResults] = js.native
   def apply(config: Spec): js.Promise[AxeResults] = js.native
+  def apply(config: Spec, context: js.UndefOr[ElementContext], options: RunOptions): js.Promise[AxeResults] = js.native
   def apply(config: Spec, context: ElementContext): js.Promise[AxeResults] = js.native
-  def apply(config: Spec, context: ElementContext, options: RunOptions): js.Promise[AxeResults] = js.native
 }
 

@@ -18,11 +18,32 @@ trait IpSet extends js.Object {
 
 object IpSet {
   @scala.inline
-  def apply(IpAddresses: IpAddresses = null, IpFamily: GenericString = null): IpSet = {
+  def apply(): IpSet = {
     val __obj = js.Dynamic.literal()
-    if (IpAddresses != null) __obj.updateDynamic("IpAddresses")(IpAddresses.asInstanceOf[js.Any])
-    if (IpFamily != null) __obj.updateDynamic("IpFamily")(IpFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpSet]
   }
+  @scala.inline
+  implicit class IpSetOps[Self <: IpSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpAddressesVarargs(value: IpAddress*): Self = this.set("IpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setIpAddresses(value: IpAddresses): Self = this.set("IpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddresses: Self = this.set("IpAddresses", js.undefined)
+    @scala.inline
+    def setIpFamily(value: GenericString): Self = this.set("IpFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpFamily: Self = this.set("IpFamily", js.undefined)
+  }
+  
 }
 

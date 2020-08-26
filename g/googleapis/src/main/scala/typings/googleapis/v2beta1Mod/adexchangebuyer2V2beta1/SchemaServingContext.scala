@@ -38,22 +38,46 @@ trait SchemaServingContext extends js.Object {
 
 object SchemaServingContext {
   @scala.inline
-  def apply(
-    all: String = null,
-    appType: SchemaAppContext = null,
-    auctionType: SchemaAuctionContext = null,
-    location: SchemaLocationContext = null,
-    platform: SchemaPlatformContext = null,
-    securityType: SchemaSecurityContext = null
-  ): SchemaServingContext = {
+  def apply(): SchemaServingContext = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (appType != null) __obj.updateDynamic("appType")(appType.asInstanceOf[js.Any])
-    if (auctionType != null) __obj.updateDynamic("auctionType")(auctionType.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (securityType != null) __obj.updateDynamic("securityType")(securityType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServingContext]
   }
+  @scala.inline
+  implicit class SchemaServingContextOps[Self <: SchemaServingContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAll(value: String): Self = this.set("all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAll: Self = this.set("all", js.undefined)
+    @scala.inline
+    def setAppType(value: SchemaAppContext): Self = this.set("appType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppType: Self = this.set("appType", js.undefined)
+    @scala.inline
+    def setAuctionType(value: SchemaAuctionContext): Self = this.set("auctionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuctionType: Self = this.set("auctionType", js.undefined)
+    @scala.inline
+    def setLocation(value: SchemaLocationContext): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setPlatform(value: SchemaPlatformContext): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setSecurityType(value: SchemaSecurityContext): Self = this.set("securityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityType: Self = this.set("securityType", js.undefined)
+  }
+  
 }
 

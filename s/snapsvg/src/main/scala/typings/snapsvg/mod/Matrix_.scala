@@ -11,10 +11,15 @@ trait Matrix_ extends js.Object {
   def determinant(): Double = js.native
   def invert(): Matrix_ = js.native
   def rotate(a: Double): Matrix_ = js.native
+  def rotate(a: Double, x: js.UndefOr[scala.Nothing], y: Double): Matrix_ = js.native
   def rotate(a: Double, x: Double): Matrix_ = js.native
   def rotate(a: Double, x: Double, y: Double): Matrix_ = js.native
   def scale(x: Double): Matrix_ = js.native
+  def scale(x: Double, y: js.UndefOr[scala.Nothing], cx: js.UndefOr[scala.Nothing], cy: Double): Matrix_ = js.native
+  def scale(x: Double, y: js.UndefOr[scala.Nothing], cx: Double): Matrix_ = js.native
+  def scale(x: Double, y: js.UndefOr[scala.Nothing], cx: Double, cy: Double): Matrix_ = js.native
   def scale(x: Double, y: Double): Matrix_ = js.native
+  def scale(x: Double, y: Double, cx: js.UndefOr[scala.Nothing], cy: Double): Matrix_ = js.native
   def scale(x: Double, y: Double, cx: Double): Matrix_ = js.native
   def scale(x: Double, y: Double, cx: Double, cy: Double): Matrix_ = js.native
   def split(): ExplicitTransform = js.native

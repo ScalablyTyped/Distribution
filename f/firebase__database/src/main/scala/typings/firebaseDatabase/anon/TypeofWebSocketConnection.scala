@@ -25,15 +25,15 @@ trait TypeofWebSocketConnection
      with Instantiable4[
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
-      /* applicationId */ String, 
+      js.UndefOr[/* applicationId */ String], 
       /* transportSessionId */ String, 
       WebSocketConnection
     ]
      with Instantiable5[
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
-      /* applicationId */ String, 
-      /* transportSessionId */ String, 
+      js.UndefOr[/* applicationId */ String], 
+      js.UndefOr[/* transportSessionId */ String], 
       /* lastSessionId */ String, 
       WebSocketConnection
     ] {

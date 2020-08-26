@@ -17,10 +17,28 @@ trait SchemaListAccountsResponse extends js.Object {
 
 object SchemaListAccountsResponse {
   @scala.inline
-  def apply(accounts: js.Array[SchemaAccount] = null): SchemaListAccountsResponse = {
+  def apply(): SchemaListAccountsResponse = {
     val __obj = js.Dynamic.literal()
-    if (accounts != null) __obj.updateDynamic("accounts")(accounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListAccountsResponse]
   }
+  @scala.inline
+  implicit class SchemaListAccountsResponseOps[Self <: SchemaListAccountsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountsVarargs(value: SchemaAccount*): Self = this.set("accounts", js.Array(value :_*))
+    @scala.inline
+    def setAccounts(value: js.Array[SchemaAccount]): Self = this.set("accounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccounts: Self = this.set("accounts", js.undefined)
+  }
+  
 }
 

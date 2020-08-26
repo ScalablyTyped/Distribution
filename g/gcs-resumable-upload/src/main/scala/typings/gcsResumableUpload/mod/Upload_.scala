@@ -1,5 +1,6 @@
 package typings.gcsResumableUpload.mod
 
+import typings.gaxios.commonMod.GaxiosOptions
 import typings.gcsResumableUpload.anon.Scopes
 import typings.gcsResumableUpload.gcsResumableUploadStrings.Asterisk
 import typings.googleAuthLibrary.mod.GoogleAuth
@@ -16,13 +17,14 @@ class Upload_ protected () extends ^ {
   var apiEndpoint: String = js.native
   var authClient: GoogleAuth = js.native
   var authConfig: js.UndefOr[Scopes] = js.native
-  val baseURI: js.Any = js.native
+  var baseURI: String = js.native
   var bucket: String = js.native
-  var bufferStream: js.UndefOr[js.Any] = js.native
+  var bufferStream: js.Any = js.native
   var cacheKey: String = js.native
   var configStore: typings.configstore.mod.^ = js.native
   var contentLength: Double | Asterisk = js.native
   var continueUploading: js.Any = js.native
+  var customRequestOptions: GaxiosOptions = js.native
   var encryption: js.UndefOr[Encryption] = js.native
   var file: String = js.native
   var generation: js.UndefOr[Double] = js.native
@@ -36,7 +38,7 @@ class Upload_ protected () extends ^ {
   var numBytesWritten: Double = js.native
   var numRetries: Double = js.native
   var offset: js.UndefOr[Double] = js.native
-  var offsetStream: js.UndefOr[js.Any] = js.native
+  var offsetStream: js.Any = js.native
   var onChunk: js.Any = js.native
   /**
     * @return {bool} is the request good?
@@ -48,6 +50,7 @@ class Upload_ protected () extends ^ {
   var `private`: js.UndefOr[Boolean] = js.native
   var public: js.UndefOr[Boolean] = js.native
   var restart: js.Any = js.native
+  var sanitizeEndpoint: js.Any = js.native
   var set: js.Any = js.native
   var startUploading: js.Any = js.native
   var uri: js.UndefOr[String] = js.native

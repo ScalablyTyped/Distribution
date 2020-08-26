@@ -11,6 +11,7 @@ trait JquerySap extends js.Object {
   def addUrlWhitelist(protocol: js.Any, host: js.Any, port: js.Any, path: js.Any): Unit = js.native
   // Calculate delta of old list and new list This implements the algorithm described in "A Technique for Isolating Differences Between Files" (Commun. 
   def arrayDiff(aOld: js.Any, aNew: js.Any): Unit = js.native
+  def arrayDiff(aOld: js.Any, aNew: js.Any, fnCompare: js.UndefOr[scala.Nothing], bUniqueEntries: js.Any): Unit = js.native
   def arrayDiff(aOld: js.Any, aNew: js.Any, fnCompare: js.Any): Unit = js.native
   def arrayDiff(aOld: js.Any, aNew: js.Any, fnCompare: js.Any, bUniqueEntries: js.Any): Unit = js.native
   // A simple assertion mechanism that logs a message when a given condition is not met. 
@@ -66,6 +67,7 @@ trait JquerySap extends js.Object {
   def endsWithIgnoreCase(sString: js.Any, sEndString: js.Any): Unit = js.native
   // Compares the two given values for equality, especially takes care not to compare arrays and objects by reference: any, but compares their content. 
   def equal(a: js.Any, b: js.Any): Unit = js.native
+  def equal(a: js.Any, b: js.Any, maxDepth: js.UndefOr[scala.Nothing], contains: js.Any): Unit = js.native
   def equal(a: js.Any, b: js.Any, maxDepth: js.Any): Unit = js.native
   def equal(a: js.Any, b: js.Any, maxDepth: js.Any, contains: js.Any): Unit = js.native
   // This function escapes the reserved letters in Regular Expression 
@@ -83,6 +85,7 @@ trait JquerySap extends js.Object {
   def getModulePath(sModuleName: js.Any, sSuffix: js.Any): Unit = js.native
   // Returns a JavaScript object which is identified by a sequence of names. 
   def getObject(sName: js.Any): Unit = js.native
+  def getObject(sName: js.Any, iNoCreates: js.UndefOr[scala.Nothing], oContext: js.Any): Unit = js.native
   def getObject(sName: js.Any, iNoCreates: js.Any): Unit = js.native
   def getObject(sName: js.Any, iNoCreates: js.Any, oContext: js.Any): Unit = js.native
   // Determines the URL for a resource given its unified resource name. 
@@ -99,12 +102,30 @@ trait JquerySap extends js.Object {
   def hyphen(sString: js.Any): Unit = js.native
   // Includes the script (via <script>-tag) into the head for the specified sUrl and optional sId. 
   def includeScript(sUrl: js.Any): Unit = js.native
+  def includeScript(
+    sUrl: js.Any,
+    sId: js.UndefOr[scala.Nothing],
+    fnLoadCallback: js.UndefOr[scala.Nothing],
+    fnErrorCallback: js.Any
+  ): Unit = js.native
+  def includeScript(sUrl: js.Any, sId: js.UndefOr[scala.Nothing], fnLoadCallback: js.Any): Unit = js.native
+  def includeScript(sUrl: js.Any, sId: js.UndefOr[scala.Nothing], fnLoadCallback: js.Any, fnErrorCallback: js.Any): Unit = js.native
   def includeScript(sUrl: js.Any, sId: js.Any): Unit = js.native
+  def includeScript(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.UndefOr[scala.Nothing], fnErrorCallback: js.Any): Unit = js.native
   def includeScript(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any): Unit = js.native
   def includeScript(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any, fnErrorCallback: js.Any): Unit = js.native
   // Includes the specified stylesheet via a <link>-tag in the head of the current document. 
   def includeStyleSheet(sUrl: js.Any): Unit = js.native
+  def includeStyleSheet(
+    sUrl: js.Any,
+    sId: js.UndefOr[scala.Nothing],
+    fnLoadCallback: js.UndefOr[scala.Nothing],
+    fnErrorCallback: js.Any
+  ): Unit = js.native
+  def includeStyleSheet(sUrl: js.Any, sId: js.UndefOr[scala.Nothing], fnLoadCallback: js.Any): Unit = js.native
+  def includeStyleSheet(sUrl: js.Any, sId: js.UndefOr[scala.Nothing], fnLoadCallback: js.Any, fnErrorCallback: js.Any): Unit = js.native
   def includeStyleSheet(sUrl: js.Any, sId: js.Any): Unit = js.native
+  def includeStyleSheet(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.UndefOr[scala.Nothing], fnErrorCallback: js.Any): Unit = js.native
   def includeStyleSheet(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any): Unit = js.native
   def includeStyleSheet(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any, fnErrorCallback: js.Any): Unit = js.native
   // Does some basic modifications to the HTML page that make it more suitable for mobile apps. 
@@ -142,6 +163,7 @@ trait JquerySap extends js.Object {
   def resources(mParams: js.Any): Unit = js.native
   // Returns the size (width of the vertical / height of the horizontal) native browser scrollbars. 
   def scrollbarSize(): Unit = js.native
+  def scrollbarSize(sClasses: js.UndefOr[scala.Nothing], bForce: js.Any): Unit = js.native
   def scrollbarSize(sClasses: js.Any): Unit = js.native
   def scrollbarSize(sClasses: js.Any, bForce: js.Any): Unit = js.native
   // Serializes the specified XML document into a string representation. 

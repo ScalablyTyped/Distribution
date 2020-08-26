@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/utils", "deepMerge")
+@JSImport("grommet/es6/utils", "deepMerge")
 @js.native
 object deepMerge extends TopLevel[DeepMerge_]
 

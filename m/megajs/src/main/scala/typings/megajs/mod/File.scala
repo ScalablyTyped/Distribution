@@ -22,6 +22,7 @@ class File protected () extends js.Object {
   var size: Double = js.native
   var timestamp: Double = js.native
   def download(): Readable = js.native
+  def download(options: js.UndefOr[scala.Nothing], cb: js.Any): Readable = js.native
   def download(options: DownloadOptions): Readable = js.native
   def download(options: DownloadOptions, cb: js.Any): Readable = js.native
   def loadAttributes(): Readable = js.native

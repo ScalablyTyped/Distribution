@@ -36,6 +36,7 @@ object DefaultTheme extends js.Object {
   def buildUrls(reflection: DeclarationReflection, urls: js.Array[UrlMapping]): js.Array[UrlMapping] = js.native
   def getMapping(reflection: DeclarationReflection): js.UndefOr[TemplateMapping] = js.native
   def getUrl(reflection: Reflection): String = js.native
+  def getUrl(reflection: Reflection, relative: js.UndefOr[scala.Nothing], separator: String): String = js.native
   def getUrl(reflection: Reflection, relative: Reflection): String = js.native
   def getUrl(reflection: Reflection, relative: Reflection, separator: String): String = js.native
   def toStyleClass(str: String): String = js.native

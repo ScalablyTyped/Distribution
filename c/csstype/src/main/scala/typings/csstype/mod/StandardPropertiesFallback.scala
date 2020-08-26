@@ -4,20 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StandardPropertiesFallback[TLength]
-  extends StandardLonghandPropertiesFallback[TLength]
-     with StandardShorthandPropertiesFallback[TLength]
+@js.native
+trait StandardPropertiesFallback[TLength, TTime]
+  extends StandardLonghandPropertiesFallback[TLength, TTime]
+     with StandardShorthandPropertiesFallback[TLength, TTime]
 
 object StandardPropertiesFallback {
   @scala.inline
-  def apply[TLength](
-    StandardLonghandPropertiesFallback: StandardLonghandPropertiesFallback[TLength] = null,
-    StandardShorthandPropertiesFallback: StandardShorthandPropertiesFallback[TLength] = null
-  ): StandardPropertiesFallback[TLength] = {
+  def apply[TLength, TTime](): StandardPropertiesFallback[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (StandardLonghandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesFallback)
-    if (StandardShorthandPropertiesFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesFallback)
-    __obj.asInstanceOf[StandardPropertiesFallback[TLength]]
+    __obj.asInstanceOf[StandardPropertiesFallback[TLength, TTime]]
   }
 }
 

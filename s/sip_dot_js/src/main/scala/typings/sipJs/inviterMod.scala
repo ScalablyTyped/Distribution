@@ -1,6 +1,7 @@
 package typings.sipJs
 
 import typings.sipJs.apiSessionDescriptionHandlerMod.BodyAndContentType
+import typings.sipJs.coreMod.NameAddrHeader
 import typings.sipJs.coreMod.OutgoingRequestMessage
 import typings.sipJs.coreMod.URI
 import typings.sipJs.inviteMod.OutgoingInviteRequest
@@ -31,10 +32,6 @@ object inviterMod extends js.Object {
       * @internal
       */
     var _referred: js.UndefOr[Session] = js.native
-    /**
-      * Initial outgoing INVITE request message body.
-      */
-    val body: js.UndefOr[BodyAndContentType] = js.native
     var disposeEarlyMedia: js.Any = js.native
     /** True if dispose() has been called. */
     var disposed: js.Any = js.native
@@ -81,10 +78,6 @@ object inviterMod extends js.Object {
     /** Initial INVITE message provided to core to send. */
     var outgoingRequestMessage: js.Any = js.native
     /**
-      * Initial outgoing INVITE request message.
-      */
-    val request: OutgoingRequestMessage = js.native
-    /**
       * 13.2.1 Creating the Initial INVITE
       *
       * Since the initial INVITE represents a request outside of a dialog,
@@ -125,6 +118,10 @@ object inviterMod extends js.Object {
       */
     var sendInvite: js.Any = js.native
     /**
+      * Initial outgoing INVITE request message body.
+      */
+    def body: js.UndefOr[BodyAndContentType] = js.native
+    /**
       * Cancels the INVITE request.
       *
       * @remarks
@@ -141,6 +138,20 @@ object inviterMod extends js.Object {
     def cancel(): js.Promise[Unit] = js.native
     def cancel(options: InviterCancelOptions): js.Promise[Unit] = js.native
     def invite(options: InviterInviteOptions): js.Promise[OutgoingInviteRequest] = js.native
+    /**
+      * The identity of the local user.
+      */
+    @JSName("localIdentity")
+    def localIdentity_MInviter: NameAddrHeader = js.native
+    /**
+      * The identity of the remote user.
+      */
+    @JSName("remoteIdentity")
+    def remoteIdentity_MInviter: NameAddrHeader = js.native
+    /**
+      * Initial outgoing INVITE request message.
+      */
+    def request: OutgoingRequestMessage = js.native
   }
   
 }

@@ -11,12 +11,14 @@ trait EpicEditor extends js.Object {
   def enterFullscreen(): Unit = js.native
   def exitFullscreen(): Unit = js.native
   def exportFile(): js.Any = js.native
+  def exportFile(filename: js.UndefOr[scala.Nothing], `type`: String): js.Any = js.native
   def exportFile(filename: String): js.Any = js.native
   def exportFile(filename: String, `type`: String): js.Any = js.native
   def getElement(element: String): js.Any = js.native
   def getFiles(): js.Any = js.native
   def getFiles(filename: String): js.Any = js.native
   def importFile(): Unit = js.native
+  def importFile(filename: js.UndefOr[scala.Nothing], content: String): Unit = js.native
   def importFile(filename: String): Unit = js.native
   def importFile(filename: String, content: String): Unit = js.native
   def is(state: String): Boolean = js.native

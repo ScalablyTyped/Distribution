@@ -14,6 +14,12 @@ package object mediaconnectMod {
   type Algorithm = typings.awsSdk.mediaconnectMod._Algorithm | java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.mediaconnectMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type EntitlementStatus = typings.awsSdk.mediaconnectMod._EntitlementStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.speke_
     - typings.awsSdk.awsSdkStrings.`static-key`
     - java.lang.String

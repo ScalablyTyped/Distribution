@@ -13,13 +13,20 @@ import scala.scalajs.js.annotation._
 class Session ()
   extends typings.officeJsPreview.Excel.Session {
   def this(workbookUrl: String) = this()
+  def this(workbookUrl: js.UndefOr[scala.Nothing], requestHeaders: StringDictionary[String]) = this()
   def this(workbookUrl: String, requestHeaders: StringDictionary[String]) = this()
+  def this(
+    workbookUrl: js.UndefOr[scala.Nothing],
+    requestHeaders: js.UndefOr[scala.Nothing],
+    persisted: Boolean
+  ) = this()
+  def this(
+    workbookUrl: js.UndefOr[scala.Nothing],
+    requestHeaders: StringDictionary[String],
+    persisted: Boolean
+  ) = this()
+  def this(workbookUrl: String, requestHeaders: js.UndefOr[scala.Nothing], persisted: Boolean) = this()
   def this(workbookUrl: String, requestHeaders: StringDictionary[String], persisted: Boolean) = this()
-  /**
-    * Close the session.
-    */
-  /* CompleteClass */
-  override def close(): js.Promise[Unit] = js.native
 }
 
 /* static members */

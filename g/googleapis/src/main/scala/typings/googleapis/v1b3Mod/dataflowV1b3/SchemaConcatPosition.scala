@@ -23,11 +23,30 @@ trait SchemaConcatPosition extends js.Object {
 
 object SchemaConcatPosition {
   @scala.inline
-  def apply(index: js.UndefOr[Double] = js.undefined, position: SchemaPosition = null): SchemaConcatPosition = {
+  def apply(): SchemaConcatPosition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConcatPosition]
   }
+  @scala.inline
+  implicit class SchemaConcatPositionOps[Self <: SchemaConcatPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setPosition(value: SchemaPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+  }
+  
 }
 

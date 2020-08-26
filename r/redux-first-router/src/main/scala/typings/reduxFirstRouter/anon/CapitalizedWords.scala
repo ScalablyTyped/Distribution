@@ -10,42 +10,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CapitalizedWords[TState] extends js.Object {
-  var capitalizedWords: js.UndefOr[Boolean] = js.undefined
-  var coerceNumbers: js.UndefOr[Boolean] = js.undefined
-  var confirmLeave: js.UndefOr[ConfirmLeave] = js.undefined
-  var fromPath: js.UndefOr[js.Function2[/* path */ String, /* key */ js.UndefOr[String], String]] = js.undefined
-  var meta: js.UndefOr[Meta] = js.undefined
-  var navKey: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var thunk: js.UndefOr[RouteThunk[TState]] = js.undefined
-  var toPath: js.UndefOr[js.Function2[/* param */ String, /* key */ js.UndefOr[String], String]] = js.undefined
+  var capitalizedWords: js.UndefOr[Boolean] = js.native
+  var coerceNumbers: js.UndefOr[Boolean] = js.native
+  var confirmLeave: js.UndefOr[ConfirmLeave] = js.native
+  var fromPath: js.UndefOr[js.Function2[/* path */ String, /* key */ js.UndefOr[String], String]] = js.native
+  var meta: js.UndefOr[Meta] = js.native
+  var navKey: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var thunk: js.UndefOr[RouteThunk[TState]] = js.native
+  var toPath: js.UndefOr[js.Function2[/* param */ String, /* key */ js.UndefOr[String], String]] = js.native
 }
 
 object CapitalizedWords {
   @scala.inline
-  def apply[TState](
-    capitalizedWords: js.UndefOr[Boolean] = js.undefined,
-    coerceNumbers: js.UndefOr[Boolean] = js.undefined,
-    confirmLeave: (/* state */ js.Object, /* action */ js.Object) => Nullable[String] = null,
-    fromPath: (/* path */ String, /* key */ js.UndefOr[String]) => String = null,
-    meta: Meta = null,
-    navKey: String = null,
-    path: String = null,
-    thunk: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState]) => js.Any | js.Promise[js.Any] = null,
-    toPath: (/* param */ String, /* key */ js.UndefOr[String]) => String = null
-  ): CapitalizedWords[TState] = {
+  def apply[TState](): CapitalizedWords[TState] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capitalizedWords)) __obj.updateDynamic("capitalizedWords")(capitalizedWords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(coerceNumbers)) __obj.updateDynamic("coerceNumbers")(coerceNumbers.get.asInstanceOf[js.Any])
-    if (confirmLeave != null) __obj.updateDynamic("confirmLeave")(js.Any.fromFunction2(confirmLeave))
-    if (fromPath != null) __obj.updateDynamic("fromPath")(js.Any.fromFunction2(fromPath))
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (thunk != null) __obj.updateDynamic("thunk")(js.Any.fromFunction2(thunk))
-    if (toPath != null) __obj.updateDynamic("toPath")(js.Any.fromFunction2(toPath))
     __obj.asInstanceOf[CapitalizedWords[TState]]
   }
+  @scala.inline
+  implicit class CapitalizedWordsOps[Self <: CapitalizedWords[_], TState] (val x: Self with CapitalizedWords[TState]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapitalizedWords(value: Boolean): Self = this.set("capitalizedWords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapitalizedWords: Self = this.set("capitalizedWords", js.undefined)
+    @scala.inline
+    def setCoerceNumbers(value: Boolean): Self = this.set("coerceNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoerceNumbers: Self = this.set("coerceNumbers", js.undefined)
+    @scala.inline
+    def setConfirmLeave(value: (/* state */ js.Object, /* action */ js.Object) => Nullable[String]): Self = this.set("confirmLeave", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteConfirmLeave: Self = this.set("confirmLeave", js.undefined)
+    @scala.inline
+    def setFromPath(value: (/* path */ String, /* key */ js.UndefOr[String]) => String): Self = this.set("fromPath", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFromPath: Self = this.set("fromPath", js.undefined)
+    @scala.inline
+    def setMeta(value: Meta): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
+    @scala.inline
+    def setNavKey(value: String): Self = this.set("navKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavKey: Self = this.set("navKey", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setThunk(
+      value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState]) => js.Any | js.Promise[js.Any]
+    ): Self = this.set("thunk", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteThunk: Self = this.set("thunk", js.undefined)
+    @scala.inline
+    def setToPath(value: (/* param */ String, /* key */ js.UndefOr[String]) => String): Self = this.set("toPath", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteToPath: Self = this.set("toPath", js.undefined)
+  }
+  
 }
 

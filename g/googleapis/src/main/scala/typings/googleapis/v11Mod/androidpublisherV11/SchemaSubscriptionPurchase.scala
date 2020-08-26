@@ -34,18 +34,38 @@ trait SchemaSubscriptionPurchase extends js.Object {
 
 object SchemaSubscriptionPurchase {
   @scala.inline
-  def apply(
-    autoRenewing: js.UndefOr[Boolean] = js.undefined,
-    initiationTimestampMsec: String = null,
-    kind: String = null,
-    validUntilTimestampMsec: String = null
-  ): SchemaSubscriptionPurchase = {
+  def apply(): SchemaSubscriptionPurchase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRenewing)) __obj.updateDynamic("autoRenewing")(autoRenewing.get.asInstanceOf[js.Any])
-    if (initiationTimestampMsec != null) __obj.updateDynamic("initiationTimestampMsec")(initiationTimestampMsec.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (validUntilTimestampMsec != null) __obj.updateDynamic("validUntilTimestampMsec")(validUntilTimestampMsec.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionPurchase]
   }
+  @scala.inline
+  implicit class SchemaSubscriptionPurchaseOps[Self <: SchemaSubscriptionPurchase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRenewing(value: Boolean): Self = this.set("autoRenewing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRenewing: Self = this.set("autoRenewing", js.undefined)
+    @scala.inline
+    def setInitiationTimestampMsec(value: String): Self = this.set("initiationTimestampMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiationTimestampMsec: Self = this.set("initiationTimestampMsec", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setValidUntilTimestampMsec(value: String): Self = this.set("validUntilTimestampMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUntilTimestampMsec: Self = this.set("validUntilTimestampMsec", js.undefined)
+  }
+  
 }
 

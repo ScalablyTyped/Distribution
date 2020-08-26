@@ -7,42 +7,73 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.bankingAlias.BankingAliasData> */
+@js.native
 trait PartialBankingAliasData extends js.Object {
-  var Active: js.UndefOr[Boolean] = js.undefined
-  var Country: js.UndefOr[CountryISO] = js.undefined
-  var CreationDate: js.UndefOr[Double] = js.undefined
-  var CreditedUserId: js.UndefOr[String] = js.undefined
-  var Id: js.UndefOr[String] = js.undefined
-  var OwnerName: js.UndefOr[String] = js.undefined
-  var Tag: js.UndefOr[String] = js.undefined
-  var Type: js.UndefOr[BankingAliasType] = js.undefined
-  var WalletId: js.UndefOr[String] = js.undefined
+  var Active: js.UndefOr[Boolean] = js.native
+  var Country: js.UndefOr[CountryISO] = js.native
+  var CreationDate: js.UndefOr[Double] = js.native
+  var CreditedUserId: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.native
+  var OwnerName: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[BankingAliasType] = js.native
+  var WalletId: js.UndefOr[String] = js.native
 }
 
 object PartialBankingAliasData {
   @scala.inline
-  def apply(
-    Active: js.UndefOr[Boolean] = js.undefined,
-    Country: CountryISO = null,
-    CreationDate: js.UndefOr[Double] = js.undefined,
-    CreditedUserId: String = null,
-    Id: String = null,
-    OwnerName: String = null,
-    Tag: String = null,
-    Type: BankingAliasType = null,
-    WalletId: String = null
-  ): PartialBankingAliasData = {
+  def apply(): PartialBankingAliasData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (!js.isUndefined(CreationDate)) __obj.updateDynamic("CreationDate")(CreationDate.get.asInstanceOf[js.Any])
-    if (CreditedUserId != null) __obj.updateDynamic("CreditedUserId")(CreditedUserId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (OwnerName != null) __obj.updateDynamic("OwnerName")(OwnerName.asInstanceOf[js.Any])
-    if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (WalletId != null) __obj.updateDynamic("WalletId")(WalletId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialBankingAliasData]
   }
+  @scala.inline
+  implicit class PartialBankingAliasDataOps[Self <: PartialBankingAliasData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("Active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("Active", js.undefined)
+    @scala.inline
+    def setCountry(value: CountryISO): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setCreditedUserId(value: String): Self = this.set("CreditedUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreditedUserId: Self = this.set("CreditedUserId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setOwnerName(value: String): Self = this.set("OwnerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerName: Self = this.set("OwnerName", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("Tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("Tag", js.undefined)
+    @scala.inline
+    def setType(value: BankingAliasType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setWalletId(value: String): Self = this.set("WalletId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWalletId: Self = this.set("WalletId", js.undefined)
+  }
+  
 }
 

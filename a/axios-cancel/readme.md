@@ -12,7 +12,7 @@ Simplify cancellation of http requests when using the awesome axios library
 | Keywords           | axios, http, cancel, promise |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 187893 |
+| # downloads        | 190933 |
 | # stars            | 0 |
 
 ## Links

@@ -24,12 +24,7 @@ object mod extends js.Object {
     extends typings.redis.mod.ParserError
   
   @js.native
-  class RedisError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class RedisError () extends Error
   
   @js.native
   class ReplyError ()
@@ -42,6 +37,7 @@ object mod extends js.Object {
   def createClient(): typings.redis.mod.RedisClient = js.native
   def createClient(options: ClientOpts): typings.redis.mod.RedisClient = js.native
   def createClient(port: Double): typings.redis.mod.RedisClient = js.native
+  def createClient(port: Double, host: js.UndefOr[scala.Nothing], options: ClientOpts): typings.redis.mod.RedisClient = js.native
   def createClient(port: Double, host: String): typings.redis.mod.RedisClient = js.native
   def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
   def createClient(unix_socket: String): typings.redis.mod.RedisClient = js.native

@@ -20,6 +20,14 @@ object relayModernSelectorMod extends js.Object {
   def areEqualSelectors(thisSelector: SingularReaderSelector, thatSelector: SingularReaderSelector): Boolean = js.native
   def createNormalizationSelector(node: NormalizationSelectableNode, dataID: DataID, variables: Variables): NormalizationSelector = js.native
   def createReaderSelector(fragment: ReaderFragment, dataID: DataID, variables: Variables, request: RequestDescriptor): SingularReaderSelector = js.native
+  def createReaderSelector(
+    fragment: ReaderFragment,
+    dataID: DataID,
+    variables: Variables,
+    request: RequestDescriptor,
+     // default: `false`
+  isWithinUnmatchedTypeRefinement: Boolean
+  ): SingularReaderSelector = js.native
   def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Any): DataID | js.Array[DataID] = js.native
   def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Array[_]): DataID | js.Array[DataID] = js.native
   def getDataIDsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[DataID | js.Array[DataID]] = js.native

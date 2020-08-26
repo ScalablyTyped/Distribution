@@ -14,10 +14,26 @@ trait InvokeDeviceMethodResponse extends js.Object {
 
 object InvokeDeviceMethodResponse {
   @scala.inline
-  def apply(DeviceMethodResponse: string = null): InvokeDeviceMethodResponse = {
+  def apply(): InvokeDeviceMethodResponse = {
     val __obj = js.Dynamic.literal()
-    if (DeviceMethodResponse != null) __obj.updateDynamic("DeviceMethodResponse")(DeviceMethodResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeDeviceMethodResponse]
   }
+  @scala.inline
+  implicit class InvokeDeviceMethodResponseOps[Self <: InvokeDeviceMethodResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceMethodResponse(value: string): Self = this.set("DeviceMethodResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceMethodResponse: Self = this.set("DeviceMethodResponse", js.undefined)
+  }
+  
 }
 

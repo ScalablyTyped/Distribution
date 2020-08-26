@@ -14,10 +14,28 @@ trait PredictorExecutionDetails extends js.Object {
 
 object PredictorExecutionDetails {
   @scala.inline
-  def apply(PredictorExecutions: PredictorExecutions = null): PredictorExecutionDetails = {
+  def apply(): PredictorExecutionDetails = {
     val __obj = js.Dynamic.literal()
-    if (PredictorExecutions != null) __obj.updateDynamic("PredictorExecutions")(PredictorExecutions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictorExecutionDetails]
   }
+  @scala.inline
+  implicit class PredictorExecutionDetailsOps[Self <: PredictorExecutionDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPredictorExecutionsVarargs(value: PredictorExecution*): Self = this.set("PredictorExecutions", js.Array(value :_*))
+    @scala.inline
+    def setPredictorExecutions(value: PredictorExecutions): Self = this.set("PredictorExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorExecutions: Self = this.set("PredictorExecutions", js.undefined)
+  }
+  
 }
 

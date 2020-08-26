@@ -22,7 +22,6 @@ object testsOrdersMod extends js.Object {
     def Test7(): js.Promise[Unit] = js.native
     def Test8(): js.Promise[Unit] = js.native
     def Test9(): js.Promise[Unit] = js.native
-    /* private */ def create(): js.Any = js.native
     /* private */ def create(scheduleForDeletion: js.Any): js.Any = js.native
     /* private */ def teardownAsync(): js.Any = js.native
   }

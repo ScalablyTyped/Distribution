@@ -12,8 +12,10 @@ class ReadVarExpr protected () extends Expression {
   def this(name: BuiltinVar) = this()
   def this(name: String, `type`: Type) = this()
   def this(name: BuiltinVar, `type`: Type) = this()
+  def this(name: String, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(name: String, `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(name: String, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  def this(name: BuiltinVar, `type`: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(name: BuiltinVar, `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(name: BuiltinVar, `type`: Type, sourceSpan: ParseSourceSpan) = this()
   var builtin: BuiltinVar | Null = js.native

@@ -66,38 +66,78 @@ trait Route extends js.Object {
 
 object Route {
   @scala.inline
-  def apply(
-    DestinationCidrBlock: String = null,
-    DestinationIpv6CidrBlock: String = null,
-    DestinationPrefixListId: String = null,
-    EgressOnlyInternetGatewayId: String = null,
-    GatewayId: String = null,
-    InstanceId: String = null,
-    InstanceOwnerId: String = null,
-    LocalGatewayId: String = null,
-    NatGatewayId: String = null,
-    NetworkInterfaceId: String = null,
-    Origin: RouteOrigin = null,
-    State: RouteState = null,
-    TransitGatewayId: String = null,
-    VpcPeeringConnectionId: String = null
-  ): Route = {
+  def apply(): Route = {
     val __obj = js.Dynamic.literal()
-    if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock.asInstanceOf[js.Any])
-    if (DestinationIpv6CidrBlock != null) __obj.updateDynamic("DestinationIpv6CidrBlock")(DestinationIpv6CidrBlock.asInstanceOf[js.Any])
-    if (DestinationPrefixListId != null) __obj.updateDynamic("DestinationPrefixListId")(DestinationPrefixListId.asInstanceOf[js.Any])
-    if (EgressOnlyInternetGatewayId != null) __obj.updateDynamic("EgressOnlyInternetGatewayId")(EgressOnlyInternetGatewayId.asInstanceOf[js.Any])
-    if (GatewayId != null) __obj.updateDynamic("GatewayId")(GatewayId.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceOwnerId != null) __obj.updateDynamic("InstanceOwnerId")(InstanceOwnerId.asInstanceOf[js.Any])
-    if (LocalGatewayId != null) __obj.updateDynamic("LocalGatewayId")(LocalGatewayId.asInstanceOf[js.Any])
-    if (NatGatewayId != null) __obj.updateDynamic("NatGatewayId")(NatGatewayId.asInstanceOf[js.Any])
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
-    if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])
-    if (VpcPeeringConnectionId != null) __obj.updateDynamic("VpcPeeringConnectionId")(VpcPeeringConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
+  @scala.inline
+  implicit class RouteOps[Self <: Route] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: String): Self = this.set("DestinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("DestinationCidrBlock", js.undefined)
+    @scala.inline
+    def setDestinationIpv6CidrBlock(value: String): Self = this.set("DestinationIpv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationIpv6CidrBlock: Self = this.set("DestinationIpv6CidrBlock", js.undefined)
+    @scala.inline
+    def setDestinationPrefixListId(value: String): Self = this.set("DestinationPrefixListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPrefixListId: Self = this.set("DestinationPrefixListId", js.undefined)
+    @scala.inline
+    def setEgressOnlyInternetGatewayId(value: String): Self = this.set("EgressOnlyInternetGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEgressOnlyInternetGatewayId: Self = this.set("EgressOnlyInternetGatewayId", js.undefined)
+    @scala.inline
+    def setGatewayId(value: String): Self = this.set("GatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayId: Self = this.set("GatewayId", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceOwnerId(value: String): Self = this.set("InstanceOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceOwnerId: Self = this.set("InstanceOwnerId", js.undefined)
+    @scala.inline
+    def setLocalGatewayId(value: String): Self = this.set("LocalGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayId: Self = this.set("LocalGatewayId", js.undefined)
+    @scala.inline
+    def setNatGatewayId(value: String): Self = this.set("NatGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNatGatewayId: Self = this.set("NatGatewayId", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: String): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    @scala.inline
+    def setOrigin(value: RouteOrigin): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("Origin", js.undefined)
+    @scala.inline
+    def setState(value: RouteState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: String): Self = this.set("TransitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("TransitGatewayId", js.undefined)
+    @scala.inline
+    def setVpcPeeringConnectionId(value: String): Self = this.set("VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcPeeringConnectionId: Self = this.set("VpcPeeringConnectionId", js.undefined)
+  }
+  
 }
 

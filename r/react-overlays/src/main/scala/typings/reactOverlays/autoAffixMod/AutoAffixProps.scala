@@ -1,64 +1,52 @@
 package typings.reactOverlays.autoAffixMod
 
-import typings.react.mod.CSSProperties
 import typings.react.mod.ReactInstance
 import typings.reactOverlays.affixMod.AffixProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoAffixProps extends AffixProps {
   /**
     * Automatically set width when affixed
     */
-  var autoWidth: js.UndefOr[Boolean] = js.undefined
+  var autoWidth: js.UndefOr[Boolean] = js.native
   /**
     * The logical container node or component for determining offset from bottom
     * of viewport, or a function that returns it
     */
-  var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance]] = js.undefined
+  var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance]] = js.native
 }
 
 object AutoAffixProps {
   @scala.inline
-  def apply(
-    affixClassName: String = null,
-    affixStyle: CSSProperties = null,
-    autoWidth: js.UndefOr[Boolean] = js.undefined,
-    bottomClassName: String = null,
-    bottomStyle: CSSProperties = null,
-    container: ReactInstance | js.Function0[ReactInstance] = null,
-    offsetBottom: js.UndefOr[Double] = js.undefined,
-    offsetTop: js.UndefOr[Double] = js.undefined,
-    onAffix: () => Unit = null,
-    onAffixBottom: () => Unit = null,
-    onAffixTop: () => Unit = null,
-    onAffixed: () => Unit = null,
-    onAffixedBottom: () => Unit = null,
-    onAffixedTop: () => Unit = null,
-    topClassName: String = null,
-    topStyle: CSSProperties = null,
-    viewportOffsetTop: js.UndefOr[Double] = js.undefined
-  ): AutoAffixProps = {
+  def apply(): AutoAffixProps = {
     val __obj = js.Dynamic.literal()
-    if (affixClassName != null) __obj.updateDynamic("affixClassName")(affixClassName.asInstanceOf[js.Any])
-    if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.get.asInstanceOf[js.Any])
-    if (bottomClassName != null) __obj.updateDynamic("bottomClassName")(bottomClassName.asInstanceOf[js.Any])
-    if (bottomStyle != null) __obj.updateDynamic("bottomStyle")(bottomStyle.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetBottom)) __obj.updateDynamic("offsetBottom")(offsetBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetTop)) __obj.updateDynamic("offsetTop")(offsetTop.get.asInstanceOf[js.Any])
-    if (onAffix != null) __obj.updateDynamic("onAffix")(js.Any.fromFunction0(onAffix))
-    if (onAffixBottom != null) __obj.updateDynamic("onAffixBottom")(js.Any.fromFunction0(onAffixBottom))
-    if (onAffixTop != null) __obj.updateDynamic("onAffixTop")(js.Any.fromFunction0(onAffixTop))
-    if (onAffixed != null) __obj.updateDynamic("onAffixed")(js.Any.fromFunction0(onAffixed))
-    if (onAffixedBottom != null) __obj.updateDynamic("onAffixedBottom")(js.Any.fromFunction0(onAffixedBottom))
-    if (onAffixedTop != null) __obj.updateDynamic("onAffixedTop")(js.Any.fromFunction0(onAffixedTop))
-    if (topClassName != null) __obj.updateDynamic("topClassName")(topClassName.asInstanceOf[js.Any])
-    if (topStyle != null) __obj.updateDynamic("topStyle")(topStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewportOffsetTop)) __obj.updateDynamic("viewportOffsetTop")(viewportOffsetTop.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoAffixProps]
   }
+  @scala.inline
+  implicit class AutoAffixPropsOps[Self <: AutoAffixProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    @scala.inline
+    def setContainerFunction0(value: () => ReactInstance): Self = this.set("container", js.Any.fromFunction0(value))
+    @scala.inline
+    def setContainer(value: ReactInstance | js.Function0[ReactInstance]): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+  }
+  
 }
 

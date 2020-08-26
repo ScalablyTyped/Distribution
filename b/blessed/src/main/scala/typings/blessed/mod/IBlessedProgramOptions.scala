@@ -6,48 +6,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBlessedProgramOptions extends js.Object {
-  var buffer: js.UndefOr[Boolean] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var dump: js.UndefOr[Boolean] = js.undefined
-  var input: js.UndefOr[Readable] = js.undefined
-  var log: js.UndefOr[String] = js.undefined
-  var output: js.UndefOr[Writable] = js.undefined
-  var resizeTimeout: js.UndefOr[Boolean] = js.undefined
-  var term: js.UndefOr[String] = js.undefined
-  var terminal: js.UndefOr[String] = js.undefined
-  var tput: js.UndefOr[String] = js.undefined
-  var zero: js.UndefOr[Boolean] = js.undefined
+  var buffer: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var dump: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Readable] = js.native
+  var log: js.UndefOr[String] = js.native
+  var output: js.UndefOr[Writable] = js.native
+  var resizeTimeout: js.UndefOr[Boolean] = js.native
+  var term: js.UndefOr[String] = js.native
+  var terminal: js.UndefOr[String] = js.native
+  var tput: js.UndefOr[String] = js.native
+  var zero: js.UndefOr[Boolean] = js.native
 }
 
 object IBlessedProgramOptions {
   @scala.inline
-  def apply(
-    buffer: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dump: js.UndefOr[Boolean] = js.undefined,
-    input: Readable = null,
-    log: String = null,
-    output: Writable = null,
-    resizeTimeout: js.UndefOr[Boolean] = js.undefined,
-    term: String = null,
-    terminal: String = null,
-    tput: String = null,
-    zero: js.UndefOr[Boolean] = js.undefined
-  ): IBlessedProgramOptions = {
+  def apply(): IBlessedProgramOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dump)) __obj.updateDynamic("dump")(dump.get.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeTimeout)) __obj.updateDynamic("resizeTimeout")(resizeTimeout.get.asInstanceOf[js.Any])
-    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
-    if (terminal != null) __obj.updateDynamic("terminal")(terminal.asInstanceOf[js.Any])
-    if (tput != null) __obj.updateDynamic("tput")(tput.asInstanceOf[js.Any])
-    if (!js.isUndefined(zero)) __obj.updateDynamic("zero")(zero.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlessedProgramOptions]
   }
+  @scala.inline
+  implicit class IBlessedProgramOptionsOps[Self <: IBlessedProgramOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuffer(value: Boolean): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDump(value: Boolean): Self = this.set("dump", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDump: Self = this.set("dump", js.undefined)
+    @scala.inline
+    def setInput(value: Readable): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setLog(value: String): Self = this.set("log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setOutput(value: Writable): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setResizeTimeout(value: Boolean): Self = this.set("resizeTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeTimeout: Self = this.set("resizeTimeout", js.undefined)
+    @scala.inline
+    def setTerm(value: String): Self = this.set("term", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerm: Self = this.set("term", js.undefined)
+    @scala.inline
+    def setTerminal(value: String): Self = this.set("terminal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminal: Self = this.set("terminal", js.undefined)
+    @scala.inline
+    def setTput(value: String): Self = this.set("tput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTput: Self = this.set("tput", js.undefined)
+    @scala.inline
+    def setZero(value: Boolean): Self = this.set("zero", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZero: Self = this.set("zero", js.undefined)
+  }
+  
 }
 

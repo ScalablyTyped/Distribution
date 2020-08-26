@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object waypoint extends js.Object {
   def apply(latLng: LatLng_): Waypoint_ = js.native
+  def apply(latLng: LatLng_, name: js.UndefOr[scala.Nothing], options: WaypointOptions): Waypoint_ = js.native
   def apply(latLng: LatLng_, name: String): Waypoint_ = js.native
   def apply(latLng: LatLng_, name: String, options: WaypointOptions): Waypoint_ = js.native
 }

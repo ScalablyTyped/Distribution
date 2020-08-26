@@ -48,9 +48,6 @@ class WriteTreeRef protected () extends js.Object {
     * @return {?Node}
     */
   def calcCompleteChild(childKey: String, existingServerCache: CacheNode): Node | Null = js.native
-  def calcCompleteEventCache(): Node | Null = js.native
-  def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
-  def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: js.Array[Double], includeHiddenWrites: Boolean): Node | Null = js.native
   /**
     * If possible, returns a complete event cache, using the underlying server data if possible. In addition, can be used
     * to get a cache that includes hidden writes, and excludes arbitrary writes. Note that customizing the returned node
@@ -61,10 +58,22 @@ class WriteTreeRef protected () extends js.Object {
     * @param {boolean=} includeHiddenWrites Defaults to false, whether or not to layer on writes with visible set to false
     * @return {?Node}
     */
+  def calcCompleteEventCache(): Node | Null = js.native
+  def calcCompleteEventCache(
+    completeServerCache: Null,
+    writeIdsToExclude: js.UndefOr[scala.Nothing],
+    includeHiddenWrites: Boolean
+  ): Node | Null = js.native
+  def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
+  def calcCompleteEventCache(completeServerCache: Null, writeIdsToExclude: js.Array[Double], includeHiddenWrites: Boolean): Node | Null = js.native
   def calcCompleteEventCache(completeServerCache: Node): Node | Null = js.native
+  def calcCompleteEventCache(
+    completeServerCache: Node,
+    writeIdsToExclude: js.UndefOr[scala.Nothing],
+    includeHiddenWrites: Boolean
+  ): Node | Null = js.native
   def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: js.Array[Double]): Node | Null = js.native
   def calcCompleteEventCache(completeServerCache: Node, writeIdsToExclude: js.Array[Double], includeHiddenWrites: Boolean): Node | Null = js.native
-  def calcCompleteEventChildren(): ChildrenNode = js.native
   /**
     * If possible, returns a children node containing all of the complete children we have data for. The returned data is a
     * mix of the given server data and write data.
@@ -72,10 +81,8 @@ class WriteTreeRef protected () extends js.Object {
     * @param {?ChildrenNode} completeServerChildren
     * @return {!ChildrenNode}
     */
+  def calcCompleteEventChildren(): ChildrenNode = js.native
   def calcCompleteEventChildren(completeServerChildren: ChildrenNode): ChildrenNode = js.native
-  def calcEventCacheAfterServerOverwrite(path: Path): Node | Null = js.native
-  def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Null, existingServerSnap: Node): Node | Null = js.native
-  def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Node): Node | Null = js.native
   /**
     * Given that either the underlying server data has updated or the outstanding writes have updated, determine what,
     * if anything, needs to be applied to the event cache.
@@ -95,6 +102,9 @@ class WriteTreeRef protected () extends js.Object {
     * @param {?Node} existingServerSnap
     * @return {?Node}
     */
+  def calcEventCacheAfterServerOverwrite(path: Path): Node | Null = js.native
+  def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Null, existingServerSnap: Node): Node | Null = js.native
+  def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Node): Node | Null = js.native
   def calcEventCacheAfterServerOverwrite(path: Path, existingEventSnap: Node, existingServerSnap: Node): Node | Null = js.native
   def calcIndexedSlice(completeServerData: Null, startPost: NamedNode, count: Double, reverse: Boolean, index: Index): js.Array[NamedNode] = js.native
   /**

@@ -25,9 +25,11 @@ object mod extends js.Object {
   def appendRelayToken(uri: String, key_name: String, key: String, expiry: Double): String = js.native
   def createRelayBaseUri(serviceBusNamespace: String, path: String): String = js.native
   def createRelayListenUri(serviceBusNamespace: String, path: String): String = js.native
+  def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.UndefOr[scala.Nothing], id: js.Any): String = js.native
   def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.Any): String = js.native
   def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.Any, id: js.Any): String = js.native
   def createRelaySendUri(serviceBusNamespace: String, path: String): String = js.native
+  def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.UndefOr[scala.Nothing], id: js.Any): String = js.native
   def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.Any): String = js.native
   def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.Any, id: js.Any): String = js.native
   def createRelayToken(uri: String, key_name: String, key: String): String = js.native

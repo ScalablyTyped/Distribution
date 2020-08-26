@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jointjs" : "3.0.4"
+      "jointjs" : "3.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jointjs" : "3.0.4"
+      "jointjs" : "3.2.0"
     }
   ],
   "compile-devDependencies" : [

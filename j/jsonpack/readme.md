@@ -12,7 +12,7 @@ A compression algorithm for JSON
 | Keywords           | compress, json |
 | # releases         | 0 |
 | # dependents       | 25 |
-| # downloads        | 236348 |
+| # downloads        | 242171 |
 | # stars            | 7 |
 
 ## Links

@@ -23,9 +23,13 @@ class CustomerGateway protected () extends CustomResource {
   def this(name: String, args: CustomerGatewayArgs) = this()
   def this(name: String, args: CustomerGatewayArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the customer gateway.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
     */
-  val bgpAsn: Output_[Double] = js.native
+  val bgpAsn: Output_[String] = js.native
   /**
     * The IP address of the gateway's Internet-routable external interface.
     */
@@ -33,7 +37,7 @@ class CustomerGateway protected () extends CustomResource {
   /**
     * Tags to apply to the gateway.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The type of customer gateway. The only type AWS
     * supports at this time is "ipsec.1".
@@ -52,8 +56,10 @@ object CustomerGateway extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): CustomerGateway = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CustomerGateway = js.native
   def get(name: String, id: Input[ID], state: CustomerGatewayState): CustomerGateway = js.native
   def get(name: String, id: Input[ID], state: CustomerGatewayState, opts: CustomResourceOptions): CustomerGateway = js.native
   /**

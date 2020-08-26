@@ -47,6 +47,16 @@ class Registry protected () extends js.Object {
   def resolver(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Contract] = js.native
   def resolver(name: String, callback: js.Function2[/* error */ Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
   def setOwner(name: String, address: String): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
+  def setOwner(
+    name: String,
+    address: String,
+    txConfig: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* error */ Error | TransactionRevertInstructionError, 
+      /* receipt */ TransactionReceipt, 
+      Unit
+    ]
+  ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setOwner(name: String, address: String, txConfig: TransactionConfig): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setOwner(
     name: String,
@@ -59,6 +69,16 @@ class Registry protected () extends js.Object {
     ]
   ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setResolver(name: String, address: String): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
+  def setResolver(
+    name: String,
+    address: String,
+    txConfig: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* error */ Error | TransactionRevertInstructionError, 
+      /* receipt */ TransactionReceipt, 
+      Unit
+    ]
+  ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setResolver(name: String, address: String, txConfig: TransactionConfig): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setResolver(
     name: String,
@@ -71,6 +91,17 @@ class Registry protected () extends js.Object {
     ]
   ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setSubnodeOwner(name: String, label: String, address: String): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
+  def setSubnodeOwner(
+    name: String,
+    label: String,
+    address: String,
+    txConfig: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* error */ Error | TransactionRevertInstructionError, 
+      /* receipt */ TransactionReceipt, 
+      Unit
+    ]
+  ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setSubnodeOwner(name: String, label: String, address: String, txConfig: TransactionConfig): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setSubnodeOwner(
     name: String,
@@ -84,6 +115,16 @@ class Registry protected () extends js.Object {
     ]
   ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setTTL(name: String, ttl: String): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
+  def setTTL(
+    name: String,
+    ttl: String,
+    txConfig: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* error */ Error | TransactionRevertInstructionError, 
+      /* receipt */ TransactionReceipt, 
+      Unit
+    ]
+  ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setTTL(name: String, ttl: String, txConfig: TransactionConfig): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setTTL(
     name: String,
@@ -96,6 +137,16 @@ class Registry protected () extends js.Object {
     ]
   ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setTTL(name: String, ttl: Double): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
+  def setTTL(
+    name: String,
+    ttl: Double,
+    txConfig: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* error */ Error | TransactionRevertInstructionError, 
+      /* receipt */ TransactionReceipt, 
+      Unit
+    ]
+  ): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setTTL(name: String, ttl: Double, txConfig: TransactionConfig): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
   def setTTL(
     name: String,

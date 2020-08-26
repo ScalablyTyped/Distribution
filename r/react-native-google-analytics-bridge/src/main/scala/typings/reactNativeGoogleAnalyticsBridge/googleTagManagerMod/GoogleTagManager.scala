@@ -14,5 +14,6 @@ import scala.scalajs.js.annotation._
   *   .then(() => GoogleTagManager.stringForKey("pack"))
   *   .then(str => console.log("Pack: ", str));
   */
+@js.native
 trait GoogleTagManager extends js.Object
 

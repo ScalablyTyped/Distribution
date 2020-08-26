@@ -21,11 +21,30 @@ trait SchemaFilter extends js.Object {
 
 object SchemaFilter {
   @scala.inline
-  def apply(compositeFilter: SchemaCompositeFilter = null, valueFilter: SchemaValueFilter = null): SchemaFilter = {
+  def apply(): SchemaFilter = {
     val __obj = js.Dynamic.literal()
-    if (compositeFilter != null) __obj.updateDynamic("compositeFilter")(compositeFilter.asInstanceOf[js.Any])
-    if (valueFilter != null) __obj.updateDynamic("valueFilter")(valueFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFilter]
   }
+  @scala.inline
+  implicit class SchemaFilterOps[Self <: SchemaFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompositeFilter(value: SchemaCompositeFilter): Self = this.set("compositeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompositeFilter: Self = this.set("compositeFilter", js.undefined)
+    @scala.inline
+    def setValueFilter(value: SchemaValueFilter): Self = this.set("valueFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueFilter: Self = this.set("valueFilter", js.undefined)
+  }
+  
 }
 

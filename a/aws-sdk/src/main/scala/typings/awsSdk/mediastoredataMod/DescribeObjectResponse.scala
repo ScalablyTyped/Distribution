@@ -30,20 +30,42 @@ trait DescribeObjectResponse extends js.Object {
 
 object DescribeObjectResponse {
   @scala.inline
-  def apply(
-    CacheControl: StringPrimitive = null,
-    ContentLength: js.UndefOr[NonNegativeLong] = js.undefined,
-    ContentType: ContentType = null,
-    ETag: ETag = null,
-    LastModified: TimeStamp = null
-  ): DescribeObjectResponse = {
+  def apply(): DescribeObjectResponse = {
     val __obj = js.Dynamic.literal()
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeObjectResponse]
   }
+  @scala.inline
+  implicit class DescribeObjectResponseOps[Self <: DescribeObjectResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheControl(value: StringPrimitive): Self = this.set("CacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("CacheControl", js.undefined)
+    @scala.inline
+    def setContentLength(value: NonNegativeLong): Self = this.set("ContentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLength: Self = this.set("ContentLength", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setETag(value: ETag): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLastModified(value: TimeStamp): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+  }
+  
 }
 

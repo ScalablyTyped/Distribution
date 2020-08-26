@@ -14,10 +14,26 @@ trait CodeSigningSignature extends js.Object {
 
 object CodeSigningSignature {
   @scala.inline
-  def apply(inlineDocument: Signature = null): CodeSigningSignature = {
+  def apply(): CodeSigningSignature = {
     val __obj = js.Dynamic.literal()
-    if (inlineDocument != null) __obj.updateDynamic("inlineDocument")(inlineDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSigningSignature]
   }
+  @scala.inline
+  implicit class CodeSigningSignatureOps[Self <: CodeSigningSignature] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInlineDocument(value: Signature): Self = this.set("inlineDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineDocument: Self = this.set("inlineDocument", js.undefined)
+  }
+  
 }
 

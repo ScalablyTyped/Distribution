@@ -12,7 +12,7 @@ Collaborative editing for ProseMirror
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 13 |
-| # downloads        | 717866 |
+| # downloads        | 774000 |
 | # stars            | 0 |
 
 ## Links

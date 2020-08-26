@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Paragraph")
+@JSImport("grommet/es6", "Paragraph")
 @js.native
 object Paragraph extends TopLevel[
       FC[

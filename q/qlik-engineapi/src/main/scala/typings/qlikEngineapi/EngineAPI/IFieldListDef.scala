@@ -7,57 +7,84 @@ import scala.scalajs.js.annotation._
 /**
   * Defines the fields to show.
   */
+@js.native
 trait IFieldListDef extends js.Object {
   /**
     * Shows the fields defined on the fly if set to true.
     */
-  var qShowDefinitionOnly: js.UndefOr[Boolean] = js.undefined
+  var qShowDefinitionOnly: js.UndefOr[Boolean] = js.native
   /**
     * Shows the fields and derived fields if set to true.
     */
-  var qShowDerivedFields: js.UndefOr[Boolean] = js.undefined
+  var qShowDerivedFields: js.UndefOr[Boolean] = js.native
   /**
     * Shows the hidden fields if set to true.
     */
-  var qShowHidden: js.UndefOr[Boolean] = js.undefined
+  var qShowHidden: js.UndefOr[Boolean] = js.native
   /**
     * Shows the Direct Discovery measure fields if set to true.
     */
-  var qShowImplicit: js.UndefOr[Boolean] = js.undefined
+  var qShowImplicit: js.UndefOr[Boolean] = js.native
   /**
     * Show the semantic fields if set to true.
     */
-  var qShowSemantic: js.UndefOr[Boolean] = js.undefined
+  var qShowSemantic: js.UndefOr[Boolean] = js.native
   /**
     * Shows the tables and fields present in the data model viewer if set to true.
     */
-  var qShowSrcTables: js.UndefOr[Boolean] = js.undefined
+  var qShowSrcTables: js.UndefOr[Boolean] = js.native
   /**
     * Shows the system tables if set to true.
     */
-  var qShowSystem: js.UndefOr[Boolean] = js.undefined
+  var qShowSystem: js.UndefOr[Boolean] = js.native
 }
 
 object IFieldListDef {
   @scala.inline
-  def apply(
-    qShowDefinitionOnly: js.UndefOr[Boolean] = js.undefined,
-    qShowDerivedFields: js.UndefOr[Boolean] = js.undefined,
-    qShowHidden: js.UndefOr[Boolean] = js.undefined,
-    qShowImplicit: js.UndefOr[Boolean] = js.undefined,
-    qShowSemantic: js.UndefOr[Boolean] = js.undefined,
-    qShowSrcTables: js.UndefOr[Boolean] = js.undefined,
-    qShowSystem: js.UndefOr[Boolean] = js.undefined
-  ): IFieldListDef = {
+  def apply(): IFieldListDef = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(qShowDefinitionOnly)) __obj.updateDynamic("qShowDefinitionOnly")(qShowDefinitionOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowDerivedFields)) __obj.updateDynamic("qShowDerivedFields")(qShowDerivedFields.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowHidden)) __obj.updateDynamic("qShowHidden")(qShowHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowImplicit)) __obj.updateDynamic("qShowImplicit")(qShowImplicit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowSemantic)) __obj.updateDynamic("qShowSemantic")(qShowSemantic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowSrcTables)) __obj.updateDynamic("qShowSrcTables")(qShowSrcTables.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(qShowSystem)) __obj.updateDynamic("qShowSystem")(qShowSystem.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldListDef]
   }
+  @scala.inline
+  implicit class IFieldListDefOps[Self <: IFieldListDef] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQShowDefinitionOnly(value: Boolean): Self = this.set("qShowDefinitionOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowDefinitionOnly: Self = this.set("qShowDefinitionOnly", js.undefined)
+    @scala.inline
+    def setQShowDerivedFields(value: Boolean): Self = this.set("qShowDerivedFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowDerivedFields: Self = this.set("qShowDerivedFields", js.undefined)
+    @scala.inline
+    def setQShowHidden(value: Boolean): Self = this.set("qShowHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowHidden: Self = this.set("qShowHidden", js.undefined)
+    @scala.inline
+    def setQShowImplicit(value: Boolean): Self = this.set("qShowImplicit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowImplicit: Self = this.set("qShowImplicit", js.undefined)
+    @scala.inline
+    def setQShowSemantic(value: Boolean): Self = this.set("qShowSemantic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowSemantic: Self = this.set("qShowSemantic", js.undefined)
+    @scala.inline
+    def setQShowSrcTables(value: Boolean): Self = this.set("qShowSrcTables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowSrcTables: Self = this.set("qShowSrcTables", js.undefined)
+    @scala.inline
+    def setQShowSystem(value: Boolean): Self = this.set("qShowSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQShowSystem: Self = this.set("qShowSystem", js.undefined)
+  }
+  
 }
 

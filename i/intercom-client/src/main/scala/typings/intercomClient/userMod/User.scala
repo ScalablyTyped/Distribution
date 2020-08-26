@@ -11,12 +11,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait User extends BaseUser {
-  var companies: Companies
-  var location_data: LocationData | js.Object
-  var segments: Segments
-  var social_profiles: Socialprofiles
-  var tags: Tags
+  var companies: Companies = js.native
+  var location_data: LocationData | js.Object = js.native
+  var segments: Segments = js.native
+  var social_profiles: Socialprofiles = js.native
+  var tags: Tags = js.native
 }
 
 object User {
@@ -35,22 +36,34 @@ object User {
     tags: Tags,
     `type`: user | contact,
     unsubscribed_from_emails: Boolean,
-    updated_at: Double,
-    app_id: String = null,
-    email: String = null,
-    last_request_at: Double = null.asInstanceOf[Double],
-    last_seen_ip: String = null,
-    name: String = null,
-    phone: String = null,
-    pseudonym: String = null,
-    signed_up_at: Double = null.asInstanceOf[Double],
-    user_agent_data: String = null,
-    user_id: String = null
+    updated_at: Double
   ): User = {
-    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], last_request_at = last_request_at.asInstanceOf[js.Any], last_seen_ip = last_seen_ip.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], pseudonym = pseudonym.asInstanceOf[js.Any], signed_up_at = signed_up_at.asInstanceOf[js.Any], user_agent_data = user_agent_data.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anonymous = anonymous.asInstanceOf[js.Any], avatar = avatar.asInstanceOf[js.Any], companies = companies.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], custom_attributes = custom_attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location_data = location_data.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], session_count = session_count.asInstanceOf[js.Any], social_profiles = social_profiles.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], unsubscribed_from_emails = unsubscribed_from_emails.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  @scala.inline
+  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompanies(value: Companies): Self = this.set("companies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation_data(value: LocationData | js.Object): Self = this.set("location_data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegments(value: Segments): Self = this.set("segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSocial_profiles(value: Socialprofiles): Self = this.set("social_profiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+  }
+  
 }
 

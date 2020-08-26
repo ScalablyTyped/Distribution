@@ -43,26 +43,56 @@ trait SchemaPerfMetricsSummary extends js.Object {
 
 object SchemaPerfMetricsSummary {
   @scala.inline
-  def apply(
-    appStartTime: SchemaAppStartTime = null,
-    executionId: String = null,
-    graphicsStats: SchemaGraphicsStats = null,
-    historyId: String = null,
-    perfEnvironment: SchemaPerfEnvironment = null,
-    perfMetrics: js.Array[String] = null,
-    projectId: String = null,
-    stepId: String = null
-  ): SchemaPerfMetricsSummary = {
+  def apply(): SchemaPerfMetricsSummary = {
     val __obj = js.Dynamic.literal()
-    if (appStartTime != null) __obj.updateDynamic("appStartTime")(appStartTime.asInstanceOf[js.Any])
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
-    if (graphicsStats != null) __obj.updateDynamic("graphicsStats")(graphicsStats.asInstanceOf[js.Any])
-    if (historyId != null) __obj.updateDynamic("historyId")(historyId.asInstanceOf[js.Any])
-    if (perfEnvironment != null) __obj.updateDynamic("perfEnvironment")(perfEnvironment.asInstanceOf[js.Any])
-    if (perfMetrics != null) __obj.updateDynamic("perfMetrics")(perfMetrics.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (stepId != null) __obj.updateDynamic("stepId")(stepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPerfMetricsSummary]
   }
+  @scala.inline
+  implicit class SchemaPerfMetricsSummaryOps[Self <: SchemaPerfMetricsSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppStartTime(value: SchemaAppStartTime): Self = this.set("appStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppStartTime: Self = this.set("appStartTime", js.undefined)
+    @scala.inline
+    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    @scala.inline
+    def setGraphicsStats(value: SchemaGraphicsStats): Self = this.set("graphicsStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGraphicsStats: Self = this.set("graphicsStats", js.undefined)
+    @scala.inline
+    def setHistoryId(value: String): Self = this.set("historyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryId: Self = this.set("historyId", js.undefined)
+    @scala.inline
+    def setPerfEnvironment(value: SchemaPerfEnvironment): Self = this.set("perfEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerfEnvironment: Self = this.set("perfEnvironment", js.undefined)
+    @scala.inline
+    def setPerfMetricsVarargs(value: String*): Self = this.set("perfMetrics", js.Array(value :_*))
+    @scala.inline
+    def setPerfMetrics(value: js.Array[String]): Self = this.set("perfMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerfMetrics: Self = this.set("perfMetrics", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setStepId(value: String): Self = this.set("stepId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepId: Self = this.set("stepId", js.undefined)
+  }
+  
 }
 

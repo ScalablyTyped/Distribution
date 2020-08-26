@@ -22,16 +22,34 @@ trait CreateDistributionConfigurationResponse extends js.Object {
 
 object CreateDistributionConfigurationResponse {
   @scala.inline
-  def apply(
-    clientToken: ClientToken = null,
-    distributionConfigurationArn: DistributionConfigurationArn = null,
-    requestId: NonEmptyString = null
-  ): CreateDistributionConfigurationResponse = {
+  def apply(): CreateDistributionConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (distributionConfigurationArn != null) __obj.updateDynamic("distributionConfigurationArn")(distributionConfigurationArn.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDistributionConfigurationResponse]
   }
+  @scala.inline
+  implicit class CreateDistributionConfigurationResponseOps[Self <: CreateDistributionConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setDistributionConfigurationArn(value: DistributionConfigurationArn): Self = this.set("distributionConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionConfigurationArn: Self = this.set("distributionConfigurationArn", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

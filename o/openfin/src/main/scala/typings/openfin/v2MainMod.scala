@@ -4,7 +4,7 @@ import typings.openfin.anon.FnCall
 import typings.openfin.clientMod.RoutingInfo
 import typings.openfin.identityMod.Identity
 import typings.openfin.notificationMod.NotificationOptions
-import typings.openfin.shapesMod.ProviderIdentity
+import typings.openfin.shapesIdentityMod.ProviderIdentity
 import typings.openfin.transportMod.default
 import typings.openfin.wireMod.ConnectConfig
 import typings.std.Map

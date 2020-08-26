@@ -83,7 +83,11 @@ object typesMod extends js.Object {
   object actionSheetController extends js.Object {
     def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = js.native
@@ -93,7 +97,11 @@ object typesMod extends js.Object {
   object alertController extends js.Object {
     def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = js.native
@@ -103,7 +111,11 @@ object typesMod extends js.Object {
   object loadingController extends js.Object {
     def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = js.native
@@ -143,7 +155,11 @@ object typesMod extends js.Object {
   object modalController extends js.Object {
     def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = js.native
@@ -153,7 +169,11 @@ object typesMod extends js.Object {
   object pickerController extends js.Object {
     def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = js.native
@@ -163,7 +183,11 @@ object typesMod extends js.Object {
   object popoverController extends js.Object {
     def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = js.native
@@ -173,7 +197,11 @@ object typesMod extends js.Object {
   object toastController extends js.Object {
     def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = js.native
     def dismiss(): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
+    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any): js.Promise[Boolean] = js.native
+    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
     def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
     def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = js.native

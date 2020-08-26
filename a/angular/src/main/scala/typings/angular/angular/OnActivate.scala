@@ -27,6 +27,8 @@ trait OnActivate extends js.Object {
   @JSName("$routerOnActivate")
   def $routerOnActivate(): js.Any = js.native
   @JSName("$routerOnActivate")
+  def $routerOnActivate(next: js.UndefOr[scala.Nothing], prev: ComponentInstruction): js.Any = js.native
+  @JSName("$routerOnActivate")
   def $routerOnActivate(next: ComponentInstruction): js.Any = js.native
   @JSName("$routerOnActivate")
   def $routerOnActivate(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native

@@ -48,45 +48,64 @@ import scala.scalajs.js.annotation._
   *     newly signed in user.</dd>
   * </dl>
   */
+@js.native
 trait AuthError extends Error {
   /**
     * The {@link firebase.auth.AuthCredential} that can be used to resolve the
     * error.
     */
-  var credential: js.UndefOr[AuthCredential] = js.undefined
+  var credential: js.UndefOr[AuthCredential] = js.native
   /**
     * The email of the user's account used for sign-in/linking.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String] = js.native
   /**
     * The phone number of the user's account used for sign-in/linking.
     */
-  var phoneNumber: js.UndefOr[String] = js.undefined
+  var phoneNumber: js.UndefOr[String] = js.native
   /**
     * The tenant ID being used for sign-in/linking. If you use
     * {@link firebase.auth.signInWithRedirect} to sign in, you have to
     * set the tenant ID on Auth instanace again as the tenant ID is not
     * persisted after redirection.
     */
-  var tenantId: js.UndefOr[String] = js.undefined
+  var tenantId: js.UndefOr[String] = js.native
 }
 
 object AuthError {
   @scala.inline
-  def apply(
-    code: String,
-    message: String,
-    credential: AuthCredential = null,
-    email: String = null,
-    phoneNumber: String = null,
-    tenantId: String = null
-  ): AuthError = {
+  def apply(code: String, message: String): AuthError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    if (credential != null) __obj.updateDynamic("credential")(credential.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthError]
   }
+  @scala.inline
+  implicit class AuthErrorOps[Self <: AuthError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCredential(value: AuthCredential): Self = this.set("credential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredential: Self = this.set("credential", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantId: Self = this.set("tenantId", js.undefined)
+  }
+  
 }
 

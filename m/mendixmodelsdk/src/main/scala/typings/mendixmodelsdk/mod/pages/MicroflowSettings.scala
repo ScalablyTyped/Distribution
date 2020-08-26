@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/starting-microflows relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/on-click-event relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "pages.MicroflowSettings")
 @js.native

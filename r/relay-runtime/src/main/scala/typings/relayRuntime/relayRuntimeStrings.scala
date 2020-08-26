@@ -18,7 +18,7 @@ object relayRuntimeStrings {
   sealed trait Condition extends js.Object
   
   @js.native
-  sealed trait ConnectionField extends js.Object
+  sealed trait Connection extends js.Object
   
   @js.native
   sealed trait Defer extends js.Object
@@ -54,6 +54,9 @@ object relayRuntimeStrings {
   sealed trait LinkedHandle extends js.Object
   
   @js.native
+  sealed trait ListValue extends js.Object
+  
+  @js.native
   sealed trait Literal extends js.Object
   
   @js.native
@@ -67,6 +70,9 @@ object relayRuntimeStrings {
   
   @js.native
   sealed trait NONEXISTENT extends RecordState
+  
+  @js.native
+  sealed trait ObjectValue extends js.Object
   
   @js.native
   sealed trait Operation extends js.Object
@@ -97,6 +103,9 @@ object relayRuntimeStrings {
   
   @js.native
   sealed trait Stream extends js.Object
+  
+  @js.native
+  sealed trait TypeDiscriminator extends js.Object
   
   @js.native
   sealed trait UNKNOWN extends RecordState
@@ -201,7 +210,7 @@ object relayRuntimeStrings {
   @scala.inline
   def Condition: Condition = "Condition".asInstanceOf[Condition]
   @scala.inline
-  def ConnectionField: ConnectionField = "ConnectionField".asInstanceOf[ConnectionField]
+  def Connection: Connection = "Connection".asInstanceOf[Connection]
   @scala.inline
   def Defer: Defer = "Defer".asInstanceOf[Defer]
   @scala.inline
@@ -225,6 +234,8 @@ object relayRuntimeStrings {
   @scala.inline
   def LinkedHandle: LinkedHandle = "LinkedHandle".asInstanceOf[LinkedHandle]
   @scala.inline
+  def ListValue: ListValue = "ListValue".asInstanceOf[ListValue]
+  @scala.inline
   def Literal: Literal = "Literal".asInstanceOf[Literal]
   @scala.inline
   def LocalArgument: LocalArgument = "LocalArgument".asInstanceOf[LocalArgument]
@@ -234,6 +245,8 @@ object relayRuntimeStrings {
   def NODE_DELETE: NODE_DELETE = "NODE_DELETE".asInstanceOf[NODE_DELETE]
   @scala.inline
   def NONEXISTENT: NONEXISTENT = "NONEXISTENT".asInstanceOf[NONEXISTENT]
+  @scala.inline
+  def ObjectValue: ObjectValue = "ObjectValue".asInstanceOf[ObjectValue]
   @scala.inline
   def Operation: Operation = "Operation".asInstanceOf[Operation]
   @scala.inline
@@ -254,6 +267,8 @@ object relayRuntimeStrings {
   def SplitOperation: SplitOperation = "SplitOperation".asInstanceOf[SplitOperation]
   @scala.inline
   def Stream: Stream = "Stream".asInstanceOf[Stream]
+  @scala.inline
+  def TypeDiscriminator: TypeDiscriminator = "TypeDiscriminator".asInstanceOf[TypeDiscriminator]
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   @scala.inline

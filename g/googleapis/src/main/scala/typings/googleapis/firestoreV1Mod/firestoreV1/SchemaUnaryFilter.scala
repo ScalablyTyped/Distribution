@@ -21,11 +21,30 @@ trait SchemaUnaryFilter extends js.Object {
 
 object SchemaUnaryFilter {
   @scala.inline
-  def apply(field: SchemaFieldReference = null, op: String = null): SchemaUnaryFilter = {
+  def apply(): SchemaUnaryFilter = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUnaryFilter]
   }
+  @scala.inline
+  implicit class SchemaUnaryFilterOps[Self <: SchemaUnaryFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setField(value: SchemaFieldReference): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setOp(value: String): Self = this.set("op", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOp: Self = this.set("op", js.undefined)
+  }
+  
 }
 

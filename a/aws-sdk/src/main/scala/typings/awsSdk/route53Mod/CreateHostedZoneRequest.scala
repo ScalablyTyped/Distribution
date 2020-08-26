@@ -30,18 +30,38 @@ trait CreateHostedZoneRequest extends js.Object {
 
 object CreateHostedZoneRequest {
   @scala.inline
-  def apply(
-    CallerReference: Nonce,
-    Name: DNSName,
-    DelegationSetId: ResourceId = null,
-    HostedZoneConfig: HostedZoneConfig = null,
-    VPC: VPC = null
-  ): CreateHostedZoneRequest = {
+  def apply(CallerReference: Nonce, Name: DNSName): CreateHostedZoneRequest = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (DelegationSetId != null) __obj.updateDynamic("DelegationSetId")(DelegationSetId.asInstanceOf[js.Any])
-    if (HostedZoneConfig != null) __obj.updateDynamic("HostedZoneConfig")(HostedZoneConfig.asInstanceOf[js.Any])
-    if (VPC != null) __obj.updateDynamic("VPC")(VPC.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostedZoneRequest]
   }
+  @scala.inline
+  implicit class CreateHostedZoneRequestOps[Self <: CreateHostedZoneRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerReference(value: Nonce): Self = this.set("CallerReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: DNSName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelegationSetId(value: ResourceId): Self = this.set("DelegationSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegationSetId: Self = this.set("DelegationSetId", js.undefined)
+    @scala.inline
+    def setHostedZoneConfig(value: HostedZoneConfig): Self = this.set("HostedZoneConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneConfig: Self = this.set("HostedZoneConfig", js.undefined)
+    @scala.inline
+    def setVPC(value: VPC): Self = this.set("VPC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVPC: Self = this.set("VPC", js.undefined)
+  }
+  
 }
 

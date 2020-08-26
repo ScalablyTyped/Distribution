@@ -190,6 +190,7 @@ trait Router extends EventProvider {
     * @returns this for chaining.
     */
   def navTo(sName: String): typings.openui5.sap.m.routing.Router = js.native
+  def navTo(sName: String, oParameters: js.UndefOr[scala.Nothing], bReplace: Boolean): typings.openui5.sap.m.routing.Router = js.native
   def navTo(sName: String, oParameters: js.Any): typings.openui5.sap.m.routing.Router = js.native
   def navTo(sName: String, oParameters: js.Any, bReplace: Boolean): typings.openui5.sap.m.routing.Router = js.native
   /**

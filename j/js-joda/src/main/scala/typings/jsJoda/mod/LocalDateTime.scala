@@ -82,7 +82,7 @@ object LocalDateTime extends js.Object {
   def of(date: LocalDate, time: LocalTime): LocalDateTime = js.native
   def of(
     year: js.UndefOr[Double],
-    month: js.UndefOr[Double | Month],
+    month: js.UndefOr[Month | Double],
     dayOfMonth: js.UndefOr[Double],
     hour: js.UndefOr[Double],
     minute: js.UndefOr[Double],

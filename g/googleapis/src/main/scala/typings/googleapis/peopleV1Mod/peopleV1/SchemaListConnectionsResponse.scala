@@ -31,20 +31,44 @@ trait SchemaListConnectionsResponse extends js.Object {
 
 object SchemaListConnectionsResponse {
   @scala.inline
-  def apply(
-    connections: js.Array[SchemaPerson] = null,
-    nextPageToken: String = null,
-    nextSyncToken: String = null,
-    totalItems: js.UndefOr[Double] = js.undefined,
-    totalPeople: js.UndefOr[Double] = js.undefined
-  ): SchemaListConnectionsResponse = {
+  def apply(): SchemaListConnectionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (nextSyncToken != null) __obj.updateDynamic("nextSyncToken")(nextSyncToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalItems)) __obj.updateDynamic("totalItems")(totalItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalPeople)) __obj.updateDynamic("totalPeople")(totalPeople.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListConnectionsResponse]
   }
+  @scala.inline
+  implicit class SchemaListConnectionsResponseOps[Self <: SchemaListConnectionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionsVarargs(value: SchemaPerson*): Self = this.set("connections", js.Array(value :_*))
+    @scala.inline
+    def setConnections(value: js.Array[SchemaPerson]): Self = this.set("connections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnections: Self = this.set("connections", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setNextSyncToken(value: String): Self = this.set("nextSyncToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextSyncToken: Self = this.set("nextSyncToken", js.undefined)
+    @scala.inline
+    def setTotalItems(value: Double): Self = this.set("totalItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalItems: Self = this.set("totalItems", js.undefined)
+    @scala.inline
+    def setTotalPeople(value: Double): Self = this.set("totalPeople", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalPeople: Self = this.set("totalPeople", js.undefined)
+  }
+  
 }
 

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * This service helps parsing files by providing a SAX document handler interface for a SAX parsers. You have to instantiate this service passing an
   * {@link XRoot} instance.
   */
+@js.native
 trait SaxDocumentHandler
   extends XDocumentHandler
      with XInitialization

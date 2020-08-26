@@ -20,14 +20,32 @@ trait SizeConstraintSetArgs extends js.Object {
 
 object SizeConstraintSetArgs {
   @scala.inline
-  def apply(
-    name: Input[String] = null,
-    sizeConstraints: Input[js.Array[Input[SizeConstraintSetSizeConstraint]]] = null
-  ): SizeConstraintSetArgs = {
+  def apply(): SizeConstraintSetArgs = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sizeConstraints != null) __obj.updateDynamic("sizeConstraints")(sizeConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSetArgs]
   }
+  @scala.inline
+  implicit class SizeConstraintSetArgsOps[Self <: SizeConstraintSetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSizeConstraintsVarargs(value: Input[SizeConstraintSetSizeConstraint]*): Self = this.set("sizeConstraints", js.Array(value :_*))
+    @scala.inline
+    def setSizeConstraints(value: Input[js.Array[Input[SizeConstraintSetSizeConstraint]]]): Self = this.set("sizeConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeConstraints: Self = this.set("sizeConstraints", js.undefined)
+  }
+  
 }
 

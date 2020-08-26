@@ -28,5 +28,6 @@ trait TypeofChart
   var platform: DisableCSSInjection = js.native
   var pluginService: PluginServiceStatic = js.native
   var plugins: PluginServiceStatic = js.native
+  var scaleService: UpdateScaleDefaults = js.native
 }
 

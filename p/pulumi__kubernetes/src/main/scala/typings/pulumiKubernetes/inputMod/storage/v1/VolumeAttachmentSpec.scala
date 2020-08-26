@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 /**
   * VolumeAttachmentSpec is the specification of a VolumeAttachment request.
   */
+@js.native
 trait VolumeAttachmentSpec extends js.Object {
   /**
-    * Attacher indicates the name of the volume driver that MUST handle this request. This is the
-    * name returned by GetPluginName().
+    * Attacher indicates the name of the volume driver that MUST handle this request. This is the name returned by GetPluginName().
     */
-  var attacher: Input[String]
+  var attacher: Input[String] = js.native
   /**
     * The node that the volume should be attached to.
     */
-  var nodeName: Input[String]
+  var nodeName: Input[String] = js.native
   /**
     * Source represents the volume that should be attached.
     */
-  var source: Input[VolumeAttachmentSource]
+  var source: Input[VolumeAttachmentSource] = js.native
 }
 
 object VolumeAttachmentSpec {
@@ -30,5 +30,24 @@ object VolumeAttachmentSpec {
     val __obj = js.Dynamic.literal(attacher = attacher.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeAttachmentSpec]
   }
+  @scala.inline
+  implicit class VolumeAttachmentSpecOps[Self <: VolumeAttachmentSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttacher(value: Input[String]): Self = this.set("attacher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeName(value: Input[String]): Self = this.set("nodeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: Input[VolumeAttachmentSource]): Self = this.set("source", value.asInstanceOf[js.Any])
+  }
+  
 }
 

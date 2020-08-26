@@ -36,6 +36,12 @@ object alg extends js.Object {
     * @returns shortest pathes map that starts from node source
     */
   def dijkstra(graph: Graph, source: String): StringDictionary[Path] = js.native
+  def dijkstra(
+    graph: Graph,
+    source: String,
+    weightFn: js.UndefOr[scala.Nothing],
+    edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
+  ): StringDictionary[Path] = js.native
   def dijkstra(graph: Graph, source: String, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[Path] = js.native
   def dijkstra(
     graph: Graph,
@@ -58,6 +64,11 @@ object alg extends js.Object {
     * @returns shortest pathes map.
     */
   def dijkstraAll(graph: Graph): StringDictionary[StringDictionary[Path]] = js.native
+  def dijkstraAll(
+    graph: Graph,
+    weightFn: js.UndefOr[scala.Nothing],
+    edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
+  ): StringDictionary[StringDictionary[Path]] = js.native
   def dijkstraAll(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[StringDictionary[Path]] = js.native
   def dijkstraAll(
     graph: Graph,
@@ -96,6 +107,11 @@ object alg extends js.Object {
     * @returns shortest pathes map.
     */
   def floydWarshall(graph: Graph): StringDictionary[StringDictionary[Path]] = js.native
+  def floydWarshall(
+    graph: Graph,
+    weightFn: js.UndefOr[scala.Nothing],
+    edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
+  ): StringDictionary[StringDictionary[Path]] = js.native
   def floydWarshall(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[StringDictionary[Path]] = js.native
   def floydWarshall(
     graph: Graph,

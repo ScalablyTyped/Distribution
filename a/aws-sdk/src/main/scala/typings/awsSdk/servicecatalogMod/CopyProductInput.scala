@@ -38,22 +38,50 @@ trait CopyProductInput extends js.Object {
 
 object CopyProductInput {
   @scala.inline
-  def apply(
-    IdempotencyToken: IdempotencyToken,
-    SourceProductArn: ProductArn,
-    AcceptLanguage: AcceptLanguage = null,
-    CopyOptions: CopyOptions = null,
-    SourceProvisioningArtifactIdentifiers: SourceProvisioningArtifactProperties = null,
-    TargetProductId: Id = null,
-    TargetProductName: ProductViewName = null
-  ): CopyProductInput = {
+  def apply(IdempotencyToken: IdempotencyToken, SourceProductArn: ProductArn): CopyProductInput = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], SourceProductArn = SourceProductArn.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (CopyOptions != null) __obj.updateDynamic("CopyOptions")(CopyOptions.asInstanceOf[js.Any])
-    if (SourceProvisioningArtifactIdentifiers != null) __obj.updateDynamic("SourceProvisioningArtifactIdentifiers")(SourceProvisioningArtifactIdentifiers.asInstanceOf[js.Any])
-    if (TargetProductId != null) __obj.updateDynamic("TargetProductId")(TargetProductId.asInstanceOf[js.Any])
-    if (TargetProductName != null) __obj.updateDynamic("TargetProductName")(TargetProductName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyProductInput]
   }
+  @scala.inline
+  implicit class CopyProductInputOps[Self <: CopyProductInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceProductArn(value: ProductArn): Self = this.set("SourceProductArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setCopyOptionsVarargs(value: CopyOption*): Self = this.set("CopyOptions", js.Array(value :_*))
+    @scala.inline
+    def setCopyOptions(value: CopyOptions): Self = this.set("CopyOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyOptions: Self = this.set("CopyOptions", js.undefined)
+    @scala.inline
+    def setSourceProvisioningArtifactIdentifiersVarargs(value: SourceProvisioningArtifactPropertiesMap*): Self = this.set("SourceProvisioningArtifactIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setSourceProvisioningArtifactIdentifiers(value: SourceProvisioningArtifactProperties): Self = this.set("SourceProvisioningArtifactIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceProvisioningArtifactIdentifiers: Self = this.set("SourceProvisioningArtifactIdentifiers", js.undefined)
+    @scala.inline
+    def setTargetProductId(value: Id): Self = this.set("TargetProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetProductId: Self = this.set("TargetProductId", js.undefined)
+    @scala.inline
+    def setTargetProductName(value: ProductViewName): Self = this.set("TargetProductName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetProductName: Self = this.set("TargetProductName", js.undefined)
+  }
+  
 }
 

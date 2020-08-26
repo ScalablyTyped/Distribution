@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-react/lib/utils", JSImport.Namespace)
+@JSImport("@ant-design/icons-react/es/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
   @js.native

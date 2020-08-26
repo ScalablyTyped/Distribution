@@ -1,5 +1,7 @@
 package typings.fluentuiDateTimeUtilities
 
+import typings.fluentuiDateTimeUtilities.dateFormattingTypesMod.ICalendarStrings
+import typings.fluentuiDateTimeUtilities.dateFormattingTypesMod.IDateFormatting
 import typings.fluentuiDateTimeUtilities.dateFormattingTypesMod.IDateGridStrings
 import typings.fluentuiDateTimeUtilities.dateGridTypesMod.IAvailableDateOptions
 import typings.fluentuiDateTimeUtilities.dateGridTypesMod.IDay
@@ -18,6 +20,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   val DAYS_IN_WEEK: /* 7 */ Double = js.native
+  val DEFAULT_CALENDAR_STRINGS: ICalendarStrings = js.native
+  val DEFAULT_DATE_FORMATTING: IDateFormatting = js.native
+  val DEFAULT_LOCALIZED_STRINGS: IDateGridStrings = js.native
   def addDays(date: Date, days: Double): Date = js.native
   def addMonths(date: Date, months: Double): Date = js.native
   def addWeeks(date: Date, weeks: Double): Date = js.native
@@ -30,9 +35,17 @@ object mod extends js.Object {
   def formatMonthYear(date: Date, strings: IDateGridStrings): String = js.native
   def formatYear(date: Date): String = js.native
   def getBoundedDateRange(dateRange: js.Array[Date]): js.Array[Date] = js.native
+  def getBoundedDateRange(dateRange: js.Array[Date], minDate: js.UndefOr[scala.Nothing], maxDate: Date): js.Array[Date] = js.native
   def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date): js.Array[Date] = js.native
   def getBoundedDateRange(dateRange: js.Array[Date], minDate: Date, maxDate: Date): js.Array[Date] = js.native
   def getDateRangeArray(date: Date, dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek): js.Array[Date] = js.native
+  def getDateRangeArray(
+    date: Date,
+    dateRangeType: DateRangeType,
+    firstDayOfWeek: DayOfWeek,
+    workWeekDays: js.UndefOr[scala.Nothing],
+    daysToSelectInDayView: Double
+  ): js.Array[Date] = js.native
   def getDateRangeArray(
     date: Date,
     dateRangeType: DateRangeType,
@@ -46,8 +59,8 @@ object mod extends js.Object {
     workWeekDays: js.Array[DayOfWeek],
     daysToSelectInDayView: Double
   ): js.Array[Date] = js.native
-  def getDateRangeTypeToUse(dateRangeType: DateRangeType): DateRangeType = js.native
-  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.Array[DayOfWeek]): DateRangeType = js.native
+  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.UndefOr[scala.Nothing], firstDayOfWeek: DayOfWeek): DateRangeType = js.native
+  def getDateRangeTypeToUse(dateRangeType: DateRangeType, workWeekDays: js.Array[DayOfWeek], firstDayOfWeek: DayOfWeek): DateRangeType = js.native
   def getDayGrid(options: IDayGridOptions): js.Array[js.Array[IDay]] = js.native
   def getMonthEnd(date: Date): Date = js.native
   def getMonthStart(date: Date): Date = js.native
@@ -63,6 +76,7 @@ object mod extends js.Object {
   def getYearStart(date: Date): Date = js.native
   def isAfterMaxDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
   def isBeforeMinDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
+  def isContiguous(days: js.Array[DayOfWeek], isSingleWeek: Boolean, firstDayOfWeek: DayOfWeek): Boolean = js.native
   def isInDateRangeArray(date: Date, dateRange: js.Array[Date]): Boolean = js.native
   def isRestrictedDate(date: Date, options: IRestrictedDatesOptions): Boolean = js.native
   def setMonth(date: Date, month: Double): Date = js.native

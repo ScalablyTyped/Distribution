@@ -38,22 +38,46 @@ trait SchemaDriveItem extends js.Object {
 
 object SchemaDriveItem {
   @scala.inline
-  def apply(
-    file: SchemaFile = null,
-    folder: SchemaFolder = null,
-    mimeType: String = null,
-    name: String = null,
-    owner: SchemaOwner = null,
-    title: String = null
-  ): SchemaDriveItem = {
+  def apply(): SchemaDriveItem = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDriveItem]
   }
+  @scala.inline
+  implicit class SchemaDriveItemOps[Self <: SchemaDriveItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFile(value: SchemaFile): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFolder(value: SchemaFolder): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolder: Self = this.set("folder", js.undefined)
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwner(value: SchemaOwner): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

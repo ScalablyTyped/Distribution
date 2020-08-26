@@ -25,11 +25,30 @@ trait SchemaSubscriptionCancelSurveyResult extends js.Object {
 
 object SchemaSubscriptionCancelSurveyResult {
   @scala.inline
-  def apply(cancelSurveyReason: js.UndefOr[Double] = js.undefined, userInputCancelReason: String = null): SchemaSubscriptionCancelSurveyResult = {
+  def apply(): SchemaSubscriptionCancelSurveyResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancelSurveyReason)) __obj.updateDynamic("cancelSurveyReason")(cancelSurveyReason.get.asInstanceOf[js.Any])
-    if (userInputCancelReason != null) __obj.updateDynamic("userInputCancelReason")(userInputCancelReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionCancelSurveyResult]
   }
+  @scala.inline
+  implicit class SchemaSubscriptionCancelSurveyResultOps[Self <: SchemaSubscriptionCancelSurveyResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancelSurveyReason(value: Double): Self = this.set("cancelSurveyReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelSurveyReason: Self = this.set("cancelSurveyReason", js.undefined)
+    @scala.inline
+    def setUserInputCancelReason(value: String): Self = this.set("userInputCancelReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserInputCancelReason: Self = this.set("userInputCancelReason", js.undefined)
+  }
+  
 }
 

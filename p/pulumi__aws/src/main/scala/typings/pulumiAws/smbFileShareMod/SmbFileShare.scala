@@ -67,6 +67,10 @@ class SmbFileShare protected () extends CustomResource {
     */
   val objectAcl: Output_[js.UndefOr[String]] = js.native
   /**
+    * File share path used by the NFS client to identify the mount point.
+    */
+  val path: Output_[String] = js.native
+  /**
     * Boolean to indicate write status of file share. File share does not accept writes if `true`. Defaults to `false`.
     */
   val readOnly: Output_[js.UndefOr[Boolean]] = js.native
@@ -79,9 +83,9 @@ class SmbFileShare protected () extends CustomResource {
     */
   val roleArn: Output_[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A list of users in the Active Directory that are allowed to access the file share. Only valid if `authentication` is set to `ActiveDirectory`.
     */
@@ -99,8 +103,10 @@ object SmbFileShare extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SmbFileShare = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SmbFileShare = js.native
   def get(name: String, id: Input[ID], state: SmbFileShareState): SmbFileShare = js.native
   def get(name: String, id: Input[ID], state: SmbFileShareState, opts: CustomResourceOptions): SmbFileShare = js.native
   /**

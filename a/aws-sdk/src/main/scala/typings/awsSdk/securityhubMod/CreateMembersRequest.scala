@@ -14,10 +14,28 @@ trait CreateMembersRequest extends js.Object {
 
 object CreateMembersRequest {
   @scala.inline
-  def apply(AccountDetails: AccountDetailsList = null): CreateMembersRequest = {
+  def apply(): CreateMembersRequest = {
     val __obj = js.Dynamic.literal()
-    if (AccountDetails != null) __obj.updateDynamic("AccountDetails")(AccountDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMembersRequest]
   }
+  @scala.inline
+  implicit class CreateMembersRequestOps[Self <: CreateMembersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountDetailsVarargs(value: AccountDetails*): Self = this.set("AccountDetails", js.Array(value :_*))
+    @scala.inline
+    def setAccountDetails(value: AccountDetailsList): Self = this.set("AccountDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountDetails: Self = this.set("AccountDetails", js.undefined)
+  }
+  
 }
 

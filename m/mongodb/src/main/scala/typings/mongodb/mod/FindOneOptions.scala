@@ -4,96 +4,163 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FindOneOptions extends js.Object {
-  var batchSize: js.UndefOr[scala.Double] = js.undefined
-  var collation: js.UndefOr[CollationDocument] = js.undefined
-  var comment: js.UndefOr[String] = js.undefined
-  var explain: js.UndefOr[Boolean] = js.undefined
+  var batchSize: js.UndefOr[scala.Double] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.native
+  var comment: js.UndefOr[String] = js.native
+  var explain: js.UndefOr[Boolean] = js.native
   /**
     * @deprecated Use options.projection instead
     */
-  var fields: js.UndefOr[js.Object] = js.undefined
-  var hint: js.UndefOr[js.Object] = js.undefined
-  var limit: js.UndefOr[scala.Double] = js.undefined
-  var max: js.UndefOr[scala.Double] = js.undefined
-  var maxScan: js.UndefOr[scala.Double] = js.undefined
-  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
-  var min: js.UndefOr[scala.Double] = js.undefined
-  var partial: js.UndefOr[Boolean] = js.undefined
-  var projection: js.UndefOr[js.Object] = js.undefined
-  var promoteBuffers: js.UndefOr[Boolean] = js.undefined
-  var promoteLongs: js.UndefOr[Boolean] = js.undefined
-  var promoteValues: js.UndefOr[Boolean] = js.undefined
-  var raw: js.UndefOr[Boolean] = js.undefined
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
-  var returnKey: js.UndefOr[Boolean] = js.undefined
-  var session: js.UndefOr[ClientSession] = js.undefined
-  var showDiskLoc: js.UndefOr[Boolean] = js.undefined
-  var skip: js.UndefOr[scala.Double] = js.undefined
-  var snapshot: js.UndefOr[Boolean] = js.undefined
-  var sort: js.UndefOr[js.Array[_] | js.Object] = js.undefined
-  var tailable: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Boolean] = js.undefined
+  var fields: js.UndefOr[js.Object] = js.native
+  var hint: js.UndefOr[js.Object] = js.native
+  var limit: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.native
+  var maxScan: js.UndefOr[scala.Double] = js.native
+  var maxTimeMS: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.native
+  var partial: js.UndefOr[Boolean] = js.native
+  var projection: js.UndefOr[js.Object] = js.native
+  var promoteBuffers: js.UndefOr[Boolean] = js.native
+  var promoteLongs: js.UndefOr[Boolean] = js.native
+  var promoteValues: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var returnKey: js.UndefOr[Boolean] = js.native
+  var session: js.UndefOr[ClientSession] = js.native
+  var showDiskLoc: js.UndefOr[Boolean] = js.native
+  var skip: js.UndefOr[scala.Double] = js.native
+  var snapshot: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[js.Array[_] | js.Object] = js.native
+  var tailable: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Boolean] = js.native
 }
 
 object FindOneOptions {
   @scala.inline
-  def apply(
-    batchSize: js.UndefOr[scala.Double] = js.undefined,
-    collation: CollationDocument = null,
-    comment: String = null,
-    explain: js.UndefOr[Boolean] = js.undefined,
-    fields: js.Object = null,
-    hint: js.Object = null,
-    limit: js.UndefOr[scala.Double] = js.undefined,
-    max: js.UndefOr[scala.Double] = js.undefined,
-    maxScan: js.UndefOr[scala.Double] = js.undefined,
-    maxTimeMS: js.UndefOr[scala.Double] = js.undefined,
-    min: js.UndefOr[scala.Double] = js.undefined,
-    partial: js.UndefOr[Boolean] = js.undefined,
-    projection: js.Object = null,
-    promoteBuffers: js.UndefOr[Boolean] = js.undefined,
-    promoteLongs: js.UndefOr[Boolean] = js.undefined,
-    promoteValues: js.UndefOr[Boolean] = js.undefined,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    readPreference: ReadPreferenceOrMode = null,
-    returnKey: js.UndefOr[Boolean] = js.undefined,
-    session: ClientSession = null,
-    showDiskLoc: js.UndefOr[Boolean] = js.undefined,
-    skip: js.UndefOr[scala.Double] = js.undefined,
-    snapshot: js.UndefOr[Boolean] = js.undefined,
-    sort: js.Array[_] | js.Object = null,
-    tailable: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Boolean] = js.undefined
-  ): FindOneOptions = {
+  def apply(): FindOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchSize)) __obj.updateDynamic("batchSize")(batchSize.get.asInstanceOf[js.Any])
-    if (collation != null) __obj.updateDynamic("collation")(collation.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxScan)) __obj.updateDynamic("maxScan")(maxScan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTimeMS)) __obj.updateDynamic("maxTimeMS")(maxTimeMS.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.get.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnKey)) __obj.updateDynamic("returnKey")(returnKey.get.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDiskLoc)) __obj.updateDynamic("showDiskLoc")(showDiskLoc.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(tailable)) __obj.updateDynamic("tailable")(tailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindOneOptions]
   }
+  @scala.inline
+  implicit class FindOneOptionsOps[Self <: FindOneOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchSize(value: scala.Double): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    @scala.inline
+    def setCollation(value: CollationDocument): Self = this.set("collation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollation: Self = this.set("collation", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setExplain(value: Boolean): Self = this.set("explain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplain: Self = this.set("explain", js.undefined)
+    @scala.inline
+    def setFields(value: js.Object): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setHint(value: js.Object): Self = this.set("hint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHint: Self = this.set("hint", js.undefined)
+    @scala.inline
+    def setLimit(value: scala.Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMax(value: scala.Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMaxScan(value: scala.Double): Self = this.set("maxScan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxScan: Self = this.set("maxScan", js.undefined)
+    @scala.inline
+    def setMaxTimeMS(value: scala.Double): Self = this.set("maxTimeMS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTimeMS: Self = this.set("maxTimeMS", js.undefined)
+    @scala.inline
+    def setMin(value: scala.Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setPartial(value: Boolean): Self = this.set("partial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartial: Self = this.set("partial", js.undefined)
+    @scala.inline
+    def setProjection(value: js.Object): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setPromoteBuffers(value: Boolean): Self = this.set("promoteBuffers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromoteBuffers: Self = this.set("promoteBuffers", js.undefined)
+    @scala.inline
+    def setPromoteLongs(value: Boolean): Self = this.set("promoteLongs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromoteLongs: Self = this.set("promoteLongs", js.undefined)
+    @scala.inline
+    def setPromoteValues(value: Boolean): Self = this.set("promoteValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromoteValues: Self = this.set("promoteValues", js.undefined)
+    @scala.inline
+    def setRaw(value: Boolean): Self = this.set("raw", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaw: Self = this.set("raw", js.undefined)
+    @scala.inline
+    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    @scala.inline
+    def setReturnKey(value: Boolean): Self = this.set("returnKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnKey: Self = this.set("returnKey", js.undefined)
+    @scala.inline
+    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("session", js.undefined)
+    @scala.inline
+    def setShowDiskLoc(value: Boolean): Self = this.set("showDiskLoc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowDiskLoc: Self = this.set("showDiskLoc", js.undefined)
+    @scala.inline
+    def setSkip(value: scala.Double): Self = this.set("skip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkip: Self = this.set("skip", js.undefined)
+    @scala.inline
+    def setSnapshot(value: Boolean): Self = this.set("snapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshot: Self = this.set("snapshot", js.undefined)
+    @scala.inline
+    def setSortVarargs(value: js.Any*): Self = this.set("sort", js.Array(value :_*))
+    @scala.inline
+    def setSort(value: js.Array[_] | js.Object): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setTailable(value: Boolean): Self = this.set("tailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTailable: Self = this.set("tailable", js.undefined)
+    @scala.inline
+    def setTimeout(value: Boolean): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

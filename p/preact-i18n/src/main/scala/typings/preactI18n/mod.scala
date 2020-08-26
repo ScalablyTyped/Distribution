@@ -57,7 +57,7 @@ object mod extends js.Object {
   ): VNode[js.Object] = js.native
   def withText[Props, Context](mapping: js.Object): js.Function1[
     /* Child */ ComponentChild, 
-    Instantiable2[js.UndefOr[/* props */ Props], js.UndefOr[/* context */ Context], js.Any]
+    Instantiable2[/* props */ js.UndefOr[Props], /* context */ js.UndefOr[Context], js.Any]
   ] = js.native
 }
 

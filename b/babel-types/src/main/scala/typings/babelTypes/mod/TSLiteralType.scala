@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSLiteralType
   extends Node
      with TSType {
-  var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_
+  var literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ = js.native
   @JSName("type")
-  var type_TSLiteralType: typings.babelTypes.babelTypesStrings.TSLiteralType
+  var type_TSLiteralType: typings.babelTypes.babelTypesStrings.TSLiteralType = js.native
 }
 
 @JSImport("babel-types", "TSLiteralType")

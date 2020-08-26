@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GanttResources extends js.Object {
-  var dataColorField: js.UndefOr[String] = js.undefined
-  var dataFormatField: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var dataTextField: js.UndefOr[String] = js.undefined
-  var field: js.UndefOr[String] = js.undefined
+  var dataColorField: js.UndefOr[String] = js.native
+  var dataFormatField: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataTextField: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.native
 }
 
 object GanttResources {
   @scala.inline
-  def apply(
-    dataColorField: String = null,
-    dataFormatField: String = null,
-    dataSource: js.Any | DataSource = null,
-    dataTextField: String = null,
-    field: String = null
-  ): GanttResources = {
+  def apply(): GanttResources = {
     val __obj = js.Dynamic.literal()
-    if (dataColorField != null) __obj.updateDynamic("dataColorField")(dataColorField.asInstanceOf[js.Any])
-    if (dataFormatField != null) __obj.updateDynamic("dataFormatField")(dataFormatField.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttResources]
   }
+  @scala.inline
+  implicit class GanttResourcesOps[Self <: GanttResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataColorField(value: String): Self = this.set("dataColorField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataColorField: Self = this.set("dataColorField", js.undefined)
+    @scala.inline
+    def setDataFormatField(value: String): Self = this.set("dataFormatField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFormatField: Self = this.set("dataFormatField", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDataTextField(value: String): Self = this.set("dataTextField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTextField: Self = this.set("dataTextField", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+  }
+  
 }
 

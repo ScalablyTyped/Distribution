@@ -8,21 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxChangeTracker")
 @js.native
 abstract class EmailMailboxChangeTracker ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxChangeTracker {
-  /** Gets a Boolean value indicating whether change tracking is active. */
-  /* CompleteClass */
-  override var isTracking: Boolean = js.native
-  /** Enables change tracking on a mailbox. */
-  /* CompleteClass */
-  override def enable(): Unit = js.native
-  /**
-    * Gets a reader that will read a batch of changes.
-    * @return A reader that will read a batch of changes.
-    */
-  /* CompleteClass */
-  override def getChangeReader(): typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxChangeReader = js.native
-  /** Moves the change tracking cursor to now. */
-  /* CompleteClass */
-  override def reset(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxChangeTracker
 

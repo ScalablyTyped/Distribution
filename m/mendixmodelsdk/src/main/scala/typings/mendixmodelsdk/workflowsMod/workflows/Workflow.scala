@@ -55,32 +55,28 @@ class Workflow protected () extends Document {
   def activities: IList[WorkflowActivity] = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MWorkflow: FolderBase = js.native
-  def contextEntity(): js.Any = js.native
-  def contextEntity(newValue: IEntity): js.Any = js.native
+  def contextEntity: IEntity | Null = js.native
   def contextEntityQualifiedName: String | Null = js.native
-  @JSName("contextEntity")
-  def contextEntity_Union: IEntity | Null = js.native
+  def contextEntity_=(newValue: IEntity | Null): Unit = js.native
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def flows: IList[Flow] = js.native
-  def overviewPage(): js.Any = js.native
-  def overviewPage(newValue: IPage): js.Any = js.native
-  def overviewPageQualifiedName: String | Null = js.native
   /**
     * In version 8.11.0: introduced
     */
-  @JSName("overviewPage")
-  def overviewPage_Union: IPage | Null = js.native
+  def overviewPage: IPage | Null = js.native
+  def overviewPageQualifiedName: String | Null = js.native
+  def overviewPage_=(newValue: IPage | Null): Unit = js.native
   /**
     * In version 8.11.0: introduced
     */
   def subject: StringTemplate = js.native
-  def subject(newValue: StringTemplate): js.Any = js.native
+  def subject_=(newValue: StringTemplate): Unit = js.native
   def title: String = js.native
-  def title(newValue: String): js.Any = js.native
+  def title_=(newValue: String): Unit = js.native
 }
 
 /* static members */

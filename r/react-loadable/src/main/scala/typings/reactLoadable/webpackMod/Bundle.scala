@@ -4,18 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Bundle extends js.Object {
-  var file: String
-  var id: String
-  var name: String | Null
-  var publicPath: String
+  var file: String = js.native
+  var id: String = js.native
+  var name: String | Null = js.native
+  var publicPath: String = js.native
 }
 
 object Bundle {
   @scala.inline
-  def apply(file: String, id: String, publicPath: String, name: String = null): Bundle = {
-    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(file: String, id: String, publicPath: String): Bundle = {
+    val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], publicPath = publicPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle]
   }
+  @scala.inline
+  implicit class BundleOps[Self <: Bundle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublicPath(value: String): Self = this.set("publicPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNameNull: Self = this.set("name", null)
+  }
+  
 }
 

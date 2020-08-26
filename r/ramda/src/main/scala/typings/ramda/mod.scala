@@ -99,13 +99,13 @@ object mod extends js.Object {
   def all[T](fn: js.Function1[/* a */ T, Boolean], list: js.Array[T]): Boolean = js.native
   def allPass(preds: js.Array[Pred]): Pred = js.native
   def always[T](`val`: T): js.Function0[T] = js.native
-  def and(): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: String): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: String, val2: js.Any): Boolean = js.native
   def and(fn1: Boolean): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: Boolean, val2: js.Any): Boolean = js.native
   def and(fn1: Double): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: Double, val2: js.Any): Boolean = js.native
+  def and(fn1: Null): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and(fn1: Null, val2: js.Any): Boolean = js.native
   def and[T /* <: And */](fn1: T): js.Function1[/* val2 */ js.Any, Boolean] = js.native
   def and[T /* <: And */](fn1: T, val2: js.Any): Boolean = js.native
@@ -492,11 +492,18 @@ object mod extends js.Object {
   def ifElse(fn: Pred, onTrue: Arity1Fn, onFalse: Arity1Fn): Arity1Fn = js.native
   def ifElse(fn: Pred, onTrue: Arity2Fn, onFalse: Arity2Fn): Arity2Fn = js.native
   def inc(n: Double): Double = js.native
+  def includes(__ : Placeholder): js.Function2[/* list */ js.Array[String] | String, /* s */ String, Boolean] = js.native
+  def includes(__ : Placeholder, list: String): js.Function1[/* s */ String, Boolean] = js.native
+  def includes(__ : Placeholder, list: js.Array[String]): js.Function1[/* s */ String, Boolean] = js.native
   def includes(s: String): js.Function1[/* list */ js.Array[String] | String, Boolean] = js.native
   def includes(s: String, list: String): Boolean = js.native
   def includes(s: String, list: js.Array[String]): Boolean = js.native
   def includes[T](target: T): js.Function1[/* list */ js.Array[T], Boolean] = js.native
   def includes[T](target: T, list: js.Array[T]): Boolean = js.native
+  @JSName("includes")
+  def includes_T[T](__ : Placeholder): js.Function2[/* list */ js.Array[T], /* target */ T, Boolean] = js.native
+  @JSName("includes")
+  def includes_T[T](__ : Placeholder, list: js.Array[T]): js.Function1[/* target */ T, Boolean] = js.native
   def indexBy[T](fn: js.Function1[/* a */ T, String]): js.Function1[/* list */ js.Array[T], StringDictionary[T]] = js.native
   def indexBy[T](fn: js.Function1[/* a */ T, String], list: js.Array[T]): StringDictionary[T] = js.native
   def indexOf[T](target: T): js.Function1[/* list */ js.Array[T], Double] = js.native
@@ -514,7 +521,6 @@ object mod extends js.Object {
   def insertAll[T](index: Double, elts: js.Array[T], list: js.Array[T]): js.Array[T] = js.native
   def intersection[T](list1: js.Array[T]): js.Function1[/* list2 */ js.Array[T], js.Array[T]] = js.native
   def intersection[T](list1: js.Array[T], list2: js.Array[T]): js.Array[T] = js.native
-  def intersectionWith[T](pred: js.Function2[/* a */ T, /* b */ T, Boolean], list1: js.Array[T], list2: js.Array[T]): js.Array[T] = js.native
   def intersperse[T](separator: T): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   def intersperse[T](separator: T, list: js.Array[T]): js.Array[T] = js.native
   def into(acc: js.Any): js.Function2[/* xf */ js.Function1[/* repeated */ js.Any, _], /* list */ js.Array[_], js.Array[_]] = js.native
@@ -716,6 +722,7 @@ object mod extends js.Object {
   def over(lens: Lens, fn: Arity1Fn): js.Function1[/* value */ js.Any, _] = js.native
   def over[T](lens: Lens, fn: Arity1Fn, value: T): T = js.native
   def over[T](lens: Lens, fn: Arity1Fn, value: js.Array[T]): js.Array[T] = js.native
+  def pair[F](fst: F): js.Function1[/* snd */ js.Any, js.Tuple2[F, _]] = js.native
   def pair[F, S](fst: F, snd: S): js.Tuple2[F, S] = js.native
   def partial[T](fn: js.Function1[/* repeated */ js.Any, T], args: js.Array[_]): js.Function1[/* repeated */ js.Any, T] = js.native
   def partial[V0, V1, T](fn: js.Function2[/* x0 */ V0, /* x1 */ V1, T], args: js.Array[V0]): js.Function1[/* x1 */ V1, T] = js.native
@@ -754,8 +761,8 @@ object mod extends js.Object {
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, Boolean]): js.Any = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, Boolean], path: Path): js.Function1[/* obj */ U, Boolean] = js.native
   def pathSatisfies[T, U](pred: js.Function1[/* val */ T, Boolean], path: Path, obj: U): Boolean = js.native
-  def paths[T](paths: js.Array[Path]): js.Function1[/* obj */ js.Any, js.UndefOr[js.Array[T]]] = js.native
-  def paths[T](paths: js.Array[Path], obj: js.Any): js.UndefOr[js.Array[T]] = js.native
+  def paths[T](paths: js.Array[Path]): js.Function1[/* obj */ js.Any, js.Array[js.UndefOr[T]]] = js.native
+  def paths[T](paths: js.Array[Path], obj: js.Any): js.Array[js.UndefOr[T]] = js.native
   def pick[K /* <: String | Double | js.Symbol */](names: js.Array[K]): js.Function1[
     /* obj */ js.Any, 
     Pick[_, Exclude[/* keyof any */ String, Exclude[/* keyof any */ String, K]]]

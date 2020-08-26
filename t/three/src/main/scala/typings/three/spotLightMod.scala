@@ -15,7 +15,7 @@ object spotLightMod extends js.Object {
   @js.native
   class SpotLight protected () extends Light {
     def this(
-      color: js.UndefOr[Color | Double | String],
+      color: js.UndefOr[Color | String | Double],
       intensity: js.UndefOr[Double],
       distance: js.UndefOr[Double],
       angle: js.UndefOr[Double],

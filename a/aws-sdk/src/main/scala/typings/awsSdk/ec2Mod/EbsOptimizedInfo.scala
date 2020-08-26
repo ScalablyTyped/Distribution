@@ -34,22 +34,46 @@ trait EbsOptimizedInfo extends js.Object {
 
 object EbsOptimizedInfo {
   @scala.inline
-  def apply(
-    BaselineBandwidthInMbps: js.UndefOr[BaselineBandwidthInMbps] = js.undefined,
-    BaselineIops: js.UndefOr[BaselineIops] = js.undefined,
-    BaselineThroughputInMBps: js.UndefOr[BaselineThroughputInMBps] = js.undefined,
-    MaximumBandwidthInMbps: js.UndefOr[MaximumBandwidthInMbps] = js.undefined,
-    MaximumIops: js.UndefOr[MaximumIops] = js.undefined,
-    MaximumThroughputInMBps: js.UndefOr[MaximumThroughputInMBps] = js.undefined
-  ): EbsOptimizedInfo = {
+  def apply(): EbsOptimizedInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BaselineBandwidthInMbps)) __obj.updateDynamic("BaselineBandwidthInMbps")(BaselineBandwidthInMbps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BaselineIops)) __obj.updateDynamic("BaselineIops")(BaselineIops.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BaselineThroughputInMBps)) __obj.updateDynamic("BaselineThroughputInMBps")(BaselineThroughputInMBps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumBandwidthInMbps)) __obj.updateDynamic("MaximumBandwidthInMbps")(MaximumBandwidthInMbps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumIops)) __obj.updateDynamic("MaximumIops")(MaximumIops.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumThroughputInMBps)) __obj.updateDynamic("MaximumThroughputInMBps")(MaximumThroughputInMBps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsOptimizedInfo]
   }
+  @scala.inline
+  implicit class EbsOptimizedInfoOps[Self <: EbsOptimizedInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaselineBandwidthInMbps(value: BaselineBandwidthInMbps): Self = this.set("BaselineBandwidthInMbps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineBandwidthInMbps: Self = this.set("BaselineBandwidthInMbps", js.undefined)
+    @scala.inline
+    def setBaselineIops(value: BaselineIops): Self = this.set("BaselineIops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineIops: Self = this.set("BaselineIops", js.undefined)
+    @scala.inline
+    def setBaselineThroughputInMBps(value: BaselineThroughputInMBps): Self = this.set("BaselineThroughputInMBps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineThroughputInMBps: Self = this.set("BaselineThroughputInMBps", js.undefined)
+    @scala.inline
+    def setMaximumBandwidthInMbps(value: MaximumBandwidthInMbps): Self = this.set("MaximumBandwidthInMbps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumBandwidthInMbps: Self = this.set("MaximumBandwidthInMbps", js.undefined)
+    @scala.inline
+    def setMaximumIops(value: MaximumIops): Self = this.set("MaximumIops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumIops: Self = this.set("MaximumIops", js.undefined)
+    @scala.inline
+    def setMaximumThroughputInMBps(value: MaximumThroughputInMBps): Self = this.set("MaximumThroughputInMBps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumThroughputInMBps: Self = this.set("MaximumThroughputInMBps", js.undefined)
+  }
+  
 }
 

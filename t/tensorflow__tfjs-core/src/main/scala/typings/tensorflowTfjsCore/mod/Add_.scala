@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-core", "Add")
 @js.native
-object Add_ extends TopLevel[/* "Identity" */ String]
+object Add_ extends TopLevel[/* "Conv2D" */ String]
 

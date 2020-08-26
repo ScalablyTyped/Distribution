@@ -7,18 +7,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Pick<@wordpress/components.@wordpress/components.Toolbar.Props, 'controls'> */
+@js.native
 trait Props extends js.Object {
-  var children: ReactNode
-  var controls: js.UndefOr[js.Array[js.Array[Control] | Control]] = js.undefined
+  var children: ReactNode = js.native
+  var controls: js.UndefOr[js.Array[js.Array[Control] | Control]] = js.native
 }
 
 object Props {
   @scala.inline
-  def apply(children: ReactNode = null, controls: js.Array[js.Array[Control] | Control] = null): Props = {
+  def apply(): Props = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
+  @scala.inline
+  implicit class PropsOps[Self <: Props] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setControlsVarargs(value: (js.Array[Control] | Control)*): Self = this.set("controls", js.Array(value :_*))
+    @scala.inline
+    def setControls(value: js.Array[js.Array[Control] | Control]): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+  }
+  
 }
 

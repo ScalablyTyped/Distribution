@@ -18,14 +18,30 @@ trait BufferingHints extends js.Object {
 
 object BufferingHints {
   @scala.inline
-  def apply(
-    IntervalInSeconds: js.UndefOr[IntervalInSeconds] = js.undefined,
-    SizeInMBs: js.UndefOr[SizeInMBs] = js.undefined
-  ): BufferingHints = {
+  def apply(): BufferingHints = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(IntervalInSeconds)) __obj.updateDynamic("IntervalInSeconds")(IntervalInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeInMBs)) __obj.updateDynamic("SizeInMBs")(SizeInMBs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferingHints]
   }
+  @scala.inline
+  implicit class BufferingHintsOps[Self <: BufferingHints] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntervalInSeconds(value: IntervalInSeconds): Self = this.set("IntervalInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntervalInSeconds: Self = this.set("IntervalInSeconds", js.undefined)
+    @scala.inline
+    def setSizeInMBs(value: SizeInMBs): Self = this.set("SizeInMBs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeInMBs: Self = this.set("SizeInMBs", js.undefined)
+  }
+  
 }
 

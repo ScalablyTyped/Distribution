@@ -27,19 +27,19 @@ class ChangeVariableAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FChangeVariableAction: IModel = js.native
   def changeVariableName: String = js.native
-  def changeVariableName(newValue: String): js.Any = js.native
+  def changeVariableName_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     */
   def value: String = js.native
-  def value(newValue: String): js.Any = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.9.0: introduced
     */
   def valueModel: Expression = js.native
-  def valueModel(newValue: Expression): js.Any = js.native
+  def valueModel_=(newValue: Expression): Unit = js.native
+  def value_=(newValue: String): Unit = js.native
 }
 
 /* static members */

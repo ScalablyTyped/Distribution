@@ -28,6 +28,7 @@ class ResourceAccountstatuses protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaAccountstatusesCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaAccountstatusesCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountstatusesCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceAccountstatusesCustombatch): GaxiosPromise[SchemaAccountstatusesCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceAccountstatusesCustombatch,
@@ -61,6 +62,7 @@ class ResourceAccountstatuses protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAccountStatus] = js.native
   def get(callback: BodyResponseCallback[SchemaAccountStatus]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountStatus] = js.native
   def get(params: ParamsResourceAccountstatusesGet): GaxiosPromise[SchemaAccountStatus] = js.native
   def get(params: ParamsResourceAccountstatusesGet, callback: BodyResponseCallback[SchemaAccountStatus]): Unit = js.native
   def get(
@@ -92,6 +94,7 @@ class ResourceAccountstatuses protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAccountstatusesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAccountstatusesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountstatusesListResponse] = js.native
   def list(params: ParamsResourceAccountstatusesList): GaxiosPromise[SchemaAccountstatusesListResponse] = js.native
   def list(
     params: ParamsResourceAccountstatusesList,

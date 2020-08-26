@@ -11,8 +11,8 @@ The lodash method `_.indexOf` exported as a module.
 | Full name          | lodash.indexof |
 | Keywords           | lodash-modularized, indexof |
 | # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 1660617 |
+| # dependents       | 37 |
+| # downloads        | 1640709 |
 | # stars            | 0 |
 
 ## Links

@@ -5,18 +5,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-over-type-literal
+@js.native
 trait RegisteredValidator extends js.Object {
-  var options: js.UndefOr[js.Object] = js.undefined
-  var `type`: String
+  var options: js.UndefOr[js.Object] = js.native
+  var `type`: String = js.native
 }
 
 object RegisteredValidator {
   @scala.inline
-  def apply(`type`: String, options: js.Object = null): RegisteredValidator = {
+  def apply(`type`: String): RegisteredValidator = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisteredValidator]
   }
+  @scala.inline
+  implicit class RegisteredValidatorOps[Self <: RegisteredValidator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptions(value: js.Object): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

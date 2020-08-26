@@ -18,11 +18,30 @@ trait EgressEndpoint extends js.Object {
 
 object EgressEndpoint {
   @scala.inline
-  def apply(PackagingConfigurationId: string = null, Url: string = null): EgressEndpoint = {
+  def apply(): EgressEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (PackagingConfigurationId != null) __obj.updateDynamic("PackagingConfigurationId")(PackagingConfigurationId.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EgressEndpoint]
   }
+  @scala.inline
+  implicit class EgressEndpointOps[Self <: EgressEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPackagingConfigurationId(value: string): Self = this.set("PackagingConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackagingConfigurationId: Self = this.set("PackagingConfigurationId", js.undefined)
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

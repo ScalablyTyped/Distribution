@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @see XContent
   * @version 1.0
   */
+@js.native
 trait XCommandProcessor extends XInterface {
   /**
     * ends the command associated with the given id.
@@ -23,7 +24,7 @@ trait XCommandProcessor extends XInterface {
     * simply do nothing.
     * @param CommandId is a unique id for the command to abort. This must be the identifier passed to {@link XCommandProcessor.execute()} for the command to abort.
     */
-  def abort(CommandId: Double): Unit
+  def abort(CommandId: Double): Unit = js.native
   /**
     * creates a unique identifier for a command.
     *
@@ -38,7 +39,7 @@ trait XCommandProcessor extends XInterface {
     * no longer used.
     * @returns a command identifier.
     */
-  def createCommandIdentifier(): Double
+  def createCommandIdentifier(): Double = js.native
   /**
     * executes a command.
     *
@@ -51,7 +52,7 @@ trait XCommandProcessor extends XInterface {
     * @throws DuplicateCommandIdentifierException to indicate that two threads tried to use the same command identifier
     * @throws Exception if an error occurred during the execution of the command.
     */
-  def execute(aCommand: Command, CommandId: Double, Environment: XCommandEnvironment): js.Any
+  def execute(aCommand: Command, CommandId: Double, Environment: XCommandEnvironment): js.Any = js.native
 }
 
 object XCommandProcessor {
@@ -67,5 +68,24 @@ object XCommandProcessor {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction1(abort), acquire = js.Any.fromFunction0(acquire), createCommandIdentifier = js.Any.fromFunction0(createCommandIdentifier), execute = js.Any.fromFunction3(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XCommandProcessor]
   }
+  @scala.inline
+  implicit class XCommandProcessorOps[Self <: XCommandProcessor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbort(value: Double => Unit): Self = this.set("abort", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCreateCommandIdentifier(value: () => Double): Self = this.set("createCommandIdentifier", js.Any.fromFunction0(value))
+    @scala.inline
+    def setExecute(value: (Command, Double, XCommandEnvironment) => js.Any): Self = this.set("execute", js.Any.fromFunction3(value))
+  }
+  
 }
 

@@ -17,7 +17,7 @@ package object mod {
     * a single argument, which is useful for many top-level API defs.
     * See https://github.com/Microsoft/TypeScript/issues/7234 for more info.
     */
-  type ClassType[P, T /* <: typings.react.mod.Component[P, typings.react.mod.ComponentState, _] */, C /* <: typings.react.mod.ComponentClass[P, typings.react.mod.ComponentState] */] = C with (org.scalablytyped.runtime.Instantiable2[/* props */ P, js.UndefOr[/* context */ js.Any], T])
+  type ClassType[P, T /* <: typings.react.mod.Component[P, typings.react.mod.ComponentState, _] */, C /* <: typings.react.mod.ComponentClass[P, typings.react.mod.ComponentState] */] = C with (org.scalablytyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[js.Any], T])
   type ClassicElement[P] = typings.react.mod.CElement[P, typings.react.mod.ClassicComponent[P, typings.react.mod.ComponentState]]
   type ClassicFactory[P] = typings.react.mod.CFactory[P, typings.react.mod.ClassicComponent[P, typings.react.mod.ComponentState]]
   type ClipboardEventHandler[T] = typings.react.mod.EventHandler[typings.react.mod.ClipboardEvent[T]]
@@ -179,7 +179,7 @@ package object mod {
   ]
   type PropsWithChildren[P] = P with typings.react.anon.Children
   /** Ensures that the props do not include string ref, which cannot be forwarded */
-  type PropsWithRef[P] = P | (typings.react.mod.PropsWithoutRef[P] with typings.react.anon.RefExclude)
+  type PropsWithRef[P] = P | (typings.react.mod.PropsWithoutRef[P] with typings.react.anon.`0`)
   /** Ensures that the props do not include ref at all */
   type PropsWithoutRef[P] = P | (typings.std.Pick[
     P, 
@@ -269,7 +269,7 @@ package object mod {
     *
     * target - a reference to the element from which the event was originally dispatched.
     * This might be a child element to the element on which the event listener is registered.
-    * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/pull/12239
+    * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11508#issuecomment-256045682
     */
   type SyntheticEvent[T, E] = typings.react.mod.BaseSyntheticEvent[E, typings.std.EventTarget with T, typings.std.EventTarget]
   type TouchEventHandler[T] = typings.react.mod.EventHandler[typings.react.mod.TouchEvent[T]]

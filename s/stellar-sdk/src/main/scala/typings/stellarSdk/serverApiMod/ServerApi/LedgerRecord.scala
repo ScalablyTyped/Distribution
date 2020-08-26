@@ -33,6 +33,7 @@ trait LedgerRecord
   var transaction_count: Double = js.native
   @JSName("transactions")
   var transactions_Original: CallCollectionFunction[TransactionRecord] = js.native
+  var tx_set_operation_count: Double | Null = js.native
   def effects(): js.Promise[CollectionPage[EffectRecord]] = js.native
   def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionPage[EffectRecord]] = js.native
   def operations(): js.Promise[CollectionPage[OperationRecord]] = js.native

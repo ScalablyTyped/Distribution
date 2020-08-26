@@ -15,12 +15,19 @@ trait AutoColumnSize extends Base {
   def calculateAllColumnsWidth(rowRange: js.Object): Unit = js.native
   def calculateAllColumnsWidth(rowRange: Double): Unit = js.native
   def calculateColumnsWidth(): Unit = js.native
+  def calculateColumnsWidth(colRange: js.UndefOr[scala.Nothing], rowRange: js.UndefOr[scala.Nothing], force: Boolean): Unit = js.native
+  def calculateColumnsWidth(colRange: js.UndefOr[scala.Nothing], rowRange: js.Object): Unit = js.native
+  def calculateColumnsWidth(colRange: js.UndefOr[scala.Nothing], rowRange: js.Object, force: Boolean): Unit = js.native
+  def calculateColumnsWidth(colRange: js.UndefOr[scala.Nothing], rowRange: Double): Unit = js.native
+  def calculateColumnsWidth(colRange: js.UndefOr[scala.Nothing], rowRange: Double, force: Boolean): Unit = js.native
   def calculateColumnsWidth(colRange: js.Object): Unit = js.native
+  def calculateColumnsWidth(colRange: js.Object, rowRange: js.UndefOr[scala.Nothing], force: Boolean): Unit = js.native
   def calculateColumnsWidth(colRange: js.Object, rowRange: js.Object): Unit = js.native
   def calculateColumnsWidth(colRange: js.Object, rowRange: js.Object, force: Boolean): Unit = js.native
   def calculateColumnsWidth(colRange: js.Object, rowRange: Double): Unit = js.native
   def calculateColumnsWidth(colRange: js.Object, rowRange: Double, force: Boolean): Unit = js.native
   def calculateColumnsWidth(colRange: Double): Unit = js.native
+  def calculateColumnsWidth(colRange: Double, rowRange: js.UndefOr[scala.Nothing], force: Boolean): Unit = js.native
   def calculateColumnsWidth(colRange: Double, rowRange: js.Object): Unit = js.native
   def calculateColumnsWidth(colRange: Double, rowRange: js.Object, force: Boolean): Unit = js.native
   def calculateColumnsWidth(colRange: Double, rowRange: Double): Unit = js.native
@@ -29,6 +36,7 @@ trait AutoColumnSize extends Base {
   def clearCache(columns: js.Array[_]): Unit = js.native
   def findColumnsWhereHeaderWasChanged(): js.Array[_] = js.native
   def getColumnWidth(col: Double): Double = js.native
+  def getColumnWidth(col: Double, defaultWidth: js.UndefOr[scala.Nothing], keepMinimum: Boolean): Double = js.native
   def getColumnWidth(col: Double, defaultWidth: Double): Double = js.native
   def getColumnWidth(col: Double, defaultWidth: Double, keepMinimum: Boolean): Double = js.native
   def getFirstVisibleColumn(): Double = js.native

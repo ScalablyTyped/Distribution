@@ -14,10 +14,26 @@ trait DeleteInterconnectResponse extends js.Object {
 
 object DeleteInterconnectResponse {
   @scala.inline
-  def apply(interconnectState: InterconnectState = null): DeleteInterconnectResponse = {
+  def apply(): DeleteInterconnectResponse = {
     val __obj = js.Dynamic.literal()
-    if (interconnectState != null) __obj.updateDynamic("interconnectState")(interconnectState.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInterconnectResponse]
   }
+  @scala.inline
+  implicit class DeleteInterconnectResponseOps[Self <: DeleteInterconnectResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInterconnectState(value: InterconnectState): Self = this.set("interconnectState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectState: Self = this.set("interconnectState", js.undefined)
+  }
+  
 }
 

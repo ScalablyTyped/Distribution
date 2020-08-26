@@ -54,32 +54,66 @@ trait ProjectVersionDescription extends js.Object {
 
 object ProjectVersionDescription {
   @scala.inline
-  def apply(
-    BillableTrainingTimeInSeconds: js.UndefOr[ULong] = js.undefined,
-    CreationTimestamp: DateTime = null,
-    EvaluationResult: EvaluationResult = null,
-    MinInferenceUnits: js.UndefOr[InferenceUnits] = js.undefined,
-    OutputConfig: OutputConfig = null,
-    ProjectVersionArn: ProjectVersionArn = null,
-    Status: ProjectVersionStatus = null,
-    StatusMessage: StatusMessage = null,
-    TestingDataResult: TestingDataResult = null,
-    TrainingDataResult: TrainingDataResult = null,
-    TrainingEndTimestamp: DateTime = null
-  ): ProjectVersionDescription = {
+  def apply(): ProjectVersionDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BillableTrainingTimeInSeconds)) __obj.updateDynamic("BillableTrainingTimeInSeconds")(BillableTrainingTimeInSeconds.get.asInstanceOf[js.Any])
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (EvaluationResult != null) __obj.updateDynamic("EvaluationResult")(EvaluationResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinInferenceUnits)) __obj.updateDynamic("MinInferenceUnits")(MinInferenceUnits.get.asInstanceOf[js.Any])
-    if (OutputConfig != null) __obj.updateDynamic("OutputConfig")(OutputConfig.asInstanceOf[js.Any])
-    if (ProjectVersionArn != null) __obj.updateDynamic("ProjectVersionArn")(ProjectVersionArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (TestingDataResult != null) __obj.updateDynamic("TestingDataResult")(TestingDataResult.asInstanceOf[js.Any])
-    if (TrainingDataResult != null) __obj.updateDynamic("TrainingDataResult")(TrainingDataResult.asInstanceOf[js.Any])
-    if (TrainingEndTimestamp != null) __obj.updateDynamic("TrainingEndTimestamp")(TrainingEndTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectVersionDescription]
   }
+  @scala.inline
+  implicit class ProjectVersionDescriptionOps[Self <: ProjectVersionDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillableTrainingTimeInSeconds(value: ULong): Self = this.set("BillableTrainingTimeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillableTrainingTimeInSeconds: Self = this.set("BillableTrainingTimeInSeconds", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: DateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setEvaluationResult(value: EvaluationResult): Self = this.set("EvaluationResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationResult: Self = this.set("EvaluationResult", js.undefined)
+    @scala.inline
+    def setMinInferenceUnits(value: InferenceUnits): Self = this.set("MinInferenceUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinInferenceUnits: Self = this.set("MinInferenceUnits", js.undefined)
+    @scala.inline
+    def setOutputConfig(value: OutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputConfig: Self = this.set("OutputConfig", js.undefined)
+    @scala.inline
+    def setProjectVersionArn(value: ProjectVersionArn): Self = this.set("ProjectVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectVersionArn: Self = this.set("ProjectVersionArn", js.undefined)
+    @scala.inline
+    def setStatus(value: ProjectVersionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setTestingDataResult(value: TestingDataResult): Self = this.set("TestingDataResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestingDataResult: Self = this.set("TestingDataResult", js.undefined)
+    @scala.inline
+    def setTrainingDataResult(value: TrainingDataResult): Self = this.set("TrainingDataResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingDataResult: Self = this.set("TrainingDataResult", js.undefined)
+    @scala.inline
+    def setTrainingEndTimestamp(value: DateTime): Self = this.set("TrainingEndTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingEndTimestamp: Self = this.set("TrainingEndTimestamp", js.undefined)
+  }
+  
 }
 

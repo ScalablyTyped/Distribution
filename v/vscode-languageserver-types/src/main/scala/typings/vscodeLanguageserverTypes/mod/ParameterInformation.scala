@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParameterInformation extends js.Object {
   /**
     * The human-readable doc-comment of this signature. Will be shown
     * in the UI but can be omitted.
     */
-  var documentation: js.UndefOr[String | MarkupContent] = js.undefined
+  var documentation: js.UndefOr[String | MarkupContent] = js.native
   /**
     * The label of this parameter information.
     *
@@ -20,7 +21,7 @@ trait ParameterInformation extends js.Object {
     * *Note*: a label of type string should be a substring of its containing signature label.
     * Its intended use case is to highlight the parameter label part in the `SignatureInformation.label`.
     */
-  var label: String | (js.Tuple2[Double, Double])
+  var label: String | (js.Tuple2[Double, Double]) = js.native
 }
 
 @JSImport("vscode-languageserver-types", "ParameterInformation")

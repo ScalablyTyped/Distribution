@@ -18,11 +18,32 @@ trait RemoteAccessConfig extends js.Object {
 
 object RemoteAccessConfig {
   @scala.inline
-  def apply(ec2SshKey: String = null, sourceSecurityGroups: StringList = null): RemoteAccessConfig = {
+  def apply(): RemoteAccessConfig = {
     val __obj = js.Dynamic.literal()
-    if (ec2SshKey != null) __obj.updateDynamic("ec2SshKey")(ec2SshKey.asInstanceOf[js.Any])
-    if (sourceSecurityGroups != null) __obj.updateDynamic("sourceSecurityGroups")(sourceSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteAccessConfig]
   }
+  @scala.inline
+  implicit class RemoteAccessConfigOps[Self <: RemoteAccessConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEc2SshKey(value: String): Self = this.set("ec2SshKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2SshKey: Self = this.set("ec2SshKey", js.undefined)
+    @scala.inline
+    def setSourceSecurityGroupsVarargs(value: String*): Self = this.set("sourceSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSourceSecurityGroups(value: StringList): Self = this.set("sourceSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSecurityGroups: Self = this.set("sourceSecurityGroups", js.undefined)
+  }
+  
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "SelectorMatcher")
 @js.native
 class SelectorMatcher[T] ()
-  extends typings.angularCompiler.publicApiMod.SelectorMatcher[T]
+  extends typings.angularCompiler.compilerMod.SelectorMatcher[T]
 
 /* static members */
 @JSImport("@angular/compiler", "SelectorMatcher")

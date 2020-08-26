@@ -193,8 +193,76 @@ object Device extends js.Object {
       * suppressed when            <code>aRangeNames</code> are provided
       */
     def initRangeSet(sName: String): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: js.UndefOr[scala.Nothing],
+      sUnit: js.UndefOr[scala.Nothing],
+      aRangeNames: js.UndefOr[scala.Nothing],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: js.UndefOr[scala.Nothing],
+      sUnit: js.UndefOr[scala.Nothing],
+      aRangeNames: js.Array[String]
+    ): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: js.UndefOr[scala.Nothing],
+      sUnit: js.UndefOr[scala.Nothing],
+      aRangeNames: js.Array[String],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
+    def initRangeSet(sName: String, aRangeBorders: js.UndefOr[scala.Nothing], sUnit: String): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: js.UndefOr[scala.Nothing],
+      sUnit: String,
+      aRangeNames: js.UndefOr[scala.Nothing],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: js.UndefOr[scala.Nothing],
+      sUnit: String,
+      aRangeNames: js.Array[String]
+    ): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: js.UndefOr[scala.Nothing],
+      sUnit: String,
+      aRangeNames: js.Array[String],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
     def initRangeSet(sName: String, aRangeBorders: Double): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Double,
+      sUnit: js.UndefOr[scala.Nothing],
+      aRangeNames: js.UndefOr[scala.Nothing],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Double,
+      sUnit: js.UndefOr[scala.Nothing],
+      aRangeNames: js.Array[String]
+    ): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Double,
+      sUnit: js.UndefOr[scala.Nothing],
+      aRangeNames: js.Array[String],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
     def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String): Unit = js.native
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Double,
+      sUnit: String,
+      aRangeNames: js.UndefOr[scala.Nothing],
+      bSuppressClasses: Boolean
+    ): Unit = js.native
     def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String, aRangeNames: js.Array[String]): Unit = js.native
     def initRangeSet(
       sName: String,

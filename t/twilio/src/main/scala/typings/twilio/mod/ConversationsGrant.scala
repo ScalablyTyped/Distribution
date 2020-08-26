@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class ConversationsGrant () extends Grant {
   def this(options: ConversationsGrantOptions) = this()
   var configurationProfileSid: String = js.native
-  /* CompleteClass */
-  override def toPayload(): GrantPayload = js.native
 }
 

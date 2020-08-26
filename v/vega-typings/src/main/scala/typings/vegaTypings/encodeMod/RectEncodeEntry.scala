@@ -1,90 +1,67 @@
 package typings.vegaTypings.encodeMod
 
-import typings.vegaTypings.configMod.Cursor
-import typings.vegaTypings.configMod.StrokeCap
-import typings.vegaTypings.configMod.StrokeJoin
+import typings.vegaTypings.anon.Test
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RectEncodeEntry extends EncodeEntry {
-  var cornerRadius: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var cornerRadiusBottomLeft: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var cornerRadiusBottomRight: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var cornerRadiusTopLeft: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
-  var cornerRadiusTopRight: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
+  var cornerRadius: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var cornerRadiusBottomLeft: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var cornerRadiusBottomRight: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var cornerRadiusTopLeft: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var cornerRadiusTopRight: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
 }
 
 object RectEncodeEntry {
   @scala.inline
-  def apply(
-    aria: ProductionRule[BooleanValueRef] = null,
-    ariaRole: ProductionRule[StringValueRef] = null,
-    ariaRoleDescription: ProductionRule[StringValueRef] = null,
-    blend: ProductionRule[ScaledValueRef[Blend]] = null,
-    cornerRadius: ProductionRule[NumericValueRef] = null,
-    cornerRadiusBottomLeft: ProductionRule[NumericValueRef] = null,
-    cornerRadiusBottomRight: ProductionRule[NumericValueRef] = null,
-    cornerRadiusTopLeft: ProductionRule[NumericValueRef] = null,
-    cornerRadiusTopRight: ProductionRule[NumericValueRef] = null,
-    cursor: ProductionRule[ScaledValueRef[Cursor]] = null,
-    description: ProductionRule[StringValueRef] = null,
-    fill: ProductionRule[ColorValueRef] = null,
-    fillOpacity: ProductionRule[NumericValueRef] = null,
-    height: ProductionRule[NumericValueRef] = null,
-    opacity: ProductionRule[NumericValueRef] = null,
-    stroke: ProductionRule[ColorValueRef] = null,
-    strokeCap: ProductionRule[ScaledValueRef[StrokeCap]] = null,
-    strokeDash: ProductionRule[ScaledValueRef[js.Array[Double]]] = null,
-    strokeDashOffset: ProductionRule[NumericValueRef] = null,
-    strokeJoin: ProductionRule[ScaledValueRef[StrokeJoin]] = null,
-    strokeMiterLimit: ProductionRule[NumericValueRef] = null,
-    strokeOpacity: ProductionRule[NumericValueRef] = null,
-    strokeWidth: ProductionRule[NumericValueRef] = null,
-    tooltip: ProductionRule[StringValueRef] = null,
-    width: ProductionRule[NumericValueRef] = null,
-    x: ProductionRule[NumericValueRef] = null,
-    x2: ProductionRule[NumericValueRef] = null,
-    xc: ProductionRule[NumericValueRef] = null,
-    y: ProductionRule[NumericValueRef] = null,
-    y2: ProductionRule[NumericValueRef] = null,
-    yc: ProductionRule[NumericValueRef] = null,
-    zindex: ProductionRule[NumericValueRef] = null
-  ): RectEncodeEntry = {
+  def apply(): RectEncodeEntry = {
     val __obj = js.Dynamic.literal()
-    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (ariaRoleDescription != null) __obj.updateDynamic("ariaRoleDescription")(ariaRoleDescription.asInstanceOf[js.Any])
-    if (blend != null) __obj.updateDynamic("blend")(blend.asInstanceOf[js.Any])
-    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
-    if (cornerRadiusBottomLeft != null) __obj.updateDynamic("cornerRadiusBottomLeft")(cornerRadiusBottomLeft.asInstanceOf[js.Any])
-    if (cornerRadiusBottomRight != null) __obj.updateDynamic("cornerRadiusBottomRight")(cornerRadiusBottomRight.asInstanceOf[js.Any])
-    if (cornerRadiusTopLeft != null) __obj.updateDynamic("cornerRadiusTopLeft")(cornerRadiusTopLeft.asInstanceOf[js.Any])
-    if (cornerRadiusTopRight != null) __obj.updateDynamic("cornerRadiusTopRight")(cornerRadiusTopRight.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeCap != null) __obj.updateDynamic("strokeCap")(strokeCap.asInstanceOf[js.Any])
-    if (strokeDash != null) __obj.updateDynamic("strokeDash")(strokeDash.asInstanceOf[js.Any])
-    if (strokeDashOffset != null) __obj.updateDynamic("strokeDashOffset")(strokeDashOffset.asInstanceOf[js.Any])
-    if (strokeJoin != null) __obj.updateDynamic("strokeJoin")(strokeJoin.asInstanceOf[js.Any])
-    if (strokeMiterLimit != null) __obj.updateDynamic("strokeMiterLimit")(strokeMiterLimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (x2 != null) __obj.updateDynamic("x2")(x2.asInstanceOf[js.Any])
-    if (xc != null) __obj.updateDynamic("xc")(xc.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (y2 != null) __obj.updateDynamic("y2")(y2.asInstanceOf[js.Any])
-    if (yc != null) __obj.updateDynamic("yc")(yc.asInstanceOf[js.Any])
-    if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectEncodeEntry]
   }
+  @scala.inline
+  implicit class RectEncodeEntryOps[Self <: RectEncodeEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCornerRadiusVarargs(value: (Test with NumericValueRef)*): Self = this.set("cornerRadius", js.Array(value :_*))
+    @scala.inline
+    def setCornerRadius(value: ProductionRule[NumericValueRef]): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    @scala.inline
+    def setCornerRadiusBottomLeftVarargs(value: (Test with NumericValueRef)*): Self = this.set("cornerRadiusBottomLeft", js.Array(value :_*))
+    @scala.inline
+    def setCornerRadiusBottomLeft(value: ProductionRule[NumericValueRef]): Self = this.set("cornerRadiusBottomLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadiusBottomLeft: Self = this.set("cornerRadiusBottomLeft", js.undefined)
+    @scala.inline
+    def setCornerRadiusBottomRightVarargs(value: (Test with NumericValueRef)*): Self = this.set("cornerRadiusBottomRight", js.Array(value :_*))
+    @scala.inline
+    def setCornerRadiusBottomRight(value: ProductionRule[NumericValueRef]): Self = this.set("cornerRadiusBottomRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadiusBottomRight: Self = this.set("cornerRadiusBottomRight", js.undefined)
+    @scala.inline
+    def setCornerRadiusTopLeftVarargs(value: (Test with NumericValueRef)*): Self = this.set("cornerRadiusTopLeft", js.Array(value :_*))
+    @scala.inline
+    def setCornerRadiusTopLeft(value: ProductionRule[NumericValueRef]): Self = this.set("cornerRadiusTopLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadiusTopLeft: Self = this.set("cornerRadiusTopLeft", js.undefined)
+    @scala.inline
+    def setCornerRadiusTopRightVarargs(value: (Test with NumericValueRef)*): Self = this.set("cornerRadiusTopRight", js.Array(value :_*))
+    @scala.inline
+    def setCornerRadiusTopRight(value: ProductionRule[NumericValueRef]): Self = this.set("cornerRadiusTopRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadiusTopRight: Self = this.set("cornerRadiusTopRight", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Detailed information about the transaction.
   */
+@js.native
 trait TransactionInfo extends js.Object {
   /**
     * Optional checkout option parameter. Whether to use the 'Continue' or
@@ -17,7 +18,7 @@ trait TransactionInfo extends js.Object {
     *
     * @default "DEFAULT"
     */
-  var checkoutOption: js.UndefOr[CheckoutOption] = js.undefined
+  var checkoutOption: js.UndefOr[CheckoutOption] = js.native
   /**
     * ISO 3166-1 alpha-2 country code for the country where the transaction
     * will be completed/processed.
@@ -27,18 +28,18 @@ trait TransactionInfo extends js.Object {
     * may need to provide extra information to you or your processor in
     * order to complete a transaction).
     */
-  var countryCode: js.UndefOr[String] = js.undefined
+  var countryCode: js.UndefOr[String] = js.native
   /**
     * ISO 4217 alphabetic currency code of the transaction.
     *
     * This is a required field.
     */
-  var currencyCode: String
+  var currencyCode: String = js.native
   /**
     * This can be used to display a high level breakdown of the total
     * price. e.g. 'subtotal', 'discount'.
     */
-  var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.undefined
+  var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.native
   /**
     * Total price of this transaction.
     *
@@ -52,7 +53,7 @@ trait TransactionInfo extends js.Object {
     * [[TotalPriceStatus|`ESTIMATED`]] or
     * [[TotalPriceStatus|`FINAL`]].
     */
-  var totalPrice: String
+  var totalPrice: String = js.native
   /**
     * Total price label of this transaction.
     *
@@ -63,7 +64,7 @@ trait TransactionInfo extends js.Object {
     * information. Otherwise the cart modal dialog will not be rendered
     * even if transactionInfo.displayItems is set.
     */
-  var totalPriceLabel: js.UndefOr[String] = js.undefined
+  var totalPriceLabel: js.UndefOr[String] = js.native
   /**
     * Status of this transaction's total price.
     *
@@ -73,7 +74,7 @@ trait TransactionInfo extends js.Object {
     * [[TotalPriceStatus|`FINAL`]] and that
     * the total price to be specified and final.
     */
-  var totalPriceStatus: TotalPriceStatus
+  var totalPriceStatus: TotalPriceStatus = js.native
   /**
     * Correlation ID to refer to this transaction.
     *
@@ -81,7 +82,7 @@ trait TransactionInfo extends js.Object {
     * for referring to this transaction later on (e.g. for debugging issues
     * when communicating with Google).
     */
-  var transactionId: js.UndefOr[String] = js.undefined
+  var transactionId: js.UndefOr[String] = js.native
   /**
     * Transaction note.
     *
@@ -95,30 +96,59 @@ trait TransactionInfo extends js.Object {
     *   reservation details. The maximum length allowed for this field
     *   is 80.
     */
-  var transactionNote: js.UndefOr[String] = js.undefined
+  var transactionNote: js.UndefOr[String] = js.native
 }
 
 object TransactionInfo {
   @scala.inline
-  def apply(
-    currencyCode: String,
-    totalPrice: String,
-    totalPriceStatus: TotalPriceStatus,
-    checkoutOption: CheckoutOption = null,
-    countryCode: String = null,
-    displayItems: js.Array[DisplayItem] = null,
-    totalPriceLabel: String = null,
-    transactionId: String = null,
-    transactionNote: String = null
-  ): TransactionInfo = {
+  def apply(currencyCode: String, totalPrice: String, totalPriceStatus: TotalPriceStatus): TransactionInfo = {
     val __obj = js.Dynamic.literal(currencyCode = currencyCode.asInstanceOf[js.Any], totalPrice = totalPrice.asInstanceOf[js.Any], totalPriceStatus = totalPriceStatus.asInstanceOf[js.Any])
-    if (checkoutOption != null) __obj.updateDynamic("checkoutOption")(checkoutOption.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
-    if (totalPriceLabel != null) __obj.updateDynamic("totalPriceLabel")(totalPriceLabel.asInstanceOf[js.Any])
-    if (transactionId != null) __obj.updateDynamic("transactionId")(transactionId.asInstanceOf[js.Any])
-    if (transactionNote != null) __obj.updateDynamic("transactionNote")(transactionNote.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionInfo]
   }
+  @scala.inline
+  implicit class TransactionInfoOps[Self <: TransactionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotalPrice(value: String): Self = this.set("totalPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTotalPriceStatus(value: TotalPriceStatus): Self = this.set("totalPriceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheckoutOption(value: CheckoutOption): Self = this.set("checkoutOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckoutOption: Self = this.set("checkoutOption", js.undefined)
+    @scala.inline
+    def setCountryCode(value: String): Self = this.set("countryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("countryCode", js.undefined)
+    @scala.inline
+    def setDisplayItemsVarargs(value: DisplayItem*): Self = this.set("displayItems", js.Array(value :_*))
+    @scala.inline
+    def setDisplayItems(value: js.Array[DisplayItem]): Self = this.set("displayItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayItems: Self = this.set("displayItems", js.undefined)
+    @scala.inline
+    def setTotalPriceLabel(value: String): Self = this.set("totalPriceLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalPriceLabel: Self = this.set("totalPriceLabel", js.undefined)
+    @scala.inline
+    def setTransactionId(value: String): Self = this.set("transactionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionId: Self = this.set("transactionId", js.undefined)
+    @scala.inline
+    def setTransactionNote(value: String): Self = this.set("transactionNote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransactionNote: Self = this.set("transactionNote", js.undefined)
+  }
+  
 }
 

@@ -14,36 +14,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopoverProps extends js.Object {
-  var children: js.Array[ReactNode] | ReactNode
-  var inverted: js.UndefOr[Boolean] = js.undefined
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var placement: js.UndefOr[top | right | bottom | left] = js.undefined
-  var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
-  var trigger: ReactNode
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var children: js.Array[ReactNode] | ReactNode = js.native
+  var inverted: js.UndefOr[Boolean] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var placement: js.UndefOr[top | right | bottom | left] = js.native
+  var skin: js.UndefOr[neutral | primary | success | warning | error] = js.native
+  var trigger: ReactNode = js.native
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object PopoverProps {
   @scala.inline
-  def apply(
-    children: js.Array[ReactNode] | ReactNode = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    onClose: () => Unit = null,
-    placement: top | right | bottom | left = null,
-    skin: neutral | primary | success | warning | error = null,
-    trigger: ReactNode = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): PopoverProps = {
+  def apply(): PopoverProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopoverProps]
   }
+  @scala.inline
+  implicit class PopoverPropsOps[Self <: PopoverProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[ReactNode] | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setPlacement(value: top | right | bottom | left): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setSkin(value: neutral | primary | success | warning | error): Self = this.set("skin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin: Self = this.set("skin", js.undefined)
+    @scala.inline
+    def setTrigger(value: ReactNode): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

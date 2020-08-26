@@ -70,40 +70,94 @@ trait ContainerProperties extends js.Object {
 
 object ContainerProperties {
   @scala.inline
-  def apply(
-    command: StringList = null,
-    environment: EnvironmentVariables = null,
-    image: String = null,
-    instanceType: String = null,
-    jobRoleArn: String = null,
-    linuxParameters: LinuxParameters = null,
-    memory: js.UndefOr[Integer] = js.undefined,
-    mountPoints: MountPoints = null,
-    privileged: js.UndefOr[Boolean] = js.undefined,
-    readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined,
-    resourceRequirements: ResourceRequirements = null,
-    ulimits: Ulimits = null,
-    user: String = null,
-    vcpus: js.UndefOr[Integer] = js.undefined,
-    volumes: Volumes = null
-  ): ContainerProperties = {
+  def apply(): ContainerProperties = {
     val __obj = js.Dynamic.literal()
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (jobRoleArn != null) __obj.updateDynamic("jobRoleArn")(jobRoleArn.asInstanceOf[js.Any])
-    if (linuxParameters != null) __obj.updateDynamic("linuxParameters")(linuxParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(memory)) __obj.updateDynamic("memory")(memory.get.asInstanceOf[js.Any])
-    if (mountPoints != null) __obj.updateDynamic("mountPoints")(mountPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(privileged)) __obj.updateDynamic("privileged")(privileged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonlyRootFilesystem)) __obj.updateDynamic("readonlyRootFilesystem")(readonlyRootFilesystem.get.asInstanceOf[js.Any])
-    if (resourceRequirements != null) __obj.updateDynamic("resourceRequirements")(resourceRequirements.asInstanceOf[js.Any])
-    if (ulimits != null) __obj.updateDynamic("ulimits")(ulimits.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
-    if (!js.isUndefined(vcpus)) __obj.updateDynamic("vcpus")(vcpus.get.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerProperties]
   }
+  @scala.inline
+  implicit class ContainerPropertiesOps[Self <: ContainerProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    @scala.inline
+    def setCommand(value: StringList): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setEnvironmentVarargs(value: KeyValuePair*): Self = this.set("environment", js.Array(value :_*))
+    @scala.inline
+    def setEnvironment(value: EnvironmentVariables): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setJobRoleArn(value: String): Self = this.set("jobRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobRoleArn: Self = this.set("jobRoleArn", js.undefined)
+    @scala.inline
+    def setLinuxParameters(value: LinuxParameters): Self = this.set("linuxParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinuxParameters: Self = this.set("linuxParameters", js.undefined)
+    @scala.inline
+    def setMemory(value: Integer): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemory: Self = this.set("memory", js.undefined)
+    @scala.inline
+    def setMountPointsVarargs(value: MountPoint*): Self = this.set("mountPoints", js.Array(value :_*))
+    @scala.inline
+    def setMountPoints(value: MountPoints): Self = this.set("mountPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountPoints: Self = this.set("mountPoints", js.undefined)
+    @scala.inline
+    def setPrivileged(value: Boolean): Self = this.set("privileged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivileged: Self = this.set("privileged", js.undefined)
+    @scala.inline
+    def setReadonlyRootFilesystem(value: Boolean): Self = this.set("readonlyRootFilesystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadonlyRootFilesystem: Self = this.set("readonlyRootFilesystem", js.undefined)
+    @scala.inline
+    def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = this.set("resourceRequirements", js.Array(value :_*))
+    @scala.inline
+    def setResourceRequirements(value: ResourceRequirements): Self = this.set("resourceRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRequirements: Self = this.set("resourceRequirements", js.undefined)
+    @scala.inline
+    def setUlimitsVarargs(value: Ulimit*): Self = this.set("ulimits", js.Array(value :_*))
+    @scala.inline
+    def setUlimits(value: Ulimits): Self = this.set("ulimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUlimits: Self = this.set("ulimits", js.undefined)
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+    @scala.inline
+    def setVcpus(value: Integer): Self = this.set("vcpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVcpus: Self = this.set("vcpus", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: Volume*): Self = this.set("volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: Volumes): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("volumes", js.undefined)
+  }
+  
 }
 

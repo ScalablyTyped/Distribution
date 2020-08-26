@@ -7,57 +7,68 @@ import scala.scalajs.js.annotation._
 /**
   * Active or inactive ingredient
   */
+@js.native
 trait MedicationIngredient extends BackboneElement {
   /**
     * Contains extended information for property 'isActive'.
     */
-  var _isActive: js.UndefOr[Element] = js.undefined
+  var _isActive: js.UndefOr[Element] = js.native
   /**
     * Quantity of ingredient present
     */
-  var amount: js.UndefOr[Ratio] = js.undefined
+  var amount: js.UndefOr[Ratio] = js.native
   /**
     * Active ingredient indicator
     */
-  var isActive: js.UndefOr[Boolean] = js.undefined
+  var isActive: js.UndefOr[Boolean] = js.native
   /**
     * The product contained
     */
-  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var itemCodeableConcept: js.UndefOr[CodeableConcept] = js.native
   /**
     * The product contained
     */
-  var itemReference: js.UndefOr[Reference] = js.undefined
+  var itemReference: js.UndefOr[Reference] = js.native
 }
 
 object MedicationIngredient {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _isActive: Element = null,
-    amount: Ratio = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    itemCodeableConcept: CodeableConcept = null,
-    itemReference: Reference = null,
-    modifierExtension: js.Array[Extension] = null
-  ): MedicationIngredient = {
+  def apply(): MedicationIngredient = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_isActive != null) __obj.updateDynamic("_isActive")(_isActive.asInstanceOf[js.Any])
-    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
-    if (itemCodeableConcept != null) __obj.updateDynamic("itemCodeableConcept")(itemCodeableConcept.asInstanceOf[js.Any])
-    if (itemReference != null) __obj.updateDynamic("itemReference")(itemReference.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationIngredient]
   }
+  @scala.inline
+  implicit class MedicationIngredientOps[Self <: MedicationIngredient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_isActive(value: Element): Self = this.set("_isActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_isActive: Self = this.set("_isActive", js.undefined)
+    @scala.inline
+    def setAmount(value: Ratio): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    @scala.inline
+    def setItemCodeableConcept(value: CodeableConcept): Self = this.set("itemCodeableConcept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCodeableConcept: Self = this.set("itemCodeableConcept", js.undefined)
+    @scala.inline
+    def setItemReference(value: Reference): Self = this.set("itemReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemReference: Self = this.set("itemReference", js.undefined)
+  }
+  
 }
 

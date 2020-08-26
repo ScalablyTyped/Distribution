@@ -34,19 +34,40 @@ trait TestDNSAnswerRequest extends js.Object {
 
 object TestDNSAnswerRequest {
   @scala.inline
-  def apply(
-    HostedZoneId: ResourceId,
-    RecordName: DNSName,
-    RecordType: RRType,
-    EDNS0ClientSubnetIP: IPAddress = null,
-    EDNS0ClientSubnetMask: SubnetMask = null,
-    ResolverIP: IPAddress = null
-  ): TestDNSAnswerRequest = {
+  def apply(HostedZoneId: ResourceId, RecordName: DNSName, RecordType: RRType): TestDNSAnswerRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], RecordName = RecordName.asInstanceOf[js.Any], RecordType = RecordType.asInstanceOf[js.Any])
-    if (EDNS0ClientSubnetIP != null) __obj.updateDynamic("EDNS0ClientSubnetIP")(EDNS0ClientSubnetIP.asInstanceOf[js.Any])
-    if (EDNS0ClientSubnetMask != null) __obj.updateDynamic("EDNS0ClientSubnetMask")(EDNS0ClientSubnetMask.asInstanceOf[js.Any])
-    if (ResolverIP != null) __obj.updateDynamic("ResolverIP")(ResolverIP.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestDNSAnswerRequest]
   }
+  @scala.inline
+  implicit class TestDNSAnswerRequestOps[Self <: TestDNSAnswerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordName(value: DNSName): Self = this.set("RecordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecordType(value: RRType): Self = this.set("RecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEDNS0ClientSubnetIP(value: IPAddress): Self = this.set("EDNS0ClientSubnetIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEDNS0ClientSubnetIP: Self = this.set("EDNS0ClientSubnetIP", js.undefined)
+    @scala.inline
+    def setEDNS0ClientSubnetMask(value: SubnetMask): Self = this.set("EDNS0ClientSubnetMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEDNS0ClientSubnetMask: Self = this.set("EDNS0ClientSubnetMask", js.undefined)
+    @scala.inline
+    def setResolverIP(value: IPAddress): Self = this.set("ResolverIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverIP: Self = this.set("ResolverIP", js.undefined)
+  }
+  
 }
 

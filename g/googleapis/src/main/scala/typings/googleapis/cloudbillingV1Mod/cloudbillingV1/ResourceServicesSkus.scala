@@ -99,6 +99,7 @@ class ResourceServicesSkus protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListSkusResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSkusResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSkusResponse] = js.native
   def list(params: ParamsResourceServicesSkusList): GaxiosPromise[SchemaListSkusResponse] = js.native
   def list(params: ParamsResourceServicesSkusList, callback: BodyResponseCallback[SchemaListSkusResponse]): Unit = js.native
   def list(

@@ -42,11 +42,13 @@ object global extends js.Object {
   def fail(e: js.Any): Unit = js.native
   def fdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
   def fit(expectation: String): Unit = js.native
+  def fit(expectation: String, assertion: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def fit(expectation: String, assertion: js.Function0[Unit]): Unit = js.native
   def fit(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = js.native
   def fit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
   def fit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit], timeout: Double): Unit = js.native
   def it(expectation: String): Unit = js.native
+  def it(expectation: String, assertion: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def it(expectation: String, assertion: js.Function0[Unit]): Unit = js.native
   def it(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = js.native
   def it(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native
@@ -59,10 +61,12 @@ object global extends js.Object {
   def waits(): Unit = js.native
   def waits(timeout: Double): Unit = js.native
   def waitsFor(latchMethod: js.Function0[Boolean]): Unit = js.native
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String): Unit = js.native
   def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String, timeout: Double): Unit = js.native
   def xdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
   def xit(expectation: String): Unit = js.native
+  def xit(expectation: String, assertion: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
   def xit(expectation: String, assertion: js.Function0[Unit]): Unit = js.native
   def xit(expectation: String, assertion: js.Function0[Unit], timeout: Double): Unit = js.native
   def xit(expectation: String, assertion: js.Function1[/* done */ DoneFn, Unit]): Unit = js.native

@@ -25,6 +25,7 @@ object panZoomInteractionMod extends js.Object {
     */
   class PanZoom () extends Interaction {
     def this(xScale: TransformableScale[_, Double]) = this()
+    def this(xScale: js.UndefOr[scala.Nothing], yScale: TransformableScale[_, Double]) = this()
     def this(xScale: TransformableScale[_, Double], yScale: TransformableScale[_, Double]) = this()
     var _dragInteraction: js.Any = js.native
     var _maxDomainExtents: js.Any = js.native
@@ -299,6 +300,7 @@ object panZoomInteractionMod extends js.Object {
       * values. Default true.
       */
     def zoom(zoomAmount: Double): CenterValue = js.native
+    def zoom(zoomAmount: Double, centerValue: js.UndefOr[scala.Nothing], constrained: Boolean): CenterValue = js.native
     def zoom(zoomAmount: Double, centerValue: Point): CenterValue = js.native
     def zoom(zoomAmount: Double, centerValue: Point, constrained: Boolean): CenterValue = js.native
   }

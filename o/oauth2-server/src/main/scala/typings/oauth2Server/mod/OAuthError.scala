@@ -16,9 +16,5 @@ class OAuthError protected () extends Error {
     * The HTTP error code.
     */
   var code: Double = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

@@ -8,10 +8,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParametersProjectsListForUserEndpoint extends js.Object {
-  var parameters: ProjectsListForUserEndpoint
-  var request: ProjectsListForUserRequestOptions
-  var response: OctokitResponse[ProjectsListForUserResponseData]
+  var parameters: ProjectsListForUserEndpoint = js.native
+  var request: ProjectsListForUserRequestOptions = js.native
+  var response: OctokitResponse[ProjectsListForUserResponseData] = js.native
 }
 
 object ParametersProjectsListForUserEndpoint {
@@ -24,5 +25,24 @@ object ParametersProjectsListForUserEndpoint {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersProjectsListForUserEndpoint]
   }
+  @scala.inline
+  implicit class ParametersProjectsListForUserEndpointOps[Self <: ParametersProjectsListForUserEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameters(value: ProjectsListForUserEndpoint): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest(value: ProjectsListForUserRequestOptions): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponse(value: OctokitResponse[ProjectsListForUserResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+  }
+  
 }
 

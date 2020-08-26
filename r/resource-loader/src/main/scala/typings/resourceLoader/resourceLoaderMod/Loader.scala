@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Loader () extends js.Object {
   def this(baseUrl: String) = this()
+  def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
   /**
     * The base url for all resources loaded by this loader.
@@ -174,6 +175,12 @@ class Loader () extends js.Object {
     url: String,
     callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
   ): this.type = js.native
+  def add(
+    name: String,
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
+  ): this.type = js.native
   def add(name: String, url: String, options: IAddOptions): this.type = js.native
   def add(
     name: String,
@@ -209,6 +216,11 @@ class Loader () extends js.Object {
     */
   def add(url: String): this.type = js.native
   def add(url: String, callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal): this.type = js.native
+  def add(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: typings.resourceLoader.resourceLoaderMod.Resource.OnCompleteSignal
+  ): this.type = js.native
   def add(url: String, options: IAddOptions): this.type = js.native
   def add(
     url: String,

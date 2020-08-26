@@ -18,11 +18,32 @@ trait ListCreateAccountStatusResponse extends js.Object {
 
 object ListCreateAccountStatusResponse {
   @scala.inline
-  def apply(CreateAccountStatuses: CreateAccountStatuses = null, NextToken: NextToken = null): ListCreateAccountStatusResponse = {
+  def apply(): ListCreateAccountStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreateAccountStatuses != null) __obj.updateDynamic("CreateAccountStatuses")(CreateAccountStatuses.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCreateAccountStatusResponse]
   }
+  @scala.inline
+  implicit class ListCreateAccountStatusResponseOps[Self <: ListCreateAccountStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateAccountStatusesVarargs(value: CreateAccountStatus*): Self = this.set("CreateAccountStatuses", js.Array(value :_*))
+    @scala.inline
+    def setCreateAccountStatuses(value: CreateAccountStatuses): Self = this.set("CreateAccountStatuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateAccountStatuses: Self = this.set("CreateAccountStatuses", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

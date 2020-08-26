@@ -22,15 +22,32 @@ trait CreateDeploymentRequest extends js.Object {
 
 object CreateDeploymentRequest {
   @scala.inline
-  def apply(
-    ApiId: string,
-    Description: StringWithLengthBetween0And1024 = null,
-    StageName: StringWithLengthBetween1And128 = null
-  ): CreateDeploymentRequest = {
+  def apply(ApiId: string): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (StageName != null) __obj.updateDynamic("StageName")(StageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
+  @scala.inline
+  implicit class CreateDeploymentRequestOps[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setStageName(value: StringWithLengthBetween1And128): Self = this.set("StageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("StageName", js.undefined)
+  }
+  
 }
 

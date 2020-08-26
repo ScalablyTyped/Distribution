@@ -160,8 +160,10 @@ trait CharmInstance extends WritableStream {
   /** Move the cursor up by `y` rows. */
   def up(y: Double): this.type = js.native
   def write(msg: String, cb: js.Function): Boolean = js.native
+  def write(msgs: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
   def write(msgs: String, encoding: String): Boolean = js.native
   def write(msgs: String, encoding: String, cb: js.Function): Boolean = js.native
+  def write(msgs: Buffer, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
   def write(msgs: Buffer, encoding: String): Boolean = js.native
   def write(msgs: Buffer, encoding: String, cb: js.Function): Boolean = js.native
   def write(msg: Buffer): Boolean = js.native

@@ -11,8 +11,8 @@ SockJS-client is a browser JavaScript library that provides a WebSocket-like obj
 | Full name          | sockjs-client |
 | Keywords           | websockets, websocket |
 | # releases         | 5 |
-| # dependents       | 424 |
-| # downloads        | 276482582 |
+| # dependents       | 427 |
+| # downloads        | 283687939 |
 | # stars            | 12 |
 
 ## Links

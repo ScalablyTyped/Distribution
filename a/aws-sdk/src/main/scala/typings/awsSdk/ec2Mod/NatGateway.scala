@@ -54,32 +54,70 @@ trait NatGateway extends js.Object {
 
 object NatGateway {
   @scala.inline
-  def apply(
-    CreateTime: DateTime = null,
-    DeleteTime: DateTime = null,
-    FailureCode: String = null,
-    FailureMessage: String = null,
-    NatGatewayAddresses: NatGatewayAddressList = null,
-    NatGatewayId: String = null,
-    ProvisionedBandwidth: ProvisionedBandwidth = null,
-    State: NatGatewayState = null,
-    SubnetId: String = null,
-    Tags: TagList = null,
-    VpcId: String = null
-  ): NatGateway = {
+  def apply(): NatGateway = {
     val __obj = js.Dynamic.literal()
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (DeleteTime != null) __obj.updateDynamic("DeleteTime")(DeleteTime.asInstanceOf[js.Any])
-    if (FailureCode != null) __obj.updateDynamic("FailureCode")(FailureCode.asInstanceOf[js.Any])
-    if (FailureMessage != null) __obj.updateDynamic("FailureMessage")(FailureMessage.asInstanceOf[js.Any])
-    if (NatGatewayAddresses != null) __obj.updateDynamic("NatGatewayAddresses")(NatGatewayAddresses.asInstanceOf[js.Any])
-    if (NatGatewayId != null) __obj.updateDynamic("NatGatewayId")(NatGatewayId.asInstanceOf[js.Any])
-    if (ProvisionedBandwidth != null) __obj.updateDynamic("ProvisionedBandwidth")(ProvisionedBandwidth.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NatGateway]
   }
+  @scala.inline
+  implicit class NatGatewayOps[Self <: NatGateway] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setDeleteTime(value: DateTime): Self = this.set("DeleteTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteTime: Self = this.set("DeleteTime", js.undefined)
+    @scala.inline
+    def setFailureCode(value: String): Self = this.set("FailureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("FailureCode", js.undefined)
+    @scala.inline
+    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    @scala.inline
+    def setNatGatewayAddressesVarargs(value: NatGatewayAddress*): Self = this.set("NatGatewayAddresses", js.Array(value :_*))
+    @scala.inline
+    def setNatGatewayAddresses(value: NatGatewayAddressList): Self = this.set("NatGatewayAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNatGatewayAddresses: Self = this.set("NatGatewayAddresses", js.undefined)
+    @scala.inline
+    def setNatGatewayId(value: String): Self = this.set("NatGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNatGatewayId: Self = this.set("NatGatewayId", js.undefined)
+    @scala.inline
+    def setProvisionedBandwidth(value: ProvisionedBandwidth): Self = this.set("ProvisionedBandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedBandwidth: Self = this.set("ProvisionedBandwidth", js.undefined)
+    @scala.inline
+    def setState(value: NatGatewayState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setSubnetId(value: String): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

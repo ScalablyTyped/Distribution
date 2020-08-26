@@ -13,27 +13,23 @@ trait XmlDecl[Parent] extends js.Object {
   val _validation: js.Any = js.native
   var _version: js.Any = js.native
   /**
-    * Sets the encoding associated with this declaration.
-    */
-  def encoding(): js.Any = js.native
-  def encoding(encoding: String): js.Any = js.native
-  /**
     * Gets the encoding associated with this declaration.
     */
-  @JSName("encoding")
-  def encoding_Union: js.UndefOr[String] = js.native
+  def encoding: js.UndefOr[String] = js.native
   /**
-    * Sets the value of the standalone attribute associated with this
-    * declaration.
+    * Sets the encoding associated with this declaration.
     */
-  def standalone(): js.Any = js.native
-  def standalone(standalone: String): js.Any = js.native
+  def encoding_=(encoding: js.UndefOr[String]): Unit = js.native
   /**
     * Gets the value of the standalone attribute associated with this
     * declaration.
     */
-  @JSName("standalone")
-  def standalone_Union: js.UndefOr[String] = js.native
+  def standalone: js.UndefOr[String] = js.native
+  /**
+    * Sets the value of the standalone attribute associated with this
+    * declaration.
+    */
+  def standalone_=(standalone: js.UndefOr[String]): Unit = js.native
   def toString(options: IStringOptions): String = js.native
   /**
     * Returns the parent of this declaration.
@@ -46,6 +42,6 @@ trait XmlDecl[Parent] extends js.Object {
   /**
     * Sets the XML version associated with this declaration.
     */
-  def version(version: String): js.Any = js.native
+  def version_=(version: String): Unit = js.native
 }
 

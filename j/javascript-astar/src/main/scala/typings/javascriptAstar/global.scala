@@ -15,18 +15,11 @@ object global extends js.Object {
     extends typings.javascriptAstar.Graph {
     def this(grid: js.Array[js.Array[Double]]) = this()
     def this(grid: js.Array[js.Array[Double]], options: Diagonal) = this()
-    /* CompleteClass */
-    override var grid: js.Array[js.Array[typings.javascriptAstar.GridNode]] = js.native
   }
   
   @js.native
   class GridNode ()
-    extends typings.javascriptAstar.GridNode {
-    /* CompleteClass */
-    override var x: Double = js.native
-    /* CompleteClass */
-    override var y: Double = js.native
-  }
+    extends typings.javascriptAstar.GridNode
   
   @js.native
   object astar extends js.Object {

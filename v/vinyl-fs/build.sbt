@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "vinyl-fs"
-version := "2.4-dt-20200515Z-d8700c"
-scalaVersion := "2.13.2"
+version := "2.4-dt-20200515Z-6c8471"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20200604Z-e0f252",
-  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20200515Z-41d784",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200515Z-d64372",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20200515Z-b6eed2")
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20200706Z-0febbd",
+  "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20200515Z-55c596",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20200515Z-e00af9",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20200515Z-5db8a3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

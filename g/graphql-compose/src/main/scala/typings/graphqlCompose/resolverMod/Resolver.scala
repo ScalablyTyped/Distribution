@@ -39,6 +39,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
   def clone[TNewSource, TNewArgs](opts: ResolverOpts[TNewSource, TContext, TNewArgs, _]): Resolver[TNewSource, TContext, TNewArgs, _] = js.native
   def cloneArg(argName: String, newTypeName: String): this.type = js.native
   def debug(): Resolver[TSource, TContext, TArgs, _] = js.native
+  def debug(filterDotPaths: js.UndefOr[scala.Nothing], opts: ResolveDebugOpts): Resolver[TSource, TContext, TArgs, _] = js.native
   def debug(filterDotPaths: Params): Resolver[TSource, TContext, TArgs, _] = js.native
   def debug(filterDotPaths: Params, opts: ResolveDebugOpts): Resolver[TSource, TContext, TArgs, _] = js.native
   def debugExecTime(): Resolver[TSource, TContext, TArgs, _] = js.native
@@ -157,6 +158,7 @@ class Resolver[TSource, TContext, TArgs, TReturn] protected () extends js.Object
     */
   def withMiddlewares(middlewares: js.Array[ResolverMiddleware[TSource, TContext, TArgs]]): Resolver[TSource, TContext, TArgs, _] = js.native
   def wrap[TNewSource, TNewArgs](): Resolver[TNewSource, TContext, TNewArgs, _] = js.native
+  def wrap[TNewSource, TNewArgs](cb: js.UndefOr[scala.Nothing], newResolverOpts: ResolverOpts[TNewSource, TContext, TArgs, _]): Resolver[TNewSource, TContext, TNewArgs, _] = js.native
   def wrap[TNewSource, TNewArgs](cb: ResolverWrapCb[TNewSource, TSource, TContext, TNewArgs, TArgs]): Resolver[TNewSource, TContext, TNewArgs, _] = js.native
   def wrap[TNewSource, TNewArgs](
     cb: ResolverWrapCb[TNewSource, TSource, TContext, TNewArgs, TArgs],

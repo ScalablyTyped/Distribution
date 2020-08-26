@@ -64,8 +64,11 @@ package object dmsMod {
   type EventCategoryGroupList = js.Array[typings.awsSdk.dmsMod.EventCategoryGroup]
   type EventList = js.Array[typings.awsSdk.dmsMod.Event]
   type EventSubscriptionsList = js.Array[typings.awsSdk.dmsMod.EventSubscription]
+  type ExcludeTestList = js.Array[typings.awsSdk.dmsMod.String]
   type FilterList = js.Array[typings.awsSdk.dmsMod.Filter]
   type FilterValueList = js.Array[typings.awsSdk.dmsMod.String]
+  type IncludeTestList = js.Array[typings.awsSdk.dmsMod.String]
+  type IndividualAssessmentNameList = js.Array[typings.awsSdk.dmsMod.String]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
   type KeyList = js.Array[typings.awsSdk.dmsMod.String]
@@ -124,6 +127,8 @@ package object dmsMod {
   type ReplicationInstanceTaskLogsList = js.Array[typings.awsSdk.dmsMod.ReplicationInstanceTaskLog]
   type ReplicationSubnetGroups = js.Array[typings.awsSdk.dmsMod.ReplicationSubnetGroup]
   type ReplicationTaskAssessmentResultList = js.Array[typings.awsSdk.dmsMod.ReplicationTaskAssessmentResult]
+  type ReplicationTaskAssessmentRunList = js.Array[typings.awsSdk.dmsMod.ReplicationTaskAssessmentRun]
+  type ReplicationTaskIndividualAssessmentList = js.Array[typings.awsSdk.dmsMod.ReplicationTaskIndividualAssessment]
   type ReplicationTaskList = js.Array[typings.awsSdk.dmsMod.ReplicationTask]
   type SchemaList = js.Array[typings.awsSdk.dmsMod.String]
   type SecretString = java.lang.String

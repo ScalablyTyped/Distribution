@@ -26,17 +26,36 @@ trait BlockDeviceMapping extends js.Object {
 
 object BlockDeviceMapping {
   @scala.inline
-  def apply(
-    DeviceName: XmlStringMaxLen255,
-    Ebs: Ebs = null,
-    NoDevice: js.UndefOr[NoDevice] = js.undefined,
-    VirtualName: XmlStringMaxLen255 = null
-  ): BlockDeviceMapping = {
+  def apply(DeviceName: XmlStringMaxLen255): BlockDeviceMapping = {
     val __obj = js.Dynamic.literal(DeviceName = DeviceName.asInstanceOf[js.Any])
-    if (Ebs != null) __obj.updateDynamic("Ebs")(Ebs.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoDevice)) __obj.updateDynamic("NoDevice")(NoDevice.get.asInstanceOf[js.Any])
-    if (VirtualName != null) __obj.updateDynamic("VirtualName")(VirtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockDeviceMapping]
   }
+  @scala.inline
+  implicit class BlockDeviceMappingOps[Self <: BlockDeviceMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceName(value: XmlStringMaxLen255): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEbs(value: Ebs): Self = this.set("Ebs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbs: Self = this.set("Ebs", js.undefined)
+    @scala.inline
+    def setNoDevice(value: NoDevice): Self = this.set("NoDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoDevice: Self = this.set("NoDevice", js.undefined)
+    @scala.inline
+    def setVirtualName(value: XmlStringMaxLen255): Self = this.set("VirtualName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualName: Self = this.set("VirtualName", js.undefined)
+  }
+  
 }
 

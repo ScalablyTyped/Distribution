@@ -12,7 +12,7 @@ inversify-devtools
 | Keywords           | redux, react, example |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 945 |
+| # downloads        | 968 |
 | # stars            | 0 |
 
 ## Links

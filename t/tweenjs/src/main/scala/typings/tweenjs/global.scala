@@ -49,20 +49,6 @@ object global extends js.Object {
         funct: js.Function,
         params: js.Array[_]
       ) = this()
-      /* CompleteClass */
-      override var d: Double = js.native
-      /* CompleteClass */
-      override var funct: js.Function = js.native
-      /* CompleteClass */
-      override var next: typings.tweenjs.createjs.TweenAction = js.native
-      /* CompleteClass */
-      override var params: js.Array[_] = js.native
-      /* CompleteClass */
-      override var prev: typings.tweenjs.createjs.TweenAction = js.native
-      /* CompleteClass */
-      override var scope: js.Any = js.native
-      /* CompleteClass */
-      override var t: Double = js.native
     }
     
     @js.native
@@ -80,22 +66,6 @@ object global extends js.Object {
         ease: js.Function,
         passive: Boolean
       ) = this()
-      /* CompleteClass */
-      override var d: Double = js.native
-      /* CompleteClass */
-      override var ease: js.Function = js.native
-      /* CompleteClass */
-      override var index: Double = js.native
-      /* CompleteClass */
-      override var next: typings.tweenjs.createjs.TweenStep = js.native
-      /* CompleteClass */
-      override var passive: Boolean = js.native
-      /* CompleteClass */
-      override var prev: typings.tweenjs.createjs.TweenStep = js.native
-      /* CompleteClass */
-      override var props: TweenProps = js.native
-      /* CompleteClass */
-      override var t: Double = js.native
     }
     
     /* static members */

@@ -18,11 +18,32 @@ trait DBParameterGroupsMessage extends js.Object {
 
 object DBParameterGroupsMessage {
   @scala.inline
-  def apply(DBParameterGroups: DBParameterGroupList = null, Marker: String = null): DBParameterGroupsMessage = {
+  def apply(): DBParameterGroupsMessage = {
     val __obj = js.Dynamic.literal()
-    if (DBParameterGroups != null) __obj.updateDynamic("DBParameterGroups")(DBParameterGroups.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBParameterGroupsMessage]
   }
+  @scala.inline
+  implicit class DBParameterGroupsMessageOps[Self <: DBParameterGroupsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBParameterGroupsVarargs(value: DBParameterGroup*): Self = this.set("DBParameterGroups", js.Array(value :_*))
+    @scala.inline
+    def setDBParameterGroups(value: DBParameterGroupList): Self = this.set("DBParameterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroups: Self = this.set("DBParameterGroups", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

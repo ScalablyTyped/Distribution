@@ -38,7 +38,11 @@ object core extends js.Object {
       * @returns HTMLElement/Ext.Element The new node
       */
     def append(): js.Any = js.native
+    def append(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+    def append(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    def append(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
     def append(el: js.Any): js.Any = js.native
+    def append(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
     def append(el: js.Any, o: js.Any): js.Any = js.native
     def append(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
     /** [Method] Applies a style specification to an element
@@ -46,6 +50,7 @@ object core extends js.Object {
       * @param styles String/Object/Function A style specification string e.g. 'width:100px', or object in the form {width:'100px'}, or a function which returns such a specification.
       */
     def applyStyles(): Unit = js.native
+    def applyStyles(el: js.UndefOr[scala.Nothing], styles: js.Any): Unit = js.native
     def applyStyles(el: js.Any): Unit = js.native
     def applyStyles(el: js.Any, styles: js.Any): Unit = js.native
     /** [Method] Call the original method that was previously overridden with override Ext define My Cat  constructor functi
@@ -90,6 +95,7 @@ object core extends js.Object {
       * @returns String/String[] If buffer is passed, it is returned. Otherwise the style string is returned.
       */
     def generateStyles(): js.Any = js.native
+    def generateStyles(styles: js.UndefOr[scala.Nothing], buffer: typings.extjs.Ext.Array): js.Any = js.native
     def generateStyles(styles: js.Any): js.Any = js.native
     def generateStyles(styles: js.Any, buffer: typings.extjs.Ext.Array): js.Any = js.native
     /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -111,7 +117,11 @@ object core extends js.Object {
       * @returns HTMLElement/Ext.Element The new node
       */
     def insertAfter(): js.Any = js.native
+    def insertAfter(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+    def insertAfter(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    def insertAfter(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
     def insertAfter(el: js.Any): js.Any = js.native
+    def insertAfter(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
     def insertAfter(el: js.Any, o: js.Any): js.Any = js.native
     def insertAfter(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
     /** [Method] Creates new DOM element s and inserts them before el
@@ -121,7 +131,11 @@ object core extends js.Object {
       * @returns HTMLElement/Ext.Element The new node
       */
     def insertBefore(): js.Any = js.native
+    def insertBefore(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+    def insertBefore(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    def insertBefore(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
     def insertBefore(el: js.Any): js.Any = js.native
+    def insertBefore(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
     def insertBefore(el: js.Any, o: js.Any): js.Any = js.native
     def insertBefore(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
     /** [Method] Creates new DOM element s and inserts them as the first child of el
@@ -131,7 +145,11 @@ object core extends js.Object {
       * @returns HTMLElement/Ext.Element The new node
       */
     def insertFirst(): js.Any = js.native
+    def insertFirst(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+    def insertFirst(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    def insertFirst(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
     def insertFirst(el: js.Any): js.Any = js.native
+    def insertFirst(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
     def insertFirst(el: js.Any, o: js.Any): js.Any = js.native
     def insertFirst(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
     /** [Method] Inserts an HTML fragment into the DOM
@@ -141,7 +159,11 @@ object core extends js.Object {
       * @returns HTMLElement The new node
       */
     def insertHtml(): HTMLElement = js.native
+    def insertHtml(where: js.UndefOr[scala.Nothing], el: js.UndefOr[scala.Nothing], html: java.lang.String): HTMLElement = js.native
+    def insertHtml(where: js.UndefOr[scala.Nothing], el: js.Any): HTMLElement = js.native
+    def insertHtml(where: js.UndefOr[scala.Nothing], el: js.Any, html: java.lang.String): HTMLElement = js.native
     def insertHtml(where: java.lang.String): HTMLElement = js.native
+    def insertHtml(where: java.lang.String, el: js.UndefOr[scala.Nothing], html: java.lang.String): HTMLElement = js.native
     def insertHtml(where: java.lang.String, el: js.Any): HTMLElement = js.native
     def insertHtml(where: java.lang.String, el: js.Any, html: java.lang.String): HTMLElement = js.native
     /** [Method] Returns the markup for the passed Element s config
@@ -157,7 +179,11 @@ object core extends js.Object {
       * @returns HTMLElement/Ext.Element The new node
       */
     def overwrite(): js.Any = js.native
+    def overwrite(el: js.UndefOr[scala.Nothing], o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
+    def overwrite(el: js.UndefOr[scala.Nothing], o: js.Any): js.Any = js.native
+    def overwrite(el: js.UndefOr[scala.Nothing], o: js.Any, returnElement: Boolean): js.Any = js.native
     def overwrite(el: js.Any): js.Any = js.native
+    def overwrite(el: js.Any, o: js.UndefOr[scala.Nothing], returnElement: Boolean): js.Any = js.native
     def overwrite(el: js.Any, o: js.Any): js.Any = js.native
     def overwrite(el: js.Any, o: js.Any, returnElement: Boolean): js.Any = js.native
     /** [Method] Get the reference to the class from which this object was instantiated
@@ -181,6 +207,7 @@ object core extends js.Object {
       * @returns Function
       */
     def compile(): js.Any = js.native
+    def compile(selector: js.UndefOr[scala.Nothing], `type`: java.lang.String): js.Any = js.native
     def compile(selector: java.lang.String): js.Any = js.native
     def compile(selector: java.lang.String, `type`: java.lang.String): js.Any = js.native
     /** [Method] Filters an array of elements to only include matches of a simple selector e g
@@ -190,7 +217,11 @@ object core extends js.Object {
       * @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
       */
     def filter(): typings.extjs.Ext.Array = js.native
+    def filter(el: js.UndefOr[scala.Nothing], selector: js.UndefOr[scala.Nothing], nonMatches: Boolean): typings.extjs.Ext.Array = js.native
+    def filter(el: js.UndefOr[scala.Nothing], selector: java.lang.String): typings.extjs.Ext.Array = js.native
+    def filter(el: js.UndefOr[scala.Nothing], selector: java.lang.String, nonMatches: Boolean): typings.extjs.Ext.Array = js.native
     def filter(el: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+    def filter(el: typings.extjs.Ext.Array, selector: js.UndefOr[scala.Nothing], nonMatches: Boolean): typings.extjs.Ext.Array = js.native
     def filter(el: typings.extjs.Ext.Array, selector: java.lang.String): typings.extjs.Ext.Array = js.native
     def filter(el: typings.extjs.Ext.Array, selector: java.lang.String, nonMatches: Boolean): typings.extjs.Ext.Array = js.native
     /** [Method] Returns true if the passed element s match the passed simple selector e g
@@ -199,6 +230,7 @@ object core extends js.Object {
       * @returns Boolean
       */
     def is(): Boolean = js.native
+    def is(el: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
     def is(el: js.Any): Boolean = js.native
     def is(el: js.Any, selector: java.lang.String): Boolean = js.native
     /** [Method] Selects an array of DOM nodes using JavaScript only implementation
@@ -207,6 +239,7 @@ object core extends js.Object {
       * @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
       */
     def jsSelect(): typings.extjs.Ext.Array = js.native
+    def jsSelect(selector: js.UndefOr[scala.Nothing], root: js.Any): typings.extjs.Ext.Array = js.native
     def jsSelect(selector: java.lang.String): typings.extjs.Ext.Array = js.native
     def jsSelect(selector: java.lang.String, root: js.Any): typings.extjs.Ext.Array = js.native
     /** [Method] Selects an array of DOM nodes by CSS XPath selector
@@ -217,8 +250,39 @@ object core extends js.Object {
       * @returns HTMLElement[] An array of DOM elements (not a NodeList as returned by querySelectorAll).
       */
     def select(): typings.extjs.Ext.Array = js.native
+    def select(
+      path: js.UndefOr[scala.Nothing],
+      root: js.UndefOr[scala.Nothing],
+      `type`: js.UndefOr[scala.Nothing],
+      single: Boolean
+    ): typings.extjs.Ext.Array = js.native
+    def select(path: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], `type`: java.lang.String): typings.extjs.Ext.Array = js.native
+    def select(
+      path: js.UndefOr[scala.Nothing],
+      root: js.UndefOr[scala.Nothing],
+      `type`: java.lang.String,
+      single: Boolean
+    ): typings.extjs.Ext.Array = js.native
+    def select(path: js.UndefOr[scala.Nothing], root: HTMLElement): typings.extjs.Ext.Array = js.native
+    def select(
+      path: js.UndefOr[scala.Nothing],
+      root: HTMLElement,
+      `type`: js.UndefOr[scala.Nothing],
+      single: Boolean
+    ): typings.extjs.Ext.Array = js.native
+    def select(path: js.UndefOr[scala.Nothing], root: HTMLElement, `type`: java.lang.String): typings.extjs.Ext.Array = js.native
+    def select(path: js.UndefOr[scala.Nothing], root: HTMLElement, `type`: java.lang.String, single: Boolean): typings.extjs.Ext.Array = js.native
     def select(path: java.lang.String): typings.extjs.Ext.Array = js.native
+    def select(
+      path: java.lang.String,
+      root: js.UndefOr[scala.Nothing],
+      `type`: js.UndefOr[scala.Nothing],
+      single: Boolean
+    ): typings.extjs.Ext.Array = js.native
+    def select(path: java.lang.String, root: js.UndefOr[scala.Nothing], `type`: java.lang.String): typings.extjs.Ext.Array = js.native
+    def select(path: java.lang.String, root: js.UndefOr[scala.Nothing], `type`: java.lang.String, single: Boolean): typings.extjs.Ext.Array = js.native
     def select(path: java.lang.String, root: HTMLElement): typings.extjs.Ext.Array = js.native
+    def select(path: java.lang.String, root: HTMLElement, `type`: js.UndefOr[scala.Nothing], single: Boolean): typings.extjs.Ext.Array = js.native
     def select(path: java.lang.String, root: HTMLElement, `type`: java.lang.String): typings.extjs.Ext.Array = js.native
     def select(path: java.lang.String, root: HTMLElement, `type`: java.lang.String, single: Boolean): typings.extjs.Ext.Array = js.native
     /** [Method] Selects a single element
@@ -227,6 +291,7 @@ object core extends js.Object {
       * @returns HTMLElement The DOM element which matched the selector.
       */
     def selectNode(): HTMLElement = js.native
+    def selectNode(selector: js.UndefOr[scala.Nothing], root: HTMLElement): HTMLElement = js.native
     def selectNode(selector: java.lang.String): HTMLElement = js.native
     def selectNode(selector: java.lang.String, root: HTMLElement): HTMLElement = js.native
     /** [Method] Selects the value of a node parsing integers and floats
@@ -236,7 +301,11 @@ object core extends js.Object {
       * @returns Number
       */
     def selectNumber(): Double = js.native
+    def selectNumber(selector: js.UndefOr[scala.Nothing], root: js.UndefOr[scala.Nothing], defaultValue: Double): Double = js.native
+    def selectNumber(selector: js.UndefOr[scala.Nothing], root: HTMLElement): Double = js.native
+    def selectNumber(selector: js.UndefOr[scala.Nothing], root: HTMLElement, defaultValue: Double): Double = js.native
     def selectNumber(selector: java.lang.String): Double = js.native
+    def selectNumber(selector: java.lang.String, root: js.UndefOr[scala.Nothing], defaultValue: Double): Double = js.native
     def selectNumber(selector: java.lang.String, root: HTMLElement): Double = js.native
     def selectNumber(selector: java.lang.String, root: HTMLElement, defaultValue: Double): Double = js.native
     /** [Method] Selects the value of a node optionally replacing null with the defaultValue
@@ -246,7 +315,15 @@ object core extends js.Object {
       * @returns String
       */
     def selectValue(): java.lang.String = js.native
+    def selectValue(
+      selector: js.UndefOr[scala.Nothing],
+      root: js.UndefOr[scala.Nothing],
+      defaultValue: java.lang.String
+    ): java.lang.String = js.native
+    def selectValue(selector: js.UndefOr[scala.Nothing], root: HTMLElement): java.lang.String = js.native
+    def selectValue(selector: js.UndefOr[scala.Nothing], root: HTMLElement, defaultValue: java.lang.String): java.lang.String = js.native
     def selectValue(selector: java.lang.String): java.lang.String = js.native
+    def selectValue(selector: java.lang.String, root: js.UndefOr[scala.Nothing], defaultValue: java.lang.String): java.lang.String = js.native
     def selectValue(selector: java.lang.String, root: HTMLElement): java.lang.String = js.native
     def selectValue(selector: java.lang.String, root: HTMLElement, defaultValue: java.lang.String): java.lang.String = js.native
   }
@@ -274,6 +351,7 @@ object core extends js.Object {
       * @param origin String/Object The original method name
       */
     def createAlias(): Unit = js.native
+    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
     def createAlias(alias: js.Any): Unit = js.native
     def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
     /** [Method] Returns the top Element that is located at the passed coordinates Defined in override Ext dom AbstractElement_static
@@ -282,6 +360,7 @@ object core extends js.Object {
       * @returns String The found Element
       */
     def fromPoint(): java.lang.String = js.native
+    def fromPoint(x: js.UndefOr[scala.Nothing], y: Double): java.lang.String = js.native
     def fromPoint(x: Double): java.lang.String = js.native
     def fromPoint(x: Double, y: Double): java.lang.String = js.native
     /** [Method] Retrieves Ext dom Element objects
@@ -326,6 +405,7 @@ object core extends js.Object {
       * @returns Array An array of strings representing remaining unique, merged class names. If class names were added to the first list, the changed property will be true.
       */
     def mergeClsList(): typings.extjs.Ext.Array = js.native
+    def mergeClsList(clsList1: js.UndefOr[scala.Nothing], clsList2: js.Any): typings.extjs.Ext.Array = js.native
     def mergeClsList(clsList1: js.Any): typings.extjs.Ext.Array = js.native
     def mergeClsList(clsList1: js.Any, clsList2: js.Any): typings.extjs.Ext.Array = js.native
     /** [Method] Normalizes CSS property keys from dash delimited to camel case JavaScript Syntax
@@ -358,6 +438,7 @@ object core extends js.Object {
       * @returns Array An array of strings representing remaining class names. If class names were removed, the changed property will be true.
       */
     def removeCls(): typings.extjs.Ext.Array = js.native
+    def removeCls(existingClsList: js.UndefOr[scala.Nothing], removeClsList: js.Any): typings.extjs.Ext.Array = js.native
     def removeCls(existingClsList: js.Any): typings.extjs.Ext.Array = js.native
     def removeCls(existingClsList: js.Any, removeClsList: js.Any): typings.extjs.Ext.Array = js.native
     /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
@@ -367,7 +448,11 @@ object core extends js.Object {
       * @returns Ext.CompositeElementLite/Ext.CompositeElement
       */
     def select(): js.Any = js.native
+    def select(selector: js.UndefOr[scala.Nothing], unique: js.UndefOr[scala.Nothing], root: js.Any): js.Any = js.native
+    def select(selector: js.UndefOr[scala.Nothing], unique: Boolean): js.Any = js.native
+    def select(selector: js.UndefOr[scala.Nothing], unique: Boolean, root: js.Any): js.Any = js.native
     def select(selector: js.Any): js.Any = js.native
+    def select(selector: js.Any, unique: js.UndefOr[scala.Nothing], root: js.Any): js.Any = js.native
     def select(selector: js.Any, unique: Boolean): js.Any = js.native
     def select(selector: js.Any, unique: Boolean, root: js.Any): js.Any = js.native
     /** [Method] Parses a number or string representing margin sizes into an object
@@ -376,6 +461,7 @@ object core extends js.Object {
       * @returns String An string with unitized (px if units is not specified) metrics for top, right, bottom and left
       */
     def unitizeBox(): java.lang.String = js.native
+    def unitizeBox(box: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
     def unitizeBox(box: js.Any): java.lang.String = js.native
     def unitizeBox(box: js.Any, units: java.lang.String): java.lang.String = js.native
   }

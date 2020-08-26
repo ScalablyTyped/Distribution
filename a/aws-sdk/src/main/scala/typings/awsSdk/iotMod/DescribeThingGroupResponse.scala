@@ -50,30 +50,62 @@ trait DescribeThingGroupResponse extends js.Object {
 
 object DescribeThingGroupResponse {
   @scala.inline
-  def apply(
-    indexName: IndexName = null,
-    queryString: QueryString = null,
-    queryVersion: QueryVersion = null,
-    status: DynamicGroupStatus = null,
-    thingGroupArn: ThingGroupArn = null,
-    thingGroupId: ThingGroupId = null,
-    thingGroupMetadata: ThingGroupMetadata = null,
-    thingGroupName: ThingGroupName = null,
-    thingGroupProperties: ThingGroupProperties = null,
-    version: js.UndefOr[Version] = js.undefined
-  ): DescribeThingGroupResponse = {
+  def apply(): DescribeThingGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
-    if (queryString != null) __obj.updateDynamic("queryString")(queryString.asInstanceOf[js.Any])
-    if (queryVersion != null) __obj.updateDynamic("queryVersion")(queryVersion.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (thingGroupArn != null) __obj.updateDynamic("thingGroupArn")(thingGroupArn.asInstanceOf[js.Any])
-    if (thingGroupId != null) __obj.updateDynamic("thingGroupId")(thingGroupId.asInstanceOf[js.Any])
-    if (thingGroupMetadata != null) __obj.updateDynamic("thingGroupMetadata")(thingGroupMetadata.asInstanceOf[js.Any])
-    if (thingGroupName != null) __obj.updateDynamic("thingGroupName")(thingGroupName.asInstanceOf[js.Any])
-    if (thingGroupProperties != null) __obj.updateDynamic("thingGroupProperties")(thingGroupProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingGroupResponse]
   }
+  @scala.inline
+  implicit class DescribeThingGroupResponseOps[Self <: DescribeThingGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    @scala.inline
+    def setQueryString(value: QueryString): Self = this.set("queryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryString: Self = this.set("queryString", js.undefined)
+    @scala.inline
+    def setQueryVersion(value: QueryVersion): Self = this.set("queryVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryVersion: Self = this.set("queryVersion", js.undefined)
+    @scala.inline
+    def setStatus(value: DynamicGroupStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setThingGroupArn(value: ThingGroupArn): Self = this.set("thingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupArn: Self = this.set("thingGroupArn", js.undefined)
+    @scala.inline
+    def setThingGroupId(value: ThingGroupId): Self = this.set("thingGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupId: Self = this.set("thingGroupId", js.undefined)
+    @scala.inline
+    def setThingGroupMetadata(value: ThingGroupMetadata): Self = this.set("thingGroupMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupMetadata: Self = this.set("thingGroupMetadata", js.undefined)
+    @scala.inline
+    def setThingGroupName(value: ThingGroupName): Self = this.set("thingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupName: Self = this.set("thingGroupName", js.undefined)
+    @scala.inline
+    def setThingGroupProperties(value: ThingGroupProperties): Self = this.set("thingGroupProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupProperties: Self = this.set("thingGroupProperties", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

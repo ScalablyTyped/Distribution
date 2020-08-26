@@ -25,11 +25,30 @@ trait SchemaGoogleCloudMlV1ReplicaConfig extends js.Object {
 
 object SchemaGoogleCloudMlV1ReplicaConfig {
   @scala.inline
-  def apply(acceleratorConfig: SchemaGoogleCloudMlV1AcceleratorConfig = null, imageUri: String = null): SchemaGoogleCloudMlV1ReplicaConfig = {
+  def apply(): SchemaGoogleCloudMlV1ReplicaConfig = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorConfig != null) __obj.updateDynamic("acceleratorConfig")(acceleratorConfig.asInstanceOf[js.Any])
-    if (imageUri != null) __obj.updateDynamic("imageUri")(imageUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1ReplicaConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1ReplicaConfigOps[Self <: SchemaGoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorConfig(value: SchemaGoogleCloudMlV1AcceleratorConfig): Self = this.set("acceleratorConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorConfig: Self = this.set("acceleratorConfig", js.undefined)
+    @scala.inline
+    def setImageUri(value: String): Self = this.set("imageUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUri: Self = this.set("imageUri", js.undefined)
+  }
+  
 }
 

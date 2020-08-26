@@ -29,6 +29,7 @@ class ResourceCommentthreads protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(params: ParamsResourceCommentthreadsInsert): GaxiosPromise[SchemaCommentThread] = js.native
   def insert(params: ParamsResourceCommentthreadsInsert, callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
   def insert(
@@ -67,6 +68,7 @@ class ResourceCommentthreads protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentThreadListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(params: ParamsResourceCommentthreadsList): GaxiosPromise[SchemaCommentThreadListResponse] = js.native
   def list(
     params: ParamsResourceCommentthreadsList,
@@ -98,6 +100,7 @@ class ResourceCommentthreads protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCommentThread] = js.native
   def update(callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentThread] = js.native
   def update(params: ParamsResourceCommentthreadsUpdate): GaxiosPromise[SchemaCommentThread] = js.native
   def update(params: ParamsResourceCommentthreadsUpdate, callback: BodyResponseCallback[SchemaCommentThread]): Unit = js.native
   def update(

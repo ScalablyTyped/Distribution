@@ -30,6 +30,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCreative] = js.native
   def create(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def create(params: ParamsResourceAccountsCreativesCreate): GaxiosPromise[SchemaCreative] = js.native
   def create(params: ParamsResourceAccountsCreativesCreate, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def create(
@@ -58,6 +59,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCreative] = js.native
   def get(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def get(params: ParamsResourceAccountsCreativesGet): GaxiosPromise[SchemaCreative] = js.native
   def get(params: ParamsResourceAccountsCreativesGet, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def get(
@@ -88,6 +90,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListCreativesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCreativesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCreativesResponse] = js.native
   def list(params: ParamsResourceAccountsCreativesList): GaxiosPromise[SchemaListCreativesResponse] = js.native
   def list(
     params: ParamsResourceAccountsCreativesList,
@@ -121,6 +124,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     */
   def stopWatching(): GaxiosPromise[SchemaEmpty] = js.native
   def stopWatching(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def stopWatching(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def stopWatching(params: ParamsResourceAccountsCreativesStopwatching): GaxiosPromise[SchemaEmpty] = js.native
   def stopWatching(params: ParamsResourceAccountsCreativesStopwatching, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def stopWatching(
@@ -150,6 +154,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaCreative] = js.native
   def update(callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreative] = js.native
   def update(params: ParamsResourceAccountsCreativesUpdate): GaxiosPromise[SchemaCreative] = js.native
   def update(params: ParamsResourceAccountsCreativesUpdate, callback: BodyResponseCallback[SchemaCreative]): Unit = js.native
   def update(
@@ -180,6 +185,7 @@ class ResourceAccountsCreatives protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaEmpty] = js.native
   def watch(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def watch(params: ParamsResourceAccountsCreativesWatch): GaxiosPromise[SchemaEmpty] = js.native
   def watch(params: ParamsResourceAccountsCreativesWatch, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def watch(

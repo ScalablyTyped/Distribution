@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devtools-detect" : "3.0.0"
+      "devtools-detect" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "devtools-detect" : "3.0.0"
+      "devtools-detect" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

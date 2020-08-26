@@ -17,10 +17,26 @@ trait SchemaInstancesCloneRequest extends js.Object {
 
 object SchemaInstancesCloneRequest {
   @scala.inline
-  def apply(cloneContext: SchemaCloneContext = null): SchemaInstancesCloneRequest = {
+  def apply(): SchemaInstancesCloneRequest = {
     val __obj = js.Dynamic.literal()
-    if (cloneContext != null) __obj.updateDynamic("cloneContext")(cloneContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstancesCloneRequest]
   }
+  @scala.inline
+  implicit class SchemaInstancesCloneRequestOps[Self <: SchemaInstancesCloneRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloneContext(value: SchemaCloneContext): Self = this.set("cloneContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneContext: Self = this.set("cloneContext", js.undefined)
+  }
+  
 }
 

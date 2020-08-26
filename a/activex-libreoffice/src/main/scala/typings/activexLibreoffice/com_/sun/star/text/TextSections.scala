@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to the text sections in a text document. */
+@js.native
 trait TextSections
   extends XIndexAccess
      with XNameAccess

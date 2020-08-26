@@ -1,9 +1,5 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
-import typings.winrtUwp.Windows.Foundation.IAsyncAction
-import typings.winrtUwp.Windows.Foundation.Uri
-import typings.winrtUwp.Windows.Media.Protection.PlayReady.IPlayReadyServiceRequest
-import typings.winrtUwp.Windows.WinRTError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,46 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Initializes a new instance of the PlayReadyRevocationServiceRequest class. */
 class PlayReadyRevocationServiceRequest ()
-  extends typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyRevocationServiceRequest {
-  /** Gets or sets the custom data of the request challenge. This property is not supported in this class. */
-  /* CompleteClass */
-  override var challengeCustomData: String = js.native
-  /** Gets the vendor content protection system identifier. */
-  /* CompleteClass */
-  override var protectionSystem: String = js.native
-  /** Gets the custom data that was returned in the response from the service. This property is not supported in this class. */
-  /* CompleteClass */
-  override var responseCustomData: String = js.native
-  /** Gets the GUID for the type of operation that the PlayReady revocation service request performs. */
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /** Gets or sets the URI used to perform a service request action. This property is not supported in this class. */
-  /* CompleteClass */
-  override var uri: Uri = js.native
-  /**
-    * Begins an asynchronous service request operation.
-    * @return The asynchronous service action.
-    */
-  /* CompleteClass */
-  override def beginServiceRequest(): IAsyncAction = js.native
-  /**
-    * Begins the process of manually enabling. This method is not supported in this class.
-    * @return This method always returns 0x80070032 (the request is not supported).
-    */
-  /* CompleteClass */
-  override def generateManualEnablingChallenge(): typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadySoapMessage = js.native
-  /**
-    * Returns a new service request interface.
-    * @return The new service request interface.
-    */
-  /* CompleteClass */
-  override def nextServiceRequest(): IPlayReadyServiceRequest = js.native
-  /**
-    * Process the raw binary result of a manual enabling challenge. This method is not supported in this class.
-    * @param responseBytes The response result to be processed.
-    * @return This method always returns 0x80070032 (the request is not supported).
-    */
-  /* CompleteClass */
-  override def processManualEnablingResponse(responseBytes: js.Array[Double]): WinRTError = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyRevocationServiceRequest
 

@@ -4,60 +4,143 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RelativeTimeSpec extends js.Object {
-  var M: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var MM: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var d: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var dd: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var future: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
-  var h: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var hh: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var m: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var mm: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var past: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
-  var s: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var ss: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var w: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var y: js.UndefOr[RelativeTimeSpecVal] = js.undefined
-  var yy: js.UndefOr[RelativeTimeSpecVal] = js.undefined
+  var M: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var MM: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var d: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var dd: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var future: js.UndefOr[RelativeTimeFuturePastVal] = js.native
+  var h: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var hh: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var m: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var mm: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var past: js.UndefOr[RelativeTimeFuturePastVal] = js.native
+  var s: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var ss: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var w: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var y: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var yy: js.UndefOr[RelativeTimeSpecVal] = js.native
 }
 
 object RelativeTimeSpec {
   @scala.inline
-  def apply(
-    M: RelativeTimeSpecVal = null,
-    MM: RelativeTimeSpecVal = null,
-    d: RelativeTimeSpecVal = null,
-    dd: RelativeTimeSpecVal = null,
-    future: RelativeTimeFuturePastVal = null,
-    h: RelativeTimeSpecVal = null,
-    hh: RelativeTimeSpecVal = null,
-    m: RelativeTimeSpecVal = null,
-    mm: RelativeTimeSpecVal = null,
-    past: RelativeTimeFuturePastVal = null,
-    s: RelativeTimeSpecVal = null,
-    ss: RelativeTimeSpecVal = null,
-    w: RelativeTimeSpecVal = null,
-    y: RelativeTimeSpecVal = null,
-    yy: RelativeTimeSpecVal = null
-  ): RelativeTimeSpec = {
+  def apply(): RelativeTimeSpec = {
     val __obj = js.Dynamic.literal()
-    if (M != null) __obj.updateDynamic("M")(M.asInstanceOf[js.Any])
-    if (MM != null) __obj.updateDynamic("MM")(MM.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (dd != null) __obj.updateDynamic("dd")(dd.asInstanceOf[js.Any])
-    if (future != null) __obj.updateDynamic("future")(future.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (hh != null) __obj.updateDynamic("hh")(hh.asInstanceOf[js.Any])
-    if (m != null) __obj.updateDynamic("m")(m.asInstanceOf[js.Any])
-    if (mm != null) __obj.updateDynamic("mm")(mm.asInstanceOf[js.Any])
-    if (past != null) __obj.updateDynamic("past")(past.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (ss != null) __obj.updateDynamic("ss")(ss.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (yy != null) __obj.updateDynamic("yy")(yy.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelativeTimeSpec]
   }
+  @scala.inline
+  implicit class RelativeTimeSpecOps[Self <: RelativeTimeSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("M", js.Any.fromFunction4(value))
+    @scala.inline
+    def setM(value: RelativeTimeSpecVal): Self = this.set("M", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteM: Self = this.set("M", js.undefined)
+    @scala.inline
+    def setMMFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("MM", js.Any.fromFunction4(value))
+    @scala.inline
+    def setMM(value: RelativeTimeSpecVal): Self = this.set("MM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMM: Self = this.set("MM", js.undefined)
+    @scala.inline
+    def setDFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("d", js.Any.fromFunction4(value))
+    @scala.inline
+    def setD(value: RelativeTimeSpecVal): Self = this.set("d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
+    def setDdFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("dd", js.Any.fromFunction4(value))
+    @scala.inline
+    def setDd(value: RelativeTimeSpecVal): Self = this.set("dd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDd: Self = this.set("dd", js.undefined)
+    @scala.inline
+    def setFutureFunction1(value: /* relTime */ String => String): Self = this.set("future", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFuture(value: RelativeTimeFuturePastVal): Self = this.set("future", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFuture: Self = this.set("future", js.undefined)
+    @scala.inline
+    def setHFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("h", js.Any.fromFunction4(value))
+    @scala.inline
+    def setH(value: RelativeTimeSpecVal): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setHhFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("hh", js.Any.fromFunction4(value))
+    @scala.inline
+    def setHh(value: RelativeTimeSpecVal): Self = this.set("hh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHh: Self = this.set("hh", js.undefined)
+    @scala.inline
+    def setPastFunction1(value: /* relTime */ String => String): Self = this.set("past", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPast(value: RelativeTimeFuturePastVal): Self = this.set("past", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePast: Self = this.set("past", js.undefined)
+    @scala.inline
+    def setSFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("s", js.Any.fromFunction4(value))
+    @scala.inline
+    def setS(value: RelativeTimeSpecVal): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS: Self = this.set("s", js.undefined)
+    @scala.inline
+    def setSsFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("ss", js.Any.fromFunction4(value))
+    @scala.inline
+    def setSs(value: RelativeTimeSpecVal): Self = this.set("ss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSs: Self = this.set("ss", js.undefined)
+    @scala.inline
+    def setWFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("w", js.Any.fromFunction4(value))
+    @scala.inline
+    def setW(value: RelativeTimeSpecVal): Self = this.set("w", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteW: Self = this.set("w", js.undefined)
+    @scala.inline
+    def setYFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("y", js.Any.fromFunction4(value))
+    @scala.inline
+    def setY(value: RelativeTimeSpecVal): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    @scala.inline
+    def setYyFunction4(
+      value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
+    ): Self = this.set("yy", js.Any.fromFunction4(value))
+    @scala.inline
+    def setYy(value: RelativeTimeSpecVal): Self = this.set("yy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYy: Self = this.set("yy", js.undefined)
+  }
+  
 }
 

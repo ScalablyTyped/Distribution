@@ -22,12 +22,36 @@ trait DescribeDeploymentsRequest extends js.Object {
 
 object DescribeDeploymentsRequest {
   @scala.inline
-  def apply(AppId: String = null, DeploymentIds: Strings = null, StackId: String = null): DescribeDeploymentsRequest = {
+  def apply(): DescribeDeploymentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (AppId != null) __obj.updateDynamic("AppId")(AppId.asInstanceOf[js.Any])
-    if (DeploymentIds != null) __obj.updateDynamic("DeploymentIds")(DeploymentIds.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDeploymentsRequest]
   }
+  @scala.inline
+  implicit class DescribeDeploymentsRequestOps[Self <: DescribeDeploymentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("AppId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("AppId", js.undefined)
+    @scala.inline
+    def setDeploymentIdsVarargs(value: String*): Self = this.set("DeploymentIds", js.Array(value :_*))
+    @scala.inline
+    def setDeploymentIds(value: Strings): Self = this.set("DeploymentIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentIds: Self = this.set("DeploymentIds", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

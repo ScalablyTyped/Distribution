@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object float extends js.Object {
   def apply(): Double = js.native
+  def apply(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def apply(min: Double): Double = js.native
   def apply(min: Double, max: Double): Double = js.native
 }

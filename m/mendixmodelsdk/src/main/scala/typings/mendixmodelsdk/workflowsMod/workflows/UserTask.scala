@@ -41,29 +41,25 @@ class UserTask protected () extends WorkflowTask {
   @JSName("containerAsWorkflow")
   def containerAsWorkflow_MUserTask: Workflow = js.native
   def description: StringTemplate = js.native
-  def description(newValue: StringTemplate): js.Any = js.native
-  def page(): js.Any = js.native
-  def page(newValue: IPage): js.Any = js.native
+  def description_=(newValue: StringTemplate): Unit = js.native
+  def page: IPage | Null = js.native
   def pageQualifiedName: String | Null = js.native
-  @JSName("page")
-  def page_Union: IPage | Null = js.native
+  def page_=(newValue: IPage | Null): Unit = js.native
   def subject: StringTemplate = js.native
-  def subject(newValue: StringTemplate): js.Any = js.native
-  def userRole(): js.Any = js.native
-  def userRole(newValue: IUserRole): js.Any = js.native
-  def userRoleQualifiedName: String | Null = js.native
+  def subject_=(newValue: StringTemplate): Unit = js.native
   /**
     * In version 8.11.0: deleted
     */
-  @JSName("userRole")
-  def userRole_Union: IUserRole | Null = js.native
+  def userRole: IUserRole | Null = js.native
+  def userRoleQualifiedName: String | Null = js.native
+  def userRole_=(newValue: IUserRole | Null): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 8.11.0: introduced
     */
   def userSource: UserSource = js.native
-  def userSource(newValue: UserSource): js.Any = js.native
+  def userSource_=(newValue: UserSource): Unit = js.native
 }
 
 /* static members */

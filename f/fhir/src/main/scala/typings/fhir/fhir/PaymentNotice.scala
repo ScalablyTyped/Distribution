@@ -8,119 +8,134 @@ import scala.scalajs.js.annotation._
   * PaymentNotice request
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait PaymentNotice extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait PaymentNotice extends DomainResource {
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.undefined
+  var _created: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'statusDate'.
     */
-  var _statusDate: js.UndefOr[Element] = js.undefined
+  var _statusDate: js.UndefOr[Element] = js.native
   /**
     * Creation date
     */
-  var created: js.UndefOr[dateTime] = js.undefined
+  var created: js.UndefOr[dateTime] = js.native
   /**
     * Business Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Responsible organization
     */
-  var organization: js.UndefOr[Reference] = js.undefined
+  var organization: js.UndefOr[Reference] = js.native
   /**
     * Whether payment has been sent or cleared
     */
-  var paymentStatus: js.UndefOr[CodeableConcept] = js.undefined
+  var paymentStatus: js.UndefOr[CodeableConcept] = js.native
   /**
     * Responsible practitioner
     */
-  var provider: js.UndefOr[Reference] = js.undefined
+  var provider: js.UndefOr[Reference] = js.native
   /**
     * Request reference
     */
-  var request: js.UndefOr[Reference] = js.undefined
+  var request: js.UndefOr[Reference] = js.native
   /**
     * Response reference
     */
-  var response: js.UndefOr[Reference] = js.undefined
+  var response: js.UndefOr[Reference] = js.native
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
   /**
     * Payment or clearing date
     */
-  var statusDate: js.UndefOr[date] = js.undefined
+  var statusDate: js.UndefOr[date] = js.native
   /**
     * Insurer or Regulatory body
     */
-  var target: js.UndefOr[Reference] = js.undefined
+  var target: js.UndefOr[Reference] = js.native
 }
 
 object PaymentNotice {
   @scala.inline
-  def apply(
-    _created: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    _statusDate: Element = null,
-    contained: js.Array[Resource] = null,
-    created: dateTime = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    organization: Reference = null,
-    paymentStatus: CodeableConcept = null,
-    provider: Reference = null,
-    request: Reference = null,
-    resourceType: code = null,
-    response: Reference = null,
-    status: code = null,
-    statusDate: date = null,
-    target: Reference = null,
-    text: Narrative = null
-  ): PaymentNotice = {
+  def apply(): PaymentNotice = {
     val __obj = js.Dynamic.literal()
-    if (_created != null) __obj.updateDynamic("_created")(_created.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_statusDate != null) __obj.updateDynamic("_statusDate")(_statusDate.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (paymentStatus != null) __obj.updateDynamic("paymentStatus")(paymentStatus.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusDate != null) __obj.updateDynamic("statusDate")(statusDate.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentNotice]
   }
+  @scala.inline
+  implicit class PaymentNoticeOps[Self <: PaymentNotice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_created(value: Element): Self = this.set("_created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_created: Self = this.set("_created", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_statusDate(value: Element): Self = this.set("_statusDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_statusDate: Self = this.set("_statusDate", js.undefined)
+    @scala.inline
+    def setCreated(value: dateTime): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setOrganization(value: Reference): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setPaymentStatus(value: CodeableConcept): Self = this.set("paymentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentStatus: Self = this.set("paymentStatus", js.undefined)
+    @scala.inline
+    def setProvider(value: Reference): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+    @scala.inline
+    def setRequest(value: Reference): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResponse(value: Reference): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusDate(value: date): Self = this.set("statusDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDate: Self = this.set("statusDate", js.undefined)
+    @scala.inline
+    def setTarget(value: Reference): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * An interface for XSLT transformers.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XXSLTTransformer
   extends XActiveDataControl
      with XActiveDataSink

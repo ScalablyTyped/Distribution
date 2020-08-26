@@ -10,48 +10,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var engine: js.UndefOr[String] = js.undefined
-  var env: js.UndefOr[String] = js.undefined
-  var favicon: js.UndefOr[String] = js.undefined
-  var log: js.UndefOr[LogLevel | Level] = js.undefined
-  var parser: js.UndefOr[Body] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var public: js.UndefOr[String] = js.undefined
-  var secret: js.UndefOr[String] = js.undefined
-  var security: js.UndefOr[`false` | IHelmetConfigurationcsurf] = js.undefined
-  var session: js.UndefOr[SessionOptions] = js.undefined
-  var views: js.UndefOr[String] = js.undefined
+  var engine: js.UndefOr[String] = js.native
+  var env: js.UndefOr[String] = js.native
+  var favicon: js.UndefOr[String] = js.native
+  var log: js.UndefOr[LogLevel | Level] = js.native
+  var parser: js.UndefOr[Body] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var public: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.native
+  var security: js.UndefOr[`false` | IHelmetConfigurationcsurf] = js.native
+  var session: js.UndefOr[SessionOptions] = js.native
+  var views: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    engine: String = null,
-    env: String = null,
-    favicon: String = null,
-    log: LogLevel | Level = null,
-    parser: Body = null,
-    port: js.UndefOr[Double] = js.undefined,
-    public: String = null,
-    secret: String = null,
-    security: `false` | IHelmetConfigurationcsurf = null,
-    session: SessionOptions = null,
-    views: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (favicon != null) __obj.updateDynamic("favicon")(favicon.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(parser.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (security != null) __obj.updateDynamic("security")(security.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngine(value: String): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEnv(value: String): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setFavicon(value: String): Self = this.set("favicon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFavicon: Self = this.set("favicon", js.undefined)
+    @scala.inline
+    def setLog(value: LogLevel | Level): Self = this.set("log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setParser(value: Body): Self = this.set("parser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParser: Self = this.set("parser", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPublic(value: String): Self = this.set("public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("public", js.undefined)
+    @scala.inline
+    def setSecret(value: String): Self = this.set("secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecret: Self = this.set("secret", js.undefined)
+    @scala.inline
+    def setSecurity(value: `false` | IHelmetConfigurationcsurf): Self = this.set("security", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurity: Self = this.set("security", js.undefined)
+    @scala.inline
+    def setSession(value: SessionOptions): Self = this.set("session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("session", js.undefined)
+    @scala.inline
+    def setViews(value: String): Self = this.set("views", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViews: Self = this.set("views", js.undefined)
+  }
+  
 }
 

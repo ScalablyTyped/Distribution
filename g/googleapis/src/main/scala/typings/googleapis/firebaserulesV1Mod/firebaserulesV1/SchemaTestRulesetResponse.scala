@@ -24,11 +24,34 @@ trait SchemaTestRulesetResponse extends js.Object {
 
 object SchemaTestRulesetResponse {
   @scala.inline
-  def apply(issues: js.Array[SchemaIssue] = null, testResults: js.Array[SchemaTestResult] = null): SchemaTestRulesetResponse = {
+  def apply(): SchemaTestRulesetResponse = {
     val __obj = js.Dynamic.literal()
-    if (issues != null) __obj.updateDynamic("issues")(issues.asInstanceOf[js.Any])
-    if (testResults != null) __obj.updateDynamic("testResults")(testResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestRulesetResponse]
   }
+  @scala.inline
+  implicit class SchemaTestRulesetResponseOps[Self <: SchemaTestRulesetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssuesVarargs(value: SchemaIssue*): Self = this.set("issues", js.Array(value :_*))
+    @scala.inline
+    def setIssues(value: js.Array[SchemaIssue]): Self = this.set("issues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssues: Self = this.set("issues", js.undefined)
+    @scala.inline
+    def setTestResultsVarargs(value: SchemaTestResult*): Self = this.set("testResults", js.Array(value :_*))
+    @scala.inline
+    def setTestResults(value: js.Array[SchemaTestResult]): Self = this.set("testResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestResults: Self = this.set("testResults", js.undefined)
+  }
+  
 }
 

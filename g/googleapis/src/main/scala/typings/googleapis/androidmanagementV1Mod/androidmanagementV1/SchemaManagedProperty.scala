@@ -45,24 +45,54 @@ trait SchemaManagedProperty extends js.Object {
 
 object SchemaManagedProperty {
   @scala.inline
-  def apply(
-    defaultValue: js.Any = null,
-    description: String = null,
-    entries: js.Array[SchemaManagedPropertyEntry] = null,
-    key: String = null,
-    nestedProperties: js.Array[SchemaManagedProperty] = null,
-    title: String = null,
-    `type`: String = null
-  ): SchemaManagedProperty = {
+  def apply(): SchemaManagedProperty = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (nestedProperties != null) __obj.updateDynamic("nestedProperties")(nestedProperties.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedProperty]
   }
+  @scala.inline
+  implicit class SchemaManagedPropertyOps[Self <: SchemaManagedProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEntriesVarargs(value: SchemaManagedPropertyEntry*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[SchemaManagedPropertyEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setNestedPropertiesVarargs(value: SchemaManagedProperty*): Self = this.set("nestedProperties", js.Array(value :_*))
+    @scala.inline
+    def setNestedProperties(value: js.Array[SchemaManagedProperty]): Self = this.set("nestedProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestedProperties: Self = this.set("nestedProperties", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

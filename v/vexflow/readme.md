@@ -1,7 +1,7 @@
 
 # Scala.js typings for vexflow
 
-Typings are for version v1.2.88
+Typings are for version v3.0.9
 
 ## Library description:
 A JavaScript library for rendering music notation and guitar tablature

@@ -27,6 +27,7 @@ class ResourceProjectsLocationsAcceleratortypes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(callback: BodyResponseCallback[SchemaAcceleratorType]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(params: ParamsResourceProjectsLocationsAcceleratortypesGet): GaxiosPromise[SchemaAcceleratorType] = js.native
   def get(
     params: ParamsResourceProjectsLocationsAcceleratortypesGet,
@@ -61,6 +62,7 @@ class ResourceProjectsLocationsAcceleratortypes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAcceleratorTypesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsAcceleratortypesList): GaxiosPromise[SchemaListAcceleratorTypesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsAcceleratortypesList,

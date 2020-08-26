@@ -59,26 +59,54 @@ trait SchemaSiteSettings extends js.Object {
 
 object SchemaSiteSettings {
   @scala.inline
-  def apply(
-    activeViewOptOut: js.UndefOr[Boolean] = js.undefined,
-    adBlockingOptOut: js.UndefOr[Boolean] = js.undefined,
-    creativeSettings: SchemaCreativeSettings = null,
-    disableNewCookie: js.UndefOr[Boolean] = js.undefined,
-    lookbackConfiguration: SchemaLookbackConfiguration = null,
-    tagSetting: SchemaTagSetting = null,
-    videoActiveViewOptOutTemplate: js.UndefOr[Boolean] = js.undefined,
-    vpaidAdapterChoiceTemplate: String = null
-  ): SchemaSiteSettings = {
+  def apply(): SchemaSiteSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(activeViewOptOut)) __obj.updateDynamic("activeViewOptOut")(activeViewOptOut.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(adBlockingOptOut)) __obj.updateDynamic("adBlockingOptOut")(adBlockingOptOut.get.asInstanceOf[js.Any])
-    if (creativeSettings != null) __obj.updateDynamic("creativeSettings")(creativeSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNewCookie)) __obj.updateDynamic("disableNewCookie")(disableNewCookie.get.asInstanceOf[js.Any])
-    if (lookbackConfiguration != null) __obj.updateDynamic("lookbackConfiguration")(lookbackConfiguration.asInstanceOf[js.Any])
-    if (tagSetting != null) __obj.updateDynamic("tagSetting")(tagSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(videoActiveViewOptOutTemplate)) __obj.updateDynamic("videoActiveViewOptOutTemplate")(videoActiveViewOptOutTemplate.get.asInstanceOf[js.Any])
-    if (vpaidAdapterChoiceTemplate != null) __obj.updateDynamic("vpaidAdapterChoiceTemplate")(vpaidAdapterChoiceTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSiteSettings]
   }
+  @scala.inline
+  implicit class SchemaSiteSettingsOps[Self <: SchemaSiteSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveViewOptOut(value: Boolean): Self = this.set("activeViewOptOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveViewOptOut: Self = this.set("activeViewOptOut", js.undefined)
+    @scala.inline
+    def setAdBlockingOptOut(value: Boolean): Self = this.set("adBlockingOptOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdBlockingOptOut: Self = this.set("adBlockingOptOut", js.undefined)
+    @scala.inline
+    def setCreativeSettings(value: SchemaCreativeSettings): Self = this.set("creativeSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeSettings: Self = this.set("creativeSettings", js.undefined)
+    @scala.inline
+    def setDisableNewCookie(value: Boolean): Self = this.set("disableNewCookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableNewCookie: Self = this.set("disableNewCookie", js.undefined)
+    @scala.inline
+    def setLookbackConfiguration(value: SchemaLookbackConfiguration): Self = this.set("lookbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLookbackConfiguration: Self = this.set("lookbackConfiguration", js.undefined)
+    @scala.inline
+    def setTagSetting(value: SchemaTagSetting): Self = this.set("tagSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSetting: Self = this.set("tagSetting", js.undefined)
+    @scala.inline
+    def setVideoActiveViewOptOutTemplate(value: Boolean): Self = this.set("videoActiveViewOptOutTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoActiveViewOptOutTemplate: Self = this.set("videoActiveViewOptOutTemplate", js.undefined)
+    @scala.inline
+    def setVpaidAdapterChoiceTemplate(value: String): Self = this.set("vpaidAdapterChoiceTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpaidAdapterChoiceTemplate: Self = this.set("vpaidAdapterChoiceTemplate", js.undefined)
+  }
+  
 }
 

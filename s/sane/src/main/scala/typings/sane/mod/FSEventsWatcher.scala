@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sane", "FSEventsWatcher")
 @js.native
 object FSEventsWatcher
-  extends TopLevel[Instantiable2[/* dir */ String, js.UndefOr[/* options */ Options], SaneWatcher]]
+  extends TopLevel[Instantiable2[/* dir */ String, /* options */ js.UndefOr[Options], SaneWatcher]]
 

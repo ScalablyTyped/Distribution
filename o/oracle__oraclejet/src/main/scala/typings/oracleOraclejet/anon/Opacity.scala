@@ -27,64 +27,111 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Opacity extends js.Object {
-  var borderColor: js.UndefOr[String] = js.undefined
-  var borderRadius: js.UndefOr[String] = js.undefined
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
+  var borderRadius: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.native
   var pattern: js.UndefOr[
     largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none | mallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle
-  ] = js.undefined
+  ] = js.native
   var shape: js.UndefOr[
     circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
-  ] = js.undefined
-  var source: js.UndefOr[String] = js.undefined
-  var sourceHover: js.UndefOr[String] = js.undefined
-  var sourceHoverSelected: js.UndefOr[String] = js.undefined
-  var sourceSelected: js.UndefOr[String] = js.undefined
-  var svgClassName: js.UndefOr[String] = js.undefined
-  var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var source: js.UndefOr[String] = js.native
+  var sourceHover: js.UndefOr[String] = js.native
+  var sourceHoverSelected: js.UndefOr[String] = js.native
+  var sourceSelected: js.UndefOr[String] = js.native
+  var svgClassName: js.UndefOr[String] = js.native
+  var svgStyle: js.UndefOr[js.Object] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Opacity {
   @scala.inline
-  def apply(
-    borderColor: String = null,
-    borderRadius: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    pattern: largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none | mallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle = null,
-    shape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = null,
-    source: String = null,
-    sourceHover: String = null,
-    sourceHoverSelected: String = null,
-    sourceSelected: String = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Opacity = {
+  def apply(): Opacity = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceHover != null) __obj.updateDynamic("sourceHover")(sourceHover.asInstanceOf[js.Any])
-    if (sourceHoverSelected != null) __obj.updateDynamic("sourceHoverSelected")(sourceHoverSelected.asInstanceOf[js.Any])
-    if (sourceSelected != null) __obj.updateDynamic("sourceSelected")(sourceSelected.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opacity]
   }
+  @scala.inline
+  implicit class OpacityOps[Self <: Opacity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: String): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPattern(
+      value: largeChecker | largeCrosshatch | largeDiagonalLeft | largeDiagonalRight | largeDiamond | largeTriangle | none | mallChecker | smallCrosshatch | smallDiagonalLeft | smallDiagonalRight | smallDiamond | smallTriangle
+    ): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setShape(
+      value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
+    ): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceHover(value: String): Self = this.set("sourceHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceHover: Self = this.set("sourceHover", js.undefined)
+    @scala.inline
+    def setSourceHoverSelected(value: String): Self = this.set("sourceHoverSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceHoverSelected: Self = this.set("sourceHoverSelected", js.undefined)
+    @scala.inline
+    def setSourceSelected(value: String): Self = this.set("sourceSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceSelected: Self = this.set("sourceSelected", js.undefined)
+    @scala.inline
+    def setSvgClassName(value: String): Self = this.set("svgClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgClassName: Self = this.set("svgClassName", js.undefined)
+    @scala.inline
+    def setSvgStyle(value: js.Object): Self = this.set("svgStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSvgStyle: Self = this.set("svgStyle", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

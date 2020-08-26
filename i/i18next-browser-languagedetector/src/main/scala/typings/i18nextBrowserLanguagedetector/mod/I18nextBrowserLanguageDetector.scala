@@ -26,14 +26,17 @@ trait I18nextBrowserLanguageDetector extends LanguageDetectorModule {
   def addDetector(detector: CustomDetector): I18nextBrowserLanguageDetector = js.native
   def cacheUserLanguage(lng: String, caches: js.Array[String]): Unit = js.native
   def detect(
-    detectionOrder: js.Array[
-      querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
+    detectionOrder: js.UndefOr[
+      js.Array[
+        querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
+      ]
     ]
   ): js.UndefOr[String] = js.native
   /**
     * Initializes detector.
     */
   def init(): Unit = js.native
+  def init(services: js.UndefOr[scala.Nothing], options: DetectorOptions): Unit = js.native
   def init(services: js.Any): Unit = js.native
   def init(services: js.Any, options: DetectorOptions): Unit = js.native
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-resize
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 Resize an image.
@@ -10,9 +10,9 @@ Resize an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-resize |
 | Keywords           | - |
-| # releases         | 70 |
+| # releases         | 69 |
 | # dependents       | 3 |
-| # downloads        | 14034284 |
+| # downloads        | 14413374 |
 | # stars            | 0 |
 
 ## Links

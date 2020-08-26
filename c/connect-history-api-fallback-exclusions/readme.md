@@ -12,13 +12,10 @@ Provides a fallback for non-existing directories so that the HTML 5 history API 
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 68021 |
+| # downloads        | 74221 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/Wirewheel/connect-history-api-fallback#readme)
-- [Bugs](https://github.com/Wirewheel/connect-history-api-fallback/issues)
-- [Repository](https://github.com/Wirewheel/connect-history-api-fallback)
 - [Npm](https://www.npmjs.com/package/connect-history-api-fallback-exclusions)
     
 

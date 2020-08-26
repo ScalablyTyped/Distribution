@@ -20,9 +20,8 @@ trait VoxImplantEvent extends js.Object
 
 object VoxImplantEvent {
   @scala.inline
-  def IncomingCall(call: Call, headers: js.Object = null): VoxImplantEvent = {
+  def IncomingCall(call: Call): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline
@@ -36,18 +35,8 @@ object VoxImplantEvent {
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline
-  def AuthResult(
-    result: Boolean,
-    code: js.UndefOr[Double] = js.undefined,
-    displayName: String = null,
-    key: String = null,
-    options: js.Object = null
-  ): VoxImplantEvent = {
+  def AuthResult(result: Boolean): VoxImplantEvent = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoxImplantEvent]
   }
   @scala.inline

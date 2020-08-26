@@ -35,25 +35,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined { readonly channels  :3,  readonly labels  :'hsl', readonly rgb (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.RGB, readonly hsv (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.HSV, readonly hcg (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hsl & {[ F in keyof color-convert.color-convert/route.hsl ]: {  raw  :color-convert.color-convert/route.hsl[F]}} */
+/* Inlined { readonly channels :3,  readonly labels :'hsl', readonly rgb (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.RGB, readonly hsv (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.HSV, readonly hcg (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hsl & {[ F in keyof color-convert.color-convert/route.hsl ]: {  raw :color-convert.color-convert/route.hsl[F]}} */
 @js.native
 trait readonlychannels3readonlyChannels extends js.Object {
-  var ansi16: `17` = js.native
-  var ansi256: `16` = js.native
-  var apple: `24` = js.native
+  var ansi16: `25` = js.native
+  var ansi256: `17` = js.native
+  var apple: `14` = js.native
   val channels: `3` = js.native
-  var cmyk: `20` = js.native
-  var gray: `22` = js.native
-  var hcg: `15` = js.native
-  var hex: `18` = js.native
-  var hsv: `23` = js.native
-  var hwb: `25` = js.native
-  var keyword: `21` = js.native
+  var cmyk: `19` = js.native
+  var gray: `16` = js.native
+  var hcg: `20` = js.native
+  var hex: `24` = js.native
+  var hsv: `22` = js.native
+  var hwb: `18` = js.native
+  var keyword: `15` = js.native
   var lab: `26` = js.native
   val labels: hsl = js.native
-  var lch: `19` = js.native
+  var lch: `23` = js.native
   var rgb: `13` = js.native
-  var xyz: `14` = js.native
+  var xyz: `21` = js.native
   def ansi16(from: HSL_): ANSI16_ = js.native
   def ansi256(from: HSL_): ANSI256_ = js.native
   def apple(from: HSL_): APPLE_ = js.native

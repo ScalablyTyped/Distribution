@@ -18,11 +18,30 @@ trait CollectionConfiguration extends js.Object {
 
 object CollectionConfiguration {
   @scala.inline
-  def apply(CollectionName: CollectionName = null, CollectionParameters: CollectionParameters = null): CollectionConfiguration = {
+  def apply(): CollectionConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (CollectionName != null) __obj.updateDynamic("CollectionName")(CollectionName.asInstanceOf[js.Any])
-    if (CollectionParameters != null) __obj.updateDynamic("CollectionParameters")(CollectionParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionConfiguration]
   }
+  @scala.inline
+  implicit class CollectionConfigurationOps[Self <: CollectionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionName(value: CollectionName): Self = this.set("CollectionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionName: Self = this.set("CollectionName", js.undefined)
+    @scala.inline
+    def setCollectionParameters(value: CollectionParameters): Self = this.set("CollectionParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionParameters: Self = this.set("CollectionParameters", js.undefined)
+  }
+  
 }
 

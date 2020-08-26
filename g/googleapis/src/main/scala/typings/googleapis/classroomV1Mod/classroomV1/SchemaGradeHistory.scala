@@ -34,20 +34,42 @@ trait SchemaGradeHistory extends js.Object {
 
 object SchemaGradeHistory {
   @scala.inline
-  def apply(
-    actorUserId: String = null,
-    gradeChangeType: String = null,
-    gradeTimestamp: String = null,
-    maxPoints: js.UndefOr[Double] = js.undefined,
-    pointsEarned: js.UndefOr[Double] = js.undefined
-  ): SchemaGradeHistory = {
+  def apply(): SchemaGradeHistory = {
     val __obj = js.Dynamic.literal()
-    if (actorUserId != null) __obj.updateDynamic("actorUserId")(actorUserId.asInstanceOf[js.Any])
-    if (gradeChangeType != null) __obj.updateDynamic("gradeChangeType")(gradeChangeType.asInstanceOf[js.Any])
-    if (gradeTimestamp != null) __obj.updateDynamic("gradeTimestamp")(gradeTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPoints)) __obj.updateDynamic("maxPoints")(maxPoints.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsEarned)) __obj.updateDynamic("pointsEarned")(pointsEarned.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGradeHistory]
   }
+  @scala.inline
+  implicit class SchemaGradeHistoryOps[Self <: SchemaGradeHistory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActorUserId(value: String): Self = this.set("actorUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActorUserId: Self = this.set("actorUserId", js.undefined)
+    @scala.inline
+    def setGradeChangeType(value: String): Self = this.set("gradeChangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGradeChangeType: Self = this.set("gradeChangeType", js.undefined)
+    @scala.inline
+    def setGradeTimestamp(value: String): Self = this.set("gradeTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGradeTimestamp: Self = this.set("gradeTimestamp", js.undefined)
+    @scala.inline
+    def setMaxPoints(value: Double): Self = this.set("maxPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPoints: Self = this.set("maxPoints", js.undefined)
+    @scala.inline
+    def setPointsEarned(value: Double): Self = this.set("pointsEarned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointsEarned: Self = this.set("pointsEarned", js.undefined)
+  }
+  
 }
 

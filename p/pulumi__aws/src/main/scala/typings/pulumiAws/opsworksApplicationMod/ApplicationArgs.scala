@@ -82,43 +82,95 @@ trait ApplicationArgs extends js.Object {
 
 object ApplicationArgs {
   @scala.inline
-  def apply(
-    stackId: Input[String],
-    `type`: Input[String],
-    appSources: Input[js.Array[Input[ApplicationAppSource]]] = null,
-    autoBundleOnDeploy: Input[String] = null,
-    awsFlowRubySettings: Input[String] = null,
-    dataSourceArn: Input[String] = null,
-    dataSourceDatabaseName: Input[String] = null,
-    dataSourceType: Input[String] = null,
-    description: Input[String] = null,
-    documentRoot: Input[String] = null,
-    domains: Input[js.Array[Input[String]]] = null,
-    enableSsl: Input[Boolean] = null,
-    environments: Input[js.Array[Input[ApplicationEnvironment]]] = null,
-    name: Input[String] = null,
-    railsEnv: Input[String] = null,
-    shortName: Input[String] = null,
-    sslConfigurations: Input[js.Array[Input[ApplicationSslConfiguration]]] = null
-  ): ApplicationArgs = {
+  def apply(stackId: Input[String], `type`: Input[String]): ApplicationArgs = {
     val __obj = js.Dynamic.literal(stackId = stackId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (appSources != null) __obj.updateDynamic("appSources")(appSources.asInstanceOf[js.Any])
-    if (autoBundleOnDeploy != null) __obj.updateDynamic("autoBundleOnDeploy")(autoBundleOnDeploy.asInstanceOf[js.Any])
-    if (awsFlowRubySettings != null) __obj.updateDynamic("awsFlowRubySettings")(awsFlowRubySettings.asInstanceOf[js.Any])
-    if (dataSourceArn != null) __obj.updateDynamic("dataSourceArn")(dataSourceArn.asInstanceOf[js.Any])
-    if (dataSourceDatabaseName != null) __obj.updateDynamic("dataSourceDatabaseName")(dataSourceDatabaseName.asInstanceOf[js.Any])
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (documentRoot != null) __obj.updateDynamic("documentRoot")(documentRoot.asInstanceOf[js.Any])
-    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (enableSsl != null) __obj.updateDynamic("enableSsl")(enableSsl.asInstanceOf[js.Any])
-    if (environments != null) __obj.updateDynamic("environments")(environments.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (railsEnv != null) __obj.updateDynamic("railsEnv")(railsEnv.asInstanceOf[js.Any])
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
-    if (sslConfigurations != null) __obj.updateDynamic("sslConfigurations")(sslConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationArgs]
   }
+  @scala.inline
+  implicit class ApplicationArgsOps[Self <: ApplicationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackId(value: Input[String]): Self = this.set("stackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAppSourcesVarargs(value: Input[ApplicationAppSource]*): Self = this.set("appSources", js.Array(value :_*))
+    @scala.inline
+    def setAppSources(value: Input[js.Array[Input[ApplicationAppSource]]]): Self = this.set("appSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppSources: Self = this.set("appSources", js.undefined)
+    @scala.inline
+    def setAutoBundleOnDeploy(value: Input[String]): Self = this.set("autoBundleOnDeploy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBundleOnDeploy: Self = this.set("autoBundleOnDeploy", js.undefined)
+    @scala.inline
+    def setAwsFlowRubySettings(value: Input[String]): Self = this.set("awsFlowRubySettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsFlowRubySettings: Self = this.set("awsFlowRubySettings", js.undefined)
+    @scala.inline
+    def setDataSourceArn(value: Input[String]): Self = this.set("dataSourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceArn: Self = this.set("dataSourceArn", js.undefined)
+    @scala.inline
+    def setDataSourceDatabaseName(value: Input[String]): Self = this.set("dataSourceDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceDatabaseName: Self = this.set("dataSourceDatabaseName", js.undefined)
+    @scala.inline
+    def setDataSourceType(value: Input[String]): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDocumentRoot(value: Input[String]): Self = this.set("documentRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentRoot: Self = this.set("documentRoot", js.undefined)
+    @scala.inline
+    def setDomainsVarargs(value: Input[String]*): Self = this.set("domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: Input[js.Array[Input[String]]]): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setEnableSsl(value: Input[Boolean]): Self = this.set("enableSsl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSsl: Self = this.set("enableSsl", js.undefined)
+    @scala.inline
+    def setEnvironmentsVarargs(value: Input[ApplicationEnvironment]*): Self = this.set("environments", js.Array(value :_*))
+    @scala.inline
+    def setEnvironments(value: Input[js.Array[Input[ApplicationEnvironment]]]): Self = this.set("environments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironments: Self = this.set("environments", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRailsEnv(value: Input[String]): Self = this.set("railsEnv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRailsEnv: Self = this.set("railsEnv", js.undefined)
+    @scala.inline
+    def setShortName(value: Input[String]): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortName: Self = this.set("shortName", js.undefined)
+    @scala.inline
+    def setSslConfigurationsVarargs(value: Input[ApplicationSslConfiguration]*): Self = this.set("sslConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setSslConfigurations(value: Input[js.Array[Input[ApplicationSslConfiguration]]]): Self = this.set("sslConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslConfigurations: Self = this.set("sslConfigurations", js.undefined)
+  }
+  
 }
 

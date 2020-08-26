@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mimic-response" : "2.1.0"
+      "mimic-response" : "3.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "mimic-response" : "2.1.0"
+      "mimic-response" : "3.1.0"
     }
   ],
   "compile-devDependencies" : [

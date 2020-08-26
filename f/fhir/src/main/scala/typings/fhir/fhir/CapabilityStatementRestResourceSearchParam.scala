@@ -7,74 +7,89 @@ import scala.scalajs.js.annotation._
 /**
   * Search parameters supported by implementation
   */
+@js.native
 trait CapabilityStatementRestResourceSearchParam extends BackboneElement {
   /**
     * Contains extended information for property 'definition'.
     */
-  var _definition: js.UndefOr[Element] = js.undefined
+  var _definition: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.undefined
+  var _documentation: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Source of definition for parameter
     */
-  var definition: js.UndefOr[uri] = js.undefined
+  var definition: js.UndefOr[uri] = js.native
   /**
     * Server-specific usage
     */
-  var documentation: js.UndefOr[String] = js.undefined
+  var documentation: js.UndefOr[String] = js.native
   /**
     * Name of search parameter
     */
-  var name: String
+  var name: String = js.native
   /**
     * number | date | string | token | reference | composite | quantity | uri
     */
-  var `type`: code
+  var `type`: code = js.native
 }
 
 object CapabilityStatementRestResourceSearchParam {
   @scala.inline
-  def apply(
-    name: String,
-    `type`: code,
-    _definition: Element = null,
-    _documentation: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _name: Element = null,
-    _type: Element = null,
-    definition: uri = null,
-    documentation: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): CapabilityStatementRestResourceSearchParam = {
+  def apply(name: String, `type`: code): CapabilityStatementRestResourceSearchParam = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_definition != null) __obj.updateDynamic("_definition")(_definition.asInstanceOf[js.Any])
-    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[CapabilityStatementRestResourceSearchParam]
   }
+  @scala.inline
+  implicit class CapabilityStatementRestResourceSearchParamOps[Self <: CapabilityStatementRestResourceSearchParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_definition(value: Element): Self = this.set("_definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_definition: Self = this.set("_definition", js.undefined)
+    @scala.inline
+    def set_documentation(value: Element): Self = this.set("_documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_documentation: Self = this.set("_documentation", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def setDefinition(value: uri): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setDocumentation(value: String): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+  }
+  
 }
 

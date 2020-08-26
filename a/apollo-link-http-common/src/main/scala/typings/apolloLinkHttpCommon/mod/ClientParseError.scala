@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined ts-invariant.ts-invariant.InvariantError & {  parseError  :std.Error} */
+/* Inlined ts-invariant.ts-invariant.InvariantError & {  parseError :std.Error} */
 @js.native
 trait ClientParseError extends js.Object {
   var framesToPop: Double = js.native

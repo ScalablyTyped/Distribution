@@ -92,6 +92,12 @@ object global extends js.Object {
     def createWriter(
       writer: typings.zipJs.zip.Writer,
       callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
+      onerror: js.UndefOr[scala.Nothing],
+      dontDeflate: Boolean
+    ): Unit = js.native
+    def createWriter(
+      writer: typings.zipJs.zip.Writer,
+      callback: js.Function1[/* zipWriter */ typings.zipJs.zip.ZipWriter, Unit],
       onerror: js.Function1[/* error */ js.Any, Unit]
     ): Unit = js.native
     def createWriter(

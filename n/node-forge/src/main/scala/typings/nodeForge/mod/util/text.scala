@@ -13,6 +13,7 @@ object text extends js.Object {
   object utf16 extends js.Object {
     def decode(bytes: Uint8Array): String = js.native
     def encode(str: String): Uint8Array = js.native
+    def encode(str: String, output: js.UndefOr[scala.Nothing], offset: Double): Uint8Array = js.native
     def encode(str: String, output: Uint8Array): Uint8Array = js.native
     def encode(str: String, output: Uint8Array, offset: Double): Uint8Array = js.native
   }
@@ -21,6 +22,7 @@ object text extends js.Object {
   object utf8 extends js.Object {
     def decode(bytes: Uint8Array): Utf8 = js.native
     def encode(str: String): Uint8Array = js.native
+    def encode(str: String, output: js.UndefOr[scala.Nothing], offset: Double): Uint8Array = js.native
     def encode(str: String, output: Uint8Array): Uint8Array = js.native
     def encode(str: String, output: Uint8Array, offset: Double): Uint8Array = js.native
   }

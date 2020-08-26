@@ -68,24 +68,65 @@ object CreateProfileRequest {
     ProfileName: ProfileName,
     TemperatureUnit: TemperatureUnit,
     Timezone: Timezone,
-    WakeWord: WakeWord,
-    ClientRequestToken: ClientRequestToken = null,
-    Locale: DeviceLocale = null,
-    MaxVolumeLimit: js.UndefOr[MaxVolumeLimit] = js.undefined,
-    MeetingRoomConfiguration: CreateMeetingRoomConfiguration = null,
-    PSTNEnabled: js.UndefOr[Boolean] = js.undefined,
-    SetupModeDisabled: js.UndefOr[Boolean] = js.undefined,
-    Tags: TagList = null
+    WakeWord: WakeWord
   ): CreateProfileRequest = {
     val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], DistanceUnit = DistanceUnit.asInstanceOf[js.Any], ProfileName = ProfileName.asInstanceOf[js.Any], TemperatureUnit = TemperatureUnit.asInstanceOf[js.Any], Timezone = Timezone.asInstanceOf[js.Any], WakeWord = WakeWord.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxVolumeLimit)) __obj.updateDynamic("MaxVolumeLimit")(MaxVolumeLimit.get.asInstanceOf[js.Any])
-    if (MeetingRoomConfiguration != null) __obj.updateDynamic("MeetingRoomConfiguration")(MeetingRoomConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(PSTNEnabled)) __obj.updateDynamic("PSTNEnabled")(PSTNEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SetupModeDisabled)) __obj.updateDynamic("SetupModeDisabled")(SetupModeDisabled.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProfileRequest]
   }
+  @scala.inline
+  implicit class CreateProfileRequestOps[Self <: CreateProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: Address): Self = this.set("Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDistanceUnit(value: DistanceUnit): Self = this.set("DistanceUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfileName(value: ProfileName): Self = this.set("ProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemperatureUnit(value: TemperatureUnit): Self = this.set("TemperatureUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimezone(value: Timezone): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWakeWord(value: WakeWord): Self = this.set("WakeWord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setLocale(value: DeviceLocale): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("Locale", js.undefined)
+    @scala.inline
+    def setMaxVolumeLimit(value: MaxVolumeLimit): Self = this.set("MaxVolumeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxVolumeLimit: Self = this.set("MaxVolumeLimit", js.undefined)
+    @scala.inline
+    def setMeetingRoomConfiguration(value: CreateMeetingRoomConfiguration): Self = this.set("MeetingRoomConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeetingRoomConfiguration: Self = this.set("MeetingRoomConfiguration", js.undefined)
+    @scala.inline
+    def setPSTNEnabled(value: Boolean): Self = this.set("PSTNEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePSTNEnabled: Self = this.set("PSTNEnabled", js.undefined)
+    @scala.inline
+    def setSetupModeDisabled(value: Boolean): Self = this.set("SetupModeDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetupModeDisabled: Self = this.set("SetupModeDisabled", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

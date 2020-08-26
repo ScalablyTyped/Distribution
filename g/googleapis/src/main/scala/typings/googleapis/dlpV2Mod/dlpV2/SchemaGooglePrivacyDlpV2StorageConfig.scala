@@ -26,18 +26,38 @@ trait SchemaGooglePrivacyDlpV2StorageConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2StorageConfig {
   @scala.inline
-  def apply(
-    bigQueryOptions: SchemaGooglePrivacyDlpV2BigQueryOptions = null,
-    cloudStorageOptions: SchemaGooglePrivacyDlpV2CloudStorageOptions = null,
-    datastoreOptions: SchemaGooglePrivacyDlpV2DatastoreOptions = null,
-    timespanConfig: SchemaGooglePrivacyDlpV2TimespanConfig = null
-  ): SchemaGooglePrivacyDlpV2StorageConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2StorageConfig = {
     val __obj = js.Dynamic.literal()
-    if (bigQueryOptions != null) __obj.updateDynamic("bigQueryOptions")(bigQueryOptions.asInstanceOf[js.Any])
-    if (cloudStorageOptions != null) __obj.updateDynamic("cloudStorageOptions")(cloudStorageOptions.asInstanceOf[js.Any])
-    if (datastoreOptions != null) __obj.updateDynamic("datastoreOptions")(datastoreOptions.asInstanceOf[js.Any])
-    if (timespanConfig != null) __obj.updateDynamic("timespanConfig")(timespanConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StorageConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2StorageConfigOps[Self <: SchemaGooglePrivacyDlpV2StorageConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBigQueryOptions(value: SchemaGooglePrivacyDlpV2BigQueryOptions): Self = this.set("bigQueryOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigQueryOptions: Self = this.set("bigQueryOptions", js.undefined)
+    @scala.inline
+    def setCloudStorageOptions(value: SchemaGooglePrivacyDlpV2CloudStorageOptions): Self = this.set("cloudStorageOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudStorageOptions: Self = this.set("cloudStorageOptions", js.undefined)
+    @scala.inline
+    def setDatastoreOptions(value: SchemaGooglePrivacyDlpV2DatastoreOptions): Self = this.set("datastoreOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatastoreOptions: Self = this.set("datastoreOptions", js.undefined)
+    @scala.inline
+    def setTimespanConfig(value: SchemaGooglePrivacyDlpV2TimespanConfig): Self = this.set("timespanConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimespanConfig: Self = this.set("timespanConfig", js.undefined)
+  }
+  
 }
 

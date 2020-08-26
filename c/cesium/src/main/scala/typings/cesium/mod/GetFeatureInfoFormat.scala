@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GetFeatureInfoFormat protected () extends js.Object {
   def this(`type`: String) = this()
   def this(`type`: String, format: String) = this()
+  def this(`type`: String, format: js.UndefOr[scala.Nothing], callback: js.Function1[/* res */ js.Any, _]) = this()
   def this(`type`: String, format: String, callback: js.Function1[/* res */ js.Any, _]) = this()
 }
 

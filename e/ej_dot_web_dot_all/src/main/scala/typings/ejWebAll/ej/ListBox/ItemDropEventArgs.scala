@@ -4,65 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ItemDropEventArgs extends js.Object {
   /** Set this option to true to cancel the event.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** The Datasource of the listbox.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** List itemâ€™s index.
     */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double] = js.native
   /** Boolean value based on whether the list item is checked or not.
     */
-  var isChecked: js.UndefOr[Boolean] = js.undefined
+  var isChecked: js.UndefOr[Boolean] = js.native
   /** Boolean value based on whether the list item is enabled or not.
     */
-  var isEnabled: js.UndefOr[Boolean] = js.undefined
+  var isEnabled: js.UndefOr[Boolean] = js.native
   /** Boolean value based on whether the list item is selected or not.
     */
-  var isSelected: js.UndefOr[Boolean] = js.undefined
+  var isSelected: js.UndefOr[Boolean] = js.native
   /** Instance of the listbox model object.
     */
-  var model: js.UndefOr[Model] = js.undefined
+  var model: js.UndefOr[Model] = js.native
   /** List itemâ€™s text (label).
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** Name of the event.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /** List itemâ€™s value.
     */
-  var value: js.UndefOr[String] = js.undefined
+  var value: js.UndefOr[String] = js.native
 }
 
 object ItemDropEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    data: js.Any = null,
-    index: js.UndefOr[Double] = js.undefined,
-    isChecked: js.UndefOr[Boolean] = js.undefined,
-    isEnabled: js.UndefOr[Boolean] = js.undefined,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    model: Model = null,
-    text: String = null,
-    `type`: String = null,
-    value: String = null
-  ): ItemDropEventArgs = {
+  def apply(): ItemDropEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.get.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDropEventArgs]
   }
+  @scala.inline
+  implicit class ItemDropEventArgsOps[Self <: ItemDropEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setIsChecked(value: Boolean): Self = this.set("isChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsChecked: Self = this.set("isChecked", js.undefined)
+    @scala.inline
+    def setIsEnabled(value: Boolean): Self = this.set("isEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    @scala.inline
+    def setIsSelected(value: Boolean): Self = this.set("isSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSelected: Self = this.set("isSelected", js.undefined)
+    @scala.inline
+    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

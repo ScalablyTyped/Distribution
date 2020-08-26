@@ -50,9 +50,7 @@ object r3IdentifiersMod extends js.Object {
     var classMapInterpolate8: ExternalReference = js.native
     var classMapInterpolateV: ExternalReference = js.native
     var classProp: ExternalReference = js.native
-    var componentHostSyntheticListener: ExternalReference = js.native
     var contentQuery: ExternalReference = js.native
-    var defaultStyleSanitizer: ExternalReference = js.native
     var defineComponent: ExternalReference = js.native
     var defineDirective: ExternalReference = js.native
     var defineInjector: ExternalReference = js.native
@@ -155,6 +153,8 @@ object r3IdentifiersMod extends js.Object {
     var stylePropInterpolate7: ExternalReference = js.native
     var stylePropInterpolate8: ExternalReference = js.native
     var stylePropInterpolateV: ExternalReference = js.native
+    var syntheticHostListener: ExternalReference = js.native
+    var syntheticHostProperty: ExternalReference = js.native
     var templateCreate: ExternalReference = js.native
     var templateRefExtractor: ExternalReference = js.native
     var text: ExternalReference = js.native
@@ -168,7 +168,6 @@ object r3IdentifiersMod extends js.Object {
     var textInterpolate7: ExternalReference = js.native
     var textInterpolate8: ExternalReference = js.native
     var textInterpolateV: ExternalReference = js.native
-    var updateSyntheticHostBinding: ExternalReference = js.native
     var viewQuery: ExternalReference = js.native
   }
   

@@ -334,156 +334,336 @@ trait SchemaProduct extends js.Object {
 
 object SchemaProduct {
   @scala.inline
-  def apply(
-    additionalImageLinks: js.Array[String] = null,
-    adsGrouping: String = null,
-    adsLabels: js.Array[String] = null,
-    adsRedirect: String = null,
-    adult: js.UndefOr[Boolean] = js.undefined,
-    ageGroup: String = null,
-    availability: String = null,
-    availabilityDate: String = null,
-    brand: String = null,
-    channel: String = null,
-    color: String = null,
-    condition: String = null,
-    contentLanguage: String = null,
-    costOfGoodsSold: SchemaPrice = null,
-    customAttributes: js.Array[SchemaCustomAttribute] = null,
-    customLabel0: String = null,
-    customLabel1: String = null,
-    customLabel2: String = null,
-    customLabel3: String = null,
-    customLabel4: String = null,
-    description: String = null,
-    displayAdsId: String = null,
-    displayAdsLink: String = null,
-    displayAdsSimilarIds: js.Array[String] = null,
-    displayAdsTitle: String = null,
-    displayAdsValue: js.UndefOr[Double] = js.undefined,
-    energyEfficiencyClass: String = null,
-    excludedDestinations: js.Array[String] = null,
-    expirationDate: String = null,
-    gender: String = null,
-    googleProductCategory: String = null,
-    gtin: String = null,
-    id: String = null,
-    identifierExists: js.UndefOr[Boolean] = js.undefined,
-    imageLink: String = null,
-    includedDestinations: js.Array[String] = null,
-    installment: SchemaInstallment = null,
-    isBundle: js.UndefOr[Boolean] = js.undefined,
-    itemGroupId: String = null,
-    kind: String = null,
-    link: String = null,
-    loyaltyPoints: SchemaLoyaltyPoints = null,
-    material: String = null,
-    maxEnergyEfficiencyClass: String = null,
-    maxHandlingTime: String = null,
-    minEnergyEfficiencyClass: String = null,
-    minHandlingTime: String = null,
-    mobileLink: String = null,
-    mpn: String = null,
-    multipack: String = null,
-    offerId: String = null,
-    pattern: String = null,
-    price: SchemaPrice = null,
-    productTypes: js.Array[String] = null,
-    promotionIds: js.Array[String] = null,
-    salePrice: SchemaPrice = null,
-    salePriceEffectiveDate: String = null,
-    sellOnGoogleQuantity: String = null,
-    shipping: js.Array[SchemaProductShipping] = null,
-    shippingHeight: SchemaProductShippingDimension = null,
-    shippingLabel: String = null,
-    shippingLength: SchemaProductShippingDimension = null,
-    shippingWeight: SchemaProductShippingWeight = null,
-    shippingWidth: SchemaProductShippingDimension = null,
-    sizeSystem: String = null,
-    sizeType: String = null,
-    sizes: js.Array[String] = null,
-    source: String = null,
-    targetCountry: String = null,
-    taxes: js.Array[SchemaProductTax] = null,
-    title: String = null,
-    unitPricingBaseMeasure: SchemaProductUnitPricingBaseMeasure = null,
-    unitPricingMeasure: SchemaProductUnitPricingMeasure = null
-  ): SchemaProduct = {
+  def apply(): SchemaProduct = {
     val __obj = js.Dynamic.literal()
-    if (additionalImageLinks != null) __obj.updateDynamic("additionalImageLinks")(additionalImageLinks.asInstanceOf[js.Any])
-    if (adsGrouping != null) __obj.updateDynamic("adsGrouping")(adsGrouping.asInstanceOf[js.Any])
-    if (adsLabels != null) __obj.updateDynamic("adsLabels")(adsLabels.asInstanceOf[js.Any])
-    if (adsRedirect != null) __obj.updateDynamic("adsRedirect")(adsRedirect.asInstanceOf[js.Any])
-    if (!js.isUndefined(adult)) __obj.updateDynamic("adult")(adult.get.asInstanceOf[js.Any])
-    if (ageGroup != null) __obj.updateDynamic("ageGroup")(ageGroup.asInstanceOf[js.Any])
-    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (availabilityDate != null) __obj.updateDynamic("availabilityDate")(availabilityDate.asInstanceOf[js.Any])
-    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (costOfGoodsSold != null) __obj.updateDynamic("costOfGoodsSold")(costOfGoodsSold.asInstanceOf[js.Any])
-    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes.asInstanceOf[js.Any])
-    if (customLabel0 != null) __obj.updateDynamic("customLabel0")(customLabel0.asInstanceOf[js.Any])
-    if (customLabel1 != null) __obj.updateDynamic("customLabel1")(customLabel1.asInstanceOf[js.Any])
-    if (customLabel2 != null) __obj.updateDynamic("customLabel2")(customLabel2.asInstanceOf[js.Any])
-    if (customLabel3 != null) __obj.updateDynamic("customLabel3")(customLabel3.asInstanceOf[js.Any])
-    if (customLabel4 != null) __obj.updateDynamic("customLabel4")(customLabel4.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayAdsId != null) __obj.updateDynamic("displayAdsId")(displayAdsId.asInstanceOf[js.Any])
-    if (displayAdsLink != null) __obj.updateDynamic("displayAdsLink")(displayAdsLink.asInstanceOf[js.Any])
-    if (displayAdsSimilarIds != null) __obj.updateDynamic("displayAdsSimilarIds")(displayAdsSimilarIds.asInstanceOf[js.Any])
-    if (displayAdsTitle != null) __obj.updateDynamic("displayAdsTitle")(displayAdsTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayAdsValue)) __obj.updateDynamic("displayAdsValue")(displayAdsValue.get.asInstanceOf[js.Any])
-    if (energyEfficiencyClass != null) __obj.updateDynamic("energyEfficiencyClass")(energyEfficiencyClass.asInstanceOf[js.Any])
-    if (excludedDestinations != null) __obj.updateDynamic("excludedDestinations")(excludedDestinations.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (gender != null) __obj.updateDynamic("gender")(gender.asInstanceOf[js.Any])
-    if (googleProductCategory != null) __obj.updateDynamic("googleProductCategory")(googleProductCategory.asInstanceOf[js.Any])
-    if (gtin != null) __obj.updateDynamic("gtin")(gtin.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(identifierExists)) __obj.updateDynamic("identifierExists")(identifierExists.get.asInstanceOf[js.Any])
-    if (imageLink != null) __obj.updateDynamic("imageLink")(imageLink.asInstanceOf[js.Any])
-    if (includedDestinations != null) __obj.updateDynamic("includedDestinations")(includedDestinations.asInstanceOf[js.Any])
-    if (installment != null) __obj.updateDynamic("installment")(installment.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.get.asInstanceOf[js.Any])
-    if (itemGroupId != null) __obj.updateDynamic("itemGroupId")(itemGroupId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (loyaltyPoints != null) __obj.updateDynamic("loyaltyPoints")(loyaltyPoints.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (maxEnergyEfficiencyClass != null) __obj.updateDynamic("maxEnergyEfficiencyClass")(maxEnergyEfficiencyClass.asInstanceOf[js.Any])
-    if (maxHandlingTime != null) __obj.updateDynamic("maxHandlingTime")(maxHandlingTime.asInstanceOf[js.Any])
-    if (minEnergyEfficiencyClass != null) __obj.updateDynamic("minEnergyEfficiencyClass")(minEnergyEfficiencyClass.asInstanceOf[js.Any])
-    if (minHandlingTime != null) __obj.updateDynamic("minHandlingTime")(minHandlingTime.asInstanceOf[js.Any])
-    if (mobileLink != null) __obj.updateDynamic("mobileLink")(mobileLink.asInstanceOf[js.Any])
-    if (mpn != null) __obj.updateDynamic("mpn")(mpn.asInstanceOf[js.Any])
-    if (multipack != null) __obj.updateDynamic("multipack")(multipack.asInstanceOf[js.Any])
-    if (offerId != null) __obj.updateDynamic("offerId")(offerId.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (productTypes != null) __obj.updateDynamic("productTypes")(productTypes.asInstanceOf[js.Any])
-    if (promotionIds != null) __obj.updateDynamic("promotionIds")(promotionIds.asInstanceOf[js.Any])
-    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice.asInstanceOf[js.Any])
-    if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate.asInstanceOf[js.Any])
-    if (sellOnGoogleQuantity != null) __obj.updateDynamic("sellOnGoogleQuantity")(sellOnGoogleQuantity.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (shippingHeight != null) __obj.updateDynamic("shippingHeight")(shippingHeight.asInstanceOf[js.Any])
-    if (shippingLabel != null) __obj.updateDynamic("shippingLabel")(shippingLabel.asInstanceOf[js.Any])
-    if (shippingLength != null) __obj.updateDynamic("shippingLength")(shippingLength.asInstanceOf[js.Any])
-    if (shippingWeight != null) __obj.updateDynamic("shippingWeight")(shippingWeight.asInstanceOf[js.Any])
-    if (shippingWidth != null) __obj.updateDynamic("shippingWidth")(shippingWidth.asInstanceOf[js.Any])
-    if (sizeSystem != null) __obj.updateDynamic("sizeSystem")(sizeSystem.asInstanceOf[js.Any])
-    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry.asInstanceOf[js.Any])
-    if (taxes != null) __obj.updateDynamic("taxes")(taxes.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (unitPricingBaseMeasure != null) __obj.updateDynamic("unitPricingBaseMeasure")(unitPricingBaseMeasure.asInstanceOf[js.Any])
-    if (unitPricingMeasure != null) __obj.updateDynamic("unitPricingMeasure")(unitPricingMeasure.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProduct]
   }
+  @scala.inline
+  implicit class SchemaProductOps[Self <: SchemaProduct] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalImageLinksVarargs(value: String*): Self = this.set("additionalImageLinks", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalImageLinks(value: js.Array[String]): Self = this.set("additionalImageLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalImageLinks: Self = this.set("additionalImageLinks", js.undefined)
+    @scala.inline
+    def setAdsGrouping(value: String): Self = this.set("adsGrouping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsGrouping: Self = this.set("adsGrouping", js.undefined)
+    @scala.inline
+    def setAdsLabelsVarargs(value: String*): Self = this.set("adsLabels", js.Array(value :_*))
+    @scala.inline
+    def setAdsLabels(value: js.Array[String]): Self = this.set("adsLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsLabels: Self = this.set("adsLabels", js.undefined)
+    @scala.inline
+    def setAdsRedirect(value: String): Self = this.set("adsRedirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsRedirect: Self = this.set("adsRedirect", js.undefined)
+    @scala.inline
+    def setAdult(value: Boolean): Self = this.set("adult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdult: Self = this.set("adult", js.undefined)
+    @scala.inline
+    def setAgeGroup(value: String): Self = this.set("ageGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgeGroup: Self = this.set("ageGroup", js.undefined)
+    @scala.inline
+    def setAvailability(value: String): Self = this.set("availability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailability: Self = this.set("availability", js.undefined)
+    @scala.inline
+    def setAvailabilityDate(value: String): Self = this.set("availabilityDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityDate: Self = this.set("availabilityDate", js.undefined)
+    @scala.inline
+    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrand: Self = this.set("brand", js.undefined)
+    @scala.inline
+    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannel: Self = this.set("channel", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    @scala.inline
+    def setCostOfGoodsSold(value: SchemaPrice): Self = this.set("costOfGoodsSold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostOfGoodsSold: Self = this.set("costOfGoodsSold", js.undefined)
+    @scala.inline
+    def setCustomAttributesVarargs(value: SchemaCustomAttribute*): Self = this.set("customAttributes", js.Array(value :_*))
+    @scala.inline
+    def setCustomAttributes(value: js.Array[SchemaCustomAttribute]): Self = this.set("customAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("customAttributes", js.undefined)
+    @scala.inline
+    def setCustomLabel0(value: String): Self = this.set("customLabel0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel0: Self = this.set("customLabel0", js.undefined)
+    @scala.inline
+    def setCustomLabel1(value: String): Self = this.set("customLabel1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel1: Self = this.set("customLabel1", js.undefined)
+    @scala.inline
+    def setCustomLabel2(value: String): Self = this.set("customLabel2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel2: Self = this.set("customLabel2", js.undefined)
+    @scala.inline
+    def setCustomLabel3(value: String): Self = this.set("customLabel3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel3: Self = this.set("customLabel3", js.undefined)
+    @scala.inline
+    def setCustomLabel4(value: String): Self = this.set("customLabel4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel4: Self = this.set("customLabel4", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayAdsId(value: String): Self = this.set("displayAdsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAdsId: Self = this.set("displayAdsId", js.undefined)
+    @scala.inline
+    def setDisplayAdsLink(value: String): Self = this.set("displayAdsLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAdsLink: Self = this.set("displayAdsLink", js.undefined)
+    @scala.inline
+    def setDisplayAdsSimilarIdsVarargs(value: String*): Self = this.set("displayAdsSimilarIds", js.Array(value :_*))
+    @scala.inline
+    def setDisplayAdsSimilarIds(value: js.Array[String]): Self = this.set("displayAdsSimilarIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAdsSimilarIds: Self = this.set("displayAdsSimilarIds", js.undefined)
+    @scala.inline
+    def setDisplayAdsTitle(value: String): Self = this.set("displayAdsTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAdsTitle: Self = this.set("displayAdsTitle", js.undefined)
+    @scala.inline
+    def setDisplayAdsValue(value: Double): Self = this.set("displayAdsValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayAdsValue: Self = this.set("displayAdsValue", js.undefined)
+    @scala.inline
+    def setEnergyEfficiencyClass(value: String): Self = this.set("energyEfficiencyClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnergyEfficiencyClass: Self = this.set("energyEfficiencyClass", js.undefined)
+    @scala.inline
+    def setExcludedDestinationsVarargs(value: String*): Self = this.set("excludedDestinations", js.Array(value :_*))
+    @scala.inline
+    def setExcludedDestinations(value: js.Array[String]): Self = this.set("excludedDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedDestinations: Self = this.set("excludedDestinations", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: String): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    @scala.inline
+    def setGender(value: String): Self = this.set("gender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGender: Self = this.set("gender", js.undefined)
+    @scala.inline
+    def setGoogleProductCategory(value: String): Self = this.set("googleProductCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleProductCategory: Self = this.set("googleProductCategory", js.undefined)
+    @scala.inline
+    def setGtin(value: String): Self = this.set("gtin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGtin: Self = this.set("gtin", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIdentifierExists(value: Boolean): Self = this.set("identifierExists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifierExists: Self = this.set("identifierExists", js.undefined)
+    @scala.inline
+    def setImageLink(value: String): Self = this.set("imageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageLink: Self = this.set("imageLink", js.undefined)
+    @scala.inline
+    def setIncludedDestinationsVarargs(value: String*): Self = this.set("includedDestinations", js.Array(value :_*))
+    @scala.inline
+    def setIncludedDestinations(value: js.Array[String]): Self = this.set("includedDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludedDestinations: Self = this.set("includedDestinations", js.undefined)
+    @scala.inline
+    def setInstallment(value: SchemaInstallment): Self = this.set("installment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallment: Self = this.set("installment", js.undefined)
+    @scala.inline
+    def setIsBundle(value: Boolean): Self = this.set("isBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBundle: Self = this.set("isBundle", js.undefined)
+    @scala.inline
+    def setItemGroupId(value: String): Self = this.set("itemGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemGroupId: Self = this.set("itemGroupId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setLoyaltyPoints(value: SchemaLoyaltyPoints): Self = this.set("loyaltyPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoyaltyPoints: Self = this.set("loyaltyPoints", js.undefined)
+    @scala.inline
+    def setMaterial(value: String): Self = this.set("material", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterial: Self = this.set("material", js.undefined)
+    @scala.inline
+    def setMaxEnergyEfficiencyClass(value: String): Self = this.set("maxEnergyEfficiencyClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEnergyEfficiencyClass: Self = this.set("maxEnergyEfficiencyClass", js.undefined)
+    @scala.inline
+    def setMaxHandlingTime(value: String): Self = this.set("maxHandlingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHandlingTime: Self = this.set("maxHandlingTime", js.undefined)
+    @scala.inline
+    def setMinEnergyEfficiencyClass(value: String): Self = this.set("minEnergyEfficiencyClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinEnergyEfficiencyClass: Self = this.set("minEnergyEfficiencyClass", js.undefined)
+    @scala.inline
+    def setMinHandlingTime(value: String): Self = this.set("minHandlingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHandlingTime: Self = this.set("minHandlingTime", js.undefined)
+    @scala.inline
+    def setMobileLink(value: String): Self = this.set("mobileLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileLink: Self = this.set("mobileLink", js.undefined)
+    @scala.inline
+    def setMpn(value: String): Self = this.set("mpn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpn: Self = this.set("mpn", js.undefined)
+    @scala.inline
+    def setMultipack(value: String): Self = this.set("multipack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipack: Self = this.set("multipack", js.undefined)
+    @scala.inline
+    def setOfferId(value: String): Self = this.set("offerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferId: Self = this.set("offerId", js.undefined)
+    @scala.inline
+    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setProductTypesVarargs(value: String*): Self = this.set("productTypes", js.Array(value :_*))
+    @scala.inline
+    def setProductTypes(value: js.Array[String]): Self = this.set("productTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductTypes: Self = this.set("productTypes", js.undefined)
+    @scala.inline
+    def setPromotionIdsVarargs(value: String*): Self = this.set("promotionIds", js.Array(value :_*))
+    @scala.inline
+    def setPromotionIds(value: js.Array[String]): Self = this.set("promotionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionIds: Self = this.set("promotionIds", js.undefined)
+    @scala.inline
+    def setSalePrice(value: SchemaPrice): Self = this.set("salePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalePrice: Self = this.set("salePrice", js.undefined)
+    @scala.inline
+    def setSalePriceEffectiveDate(value: String): Self = this.set("salePriceEffectiveDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalePriceEffectiveDate: Self = this.set("salePriceEffectiveDate", js.undefined)
+    @scala.inline
+    def setSellOnGoogleQuantity(value: String): Self = this.set("sellOnGoogleQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellOnGoogleQuantity: Self = this.set("sellOnGoogleQuantity", js.undefined)
+    @scala.inline
+    def setShippingVarargs(value: SchemaProductShipping*): Self = this.set("shipping", js.Array(value :_*))
+    @scala.inline
+    def setShipping(value: js.Array[SchemaProductShipping]): Self = this.set("shipping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipping: Self = this.set("shipping", js.undefined)
+    @scala.inline
+    def setShippingHeight(value: SchemaProductShippingDimension): Self = this.set("shippingHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingHeight: Self = this.set("shippingHeight", js.undefined)
+    @scala.inline
+    def setShippingLabel(value: String): Self = this.set("shippingLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingLabel: Self = this.set("shippingLabel", js.undefined)
+    @scala.inline
+    def setShippingLength(value: SchemaProductShippingDimension): Self = this.set("shippingLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingLength: Self = this.set("shippingLength", js.undefined)
+    @scala.inline
+    def setShippingWeight(value: SchemaProductShippingWeight): Self = this.set("shippingWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingWeight: Self = this.set("shippingWeight", js.undefined)
+    @scala.inline
+    def setShippingWidth(value: SchemaProductShippingDimension): Self = this.set("shippingWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingWidth: Self = this.set("shippingWidth", js.undefined)
+    @scala.inline
+    def setSizeSystem(value: String): Self = this.set("sizeSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeSystem: Self = this.set("sizeSystem", js.undefined)
+    @scala.inline
+    def setSizeType(value: String): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    @scala.inline
+    def setSizesVarargs(value: String*): Self = this.set("sizes", js.Array(value :_*))
+    @scala.inline
+    def setSizes(value: js.Array[String]): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setTargetCountry(value: String): Self = this.set("targetCountry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCountry: Self = this.set("targetCountry", js.undefined)
+    @scala.inline
+    def setTaxesVarargs(value: SchemaProductTax*): Self = this.set("taxes", js.Array(value :_*))
+    @scala.inline
+    def setTaxes(value: js.Array[SchemaProductTax]): Self = this.set("taxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaxes: Self = this.set("taxes", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUnitPricingBaseMeasure(value: SchemaProductUnitPricingBaseMeasure): Self = this.set("unitPricingBaseMeasure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitPricingBaseMeasure: Self = this.set("unitPricingBaseMeasure", js.undefined)
+    @scala.inline
+    def setUnitPricingMeasure(value: SchemaProductUnitPricingMeasure): Self = this.set("unitPricingMeasure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitPricingMeasure: Self = this.set("unitPricingMeasure", js.undefined)
+  }
+  
 }
 

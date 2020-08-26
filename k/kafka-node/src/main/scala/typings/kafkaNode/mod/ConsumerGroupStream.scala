@@ -14,6 +14,11 @@ class ConsumerGroupStream protected () extends Readable {
   var consumerGroup: ConsumerGroup = js.native
   def close(cb: js.Function0[_]): Unit = js.native
   def commit(message: Message): Unit = js.native
+  def commit(
+    message: Message,
+    force: js.UndefOr[scala.Nothing],
+    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]
+  ): Unit = js.native
   def commit(message: Message, force: Boolean): Unit = js.native
   def commit(message: Message, force: Boolean, cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): Unit = js.native
   def transmitMessages(): Unit = js.native

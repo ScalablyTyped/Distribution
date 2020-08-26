@@ -22,16 +22,34 @@ trait TargetSummary extends js.Object {
 
 object TargetSummary {
   @scala.inline
-  def apply(
-    TargetAddress: TargetAddress = null,
-    TargetStatus: TargetStatus = null,
-    TargetType: TargetType = null
-  ): TargetSummary = {
+  def apply(): TargetSummary = {
     val __obj = js.Dynamic.literal()
-    if (TargetAddress != null) __obj.updateDynamic("TargetAddress")(TargetAddress.asInstanceOf[js.Any])
-    if (TargetStatus != null) __obj.updateDynamic("TargetStatus")(TargetStatus.asInstanceOf[js.Any])
-    if (TargetType != null) __obj.updateDynamic("TargetType")(TargetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetSummary]
   }
+  @scala.inline
+  implicit class TargetSummaryOps[Self <: TargetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetAddress(value: TargetAddress): Self = this.set("TargetAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetAddress: Self = this.set("TargetAddress", js.undefined)
+    @scala.inline
+    def setTargetStatus(value: TargetStatus): Self = this.set("TargetStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetStatus: Self = this.set("TargetStatus", js.undefined)
+    @scala.inline
+    def setTargetType(value: TargetType): Self = this.set("TargetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetType: Self = this.set("TargetType", js.undefined)
+  }
+  
 }
 

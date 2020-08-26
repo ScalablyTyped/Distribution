@@ -18,14 +18,30 @@ trait Statistics extends js.Object {
 
 object Statistics {
   @scala.inline
-  def apply(
-    approximateNumberOfObjectsToProcess: js.UndefOr[double] = js.undefined,
-    numberOfRuns: js.UndefOr[double] = js.undefined
-  ): Statistics = {
+  def apply(): Statistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(approximateNumberOfObjectsToProcess)) __obj.updateDynamic("approximateNumberOfObjectsToProcess")(approximateNumberOfObjectsToProcess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfRuns)) __obj.updateDynamic("numberOfRuns")(numberOfRuns.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Statistics]
   }
+  @scala.inline
+  implicit class StatisticsOps[Self <: Statistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproximateNumberOfObjectsToProcess(value: double): Self = this.set("approximateNumberOfObjectsToProcess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproximateNumberOfObjectsToProcess: Self = this.set("approximateNumberOfObjectsToProcess", js.undefined)
+    @scala.inline
+    def setNumberOfRuns(value: double): Self = this.set("numberOfRuns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfRuns: Self = this.set("numberOfRuns", js.undefined)
+  }
+  
 }
 

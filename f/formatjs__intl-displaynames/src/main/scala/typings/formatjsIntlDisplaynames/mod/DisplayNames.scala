@@ -1,18 +1,19 @@
 package typings.formatjsIntlDisplaynames.mod
 
 import typings.formatjsIntlDisplaynames.anon.PickDisplayNamesOptionslo
-import typings.formatjsIntlUtils.displaynamesTypesMod.DisplayNamesData
-import typings.formatjsIntlUtils.displaynamesTypesMod.DisplayNamesLocaleData
+import typings.formatjsIntlUtils.mod.DisplayNamesData
+import typings.formatjsIntlUtils.mod.DisplayNamesLocaleData
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@formatjs/intl-displaynames/dist", "DisplayNames")
+@JSImport("@formatjs/intl-displaynames", "DisplayNames")
 @js.native
 class DisplayNames () extends js.Object {
   def this(locales: String) = this()
   def this(locales: js.Array[String]) = this()
+  def this(locales: js.UndefOr[scala.Nothing], options: DisplayNamesOptions) = this()
   def this(locales: String, options: DisplayNamesOptions) = this()
   def this(locales: js.Array[String], options: DisplayNamesOptions) = this()
   def of(code: String): js.UndefOr[String] = js.native
@@ -22,7 +23,7 @@ class DisplayNames () extends js.Object {
 }
 
 /* static members */
-@JSImport("@formatjs/intl-displaynames/dist", "DisplayNames")
+@JSImport("@formatjs/intl-displaynames", "DisplayNames")
 @js.native
 object DisplayNames extends js.Object {
   var __defaultLocale: js.Any = js.native
@@ -32,6 +33,7 @@ object DisplayNames extends js.Object {
   val polyfilled: /* true */ Boolean = js.native
   def __addLocaleData(data: DisplayNamesLocaleData*): Unit = js.native
   def supportedLocalesOf(): js.Array[String] = js.native
+  def supportedLocalesOf(locales: js.UndefOr[scala.Nothing], options: PickDisplayNamesOptionslo): js.Array[String] = js.native
   def supportedLocalesOf(locales: String): js.Array[String] = js.native
   def supportedLocalesOf(locales: String, options: PickDisplayNamesOptionslo): js.Array[String] = js.native
   def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native

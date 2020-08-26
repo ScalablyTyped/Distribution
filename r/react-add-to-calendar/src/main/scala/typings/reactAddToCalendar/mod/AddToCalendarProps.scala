@@ -4,53 +4,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddToCalendarProps extends js.Object {
-  var buttonClassClosed: js.UndefOr[String] = js.undefined
-  var buttonClassOpen: js.UndefOr[String] = js.undefined
-  var buttonIconClass: js.UndefOr[String] = js.undefined
-  var buttonLabel: js.UndefOr[String] = js.undefined
-  var buttonTemplate: js.UndefOr[js.Any] = js.undefined
-  var buttonWrapperClass: js.UndefOr[String] = js.undefined
-  var displayItemIcons: js.UndefOr[Boolean] = js.undefined
-  var dropdownClass: js.UndefOr[String] = js.undefined
-  var event: AddToCalendarEvent
-  var listItems: js.UndefOr[js.Array[_]] = js.undefined
-  var optionsOpen: js.UndefOr[Boolean] = js.undefined
-  var rootClass: js.UndefOr[String] = js.undefined
-  var useFontAwesomeIcons: js.UndefOr[Boolean] = js.undefined
+  var buttonClassClosed: js.UndefOr[String] = js.native
+  var buttonClassOpen: js.UndefOr[String] = js.native
+  var buttonIconClass: js.UndefOr[String] = js.native
+  var buttonLabel: js.UndefOr[String] = js.native
+  var buttonTemplate: js.UndefOr[js.Any] = js.native
+  var buttonWrapperClass: js.UndefOr[String] = js.native
+  var displayItemIcons: js.UndefOr[Boolean] = js.native
+  var dropdownClass: js.UndefOr[String] = js.native
+  var event: AddToCalendarEvent = js.native
+  var listItems: js.UndefOr[js.Array[_]] = js.native
+  var optionsOpen: js.UndefOr[Boolean] = js.native
+  var rootClass: js.UndefOr[String] = js.native
+  var useFontAwesomeIcons: js.UndefOr[Boolean] = js.native
 }
 
 object AddToCalendarProps {
   @scala.inline
-  def apply(
-    event: AddToCalendarEvent,
-    buttonClassClosed: String = null,
-    buttonClassOpen: String = null,
-    buttonIconClass: String = null,
-    buttonLabel: String = null,
-    buttonTemplate: js.Any = null,
-    buttonWrapperClass: String = null,
-    displayItemIcons: js.UndefOr[Boolean] = js.undefined,
-    dropdownClass: String = null,
-    listItems: js.Array[_] = null,
-    optionsOpen: js.UndefOr[Boolean] = js.undefined,
-    rootClass: String = null,
-    useFontAwesomeIcons: js.UndefOr[Boolean] = js.undefined
-  ): AddToCalendarProps = {
+  def apply(event: AddToCalendarEvent): AddToCalendarProps = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    if (buttonClassClosed != null) __obj.updateDynamic("buttonClassClosed")(buttonClassClosed.asInstanceOf[js.Any])
-    if (buttonClassOpen != null) __obj.updateDynamic("buttonClassOpen")(buttonClassOpen.asInstanceOf[js.Any])
-    if (buttonIconClass != null) __obj.updateDynamic("buttonIconClass")(buttonIconClass.asInstanceOf[js.Any])
-    if (buttonLabel != null) __obj.updateDynamic("buttonLabel")(buttonLabel.asInstanceOf[js.Any])
-    if (buttonTemplate != null) __obj.updateDynamic("buttonTemplate")(buttonTemplate.asInstanceOf[js.Any])
-    if (buttonWrapperClass != null) __obj.updateDynamic("buttonWrapperClass")(buttonWrapperClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayItemIcons)) __obj.updateDynamic("displayItemIcons")(displayItemIcons.get.asInstanceOf[js.Any])
-    if (dropdownClass != null) __obj.updateDynamic("dropdownClass")(dropdownClass.asInstanceOf[js.Any])
-    if (listItems != null) __obj.updateDynamic("listItems")(listItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(optionsOpen)) __obj.updateDynamic("optionsOpen")(optionsOpen.get.asInstanceOf[js.Any])
-    if (rootClass != null) __obj.updateDynamic("rootClass")(rootClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFontAwesomeIcons)) __obj.updateDynamic("useFontAwesomeIcons")(useFontAwesomeIcons.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddToCalendarProps]
   }
+  @scala.inline
+  implicit class AddToCalendarPropsOps[Self <: AddToCalendarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvent(value: AddToCalendarEvent): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButtonClassClosed(value: String): Self = this.set("buttonClassClosed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonClassClosed: Self = this.set("buttonClassClosed", js.undefined)
+    @scala.inline
+    def setButtonClassOpen(value: String): Self = this.set("buttonClassOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonClassOpen: Self = this.set("buttonClassOpen", js.undefined)
+    @scala.inline
+    def setButtonIconClass(value: String): Self = this.set("buttonIconClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonIconClass: Self = this.set("buttonIconClass", js.undefined)
+    @scala.inline
+    def setButtonLabel(value: String): Self = this.set("buttonLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonLabel: Self = this.set("buttonLabel", js.undefined)
+    @scala.inline
+    def setButtonTemplate(value: js.Any): Self = this.set("buttonTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonTemplate: Self = this.set("buttonTemplate", js.undefined)
+    @scala.inline
+    def setButtonWrapperClass(value: String): Self = this.set("buttonWrapperClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonWrapperClass: Self = this.set("buttonWrapperClass", js.undefined)
+    @scala.inline
+    def setDisplayItemIcons(value: Boolean): Self = this.set("displayItemIcons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayItemIcons: Self = this.set("displayItemIcons", js.undefined)
+    @scala.inline
+    def setDropdownClass(value: String): Self = this.set("dropdownClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownClass: Self = this.set("dropdownClass", js.undefined)
+    @scala.inline
+    def setListItemsVarargs(value: js.Any*): Self = this.set("listItems", js.Array(value :_*))
+    @scala.inline
+    def setListItems(value: js.Array[_]): Self = this.set("listItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListItems: Self = this.set("listItems", js.undefined)
+    @scala.inline
+    def setOptionsOpen(value: Boolean): Self = this.set("optionsOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsOpen: Self = this.set("optionsOpen", js.undefined)
+    @scala.inline
+    def setRootClass(value: String): Self = this.set("rootClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootClass: Self = this.set("rootClass", js.undefined)
+    @scala.inline
+    def setUseFontAwesomeIcons(value: Boolean): Self = this.set("useFontAwesomeIcons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseFontAwesomeIcons: Self = this.set("useFontAwesomeIcons", js.undefined)
+  }
+  
 }
 

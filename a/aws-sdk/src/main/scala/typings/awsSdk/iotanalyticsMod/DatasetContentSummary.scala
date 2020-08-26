@@ -30,20 +30,42 @@ trait DatasetContentSummary extends js.Object {
 
 object DatasetContentSummary {
   @scala.inline
-  def apply(
-    completionTime: Timestamp = null,
-    creationTime: Timestamp = null,
-    scheduleTime: Timestamp = null,
-    status: DatasetContentStatus = null,
-    version: DatasetContentVersion = null
-  ): DatasetContentSummary = {
+  def apply(): DatasetContentSummary = {
     val __obj = js.Dynamic.literal()
-    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetContentSummary]
   }
+  @scala.inline
+  implicit class DatasetContentSummaryOps[Self <: DatasetContentSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTime(value: Timestamp): Self = this.set("completionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTime: Self = this.set("completionTime", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setScheduleTime(value: Timestamp): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+    @scala.inline
+    def setStatus(value: DatasetContentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVersion(value: DatasetContentVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -1,67 +1,35 @@
 package typings.cathoQuantum.socialButtonMod
 
-import typings.cathoQuantum.anon.Breakpoints
 import typings.cathoQuantum.buttonMod.ButtonProps
-import typings.cathoQuantum.cathoQuantumStrings.button
-import typings.cathoQuantum.cathoQuantumStrings.error
-import typings.cathoQuantum.cathoQuantumStrings.large
-import typings.cathoQuantum.cathoQuantumStrings.medium
-import typings.cathoQuantum.cathoQuantumStrings.neutral
-import typings.cathoQuantum.cathoQuantumStrings.primary
-import typings.cathoQuantum.cathoQuantumStrings.reset
-import typings.cathoQuantum.cathoQuantumStrings.secondary
-import typings.cathoQuantum.cathoQuantumStrings.small
-import typings.cathoQuantum.cathoQuantumStrings.submit
-import typings.cathoQuantum.cathoQuantumStrings.success
-import typings.cathoQuantum.cathoQuantumStrings.warning
-import typings.cathoQuantum.cathoQuantumStrings.xlarge
-import typings.cathoQuantum.cathoQuantumStrings.xsmall
-import typings.react.mod.MouseEvent
-import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
-import typings.react.mod.global.JSX.Element
-import typings.std.HTMLButtonElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SocialButtonProps extends ButtonProps {
-  var provider: String
+  var provider: String = js.native
 }
 
 object SocialButtonProps {
   @scala.inline
-  def apply(
-    provider: String,
-    $as: Element | String = null,
-    center: js.UndefOr[Boolean] = js.undefined,
-    children: js.Array[ReactNode] | ReactNode = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    full: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    id: String = null,
-    onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
-    size: xsmall | small | medium | large | xlarge = null,
-    skin: neutral | primary | secondary | success | warning | error = null,
-    stroked: js.UndefOr[Boolean] = js.undefined,
-    theme: Breakpoints = null,
-    `type`: button | reset | submit = null
-  ): SocialButtonProps = {
+  def apply(provider: String): SocialButtonProps = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if ($as != null) __obj.updateDynamic("$as")($as.asInstanceOf[js.Any])
-    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (!js.isUndefined(stroked)) __obj.updateDynamic("stroked")(stroked.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialButtonProps]
   }
+  @scala.inline
+  implicit class SocialButtonPropsOps[Self <: SocialButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+  }
+  
 }
 

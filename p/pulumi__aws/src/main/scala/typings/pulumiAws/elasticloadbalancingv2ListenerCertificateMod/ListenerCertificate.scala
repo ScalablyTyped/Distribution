@@ -19,6 +19,7 @@ class ListenerCertificate protected () extends CustomResource {
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  /** @deprecated aws.elasticloadbalancingv2.ListenerCertificate has been deprecated in favor of aws.lb.ListenerCertificate */
   def this(name: String, args: ListenerCertificateArgs) = this()
   def this(name: String, args: ListenerCertificateArgs, opts: CustomResourceOptions) = this()
   /**
@@ -42,8 +43,10 @@ object ListenerCertificate extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ListenerCertificate = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ListenerCertificate = js.native
   def get(name: String, id: Input[ID], state: ListenerCertificateState): ListenerCertificate = js.native
   def get(name: String, id: Input[ID], state: ListenerCertificateState, opts: CustomResourceOptions): ListenerCertificate = js.native
   /**

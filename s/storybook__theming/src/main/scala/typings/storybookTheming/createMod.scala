@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createMod extends js.Object {
   def create(): ThemeVars = js.native
+  def create(vars: js.UndefOr[scala.Nothing], rest: Rest): ThemeVars = js.native
   def create(vars: ThemeVars): ThemeVars = js.native
   def create(vars: ThemeVars, rest: Rest): ThemeVars = js.native
   @js.native

@@ -28,6 +28,7 @@ class ResourceOperatingsystems protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOperatingSystem] = js.native
   def get(callback: BodyResponseCallback[SchemaOperatingSystem]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperatingSystem] = js.native
   def get(params: ParamsResourceOperatingsystemsGet): GaxiosPromise[SchemaOperatingSystem] = js.native
   def get(params: ParamsResourceOperatingsystemsGet, callback: BodyResponseCallback[SchemaOperatingSystem]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceOperatingsystems protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOperatingSystemsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
   def list(params: ParamsResourceOperatingsystemsList): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
   def list(
     params: ParamsResourceOperatingsystemsList,

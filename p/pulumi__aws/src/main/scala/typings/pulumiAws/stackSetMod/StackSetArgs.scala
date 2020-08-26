@@ -35,7 +35,7 @@ trait StackSetArgs extends js.Object {
   /**
     * Key-value map of tags to associate with this StackSet and the Stacks created from it. AWS CloudFormation also propagates these tags to supported resources that are created in the Stacks. A maximum number of 50 tags can be specified.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * String containing the CloudFormation template body. Maximum size: 51,200 bytes. Conflicts with `templateUrl`.
     */
@@ -48,27 +48,58 @@ trait StackSetArgs extends js.Object {
 
 object StackSetArgs {
   @scala.inline
-  def apply(
-    administrationRoleArn: Input[String],
-    capabilities: Input[js.Array[Input[String]]] = null,
-    description: Input[String] = null,
-    executionRoleName: Input[String] = null,
-    name: Input[String] = null,
-    parameters: Input[StringDictionary[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    templateBody: Input[String] = null,
-    templateUrl: Input[String] = null
-  ): StackSetArgs = {
+  def apply(administrationRoleArn: Input[String]): StackSetArgs = {
     val __obj = js.Dynamic.literal(administrationRoleArn = administrationRoleArn.asInstanceOf[js.Any])
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (executionRoleName != null) __obj.updateDynamic("executionRoleName")(executionRoleName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetArgs]
   }
+  @scala.inline
+  implicit class StackSetArgsOps[Self <: StackSetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdministrationRoleArn(value: Input[String]): Self = this.set("administrationRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapabilitiesVarargs(value: Input[String]*): Self = this.set("capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Input[js.Array[Input[String]]]): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExecutionRoleName(value: Input[String]): Self = this.set("executionRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleName: Self = this.set("executionRoleName", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: Input[String]): Self = this.set("templateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("templateBody", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: Input[String]): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+  }
+  
 }
 

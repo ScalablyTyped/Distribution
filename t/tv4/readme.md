@@ -11,8 +11,8 @@ A public domain JSON Schema validator for JavaScript
 | Full name          | tv4 |
 | Keywords           | json-schema, schema, validator, tv4 |
 | # releases         | 0 |
-| # dependents       | 366 |
-| # downloads        | 21419233 |
+| # dependents       | 369 |
+| # downloads        | 21885245 |
 | # stars            | 11 |
 
 ## Links

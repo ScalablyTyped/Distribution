@@ -31,7 +31,26 @@ trait PlusFingerprint extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/fingerprint.html](http://www.html5plus.org/doc/zh_cn/fingerprint.html)
     */
   def authenticate(): Unit = js.native
+  def authenticate(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusFingerprintAuthenticateOptions
+  ): Unit = js.native
+  def authenticate(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ PlusFingerprintFingerprintError, Unit]
+  ): Unit = js.native
+  def authenticate(
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ PlusFingerprintFingerprintError, Unit],
+    options: PlusFingerprintAuthenticateOptions
+  ): Unit = js.native
   def authenticate(successCB: js.Function0[Unit]): Unit = js.native
+  def authenticate(
+    successCB: js.Function0[Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    options: PlusFingerprintAuthenticateOptions
+  ): Unit = js.native
   def authenticate(
     successCB: js.Function0[Unit],
     errorCB: js.Function1[/* result */ PlusFingerprintFingerprintError, Unit]

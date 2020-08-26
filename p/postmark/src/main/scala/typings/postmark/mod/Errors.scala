@@ -36,6 +36,7 @@ object Errors extends js.Object {
     extends typings.postmark.errorsMod.PostmarkError {
     def this(message: String) = this()
     def this(message: String, code: Double) = this()
+    def this(message: String, code: js.UndefOr[scala.Nothing], statusCode: Double) = this()
     def this(message: String, code: Double, statusCode: Double) = this()
   }
   

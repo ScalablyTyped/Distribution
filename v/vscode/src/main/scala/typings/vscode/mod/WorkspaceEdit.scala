@@ -22,6 +22,7 @@ class WorkspaceEdit () extends js.Object {
     * @param metadata Optional metadata for the entry.
     */
   def createFile(uri: Uri): Unit = js.native
+  def createFile(uri: Uri, options: js.UndefOr[scala.Nothing], metadata: WorkspaceEditEntryMetadata): Unit = js.native
   def createFile(uri: Uri, options: IgnoreIfExists): Unit = js.native
   def createFile(uri: Uri, options: IgnoreIfExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   /**
@@ -40,6 +41,7 @@ class WorkspaceEdit () extends js.Object {
     * @param metadata Optional metadata for the entry.
     */
   def deleteFile(uri: Uri): Unit = js.native
+  def deleteFile(uri: Uri, options: js.UndefOr[scala.Nothing], metadata: WorkspaceEditEntryMetadata): Unit = js.native
   def deleteFile(uri: Uri, options: IgnoreIfNotExists): Unit = js.native
   def deleteFile(uri: Uri, options: IgnoreIfNotExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   /**
@@ -82,6 +84,7 @@ class WorkspaceEdit () extends js.Object {
     * @param metadata Optional metadata for the entry.
     */
   def renameFile(oldUri: Uri, newUri: Uri): Unit = js.native
+  def renameFile(oldUri: Uri, newUri: Uri, options: js.UndefOr[scala.Nothing], metadata: WorkspaceEditEntryMetadata): Unit = js.native
   def renameFile(oldUri: Uri, newUri: Uri, options: IgnoreIfExists): Unit = js.native
   def renameFile(oldUri: Uri, newUri: Uri, options: IgnoreIfExists, metadata: WorkspaceEditEntryMetadata): Unit = js.native
   /**

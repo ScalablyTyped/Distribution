@@ -131,62 +131,126 @@ trait SchemaProfile extends js.Object {
 
 object SchemaProfile {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    botFilteringEnabled: js.UndefOr[Boolean] = js.undefined,
-    childLink: Href = null,
-    created: String = null,
-    currency: String = null,
-    defaultPage: String = null,
-    eCommerceTracking: js.UndefOr[Boolean] = js.undefined,
-    enhancedECommerceTracking: js.UndefOr[Boolean] = js.undefined,
-    excludeQueryParameters: String = null,
-    id: String = null,
-    internalWebPropertyId: String = null,
-    kind: String = null,
-    name: String = null,
-    parentLink: Href = null,
-    permissions: Effective = null,
-    selfLink: String = null,
-    siteSearchCategoryParameters: String = null,
-    siteSearchQueryParameters: String = null,
-    starred: js.UndefOr[Boolean] = js.undefined,
-    stripSiteSearchCategoryParameters: js.UndefOr[Boolean] = js.undefined,
-    stripSiteSearchQueryParameters: js.UndefOr[Boolean] = js.undefined,
-    timezone: String = null,
-    `type`: String = null,
-    updated: String = null,
-    webPropertyId: String = null,
-    websiteUrl: String = null
-  ): SchemaProfile = {
+  def apply(): SchemaProfile = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(botFilteringEnabled)) __obj.updateDynamic("botFilteringEnabled")(botFilteringEnabled.get.asInstanceOf[js.Any])
-    if (childLink != null) __obj.updateDynamic("childLink")(childLink.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (defaultPage != null) __obj.updateDynamic("defaultPage")(defaultPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(eCommerceTracking)) __obj.updateDynamic("eCommerceTracking")(eCommerceTracking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enhancedECommerceTracking)) __obj.updateDynamic("enhancedECommerceTracking")(enhancedECommerceTracking.get.asInstanceOf[js.Any])
-    if (excludeQueryParameters != null) __obj.updateDynamic("excludeQueryParameters")(excludeQueryParameters.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (internalWebPropertyId != null) __obj.updateDynamic("internalWebPropertyId")(internalWebPropertyId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentLink != null) __obj.updateDynamic("parentLink")(parentLink.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (siteSearchCategoryParameters != null) __obj.updateDynamic("siteSearchCategoryParameters")(siteSearchCategoryParameters.asInstanceOf[js.Any])
-    if (siteSearchQueryParameters != null) __obj.updateDynamic("siteSearchQueryParameters")(siteSearchQueryParameters.asInstanceOf[js.Any])
-    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripSiteSearchCategoryParameters)) __obj.updateDynamic("stripSiteSearchCategoryParameters")(stripSiteSearchCategoryParameters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripSiteSearchQueryParameters)) __obj.updateDynamic("stripSiteSearchQueryParameters")(stripSiteSearchQueryParameters.get.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
-    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProfile]
   }
+  @scala.inline
+  implicit class SchemaProfileOps[Self <: SchemaProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setBotFilteringEnabled(value: Boolean): Self = this.set("botFilteringEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBotFilteringEnabled: Self = this.set("botFilteringEnabled", js.undefined)
+    @scala.inline
+    def setChildLink(value: Href): Self = this.set("childLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildLink: Self = this.set("childLink", js.undefined)
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setDefaultPage(value: String): Self = this.set("defaultPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPage: Self = this.set("defaultPage", js.undefined)
+    @scala.inline
+    def setECommerceTracking(value: Boolean): Self = this.set("eCommerceTracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteECommerceTracking: Self = this.set("eCommerceTracking", js.undefined)
+    @scala.inline
+    def setEnhancedECommerceTracking(value: Boolean): Self = this.set("enhancedECommerceTracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedECommerceTracking: Self = this.set("enhancedECommerceTracking", js.undefined)
+    @scala.inline
+    def setExcludeQueryParameters(value: String): Self = this.set("excludeQueryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeQueryParameters: Self = this.set("excludeQueryParameters", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInternalWebPropertyId(value: String): Self = this.set("internalWebPropertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalWebPropertyId: Self = this.set("internalWebPropertyId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentLink(value: Href): Self = this.set("parentLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentLink: Self = this.set("parentLink", js.undefined)
+    @scala.inline
+    def setPermissions(value: Effective): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSiteSearchCategoryParameters(value: String): Self = this.set("siteSearchCategoryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteSearchCategoryParameters: Self = this.set("siteSearchCategoryParameters", js.undefined)
+    @scala.inline
+    def setSiteSearchQueryParameters(value: String): Self = this.set("siteSearchQueryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteSearchQueryParameters: Self = this.set("siteSearchQueryParameters", js.undefined)
+    @scala.inline
+    def setStarred(value: Boolean): Self = this.set("starred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarred: Self = this.set("starred", js.undefined)
+    @scala.inline
+    def setStripSiteSearchCategoryParameters(value: Boolean): Self = this.set("stripSiteSearchCategoryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripSiteSearchCategoryParameters: Self = this.set("stripSiteSearchCategoryParameters", js.undefined)
+    @scala.inline
+    def setStripSiteSearchQueryParameters(value: Boolean): Self = this.set("stripSiteSearchQueryParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripSiteSearchQueryParameters: Self = this.set("stripSiteSearchQueryParameters", js.undefined)
+    @scala.inline
+    def setTimezone(value: String): Self = this.set("timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("timezone", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+    @scala.inline
+    def setWebsiteUrl(value: String): Self = this.set("websiteUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteUrl: Self = this.set("websiteUrl", js.undefined)
+  }
+  
 }
 

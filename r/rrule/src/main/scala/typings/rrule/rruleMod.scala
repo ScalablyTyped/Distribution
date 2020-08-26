@@ -92,6 +92,12 @@ object rruleMod extends js.Object {
     def between(
       after: Date,
       before: Date,
+      inc: js.UndefOr[scala.Nothing],
+      iterator: js.Function2[/* d */ Date, /* len */ Double, Boolean]
+    ): js.Array[Date] = js.native
+    def between(
+      after: Date,
+      before: Date,
       inc: Boolean,
       iterator: js.Function2[/* d */ Date, /* len */ Double, Boolean]
     ): js.Array[Date] = js.native
@@ -106,7 +112,15 @@ object rruleMod extends js.Object {
       * to text.
       */
     def toText(): String = js.native
+    def toText(
+      gettext: js.UndefOr[scala.Nothing],
+      language: js.UndefOr[scala.Nothing],
+      dateFormatter: DateFormatter
+    ): String = js.native
+    def toText(gettext: js.UndefOr[scala.Nothing], language: Language): String = js.native
+    def toText(gettext: js.UndefOr[scala.Nothing], language: Language, dateFormatter: DateFormatter): String = js.native
     def toText(gettext: GetText): String = js.native
+    def toText(gettext: GetText, language: js.UndefOr[scala.Nothing], dateFormatter: DateFormatter): String = js.native
     def toText(gettext: GetText, language: Language): String = js.native
     def toText(gettext: GetText, language: Language, dateFormatter: DateFormatter): String = js.native
   }
@@ -114,15 +128,8 @@ object rruleMod extends js.Object {
   @js.native
   class default () extends RRule {
     def this(options: PartialOptions) = this()
+    def this(options: js.UndefOr[scala.Nothing], noCache: Boolean) = this()
     def this(options: PartialOptions, noCache: Boolean) = this()
-    /* CompleteClass */
-    override def after(date: Date, inc: Boolean): Date = js.native
-    /* CompleteClass */
-    override def all(): js.Array[Date] = js.native
-    /* CompleteClass */
-    override def before(date: Date, inc: Boolean): Date = js.native
-    /* CompleteClass */
-    override def between(after: Date, before: Date, inc: Boolean): js.Array[Date] = js.native
   }
   
   val DEFAULT_OPTIONS: Options = js.native

@@ -12,7 +12,7 @@ Check if a stream has ended
 | Keywords           | stream, end, ended, consumed, complete |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 48690385 |
+| # downloads        | 50220467 |
 | # stars            | 0 |
 
 ## Links

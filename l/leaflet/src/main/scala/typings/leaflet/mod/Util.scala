@@ -26,11 +26,17 @@ object Util extends js.Object {
   def formatNum(num: Double): Double = js.native
   def formatNum(num: Double, digits: Double): Double = js.native
   def getParamString(obj: js.Any): String = js.native
+  def getParamString(obj: js.Any, existingUrl: js.UndefOr[scala.Nothing], uppercase: Boolean): String = js.native
   def getParamString(obj: js.Any, existingUrl: String): String = js.native
   def getParamString(obj: js.Any, existingUrl: String, uppercase: Boolean): String = js.native
   def indexOf(array: js.Array[_], el: js.Any): Double = js.native
   def isArray(obj: js.Any): Boolean = js.native
   def requestAnimFrame(fn: js.Function1[/* timestamp */ Double, Unit]): Double = js.native
+  def requestAnimFrame(
+    fn: js.Function1[/* timestamp */ Double, Unit],
+    context: js.UndefOr[scala.Nothing],
+    immediate: Boolean
+  ): Double = js.native
   def requestAnimFrame(fn: js.Function1[/* timestamp */ Double, Unit], context: js.Any): Double = js.native
   def requestAnimFrame(fn: js.Function1[/* timestamp */ Double, Unit], context: js.Any, immediate: Boolean): Double = js.native
   def setOptions(obj: js.Any, options: js.Any): js.Any = js.native

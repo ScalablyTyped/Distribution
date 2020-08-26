@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait User extends js.Object {
-  var displayName: js.UndefOr[String] = js.undefined
-  var emailAddress: js.UndefOr[String] = js.undefined
-  var isAuthenticatedUser: js.UndefOr[Boolean] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var permissionId: js.UndefOr[String] = js.undefined
-  var picture: js.UndefOr[UserPicture] = js.undefined
+  var displayName: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.native
+  var isAuthenticatedUser: js.UndefOr[Boolean] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var permissionId: js.UndefOr[String] = js.native
+  var picture: js.UndefOr[UserPicture] = js.native
 }
 
 object User {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    emailAddress: String = null,
-    isAuthenticatedUser: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    permissionId: String = null,
-    picture: UserPicture = null
-  ): User = {
+  def apply(): User = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAuthenticatedUser)) __obj.updateDynamic("isAuthenticatedUser")(isAuthenticatedUser.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId.asInstanceOf[js.Any])
-    if (picture != null) __obj.updateDynamic("picture")(picture.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  @scala.inline
+  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmailAddress(value: String): Self = this.set("emailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailAddress: Self = this.set("emailAddress", js.undefined)
+    @scala.inline
+    def setIsAuthenticatedUser(value: Boolean): Self = this.set("isAuthenticatedUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAuthenticatedUser: Self = this.set("isAuthenticatedUser", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPermissionId(value: String): Self = this.set("permissionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionId: Self = this.set("permissionId", js.undefined)
+    @scala.inline
+    def setPicture(value: UserPicture): Self = this.set("picture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePicture: Self = this.set("picture", js.undefined)
+  }
+  
 }
 

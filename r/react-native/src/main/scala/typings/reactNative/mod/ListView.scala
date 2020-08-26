@@ -26,10 +26,15 @@ class ListView ()
     * See `ScrollView#scrollTo`.
     */
   def scrollTo(): Unit = js.native
+  def scrollTo(y: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
+  def scrollTo(y: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
+  def scrollTo(y: js.UndefOr[scala.Nothing], x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: Double): Unit = js.native
+  def scrollTo(y: Double, x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
 }

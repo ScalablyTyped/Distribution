@@ -4,69 +4,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Video extends js.Object {
-  var ageGating: js.UndefOr[VideoAgeGating] = js.undefined
-  var contentDetails: js.UndefOr[VideoContentDetails] = js.undefined
-  var etag: js.UndefOr[String] = js.undefined
-  var fileDetails: js.UndefOr[VideoFileDetails] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var liveStreamingDetails: js.UndefOr[VideoLiveStreamingDetails] = js.undefined
-  var localizations: js.UndefOr[js.Object] = js.undefined
-  var monetizationDetails: js.UndefOr[VideoMonetizationDetails] = js.undefined
-  var player: js.UndefOr[VideoPlayer] = js.undefined
-  var processingDetails: js.UndefOr[VideoProcessingDetails] = js.undefined
-  var projectDetails: js.UndefOr[VideoProjectDetails] = js.undefined
-  var recordingDetails: js.UndefOr[VideoRecordingDetails] = js.undefined
-  var snippet: js.UndefOr[VideoSnippet] = js.undefined
-  var statistics: js.UndefOr[VideoStatistics] = js.undefined
-  var status: js.UndefOr[VideoStatus] = js.undefined
-  var suggestions: js.UndefOr[VideoSuggestions] = js.undefined
-  var topicDetails: js.UndefOr[VideoTopicDetails] = js.undefined
+  var ageGating: js.UndefOr[VideoAgeGating] = js.native
+  var contentDetails: js.UndefOr[VideoContentDetails] = js.native
+  var etag: js.UndefOr[String] = js.native
+  var fileDetails: js.UndefOr[VideoFileDetails] = js.native
+  var id: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var liveStreamingDetails: js.UndefOr[VideoLiveStreamingDetails] = js.native
+  var localizations: js.UndefOr[js.Object] = js.native
+  var monetizationDetails: js.UndefOr[VideoMonetizationDetails] = js.native
+  var player: js.UndefOr[VideoPlayer] = js.native
+  var processingDetails: js.UndefOr[VideoProcessingDetails] = js.native
+  var projectDetails: js.UndefOr[VideoProjectDetails] = js.native
+  var recordingDetails: js.UndefOr[VideoRecordingDetails] = js.native
+  var snippet: js.UndefOr[VideoSnippet] = js.native
+  var statistics: js.UndefOr[VideoStatistics] = js.native
+  var status: js.UndefOr[VideoStatus] = js.native
+  var suggestions: js.UndefOr[VideoSuggestions] = js.native
+  var topicDetails: js.UndefOr[VideoTopicDetails] = js.native
 }
 
 object Video {
   @scala.inline
-  def apply(
-    ageGating: VideoAgeGating = null,
-    contentDetails: VideoContentDetails = null,
-    etag: String = null,
-    fileDetails: VideoFileDetails = null,
-    id: String = null,
-    kind: String = null,
-    liveStreamingDetails: VideoLiveStreamingDetails = null,
-    localizations: js.Object = null,
-    monetizationDetails: VideoMonetizationDetails = null,
-    player: VideoPlayer = null,
-    processingDetails: VideoProcessingDetails = null,
-    projectDetails: VideoProjectDetails = null,
-    recordingDetails: VideoRecordingDetails = null,
-    snippet: VideoSnippet = null,
-    statistics: VideoStatistics = null,
-    status: VideoStatus = null,
-    suggestions: VideoSuggestions = null,
-    topicDetails: VideoTopicDetails = null
-  ): Video = {
+  def apply(): Video = {
     val __obj = js.Dynamic.literal()
-    if (ageGating != null) __obj.updateDynamic("ageGating")(ageGating.asInstanceOf[js.Any])
-    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (fileDetails != null) __obj.updateDynamic("fileDetails")(fileDetails.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (liveStreamingDetails != null) __obj.updateDynamic("liveStreamingDetails")(liveStreamingDetails.asInstanceOf[js.Any])
-    if (localizations != null) __obj.updateDynamic("localizations")(localizations.asInstanceOf[js.Any])
-    if (monetizationDetails != null) __obj.updateDynamic("monetizationDetails")(monetizationDetails.asInstanceOf[js.Any])
-    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
-    if (processingDetails != null) __obj.updateDynamic("processingDetails")(processingDetails.asInstanceOf[js.Any])
-    if (projectDetails != null) __obj.updateDynamic("projectDetails")(projectDetails.asInstanceOf[js.Any])
-    if (recordingDetails != null) __obj.updateDynamic("recordingDetails")(recordingDetails.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
-    if (topicDetails != null) __obj.updateDynamic("topicDetails")(topicDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[Video]
   }
+  @scala.inline
+  implicit class VideoOps[Self <: Video] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgeGating(value: VideoAgeGating): Self = this.set("ageGating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgeGating: Self = this.set("ageGating", js.undefined)
+    @scala.inline
+    def setContentDetails(value: VideoContentDetails): Self = this.set("contentDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDetails: Self = this.set("contentDetails", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setFileDetails(value: VideoFileDetails): Self = this.set("fileDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileDetails: Self = this.set("fileDetails", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLiveStreamingDetails(value: VideoLiveStreamingDetails): Self = this.set("liveStreamingDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveStreamingDetails: Self = this.set("liveStreamingDetails", js.undefined)
+    @scala.inline
+    def setLocalizations(value: js.Object): Self = this.set("localizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizations: Self = this.set("localizations", js.undefined)
+    @scala.inline
+    def setMonetizationDetails(value: VideoMonetizationDetails): Self = this.set("monetizationDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonetizationDetails: Self = this.set("monetizationDetails", js.undefined)
+    @scala.inline
+    def setPlayer(value: VideoPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayer: Self = this.set("player", js.undefined)
+    @scala.inline
+    def setProcessingDetails(value: VideoProcessingDetails): Self = this.set("processingDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingDetails: Self = this.set("processingDetails", js.undefined)
+    @scala.inline
+    def setProjectDetails(value: VideoProjectDetails): Self = this.set("projectDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectDetails: Self = this.set("projectDetails", js.undefined)
+    @scala.inline
+    def setRecordingDetails(value: VideoRecordingDetails): Self = this.set("recordingDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordingDetails: Self = this.set("recordingDetails", js.undefined)
+    @scala.inline
+    def setSnippet(value: VideoSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setStatistics(value: VideoStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: VideoStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSuggestions(value: VideoSuggestions): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    @scala.inline
+    def setTopicDetails(value: VideoTopicDetails): Self = this.set("topicDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicDetails: Self = this.set("topicDetails", js.undefined)
+  }
+  
 }
 

@@ -110,60 +110,130 @@ trait AutomationExecution extends js.Object {
 
 object AutomationExecution {
   @scala.inline
-  def apply(
-    AutomationExecutionId: AutomationExecutionId = null,
-    AutomationExecutionStatus: AutomationExecutionStatus = null,
-    CurrentAction: String = null,
-    CurrentStepName: String = null,
-    DocumentName: DocumentName = null,
-    DocumentVersion: DocumentVersion = null,
-    ExecutedBy: String = null,
-    ExecutionEndTime: DateTime = null,
-    ExecutionStartTime: DateTime = null,
-    FailureMessage: String = null,
-    MaxConcurrency: MaxConcurrency = null,
-    MaxErrors: MaxErrors = null,
-    Mode: ExecutionMode = null,
-    Outputs: AutomationParameterMap = null,
-    Parameters: AutomationParameterMap = null,
-    ParentAutomationExecutionId: AutomationExecutionId = null,
-    ProgressCounters: ProgressCounters = null,
-    ResolvedTargets: ResolvedTargets = null,
-    StepExecutions: StepExecutionList = null,
-    StepExecutionsTruncated: js.UndefOr[Boolean] = js.undefined,
-    Target: String = null,
-    TargetLocations: TargetLocations = null,
-    TargetMaps: TargetMaps = null,
-    TargetParameterName: AutomationParameterKey = null,
-    Targets: Targets = null
-  ): AutomationExecution = {
+  def apply(): AutomationExecution = {
     val __obj = js.Dynamic.literal()
-    if (AutomationExecutionId != null) __obj.updateDynamic("AutomationExecutionId")(AutomationExecutionId.asInstanceOf[js.Any])
-    if (AutomationExecutionStatus != null) __obj.updateDynamic("AutomationExecutionStatus")(AutomationExecutionStatus.asInstanceOf[js.Any])
-    if (CurrentAction != null) __obj.updateDynamic("CurrentAction")(CurrentAction.asInstanceOf[js.Any])
-    if (CurrentStepName != null) __obj.updateDynamic("CurrentStepName")(CurrentStepName.asInstanceOf[js.Any])
-    if (DocumentName != null) __obj.updateDynamic("DocumentName")(DocumentName.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (ExecutedBy != null) __obj.updateDynamic("ExecutedBy")(ExecutedBy.asInstanceOf[js.Any])
-    if (ExecutionEndTime != null) __obj.updateDynamic("ExecutionEndTime")(ExecutionEndTime.asInstanceOf[js.Any])
-    if (ExecutionStartTime != null) __obj.updateDynamic("ExecutionStartTime")(ExecutionStartTime.asInstanceOf[js.Any])
-    if (FailureMessage != null) __obj.updateDynamic("FailureMessage")(FailureMessage.asInstanceOf[js.Any])
-    if (MaxConcurrency != null) __obj.updateDynamic("MaxConcurrency")(MaxConcurrency.asInstanceOf[js.Any])
-    if (MaxErrors != null) __obj.updateDynamic("MaxErrors")(MaxErrors.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (ParentAutomationExecutionId != null) __obj.updateDynamic("ParentAutomationExecutionId")(ParentAutomationExecutionId.asInstanceOf[js.Any])
-    if (ProgressCounters != null) __obj.updateDynamic("ProgressCounters")(ProgressCounters.asInstanceOf[js.Any])
-    if (ResolvedTargets != null) __obj.updateDynamic("ResolvedTargets")(ResolvedTargets.asInstanceOf[js.Any])
-    if (StepExecutions != null) __obj.updateDynamic("StepExecutions")(StepExecutions.asInstanceOf[js.Any])
-    if (!js.isUndefined(StepExecutionsTruncated)) __obj.updateDynamic("StepExecutionsTruncated")(StepExecutionsTruncated.get.asInstanceOf[js.Any])
-    if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
-    if (TargetLocations != null) __obj.updateDynamic("TargetLocations")(TargetLocations.asInstanceOf[js.Any])
-    if (TargetMaps != null) __obj.updateDynamic("TargetMaps")(TargetMaps.asInstanceOf[js.Any])
-    if (TargetParameterName != null) __obj.updateDynamic("TargetParameterName")(TargetParameterName.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomationExecution]
   }
+  @scala.inline
+  implicit class AutomationExecutionOps[Self <: AutomationExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomationExecutionId(value: AutomationExecutionId): Self = this.set("AutomationExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomationExecutionId: Self = this.set("AutomationExecutionId", js.undefined)
+    @scala.inline
+    def setAutomationExecutionStatus(value: AutomationExecutionStatus): Self = this.set("AutomationExecutionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomationExecutionStatus: Self = this.set("AutomationExecutionStatus", js.undefined)
+    @scala.inline
+    def setCurrentAction(value: String): Self = this.set("CurrentAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentAction: Self = this.set("CurrentAction", js.undefined)
+    @scala.inline
+    def setCurrentStepName(value: String): Self = this.set("CurrentStepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentStepName: Self = this.set("CurrentStepName", js.undefined)
+    @scala.inline
+    def setDocumentName(value: DocumentName): Self = this.set("DocumentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentName: Self = this.set("DocumentName", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setExecutedBy(value: String): Self = this.set("ExecutedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutedBy: Self = this.set("ExecutedBy", js.undefined)
+    @scala.inline
+    def setExecutionEndTime(value: DateTime): Self = this.set("ExecutionEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionEndTime: Self = this.set("ExecutionEndTime", js.undefined)
+    @scala.inline
+    def setExecutionStartTime(value: DateTime): Self = this.set("ExecutionStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStartTime: Self = this.set("ExecutionStartTime", js.undefined)
+    @scala.inline
+    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    @scala.inline
+    def setMaxConcurrency(value: MaxConcurrency): Self = this.set("MaxConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConcurrency: Self = this.set("MaxConcurrency", js.undefined)
+    @scala.inline
+    def setMaxErrors(value: MaxErrors): Self = this.set("MaxErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxErrors: Self = this.set("MaxErrors", js.undefined)
+    @scala.inline
+    def setMode(value: ExecutionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+    @scala.inline
+    def setOutputs(value: AutomationParameterMap): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    @scala.inline
+    def setParameters(value: AutomationParameterMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setParentAutomationExecutionId(value: AutomationExecutionId): Self = this.set("ParentAutomationExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentAutomationExecutionId: Self = this.set("ParentAutomationExecutionId", js.undefined)
+    @scala.inline
+    def setProgressCounters(value: ProgressCounters): Self = this.set("ProgressCounters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressCounters: Self = this.set("ProgressCounters", js.undefined)
+    @scala.inline
+    def setResolvedTargets(value: ResolvedTargets): Self = this.set("ResolvedTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedTargets: Self = this.set("ResolvedTargets", js.undefined)
+    @scala.inline
+    def setStepExecutionsVarargs(value: StepExecution*): Self = this.set("StepExecutions", js.Array(value :_*))
+    @scala.inline
+    def setStepExecutions(value: StepExecutionList): Self = this.set("StepExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepExecutions: Self = this.set("StepExecutions", js.undefined)
+    @scala.inline
+    def setStepExecutionsTruncated(value: Boolean): Self = this.set("StepExecutionsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepExecutionsTruncated: Self = this.set("StepExecutionsTruncated", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("Target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("Target", js.undefined)
+    @scala.inline
+    def setTargetLocationsVarargs(value: TargetLocation*): Self = this.set("TargetLocations", js.Array(value :_*))
+    @scala.inline
+    def setTargetLocations(value: TargetLocations): Self = this.set("TargetLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLocations: Self = this.set("TargetLocations", js.undefined)
+    @scala.inline
+    def setTargetMapsVarargs(value: TargetMap*): Self = this.set("TargetMaps", js.Array(value :_*))
+    @scala.inline
+    def setTargetMaps(value: TargetMaps): Self = this.set("TargetMaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetMaps: Self = this.set("TargetMaps", js.undefined)
+    @scala.inline
+    def setTargetParameterName(value: AutomationParameterKey): Self = this.set("TargetParameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetParameterName: Self = this.set("TargetParameterName", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+  }
+  
 }
 

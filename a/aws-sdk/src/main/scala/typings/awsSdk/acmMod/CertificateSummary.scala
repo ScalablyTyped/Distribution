@@ -18,11 +18,30 @@ trait CertificateSummary extends js.Object {
 
 object CertificateSummary {
   @scala.inline
-  def apply(CertificateArn: Arn = null, DomainName: DomainNameString = null): CertificateSummary = {
+  def apply(): CertificateSummary = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateSummary]
   }
+  @scala.inline
+  implicit class CertificateSummaryOps[Self <: CertificateSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: Arn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+  }
+  
 }
 

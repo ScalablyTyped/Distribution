@@ -41,20 +41,44 @@ trait SchemaTranslateTextRequest extends js.Object {
 
 object SchemaTranslateTextRequest {
   @scala.inline
-  def apply(
-    format: String = null,
-    model: String = null,
-    q: js.Array[String] = null,
-    source: String = null,
-    target: String = null
-  ): SchemaTranslateTextRequest = {
+  def apply(): SchemaTranslateTextRequest = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTranslateTextRequest]
   }
+  @scala.inline
+  implicit class SchemaTranslateTextRequestOps[Self <: SchemaTranslateTextRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setQVarargs(value: String*): Self = this.set("q", js.Array(value :_*))
+    @scala.inline
+    def setQ(value: js.Array[String]): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

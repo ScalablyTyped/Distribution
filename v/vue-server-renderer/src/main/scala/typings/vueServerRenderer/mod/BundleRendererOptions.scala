@@ -1,46 +1,52 @@
 package typings.vueServerRenderer.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.vue.vnodeMod.VNode
-import typings.vue.vnodeMod.VNodeDirective
 import typings.vueServerRenderer.vueServerRendererStrings.once
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BundleRendererOptions extends RendererOptions {
-  var basedir: js.UndefOr[String] = js.undefined
-  var clientManifest: js.UndefOr[js.Object] = js.undefined
-  var runInNewContext: js.UndefOr[Boolean | once] = js.undefined
-  var serializer: js.UndefOr[js.Function1[/* state */ js.Object, String]] = js.undefined
+  var basedir: js.UndefOr[String] = js.native
+  var clientManifest: js.UndefOr[js.Object] = js.native
+  var runInNewContext: js.UndefOr[Boolean | once] = js.native
+  var serializer: js.UndefOr[js.Function1[/* state */ js.Object, String]] = js.native
 }
 
 object BundleRendererOptions {
   @scala.inline
-  def apply(
-    basedir: String = null,
-    cache: RenderCache = null,
-    clientManifest: js.Object = null,
-    directives: StringDictionary[js.Function2[/* vnode */ VNode, /* dir */ VNodeDirective, Unit]] = null,
-    inject: js.UndefOr[Boolean] = js.undefined,
-    runInNewContext: Boolean | once = null,
-    serializer: /* state */ js.Object => String = null,
-    shouldPrefetch: (/* file */ String, /* type */ String) => Boolean = null,
-    shouldPreload: (/* file */ String, /* type */ String) => Boolean = null,
-    template: String = null
-  ): BundleRendererOptions = {
+  def apply(): BundleRendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (basedir != null) __obj.updateDynamic("basedir")(basedir.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (clientManifest != null) __obj.updateDynamic("clientManifest")(clientManifest.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (!js.isUndefined(inject)) __obj.updateDynamic("inject")(inject.get.asInstanceOf[js.Any])
-    if (runInNewContext != null) __obj.updateDynamic("runInNewContext")(runInNewContext.asInstanceOf[js.Any])
-    if (serializer != null) __obj.updateDynamic("serializer")(js.Any.fromFunction1(serializer))
-    if (shouldPrefetch != null) __obj.updateDynamic("shouldPrefetch")(js.Any.fromFunction2(shouldPrefetch))
-    if (shouldPreload != null) __obj.updateDynamic("shouldPreload")(js.Any.fromFunction2(shouldPreload))
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleRendererOptions]
   }
+  @scala.inline
+  implicit class BundleRendererOptionsOps[Self <: BundleRendererOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasedir(value: String): Self = this.set("basedir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasedir: Self = this.set("basedir", js.undefined)
+    @scala.inline
+    def setClientManifest(value: js.Object): Self = this.set("clientManifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientManifest: Self = this.set("clientManifest", js.undefined)
+    @scala.inline
+    def setRunInNewContext(value: Boolean | once): Self = this.set("runInNewContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunInNewContext: Self = this.set("runInNewContext", js.undefined)
+    @scala.inline
+    def setSerializer(value: /* state */ js.Object => String): Self = this.set("serializer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSerializer: Self = this.set("serializer", js.undefined)
+  }
+  
 }
 

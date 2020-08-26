@@ -26,15 +26,34 @@ trait GetColumnStatisticsForTableRequest extends js.Object {
 
 object GetColumnStatisticsForTableRequest {
   @scala.inline
-  def apply(
-    ColumnNames: GetColumnNamesList,
-    DatabaseName: NameString,
-    TableName: NameString,
-    CatalogId: CatalogIdString = null
-  ): GetColumnStatisticsForTableRequest = {
+  def apply(ColumnNames: GetColumnNamesList, DatabaseName: NameString, TableName: NameString): GetColumnStatisticsForTableRequest = {
     val __obj = js.Dynamic.literal(ColumnNames = ColumnNames.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetColumnStatisticsForTableRequest]
   }
+  @scala.inline
+  implicit class GetColumnStatisticsForTableRequestOps[Self <: GetColumnStatisticsForTableRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnNamesVarargs(value: NameString*): Self = this.set("ColumnNames", js.Array(value :_*))
+    @scala.inline
+    def setColumnNames(value: GetColumnNamesList): Self = this.set("ColumnNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: NameString): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCatalogId(value: CatalogIdString): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+  }
+  
 }
 

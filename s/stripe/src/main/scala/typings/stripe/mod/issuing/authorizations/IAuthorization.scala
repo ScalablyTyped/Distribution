@@ -14,87 +14,88 @@ import scala.scalajs.js.annotation._
 /**
   * When an issued card is used to make a purchase, an Issuing Authorization object is created. Authorizations must be approved for the purchase to be completed successfully.
   */
+@js.native
 trait IAuthorization extends IResourceObject {
   /**
     * Whether the authorization has been approved.
     */
-  var approved: Boolean
+  var approved: Boolean = js.native
   /**
     * How the card details were provided. One of chip, contactless, keyed_in, online, or swipe.
     */
-  var authorization_method: AuthorizationMethod
+  var authorization_method: AuthorizationMethod = js.native
   /**
     * The amount that has been authorized. This will be 0 when the object is created, and increase after it has been approved.
     */
-  var authorized_amount: Double
+  var authorized_amount: Double = js.native
   /**
     * The currency that was presented to the cardholder for the authorization. Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
-  var authorized_currency: String
-  var balance_transactions: js.Array[IBalanceTransaction]
+  var authorized_currency: String = js.native
+  var balance_transactions: js.Array[IBalanceTransaction] = js.native
   /**
     * Show child attributes
     */
-  var card: IIssuingCard
+  var card: IIssuingCard = js.native
   /**
     * The cardholder to whom this authorization belongs.
     */
-  var cardholder: String | ICardholder
+  var cardholder: String | ICardholder = js.native
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
-  var created: Double
+  var created: Double = js.native
   /**
     * The amount the authorization is expected to be in held_currency. When Stripe holds funds from you, this is the amount reserved for the authorization. This will be 0 when the object is created, and increase after it has been approved. For multi-currency transactions, held_amount can be used to determine the expected exchange rate.
     */
-  var held_amount: Double
+  var held_amount: Double = js.native
   /**
     * The currency of the held amount. This will always be the card currency.
     */
-  var held_currency: String
-  var is_held_amount_controllable: Boolean
+  var held_currency: String = js.native
+  var is_held_amount_controllable: Boolean = js.native
   /**
     * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
     */
-  var livemode: Boolean
-  var merchant_data: MerchantData
+  var livemode: Boolean = js.native
+  var merchant_data: MerchantData = js.native
   /**
     * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
     */
-  var metadata: IMetadata
+  var metadata: IMetadata = js.native
   /**
     * String representing the object’s type. Objects of the same type share the same value.
     */
   @JSName("object")
-  var object_IAuthorization: issuingDotauthorization
+  var object_IAuthorization: issuingDotauthorization = js.native
   /**
     * The amount the user is requesting to be authorized. This field will only be non-zero during an issuing.authorization.request webhook.
     */
-  var pending_authorized_amount: Double
+  var pending_authorized_amount: Double = js.native
   /**
     * The additional amount Stripe will hold if the authorization is approved. This field will only be non-zero during an issuing.authorization.request webhook.
     */
-  var pending_held_amount: Double
+  var pending_held_amount: Double = js.native
   /**
     * Show child attributes
     */
-  var request_history: js.Array[RequestHistory]
+  var request_history: js.Array[RequestHistory] = js.native
   /**
     * One of closed, pending, or reversed.
     */
-  var status: AuthorizationStatus
+  var status: AuthorizationStatus = js.native
   /**
     * Show child attributes
     */
-  var transactions: js.Array[ITransaction]
+  var transactions: js.Array[ITransaction] = js.native
   /**
     * Show child attributes
     */
-  var verification_data: VerificationData
+  var verification_data: VerificationData = js.native
   /**
     * What, if any, digital wallet was used for this authorization. One of apple_pay, google_pay, or samsung_pay.
     */
-  var wallet_provider: WalletProvider
+  var wallet_provider: WalletProvider = js.native
 }
 
 object IAuthorization {
@@ -128,5 +129,68 @@ object IAuthorization {
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuthorization]
   }
+  @scala.inline
+  implicit class IAuthorizationOps[Self <: IAuthorization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproved(value: Boolean): Self = this.set("approved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorization_method(value: AuthorizationMethod): Self = this.set("authorization_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorized_amount(value: Double): Self = this.set("authorized_amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorized_currency(value: String): Self = this.set("authorized_currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBalance_transactionsVarargs(value: IBalanceTransaction*): Self = this.set("balance_transactions", js.Array(value :_*))
+    @scala.inline
+    def setBalance_transactions(value: js.Array[IBalanceTransaction]): Self = this.set("balance_transactions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCard(value: IIssuingCard): Self = this.set("card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCardholder(value: String | ICardholder): Self = this.set("cardholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreated(value: Double): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeld_amount(value: Double): Self = this.set("held_amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeld_currency(value: String): Self = this.set("held_currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIs_held_amount_controllable(value: Boolean): Self = this.set("is_held_amount_controllable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLivemode(value: Boolean): Self = this.set("livemode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMerchant_data(value: MerchantData): Self = this.set("merchant_data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: IMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObject(value: issuingDotauthorization): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPending_authorized_amount(value: Double): Self = this.set("pending_authorized_amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPending_held_amount(value: Double): Self = this.set("pending_held_amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequest_historyVarargs(value: RequestHistory*): Self = this.set("request_history", js.Array(value :_*))
+    @scala.inline
+    def setRequest_history(value: js.Array[RequestHistory]): Self = this.set("request_history", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: AuthorizationStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransactionsVarargs(value: ITransaction*): Self = this.set("transactions", js.Array(value :_*))
+    @scala.inline
+    def setTransactions(value: js.Array[ITransaction]): Self = this.set("transactions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVerification_data(value: VerificationData): Self = this.set("verification_data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWallet_provider(value: WalletProvider): Self = this.set("wallet_provider", value.asInstanceOf[js.Any])
+  }
+  
 }
 

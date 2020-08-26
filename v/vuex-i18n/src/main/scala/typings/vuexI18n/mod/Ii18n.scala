@@ -54,8 +54,10 @@ trait Ii18n extends js.Object {
     * to the function directly to the translateInLanguage function
     */
   def translate(key: String, defaultValue: String): js.UndefOr[String] = js.native
+  def translate(key: String, defaultValue: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
   def translate(key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
   def translate(key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+  def translate(key: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
   def translate(key: String, options: js.Any): js.UndefOr[String] = js.native
   def translate(key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
   /**
@@ -66,8 +68,16 @@ trait Ii18n extends js.Object {
     * get localized string from store in a given language if available.
     */
   def translateIn(locale: String, key: String, defaultValue: String): js.UndefOr[String] = js.native
+  def translateIn(
+    locale: String,
+    key: String,
+    defaultValue: String,
+    options: js.UndefOr[scala.Nothing],
+    pluralization: Double
+  ): js.UndefOr[String] = js.native
   def translateIn(locale: String, key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
   def translateIn(locale: String, key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+  def translateIn(locale: String, key: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
   def translateIn(locale: String, key: String, options: js.Any): js.UndefOr[String] = js.native
   def translateIn(locale: String, key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
 }

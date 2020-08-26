@@ -30,17 +30,40 @@ trait TriggerTrigger extends js.Object {
 
 object TriggerTrigger {
   @scala.inline
-  def apply(
-    destinationArn: String,
-    events: js.Array[String],
-    name: String,
-    branches: js.Array[String] = null,
-    customData: String = null
-  ): TriggerTrigger = {
+  def apply(destinationArn: String, events: js.Array[String], name: String): TriggerTrigger = {
     val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (branches != null) __obj.updateDynamic("branches")(branches.asInstanceOf[js.Any])
-    if (customData != null) __obj.updateDynamic("customData")(customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerTrigger]
   }
+  @scala.inline
+  implicit class TriggerTriggerOps[Self <: TriggerTrigger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationArn(value: String): Self = this.set("destinationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranchesVarargs(value: String*): Self = this.set("branches", js.Array(value :_*))
+    @scala.inline
+    def setBranches(value: js.Array[String]): Self = this.set("branches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranches: Self = this.set("branches", js.undefined)
+    @scala.inline
+    def setCustomData(value: String): Self = this.set("customData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomData: Self = this.set("customData", js.undefined)
+  }
+  
 }
 

@@ -15,6 +15,14 @@ class APIConstructor () extends js.Object {
   def format(obj: js.Any): Data = js.native
   def format(obj: js.Any, arrInterface: js.Array[String]): Data = js.native
   def meta(total: Double, count: Double, offset: Double, error: js.Any): Count = js.native
+  def meta(
+    total: Double,
+    count: Double,
+    offset: Double,
+    error: js.Any,
+    summary: js.UndefOr[scala.Nothing],
+    resource: js.Any
+  ): Count = js.native
   def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: String): Count = js.native
   def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: String, resource: js.Any): Count = js.native
   def meta(total: Double, count: Double, offset: Double, error: js.Any, summary: Null, resource: js.Any): Count = js.native

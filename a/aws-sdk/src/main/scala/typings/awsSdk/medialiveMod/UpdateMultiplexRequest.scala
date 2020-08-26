@@ -22,11 +22,32 @@ trait UpdateMultiplexRequest extends js.Object {
 
 object UpdateMultiplexRequest {
   @scala.inline
-  def apply(MultiplexId: string, MultiplexSettings: MultiplexSettings = null, Name: string = null): UpdateMultiplexRequest = {
+  def apply(MultiplexId: string): UpdateMultiplexRequest = {
     val __obj = js.Dynamic.literal(MultiplexId = MultiplexId.asInstanceOf[js.Any])
-    if (MultiplexSettings != null) __obj.updateDynamic("MultiplexSettings")(MultiplexSettings.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMultiplexRequest]
   }
+  @scala.inline
+  implicit class UpdateMultiplexRequestOps[Self <: UpdateMultiplexRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMultiplexId(value: string): Self = this.set("MultiplexId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMultiplexSettings(value: MultiplexSettings): Self = this.set("MultiplexSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexSettings: Self = this.set("MultiplexSettings", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

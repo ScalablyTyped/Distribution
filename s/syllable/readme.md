@@ -12,7 +12,7 @@ Count syllables in English words
 | Keywords           | detect, syllables, natural, language, cli, bin |
 | # releases         | 11 |
 | # dependents       | 23 |
-| # downloads        | 74842 |
+| # downloads        | 85537 |
 | # stars            | 1 |
 
 ## Links

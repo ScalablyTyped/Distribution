@@ -7,30 +7,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RevertOptions
   extends /* key */ StringDictionary[js.Any] {
-  var checkoutOpts: js.UndefOr[CheckoutOptions] = js.undefined
-  var mainline: js.UndefOr[Double] = js.undefined
-  var mergeOpts: js.UndefOr[MergeOptions] = js.undefined
-  var version: js.UndefOr[Double] = js.undefined
+  var checkoutOpts: js.UndefOr[CheckoutOptions] = js.native
+  var mainline: js.UndefOr[Double] = js.native
+  var mergeOpts: js.UndefOr[MergeOptions] = js.native
+  var version: js.UndefOr[Double] = js.native
 }
 
 object RevertOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    checkoutOpts: CheckoutOptions = null,
-    mainline: js.UndefOr[Double] = js.undefined,
-    mergeOpts: MergeOptions = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): RevertOptions = {
+  def apply(): RevertOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkoutOpts != null) __obj.updateDynamic("checkoutOpts")(checkoutOpts.asInstanceOf[js.Any])
-    if (!js.isUndefined(mainline)) __obj.updateDynamic("mainline")(mainline.get.asInstanceOf[js.Any])
-    if (mergeOpts != null) __obj.updateDynamic("mergeOpts")(mergeOpts.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevertOptions]
   }
+  @scala.inline
+  implicit class RevertOptionsOps[Self <: RevertOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckoutOpts(value: CheckoutOptions): Self = this.set("checkoutOpts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckoutOpts: Self = this.set("checkoutOpts", js.undefined)
+    @scala.inline
+    def setMainline(value: Double): Self = this.set("mainline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainline: Self = this.set("mainline", js.undefined)
+    @scala.inline
+    def setMergeOpts(value: MergeOptions): Self = this.set("mergeOpts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeOpts: Self = this.set("mergeOpts", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

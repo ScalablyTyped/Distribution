@@ -10,9 +10,9 @@ Accelerated panning and zooming for HTML and Canvas
 | ------------------ | :-------------: |
 | Full name          | scroller |
 | Keywords           | Scrolling, Scroll, Scroller, Touch |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 5310 |
+| # downloads        | 5714 |
 | # stars            | 2 |
 
 ## Links

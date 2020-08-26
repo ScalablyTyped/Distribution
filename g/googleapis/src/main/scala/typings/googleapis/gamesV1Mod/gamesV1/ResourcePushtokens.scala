@@ -28,6 +28,7 @@ class ResourcePushtokens protected () extends js.Object {
     */
   def remove(): GaxiosPromise[Unit] = js.native
   def remove(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def remove(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def remove(params: ParamsResourcePushtokensRemove): GaxiosPromise[Unit] = js.native
   def remove(params: ParamsResourcePushtokensRemove, callback: BodyResponseCallback[Unit]): Unit = js.native
   def remove(
@@ -55,6 +56,7 @@ class ResourcePushtokens protected () extends js.Object {
     */
   def update(): GaxiosPromise[Unit] = js.native
   def update(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourcePushtokensUpdate): GaxiosPromise[Unit] = js.native
   def update(params: ParamsResourcePushtokensUpdate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def update(

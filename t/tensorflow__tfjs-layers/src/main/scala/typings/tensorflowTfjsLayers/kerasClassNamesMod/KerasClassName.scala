@@ -6,70 +6,70 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/keras_class_names.KerasSerialization['class_name'] */
 /* Rewritten from type alias, can be one of: 
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Flatten
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adagrad
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.InputLayer
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Concatenate
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dropout
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Ones
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Softmax
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.TruncatedNormal
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.L1L2
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Add
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2DTranspose
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ZeroPadding2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Minimum
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Multiply
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Activation
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.BatchNormalization
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Masking
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MinMaxNorm
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Permute
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Constant
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Reshape
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.L1L2
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomNormal
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Orthogonal
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dot
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.DepthwiseConv2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SimpleRNN
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RepeatVector
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RandomUniform
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Conv1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LSTM
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Maximum
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adadelta
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Identity
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Average
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.NonNeg
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Embedding
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GRU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.RMSProp
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UpSampling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adam
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.UnitNorm
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Dense
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Zeros
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxNorm
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Adamax
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Momentum
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.VarianceScaling
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Cropping2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SeparableConv2D
 */
 trait KerasClassName extends js.Object
 

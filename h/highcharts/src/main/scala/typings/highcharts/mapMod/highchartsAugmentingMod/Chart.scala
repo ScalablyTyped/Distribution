@@ -54,9 +54,145 @@ trait Chart extends js.Object {
     *        Fix the zoom to this position if possible.
     */
   def mapZoom(): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: js.UndefOr[scala.Nothing], centerY: Double): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: Double,
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: Double,
+    mouseX: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: Double,
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: Double): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: Double,
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: Double,
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: Double,
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: Double, centerY: Double): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: Double,
+    centerY: Double,
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: js.UndefOr[scala.Nothing], centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
+  def mapZoom(
+    howMuch: js.UndefOr[scala.Nothing],
+    centerX: Double,
+    centerY: Double,
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
   def mapZoom(howMuch: Double): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double
+  ): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: js.UndefOr[scala.Nothing], centerY: Double): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: Double,
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: js.UndefOr[scala.Nothing], centerY: Double, mouseX: Double): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: js.UndefOr[scala.Nothing],
+    centerY: Double,
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: Double,
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
+  def mapZoom(howMuch: Double, centerX: Double, centerY: js.UndefOr[scala.Nothing], mouseX: Double): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: Double,
+    centerY: js.UndefOr[scala.Nothing],
+    mouseX: Double,
+    mouseY: Double
+  ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double): Unit = js.native
+  def mapZoom(
+    howMuch: Double,
+    centerX: Double,
+    centerY: Double,
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: Double
+  ): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double): Unit = js.native
   def mapZoom(howMuch: Double, centerX: Double, centerY: Double, mouseX: Double, mouseY: Double): Unit = js.native
   /**

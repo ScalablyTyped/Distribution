@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cfb" : "1.1.4"
+      "cfb" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cfb" : "1.1.4"
+      "cfb" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

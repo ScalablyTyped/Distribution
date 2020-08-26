@@ -14,10 +14,28 @@ trait SchemaListPerfSampleSeriesResponse extends js.Object {
 
 object SchemaListPerfSampleSeriesResponse {
   @scala.inline
-  def apply(perfSampleSeries: js.Array[SchemaPerfSampleSeries] = null): SchemaListPerfSampleSeriesResponse = {
+  def apply(): SchemaListPerfSampleSeriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (perfSampleSeries != null) __obj.updateDynamic("perfSampleSeries")(perfSampleSeries.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListPerfSampleSeriesResponse]
   }
+  @scala.inline
+  implicit class SchemaListPerfSampleSeriesResponseOps[Self <: SchemaListPerfSampleSeriesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPerfSampleSeriesVarargs(value: SchemaPerfSampleSeries*): Self = this.set("perfSampleSeries", js.Array(value :_*))
+    @scala.inline
+    def setPerfSampleSeries(value: js.Array[SchemaPerfSampleSeries]): Self = this.set("perfSampleSeries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerfSampleSeries: Self = this.set("perfSampleSeries", js.undefined)
+  }
+  
 }
 

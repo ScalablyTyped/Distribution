@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "html-escaper"
-version := "3.0-dt-20200513Z-e0691b"
-scalaVersion := "2.13.2"
+version := "3.0-dt-20200513Z-10d837"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

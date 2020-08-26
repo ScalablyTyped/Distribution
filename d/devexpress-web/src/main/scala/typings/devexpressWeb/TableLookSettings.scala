@@ -7,31 +7,32 @@ import scala.scalajs.js.annotation._
 /**
   * Contains the table style settings that modify the table appearance.
   */
+@js.native
 trait TableLookSettings extends js.Object {
   /**
     * Specifies whether special formatting is applied to the first column of the table.
     */
-  var applyFirstColumn: Boolean
+  var applyFirstColumn: Boolean = js.native
   /**
     * Specifies whether special formatting is applied to the first row of the table.
     */
-  var applyFirstRow: Boolean
+  var applyFirstRow: Boolean = js.native
   /**
     * Specifies whether special formatting is applied to the last column of the table.
     */
-  var applyLastColumn: Boolean
+  var applyLastColumn: Boolean = js.native
   /**
     * Specifies whether special formatting is applied to the last row of the table.
     */
-  var applyLastRow: Boolean
+  var applyLastRow: Boolean = js.native
   /**
     * Specifies whether column banding formatting is not applied to the table.
     */
-  var doNotApplyColumnBanding: Boolean
+  var doNotApplyColumnBanding: Boolean = js.native
   /**
     * Specifies whether row banding formatting is not applied to the table.
     */
-  var doNotApplyRowBanding: Boolean
+  var doNotApplyRowBanding: Boolean = js.native
 }
 
 object TableLookSettings {
@@ -47,5 +48,30 @@ object TableLookSettings {
     val __obj = js.Dynamic.literal(applyFirstColumn = applyFirstColumn.asInstanceOf[js.Any], applyFirstRow = applyFirstRow.asInstanceOf[js.Any], applyLastColumn = applyLastColumn.asInstanceOf[js.Any], applyLastRow = applyLastRow.asInstanceOf[js.Any], doNotApplyColumnBanding = doNotApplyColumnBanding.asInstanceOf[js.Any], doNotApplyRowBanding = doNotApplyRowBanding.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableLookSettings]
   }
+  @scala.inline
+  implicit class TableLookSettingsOps[Self <: TableLookSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyFirstColumn(value: Boolean): Self = this.set("applyFirstColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyFirstRow(value: Boolean): Self = this.set("applyFirstRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyLastColumn(value: Boolean): Self = this.set("applyLastColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyLastRow(value: Boolean): Self = this.set("applyLastRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDoNotApplyColumnBanding(value: Boolean): Self = this.set("doNotApplyColumnBanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDoNotApplyRowBanding(value: Boolean): Self = this.set("doNotApplyRowBanding", value.asInstanceOf[js.Any])
+  }
+  
 }
 

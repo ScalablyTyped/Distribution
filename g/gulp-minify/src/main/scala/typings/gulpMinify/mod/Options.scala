@@ -9,35 +9,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Pass an object to specify custom compressor options. Pass false to skip compression completely.
     */
-  var compress: js.UndefOr[Booleans | Boolean] = js.undefined
+  var compress: js.UndefOr[Booleans | Boolean] = js.native
   /**
     * Will not minify files in the dirs.
     */
-  var exclude: js.UndefOr[js.Array[String]] = js.undefined
+  var exclude: js.UndefOr[js.Array[String]] = js.native
   /**
     * An object that specifies output src and minified file extensions.
     */
-  var ext: js.UndefOr[Min] = js.undefined
+  var ext: js.UndefOr[Min] = js.native
   /**
     * Will not minify files which matches the pattern.
     */
-  var ignoreFiles: js.UndefOr[js.Array[String]] = js.undefined
+  var ignoreFiles: js.UndefOr[js.Array[String]] = js.native
   /**
     * If true, will mangle variable names.
     */
-  var mangle: js.UndefOr[Boolean] = js.undefined
+  var mangle: js.UndefOr[Boolean] = js.native
   /**
     * If true, will not output the source code in the dest dirs.
     */
-  var noSource: js.UndefOr[Boolean] = js.undefined
+  var noSource: js.UndefOr[Boolean] = js.native
   /**
     * Pass an object if you wish to specify additional output options.The defaults are optimized for best compression.
     */
-  var output: js.UndefOr[Asciionly] = js.undefined
+  var output: js.UndefOr[Asciionly] = js.native
   /**
     * A convenience option for options.output.comments. Defaults to preserving no comments.
     *
@@ -49,31 +50,67 @@ trait Options extends js.Object {
     */
   var preserveComments: js.UndefOr[
     all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean])
-  ] = js.undefined
+  ] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    compress: Booleans | Boolean = null,
-    exclude: js.Array[String] = null,
-    ext: Min = null,
-    ignoreFiles: js.Array[String] = null,
-    mangle: js.UndefOr[Boolean] = js.undefined,
-    noSource: js.UndefOr[Boolean] = js.undefined,
-    output: Asciionly = null,
-    preserveComments: all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean]) = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(mangle)) __obj.updateDynamic("mangle")(mangle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource.get.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (preserveComments != null) __obj.updateDynamic("preserveComments")(preserveComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompress(value: Booleans | Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompress: Self = this.set("compress", js.undefined)
+    @scala.inline
+    def setExcludeVarargs(value: String*): Self = this.set("exclude", js.Array(value :_*))
+    @scala.inline
+    def setExclude(value: js.Array[String]): Self = this.set("exclude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclude: Self = this.set("exclude", js.undefined)
+    @scala.inline
+    def setExt(value: Min): Self = this.set("ext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExt: Self = this.set("ext", js.undefined)
+    @scala.inline
+    def setIgnoreFilesVarargs(value: String*): Self = this.set("ignoreFiles", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreFiles(value: js.Array[String]): Self = this.set("ignoreFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreFiles: Self = this.set("ignoreFiles", js.undefined)
+    @scala.inline
+    def setMangle(value: Boolean): Self = this.set("mangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMangle: Self = this.set("mangle", js.undefined)
+    @scala.inline
+    def setNoSource(value: Boolean): Self = this.set("noSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoSource: Self = this.set("noSource", js.undefined)
+    @scala.inline
+    def setOutput(value: Asciionly): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+    @scala.inline
+    def setPreserveCommentsFunction2(value: (/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any]) => Boolean): Self = this.set("preserveComments", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPreserveComments(
+      value: all | some | (js.Function2[/* node */ js.UndefOr[js.Any], /* comment */ js.UndefOr[js.Any], Boolean])
+    ): Self = this.set("preserveComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveComments: Self = this.set("preserveComments", js.undefined)
+  }
+  
 }
 

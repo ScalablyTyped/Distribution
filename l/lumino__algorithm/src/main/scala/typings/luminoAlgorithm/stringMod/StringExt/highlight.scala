@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/string", "StringExt.highlight")
+@JSImport("@lumino/algorithm/types/string", "StringExt.highlight")
 @js.native
 object highlight extends js.Object {
   /**

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ButtonsGlobalApi extends js.Object {
   def apply(): ButtonsApi = js.native
+  def apply(groupSelector: js.UndefOr[scala.Nothing], buttonSelector: js.Any): ButtonsApi = js.native
   def apply(groupSelector: js.Any): ButtonsApi = js.native
   def apply(groupSelector: js.Any, buttonSelector: js.Any): ButtonsApi = js.native
   /**
@@ -23,6 +24,7 @@ trait ButtonsGlobalApi extends js.Object {
     * Display / hide an information message to the end user to indicate that something has happened.
     */
   def info(title: String): Api = js.native
+  def info(title: String, message: js.UndefOr[scala.Nothing], time: Double): Api = js.native
   def info(title: String, message: String): Api = js.native
   def info(title: String, message: String, time: Double): Api = js.native
   /**

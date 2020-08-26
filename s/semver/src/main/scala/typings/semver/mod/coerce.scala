@@ -12,6 +12,7 @@ object coerce extends js.Object {
     * Coerces a string to SemVer if possible
     */
   def apply(): ^  | Null = js.native
+  def apply(version: js.UndefOr[scala.Nothing], options: CoerceOptions): ^  | Null = js.native
   def apply(version: String): ^  | Null = js.native
   def apply(version: String, options: CoerceOptions): ^  | Null = js.native
   def apply(version: Double): ^  | Null = js.native

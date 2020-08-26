@@ -5,8 +5,11 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactVirtualized.esCellMeasurerMod.CellMeasurerCache
+import typings.reactVirtualized.esGridMod.GridCellRangeProps
 import typings.reactVirtualized.esGridMod.GridCellRangeRenderer
+import typings.reactVirtualized.esGridMod.OverscanIndices
 import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
+import typings.reactVirtualized.esGridMod.OverscanIndicesGetterParams
 import typings.reactVirtualized.esGridMod.ScrollParams
 import typings.reactVirtualized.esGridMod.ScrollbarPresenceParams
 import typings.reactVirtualized.esGridMod.SectionRenderedParams
@@ -17,7 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-virtualized.react-virtualized/dist/es/Grid.GridCoreProps & {  deferredMeasurementCache ? :react-virtualized.react-virtualized/dist/es/CellMeasurer.CellMeasurerCache,   autoHeight ? :boolean,   className ? :string,   estimatedRowSize ? :number,   height  :number, noRowsRenderer ? (): react.react.<global>.JSX.Element, onRowsRendered ? (info : react-virtualized.react-virtualized/dist/es/List.RenderedRows): void,   overscanRowCount ? :number, onScroll ? (params : react-virtualized.react-virtualized/dist/es/ScrollSync.OnScrollParams): void,   overscanIndicesGetter ? :react-virtualized.react-virtualized/dist/es/Grid.OverscanIndicesGetter,   rowHeight  :number | (info : react-virtualized.react-virtualized.Index): number,   rowRenderer  :react-virtualized.react-virtualized/dist/es/List.ListRowRenderer,   rowCount  :number,   scrollToAlignment ? :string,   scrollToIndex ? :number,   scrollTop ? :number,   style ? :react.react.CSSProperties,   tabIndex ? :number | null,   width  :number} */
+/* Inlined react-virtualized.react-virtualized/dist/es/Grid.GridCoreProps & {  deferredMeasurementCache :react-virtualized.react-virtualized/dist/es/CellMeasurer.CellMeasurerCache | undefined,   autoHeight :boolean | undefined,   className :string | undefined,   estimatedRowSize :number | undefined,   height :number,   noRowsRenderer :(): react.react.<global>.JSX.Element | undefined,   onRowsRendered :(info : react-virtualized.react-virtualized/dist/es/List.RenderedRows): void | undefined,   overscanRowCount :number | undefined,   onScroll :(params : react-virtualized.react-virtualized/dist/es/ScrollSync.OnScrollParams): void | undefined,   overscanIndicesGetter :react-virtualized.react-virtualized/dist/es/Grid.OverscanIndicesGetter | undefined,   rowHeight :number | (info : react-virtualized.react-virtualized.Index): number,   rowRenderer :react-virtualized.react-virtualized/dist/es/List.ListRowRenderer,   rowCount :number,   scrollToAlignment :string | undefined,   scrollToIndex :number | undefined,   scrollTop :number | undefined,   style :react.react.CSSProperties | undefined,   tabIndex :number | null | undefined,   width :number} */
 @js.native
 trait ListProps
   extends /**
@@ -130,9 +133,12 @@ trait ListProps
     * This callback can be used to sync scrolling between lists, tables, or grids.
     * ({ clientHeight, clientWidth, scrollHeight, scrollLeft, scrollTop, scrollWidth }): void
     */
-  var onScroll: js.UndefOr[
-    js.Function1[(/* params */ OnScrollParams) | (/* params */ ScrollParams), _ | Unit]
-  ] = js.native
+  /**
+    * Callback invoked whenever the scroll offset changes within the inner scrollable region.
+    * This callback can be used to sync scrolling between lists, tables, or grids.
+    * ({ clientHeight, scrollHeight, scrollTop }): void
+    */
+  var onScroll: (js.UndefOr[js.Function1[/* params */ ScrollParams, _]]) with (js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]]) = js.native
   /**
     * Called whenever a horizontal or vertical scrollbar is added or removed.
     * ({ horizontal: boolean, size: number, vertical: boolean }): void
@@ -198,7 +204,7 @@ trait ListProps
     * Use "start" to align cells to the top/left of the Grid and "end" to align bottom/right.
     */
   /** See Grid#scrollToAlignment */
-  var scrollToAlignment: js.UndefOr[Alignment with String] = js.native
+  var scrollToAlignment: js.UndefOr[Alignment] with js.UndefOr[String] = js.native
   /**
     * Column index to ensure visible (by forcefully scrolling if necessary)
     */
@@ -222,5 +228,186 @@ trait ListProps
     */
   /** Width of list */
   var width: Double = js.native
+}
+
+object ListProps {
+  @scala.inline
+  def apply(
+    height: Double,
+    onScroll: (js.UndefOr[js.Function1[/* params */ ScrollParams, _]]) with (js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]]),
+    rowCount: Double,
+    rowHeight: Double | (js.Function1[/* params */ Index, Double]),
+    rowRenderer: /* props */ ListRowProps => ReactNode,
+    scrollToAlignment: js.UndefOr[Alignment] with js.UndefOr[String],
+    width: Double
+  ): ListProps = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onScroll = onScroll.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rowHeight = rowHeight.asInstanceOf[js.Any], rowRenderer = js.Any.fromFunction1(rowRenderer), scrollToAlignment = scrollToAlignment.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListProps]
+  }
+  @scala.inline
+  implicit class ListPropsOps[Self <: ListProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnScroll(
+      value: (js.UndefOr[js.Function1[/* params */ ScrollParams, _]]) with (js.UndefOr[js.Function1[/* params */ OnScrollParams, Unit]])
+    ): Self = this.set("onScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowHeightFunction1(value: /* params */ Index => Double): Self = this.set("rowHeight", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRowHeight(value: Double | (js.Function1[/* params */ Index, Double])): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRowRenderer(value: /* props */ ListRowProps => ReactNode): Self = this.set("rowRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def setScrollToAlignment(value: js.UndefOr[Alignment] with js.UndefOr[String]): Self = this.set("scrollToAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Boolean): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def setAutoContainerWidth(value: Boolean): Self = this.set("autoContainerWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoContainerWidth: Self = this.set("autoContainerWidth", js.undefined)
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    @scala.inline
+    def setAutoWidth(value: Boolean): Self = this.set("autoWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoWidth: Self = this.set("autoWidth", js.undefined)
+    @scala.inline
+    def setCellRangeRenderer(value: /* params */ GridCellRangeProps => js.Array[ReactNode]): Self = this.set("cellRangeRenderer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCellRangeRenderer: Self = this.set("cellRangeRenderer", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContainerProps(value: js.Object): Self = this.set("containerProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerProps: Self = this.set("containerProps", js.undefined)
+    @scala.inline
+    def setContainerRole(value: String): Self = this.set("containerRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerRole: Self = this.set("containerRole", js.undefined)
+    @scala.inline
+    def setContainerStyle(value: CSSProperties): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setDeferredMeasurementCache(value: CellMeasurerCache): Self = this.set("deferredMeasurementCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferredMeasurementCache: Self = this.set("deferredMeasurementCache", js.undefined)
+    @scala.inline
+    def setEstimatedColumnSize(value: Double): Self = this.set("estimatedColumnSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedColumnSize: Self = this.set("estimatedColumnSize", js.undefined)
+    @scala.inline
+    def setEstimatedRowSize(value: Double): Self = this.set("estimatedRowSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedRowSize: Self = this.set("estimatedRowSize", js.undefined)
+    @scala.inline
+    def setGetScrollbarSize(value: () => Double): Self = this.set("getScrollbarSize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetScrollbarSize: Self = this.set("getScrollbarSize", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsScrolling(value: Boolean): Self = this.set("isScrolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsScrolling: Self = this.set("isScrolling", js.undefined)
+    @scala.inline
+    def setNoContentRenderer(value: () => ReactNode): Self = this.set("noContentRenderer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteNoContentRenderer: Self = this.set("noContentRenderer", js.undefined)
+    @scala.inline
+    def setNoRowsRenderer(value: () => Element): Self = this.set("noRowsRenderer", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteNoRowsRenderer: Self = this.set("noRowsRenderer", js.undefined)
+    @scala.inline
+    def setOnRowsRendered(value: /* info */ RenderedRows => Unit): Self = this.set("onRowsRendered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRowsRendered: Self = this.set("onRowsRendered", js.undefined)
+    @scala.inline
+    def setOnScrollbarPresenceChange(value: /* params */ ScrollbarPresenceParams => _): Self = this.set("onScrollbarPresenceChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScrollbarPresenceChange: Self = this.set("onScrollbarPresenceChange", js.undefined)
+    @scala.inline
+    def setOnSectionRendered(value: /* params */ SectionRenderedParams => _): Self = this.set("onSectionRendered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSectionRendered: Self = this.set("onSectionRendered", js.undefined)
+    @scala.inline
+    def setOverscanColumnCount(value: Double): Self = this.set("overscanColumnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverscanColumnCount: Self = this.set("overscanColumnCount", js.undefined)
+    @scala.inline
+    def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = this.set("overscanIndicesGetter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOverscanIndicesGetter: Self = this.set("overscanIndicesGetter", js.undefined)
+    @scala.inline
+    def setOverscanRowCount(value: Double): Self = this.set("overscanRowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverscanRowCount: Self = this.set("overscanRowCount", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setScrollLeft(value: Double): Self = this.set("scrollLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollLeft: Self = this.set("scrollLeft", js.undefined)
+    @scala.inline
+    def setScrollToColumn(value: Double): Self = this.set("scrollToColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToColumn: Self = this.set("scrollToColumn", js.undefined)
+    @scala.inline
+    def setScrollToIndex(value: Double): Self = this.set("scrollToIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToIndex: Self = this.set("scrollToIndex", js.undefined)
+    @scala.inline
+    def setScrollToRow(value: Double): Self = this.set("scrollToRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollToRow: Self = this.set("scrollToRow", js.undefined)
+    @scala.inline
+    def setScrollTop(value: Double): Self = this.set("scrollTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollTop: Self = this.set("scrollTop", js.undefined)
+    @scala.inline
+    def setScrollingResetTimeInterval(value: Double): Self = this.set("scrollingResetTimeInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollingResetTimeInterval: Self = this.set("scrollingResetTimeInterval", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTabIndexNull: Self = this.set("tabIndex", null)
+  }
+  
 }
 

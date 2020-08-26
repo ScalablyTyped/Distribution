@@ -15,14 +15,14 @@ object infoMod extends js.Object {
     /** @internal */
     def this(incomingInfoRequest: IncomingInfoRequest) = this()
     var incomingInfoRequest: js.Any = js.native
-    /** Incoming MESSAGE request message. */
-    val request: IncomingRequestMessage = js.native
     /** Accept the request. */
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native
     def reject(options: ResponseOptions): js.Promise[Unit] = js.native
+    /** Incoming MESSAGE request message. */
+    def request: IncomingRequestMessage = js.native
   }
   
 }

@@ -21,40 +21,7 @@ import scala.scalajs.js.annotation._
   * @see https://docs.scriptable.app/contactsgroup/#-new-contactsgroup
   */
 class ContactsGroup ()
-  extends typings.scriptableIos.ContactsGroup {
-  /**
-    * _Identifier of the contacts group._
-    * @see https://docs.scriptable.app/contactsgroup/#identifier
-    */
-  /* CompleteClass */
-  override var identifier: String = js.native
-  /**
-    * _Name of the contacts group._
-    * @see https://docs.scriptable.app/contactsgroup/#name
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * _Adds a contact to the group._
-    *
-    * In order to persist the change, you should call `Contact.persistChanges()`. It is important that the contact is added to the address book. To add the contact to the address book,
-    * you should queue it for insertion using `Contact.add()` before persisting the changes.
-    * @param contact - Contact to add to the group.
-    * @see https://docs.scriptable.app/contactsgroup/#-addmember
-    */
-  /* CompleteClass */
-  override def addMember(contact: typings.scriptableIos.Contact): Unit = js.native
-  /**
-    * _Removes a contact from the group._
-    *
-    * In order to persist the change, you should call `Contact.persistChanges()`. It is important that the contact is added to the address book. To add the contact to the address book,
-    * you should queue it for insertion using `Contact.add()` before persisting the changes.
-    * @param contact - Contact to add to the group.
-    * @see https://docs.scriptable.app/contactsgroup/#-removemember
-    */
-  /* CompleteClass */
-  override def removeMember(contact: typings.scriptableIos.Contact): Unit = js.native
-}
+  extends typings.scriptableIos.ContactsGroup
 
 /* static members */
 @JSGlobal("ContactsGroup")

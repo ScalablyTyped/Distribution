@@ -20,10 +20,26 @@ trait SchemaJobScheduling extends js.Object {
 
 object SchemaJobScheduling {
   @scala.inline
-  def apply(maxFailuresPerHour: js.UndefOr[Double] = js.undefined): SchemaJobScheduling = {
+  def apply(): SchemaJobScheduling = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxFailuresPerHour)) __obj.updateDynamic("maxFailuresPerHour")(maxFailuresPerHour.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobScheduling]
   }
+  @scala.inline
+  implicit class SchemaJobSchedulingOps[Self <: SchemaJobScheduling] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxFailuresPerHour(value: Double): Self = this.set("maxFailuresPerHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFailuresPerHour: Self = this.set("maxFailuresPerHour", js.undefined)
+  }
+  
 }
 

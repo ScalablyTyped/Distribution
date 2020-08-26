@@ -26,11 +26,30 @@ trait SchemaDockerExecutor extends js.Object {
 
 object SchemaDockerExecutor {
   @scala.inline
-  def apply(cmd: String = null, imageName: String = null): SchemaDockerExecutor = {
+  def apply(): SchemaDockerExecutor = {
     val __obj = js.Dynamic.literal()
-    if (cmd != null) __obj.updateDynamic("cmd")(cmd.asInstanceOf[js.Any])
-    if (imageName != null) __obj.updateDynamic("imageName")(imageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDockerExecutor]
   }
+  @scala.inline
+  implicit class SchemaDockerExecutorOps[Self <: SchemaDockerExecutor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCmd(value: String): Self = this.set("cmd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCmd: Self = this.set("cmd", js.undefined)
+    @scala.inline
+    def setImageName(value: String): Self = this.set("imageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageName: Self = this.set("imageName", js.undefined)
+  }
+  
 }
 

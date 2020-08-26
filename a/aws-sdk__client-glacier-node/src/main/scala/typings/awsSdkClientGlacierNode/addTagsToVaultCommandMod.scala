@@ -26,16 +26,9 @@ object addTagsToVaultCommandMod extends js.Object {
           Readable
         ] {
     def this(input: AddTagsToVaultInput) = this()
-    /* CompleteClass */
-    override val input: AddTagsToVaultInput = js.native
     val middlewareStack: MiddlewareStack[AddTagsToVaultInput, AddTagsToVaultOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[AddTagsToVaultInput, AddTagsToVaultOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[AddTagsToVaultInput, AddTagsToVaultOutput] = js.native
   }

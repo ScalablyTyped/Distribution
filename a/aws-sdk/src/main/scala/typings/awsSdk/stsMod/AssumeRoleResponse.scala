@@ -22,16 +22,34 @@ trait AssumeRoleResponse extends js.Object {
 
 object AssumeRoleResponse {
   @scala.inline
-  def apply(
-    AssumedRoleUser: AssumedRoleUser = null,
-    Credentials: Credentials = null,
-    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
-  ): AssumeRoleResponse = {
+  def apply(): AssumeRoleResponse = {
     val __obj = js.Dynamic.literal()
-    if (AssumedRoleUser != null) __obj.updateDynamic("AssumedRoleUser")(AssumedRoleUser.asInstanceOf[js.Any])
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleResponse]
   }
+  @scala.inline
+  implicit class AssumeRoleResponseOps[Self <: AssumeRoleResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssumedRoleUser(value: AssumedRoleUser): Self = this.set("AssumedRoleUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumedRoleUser: Self = this.set("AssumedRoleUser", js.undefined)
+    @scala.inline
+    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    @scala.inline
+    def setPackedPolicySize(value: nonNegativeIntegerType): Self = this.set("PackedPolicySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackedPolicySize: Self = this.set("PackedPolicySize", js.undefined)
+  }
+  
 }
 

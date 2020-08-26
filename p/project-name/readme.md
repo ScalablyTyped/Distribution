@@ -12,7 +12,7 @@ Get the name of a project, from package.json, git config, or basename of the cur
 | Keywords           | app, detect, dir, directory, dirname, match, name, project, resolve, root |
 | # releases         | 2 |
 | # dependents       | 24 |
-| # downloads        | 1466369 |
+| # downloads        | 1445819 |
 | # stars            | 1 |
 
 ## Links

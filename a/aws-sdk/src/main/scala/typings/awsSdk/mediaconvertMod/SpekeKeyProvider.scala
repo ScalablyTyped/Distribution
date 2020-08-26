@@ -27,18 +27,40 @@ trait SpekeKeyProvider extends js.Object {
 
 object SpekeKeyProvider {
   @scala.inline
-  def apply(
-    CertificateArn: stringPatternArnAwsUsGovAcm = null,
-    ResourceId: string = null,
-    SystemIds: listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = null,
-    Url: stringPatternHttps = null
-  ): SpekeKeyProvider = {
+  def apply(): SpekeKeyProvider = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (SystemIds != null) __obj.updateDynamic("SystemIds")(SystemIds.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpekeKeyProvider]
   }
+  @scala.inline
+  implicit class SpekeKeyProviderOps[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: stringPatternArnAwsUsGovAcm): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setResourceId(value: string): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setSystemIdsVarargs(value: stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12*): Self = this.set("SystemIds", js.Array(value :_*))
+    @scala.inline
+    def setSystemIds(value: listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12): Self = this.set("SystemIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemIds: Self = this.set("SystemIds", js.undefined)
+    @scala.inline
+    def setUrl(value: stringPatternHttps): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

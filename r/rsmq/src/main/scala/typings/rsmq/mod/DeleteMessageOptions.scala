@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteMessageOptions extends BaseOptions {
   /**
   		 * message id to delete.
@@ -11,7 +12,7 @@ trait DeleteMessageOptions extends BaseOptions {
   		 * @type {string}
   		 * @memberof DeleteMessageOptions
   		 */
-  var id: String
+  var id: String = js.native
 }
 
 object DeleteMessageOptions {
@@ -20,5 +21,20 @@ object DeleteMessageOptions {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], qname = qname.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMessageOptions]
   }
+  @scala.inline
+  implicit class DeleteMessageOptionsOps[Self <: DeleteMessageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+  }
+  
 }
 

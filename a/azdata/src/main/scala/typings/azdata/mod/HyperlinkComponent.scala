@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
-- typings.azdata.mod.Component because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined id, updateProperties, updateProperty, updateCssStyles, onValidityChanged, onValidityChanged, onValidityChanged, valid, validate, focus */ @js.native
+- typings.azdata.mod.Component because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined id, updateProperties, updateProperty, updateCssStyles, onValidityChanged, onValidityChanged, onValidityChanged, onValidityChanged, valid, validate, focus */ @js.native
 trait HyperlinkComponent extends HyperlinkComponentProperties {
   val id: String = js.native
   /**
@@ -24,6 +24,11 @@ trait HyperlinkComponent extends HyperlinkComponentProperties {
     * Event fired to notify that the component's validity has changed
     */
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
+  def onValidityChanged(
+    listener: js.Function1[/* e */ Boolean, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
   def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

@@ -27,6 +27,7 @@ class ResourceReports protected () extends js.Object {
     */
   def listreports(): GaxiosPromise[SchemaListReportsResponse] = js.native
   def listreports(callback: BodyResponseCallback[SchemaListReportsResponse]): Unit = js.native
+  def listreports(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReportsResponse] = js.native
   def listreports(params: ParamsResourceReportsListreports): GaxiosPromise[SchemaListReportsResponse] = js.native
   def listreports(
     params: ParamsResourceReportsListreports,

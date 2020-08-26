@@ -10,8 +10,8 @@ A string replace plugin for gulp
 | Full name          | gulp-replace |
 | Keywords           | gulpplugin, replace |
 | # releases         | 2 |
-| # dependents       | 660 |
-| # downloads        | 9721780 |
+| # dependents       | 664 |
+| # downloads        | 9651428 |
 | # stars            | 135 |
 
 ## Links

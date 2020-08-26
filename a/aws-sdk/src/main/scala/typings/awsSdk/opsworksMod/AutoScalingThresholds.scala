@@ -38,24 +38,52 @@ trait AutoScalingThresholds extends js.Object {
 
 object AutoScalingThresholds {
   @scala.inline
-  def apply(
-    Alarms: Strings = null,
-    CpuThreshold: js.UndefOr[Double] = js.undefined,
-    IgnoreMetricsTime: js.UndefOr[Minute] = js.undefined,
-    InstanceCount: js.UndefOr[Integer] = js.undefined,
-    LoadThreshold: js.UndefOr[Double] = js.undefined,
-    MemoryThreshold: js.UndefOr[Double] = js.undefined,
-    ThresholdsWaitTime: js.UndefOr[Minute] = js.undefined
-  ): AutoScalingThresholds = {
+  def apply(): AutoScalingThresholds = {
     val __obj = js.Dynamic.literal()
-    if (Alarms != null) __obj.updateDynamic("Alarms")(Alarms.asInstanceOf[js.Any])
-    if (!js.isUndefined(CpuThreshold)) __obj.updateDynamic("CpuThreshold")(CpuThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IgnoreMetricsTime)) __obj.updateDynamic("IgnoreMetricsTime")(IgnoreMetricsTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LoadThreshold)) __obj.updateDynamic("LoadThreshold")(LoadThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MemoryThreshold)) __obj.updateDynamic("MemoryThreshold")(MemoryThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ThresholdsWaitTime)) __obj.updateDynamic("ThresholdsWaitTime")(ThresholdsWaitTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingThresholds]
   }
+  @scala.inline
+  implicit class AutoScalingThresholdsOps[Self <: AutoScalingThresholds] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmsVarargs(value: String*): Self = this.set("Alarms", js.Array(value :_*))
+    @scala.inline
+    def setAlarms(value: Strings): Self = this.set("Alarms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarms: Self = this.set("Alarms", js.undefined)
+    @scala.inline
+    def setCpuThreshold(value: Double): Self = this.set("CpuThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuThreshold: Self = this.set("CpuThreshold", js.undefined)
+    @scala.inline
+    def setIgnoreMetricsTime(value: Minute): Self = this.set("IgnoreMetricsTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreMetricsTime: Self = this.set("IgnoreMetricsTime", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setLoadThreshold(value: Double): Self = this.set("LoadThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadThreshold: Self = this.set("LoadThreshold", js.undefined)
+    @scala.inline
+    def setMemoryThreshold(value: Double): Self = this.set("MemoryThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryThreshold: Self = this.set("MemoryThreshold", js.undefined)
+    @scala.inline
+    def setThresholdsWaitTime(value: Minute): Self = this.set("ThresholdsWaitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdsWaitTime: Self = this.set("ThresholdsWaitTime", js.undefined)
+  }
+  
 }
 

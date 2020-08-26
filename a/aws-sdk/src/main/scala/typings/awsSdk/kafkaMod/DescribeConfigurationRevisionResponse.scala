@@ -41,20 +41,42 @@ trait DescribeConfigurationRevisionResponse extends js.Object {
 
 object DescribeConfigurationRevisionResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    CreationTime: timestampIso8601 = null,
-    Description: string = null,
-    Revision: js.UndefOr[long] = js.undefined,
-    ServerProperties: _Blob = null
-  ): DescribeConfigurationRevisionResponse = {
+  def apply(): DescribeConfigurationRevisionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision.get.asInstanceOf[js.Any])
-    if (ServerProperties != null) __obj.updateDynamic("ServerProperties")(ServerProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConfigurationRevisionResponse]
   }
+  @scala.inline
+  implicit class DescribeConfigurationRevisionResponseOps[Self <: DescribeConfigurationRevisionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: timestampIso8601): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRevision(value: long): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("Revision", js.undefined)
+    @scala.inline
+    def setServerProperties(value: _Blob): Self = this.set("ServerProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerProperties: Self = this.set("ServerProperties", js.undefined)
+  }
+  
 }
 

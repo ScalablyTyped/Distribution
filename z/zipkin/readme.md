@@ -1,7 +1,7 @@
 
 # Scala.js typings for zipkin
 
-Typings are for version 0.19.2
+Typings are for version 0.22.0
 
 ## Library description:
 The core tracer for Zipkin JS
@@ -10,9 +10,9 @@ The core tracer for Zipkin JS
 | ------------------ | :-------------: |
 | Full name          | zipkin |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 26 |
 | # dependents       | 106 |
-| # downloads        | 1282309 |
+| # downloads        | 1322557 |
 | # stars            | 0 |
 
 ## Links

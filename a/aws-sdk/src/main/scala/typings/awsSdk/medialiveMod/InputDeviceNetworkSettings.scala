@@ -30,20 +30,44 @@ trait InputDeviceNetworkSettings extends js.Object {
 
 object InputDeviceNetworkSettings {
   @scala.inline
-  def apply(
-    DnsAddresses: listOfString = null,
-    Gateway: string = null,
-    IpAddress: string = null,
-    IpScheme: InputDeviceIpScheme = null,
-    SubnetMask: string = null
-  ): InputDeviceNetworkSettings = {
+  def apply(): InputDeviceNetworkSettings = {
     val __obj = js.Dynamic.literal()
-    if (DnsAddresses != null) __obj.updateDynamic("DnsAddresses")(DnsAddresses.asInstanceOf[js.Any])
-    if (Gateway != null) __obj.updateDynamic("Gateway")(Gateway.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
-    if (IpScheme != null) __obj.updateDynamic("IpScheme")(IpScheme.asInstanceOf[js.Any])
-    if (SubnetMask != null) __obj.updateDynamic("SubnetMask")(SubnetMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputDeviceNetworkSettings]
   }
+  @scala.inline
+  implicit class InputDeviceNetworkSettingsOps[Self <: InputDeviceNetworkSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsAddressesVarargs(value: string*): Self = this.set("DnsAddresses", js.Array(value :_*))
+    @scala.inline
+    def setDnsAddresses(value: listOfString): Self = this.set("DnsAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsAddresses: Self = this.set("DnsAddresses", js.undefined)
+    @scala.inline
+    def setGateway(value: string): Self = this.set("Gateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGateway: Self = this.set("Gateway", js.undefined)
+    @scala.inline
+    def setIpAddress(value: string): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    @scala.inline
+    def setIpScheme(value: InputDeviceIpScheme): Self = this.set("IpScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpScheme: Self = this.set("IpScheme", js.undefined)
+    @scala.inline
+    def setSubnetMask(value: string): Self = this.set("SubnetMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetMask: Self = this.set("SubnetMask", js.undefined)
+  }
+  
 }
 

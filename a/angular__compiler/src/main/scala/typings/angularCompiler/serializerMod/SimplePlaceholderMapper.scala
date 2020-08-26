@@ -17,9 +17,5 @@ class SimplePlaceholderMapper protected ()
   var publicToInternal: js.Any = js.native
   var publicToNextId: js.Any = js.native
   var visitPlaceholderName: js.Any = js.native
-  /* CompleteClass */
-  override def toInternalName(publicName: String): String | Null = js.native
-  /* CompleteClass */
-  override def toPublicName(internalName: String): String | Null = js.native
 }
 

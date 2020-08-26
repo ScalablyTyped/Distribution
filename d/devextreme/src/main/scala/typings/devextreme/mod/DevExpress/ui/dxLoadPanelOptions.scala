@@ -1,10 +1,5 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.CancelComponentElementModel
-import typings.devextreme.anon.ComponentElement
-import typings.devextreme.anon.ElementDxElement
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.devextremeStrings.`left bottom`
 import typings.devextreme.devextremeStrings.`left top`
 import typings.devextreme.devextremeStrings.`right bottom`
@@ -14,8 +9,6 @@ import typings.devextreme.devextremeStrings.center
 import typings.devextreme.devextremeStrings.left
 import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
-import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.event
 import typings.devextreme.mod.DevExpress.positionConfig
 import typings.devextreme.mod.global.JQuery
 import typings.std.Element
@@ -23,113 +16,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxLoadPanelOptions extends dxOverlayOptions[dxLoadPanel] {
   /** @name dxLoadPanel.Options.animation */
   @JSName("animation")
-  var animation_dxLoadPanelOptions: js.UndefOr[dxLoadPanelAnimation] = js.undefined
+  var animation_dxLoadPanelOptions: js.UndefOr[dxLoadPanelAnimation] = js.native
   /** @name dxLoadPanel.Options.container */
-  var container: js.UndefOr[String | Element | JQuery] = js.undefined
+  var container: js.UndefOr[String | Element | JQuery] = js.native
   /** @name dxLoadPanel.Options.delay */
-  var delay: js.UndefOr[Double] = js.undefined
+  var delay: js.UndefOr[Double] = js.native
   /** @name dxLoadPanel.Options.indicatorSrc */
-  var indicatorSrc: js.UndefOr[String] = js.undefined
+  var indicatorSrc: js.UndefOr[String] = js.native
   /** @name dxLoadPanel.Options.message */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String] = js.native
   /** @name dxLoadPanel.Options.position */
   @JSName("position")
   var position_dxLoadPanelOptions: js.UndefOr[
     bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
-  ] = js.undefined
+  ] = js.native
   /** @name dxLoadPanel.Options.showIndicator */
-  var showIndicator: js.UndefOr[Boolean] = js.undefined
+  var showIndicator: js.UndefOr[Boolean] = js.native
   /** @name dxLoadPanel.Options.showPane */
-  var showPane: js.UndefOr[Boolean] = js.undefined
+  var showPane: js.UndefOr[Boolean] = js.native
 }
 
 object dxLoadPanelOptions {
   @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    animation: dxLoadPanelAnimation = null,
-    bindingOptions: js.Any = null,
-    closeOnOutsideClick: Boolean | (js.Function1[/* event */ event, Boolean]) = null,
-    container: String | Element | JQuery = null,
-    contentTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, String | Element | JQuery]) = null,
-    deferRendering: js.UndefOr[Boolean] = js.undefined,
-    delay: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dragEnabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    indicatorSrc: String = null,
-    maxHeight: Double | String | (js.Function0[Double | String]) = null,
-    maxWidth: Double | String | (js.Function0[Double | String]) = null,
-    message: String = null,
-    minHeight: Double | String | (js.Function0[Double | String]) = null,
-    minWidth: Double | String | (js.Function0[Double | String]) = null,
-    onContentReady: /* e */ ComponentElement[dxLoadPanel] => _ = null,
-    onDisposing: /* e */ Model[dxLoadPanel] => _ = null,
-    onHidden: /* e */ ElementDxElement[dxLoadPanel] => _ = null,
-    onHiding: /* e */ CancelComponentElementModel[dxLoadPanel] => _ = null,
-    onInitialized: /* e */ typings.devextreme.anon.Element[dxLoadPanel] => _ = null,
-    onOptionChanged: /* e */ Name[dxLoadPanel] => _ = null,
-    onShowing: /* e */ ElementDxElement[dxLoadPanel] => _ = null,
-    onShown: /* e */ ElementDxElement[dxLoadPanel] => _ = null,
-    position: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    shading: js.UndefOr[Boolean] = js.undefined,
-    shadingColor: String = null,
-    showIndicator: js.UndefOr[Boolean] = js.undefined,
-    showPane: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxLoadPanelOptions = {
+  def apply(): dxLoadPanelOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (closeOnOutsideClick != null) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (indicatorSrc != null) __obj.updateDynamic("indicatorSrc")(indicatorSrc.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction1(onHidden))
-    if (onHiding != null) __obj.updateDynamic("onHiding")(js.Any.fromFunction1(onHiding))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onShowing != null) __obj.updateDynamic("onShowing")(js.Any.fromFunction1(onShowing))
-    if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1(onShown))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shading)) __obj.updateDynamic("shading")(shading.get.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIndicator)) __obj.updateDynamic("showIndicator")(showIndicator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPane)) __obj.updateDynamic("showPane")(showPane.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLoadPanelOptions]
   }
+  @scala.inline
+  implicit class dxLoadPanelOptionsOps[Self <: dxLoadPanelOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: dxLoadPanelAnimation): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setContainer(value: String | Element | JQuery): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setIndicatorSrc(value: String): Self = this.set("indicatorSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicatorSrc: Self = this.set("indicatorSrc", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setPosition(
+      value: bottom | center | left | (`left bottom`) | (`left top`) | right | (`right bottom`) | (`right top`) | top | positionConfig | js.Function
+    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setShowIndicator(value: Boolean): Self = this.set("showIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIndicator: Self = this.set("showIndicator", js.undefined)
+    @scala.inline
+    def setShowPane(value: Boolean): Self = this.set("showPane", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPane: Self = this.set("showPane", js.undefined)
+  }
+  
 }
 

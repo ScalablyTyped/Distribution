@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Axes
   */
+@js.native
 trait Axes extends js.Object
 

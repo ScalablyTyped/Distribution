@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Capability () extends js.Object {
   def this(sid: String) = this()
+  def this(sid: js.UndefOr[scala.Nothing], tkn: String) = this()
   def this(sid: String, tkn: String) = this()
   var accountSid: String = js.native
   var authToken: String = js.native

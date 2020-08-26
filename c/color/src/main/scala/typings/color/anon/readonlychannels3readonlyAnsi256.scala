@@ -37,25 +37,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined { readonly channels  :3,  readonly labels  :['h', 'c', 'g'], readonly rgb (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.RGB, readonly hsv (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HSV, readonly hsl (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HSL, readonly hwb (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HWB} & color-convert.color-convert/route.hcg & {[ F in keyof color-convert.color-convert/route.hcg ]: {  raw  :color-convert.color-convert/route.hcg[F]}} */
+/* Inlined { readonly channels :3,  readonly labels :['h', 'c', 'g'], readonly rgb (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.RGB, readonly hsv (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HSV, readonly hsl (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HSL, readonly hwb (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HWB} & color-convert.color-convert/route.hcg & {[ F in keyof color-convert.color-convert/route.hcg ]: {  raw :color-convert.color-convert/route.hcg[F]}} */
 @js.native
 trait readonlychannels3readonlyAnsi256 extends js.Object {
-  var ansi16: `170` = js.native
-  var ansi256: `169` = js.native
-  var apple: `178` = js.native
+  var ansi16: `179` = js.native
+  var ansi256: `171` = js.native
+  var apple: `168` = js.native
   val channels: `3` = js.native
   var cmyk: `173` = js.native
-  var gray: `176` = js.native
-  var hex: `171` = js.native
-  var hsl: `174` = js.native
-  var hsv: `177` = js.native
-  var hwb: `179` = js.native
-  var keyword: `175` = js.native
+  var gray: `170` = js.native
+  var hex: `177` = js.native
+  var hsl: `178` = js.native
+  var hsv: `175` = js.native
+  var hwb: `172` = js.native
+  var keyword: `169` = js.native
   var lab: `180` = js.native
   val labels: js.Tuple3[h, c, g] = js.native
-  var lch: `172` = js.native
+  var lch: `176` = js.native
   var rgb: `167` = js.native
-  var xyz: `168` = js.native
+  var xyz: `174` = js.native
   def ansi16(from: HCG_): ANSI16_ = js.native
   def ansi256(from: HCG_): ANSI256_ = js.native
   def apple(from: HCG_): APPLE_ = js.native

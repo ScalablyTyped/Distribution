@@ -1,6 +1,5 @@
 package typings.pixiSpine.global.PIXI.spine.core
 
-import typings.pixiSpine.PIXI.spine.core.ArrayLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,49 +9,6 @@ import scala.scalajs.js.annotation._
 class RegionAttachment protected ()
   extends typings.pixiSpine.PIXI.spine.core.RegionAttachment {
   def this(name: String) = this()
-  /* CompleteClass */
-  override var color: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  /* CompleteClass */
-  override var height: Double = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var offset: ArrayLike[Double] = js.native
-  /* CompleteClass */
-  override var path: String = js.native
-  /* CompleteClass */
-  override var region: typings.pixiSpine.PIXI.spine.core.TextureRegion = js.native
-  /* CompleteClass */
-  override var rendererObject: js.Any = js.native
-  /* CompleteClass */
-  override var rotation: Double = js.native
-  /* CompleteClass */
-  override var scaleX: Double = js.native
-  /* CompleteClass */
-  override var scaleY: Double = js.native
-  /* CompleteClass */
-  override var tempColor: typings.pixiSpine.PIXI.spine.core.Color = js.native
-  /* CompleteClass */
-  override var uvs: ArrayLike[Double] = js.native
-  /* CompleteClass */
-  override var width: Double = js.native
-  /* CompleteClass */
-  override var x: Double = js.native
-  /* CompleteClass */
-  override var y: Double = js.native
-  /* CompleteClass */
-  override def computeWorldVertices(
-    bone: typings.pixiSpine.PIXI.spine.core.Bone,
-    worldVertices: ArrayLike[Double],
-    offset: Double,
-    stride: Double
-  ): Unit = js.native
-  /* CompleteClass */
-  override def copy(): typings.pixiSpine.PIXI.spine.core.Attachment = js.native
-  /* CompleteClass */
-  override def setRegion(region: typings.pixiSpine.PIXI.spine.core.TextureRegion): Unit = js.native
-  /* CompleteClass */
-  override def updateOffset(): Unit = js.native
 }
 
 /* static members */

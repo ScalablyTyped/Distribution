@@ -26,16 +26,34 @@ trait UpdateDataCatalogInput extends js.Object {
 
 object UpdateDataCatalogInput {
   @scala.inline
-  def apply(
-    Name: CatalogNameString,
-    Type: DataCatalogType,
-    Description: DescriptionString = null,
-    Parameters: ParametersMap = null
-  ): UpdateDataCatalogInput = {
+  def apply(Name: CatalogNameString, Type: DataCatalogType): UpdateDataCatalogInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDataCatalogInput]
   }
+  @scala.inline
+  implicit class UpdateDataCatalogInputOps[Self <: UpdateDataCatalogInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: CatalogNameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: DataCatalogType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+  }
+  
 }
 

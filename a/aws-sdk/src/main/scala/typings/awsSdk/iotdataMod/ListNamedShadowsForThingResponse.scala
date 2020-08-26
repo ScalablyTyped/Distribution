@@ -22,16 +22,36 @@ trait ListNamedShadowsForThingResponse extends js.Object {
 
 object ListNamedShadowsForThingResponse {
   @scala.inline
-  def apply(
-    nextToken: NextToken = null,
-    results: NamedShadowList = null,
-    timestamp: js.UndefOr[Timestamp] = js.undefined
-  ): ListNamedShadowsForThingResponse = {
+  def apply(): ListNamedShadowsForThingResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNamedShadowsForThingResponse]
   }
+  @scala.inline
+  implicit class ListNamedShadowsForThingResponseOps[Self <: ListNamedShadowsForThingResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: ShadowName*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: NamedShadowList): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

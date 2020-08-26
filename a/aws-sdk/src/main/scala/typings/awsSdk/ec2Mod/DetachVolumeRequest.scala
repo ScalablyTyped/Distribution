@@ -30,19 +30,40 @@ trait DetachVolumeRequest extends js.Object {
 
 object DetachVolumeRequest {
   @scala.inline
-  def apply(
-    VolumeId: VolumeId,
-    Device: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Force: js.UndefOr[Boolean] = js.undefined,
-    InstanceId: InstanceId = null
-  ): DetachVolumeRequest = {
+  def apply(VolumeId: VolumeId): DetachVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
-    if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachVolumeRequest]
   }
+  @scala.inline
+  implicit class DetachVolumeRequestOps[Self <: DetachVolumeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVolumeId(value: VolumeId): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDevice(value: String): Self = this.set("Device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("Device", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("Force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("Force", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+  }
+  
 }
 

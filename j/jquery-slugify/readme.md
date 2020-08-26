@@ -12,7 +12,7 @@ Just another another (another) url slug plugin for jQuery
 | Keywords           | javascript, jquery, slugs, slug, strings, jquery-plugin |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9071 |
+| # downloads        | 10684 |
 | # stars            | 0 |
 
 ## Links

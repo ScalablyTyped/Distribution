@@ -46,21 +46,13 @@ class WorkflowTaskOutcome protected ()
   @JSName("name")
   val name_FWorkflowTaskOutcome: String = js.native
   /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
-  /**
     * In version 8.11.0: introduced
     */
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def containerAsWorkflowTask: WorkflowTask = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MWorkflowTaskOutcome: String | Null = js.native
 }

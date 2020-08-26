@@ -24,14 +24,32 @@ trait SchemaGooglePrivacyDlpV2InfoTypeTransformation extends js.Object {
 
 object SchemaGooglePrivacyDlpV2InfoTypeTransformation {
   @scala.inline
-  def apply(
-    infoTypes: js.Array[SchemaGooglePrivacyDlpV2InfoType] = null,
-    primitiveTransformation: SchemaGooglePrivacyDlpV2PrimitiveTransformation = null
-  ): SchemaGooglePrivacyDlpV2InfoTypeTransformation = {
+  def apply(): SchemaGooglePrivacyDlpV2InfoTypeTransformation = {
     val __obj = js.Dynamic.literal()
-    if (infoTypes != null) __obj.updateDynamic("infoTypes")(infoTypes.asInstanceOf[js.Any])
-    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InfoTypeTransformation]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2InfoTypeTransformationOps[Self <: SchemaGooglePrivacyDlpV2InfoTypeTransformation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = this.set("infoTypes", js.Array(value :_*))
+    @scala.inline
+    def setInfoTypes(value: js.Array[SchemaGooglePrivacyDlpV2InfoType]): Self = this.set("infoTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoTypes: Self = this.set("infoTypes", js.undefined)
+    @scala.inline
+    def setPrimitiveTransformation(value: SchemaGooglePrivacyDlpV2PrimitiveTransformation): Self = this.set("primitiveTransformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimitiveTransformation: Self = this.set("primitiveTransformation", js.undefined)
+  }
+  
 }
 

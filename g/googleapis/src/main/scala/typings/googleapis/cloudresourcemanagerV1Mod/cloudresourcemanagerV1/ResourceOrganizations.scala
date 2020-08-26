@@ -81,6 +81,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def clearOrgPolicy(): GaxiosPromise[SchemaEmpty] = js.native
   def clearOrgPolicy(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def clearOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def clearOrgPolicy(params: ParamsResourceOrganizationsClearorgpolicy): GaxiosPromise[SchemaEmpty] = js.native
   def clearOrgPolicy(params: ParamsResourceOrganizationsClearorgpolicy, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def clearOrgPolicy(
@@ -161,6 +162,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOrganization] = js.native
   def get(callback: BodyResponseCallback[SchemaOrganization]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrganization] = js.native
   def get(params: ParamsResourceOrganizationsGet): GaxiosPromise[SchemaOrganization] = js.native
   def get(params: ParamsResourceOrganizationsGet, callback: BodyResponseCallback[SchemaOrganization]): Unit = js.native
   def get(
@@ -249,6 +251,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def getEffectiveOrgPolicy(): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getEffectiveOrgPolicy(callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
+  def getEffectiveOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getEffectiveOrgPolicy(params: ParamsResourceOrganizationsGeteffectiveorgpolicy): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getEffectiveOrgPolicy(
     params: ParamsResourceOrganizationsGeteffectiveorgpolicy,
@@ -342,6 +345,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceOrganizationsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceOrganizationsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -430,6 +434,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def getOrgPolicy(): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getOrgPolicy(callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
+  def getOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getOrgPolicy(params: ParamsResourceOrganizationsGetorgpolicy): GaxiosPromise[SchemaOrgPolicy] = js.native
   def getOrgPolicy(params: ParamsResourceOrganizationsGetorgpolicy, callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
   def getOrgPolicy(
@@ -534,6 +539,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def listAvailableOrgPolicyConstraints(): GaxiosPromise[SchemaListAvailableOrgPolicyConstraintsResponse] = js.native
   def listAvailableOrgPolicyConstraints(callback: BodyResponseCallback[SchemaListAvailableOrgPolicyConstraintsResponse]): Unit = js.native
+  def listAvailableOrgPolicyConstraints(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAvailableOrgPolicyConstraintsResponse] = js.native
   def listAvailableOrgPolicyConstraints(params: ParamsResourceOrganizationsListavailableorgpolicyconstraints): GaxiosPromise[SchemaListAvailableOrgPolicyConstraintsResponse] = js.native
   def listAvailableOrgPolicyConstraints(
     params: ParamsResourceOrganizationsListavailableorgpolicyconstraints,
@@ -638,6 +644,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def listOrgPolicies(): GaxiosPromise[SchemaListOrgPoliciesResponse] = js.native
   def listOrgPolicies(callback: BodyResponseCallback[SchemaListOrgPoliciesResponse]): Unit = js.native
+  def listOrgPolicies(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOrgPoliciesResponse] = js.native
   def listOrgPolicies(params: ParamsResourceOrganizationsListorgpolicies): GaxiosPromise[SchemaListOrgPoliciesResponse] = js.native
   def listOrgPolicies(
     params: ParamsResourceOrganizationsListorgpolicies,
@@ -740,6 +747,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchOrganizationsResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchOrganizationsResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchOrganizationsResponse] = js.native
   def search(params: ParamsResourceOrganizationsSearch): GaxiosPromise[SchemaSearchOrganizationsResponse] = js.native
   def search(
     params: ParamsResourceOrganizationsSearch,
@@ -833,6 +841,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceOrganizationsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceOrganizationsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -920,6 +929,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def setOrgPolicy(): GaxiosPromise[SchemaOrgPolicy] = js.native
   def setOrgPolicy(callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
+  def setOrgPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrgPolicy] = js.native
   def setOrgPolicy(params: ParamsResourceOrganizationsSetorgpolicy): GaxiosPromise[SchemaOrgPolicy] = js.native
   def setOrgPolicy(params: ParamsResourceOrganizationsSetorgpolicy, callback: BodyResponseCallback[SchemaOrgPolicy]): Unit = js.native
   def setOrgPolicy(
@@ -1009,6 +1019,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceOrganizationsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceOrganizationsTestiampermissions,

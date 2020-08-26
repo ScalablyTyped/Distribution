@@ -2,36 +2,45 @@ package typings.appBuilderLib.snapStorePublisherMod
 
 import typings.builderUtilRuntime.publishOptionsMod.PublishConfiguration
 import typings.builderUtilRuntime.publishOptionsMod.PublishProvider
-import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnapStoreOptions extends PublishConfiguration {
   /**
     * The list of channels the snap would be released.
     * @default ["edge"]
     */
-  val channels: js.UndefOr[String | js.Array[String] | Null] = js.undefined
+  val channels: js.UndefOr[String | js.Array[String] | Null] = js.native
 }
 
 object SnapStoreOptions {
   @scala.inline
-  def apply(
-    provider: PublishProvider,
-    channels: js.UndefOr[Null | String | js.Array[String]] = js.undefined,
-    publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    requestHeaders: OutgoingHttpHeaders = null,
-    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
-  ): SnapStoreOptions = {
+  def apply(provider: PublishProvider): SnapStoreOptions = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(channels)) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapStoreOptions]
   }
+  @scala.inline
+  implicit class SnapStoreOptionsOps[Self <: SnapStoreOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelsVarargs(value: String*): Self = this.set("channels", js.Array(value :_*))
+    @scala.inline
+    def setChannels(value: String | js.Array[String]): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+    @scala.inline
+    def setChannelsNull: Self = this.set("channels", null)
+  }
+  
 }
 

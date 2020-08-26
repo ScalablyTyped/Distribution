@@ -39,6 +39,7 @@ trait Cell extends js.Object {
   def Delete(): Unit = js.native
   def Delete(ShiftCells: js.Any): Unit = js.native
   def Formula(): Unit = js.native
+  def Formula(Formula: js.UndefOr[scala.Nothing], NumFormat: js.Any): Unit = js.native
   def Formula(Formula: js.Any): Unit = js.native
   def Formula(Formula: js.Any, NumFormat: js.Any): Unit = js.native
   def Merge(MergeTo: Cell): Unit = js.native
@@ -46,6 +47,7 @@ trait Cell extends js.Object {
   def SetHeight(RowHeight: js.Any, HeightRule: WdRowHeightRule): Unit = js.native
   def SetWidth(ColumnWidth: Double, RulerStyle: WdRulerStyle): Unit = js.native
   def Split(): Unit = js.native
+  def Split(NumRows: js.UndefOr[scala.Nothing], NumColumns: js.Any): Unit = js.native
   def Split(NumRows: js.Any): Unit = js.native
   def Split(NumRows: js.Any, NumColumns: js.Any): Unit = js.native
 }

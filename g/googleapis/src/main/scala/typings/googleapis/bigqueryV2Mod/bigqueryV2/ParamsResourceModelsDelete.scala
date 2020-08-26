@@ -30,32 +30,38 @@ trait ParamsResourceModelsDelete extends StandardParameters {
 
 object ParamsResourceModelsDelete {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    datasetId: String = null,
-    fields: String = null,
-    key: String = null,
-    modelId: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    projectId: String = null,
-    quotaUser: String = null,
-    userIp: String = null
-  ): ParamsResourceModelsDelete = {
+  def apply(): ParamsResourceModelsDelete = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceModelsDelete]
   }
+  @scala.inline
+  implicit class ParamsResourceModelsDeleteOps[Self <: ParamsResourceModelsDelete] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setDatasetId(value: String): Self = this.set("datasetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetId: Self = this.set("datasetId", js.undefined)
+    @scala.inline
+    def setModelId(value: String): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelId: Self = this.set("modelId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+  }
+  
 }
 

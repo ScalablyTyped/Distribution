@@ -30,18 +30,40 @@ trait SchemaApplicationsListResponse extends js.Object {
 
 object SchemaApplicationsListResponse {
   @scala.inline
-  def apply(
-    applications: js.Array[SchemaApplication] = null,
-    etag: String = null,
-    kind: String = null,
-    nextPageToken: String = null
-  ): SchemaApplicationsListResponse = {
+  def apply(): SchemaApplicationsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationsListResponse]
   }
+  @scala.inline
+  implicit class SchemaApplicationsListResponseOps[Self <: SchemaApplicationsListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationsVarargs(value: SchemaApplication*): Self = this.set("applications", js.Array(value :_*))
+    @scala.inline
+    def setApplications(value: js.Array[SchemaApplication]): Self = this.set("applications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplications: Self = this.set("applications", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

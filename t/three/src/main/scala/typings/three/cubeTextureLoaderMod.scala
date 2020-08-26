@@ -17,7 +17,30 @@ object cubeTextureLoaderMod extends js.Object {
   class CubeTextureLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     def load(urls: js.Array[String]): CubeTexture = js.native
+    def load(
+      urls: js.Array[String],
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): CubeTexture = js.native
+    def load(
+      urls: js.Array[String],
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
+    ): CubeTexture = js.native
+    def load(
+      urls: js.Array[String],
+      onLoad: js.UndefOr[scala.Nothing],
+      onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): CubeTexture = js.native
     def load(urls: js.Array[String], onLoad: js.Function1[/* texture */ CubeTexture, Unit]): CubeTexture = js.native
+    def load(
+      urls: js.Array[String],
+      onLoad: js.Function1[/* texture */ CubeTexture, Unit],
+      onProgress: js.UndefOr[scala.Nothing],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): CubeTexture = js.native
     def load(
       urls: js.Array[String],
       onLoad: js.Function1[/* texture */ CubeTexture, Unit],

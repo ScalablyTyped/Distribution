@@ -15,11 +15,5 @@ class TimeTrigger protected ()
     * @param oneShot True if the time event trigger will be used once; false if it will be used each time freshnessTime elapses.
     */
   def this(freshnessTime: Double, oneShot: Boolean) = this()
-  /** Gets the interval of a time event trigger. */
-  /* CompleteClass */
-  override var freshnessTime: Double = js.native
-  /** Gets whether the time event trigger will be used only once or each time the FreshnessTime interval elapses. */
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
 }
 

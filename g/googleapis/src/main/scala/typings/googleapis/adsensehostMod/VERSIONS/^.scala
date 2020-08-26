@@ -14,7 +14,7 @@ object ^ extends js.Object {
   @JSName("v4.1")
   var v4Dot1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     Adsensehost
   ] = js.native
 }

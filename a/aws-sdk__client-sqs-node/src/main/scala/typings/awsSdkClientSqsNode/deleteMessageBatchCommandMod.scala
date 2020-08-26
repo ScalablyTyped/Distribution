@@ -26,16 +26,9 @@ object deleteMessageBatchCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteMessageBatchInput) = this()
-    /* CompleteClass */
-    override val input: DeleteMessageBatchInput = js.native
     val middlewareStack: MiddlewareStack[DeleteMessageBatchInput, DeleteMessageBatchOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[DeleteMessageBatchInput, DeleteMessageBatchOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[DeleteMessageBatchInput, DeleteMessageBatchOutput] = js.native
   }

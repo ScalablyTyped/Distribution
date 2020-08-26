@@ -9,8 +9,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class ColorGeometryInstanceAttribute () extends js.Object {
   def this(red: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double) = this()
   def this(red: Double, green: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double) = this()
+  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double) = this()
   def this(red: Double, green: Double, blue: Double) = this()
+  def this(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double) = this()
+  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
+  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
+  def this(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
   var componentDatatype: ComponentDatatype = js.native
   var componentsPerAttribute: Double = js.native

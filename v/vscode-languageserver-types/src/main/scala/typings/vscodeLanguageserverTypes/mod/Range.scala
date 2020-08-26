@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Range extends js.Object {
   /**
     * The range's end position.
     */
-  var end: Position
+  var end: Position = js.native
   /**
     * The range's start position
     */
-  var start: Position
+  var start: Position = js.native
 }
 
 @JSImport("vscode-languageserver-types", "Range")

@@ -18,11 +18,30 @@ trait UpdateDeviceRequest extends js.Object {
 
 object UpdateDeviceRequest {
   @scala.inline
-  def apply(DeviceArn: Arn = null, DeviceName: DeviceName = null): UpdateDeviceRequest = {
+  def apply(): UpdateDeviceRequest = {
     val __obj = js.Dynamic.literal()
-    if (DeviceArn != null) __obj.updateDynamic("DeviceArn")(DeviceArn.asInstanceOf[js.Any])
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDeviceRequest]
   }
+  @scala.inline
+  implicit class UpdateDeviceRequestOps[Self <: UpdateDeviceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceArn(value: Arn): Self = this.set("DeviceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceArn: Self = this.set("DeviceArn", js.undefined)
+    @scala.inline
+    def setDeviceName(value: DeviceName): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+  }
+  
 }
 

@@ -5,21 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IConnectionOptions[C /* <: IClient */] extends js.Object {
-  var direct: js.UndefOr[Boolean] = js.undefined
-  var onLost: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ ILostContext[C], Unit]] = js.undefined
+  var direct: js.UndefOr[Boolean] = js.native
+  var onLost: js.UndefOr[js.Function2[/* err */ js.Any, /* e */ ILostContext[C], Unit]] = js.native
 }
 
 object IConnectionOptions {
   @scala.inline
-  def apply[/* <: typings.pgPromise.pgSubsetMod.IClient */ C](
-    direct: js.UndefOr[Boolean] = js.undefined,
-    onLost: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit = null
-  ): IConnectionOptions[C] = {
+  def apply[/* <: typings.pgPromise.pgSubsetMod.IClient */ C](): IConnectionOptions[C] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(direct)) __obj.updateDynamic("direct")(direct.get.asInstanceOf[js.Any])
-    if (onLost != null) __obj.updateDynamic("onLost")(js.Any.fromFunction2(onLost))
     __obj.asInstanceOf[IConnectionOptions[C]]
   }
+  @scala.inline
+  implicit class IConnectionOptionsOps[Self <: IConnectionOptions[_], /* <: typings.pgPromise.pgSubsetMod.IClient */ C] (val x: Self with IConnectionOptions[C]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirect(value: Boolean): Self = this.set("direct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirect: Self = this.set("direct", js.undefined)
+    @scala.inline
+    def setOnLost(value: (/* err */ js.Any, /* e */ ILostContext[C]) => Unit): Self = this.set("onLost", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnLost: Self = this.set("onLost", js.undefined)
+  }
+  
 }
 

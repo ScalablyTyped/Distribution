@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "final-form-set-field-data"
-version := "1.0-dt-20200601Z-a4d69e"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200601Z-3cf139"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

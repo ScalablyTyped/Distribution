@@ -12,7 +12,7 @@ Compare strings containing a mix of letters and numbers in the way a human being
 | Keywords           | string, natural, order, sort, natsort, natcmp, compare, alphanum, litejs |
 | # releases         | 0 |
 | # dependents       | 55 |
-| # downloads        | 297028946 |
+| # downloads        | 304784320 |
 | # stars            | 0 |
 
 ## Links

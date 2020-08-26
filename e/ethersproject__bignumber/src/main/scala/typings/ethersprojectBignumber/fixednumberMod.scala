@@ -67,9 +67,9 @@ object fixednumberMod extends js.Object {
     def fromString(value: String, format: String): FixedNumber = js.native
     def fromString(value: String, format: FixedFormat): FixedNumber = js.native
     def fromValue(value: BigNumber): FixedNumber = js.native
+    def fromValue(value: BigNumber, decimals: js.UndefOr[BigNumberish], format: String): FixedNumber = js.native
+    def fromValue(value: BigNumber, decimals: js.UndefOr[BigNumberish], format: FixedFormat): FixedNumber = js.native
     def fromValue(value: BigNumber, decimals: BigNumberish): FixedNumber = js.native
-    def fromValue(value: BigNumber, decimals: BigNumberish, format: String): FixedNumber = js.native
-    def fromValue(value: BigNumber, decimals: BigNumberish, format: FixedFormat): FixedNumber = js.native
     def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = js.native
   }
   

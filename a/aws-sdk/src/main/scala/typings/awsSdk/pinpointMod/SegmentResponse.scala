@@ -58,29 +58,60 @@ trait SegmentResponse extends js.Object {
 
 object SegmentResponse {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    Arn: string,
-    CreationDate: string,
-    Id: string,
-    SegmentType: SegmentType,
-    Dimensions: SegmentDimensions = null,
-    ImportDefinition: SegmentImportResource = null,
-    LastModifiedDate: string = null,
-    Name: string = null,
-    SegmentGroups: SegmentGroupList = null,
-    Version: js.UndefOr[integer] = js.undefined,
-    tags: MapOfString = null
-  ): SegmentResponse = {
+  def apply(ApplicationId: string, Arn: string, CreationDate: string, Id: string, SegmentType: SegmentType): SegmentResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], Arn = Arn.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], SegmentType = SegmentType.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (ImportDefinition != null) __obj.updateDynamic("ImportDefinition")(ImportDefinition.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (SegmentGroups != null) __obj.updateDynamic("SegmentGroups")(SegmentGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentResponse]
   }
+  @scala.inline
+  implicit class SegmentResponseOps[Self <: SegmentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreationDate(value: string): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSegmentType(value: SegmentType): Self = this.set("SegmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensions(value: SegmentDimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setImportDefinition(value: SegmentImportResource): Self = this.set("ImportDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportDefinition: Self = this.set("ImportDefinition", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSegmentGroups(value: SegmentGroupList): Self = this.set("SegmentGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentGroups: Self = this.set("SegmentGroups", js.undefined)
+    @scala.inline
+    def setVersion(value: integer): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setTags(value: MapOfString): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

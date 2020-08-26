@@ -50,6 +50,7 @@ trait AlloyFactories extends js.Object {
     */
   def createWidget(id: String): AlloyController = js.native
   def createWidget(id: String, args: js.Any): AlloyController = js.native
+  def createWidget(id: String, name: js.UndefOr[scala.Nothing], args: js.Any): AlloyController = js.native
   def createWidget(id: String, name: String): AlloyController = js.native
   def createWidget(id: String, name: String, args: js.Any): AlloyController = js.native
 }

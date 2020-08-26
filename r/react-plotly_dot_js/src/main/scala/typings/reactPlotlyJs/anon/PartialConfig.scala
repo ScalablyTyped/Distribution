@@ -19,114 +19,201 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Config> */
+@js.native
 trait PartialConfig extends js.Object {
-  var autosizable: js.UndefOr[Boolean] = js.undefined
-  var displayModeBar: js.UndefOr[hover | Boolean] = js.undefined
-  var displaylogo: js.UndefOr[Boolean] = js.undefined
-  var doubleClick: js.UndefOr[resetPlussignautosize | reset | autosize | `false`] = js.undefined
-  var editable: js.UndefOr[Boolean] = js.undefined
-  var edits: js.UndefOr[PartialEdits] = js.undefined
-  var fillFrame: js.UndefOr[Boolean] = js.undefined
-  var frameMargins: js.UndefOr[Double] = js.undefined
-  var globalTransforms: js.UndefOr[js.Array[_]] = js.undefined
-  var linkText: js.UndefOr[String] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var logging: js.UndefOr[Boolean | `0` | `1` | `2`] = js.undefined
-  var mapboxAccessToken: js.UndefOr[String] = js.undefined
-  var modeBarButtons: js.UndefOr[(js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`] = js.undefined
-  var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButton | ModeBarDefaultButtons]] = js.undefined
-  var modeBarButtonsToRemove: js.UndefOr[js.Array[ModeBarDefaultButtons]] = js.undefined
-  var plotGlPixelRatio: js.UndefOr[Double] = js.undefined
-  var plotlyServerURL: js.UndefOr[String] = js.undefined
-  var queueLength: js.UndefOr[Double] = js.undefined
-  var responsive: js.UndefOr[Boolean] = js.undefined
-  var scrollZoom: js.UndefOr[Boolean] = js.undefined
-  var sendData: js.UndefOr[Boolean] = js.undefined
-  var setBackground: js.UndefOr[js.Function0[String | opaque | transparent]] = js.undefined
-  var showAxisDragHandles: js.UndefOr[Boolean] = js.undefined
-  var showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.undefined
-  var showEditInChartStudio: js.UndefOr[Boolean] = js.undefined
-  var showLink: js.UndefOr[Boolean] = js.undefined
-  var showSendToCloud: js.UndefOr[Boolean] = js.undefined
-  var showSources: js.UndefOr[Boolean] = js.undefined
-  var showTips: js.UndefOr[Boolean] = js.undefined
-  var staticPlot: js.UndefOr[Boolean] = js.undefined
-  var toImageButtonOptions: js.UndefOr[Partialfilenamestringscal] = js.undefined
-  var topojsonURL: js.UndefOr[String] = js.undefined
+  var autosizable: js.UndefOr[Boolean] = js.native
+  var displayModeBar: js.UndefOr[hover | Boolean] = js.native
+  var displaylogo: js.UndefOr[Boolean] = js.native
+  var doubleClick: js.UndefOr[resetPlussignautosize | reset | autosize | `false`] = js.native
+  var editable: js.UndefOr[Boolean] = js.native
+  var edits: js.UndefOr[PartialEdits] = js.native
+  var fillFrame: js.UndefOr[Boolean] = js.native
+  var frameMargins: js.UndefOr[Double] = js.native
+  var globalTransforms: js.UndefOr[js.Array[_]] = js.native
+  var linkText: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var logging: js.UndefOr[Boolean | `0` | `1` | `2`] = js.native
+  var mapboxAccessToken: js.UndefOr[String] = js.native
+  var modeBarButtons: js.UndefOr[(js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`] = js.native
+  var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButton | ModeBarDefaultButtons]] = js.native
+  var modeBarButtonsToRemove: js.UndefOr[js.Array[ModeBarDefaultButtons]] = js.native
+  var plotGlPixelRatio: js.UndefOr[Double] = js.native
+  var plotlyServerURL: js.UndefOr[String] = js.native
+  var queueLength: js.UndefOr[Double] = js.native
+  var responsive: js.UndefOr[Boolean] = js.native
+  var scrollZoom: js.UndefOr[Boolean] = js.native
+  var sendData: js.UndefOr[Boolean] = js.native
+  var setBackground: js.UndefOr[js.Function0[String | opaque | transparent]] = js.native
+  var showAxisDragHandles: js.UndefOr[Boolean] = js.native
+  var showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.native
+  var showEditInChartStudio: js.UndefOr[Boolean] = js.native
+  var showLink: js.UndefOr[Boolean] = js.native
+  var showSendToCloud: js.UndefOr[Boolean] = js.native
+  var showSources: js.UndefOr[Boolean] = js.native
+  var showTips: js.UndefOr[Boolean] = js.native
+  var staticPlot: js.UndefOr[Boolean] = js.native
+  var toImageButtonOptions: js.UndefOr[Partialfilenamestringscal] = js.native
+  var topojsonURL: js.UndefOr[String] = js.native
 }
 
 object PartialConfig {
   @scala.inline
-  def apply(
-    autosizable: js.UndefOr[Boolean] = js.undefined,
-    displayModeBar: hover | Boolean = null,
-    displaylogo: js.UndefOr[Boolean] = js.undefined,
-    doubleClick: resetPlussignautosize | reset | autosize | `false` = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    edits: PartialEdits = null,
-    fillFrame: js.UndefOr[Boolean] = js.undefined,
-    frameMargins: js.UndefOr[Double] = js.undefined,
-    globalTransforms: js.Array[_] = null,
-    linkText: String = null,
-    locale: String = null,
-    logging: Boolean | `0` | `1` | `2` = null,
-    mapboxAccessToken: String = null,
-    modeBarButtons: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false` = null,
-    modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons] = null,
-    modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons] = null,
-    plotGlPixelRatio: js.UndefOr[Double] = js.undefined,
-    plotlyServerURL: String = null,
-    queueLength: js.UndefOr[Double] = js.undefined,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    scrollZoom: js.UndefOr[Boolean] = js.undefined,
-    sendData: js.UndefOr[Boolean] = js.undefined,
-    setBackground: () => String | opaque | transparent = null,
-    showAxisDragHandles: js.UndefOr[Boolean] = js.undefined,
-    showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.undefined,
-    showEditInChartStudio: js.UndefOr[Boolean] = js.undefined,
-    showLink: js.UndefOr[Boolean] = js.undefined,
-    showSendToCloud: js.UndefOr[Boolean] = js.undefined,
-    showSources: js.UndefOr[Boolean] = js.undefined,
-    showTips: js.UndefOr[Boolean] = js.undefined,
-    staticPlot: js.UndefOr[Boolean] = js.undefined,
-    toImageButtonOptions: Partialfilenamestringscal = null,
-    topojsonURL: String = null
-  ): PartialConfig = {
+  def apply(): PartialConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autosizable)) __obj.updateDynamic("autosizable")(autosizable.get.asInstanceOf[js.Any])
-    if (displayModeBar != null) __obj.updateDynamic("displayModeBar")(displayModeBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(displaylogo)) __obj.updateDynamic("displaylogo")(displaylogo.get.asInstanceOf[js.Any])
-    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.get.asInstanceOf[js.Any])
-    if (edits != null) __obj.updateDynamic("edits")(edits.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillFrame)) __obj.updateDynamic("fillFrame")(fillFrame.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frameMargins)) __obj.updateDynamic("frameMargins")(frameMargins.get.asInstanceOf[js.Any])
-    if (globalTransforms != null) __obj.updateDynamic("globalTransforms")(globalTransforms.asInstanceOf[js.Any])
-    if (linkText != null) __obj.updateDynamic("linkText")(linkText.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (mapboxAccessToken != null) __obj.updateDynamic("mapboxAccessToken")(mapboxAccessToken.asInstanceOf[js.Any])
-    if (modeBarButtons != null) __obj.updateDynamic("modeBarButtons")(modeBarButtons.asInstanceOf[js.Any])
-    if (modeBarButtonsToAdd != null) __obj.updateDynamic("modeBarButtonsToAdd")(modeBarButtonsToAdd.asInstanceOf[js.Any])
-    if (modeBarButtonsToRemove != null) __obj.updateDynamic("modeBarButtonsToRemove")(modeBarButtonsToRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(plotGlPixelRatio)) __obj.updateDynamic("plotGlPixelRatio")(plotGlPixelRatio.get.asInstanceOf[js.Any])
-    if (plotlyServerURL != null) __obj.updateDynamic("plotlyServerURL")(plotlyServerURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(queueLength)) __obj.updateDynamic("queueLength")(queueLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendData)) __obj.updateDynamic("sendData")(sendData.get.asInstanceOf[js.Any])
-    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction0(setBackground))
-    if (!js.isUndefined(showAxisDragHandles)) __obj.updateDynamic("showAxisDragHandles")(showAxisDragHandles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAxisRangeEntryBoxes)) __obj.updateDynamic("showAxisRangeEntryBoxes")(showAxisRangeEntryBoxes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEditInChartStudio)) __obj.updateDynamic("showEditInChartStudio")(showEditInChartStudio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLink)) __obj.updateDynamic("showLink")(showLink.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSendToCloud)) __obj.updateDynamic("showSendToCloud")(showSendToCloud.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSources)) __obj.updateDynamic("showSources")(showSources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTips)) __obj.updateDynamic("showTips")(showTips.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(staticPlot)) __obj.updateDynamic("staticPlot")(staticPlot.get.asInstanceOf[js.Any])
-    if (toImageButtonOptions != null) __obj.updateDynamic("toImageButtonOptions")(toImageButtonOptions.asInstanceOf[js.Any])
-    if (topojsonURL != null) __obj.updateDynamic("topojsonURL")(topojsonURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialConfig]
   }
+  @scala.inline
+  implicit class PartialConfigOps[Self <: PartialConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutosizable(value: Boolean): Self = this.set("autosizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutosizable: Self = this.set("autosizable", js.undefined)
+    @scala.inline
+    def setDisplayModeBar(value: hover | Boolean): Self = this.set("displayModeBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayModeBar: Self = this.set("displayModeBar", js.undefined)
+    @scala.inline
+    def setDisplaylogo(value: Boolean): Self = this.set("displaylogo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplaylogo: Self = this.set("displaylogo", js.undefined)
+    @scala.inline
+    def setDoubleClick(value: resetPlussignautosize | reset | autosize | `false`): Self = this.set("doubleClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleClick: Self = this.set("doubleClick", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setEdits(value: PartialEdits): Self = this.set("edits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdits: Self = this.set("edits", js.undefined)
+    @scala.inline
+    def setFillFrame(value: Boolean): Self = this.set("fillFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillFrame: Self = this.set("fillFrame", js.undefined)
+    @scala.inline
+    def setFrameMargins(value: Double): Self = this.set("frameMargins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameMargins: Self = this.set("frameMargins", js.undefined)
+    @scala.inline
+    def setGlobalTransformsVarargs(value: js.Any*): Self = this.set("globalTransforms", js.Array(value :_*))
+    @scala.inline
+    def setGlobalTransforms(value: js.Array[_]): Self = this.set("globalTransforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalTransforms: Self = this.set("globalTransforms", js.undefined)
+    @scala.inline
+    def setLinkText(value: String): Self = this.set("linkText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkText: Self = this.set("linkText", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLogging(value: Boolean | `0` | `1` | `2`): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setMapboxAccessToken(value: String): Self = this.set("mapboxAccessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapboxAccessToken: Self = this.set("mapboxAccessToken", js.undefined)
+    @scala.inline
+    def setModeBarButtonsVarargs(value: (js.Array[ModeBarButton | ModeBarDefaultButtons])*): Self = this.set("modeBarButtons", js.Array(value :_*))
+    @scala.inline
+    def setModeBarButtons(value: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`): Self = this.set("modeBarButtons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModeBarButtons: Self = this.set("modeBarButtons", js.undefined)
+    @scala.inline
+    def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = this.set("modeBarButtonsToAdd", js.Array(value :_*))
+    @scala.inline
+    def setModeBarButtonsToAdd(value: js.Array[ModeBarButton | ModeBarDefaultButtons]): Self = this.set("modeBarButtonsToAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModeBarButtonsToAdd: Self = this.set("modeBarButtonsToAdd", js.undefined)
+    @scala.inline
+    def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = this.set("modeBarButtonsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = this.set("modeBarButtonsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModeBarButtonsToRemove: Self = this.set("modeBarButtonsToRemove", js.undefined)
+    @scala.inline
+    def setPlotGlPixelRatio(value: Double): Self = this.set("plotGlPixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotGlPixelRatio: Self = this.set("plotGlPixelRatio", js.undefined)
+    @scala.inline
+    def setPlotlyServerURL(value: String): Self = this.set("plotlyServerURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotlyServerURL: Self = this.set("plotlyServerURL", js.undefined)
+    @scala.inline
+    def setQueueLength(value: Double): Self = this.set("queueLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueLength: Self = this.set("queueLength", js.undefined)
+    @scala.inline
+    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setScrollZoom(value: Boolean): Self = this.set("scrollZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollZoom: Self = this.set("scrollZoom", js.undefined)
+    @scala.inline
+    def setSendData(value: Boolean): Self = this.set("sendData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendData: Self = this.set("sendData", js.undefined)
+    @scala.inline
+    def setSetBackground(value: () => String | opaque | transparent): Self = this.set("setBackground", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSetBackground: Self = this.set("setBackground", js.undefined)
+    @scala.inline
+    def setShowAxisDragHandles(value: Boolean): Self = this.set("showAxisDragHandles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAxisDragHandles: Self = this.set("showAxisDragHandles", js.undefined)
+    @scala.inline
+    def setShowAxisRangeEntryBoxes(value: Boolean): Self = this.set("showAxisRangeEntryBoxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAxisRangeEntryBoxes: Self = this.set("showAxisRangeEntryBoxes", js.undefined)
+    @scala.inline
+    def setShowEditInChartStudio(value: Boolean): Self = this.set("showEditInChartStudio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowEditInChartStudio: Self = this.set("showEditInChartStudio", js.undefined)
+    @scala.inline
+    def setShowLink(value: Boolean): Self = this.set("showLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowLink: Self = this.set("showLink", js.undefined)
+    @scala.inline
+    def setShowSendToCloud(value: Boolean): Self = this.set("showSendToCloud", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSendToCloud: Self = this.set("showSendToCloud", js.undefined)
+    @scala.inline
+    def setShowSources(value: Boolean): Self = this.set("showSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSources: Self = this.set("showSources", js.undefined)
+    @scala.inline
+    def setShowTips(value: Boolean): Self = this.set("showTips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTips: Self = this.set("showTips", js.undefined)
+    @scala.inline
+    def setStaticPlot(value: Boolean): Self = this.set("staticPlot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStaticPlot: Self = this.set("staticPlot", js.undefined)
+    @scala.inline
+    def setToImageButtonOptions(value: Partialfilenamestringscal): Self = this.set("toImageButtonOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToImageButtonOptions: Self = this.set("toImageButtonOptions", js.undefined)
+    @scala.inline
+    def setTopojsonURL(value: String): Self = this.set("topojsonURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopojsonURL: Self = this.set("topojsonURL", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait BoundingBox extends js.Object {
 
 object BoundingBox {
   @scala.inline
-  def apply(
-    Height: js.UndefOr[Float] = js.undefined,
-    Left: js.UndefOr[Float] = js.undefined,
-    Top: js.UndefOr[Float] = js.undefined,
-    Width: js.UndefOr[Float] = js.undefined
-  ): BoundingBox = {
+  def apply(): BoundingBox = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Left)) __obj.updateDynamic("Left")(Left.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Top)) __obj.updateDynamic("Top")(Top.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoundingBox]
   }
+  @scala.inline
+  implicit class BoundingBoxOps[Self <: BoundingBox] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Float): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("Height", js.undefined)
+    @scala.inline
+    def setLeft(value: Float): Self = this.set("Left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("Left", js.undefined)
+    @scala.inline
+    def setTop(value: Float): Self = this.set("Top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("Top", js.undefined)
+    @scala.inline
+    def setWidth(value: Float): Self = this.set("Width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("Width", js.undefined)
+  }
+  
 }
 

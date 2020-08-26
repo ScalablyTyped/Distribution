@@ -34,22 +34,46 @@ trait EndpointLocation extends js.Object {
 
 object EndpointLocation {
   @scala.inline
-  def apply(
-    City: string = null,
-    Country: string = null,
-    Latitude: js.UndefOr[double] = js.undefined,
-    Longitude: js.UndefOr[double] = js.undefined,
-    PostalCode: string = null,
-    Region: string = null
-  ): EndpointLocation = {
+  def apply(): EndpointLocation = {
     val __obj = js.Dynamic.literal()
-    if (City != null) __obj.updateDynamic("City")(City.asInstanceOf[js.Any])
-    if (Country != null) __obj.updateDynamic("Country")(Country.asInstanceOf[js.Any])
-    if (!js.isUndefined(Latitude)) __obj.updateDynamic("Latitude")(Latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Longitude)) __obj.updateDynamic("Longitude")(Longitude.get.asInstanceOf[js.Any])
-    if (PostalCode != null) __obj.updateDynamic("PostalCode")(PostalCode.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointLocation]
   }
+  @scala.inline
+  implicit class EndpointLocationOps[Self <: EndpointLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCity(value: string): Self = this.set("City", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("City", js.undefined)
+    @scala.inline
+    def setCountry(value: string): Self = this.set("Country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("Country", js.undefined)
+    @scala.inline
+    def setLatitude(value: double): Self = this.set("Latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("Latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: double): Self = this.set("Longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("Longitude", js.undefined)
+    @scala.inline
+    def setPostalCode(value: string): Self = this.set("PostalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostalCode: Self = this.set("PostalCode", js.undefined)
+    @scala.inline
+    def setRegion(value: string): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+  }
+  
 }
 

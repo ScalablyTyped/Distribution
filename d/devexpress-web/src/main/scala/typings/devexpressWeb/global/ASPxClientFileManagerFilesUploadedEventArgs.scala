@@ -17,15 +17,5 @@ class ASPxClientFileManagerFilesUploadedEventArgs protected ()
     * @param fileNames An array of string values that are the file names.
     */
   def this(folder: String, fileNames: js.Array[String]) = this()
-  /**
-    * Gets an array of uploaded file names.
-    */
-  /* CompleteClass */
-  override var fileNames: js.Array[String] = js.native
-  /**
-    * Gets the path to the folder where files are uploaded.
-    */
-  /* CompleteClass */
-  override var folder: String = js.native
 }
 

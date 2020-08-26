@@ -1,6 +1,6 @@
 package typings.watchify.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.watchify.watchifyStrings.bytes
 import typings.watchify.watchifyStrings.log
 import typings.watchify.watchifyStrings.time

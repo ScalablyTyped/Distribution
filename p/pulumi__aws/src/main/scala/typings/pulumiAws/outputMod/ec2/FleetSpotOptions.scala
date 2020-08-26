@@ -22,16 +22,34 @@ trait FleetSpotOptions extends js.Object {
 
 object FleetSpotOptions {
   @scala.inline
-  def apply(
-    allocationStrategy: String = null,
-    instanceInterruptionBehavior: String = null,
-    instancePoolsToUseCount: js.UndefOr[Double] = js.undefined
-  ): FleetSpotOptions = {
+  def apply(): FleetSpotOptions = {
     val __obj = js.Dynamic.literal()
-    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
-    if (instanceInterruptionBehavior != null) __obj.updateDynamic("instanceInterruptionBehavior")(instanceInterruptionBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(instancePoolsToUseCount)) __obj.updateDynamic("instancePoolsToUseCount")(instancePoolsToUseCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetSpotOptions]
   }
+  @scala.inline
+  implicit class FleetSpotOptionsOps[Self <: FleetSpotOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationStrategy(value: String): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("allocationStrategy", js.undefined)
+    @scala.inline
+    def setInstanceInterruptionBehavior(value: String): Self = this.set("instanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInterruptionBehavior: Self = this.set("instanceInterruptionBehavior", js.undefined)
+    @scala.inline
+    def setInstancePoolsToUseCount(value: Double): Self = this.set("instancePoolsToUseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancePoolsToUseCount: Self = this.set("instancePoolsToUseCount", js.undefined)
+  }
+  
 }
 

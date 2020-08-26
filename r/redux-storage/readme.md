@@ -12,7 +12,7 @@ Persistence layer for redux with flexible backends
 | Keywords           | redux, redux-middleware, fsa, flux-standard-action, flux, immutable, persistent, data, localstorage |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 406953 |
+| # downloads        | 408445 |
 | # stars            | 9 |
 
 ## Links

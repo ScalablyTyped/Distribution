@@ -14,10 +14,26 @@ trait FindingCriteria extends js.Object {
 
 object FindingCriteria {
   @scala.inline
-  def apply(Criterion: Criterion = null): FindingCriteria = {
+  def apply(): FindingCriteria = {
     val __obj = js.Dynamic.literal()
-    if (Criterion != null) __obj.updateDynamic("Criterion")(Criterion.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindingCriteria]
   }
+  @scala.inline
+  implicit class FindingCriteriaOps[Self <: FindingCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCriterion(value: Criterion): Self = this.set("Criterion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriterion: Self = this.set("Criterion", js.undefined)
+  }
+  
 }
 

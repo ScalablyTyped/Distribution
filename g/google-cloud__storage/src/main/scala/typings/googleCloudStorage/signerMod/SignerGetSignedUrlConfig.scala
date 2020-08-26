@@ -12,40 +12,69 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SignerGetSignedUrlConfig extends js.Object {
-  var cname: js.UndefOr[String] = js.undefined
-  var contentMd5: js.UndefOr[String] = js.undefined
-  var contentType: js.UndefOr[String] = js.undefined
-  var expires: String | Double | Date
-  var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
-  var method: GET | PUT | DELETE | POST
-  var queryParams: js.UndefOr[Query] = js.undefined
-  var version: js.UndefOr[v2 | v4] = js.undefined
-  var virtualHostedStyle: js.UndefOr[Boolean] = js.undefined
+  var cname: js.UndefOr[String] = js.native
+  var contentMd5: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.native
+  var expires: String | Double | Date = js.native
+  var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+  var method: GET | PUT | DELETE | POST = js.native
+  var queryParams: js.UndefOr[Query] = js.native
+  var version: js.UndefOr[v2 | v4] = js.native
+  var virtualHostedStyle: js.UndefOr[Boolean] = js.native
 }
 
 object SignerGetSignedUrlConfig {
   @scala.inline
-  def apply(
-    expires: String | Double | Date,
-    method: GET | PUT | DELETE | POST,
-    cname: String = null,
-    contentMd5: String = null,
-    contentType: String = null,
-    extensionHeaders: OutgoingHttpHeaders = null,
-    queryParams: Query = null,
-    version: v2 | v4 = null,
-    virtualHostedStyle: js.UndefOr[Boolean] = js.undefined
-  ): SignerGetSignedUrlConfig = {
+  def apply(expires: String | Double | Date, method: GET | PUT | DELETE | POST): SignerGetSignedUrlConfig = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    if (cname != null) __obj.updateDynamic("cname")(cname.asInstanceOf[js.Any])
-    if (contentMd5 != null) __obj.updateDynamic("contentMd5")(contentMd5.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (extensionHeaders != null) __obj.updateDynamic("extensionHeaders")(extensionHeaders.asInstanceOf[js.Any])
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(virtualHostedStyle)) __obj.updateDynamic("virtualHostedStyle")(virtualHostedStyle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignerGetSignedUrlConfig]
   }
+  @scala.inline
+  implicit class SignerGetSignedUrlConfigOps[Self <: SignerGetSignedUrlConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpires(value: String | Double | Date): Self = this.set("expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMethod(value: GET | PUT | DELETE | POST): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCname(value: String): Self = this.set("cname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCname: Self = this.set("cname", js.undefined)
+    @scala.inline
+    def setContentMd5(value: String): Self = this.set("contentMd5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMd5: Self = this.set("contentMd5", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setExtensionHeaders(value: OutgoingHttpHeaders): Self = this.set("extensionHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensionHeaders: Self = this.set("extensionHeaders", js.undefined)
+    @scala.inline
+    def setQueryParams(value: Query): Self = this.set("queryParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryParams: Self = this.set("queryParams", js.undefined)
+    @scala.inline
+    def setVersion(value: v2 | v4): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVirtualHostedStyle(value: Boolean): Self = this.set("virtualHostedStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualHostedStyle: Self = this.set("virtualHostedStyle", js.undefined)
+  }
+  
 }
 

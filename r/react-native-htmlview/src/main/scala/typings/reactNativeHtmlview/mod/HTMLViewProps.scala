@@ -13,41 +13,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HTMLViewProps extends js.Object {
   /*
     * The component used for rendering HTML element nodes
     */
-  var NodeComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  var NodeComponent: js.UndefOr[ComponentType[js.Object]] = js.native
   /*
     * The root wrapper component
     */
-  var RootComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  var RootComponent: js.UndefOr[ComponentType[js.Object]] = js.native
   /*
     * The component used for rendering text element nodes
     */
-  var TextComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  var TextComponent: js.UndefOr[ComponentType[js.Object]] = js.native
   /**
     *  When explicitly false, effectively sets paragraphBreak and lineBreak to null
     */
-  var addLineBreaks: js.UndefOr[Boolean] = js.undefined
+  var addLineBreaks: js.UndefOr[Boolean] = js.native
   /**
     * Text which is rendered before every li inside a ul
     */
-  var bullet: js.UndefOr[String] = js.undefined
+  var bullet: js.UndefOr[String] = js.native
   /**
     * Text which appears after text elements which create a new line (br, headings)
     */
-  var lineBreak: js.UndefOr[String] = js.undefined
+  var lineBreak: js.UndefOr[String] = js.native
   /*
     * Properties for the NodeComponent, can be used independently from NodeComponent
     */
-  var nodeComponentProps: js.UndefOr[TextProperties] = js.undefined
-  var onLinkLongPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
-  var onLinkPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
+  var nodeComponentProps: js.UndefOr[TextProperties] = js.native
+  var onLinkLongPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.native
+  var onLinkPress: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.native
   /**
     * Text which appears after every p element
     */
-  var paragraphBreak: js.UndefOr[String] = js.undefined
+  var paragraphBreak: js.UndefOr[String] = js.native
   /**
     *
     * A custom function to render HTML nodes however you see fit. If the function returns undefined (not null), the
@@ -72,57 +73,100 @@ trait HTMLViewProps extends js.Object {
       /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode], 
       ReactNode
     ]
-  ] = js.undefined
+  ] = js.native
   /*
     * Properties for the RootComponent, can be used independently from RootComponent
     */
-  var rootComponentProps: js.UndefOr[ViewProperties] = js.undefined
-  var stylesheet: js.UndefOr[StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]] = js.undefined
+  var rootComponentProps: js.UndefOr[ViewProperties] = js.native
+  var stylesheet: js.UndefOr[StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]] = js.native
   /*
     * Properties for the TextComponent, can be used independently from TextComponent
     */
-  var textComponentProps: js.UndefOr[TextProperties] = js.undefined
+  var textComponentProps: js.UndefOr[TextProperties] = js.native
   /**
     * a string of HTML content to render
     */
-  var value: String
+  var value: String = js.native
 }
 
 object HTMLViewProps {
   @scala.inline
-  def apply(
-    value: String,
-    NodeComponent: ComponentType[js.Object] = null,
-    RootComponent: ComponentType[js.Object] = null,
-    TextComponent: ComponentType[js.Object] = null,
-    addLineBreaks: js.UndefOr[Boolean] = js.undefined,
-    bullet: String = null,
-    lineBreak: String = null,
-    nodeComponentProps: TextProperties = null,
-    onLinkLongPress: /* url */ String => Unit = null,
-    onLinkPress: /* url */ String => Unit = null,
-    paragraphBreak: String = null,
-    renderNode: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode]) => ReactNode = null,
-    rootComponentProps: ViewProperties = null,
-    stylesheet: StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]] = null,
-    textComponentProps: TextProperties = null
-  ): HTMLViewProps = {
+  def apply(value: String): HTMLViewProps = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (NodeComponent != null) __obj.updateDynamic("NodeComponent")(NodeComponent.asInstanceOf[js.Any])
-    if (RootComponent != null) __obj.updateDynamic("RootComponent")(RootComponent.asInstanceOf[js.Any])
-    if (TextComponent != null) __obj.updateDynamic("TextComponent")(TextComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(addLineBreaks)) __obj.updateDynamic("addLineBreaks")(addLineBreaks.get.asInstanceOf[js.Any])
-    if (bullet != null) __obj.updateDynamic("bullet")(bullet.asInstanceOf[js.Any])
-    if (lineBreak != null) __obj.updateDynamic("lineBreak")(lineBreak.asInstanceOf[js.Any])
-    if (nodeComponentProps != null) __obj.updateDynamic("nodeComponentProps")(nodeComponentProps.asInstanceOf[js.Any])
-    if (onLinkLongPress != null) __obj.updateDynamic("onLinkLongPress")(js.Any.fromFunction1(onLinkLongPress))
-    if (onLinkPress != null) __obj.updateDynamic("onLinkPress")(js.Any.fromFunction1(onLinkPress))
-    if (paragraphBreak != null) __obj.updateDynamic("paragraphBreak")(paragraphBreak.asInstanceOf[js.Any])
-    if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction5(renderNode))
-    if (rootComponentProps != null) __obj.updateDynamic("rootComponentProps")(rootComponentProps.asInstanceOf[js.Any])
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
-    if (textComponentProps != null) __obj.updateDynamic("textComponentProps")(textComponentProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLViewProps]
   }
+  @scala.inline
+  implicit class HTMLViewPropsOps[Self <: HTMLViewProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeComponent(value: ComponentType[js.Object]): Self = this.set("NodeComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeComponent: Self = this.set("NodeComponent", js.undefined)
+    @scala.inline
+    def setRootComponent(value: ComponentType[js.Object]): Self = this.set("RootComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootComponent: Self = this.set("RootComponent", js.undefined)
+    @scala.inline
+    def setTextComponent(value: ComponentType[js.Object]): Self = this.set("TextComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextComponent: Self = this.set("TextComponent", js.undefined)
+    @scala.inline
+    def setAddLineBreaks(value: Boolean): Self = this.set("addLineBreaks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddLineBreaks: Self = this.set("addLineBreaks", js.undefined)
+    @scala.inline
+    def setBullet(value: String): Self = this.set("bullet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBullet: Self = this.set("bullet", js.undefined)
+    @scala.inline
+    def setLineBreak(value: String): Self = this.set("lineBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineBreak: Self = this.set("lineBreak", js.undefined)
+    @scala.inline
+    def setNodeComponentProps(value: TextProperties): Self = this.set("nodeComponentProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeComponentProps: Self = this.set("nodeComponentProps", js.undefined)
+    @scala.inline
+    def setOnLinkLongPress(value: /* url */ String => Unit): Self = this.set("onLinkLongPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLinkLongPress: Self = this.set("onLinkLongPress", js.undefined)
+    @scala.inline
+    def setOnLinkPress(value: /* url */ String => Unit): Self = this.set("onLinkPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLinkPress: Self = this.set("onLinkPress", js.undefined)
+    @scala.inline
+    def setParagraphBreak(value: String): Self = this.set("paragraphBreak", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphBreak: Self = this.set("paragraphBreak", js.undefined)
+    @scala.inline
+    def setRenderNode(
+      value: (/* node */ HTMLViewNode, /* index */ Double, /* siblings */ HTMLViewNode, /* parent */ HTMLViewNode, /* defaultRenderer */ js.Function2[/* node */ HTMLViewNode, /* parent */ HTMLViewNode, ReactNode]) => ReactNode
+    ): Self = this.set("renderNode", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteRenderNode: Self = this.set("renderNode", js.undefined)
+    @scala.inline
+    def setRootComponentProps(value: ViewProperties): Self = this.set("rootComponentProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootComponentProps: Self = this.set("rootComponentProps", js.undefined)
+    @scala.inline
+    def setStylesheet(value: StringDictionary[StyleProp[ViewStyle | TextStyle | ImageStyle]]): Self = this.set("stylesheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStylesheet: Self = this.set("stylesheet", js.undefined)
+    @scala.inline
+    def setTextComponentProps(value: TextProperties): Self = this.set("textComponentProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextComponentProps: Self = this.set("textComponentProps", js.undefined)
+  }
+  
 }
 

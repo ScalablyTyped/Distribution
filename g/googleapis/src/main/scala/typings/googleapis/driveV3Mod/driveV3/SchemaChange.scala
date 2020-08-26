@@ -50,26 +50,54 @@ trait SchemaChange extends js.Object {
 
 object SchemaChange {
   @scala.inline
-  def apply(
-    file: SchemaFile = null,
-    fileId: String = null,
-    kind: String = null,
-    removed: js.UndefOr[Boolean] = js.undefined,
-    teamDrive: SchemaTeamDrive = null,
-    teamDriveId: String = null,
-    time: String = null,
-    `type`: String = null
-  ): SchemaChange = {
+  def apply(): SchemaChange = {
     val __obj = js.Dynamic.literal()
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (fileId != null) __obj.updateDynamic("fileId")(fileId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.get.asInstanceOf[js.Any])
-    if (teamDrive != null) __obj.updateDynamic("teamDrive")(teamDrive.asInstanceOf[js.Any])
-    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChange]
   }
+  @scala.inline
+  implicit class SchemaChangeOps[Self <: SchemaChange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFile(value: SchemaFile): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFileId(value: String): Self = this.set("fileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileId: Self = this.set("fileId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRemoved(value: Boolean): Self = this.set("removed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoved: Self = this.set("removed", js.undefined)
+    @scala.inline
+    def setTeamDrive(value: SchemaTeamDrive): Self = this.set("teamDrive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamDrive: Self = this.set("teamDrive", js.undefined)
+    @scala.inline
+    def setTeamDriveId(value: String): Self = this.set("teamDriveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamDriveId: Self = this.set("teamDriveId", js.undefined)
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

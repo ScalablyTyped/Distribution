@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  unit  :string,   step  :number} & @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoints> */
+/* Inlined std.Partial<{  unit :string,   step :number} & @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoints> */
 @js.native
 trait BreakpointsOptions extends js.Object {
   var between: js.UndefOr[js.Function2[/* start */ Breakpoint, /* end */ Breakpoint, String]] = js.native
@@ -20,28 +20,60 @@ trait BreakpointsOptions extends js.Object {
 
 object BreakpointsOptions {
   @scala.inline
-  def apply(
-    between: (/* start */ Breakpoint, /* end */ Breakpoint) => String = null,
-    down: /* key */ Breakpoint | Double => String = null,
-    keys: js.Array[Breakpoint] = null,
-    only: /* key */ Breakpoint => String = null,
-    step: js.UndefOr[Double] = js.undefined,
-    unit: String = null,
-    up: /* key */ Breakpoint | Double => String = null,
-    values: BreakpointValues = null,
-    width: /* key */ Breakpoint => Double = null
-  ): BreakpointsOptions = {
+  def apply(): BreakpointsOptions = {
     val __obj = js.Dynamic.literal()
-    if (between != null) __obj.updateDynamic("between")(js.Any.fromFunction2(between))
-    if (down != null) __obj.updateDynamic("down")(js.Any.fromFunction1(down))
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(js.Any.fromFunction1(only))
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (up != null) __obj.updateDynamic("up")(js.Any.fromFunction1(up))
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(js.Any.fromFunction1(width))
     __obj.asInstanceOf[BreakpointsOptions]
   }
+  @scala.inline
+  implicit class BreakpointsOptionsOps[Self <: BreakpointsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBetween(value: (/* start */ Breakpoint, /* end */ Breakpoint) => String): Self = this.set("between", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBetween: Self = this.set("between", js.undefined)
+    @scala.inline
+    def setDown(value: /* key */ Breakpoint | Double => String): Self = this.set("down", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDown: Self = this.set("down", js.undefined)
+    @scala.inline
+    def setKeysVarargs(value: Breakpoint*): Self = this.set("keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: js.Array[Breakpoint]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setOnly(value: /* key */ Breakpoint => String): Self = this.set("only", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnly: Self = this.set("only", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setUp(value: /* key */ Breakpoint | Double => String): Self = this.set("up", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUp: Self = this.set("up", js.undefined)
+    @scala.inline
+    def setValues(value: BreakpointValues): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+    @scala.inline
+    def setWidth(value: /* key */ Breakpoint => Double): Self = this.set("width", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

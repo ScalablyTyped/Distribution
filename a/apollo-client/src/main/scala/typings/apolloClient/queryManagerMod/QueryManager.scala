@@ -64,6 +64,12 @@ class QueryManager[TStore] protected () extends js.Object {
   def checkInFlight(queryId: String): Boolean = js.native
   def clearStore(): js.Promise[Unit] = js.native
   def fetchQuery[T](queryId: String, options: WatchQueryOptions[OperationVariables]): js.Promise[FetchResult[T, Record[String, _], Record[String, _]]] = js.native
+  def fetchQuery[T](
+    queryId: String,
+    options: WatchQueryOptions[OperationVariables],
+    fetchType: js.UndefOr[scala.Nothing],
+    fetchMoreForQueryId: String
+  ): js.Promise[FetchResult[T, Record[String, _], Record[String, _]]] = js.native
   def fetchQuery[T](queryId: String, options: WatchQueryOptions[OperationVariables], fetchType: FetchType): js.Promise[FetchResult[T, Record[String, _], Record[String, _]]] = js.native
   def fetchQuery[T](
     queryId: String,

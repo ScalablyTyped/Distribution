@@ -33,12 +33,34 @@ trait SchemaService extends js.Object {
 
 object SchemaService {
   @scala.inline
-  def apply(id: String = null, name: String = null, split: SchemaTrafficSplit = null): SchemaService = {
+  def apply(): SchemaService = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaService]
   }
+  @scala.inline
+  implicit class SchemaServiceOps[Self <: SchemaService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSplit(value: SchemaTrafficSplit): Self = this.set("split", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplit: Self = this.set("split", js.undefined)
+  }
+  
 }
 

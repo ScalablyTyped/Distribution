@@ -80,6 +80,12 @@ trait WorkspaceConfiguration
     *    - configuration to workspace folder when [WorkspaceConfiguration](#WorkspaceConfiguration) is not scoped to a resource.
     */
   def update(section: String, value: js.Any): Thenable[Unit] = js.native
+  def update(
+    section: String,
+    value: js.Any,
+    configurationTarget: js.UndefOr[scala.Nothing],
+    overrideInLanguage: Boolean
+  ): Thenable[Unit] = js.native
   def update(section: String, value: js.Any, configurationTarget: Boolean): Thenable[Unit] = js.native
   def update(section: String, value: js.Any, configurationTarget: Boolean, overrideInLanguage: Boolean): Thenable[Unit] = js.native
   def update(section: String, value: js.Any, configurationTarget: ConfigurationTarget): Thenable[Unit] = js.native

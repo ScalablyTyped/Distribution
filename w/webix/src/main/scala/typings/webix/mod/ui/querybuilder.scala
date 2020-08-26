@@ -29,6 +29,7 @@ class querybuilder ()
   def mapEvent(map: js.Any): Unit = js.native
   def setValue(value: js.Any): Unit = js.native
   def toSQL(): js.Any = js.native
+  def toSQL(config: js.UndefOr[scala.Nothing], rules: js.Any): js.Any = js.native
   def toSQL(config: js.Any): js.Any = js.native
   def toSQL(config: js.Any, rules: js.Any): js.Any = js.native
   def unblockEvent(): Unit = js.native

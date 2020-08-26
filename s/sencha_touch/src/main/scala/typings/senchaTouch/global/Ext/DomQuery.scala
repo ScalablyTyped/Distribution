@@ -55,6 +55,7 @@ object DomQuery extends js.Object {
     * @returns Boolean
     */
   def is(): Boolean = js.native
+  def is(el: js.UndefOr[scala.Nothing], selector: java.lang.String): Boolean = js.native
   def is(el: js.Any): Boolean = js.native
   def is(el: js.Any, selector: java.lang.String): Boolean = js.native
   /** [Method] Selects a group of elements
@@ -63,6 +64,7 @@ object DomQuery extends js.Object {
     * @returns HTMLElement[] An Array of DOM elements which match the selector. If there are no matches, and empty Array is returned.
     */
   def select(): typings.senchaTouch.Ext.Array = js.native
+  def select(selector: js.UndefOr[scala.Nothing], root: js.Any): typings.senchaTouch.Ext.Array = js.native
   def select(selector: java.lang.String): typings.senchaTouch.Ext.Array = js.native
   def select(selector: java.lang.String, root: js.Any): typings.senchaTouch.Ext.Array = js.native
   /** [Method] Selects a single element
@@ -71,6 +73,7 @@ object DomQuery extends js.Object {
     * @returns HTMLElement The DOM element which matched the selector.
     */
   def selectNode(): HTMLElement = js.native
+  def selectNode(selector: js.UndefOr[scala.Nothing], root: js.Any): HTMLElement = js.native
   def selectNode(selector: java.lang.String): HTMLElement = js.native
   def selectNode(selector: java.lang.String, root: js.Any): HTMLElement = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

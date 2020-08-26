@@ -34,9 +34,13 @@ class Counter protected () extends _Metric_ {
   	 * @param timestamp Timestamp to associate the time series with
   	 */
   def inc(labels: labelValues): Unit = js.native
+  def inc(labels: labelValues, value: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
+  def inc(labels: labelValues, value: js.UndefOr[scala.Nothing], timestamp: Date): Unit = js.native
   def inc(labels: labelValues, value: Double): Unit = js.native
   def inc(labels: labelValues, value: Double, timestamp: Double): Unit = js.native
   def inc(labels: labelValues, value: Double, timestamp: Date): Unit = js.native
+  def inc(value: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
+  def inc(value: js.UndefOr[scala.Nothing], timestamp: Date): Unit = js.native
   def inc(value: Double): Unit = js.native
   def inc(value: Double, timestamp: Double): Unit = js.native
   def inc(value: Double, timestamp: Date): Unit = js.native
@@ -68,6 +72,8 @@ object Counter extends js.Object {
     		 * @param timestamp Timestamp to associate the time series with
     		 */
     def inc(): Unit = js.native
+    def inc(value: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
+    def inc(value: js.UndefOr[scala.Nothing], timestamp: Date): Unit = js.native
     def inc(value: Double): Unit = js.native
     def inc(value: Double, timestamp: Double): Unit = js.native
     def inc(value: Double, timestamp: Date): Unit = js.native

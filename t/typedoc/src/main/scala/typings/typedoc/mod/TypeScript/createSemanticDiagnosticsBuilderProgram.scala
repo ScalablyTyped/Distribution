@@ -18,6 +18,12 @@ object createSemanticDiagnosticsBuilderProgram extends js.Object {
     * Create the builder to manage semantic diagnostics and cache them
     */
   def apply(newProgram: Program, host: BuilderProgramHost): SemanticDiagnosticsBuilderProgram = js.native
+  def apply(
+    newProgram: Program,
+    host: BuilderProgramHost,
+    oldProgram: js.UndefOr[scala.Nothing],
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): SemanticDiagnosticsBuilderProgram = js.native
   def apply(newProgram: Program, host: BuilderProgramHost, oldProgram: SemanticDiagnosticsBuilderProgram): SemanticDiagnosticsBuilderProgram = js.native
   def apply(
     newProgram: Program,

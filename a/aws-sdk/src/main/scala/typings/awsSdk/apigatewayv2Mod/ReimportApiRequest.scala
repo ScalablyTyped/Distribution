@@ -26,16 +26,34 @@ trait ReimportApiRequest extends js.Object {
 
 object ReimportApiRequest {
   @scala.inline
-  def apply(
-    ApiId: string,
-    Body: string,
-    Basepath: string = null,
-    FailOnWarnings: js.UndefOr[boolean] = js.undefined
-  ): ReimportApiRequest = {
+  def apply(ApiId: string, Body: string): ReimportApiRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any])
-    if (Basepath != null) __obj.updateDynamic("Basepath")(Basepath.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailOnWarnings)) __obj.updateDynamic("FailOnWarnings")(FailOnWarnings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReimportApiRequest]
   }
+  @scala.inline
+  implicit class ReimportApiRequestOps[Self <: ReimportApiRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiId(value: string): Self = this.set("ApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBasepath(value: string): Self = this.set("Basepath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasepath: Self = this.set("Basepath", js.undefined)
+    @scala.inline
+    def setFailOnWarnings(value: boolean): Self = this.set("FailOnWarnings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailOnWarnings: Self = this.set("FailOnWarnings", js.undefined)
+  }
+  
 }
 

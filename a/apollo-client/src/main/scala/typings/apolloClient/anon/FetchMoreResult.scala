@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FetchMoreResult[TData, TVariables] extends js.Object {
-  var fetchMoreResult: js.UndefOr[TData] = js.undefined
-  var variables: js.UndefOr[TVariables] = js.undefined
+  var fetchMoreResult: js.UndefOr[TData] = js.native
+  var variables: js.UndefOr[TVariables] = js.native
 }
 
 object FetchMoreResult {
   @scala.inline
-  def apply[TData, TVariables](fetchMoreResult: TData = null, variables: TVariables = null): FetchMoreResult[TData, TVariables] = {
+  def apply[TData, TVariables](): FetchMoreResult[TData, TVariables] = {
     val __obj = js.Dynamic.literal()
-    if (fetchMoreResult != null) __obj.updateDynamic("fetchMoreResult")(fetchMoreResult.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[FetchMoreResult[TData, TVariables]]
   }
+  @scala.inline
+  implicit class FetchMoreResultOps[Self <: FetchMoreResult[_, _], TData, TVariables] (val x: Self with (FetchMoreResult[TData, TVariables])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFetchMoreResult(value: TData): Self = this.set("fetchMoreResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchMoreResult: Self = this.set("fetchMoreResult", js.undefined)
+    @scala.inline
+    def setVariables(value: TVariables): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

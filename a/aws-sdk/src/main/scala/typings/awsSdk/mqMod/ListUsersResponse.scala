@@ -26,18 +26,40 @@ trait ListUsersResponse extends js.Object {
 
 object ListUsersResponse {
   @scala.inline
-  def apply(
-    BrokerId: string = null,
-    MaxResults: js.UndefOr[integerMin5Max100] = js.undefined,
-    NextToken: string = null,
-    Users: listOfUserSummary = null
-  ): ListUsersResponse = {
+  def apply(): ListUsersResponse = {
     val __obj = js.Dynamic.literal()
-    if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersResponse]
   }
+  @scala.inline
+  implicit class ListUsersResponseOps[Self <: ListUsersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    @scala.inline
+    def setMaxResults(value: integerMin5Max100): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: UserSummary*): Self = this.set("Users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: listOfUserSummary): Self = this.set("Users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("Users", js.undefined)
+  }
+  
 }
 

@@ -11,10 +11,26 @@ trait PutObjectAclOutput extends js.Object {
 
 object PutObjectAclOutput {
   @scala.inline
-  def apply(RequestCharged: RequestCharged = null): PutObjectAclOutput = {
+  def apply(): PutObjectAclOutput = {
     val __obj = js.Dynamic.literal()
-    if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutObjectAclOutput]
   }
+  @scala.inline
+  implicit class PutObjectAclOutputOps[Self <: PutObjectAclOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+  }
+  
 }
 

@@ -30,16 +30,36 @@ trait SchemaModifyAckDeadlineRequest extends js.Object {
 
 object SchemaModifyAckDeadlineRequest {
   @scala.inline
-  def apply(
-    ackDeadlineSeconds: js.UndefOr[Double] = js.undefined,
-    ackId: String = null,
-    ackIds: js.Array[String] = null
-  ): SchemaModifyAckDeadlineRequest = {
+  def apply(): SchemaModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.get.asInstanceOf[js.Any])
-    if (ackId != null) __obj.updateDynamic("ackId")(ackId.asInstanceOf[js.Any])
-    if (ackIds != null) __obj.updateDynamic("ackIds")(ackIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModifyAckDeadlineRequest]
   }
+  @scala.inline
+  implicit class SchemaModifyAckDeadlineRequestOps[Self <: SchemaModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAckDeadlineSeconds(value: Double): Self = this.set("ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAckDeadlineSeconds: Self = this.set("ackDeadlineSeconds", js.undefined)
+    @scala.inline
+    def setAckId(value: String): Self = this.set("ackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAckId: Self = this.set("ackId", js.undefined)
+    @scala.inline
+    def setAckIdsVarargs(value: String*): Self = this.set("ackIds", js.Array(value :_*))
+    @scala.inline
+    def setAckIds(value: js.Array[String]): Self = this.set("ackIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAckIds: Self = this.set("ackIds", js.undefined)
+  }
+  
 }
 

@@ -41,6 +41,7 @@ class Object_ () extends BaseObject {
   def this(attributes: js.Array[String]) = this()
   def this(className: String) = this()
   def this(attributes: js.Array[String], options: js.Any) = this()
+  def this(className: js.UndefOr[scala.Nothing], options: js.Any) = this()
   def this(className: String, options: js.Any) = this()
   var attributes: js.Any = js.native
   var changed: Boolean = js.native
@@ -77,7 +78,11 @@ class Object_ () extends BaseObject {
   def relation(attr: String): Relation = js.native
   def remove(attr: String, item: js.Any): js.Any = js.native
   def save[T](): Promise[T] = js.native
+  def save[T](options: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: js.Any): Promise[T] = js.native
+  def save[T](options: js.UndefOr[scala.Nothing], arg2: js.Any): Promise[T] = js.native
+  def save[T](options: js.UndefOr[scala.Nothing], arg2: js.Any, arg3: js.Any): Promise[T] = js.native
   def save[T](options: SaveOptions): Promise[T] = js.native
+  def save[T](options: SaveOptions, arg2: js.UndefOr[scala.Nothing], arg3: js.Any): Promise[T] = js.native
   def save[T](options: SaveOptions, arg2: js.Any): Promise[T] = js.native
   def save[T](options: SaveOptions, arg2: js.Any, arg3: js.Any): Promise[T] = js.native
   def set(key: String, value: js.Any): Boolean = js.native

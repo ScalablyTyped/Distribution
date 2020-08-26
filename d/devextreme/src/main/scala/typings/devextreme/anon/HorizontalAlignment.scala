@@ -9,36 +9,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HorizontalAlignment extends js.Object {
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  var margin: js.UndefOr[Bottom] = js.undefined
-  var placeholderSize: js.UndefOr[Double] = js.undefined
-  var subtitle: js.UndefOr[Font | String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+  var margin: js.UndefOr[Bottom] = js.native
+  var placeholderSize: js.UndefOr[Double] = js.native
+  var subtitle: js.UndefOr[Font | String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var verticalAlignment: js.UndefOr[bottom | top] = js.native
 }
 
 object HorizontalAlignment {
   @scala.inline
-  def apply(
-    font: typings.devextreme.mod.DevExpress.viz.Font = null,
-    horizontalAlignment: center | left | right = null,
-    margin: Bottom = null,
-    placeholderSize: js.UndefOr[Double] = js.undefined,
-    subtitle: Font | String = null,
-    text: String = null,
-    verticalAlignment: bottom | top = null
-  ): HorizontalAlignment = {
+  def apply(): HorizontalAlignment = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(placeholderSize)) __obj.updateDynamic("placeholderSize")(placeholderSize.get.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalAlignment]
   }
+  @scala.inline
+  implicit class HorizontalAlignmentOps[Self <: HorizontalAlignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(value: center | left | right): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setMargin(value: Bottom): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setPlaceholderSize(value: Double): Self = this.set("placeholderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderSize: Self = this.set("placeholderSize", js.undefined)
+    @scala.inline
+    def setSubtitle(value: Font | String): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: bottom | top): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+  }
+  
 }
 

@@ -11,7 +11,7 @@ trait SubscribeInput extends js.Object {
     */
   var Attributes: js.UndefOr[SubscriptionAttributesMap] = js.native
   /**
-    * The endpoint that you want to receive notifications. Endpoints vary by protocol:   For the http protocol, the endpoint is an URL beginning with http://    For the https protocol, the endpoint is a URL beginning with https://    For the email protocol, the endpoint is an email address   For the email-json protocol, the endpoint is an email address   For the sms protocol, the endpoint is a phone number of an SMS-enabled device   For the sqs protocol, the endpoint is the ARN of an Amazon SQS queue   For the application protocol, the endpoint is the EndpointArn of a mobile app and device.   For the lambda protocol, the endpoint is the ARN of an Amazon Lambda function.  
+    * The endpoint that you want to receive notifications. Endpoints vary by protocol:   For the http protocol, the (public) endpoint is a URL beginning with http://    For the https protocol, the (public) endpoint is a URL beginning with https://    For the email protocol, the endpoint is an email address   For the email-json protocol, the endpoint is an email address   For the sms protocol, the endpoint is a phone number of an SMS-enabled device   For the sqs protocol, the endpoint is the ARN of an Amazon SQS queue   For the application protocol, the endpoint is the EndpointArn of a mobile app and device.   For the lambda protocol, the endpoint is the ARN of an Amazon Lambda function.  
     */
   var Endpoint: js.UndefOr[endpoint] = js.native
   /**
@@ -19,7 +19,7 @@ trait SubscribeInput extends js.Object {
     */
   var Protocol: protocol = js.native
   /**
-    * Sets whether the response from the Subscribe request includes the subscription ARN, even if the subscription is not yet confirmed.   If you have the subscription ARN returned, the response includes the ARN in all cases, even if the subscription is not yet confirmed.   If you don't have the subscription ARN returned, in addition to the ARN for confirmed subscriptions, the response also includes the pending subscription ARN value for subscriptions that aren't yet confirmed. A subscription becomes confirmed when the subscriber calls the ConfirmSubscription action with a confirmation token.   If you set this parameter to true, . The default value is false.
+    * Sets whether the response from the Subscribe request includes the subscription ARN, even if the subscription is not yet confirmed.   If you set this parameter to true, the response includes the ARN in all cases, even if the subscription is not yet confirmed. In addition to the ARN for confirmed subscriptions, the response also includes the pending subscription ARN value for subscriptions that aren't yet confirmed. A subscription becomes confirmed when the subscriber calls the ConfirmSubscription action with a confirmation token.    The default value is false.
     */
   var ReturnSubscriptionArn: js.UndefOr[Boolean] = js.native
   /**
@@ -30,18 +30,38 @@ trait SubscribeInput extends js.Object {
 
 object SubscribeInput {
   @scala.inline
-  def apply(
-    Protocol: protocol,
-    TopicArn: topicARN,
-    Attributes: SubscriptionAttributesMap = null,
-    Endpoint: endpoint = null,
-    ReturnSubscriptionArn: js.UndefOr[Boolean] = js.undefined
-  ): SubscribeInput = {
+  def apply(Protocol: protocol, TopicArn: topicARN): SubscribeInput = {
     val __obj = js.Dynamic.literal(Protocol = Protocol.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReturnSubscriptionArn)) __obj.updateDynamic("ReturnSubscriptionArn")(ReturnSubscriptionArn.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeInput]
   }
+  @scala.inline
+  implicit class SubscribeInputOps[Self <: SubscribeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProtocol(value: protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributes(value: SubscriptionAttributesMap): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setEndpoint(value: endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setReturnSubscriptionArn(value: Boolean): Self = this.set("ReturnSubscriptionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnSubscriptionArn: Self = this.set("ReturnSubscriptionArn", js.undefined)
+  }
+  
 }
 

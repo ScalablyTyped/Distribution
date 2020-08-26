@@ -18,11 +18,32 @@ trait ListCertificatesResponse extends js.Object {
 
 object ListCertificatesResponse {
   @scala.inline
-  def apply(CertificateSummaryList: CertificateSummaryList = null, NextToken: NextToken = null): ListCertificatesResponse = {
+  def apply(): ListCertificatesResponse = {
     val __obj = js.Dynamic.literal()
-    if (CertificateSummaryList != null) __obj.updateDynamic("CertificateSummaryList")(CertificateSummaryList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCertificatesResponse]
   }
+  @scala.inline
+  implicit class ListCertificatesResponseOps[Self <: ListCertificatesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateSummaryListVarargs(value: CertificateSummary*): Self = this.set("CertificateSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setCertificateSummaryList(value: CertificateSummaryList): Self = this.set("CertificateSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateSummaryList: Self = this.set("CertificateSummaryList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

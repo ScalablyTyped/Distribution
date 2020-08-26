@@ -28,6 +28,7 @@ class ResourceAccountactiveadsummaries protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
   def get(callback: BodyResponseCallback[SchemaAccountActiveAdSummary]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
   def get(params: ParamsResourceAccountactiveadsummariesGet): GaxiosPromise[SchemaAccountActiveAdSummary] = js.native
   def get(
     params: ParamsResourceAccountactiveadsummariesGet,

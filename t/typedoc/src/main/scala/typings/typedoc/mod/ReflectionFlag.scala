@@ -20,6 +20,7 @@ object ReflectionFlag extends js.Object {
   /* 1 */ val Private: typings.typedoc.abstractMod.ReflectionFlag.Private with Double = js.native
   /* 2 */ val Protected: typings.typedoc.abstractMod.ReflectionFlag.Protected with Double = js.native
   /* 4 */ val Public: typings.typedoc.abstractMod.ReflectionFlag.Public with Double = js.native
+  /* 16384 */ val Readonly: typings.typedoc.abstractMod.ReflectionFlag.Readonly with Double = js.native
   /* 512 */ val Rest: typings.typedoc.abstractMod.ReflectionFlag.Rest with Double = js.native
   /* 8 */ val Static: typings.typedoc.abstractMod.ReflectionFlag.Static with Double = js.native
   @JSBracketAccess

@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FitBoundsOptions extends js.Object {
-  var fitBoundsOptions: js.UndefOr[typings.mapboxGl.mod.FitBoundsOptions] = js.undefined
-  var positionOptions: js.UndefOr[PositionOptions] = js.undefined
-  var showAccuracyCircle: js.UndefOr[Boolean] = js.undefined
-  var showUserLocation: js.UndefOr[Boolean] = js.undefined
-  var trackUserLocation: js.UndefOr[Boolean] = js.undefined
+  var fitBoundsOptions: js.UndefOr[typings.mapboxGl.mod.FitBoundsOptions] = js.native
+  var positionOptions: js.UndefOr[PositionOptions] = js.native
+  var showAccuracyCircle: js.UndefOr[Boolean] = js.native
+  var showUserLocation: js.UndefOr[Boolean] = js.native
+  var trackUserLocation: js.UndefOr[Boolean] = js.native
 }
 
 object FitBoundsOptions {
   @scala.inline
-  def apply(
-    fitBoundsOptions: typings.mapboxGl.mod.FitBoundsOptions = null,
-    positionOptions: PositionOptions = null,
-    showAccuracyCircle: js.UndefOr[Boolean] = js.undefined,
-    showUserLocation: js.UndefOr[Boolean] = js.undefined,
-    trackUserLocation: js.UndefOr[Boolean] = js.undefined
-  ): FitBoundsOptions = {
+  def apply(): FitBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (fitBoundsOptions != null) __obj.updateDynamic("fitBoundsOptions")(fitBoundsOptions.asInstanceOf[js.Any])
-    if (positionOptions != null) __obj.updateDynamic("positionOptions")(positionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAccuracyCircle)) __obj.updateDynamic("showAccuracyCircle")(showAccuracyCircle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showUserLocation)) __obj.updateDynamic("showUserLocation")(showUserLocation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackUserLocation)) __obj.updateDynamic("trackUserLocation")(trackUserLocation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FitBoundsOptions]
   }
+  @scala.inline
+  implicit class FitBoundsOptionsOps[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFitBoundsOptions(value: typings.mapboxGl.mod.FitBoundsOptions): Self = this.set("fitBoundsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFitBoundsOptions: Self = this.set("fitBoundsOptions", js.undefined)
+    @scala.inline
+    def setPositionOptions(value: PositionOptions): Self = this.set("positionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionOptions: Self = this.set("positionOptions", js.undefined)
+    @scala.inline
+    def setShowAccuracyCircle(value: Boolean): Self = this.set("showAccuracyCircle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAccuracyCircle: Self = this.set("showAccuracyCircle", js.undefined)
+    @scala.inline
+    def setShowUserLocation(value: Boolean): Self = this.set("showUserLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowUserLocation: Self = this.set("showUserLocation", js.undefined)
+    @scala.inline
+    def setTrackUserLocation(value: Boolean): Self = this.set("trackUserLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackUserLocation: Self = this.set("trackUserLocation", js.undefined)
+  }
+  
 }
 

@@ -74,42 +74,88 @@ trait GetBotResponse extends js.Object {
 
 object GetBotResponse {
   @scala.inline
-  def apply(
-    abortStatement: Statement = null,
-    checksum: String = null,
-    childDirected: js.UndefOr[Boolean] = js.undefined,
-    clarificationPrompt: Prompt = null,
-    createdDate: Timestamp = null,
-    description: Description = null,
-    detectSentiment: js.UndefOr[Boolean] = js.undefined,
-    failureReason: String = null,
-    idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined,
-    intents: IntentList = null,
-    lastUpdatedDate: Timestamp = null,
-    locale: Locale = null,
-    name: BotName = null,
-    status: Status = null,
-    version: Version = null,
-    voiceId: String = null
-  ): GetBotResponse = {
+  def apply(): GetBotResponse = {
     val __obj = js.Dynamic.literal()
-    if (abortStatement != null) __obj.updateDynamic("abortStatement")(abortStatement.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (!js.isUndefined(childDirected)) __obj.updateDynamic("childDirected")(childDirected.get.asInstanceOf[js.Any])
-    if (clarificationPrompt != null) __obj.updateDynamic("clarificationPrompt")(clarificationPrompt.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectSentiment)) __obj.updateDynamic("detectSentiment")(detectSentiment.get.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(idleSessionTTLInSeconds)) __obj.updateDynamic("idleSessionTTLInSeconds")(idleSessionTTLInSeconds.get.asInstanceOf[js.Any])
-    if (intents != null) __obj.updateDynamic("intents")(intents.asInstanceOf[js.Any])
-    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (voiceId != null) __obj.updateDynamic("voiceId")(voiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBotResponse]
   }
+  @scala.inline
+  implicit class GetBotResponseOps[Self <: GetBotResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortStatement(value: Statement): Self = this.set("abortStatement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortStatement: Self = this.set("abortStatement", js.undefined)
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setChildDirected(value: Boolean): Self = this.set("childDirected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildDirected: Self = this.set("childDirected", js.undefined)
+    @scala.inline
+    def setClarificationPrompt(value: Prompt): Self = this.set("clarificationPrompt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClarificationPrompt: Self = this.set("clarificationPrompt", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: Timestamp): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDetectSentiment(value: Boolean): Self = this.set("detectSentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectSentiment: Self = this.set("detectSentiment", js.undefined)
+    @scala.inline
+    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setIdleSessionTTLInSeconds(value: SessionTTL): Self = this.set("idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleSessionTTLInSeconds: Self = this.set("idleSessionTTLInSeconds", js.undefined)
+    @scala.inline
+    def setIntentsVarargs(value: Intent*): Self = this.set("intents", js.Array(value :_*))
+    @scala.inline
+    def setIntents(value: IntentList): Self = this.set("intents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntents: Self = this.set("intents", js.undefined)
+    @scala.inline
+    def setLastUpdatedDate(value: Timestamp): Self = this.set("lastUpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDate: Self = this.set("lastUpdatedDate", js.undefined)
+    @scala.inline
+    def setLocale(value: Locale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setName(value: BotName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVoiceId(value: String): Self = this.set("voiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceId: Self = this.set("voiceId", js.undefined)
+  }
+  
 }
 

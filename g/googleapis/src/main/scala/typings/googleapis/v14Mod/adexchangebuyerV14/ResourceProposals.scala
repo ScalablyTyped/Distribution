@@ -27,6 +27,7 @@ class ResourceProposals protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaProposal] = js.native
   def get(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def get(params: ParamsResourceProposalsGet): GaxiosPromise[SchemaProposal] = js.native
   def get(params: ParamsResourceProposalsGet, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def get(
@@ -54,6 +55,7 @@ class ResourceProposals protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaCreateOrdersResponse] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreateOrdersResponse]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateOrdersResponse] = js.native
   def insert(params: ParamsResourceProposalsInsert): GaxiosPromise[SchemaCreateOrdersResponse] = js.native
   def insert(params: ParamsResourceProposalsInsert, callback: BodyResponseCallback[SchemaCreateOrdersResponse]): Unit = js.native
   def insert(
@@ -84,6 +86,7 @@ class ResourceProposals protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaProposal] = js.native
   def patch(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def patch(params: ParamsResourceProposalsPatch): GaxiosPromise[SchemaProposal] = js.native
   def patch(params: ParamsResourceProposalsPatch, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def patch(
@@ -111,6 +114,7 @@ class ResourceProposals protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaGetOrdersResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGetOrdersResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOrdersResponse] = js.native
   def search(params: ParamsResourceProposalsSearch): GaxiosPromise[SchemaGetOrdersResponse] = js.native
   def search(params: ParamsResourceProposalsSearch, callback: BodyResponseCallback[SchemaGetOrdersResponse]): Unit = js.native
   def search(
@@ -139,6 +143,7 @@ class ResourceProposals protected () extends js.Object {
     */
   def setupcomplete(): GaxiosPromise[Unit] = js.native
   def setupcomplete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def setupcomplete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def setupcomplete(params: ParamsResourceProposalsSetupcomplete): GaxiosPromise[Unit] = js.native
   def setupcomplete(params: ParamsResourceProposalsSetupcomplete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def setupcomplete(
@@ -169,6 +174,7 @@ class ResourceProposals protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaProposal] = js.native
   def update(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def update(params: ParamsResourceProposalsUpdate): GaxiosPromise[SchemaProposal] = js.native
   def update(params: ParamsResourceProposalsUpdate, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def update(

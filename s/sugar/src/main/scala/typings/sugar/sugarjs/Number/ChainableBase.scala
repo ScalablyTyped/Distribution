@@ -20,7 +20,11 @@ trait ChainableBase[RawValue] extends js.Object {
   def asin(): SugarDefaultChainable[Double] = js.native
   def atan(): SugarDefaultChainable[Double] = js.native
   def bytes(): SugarDefaultChainable[String] = js.native
+  def bytes(precision: js.UndefOr[scala.Nothing], binary: js.UndefOr[scala.Nothing], units: String): SugarDefaultChainable[String] = js.native
+  def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean): SugarDefaultChainable[String] = js.native
+  def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean, units: String): SugarDefaultChainable[String] = js.native
   def bytes(precision: Double): SugarDefaultChainable[String] = js.native
+  def bytes(precision: Double, binary: js.UndefOr[scala.Nothing], units: String): SugarDefaultChainable[String] = js.native
   def bytes(precision: Double, binary: Boolean): SugarDefaultChainable[String] = js.native
   def bytes(precision: Double, binary: Boolean, units: String): SugarDefaultChainable[String] = js.native
   def cap(): SugarDefaultChainable[Double] = js.native
@@ -29,6 +33,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def ceil(precision: Double): SugarDefaultChainable[Double] = js.native
   def chr(): SugarDefaultChainable[String] = js.native
   def clamp(): SugarDefaultChainable[Double] = js.native
+  def clamp(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[Double] = js.native
   def clamp(start: Double): SugarDefaultChainable[Double] = js.native
   def clamp(start: Double, end: Double): SugarDefaultChainable[Double] = js.native
   def cos(): SugarDefaultChainable[Double] = js.native
@@ -65,6 +70,11 @@ trait ChainableBase[RawValue] extends js.Object {
   def downto[T](num: Double): SugarDefaultChainable[Array[T]] = js.native
   def downto[T](
     num: Double,
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
+  ): SugarDefaultChainable[Array[T]] = js.native
+  def downto[T](
+    num: Double,
+    step: js.UndefOr[scala.Nothing],
     everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
   ): SugarDefaultChainable[Array[T]] = js.native
   def downto[T](num: Double, step: Double): SugarDefaultChainable[Array[T]] = js.native
@@ -119,6 +129,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def log(): SugarDefaultChainable[Double] = js.native
   def log(base: Double): SugarDefaultChainable[Double] = js.native
   def metric(): SugarDefaultChainable[String] = js.native
+  def metric(precision: js.UndefOr[scala.Nothing], units: String): SugarDefaultChainable[String] = js.native
   def metric(precision: Double): SugarDefaultChainable[String] = js.native
   def metric(precision: Double, units: String): SugarDefaultChainable[String] = js.native
   def millisecond(): SugarDefaultChainable[Double] = js.native
@@ -213,7 +224,11 @@ trait ChainableBase[RawValue] extends js.Object {
   def monthsFromNow(): SugarDefaultChainable[Date] = js.native
   def ordinalize(): SugarDefaultChainable[String] = js.native
   def pad(): SugarDefaultChainable[String] = js.native
+  def pad(place: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], base: Double): SugarDefaultChainable[String] = js.native
+  def pad(place: js.UndefOr[scala.Nothing], sign: Boolean): SugarDefaultChainable[String] = js.native
+  def pad(place: js.UndefOr[scala.Nothing], sign: Boolean, base: Double): SugarDefaultChainable[String] = js.native
   def pad(place: Double): SugarDefaultChainable[String] = js.native
+  def pad(place: Double, sign: js.UndefOr[scala.Nothing], base: Double): SugarDefaultChainable[String] = js.native
   def pad(place: Double, sign: Boolean): SugarDefaultChainable[String] = js.native
   def pad(place: Double, sign: Boolean, base: Double): SugarDefaultChainable[String] = js.native
   def pow(): SugarDefaultChainable[Double] = js.native
@@ -257,6 +272,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def toExponential(fractionDigits: Double): SugarDefaultChainable[String] = js.native
   def toFixed(): SugarDefaultChainable[String] = js.native
   def toFixed(fractionDigits: Double): SugarDefaultChainable[String] = js.native
+  def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: String): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: String, options: NumberFormatOptions): SugarDefaultChainable[String] = js.native
   def toLocaleString(locales: Array[String]): SugarDefaultChainable[String] = js.native
@@ -267,6 +283,11 @@ trait ChainableBase[RawValue] extends js.Object {
   def upto[T](num: Double): SugarDefaultChainable[Array[T]] = js.native
   def upto[T](
     num: Double,
+    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
+  ): SugarDefaultChainable[Array[T]] = js.native
+  def upto[T](
+    num: Double,
+    step: js.UndefOr[scala.Nothing],
     everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
   ): SugarDefaultChainable[Array[T]] = js.native
   def upto[T](num: Double, step: Double): SugarDefaultChainable[Array[T]] = js.native

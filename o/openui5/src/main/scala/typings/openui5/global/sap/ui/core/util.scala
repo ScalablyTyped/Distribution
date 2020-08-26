@@ -117,6 +117,7 @@ object util extends js.Object {
       */
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
+    def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
   }
   
@@ -198,7 +199,17 @@ object util extends js.Object {
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.Control, oWindow: js.Any) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea, oWindow: js.Any) = this()
+      def this(
+        oRootControl: typings.openui5.sap.ui.core.Control,
+        oWindow: js.UndefOr[scala.Nothing],
+        sDefaultXmlNamespace: String
+      ) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.Control, oWindow: js.Any, sDefaultXmlNamespace: String) = this()
+      def this(
+        oRootControl: typings.openui5.sap.ui.core.UIArea,
+        oWindow: js.UndefOr[scala.Nothing],
+        sDefaultXmlNamespace: String
+      ) = this()
       def this(oRootControl: typings.openui5.sap.ui.core.UIArea, oWindow: js.Any, sDefaultXmlNamespace: String) = this()
     }
     
@@ -257,7 +268,30 @@ object util extends js.Object {
           */
         def this(sDefaultXmlNamespace: String) = this()
         def this(sDefaultXmlNamespace: String, fnGetControlId: js.Any) = this()
+        def this(
+          sDefaultXmlNamespace: String,
+          fnGetControlId: js.UndefOr[scala.Nothing],
+          fnGetEventHandlerName: js.Any
+        ) = this()
         def this(sDefaultXmlNamespace: String, fnGetControlId: js.Any, fnGetEventHandlerName: js.Any) = this()
+        def this(
+          sDefaultXmlNamespace: String,
+          fnGetControlId: js.UndefOr[scala.Nothing],
+          fnGetEventHandlerName: js.UndefOr[scala.Nothing],
+          fnMemorizePackage: js.Any
+        ) = this()
+        def this(
+          sDefaultXmlNamespace: String,
+          fnGetControlId: js.UndefOr[scala.Nothing],
+          fnGetEventHandlerName: js.Any,
+          fnMemorizePackage: js.Any
+        ) = this()
+        def this(
+          sDefaultXmlNamespace: String,
+          fnGetControlId: js.Any,
+          fnGetEventHandlerName: js.UndefOr[scala.Nothing],
+          fnMemorizePackage: js.Any
+        ) = this()
         def this(
           sDefaultXmlNamespace: String,
           fnGetControlId: js.Any,

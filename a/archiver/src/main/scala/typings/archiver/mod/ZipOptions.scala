@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ZipOptions extends js.Object {
-  var comment: js.UndefOr[String] = js.undefined
-  var forceLocalTime: js.UndefOr[Boolean] = js.undefined
-  var forceZip64: js.UndefOr[Boolean] = js.undefined
-  var store: js.UndefOr[Boolean] = js.undefined
-  var zlib: js.UndefOr[ZlibOptions] = js.undefined
+  var comment: js.UndefOr[String] = js.native
+  var forceLocalTime: js.UndefOr[Boolean] = js.native
+  var forceZip64: js.UndefOr[Boolean] = js.native
+  var store: js.UndefOr[Boolean] = js.native
+  var zlib: js.UndefOr[ZlibOptions] = js.native
 }
 
 object ZipOptions {
   @scala.inline
-  def apply(
-    comment: String = null,
-    forceLocalTime: js.UndefOr[Boolean] = js.undefined,
-    forceZip64: js.UndefOr[Boolean] = js.undefined,
-    store: js.UndefOr[Boolean] = js.undefined,
-    zlib: ZlibOptions = null
-  ): ZipOptions = {
+  def apply(): ZipOptions = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceLocalTime)) __obj.updateDynamic("forceLocalTime")(forceLocalTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceZip64)) __obj.updateDynamic("forceZip64")(forceZip64.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(store)) __obj.updateDynamic("store")(store.get.asInstanceOf[js.Any])
-    if (zlib != null) __obj.updateDynamic("zlib")(zlib.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZipOptions]
   }
+  @scala.inline
+  implicit class ZipOptionsOps[Self <: ZipOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setForceLocalTime(value: Boolean): Self = this.set("forceLocalTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceLocalTime: Self = this.set("forceLocalTime", js.undefined)
+    @scala.inline
+    def setForceZip64(value: Boolean): Self = this.set("forceZip64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceZip64: Self = this.set("forceZip64", js.undefined)
+    @scala.inline
+    def setStore(value: Boolean): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setZlib(value: ZlibOptions): Self = this.set("zlib", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlib: Self = this.set("zlib", js.undefined)
+  }
+  
 }
 

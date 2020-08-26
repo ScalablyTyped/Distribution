@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransactionToCommit_ () extends Message {
   def addAccountStates(): AccountState = js.native
+  def addAccountStates(value: js.UndefOr[scala.Nothing], index: Double): AccountState = js.native
   def addAccountStates(value: AccountState): AccountState = js.native
   def addAccountStates(value: AccountState, index: Double): AccountState = js.native
   def addEvents(): Event = js.native
+  def addEvents(value: js.UndefOr[scala.Nothing], index: Double): Event = js.native
   def addEvents(value: Event): Event = js.native
   def addEvents(value: Event, index: Double): Event = js.native
   def clearAccountStatesList(): Unit = js.native

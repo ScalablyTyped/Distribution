@@ -30,6 +30,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[Unit] = js.native
   def cancel(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def cancel(params: ParamsResourcePurchasesSubscriptionsCancel): GaxiosPromise[Unit] = js.native
   def cancel(params: ParamsResourcePurchasesSubscriptionsCancel, callback: BodyResponseCallback[Unit]): Unit = js.native
   def cancel(
@@ -61,6 +62,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     */
   def defer(): GaxiosPromise[SchemaSubscriptionPurchasesDeferResponse] = js.native
   def defer(callback: BodyResponseCallback[SchemaSubscriptionPurchasesDeferResponse]): Unit = js.native
+  def defer(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscriptionPurchasesDeferResponse] = js.native
   def defer(params: ParamsResourcePurchasesSubscriptionsDefer): GaxiosPromise[SchemaSubscriptionPurchasesDeferResponse] = js.native
   def defer(
     params: ParamsResourcePurchasesSubscriptionsDefer,
@@ -94,6 +96,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
   def get(callback: BodyResponseCallback[SchemaSubscriptionPurchase]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
   def get(params: ParamsResourcePurchasesSubscriptionsGet): GaxiosPromise[SchemaSubscriptionPurchase] = js.native
   def get(
     params: ParamsResourcePurchasesSubscriptionsGet,
@@ -127,6 +130,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     */
   def refund(): GaxiosPromise[Unit] = js.native
   def refund(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def refund(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourcePurchasesSubscriptionsRefund): GaxiosPromise[Unit] = js.native
   def refund(params: ParamsResourcePurchasesSubscriptionsRefund, callback: BodyResponseCallback[Unit]): Unit = js.native
   def refund(
@@ -158,6 +162,7 @@ class ResourcePurchasesSubscriptions protected () extends js.Object {
     */
   def revoke(): GaxiosPromise[Unit] = js.native
   def revoke(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def revoke(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def revoke(params: ParamsResourcePurchasesSubscriptionsRevoke): GaxiosPromise[Unit] = js.native
   def revoke(params: ParamsResourcePurchasesSubscriptionsRevoke, callback: BodyResponseCallback[Unit]): Unit = js.native
   def revoke(

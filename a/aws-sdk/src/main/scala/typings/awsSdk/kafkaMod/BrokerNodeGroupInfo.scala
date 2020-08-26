@@ -42,18 +42,42 @@ trait BrokerNodeGroupInfo extends js.Object {
 
 object BrokerNodeGroupInfo {
   @scala.inline
-  def apply(
-    ClientSubnets: listOfString,
-    InstanceType: stringMin5Max32,
-    BrokerAZDistribution: BrokerAZDistribution = null,
-    SecurityGroups: listOfString = null,
-    StorageInfo: StorageInfo = null
-  ): BrokerNodeGroupInfo = {
+  def apply(ClientSubnets: listOfString, InstanceType: stringMin5Max32): BrokerNodeGroupInfo = {
     val __obj = js.Dynamic.literal(ClientSubnets = ClientSubnets.asInstanceOf[js.Any], InstanceType = InstanceType.asInstanceOf[js.Any])
-    if (BrokerAZDistribution != null) __obj.updateDynamic("BrokerAZDistribution")(BrokerAZDistribution.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (StorageInfo != null) __obj.updateDynamic("StorageInfo")(StorageInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerNodeGroupInfo]
   }
+  @scala.inline
+  implicit class BrokerNodeGroupInfoOps[Self <: BrokerNodeGroupInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientSubnetsVarargs(value: string*): Self = this.set("ClientSubnets", js.Array(value :_*))
+    @scala.inline
+    def setClientSubnets(value: listOfString): Self = this.set("ClientSubnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: stringMin5Max32): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBrokerAZDistribution(value: BrokerAZDistribution): Self = this.set("BrokerAZDistribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerAZDistribution: Self = this.set("BrokerAZDistribution", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: string*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: listOfString): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setStorageInfo(value: StorageInfo): Self = this.set("StorageInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageInfo: Self = this.set("StorageInfo", js.undefined)
+  }
+  
 }
 

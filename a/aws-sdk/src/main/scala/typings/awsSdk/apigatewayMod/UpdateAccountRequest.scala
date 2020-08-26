@@ -14,10 +14,28 @@ trait UpdateAccountRequest extends js.Object {
 
 object UpdateAccountRequest {
   @scala.inline
-  def apply(patchOperations: ListOfPatchOperation = null): UpdateAccountRequest = {
+  def apply(): UpdateAccountRequest = {
     val __obj = js.Dynamic.literal()
-    if (patchOperations != null) __obj.updateDynamic("patchOperations")(patchOperations.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAccountRequest]
   }
+  @scala.inline
+  implicit class UpdateAccountRequestOps[Self <: UpdateAccountRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPatchOperationsVarargs(value: PatchOperation*): Self = this.set("patchOperations", js.Array(value :_*))
+    @scala.inline
+    def setPatchOperations(value: ListOfPatchOperation): Self = this.set("patchOperations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatchOperations: Self = this.set("patchOperations", js.undefined)
+  }
+  
 }
 

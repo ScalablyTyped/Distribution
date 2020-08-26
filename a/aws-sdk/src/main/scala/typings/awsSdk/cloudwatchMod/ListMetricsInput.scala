@@ -22,22 +22,52 @@ trait ListMetricsInput extends js.Object {
     * The token returned by a previous call to indicate that there is more data available.
     */
   var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  /**
+    * To filter the results to show only metrics that have had data points published in the past three hours, specify this parameter with a value of PT3H. This is the only valid value for this parameter. The results that are returned are an approximation of the value you specify. There is a low probability that the returned results include metrics with last published data as much as 40 minutes more than the specified time interval.
+    */
+  var RecentlyActive: js.UndefOr[typings.awsSdk.cloudwatchMod.RecentlyActive] = js.native
 }
 
 object ListMetricsInput {
   @scala.inline
-  def apply(
-    Dimensions: DimensionFilters = null,
-    MetricName: MetricName = null,
-    Namespace: Namespace = null,
-    NextToken: NextToken = null
-  ): ListMetricsInput = {
+  def apply(): ListMetricsInput = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (MetricName != null) __obj.updateDynamic("MetricName")(MetricName.asInstanceOf[js.Any])
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMetricsInput]
   }
+  @scala.inline
+  implicit class ListMetricsInputOps[Self <: ListMetricsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionsVarargs(value: DimensionFilter*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: DimensionFilters): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricName: Self = this.set("MetricName", js.undefined)
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRecentlyActive(value: RecentlyActive): Self = this.set("RecentlyActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecentlyActive: Self = this.set("RecentlyActive", js.undefined)
+  }
+  
 }
 

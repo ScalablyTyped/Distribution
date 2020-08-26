@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): FfmpegCommand = js.native
+  def apply(input: js.UndefOr[scala.Nothing], options: FfmpegCommandOptions): FfmpegCommand = js.native
   def apply(input: String): FfmpegCommand = js.native
   def apply(input: String, options: FfmpegCommandOptions): FfmpegCommand = js.native
   def apply(input: Readable): FfmpegCommand = js.native

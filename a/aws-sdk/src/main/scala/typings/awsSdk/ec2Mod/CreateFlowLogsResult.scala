@@ -22,16 +22,38 @@ trait CreateFlowLogsResult extends js.Object {
 
 object CreateFlowLogsResult {
   @scala.inline
-  def apply(
-    ClientToken: String = null,
-    FlowLogIds: ValueStringList = null,
-    Unsuccessful: UnsuccessfulItemSet = null
-  ): CreateFlowLogsResult = {
+  def apply(): CreateFlowLogsResult = {
     val __obj = js.Dynamic.literal()
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (FlowLogIds != null) __obj.updateDynamic("FlowLogIds")(FlowLogIds.asInstanceOf[js.Any])
-    if (Unsuccessful != null) __obj.updateDynamic("Unsuccessful")(Unsuccessful.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowLogsResult]
   }
+  @scala.inline
+  implicit class CreateFlowLogsResultOps[Self <: CreateFlowLogsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setFlowLogIdsVarargs(value: String*): Self = this.set("FlowLogIds", js.Array(value :_*))
+    @scala.inline
+    def setFlowLogIds(value: ValueStringList): Self = this.set("FlowLogIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowLogIds: Self = this.set("FlowLogIds", js.undefined)
+    @scala.inline
+    def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = this.set("Unsuccessful", js.Array(value :_*))
+    @scala.inline
+    def setUnsuccessful(value: UnsuccessfulItemSet): Self = this.set("Unsuccessful", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsuccessful: Self = this.set("Unsuccessful", js.undefined)
+  }
+  
 }
 

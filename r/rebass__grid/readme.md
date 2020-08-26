@@ -12,7 +12,7 @@ Responsive React grid system built with styled-system, with support for styled-c
 | Keywords           | react, styled-components, styled-system, grid, flexbox, layout, css |
 | # releases         | 12 |
 | # dependents       | 50 |
-| # downloads        | 1076768 |
+| # downloads        | 1106685 |
 | # stars            | 0 |
 
 ## Links

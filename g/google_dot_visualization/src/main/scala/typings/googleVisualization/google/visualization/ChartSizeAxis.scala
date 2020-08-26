@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartSizeAxis extends js.Object {
-  var maxSize: js.UndefOr[Double] = js.undefined
-  var maxValue: js.UndefOr[Double] = js.undefined
-  var minSize: js.UndefOr[Double] = js.undefined
-  var minValue: js.UndefOr[Double] = js.undefined
+  var maxSize: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.native
 }
 
 object ChartSizeAxis {
   @scala.inline
-  def apply(
-    maxSize: js.UndefOr[Double] = js.undefined,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minSize: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined
-  ): ChartSizeAxis = {
+  def apply(): ChartSizeAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxSize)) __obj.updateDynamic("maxSize")(maxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minSize)) __obj.updateDynamic("minSize")(minSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSizeAxis]
   }
+  @scala.inline
+  implicit class ChartSizeAxisOps[Self <: ChartSizeAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("maxSize", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("minSize", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+  }
+  
 }
 

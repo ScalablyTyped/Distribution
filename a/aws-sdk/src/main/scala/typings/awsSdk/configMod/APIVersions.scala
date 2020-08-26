@@ -20,11 +20,30 @@ trait APIVersions extends js.Object {
 
 object APIVersions {
   @scala.inline
-  def apply(apiVersion: latest_ | String = null, apiVersions: ConfigurationServiceApiVersions = null): APIVersions = {
+  def apply(): APIVersions = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIVersions]
   }
+  @scala.inline
+  implicit class APIVersionsOps[Self <: APIVersions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiVersion(value: latest_ | String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setApiVersions(value: ConfigurationServiceApiVersions): Self = this.set("apiVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersions: Self = this.set("apiVersions", js.undefined)
+  }
+  
 }
 

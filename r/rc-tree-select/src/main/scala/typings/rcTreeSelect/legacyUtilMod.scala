@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/utils/legacyUtil", JSImport.Namespace)
+@JSImport("rc-tree-select/es/utils/legacyUtil", JSImport.Namespace)
 @js.native
 object legacyUtilMod extends js.Object {
   def convertChildrenToData(nodes: ReactNode): js.Array[DataNode] = js.native

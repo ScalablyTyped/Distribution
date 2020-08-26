@@ -20,11 +20,14 @@ trait AlphaNumeric extends js.Object {
   def number(options: Max): Double = js.native
   def objectElement(): String = js.native
   def objectElement(`object`: StringDictionary[js.Any]): String = js.native
+  def objectElement[T](`object`: js.UndefOr[scala.Nothing], field: js.Any): T = js.native
   def objectElement[T](`object`: StringDictionary[T], field: js.Any): T = js.native
   @JSName("objectElement")
   def objectElement_T_T[T](): T = js.native
   @JSName("objectElement")
   def objectElement_T_T[T](`object`: StringDictionary[T]): T = js.native
+  @JSName("objectElement")
+  def objectElement_key(`object`: js.UndefOr[scala.Nothing], field: key): String = js.native
   @JSName("objectElement")
   def objectElement_key(`object`: StringDictionary[js.Any], field: key): String = js.native
   def uuid(): String = js.native

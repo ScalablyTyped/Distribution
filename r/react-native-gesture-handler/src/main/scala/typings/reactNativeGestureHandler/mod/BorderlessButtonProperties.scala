@@ -1,66 +1,41 @@
 package typings.reactNativeGestureHandler.mod
 
-import typings.react.mod.Ref
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
-import typings.reactNativeGestureHandler.anon.Bottom
-import typings.reactNativeGestureHandler.anon.BottomHeight
-import typings.reactNativeGestureHandler.anon.Height
-import typings.reactNativeGestureHandler.anon.Left
-import typings.reactNativeGestureHandler.anon.Right
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BorderlessButtonProperties extends BaseButtonProperties {
-  var activeOpacity: js.UndefOr[Double] = js.undefined
-  var borderless: js.UndefOr[Boolean] = js.undefined
+  var activeOpacity: js.UndefOr[Double] = js.native
+  var borderless: js.UndefOr[Boolean] = js.native
 }
 
 object BorderlessButtonProperties {
   @scala.inline
-  def apply(
-    accessibilityLabel: String = null,
-    activeOpacity: js.UndefOr[Double] = js.undefined,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    disallowInterruption: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Double | Bottom | Left | Right | Height | BottomHeight = null,
-    id: String = null,
-    onActiveStateChange: /* active */ Boolean => Unit = null,
-    onGestureEvent: /* event */ NativeViewGestureHandlerGestureEvent => Unit = null,
-    onHandlerStateChange: /* event */ NativeViewGestureHandlerStateChangeEvent => Unit = null,
-    onPress: /* pointerInside */ Boolean => Unit = null,
-    rippleColor: String = null,
-    shouldActivateOnStart: js.UndefOr[Boolean] = js.undefined,
-    shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined,
-    simultaneousHandlers: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    testID: String = null,
-    waitFor: js.UndefOr[Null | Ref[_] | js.Array[Ref[_]]] = js.undefined
-  ): BorderlessButtonProperties = {
+  def apply(): BorderlessButtonProperties = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeOpacity)) __obj.updateDynamic("activeOpacity")(activeOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disallowInterruption)) __obj.updateDynamic("disallowInterruption")(disallowInterruption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onActiveStateChange != null) __obj.updateDynamic("onActiveStateChange")(js.Any.fromFunction1(onActiveStateChange))
-    if (onGestureEvent != null) __obj.updateDynamic("onGestureEvent")(js.Any.fromFunction1(onGestureEvent))
-    if (onHandlerStateChange != null) __obj.updateDynamic("onHandlerStateChange")(js.Any.fromFunction1(onHandlerStateChange))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldActivateOnStart)) __obj.updateDynamic("shouldActivateOnStart")(shouldActivateOnStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldCancelWhenOutside)) __obj.updateDynamic("shouldCancelWhenOutside")(shouldCancelWhenOutside.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(simultaneousHandlers)) __obj.updateDynamic("simultaneousHandlers")(simultaneousHandlers.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitFor)) __obj.updateDynamic("waitFor")(waitFor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderlessButtonProperties]
   }
+  @scala.inline
+  implicit class BorderlessButtonPropertiesOps[Self <: BorderlessButtonProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveOpacity(value: Double): Self = this.set("activeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveOpacity: Self = this.set("activeOpacity", js.undefined)
+    @scala.inline
+    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderless: Self = this.set("borderless", js.undefined)
+  }
+  
 }
 

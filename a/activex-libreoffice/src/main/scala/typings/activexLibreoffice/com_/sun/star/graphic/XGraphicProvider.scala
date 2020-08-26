@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * This interface acts as the main interface to handle graphic content. It is used to load graphics, store graphics and to get information about unloaded
   * graphics
   */
+@js.native
 trait XGraphicProvider extends XInterface {
   /**
     * Calling this method returns a {@link XGraphic} interface that holds the graphic content after loading the graphic
@@ -21,7 +22,7 @@ trait XGraphicProvider extends XInterface {
     * @see XGraphic
     * @see com.sun.star.beans.PropertyValues
     */
-  def queryGraphic(MediaProperties: PropertyValues): XGraphic
+  def queryGraphic(MediaProperties: PropertyValues): XGraphic = js.native
   /**
     * Calling this method returns a {@link com.sun.star.beans.XPropertySet} interface that gives access to the properties of the unloaded graphic
     *
@@ -32,7 +33,7 @@ trait XGraphicProvider extends XInterface {
     * @see GraphicDescriptor
     * @see com.sun.star.beans.PropertyValues
     */
-  def queryGraphicDescriptor(MediaProperties: PropertyValues): XPropertySet
+  def queryGraphicDescriptor(MediaProperties: PropertyValues): XPropertySet = js.native
   /**
     * Store the graphic content, represented through the {@link XGraphic} interface at the specified location
     * @param Graphic The graphic that should be stored
@@ -41,7 +42,7 @@ trait XGraphicProvider extends XInterface {
     * @see MediaProperties
     * @see com.sun.star.beans.PropertyValues
     */
-  def storeGraphic(Graphic: XGraphic, MediaProperties: PropertyValues): Unit
+  def storeGraphic(Graphic: XGraphic, MediaProperties: PropertyValues): Unit = js.native
 }
 
 object XGraphicProvider {
@@ -57,5 +58,24 @@ object XGraphicProvider {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryGraphic = js.Any.fromFunction1(queryGraphic), queryGraphicDescriptor = js.Any.fromFunction1(queryGraphicDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), storeGraphic = js.Any.fromFunction2(storeGraphic))
     __obj.asInstanceOf[XGraphicProvider]
   }
+  @scala.inline
+  implicit class XGraphicProviderOps[Self <: XGraphicProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryGraphic(value: PropertyValues => XGraphic): Self = this.set("queryGraphic", js.Any.fromFunction1(value))
+    @scala.inline
+    def setQueryGraphicDescriptor(value: PropertyValues => XPropertySet): Self = this.set("queryGraphicDescriptor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStoreGraphic(value: (XGraphic, PropertyValues) => Unit): Self = this.set("storeGraphic", js.Any.fromFunction2(value))
+  }
+  
 }
 

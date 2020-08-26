@@ -2,12 +2,12 @@ package typings.ariClient.mod
 
 import typings.ariClient.anon.ChannelIdString
 import typings.ariClient.anon.Format
-import typings.ariClient.anon.MohClassString
 import typings.ariClient.anon.Mute
 import typings.ariClient.anon.Offsetms
 import typings.ariClient.anon.PlaybackId
 import typings.ariClient.anon.Type
-import typings.ariClient.anon.`1`
+import typings.ariClient.anon.`2`
+import typings.ariClient.anon.`3`
 import typings.std.Date
 import typings.std.Error
 import scala.scalajs.js
@@ -237,13 +237,13 @@ trait Bridge extends Resource {
     *
     * @param params.channel - Ids of channels to remove from bridge.
     */
-  def removeChannel(params: `1`): js.Promise[Unit] = js.native
+  def removeChannel(params: `2`): js.Promise[Unit] = js.native
   /**
     * Remove a channel from a bridge.
     *
     * @param params.channel - Ids of channels to remove from bridge.
     */
-  def removeChannel(params: `1`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def removeChannel(params: `2`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Set a channel as the video source in a multi-party mixing bridge. This operation has no effect on bridges with two or fewer participants.
     *
@@ -266,13 +266,13 @@ trait Bridge extends Resource {
     * Play music on hold to a bridge or change the MOH class that is playing.
     */
   def startMoh(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
-  def startMoh(params: MohClassString): js.Promise[Unit] = js.native
+  def startMoh(params: `3`): js.Promise[Unit] = js.native
   /**
     * Play music on hold to a bridge or change the MOH class that is playing.
     *
     * @param [params.mohClass] - Channels id.
     */
-  def startMoh(params: MohClassString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startMoh(params: `3`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
     * Stop playing music on hold to a bridge.
     * This will only stop music on hold being played via POST bridges/{bridgeId}/moh.

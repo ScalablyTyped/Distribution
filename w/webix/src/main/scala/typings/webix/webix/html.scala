@@ -17,9 +17,11 @@ trait html extends js.Object {
   def createCss(data: js.Any): String = js.native
   def denySelect(): Unit = js.native
   def getTextSize(text: String): SizeInfo = js.native
+  def getTextSize(text: String, css: js.UndefOr[scala.Nothing], width: Double): SizeInfo = js.native
   def getTextSize(text: String, css: String): SizeInfo = js.native
   def getTextSize(text: String, css: String, width: Double): SizeInfo = js.native
   def getTextSize(text: js.Array[String]): SizeInfo = js.native
+  def getTextSize(text: js.Array[String], css: js.UndefOr[scala.Nothing], width: Double): SizeInfo = js.native
   def getTextSize(text: js.Array[String], css: String): SizeInfo = js.native
   def getTextSize(text: js.Array[String], css: String, width: Double): SizeInfo = js.native
   def getValue(node: HTMLElement): String = js.native

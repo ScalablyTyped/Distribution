@@ -14,10 +14,26 @@ trait ImageScanningConfiguration extends js.Object {
 
 object ImageScanningConfiguration {
   @scala.inline
-  def apply(scanOnPush: js.UndefOr[ScanOnPushFlag] = js.undefined): ImageScanningConfiguration = {
+  def apply(): ImageScanningConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(scanOnPush)) __obj.updateDynamic("scanOnPush")(scanOnPush.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageScanningConfiguration]
   }
+  @scala.inline
+  implicit class ImageScanningConfigurationOps[Self <: ImageScanningConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScanOnPush(value: ScanOnPushFlag): Self = this.set("scanOnPush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScanOnPush: Self = this.set("scanOnPush", js.undefined)
+  }
+  
 }
 

@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   * KJUR.crypto.MessageDigest.HASHLENGTH['sha1'] → 20
   * KJUR.crypto.MessageDigest.HASHLENGTH['sha512'] → 64
   */
+@js.native
 trait MessageDigest extends js.Object {
   /**
     * completes hash calculation and returns hash result
@@ -39,7 +40,7 @@ trait MessageDigest extends js.Object {
     * @example
     * md.digest()
     */
-  def digest(): Unit
+  def digest(): Unit = js.native
   /**
     * performs final update on the digest using hexadecimal string, then completes the digest computation
     * @param hex hexadecimal string to final update
@@ -47,7 +48,7 @@ trait MessageDigest extends js.Object {
     * @example
     * md.digestHex('0f2abd')
     */
-  def digestHex(hex: String): Unit
+  def digestHex(hex: String): Unit = js.native
   /**
     * performs final update on the digest using string, then completes the digest computation
     * @param str string to final update
@@ -55,7 +56,7 @@ trait MessageDigest extends js.Object {
     * @example
     * md.digestString('aaa')
     */
-  def digestString(str: String): Unit
+  def digestString(str: String): Unit = js.native
   /**
     * set hash algorithm and provider
     * @param alg hash algorithm name
@@ -80,7 +81,7 @@ trait MessageDigest extends js.Object {
     * // for RIPEMD160
     * md.setAlgAndProvider('ripemd160', 'cryptojs');
     */
-  def setAlgAndProvider(alg: String, prov: String): Unit
+  def setAlgAndProvider(alg: String, prov: String): Unit = js.native
   /**
     * update digest by specified hexadecimal string
     * @param hex hexadecimal string to update
@@ -88,7 +89,7 @@ trait MessageDigest extends js.Object {
     * @example
     * md.updateHex('0afe36');
     */
-  def updateHex(hex: String): Unit
+  def updateHex(hex: String): Unit = js.native
   /**
     * update digest by specified string
     * @param str string to update
@@ -96,7 +97,7 @@ trait MessageDigest extends js.Object {
     * @example
     * md.updateString('New York');
     */
-  def updateString(str: String): Unit
+  def updateString(str: String): Unit = js.native
 }
 
 object MessageDigest {
@@ -112,5 +113,30 @@ object MessageDigest {
     val __obj = js.Dynamic.literal(digest = js.Any.fromFunction0(digest), digestHex = js.Any.fromFunction1(digestHex), digestString = js.Any.fromFunction1(digestString), setAlgAndProvider = js.Any.fromFunction2(setAlgAndProvider), updateHex = js.Any.fromFunction1(updateHex), updateString = js.Any.fromFunction1(updateString))
     __obj.asInstanceOf[MessageDigest]
   }
+  @scala.inline
+  implicit class MessageDigestOps[Self <: MessageDigest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDigest(value: () => Unit): Self = this.set("digest", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDigestHex(value: String => Unit): Self = this.set("digestHex", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDigestString(value: String => Unit): Self = this.set("digestString", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetAlgAndProvider(value: (String, String) => Unit): Self = this.set("setAlgAndProvider", js.Any.fromFunction2(value))
+    @scala.inline
+    def setUpdateHex(value: String => Unit): Self = this.set("updateHex", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUpdateString(value: String => Unit): Self = this.set("updateString", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -29,7 +29,7 @@ abstract class Widget protected () extends Element {
   def containerAsDocumentTemplate: DocumentTemplate = js.native
   def containerAsDropZone: DropZone = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -50,30 +50,64 @@ trait ManagedPrefixList extends js.Object {
 
 object ManagedPrefixList {
   @scala.inline
-  def apply(
-    AddressFamily: String = null,
-    MaxEntries: js.UndefOr[Integer] = js.undefined,
-    OwnerId: String = null,
-    PrefixListArn: ResourceArn = null,
-    PrefixListId: PrefixListResourceId = null,
-    PrefixListName: String = null,
-    State: PrefixListState = null,
-    StateMessage: String = null,
-    Tags: TagList = null,
-    Version: js.UndefOr[Long] = js.undefined
-  ): ManagedPrefixList = {
+  def apply(): ManagedPrefixList = {
     val __obj = js.Dynamic.literal()
-    if (AddressFamily != null) __obj.updateDynamic("AddressFamily")(AddressFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxEntries)) __obj.updateDynamic("MaxEntries")(MaxEntries.get.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (PrefixListArn != null) __obj.updateDynamic("PrefixListArn")(PrefixListArn.asInstanceOf[js.Any])
-    if (PrefixListId != null) __obj.updateDynamic("PrefixListId")(PrefixListId.asInstanceOf[js.Any])
-    if (PrefixListName != null) __obj.updateDynamic("PrefixListName")(PrefixListName.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StateMessage != null) __obj.updateDynamic("StateMessage")(StateMessage.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedPrefixList]
   }
+  @scala.inline
+  implicit class ManagedPrefixListOps[Self <: ManagedPrefixList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressFamily(value: String): Self = this.set("AddressFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressFamily: Self = this.set("AddressFamily", js.undefined)
+    @scala.inline
+    def setMaxEntries(value: Integer): Self = this.set("MaxEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEntries: Self = this.set("MaxEntries", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setPrefixListArn(value: ResourceArn): Self = this.set("PrefixListArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListArn: Self = this.set("PrefixListArn", js.undefined)
+    @scala.inline
+    def setPrefixListId(value: PrefixListResourceId): Self = this.set("PrefixListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListId: Self = this.set("PrefixListId", js.undefined)
+    @scala.inline
+    def setPrefixListName(value: String): Self = this.set("PrefixListName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListName: Self = this.set("PrefixListName", js.undefined)
+    @scala.inline
+    def setState(value: PrefixListState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStateMessage(value: String): Self = this.set("StateMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateMessage: Self = this.set("StateMessage", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVersion(value: Long): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

@@ -1,32 +1,37 @@
 package typings.c3.mod
 
-import typings.c3.c3Strings.end
-import typings.c3.c3Strings.middle
-import typings.c3.c3Strings.start
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridLineOptionsWithAxis extends GridLineOptions {
-  var axis: js.UndefOr[AxisName] = js.undefined
+  var axis: js.UndefOr[AxisName] = js.native
 }
 
 object GridLineOptionsWithAxis {
   @scala.inline
-  def apply(
-    value: String | Double | Date,
-    axis: AxisName = null,
-    `class`: String = null,
-    position: start | end | middle = null,
-    text: String = null
-  ): GridLineOptionsWithAxis = {
+  def apply(value: String | Double | Date): GridLineOptionsWithAxis = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLineOptionsWithAxis]
   }
+  @scala.inline
+  implicit class GridLineOptionsWithAxisOps[Self <: GridLineOptionsWithAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: AxisName): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+  }
+  
 }
 

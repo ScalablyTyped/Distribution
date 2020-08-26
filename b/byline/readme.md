@@ -11,8 +11,8 @@ simple line-by-line stream reader
 | Full name          | byline |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 339 |
-| # downloads        | 41227034 |
+| # dependents       | 341 |
+| # downloads        | 46010159 |
 | # stars            | 14 |
 
 ## Links

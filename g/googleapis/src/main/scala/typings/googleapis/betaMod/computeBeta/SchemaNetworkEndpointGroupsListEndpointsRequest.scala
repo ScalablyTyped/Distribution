@@ -16,10 +16,26 @@ trait SchemaNetworkEndpointGroupsListEndpointsRequest extends js.Object {
 
 object SchemaNetworkEndpointGroupsListEndpointsRequest {
   @scala.inline
-  def apply(healthStatus: String = null): SchemaNetworkEndpointGroupsListEndpointsRequest = {
+  def apply(): SchemaNetworkEndpointGroupsListEndpointsRequest = {
     val __obj = js.Dynamic.literal()
-    if (healthStatus != null) __obj.updateDynamic("healthStatus")(healthStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkEndpointGroupsListEndpointsRequest]
   }
+  @scala.inline
+  implicit class SchemaNetworkEndpointGroupsListEndpointsRequestOps[Self <: SchemaNetworkEndpointGroupsListEndpointsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthStatus(value: String): Self = this.set("healthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("healthStatus", js.undefined)
+  }
+  
 }
 

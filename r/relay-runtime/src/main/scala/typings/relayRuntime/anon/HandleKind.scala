@@ -16,9 +16,11 @@ trait HandleKind extends MissingFieldHandler {
   var kind: pluralLinked = js.native
   def handle(
     field: NormalizationLinkedField,
-    record: js.UndefOr[Null | Record],
+    record: js.UndefOr[scala.Nothing],
     args: Variables,
     store: ReadOnlyRecordSourceProxy
   ): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(field: NormalizationLinkedField, record: Null, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(field: NormalizationLinkedField, record: Record, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
 }
 

@@ -42,20 +42,46 @@ trait SchemaAndroidTestLoop extends js.Object {
 
 object SchemaAndroidTestLoop {
   @scala.inline
-  def apply(
-    appApk: SchemaFileReference = null,
-    appBundle: SchemaAppBundle = null,
-    appPackageId: String = null,
-    scenarioLabels: js.Array[String] = null,
-    scenarios: js.Array[Double] = null
-  ): SchemaAndroidTestLoop = {
+  def apply(): SchemaAndroidTestLoop = {
     val __obj = js.Dynamic.literal()
-    if (appApk != null) __obj.updateDynamic("appApk")(appApk.asInstanceOf[js.Any])
-    if (appBundle != null) __obj.updateDynamic("appBundle")(appBundle.asInstanceOf[js.Any])
-    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId.asInstanceOf[js.Any])
-    if (scenarioLabels != null) __obj.updateDynamic("scenarioLabels")(scenarioLabels.asInstanceOf[js.Any])
-    if (scenarios != null) __obj.updateDynamic("scenarios")(scenarios.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidTestLoop]
   }
+  @scala.inline
+  implicit class SchemaAndroidTestLoopOps[Self <: SchemaAndroidTestLoop] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppApk(value: SchemaFileReference): Self = this.set("appApk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppApk: Self = this.set("appApk", js.undefined)
+    @scala.inline
+    def setAppBundle(value: SchemaAppBundle): Self = this.set("appBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppBundle: Self = this.set("appBundle", js.undefined)
+    @scala.inline
+    def setAppPackageId(value: String): Self = this.set("appPackageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppPackageId: Self = this.set("appPackageId", js.undefined)
+    @scala.inline
+    def setScenarioLabelsVarargs(value: String*): Self = this.set("scenarioLabels", js.Array(value :_*))
+    @scala.inline
+    def setScenarioLabels(value: js.Array[String]): Self = this.set("scenarioLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScenarioLabels: Self = this.set("scenarioLabels", js.undefined)
+    @scala.inline
+    def setScenariosVarargs(value: Double*): Self = this.set("scenarios", js.Array(value :_*))
+    @scala.inline
+    def setScenarios(value: js.Array[Double]): Self = this.set("scenarios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScenarios: Self = this.set("scenarios", js.undefined)
+  }
+  
 }
 

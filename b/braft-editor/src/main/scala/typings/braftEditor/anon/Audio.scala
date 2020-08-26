@@ -5,20 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Audio extends js.Object {
-  var audio: js.UndefOr[String | `false`] = js.undefined
-  var image: js.UndefOr[String | `false`] = js.undefined
-  var video: js.UndefOr[String | `false`] = js.undefined
+  var audio: js.UndefOr[String | `false`] = js.native
+  var image: js.UndefOr[String | `false`] = js.native
+  var video: js.UndefOr[String | `false`] = js.native
 }
 
 object Audio {
   @scala.inline
-  def apply(audio: String | `false` = null, image: String | `false` = null, video: String | `false` = null): Audio = {
+  def apply(): Audio = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[Audio]
   }
+  @scala.inline
+  implicit class AudioOps[Self <: Audio] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudio(value: String | `false`): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setImage(value: String | `false`): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setVideo(value: String | `false`): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+  }
+  
 }
 

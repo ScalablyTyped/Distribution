@@ -22,6 +22,12 @@ trait OpenFinInterApplicationBus extends js.Object {
     * Publishes a message to all applications running on OpenFin Runtime that are subscribed to the specified topic.
     */
   def publish(topic: String, message: js.Any): Unit = js.native
+  def publish(
+    topic: String,
+    message: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
   def publish(topic: String, message: js.Any, callback: js.Function0[Unit]): Unit = js.native
   def publish(
     topic: String,
@@ -46,6 +52,14 @@ trait OpenFinInterApplicationBus extends js.Object {
     name: String,
     topic: String,
     message: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
+  def send(
+    destinationUuid: String,
+    name: String,
+    topic: String,
+    message: js.Any,
     callback: js.Function0[Unit]
   ): Unit = js.native
   def send(
@@ -57,6 +71,13 @@ trait OpenFinInterApplicationBus extends js.Object {
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def send(destinationUuid: String, topic: String, message: js.Any): Unit = js.native
+  def send(
+    destinationUuid: String,
+    topic: String,
+    message: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
   def send(destinationUuid: String, topic: String, message: js.Any, callback: js.Function0[Unit]): Unit = js.native
   def send(
     destinationUuid: String,
@@ -80,6 +101,14 @@ trait OpenFinInterApplicationBus extends js.Object {
     name: String,
     topic: String,
     listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
+  def subscribe(
+    senderUuid: String,
+    name: String,
+    topic: String,
+    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def subscribe(
@@ -94,6 +123,13 @@ trait OpenFinInterApplicationBus extends js.Object {
     senderUuid: String,
     topic: String,
     listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit]
+  ): Unit = js.native
+  def subscribe(
+    senderUuid: String,
+    topic: String,
+    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def subscribe(
     senderUuid: String,
@@ -122,6 +158,14 @@ trait OpenFinInterApplicationBus extends js.Object {
     name: String,
     topic: String,
     listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
+  ): Unit = js.native
+  def unsubscribe(
+    senderUuid: String,
+    name: String,
+    topic: String,
+    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def unsubscribe(
@@ -136,6 +180,13 @@ trait OpenFinInterApplicationBus extends js.Object {
     senderUuid: String,
     topic: String,
     listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit]
+  ): Unit = js.native
+  def unsubscribe(
+    senderUuid: String,
+    topic: String,
+    listener: js.Function3[/* message */ js.Any, /* uuid */ String, /* name */ String, Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
   def unsubscribe(
     senderUuid: String,

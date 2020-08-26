@@ -18,14 +18,32 @@ trait ForwardActionConfig extends js.Object {
 
 object ForwardActionConfig {
   @scala.inline
-  def apply(
-    TargetGroupStickinessConfig: TargetGroupStickinessConfig = null,
-    TargetGroups: TargetGroupList = null
-  ): ForwardActionConfig = {
+  def apply(): ForwardActionConfig = {
     val __obj = js.Dynamic.literal()
-    if (TargetGroupStickinessConfig != null) __obj.updateDynamic("TargetGroupStickinessConfig")(TargetGroupStickinessConfig.asInstanceOf[js.Any])
-    if (TargetGroups != null) __obj.updateDynamic("TargetGroups")(TargetGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForwardActionConfig]
   }
+  @scala.inline
+  implicit class ForwardActionConfigOps[Self <: ForwardActionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetGroupStickinessConfig(value: TargetGroupStickinessConfig): Self = this.set("TargetGroupStickinessConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupStickinessConfig: Self = this.set("TargetGroupStickinessConfig", js.undefined)
+    @scala.inline
+    def setTargetGroupsVarargs(value: TargetGroupTuple*): Self = this.set("TargetGroups", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroups(value: TargetGroupList): Self = this.set("TargetGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroups: Self = this.set("TargetGroups", js.undefined)
+  }
+  
 }
 

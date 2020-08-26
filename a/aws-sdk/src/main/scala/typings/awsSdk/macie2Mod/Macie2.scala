@@ -134,14 +134,14 @@ trait Macie2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeclineInvitationsResponse, scala.Unit]
   ): Request[DeclineInvitationsResponse, AWSError] = js.native
   /**
-    * Deletes a custom data identifier.
+    * Soft deletes a custom data identifier.
     */
   def deleteCustomDataIdentifier(): Request[DeleteCustomDataIdentifierResponse, AWSError] = js.native
   def deleteCustomDataIdentifier(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteCustomDataIdentifierResponse, scala.Unit]
   ): Request[DeleteCustomDataIdentifierResponse, AWSError] = js.native
   /**
-    * Deletes a custom data identifier.
+    * Soft deletes a custom data identifier.
     */
   def deleteCustomDataIdentifier(params: DeleteCustomDataIdentifierRequest): Request[DeleteCustomDataIdentifierResponse, AWSError] = js.native
   def deleteCustomDataIdentifier(
@@ -481,12 +481,12 @@ trait Macie2 extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetUsageTotalsResponse, scala.Unit]
   ): Request[GetUsageTotalsResponse, AWSError] = js.native
   /**
-    * Retrieves information about the status and settings for one or more classification jobs.
+    * Retrieves a subset of information about one or more classification jobs.
     */
   def listClassificationJobs(): Request[ListClassificationJobsResponse, AWSError] = js.native
   def listClassificationJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListClassificationJobsResponse, scala.Unit]): Request[ListClassificationJobsResponse, AWSError] = js.native
   /**
-    * Retrieves information about the status and settings for one or more classification jobs.
+    * Retrieves a subset of information about one or more classification jobs.
     */
   def listClassificationJobs(params: ListClassificationJobsRequest): Request[ListClassificationJobsResponse, AWSError] = js.native
   def listClassificationJobs(

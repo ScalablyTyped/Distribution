@@ -18,6 +18,7 @@ object Namespace extends js.Object {
     * @returns The newly-defined namespace.
     **/
   def define(): js.Any = js.native
+  def define(name: js.UndefOr[scala.Nothing], members: js.Any): js.Any = js.native
   def define(name: String): js.Any = js.native
   def define(name: String, members: js.Any): js.Any = js.native
   /**
@@ -28,7 +29,11 @@ object Namespace extends js.Object {
     * @returns The newly-defined namespace.
     **/
   def defineWithParent(): js.Any = js.native
+  def defineWithParent(parentNamespace: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], members: js.Any): js.Any = js.native
+  def defineWithParent(parentNamespace: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
+  def defineWithParent(parentNamespace: js.UndefOr[scala.Nothing], name: String, members: js.Any): js.Any = js.native
   def defineWithParent(parentNamespace: js.Any): js.Any = js.native
+  def defineWithParent(parentNamespace: js.Any, name: js.UndefOr[scala.Nothing], members: js.Any): js.Any = js.native
   def defineWithParent(parentNamespace: js.Any, name: String): js.Any = js.native
   def defineWithParent(parentNamespace: js.Any, name: String, members: js.Any): js.Any = js.native
 }

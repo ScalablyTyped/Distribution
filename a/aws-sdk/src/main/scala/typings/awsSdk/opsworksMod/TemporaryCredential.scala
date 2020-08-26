@@ -26,18 +26,38 @@ trait TemporaryCredential extends js.Object {
 
 object TemporaryCredential {
   @scala.inline
-  def apply(
-    InstanceId: String = null,
-    Password: String = null,
-    Username: String = null,
-    ValidForInMinutes: js.UndefOr[Integer] = js.undefined
-  ): TemporaryCredential = {
+  def apply(): TemporaryCredential = {
     val __obj = js.Dynamic.literal()
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (Password != null) __obj.updateDynamic("Password")(Password.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
-    if (!js.isUndefined(ValidForInMinutes)) __obj.updateDynamic("ValidForInMinutes")(ValidForInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemporaryCredential]
   }
+  @scala.inline
+  implicit class TemporaryCredentialOps[Self <: TemporaryCredential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("Password", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+    @scala.inline
+    def setValidForInMinutes(value: Integer): Self = this.set("ValidForInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidForInMinutes: Self = this.set("ValidForInMinutes", js.undefined)
+  }
+  
 }
 

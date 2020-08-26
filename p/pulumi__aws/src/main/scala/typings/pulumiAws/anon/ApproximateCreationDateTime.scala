@@ -23,14 +23,41 @@ object ApproximateCreationDateTime {
     Keys: Record[String, _],
     SequenceNumber: String,
     SizeBytes: Double,
-    StreamViewType: String,
-    NewImage: Record[String, _] = null,
-    OldImage: Record[String, _] = null
+    StreamViewType: String
   ): ApproximateCreationDateTime = {
     val __obj = js.Dynamic.literal(ApproximateCreationDateTime = ApproximateCreationDateTime.asInstanceOf[js.Any], Keys = Keys.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any], SizeBytes = SizeBytes.asInstanceOf[js.Any], StreamViewType = StreamViewType.asInstanceOf[js.Any])
-    if (NewImage != null) __obj.updateDynamic("NewImage")(NewImage.asInstanceOf[js.Any])
-    if (OldImage != null) __obj.updateDynamic("OldImage")(OldImage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApproximateCreationDateTime]
   }
+  @scala.inline
+  implicit class ApproximateCreationDateTimeOps[Self <: ApproximateCreationDateTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproximateCreationDateTime(value: Double): Self = this.set("ApproximateCreationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeys(value: Record[String, _]): Self = this.set("Keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSequenceNumber(value: String): Self = this.set("SequenceNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizeBytes(value: Double): Self = this.set("SizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamViewType(value: String): Self = this.set("StreamViewType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewImage(value: Record[String, _]): Self = this.set("NewImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewImage: Self = this.set("NewImage", js.undefined)
+    @scala.inline
+    def setOldImage(value: Record[String, _]): Self = this.set("OldImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldImage: Self = this.set("OldImage", js.undefined)
+  }
+  
 }
 

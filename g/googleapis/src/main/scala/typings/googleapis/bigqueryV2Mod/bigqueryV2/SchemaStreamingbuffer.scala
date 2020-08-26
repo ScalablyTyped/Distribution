@@ -26,12 +26,34 @@ trait SchemaStreamingbuffer extends js.Object {
 
 object SchemaStreamingbuffer {
   @scala.inline
-  def apply(estimatedBytes: String = null, estimatedRows: String = null, oldestEntryTime: String = null): SchemaStreamingbuffer = {
+  def apply(): SchemaStreamingbuffer = {
     val __obj = js.Dynamic.literal()
-    if (estimatedBytes != null) __obj.updateDynamic("estimatedBytes")(estimatedBytes.asInstanceOf[js.Any])
-    if (estimatedRows != null) __obj.updateDynamic("estimatedRows")(estimatedRows.asInstanceOf[js.Any])
-    if (oldestEntryTime != null) __obj.updateDynamic("oldestEntryTime")(oldestEntryTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreamingbuffer]
   }
+  @scala.inline
+  implicit class SchemaStreamingbufferOps[Self <: SchemaStreamingbuffer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEstimatedBytes(value: String): Self = this.set("estimatedBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedBytes: Self = this.set("estimatedBytes", js.undefined)
+    @scala.inline
+    def setEstimatedRows(value: String): Self = this.set("estimatedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedRows: Self = this.set("estimatedRows", js.undefined)
+    @scala.inline
+    def setOldestEntryTime(value: String): Self = this.set("oldestEntryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldestEntryTime: Self = this.set("oldestEntryTime", js.undefined)
+  }
+  
 }
 

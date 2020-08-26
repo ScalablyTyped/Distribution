@@ -32,18 +32,40 @@ trait SchemaGoogleOperations extends js.Object {
 
 object SchemaGoogleOperations {
   @scala.inline
-  def apply(
-    affectedUserEmails: js.Array[String] = null,
-    attachmentData: SchemaAttachment = null,
-    description: String = null,
-    title: String = null
-  ): SchemaGoogleOperations = {
+  def apply(): SchemaGoogleOperations = {
     val __obj = js.Dynamic.literal()
-    if (affectedUserEmails != null) __obj.updateDynamic("affectedUserEmails")(affectedUserEmails.asInstanceOf[js.Any])
-    if (attachmentData != null) __obj.updateDynamic("attachmentData")(attachmentData.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleOperations]
   }
+  @scala.inline
+  implicit class SchemaGoogleOperationsOps[Self <: SchemaGoogleOperations] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffectedUserEmailsVarargs(value: String*): Self = this.set("affectedUserEmails", js.Array(value :_*))
+    @scala.inline
+    def setAffectedUserEmails(value: js.Array[String]): Self = this.set("affectedUserEmails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectedUserEmails: Self = this.set("affectedUserEmails", js.undefined)
+    @scala.inline
+    def setAttachmentData(value: SchemaAttachment): Self = this.set("attachmentData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentData: Self = this.set("attachmentData", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

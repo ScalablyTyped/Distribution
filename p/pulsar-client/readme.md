@@ -10,9 +10,9 @@ Pulsar Node.js client
 | ------------------ | :-------------: |
 | Full name          | pulsar-client |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 3819 |
+| # downloads        | 3648 |
 | # stars            | 0 |
 
 ## Links

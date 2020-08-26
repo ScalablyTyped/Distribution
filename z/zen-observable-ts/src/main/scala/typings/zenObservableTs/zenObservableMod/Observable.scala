@@ -20,6 +20,11 @@ trait Observable[T] extends js.Object {
   def reduce[R](fn: js.Function2[/* previousValue */ R | T, /* currentValue */ T, R | T]): Observable[R | T] = js.native
   def reduce[R](fn: js.Function2[R | T, /* currentValue */ T, R | T], initialValue: R | T): Observable[R | T] = js.native
   def subscribe(observerOrNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
+  def subscribe(
+    observerOrNext: js.Function1[/* value */ T, Unit],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): Subscription = js.native
   def subscribe(observerOrNext: js.Function1[/* value */ T, Unit], error: js.Function1[/* error */ js.Any, Unit]): Subscription = js.native
   def subscribe(
     observerOrNext: js.Function1[/* value */ T, Unit],
@@ -27,6 +32,11 @@ trait Observable[T] extends js.Object {
     complete: js.Function0[Unit]
   ): Subscription = js.native
   def subscribe(observerOrNext: typings.zenObservableTs.typesMod.ZenObservable.Observer[T]): Subscription = js.native
+  def subscribe(
+    observerOrNext: typings.zenObservableTs.typesMod.ZenObservable.Observer[T],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): Subscription = js.native
   def subscribe(
     observerOrNext: typings.zenObservableTs.typesMod.ZenObservable.Observer[T],
     error: js.Function1[/* error */ js.Any, Unit]

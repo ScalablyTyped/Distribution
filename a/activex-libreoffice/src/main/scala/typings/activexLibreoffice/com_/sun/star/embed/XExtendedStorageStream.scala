@@ -16,6 +16,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This interface allows access to an extended storage stream that might be transacted. */
+@js.native
 trait XExtendedStorageStream
   extends XStream
      with XComponent

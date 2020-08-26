@@ -82,46 +82,94 @@ trait ReplicationTask extends js.Object {
 
 object ReplicationTask {
   @scala.inline
-  def apply(
-    CdcStartPosition: String = null,
-    CdcStopPosition: String = null,
-    LastFailureMessage: String = null,
-    MigrationType: MigrationTypeValue = null,
-    RecoveryCheckpoint: String = null,
-    ReplicationInstanceArn: String = null,
-    ReplicationTaskArn: String = null,
-    ReplicationTaskCreationDate: TStamp = null,
-    ReplicationTaskIdentifier: String = null,
-    ReplicationTaskSettings: String = null,
-    ReplicationTaskStartDate: TStamp = null,
-    ReplicationTaskStats: ReplicationTaskStats = null,
-    SourceEndpointArn: String = null,
-    Status: String = null,
-    StopReason: String = null,
-    TableMappings: String = null,
-    TargetEndpointArn: String = null,
-    TaskData: String = null
-  ): ReplicationTask = {
+  def apply(): ReplicationTask = {
     val __obj = js.Dynamic.literal()
-    if (CdcStartPosition != null) __obj.updateDynamic("CdcStartPosition")(CdcStartPosition.asInstanceOf[js.Any])
-    if (CdcStopPosition != null) __obj.updateDynamic("CdcStopPosition")(CdcStopPosition.asInstanceOf[js.Any])
-    if (LastFailureMessage != null) __obj.updateDynamic("LastFailureMessage")(LastFailureMessage.asInstanceOf[js.Any])
-    if (MigrationType != null) __obj.updateDynamic("MigrationType")(MigrationType.asInstanceOf[js.Any])
-    if (RecoveryCheckpoint != null) __obj.updateDynamic("RecoveryCheckpoint")(RecoveryCheckpoint.asInstanceOf[js.Any])
-    if (ReplicationInstanceArn != null) __obj.updateDynamic("ReplicationInstanceArn")(ReplicationInstanceArn.asInstanceOf[js.Any])
-    if (ReplicationTaskArn != null) __obj.updateDynamic("ReplicationTaskArn")(ReplicationTaskArn.asInstanceOf[js.Any])
-    if (ReplicationTaskCreationDate != null) __obj.updateDynamic("ReplicationTaskCreationDate")(ReplicationTaskCreationDate.asInstanceOf[js.Any])
-    if (ReplicationTaskIdentifier != null) __obj.updateDynamic("ReplicationTaskIdentifier")(ReplicationTaskIdentifier.asInstanceOf[js.Any])
-    if (ReplicationTaskSettings != null) __obj.updateDynamic("ReplicationTaskSettings")(ReplicationTaskSettings.asInstanceOf[js.Any])
-    if (ReplicationTaskStartDate != null) __obj.updateDynamic("ReplicationTaskStartDate")(ReplicationTaskStartDate.asInstanceOf[js.Any])
-    if (ReplicationTaskStats != null) __obj.updateDynamic("ReplicationTaskStats")(ReplicationTaskStats.asInstanceOf[js.Any])
-    if (SourceEndpointArn != null) __obj.updateDynamic("SourceEndpointArn")(SourceEndpointArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StopReason != null) __obj.updateDynamic("StopReason")(StopReason.asInstanceOf[js.Any])
-    if (TableMappings != null) __obj.updateDynamic("TableMappings")(TableMappings.asInstanceOf[js.Any])
-    if (TargetEndpointArn != null) __obj.updateDynamic("TargetEndpointArn")(TargetEndpointArn.asInstanceOf[js.Any])
-    if (TaskData != null) __obj.updateDynamic("TaskData")(TaskData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTask]
   }
+  @scala.inline
+  implicit class ReplicationTaskOps[Self <: ReplicationTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCdcStartPosition(value: String): Self = this.set("CdcStartPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStartPosition: Self = this.set("CdcStartPosition", js.undefined)
+    @scala.inline
+    def setCdcStopPosition(value: String): Self = this.set("CdcStopPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdcStopPosition: Self = this.set("CdcStopPosition", js.undefined)
+    @scala.inline
+    def setLastFailureMessage(value: String): Self = this.set("LastFailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFailureMessage: Self = this.set("LastFailureMessage", js.undefined)
+    @scala.inline
+    def setMigrationType(value: MigrationTypeValue): Self = this.set("MigrationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMigrationType: Self = this.set("MigrationType", js.undefined)
+    @scala.inline
+    def setRecoveryCheckpoint(value: String): Self = this.set("RecoveryCheckpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoveryCheckpoint: Self = this.set("RecoveryCheckpoint", js.undefined)
+    @scala.inline
+    def setReplicationInstanceArn(value: String): Self = this.set("ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationInstanceArn: Self = this.set("ReplicationInstanceArn", js.undefined)
+    @scala.inline
+    def setReplicationTaskArn(value: String): Self = this.set("ReplicationTaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskArn: Self = this.set("ReplicationTaskArn", js.undefined)
+    @scala.inline
+    def setReplicationTaskCreationDate(value: TStamp): Self = this.set("ReplicationTaskCreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskCreationDate: Self = this.set("ReplicationTaskCreationDate", js.undefined)
+    @scala.inline
+    def setReplicationTaskIdentifier(value: String): Self = this.set("ReplicationTaskIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskIdentifier: Self = this.set("ReplicationTaskIdentifier", js.undefined)
+    @scala.inline
+    def setReplicationTaskSettings(value: String): Self = this.set("ReplicationTaskSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskSettings: Self = this.set("ReplicationTaskSettings", js.undefined)
+    @scala.inline
+    def setReplicationTaskStartDate(value: TStamp): Self = this.set("ReplicationTaskStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskStartDate: Self = this.set("ReplicationTaskStartDate", js.undefined)
+    @scala.inline
+    def setReplicationTaskStats(value: ReplicationTaskStats): Self = this.set("ReplicationTaskStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationTaskStats: Self = this.set("ReplicationTaskStats", js.undefined)
+    @scala.inline
+    def setSourceEndpointArn(value: String): Self = this.set("SourceEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceEndpointArn: Self = this.set("SourceEndpointArn", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStopReason(value: String): Self = this.set("StopReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopReason: Self = this.set("StopReason", js.undefined)
+    @scala.inline
+    def setTableMappings(value: String): Self = this.set("TableMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableMappings: Self = this.set("TableMappings", js.undefined)
+    @scala.inline
+    def setTargetEndpointArn(value: String): Self = this.set("TargetEndpointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetEndpointArn: Self = this.set("TargetEndpointArn", js.undefined)
+    @scala.inline
+    def setTaskData(value: String): Self = this.set("TaskData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskData: Self = this.set("TaskData", js.undefined)
+  }
+  
 }
 

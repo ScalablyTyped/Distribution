@@ -26,18 +26,40 @@ trait Protection extends js.Object {
 
 object Protection {
   @scala.inline
-  def apply(
-    HealthCheckIds: HealthCheckIds = null,
-    Id: ProtectionId = null,
-    Name: ProtectionName = null,
-    ResourceArn: ResourceArn = null
-  ): Protection = {
+  def apply(): Protection = {
     val __obj = js.Dynamic.literal()
-    if (HealthCheckIds != null) __obj.updateDynamic("HealthCheckIds")(HealthCheckIds.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Protection]
   }
+  @scala.inline
+  implicit class ProtectionOps[Self <: Protection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthCheckIdsVarargs(value: HealthCheckId*): Self = this.set("HealthCheckIds", js.Array(value :_*))
+    @scala.inline
+    def setHealthCheckIds(value: HealthCheckIds): Self = this.set("HealthCheckIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckIds: Self = this.set("HealthCheckIds", js.undefined)
+    @scala.inline
+    def setId(value: ProtectionId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: ProtectionName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setResourceArn(value: ResourceArn): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+  }
+  
 }
 

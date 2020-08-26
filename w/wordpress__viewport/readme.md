@@ -10,15 +10,14 @@ Viewport module for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/viewport |
 | Keywords           | wordpress, viewport |
-| # releases         | 32 |
+| # releases         | 34 |
 | # dependents       | 7 |
-| # downloads        | 132531 |
+| # downloads        | 139232 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/viewport/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fviewport)
     
 

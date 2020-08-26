@@ -58,24 +58,59 @@ object ActivityTaskScheduledEventAttributes {
     activityId: ActivityId,
     activityType: ActivityType,
     decisionTaskCompletedEventId: EventId,
-    taskList: TaskList,
-    control: Data = null,
-    heartbeatTimeout: DurationInSecondsOptional = null,
-    input: Data = null,
-    scheduleToCloseTimeout: DurationInSecondsOptional = null,
-    scheduleToStartTimeout: DurationInSecondsOptional = null,
-    startToCloseTimeout: DurationInSecondsOptional = null,
-    taskPriority: TaskPriority = null
+    taskList: TaskList
   ): ActivityTaskScheduledEventAttributes = {
     val __obj = js.Dynamic.literal(activityId = activityId.asInstanceOf[js.Any], activityType = activityType.asInstanceOf[js.Any], decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], taskList = taskList.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (scheduleToCloseTimeout != null) __obj.updateDynamic("scheduleToCloseTimeout")(scheduleToCloseTimeout.asInstanceOf[js.Any])
-    if (scheduleToStartTimeout != null) __obj.updateDynamic("scheduleToStartTimeout")(scheduleToStartTimeout.asInstanceOf[js.Any])
-    if (startToCloseTimeout != null) __obj.updateDynamic("startToCloseTimeout")(startToCloseTimeout.asInstanceOf[js.Any])
-    if (taskPriority != null) __obj.updateDynamic("taskPriority")(taskPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityTaskScheduledEventAttributes]
   }
+  @scala.inline
+  implicit class ActivityTaskScheduledEventAttributesOps[Self <: ActivityTaskScheduledEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityId(value: ActivityId): Self = this.set("activityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivityType(value: ActivityType): Self = this.set("activityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecisionTaskCompletedEventId(value: EventId): Self = this.set("decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskList(value: TaskList): Self = this.set("taskList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setControl(value: Data): Self = this.set("control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControl: Self = this.set("control", js.undefined)
+    @scala.inline
+    def setHeartbeatTimeout(value: DurationInSecondsOptional): Self = this.set("heartbeatTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeartbeatTimeout: Self = this.set("heartbeatTimeout", js.undefined)
+    @scala.inline
+    def setInput(value: Data): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("scheduleToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleToCloseTimeout: Self = this.set("scheduleToCloseTimeout", js.undefined)
+    @scala.inline
+    def setScheduleToStartTimeout(value: DurationInSecondsOptional): Self = this.set("scheduleToStartTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleToStartTimeout: Self = this.set("scheduleToStartTimeout", js.undefined)
+    @scala.inline
+    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("startToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartToCloseTimeout: Self = this.set("startToCloseTimeout", js.undefined)
+    @scala.inline
+    def setTaskPriority(value: TaskPriority): Self = this.set("taskPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskPriority: Self = this.set("taskPriority", js.undefined)
+  }
+  
 }
 

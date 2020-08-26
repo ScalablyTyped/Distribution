@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/metadata/ValidationMetadata", JSImport.Namespace)
+@JSImport("class-validator/types/metadata/ValidationMetadata", JSImport.Namespace)
 @js.native
 object validationMetadataMod extends js.Object {
   @js.native

@@ -34,22 +34,46 @@ trait WorkGroupConfigurationUpdates extends js.Object {
 
 object WorkGroupConfigurationUpdates {
   @scala.inline
-  def apply(
-    BytesScannedCutoffPerQuery: js.UndefOr[BytesScannedCutoffValue] = js.undefined,
-    EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined,
-    PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
-    RemoveBytesScannedCutoffPerQuery: js.UndefOr[BoxedBoolean] = js.undefined,
-    RequesterPaysEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
-    ResultConfigurationUpdates: ResultConfigurationUpdates = null
-  ): WorkGroupConfigurationUpdates = {
+  def apply(): WorkGroupConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesScannedCutoffPerQuery)) __obj.updateDynamic("BytesScannedCutoffPerQuery")(BytesScannedCutoffPerQuery.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnforceWorkGroupConfiguration)) __obj.updateDynamic("EnforceWorkGroupConfiguration")(EnforceWorkGroupConfiguration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PublishCloudWatchMetricsEnabled)) __obj.updateDynamic("PublishCloudWatchMetricsEnabled")(PublishCloudWatchMetricsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveBytesScannedCutoffPerQuery)) __obj.updateDynamic("RemoveBytesScannedCutoffPerQuery")(RemoveBytesScannedCutoffPerQuery.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPaysEnabled)) __obj.updateDynamic("RequesterPaysEnabled")(RequesterPaysEnabled.get.asInstanceOf[js.Any])
-    if (ResultConfigurationUpdates != null) __obj.updateDynamic("ResultConfigurationUpdates")(ResultConfigurationUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkGroupConfigurationUpdates]
   }
+  @scala.inline
+  implicit class WorkGroupConfigurationUpdatesOps[Self <: WorkGroupConfigurationUpdates] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesScannedCutoffPerQuery(value: BytesScannedCutoffValue): Self = this.set("BytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesScannedCutoffPerQuery: Self = this.set("BytesScannedCutoffPerQuery", js.undefined)
+    @scala.inline
+    def setEnforceWorkGroupConfiguration(value: BoxedBoolean): Self = this.set("EnforceWorkGroupConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceWorkGroupConfiguration: Self = this.set("EnforceWorkGroupConfiguration", js.undefined)
+    @scala.inline
+    def setPublishCloudWatchMetricsEnabled(value: BoxedBoolean): Self = this.set("PublishCloudWatchMetricsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishCloudWatchMetricsEnabled: Self = this.set("PublishCloudWatchMetricsEnabled", js.undefined)
+    @scala.inline
+    def setRemoveBytesScannedCutoffPerQuery(value: BoxedBoolean): Self = this.set("RemoveBytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveBytesScannedCutoffPerQuery: Self = this.set("RemoveBytesScannedCutoffPerQuery", js.undefined)
+    @scala.inline
+    def setRequesterPaysEnabled(value: BoxedBoolean): Self = this.set("RequesterPaysEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterPaysEnabled: Self = this.set("RequesterPaysEnabled", js.undefined)
+    @scala.inline
+    def setResultConfigurationUpdates(value: ResultConfigurationUpdates): Self = this.set("ResultConfigurationUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultConfigurationUpdates: Self = this.set("ResultConfigurationUpdates", js.undefined)
+  }
+  
 }
 

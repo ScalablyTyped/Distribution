@@ -57,9 +57,9 @@ trait SmbFileShareArgs extends js.Object {
     */
   val roleArn: Input[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A list of users in the Active Directory that are allowed to access the file share. Only valid if `authentication` is set to `ActiveDirectory`.
     */
@@ -68,35 +68,76 @@ trait SmbFileShareArgs extends js.Object {
 
 object SmbFileShareArgs {
   @scala.inline
-  def apply(
-    gatewayArn: Input[String],
-    locationArn: Input[String],
-    roleArn: Input[String],
-    authentication: Input[String] = null,
-    defaultStorageClass: Input[String] = null,
-    guessMimeTypeEnabled: Input[Boolean] = null,
-    invalidUserLists: Input[js.Array[Input[String]]] = null,
-    kmsEncrypted: Input[Boolean] = null,
-    kmsKeyArn: Input[String] = null,
-    objectAcl: Input[String] = null,
-    readOnly: Input[Boolean] = null,
-    requesterPays: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null,
-    validUserLists: Input[js.Array[Input[String]]] = null
-  ): SmbFileShareArgs = {
+  def apply(gatewayArn: Input[String], locationArn: Input[String], roleArn: Input[String]): SmbFileShareArgs = {
     val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any], locationArn = locationArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
-    if (defaultStorageClass != null) __obj.updateDynamic("defaultStorageClass")(defaultStorageClass.asInstanceOf[js.Any])
-    if (guessMimeTypeEnabled != null) __obj.updateDynamic("guessMimeTypeEnabled")(guessMimeTypeEnabled.asInstanceOf[js.Any])
-    if (invalidUserLists != null) __obj.updateDynamic("invalidUserLists")(invalidUserLists.asInstanceOf[js.Any])
-    if (kmsEncrypted != null) __obj.updateDynamic("kmsEncrypted")(kmsEncrypted.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
-    if (objectAcl != null) __obj.updateDynamic("objectAcl")(objectAcl.asInstanceOf[js.Any])
-    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (requesterPays != null) __obj.updateDynamic("requesterPays")(requesterPays.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (validUserLists != null) __obj.updateDynamic("validUserLists")(validUserLists.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmbFileShareArgs]
   }
+  @scala.inline
+  implicit class SmbFileShareArgsOps[Self <: SmbFileShareArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayArn(value: Input[String]): Self = this.set("gatewayArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocationArn(value: Input[String]): Self = this.set("locationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthentication(value: Input[String]): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    @scala.inline
+    def setDefaultStorageClass(value: Input[String]): Self = this.set("defaultStorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultStorageClass: Self = this.set("defaultStorageClass", js.undefined)
+    @scala.inline
+    def setGuessMimeTypeEnabled(value: Input[Boolean]): Self = this.set("guessMimeTypeEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuessMimeTypeEnabled: Self = this.set("guessMimeTypeEnabled", js.undefined)
+    @scala.inline
+    def setInvalidUserListsVarargs(value: Input[String]*): Self = this.set("invalidUserLists", js.Array(value :_*))
+    @scala.inline
+    def setInvalidUserLists(value: Input[js.Array[Input[String]]]): Self = this.set("invalidUserLists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidUserLists: Self = this.set("invalidUserLists", js.undefined)
+    @scala.inline
+    def setKmsEncrypted(value: Input[Boolean]): Self = this.set("kmsEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsEncrypted: Self = this.set("kmsEncrypted", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    @scala.inline
+    def setObjectAcl(value: Input[String]): Self = this.set("objectAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectAcl: Self = this.set("objectAcl", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Input[Boolean]): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRequesterPays(value: Input[Boolean]): Self = this.set("requesterPays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterPays: Self = this.set("requesterPays", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setValidUserListsVarargs(value: Input[String]*): Self = this.set("validUserLists", js.Array(value :_*))
+    @scala.inline
+    def setValidUserLists(value: Input[js.Array[Input[String]]]): Self = this.set("validUserLists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUserLists: Self = this.set("validUserLists", js.undefined)
+  }
+  
 }
 

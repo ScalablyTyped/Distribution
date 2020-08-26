@@ -42,20 +42,44 @@ trait SchemaReplaceAllShapesWithSheetsChartRequest extends js.Object {
 
 object SchemaReplaceAllShapesWithSheetsChartRequest {
   @scala.inline
-  def apply(
-    chartId: js.UndefOr[Double] = js.undefined,
-    containsText: SchemaSubstringMatchCriteria = null,
-    linkingMode: String = null,
-    pageObjectIds: js.Array[String] = null,
-    spreadsheetId: String = null
-  ): SchemaReplaceAllShapesWithSheetsChartRequest = {
+  def apply(): SchemaReplaceAllShapesWithSheetsChartRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chartId)) __obj.updateDynamic("chartId")(chartId.get.asInstanceOf[js.Any])
-    if (containsText != null) __obj.updateDynamic("containsText")(containsText.asInstanceOf[js.Any])
-    if (linkingMode != null) __obj.updateDynamic("linkingMode")(linkingMode.asInstanceOf[js.Any])
-    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds.asInstanceOf[js.Any])
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReplaceAllShapesWithSheetsChartRequest]
   }
+  @scala.inline
+  implicit class SchemaReplaceAllShapesWithSheetsChartRequestOps[Self <: SchemaReplaceAllShapesWithSheetsChartRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChartId(value: Double): Self = this.set("chartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartId: Self = this.set("chartId", js.undefined)
+    @scala.inline
+    def setContainsText(value: SchemaSubstringMatchCriteria): Self = this.set("containsText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsText: Self = this.set("containsText", js.undefined)
+    @scala.inline
+    def setLinkingMode(value: String): Self = this.set("linkingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkingMode: Self = this.set("linkingMode", js.undefined)
+    @scala.inline
+    def setPageObjectIdsVarargs(value: String*): Self = this.set("pageObjectIds", js.Array(value :_*))
+    @scala.inline
+    def setPageObjectIds(value: js.Array[String]): Self = this.set("pageObjectIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageObjectIds: Self = this.set("pageObjectIds", js.undefined)
+    @scala.inline
+    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+  }
+  
 }
 

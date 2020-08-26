@@ -31,6 +31,7 @@ class ResourceQuestmilestones protected () extends js.Object {
     */
   def claim(): GaxiosPromise[Unit] = js.native
   def claim(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def claim(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def claim(params: ParamsResourceQuestmilestonesClaim): GaxiosPromise[Unit] = js.native
   def claim(params: ParamsResourceQuestmilestonesClaim, callback: BodyResponseCallback[Unit]): Unit = js.native
   def claim(

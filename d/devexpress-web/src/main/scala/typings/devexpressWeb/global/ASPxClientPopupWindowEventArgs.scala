@@ -16,10 +16,5 @@ class ASPxClientPopupWindowEventArgs protected ()
     * @param window A ASPxClientPopupWindow object representing the popup window related to the generated event.
     */
   def this(window: typings.devexpressWeb.ASPxClientPopupWindow) = this()
-  /**
-    * Gets the popup window object related to the event.
-    */
-  /* CompleteClass */
-  override var window: typings.devexpressWeb.ASPxClientPopupWindow = js.native
 }
 

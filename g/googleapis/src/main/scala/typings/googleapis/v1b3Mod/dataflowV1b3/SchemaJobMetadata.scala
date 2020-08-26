@@ -42,24 +42,62 @@ trait SchemaJobMetadata extends js.Object {
 
 object SchemaJobMetadata {
   @scala.inline
-  def apply(
-    bigTableDetails: js.Array[SchemaBigTableIODetails] = null,
-    bigqueryDetails: js.Array[SchemaBigQueryIODetails] = null,
-    datastoreDetails: js.Array[SchemaDatastoreIODetails] = null,
-    fileDetails: js.Array[SchemaFileIODetails] = null,
-    pubsubDetails: js.Array[SchemaPubSubIODetails] = null,
-    sdkVersion: SchemaSdkVersion = null,
-    spannerDetails: js.Array[SchemaSpannerIODetails] = null
-  ): SchemaJobMetadata = {
+  def apply(): SchemaJobMetadata = {
     val __obj = js.Dynamic.literal()
-    if (bigTableDetails != null) __obj.updateDynamic("bigTableDetails")(bigTableDetails.asInstanceOf[js.Any])
-    if (bigqueryDetails != null) __obj.updateDynamic("bigqueryDetails")(bigqueryDetails.asInstanceOf[js.Any])
-    if (datastoreDetails != null) __obj.updateDynamic("datastoreDetails")(datastoreDetails.asInstanceOf[js.Any])
-    if (fileDetails != null) __obj.updateDynamic("fileDetails")(fileDetails.asInstanceOf[js.Any])
-    if (pubsubDetails != null) __obj.updateDynamic("pubsubDetails")(pubsubDetails.asInstanceOf[js.Any])
-    if (sdkVersion != null) __obj.updateDynamic("sdkVersion")(sdkVersion.asInstanceOf[js.Any])
-    if (spannerDetails != null) __obj.updateDynamic("spannerDetails")(spannerDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobMetadata]
   }
+  @scala.inline
+  implicit class SchemaJobMetadataOps[Self <: SchemaJobMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBigTableDetailsVarargs(value: SchemaBigTableIODetails*): Self = this.set("bigTableDetails", js.Array(value :_*))
+    @scala.inline
+    def setBigTableDetails(value: js.Array[SchemaBigTableIODetails]): Self = this.set("bigTableDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigTableDetails: Self = this.set("bigTableDetails", js.undefined)
+    @scala.inline
+    def setBigqueryDetailsVarargs(value: SchemaBigQueryIODetails*): Self = this.set("bigqueryDetails", js.Array(value :_*))
+    @scala.inline
+    def setBigqueryDetails(value: js.Array[SchemaBigQueryIODetails]): Self = this.set("bigqueryDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigqueryDetails: Self = this.set("bigqueryDetails", js.undefined)
+    @scala.inline
+    def setDatastoreDetailsVarargs(value: SchemaDatastoreIODetails*): Self = this.set("datastoreDetails", js.Array(value :_*))
+    @scala.inline
+    def setDatastoreDetails(value: js.Array[SchemaDatastoreIODetails]): Self = this.set("datastoreDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatastoreDetails: Self = this.set("datastoreDetails", js.undefined)
+    @scala.inline
+    def setFileDetailsVarargs(value: SchemaFileIODetails*): Self = this.set("fileDetails", js.Array(value :_*))
+    @scala.inline
+    def setFileDetails(value: js.Array[SchemaFileIODetails]): Self = this.set("fileDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileDetails: Self = this.set("fileDetails", js.undefined)
+    @scala.inline
+    def setPubsubDetailsVarargs(value: SchemaPubSubIODetails*): Self = this.set("pubsubDetails", js.Array(value :_*))
+    @scala.inline
+    def setPubsubDetails(value: js.Array[SchemaPubSubIODetails]): Self = this.set("pubsubDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubsubDetails: Self = this.set("pubsubDetails", js.undefined)
+    @scala.inline
+    def setSdkVersion(value: SchemaSdkVersion): Self = this.set("sdkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdkVersion: Self = this.set("sdkVersion", js.undefined)
+    @scala.inline
+    def setSpannerDetailsVarargs(value: SchemaSpannerIODetails*): Self = this.set("spannerDetails", js.Array(value :_*))
+    @scala.inline
+    def setSpannerDetails(value: js.Array[SchemaSpannerIODetails]): Self = this.set("spannerDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpannerDetails: Self = this.set("spannerDetails", js.undefined)
+  }
+  
 }
 

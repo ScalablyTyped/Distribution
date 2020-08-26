@@ -79,44 +79,92 @@ trait SchemaAnnotation extends js.Object {
 
 object SchemaAnnotation {
   @scala.inline
-  def apply(
-    afterSelectedText: String = null,
-    beforeSelectedText: String = null,
-    clientVersionRanges: CfiRange = null,
-    created: String = null,
-    currentVersionRanges: CfiRange = null,
-    data: String = null,
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    highlightStyle: String = null,
-    id: String = null,
-    kind: String = null,
-    layerId: String = null,
-    layerSummary: AllowedCharacterCount = null,
-    pageIds: js.Array[String] = null,
-    selectedText: String = null,
-    selfLink: String = null,
-    updated: String = null,
-    volumeId: String = null
-  ): SchemaAnnotation = {
+  def apply(): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (afterSelectedText != null) __obj.updateDynamic("afterSelectedText")(afterSelectedText.asInstanceOf[js.Any])
-    if (beforeSelectedText != null) __obj.updateDynamic("beforeSelectedText")(beforeSelectedText.asInstanceOf[js.Any])
-    if (clientVersionRanges != null) __obj.updateDynamic("clientVersionRanges")(clientVersionRanges.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (currentVersionRanges != null) __obj.updateDynamic("currentVersionRanges")(currentVersionRanges.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (highlightStyle != null) __obj.updateDynamic("highlightStyle")(highlightStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (layerSummary != null) __obj.updateDynamic("layerSummary")(layerSummary.asInstanceOf[js.Any])
-    if (pageIds != null) __obj.updateDynamic("pageIds")(pageIds.asInstanceOf[js.Any])
-    if (selectedText != null) __obj.updateDynamic("selectedText")(selectedText.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnnotation]
   }
+  @scala.inline
+  implicit class SchemaAnnotationOps[Self <: SchemaAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterSelectedText(value: String): Self = this.set("afterSelectedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterSelectedText: Self = this.set("afterSelectedText", js.undefined)
+    @scala.inline
+    def setBeforeSelectedText(value: String): Self = this.set("beforeSelectedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeforeSelectedText: Self = this.set("beforeSelectedText", js.undefined)
+    @scala.inline
+    def setClientVersionRanges(value: CfiRange): Self = this.set("clientVersionRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientVersionRanges: Self = this.set("clientVersionRanges", js.undefined)
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setCurrentVersionRanges(value: CfiRange): Self = this.set("currentVersionRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentVersionRanges: Self = this.set("currentVersionRanges", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setHighlightStyle(value: String): Self = this.set("highlightStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightStyle: Self = this.set("highlightStyle", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("layerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("layerId", js.undefined)
+    @scala.inline
+    def setLayerSummary(value: AllowedCharacterCount): Self = this.set("layerSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerSummary: Self = this.set("layerSummary", js.undefined)
+    @scala.inline
+    def setPageIdsVarargs(value: String*): Self = this.set("pageIds", js.Array(value :_*))
+    @scala.inline
+    def setPageIds(value: js.Array[String]): Self = this.set("pageIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageIds: Self = this.set("pageIds", js.undefined)
+    @scala.inline
+    def setSelectedText(value: String): Self = this.set("selectedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedText: Self = this.set("selectedText", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+  }
+  
 }
 

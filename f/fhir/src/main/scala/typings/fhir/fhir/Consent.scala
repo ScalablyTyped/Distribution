@@ -8,177 +8,228 @@ import scala.scalajs.js.annotation._
   * A healthcare consumer's policy choices to permits or denies recipients or roles to perform actions for specific purposes and periods of time
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Consent extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Consent extends DomainResource {
   /**
     * Contains extended information for property 'dateTime'.
     */
-  var _dateTime: js.UndefOr[Element] = js.undefined
+  var _dateTime: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'policyRule'.
     */
-  var _policyRule: js.UndefOr[Element] = js.undefined
+  var _policyRule: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Actions controlled by this consent
     */
-  var action: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var action: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Who|what controlled by this consent (or group, by role)
     */
-  var actor: js.UndefOr[js.Array[ConsentActor]] = js.undefined
+  var actor: js.UndefOr[js.Array[ConsentActor]] = js.native
   /**
     * Classification of the consent statement - for indexing/retrieval
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Who is agreeing to the policy and exceptions
     */
-  var consentingParty: js.UndefOr[js.Array[Reference]] = js.undefined
+  var consentingParty: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Data controlled by this consent
     */
-  var data: js.UndefOr[js.Array[ConsentData]] = js.undefined
+  var data: js.UndefOr[js.Array[ConsentData]] = js.native
   /**
     * Timeframe for data controlled by this consent
     */
-  var dataPeriod: js.UndefOr[Period] = js.undefined
+  var dataPeriod: js.UndefOr[Period] = js.native
   /**
     * When this Consent was created or indexed
     */
-  var dateTime: js.UndefOr[typings.fhir.fhir.dateTime] = js.undefined
+  var dateTime: js.UndefOr[typings.fhir.fhir.dateTime] = js.native
   /**
     * Additional rule -  addition or removal of permissions
     */
-  var except: js.UndefOr[js.Array[ConsentExcept]] = js.undefined
+  var except: js.UndefOr[js.Array[ConsentExcept]] = js.native
   /**
     * Identifier for this record (external references)
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Custodian of the consent
     */
-  var organization: js.UndefOr[js.Array[Reference]] = js.undefined
+  var organization: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Who the consent applies to
     */
-  var patient: Reference
+  var patient: Reference = js.native
   /**
     * Period that this consent applies
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * Policies covered by this consent
     */
-  var policy: js.UndefOr[js.Array[ConsentPolicy]] = js.undefined
+  var policy: js.UndefOr[js.Array[ConsentPolicy]] = js.native
   /**
     * Policy that this consents to
     */
-  var policyRule: js.UndefOr[uri] = js.undefined
+  var policyRule: js.UndefOr[uri] = js.native
   /**
     * Context of activities for which the agreement is made
     */
-  var purpose: js.UndefOr[js.Array[Coding]] = js.undefined
+  var purpose: js.UndefOr[js.Array[Coding]] = js.native
   /**
     * Security Labels that define affected resources
     */
-  var securityLabel: js.UndefOr[js.Array[Coding]] = js.undefined
+  var securityLabel: js.UndefOr[js.Array[Coding]] = js.native
   /**
     * Source from which this consent is taken
     */
-  var sourceAttachment: js.UndefOr[Attachment] = js.undefined
+  var sourceAttachment: js.UndefOr[Attachment] = js.native
   /**
     * Source from which this consent is taken
     */
-  var sourceIdentifier: js.UndefOr[Identifier] = js.undefined
+  var sourceIdentifier: js.UndefOr[Identifier] = js.native
   /**
     * Source from which this consent is taken
     */
-  var sourceReference: js.UndefOr[Reference] = js.undefined
+  var sourceReference: js.UndefOr[Reference] = js.native
   /**
     * draft | proposed | active | rejected | inactive | entered-in-error
     */
-  var status: code
+  var status: code = js.native
 }
 
 object Consent {
   @scala.inline
-  def apply(
-    patient: Reference,
-    status: code,
-    _dateTime: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _policyRule: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    action: js.Array[CodeableConcept] = null,
-    actor: js.Array[ConsentActor] = null,
-    category: js.Array[CodeableConcept] = null,
-    consentingParty: js.Array[Reference] = null,
-    contained: js.Array[Resource] = null,
-    data: js.Array[ConsentData] = null,
-    dataPeriod: Period = null,
-    dateTime: dateTime = null,
-    except: js.Array[ConsentExcept] = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    organization: js.Array[Reference] = null,
-    period: Period = null,
-    policy: js.Array[ConsentPolicy] = null,
-    policyRule: uri = null,
-    purpose: js.Array[Coding] = null,
-    resourceType: code = null,
-    securityLabel: js.Array[Coding] = null,
-    sourceAttachment: Attachment = null,
-    sourceIdentifier: Identifier = null,
-    sourceReference: Reference = null,
-    text: Narrative = null
-  ): Consent = {
+  def apply(patient: Reference, status: code): Consent = {
     val __obj = js.Dynamic.literal(patient = patient.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (_dateTime != null) __obj.updateDynamic("_dateTime")(_dateTime.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_policyRule != null) __obj.updateDynamic("_policyRule")(_policyRule.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (consentingParty != null) __obj.updateDynamic("consentingParty")(consentingParty.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataPeriod != null) __obj.updateDynamic("dataPeriod")(dataPeriod.asInstanceOf[js.Any])
-    if (dateTime != null) __obj.updateDynamic("dateTime")(dateTime.asInstanceOf[js.Any])
-    if (except != null) __obj.updateDynamic("except")(except.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (policyRule != null) __obj.updateDynamic("policyRule")(policyRule.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (securityLabel != null) __obj.updateDynamic("securityLabel")(securityLabel.asInstanceOf[js.Any])
-    if (sourceAttachment != null) __obj.updateDynamic("sourceAttachment")(sourceAttachment.asInstanceOf[js.Any])
-    if (sourceIdentifier != null) __obj.updateDynamic("sourceIdentifier")(sourceIdentifier.asInstanceOf[js.Any])
-    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Consent]
   }
+  @scala.inline
+  implicit class ConsentOps[Self <: Consent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_dateTime(value: Element): Self = this.set("_dateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_dateTime: Self = this.set("_dateTime", js.undefined)
+    @scala.inline
+    def set_policyRule(value: Element): Self = this.set("_policyRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_policyRule: Self = this.set("_policyRule", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setActionVarargs(value: CodeableConcept*): Self = this.set("action", js.Array(value :_*))
+    @scala.inline
+    def setAction(value: js.Array[CodeableConcept]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setActorVarargs(value: ConsentActor*): Self = this.set("actor", js.Array(value :_*))
+    @scala.inline
+    def setActor(value: js.Array[ConsentActor]): Self = this.set("actor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActor: Self = this.set("actor", js.undefined)
+    @scala.inline
+    def setCategoryVarargs(value: CodeableConcept*): Self = this.set("category", js.Array(value :_*))
+    @scala.inline
+    def setCategory(value: js.Array[CodeableConcept]): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setConsentingPartyVarargs(value: Reference*): Self = this.set("consentingParty", js.Array(value :_*))
+    @scala.inline
+    def setConsentingParty(value: js.Array[Reference]): Self = this.set("consentingParty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsentingParty: Self = this.set("consentingParty", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: ConsentData*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[ConsentData]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataPeriod(value: Period): Self = this.set("dataPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataPeriod: Self = this.set("dataPeriod", js.undefined)
+    @scala.inline
+    def setDateTime(value: dateTime): Self = this.set("dateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTime: Self = this.set("dateTime", js.undefined)
+    @scala.inline
+    def setExceptVarargs(value: ConsentExcept*): Self = this.set("except", js.Array(value :_*))
+    @scala.inline
+    def setExcept(value: js.Array[ConsentExcept]): Self = this.set("except", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcept: Self = this.set("except", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setOrganizationVarargs(value: Reference*): Self = this.set("organization", js.Array(value :_*))
+    @scala.inline
+    def setOrganization(value: js.Array[Reference]): Self = this.set("organization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganization: Self = this.set("organization", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setPolicyVarargs(value: ConsentPolicy*): Self = this.set("policy", js.Array(value :_*))
+    @scala.inline
+    def setPolicy(value: js.Array[ConsentPolicy]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setPolicyRule(value: uri): Self = this.set("policyRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyRule: Self = this.set("policyRule", js.undefined)
+    @scala.inline
+    def setPurposeVarargs(value: Coding*): Self = this.set("purpose", js.Array(value :_*))
+    @scala.inline
+    def setPurpose(value: js.Array[Coding]): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setSecurityLabelVarargs(value: Coding*): Self = this.set("securityLabel", js.Array(value :_*))
+    @scala.inline
+    def setSecurityLabel(value: js.Array[Coding]): Self = this.set("securityLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityLabel: Self = this.set("securityLabel", js.undefined)
+    @scala.inline
+    def setSourceAttachment(value: Attachment): Self = this.set("sourceAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceAttachment: Self = this.set("sourceAttachment", js.undefined)
+    @scala.inline
+    def setSourceIdentifier(value: Identifier): Self = this.set("sourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceIdentifier: Self = this.set("sourceIdentifier", js.undefined)
+    @scala.inline
+    def setSourceReference(value: Reference): Self = this.set("sourceReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceReference: Self = this.set("sourceReference", js.undefined)
+  }
+  
 }
 

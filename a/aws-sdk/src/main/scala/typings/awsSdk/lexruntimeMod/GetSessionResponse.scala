@@ -26,18 +26,40 @@ trait GetSessionResponse extends js.Object {
 
 object GetSessionResponse {
   @scala.inline
-  def apply(
-    dialogAction: DialogAction = null,
-    recentIntentSummaryView: IntentSummaryList = null,
-    sessionAttributes: StringMap = null,
-    sessionId: String = null
-  ): GetSessionResponse = {
+  def apply(): GetSessionResponse = {
     val __obj = js.Dynamic.literal()
-    if (dialogAction != null) __obj.updateDynamic("dialogAction")(dialogAction.asInstanceOf[js.Any])
-    if (recentIntentSummaryView != null) __obj.updateDynamic("recentIntentSummaryView")(recentIntentSummaryView.asInstanceOf[js.Any])
-    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSessionResponse]
   }
+  @scala.inline
+  implicit class GetSessionResponseOps[Self <: GetSessionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDialogAction(value: DialogAction): Self = this.set("dialogAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDialogAction: Self = this.set("dialogAction", js.undefined)
+    @scala.inline
+    def setRecentIntentSummaryViewVarargs(value: IntentSummary*): Self = this.set("recentIntentSummaryView", js.Array(value :_*))
+    @scala.inline
+    def setRecentIntentSummaryView(value: IntentSummaryList): Self = this.set("recentIntentSummaryView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecentIntentSummaryView: Self = this.set("recentIntentSummaryView", js.undefined)
+    @scala.inline
+    def setSessionAttributes(value: StringMap): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+    @scala.inline
+    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+  }
+  
 }
 

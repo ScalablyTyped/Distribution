@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait UserArgs extends js.Object {
   /**
     * When destroying this user, destroy even if it
-    * has non-this provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
-    * a user with non-this provider-managed access keys and login profile will fail to be destroyed.
+    * has non-provider-managed IAM access keys, login profile or MFA devices. Without `forceDestroy`
+    * a user with non-provider-managed access keys and login profile will fail to be destroyed.
     */
   val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -29,25 +29,47 @@ trait UserArgs extends js.Object {
   /**
     * Key-value mapping of tags for the IAM user
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object UserArgs {
   @scala.inline
-  def apply(
-    forceDestroy: Input[Boolean] = null,
-    name: Input[String] = null,
-    path: Input[String] = null,
-    permissionsBoundary: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): UserArgs = {
+  def apply(): UserArgs = {
     val __obj = js.Dynamic.literal()
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (permissionsBoundary != null) __obj.updateDynamic("permissionsBoundary")(permissionsBoundary.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserArgs]
   }
+  @scala.inline
+  implicit class UserArgsOps[Self <: UserArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPermissionsBoundary(value: Input[String]): Self = this.set("permissionsBoundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundary: Self = this.set("permissionsBoundary", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

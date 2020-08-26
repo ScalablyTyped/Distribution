@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class ScopedClient protected () extends js.Object {
   def this(url: String, options: Options) = this()
   def auth(): ScopedClient = js.native
+  def auth(user: js.UndefOr[scala.Nothing], pass: String): ScopedClient = js.native
   def auth(user: String): ScopedClient = js.native
   def auth(user: String, pass: String): ScopedClient = js.native
   def del(): ResponseCallback = js.native

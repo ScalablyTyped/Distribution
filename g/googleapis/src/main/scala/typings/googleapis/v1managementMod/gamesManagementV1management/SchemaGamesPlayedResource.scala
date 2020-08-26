@@ -24,11 +24,30 @@ trait SchemaGamesPlayedResource extends js.Object {
 
 object SchemaGamesPlayedResource {
   @scala.inline
-  def apply(autoMatched: js.UndefOr[Boolean] = js.undefined, timeMillis: String = null): SchemaGamesPlayedResource = {
+  def apply(): SchemaGamesPlayedResource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.get.asInstanceOf[js.Any])
-    if (timeMillis != null) __obj.updateDynamic("timeMillis")(timeMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGamesPlayedResource]
   }
+  @scala.inline
+  implicit class SchemaGamesPlayedResourceOps[Self <: SchemaGamesPlayedResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMatched(value: Boolean): Self = this.set("autoMatched", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatched: Self = this.set("autoMatched", js.undefined)
+    @scala.inline
+    def setTimeMillis(value: String): Self = this.set("timeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeMillis: Self = this.set("timeMillis", js.undefined)
+  }
+  
 }
 

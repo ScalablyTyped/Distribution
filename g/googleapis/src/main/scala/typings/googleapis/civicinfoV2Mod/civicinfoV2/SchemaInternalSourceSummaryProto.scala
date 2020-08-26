@@ -12,11 +12,30 @@ trait SchemaInternalSourceSummaryProto extends js.Object {
 
 object SchemaInternalSourceSummaryProto {
   @scala.inline
-  def apply(dataset: String = null, provider: String = null): SchemaInternalSourceSummaryProto = {
+  def apply(): SchemaInternalSourceSummaryProto = {
     val __obj = js.Dynamic.literal()
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInternalSourceSummaryProto]
   }
+  @scala.inline
+  implicit class SchemaInternalSourceSummaryProtoOps[Self <: SchemaInternalSourceSummaryProto] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataset(value: String): Self = this.set("dataset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataset: Self = this.set("dataset", js.undefined)
+    @scala.inline
+    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+  }
+  
 }
 

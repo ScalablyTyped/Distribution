@@ -10,8 +10,8 @@ String manipulation extensions for Underscore.js javascript library.
 | Full name          | underscore.string |
 | Keywords           | underscore, string |
 | # releases         | 2 |
-| # dependents       | 2489 |
-| # downloads        | 100242365 |
+| # dependents       | 2498 |
+| # downloads        | 98964246 |
 | # stars            | 56 |
 
 ## Links

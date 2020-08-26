@@ -12,7 +12,7 @@ Watch files and directories for changes
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 10 |
-| # downloads        | 95506 |
+| # downloads        | 91616 |
 | # stars            | 1 |
 
 ## Links

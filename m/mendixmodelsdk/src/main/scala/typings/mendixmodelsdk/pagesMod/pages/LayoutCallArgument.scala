@@ -29,20 +29,18 @@ class LayoutCallArgument protected () extends Element {
     * In version 6.8.0: introduced
     */
   def parameter: ILayoutParameter = js.native
-  def parameter(newValue: ILayoutParameter): js.Any = js.native
   /**
     * In version 6.8.0: deleted
     */
   def parameterName: String = js.native
-  def parameterName(newValue: String): js.Any = js.native
+  def parameterName_=(newValue: String): Unit = js.native
   def parameterQualifiedName: String = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def parameter_=(newValue: ILayoutParameter): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

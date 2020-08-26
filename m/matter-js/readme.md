@@ -10,9 +10,9 @@ a 2D rigid body physics engine for the web
 | ------------------ | :-------------: |
 | Full name          | matter-js |
 | Keywords           | javascript, canvas, html5, physics, physics engine, game engine, rigid body physics |
-| # releases         | 3 |
-| # dependents       | 38 |
-| # downloads        | 113483 |
+| # releases         | 2 |
+| # dependents       | 40 |
+| # downloads        | 116020 |
 | # stars            | 6 |
 
 ## Links

@@ -46,6 +46,11 @@ class LayoutNetwork () extends js.Object {
     *        default ignores link label nodes or links connecting with them
     */
   def addParts(parts: Iterable[Part]): Unit = js.native
+  def addParts(
+    parts: Iterable[Part],
+    toplevelonly: js.UndefOr[scala.Nothing],
+    pred: js.Function1[/* part */ Part, Boolean]
+  ): Unit = js.native
   def addParts(parts: Iterable[Part], toplevelonly: Boolean): Unit = js.native
   def addParts(parts: Iterable[Part], toplevelonly: Boolean, pred: js.Function1[/* part */ Part, Boolean]): Unit = js.native
   /**

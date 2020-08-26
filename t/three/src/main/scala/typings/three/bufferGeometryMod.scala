@@ -28,8 +28,8 @@ object bufferGeometryMod extends js.Object {
   	 */
   class BufferGeometry () extends EventDispatcher {
     var attributes: StringDictionary[BufferAttribute | InterleavedBufferAttribute] = js.native
-    var boundingBox: Box3 = js.native
-    var boundingSphere: Sphere = js.native
+    var boundingBox: Box3 | Null = js.native
+    var boundingSphere: Sphere | Null = js.native
     var drawRange: Start = js.native
     /**
     	 * @deprecated Use {@link BufferGeometry#groups .groups} instead.
@@ -106,6 +106,7 @@ object bufferGeometryMod extends js.Object {
     def getAttribute(name: String): BufferAttribute | InterleavedBufferAttribute = js.native
     def getIndex(): BufferAttribute | Null = js.native
     def lookAt(v: Vector3): Unit = js.native
+    def merge(geometry: BufferGeometry): BufferGeometry = js.native
     def merge(geometry: BufferGeometry, offset: Double): BufferGeometry = js.native
     def normalizeNormals(): Unit = js.native
     /**

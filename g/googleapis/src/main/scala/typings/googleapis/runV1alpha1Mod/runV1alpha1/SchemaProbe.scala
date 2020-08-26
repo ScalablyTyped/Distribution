@@ -48,22 +48,46 @@ trait SchemaProbe extends js.Object {
 
 object SchemaProbe {
   @scala.inline
-  def apply(
-    failureThreshold: js.UndefOr[Double] = js.undefined,
-    handler: SchemaHandler = null,
-    initialDelaySeconds: js.UndefOr[Double] = js.undefined,
-    periodSeconds: js.UndefOr[Double] = js.undefined,
-    successThreshold: js.UndefOr[Double] = js.undefined,
-    timeoutSeconds: js.UndefOr[Double] = js.undefined
-  ): SchemaProbe = {
+  def apply(): SchemaProbe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialDelaySeconds)) __obj.updateDynamic("initialDelaySeconds")(initialDelaySeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(periodSeconds)) __obj.updateDynamic("periodSeconds")(periodSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(successThreshold)) __obj.updateDynamic("successThreshold")(successThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutSeconds)) __obj.updateDynamic("timeoutSeconds")(timeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProbe]
   }
+  @scala.inline
+  implicit class SchemaProbeOps[Self <: SchemaProbe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    @scala.inline
+    def setHandler(value: SchemaHandler): Self = this.set("handler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandler: Self = this.set("handler", js.undefined)
+    @scala.inline
+    def setInitialDelaySeconds(value: Double): Self = this.set("initialDelaySeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialDelaySeconds: Self = this.set("initialDelaySeconds", js.undefined)
+    @scala.inline
+    def setPeriodSeconds(value: Double): Self = this.set("periodSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodSeconds: Self = this.set("periodSeconds", js.undefined)
+    @scala.inline
+    def setSuccessThreshold(value: Double): Self = this.set("successThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessThreshold: Self = this.set("successThreshold", js.undefined)
+    @scala.inline
+    def setTimeoutSeconds(value: Double): Self = this.set("timeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutSeconds: Self = this.set("timeoutSeconds", js.undefined)
+  }
+  
 }
 

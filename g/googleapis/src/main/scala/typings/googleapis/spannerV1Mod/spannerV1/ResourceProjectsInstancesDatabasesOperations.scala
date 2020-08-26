@@ -35,6 +35,7 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     */
   def cancel(): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceProjectsInstancesDatabasesOperationsCancel): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(
     params: ParamsResourceProjectsInstancesDatabasesOperationsCancel,
@@ -68,6 +69,7 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesDatabasesOperationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsInstancesDatabasesOperationsDelete,
@@ -100,6 +102,7 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceProjectsInstancesDatabasesOperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(
     params: ParamsResourceProjectsInstancesDatabasesOperationsGet,
@@ -141,6 +144,7 @@ class ResourceProjectsInstancesDatabasesOperations protected () extends js.Objec
     */
   def list(): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesDatabasesOperationsList): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesDatabasesOperationsList,

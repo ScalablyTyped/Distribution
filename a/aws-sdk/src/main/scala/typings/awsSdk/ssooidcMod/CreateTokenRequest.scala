@@ -42,22 +42,48 @@ trait CreateTokenRequest extends js.Object {
 
 object CreateTokenRequest {
   @scala.inline
-  def apply(
-    clientId: ClientId,
-    clientSecret: ClientSecret,
-    deviceCode: DeviceCode,
-    grantType: GrantType,
-    code: AuthCode = null,
-    redirectUri: URI = null,
-    refreshToken: RefreshToken = null,
-    scope: Scopes = null
-  ): CreateTokenRequest = {
+  def apply(clientId: ClientId, clientSecret: ClientSecret, deviceCode: DeviceCode, grantType: GrantType): CreateTokenRequest = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], deviceCode = deviceCode.asInstanceOf[js.Any], grantType = grantType.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTokenRequest]
   }
+  @scala.inline
+  implicit class CreateTokenRequestOps[Self <: CreateTokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientId(value: ClientId): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientSecret(value: ClientSecret): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeviceCode(value: DeviceCode): Self = this.set("deviceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrantType(value: GrantType): Self = this.set("grantType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCode(value: AuthCode): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setRedirectUri(value: URI): Self = this.set("redirectUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectUri: Self = this.set("redirectUri", js.undefined)
+    @scala.inline
+    def setRefreshToken(value: RefreshToken): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+    @scala.inline
+    def setScopeVarargs(value: Scope*): Self = this.set("scope", js.Array(value :_*))
+    @scala.inline
+    def setScope(value: Scopes): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+  }
+  
 }
 

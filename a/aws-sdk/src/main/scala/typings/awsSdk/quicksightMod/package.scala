@@ -17,11 +17,13 @@ package object quicksightMod {
   */
   type AssignmentStatus = typings.awsSdk.quicksightMod._AssignmentStatus | java.lang.String
   type AwsAccountId = java.lang.String
+  type AwsAndAccountId = java.lang.String
   type Boolean = scala.Boolean
   type CalculatedColumnList = js.Array[typings.awsSdk.quicksightMod.CalculatedColumn]
   type Catalog = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.quicksightMod.ClientApiVersions
   type ClusterId = java.lang.String
+  type ColorList = js.Array[typings.awsSdk.quicksightMod.HexColor]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.STRING
     - typings.awsSdk.awsSdkStrings.INTEGER
@@ -130,7 +132,14 @@ package object quicksightMod {
   type Domain = java.lang.String
   type Double = scala.Double
   type DoubleList = js.Array[typings.awsSdk.quicksightMod.Double]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.STANDARD
+    - typings.awsSdk.awsSdkStrings.ENTERPRISE
+    - java.lang.String
+  */
+  type Edition = typings.awsSdk.quicksightMod._Edition | java.lang.String
   type EmbeddingUrl = java.lang.String
+  type EntryPoint = java.lang.String
   type Expression = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.CSV
@@ -160,12 +169,14 @@ package object quicksightMod {
   type GroupMemberList = js.Array[typings.awsSdk.quicksightMod.GroupMember]
   type GroupMemberName = java.lang.String
   type GroupName = java.lang.String
+  type HexColor = java.lang.String
   type Host = java.lang.String
   type IAMPolicyAssignmentName = java.lang.String
   type IAMPolicyAssignmentSummaryList = js.Array[typings.awsSdk.quicksightMod.IAMPolicyAssignmentSummary]
   type IdentityMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.quicksightMod.IdentityNameList]
   type IdentityName = java.lang.String
   type IdentityNameList = js.Array[typings.awsSdk.quicksightMod.IdentityName]
+  type IdentityStore = typings.awsSdk.awsSdkStrings.QUICKSIGHT | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.IAM
     - typings.awsSdk.awsSdkStrings.QUICKSIGHT
@@ -272,6 +283,22 @@ package object quicksightMod {
   type Long_ = scala.Double
   type MaxResults = scala.Double
   type Namespace = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.PERMISSION_DENIED
+    - typings.awsSdk.awsSdkStrings.INTERNAL_SERVICE_ERROR
+    - java.lang.String
+  */
+  type NamespaceErrorType = typings.awsSdk.quicksightMod._NamespaceErrorType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.CREATED
+    - typings.awsSdk.awsSdkStrings.CREATING
+    - typings.awsSdk.awsSdkStrings.DELETING
+    - typings.awsSdk.awsSdkStrings.RETRYABLE_FAILURE
+    - typings.awsSdk.awsSdkStrings.NON_RETRYABLE_FAILURE
+    - java.lang.String
+  */
+  type NamespaceStatus = typings.awsSdk.quicksightMod._NamespaceStatus | java.lang.String
+  type Namespaces = js.Array[typings.awsSdk.quicksightMod.NamespaceInfoV2]
   type NonEmptyString = java.lang.String
   type OnClause = java.lang.String
   type OptionalPort = scala.Double
@@ -300,6 +327,7 @@ package object quicksightMod {
   */
   type ResourceStatus = typings.awsSdk.quicksightMod._ResourceStatus | java.lang.String
   type RestrictiveResourceId = java.lang.String
+  type RoleName = java.lang.String
   type RoleSessionName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.GRANT_ACCESS
@@ -338,6 +366,19 @@ package object quicksightMod {
     - java.lang.String
   */
   type TextQualifier = typings.awsSdk.quicksightMod._TextQualifier | java.lang.String
+  type ThemeAliasList = js.Array[typings.awsSdk.quicksightMod.ThemeAlias]
+  type ThemeErrorList = js.Array[typings.awsSdk.quicksightMod.ThemeError]
+  type ThemeErrorType = typings.awsSdk.awsSdkStrings.INTERNAL_FAILURE | java.lang.String
+  type ThemeName = java.lang.String
+  type ThemeSummaryList = js.Array[typings.awsSdk.quicksightMod.ThemeSummary]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.QUICKSIGHT
+    - typings.awsSdk.awsSdkStrings.CUSTOM
+    - typings.awsSdk.awsSdkStrings.ALL
+    - java.lang.String
+  */
+  type ThemeType = typings.awsSdk.quicksightMod._ThemeType | java.lang.String
+  type ThemeVersionSummaryList = js.Array[typings.awsSdk.quicksightMod.ThemeVersionSummary]
   type TimestampList = js.Array[typings.awsSdk.quicksightMod.Timestamp_]
   type Timestamp_ = typings.std.Date
   type TransformOperationList = js.Array[typings.awsSdk.quicksightMod.TransformOperation]

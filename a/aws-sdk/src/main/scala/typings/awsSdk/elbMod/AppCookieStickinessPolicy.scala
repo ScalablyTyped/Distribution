@@ -18,11 +18,30 @@ trait AppCookieStickinessPolicy extends js.Object {
 
 object AppCookieStickinessPolicy {
   @scala.inline
-  def apply(CookieName: CookieName = null, PolicyName: PolicyName = null): AppCookieStickinessPolicy = {
+  def apply(): AppCookieStickinessPolicy = {
     val __obj = js.Dynamic.literal()
-    if (CookieName != null) __obj.updateDynamic("CookieName")(CookieName.asInstanceOf[js.Any])
-    if (PolicyName != null) __obj.updateDynamic("PolicyName")(PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppCookieStickinessPolicy]
   }
+  @scala.inline
+  implicit class AppCookieStickinessPolicyOps[Self <: AppCookieStickinessPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCookieName(value: CookieName): Self = this.set("CookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieName: Self = this.set("CookieName", js.undefined)
+    @scala.inline
+    def setPolicyName(value: PolicyName): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyName: Self = this.set("PolicyName", js.undefined)
+  }
+  
 }
 

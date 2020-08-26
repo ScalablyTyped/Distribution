@@ -29,6 +29,11 @@ trait CLI extends js.Object {
   def enable(plugins: String*): CLI = js.native
   def error(msg: String): Unit = js.native
   def exec(cmd: String): Unit = js.native
+  def exec(
+    cmd: String,
+    callback: js.UndefOr[scala.Nothing],
+    errback: js.Function2[/* err */ js.Any, /* stdout */ String, Unit]
+  ): Unit = js.native
   def exec(cmd: String, callback: js.Function1[/* lines */ js.Array[String], Unit]): Unit = js.native
   def exec(
     cmd: String,
@@ -55,15 +60,18 @@ trait CLI extends js.Object {
   def main(callback: js.Function2[/* args */ js.Array[String], /* options */ js.Any, Unit]): Unit = js.native
   def next(): String = js.native
   def ok(msg: String): Unit = js.native
-  def output(): Unit = js.native
+  def output(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def output(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def parse(): js.Any = js.native
+  def parse(opts: js.UndefOr[scala.Nothing], commands: js.Array[String]): js.Any = js.native
+  def parse(opts: js.UndefOr[scala.Nothing], commands: StringDictionary[String]): js.Any = js.native
   def parse(opts: StringDictionary[`0`]): js.Any = js.native
   def parse(opts: StringDictionary[`0`], commands: js.Array[String]): js.Any = js.native
   def parse(opts: StringDictionary[`0`], commands: StringDictionary[String]): js.Any = js.native
   def parsePackageJson(): Unit = js.native
   def parsePackageJson(path: String): Unit = js.native
   def progress(progress: Double): Unit = js.native
+  def progress(progress: Double, decimals: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
   def progress(progress: Double, decimals: Double): Unit = js.native
   def progress(progress: Double, decimals: Double, stream: WritableStream): Unit = js.native
   def setApp(appName: String, version: String): CLI = js.native
@@ -74,10 +82,15 @@ trait CLI extends js.Object {
   def setArgv(argv: js.Array[_], keepArg0: Boolean): Unit = js.native
   def setUsage(usage: String): CLI = js.native
   def spinner(): Unit = js.native
+  def spinner(prefix: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
+  def spinner(prefix: js.UndefOr[scala.Nothing], end: Boolean): Unit = js.native
+  def spinner(prefix: js.UndefOr[scala.Nothing], end: Boolean, stream: WritableStream): Unit = js.native
   def spinner(prefix: String): Unit = js.native
+  def spinner(prefix: String, end: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
   def spinner(prefix: String, end: Boolean): Unit = js.native
   def spinner(prefix: String, end: Boolean, stream: WritableStream): Unit = js.native
   def spinner(prefix: Boolean): Unit = js.native
+  def spinner(prefix: Boolean, end: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
   def spinner(prefix: Boolean, end: Boolean): Unit = js.native
   def spinner(prefix: Boolean, end: Boolean, stream: WritableStream): Unit = js.native
   def toType(`object`: js.Any): String = js.native

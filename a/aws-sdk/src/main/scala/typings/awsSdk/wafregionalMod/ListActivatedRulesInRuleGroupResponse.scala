@@ -18,11 +18,32 @@ trait ListActivatedRulesInRuleGroupResponse extends js.Object {
 
 object ListActivatedRulesInRuleGroupResponse {
   @scala.inline
-  def apply(ActivatedRules: ActivatedRules = null, NextMarker: NextMarker = null): ListActivatedRulesInRuleGroupResponse = {
+  def apply(): ListActivatedRulesInRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (ActivatedRules != null) __obj.updateDynamic("ActivatedRules")(ActivatedRules.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActivatedRulesInRuleGroupResponse]
   }
+  @scala.inline
+  implicit class ListActivatedRulesInRuleGroupResponseOps[Self <: ListActivatedRulesInRuleGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivatedRulesVarargs(value: ActivatedRule*): Self = this.set("ActivatedRules", js.Array(value :_*))
+    @scala.inline
+    def setActivatedRules(value: ActivatedRules): Self = this.set("ActivatedRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivatedRules: Self = this.set("ActivatedRules", js.undefined)
+    @scala.inline
+    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

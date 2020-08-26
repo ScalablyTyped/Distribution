@@ -28,6 +28,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRolesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRolesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRole] = js.native
   def get(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def get(
@@ -76,6 +78,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaRole] = js.native
   def insert(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def insert(params: ParamsResourceRolesInsert): GaxiosPromise[SchemaRole] = js.native
   def insert(params: ParamsResourceRolesInsert, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def insert(
@@ -105,6 +108,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaRoles] = js.native
   def list(callback: BodyResponseCallback[SchemaRoles]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRoles] = js.native
   def list(params: ParamsResourceRolesList): GaxiosPromise[SchemaRoles] = js.native
   def list(params: ParamsResourceRolesList, callback: BodyResponseCallback[SchemaRoles]): Unit = js.native
   def list(
@@ -134,6 +138,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaRole] = js.native
   def patch(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def patch(params: ParamsResourceRolesPatch): GaxiosPromise[SchemaRole] = js.native
   def patch(params: ParamsResourceRolesPatch, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def patch(
@@ -163,6 +168,7 @@ class ResourceRoles protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaRole] = js.native
   def update(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def update(params: ParamsResourceRolesUpdate): GaxiosPromise[SchemaRole] = js.native
   def update(params: ParamsResourceRolesUpdate, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def update(

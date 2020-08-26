@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoHaystackSearchOptions extends js.Object {
-  var limit: js.UndefOr[scala.Double] = js.undefined
-  var maxDistance: js.UndefOr[scala.Double] = js.undefined
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
-  var search: js.UndefOr[js.Object] = js.undefined
-  var session: js.UndefOr[ClientSession] = js.undefined
+  var limit: js.UndefOr[scala.Double] = js.native
+  var maxDistance: js.UndefOr[scala.Double] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var search: js.UndefOr[js.Object] = js.native
+  var session: js.UndefOr[ClientSession] = js.native
 }
 
 object GeoHaystackSearchOptions {
   @scala.inline
-  def apply(
-    limit: js.UndefOr[scala.Double] = js.undefined,
-    maxDistance: js.UndefOr[scala.Double] = js.undefined,
-    readPreference: ReadPreferenceOrMode = null,
-    search: js.Object = null,
-    session: ClientSession = null
-  ): GeoHaystackSearchOptions = {
+  def apply(): GeoHaystackSearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDistance)) __obj.updateDynamic("maxDistance")(maxDistance.get.asInstanceOf[js.Any])
-    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoHaystackSearchOptions]
   }
+  @scala.inline
+  implicit class GeoHaystackSearchOptionsOps[Self <: GeoHaystackSearchOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: scala.Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMaxDistance(value: scala.Double): Self = this.set("maxDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDistance: Self = this.set("maxDistance", js.undefined)
+    @scala.inline
+    def setReadPreference(value: ReadPreferenceOrMode): Self = this.set("readPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadPreference: Self = this.set("readPreference", js.undefined)
+    @scala.inline
+    def setSearch(value: js.Object): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSession(value: ClientSession): Self = this.set("session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("session", js.undefined)
+  }
+  
 }
 

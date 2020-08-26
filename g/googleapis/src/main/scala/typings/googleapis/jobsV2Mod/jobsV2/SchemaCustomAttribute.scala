@@ -35,16 +35,34 @@ trait SchemaCustomAttribute extends js.Object {
 
 object SchemaCustomAttribute {
   @scala.inline
-  def apply(
-    filterable: js.UndefOr[Boolean] = js.undefined,
-    longValue: String = null,
-    stringValues: SchemaStringValues = null
-  ): SchemaCustomAttribute = {
+  def apply(): SchemaCustomAttribute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
-    if (longValue != null) __obj.updateDynamic("longValue")(longValue.asInstanceOf[js.Any])
-    if (stringValues != null) __obj.updateDynamic("stringValues")(stringValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCustomAttribute]
   }
+  @scala.inline
+  implicit class SchemaCustomAttributeOps[Self <: SchemaCustomAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setLongValue(value: String): Self = this.set("longValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValue: Self = this.set("longValue", js.undefined)
+    @scala.inline
+    def setStringValues(value: SchemaStringValues): Self = this.set("stringValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValues: Self = this.set("stringValues", js.undefined)
+  }
+  
 }
 

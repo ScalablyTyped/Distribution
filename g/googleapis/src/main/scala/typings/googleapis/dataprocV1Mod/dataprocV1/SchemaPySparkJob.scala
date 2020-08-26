@@ -58,26 +58,64 @@ trait SchemaPySparkJob extends js.Object {
 
 object SchemaPySparkJob {
   @scala.inline
-  def apply(
-    archiveUris: js.Array[String] = null,
-    args: js.Array[String] = null,
-    fileUris: js.Array[String] = null,
-    jarFileUris: js.Array[String] = null,
-    loggingConfig: SchemaLoggingConfig = null,
-    mainPythonFileUri: String = null,
-    properties: StringDictionary[String] = null,
-    pythonFileUris: js.Array[String] = null
-  ): SchemaPySparkJob = {
+  def apply(): SchemaPySparkJob = {
     val __obj = js.Dynamic.literal()
-    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris.asInstanceOf[js.Any])
-    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris.asInstanceOf[js.Any])
-    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
-    if (mainPythonFileUri != null) __obj.updateDynamic("mainPythonFileUri")(mainPythonFileUri.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (pythonFileUris != null) __obj.updateDynamic("pythonFileUris")(pythonFileUris.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPySparkJob]
   }
+  @scala.inline
+  implicit class SchemaPySparkJobOps[Self <: SchemaPySparkJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveUrisVarargs(value: String*): Self = this.set("archiveUris", js.Array(value :_*))
+    @scala.inline
+    def setArchiveUris(value: js.Array[String]): Self = this.set("archiveUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveUris: Self = this.set("archiveUris", js.undefined)
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setFileUrisVarargs(value: String*): Self = this.set("fileUris", js.Array(value :_*))
+    @scala.inline
+    def setFileUris(value: js.Array[String]): Self = this.set("fileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileUris: Self = this.set("fileUris", js.undefined)
+    @scala.inline
+    def setJarFileUrisVarargs(value: String*): Self = this.set("jarFileUris", js.Array(value :_*))
+    @scala.inline
+    def setJarFileUris(value: js.Array[String]): Self = this.set("jarFileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJarFileUris: Self = this.set("jarFileUris", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: SchemaLoggingConfig): Self = this.set("loggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("loggingConfig", js.undefined)
+    @scala.inline
+    def setMainPythonFileUri(value: String): Self = this.set("mainPythonFileUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainPythonFileUri: Self = this.set("mainPythonFileUri", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setPythonFileUrisVarargs(value: String*): Self = this.set("pythonFileUris", js.Array(value :_*))
+    @scala.inline
+    def setPythonFileUris(value: js.Array[String]): Self = this.set("pythonFileUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonFileUris: Self = this.set("pythonFileUris", js.undefined)
+  }
+  
 }
 

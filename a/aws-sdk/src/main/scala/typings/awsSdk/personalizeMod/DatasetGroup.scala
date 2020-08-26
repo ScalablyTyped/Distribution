@@ -42,26 +42,54 @@ trait DatasetGroup extends js.Object {
 
 object DatasetGroup {
   @scala.inline
-  def apply(
-    creationDateTime: Date = null,
-    datasetGroupArn: Arn = null,
-    failureReason: FailureReason = null,
-    kmsKeyArn: KmsKeyArn = null,
-    lastUpdatedDateTime: Date = null,
-    name: Name = null,
-    roleArn: RoleArn = null,
-    status: Status = null
-  ): DatasetGroup = {
+  def apply(): DatasetGroup = {
     val __obj = js.Dynamic.literal()
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
-    if (datasetGroupArn != null) __obj.updateDynamic("datasetGroupArn")(datasetGroupArn.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetGroup]
   }
+  @scala.inline
+  implicit class DatasetGroupOps[Self <: DatasetGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    @scala.inline
+    def setDatasetGroupArn(value: Arn): Self = this.set("datasetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroupArn: Self = this.set("datasetGroupArn", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    @scala.inline
+    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

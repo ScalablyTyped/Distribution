@@ -18,11 +18,34 @@ trait PendingCloudwatchLogsExports extends js.Object {
 
 object PendingCloudwatchLogsExports {
   @scala.inline
-  def apply(LogTypesToDisable: LogTypeList = null, LogTypesToEnable: LogTypeList = null): PendingCloudwatchLogsExports = {
+  def apply(): PendingCloudwatchLogsExports = {
     val __obj = js.Dynamic.literal()
-    if (LogTypesToDisable != null) __obj.updateDynamic("LogTypesToDisable")(LogTypesToDisable.asInstanceOf[js.Any])
-    if (LogTypesToEnable != null) __obj.updateDynamic("LogTypesToEnable")(LogTypesToEnable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingCloudwatchLogsExports]
   }
+  @scala.inline
+  implicit class PendingCloudwatchLogsExportsOps[Self <: PendingCloudwatchLogsExports] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogTypesToDisableVarargs(value: String*): Self = this.set("LogTypesToDisable", js.Array(value :_*))
+    @scala.inline
+    def setLogTypesToDisable(value: LogTypeList): Self = this.set("LogTypesToDisable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogTypesToDisable: Self = this.set("LogTypesToDisable", js.undefined)
+    @scala.inline
+    def setLogTypesToEnableVarargs(value: String*): Self = this.set("LogTypesToEnable", js.Array(value :_*))
+    @scala.inline
+    def setLogTypesToEnable(value: LogTypeList): Self = this.set("LogTypesToEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogTypesToEnable: Self = this.set("LogTypesToEnable", js.undefined)
+  }
+  
 }
 

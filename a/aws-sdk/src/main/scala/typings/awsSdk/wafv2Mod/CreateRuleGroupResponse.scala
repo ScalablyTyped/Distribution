@@ -14,10 +14,26 @@ trait CreateRuleGroupResponse extends js.Object {
 
 object CreateRuleGroupResponse {
   @scala.inline
-  def apply(Summary: RuleGroupSummary = null): CreateRuleGroupResponse = {
+  def apply(): CreateRuleGroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (Summary != null) __obj.updateDynamic("Summary")(Summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRuleGroupResponse]
   }
+  @scala.inline
+  implicit class CreateRuleGroupResponseOps[Self <: CreateRuleGroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSummary(value: RuleGroupSummary): Self = this.set("Summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("Summary", js.undefined)
+  }
+  
 }
 

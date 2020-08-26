@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib", JSImport.Namespace)
+@JSImport("rc-tree-select", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

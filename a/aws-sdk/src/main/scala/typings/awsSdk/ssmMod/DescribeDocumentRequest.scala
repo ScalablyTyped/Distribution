@@ -22,15 +22,32 @@ trait DescribeDocumentRequest extends js.Object {
 
 object DescribeDocumentRequest {
   @scala.inline
-  def apply(
-    Name: DocumentARN,
-    DocumentVersion: DocumentVersion = null,
-    VersionName: DocumentVersionName = null
-  ): DescribeDocumentRequest = {
+  def apply(Name: DocumentARN): DescribeDocumentRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (VersionName != null) __obj.updateDynamic("VersionName")(VersionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentRequest]
   }
+  @scala.inline
+  implicit class DescribeDocumentRequestOps[Self <: DescribeDocumentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: DocumentARN): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setVersionName(value: DocumentVersionName): Self = this.set("VersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("VersionName", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Atlassian Crowd API client for Node
 | Keywords           | atlassian, crowd, authentication, sso, ldap |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 12792 |
+| # downloads        | 12795 |
 | # stars            | 0 |
 
 ## Links

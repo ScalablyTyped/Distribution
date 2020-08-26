@@ -18,14 +18,30 @@ trait DescribeOrganizationConfigurationResponse extends js.Object {
 
 object DescribeOrganizationConfigurationResponse {
   @scala.inline
-  def apply(
-    autoEnable: js.UndefOr[boolean] = js.undefined,
-    maxAccountLimitReached: js.UndefOr[boolean] = js.undefined
-  ): DescribeOrganizationConfigurationResponse = {
+  def apply(): DescribeOrganizationConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoEnable)) __obj.updateDynamic("autoEnable")(autoEnable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAccountLimitReached)) __obj.updateDynamic("maxAccountLimitReached")(maxAccountLimitReached.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrganizationConfigurationResponse]
   }
+  @scala.inline
+  implicit class DescribeOrganizationConfigurationResponseOps[Self <: DescribeOrganizationConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoEnable(value: boolean): Self = this.set("autoEnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoEnable: Self = this.set("autoEnable", js.undefined)
+    @scala.inline
+    def setMaxAccountLimitReached(value: boolean): Self = this.set("maxAccountLimitReached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAccountLimitReached: Self = this.set("maxAccountLimitReached", js.undefined)
+  }
+  
 }
 

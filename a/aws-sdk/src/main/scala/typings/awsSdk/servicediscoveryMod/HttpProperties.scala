@@ -14,10 +14,26 @@ trait HttpProperties extends js.Object {
 
 object HttpProperties {
   @scala.inline
-  def apply(HttpName: NamespaceName = null): HttpProperties = {
+  def apply(): HttpProperties = {
     val __obj = js.Dynamic.literal()
-    if (HttpName != null) __obj.updateDynamic("HttpName")(HttpName.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpProperties]
   }
+  @scala.inline
+  implicit class HttpPropertiesOps[Self <: HttpProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpName(value: NamespaceName): Self = this.set("HttpName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpName: Self = this.set("HttpName", js.undefined)
+  }
+  
 }
 

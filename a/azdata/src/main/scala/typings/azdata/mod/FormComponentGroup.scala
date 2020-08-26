@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormComponentGroup extends js.Object {
   /**
     * The form components to display in the group along with optional layouts for each item
     */
-  var components: js.Array[FormComponentlayoutFormIt]
+  var components: js.Array[FormComponentlayoutFormIt] = js.native
   /**
     * The title of the group, displayed above its components
     */
-  var title: String
+  var title: String = js.native
 }
 
 object FormComponentGroup {
@@ -22,5 +23,24 @@ object FormComponentGroup {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormComponentGroup]
   }
+  @scala.inline
+  implicit class FormComponentGroupOps[Self <: FormComponentGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentsVarargs(value: FormComponentlayoutFormIt*): Self = this.set("components", js.Array(value :_*))
+    @scala.inline
+    def setComponents(value: js.Array[FormComponentlayoutFormIt]): Self = this.set("components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -4,29 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EditMessageTextOptions extends EditMessageCaptionOptions {
-  var disable_web_page_preview: js.UndefOr[Boolean] = js.undefined
-  var parse_mode: js.UndefOr[ParseMode] = js.undefined
+  var disable_web_page_preview: js.UndefOr[Boolean] = js.native
+  var parse_mode: js.UndefOr[ParseMode] = js.native
 }
 
 object EditMessageTextOptions {
   @scala.inline
-  def apply(
-    chat_id: Double | String = null,
-    disable_web_page_preview: js.UndefOr[Boolean] = js.undefined,
-    inline_message_id: String = null,
-    message_id: js.UndefOr[Double] = js.undefined,
-    parse_mode: ParseMode = null,
-    reply_markup: InlineKeyboardMarkup = null
-  ): EditMessageTextOptions = {
+  def apply(): EditMessageTextOptions = {
     val __obj = js.Dynamic.literal()
-    if (chat_id != null) __obj.updateDynamic("chat_id")(chat_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_web_page_preview)) __obj.updateDynamic("disable_web_page_preview")(disable_web_page_preview.get.asInstanceOf[js.Any])
-    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(message_id)) __obj.updateDynamic("message_id")(message_id.get.asInstanceOf[js.Any])
-    if (parse_mode != null) __obj.updateDynamic("parse_mode")(parse_mode.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditMessageTextOptions]
   }
+  @scala.inline
+  implicit class EditMessageTextOptionsOps[Self <: EditMessageTextOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisable_web_page_preview(value: Boolean): Self = this.set("disable_web_page_preview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisable_web_page_preview: Self = this.set("disable_web_page_preview", js.undefined)
+    @scala.inline
+    def setParse_mode(value: ParseMode): Self = this.set("parse_mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParse_mode: Self = this.set("parse_mode", js.undefined)
+  }
+  
 }
 

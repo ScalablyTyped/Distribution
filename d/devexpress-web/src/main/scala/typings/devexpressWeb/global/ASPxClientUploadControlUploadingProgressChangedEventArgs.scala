@@ -32,45 +32,5 @@ class ASPxClientUploadControlUploadingProgressChangedEventArgs protected ()
     uploadedContentLength: Double,
     progress: Double
   ) = this()
-  /**
-    * Gets the content length of the currently uploaded file.
-    */
-  /* CompleteClass */
-  override var currentFileContentLength: Double = js.native
-  /**
-    * Gets the name of the file being currently uploaded.
-    */
-  /* CompleteClass */
-  override var currentFileName: String = js.native
-  /**
-    * Gets the position of the current file upload progress.
-    */
-  /* CompleteClass */
-  override var currentFileProgress: Double = js.native
-  /**
-    * Gets the content length of the current file already uploaded to the server.
-    */
-  /* CompleteClass */
-  override var currentFileUploadedContentLength: Double = js.native
-  /**
-    * Gets the number of the files selected for upload.
-    */
-  /* CompleteClass */
-  override var fileCount: Double = js.native
-  /**
-    * Gets the current position of total upload progress.
-    */
-  /* CompleteClass */
-  override var progress: Double = js.native
-  /**
-    * Gets the content length of the files selected for upload.
-    */
-  /* CompleteClass */
-  override var totalContentLength: Double = js.native
-  /**
-    * Gets the content length of the files already uploaded to the server.
-    */
-  /* CompleteClass */
-  override var uploadedContentLength: Double = js.native
 }
 

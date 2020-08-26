@@ -34,6 +34,7 @@ class OClassProperty () extends js.Object {
     * @promise {Object}              The created property.
     */
   def create(): js.Promise[OClassProperty] = js.native
+  def create(config: js.UndefOr[scala.Nothing], reload: Boolean): js.Promise[OClassProperty] = js.native
   def create(config: String): js.Promise[OClassProperty] = js.native
   def create(config: String, reload: Boolean): js.Promise[OClassProperty] = js.native
   def create(config: js.Array[PropertyCreateConfig]): js.Promise[js.Array[OClassProperty]] = js.native

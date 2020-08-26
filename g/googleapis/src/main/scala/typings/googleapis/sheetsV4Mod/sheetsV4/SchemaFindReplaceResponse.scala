@@ -36,20 +36,42 @@ trait SchemaFindReplaceResponse extends js.Object {
 
 object SchemaFindReplaceResponse {
   @scala.inline
-  def apply(
-    formulasChanged: js.UndefOr[Double] = js.undefined,
-    occurrencesChanged: js.UndefOr[Double] = js.undefined,
-    rowsChanged: js.UndefOr[Double] = js.undefined,
-    sheetsChanged: js.UndefOr[Double] = js.undefined,
-    valuesChanged: js.UndefOr[Double] = js.undefined
-  ): SchemaFindReplaceResponse = {
+  def apply(): SchemaFindReplaceResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(formulasChanged)) __obj.updateDynamic("formulasChanged")(formulasChanged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(occurrencesChanged)) __obj.updateDynamic("occurrencesChanged")(occurrencesChanged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowsChanged)) __obj.updateDynamic("rowsChanged")(rowsChanged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetsChanged)) __obj.updateDynamic("sheetsChanged")(sheetsChanged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valuesChanged)) __obj.updateDynamic("valuesChanged")(valuesChanged.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindReplaceResponse]
   }
+  @scala.inline
+  implicit class SchemaFindReplaceResponseOps[Self <: SchemaFindReplaceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormulasChanged(value: Double): Self = this.set("formulasChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormulasChanged: Self = this.set("formulasChanged", js.undefined)
+    @scala.inline
+    def setOccurrencesChanged(value: Double): Self = this.set("occurrencesChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOccurrencesChanged: Self = this.set("occurrencesChanged", js.undefined)
+    @scala.inline
+    def setRowsChanged(value: Double): Self = this.set("rowsChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowsChanged: Self = this.set("rowsChanged", js.undefined)
+    @scala.inline
+    def setSheetsChanged(value: Double): Self = this.set("sheetsChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetsChanged: Self = this.set("sheetsChanged", js.undefined)
+    @scala.inline
+    def setValuesChanged(value: Double): Self = this.set("valuesChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuesChanged: Self = this.set("valuesChanged", js.undefined)
+  }
+  
 }
 

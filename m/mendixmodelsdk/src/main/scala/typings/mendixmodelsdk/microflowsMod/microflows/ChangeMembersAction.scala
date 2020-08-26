@@ -24,10 +24,10 @@ abstract class ChangeMembersAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FChangeMembersAction: IModel = js.native
   def commit: CommitEnum = js.native
-  def commit(newValue: CommitEnum): js.Any = js.native
+  def commit_=(newValue: CommitEnum): Unit = js.native
   def items: IList[MemberChange] = js.native
   def refreshInClient: Boolean = js.native
-  def refreshInClient(newValue: Boolean): js.Any = js.native
+  def refreshInClient_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

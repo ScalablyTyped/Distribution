@@ -71,28 +71,62 @@ trait CreateApplicationVersionResponse extends js.Object {
 
 object CreateApplicationVersionResponse {
   @scala.inline
-  def apply(
-    ApplicationId: string = null,
-    CreationTime: string = null,
-    ParameterDefinitions: listOfParameterDefinition = null,
-    RequiredCapabilities: listOfCapability = null,
-    ResourcesSupported: js.UndefOr[boolean] = js.undefined,
-    SemanticVersion: string = null,
-    SourceCodeArchiveUrl: string = null,
-    SourceCodeUrl: string = null,
-    TemplateUrl: string = null
-  ): CreateApplicationVersionResponse = {
+  def apply(): CreateApplicationVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (ParameterDefinitions != null) __obj.updateDynamic("ParameterDefinitions")(ParameterDefinitions.asInstanceOf[js.Any])
-    if (RequiredCapabilities != null) __obj.updateDynamic("RequiredCapabilities")(RequiredCapabilities.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResourcesSupported)) __obj.updateDynamic("ResourcesSupported")(ResourcesSupported.get.asInstanceOf[js.Any])
-    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
-    if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl.asInstanceOf[js.Any])
-    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl.asInstanceOf[js.Any])
-    if (TemplateUrl != null) __obj.updateDynamic("TemplateUrl")(TemplateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationVersionResponse]
   }
+  @scala.inline
+  implicit class CreateApplicationVersionResponseOps[Self <: CreateApplicationVersionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setCreationTime(value: string): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setParameterDefinitionsVarargs(value: ParameterDefinition*): Self = this.set("ParameterDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setParameterDefinitions(value: listOfParameterDefinition): Self = this.set("ParameterDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterDefinitions: Self = this.set("ParameterDefinitions", js.undefined)
+    @scala.inline
+    def setRequiredCapabilitiesVarargs(value: Capability*): Self = this.set("RequiredCapabilities", js.Array(value :_*))
+    @scala.inline
+    def setRequiredCapabilities(value: listOfCapability): Self = this.set("RequiredCapabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredCapabilities: Self = this.set("RequiredCapabilities", js.undefined)
+    @scala.inline
+    def setResourcesSupported(value: boolean): Self = this.set("ResourcesSupported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesSupported: Self = this.set("ResourcesSupported", js.undefined)
+    @scala.inline
+    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemanticVersion: Self = this.set("SemanticVersion", js.undefined)
+    @scala.inline
+    def setSourceCodeArchiveUrl(value: string): Self = this.set("SourceCodeArchiveUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeArchiveUrl: Self = this.set("SourceCodeArchiveUrl", js.undefined)
+    @scala.inline
+    def setSourceCodeUrl(value: string): Self = this.set("SourceCodeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeUrl: Self = this.set("SourceCodeUrl", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: string): Self = this.set("TemplateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("TemplateUrl", js.undefined)
+  }
+  
 }
 

@@ -170,76 +170,158 @@ trait SchemaConversion extends js.Object {
 
 object SchemaConversion {
   @scala.inline
-  def apply(
-    adGroupId: String = null,
-    adId: String = null,
-    advertiserId: String = null,
-    agencyId: String = null,
-    attributionModel: String = null,
-    campaignId: String = null,
-    channel: String = null,
-    clickId: String = null,
-    conversionId: String = null,
-    conversionModifiedTimestamp: String = null,
-    conversionTimestamp: String = null,
-    countMillis: String = null,
-    criterionId: String = null,
-    currencyCode: String = null,
-    customDimension: js.Array[SchemaCustomDimension] = null,
-    customMetric: js.Array[SchemaCustomMetric] = null,
-    deviceType: String = null,
-    dsConversionId: String = null,
-    engineAccountId: String = null,
-    floodlightOrderId: String = null,
-    inventoryAccountId: String = null,
-    productCountry: String = null,
-    productGroupId: String = null,
-    productId: String = null,
-    productLanguage: String = null,
-    quantityMillis: String = null,
-    revenueMicros: String = null,
-    segmentationId: String = null,
-    segmentationName: String = null,
-    segmentationType: String = null,
-    state: String = null,
-    storeId: String = null,
-    `type`: String = null
-  ): SchemaConversion = {
+  def apply(): SchemaConversion = {
     val __obj = js.Dynamic.literal()
-    if (adGroupId != null) __obj.updateDynamic("adGroupId")(adGroupId.asInstanceOf[js.Any])
-    if (adId != null) __obj.updateDynamic("adId")(adId.asInstanceOf[js.Any])
-    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId.asInstanceOf[js.Any])
-    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId.asInstanceOf[js.Any])
-    if (attributionModel != null) __obj.updateDynamic("attributionModel")(attributionModel.asInstanceOf[js.Any])
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
-    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (clickId != null) __obj.updateDynamic("clickId")(clickId.asInstanceOf[js.Any])
-    if (conversionId != null) __obj.updateDynamic("conversionId")(conversionId.asInstanceOf[js.Any])
-    if (conversionModifiedTimestamp != null) __obj.updateDynamic("conversionModifiedTimestamp")(conversionModifiedTimestamp.asInstanceOf[js.Any])
-    if (conversionTimestamp != null) __obj.updateDynamic("conversionTimestamp")(conversionTimestamp.asInstanceOf[js.Any])
-    if (countMillis != null) __obj.updateDynamic("countMillis")(countMillis.asInstanceOf[js.Any])
-    if (criterionId != null) __obj.updateDynamic("criterionId")(criterionId.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (customDimension != null) __obj.updateDynamic("customDimension")(customDimension.asInstanceOf[js.Any])
-    if (customMetric != null) __obj.updateDynamic("customMetric")(customMetric.asInstanceOf[js.Any])
-    if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
-    if (dsConversionId != null) __obj.updateDynamic("dsConversionId")(dsConversionId.asInstanceOf[js.Any])
-    if (engineAccountId != null) __obj.updateDynamic("engineAccountId")(engineAccountId.asInstanceOf[js.Any])
-    if (floodlightOrderId != null) __obj.updateDynamic("floodlightOrderId")(floodlightOrderId.asInstanceOf[js.Any])
-    if (inventoryAccountId != null) __obj.updateDynamic("inventoryAccountId")(inventoryAccountId.asInstanceOf[js.Any])
-    if (productCountry != null) __obj.updateDynamic("productCountry")(productCountry.asInstanceOf[js.Any])
-    if (productGroupId != null) __obj.updateDynamic("productGroupId")(productGroupId.asInstanceOf[js.Any])
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
-    if (productLanguage != null) __obj.updateDynamic("productLanguage")(productLanguage.asInstanceOf[js.Any])
-    if (quantityMillis != null) __obj.updateDynamic("quantityMillis")(quantityMillis.asInstanceOf[js.Any])
-    if (revenueMicros != null) __obj.updateDynamic("revenueMicros")(revenueMicros.asInstanceOf[js.Any])
-    if (segmentationId != null) __obj.updateDynamic("segmentationId")(segmentationId.asInstanceOf[js.Any])
-    if (segmentationName != null) __obj.updateDynamic("segmentationName")(segmentationName.asInstanceOf[js.Any])
-    if (segmentationType != null) __obj.updateDynamic("segmentationType")(segmentationType.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConversion]
   }
+  @scala.inline
+  implicit class SchemaConversionOps[Self <: SchemaConversion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdGroupId(value: String): Self = this.set("adGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdGroupId: Self = this.set("adGroupId", js.undefined)
+    @scala.inline
+    def setAdId(value: String): Self = this.set("adId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdId: Self = this.set("adId", js.undefined)
+    @scala.inline
+    def setAdvertiserId(value: String): Self = this.set("advertiserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserId: Self = this.set("advertiserId", js.undefined)
+    @scala.inline
+    def setAgencyId(value: String): Self = this.set("agencyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgencyId: Self = this.set("agencyId", js.undefined)
+    @scala.inline
+    def setAttributionModel(value: String): Self = this.set("attributionModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributionModel: Self = this.set("attributionModel", js.undefined)
+    @scala.inline
+    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    @scala.inline
+    def setChannel(value: String): Self = this.set("channel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannel: Self = this.set("channel", js.undefined)
+    @scala.inline
+    def setClickId(value: String): Self = this.set("clickId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickId: Self = this.set("clickId", js.undefined)
+    @scala.inline
+    def setConversionId(value: String): Self = this.set("conversionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionId: Self = this.set("conversionId", js.undefined)
+    @scala.inline
+    def setConversionModifiedTimestamp(value: String): Self = this.set("conversionModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionModifiedTimestamp: Self = this.set("conversionModifiedTimestamp", js.undefined)
+    @scala.inline
+    def setConversionTimestamp(value: String): Self = this.set("conversionTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionTimestamp: Self = this.set("conversionTimestamp", js.undefined)
+    @scala.inline
+    def setCountMillis(value: String): Self = this.set("countMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountMillis: Self = this.set("countMillis", js.undefined)
+    @scala.inline
+    def setCriterionId(value: String): Self = this.set("criterionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriterionId: Self = this.set("criterionId", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setCustomDimensionVarargs(value: SchemaCustomDimension*): Self = this.set("customDimension", js.Array(value :_*))
+    @scala.inline
+    def setCustomDimension(value: js.Array[SchemaCustomDimension]): Self = this.set("customDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDimension: Self = this.set("customDimension", js.undefined)
+    @scala.inline
+    def setCustomMetricVarargs(value: SchemaCustomMetric*): Self = this.set("customMetric", js.Array(value :_*))
+    @scala.inline
+    def setCustomMetric(value: js.Array[SchemaCustomMetric]): Self = this.set("customMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetric: Self = this.set("customMetric", js.undefined)
+    @scala.inline
+    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    @scala.inline
+    def setDsConversionId(value: String): Self = this.set("dsConversionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDsConversionId: Self = this.set("dsConversionId", js.undefined)
+    @scala.inline
+    def setEngineAccountId(value: String): Self = this.set("engineAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineAccountId: Self = this.set("engineAccountId", js.undefined)
+    @scala.inline
+    def setFloodlightOrderId(value: String): Self = this.set("floodlightOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloodlightOrderId: Self = this.set("floodlightOrderId", js.undefined)
+    @scala.inline
+    def setInventoryAccountId(value: String): Self = this.set("inventoryAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryAccountId: Self = this.set("inventoryAccountId", js.undefined)
+    @scala.inline
+    def setProductCountry(value: String): Self = this.set("productCountry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCountry: Self = this.set("productCountry", js.undefined)
+    @scala.inline
+    def setProductGroupId(value: String): Self = this.set("productGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductGroupId: Self = this.set("productGroupId", js.undefined)
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+    @scala.inline
+    def setProductLanguage(value: String): Self = this.set("productLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductLanguage: Self = this.set("productLanguage", js.undefined)
+    @scala.inline
+    def setQuantityMillis(value: String): Self = this.set("quantityMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantityMillis: Self = this.set("quantityMillis", js.undefined)
+    @scala.inline
+    def setRevenueMicros(value: String): Self = this.set("revenueMicros", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevenueMicros: Self = this.set("revenueMicros", js.undefined)
+    @scala.inline
+    def setSegmentationId(value: String): Self = this.set("segmentationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationId: Self = this.set("segmentationId", js.undefined)
+    @scala.inline
+    def setSegmentationName(value: String): Self = this.set("segmentationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationName: Self = this.set("segmentationName", js.undefined)
+    @scala.inline
+    def setSegmentationType(value: String): Self = this.set("segmentationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentationType: Self = this.set("segmentationType", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStoreId(value: String): Self = this.set("storeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreId: Self = this.set("storeId", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

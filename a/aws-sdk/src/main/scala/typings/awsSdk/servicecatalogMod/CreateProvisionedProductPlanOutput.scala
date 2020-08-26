@@ -30,20 +30,42 @@ trait CreateProvisionedProductPlanOutput extends js.Object {
 
 object CreateProvisionedProductPlanOutput {
   @scala.inline
-  def apply(
-    PlanId: Id = null,
-    PlanName: ProvisionedProductPlanName = null,
-    ProvisionProductId: Id = null,
-    ProvisionedProductName: ProvisionedProductName = null,
-    ProvisioningArtifactId: Id = null
-  ): CreateProvisionedProductPlanOutput = {
+  def apply(): CreateProvisionedProductPlanOutput = {
     val __obj = js.Dynamic.literal()
-    if (PlanId != null) __obj.updateDynamic("PlanId")(PlanId.asInstanceOf[js.Any])
-    if (PlanName != null) __obj.updateDynamic("PlanName")(PlanName.asInstanceOf[js.Any])
-    if (ProvisionProductId != null) __obj.updateDynamic("ProvisionProductId")(ProvisionProductId.asInstanceOf[js.Any])
-    if (ProvisionedProductName != null) __obj.updateDynamic("ProvisionedProductName")(ProvisionedProductName.asInstanceOf[js.Any])
-    if (ProvisioningArtifactId != null) __obj.updateDynamic("ProvisioningArtifactId")(ProvisioningArtifactId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisionedProductPlanOutput]
   }
+  @scala.inline
+  implicit class CreateProvisionedProductPlanOutputOps[Self <: CreateProvisionedProductPlanOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlanId(value: Id): Self = this.set("PlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanId: Self = this.set("PlanId", js.undefined)
+    @scala.inline
+    def setPlanName(value: ProvisionedProductPlanName): Self = this.set("PlanName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanName: Self = this.set("PlanName", js.undefined)
+    @scala.inline
+    def setProvisionProductId(value: Id): Self = this.set("ProvisionProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionProductId: Self = this.set("ProvisionProductId", js.undefined)
+    @scala.inline
+    def setProvisionedProductName(value: ProvisionedProductName): Self = this.set("ProvisionedProductName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProductName: Self = this.set("ProvisionedProductName", js.undefined)
+    @scala.inline
+    def setProvisioningArtifactId(value: Id): Self = this.set("ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningArtifactId: Self = this.set("ProvisioningArtifactId", js.undefined)
+  }
+  
 }
 

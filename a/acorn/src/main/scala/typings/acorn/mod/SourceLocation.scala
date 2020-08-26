@@ -6,12 +6,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("acorn", "SourceLocation")
 @js.native
-class SourceLocation protected ()
-  extends typings.estree.mod.SourceLocation {
+class SourceLocation protected () extends js.Object {
   def this(p: Parser, start: Position, end: Position) = this()
-  /* CompleteClass */
-  override var end: typings.estree.mod.Position = js.native
-  /* CompleteClass */
-  override var start: typings.estree.mod.Position = js.native
+  var end: Position = js.native
+  var source: js.UndefOr[String | Null] = js.native
+  var start: Position = js.native
 }
 

@@ -30,6 +30,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def getAgent(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
   def getAgent(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Agent]): Unit = js.native
+  def getAgent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
   def getAgent(params: ParamsResourceProjectsGetagent): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
   def getAgent(
     params: ParamsResourceProjectsGetagent,

@@ -24,18 +24,38 @@ trait SchemaSuggestResult extends js.Object {
 
 object SchemaSuggestResult {
   @scala.inline
-  def apply(
-    peopleSuggestion: SchemaPeopleSuggestion = null,
-    querySuggestion: SchemaQuerySuggestion = null,
-    source: SchemaSource = null,
-    suggestedQuery: String = null
-  ): SchemaSuggestResult = {
+  def apply(): SchemaSuggestResult = {
     val __obj = js.Dynamic.literal()
-    if (peopleSuggestion != null) __obj.updateDynamic("peopleSuggestion")(peopleSuggestion.asInstanceOf[js.Any])
-    if (querySuggestion != null) __obj.updateDynamic("querySuggestion")(querySuggestion.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (suggestedQuery != null) __obj.updateDynamic("suggestedQuery")(suggestedQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSuggestResult]
   }
+  @scala.inline
+  implicit class SchemaSuggestResultOps[Self <: SchemaSuggestResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPeopleSuggestion(value: SchemaPeopleSuggestion): Self = this.set("peopleSuggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeopleSuggestion: Self = this.set("peopleSuggestion", js.undefined)
+    @scala.inline
+    def setQuerySuggestion(value: SchemaQuerySuggestion): Self = this.set("querySuggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuerySuggestion: Self = this.set("querySuggestion", js.undefined)
+    @scala.inline
+    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSuggestedQuery(value: String): Self = this.set("suggestedQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedQuery: Self = this.set("suggestedQuery", js.undefined)
+  }
+  
 }
 

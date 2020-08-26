@@ -42,26 +42,58 @@ trait QueryResultItem extends js.Object {
 
 object QueryResultItem {
   @scala.inline
-  def apply(
-    AdditionalAttributes: AdditionalResultAttributeList = null,
-    DocumentAttributes: DocumentAttributeList = null,
-    DocumentExcerpt: TextWithHighlights = null,
-    DocumentId: DocumentId = null,
-    DocumentTitle: TextWithHighlights = null,
-    DocumentURI: Url = null,
-    Id: ResultId = null,
-    Type: QueryResultType = null
-  ): QueryResultItem = {
+  def apply(): QueryResultItem = {
     val __obj = js.Dynamic.literal()
-    if (AdditionalAttributes != null) __obj.updateDynamic("AdditionalAttributes")(AdditionalAttributes.asInstanceOf[js.Any])
-    if (DocumentAttributes != null) __obj.updateDynamic("DocumentAttributes")(DocumentAttributes.asInstanceOf[js.Any])
-    if (DocumentExcerpt != null) __obj.updateDynamic("DocumentExcerpt")(DocumentExcerpt.asInstanceOf[js.Any])
-    if (DocumentId != null) __obj.updateDynamic("DocumentId")(DocumentId.asInstanceOf[js.Any])
-    if (DocumentTitle != null) __obj.updateDynamic("DocumentTitle")(DocumentTitle.asInstanceOf[js.Any])
-    if (DocumentURI != null) __obj.updateDynamic("DocumentURI")(DocumentURI.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultItem]
   }
+  @scala.inline
+  implicit class QueryResultItemOps[Self <: QueryResultItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalAttributesVarargs(value: AdditionalResultAttribute*): Self = this.set("AdditionalAttributes", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalAttributes(value: AdditionalResultAttributeList): Self = this.set("AdditionalAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalAttributes: Self = this.set("AdditionalAttributes", js.undefined)
+    @scala.inline
+    def setDocumentAttributesVarargs(value: DocumentAttribute*): Self = this.set("DocumentAttributes", js.Array(value :_*))
+    @scala.inline
+    def setDocumentAttributes(value: DocumentAttributeList): Self = this.set("DocumentAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentAttributes: Self = this.set("DocumentAttributes", js.undefined)
+    @scala.inline
+    def setDocumentExcerpt(value: TextWithHighlights): Self = this.set("DocumentExcerpt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentExcerpt: Self = this.set("DocumentExcerpt", js.undefined)
+    @scala.inline
+    def setDocumentId(value: DocumentId): Self = this.set("DocumentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentId: Self = this.set("DocumentId", js.undefined)
+    @scala.inline
+    def setDocumentTitle(value: TextWithHighlights): Self = this.set("DocumentTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentTitle: Self = this.set("DocumentTitle", js.undefined)
+    @scala.inline
+    def setDocumentURI(value: Url): Self = this.set("DocumentURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentURI: Self = this.set("DocumentURI", js.undefined)
+    @scala.inline
+    def setId(value: ResultId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setType(value: QueryResultType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

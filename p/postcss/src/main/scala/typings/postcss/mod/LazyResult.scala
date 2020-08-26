@@ -82,6 +82,14 @@ trait LazyResult extends js.Object {
     * Processes input CSS through synchronous and asynchronous plugins.
     * @param onRejected Called if any plugin throws an error.
     */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /**
+    * Processes input CSS through synchronous and asynchronous plugins.
+    * @param onRejected Called if any plugin throws an error.
+    */
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Result, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
   /**
     * Processes input CSS through synchronous and asynchronous plugins.

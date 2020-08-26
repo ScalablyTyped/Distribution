@@ -4,65 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionBeginEventArgs extends js.Object {
   /** Returns the cancel option value.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** Returns current filtering object field name.
     */
-  var currentFilteringobject: js.UndefOr[js.Any] = js.undefined
+  var currentFilteringobject: js.UndefOr[js.Any] = js.native
   /** Returns the card object (JSON).
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** Returns filter details.
     */
-  var filterCollection: js.UndefOr[js.Any] = js.undefined
+  var filterCollection: js.UndefOr[js.Any] = js.native
   /** Returns the Kanban model.
     */
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[js.Any] = js.native
   /** Returns the current action event type.
     */
-  var originalEventType: js.UndefOr[String] = js.undefined
+  var originalEventType: js.UndefOr[String] = js.native
   /** Returns primary key value.
     */
-  var primaryKeyValue: js.UndefOr[String] = js.undefined
+  var primaryKeyValue: js.UndefOr[String] = js.native
   /** Returns request type.
     */
-  var requestType: js.UndefOr[String] = js.undefined
+  var requestType: js.UndefOr[String] = js.native
   /** Returns the edited row index.
     */
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.native
   /** Returns the name of the event.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object ActionBeginEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    currentFilteringobject: js.Any = null,
-    data: js.Any = null,
-    filterCollection: js.Any = null,
-    model: js.Any = null,
-    originalEventType: String = null,
-    primaryKeyValue: String = null,
-    requestType: String = null,
-    rowIndex: js.UndefOr[Double] = js.undefined,
-    `type`: String = null
-  ): ActionBeginEventArgs = {
+  def apply(): ActionBeginEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (currentFilteringobject != null) __obj.updateDynamic("currentFilteringobject")(currentFilteringobject.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (filterCollection != null) __obj.updateDynamic("filterCollection")(filterCollection.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType.asInstanceOf[js.Any])
-    if (primaryKeyValue != null) __obj.updateDynamic("primaryKeyValue")(primaryKeyValue.asInstanceOf[js.Any])
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBeginEventArgs]
   }
+  @scala.inline
+  implicit class ActionBeginEventArgsOps[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCurrentFilteringobject(value: js.Any): Self = this.set("currentFilteringobject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentFilteringobject: Self = this.set("currentFilteringobject", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setFilterCollection(value: js.Any): Self = this.set("filterCollection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterCollection: Self = this.set("filterCollection", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setOriginalEventType(value: String): Self = this.set("originalEventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalEventType: Self = this.set("originalEventType", js.undefined)
+    @scala.inline
+    def setPrimaryKeyValue(value: String): Self = this.set("primaryKeyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKeyValue: Self = this.set("primaryKeyValue", js.undefined)
+    @scala.inline
+    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

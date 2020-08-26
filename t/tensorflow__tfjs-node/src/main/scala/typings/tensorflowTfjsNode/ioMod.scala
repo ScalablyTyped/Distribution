@@ -13,6 +13,7 @@ object ioMod extends js.Object {
   def fileSystem(path: String): NodeFileSystem = js.native
   def fileSystem(path: js.Array[String]): NodeFileSystem = js.native
   def nodeHTTPRequest(path: String): IOHandler = js.native
+  def nodeHTTPRequest(path: String, requestInit: js.UndefOr[scala.Nothing], weightPathPrefix: String): IOHandler = js.native
   def nodeHTTPRequest(path: String, requestInit: RequestInit): IOHandler = js.native
   def nodeHTTPRequest(path: String, requestInit: RequestInit, weightPathPrefix: String): IOHandler = js.native
 }

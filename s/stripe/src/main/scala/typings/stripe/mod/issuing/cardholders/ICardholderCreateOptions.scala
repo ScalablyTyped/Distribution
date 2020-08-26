@@ -1,55 +1,52 @@
 package typings.stripe.mod.issuing.cardholders
 
-import typings.std.Exclude
 import typings.stripe.anon.AddressICardholderBillingAddress
-import typings.stripe.mod.IOptionsMetadata
-import typings.stripe.stripeStrings.blocked
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICardholderCreateOptions extends ICardholderUpdateOptions {
   /**
     * The cardholder’s billing address.
     */
   @JSName("billing")
-  var billing_ICardholderCreateOptions: AddressICardholderBillingAddress
+  var billing_ICardholderCreateOptions: AddressICardholderBillingAddress = js.native
   /**
     * The cardholder’s name. This will be printed on cards issued to them.
     */
-  var name: String
+  var name: String = js.native
   /**
     * The type of cardholder. Possible values are individual or business_entity.
     */
-  var `type`: CardholderType
+  var `type`: CardholderType = js.native
 }
 
 object ICardholderCreateOptions {
   @scala.inline
-  def apply(
-    billing: AddressICardholderBillingAddress,
-    name: String,
-    `type`: CardholderType,
-    authorization_controls: ICardholderAuthorizationControls = null,
-    company: ICardholderBusinessEntity = null,
-    email: String = null,
-    individual: ICardholderIndividual = null,
-    is_default: js.UndefOr[Boolean] = js.undefined,
-    metadata: IOptionsMetadata = null,
-    phone_number: String = null,
-    status: Exclude[CardholderStatus, blocked] = null
-  ): ICardholderCreateOptions = {
+  def apply(billing: AddressICardholderBillingAddress, name: String, `type`: CardholderType): ICardholderCreateOptions = {
     val __obj = js.Dynamic.literal(billing = billing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (authorization_controls != null) __obj.updateDynamic("authorization_controls")(authorization_controls.asInstanceOf[js.Any])
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (individual != null) __obj.updateDynamic("individual")(individual.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_default)) __obj.updateDynamic("is_default")(is_default.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardholderCreateOptions]
   }
+  @scala.inline
+  implicit class ICardholderCreateOptionsOps[Self <: ICardholderCreateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBilling(value: AddressICardholderBillingAddress): Self = this.set("billing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: CardholderType): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

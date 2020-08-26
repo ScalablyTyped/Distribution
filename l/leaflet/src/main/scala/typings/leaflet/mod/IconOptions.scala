@@ -4,42 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IconOptions extends BaseIconOptions {
   @JSName("iconUrl")
-  var iconUrl_IconOptions: String
+  var iconUrl_IconOptions: String = js.native
 }
 
 object IconOptions {
   @scala.inline
-  def apply(
-    iconUrl: String,
-    attribution: String = null,
-    className: String = null,
-    iconAnchor: PointExpression = null,
-    iconRetinaUrl: String = null,
-    iconSize: PointExpression = null,
-    pane: String = null,
-    popupAnchor: PointExpression = null,
-    shadowAnchor: PointExpression = null,
-    shadowRetinaUrl: String = null,
-    shadowSize: PointExpression = null,
-    shadowUrl: String = null,
-    tooltipAnchor: PointExpression = null
-  ): IconOptions = {
+  def apply(iconUrl: String): IconOptions = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (iconAnchor != null) __obj.updateDynamic("iconAnchor")(iconAnchor.asInstanceOf[js.Any])
-    if (iconRetinaUrl != null) __obj.updateDynamic("iconRetinaUrl")(iconRetinaUrl.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (popupAnchor != null) __obj.updateDynamic("popupAnchor")(popupAnchor.asInstanceOf[js.Any])
-    if (shadowAnchor != null) __obj.updateDynamic("shadowAnchor")(shadowAnchor.asInstanceOf[js.Any])
-    if (shadowRetinaUrl != null) __obj.updateDynamic("shadowRetinaUrl")(shadowRetinaUrl.asInstanceOf[js.Any])
-    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize.asInstanceOf[js.Any])
-    if (shadowUrl != null) __obj.updateDynamic("shadowUrl")(shadowUrl.asInstanceOf[js.Any])
-    if (tooltipAnchor != null) __obj.updateDynamic("tooltipAnchor")(tooltipAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconOptions]
   }
+  @scala.inline
+  implicit class IconOptionsOps[Self <: IconOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+  }
+  
 }
 

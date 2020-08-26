@@ -12,7 +12,7 @@ A+ Promise interface to Node.js HTTPS request, with no dependencies
 | Keywords           | promise, http, https, request, post, rest |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 198464 |
+| # downloads        | 204209 |
 | # stars            | 1 |
 
 ## Links

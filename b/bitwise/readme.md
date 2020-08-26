@@ -12,7 +12,7 @@ Manipulates bits, nibbles, bytes, and buffers.
 | Keywords           | and, binary, bit, bits, bitwise, buffer, buffers, change, flip, manipulate, nand, nibble, nibbles, nor, not, or, read, toggle, write, xnor, xor |
 | # releases         | 17 |
 | # dependents       | 20 |
-| # downloads        | 154377 |
+| # downloads        | 155281 |
 | # stars            | 2 |
 
 ## Links

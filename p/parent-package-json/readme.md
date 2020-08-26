@@ -12,7 +12,7 @@ Find, read and parse the package.json of the parent module
 | Keywords           | parent, package.json, find, search, parse, read |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 36407 |
+| # downloads        | 37204 |
 | # stars            | 0 |
 
 ## Links

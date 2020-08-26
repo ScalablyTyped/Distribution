@@ -18,11 +18,32 @@ trait CacheParameterGroupsMessage extends js.Object {
 
 object CacheParameterGroupsMessage {
   @scala.inline
-  def apply(CacheParameterGroups: CacheParameterGroupList = null, Marker: String = null): CacheParameterGroupsMessage = {
+  def apply(): CacheParameterGroupsMessage = {
     val __obj = js.Dynamic.literal()
-    if (CacheParameterGroups != null) __obj.updateDynamic("CacheParameterGroups")(CacheParameterGroups.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheParameterGroupsMessage]
   }
+  @scala.inline
+  implicit class CacheParameterGroupsMessageOps[Self <: CacheParameterGroupsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheParameterGroupsVarargs(value: CacheParameterGroup*): Self = this.set("CacheParameterGroups", js.Array(value :_*))
+    @scala.inline
+    def setCacheParameterGroups(value: CacheParameterGroupList): Self = this.set("CacheParameterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheParameterGroups: Self = this.set("CacheParameterGroups", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

@@ -34,20 +34,42 @@ trait CreateAlgorithmInput extends js.Object {
 
 object CreateAlgorithmInput {
   @scala.inline
-  def apply(
-    AlgorithmName: EntityName,
-    TrainingSpecification: TrainingSpecification,
-    AlgorithmDescription: EntityDescription = null,
-    CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined,
-    InferenceSpecification: InferenceSpecification = null,
-    ValidationSpecification: AlgorithmValidationSpecification = null
-  ): CreateAlgorithmInput = {
+  def apply(AlgorithmName: EntityName, TrainingSpecification: TrainingSpecification): CreateAlgorithmInput = {
     val __obj = js.Dynamic.literal(AlgorithmName = AlgorithmName.asInstanceOf[js.Any], TrainingSpecification = TrainingSpecification.asInstanceOf[js.Any])
-    if (AlgorithmDescription != null) __obj.updateDynamic("AlgorithmDescription")(AlgorithmDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(CertifyForMarketplace)) __obj.updateDynamic("CertifyForMarketplace")(CertifyForMarketplace.get.asInstanceOf[js.Any])
-    if (InferenceSpecification != null) __obj.updateDynamic("InferenceSpecification")(InferenceSpecification.asInstanceOf[js.Any])
-    if (ValidationSpecification != null) __obj.updateDynamic("ValidationSpecification")(ValidationSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAlgorithmInput]
   }
+  @scala.inline
+  implicit class CreateAlgorithmInputOps[Self <: CreateAlgorithmInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmName(value: EntityName): Self = this.set("AlgorithmName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrainingSpecification(value: TrainingSpecification): Self = this.set("TrainingSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlgorithmDescription(value: EntityDescription): Self = this.set("AlgorithmDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmDescription: Self = this.set("AlgorithmDescription", js.undefined)
+    @scala.inline
+    def setCertifyForMarketplace(value: CertifyForMarketplace): Self = this.set("CertifyForMarketplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertifyForMarketplace: Self = this.set("CertifyForMarketplace", js.undefined)
+    @scala.inline
+    def setInferenceSpecification(value: InferenceSpecification): Self = this.set("InferenceSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferenceSpecification: Self = this.set("InferenceSpecification", js.undefined)
+    @scala.inline
+    def setValidationSpecification(value: AlgorithmValidationSpecification): Self = this.set("ValidationSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationSpecification: Self = this.set("ValidationSpecification", js.undefined)
+  }
+  
 }
 

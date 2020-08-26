@@ -14,10 +14,26 @@ trait SccDestinationSettings extends js.Object {
 
 object SccDestinationSettings {
   @scala.inline
-  def apply(Framerate: SccDestinationFramerate = null): SccDestinationSettings = {
+  def apply(): SccDestinationSettings = {
     val __obj = js.Dynamic.literal()
-    if (Framerate != null) __obj.updateDynamic("Framerate")(Framerate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SccDestinationSettings]
   }
+  @scala.inline
+  implicit class SccDestinationSettingsOps[Self <: SccDestinationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFramerate(value: SccDestinationFramerate): Self = this.set("Framerate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerate: Self = this.set("Framerate", js.undefined)
+  }
+  
 }
 

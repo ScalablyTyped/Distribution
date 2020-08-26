@@ -1,11 +1,15 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.move
+import typings.arcgisJsApi.arcgisJsApiStrings.reshape
+import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import typings.std.Object
 import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SketchViewModelUpdateUpdateOptions extends Object {
   /**
     * Indicates if the `rotation` operation will be enabled when updating graphics. Only applies if `tool` is `transform`.
@@ -14,7 +18,7 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * @default true
     */
-  var enableRotation: js.UndefOr[Boolean] = js.undefined
+  var enableRotation: js.UndefOr[Boolean] = js.native
   /**
     * Indicates if the `scale` operation will be enabled when updating graphics. Only applies if `tool` is `transform`.
     *
@@ -22,7 +26,7 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * @default true
     */
-  var enableScaling: js.UndefOr[Boolean] = js.undefined
+  var enableScaling: js.UndefOr[Boolean] = js.native
   /**
     * Indicates if z-values can be modified when updating the graphic. When enabled, the height handle manipulator is displayed.
     *
@@ -30,7 +34,7 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * @default true
     */
-  var enableZ: js.UndefOr[Boolean] = js.undefined
+  var enableZ: js.UndefOr[Boolean] = js.native
   /**
     * Indicates whether more than one selection can be made at once. This applies to the shift+click interaction with the `transform` tool.
     *
@@ -38,7 +42,7 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * @default true
     */
-  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Indicates if the uniform scale operation will be enabled when updating graphics. `enableScaling` must be set `true` when setting this property to `true`. Only applies if `tool` is `transform` and is always `true` when transforming points that use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html).
     *
@@ -46,7 +50,7 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * @default false
     */
-  var preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
+  var preserveAspectRatio: js.UndefOr[Boolean] = js.native
   /**
     * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
     *
@@ -54,9 +58,9 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * @default true
     */
-  var toggleToolOnClick: js.UndefOr[Boolean] = js.undefined
+  var toggleToolOnClick: js.UndefOr[Boolean] = js.native
   /**
-    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).  **Possible Values:**
+    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |
@@ -67,7 +71,7 @@ trait SketchViewModelUpdateUpdateOptions extends Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var tool: js.UndefOr[String] = js.undefined
+  var tool: js.UndefOr[transform | reshape | move] = js.native
 }
 
 object SketchViewModelUpdateUpdateOptions {
@@ -75,24 +79,51 @@ object SketchViewModelUpdateUpdateOptions {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    enableRotation: js.UndefOr[Boolean] = js.undefined,
-    enableScaling: js.UndefOr[Boolean] = js.undefined,
-    enableZ: js.UndefOr[Boolean] = js.undefined,
-    multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined,
-    preserveAspectRatio: js.UndefOr[Boolean] = js.undefined,
-    toggleToolOnClick: js.UndefOr[Boolean] = js.undefined,
-    tool: String = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SketchViewModelUpdateUpdateOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(enableRotation)) __obj.updateDynamic("enableRotation")(enableRotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableScaling)) __obj.updateDynamic("enableScaling")(enableScaling.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableZ)) __obj.updateDynamic("enableZ")(enableZ.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleSelectionEnabled)) __obj.updateDynamic("multipleSelectionEnabled")(multipleSelectionEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveAspectRatio)) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleToolOnClick)) __obj.updateDynamic("toggleToolOnClick")(toggleToolOnClick.get.asInstanceOf[js.Any])
-    if (tool != null) __obj.updateDynamic("tool")(tool.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelUpdateUpdateOptions]
   }
+  @scala.inline
+  implicit class SketchViewModelUpdateUpdateOptionsOps[Self <: SketchViewModelUpdateUpdateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableRotation(value: Boolean): Self = this.set("enableRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRotation: Self = this.set("enableRotation", js.undefined)
+    @scala.inline
+    def setEnableScaling(value: Boolean): Self = this.set("enableScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableScaling: Self = this.set("enableScaling", js.undefined)
+    @scala.inline
+    def setEnableZ(value: Boolean): Self = this.set("enableZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableZ: Self = this.set("enableZ", js.undefined)
+    @scala.inline
+    def setMultipleSelectionEnabled(value: Boolean): Self = this.set("multipleSelectionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultipleSelectionEnabled: Self = this.set("multipleSelectionEnabled", js.undefined)
+    @scala.inline
+    def setPreserveAspectRatio(value: Boolean): Self = this.set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveAspectRatio: Self = this.set("preserveAspectRatio", js.undefined)
+    @scala.inline
+    def setToggleToolOnClick(value: Boolean): Self = this.set("toggleToolOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggleToolOnClick: Self = this.set("toggleToolOnClick", js.undefined)
+    @scala.inline
+    def setTool(value: transform | reshape | move): Self = this.set("tool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTool: Self = this.set("tool", js.undefined)
+  }
+  
 }
 

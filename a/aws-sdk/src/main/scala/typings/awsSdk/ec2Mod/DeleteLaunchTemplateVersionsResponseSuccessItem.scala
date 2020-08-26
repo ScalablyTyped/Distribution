@@ -22,16 +22,34 @@ trait DeleteLaunchTemplateVersionsResponseSuccessItem extends js.Object {
 
 object DeleteLaunchTemplateVersionsResponseSuccessItem {
   @scala.inline
-  def apply(
-    LaunchTemplateId: String = null,
-    LaunchTemplateName: String = null,
-    VersionNumber: js.UndefOr[Long] = js.undefined
-  ): DeleteLaunchTemplateVersionsResponseSuccessItem = {
+  def apply(): DeleteLaunchTemplateVersionsResponseSuccessItem = {
     val __obj = js.Dynamic.literal()
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResponseSuccessItem]
   }
+  @scala.inline
+  implicit class DeleteLaunchTemplateVersionsResponseSuccessItemOps[Self <: DeleteLaunchTemplateVersionsResponseSuccessItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchTemplateId(value: String): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: String): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    @scala.inline
+    def setVersionNumber(value: Long): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+  }
+  
 }
 

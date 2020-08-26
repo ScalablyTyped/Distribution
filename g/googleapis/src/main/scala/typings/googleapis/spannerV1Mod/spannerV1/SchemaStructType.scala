@@ -21,10 +21,28 @@ trait SchemaStructType extends js.Object {
 
 object SchemaStructType {
   @scala.inline
-  def apply(fields: js.Array[SchemaField] = null): SchemaStructType = {
+  def apply(): SchemaStructType = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStructType]
   }
+  @scala.inline
+  implicit class SchemaStructTypeOps[Self <: SchemaStructType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldsVarargs(value: SchemaField*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: js.Array[SchemaField]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+  }
+  
 }
 

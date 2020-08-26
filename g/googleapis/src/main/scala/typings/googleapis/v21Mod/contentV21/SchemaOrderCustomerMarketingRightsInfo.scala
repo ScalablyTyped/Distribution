@@ -27,16 +27,34 @@ trait SchemaOrderCustomerMarketingRightsInfo extends js.Object {
 
 object SchemaOrderCustomerMarketingRightsInfo {
   @scala.inline
-  def apply(
-    explicitMarketingPreference: String = null,
-    lastUpdatedTimestamp: String = null,
-    marketingEmailAddress: String = null
-  ): SchemaOrderCustomerMarketingRightsInfo = {
+  def apply(): SchemaOrderCustomerMarketingRightsInfo = {
     val __obj = js.Dynamic.literal()
-    if (explicitMarketingPreference != null) __obj.updateDynamic("explicitMarketingPreference")(explicitMarketingPreference.asInstanceOf[js.Any])
-    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp.asInstanceOf[js.Any])
-    if (marketingEmailAddress != null) __obj.updateDynamic("marketingEmailAddress")(marketingEmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderCustomerMarketingRightsInfo]
   }
+  @scala.inline
+  implicit class SchemaOrderCustomerMarketingRightsInfoOps[Self <: SchemaOrderCustomerMarketingRightsInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExplicitMarketingPreference(value: String): Self = this.set("explicitMarketingPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitMarketingPreference: Self = this.set("explicitMarketingPreference", js.undefined)
+    @scala.inline
+    def setLastUpdatedTimestamp(value: String): Self = this.set("lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTimestamp: Self = this.set("lastUpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setMarketingEmailAddress(value: String): Self = this.set("marketingEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketingEmailAddress: Self = this.set("marketingEmailAddress", js.undefined)
+  }
+  
 }
 

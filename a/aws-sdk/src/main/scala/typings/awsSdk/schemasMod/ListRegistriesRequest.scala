@@ -23,18 +23,38 @@ trait ListRegistriesRequest extends js.Object {
 
 object ListRegistriesRequest {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[integer] = js.undefined,
-    NextToken: string = null,
-    RegistryNamePrefix: string = null,
-    Scope: string = null
-  ): ListRegistriesRequest = {
+  def apply(): ListRegistriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RegistryNamePrefix != null) __obj.updateDynamic("RegistryNamePrefix")(RegistryNamePrefix.asInstanceOf[js.Any])
-    if (Scope != null) __obj.updateDynamic("Scope")(Scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRegistriesRequest]
   }
+  @scala.inline
+  implicit class ListRegistriesRequestOps[Self <: ListRegistriesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: integer): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRegistryNamePrefix(value: string): Self = this.set("RegistryNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryNamePrefix: Self = this.set("RegistryNamePrefix", js.undefined)
+    @scala.inline
+    def setScope(value: string): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("Scope", js.undefined)
+  }
+  
 }
 

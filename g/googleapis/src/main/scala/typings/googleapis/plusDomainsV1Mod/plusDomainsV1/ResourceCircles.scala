@@ -30,6 +30,7 @@ class ResourceCircles protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCircleFeed] = js.native
   def list(callback: BodyResponseCallback[SchemaCircleFeed]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCircleFeed] = js.native
   def list(params: ParamsResourceCirclesList): GaxiosPromise[SchemaCircleFeed] = js.native
   def list(params: ParamsResourceCirclesList, callback: BodyResponseCallback[SchemaCircleFeed]): Unit = js.native
   def list(

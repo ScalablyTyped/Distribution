@@ -23,11 +23,30 @@ trait SchemaContactGroupMetadata extends js.Object {
 
 object SchemaContactGroupMetadata {
   @scala.inline
-  def apply(deleted: js.UndefOr[Boolean] = js.undefined, updateTime: String = null): SchemaContactGroupMetadata = {
+  def apply(): SchemaContactGroupMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContactGroupMetadata]
   }
+  @scala.inline
+  implicit class SchemaContactGroupMetadataOps[Self <: SchemaContactGroupMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

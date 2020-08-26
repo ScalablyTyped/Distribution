@@ -14,10 +14,26 @@ trait JourneyCustomMessage extends js.Object {
 
 object JourneyCustomMessage {
   @scala.inline
-  def apply(Data: string = null): JourneyCustomMessage = {
+  def apply(): JourneyCustomMessage = {
     val __obj = js.Dynamic.literal()
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneyCustomMessage]
   }
+  @scala.inline
+  implicit class JourneyCustomMessageOps[Self <: JourneyCustomMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: string): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+  }
+  
 }
 

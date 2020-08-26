@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DescribeReplicationTasksMessage extends js.Object {
   /**
-    * Filters applied to the describe action. Valid filter names: replication-task-arn | replication-task-id | migration-type | endpoint-arn | replication-instance-arn
+    * Filters applied to replication tasks. Valid filter names: replication-task-arn | replication-task-id | migration-type | endpoint-arn | replication-instance-arn
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**
@@ -26,18 +26,40 @@ trait DescribeReplicationTasksMessage extends js.Object {
 
 object DescribeReplicationTasksMessage {
   @scala.inline
-  def apply(
-    Filters: FilterList = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    WithoutSettings: js.UndefOr[BooleanOptional] = js.undefined
-  ): DescribeReplicationTasksMessage = {
+  def apply(): DescribeReplicationTasksMessage = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(WithoutSettings)) __obj.updateDynamic("WithoutSettings")(WithoutSettings.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReplicationTasksMessage]
   }
+  @scala.inline
+  implicit class DescribeReplicationTasksMessageOps[Self <: DescribeReplicationTasksMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setWithoutSettings(value: BooleanOptional): Self = this.set("WithoutSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithoutSettings: Self = this.set("WithoutSettings", js.undefined)
+  }
+  
 }
 

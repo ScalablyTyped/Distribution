@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "dir-resolve"
-version := "1.0-dt-20200515Z-883148"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-228ba6"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -31,6 +31,7 @@ class ResourceContactgroupsMembers protected () extends js.Object {
     */
   def modify(): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
   def modify(callback: BodyResponseCallback[SchemaModifyContactGroupMembersResponse]): Unit = js.native
+  def modify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
   def modify(params: ParamsResourceContactgroupsMembersModify): GaxiosPromise[SchemaModifyContactGroupMembersResponse] = js.native
   def modify(
     params: ParamsResourceContactgroupsMembersModify,

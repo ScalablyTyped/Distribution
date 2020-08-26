@@ -18,11 +18,32 @@ trait DescribeEndpointsResponse extends js.Object {
 
 object DescribeEndpointsResponse {
   @scala.inline
-  def apply(Endpoints: listOfEndpoint = null, NextToken: string = null): DescribeEndpointsResponse = {
+  def apply(): DescribeEndpointsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEndpointsResponse]
   }
+  @scala.inline
+  implicit class DescribeEndpointsResponseOps[Self <: DescribeEndpointsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointsVarargs(value: Endpoint*): Self = this.set("Endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: listOfEndpoint): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

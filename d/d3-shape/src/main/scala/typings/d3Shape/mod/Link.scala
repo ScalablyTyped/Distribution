@@ -20,13 +20,17 @@ trait Link[This, LinkDatum, NodeDatum] extends js.Object {
     */
   def apply(d: LinkDatum, args: js.Any*): String | Null = js.native
   /**
+    * Returns the current rendering context, which defaults to null.
+    */
+  def context(): CanvasRenderingContext2D | Null = js.native
+  /**
     * Sets the rendering context to null and returns this link generator.
     *
     * A path data string representing the generated link will be returned when the generator is invoked with data.
     *
     * @param context null, to remove rendering context.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Sets the rendering context and returns this link generator.
     *
@@ -35,11 +39,6 @@ trait Link[This, LinkDatum, NodeDatum] extends js.Object {
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
-  /**
-    * Returns the current rendering context, which defaults to null.
-    */
-  @JSName("context")
-  def context_Union(): CanvasRenderingContext2D | Null = js.native
   /**
     * Returns the current source node accessor function.
     * The default source accessor function returns a two element array [x, y].

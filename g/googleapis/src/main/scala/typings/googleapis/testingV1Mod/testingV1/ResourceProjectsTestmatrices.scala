@@ -33,6 +33,7 @@ class ResourceProjectsTestmatrices protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[SchemaCancelTestMatrixResponse] = js.native
   def cancel(callback: BodyResponseCallback[SchemaCancelTestMatrixResponse]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCancelTestMatrixResponse] = js.native
   def cancel(params: ParamsResourceProjectsTestmatricesCancel): GaxiosPromise[SchemaCancelTestMatrixResponse] = js.native
   def cancel(
     params: ParamsResourceProjectsTestmatricesCancel,
@@ -71,6 +72,7 @@ class ResourceProjectsTestmatrices protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTestMatrix] = js.native
   def create(callback: BodyResponseCallback[SchemaTestMatrix]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestMatrix] = js.native
   def create(params: ParamsResourceProjectsTestmatricesCreate): GaxiosPromise[SchemaTestMatrix] = js.native
   def create(params: ParamsResourceProjectsTestmatricesCreate, callback: BodyResponseCallback[SchemaTestMatrix]): Unit = js.native
   def create(
@@ -102,6 +104,7 @@ class ResourceProjectsTestmatrices protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTestMatrix] = js.native
   def get(callback: BodyResponseCallback[SchemaTestMatrix]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestMatrix] = js.native
   def get(params: ParamsResourceProjectsTestmatricesGet): GaxiosPromise[SchemaTestMatrix] = js.native
   def get(params: ParamsResourceProjectsTestmatricesGet, callback: BodyResponseCallback[SchemaTestMatrix]): Unit = js.native
   def get(

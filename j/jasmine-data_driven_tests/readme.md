@@ -12,7 +12,7 @@ This plugin for Jasmine 2.x allows you to easily create data driven tests.
 | Keywords           | jasmine, unit, test, testing, helpers, all |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 58489 |
+| # downloads        | 60255 |
 | # stars            | 1 |
 
 ## Links

@@ -42,26 +42,54 @@ trait DelegatedAdministrator extends js.Object {
 
 object DelegatedAdministrator {
   @scala.inline
-  def apply(
-    Arn: AccountArn = null,
-    DelegationEnabledDate: Timestamp = null,
-    Email: Email = null,
-    Id: AccountId = null,
-    JoinedMethod: AccountJoinedMethod = null,
-    JoinedTimestamp: Timestamp = null,
-    Name: AccountName = null,
-    Status: AccountStatus = null
-  ): DelegatedAdministrator = {
+  def apply(): DelegatedAdministrator = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (DelegationEnabledDate != null) __obj.updateDynamic("DelegationEnabledDate")(DelegationEnabledDate.asInstanceOf[js.Any])
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (JoinedMethod != null) __obj.updateDynamic("JoinedMethod")(JoinedMethod.asInstanceOf[js.Any])
-    if (JoinedTimestamp != null) __obj.updateDynamic("JoinedTimestamp")(JoinedTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelegatedAdministrator]
   }
+  @scala.inline
+  implicit class DelegatedAdministratorOps[Self <: DelegatedAdministrator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AccountArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setDelegationEnabledDate(value: Timestamp): Self = this.set("DelegationEnabledDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegationEnabledDate: Self = this.set("DelegationEnabledDate", js.undefined)
+    @scala.inline
+    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setId(value: AccountId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setJoinedMethod(value: AccountJoinedMethod): Self = this.set("JoinedMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinedMethod: Self = this.set("JoinedMethod", js.undefined)
+    @scala.inline
+    def setJoinedTimestamp(value: Timestamp): Self = this.set("JoinedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoinedTimestamp: Self = this.set("JoinedTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: AccountName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: AccountStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

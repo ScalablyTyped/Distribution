@@ -34,22 +34,48 @@ trait DescribeDimensionResponse extends js.Object {
 
 object DescribeDimensionResponse {
   @scala.inline
-  def apply(
-    arn: DimensionArn = null,
-    creationDate: Timestamp = null,
-    lastModifiedDate: Timestamp = null,
-    name: DimensionName = null,
-    stringValues: DimensionStringValues = null,
-    `type`: DimensionType = null
-  ): DescribeDimensionResponse = {
+  def apply(): DescribeDimensionResponse = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stringValues != null) __obj.updateDynamic("stringValues")(stringValues.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDimensionResponse]
   }
+  @scala.inline
+  implicit class DescribeDimensionResponseOps[Self <: DescribeDimensionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: DimensionArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: Timestamp): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setName(value: DimensionName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStringValuesVarargs(value: DimensionStringValue*): Self = this.set("stringValues", js.Array(value :_*))
+    @scala.inline
+    def setStringValues(value: DimensionStringValues): Self = this.set("stringValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValues: Self = this.set("stringValues", js.undefined)
+    @scala.inline
+    def setType(value: DimensionType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

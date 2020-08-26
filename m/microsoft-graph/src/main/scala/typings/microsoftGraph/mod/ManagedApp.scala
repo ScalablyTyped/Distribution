@@ -4,55 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ManagedApp extends MobileApp {
   // The Application's availability. Possible values are: global, lineOfBusiness.
-  var appAvailability: js.UndefOr[ManagedAppAvailability] = js.undefined
+  var appAvailability: js.UndefOr[ManagedAppAvailability] = js.native
   // The Application's version.
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object ManagedApp {
   @scala.inline
-  def apply(
-    appAvailability: ManagedAppAvailability = null,
-    assignments: js.Array[MobileAppAssignment] = null,
-    categories: js.Array[MobileAppCategory] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    developer: String = null,
-    displayName: String = null,
-    id: String = null,
-    informationUrl: String = null,
-    isFeatured: js.UndefOr[Boolean] = js.undefined,
-    largeIcon: MimeContent = null,
-    lastModifiedDateTime: String = null,
-    notes: String = null,
-    owner: String = null,
-    privacyInformationUrl: String = null,
-    publisher: String = null,
-    publishingState: MobileAppPublishingState = null,
-    version: String = null
-  ): ManagedApp = {
+  def apply(): ManagedApp = {
     val __obj = js.Dynamic.literal()
-    if (appAvailability != null) __obj.updateDynamic("appAvailability")(appAvailability.asInstanceOf[js.Any])
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.get.asInstanceOf[js.Any])
-    if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (privacyInformationUrl != null) __obj.updateDynamic("privacyInformationUrl")(privacyInformationUrl.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedApp]
   }
+  @scala.inline
+  implicit class ManagedAppOps[Self <: ManagedApp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppAvailability(value: ManagedAppAvailability): Self = this.set("appAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppAvailability: Self = this.set("appAvailability", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

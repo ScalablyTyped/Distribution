@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/boxpanel", "BoxPanel.setSizeBasis")
+@JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.setSizeBasis")
 @js.native
 object setSizeBasis extends js.Object {
   /**

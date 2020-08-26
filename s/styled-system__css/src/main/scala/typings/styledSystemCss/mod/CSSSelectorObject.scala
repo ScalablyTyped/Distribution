@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CSSSelectorObject
   extends /* cssSelector */ StringDictionary[SystemStyleObject]
      with _SystemStyleObject
 
 object CSSSelectorObject {
   @scala.inline
-  def apply(StringDictionary: /* cssSelector */ StringDictionary[SystemStyleObject] = null): CSSSelectorObject = {
+  def apply(): CSSSelectorObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CSSSelectorObject]
   }
 }

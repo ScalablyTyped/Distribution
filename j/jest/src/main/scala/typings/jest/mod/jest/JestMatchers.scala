@@ -28,6 +28,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected arguments via a generic.
     * Note that the type must be either an array or a tuple.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def lastCalledWith[E /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type E is not an array type */ args: E
   ): Unit = js.native
@@ -37,6 +38,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def lastReturnedWith[E](value: E): Unit = js.native
   /**
     * Ensure that a mock function is called with specific arguments on an Nth call.
@@ -44,6 +46,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected arguments via a generic.
     * Note that the type must be either an array or a tuple.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def nthCalledWith[E /* <: js.Array[_] */](
     nthCall: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
@@ -54,6 +57,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def nthReturnedWith[E](n: Double, value: E): Unit = js.native
   /**
     * Checks that a value is what you expect. It uses `Object.is` to check strict equality.
@@ -62,6 +66,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toBe[E](expected: E): Unit = js.native
   /**
     * Ensures that a mock function is called.
@@ -77,6 +82,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected arguments via a generic.
     * Note that the type must be either an array or a tuple.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toBeCalledWith[E /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type E is not an array type */ args: E
   ): Unit = js.native
@@ -111,6 +117,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toBeInstanceOf[E](expected: E): Unit = js.native
   /**
     * For comparing floating point numbers.
@@ -147,6 +154,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toContain[E](expected: E): Unit = js.native
   /**
     * Used when you want to check that an item is in a list.
@@ -156,6 +164,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toContainEqual[E](expected: E): Unit = js.native
   /**
     * Used when you want to check that two objects have the same value.
@@ -164,6 +173,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toEqual[E](expected: E): Unit = js.native
   /**
     * Ensures that a mock function is called.
@@ -179,6 +189,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected arguments via a generic.
     * Note that the type must be either an array or a tuple.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveBeenCalledWith[E /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): Unit = js.native
@@ -189,6 +200,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected arguments via a generic.
     * Note that the type must be either an array or a tuple.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveBeenLastCalledWith[E /* <: js.Array[_] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): Unit = js.native
@@ -198,6 +210,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected arguments via a generic.
     * Note that the type must be either an array or a tuple.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveBeenNthCalledWith[E /* <: js.Array[_] */](
     nthCall: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
@@ -210,6 +223,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveLastReturnedWith[E](expected: E): Unit = js.native
   /**
     * Used to check that an object has a `.length` property
@@ -224,6 +238,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveNthReturnedWith[E](nthCall: Double, expected: E): Unit = js.native
   /**
     * Use to check if property at provided reference keyPath exists for an object.
@@ -238,6 +253,7 @@ trait JestMatchers[T] extends js.Object {
     *
     * expect(houseForSale).toHaveProperty('kitchen.area', 20);
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveProperty[E](propertyPath: String): Unit = js.native
   def toHaveProperty[E](propertyPath: String, value: E): Unit = js.native
   def toHaveProperty[E](propertyPath: js.Array[_]): Unit = js.native
@@ -257,6 +273,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toHaveReturnedWith[E](expected: E): Unit = js.native
   /**
     * Check that a string matches a regular expression.
@@ -275,6 +292,7 @@ trait JestMatchers[T] extends js.Object {
     * Instead of writing the snapshot value to a .snap file, it will be written into the source code automatically.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
@@ -301,6 +319,7 @@ trait JestMatchers[T] extends js.Object {
     *
     * expect(desiredHouse).toMatchObject<House>(...standardHouse, kitchen: {area: 20}) // wherein standardHouse is some base object of type House
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toMatchObject[E /* <: js.Object | js.Array[_] */](expected: E): Unit = js.native
   /**
     * This ensures that a value matches the most recent snapshot.
@@ -312,6 +331,7 @@ trait JestMatchers[T] extends js.Object {
     * This ensures that a value matches the most recent snapshot with property matchers.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
     */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
@@ -332,6 +352,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toReturnWith[E](value: E): Unit = js.native
   /**
     * Use to test that objects have the same types as well as structure.
@@ -339,6 +360,7 @@ trait JestMatchers[T] extends js.Object {
     * Optionally, you can provide a type for the expected value via a generic.
     * This is particuarly useful for ensuring expected objects have the right structure.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def toStrictEqual[E](expected: E): Unit = js.native
   /**
     * Used to test that a function throws when it is called.

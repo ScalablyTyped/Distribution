@@ -35,20 +35,42 @@ trait SchemaUserDeletionRequest extends js.Object {
 
 object SchemaUserDeletionRequest {
   @scala.inline
-  def apply(
-    deletionRequestTime: String = null,
-    firebaseProjectId: String = null,
-    id: Type = null,
-    kind: String = null,
-    webPropertyId: String = null
-  ): SchemaUserDeletionRequest = {
+  def apply(): SchemaUserDeletionRequest = {
     val __obj = js.Dynamic.literal()
-    if (deletionRequestTime != null) __obj.updateDynamic("deletionRequestTime")(deletionRequestTime.asInstanceOf[js.Any])
-    if (firebaseProjectId != null) __obj.updateDynamic("firebaseProjectId")(firebaseProjectId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserDeletionRequest]
   }
+  @scala.inline
+  implicit class SchemaUserDeletionRequestOps[Self <: SchemaUserDeletionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeletionRequestTime(value: String): Self = this.set("deletionRequestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionRequestTime: Self = this.set("deletionRequestTime", js.undefined)
+    @scala.inline
+    def setFirebaseProjectId(value: String): Self = this.set("firebaseProjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirebaseProjectId: Self = this.set("firebaseProjectId", js.undefined)
+    @scala.inline
+    def setId(value: Type): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setWebPropertyId(value: String): Self = this.set("webPropertyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebPropertyId: Self = this.set("webPropertyId", js.undefined)
+  }
+  
 }
 

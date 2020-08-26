@@ -11,8 +11,8 @@ A tiny invariant function
 | Full name          | tiny-invariant |
 | Keywords           | invariant, error |
 | # releases         | 12 |
-| # dependents       | 192 |
-| # downloads        | 63718340 |
+| # dependents       | 200 |
+| # downloads        | 69337278 |
 | # stars            | 0 |
 
 ## Links

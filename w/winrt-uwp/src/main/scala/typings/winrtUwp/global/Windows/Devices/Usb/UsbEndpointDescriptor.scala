@@ -9,29 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Usb.UsbEndpointDescriptor")
 @js.native
 abstract class UsbEndpointDescriptor ()
-  extends typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor {
-  /** Gets an object that represents the endpoint descriptor for the USB bulk IN endpoint. */
-  /* CompleteClass */
-  override var asBulkInEndpointDescriptor: typings.winrtUwp.Windows.Devices.Usb.UsbBulkInEndpointDescriptor = js.native
-  /** Gets an object that represents the endpoint descriptor for the USB bulk OUT endpoint. */
-  /* CompleteClass */
-  override var asBulkOutEndpointDescriptor: typings.winrtUwp.Windows.Devices.Usb.UsbBulkOutEndpointDescriptor = js.native
-  /** Gets an object that represents the endpoint descriptor for the USB interrupt IN endpoint. */
-  /* CompleteClass */
-  override var asInterruptInEndpointDescriptor: typings.winrtUwp.Windows.Devices.Usb.UsbInterruptInEndpointDescriptor = js.native
-  /** Gets an object that represents the endpoint descriptor for the USB interrupt OUT endpoint. */
-  /* CompleteClass */
-  override var asInterruptOutEndpointDescriptor: typings.winrtUwp.Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor = js.native
-  /** Gets the direction of the USB endpoint. */
-  /* CompleteClass */
-  override var direction: typings.winrtUwp.Windows.Devices.Usb.UsbTransferDirection = js.native
-  /** Gets the USB endpoint number. */
-  /* CompleteClass */
-  override var endpointNumber: Double = js.native
-  /** Gets the type of USB endpoint. */
-  /* CompleteClass */
-  override var endpointType: typings.winrtUwp.Windows.Devices.Usb.UsbEndpointType = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor
 
 /* static members */
 @JSGlobal("Windows.Devices.Usb.UsbEndpointDescriptor")

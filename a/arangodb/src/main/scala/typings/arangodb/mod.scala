@@ -51,6 +51,7 @@ object mod extends js.Object {
     def _create(name: String, properties: CreateCollectionOptions): Collection[_] = js.native
     // Database
     def _createDatabase(name: String): `true` = js.native
+    def _createDatabase(name: String, options: js.UndefOr[scala.Nothing], users: js.Array[DatabaseUser]): `true` = js.native
     def _createDatabase(name: String, options: scala.Nothing): `true` = js.native
     def _createDatabase(name: String, options: scala.Nothing, users: js.Array[DatabaseUser]): `true` = js.native
     def _createDocumentCollection(name: String): Collection[_] = js.native
@@ -87,6 +88,7 @@ object mod extends js.Object {
     def _parse(query: String): ParsedQuery = js.native
     def _path(): String = js.native
     def _query(query: String): Cursor[_] = js.native
+    def _query(query: String, bindVars: js.UndefOr[scala.Nothing], options: QueryOptions): Cursor[_] = js.native
     def _query(query: String, bindVars: js.Object): Cursor[_] = js.native
     def _query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[_] = js.native
     def _query(query: Query): Cursor[_] = js.native

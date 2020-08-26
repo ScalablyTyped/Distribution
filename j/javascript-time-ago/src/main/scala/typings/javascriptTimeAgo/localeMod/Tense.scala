@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tense extends js.Object {
-  var current: js.UndefOr[QuantifyType | String] = js.undefined
-  var future: js.UndefOr[QuantifyType | String] = js.undefined
-  var next: js.UndefOr[QuantifyType | String] = js.undefined
-  var past: js.UndefOr[QuantifyType | String] = js.undefined
-  var previous: js.UndefOr[QuantifyType | String] = js.undefined
+  var current: js.UndefOr[QuantifyType | String] = js.native
+  var future: js.UndefOr[QuantifyType | String] = js.native
+  var next: js.UndefOr[QuantifyType | String] = js.native
+  var past: js.UndefOr[QuantifyType | String] = js.native
+  var previous: js.UndefOr[QuantifyType | String] = js.native
 }
 
 object Tense {
   @scala.inline
-  def apply(
-    current: QuantifyType | String = null,
-    future: QuantifyType | String = null,
-    next: QuantifyType | String = null,
-    past: QuantifyType | String = null,
-    previous: QuantifyType | String = null
-  ): Tense = {
+  def apply(): Tense = {
     val __obj = js.Dynamic.literal()
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (future != null) __obj.updateDynamic("future")(future.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (past != null) __obj.updateDynamic("past")(past.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tense]
   }
+  @scala.inline
+  implicit class TenseOps[Self <: Tense] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrent(value: QuantifyType | String): Self = this.set("current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrent: Self = this.set("current", js.undefined)
+    @scala.inline
+    def setFuture(value: QuantifyType | String): Self = this.set("future", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFuture: Self = this.set("future", js.undefined)
+    @scala.inline
+    def setNext(value: QuantifyType | String): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setPast(value: QuantifyType | String): Self = this.set("past", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePast: Self = this.set("past", js.undefined)
+    @scala.inline
+    def setPrevious(value: QuantifyType | String): Self = this.set("previous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevious: Self = this.set("previous", js.undefined)
+  }
+  
 }
 

@@ -19,10 +19,28 @@ trait ClusterLoggingInfoBrokerLogsCloudwatchLogs extends js.Object {
 
 object ClusterLoggingInfoBrokerLogsCloudwatchLogs {
   @scala.inline
-  def apply(enabled: Input[Boolean], logGroup: Input[String] = null): ClusterLoggingInfoBrokerLogsCloudwatchLogs = {
+  def apply(enabled: Input[Boolean]): ClusterLoggingInfoBrokerLogsCloudwatchLogs = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
-    if (logGroup != null) __obj.updateDynamic("logGroup")(logGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLoggingInfoBrokerLogsCloudwatchLogs]
   }
+  @scala.inline
+  implicit class ClusterLoggingInfoBrokerLogsCloudwatchLogsOps[Self <: ClusterLoggingInfoBrokerLogsCloudwatchLogs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogGroup(value: Input[String]): Self = this.set("logGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroup: Self = this.set("logGroup", js.undefined)
+  }
+  
 }
 

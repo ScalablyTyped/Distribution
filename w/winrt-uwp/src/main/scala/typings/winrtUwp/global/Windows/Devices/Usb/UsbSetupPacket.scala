@@ -16,20 +16,5 @@ class UsbSetupPacket ()
     * @param eightByteBuffer A caller-supplied buffer that contains the setup packet formatted as per the standard USB specification. The length of the buffer must be eight bytes because that is the size of a setup packet on the bus.
     */
   def this(eightByteBuffer: IBuffer) = this()
-  /** Gets or sets the wIndex field in the setup packet of the USB control transfer. */
-  /* CompleteClass */
-  override var index: Double = js.native
-  /** Gets the length, in bytes, of the setup packet. */
-  /* CompleteClass */
-  override var length: Double = js.native
-  /** Gets or sets the bRequest field in the setup packet of the USB control transfer. */
-  /* CompleteClass */
-  override var request: Double = js.native
-  /** Gets or sets the bmRequestType field in the setup packet of the USB control transfer. That field is represented by a UsbControlRequestType object. */
-  /* CompleteClass */
-  override var requestType: typings.winrtUwp.Windows.Devices.Usb.UsbControlRequestType = js.native
-  /** Gets or sets the wValue field in the setup packet of the USB control transfer. */
-  /* CompleteClass */
-  override var value: Double = js.native
 }
 

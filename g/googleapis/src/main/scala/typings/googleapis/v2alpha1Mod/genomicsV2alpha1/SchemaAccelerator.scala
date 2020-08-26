@@ -27,11 +27,30 @@ trait SchemaAccelerator extends js.Object {
 
 object SchemaAccelerator {
   @scala.inline
-  def apply(count: String = null, `type`: String = null): SchemaAccelerator = {
+  def apply(): SchemaAccelerator = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccelerator]
   }
+  @scala.inline
+  implicit class SchemaAcceleratorOps[Self <: SchemaAccelerator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: String): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

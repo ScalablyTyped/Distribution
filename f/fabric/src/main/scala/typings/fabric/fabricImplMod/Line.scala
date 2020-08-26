@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   */
 class Line () extends Object {
   def this(points: js.Array[Double]) = this()
+  def this(points: js.UndefOr[scala.Nothing], objObjects: ILineOptions) = this()
   def this(points: js.Array[Double], objObjects: ILineOptions) = this()
   /**
     * x value or first line edge
@@ -67,6 +68,7 @@ object Line extends js.Object {
     * @param {Function} [callback] callback function invoked after parsing
     */
   def fromElement(element: SVGElement): Line = js.native
+  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: ILineOptions): Line = js.native
   def fromElement(element: SVGElement, callback: js.Function): Line = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): Line = js.native
   /**

@@ -1,20 +1,7 @@
 package typings.googlemaps.global.google.maps
 
 import typings.googlemaps.google.maps.places.AutocompleteOptions
-import typings.googlemaps.google.maps.places.AutocompletePrediction
-import typings.googlemaps.google.maps.places.AutocompletionRequest
-import typings.googlemaps.google.maps.places.FindPlaceFromPhoneNumberRequest
-import typings.googlemaps.google.maps.places.FindPlaceFromQueryRequest
-import typings.googlemaps.google.maps.places.PlaceDetailsRequest
-import typings.googlemaps.google.maps.places.PlaceResult
-import typings.googlemaps.google.maps.places.PlaceSearchPagination
-import typings.googlemaps.google.maps.places.PlaceSearchRequest
-import typings.googlemaps.google.maps.places.PlacesServiceStatus
-import typings.googlemaps.google.maps.places.QueryAutocompletePrediction
-import typings.googlemaps.google.maps.places.QueryAutocompletionRequest
-import typings.googlemaps.google.maps.places.RadarSearchRequest
 import typings.googlemaps.google.maps.places.SearchBoxOptions
-import typings.googlemaps.google.maps.places.TextSearchRequest
 import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
@@ -34,26 +21,7 @@ object places extends js.Object {
   
   @js.native
   class AutocompleteService ()
-    extends typings.googlemaps.google.maps.places.AutocompleteService {
-    /* CompleteClass */
-    override def getPlacePredictions(
-      request: AutocompletionRequest,
-      callback: js.Function2[
-          /* result */ js.Array[AutocompletePrediction], 
-          /* status */ PlacesServiceStatus, 
-          Unit
-        ]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def getQueryPredictions(
-      request: QueryAutocompletionRequest,
-      callback: js.Function2[
-          /* result */ js.Array[QueryAutocompletePrediction], 
-          /* status */ PlacesServiceStatus, 
-          Unit
-        ]
-    ): Unit = js.native
-  }
+    extends typings.googlemaps.google.maps.places.AutocompleteService
   
   @js.native
   class AutocompleteSessionToken ()
@@ -64,50 +32,6 @@ object places extends js.Object {
     extends typings.googlemaps.google.maps.places.PlacesService {
     def this(attrContainer: typings.googlemaps.google.maps.Map[Element]) = this()
     def this(attrContainer: HTMLDivElement) = this()
-    /* CompleteClass */
-    override def findPlaceFromPhoneNumber(
-      request: FindPlaceFromPhoneNumberRequest,
-      callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def findPlaceFromQuery(
-      request: FindPlaceFromQueryRequest,
-      callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def getDetails(
-      request: PlaceDetailsRequest,
-      callback: js.Function2[/* result */ PlaceResult, /* status */ PlacesServiceStatus, Unit]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def nearbySearch(
-      request: PlaceSearchRequest,
-      callback: js.Function3[
-          /* results */ js.Array[PlaceResult], 
-          /* status */ PlacesServiceStatus, 
-          /* pagination */ PlaceSearchPagination, 
-          Unit
-        ]
-    ): Unit = js.native
-    /**
-      * @deprecated Radar search is deprecated as of June 30, 2018. After that
-      *     time, this feature will no longer be available.
-      */
-    /* CompleteClass */
-    override def radarSearch(
-      request: RadarSearchRequest,
-      callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def textSearch(
-      request: TextSearchRequest,
-      callback: js.Function3[
-          /* results */ js.Array[PlaceResult], 
-          /* status */ PlacesServiceStatus, 
-          /* pagination */ PlaceSearchPagination, 
-          Unit
-        ]
-    ): Unit = js.native
   }
   
   @js.native

@@ -30,19 +30,44 @@ trait ListRecommendationFeedbackRequest extends js.Object {
 
 object ListRecommendationFeedbackRequest {
   @scala.inline
-  def apply(
-    CodeReviewArn: Arn,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    RecommendationIds: RecommendationIds = null,
-    UserIds: UserIds = null
-  ): ListRecommendationFeedbackRequest = {
+  def apply(CodeReviewArn: Arn): ListRecommendationFeedbackRequest = {
     val __obj = js.Dynamic.literal(CodeReviewArn = CodeReviewArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RecommendationIds != null) __obj.updateDynamic("RecommendationIds")(RecommendationIds.asInstanceOf[js.Any])
-    if (UserIds != null) __obj.updateDynamic("UserIds")(UserIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRecommendationFeedbackRequest]
   }
+  @scala.inline
+  implicit class ListRecommendationFeedbackRequestOps[Self <: ListRecommendationFeedbackRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeReviewArn(value: Arn): Self = this.set("CodeReviewArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRecommendationIdsVarargs(value: RecommendationId*): Self = this.set("RecommendationIds", js.Array(value :_*))
+    @scala.inline
+    def setRecommendationIds(value: RecommendationIds): Self = this.set("RecommendationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationIds: Self = this.set("RecommendationIds", js.undefined)
+    @scala.inline
+    def setUserIdsVarargs(value: UserId*): Self = this.set("UserIds", js.Array(value :_*))
+    @scala.inline
+    def setUserIds(value: UserIds): Self = this.set("UserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIds: Self = this.set("UserIds", js.undefined)
+  }
+  
 }
 

@@ -96,6 +96,7 @@ trait Display extends js.Object {
   def subTile(x: Double, y: Double, width: Double, height: Double, color: NvColor): Unit = js.native
   def viewportChangePos(deltaX: Double, deltaY: Double): Unit = js.native
   def viewportChangeSize(): Unit = js.native
+  def viewportChangeSize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def viewportChangeSize(width: Double): Unit = js.native
   def viewportChangeSize(width: Double, height: Double): Unit = js.native
 }

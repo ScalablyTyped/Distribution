@@ -12,7 +12,7 @@ Minimalistic Promises/A+ implementation, <500 bytes
 | Keywords           | promises, promises-aplus |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 179394 |
+| # downloads        | 190575 |
 | # stars            | 1 |
 
 ## Links

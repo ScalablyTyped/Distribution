@@ -19,6 +19,7 @@ object clipboard extends js.Object {
   class dataTransfer ()
     extends typings.ckeditor.CKEDITOR.plugins.clipboard.dataTransfer {
     def this(nativeDataTransfer: DataTransfer) = this()
+    def this(nativeDataTransfer: js.UndefOr[scala.Nothing], editor: typings.ckeditor.CKEDITOR.editor) = this()
     def this(nativeDataTransfer: DataTransfer, editor: typings.ckeditor.CKEDITOR.editor) = this()
   }
   
@@ -37,9 +38,11 @@ object clipboard extends js.Object {
   def getDropTarget(editor: editor): domObject = js.native
   def getRangeAtDropPosition(domEvent: Event, editor: editor): range = js.native
   def initDragDataTransfer(): Unit = js.native
+  def initDragDataTransfer(evt: js.UndefOr[scala.Nothing], editor: editor): Unit = js.native
   def initDragDataTransfer(evt: event): Unit = js.native
   def initDragDataTransfer(evt: event, editor: editor): Unit = js.native
   def initPasteDataTransfer(): Unit = js.native
+  def initPasteDataTransfer(evt: js.UndefOr[scala.Nothing], sourceEditor: editor): Unit = js.native
   def initPasteDataTransfer(evt: event): Unit = js.native
   def initPasteDataTransfer(evt: event, sourceEditor: editor): Unit = js.native
   def preventDefaultDropOnElement(element: element): Unit = js.native

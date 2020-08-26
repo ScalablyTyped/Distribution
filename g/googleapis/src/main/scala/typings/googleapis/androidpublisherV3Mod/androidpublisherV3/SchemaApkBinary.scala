@@ -23,11 +23,30 @@ trait SchemaApkBinary extends js.Object {
 
 object SchemaApkBinary {
   @scala.inline
-  def apply(sha1: String = null, sha256: String = null): SchemaApkBinary = {
+  def apply(): SchemaApkBinary = {
     val __obj = js.Dynamic.literal()
-    if (sha1 != null) __obj.updateDynamic("sha1")(sha1.asInstanceOf[js.Any])
-    if (sha256 != null) __obj.updateDynamic("sha256")(sha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApkBinary]
   }
+  @scala.inline
+  implicit class SchemaApkBinaryOps[Self <: SchemaApkBinary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSha1(value: String): Self = this.set("sha1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha1: Self = this.set("sha1", js.undefined)
+    @scala.inline
+    def setSha256(value: String): Self = this.set("sha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha256: Self = this.set("sha256", js.undefined)
+  }
+  
 }
 

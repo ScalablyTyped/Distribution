@@ -27,6 +27,7 @@ class ResourceReports protected () extends js.Object {
     */
   def generate(): GaxiosPromise[SchemaReport] = js.native
   def generate(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
+  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def generate(params: ParamsResourceReportsGenerate): GaxiosPromise[SchemaReport] = js.native
   def generate(params: ParamsResourceReportsGenerate, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def generate(
@@ -54,6 +55,7 @@ class ResourceReports protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaReport] = js.native
   def get(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def get(params: ParamsResourceReportsGet): GaxiosPromise[SchemaReport] = js.native
   def get(params: ParamsResourceReportsGet, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def get(
@@ -82,6 +84,7 @@ class ResourceReports protected () extends js.Object {
     */
   def getFile(): GaxiosPromise[Unit] = js.native
   def getFile(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def getFile(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def getFile(params: ParamsResourceReportsGetfile): GaxiosPromise[Unit] = js.native
   def getFile(params: ParamsResourceReportsGetfile, callback: BodyResponseCallback[Unit]): Unit = js.native
   def getFile(
@@ -105,6 +108,7 @@ class ResourceReports protected () extends js.Object {
     */
   def request(): GaxiosPromise[SchemaReport] = js.native
   def request(callback: BodyResponseCallback[SchemaReport]): Unit = js.native
+  def request(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReport] = js.native
   def request(params: ParamsResourceReportsRequest): GaxiosPromise[SchemaReport] = js.native
   def request(params: ParamsResourceReportsRequest, callback: BodyResponseCallback[SchemaReport]): Unit = js.native
   def request(

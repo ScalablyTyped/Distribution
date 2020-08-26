@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "use-global-hook"
-version := "0.1-dt-20191023Z-d973cb"
-scalaVersion := "2.13.2"
+version := "0.1-dt-20191023Z-13aa2b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

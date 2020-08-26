@@ -12,7 +12,7 @@ A roguelike toolkit in JavaScript
 | Keywords           | ascii, dungeon, fov, game, libtcod, lighting, los, rng, rogue, roguelike, tiles |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 6458 |
+| # downloads        | 6492 |
 | # stars            | 2 |
 
 ## Links

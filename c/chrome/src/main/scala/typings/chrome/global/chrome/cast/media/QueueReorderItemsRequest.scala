@@ -14,11 +14,5 @@ class QueueReorderItemsRequest protected ()
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueReorderItemsRequest
     */
   def this(itemIdsToReorder: js.Array[Double]) = this()
-  /* CompleteClass */
-  override var customData: js.Object = js.native
-  /* CompleteClass */
-  override var insertBefore: Double = js.native
-  /* CompleteClass */
-  override var itemIds: js.Array[Double] = js.native
 }
 

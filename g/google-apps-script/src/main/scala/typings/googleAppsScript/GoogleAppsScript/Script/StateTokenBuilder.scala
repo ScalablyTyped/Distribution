@@ -22,11 +22,12 @@ import scala.scalajs.js.annotation._
   *       return url + stateToken;
   *     }
   */
+@js.native
 trait StateTokenBuilder extends js.Object {
-  def createToken(): String
-  def withArgument(name: String, value: String): StateTokenBuilder
-  def withMethod(method: String): StateTokenBuilder
-  def withTimeout(seconds: Integer): StateTokenBuilder
+  def createToken(): String = js.native
+  def withArgument(name: String, value: String): StateTokenBuilder = js.native
+  def withMethod(method: String): StateTokenBuilder = js.native
+  def withTimeout(seconds: Integer): StateTokenBuilder = js.native
 }
 
 object StateTokenBuilder {
@@ -40,5 +41,26 @@ object StateTokenBuilder {
     val __obj = js.Dynamic.literal(createToken = js.Any.fromFunction0(createToken), withArgument = js.Any.fromFunction2(withArgument), withMethod = js.Any.fromFunction1(withMethod), withTimeout = js.Any.fromFunction1(withTimeout))
     __obj.asInstanceOf[StateTokenBuilder]
   }
+  @scala.inline
+  implicit class StateTokenBuilderOps[Self <: StateTokenBuilder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateToken(value: () => String): Self = this.set("createToken", js.Any.fromFunction0(value))
+    @scala.inline
+    def setWithArgument(value: (String, String) => StateTokenBuilder): Self = this.set("withArgument", js.Any.fromFunction2(value))
+    @scala.inline
+    def setWithMethod(value: String => StateTokenBuilder): Self = this.set("withMethod", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWithTimeout(value: Integer => StateTokenBuilder): Self = this.set("withTimeout", js.Any.fromFunction1(value))
+  }
+  
 }
 

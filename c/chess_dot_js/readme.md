@@ -11,8 +11,8 @@ A Javascript chess library for chess move generation/validation, piece placement
 | Full name          | chess.js |
 | Keywords           | chess |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 27952 |
+| # dependents       | 30 |
+| # downloads        | 28738 |
 | # stars            | 7 |
 
 ## Links

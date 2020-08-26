@@ -29,7 +29,14 @@ object angularDelegateMod extends js.Object {
     def this(
       resolver: ComponentFactoryResolver,
       injector: Injector,
-      location: js.UndefOr[ViewContainerRef],
+      location: js.UndefOr[scala.Nothing],
+      appRef: ApplicationRef,
+      zone: NgZone
+    ) = this()
+    def this(
+      resolver: ComponentFactoryResolver,
+      injector: Injector,
+      location: ViewContainerRef,
       appRef: ApplicationRef,
       zone: NgZone
     ) = this()

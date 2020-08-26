@@ -34,21 +34,44 @@ trait ModifyClusterMaintenanceMessage extends js.Object {
 
 object ModifyClusterMaintenanceMessage {
   @scala.inline
-  def apply(
-    ClusterIdentifier: String,
-    DeferMaintenance: js.UndefOr[BooleanOptional] = js.undefined,
-    DeferMaintenanceDuration: js.UndefOr[IntegerOptional] = js.undefined,
-    DeferMaintenanceEndTime: TStamp = null,
-    DeferMaintenanceIdentifier: String = null,
-    DeferMaintenanceStartTime: TStamp = null
-  ): ModifyClusterMaintenanceMessage = {
+  def apply(ClusterIdentifier: String): ModifyClusterMaintenanceMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeferMaintenance)) __obj.updateDynamic("DeferMaintenance")(DeferMaintenance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeferMaintenanceDuration)) __obj.updateDynamic("DeferMaintenanceDuration")(DeferMaintenanceDuration.get.asInstanceOf[js.Any])
-    if (DeferMaintenanceEndTime != null) __obj.updateDynamic("DeferMaintenanceEndTime")(DeferMaintenanceEndTime.asInstanceOf[js.Any])
-    if (DeferMaintenanceIdentifier != null) __obj.updateDynamic("DeferMaintenanceIdentifier")(DeferMaintenanceIdentifier.asInstanceOf[js.Any])
-    if (DeferMaintenanceStartTime != null) __obj.updateDynamic("DeferMaintenanceStartTime")(DeferMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterMaintenanceMessage]
   }
+  @scala.inline
+  implicit class ModifyClusterMaintenanceMessageOps[Self <: ModifyClusterMaintenanceMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeferMaintenance(value: BooleanOptional): Self = this.set("DeferMaintenance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferMaintenance: Self = this.set("DeferMaintenance", js.undefined)
+    @scala.inline
+    def setDeferMaintenanceDuration(value: IntegerOptional): Self = this.set("DeferMaintenanceDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferMaintenanceDuration: Self = this.set("DeferMaintenanceDuration", js.undefined)
+    @scala.inline
+    def setDeferMaintenanceEndTime(value: TStamp): Self = this.set("DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferMaintenanceEndTime: Self = this.set("DeferMaintenanceEndTime", js.undefined)
+    @scala.inline
+    def setDeferMaintenanceIdentifier(value: String): Self = this.set("DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferMaintenanceIdentifier: Self = this.set("DeferMaintenanceIdentifier", js.undefined)
+    @scala.inline
+    def setDeferMaintenanceStartTime(value: TStamp): Self = this.set("DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferMaintenanceStartTime: Self = this.set("DeferMaintenanceStartTime", js.undefined)
+  }
+  
 }
 

@@ -32,7 +32,7 @@ class RetrievalSchema protected () extends Element {
     * In version 7.4.0: deleted
     */
   def entity: String = js.native
-  def entity(newValue: String): js.Any = js.native
+  def entity_=(newValue: String): Unit = js.native
   /**
     * In version 7.2.0: introduced
     */
@@ -45,7 +45,7 @@ class RetrievalSchema protected () extends Element {
     * In version 7.14.0: introduced
     */
   def widgetName: String = js.native
-  def widgetName(newValue: String): js.Any = js.native
+  def widgetName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

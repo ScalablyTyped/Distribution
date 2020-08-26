@@ -34,22 +34,46 @@ trait AwsKmsKeyDetails extends js.Object {
 
 object AwsKmsKeyDetails {
   @scala.inline
-  def apply(
-    AWSAccountId: NonEmptyString = null,
-    CreationDate: js.UndefOr[Double] = js.undefined,
-    KeyId: NonEmptyString = null,
-    KeyManager: NonEmptyString = null,
-    KeyState: NonEmptyString = null,
-    Origin: NonEmptyString = null
-  ): AwsKmsKeyDetails = {
+  def apply(): AwsKmsKeyDetails = {
     val __obj = js.Dynamic.literal()
-    if (AWSAccountId != null) __obj.updateDynamic("AWSAccountId")(AWSAccountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(CreationDate)) __obj.updateDynamic("CreationDate")(CreationDate.get.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (KeyManager != null) __obj.updateDynamic("KeyManager")(KeyManager.asInstanceOf[js.Any])
-    if (KeyState != null) __obj.updateDynamic("KeyState")(KeyState.asInstanceOf[js.Any])
-    if (Origin != null) __obj.updateDynamic("Origin")(Origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsKmsKeyDetails]
   }
+  @scala.inline
+  implicit class AwsKmsKeyDetailsOps[Self <: AwsKmsKeyDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAWSAccountId(value: NonEmptyString): Self = this.set("AWSAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAWSAccountId: Self = this.set("AWSAccountId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Double): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setKeyId(value: NonEmptyString): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setKeyManager(value: NonEmptyString): Self = this.set("KeyManager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyManager: Self = this.set("KeyManager", js.undefined)
+    @scala.inline
+    def setKeyState(value: NonEmptyString): Self = this.set("KeyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyState: Self = this.set("KeyState", js.undefined)
+    @scala.inline
+    def setOrigin(value: NonEmptyString): Self = this.set("Origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("Origin", js.undefined)
+  }
+  
 }
 

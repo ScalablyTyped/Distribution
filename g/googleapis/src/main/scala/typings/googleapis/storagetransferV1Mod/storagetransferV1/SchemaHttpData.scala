@@ -45,10 +45,26 @@ trait SchemaHttpData extends js.Object {
 
 object SchemaHttpData {
   @scala.inline
-  def apply(listUrl: String = null): SchemaHttpData = {
+  def apply(): SchemaHttpData = {
     val __obj = js.Dynamic.literal()
-    if (listUrl != null) __obj.updateDynamic("listUrl")(listUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpData]
   }
+  @scala.inline
+  implicit class SchemaHttpDataOps[Self <: SchemaHttpData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListUrl(value: String): Self = this.set("listUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListUrl: Self = this.set("listUrl", js.undefined)
+  }
+  
 }
 

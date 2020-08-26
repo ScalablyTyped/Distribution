@@ -38,24 +38,50 @@ trait RobotDeployment extends js.Object {
 
 object RobotDeployment {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    deploymentFinishTime: CreatedAt = null,
-    deploymentStartTime: CreatedAt = null,
-    failureCode: DeploymentJobErrorCode = null,
-    failureReason: GenericString = null,
-    progressDetail: ProgressDetail = null,
-    status: RobotStatus = null
-  ): RobotDeployment = {
+  def apply(): RobotDeployment = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (deploymentFinishTime != null) __obj.updateDynamic("deploymentFinishTime")(deploymentFinishTime.asInstanceOf[js.Any])
-    if (deploymentStartTime != null) __obj.updateDynamic("deploymentStartTime")(deploymentStartTime.asInstanceOf[js.Any])
-    if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (progressDetail != null) __obj.updateDynamic("progressDetail")(progressDetail.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[RobotDeployment]
   }
+  @scala.inline
+  implicit class RobotDeploymentOps[Self <: RobotDeployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDeploymentFinishTime(value: CreatedAt): Self = this.set("deploymentFinishTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentFinishTime: Self = this.set("deploymentFinishTime", js.undefined)
+    @scala.inline
+    def setDeploymentStartTime(value: CreatedAt): Self = this.set("deploymentStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStartTime: Self = this.set("deploymentStartTime", js.undefined)
+    @scala.inline
+    def setFailureCode(value: DeploymentJobErrorCode): Self = this.set("failureCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureCode: Self = this.set("failureCode", js.undefined)
+    @scala.inline
+    def setFailureReason(value: GenericString): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setProgressDetail(value: ProgressDetail): Self = this.set("progressDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressDetail: Self = this.set("progressDetail", js.undefined)
+    @scala.inline
+    def setStatus(value: RobotStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

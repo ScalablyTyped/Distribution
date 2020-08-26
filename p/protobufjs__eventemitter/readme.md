@@ -12,7 +12,7 @@ A minimal event emitter.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 53974302 |
+| # downloads        | 56945734 |
 | # stars            | 0 |
 
 ## Links

@@ -20,7 +20,7 @@ trait IChartistLineChart
      with Instantiable4[
       /* target */ js.Any, 
       /* data */ IChartistData, 
-      /* options */ ILineChartOptions, 
+      js.UndefOr[/* options */ ILineChartOptions], 
       /* responsiveOptions */ js.Array[IResponsiveOptionTuple[ILineChartOptions]], 
       IChartistLineChart
     ]

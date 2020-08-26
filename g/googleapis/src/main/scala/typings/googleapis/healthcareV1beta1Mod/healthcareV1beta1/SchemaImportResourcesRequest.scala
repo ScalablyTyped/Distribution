@@ -28,14 +28,30 @@ trait SchemaImportResourcesRequest extends js.Object {
 
 object SchemaImportResourcesRequest {
   @scala.inline
-  def apply(
-    contentStructure: String = null,
-    gcsSource: SchemaGoogleCloudHealthcareV1beta1FhirRestGcsSource = null
-  ): SchemaImportResourcesRequest = {
+  def apply(): SchemaImportResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (contentStructure != null) __obj.updateDynamic("contentStructure")(contentStructure.asInstanceOf[js.Any])
-    if (gcsSource != null) __obj.updateDynamic("gcsSource")(gcsSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImportResourcesRequest]
   }
+  @scala.inline
+  implicit class SchemaImportResourcesRequestOps[Self <: SchemaImportResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentStructure(value: String): Self = this.set("contentStructure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStructure: Self = this.set("contentStructure", js.undefined)
+    @scala.inline
+    def setGcsSource(value: SchemaGoogleCloudHealthcareV1beta1FhirRestGcsSource): Self = this.set("gcsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsSource: Self = this.set("gcsSource", js.undefined)
+  }
+  
 }
 

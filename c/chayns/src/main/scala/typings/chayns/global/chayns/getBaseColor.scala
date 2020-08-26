@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object getBaseColor extends js.Object {
   def apply(): String = js.native
+  def apply(color: js.UndefOr[scala.Nothing], colorMode: Double): String = js.native
   def apply(color: String): String = js.native
   def apply(color: String, colorMode: Double): String = js.native
 }

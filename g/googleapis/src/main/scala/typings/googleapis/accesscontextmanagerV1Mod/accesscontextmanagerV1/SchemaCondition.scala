@@ -60,22 +60,54 @@ trait SchemaCondition extends js.Object {
 
 object SchemaCondition {
   @scala.inline
-  def apply(
-    devicePolicy: SchemaDevicePolicy = null,
-    ipSubnetworks: js.Array[String] = null,
-    members: js.Array[String] = null,
-    negate: js.UndefOr[Boolean] = js.undefined,
-    regions: js.Array[String] = null,
-    requiredAccessLevels: js.Array[String] = null
-  ): SchemaCondition = {
+  def apply(): SchemaCondition = {
     val __obj = js.Dynamic.literal()
-    if (devicePolicy != null) __obj.updateDynamic("devicePolicy")(devicePolicy.asInstanceOf[js.Any])
-    if (ipSubnetworks != null) __obj.updateDynamic("ipSubnetworks")(ipSubnetworks.asInstanceOf[js.Any])
-    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (!js.isUndefined(negate)) __obj.updateDynamic("negate")(negate.get.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
-    if (requiredAccessLevels != null) __obj.updateDynamic("requiredAccessLevels")(requiredAccessLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCondition]
   }
+  @scala.inline
+  implicit class SchemaConditionOps[Self <: SchemaCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevicePolicy(value: SchemaDevicePolicy): Self = this.set("devicePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevicePolicy: Self = this.set("devicePolicy", js.undefined)
+    @scala.inline
+    def setIpSubnetworksVarargs(value: String*): Self = this.set("ipSubnetworks", js.Array(value :_*))
+    @scala.inline
+    def setIpSubnetworks(value: js.Array[String]): Self = this.set("ipSubnetworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpSubnetworks: Self = this.set("ipSubnetworks", js.undefined)
+    @scala.inline
+    def setMembersVarargs(value: String*): Self = this.set("members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: js.Array[String]): Self = this.set("members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembers: Self = this.set("members", js.undefined)
+    @scala.inline
+    def setNegate(value: Boolean): Self = this.set("negate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNegate: Self = this.set("negate", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("regions", js.undefined)
+    @scala.inline
+    def setRequiredAccessLevelsVarargs(value: String*): Self = this.set("requiredAccessLevels", js.Array(value :_*))
+    @scala.inline
+    def setRequiredAccessLevels(value: js.Array[String]): Self = this.set("requiredAccessLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredAccessLevels: Self = this.set("requiredAccessLevels", js.undefined)
+  }
+  
 }
 

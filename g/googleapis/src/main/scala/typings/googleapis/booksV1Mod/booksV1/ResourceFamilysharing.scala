@@ -27,6 +27,7 @@ class ResourceFamilysharing protected () extends js.Object {
     */
   def getFamilyInfo(): GaxiosPromise[SchemaFamilyInfo] = js.native
   def getFamilyInfo(callback: BodyResponseCallback[SchemaFamilyInfo]): Unit = js.native
+  def getFamilyInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFamilyInfo] = js.native
   def getFamilyInfo(params: ParamsResourceFamilysharingGetfamilyinfo): GaxiosPromise[SchemaFamilyInfo] = js.native
   def getFamilyInfo(params: ParamsResourceFamilysharingGetfamilyinfo, callback: BodyResponseCallback[SchemaFamilyInfo]): Unit = js.native
   def getFamilyInfo(
@@ -57,6 +58,7 @@ class ResourceFamilysharing protected () extends js.Object {
     */
   def share(): GaxiosPromise[Unit] = js.native
   def share(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def share(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def share(params: ParamsResourceFamilysharingShare): GaxiosPromise[Unit] = js.native
   def share(params: ParamsResourceFamilysharingShare, callback: BodyResponseCallback[Unit]): Unit = js.native
   def share(
@@ -87,6 +89,7 @@ class ResourceFamilysharing protected () extends js.Object {
     */
   def unshare(): GaxiosPromise[Unit] = js.native
   def unshare(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def unshare(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unshare(params: ParamsResourceFamilysharingUnshare): GaxiosPromise[Unit] = js.native
   def unshare(params: ParamsResourceFamilysharingUnshare, callback: BodyResponseCallback[Unit]): Unit = js.native
   def unshare(

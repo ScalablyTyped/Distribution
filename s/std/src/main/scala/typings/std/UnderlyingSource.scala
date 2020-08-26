@@ -4,25 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnderlyingSource[R] extends js.Object {
-  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.undefined
-  var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
-  var start: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.undefined
-  var `type`: js.UndefOr[scala.Nothing] = js.undefined
+  var cancel: js.UndefOr[ReadableStreamErrorCallback] = js.native
+  var pull: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.native
+  var start: js.UndefOr[ReadableStreamDefaultControllerCallback[R]] = js.native
+  var `type`: js.UndefOr[scala.Nothing] = js.native
 }
 
 object UnderlyingSource {
   @scala.inline
-  def apply[R](
-    cancel: /* reason */ js.Any => Unit | js.Thenable[Unit] = null,
-    pull: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit] = null,
-    start: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit] = null
-  ): UnderlyingSource[R] = {
+  def apply[R](): UnderlyingSource[R] = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (pull != null) __obj.updateDynamic("pull")(js.Any.fromFunction1(pull))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction1(start))
     __obj.asInstanceOf[UnderlyingSource[R]]
   }
+  @scala.inline
+  implicit class UnderlyingSourceOps[Self <: UnderlyingSource[_], R] (val x: Self with UnderlyingSource[R]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: /* reason */ js.Any => Unit | js.Thenable[Unit]): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setPull(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = this.set("pull", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePull: Self = this.set("pull", js.undefined)
+    @scala.inline
+    def setStart(value: /* controller */ ReadableStreamDefaultController[R] => Unit | js.Thenable[Unit]): Self = this.set("start", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

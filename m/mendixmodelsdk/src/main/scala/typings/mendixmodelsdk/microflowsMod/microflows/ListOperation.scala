@@ -25,7 +25,7 @@ abstract class ListOperation protected () extends Element {
   var model_FListOperation: IModel = js.native
   def containerAsListOperationAction: ListOperationAction = js.native
   def listVariableName: String = js.native
-  def listVariableName(newValue: String): js.Any = js.native
+  def listVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

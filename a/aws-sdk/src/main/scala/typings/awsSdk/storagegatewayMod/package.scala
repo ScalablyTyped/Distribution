@@ -32,7 +32,14 @@ package object storagegatewayMod {
   type BandwidthType = java.lang.String
   type BandwidthUploadRateLimit = scala.Double
   type Boolean = scala.Boolean
+  type CacheStaleTimeoutInSeconds = scala.Double
   type CachediSCSIVolumes = js.Array[typings.awsSdk.storagegatewayMod.CachediSCSIVolume]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ClientSpecified
+    - typings.awsSdk.awsSdkStrings.CaseSensitive
+    - java.lang.String
+  */
+  type CaseSensitivity = typings.awsSdk.storagegatewayMod._CaseSensitivity | java.lang.String
   type ChapCredentials = js.Array[typings.awsSdk.storagegatewayMod.ChapInfo]
   type ChapSecret = java.lang.String
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.storagegatewayMod.ClientApiVersions
@@ -41,6 +48,7 @@ package object storagegatewayMod {
   type CreatedDate = typings.std.Date
   type DayOfMonth = scala.Double
   type DayOfWeek = scala.Double
+  type DeprecationDate = java.lang.String
   type Description = java.lang.String
   type DeviceType = java.lang.String
   type DiskAllocationType = java.lang.String
@@ -61,6 +69,7 @@ package object storagegatewayMod {
   type FileShareClientList = js.Array[typings.awsSdk.storagegatewayMod.IPV4AddressCIDR]
   type FileShareId = java.lang.String
   type FileShareInfoList = js.Array[typings.awsSdk.storagegatewayMod.FileShareInfo]
+  type FileShareName = java.lang.String
   type FileShareStatus = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NFS
@@ -142,6 +151,7 @@ package object storagegatewayMod {
   type SMBSecurityStrategy = typings.awsSdk.storagegatewayMod._SMBSecurityStrategy | java.lang.String
   type SnapshotDescription = java.lang.String
   type SnapshotId = java.lang.String
+  type SoftwareUpdatesEndDate = java.lang.String
   type Squash = java.lang.String
   type StorageClass = java.lang.String
   type StorediSCSIVolumes = js.Array[typings.awsSdk.storagegatewayMod.StorediSCSIVolume]

@@ -19,10 +19,6 @@ class PluginError () extends Error {
   var error: js.UndefOr[Error] = js.native
   var fileName: js.UndefOr[String] = js.native
   var lineNumber: js.UndefOr[Double] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var plugin: js.UndefOr[String] = js.native
   /**
     * Error properties will be included in err.toString(). Can be omitted by

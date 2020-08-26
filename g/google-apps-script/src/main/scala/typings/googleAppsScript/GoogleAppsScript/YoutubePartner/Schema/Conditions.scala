@@ -4,33 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Conditions extends js.Object {
-  var contentMatchType: js.UndefOr[js.Array[String]] = js.undefined
-  var matchDuration: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
-  var matchPercent: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
-  var referenceDuration: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
-  var referencePercent: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
-  var requiredTerritories: js.UndefOr[TerritoryCondition] = js.undefined
+  var contentMatchType: js.UndefOr[js.Array[String]] = js.native
+  var matchDuration: js.UndefOr[js.Array[IntervalCondition]] = js.native
+  var matchPercent: js.UndefOr[js.Array[IntervalCondition]] = js.native
+  var referenceDuration: js.UndefOr[js.Array[IntervalCondition]] = js.native
+  var referencePercent: js.UndefOr[js.Array[IntervalCondition]] = js.native
+  var requiredTerritories: js.UndefOr[TerritoryCondition] = js.native
 }
 
 object Conditions {
   @scala.inline
-  def apply(
-    contentMatchType: js.Array[String] = null,
-    matchDuration: js.Array[IntervalCondition] = null,
-    matchPercent: js.Array[IntervalCondition] = null,
-    referenceDuration: js.Array[IntervalCondition] = null,
-    referencePercent: js.Array[IntervalCondition] = null,
-    requiredTerritories: TerritoryCondition = null
-  ): Conditions = {
+  def apply(): Conditions = {
     val __obj = js.Dynamic.literal()
-    if (contentMatchType != null) __obj.updateDynamic("contentMatchType")(contentMatchType.asInstanceOf[js.Any])
-    if (matchDuration != null) __obj.updateDynamic("matchDuration")(matchDuration.asInstanceOf[js.Any])
-    if (matchPercent != null) __obj.updateDynamic("matchPercent")(matchPercent.asInstanceOf[js.Any])
-    if (referenceDuration != null) __obj.updateDynamic("referenceDuration")(referenceDuration.asInstanceOf[js.Any])
-    if (referencePercent != null) __obj.updateDynamic("referencePercent")(referencePercent.asInstanceOf[js.Any])
-    if (requiredTerritories != null) __obj.updateDynamic("requiredTerritories")(requiredTerritories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conditions]
   }
+  @scala.inline
+  implicit class ConditionsOps[Self <: Conditions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentMatchTypeVarargs(value: String*): Self = this.set("contentMatchType", js.Array(value :_*))
+    @scala.inline
+    def setContentMatchType(value: js.Array[String]): Self = this.set("contentMatchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMatchType: Self = this.set("contentMatchType", js.undefined)
+    @scala.inline
+    def setMatchDurationVarargs(value: IntervalCondition*): Self = this.set("matchDuration", js.Array(value :_*))
+    @scala.inline
+    def setMatchDuration(value: js.Array[IntervalCondition]): Self = this.set("matchDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchDuration: Self = this.set("matchDuration", js.undefined)
+    @scala.inline
+    def setMatchPercentVarargs(value: IntervalCondition*): Self = this.set("matchPercent", js.Array(value :_*))
+    @scala.inline
+    def setMatchPercent(value: js.Array[IntervalCondition]): Self = this.set("matchPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchPercent: Self = this.set("matchPercent", js.undefined)
+    @scala.inline
+    def setReferenceDurationVarargs(value: IntervalCondition*): Self = this.set("referenceDuration", js.Array(value :_*))
+    @scala.inline
+    def setReferenceDuration(value: js.Array[IntervalCondition]): Self = this.set("referenceDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceDuration: Self = this.set("referenceDuration", js.undefined)
+    @scala.inline
+    def setReferencePercentVarargs(value: IntervalCondition*): Self = this.set("referencePercent", js.Array(value :_*))
+    @scala.inline
+    def setReferencePercent(value: js.Array[IntervalCondition]): Self = this.set("referencePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferencePercent: Self = this.set("referencePercent", js.undefined)
+    @scala.inline
+    def setRequiredTerritories(value: TerritoryCondition): Self = this.set("requiredTerritories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredTerritories: Self = this.set("requiredTerritories", js.undefined)
+  }
+  
 }
 

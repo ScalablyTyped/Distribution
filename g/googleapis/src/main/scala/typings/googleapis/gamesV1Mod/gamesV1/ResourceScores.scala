@@ -37,6 +37,7 @@ class ResourceScores protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaPlayerLeaderboardScoreListResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
   def get(params: ParamsResourceScoresGet): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
   def get(
     params: ParamsResourceScoresGet,
@@ -72,6 +73,7 @@ class ResourceScores protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def list(callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def list(params: ParamsResourceScoresList): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def list(params: ParamsResourceScoresList, callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
   def list(
@@ -107,6 +109,7 @@ class ResourceScores protected () extends js.Object {
     */
   def listWindow(): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def listWindow(callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
+  def listWindow(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def listWindow(params: ParamsResourceScoresListwindow): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def listWindow(params: ParamsResourceScoresListwindow, callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
   def listWindow(
@@ -137,6 +140,7 @@ class ResourceScores protected () extends js.Object {
     */
   def submit(): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
   def submit(callback: BodyResponseCallback[SchemaPlayerScoreResponse]): Unit = js.native
+  def submit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
   def submit(params: ParamsResourceScoresSubmit): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
   def submit(params: ParamsResourceScoresSubmit, callback: BodyResponseCallback[SchemaPlayerScoreResponse]): Unit = js.native
   def submit(
@@ -165,6 +169,7 @@ class ResourceScores protected () extends js.Object {
     */
   def submitMultiple(): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
   def submitMultiple(callback: BodyResponseCallback[SchemaPlayerScoreListResponse]): Unit = js.native
+  def submitMultiple(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
   def submitMultiple(params: ParamsResourceScoresSubmitmultiple): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
   def submitMultiple(
     params: ParamsResourceScoresSubmitmultiple,

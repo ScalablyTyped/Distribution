@@ -82,44 +82,90 @@ trait BurninDestinationSettings extends js.Object {
 
 object BurninDestinationSettings {
   @scala.inline
-  def apply(
-    Alignment: BurninSubtitleAlignment = null,
-    BackgroundColor: BurninSubtitleBackgroundColor = null,
-    BackgroundOpacity: js.UndefOr[integerMin0Max255] = js.undefined,
-    FontColor: BurninSubtitleFontColor = null,
-    FontOpacity: js.UndefOr[integerMin0Max255] = js.undefined,
-    FontResolution: js.UndefOr[integerMin96Max600] = js.undefined,
-    FontScript: FontScript = null,
-    FontSize: js.UndefOr[integerMin0Max96] = js.undefined,
-    OutlineColor: BurninSubtitleOutlineColor = null,
-    OutlineSize: js.UndefOr[integerMin0Max10] = js.undefined,
-    ShadowColor: BurninSubtitleShadowColor = null,
-    ShadowOpacity: js.UndefOr[integerMin0Max255] = js.undefined,
-    ShadowXOffset: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
-    ShadowYOffset: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
-    TeletextSpacing: BurninSubtitleTeletextSpacing = null,
-    XPosition: js.UndefOr[integerMin0Max2147483647] = js.undefined,
-    YPosition: js.UndefOr[integerMin0Max2147483647] = js.undefined
-  ): BurninDestinationSettings = {
+  def apply(): BurninDestinationSettings = {
     val __obj = js.Dynamic.literal()
-    if (Alignment != null) __obj.updateDynamic("Alignment")(Alignment.asInstanceOf[js.Any])
-    if (BackgroundColor != null) __obj.updateDynamic("BackgroundColor")(BackgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackgroundOpacity)) __obj.updateDynamic("BackgroundOpacity")(BackgroundOpacity.get.asInstanceOf[js.Any])
-    if (FontColor != null) __obj.updateDynamic("FontColor")(FontColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(FontOpacity)) __obj.updateDynamic("FontOpacity")(FontOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FontResolution)) __obj.updateDynamic("FontResolution")(FontResolution.get.asInstanceOf[js.Any])
-    if (FontScript != null) __obj.updateDynamic("FontScript")(FontScript.asInstanceOf[js.Any])
-    if (!js.isUndefined(FontSize)) __obj.updateDynamic("FontSize")(FontSize.get.asInstanceOf[js.Any])
-    if (OutlineColor != null) __obj.updateDynamic("OutlineColor")(OutlineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(OutlineSize)) __obj.updateDynamic("OutlineSize")(OutlineSize.get.asInstanceOf[js.Any])
-    if (ShadowColor != null) __obj.updateDynamic("ShadowColor")(ShadowColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShadowOpacity)) __obj.updateDynamic("ShadowOpacity")(ShadowOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShadowXOffset)) __obj.updateDynamic("ShadowXOffset")(ShadowXOffset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShadowYOffset)) __obj.updateDynamic("ShadowYOffset")(ShadowYOffset.get.asInstanceOf[js.Any])
-    if (TeletextSpacing != null) __obj.updateDynamic("TeletextSpacing")(TeletextSpacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(XPosition)) __obj.updateDynamic("XPosition")(XPosition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(YPosition)) __obj.updateDynamic("YPosition")(YPosition.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BurninDestinationSettings]
   }
+  @scala.inline
+  implicit class BurninDestinationSettingsOps[Self <: BurninDestinationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: BurninSubtitleAlignment): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("Alignment", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: BurninSubtitleBackgroundColor): Self = this.set("BackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("BackgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundOpacity(value: integerMin0Max255): Self = this.set("BackgroundOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundOpacity: Self = this.set("BackgroundOpacity", js.undefined)
+    @scala.inline
+    def setFontColor(value: BurninSubtitleFontColor): Self = this.set("FontColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontColor: Self = this.set("FontColor", js.undefined)
+    @scala.inline
+    def setFontOpacity(value: integerMin0Max255): Self = this.set("FontOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontOpacity: Self = this.set("FontOpacity", js.undefined)
+    @scala.inline
+    def setFontResolution(value: integerMin96Max600): Self = this.set("FontResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontResolution: Self = this.set("FontResolution", js.undefined)
+    @scala.inline
+    def setFontScript(value: FontScript): Self = this.set("FontScript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontScript: Self = this.set("FontScript", js.undefined)
+    @scala.inline
+    def setFontSize(value: integerMin0Max96): Self = this.set("FontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("FontSize", js.undefined)
+    @scala.inline
+    def setOutlineColor(value: BurninSubtitleOutlineColor): Self = this.set("OutlineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineColor: Self = this.set("OutlineColor", js.undefined)
+    @scala.inline
+    def setOutlineSize(value: integerMin0Max10): Self = this.set("OutlineSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutlineSize: Self = this.set("OutlineSize", js.undefined)
+    @scala.inline
+    def setShadowColor(value: BurninSubtitleShadowColor): Self = this.set("ShadowColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowColor: Self = this.set("ShadowColor", js.undefined)
+    @scala.inline
+    def setShadowOpacity(value: integerMin0Max255): Self = this.set("ShadowOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowOpacity: Self = this.set("ShadowOpacity", js.undefined)
+    @scala.inline
+    def setShadowXOffset(value: integerMinNegative2147483648Max2147483647): Self = this.set("ShadowXOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowXOffset: Self = this.set("ShadowXOffset", js.undefined)
+    @scala.inline
+    def setShadowYOffset(value: integerMinNegative2147483648Max2147483647): Self = this.set("ShadowYOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowYOffset: Self = this.set("ShadowYOffset", js.undefined)
+    @scala.inline
+    def setTeletextSpacing(value: BurninSubtitleTeletextSpacing): Self = this.set("TeletextSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeletextSpacing: Self = this.set("TeletextSpacing", js.undefined)
+    @scala.inline
+    def setXPosition(value: integerMin0Max2147483647): Self = this.set("XPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXPosition: Self = this.set("XPosition", js.undefined)
+    @scala.inline
+    def setYPosition(value: integerMin0Max2147483647): Self = this.set("YPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYPosition: Self = this.set("YPosition", js.undefined)
+  }
+  
 }
 

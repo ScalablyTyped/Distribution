@@ -46,28 +46,58 @@ trait NodeGroupMemberUpdateStatus extends js.Object {
 
 object NodeGroupMemberUpdateStatus {
   @scala.inline
-  def apply(
-    CacheClusterId: String = null,
-    CacheNodeId: String = null,
-    NodeDeletionDate: TStamp = null,
-    NodeUpdateEndDate: TStamp = null,
-    NodeUpdateInitiatedBy: NodeUpdateInitiatedBy = null,
-    NodeUpdateInitiatedDate: TStamp = null,
-    NodeUpdateStartDate: TStamp = null,
-    NodeUpdateStatus: NodeUpdateStatus = null,
-    NodeUpdateStatusModifiedDate: TStamp = null
-  ): NodeGroupMemberUpdateStatus = {
+  def apply(): NodeGroupMemberUpdateStatus = {
     val __obj = js.Dynamic.literal()
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (CacheNodeId != null) __obj.updateDynamic("CacheNodeId")(CacheNodeId.asInstanceOf[js.Any])
-    if (NodeDeletionDate != null) __obj.updateDynamic("NodeDeletionDate")(NodeDeletionDate.asInstanceOf[js.Any])
-    if (NodeUpdateEndDate != null) __obj.updateDynamic("NodeUpdateEndDate")(NodeUpdateEndDate.asInstanceOf[js.Any])
-    if (NodeUpdateInitiatedBy != null) __obj.updateDynamic("NodeUpdateInitiatedBy")(NodeUpdateInitiatedBy.asInstanceOf[js.Any])
-    if (NodeUpdateInitiatedDate != null) __obj.updateDynamic("NodeUpdateInitiatedDate")(NodeUpdateInitiatedDate.asInstanceOf[js.Any])
-    if (NodeUpdateStartDate != null) __obj.updateDynamic("NodeUpdateStartDate")(NodeUpdateStartDate.asInstanceOf[js.Any])
-    if (NodeUpdateStatus != null) __obj.updateDynamic("NodeUpdateStatus")(NodeUpdateStatus.asInstanceOf[js.Any])
-    if (NodeUpdateStatusModifiedDate != null) __obj.updateDynamic("NodeUpdateStatusModifiedDate")(NodeUpdateStatusModifiedDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupMemberUpdateStatus]
   }
+  @scala.inline
+  implicit class NodeGroupMemberUpdateStatusOps[Self <: NodeGroupMemberUpdateStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setCacheNodeId(value: String): Self = this.set("CacheNodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeId: Self = this.set("CacheNodeId", js.undefined)
+    @scala.inline
+    def setNodeDeletionDate(value: TStamp): Self = this.set("NodeDeletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeDeletionDate: Self = this.set("NodeDeletionDate", js.undefined)
+    @scala.inline
+    def setNodeUpdateEndDate(value: TStamp): Self = this.set("NodeUpdateEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeUpdateEndDate: Self = this.set("NodeUpdateEndDate", js.undefined)
+    @scala.inline
+    def setNodeUpdateInitiatedBy(value: NodeUpdateInitiatedBy): Self = this.set("NodeUpdateInitiatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeUpdateInitiatedBy: Self = this.set("NodeUpdateInitiatedBy", js.undefined)
+    @scala.inline
+    def setNodeUpdateInitiatedDate(value: TStamp): Self = this.set("NodeUpdateInitiatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeUpdateInitiatedDate: Self = this.set("NodeUpdateInitiatedDate", js.undefined)
+    @scala.inline
+    def setNodeUpdateStartDate(value: TStamp): Self = this.set("NodeUpdateStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeUpdateStartDate: Self = this.set("NodeUpdateStartDate", js.undefined)
+    @scala.inline
+    def setNodeUpdateStatus(value: NodeUpdateStatus): Self = this.set("NodeUpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeUpdateStatus: Self = this.set("NodeUpdateStatus", js.undefined)
+    @scala.inline
+    def setNodeUpdateStatusModifiedDate(value: TStamp): Self = this.set("NodeUpdateStatusModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeUpdateStatusModifiedDate: Self = this.set("NodeUpdateStatusModifiedDate", js.undefined)
+  }
+  
 }
 

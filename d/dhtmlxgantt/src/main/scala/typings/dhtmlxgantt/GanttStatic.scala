@@ -349,6 +349,7 @@ trait GanttStatic extends js.Object {
     * @param master optional, the object, that 'this'  will refer to
     */
   def eachTask(code: GanttCallback): Unit = js.native
+  def eachTask(code: GanttCallback, parent: js.UndefOr[scala.Nothing], master: js.Any): Unit = js.native
   def eachTask(code: GanttCallback, parent: String): Unit = js.native
   def eachTask(code: GanttCallback, parent: String, master: js.Any): Unit = js.native
   def eachTask(code: GanttCallback, parent: Double): Unit = js.native
@@ -646,6 +647,7 @@ trait GanttStatic extends js.Object {
     * @param to optional, the end date of the period
     */
   def getTaskByTime(): js.Array[_] = js.native
+  def getTaskByTime(from: js.UndefOr[scala.Nothing], to: Date): js.Array[_] = js.native
   def getTaskByTime(from: Date): js.Array[_] = js.native
   def getTaskByTime(from: Date, to: Date): js.Array[_] = js.native
   /**
@@ -767,9 +769,11 @@ trait GanttStatic extends js.Object {
     * @param to optional, the end value of the time scale (X&ndash;Axis)
     */
   def init(container: String): Unit = js.native
+  def init(container: String, from: js.UndefOr[scala.Nothing], to: Date): Unit = js.native
   def init(container: String, from: Date): Unit = js.native
   def init(container: String, from: Date, to: Date): Unit = js.native
   def init(container: HTMLElement): Unit = js.native
+  def init(container: HTMLElement, from: js.UndefOr[scala.Nothing], to: Date): Unit = js.native
   def init(container: HTMLElement, from: Date): Unit = js.native
   def init(container: HTMLElement, from: Date, to: Date): Unit = js.native
   /**
@@ -864,6 +868,7 @@ trait GanttStatic extends js.Object {
     * @param callback optional, the callback function
     */
   def load(url: String): Unit = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: GanttCallback): Unit = js.native
   def load(url: String, `type`: String): Unit = js.native
   def load(url: String, `type`: String, callback: GanttCallback): Unit = js.native
   /**
@@ -1072,13 +1077,30 @@ trait GanttStatic extends js.Object {
     * @param silent optional, specifies whether rendering should be invoked after reordering items
     */
   def sort(field: String): Unit = js.native
+  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
+  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: String): Unit = js.native
+  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: String, silent: Boolean): Unit = js.native
+  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: Double): Unit = js.native
+  def sort(field: String, desc: js.UndefOr[scala.Nothing], parent: Double, silent: Boolean): Unit = js.native
   def sort(field: String, desc: Boolean): Unit = js.native
+  def sort(field: String, desc: Boolean, parent: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
   def sort(field: String, desc: Boolean, parent: String): Unit = js.native
   def sort(field: String, desc: Boolean, parent: String, silent: Boolean): Unit = js.native
   def sort(field: String, desc: Boolean, parent: Double): Unit = js.native
   def sort(field: String, desc: Boolean, parent: Double, silent: Boolean): Unit = js.native
   def sort(field: GanttCallback): Unit = js.native
+  def sort(
+    field: GanttCallback,
+    desc: js.UndefOr[scala.Nothing],
+    parent: js.UndefOr[scala.Nothing],
+    silent: Boolean
+  ): Unit = js.native
+  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: String): Unit = js.native
+  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: String, silent: Boolean): Unit = js.native
+  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: Double): Unit = js.native
+  def sort(field: GanttCallback, desc: js.UndefOr[scala.Nothing], parent: Double, silent: Boolean): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean): Unit = js.native
+  def sort(field: GanttCallback, desc: Boolean, parent: js.UndefOr[scala.Nothing], silent: Boolean): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: String): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: String, silent: Boolean): Unit = js.native
   def sort(field: GanttCallback, desc: Boolean, parent: Double): Unit = js.native

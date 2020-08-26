@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NestedMap[Datum, RollupType]
   extends Map_[(NestedMap[Datum, RollupType]) | js.Array[Datum] | RollupType]
 

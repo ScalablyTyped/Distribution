@@ -23,16 +23,34 @@ trait SchemaLiveChatUserBannedMessageDetails extends js.Object {
 
 object SchemaLiveChatUserBannedMessageDetails {
   @scala.inline
-  def apply(
-    banDurationSeconds: String = null,
-    banType: String = null,
-    bannedUserDetails: SchemaChannelProfileDetails = null
-  ): SchemaLiveChatUserBannedMessageDetails = {
+  def apply(): SchemaLiveChatUserBannedMessageDetails = {
     val __obj = js.Dynamic.literal()
-    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds.asInstanceOf[js.Any])
-    if (banType != null) __obj.updateDynamic("banType")(banType.asInstanceOf[js.Any])
-    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatUserBannedMessageDetails]
   }
+  @scala.inline
+  implicit class SchemaLiveChatUserBannedMessageDetailsOps[Self <: SchemaLiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBanDurationSeconds(value: String): Self = this.set("banDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBanDurationSeconds: Self = this.set("banDurationSeconds", js.undefined)
+    @scala.inline
+    def setBanType(value: String): Self = this.set("banType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBanType: Self = this.set("banType", js.undefined)
+    @scala.inline
+    def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = this.set("bannedUserDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannedUserDetails: Self = this.set("bannedUserDetails", js.undefined)
+  }
+  
 }
 

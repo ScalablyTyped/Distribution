@@ -14,6 +14,7 @@ class FileKeyInfo () extends js.Object {
   def getKey(): Buffer = js.native
   def getKey(keyInfo: Node): Buffer = js.native
   def getKeyInfo(): String = js.native
+  def getKeyInfo(key: js.UndefOr[scala.Nothing], prefix: String): String = js.native
   def getKeyInfo(key: String): String = js.native
   def getKeyInfo(key: String, prefix: String): String = js.native
 }

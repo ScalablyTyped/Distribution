@@ -5,48 +5,83 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined dav.dav.Partial<dav.dav.Credentials> */
+@js.native
 trait CredentialsOptions extends js.Object {
-  var accessToken: js.UndefOr[String] = js.undefined
-  var authorizationCode: js.UndefOr[String] = js.undefined
-  var clientId: js.UndefOr[String] = js.undefined
-  var clientSecret: js.UndefOr[String] = js.undefined
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
-  var expiration: js.UndefOr[Double] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var redirectUrl: js.UndefOr[String] = js.undefined
-  var refreshToken: js.UndefOr[String] = js.undefined
-  var tokenUrl: js.UndefOr[String] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var accessToken: js.UndefOr[String] = js.native
+  var authorizationCode: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.native
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.native
+  var expiration: js.UndefOr[Double] = js.native
+  var password: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.native
+  var tokenUrl: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object CredentialsOptions {
   @scala.inline
-  def apply(
-    accessToken: String = null,
-    authorizationCode: String = null,
-    clientId: String = null,
-    clientSecret: String = null,
-    constructor: /* options */ js.UndefOr[CredentialsOptions] => js.Any = null,
-    expiration: js.UndefOr[Double] = js.undefined,
-    password: String = null,
-    redirectUrl: String = null,
-    refreshToken: String = null,
-    tokenUrl: String = null,
-    username: String = null
-  ): CredentialsOptions = {
+  def apply(): CredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken.asInstanceOf[js.Any])
-    if (authorizationCode != null) __obj.updateDynamic("authorizationCode")(authorizationCode.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (constructor != null) __obj.updateDynamic("constructor")(js.Any.fromFunction1(constructor))
-    if (!js.isUndefined(expiration)) __obj.updateDynamic("expiration")(expiration.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
-    if (tokenUrl != null) __obj.updateDynamic("tokenUrl")(tokenUrl.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialsOptions]
   }
+  @scala.inline
+  implicit class CredentialsOptionsOps[Self <: CredentialsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessToken(value: String): Self = this.set("accessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("accessToken", js.undefined)
+    @scala.inline
+    def setAuthorizationCode(value: String): Self = this.set("authorizationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationCode: Self = this.set("authorizationCode", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setClientSecret(value: String): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientSecret: Self = this.set("clientSecret", js.undefined)
+    @scala.inline
+    def setConstructor(value: /* options */ js.UndefOr[CredentialsOptions] => js.Any): Self = this.set("constructor", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteConstructor: Self = this.set("constructor", js.undefined)
+    @scala.inline
+    def setExpiration(value: Double): Self = this.set("expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("expiration", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setRedirectUrl(value: String): Self = this.set("redirectUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectUrl: Self = this.set("redirectUrl", js.undefined)
+    @scala.inline
+    def setRefreshToken(value: String): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+    @scala.inline
+    def setTokenUrl(value: String): Self = this.set("tokenUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenUrl: Self = this.set("tokenUrl", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

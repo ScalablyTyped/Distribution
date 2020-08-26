@@ -19,6 +19,14 @@ trait Transport[TDescriptor /* <: Descriptor */] extends js.Object {
     * @return A Promise of the response Buffer
     */
   def send(cla: Double, ins: Double, p1: Double, p2: Double): js.Promise[Buffer] = js.native
+  def send(
+    cla: Double,
+    ins: Double,
+    p1: Double,
+    p2: Double,
+    data: js.UndefOr[scala.Nothing],
+    statusList: js.Array[Double]
+  ): js.Promise[Buffer] = js.native
   def send(cla: Double, ins: Double, p1: Double, p2: Double, data: Buffer): js.Promise[Buffer] = js.native
   def send(cla: Double, ins: Double, p1: Double, p2: Double, data: Buffer, statusList: js.Array[Double]): js.Promise[Buffer] = js.native
   def setDebugMode(debug: js.Function1[/* log */ String, Unit]): Unit = js.native

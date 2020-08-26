@@ -18,11 +18,30 @@ trait DmsTransferSettings extends js.Object {
 
 object DmsTransferSettings {
   @scala.inline
-  def apply(BucketName: String = null, ServiceAccessRoleArn: String = null): DmsTransferSettings = {
+  def apply(): DmsTransferSettings = {
     val __obj = js.Dynamic.literal()
-    if (BucketName != null) __obj.updateDynamic("BucketName")(BucketName.asInstanceOf[js.Any])
-    if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DmsTransferSettings]
   }
+  @scala.inline
+  implicit class DmsTransferSettingsOps[Self <: DmsTransferSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucketName(value: String): Self = this.set("BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucketName: Self = this.set("BucketName", js.undefined)
+    @scala.inline
+    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
+  }
+  
 }
 

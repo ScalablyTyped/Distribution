@@ -4,49 +4,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavigatorYAxisGridOptions extends js.Object {
   /**
     * (Gantt) Set border color for the label grid lines.
     */
-  var borderColor: js.UndefOr[ColorString] = js.undefined
+  var borderColor: js.UndefOr[ColorString] = js.native
   /**
     * (Gantt) Set border width of the label grid lines.
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * (Gantt) Set cell height for grid axis labels. By default this is
     * calculated from font size. This option only applies to horizontal axes.
     */
-  var cellHeight: js.UndefOr[Double] = js.undefined
+  var cellHeight: js.UndefOr[Double] = js.native
   /**
     * (Gantt) Set specific options for each column (or row for horizontal axes)
     * in the grid. Each extra column/row is its own axis, and the axis options
     * can be set here.
     */
-  var columns: js.UndefOr[js.Array[XAxisOptions]] = js.undefined
+  var columns: js.UndefOr[js.Array[XAxisOptions]] = js.native
   /**
     * (Gantt) Enable grid on the axis labels. Defaults to true for Gantt
     * charts.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
 }
 
 object NavigatorYAxisGridOptions {
   @scala.inline
-  def apply(
-    borderColor: ColorString = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    cellHeight: js.UndefOr[Double] = js.undefined,
-    columns: js.Array[XAxisOptions] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined
-  ): NavigatorYAxisGridOptions = {
+  def apply(): NavigatorYAxisGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellHeight)) __obj.updateDynamic("cellHeight")(cellHeight.get.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorYAxisGridOptions]
   }
+  @scala.inline
+  implicit class NavigatorYAxisGridOptionsOps[Self <: NavigatorYAxisGridOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: ColorString): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setCellHeight(value: Double): Self = this.set("cellHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellHeight: Self = this.set("cellHeight", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: XAxisOptions*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[XAxisOptions]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+  }
+  
 }
 

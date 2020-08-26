@@ -12,7 +12,7 @@ Find a file by walking down parent directories.
 | Keywords           | find, down, find-down, finddown, look-down, look, file, files, search, match, package, resolve, parent, parents, folder, directory, directories, dir, dirs, walk, walking, path, paths |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 7717 |
+| # downloads        | 7555 |
 | # stars            | 0 |
 
 ## Links

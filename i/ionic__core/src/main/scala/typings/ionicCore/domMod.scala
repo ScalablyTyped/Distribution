@@ -15,16 +15,42 @@ object domMod extends js.Object {
   def readNavState(): js.Promise[Ids] = js.native
   def readNavState(root: HTMLElement): js.Promise[Ids] = js.native
   def waitUntilNavNode(): js.Promise[_] = js.native
-  def writeNavState(root: js.UndefOr[HTMLElement], chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = js.native
+  def writeNavState(root: js.UndefOr[scala.Nothing], chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = js.native
   def writeNavState(
-    root: js.UndefOr[HTMLElement],
+    root: js.UndefOr[scala.Nothing],
+    chain: RouteChain,
+    direction: RouterDirection,
+    index: Double,
+    changed: js.UndefOr[scala.Nothing],
+    animation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def writeNavState(
+    root: js.UndefOr[scala.Nothing],
     chain: RouteChain,
     direction: RouterDirection,
     index: Double,
     changed: Boolean
   ): js.Promise[Boolean] = js.native
   def writeNavState(
-    root: js.UndefOr[HTMLElement],
+    root: js.UndefOr[scala.Nothing],
+    chain: RouteChain,
+    direction: RouterDirection,
+    index: Double,
+    changed: Boolean,
+    animation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = js.native
+  def writeNavState(
+    root: HTMLElement,
+    chain: RouteChain,
+    direction: RouterDirection,
+    index: Double,
+    changed: js.UndefOr[scala.Nothing],
+    animation: AnimationBuilder
+  ): js.Promise[Boolean] = js.native
+  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = js.native
+  def writeNavState(
+    root: HTMLElement,
     chain: RouteChain,
     direction: RouterDirection,
     index: Double,

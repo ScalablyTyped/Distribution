@@ -22,11 +22,11 @@ class UserGroupMembership protected () extends CustomResource {
   def this(name: String, args: UserGroupMembershipArgs) = this()
   def this(name: String, args: UserGroupMembershipArgs, opts: CustomResourceOptions) = this()
   /**
-    * A list of [IAM Groups][1] to add the user to
+    * A list of [IAM Groups](https://www.terraform.io/docs/providers/aws/r/iam_group.html) to add the user to
     */
   val groups: Output_[js.Array[String]] = js.native
   /**
-    * The name of the [IAM User][2] to add to groups
+    * The name of the [IAM User](https://www.terraform.io/docs/providers/aws/r/iam_user.html) to add to groups
     */
   val user: Output_[String] = js.native
 }
@@ -42,8 +42,10 @@ object UserGroupMembership extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): UserGroupMembership = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): UserGroupMembership = js.native
   def get(name: String, id: Input[ID], state: UserGroupMembershipState): UserGroupMembership = js.native
   def get(name: String, id: Input[ID], state: UserGroupMembershipState, opts: CustomResourceOptions): UserGroupMembership = js.native
   /**

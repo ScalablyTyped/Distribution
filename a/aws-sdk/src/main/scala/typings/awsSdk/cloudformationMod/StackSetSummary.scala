@@ -42,26 +42,54 @@ trait StackSetSummary extends js.Object {
 
 object StackSetSummary {
   @scala.inline
-  def apply(
-    AutoDeployment: AutoDeployment = null,
-    Description: Description = null,
-    DriftStatus: StackDriftStatus = null,
-    LastDriftCheckTimestamp: Timestamp = null,
-    PermissionModel: PermissionModels = null,
-    StackSetId: StackSetId = null,
-    StackSetName: StackSetName = null,
-    Status: StackSetStatus = null
-  ): StackSetSummary = {
+  def apply(): StackSetSummary = {
     val __obj = js.Dynamic.literal()
-    if (AutoDeployment != null) __obj.updateDynamic("AutoDeployment")(AutoDeployment.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DriftStatus != null) __obj.updateDynamic("DriftStatus")(DriftStatus.asInstanceOf[js.Any])
-    if (LastDriftCheckTimestamp != null) __obj.updateDynamic("LastDriftCheckTimestamp")(LastDriftCheckTimestamp.asInstanceOf[js.Any])
-    if (PermissionModel != null) __obj.updateDynamic("PermissionModel")(PermissionModel.asInstanceOf[js.Any])
-    if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
-    if (StackSetName != null) __obj.updateDynamic("StackSetName")(StackSetName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetSummary]
   }
+  @scala.inline
+  implicit class StackSetSummaryOps[Self <: StackSetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoDeployment(value: AutoDeployment): Self = this.set("AutoDeployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeployment: Self = this.set("AutoDeployment", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDriftStatus(value: StackDriftStatus): Self = this.set("DriftStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriftStatus: Self = this.set("DriftStatus", js.undefined)
+    @scala.inline
+    def setLastDriftCheckTimestamp(value: Timestamp): Self = this.set("LastDriftCheckTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDriftCheckTimestamp: Self = this.set("LastDriftCheckTimestamp", js.undefined)
+    @scala.inline
+    def setPermissionModel(value: PermissionModels): Self = this.set("PermissionModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionModel: Self = this.set("PermissionModel", js.undefined)
+    @scala.inline
+    def setStackSetId(value: StackSetId): Self = this.set("StackSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetId: Self = this.set("StackSetId", js.undefined)
+    @scala.inline
+    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetName: Self = this.set("StackSetName", js.undefined)
+    @scala.inline
+    def setStatus(value: StackSetStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

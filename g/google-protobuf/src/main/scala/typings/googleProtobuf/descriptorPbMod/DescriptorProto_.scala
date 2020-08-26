@@ -11,26 +11,33 @@ import scala.scalajs.js.annotation._
 @js.native
 class DescriptorProto_ () extends Message {
   def addEnumType(): EnumDescriptorProto = js.native
+  def addEnumType(value: js.UndefOr[scala.Nothing], index: Double): EnumDescriptorProto = js.native
   def addEnumType(value: EnumDescriptorProto): EnumDescriptorProto = js.native
   def addEnumType(value: EnumDescriptorProto, index: Double): EnumDescriptorProto = js.native
   def addExtension(): FieldDescriptorProto = js.native
+  def addExtension(value: js.UndefOr[scala.Nothing], index: Double): FieldDescriptorProto = js.native
   def addExtension(value: FieldDescriptorProto): FieldDescriptorProto = js.native
   def addExtension(value: FieldDescriptorProto, index: Double): FieldDescriptorProto = js.native
   def addExtensionRange(): ExtensionRange = js.native
+  def addExtensionRange(value: js.UndefOr[scala.Nothing], index: Double): ExtensionRange = js.native
   def addExtensionRange(value: ExtensionRange): ExtensionRange = js.native
   def addExtensionRange(value: ExtensionRange, index: Double): ExtensionRange = js.native
   def addField(): FieldDescriptorProto = js.native
+  def addField(value: js.UndefOr[scala.Nothing], index: Double): FieldDescriptorProto = js.native
   def addField(value: FieldDescriptorProto): FieldDescriptorProto = js.native
   def addField(value: FieldDescriptorProto, index: Double): FieldDescriptorProto = js.native
   def addNestedType(): DescriptorProto = js.native
+  def addNestedType(value: js.UndefOr[scala.Nothing], index: Double): DescriptorProto = js.native
   def addNestedType(value: DescriptorProto): DescriptorProto = js.native
   def addNestedType(value: DescriptorProto, index: Double): DescriptorProto = js.native
   def addOneofDecl(): OneofDescriptorProto = js.native
+  def addOneofDecl(value: js.UndefOr[scala.Nothing], index: Double): OneofDescriptorProto = js.native
   def addOneofDecl(value: OneofDescriptorProto): OneofDescriptorProto = js.native
   def addOneofDecl(value: OneofDescriptorProto, index: Double): OneofDescriptorProto = js.native
   def addReservedName(value: String): String = js.native
   def addReservedName(value: String, index: Double): String = js.native
   def addReservedRange(): ReservedRange = js.native
+  def addReservedRange(value: js.UndefOr[scala.Nothing], index: Double): ReservedRange = js.native
   def addReservedRange(value: ReservedRange): ReservedRange = js.native
   def addReservedRange(value: ReservedRange, index: Double): ReservedRange = js.native
   def clearEnumTypeList(): Unit = js.native

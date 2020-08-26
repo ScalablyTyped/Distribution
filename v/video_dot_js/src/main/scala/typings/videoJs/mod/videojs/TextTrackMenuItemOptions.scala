@@ -4,27 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextTrackMenuItemOptions extends MenuItemOptions {
-  var track: TextTrack
+  var track: TextTrack = js.native
 }
 
 object TextTrackMenuItemOptions {
   @scala.inline
-  def apply(
-    track: TextTrack,
-    children: js.Array[Child] = null,
-    label: String = null,
-    multiSelectable: js.UndefOr[Boolean] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined
-  ): TextTrackMenuItemOptions = {
+  def apply(track: TextTrack): TextTrackMenuItemOptions = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackMenuItemOptions]
   }
+  @scala.inline
+  implicit class TextTrackMenuItemOptionsOps[Self <: TextTrackMenuItemOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrack(value: TextTrack): Self = this.set("track", value.asInstanceOf[js.Any])
+  }
+  
 }
 

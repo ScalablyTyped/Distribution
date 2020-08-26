@@ -34,22 +34,46 @@ trait Action extends js.Object {
 
 object Action {
   @scala.inline
-  def apply(
-    Arguments: GenericMap = null,
-    CrawlerName: NameString = null,
-    JobName: NameString = null,
-    NotificationProperty: NotificationProperty = null,
-    SecurityConfiguration: NameString = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined
-  ): Action = {
+  def apply(): Action = {
     val __obj = js.Dynamic.literal()
-    if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
-    if (CrawlerName != null) __obj.updateDynamic("CrawlerName")(CrawlerName.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
+  @scala.inline
+  implicit class ActionOps[Self <: Action] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArguments(value: GenericMap): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    @scala.inline
+    def setCrawlerName(value: NameString): Self = this.set("CrawlerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlerName: Self = this.set("CrawlerName", js.undefined)
+    @scala.inline
+    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+  }
+  
 }
 

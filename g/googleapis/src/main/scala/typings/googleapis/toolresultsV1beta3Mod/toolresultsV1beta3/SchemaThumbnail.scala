@@ -32,18 +32,38 @@ trait SchemaThumbnail extends js.Object {
 
 object SchemaThumbnail {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    data: String = null,
-    heightPx: js.UndefOr[Double] = js.undefined,
-    widthPx: js.UndefOr[Double] = js.undefined
-  ): SchemaThumbnail = {
+  def apply(): SchemaThumbnail = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(heightPx)) __obj.updateDynamic("heightPx")(heightPx.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthPx)) __obj.updateDynamic("widthPx")(widthPx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaThumbnail]
   }
+  @scala.inline
+  implicit class SchemaThumbnailOps[Self <: SchemaThumbnail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHeightPx(value: Double): Self = this.set("heightPx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightPx: Self = this.set("heightPx", js.undefined)
+    @scala.inline
+    def setWidthPx(value: Double): Self = this.set("widthPx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidthPx: Self = this.set("widthPx", js.undefined)
+  }
+  
 }
 

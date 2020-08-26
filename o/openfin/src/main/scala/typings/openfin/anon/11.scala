@@ -1,22 +1,42 @@
 package typings.openfin.anon
 
-import typings.openfin.shapesMod.ContextMenuSettings
+import typings.openfin.windowOptionMod.ResizeRegion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `11` extends js.Object {
-  var newVal: js.UndefOr[ContextMenuSettings] = js.undefined
-  var oldVal: js.UndefOr[ContextMenuSettings] = js.undefined
+  var newVal: js.UndefOr[ResizeRegion] = js.native
+  var oldVal: js.UndefOr[ResizeRegion] = js.native
 }
 
 object `11` {
   @scala.inline
-  def apply(newVal: ContextMenuSettings = null, oldVal: ContextMenuSettings = null): `11` = {
+  def apply(): `11` = {
     val __obj = js.Dynamic.literal()
-    if (newVal != null) __obj.updateDynamic("newVal")(newVal.asInstanceOf[js.Any])
-    if (oldVal != null) __obj.updateDynamic("oldVal")(oldVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[`11`]
   }
+  @scala.inline
+  implicit class `11Ops`[Self <: `11`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewVal(value: ResizeRegion): Self = this.set("newVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewVal: Self = this.set("newVal", js.undefined)
+    @scala.inline
+    def setOldVal(value: ResizeRegion): Self = this.set("oldVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOldVal: Self = this.set("oldVal", js.undefined)
+  }
+  
 }
 

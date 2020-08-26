@@ -87,10 +87,9 @@ object BranchNode {
     raw: String,
     references: js.Array[Backreference],
     start: Double,
-    `type`: typings.regexpp.regexppStrings.CapturingGroup,
-    name: String = null
+    `type`: typings.regexpp.regexppStrings.CapturingGroup
   ): BranchNode = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }
@@ -100,10 +99,9 @@ object BranchNode {
     end: Double,
     raw: String,
     start: Double,
-    `type`: typings.regexpp.regexppStrings.Pattern,
-    parent: RegExpLiteral = null
+    `type`: typings.regexpp.regexppStrings.Pattern
   ): BranchNode = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BranchNode]
   }

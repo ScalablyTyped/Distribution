@@ -4,7 +4,6 @@ import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.OperatorFunction
-import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,10 +27,8 @@ object findMod extends js.Object {
     ) = this()
     var predicate: js.Any = js.native
     var source: js.Any = js.native
-    var thisArg: js.UndefOr[js.Any] = js.native
+    var thisArg: js.Any = js.native
     var yieldIndex: js.Any = js.native
-    /* CompleteClass */
-    override def call(subscriber: Subscriber[js.UndefOr[T | Double]], source: js.Any): TeardownLogic = js.native
   }
   
   @js.native
@@ -53,7 +50,7 @@ object findMod extends js.Object {
     var notifyComplete: js.Any = js.native
     var predicate: js.Any = js.native
     var source: js.Any = js.native
-    var thisArg: js.UndefOr[js.Any] = js.native
+    var thisArg: js.Any = js.native
     var yieldIndex: js.Any = js.native
   }
   

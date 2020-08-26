@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DropTargetSpec[Props] extends js.Object {
   /**
     * Optional. Use it to specify whether the drop target is able to accept the item. If you want to always allow it, just
     * omit this method. Specifying it is handy if you'd like to disable dropping based on some predicate over props or
     * monitor.getItem(). Note: You may not call monitor.canDrop() inside this method.
     */
-  var canDrop: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DropTargetMonitor, Boolean]] = js.undefined
+  var canDrop: js.UndefOr[js.Function2[/* props */ Props, /* monitor */ DropTargetMonitor, Boolean]] = js.native
   /**
     * Optional.
     * Called when a compatible item is dropped on the target. You may either return undefined, or a plain object.
@@ -24,7 +25,7 @@ trait DropTargetSpec[Props] extends js.Object {
     */
   var drop: js.UndefOr[
     js.Function3[/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any, _]
-  ] = js.undefined
+  ] = js.native
   /**
     * Optional.
     * Called when an item is hovered over the component. You can check monitor.isOver({ shallow: true }) to test whether
@@ -33,21 +34,39 @@ trait DropTargetSpec[Props] extends js.Object {
     */
   var hover: js.UndefOr[
     js.Function3[/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any, Unit]
-  ] = js.undefined
+  ] = js.native
 }
 
 object DropTargetSpec {
   @scala.inline
-  def apply[Props](
-    canDrop: (/* props */ Props, /* monitor */ DropTargetMonitor) => Boolean = null,
-    drop: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => _ = null,
-    hover: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => Unit = null
-  ): DropTargetSpec[Props] = {
+  def apply[Props](): DropTargetSpec[Props] = {
     val __obj = js.Dynamic.literal()
-    if (canDrop != null) __obj.updateDynamic("canDrop")(js.Any.fromFunction2(canDrop))
-    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction3(drop))
-    if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction3(hover))
     __obj.asInstanceOf[DropTargetSpec[Props]]
   }
+  @scala.inline
+  implicit class DropTargetSpecOps[Self <: DropTargetSpec[_], Props] (val x: Self with DropTargetSpec[Props]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor) => Boolean): Self = this.set("canDrop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCanDrop: Self = this.set("canDrop", js.undefined)
+    @scala.inline
+    def setDrop(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => _): Self = this.set("drop", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDrop: Self = this.set("drop", js.undefined)
+    @scala.inline
+    def setHover(value: (/* props */ Props, /* monitor */ DropTargetMonitor, /* component */ js.Any) => Unit): Self = this.set("hover", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait ContinuousHyperParameterRange extends js.Object {
 
 object ContinuousHyperParameterRange {
   @scala.inline
-  def apply(
-    maxValue: js.UndefOr[ContinuousMaxValue] = js.undefined,
-    minValue: js.UndefOr[ContinuousMinValue] = js.undefined,
-    name: ParameterName = null
-  ): ContinuousHyperParameterRange = {
+  def apply(): ContinuousHyperParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousHyperParameterRange]
   }
+  @scala.inline
+  implicit class ContinuousHyperParameterRangeOps[Self <: ContinuousHyperParameterRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxValue(value: ContinuousMaxValue): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: ContinuousMinValue): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setName(value: ParameterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

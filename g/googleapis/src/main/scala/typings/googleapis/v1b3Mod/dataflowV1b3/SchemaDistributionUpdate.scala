@@ -38,22 +38,46 @@ trait SchemaDistributionUpdate extends js.Object {
 
 object SchemaDistributionUpdate {
   @scala.inline
-  def apply(
-    count: SchemaSplitInt64 = null,
-    histogram: SchemaHistogram = null,
-    max: SchemaSplitInt64 = null,
-    min: SchemaSplitInt64 = null,
-    sum: SchemaSplitInt64 = null,
-    sumOfSquares: js.UndefOr[Double] = js.undefined
-  ): SchemaDistributionUpdate = {
+  def apply(): SchemaDistributionUpdate = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (histogram != null) __obj.updateDynamic("histogram")(histogram.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDistributionUpdate]
   }
+  @scala.inline
+  implicit class SchemaDistributionUpdateOps[Self <: SchemaDistributionUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: SchemaSplitInt64): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setHistogram(value: SchemaHistogram): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    @scala.inline
+    def setMax(value: SchemaSplitInt64): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: SchemaSplitInt64): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setSum(value: SchemaSplitInt64): Self = this.set("sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("sum", js.undefined)
+    @scala.inline
+    def setSumOfSquares(value: Double): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
+  }
+  
 }
 

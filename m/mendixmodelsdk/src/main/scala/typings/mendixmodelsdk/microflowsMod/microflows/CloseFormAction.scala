@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/Close+Form relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/close-page relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.CloseFormAction")
 @js.native
@@ -30,14 +30,14 @@ class CloseFormAction protected () extends MicroflowAction {
     * In version 8.9.0: introduced
     */
   def numberOfPages: Double = js.native
-  def numberOfPages(newValue: Double): js.Any = js.native
   /**
     * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
     *
     * In version 8.11.0: introduced
     */
   def numberOfPagesToClose: String = js.native
-  def numberOfPagesToClose(newValue: String): js.Any = js.native
+  def numberOfPagesToClose_=(newValue: String): Unit = js.native
+  def numberOfPages_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

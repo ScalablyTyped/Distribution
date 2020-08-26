@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/dynamic-image-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/dynamic-image-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.DynamicImageViewer")
 @js.native
@@ -26,17 +26,15 @@ class DynamicImageViewer protected () extends EntityWidget {
   ) = this()
   @JSName("model")
   var model_FDynamicImageViewer: IModel = js.native
-  def defaultImage(): js.Any = js.native
-  def defaultImage(newValue: IImage): js.Any = js.native
+  def defaultImage: IImage | Null = js.native
   def defaultImageQualifiedName: String | Null = js.native
-  @JSName("defaultImage")
-  def defaultImage_Union: IImage | Null = js.native
+  def defaultImage_=(newValue: IImage | Null): Unit = js.native
   def height: Double = js.native
-  def height(newValue: Double): js.Any = js.native
+  def height_=(newValue: Double): Unit = js.native
   def useThumbnail: Boolean = js.native
-  def useThumbnail(newValue: Boolean): js.Any = js.native
+  def useThumbnail_=(newValue: Boolean): Unit = js.native
   def width: Double = js.native
-  def width(newValue: Double): js.Any = js.native
+  def width_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

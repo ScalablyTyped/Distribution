@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridPageableMessages extends js.Object {
-  var display: js.UndefOr[String] = js.undefined
-  var empty: js.UndefOr[String] = js.undefined
-  var first: js.UndefOr[String] = js.undefined
-  var itemsPerPage: js.UndefOr[String] = js.undefined
-  var last: js.UndefOr[String] = js.undefined
-  var morePages: js.UndefOr[String] = js.undefined
-  var next: js.UndefOr[String] = js.undefined
-  var of: js.UndefOr[String] = js.undefined
-  var page: js.UndefOr[String] = js.undefined
-  var previous: js.UndefOr[String] = js.undefined
-  var refresh: js.UndefOr[String] = js.undefined
+  var display: js.UndefOr[String] = js.native
+  var empty: js.UndefOr[String] = js.native
+  var first: js.UndefOr[String] = js.native
+  var itemsPerPage: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.native
+  var morePages: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.native
+  var of: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.native
+  var refresh: js.UndefOr[String] = js.native
 }
 
 object GridPageableMessages {
   @scala.inline
-  def apply(
-    display: String = null,
-    empty: String = null,
-    first: String = null,
-    itemsPerPage: String = null,
-    last: String = null,
-    morePages: String = null,
-    next: String = null,
-    of: String = null,
-    page: String = null,
-    previous: String = null,
-    refresh: String = null
-  ): GridPageableMessages = {
+  def apply(): GridPageableMessages = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
-    if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
-    if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (morePages != null) __obj.updateDynamic("morePages")(morePages.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (of != null) __obj.updateDynamic("of")(of.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPageableMessages]
   }
+  @scala.inline
+  implicit class GridPageableMessagesOps[Self <: GridPageableMessages] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setEmpty(value: String): Self = this.set("empty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmpty: Self = this.set("empty", js.undefined)
+    @scala.inline
+    def setFirst(value: String): Self = this.set("first", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst: Self = this.set("first", js.undefined)
+    @scala.inline
+    def setItemsPerPage(value: String): Self = this.set("itemsPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsPerPage: Self = this.set("itemsPerPage", js.undefined)
+    @scala.inline
+    def setLast(value: String): Self = this.set("last", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast: Self = this.set("last", js.undefined)
+    @scala.inline
+    def setMorePages(value: String): Self = this.set("morePages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMorePages: Self = this.set("morePages", js.undefined)
+    @scala.inline
+    def setNext(value: String): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setOf(value: String): Self = this.set("of", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOf: Self = this.set("of", js.undefined)
+    @scala.inline
+    def setPage(value: String): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPrevious(value: String): Self = this.set("previous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevious: Self = this.set("previous", js.undefined)
+    @scala.inline
+    def setRefresh(value: String): Self = this.set("refresh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefresh: Self = this.set("refresh", js.undefined)
+  }
+  
 }
 

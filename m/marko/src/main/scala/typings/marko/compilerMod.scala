@@ -22,9 +22,11 @@ object compilerMod extends js.Object {
   def compile(src: js.Any, filename: String, optionsOrCallback: js.Any): js.Any = js.native
   def compile(src: js.Any, filename: String, optionsOrCallback: js.Any, callback: js.Any): js.Any = js.native
   def compileFile(filename: String): js.Any = js.native
+  def compileFile(filename: String, optionsOrCallback: js.UndefOr[scala.Nothing], callback: js.Any): js.Any = js.native
   def compileFile(filename: String, optionsOrCallback: js.Any): js.Any = js.native
   def compileFile(filename: String, optionsOrCallback: js.Any, callback: js.Any): js.Any = js.native
   def compileFileForBrowser(filename: String): js.Any = js.native
+  def compileFileForBrowser(filename: String, optionsOrCallback: js.UndefOr[scala.Nothing], callback: js.Any): js.Any = js.native
   def compileFileForBrowser(filename: String, optionsOrCallback: js.Any): js.Any = js.native
   def compileFileForBrowser(filename: String, optionsOrCallback: js.Any, callback: js.Any): js.Any = js.native
   def compileForBrowser(src: js.Any, filename: String, optionsOrCallback: js.Any): js.Any = js.native

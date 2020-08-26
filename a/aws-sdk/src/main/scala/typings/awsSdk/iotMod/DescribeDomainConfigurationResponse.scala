@@ -42,26 +42,56 @@ trait DescribeDomainConfigurationResponse extends js.Object {
 
 object DescribeDomainConfigurationResponse {
   @scala.inline
-  def apply(
-    authorizerConfig: AuthorizerConfig = null,
-    domainConfigurationArn: DomainConfigurationArn = null,
-    domainConfigurationName: ReservedDomainConfigurationName = null,
-    domainConfigurationStatus: DomainConfigurationStatus = null,
-    domainName: DomainName = null,
-    domainType: DomainType = null,
-    serverCertificates: ServerCertificates = null,
-    serviceType: ServiceType = null
-  ): DescribeDomainConfigurationResponse = {
+  def apply(): DescribeDomainConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (authorizerConfig != null) __obj.updateDynamic("authorizerConfig")(authorizerConfig.asInstanceOf[js.Any])
-    if (domainConfigurationArn != null) __obj.updateDynamic("domainConfigurationArn")(domainConfigurationArn.asInstanceOf[js.Any])
-    if (domainConfigurationName != null) __obj.updateDynamic("domainConfigurationName")(domainConfigurationName.asInstanceOf[js.Any])
-    if (domainConfigurationStatus != null) __obj.updateDynamic("domainConfigurationStatus")(domainConfigurationStatus.asInstanceOf[js.Any])
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (domainType != null) __obj.updateDynamic("domainType")(domainType.asInstanceOf[js.Any])
-    if (serverCertificates != null) __obj.updateDynamic("serverCertificates")(serverCertificates.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDomainConfigurationResponse]
   }
+  @scala.inline
+  implicit class DescribeDomainConfigurationResponseOps[Self <: DescribeDomainConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizerConfig(value: AuthorizerConfig): Self = this.set("authorizerConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizerConfig: Self = this.set("authorizerConfig", js.undefined)
+    @scala.inline
+    def setDomainConfigurationArn(value: DomainConfigurationArn): Self = this.set("domainConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainConfigurationArn: Self = this.set("domainConfigurationArn", js.undefined)
+    @scala.inline
+    def setDomainConfigurationName(value: ReservedDomainConfigurationName): Self = this.set("domainConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainConfigurationName: Self = this.set("domainConfigurationName", js.undefined)
+    @scala.inline
+    def setDomainConfigurationStatus(value: DomainConfigurationStatus): Self = this.set("domainConfigurationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainConfigurationStatus: Self = this.set("domainConfigurationStatus", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setDomainType(value: DomainType): Self = this.set("domainType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainType: Self = this.set("domainType", js.undefined)
+    @scala.inline
+    def setServerCertificatesVarargs(value: ServerCertificateSummary*): Self = this.set("serverCertificates", js.Array(value :_*))
+    @scala.inline
+    def setServerCertificates(value: ServerCertificates): Self = this.set("serverCertificates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCertificates: Self = this.set("serverCertificates", js.undefined)
+    @scala.inline
+    def setServiceType(value: ServiceType): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+  }
+  
 }
 

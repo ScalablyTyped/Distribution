@@ -30,28 +30,53 @@ trait SnapshotScheduleArgs extends js.Object {
     */
   val identifierPrefix: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object SnapshotScheduleArgs {
   @scala.inline
-  def apply(
-    definitions: Input[js.Array[Input[String]]],
-    description: Input[String] = null,
-    forceDestroy: Input[Boolean] = null,
-    identifier: Input[String] = null,
-    identifierPrefix: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): SnapshotScheduleArgs = {
+  def apply(definitions: Input[js.Array[Input[String]]]): SnapshotScheduleArgs = {
     val __obj = js.Dynamic.literal(definitions = definitions.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (identifierPrefix != null) __obj.updateDynamic("identifierPrefix")(identifierPrefix.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotScheduleArgs]
   }
+  @scala.inline
+  implicit class SnapshotScheduleArgsOps[Self <: SnapshotScheduleArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinitionsVarargs(value: Input[String]*): Self = this.set("definitions", js.Array(value :_*))
+    @scala.inline
+    def setDefinitions(value: Input[js.Array[Input[String]]]): Self = this.set("definitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Input[String]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setIdentifierPrefix(value: Input[String]): Self = this.set("identifierPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifierPrefix: Self = this.set("identifierPrefix", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

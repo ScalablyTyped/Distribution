@@ -157,6 +157,7 @@ trait Http2Server extends Server {
   @JSName("prependOnceListener")
   def prependOnceListener_timeout(event: timeout, listener: js.Function0[Unit]): this.type = js.native
   def setTimeout(): this.type = js.native
+  def setTimeout(msec: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def setTimeout(msec: Double): this.type = js.native
   def setTimeout(msec: Double, callback: js.Function0[Unit]): this.type = js.native
 }

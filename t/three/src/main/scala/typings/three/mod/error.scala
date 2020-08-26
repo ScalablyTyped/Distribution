@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "error")
 @js.native
 object error extends js.Object {
-  def apply(): Unit = js.native
+  def apply(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def apply(message: js.Any, optionalParams: js.Any*): Unit = js.native
 }
 

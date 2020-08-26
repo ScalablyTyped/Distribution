@@ -4,23 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AspectRatio extends js.Object {
   /** The type of aspect ratio. Leave this field blank to match all aspect ratios. */
-  var aspectRatio: js.UndefOr[String] = js.undefined
+  var aspectRatio: js.UndefOr[String] = js.native
   /** The minimum player height in pixels. Leave this field blank to match any player height. */
-  var minHeight: js.UndefOr[String] = js.undefined
+  var minHeight: js.UndefOr[String] = js.native
   /** The minimum player width in pixels. Leave this field blank to match any player width. */
-  var minWidth: js.UndefOr[String] = js.undefined
+  var minWidth: js.UndefOr[String] = js.native
 }
 
 object AspectRatio {
   @scala.inline
-  def apply(aspectRatio: String = null, minHeight: String = null, minWidth: String = null): AspectRatio = {
+  def apply(): AspectRatio = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[AspectRatio]
   }
+  @scala.inline
+  implicit class AspectRatioOps[Self <: AspectRatio] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatio(value: String): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatio: Self = this.set("aspectRatio", js.undefined)
+    @scala.inline
+    def setMinHeight(value: String): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: String): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+  }
+  
 }
 

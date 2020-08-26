@@ -11,15 +11,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class BinaryReader () extends js.Object {
   def this(bytes: ByteSource) = this()
-  def this(bytes: ByteSource, start: Double) = this()
-  def this(bytes: ByteSource, start: Double, length: Double) = this()
+  def this(bytes: js.UndefOr[ByteSource], start: Double) = this()
+  def this(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double) = this()
+  def this(bytes: js.UndefOr[ByteSource], start: Double, length: Double) = this()
   @JSName("readMessage")
   var readMessage_Original: BinaryRead = js.native
   def advance(count: Double): Unit = js.native
   def alloc(): BinaryReader = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): BinaryReader = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: Double): BinaryReader = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: Double, length: Double): BinaryReader = js.native
   def alloc(bytes: ByteSource): BinaryReader = js.native
-  def alloc(bytes: ByteSource, start: Double): BinaryReader = js.native
-  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryReader = js.native
   def free(): Unit = js.native
   def getBuffer(): Uint8Array = js.native
   def getCursor(): Double = js.native
@@ -86,9 +88,10 @@ class BinaryReader () extends js.Object {
   def reset(): Unit = js.native
   def runReadCallback(callbackName: String): js.Any = js.native
   def setBlock(): Unit = js.native
+  def setBlock(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
+  def setBlock(bytes: js.UndefOr[ByteSource], start: Double): Unit = js.native
+  def setBlock(bytes: js.UndefOr[ByteSource], start: Double, length: Double): Unit = js.native
   def setBlock(bytes: ByteSource): Unit = js.native
-  def setBlock(bytes: ByteSource, start: Double): Unit = js.native
-  def setBlock(bytes: ByteSource, start: Double, length: Double): Unit = js.native
   def skipDelimitedField(): Unit = js.native
   def skipField(): Unit = js.native
   def skipFixed32Field(): Unit = js.native
@@ -104,8 +107,9 @@ class BinaryReader () extends js.Object {
 @js.native
 object BinaryReader extends js.Object {
   def alloc(): BinaryReader = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: js.UndefOr[scala.Nothing], length: Double): BinaryReader = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: Double): BinaryReader = js.native
+  def alloc(bytes: js.UndefOr[ByteSource], start: Double, length: Double): BinaryReader = js.native
   def alloc(bytes: ByteSource): BinaryReader = js.native
-  def alloc(bytes: ByteSource, start: Double): BinaryReader = js.native
-  def alloc(bytes: ByteSource, start: Double, length: Double): BinaryReader = js.native
 }
 

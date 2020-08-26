@@ -1,40 +1,45 @@
 package typings.antDesignReactNative.checkboxCheckboxMod
 
 import typings.antDesignReactNative.checkboxPropsTypeMod.CheckboxPropsType
-import typings.antDesignReactNative.checkboxPropsTypeMod.OnChangeParams
 import typings.antDesignReactNative.checkboxStyleMod.CheckboxStyle
 import typings.antDesignReactNative.libStyleMod.WithThemeStyles
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
-import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CheckboxProps
   extends CheckboxPropsType
      with WithThemeStyles[CheckboxStyle] {
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[TextStyle]] = js.native
 }
 
 object CheckboxProps {
   @scala.inline
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* params */ OnChangeParams => Unit = null,
-    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    styles: Partial[CheckboxStyle] = null
-  ): CheckboxProps = {
+  def apply(): CheckboxProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxProps]
   }
+  @scala.inline
+  implicit class CheckboxPropsOps[Self <: CheckboxProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyle(value: StyleProp[TextStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+  }
+  
 }
 

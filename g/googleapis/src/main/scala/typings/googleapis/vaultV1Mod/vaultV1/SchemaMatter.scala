@@ -35,20 +35,44 @@ trait SchemaMatter extends js.Object {
 
 object SchemaMatter {
   @scala.inline
-  def apply(
-    description: String = null,
-    matterId: String = null,
-    matterPermissions: js.Array[SchemaMatterPermission] = null,
-    name: String = null,
-    state: String = null
-  ): SchemaMatter = {
+  def apply(): SchemaMatter = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (matterId != null) __obj.updateDynamic("matterId")(matterId.asInstanceOf[js.Any])
-    if (matterPermissions != null) __obj.updateDynamic("matterPermissions")(matterPermissions.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMatter]
   }
+  @scala.inline
+  implicit class SchemaMatterOps[Self <: SchemaMatter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setMatterId(value: String): Self = this.set("matterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatterId: Self = this.set("matterId", js.undefined)
+    @scala.inline
+    def setMatterPermissionsVarargs(value: SchemaMatterPermission*): Self = this.set("matterPermissions", js.Array(value :_*))
+    @scala.inline
+    def setMatterPermissions(value: js.Array[SchemaMatterPermission]): Self = this.set("matterPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatterPermissions: Self = this.set("matterPermissions", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

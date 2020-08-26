@@ -23,11 +23,32 @@ trait JobCommand extends js.Object {
 
 object JobCommand {
   @scala.inline
-  def apply(scriptLocation: Input[String], name: Input[String] = null, pythonVersion: Input[String] = null): JobCommand = {
+  def apply(scriptLocation: Input[String]): JobCommand = {
     val __obj = js.Dynamic.literal(scriptLocation = scriptLocation.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pythonVersion != null) __obj.updateDynamic("pythonVersion")(pythonVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobCommand]
   }
+  @scala.inline
+  implicit class JobCommandOps[Self <: JobCommand] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScriptLocation(value: Input[String]): Self = this.set("scriptLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPythonVersion(value: Input[String]): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+  }
+  
 }
 

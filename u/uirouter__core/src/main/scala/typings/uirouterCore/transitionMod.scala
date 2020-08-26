@@ -59,6 +59,7 @@ object transitionMod extends js.Object {
     extends typings.uirouterCore.rejectFactoryMod.Rejection {
     def this(`type`: Double) = this()
     def this(`type`: Double, message: String) = this()
+    def this(`type`: Double, message: js.UndefOr[scala.Nothing], detail: js.Any) = this()
     def this(`type`: Double, message: String, detail: js.Any) = this()
   }
   
@@ -70,12 +71,13 @@ object transitionMod extends js.Object {
       *
       * If the target state is not valid, an error is thrown.
       *
-      * @internalapi
+      * @internal
       *
       * @param fromPath The path of [[PathNode]]s from which the transition is leaving.  The last node in the `fromPath`
       *        encapsulates the "from state".
       * @param targetState The target state and parameters being transitioned to (also, the transition options)
       * @param router The [[UIRouter]] instance
+      * @internal
       */
     def this(fromPath: js.Array[PathNode], targetState: TargetState, router: UIRouter) = this()
   }
@@ -96,8 +98,43 @@ object transitionMod extends js.Object {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler
     ) = this()
     def this(
       name: String,
@@ -107,6 +144,76 @@ object transitionMod extends js.Object {
       reverseSort: Boolean,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: js.UndefOr[scala.Nothing],
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ) = this()
+    def this(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: js.UndefOr[scala.Nothing],
+      synchronous: Boolean
     ) = this()
     def this(
       name: String,
@@ -134,7 +241,7 @@ object transitionMod extends js.Object {
   @js.native
   class TransitionService protected ()
     extends typings.uirouterCore.transitionServiceMod.TransitionService {
-    /** @hidden */
+    /** @internal */
     def this(_router: UIRouter) = this()
   }
   
@@ -200,6 +307,7 @@ object transitionMod extends js.Object {
     def redirected(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
     /** Returns a Rejection due to transition superseded */
     def superseded(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+    def superseded(detail: js.UndefOr[scala.Nothing], options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
     def superseded(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
     def superseded(detail: js.Any, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
   }
@@ -207,7 +315,7 @@ object transitionMod extends js.Object {
   /* static members */
   @js.native
   object Transition extends js.Object {
-    /** @hidden */
+    /** @internal */
     var diToken: TypeofTransition = js.native
   }
   

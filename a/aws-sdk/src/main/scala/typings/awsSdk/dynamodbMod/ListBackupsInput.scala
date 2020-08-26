@@ -34,22 +34,46 @@ trait ListBackupsInput extends js.Object {
 
 object ListBackupsInput {
   @scala.inline
-  def apply(
-    BackupType: BackupTypeFilter = null,
-    ExclusiveStartBackupArn: BackupArn = null,
-    Limit: js.UndefOr[BackupsInputLimit] = js.undefined,
-    TableName: TableName = null,
-    TimeRangeLowerBound: TimeRangeLowerBound = null,
-    TimeRangeUpperBound: TimeRangeUpperBound = null
-  ): ListBackupsInput = {
+  def apply(): ListBackupsInput = {
     val __obj = js.Dynamic.literal()
-    if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
-    if (ExclusiveStartBackupArn != null) __obj.updateDynamic("ExclusiveStartBackupArn")(ExclusiveStartBackupArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
-    if (TimeRangeLowerBound != null) __obj.updateDynamic("TimeRangeLowerBound")(TimeRangeLowerBound.asInstanceOf[js.Any])
-    if (TimeRangeUpperBound != null) __obj.updateDynamic("TimeRangeUpperBound")(TimeRangeUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBackupsInput]
   }
+  @scala.inline
+  implicit class ListBackupsInputOps[Self <: ListBackupsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupType(value: BackupTypeFilter): Self = this.set("BackupType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupType: Self = this.set("BackupType", js.undefined)
+    @scala.inline
+    def setExclusiveStartBackupArn(value: BackupArn): Self = this.set("ExclusiveStartBackupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartBackupArn: Self = this.set("ExclusiveStartBackupArn", js.undefined)
+    @scala.inline
+    def setLimit(value: BackupsInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+    @scala.inline
+    def setTimeRangeLowerBound(value: TimeRangeLowerBound): Self = this.set("TimeRangeLowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRangeLowerBound: Self = this.set("TimeRangeLowerBound", js.undefined)
+    @scala.inline
+    def setTimeRangeUpperBound(value: TimeRangeUpperBound): Self = this.set("TimeRangeUpperBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRangeUpperBound: Self = this.set("TimeRangeUpperBound", js.undefined)
+  }
+  
 }
 

@@ -27,17 +27,36 @@ trait UpdateMaintenanceStartTimeInput extends js.Object {
 
 object UpdateMaintenanceStartTimeInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN,
-    HourOfDay: HourOfDay,
-    MinuteOfHour: MinuteOfHour,
-    DayOfMonth: js.UndefOr[DayOfMonth] = js.undefined,
-    DayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
-  ): UpdateMaintenanceStartTimeInput = {
+  def apply(GatewayARN: GatewayARN, HourOfDay: HourOfDay, MinuteOfHour: MinuteOfHour): UpdateMaintenanceStartTimeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], HourOfDay = HourOfDay.asInstanceOf[js.Any], MinuteOfHour = MinuteOfHour.asInstanceOf[js.Any])
-    if (!js.isUndefined(DayOfMonth)) __obj.updateDynamic("DayOfMonth")(DayOfMonth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DayOfWeek)) __obj.updateDynamic("DayOfWeek")(DayOfWeek.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMaintenanceStartTimeInput]
   }
+  @scala.inline
+  implicit class UpdateMaintenanceStartTimeInputOps[Self <: UpdateMaintenanceStartTimeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHourOfDay(value: HourOfDay): Self = this.set("HourOfDay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinuteOfHour(value: MinuteOfHour): Self = this.set("MinuteOfHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDayOfMonth(value: DayOfMonth): Self = this.set("DayOfMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfMonth: Self = this.set("DayOfMonth", js.undefined)
+    @scala.inline
+    def setDayOfWeek(value: DayOfWeek): Self = this.set("DayOfWeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDayOfWeek: Self = this.set("DayOfWeek", js.undefined)
+  }
+  
 }
 

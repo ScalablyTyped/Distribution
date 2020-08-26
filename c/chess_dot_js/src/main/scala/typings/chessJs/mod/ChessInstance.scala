@@ -9,9 +9,9 @@ import typings.chessJs.anon.Newlinechar
 import typings.chessJs.anon.Sloppy
 import typings.chessJs.anon.SquareVerbose
 import typings.chessJs.anon.Verbose
-import typings.chessJs.anon.VerboseBoolean
 import typings.chessJs.anon.`0`
 import typings.chessJs.anon.`1`
+import typings.chessJs.anon.`2`
 import typings.chessJs.chessJsStrings.b
 import typings.chessJs.chessJsStrings.dark
 import typings.chessJs.chessJsStrings.k
@@ -95,7 +95,6 @@ trait ChessInstance extends js.Object {
     * if not passed the verbose flag.
     */
   def history(): js.Array[String] = js.native
-  def history(options: VerboseBoolean): js.Array[Move | String] = js.native
   def history(options: `0`): js.Array[String] = js.native
   /**
     * Returns a list containing the moves of the current game.
@@ -106,6 +105,7 @@ trait ChessInstance extends js.Object {
     * if not passed the verbose flag.
     */
   def history(options: `1`): js.Array[Move] = js.native
+  def history(options: `2`): js.Array[Move | String] = js.native
   /**
     * Returns true or false if the side to move is in check.
     * @returns true or false if the side to move is in check.

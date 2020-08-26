@@ -1,29 +1,24 @@
 package typings.stripe.mod.accounts
 
 import typings.stripe.anon.Accountholdername
-import typings.stripe.anon.Branding
-import typings.stripe.anon.Date
-import typings.stripe.anon.Mcc
 import typings.stripe.mod.IDataOptionsWithMetadata
-import typings.stripe.mod.IOptionsMetadata
-import typings.stripe.stripeStrings.company
-import typings.stripe.stripeStrings.individual
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAccountUpdateOptions
   extends IDataOptionsWithMetadata
      with IAccountShared {
   /**
     * An account token, used to securely provide details to the account.
     */
-  var account_token: js.UndefOr[String] = js.undefined
+  var account_token: js.UndefOr[String] = js.native
   /**
     * Information about the company or business.
     * This field is null unless business_type is set to company.
     */
-  var company: js.UndefOr[ICompanyCreateUpdateOptions] = js.undefined
+  var company: js.UndefOr[ICompanyCreateUpdateOptions] = js.native
   /**
     * A card or bank account to attach to the account. You can provide either a
     * token, like the ones returned by Stripe.js, or a dictionary as documented in
@@ -35,50 +30,48 @@ trait IAccountUpdateOptions
     * existing default for this currency, use the bank account or card creation
     * API.
     */
-  var external_account: js.UndefOr[Accountholdername] = js.undefined
+  var external_account: js.UndefOr[Accountholdername] = js.native
   /**
     * Information about the person represented by the account.
     * This field is null unless business_type is set to individual.
     */
-  var individual: js.UndefOr[IIndividualCreateUpdateOptions] = js.undefined
+  var individual: js.UndefOr[IIndividualCreateUpdateOptions] = js.native
 }
 
 object IAccountUpdateOptions {
   @scala.inline
-  def apply(
-    account_token: String = null,
-    business_profile: Mcc = null,
-    business_type: individual | company = null,
-    company: ICompanyCreateUpdateOptions = null,
-    default_currency: String = null,
-    email: String = null,
-    expand: js.Array[String] = null,
-    external_account: Accountholdername = null,
-    include: js.Array[String] = null,
-    individual: IIndividualCreateUpdateOptions = null,
-    metadata: IOptionsMetadata = null,
-    product_description: String = null,
-    requested_capabilities: js.Array[String] = null,
-    settings: Branding = null,
-    tos_acceptance: Date = null
-  ): IAccountUpdateOptions = {
+  def apply(): IAccountUpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (account_token != null) __obj.updateDynamic("account_token")(account_token.asInstanceOf[js.Any])
-    if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile.asInstanceOf[js.Any])
-    if (business_type != null) __obj.updateDynamic("business_type")(business_type.asInstanceOf[js.Any])
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (external_account != null) __obj.updateDynamic("external_account")(external_account.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (individual != null) __obj.updateDynamic("individual")(individual.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (product_description != null) __obj.updateDynamic("product_description")(product_description.asInstanceOf[js.Any])
-    if (requested_capabilities != null) __obj.updateDynamic("requested_capabilities")(requested_capabilities.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccountUpdateOptions]
   }
+  @scala.inline
+  implicit class IAccountUpdateOptionsOps[Self <: IAccountUpdateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount_token(value: String): Self = this.set("account_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount_token: Self = this.set("account_token", js.undefined)
+    @scala.inline
+    def setCompany(value: ICompanyCreateUpdateOptions): Self = this.set("company", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompany: Self = this.set("company", js.undefined)
+    @scala.inline
+    def setExternal_account(value: Accountholdername): Self = this.set("external_account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternal_account: Self = this.set("external_account", js.undefined)
+    @scala.inline
+    def setIndividual(value: IIndividualCreateUpdateOptions): Self = this.set("individual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndividual: Self = this.set("individual", js.undefined)
+  }
+  
 }
 

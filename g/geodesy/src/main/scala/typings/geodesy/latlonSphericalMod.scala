@@ -33,15 +33,15 @@ object latlonSphericalMod extends js.Object {
     def initialBearingTo(point: LatLonSpherical): Double = js.native
     def intermediatePointTo(point: LatLonSpherical, fraction: Double): LatLonSpherical = js.native
     def lat: Double = js.native
-    def lat(lat: Double): js.Any = js.native
+    def lat_=(lat: Double): Unit = js.native
     def latitude: Double = js.native
-    def latitude(lat: Double): js.Any = js.native
+    def latitude_=(lat: Double): Unit = js.native
     def lng: Double = js.native
-    def lng(lon: Double): js.Any = js.native
+    def lng_=(lon: Double): Unit = js.native
     def lon: Double = js.native
-    def lon(lon: Double): js.Any = js.native
+    def lon_=(lon: Double): Unit = js.native
     def longitude: Double = js.native
-    def longitude(lon: Double): js.Any = js.native
+    def longitude_=(lon: Double): Unit = js.native
     def maxLatitude(bearing: Double): Double = js.native
     def midpointTo(point: LatLonSpherical): LatLonSpherical = js.native
     def rhumbBearingTo(point: LatLonSpherical): Double = js.native
@@ -51,6 +51,7 @@ object latlonSphericalMod extends js.Object {
     def rhumbDistanceTo(point: LatLonSpherical, radius: Double): Double = js.native
     def rhumbMidpointTo(point: LatLonSpherical): LatLonSpherical = js.native
     def toGeoJSON(): GeoJSON = js.native
+    def toString(format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toString(format: Format): String = js.native
     def toString(format: Format, dp: Dp): String = js.native
   }
@@ -69,18 +70,22 @@ object latlonSphericalMod extends js.Object {
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
     def separator: String = js.native
-    def separator(char: String): js.Any = js.native
+    def separator_=(char: String): Unit = js.native
     def toBrng(deg: Double): String = js.native
+    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native
     def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
     def toDms(deg: Double): String = js.native
+    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toDms(deg: Double, format: Format): String = js.native
     def toDms(deg: Double, format: Format, dp: Dp): String = js.native
     def toLat(deg: Double): String = js.native
+    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toLat(deg: Double, format: Format): String = js.native
     def toLat(deg: Double, format: Format, dp: Dp): String = js.native
     def toLocale(str: String): String = js.native
     def toLon(deg: Double): String = js.native
+    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toLon(deg: Double, format: Format): String = js.native
     def toLon(deg: Double, format: Format, dp: Dp): String = js.native
     def wrap360(degrees: Double): String = js.native

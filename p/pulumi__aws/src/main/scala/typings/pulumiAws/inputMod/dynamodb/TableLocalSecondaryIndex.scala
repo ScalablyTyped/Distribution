@@ -33,15 +33,34 @@ trait TableLocalSecondaryIndex extends js.Object {
 
 object TableLocalSecondaryIndex {
   @scala.inline
-  def apply(
-    name: Input[String],
-    projectionType: Input[String],
-    rangeKey: Input[String],
-    nonKeyAttributes: Input[js.Array[Input[String]]] = null
-  ): TableLocalSecondaryIndex = {
+  def apply(name: Input[String], projectionType: Input[String], rangeKey: Input[String]): TableLocalSecondaryIndex = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any], rangeKey = rangeKey.asInstanceOf[js.Any])
-    if (nonKeyAttributes != null) __obj.updateDynamic("nonKeyAttributes")(nonKeyAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableLocalSecondaryIndex]
   }
+  @scala.inline
+  implicit class TableLocalSecondaryIndexOps[Self <: TableLocalSecondaryIndex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectionType(value: Input[String]): Self = this.set("projectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRangeKey(value: Input[String]): Self = this.set("rangeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNonKeyAttributesVarargs(value: Input[String]*): Self = this.set("nonKeyAttributes", js.Array(value :_*))
+    @scala.inline
+    def setNonKeyAttributes(value: Input[js.Array[Input[String]]]): Self = this.set("nonKeyAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonKeyAttributes: Self = this.set("nonKeyAttributes", js.undefined)
+  }
+  
 }
 

@@ -4,90 +4,153 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartSeriesDefaults extends js.Object {
-  var area: js.UndefOr[js.Any] = js.undefined
-  var bar: js.UndefOr[js.Any] = js.undefined
-  var border: js.UndefOr[ChartSeriesDefaultsBorder] = js.undefined
-  var bubble: js.UndefOr[js.Any] = js.undefined
-  var candlestick: js.UndefOr[js.Any] = js.undefined
-  var column: js.UndefOr[js.Any] = js.undefined
-  var donut: js.UndefOr[js.Any] = js.undefined
-  var gap: js.UndefOr[Double] = js.undefined
-  var labels: js.UndefOr[ChartSeriesDefaultsLabels] = js.undefined
-  var line: js.UndefOr[js.Any] = js.undefined
-  var notes: js.UndefOr[ChartSeriesDefaultsNotes] = js.undefined
-  var ohlc: js.UndefOr[js.Any] = js.undefined
-  var overlay: js.UndefOr[ChartSeriesDefaultsOverlay] = js.undefined
-  var pie: js.UndefOr[js.Any] = js.undefined
-  var rangeArea: js.UndefOr[js.Any] = js.undefined
-  var scatter: js.UndefOr[js.Any] = js.undefined
-  var scatterLine: js.UndefOr[js.Any] = js.undefined
-  var spacing: js.UndefOr[Double] = js.undefined
-  var stack: js.UndefOr[Boolean | ChartSeriesDefaultsStack] = js.undefined
-  var tooltip: js.UndefOr[ChartSeriesDefaultsTooltip] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var verticalArea: js.UndefOr[js.Any] = js.undefined
-  var verticalLine: js.UndefOr[js.Any] = js.undefined
-  var verticalRangeArea: js.UndefOr[js.Any] = js.undefined
-  var visual: js.UndefOr[js.Function] = js.undefined
+  var area: js.UndefOr[js.Any] = js.native
+  var bar: js.UndefOr[js.Any] = js.native
+  var border: js.UndefOr[ChartSeriesDefaultsBorder] = js.native
+  var bubble: js.UndefOr[js.Any] = js.native
+  var candlestick: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.native
+  var donut: js.UndefOr[js.Any] = js.native
+  var gap: js.UndefOr[Double] = js.native
+  var labels: js.UndefOr[ChartSeriesDefaultsLabels] = js.native
+  var line: js.UndefOr[js.Any] = js.native
+  var notes: js.UndefOr[ChartSeriesDefaultsNotes] = js.native
+  var ohlc: js.UndefOr[js.Any] = js.native
+  var overlay: js.UndefOr[ChartSeriesDefaultsOverlay] = js.native
+  var pie: js.UndefOr[js.Any] = js.native
+  var rangeArea: js.UndefOr[js.Any] = js.native
+  var scatter: js.UndefOr[js.Any] = js.native
+  var scatterLine: js.UndefOr[js.Any] = js.native
+  var spacing: js.UndefOr[Double] = js.native
+  var stack: js.UndefOr[Boolean | ChartSeriesDefaultsStack] = js.native
+  var tooltip: js.UndefOr[ChartSeriesDefaultsTooltip] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var verticalArea: js.UndefOr[js.Any] = js.native
+  var verticalLine: js.UndefOr[js.Any] = js.native
+  var verticalRangeArea: js.UndefOr[js.Any] = js.native
+  var visual: js.UndefOr[js.Function] = js.native
 }
 
 object ChartSeriesDefaults {
   @scala.inline
-  def apply(
-    area: js.Any = null,
-    bar: js.Any = null,
-    border: ChartSeriesDefaultsBorder = null,
-    bubble: js.Any = null,
-    candlestick: js.Any = null,
-    column: js.Any = null,
-    donut: js.Any = null,
-    gap: js.UndefOr[Double] = js.undefined,
-    labels: ChartSeriesDefaultsLabels = null,
-    line: js.Any = null,
-    notes: ChartSeriesDefaultsNotes = null,
-    ohlc: js.Any = null,
-    overlay: ChartSeriesDefaultsOverlay = null,
-    pie: js.Any = null,
-    rangeArea: js.Any = null,
-    scatter: js.Any = null,
-    scatterLine: js.Any = null,
-    spacing: js.UndefOr[Double] = js.undefined,
-    stack: Boolean | ChartSeriesDefaultsStack = null,
-    tooltip: ChartSeriesDefaultsTooltip = null,
-    `type`: String = null,
-    verticalArea: js.Any = null,
-    verticalLine: js.Any = null,
-    verticalRangeArea: js.Any = null,
-    visual: js.Function = null
-  ): ChartSeriesDefaults = {
+  def apply(): ChartSeriesDefaults = {
     val __obj = js.Dynamic.literal()
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (bar != null) __obj.updateDynamic("bar")(bar.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (bubble != null) __obj.updateDynamic("bubble")(bubble.asInstanceOf[js.Any])
-    if (candlestick != null) __obj.updateDynamic("candlestick")(candlestick.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (donut != null) __obj.updateDynamic("donut")(donut.asInstanceOf[js.Any])
-    if (!js.isUndefined(gap)) __obj.updateDynamic("gap")(gap.get.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (ohlc != null) __obj.updateDynamic("ohlc")(ohlc.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (pie != null) __obj.updateDynamic("pie")(pie.asInstanceOf[js.Any])
-    if (rangeArea != null) __obj.updateDynamic("rangeArea")(rangeArea.asInstanceOf[js.Any])
-    if (scatter != null) __obj.updateDynamic("scatter")(scatter.asInstanceOf[js.Any])
-    if (scatterLine != null) __obj.updateDynamic("scatterLine")(scatterLine.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verticalArea != null) __obj.updateDynamic("verticalArea")(verticalArea.asInstanceOf[js.Any])
-    if (verticalLine != null) __obj.updateDynamic("verticalLine")(verticalLine.asInstanceOf[js.Any])
-    if (verticalRangeArea != null) __obj.updateDynamic("verticalRangeArea")(verticalRangeArea.asInstanceOf[js.Any])
-    if (visual != null) __obj.updateDynamic("visual")(visual.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesDefaults]
   }
+  @scala.inline
+  implicit class ChartSeriesDefaultsOps[Self <: ChartSeriesDefaults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArea(value: js.Any): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setBar(value: js.Any): Self = this.set("bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBar: Self = this.set("bar", js.undefined)
+    @scala.inline
+    def setBorder(value: ChartSeriesDefaultsBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setBubble(value: js.Any): Self = this.set("bubble", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBubble: Self = this.set("bubble", js.undefined)
+    @scala.inline
+    def setCandlestick(value: js.Any): Self = this.set("candlestick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCandlestick: Self = this.set("candlestick", js.undefined)
+    @scala.inline
+    def setColumn(value: js.Any): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setDonut(value: js.Any): Self = this.set("donut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDonut: Self = this.set("donut", js.undefined)
+    @scala.inline
+    def setGap(value: Double): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setLabels(value: ChartSeriesDefaultsLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLine(value: js.Any): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine: Self = this.set("line", js.undefined)
+    @scala.inline
+    def setNotes(value: ChartSeriesDefaultsNotes): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setOhlc(value: js.Any): Self = this.set("ohlc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOhlc: Self = this.set("ohlc", js.undefined)
+    @scala.inline
+    def setOverlay(value: ChartSeriesDefaultsOverlay): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setPie(value: js.Any): Self = this.set("pie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePie: Self = this.set("pie", js.undefined)
+    @scala.inline
+    def setRangeArea(value: js.Any): Self = this.set("rangeArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeArea: Self = this.set("rangeArea", js.undefined)
+    @scala.inline
+    def setScatter(value: js.Any): Self = this.set("scatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScatter: Self = this.set("scatter", js.undefined)
+    @scala.inline
+    def setScatterLine(value: js.Any): Self = this.set("scatterLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScatterLine: Self = this.set("scatterLine", js.undefined)
+    @scala.inline
+    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    @scala.inline
+    def setStack(value: Boolean | ChartSeriesDefaultsStack): Self = this.set("stack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStack: Self = this.set("stack", js.undefined)
+    @scala.inline
+    def setTooltip(value: ChartSeriesDefaultsTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVerticalArea(value: js.Any): Self = this.set("verticalArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalArea: Self = this.set("verticalArea", js.undefined)
+    @scala.inline
+    def setVerticalLine(value: js.Any): Self = this.set("verticalLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalLine: Self = this.set("verticalLine", js.undefined)
+    @scala.inline
+    def setVerticalRangeArea(value: js.Any): Self = this.set("verticalRangeArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalRangeArea: Self = this.set("verticalRangeArea", js.undefined)
+    @scala.inline
+    def setVisual(value: js.Function): Self = this.set("visual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisual: Self = this.set("visual", js.undefined)
+  }
+  
 }
 

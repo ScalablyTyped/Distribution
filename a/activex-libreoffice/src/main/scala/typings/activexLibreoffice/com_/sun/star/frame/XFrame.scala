@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * The root node of the tree can be a {@link Desktop} implementation.
   * @see Desktop
   */
+@js.native
 trait XFrame extends XComponent {
   /**
     * provides access to the component window
@@ -23,7 +24,7 @@ trait XFrame extends XComponent {
     * @returns the current visible component in this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  val ComponentWindow: XWindow
+  val ComponentWindow: XWindow = js.native
   /**
     * provides access to the container window of the frame.
     *
@@ -31,7 +32,7 @@ trait XFrame extends XComponent {
     * @returns the container window of this frame
     * @see XFrame.initialize()
     */
-  val ContainerWindow: XWindow
+  val ContainerWindow: XWindow = js.native
   /**
     * provides access to the controller
     *
@@ -40,19 +41,19 @@ trait XFrame extends XComponent {
     * @returns the current controller within this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  val Controller: XController
+  val Controller: XController = js.native
   /**
     * provides access to the creator (parent) of this frame
     * @returns the frame container that created and contains this frame.
     * @see XFrame.setCreator()
     */
-  var Creator: XFramesSupplier
+  var Creator: XFramesSupplier = js.native
   /**
     * access to the name property of this frame
     * @returns the programmatic name of this frame.
     * @see XFrame.setName()
     */
-  var Name: String
+  var Name: String = js.native
   /**
     * activates this frame and thus the component within.
     *
@@ -64,7 +65,7 @@ trait XFrame extends XComponent {
     * @see XFrame.deactivate()
     * @see XFrame.isActive()
     */
-  def activate(): Unit
+  def activate(): Unit = js.native
   /**
     * registers an event listener, which will be called when certain things happen to the components within this frame or within sub-frames of this frame.
     *
@@ -72,7 +73,7 @@ trait XFrame extends XComponent {
     * @param xListener specifies the listener which will be informed
     * @see XFrame.removeFrameActionListener()
     */
-  def addFrameActionListener(xListener: XFrameActionListener): Unit
+  def addFrameActionListener(xListener: XFrameActionListener): Unit = js.native
   /**
     * notifies the frame that the context of the controller within this frame changed (i.e. the selection).
     *
@@ -82,7 +83,7 @@ trait XFrame extends XComponent {
     * @see FrameAction
     * @see XFrame.addFrameActionListener()
     */
-  def contextChanged(): Unit
+  def contextChanged(): Unit = js.native
   /**
     * is called by the creator frame when another sub-frame gets activated.
     *
@@ -90,7 +91,7 @@ trait XFrame extends XComponent {
     * @see XFrame.activate()
     * @see XFrame.isActive()
     */
-  def deactivate(): Unit
+  def deactivate(): Unit = js.native
   /**
     * searches for a frame with the specified name.
     *
@@ -108,7 +109,7 @@ trait XFrame extends XComponent {
     * @param nSearchFlags optional parameter to regulate search if no special target was used for **TargetFrameName**
     * @see FrameSearchFlag
     */
-  def findFrame(aTargetFrameName: String, nSearchFlags: Double): XFrame
+  def findFrame(aTargetFrameName: String, nSearchFlags: Double): XFrame = js.native
   /**
     * provides access to the component window
     *
@@ -116,7 +117,7 @@ trait XFrame extends XComponent {
     * @returns the current visible component in this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  def getComponentWindow(): XWindow
+  def getComponentWindow(): XWindow = js.native
   /**
     * provides access to the container window of the frame.
     *
@@ -124,7 +125,7 @@ trait XFrame extends XComponent {
     * @returns the container window of this frame
     * @see XFrame.initialize()
     */
-  def getContainerWindow(): XWindow
+  def getContainerWindow(): XWindow = js.native
   /**
     * provides access to the controller
     *
@@ -133,19 +134,19 @@ trait XFrame extends XComponent {
     * @returns the current controller within this frame ;  or `NULL` if no one currently exist
     * @see XFrame.setComponent()
     */
-  def getController(): XController
+  def getController(): XController = js.native
   /**
     * provides access to the creator (parent) of this frame
     * @returns the frame container that created and contains this frame.
     * @see XFrame.setCreator()
     */
-  def getCreator(): XFramesSupplier
+  def getCreator(): XFramesSupplier = js.native
   /**
     * access to the name property of this frame
     * @returns the programmatic name of this frame.
     * @see XFrame.setName()
     */
-  def getName(): String
+  def getName(): String = js.native
   /**
     * is called to initialize the frame within a window - the container window.
     *
@@ -156,14 +157,14 @@ trait XFrame extends XComponent {
     * @param xWindow the new container window
     * @see XFrame.getContainerWindow()
     */
-  def initialize(xWindow: XWindow): Unit
+  def initialize(xWindow: XWindow): Unit = js.native
   /**
     * determines if the frame is active.
     * @returns `TRUE` for active or UI active frames ; `FALSE` otherwise
     * @see XFrame.activate()
     * @see XFrame.deactivate()
     */
-  def isActive(): Boolean
+  def isActive(): Boolean = js.native
   /**
     * determines if the frame is a top frame.
     *
@@ -171,13 +172,13 @@ trait XFrame extends XComponent {
     * search at such a frame unless the flag {@link FrameSearchFlag.TASKS} is set.
     * @returns `TRUE` if frame supports top frame specification ; `FALSE` otherwise
     */
-  def isTop(): Boolean
+  def isTop(): Boolean = js.native
   /**
     * unregisters an event listener
     * @param xListener specifies the listener which won't be informed any longer
     * @see XFrame.addFrameActionListener()
     */
-  def removeFrameActionListener(xListener: XFrameActionListener): Unit
+  def removeFrameActionListener(xListener: XFrameActionListener): Unit = js.native
   /**
     * sets a new component into the frame or release an existing one from a frame.
     * @param xComponentWindow the window of the new component or `NULL` for release  A valid component window should be a child of the frame container window.
@@ -187,7 +188,7 @@ trait XFrame extends XComponent {
     * @see XFrame.getContainerWindow()
     * @see XFrame.getController()
     */
-  def setComponent(xComponentWindow: XWindow, xController: XController): Boolean
+  def setComponent(xComponentWindow: XWindow, xController: XController): Boolean = js.native
   /**
     * sets the frame container that created this frame.
     *
@@ -197,7 +198,7 @@ trait XFrame extends XComponent {
     * @param Creator the creator (parent) of this frame
     * @see XFrame.getCreator()
     */
-  def setCreator(Creator: XFramesSupplier): Unit
+  def setCreator(Creator: XFramesSupplier): Unit = js.native
   /**
     * sets the name of the frame.
     *
@@ -211,7 +212,7 @@ trait XFrame extends XComponent {
     * @see XDispatchProvider
     * @see XComponentLoader
     */
-  def setName(aName: String): Unit
+  def setName(aName: String): Unit = js.native
 }
 
 object XFrame {
@@ -249,5 +250,62 @@ object XFrame {
     val __obj = js.Dynamic.literal(ComponentWindow = ComponentWindow.asInstanceOf[js.Any], ContainerWindow = ContainerWindow.asInstanceOf[js.Any], Controller = Controller.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), activate = js.Any.fromFunction0(activate), addEventListener = js.Any.fromFunction1(addEventListener), addFrameActionListener = js.Any.fromFunction1(addFrameActionListener), contextChanged = js.Any.fromFunction0(contextChanged), deactivate = js.Any.fromFunction0(deactivate), dispose = js.Any.fromFunction0(dispose), findFrame = js.Any.fromFunction2(findFrame), getComponentWindow = js.Any.fromFunction0(getComponentWindow), getContainerWindow = js.Any.fromFunction0(getContainerWindow), getController = js.Any.fromFunction0(getController), getCreator = js.Any.fromFunction0(getCreator), getName = js.Any.fromFunction0(getName), initialize = js.Any.fromFunction1(initialize), isActive = js.Any.fromFunction0(isActive), isTop = js.Any.fromFunction0(isTop), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeFrameActionListener = js.Any.fromFunction1(removeFrameActionListener), setComponent = js.Any.fromFunction2(setComponent), setCreator = js.Any.fromFunction1(setCreator), setName = js.Any.fromFunction1(setName))
     __obj.asInstanceOf[XFrame]
   }
+  @scala.inline
+  implicit class XFrameOps[Self <: XFrame] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponentWindow(value: XWindow): Self = this.set("ComponentWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainerWindow(value: XWindow): Self = this.set("ContainerWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setController(value: XController): Self = this.set("Controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: XFramesSupplier): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivate(value: () => Unit): Self = this.set("activate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAddFrameActionListener(value: XFrameActionListener => Unit): Self = this.set("addFrameActionListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setContextChanged(value: () => Unit): Self = this.set("contextChanged", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDeactivate(value: () => Unit): Self = this.set("deactivate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFindFrame(value: (String, Double) => XFrame): Self = this.set("findFrame", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetComponentWindow(value: () => XWindow): Self = this.set("getComponentWindow", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetContainerWindow(value: () => XWindow): Self = this.set("getContainerWindow", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetController(value: () => XController): Self = this.set("getController", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetCreator(value: () => XFramesSupplier): Self = this.set("getCreator", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    @scala.inline
+    def setInitialize(value: XWindow => Unit): Self = this.set("initialize", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsActive(value: () => Boolean): Self = this.set("isActive", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsTop(value: () => Boolean): Self = this.set("isTop", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemoveFrameActionListener(value: XFrameActionListener => Unit): Self = this.set("removeFrameActionListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetComponent(value: (XWindow, XController) => Boolean): Self = this.set("setComponent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetCreator(value: XFramesSupplier => Unit): Self = this.set("setCreator", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetName(value: String => Unit): Self = this.set("setName", js.Any.fromFunction1(value))
+  }
+  
 }
 

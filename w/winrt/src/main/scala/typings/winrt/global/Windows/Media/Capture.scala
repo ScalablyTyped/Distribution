@@ -1,16 +1,5 @@
 package typings.winrt.global.Windows.Media
 
-import typings.winrt.Windows.Foundation.IAsyncOperation
-import typings.winrt.Windows.Foundation.Size
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxPhotoResolution
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMaxVideoResolution
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIMode
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoFormat
-import typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoFormat
-import typings.winrt.Windows.Media.Capture.PhotoCaptureSource
-import typings.winrt.Windows.Media.Capture.StreamingCaptureMode
-import typings.winrt.Windows.Media.Capture.VideoDeviceCharacteristic
-import typings.winrt.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,42 +9,15 @@ import scala.scalajs.js.annotation._
 object Capture extends js.Object {
   @js.native
   class CameraCaptureUI ()
-    extends typings.winrt.Windows.Media.Capture.CameraCaptureUI {
-    /* CompleteClass */
-    override var photoSettings: typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings = js.native
-    /* CompleteClass */
-    override var videoSettings: typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings = js.native
-    /* CompleteClass */
-    override def captureFileAsync(mode: CameraCaptureUIMode): IAsyncOperation[StorageFile] = js.native
-  }
+    extends typings.winrt.Windows.Media.Capture.CameraCaptureUI
   
   @js.native
   class CameraCaptureUIPhotoCaptureSettings ()
-    extends typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings {
-    /* CompleteClass */
-    override var allowCropping: Boolean = js.native
-    /* CompleteClass */
-    override var croppedAspectRatio: Size = js.native
-    /* CompleteClass */
-    override var croppedSizeInPixels: Size = js.native
-    /* CompleteClass */
-    override var format: CameraCaptureUIPhotoFormat = js.native
-    /* CompleteClass */
-    override var maxResolution: CameraCaptureUIMaxPhotoResolution = js.native
-  }
+    extends typings.winrt.Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings
   
   @js.native
   class CameraCaptureUIVideoCaptureSettings ()
-    extends typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings {
-    /* CompleteClass */
-    override var allowTrimming: Boolean = js.native
-    /* CompleteClass */
-    override var format: CameraCaptureUIVideoFormat = js.native
-    /* CompleteClass */
-    override var maxDurationInSeconds: Double = js.native
-    /* CompleteClass */
-    override var maxResolution: CameraCaptureUIMaxVideoResolution = js.native
-  }
+    extends typings.winrt.Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings
   
   @js.native
   class CameraOptionsUI ()
@@ -67,40 +29,15 @@ object Capture extends js.Object {
   
   @js.native
   class MediaCaptureFailedEventArgs ()
-    extends typings.winrt.Windows.Media.Capture.MediaCaptureFailedEventArgs {
-    /* CompleteClass */
-    override var code: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-  }
+    extends typings.winrt.Windows.Media.Capture.MediaCaptureFailedEventArgs
   
   @js.native
   class MediaCaptureInitializationSettings ()
-    extends typings.winrt.Windows.Media.Capture.MediaCaptureInitializationSettings {
-    /* CompleteClass */
-    override var audioDeviceId: String = js.native
-    /* CompleteClass */
-    override var photoCaptureSource: PhotoCaptureSource = js.native
-    /* CompleteClass */
-    override var streamingCaptureMode: StreamingCaptureMode = js.native
-    /* CompleteClass */
-    override var videoDeviceId: String = js.native
-  }
+    extends typings.winrt.Windows.Media.Capture.MediaCaptureInitializationSettings
   
   @js.native
   class MediaCaptureSettings ()
-    extends typings.winrt.Windows.Media.Capture.MediaCaptureSettings {
-    /* CompleteClass */
-    override var audioDeviceId: String = js.native
-    /* CompleteClass */
-    override var photoCaptureSource: PhotoCaptureSource = js.native
-    /* CompleteClass */
-    override var streamingCaptureMode: StreamingCaptureMode = js.native
-    /* CompleteClass */
-    override var videoDeviceCharacteristic: VideoDeviceCharacteristic = js.native
-    /* CompleteClass */
-    override var videoDeviceId: String = js.native
-  }
+    extends typings.winrt.Windows.Media.Capture.MediaCaptureSettings
   
   @js.native
   object CameraCaptureUIMaxPhotoResolution extends js.Object {

@@ -38,6 +38,7 @@ class Request protected () extends EventEmitter {
     * @param options Additional type options. Optional.
     */
   def addOutputParameter(name: String, `type`: TediousType): Unit = js.native
+  def addOutputParameter(name: String, `type`: TediousType, value: js.UndefOr[scala.Nothing], options: ParameterOptions): Unit = js.native
   def addOutputParameter(name: String, `type`: TediousType, value: js.Any): Unit = js.native
   def addOutputParameter(name: String, `type`: TediousType, value: js.Any, options: ParameterOptions): Unit = js.native
   /**

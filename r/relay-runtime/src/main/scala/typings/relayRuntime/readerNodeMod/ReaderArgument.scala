@@ -19,9 +19,8 @@ object ReaderArgument {
     __obj.asInstanceOf[ReaderArgument]
   }
   @scala.inline
-  def ReaderVariable(kind: String, name: String, variableName: String, `type`: js.UndefOr[Null | String] = js.undefined): ReaderArgument = {
+  def ReaderVariable(kind: String, name: String, variableName: String): ReaderArgument = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaderArgument]
   }
   @scala.inline

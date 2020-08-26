@@ -54,9 +54,9 @@ trait Typeofcore extends js.Object {
   def locale(): java.lang.String = js.native
   def locale(lang: java.lang.String): java.lang.String = js.native
   def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
-  def setInterval(handler: js.Any): Double = js.native
+  def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
-  def setTimeout(handler: js.Any): Double = js.native
+  def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
   def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
 }
 

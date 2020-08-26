@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("on-change", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof onChange */ js.Any = js.native
   /**
   	Watch an object or array for changes. It works recursively, so it will even detect if you modify a deep property like `obj.a.b[0].c = true`.
   	@param object - Object to watch for changes.
@@ -95,12 +94,6 @@ object ^ extends js.Object {
     ],
     options: Options
   ): ObjectType = js.native
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function onChange<ObjectType extends {[key: string]: unknown}>(
-  // 	object: ObjectType,
-  // 	onChange: (this: ObjectType, path: string, value: unknown, previousValue: unknown) => void
-  // ): ObjectType;
-  // export = onChange;
   /**
   	@param object - Object that is already being watched for changes.
   	@returns The original unwatched object.

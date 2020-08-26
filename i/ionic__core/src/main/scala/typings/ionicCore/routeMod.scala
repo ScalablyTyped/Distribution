@@ -1,6 +1,7 @@
 package typings.ionicCore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.ionicCore.routeInterfaceMod.NavigationHookCallback
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import scala.scalajs.js
@@ -12,6 +13,20 @@ import scala.scalajs.js.annotation._
 object routeMod extends js.Object {
   @js.native
   class Route () extends ComponentInterface {
+    /**
+      * A navigation hook that is fired when the route tries to enter.
+      * Returning `true` allows the navigation to proceed, while returning
+      * `false` causes it to be cancelled. Returning a `NavigationHookOptions`
+      * object causes the router to redirect to the path specified.
+      */
+    var beforeEnter: js.UndefOr[NavigationHookCallback] = js.native
+    /**
+      * A navigation hook that is fired when the route tries to leave.
+      * Returning `true` allows the navigation to proceed, while returning
+      * `false` causes it to be cancelled. Returning a `NavigationHookOptions`
+      * object causes the router to redirect to the path specified.
+      */
+    var beforeLeave: js.UndefOr[NavigationHookCallback] = js.native
     /**
       * Name of the component to load/select in the navigation outlet (`ion-tabs`, `ion-nav`)
       * when the route matches.

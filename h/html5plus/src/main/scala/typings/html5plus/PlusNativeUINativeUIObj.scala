@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
+@js.native
 trait PlusNativeUINativeUIObj extends js.Object {
   /**
     * 关闭显示的系统原生界面
@@ -18,7 +19,7 @@ trait PlusNativeUINativeUIObj extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  def close(): Unit
+  def close(): Unit = js.native
 }
 
 object PlusNativeUINativeUIObj {
@@ -27,5 +28,20 @@ object PlusNativeUINativeUIObj {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[PlusNativeUINativeUIObj]
   }
+  @scala.inline
+  implicit class PlusNativeUINativeUIObjOps[Self <: PlusNativeUINativeUIObj] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClose(value: () => Unit): Self = this.set("close", js.Any.fromFunction0(value))
+  }
+  
 }
 

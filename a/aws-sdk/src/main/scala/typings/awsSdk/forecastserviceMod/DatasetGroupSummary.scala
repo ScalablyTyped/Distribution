@@ -26,18 +26,38 @@ trait DatasetGroupSummary extends js.Object {
 
 object DatasetGroupSummary {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DatasetGroupArn: Arn = null,
-    DatasetGroupName: Name = null,
-    LastModificationTime: Timestamp = null
-  ): DatasetGroupSummary = {
+  def apply(): DatasetGroupSummary = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DatasetGroupArn != null) __obj.updateDynamic("DatasetGroupArn")(DatasetGroupArn.asInstanceOf[js.Any])
-    if (DatasetGroupName != null) __obj.updateDynamic("DatasetGroupName")(DatasetGroupName.asInstanceOf[js.Any])
-    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetGroupSummary]
   }
+  @scala.inline
+  implicit class DatasetGroupSummaryOps[Self <: DatasetGroupSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDatasetGroupArn(value: Arn): Self = this.set("DatasetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroupArn: Self = this.set("DatasetGroupArn", js.undefined)
+    @scala.inline
+    def setDatasetGroupName(value: Name): Self = this.set("DatasetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetGroupName: Self = this.set("DatasetGroupName", js.undefined)
+    @scala.inline
+    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+  }
+  
 }
 

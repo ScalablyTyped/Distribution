@@ -12,7 +12,7 @@ AutoFill for DataTables
 | Keywords           | autofill, excel, DataTables, jQuery, table, DataTables |
 | # releases         | 6 |
 | # dependents       | 7 |
-| # downloads        | 165585 |
+| # downloads        | 184298 |
 | # stars            | 0 |
 
 ## Links

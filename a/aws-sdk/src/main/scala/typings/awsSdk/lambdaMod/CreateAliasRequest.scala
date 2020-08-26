@@ -30,17 +30,36 @@ trait CreateAliasRequest extends js.Object {
 
 object CreateAliasRequest {
   @scala.inline
-  def apply(
-    FunctionName: FunctionName,
-    FunctionVersion: Version,
-    Name: Alias,
-    Description: Description = null,
-    RoutingConfig: AliasRoutingConfiguration = null
-  ): CreateAliasRequest = {
+  def apply(FunctionName: FunctionName, FunctionVersion: Version, Name: Alias): CreateAliasRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any], FunctionVersion = FunctionVersion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (RoutingConfig != null) __obj.updateDynamic("RoutingConfig")(RoutingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAliasRequest]
   }
+  @scala.inline
+  implicit class CreateAliasRequestOps[Self <: CreateAliasRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctionVersion(value: Version): Self = this.set("FunctionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Alias): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setRoutingConfig(value: AliasRoutingConfiguration): Self = this.set("RoutingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingConfig: Self = this.set("RoutingConfig", js.undefined)
+  }
+  
 }
 

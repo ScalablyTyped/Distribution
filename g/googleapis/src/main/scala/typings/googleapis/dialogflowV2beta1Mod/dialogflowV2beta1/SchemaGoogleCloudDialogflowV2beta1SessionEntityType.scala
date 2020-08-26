@@ -39,16 +39,36 @@ trait SchemaGoogleCloudDialogflowV2beta1SessionEntityType extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1SessionEntityType {
   @scala.inline
-  def apply(
-    entities: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity] = null,
-    entityOverrideMode: String = null,
-    name: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1SessionEntityType = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1SessionEntityType = {
     val __obj = js.Dynamic.literal()
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (entityOverrideMode != null) __obj.updateDynamic("entityOverrideMode")(entityOverrideMode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1SessionEntityTypeOps[Self <: SchemaGoogleCloudDialogflowV2beta1SessionEntityType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntitiesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity*): Self = this.set("entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityTypeEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntities: Self = this.set("entities", js.undefined)
+    @scala.inline
+    def setEntityOverrideMode(value: String): Self = this.set("entityOverrideMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityOverrideMode: Self = this.set("entityOverrideMode", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

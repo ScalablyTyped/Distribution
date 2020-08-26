@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendedChain[T] extends BaseChain[T] {
-  def contains(value: js.Any): T
-  def in(values: js.Array[_]): T
-  def ne(value: js.Any): T
-  def notContains(value: js.Any): T
+  def contains(value: js.Any): T = js.native
+  def in(values: js.Array[_]): T = js.native
+  def ne(value: js.Any): T = js.native
+  def notContains(value: js.Any): T = js.native
 }
 
 object ExtendedChain {
@@ -33,5 +34,26 @@ object ExtendedChain {
     __obj.updateDynamic("null")(js.Any.fromFunction0(`null`))
     __obj.asInstanceOf[ExtendedChain[T]]
   }
+  @scala.inline
+  implicit class ExtendedChainOps[Self <: ExtendedChain[_], T] (val x: Self with ExtendedChain[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContains(value: js.Any => T): Self = this.set("contains", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIn(value: js.Array[_] => T): Self = this.set("in", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNe(value: js.Any => T): Self = this.set("ne", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNotContains(value: js.Any => T): Self = this.set("notContains", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpProvider () extends HttpProviderBase {
   def this(host: String) = this()
+  def this(host: js.UndefOr[scala.Nothing], options: HttpProviderOptions) = this()
   def this(host: String, options: HttpProviderOptions) = this()
   var agent: js.UndefOr[HttpProviderAgent] = js.native
   var headers: js.UndefOr[js.Array[HttpHeader]] = js.native

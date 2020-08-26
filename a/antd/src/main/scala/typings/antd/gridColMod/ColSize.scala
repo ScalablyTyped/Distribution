@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColSize extends js.Object {
-  var offset: js.UndefOr[ColSpanType] = js.undefined
-  var order: js.UndefOr[ColSpanType] = js.undefined
-  var pull: js.UndefOr[ColSpanType] = js.undefined
-  var push: js.UndefOr[ColSpanType] = js.undefined
-  var span: js.UndefOr[ColSpanType] = js.undefined
+  var offset: js.UndefOr[ColSpanType] = js.native
+  var order: js.UndefOr[ColSpanType] = js.native
+  var pull: js.UndefOr[ColSpanType] = js.native
+  var push: js.UndefOr[ColSpanType] = js.native
+  var span: js.UndefOr[ColSpanType] = js.native
 }
 
 object ColSize {
   @scala.inline
-  def apply(
-    offset: ColSpanType = null,
-    order: ColSpanType = null,
-    pull: ColSpanType = null,
-    push: ColSpanType = null,
-    span: ColSpanType = null
-  ): ColSize = {
+  def apply(): ColSize = {
     val __obj = js.Dynamic.literal()
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
-    if (push != null) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColSize]
   }
+  @scala.inline
+  implicit class ColSizeOps[Self <: ColSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOffset(value: ColSpanType): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrder(value: ColSpanType): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setPull(value: ColSpanType): Self = this.set("pull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePull: Self = this.set("pull", js.undefined)
+    @scala.inline
+    def setPush(value: ColSpanType): Self = this.set("push", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePush: Self = this.set("push", js.undefined)
+    @scala.inline
+    def setSpan(value: ColSpanType): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+  }
+  
 }
 

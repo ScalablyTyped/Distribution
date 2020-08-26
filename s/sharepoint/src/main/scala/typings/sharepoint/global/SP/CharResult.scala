@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SP.CharResult")
 @js.native
 class CharResult ()
-  extends typings.sharepoint.SP.CharResult {
-  /* CompleteClass */
-  override def get_value(): js.Any = js.native
-}
+  extends typings.sharepoint.SP.CharResult
 

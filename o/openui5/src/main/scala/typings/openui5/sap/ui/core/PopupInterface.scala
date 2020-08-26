@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
   * opened/closed.Such controls are handled differently during rendering.
   * @resource sap/ui/core/library.js
   */
+@js.native
 trait PopupInterface extends js.Object
 

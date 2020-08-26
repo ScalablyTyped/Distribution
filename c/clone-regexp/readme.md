@@ -12,7 +12,7 @@ Clone and modify a RegExp instance
 | Keywords           | regexp, regex, re, regular, expression, clone, duplicate, modify, mutate |
 | # releases         | 5 |
 | # dependents       | 19 |
-| # downloads        | 46382472 |
+| # downloads        | 50463269 |
 | # stars            | 1 |
 
 ## Links

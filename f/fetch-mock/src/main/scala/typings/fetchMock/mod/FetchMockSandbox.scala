@@ -14,6 +14,7 @@ trait FetchMockSandbox extends FetchMockStatic {
     * a field that accepts both `fetch()` and a fetch-mock sandbox.
     */
   def apply(): js.Promise[Response] = js.native
+  def apply(input: js.UndefOr[scala.Nothing], init: RequestInit): js.Promise[Response] = js.native
   def apply(input: String): js.Promise[Response] = js.native
   def apply(input: String, init: RequestInit): js.Promise[Response] = js.native
   def apply(input: Request): js.Promise[Response] = js.native

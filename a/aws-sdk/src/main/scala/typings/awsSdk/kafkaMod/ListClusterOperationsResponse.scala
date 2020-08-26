@@ -22,11 +22,32 @@ trait ListClusterOperationsResponse extends js.Object {
 
 object ListClusterOperationsResponse {
   @scala.inline
-  def apply(ClusterOperationInfoList: listOfClusterOperationInfo = null, NextToken: string = null): ListClusterOperationsResponse = {
+  def apply(): ListClusterOperationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (ClusterOperationInfoList != null) __obj.updateDynamic("ClusterOperationInfoList")(ClusterOperationInfoList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClusterOperationsResponse]
   }
+  @scala.inline
+  implicit class ListClusterOperationsResponseOps[Self <: ListClusterOperationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterOperationInfoListVarargs(value: ClusterOperationInfo*): Self = this.set("ClusterOperationInfoList", js.Array(value :_*))
+    @scala.inline
+    def setClusterOperationInfoList(value: listOfClusterOperationInfo): Self = this.set("ClusterOperationInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterOperationInfoList: Self = this.set("ClusterOperationInfoList", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

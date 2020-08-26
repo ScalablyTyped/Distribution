@@ -5,45 +5,88 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<dayjs.ILocale> */
+@js.native
 trait PartialILocale extends js.Object {
-  var formats: js.UndefOr[PartialLTstringLTSstringL] = js.undefined
-  var months: js.UndefOr[js.Array[String]] = js.undefined
-  var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.undefined
-  var relativeTime: js.UndefOr[Partialfuturestringpastst] = js.undefined
-  var weekStart: js.UndefOr[Double] = js.undefined
-  var weekdays: js.UndefOr[js.Array[String]] = js.undefined
-  var weekdaysMin: js.UndefOr[js.Array[String]] = js.undefined
-  var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
+  var formats: js.UndefOr[PartialLTstringLTSstringL] = js.native
+  var months: js.UndefOr[js.Array[String]] = js.native
+  var monthsShort: js.UndefOr[js.Array[String]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.native
+  var relativeTime: js.UndefOr[Partialfuturestringpastst] = js.native
+  var weekStart: js.UndefOr[Double] = js.native
+  var weekdays: js.UndefOr[js.Array[String]] = js.native
+  var weekdaysMin: js.UndefOr[js.Array[String]] = js.native
+  var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
 }
 
 object PartialILocale {
   @scala.inline
-  def apply(
-    formats: PartialLTstringLTSstringL = null,
-    months: js.Array[String] = null,
-    monthsShort: js.Array[String] = null,
-    name: String = null,
-    ordinal: /* n */ Double => Double | String = null,
-    relativeTime: Partialfuturestringpastst = null,
-    weekStart: js.UndefOr[Double] = js.undefined,
-    weekdays: js.Array[String] = null,
-    weekdaysMin: js.Array[String] = null,
-    weekdaysShort: js.Array[String] = null
-  ): PartialILocale = {
+  def apply(): PartialILocale = {
     val __obj = js.Dynamic.literal()
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (months != null) __obj.updateDynamic("months")(months.asInstanceOf[js.Any])
-    if (monthsShort != null) __obj.updateDynamic("monthsShort")(monthsShort.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ordinal != null) __obj.updateDynamic("ordinal")(js.Any.fromFunction1(ordinal))
-    if (relativeTime != null) __obj.updateDynamic("relativeTime")(relativeTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekStart)) __obj.updateDynamic("weekStart")(weekStart.get.asInstanceOf[js.Any])
-    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays.asInstanceOf[js.Any])
-    if (weekdaysMin != null) __obj.updateDynamic("weekdaysMin")(weekdaysMin.asInstanceOf[js.Any])
-    if (weekdaysShort != null) __obj.updateDynamic("weekdaysShort")(weekdaysShort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialILocale]
   }
+  @scala.inline
+  implicit class PartialILocaleOps[Self <: PartialILocale] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormats(value: PartialLTstringLTSstringL): Self = this.set("formats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormats: Self = this.set("formats", js.undefined)
+    @scala.inline
+    def setMonthsVarargs(value: String*): Self = this.set("months", js.Array(value :_*))
+    @scala.inline
+    def setMonths(value: js.Array[String]): Self = this.set("months", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonths: Self = this.set("months", js.undefined)
+    @scala.inline
+    def setMonthsShortVarargs(value: String*): Self = this.set("monthsShort", js.Array(value :_*))
+    @scala.inline
+    def setMonthsShort(value: js.Array[String]): Self = this.set("monthsShort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthsShort: Self = this.set("monthsShort", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOrdinal(value: /* n */ Double => Double | String): Self = this.set("ordinal", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOrdinal: Self = this.set("ordinal", js.undefined)
+    @scala.inline
+    def setRelativeTime(value: Partialfuturestringpastst): Self = this.set("relativeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeTime: Self = this.set("relativeTime", js.undefined)
+    @scala.inline
+    def setWeekStart(value: Double): Self = this.set("weekStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekStart: Self = this.set("weekStart", js.undefined)
+    @scala.inline
+    def setWeekdaysVarargs(value: String*): Self = this.set("weekdays", js.Array(value :_*))
+    @scala.inline
+    def setWeekdays(value: js.Array[String]): Self = this.set("weekdays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekdays: Self = this.set("weekdays", js.undefined)
+    @scala.inline
+    def setWeekdaysMinVarargs(value: String*): Self = this.set("weekdaysMin", js.Array(value :_*))
+    @scala.inline
+    def setWeekdaysMin(value: js.Array[String]): Self = this.set("weekdaysMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekdaysMin: Self = this.set("weekdaysMin", js.undefined)
+    @scala.inline
+    def setWeekdaysShortVarargs(value: String*): Self = this.set("weekdaysShort", js.Array(value :_*))
+    @scala.inline
+    def setWeekdaysShort(value: js.Array[String]): Self = this.set("weekdaysShort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekdaysShort: Self = this.set("weekdaysShort", js.undefined)
+  }
+  
 }
 

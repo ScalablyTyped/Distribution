@@ -12,7 +12,7 @@ AngularStrap - AngularJS directives for Bootstrap
 | Keywords           | angular, bootstrap |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 398083 |
+| # downloads        | 439981 |
 | # stars            | 4 |
 
 ## Links

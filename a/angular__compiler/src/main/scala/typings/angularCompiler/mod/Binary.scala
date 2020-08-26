@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Binary")
 @js.native
 class Binary protected ()
-  extends typings.angularCompiler.publicApiMod.Binary {
+  extends typings.angularCompiler.compilerMod.Binary {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

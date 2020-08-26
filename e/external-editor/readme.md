@@ -10,9 +10,9 @@ Edit a string with the users preferred text editor using $VISUAL or $ENVIRONMENT
 | ------------------ | :-------------: |
 | Full name          | external-editor |
 | Keywords           | editor, external, user, visual |
-| # releases         | 7 |
-| # dependents       | 56 |
-| # downloads        | 468961953 |
+| # releases         | 5 |
+| # dependents       | 86 |
+| # downloads        | 592662716 |
 | # stars            | 1 |
 
 ## Links

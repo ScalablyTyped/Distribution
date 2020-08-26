@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CSSProperties
   extends CSSPropertiesLossy
      with CSSPropertiesComplete
@@ -11,13 +12,8 @@ trait CSSProperties
 
 object CSSProperties {
   @scala.inline
-  def apply(
-    CSSPropertiesComplete: CSSPropertiesComplete = null,
-    CSSPropertiesPseudo: CSSPropertiesPseudo = null
-  ): CSSProperties = {
+  def apply(): CSSProperties = {
     val __obj = js.Dynamic.literal()
-    if (CSSPropertiesComplete != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesComplete)
-    if (CSSPropertiesPseudo != null) js.Dynamic.global.Object.assign(__obj, CSSPropertiesPseudo)
     __obj.asInstanceOf[CSSProperties]
   }
 }

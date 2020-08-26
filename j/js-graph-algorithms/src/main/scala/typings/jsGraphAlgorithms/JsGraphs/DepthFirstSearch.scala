@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DepthFirstSearch[T] extends js.Object {
-  var edgeTo: js.Any
-  var marked: js.Any
-  var s: js.Any
-  def dfs(G: Graph, v: Double): Unit
-  def hasPathTo(v: Double): Boolean
-  def pathTo(v: Double): js.Array[Double]
+  var edgeTo: js.Any = js.native
+  var marked: js.Any = js.native
+  var s: js.Any = js.native
+  def dfs(G: Graph, v: Double): Unit = js.native
+  def hasPathTo(v: Double): Boolean = js.native
+  def pathTo(v: Double): js.Array[Double] = js.native
 }
 
 object DepthFirstSearch {
@@ -26,5 +27,30 @@ object DepthFirstSearch {
     val __obj = js.Dynamic.literal(dfs = js.Any.fromFunction2(dfs), edgeTo = edgeTo.asInstanceOf[js.Any], hasPathTo = js.Any.fromFunction1(hasPathTo), marked = marked.asInstanceOf[js.Any], pathTo = js.Any.fromFunction1(pathTo), s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[DepthFirstSearch[T]]
   }
+  @scala.inline
+  implicit class DepthFirstSearchOps[Self <: DepthFirstSearch[_], T] (val x: Self with DepthFirstSearch[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDfs(value: (Graph, Double) => Unit): Self = this.set("dfs", js.Any.fromFunction2(value))
+    @scala.inline
+    def setEdgeTo(value: js.Any): Self = this.set("edgeTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasPathTo(value: Double => Boolean): Self = this.set("hasPathTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMarked(value: js.Any): Self = this.set("marked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPathTo(value: Double => js.Array[Double]): Self = this.set("pathTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setS(value: js.Any): Self = this.set("s", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -16,14 +16,6 @@ object mod extends js.Object {
     val logger: js.Any = js.native
     val options: LoggerOptions = js.native
     var write: js.Any = js.native
-    /* CompleteClass */
-    override def error(content: String): Unit = js.native
-    /* CompleteClass */
-    override def info(content: String): Unit = js.native
-    /* CompleteClass */
-    override def log(content: String): Unit = js.native
-    /* CompleteClass */
-    override def warn(content: String): Unit = js.native
   }
   
   /* static members */

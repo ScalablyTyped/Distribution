@@ -22,11 +22,34 @@ trait RespondDecisionTaskCompletedInput extends js.Object {
 
 object RespondDecisionTaskCompletedInput {
   @scala.inline
-  def apply(taskToken: TaskToken, decisions: DecisionList = null, executionContext: Data = null): RespondDecisionTaskCompletedInput = {
+  def apply(taskToken: TaskToken): RespondDecisionTaskCompletedInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
-    if (decisions != null) __obj.updateDynamic("decisions")(decisions.asInstanceOf[js.Any])
-    if (executionContext != null) __obj.updateDynamic("executionContext")(executionContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondDecisionTaskCompletedInput]
   }
+  @scala.inline
+  implicit class RespondDecisionTaskCompletedInputOps[Self <: RespondDecisionTaskCompletedInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskToken(value: TaskToken): Self = this.set("taskToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDecisionsVarargs(value: Decision*): Self = this.set("decisions", js.Array(value :_*))
+    @scala.inline
+    def setDecisions(value: DecisionList): Self = this.set("decisions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecisions: Self = this.set("decisions", js.undefined)
+    @scala.inline
+    def setExecutionContext(value: Data): Self = this.set("executionContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionContext: Self = this.set("executionContext", js.undefined)
+  }
+  
 }
 

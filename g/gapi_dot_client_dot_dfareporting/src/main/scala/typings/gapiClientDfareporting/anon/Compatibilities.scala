@@ -4,146 +4,218 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Compatibilities extends js.Object {
   /** Select only placements that belong to these advertisers. */
-  var advertiserIds: js.UndefOr[String] = js.undefined
+  var advertiserIds: js.UndefOr[String] = js.native
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /** Select only archived placements. Don't set this field to select both archived and non-archived placements. */
-  var archived: js.UndefOr[Boolean] = js.undefined
+  var archived: js.UndefOr[Boolean] = js.native
   /** Select only placements that belong to these campaigns. */
-  var campaignIds: js.UndefOr[String] = js.undefined
+  var campaignIds: js.UndefOr[String] = js.native
   /**
     * Select only placements that are associated with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on
     * mobile devices for regular or interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to
     * rendering in in-stream video ads developed with the VAST standard.
     */
-  var compatibilities: js.UndefOr[String] = js.undefined
+  var compatibilities: js.UndefOr[String] = js.native
   /** Select only placements that are associated with these content categories. */
-  var contentCategoryIds: js.UndefOr[String] = js.undefined
+  var contentCategoryIds: js.UndefOr[String] = js.native
   /** Select only placements that are associated with these directory sites. */
-  var directorySiteIds: js.UndefOr[String] = js.undefined
+  var directorySiteIds: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /** Select only placements that belong to these placement groups. */
-  var groupIds: js.UndefOr[String] = js.undefined
+  var groupIds: js.UndefOr[String] = js.native
   /** Select only placements with these IDs. */
-  var ids: js.UndefOr[String] = js.undefined
+  var ids: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /** Select only placements or placement groups whose end date is on or before the specified maxEndDate. The date should be formatted as "yyyy-MM-dd". */
-  var maxEndDate: js.UndefOr[String] = js.undefined
+  var maxEndDate: js.UndefOr[String] = js.native
   /** Maximum number of results to return. */
-  var maxResults: js.UndefOr[Double] = js.undefined
+  var maxResults: js.UndefOr[Double] = js.native
   /** Select only placements or placement groups whose start date is on or before the specified maxStartDate. The date should be formatted as "yyyy-MM-dd". */
-  var maxStartDate: js.UndefOr[String] = js.undefined
+  var maxStartDate: js.UndefOr[String] = js.native
   /** Select only placements or placement groups whose end date is on or after the specified minEndDate. The date should be formatted as "yyyy-MM-dd". */
-  var minEndDate: js.UndefOr[String] = js.undefined
+  var minEndDate: js.UndefOr[String] = js.native
   /** Select only placements or placement groups whose start date is on or after the specified minStartDate. The date should be formatted as "yyyy-MM-dd". */
-  var minStartDate: js.UndefOr[String] = js.undefined
+  var minStartDate: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /** Value of the nextPageToken from the previous result page. */
-  var pageToken: js.UndefOr[String] = js.undefined
+  var pageToken: js.UndefOr[String] = js.native
   /** Select only placements with this payment source. */
-  var paymentSource: js.UndefOr[String] = js.undefined
+  var paymentSource: js.UndefOr[String] = js.native
   /** Select only placements that are associated with these placement strategies. */
-  var placementStrategyIds: js.UndefOr[String] = js.undefined
+  var placementStrategyIds: js.UndefOr[String] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Select only placements with these pricing types. */
-  var pricingTypes: js.UndefOr[String] = js.undefined
+  var pricingTypes: js.UndefOr[String] = js.native
   /** User profile ID associated with this request. */
-  var profileId: String
+  var profileId: String = js.native
   /**
     * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
     * Overrides userIp if both are provided.
     */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /**
     * Allows searching for placements by name or ID. Wildcards (&#42;) are allowed. For example, "placement&#42;2015" will return placements with names like
     * "placement June 2015", "placement May 2015", or simply "placements 2015". Most of the searches also add wildcards implicitly at the start and the end
     * of the search string. For example, a search string of "placement" will match placements with name "my placement", "placement 2015", or simply
     * "placement".
     */
-  var searchString: js.UndefOr[String] = js.undefined
+  var searchString: js.UndefOr[String] = js.native
   /** Select only placements that are associated with these sites. */
-  var siteIds: js.UndefOr[String] = js.undefined
+  var siteIds: js.UndefOr[String] = js.native
   /** Select only placements that are associated with these sizes. */
-  var sizeIds: js.UndefOr[String] = js.undefined
+  var sizeIds: js.UndefOr[String] = js.native
   /** Field by which to sort the list. */
-  var sortField: js.UndefOr[String] = js.undefined
+  var sortField: js.UndefOr[String] = js.native
   /** Order of sorted results. */
-  var sortOrder: js.UndefOr[String] = js.undefined
+  var sortOrder: js.UndefOr[String] = js.native
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
-  var userIp: js.UndefOr[String] = js.undefined
+  var userIp: js.UndefOr[String] = js.native
 }
 
 object Compatibilities {
   @scala.inline
-  def apply(
-    profileId: String,
-    advertiserIds: String = null,
-    alt: String = null,
-    archived: js.UndefOr[Boolean] = js.undefined,
-    campaignIds: String = null,
-    compatibilities: String = null,
-    contentCategoryIds: String = null,
-    directorySiteIds: String = null,
-    fields: String = null,
-    groupIds: String = null,
-    ids: String = null,
-    key: String = null,
-    maxEndDate: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    maxStartDate: String = null,
-    minEndDate: String = null,
-    minStartDate: String = null,
-    oauth_token: String = null,
-    pageToken: String = null,
-    paymentSource: String = null,
-    placementStrategyIds: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    pricingTypes: String = null,
-    quotaUser: String = null,
-    searchString: String = null,
-    siteIds: String = null,
-    sizeIds: String = null,
-    sortField: String = null,
-    sortOrder: String = null,
-    userIp: String = null
-  ): Compatibilities = {
+  def apply(profileId: String): Compatibilities = {
     val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any])
-    if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds.asInstanceOf[js.Any])
-    if (compatibilities != null) __obj.updateDynamic("compatibilities")(compatibilities.asInstanceOf[js.Any])
-    if (contentCategoryIds != null) __obj.updateDynamic("contentCategoryIds")(contentCategoryIds.asInstanceOf[js.Any])
-    if (directorySiteIds != null) __obj.updateDynamic("directorySiteIds")(directorySiteIds.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (groupIds != null) __obj.updateDynamic("groupIds")(groupIds.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxEndDate != null) __obj.updateDynamic("maxEndDate")(maxEndDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (maxStartDate != null) __obj.updateDynamic("maxStartDate")(maxStartDate.asInstanceOf[js.Any])
-    if (minEndDate != null) __obj.updateDynamic("minEndDate")(minEndDate.asInstanceOf[js.Any])
-    if (minStartDate != null) __obj.updateDynamic("minStartDate")(minStartDate.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource.asInstanceOf[js.Any])
-    if (placementStrategyIds != null) __obj.updateDynamic("placementStrategyIds")(placementStrategyIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (pricingTypes != null) __obj.updateDynamic("pricingTypes")(pricingTypes.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])
-    if (siteIds != null) __obj.updateDynamic("siteIds")(siteIds.asInstanceOf[js.Any])
-    if (sizeIds != null) __obj.updateDynamic("sizeIds")(sizeIds.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compatibilities]
   }
+  @scala.inline
+  implicit class CompatibilitiesOps[Self <: Compatibilities] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProfileId(value: String): Self = this.set("profileId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdvertiserIds(value: String): Self = this.set("advertiserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserIds: Self = this.set("advertiserIds", js.undefined)
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setCampaignIds(value: String): Self = this.set("campaignIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignIds: Self = this.set("campaignIds", js.undefined)
+    @scala.inline
+    def setCompatibilities(value: String): Self = this.set("compatibilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompatibilities: Self = this.set("compatibilities", js.undefined)
+    @scala.inline
+    def setContentCategoryIds(value: String): Self = this.set("contentCategoryIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCategoryIds: Self = this.set("contentCategoryIds", js.undefined)
+    @scala.inline
+    def setDirectorySiteIds(value: String): Self = this.set("directorySiteIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectorySiteIds: Self = this.set("directorySiteIds", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setGroupIds(value: String): Self = this.set("groupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupIds: Self = this.set("groupIds", js.undefined)
+    @scala.inline
+    def setIds(value: String): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMaxEndDate(value: String): Self = this.set("maxEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxEndDate: Self = this.set("maxEndDate", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setMaxStartDate(value: String): Self = this.set("maxStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxStartDate: Self = this.set("maxStartDate", js.undefined)
+    @scala.inline
+    def setMinEndDate(value: String): Self = this.set("minEndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinEndDate: Self = this.set("minEndDate", js.undefined)
+    @scala.inline
+    def setMinStartDate(value: String): Self = this.set("minStartDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinStartDate: Self = this.set("minStartDate", js.undefined)
+    @scala.inline
+    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPaymentSource(value: String): Self = this.set("paymentSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentSource: Self = this.set("paymentSource", js.undefined)
+    @scala.inline
+    def setPlacementStrategyIds(value: String): Self = this.set("placementStrategyIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementStrategyIds: Self = this.set("placementStrategyIds", js.undefined)
+    @scala.inline
+    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    @scala.inline
+    def setPricingTypes(value: String): Self = this.set("pricingTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingTypes: Self = this.set("pricingTypes", js.undefined)
+    @scala.inline
+    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    @scala.inline
+    def setSearchString(value: String): Self = this.set("searchString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchString: Self = this.set("searchString", js.undefined)
+    @scala.inline
+    def setSiteIds(value: String): Self = this.set("siteIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteIds: Self = this.set("siteIds", js.undefined)
+    @scala.inline
+    def setSizeIds(value: String): Self = this.set("sizeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeIds: Self = this.set("sizeIds", js.undefined)
+    @scala.inline
+    def setSortField(value: String): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortField: Self = this.set("sortField", js.undefined)
+    @scala.inline
+    def setSortOrder(value: String): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+    @scala.inline
+    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIp: Self = this.set("userIp", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait ListAliasesInput extends js.Object {
 
 object ListAliasesInput {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
-    Name: NonEmptyString = null,
-    NextToken: NonEmptyString = null,
-    RoutingStrategyType: RoutingStrategyType = null
-  ): ListAliasesInput = {
+  def apply(): ListAliasesInput = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RoutingStrategyType != null) __obj.updateDynamic("RoutingStrategyType")(RoutingStrategyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAliasesInput]
   }
+  @scala.inline
+  implicit class ListAliasesInputOps[Self <: ListAliasesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: PositiveInteger): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonEmptyString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRoutingStrategyType(value: RoutingStrategyType): Self = this.set("RoutingStrategyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutingStrategyType: Self = this.set("RoutingStrategyType", js.undefined)
+  }
+  
 }
 

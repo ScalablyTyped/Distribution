@@ -4,11 +4,9 @@ import typings.rxjs.connectableObservableMod.ConnectableObservable
 import typings.rxjs.internalObservableMod.Observable
 import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subjectMod.Subject
-import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.ObservedValueOf
 import typings.rxjs.typesMod.OperatorFunction
-import typings.rxjs.typesMod.TeardownLogic
 import typings.rxjs.typesMod.UnaryFunction
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -25,8 +23,6 @@ object multicastMod extends js.Object {
     ) = this()
     var selector: js.Any = js.native
     var subjectFactory: js.Any = js.native
-    /* CompleteClass */
-    override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
   }
   
   def multicast[T](subjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native

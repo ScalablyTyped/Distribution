@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   * In order to be used with the Sys.Observer class, an object must be an object, array, or DOM element.
   * @see {@link http://msdn.microsoft.com/en-us/library/dd393710(v=vs.100).aspx}
   */
+@js.native
 trait Observer extends js.Object
 

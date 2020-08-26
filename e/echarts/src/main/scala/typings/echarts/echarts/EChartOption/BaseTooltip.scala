@@ -1,30 +1,34 @@
 package typings.echarts.echarts.EChartOption
 
+import typings.echarts.echarts.EChartOption.Tooltip.Format
 import typings.echarts.echarts.EChartOption.Tooltip.Formatter
+import typings.echarts.echarts.EChartOption.Tooltip.Position.Obj
 import typings.echarts.echarts.EChartOption.Tooltip.Position.Type
+import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaseTooltip extends js.Object {
   /**
     * The background color of tooltip's floating layer.
     *
     * @default 'rgba(50, 50, 50, 0.7)'
     */
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  var backgroundColor: js.UndefOr[String] = js.native
   /**
     * The border color of tooltip's floating layer.
     *
     * @default '#333'
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /**
     * The border width of tooltip's floating layer.
     *
     * @default 0
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * Extra CSS style for floating layer.
     * The following is an example for adding shadow.
@@ -32,7 +36,7 @@ trait BaseTooltip extends js.Object {
     * @example
     * extraCssText: 'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);'
     */
-  var extraCssText: js.UndefOr[String] = js.undefined
+  var extraCssText: js.UndefOr[String] = js.native
   /**
     * The content formatter of tooltip's floating layer
     * which supports string template and callback function.
@@ -97,7 +101,7 @@ trait BaseTooltip extends js.Object {
     * }
     * ```
     */
-  var formatter: js.UndefOr[String | Formatter] = js.undefined
+  var formatter: js.UndefOr[String | Formatter] = js.native
   /**
     * The floating layer of tooltip space around content.
     * The unit is px. Default values for each position are 5.
@@ -119,7 +123,7 @@ trait BaseTooltip extends js.Object {
     *
     * @default 5
     */
-  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.native
   /**
     * The position of the tooltip's floating layer,
     * which would follow the position of mouse by default.
@@ -161,35 +165,75 @@ trait BaseTooltip extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#tooltip.position
     */
-  var position: js.UndefOr[Type] = js.undefined
+  var position: js.UndefOr[Type] = js.native
   /**
     * The text style of tooltip's floating layer.
     */
-  var textStyle: js.UndefOr[BaseTextStyle] = js.undefined
+  var textStyle: js.UndefOr[BaseTextStyle] = js.native
 }
 
 object BaseTooltip {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    borderColor: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    extraCssText: String = null,
-    formatter: String | Formatter = null,
-    padding: Double | js.Array[Double] = null,
-    position: Type = null,
-    textStyle: BaseTextStyle = null
-  ): BaseTooltip = {
+  def apply(): BaseTooltip = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (extraCssText != null) __obj.updateDynamic("extraCssText")(extraCssText.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseTooltip]
   }
+  @scala.inline
+  implicit class BaseTooltipOps[Self <: BaseTooltip] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setExtraCssText(value: String): Self = this.set("extraCssText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraCssText: Self = this.set("extraCssText", js.undefined)
+    @scala.inline
+    def setFormatterFunction3(
+      value: (/* params */ Format | js.Array[Format], /* ticket */ String, /* callback */ js.Function2[/* ticket */ String, /* html */ String, Unit]) => String
+    ): Self = this.set("formatter", js.Any.fromFunction3(value))
+    @scala.inline
+    def setFormatter(value: String | Formatter): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
+    @scala.inline
+    def setPadding(value: Double | js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPositionFunction5(
+      value: (/* point */ js.Array[Double | String], /* params */ js.Object | js.Array[js.Object], /* element */ HTMLElement, /* rect */ js.Object, /* size */ js.Object) => (js.Array[Double | String]) | Obj
+    ): Self = this.set("position", js.Any.fromFunction5(value))
+    @scala.inline
+    def setPositionVarargs(value: (Double | String)*): Self = this.set("position", js.Array(value :_*))
+    @scala.inline
+    def setPosition(value: Type): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTextStyle(value: BaseTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+  }
+  
 }
 

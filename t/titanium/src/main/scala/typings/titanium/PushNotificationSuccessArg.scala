@@ -8,33 +8,44 @@ import scala.scalajs.js.annotation._
   * A simple object passed to the
   * [registerForPushNotifications](Titanium.Network.registerForPushNotifications) success callback.
   */
+@js.native
 trait PushNotificationSuccessArg extends SuccessResponse {
   /**
     * The device token which this device was registered for.
     */
-  var deviceToken: js.UndefOr[java.lang.String] = js.undefined
+  var deviceToken: js.UndefOr[java.lang.String] = js.native
   /**
     * The value of this string is always "remote".
     */
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.native
 }
 
 object PushNotificationSuccessArg {
   @scala.inline
-  def apply(
-    code: js.UndefOr[Double] = js.undefined,
-    deviceToken: java.lang.String = null,
-    error: java.lang.String = null,
-    success: js.UndefOr[Boolean] = js.undefined,
-    `type`: java.lang.String = null
-  ): PushNotificationSuccessArg = {
+  def apply(): PushNotificationSuccessArg = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (deviceToken != null) __obj.updateDynamic("deviceToken")(deviceToken.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationSuccessArg]
   }
+  @scala.inline
+  implicit class PushNotificationSuccessArgOps[Self <: PushNotificationSuccessArg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceToken(value: java.lang.String): Self = this.set("deviceToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceToken: Self = this.set("deviceToken", js.undefined)
+    @scala.inline
+    def setType(value: java.lang.String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

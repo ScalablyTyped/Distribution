@@ -12,7 +12,7 @@ Fast polyfill for TextEncoder and TextDecoder, only supports utf-8
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 37629296 |
+| # downloads        | 41843441 |
 | # stars            | 0 |
 
 ## Links

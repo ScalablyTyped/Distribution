@@ -12,7 +12,7 @@ The lodash method `_.some` exported as a module.
 | Keywords           | lodash-modularized, some |
 | # releases         | 0 |
 | # dependents       | 95 |
-| # downloads        | 70240292 |
+| # downloads        | 70514516 |
 | # stars            | 0 |
 
 ## Links

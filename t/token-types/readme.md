@@ -10,9 +10,9 @@ Common token types for decoding and encoding numeric and string values
 | ------------------ | :-------------: |
 | Full name          | token-types |
 | Keywords           | token, integer, unsigned, numeric, float, IEEE, 754, strtok3 |
-| # releases         | 17 |
-| # dependents       | 2 |
-| # downloads        | 419461 |
+| # releases         | 15 |
+| # dependents       | 3 |
+| # downloads        | 2051936 |
 | # stars            | 0 |
 
 ## Links

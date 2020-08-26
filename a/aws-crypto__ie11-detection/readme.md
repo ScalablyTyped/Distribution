@@ -10,9 +10,9 @@ Provides functions and types for detecting if the host environment is IE11
 | ------------------ | :-------------: |
 | Full name          | @aws-crypto/ie11-detection |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 3 |
-| # downloads        | 6693 |
+| # downloads        | 9186 |
 | # stars            | 0 |
 
 ## Links

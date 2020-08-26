@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   * of the range.
   * @see com.sun.star.sheet.DataPilotField
   */
+@js.native
 trait DataPilotFields
   extends XIndexAccess
      with XEnumerationAccess

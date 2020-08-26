@@ -47,16 +47,45 @@ object PostContentRequest {
     botName: BotName,
     contentType: HttpContentType,
     inputStream: BlobStream,
-    userId: UserId,
-    accept: Accept = null,
-    requestAttributes: AttributesString = null,
-    sessionAttributes: AttributesString = null
+    userId: UserId
   ): PostContentRequest = {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any], inputStream = inputStream.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes.asInstanceOf[js.Any])
-    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostContentRequest]
   }
+  @scala.inline
+  implicit class PostContentRequestOps[Self <: PostContentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: HttpContentType): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputStream(value: BlobStream): Self = this.set("inputStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccept(value: Accept): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setRequestAttributes(value: AttributesString): Self = this.set("requestAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestAttributes: Self = this.set("requestAttributes", js.undefined)
+    @scala.inline
+    def setSessionAttributes(value: AttributesString): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+  }
+  
 }
 

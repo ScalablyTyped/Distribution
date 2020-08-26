@@ -15,6 +15,7 @@ object mod extends js.Object {
   class RRule ()
     extends typings.rrule.rruleMod.default {
     def this(options: PartialOptions) = this()
+    def this(options: js.UndefOr[scala.Nothing], noCache: Boolean) = this()
     def this(options: PartialOptions, noCache: Boolean) = this()
   }
   
@@ -41,6 +42,7 @@ object mod extends js.Object {
   class default ()
     extends typings.rrule.rruleMod.default {
     def this(options: PartialOptions) = this()
+    def this(options: js.UndefOr[scala.Nothing], noCache: Boolean) = this()
     def this(options: PartialOptions, noCache: Boolean) = this()
   }
   

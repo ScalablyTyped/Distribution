@@ -35,18 +35,42 @@ trait SchemaDownloadRequest extends js.Object {
 
 object SchemaDownloadRequest {
   @scala.inline
-  def apply(
-    fileTypes: js.Array[String] = null,
-    filterIds: js.Array[String] = null,
-    filterType: String = null,
-    version: String = null
-  ): SchemaDownloadRequest = {
+  def apply(): SchemaDownloadRequest = {
     val __obj = js.Dynamic.literal()
-    if (fileTypes != null) __obj.updateDynamic("fileTypes")(fileTypes.asInstanceOf[js.Any])
-    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDownloadRequest]
   }
+  @scala.inline
+  implicit class SchemaDownloadRequestOps[Self <: SchemaDownloadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileTypesVarargs(value: String*): Self = this.set("fileTypes", js.Array(value :_*))
+    @scala.inline
+    def setFileTypes(value: js.Array[String]): Self = this.set("fileTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileTypes: Self = this.set("fileTypes", js.undefined)
+    @scala.inline
+    def setFilterIdsVarargs(value: String*): Self = this.set("filterIds", js.Array(value :_*))
+    @scala.inline
+    def setFilterIds(value: js.Array[String]): Self = this.set("filterIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterIds: Self = this.set("filterIds", js.undefined)
+    @scala.inline
+    def setFilterType(value: String): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

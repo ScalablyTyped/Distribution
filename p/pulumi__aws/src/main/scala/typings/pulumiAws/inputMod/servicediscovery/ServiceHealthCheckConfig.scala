@@ -23,16 +23,34 @@ trait ServiceHealthCheckConfig extends js.Object {
 
 object ServiceHealthCheckConfig {
   @scala.inline
-  def apply(
-    failureThreshold: Input[Double] = null,
-    resourcePath: Input[String] = null,
-    `type`: Input[String] = null
-  ): ServiceHealthCheckConfig = {
+  def apply(): ServiceHealthCheckConfig = {
     val __obj = js.Dynamic.literal()
-    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
-    if (resourcePath != null) __obj.updateDynamic("resourcePath")(resourcePath.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceHealthCheckConfig]
   }
+  @scala.inline
+  implicit class ServiceHealthCheckConfigOps[Self <: ServiceHealthCheckConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureThreshold(value: Input[Double]): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    @scala.inline
+    def setResourcePath(value: Input[String]): Self = this.set("resourcePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcePath: Self = this.set("resourcePath", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

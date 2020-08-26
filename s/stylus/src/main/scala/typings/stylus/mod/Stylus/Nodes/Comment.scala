@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Comment extends Node {
-  var `inline`: scala.Boolean
-  var str: java.lang.String
-  var suppress: scala.Boolean
+  var `inline`: scala.Boolean = js.native
+  var str: java.lang.String = js.native
+  var suppress: scala.Boolean = js.native
 }
 
 object Comment {
@@ -35,5 +36,24 @@ object Comment {
     __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
+  @scala.inline
+  implicit class CommentOps[Self <: Comment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInline(value: scala.Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStr(value: java.lang.String): Self = this.set("str", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSuppress(value: scala.Boolean): Self = this.set("suppress", value.asInstanceOf[js.Any])
+  }
+  
 }
 

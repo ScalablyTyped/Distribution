@@ -59,6 +59,7 @@ class ResourceCseSiterestrict protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSearch] = js.native
   def list(callback: BodyResponseCallback[SchemaSearch]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearch] = js.native
   def list(params: ParamsResourceCseSiterestrictList): GaxiosPromise[SchemaSearch] = js.native
   def list(params: ParamsResourceCseSiterestrictList, callback: BodyResponseCallback[SchemaSearch]): Unit = js.native
   def list(

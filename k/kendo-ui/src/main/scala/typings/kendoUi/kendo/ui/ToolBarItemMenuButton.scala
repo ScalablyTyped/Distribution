@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToolBarItemMenuButton extends js.Object {
-  var attributes: js.UndefOr[js.Any] = js.undefined
-  var enable: js.UndefOr[Boolean] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var imageUrl: js.UndefOr[String] = js.undefined
-  var spriteCssClass: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var attributes: js.UndefOr[js.Any] = js.native
+  var enable: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.native
+  var spriteCssClass: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object ToolBarItemMenuButton {
   @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    id: String = null,
-    imageUrl: String = null,
-    spriteCssClass: String = null,
-    text: String = null,
-    url: String = null
-  ): ToolBarItemMenuButton = {
+  def apply(): ToolBarItemMenuButton = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarItemMenuButton]
   }
+  @scala.inline
+  implicit class ToolBarItemMenuButtonOps[Self <: ToolBarItemMenuButton] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: js.Any): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setSpriteCssClass(value: String): Self = this.set("spriteCssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpriteCssClass: Self = this.set("spriteCssClass", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

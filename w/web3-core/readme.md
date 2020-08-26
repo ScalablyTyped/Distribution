@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-core
 
-Typings are for version 1.2.9
+Typings are for version 1.2.11
 
 ## Library description:
 Web3 core tools for sub packages. This is an internal package.
@@ -10,9 +10,9 @@ Web3 core tools for sub packages. This is an internal package.
 | ------------------ | :-------------: |
 | Full name          | web3-core |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 72 |
-| # downloads        | 4317917 |
+| # releases         | 35 |
+| # dependents       | 73 |
+| # downloads        | 4389055 |
 | # stars            | 0 |
 
 ## Links

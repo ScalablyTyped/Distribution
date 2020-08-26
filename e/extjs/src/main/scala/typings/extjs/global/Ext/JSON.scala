@@ -19,6 +19,7 @@ object JSON extends js.Object {
     * @returns Object The resulting object
     */
   def decode(): js.Any = js.native
+  def decode(json: js.UndefOr[scala.Nothing], safe: Boolean): js.Any = js.native
   def decode(json: java.lang.String): js.Any = js.native
   def decode(json: java.lang.String, safe: Boolean): js.Any = js.native
   /** [Method] Encodes an Object Array or other value

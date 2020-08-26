@@ -31,6 +31,7 @@ object loggersMod extends js.Object {
     def hasErrors(): Boolean = js.native
     def hasWarnings(): Boolean = js.native
     def log(message: String): Unit = js.native
+    def log(message: String, level: js.UndefOr[scala.Nothing], newLine: Boolean): Unit = js.native
     def log(message: String, level: LogLevel): Unit = js.native
     def log(message: String, level: LogLevel, newLine: Boolean): Unit = js.native
     def resetErrors(): Unit = js.native

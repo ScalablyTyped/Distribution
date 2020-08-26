@@ -167,40 +167,38 @@ trait Form_ extends js.Object {
     */
   def apply(behavior: `validate form`): JQuery = js.native
   def apply(behavior: destroy): JQuery = js.native
-  def apply(behavior: setting, name: `inline`): Boolean = js.native
+  def apply(behavior: setting, name: `inline`, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: `inline`, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: className): ClassNameSettings = js.native
   def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def apply(behavior: setting, name: debug): Boolean = js.native
+  def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: defaults): StringDictionary[Field] = js.native
+  def apply(behavior: setting, name: defaults, value: js.UndefOr[scala.Nothing]): StringDictionary[Field] = js.native
   def apply(behavior: setting, name: defaults, value: StringDictionary[Field]): JQuery = js.native
-  def apply(behavior: setting, name: delay): Boolean = js.native
+  def apply(behavior: setting, name: delay, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: delay, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: duration): Double = js.native
+  def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def apply(behavior: setting, name: error): ErrorSettings = js.native
+  def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
   def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def apply(behavior: setting, name: fields): StringDictionary[String | js.Array[String] | Field] = js.native
+  def apply(behavior: setting, name: fields, value: js.UndefOr[scala.Nothing]): StringDictionary[String | js.Array[String] | Field] = js.native
   def apply(behavior: setting, name: fields, value: StringDictionary[String | js.Array[String] | Field]): JQuery = js.native
-  def apply(behavior: setting, name: keyboardShortcuts): Boolean = js.native
+  def apply(behavior: setting, name: keyboardShortcuts, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: metadata): MetadataSettings = js.native
+  def apply(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
   def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def apply(behavior: setting, name: name): String = js.native
-  def apply(behavior: setting, name: namespace): String = js.native
+  def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: name, value: String): JQuery = js.native
-  def apply(behavior: setting, name: on): submit | blur | change = js.native
-  def apply(behavior: setting, name: onFailure): js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit] = js.native
+  def apply(behavior: setting, name: onFailure, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit] = js.native
   def apply(
     behavior: setting,
     name: onFailure,
     value: js.ThisFunction2[/* this */ JQuery, /* formErrors */ js.Array[String], /* fields */ js.Any, Unit]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onInvalid): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onInvalid, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def apply(behavior: setting, name: onInvalid, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def apply(behavior: setting, name: onSuccess): js.ThisFunction2[
+  def apply(behavior: setting, name: onSuccess, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[
     /* this */ JQuery, 
     /* event */ TriggeredEvent[HTMLElement, _, _, _], 
     /* fields */ js.Any, 
@@ -216,34 +214,31 @@ trait Form_ extends js.Object {
       Unit
     ]
   ): JQuery = js.native
-  def apply(behavior: setting, name: onValid): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def apply(behavior: setting, name: onValid, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def apply(behavior: setting, name: onValid, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
+  def apply(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): submit | blur | change = js.native
   def apply(behavior: setting, name: on, value: blur): JQuery = js.native
   def apply(behavior: setting, name: on, value: change): JQuery = js.native
   def apply(behavior: setting, name: on, value: submit): JQuery = js.native
-  def apply(behavior: setting, name: performance): Boolean = js.native
+  def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: prompt): PromptSettings = js.native
-  def apply(behavior: setting, name: prompt, value: PromptSettings): JQuery = js.native
-  def apply(behavior: setting, name: revalidate): Boolean = js.native
+  def apply(behavior: setting, name: prompt, value: js.UndefOr[scala.Nothing]): PromptSettings = js.native
+  def apply(behavior: setting, name: revalidate, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: revalidate, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: rules): StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]] = js.native
+  def apply(behavior: setting, name: rules, value: js.UndefOr[scala.Nothing]): StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]] = js.native
   def apply(
     behavior: setting,
     name: rules,
     value: StringDictionary[js.ThisFunction1[/* this */ HTMLElement, /* repeated */ js.Any, Boolean]]
   ): JQuery = js.native
-  def apply(behavior: setting, name: selector): SelectorSettings = js.native
   def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def apply(behavior: setting, name: silent): Boolean = js.native
+  def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def apply(behavior: setting, name: templates): TemplatesSettings = js.native
   def apply(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-  def apply(behavior: setting, name: text): TextSettings = js.native
   def apply(behavior: setting, name: text, value: TextSettings): JQuery = js.native
-  def apply(behavior: setting, name: transition): String = js.native
+  def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
   def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-  def apply(behavior: setting, name: verbose): Boolean = js.native
+  def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def apply(behavior: setting, value: FormSettings): JQuery = js.native
   /**

@@ -18,11 +18,32 @@ trait Origination extends js.Object {
 
 object Origination {
   @scala.inline
-  def apply(Disabled: js.UndefOr[Boolean] = js.undefined, Routes: OriginationRouteList = null): Origination = {
+  def apply(): Origination = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Disabled)) __obj.updateDynamic("Disabled")(Disabled.get.asInstanceOf[js.Any])
-    if (Routes != null) __obj.updateDynamic("Routes")(Routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Origination]
   }
+  @scala.inline
+  implicit class OriginationOps[Self <: Origination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("Disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("Disabled", js.undefined)
+    @scala.inline
+    def setRoutesVarargs(value: OriginationRoute*): Self = this.set("Routes", js.Array(value :_*))
+    @scala.inline
+    def setRoutes(value: OriginationRouteList): Self = this.set("Routes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoutes: Self = this.set("Routes", js.undefined)
+  }
+  
 }
 

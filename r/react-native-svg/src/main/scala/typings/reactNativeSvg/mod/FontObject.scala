@@ -4,57 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FontObject extends js.Object {
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontFeatureSettings: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[NumberProp] = js.undefined
-  var fontStretch: js.UndefOr[FontStretch] = js.undefined
-  var fontStyle: js.UndefOr[FontStyle] = js.undefined
-  var fontVariant: js.UndefOr[FontVariant] = js.undefined
-  var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.undefined
-  var fontVariationSettings: js.UndefOr[String] = js.undefined
-  var fontWeight: js.UndefOr[FontWeight] = js.undefined
-  var kerning: js.UndefOr[NumberProp] = js.undefined
-  var letterSpacing: js.UndefOr[NumberProp] = js.undefined
-  var textAnchor: js.UndefOr[TextAnchor] = js.undefined
-  var textDecoration: js.UndefOr[TextDecoration] = js.undefined
-  var wordSpacing: js.UndefOr[NumberProp] = js.undefined
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontFeatureSettings: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[NumberProp] = js.native
+  var fontStretch: js.UndefOr[FontStretch] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontVariant: js.UndefOr[FontVariant] = js.native
+  var fontVariantLigatures: js.UndefOr[FontVariantLigatures] = js.native
+  var fontVariationSettings: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var kerning: js.UndefOr[NumberProp] = js.native
+  var letterSpacing: js.UndefOr[NumberProp] = js.native
+  var textAnchor: js.UndefOr[TextAnchor] = js.native
+  var textDecoration: js.UndefOr[TextDecoration] = js.native
+  var wordSpacing: js.UndefOr[NumberProp] = js.native
 }
 
 object FontObject {
   @scala.inline
-  def apply(
-    fontFamily: String = null,
-    fontFeatureSettings: String = null,
-    fontSize: NumberProp = null,
-    fontStretch: FontStretch = null,
-    fontStyle: FontStyle = null,
-    fontVariant: FontVariant = null,
-    fontVariantLigatures: FontVariantLigatures = null,
-    fontVariationSettings: String = null,
-    fontWeight: FontWeight = null,
-    kerning: NumberProp = null,
-    letterSpacing: NumberProp = null,
-    textAnchor: TextAnchor = null,
-    textDecoration: TextDecoration = null,
-    wordSpacing: NumberProp = null
-  ): FontObject = {
+  def apply(): FontObject = {
     val __obj = js.Dynamic.literal()
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontVariantLigatures != null) __obj.updateDynamic("fontVariantLigatures")(fontVariantLigatures.asInstanceOf[js.Any])
-    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontObject]
   }
+  @scala.inline
+  implicit class FontObjectOps[Self <: FontObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontFeatureSettings(value: String): Self = this.set("fontFeatureSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFeatureSettings: Self = this.set("fontFeatureSettings", js.undefined)
+    @scala.inline
+    def setFontSize(value: NumberProp): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStretch(value: FontStretch): Self = this.set("fontStretch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStretch: Self = this.set("fontStretch", js.undefined)
+    @scala.inline
+    def setFontStyle(value: FontStyle): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setFontVariant(value: FontVariant): Self = this.set("fontVariant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontVariant: Self = this.set("fontVariant", js.undefined)
+    @scala.inline
+    def setFontVariantLigatures(value: FontVariantLigatures): Self = this.set("fontVariantLigatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontVariantLigatures: Self = this.set("fontVariantLigatures", js.undefined)
+    @scala.inline
+    def setFontVariationSettings(value: String): Self = this.set("fontVariationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontVariationSettings: Self = this.set("fontVariationSettings", js.undefined)
+    @scala.inline
+    def setFontWeight(value: FontWeight): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setKerning(value: NumberProp): Self = this.set("kerning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKerning: Self = this.set("kerning", js.undefined)
+    @scala.inline
+    def setLetterSpacing(value: NumberProp): Self = this.set("letterSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLetterSpacing: Self = this.set("letterSpacing", js.undefined)
+    @scala.inline
+    def setTextAnchor(value: TextAnchor): Self = this.set("textAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAnchor: Self = this.set("textAnchor", js.undefined)
+    @scala.inline
+    def setTextDecoration(value: TextDecoration): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    @scala.inline
+    def setWordSpacing(value: NumberProp): Self = this.set("wordSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWordSpacing: Self = this.set("wordSpacing", js.undefined)
+  }
+  
 }
 

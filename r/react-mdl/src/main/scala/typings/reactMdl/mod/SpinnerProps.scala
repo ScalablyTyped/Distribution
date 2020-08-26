@@ -6,24 +6,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpinnerProps
   extends AllHTMLAttributes[js.Any]
      with ClassAttributes[js.Any] {
-  var singleColor: js.UndefOr[Boolean] = js.undefined
+  var singleColor: js.UndefOr[Boolean] = js.native
 }
 
 object SpinnerProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    singleColor: js.UndefOr[Boolean] = js.undefined
-  ): SpinnerProps = {
+  def apply(): SpinnerProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(singleColor)) __obj.updateDynamic("singleColor")(singleColor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerProps]
   }
+  @scala.inline
+  implicit class SpinnerPropsOps[Self <: SpinnerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSingleColor(value: Boolean): Self = this.set("singleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleColor: Self = this.set("singleColor", js.undefined)
+  }
+  
 }
 

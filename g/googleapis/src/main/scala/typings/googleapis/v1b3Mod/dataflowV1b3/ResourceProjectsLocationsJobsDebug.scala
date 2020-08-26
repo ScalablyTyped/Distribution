@@ -30,6 +30,7 @@ class ResourceProjectsLocationsJobsDebug protected () extends js.Object {
     */
   def getConfig(): GaxiosPromise[SchemaGetDebugConfigResponse] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaGetDebugConfigResponse]): Unit = js.native
+  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetDebugConfigResponse] = js.native
   def getConfig(params: ParamsResourceProjectsLocationsJobsDebugGetconfig): GaxiosPromise[SchemaGetDebugConfigResponse] = js.native
   def getConfig(
     params: ParamsResourceProjectsLocationsJobsDebugGetconfig,
@@ -63,6 +64,7 @@ class ResourceProjectsLocationsJobsDebug protected () extends js.Object {
     */
   def sendCapture(): GaxiosPromise[SchemaSendDebugCaptureResponse] = js.native
   def sendCapture(callback: BodyResponseCallback[SchemaSendDebugCaptureResponse]): Unit = js.native
+  def sendCapture(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendDebugCaptureResponse] = js.native
   def sendCapture(params: ParamsResourceProjectsLocationsJobsDebugSendcapture): GaxiosPromise[SchemaSendDebugCaptureResponse] = js.native
   def sendCapture(
     params: ParamsResourceProjectsLocationsJobsDebugSendcapture,

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/splitpanel", "SplitPanel.setStretch")
+@JSImport("@lumino/widgets/types/splitpanel", "SplitPanel.setStretch")
 @js.native
 object setStretch extends js.Object {
   /**

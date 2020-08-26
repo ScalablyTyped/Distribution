@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/coreutils/lib/random", JSImport.Namespace)
+@JSImport("@lumino/coreutils/types/random", JSImport.Namespace)
 @js.native
 object randomMod extends js.Object {
   @js.native

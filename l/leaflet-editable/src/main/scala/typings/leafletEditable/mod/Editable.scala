@@ -32,6 +32,7 @@ trait Editable extends js.Object {
     * it will be passed to the marker class constructor.
     */
   def startMarker(): Marker = js.native
+  def startMarker(latLng: js.UndefOr[scala.Nothing], options: MarkerOptions): Marker = js.native
   def startMarker(latLng: LatLng_): Marker = js.native
   def startMarker(latLng: LatLng_, options: MarkerOptions): Marker = js.native
   /**
@@ -39,6 +40,7 @@ trait Editable extends js.Object {
     * click. If options is given, it will be passed to the polygon class constructor.
     */
   def startPolygon(): Polygon = js.native
+  def startPolygon(latLng: js.UndefOr[scala.Nothing], options: PolylineOptions): Polygon = js.native
   def startPolygon(latLng: LatLng_): Polygon = js.native
   def startPolygon(latLng: LatLng_, options: PolylineOptions): Polygon = js.native
   /**
@@ -46,6 +48,7 @@ trait Editable extends js.Object {
     * click. If options is given, it will be passed to the polyline class constructor.
     */
   def startPolyline(): Polyline = js.native
+  def startPolyline(latLng: js.UndefOr[scala.Nothing], options: PolylineOptions): Polyline = js.native
   def startPolyline(latLng: LatLng_): Polyline = js.native
   def startPolyline(latLng: LatLng_, options: PolylineOptions): Polyline = js.native
   /**

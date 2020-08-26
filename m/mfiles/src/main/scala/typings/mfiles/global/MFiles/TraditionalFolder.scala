@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.TraditionalFolder")
 @js.native
-class TraditionalFolder () extends ITraditionalFolder {
-  /* CompleteClass */
-  override val ID: Double = js.native
-  /* CompleteClass */
-  override val Name: String = js.native
-}
+class TraditionalFolder () extends ITraditionalFolder
 
 @JSGlobal("MFiles.TraditionalFolder")
 @js.native

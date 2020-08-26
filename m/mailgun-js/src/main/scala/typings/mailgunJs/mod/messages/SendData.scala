@@ -12,98 +12,168 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SendData extends js.Object {
-  var `amp-html`: js.UndefOr[String] = js.undefined
-  var attachment: js.UndefOr[AttachmentData | js.Array[AttachmentData]] = js.undefined
-  var bcc: js.UndefOr[String | js.Array[String]] = js.undefined
-  var cc: js.UndefOr[String | js.Array[String]] = js.undefined
-  var from: js.UndefOr[String] = js.undefined
+  var `amp-html`: js.UndefOr[String] = js.native
+  var attachment: js.UndefOr[AttachmentData | js.Array[AttachmentData]] = js.native
+  var bcc: js.UndefOr[String | js.Array[String]] = js.native
+  var cc: js.UndefOr[String | js.Array[String]] = js.native
+  var from: js.UndefOr[String] = js.native
   @JSName("h:Importance")
-  var hColonImportance: js.UndefOr[String] = js.undefined
+  var hColonImportance: js.UndefOr[String] = js.native
   @JSName("h:In-Reply-To")
-  var `hColonIn-Reply-To`: js.UndefOr[String] = js.undefined
+  var `hColonIn-Reply-To`: js.UndefOr[String] = js.native
   @JSName("h:References")
-  var hColonReferences: js.UndefOr[String] = js.undefined
+  var hColonReferences: js.UndefOr[String] = js.native
   // Standard email headers
   @JSName("h:Reply-To")
-  var `hColonReply-To`: js.UndefOr[String] = js.undefined
-  var html: js.UndefOr[String] = js.undefined
-  var `inline`: js.UndefOr[AttachmentData | js.Array[AttachmentData]] = js.undefined
+  var `hColonReply-To`: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.native
+  var `inline`: js.UndefOr[AttachmentData | js.Array[AttachmentData]] = js.native
   @JSName("o:deliverytime")
-  var oColondeliverytime: js.UndefOr[String] = js.undefined
+  var oColondeliverytime: js.UndefOr[String] = js.native
   @JSName("o:dkim")
-  var oColondkim: js.UndefOr[yes | no | Boolean] = js.undefined
+  var oColondkim: js.UndefOr[yes | no | Boolean] = js.native
   @JSName("o:require-tls")
-  var `oColonrequire-tls`: js.UndefOr[yes | no | True | False] = js.undefined
+  var `oColonrequire-tls`: js.UndefOr[yes | no | True | False] = js.native
   @JSName("o:skip-verification")
-  var `oColonskip-verification`: js.UndefOr[yes | no | True | False] = js.undefined
+  var `oColonskip-verification`: js.UndefOr[yes | no | True | False] = js.native
   @JSName("o:tag")
-  var oColontag: js.UndefOr[String | js.Array[String]] = js.undefined
+  var oColontag: js.UndefOr[String | js.Array[String]] = js.native
   // Mailgun options
   @JSName("o:testmode")
-  var oColontestmode: js.UndefOr[yes | no | true_ | false_ | True | False] = js.undefined
+  var oColontestmode: js.UndefOr[yes | no | true_ | false_ | True | False] = js.native
   @JSName("o:tracking")
-  var oColontracking: js.UndefOr[yes | no | Boolean] = js.undefined
+  var oColontracking: js.UndefOr[yes | no | Boolean] = js.native
   @JSName("o:tracking-clicks")
-  var `oColontracking-clicks`: js.UndefOr[yes | no | htmlonly | Boolean] = js.undefined
+  var `oColontracking-clicks`: js.UndefOr[yes | no | htmlonly | Boolean] = js.native
   @JSName("o:tracking-opens")
-  var `oColontracking-opens`: js.UndefOr[yes | no | Boolean] = js.undefined
-  var subject: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var to: String | js.Array[String]
+  var `oColontracking-opens`: js.UndefOr[yes | no | Boolean] = js.native
+  var subject: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var to: String | js.Array[String] = js.native
 }
 
 object SendData {
   @scala.inline
-  def apply(
-    to: String | js.Array[String],
-    `amp-html`: String = null,
-    attachment: AttachmentData | js.Array[AttachmentData] = null,
-    bcc: String | js.Array[String] = null,
-    cc: String | js.Array[String] = null,
-    from: String = null,
-    hColonImportance: String = null,
-    `hColonIn-Reply-To`: String = null,
-    hColonReferences: String = null,
-    `hColonReply-To`: String = null,
-    html: String = null,
-    `inline`: AttachmentData | js.Array[AttachmentData] = null,
-    oColondeliverytime: String = null,
-    oColondkim: yes | no | Boolean = null,
-    `oColonrequire-tls`: yes | no | True | False = null,
-    `oColonskip-verification`: yes | no | True | False = null,
-    oColontag: String | js.Array[String] = null,
-    oColontestmode: yes | no | true_ | false_ | True | False = null,
-    oColontracking: yes | no | Boolean = null,
-    `oColontracking-clicks`: yes | no | htmlonly | Boolean = null,
-    `oColontracking-opens`: yes | no | Boolean = null,
-    subject: String = null,
-    text: String = null
-  ): SendData = {
+  def apply(to: String | js.Array[String]): SendData = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (`amp-html` != null) __obj.updateDynamic("amp-html")(`amp-html`.asInstanceOf[js.Any])
-    if (attachment != null) __obj.updateDynamic("attachment")(attachment.asInstanceOf[js.Any])
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
-    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (hColonImportance != null) __obj.updateDynamic("h:Importance")(hColonImportance.asInstanceOf[js.Any])
-    if (`hColonIn-Reply-To` != null) __obj.updateDynamic("h:In-Reply-To")(`hColonIn-Reply-To`.asInstanceOf[js.Any])
-    if (hColonReferences != null) __obj.updateDynamic("h:References")(hColonReferences.asInstanceOf[js.Any])
-    if (`hColonReply-To` != null) __obj.updateDynamic("h:Reply-To")(`hColonReply-To`.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (oColondeliverytime != null) __obj.updateDynamic("o:deliverytime")(oColondeliverytime.asInstanceOf[js.Any])
-    if (oColondkim != null) __obj.updateDynamic("o:dkim")(oColondkim.asInstanceOf[js.Any])
-    if (`oColonrequire-tls` != null) __obj.updateDynamic("o:require-tls")(`oColonrequire-tls`.asInstanceOf[js.Any])
-    if (`oColonskip-verification` != null) __obj.updateDynamic("o:skip-verification")(`oColonskip-verification`.asInstanceOf[js.Any])
-    if (oColontag != null) __obj.updateDynamic("o:tag")(oColontag.asInstanceOf[js.Any])
-    if (oColontestmode != null) __obj.updateDynamic("o:testmode")(oColontestmode.asInstanceOf[js.Any])
-    if (oColontracking != null) __obj.updateDynamic("o:tracking")(oColontracking.asInstanceOf[js.Any])
-    if (`oColontracking-clicks` != null) __obj.updateDynamic("o:tracking-clicks")(`oColontracking-clicks`.asInstanceOf[js.Any])
-    if (`oColontracking-opens` != null) __obj.updateDynamic("o:tracking-opens")(`oColontracking-opens`.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendData]
   }
+  @scala.inline
+  implicit class SendDataOps[Self <: SendData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setToVarargs(value: String*): Self = this.set("to", js.Array(value :_*))
+    @scala.inline
+    def setTo(value: String | js.Array[String]): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setAmp-html`(value: String): Self = this.set("amp-html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAmp-html`: Self = this.set("amp-html", js.undefined)
+    @scala.inline
+    def setAttachmentVarargs(value: AttachmentData*): Self = this.set("attachment", js.Array(value :_*))
+    @scala.inline
+    def setAttachment(value: AttachmentData | js.Array[AttachmentData]): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    @scala.inline
+    def setBccVarargs(value: String*): Self = this.set("bcc", js.Array(value :_*))
+    @scala.inline
+    def setBcc(value: String | js.Array[String]): Self = this.set("bcc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBcc: Self = this.set("bcc", js.undefined)
+    @scala.inline
+    def setCcVarargs(value: String*): Self = this.set("cc", js.Array(value :_*))
+    @scala.inline
+    def setCc(value: String | js.Array[String]): Self = this.set("cc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCc: Self = this.set("cc", js.undefined)
+    @scala.inline
+    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setHColonImportance(value: String): Self = this.set("h:Importance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHColonImportance: Self = this.set("h:Importance", js.undefined)
+    @scala.inline
+    def `setHColonIn-Reply-To`(value: String): Self = this.set("h:In-Reply-To", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHColonIn-Reply-To`: Self = this.set("h:In-Reply-To", js.undefined)
+    @scala.inline
+    def setHColonReferences(value: String): Self = this.set("h:References", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHColonReferences: Self = this.set("h:References", js.undefined)
+    @scala.inline
+    def `setHColonReply-To`(value: String): Self = this.set("h:Reply-To", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteHColonReply-To`: Self = this.set("h:Reply-To", js.undefined)
+    @scala.inline
+    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setInlineVarargs(value: AttachmentData*): Self = this.set("inline", js.Array(value :_*))
+    @scala.inline
+    def setInline(value: AttachmentData | js.Array[AttachmentData]): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setOColondeliverytime(value: String): Self = this.set("o:deliverytime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOColondeliverytime: Self = this.set("o:deliverytime", js.undefined)
+    @scala.inline
+    def setOColondkim(value: yes | no | Boolean): Self = this.set("o:dkim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOColondkim: Self = this.set("o:dkim", js.undefined)
+    @scala.inline
+    def `setOColonrequire-tls`(value: yes | no | True | False): Self = this.set("o:require-tls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOColonrequire-tls`: Self = this.set("o:require-tls", js.undefined)
+    @scala.inline
+    def `setOColonskip-verification`(value: yes | no | True | False): Self = this.set("o:skip-verification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOColonskip-verification`: Self = this.set("o:skip-verification", js.undefined)
+    @scala.inline
+    def setOColontagVarargs(value: String*): Self = this.set("o:tag", js.Array(value :_*))
+    @scala.inline
+    def setOColontag(value: String | js.Array[String]): Self = this.set("o:tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOColontag: Self = this.set("o:tag", js.undefined)
+    @scala.inline
+    def setOColontestmode(value: yes | no | true_ | false_ | True | False): Self = this.set("o:testmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOColontestmode: Self = this.set("o:testmode", js.undefined)
+    @scala.inline
+    def setOColontracking(value: yes | no | Boolean): Self = this.set("o:tracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOColontracking: Self = this.set("o:tracking", js.undefined)
+    @scala.inline
+    def `setOColontracking-clicks`(value: yes | no | htmlonly | Boolean): Self = this.set("o:tracking-clicks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOColontracking-clicks`: Self = this.set("o:tracking-clicks", js.undefined)
+    @scala.inline
+    def `setOColontracking-opens`(value: yes | no | Boolean): Self = this.set("o:tracking-opens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOColontracking-opens`: Self = this.set("o:tracking-opens", js.undefined)
+    @scala.inline
+    def setSubject(value: String): Self = this.set("subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("subject", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

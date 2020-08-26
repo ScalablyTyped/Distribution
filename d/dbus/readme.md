@@ -12,7 +12,7 @@ A D-Bus binding for Node
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 23 |
-| # downloads        | 44487 |
+| # downloads        | 41997 |
 | # stars            | 2 |
 
 ## Links

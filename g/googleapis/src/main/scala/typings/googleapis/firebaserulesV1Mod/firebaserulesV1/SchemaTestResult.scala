@@ -46,20 +46,48 @@ trait SchemaTestResult extends js.Object {
 
 object SchemaTestResult {
   @scala.inline
-  def apply(
-    debugMessages: js.Array[String] = null,
-    errorPosition: SchemaSourcePosition = null,
-    functionCalls: js.Array[SchemaFunctionCall] = null,
-    state: String = null,
-    visitedExpressions: js.Array[SchemaVisitedExpression] = null
-  ): SchemaTestResult = {
+  def apply(): SchemaTestResult = {
     val __obj = js.Dynamic.literal()
-    if (debugMessages != null) __obj.updateDynamic("debugMessages")(debugMessages.asInstanceOf[js.Any])
-    if (errorPosition != null) __obj.updateDynamic("errorPosition")(errorPosition.asInstanceOf[js.Any])
-    if (functionCalls != null) __obj.updateDynamic("functionCalls")(functionCalls.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (visitedExpressions != null) __obj.updateDynamic("visitedExpressions")(visitedExpressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestResult]
   }
+  @scala.inline
+  implicit class SchemaTestResultOps[Self <: SchemaTestResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebugMessagesVarargs(value: String*): Self = this.set("debugMessages", js.Array(value :_*))
+    @scala.inline
+    def setDebugMessages(value: js.Array[String]): Self = this.set("debugMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugMessages: Self = this.set("debugMessages", js.undefined)
+    @scala.inline
+    def setErrorPosition(value: SchemaSourcePosition): Self = this.set("errorPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorPosition: Self = this.set("errorPosition", js.undefined)
+    @scala.inline
+    def setFunctionCallsVarargs(value: SchemaFunctionCall*): Self = this.set("functionCalls", js.Array(value :_*))
+    @scala.inline
+    def setFunctionCalls(value: js.Array[SchemaFunctionCall]): Self = this.set("functionCalls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionCalls: Self = this.set("functionCalls", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setVisitedExpressionsVarargs(value: SchemaVisitedExpression*): Self = this.set("visitedExpressions", js.Array(value :_*))
+    @scala.inline
+    def setVisitedExpressions(value: js.Array[SchemaVisitedExpression]): Self = this.set("visitedExpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisitedExpressions: Self = this.set("visitedExpressions", js.undefined)
+  }
+  
 }
 

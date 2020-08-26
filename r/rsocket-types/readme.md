@@ -12,7 +12,7 @@ RSocket types
 | Keywords           | - |
 | # releases         | 15 |
 | # dependents       | 13 |
-| # downloads        | 120616 |
+| # downloads        | 137210 |
 | # stars            | 0 |
 
 ## Links

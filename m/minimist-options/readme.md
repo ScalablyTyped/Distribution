@@ -1,7 +1,7 @@
 
 # Scala.js typings for minimist-options
 
-Typings are for version 3.0
+Typings are for version 4.1.0
 
 ## Library description:
 Pretty options for minimist
@@ -24,7 +24,7 @@ Pretty options for minimist
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

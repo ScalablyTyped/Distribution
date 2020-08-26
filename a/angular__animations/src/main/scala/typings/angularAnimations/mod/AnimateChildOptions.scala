@@ -1,26 +1,36 @@
 package typings.angularAnimations.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnimateChildOptions extends AnimationOptions {
-  var duration: js.UndefOr[Double | String] = js.undefined
+  var duration: js.UndefOr[Double | String] = js.native
 }
 
 object AnimateChildOptions {
   @scala.inline
-  def apply(
-    delay: Double | String = null,
-    duration: Double | String = null,
-    params: StringDictionary[js.Any] = null
-  ): AnimateChildOptions = {
+  def apply(): AnimateChildOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimateChildOptions]
   }
+  @scala.inline
+  implicit class AnimateChildOptionsOps[Self <: AnimateChildOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Double | String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+  }
+  
 }
 

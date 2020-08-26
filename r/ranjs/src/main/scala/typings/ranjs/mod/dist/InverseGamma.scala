@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class InverseGamma ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.InverseGamma] {
   def this(alpha: Double) = this()
+  def this(alpha: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(alpha: Double, beta: Double) = this()
 }
 

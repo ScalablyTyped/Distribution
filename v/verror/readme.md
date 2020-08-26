@@ -10,9 +10,9 @@ richer JavaScript errors
 | ------------------ | :-------------: |
 | Full name          | verror |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 572 |
-| # downloads        | 526131177 |
+| # releases         | 1 |
+| # dependents       | 574 |
+| # downloads        | 539690364 |
 | # stars            | 52 |
 
 ## Links

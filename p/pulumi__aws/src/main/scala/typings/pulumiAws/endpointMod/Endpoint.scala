@@ -1,6 +1,9 @@
 package typings.pulumiAws.endpointMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.dms.EndpointElasticsearchSettings
+import typings.pulumiAws.outputMod.dms.EndpointKafkaSettings
+import typings.pulumiAws.outputMod.dms.EndpointKinesisSettings
 import typings.pulumiAws.outputMod.dms.EndpointMongodbSettings
 import typings.pulumiAws.outputMod.dms.EndpointS3Settings
 import typings.pulumiPulumi.mod.CustomResource
@@ -33,6 +36,10 @@ class Endpoint protected () extends CustomResource {
     */
   val databaseName: Output_[js.UndefOr[String]] = js.native
   /**
+    * Configuration block with Elasticsearch settings. Detailed below.
+    */
+  val elasticsearchSettings: Output_[js.UndefOr[EndpointElasticsearchSettings]] = js.native
+  /**
     * The Amazon Resource Name (ARN) for the endpoint.
     */
   val endpointArn: Output_[String] = js.native
@@ -45,7 +52,7 @@ class Endpoint protected () extends CustomResource {
     */
   val endpointType: Output_[String] = js.native
   /**
-    * The type of engine for the endpoint. Can be one of `aurora | azuredb | db2 | docdb | dynamodb | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
+    * The type of engine for the endpoint. Can be one of `aurora | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch | kafka | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
     */
   val engineName: Output_[String] = js.native
   /**
@@ -53,11 +60,19 @@ class Endpoint protected () extends CustomResource {
     */
   val extraConnectionAttributes: Output_[String] = js.native
   /**
+    * Configuration block with Kafka settings. Detailed below.
+    */
+  val kafkaSettings: Output_[js.UndefOr[EndpointKafkaSettings]] = js.native
+  /**
+    * Configuration block with Kinesis settings. Detailed below.
+    */
+  val kinesisSettings: Output_[js.UndefOr[EndpointKinesisSettings]] = js.native
+  /**
     * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kmsKeyArn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
     */
   val kmsKeyArn: Output_[String] = js.native
   /**
-    * Settings for the source MongoDB endpoint. Available settings are `authType` (default: `password`), `authMechanism` (default: `default`), `nestingLevel` (default: `none`), `extractDocId` (default: `false`), `docsToInvestigate` (default: `1000`) and `authSource` (default: `admin`). For more details, see [Using MongoDB as a Source for AWS DMS](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.MongoDB.html).
+    * Configuration block with MongoDB settings. Detailed below.
     */
   val mongodbSettings: Output_[js.UndefOr[EndpointMongodbSettings]] = js.native
   /**
@@ -69,7 +84,7 @@ class Endpoint protected () extends CustomResource {
     */
   val port: Output_[js.UndefOr[Double]] = js.native
   /**
-    * Settings for the target S3 endpoint. Available settings are `serviceAccessRoleArn`, `externalTableDefinition`, `csvRowDelimiter` (default: `\\n`), `csvDelimiter` (default: `,`), `bucketFolder`, `bucketName` and `compressionType` (default: `NONE`). For more details, see [Using Amazon S3 as a Target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html).
+    * Configuration block with S3 settings. Detailed below.
     */
   val s3Settings: Output_[js.UndefOr[EndpointS3Settings]] = js.native
   /**
@@ -85,9 +100,9 @@ class Endpoint protected () extends CustomResource {
     */
   val sslMode: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The user name to be used to login to the endpoint database.
     */
@@ -105,8 +120,10 @@ object Endpoint extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Endpoint = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
   /**

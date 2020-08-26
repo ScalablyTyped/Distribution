@@ -22,10 +22,30 @@ trait DetachInternetGatewayRequest extends js.Object {
 
 object DetachInternetGatewayRequest {
   @scala.inline
-  def apply(InternetGatewayId: InternetGatewayId, VpcId: VpcId, DryRun: js.UndefOr[Boolean] = js.undefined): DetachInternetGatewayRequest = {
+  def apply(InternetGatewayId: InternetGatewayId, VpcId: VpcId): DetachInternetGatewayRequest = {
     val __obj = js.Dynamic.literal(InternetGatewayId = InternetGatewayId.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachInternetGatewayRequest]
   }
+  @scala.inline
+  implicit class DetachInternetGatewayRequestOps[Self <: DetachInternetGatewayRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInternetGatewayId(value: InternetGatewayId): Self = this.set("InternetGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

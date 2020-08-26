@@ -18,10 +18,28 @@ trait DeleteAccessKeyRequest extends js.Object {
 
 object DeleteAccessKeyRequest {
   @scala.inline
-  def apply(AccessKeyId: accessKeyIdType, UserName: existingUserNameType = null): DeleteAccessKeyRequest = {
+  def apply(AccessKeyId: accessKeyIdType): DeleteAccessKeyRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAccessKeyRequest]
   }
+  @scala.inline
+  implicit class DeleteAccessKeyRequestOps[Self <: DeleteAccessKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: accessKeyIdType): Self = this.set("AccessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: existingUserNameType): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+  }
+  
 }
 

@@ -22,14 +22,30 @@ trait DeleteLocalGatewayRouteRequest extends js.Object {
 
 object DeleteLocalGatewayRouteRequest {
   @scala.inline
-  def apply(
-    DestinationCidrBlock: String,
-    LocalGatewayRouteTableId: LocalGatewayRoutetableId,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): DeleteLocalGatewayRouteRequest = {
+  def apply(DestinationCidrBlock: String, LocalGatewayRouteTableId: LocalGatewayRoutetableId): DeleteLocalGatewayRouteRequest = {
     val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLocalGatewayRouteRequest]
   }
+  @scala.inline
+  implicit class DeleteLocalGatewayRouteRequestOps[Self <: DeleteLocalGatewayRouteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: String): Self = this.set("DestinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = this.set("LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

@@ -58,34 +58,72 @@ trait Instance extends js.Object {
 
 object Instance {
   @scala.inline
-  def apply(
-    EbsVolumes: EbsVolumeList = null,
-    Ec2InstanceId: InstanceId = null,
-    Id: InstanceId = null,
-    InstanceFleetId: InstanceFleetId = null,
-    InstanceGroupId: String = null,
-    InstanceType: InstanceType = null,
-    Market: MarketType = null,
-    PrivateDnsName: String = null,
-    PrivateIpAddress: String = null,
-    PublicDnsName: String = null,
-    PublicIpAddress: String = null,
-    Status: InstanceStatus = null
-  ): Instance = {
+  def apply(): Instance = {
     val __obj = js.Dynamic.literal()
-    if (EbsVolumes != null) __obj.updateDynamic("EbsVolumes")(EbsVolumes.asInstanceOf[js.Any])
-    if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InstanceFleetId != null) __obj.updateDynamic("InstanceFleetId")(InstanceFleetId.asInstanceOf[js.Any])
-    if (InstanceGroupId != null) __obj.updateDynamic("InstanceGroupId")(InstanceGroupId.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (Market != null) __obj.updateDynamic("Market")(Market.asInstanceOf[js.Any])
-    if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
-    if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
-    if (PublicDnsName != null) __obj.updateDynamic("PublicDnsName")(PublicDnsName.asInstanceOf[js.Any])
-    if (PublicIpAddress != null) __obj.updateDynamic("PublicIpAddress")(PublicIpAddress.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
+  @scala.inline
+  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEbsVolumesVarargs(value: EbsVolume*): Self = this.set("EbsVolumes", js.Array(value :_*))
+    @scala.inline
+    def setEbsVolumes(value: EbsVolumeList): Self = this.set("EbsVolumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsVolumes: Self = this.set("EbsVolumes", js.undefined)
+    @scala.inline
+    def setEc2InstanceId(value: InstanceId): Self = this.set("Ec2InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceId: Self = this.set("Ec2InstanceId", js.undefined)
+    @scala.inline
+    def setId(value: InstanceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInstanceFleetId(value: InstanceFleetId): Self = this.set("InstanceFleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFleetId: Self = this.set("InstanceFleetId", js.undefined)
+    @scala.inline
+    def setInstanceGroupId(value: String): Self = this.set("InstanceGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroupId: Self = this.set("InstanceGroupId", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setMarket(value: MarketType): Self = this.set("Market", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarket: Self = this.set("Market", js.undefined)
+    @scala.inline
+    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+    @scala.inline
+    def setPublicDnsName(value: String): Self = this.set("PublicDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicDnsName: Self = this.set("PublicDnsName", js.undefined)
+    @scala.inline
+    def setPublicIpAddress(value: String): Self = this.set("PublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIpAddress: Self = this.set("PublicIpAddress", js.undefined)
+    @scala.inline
+    def setStatus(value: InstanceStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

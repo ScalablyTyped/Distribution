@@ -21,11 +21,30 @@ trait SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest extends js.Object {
 
 object SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest {
   @scala.inline
-  def apply(jobTrigger: SchemaGooglePrivacyDlpV2JobTrigger = null, updateMask: String = null): SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest = {
+  def apply(): SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest = {
     val __obj = js.Dynamic.literal()
-    if (jobTrigger != null) __obj.updateDynamic("jobTrigger")(jobTrigger.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2UpdateJobTriggerRequestOps[Self <: SchemaGooglePrivacyDlpV2UpdateJobTriggerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobTrigger(value: SchemaGooglePrivacyDlpV2JobTrigger): Self = this.set("jobTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTrigger: Self = this.set("jobTrigger", js.undefined)
+    @scala.inline
+    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+  }
+  
 }
 

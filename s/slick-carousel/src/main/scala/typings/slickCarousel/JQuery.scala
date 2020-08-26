@@ -49,11 +49,15 @@ trait JQuery extends js.Object {
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String): JQuery = js.native
   @JSName("slick")
+  def slick_slickAdd(methodName: slickAdd, html: String, index: js.UndefOr[scala.Nothing], addBefore: Double): JQuery = js.native
+  @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String, index: Double): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: String, index: Double, addBefore: Double): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object): JQuery = js.native
+  @JSName("slick")
+  def slick_slickAdd(methodName: slickAdd, html: js.Object, index: js.UndefOr[scala.Nothing], addBefore: Double): JQuery = js.native
   @JSName("slick")
   def slick_slickAdd(methodName: slickAdd, html: js.Object, index: Double): JQuery = js.native
   @JSName("slick")

@@ -30,7 +30,6 @@ object nodeFilterMod extends js.Object {
       * @return {!NodeFilter}
       */
     def getIndexedFilter(): NodeFilter = js.native
-    def updateChild(snap: Node, key: String, newChild: Node, affectedPath: Path, source: CompleteChildSource): Node = js.native
     /**
       * Update a single complete child in the snap. If the child equals the old child in the snap, this is a no-op.
       * The method expects an indexed snap.
@@ -43,6 +42,7 @@ object nodeFilterMod extends js.Object {
       * @param {?ChildChangeAccumulator} optChangeAccumulator
       * @return {!Node}
       */
+    def updateChild(snap: Node, key: String, newChild: Node, affectedPath: Path, source: CompleteChildSource): Node = js.native
     def updateChild(
       snap: Node,
       key: String,
@@ -51,7 +51,6 @@ object nodeFilterMod extends js.Object {
       source: CompleteChildSource,
       optChangeAccumulator: ChildChangeAccumulator
     ): Node = js.native
-    def updateFullNode(oldSnap: Node, newSnap: Node): Node = js.native
     /**
       * Update a node in full and output any resulting change from this complete update.
       *
@@ -60,6 +59,7 @@ object nodeFilterMod extends js.Object {
       * @param {?ChildChangeAccumulator} optChangeAccumulator
       * @return {!Node}
       */
+    def updateFullNode(oldSnap: Node, newSnap: Node): Node = js.native
     def updateFullNode(oldSnap: Node, newSnap: Node, optChangeAccumulator: ChildChangeAccumulator): Node = js.native
     /**
       * Update the priority of the root node

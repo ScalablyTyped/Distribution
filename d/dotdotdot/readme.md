@@ -12,7 +12,7 @@ A jQuery plugin for advanced cross-browser ellipsis on multiple line content.
 | Keywords           | ellipsis, dotdotdot, multiline, text, text-overflow, overflow, dots |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 128552 |
+| # downloads        | 131959 |
 | # stars            | 2 |
 
 ## Links

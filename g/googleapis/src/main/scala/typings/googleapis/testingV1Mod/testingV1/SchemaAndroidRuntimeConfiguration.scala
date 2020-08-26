@@ -21,11 +21,34 @@ trait SchemaAndroidRuntimeConfiguration extends js.Object {
 
 object SchemaAndroidRuntimeConfiguration {
   @scala.inline
-  def apply(locales: js.Array[SchemaLocale] = null, orientations: js.Array[SchemaOrientation] = null): SchemaAndroidRuntimeConfiguration = {
+  def apply(): SchemaAndroidRuntimeConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
-    if (orientations != null) __obj.updateDynamic("orientations")(orientations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidRuntimeConfiguration]
   }
+  @scala.inline
+  implicit class SchemaAndroidRuntimeConfigurationOps[Self <: SchemaAndroidRuntimeConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocalesVarargs(value: SchemaLocale*): Self = this.set("locales", js.Array(value :_*))
+    @scala.inline
+    def setLocales(value: js.Array[SchemaLocale]): Self = this.set("locales", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocales: Self = this.set("locales", js.undefined)
+    @scala.inline
+    def setOrientationsVarargs(value: SchemaOrientation*): Self = this.set("orientations", js.Array(value :_*))
+    @scala.inline
+    def setOrientations(value: js.Array[SchemaOrientation]): Self = this.set("orientations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientations: Self = this.set("orientations", js.undefined)
+  }
+  
 }
 

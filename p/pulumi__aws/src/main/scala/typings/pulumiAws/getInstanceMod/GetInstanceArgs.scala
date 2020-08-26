@@ -27,34 +27,60 @@ trait GetInstanceArgs extends js.Object {
     */
   val instanceId: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags, each pair of which must
+    * A map of tags, each pair of which must
     * exactly match a pair on the desired Instance.
     */
-  val instanceTags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val instanceTags: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * A mapping of tags assigned to the Instance.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object GetInstanceArgs {
   @scala.inline
-  def apply(
-    filters: js.Array[GetInstanceFilter] = null,
-    getPasswordData: js.UndefOr[Boolean] = js.undefined,
-    getUserData: js.UndefOr[Boolean] = js.undefined,
-    instanceId: String = null,
-    instanceTags: StringDictionary[js.Any] = null,
-    tags: StringDictionary[js.Any] = null
-  ): GetInstanceArgs = {
+  def apply(): GetInstanceArgs = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData.get.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (instanceTags != null) __obj.updateDynamic("instanceTags")(instanceTags.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInstanceArgs]
   }
+  @scala.inline
+  implicit class GetInstanceArgsOps[Self <: GetInstanceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: GetInstanceFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetInstanceFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setGetPasswordData(value: Boolean): Self = this.set("getPasswordData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetPasswordData: Self = this.set("getPasswordData", js.undefined)
+    @scala.inline
+    def setGetUserData(value: Boolean): Self = this.set("getUserData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetUserData: Self = this.set("getUserData", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setInstanceTags(value: StringDictionary[String]): Self = this.set("instanceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTags: Self = this.set("instanceTags", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

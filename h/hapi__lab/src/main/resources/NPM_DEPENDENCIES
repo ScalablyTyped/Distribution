@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/lab" : "22.0.4"
+      "@hapi/lab" : "23.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/lab" : "22.0.4"
+      "@hapi/lab" : "23.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -22,16 +22,34 @@ trait SynthesizeSpeechOutput extends js.Object {
 
 object SynthesizeSpeechOutput {
   @scala.inline
-  def apply(
-    AudioStream: AudioStream = null,
-    ContentType: ContentType = null,
-    RequestCharacters: js.UndefOr[RequestCharacters] = js.undefined
-  ): SynthesizeSpeechOutput = {
+  def apply(): SynthesizeSpeechOutput = {
     val __obj = js.Dynamic.literal()
-    if (AudioStream != null) __obj.updateDynamic("AudioStream")(AudioStream.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequestCharacters)) __obj.updateDynamic("RequestCharacters")(RequestCharacters.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizeSpeechOutput]
   }
+  @scala.inline
+  implicit class SynthesizeSpeechOutputOps[Self <: SynthesizeSpeechOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioStream(value: AudioStream): Self = this.set("AudioStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioStream: Self = this.set("AudioStream", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setRequestCharacters(value: RequestCharacters): Self = this.set("RequestCharacters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharacters: Self = this.set("RequestCharacters", js.undefined)
+  }
+  
 }
 

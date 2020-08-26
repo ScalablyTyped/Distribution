@@ -4,112 +4,84 @@ import typings.vegaTypings.encodeMod.Encode
 import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.encodeMod.TextEncodeEntry
 import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.valuesMod.AlignValue
-import typings.vegaTypings.valuesMod.AnchorValue
-import typings.vegaTypings.valuesMod.ColorValue
-import typings.vegaTypings.valuesMod.FontStyleValue
-import typings.vegaTypings.valuesMod.FontWeightValue
-import typings.vegaTypings.valuesMod.NumberValue
-import typings.vegaTypings.valuesMod.StringValue
-import typings.vegaTypings.valuesMod.TextBaselineValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Title extends BaseTitle {
   /**
     * Mark definitions for custom title encoding.
     */
-  var encode: js.UndefOr[TitleEncode | Encode[TextEncodeEntry]] = js.undefined
+  var encode: js.UndefOr[TitleEncode | Encode[TextEncodeEntry]] = js.native
   /**
     * A boolean flag indicating if the title element should respond to input events such as mouse hover. (**Deprecated.**)
     */
-  var interactive: js.UndefOr[Boolean] = js.undefined
+  var interactive: js.UndefOr[Boolean] = js.native
   /**
     * A mark name property to apply to the title text mark. (**Deprecated.**)
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * A mark style property to apply to the title text mark. If not specified, a default style of `"group-title"` is applied. (**Deprecated**)
     */
-  var style: js.UndefOr[String | js.Array[String]] = js.undefined
+  var style: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * The subtitle text.
     */
-  var subtitle: js.UndefOr[Text | SignalRef] = js.undefined
+  var subtitle: js.UndefOr[Text | SignalRef] = js.native
   /**
     * The title text.
     */
-  var text: Text | SignalRef
+  var text: Text | SignalRef = js.native
 }
 
 object Title {
   @scala.inline
-  def apply(
-    text: Text | SignalRef,
-    align: AlignValue = null,
-    anchor: js.UndefOr[Null | AnchorValue] = js.undefined,
-    angle: NumberValue = null,
-    aria: js.UndefOr[Boolean] = js.undefined,
-    baseline: TextBaselineValue = null,
-    color: js.UndefOr[Null | ColorValue] = js.undefined,
-    dx: NumberValue = null,
-    dy: NumberValue = null,
-    encode: TitleEncode | Encode[TextEncodeEntry] = null,
-    font: StringValue = null,
-    fontSize: NumberValue = null,
-    fontStyle: FontStyleValue = null,
-    fontWeight: FontWeightValue = null,
-    frame: TitleFrame | StringValue = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    limit: NumberValue = null,
-    lineHeight: NumberValue = null,
-    name: String = null,
-    offset: NumberValue = null,
-    orient: TitleOrient | SignalRef = null,
-    style: String | js.Array[String] = null,
-    subtitle: Text | SignalRef = null,
-    subtitleColor: js.UndefOr[Null | ColorValue] = js.undefined,
-    subtitleFont: StringValue = null,
-    subtitleFontSize: NumberValue = null,
-    subtitleFontStyle: FontStyleValue = null,
-    subtitleFontWeight: FontWeightValue = null,
-    subtitleLineHeight: NumberValue = null,
-    subtitlePadding: NumberValue = null,
-    zindex: js.UndefOr[Double] = js.undefined
-  ): Title = {
+  def apply(text: Text | SignalRef): Title = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(anchor)) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (!js.isUndefined(aria)) __obj.updateDynamic("aria")(aria.get.asInstanceOf[js.Any])
-    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (encode != null) __obj.updateDynamic("encode")(encode.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.get.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(subtitleColor)) __obj.updateDynamic("subtitleColor")(subtitleColor.asInstanceOf[js.Any])
-    if (subtitleFont != null) __obj.updateDynamic("subtitleFont")(subtitleFont.asInstanceOf[js.Any])
-    if (subtitleFontSize != null) __obj.updateDynamic("subtitleFontSize")(subtitleFontSize.asInstanceOf[js.Any])
-    if (subtitleFontStyle != null) __obj.updateDynamic("subtitleFontStyle")(subtitleFontStyle.asInstanceOf[js.Any])
-    if (subtitleFontWeight != null) __obj.updateDynamic("subtitleFontWeight")(subtitleFontWeight.asInstanceOf[js.Any])
-    if (subtitleLineHeight != null) __obj.updateDynamic("subtitleLineHeight")(subtitleLineHeight.asInstanceOf[js.Any])
-    if (subtitlePadding != null) __obj.updateDynamic("subtitlePadding")(subtitlePadding.asInstanceOf[js.Any])
-    if (!js.isUndefined(zindex)) __obj.updateDynamic("zindex")(zindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Title]
   }
+  @scala.inline
+  implicit class TitleOps[Self <: Title] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
+    @scala.inline
+    def setText(value: Text | SignalRef): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncode(value: TitleEncode | Encode[TextEncodeEntry]): Self = this.set("encode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncode: Self = this.set("encode", js.undefined)
+    @scala.inline
+    def setInteractive(value: Boolean): Self = this.set("interactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractive: Self = this.set("interactive", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStyleVarargs(value: String*): Self = this.set("style", js.Array(value :_*))
+    @scala.inline
+    def setStyle(value: String | js.Array[String]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSubtitleVarargs(value: String*): Self = this.set("subtitle", js.Array(value :_*))
+    @scala.inline
+    def setSubtitle(value: Text | SignalRef): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+  }
+  
 }
 

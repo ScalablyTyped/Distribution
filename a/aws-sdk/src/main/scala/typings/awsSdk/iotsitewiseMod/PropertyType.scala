@@ -26,18 +26,38 @@ trait PropertyType extends js.Object {
 
 object PropertyType {
   @scala.inline
-  def apply(
-    attribute: Attribute = null,
-    measurement: Measurement = null,
-    metric: Metric = null,
-    transform: Transform = null
-  ): PropertyType = {
+  def apply(): PropertyType = {
     val __obj = js.Dynamic.literal()
-    if (attribute != null) __obj.updateDynamic("attribute")(attribute.asInstanceOf[js.Any])
-    if (measurement != null) __obj.updateDynamic("measurement")(measurement.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyType]
   }
+  @scala.inline
+  implicit class PropertyTypeOps[Self <: PropertyType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribute(value: Attribute): Self = this.set("attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("attribute", js.undefined)
+    @scala.inline
+    def setMeasurement(value: Measurement): Self = this.set("measurement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasurement: Self = this.set("measurement", js.undefined)
+    @scala.inline
+    def setMetric(value: Metric): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setTransform(value: Transform): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

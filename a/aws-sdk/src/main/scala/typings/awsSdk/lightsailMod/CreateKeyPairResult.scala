@@ -26,18 +26,38 @@ trait CreateKeyPairResult extends js.Object {
 
 object CreateKeyPairResult {
   @scala.inline
-  def apply(
-    keyPair: KeyPair = null,
-    operation: Operation = null,
-    privateKeyBase64: Base64 = null,
-    publicKeyBase64: Base64 = null
-  ): CreateKeyPairResult = {
+  def apply(): CreateKeyPairResult = {
     val __obj = js.Dynamic.literal()
-    if (keyPair != null) __obj.updateDynamic("keyPair")(keyPair.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (privateKeyBase64 != null) __obj.updateDynamic("privateKeyBase64")(privateKeyBase64.asInstanceOf[js.Any])
-    if (publicKeyBase64 != null) __obj.updateDynamic("publicKeyBase64")(publicKeyBase64.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyPairResult]
   }
+  @scala.inline
+  implicit class CreateKeyPairResultOps[Self <: CreateKeyPairResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyPair(value: KeyPair): Self = this.set("keyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+    @scala.inline
+    def setOperation(value: Operation): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setPrivateKeyBase64(value: Base64): Self = this.set("privateKeyBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyBase64: Self = this.set("privateKeyBase64", js.undefined)
+    @scala.inline
+    def setPublicKeyBase64(value: Base64): Self = this.set("publicKeyBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKeyBase64: Self = this.set("publicKeyBase64", js.undefined)
+  }
+  
 }
 

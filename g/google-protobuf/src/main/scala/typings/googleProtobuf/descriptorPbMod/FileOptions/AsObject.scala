@@ -4,77 +4,135 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AsObject extends js.Object {
-  var ccEnableArenas: js.UndefOr[Boolean] = js.undefined
-  var ccGenericServices: js.UndefOr[Boolean] = js.undefined
-  var csharpNamespace: js.UndefOr[String] = js.undefined
-  var deprecated: js.UndefOr[Boolean] = js.undefined
-  var goPackage: js.UndefOr[String] = js.undefined
-  var javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.undefined
-  var javaGenericServices: js.UndefOr[Boolean] = js.undefined
-  var javaMultipleFiles: js.UndefOr[Boolean] = js.undefined
-  var javaOuterClassname: js.UndefOr[String] = js.undefined
-  var javaPackage: js.UndefOr[String] = js.undefined
-  var javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined
-  var objcClassPrefix: js.UndefOr[String] = js.undefined
-  var optimizeFor: js.UndefOr[OptimizeMode] = js.undefined
-  var phpClassPrefix: js.UndefOr[String] = js.undefined
-  var phpGenericServices: js.UndefOr[Boolean] = js.undefined
-  var phpMetadataNamespace: js.UndefOr[String] = js.undefined
-  var phpNamespace: js.UndefOr[String] = js.undefined
-  var pyGenericServices: js.UndefOr[Boolean] = js.undefined
-  var rubyPackage: js.UndefOr[String] = js.undefined
-  var swiftPrefix: js.UndefOr[String] = js.undefined
-  var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
+  var ccEnableArenas: js.UndefOr[Boolean] = js.native
+  var ccGenericServices: js.UndefOr[Boolean] = js.native
+  var csharpNamespace: js.UndefOr[String] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.native
+  var goPackage: js.UndefOr[String] = js.native
+  var javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.native
+  var javaGenericServices: js.UndefOr[Boolean] = js.native
+  var javaMultipleFiles: js.UndefOr[Boolean] = js.native
+  var javaOuterClassname: js.UndefOr[String] = js.native
+  var javaPackage: js.UndefOr[String] = js.native
+  var javaStringCheckUtf8: js.UndefOr[Boolean] = js.native
+  var objcClassPrefix: js.UndefOr[String] = js.native
+  var optimizeFor: js.UndefOr[OptimizeMode] = js.native
+  var phpClassPrefix: js.UndefOr[String] = js.native
+  var phpGenericServices: js.UndefOr[Boolean] = js.native
+  var phpMetadataNamespace: js.UndefOr[String] = js.native
+  var phpNamespace: js.UndefOr[String] = js.native
+  var pyGenericServices: js.UndefOr[Boolean] = js.native
+  var rubyPackage: js.UndefOr[String] = js.native
+  var swiftPrefix: js.UndefOr[String] = js.native
+  var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject] = js.native
 }
 
 object AsObject {
   @scala.inline
   def apply(
-    uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject],
-    ccEnableArenas: js.UndefOr[Boolean] = js.undefined,
-    ccGenericServices: js.UndefOr[Boolean] = js.undefined,
-    csharpNamespace: String = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    goPackage: String = null,
-    javaGenerateEqualsAndHash: js.UndefOr[Boolean] = js.undefined,
-    javaGenericServices: js.UndefOr[Boolean] = js.undefined,
-    javaMultipleFiles: js.UndefOr[Boolean] = js.undefined,
-    javaOuterClassname: String = null,
-    javaPackage: String = null,
-    javaStringCheckUtf8: js.UndefOr[Boolean] = js.undefined,
-    objcClassPrefix: String = null,
-    optimizeFor: OptimizeMode = null,
-    phpClassPrefix: String = null,
-    phpGenericServices: js.UndefOr[Boolean] = js.undefined,
-    phpMetadataNamespace: String = null,
-    phpNamespace: String = null,
-    pyGenericServices: js.UndefOr[Boolean] = js.undefined,
-    rubyPackage: String = null,
-    swiftPrefix: String = null
+    uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
   ): AsObject = {
     val __obj = js.Dynamic.literal(uninterpretedOptionList = uninterpretedOptionList.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccEnableArenas)) __obj.updateDynamic("ccEnableArenas")(ccEnableArenas.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ccGenericServices)) __obj.updateDynamic("ccGenericServices")(ccGenericServices.get.asInstanceOf[js.Any])
-    if (csharpNamespace != null) __obj.updateDynamic("csharpNamespace")(csharpNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.get.asInstanceOf[js.Any])
-    if (goPackage != null) __obj.updateDynamic("goPackage")(goPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaGenerateEqualsAndHash)) __obj.updateDynamic("javaGenerateEqualsAndHash")(javaGenerateEqualsAndHash.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaGenericServices)) __obj.updateDynamic("javaGenericServices")(javaGenericServices.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaMultipleFiles)) __obj.updateDynamic("javaMultipleFiles")(javaMultipleFiles.get.asInstanceOf[js.Any])
-    if (javaOuterClassname != null) __obj.updateDynamic("javaOuterClassname")(javaOuterClassname.asInstanceOf[js.Any])
-    if (javaPackage != null) __obj.updateDynamic("javaPackage")(javaPackage.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaStringCheckUtf8)) __obj.updateDynamic("javaStringCheckUtf8")(javaStringCheckUtf8.get.asInstanceOf[js.Any])
-    if (objcClassPrefix != null) __obj.updateDynamic("objcClassPrefix")(objcClassPrefix.asInstanceOf[js.Any])
-    if (optimizeFor != null) __obj.updateDynamic("optimizeFor")(optimizeFor.asInstanceOf[js.Any])
-    if (phpClassPrefix != null) __obj.updateDynamic("phpClassPrefix")(phpClassPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(phpGenericServices)) __obj.updateDynamic("phpGenericServices")(phpGenericServices.get.asInstanceOf[js.Any])
-    if (phpMetadataNamespace != null) __obj.updateDynamic("phpMetadataNamespace")(phpMetadataNamespace.asInstanceOf[js.Any])
-    if (phpNamespace != null) __obj.updateDynamic("phpNamespace")(phpNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(pyGenericServices)) __obj.updateDynamic("pyGenericServices")(pyGenericServices.get.asInstanceOf[js.Any])
-    if (rubyPackage != null) __obj.updateDynamic("rubyPackage")(rubyPackage.asInstanceOf[js.Any])
-    if (swiftPrefix != null) __obj.updateDynamic("swiftPrefix")(swiftPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsObject]
   }
+  @scala.inline
+  implicit class AsObjectOps[Self <: AsObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUninterpretedOptionListVarargs(value: typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject*): Self = this.set("uninterpretedOptionList", js.Array(value :_*))
+    @scala.inline
+    def setUninterpretedOptionList(value: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]): Self = this.set("uninterpretedOptionList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCcEnableArenas(value: Boolean): Self = this.set("ccEnableArenas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcEnableArenas: Self = this.set("ccEnableArenas", js.undefined)
+    @scala.inline
+    def setCcGenericServices(value: Boolean): Self = this.set("ccGenericServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCcGenericServices: Self = this.set("ccGenericServices", js.undefined)
+    @scala.inline
+    def setCsharpNamespace(value: String): Self = this.set("csharpNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsharpNamespace: Self = this.set("csharpNamespace", js.undefined)
+    @scala.inline
+    def setDeprecated(value: Boolean): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setGoPackage(value: String): Self = this.set("goPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoPackage: Self = this.set("goPackage", js.undefined)
+    @scala.inline
+    def setJavaGenerateEqualsAndHash(value: Boolean): Self = this.set("javaGenerateEqualsAndHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaGenerateEqualsAndHash: Self = this.set("javaGenerateEqualsAndHash", js.undefined)
+    @scala.inline
+    def setJavaGenericServices(value: Boolean): Self = this.set("javaGenericServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaGenericServices: Self = this.set("javaGenericServices", js.undefined)
+    @scala.inline
+    def setJavaMultipleFiles(value: Boolean): Self = this.set("javaMultipleFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaMultipleFiles: Self = this.set("javaMultipleFiles", js.undefined)
+    @scala.inline
+    def setJavaOuterClassname(value: String): Self = this.set("javaOuterClassname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaOuterClassname: Self = this.set("javaOuterClassname", js.undefined)
+    @scala.inline
+    def setJavaPackage(value: String): Self = this.set("javaPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaPackage: Self = this.set("javaPackage", js.undefined)
+    @scala.inline
+    def setJavaStringCheckUtf8(value: Boolean): Self = this.set("javaStringCheckUtf8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaStringCheckUtf8: Self = this.set("javaStringCheckUtf8", js.undefined)
+    @scala.inline
+    def setObjcClassPrefix(value: String): Self = this.set("objcClassPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjcClassPrefix: Self = this.set("objcClassPrefix", js.undefined)
+    @scala.inline
+    def setOptimizeFor(value: OptimizeMode): Self = this.set("optimizeFor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptimizeFor: Self = this.set("optimizeFor", js.undefined)
+    @scala.inline
+    def setPhpClassPrefix(value: String): Self = this.set("phpClassPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhpClassPrefix: Self = this.set("phpClassPrefix", js.undefined)
+    @scala.inline
+    def setPhpGenericServices(value: Boolean): Self = this.set("phpGenericServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhpGenericServices: Self = this.set("phpGenericServices", js.undefined)
+    @scala.inline
+    def setPhpMetadataNamespace(value: String): Self = this.set("phpMetadataNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhpMetadataNamespace: Self = this.set("phpMetadataNamespace", js.undefined)
+    @scala.inline
+    def setPhpNamespace(value: String): Self = this.set("phpNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhpNamespace: Self = this.set("phpNamespace", js.undefined)
+    @scala.inline
+    def setPyGenericServices(value: Boolean): Self = this.set("pyGenericServices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePyGenericServices: Self = this.set("pyGenericServices", js.undefined)
+    @scala.inline
+    def setRubyPackage(value: String): Self = this.set("rubyPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRubyPackage: Self = this.set("rubyPackage", js.undefined)
+    @scala.inline
+    def setSwiftPrefix(value: String): Self = this.set("swiftPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwiftPrefix: Self = this.set("swiftPrefix", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,5 @@
 package typings.webix.mod.ui
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -51,14 +50,6 @@ object datafilter extends js.Object {
   @js.native
   class textFilter () extends WebixFilter {
     def getInputNode(node: HTMLElement): HTMLElement = js.native
-    /* CompleteClass */
-    override def getValue(node: HTMLElement): js.Any = js.native
-    /* CompleteClass */
-    override def refresh(master: typings.webix.webix.ui.baseview, node: HTMLElement, value: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def render(master: typings.webix.webix.ui.baseview, config: StringDictionary[js.Any]): String = js.native
-    /* CompleteClass */
-    override def setValue(node: HTMLElement, value: js.Any): js.Any = js.native
   }
   
 }

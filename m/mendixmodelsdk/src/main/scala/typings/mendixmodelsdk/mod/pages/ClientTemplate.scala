@@ -100,6 +100,15 @@ object ClientTemplate extends js.Object {
   def createInInputWidgetUnderLabelTemplate(container: typings.mendixmodelsdk.pagesMod.pages.InputWidget): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = js.native
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'screenReaderLabel' property
+    * of the parent InputWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.12.0 and higher
+    */
+  def createInInputWidgetUnderScreenReaderLabel(container: typings.mendixmodelsdk.pagesMod.pages.InputWidget): typings.mendixmodelsdk.pagesMod.pages.ClientTemplate = js.native
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'alternativeText' property
     * of the parent StaticImageViewer element passed as argument.
     *

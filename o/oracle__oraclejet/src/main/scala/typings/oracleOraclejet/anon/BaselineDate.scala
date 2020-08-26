@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BaselineDate extends js.Object {
-  var baselineDate: js.UndefOr[ConverterTooltipDisplay] = js.undefined
-  var baselineEnd: js.UndefOr[ConverterTooltipDisplay] = js.undefined
-  var baselineStart: js.UndefOr[ConverterTooltipDisplay] = js.undefined
-  var date: js.UndefOr[ConverterTooltipDisplay] = js.undefined
-  var end: js.UndefOr[ConverterTooltipDisplay] = js.undefined
-  var label: js.UndefOr[TooltipDisplayTooltipLabel] = js.undefined
-  var progress: js.UndefOr[ConverterTooltipDisplayTooltipLabel] = js.undefined
-  var row: js.UndefOr[TooltipDisplayTooltipLabel] = js.undefined
-  var start: js.UndefOr[ConverterTooltipDisplay] = js.undefined
+  var baselineDate: js.UndefOr[ConverterTooltipDisplay] = js.native
+  var baselineEnd: js.UndefOr[ConverterTooltipDisplay] = js.native
+  var baselineStart: js.UndefOr[ConverterTooltipDisplay] = js.native
+  var date: js.UndefOr[ConverterTooltipDisplay] = js.native
+  var end: js.UndefOr[ConverterTooltipDisplay] = js.native
+  var label: js.UndefOr[TooltipDisplayTooltipLabel] = js.native
+  var progress: js.UndefOr[ConverterTooltipDisplayTooltipLabel] = js.native
+  var row: js.UndefOr[TooltipDisplayTooltipLabel] = js.native
+  var start: js.UndefOr[ConverterTooltipDisplay] = js.native
 }
 
 object BaselineDate {
   @scala.inline
-  def apply(
-    baselineDate: ConverterTooltipDisplay = null,
-    baselineEnd: ConverterTooltipDisplay = null,
-    baselineStart: ConverterTooltipDisplay = null,
-    date: ConverterTooltipDisplay = null,
-    end: ConverterTooltipDisplay = null,
-    label: TooltipDisplayTooltipLabel = null,
-    progress: ConverterTooltipDisplayTooltipLabel = null,
-    row: TooltipDisplayTooltipLabel = null,
-    start: ConverterTooltipDisplay = null
-  ): BaselineDate = {
+  def apply(): BaselineDate = {
     val __obj = js.Dynamic.literal()
-    if (baselineDate != null) __obj.updateDynamic("baselineDate")(baselineDate.asInstanceOf[js.Any])
-    if (baselineEnd != null) __obj.updateDynamic("baselineEnd")(baselineEnd.asInstanceOf[js.Any])
-    if (baselineStart != null) __obj.updateDynamic("baselineStart")(baselineStart.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaselineDate]
   }
+  @scala.inline
+  implicit class BaselineDateOps[Self <: BaselineDate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaselineDate(value: ConverterTooltipDisplay): Self = this.set("baselineDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineDate: Self = this.set("baselineDate", js.undefined)
+    @scala.inline
+    def setBaselineEnd(value: ConverterTooltipDisplay): Self = this.set("baselineEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineEnd: Self = this.set("baselineEnd", js.undefined)
+    @scala.inline
+    def setBaselineStart(value: ConverterTooltipDisplay): Self = this.set("baselineStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineStart: Self = this.set("baselineStart", js.undefined)
+    @scala.inline
+    def setDate(value: ConverterTooltipDisplay): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setEnd(value: ConverterTooltipDisplay): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setLabel(value: TooltipDisplayTooltipLabel): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setProgress(value: ConverterTooltipDisplayTooltipLabel): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setRow(value: TooltipDisplayTooltipLabel): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setStart(value: ConverterTooltipDisplay): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

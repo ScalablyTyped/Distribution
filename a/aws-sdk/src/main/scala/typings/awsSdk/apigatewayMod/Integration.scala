@@ -70,40 +70,84 @@ trait Integration extends js.Object {
 
 object Integration {
   @scala.inline
-  def apply(
-    cacheKeyParameters: ListOfString = null,
-    cacheNamespace: String = null,
-    connectionId: String = null,
-    connectionType: ConnectionType = null,
-    contentHandling: ContentHandlingStrategy = null,
-    credentials: String = null,
-    httpMethod: String = null,
-    integrationResponses: MapOfIntegrationResponse = null,
-    passthroughBehavior: String = null,
-    requestParameters: MapOfStringToString = null,
-    requestTemplates: MapOfStringToString = null,
-    timeoutInMillis: js.UndefOr[Integer] = js.undefined,
-    tlsConfig: TlsConfig = null,
-    `type`: IntegrationType = null,
-    uri: String = null
-  ): Integration = {
+  def apply(): Integration = {
     val __obj = js.Dynamic.literal()
-    if (cacheKeyParameters != null) __obj.updateDynamic("cacheKeyParameters")(cacheKeyParameters.asInstanceOf[js.Any])
-    if (cacheNamespace != null) __obj.updateDynamic("cacheNamespace")(cacheNamespace.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
-    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (integrationResponses != null) __obj.updateDynamic("integrationResponses")(integrationResponses.asInstanceOf[js.Any])
-    if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
-    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
-    if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutInMillis)) __obj.updateDynamic("timeoutInMillis")(timeoutInMillis.get.asInstanceOf[js.Any])
-    if (tlsConfig != null) __obj.updateDynamic("tlsConfig")(tlsConfig.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Integration]
   }
+  @scala.inline
+  implicit class IntegrationOps[Self <: Integration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheKeyParametersVarargs(value: String*): Self = this.set("cacheKeyParameters", js.Array(value :_*))
+    @scala.inline
+    def setCacheKeyParameters(value: ListOfString): Self = this.set("cacheKeyParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheKeyParameters: Self = this.set("cacheKeyParameters", js.undefined)
+    @scala.inline
+    def setCacheNamespace(value: String): Self = this.set("cacheNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNamespace: Self = this.set("cacheNamespace", js.undefined)
+    @scala.inline
+    def setConnectionId(value: String): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    @scala.inline
+    def setConnectionType(value: ConnectionType): Self = this.set("connectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionType: Self = this.set("connectionType", js.undefined)
+    @scala.inline
+    def setContentHandling(value: ContentHandlingStrategy): Self = this.set("contentHandling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandling: Self = this.set("contentHandling", js.undefined)
+    @scala.inline
+    def setCredentials(value: String): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setHttpMethod(value: String): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    @scala.inline
+    def setIntegrationResponses(value: MapOfIntegrationResponse): Self = this.set("integrationResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationResponses: Self = this.set("integrationResponses", js.undefined)
+    @scala.inline
+    def setPassthroughBehavior(value: String): Self = this.set("passthroughBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassthroughBehavior: Self = this.set("passthroughBehavior", js.undefined)
+    @scala.inline
+    def setRequestParameters(value: MapOfStringToString): Self = this.set("requestParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestParameters: Self = this.set("requestParameters", js.undefined)
+    @scala.inline
+    def setRequestTemplates(value: MapOfStringToString): Self = this.set("requestTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTemplates: Self = this.set("requestTemplates", js.undefined)
+    @scala.inline
+    def setTimeoutInMillis(value: Integer): Self = this.set("timeoutInMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMillis: Self = this.set("timeoutInMillis", js.undefined)
+    @scala.inline
+    def setTlsConfig(value: TlsConfig): Self = this.set("tlsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsConfig: Self = this.set("tlsConfig", js.undefined)
+    @scala.inline
+    def setType(value: IntegrationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

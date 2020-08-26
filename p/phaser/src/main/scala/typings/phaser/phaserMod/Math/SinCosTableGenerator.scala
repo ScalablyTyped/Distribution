@@ -16,7 +16,16 @@ object SinCosTableGenerator extends js.Object {
     * @param frequency The frequency of the values. Default 1.
     */
   def apply(length: Double): SinCosTable = js.native
+  def apply(
+    length: Double,
+    sinAmp: js.UndefOr[scala.Nothing],
+    cosAmp: js.UndefOr[scala.Nothing],
+    frequency: Double
+  ): SinCosTable = js.native
+  def apply(length: Double, sinAmp: js.UndefOr[scala.Nothing], cosAmp: Double): SinCosTable = js.native
+  def apply(length: Double, sinAmp: js.UndefOr[scala.Nothing], cosAmp: Double, frequency: Double): SinCosTable = js.native
   def apply(length: Double, sinAmp: Double): SinCosTable = js.native
+  def apply(length: Double, sinAmp: Double, cosAmp: js.UndefOr[scala.Nothing], frequency: Double): SinCosTable = js.native
   def apply(length: Double, sinAmp: Double, cosAmp: Double): SinCosTable = js.native
   def apply(length: Double, sinAmp: Double, cosAmp: Double, frequency: Double): SinCosTable = js.native
 }

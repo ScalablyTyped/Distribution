@@ -44,6 +44,12 @@ object Merge extends js.Object {
   def merge(
     repo: typings.nodegit.repositoryMod.Repository,
     theirHead: typings.nodegit.annotatedCommitMod.AnnotatedCommit,
+    mergeOpts: js.UndefOr[scala.Nothing],
+    checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
+  ): js.Any = js.native
+  def merge(
+    repo: typings.nodegit.repositoryMod.Repository,
+    theirHead: typings.nodegit.annotatedCommitMod.AnnotatedCommit,
     mergeOpts: typings.nodegit.mergeOptionsMod.MergeOptions
   ): js.Any = js.native
   def merge(

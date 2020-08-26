@@ -4,24 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CompletionRegistrationOptions
   extends CompletionOptions
      with TextDocumentRegistrationOptions
 
 object CompletionRegistrationOptions {
   @scala.inline
-  def apply(
-    allCommitCharacters: js.Array[String] = null,
-    documentSelector: DocumentSelector = null,
-    resolveProvider: js.UndefOr[Boolean] = js.undefined,
-    triggerCharacters: js.Array[String] = null,
-    workDoneProgress: js.UndefOr[Boolean] = js.undefined
-  ): CompletionRegistrationOptions = {
-    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
-    if (allCommitCharacters != null) __obj.updateDynamic("allCommitCharacters")(allCommitCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider.get.asInstanceOf[js.Any])
-    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
+  def apply(): CompletionRegistrationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompletionRegistrationOptions]
   }
 }

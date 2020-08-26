@@ -33,6 +33,7 @@ class ResourceProjectsClientevents protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaClientEvent] = js.native
   def create(callback: BodyResponseCallback[SchemaClientEvent]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientEvent] = js.native
   def create(params: ParamsResourceProjectsClienteventsCreate): GaxiosPromise[SchemaClientEvent] = js.native
   def create(
     params: ParamsResourceProjectsClienteventsCreate,

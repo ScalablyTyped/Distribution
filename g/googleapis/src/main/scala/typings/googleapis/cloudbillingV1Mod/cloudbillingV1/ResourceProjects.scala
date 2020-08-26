@@ -84,6 +84,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def getBillingInfo(): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def getBillingInfo(callback: BodyResponseCallback[SchemaProjectBillingInfo]): Unit = js.native
+  def getBillingInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def getBillingInfo(params: ParamsResourceProjectsGetbillinginfo): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def getBillingInfo(
     params: ParamsResourceProjectsGetbillinginfo,
@@ -199,6 +200,7 @@ class ResourceProjects protected () extends js.Object {
     */
   def updateBillingInfo(): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def updateBillingInfo(callback: BodyResponseCallback[SchemaProjectBillingInfo]): Unit = js.native
+  def updateBillingInfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def updateBillingInfo(params: ParamsResourceProjectsUpdatebillinginfo): GaxiosPromise[SchemaProjectBillingInfo] = js.native
   def updateBillingInfo(
     params: ParamsResourceProjectsUpdatebillinginfo,

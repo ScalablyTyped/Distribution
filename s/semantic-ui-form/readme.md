@@ -12,7 +12,7 @@ Single component release of form
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 2 |
-| # downloads        | 24343 |
+| # downloads        | 25184 |
 | # stars            | 0 |
 
 ## Links

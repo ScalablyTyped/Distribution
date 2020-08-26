@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Drop", "Drop")
+@JSImport("grommet/es6/components/Drop", "Drop")
 @js.native
 class Drop protected ()
   extends Component[
@@ -26,7 +26,7 @@ class Drop protected ()
   ) = this()
 }
 
-@JSImport("grommet/components/Drop", "Drop")
+@JSImport("grommet/es6/components/Drop", "Drop")
 @js.native
 object Drop extends TopLevel[
       ComponentClass[

@@ -91,20 +91,44 @@ trait SchemaPartialResultSet extends js.Object {
 
 object SchemaPartialResultSet {
   @scala.inline
-  def apply(
-    chunkedValue: js.UndefOr[Boolean] = js.undefined,
-    metadata: SchemaResultSetMetadata = null,
-    resumeToken: String = null,
-    stats: SchemaResultSetStats = null,
-    values: js.Array[_] = null
-  ): SchemaPartialResultSet = {
+  def apply(): SchemaPartialResultSet = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunkedValue)) __obj.updateDynamic("chunkedValue")(chunkedValue.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken.asInstanceOf[js.Any])
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPartialResultSet]
   }
+  @scala.inline
+  implicit class SchemaPartialResultSetOps[Self <: SchemaPartialResultSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChunkedValue(value: Boolean): Self = this.set("chunkedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunkedValue: Self = this.set("chunkedValue", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaResultSetMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setResumeToken(value: String): Self = this.set("resumeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResumeToken: Self = this.set("resumeToken", js.undefined)
+    @scala.inline
+    def setStats(value: SchemaResultSetStats): Self = this.set("stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("stats", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: js.Any*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[_]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

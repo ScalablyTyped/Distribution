@@ -31,6 +31,7 @@ class ResourceAccountsUrlchannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaUrlChannels]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(params: ParamsResourceAccountsUrlchannelsList): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(params: ParamsResourceAccountsUrlchannelsList, callback: BodyResponseCallback[SchemaUrlChannels]): Unit = js.native
   def list(

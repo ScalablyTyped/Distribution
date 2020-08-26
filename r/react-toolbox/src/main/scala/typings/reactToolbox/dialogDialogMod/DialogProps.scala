@@ -1,9 +1,7 @@
 package typings.reactToolbox.dialogDialogMod
 
-import typings.react.mod.CSSProperties
-import typings.react.mod.Key
 import typings.react.mod.ReactNode
-import typings.reactToolbox.componentsMod.ReactToolbox.Props
+import typings.reactToolbox.mod.ReactToolbox.Props
 import typings.reactToolbox.reactToolboxStrings.large
 import typings.reactToolbox.reactToolboxStrings.normal
 import typings.reactToolbox.reactToolboxStrings.small
@@ -11,133 +9,120 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DialogProps extends Props {
   /**
     * A array of objects representing the buttons for the dialog navigation area. The properties will be transferred to the buttons.
     */
-  var actions: js.UndefOr[js.Array[DialogActionProps]] = js.undefined
+  var actions: js.UndefOr[js.Array[DialogActionProps]] = js.native
   /**
     * If true, the dialog will be active.
     * @default false
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * Children to pass through the component.
     */
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
   /**
     * Callback called when the ESC key is pressed with the overlay active.
     */
-  var onEscKeyDown: js.UndefOr[js.Function] = js.undefined
+  var onEscKeyDown: js.UndefOr[js.Function] = js.native
   /**
     * Callback to be invoked when the dialog overlay is clicked.
     */
-  var onOverlayClick: js.UndefOr[js.Function] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function] = js.native
   /**
     * Callback called when the mouse button is pressed on the overlay.
     */
-  var onOverlayMouseDown: js.UndefOr[js.Function] = js.undefined
+  var onOverlayMouseDown: js.UndefOr[js.Function] = js.native
   /**
     * Callback called when the mouse is moving over the overlay.
     */
-  var onOverlayMouseMove: js.UndefOr[js.Function] = js.undefined
+  var onOverlayMouseMove: js.UndefOr[js.Function] = js.native
   /**
     * Callback called when the mouse button is released over the overlay.
     */
-  var onOverlayMouseUp: js.UndefOr[js.Function] = js.undefined
+  var onOverlayMouseUp: js.UndefOr[js.Function] = js.native
   /**
     * Classnames object defining the component style.
     */
-  var theme: js.UndefOr[DialogTheme] = js.undefined
+  var theme: js.UndefOr[DialogTheme] = js.native
   /**
     * The text string to use as standar title of the dialog.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * Used to determine the size of the dialog. It can be small, normal or large.
     * @default "normal"
     */
-  var `type`: js.UndefOr[small | normal | large | String] = js.undefined
+  var `type`: js.UndefOr[small | normal | large | String] = js.native
 }
 
 object DialogProps {
   @scala.inline
-  def apply(
-    actions: js.Array[DialogActionProps] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    key: Key = null,
-    onClick: js.Function = null,
-    onContextMenu: js.Function = null,
-    onDoubleClick: js.Function = null,
-    onDrag: js.Function = null,
-    onDragEnd: js.Function = null,
-    onDragEnter: js.Function = null,
-    onDragExit: js.Function = null,
-    onDragLeave: js.Function = null,
-    onDragOver: js.Function = null,
-    onDragStart: js.Function = null,
-    onDrop: js.Function = null,
-    onEscKeyDown: js.Function = null,
-    onMouseDown: js.Function = null,
-    onMouseEnter: js.Function = null,
-    onMouseLeave: js.Function = null,
-    onMouseMove: js.Function = null,
-    onMouseOut: js.Function = null,
-    onMouseOver: js.Function = null,
-    onMouseUp: js.Function = null,
-    onOverlayClick: js.Function = null,
-    onOverlayMouseDown: js.Function = null,
-    onOverlayMouseMove: js.Function = null,
-    onOverlayMouseUp: js.Function = null,
-    onTouchCancel: js.Function = null,
-    onTouchEnd: js.Function = null,
-    onTouchMove: js.Function = null,
-    onTouchStart: js.Function = null,
-    style: CSSProperties = null,
-    theme: DialogTheme = null,
-    title: String = null,
-    `type`: small | normal | large | String = null
-  ): DialogProps = {
+  def apply(): DialogProps = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
-    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(onEscKeyDown.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onOverlayClick != null) __obj.updateDynamic("onOverlayClick")(onOverlayClick.asInstanceOf[js.Any])
-    if (onOverlayMouseDown != null) __obj.updateDynamic("onOverlayMouseDown")(onOverlayMouseDown.asInstanceOf[js.Any])
-    if (onOverlayMouseMove != null) __obj.updateDynamic("onOverlayMouseMove")(onOverlayMouseMove.asInstanceOf[js.Any])
-    if (onOverlayMouseUp != null) __obj.updateDynamic("onOverlayMouseUp")(onOverlayMouseUp.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogProps]
   }
+  @scala.inline
+  implicit class DialogPropsOps[Self <: DialogProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: DialogActionProps*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: js.Array[DialogActionProps]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setOnEscKeyDown(value: js.Function): Self = this.set("onEscKeyDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEscKeyDown: Self = this.set("onEscKeyDown", js.undefined)
+    @scala.inline
+    def setOnOverlayClick(value: js.Function): Self = this.set("onOverlayClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOverlayClick: Self = this.set("onOverlayClick", js.undefined)
+    @scala.inline
+    def setOnOverlayMouseDown(value: js.Function): Self = this.set("onOverlayMouseDown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOverlayMouseDown: Self = this.set("onOverlayMouseDown", js.undefined)
+    @scala.inline
+    def setOnOverlayMouseMove(value: js.Function): Self = this.set("onOverlayMouseMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOverlayMouseMove: Self = this.set("onOverlayMouseMove", js.undefined)
+    @scala.inline
+    def setOnOverlayMouseUp(value: js.Function): Self = this.set("onOverlayMouseUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnOverlayMouseUp: Self = this.set("onOverlayMouseUp", js.undefined)
+    @scala.inline
+    def setTheme(value: DialogTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: small | normal | large | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

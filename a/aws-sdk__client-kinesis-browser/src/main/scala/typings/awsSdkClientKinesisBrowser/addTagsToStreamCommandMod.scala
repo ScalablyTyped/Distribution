@@ -26,16 +26,9 @@ object addTagsToStreamCommandMod extends js.Object {
           Blob
         ] {
     def this(input: AddTagsToStreamInput) = this()
-    /* CompleteClass */
-    override val input: AddTagsToStreamInput = js.native
     val middlewareStack: MiddlewareStack[AddTagsToStreamInput, AddTagsToStreamOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[AddTagsToStreamInput, AddTagsToStreamOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[AddTagsToStreamInput, AddTagsToStreamOutput] = js.native
   }

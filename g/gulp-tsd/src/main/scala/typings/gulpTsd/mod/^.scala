@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): ReadWriteStream = js.native
+  def apply(opts: js.UndefOr[scala.Nothing], callback: TaskCallback): ReadWriteStream = js.native
   def apply(opts: IOptions): ReadWriteStream = js.native
   def apply(opts: IOptions, callback: TaskCallback): ReadWriteStream = js.native
 }

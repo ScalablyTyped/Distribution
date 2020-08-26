@@ -29,6 +29,7 @@ class ResourceAccountsCreativesDealassociations protected () extends js.Object {
     */
   def add(): GaxiosPromise[SchemaEmpty] = js.native
   def add(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def add(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def add(params: ParamsResourceAccountsCreativesDealassociationsAdd): GaxiosPromise[SchemaEmpty] = js.native
   def add(
     params: ParamsResourceAccountsCreativesDealassociationsAdd,
@@ -63,6 +64,7 @@ class ResourceAccountsCreativesDealassociations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDealAssociationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
   def list(params: ParamsResourceAccountsCreativesDealassociationsList): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
   def list(
     params: ParamsResourceAccountsCreativesDealassociationsList,
@@ -95,6 +97,7 @@ class ResourceAccountsCreativesDealassociations protected () extends js.Object {
     */
   def remove(): GaxiosPromise[SchemaEmpty] = js.native
   def remove(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def remove(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def remove(params: ParamsResourceAccountsCreativesDealassociationsRemove): GaxiosPromise[SchemaEmpty] = js.native
   def remove(
     params: ParamsResourceAccountsCreativesDealassociationsRemove,

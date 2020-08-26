@@ -63,30 +63,62 @@ trait SchemaLabel extends js.Object {
 
 object SchemaLabel {
   @scala.inline
-  def apply(
-    color: SchemaLabelColor = null,
-    id: String = null,
-    labelListVisibility: String = null,
-    messageListVisibility: String = null,
-    messagesTotal: js.UndefOr[Double] = js.undefined,
-    messagesUnread: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    threadsTotal: js.UndefOr[Double] = js.undefined,
-    threadsUnread: js.UndefOr[Double] = js.undefined,
-    `type`: String = null
-  ): SchemaLabel = {
+  def apply(): SchemaLabel = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelListVisibility != null) __obj.updateDynamic("labelListVisibility")(labelListVisibility.asInstanceOf[js.Any])
-    if (messageListVisibility != null) __obj.updateDynamic("messageListVisibility")(messageListVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(messagesTotal)) __obj.updateDynamic("messagesTotal")(messagesTotal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(messagesUnread)) __obj.updateDynamic("messagesUnread")(messagesUnread.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(threadsTotal)) __obj.updateDynamic("threadsTotal")(threadsTotal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(threadsUnread)) __obj.updateDynamic("threadsUnread")(threadsUnread.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLabel]
   }
+  @scala.inline
+  implicit class SchemaLabelOps[Self <: SchemaLabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: SchemaLabelColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLabelListVisibility(value: String): Self = this.set("labelListVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelListVisibility: Self = this.set("labelListVisibility", js.undefined)
+    @scala.inline
+    def setMessageListVisibility(value: String): Self = this.set("messageListVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageListVisibility: Self = this.set("messageListVisibility", js.undefined)
+    @scala.inline
+    def setMessagesTotal(value: Double): Self = this.set("messagesTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesTotal: Self = this.set("messagesTotal", js.undefined)
+    @scala.inline
+    def setMessagesUnread(value: Double): Self = this.set("messagesUnread", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesUnread: Self = this.set("messagesUnread", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setThreadsTotal(value: Double): Self = this.set("threadsTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreadsTotal: Self = this.set("threadsTotal", js.undefined)
+    @scala.inline
+    def setThreadsUnread(value: Double): Self = this.set("threadsUnread", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreadsUnread: Self = this.set("threadsUnread", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

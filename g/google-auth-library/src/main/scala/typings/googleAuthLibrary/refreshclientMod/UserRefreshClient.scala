@@ -20,7 +20,11 @@ import scala.scalajs.js.annotation._
 class UserRefreshClient () extends OAuth2Client {
   def this(clientId: String) = this()
   def this(options: UserRefreshClientOptions) = this()
+  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String) = this()
   def this(clientId: String, clientSecret: String) = this()
+  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
+  def this(clientId: js.UndefOr[scala.Nothing], clientSecret: String, refreshToken: String) = this()
+  def this(clientId: String, clientSecret: js.UndefOr[scala.Nothing], refreshToken: String) = this()
   def this(clientId: String, clientSecret: String, refreshToken: String) = this()
   var _refreshToken: js.UndefOr[String | Null] = js.native
   var fromStreamAsync: js.Any = js.native

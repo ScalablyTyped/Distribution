@@ -17,6 +17,7 @@ trait API extends js.Object {
   def Bookmarks(elementId: String): Double = js.native
   def Bookmarks(elementId: String, options: BookmarksOptions): Double = js.native
   def Comments(elementId: String): Double = js.native
+  def Comments(elementId: String, options: js.UndefOr[scala.Nothing], pageId: String): Double = js.native
   def Comments(elementId: String, options: CommentsOptions): Double = js.native
   def Comments(elementId: String, options: CommentsOptions, pageId: String): Double = js.native
   def CommunityMessages(elementId: String, groupId: Double): typings.vkOpenapi.vk.OpenAPI.Widgets.CommunityMessages = js.native
@@ -24,6 +25,7 @@ trait API extends js.Object {
   def ContactUs(elementId: String, options: Nullable[ContactUsOptions], ownerId: Double): Double = js.native
   def Group(elementId: String, options: Nullable[GroupOptions], groupId: Double): Double = js.native
   def Like(elementId: String): Double = js.native
+  def Like(elementId: String, options: js.UndefOr[scala.Nothing], pageId: String): Double = js.native
   def Like(elementId: String, options: LikeOptions): Double = js.native
   def Like(elementId: String, options: LikeOptions, pageId: String): Double = js.native
   def Playlist(elementId: String, ownerId: Double, playlistId: Double, hash: String): Double = js.native
@@ -33,8 +35,71 @@ trait API extends js.Object {
   def Post(elementId: String, ownerId: Double, postId: Double, hash: String): Double = js.native
   def Post(elementId: String, ownerId: Double, postId: Double, hash: String, options: PostOptions): Double = js.native
   def Recommended(elementId: String): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: js.UndefOr[scala.Nothing],
+    verb: js.UndefOr[scala.Nothing],
+    sort: js.UndefOr[scala.Nothing],
+    target: RecommendedTarget
+  ): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: js.UndefOr[scala.Nothing],
+    verb: js.UndefOr[scala.Nothing],
+    sort: RecommendedSort
+  ): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: js.UndefOr[scala.Nothing],
+    verb: js.UndefOr[scala.Nothing],
+    sort: RecommendedSort,
+    target: RecommendedTarget
+  ): Double = js.native
+  def Recommended(elementId: String, options: js.UndefOr[scala.Nothing], verb: NumericBoolean): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: js.UndefOr[scala.Nothing],
+    verb: NumericBoolean,
+    sort: js.UndefOr[scala.Nothing],
+    target: RecommendedTarget
+  ): Double = js.native
+  def Recommended(elementId: String, options: js.UndefOr[scala.Nothing], verb: NumericBoolean, sort: RecommendedSort): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: js.UndefOr[scala.Nothing],
+    verb: NumericBoolean,
+    sort: RecommendedSort,
+    target: RecommendedTarget
+  ): Double = js.native
   def Recommended(elementId: String, options: RecommendedOptions): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: RecommendedOptions,
+    verb: js.UndefOr[scala.Nothing],
+    sort: js.UndefOr[scala.Nothing],
+    target: RecommendedTarget
+  ): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: RecommendedOptions,
+    verb: js.UndefOr[scala.Nothing],
+    sort: RecommendedSort
+  ): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: RecommendedOptions,
+    verb: js.UndefOr[scala.Nothing],
+    sort: RecommendedSort,
+    target: RecommendedTarget
+  ): Double = js.native
   def Recommended(elementId: String, options: RecommendedOptions, verb: NumericBoolean): Double = js.native
+  def Recommended(
+    elementId: String,
+    options: RecommendedOptions,
+    verb: NumericBoolean,
+    sort: js.UndefOr[scala.Nothing],
+    target: RecommendedTarget
+  ): Double = js.native
   def Recommended(elementId: String, options: RecommendedOptions, verb: NumericBoolean, sort: RecommendedSort): Double = js.native
   def Recommended(
     elementId: String,

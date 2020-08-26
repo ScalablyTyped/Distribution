@@ -54,6 +54,7 @@ class Window () extends EventEmitter {
   def setShowInTaskbar(show: Boolean): Unit = js.native
   def show(): Unit = js.native
   def showDevTools(): Unit = js.native
+  def showDevTools(id: js.UndefOr[scala.Nothing], headless: Boolean): Unit = js.native
   def showDevTools(id: String): Unit = js.native
   def showDevTools(id: String, headless: Boolean): Unit = js.native
   def showDevTools(id: HTMLIFrameElement): Unit = js.native

@@ -30,9 +30,13 @@ trait EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: js.Any */]
     */
   def listeners[T /* <: EventNames[EventTypes] */](event: T): js.Array[EventListener[EventTypes, T]] = js.native
   def off[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context, once: Boolean): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
   def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
   def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context, once: Boolean): this.type = js.native
+  def off[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   /**
     * Add a listener for a given event.
     */
@@ -52,9 +56,13 @@ trait EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: js.Any */]
     * Remove the listeners of a given event.
     */
   def removeListener[T /* <: EventNames[EventTypes] */](event: T): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: Context, once: Boolean): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
   def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T]): this.type = js.native
   def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context): this.type = js.native
   def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: Context, once: Boolean): this.type = js.native
+  def removeListener[T /* <: EventNames[EventTypes] */](event: T, fn: EventListener[EventTypes, T], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
 }
 
 @JSImport("eventemitter3", "EventEmitter")

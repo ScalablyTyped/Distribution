@@ -94,30 +94,62 @@ trait SchemaQuotaLimit extends js.Object {
 
 object SchemaQuotaLimit {
   @scala.inline
-  def apply(
-    defaultLimit: String = null,
-    description: String = null,
-    displayName: String = null,
-    duration: String = null,
-    freeTier: String = null,
-    maxLimit: String = null,
-    metric: String = null,
-    name: String = null,
-    unit: String = null,
-    values: StringDictionary[String] = null
-  ): SchemaQuotaLimit = {
+  def apply(): SchemaQuotaLimit = {
     val __obj = js.Dynamic.literal()
-    if (defaultLimit != null) __obj.updateDynamic("defaultLimit")(defaultLimit.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (freeTier != null) __obj.updateDynamic("freeTier")(freeTier.asInstanceOf[js.Any])
-    if (maxLimit != null) __obj.updateDynamic("maxLimit")(maxLimit.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuotaLimit]
   }
+  @scala.inline
+  implicit class SchemaQuotaLimitOps[Self <: SchemaQuotaLimit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultLimit(value: String): Self = this.set("defaultLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLimit: Self = this.set("defaultLimit", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setFreeTier(value: String): Self = this.set("freeTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreeTier: Self = this.set("freeTier", js.undefined)
+    @scala.inline
+    def setMaxLimit(value: String): Self = this.set("maxLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLimit: Self = this.set("maxLimit", js.undefined)
+    @scala.inline
+    def setMetric(value: String): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setValues(value: StringDictionary[String]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

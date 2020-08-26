@@ -22,7 +22,8 @@ trait Cascader
   def blur(): Unit = js.native
   def clearSelection(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
   def focus(): Unit = js.native
-  def generateFilteredOptions(prefixCls: js.UndefOr[String], renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
+  def generateFilteredOptions(prefixCls: js.UndefOr[scala.Nothing], renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
+  def generateFilteredOptions(prefixCls: String, renderEmpty: RenderEmptyHandler): js.Array[CascaderOptionType] = js.native
   def getLabel(): js.Any = js.native
   def getPopupPlacement(): String = js.native
   def getPopupPlacement(direction: String): String = js.native

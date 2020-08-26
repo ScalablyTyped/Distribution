@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/domutils/lib/element", "ElementExt.boxSizing")
+@JSImport("@lumino/domutils/types/element", "ElementExt.boxSizing")
 @js.native
 object boxSizing extends js.Object {
   /**

@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FfmpegCommandOptions extends js.Object {
-  var logger: js.UndefOr[FfmpegCommandLogger] = js.undefined
-  var niceness: js.UndefOr[Double] = js.undefined
-  var preset: js.UndefOr[String] = js.undefined
-  var presets: js.UndefOr[String] = js.undefined
-  var priority: js.UndefOr[Double] = js.undefined
-  var source: js.UndefOr[String | Readable] = js.undefined
-  var stdoutLines: js.UndefOr[Double] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var logger: js.UndefOr[FfmpegCommandLogger] = js.native
+  var niceness: js.UndefOr[Double] = js.native
+  var preset: js.UndefOr[String] = js.native
+  var presets: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[Double] = js.native
+  var source: js.UndefOr[String | Readable] = js.native
+  var stdoutLines: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object FfmpegCommandOptions {
   @scala.inline
-  def apply(
-    logger: FfmpegCommandLogger = null,
-    niceness: js.UndefOr[Double] = js.undefined,
-    preset: String = null,
-    presets: String = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    source: String | Readable = null,
-    stdoutLines: js.UndefOr[Double] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): FfmpegCommandOptions = {
+  def apply(): FfmpegCommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(niceness)) __obj.updateDynamic("niceness")(niceness.get.asInstanceOf[js.Any])
-    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
-    if (presets != null) __obj.updateDynamic("presets")(presets.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdoutLines)) __obj.updateDynamic("stdoutLines")(stdoutLines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FfmpegCommandOptions]
   }
+  @scala.inline
+  implicit class FfmpegCommandOptionsOps[Self <: FfmpegCommandOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogger(value: FfmpegCommandLogger): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setNiceness(value: Double): Self = this.set("niceness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNiceness: Self = this.set("niceness", js.undefined)
+    @scala.inline
+    def setPreset(value: String): Self = this.set("preset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreset: Self = this.set("preset", js.undefined)
+    @scala.inline
+    def setPresets(value: String): Self = this.set("presets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresets: Self = this.set("presets", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setSource(value: String | Readable): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStdoutLines(value: Double): Self = this.set("stdoutLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdoutLines: Self = this.set("stdoutLines", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

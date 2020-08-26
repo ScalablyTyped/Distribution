@@ -14,10 +14,26 @@ trait TrustedAdvisorCategorySpecificSummary extends js.Object {
 
 object TrustedAdvisorCategorySpecificSummary {
   @scala.inline
-  def apply(costOptimizing: TrustedAdvisorCostOptimizingSummary = null): TrustedAdvisorCategorySpecificSummary = {
+  def apply(): TrustedAdvisorCategorySpecificSummary = {
     val __obj = js.Dynamic.literal()
-    if (costOptimizing != null) __obj.updateDynamic("costOptimizing")(costOptimizing.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorCategorySpecificSummary]
   }
+  @scala.inline
+  implicit class TrustedAdvisorCategorySpecificSummaryOps[Self <: TrustedAdvisorCategorySpecificSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCostOptimizing(value: TrustedAdvisorCostOptimizingSummary): Self = this.set("costOptimizing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCostOptimizing: Self = this.set("costOptimizing", js.undefined)
+  }
+  
 }
 

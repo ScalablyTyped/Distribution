@@ -4,20 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigOptions extends js.Object {
   /**
     * Options for this plugin
     * see {@link https://github.com/joeljeske/karma-parallel#options}
     */
-  var parallelOptions: js.UndefOr[ParallelOptions] = js.undefined
+  var parallelOptions: js.UndefOr[ParallelOptions] = js.native
 }
 
 object ConfigOptions {
   @scala.inline
-  def apply(parallelOptions: ParallelOptions = null): ConfigOptions = {
+  def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (parallelOptions != null) __obj.updateDynamic("parallelOptions")(parallelOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  @scala.inline
+  implicit class ConfigOptionsOps[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParallelOptions(value: ParallelOptions): Self = this.set("parallelOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelOptions: Self = this.set("parallelOptions", js.undefined)
+  }
+  
 }
 

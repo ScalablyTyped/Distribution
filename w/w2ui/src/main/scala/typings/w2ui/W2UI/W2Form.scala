@@ -44,13 +44,16 @@ trait W2Form
   def reload(): Unit = js.native
   def reload(callback: js.Function): Unit = js.native
   def request(): Unit = js.native
+  def request(postData: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def request(postData: js.Object): Unit = js.native
   def request(postData: js.Object, callback: js.Function): Unit = js.native
   def save(): Unit = js.native
+  def save(postData: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def save(postData: js.Object): Unit = js.native
   def save(postData: js.Object, callback: js.Function): Unit = js.native
   def set(field: String, obj: js.Object): Boolean = js.native
   def submit(): Unit = js.native
+  def submit(postData: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def submit(postData: js.Object): Unit = js.native
   def submit(postData: js.Object, callback: js.Function): Unit = js.native
   def unlock(): Unit = js.native

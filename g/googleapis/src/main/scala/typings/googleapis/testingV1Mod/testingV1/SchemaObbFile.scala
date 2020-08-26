@@ -25,11 +25,30 @@ trait SchemaObbFile extends js.Object {
 
 object SchemaObbFile {
   @scala.inline
-  def apply(obb: SchemaFileReference = null, obbFileName: String = null): SchemaObbFile = {
+  def apply(): SchemaObbFile = {
     val __obj = js.Dynamic.literal()
-    if (obb != null) __obj.updateDynamic("obb")(obb.asInstanceOf[js.Any])
-    if (obbFileName != null) __obj.updateDynamic("obbFileName")(obbFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObbFile]
   }
+  @scala.inline
+  implicit class SchemaObbFileOps[Self <: SchemaObbFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObb(value: SchemaFileReference): Self = this.set("obb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObb: Self = this.set("obb", js.undefined)
+    @scala.inline
+    def setObbFileName(value: String): Self = this.set("obbFileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObbFileName: Self = this.set("obbFileName", js.undefined)
+  }
+  
 }
 

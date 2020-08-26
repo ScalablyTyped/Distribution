@@ -5,20 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<jsreport-core.jsreport-core.Request> */
+@js.native
 trait PartialRequest extends js.Object {
-  var data: js.UndefOr[js.Any] = js.undefined
-  var options: js.UndefOr[js.Object] = js.undefined
-  var template: js.UndefOr[PartialTemplate] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Object] = js.native
+  var template: js.UndefOr[PartialTemplate] = js.native
 }
 
 object PartialRequest {
   @scala.inline
-  def apply(data: js.Any = null, options: js.Object = null, template: PartialTemplate = null): PartialRequest = {
+  def apply(): PartialRequest = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRequest]
   }
+  @scala.inline
+  implicit class PartialRequestOps[Self <: PartialRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Object): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setTemplate(value: PartialTemplate): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+  }
+  
 }
 

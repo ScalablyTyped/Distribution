@@ -19,10 +19,28 @@ trait DatabaseEncryptionConfiguration extends js.Object {
 
 object DatabaseEncryptionConfiguration {
   @scala.inline
-  def apply(encryptionOption: Input[String], kmsKey: Input[String] = null): DatabaseEncryptionConfiguration = {
+  def apply(encryptionOption: Input[String]): DatabaseEncryptionConfiguration = {
     val __obj = js.Dynamic.literal(encryptionOption = encryptionOption.asInstanceOf[js.Any])
-    if (kmsKey != null) __obj.updateDynamic("kmsKey")(kmsKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseEncryptionConfiguration]
   }
+  @scala.inline
+  implicit class DatabaseEncryptionConfigurationOps[Self <: DatabaseEncryptionConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionOption(value: Input[String]): Self = this.set("encryptionOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKey(value: Input[String]): Self = this.set("kmsKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKey: Self = this.set("kmsKey", js.undefined)
+  }
+  
 }
 

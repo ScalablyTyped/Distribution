@@ -37,20 +37,42 @@ trait SchemaOutcome extends js.Object {
 
 object SchemaOutcome {
   @scala.inline
-  def apply(
-    failureDetail: SchemaFailureDetail = null,
-    inconclusiveDetail: SchemaInconclusiveDetail = null,
-    skippedDetail: SchemaSkippedDetail = null,
-    successDetail: SchemaSuccessDetail = null,
-    summary: String = null
-  ): SchemaOutcome = {
+  def apply(): SchemaOutcome = {
     val __obj = js.Dynamic.literal()
-    if (failureDetail != null) __obj.updateDynamic("failureDetail")(failureDetail.asInstanceOf[js.Any])
-    if (inconclusiveDetail != null) __obj.updateDynamic("inconclusiveDetail")(inconclusiveDetail.asInstanceOf[js.Any])
-    if (skippedDetail != null) __obj.updateDynamic("skippedDetail")(skippedDetail.asInstanceOf[js.Any])
-    if (successDetail != null) __obj.updateDynamic("successDetail")(successDetail.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOutcome]
   }
+  @scala.inline
+  implicit class SchemaOutcomeOps[Self <: SchemaOutcome] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailureDetail(value: SchemaFailureDetail): Self = this.set("failureDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDetail: Self = this.set("failureDetail", js.undefined)
+    @scala.inline
+    def setInconclusiveDetail(value: SchemaInconclusiveDetail): Self = this.set("inconclusiveDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInconclusiveDetail: Self = this.set("inconclusiveDetail", js.undefined)
+    @scala.inline
+    def setSkippedDetail(value: SchemaSkippedDetail): Self = this.set("skippedDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippedDetail: Self = this.set("skippedDetail", js.undefined)
+    @scala.inline
+    def setSuccessDetail(value: SchemaSuccessDetail): Self = this.set("successDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessDetail: Self = this.set("successDetail", js.undefined)
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ OAuth provider for express
 | Full name          | express-oauth-server |
 | Keywords           | express, oauth, oauth2 |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 113076 |
+| # dependents       | 5 |
+| # downloads        | 124822 |
 | # stars            | 8 |
 
 ## Links

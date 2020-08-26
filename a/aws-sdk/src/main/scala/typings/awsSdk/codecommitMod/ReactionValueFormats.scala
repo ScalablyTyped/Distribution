@@ -22,12 +22,34 @@ trait ReactionValueFormats extends js.Object {
 
 object ReactionValueFormats {
   @scala.inline
-  def apply(emoji: ReactionEmoji = null, shortCode: ReactionShortCode = null, unicode: ReactionUnicode = null): ReactionValueFormats = {
+  def apply(): ReactionValueFormats = {
     val __obj = js.Dynamic.literal()
-    if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
-    if (shortCode != null) __obj.updateDynamic("shortCode")(shortCode.asInstanceOf[js.Any])
-    if (unicode != null) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionValueFormats]
   }
+  @scala.inline
+  implicit class ReactionValueFormatsOps[Self <: ReactionValueFormats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmoji(value: ReactionEmoji): Self = this.set("emoji", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmoji: Self = this.set("emoji", js.undefined)
+    @scala.inline
+    def setShortCode(value: ReactionShortCode): Self = this.set("shortCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortCode: Self = this.set("shortCode", js.undefined)
+    @scala.inline
+    def setUnicode(value: ReactionUnicode): Self = this.set("unicode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnicode: Self = this.set("unicode", js.undefined)
+  }
+  
 }
 

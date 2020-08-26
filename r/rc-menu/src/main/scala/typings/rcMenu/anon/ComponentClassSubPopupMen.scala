@@ -13,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.ComponentClass<rc-menu.rc-menu/lib/SubPopupMenu.SubPopupMenuProps, any> & {getWrappedInstance (): rc-menu.rc-menu/lib/SubPopupMenu.SubPopupMenu} */
+/* Inlined react.react.ComponentClass<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps, any> & {getWrappedInstance (): rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenu} */
 @js.native
 trait ComponentClassSubPopupMen
   extends Instantiable1[/* props */ SubPopupMenuProps, Component[SubPopupMenuProps, js.Any, js.Any]]

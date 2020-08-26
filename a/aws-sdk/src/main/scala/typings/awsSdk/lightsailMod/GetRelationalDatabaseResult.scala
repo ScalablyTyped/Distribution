@@ -14,10 +14,26 @@ trait GetRelationalDatabaseResult extends js.Object {
 
 object GetRelationalDatabaseResult {
   @scala.inline
-  def apply(relationalDatabase: RelationalDatabase = null): GetRelationalDatabaseResult = {
+  def apply(): GetRelationalDatabaseResult = {
     val __obj = js.Dynamic.literal()
-    if (relationalDatabase != null) __obj.updateDynamic("relationalDatabase")(relationalDatabase.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseResult]
   }
+  @scala.inline
+  implicit class GetRelationalDatabaseResultOps[Self <: GetRelationalDatabaseResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelationalDatabase(value: RelationalDatabase): Self = this.set("relationalDatabase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationalDatabase: Self = this.set("relationalDatabase", js.undefined)
+  }
+  
 }
 

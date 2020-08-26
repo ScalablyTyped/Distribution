@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * success state, the sequence also returns `SUCCESS`.
   *
   */
+@js.native
 trait Sequence extends BaseNode
 
 object Sequence {

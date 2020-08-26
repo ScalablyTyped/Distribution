@@ -11,10 +11,26 @@ trait UpdateReservationResponse extends js.Object {
 
 object UpdateReservationResponse {
   @scala.inline
-  def apply(Reservation: Reservation = null): UpdateReservationResponse = {
+  def apply(): UpdateReservationResponse = {
     val __obj = js.Dynamic.literal()
-    if (Reservation != null) __obj.updateDynamic("Reservation")(Reservation.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateReservationResponse]
   }
+  @scala.inline
+  implicit class UpdateReservationResponseOps[Self <: UpdateReservationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReservation(value: Reservation): Self = this.set("Reservation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservation: Self = this.set("Reservation", js.undefined)
+  }
+  
 }
 

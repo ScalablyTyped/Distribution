@@ -12,8 +12,8 @@ object createStyle extends js.Object {
     * Creates a &lt;style&gt; DOM element from a string that contains CSS.
     * @example
     * var css = 'body {height: 100;}';
-    var style = pc.createStyle(css);
-    document.head.appendChild(style);
+    * var style = pc.createStyle(css);
+    * document.head.appendChild(style);
     * @param cssString - A string that contains valid CSS.
     * @returns The style DOM element.
     */

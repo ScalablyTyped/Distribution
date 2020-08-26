@@ -13,6 +13,29 @@ trait RelayRefetchProp extends js.Object {
   def refetch(refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables]): Disposable = js.native
   def refetch(
     refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+    renderVariables: js.UndefOr[scala.Nothing],
+    observerOrCallback: js.UndefOr[ObserverOrCallback],
+    options: RefetchOptions
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+    renderVariables: js.UndefOr[scala.Nothing],
+    observerOrCallback: Null,
+    options: RefetchOptions
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+    renderVariables: js.UndefOr[scala.Nothing],
+    observerOrCallback: ObserverOrCallback
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+    renderVariables: Null,
+    observerOrCallback: js.UndefOr[ObserverOrCallback],
+    options: RefetchOptions
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
     renderVariables: Null,
     observerOrCallback: Null,
     options: RefetchOptions
@@ -21,12 +44,6 @@ trait RelayRefetchProp extends js.Object {
     refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
     renderVariables: Null,
     observerOrCallback: ObserverOrCallback
-  ): Disposable = js.native
-  def refetch(
-    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-    renderVariables: Null,
-    observerOrCallback: ObserverOrCallback,
-    options: RefetchOptions
   ): Disposable = js.native
   def refetch(
     refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
@@ -35,6 +52,12 @@ trait RelayRefetchProp extends js.Object {
   def refetch(
     refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
     renderVariables: Variables,
+    observerOrCallback: js.UndefOr[ObserverOrCallback],
+    options: RefetchOptions
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+    renderVariables: Variables,
     observerOrCallback: Null,
     options: RefetchOptions
   ): Disposable = js.native
@@ -43,13 +66,30 @@ trait RelayRefetchProp extends js.Object {
     renderVariables: Variables,
     observerOrCallback: ObserverOrCallback
   ): Disposable = js.native
+  def refetch(refetchVariables: Variables): Disposable = js.native
   def refetch(
-    refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-    renderVariables: Variables,
-    observerOrCallback: ObserverOrCallback,
+    refetchVariables: Variables,
+    renderVariables: js.UndefOr[scala.Nothing],
+    observerOrCallback: js.UndefOr[ObserverOrCallback],
     options: RefetchOptions
   ): Disposable = js.native
-  def refetch(refetchVariables: Variables): Disposable = js.native
+  def refetch(
+    refetchVariables: Variables,
+    renderVariables: js.UndefOr[scala.Nothing],
+    observerOrCallback: Null,
+    options: RefetchOptions
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: Variables,
+    renderVariables: js.UndefOr[scala.Nothing],
+    observerOrCallback: ObserverOrCallback
+  ): Disposable = js.native
+  def refetch(
+    refetchVariables: Variables,
+    renderVariables: Null,
+    observerOrCallback: js.UndefOr[ObserverOrCallback],
+    options: RefetchOptions
+  ): Disposable = js.native
   def refetch(
     refetchVariables: Variables,
     renderVariables: Null,
@@ -57,13 +97,13 @@ trait RelayRefetchProp extends js.Object {
     options: RefetchOptions
   ): Disposable = js.native
   def refetch(refetchVariables: Variables, renderVariables: Null, observerOrCallback: ObserverOrCallback): Disposable = js.native
+  def refetch(refetchVariables: Variables, renderVariables: Variables): Disposable = js.native
   def refetch(
     refetchVariables: Variables,
-    renderVariables: Null,
-    observerOrCallback: ObserverOrCallback,
+    renderVariables: Variables,
+    observerOrCallback: js.UndefOr[ObserverOrCallback],
     options: RefetchOptions
   ): Disposable = js.native
-  def refetch(refetchVariables: Variables, renderVariables: Variables): Disposable = js.native
   def refetch(
     refetchVariables: Variables,
     renderVariables: Variables,
@@ -71,11 +111,5 @@ trait RelayRefetchProp extends js.Object {
     options: RefetchOptions
   ): Disposable = js.native
   def refetch(refetchVariables: Variables, renderVariables: Variables, observerOrCallback: ObserverOrCallback): Disposable = js.native
-  def refetch(
-    refetchVariables: Variables,
-    renderVariables: Variables,
-    observerOrCallback: ObserverOrCallback,
-    options: RefetchOptions
-  ): Disposable = js.native
 }
 

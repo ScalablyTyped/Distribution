@@ -62,12 +62,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAlgorithmOutput, Unit]
   ): Request[CreateAlgorithmOutput, AWSError] = js.native
   /**
-    * Creates a running App for the specified UserProfile. Supported Apps are JupyterServer, KernelGateway, and TensorBoard. This operation is automatically invoked by Amazon SageMaker Studio upon access to the associated Domain, and when new kernel configurations are selected by the user. A user may have multiple Apps active simultaneously. UserProfiles are limited to 5 concurrently running Apps at a time.
+    * Creates a running App for the specified UserProfile. Supported Apps are JupyterServer and KernelGateway. This operation is automatically invoked by Amazon SageMaker Studio upon access to the associated Domain, and when new kernel configurations are selected by the user. A user may have multiple Apps active simultaneously.
     */
   def createApp(): Request[CreateAppResponse, AWSError] = js.native
   def createApp(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppResponse, Unit]): Request[CreateAppResponse, AWSError] = js.native
   /**
-    * Creates a running App for the specified UserProfile. Supported Apps are JupyterServer, KernelGateway, and TensorBoard. This operation is automatically invoked by Amazon SageMaker Studio upon access to the associated Domain, and when new kernel configurations are selected by the user. A user may have multiple Apps active simultaneously. UserProfiles are limited to 5 concurrently running Apps at a time.
+    * Creates a running App for the specified UserProfile. Supported Apps are JupyterServer and KernelGateway. This operation is automatically invoked by Amazon SageMaker Studio upon access to the associated Domain, and when new kernel configurations are selected by the user. A user may have multiple Apps active simultaneously.
     */
   def createApp(params: CreateAppRequest): Request[CreateAppResponse, AWSError] = js.native
   def createApp(
@@ -101,12 +101,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateCodeRepositoryOutput, Unit]
   ): Request[CreateCodeRepositoryOutput, AWSError] = js.native
   /**
-    * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on     The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+    * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on    The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job.    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
     */
   def createCompilationJob(): Request[CreateCompilationJobResponse, AWSError] = js.native
   def createCompilationJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateCompilationJobResponse, Unit]): Request[CreateCompilationJobResponse, AWSError] = js.native
   /**
-    * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on     The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+    * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on    The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job.    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
     */
   def createCompilationJob(params: CreateCompilationJobRequest): Request[CreateCompilationJobResponse, AWSError] = js.native
   def createCompilationJob(
@@ -153,12 +153,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointConfigOutput, Unit]
   ): Request[CreateEndpointConfigOutput, AWSError] = js.native
   /**
-    * Creates an Amazon SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model. The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use Amazon SageMaker Studio or the Amazon SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the AWS SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
+    * Creates an SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model. The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use Amazon SageMaker Studio or the Amazon SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the AWS SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
     */
   def createExperiment(): Request[CreateExperimentResponse, AWSError] = js.native
   def createExperiment(callback: js.Function2[/* err */ AWSError, /* data */ CreateExperimentResponse, Unit]): Request[CreateExperimentResponse, AWSError] = js.native
   /**
-    * Creates an Amazon SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model. The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use Amazon SageMaker Studio or the Amazon SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the AWS SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
+    * Creates an SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model. The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use Amazon SageMaker Studio or the Amazon SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the AWS SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
     */
   def createExperiment(params: CreateExperimentRequest): Request[CreateExperimentResponse, AWSError] = js.native
   def createExperiment(
@@ -391,6 +391,19 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateUserProfileResponse, Unit]
   ): Request[CreateUserProfileResponse, AWSError] = js.native
   /**
+    * Use this operation to create a workforce. This operation will return an error if a workforce already exists in the AWS Region that you specify. You can only create one workforce in each AWS Region. If you want to create a new workforce in an AWS Region where the a workforce already exists, use the API operation to delete the existing workforce and then use this operation to create a new workforce. To create a private workforce using Amazon Cognito, you must specify a Cognito user pool in CognitoConfig. You can also create an Amazon Cognito workforce using the Amazon SageMaker console. For more information, see  Create a Private Workforce (Amazon Cognito). To create a private workforce using your own OIDC Identity Provider (IdP), specify your IdP configuration in OidcConfig. You must create a OIDC IdP workforce using this API operation. For more information, see  Create a Private Workforce (OIDC IdP).
+    */
+  def createWorkforce(): Request[CreateWorkforceResponse, AWSError] = js.native
+  def createWorkforce(callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkforceResponse, Unit]): Request[CreateWorkforceResponse, AWSError] = js.native
+  /**
+    * Use this operation to create a workforce. This operation will return an error if a workforce already exists in the AWS Region that you specify. You can only create one workforce in each AWS Region. If you want to create a new workforce in an AWS Region where the a workforce already exists, use the API operation to delete the existing workforce and then use this operation to create a new workforce. To create a private workforce using Amazon Cognito, you must specify a Cognito user pool in CognitoConfig. You can also create an Amazon Cognito workforce using the Amazon SageMaker console. For more information, see  Create a Private Workforce (Amazon Cognito). To create a private workforce using your own OIDC Identity Provider (IdP), specify your IdP configuration in OidcConfig. You must create a OIDC IdP workforce using this API operation. For more information, see  Create a Private Workforce (OIDC IdP).
+    */
+  def createWorkforce(params: CreateWorkforceRequest): Request[CreateWorkforceResponse, AWSError] = js.native
+  def createWorkforce(
+    params: CreateWorkforceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkforceResponse, Unit]
+  ): Request[CreateWorkforceResponse, AWSError] = js.native
+  /**
     * Creates a new work team for labeling your data. A work team is defined by one or more Amazon Cognito user pools. You must first create the user pools before you can create a work team. You cannot create more than 25 work teams in an account and region.
     */
   def createWorkteam(): Request[CreateWorkteamResponse, AWSError] = js.native
@@ -505,6 +518,19 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteFlowDefinitionResponse, Unit]
   ): Request[DeleteFlowDefinitionResponse, AWSError] = js.native
   /**
+    * Use this operation to delete a human task user interface (worker task template).  To see a list of human task user interfaces (work task templates) in your account, use . When you delete a worker task template, it no longer appears when you call ListHumanTaskUis.
+    */
+  def deleteHumanTaskUi(): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
+  def deleteHumanTaskUi(callback: js.Function2[/* err */ AWSError, /* data */ DeleteHumanTaskUiResponse, Unit]): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
+  /**
+    * Use this operation to delete a human task user interface (worker task template).  To see a list of human task user interfaces (work task templates) in your account, use . When you delete a worker task template, it no longer appears when you call ListHumanTaskUis.
+    */
+  def deleteHumanTaskUi(params: DeleteHumanTaskUiRequest): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
+  def deleteHumanTaskUi(
+    params: DeleteHumanTaskUiRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteHumanTaskUiResponse, Unit]
+  ): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
+  /**
     * Deletes a model. The DeleteModel API deletes only the model entry that was created in Amazon SageMaker when you called the CreateModel API. It does not delete model artifacts, inference code, or the IAM role that you specified when creating the model. 
     */
   def deleteModel(): Request[js.Object, AWSError] = js.native
@@ -618,6 +644,19 @@ trait SageMaker extends Service {
     params: DeleteUserProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Use this operation to delete a workforce. If you want to create a new workforce in an AWS Region where the a workforce already exists, use this operation to delete the existing workforce and then use to create a new workforce.
+    */
+  def deleteWorkforce(): Request[DeleteWorkforceResponse, AWSError] = js.native
+  def deleteWorkforce(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkforceResponse, Unit]): Request[DeleteWorkforceResponse, AWSError] = js.native
+  /**
+    * Use this operation to delete a workforce. If you want to create a new workforce in an AWS Region where the a workforce already exists, use this operation to delete the existing workforce and then use to create a new workforce.
+    */
+  def deleteWorkforce(params: DeleteWorkforceRequest): Request[DeleteWorkforceResponse, AWSError] = js.native
+  def deleteWorkforce(
+    params: DeleteWorkforceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkforceResponse, Unit]
+  ): Request[DeleteWorkforceResponse, AWSError] = js.native
   /**
     * Deletes an existing work team. This operation can't be undone.
     */
@@ -762,12 +801,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFlowDefinitionResponse, Unit]
   ): Request[DescribeFlowDefinitionResponse, AWSError] = js.native
   /**
-    * Returns information about the requested human task user interface.
+    * Returns information about the requested human task user interface (worker task template).
     */
   def describeHumanTaskUi(): Request[DescribeHumanTaskUiResponse, AWSError] = js.native
   def describeHumanTaskUi(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHumanTaskUiResponse, Unit]): Request[DescribeHumanTaskUiResponse, AWSError] = js.native
   /**
-    * Returns information about the requested human task user interface.
+    * Returns information about the requested human task user interface (worker task template).
     */
   def describeHumanTaskUi(params: DescribeHumanTaskUiRequest): Request[DescribeHumanTaskUiResponse, AWSError] = js.native
   def describeHumanTaskUi(
@@ -1412,6 +1451,19 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListUserProfilesResponse, Unit]
   ): Request[ListUserProfilesResponse, AWSError] = js.native
   /**
+    * Use this operation to list all private and vendor workforces in an AWS Region. Note that you can only have one private workforce per AWS Region.
+    */
+  def listWorkforces(): Request[ListWorkforcesResponse, AWSError] = js.native
+  def listWorkforces(callback: js.Function2[/* err */ AWSError, /* data */ ListWorkforcesResponse, Unit]): Request[ListWorkforcesResponse, AWSError] = js.native
+  /**
+    * Use this operation to list all private and vendor workforces in an AWS Region. Note that you can only have one private workforce per AWS Region.
+    */
+  def listWorkforces(params: ListWorkforcesRequest): Request[ListWorkforcesResponse, AWSError] = js.native
+  def listWorkforces(
+    params: ListWorkforcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListWorkforcesResponse, Unit]
+  ): Request[ListWorkforcesResponse, AWSError] = js.native
+  /**
     * Gets a list of work teams that you have defined in a region. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
     */
   def listWorkteams(): Request[ListWorkteamsResponse, AWSError] = js.native
@@ -1738,12 +1790,12 @@ trait SageMaker extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserProfileResponse, Unit]
   ): Request[UpdateUserProfileResponse, AWSError] = js.native
   /**
-    * Restricts access to tasks assigned to workers in the specified workforce to those within specific ranges of IP addresses. You specify allowed IP addresses by creating a list of up to four CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied access and get a Not Found error message on the worker portal. After restricting access with this operation, you can see the allowed IP values for a private workforce with the operation.  This operation applies only to private workforces. 
+    * Restricts access to tasks assigned to workers in the specified workforce to those within specific ranges of IP addresses. You specify allowed IP addresses by creating a list of up to ten CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied access and get a Not Found error message on the worker portal. After restricting access with this operation, you can see the allowed IP values for a private workforce with the operation.  This operation applies only to private workforces. 
     */
   def updateWorkforce(): Request[UpdateWorkforceResponse, AWSError] = js.native
   def updateWorkforce(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkforceResponse, Unit]): Request[UpdateWorkforceResponse, AWSError] = js.native
   /**
-    * Restricts access to tasks assigned to workers in the specified workforce to those within specific ranges of IP addresses. You specify allowed IP addresses by creating a list of up to four CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied access and get a Not Found error message on the worker portal. After restricting access with this operation, you can see the allowed IP values for a private workforce with the operation.  This operation applies only to private workforces. 
+    * Restricts access to tasks assigned to workers in the specified workforce to those within specific ranges of IP addresses. You specify allowed IP addresses by creating a list of up to ten CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied access and get a Not Found error message on the worker portal. After restricting access with this operation, you can see the allowed IP values for a private workforce with the operation.  This operation applies only to private workforces. 
     */
   def updateWorkforce(params: UpdateWorkforceRequest): Request[UpdateWorkforceResponse, AWSError] = js.native
   def updateWorkforce(

@@ -35,25 +35,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined { readonly channels  :3,  readonly labels  :'hwb', readonly rgb (hwb : color-convert.color-convert/conversions.HWB): color-convert.color-convert/conversions.RGB, readonly hcg (hwb : color-convert.color-convert/conversions.HWB): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hwb & {[ F in keyof color-convert.color-convert/route.hwb ]: {  raw  :color-convert.color-convert/route.hwb[F]}} */
+/* Inlined { readonly channels :3,  readonly labels :'hwb', readonly rgb (hwb : color-convert.color-convert/conversions.HWB): color-convert.color-convert/conversions.RGB, readonly hcg (hwb : color-convert.color-convert/conversions.HWB): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hwb & {[ F in keyof color-convert.color-convert/route.hwb ]: {  raw :color-convert.color-convert/route.hwb[F]}} */
 @js.native
 trait readonlychannels3readonlyHcg extends js.Object {
-  var ansi16: `45` = js.native
-  var ansi256: `44` = js.native
-  var apple: `53` = js.native
+  var ansi16: `53` = js.native
+  var ansi256: `45` = js.native
+  var apple: `42` = js.native
   val channels: `3` = js.native
-  var cmyk: `48` = js.native
-  var gray: `51` = js.native
-  var hcg: `43` = js.native
-  var hex: `46` = js.native
-  var hsl: `49` = js.native
-  var hsv: `52` = js.native
-  var keyword: `50` = js.native
+  var cmyk: `46` = js.native
+  var gray: `44` = js.native
+  var hcg: `47` = js.native
+  var hex: `51` = js.native
+  var hsl: `52` = js.native
+  var hsv: `49` = js.native
+  var keyword: `43` = js.native
   var lab: `54` = js.native
   val labels: hwb = js.native
-  var lch: `47` = js.native
+  var lch: `50` = js.native
   var rgb: `41` = js.native
-  var xyz: `42` = js.native
+  var xyz: `48` = js.native
   def ansi16(from: HWB_): ANSI16_ = js.native
   def ansi256(from: HWB_): ANSI256_ = js.native
   def apple(from: HWB_): APPLE_ = js.native

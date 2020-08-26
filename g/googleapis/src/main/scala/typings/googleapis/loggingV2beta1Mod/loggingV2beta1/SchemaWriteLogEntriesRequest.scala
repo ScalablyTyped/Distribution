@@ -78,22 +78,48 @@ trait SchemaWriteLogEntriesRequest extends js.Object {
 
 object SchemaWriteLogEntriesRequest {
   @scala.inline
-  def apply(
-    dryRun: js.UndefOr[Boolean] = js.undefined,
-    entries: js.Array[SchemaLogEntry] = null,
-    labels: StringDictionary[String] = null,
-    logName: String = null,
-    partialSuccess: js.UndefOr[Boolean] = js.undefined,
-    resource: SchemaMonitoredResource = null
-  ): SchemaWriteLogEntriesRequest = {
+  def apply(): SchemaWriteLogEntriesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.get.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (logName != null) __obj.updateDynamic("logName")(logName.asInstanceOf[js.Any])
-    if (!js.isUndefined(partialSuccess)) __obj.updateDynamic("partialSuccess")(partialSuccess.get.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWriteLogEntriesRequest]
   }
+  @scala.inline
+  implicit class SchemaWriteLogEntriesRequestOps[Self <: SchemaWriteLogEntriesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("dryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("dryRun", js.undefined)
+    @scala.inline
+    def setEntriesVarargs(value: SchemaLogEntry*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[SchemaLogEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLogName(value: String): Self = this.set("logName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogName: Self = this.set("logName", js.undefined)
+    @scala.inline
+    def setPartialSuccess(value: Boolean): Self = this.set("partialSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartialSuccess: Self = this.set("partialSuccess", js.undefined)
+    @scala.inline
+    def setResource(value: SchemaMonitoredResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+  }
+  
 }
 

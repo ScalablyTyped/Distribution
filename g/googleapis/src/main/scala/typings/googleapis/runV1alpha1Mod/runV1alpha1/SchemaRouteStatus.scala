@@ -52,22 +52,50 @@ trait SchemaRouteStatus extends js.Object {
 
 object SchemaRouteStatus {
   @scala.inline
-  def apply(
-    address: SchemaAddressable = null,
-    conditions: js.Array[SchemaRouteCondition] = null,
-    domain: String = null,
-    domainInternal: String = null,
-    observedGeneration: js.UndefOr[Double] = js.undefined,
-    traffic: js.Array[SchemaTrafficTarget] = null
-  ): SchemaRouteStatus = {
+  def apply(): SchemaRouteStatus = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (domainInternal != null) __obj.updateDynamic("domainInternal")(domainInternal.asInstanceOf[js.Any])
-    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
-    if (traffic != null) __obj.updateDynamic("traffic")(traffic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouteStatus]
   }
+  @scala.inline
+  implicit class SchemaRouteStatusOps[Self <: SchemaRouteStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: SchemaAddressable): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: SchemaRouteCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaRouteCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setDomainInternal(value: String): Self = this.set("domainInternal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainInternal: Self = this.set("domainInternal", js.undefined)
+    @scala.inline
+    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    @scala.inline
+    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = this.set("traffic", js.Array(value :_*))
+    @scala.inline
+    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = this.set("traffic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraffic: Self = this.set("traffic", js.undefined)
+  }
+  
 }
 

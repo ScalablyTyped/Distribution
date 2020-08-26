@@ -9,83 +9,141 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchBarProps extends js.Object {
-  var alwaysShowBackButton: js.UndefOr[Boolean] = js.undefined
-  var autoCorrect: js.UndefOr[Boolean] = js.undefined
-  var height: Double
-  var iconBackName: js.UndefOr[String] = js.undefined
-  var iconCloseName: js.UndefOr[String] = js.undefined
-  var iconColor: js.UndefOr[String] = js.undefined
-  var iconPadding: js.UndefOr[Double] = js.undefined
-  var iconSearchName: js.UndefOr[String] = js.undefined
-  var iconSize: js.UndefOr[Double] = js.undefined
-  var inputProps: js.UndefOr[TextInputProps] = js.undefined
-  var inputStyle: js.UndefOr[TextStyle] = js.undefined
-  var onBackPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onEndEditing: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onSearchChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
-  var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var padding: js.UndefOr[Double] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var placeholderColor: js.UndefOr[String] = js.undefined
-  var returnKeyType: js.UndefOr[ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS] = js.undefined
-  var textStyle: js.UndefOr[TextStyle] = js.undefined
+  var alwaysShowBackButton: js.UndefOr[Boolean] = js.native
+  var autoCorrect: js.UndefOr[Boolean] = js.native
+  var height: Double = js.native
+  var iconBackName: js.UndefOr[String] = js.native
+  var iconCloseName: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.native
+  var iconPadding: js.UndefOr[Double] = js.native
+  var iconSearchName: js.UndefOr[String] = js.native
+  var iconSize: js.UndefOr[Double] = js.native
+  var inputProps: js.UndefOr[TextInputProps] = js.native
+  var inputStyle: js.UndefOr[TextStyle] = js.native
+  var onBackPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onEndEditing: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+  var onSearchChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onSubmitEditing: js.UndefOr[js.Function0[Unit]] = js.native
+  var padding: js.UndefOr[Double] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var placeholderColor: js.UndefOr[String] = js.native
+  var returnKeyType: js.UndefOr[ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS] = js.native
+  var textStyle: js.UndefOr[TextStyle] = js.native
 }
 
 object SearchBarProps {
   @scala.inline
-  def apply(
-    height: Double,
-    alwaysShowBackButton: js.UndefOr[Boolean] = js.undefined,
-    autoCorrect: js.UndefOr[Boolean] = js.undefined,
-    iconBackName: String = null,
-    iconCloseName: String = null,
-    iconColor: String = null,
-    iconPadding: js.UndefOr[Double] = js.undefined,
-    iconSearchName: String = null,
-    iconSize: js.UndefOr[Double] = js.undefined,
-    inputProps: TextInputProps = null,
-    inputStyle: TextStyle = null,
-    onBackPress: () => Unit = null,
-    onBlur: () => Unit = null,
-    onClose: () => Unit = null,
-    onEndEditing: () => Unit = null,
-    onFocus: () => Unit = null,
-    onSearchChange: /* text */ String => Unit = null,
-    onSubmitEditing: () => Unit = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    placeholder: String = null,
-    placeholderColor: String = null,
-    returnKeyType: ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS = null,
-    textStyle: TextStyle = null
-  ): SearchBarProps = {
+  def apply(height: Double): SearchBarProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysShowBackButton)) __obj.updateDynamic("alwaysShowBackButton")(alwaysShowBackButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.get.asInstanceOf[js.Any])
-    if (iconBackName != null) __obj.updateDynamic("iconBackName")(iconBackName.asInstanceOf[js.Any])
-    if (iconCloseName != null) __obj.updateDynamic("iconCloseName")(iconCloseName.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconPadding)) __obj.updateDynamic("iconPadding")(iconPadding.get.asInstanceOf[js.Any])
-    if (iconSearchName != null) __obj.updateDynamic("iconSearchName")(iconSearchName.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconSize)) __obj.updateDynamic("iconSize")(iconSize.get.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    if (onBackPress != null) __obj.updateDynamic("onBackPress")(js.Any.fromFunction0(onBackPress))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onEndEditing != null) __obj.updateDynamic("onEndEditing")(js.Any.fromFunction0(onEndEditing))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction1(onSearchChange))
-    if (onSubmitEditing != null) __obj.updateDynamic("onSubmitEditing")(js.Any.fromFunction0(onSubmitEditing))
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor.asInstanceOf[js.Any])
-    if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchBarProps]
   }
+  @scala.inline
+  implicit class SearchBarPropsOps[Self <: SearchBarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlwaysShowBackButton(value: Boolean): Self = this.set("alwaysShowBackButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysShowBackButton: Self = this.set("alwaysShowBackButton", js.undefined)
+    @scala.inline
+    def setAutoCorrect(value: Boolean): Self = this.set("autoCorrect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCorrect: Self = this.set("autoCorrect", js.undefined)
+    @scala.inline
+    def setIconBackName(value: String): Self = this.set("iconBackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconBackName: Self = this.set("iconBackName", js.undefined)
+    @scala.inline
+    def setIconCloseName(value: String): Self = this.set("iconCloseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconCloseName: Self = this.set("iconCloseName", js.undefined)
+    @scala.inline
+    def setIconColor(value: String): Self = this.set("iconColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconColor: Self = this.set("iconColor", js.undefined)
+    @scala.inline
+    def setIconPadding(value: Double): Self = this.set("iconPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconPadding: Self = this.set("iconPadding", js.undefined)
+    @scala.inline
+    def setIconSearchName(value: String): Self = this.set("iconSearchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconSearchName: Self = this.set("iconSearchName", js.undefined)
+    @scala.inline
+    def setIconSize(value: Double): Self = this.set("iconSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconSize: Self = this.set("iconSize", js.undefined)
+    @scala.inline
+    def setInputProps(value: TextInputProps): Self = this.set("inputProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputProps: Self = this.set("inputProps", js.undefined)
+    @scala.inline
+    def setInputStyle(value: TextStyle): Self = this.set("inputStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputStyle: Self = this.set("inputStyle", js.undefined)
+    @scala.inline
+    def setOnBackPress(value: () => Unit): Self = this.set("onBackPress", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBackPress: Self = this.set("onBackPress", js.undefined)
+    @scala.inline
+    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => Unit): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnEndEditing(value: () => Unit): Self = this.set("onEndEditing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnEndEditing: Self = this.set("onEndEditing", js.undefined)
+    @scala.inline
+    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnSearchChange(value: /* text */ String => Unit): Self = this.set("onSearchChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSearchChange: Self = this.set("onSearchChange", js.undefined)
+    @scala.inline
+    def setOnSubmitEditing(value: () => Unit): Self = this.set("onSubmitEditing", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnSubmitEditing: Self = this.set("onSubmitEditing", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPlaceholderColor(value: String): Self = this.set("placeholderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderColor: Self = this.set("placeholderColor", js.undefined)
+    @scala.inline
+    def setReturnKeyType(value: ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS): Self = this.set("returnKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnKeyType: Self = this.set("returnKeyType", js.undefined)
+    @scala.inline
+    def setTextStyle(value: TextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+  }
+  
 }
 

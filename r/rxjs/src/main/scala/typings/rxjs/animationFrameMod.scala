@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object animationFrameMod extends js.Object {
   val animationFrame: AnimationFrameScheduler = js.native
+  val animationFrameScheduler: AnimationFrameScheduler = js.native
 }
 

@@ -22,16 +22,34 @@ trait IsBinaryFile extends js.Object {
 
 object IsBinaryFile {
   @scala.inline
-  def apply(
-    base: js.UndefOr[CapitalBoolean] = js.undefined,
-    destination: js.UndefOr[CapitalBoolean] = js.undefined,
-    source: js.UndefOr[CapitalBoolean] = js.undefined
-  ): IsBinaryFile = {
+  def apply(): IsBinaryFile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(base)) __obj.updateDynamic("base")(base.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(destination)) __obj.updateDynamic("destination")(destination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(source)) __obj.updateDynamic("source")(source.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsBinaryFile]
   }
+  @scala.inline
+  implicit class IsBinaryFileOps[Self <: IsBinaryFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBase(value: CapitalBoolean): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBase: Self = this.set("base", js.undefined)
+    @scala.inline
+    def setDestination(value: CapitalBoolean): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setSource(value: CapitalBoolean): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

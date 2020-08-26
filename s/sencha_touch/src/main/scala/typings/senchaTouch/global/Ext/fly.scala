@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fly extends js.Object {
   def apply(): IElement = js.native
+  def apply(element: js.UndefOr[scala.Nothing], named: java.lang.String): IElement = js.native
   def apply(element: js.Any): IElement = js.native
   def apply(element: js.Any, named: java.lang.String): IElement = js.native
 }

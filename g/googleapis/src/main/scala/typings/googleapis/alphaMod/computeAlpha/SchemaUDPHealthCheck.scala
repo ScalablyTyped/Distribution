@@ -30,18 +30,38 @@ trait SchemaUDPHealthCheck extends js.Object {
 
 object SchemaUDPHealthCheck {
   @scala.inline
-  def apply(
-    port: js.UndefOr[Double] = js.undefined,
-    portName: String = null,
-    request: String = null,
-    response: String = null
-  ): SchemaUDPHealthCheck = {
+  def apply(): SchemaUDPHealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUDPHealthCheck]
   }
+  @scala.inline
+  implicit class SchemaUDPHealthCheckOps[Self <: SchemaUDPHealthCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPortName(value: String): Self = this.set("portName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortName: Self = this.set("portName", js.undefined)
+    @scala.inline
+    def setRequest(value: String): Self = this.set("request", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+    @scala.inline
+    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+  }
+  
 }
 

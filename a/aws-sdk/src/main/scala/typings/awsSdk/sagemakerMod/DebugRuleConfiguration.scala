@@ -38,22 +38,46 @@ trait DebugRuleConfiguration extends js.Object {
 
 object DebugRuleConfiguration {
   @scala.inline
-  def apply(
-    RuleConfigurationName: RuleConfigurationName,
-    RuleEvaluatorImage: AlgorithmImage,
-    InstanceType: ProcessingInstanceType = null,
-    LocalPath: DirectoryPath = null,
-    RuleParameters: RuleParameters = null,
-    S3OutputPath: S3Uri = null,
-    VolumeSizeInGB: js.UndefOr[OptionalVolumeSizeInGB] = js.undefined
-  ): DebugRuleConfiguration = {
+  def apply(RuleConfigurationName: RuleConfigurationName, RuleEvaluatorImage: AlgorithmImage): DebugRuleConfiguration = {
     val __obj = js.Dynamic.literal(RuleConfigurationName = RuleConfigurationName.asInstanceOf[js.Any], RuleEvaluatorImage = RuleEvaluatorImage.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LocalPath != null) __obj.updateDynamic("LocalPath")(LocalPath.asInstanceOf[js.Any])
-    if (RuleParameters != null) __obj.updateDynamic("RuleParameters")(RuleParameters.asInstanceOf[js.Any])
-    if (S3OutputPath != null) __obj.updateDynamic("S3OutputPath")(S3OutputPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSizeInGB)) __obj.updateDynamic("VolumeSizeInGB")(VolumeSizeInGB.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugRuleConfiguration]
   }
+  @scala.inline
+  implicit class DebugRuleConfigurationOps[Self <: DebugRuleConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleConfigurationName(value: RuleConfigurationName): Self = this.set("RuleConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuleEvaluatorImage(value: AlgorithmImage): Self = this.set("RuleEvaluatorImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: ProcessingInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLocalPath(value: DirectoryPath): Self = this.set("LocalPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalPath: Self = this.set("LocalPath", js.undefined)
+    @scala.inline
+    def setRuleParameters(value: RuleParameters): Self = this.set("RuleParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleParameters: Self = this.set("RuleParameters", js.undefined)
+    @scala.inline
+    def setS3OutputPath(value: S3Uri): Self = this.set("S3OutputPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3OutputPath: Self = this.set("S3OutputPath", js.undefined)
+    @scala.inline
+    def setVolumeSizeInGB(value: OptionalVolumeSizeInGB): Self = this.set("VolumeSizeInGB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSizeInGB: Self = this.set("VolumeSizeInGB", js.undefined)
+  }
+  
 }
 

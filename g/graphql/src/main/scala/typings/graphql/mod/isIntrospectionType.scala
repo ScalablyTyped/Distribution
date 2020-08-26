@@ -1,5 +1,6 @@
 package typings.graphql.mod
 
+import typings.graphql.definitionMod.GraphQLNamedType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql", "isIntrospectionType")
 @js.native
 object isIntrospectionType extends js.Object {
-  def apply(`type`: js.Any): Boolean = js.native
+  def apply(`type`: GraphQLNamedType): Boolean = js.native
 }
 

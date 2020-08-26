@@ -46,28 +46,58 @@ trait ListCodeRepositoriesInput extends js.Object {
 
 object ListCodeRepositoriesInput {
   @scala.inline
-  def apply(
-    CreationTimeAfter: CreationTime = null,
-    CreationTimeBefore: CreationTime = null,
-    LastModifiedTimeAfter: Timestamp = null,
-    LastModifiedTimeBefore: Timestamp = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NameContains: CodeRepositoryNameContains = null,
-    NextToken: NextToken = null,
-    SortBy: CodeRepositorySortBy = null,
-    SortOrder: CodeRepositorySortOrder = null
-  ): ListCodeRepositoriesInput = {
+  def apply(): ListCodeRepositoriesInput = {
     val __obj = js.Dynamic.literal()
-    if (CreationTimeAfter != null) __obj.updateDynamic("CreationTimeAfter")(CreationTimeAfter.asInstanceOf[js.Any])
-    if (CreationTimeBefore != null) __obj.updateDynamic("CreationTimeBefore")(CreationTimeBefore.asInstanceOf[js.Any])
-    if (LastModifiedTimeAfter != null) __obj.updateDynamic("LastModifiedTimeAfter")(LastModifiedTimeAfter.asInstanceOf[js.Any])
-    if (LastModifiedTimeBefore != null) __obj.updateDynamic("LastModifiedTimeBefore")(LastModifiedTimeBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NameContains != null) __obj.updateDynamic("NameContains")(NameContains.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SortBy != null) __obj.updateDynamic("SortBy")(SortBy.asInstanceOf[js.Any])
-    if (SortOrder != null) __obj.updateDynamic("SortOrder")(SortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCodeRepositoriesInput]
   }
+  @scala.inline
+  implicit class ListCodeRepositoriesInputOps[Self <: ListCodeRepositoriesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimeAfter(value: CreationTime): Self = this.set("CreationTimeAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeAfter: Self = this.set("CreationTimeAfter", js.undefined)
+    @scala.inline
+    def setCreationTimeBefore(value: CreationTime): Self = this.set("CreationTimeBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimeBefore: Self = this.set("CreationTimeBefore", js.undefined)
+    @scala.inline
+    def setLastModifiedTimeAfter(value: Timestamp): Self = this.set("LastModifiedTimeAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTimeAfter: Self = this.set("LastModifiedTimeAfter", js.undefined)
+    @scala.inline
+    def setLastModifiedTimeBefore(value: Timestamp): Self = this.set("LastModifiedTimeBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTimeBefore: Self = this.set("LastModifiedTimeBefore", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNameContains(value: CodeRepositoryNameContains): Self = this.set("NameContains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameContains: Self = this.set("NameContains", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSortBy(value: CodeRepositorySortBy): Self = this.set("SortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("SortBy", js.undefined)
+    @scala.inline
+    def setSortOrder(value: CodeRepositorySortOrder): Self = this.set("SortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("SortOrder", js.undefined)
+  }
+  
 }
 

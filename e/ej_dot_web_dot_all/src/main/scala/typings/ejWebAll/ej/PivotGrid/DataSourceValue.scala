@@ -5,69 +5,104 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceValue extends js.Object {
   /** Allows you to set the axis name to place measures items.
     * @Default {rows}
     */
-  var axis: js.UndefOr[String] = js.undefined
+  var axis: js.UndefOr[String] = js.native
   /** Allows to set the custom theme for values.
     */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** Allows you to set the display caption for the item in the relational datasource.
     */
-  var fieldCaption: js.UndefOr[String] = js.undefined
+  var fieldCaption: js.UndefOr[String] = js.native
   /** Allows you to bind the item by using its unique name as field name for the relational datasource.
     */
-  var fieldName: js.UndefOr[String] = js.undefined
+  var fieldName: js.UndefOr[String] = js.native
   /** Allows to set the format for values.
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /** This property is set to display the formatted values with format types in the PivotGrid.
     */
-  var formatString: js.UndefOr[String] = js.undefined
+  var formatString: js.UndefOr[String] = js.native
   /** Allows to set the formula for calculation of values for calculated members in the relational datasource.
     */
-  var formula: js.UndefOr[String] = js.undefined
+  var formula: js.UndefOr[String] = js.native
   /** Indicates whether the field is a calculated field with the relational datasource or not.
     * @Default {false}
     */
-  var isCalculatedField: js.UndefOr[Boolean] = js.undefined
+  var isCalculatedField: js.UndefOr[Boolean] = js.native
   /** This holds the list of unique names of measures to bind them from the OLAP cube.
     * @Default {[]}
     */
-  var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
+  var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.native
   /** Allows to set the type of PivotGrid summary calculation in the value field with the relational datasource.
     * @Default {ej.PivotAnalysis.SummaryType.Sum}
     */
-  var summaryType: js.UndefOr[SummaryType | String] = js.undefined
+  var summaryType: js.UndefOr[SummaryType | String] = js.native
 }
 
 object DataSourceValue {
   @scala.inline
-  def apply(
-    axis: String = null,
-    cssClass: String = null,
-    fieldCaption: String = null,
-    fieldName: String = null,
-    format: String = null,
-    formatString: String = null,
-    formula: String = null,
-    isCalculatedField: js.UndefOr[Boolean] = js.undefined,
-    measures: js.Array[DataSourceValuesMeasure] = null,
-    summaryType: SummaryType | String = null
-  ): DataSourceValue = {
+  def apply(): DataSourceValue = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption.asInstanceOf[js.Any])
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formatString != null) __obj.updateDynamic("formatString")(formatString.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCalculatedField)) __obj.updateDynamic("isCalculatedField")(isCalculatedField.get.asInstanceOf[js.Any])
-    if (measures != null) __obj.updateDynamic("measures")(measures.asInstanceOf[js.Any])
-    if (summaryType != null) __obj.updateDynamic("summaryType")(summaryType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceValue]
   }
+  @scala.inline
+  implicit class DataSourceValueOps[Self <: DataSourceValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: String): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setFieldCaption(value: String): Self = this.set("fieldCaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldCaption: Self = this.set("fieldCaption", js.undefined)
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFormatString(value: String): Self = this.set("formatString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatString: Self = this.set("formatString", js.undefined)
+    @scala.inline
+    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormula: Self = this.set("formula", js.undefined)
+    @scala.inline
+    def setIsCalculatedField(value: Boolean): Self = this.set("isCalculatedField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCalculatedField: Self = this.set("isCalculatedField", js.undefined)
+    @scala.inline
+    def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = this.set("measures", js.Array(value :_*))
+    @scala.inline
+    def setMeasures(value: js.Array[DataSourceValuesMeasure]): Self = this.set("measures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeasures: Self = this.set("measures", js.undefined)
+    @scala.inline
+    def setSummaryType(value: SummaryType | String): Self = this.set("summaryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryType: Self = this.set("summaryType", js.undefined)
+  }
+  
 }
 

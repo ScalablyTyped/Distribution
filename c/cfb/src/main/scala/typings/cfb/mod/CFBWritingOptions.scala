@@ -1,41 +1,52 @@
 package typings.cfb.mod
 
-import typings.cfb.cfbStrings.array
-import typings.cfb.cfbStrings.base64
-import typings.cfb.cfbStrings.binary
-import typings.cfb.cfbStrings.buffer
 import typings.cfb.cfbStrings.cfb
-import typings.cfb.cfbStrings.file
+import typings.cfb.cfbStrings.mad
 import typings.cfb.cfbStrings.zip
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CFBWritingOptions extends CFBCommonOptions {
   /** Enable compression (ZIP only) */
-  var compression: js.UndefOr[Boolean] = js.undefined
+  var compression: js.UndefOr[Boolean] = js.native
   /** Output file type */
-  var fileType: js.UndefOr[cfb | zip] = js.undefined
+  var fileType: js.UndefOr[cfb | zip | mad] = js.native
   /** Override default root entry name (CFB only) */
-  var root: js.UndefOr[String] = js.undefined
+  var root: js.UndefOr[String] = js.native
 }
 
 object CFBWritingOptions {
   @scala.inline
-  def apply(
-    WTF: js.UndefOr[Boolean] = js.undefined,
-    compression: js.UndefOr[Boolean] = js.undefined,
-    fileType: cfb | zip = null,
-    root: String = null,
-    `type`: base64 | binary | buffer | file | array = null
-  ): CFBWritingOptions = {
+  def apply(): CFBWritingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.get.asInstanceOf[js.Any])
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CFBWritingOptions]
   }
+  @scala.inline
+  implicit class CFBWritingOptionsOps[Self <: CFBWritingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompression(value: Boolean): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setFileType(value: cfb | zip | mad): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileType: Self = this.set("fileType", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

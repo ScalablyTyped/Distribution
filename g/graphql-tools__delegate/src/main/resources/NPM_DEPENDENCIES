@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@graphql-tools/delegate" : "6.0.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@graphql-tools/delegate" : "6.0.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

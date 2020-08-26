@@ -87,6 +87,7 @@ object ^ extends js.Object {
   def `unsigned short`(V: js.Any): Double = js.native
   def `unsigned short`(V: js.Any, opts: IntegerOptions): Double = js.native
   def void(): Unit = js.native
+  def void(V: js.UndefOr[scala.Nothing], opts: Options): Unit = js.native
   def void(V: js.Any): Unit = js.native
   def void(V: js.Any, opts: Options): Unit = js.native
 }

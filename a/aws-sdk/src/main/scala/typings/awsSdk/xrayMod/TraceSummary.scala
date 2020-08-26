@@ -90,50 +90,118 @@ trait TraceSummary extends js.Object {
 
 object TraceSummary {
   @scala.inline
-  def apply(
-    Annotations: Annotations = null,
-    AvailabilityZones: TraceAvailabilityZones = null,
-    Duration: js.UndefOr[NullableDouble] = js.undefined,
-    EntryPoint: ServiceId = null,
-    ErrorRootCauses: ErrorRootCauses = null,
-    FaultRootCauses: FaultRootCauses = null,
-    HasError: js.UndefOr[NullableBoolean] = js.undefined,
-    HasFault: js.UndefOr[NullableBoolean] = js.undefined,
-    HasThrottle: js.UndefOr[NullableBoolean] = js.undefined,
-    Http: Http = null,
-    Id: TraceId = null,
-    InstanceIds: TraceInstanceIds = null,
-    IsPartial: js.UndefOr[NullableBoolean] = js.undefined,
-    MatchedEventTime: Timestamp = null,
-    ResourceARNs: TraceResourceARNs = null,
-    ResponseTime: js.UndefOr[NullableDouble] = js.undefined,
-    ResponseTimeRootCauses: ResponseTimeRootCauses = null,
-    Revision: js.UndefOr[Integer] = js.undefined,
-    ServiceIds: ServiceIds = null,
-    Users: TraceUsers = null
-  ): TraceSummary = {
+  def apply(): TraceSummary = {
     val __obj = js.Dynamic.literal()
-    if (Annotations != null) __obj.updateDynamic("Annotations")(Annotations.asInstanceOf[js.Any])
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (EntryPoint != null) __obj.updateDynamic("EntryPoint")(EntryPoint.asInstanceOf[js.Any])
-    if (ErrorRootCauses != null) __obj.updateDynamic("ErrorRootCauses")(ErrorRootCauses.asInstanceOf[js.Any])
-    if (FaultRootCauses != null) __obj.updateDynamic("FaultRootCauses")(FaultRootCauses.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasError)) __obj.updateDynamic("HasError")(HasError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasFault)) __obj.updateDynamic("HasFault")(HasFault.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HasThrottle)) __obj.updateDynamic("HasThrottle")(HasThrottle.get.asInstanceOf[js.Any])
-    if (Http != null) __obj.updateDynamic("Http")(Http.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsPartial)) __obj.updateDynamic("IsPartial")(IsPartial.get.asInstanceOf[js.Any])
-    if (MatchedEventTime != null) __obj.updateDynamic("MatchedEventTime")(MatchedEventTime.asInstanceOf[js.Any])
-    if (ResourceARNs != null) __obj.updateDynamic("ResourceARNs")(ResourceARNs.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResponseTime)) __obj.updateDynamic("ResponseTime")(ResponseTime.get.asInstanceOf[js.Any])
-    if (ResponseTimeRootCauses != null) __obj.updateDynamic("ResponseTimeRootCauses")(ResponseTimeRootCauses.asInstanceOf[js.Any])
-    if (!js.isUndefined(Revision)) __obj.updateDynamic("Revision")(Revision.get.asInstanceOf[js.Any])
-    if (ServiceIds != null) __obj.updateDynamic("ServiceIds")(ServiceIds.asInstanceOf[js.Any])
-    if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceSummary]
   }
+  @scala.inline
+  implicit class TraceSummaryOps[Self <: TraceSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotations(value: Annotations): Self = this.set("Annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("Annotations", js.undefined)
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: AvailabilityZoneDetail*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: TraceAvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setDuration(value: NullableDouble): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setEntryPoint(value: ServiceId): Self = this.set("EntryPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPoint: Self = this.set("EntryPoint", js.undefined)
+    @scala.inline
+    def setErrorRootCausesVarargs(value: ErrorRootCause*): Self = this.set("ErrorRootCauses", js.Array(value :_*))
+    @scala.inline
+    def setErrorRootCauses(value: ErrorRootCauses): Self = this.set("ErrorRootCauses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorRootCauses: Self = this.set("ErrorRootCauses", js.undefined)
+    @scala.inline
+    def setFaultRootCausesVarargs(value: FaultRootCause*): Self = this.set("FaultRootCauses", js.Array(value :_*))
+    @scala.inline
+    def setFaultRootCauses(value: FaultRootCauses): Self = this.set("FaultRootCauses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaultRootCauses: Self = this.set("FaultRootCauses", js.undefined)
+    @scala.inline
+    def setHasError(value: NullableBoolean): Self = this.set("HasError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasError: Self = this.set("HasError", js.undefined)
+    @scala.inline
+    def setHasFault(value: NullableBoolean): Self = this.set("HasFault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasFault: Self = this.set("HasFault", js.undefined)
+    @scala.inline
+    def setHasThrottle(value: NullableBoolean): Self = this.set("HasThrottle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasThrottle: Self = this.set("HasThrottle", js.undefined)
+    @scala.inline
+    def setHttp(value: Http): Self = this.set("Http", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp: Self = this.set("Http", js.undefined)
+    @scala.inline
+    def setId(value: TraceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInstanceIdsVarargs(value: InstanceIdDetail*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: TraceInstanceIds): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    @scala.inline
+    def setIsPartial(value: NullableBoolean): Self = this.set("IsPartial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsPartial: Self = this.set("IsPartial", js.undefined)
+    @scala.inline
+    def setMatchedEventTime(value: Timestamp): Self = this.set("MatchedEventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchedEventTime: Self = this.set("MatchedEventTime", js.undefined)
+    @scala.inline
+    def setResourceARNsVarargs(value: ResourceARNDetail*): Self = this.set("ResourceARNs", js.Array(value :_*))
+    @scala.inline
+    def setResourceARNs(value: TraceResourceARNs): Self = this.set("ResourceARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceARNs: Self = this.set("ResourceARNs", js.undefined)
+    @scala.inline
+    def setResponseTime(value: NullableDouble): Self = this.set("ResponseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTime: Self = this.set("ResponseTime", js.undefined)
+    @scala.inline
+    def setResponseTimeRootCausesVarargs(value: ResponseTimeRootCause*): Self = this.set("ResponseTimeRootCauses", js.Array(value :_*))
+    @scala.inline
+    def setResponseTimeRootCauses(value: ResponseTimeRootCauses): Self = this.set("ResponseTimeRootCauses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTimeRootCauses: Self = this.set("ResponseTimeRootCauses", js.undefined)
+    @scala.inline
+    def setRevision(value: Integer): Self = this.set("Revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("Revision", js.undefined)
+    @scala.inline
+    def setServiceIdsVarargs(value: ServiceId*): Self = this.set("ServiceIds", js.Array(value :_*))
+    @scala.inline
+    def setServiceIds(value: ServiceIds): Self = this.set("ServiceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceIds: Self = this.set("ServiceIds", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: TraceUser*): Self = this.set("Users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: TraceUsers): Self = this.set("Users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("Users", js.undefined)
+  }
+  
 }
 

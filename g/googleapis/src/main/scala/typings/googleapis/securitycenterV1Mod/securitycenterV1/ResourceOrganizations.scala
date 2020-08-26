@@ -30,6 +30,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def getOrganizationSettings(): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def getOrganizationSettings(callback: BodyResponseCallback[SchemaOrganizationSettings]): Unit = js.native
+  def getOrganizationSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def getOrganizationSettings(params: ParamsResourceOrganizationsGetorganizationsettings): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def getOrganizationSettings(
     params: ParamsResourceOrganizationsGetorganizationsettings,
@@ -62,6 +63,7 @@ class ResourceOrganizations protected () extends js.Object {
     */
   def updateOrganizationSettings(): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def updateOrganizationSettings(callback: BodyResponseCallback[SchemaOrganizationSettings]): Unit = js.native
+  def updateOrganizationSettings(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def updateOrganizationSettings(params: ParamsResourceOrganizationsUpdateorganizationsettings): GaxiosPromise[SchemaOrganizationSettings] = js.native
   def updateOrganizationSettings(
     params: ParamsResourceOrganizationsUpdateorganizationsettings,

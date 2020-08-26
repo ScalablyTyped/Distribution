@@ -13,9 +13,8 @@ trait WizardContextRenderProps extends js.Object
 
 object WizardContextRenderProps {
   @scala.inline
-  def Render(render: /* wizard */ WizardContext => ReactNode = null): WizardContextRenderProps = {
+  def Render(): WizardContextRenderProps = {
     val __obj = js.Dynamic.literal()
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
     __obj.asInstanceOf[WizardContextRenderProps]
   }
   @scala.inline

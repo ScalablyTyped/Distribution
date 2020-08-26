@@ -6,51 +6,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupContinuedMessage extends js.Object {
-  var column: js.UndefOr[this.type] = js.undefined
-  var columnIndex: js.UndefOr[Double] = js.undefined
-  var component: js.UndefOr[dxDataGrid] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var displayValue: js.UndefOr[js.Any] = js.undefined
-  var groupContinuedMessage: js.UndefOr[String] = js.undefined
-  var groupContinuesMessage: js.UndefOr[String] = js.undefined
-  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
-  var rowIndex: js.UndefOr[Double] = js.undefined
-  var summaryItems: js.UndefOr[js.Array[_]] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var column: js.UndefOr[this.type] = js.native
+  var columnIndex: js.UndefOr[Double] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var displayValue: js.UndefOr[js.Any] = js.native
+  var groupContinuedMessage: js.UndefOr[String] = js.native
+  var groupContinuesMessage: js.UndefOr[String] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var rowIndex: js.UndefOr[Double] = js.native
+  var summaryItems: js.UndefOr[js.Array[_]] = js.native
+  var text: js.UndefOr[String] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object GroupContinuedMessage {
   @scala.inline
-  def apply(
-    column: GroupContinuedMessage = null,
-    columnIndex: js.UndefOr[Double] = js.undefined,
-    component: dxDataGrid = null,
-    data: js.Any = null,
-    displayValue: js.Any = null,
-    groupContinuedMessage: String = null,
-    groupContinuesMessage: String = null,
-    row: dxDataGridRowObject = null,
-    rowIndex: js.UndefOr[Double] = js.undefined,
-    summaryItems: js.Array[_] = null,
-    text: String = null,
-    value: js.Any = null
-  ): GroupContinuedMessage = {
+  def apply(): GroupContinuedMessage = {
     val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (displayValue != null) __obj.updateDynamic("displayValue")(displayValue.asInstanceOf[js.Any])
-    if (groupContinuedMessage != null) __obj.updateDynamic("groupContinuedMessage")(groupContinuedMessage.asInstanceOf[js.Any])
-    if (groupContinuesMessage != null) __obj.updateDynamic("groupContinuesMessage")(groupContinuesMessage.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
-    if (summaryItems != null) __obj.updateDynamic("summaryItems")(summaryItems.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupContinuedMessage]
   }
+  @scala.inline
+  implicit class GroupContinuedMessageOps[Self <: GroupContinuedMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumn(value: GroupContinuedMessage): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    @scala.inline
+    def setComponent(value: dxDataGrid): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDisplayValue(value: js.Any): Self = this.set("displayValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayValue: Self = this.set("displayValue", js.undefined)
+    @scala.inline
+    def setGroupContinuedMessage(value: String): Self = this.set("groupContinuedMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupContinuedMessage: Self = this.set("groupContinuedMessage", js.undefined)
+    @scala.inline
+    def setGroupContinuesMessage(value: String): Self = this.set("groupContinuesMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupContinuesMessage: Self = this.set("groupContinuesMessage", js.undefined)
+    @scala.inline
+    def setRow(value: dxDataGridRowObject): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    @scala.inline
+    def setSummaryItemsVarargs(value: js.Any*): Self = this.set("summaryItems", js.Array(value :_*))
+    @scala.inline
+    def setSummaryItems(value: js.Array[_]): Self = this.set("summaryItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryItems: Self = this.set("summaryItems", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -123,10 +123,6 @@ class Feature () extends Object {
     * @observable
     */
   def setId(id: Double): Unit = js.native
-  def setStyle(): Unit = js.native
-  def setStyle(style: js.Array[Style]): Unit = js.native
-  def setStyle(style: FeatureStyleFunction): Unit = js.native
-  def setStyle(style: StyleFunction): Unit = js.native
   /**
     * Set the style for the feature.  This can be a single style object, an array
     * of styles, or a function that takes a resolution and returns an array of
@@ -135,6 +131,10 @@ class Feature () extends Object {
     * @api stable
     * @observable
     */
+  def setStyle(): Unit = js.native
+  def setStyle(style: js.Array[Style]): Unit = js.native
+  def setStyle(style: FeatureStyleFunction): Unit = js.native
+  def setStyle(style: StyleFunction): Unit = js.native
   def setStyle(style: Style): Unit = js.native
 }
 

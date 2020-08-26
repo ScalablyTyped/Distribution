@@ -11,8 +11,8 @@ Detect the indentation of code
 | Full name          | detect-indent |
 | Keywords           | indent, indentation, detect, infer, identify, code, string, text, source, space, tab |
 | # releases         | 2 |
-| # dependents       | 275 |
-| # downloads        | 330916097 |
+| # dependents       | 282 |
+| # downloads        | 332547399 |
 | # stars            | 5 |
 
 ## Links

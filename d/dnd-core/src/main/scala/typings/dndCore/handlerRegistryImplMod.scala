@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object handlerRegistryImplMod extends js.Object {
   @js.native
-  trait HandlerRegistryImpl extends HandlerRegistry {
+  class HandlerRegistryImpl protected () extends HandlerRegistry {
+    def this(store: Store[State, AnyAction]) = this()
     var addHandler: js.Any = js.native
     var dragSources: js.Any = js.native
     var dropTargets: js.Any = js.native
@@ -33,11 +34,6 @@ object handlerRegistryImplMod extends js.Object {
     def pinSource(sourceId: String): Unit = js.native
     def removeSource(sourceId: String): Unit = js.native
     def removeTarget(targetId: String): Unit = js.native
-  }
-  
-  @js.native
-  class default protected () extends HandlerRegistryImpl {
-    def this(store: Store[State, AnyAction]) = this()
   }
   
 }

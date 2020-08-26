@@ -1,5 +1,7 @@
 package typings.arcgisJsApi
 
+import typings.arcgisJsApi.arcgisJsApiStrings.enter
+import typings.arcgisJsApi.arcgisJsApiStrings.exit
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -21,11 +23,14 @@ object widgetMod extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#cssTransition)
     *
-    * @param type The animation/transition type.  **Possible Values:** enter | exit
+    * @param type The animation/transition type.
     * @param className The animation/transition class name.
     *
     */
-  def cssTransition(`type`: String, className: String): js.Function = js.native
+  @JSName("cssTransition")
+  def cssTransition_enter(`type`: enter, className: String): js.Function = js.native
+  @JSName("cssTransition")
+  def cssTransition_exit(`type`: exit, className: String): js.Function = js.native
   /**
     * Utility method used to determine if the directionality of the text of the document is right-to-left.
     *
@@ -34,15 +39,6 @@ object widgetMod extends js.Object {
     *
     */
   def isRTL(): Boolean = js.native
-  /**
-    * Utility method used for joining CSS classes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#join)
-    *
-    * @param classNames The class names to join.
-    *
-    */
-  def join(classNames: String*): String = js.native
   /**
     * This convenience decorator marks a property for automatic rendering. It is useful when you want rendering to be scheduled whenever the decorated property changes. Many times this decorator is used in conjunction with the [@property](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html) decorator. Rendering on deep properties is also supported by providing a path to a property deeper in the instance.
     *
@@ -86,6 +82,7 @@ object widgetMod extends js.Object {
       *
       */
     def tsx(selector: String): js.Any = js.native
+    def tsx(selector: String, properties: js.UndefOr[scala.Nothing], children: js.Any): js.Any = js.native
     def tsx(selector: String, properties: js.Any): js.Any = js.native
     def tsx(selector: String, properties: js.Any, children: js.Any): js.Any = js.native
   }

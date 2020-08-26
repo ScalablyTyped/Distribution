@@ -1,6 +1,6 @@
 package typings.rxDom.mod.rxAugmentingMod.DOM
 
-import typings.rxLiteAggregates.Rx.Observable
+import typings.rx.Rx.Observable
 import typings.std.MutationEvent
 import typings.std.MutationObserverInit
 import typings.std.Node

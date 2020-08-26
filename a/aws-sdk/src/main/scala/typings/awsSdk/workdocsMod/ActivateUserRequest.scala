@@ -18,10 +18,28 @@ trait ActivateUserRequest extends js.Object {
 
 object ActivateUserRequest {
   @scala.inline
-  def apply(UserId: IdType, AuthenticationToken: AuthenticationHeaderType = null): ActivateUserRequest = {
+  def apply(UserId: IdType): ActivateUserRequest = {
     val __obj = js.Dynamic.literal(UserId = UserId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivateUserRequest]
   }
+  @scala.inline
+  implicit class ActivateUserRequestOps[Self <: ActivateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserId(value: IdType): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+  }
+  
 }
 

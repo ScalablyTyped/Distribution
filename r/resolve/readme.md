@@ -10,9 +10,9 @@ resolve like require.resolve() on behalf of files asynchronously and synchronous
 | ------------------ | :-------------: |
 | Full name          | resolve |
 | Keywords           | resolve, require, node, module |
-| # releases         | 20 |
-| # dependents       | 4055 |
-| # downloads        | 954679919 |
+| # releases         | 19 |
+| # dependents       | 4083 |
+| # downloads        | 963589517 |
 | # stars            | 29 |
 
 ## Links

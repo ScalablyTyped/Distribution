@@ -22,11 +22,32 @@ trait ArchiveOutputSettings extends js.Object {
 
 object ArchiveOutputSettings {
   @scala.inline
-  def apply(ContainerSettings: ArchiveContainerSettings, Extension: string = null, NameModifier: string = null): ArchiveOutputSettings = {
+  def apply(ContainerSettings: ArchiveContainerSettings): ArchiveOutputSettings = {
     val __obj = js.Dynamic.literal(ContainerSettings = ContainerSettings.asInstanceOf[js.Any])
-    if (Extension != null) __obj.updateDynamic("Extension")(Extension.asInstanceOf[js.Any])
-    if (NameModifier != null) __obj.updateDynamic("NameModifier")(NameModifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArchiveOutputSettings]
   }
+  @scala.inline
+  implicit class ArchiveOutputSettingsOps[Self <: ArchiveOutputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerSettings(value: ArchiveContainerSettings): Self = this.set("ContainerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtension(value: string): Self = this.set("Extension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtension: Self = this.set("Extension", js.undefined)
+    @scala.inline
+    def setNameModifier(value: string): Self = this.set("NameModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameModifier: Self = this.set("NameModifier", js.undefined)
+  }
+  
 }
 

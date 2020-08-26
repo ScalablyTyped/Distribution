@@ -26,18 +26,38 @@ trait TransitionState extends js.Object {
 
 object TransitionState {
   @scala.inline
-  def apply(
-    disabledReason: DisabledReason = null,
-    enabled: js.UndefOr[Enabled] = js.undefined,
-    lastChangedAt: LastChangedAt = null,
-    lastChangedBy: LastChangedBy = null
-  ): TransitionState = {
+  def apply(): TransitionState = {
     val __obj = js.Dynamic.literal()
-    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (lastChangedAt != null) __obj.updateDynamic("lastChangedAt")(lastChangedAt.asInstanceOf[js.Any])
-    if (lastChangedBy != null) __obj.updateDynamic("lastChangedBy")(lastChangedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionState]
   }
+  @scala.inline
+  implicit class TransitionStateOps[Self <: TransitionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabledReason(value: DisabledReason): Self = this.set("disabledReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledReason: Self = this.set("disabledReason", js.undefined)
+    @scala.inline
+    def setEnabled(value: Enabled): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setLastChangedAt(value: LastChangedAt): Self = this.set("lastChangedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastChangedAt: Self = this.set("lastChangedAt", js.undefined)
+    @scala.inline
+    def setLastChangedBy(value: LastChangedBy): Self = this.set("lastChangedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastChangedBy: Self = this.set("lastChangedBy", js.undefined)
+  }
+  
 }
 

@@ -172,8 +172,105 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#addPoint
     */
   def addPoint(options: PointOptionsType): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: js.UndefOr[scala.Nothing],
+    animation: js.UndefOr[scala.Nothing],
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: js.UndefOr[scala.Nothing],
+    animation: Boolean
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: js.UndefOr[scala.Nothing],
+    animation: Boolean,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: js.UndefOr[scala.Nothing],
+    animation: AnimationOptionsObject
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: js.UndefOr[scala.Nothing],
+    animation: AnimationOptionsObject,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], shift: Boolean): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: Boolean,
+    animation: js.UndefOr[scala.Nothing],
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], shift: Boolean, animation: Boolean): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: Boolean,
+    animation: Boolean,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: Boolean,
+    animation: AnimationOptionsObject
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: js.UndefOr[scala.Nothing],
+    shift: Boolean,
+    animation: AnimationOptionsObject,
+    withEvent: Boolean
+  ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Boolean,
+    shift: js.UndefOr[scala.Nothing],
+    animation: js.UndefOr[scala.Nothing],
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(options: PointOptionsType, redraw: Boolean, shift: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Boolean,
+    shift: js.UndefOr[scala.Nothing],
+    animation: Boolean,
+    withEvent: Boolean
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Boolean,
+    shift: js.UndefOr[scala.Nothing],
+    animation: AnimationOptionsObject
+  ): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Boolean,
+    shift: js.UndefOr[scala.Nothing],
+    animation: AnimationOptionsObject,
+    withEvent: Boolean
+  ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean): Unit = js.native
+  def addPoint(
+    options: PointOptionsType,
+    redraw: Boolean,
+    shift: Boolean,
+    animation: js.UndefOr[scala.Nothing],
+    withEvent: Boolean
+  ): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
   def addPoint(options: PointOptionsType, redraw: Boolean, shift: Boolean, animation: AnimationOptionsObject): Unit = js.native
@@ -263,7 +360,11 @@ class Series protected () extends js.Object {
     * @return The valid points.
     */
   def getValidPoints(): js.Array[Point] = js.native
+  def getValidPoints(points: js.UndefOr[scala.Nothing], insideOnly: js.UndefOr[scala.Nothing], allowNull: Boolean): js.Array[Point] = js.native
+  def getValidPoints(points: js.UndefOr[scala.Nothing], insideOnly: Boolean): js.Array[Point] = js.native
+  def getValidPoints(points: js.UndefOr[scala.Nothing], insideOnly: Boolean, allowNull: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point]): js.Array[Point] = js.native
+  def getValidPoints(points: js.Array[Point], insideOnly: js.UndefOr[scala.Nothing], allowNull: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point], insideOnly: Boolean): js.Array[Point] = js.native
   def getValidPoints(points: js.Array[Point], insideOnly: Boolean, allowNull: Boolean): js.Array[Point] = js.native
   /**
@@ -340,7 +441,13 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#remove
     */
   def remove(): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: js.UndefOr[scala.Nothing], withEvent: Boolean): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean, withEvent: Boolean): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
+  def remove(redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject, withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
+  def remove(redraw: Boolean, animation: js.UndefOr[scala.Nothing], withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean, withEvent: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
@@ -366,6 +473,8 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Point#remove
     */
   def removePoint(i: Double): Unit = js.native
+  def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
+  def removePoint(i: Double, redraw: js.UndefOr[scala.Nothing], animation: AnimationOptionsObject): Unit = js.native
   def removePoint(i: Double, redraw: Boolean): Unit = js.native
   def removePoint(i: Double, redraw: Boolean, animation: Boolean): Unit = js.native
   def removePoint(i: Double, redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
@@ -437,7 +546,37 @@ class Series protected () extends js.Object {
     *        prevent.
     */
   def setData(data: js.Array[PointOptionsType]): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: js.UndefOr[scala.Nothing],
+    animation: js.UndefOr[scala.Nothing],
+    updatePoints: Boolean
+  ): Unit = js.native
+  def setData(data: js.Array[PointOptionsType], redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: js.UndefOr[scala.Nothing],
+    animation: Boolean,
+    updatePoints: Boolean
+  ): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: js.UndefOr[scala.Nothing],
+    animation: AnimationOptionsObject
+  ): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: js.UndefOr[scala.Nothing],
+    animation: AnimationOptionsObject,
+    updatePoints: Boolean
+  ): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean): Unit = js.native
+  def setData(
+    data: js.Array[PointOptionsType],
+    redraw: Boolean,
+    animation: js.UndefOr[scala.Nothing],
+    updatePoints: Boolean
+  ): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: Boolean, updatePoints: Boolean): Unit = js.native
   def setData(data: js.Array[PointOptionsType], redraw: Boolean, animation: AnimationOptionsObject): Unit = js.native
@@ -461,6 +600,7 @@ class Series protected () extends js.Object {
     *        Determines if state should be inherited by points too.
     */
   def setState(): Unit = js.native
+  def setState(state: js.UndefOr[scala.Nothing], inherit: Boolean): Unit = js.native
   def setState(state: _empty): Unit = js.native
   def setState(state: _empty, inherit: Boolean): Unit = js.native
   def setState(state: SeriesStateValue): Unit = js.native
@@ -481,6 +621,7 @@ class Series protected () extends js.Object {
     * @fires Highcharts.Series#show
     */
   def setVisible(): Unit = js.native
+  def setVisible(visible: js.UndefOr[scala.Nothing], redraw: Boolean): Unit = js.native
   def setVisible(visible: Boolean): Unit = js.native
   def setVisible(visible: Boolean, redraw: Boolean): Unit = js.native
   /**

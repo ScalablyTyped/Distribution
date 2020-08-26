@@ -2,7 +2,7 @@ package typings.webtorrent.mod
 
 import typings.bittorrentProtocol.mod.Wire
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.Server
 import typings.std.Date
@@ -82,6 +82,7 @@ trait Torrent extends EventEmitter {
   def removePeer(peer: typings.simplePeer.mod.Instance): Unit = js.native
   def resume(): Unit = js.native
   def select(start: Double, end: Double): Unit = js.native
+  def select(start: Double, end: Double, priority: js.UndefOr[scala.Nothing], notify: js.Function0[Unit]): Unit = js.native
   def select(start: Double, end: Double, priority: Double): Unit = js.native
   def select(start: Double, end: Double, priority: Double, notify: js.Function0[Unit]): Unit = js.native
 }

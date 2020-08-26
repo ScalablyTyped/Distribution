@@ -22,16 +22,34 @@ trait ExportCertificateResponse extends js.Object {
 
 object ExportCertificateResponse {
   @scala.inline
-  def apply(
-    Certificate: CertificateBody = null,
-    CertificateChain: CertificateChain = null,
-    PrivateKey: PrivateKey = null
-  ): ExportCertificateResponse = {
+  def apply(): ExportCertificateResponse = {
     val __obj = js.Dynamic.literal()
-    if (Certificate != null) __obj.updateDynamic("Certificate")(Certificate.asInstanceOf[js.Any])
-    if (CertificateChain != null) __obj.updateDynamic("CertificateChain")(CertificateChain.asInstanceOf[js.Any])
-    if (PrivateKey != null) __obj.updateDynamic("PrivateKey")(PrivateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportCertificateResponse]
   }
+  @scala.inline
+  implicit class ExportCertificateResponseOps[Self <: ExportCertificateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: CertificateBody): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    @scala.inline
+    def setCertificateChain(value: CertificateChain): Self = this.set("CertificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateChain: Self = this.set("CertificateChain", js.undefined)
+    @scala.inline
+    def setPrivateKey(value: PrivateKey): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKey: Self = this.set("PrivateKey", js.undefined)
+  }
+  
 }
 

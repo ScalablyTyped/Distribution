@@ -81,6 +81,7 @@ trait Transform extends js.Object {
     * @param parentMatrix A temporary matrix to hold parent values during the calculations.
     */
   def getWorldTransformMatrix(): TransformMatrix = js.native
+  def getWorldTransformMatrix(tempMatrix: js.UndefOr[scala.Nothing], parentMatrix: TransformMatrix): TransformMatrix = js.native
   def getWorldTransformMatrix(tempMatrix: TransformMatrix): TransformMatrix = js.native
   def getWorldTransformMatrix(tempMatrix: TransformMatrix, parentMatrix: TransformMatrix): TransformMatrix = js.native
   /**
@@ -97,8 +98,24 @@ trait Transform extends js.Object {
     * @param w The w position of this Game Object. Default 0.
     */
   def setPosition(): this.type = js.native
+  def setPosition(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    w: Double
+  ): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double): this.type = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double): this.type = js.native
   def setPosition(x: Double): this.type = js.native
+  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
+  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): this.type = js.native
+  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): this.type = js.native
   def setPosition(x: Double, y: Double): this.type = js.native
+  def setPosition(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): this.type = js.native
   def setPosition(x: Double, y: Double, z: Double): this.type = js.native
   def setPosition(x: Double, y: Double, z: Double, w: Double): this.type = js.native
   /**
@@ -115,8 +132,24 @@ trait Transform extends js.Object {
     * @param height The height of the random area.
     */
   def setRandomPosition(): this.type = js.native
+  def setRandomPosition(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): this.type = js.native
+  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
+  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
+  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: Double): this.type = js.native
+  def setRandomPosition(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): this.type = js.native
   def setRandomPosition(x: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): this.type = js.native
   def setRandomPosition(x: Double, y: Double): this.type = js.native
+  def setRandomPosition(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): this.type = js.native
   def setRandomPosition(x: Double, y: Double, width: Double): this.type = js.native
   def setRandomPosition(x: Double, y: Double, width: Double, height: Double): this.type = js.native
   /**

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object trimExt extends js.Object {
   def apply(filename: String): String = js.native
+  def apply(filename: String, ignoreExts: js.UndefOr[scala.Nothing], maxSize: Double): String = js.native
   def apply(filename: String, ignoreExts: js.Array[String]): String = js.native
   def apply(filename: String, ignoreExts: js.Array[String], maxSize: Double): String = js.native
 }

@@ -34,21 +34,46 @@ trait ListDiscoveredResourcesRequest extends js.Object {
 
 object ListDiscoveredResourcesRequest {
   @scala.inline
-  def apply(
-    resourceType: ResourceType,
-    includeDeletedResources: js.UndefOr[Boolean] = js.undefined,
-    limit: js.UndefOr[Limit] = js.undefined,
-    nextToken: NextToken = null,
-    resourceIds: ResourceIdList = null,
-    resourceName: ResourceName = null
-  ): ListDiscoveredResourcesRequest = {
+  def apply(resourceType: ResourceType): ListDiscoveredResourcesRequest = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDeletedResources)) __obj.updateDynamic("includeDeletedResources")(includeDeletedResources.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (resourceIds != null) __obj.updateDynamic("resourceIds")(resourceIds.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDiscoveredResourcesRequest]
   }
+  @scala.inline
+  implicit class ListDiscoveredResourcesRequestOps[Self <: ListDiscoveredResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeDeletedResources(value: Boolean): Self = this.set("includeDeletedResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDeletedResources: Self = this.set("includeDeletedResources", js.undefined)
+    @scala.inline
+    def setLimit(value: Limit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setResourceIdsVarargs(value: ResourceId*): Self = this.set("resourceIds", js.Array(value :_*))
+    @scala.inline
+    def setResourceIds(value: ResourceIdList): Self = this.set("resourceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIds: Self = this.set("resourceIds", js.undefined)
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+  }
+  
 }
 

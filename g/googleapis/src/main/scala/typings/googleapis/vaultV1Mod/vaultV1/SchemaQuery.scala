@@ -80,38 +80,78 @@ trait SchemaQuery extends js.Object {
 
 object SchemaQuery {
   @scala.inline
-  def apply(
-    accountInfo: SchemaAccountInfo = null,
-    corpus: String = null,
-    dataScope: String = null,
-    driveOptions: SchemaDriveOptions = null,
-    endTime: String = null,
-    hangoutsChatInfo: SchemaHangoutsChatInfo = null,
-    hangoutsChatOptions: SchemaHangoutsChatOptions = null,
-    mailOptions: SchemaMailOptions = null,
-    orgUnitInfo: SchemaOrgUnitInfo = null,
-    searchMethod: String = null,
-    startTime: String = null,
-    teamDriveInfo: SchemaTeamDriveInfo = null,
-    terms: String = null,
-    timeZone: String = null
-  ): SchemaQuery = {
+  def apply(): SchemaQuery = {
     val __obj = js.Dynamic.literal()
-    if (accountInfo != null) __obj.updateDynamic("accountInfo")(accountInfo.asInstanceOf[js.Any])
-    if (corpus != null) __obj.updateDynamic("corpus")(corpus.asInstanceOf[js.Any])
-    if (dataScope != null) __obj.updateDynamic("dataScope")(dataScope.asInstanceOf[js.Any])
-    if (driveOptions != null) __obj.updateDynamic("driveOptions")(driveOptions.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (hangoutsChatInfo != null) __obj.updateDynamic("hangoutsChatInfo")(hangoutsChatInfo.asInstanceOf[js.Any])
-    if (hangoutsChatOptions != null) __obj.updateDynamic("hangoutsChatOptions")(hangoutsChatOptions.asInstanceOf[js.Any])
-    if (mailOptions != null) __obj.updateDynamic("mailOptions")(mailOptions.asInstanceOf[js.Any])
-    if (orgUnitInfo != null) __obj.updateDynamic("orgUnitInfo")(orgUnitInfo.asInstanceOf[js.Any])
-    if (searchMethod != null) __obj.updateDynamic("searchMethod")(searchMethod.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (teamDriveInfo != null) __obj.updateDynamic("teamDriveInfo")(teamDriveInfo.asInstanceOf[js.Any])
-    if (terms != null) __obj.updateDynamic("terms")(terms.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQuery]
   }
+  @scala.inline
+  implicit class SchemaQueryOps[Self <: SchemaQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountInfo(value: SchemaAccountInfo): Self = this.set("accountInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountInfo: Self = this.set("accountInfo", js.undefined)
+    @scala.inline
+    def setCorpus(value: String): Self = this.set("corpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorpus: Self = this.set("corpus", js.undefined)
+    @scala.inline
+    def setDataScope(value: String): Self = this.set("dataScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataScope: Self = this.set("dataScope", js.undefined)
+    @scala.inline
+    def setDriveOptions(value: SchemaDriveOptions): Self = this.set("driveOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriveOptions: Self = this.set("driveOptions", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setHangoutsChatInfo(value: SchemaHangoutsChatInfo): Self = this.set("hangoutsChatInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHangoutsChatInfo: Self = this.set("hangoutsChatInfo", js.undefined)
+    @scala.inline
+    def setHangoutsChatOptions(value: SchemaHangoutsChatOptions): Self = this.set("hangoutsChatOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHangoutsChatOptions: Self = this.set("hangoutsChatOptions", js.undefined)
+    @scala.inline
+    def setMailOptions(value: SchemaMailOptions): Self = this.set("mailOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMailOptions: Self = this.set("mailOptions", js.undefined)
+    @scala.inline
+    def setOrgUnitInfo(value: SchemaOrgUnitInfo): Self = this.set("orgUnitInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrgUnitInfo: Self = this.set("orgUnitInfo", js.undefined)
+    @scala.inline
+    def setSearchMethod(value: String): Self = this.set("searchMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchMethod: Self = this.set("searchMethod", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTeamDriveInfo(value: SchemaTeamDriveInfo): Self = this.set("teamDriveInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamDriveInfo: Self = this.set("teamDriveInfo", js.undefined)
+    @scala.inline
+    def setTerms(value: String): Self = this.set("terms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerms: Self = this.set("terms", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+  }
+  
 }
 

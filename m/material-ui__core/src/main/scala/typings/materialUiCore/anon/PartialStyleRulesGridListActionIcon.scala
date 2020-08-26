@@ -23,32 +23,66 @@ trait PartialStyleRulesGridListActionIcon extends js.Object {
 
 object PartialStyleRulesGridListActionIcon {
   @scala.inline
-  def apply(
-    actionIcon: CSSProperties = null,
-    actionIconActionPosLeft: CSSProperties = null,
-    root: CSSProperties = null,
-    rootSubtitle: CSSProperties = null,
-    subtitle: CSSProperties = null,
-    title: CSSProperties = null,
-    titlePositionBottom: CSSProperties = null,
-    titlePositionTop: CSSProperties = null,
-    titleWrap: CSSProperties = null,
-    titleWrapActionPosLeft: CSSProperties = null,
-    titleWrapActionPosRight: CSSProperties = null
-  ): PartialStyleRulesGridListActionIcon = {
+  def apply(): PartialStyleRulesGridListActionIcon = {
     val __obj = js.Dynamic.literal()
-    if (actionIcon != null) __obj.updateDynamic("actionIcon")(actionIcon.asInstanceOf[js.Any])
-    if (actionIconActionPosLeft != null) __obj.updateDynamic("actionIconActionPosLeft")(actionIconActionPosLeft.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rootSubtitle != null) __obj.updateDynamic("rootSubtitle")(rootSubtitle.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titlePositionBottom != null) __obj.updateDynamic("titlePositionBottom")(titlePositionBottom.asInstanceOf[js.Any])
-    if (titlePositionTop != null) __obj.updateDynamic("titlePositionTop")(titlePositionTop.asInstanceOf[js.Any])
-    if (titleWrap != null) __obj.updateDynamic("titleWrap")(titleWrap.asInstanceOf[js.Any])
-    if (titleWrapActionPosLeft != null) __obj.updateDynamic("titleWrapActionPosLeft")(titleWrapActionPosLeft.asInstanceOf[js.Any])
-    if (titleWrapActionPosRight != null) __obj.updateDynamic("titleWrapActionPosRight")(titleWrapActionPosRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesGridListActionIcon]
   }
+  @scala.inline
+  implicit class PartialStyleRulesGridListActionIconOps[Self <: PartialStyleRulesGridListActionIcon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionIcon(value: CSSProperties): Self = this.set("actionIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionIcon: Self = this.set("actionIcon", js.undefined)
+    @scala.inline
+    def setActionIconActionPosLeft(value: CSSProperties): Self = this.set("actionIconActionPosLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionIconActionPosLeft: Self = this.set("actionIconActionPosLeft", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setRootSubtitle(value: CSSProperties): Self = this.set("rootSubtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootSubtitle: Self = this.set("rootSubtitle", js.undefined)
+    @scala.inline
+    def setSubtitle(value: CSSProperties): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setTitle(value: CSSProperties): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitlePositionBottom(value: CSSProperties): Self = this.set("titlePositionBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitlePositionBottom: Self = this.set("titlePositionBottom", js.undefined)
+    @scala.inline
+    def setTitlePositionTop(value: CSSProperties): Self = this.set("titlePositionTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitlePositionTop: Self = this.set("titlePositionTop", js.undefined)
+    @scala.inline
+    def setTitleWrap(value: CSSProperties): Self = this.set("titleWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleWrap: Self = this.set("titleWrap", js.undefined)
+    @scala.inline
+    def setTitleWrapActionPosLeft(value: CSSProperties): Self = this.set("titleWrapActionPosLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleWrapActionPosLeft: Self = this.set("titleWrapActionPosLeft", js.undefined)
+    @scala.inline
+    def setTitleWrapActionPosRight(value: CSSProperties): Self = this.set("titleWrapActionPosRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleWrapActionPosRight: Self = this.set("titleWrapActionPosRight", js.undefined)
+  }
+  
 }
 

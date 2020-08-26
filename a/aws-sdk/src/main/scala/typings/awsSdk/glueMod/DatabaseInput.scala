@@ -26,23 +26,54 @@ trait DatabaseInput extends js.Object {
     * These key-value pairs define parameters and properties of the database. These key-value pairs define parameters and properties of the database.
     */
   var Parameters: js.UndefOr[ParametersMap] = js.native
+  /**
+    * A DatabaseIdentifier structure that describes a target database for resource linking.
+    */
+  var TargetDatabase: js.UndefOr[DatabaseIdentifier] = js.native
 }
 
 object DatabaseInput {
   @scala.inline
-  def apply(
-    Name: NameString,
-    CreateTableDefaultPermissions: PrincipalPermissionsList = null,
-    Description: DescriptionString = null,
-    LocationUri: URI = null,
-    Parameters: ParametersMap = null
-  ): DatabaseInput = {
+  def apply(Name: NameString): DatabaseInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (CreateTableDefaultPermissions != null) __obj.updateDynamic("CreateTableDefaultPermissions")(CreateTableDefaultPermissions.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LocationUri != null) __obj.updateDynamic("LocationUri")(LocationUri.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseInput]
   }
+  @scala.inline
+  implicit class DatabaseInputOps[Self <: DatabaseInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = this.set("CreateTableDefaultPermissions", js.Array(value :_*))
+    @scala.inline
+    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = this.set("CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTableDefaultPermissions: Self = this.set("CreateTableDefaultPermissions", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLocationUri(value: URI): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setTargetDatabase(value: DatabaseIdentifier): Self = this.set("TargetDatabase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetDatabase: Self = this.set("TargetDatabase", js.undefined)
+  }
+  
 }
 

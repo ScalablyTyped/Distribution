@@ -10,9 +10,9 @@ Authentication module for Nuxt.js
 | ------------------ | :-------------: |
 | Full name          | @nuxtjs/auth |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 9 |
-| # downloads        | 591307 |
+| # releases         | 30 |
+| # dependents       | 8 |
+| # downloads        | 606196 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ A React Hook (using useEffect) which uses window.setTimeout().
 | ------------------ | :-------------: |
 | Full name          | use-set-timeout |
 | Keywords           | react, hook, hooks, react-hook, react-hooks |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 919 |
+| # downloads        | 1092 |
 | # stars            | 0 |
 
 ## Links

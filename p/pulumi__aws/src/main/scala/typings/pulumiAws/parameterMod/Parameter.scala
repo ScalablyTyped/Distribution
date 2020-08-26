@@ -48,9 +48,9 @@ class Parameter protected () extends CustomResource {
     */
   val overwrite: Output_[js.UndefOr[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the object.
+    * A map of tags to assign to the object.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The tier of the parameter. If not specified, will default to `Standard`. Valid tiers are `Standard` and `Advanced`. For more information on parameter tiers, see the [AWS SSM Parameter tier comparison and guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html).
     */
@@ -80,8 +80,10 @@ object Parameter extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Parameter = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Parameter = js.native
   def get(name: String, id: Input[ID], state: ParameterState): Parameter = js.native
   def get(name: String, id: Input[ID], state: ParameterState, opts: CustomResourceOptions): Parameter = js.native
   /**

@@ -20,16 +20,36 @@ trait SchemaGooglePrivacyDlpV2RecordKey extends js.Object {
 
 object SchemaGooglePrivacyDlpV2RecordKey {
   @scala.inline
-  def apply(
-    bigQueryKey: SchemaGooglePrivacyDlpV2BigQueryKey = null,
-    datastoreKey: SchemaGooglePrivacyDlpV2DatastoreKey = null,
-    idValues: js.Array[String] = null
-  ): SchemaGooglePrivacyDlpV2RecordKey = {
+  def apply(): SchemaGooglePrivacyDlpV2RecordKey = {
     val __obj = js.Dynamic.literal()
-    if (bigQueryKey != null) __obj.updateDynamic("bigQueryKey")(bigQueryKey.asInstanceOf[js.Any])
-    if (datastoreKey != null) __obj.updateDynamic("datastoreKey")(datastoreKey.asInstanceOf[js.Any])
-    if (idValues != null) __obj.updateDynamic("idValues")(idValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RecordKey]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2RecordKeyOps[Self <: SchemaGooglePrivacyDlpV2RecordKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBigQueryKey(value: SchemaGooglePrivacyDlpV2BigQueryKey): Self = this.set("bigQueryKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigQueryKey: Self = this.set("bigQueryKey", js.undefined)
+    @scala.inline
+    def setDatastoreKey(value: SchemaGooglePrivacyDlpV2DatastoreKey): Self = this.set("datastoreKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatastoreKey: Self = this.set("datastoreKey", js.undefined)
+    @scala.inline
+    def setIdValuesVarargs(value: String*): Self = this.set("idValues", js.Array(value :_*))
+    @scala.inline
+    def setIdValues(value: js.Array[String]): Self = this.set("idValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdValues: Self = this.set("idValues", js.undefined)
+  }
+  
 }
 

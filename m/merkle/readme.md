@@ -12,7 +12,7 @@ Javascript implementation of merkle trees
 | Keywords           | hash trees, cryptography |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 5357 |
+| # downloads        | 5109 |
 | # stars            | 2 |
 
 ## Links

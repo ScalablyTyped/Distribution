@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-props
 
-Typings are for version 3.1.0
+Typings are for version 4.0.0
 
 ## Library description:
 Like `Promise.all()` but for `Map` and `Object`

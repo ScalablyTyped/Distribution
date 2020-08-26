@@ -11,15 +11,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AddColorStop extends js.Object {
-  var colorStops: ColorStops
-  var globalCoord: GlobalCoords
-  var `type`: linear
-  var x: X
-  var x2: X2
-  var y: Y
-  var y2: Y2
-  def addColorStop(offset: Double, color: String): Unit
+  var colorStops: ColorStops = js.native
+  var globalCoord: GlobalCoords = js.native
+  var `type`: linear = js.native
+  var x: X = js.native
+  var x2: X2 = js.native
+  var y: Y = js.native
+  var y2: Y2 = js.native
+  def addColorStop(offset: Double, color: String): Unit = js.native
 }
 
 object AddColorStop {
@@ -38,5 +39,36 @@ object AddColorStop {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddColorStop]
   }
+  @scala.inline
+  implicit class AddColorStopOps[Self <: AddColorStop] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddColorStop(value: (Double, String) => Unit): Self = this.set("addColorStop", js.Any.fromFunction2(value))
+    @scala.inline
+    def setColorStopsVarargs(value: Color*): Self = this.set("colorStops", js.Array(value :_*))
+    @scala.inline
+    def setColorStops(value: ColorStops): Self = this.set("colorStops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobalCoord(value: GlobalCoords): Self = this.set("globalCoord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: linear): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX(value: X): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX2(value: X2): Self = this.set("x2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY(value: Y): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY2(value: Y2): Self = this.set("y2", value.asInstanceOf[js.Any])
+  }
+  
 }
 

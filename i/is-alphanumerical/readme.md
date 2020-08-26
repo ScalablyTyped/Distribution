@@ -12,7 +12,7 @@ Check if a character is alphanumerical
 | Keywords           | string, character, char, code, alphabetical, numerical, alphanumerical |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 77936348 |
+| # downloads        | 81371428 |
 | # stars            | 1 |
 
 ## Links

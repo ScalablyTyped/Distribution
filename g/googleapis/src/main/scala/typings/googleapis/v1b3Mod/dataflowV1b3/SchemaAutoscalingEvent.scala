@@ -42,22 +42,46 @@ trait SchemaAutoscalingEvent extends js.Object {
 
 object SchemaAutoscalingEvent {
   @scala.inline
-  def apply(
-    currentNumWorkers: String = null,
-    description: SchemaStructuredMessage = null,
-    eventType: String = null,
-    targetNumWorkers: String = null,
-    time: String = null,
-    workerPool: String = null
-  ): SchemaAutoscalingEvent = {
+  def apply(): SchemaAutoscalingEvent = {
     val __obj = js.Dynamic.literal()
-    if (currentNumWorkers != null) __obj.updateDynamic("currentNumWorkers")(currentNumWorkers.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    if (targetNumWorkers != null) __obj.updateDynamic("targetNumWorkers")(targetNumWorkers.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (workerPool != null) __obj.updateDynamic("workerPool")(workerPool.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingEvent]
   }
+  @scala.inline
+  implicit class SchemaAutoscalingEventOps[Self <: SchemaAutoscalingEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentNumWorkers(value: String): Self = this.set("currentNumWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentNumWorkers: Self = this.set("currentNumWorkers", js.undefined)
+    @scala.inline
+    def setDescription(value: SchemaStructuredMessage): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEventType(value: String): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("eventType", js.undefined)
+    @scala.inline
+    def setTargetNumWorkers(value: String): Self = this.set("targetNumWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetNumWorkers: Self = this.set("targetNumWorkers", js.undefined)
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("time", js.undefined)
+    @scala.inline
+    def setWorkerPool(value: String): Self = this.set("workerPool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerPool: Self = this.set("workerPool", js.undefined)
+  }
+  
 }
 

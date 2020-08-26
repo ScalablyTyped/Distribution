@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "fancy-log"
-version := "1.3-dt-20200515Z-ce869a"
-scalaVersion := "2.13.2"
+version := "1.3-dt-20200515Z-6ae61d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

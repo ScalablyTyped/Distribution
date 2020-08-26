@@ -47,30 +47,62 @@ trait Tape extends js.Object {
 
 object Tape {
   @scala.inline
-  def apply(
-    KMSKey: KMSKey = null,
-    PoolId: PoolId = null,
-    Progress: js.UndefOr[DoubleObject] = js.undefined,
-    TapeARN: TapeARN = null,
-    TapeBarcode: TapeBarcode = null,
-    TapeCreatedDate: Time = null,
-    TapeSizeInBytes: js.UndefOr[TapeSize] = js.undefined,
-    TapeStatus: TapeStatus = null,
-    TapeUsedInBytes: js.UndefOr[TapeUsage] = js.undefined,
-    VTLDevice: VTLDeviceARN = null
-  ): Tape = {
+  def apply(): Tape = {
     val __obj = js.Dynamic.literal()
-    if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
-    if (PoolId != null) __obj.updateDynamic("PoolId")(PoolId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Progress)) __obj.updateDynamic("Progress")(Progress.get.asInstanceOf[js.Any])
-    if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
-    if (TapeBarcode != null) __obj.updateDynamic("TapeBarcode")(TapeBarcode.asInstanceOf[js.Any])
-    if (TapeCreatedDate != null) __obj.updateDynamic("TapeCreatedDate")(TapeCreatedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(TapeSizeInBytes)) __obj.updateDynamic("TapeSizeInBytes")(TapeSizeInBytes.get.asInstanceOf[js.Any])
-    if (TapeStatus != null) __obj.updateDynamic("TapeStatus")(TapeStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(TapeUsedInBytes)) __obj.updateDynamic("TapeUsedInBytes")(TapeUsedInBytes.get.asInstanceOf[js.Any])
-    if (VTLDevice != null) __obj.updateDynamic("VTLDevice")(VTLDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tape]
   }
+  @scala.inline
+  implicit class TapeOps[Self <: Tape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    @scala.inline
+    def setPoolId(value: PoolId): Self = this.set("PoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolId: Self = this.set("PoolId", js.undefined)
+    @scala.inline
+    def setProgress(value: DoubleObject): Self = this.set("Progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("Progress", js.undefined)
+    @scala.inline
+    def setTapeARN(value: TapeARN): Self = this.set("TapeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeARN: Self = this.set("TapeARN", js.undefined)
+    @scala.inline
+    def setTapeBarcode(value: TapeBarcode): Self = this.set("TapeBarcode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeBarcode: Self = this.set("TapeBarcode", js.undefined)
+    @scala.inline
+    def setTapeCreatedDate(value: Time): Self = this.set("TapeCreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeCreatedDate: Self = this.set("TapeCreatedDate", js.undefined)
+    @scala.inline
+    def setTapeSizeInBytes(value: TapeSize): Self = this.set("TapeSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeSizeInBytes: Self = this.set("TapeSizeInBytes", js.undefined)
+    @scala.inline
+    def setTapeStatus(value: TapeStatus): Self = this.set("TapeStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeStatus: Self = this.set("TapeStatus", js.undefined)
+    @scala.inline
+    def setTapeUsedInBytes(value: TapeUsage): Self = this.set("TapeUsedInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeUsedInBytes: Self = this.set("TapeUsedInBytes", js.undefined)
+    @scala.inline
+    def setVTLDevice(value: VTLDeviceARN): Self = this.set("VTLDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVTLDevice: Self = this.set("VTLDevice", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,36 @@ trait ListAttachedUserPoliciesResponse extends js.Object {
 
 object ListAttachedUserPoliciesResponse {
   @scala.inline
-  def apply(
-    AttachedPolicies: attachedPoliciesListType = null,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: responseMarkerType = null
-  ): ListAttachedUserPoliciesResponse = {
+  def apply(): ListAttachedUserPoliciesResponse = {
     val __obj = js.Dynamic.literal()
-    if (AttachedPolicies != null) __obj.updateDynamic("AttachedPolicies")(AttachedPolicies.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttachedUserPoliciesResponse]
   }
+  @scala.inline
+  implicit class ListAttachedUserPoliciesResponseOps[Self <: ListAttachedUserPoliciesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachedPoliciesVarargs(value: AttachedPolicy*): Self = this.set("AttachedPolicies", js.Array(value :_*))
+    @scala.inline
+    def setAttachedPolicies(value: attachedPoliciesListType): Self = this.set("AttachedPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedPolicies: Self = this.set("AttachedPolicies", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

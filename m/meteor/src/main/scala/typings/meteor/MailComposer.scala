@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MailComposer extends js.Object {
-  def addHeader(name: String, value: String): Unit
-  def pipe(stream: js.Any): Unit
-  def setMessageOption(from: String, to: String, body: String, html: String): Unit
-  def streamMessage(): Unit
+  def addHeader(name: String, value: String): Unit = js.native
+  def pipe(stream: js.Any): Unit = js.native
+  def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native
+  def streamMessage(): Unit = js.native
 }
 
 object MailComposer {
@@ -22,5 +23,26 @@ object MailComposer {
     val __obj = js.Dynamic.literal(addHeader = js.Any.fromFunction2(addHeader), pipe = js.Any.fromFunction1(pipe), setMessageOption = js.Any.fromFunction4(setMessageOption), streamMessage = js.Any.fromFunction0(streamMessage))
     __obj.asInstanceOf[MailComposer]
   }
+  @scala.inline
+  implicit class MailComposerOps[Self <: MailComposer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddHeader(value: (String, String) => Unit): Self = this.set("addHeader", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPipe(value: js.Any => Unit): Self = this.set("pipe", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetMessageOption(value: (String, String, String, String) => Unit): Self = this.set("setMessageOption", js.Any.fromFunction4(value))
+    @scala.inline
+    def setStreamMessage(value: () => Unit): Self = this.set("streamMessage", js.Any.fromFunction0(value))
+  }
+  
 }
 

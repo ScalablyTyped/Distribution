@@ -15,12 +15,36 @@ trait TooltipMessageProps extends js.Object {
 
 object TooltipMessageProps {
   @scala.inline
-  def apply(desc: ReactNode = null, links: js.Array[Href] = null, title: ReactNode = null): TooltipMessageProps = {
+  def apply(): TooltipMessageProps = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipMessageProps]
   }
+  @scala.inline
+  implicit class TooltipMessagePropsOps[Self <: TooltipMessageProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesc(value: ReactNode): Self = this.set("desc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesc: Self = this.set("desc", js.undefined)
+    @scala.inline
+    def setLinksVarargs(value: Href*): Self = this.set("links", js.Array(value :_*))
+    @scala.inline
+    def setLinks(value: js.Array[Href]): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

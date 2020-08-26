@@ -38,7 +38,7 @@ trait GetLaunchConfigurationResult extends js.Object {
     */
   val iamInstanceProfile: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -113,5 +113,66 @@ object GetLaunchConfigurationResult {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], associatePublicIpAddress = associatePublicIpAddress.asInstanceOf[js.Any], ebsBlockDevices = ebsBlockDevices.asInstanceOf[js.Any], ebsOptimized = ebsOptimized.asInstanceOf[js.Any], enableMonitoring = enableMonitoring.asInstanceOf[js.Any], ephemeralBlockDevices = ephemeralBlockDevices.asInstanceOf[js.Any], iamInstanceProfile = iamInstanceProfile.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any], keyName = keyName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], placementTenancy = placementTenancy.asInstanceOf[js.Any], rootBlockDevices = rootBlockDevices.asInstanceOf[js.Any], securityGroups = securityGroups.asInstanceOf[js.Any], spotPrice = spotPrice.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], vpcClassicLinkId = vpcClassicLinkId.asInstanceOf[js.Any], vpcClassicLinkSecurityGroups = vpcClassicLinkSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchConfigurationResult]
   }
+  @scala.inline
+  implicit class GetLaunchConfigurationResultOps[Self <: GetLaunchConfigurationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssociatePublicIpAddress(value: Boolean): Self = this.set("associatePublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEbsBlockDevicesVarargs(value: GetLaunchConfigurationEbsBlockDevice*): Self = this.set("ebsBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEbsBlockDevices(value: js.Array[GetLaunchConfigurationEbsBlockDevice]): Self = this.set("ebsBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEbsOptimized(value: Boolean): Self = this.set("ebsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableMonitoring(value: Boolean): Self = this.set("enableMonitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEphemeralBlockDevicesVarargs(value: GetLaunchConfigurationEphemeralBlockDevice*): Self = this.set("ephemeralBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEphemeralBlockDevices(value: js.Array[GetLaunchConfigurationEphemeralBlockDevice]): Self = this.set("ephemeralBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIamInstanceProfile(value: String): Self = this.set("iamInstanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImageId(value: String): Self = this.set("imageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlacementTenancy(value: String): Self = this.set("placementTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRootBlockDevicesVarargs(value: GetLaunchConfigurationRootBlockDevice*): Self = this.set("rootBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setRootBlockDevices(value: js.Array[GetLaunchConfigurationRootBlockDevice]): Self = this.set("rootBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSecurityGroupsVarargs(value: String*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: js.Array[String]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpotPrice(value: String): Self = this.set("spotPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserData(value: String): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcClassicLinkId(value: String): Self = this.set("vpcClassicLinkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcClassicLinkSecurityGroupsVarargs(value: String*): Self = this.set("vpcClassicLinkSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcClassicLinkSecurityGroups(value: js.Array[String]): Self = this.set("vpcClassicLinkSecurityGroups", value.asInstanceOf[js.Any])
+  }
+  
 }
 

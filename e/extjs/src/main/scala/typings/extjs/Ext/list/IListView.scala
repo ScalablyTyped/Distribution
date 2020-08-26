@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IListView extends ITable {
   /** [Method] Reconfigures the grid with a new store columns
     * @param store Ext.data.Store The new store.
@@ -14,19 +15,31 @@ trait IListView extends ITable {
     */
   var reconfigure: js.UndefOr[
     js.Function2[/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array], Unit]
-  ] = js.undefined
+  ] = js.native
 }
 
 object IListView {
   @scala.inline
-  def apply(
-    ITable: ITable = null,
-    reconfigure: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit = null
-  ): IListView = {
+  def apply(): IListView = {
     val __obj = js.Dynamic.literal()
-    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
-    if (reconfigure != null) __obj.updateDynamic("reconfigure")(js.Any.fromFunction2(reconfigure))
     __obj.asInstanceOf[IListView]
   }
+  @scala.inline
+  implicit class IListViewOps[Self <: IListView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = this.set("reconfigure", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteReconfigure: Self = this.set("reconfigure", js.undefined)
+  }
+  
 }
 

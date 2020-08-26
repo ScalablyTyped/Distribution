@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DebugSetting extends js.Object {
   /**
     * Specifies the type of information to log for debugging. The permitted values are none,
@@ -13,15 +14,31 @@ trait DebugSetting extends js.Object {
     * response, you could potentially expose sensitive data that is retrieved through the deployment
     * operations.
     */
-  var detailLevel: js.UndefOr[String] = js.undefined
+  var detailLevel: js.UndefOr[String] = js.native
 }
 
 object DebugSetting {
   @scala.inline
-  def apply(detailLevel: String = null): DebugSetting = {
+  def apply(): DebugSetting = {
     val __obj = js.Dynamic.literal()
-    if (detailLevel != null) __obj.updateDynamic("detailLevel")(detailLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugSetting]
   }
+  @scala.inline
+  implicit class DebugSettingOps[Self <: DebugSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetailLevel(value: String): Self = this.set("detailLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailLevel: Self = this.set("detailLevel", js.undefined)
+  }
+  
 }
 

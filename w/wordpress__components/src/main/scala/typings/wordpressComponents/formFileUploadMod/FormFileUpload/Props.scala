@@ -16,15 +16,13 @@ trait Props extends js.Object
 
 object Props {
   @scala.inline
-  def RenderProps(
-    onChange: ChangeEvent[HTMLInputElement] => Unit,
-    render: OpenFileDialog => Element,
-    accept: String = null,
-    multiple: js.UndefOr[Boolean] = js.undefined
-  ): Props = {
+  def IconButtonProps(onChange: ChangeEvent[HTMLInputElement] => Unit): Props = {
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
+    __obj.asInstanceOf[Props]
+  }
+  @scala.inline
+  def RenderProps(onChange: ChangeEvent[HTMLInputElement] => Unit, render: OpenFileDialog => Element): Props = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), render = js.Any.fromFunction1(render))
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]
   }
 }

@@ -29,6 +29,7 @@ class ResourcePlayers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPlayer] = js.native
   def get(callback: BodyResponseCallback[SchemaPlayer]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayer] = js.native
   def get(params: ParamsResourcePlayersGet): GaxiosPromise[SchemaPlayer] = js.native
   def get(params: ParamsResourcePlayersGet, callback: BodyResponseCallback[SchemaPlayer]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourcePlayers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPlayerListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlayerListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerListResponse] = js.native
   def list(params: ParamsResourcePlayersList): GaxiosPromise[SchemaPlayerListResponse] = js.native
   def list(params: ParamsResourcePlayersList, callback: BodyResponseCallback[SchemaPlayerListResponse]): Unit = js.native
   def list(

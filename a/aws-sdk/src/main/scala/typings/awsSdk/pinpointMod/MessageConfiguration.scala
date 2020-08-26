@@ -42,26 +42,54 @@ trait MessageConfiguration extends js.Object {
 
 object MessageConfiguration {
   @scala.inline
-  def apply(
-    ADMMessage: Message = null,
-    APNSMessage: Message = null,
-    BaiduMessage: Message = null,
-    CustomMessage: CampaignCustomMessage = null,
-    DefaultMessage: Message = null,
-    EmailMessage: CampaignEmailMessage = null,
-    GCMMessage: Message = null,
-    SMSMessage: CampaignSmsMessage = null
-  ): MessageConfiguration = {
+  def apply(): MessageConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ADMMessage != null) __obj.updateDynamic("ADMMessage")(ADMMessage.asInstanceOf[js.Any])
-    if (APNSMessage != null) __obj.updateDynamic("APNSMessage")(APNSMessage.asInstanceOf[js.Any])
-    if (BaiduMessage != null) __obj.updateDynamic("BaiduMessage")(BaiduMessage.asInstanceOf[js.Any])
-    if (CustomMessage != null) __obj.updateDynamic("CustomMessage")(CustomMessage.asInstanceOf[js.Any])
-    if (DefaultMessage != null) __obj.updateDynamic("DefaultMessage")(DefaultMessage.asInstanceOf[js.Any])
-    if (EmailMessage != null) __obj.updateDynamic("EmailMessage")(EmailMessage.asInstanceOf[js.Any])
-    if (GCMMessage != null) __obj.updateDynamic("GCMMessage")(GCMMessage.asInstanceOf[js.Any])
-    if (SMSMessage != null) __obj.updateDynamic("SMSMessage")(SMSMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageConfiguration]
   }
+  @scala.inline
+  implicit class MessageConfigurationOps[Self <: MessageConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setADMMessage(value: Message): Self = this.set("ADMMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteADMMessage: Self = this.set("ADMMessage", js.undefined)
+    @scala.inline
+    def setAPNSMessage(value: Message): Self = this.set("APNSMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAPNSMessage: Self = this.set("APNSMessage", js.undefined)
+    @scala.inline
+    def setBaiduMessage(value: Message): Self = this.set("BaiduMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaiduMessage: Self = this.set("BaiduMessage", js.undefined)
+    @scala.inline
+    def setCustomMessage(value: CampaignCustomMessage): Self = this.set("CustomMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMessage: Self = this.set("CustomMessage", js.undefined)
+    @scala.inline
+    def setDefaultMessage(value: Message): Self = this.set("DefaultMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultMessage: Self = this.set("DefaultMessage", js.undefined)
+    @scala.inline
+    def setEmailMessage(value: CampaignEmailMessage): Self = this.set("EmailMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailMessage: Self = this.set("EmailMessage", js.undefined)
+    @scala.inline
+    def setGCMMessage(value: Message): Self = this.set("GCMMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGCMMessage: Self = this.set("GCMMessage", js.undefined)
+    @scala.inline
+    def setSMSMessage(value: CampaignSmsMessage): Self = this.set("SMSMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMSMessage: Self = this.set("SMSMessage", js.undefined)
+  }
+  
 }
 

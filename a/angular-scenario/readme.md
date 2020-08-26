@@ -10,9 +10,9 @@ AngularJS module for end-to-end testing
 | ------------------ | :-------------: |
 | Full name          | angular-scenario |
 | Keywords           | angular, framework, browser, testing, client-side |
-| # releases         | 15 |
+| # releases         | 14 |
 | # dependents       | 9 |
-| # downloads        | 217374 |
+| # downloads        | 221879 |
 | # stars            | 0 |
 
 ## Links

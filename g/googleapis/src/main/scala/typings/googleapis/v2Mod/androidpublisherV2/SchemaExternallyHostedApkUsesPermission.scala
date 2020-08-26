@@ -21,11 +21,30 @@ trait SchemaExternallyHostedApkUsesPermission extends js.Object {
 
 object SchemaExternallyHostedApkUsesPermission {
   @scala.inline
-  def apply(maxSdkVersion: js.UndefOr[Double] = js.undefined, name: String = null): SchemaExternallyHostedApkUsesPermission = {
+  def apply(): SchemaExternallyHostedApkUsesPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxSdkVersion)) __obj.updateDynamic("maxSdkVersion")(maxSdkVersion.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExternallyHostedApkUsesPermission]
   }
+  @scala.inline
+  implicit class SchemaExternallyHostedApkUsesPermissionOps[Self <: SchemaExternallyHostedApkUsesPermission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxSdkVersion(value: Double): Self = this.set("maxSdkVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSdkVersion: Self = this.set("maxSdkVersion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

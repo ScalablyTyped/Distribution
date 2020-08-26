@@ -4,24 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientVersioningData extends js.Object {
   /**
     * The api version string to send in the request (e.g. "1.0" or "2.0-preview.2")
     */
-  var apiVersion: js.UndefOr[String] = js.undefined
+  var apiVersion: js.UndefOr[String] = js.native
   /**
     * The request path string to send the request to.  Looked up via an options request with the location id.
     */
-  var requestUrl: js.UndefOr[String] = js.undefined
+  var requestUrl: js.UndefOr[String] = js.native
 }
 
 object ClientVersioningData {
   @scala.inline
-  def apply(apiVersion: String = null, requestUrl: String = null): ClientVersioningData = {
+  def apply(): ClientVersioningData = {
     val __obj = js.Dynamic.literal()
-    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientVersioningData]
   }
+  @scala.inline
+  implicit class ClientVersioningDataOps[Self <: ClientVersioningData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiVersion(value: String): Self = this.set("apiVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiVersion: Self = this.set("apiVersion", js.undefined)
+    @scala.inline
+    def setRequestUrl(value: String): Self = this.set("requestUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestUrl: Self = this.set("requestUrl", js.undefined)
+  }
+  
 }
 

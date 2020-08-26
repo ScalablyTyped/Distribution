@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sha3" : "2.1.1"
+      "sha3" : "2.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "sha3" : "2.1.1"
+      "sha3" : "2.1.3"
     }
   ],
   "compile-devDependencies" : [

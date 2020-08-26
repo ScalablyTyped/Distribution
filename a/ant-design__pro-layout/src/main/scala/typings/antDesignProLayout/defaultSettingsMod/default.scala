@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ant-design/pro-layout/lib/defaultSettings", JSImport.Default)
 @js.native
-object default extends TopLevel[Settings]
+object default extends TopLevel[ProSettings]
 

@@ -6,18 +6,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProviderProps extends js.Object {
-  var locale: js.UndefOr[PartialLocale] = js.undefined
-  var theme: js.UndefOr[PartialTheme] = js.undefined
+  var locale: js.UndefOr[PartialLocale] = js.native
+  var theme: js.UndefOr[PartialTheme] = js.native
 }
 
 object ProviderProps {
   @scala.inline
-  def apply(locale: PartialLocale = null, theme: PartialTheme = null): ProviderProps = {
+  def apply(): ProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderProps]
   }
+  @scala.inline
+  implicit class ProviderPropsOps[Self <: ProviderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocale(value: PartialLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setTheme(value: PartialTheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

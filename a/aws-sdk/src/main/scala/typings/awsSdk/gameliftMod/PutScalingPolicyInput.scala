@@ -50,27 +50,56 @@ trait PutScalingPolicyInput extends js.Object {
 
 object PutScalingPolicyInput {
   @scala.inline
-  def apply(
-    FleetId: FleetIdOrArn,
-    MetricName: MetricName,
-    Name: NonZeroAndMaxString,
-    ComparisonOperator: ComparisonOperatorType = null,
-    EvaluationPeriods: js.UndefOr[PositiveInteger] = js.undefined,
-    PolicyType: PolicyType = null,
-    ScalingAdjustment: js.UndefOr[Integer] = js.undefined,
-    ScalingAdjustmentType: ScalingAdjustmentType = null,
-    TargetConfiguration: TargetConfiguration = null,
-    Threshold: js.UndefOr[Double] = js.undefined
-  ): PutScalingPolicyInput = {
+  def apply(FleetId: FleetIdOrArn, MetricName: MetricName, Name: NonZeroAndMaxString): PutScalingPolicyInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any], MetricName = MetricName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
-    if (!js.isUndefined(EvaluationPeriods)) __obj.updateDynamic("EvaluationPeriods")(EvaluationPeriods.get.asInstanceOf[js.Any])
-    if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScalingAdjustment)) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment.get.asInstanceOf[js.Any])
-    if (ScalingAdjustmentType != null) __obj.updateDynamic("ScalingAdjustmentType")(ScalingAdjustmentType.asInstanceOf[js.Any])
-    if (TargetConfiguration != null) __obj.updateDynamic("TargetConfiguration")(TargetConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(Threshold)) __obj.updateDynamic("Threshold")(Threshold.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutScalingPolicyInput]
   }
+  @scala.inline
+  implicit class PutScalingPolicyInputOps[Self <: PutScalingPolicyInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperatorType): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComparisonOperator: Self = this.set("ComparisonOperator", js.undefined)
+    @scala.inline
+    def setEvaluationPeriods(value: PositiveInteger): Self = this.set("EvaluationPeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationPeriods: Self = this.set("EvaluationPeriods", js.undefined)
+    @scala.inline
+    def setPolicyType(value: PolicyType): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    @scala.inline
+    def setScalingAdjustment(value: Integer): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingAdjustment: Self = this.set("ScalingAdjustment", js.undefined)
+    @scala.inline
+    def setScalingAdjustmentType(value: ScalingAdjustmentType): Self = this.set("ScalingAdjustmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingAdjustmentType: Self = this.set("ScalingAdjustmentType", js.undefined)
+    @scala.inline
+    def setTargetConfiguration(value: TargetConfiguration): Self = this.set("TargetConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetConfiguration: Self = this.set("TargetConfiguration", js.undefined)
+    @scala.inline
+    def setThreshold(value: Double): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreshold: Self = this.set("Threshold", js.undefined)
+  }
+  
 }
 

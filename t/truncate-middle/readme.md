@@ -11,8 +11,8 @@ Truncates in the middle.
 | Full name          | truncate-middle |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 41649 |
+| # dependents       | 5 |
+| # downloads        | 42097 |
 | # stars            | 4 |
 
 ## Links

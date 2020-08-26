@@ -1,7 +1,5 @@
 package typings.braintreeWebDropIn.mod
 
-import typings.braintreeWebDropIn.anon.PaymentMethodIsSelected
-import typings.braintreeWebDropIn.anon.PaymentOption
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.noPaymentMethodRequestable
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.paymentMethodRequestable
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.paymentOptionSelected
@@ -13,15 +11,30 @@ import scala.scalajs.js.annotation._
 trait Dropin extends js.Object {
   def clearSelectedPaymentMethod(): Unit = js.native
   def isPaymentMethodRequestable(): Boolean = js.native
+  @JSName("off")
+  def off_noPaymentMethodRequestable(event: noPaymentMethodRequestable, handler: js.Function0[Unit]): Unit = js.native
+  @JSName("off")
+  def off_paymentMethodRequestable(
+    event: paymentMethodRequestable,
+    handler: js.Function1[/* payload */ PaymentMethodRequestablePayload, Unit]
+  ): Unit = js.native
+  @JSName("off")
+  def off_paymentOptionSelected(
+    event: paymentOptionSelected,
+    handler: js.Function1[/* payload */ PaymentOptionSelectedPayload, Unit]
+  ): Unit = js.native
   @JSName("on")
   def on_noPaymentMethodRequestable(event: noPaymentMethodRequestable, handler: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_paymentMethodRequestable(
     event: paymentMethodRequestable,
-    handler: js.Function1[/* payload */ PaymentMethodIsSelected, Unit]
+    handler: js.Function1[/* payload */ PaymentMethodRequestablePayload, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_paymentOptionSelected(event: paymentOptionSelected, handler: js.Function1[/* payload */ PaymentOption, Unit]): Unit = js.native
+  def on_paymentOptionSelected(
+    event: paymentOptionSelected,
+    handler: js.Function1[/* payload */ PaymentOptionSelectedPayload, Unit]
+  ): Unit = js.native
   def requestPaymentMethod(): js.Promise[PaymentMethodPayload] = js.native
   def requestPaymentMethod(
     callback: js.Function2[/* error */ js.Object | Null, /* payload */ js.UndefOr[PaymentMethodPayload], Unit]

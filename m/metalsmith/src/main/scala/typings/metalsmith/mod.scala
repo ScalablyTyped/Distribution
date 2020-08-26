@@ -298,6 +298,7 @@ object mod extends js.Object {
       * @link [Source] https://github.com/segmentio/metalsmith/blob/00b2c7aaee13fbe0f7fb3be332929a303b2df51d/lib/index.js#L308
       */
     def write(files: js.Object): Unit = js.native
+    def write(files: js.Object, dir: js.UndefOr[scala.Nothing], fn: Callback): Unit = js.native
     def write(files: js.Object, dir: String): Unit = js.native
     def write(files: js.Object, dir: String, fn: Callback): Unit = js.native
     /**

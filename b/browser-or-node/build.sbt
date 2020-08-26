@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "browser-or-node"
-version := "1.2-dt-20200515Z-a329f6"
-scalaVersion := "2.13.2"
+version := "1.2-dt-20200515Z-7380a3"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

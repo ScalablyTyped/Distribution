@@ -12,7 +12,7 @@ Convenience package that includes all the most common webpack blocks.
 | Keywords           | webpack, webpack-blocks |
 | # releases         | 6 |
 | # dependents       | 12 |
-| # downloads        | 117062 |
+| # downloads        | 112071 |
 | # stars            | 0 |
 
 ## Links

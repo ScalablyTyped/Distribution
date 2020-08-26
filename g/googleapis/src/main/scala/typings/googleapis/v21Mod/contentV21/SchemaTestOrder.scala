@@ -54,30 +54,66 @@ trait SchemaTestOrder extends js.Object {
 
 object SchemaTestOrder {
   @scala.inline
-  def apply(
-    enableOrderinvoices: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    lineItems: js.Array[SchemaTestOrderLineItem] = null,
-    notificationMode: String = null,
-    predefinedBillingAddress: String = null,
-    predefinedDeliveryAddress: String = null,
-    predefinedEmail: String = null,
-    promotions: js.Array[SchemaOrderPromotion] = null,
-    shippingCost: SchemaPrice = null,
-    shippingOption: String = null
-  ): SchemaTestOrder = {
+  def apply(): SchemaTestOrder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableOrderinvoices)) __obj.updateDynamic("enableOrderinvoices")(enableOrderinvoices.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
-    if (notificationMode != null) __obj.updateDynamic("notificationMode")(notificationMode.asInstanceOf[js.Any])
-    if (predefinedBillingAddress != null) __obj.updateDynamic("predefinedBillingAddress")(predefinedBillingAddress.asInstanceOf[js.Any])
-    if (predefinedDeliveryAddress != null) __obj.updateDynamic("predefinedDeliveryAddress")(predefinedDeliveryAddress.asInstanceOf[js.Any])
-    if (predefinedEmail != null) __obj.updateDynamic("predefinedEmail")(predefinedEmail.asInstanceOf[js.Any])
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
-    if (shippingCost != null) __obj.updateDynamic("shippingCost")(shippingCost.asInstanceOf[js.Any])
-    if (shippingOption != null) __obj.updateDynamic("shippingOption")(shippingOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestOrder]
   }
+  @scala.inline
+  implicit class SchemaTestOrderOps[Self <: SchemaTestOrder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableOrderinvoices(value: Boolean): Self = this.set("enableOrderinvoices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableOrderinvoices: Self = this.set("enableOrderinvoices", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLineItemsVarargs(value: SchemaTestOrderLineItem*): Self = this.set("lineItems", js.Array(value :_*))
+    @scala.inline
+    def setLineItems(value: js.Array[SchemaTestOrderLineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    @scala.inline
+    def setNotificationMode(value: String): Self = this.set("notificationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationMode: Self = this.set("notificationMode", js.undefined)
+    @scala.inline
+    def setPredefinedBillingAddress(value: String): Self = this.set("predefinedBillingAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredefinedBillingAddress: Self = this.set("predefinedBillingAddress", js.undefined)
+    @scala.inline
+    def setPredefinedDeliveryAddress(value: String): Self = this.set("predefinedDeliveryAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredefinedDeliveryAddress: Self = this.set("predefinedDeliveryAddress", js.undefined)
+    @scala.inline
+    def setPredefinedEmail(value: String): Self = this.set("predefinedEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredefinedEmail: Self = this.set("predefinedEmail", js.undefined)
+    @scala.inline
+    def setPromotionsVarargs(value: SchemaOrderPromotion*): Self = this.set("promotions", js.Array(value :_*))
+    @scala.inline
+    def setPromotions(value: js.Array[SchemaOrderPromotion]): Self = this.set("promotions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotions: Self = this.set("promotions", js.undefined)
+    @scala.inline
+    def setShippingCost(value: SchemaPrice): Self = this.set("shippingCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingCost: Self = this.set("shippingCost", js.undefined)
+    @scala.inline
+    def setShippingOption(value: String): Self = this.set("shippingOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingOption: Self = this.set("shippingOption", js.undefined)
+  }
+  
 }
 

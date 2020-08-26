@@ -30,6 +30,7 @@ class ResourcePeople protected () extends js.Object {
     */
   def createContact(): GaxiosPromise[SchemaPerson] = js.native
   def createContact(callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
+  def createContact(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerson] = js.native
   def createContact(params: ParamsResourcePeopleCreatecontact): GaxiosPromise[SchemaPerson] = js.native
   def createContact(params: ParamsResourcePeopleCreatecontact, callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
   def createContact(
@@ -57,6 +58,7 @@ class ResourcePeople protected () extends js.Object {
     */
   def deleteContact(): GaxiosPromise[SchemaEmpty] = js.native
   def deleteContact(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def deleteContact(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def deleteContact(params: ParamsResourcePeopleDeletecontact): GaxiosPromise[SchemaEmpty] = js.native
   def deleteContact(params: ParamsResourcePeopleDeletecontact, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def deleteContact(
@@ -88,6 +90,7 @@ class ResourcePeople protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPerson] = js.native
   def get(callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerson] = js.native
   def get(params: ParamsResourcePeopleGet): GaxiosPromise[SchemaPerson] = js.native
   def get(params: ParamsResourcePeopleGet, callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
   def get(
@@ -120,6 +123,7 @@ class ResourcePeople protected () extends js.Object {
     */
   def getBatchGet(): GaxiosPromise[SchemaGetPeopleResponse] = js.native
   def getBatchGet(callback: BodyResponseCallback[SchemaGetPeopleResponse]): Unit = js.native
+  def getBatchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetPeopleResponse] = js.native
   def getBatchGet(params: ParamsResourcePeopleGetbatchget): GaxiosPromise[SchemaGetPeopleResponse] = js.native
   def getBatchGet(params: ParamsResourcePeopleGetbatchget, callback: BodyResponseCallback[SchemaGetPeopleResponse]): Unit = js.native
   def getBatchGet(
@@ -157,6 +161,7 @@ class ResourcePeople protected () extends js.Object {
     */
   def updateContact(): GaxiosPromise[SchemaPerson] = js.native
   def updateContact(callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
+  def updateContact(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerson] = js.native
   def updateContact(params: ParamsResourcePeopleUpdatecontact): GaxiosPromise[SchemaPerson] = js.native
   def updateContact(params: ParamsResourcePeopleUpdatecontact, callback: BodyResponseCallback[SchemaPerson]): Unit = js.native
   def updateContact(

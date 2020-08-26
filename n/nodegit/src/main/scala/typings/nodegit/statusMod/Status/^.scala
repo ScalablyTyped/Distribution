@@ -16,6 +16,7 @@ object ^ extends js.Object {
   def foreach(repo: Repository): js.Promise[Double] = js.native
   def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = js.native
   def foreachExt(repo: Repository): js.Promise[Double] = js.native
+  def foreachExt(repo: Repository, opts: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
   def foreachExt(repo: Repository, opts: StatusOptions): js.Promise[Double] = js.native
   def foreachExt(repo: Repository, opts: StatusOptions, callback: js.Function): js.Promise[Double] = js.native
   def shouldIgnore(ignored: Double, repo: Repository, path: String): Double = js.native

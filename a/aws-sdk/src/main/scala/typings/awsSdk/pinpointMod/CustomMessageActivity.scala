@@ -34,22 +34,48 @@ trait CustomMessageActivity extends js.Object {
 
 object CustomMessageActivity {
   @scala.inline
-  def apply(
-    DeliveryUri: string = null,
-    EndpointTypes: ListOfEndpointTypesElement = null,
-    MessageConfig: JourneyCustomMessage = null,
-    NextActivity: string = null,
-    TemplateName: string = null,
-    TemplateVersion: string = null
-  ): CustomMessageActivity = {
+  def apply(): CustomMessageActivity = {
     val __obj = js.Dynamic.literal()
-    if (DeliveryUri != null) __obj.updateDynamic("DeliveryUri")(DeliveryUri.asInstanceOf[js.Any])
-    if (EndpointTypes != null) __obj.updateDynamic("EndpointTypes")(EndpointTypes.asInstanceOf[js.Any])
-    if (MessageConfig != null) __obj.updateDynamic("MessageConfig")(MessageConfig.asInstanceOf[js.Any])
-    if (NextActivity != null) __obj.updateDynamic("NextActivity")(NextActivity.asInstanceOf[js.Any])
-    if (TemplateName != null) __obj.updateDynamic("TemplateName")(TemplateName.asInstanceOf[js.Any])
-    if (TemplateVersion != null) __obj.updateDynamic("TemplateVersion")(TemplateVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomMessageActivity]
   }
+  @scala.inline
+  implicit class CustomMessageActivityOps[Self <: CustomMessageActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryUri(value: string): Self = this.set("DeliveryUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryUri: Self = this.set("DeliveryUri", js.undefined)
+    @scala.inline
+    def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = this.set("EndpointTypes", js.Array(value :_*))
+    @scala.inline
+    def setEndpointTypes(value: ListOfEndpointTypesElement): Self = this.set("EndpointTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointTypes: Self = this.set("EndpointTypes", js.undefined)
+    @scala.inline
+    def setMessageConfig(value: JourneyCustomMessage): Self = this.set("MessageConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageConfig: Self = this.set("MessageConfig", js.undefined)
+    @scala.inline
+    def setNextActivity(value: string): Self = this.set("NextActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextActivity: Self = this.set("NextActivity", js.undefined)
+    @scala.inline
+    def setTemplateName(value: string): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
+    @scala.inline
+    def setTemplateVersion(value: string): Self = this.set("TemplateVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateVersion: Self = this.set("TemplateVersion", js.undefined)
+  }
+  
 }
 

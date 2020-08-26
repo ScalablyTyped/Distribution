@@ -18,11 +18,32 @@ trait ApplicationVersionDescriptionsMessage extends js.Object {
 
 object ApplicationVersionDescriptionsMessage {
   @scala.inline
-  def apply(ApplicationVersions: ApplicationVersionDescriptionList = null, NextToken: Token = null): ApplicationVersionDescriptionsMessage = {
+  def apply(): ApplicationVersionDescriptionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationVersions != null) __obj.updateDynamic("ApplicationVersions")(ApplicationVersions.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationVersionDescriptionsMessage]
   }
+  @scala.inline
+  implicit class ApplicationVersionDescriptionsMessageOps[Self <: ApplicationVersionDescriptionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationVersionsVarargs(value: ApplicationVersionDescription*): Self = this.set("ApplicationVersions", js.Array(value :_*))
+    @scala.inline
+    def setApplicationVersions(value: ApplicationVersionDescriptionList): Self = this.set("ApplicationVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationVersions: Self = this.set("ApplicationVersions", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -15,10 +15,26 @@ trait LogGroupEventSubscriptionArgs extends js.Object {
 
 object LogGroupEventSubscriptionArgs {
   @scala.inline
-  def apply(filterPattern: String = null): LogGroupEventSubscriptionArgs = {
+  def apply(): LogGroupEventSubscriptionArgs = {
     val __obj = js.Dynamic.literal()
-    if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogGroupEventSubscriptionArgs]
   }
+  @scala.inline
+  implicit class LogGroupEventSubscriptionArgsOps[Self <: LogGroupEventSubscriptionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilterPattern(value: String): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterPattern: Self = this.set("filterPattern", js.undefined)
+  }
+  
 }
 

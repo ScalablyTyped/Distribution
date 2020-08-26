@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HttpResponse extends js.Object {
-  var buffer: js.UndefOr[Buffer] = js.undefined
-  var cookies: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
-  var status: js.UndefOr[Double] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
+  var buffer: js.UndefOr[Buffer] = js.native
+  var cookies: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.native
+  var status: js.UndefOr[Double] = js.native
+  var text: js.UndefOr[String] = js.native
 }
 
 object HttpResponse {
   @scala.inline
-  def apply(
-    buffer: Buffer = null,
-    cookies: js.Any = null,
-    data: js.Any = null,
-    headers: js.Any = null,
-    status: js.UndefOr[Double] = js.undefined,
-    text: String = null
-  ): HttpResponse = {
+  def apply(): HttpResponse = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpResponse]
   }
+  @scala.inline
+  implicit class HttpResponseOps[Self <: HttpResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuffer(value: Buffer): Self = this.set("buffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    @scala.inline
+    def setCookies(value: js.Any): Self = this.set("cookies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookies: Self = this.set("cookies", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

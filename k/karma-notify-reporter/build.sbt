@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "karma-notify-reporter"
-version := "1.2-dt-20200616Z-c18f17"
-scalaVersion := "2.13.2"
+version := "1.2-dt-20200616Z-403ccb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

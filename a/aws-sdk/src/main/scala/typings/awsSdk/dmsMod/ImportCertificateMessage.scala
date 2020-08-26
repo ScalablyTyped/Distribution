@@ -26,17 +26,38 @@ trait ImportCertificateMessage extends js.Object {
 
 object ImportCertificateMessage {
   @scala.inline
-  def apply(
-    CertificateIdentifier: String,
-    CertificatePem: String = null,
-    CertificateWallet: CertificateWallet = null,
-    Tags: TagList = null
-  ): ImportCertificateMessage = {
+  def apply(CertificateIdentifier: String): ImportCertificateMessage = {
     val __obj = js.Dynamic.literal(CertificateIdentifier = CertificateIdentifier.asInstanceOf[js.Any])
-    if (CertificatePem != null) __obj.updateDynamic("CertificatePem")(CertificatePem.asInstanceOf[js.Any])
-    if (CertificateWallet != null) __obj.updateDynamic("CertificateWallet")(CertificateWallet.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportCertificateMessage]
   }
+  @scala.inline
+  implicit class ImportCertificateMessageOps[Self <: ImportCertificateMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateIdentifier(value: String): Self = this.set("CertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificatePem(value: String): Self = this.set("CertificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePem: Self = this.set("CertificatePem", js.undefined)
+    @scala.inline
+    def setCertificateWallet(value: CertificateWallet): Self = this.set("CertificateWallet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateWallet: Self = this.set("CertificateWallet", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

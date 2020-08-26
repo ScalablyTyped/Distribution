@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/paginator" : "2.0.3"
+      "@google-cloud/paginator" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/paginator" : "2.0.3"
+      "@google-cloud/paginator" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

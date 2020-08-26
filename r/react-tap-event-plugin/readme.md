@@ -10,8 +10,8 @@ Facebook's TapEventPlugin, temporarily available on npm until its made public in
 | Full name          | react-tap-event-plugin |
 | Keywords           | TapEventPlugin, react, touch, delay, 300ms, react-tap-event-plugin |
 | # releases         | 2 |
-| # dependents       | 497 |
-| # downloads        | 2962915 |
+| # dependents       | 496 |
+| # downloads        | 2910406 |
 | # stars            | 27 |
 
 ## Links

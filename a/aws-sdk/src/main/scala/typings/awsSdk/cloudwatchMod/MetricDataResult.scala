@@ -34,22 +34,52 @@ trait MetricDataResult extends js.Object {
 
 object MetricDataResult {
   @scala.inline
-  def apply(
-    Id: MetricId = null,
-    Label: MetricLabel = null,
-    Messages: MetricDataResultMessages = null,
-    StatusCode: StatusCode = null,
-    Timestamps: Timestamps = null,
-    Values: DatapointValues = null
-  ): MetricDataResult = {
+  def apply(): MetricDataResult = {
     val __obj = js.Dynamic.literal()
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (Messages != null) __obj.updateDynamic("Messages")(Messages.asInstanceOf[js.Any])
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
-    if (Timestamps != null) __obj.updateDynamic("Timestamps")(Timestamps.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDataResult]
   }
+  @scala.inline
+  implicit class MetricDataResultOps[Self <: MetricDataResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: MetricId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLabel(value: MetricLabel): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("Label", js.undefined)
+    @scala.inline
+    def setMessagesVarargs(value: MessageData*): Self = this.set("Messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: MetricDataResultMessages): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("Messages", js.undefined)
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    @scala.inline
+    def setTimestampsVarargs(value: Timestamp*): Self = this.set("Timestamps", js.Array(value :_*))
+    @scala.inline
+    def setTimestamps(value: Timestamps): Self = this.set("Timestamps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamps: Self = this.set("Timestamps", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: DatapointValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: DatapointValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

@@ -16,10 +16,5 @@ class BootstrapClientMenuItemEventArgs protected ()
     * @param item An BootstrapClientMenuItem object representing the group related to the event.
     */
   def this(item: typings.devexpressWeb.BootstrapClientMenuItem) = this()
-  /**
-    * Gets the menu item object related to the event.
-    */
-  /* CompleteClass */
-  override var item: typings.devexpressWeb.BootstrapClientMenuItem = js.native
 }
 

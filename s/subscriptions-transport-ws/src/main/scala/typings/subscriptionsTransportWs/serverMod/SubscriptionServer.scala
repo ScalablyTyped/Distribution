@@ -25,12 +25,12 @@ class SubscriptionServer protected () extends js.Object {
   var sendError: js.Any = js.native
   var sendKeepAlive: js.Any = js.native
   var sendMessage: js.Any = js.native
-  val server: Server = js.native
   var specifiedRules: js.Any = js.native
   var subscribe: js.Any = js.native
   var unsubscribe: js.Any = js.native
   var wsServer: js.Any = js.native
   def close(): Unit = js.native
+  def server: Server = js.native
 }
 
 /* static members */

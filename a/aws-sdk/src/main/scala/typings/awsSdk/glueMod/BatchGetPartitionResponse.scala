@@ -18,11 +18,34 @@ trait BatchGetPartitionResponse extends js.Object {
 
 object BatchGetPartitionResponse {
   @scala.inline
-  def apply(Partitions: PartitionList = null, UnprocessedKeys: BatchGetPartitionValueList = null): BatchGetPartitionResponse = {
+  def apply(): BatchGetPartitionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Partitions != null) __obj.updateDynamic("Partitions")(Partitions.asInstanceOf[js.Any])
-    if (UnprocessedKeys != null) __obj.updateDynamic("UnprocessedKeys")(UnprocessedKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetPartitionResponse]
   }
+  @scala.inline
+  implicit class BatchGetPartitionResponseOps[Self <: BatchGetPartitionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPartitionsVarargs(value: Partition*): Self = this.set("Partitions", js.Array(value :_*))
+    @scala.inline
+    def setPartitions(value: PartitionList): Self = this.set("Partitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitions: Self = this.set("Partitions", js.undefined)
+    @scala.inline
+    def setUnprocessedKeysVarargs(value: PartitionValueList*): Self = this.set("UnprocessedKeys", js.Array(value :_*))
+    @scala.inline
+    def setUnprocessedKeys(value: BatchGetPartitionValueList): Self = this.set("UnprocessedKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnprocessedKeys: Self = this.set("UnprocessedKeys", js.undefined)
+  }
+  
 }
 

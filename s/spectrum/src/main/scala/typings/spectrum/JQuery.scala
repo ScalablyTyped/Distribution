@@ -91,6 +91,8 @@ trait JQuery extends js.Object {
   @JSName("spectrum")
   def spectrum_option(methodName: option): JQuery = js.native
   @JSName("spectrum")
+  def spectrum_option(methodName: option, optionName: js.UndefOr[scala.Nothing], newOptionValue: js.Any): JQuery = js.native
+  @JSName("spectrum")
   def spectrum_option(methodName: option, optionName: String): JQuery = js.native
   @JSName("spectrum")
   def spectrum_option(methodName: option, optionName: String, newOptionValue: js.Any): JQuery = js.native

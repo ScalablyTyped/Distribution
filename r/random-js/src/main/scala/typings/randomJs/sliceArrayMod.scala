@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object sliceArrayMod extends js.Object {
   def sliceArray(): js.Array[_] = js.native
+  def sliceArray(start: js.UndefOr[scala.Nothing], end: Double): js.Array[_] = js.native
   def sliceArray(start: Double): js.Array[_] = js.native
   def sliceArray(start: Double, end: Double): js.Array[_] = js.native
 }

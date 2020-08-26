@@ -10,9 +10,9 @@ SQLite library with support for opening and writing databases, prepared statemen
 | ------------------ | :-------------: |
 | Full name          | sql.js |
 | Keywords           | sql, sqlite, stand-alone, relational, database, RDBMS, data, query, statement, emscripten, asm, asm.js |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 48 |
-| # downloads        | 1095396 |
+| # downloads        | 1166029 |
 | # stars            | 13 |
 
 ## Links

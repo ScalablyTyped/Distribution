@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class Database () extends js.Object {
   def this(urls: String) = this()
   def this(urls: js.Array[String]) = this()
+  def this(urls: js.UndefOr[scala.Nothing], options: MongoClientOptions) = this()
   def this(urls: String, options: MongoClientOptions) = this()
   def this(urls: js.Array[String], options: MongoClientOptions) = this()
   var models: js.Array[ModelClass] = js.native

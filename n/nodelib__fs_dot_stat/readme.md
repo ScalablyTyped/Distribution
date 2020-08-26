@@ -12,7 +12,7 @@ Get the status of a file with some features
 | Keywords           | NodeLib, fs, FileSystem, file system, stat |
 | # releases         | 13 |
 | # dependents       | 3 |
-| # downloads        | 184518983 |
+| # downloads        | 196126054 |
 | # stars            | 0 |
 
 ## Links

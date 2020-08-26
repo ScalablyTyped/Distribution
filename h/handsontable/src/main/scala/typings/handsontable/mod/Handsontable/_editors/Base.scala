@@ -26,6 +26,7 @@ trait Base extends js.Object {
   var row: Double = js.native
   var state: EditorState = js.native
   def beginEditing(): Unit = js.native
+  def beginEditing(initialValue: js.UndefOr[scala.Nothing], event: Event): Unit = js.native
   def beginEditing(initialValue: js.Any): Unit = js.native
   def beginEditing(initialValue: js.Any, event: Event): Unit = js.native
   def cancelChanges(): Unit = js.native
@@ -36,7 +37,15 @@ trait Base extends js.Object {
   def enableFullEditMode(): Unit = js.native
   def extend[T /* <: Base */](): T = js.native
   def finishEditing(): Unit = js.native
+  def finishEditing(
+    restoreOriginalValue: js.UndefOr[scala.Nothing],
+    ctrlDown: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def finishEditing(restoreOriginalValue: js.UndefOr[scala.Nothing], ctrlDown: Boolean): Unit = js.native
+  def finishEditing(restoreOriginalValue: js.UndefOr[scala.Nothing], ctrlDown: Boolean, callback: js.Function0[Unit]): Unit = js.native
   def finishEditing(restoreOriginalValue: Boolean): Unit = js.native
+  def finishEditing(restoreOriginalValue: Boolean, ctrlDown: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def finishEditing(restoreOriginalValue: Boolean, ctrlDown: Boolean): Unit = js.native
   def finishEditing(restoreOriginalValue: Boolean, ctrlDown: Boolean, callback: js.Function0[Unit]): Unit = js.native
   def focus(): Unit = js.native
@@ -66,6 +75,7 @@ trait Base extends js.Object {
     cellProperties: CellProperties
   ): Unit = js.native
   def saveValue(): Unit = js.native
+  def saveValue(`val`: js.UndefOr[scala.Nothing], ctrlDown: Boolean): Unit = js.native
   def saveValue(`val`: js.Any): Unit = js.native
   def saveValue(`val`: js.Any, ctrlDown: Boolean): Unit = js.native
   def setValue(): Unit = js.native

@@ -26,18 +26,40 @@ trait AnalyzeDocumentResponse extends js.Object {
 
 object AnalyzeDocumentResponse {
   @scala.inline
-  def apply(
-    AnalyzeDocumentModelVersion: String = null,
-    Blocks: BlockList = null,
-    DocumentMetadata: DocumentMetadata = null,
-    HumanLoopActivationOutput: HumanLoopActivationOutput = null
-  ): AnalyzeDocumentResponse = {
+  def apply(): AnalyzeDocumentResponse = {
     val __obj = js.Dynamic.literal()
-    if (AnalyzeDocumentModelVersion != null) __obj.updateDynamic("AnalyzeDocumentModelVersion")(AnalyzeDocumentModelVersion.asInstanceOf[js.Any])
-    if (Blocks != null) __obj.updateDynamic("Blocks")(Blocks.asInstanceOf[js.Any])
-    if (DocumentMetadata != null) __obj.updateDynamic("DocumentMetadata")(DocumentMetadata.asInstanceOf[js.Any])
-    if (HumanLoopActivationOutput != null) __obj.updateDynamic("HumanLoopActivationOutput")(HumanLoopActivationOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzeDocumentResponse]
   }
+  @scala.inline
+  implicit class AnalyzeDocumentResponseOps[Self <: AnalyzeDocumentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnalyzeDocumentModelVersion(value: String): Self = this.set("AnalyzeDocumentModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyzeDocumentModelVersion: Self = this.set("AnalyzeDocumentModelVersion", js.undefined)
+    @scala.inline
+    def setBlocksVarargs(value: Block*): Self = this.set("Blocks", js.Array(value :_*))
+    @scala.inline
+    def setBlocks(value: BlockList): Self = this.set("Blocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlocks: Self = this.set("Blocks", js.undefined)
+    @scala.inline
+    def setDocumentMetadata(value: DocumentMetadata): Self = this.set("DocumentMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentMetadata: Self = this.set("DocumentMetadata", js.undefined)
+    @scala.inline
+    def setHumanLoopActivationOutput(value: HumanLoopActivationOutput): Self = this.set("HumanLoopActivationOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanLoopActivationOutput: Self = this.set("HumanLoopActivationOutput", js.undefined)
+  }
+  
 }
 

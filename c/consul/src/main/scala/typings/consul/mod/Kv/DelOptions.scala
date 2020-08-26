@@ -1,44 +1,45 @@
 package typings.consul.mod.Kv
 
 import typings.consul.mod.CommonOptions
-import typings.node.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DelOptions extends CommonOptions {
-  var cas: js.UndefOr[String] = js.undefined
-  var key: String
-  var recurse: js.UndefOr[Boolean] = js.undefined
+  var cas: js.UndefOr[String] = js.native
+  var key: String = js.native
+  var recurse: js.UndefOr[Boolean] = js.native
 }
 
 object DelOptions {
   @scala.inline
-  def apply(
-    key: String,
-    cas: String = null,
-    consistent: js.UndefOr[Boolean] = js.undefined,
-    ctx: EventEmitter = null,
-    dc: String = null,
-    recurse: js.UndefOr[Boolean] = js.undefined,
-    stale: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    token: String = null,
-    wait: String = null,
-    wan: js.UndefOr[Boolean] = js.undefined
-  ): DelOptions = {
+  def apply(key: String): DelOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (cas != null) __obj.updateDynamic("cas")(cas.asInstanceOf[js.Any])
-    if (!js.isUndefined(consistent)) __obj.updateDynamic("consistent")(consistent.get.asInstanceOf[js.Any])
-    if (ctx != null) __obj.updateDynamic("ctx")(ctx.asInstanceOf[js.Any])
-    if (dc != null) __obj.updateDynamic("dc")(dc.asInstanceOf[js.Any])
-    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
-    if (!js.isUndefined(wan)) __obj.updateDynamic("wan")(wan.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DelOptions]
   }
+  @scala.inline
+  implicit class DelOptionsOps[Self <: DelOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCas(value: String): Self = this.set("cas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCas: Self = this.set("cas", js.undefined)
+    @scala.inline
+    def setRecurse(value: Boolean): Self = this.set("recurse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurse: Self = this.set("recurse", js.undefined)
+  }
+  
 }
 

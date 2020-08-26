@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined angular.angular.IScope & {  $column ? :ng-table.ng-table/src/browser/public-interfaces.IColumnDef,   $columns  :std.Array<ng-table.ng-table/src/browser/public-interfaces.IColumnDef>} */
+/* Inlined angular.angular.IScope & {  $column :ng-table.ng-table/src/browser/public-interfaces.IColumnDef | undefined,   $columns :std.Array<ng-table.ng-table/src/browser/public-interfaces.IColumnDef>} */
 @js.native
 trait ColumnFieldContext extends js.Object {
   @JSName("$column")
@@ -111,6 +111,8 @@ trait ColumnFieldContext extends js.Object {
   @JSName("$new")
   def $new(): IScope = js.native
   @JSName("$new")
+  def $new(isolate: js.UndefOr[scala.Nothing], parent: IScope): IScope = js.native
+  @JSName("$new")
   def $new(isolate: Boolean): IScope = js.native
   @JSName("$new")
   def $new(isolate: Boolean, parent: IScope): IScope = js.native
@@ -174,11 +176,19 @@ trait ColumnFieldContext extends js.Object {
   @JSName("$watch")
   def $watch(watchExpression: String): js.Function0[Unit] = js.native
   @JSName("$watch")
+  def $watch(watchExpression: String, listener: js.UndefOr[scala.Nothing], objectEquality: Boolean): js.Function0[Unit] = js.native
+  @JSName("$watch")
   def $watch(watchExpression: String, listener: String): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch(watchExpression: String, listener: String, objectEquality: Boolean): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch(watchExpression: js.Function1[/* scope */ IScope, _]): js.Function0[Unit] = js.native
+  @JSName("$watch")
+  def $watch(
+    watchExpression: js.Function1[/* scope */ IScope, _],
+    listener: js.UndefOr[scala.Nothing],
+    objectEquality: Boolean
+  ): js.Function0[Unit] = js.native
   @JSName("$watch")
   def $watch(watchExpression: js.Function1[/* scope */ IScope, _], listener: String): js.Function0[Unit] = js.native
   @JSName("$watch")
@@ -223,6 +233,14 @@ trait ColumnFieldContext extends js.Object {
   @JSName("$watch")
   def $watch_T[T](watchExpression: String): js.Function0[Unit] = js.native
   @JSName("$watch")
+  def $watch_T[T](watchExpression: String, listener: js.UndefOr[scala.Nothing], objectEquality: Boolean): js.Function0[Unit] = js.native
+  @JSName("$watch")
   def $watch_T[T](watchExpression: js.Function1[/* scope */ IScope, T]): js.Function0[Unit] = js.native
+  @JSName("$watch")
+  def $watch_T[T](
+    watchExpression: js.Function1[/* scope */ IScope, T],
+    listener: js.UndefOr[scala.Nothing],
+    objectEquality: Boolean
+  ): js.Function0[Unit] = js.native
 }
 

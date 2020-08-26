@@ -23,32 +23,66 @@ trait PartialStyleRulesListItemButton extends js.Object {
 
 object PartialStyleRulesListItemButton {
   @scala.inline
-  def apply(
-    button: CSSProperties = null,
-    container: CSSProperties = null,
-    default: CSSProperties = null,
-    dense: CSSProperties = null,
-    disabled: CSSProperties = null,
-    divider: CSSProperties = null,
-    focusVisible: CSSProperties = null,
-    gutters: CSSProperties = null,
-    root: CSSProperties = null,
-    secondaryAction: CSSProperties = null,
-    selected: CSSProperties = null
-  ): PartialStyleRulesListItemButton = {
+  def apply(): PartialStyleRulesListItemButton = {
     val __obj = js.Dynamic.literal()
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (secondaryAction != null) __obj.updateDynamic("secondaryAction")(secondaryAction.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesListItemButton]
   }
+  @scala.inline
+  implicit class PartialStyleRulesListItemButtonOps[Self <: PartialStyleRulesListItemButton] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButton(value: CSSProperties): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setContainer(value: CSSProperties): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDefault(value: CSSProperties): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDense(value: CSSProperties): Self = this.set("dense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDense: Self = this.set("dense", js.undefined)
+    @scala.inline
+    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDivider(value: CSSProperties): Self = this.set("divider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivider: Self = this.set("divider", js.undefined)
+    @scala.inline
+    def setFocusVisible(value: CSSProperties): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    @scala.inline
+    def setGutters(value: CSSProperties): Self = this.set("gutters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutters: Self = this.set("gutters", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSecondaryAction(value: CSSProperties): Self = this.set("secondaryAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryAction: Self = this.set("secondaryAction", js.undefined)
+    @scala.inline
+    def setSelected(value: CSSProperties): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ add accessibility to your website
 | Keywords           | accessibility, website, increase text size, underline links, text to speech, invert colors |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 6754 |
+| # downloads        | 7876 |
 | # stars            | 3 |
 
 ## Links

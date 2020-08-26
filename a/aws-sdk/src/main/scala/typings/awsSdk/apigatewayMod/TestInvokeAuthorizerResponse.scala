@@ -35,24 +35,50 @@ trait TestInvokeAuthorizerResponse extends js.Object {
 
 object TestInvokeAuthorizerResponse {
   @scala.inline
-  def apply(
-    authorization: MapOfStringToList = null,
-    claims: MapOfStringToString = null,
-    clientStatus: js.UndefOr[Integer] = js.undefined,
-    latency: js.UndefOr[Long] = js.undefined,
-    log: String = null,
-    policy: String = null,
-    principalId: String = null
-  ): TestInvokeAuthorizerResponse = {
+  def apply(): TestInvokeAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
-    if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientStatus)) __obj.updateDynamic("clientStatus")(clientStatus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(latency)) __obj.updateDynamic("latency")(latency.get.asInstanceOf[js.Any])
-    if (log != null) __obj.updateDynamic("log")(log.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (principalId != null) __obj.updateDynamic("principalId")(principalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestInvokeAuthorizerResponse]
   }
+  @scala.inline
+  implicit class TestInvokeAuthorizerResponseOps[Self <: TestInvokeAuthorizerResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorization(value: MapOfStringToList): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+    @scala.inline
+    def setClaims(value: MapOfStringToString): Self = this.set("claims", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaims: Self = this.set("claims", js.undefined)
+    @scala.inline
+    def setClientStatus(value: Integer): Self = this.set("clientStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientStatus: Self = this.set("clientStatus", js.undefined)
+    @scala.inline
+    def setLatency(value: Long): Self = this.set("latency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatency: Self = this.set("latency", js.undefined)
+    @scala.inline
+    def setLog(value: String): Self = this.set("log", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLog: Self = this.set("log", js.undefined)
+    @scala.inline
+    def setPolicy(value: String): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setPrincipalId(value: String): Self = this.set("principalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalId: Self = this.set("principalId", js.undefined)
+  }
+  
 }
 

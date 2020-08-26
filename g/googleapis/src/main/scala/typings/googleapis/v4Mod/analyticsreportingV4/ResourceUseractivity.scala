@@ -27,6 +27,7 @@ class ResourceUseractivity protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaSearchUserActivityResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
   def search(params: ParamsResourceUseractivitySearch): GaxiosPromise[SchemaSearchUserActivityResponse] = js.native
   def search(
     params: ParamsResourceUseractivitySearch,

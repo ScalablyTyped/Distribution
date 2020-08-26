@@ -22,12 +22,34 @@ trait DeregisterStreamConsumerInput extends js.Object {
 
 object DeregisterStreamConsumerInput {
   @scala.inline
-  def apply(ConsumerARN: ConsumerARN = null, ConsumerName: ConsumerName = null, StreamARN: StreamARN = null): DeregisterStreamConsumerInput = {
+  def apply(): DeregisterStreamConsumerInput = {
     val __obj = js.Dynamic.literal()
-    if (ConsumerARN != null) __obj.updateDynamic("ConsumerARN")(ConsumerARN.asInstanceOf[js.Any])
-    if (ConsumerName != null) __obj.updateDynamic("ConsumerName")(ConsumerName.asInstanceOf[js.Any])
-    if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterStreamConsumerInput]
   }
+  @scala.inline
+  implicit class DeregisterStreamConsumerInputOps[Self <: DeregisterStreamConsumerInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumerARN(value: ConsumerARN): Self = this.set("ConsumerARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerARN: Self = this.set("ConsumerARN", js.undefined)
+    @scala.inline
+    def setConsumerName(value: ConsumerName): Self = this.set("ConsumerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerName: Self = this.set("ConsumerName", js.undefined)
+    @scala.inline
+    def setStreamARN(value: StreamARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
+  }
+  
 }
 

@@ -26,16 +26,34 @@ trait SchemaSubscriptionContentDetails extends js.Object {
 
 object SchemaSubscriptionContentDetails {
   @scala.inline
-  def apply(
-    activityType: String = null,
-    newItemCount: js.UndefOr[Double] = js.undefined,
-    totalItemCount: js.UndefOr[Double] = js.undefined
-  ): SchemaSubscriptionContentDetails = {
+  def apply(): SchemaSubscriptionContentDetails = {
     val __obj = js.Dynamic.literal()
-    if (activityType != null) __obj.updateDynamic("activityType")(activityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(newItemCount)) __obj.updateDynamic("newItemCount")(newItemCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalItemCount)) __obj.updateDynamic("totalItemCount")(totalItemCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscriptionContentDetails]
   }
+  @scala.inline
+  implicit class SchemaSubscriptionContentDetailsOps[Self <: SchemaSubscriptionContentDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityType(value: String): Self = this.set("activityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityType: Self = this.set("activityType", js.undefined)
+    @scala.inline
+    def setNewItemCount(value: Double): Self = this.set("newItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewItemCount: Self = this.set("newItemCount", js.undefined)
+    @scala.inline
+    def setTotalItemCount(value: Double): Self = this.set("totalItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalItemCount: Self = this.set("totalItemCount", js.undefined)
+  }
+  
 }
 

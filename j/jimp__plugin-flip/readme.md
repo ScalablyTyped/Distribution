@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-flip
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 flip an image.
@@ -10,9 +10,9 @@ flip an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-flip |
 | Keywords           | - |
-| # releases         | 66 |
+| # releases         | 65 |
 | # dependents       | 1 |
-| # downloads        | 13915140 |
+| # downloads        | 14290183 |
 | # stars            | 0 |
 
 ## Links

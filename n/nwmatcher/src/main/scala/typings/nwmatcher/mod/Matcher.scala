@@ -24,6 +24,11 @@ trait Matcher extends js.Object {
   def `match`(element: Element, selector: String): Boolean = js.native
   def `match`(element: Element, selector: String, context: Element): Boolean = js.native
   def select(selector: String): js.Array[Element] = js.native
+  def select(
+    selector: String,
+    context: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* element */ Element, Unit]
+  ): js.Array[Element] = js.native
   def select(selector: String, context: Element): js.Array[Element] = js.native
   def select(selector: String, context: Element, callback: js.Function1[/* element */ Element, Unit]): js.Array[Element] = js.native
 }

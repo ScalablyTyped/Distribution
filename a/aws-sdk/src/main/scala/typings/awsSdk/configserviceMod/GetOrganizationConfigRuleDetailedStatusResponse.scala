@@ -18,14 +18,32 @@ trait GetOrganizationConfigRuleDetailedStatusResponse extends js.Object {
 
 object GetOrganizationConfigRuleDetailedStatusResponse {
   @scala.inline
-  def apply(
-    NextToken: String = null,
-    OrganizationConfigRuleDetailedStatus: OrganizationConfigRuleDetailedStatus = null
-  ): GetOrganizationConfigRuleDetailedStatusResponse = {
+  def apply(): GetOrganizationConfigRuleDetailedStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (OrganizationConfigRuleDetailedStatus != null) __obj.updateDynamic("OrganizationConfigRuleDetailedStatus")(OrganizationConfigRuleDetailedStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOrganizationConfigRuleDetailedStatusResponse]
   }
+  @scala.inline
+  implicit class GetOrganizationConfigRuleDetailedStatusResponseOps[Self <: GetOrganizationConfigRuleDetailedStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOrganizationConfigRuleDetailedStatusVarargs(value: MemberAccountStatus*): Self = this.set("OrganizationConfigRuleDetailedStatus", js.Array(value :_*))
+    @scala.inline
+    def setOrganizationConfigRuleDetailedStatus(value: OrganizationConfigRuleDetailedStatus): Self = this.set("OrganizationConfigRuleDetailedStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationConfigRuleDetailedStatus: Self = this.set("OrganizationConfigRuleDetailedStatus", js.undefined)
+  }
+  
 }
 

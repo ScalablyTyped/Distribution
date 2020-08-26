@@ -66,6 +66,7 @@ trait NodeRSA extends js.Object {
     * @param exponent public exponent. 65537 by default.
     */
   def generateKeyPair(): NodeRSA = js.native
+  def generateKeyPair(bits: js.UndefOr[scala.Nothing], exponent: Double): NodeRSA = js.native
   def generateKeyPair(bits: Double): NodeRSA = js.native
   def generateKeyPair(bits: Double, exponent: Double): NodeRSA = js.native
   /**

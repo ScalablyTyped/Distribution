@@ -9,7 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class JulianDate () extends js.Object {
   def this(julianDayNumber: Double) = this()
+  def this(julianDayNumber: js.UndefOr[scala.Nothing], secondsOfDay: Double) = this()
   def this(julianDayNumber: Double, secondsOfDay: Double) = this()
+  def this(
+    julianDayNumber: js.UndefOr[scala.Nothing],
+    secondsOfDay: js.UndefOr[scala.Nothing],
+    timeStandard: TimeStandard
+  ) = this()
+  def this(julianDayNumber: js.UndefOr[scala.Nothing], secondsOfDay: Double, timeStandard: TimeStandard) = this()
+  def this(julianDayNumber: Double, secondsOfDay: js.UndefOr[scala.Nothing], timeStandard: TimeStandard) = this()
   def this(julianDayNumber: Double, secondsOfDay: Double, timeStandard: TimeStandard) = this()
   var dayNumber: Double = js.native
   var secondsOfDay: Double = js.native
@@ -34,6 +42,7 @@ object JulianDate extends js.Object {
   def computeTaiMinusUtc(julianDate: JulianDate): Double = js.native
   def daysDifference(left: JulianDate, right: JulianDate): Double = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: JulianDate): Boolean = js.native
   def equals(left: JulianDate): Boolean = js.native
   def equals(left: JulianDate, right: JulianDate): Boolean = js.native
   def equalsEpsilon(left: JulianDate, right: JulianDate, epsilon: Double): Boolean = js.native

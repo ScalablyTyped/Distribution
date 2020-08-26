@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  globalFilter  :(rows : std.Array<react-table.react-table.Row<D>>, columnIds : std.Array<react-table.react-table.IdType<D>>, filterValue : any): std.Array<react-table.react-table.Row<D>> | string,   manualGlobalFilter  :boolean,   filterTypes  :react-table.react-table.FilterTypes<D>,   autoResetGlobalFilter ? :boolean,   disableGlobalFilter ? :boolean}> */
+/* Inlined std.Partial<{  globalFilter :(rows : std.Array<react-table.react-table.Row<D>>, columnIds : std.Array<react-table.react-table.IdType<D>>, filterValue : any): std.Array<react-table.react-table.Row<D>> | string,   manualGlobalFilter :boolean,   filterTypes :react-table.react-table.FilterTypes<D>,   autoResetGlobalFilter :boolean | undefined,   disableGlobalFilter :boolean | undefined}> */
+@js.native
 trait UseGlobalFiltersOptions[D /* <: js.Object */] extends js.Object {
-  var autoResetGlobalFilter: js.UndefOr[Boolean] = js.undefined
-  var disableGlobalFilter: js.UndefOr[Boolean] = js.undefined
-  var filterTypes: js.UndefOr[FilterTypes[D]] = js.undefined
+  var autoResetGlobalFilter: js.UndefOr[Boolean] = js.native
+  var disableGlobalFilter: js.UndefOr[Boolean] = js.native
+  var filterTypes: js.UndefOr[FilterTypes[D]] = js.native
   var globalFilter: js.UndefOr[
     (js.Function3[
       /* rows */ js.Array[Row[D]], 
@@ -16,31 +17,59 @@ trait UseGlobalFiltersOptions[D /* <: js.Object */] extends js.Object {
       /* filterValue */ js.Any, 
       js.Array[Row[D]]
     ]) | String
-  ] = js.undefined
-  var manualGlobalFilter: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var manualGlobalFilter: js.UndefOr[Boolean] = js.native
 }
 
 object UseGlobalFiltersOptions {
   @scala.inline
-  def apply[/* <: js.Object */ D](
-    autoResetGlobalFilter: js.UndefOr[Boolean] = js.undefined,
-    disableGlobalFilter: js.UndefOr[Boolean] = js.undefined,
-    filterTypes: FilterTypes[D] = null,
-    globalFilter: (js.Function3[
-      /* rows */ js.Array[Row[D]], 
-      /* columnIds */ js.Array[IdType[D]], 
-      /* filterValue */ js.Any, 
-      js.Array[Row[D]]
-    ]) | String = null,
-    manualGlobalFilter: js.UndefOr[Boolean] = js.undefined
-  ): UseGlobalFiltersOptions[D] = {
+  def apply[/* <: js.Object */ D](): UseGlobalFiltersOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResetGlobalFilter)) __obj.updateDynamic("autoResetGlobalFilter")(autoResetGlobalFilter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGlobalFilter)) __obj.updateDynamic("disableGlobalFilter")(disableGlobalFilter.get.asInstanceOf[js.Any])
-    if (filterTypes != null) __obj.updateDynamic("filterTypes")(filterTypes.asInstanceOf[js.Any])
-    if (globalFilter != null) __obj.updateDynamic("globalFilter")(globalFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualGlobalFilter)) __obj.updateDynamic("manualGlobalFilter")(manualGlobalFilter.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGlobalFiltersOptions[D]]
   }
+  @scala.inline
+  implicit class UseGlobalFiltersOptionsOps[Self <: UseGlobalFiltersOptions[_], /* <: js.Object */ D] (val x: Self with UseGlobalFiltersOptions[D]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoResetGlobalFilter(value: Boolean): Self = this.set("autoResetGlobalFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResetGlobalFilter: Self = this.set("autoResetGlobalFilter", js.undefined)
+    @scala.inline
+    def setDisableGlobalFilter(value: Boolean): Self = this.set("disableGlobalFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableGlobalFilter: Self = this.set("disableGlobalFilter", js.undefined)
+    @scala.inline
+    def setFilterTypes(value: FilterTypes[D]): Self = this.set("filterTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterTypes: Self = this.set("filterTypes", js.undefined)
+    @scala.inline
+    def setGlobalFilterFunction3(
+      value: (/* rows */ js.Array[Row[D]], /* columnIds */ js.Array[IdType[D]], /* filterValue */ js.Any) => js.Array[Row[D]]
+    ): Self = this.set("globalFilter", js.Any.fromFunction3(value))
+    @scala.inline
+    def setGlobalFilter(
+      value: (js.Function3[
+          /* rows */ js.Array[Row[D]], 
+          /* columnIds */ js.Array[IdType[D]], 
+          /* filterValue */ js.Any, 
+          js.Array[Row[D]]
+        ]) | String
+    ): Self = this.set("globalFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalFilter: Self = this.set("globalFilter", js.undefined)
+    @scala.inline
+    def setManualGlobalFilter(value: Boolean): Self = this.set("manualGlobalFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualGlobalFilter: Self = this.set("manualGlobalFilter", js.undefined)
+  }
+  
 }
 

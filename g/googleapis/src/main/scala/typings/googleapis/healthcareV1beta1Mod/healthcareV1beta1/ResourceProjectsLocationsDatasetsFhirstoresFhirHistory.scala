@@ -29,6 +29,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extend
     */
   def get(): GaxiosPromise[SchemaHttpBody] = js.native
   def get(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def get(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryGet): GaxiosPromise[SchemaHttpBody] = js.native
   def get(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryGet,
@@ -65,6 +66,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresFhirHistory protected () extend
     */
   def list(): GaxiosPromise[SchemaHttpBody] = js.native
   def list(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def list(params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList): GaxiosPromise[SchemaHttpBody] = js.native
   def list(
     params: ParamsResourceProjectsLocationsDatasetsFhirstoresFhirHistoryList,

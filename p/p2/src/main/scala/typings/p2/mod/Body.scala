@@ -53,6 +53,7 @@ class Body () extends EventEmitter {
   var wlambda: js.Tuple2[Double, Double] = js.native
   var world: World = js.native
   def addShape(shape: Shape): Unit = js.native
+  def addShape(shape: Shape, offset: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def addShape(shape: Shape, offset: js.Tuple2[Double, Double]): Unit = js.native
   def addShape(shape: Shape, offset: js.Tuple2[Double, Double], angle: Double): Unit = js.native
   def adjustCenterOfMass(): Unit = js.native

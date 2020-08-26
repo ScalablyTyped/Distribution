@@ -2,7 +2,6 @@ package typings.yandexMaps.mod.control
 
 import typings.yandexMaps.mod.IChild
 import typings.yandexMaps.mod.IControlParent
-import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.IOptionManager
 import typings.yandexMaps.mod.IRoutePanel
 import scala.scalajs.js
@@ -15,8 +14,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouteButton () extends IChild[IControlParent] {
   def this(parameters: IRouteButtonParameters) = this()
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   var options: IOptionManager = js.native
   var routePanel: IRoutePanel = js.native
   def setParent(parent: IControlParent): this.type = js.native

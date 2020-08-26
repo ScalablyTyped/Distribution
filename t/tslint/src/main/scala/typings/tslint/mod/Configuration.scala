@@ -27,10 +27,12 @@ object Configuration extends js.Object {
   def findConfigurationPath(suppliedConfigFilePath: String, inputFilePath: String): js.UndefOr[String] = js.native
   def findConfigurationPath(suppliedConfigFilePath: Null, inputFilePath: String): js.UndefOr[String] = js.native
   def getRelativePath(): js.UndefOr[String] = js.native
+  def getRelativePath(directory: js.UndefOr[scala.Nothing], relativeTo: String): js.UndefOr[String] = js.native
   def getRelativePath(directory: String): js.UndefOr[String] = js.native
   def getRelativePath(directory: String, relativeTo: String): js.UndefOr[String] = js.native
   def getRelativePath(directory: Null, relativeTo: String): js.UndefOr[String] = js.native
   def getRulesDirectories(): js.Array[String] = js.native
+  def getRulesDirectories(directories: js.UndefOr[scala.Nothing], relativeTo: String): js.Array[String] = js.native
   def getRulesDirectories(directories: String): js.Array[String] = js.native
   def getRulesDirectories(directories: String, relativeTo: String): js.Array[String] = js.native
   def getRulesDirectories(directories: js.Array[String]): js.Array[String] = js.native
@@ -38,9 +40,15 @@ object Configuration extends js.Object {
   def isFileExcluded(filepath: String): Boolean = js.native
   def isFileExcluded(filepath: String, configFile: IConfigurationFile): Boolean = js.native
   def loadConfigurationFromPath(): IConfigurationFile = js.native
+  def loadConfigurationFromPath(configFilePath: js.UndefOr[scala.Nothing], _originalFilePath: String): IConfigurationFile = js.native
   def loadConfigurationFromPath(configFilePath: String): IConfigurationFile = js.native
   def loadConfigurationFromPath(configFilePath: String, _originalFilePath: String): IConfigurationFile = js.native
   def parseConfigFile(configFile: RawConfigFile): IConfigurationFile = js.native
+  def parseConfigFile(
+    configFile: RawConfigFile,
+    configFileDir: js.UndefOr[scala.Nothing],
+    readConfig: js.Function1[/* path */ String, RawConfigFile]
+  ): IConfigurationFile = js.native
   def parseConfigFile(configFile: RawConfigFile, configFileDir: String): IConfigurationFile = js.native
   def parseConfigFile(
     configFile: RawConfigFile,

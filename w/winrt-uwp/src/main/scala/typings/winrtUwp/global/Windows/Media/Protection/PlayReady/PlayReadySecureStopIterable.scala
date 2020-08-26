@@ -1,7 +1,5 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
-import typings.winrtUwp.Windows.Foundation.Collections.IIterator
-import typings.winrtUwp.Windows.Media.Protection.PlayReady.IPlayReadySecureStopServiceRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +14,5 @@ class PlayReadySecureStopIterable protected ()
     * @param publisherCertBytes The raw binary body of the publisher certificate.
     */
   def this(publisherCertBytes: js.Array[Double]) = this()
-  /**
-    * Returns an iterator that iterates over the items in the PlayReady secure stop collection.
-    * @return The PlayReady secure stop iterator.
-    */
-  /* CompleteClass */
-  override def first(): IIterator[IPlayReadySecureStopServiceRequest] = js.native
 }
 

@@ -26,16 +26,38 @@ trait SchemaStreamingComputationTask extends js.Object {
 
 object SchemaStreamingComputationTask {
   @scala.inline
-  def apply(
-    computationRanges: js.Array[SchemaStreamingComputationRanges] = null,
-    dataDisks: js.Array[SchemaMountedDataDisk] = null,
-    taskType: String = null
-  ): SchemaStreamingComputationTask = {
+  def apply(): SchemaStreamingComputationTask = {
     val __obj = js.Dynamic.literal()
-    if (computationRanges != null) __obj.updateDynamic("computationRanges")(computationRanges.asInstanceOf[js.Any])
-    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks.asInstanceOf[js.Any])
-    if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStreamingComputationTask]
   }
+  @scala.inline
+  implicit class SchemaStreamingComputationTaskOps[Self <: SchemaStreamingComputationTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputationRangesVarargs(value: SchemaStreamingComputationRanges*): Self = this.set("computationRanges", js.Array(value :_*))
+    @scala.inline
+    def setComputationRanges(value: js.Array[SchemaStreamingComputationRanges]): Self = this.set("computationRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputationRanges: Self = this.set("computationRanges", js.undefined)
+    @scala.inline
+    def setDataDisksVarargs(value: SchemaMountedDataDisk*): Self = this.set("dataDisks", js.Array(value :_*))
+    @scala.inline
+    def setDataDisks(value: js.Array[SchemaMountedDataDisk]): Self = this.set("dataDisks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataDisks: Self = this.set("dataDisks", js.undefined)
+    @scala.inline
+    def setTaskType(value: String): Self = this.set("taskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskType: Self = this.set("taskType", js.undefined)
+  }
+  
 }
 

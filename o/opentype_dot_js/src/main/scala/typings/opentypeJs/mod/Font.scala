@@ -33,8 +33,86 @@ class Font protected () extends js.Object {
   def download(): Unit = js.native
   def download(fileName: String): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, text: String): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(ctx: CanvasRenderingContext2D, text: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, text: String, x: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, text: String, x: Double, y: Double): Unit = js.native
+  def draw(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
   def draw(ctx: CanvasRenderingContext2D, text: String, x: Double, y: Double, fontSize: Double): Unit = js.native
   def draw(
     ctx: CanvasRenderingContext2D,
@@ -45,8 +123,86 @@ class Font protected () extends js.Object {
     options: RenderOptions
   ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, text: String): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(ctx: CanvasRenderingContext2D, text: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, text: String, x: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, text: String, x: Double, y: Double): Unit = js.native
+  def drawMetrics(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
   def drawMetrics(ctx: CanvasRenderingContext2D, text: String, x: Double, y: Double, fontSize: Double): Unit = js.native
   def drawMetrics(
     ctx: CanvasRenderingContext2D,
@@ -57,8 +213,86 @@ class Font protected () extends js.Object {
     options: RenderOptions
   ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, text: String): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(ctx: CanvasRenderingContext2D, text: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, text: String, x: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double
+  ): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions
+  ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, text: String, x: Double, y: Double): Unit = js.native
+  def drawPoints(
+    ctx: CanvasRenderingContext2D,
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions
+  ): Unit = js.native
   def drawPoints(ctx: CanvasRenderingContext2D, text: String, x: Double, y: Double, fontSize: Double): Unit = js.native
   def drawPoints(
     ctx: CanvasRenderingContext2D,
@@ -70,10 +304,235 @@ class Font protected () extends js.Object {
   ): Unit = js.native
   def forEachGlyph(
     text: String,
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    fontSize: js.UndefOr[Double],
-    options: js.UndefOr[RenderOptions],
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: js.UndefOr[scala.Nothing],
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: js.UndefOr[scala.Nothing],
+    fontSize: Double,
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: js.UndefOr[scala.Nothing],
+    options: RenderOptions,
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: Double,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function5[
+      /* glyph */ Glyph, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* fontSize */ Double, 
+      /* options */ js.UndefOr[RenderOptions], 
+      Unit
+    ]
+  ): Double = js.native
+  def forEachGlyph(
+    text: String,
+    x: Double,
+    y: Double,
+    fontSize: Double,
+    options: RenderOptions,
     callback: js.Function5[
       /* glyph */ Glyph, 
       /* x */ Double, 
@@ -84,6 +543,7 @@ class Font protected () extends js.Object {
     ]
   ): Double = js.native
   def getAdvanceWidth(text: String): Double = js.native
+  def getAdvanceWidth(text: String, fontSize: js.UndefOr[scala.Nothing], options: RenderOptions): Double = js.native
   def getAdvanceWidth(text: String, fontSize: Double): Double = js.native
   def getAdvanceWidth(text: String, fontSize: Double, options: RenderOptions): Double = js.native
   def getEnglishName(name: String): String = js.native

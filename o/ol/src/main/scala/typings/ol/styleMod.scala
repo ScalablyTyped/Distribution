@@ -36,7 +36,15 @@ object styleMod extends js.Object {
     extends typings.ol.iconImageMod.default {
     def this(
       image: HTMLCanvasElement,
-      src: js.UndefOr[String],
+      src: js.UndefOr[scala.Nothing],
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
+    def this(
+      image: HTMLCanvasElement,
+      src: String,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -44,7 +52,15 @@ object styleMod extends js.Object {
     ) = this()
     def this(
       image: HTMLImageElement,
-      src: js.UndefOr[String],
+      src: js.UndefOr[scala.Nothing],
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
+    def this(
+      image: HTMLImageElement,
+      src: String,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,

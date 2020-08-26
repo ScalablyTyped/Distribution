@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var auth_pass: js.UndefOr[String] = js.undefined
-  var client: js.UndefOr[RedisClient] = js.undefined
-  var expire: js.UndefOr[Double] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[String | Double] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
+  var auth_pass: js.UndefOr[String] = js.native
+  var client: js.UndefOr[RedisClient] = js.native
+  var expire: js.UndefOr[Double] = js.native
+  var host: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String | Double] = js.native
+  var prefix: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    auth_pass: String = null,
-    client: RedisClient = null,
-    expire: js.UndefOr[Double] = js.undefined,
-    host: String = null,
-    port: String | Double = null,
-    prefix: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (auth_pass != null) __obj.updateDynamic("auth_pass")(auth_pass.asInstanceOf[js.Any])
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (!js.isUndefined(expire)) __obj.updateDynamic("expire")(expire.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth_pass(value: String): Self = this.set("auth_pass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth_pass: Self = this.set("auth_pass", js.undefined)
+    @scala.inline
+    def setClient(value: RedisClient): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("client", js.undefined)
+    @scala.inline
+    def setExpire(value: Double): Self = this.set("expire", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpire: Self = this.set("expire", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPort(value: String | Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+  }
+  
 }
 

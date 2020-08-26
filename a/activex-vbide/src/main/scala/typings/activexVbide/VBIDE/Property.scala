@@ -20,7 +20,16 @@ trait Property extends js.Object {
   var Value: js.Any = js.native
   def Collection(index: js.Any): Property = js.native
   def IndexedValue(Index1: js.Any): js.Any = js.native
+  def IndexedValue(
+    Index1: js.Any,
+    Index2: js.UndefOr[scala.Nothing],
+    Index3: js.UndefOr[scala.Nothing],
+    Index4: js.Any
+  ): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: js.UndefOr[scala.Nothing], Index3: js.Any): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: js.UndefOr[scala.Nothing], Index3: js.Any, Index4: js.Any): js.Any = js.native
   def IndexedValue(Index1: js.Any, Index2: js.Any): js.Any = js.native
+  def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: js.UndefOr[scala.Nothing], Index4: js.Any): js.Any = js.native
   def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: js.Any): js.Any = js.native
   def IndexedValue(Index1: js.Any, Index2: js.Any, Index3: js.Any, Index4: js.Any): js.Any = js.native
   def Parent(index: js.Any): Property = js.native

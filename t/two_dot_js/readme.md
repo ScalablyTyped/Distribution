@@ -11,8 +11,8 @@ A renderer agnostic two-dimensional drawing api for the web.
 | Full name          | two.js |
 | Keywords           | svg, canvas2d, webgl, animation, rendering, scenegraph, motiongraphics, visualization, dom, w3c |
 | # releases         | 4 |
-| # dependents       | 22 |
-| # downloads        | 185054 |
+| # dependents       | 24 |
+| # downloads        | 197367 |
 | # stars            | 8 |
 
 ## Links

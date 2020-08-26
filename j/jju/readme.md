@@ -12,7 +12,7 @@ a set of utilities to work with JSON / JSON5 documents
 | Keywords           | json, json5, parser, serializer, data |
 | # releases         | 2 |
 | # dependents       | 69 |
-| # downloads        | 18976762 |
+| # downloads        | 19687721 |
 | # stars            | 3 |
 
 ## Links

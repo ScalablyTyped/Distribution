@@ -1,48 +1,38 @@
 package typings.fetchMock.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.fetchMock.fetchMockStrings.HEAD
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MockOptionsMethodHead extends MockOptions {
   @JSName("method")
-  var method_MockOptionsMethodHead: js.UndefOr[HEAD] = js.undefined
+  var method_MockOptionsMethodHead: js.UndefOr[HEAD] = js.native
 }
 
 object MockOptionsMethodHead {
   @scala.inline
-  def apply(
-    body: String | js.Object = null,
-    functionMatcher: (/* url */ String, /* opts */ MockRequest) => Boolean = null,
-    headers: StringDictionary[String | Double] = null,
-    includeContentLength: js.UndefOr[Boolean] = js.undefined,
-    matcher: MockMatcher = null,
-    method: HEAD = null,
-    name: String = null,
-    overwriteRoutes: js.UndefOr[Boolean] = js.undefined,
-    params: StringDictionary[String] = null,
-    query: StringDictionary[String] = null,
-    repeat: js.UndefOr[Double] = js.undefined,
-    response: MockResponse | MockResponseFunction = null,
-    sendAsJson: js.UndefOr[Boolean] = js.undefined
-  ): MockOptionsMethodHead = {
+  def apply(): MockOptionsMethodHead = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (functionMatcher != null) __obj.updateDynamic("functionMatcher")(js.Any.fromFunction2(functionMatcher))
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength.get.asInstanceOf[js.Any])
-    if (matcher != null) __obj.updateDynamic("matcher")(matcher.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteRoutes)) __obj.updateDynamic("overwriteRoutes")(overwriteRoutes.get.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendAsJson)) __obj.updateDynamic("sendAsJson")(sendAsJson.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockOptionsMethodHead]
   }
+  @scala.inline
+  implicit class MockOptionsMethodHeadOps[Self <: MockOptionsMethodHead] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: HEAD): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

@@ -79,32 +79,74 @@ trait SchemaBuildOptions extends js.Object {
 
 object SchemaBuildOptions {
   @scala.inline
-  def apply(
-    diskSizeGb: String = null,
-    env: js.Array[String] = null,
-    logStreamingOption: String = null,
-    logging: String = null,
-    machineType: String = null,
-    requestedVerifyOption: String = null,
-    secretEnv: js.Array[String] = null,
-    sourceProvenanceHash: js.Array[String] = null,
-    substitutionOption: String = null,
-    volumes: js.Array[SchemaVolume] = null,
-    workerPool: String = null
-  ): SchemaBuildOptions = {
+  def apply(): SchemaBuildOptions = {
     val __obj = js.Dynamic.literal()
-    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (logStreamingOption != null) __obj.updateDynamic("logStreamingOption")(logStreamingOption.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (requestedVerifyOption != null) __obj.updateDynamic("requestedVerifyOption")(requestedVerifyOption.asInstanceOf[js.Any])
-    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv.asInstanceOf[js.Any])
-    if (sourceProvenanceHash != null) __obj.updateDynamic("sourceProvenanceHash")(sourceProvenanceHash.asInstanceOf[js.Any])
-    if (substitutionOption != null) __obj.updateDynamic("substitutionOption")(substitutionOption.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
-    if (workerPool != null) __obj.updateDynamic("workerPool")(workerPool.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildOptions]
   }
+  @scala.inline
+  implicit class SchemaBuildOptionsOps[Self <: SchemaBuildOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskSizeGb(value: String): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setEnvVarargs(value: String*): Self = this.set("env", js.Array(value :_*))
+    @scala.inline
+    def setEnv(value: js.Array[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setLogStreamingOption(value: String): Self = this.set("logStreamingOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamingOption: Self = this.set("logStreamingOption", js.undefined)
+    @scala.inline
+    def setLogging(value: String): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setRequestedVerifyOption(value: String): Self = this.set("requestedVerifyOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedVerifyOption: Self = this.set("requestedVerifyOption", js.undefined)
+    @scala.inline
+    def setSecretEnvVarargs(value: String*): Self = this.set("secretEnv", js.Array(value :_*))
+    @scala.inline
+    def setSecretEnv(value: js.Array[String]): Self = this.set("secretEnv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretEnv: Self = this.set("secretEnv", js.undefined)
+    @scala.inline
+    def setSourceProvenanceHashVarargs(value: String*): Self = this.set("sourceProvenanceHash", js.Array(value :_*))
+    @scala.inline
+    def setSourceProvenanceHash(value: js.Array[String]): Self = this.set("sourceProvenanceHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceProvenanceHash: Self = this.set("sourceProvenanceHash", js.undefined)
+    @scala.inline
+    def setSubstitutionOption(value: String): Self = this.set("substitutionOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutionOption: Self = this.set("substitutionOption", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: SchemaVolume*): Self = this.set("volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: js.Array[SchemaVolume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("volumes", js.undefined)
+    @scala.inline
+    def setWorkerPool(value: String): Self = this.set("workerPool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerPool: Self = this.set("workerPool", js.undefined)
+  }
+  
 }
 

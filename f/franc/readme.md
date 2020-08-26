@@ -12,7 +12,7 @@ Detect the language of text
 | Keywords           | natural, language, writing, system, detect, guess |
 | # releases         | 4 |
 | # dependents       | 37 |
-| # downloads        | 269863 |
+| # downloads        | 295344 |
 | # stars            | 15 |
 
 ## Links

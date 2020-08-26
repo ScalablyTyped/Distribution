@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "openapi-framework"
-version := "0.26.0-33e757"
-scalaVersion := "2.13.2"
+version := "7.0.0-f45229"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "ajv" % "6.12.2-620863",
-  "org.scalablytyped" %%% "openapi-default-setter" % "2.1.0-1d367d",
-  "org.scalablytyped" %%% "openapi-request-coercer" % "2.4.0-4b263e",
-  "org.scalablytyped" %%% "openapi-request-validator" % "4.2.0-d17542",
-  "org.scalablytyped" %%% "openapi-response-validator" % "4.0.0-96debc",
-  "org.scalablytyped" %%% "openapi-security-handler" % "2.0.4-c5ecf2",
-  "org.scalablytyped" %%% "openapi-types" % "1.3.5-28c53a",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8",
-  "org.scalablytyped" %%% "ts-log" % "2.1.4-50c9fe")
+  "org.scalablytyped" %%% "ajv" % "6.12.3-b48cf0",
+  "org.scalablytyped" %%% "openapi-default-setter" % "7.0.0-a695ec",
+  "org.scalablytyped" %%% "openapi-request-coercer" % "7.0.0-42ea27",
+  "org.scalablytyped" %%% "openapi-request-validator" % "7.0.0-6808c7",
+  "org.scalablytyped" %%% "openapi-response-validator" % "7.0.0-f18584",
+  "org.scalablytyped" %%% "openapi-security-handler" % "7.0.0-395bd0",
+  "org.scalablytyped" %%% "openapi-types" % "7.0.0-9d9925",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13",
+  "org.scalablytyped" %%% "ts-log" % "2.1.4-c62ef1")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

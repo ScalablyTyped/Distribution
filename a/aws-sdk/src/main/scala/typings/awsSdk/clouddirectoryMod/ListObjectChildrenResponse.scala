@@ -18,11 +18,30 @@ trait ListObjectChildrenResponse extends js.Object {
 
 object ListObjectChildrenResponse {
   @scala.inline
-  def apply(Children: LinkNameToObjectIdentifierMap = null, NextToken: NextToken = null): ListObjectChildrenResponse = {
+  def apply(): ListObjectChildrenResponse = {
     val __obj = js.Dynamic.literal()
-    if (Children != null) __obj.updateDynamic("Children")(Children.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectChildrenResponse]
   }
+  @scala.inline
+  implicit class ListObjectChildrenResponseOps[Self <: ListObjectChildrenResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: LinkNameToObjectIdentifierMap): Self = this.set("Children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("Children", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

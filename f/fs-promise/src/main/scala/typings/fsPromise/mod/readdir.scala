@@ -26,10 +26,20 @@ object readdir extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[`2` | BufferEncoding | Null | String | WithFileTypes],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
   ): Unit = js.native
   def apply(path: PathLike, options: String): js.Promise[js.Array[Buffer | String]] = js.native
+  def apply(
+    path: PathLike,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Null,
+    callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = js.native
   def apply(path: PathLike, options: EncodingWithFileTypes): js.Promise[js.Array[Buffer]] = js.native
   def apply(
     path: PathLike,
@@ -37,7 +47,17 @@ object readdir extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer], Unit]
   ): Unit = js.native
   def apply(path: PathLike, options: WithFileTypes): js.Promise[js.Array[String]] = js.native
+  def apply(
+    path: PathLike,
+    options: WithFileTypes,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+  ): Unit = js.native
   def apply(path: PathLike, options: `2`): js.Promise[js.Array[Buffer | String]] = js.native
+  def apply(
+    path: PathLike,
+    options: `2`,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
+  ): Unit = js.native
   def apply(path: PathLike, options: `3`): js.Promise[js.Array[typings.node.fsMod.Dirent]] = js.native
   def apply(
     path: PathLike,
@@ -49,5 +69,10 @@ object readdir extends js.Object {
     ]
   ): Unit = js.native
   def apply(path: PathLike, options: BufferEncoding): js.Promise[js.Array[String]] = js.native
+  def apply(
+    path: PathLike,
+    options: BufferEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
+  ): Unit = js.native
 }
 

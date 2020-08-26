@@ -16,15 +16,5 @@ import scala.scalajs.js.annotation._
 class SceneRegistryItem protected ()
   extends typings.playcanvas.pc.SceneRegistryItem {
   def this(name: String, url: String) = this()
-  /**
-    * The name of the scene.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  /**
-    * The url of the scene file.
-    */
-  /* CompleteClass */
-  override var url: String = js.native
 }
 

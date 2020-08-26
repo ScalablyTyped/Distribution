@@ -5,57 +5,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoBracketing extends js.Object {
-  var AutoBracketing: js.UndefOr[Double] = js.undefined
-  var BlurWarning: js.UndefOr[Double] = js.undefined
-  var ExposureWarning: js.UndefOr[Double] = js.undefined
-  var FlashExposureComp: js.UndefOr[Double] = js.undefined
-  var FocusMode: js.UndefOr[Double] = js.undefined
-  var FocusWarning: js.UndefOr[Double] = js.undefined
-  var FujiFlashMode: js.UndefOr[Double] = js.undefined
-  var Macro: js.UndefOr[Double] = js.undefined
-  var Quality: js.UndefOr[String] = js.undefined
-  var Sharpness: js.UndefOr[Double] = js.undefined
-  var SlowSync: js.UndefOr[Double] = js.undefined
-  var Version: js.UndefOr[Buffer] = js.undefined
-  var WhiteBalance: js.UndefOr[Double] = js.undefined
-  var error: js.UndefOr[String] = js.undefined
+  var AutoBracketing: js.UndefOr[Double] = js.native
+  var BlurWarning: js.UndefOr[Double] = js.native
+  var ExposureWarning: js.UndefOr[Double] = js.native
+  var FlashExposureComp: js.UndefOr[Double] = js.native
+  var FocusMode: js.UndefOr[Double] = js.native
+  var FocusWarning: js.UndefOr[Double] = js.native
+  var FujiFlashMode: js.UndefOr[Double] = js.native
+  var Macro: js.UndefOr[Double] = js.native
+  var Quality: js.UndefOr[String] = js.native
+  var Sharpness: js.UndefOr[Double] = js.native
+  var SlowSync: js.UndefOr[Double] = js.native
+  var Version: js.UndefOr[Buffer] = js.native
+  var WhiteBalance: js.UndefOr[Double] = js.native
+  var error: js.UndefOr[String] = js.native
 }
 
 object AutoBracketing {
   @scala.inline
-  def apply(
-    AutoBracketing: js.UndefOr[Double] = js.undefined,
-    BlurWarning: js.UndefOr[Double] = js.undefined,
-    ExposureWarning: js.UndefOr[Double] = js.undefined,
-    FlashExposureComp: js.UndefOr[Double] = js.undefined,
-    FocusMode: js.UndefOr[Double] = js.undefined,
-    FocusWarning: js.UndefOr[Double] = js.undefined,
-    FujiFlashMode: js.UndefOr[Double] = js.undefined,
-    Macro: js.UndefOr[Double] = js.undefined,
-    Quality: String = null,
-    Sharpness: js.UndefOr[Double] = js.undefined,
-    SlowSync: js.UndefOr[Double] = js.undefined,
-    Version: Buffer = null,
-    WhiteBalance: js.UndefOr[Double] = js.undefined,
-    error: String = null
-  ): AutoBracketing = {
+  def apply(): AutoBracketing = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoBracketing)) __obj.updateDynamic("AutoBracketing")(AutoBracketing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BlurWarning)) __obj.updateDynamic("BlurWarning")(BlurWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExposureWarning)) __obj.updateDynamic("ExposureWarning")(ExposureWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FlashExposureComp)) __obj.updateDynamic("FlashExposureComp")(FlashExposureComp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FocusMode)) __obj.updateDynamic("FocusMode")(FocusMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FocusWarning)) __obj.updateDynamic("FocusWarning")(FocusWarning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FujiFlashMode)) __obj.updateDynamic("FujiFlashMode")(FujiFlashMode.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Macro)) __obj.updateDynamic("Macro")(Macro.get.asInstanceOf[js.Any])
-    if (Quality != null) __obj.updateDynamic("Quality")(Quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(Sharpness)) __obj.updateDynamic("Sharpness")(Sharpness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SlowSync)) __obj.updateDynamic("SlowSync")(SlowSync.get.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
-    if (!js.isUndefined(WhiteBalance)) __obj.updateDynamic("WhiteBalance")(WhiteBalance.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoBracketing]
   }
+  @scala.inline
+  implicit class AutoBracketingOps[Self <: AutoBracketing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoBracketing(value: Double): Self = this.set("AutoBracketing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBracketing: Self = this.set("AutoBracketing", js.undefined)
+    @scala.inline
+    def setBlurWarning(value: Double): Self = this.set("BlurWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlurWarning: Self = this.set("BlurWarning", js.undefined)
+    @scala.inline
+    def setExposureWarning(value: Double): Self = this.set("ExposureWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposureWarning: Self = this.set("ExposureWarning", js.undefined)
+    @scala.inline
+    def setFlashExposureComp(value: Double): Self = this.set("FlashExposureComp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashExposureComp: Self = this.set("FlashExposureComp", js.undefined)
+    @scala.inline
+    def setFocusMode(value: Double): Self = this.set("FocusMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusMode: Self = this.set("FocusMode", js.undefined)
+    @scala.inline
+    def setFocusWarning(value: Double): Self = this.set("FocusWarning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusWarning: Self = this.set("FocusWarning", js.undefined)
+    @scala.inline
+    def setFujiFlashMode(value: Double): Self = this.set("FujiFlashMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFujiFlashMode: Self = this.set("FujiFlashMode", js.undefined)
+    @scala.inline
+    def setMacro(value: Double): Self = this.set("Macro", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacro: Self = this.set("Macro", js.undefined)
+    @scala.inline
+    def setQuality(value: String): Self = this.set("Quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("Quality", js.undefined)
+    @scala.inline
+    def setSharpness(value: Double): Self = this.set("Sharpness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharpness: Self = this.set("Sharpness", js.undefined)
+    @scala.inline
+    def setSlowSync(value: Double): Self = this.set("SlowSync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlowSync: Self = this.set("SlowSync", js.undefined)
+    @scala.inline
+    def setVersion(value: Buffer): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+    @scala.inline
+    def setWhiteBalance(value: Double): Self = this.set("WhiteBalance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhiteBalance: Self = this.set("WhiteBalance", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+  }
+  
 }
 

@@ -28,42 +28,40 @@ class LayoutGridColumn protected () extends Element {
     * In version 8.0.0: introduced
     */
   def appearance: Appearance = js.native
-  def appearance(newValue: Appearance): js.Any = js.native
+  def appearance_=(newValue: Appearance): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def `class`: String = js.native
-  def `class`(newValue: String): js.Any = js.native
+  def class_=(newValue: String): Unit = js.native
   def containerAsLayoutGridRow: LayoutGridRow = js.native
   /**
     * In version 8.3.0: introduced
     */
   def phoneWeight: Double = js.native
-  def phoneWeight(newValue: Double): js.Any = js.native
+  def phoneWeight_=(newValue: Double): Unit = js.native
   /**
     * In version 8.0.0: deleted
     */
   def style: String = js.native
-  def style(newValue: String): js.Any = js.native
+  def style_=(newValue: String): Unit = js.native
   /**
     * In version 8.3.0: introduced
     */
   def tabletWeight: Double = js.native
-  def tabletWeight(newValue: Double): js.Any = js.native
+  def tabletWeight_=(newValue: Double): Unit = js.native
   /**
     * In version 8.3.0: introduced
     */
   def verticalAlignment: LayoutGridAlignment = js.native
-  def verticalAlignment(newValue: LayoutGridAlignment): js.Any = js.native
+  def verticalAlignment_=(newValue: LayoutGridAlignment): Unit = js.native
   def weight: Double = js.native
-  def weight(newValue: Double): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def weight_=(newValue: Double): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

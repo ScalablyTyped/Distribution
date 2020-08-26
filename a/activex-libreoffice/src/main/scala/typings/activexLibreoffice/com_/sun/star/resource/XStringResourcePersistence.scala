@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * associated location or storage.
   * @see XStringResourceManager.
   */
+@js.native
 trait XStringResourcePersistence extends XStringResourceManager {
   /**
     * Returns a sequence of byte representing the complete string resource in a binary format.
@@ -26,7 +27,7 @@ trait XStringResourcePersistence extends XStringResourceManager {
     * See {@link importBinary()} ).
     * @returns a sequence of byte representing the string resource.
     */
-  def exportBinary(): SafeArray[Double]
+  def exportBinary(): SafeArray[Double] = js.native
   /**
     * Initializes the string resource with binary data. This method expects the data format returned by {@link exportBinary()} .
     *
@@ -39,12 +40,12 @@ trait XStringResourcePersistence extends XStringResourceManager {
     * See {@link importBinary()} ).
     * @throws com::sun::star::lang::IllegalArgumentException if Data is empty or does not meet the binary format returned by the current or earlier version of
     */
-  def importBinary(Data: SeqEquiv[Double]): Unit
+  def importBinary(Data: SeqEquiv[Double]): Unit = js.native
   /**
     * provides the current modify state of the StringResourceManager instance.
     * @returns `TRUE` if the string table has changed since the last call to {@link store()} or, if supported `XStringResourceWithStorage::storeAsStorage` . `FA
     */
-  def isModified(): Boolean
+  def isModified(): Boolean = js.native
   /**
     * Sets the comment stored first in each locale data file.
     *
@@ -52,7 +53,7 @@ trait XStringResourcePersistence extends XStringResourceManager {
     * StringResourceWithStorage}
     * @param Comment Comment stored first in each properties file followed by a line feed character. The line feed character is added automatically and hasn't
     */
-  def setComment(Comment: String): Unit
+  def setComment(Comment: String): Unit = js.native
   /**
     * Stores all string table data respectively all data modified since the last call to {@link store()} to the location or storage associated with the
     * StringResourceManager. Each locale is stored in a single file following the format of Java properties files.
@@ -73,7 +74,7 @@ trait XStringResourcePersistence extends XStringResourceManager {
     * {@link StringResourceWithLocation} .
     * @throws com::sun::star::lang::NoSupportException if no URL or no valid storage are provided.
     */
-  def store(): Unit
+  def store(): Unit = js.native
   /**
     * Stores all string table data to the provided storage.
     *
@@ -86,7 +87,7 @@ trait XStringResourcePersistence extends XStringResourceManager {
     * @param BaseName Base string for the file names used to store the locale data. The locale data is stored in Java properties files also following the corr
     * @param Comment Comment stored first in each properties file, for a detailed description see {@link setComment()} . This method can throw all exceptions
     */
-  def storeToStorage(Storage: XStorage, BaseName: String, Comment: String): Unit
+  def storeToStorage(Storage: XStorage, BaseName: String, Comment: String): Unit = js.native
   /**
     * Stores all string table data to the location specified by the passed URL string.
     *
@@ -100,7 +101,7 @@ trait XStringResourcePersistence extends XStringResourceManager {
     * @param Handler a {@link com.sun.star.task.XInteractionHandler} . It will be passed to ucb handle exceptions. Exceptions not processed by this handler wi
     * @see com.sun.star.task.InteractionHandler
     */
-  def storeToURL(URL: String, BaseName: String, Comment: String, Handler: XInteractionHandler): Unit
+  def storeToURL(URL: String, BaseName: String, Comment: String, Handler: XInteractionHandler): Unit = js.native
 }
 
 object XStringResourcePersistence {
@@ -146,5 +147,32 @@ object XStringResourcePersistence {
     val __obj = js.Dynamic.literal(CurrentLocale = CurrentLocale.asInstanceOf[js.Any], DefaultLocale = DefaultLocale.asInstanceOf[js.Any], Locales = Locales.asInstanceOf[js.Any], ResourceIDs = ResourceIDs.asInstanceOf[js.Any], UniqueNumericId = UniqueNumericId.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addModifyListener = js.Any.fromFunction1(addModifyListener), exportBinary = js.Any.fromFunction0(exportBinary), getCurrentLocale = js.Any.fromFunction0(getCurrentLocale), getDefaultLocale = js.Any.fromFunction0(getDefaultLocale), getLocales = js.Any.fromFunction0(getLocales), getResourceIDs = js.Any.fromFunction0(getResourceIDs), getResourceIDsForLocale = js.Any.fromFunction1(getResourceIDsForLocale), getUniqueNumericId = js.Any.fromFunction0(getUniqueNumericId), hasEntryForId = js.Any.fromFunction1(hasEntryForId), hasEntryForIdAndLocale = js.Any.fromFunction2(hasEntryForIdAndLocale), importBinary = js.Any.fromFunction1(importBinary), isModified = js.Any.fromFunction0(isModified), isReadOnly = js.Any.fromFunction0(isReadOnly), newLocale = js.Any.fromFunction1(newLocale), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeId = js.Any.fromFunction1(removeId), removeIdForLocale = js.Any.fromFunction2(removeIdForLocale), removeLocale = js.Any.fromFunction1(removeLocale), removeModifyListener = js.Any.fromFunction1(removeModifyListener), resolveString = js.Any.fromFunction1(resolveString), resolveStringForLocale = js.Any.fromFunction2(resolveStringForLocale), setComment = js.Any.fromFunction1(setComment), setCurrentLocale = js.Any.fromFunction2(setCurrentLocale), setDefaultLocale = js.Any.fromFunction1(setDefaultLocale), setString = js.Any.fromFunction2(setString), setStringForLocale = js.Any.fromFunction3(setStringForLocale), store = js.Any.fromFunction0(store), storeToStorage = js.Any.fromFunction3(storeToStorage), storeToURL = js.Any.fromFunction4(storeToURL))
     __obj.asInstanceOf[XStringResourcePersistence]
   }
+  @scala.inline
+  implicit class XStringResourcePersistenceOps[Self <: XStringResourcePersistence] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportBinary(value: () => SafeArray[Double]): Self = this.set("exportBinary", js.Any.fromFunction0(value))
+    @scala.inline
+    def setImportBinary(value: SeqEquiv[Double] => Unit): Self = this.set("importBinary", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsModified(value: () => Boolean): Self = this.set("isModified", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetComment(value: String => Unit): Self = this.set("setComment", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStore(value: () => Unit): Self = this.set("store", js.Any.fromFunction0(value))
+    @scala.inline
+    def setStoreToStorage(value: (XStorage, String, String) => Unit): Self = this.set("storeToStorage", js.Any.fromFunction3(value))
+    @scala.inline
+    def setStoreToURL(value: (String, String, String, XInteractionHandler) => Unit): Self = this.set("storeToURL", js.Any.fromFunction4(value))
+  }
+  
 }
 

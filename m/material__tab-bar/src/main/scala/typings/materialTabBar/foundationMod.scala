@@ -1,6 +1,7 @@
 package typings.materialTabBar
 
 import typings.materialBase.foundationMod.MDCFoundation
+import typings.materialTab.typesMod.MDCTabInteractionEvent
 import typings.materialTabBar.adapterMod.MDCTabBarAdapter
 import typings.materialTabBar.anon.ARROWLEFTKEY
 import typings.materialTabBar.anon.ARROWLEFTKEYCODE
@@ -17,19 +18,11 @@ object foundationMod extends js.Object {
   class MDCTabBarFoundation () extends MDCFoundation[MDCTabBarAdapter] {
     def this(adapter: PartialMDCTabBarAdapter) = this()
     def activateTab(index: Double): Unit = js.native
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
     def handleKeyDown(evt: KeyboardEvent): Unit = js.native
     /**
       * Handles the MDCTab:interacted event
       */
-    def handleTabInteraction(
-      evt: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCTabInteractionEvent */ js.Any
-    ): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
+    def handleTabInteraction(evt: MDCTabInteractionEvent): Unit = js.native
     /**
       * Scrolls the tab at the given index into view
       * @param index The tab index to make visible
@@ -50,17 +43,17 @@ object foundationMod extends js.Object {
   /* static members */
   @js.native
   object MDCTabBarFoundation extends js.Object {
-    val defaultAdapter: MDCTabBarAdapter = js.native
-    val numbers: ARROWLEFTKEYCODE = js.native
-    val strings: ARROWLEFTKEY = js.native
+    def defaultAdapter: MDCTabBarAdapter = js.native
+    def numbers: ARROWLEFTKEYCODE = js.native
+    def strings: ARROWLEFTKEY = js.native
   }
   
   /* static members */
   @js.native
   object default extends js.Object {
-    val defaultAdapter: MDCTabBarAdapter = js.native
-    val numbers: ARROWLEFTKEYCODE = js.native
-    val strings: ARROWLEFTKEY = js.native
+    def defaultAdapter: MDCTabBarAdapter = js.native
+    def numbers: ARROWLEFTKEYCODE = js.native
+    def strings: ARROWLEFTKEY = js.native
   }
   
 }

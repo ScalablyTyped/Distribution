@@ -12,7 +12,7 @@ Material Design Components in CSS, JS and HTML
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 91 |
-| # downloads        | 566859 |
+| # downloads        | 610285 |
 | # stars            | 26 |
 
 ## Links

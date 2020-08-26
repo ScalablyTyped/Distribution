@@ -108,6 +108,6 @@ class StylingBuilder () extends js.Object {
     */
   def registerStyleAttr(value: String): Unit = js.native
   def registerStyleInput(name: String, isMapBased: Boolean, value: AST, sourceSpan: ParseSourceSpan): BoundStylingEntry | Null = js.native
-  def registerStyleInput(name: String, isMapBased: Boolean, value: AST, sourceSpan: ParseSourceSpan, unit: String): BoundStylingEntry | Null = js.native
+  def registerStyleInput(name: String, isMapBased: Boolean, value: AST, sourceSpan: ParseSourceSpan, suffix: String): BoundStylingEntry | Null = js.native
 }
 

@@ -18,11 +18,30 @@ trait AwsElasticsearchDomainDomainEndpointOptions extends js.Object {
 
 object AwsElasticsearchDomainDomainEndpointOptions {
   @scala.inline
-  def apply(EnforceHTTPS: js.UndefOr[Boolean] = js.undefined, TLSSecurityPolicy: NonEmptyString = null): AwsElasticsearchDomainDomainEndpointOptions = {
+  def apply(): AwsElasticsearchDomainDomainEndpointOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnforceHTTPS)) __obj.updateDynamic("EnforceHTTPS")(EnforceHTTPS.get.asInstanceOf[js.Any])
-    if (TLSSecurityPolicy != null) __obj.updateDynamic("TLSSecurityPolicy")(TLSSecurityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsElasticsearchDomainDomainEndpointOptions]
   }
+  @scala.inline
+  implicit class AwsElasticsearchDomainDomainEndpointOptionsOps[Self <: AwsElasticsearchDomainDomainEndpointOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnforceHTTPS(value: Boolean): Self = this.set("EnforceHTTPS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceHTTPS: Self = this.set("EnforceHTTPS", js.undefined)
+    @scala.inline
+    def setTLSSecurityPolicy(value: NonEmptyString): Self = this.set("TLSSecurityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTLSSecurityPolicy: Self = this.set("TLSSecurityPolicy", js.undefined)
+  }
+  
 }
 

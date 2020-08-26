@@ -11,8 +11,8 @@ Resolve the path of a module like `require.resolve()` but from the current worki
 | Full name          | resolve-cwd |
 | Keywords           | require, resolve, path, module, from, like, cwd, current, working, directory, import |
 | # releases         | 2 |
-| # dependents       | 130 |
-| # downloads        | 281130547 |
+| # dependents       | 131 |
+| # downloads        | 290812514 |
 | # stars            | 0 |
 
 ## Links

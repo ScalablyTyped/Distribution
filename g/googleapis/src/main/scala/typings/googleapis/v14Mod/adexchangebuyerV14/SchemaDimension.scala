@@ -17,11 +17,32 @@ trait SchemaDimension extends js.Object {
 
 object SchemaDimension {
   @scala.inline
-  def apply(dimensionType: String = null, dimensionValues: js.Array[SchemaDimensionDimensionValue] = null): SchemaDimension = {
+  def apply(): SchemaDimension = {
     val __obj = js.Dynamic.literal()
-    if (dimensionType != null) __obj.updateDynamic("dimensionType")(dimensionType.asInstanceOf[js.Any])
-    if (dimensionValues != null) __obj.updateDynamic("dimensionValues")(dimensionValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimension]
   }
+  @scala.inline
+  implicit class SchemaDimensionOps[Self <: SchemaDimension] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionType(value: String): Self = this.set("dimensionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionType: Self = this.set("dimensionType", js.undefined)
+    @scala.inline
+    def setDimensionValuesVarargs(value: SchemaDimensionDimensionValue*): Self = this.set("dimensionValues", js.Array(value :_*))
+    @scala.inline
+    def setDimensionValues(value: js.Array[SchemaDimensionDimensionValue]): Self = this.set("dimensionValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionValues: Self = this.set("dimensionValues", js.undefined)
+  }
+  
 }
 

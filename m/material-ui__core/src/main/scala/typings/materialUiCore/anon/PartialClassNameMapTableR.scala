@@ -16,20 +16,42 @@ trait PartialClassNameMapTableR extends js.Object {
 
 object PartialClassNameMapTableR {
   @scala.inline
-  def apply(
-    footer: String = null,
-    head: String = null,
-    hover: String = null,
-    root: String = null,
-    selected: String = null
-  ): PartialClassNameMapTableR = {
+  def apply(): PartialClassNameMapTableR = {
     val __obj = js.Dynamic.literal()
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTableR]
   }
+  @scala.inline
+  implicit class PartialClassNameMapTableROps[Self <: PartialClassNameMapTableR] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFooter(value: String): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setHead(value: String): Self = this.set("head", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHead: Self = this.set("head", js.undefined)
+    @scala.inline
+    def setHover(value: String): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+  }
+  
 }
 

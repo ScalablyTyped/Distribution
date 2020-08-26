@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait _WorkspaceMiddleware extends js.Object {
   var didChangeConfiguration: js.UndefOr[
     js.ThisFunction2[
@@ -13,27 +14,47 @@ trait _WorkspaceMiddleware extends js.Object {
       /* next */ DidChangeConfigurationSignature, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var didChangeWatchedFile: js.UndefOr[
     js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit]
-  ] = js.undefined
+  ] = js.native
 }
 
 object _WorkspaceMiddleware {
   @scala.inline
-  def apply(
-    didChangeConfiguration: js.ThisFunction2[
-      /* this */ Unit, 
-      /* sections */ js.UndefOr[js.Array[String]], 
-      /* next */ DidChangeConfigurationSignature, 
-      Unit
-    ] = null,
-    didChangeWatchedFile: js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit] = null
-  ): _WorkspaceMiddleware = {
+  def apply(): _WorkspaceMiddleware = {
     val __obj = js.Dynamic.literal()
-    if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration.asInstanceOf[js.Any])
-    if (didChangeWatchedFile != null) __obj.updateDynamic("didChangeWatchedFile")(didChangeWatchedFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[_WorkspaceMiddleware]
   }
+  @scala.inline
+  implicit class _WorkspaceMiddlewareOps[Self <: _WorkspaceMiddleware] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDidChangeConfiguration(
+      value: js.ThisFunction2[
+          /* this */ Unit, 
+          /* sections */ js.UndefOr[js.Array[String]], 
+          /* next */ DidChangeConfigurationSignature, 
+          Unit
+        ]
+    ): Self = this.set("didChangeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDidChangeConfiguration: Self = this.set("didChangeConfiguration", js.undefined)
+    @scala.inline
+    def setDidChangeWatchedFile(
+      value: js.ThisFunction2[/* this */ Unit, /* event */ FileEvent, /* next */ DidChangeWatchedFileSignature, Unit]
+    ): Self = this.set("didChangeWatchedFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDidChangeWatchedFile: Self = this.set("didChangeWatchedFile", js.undefined)
+  }
+  
 }
 

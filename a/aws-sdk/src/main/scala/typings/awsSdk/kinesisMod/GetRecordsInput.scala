@@ -18,10 +18,28 @@ trait GetRecordsInput extends js.Object {
 
 object GetRecordsInput {
   @scala.inline
-  def apply(ShardIterator: ShardIterator, Limit: js.UndefOr[GetRecordsInputLimit] = js.undefined): GetRecordsInput = {
+  def apply(ShardIterator: ShardIterator): GetRecordsInput = {
     val __obj = js.Dynamic.literal(ShardIterator = ShardIterator.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecordsInput]
   }
+  @scala.inline
+  implicit class GetRecordsInputOps[Self <: GetRecordsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShardIterator(value: ShardIterator): Self = this.set("ShardIterator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: GetRecordsInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+  }
+  
 }
 

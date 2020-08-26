@@ -32,6 +32,7 @@ class ResourceUsersEnvironments protected () extends js.Object {
     */
   def authorize(): GaxiosPromise[SchemaEmpty] = js.native
   def authorize(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def authorize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def authorize(params: ParamsResourceUsersEnvironmentsAuthorize): GaxiosPromise[SchemaEmpty] = js.native
   def authorize(params: ParamsResourceUsersEnvironmentsAuthorize, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def authorize(
@@ -60,6 +61,7 @@ class ResourceUsersEnvironments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaEnvironment] = js.native
   def get(callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
   def get(params: ParamsResourceUsersEnvironmentsGet): GaxiosPromise[SchemaEnvironment] = js.native
   def get(params: ParamsResourceUsersEnvironmentsGet, callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
   def get(
@@ -89,6 +91,7 @@ class ResourceUsersEnvironments protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaEnvironment] = js.native
   def patch(callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
   def patch(params: ParamsResourceUsersEnvironmentsPatch): GaxiosPromise[SchemaEnvironment] = js.native
   def patch(params: ParamsResourceUsersEnvironmentsPatch, callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
   def patch(
@@ -122,6 +125,7 @@ class ResourceUsersEnvironments protected () extends js.Object {
     */
   def start(): GaxiosPromise[SchemaOperation] = js.native
   def start(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def start(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def start(params: ParamsResourceUsersEnvironmentsStart): GaxiosPromise[SchemaOperation] = js.native
   def start(params: ParamsResourceUsersEnvironmentsStart, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def start(

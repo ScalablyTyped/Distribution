@@ -70,40 +70,90 @@ trait StackSet extends js.Object {
 
 object StackSet {
   @scala.inline
-  def apply(
-    AdministrationRoleARN: RoleARN_ = null,
-    AutoDeployment: AutoDeployment = null,
-    Capabilities: Capabilities = null,
-    Description: Description = null,
-    ExecutionRoleName: ExecutionRoleName = null,
-    OrganizationalUnitIds: OrganizationalUnitIdList = null,
-    Parameters: Parameters = null,
-    PermissionModel: PermissionModels = null,
-    StackSetARN: StackSetARN = null,
-    StackSetDriftDetectionDetails: StackSetDriftDetectionDetails = null,
-    StackSetId: StackSetId = null,
-    StackSetName: StackSetName = null,
-    Status: StackSetStatus = null,
-    Tags: Tags = null,
-    TemplateBody: TemplateBody = null
-  ): StackSet = {
+  def apply(): StackSet = {
     val __obj = js.Dynamic.literal()
-    if (AdministrationRoleARN != null) __obj.updateDynamic("AdministrationRoleARN")(AdministrationRoleARN.asInstanceOf[js.Any])
-    if (AutoDeployment != null) __obj.updateDynamic("AutoDeployment")(AutoDeployment.asInstanceOf[js.Any])
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExecutionRoleName != null) __obj.updateDynamic("ExecutionRoleName")(ExecutionRoleName.asInstanceOf[js.Any])
-    if (OrganizationalUnitIds != null) __obj.updateDynamic("OrganizationalUnitIds")(OrganizationalUnitIds.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (PermissionModel != null) __obj.updateDynamic("PermissionModel")(PermissionModel.asInstanceOf[js.Any])
-    if (StackSetARN != null) __obj.updateDynamic("StackSetARN")(StackSetARN.asInstanceOf[js.Any])
-    if (StackSetDriftDetectionDetails != null) __obj.updateDynamic("StackSetDriftDetectionDetails")(StackSetDriftDetectionDetails.asInstanceOf[js.Any])
-    if (StackSetId != null) __obj.updateDynamic("StackSetId")(StackSetId.asInstanceOf[js.Any])
-    if (StackSetName != null) __obj.updateDynamic("StackSetName")(StackSetName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSet]
   }
+  @scala.inline
+  implicit class StackSetOps[Self <: StackSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdministrationRoleARN(value: RoleARN_): Self = this.set("AdministrationRoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdministrationRoleARN: Self = this.set("AdministrationRoleARN", js.undefined)
+    @scala.inline
+    def setAutoDeployment(value: AutoDeployment): Self = this.set("AutoDeployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeployment: Self = this.set("AutoDeployment", js.undefined)
+    @scala.inline
+    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExecutionRoleName(value: ExecutionRoleName): Self = this.set("ExecutionRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleName: Self = this.set("ExecutionRoleName", js.undefined)
+    @scala.inline
+    def setOrganizationalUnitIdsVarargs(value: OrganizationalUnitId*): Self = this.set("OrganizationalUnitIds", js.Array(value :_*))
+    @scala.inline
+    def setOrganizationalUnitIds(value: OrganizationalUnitIdList): Self = this.set("OrganizationalUnitIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnitIds: Self = this.set("OrganizationalUnitIds", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setPermissionModel(value: PermissionModels): Self = this.set("PermissionModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionModel: Self = this.set("PermissionModel", js.undefined)
+    @scala.inline
+    def setStackSetARN(value: StackSetARN): Self = this.set("StackSetARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetARN: Self = this.set("StackSetARN", js.undefined)
+    @scala.inline
+    def setStackSetDriftDetectionDetails(value: StackSetDriftDetectionDetails): Self = this.set("StackSetDriftDetectionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetDriftDetectionDetails: Self = this.set("StackSetDriftDetectionDetails", js.undefined)
+    @scala.inline
+    def setStackSetId(value: StackSetId): Self = this.set("StackSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetId: Self = this.set("StackSetId", js.undefined)
+    @scala.inline
+    def setStackSetName(value: StackSetName): Self = this.set("StackSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackSetName: Self = this.set("StackSetName", js.undefined)
+    @scala.inline
+    def setStatus(value: StackSetStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+  }
+  
 }
 

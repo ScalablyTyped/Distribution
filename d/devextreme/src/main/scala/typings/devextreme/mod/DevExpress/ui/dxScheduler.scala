@@ -30,7 +30,23 @@ trait dxScheduler extends Widget {
   def scrollToTime(hours: Double, minutes: Double, date: Date): Unit = js.native
   /** @name dxScheduler.showAppointmentPopup(appointmentData, createNewAppointment, currentAppointmentData) */
   def showAppointmentPopup(): Unit = js.native
+  def showAppointmentPopup(
+    appointmentData: js.UndefOr[scala.Nothing],
+    createNewAppointment: js.UndefOr[scala.Nothing],
+    currentAppointmentData: js.Any
+  ): Unit = js.native
+  def showAppointmentPopup(appointmentData: js.UndefOr[scala.Nothing], createNewAppointment: Boolean): Unit = js.native
+  def showAppointmentPopup(
+    appointmentData: js.UndefOr[scala.Nothing],
+    createNewAppointment: Boolean,
+    currentAppointmentData: js.Any
+  ): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any): Unit = js.native
+  def showAppointmentPopup(
+    appointmentData: js.Any,
+    createNewAppointment: js.UndefOr[scala.Nothing],
+    currentAppointmentData: js.Any
+  ): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean): Unit = js.native
   def showAppointmentPopup(appointmentData: js.Any, createNewAppointment: Boolean, currentAppointmentData: js.Any): Unit = js.native
   /** @name dxScheduler.showAppointmentTooltip(appointmentData, target, currentAppointmentData) */

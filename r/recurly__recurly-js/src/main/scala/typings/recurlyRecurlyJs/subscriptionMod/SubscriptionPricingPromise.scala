@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SubscriptionPricingPromise
-  extends SubscriptionPricingInstance
-     with PricingPromise[SubscriptionPricingState, SubscriptionPricingMethods]
+  extends PricingPromise[SubscriptionPricingState, SubscriptionPricingMethods]
+     with SubscriptionPricingInstance
 

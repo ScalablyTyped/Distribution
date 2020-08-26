@@ -1,55 +1,71 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DroppableOptions extends DroppableEvents {
-  var accept: js.UndefOr[js.Any] = js.undefined
-  var activeClass: js.UndefOr[String] = js.undefined
-  var addClasses: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var greedy: js.UndefOr[Boolean] = js.undefined
-  var hoverClass: js.UndefOr[String] = js.undefined
-  var scope: js.UndefOr[String] = js.undefined
-  var tolerance: js.UndefOr[String] = js.undefined
+  var accept: js.UndefOr[js.Any] = js.native
+  var activeClass: js.UndefOr[String] = js.native
+  var addClasses: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var greedy: js.UndefOr[Boolean] = js.native
+  var hoverClass: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.native
+  var tolerance: js.UndefOr[String] = js.native
 }
 
 object DroppableOptions {
   @scala.inline
-  def apply(
-    accept: js.Any = null,
-    activate: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
-    activeClass: String = null,
-    addClasses: js.UndefOr[Boolean] = js.undefined,
-    create: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
-    deactivate: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    drop: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
-    greedy: js.UndefOr[Boolean] = js.undefined,
-    hoverClass: String = null,
-    out: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
-    over: (/* event */ JQueryEventObject, /* ui */ DroppableEventUIParam) => Unit = null,
-    scope: String = null,
-    tolerance: String = null
-  ): DroppableOptions = {
+  def apply(): DroppableOptions = {
     val __obj = js.Dynamic.literal()
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(addClasses)) __obj.updateDynamic("addClasses")(addClasses.get.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2(deactivate))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction2(drop))
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
-    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction2(out))
-    if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction2(over))
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableOptions]
   }
+  @scala.inline
+  implicit class DroppableOptionsOps[Self <: DroppableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccept(value: js.Any): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setActiveClass(value: String): Self = this.set("activeClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveClass: Self = this.set("activeClass", js.undefined)
+    @scala.inline
+    def setAddClasses(value: Boolean): Self = this.set("addClasses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddClasses: Self = this.set("addClasses", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setGreedy(value: Boolean): Self = this.set("greedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreedy: Self = this.set("greedy", js.undefined)
+    @scala.inline
+    def setHoverClass(value: String): Self = this.set("hoverClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverClass: Self = this.set("hoverClass", js.undefined)
+    @scala.inline
+    def setScope(value: String): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setTolerance(value: String): Self = this.set("tolerance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTolerance: Self = this.set("tolerance", js.undefined)
+  }
+  
 }
 

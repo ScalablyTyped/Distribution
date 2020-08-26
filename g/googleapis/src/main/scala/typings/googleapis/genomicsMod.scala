@@ -52,7 +52,7 @@ object genomicsMod extends js.Object {
     @js.native
     object v1
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Genomics]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Genomics]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object genomicsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v1alpha2Mod.genomicsV1alpha2.Genomics
               ]
             ]
@@ -70,7 +70,7 @@ object genomicsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v2alpha1Mod.genomicsV2alpha1.Genomics
               ]
             ]

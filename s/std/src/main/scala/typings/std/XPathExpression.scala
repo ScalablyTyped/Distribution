@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait XPathExpression extends js.Object {
   def evaluate(contextNode: Node): XPathResult = js.native
+  def evaluate(contextNode: Node, `type`: js.UndefOr[scala.Nothing], result: XPathResult): XPathResult = js.native
   def evaluate(contextNode: Node, `type`: Double): XPathResult = js.native
   def evaluate(contextNode: Node, `type`: Double, result: XPathResult): XPathResult = js.native
 }

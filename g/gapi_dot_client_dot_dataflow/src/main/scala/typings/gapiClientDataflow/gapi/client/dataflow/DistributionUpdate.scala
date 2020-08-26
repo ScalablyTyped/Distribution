@@ -4,42 +4,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistributionUpdate extends js.Object {
   /** The count of the number of elements present in the distribution. */
-  var count: js.UndefOr[SplitInt64] = js.undefined
+  var count: js.UndefOr[SplitInt64] = js.native
   /** (Optional) Histogram of value counts for the distribution. */
-  var histogram: js.UndefOr[Histogram] = js.undefined
+  var histogram: js.UndefOr[Histogram] = js.native
   /** The maximum value present in the distribution. */
-  var max: js.UndefOr[SplitInt64] = js.undefined
+  var max: js.UndefOr[SplitInt64] = js.native
   /** The minimum value present in the distribution. */
-  var min: js.UndefOr[SplitInt64] = js.undefined
+  var min: js.UndefOr[SplitInt64] = js.native
   /**
     * Use an int64 since we'd prefer the added precision. If overflow is a common
     * problem we can detect it and use an additional int64 or a double.
     */
-  var sum: js.UndefOr[SplitInt64] = js.undefined
+  var sum: js.UndefOr[SplitInt64] = js.native
   /** Use a double since the sum of squares is likely to overflow int64. */
-  var sumOfSquares: js.UndefOr[Double] = js.undefined
+  var sumOfSquares: js.UndefOr[Double] = js.native
 }
 
 object DistributionUpdate {
   @scala.inline
-  def apply(
-    count: SplitInt64 = null,
-    histogram: Histogram = null,
-    max: SplitInt64 = null,
-    min: SplitInt64 = null,
-    sum: SplitInt64 = null,
-    sumOfSquares: js.UndefOr[Double] = js.undefined
-  ): DistributionUpdate = {
+  def apply(): DistributionUpdate = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (histogram != null) __obj.updateDynamic("histogram")(histogram.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (sum != null) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (!js.isUndefined(sumOfSquares)) __obj.updateDynamic("sumOfSquares")(sumOfSquares.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionUpdate]
   }
+  @scala.inline
+  implicit class DistributionUpdateOps[Self <: DistributionUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: SplitInt64): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setHistogram(value: Histogram): Self = this.set("histogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistogram: Self = this.set("histogram", js.undefined)
+    @scala.inline
+    def setMax(value: SplitInt64): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: SplitInt64): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setSum(value: SplitInt64): Self = this.set("sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("sum", js.undefined)
+    @scala.inline
+    def setSumOfSquares(value: Double): Self = this.set("sumOfSquares", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSumOfSquares: Self = this.set("sumOfSquares", js.undefined)
+  }
+  
 }
 

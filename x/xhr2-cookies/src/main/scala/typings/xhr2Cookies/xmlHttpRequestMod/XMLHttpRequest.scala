@@ -67,11 +67,8 @@ class XMLHttpRequest () extends XMLHttpRequestEventTarget {
   /* private */ def _parseResponse(): js.Any = js.native
   /* private */ def _parseResponseEncoding(): js.Any = js.native
   /* private */ def _parseResponseHeaders(response: js.Any): js.Any = js.native
-  /* private */ def _parseUrl(urlString: js.Any): js.Any = js.native
-  /* private */ def _parseUrl(urlString: js.Any, user: js.Any): js.Any = js.native
   /* private */ def _parseUrl(urlString: js.Any, user: js.Any, password: js.Any): js.Any = js.native
   /* private */ def _sendFile(data: js.Any): js.Any = js.native
-  /* private */ def _sendHttp(): js.Any = js.native
   /* private */ def _sendHttp(data: js.Any): js.Any = js.native
   /* private */ def _sendHxxpRequest(): js.Any = js.native
   /* private */ def _setError(): js.Any = js.native
@@ -81,7 +78,17 @@ class XMLHttpRequest () extends XMLHttpRequestEventTarget {
   def getResponseHeader(name: String): String = js.native
   def nodejsSet(options: BaseUrl): Unit = js.native
   def open(method: String, url: String): Unit = js.native
+  def open(
+    method: String,
+    url: String,
+    async: js.UndefOr[scala.Nothing],
+    user: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
+  def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: String): Unit = js.native
+  def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: String, password: String): Unit = js.native
   def open(method: String, url: String, async: Boolean): Unit = js.native
+  def open(method: String, url: String, async: Boolean, user: js.UndefOr[scala.Nothing], password: String): Unit = js.native
   def open(method: String, url: String, async: Boolean, user: String): Unit = js.native
   def open(method: String, url: String, async: Boolean, user: String, password: String): Unit = js.native
   def overrideMimeType(mimeType: String): Unit = js.native

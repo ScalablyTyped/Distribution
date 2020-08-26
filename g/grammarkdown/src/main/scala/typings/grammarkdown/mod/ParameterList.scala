@@ -19,6 +19,11 @@ class ParameterList protected ()
   ) = this()
   def this(
     openParenToken: typings.grammarkdown.nodesMod.Token[OpenParenToken | OpenBracketToken],
+    elements: js.UndefOr[scala.Nothing],
+    closeParenToken: typings.grammarkdown.nodesMod.Token[CloseParenToken | CloseBracketToken]
+  ) = this()
+  def this(
+    openParenToken: typings.grammarkdown.nodesMod.Token[OpenParenToken | OpenBracketToken],
     elements: js.Array[typings.grammarkdown.nodesMod.Parameter],
     closeParenToken: typings.grammarkdown.nodesMod.Token[CloseParenToken | CloseBracketToken]
   ) = this()

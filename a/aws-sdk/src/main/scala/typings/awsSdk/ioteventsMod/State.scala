@@ -26,17 +26,36 @@ trait State extends js.Object {
 
 object State {
   @scala.inline
-  def apply(
-    stateName: StateName,
-    onEnter: OnEnterLifecycle = null,
-    onExit: OnExitLifecycle = null,
-    onInput: OnInputLifecycle = null
-  ): State = {
+  def apply(stateName: StateName): State = {
     val __obj = js.Dynamic.literal(stateName = stateName.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
-    if (onInput != null) __obj.updateDynamic("onInput")(onInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
+  @scala.inline
+  implicit class StateOps[Self <: State] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStateName(value: StateName): Self = this.set("stateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnEnter(value: OnEnterLifecycle): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    @scala.inline
+    def setOnExit(value: OnExitLifecycle): Self = this.set("onExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    @scala.inline
+    def setOnInput(value: OnInputLifecycle): Self = this.set("onInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+  }
+  
 }
 

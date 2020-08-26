@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExactRangeOverflow extends js.Object {
-  var exact: js.UndefOr[String] = js.undefined
-  var rangeOverflow: js.UndefOr[String] = js.undefined
-  var rangeUnderflow: js.UndefOr[String] = js.undefined
+  var exact: js.UndefOr[String] = js.native
+  var rangeOverflow: js.UndefOr[String] = js.native
+  var rangeUnderflow: js.UndefOr[String] = js.native
 }
 
 object ExactRangeOverflow {
   @scala.inline
-  def apply(exact: String = null, rangeOverflow: String = null, rangeUnderflow: String = null): ExactRangeOverflow = {
+  def apply(): ExactRangeOverflow = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (rangeOverflow != null) __obj.updateDynamic("rangeOverflow")(rangeOverflow.asInstanceOf[js.Any])
-    if (rangeUnderflow != null) __obj.updateDynamic("rangeUnderflow")(rangeUnderflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExactRangeOverflow]
   }
+  @scala.inline
+  implicit class ExactRangeOverflowOps[Self <: ExactRangeOverflow] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExact(value: String): Self = this.set("exact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExact: Self = this.set("exact", js.undefined)
+    @scala.inline
+    def setRangeOverflow(value: String): Self = this.set("rangeOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeOverflow: Self = this.set("rangeOverflow", js.undefined)
+    @scala.inline
+    def setRangeUnderflow(value: String): Self = this.set("rangeUnderflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeUnderflow: Self = this.set("rangeUnderflow", js.undefined)
+  }
+  
 }
 

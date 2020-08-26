@@ -19,7 +19,6 @@ class CryptoConfig ()
 @JSImport("xmldsigjs", "CryptoConfig")
 @js.native
 object CryptoConfig extends js.Object {
-  def CreateFromName(): typings.xmldsigjs.xmlMod.Transform = js.native
   /**
     * Creates Transform from given name
     * if name is not exist then throws error
@@ -30,6 +29,7 @@ object CryptoConfig extends js.Object {
     *
     * @memberOf CryptoConfig
     */
+  def CreateFromName(): typings.xmldsigjs.xmlMod.Transform = js.native
   def CreateFromName(name: String): typings.xmldsigjs.xmlMod.Transform = js.native
   def CreateHashAlgorithm(namespace: String): HashAlgorithm = js.native
   def CreateSignatureAlgorithm(method: typings.xmldsigjs.signatureMethodMod.SignatureMethod): SignatureAlgorithm = js.native

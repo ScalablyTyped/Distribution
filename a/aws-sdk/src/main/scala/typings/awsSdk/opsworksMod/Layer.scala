@@ -102,56 +102,122 @@ trait Layer extends js.Object {
 
 object Layer {
   @scala.inline
-  def apply(
-    Arn: String = null,
-    Attributes: LayerAttributes = null,
-    AutoAssignElasticIps: js.UndefOr[Boolean] = js.undefined,
-    AutoAssignPublicIps: js.UndefOr[Boolean] = js.undefined,
-    CloudWatchLogsConfiguration: CloudWatchLogsConfiguration = null,
-    CreatedAt: DateTime = null,
-    CustomInstanceProfileArn: String = null,
-    CustomJson: String = null,
-    CustomRecipes: Recipes = null,
-    CustomSecurityGroupIds: Strings = null,
-    DefaultRecipes: Recipes = null,
-    DefaultSecurityGroupNames: Strings = null,
-    EnableAutoHealing: js.UndefOr[Boolean] = js.undefined,
-    InstallUpdatesOnBoot: js.UndefOr[Boolean] = js.undefined,
-    LayerId: String = null,
-    LifecycleEventConfiguration: LifecycleEventConfiguration = null,
-    Name: String = null,
-    Packages: Strings = null,
-    Shortname: String = null,
-    StackId: String = null,
-    Type: LayerType = null,
-    UseEbsOptimizedInstances: js.UndefOr[Boolean] = js.undefined,
-    VolumeConfigurations: VolumeConfigurations = null
-  ): Layer = {
+  def apply(): Layer = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoAssignElasticIps)) __obj.updateDynamic("AutoAssignElasticIps")(AutoAssignElasticIps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoAssignPublicIps)) __obj.updateDynamic("AutoAssignPublicIps")(AutoAssignPublicIps.get.asInstanceOf[js.Any])
-    if (CloudWatchLogsConfiguration != null) __obj.updateDynamic("CloudWatchLogsConfiguration")(CloudWatchLogsConfiguration.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CustomInstanceProfileArn != null) __obj.updateDynamic("CustomInstanceProfileArn")(CustomInstanceProfileArn.asInstanceOf[js.Any])
-    if (CustomJson != null) __obj.updateDynamic("CustomJson")(CustomJson.asInstanceOf[js.Any])
-    if (CustomRecipes != null) __obj.updateDynamic("CustomRecipes")(CustomRecipes.asInstanceOf[js.Any])
-    if (CustomSecurityGroupIds != null) __obj.updateDynamic("CustomSecurityGroupIds")(CustomSecurityGroupIds.asInstanceOf[js.Any])
-    if (DefaultRecipes != null) __obj.updateDynamic("DefaultRecipes")(DefaultRecipes.asInstanceOf[js.Any])
-    if (DefaultSecurityGroupNames != null) __obj.updateDynamic("DefaultSecurityGroupNames")(DefaultSecurityGroupNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableAutoHealing)) __obj.updateDynamic("EnableAutoHealing")(EnableAutoHealing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstallUpdatesOnBoot)) __obj.updateDynamic("InstallUpdatesOnBoot")(InstallUpdatesOnBoot.get.asInstanceOf[js.Any])
-    if (LayerId != null) __obj.updateDynamic("LayerId")(LayerId.asInstanceOf[js.Any])
-    if (LifecycleEventConfiguration != null) __obj.updateDynamic("LifecycleEventConfiguration")(LifecycleEventConfiguration.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Packages != null) __obj.updateDynamic("Packages")(Packages.asInstanceOf[js.Any])
-    if (Shortname != null) __obj.updateDynamic("Shortname")(Shortname.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseEbsOptimizedInstances)) __obj.updateDynamic("UseEbsOptimizedInstances")(UseEbsOptimizedInstances.get.asInstanceOf[js.Any])
-    if (VolumeConfigurations != null) __obj.updateDynamic("VolumeConfigurations")(VolumeConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
+  @scala.inline
+  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAttributes(value: LayerAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setAutoAssignElasticIps(value: Boolean): Self = this.set("AutoAssignElasticIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAssignElasticIps: Self = this.set("AutoAssignElasticIps", js.undefined)
+    @scala.inline
+    def setAutoAssignPublicIps(value: Boolean): Self = this.set("AutoAssignPublicIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAssignPublicIps: Self = this.set("AutoAssignPublicIps", js.undefined)
+    @scala.inline
+    def setCloudWatchLogsConfiguration(value: CloudWatchLogsConfiguration): Self = this.set("CloudWatchLogsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogsConfiguration: Self = this.set("CloudWatchLogsConfiguration", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: DateTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCustomInstanceProfileArn(value: String): Self = this.set("CustomInstanceProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomInstanceProfileArn: Self = this.set("CustomInstanceProfileArn", js.undefined)
+    @scala.inline
+    def setCustomJson(value: String): Self = this.set("CustomJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomJson: Self = this.set("CustomJson", js.undefined)
+    @scala.inline
+    def setCustomRecipes(value: Recipes): Self = this.set("CustomRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRecipes: Self = this.set("CustomRecipes", js.undefined)
+    @scala.inline
+    def setCustomSecurityGroupIdsVarargs(value: String*): Self = this.set("CustomSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setCustomSecurityGroupIds(value: Strings): Self = this.set("CustomSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSecurityGroupIds: Self = this.set("CustomSecurityGroupIds", js.undefined)
+    @scala.inline
+    def setDefaultRecipes(value: Recipes): Self = this.set("DefaultRecipes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRecipes: Self = this.set("DefaultRecipes", js.undefined)
+    @scala.inline
+    def setDefaultSecurityGroupNamesVarargs(value: String*): Self = this.set("DefaultSecurityGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setDefaultSecurityGroupNames(value: Strings): Self = this.set("DefaultSecurityGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSecurityGroupNames: Self = this.set("DefaultSecurityGroupNames", js.undefined)
+    @scala.inline
+    def setEnableAutoHealing(value: Boolean): Self = this.set("EnableAutoHealing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutoHealing: Self = this.set("EnableAutoHealing", js.undefined)
+    @scala.inline
+    def setInstallUpdatesOnBoot(value: Boolean): Self = this.set("InstallUpdatesOnBoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallUpdatesOnBoot: Self = this.set("InstallUpdatesOnBoot", js.undefined)
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("LayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("LayerId", js.undefined)
+    @scala.inline
+    def setLifecycleEventConfiguration(value: LifecycleEventConfiguration): Self = this.set("LifecycleEventConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleEventConfiguration: Self = this.set("LifecycleEventConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPackagesVarargs(value: String*): Self = this.set("Packages", js.Array(value :_*))
+    @scala.inline
+    def setPackages(value: Strings): Self = this.set("Packages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackages: Self = this.set("Packages", js.undefined)
+    @scala.inline
+    def setShortname(value: String): Self = this.set("Shortname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortname: Self = this.set("Shortname", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setType(value: LayerType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setUseEbsOptimizedInstances(value: Boolean): Self = this.set("UseEbsOptimizedInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseEbsOptimizedInstances: Self = this.set("UseEbsOptimizedInstances", js.undefined)
+    @scala.inline
+    def setVolumeConfigurationsVarargs(value: VolumeConfiguration*): Self = this.set("VolumeConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setVolumeConfigurations(value: VolumeConfigurations): Self = this.set("VolumeConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeConfigurations: Self = this.set("VolumeConfigurations", js.undefined)
+  }
+  
 }
 

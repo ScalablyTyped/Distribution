@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/export-to-excel-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.DataGridExportToExcelButton")
 @js.native

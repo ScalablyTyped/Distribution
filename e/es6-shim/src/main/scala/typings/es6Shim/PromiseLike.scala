@@ -13,6 +13,10 @@ trait PromiseLike[T] extends js.Object {
     * @returns A Promise for the completion of which ever callback is executed.
     */
   def `then`[TResult](): PromiseLike[TResult] = js.native
+  def `then`[TResult](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, PromiseLike[TResult] | TResult | Unit]
+  ): PromiseLike[TResult] = js.native
   def `then`[TResult](onfulfilled: js.Function1[/* value */ T, TResult | PromiseLike[TResult]]): PromiseLike[TResult] = js.native
   def `then`[TResult](
     onfulfilled: js.Function1[/* value */ T, PromiseLike[TResult] | TResult],

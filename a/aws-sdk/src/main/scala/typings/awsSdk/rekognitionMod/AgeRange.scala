@@ -18,11 +18,30 @@ trait AgeRange extends js.Object {
 
 object AgeRange {
   @scala.inline
-  def apply(High: js.UndefOr[UInteger] = js.undefined, Low: js.UndefOr[UInteger] = js.undefined): AgeRange = {
+  def apply(): AgeRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(High)) __obj.updateDynamic("High")(High.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Low)) __obj.updateDynamic("Low")(Low.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgeRange]
   }
+  @scala.inline
+  implicit class AgeRangeOps[Self <: AgeRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHigh(value: UInteger): Self = this.set("High", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigh: Self = this.set("High", js.undefined)
+    @scala.inline
+    def setLow(value: UInteger): Self = this.set("Low", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLow: Self = this.set("Low", js.undefined)
+  }
+  
 }
 

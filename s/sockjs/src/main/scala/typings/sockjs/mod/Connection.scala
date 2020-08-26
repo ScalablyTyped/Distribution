@@ -25,6 +25,7 @@ trait Connection
   var remotePort: Double = js.native
   var url: String = js.native
   def close(): Boolean = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: String): Boolean = js.native
   def close(code: String): Boolean = js.native
   def close(code: String, reason: String): Boolean = js.native
   def destroy(): Unit = js.native

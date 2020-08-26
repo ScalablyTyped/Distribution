@@ -15,56 +15,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BuildRequest extends js.Object {
   /**
     * Control whether or not the histogram can auto-resize and auto-adjust it's
     * highestTrackableValue
     * Default value is true
     */
-  var autoResize: js.UndefOr[Boolean] = js.undefined
+  var autoResize: js.UndefOr[Boolean] = js.native
   /**
     * The size in bit of each count bucket
     * Default value is 32
     */
-  var bitBucketSize: js.UndefOr[`8` | `16` | `32` | `64` | packed | sparse_array] = js.undefined
+  var bitBucketSize: js.UndefOr[`8` | `16` | `32` | `64` | packed | sparse_array] = js.native
   /**
     * The highest value to be tracked by the histogram. Must be a positive
     * integer that is {@literal >=} (2 * lowestDiscernibleValue).
     * Default value is Number.MAX_SAFE_INTEGER
     */
-  var highestTrackableValue: js.UndefOr[Double] = js.undefined
+  var highestTrackableValue: js.UndefOr[Double] = js.native
   /**
     * The lowest value that can be discerned (distinguished from 0) by the histogram.
     * Must be a positive integer that is {@literal >=} 1. May be internally rounded
     * down to nearest power of 2.
     * Default value is 1
     */
-  var lowestDiscernibleValue: js.UndefOr[Double] = js.undefined
+  var lowestDiscernibleValue: js.UndefOr[Double] = js.native
   /**
     * The number of significant decimal digits to which the histogram will
     * maintain value resolution and separation. Must be a non-negative
     * integer between 0 and 5.
     * Default value is 3
     */
-  var numberOfSignificantValueDigits: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
+  var numberOfSignificantValueDigits: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.native
 }
 
 object BuildRequest {
   @scala.inline
-  def apply(
-    autoResize: js.UndefOr[Boolean] = js.undefined,
-    bitBucketSize: `8` | `16` | `32` | `64` | packed | sparse_array = null,
-    highestTrackableValue: js.UndefOr[Double] = js.undefined,
-    lowestDiscernibleValue: js.UndefOr[Double] = js.undefined,
-    numberOfSignificantValueDigits: `1` | `2` | `3` | `4` | `5` = null
-  ): BuildRequest = {
+  def apply(): BuildRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.get.asInstanceOf[js.Any])
-    if (bitBucketSize != null) __obj.updateDynamic("bitBucketSize")(bitBucketSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(highestTrackableValue)) __obj.updateDynamic("highestTrackableValue")(highestTrackableValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowestDiscernibleValue)) __obj.updateDynamic("lowestDiscernibleValue")(lowestDiscernibleValue.get.asInstanceOf[js.Any])
-    if (numberOfSignificantValueDigits != null) __obj.updateDynamic("numberOfSignificantValueDigits")(numberOfSignificantValueDigits.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildRequest]
   }
+  @scala.inline
+  implicit class BuildRequestOps[Self <: BuildRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoResize(value: Boolean): Self = this.set("autoResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoResize: Self = this.set("autoResize", js.undefined)
+    @scala.inline
+    def setBitBucketSize(value: `8` | `16` | `32` | `64` | packed | sparse_array): Self = this.set("bitBucketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitBucketSize: Self = this.set("bitBucketSize", js.undefined)
+    @scala.inline
+    def setHighestTrackableValue(value: Double): Self = this.set("highestTrackableValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighestTrackableValue: Self = this.set("highestTrackableValue", js.undefined)
+    @scala.inline
+    def setLowestDiscernibleValue(value: Double): Self = this.set("lowestDiscernibleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowestDiscernibleValue: Self = this.set("lowestDiscernibleValue", js.undefined)
+    @scala.inline
+    def setNumberOfSignificantValueDigits(value: `1` | `2` | `3` | `4` | `5`): Self = this.set("numberOfSignificantValueDigits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfSignificantValueDigits: Self = this.set("numberOfSignificantValueDigits", js.undefined)
+  }
+  
 }
 

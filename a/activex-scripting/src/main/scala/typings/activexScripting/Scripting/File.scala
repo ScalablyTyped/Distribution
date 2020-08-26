@@ -54,6 +54,7 @@ trait File extends js.Object {
     * @param Scripting.Tristate [Format=0]
     */
   def OpenAsTextStream(): TextStream = js.native
+  def OpenAsTextStream(IOMode: js.UndefOr[scala.Nothing], Format: Tristate): TextStream = js.native
   def OpenAsTextStream(IOMode: IOMode): TextStream = js.native
   def OpenAsTextStream(IOMode: IOMode, Format: Tristate): TextStream = js.native
 }

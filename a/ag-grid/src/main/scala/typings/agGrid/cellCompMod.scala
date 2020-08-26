@@ -117,7 +117,6 @@ object cellCompMod extends js.Object {
     /* private */ def onCellChanged(event: js.Any): js.Any = js.native
     /* private */ def onCellClicked(mouseEvent: js.Any): js.Any = js.native
     /* private */ def onCellDoubleClicked(mouseEvent: js.Any): js.Any = js.native
-    /* private */ def onCellFocused(): js.Any = js.native
     /* private */ def onCellFocused(event: js.Any): js.Any = js.native
     /* private */ def onColumnHover(): js.Any = js.native
     /* private */ def onDisplayColumnsChanged(): js.Any = js.native
@@ -150,7 +149,6 @@ object cellCompMod extends js.Object {
     /* private */ def preProcessCellClassRules(): js.Any = js.native
     /* private */ def preProcessClassesFromColDef(): js.Any = js.native
     /* private */ def preProcessStylesFromColDef(): js.Any = js.native
-    /* private */ def processCellClassRules(onApplicableClass: js.Any): js.Any = js.native
     /* private */ def processCellClassRules(onApplicableClass: js.Any, onNotApplicableClass: js.Any): js.Any = js.native
     /* private */ def processClassesFromColDef(onApplicableClass: js.Any): js.Any = js.native
     /* private */ def processStylesFromColDef(): js.Any = js.native
@@ -166,15 +164,23 @@ object cellCompMod extends js.Object {
     def setUsingWrapper(): Unit = js.native
     /* private */ def setupColSpan(): js.Any = js.native
     def startEditingIfEnabled(): Unit = js.native
+    def startEditingIfEnabled(
+      keyPress: js.UndefOr[scala.Nothing],
+      charPress: js.UndefOr[scala.Nothing],
+      cellStartedEdit: Boolean
+    ): Unit = js.native
+    def startEditingIfEnabled(keyPress: js.UndefOr[scala.Nothing], charPress: String): Unit = js.native
+    def startEditingIfEnabled(keyPress: js.UndefOr[scala.Nothing], charPress: String, cellStartedEdit: Boolean): Unit = js.native
     def startEditingIfEnabled(keyPress: Double): Unit = js.native
+    def startEditingIfEnabled(keyPress: Double, charPress: js.UndefOr[scala.Nothing], cellStartedEdit: Boolean): Unit = js.native
     def startEditingIfEnabled(keyPress: Double, charPress: String): Unit = js.native
     def startEditingIfEnabled(keyPress: Double, charPress: String, cellStartedEdit: Boolean): Unit = js.native
     def startRowOrCellEdit(): Unit = js.native
+    def startRowOrCellEdit(keyPress: js.UndefOr[scala.Nothing], charPress: String): Unit = js.native
     def startRowOrCellEdit(keyPress: Double): Unit = js.native
     def startRowOrCellEdit(keyPress: Double, charPress: String): Unit = js.native
     def stopEditing(): Unit = js.native
     def stopEditing(cancel: Boolean): Unit = js.native
-    /* private */ def stopEditingAndFocus(): js.Any = js.native
     /* private */ def stopEditingAndFocus(suppressNavigateAfterEdit: js.Any): js.Any = js.native
     def stopRowOrCellEdit(): Unit = js.native
     def stopRowOrCellEdit(cancel: Boolean): Unit = js.native

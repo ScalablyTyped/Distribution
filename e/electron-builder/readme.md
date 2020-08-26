@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-builder
 
-Typings are for version 22.7.0
+Typings are for version 22.8.0
 
 ## Library description:
 A complete solution to package and build a ready for distribution Electron app for MacOS, Windows and Linux with “auto update” support out of the box
@@ -10,9 +10,9 @@ A complete solution to package and build a ready for distribution Electron app f
 | ------------------ | :-------------: |
 | Full name          | electron-builder |
 | Keywords           | electron, builder, build, installer, install, packager, pack, nsis, app, dmg, pkg, msi, exe, setup, Windows, OS X, MacOS, Mac, appx, snap, portable |
-| # releases         | 190 |
-| # dependents       | 58 |
-| # downloads        | 4158067 |
+| # releases         | 168 |
+| # dependents       | 57 |
+| # downloads        | 4151198 |
 | # stars            | 60 |
 
 ## Links

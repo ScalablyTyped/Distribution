@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object anon extends js.Object {
-  /* Inlined chalk.chalk.Chalk & chalk.chalk.ChalkFunction & {  supportsColor  :chalk.chalk.ColorSupport | false,   Level  :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LevelEnum * / any,   Color  :chalk.chalk.Color,   ForegroundColor  :chalk.chalk.ForegroundColor,   BackgroundColor  :chalk.chalk.BackgroundColor,   Modifiers  :chalk.chalk.Modifiers,   stderr  :chalk.chalk.Chalk & {  supportsColor  :chalk.chalk.ColorSupport | false}} */
+  /* Inlined chalk.chalk.Chalk & chalk.chalk.ChalkFunction & {  supportsColor :chalk.chalk.ColorSupport | false,   Level :chalk.chalk.Level,   Color :chalk.chalk.Color,   ForegroundColor :chalk.chalk.ForegroundColor,   BackgroundColor :chalk.chalk.BackgroundColor,   Modifiers :chalk.chalk.Modifiers,   stderr :chalk.chalk.Chalk & {  supportsColor :chalk.chalk.ColorSupport | false}} */
   @js.native
   trait ChalkChalkFunctionsupport extends js.Object {
     var BackgroundColor: typings.chalk.mod.BackgroundColor = js.native
@@ -23,7 +23,7 @@ object anon extends js.Object {
     		Return a new Chalk instance.
     		*/
     var Instance: typings.chalk.mod.Instance = js.native
-    var Level: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LevelEnum */ js.Any = js.native
+    var Level: typings.chalk.mod.Level = js.native
     var Modifiers: typings.chalk.mod.Modifiers = js.native
     @JSName("bgBlackBright")
     val bgBlackBright_Original: Chalk = js.native
@@ -121,6 +121,11 @@ object anon extends js.Object {
     /**
     		The color support for Chalk.
     		By default, color support is automatically detected based on the environment.
+    		Levels:
+    		- `0` - All colors disabled.
+    		- `1` - Basic 16 colors support.
+    		- `2` - ANSI 256 colors support.
+    		- `3` - Truecolor 16 million colors support.
     		*/
     var level: Level = js.native
     @JSName("magentaBright")
@@ -176,6 +181,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def apply(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     /**
@@ -212,6 +222,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgBlackBright(text: js.Any*): String = js.native
@@ -226,6 +241,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -242,6 +262,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgBlueBright(text: js.Any*): String = js.native
@@ -256,6 +281,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -272,6 +302,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgCyanBright(text: js.Any*): String = js.native
@@ -286,6 +321,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -305,6 +345,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     /*
     		Alias for `bgBlackBright`.
@@ -323,6 +368,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgGreenBright(text: js.Any*): String = js.native
@@ -337,6 +387,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -355,6 +410,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /*
@@ -406,6 +466,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgMagentaBright(text: js.Any*): String = js.native
@@ -420,6 +485,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -436,6 +506,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgRedBright(text: js.Any*): String = js.native
@@ -450,6 +525,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -470,6 +550,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgWhiteBright(text: js.Any*): String = js.native
@@ -484,6 +569,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -500,6 +590,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def bgYellowBright(text: js.Any*): String = js.native
@@ -514,6 +609,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -530,6 +630,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def black(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def blackBright(text: js.Any*): String = js.native
@@ -544,6 +649,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -560,6 +670,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def blueBright(text: js.Any*): String = js.native
@@ -574,6 +689,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -593,6 +713,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     /**
     		Modifier: Make text bold.
@@ -611,6 +736,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def cyanBright(text: js.Any*): String = js.native
@@ -625,6 +755,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -643,6 +778,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /**
@@ -665,6 +805,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     /*
     		Alias for `blackBright`.
@@ -683,6 +828,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def greenBright(text: js.Any*): String = js.native
@@ -697,6 +847,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -715,6 +870,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /*
@@ -746,6 +906,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /**
@@ -780,6 +945,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     /**
     		Modifier: Inverse background and foreground colors.
@@ -800,6 +970,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /**
@@ -829,6 +1004,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def magentaBright(text: js.Any*): String = js.native
@@ -843,6 +1023,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -859,6 +1044,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def redBright(text: js.Any*): String = js.native
@@ -873,6 +1063,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -891,6 +1086,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /**
@@ -914,6 +1114,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def stderr(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     /**
@@ -931,6 +1136,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /**
@@ -952,6 +1162,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     /**
@@ -975,6 +1190,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     /**
     		Modifier: Prints the text only when Chalk has a color support level > 0.
@@ -994,6 +1214,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def white(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def whiteBright(text: js.Any*): String = js.native
@@ -1008,6 +1233,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
@@ -1024,6 +1254,11 @@ object anon extends js.Object {
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
     		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
+    		```
     		*/
     def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
     def yellowBright(text: js.Any*): String = js.native
@@ -1038,6 +1273,11 @@ object anon extends js.Object {
     		RAM: {green ${ram.used / ram.total * 100}%}
     		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
     		`);
+    		```
+    		@example
+    		```
+    		import chalk = require('chalk');
+    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
     		```
     		*/
     def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native

@@ -22,16 +22,34 @@ trait BackupDescription extends js.Object {
 
 object BackupDescription {
   @scala.inline
-  def apply(
-    BackupDetails: BackupDetails = null,
-    SourceTableDetails: SourceTableDetails = null,
-    SourceTableFeatureDetails: SourceTableFeatureDetails = null
-  ): BackupDescription = {
+  def apply(): BackupDescription = {
     val __obj = js.Dynamic.literal()
-    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails.asInstanceOf[js.Any])
-    if (SourceTableDetails != null) __obj.updateDynamic("SourceTableDetails")(SourceTableDetails.asInstanceOf[js.Any])
-    if (SourceTableFeatureDetails != null) __obj.updateDynamic("SourceTableFeatureDetails")(SourceTableFeatureDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupDescription]
   }
+  @scala.inline
+  implicit class BackupDescriptionOps[Self <: BackupDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupDetails(value: BackupDetails): Self = this.set("BackupDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupDetails: Self = this.set("BackupDetails", js.undefined)
+    @scala.inline
+    def setSourceTableDetails(value: SourceTableDetails): Self = this.set("SourceTableDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTableDetails: Self = this.set("SourceTableDetails", js.undefined)
+    @scala.inline
+    def setSourceTableFeatureDetails(value: SourceTableFeatureDetails): Self = this.set("SourceTableFeatureDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceTableFeatureDetails: Self = this.set("SourceTableFeatureDetails", js.undefined)
+  }
+  
 }
 

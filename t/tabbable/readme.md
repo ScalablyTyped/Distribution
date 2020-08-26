@@ -10,9 +10,9 @@ Returns an array of all tabbable DOM nodes within a containing node.
 | ------------------ | :-------------: |
 | Full name          | tabbable |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 48 |
-| # downloads        | 11029724 |
+| # releases         | 8 |
+| # dependents       | 46 |
+| # downloads        | 11528776 |
 | # stars            | 2 |
 
 ## Links

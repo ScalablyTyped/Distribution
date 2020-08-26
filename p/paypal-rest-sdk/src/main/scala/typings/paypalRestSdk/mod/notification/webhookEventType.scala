@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object webhookEventType extends js.Object {
   def list(data: RequestOptions): Unit = js.native
+  def list(data: RequestOptions, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[EventTypesResponse]): Unit = js.native
   def list(data: RequestOptions, config: RequestOptions): Unit = js.native
   def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = js.native
   def list(data: RequestOptions, config: CallbackFunction[EventTypesResponse]): Unit = js.native
@@ -20,6 +21,11 @@ object webhookEventType extends js.Object {
     cb: CallbackFunction[EventTypesResponse]
   ): Unit = js.native
   def list(data: CallbackFunction[EventTypesResponse]): Unit = js.native
+  def list(
+    data: CallbackFunction[EventTypesResponse],
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[EventTypesResponse]
+  ): Unit = js.native
   def list(data: CallbackFunction[EventTypesResponse], config: RequestOptions): Unit = js.native
   def list(
     data: CallbackFunction[EventTypesResponse],
@@ -33,6 +39,7 @@ object webhookEventType extends js.Object {
     cb: CallbackFunction[EventTypesResponse]
   ): Unit = js.native
   def list(data: QueryParameters): Unit = js.native
+  def list(data: QueryParameters, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[EventTypesResponse]): Unit = js.native
   def list(data: QueryParameters, config: RequestOptions): Unit = js.native
   def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[EventTypesResponse]): Unit = js.native
   def list(data: QueryParameters, config: CallbackFunction[EventTypesResponse]): Unit = js.native

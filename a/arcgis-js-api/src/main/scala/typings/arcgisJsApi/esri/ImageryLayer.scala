@@ -42,13 +42,11 @@ trait ImageryLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#createPopupTemplate)
     *
-    * @param options the options.
-    * @param options.maximumFields the maximum number of fields to include in the popup template.
-    * @param options.ignoreFieldTypes field types to ignore when creating the popup. By default the `geometry`, `blob`, `raster`, `guid` and `xml` field types are ignored.
+    * @param options Options for creating the popup template.
     *
     */
   def createPopupTemplate(): PopupTemplate = js.native
-  def createPopupTemplate(options: ImageryLayerCreatePopupTemplateOptions): PopupTemplate = js.native
+  def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
   /**
     * Executes the [pixelFilter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#pixelFilter) function and redraws the layer.
     *

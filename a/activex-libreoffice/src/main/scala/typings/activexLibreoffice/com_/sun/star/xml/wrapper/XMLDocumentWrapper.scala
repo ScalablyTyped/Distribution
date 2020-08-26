@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Service of {@link XMLDocumentWrapper} */
+@js.native
 trait XMLDocumentWrapper
   extends XXMLDocumentWrapper
      with XInitialization

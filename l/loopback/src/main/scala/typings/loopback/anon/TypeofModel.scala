@@ -86,6 +86,16 @@ trait TypeofModel
     paramName: String,
     getterName: String,
     hooks: Boolean,
+    options: js.UndefOr[scala.Nothing],
+    filterCallback: js.Function2[/* SharedMethod */ js.Any, /* RelationDefinition */ js.Any, Unit]
+  ): Unit = js.native
+  def nestRemoting(
+    relationName: String,
+    pathName: String,
+    filterMethod: String,
+    paramName: String,
+    getterName: String,
+    hooks: Boolean,
     options: js.Object
   ): Unit = js.native
   def nestRemoting(

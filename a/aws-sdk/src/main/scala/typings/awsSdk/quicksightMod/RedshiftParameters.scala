@@ -26,17 +26,36 @@ trait RedshiftParameters extends js.Object {
 
 object RedshiftParameters {
   @scala.inline
-  def apply(
-    Database: Database,
-    ClusterId: ClusterId = null,
-    Host: Host = null,
-    Port: js.UndefOr[OptionalPort] = js.undefined
-  ): RedshiftParameters = {
+  def apply(Database: Database): RedshiftParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any])
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (Host != null) __obj.updateDynamic("Host")(Host.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftParameters]
   }
+  @scala.inline
+  implicit class RedshiftParametersOps[Self <: RedshiftParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabase(value: Database): Self = this.set("Database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterId(value: ClusterId): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setHost(value: Host): Self = this.set("Host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("Host", js.undefined)
+    @scala.inline
+    def setPort(value: OptionalPort): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+  }
+  
 }
 

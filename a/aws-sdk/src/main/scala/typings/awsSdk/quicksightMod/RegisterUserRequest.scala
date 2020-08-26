@@ -11,6 +11,10 @@ trait RegisterUserRequest extends js.Object {
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
   /**
+    * (Enterprise edition only) The name of the custom permissions profile that you want to assign to this user. Currently, custom permissions profile names are assigned to permissions profiles in the QuickSight console. You use this API to assign the named set of permissions to a QuickSight user.  Customizing permissions in the QuickSight UI allows you to control a user's access to the following operations:               QuickSight custom permissions are applied through IAM policies. Therefore, they override the permissions typically granted by assigning QuickSight users to one of the default security cohorts (admin, author, reader) in QuickSight. This feature is available only to QuickSight Enterprise edition subscriptions that use SAML 2.0-Based Federation for Single Sign-On (SSO).
+    */
+  var CustomPermissionsName: js.UndefOr[RoleName] = js.native
+  /**
     * The email address of the user that you want to register.
     */
   var Email: String = js.native
@@ -47,16 +51,49 @@ object RegisterUserRequest {
     Email: String,
     IdentityType: IdentityType,
     Namespace: Namespace,
-    UserRole: UserRole,
-    IamArn: String = null,
-    SessionName: RoleSessionName = null,
-    UserName: UserName_ = null
+    UserRole: UserRole
   ): RegisterUserRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], UserRole = UserRole.asInstanceOf[js.Any])
-    if (IamArn != null) __obj.updateDynamic("IamArn")(IamArn.asInstanceOf[js.Any])
-    if (SessionName != null) __obj.updateDynamic("SessionName")(SessionName.asInstanceOf[js.Any])
-    if (UserName != null) __obj.updateDynamic("UserName")(UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterUserRequest]
   }
+  @scala.inline
+  implicit class RegisterUserRequestOps[Self <: RegisterUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmail(value: String): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserRole(value: UserRole): Self = this.set("UserRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomPermissionsName(value: RoleName): Self = this.set("CustomPermissionsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomPermissionsName: Self = this.set("CustomPermissionsName", js.undefined)
+    @scala.inline
+    def setIamArn(value: String): Self = this.set("IamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamArn: Self = this.set("IamArn", js.undefined)
+    @scala.inline
+    def setSessionName(value: RoleSessionName): Self = this.set("SessionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionName: Self = this.set("SessionName", js.undefined)
+    @scala.inline
+    def setUserName(value: UserName_): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("UserName", js.undefined)
+  }
+  
 }
 

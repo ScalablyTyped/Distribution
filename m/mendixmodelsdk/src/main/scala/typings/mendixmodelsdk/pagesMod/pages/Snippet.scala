@@ -48,24 +48,20 @@ class Snippet protected () extends FormBase {
   val type_FSnippet: SnippetType = js.native
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MSnippet: FolderBase = js.native
-  def entity(): js.Any = js.native
-  def entity(newValue: IEntity): js.Any = js.native
+  def entity: IEntity | Null = js.native
   def entityQualifiedName: String | Null = js.native
-  @JSName("entity")
-  def entity_Union: IEntity | Null = js.native
+  def entity_=(newValue: IEntity | Null): Unit = js.native
   /**
     * In version 8.4.0: added public
     * In version 8.0.0: introduced
     */
   def `type`: SnippetType = js.native
-  def `type`(newValue: SnippetType): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def type_=(newValue: SnippetType): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

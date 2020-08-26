@@ -16,6 +16,12 @@ trait Notification extends js.Object {
     * @param buttonName    Button name, defaults to OK.
     */
   def alert(message: String, alertCallback: js.Function0[Unit]): Unit = js.native
+  def alert(
+    message: String,
+    alertCallback: js.Function0[Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonName: String
+  ): Unit = js.native
   def alert(message: String, alertCallback: js.Function0[Unit], title: String): Unit = js.native
   def alert(message: String, alertCallback: js.Function0[Unit], title: String, buttonName: String): Unit = js.native
   /**
@@ -32,6 +38,12 @@ trait Notification extends js.Object {
     * @param buttonLabels      Array of strings specifying button labels, defaults to [OK,Cancel].
     */
   def confirm(message: String, confirmCallback: js.Function1[/* choice */ Double, Unit]): Unit = js.native
+  def confirm(
+    message: String,
+    confirmCallback: js.Function1[/* choice */ Double, Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonLabels: js.Array[String]
+  ): Unit = js.native
   def confirm(message: String, confirmCallback: js.Function1[/* choice */ Double, Unit], title: String): Unit = js.native
   def confirm(
     message: String,
@@ -51,7 +63,34 @@ trait Notification extends js.Object {
   def prompt(
     message: String,
     promptCallback: js.Function1[/* result */ NotificationPromptResult, Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonLabels: js.UndefOr[scala.Nothing],
+    defaultText: String
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCallback: js.Function1[/* result */ NotificationPromptResult, Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonLabels: js.Array[String]
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCallback: js.Function1[/* result */ NotificationPromptResult, Unit],
+    title: js.UndefOr[scala.Nothing],
+    buttonLabels: js.Array[String],
+    defaultText: String
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCallback: js.Function1[/* result */ NotificationPromptResult, Unit],
     title: String
+  ): Unit = js.native
+  def prompt(
+    message: String,
+    promptCallback: js.Function1[/* result */ NotificationPromptResult, Unit],
+    title: String,
+    buttonLabels: js.UndefOr[scala.Nothing],
+    defaultText: String
   ): Unit = js.native
   def prompt(
     message: String,

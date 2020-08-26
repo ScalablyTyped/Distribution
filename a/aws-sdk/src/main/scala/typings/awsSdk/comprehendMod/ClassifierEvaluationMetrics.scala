@@ -42,26 +42,54 @@ trait ClassifierEvaluationMetrics extends js.Object {
 
 object ClassifierEvaluationMetrics {
   @scala.inline
-  def apply(
-    Accuracy: js.UndefOr[Double] = js.undefined,
-    F1Score: js.UndefOr[Double] = js.undefined,
-    HammingLoss: js.UndefOr[Double] = js.undefined,
-    MicroF1Score: js.UndefOr[Double] = js.undefined,
-    MicroPrecision: js.UndefOr[Double] = js.undefined,
-    MicroRecall: js.UndefOr[Double] = js.undefined,
-    Precision: js.UndefOr[Double] = js.undefined,
-    Recall: js.UndefOr[Double] = js.undefined
-  ): ClassifierEvaluationMetrics = {
+  def apply(): ClassifierEvaluationMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Accuracy)) __obj.updateDynamic("Accuracy")(Accuracy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(F1Score)) __obj.updateDynamic("F1Score")(F1Score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(HammingLoss)) __obj.updateDynamic("HammingLoss")(HammingLoss.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MicroF1Score)) __obj.updateDynamic("MicroF1Score")(MicroF1Score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MicroPrecision)) __obj.updateDynamic("MicroPrecision")(MicroPrecision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MicroRecall)) __obj.updateDynamic("MicroRecall")(MicroRecall.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifierEvaluationMetrics]
   }
+  @scala.inline
+  implicit class ClassifierEvaluationMetricsOps[Self <: ClassifierEvaluationMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccuracy(value: Double): Self = this.set("Accuracy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccuracy: Self = this.set("Accuracy", js.undefined)
+    @scala.inline
+    def setF1Score(value: Double): Self = this.set("F1Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF1Score: Self = this.set("F1Score", js.undefined)
+    @scala.inline
+    def setHammingLoss(value: Double): Self = this.set("HammingLoss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHammingLoss: Self = this.set("HammingLoss", js.undefined)
+    @scala.inline
+    def setMicroF1Score(value: Double): Self = this.set("MicroF1Score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicroF1Score: Self = this.set("MicroF1Score", js.undefined)
+    @scala.inline
+    def setMicroPrecision(value: Double): Self = this.set("MicroPrecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicroPrecision: Self = this.set("MicroPrecision", js.undefined)
+    @scala.inline
+    def setMicroRecall(value: Double): Self = this.set("MicroRecall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicroRecall: Self = this.set("MicroRecall", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("Precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("Precision", js.undefined)
+    @scala.inline
+    def setRecall(value: Double): Self = this.set("Recall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecall: Self = this.set("Recall", js.undefined)
+  }
+  
 }
 

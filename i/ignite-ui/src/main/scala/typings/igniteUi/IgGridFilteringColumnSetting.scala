@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridFilteringColumnSetting
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,17 +15,17 @@ trait IgGridFilteringColumnSetting
     * Enables/disables filtering for the column.
     *
     */
-  var allowFiltering: js.UndefOr[Boolean] = js.undefined
+  var allowFiltering: js.UndefOr[Boolean] = js.native
   /**
     * Identifies the grid column by index. Either key or index must be set in every column setting.
     *
     */
-  var columnIndex: js.UndefOr[Double] = js.undefined
+  var columnIndex: js.UndefOr[Double] = js.native
   /**
     * Identifies the grid column by key. Either key or index must be set in every column setting.
     *
     */
-  var columnKey: js.UndefOr[String] = js.undefined
+  var columnKey: js.UndefOr[String] = js.native
   /**
     * Initial filtering condition for the column.
     *
@@ -63,12 +64,12 @@ trait IgGridFilteringColumnSetting
     * "atBefore"
     * "atAfter"
     */
-  var condition: js.UndefOr[String | Boolean] = js.undefined
+  var condition: js.UndefOr[String | Boolean] = js.native
   /**
     * An array of strings that determine which [conditions](ui.iggridfiltering#options:columnSettings.condition) to display for this column.
     *
     */
-  var conditionList: js.UndefOr[js.Array[_]] = js.undefined
+  var conditionList: js.UndefOr[js.Array[_]] = js.native
   /**
     * An object used to specify custom filtering conditions as objects for this column.
     *
@@ -78,17 +79,17 @@ trait IgGridFilteringColumnSetting
     * filterImgIcon  Class applied to the dropdown item when in simple mode.
     * filterFunc  The custom comparing filter function. Signature: function (value, expression, dataType, ignoreCase, preciseDateFormat).
     */
-  var customConditions: js.UndefOr[js.Any] = js.undefined
+  var customConditions: js.UndefOr[js.Any] = js.native
   /**
     * Initial filtering expressions - if set they will be applied on initialization together with the preset [condition](ui.iggridfiltering#options:columnSettings.condition).
     *
     */
-  var defaultExpressions: js.UndefOr[IgGridFilteringColumnSettingDefaultExpressions] = js.undefined
+  var defaultExpressions: js.UndefOr[IgGridFilteringColumnSettingDefaultExpressions] = js.native
   /**
     * Specifies options to initialize the corresponding editor with.
     *
     */
-  var editorOptions: js.UndefOr[js.Any] = js.undefined
+  var editorOptions: js.UndefOr[js.Any] = js.native
   /**
     * Specifies а custom editor provider instance. More information about editor providers can be found [here](http://www.igniteui.com/help/implementing-custom-editor-provider) and [here](http://www.igniteui.com/help/working-with-combo-editor-provider).
     * It should either extend $.ig.EditorProvider or have definitions for the following methods:
@@ -109,7 +110,7 @@ trait IgGridFilteringColumnSetting
     * });
     *
     */
-  var editorProvider: js.UndefOr[js.Any] = js.undefined
+  var editorProvider: js.UndefOr[js.Any] = js.native
   /**
     * Specifies the type of editor to use for the column.
     *
@@ -127,37 +128,69 @@ trait IgGridFilteringColumnSetting
     * "combo" An igCombo editor is created. Both the JS and CSS files used by ui.igCombo should be available.
     * "rating" An igRating editor is created. Both the JS and CSS files used by ui.igRating should be available.
     */
-  var editorType: js.UndefOr[String] = js.undefined
+  var editorType: js.UndefOr[String] = js.native
 }
 
 object IgGridFilteringColumnSetting {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    allowFiltering: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: js.UndefOr[Double] = js.undefined,
-    columnKey: String = null,
-    condition: String | Boolean = null,
-    conditionList: js.Array[_] = null,
-    customConditions: js.Any = null,
-    defaultExpressions: IgGridFilteringColumnSettingDefaultExpressions = null,
-    editorOptions: js.Any = null,
-    editorProvider: js.Any = null,
-    editorType: String = null
-  ): IgGridFilteringColumnSetting = {
+  def apply(): IgGridFilteringColumnSetting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (conditionList != null) __obj.updateDynamic("conditionList")(conditionList.asInstanceOf[js.Any])
-    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions.asInstanceOf[js.Any])
-    if (defaultExpressions != null) __obj.updateDynamic("defaultExpressions")(defaultExpressions.asInstanceOf[js.Any])
-    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions.asInstanceOf[js.Any])
-    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider.asInstanceOf[js.Any])
-    if (editorType != null) __obj.updateDynamic("editorType")(editorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridFilteringColumnSetting]
   }
+  @scala.inline
+  implicit class IgGridFilteringColumnSettingOps[Self <: IgGridFilteringColumnSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowFiltering(value: Boolean): Self = this.set("allowFiltering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFiltering: Self = this.set("allowFiltering", js.undefined)
+    @scala.inline
+    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    @scala.inline
+    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    @scala.inline
+    def setCondition(value: String | Boolean): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setConditionListVarargs(value: js.Any*): Self = this.set("conditionList", js.Array(value :_*))
+    @scala.inline
+    def setConditionList(value: js.Array[_]): Self = this.set("conditionList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionList: Self = this.set("conditionList", js.undefined)
+    @scala.inline
+    def setCustomConditions(value: js.Any): Self = this.set("customConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomConditions: Self = this.set("customConditions", js.undefined)
+    @scala.inline
+    def setDefaultExpressions(value: IgGridFilteringColumnSettingDefaultExpressions): Self = this.set("defaultExpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultExpressions: Self = this.set("defaultExpressions", js.undefined)
+    @scala.inline
+    def setEditorOptions(value: js.Any): Self = this.set("editorOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorOptions: Self = this.set("editorOptions", js.undefined)
+    @scala.inline
+    def setEditorProvider(value: js.Any): Self = this.set("editorProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorProvider: Self = this.set("editorProvider", js.undefined)
+    @scala.inline
+    def setEditorType(value: String): Self = this.set("editorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorType: Self = this.set("editorType", js.undefined)
+  }
+  
 }
 

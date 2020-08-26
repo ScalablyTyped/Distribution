@@ -31,22 +31,46 @@ trait Qualification extends js.Object {
 
 object Qualification {
   @scala.inline
-  def apply(
-    GrantTime: Timestamp = null,
-    IntegerValue: js.UndefOr[Integer] = js.undefined,
-    LocaleValue: Locale = null,
-    QualificationTypeId: EntityId = null,
-    Status: QualificationStatus = null,
-    WorkerId: CustomerId = null
-  ): Qualification = {
+  def apply(): Qualification = {
     val __obj = js.Dynamic.literal()
-    if (GrantTime != null) __obj.updateDynamic("GrantTime")(GrantTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(IntegerValue)) __obj.updateDynamic("IntegerValue")(IntegerValue.get.asInstanceOf[js.Any])
-    if (LocaleValue != null) __obj.updateDynamic("LocaleValue")(LocaleValue.asInstanceOf[js.Any])
-    if (QualificationTypeId != null) __obj.updateDynamic("QualificationTypeId")(QualificationTypeId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (WorkerId != null) __obj.updateDynamic("WorkerId")(WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Qualification]
   }
+  @scala.inline
+  implicit class QualificationOps[Self <: Qualification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrantTime(value: Timestamp): Self = this.set("GrantTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantTime: Self = this.set("GrantTime", js.undefined)
+    @scala.inline
+    def setIntegerValue(value: Integer): Self = this.set("IntegerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValue: Self = this.set("IntegerValue", js.undefined)
+    @scala.inline
+    def setLocaleValue(value: Locale): Self = this.set("LocaleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaleValue: Self = this.set("LocaleValue", js.undefined)
+    @scala.inline
+    def setQualificationTypeId(value: EntityId): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualificationTypeId: Self = this.set("QualificationTypeId", js.undefined)
+    @scala.inline
+    def setStatus(value: QualificationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setWorkerId(value: CustomerId): Self = this.set("WorkerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("WorkerId", js.undefined)
+  }
+  
 }
 

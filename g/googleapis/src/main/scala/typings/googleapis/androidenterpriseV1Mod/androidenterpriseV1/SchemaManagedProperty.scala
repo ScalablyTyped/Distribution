@@ -50,24 +50,54 @@ trait SchemaManagedProperty extends js.Object {
 
 object SchemaManagedProperty {
   @scala.inline
-  def apply(
-    key: String = null,
-    valueBool: js.UndefOr[Boolean] = js.undefined,
-    valueBundle: SchemaManagedPropertyBundle = null,
-    valueBundleArray: js.Array[SchemaManagedPropertyBundle] = null,
-    valueInteger: js.UndefOr[Double] = js.undefined,
-    valueString: String = null,
-    valueStringArray: js.Array[String] = null
-  ): SchemaManagedProperty = {
+  def apply(): SchemaManagedProperty = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueBool)) __obj.updateDynamic("valueBool")(valueBool.get.asInstanceOf[js.Any])
-    if (valueBundle != null) __obj.updateDynamic("valueBundle")(valueBundle.asInstanceOf[js.Any])
-    if (valueBundleArray != null) __obj.updateDynamic("valueBundleArray")(valueBundleArray.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueInteger)) __obj.updateDynamic("valueInteger")(valueInteger.get.asInstanceOf[js.Any])
-    if (valueString != null) __obj.updateDynamic("valueString")(valueString.asInstanceOf[js.Any])
-    if (valueStringArray != null) __obj.updateDynamic("valueStringArray")(valueStringArray.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedProperty]
   }
+  @scala.inline
+  implicit class SchemaManagedPropertyOps[Self <: SchemaManagedProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setValueBool(value: Boolean): Self = this.set("valueBool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueBool: Self = this.set("valueBool", js.undefined)
+    @scala.inline
+    def setValueBundle(value: SchemaManagedPropertyBundle): Self = this.set("valueBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueBundle: Self = this.set("valueBundle", js.undefined)
+    @scala.inline
+    def setValueBundleArrayVarargs(value: SchemaManagedPropertyBundle*): Self = this.set("valueBundleArray", js.Array(value :_*))
+    @scala.inline
+    def setValueBundleArray(value: js.Array[SchemaManagedPropertyBundle]): Self = this.set("valueBundleArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueBundleArray: Self = this.set("valueBundleArray", js.undefined)
+    @scala.inline
+    def setValueInteger(value: Double): Self = this.set("valueInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueInteger: Self = this.set("valueInteger", js.undefined)
+    @scala.inline
+    def setValueString(value: String): Self = this.set("valueString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueString: Self = this.set("valueString", js.undefined)
+    @scala.inline
+    def setValueStringArrayVarargs(value: String*): Self = this.set("valueStringArray", js.Array(value :_*))
+    @scala.inline
+    def setValueStringArray(value: js.Array[String]): Self = this.set("valueStringArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueStringArray: Self = this.set("valueStringArray", js.undefined)
+  }
+  
 }
 

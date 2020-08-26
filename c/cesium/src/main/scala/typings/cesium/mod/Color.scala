@@ -9,8 +9,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class Color () extends Packable {
   def this(red: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double) = this()
   def this(red: Double, green: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double) = this()
+  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double) = this()
   def this(red: Double, green: Double, blue: Double) = this()
+  def this(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
+  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double) = this()
+  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
+  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
+  def this(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
   var alpha: Double = js.native
   var blue: Double = js.native
@@ -195,20 +211,149 @@ object Color extends js.Object {
   def fromAlpha(color: Color, alpha: Double): Color = js.native
   def fromAlpha(color: Color, alpha: Double, result: Color): Color = js.native
   def fromBytes(): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: js.UndefOr[scala.Nothing],
+    blue: Double,
+    alpha: Double,
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: Double,
+    blue: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: Double,
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: Double): Color = js.native
+  def fromBytes(
+    red: js.UndefOr[scala.Nothing],
+    green: Double,
+    blue: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double): Color = js.native
+  def fromBytes(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double, result: Color): Color = js.native
   def fromBytes(red: Double): Color = js.native
+  def fromBytes(
+    red: Double,
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
+  def fromBytes(
+    red: Double,
+    green: js.UndefOr[scala.Nothing],
+    blue: js.UndefOr[scala.Nothing],
+    alpha: Double,
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: Double): Color = js.native
+  def fromBytes(
+    red: Double,
+    green: js.UndefOr[scala.Nothing],
+    blue: Double,
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double): Color = js.native
+  def fromBytes(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double, result: Color): Color = js.native
   def fromBytes(red: Double, green: Double): Color = js.native
+  def fromBytes(
+    red: Double,
+    green: Double,
+    blue: js.UndefOr[scala.Nothing],
+    alpha: js.UndefOr[scala.Nothing],
+    result: Color
+  ): Color = js.native
+  def fromBytes(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
+  def fromBytes(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double, result: Color): Color = js.native
   def fromBytes(red: Double, green: Double, blue: Double): Color = js.native
+  def fromBytes(red: Double, green: Double, blue: Double, alpha: js.UndefOr[scala.Nothing], result: Color): Color = js.native
   def fromBytes(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
   def fromBytes(red: Double, green: Double, blue: Double, alpha: Double, result: Color): Color = js.native
   def fromCartesian4(cartesian: Cartesian4): Color = js.native
   def fromCartesian4(cartesian: Cartesian4, result: Color): Color = js.native
   def fromCssColorString(color: String): Color = js.native
   def fromHsl(): Color = js.native
+  def fromHsl(
+    hue: js.UndefOr[scala.Nothing],
+    saturation: js.UndefOr[scala.Nothing],
+    lightness: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Color = js.native
+  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: js.UndefOr[scala.Nothing], lightness: Double): Color = js.native
+  def fromHsl(
+    hue: js.UndefOr[scala.Nothing],
+    saturation: js.UndefOr[scala.Nothing],
+    lightness: Double,
+    alpha: Double
+  ): Color = js.native
+  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: Double): Color = js.native
+  def fromHsl(
+    hue: js.UndefOr[scala.Nothing],
+    saturation: Double,
+    lightness: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Color = js.native
+  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: Double, lightness: Double): Color = js.native
+  def fromHsl(hue: js.UndefOr[scala.Nothing], saturation: Double, lightness: Double, alpha: Double): Color = js.native
   def fromHsl(hue: Double): Color = js.native
+  def fromHsl(
+    hue: Double,
+    saturation: js.UndefOr[scala.Nothing],
+    lightness: js.UndefOr[scala.Nothing],
+    alpha: Double
+  ): Color = js.native
+  def fromHsl(hue: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double): Color = js.native
+  def fromHsl(hue: Double, saturation: js.UndefOr[scala.Nothing], lightness: Double, alpha: Double): Color = js.native
   def fromHsl(hue: Double, saturation: Double): Color = js.native
+  def fromHsl(hue: Double, saturation: Double, lightness: js.UndefOr[scala.Nothing], alpha: Double): Color = js.native
   def fromHsl(hue: Double, saturation: Double, lightness: Double): Color = js.native
   def fromHsl(hue: Double, saturation: Double, lightness: Double, alpha: Double): Color = js.native
   def fromRandom(): Color = js.native
+  def fromRandom(options: js.UndefOr[scala.Nothing], result: Color): Color = js.native
   def fromRandom(options: Alpha): Color = js.native
   def fromRandom(options: Alpha, result: Color): Color = js.native
   def fromRgba(rgba: Double): Color = js.native
@@ -227,6 +372,7 @@ object Color extends js.Object {
   def subtract(left: Color, right: Color): Color = js.native
   def subtract(left: Color, right: Color, result: Color): Color = js.native
   def unpack(array: js.Array[Double]): Color = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Color): Color = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Color = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Color): Color = js.native
 }

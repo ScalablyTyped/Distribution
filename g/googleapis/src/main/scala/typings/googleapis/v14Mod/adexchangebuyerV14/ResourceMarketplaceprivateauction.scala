@@ -28,6 +28,7 @@ class ResourceMarketplaceprivateauction protected () extends js.Object {
     */
   def updateproposal(): GaxiosPromise[Unit] = js.native
   def updateproposal(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def updateproposal(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def updateproposal(params: ParamsResourceMarketplaceprivateauctionUpdateproposal): GaxiosPromise[Unit] = js.native
   def updateproposal(
     params: ParamsResourceMarketplaceprivateauctionUpdateproposal,

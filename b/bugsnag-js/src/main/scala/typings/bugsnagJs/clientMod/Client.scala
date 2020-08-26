@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 class Client () extends js.Object {
   var BugsnagBreadcrumb: Instantiable4[
     /* name */ String, 
-    js.UndefOr[/* metaData */ js.Object], 
-    js.UndefOr[/* type */ String], 
-    js.UndefOr[/* timestamp */ String], 
+    /* metaData */ js.UndefOr[js.Object], 
+    /* type */ js.UndefOr[String], 
+    /* timestamp */ js.UndefOr[String], 
     typings.bugsnagJs.breadcrumbMod.default
   ] = js.native
   var BugsnagReport: Instantiable = js.native
@@ -31,7 +31,16 @@ class Client () extends js.Object {
   var user: js.Object = js.native
   def configure(opts: IConfig): Client = js.native
   def leaveBreadcrumb(name: String): Client = js.native
+  def leaveBreadcrumb(
+    name: String,
+    metaData: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    timestamp: String
+  ): Client = js.native
+  def leaveBreadcrumb(name: String, metaData: js.UndefOr[scala.Nothing], `type`: String): Client = js.native
+  def leaveBreadcrumb(name: String, metaData: js.UndefOr[scala.Nothing], `type`: String, timestamp: String): Client = js.native
   def leaveBreadcrumb(name: String, metaData: js.Any): Client = js.native
+  def leaveBreadcrumb(name: String, metaData: js.Any, `type`: js.UndefOr[scala.Nothing], timestamp: String): Client = js.native
   def leaveBreadcrumb(name: String, metaData: js.Any, `type`: String): Client = js.native
   def leaveBreadcrumb(name: String, metaData: js.Any, `type`: String, timestamp: String): Client = js.native
   def logger(logger: ILogger): Client = js.native

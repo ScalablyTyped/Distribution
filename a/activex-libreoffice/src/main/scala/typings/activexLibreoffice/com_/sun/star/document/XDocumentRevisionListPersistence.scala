@@ -11,19 +11,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** interface to load or store a list of document revisions from or to a document using the packed XML file format */
+@js.native
 trait XDocumentRevisionListPersistence extends XInterface {
   /**
     * Loads a list of available revisions from a storage
     *
     * This method does not load any revision itself
     */
-  def load(Storage: XStorage): SafeArray[RevisionTag]
+  def load(Storage: XStorage): SafeArray[RevisionTag] = js.native
   /**
     * Stores a list of available revisions to a storage
     *
     * This method does not store revisions themselves
     */
-  def store(Storage: XStorage, List: SeqEquiv[RevisionTag]): Unit
+  def store(Storage: XStorage, List: SeqEquiv[RevisionTag]): Unit = js.native
 }
 
 object XDocumentRevisionListPersistence {
@@ -38,5 +39,22 @@ object XDocumentRevisionListPersistence {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), load = js.Any.fromFunction1(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), store = js.Any.fromFunction2(store))
     __obj.asInstanceOf[XDocumentRevisionListPersistence]
   }
+  @scala.inline
+  implicit class XDocumentRevisionListPersistenceOps[Self <: XDocumentRevisionListPersistence] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoad(value: XStorage => SafeArray[RevisionTag]): Self = this.set("load", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStore(value: (XStorage, SeqEquiv[RevisionTag]) => Unit): Self = this.set("store", js.Any.fromFunction2(value))
+  }
+  
 }
 

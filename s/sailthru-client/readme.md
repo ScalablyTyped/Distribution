@@ -12,7 +12,7 @@ Node.js client for Sailthru API
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 51547 |
+| # downloads        | 51423 |
 | # stars            | 0 |
 
 ## Links

@@ -18,11 +18,30 @@ trait Websocket extends js.Object {
 
 object Websocket {
   @scala.inline
-  def apply(ConnectionExpiry: ISO8601Datetime = null, Url: PreSignedConnectionUrl = null): Websocket = {
+  def apply(): Websocket = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionExpiry != null) __obj.updateDynamic("ConnectionExpiry")(ConnectionExpiry.asInstanceOf[js.Any])
-    if (Url != null) __obj.updateDynamic("Url")(Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Websocket]
   }
+  @scala.inline
+  implicit class WebsocketOps[Self <: Websocket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionExpiry(value: ISO8601Datetime): Self = this.set("ConnectionExpiry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionExpiry: Self = this.set("ConnectionExpiry", js.undefined)
+    @scala.inline
+    def setUrl(value: PreSignedConnectionUrl): Self = this.set("Url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("Url", js.undefined)
+  }
+  
 }
 

@@ -4,33 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OscillatorOptions extends AudioNodeOptions {
-  var detune: js.UndefOr[Double] = js.undefined
-  var frequency: js.UndefOr[Double] = js.undefined
-  var periodicWave: js.UndefOr[PeriodicWave] = js.undefined
-  var `type`: js.UndefOr[OscillatorType] = js.undefined
+  var detune: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.native
+  var periodicWave: js.UndefOr[PeriodicWave] = js.native
+  var `type`: js.UndefOr[OscillatorType] = js.native
 }
 
 object OscillatorOptions {
   @scala.inline
-  def apply(
-    channelCount: js.UndefOr[Double] = js.undefined,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    detune: js.UndefOr[Double] = js.undefined,
-    frequency: js.UndefOr[Double] = js.undefined,
-    periodicWave: PeriodicWave = null,
-    `type`: OscillatorType = null
-  ): OscillatorOptions = {
+  def apply(): OscillatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(channelCount)) __obj.updateDynamic("channelCount")(channelCount.get.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (!js.isUndefined(detune)) __obj.updateDynamic("detune")(detune.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frequency)) __obj.updateDynamic("frequency")(frequency.get.asInstanceOf[js.Any])
-    if (periodicWave != null) __obj.updateDynamic("periodicWave")(periodicWave.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OscillatorOptions]
   }
+  @scala.inline
+  implicit class OscillatorOptionsOps[Self <: OscillatorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetune(value: Double): Self = this.set("detune", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetune: Self = this.set("detune", js.undefined)
+    @scala.inline
+    def setFrequency(value: Double): Self = this.set("frequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequency: Self = this.set("frequency", js.undefined)
+    @scala.inline
+    def setPeriodicWave(value: PeriodicWave): Self = this.set("periodicWave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodicWave: Self = this.set("periodicWave", js.undefined)
+    @scala.inline
+    def setType(value: OscillatorType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

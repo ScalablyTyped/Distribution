@@ -48,7 +48,7 @@ object profilerMod extends js.Object {
     def this(backendTimer: BackendTimer) = this()
     def this(backendTimer: BackendTimer, logger: Logger) = this()
     var backendTimer: js.Any = js.native
-    var logger: js.UndefOr[js.Any] = js.native
+    var logger: js.Any = js.native
     def profileKernel(kernelName: String, inputs: NamedTensorMap, f: js.Function0[js.Array[Tensor[Rank]]]): js.Array[Tensor[Rank]] = js.native
   }
   

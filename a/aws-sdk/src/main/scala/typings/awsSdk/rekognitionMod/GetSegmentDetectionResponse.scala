@@ -38,24 +38,58 @@ trait GetSegmentDetectionResponse extends js.Object {
 
 object GetSegmentDetectionResponse {
   @scala.inline
-  def apply(
-    AudioMetadata: AudioMetadataList = null,
-    JobStatus: VideoJobStatus = null,
-    NextToken: PaginationToken = null,
-    Segments: SegmentDetections = null,
-    SelectedSegmentTypes: SegmentTypesInfo = null,
-    StatusMessage: StatusMessage = null,
-    VideoMetadata: VideoMetadataList = null
-  ): GetSegmentDetectionResponse = {
+  def apply(): GetSegmentDetectionResponse = {
     val __obj = js.Dynamic.literal()
-    if (AudioMetadata != null) __obj.updateDynamic("AudioMetadata")(AudioMetadata.asInstanceOf[js.Any])
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Segments != null) __obj.updateDynamic("Segments")(Segments.asInstanceOf[js.Any])
-    if (SelectedSegmentTypes != null) __obj.updateDynamic("SelectedSegmentTypes")(SelectedSegmentTypes.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
-    if (VideoMetadata != null) __obj.updateDynamic("VideoMetadata")(VideoMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentDetectionResponse]
   }
+  @scala.inline
+  implicit class GetSegmentDetectionResponseOps[Self <: GetSegmentDetectionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioMetadataVarargs(value: AudioMetadata*): Self = this.set("AudioMetadata", js.Array(value :_*))
+    @scala.inline
+    def setAudioMetadata(value: AudioMetadataList): Self = this.set("AudioMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioMetadata: Self = this.set("AudioMetadata", js.undefined)
+    @scala.inline
+    def setJobStatus(value: VideoJobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSegmentsVarargs(value: SegmentDetection*): Self = this.set("Segments", js.Array(value :_*))
+    @scala.inline
+    def setSegments(value: SegmentDetections): Self = this.set("Segments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegments: Self = this.set("Segments", js.undefined)
+    @scala.inline
+    def setSelectedSegmentTypesVarargs(value: SegmentTypeInfo*): Self = this.set("SelectedSegmentTypes", js.Array(value :_*))
+    @scala.inline
+    def setSelectedSegmentTypes(value: SegmentTypesInfo): Self = this.set("SelectedSegmentTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedSegmentTypes: Self = this.set("SelectedSegmentTypes", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: StatusMessage): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+    @scala.inline
+    def setVideoMetadataVarargs(value: VideoMetadata*): Self = this.set("VideoMetadata", js.Array(value :_*))
+    @scala.inline
+    def setVideoMetadata(value: VideoMetadataList): Self = this.set("VideoMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoMetadata: Self = this.set("VideoMetadata", js.undefined)
+  }
+  
 }
 

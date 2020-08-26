@@ -46,22 +46,48 @@ trait SchemaExtendedCompensationInfo extends js.Object {
 
 object SchemaExtendedCompensationInfo {
   @scala.inline
-  def apply(
-    annualizedBaseCompensationRange: SchemaExtendedCompensationInfoCompensationRange = null,
-    annualizedBaseCompensationUnspecified: js.UndefOr[Boolean] = js.undefined,
-    annualizedTotalCompensationRange: SchemaExtendedCompensationInfoCompensationRange = null,
-    annualizedTotalCompensationUnspecified: js.UndefOr[Boolean] = js.undefined,
-    currency: String = null,
-    entries: js.Array[SchemaExtendedCompensationInfoCompensationEntry] = null
-  ): SchemaExtendedCompensationInfo = {
+  def apply(): SchemaExtendedCompensationInfo = {
     val __obj = js.Dynamic.literal()
-    if (annualizedBaseCompensationRange != null) __obj.updateDynamic("annualizedBaseCompensationRange")(annualizedBaseCompensationRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(annualizedBaseCompensationUnspecified)) __obj.updateDynamic("annualizedBaseCompensationUnspecified")(annualizedBaseCompensationUnspecified.get.asInstanceOf[js.Any])
-    if (annualizedTotalCompensationRange != null) __obj.updateDynamic("annualizedTotalCompensationRange")(annualizedTotalCompensationRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(annualizedTotalCompensationUnspecified)) __obj.updateDynamic("annualizedTotalCompensationUnspecified")(annualizedTotalCompensationUnspecified.get.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtendedCompensationInfo]
   }
+  @scala.inline
+  implicit class SchemaExtendedCompensationInfoOps[Self <: SchemaExtendedCompensationInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnualizedBaseCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = this.set("annualizedBaseCompensationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnualizedBaseCompensationRange: Self = this.set("annualizedBaseCompensationRange", js.undefined)
+    @scala.inline
+    def setAnnualizedBaseCompensationUnspecified(value: Boolean): Self = this.set("annualizedBaseCompensationUnspecified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnualizedBaseCompensationUnspecified: Self = this.set("annualizedBaseCompensationUnspecified", js.undefined)
+    @scala.inline
+    def setAnnualizedTotalCompensationRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = this.set("annualizedTotalCompensationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnualizedTotalCompensationRange: Self = this.set("annualizedTotalCompensationRange", js.undefined)
+    @scala.inline
+    def setAnnualizedTotalCompensationUnspecified(value: Boolean): Self = this.set("annualizedTotalCompensationUnspecified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnualizedTotalCompensationUnspecified: Self = this.set("annualizedTotalCompensationUnspecified", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setEntriesVarargs(value: SchemaExtendedCompensationInfoCompensationEntry*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[SchemaExtendedCompensationInfoCompensationEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+  }
+  
 }
 

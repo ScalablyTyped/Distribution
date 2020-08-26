@@ -12,7 +12,7 @@ Bit twiddling hacks for JavaScript
 | Keywords           | bit, twiddle, hacks, graphics, logarithm, exponent, base 2, binary, arithmetic, octree, quadtree, math, nextPow2, log, shift, combination, permutation, trailing, zero, one, interleave, revere, parity, population, count, exponent, power, sign, min, max |
 | # releases         | 0 |
 | # dependents       | 55 |
-| # downloads        | 5325759 |
+| # downloads        | 5488163 |
 | # stars            | 0 |
 
 ## Links

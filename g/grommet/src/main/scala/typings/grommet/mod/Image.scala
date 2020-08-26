@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Image")
+@JSImport("grommet/es6", "Image")
 @js.native
 object Image extends TopLevel[
       FC[

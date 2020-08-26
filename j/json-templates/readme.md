@@ -11,8 +11,8 @@ Simple JSON value templating.
 | Full name          | json-templates |
 | Keywords           | json, template |
 | # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 98260 |
+| # dependents       | 4 |
+| # downloads        | 87684 |
 | # stars            | 0 |
 
 ## Links

@@ -30,6 +30,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaExpansionFile] = js.native
   def get(callback: BodyResponseCallback[SchemaExpansionFile]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExpansionFile] = js.native
   def get(params: ParamsResourceEditsExpansionfilesGet): GaxiosPromise[SchemaExpansionFile] = js.native
   def get(params: ParamsResourceEditsExpansionfilesGet, callback: BodyResponseCallback[SchemaExpansionFile]): Unit = js.native
   def get(
@@ -63,6 +64,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaExpansionFile] = js.native
   def patch(callback: BodyResponseCallback[SchemaExpansionFile]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExpansionFile] = js.native
   def patch(params: ParamsResourceEditsExpansionfilesPatch): GaxiosPromise[SchemaExpansionFile] = js.native
   def patch(
     params: ParamsResourceEditsExpansionfilesPatch,
@@ -98,6 +100,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaExpansionFile] = js.native
   def update(callback: BodyResponseCallback[SchemaExpansionFile]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExpansionFile] = js.native
   def update(params: ParamsResourceEditsExpansionfilesUpdate): GaxiosPromise[SchemaExpansionFile] = js.native
   def update(
     params: ParamsResourceEditsExpansionfilesUpdate,
@@ -134,6 +137,7 @@ class ResourceEditsExpansionfiles protected () extends js.Object {
     */
   def upload(): GaxiosPromise[SchemaExpansionFilesUploadResponse] = js.native
   def upload(callback: BodyResponseCallback[SchemaExpansionFilesUploadResponse]): Unit = js.native
+  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExpansionFilesUploadResponse] = js.native
   def upload(params: ParamsResourceEditsExpansionfilesUpload): GaxiosPromise[SchemaExpansionFilesUploadResponse] = js.native
   def upload(
     params: ParamsResourceEditsExpansionfilesUpload,

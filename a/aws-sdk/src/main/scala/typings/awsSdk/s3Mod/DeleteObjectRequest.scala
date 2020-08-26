@@ -31,20 +31,42 @@ trait DeleteObjectRequest extends js.Object {
 
 object DeleteObjectRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Key: ObjectKey,
-    BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined,
-    MFA: MFA = null,
-    RequestPayer: RequestPayer = null,
-    VersionId: ObjectVersionId = null
-  ): DeleteObjectRequest = {
+  def apply(Bucket: BucketName, Key: ObjectKey): DeleteObjectRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (!js.isUndefined(BypassGovernanceRetention)) __obj.updateDynamic("BypassGovernanceRetention")(BypassGovernanceRetention.get.asInstanceOf[js.Any])
-    if (MFA != null) __obj.updateDynamic("MFA")(MFA.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteObjectRequest]
   }
+  @scala.inline
+  implicit class DeleteObjectRequestOps[Self <: DeleteObjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBypassGovernanceRetention(value: BypassGovernanceRetention): Self = this.set("BypassGovernanceRetention", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBypassGovernanceRetention: Self = this.set("BypassGovernanceRetention", js.undefined)
+    @scala.inline
+    def setMFA(value: MFA): Self = this.set("MFA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMFA: Self = this.set("MFA", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

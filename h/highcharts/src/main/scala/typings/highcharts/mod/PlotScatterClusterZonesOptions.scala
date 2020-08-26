@@ -4,41 +4,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlotScatterClusterZonesOptions extends js.Object {
   /**
     * (Highcharts, Highmaps) Styled mode only. A custom class name for the
     * zone.
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highmaps) The value where the zone starts.
     */
-  var from: js.UndefOr[Double] = js.undefined
+  var from: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highmaps) Settings for the cluster marker belonging to the
     * zone.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
   /**
     * (Highcharts, Highmaps) The value where the zone ends.
     */
-  var to: js.UndefOr[Double] = js.undefined
+  var to: js.UndefOr[Double] = js.native
 }
 
 object PlotScatterClusterZonesOptions {
   @scala.inline
-  def apply(
-    className: String = null,
-    from: js.UndefOr[Double] = js.undefined,
-    marker: PointMarkerOptionsObject = null,
-    to: js.UndefOr[Double] = js.undefined
-  ): PlotScatterClusterZonesOptions = {
+  def apply(): PlotScatterClusterZonesOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotScatterClusterZonesOptions]
   }
+  @scala.inline
+  implicit class PlotScatterClusterZonesOptionsOps[Self <: PlotScatterClusterZonesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setMarker(value: PointMarkerOptionsObject): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

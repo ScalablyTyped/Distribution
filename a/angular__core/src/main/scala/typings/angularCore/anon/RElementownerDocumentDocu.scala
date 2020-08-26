@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined @angular/core.@angular/core.RElement & {  ownerDocument  :std.Document} */
+/* Inlined @angular/core.@angular/core.RElement & {  ownerDocument :std.Document} */
 @js.native
 trait RElementownerDocumentDocu extends js.Object {
   var classList: RDomTokenList = js.native
@@ -53,6 +53,7 @@ trait RElementownerDocumentDocu extends js.Object {
     */
   def removeChild(oldChild: RNode): RNode = js.native
   def removeEventListener(`type`: String): Unit = js.native
+  def removeEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
   def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
   def removeEventListener(`type`: String, listener: EventListener, options: Boolean): Unit = js.native
   def setAttribute(name: String, value: String): Unit = js.native

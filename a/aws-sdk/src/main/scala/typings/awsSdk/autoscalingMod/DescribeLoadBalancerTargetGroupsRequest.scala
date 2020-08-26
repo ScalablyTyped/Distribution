@@ -22,15 +22,32 @@ trait DescribeLoadBalancerTargetGroupsRequest extends js.Object {
 
 object DescribeLoadBalancerTargetGroupsRequest {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: ResourceName,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
-    NextToken: XmlString = null
-  ): DescribeLoadBalancerTargetGroupsRequest = {
+  def apply(AutoScalingGroupName: ResourceName): DescribeLoadBalancerTargetGroupsRequest = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLoadBalancerTargetGroupsRequest]
   }
+  @scala.inline
+  implicit class DescribeLoadBalancerTargetGroupsRequestOps[Self <: DescribeLoadBalancerTargetGroupsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -266,7 +266,11 @@ trait Document extends js.Object {
   def ApplyTheme(Name: String): Unit = js.native
   def AutoFormat(): Unit = js.native
   def AutoSummarize(): Range = js.native
+  def AutoSummarize(Length: js.UndefOr[scala.Nothing], Mode: js.UndefOr[scala.Nothing], UpdateProperties: js.Any): Range = js.native
+  def AutoSummarize(Length: js.UndefOr[scala.Nothing], Mode: js.Any): Range = js.native
+  def AutoSummarize(Length: js.UndefOr[scala.Nothing], Mode: js.Any, UpdateProperties: js.Any): Range = js.native
   def AutoSummarize(Length: js.Any): Range = js.native
+  def AutoSummarize(Length: js.Any, Mode: js.UndefOr[scala.Nothing], UpdateProperties: js.Any): Range = js.native
   def AutoSummarize(Length: js.Any, Mode: js.Any): Range = js.native
   def AutoSummarize(Length: js.Any, Mode: js.Any, UpdateProperties: js.Any): Range = js.native
   def BuiltInDocumentProperties(index: String): DocumentProperty[typings.activexWord.Word.Application] = js.native
@@ -279,7 +283,11 @@ trait Document extends js.Object {
     * @param boolean [MakePublic=false]
     */
   def CheckIn(): Unit = js.native
+  def CheckIn(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.UndefOr[scala.Nothing], MakePublic: Boolean): Unit = js.native
+  def CheckIn(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: Boolean): Unit = js.native
   def CheckIn(SaveChanges: Boolean): Unit = js.native
+  def CheckIn(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: Boolean): Unit = js.native
   def CheckIn(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
   def CheckIn(SaveChanges: Boolean, Comments: js.Any, MakePublic: Boolean): Unit = js.native
   /**
@@ -287,8 +295,44 @@ trait Document extends js.Object {
     * @param boolean [MakePublic=false]
     */
   def CheckInWithVersion(): Unit = js.native
+  def CheckInWithVersion(
+    SaveChanges: js.UndefOr[scala.Nothing],
+    Comments: js.UndefOr[scala.Nothing],
+    MakePublic: js.UndefOr[scala.Nothing],
+    VersionType: js.Any
+  ): Unit = js.native
+  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.UndefOr[scala.Nothing], MakePublic: Boolean): Unit = js.native
+  def CheckInWithVersion(
+    SaveChanges: js.UndefOr[scala.Nothing],
+    Comments: js.UndefOr[scala.Nothing],
+    MakePublic: Boolean,
+    VersionType: js.Any
+  ): Unit = js.native
+  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any): Unit = js.native
+  def CheckInWithVersion(
+    SaveChanges: js.UndefOr[scala.Nothing],
+    Comments: js.Any,
+    MakePublic: js.UndefOr[scala.Nothing],
+    VersionType: js.Any
+  ): Unit = js.native
+  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: Boolean): Unit = js.native
+  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: Boolean, VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean): Unit = js.native
+  def CheckInWithVersion(
+    SaveChanges: Boolean,
+    Comments: js.UndefOr[scala.Nothing],
+    MakePublic: js.UndefOr[scala.Nothing],
+    VersionType: js.Any
+  ): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: Boolean): Unit = js.native
+  def CheckInWithVersion(
+    SaveChanges: Boolean,
+    Comments: js.UndefOr[scala.Nothing],
+    MakePublic: Boolean,
+    VersionType: js.Any
+  ): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.UndefOr[scala.Nothing], VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Boolean): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Boolean, VersionType: js.Any): Unit = js.native
   def CheckNewSmartTags(): Unit = js.native
@@ -307,7 +351,15 @@ trait Document extends js.Object {
     CustomDictionary10: js.UndefOr[js.Any]
   ): Unit = js.native
   def Close(): Unit = js.native
+  def Close(
+    SaveChanges: js.UndefOr[scala.Nothing],
+    OriginalFormat: js.UndefOr[scala.Nothing],
+    RouteDocument: js.Any
+  ): Unit = js.native
+  def Close(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any): Unit = js.native
+  def Close(SaveChanges: js.UndefOr[scala.Nothing], OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any): Unit = js.native
+  def Close(SaveChanges: js.Any, OriginalFormat: js.UndefOr[scala.Nothing], RouteDocument: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any, OriginalFormat: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any, OriginalFormat: js.Any, RouteDocument: js.Any): Unit = js.native
   def ClosePrintPreview(): Unit = js.native
@@ -325,9 +377,197 @@ trait Document extends js.Object {
   ): Unit = js.native
   def Compare2000(Name: String): Unit = js.native
   def Compare2002(Name: String): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(Name: String, AuthorName: js.UndefOr[scala.Nothing], CompareTarget: js.Any): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.UndefOr[scala.Nothing],
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Compare2002(Name: String, AuthorName: js.Any): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Compare2002(Name: String, AuthorName: js.Any, CompareTarget: js.Any): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any
+  ): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    IgnoreAllComparisonWarnings: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Compare2002(Name: String, AuthorName: js.Any, CompareTarget: js.Any, DetectFormatChanges: js.Any): Unit = js.native
+  def Compare2002(
+    Name: String,
+    AuthorName: js.Any,
+    CompareTarget: js.Any,
+    DetectFormatChanges: js.Any,
+    IgnoreAllComparisonWarnings: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Compare2002(
     Name: String,
     AuthorName: js.Any,
@@ -355,6 +595,7 @@ trait Document extends js.Object {
   def ConvertVietDoc(CodePageOrigin: Double): Unit = js.native
   def CopyStylesFromTemplate(Template: String): Unit = js.native
   def CountNumberedItems(): Double = js.native
+  def CountNumberedItems(NumberType: js.UndefOr[scala.Nothing], Level: js.Any): Double = js.native
   def CountNumberedItems(NumberType: js.Any): Double = js.native
   def CountNumberedItems(NumberType: js.Any, Level: js.Any): Double = js.native
   def CreateLetterContent(
@@ -457,16 +698,100 @@ trait Document extends js.Object {
   def GetWorkflowTasks(): WorkflowTasks = js.native
   def GetWorkflowTemplates(): WorkflowTemplates = js.native
   def GoTo(): Range = js.native
+  def GoTo(
+    What: js.UndefOr[scala.Nothing],
+    Which: js.UndefOr[scala.Nothing],
+    Count: js.UndefOr[scala.Nothing],
+    Name: js.Any
+  ): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.UndefOr[scala.Nothing], Count: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.UndefOr[scala.Nothing], Count: js.Any, Name: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.UndefOr[scala.Nothing], Name: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.Any): Range = js.native
+  def GoTo(What: js.UndefOr[scala.Nothing], Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
   def GoTo(What: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.UndefOr[scala.Nothing], Name: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.UndefOr[scala.Nothing], Count: js.Any, Name: js.Any): Range = js.native
   def GoTo(What: js.Any, Which: js.Any): Range = js.native
+  def GoTo(What: js.Any, Which: js.Any, Count: js.UndefOr[scala.Nothing], Name: js.Any): Range = js.native
   def GoTo(What: js.Any, Which: js.Any, Count: js.Any): Range = js.native
   def GoTo(What: js.Any, Which: js.Any, Count: js.Any, Name: js.Any): Range = js.native
   def LockServerFile(): Unit = js.native
   def MakeCompatibilityDefault(): Unit = js.native
   def ManualHyphenation(): Unit = js.native
   def Merge(FileName: String): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    UseFormattingFrom: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    UseFormattingFrom: js.Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    UseFormattingFrom: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Merge(FileName: String, MergeTarget: js.UndefOr[scala.Nothing], DetectFormatChanges: js.Any): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    UseFormattingFrom: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    UseFormattingFrom: js.Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.UndefOr[scala.Nothing],
+    DetectFormatChanges: js.Any,
+    UseFormattingFrom: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Merge(FileName: String, MergeTarget: js.Any): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    UseFormattingFrom: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    UseFormattingFrom: js.Any
+  ): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.Any,
+    DetectFormatChanges: js.UndefOr[scala.Nothing],
+    UseFormattingFrom: js.Any,
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Merge(FileName: String, MergeTarget: js.Any, DetectFormatChanges: js.Any): Unit = js.native
+  def Merge(
+    FileName: String,
+    MergeTarget: js.Any,
+    DetectFormatChanges: js.Any,
+    UseFormattingFrom: js.UndefOr[scala.Nothing],
+    AddToRecentFiles: js.Any
+  ): Unit = js.native
   def Merge(FileName: String, MergeTarget: js.Any, DetectFormatChanges: js.Any, UseFormattingFrom: js.Any): Unit = js.native
   def Merge(
     FileName: String,
@@ -537,8 +862,66 @@ trait Document extends js.Object {
   ): Unit = js.native
   def PrintPreview(): Unit = js.native
   def Protect(Type: WdProtectionType): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    UseIRM: js.UndefOr[scala.Nothing],
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    UseIRM: js.Any
+  ): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.UndefOr[scala.Nothing],
+    Password: js.UndefOr[scala.Nothing],
+    UseIRM: js.Any,
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: js.UndefOr[scala.Nothing], Password: js.Any): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.UndefOr[scala.Nothing],
+    Password: js.Any,
+    UseIRM: js.UndefOr[scala.Nothing],
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: js.UndefOr[scala.Nothing], Password: js.Any, UseIRM: js.Any): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.UndefOr[scala.Nothing],
+    Password: js.Any,
+    UseIRM: js.Any,
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
   def Protect(Type: WdProtectionType, NoReset: js.Any): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.Any,
+    Password: js.UndefOr[scala.Nothing],
+    UseIRM: js.UndefOr[scala.Nothing],
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
+  def Protect(Type: WdProtectionType, NoReset: js.Any, Password: js.UndefOr[scala.Nothing], UseIRM: js.Any): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.Any,
+    Password: js.UndefOr[scala.Nothing],
+    UseIRM: js.Any,
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
   def Protect(Type: WdProtectionType, NoReset: js.Any, Password: js.Any): Unit = js.native
+  def Protect(
+    Type: WdProtectionType,
+    NoReset: js.Any,
+    Password: js.Any,
+    UseIRM: js.UndefOr[scala.Nothing],
+    EnforceStyleLock: js.Any
+  ): Unit = js.native
   def Protect(Type: WdProtectionType, NoReset: js.Any, Password: js.Any, UseIRM: js.Any): Unit = js.native
   def Protect(
     Type: WdProtectionType,
@@ -548,9 +931,11 @@ trait Document extends js.Object {
     EnforceStyleLock: js.Any
   ): Unit = js.native
   def Protect2002(Type: WdProtectionType): Unit = js.native
+  def Protect2002(Type: WdProtectionType, NoReset: js.UndefOr[scala.Nothing], Password: js.Any): Unit = js.native
   def Protect2002(Type: WdProtectionType, NoReset: js.Any): Unit = js.native
   def Protect2002(Type: WdProtectionType, NoReset: js.Any, Password: js.Any): Unit = js.native
   def Range(): typings.activexWord.Word.Range = js.native
+  def Range(Start: js.UndefOr[scala.Nothing], End: Double): typings.activexWord.Word.Range = js.native
   def Range(Start: Double): typings.activexWord.Word.Range = js.native
   def Range(Start: Double, End: Double): typings.activexWord.Word.Range = js.native
   def RecheckSmartTags(): Unit = js.native
@@ -576,6 +961,7 @@ trait Document extends js.Object {
   def Route(): Unit = js.native
   def RunAutoMacro(Which: WdAutoMacros): Unit = js.native
   def RunLetterWizard(): Unit = js.native
+  def RunLetterWizard(LetterContent: js.UndefOr[scala.Nothing], WizardMode: js.Any): Unit = js.native
   def RunLetterWizard(LetterContent: js.Any): Unit = js.native
   def RunLetterWizard(LetterContent: js.Any, WizardMode: js.Any): Unit = js.native
   def Save(): Unit = js.native
@@ -642,6 +1028,7 @@ trait Document extends js.Object {
     * @param boolean [FastSearchSkippingTextNodes=true]
     */
   def SelectNodes(XPath: String): typings.activexWord.Word.XMLNodes = js.native
+  def SelectNodes(XPath: String, PrefixMapping: js.UndefOr[scala.Nothing], FastSearchSkippingTextNodes: Boolean): typings.activexWord.Word.XMLNodes = js.native
   def SelectNodes(XPath: String, PrefixMapping: String): typings.activexWord.Word.XMLNodes = js.native
   def SelectNodes(XPath: String, PrefixMapping: String, FastSearchSkippingTextNodes: Boolean): typings.activexWord.Word.XMLNodes = js.native
   /**
@@ -649,6 +1036,7 @@ trait Document extends js.Object {
     * @param boolean [FastSearchSkippingTextNodes=true]
     */
   def SelectSingleNode(XPath: String): XMLNode = js.native
+  def SelectSingleNode(XPath: String, PrefixMapping: js.UndefOr[scala.Nothing], FastSearchSkippingTextNodes: Boolean): XMLNode = js.native
   def SelectSingleNode(XPath: String, PrefixMapping: String): XMLNode = js.native
   def SelectSingleNode(XPath: String, PrefixMapping: String, FastSearchSkippingTextNodes: Boolean): XMLNode = js.native
   /** @param Office.CustomXMLPart [Stream=0] */
@@ -657,16 +1045,67 @@ trait Document extends js.Object {
   def SendFax(Address: String): Unit = js.native
   def SendFax(Address: String, Subject: js.Any): Unit = js.native
   def SendFaxOverInternet(): Unit = js.native
+  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: js.UndefOr[scala.Nothing], ShowMessage: js.Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: js.Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: js.Any, ShowMessage: js.Any): Unit = js.native
   def SendFaxOverInternet(Recipients: js.Any): Unit = js.native
+  def SendFaxOverInternet(Recipients: js.Any, Subject: js.UndefOr[scala.Nothing], ShowMessage: js.Any): Unit = js.native
   def SendFaxOverInternet(Recipients: js.Any, Subject: js.Any): Unit = js.native
   def SendFaxOverInternet(Recipients: js.Any, Subject: js.Any, ShowMessage: js.Any): Unit = js.native
   def SendForReview(): Unit = js.native
+  def SendForReview(
+    Recipients: js.UndefOr[scala.Nothing],
+    Subject: js.UndefOr[scala.Nothing],
+    ShowMessage: js.UndefOr[scala.Nothing],
+    IncludeAttachment: js.Any
+  ): Unit = js.native
+  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: js.UndefOr[scala.Nothing], ShowMessage: js.Any): Unit = js.native
+  def SendForReview(
+    Recipients: js.UndefOr[scala.Nothing],
+    Subject: js.UndefOr[scala.Nothing],
+    ShowMessage: js.Any,
+    IncludeAttachment: js.Any
+  ): Unit = js.native
+  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: js.Any): Unit = js.native
+  def SendForReview(
+    Recipients: js.UndefOr[scala.Nothing],
+    Subject: js.Any,
+    ShowMessage: js.UndefOr[scala.Nothing],
+    IncludeAttachment: js.Any
+  ): Unit = js.native
+  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: js.Any, ShowMessage: js.Any): Unit = js.native
+  def SendForReview(
+    Recipients: js.UndefOr[scala.Nothing],
+    Subject: js.Any,
+    ShowMessage: js.Any,
+    IncludeAttachment: js.Any
+  ): Unit = js.native
   def SendForReview(Recipients: js.Any): Unit = js.native
+  def SendForReview(
+    Recipients: js.Any,
+    Subject: js.UndefOr[scala.Nothing],
+    ShowMessage: js.UndefOr[scala.Nothing],
+    IncludeAttachment: js.Any
+  ): Unit = js.native
+  def SendForReview(Recipients: js.Any, Subject: js.UndefOr[scala.Nothing], ShowMessage: js.Any): Unit = js.native
+  def SendForReview(
+    Recipients: js.Any,
+    Subject: js.UndefOr[scala.Nothing],
+    ShowMessage: js.Any,
+    IncludeAttachment: js.Any
+  ): Unit = js.native
   def SendForReview(Recipients: js.Any, Subject: js.Any): Unit = js.native
+  def SendForReview(
+    Recipients: js.Any,
+    Subject: js.Any,
+    ShowMessage: js.UndefOr[scala.Nothing],
+    IncludeAttachment: js.Any
+  ): Unit = js.native
   def SendForReview(Recipients: js.Any, Subject: js.Any, ShowMessage: js.Any): Unit = js.native
   def SendForReview(Recipients: js.Any, Subject: js.Any, ShowMessage: js.Any, IncludeAttachment: js.Any): Unit = js.native
   def SendMail(): Unit = js.native
   def SendMailer(): Unit = js.native
+  def SendMailer(FileFormat: js.UndefOr[scala.Nothing], Priority: js.Any): Unit = js.native
   def SendMailer(FileFormat: js.Any): Unit = js.native
   def SendMailer(FileFormat: js.Any, Priority: js.Any): Unit = js.native
   def ServerPolicy(Index: String): PolicyItem = js.native

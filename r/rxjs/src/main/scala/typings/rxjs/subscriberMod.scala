@@ -16,6 +16,11 @@ object subscriberMod extends js.Object {
     def this(_parentSubscriber: Subscriber[T], observerOrNext: PartialObserver[T]) = this()
     def this(
       _parentSubscriber: Subscriber[T],
+      observerOrNext: js.UndefOr[scala.Nothing],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
+    ) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
       observerOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
@@ -26,8 +31,32 @@ object subscriberMod extends js.Object {
     ) = this()
     def this(
       _parentSubscriber: Subscriber[T],
+      observerOrNext: js.UndefOr[scala.Nothing],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
+      observerOrNext: js.UndefOr[scala.Nothing],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
+      observerOrNext: js.Function1[/* value */ T, Unit],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
       observerOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      _parentSubscriber: Subscriber[T],
+      observerOrNext: PartialObserver[T],
+      error: js.UndefOr[scala.Nothing],
       complete: js.Function0[Unit]
     ) = this()
     def this(
@@ -58,13 +87,37 @@ object subscriberMod extends js.Object {
     def this(destinationOrNext: js.Function1[/* value */ T, Unit]) = this()
     def this(destinationOrNext: PartialObserver[_]) = this()
     def this(
+      destinationOrNext: js.UndefOr[scala.Nothing],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
+    ) = this()
+    def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]
     ) = this()
     def this(destinationOrNext: PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]) = this()
     def this(
+      destinationOrNext: js.UndefOr[scala.Nothing],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      destinationOrNext: js.UndefOr[scala.Nothing],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      destinationOrNext: js.Function1[/* value */ T, Unit],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
       destinationOrNext: js.Function1[/* value */ T, Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ) = this()
+    def this(
+      destinationOrNext: PartialObserver[_],
+      error: js.UndefOr[scala.Nothing],
       complete: js.Function0[Unit]
     ) = this()
     def this(
@@ -125,7 +178,19 @@ object subscriberMod extends js.Object {
       * @nocollapse
       */
     def create[T](): Subscriber[T] = js.native
+    def create[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): Subscriber[T] = js.native
+    def create[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]): Subscriber[T] = js.native
+    def create[T](
+      next: js.UndefOr[scala.Nothing],
+      error: js.Function1[/* e */ js.UndefOr[js.Any], Unit],
+      complete: js.Function0[Unit]
+    ): Subscriber[T] = js.native
     def create[T](next: js.Function1[/* x */ js.UndefOr[T], Unit]): Subscriber[T] = js.native
+    def create[T](
+      next: js.Function1[/* x */ js.UndefOr[T], Unit],
+      error: js.UndefOr[scala.Nothing],
+      complete: js.Function0[Unit]
+    ): Subscriber[T] = js.native
     def create[T](
       next: js.Function1[/* x */ js.UndefOr[T], Unit],
       error: js.Function1[/* e */ js.UndefOr[js.Any], Unit]

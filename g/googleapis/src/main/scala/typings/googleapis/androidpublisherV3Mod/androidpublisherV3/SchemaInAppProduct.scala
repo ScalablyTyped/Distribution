@@ -68,34 +68,70 @@ trait SchemaInAppProduct extends js.Object {
 
 object SchemaInAppProduct {
   @scala.inline
-  def apply(
-    defaultLanguage: String = null,
-    defaultPrice: SchemaPrice = null,
-    gracePeriod: String = null,
-    listings: StringDictionary[SchemaInAppProductListing] = null,
-    packageName: String = null,
-    prices: StringDictionary[SchemaPrice] = null,
-    purchaseType: String = null,
-    season: SchemaSeason = null,
-    sku: String = null,
-    status: String = null,
-    subscriptionPeriod: String = null,
-    trialPeriod: String = null
-  ): SchemaInAppProduct = {
+  def apply(): SchemaInAppProduct = {
     val __obj = js.Dynamic.literal()
-    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage.asInstanceOf[js.Any])
-    if (defaultPrice != null) __obj.updateDynamic("defaultPrice")(defaultPrice.asInstanceOf[js.Any])
-    if (gracePeriod != null) __obj.updateDynamic("gracePeriod")(gracePeriod.asInstanceOf[js.Any])
-    if (listings != null) __obj.updateDynamic("listings")(listings.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
-    if (prices != null) __obj.updateDynamic("prices")(prices.asInstanceOf[js.Any])
-    if (purchaseType != null) __obj.updateDynamic("purchaseType")(purchaseType.asInstanceOf[js.Any])
-    if (season != null) __obj.updateDynamic("season")(season.asInstanceOf[js.Any])
-    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (subscriptionPeriod != null) __obj.updateDynamic("subscriptionPeriod")(subscriptionPeriod.asInstanceOf[js.Any])
-    if (trialPeriod != null) __obj.updateDynamic("trialPeriod")(trialPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInAppProduct]
   }
+  @scala.inline
+  implicit class SchemaInAppProductOps[Self <: SchemaInAppProduct] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultLanguage(value: String): Self = this.set("defaultLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLanguage: Self = this.set("defaultLanguage", js.undefined)
+    @scala.inline
+    def setDefaultPrice(value: SchemaPrice): Self = this.set("defaultPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPrice: Self = this.set("defaultPrice", js.undefined)
+    @scala.inline
+    def setGracePeriod(value: String): Self = this.set("gracePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGracePeriod: Self = this.set("gracePeriod", js.undefined)
+    @scala.inline
+    def setListings(value: StringDictionary[SchemaInAppProductListing]): Self = this.set("listings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListings: Self = this.set("listings", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+    @scala.inline
+    def setPrices(value: StringDictionary[SchemaPrice]): Self = this.set("prices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrices: Self = this.set("prices", js.undefined)
+    @scala.inline
+    def setPurchaseType(value: String): Self = this.set("purchaseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchaseType: Self = this.set("purchaseType", js.undefined)
+    @scala.inline
+    def setSeason(value: SchemaSeason): Self = this.set("season", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeason: Self = this.set("season", js.undefined)
+    @scala.inline
+    def setSku(value: String): Self = this.set("sku", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSku: Self = this.set("sku", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSubscriptionPeriod(value: String): Self = this.set("subscriptionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionPeriod: Self = this.set("subscriptionPeriod", js.undefined)
+    @scala.inline
+    def setTrialPeriod(value: String): Self = this.set("trialPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialPeriod: Self = this.set("trialPeriod", js.undefined)
+  }
+  
 }
 

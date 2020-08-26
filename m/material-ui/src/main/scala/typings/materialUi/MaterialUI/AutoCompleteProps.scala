@@ -7,170 +7,134 @@ import typings.materialUi.anon.Text
 import typings.react.mod.CSSProperties
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
-import typings.react.mod.KeyboardEvent
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoCompleteProps[DataItem] extends TextFieldProps {
-  var anchorOrigin: js.UndefOr[origin] = js.undefined
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
-  var dataSource: js.Array[DataItem]
-  var dataSourceConfig: js.UndefOr[Text] = js.undefined
-  var disableFocusRipple: js.UndefOr[Boolean] = js.undefined
+  var anchorOrigin: js.UndefOr[origin] = js.native
+  var animated: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+  var dataSource: js.Array[DataItem] = js.native
+  var dataSourceConfig: js.UndefOr[Text] = js.native
+  var disableFocusRipple: js.UndefOr[Boolean] = js.native
   var filter: js.UndefOr[
     js.Function3[/* searchText */ String, /* key */ String, /* item */ DataItem, Boolean]
-  ] = js.undefined
-  var listStyle: js.UndefOr[CSSProperties] = js.undefined
-  var maxSearchResults: js.UndefOr[Double] = js.undefined
-  var menuCloseDelay: js.UndefOr[Double] = js.undefined
-  var menuProps: js.UndefOr[js.Any] = js.undefined
-  var menuStyle: js.UndefOr[CSSProperties] = js.undefined
-  var onNewRequest: js.UndefOr[js.Function2[/* chosenRequest */ DataItem, /* index */ Double, Unit]] = js.undefined
-  var onUpdateInput: js.UndefOr[js.Function2[/* searchText */ String, /* dataSource */ js.Array[DataItem], Unit]] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var openOnFocus: js.UndefOr[Boolean] = js.undefined
-  var popoverProps: js.UndefOr[PopoverProps] = js.undefined
-  var searchText: js.UndefOr[String] = js.undefined
-  var targetOrigin: js.UndefOr[origin] = js.undefined
-  var textFieldStyle: js.UndefOr[CSSProperties] = js.undefined
+  ] = js.native
+  var listStyle: js.UndefOr[CSSProperties] = js.native
+  var maxSearchResults: js.UndefOr[Double] = js.native
+  var menuCloseDelay: js.UndefOr[Double] = js.native
+  var menuProps: js.UndefOr[js.Any] = js.native
+  var menuStyle: js.UndefOr[CSSProperties] = js.native
+  var onNewRequest: js.UndefOr[js.Function2[/* chosenRequest */ DataItem, /* index */ Double, Unit]] = js.native
+  var onUpdateInput: js.UndefOr[js.Function2[/* searchText */ String, /* dataSource */ js.Array[DataItem], Unit]] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var openOnFocus: js.UndefOr[Boolean] = js.native
+  var popoverProps: js.UndefOr[PopoverProps] = js.native
+  var searchText: js.UndefOr[String] = js.native
+  var targetOrigin: js.UndefOr[origin] = js.native
+  var textFieldStyle: js.UndefOr[CSSProperties] = js.native
 }
 
 object AutoCompleteProps {
   @scala.inline
-  def apply[DataItem](
-    dataSource: js.Array[DataItem],
-    anchorOrigin: origin = null,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animation: ComponentClass[PopoverAnimationProps, ComponentState] = null,
-    autoComplete: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    dataSourceConfig: Text = null,
-    defaultValue: String | Double = null,
-    disableFocusRipple: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    errorStyle: CSSProperties = null,
-    errorText: ReactNode = null,
-    filter: (/* searchText */ String, /* key */ String, /* item */ DataItem) => Boolean = null,
-    floatingLabelFixed: js.UndefOr[Boolean] = js.undefined,
-    floatingLabelFocusStyle: CSSProperties = null,
-    floatingLabelShrinkStyle: CSSProperties = null,
-    floatingLabelStyle: CSSProperties = null,
-    floatingLabelText: ReactNode = null,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
-    hintStyle: CSSProperties = null,
-    hintText: ReactNode = null,
-    id: String = null,
-    inputStyle: CSSProperties = null,
-    listStyle: CSSProperties = null,
-    max: js.UndefOr[Double] = js.undefined,
-    maxSearchResults: js.UndefOr[Double] = js.undefined,
-    maxlength: String = null,
-    menuCloseDelay: js.UndefOr[Double] = js.undefined,
-    menuProps: js.Any = null,
-    menuStyle: CSSProperties = null,
-    min: js.UndefOr[Double] = js.undefined,
-    minlength: String = null,
-    multiLine: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onBlur: FocusEvent[js.Object] => Unit = null,
-    onChange: (/* e */ FormEvent[js.Object], /* newValue */ String) => Unit = null,
-    onFocus: FocusEvent[js.Object] => Unit = null,
-    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
-    onKeyPress: KeyboardEvent[js.Object] => Unit = null,
-    onKeyUp: KeyboardEvent[js.Object] => Unit = null,
-    onNewRequest: (/* chosenRequest */ DataItem, /* index */ Double) => Unit = null,
-    onUpdateInput: (/* searchText */ String, /* dataSource */ js.Array[DataItem]) => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    openOnFocus: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    popoverProps: PopoverProps = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    rows: js.UndefOr[Double] = js.undefined,
-    rowsMax: js.UndefOr[Double] = js.undefined,
-    searchText: String = null,
-    step: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    targetOrigin: origin = null,
-    textFieldStyle: CSSProperties = null,
-    textareaStyle: CSSProperties = null,
-    title: String = null,
-    `type`: String = null,
-    underlineDisabledStyle: CSSProperties = null,
-    underlineFocusStyle: CSSProperties = null,
-    underlineShow: js.UndefOr[Boolean] = js.undefined,
-    underlineStyle: CSSProperties = null,
-    value: String | Double = null
-  ): AutoCompleteProps[DataItem] = {
+  def apply[DataItem](dataSource: js.Array[DataItem]): AutoCompleteProps[DataItem] = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (dataSourceConfig != null) __obj.updateDynamic("dataSourceConfig")(dataSourceConfig.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocusRipple)) __obj.updateDynamic("disableFocusRipple")(disableFocusRipple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle.asInstanceOf[js.Any])
-    if (errorText != null) __obj.updateDynamic("errorText")(errorText.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction3(filter))
-    if (!js.isUndefined(floatingLabelFixed)) __obj.updateDynamic("floatingLabelFixed")(floatingLabelFixed.get.asInstanceOf[js.Any])
-    if (floatingLabelFocusStyle != null) __obj.updateDynamic("floatingLabelFocusStyle")(floatingLabelFocusStyle.asInstanceOf[js.Any])
-    if (floatingLabelShrinkStyle != null) __obj.updateDynamic("floatingLabelShrinkStyle")(floatingLabelShrinkStyle.asInstanceOf[js.Any])
-    if (floatingLabelStyle != null) __obj.updateDynamic("floatingLabelStyle")(floatingLabelStyle.asInstanceOf[js.Any])
-    if (floatingLabelText != null) __obj.updateDynamic("floatingLabelText")(floatingLabelText.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.get.asInstanceOf[js.Any])
-    if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle.asInstanceOf[js.Any])
-    if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSearchResults)) __obj.updateDynamic("maxSearchResults")(maxSearchResults.get.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (!js.isUndefined(menuCloseDelay)) __obj.updateDynamic("menuCloseDelay")(menuCloseDelay.get.asInstanceOf[js.Any])
-    if (menuProps != null) __obj.updateDynamic("menuProps")(menuProps.asInstanceOf[js.Any])
-    if (menuStyle != null) __obj.updateDynamic("menuStyle")(menuStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiLine)) __obj.updateDynamic("multiLine")(multiLine.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onNewRequest != null) __obj.updateDynamic("onNewRequest")(js.Any.fromFunction2(onNewRequest))
-    if (onUpdateInput != null) __obj.updateDynamic("onUpdateInput")(js.Any.fromFunction2(onUpdateInput))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnFocus)) __obj.updateDynamic("openOnFocus")(openOnFocus.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowsMax)) __obj.updateDynamic("rowsMax")(rowsMax.get.asInstanceOf[js.Any])
-    if (searchText != null) __obj.updateDynamic("searchText")(searchText.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin.asInstanceOf[js.Any])
-    if (textFieldStyle != null) __obj.updateDynamic("textFieldStyle")(textFieldStyle.asInstanceOf[js.Any])
-    if (textareaStyle != null) __obj.updateDynamic("textareaStyle")(textareaStyle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (underlineDisabledStyle != null) __obj.updateDynamic("underlineDisabledStyle")(underlineDisabledStyle.asInstanceOf[js.Any])
-    if (underlineFocusStyle != null) __obj.updateDynamic("underlineFocusStyle")(underlineFocusStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(underlineShow)) __obj.updateDynamic("underlineShow")(underlineShow.get.asInstanceOf[js.Any])
-    if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoCompleteProps[DataItem]]
   }
+  @scala.inline
+  implicit class AutoCompletePropsOps[Self <: AutoCompleteProps[_], DataItem] (val x: Self with AutoCompleteProps[DataItem]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceVarargs(value: DataItem*): Self = this.set("dataSource", js.Array(value :_*))
+    @scala.inline
+    def setDataSource(value: js.Array[DataItem]): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnchorOrigin(value: origin): Self = this.set("anchorOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchorOrigin: Self = this.set("anchorOrigin", js.undefined)
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setDataSourceConfig(value: Text): Self = this.set("dataSourceConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceConfig: Self = this.set("dataSourceConfig", js.undefined)
+    @scala.inline
+    def setDisableFocusRipple(value: Boolean): Self = this.set("disableFocusRipple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFocusRipple: Self = this.set("disableFocusRipple", js.undefined)
+    @scala.inline
+    def setFilter(value: (/* searchText */ String, /* key */ String, /* item */ DataItem) => Boolean): Self = this.set("filter", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setListStyle(value: CSSProperties): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListStyle: Self = this.set("listStyle", js.undefined)
+    @scala.inline
+    def setMaxSearchResults(value: Double): Self = this.set("maxSearchResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSearchResults: Self = this.set("maxSearchResults", js.undefined)
+    @scala.inline
+    def setMenuCloseDelay(value: Double): Self = this.set("menuCloseDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuCloseDelay: Self = this.set("menuCloseDelay", js.undefined)
+    @scala.inline
+    def setMenuProps(value: js.Any): Self = this.set("menuProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuProps: Self = this.set("menuProps", js.undefined)
+    @scala.inline
+    def setMenuStyle(value: CSSProperties): Self = this.set("menuStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuStyle: Self = this.set("menuStyle", js.undefined)
+    @scala.inline
+    def setOnNewRequest(value: (/* chosenRequest */ DataItem, /* index */ Double) => Unit): Self = this.set("onNewRequest", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnNewRequest: Self = this.set("onNewRequest", js.undefined)
+    @scala.inline
+    def setOnUpdateInput(value: (/* searchText */ String, /* dataSource */ js.Array[DataItem]) => Unit): Self = this.set("onUpdateInput", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnUpdateInput: Self = this.set("onUpdateInput", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setOpenOnFocus(value: Boolean): Self = this.set("openOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenOnFocus: Self = this.set("openOnFocus", js.undefined)
+    @scala.inline
+    def setPopoverProps(value: PopoverProps): Self = this.set("popoverProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopoverProps: Self = this.set("popoverProps", js.undefined)
+    @scala.inline
+    def setSearchText(value: String): Self = this.set("searchText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchText: Self = this.set("searchText", js.undefined)
+    @scala.inline
+    def setTargetOrigin(value: origin): Self = this.set("targetOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetOrigin: Self = this.set("targetOrigin", js.undefined)
+    @scala.inline
+    def setTextFieldStyle(value: CSSProperties): Self = this.set("textFieldStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextFieldStyle: Self = this.set("textFieldStyle", js.undefined)
+  }
+  
 }
 

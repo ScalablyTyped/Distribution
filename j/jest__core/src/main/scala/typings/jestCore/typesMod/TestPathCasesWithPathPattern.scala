@@ -70,6 +70,7 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[IsMatch] {
     * length+end.
     */
   def fill(value: IsMatch): this.type = js.native
+  def fill(value: IsMatch, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: IsMatch, start: Double): this.type = js.native
   def fill(value: IsMatch, start: Double, end: Double): this.type = js.native
   /**
@@ -348,6 +349,7 @@ trait TestPathCasesWithPathPattern extends /* n */ NumberDictionary[IsMatch] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[IsMatch] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[IsMatch] = js.native
   def slice(start: Double): js.Array[IsMatch] = js.native
   def slice(start: Double, end: Double): js.Array[IsMatch] = js.native
   /**

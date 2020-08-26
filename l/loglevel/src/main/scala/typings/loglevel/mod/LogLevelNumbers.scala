@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
   */
 /* Inlined loglevel.loglevel.LogLevel[keyof loglevel.loglevel.LogLevel] */
 /* Rewritten from type alias, can be one of: 
-  - typings.loglevel.loglevelNumbers.`4`
   - typings.loglevel.loglevelNumbers.`3`
+  - typings.loglevel.loglevelNumbers.`2`
+  - typings.loglevel.loglevelNumbers.`4`
   - typings.loglevel.loglevelNumbers.`0`
   - typings.loglevel.loglevelNumbers.`5`
   - typings.loglevel.loglevelNumbers.`1`
-  - typings.loglevel.loglevelNumbers.`2`
 */
 trait LogLevelNumbers extends js.Object
 

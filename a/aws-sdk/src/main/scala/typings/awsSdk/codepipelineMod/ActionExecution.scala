@@ -46,28 +46,58 @@ trait ActionExecution extends js.Object {
 
 object ActionExecution {
   @scala.inline
-  def apply(
-    errorDetails: ErrorDetails = null,
-    externalExecutionId: ExecutionId = null,
-    externalExecutionUrl: Url = null,
-    lastStatusChange: Timestamp = null,
-    lastUpdatedBy: LastUpdatedBy = null,
-    percentComplete: js.UndefOr[Percentage] = js.undefined,
-    status: ActionExecutionStatus = null,
-    summary: ExecutionSummary = null,
-    token: ActionExecutionToken = null
-  ): ActionExecution = {
+  def apply(): ActionExecution = {
     val __obj = js.Dynamic.literal()
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
-    if (externalExecutionId != null) __obj.updateDynamic("externalExecutionId")(externalExecutionId.asInstanceOf[js.Any])
-    if (externalExecutionUrl != null) __obj.updateDynamic("externalExecutionUrl")(externalExecutionUrl.asInstanceOf[js.Any])
-    if (lastStatusChange != null) __obj.updateDynamic("lastStatusChange")(lastStatusChange.asInstanceOf[js.Any])
-    if (lastUpdatedBy != null) __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentComplete)) __obj.updateDynamic("percentComplete")(percentComplete.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionExecution]
   }
+  @scala.inline
+  implicit class ActionExecutionOps[Self <: ActionExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorDetails(value: ErrorDetails): Self = this.set("errorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetails: Self = this.set("errorDetails", js.undefined)
+    @scala.inline
+    def setExternalExecutionId(value: ExecutionId): Self = this.set("externalExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalExecutionId: Self = this.set("externalExecutionId", js.undefined)
+    @scala.inline
+    def setExternalExecutionUrl(value: Url): Self = this.set("externalExecutionUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalExecutionUrl: Self = this.set("externalExecutionUrl", js.undefined)
+    @scala.inline
+    def setLastStatusChange(value: Timestamp): Self = this.set("lastStatusChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatusChange: Self = this.set("lastStatusChange", js.undefined)
+    @scala.inline
+    def setLastUpdatedBy(value: LastUpdatedBy): Self = this.set("lastUpdatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedBy: Self = this.set("lastUpdatedBy", js.undefined)
+    @scala.inline
+    def setPercentComplete(value: Percentage): Self = this.set("percentComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentComplete: Self = this.set("percentComplete", js.undefined)
+    @scala.inline
+    def setStatus(value: ActionExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setSummary(value: ExecutionSummary): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+    @scala.inline
+    def setToken(value: ActionExecutionToken): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+  }
+  
 }
 

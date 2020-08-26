@@ -1,7 +1,7 @@
 
 # Scala.js typings for unimodules-permissions-interface
 
-Typings are for version 5.0.0
+Typings are for version 5.2.1
 
 ## Library description:
 An interface for permissions modules

@@ -10,9 +10,9 @@ A service worker helper library implementing common caching strategies.
 | ------------------ | :-------------: |
 | Full name          | workbox-strategies |
 | Keywords           | workbox, workboxjs, service worker, sw, router, routing |
-| # releases         | 41 |
-| # dependents       | 2 |
-| # downloads        | 50251534 |
+| # releases         | 39 |
+| # dependents       | 4 |
+| # downloads        | 56844764 |
 | # stars            | 0 |
 
 ## Links

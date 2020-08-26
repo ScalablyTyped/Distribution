@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MessageHandler[T /* <: IMessage */] extends js.Object {
-  def handle(message: T): Unit | Thenable[Unit]
+  def handle(message: T): Unit | Thenable[Unit] = js.native
 }
 
 object MessageHandler {
@@ -15,5 +16,20 @@ object MessageHandler {
     val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
     __obj.asInstanceOf[MessageHandler[T]]
   }
+  @scala.inline
+  implicit class MessageHandlerOps[Self <: MessageHandler[_], /* <: typings.azdata.mod.nb.IMessage */ T] (val x: Self with MessageHandler[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandle(value: T => Unit | Thenable[Unit]): Self = this.set("handle", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -1,8 +1,6 @@
 package typings.firebaseRemoteConfig
 
 import typings.firebaseLogger.mod.Logger
-import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.FetchRequest
-import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.FetchResponse
 import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.RemoteConfigFetchClient
 import typings.firebaseRemoteConfig.storageCacheMod.StorageCache
 import typings.firebaseRemoteConfig.storageMod.Storage
@@ -20,11 +18,6 @@ object cachingClientMod extends js.Object {
     val logger: js.Any = js.native
     val storage: js.Any = js.native
     val storageCache: js.Any = js.native
-    /**
-      * @throws if response status is not 200 or 304.
-      */
-    /* CompleteClass */
-    override def fetch(request: FetchRequest): js.Promise[FetchResponse] = js.native
     /**
       * Returns true if the age of the cached fetched configs is less than or equal to
       * {@link Settings#minimumFetchIntervalInSeconds}.

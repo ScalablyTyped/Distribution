@@ -12,7 +12,7 @@ Generate beautiful DMG-images for your OS X applications.
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 21 |
-| # downloads        | 415172 |
+| # downloads        | 412843 |
 | # stars            | 9 |
 
 ## Links

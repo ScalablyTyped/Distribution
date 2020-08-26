@@ -16,6 +16,12 @@ object ListModule extends js.Object {
     def clearSelectedItemsDict(context: js.Any): Unit = js.native
     def createItemPropertiesTitle(renderCtx: RenderContext, listItem: ListItem): String = js.native
     def createViewEditUrl(renderCtx: RenderContext, listItem: ListItem): String = js.native
+    def createViewEditUrl(
+      renderCtx: RenderContext,
+      listItem: ListItem,
+      useEditFormUrl: js.UndefOr[scala.Nothing],
+      appendSource: Boolean
+    ): String = js.native
     def createViewEditUrl(renderCtx: RenderContext, listItem: ListItem, useEditFormUrl: Boolean): String = js.native
     def createViewEditUrl(renderCtx: RenderContext, listItem: ListItem, useEditFormUrl: Boolean, appendSource: Boolean): String = js.native
     def ctxInitItemState(context: js.Any): Unit = js.native

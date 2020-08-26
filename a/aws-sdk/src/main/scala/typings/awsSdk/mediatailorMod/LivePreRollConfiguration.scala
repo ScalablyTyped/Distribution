@@ -18,11 +18,30 @@ trait LivePreRollConfiguration extends js.Object {
 
 object LivePreRollConfiguration {
   @scala.inline
-  def apply(AdDecisionServerUrl: string = null, MaxDurationSeconds: js.UndefOr[integer] = js.undefined): LivePreRollConfiguration = {
+  def apply(): LivePreRollConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (AdDecisionServerUrl != null) __obj.updateDynamic("AdDecisionServerUrl")(AdDecisionServerUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxDurationSeconds)) __obj.updateDynamic("MaxDurationSeconds")(MaxDurationSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LivePreRollConfiguration]
   }
+  @scala.inline
+  implicit class LivePreRollConfigurationOps[Self <: LivePreRollConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdDecisionServerUrl(value: string): Self = this.set("AdDecisionServerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdDecisionServerUrl: Self = this.set("AdDecisionServerUrl", js.undefined)
+    @scala.inline
+    def setMaxDurationSeconds(value: integer): Self = this.set("MaxDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDurationSeconds: Self = this.set("MaxDurationSeconds", js.undefined)
+  }
+  
 }
 

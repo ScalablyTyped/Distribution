@@ -66,37 +66,82 @@ trait ScheduledInstancesLaunchSpecification extends js.Object {
 
 object ScheduledInstancesLaunchSpecification {
   @scala.inline
-  def apply(
-    ImageId: ImageId,
-    BlockDeviceMappings: ScheduledInstancesBlockDeviceMappingSet = null,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
-    IamInstanceProfile: ScheduledInstancesIamInstanceProfile = null,
-    InstanceType: String = null,
-    KernelId: KernelId = null,
-    KeyName: KeyPairName = null,
-    Monitoring: ScheduledInstancesMonitoring = null,
-    NetworkInterfaces: ScheduledInstancesNetworkInterfaceSet = null,
-    Placement: ScheduledInstancesPlacement = null,
-    RamdiskId: RamdiskId = null,
-    SecurityGroupIds: ScheduledInstancesSecurityGroupIdSet = null,
-    SubnetId: SubnetId = null,
-    UserData: String = null
-  ): ScheduledInstancesLaunchSpecification = {
+  def apply(ImageId: ImageId): ScheduledInstancesLaunchSpecification = {
     val __obj = js.Dynamic.literal(ImageId = ImageId.asInstanceOf[js.Any])
-    if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
-    if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])
-    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])
-    if (Monitoring != null) __obj.updateDynamic("Monitoring")(Monitoring.asInstanceOf[js.Any])
-    if (NetworkInterfaces != null) __obj.updateDynamic("NetworkInterfaces")(NetworkInterfaces.asInstanceOf[js.Any])
-    if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
-    if (RamdiskId != null) __obj.updateDynamic("RamdiskId")(RamdiskId.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (UserData != null) __obj.updateDynamic("UserData")(UserData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstancesLaunchSpecification]
   }
+  @scala.inline
+  implicit class ScheduledInstancesLaunchSpecificationOps[Self <: ScheduledInstancesLaunchSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageId(value: ImageId): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlockDeviceMappingsVarargs(value: ScheduledInstancesBlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    @scala.inline
+    def setBlockDeviceMappings(value: ScheduledInstancesBlockDeviceMappingSet): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setIamInstanceProfile(value: ScheduledInstancesIamInstanceProfile): Self = this.set("IamInstanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamInstanceProfile: Self = this.set("IamInstanceProfile", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKernelId(value: KernelId): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    @scala.inline
+    def setKeyName(value: KeyPairName): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    @scala.inline
+    def setMonitoring(value: ScheduledInstancesMonitoring): Self = this.set("Monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("Monitoring", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: ScheduledInstancesNetworkInterface*): Self = this.set("NetworkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: ScheduledInstancesNetworkInterfaceSet): Self = this.set("NetworkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("NetworkInterfaces", js.undefined)
+    @scala.inline
+    def setPlacement(value: ScheduledInstancesPlacement): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("Placement", js.undefined)
+    @scala.inline
+    def setRamdiskId(value: RamdiskId): Self = this.set("RamdiskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamdiskId: Self = this.set("RamdiskId", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: ScheduledInstancesSecurityGroupIdSet): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setUserData(value: String): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("UserData", js.undefined)
+  }
+  
 }
 

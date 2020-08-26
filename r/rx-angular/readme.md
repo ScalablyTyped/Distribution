@@ -11,7 +11,7 @@ Library for bridging between RxJS and AngularJS.
 | Keywords           | Reactive, FRP, Rx, RxJS, AngularJS, Angular |
 | # releases         | 1 |
 | # dependents       | 7 |
-| # downloads        | 130767 |
+| # downloads        | 134476 |
 | # stars            | 6 |
 
 ## Links

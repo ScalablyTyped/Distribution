@@ -50,30 +50,64 @@ trait Connector extends js.Object {
 
 object Connector {
   @scala.inline
-  def apply(
-    associatedOn: Timestamp = null,
-    capabilityList: ConnectorCapabilityList = null,
-    connectorId: ConnectorId = null,
-    ipAddress: IpAddress = null,
-    macAddress: MacAddress = null,
-    status: ConnectorStatus = null,
-    version: ConnectorVersion = null,
-    vmManagerId: VmManagerId = null,
-    vmManagerName: VmManagerName = null,
-    vmManagerType: VmManagerType = null
-  ): Connector = {
+  def apply(): Connector = {
     val __obj = js.Dynamic.literal()
-    if (associatedOn != null) __obj.updateDynamic("associatedOn")(associatedOn.asInstanceOf[js.Any])
-    if (capabilityList != null) __obj.updateDynamic("capabilityList")(capabilityList.asInstanceOf[js.Any])
-    if (connectorId != null) __obj.updateDynamic("connectorId")(connectorId.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (macAddress != null) __obj.updateDynamic("macAddress")(macAddress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (vmManagerId != null) __obj.updateDynamic("vmManagerId")(vmManagerId.asInstanceOf[js.Any])
-    if (vmManagerName != null) __obj.updateDynamic("vmManagerName")(vmManagerName.asInstanceOf[js.Any])
-    if (vmManagerType != null) __obj.updateDynamic("vmManagerType")(vmManagerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Connector]
   }
+  @scala.inline
+  implicit class ConnectorOps[Self <: Connector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociatedOn(value: Timestamp): Self = this.set("associatedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedOn: Self = this.set("associatedOn", js.undefined)
+    @scala.inline
+    def setCapabilityListVarargs(value: ConnectorCapability*): Self = this.set("capabilityList", js.Array(value :_*))
+    @scala.inline
+    def setCapabilityList(value: ConnectorCapabilityList): Self = this.set("capabilityList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilityList: Self = this.set("capabilityList", js.undefined)
+    @scala.inline
+    def setConnectorId(value: ConnectorId): Self = this.set("connectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectorId: Self = this.set("connectorId", js.undefined)
+    @scala.inline
+    def setIpAddress(value: IpAddress): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setMacAddress(value: MacAddress): Self = this.set("macAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacAddress: Self = this.set("macAddress", js.undefined)
+    @scala.inline
+    def setStatus(value: ConnectorStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVersion(value: ConnectorVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVmManagerId(value: VmManagerId): Self = this.set("vmManagerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmManagerId: Self = this.set("vmManagerId", js.undefined)
+    @scala.inline
+    def setVmManagerName(value: VmManagerName): Self = this.set("vmManagerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmManagerName: Self = this.set("vmManagerName", js.undefined)
+    @scala.inline
+    def setVmManagerType(value: VmManagerType): Self = this.set("vmManagerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVmManagerType: Self = this.set("vmManagerType", js.undefined)
+  }
+  
 }
 

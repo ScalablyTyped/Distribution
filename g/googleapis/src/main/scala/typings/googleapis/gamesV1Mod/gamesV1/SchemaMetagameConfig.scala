@@ -27,16 +27,36 @@ trait SchemaMetagameConfig extends js.Object {
 
 object SchemaMetagameConfig {
   @scala.inline
-  def apply(
-    currentVersion: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    playerLevels: js.Array[SchemaPlayerLevel] = null
-  ): SchemaMetagameConfig = {
+  def apply(): SchemaMetagameConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(currentVersion)) __obj.updateDynamic("currentVersion")(currentVersion.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (playerLevels != null) __obj.updateDynamic("playerLevels")(playerLevels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMetagameConfig]
   }
+  @scala.inline
+  implicit class SchemaMetagameConfigOps[Self <: SchemaMetagameConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentVersion(value: Double): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = this.set("playerLevels", js.Array(value :_*))
+    @scala.inline
+    def setPlayerLevels(value: js.Array[SchemaPlayerLevel]): Self = this.set("playerLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayerLevels: Self = this.set("playerLevels", js.undefined)
+  }
+  
 }
 

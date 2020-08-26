@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Equation protected () extends js.Object {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, minForce: Double) = this()
+  def this(bodyA: Body, bodyB: Body, minForce: js.UndefOr[scala.Nothing], maxForce: Double) = this()
   def this(bodyA: Body, bodyB: Body, minForce: Double, maxForce: Double) = this()
   var G: js.Tuple2[Double, Double] = js.native
   var bodyA: Body = js.native

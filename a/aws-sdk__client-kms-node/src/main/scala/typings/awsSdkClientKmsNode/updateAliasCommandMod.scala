@@ -26,16 +26,9 @@ object updateAliasCommandMod extends js.Object {
           Readable
         ] {
     def this(input: UpdateAliasInput) = this()
-    /* CompleteClass */
-    override val input: UpdateAliasInput = js.native
     val middlewareStack: MiddlewareStack[UpdateAliasInput, UpdateAliasOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: KMSResolvedConfiguration
-    ): Handler[UpdateAliasInput, UpdateAliasOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: KMSResolvedConfiguration
     ): Handler[UpdateAliasInput, UpdateAliasOutput] = js.native
   }

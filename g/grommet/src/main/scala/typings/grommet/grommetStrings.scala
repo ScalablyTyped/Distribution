@@ -743,6 +743,9 @@ object grommetStrings {
   sealed trait ol extends _PolymorphicType
   
   @js.native
+  sealed trait onBlur extends js.Object
+  
+  @js.native
   sealed trait onChange extends js.Object
   
   @js.native
@@ -1560,6 +1563,8 @@ object grommetStrings {
   def off: off = "off".asInstanceOf[off]
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
+  @scala.inline
+  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
   @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   @scala.inline

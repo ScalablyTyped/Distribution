@@ -16,10 +16,5 @@ class ASPxClientFloatingActionButtonContextChangingEventArgs protected ()
     * @param action An ASPxClientFABAction object that is the floating action button's action.
     */
   def this(action: typings.devexpressWeb.ASPxClientFABAction) = this()
-  /**
-    * Returns the action related to the event.
-    */
-  /* CompleteClass */
-  override var action: typings.devexpressWeb.ASPxClientFABAction = js.native
 }
 

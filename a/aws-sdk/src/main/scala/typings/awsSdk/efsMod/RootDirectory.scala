@@ -18,11 +18,30 @@ trait RootDirectory extends js.Object {
 
 object RootDirectory {
   @scala.inline
-  def apply(CreationInfo: CreationInfo = null, Path: Path = null): RootDirectory = {
+  def apply(): RootDirectory = {
     val __obj = js.Dynamic.literal()
-    if (CreationInfo != null) __obj.updateDynamic("CreationInfo")(CreationInfo.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[RootDirectory]
   }
+  @scala.inline
+  implicit class RootDirectoryOps[Self <: RootDirectory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationInfo(value: CreationInfo): Self = this.set("CreationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationInfo: Self = this.set("CreationInfo", js.undefined)
+    @scala.inline
+    def setPath(value: Path): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

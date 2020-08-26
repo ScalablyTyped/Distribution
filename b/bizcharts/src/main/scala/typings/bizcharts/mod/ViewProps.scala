@@ -2,51 +2,71 @@ package typings.bizcharts.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bizcharts.anon.X
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.Props
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewProps
   extends Props[js.Any] {
-  var animate: js.UndefOr[Boolean] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var end: js.UndefOr[X] = js.undefined
-  var filter: js.UndefOr[js.Array[_]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var scale: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var start: js.UndefOr[X] = js.undefined
+  var animate: js.UndefOr[Boolean] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var end: js.UndefOr[X] = js.native
+  var filter: js.UndefOr[js.Array[_]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var start: js.UndefOr[X] = js.native
 }
 
 object ViewProps {
   @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    data: js.Any = null,
-    end: X = null,
-    filter: js.Array[_] = null,
-    id: String = null,
-    key: Key = null,
-    ref: js.UndefOr[Null | LegacyRef[js.Any]] = js.undefined,
-    scale: StringDictionary[js.Any] = null,
-    start: X = null
-  ): ViewProps = {
+  def apply(): ViewProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewProps]
   }
+  @scala.inline
+  implicit class ViewPropsOps[Self <: ViewProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: Boolean): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEnd(value: X): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setFilterVarargs(value: js.Any*): Self = this.set("filter", js.Array(value :_*))
+    @scala.inline
+    def setFilter(value: js.Array[_]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setScale(value: StringDictionary[js.Any]): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setStart(value: X): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

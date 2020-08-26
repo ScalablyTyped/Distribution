@@ -38,22 +38,46 @@ trait Channel extends js.Object {
 
 object Channel {
   @scala.inline
-  def apply(
-    ChannelName: ChannelName,
-    DataSource: DataSource,
-    CompressionType: CompressionType = null,
-    ContentType: ContentType = null,
-    InputMode: TrainingInputMode = null,
-    RecordWrapperType: RecordWrapper = null,
-    ShuffleConfig: ShuffleConfig = null
-  ): Channel = {
+  def apply(ChannelName: ChannelName, DataSource: DataSource): Channel = {
     val __obj = js.Dynamic.literal(ChannelName = ChannelName.asInstanceOf[js.Any], DataSource = DataSource.asInstanceOf[js.Any])
-    if (CompressionType != null) __obj.updateDynamic("CompressionType")(CompressionType.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (InputMode != null) __obj.updateDynamic("InputMode")(InputMode.asInstanceOf[js.Any])
-    if (RecordWrapperType != null) __obj.updateDynamic("RecordWrapperType")(RecordWrapperType.asInstanceOf[js.Any])
-    if (ShuffleConfig != null) __obj.updateDynamic("ShuffleConfig")(ShuffleConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Channel]
   }
+  @scala.inline
+  implicit class ChannelOps[Self <: Channel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelName(value: ChannelName): Self = this.set("ChannelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSource(value: DataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompressionType(value: CompressionType): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setInputMode(value: TrainingInputMode): Self = this.set("InputMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMode: Self = this.set("InputMode", js.undefined)
+    @scala.inline
+    def setRecordWrapperType(value: RecordWrapper): Self = this.set("RecordWrapperType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordWrapperType: Self = this.set("RecordWrapperType", js.undefined)
+    @scala.inline
+    def setShuffleConfig(value: ShuffleConfig): Self = this.set("ShuffleConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShuffleConfig: Self = this.set("ShuffleConfig", js.undefined)
+  }
+  
 }
 

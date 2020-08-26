@@ -4,34 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccounttaxCustomBatchRequestEntry extends js.Object {
   /** The ID of the account for which to get/update account tax settings. */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
   /** The account tax settings to update. Only defined if the method is update. */
-  var accountTax: js.UndefOr[AccountTax] = js.undefined
+  var accountTax: js.UndefOr[AccountTax] = js.native
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double] = js.native
   /** The ID of the managing account. */
-  var merchantId: js.UndefOr[String] = js.undefined
-  var method: js.UndefOr[String] = js.undefined
+  var merchantId: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.native
 }
 
 object AccounttaxCustomBatchRequestEntry {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    accountTax: AccountTax = null,
-    batchId: js.UndefOr[Double] = js.undefined,
-    merchantId: String = null,
-    method: String = null
-  ): AccounttaxCustomBatchRequestEntry = {
+  def apply(): AccounttaxCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (accountTax != null) __obj.updateDynamic("accountTax")(accountTax.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccounttaxCustomBatchRequestEntry]
   }
+  @scala.inline
+  implicit class AccounttaxCustomBatchRequestEntryOps[Self <: AccounttaxCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setAccountTax(value: AccountTax): Self = this.set("accountTax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountTax: Self = this.set("accountTax", js.undefined)
+    @scala.inline
+    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    @scala.inline
+    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+  }
+  
 }
 

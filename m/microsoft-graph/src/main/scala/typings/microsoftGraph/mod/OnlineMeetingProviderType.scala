@@ -1,0 +1,26 @@
+package typings.microsoftGraph.mod
+
+import typings.microsoftGraph.microsoftGraphStrings.unknown_
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.microsoftGraph.microsoftGraphStrings.unknown_
+  - typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness
+  - typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer
+  - typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness
+*/
+trait OnlineMeetingProviderType extends js.Object
+
+object OnlineMeetingProviderType {
+  @scala.inline
+  def skypeForBusiness: typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness = "skypeForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForBusiness]
+  @scala.inline
+  def skypeForConsumer: typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer = "skypeForConsumer".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.skypeForConsumer]
+  @scala.inline
+  def teamsForBusiness: typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness = "teamsForBusiness".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.teamsForBusiness]
+  @scala.inline
+  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+}
+

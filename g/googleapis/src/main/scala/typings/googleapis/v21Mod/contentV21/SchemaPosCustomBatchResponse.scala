@@ -19,11 +19,32 @@ trait SchemaPosCustomBatchResponse extends js.Object {
 
 object SchemaPosCustomBatchResponse {
   @scala.inline
-  def apply(entries: js.Array[SchemaPosCustomBatchResponseEntry] = null, kind: String = null): SchemaPosCustomBatchResponse = {
+  def apply(): SchemaPosCustomBatchResponse = {
     val __obj = js.Dynamic.literal()
-    if (entries != null) __obj.updateDynamic("entries")(entries.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPosCustomBatchResponse]
   }
+  @scala.inline
+  implicit class SchemaPosCustomBatchResponseOps[Self <: SchemaPosCustomBatchResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntriesVarargs(value: SchemaPosCustomBatchResponseEntry*): Self = this.set("entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: js.Array[SchemaPosCustomBatchResponseEntry]): Self = this.set("entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("entries", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

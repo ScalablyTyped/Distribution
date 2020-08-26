@@ -5,7 +5,6 @@ import typings.rxjs.operatorMod.Operator
 import typings.rxjs.subscriberMod.Subscriber
 import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.ObservedValueOf
-import typings.rxjs.typesMod.TeardownLogic
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,20 +15,18 @@ object zipMod extends js.Object {
   @js.native
   class ZipOperator[T, R] () extends Operator[T, R] {
     def this(resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
-    /* CompleteClass */
-    override def call(subscriber: Subscriber[R], source: js.Any): TeardownLogic = js.native
-    def resultSelector(values: js.Any*): R = js.native
+    var resultSelector: js.UndefOr[js.Function1[/* repeated */ js.Any, R]] = js.native
   }
   
   @js.native
   class ZipSubscriber[T, R] protected () extends Subscriber[T] {
     def this(destination: Subscriber[R]) = this()
     def this(destination: Subscriber[R], resultSelector: js.Function1[/* repeated */ js.Any, R]) = this()
+    def this(destination: Subscriber[R], resultSelector: js.UndefOr[scala.Nothing], values: js.Any) = this()
     def this(destination: Subscriber[R], resultSelector: js.Function1[/* repeated */ js.Any, R], values: js.Any) = this()
     var active: js.Any = js.native
     var iterators: js.Any = js.native
     var resultSelector: js.Any = js.native
-    var values: js.Any = js.native
     /* protected */ def _next(value: js.Any): Unit = js.native
     /* protected */ def _tryresultSelector(args: js.Array[_]): Unit = js.native
     def checkIterators(): Unit = js.native

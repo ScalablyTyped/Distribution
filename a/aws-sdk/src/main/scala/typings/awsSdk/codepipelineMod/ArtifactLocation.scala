@@ -18,11 +18,30 @@ trait ArtifactLocation extends js.Object {
 
 object ArtifactLocation {
   @scala.inline
-  def apply(s3Location: S3ArtifactLocation = null, `type`: ArtifactLocationType = null): ArtifactLocation = {
+  def apply(): ArtifactLocation = {
     val __obj = js.Dynamic.literal()
-    if (s3Location != null) __obj.updateDynamic("s3Location")(s3Location.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactLocation]
   }
+  @scala.inline
+  implicit class ArtifactLocationOps[Self <: ArtifactLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3Location(value: S3ArtifactLocation): Self = this.set("s3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Location: Self = this.set("s3Location", js.undefined)
+    @scala.inline
+    def setType(value: ArtifactLocationType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

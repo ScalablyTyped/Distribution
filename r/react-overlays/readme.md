@@ -11,8 +11,8 @@ Utilities for creating robust overlay components
 | Full name          | react-overlays |
 | Keywords           | react-overlays, react-component, react, overlay, react-component, tooltip, bootstrap, popover, modal |
 | # releases         | 30 |
-| # dependents       | 296 |
-| # downloads        | 28666402 |
+| # dependents       | 299 |
+| # downloads        | 28636639 |
 | # stars            | 9 |
 
 ## Links

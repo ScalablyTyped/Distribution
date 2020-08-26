@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PutBucketPolicyOutput
   extends MetadataBearer
      with _OutputTypesUnion

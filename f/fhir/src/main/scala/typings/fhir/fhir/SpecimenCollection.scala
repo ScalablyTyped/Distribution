@@ -7,69 +7,84 @@ import scala.scalajs.js.annotation._
 /**
   * Collection details
   */
+@js.native
 trait SpecimenCollection extends BackboneElement {
   /**
     * Contains extended information for property 'collectedDateTime'.
     */
-  var _collectedDateTime: js.UndefOr[Element] = js.undefined
+  var _collectedDateTime: js.UndefOr[Element] = js.native
   /**
     * Anatomical collection site
     */
-  var bodySite: js.UndefOr[CodeableConcept] = js.undefined
+  var bodySite: js.UndefOr[CodeableConcept] = js.native
   /**
     * Collection time
     */
-  var collectedDateTime: js.UndefOr[dateTime] = js.undefined
+  var collectedDateTime: js.UndefOr[dateTime] = js.native
   /**
     * Collection time
     */
-  var collectedPeriod: js.UndefOr[Period] = js.undefined
+  var collectedPeriod: js.UndefOr[Period] = js.native
   /**
     * Who collected the specimen
     */
-  var collector: js.UndefOr[Reference] = js.undefined
+  var collector: js.UndefOr[Reference] = js.native
   /**
     * Technique used to perform collection
     */
-  var method: js.UndefOr[CodeableConcept] = js.undefined
+  var method: js.UndefOr[CodeableConcept] = js.native
   /**
     * The quantity of specimen collected
     */
-  var quantity: js.UndefOr[Quantity] = js.undefined
+  var quantity: js.UndefOr[Quantity] = js.native
 }
 
 object SpecimenCollection {
   @scala.inline
-  def apply(
-    _collectedDateTime: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    bodySite: CodeableConcept = null,
-    collectedDateTime: dateTime = null,
-    collectedPeriod: Period = null,
-    collector: Reference = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    method: CodeableConcept = null,
-    modifierExtension: js.Array[Extension] = null,
-    quantity: Quantity = null
-  ): SpecimenCollection = {
+  def apply(): SpecimenCollection = {
     val __obj = js.Dynamic.literal()
-    if (_collectedDateTime != null) __obj.updateDynamic("_collectedDateTime")(_collectedDateTime.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite.asInstanceOf[js.Any])
-    if (collectedDateTime != null) __obj.updateDynamic("collectedDateTime")(collectedDateTime.asInstanceOf[js.Any])
-    if (collectedPeriod != null) __obj.updateDynamic("collectedPeriod")(collectedPeriod.asInstanceOf[js.Any])
-    if (collector != null) __obj.updateDynamic("collector")(collector.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpecimenCollection]
   }
+  @scala.inline
+  implicit class SpecimenCollectionOps[Self <: SpecimenCollection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_collectedDateTime(value: Element): Self = this.set("_collectedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_collectedDateTime: Self = this.set("_collectedDateTime", js.undefined)
+    @scala.inline
+    def setBodySite(value: CodeableConcept): Self = this.set("bodySite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodySite: Self = this.set("bodySite", js.undefined)
+    @scala.inline
+    def setCollectedDateTime(value: dateTime): Self = this.set("collectedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectedDateTime: Self = this.set("collectedDateTime", js.undefined)
+    @scala.inline
+    def setCollectedPeriod(value: Period): Self = this.set("collectedPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectedPeriod: Self = this.set("collectedPeriod", js.undefined)
+    @scala.inline
+    def setCollector(value: Reference): Self = this.set("collector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollector: Self = this.set("collector", js.undefined)
+    @scala.inline
+    def setMethod(value: CodeableConcept): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setQuantity(value: Quantity): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantity: Self = this.set("quantity", js.undefined)
+  }
+  
 }
 

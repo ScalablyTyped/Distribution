@@ -20,17 +20,36 @@ trait UpdateGatewayInformationInput extends js.Object {
 
 object UpdateGatewayInformationInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN,
-    CloudWatchLogGroupARN: CloudWatchLogGroupARN = null,
-    GatewayName: GatewayName = null,
-    GatewayTimezone: GatewayTimezone = null
-  ): UpdateGatewayInformationInput = {
+  def apply(GatewayARN: GatewayARN): UpdateGatewayInformationInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-    if (CloudWatchLogGroupARN != null) __obj.updateDynamic("CloudWatchLogGroupARN")(CloudWatchLogGroupARN.asInstanceOf[js.Any])
-    if (GatewayName != null) __obj.updateDynamic("GatewayName")(GatewayName.asInstanceOf[js.Any])
-    if (GatewayTimezone != null) __obj.updateDynamic("GatewayTimezone")(GatewayTimezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayInformationInput]
   }
+  @scala.inline
+  implicit class UpdateGatewayInformationInputOps[Self <: UpdateGatewayInformationInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudWatchLogGroupARN(value: CloudWatchLogGroupARN): Self = this.set("CloudWatchLogGroupARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogGroupARN: Self = this.set("CloudWatchLogGroupARN", js.undefined)
+    @scala.inline
+    def setGatewayName(value: GatewayName): Self = this.set("GatewayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayName: Self = this.set("GatewayName", js.undefined)
+    @scala.inline
+    def setGatewayTimezone(value: GatewayTimezone): Self = this.set("GatewayTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayTimezone: Self = this.set("GatewayTimezone", js.undefined)
+  }
+  
 }
 

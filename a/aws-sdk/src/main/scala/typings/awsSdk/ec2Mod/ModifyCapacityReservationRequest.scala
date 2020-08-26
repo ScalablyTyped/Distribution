@@ -30,19 +30,40 @@ trait ModifyCapacityReservationRequest extends js.Object {
 
 object ModifyCapacityReservationRequest {
   @scala.inline
-  def apply(
-    CapacityReservationId: CapacityReservationId,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    EndDate: DateTime = null,
-    EndDateType: EndDateType = null,
-    InstanceCount: js.UndefOr[Integer] = js.undefined
-  ): ModifyCapacityReservationRequest = {
+  def apply(CapacityReservationId: CapacityReservationId): ModifyCapacityReservationRequest = {
     val __obj = js.Dynamic.literal(CapacityReservationId = CapacityReservationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (EndDate != null) __obj.updateDynamic("EndDate")(EndDate.asInstanceOf[js.Any])
-    if (EndDateType != null) __obj.updateDynamic("EndDateType")(EndDateType.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCapacityReservationRequest]
   }
+  @scala.inline
+  implicit class ModifyCapacityReservationRequestOps[Self <: ModifyCapacityReservationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityReservationId(value: CapacityReservationId): Self = this.set("CapacityReservationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setEndDate(value: DateTime): Self = this.set("EndDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("EndDate", js.undefined)
+    @scala.inline
+    def setEndDateType(value: EndDateType): Self = this.set("EndDateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDateType: Self = this.set("EndDateType", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+  }
+  
 }
 

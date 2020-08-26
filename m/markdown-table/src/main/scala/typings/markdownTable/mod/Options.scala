@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * One style for all columns (`string`), or styles for their respective columns (`string[]`).
@@ -11,7 +12,7 @@ trait Options extends js.Object {
     * Other values are treated as `''`, which doesn't place the colon in the alignment row but does align left.
     * Only the lowercased first character is used, so `'Right'` is fine.
     */
-  var align: js.UndefOr[String | js.Array[String]] = js.undefined
+  var align: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * Whether to align the delimiters.
     *
@@ -31,7 +32,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var alignDelimiters: js.UndefOr[Boolean] = js.undefined
+  var alignDelimiters: js.UndefOr[Boolean] = js.native
   /**
     * Whether to end each row with the delimiter.
     * Note: please don't use this: it could create fragile structures that aren't understandable to some Markdown parsers.
@@ -52,7 +53,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var delimiterEnd: js.UndefOr[Boolean] = js.undefined
+  var delimiterEnd: js.UndefOr[Boolean] = js.native
   /**
     * Whether to begin each row with the delimiter.
     * Note: please don't use this: it could create fragile structures that aren't understandable to some Markdown parsers.
@@ -73,7 +74,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var delimiterStart: js.UndefOr[Boolean] = js.undefined
+  var delimiterStart: js.UndefOr[Boolean] = js.native
   /**
     * Whether to add a space of padding between delimiters and cells.
     *
@@ -93,7 +94,7 @@ trait Options extends js.Object {
     *
     * @default true
     */
-  var padding: js.UndefOr[Boolean] = js.undefined
+  var padding: js.UndefOr[Boolean] = js.native
   /**
     * Method to detect the length of a cell.
     *
@@ -139,27 +140,53 @@ trait Options extends js.Object {
     * ```
     * @default s => s.length
     */
-  var stringLength: js.UndefOr[js.Function1[/* s */ String, Double]] = js.undefined
+  var stringLength: js.UndefOr[js.Function1[/* s */ String, Double]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    align: String | js.Array[String] = null,
-    alignDelimiters: js.UndefOr[Boolean] = js.undefined,
-    delimiterEnd: js.UndefOr[Boolean] = js.undefined,
-    delimiterStart: js.UndefOr[Boolean] = js.undefined,
-    padding: js.UndefOr[Boolean] = js.undefined,
-    stringLength: /* s */ String => Double = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignDelimiters)) __obj.updateDynamic("alignDelimiters")(alignDelimiters.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimiterEnd)) __obj.updateDynamic("delimiterEnd")(delimiterEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delimiterStart)) __obj.updateDynamic("delimiterStart")(delimiterStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (stringLength != null) __obj.updateDynamic("stringLength")(js.Any.fromFunction1(stringLength))
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignVarargs(value: String*): Self = this.set("align", js.Array(value :_*))
+    @scala.inline
+    def setAlign(value: String | js.Array[String]): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setAlignDelimiters(value: Boolean): Self = this.set("alignDelimiters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignDelimiters: Self = this.set("alignDelimiters", js.undefined)
+    @scala.inline
+    def setDelimiterEnd(value: Boolean): Self = this.set("delimiterEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiterEnd: Self = this.set("delimiterEnd", js.undefined)
+    @scala.inline
+    def setDelimiterStart(value: Boolean): Self = this.set("delimiterStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiterStart: Self = this.set("delimiterStart", js.undefined)
+    @scala.inline
+    def setPadding(value: Boolean): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setStringLength(value: /* s */ String => Double): Self = this.set("stringLength", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStringLength: Self = this.set("stringLength", js.undefined)
+  }
+  
 }
 

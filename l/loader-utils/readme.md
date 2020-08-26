@@ -11,8 +11,8 @@ utils for webpack loaders
 | Full name          | loader-utils |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 3992 |
-| # downloads        | 499827216 |
+| # dependents       | 4057 |
+| # downloads        | 509109934 |
 | # stars            | 3 |
 
 ## Links

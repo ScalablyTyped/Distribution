@@ -26,5 +26,24 @@ object HostedZoneSummary {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Owner = Owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedZoneSummary]
   }
+  @scala.inline
+  implicit class HostedZoneSummaryOps[Self <: HostedZoneSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: DNSName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: HostedZoneOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+  }
+  
 }
 

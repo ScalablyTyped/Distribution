@@ -38,22 +38,48 @@ trait RecipientDsnFields extends js.Object {
 
 object RecipientDsnFields {
   @scala.inline
-  def apply(
-    Action: DsnAction,
-    Status: DsnStatus,
-    DiagnosticCode: DiagnosticCode = null,
-    ExtensionFields: ExtensionFieldList = null,
-    FinalRecipient: Address = null,
-    LastAttemptDate: LastAttemptDate = null,
-    RemoteMta: RemoteMta = null
-  ): RecipientDsnFields = {
+  def apply(Action: DsnAction, Status: DsnStatus): RecipientDsnFields = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
-    if (DiagnosticCode != null) __obj.updateDynamic("DiagnosticCode")(DiagnosticCode.asInstanceOf[js.Any])
-    if (ExtensionFields != null) __obj.updateDynamic("ExtensionFields")(ExtensionFields.asInstanceOf[js.Any])
-    if (FinalRecipient != null) __obj.updateDynamic("FinalRecipient")(FinalRecipient.asInstanceOf[js.Any])
-    if (LastAttemptDate != null) __obj.updateDynamic("LastAttemptDate")(LastAttemptDate.asInstanceOf[js.Any])
-    if (RemoteMta != null) __obj.updateDynamic("RemoteMta")(RemoteMta.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientDsnFields]
   }
+  @scala.inline
+  implicit class RecipientDsnFieldsOps[Self <: RecipientDsnFields] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: DsnAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: DsnStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiagnosticCode(value: DiagnosticCode): Self = this.set("DiagnosticCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagnosticCode: Self = this.set("DiagnosticCode", js.undefined)
+    @scala.inline
+    def setExtensionFieldsVarargs(value: ExtensionField*): Self = this.set("ExtensionFields", js.Array(value :_*))
+    @scala.inline
+    def setExtensionFields(value: ExtensionFieldList): Self = this.set("ExtensionFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensionFields: Self = this.set("ExtensionFields", js.undefined)
+    @scala.inline
+    def setFinalRecipient(value: Address): Self = this.set("FinalRecipient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalRecipient: Self = this.set("FinalRecipient", js.undefined)
+    @scala.inline
+    def setLastAttemptDate(value: LastAttemptDate): Self = this.set("LastAttemptDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttemptDate: Self = this.set("LastAttemptDate", js.undefined)
+    @scala.inline
+    def setRemoteMta(value: RemoteMta): Self = this.set("RemoteMta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteMta: Self = this.set("RemoteMta", js.undefined)
+  }
+  
 }
 

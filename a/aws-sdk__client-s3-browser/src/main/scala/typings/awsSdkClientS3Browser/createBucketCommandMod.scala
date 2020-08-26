@@ -27,17 +27,10 @@ object createBucketCommandMod extends js.Object {
           Blob
         ] {
     def this(input: CreateBucketInput) = this()
-    /* CompleteClass */
-    override val input: CreateBucketInput = js.native
     val middlewareStack: MiddlewareStack[CreateBucketInput, CreateBucketOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[CreateBucketInput, CreateBucketOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[CreateBucketInput, CreateBucketOutput] = js.native
   }

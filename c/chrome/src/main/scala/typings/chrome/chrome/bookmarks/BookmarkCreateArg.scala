@@ -4,28 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BookmarkCreateArg extends js.Object {
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double] = js.native
   /** Optional. Defaults to the Other Bookmarks folder.  */
-  var parentId: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var parentId: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object BookmarkCreateArg {
   @scala.inline
-  def apply(
-    index: js.UndefOr[Double] = js.undefined,
-    parentId: String = null,
-    title: String = null,
-    url: String = null
-  ): BookmarkCreateArg = {
+  def apply(): BookmarkCreateArg = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BookmarkCreateArg]
   }
+  @scala.inline
+  implicit class BookmarkCreateArgOps[Self <: BookmarkCreateArg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

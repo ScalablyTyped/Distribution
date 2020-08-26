@@ -108,50 +108,106 @@ trait SchemaJsonSchema extends js.Object {
 
 object SchemaJsonSchema {
   @scala.inline
-  def apply(
-    $ref: String = null,
-    additionalProperties: SchemaJsonSchema = null,
-    annotations: Required = null,
-    default: String = null,
-    description: String = null,
-    enum: js.Array[String] = null,
-    enumDescriptions: js.Array[String] = null,
-    format: String = null,
-    id: String = null,
-    items: SchemaJsonSchema = null,
-    location: String = null,
-    maximum: String = null,
-    minimum: String = null,
-    pattern: String = null,
-    properties: StringDictionary[SchemaJsonSchema] = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    repeated: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    variant: Discriminant = null
-  ): SchemaJsonSchema = {
+  def apply(): SchemaJsonSchema = {
     val __obj = js.Dynamic.literal()
-    if ($ref != null) __obj.updateDynamic("$ref")($ref.asInstanceOf[js.Any])
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (enumDescriptions != null) __obj.updateDynamic("enumDescriptions")(enumDescriptions.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeated)) __obj.updateDynamic("repeated")(repeated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJsonSchema]
   }
+  @scala.inline
+  implicit class SchemaJsonSchemaOps[Self <: SchemaJsonSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$ref(value: String): Self = this.set("$ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$ref: Self = this.set("$ref", js.undefined)
+    @scala.inline
+    def setAdditionalProperties(value: SchemaJsonSchema): Self = this.set("additionalProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalProperties: Self = this.set("additionalProperties", js.undefined)
+    @scala.inline
+    def setAnnotations(value: Required): Self = this.set("annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("annotations", js.undefined)
+    @scala.inline
+    def setDefault(value: String): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnumVarargs(value: String*): Self = this.set("enum", js.Array(value :_*))
+    @scala.inline
+    def setEnum(value: js.Array[String]): Self = this.set("enum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnum: Self = this.set("enum", js.undefined)
+    @scala.inline
+    def setEnumDescriptionsVarargs(value: String*): Self = this.set("enumDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setEnumDescriptions(value: js.Array[String]): Self = this.set("enumDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnumDescriptions: Self = this.set("enumDescriptions", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItems(value: SchemaJsonSchema): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMaximum(value: String): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: String): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setPattern(value: String): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePattern: Self = this.set("pattern", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[SchemaJsonSchema]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRepeated(value: Boolean): Self = this.set("repeated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeated: Self = this.set("repeated", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVariant(value: Discriminant): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+  }
+  
 }
 

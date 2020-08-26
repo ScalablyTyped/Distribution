@@ -9,10 +9,10 @@ object mongooseStrings {
   sealed trait CastError extends js.Object
   
   @js.native
-  sealed trait DeepMapAsObject extends js.Object
+  sealed trait DeepCreateObjectTransformer extends js.Object
   
   @js.native
-  sealed trait DeepNonFunctionProperties extends js.Object
+  sealed trait DeepMapAsObject extends js.Object
   
   @js.native
   sealed trait DivergentArrayError extends js.Object
@@ -215,9 +215,9 @@ object mongooseStrings {
   @scala.inline
   def CastError: CastError = "CastError".asInstanceOf[CastError]
   @scala.inline
-  def DeepMapAsObject: DeepMapAsObject = "DeepMapAsObject".asInstanceOf[DeepMapAsObject]
+  def DeepCreateObjectTransformer: DeepCreateObjectTransformer = "DeepCreateObjectTransformer".asInstanceOf[DeepCreateObjectTransformer]
   @scala.inline
-  def DeepNonFunctionProperties: DeepNonFunctionProperties = "DeepNonFunctionProperties".asInstanceOf[DeepNonFunctionProperties]
+  def DeepMapAsObject: DeepMapAsObject = "DeepMapAsObject".asInstanceOf[DeepMapAsObject]
   @scala.inline
   def DivergentArrayError: DivergentArrayError = "DivergentArrayError".asInstanceOf[DivergentArrayError]
   @scala.inline

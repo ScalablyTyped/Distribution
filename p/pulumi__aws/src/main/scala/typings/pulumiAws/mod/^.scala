@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  var AFSouth1Region: Region = js.native
   var APEast1Region: Region = js.native
   var APNortheast1Region: Region = js.native
   var APNortheast2Region: Region = js.native
@@ -19,6 +20,7 @@ object ^ extends js.Object {
   var CNNorthWest1Region: Region = js.native
   var EUCentral1Region: Region = js.native
   var EUNorth1Region: Region = js.native
+  var EUSouth1Region: Region = js.native
   var EUWest1Region: Region = js.native
   var EUWest2Region: Region = js.native
   var EUWest3Region: Region = js.native

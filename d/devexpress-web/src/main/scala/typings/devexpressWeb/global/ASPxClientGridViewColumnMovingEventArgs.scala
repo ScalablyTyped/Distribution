@@ -24,30 +24,5 @@ class ASPxClientGridViewColumnMovingEventArgs protected ()
     isDropBefore: Boolean,
     isGroupPanel: Boolean
   ) = this()
-  /**
-    * Gets or sets whether a column is allowed to be moved.
-    */
-  /* CompleteClass */
-  override var allow: Boolean = js.native
-  /**
-    * Gets the target column, before or after which the source column will be inserted (if dropped).
-    */
-  /* CompleteClass */
-  override var destinationColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
-  /**
-    * Gets whether the source column will be inserted before the target column (if dropped).
-    */
-  /* CompleteClass */
-  override var isDropBefore: Boolean = js.native
-  /**
-    * Gets whether the source column is currently over the Group Panel.
-    */
-  /* CompleteClass */
-  override var isGroupPanel: Boolean = js.native
-  /**
-    * Gets the column currently being dragged by an end-user.
-    */
-  /* CompleteClass */
-  override var sourceColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
 }
 

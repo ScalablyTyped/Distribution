@@ -1,8 +1,8 @@
 package typings.bardjs
 
 import typings.chai.Chai.AssertionError
-import typings.mocha.Mocha.IHookCallbackContext
-import typings.mocha.Mocha.IRunner
+import typings.mocha.Mocha.Context
+import typings.mocha.Mocha.Runner
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -97,6 +97,7 @@ object global extends js.Object {
     def httpBackend(
       $provide: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.auto.IProvideService */ js.Any
     ): js.Any = js.native
+    def inject(context: js.UndefOr[scala.Nothing], args: String*): Unit = js.native
     /**
       * Inject selected services into the windows object during test
       * then remove them when test ends with an `afterEach`.
@@ -114,9 +115,8 @@ object global extends js.Object {
       *    [strings]   - same string array you'd use to set fn.$inject
       *    (...string) - string arguments turned into a string array
       */
-    def inject(): Unit = js.native
     def inject(context: js.Function, args: String*): Unit = js.native
-    def inject(context: IHookCallbackContext, args: String*): Unit = js.native
+    def inject(context: Context, args: String*): Unit = js.native
     /**
       * Write to console if bard debugging flag is on
       */
@@ -127,7 +127,7 @@ object global extends js.Object {
       *     var runner = mocha.run();
       *     bard.mochaRunnerListener(runner);
       */
-    def mochaRunnerListener(runner: IRunner): Unit = js.native
+    def mochaRunnerListener(runner: Runner): Unit = js.native
     /**
       * Mocks out a service with sinon stubbed functions
       * that return the values specified in the config

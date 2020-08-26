@@ -10,9 +10,9 @@ Accessible modal dialog component for React.JS
 | ------------------ | :-------------: |
 | Full name          | react-modal |
 | Keywords           | react, react-component, modal, dialog |
-| # releases         | 22 |
-| # dependents       | 592 |
-| # downloads        | 49523659 |
+| # releases         | 20 |
+| # dependents       | 604 |
+| # downloads        | 49663698 |
 | # stars            | 45 |
 
 ## Links

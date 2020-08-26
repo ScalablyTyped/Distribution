@@ -26,18 +26,38 @@ trait SavingsPlansUtilization extends js.Object {
 
 object SavingsPlansUtilization {
   @scala.inline
-  def apply(
-    TotalCommitment: GenericString = null,
-    UnusedCommitment: GenericString = null,
-    UsedCommitment: GenericString = null,
-    UtilizationPercentage: GenericString = null
-  ): SavingsPlansUtilization = {
+  def apply(): SavingsPlansUtilization = {
     val __obj = js.Dynamic.literal()
-    if (TotalCommitment != null) __obj.updateDynamic("TotalCommitment")(TotalCommitment.asInstanceOf[js.Any])
-    if (UnusedCommitment != null) __obj.updateDynamic("UnusedCommitment")(UnusedCommitment.asInstanceOf[js.Any])
-    if (UsedCommitment != null) __obj.updateDynamic("UsedCommitment")(UsedCommitment.asInstanceOf[js.Any])
-    if (UtilizationPercentage != null) __obj.updateDynamic("UtilizationPercentage")(UtilizationPercentage.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansUtilization]
   }
+  @scala.inline
+  implicit class SavingsPlansUtilizationOps[Self <: SavingsPlansUtilization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTotalCommitment(value: GenericString): Self = this.set("TotalCommitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCommitment: Self = this.set("TotalCommitment", js.undefined)
+    @scala.inline
+    def setUnusedCommitment(value: GenericString): Self = this.set("UnusedCommitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnusedCommitment: Self = this.set("UnusedCommitment", js.undefined)
+    @scala.inline
+    def setUsedCommitment(value: GenericString): Self = this.set("UsedCommitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsedCommitment: Self = this.set("UsedCommitment", js.undefined)
+    @scala.inline
+    def setUtilizationPercentage(value: GenericString): Self = this.set("UtilizationPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilizationPercentage: Self = this.set("UtilizationPercentage", js.undefined)
+  }
+  
 }
 

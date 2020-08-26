@@ -14,10 +14,10 @@ trait Typeofmarked extends js.Object {
   var InlineLexer: TypeofInlineLexer = js.native
   var Lexer: TypeofLexer = js.native
   var Parser: TypeofParser = js.native
-  var Renderer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.mod.Renderer] = js.native
+  var Renderer: Instantiable1[/* options */ js.UndefOr[MarkedOptions], typings.marked.mod.Renderer] = js.native
   var Slugger: Instantiable0[typings.marked.mod.Slugger] = js.native
   var TextRenderer: Instantiable0[typings.marked.mod.TextRenderer] = js.native
-  var Tokenizer: Instantiable1[js.UndefOr[/* options */ MarkedOptions], typings.marked.mod.Tokenizer] = js.native
+  var Tokenizer: Instantiable1[/* options */ js.UndefOr[MarkedOptions], typings.marked.mod.Tokenizer] = js.native
   val Tokens: js.Any = js.native
   val defaults: MarkedOptions = js.native
   /**
@@ -93,6 +93,11 @@ trait Typeofmarked extends js.Object {
     */
   def parse(
     src: String,
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
+  ): String = js.native
+  def parse(
+    src: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
   ): String = js.native
   def parse(src: String, options: MarkedOptions): String = js.native

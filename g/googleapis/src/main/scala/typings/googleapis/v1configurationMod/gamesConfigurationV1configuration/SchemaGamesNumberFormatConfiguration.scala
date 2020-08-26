@@ -36,18 +36,38 @@ trait SchemaGamesNumberFormatConfiguration extends js.Object {
 
 object SchemaGamesNumberFormatConfiguration {
   @scala.inline
-  def apply(
-    currencyCode: String = null,
-    numDecimalPlaces: js.UndefOr[Double] = js.undefined,
-    numberFormatType: String = null,
-    suffix: SchemaGamesNumberAffixConfiguration = null
-  ): SchemaGamesNumberFormatConfiguration = {
+  def apply(): SchemaGamesNumberFormatConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(numDecimalPlaces)) __obj.updateDynamic("numDecimalPlaces")(numDecimalPlaces.get.asInstanceOf[js.Any])
-    if (numberFormatType != null) __obj.updateDynamic("numberFormatType")(numberFormatType.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGamesNumberFormatConfiguration]
   }
+  @scala.inline
+  implicit class SchemaGamesNumberFormatConfigurationOps[Self <: SchemaGamesNumberFormatConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setNumDecimalPlaces(value: Double): Self = this.set("numDecimalPlaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumDecimalPlaces: Self = this.set("numDecimalPlaces", js.undefined)
+    @scala.inline
+    def setNumberFormatType(value: String): Self = this.set("numberFormatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberFormatType: Self = this.set("numberFormatType", js.undefined)
+    @scala.inline
+    def setSuffix(value: SchemaGamesNumberAffixConfiguration): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+  }
+  
 }
 

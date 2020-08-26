@@ -18,6 +18,7 @@ object Snap extends js.Object {
     * @param divide If `true` it will divide the snapped value by the gap before returning. Default false.
     */
   def Ceil(value: Double, gap: Double): Double = js.native
+  def Ceil(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
   def Ceil(value: Double, gap: Double, start: Double): Double = js.native
   def Ceil(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
   /**
@@ -31,6 +32,7 @@ object Snap extends js.Object {
     * @param divide If `true` it will divide the snapped value by the gap before returning. Default false.
     */
   def Floor(value: Double, gap: Double): Double = js.native
+  def Floor(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
   def Floor(value: Double, gap: Double, start: Double): Double = js.native
   def Floor(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
   /**
@@ -43,6 +45,7 @@ object Snap extends js.Object {
     * @param divide If `true` it will divide the snapped value by the gap before returning. Default false.
     */
   def To(value: Double, gap: Double): Double = js.native
+  def To(value: Double, gap: Double, start: js.UndefOr[scala.Nothing], divide: Boolean): Double = js.native
   def To(value: Double, gap: Double, start: Double): Double = js.native
   def To(value: Double, gap: Double, start: Double, divide: Boolean): Double = js.native
 }

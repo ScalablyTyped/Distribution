@@ -18,10 +18,26 @@ trait SchemaRuntimeMetadata extends js.Object {
 
 object SchemaRuntimeMetadata {
   @scala.inline
-  def apply(computeEngine: SchemaComputeEngine = null): SchemaRuntimeMetadata = {
+  def apply(): SchemaRuntimeMetadata = {
     val __obj = js.Dynamic.literal()
-    if (computeEngine != null) __obj.updateDynamic("computeEngine")(computeEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRuntimeMetadata]
   }
+  @scala.inline
+  implicit class SchemaRuntimeMetadataOps[Self <: SchemaRuntimeMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeEngine(value: SchemaComputeEngine): Self = this.set("computeEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEngine: Self = this.set("computeEngine", js.undefined)
+  }
+  
 }
 

@@ -34,20 +34,44 @@ trait SchemaDealTermsGuaranteedFixedPriceTerms extends js.Object {
 
 object SchemaDealTermsGuaranteedFixedPriceTerms {
   @scala.inline
-  def apply(
-    billingInfo: SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo = null,
-    fixedPrices: js.Array[SchemaPricePerBuyer] = null,
-    guaranteedImpressions: String = null,
-    guaranteedLooks: String = null,
-    minimumDailyLooks: String = null
-  ): SchemaDealTermsGuaranteedFixedPriceTerms = {
+  def apply(): SchemaDealTermsGuaranteedFixedPriceTerms = {
     val __obj = js.Dynamic.literal()
-    if (billingInfo != null) __obj.updateDynamic("billingInfo")(billingInfo.asInstanceOf[js.Any])
-    if (fixedPrices != null) __obj.updateDynamic("fixedPrices")(fixedPrices.asInstanceOf[js.Any])
-    if (guaranteedImpressions != null) __obj.updateDynamic("guaranteedImpressions")(guaranteedImpressions.asInstanceOf[js.Any])
-    if (guaranteedLooks != null) __obj.updateDynamic("guaranteedLooks")(guaranteedLooks.asInstanceOf[js.Any])
-    if (minimumDailyLooks != null) __obj.updateDynamic("minimumDailyLooks")(minimumDailyLooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDealTermsGuaranteedFixedPriceTerms]
   }
+  @scala.inline
+  implicit class SchemaDealTermsGuaranteedFixedPriceTermsOps[Self <: SchemaDealTermsGuaranteedFixedPriceTerms] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingInfo(value: SchemaDealTermsGuaranteedFixedPriceTermsBillingInfo): Self = this.set("billingInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingInfo: Self = this.set("billingInfo", js.undefined)
+    @scala.inline
+    def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = this.set("fixedPrices", js.Array(value :_*))
+    @scala.inline
+    def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = this.set("fixedPrices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedPrices: Self = this.set("fixedPrices", js.undefined)
+    @scala.inline
+    def setGuaranteedImpressions(value: String): Self = this.set("guaranteedImpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuaranteedImpressions: Self = this.set("guaranteedImpressions", js.undefined)
+    @scala.inline
+    def setGuaranteedLooks(value: String): Self = this.set("guaranteedLooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuaranteedLooks: Self = this.set("guaranteedLooks", js.undefined)
+    @scala.inline
+    def setMinimumDailyLooks(value: String): Self = this.set("minimumDailyLooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumDailyLooks: Self = this.set("minimumDailyLooks", js.undefined)
+  }
+  
 }
 

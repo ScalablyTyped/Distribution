@@ -119,7 +119,7 @@ object pathMod extends js.Object {
     ): js.Array[typings.uirouterCore.pathNodeMod.PathNode] = js.native
     def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[Param] = js.native
     /** Gets the raw parameter values from a path */
-    def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Object = js.native
+    def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = js.native
     /**
       * Return a subpath of a path, which stops at the first matching node
       *

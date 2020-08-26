@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation._
 
 /* Inlined jest-haste-map.jest-haste-map/build/types.HType[keyof jest-haste-map.jest-haste-map/build/types.HType] */
 /* Rewritten from type alias, can be one of: 
-  - typings.jestHasteMap.jestHasteMapNumbers.`4`
   - typings.jestHasteMap.jestHasteMapNumbers.`3`
+  - typings.jestHasteMap.jestHasteMapNumbers.`2`
+  - typings.jestHasteMap.jestHasteMapNumbers.`4`
   - typings.jestHasteMap.jestHasteMapNumbers.`0`
   - typings.jestHasteMap.jestHasteMapNumbers.`5`
   - typings.jestHasteMap.jestHasteMapNumbers.`1`
-  - typings.jestHasteMap.jestHasteMapNumbers.`2`
-  - typings.jestHasteMap.jestHasteMapStrings.Null
   - typings.jestHasteMap.jestHasteMapStrings.g
   - typings.jestHasteMap.jestHasteMapStrings.native
+  - typings.jestHasteMap.jestHasteMapStrings.Null
 */
 trait HTypeValue extends js.Object
 

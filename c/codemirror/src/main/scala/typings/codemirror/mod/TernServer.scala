@@ -139,7 +139,7 @@ trait TernServer extends js.Object {
     pos: Position
   ): Unit = js.native
   @JSName("request")
-  def request_result[Q /* <: `type` | files | refs | rename | definition | completions | properties | documentation */](
+  def request_result[Q /* <: files | rename | `type` | refs | completions | documentation | properties | definition */](
     cm: Doc,
     query: Q,
     callback: js.Function2[
@@ -151,7 +151,7 @@ trait TernServer extends js.Object {
     ]
   ): Unit = js.native
   @JSName("request")
-  def request_result[Q /* <: `type` | files | refs | rename | definition | completions | properties | documentation */](
+  def request_result[Q /* <: files | rename | `type` | refs | completions | documentation | properties | definition */](
     cm: Doc,
     query: Q,
     callback: js.Function2[
@@ -165,11 +165,13 @@ trait TernServer extends js.Object {
   ): Unit = js.native
   def selectName(cm: Doc): Unit = js.native
   def showDocs(cm: Doc): Unit = js.native
+  def showDocs(cm: Doc, pos: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def showDocs(cm: Doc, pos: Double): Unit = js.native
   def showDocs(cm: Doc, pos: Double, callback: js.Function): Unit = js.native
   def showDocs(cm: Doc, pos: Position): Unit = js.native
   def showDocs(cm: Doc, pos: Position, callback: js.Function): Unit = js.native
   def showType(cm: Doc): Unit = js.native
+  def showType(cm: Doc, pos: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def showType(cm: Doc, pos: Double): Unit = js.native
   def showType(cm: Doc, pos: Double, callback: js.Function): Unit = js.native
   def showType(cm: Doc, pos: Position): Unit = js.native

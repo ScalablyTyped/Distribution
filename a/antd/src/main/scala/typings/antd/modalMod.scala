@@ -2,6 +2,7 @@ package typings.antd
 
 import typings.antd.anon.OmitModalStaticFunctionsw
 import typings.antd.anon.PartialModalProps
+import typings.antd.anon.RootPrefixCls
 import typings.antd.anon.WeakValidationMapModalPro
 import typings.antd.confirmMod.ModalFunc
 import typings.antd.modalModalMod.ModalProps
@@ -15,9 +16,10 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/modal", JSImport.Namespace)
 @js.native
 object modalMod extends js.Object {
-  /* Inlined antd.antd/lib/modal/Modal.ModalInterface & antd.antd/lib/modal/confirm.ModalStaticFunctions & {destroyAll (): void} */
+  /* Inlined antd.antd/lib/modal/Modal.ModalInterface & antd.antd/lib/modal/confirm.ModalStaticFunctions & {destroyAll (): void,   config :(hasRootPrefixCls : {  rootPrefixCls :string | undefined}): void} */
   @js.native
   trait Modal extends js.Object {
+    var config: js.Function1[/* hasRootPrefixCls */ RootPrefixCls, Unit] = js.native
     var confirm: ModalFunc = js.native
     var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
     var defaultProps: js.UndefOr[PartialModalProps] = js.native

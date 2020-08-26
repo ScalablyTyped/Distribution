@@ -55,34 +55,72 @@ trait WindowsFileSystemConfiguration extends js.Object {
 
 object WindowsFileSystemConfiguration {
   @scala.inline
-  def apply(
-    ActiveDirectoryId: DirectoryId = null,
-    AutomaticBackupRetentionDays: js.UndefOr[AutomaticBackupRetentionDays] = js.undefined,
-    CopyTagsToBackups: js.UndefOr[Flag] = js.undefined,
-    DailyAutomaticBackupStartTime: DailyTime = null,
-    DeploymentType: WindowsDeploymentType = null,
-    MaintenanceOperationsInProgress: FileSystemMaintenanceOperations = null,
-    PreferredFileServerIp: IpAddress = null,
-    PreferredSubnetId: SubnetId = null,
-    RemoteAdministrationEndpoint: DNSName = null,
-    SelfManagedActiveDirectoryConfiguration: SelfManagedActiveDirectoryAttributes = null,
-    ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined,
-    WeeklyMaintenanceStartTime: WeeklyTime = null
-  ): WindowsFileSystemConfiguration = {
+  def apply(): WindowsFileSystemConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ActiveDirectoryId != null) __obj.updateDynamic("ActiveDirectoryId")(ActiveDirectoryId.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutomaticBackupRetentionDays)) __obj.updateDynamic("AutomaticBackupRetentionDays")(AutomaticBackupRetentionDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTagsToBackups)) __obj.updateDynamic("CopyTagsToBackups")(CopyTagsToBackups.get.asInstanceOf[js.Any])
-    if (DailyAutomaticBackupStartTime != null) __obj.updateDynamic("DailyAutomaticBackupStartTime")(DailyAutomaticBackupStartTime.asInstanceOf[js.Any])
-    if (DeploymentType != null) __obj.updateDynamic("DeploymentType")(DeploymentType.asInstanceOf[js.Any])
-    if (MaintenanceOperationsInProgress != null) __obj.updateDynamic("MaintenanceOperationsInProgress")(MaintenanceOperationsInProgress.asInstanceOf[js.Any])
-    if (PreferredFileServerIp != null) __obj.updateDynamic("PreferredFileServerIp")(PreferredFileServerIp.asInstanceOf[js.Any])
-    if (PreferredSubnetId != null) __obj.updateDynamic("PreferredSubnetId")(PreferredSubnetId.asInstanceOf[js.Any])
-    if (RemoteAdministrationEndpoint != null) __obj.updateDynamic("RemoteAdministrationEndpoint")(RemoteAdministrationEndpoint.asInstanceOf[js.Any])
-    if (SelfManagedActiveDirectoryConfiguration != null) __obj.updateDynamic("SelfManagedActiveDirectoryConfiguration")(SelfManagedActiveDirectoryConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(ThroughputCapacity)) __obj.updateDynamic("ThroughputCapacity")(ThroughputCapacity.get.asInstanceOf[js.Any])
-    if (WeeklyMaintenanceStartTime != null) __obj.updateDynamic("WeeklyMaintenanceStartTime")(WeeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsFileSystemConfiguration]
   }
+  @scala.inline
+  implicit class WindowsFileSystemConfigurationOps[Self <: WindowsFileSystemConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveDirectoryId(value: DirectoryId): Self = this.set("ActiveDirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDirectoryId: Self = this.set("ActiveDirectoryId", js.undefined)
+    @scala.inline
+    def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = this.set("AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticBackupRetentionDays: Self = this.set("AutomaticBackupRetentionDays", js.undefined)
+    @scala.inline
+    def setCopyTagsToBackups(value: Flag): Self = this.set("CopyTagsToBackups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToBackups: Self = this.set("CopyTagsToBackups", js.undefined)
+    @scala.inline
+    def setDailyAutomaticBackupStartTime(value: DailyTime): Self = this.set("DailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDailyAutomaticBackupStartTime: Self = this.set("DailyAutomaticBackupStartTime", js.undefined)
+    @scala.inline
+    def setDeploymentType(value: WindowsDeploymentType): Self = this.set("DeploymentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentType: Self = this.set("DeploymentType", js.undefined)
+    @scala.inline
+    def setMaintenanceOperationsInProgressVarargs(value: FileSystemMaintenanceOperation*): Self = this.set("MaintenanceOperationsInProgress", js.Array(value :_*))
+    @scala.inline
+    def setMaintenanceOperationsInProgress(value: FileSystemMaintenanceOperations): Self = this.set("MaintenanceOperationsInProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceOperationsInProgress: Self = this.set("MaintenanceOperationsInProgress", js.undefined)
+    @scala.inline
+    def setPreferredFileServerIp(value: IpAddress): Self = this.set("PreferredFileServerIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredFileServerIp: Self = this.set("PreferredFileServerIp", js.undefined)
+    @scala.inline
+    def setPreferredSubnetId(value: SubnetId): Self = this.set("PreferredSubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredSubnetId: Self = this.set("PreferredSubnetId", js.undefined)
+    @scala.inline
+    def setRemoteAdministrationEndpoint(value: DNSName): Self = this.set("RemoteAdministrationEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAdministrationEndpoint: Self = this.set("RemoteAdministrationEndpoint", js.undefined)
+    @scala.inline
+    def setSelfManagedActiveDirectoryConfiguration(value: SelfManagedActiveDirectoryAttributes): Self = this.set("SelfManagedActiveDirectoryConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfManagedActiveDirectoryConfiguration: Self = this.set("SelfManagedActiveDirectoryConfiguration", js.undefined)
+    @scala.inline
+    def setThroughputCapacity(value: MegabytesPerSecond): Self = this.set("ThroughputCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputCapacity: Self = this.set("ThroughputCapacity", js.undefined)
+    @scala.inline
+    def setWeeklyMaintenanceStartTime(value: WeeklyTime): Self = this.set("WeeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeklyMaintenanceStartTime: Self = this.set("WeeklyMaintenanceStartTime", js.undefined)
+  }
+  
 }
 

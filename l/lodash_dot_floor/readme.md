@@ -12,7 +12,7 @@ The lodash method `_.floor` exported as a module.
 | Keywords           | lodash-modularized, floor |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 19955 |
+| # downloads        | 20582 |
 | # stars            | 0 |
 
 ## Links

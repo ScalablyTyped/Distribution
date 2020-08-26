@@ -23,30 +23,62 @@ trait SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse extends js.Obje
 
 object SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse {
   @scala.inline
-  def apply(
-    expiresIn: String = null,
-    idToken: String = null,
-    isNewUser: js.UndefOr[Boolean] = js.undefined,
-    localId: String = null,
-    phoneNumber: String = null,
-    refreshToken: String = null,
-    temporaryProof: String = null,
-    temporaryProofExpiresIn: String = null,
-    verificationProof: String = null,
-    verificationProofExpiresIn: String = null
-  ): SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse = {
     val __obj = js.Dynamic.literal()
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser.get.asInstanceOf[js.Any])
-    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
-    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber.asInstanceOf[js.Any])
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
-    if (temporaryProof != null) __obj.updateDynamic("temporaryProof")(temporaryProof.asInstanceOf[js.Any])
-    if (temporaryProofExpiresIn != null) __obj.updateDynamic("temporaryProofExpiresIn")(temporaryProofExpiresIn.asInstanceOf[js.Any])
-    if (verificationProof != null) __obj.updateDynamic("verificationProof")(verificationProof.asInstanceOf[js.Any])
-    if (verificationProofExpiresIn != null) __obj.updateDynamic("verificationProofExpiresIn")(verificationProofExpiresIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponseOps[Self <: SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpiresIn(value: String): Self = this.set("expiresIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiresIn: Self = this.set("expiresIn", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setIsNewUser(value: Boolean): Self = this.set("isNewUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsNewUser: Self = this.set("isNewUser", js.undefined)
+    @scala.inline
+    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalId: Self = this.set("localId", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: String): Self = this.set("phoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("phoneNumber", js.undefined)
+    @scala.inline
+    def setRefreshToken(value: String): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+    @scala.inline
+    def setTemporaryProof(value: String): Self = this.set("temporaryProof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporaryProof: Self = this.set("temporaryProof", js.undefined)
+    @scala.inline
+    def setTemporaryProofExpiresIn(value: String): Self = this.set("temporaryProofExpiresIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporaryProofExpiresIn: Self = this.set("temporaryProofExpiresIn", js.undefined)
+    @scala.inline
+    def setVerificationProof(value: String): Self = this.set("verificationProof", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationProof: Self = this.set("verificationProof", js.undefined)
+    @scala.inline
+    def setVerificationProofExpiresIn(value: String): Self = this.set("verificationProofExpiresIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationProofExpiresIn: Self = this.set("verificationProofExpiresIn", js.undefined)
+  }
+  
 }
 

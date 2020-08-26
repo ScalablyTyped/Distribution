@@ -4,22 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Mixin extends js.Object {
-  var mixin: js.UndefOr[String] = js.undefined
-  var sizes: js.UndefOr[String] = js.undefined
-  var sprites: js.UndefOr[String] = js.undefined
-  var variables: js.UndefOr[String] = js.undefined
+  var mixin: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.native
+  var sprites: js.UndefOr[String] = js.native
+  var variables: js.UndefOr[String] = js.native
 }
 
 object Mixin {
   @scala.inline
-  def apply(mixin: String = null, sizes: String = null, sprites: String = null, variables: String = null): Mixin = {
+  def apply(): Mixin = {
     val __obj = js.Dynamic.literal()
-    if (mixin != null) __obj.updateDynamic("mixin")(mixin.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (sprites != null) __obj.updateDynamic("sprites")(sprites.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mixin]
   }
+  @scala.inline
+  implicit class MixinOps[Self <: Mixin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMixin(value: String): Self = this.set("mixin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixin: Self = this.set("mixin", js.undefined)
+    @scala.inline
+    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setSprites(value: String): Self = this.set("sprites", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSprites: Self = this.set("sprites", js.undefined)
+    @scala.inline
+    def setVariables(value: String): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

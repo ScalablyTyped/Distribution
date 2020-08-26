@@ -109,6 +109,8 @@ trait dynaTrace extends js.Object {
     * @returns id of created action
     */
   def enterAction(name: String, `type`: String): Double = js.native
+  def enterAction(name: String, `type`: String, time: js.UndefOr[scala.Nothing], parentAction: Boolean): Double = js.native
+  def enterAction(name: String, `type`: String, time: js.UndefOr[scala.Nothing], parentAction: Double): Double = js.native
   def enterAction(name: String, `type`: String, time: Double): Double = js.native
   def enterAction(name: String, `type`: String, time: Double, parentAction: Boolean): Double = js.native
   def enterAction(name: String, `type`: String, time: Double, parentAction: Double): Double = js.native
@@ -142,6 +144,7 @@ trait dynaTrace extends js.Object {
     * @param startTime - optional start time in milliseconds (necessary if start time should be modified)
     */
   def leaveAction(actionId: Double): Unit = js.native
+  def leaveAction(actionId: Double, time: js.UndefOr[scala.Nothing], startTime: Double): Unit = js.native
   def leaveAction(actionId: Double, time: Double): Unit = js.native
   def leaveAction(actionId: Double, time: Double, startTime: Double): Unit = js.native
   /**
@@ -254,6 +257,7 @@ trait dynaTrace extends js.Object {
     *     time of stopThirdParty call is used.
     */
   def stopThirdParty(url: String, success: Boolean): Unit = js.native
+  def stopThirdParty(url: String, success: Boolean, start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
   def stopThirdParty(url: String, success: Boolean, start: Double): Unit = js.native
   def stopThirdParty(url: String, success: Boolean, start: Double, stop: Double): Unit = js.native
   /**

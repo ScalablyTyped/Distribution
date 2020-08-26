@@ -15,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react.react.ComponentClass<react-async.react-async.AsyncProps<T>, react.react.ComponentState> & {  Initial  :react.react.FC<react-async.react-async.InitialProps<T>>,   Pending  :react.react.FC<react-async.react-async.PendingProps<T>>,   Loading  :react.react.FC<react-async.react-async.PendingProps<T>>,   Fulfilled  :react.react.FC<react-async.react-async.FulfilledProps<T>>,   Resolved  :react.react.FC<react-async.react-async.FulfilledProps<T>>,   Rejected  :react.react.FC<react-async.react-async.RejectedProps<T>>,   Settled  :react.react.FC<react-async.react-async.SettledProps<T>>} */
+/* Inlined react.react.ComponentClass<react-async.react-async.AsyncProps<T>, react.react.ComponentState> & {  Initial :react.react.FC<react-async.react-async.InitialProps<T>>,   Pending :react.react.FC<react-async.react-async.PendingProps<T>>,   Loading :react.react.FC<react-async.react-async.PendingProps<T>>,   Fulfilled :react.react.FC<react-async.react-async.FulfilledProps<T>>,   Resolved :react.react.FC<react-async.react-async.FulfilledProps<T>>,   Rejected :react.react.FC<react-async.react-async.RejectedProps<T>>,   Settled :react.react.FC<react-async.react-async.SettledProps<T>>} */
 @js.native
 trait AsyncConstructor[T]
   extends Instantiable1[/* props */ AsyncProps[T], Component[AsyncProps[T], ComponentState, js.Any]]

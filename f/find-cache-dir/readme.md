@@ -10,9 +10,9 @@ Finds the common standard cache directory
 | ------------------ | :-------------: |
 | Full name          | find-cache-dir |
 | Keywords           | cache, directory, dir, caching, find, search |
-| # releases         | 4 |
-| # dependents       | 283 |
-| # downloads        | 557675497 |
+| # releases         | 6 |
+| # dependents       | 287 |
+| # downloads        | 577501330 |
 | # stars            | 2 |
 
 ## Links

@@ -29,6 +29,7 @@ class ResourceProjectsLocationsRegistriesDevicesStates protected () extends js.O
     */
   def list(): GaxiosPromise[SchemaListDeviceStatesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDeviceStatesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDeviceStatesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsRegistriesDevicesStatesList): GaxiosPromise[SchemaListDeviceStatesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsRegistriesDevicesStatesList,

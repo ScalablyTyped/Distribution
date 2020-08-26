@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.orientjs.orientjsStrings.b
 import typings.orientjs.orientjsStrings.d
 import typings.std.Object
-import typings.std.PropertyKey
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,9 +15,6 @@ class ORecord () extends Object {
   var `@rid`: js.UndefOr[ORID] = js.native
   var `@type`: js.UndefOr[d | b] = js.native
   var `@version`: js.UndefOr[Version] = js.native
-  /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
-  /* CompleteClass */
-  override var constructor: js.Function = js.native
   var rid: js.UndefOr[ORID] = js.native
   /**
     * Insert the given record into the database.
@@ -70,12 +66,6 @@ class ORecord () extends Object {
     */
   def get(record: ORecord): js.Promise[ORecord | Buffer] = js.native
   def get(record: ORecord, options: js.Any): js.Promise[ORecord | Buffer] = js.native
-  /**
-    * Determines whether an object has a property with the specified name.
-    * @param v A property name.
-    */
-  /* CompleteClass */
-  override def hasOwnProperty(v: PropertyKey): Boolean = js.native
   def meta(record: String): js.Promise[RecordMeta] = js.native
   def meta(record: String, options: js.Any): js.Promise[RecordMeta] = js.native
   /**
@@ -99,12 +89,6 @@ class ORecord () extends Object {
   def meta(record: ORecord): js.Promise[RecordMeta] = js.native
   def meta(record: ORecord, options: js.Any): js.Promise[RecordMeta] = js.native
   /**
-    * Determines whether a specified property is enumerable.
-    * @param v A property name.
-    */
-  /* CompleteClass */
-  override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
-  /**
     * Resolve all references within the given collection of records.
     *
     * @param  records  The records to resolve.
@@ -119,6 +103,7 @@ class ORecord () extends Object {
     * @promise {Object}        The updated record.
     */
   def update(): js.Promise[ORecord] = js.native
+  def update(record: js.UndefOr[scala.Nothing], options: js.Any): js.Promise[ORecord] = js.native
   def update(record: ORID): js.Promise[ORecord] = js.native
   def update(record: ORID, options: js.Any): js.Promise[ORecord] = js.native
   def update(record: ORecord): js.Promise[ORecord] = js.native

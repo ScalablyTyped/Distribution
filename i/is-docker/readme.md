@@ -11,8 +11,8 @@ Check if the process is running inside a Docker container
 | Full name          | is-docker |
 | Keywords           | detect, docker, dockerized, container, inside, is, env, environment, process |
 | # releases         | 2 |
-| # dependents       | 62 |
-| # downloads        | 24470894 |
+| # dependents       | 65 |
+| # downloads        | 26639162 |
 | # stars            | 1 |
 
 ## Links

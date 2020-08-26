@@ -8,97 +8,166 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawerProps extends js.Object {
-  var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
-  var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var closable: js.UndefOr[Boolean] = js.undefined
-  var closeIcon: js.UndefOr[ReactNode] = js.undefined
-  var destroyOnClose: js.UndefOr[Boolean] = js.undefined
+  var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+  var bodyStyle: js.UndefOr[CSSProperties] = js.native
+  var className: js.UndefOr[String] = js.native
+  var closable: js.UndefOr[Boolean] = js.native
+  var closeIcon: js.UndefOr[ReactNode] = js.native
+  var destroyOnClose: js.UndefOr[Boolean] = js.native
   /** wrapper dom node style of header and body */
-  var drawerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var footer: js.UndefOr[ReactNode] = js.undefined
-  var footerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var forceRender: js.UndefOr[Boolean] = js.undefined
-  var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.undefined
-  var handler: js.UndefOr[ReactNode] = js.undefined
-  var headerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var keyboard: js.UndefOr[Boolean] = js.undefined
-  var mask: js.UndefOr[Boolean] = js.undefined
-  var maskClosable: js.UndefOr[Boolean] = js.undefined
-  var maskStyle: js.UndefOr[CSSProperties] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* e */ EventType, Unit]] = js.undefined
-  var placement: js.UndefOr[placementType] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var push: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var drawerStyle: js.UndefOr[CSSProperties] = js.native
+  var footer: js.UndefOr[ReactNode] = js.native
+  var footerStyle: js.UndefOr[CSSProperties] = js.native
+  var forceRender: js.UndefOr[Boolean] = js.native
+  var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false`] = js.native
+  var handler: js.UndefOr[ReactNode] = js.native
+  var headerStyle: js.UndefOr[CSSProperties] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.native
+  var maskClosable: js.UndefOr[Boolean] = js.native
+  var maskStyle: js.UndefOr[CSSProperties] = js.native
+  var onClose: js.UndefOr[js.Function1[/* e */ EventType, Unit]] = js.native
+  var placement: js.UndefOr[placementType] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var push: js.UndefOr[Boolean | PushState] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double | String] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object DrawerProps {
   @scala.inline
-  def apply(
-    afterVisibleChange: /* visible */ Boolean => Unit = null,
-    bodyStyle: CSSProperties = null,
-    className: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    closeIcon: ReactNode = null,
-    destroyOnClose: js.UndefOr[Boolean] = js.undefined,
-    drawerStyle: CSSProperties = null,
-    footer: ReactNode = null,
-    footerStyle: CSSProperties = null,
-    forceRender: js.UndefOr[Boolean] = js.undefined,
-    getContainer: String | HTMLElement | getContainerFunc | `false` = null,
-    handler: ReactNode = null,
-    headerStyle: CSSProperties = null,
-    height: Double | String = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskStyle: CSSProperties = null,
-    onClose: /* e */ EventType => Unit = null,
-    placement: placementType = null,
-    prefixCls: String = null,
-    push: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    title: ReactNode = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): DrawerProps = {
+  def apply(): DrawerProps = {
     val __obj = js.Dynamic.literal()
-    if (afterVisibleChange != null) __obj.updateDynamic("afterVisibleChange")(js.Any.fromFunction1(afterVisibleChange))
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.get.asInstanceOf[js.Any])
-    if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.get.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
-    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]
   }
+  @scala.inline
+  implicit class DrawerPropsOps[Self <: DrawerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterVisibleChange(value: /* visible */ Boolean => Unit): Self = this.set("afterVisibleChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterVisibleChange: Self = this.set("afterVisibleChange", js.undefined)
+    @scala.inline
+    def setBodyStyle(value: CSSProperties): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosable: Self = this.set("closable", js.undefined)
+    @scala.inline
+    def setCloseIcon(value: ReactNode): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    @scala.inline
+    def setDestroyOnClose(value: Boolean): Self = this.set("destroyOnClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroyOnClose: Self = this.set("destroyOnClose", js.undefined)
+    @scala.inline
+    def setDrawerStyle(value: CSSProperties): Self = this.set("drawerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrawerStyle: Self = this.set("drawerStyle", js.undefined)
+    @scala.inline
+    def setFooter(value: ReactNode): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setFooterStyle(value: CSSProperties): Self = this.set("footerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterStyle: Self = this.set("footerStyle", js.undefined)
+    @scala.inline
+    def setForceRender(value: Boolean): Self = this.set("forceRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceRender: Self = this.set("forceRender", js.undefined)
+    @scala.inline
+    def setGetContainerFunction0(value: () => HTMLElement): Self = this.set("getContainer", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetContainer(value: String | HTMLElement | getContainerFunc | `false`): Self = this.set("getContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetContainer: Self = this.set("getContainer", js.undefined)
+    @scala.inline
+    def setHandler(value: ReactNode): Self = this.set("handler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandler: Self = this.set("handler", js.undefined)
+    @scala.inline
+    def setHeaderStyle(value: CSSProperties): Self = this.set("headerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderStyle: Self = this.set("headerStyle", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskClosable(value: Boolean): Self = this.set("maskClosable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskClosable: Self = this.set("maskClosable", js.undefined)
+    @scala.inline
+    def setMaskStyle(value: CSSProperties): Self = this.set("maskStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskStyle: Self = this.set("maskStyle", js.undefined)
+    @scala.inline
+    def setOnClose(value: /* e */ EventType => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setPlacement(value: placementType): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setPush(value: Boolean | PushState): Self = this.set("push", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePush: Self = this.set("push", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

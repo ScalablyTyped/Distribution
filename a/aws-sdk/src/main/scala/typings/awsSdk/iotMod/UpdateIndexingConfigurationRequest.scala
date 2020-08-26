@@ -18,14 +18,30 @@ trait UpdateIndexingConfigurationRequest extends js.Object {
 
 object UpdateIndexingConfigurationRequest {
   @scala.inline
-  def apply(
-    thingGroupIndexingConfiguration: ThingGroupIndexingConfiguration = null,
-    thingIndexingConfiguration: ThingIndexingConfiguration = null
-  ): UpdateIndexingConfigurationRequest = {
+  def apply(): UpdateIndexingConfigurationRequest = {
     val __obj = js.Dynamic.literal()
-    if (thingGroupIndexingConfiguration != null) __obj.updateDynamic("thingGroupIndexingConfiguration")(thingGroupIndexingConfiguration.asInstanceOf[js.Any])
-    if (thingIndexingConfiguration != null) __obj.updateDynamic("thingIndexingConfiguration")(thingIndexingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateIndexingConfigurationRequest]
   }
+  @scala.inline
+  implicit class UpdateIndexingConfigurationRequestOps[Self <: UpdateIndexingConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setThingGroupIndexingConfiguration(value: ThingGroupIndexingConfiguration): Self = this.set("thingGroupIndexingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupIndexingConfiguration: Self = this.set("thingGroupIndexingConfiguration", js.undefined)
+    @scala.inline
+    def setThingIndexingConfiguration(value: ThingIndexingConfiguration): Self = this.set("thingIndexingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingIndexingConfiguration: Self = this.set("thingIndexingConfiguration", js.undefined)
+  }
+  
 }
 

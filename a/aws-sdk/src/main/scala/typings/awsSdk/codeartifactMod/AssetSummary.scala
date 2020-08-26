@@ -22,11 +22,32 @@ trait AssetSummary extends js.Object {
 
 object AssetSummary {
   @scala.inline
-  def apply(name: AssetName, hashes: AssetHashes = null, size: js.UndefOr[LongOptional] = js.undefined): AssetSummary = {
+  def apply(name: AssetName): AssetSummary = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (hashes != null) __obj.updateDynamic("hashes")(hashes.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSummary]
   }
+  @scala.inline
+  implicit class AssetSummaryOps[Self <: AssetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: AssetName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHashes(value: AssetHashes): Self = this.set("hashes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHashes: Self = this.set("hashes", js.undefined)
+    @scala.inline
+    def setSize(value: LongOptional): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait GetServersResponse extends js.Object {
 
 object GetServersResponse {
   @scala.inline
-  def apply(
-    lastModifiedOn: Timestamp = null,
-    nextToken: NextToken = null,
-    serverCatalogStatus: ServerCatalogStatus = null,
-    serverList: ServerList = null
-  ): GetServersResponse = {
+  def apply(): GetServersResponse = {
     val __obj = js.Dynamic.literal()
-    if (lastModifiedOn != null) __obj.updateDynamic("lastModifiedOn")(lastModifiedOn.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (serverCatalogStatus != null) __obj.updateDynamic("serverCatalogStatus")(serverCatalogStatus.asInstanceOf[js.Any])
-    if (serverList != null) __obj.updateDynamic("serverList")(serverList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServersResponse]
   }
+  @scala.inline
+  implicit class GetServersResponseOps[Self <: GetServersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastModifiedOn(value: Timestamp): Self = this.set("lastModifiedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedOn: Self = this.set("lastModifiedOn", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setServerCatalogStatus(value: ServerCatalogStatus): Self = this.set("serverCatalogStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerCatalogStatus: Self = this.set("serverCatalogStatus", js.undefined)
+    @scala.inline
+    def setServerListVarargs(value: Server*): Self = this.set("serverList", js.Array(value :_*))
+    @scala.inline
+    def setServerList(value: ServerList): Self = this.set("serverList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerList: Self = this.set("serverList", js.undefined)
+  }
+  
 }
 

@@ -42,11 +42,6 @@ class Sell () extends Resource {
     */
   var payout_at: js.UndefOr[String] = js.native
   /**
-    * Resource type
-    */
-  /* CompleteClass */
-  override var resource: ResourceType = js.native
-  /**
     * Constant "sell"
     */
   @JSName("resource")

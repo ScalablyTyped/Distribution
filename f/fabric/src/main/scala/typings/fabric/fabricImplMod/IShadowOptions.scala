@@ -4,23 +4,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IShadowOptions extends js.Object {
   /**
     * Whether the shadow should affect stroke operations
     */
-  var affectStroke: js.UndefOr[Boolean] = js.undefined
+  var affectStroke: js.UndefOr[Boolean] = js.native
   /**
     * Shadow blur
     */
-  var blur: js.UndefOr[Double] = js.undefined
+  var blur: js.UndefOr[Double] = js.native
   /**
     * Shadow color
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * Indicates whether toObject should include default values
     */
-  var includeDefaultValues: js.UndefOr[Boolean] = js.undefined
+  var includeDefaultValues: js.UndefOr[Boolean] = js.native
   /**
     * When `false`, the shadow will scale with the object.
     * When `true`, the shadow's offsetX, offsetY, and blur will not be affected by the object's scale.
@@ -28,37 +29,63 @@ trait IShadowOptions extends js.Object {
     * @type Boolean
     * @default
     */
-  var nonScaling: js.UndefOr[Boolean] = js.undefined
+  var nonScaling: js.UndefOr[Boolean] = js.native
   /**
     * Shadow horizontal offset
     */
-  var offsetX: js.UndefOr[Double] = js.undefined
+  var offsetX: js.UndefOr[Double] = js.native
   /**
     * Shadow vertical offset
     */
-  var offsetY: js.UndefOr[Double] = js.undefined
+  var offsetY: js.UndefOr[Double] = js.native
 }
 
 object IShadowOptions {
   @scala.inline
-  def apply(
-    affectStroke: js.UndefOr[Boolean] = js.undefined,
-    blur: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    includeDefaultValues: js.UndefOr[Boolean] = js.undefined,
-    nonScaling: js.UndefOr[Boolean] = js.undefined,
-    offsetX: js.UndefOr[Double] = js.undefined,
-    offsetY: js.UndefOr[Double] = js.undefined
-  ): IShadowOptions = {
+  def apply(): IShadowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(affectStroke)) __obj.updateDynamic("affectStroke")(affectStroke.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonScaling)) __obj.updateDynamic("nonScaling")(nonScaling.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShadowOptions]
   }
+  @scala.inline
+  implicit class IShadowOptionsOps[Self <: IShadowOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffectStroke(value: Boolean): Self = this.set("affectStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectStroke: Self = this.set("affectStroke", js.undefined)
+    @scala.inline
+    def setBlur(value: Double): Self = this.set("blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlur: Self = this.set("blur", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setIncludeDefaultValues(value: Boolean): Self = this.set("includeDefaultValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDefaultValues: Self = this.set("includeDefaultValues", js.undefined)
+    @scala.inline
+    def setNonScaling(value: Boolean): Self = this.set("nonScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonScaling: Self = this.set("nonScaling", js.undefined)
+    @scala.inline
+    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    @scala.inline
+    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+  }
+  
 }
 

@@ -106,57 +106,118 @@ trait ModifyDBClusterMessage extends js.Object {
 
 object ModifyDBClusterMessage {
   @scala.inline
-  def apply(
-    DBClusterIdentifier: String,
-    AllowMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfiguration = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
-    DBClusterParameterGroupName: String = null,
-    DBInstanceParameterGroupName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
-    Domain: String = null,
-    DomainIAMRoleName: String = null,
-    EnableGlobalWriteForwarding: js.UndefOr[BooleanOptional] = js.undefined,
-    EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined,
-    EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined,
-    EngineVersion: String = null,
-    MasterUserPassword: String = null,
-    NewDBClusterIdentifier: String = null,
-    OptionGroupName: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    PreferredBackupWindow: String = null,
-    PreferredMaintenanceWindow: String = null,
-    ScalingConfiguration: ScalingConfiguration = null,
-    VpcSecurityGroupIds: VpcSecurityGroupIdList = null
-  ): ModifyDBClusterMessage = {
+  def apply(DBClusterIdentifier: String): ModifyDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowMajorVersionUpgrade)) __obj.updateDynamic("AllowMajorVersionUpgrade")(AllowMajorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.get.asInstanceOf[js.Any])
-    if (CloudwatchLogsExportConfiguration != null) __obj.updateDynamic("CloudwatchLogsExportConfiguration")(CloudwatchLogsExportConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot.get.asInstanceOf[js.Any])
-    if (DBClusterParameterGroupName != null) __obj.updateDynamic("DBClusterParameterGroupName")(DBClusterParameterGroupName.asInstanceOf[js.Any])
-    if (DBInstanceParameterGroupName != null) __obj.updateDynamic("DBInstanceParameterGroupName")(DBInstanceParameterGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (DomainIAMRoleName != null) __obj.updateDynamic("DomainIAMRoleName")(DomainIAMRoleName.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableGlobalWriteForwarding)) __obj.updateDynamic("EnableGlobalWriteForwarding")(EnableGlobalWriteForwarding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableHttpEndpoint)) __obj.updateDynamic("EnableHttpEndpoint")(EnableHttpEndpoint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableIAMDatabaseAuthentication)) __obj.updateDynamic("EnableIAMDatabaseAuthentication")(EnableIAMDatabaseAuthentication.get.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (MasterUserPassword != null) __obj.updateDynamic("MasterUserPassword")(MasterUserPassword.asInstanceOf[js.Any])
-    if (NewDBClusterIdentifier != null) __obj.updateDynamic("NewDBClusterIdentifier")(NewDBClusterIdentifier.asInstanceOf[js.Any])
-    if (OptionGroupName != null) __obj.updateDynamic("OptionGroupName")(OptionGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (ScalingConfiguration != null) __obj.updateDynamic("ScalingConfiguration")(ScalingConfiguration.asInstanceOf[js.Any])
-    if (VpcSecurityGroupIds != null) __obj.updateDynamic("VpcSecurityGroupIds")(VpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBClusterMessage]
   }
+  @scala.inline
+  implicit class ModifyDBClusterMessageOps[Self <: ModifyDBClusterMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowMajorVersionUpgrade(value: Boolean): Self = this.set("AllowMajorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowMajorVersionUpgrade: Self = this.set("AllowMajorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("ApplyImmediately", js.undefined)
+    @scala.inline
+    def setBacktrackWindow(value: LongOptional): Self = this.set("BacktrackWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackWindow: Self = this.set("BacktrackWindow", js.undefined)
+    @scala.inline
+    def setBackupRetentionPeriod(value: IntegerOptional): Self = this.set("BackupRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionPeriod: Self = this.set("BackupRetentionPeriod", js.undefined)
+    @scala.inline
+    def setCloudwatchLogsExportConfiguration(value: CloudwatchLogsExportConfiguration): Self = this.set("CloudwatchLogsExportConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogsExportConfiguration: Self = this.set("CloudwatchLogsExportConfiguration", js.undefined)
+    @scala.inline
+    def setCopyTagsToSnapshot(value: BooleanOptional): Self = this.set("CopyTagsToSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToSnapshot: Self = this.set("CopyTagsToSnapshot", js.undefined)
+    @scala.inline
+    def setDBClusterParameterGroupName(value: String): Self = this.set("DBClusterParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterParameterGroupName: Self = this.set("DBClusterParameterGroupName", js.undefined)
+    @scala.inline
+    def setDBInstanceParameterGroupName(value: String): Self = this.set("DBInstanceParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceParameterGroupName: Self = this.set("DBInstanceParameterGroupName", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: BooleanOptional): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    @scala.inline
+    def setDomain(value: String): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("Domain", js.undefined)
+    @scala.inline
+    def setDomainIAMRoleName(value: String): Self = this.set("DomainIAMRoleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainIAMRoleName: Self = this.set("DomainIAMRoleName", js.undefined)
+    @scala.inline
+    def setEnableGlobalWriteForwarding(value: BooleanOptional): Self = this.set("EnableGlobalWriteForwarding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableGlobalWriteForwarding: Self = this.set("EnableGlobalWriteForwarding", js.undefined)
+    @scala.inline
+    def setEnableHttpEndpoint(value: BooleanOptional): Self = this.set("EnableHttpEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableHttpEndpoint: Self = this.set("EnableHttpEndpoint", js.undefined)
+    @scala.inline
+    def setEnableIAMDatabaseAuthentication(value: BooleanOptional): Self = this.set("EnableIAMDatabaseAuthentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableIAMDatabaseAuthentication: Self = this.set("EnableIAMDatabaseAuthentication", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setMasterUserPassword(value: String): Self = this.set("MasterUserPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUserPassword: Self = this.set("MasterUserPassword", js.undefined)
+    @scala.inline
+    def setNewDBClusterIdentifier(value: String): Self = this.set("NewDBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewDBClusterIdentifier: Self = this.set("NewDBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setOptionGroupName(value: String): Self = this.set("OptionGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupName: Self = this.set("OptionGroupName", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: String): Self = this.set("PreferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("PreferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setScalingConfiguration(value: ScalingConfiguration): Self = this.set("ScalingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingConfiguration: Self = this.set("ScalingConfiguration", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: String*): Self = this.set("VpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: VpcSecurityGroupIdList): Self = this.set("VpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("VpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

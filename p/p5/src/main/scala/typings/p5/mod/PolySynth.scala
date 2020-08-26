@@ -69,9 +69,145 @@ trait PolySynth extends js.Object {
     *   (defaults to 0)
     */
   def noteADSR(): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: js.UndefOr[scala.Nothing], attackTime: js.UndefOr[scala.Nothing], decayTime: Double): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: Double,
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: Double,
+    susRatio: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: Double,
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: js.UndefOr[scala.Nothing], attackTime: Double): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: js.UndefOr[scala.Nothing], attackTime: Double, decayTime: Double): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: Double,
+    decayTime: Double,
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: js.UndefOr[scala.Nothing], attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
+  def noteADSR(
+    note: js.UndefOr[scala.Nothing],
+    attackTime: Double,
+    decayTime: Double,
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
   def noteADSR(note: Double): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double
+  ): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: Double, attackTime: js.UndefOr[scala.Nothing], decayTime: Double): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: Double,
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: Double, attackTime: js.UndefOr[scala.Nothing], decayTime: Double, susRatio: Double): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: Double,
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
   def noteADSR(note: Double, attackTime: Double): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def noteADSR(note: Double, attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
   def noteADSR(note: Double, attackTime: Double, decayTime: Double): Unit = js.native
+  def noteADSR(
+    note: Double,
+    attackTime: Double,
+    decayTime: Double,
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
   def noteADSR(note: Double, attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def noteADSR(note: Double, attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
   /**
@@ -86,7 +222,11 @@ trait PolySynth extends js.Object {
     *   @param [secondsFromNow] time from now (in seconds)
     */
   def noteAttack(): Unit = js.native
+  def noteAttack(note: js.UndefOr[scala.Nothing], velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
+  def noteAttack(note: js.UndefOr[scala.Nothing], velocity: Double): Unit = js.native
+  def noteAttack(note: js.UndefOr[scala.Nothing], velocity: Double, secondsFromNow: Double): Unit = js.native
   def noteAttack(note: Double): Unit = js.native
+  def noteAttack(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def noteAttack(note: Double, velocity: Double): Unit = js.native
   def noteAttack(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   /**
@@ -101,6 +241,7 @@ trait PolySynth extends js.Object {
     *   release
     */
   def noteRelease(): Unit = js.native
+  def noteRelease(note: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
   def noteRelease(note: Double): Unit = js.native
   def noteRelease(note: Double, secondsFromNow: Double): Unit = js.native
   /**
@@ -116,8 +257,39 @@ trait PolySynth extends js.Object {
     *   releasing the envelope
     */
   def play(): Unit = js.native
+  def play(
+    note: js.UndefOr[scala.Nothing],
+    velocity: js.UndefOr[scala.Nothing],
+    secondsFromNow: js.UndefOr[scala.Nothing],
+    sustainTime: Double
+  ): Unit = js.native
+  def play(note: js.UndefOr[scala.Nothing], velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
+  def play(
+    note: js.UndefOr[scala.Nothing],
+    velocity: js.UndefOr[scala.Nothing],
+    secondsFromNow: Double,
+    sustainTime: Double
+  ): Unit = js.native
+  def play(note: js.UndefOr[scala.Nothing], velocity: Double): Unit = js.native
+  def play(
+    note: js.UndefOr[scala.Nothing],
+    velocity: Double,
+    secondsFromNow: js.UndefOr[scala.Nothing],
+    sustainTime: Double
+  ): Unit = js.native
+  def play(note: js.UndefOr[scala.Nothing], velocity: Double, secondsFromNow: Double): Unit = js.native
+  def play(note: js.UndefOr[scala.Nothing], velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: Double): Unit = js.native
+  def play(
+    note: Double,
+    velocity: js.UndefOr[scala.Nothing],
+    secondsFromNow: js.UndefOr[scala.Nothing],
+    sustainTime: Double
+  ): Unit = js.native
+  def play(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double): Unit = js.native
+  def play(note: Double, velocity: js.UndefOr[scala.Nothing], secondsFromNow: Double, sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double): Unit = js.native
+  def play(note: Double, velocity: Double, secondsFromNow: js.UndefOr[scala.Nothing], sustainTime: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double): Unit = js.native
   def play(note: Double, velocity: Double, secondsFromNow: Double, sustainTime: Double): Unit = js.native
   /**
@@ -142,8 +314,39 @@ trait PolySynth extends js.Object {
     *   (defaults to 0)
     */
   def setADSR(): Unit = js.native
+  def setADSR(
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def setADSR(attackTime: js.UndefOr[scala.Nothing], decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
+  def setADSR(
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: Double,
+    releaseTime: Double
+  ): Unit = js.native
+  def setADSR(attackTime: js.UndefOr[scala.Nothing], decayTime: Double): Unit = js.native
+  def setADSR(
+    attackTime: js.UndefOr[scala.Nothing],
+    decayTime: Double,
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def setADSR(attackTime: js.UndefOr[scala.Nothing], decayTime: Double, susRatio: Double): Unit = js.native
+  def setADSR(attackTime: js.UndefOr[scala.Nothing], decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double): Unit = js.native
+  def setADSR(
+    attackTime: Double,
+    decayTime: js.UndefOr[scala.Nothing],
+    susRatio: js.UndefOr[scala.Nothing],
+    releaseTime: Double
+  ): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: js.UndefOr[scala.Nothing], susRatio: Double, releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double): Unit = js.native
+  def setADSR(attackTime: Double, decayTime: Double, susRatio: js.UndefOr[scala.Nothing], releaseTime: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double): Unit = js.native
   def setADSR(attackTime: Double, decayTime: Double, susRatio: Double, releaseTime: Double): Unit = js.native
 }

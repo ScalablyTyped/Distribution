@@ -18,10 +18,28 @@ trait GenerateOrganizationsAccessReportRequest extends js.Object {
 
 object GenerateOrganizationsAccessReportRequest {
   @scala.inline
-  def apply(EntityPath: organizationsEntityPathType, OrganizationsPolicyId: organizationsPolicyIdType = null): GenerateOrganizationsAccessReportRequest = {
+  def apply(EntityPath: organizationsEntityPathType): GenerateOrganizationsAccessReportRequest = {
     val __obj = js.Dynamic.literal(EntityPath = EntityPath.asInstanceOf[js.Any])
-    if (OrganizationsPolicyId != null) __obj.updateDynamic("OrganizationsPolicyId")(OrganizationsPolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOrganizationsAccessReportRequest]
   }
+  @scala.inline
+  implicit class GenerateOrganizationsAccessReportRequestOps[Self <: GenerateOrganizationsAccessReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityPath(value: organizationsEntityPathType): Self = this.set("EntityPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrganizationsPolicyId(value: organizationsPolicyIdType): Self = this.set("OrganizationsPolicyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationsPolicyId: Self = this.set("OrganizationsPolicyId", js.undefined)
+  }
+  
 }
 

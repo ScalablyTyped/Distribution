@@ -50,30 +50,64 @@ trait GlobalCluster extends js.Object {
 
 object GlobalCluster {
   @scala.inline
-  def apply(
-    DatabaseName: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
-    Engine: String = null,
-    EngineVersion: String = null,
-    GlobalClusterArn: String = null,
-    GlobalClusterIdentifier: String = null,
-    GlobalClusterMembers: GlobalClusterMemberList = null,
-    GlobalClusterResourceId: String = null,
-    Status: String = null,
-    StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
-  ): GlobalCluster = {
+  def apply(): GlobalCluster = {
     val __obj = js.Dynamic.literal()
-    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (GlobalClusterArn != null) __obj.updateDynamic("GlobalClusterArn")(GlobalClusterArn.asInstanceOf[js.Any])
-    if (GlobalClusterIdentifier != null) __obj.updateDynamic("GlobalClusterIdentifier")(GlobalClusterIdentifier.asInstanceOf[js.Any])
-    if (GlobalClusterMembers != null) __obj.updateDynamic("GlobalClusterMembers")(GlobalClusterMembers.asInstanceOf[js.Any])
-    if (GlobalClusterResourceId != null) __obj.updateDynamic("GlobalClusterResourceId")(GlobalClusterResourceId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalCluster]
   }
+  @scala.inline
+  implicit class GlobalClusterOps[Self <: GlobalCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: BooleanOptional): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setGlobalClusterArn(value: String): Self = this.set("GlobalClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterArn: Self = this.set("GlobalClusterArn", js.undefined)
+    @scala.inline
+    def setGlobalClusterIdentifier(value: String): Self = this.set("GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterIdentifier: Self = this.set("GlobalClusterIdentifier", js.undefined)
+    @scala.inline
+    def setGlobalClusterMembersVarargs(value: GlobalClusterMember*): Self = this.set("GlobalClusterMembers", js.Array(value :_*))
+    @scala.inline
+    def setGlobalClusterMembers(value: GlobalClusterMemberList): Self = this.set("GlobalClusterMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterMembers: Self = this.set("GlobalClusterMembers", js.undefined)
+    @scala.inline
+    def setGlobalClusterResourceId(value: String): Self = this.set("GlobalClusterResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterResourceId: Self = this.set("GlobalClusterResourceId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: BooleanOptional): Self = this.set("StorageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("StorageEncrypted", js.undefined)
+  }
+  
 }
 

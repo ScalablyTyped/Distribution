@@ -42,26 +42,54 @@ trait BusinessReportSchedule extends js.Object {
 
 object BusinessReportSchedule {
   @scala.inline
-  def apply(
-    ContentRange: BusinessReportContentRange = null,
-    Format: BusinessReportFormat = null,
-    LastBusinessReport: BusinessReport = null,
-    Recurrence: BusinessReportRecurrence = null,
-    S3BucketName: CustomerS3BucketName = null,
-    S3KeyPrefix: S3KeyPrefix = null,
-    ScheduleArn: Arn = null,
-    ScheduleName: BusinessReportScheduleName = null
-  ): BusinessReportSchedule = {
+  def apply(): BusinessReportSchedule = {
     val __obj = js.Dynamic.literal()
-    if (ContentRange != null) __obj.updateDynamic("ContentRange")(ContentRange.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (LastBusinessReport != null) __obj.updateDynamic("LastBusinessReport")(LastBusinessReport.asInstanceOf[js.Any])
-    if (Recurrence != null) __obj.updateDynamic("Recurrence")(Recurrence.asInstanceOf[js.Any])
-    if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
-    if (S3KeyPrefix != null) __obj.updateDynamic("S3KeyPrefix")(S3KeyPrefix.asInstanceOf[js.Any])
-    if (ScheduleArn != null) __obj.updateDynamic("ScheduleArn")(ScheduleArn.asInstanceOf[js.Any])
-    if (ScheduleName != null) __obj.updateDynamic("ScheduleName")(ScheduleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusinessReportSchedule]
   }
+  @scala.inline
+  implicit class BusinessReportScheduleOps[Self <: BusinessReportSchedule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentRange(value: BusinessReportContentRange): Self = this.set("ContentRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentRange: Self = this.set("ContentRange", js.undefined)
+    @scala.inline
+    def setFormat(value: BusinessReportFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setLastBusinessReport(value: BusinessReport): Self = this.set("LastBusinessReport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastBusinessReport: Self = this.set("LastBusinessReport", js.undefined)
+    @scala.inline
+    def setRecurrence(value: BusinessReportRecurrence): Self = this.set("Recurrence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrence: Self = this.set("Recurrence", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: CustomerS3BucketName): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    @scala.inline
+    def setS3KeyPrefix(value: S3KeyPrefix): Self = this.set("S3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("S3KeyPrefix", js.undefined)
+    @scala.inline
+    def setScheduleArn(value: Arn): Self = this.set("ScheduleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleArn: Self = this.set("ScheduleArn", js.undefined)
+    @scala.inline
+    def setScheduleName(value: BusinessReportScheduleName): Self = this.set("ScheduleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleName: Self = this.set("ScheduleName", js.undefined)
+  }
+  
 }
 

@@ -132,12 +132,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteEvaluationResultsResponse, Unit]
   ): Request[DeleteEvaluationResultsResponse, AWSError] = js.native
   /**
-    * Deletes the specified organization config rule and all of its evaluation results from all member accounts in that organization. Only a master account can delete an organization config rule. AWS Config sets the state of a rule to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a rule while it is in this state.
+    * Deletes the specified organization config rule and all of its evaluation results from all member accounts in that organization.  Only a master account and a delegated administrator account can delete an organization config rule. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added. AWS Config sets the state of a rule to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a rule while it is in this state.
     */
   def deleteOrganizationConfigRule(): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConfigRule(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified organization config rule and all of its evaluation results from all member accounts in that organization. Only a master account can delete an organization config rule. AWS Config sets the state of a rule to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a rule while it is in this state.
+    * Deletes the specified organization config rule and all of its evaluation results from all member accounts in that organization.  Only a master account and a delegated administrator account can delete an organization config rule. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added. AWS Config sets the state of a rule to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a rule while it is in this state.
     */
   def deleteOrganizationConfigRule(params: DeleteOrganizationConfigRuleRequest): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConfigRule(
@@ -145,12 +145,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified organization conformance pack and all of the config rules and remediation actions from all member accounts in that organization. Only a master account can delete an organization conformance pack. AWS Config sets the state of a conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state. 
+    * Deletes the specified organization conformance pack and all of the config rules and remediation actions from all member accounts in that organization.   Only a master account or a delegated administrator account can delete an organization conformance pack. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added. AWS Config sets the state of a conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state. 
     */
   def deleteOrganizationConformancePack(): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConformancePack(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified organization conformance pack and all of the config rules and remediation actions from all member accounts in that organization. Only a master account can delete an organization conformance pack. AWS Config sets the state of a conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state. 
+    * Deletes the specified organization conformance pack and all of the config rules and remediation actions from all member accounts in that organization.   Only a master account or a delegated administrator account can delete an organization conformance pack. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added. AWS Config sets the state of a conformance pack to DELETE_IN_PROGRESS until the deletion is complete. You cannot update a conformance pack while it is in this state. 
     */
   def deleteOrganizationConformancePack(params: DeleteOrganizationConformancePackRequest): Request[js.Object, AWSError] = js.native
   def deleteOrganizationConformancePack(
@@ -186,12 +186,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemediationConfigurationResponse, Unit]
   ): Request[DeleteRemediationConfigurationResponse, AWSError] = js.native
   /**
-    * Deletes one or more remediation exceptions mentioned in the resource keys.
+    * Deletes one or more remediation exceptions mentioned in the resource keys.  AWS Config generates a remediation exception when a problem occurs executing a remediation action to a specific resource. Remediation exceptions blocks auto-remediation until the exception is cleared. 
     */
   def deleteRemediationExceptions(): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
   def deleteRemediationExceptions(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRemediationExceptionsResponse, Unit]): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
   /**
-    * Deletes one or more remediation exceptions mentioned in the resource keys.
+    * Deletes one or more remediation exceptions mentioned in the resource keys.  AWS Config generates a remediation exception when a problem occurs executing a remediation action to a specific resource. Remediation exceptions blocks auto-remediation until the exception is cleared. 
     */
   def deleteRemediationExceptions(params: DeleteRemediationExceptionsRequest): Request[DeleteRemediationExceptionsResponse, AWSError] = js.native
   def deleteRemediationExceptions(
@@ -467,14 +467,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDeliveryChannelsResponse, Unit]
   ): Request[DescribeDeliveryChannelsResponse, AWSError] = js.native
   /**
-    * Provides organization config rule deployment status for an organization.  The status is not considered successful until organization config rule is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
+    * Provides organization config rule deployment status for an organization. Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  The status is not considered successful until organization config rule is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. 
     */
   def describeOrganizationConfigRuleStatuses(): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   def describeOrganizationConfigRuleStatuses(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRuleStatusesResponse, Unit]
   ): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   /**
-    * Provides organization config rule deployment status for an organization.  The status is not considered successful until organization config rule is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
+    * Provides organization config rule deployment status for an organization. Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  The status is not considered successful until organization config rule is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. 
     */
   def describeOrganizationConfigRuleStatuses(params: DescribeOrganizationConfigRuleStatusesRequest): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   def describeOrganizationConfigRuleStatuses(
@@ -482,14 +482,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRuleStatusesResponse, Unit]
   ): Request[DescribeOrganizationConfigRuleStatusesResponse, AWSError] = js.native
   /**
-    * Returns a list of organization config rules.  When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
+    * Returns a list of organization config rules.  Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.&#x2028;  When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. 
     */
   def describeOrganizationConfigRules(): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   def describeOrganizationConfigRules(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRulesResponse, Unit]
   ): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   /**
-    * Returns a list of organization config rules.  When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. Only a master account can call this API. 
+    * Returns a list of organization config rules.  Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.&#x2028;  When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization config rule names. It is only applicable, when you request all the organization config rules. 
     */
   def describeOrganizationConfigRules(params: DescribeOrganizationConfigRulesRequest): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   def describeOrganizationConfigRules(
@@ -497,7 +497,7 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConfigRulesResponse, Unit]
   ): Request[DescribeOrganizationConfigRulesResponse, AWSError] = js.native
   /**
-    * Provides organization conformance pack deployment status for an organization.  The status is not considered successful until organization conformance pack is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization conformance pack names. They are only applicable, when you request all the organization conformance packs. Only a master account can call this API. 
+    * Provides organization conformance pack deployment status for an organization.   Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  The status is not considered successful until organization conformance pack is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization conformance pack names. They are only applicable, when you request all the organization conformance packs. 
     */
   def describeOrganizationConformancePackStatuses(): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
   def describeOrganizationConformancePackStatuses(
@@ -508,7 +508,7 @@ trait ConfigService extends Service {
     ]
   ): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
   /**
-    * Provides organization conformance pack deployment status for an organization.  The status is not considered successful until organization conformance pack is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization conformance pack names. They are only applicable, when you request all the organization conformance packs. Only a master account can call this API. 
+    * Provides organization conformance pack deployment status for an organization.   Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  The status is not considered successful until organization conformance pack is successfully deployed in all the member accounts with an exception of excluded accounts. When you specify the limit and the next token, you receive a paginated response. Limit and next token are not applicable if you specify organization conformance pack names. They are only applicable, when you request all the organization conformance packs. 
     */
   def describeOrganizationConformancePackStatuses(params: DescribeOrganizationConformancePackStatusesRequest): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
   def describeOrganizationConformancePackStatuses(
@@ -520,14 +520,14 @@ trait ConfigService extends Service {
     ]
   ): Request[DescribeOrganizationConformancePackStatusesResponse, AWSError] = js.native
   /**
-    * Returns a list of organization conformance packs.  When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you specify organization conformance packs names. They are only applicable, when you request all the organization conformance packs.  Only a master account can call this API. 
+    * Returns a list of organization conformance packs.  Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you specify organization conformance packs names. They are only applicable, when you request all the organization conformance packs.  
     */
   def describeOrganizationConformancePacks(): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
   def describeOrganizationConformancePacks(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeOrganizationConformancePacksResponse, Unit]
   ): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
   /**
-    * Returns a list of organization conformance packs.  When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you specify organization conformance packs names. They are only applicable, when you request all the organization conformance packs.  Only a master account can call this API. 
+    * Returns a list of organization conformance packs.  Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you specify organization conformance packs names. They are only applicable, when you request all the organization conformance packs.  
     */
   def describeOrganizationConformancePacks(params: DescribeOrganizationConformancePacksRequest): Request[DescribeOrganizationConformancePacksResponse, AWSError] = js.native
   def describeOrganizationConformancePacks(
@@ -565,12 +565,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeRemediationConfigurationsResponse, Unit]
   ): Request[DescribeRemediationConfigurationsResponse, AWSError] = js.native
   /**
-    * Returns the details of one or more remediation exceptions. A detailed view of a remediation exception for a set of resources that includes an explanation of an exception and the time when the exception will be deleted. When you specify the limit and the next token, you receive a paginated response.   When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you request resources in batch. It is only applicable, when you request all resources. 
+    * Returns the details of one or more remediation exceptions. A detailed view of a remediation exception for a set of resources that includes an explanation of an exception and the time when the exception will be deleted. When you specify the limit and the next token, you receive a paginated response.   AWS Config generates a remediation exception when a problem occurs executing a remediation action to a specific resource. Remediation exceptions blocks auto-remediation until the exception is cleared. When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you request resources in batch. It is only applicable, when you request all resources. 
     */
   def describeRemediationExceptions(): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
   def describeRemediationExceptions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRemediationExceptionsResponse, Unit]): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
   /**
-    * Returns the details of one or more remediation exceptions. A detailed view of a remediation exception for a set of resources that includes an explanation of an exception and the time when the exception will be deleted. When you specify the limit and the next token, you receive a paginated response.   When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you request resources in batch. It is only applicable, when you request all resources. 
+    * Returns the details of one or more remediation exceptions. A detailed view of a remediation exception for a set of resources that includes an explanation of an exception and the time when the exception will be deleted. When you specify the limit and the next token, you receive a paginated response.   AWS Config generates a remediation exception when a problem occurs executing a remediation action to a specific resource. Remediation exceptions blocks auto-remediation until the exception is cleared. When you specify the limit and the next token, you receive a paginated response.  Limit and next token are not applicable if you request resources in batch. It is only applicable, when you request all resources. 
     */
   def describeRemediationExceptions(params: DescribeRemediationExceptionsRequest): Request[DescribeRemediationExceptionsResponse, AWSError] = js.native
   def describeRemediationExceptions(
@@ -769,14 +769,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetDiscoveredResourceCountsResponse, Unit]
   ): Request[GetDiscoveredResourceCountsResponse, AWSError] = js.native
   /**
-    * Returns detailed status for each member account within an organization for a given organization config rule.  Only a master account can call this API. 
+    * Returns detailed status for each member account within an organization for a given organization config rule. Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.
     */
   def getOrganizationConfigRuleDetailedStatus(): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   def getOrganizationConfigRuleDetailedStatus(
     callback: js.Function2[/* err */ AWSError, /* data */ GetOrganizationConfigRuleDetailedStatusResponse, Unit]
   ): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   /**
-    * Returns detailed status for each member account within an organization for a given organization config rule.  Only a master account can call this API. 
+    * Returns detailed status for each member account within an organization for a given organization config rule. Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.
     */
   def getOrganizationConfigRuleDetailedStatus(params: GetOrganizationConfigRuleDetailedStatusRequest): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   def getOrganizationConfigRuleDetailedStatus(
@@ -784,7 +784,7 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetOrganizationConfigRuleDetailedStatusResponse, Unit]
   ): Request[GetOrganizationConfigRuleDetailedStatusResponse, AWSError] = js.native
   /**
-    * Returns detailed status for each member account within an organization for a given organization conformance pack. Only a master account can call this API.
+    * Returns detailed status for each member account within an organization for a given organization conformance pack. Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.
     */
   def getOrganizationConformancePackDetailedStatus(): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
   def getOrganizationConformancePackDetailedStatus(
@@ -795,7 +795,7 @@ trait ConfigService extends Service {
     ]
   ): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
   /**
-    * Returns detailed status for each member account within an organization for a given organization conformance pack. Only a master account can call this API.
+    * Returns detailed status for each member account within an organization for a given organization conformance pack. Only a master account and a delegated administrator account can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.
     */
   def getOrganizationConformancePackDetailedStatus(params: GetOrganizationConformancePackDetailedStatusRequest): Request[GetOrganizationConformancePackDetailedStatusResponse, AWSError] = js.native
   def getOrganizationConformancePackDetailedStatus(
@@ -913,12 +913,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across AWS Organization. This API creates a service linked role AWSServiceRoleForConfigConforms in your account. The service linked role is created only when the role does not exist in your account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. 
+    * Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across AWS Organization. This API creates a service linked role AWSServiceRoleForConfigConforms in your account. The service linked role is created only when the role does not exist in your account.   You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. 
     */
   def putConformancePack(): Request[PutConformancePackResponse, AWSError] = js.native
   def putConformancePack(callback: js.Function2[/* err */ AWSError, /* data */ PutConformancePackResponse, Unit]): Request[PutConformancePackResponse, AWSError] = js.native
   /**
-    * Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across AWS Organization. This API creates a service linked role AWSServiceRoleForConfigConforms in your account. The service linked role is created only when the role does not exist in your account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. 
+    * Creates or updates a conformance pack. A conformance pack is a collection of AWS Config rules that can be easily deployed in an account and a region and across AWS Organization. This API creates a service linked role AWSServiceRoleForConfigConforms in your account. The service linked role is created only when the role does not exist in your account.   You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. 
     */
   def putConformancePack(params: PutConformancePackRequest): Request[PutConformancePackResponse, AWSError] = js.native
   def putConformancePack(
@@ -952,12 +952,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutEvaluationsResponse, Unit]
   ): Request[PutEvaluationsResponse, AWSError] = js.native
   /**
-    * Adds or updates organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations. Only a master account can create or update an organization config rule. This API enables organization service access through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action. You can use this action to create both custom AWS Config rules and AWS managed Config rules. If you are adding a new custom AWS Config rule, you must first create AWS Lambda function in the master account that the rule invokes to evaluate your resources. When you use the PutOrganizationConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. If you are adding an AWS managed Config rule, specify the rule's identifier for the RuleIdentifier key. The maximum number of organization config rules that AWS Config supports is 150.  Specify either OrganizationCustomRuleMetadata or OrganizationManagedRuleMetadata. 
+    * Adds or updates organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations.  Only a master account and a delegated administrator can create or update an organization config rule. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  This API enables organization service access through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master or delegated administrator account of your organization. The service linked role is created only when the role does not exist in the caller account. AWS Config verifies the existence of role with GetRole action. To use this API with delegated administrator, register a delegated administrator by calling AWS Organization register-delegated-administrator for config-multiaccountsetup.amazonaws.com.  You can use this action to create both custom AWS Config rules and AWS managed Config rules. If you are adding a new custom AWS Config rule, you must first create AWS Lambda function in the master account or a delegated administrator that the rule invokes to evaluate your resources. When you use the PutOrganizationConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. If you are adding an AWS managed Config rule, specify the rule's identifier for the RuleIdentifier key. The maximum number of organization config rules that AWS Config supports is 150 and 3 delegated administrator per organization.   Prerequisite: Ensure you call EnableAllFeatures API to enable all features in an organization. Specify either OrganizationCustomRuleMetadata or OrganizationManagedRuleMetadata. 
     */
   def putOrganizationConfigRule(): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   def putOrganizationConfigRule(callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConfigRuleResponse, Unit]): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   /**
-    * Adds or updates organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations. Only a master account can create or update an organization config rule. This API enables organization service access through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action. You can use this action to create both custom AWS Config rules and AWS managed Config rules. If you are adding a new custom AWS Config rule, you must first create AWS Lambda function in the master account that the rule invokes to evaluate your resources. When you use the PutOrganizationConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. If you are adding an AWS managed Config rule, specify the rule's identifier for the RuleIdentifier key. The maximum number of organization config rules that AWS Config supports is 150.  Specify either OrganizationCustomRuleMetadata or OrganizationManagedRuleMetadata. 
+    * Adds or updates organization config rule for your entire organization evaluating whether your AWS resources comply with your desired configurations.  Only a master account and a delegated administrator can create or update an organization config rule. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added.  This API enables organization service access through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master or delegated administrator account of your organization. The service linked role is created only when the role does not exist in the caller account. AWS Config verifies the existence of role with GetRole action. To use this API with delegated administrator, register a delegated administrator by calling AWS Organization register-delegated-administrator for config-multiaccountsetup.amazonaws.com.  You can use this action to create both custom AWS Config rules and AWS managed Config rules. If you are adding a new custom AWS Config rule, you must first create AWS Lambda function in the master account or a delegated administrator that the rule invokes to evaluate your resources. When you use the PutOrganizationConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. If you are adding an AWS managed Config rule, specify the rule's identifier for the RuleIdentifier key. The maximum number of organization config rules that AWS Config supports is 150 and 3 delegated administrator per organization.   Prerequisite: Ensure you call EnableAllFeatures API to enable all features in an organization. Specify either OrganizationCustomRuleMetadata or OrganizationManagedRuleMetadata. 
     */
   def putOrganizationConfigRule(params: PutOrganizationConfigRuleRequest): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   def putOrganizationConfigRule(
@@ -965,14 +965,14 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConfigRuleResponse, Unit]
   ): Request[PutOrganizationConfigRuleResponse, AWSError] = js.native
   /**
-    * Deploys conformance packs across member accounts in an AWS Organization. This API enables organization service access for config-multiaccountsetup.amazonaws.com through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. AWS Config sets the state of a conformance pack to CREATE_IN_PROGRESS and UPDATE_IN_PROGRESS until the confomance pack is created or updated. You cannot update a conformance pack while it is in this state. You can create 6 conformance packs with 25 AWS Config rules in each pack. 
+    * Deploys conformance packs across member accounts in an AWS Organization. Only a master account and a delegated administrator can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added. This API enables organization service access for config-multiaccountsetup.amazonaws.com through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master or delegated administrator account of your organization. The service linked role is created only when the role does not exist in the caller account. To use this API with delegated administrator, register a delegated administrator by calling AWS Organization register-delegate-admin for config-multiaccountsetup.amazonaws.com.  Prerequisite: Ensure you call EnableAllFeatures API to enable all features in an organization. You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. AWS Config sets the state of a conformance pack to CREATE_IN_PROGRESS and UPDATE_IN_PROGRESS until the conformance pack is created or updated. You cannot update a conformance pack while it is in this state. You can create 6 conformance packs with 25 AWS Config rules in each pack and 3 delegated administrator per organization.  
     */
   def putOrganizationConformancePack(): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
   def putOrganizationConformancePack(
     callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConformancePackResponse, Unit]
   ): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
   /**
-    * Deploys conformance packs across member accounts in an AWS Organization. This API enables organization service access for config-multiaccountsetup.amazonaws.com through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master account of your organization. The service linked role is created only when the role does not exist in the master account. AWS Config verifies the existence of role with GetRole action.  You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. AWS Config sets the state of a conformance pack to CREATE_IN_PROGRESS and UPDATE_IN_PROGRESS until the confomance pack is created or updated. You cannot update a conformance pack while it is in this state. You can create 6 conformance packs with 25 AWS Config rules in each pack. 
+    * Deploys conformance packs across member accounts in an AWS Organization. Only a master account and a delegated administrator can call this API. When calling this API with a delegated administrator, you must ensure AWS Organizations ListDelegatedAdministrator permissions are added. This API enables organization service access for config-multiaccountsetup.amazonaws.com through the EnableAWSServiceAccess action and creates a service linked role AWSServiceRoleForConfigMultiAccountSetup in the master or delegated administrator account of your organization. The service linked role is created only when the role does not exist in the caller account. To use this API with delegated administrator, register a delegated administrator by calling AWS Organization register-delegate-admin for config-multiaccountsetup.amazonaws.com.  Prerequisite: Ensure you call EnableAllFeatures API to enable all features in an organization. You must specify either the TemplateS3Uri or the TemplateBody parameter, but not both. If you provide both AWS Config uses the TemplateS3Uri parameter and ignores the TemplateBody parameter. AWS Config sets the state of a conformance pack to CREATE_IN_PROGRESS and UPDATE_IN_PROGRESS until the conformance pack is created or updated. You cannot update a conformance pack while it is in this state. You can create 6 conformance packs with 25 AWS Config rules in each pack and 3 delegated administrator per organization.  
     */
   def putOrganizationConformancePack(params: PutOrganizationConformancePackRequest): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
   def putOrganizationConformancePack(
@@ -980,12 +980,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutOrganizationConformancePackResponse, Unit]
   ): Request[PutOrganizationConformancePackResponse, AWSError] = js.native
   /**
-    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
+    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target.   If you make backward incompatible changes to the SSM document, you must call this again to ensure the remediations can run. 
     */
   def putRemediationConfigurations(): Request[PutRemediationConfigurationsResponse, AWSError] = js.native
   def putRemediationConfigurations(callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationConfigurationsResponse, Unit]): Request[PutRemediationConfigurationsResponse, AWSError] = js.native
   /**
-    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
+    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target.   If you make backward incompatible changes to the SSM document, you must call this again to ensure the remediations can run. 
     */
   def putRemediationConfigurations(params: PutRemediationConfigurationsRequest): Request[PutRemediationConfigurationsResponse, AWSError] = js.native
   def putRemediationConfigurations(
@@ -993,12 +993,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationConfigurationsResponse, Unit]
   ): Request[PutRemediationConfigurationsResponse, AWSError] = js.native
   /**
-    * A remediation exception is when a specific resource is no longer considered for auto-remediation. This API adds a new exception or updates an exisiting exception for a specific resource with a specific AWS Config rule. 
+    * A remediation exception is when a specific resource is no longer considered for auto-remediation. This API adds a new exception or updates an exisiting exception for a specific resource with a specific AWS Config rule.   AWS Config generates a remediation exception when a problem occurs executing a remediation action to a specific resource. Remediation exceptions blocks auto-remediation until the exception is cleared. 
     */
   def putRemediationExceptions(): Request[PutRemediationExceptionsResponse, AWSError] = js.native
   def putRemediationExceptions(callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationExceptionsResponse, Unit]): Request[PutRemediationExceptionsResponse, AWSError] = js.native
   /**
-    * A remediation exception is when a specific resource is no longer considered for auto-remediation. This API adds a new exception or updates an exisiting exception for a specific resource with a specific AWS Config rule. 
+    * A remediation exception is when a specific resource is no longer considered for auto-remediation. This API adds a new exception or updates an exisiting exception for a specific resource with a specific AWS Config rule.   AWS Config generates a remediation exception when a problem occurs executing a remediation action to a specific resource. Remediation exceptions blocks auto-remediation until the exception is cleared. 
     */
   def putRemediationExceptions(params: PutRemediationExceptionsRequest): Request[PutRemediationExceptionsResponse, AWSError] = js.native
   def putRemediationExceptions(
@@ -1006,12 +1006,12 @@ trait ConfigService extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ PutRemediationExceptionsResponse, Unit]
   ): Request[PutRemediationExceptionsResponse, AWSError] = js.native
   /**
-    * Records the configuration state for the resource provided in the request. The configuration state of a resource is represented in AWS Config as Configuration Items. Once this API records the configuration item, you can retrieve the list of configuration items for the custom resource type using existing AWS Config APIs.   The custom resource type must be registered with AWS CloudFormation. This API accepts the configuration item registered with AWS CloudFormation. When you call this API, AWS Config only stores configuration state of the resource provided in the request. This API does not change or remediate the configuration of the resource.  
+    * Records the configuration state for the resource provided in the request. The configuration state of a resource is represented in AWS Config as Configuration Items. Once this API records the configuration item, you can retrieve the list of configuration items for the custom resource type using existing AWS Config APIs.   The custom resource type must be registered with AWS CloudFormation. This API accepts the configuration item registered with AWS CloudFormation. When you call this API, AWS Config only stores configuration state of the resource provided in the request. This API does not change or remediate the configuration of the resource.  Write-only schema properites are not recorded as part of the published configuration item. 
     */
   def putResourceConfig(): Request[js.Object, AWSError] = js.native
   def putResourceConfig(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Records the configuration state for the resource provided in the request. The configuration state of a resource is represented in AWS Config as Configuration Items. Once this API records the configuration item, you can retrieve the list of configuration items for the custom resource type using existing AWS Config APIs.   The custom resource type must be registered with AWS CloudFormation. This API accepts the configuration item registered with AWS CloudFormation. When you call this API, AWS Config only stores configuration state of the resource provided in the request. This API does not change or remediate the configuration of the resource.  
+    * Records the configuration state for the resource provided in the request. The configuration state of a resource is represented in AWS Config as Configuration Items. Once this API records the configuration item, you can retrieve the list of configuration items for the custom resource type using existing AWS Config APIs.   The custom resource type must be registered with AWS CloudFormation. This API accepts the configuration item registered with AWS CloudFormation. When you call this API, AWS Config only stores configuration state of the resource provided in the request. This API does not change or remediate the configuration of the resource.  Write-only schema properites are not recorded as part of the published configuration item. 
     */
   def putResourceConfig(params: PutResourceConfigRequest): Request[js.Object, AWSError] = js.native
   def putResourceConfig(

@@ -18,14 +18,32 @@ trait DBClusterSnapshotAttributesResult extends js.Object {
 
 object DBClusterSnapshotAttributesResult {
   @scala.inline
-  def apply(
-    DBClusterSnapshotAttributes: DBClusterSnapshotAttributeList = null,
-    DBClusterSnapshotIdentifier: String = null
-  ): DBClusterSnapshotAttributesResult = {
+  def apply(): DBClusterSnapshotAttributesResult = {
     val __obj = js.Dynamic.literal()
-    if (DBClusterSnapshotAttributes != null) __obj.updateDynamic("DBClusterSnapshotAttributes")(DBClusterSnapshotAttributes.asInstanceOf[js.Any])
-    if (DBClusterSnapshotIdentifier != null) __obj.updateDynamic("DBClusterSnapshotIdentifier")(DBClusterSnapshotIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterSnapshotAttributesResult]
   }
+  @scala.inline
+  implicit class DBClusterSnapshotAttributesResultOps[Self <: DBClusterSnapshotAttributesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterSnapshotAttributesVarargs(value: DBClusterSnapshotAttribute*): Self = this.set("DBClusterSnapshotAttributes", js.Array(value :_*))
+    @scala.inline
+    def setDBClusterSnapshotAttributes(value: DBClusterSnapshotAttributeList): Self = this.set("DBClusterSnapshotAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterSnapshotAttributes: Self = this.set("DBClusterSnapshotAttributes", js.undefined)
+    @scala.inline
+    def setDBClusterSnapshotIdentifier(value: String): Self = this.set("DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterSnapshotIdentifier: Self = this.set("DBClusterSnapshotIdentifier", js.undefined)
+  }
+  
 }
 

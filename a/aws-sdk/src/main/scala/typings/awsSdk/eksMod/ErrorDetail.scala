@@ -22,12 +22,36 @@ trait ErrorDetail extends js.Object {
 
 object ErrorDetail {
   @scala.inline
-  def apply(errorCode: ErrorCode = null, errorMessage: String = null, resourceIds: StringList = null): ErrorDetail = {
+  def apply(): ErrorDetail = {
     val __obj = js.Dynamic.literal()
-    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (resourceIds != null) __obj.updateDynamic("resourceIds")(resourceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorDetail]
   }
+  @scala.inline
+  implicit class ErrorDetailOps[Self <: ErrorDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorCode(value: ErrorCode): Self = this.set("errorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("errorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setResourceIdsVarargs(value: String*): Self = this.set("resourceIds", js.Array(value :_*))
+    @scala.inline
+    def setResourceIds(value: StringList): Self = this.set("resourceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIds: Self = this.set("resourceIds", js.undefined)
+  }
+  
 }
 

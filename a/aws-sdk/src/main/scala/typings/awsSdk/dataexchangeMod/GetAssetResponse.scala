@@ -50,30 +50,62 @@ trait GetAssetResponse extends js.Object {
 
 object GetAssetResponse {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    AssetDetails: AssetDetails = null,
-    AssetType: AssetType = null,
-    CreatedAt: Timestamp = null,
-    DataSetId: Id = null,
-    Id: Id = null,
-    Name: AssetName = null,
-    RevisionId: Id = null,
-    SourceId: Id = null,
-    UpdatedAt: Timestamp = null
-  ): GetAssetResponse = {
+  def apply(): GetAssetResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (AssetDetails != null) __obj.updateDynamic("AssetDetails")(AssetDetails.asInstanceOf[js.Any])
-    if (AssetType != null) __obj.updateDynamic("AssetType")(AssetType.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (DataSetId != null) __obj.updateDynamic("DataSetId")(DataSetId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
-    if (SourceId != null) __obj.updateDynamic("SourceId")(SourceId.asInstanceOf[js.Any])
-    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetResponse]
   }
+  @scala.inline
+  implicit class GetAssetResponseOps[Self <: GetAssetResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setAssetDetails(value: AssetDetails): Self = this.set("AssetDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetDetails: Self = this.set("AssetDetails", js.undefined)
+    @scala.inline
+    def setAssetType(value: AssetType): Self = this.set("AssetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetType: Self = this.set("AssetType", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDataSetId(value: Id): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSetId: Self = this.set("DataSetId", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: AssetName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRevisionId(value: Id): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+    @scala.inline
+    def setSourceId(value: Id): Self = this.set("SourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceId: Self = this.set("SourceId", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+  }
+  
 }
 

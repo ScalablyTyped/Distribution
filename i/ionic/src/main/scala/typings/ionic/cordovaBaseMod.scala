@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 object cordovaBaseMod extends js.Object {
   @js.native
   abstract class CordovaCommand () extends Command {
-    var _integration: js.UndefOr[js.Any] = js.native
+    var _integration: js.Any = js.native
     /* protected */ def checkCordova(runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String): js.Promise[Unit] = js.native
     /* protected */ def checkForPlatformInstallation(platform: String, hasPromptToInstallPromptToInstallRefusalMsg: PromptToInstall): js.Promise[Unit] = js.native

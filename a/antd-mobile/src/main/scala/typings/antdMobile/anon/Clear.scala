@@ -4,27 +4,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Clear extends js.Object {
-  var clear: Boolean
-  var disabled: Boolean
-  var disabledKeys: Null
-  var editable: Boolean
-  var error: Boolean
-  var extra: String
-  var labelNumber: Double
-  var moneyKeyboardAlign: String
-  var moneyKeyboardHeader: Null
-  var onBlur: js.Function0[Unit]
-  var onChange: js.Function0[Unit]
-  var onErrorClick: js.Function0[Unit]
-  var onExtraClick: js.Function0[Unit]
-  var onFocus: js.Function0[Unit]
-  var onVirtualKeyboardConfirm: js.Function0[Unit]
-  var placeholder: String
-  var prefixCls: String
-  var prefixListCls: String
-  var `type`: String
-  var updatePlaceholder: Boolean
+  var clear: Boolean = js.native
+  var disabled: Boolean = js.native
+  var disabledKeys: Null = js.native
+  var editable: Boolean = js.native
+  var error: Boolean = js.native
+  var extra: String = js.native
+  var labelNumber: Double = js.native
+  var moneyKeyboardAlign: String = js.native
+  var moneyKeyboardHeader: Null = js.native
+  var onBlur: js.Function0[Unit] = js.native
+  var onChange: js.Function0[Unit] = js.native
+  var onErrorClick: js.Function0[Unit] = js.native
+  var onExtraClick: js.Function0[Unit] = js.native
+  var onFocus: js.Function0[Unit] = js.native
+  var onVirtualKeyboardConfirm: js.Function0[Unit] = js.native
+  var placeholder: String = js.native
+  var prefixCls: String = js.native
+  var prefixListCls: String = js.native
+  var `type`: String = js.native
+  var updatePlaceholder: Boolean = js.native
 }
 
 object Clear {
@@ -55,5 +56,58 @@ object Clear {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Clear]
   }
+  @scala.inline
+  implicit class ClearOps[Self <: Clear] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClear(value: Boolean): Self = this.set("clear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisabledKeys(value: Null): Self = this.set("disabledKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEditable(value: Boolean): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtra(value: String): Self = this.set("extra", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelNumber(value: Double): Self = this.set("labelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMoneyKeyboardAlign(value: String): Self = this.set("moneyKeyboardAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMoneyKeyboardHeader(value: Null): Self = this.set("moneyKeyboardHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnChange(value: () => Unit): Self = this.set("onChange", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnErrorClick(value: () => Unit): Self = this.set("onErrorClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnExtraClick(value: () => Unit): Self = this.set("onExtraClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnVirtualKeyboardConfirm(value: () => Unit): Self = this.set("onVirtualKeyboardConfirm", js.Any.fromFunction0(value))
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrefixListCls(value: String): Self = this.set("prefixListCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatePlaceholder(value: Boolean): Self = this.set("updatePlaceholder", value.asInstanceOf[js.Any])
+  }
+  
 }
 

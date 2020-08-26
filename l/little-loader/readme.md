@@ -12,7 +12,7 @@ A lightweight, IE8+ JavaScript loader.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 630608 |
+| # downloads        | 668675 |
 | # stars            | 0 |
 
 ## Links

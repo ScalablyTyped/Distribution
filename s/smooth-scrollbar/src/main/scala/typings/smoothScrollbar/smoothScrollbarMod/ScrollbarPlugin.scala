@@ -13,23 +13,7 @@ class ScrollbarPlugin protected ()
   extends typings.smoothScrollbar.pluginMod.ScrollbarPlugin {
   def this(scrollbar: Scrollbar) = this()
   def this(scrollbar: Scrollbar, options: js.Any) = this()
-  /* CompleteClass */
-  override val name: String = js.native
-  /* CompleteClass */
-  override val options: js.Any = js.native
-  /* CompleteClass */
-  override val scrollbar: typings.smoothScrollbar.scrollbarMod.Scrollbar = js.native
-  /* CompleteClass */
-  override def onDestroy(): Unit = js.native
-  /* CompleteClass */
-  override def onInit(): Unit = js.native
-  /* CompleteClass */
-  override def onRender(remainMomentum: Data2d): Unit = js.native
-  /* CompleteClass */
-  override def onUpdate(): Unit = js.native
   def transformDelta(delta: Data2d, _evt: Event): Data2d = js.native
-  /* CompleteClass */
-  override def transformDelta(delta: Data2d, fromEvent: js.Any): Data2d = js.native
 }
 
 /* static members */

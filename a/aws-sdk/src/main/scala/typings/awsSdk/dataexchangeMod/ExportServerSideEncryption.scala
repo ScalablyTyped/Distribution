@@ -18,10 +18,28 @@ trait ExportServerSideEncryption extends js.Object {
 
 object ExportServerSideEncryption {
   @scala.inline
-  def apply(Type: ServerSideEncryptionTypes, KmsKeyArn: string = null): ExportServerSideEncryption = {
+  def apply(Type: ServerSideEncryptionTypes): ExportServerSideEncryption = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
-    if (KmsKeyArn != null) __obj.updateDynamic("KmsKeyArn")(KmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportServerSideEncryption]
   }
+  @scala.inline
+  implicit class ExportServerSideEncryptionOps[Self <: ExportServerSideEncryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: ServerSideEncryptionTypes): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyArn(value: string): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+  }
+  
 }
 

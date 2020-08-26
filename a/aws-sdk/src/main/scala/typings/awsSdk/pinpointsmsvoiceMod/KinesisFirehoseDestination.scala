@@ -18,11 +18,30 @@ trait KinesisFirehoseDestination extends js.Object {
 
 object KinesisFirehoseDestination {
   @scala.inline
-  def apply(DeliveryStreamArn: String = null, IamRoleArn: String = null): KinesisFirehoseDestination = {
+  def apply(): KinesisFirehoseDestination = {
     val __obj = js.Dynamic.literal()
-    if (DeliveryStreamArn != null) __obj.updateDynamic("DeliveryStreamArn")(DeliveryStreamArn.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[KinesisFirehoseDestination]
   }
+  @scala.inline
+  implicit class KinesisFirehoseDestinationOps[Self <: KinesisFirehoseDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamArn(value: String): Self = this.set("DeliveryStreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStreamArn: Self = this.set("DeliveryStreamArn", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: String): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+  }
+  
 }
 

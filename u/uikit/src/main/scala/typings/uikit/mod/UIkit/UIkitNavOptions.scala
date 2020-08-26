@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UIkitNavOptions extends js.Object {
-  var animation: js.UndefOr[String] = js.undefined
-  var collapsible: js.UndefOr[Boolean] = js.undefined
-  var content: js.UndefOr[String] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var multiple: js.UndefOr[Boolean] = js.undefined
-  var targets: js.UndefOr[String] = js.undefined
-  var toggle: js.UndefOr[String] = js.undefined
-  var transition: js.UndefOr[String] = js.undefined
+  var animation: js.UndefOr[String] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var multiple: js.UndefOr[Boolean] = js.native
+  var targets: js.UndefOr[String] = js.native
+  var toggle: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.native
 }
 
 object UIkitNavOptions {
   @scala.inline
-  def apply(
-    animation: String = null,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    content: String = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    targets: String = null,
-    toggle: String = null,
-    transition: String = null
-  ): UIkitNavOptions = {
+  def apply(): UIkitNavOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitNavOptions]
   }
+  @scala.inline
+  implicit class UIkitNavOptionsOps[Self <: UIkitNavOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setCollapsible(value: Boolean): Self = this.set("collapsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsible: Self = this.set("collapsible", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setTargets(value: String): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+    @scala.inline
+    def setToggle(value: String): Self = this.set("toggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggle: Self = this.set("toggle", js.undefined)
+    @scala.inline
+    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+  }
+  
 }
 

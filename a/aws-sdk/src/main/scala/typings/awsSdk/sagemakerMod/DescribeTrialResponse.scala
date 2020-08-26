@@ -46,28 +46,58 @@ trait DescribeTrialResponse extends js.Object {
 
 object DescribeTrialResponse {
   @scala.inline
-  def apply(
-    CreatedBy: UserContext = null,
-    CreationTime: Timestamp = null,
-    DisplayName: ExperimentEntityName = null,
-    ExperimentName: ExperimentEntityName = null,
-    LastModifiedBy: UserContext = null,
-    LastModifiedTime: Timestamp = null,
-    Source: TrialSource = null,
-    TrialArn: TrialArn = null,
-    TrialName: ExperimentEntityName = null
-  ): DescribeTrialResponse = {
+  def apply(): DescribeTrialResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (ExperimentName != null) __obj.updateDynamic("ExperimentName")(ExperimentName.asInstanceOf[js.Any])
-    if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
-    if (TrialArn != null) __obj.updateDynamic("TrialArn")(TrialArn.asInstanceOf[js.Any])
-    if (TrialName != null) __obj.updateDynamic("TrialName")(TrialName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTrialResponse]
   }
+  @scala.inline
+  implicit class DescribeTrialResponseOps[Self <: DescribeTrialResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedBy(value: UserContext): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDisplayName(value: ExperimentEntityName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setExperimentName(value: ExperimentEntityName): Self = this.set("ExperimentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentName: Self = this.set("ExperimentName", js.undefined)
+    @scala.inline
+    def setLastModifiedBy(value: UserContext): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setSource(value: TrialSource): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+    @scala.inline
+    def setTrialArn(value: TrialArn): Self = this.set("TrialArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialArn: Self = this.set("TrialArn", js.undefined)
+    @scala.inline
+    def setTrialName(value: ExperimentEntityName): Self = this.set("TrialName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialName: Self = this.set("TrialName", js.undefined)
+  }
+  
 }
 

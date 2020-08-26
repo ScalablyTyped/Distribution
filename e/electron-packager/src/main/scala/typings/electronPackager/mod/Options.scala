@@ -10,30 +10,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Options passed to the `packager()` function. */
+@js.native
 trait Options extends js.Object {
   /**
     * Functions to be called after your app directory has been copied to a temporary directory.
     *
     * **Note**: `afterCopy` will not be called if the [[prebuiltAsar]] option is set.
     */
-  var afterCopy: js.UndefOr[js.Array[HookFunction]] = js.undefined
+  var afterCopy: js.UndefOr[js.Array[HookFunction]] = js.native
   /** Functions to be called after the prebuilt Electron binary has been extracted to a temporary directory. */
-  var afterExtract: js.UndefOr[js.Array[HookFunction]] = js.undefined
+  var afterExtract: js.UndefOr[js.Array[HookFunction]] = js.native
   /**
     * Functions to be called after Node module pruning has been applied to the application.
     *
     * **Note**: None of these functions will be called if the [[prune]] option is `false` or
     * the [[prebuiltAsar]] option is set.
     */
-  var afterPrune: js.UndefOr[js.Array[HookFunction]] = js.undefined
+  var afterPrune: js.UndefOr[js.Array[HookFunction]] = js.native
   /** When `true`, sets both [[arch]] and [[platform]] to `all`. */
-  var all: js.UndefOr[Boolean] = js.undefined
+  var all: js.UndefOr[Boolean] = js.native
   /*
     * The bundle identifier to use in the application's `Info.plist`.
     *
     * @category macOS
     */
-  var appBundleId: js.UndefOr[String] = js.undefined
+  var appBundleId: js.UndefOr[String] = js.native
   /**
     * The application category type, as shown in the Finder via *View → Arrange by Application
     * Category* when viewing the Applications directory.
@@ -45,12 +46,12 @@ trait Options extends js.Object {
     *
     * @category macOS
     */
-  var appCategoryType: js.UndefOr[String] = js.undefined
+  var appCategoryType: js.UndefOr[String] = js.native
   /**
     * The human-readable copyright line for the app. Maps to the `LegalCopyright` metadata
     * property on Windows, and `NSHumanReadableCopyright` on macOS.
     */
-  var appCopyright: js.UndefOr[String] = js.undefined
+  var appCopyright: js.UndefOr[String] = js.native
   /**
     * The release version of the application.
     *
@@ -59,7 +60,7 @@ trait Options extends js.Object {
     * to the `ProductVersion` metadata property on Windows, and `CFBundleShortVersionString`
     * on macOS.
     */
-  var appVersion: js.UndefOr[String] = js.undefined
+  var appVersion: js.UndefOr[String] = js.native
   /**
     * The target system architecture(s) to build for.
     *
@@ -79,7 +80,7 @@ trait Options extends js.Object {
     * - `arm64` _(Electron 1.8.0 and above)_
     * - `mips64el` _(Electron 1.8.2-beta.5 to 1.8.8)_
     */
-  var arch: js.UndefOr[ArchOption | js.Array[ArchOption]] = js.undefined
+  var arch: js.UndefOr[ArchOption | js.Array[ArchOption]] = js.native
   /**
     * Whether to package the application's source code into an archive, using [Electron's
     * archive format](https://github.com/electron/asar). Reasons why you may want to enable
@@ -106,12 +107,12 @@ trait Options extends js.Object {
     *
     * **Note:** `asar` will have no effect if the [[prebuiltAsar]] option is set.
     */
-  var asar: js.UndefOr[Boolean | CreateOptions] = js.undefined
+  var asar: js.UndefOr[Boolean | CreateOptions] = js.native
   /**
     * The build version of the application. Defaults to the value of the [[appVersion]] option.
     * Maps to the `FileVersion` metadata property on Windows, and `CFBundleVersion` on macOS.
     */
-  var buildVersion: js.UndefOr[String] = js.undefined
+  var buildVersion: js.UndefOr[String] = js.native
   /**
     * Forces support for Mojave (macOS 10.14) dark mode in your packaged app. This sets the
     * `NSRequiresAquaSystemAppearance` key to `false` in your app's `Info.plist`.  For more information,
@@ -120,16 +121,16 @@ trait Options extends js.Object {
     *
     * @category macOS
     */
-  var darwinDarkModeSupport: js.UndefOr[Boolean] = js.undefined
+  var darwinDarkModeSupport: js.UndefOr[Boolean] = js.native
   /**
     * Whether symlinks should be dereferenced during the copying of the application source.
     * Defaults to `true`.
     *
     * **Note:** `derefSymlinks` will have no effect if the [[prebuiltAsar]] option is set.
     */
-  var derefSymlinks: js.UndefOr[Boolean] = js.undefined
+  var derefSymlinks: js.UndefOr[Boolean] = js.native
   /** The source directory. */
-  var dir: String
+  var dir: String = js.native
   /**
     * If present, passes custom options to [`@electron/get`](https://npm.im/@electron/get). See
     * the module for option descriptions, proxy support, and defaults. Supported parameters
@@ -143,7 +144,7 @@ trait Options extends js.Object {
     */
   var download: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
-  ] = js.undefined
+  ] = js.native
   /**
     * The Electron version with which the app is built (without the leading 'v') - for example,
     * [`1.4.13`](https://github.com/electron/electron/releases/tag/v1.4.13). See [Electron
@@ -152,7 +153,7 @@ trait Options extends js.Object {
     * `electron-prebuilt-compile`, or `electron-prebuilt`, defined in `package.json` in either
     * `devDependencies` or `dependencies`.
     */
-  var electronVersion: js.UndefOr[String] = js.undefined
+  var electronVersion: js.UndefOr[String] = js.native
   /**
     * The local path to a directory containing Electron ZIP files for Electron Packager to unzip, instead
     * of downloading them. The ZIP filenames should be in the same format as the ones downloaded from the
@@ -161,13 +162,13 @@ trait Options extends js.Object {
     * **Note:** Setting this option prevents the [[download]] sub-options from being used, as
     * the functionality gets skipped over.
     */
-  var electronZipDir: js.UndefOr[String] = js.undefined
+  var electronZipDir: js.UndefOr[String] = js.native
   /**
     * The name of the executable file, sans file extension. Defaults to the value for the [[name]]
     * option. For `darwin` or `mas` target platforms, this does not affect the name of the
     * `.app` folder - this will use the [[name]] option instead.
     */
-  var executableName: js.UndefOr[String] = js.undefined
+  var executableName: js.UndefOr[String] = js.native
   /**
     * When the value is a string, specifies the filename of a `plist` file. Its contents are merged
     * into the app's `Info.plist`.
@@ -180,19 +181,19 @@ trait Options extends js.Object {
     *
     * @category macOS
     */
-  var extendInfo: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
+  var extendInfo: js.UndefOr[String | StringDictionary[js.Any]] = js.native
    // eslint-disable-line @typescript-eslint/no-explicit-any
   /**
     * One or more files to be copied directly into the app's `Contents/Resources` directory for
     * macOS target platforms, and the `resources` directory for other target platforms.
     */
-  var extraResource: js.UndefOr[String | js.Array[String]] = js.undefined
+  var extraResource: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * The bundle identifier to use in the application helper's `Info.plist`.
     *
     * @category macOS
     */
-  var helperBundleId: js.UndefOr[String] = js.undefined
+  var helperBundleId: js.UndefOr[String] = js.native
   /**
     * The local path to the icon file, if the target platform supports setting embedding an icon.
     *
@@ -208,7 +209,7 @@ trait Options extends js.Object {
     * If the file extension is omitted, it is auto-completed to the correct extension based on the
     * platform, including when [[platform|`platform: 'all'`]] is in effect.
     */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /**
     * One or more additional [regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
     * patterns which specify which files to ignore when copying files to create the app bundle(s). The
@@ -232,14 +233,14 @@ trait Options extends js.Object {
     *
     * **Note:** `ignore` will have no effect if the [[prebuiltAsar]] option is set.
     */
-  var ignore: js.UndefOr[RegExp | js.Array[RegExp] | IgnoreFunction] = js.undefined
+  var ignore: js.UndefOr[RegExp | js.Array[RegExp] | IgnoreFunction] = js.native
   /**
     * Ignores [system junk files](https://github.com/sindresorhus/junk) when copying the Electron app,
     * regardless of the [[ignore]] option.
     *
     * **Note:** `junk` will have no effect if the [[prebuiltAsar]] option is set.
     */
-  var junk: js.UndefOr[Boolean] = js.undefined
+  var junk: js.UndefOr[Boolean] = js.native
   /**
     * The application name. If omitted, it will use the `productName` or `name` value from the
     * nearest `package.json`.
@@ -247,7 +248,7 @@ trait Options extends js.Object {
     * **Regardless of source, characters in the Electron app name which are not allowed in all target
     * platforms' filenames (e.g., `/`), will be replaced by hyphens (`-`).**
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * If present, notarizes macOS target apps when the host platform is macOS and XCode is installed.
     * See [`electron-notarize`](https://github.com/electron/electron-notarize#method-notarizeopts-promisevoid)
@@ -257,7 +258,7 @@ trait Options extends js.Object {
     *
     * @category macOS
     */
-  var osxNotarize: js.UndefOr[OsxNotarizeOptions] = js.undefined
+  var osxNotarize: js.UndefOr[OsxNotarizeOptions] = js.native
   /**
     * If present, signs macOS target apps when the host platform is macOS and XCode is installed.
     * When the value is `true`, pass default configuration to the signing module. See
@@ -269,18 +270,18 @@ trait Options extends js.Object {
     *
     * @category macOS
     */
-  var osxSign: js.UndefOr[`true` | OsxSignOptions] = js.undefined
+  var osxSign: js.UndefOr[`true` | OsxSignOptions] = js.native
   /**
     * The base directory where the finished package(s) are created.
     *
     * Defaults to the current working directory.
     */
-  var out: js.UndefOr[String] = js.undefined
+  var out: js.UndefOr[String] = js.native
   /**
     * Whether to replace an already existing output directory for a given platform (`true`) or
     * skip recreating it (`false`). Defaults to `false`.
     */
-  var overwrite: js.UndefOr[Boolean] = js.undefined
+  var overwrite: js.UndefOr[Boolean] = js.native
   /**
     * The target platform(s) to build for.
     *
@@ -301,7 +302,7 @@ trait Options extends js.Object {
     * - `mas` (macOS, specifically for submitting to the Mac App Store)
     * - `win32`
     */
-  var platform: js.UndefOr[PlatformOption | js.Array[PlatformOption]] = js.undefined
+  var platform: js.UndefOr[PlatformOption | js.Array[PlatformOption]] = js.native
   /**
     * The path to a prebuilt ASAR file.
     *
@@ -316,13 +317,13 @@ trait Options extends js.Object {
     * - [[junk]]
     * - [[prune]]
     */
-  var prebuiltAsar: js.UndefOr[String] = js.undefined
+  var prebuiltAsar: js.UndefOr[String] = js.native
   /**
     * The URL protocol schemes associated with the Electron app.
     *
     * @category macOS
     */
-  var protocols: js.UndefOr[js.Array[MacOSProtocol]] = js.undefined
+  var protocols: js.UndefOr[js.Array[MacOSProtocol]] = js.native
   /**
     * Walks the `node_modules` dependency tree to remove all of the packages specified in the
     * `devDependencies` section of `package.json` from the outputted Electron app.
@@ -331,19 +332,19 @@ trait Options extends js.Object {
     *
     * **Note:** `prune` will have no effect if the [[prebuiltAsar]] option is set.
     */
-  var prune: js.UndefOr[Boolean] = js.undefined
+  var prune: js.UndefOr[Boolean] = js.native
   /**
     * If `true`, disables printing informational and warning messages to the console when
     * packaging the application. This does not disable errors.
     *
     * Defaults to `false`.
     */
-  var quiet: js.UndefOr[Boolean] = js.undefined
+  var quiet: js.UndefOr[Boolean] = js.native
   /**
     * The base directory to use as a temporary directory. Set to `false` to disable use of a
     * temporary directory. Defaults to the system's temporary directory.
     */
-  var tmpdir: js.UndefOr[String | `false`] = js.undefined
+  var tmpdir: js.UndefOr[String | `false`] = js.native
   /**
     * Human-readable descriptions of how the Electron app uses certain macOS features. These are displayed
     * in the App Store. A non-exhaustive list of available properties:
@@ -367,93 +368,198 @@ trait Options extends js.Object {
     *
     * @category macOS
     */
-  var usageDescription: js.UndefOr[StringDictionary[String]] = js.undefined
+  var usageDescription: js.UndefOr[StringDictionary[String]] = js.native
   /**
     * Application metadata to embed into the Windows executable.
     * @category Windows
     */
-  var win32metadata: js.UndefOr[Win32MetadataOptions] = js.undefined
+  var win32metadata: js.UndefOr[Win32MetadataOptions] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    dir: String,
-    afterCopy: js.Array[HookFunction] = null,
-    afterExtract: js.Array[HookFunction] = null,
-    afterPrune: js.Array[HookFunction] = null,
-    all: js.UndefOr[Boolean] = js.undefined,
-    appBundleId: String = null,
-    appCategoryType: String = null,
-    appCopyright: String = null,
-    appVersion: String = null,
-    arch: ArchOption | js.Array[ArchOption] = null,
-    asar: Boolean | CreateOptions = null,
-    buildVersion: String = null,
-    darwinDarkModeSupport: js.UndefOr[Boolean] = js.undefined,
-    derefSymlinks: js.UndefOr[Boolean] = js.undefined,
-    download: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any = null,
-    electronVersion: String = null,
-    electronZipDir: String = null,
-    executableName: String = null,
-    extendInfo: String | StringDictionary[js.Any] = null,
-    extraResource: String | js.Array[String] = null,
-    helperBundleId: String = null,
-    icon: String = null,
-    ignore: RegExp | js.Array[RegExp] | IgnoreFunction = null,
-    junk: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    osxNotarize: OsxNotarizeOptions = null,
-    osxSign: `true` | OsxSignOptions = null,
-    out: String = null,
-    overwrite: js.UndefOr[Boolean] = js.undefined,
-    platform: PlatformOption | js.Array[PlatformOption] = null,
-    prebuiltAsar: String = null,
-    protocols: js.Array[MacOSProtocol] = null,
-    prune: js.UndefOr[Boolean] = js.undefined,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    tmpdir: String | `false` = null,
-    usageDescription: StringDictionary[String] = null,
-    win32metadata: Win32MetadataOptions = null
-  ): Options = {
+  def apply(dir: String): Options = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
-    if (afterCopy != null) __obj.updateDynamic("afterCopy")(afterCopy.asInstanceOf[js.Any])
-    if (afterExtract != null) __obj.updateDynamic("afterExtract")(afterExtract.asInstanceOf[js.Any])
-    if (afterPrune != null) __obj.updateDynamic("afterPrune")(afterPrune.asInstanceOf[js.Any])
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.get.asInstanceOf[js.Any])
-    if (appBundleId != null) __obj.updateDynamic("appBundleId")(appBundleId.asInstanceOf[js.Any])
-    if (appCategoryType != null) __obj.updateDynamic("appCategoryType")(appCategoryType.asInstanceOf[js.Any])
-    if (appCopyright != null) __obj.updateDynamic("appCopyright")(appCopyright.asInstanceOf[js.Any])
-    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
-    if (arch != null) __obj.updateDynamic("arch")(arch.asInstanceOf[js.Any])
-    if (asar != null) __obj.updateDynamic("asar")(asar.asInstanceOf[js.Any])
-    if (buildVersion != null) __obj.updateDynamic("buildVersion")(buildVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(darwinDarkModeSupport)) __obj.updateDynamic("darwinDarkModeSupport")(darwinDarkModeSupport.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(derefSymlinks)) __obj.updateDynamic("derefSymlinks")(derefSymlinks.get.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (electronVersion != null) __obj.updateDynamic("electronVersion")(electronVersion.asInstanceOf[js.Any])
-    if (electronZipDir != null) __obj.updateDynamic("electronZipDir")(electronZipDir.asInstanceOf[js.Any])
-    if (executableName != null) __obj.updateDynamic("executableName")(executableName.asInstanceOf[js.Any])
-    if (extendInfo != null) __obj.updateDynamic("extendInfo")(extendInfo.asInstanceOf[js.Any])
-    if (extraResource != null) __obj.updateDynamic("extraResource")(extraResource.asInstanceOf[js.Any])
-    if (helperBundleId != null) __obj.updateDynamic("helperBundleId")(helperBundleId.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(junk)) __obj.updateDynamic("junk")(junk.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (osxNotarize != null) __obj.updateDynamic("osxNotarize")(osxNotarize.asInstanceOf[js.Any])
-    if (osxSign != null) __obj.updateDynamic("osxSign")(osxSign.asInstanceOf[js.Any])
-    if (out != null) __obj.updateDynamic("out")(out.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.get.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (prebuiltAsar != null) __obj.updateDynamic("prebuiltAsar")(prebuiltAsar.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (!js.isUndefined(prune)) __obj.updateDynamic("prune")(prune.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
-    if (tmpdir != null) __obj.updateDynamic("tmpdir")(tmpdir.asInstanceOf[js.Any])
-    if (usageDescription != null) __obj.updateDynamic("usageDescription")(usageDescription.asInstanceOf[js.Any])
-    if (win32metadata != null) __obj.updateDynamic("win32metadata")(win32metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAfterCopyVarargs(value: HookFunction*): Self = this.set("afterCopy", js.Array(value :_*))
+    @scala.inline
+    def setAfterCopy(value: js.Array[HookFunction]): Self = this.set("afterCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterCopy: Self = this.set("afterCopy", js.undefined)
+    @scala.inline
+    def setAfterExtractVarargs(value: HookFunction*): Self = this.set("afterExtract", js.Array(value :_*))
+    @scala.inline
+    def setAfterExtract(value: js.Array[HookFunction]): Self = this.set("afterExtract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterExtract: Self = this.set("afterExtract", js.undefined)
+    @scala.inline
+    def setAfterPruneVarargs(value: HookFunction*): Self = this.set("afterPrune", js.Array(value :_*))
+    @scala.inline
+    def setAfterPrune(value: js.Array[HookFunction]): Self = this.set("afterPrune", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterPrune: Self = this.set("afterPrune", js.undefined)
+    @scala.inline
+    def setAll(value: Boolean): Self = this.set("all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAll: Self = this.set("all", js.undefined)
+    @scala.inline
+    def setAppBundleId(value: String): Self = this.set("appBundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppBundleId: Self = this.set("appBundleId", js.undefined)
+    @scala.inline
+    def setAppCategoryType(value: String): Self = this.set("appCategoryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppCategoryType: Self = this.set("appCategoryType", js.undefined)
+    @scala.inline
+    def setAppCopyright(value: String): Self = this.set("appCopyright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppCopyright: Self = this.set("appCopyright", js.undefined)
+    @scala.inline
+    def setAppVersion(value: String): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersion: Self = this.set("appVersion", js.undefined)
+    @scala.inline
+    def setArchVarargs(value: ArchOption*): Self = this.set("arch", js.Array(value :_*))
+    @scala.inline
+    def setArch(value: ArchOption | js.Array[ArchOption]): Self = this.set("arch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArch: Self = this.set("arch", js.undefined)
+    @scala.inline
+    def setAsar(value: Boolean | CreateOptions): Self = this.set("asar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsar: Self = this.set("asar", js.undefined)
+    @scala.inline
+    def setBuildVersion(value: String): Self = this.set("buildVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildVersion: Self = this.set("buildVersion", js.undefined)
+    @scala.inline
+    def setDarwinDarkModeSupport(value: Boolean): Self = this.set("darwinDarkModeSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDarwinDarkModeSupport: Self = this.set("darwinDarkModeSupport", js.undefined)
+    @scala.inline
+    def setDerefSymlinks(value: Boolean): Self = this.set("derefSymlinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDerefSymlinks: Self = this.set("derefSymlinks", js.undefined)
+    @scala.inline
+    def setDownload(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ElectronDownloadOptions */ js.Any
+    ): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setElectronVersion(value: String): Self = this.set("electronVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElectronVersion: Self = this.set("electronVersion", js.undefined)
+    @scala.inline
+    def setElectronZipDir(value: String): Self = this.set("electronZipDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElectronZipDir: Self = this.set("electronZipDir", js.undefined)
+    @scala.inline
+    def setExecutableName(value: String): Self = this.set("executableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutableName: Self = this.set("executableName", js.undefined)
+    @scala.inline
+    def setExtendInfo(value: String | StringDictionary[js.Any]): Self = this.set("extendInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendInfo: Self = this.set("extendInfo", js.undefined)
+    @scala.inline
+    def setExtraResourceVarargs(value: String*): Self = this.set("extraResource", js.Array(value :_*))
+    @scala.inline
+    def setExtraResource(value: String | js.Array[String]): Self = this.set("extraResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraResource: Self = this.set("extraResource", js.undefined)
+    @scala.inline
+    def setHelperBundleId(value: String): Self = this.set("helperBundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelperBundleId: Self = this.set("helperBundleId", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIgnoreVarargs(value: RegExp*): Self = this.set("ignore", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreFunction1(value: /* path */ String => Boolean): Self = this.set("ignore", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIgnore(value: RegExp | js.Array[RegExp] | IgnoreFunction): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setJunk(value: Boolean): Self = this.set("junk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJunk: Self = this.set("junk", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOsxNotarize(value: OsxNotarizeOptions): Self = this.set("osxNotarize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsxNotarize: Self = this.set("osxNotarize", js.undefined)
+    @scala.inline
+    def setOsxSign(value: `true` | OsxSignOptions): Self = this.set("osxSign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOsxSign: Self = this.set("osxSign", js.undefined)
+    @scala.inline
+    def setOut(value: String): Self = this.set("out", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOut: Self = this.set("out", js.undefined)
+    @scala.inline
+    def setOverwrite(value: Boolean): Self = this.set("overwrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverwrite: Self = this.set("overwrite", js.undefined)
+    @scala.inline
+    def setPlatformVarargs(value: PlatformOption*): Self = this.set("platform", js.Array(value :_*))
+    @scala.inline
+    def setPlatform(value: PlatformOption | js.Array[PlatformOption]): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+    @scala.inline
+    def setPrebuiltAsar(value: String): Self = this.set("prebuiltAsar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrebuiltAsar: Self = this.set("prebuiltAsar", js.undefined)
+    @scala.inline
+    def setProtocolsVarargs(value: MacOSProtocol*): Self = this.set("protocols", js.Array(value :_*))
+    @scala.inline
+    def setProtocols(value: js.Array[MacOSProtocol]): Self = this.set("protocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocols: Self = this.set("protocols", js.undefined)
+    @scala.inline
+    def setPrune(value: Boolean): Self = this.set("prune", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrune: Self = this.set("prune", js.undefined)
+    @scala.inline
+    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuiet: Self = this.set("quiet", js.undefined)
+    @scala.inline
+    def setTmpdir(value: String | `false`): Self = this.set("tmpdir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTmpdir: Self = this.set("tmpdir", js.undefined)
+    @scala.inline
+    def setUsageDescription(value: StringDictionary[String]): Self = this.set("usageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageDescription: Self = this.set("usageDescription", js.undefined)
+    @scala.inline
+    def setWin32metadata(value: Win32MetadataOptions): Self = this.set("win32metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWin32metadata: Self = this.set("win32metadata", js.undefined)
+  }
+  
 }
 

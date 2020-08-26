@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MailComposer extends js.Object {
-  def addHeader(name: String, value: String): Unit
-  def pipe(stream: js.Any): Unit
-  def setMessageOption(from: String, to: String, body: String, html: String): Unit
-  def streamMessage(): Unit
+  def addHeader(name: String, value: String): Unit = js.native
+  def pipe(stream: js.Any): Unit = js.native
+  def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native
+  def streamMessage(): Unit = js.native
 }
 
 @JSImport("meteor/email", "MailComposer")

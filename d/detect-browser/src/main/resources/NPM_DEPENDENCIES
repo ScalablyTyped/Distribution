@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "detect-browser" : "4.8.0"
+      "detect-browser" : "5.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "detect-browser" : "4.8.0"
+      "detect-browser" : "5.1.1"
     }
   ],
   "compile-devDependencies" : [

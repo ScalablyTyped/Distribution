@@ -50,7 +50,7 @@ object emitterEmitterMod extends js.Object {
   @js.native
   class Emitter protected () extends js.Object {
     def this(options: CompilerOptions) = this()
-    var cancelToken: js.UndefOr[js.Any] = js.native
+    var cancelToken: js.Any = js.native
     var diagnostics: js.Any = js.native
     var extension: String = js.native
     var options: CompilerOptions = js.native

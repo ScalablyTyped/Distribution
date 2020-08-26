@@ -12,7 +12,7 @@ Provides a fallback for non-existing directories so that the HTML 5 history API 
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 810 |
-| # downloads        | 229617788 |
+| # downloads        | 234113169 |
 | # stars            | 20 |
 
 ## Links

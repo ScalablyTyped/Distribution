@@ -22,12 +22,34 @@ trait CreateBackupSelectionOutput extends js.Object {
 
 object CreateBackupSelectionOutput {
   @scala.inline
-  def apply(BackupPlanId: String = null, CreationDate: timestamp = null, SelectionId: String = null): CreateBackupSelectionOutput = {
+  def apply(): CreateBackupSelectionOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanId != null) __obj.updateDynamic("BackupPlanId")(BackupPlanId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (SelectionId != null) __obj.updateDynamic("SelectionId")(SelectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupSelectionOutput]
   }
+  @scala.inline
+  implicit class CreateBackupSelectionOutputOps[Self <: CreateBackupSelectionOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setSelectionId(value: String): Self = this.set("SelectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionId: Self = this.set("SelectionId", js.undefined)
+  }
+  
 }
 

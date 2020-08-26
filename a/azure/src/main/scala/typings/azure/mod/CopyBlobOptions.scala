@@ -4,34 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CopyBlobOptions extends BlobSnapshotOptions {
-  var sourceAccessConditions: StorageAccessCondition
-  var sourceLeaseId: js.UndefOr[String] = js.undefined
+  var sourceAccessConditions: StorageAccessCondition = js.native
+  var sourceLeaseId: js.UndefOr[String] = js.native
 }
 
 object CopyBlobOptions {
   @scala.inline
-  def apply(
-    sourceAccessConditions: StorageAccessCondition,
-    accessConditions: StorageAccessCondition = null,
-    leaseId: String = null,
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    metadata: StorageMetadata = null,
-    snapshotId: String = null,
-    sourceLeaseId: String = null,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): CopyBlobOptions = {
+  def apply(sourceAccessConditions: StorageAccessCondition): CopyBlobOptions = {
     val __obj = js.Dynamic.literal(sourceAccessConditions = sourceAccessConditions.asInstanceOf[js.Any])
-    if (accessConditions != null) __obj.updateDynamic("accessConditions")(accessConditions.asInstanceOf[js.Any])
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (sourceLeaseId != null) __obj.updateDynamic("sourceLeaseId")(sourceLeaseId.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyBlobOptions]
   }
+  @scala.inline
+  implicit class CopyBlobOptionsOps[Self <: CopyBlobOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceAccessConditions(value: StorageAccessCondition): Self = this.set("sourceAccessConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceLeaseId(value: String): Self = this.set("sourceLeaseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLeaseId: Self = this.set("sourceLeaseId", js.undefined)
+  }
+  
 }
 

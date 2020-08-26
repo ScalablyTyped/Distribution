@@ -21,7 +21,7 @@ object shaderChunkMod extends js.Object {
     var bumpmap_pars_fragment: String = js.native
     var clearcoat_normal_fragment_begin: String = js.native
     var clearcoat_normal_fragment_maps: String = js.native
-    var clearcoat_normalmap_pars_fragment: String = js.native
+    var clearcoat_pars_fragment: String = js.native
     var clipping_planes_fragment: String = js.native
     var clipping_planes_pars_fragment: String = js.native
     var clipping_planes_pars_vertex: String = js.native

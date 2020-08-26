@@ -28,6 +28,7 @@ class ResourcePages protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePagesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePagesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -53,6 +54,7 @@ class ResourcePages protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPage] = js.native
   def get(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def get(params: ParamsResourcePagesGet): GaxiosPromise[SchemaPage] = js.native
   def get(params: ParamsResourcePagesGet, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def get(
@@ -78,6 +80,7 @@ class ResourcePages protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaPage] = js.native
   def insert(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def insert(params: ParamsResourcePagesInsert): GaxiosPromise[SchemaPage] = js.native
   def insert(params: ParamsResourcePagesInsert, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def insert(
@@ -111,6 +114,7 @@ class ResourcePages protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPageList] = js.native
   def list(callback: BodyResponseCallback[SchemaPageList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPageList] = js.native
   def list(params: ParamsResourcePagesList): GaxiosPromise[SchemaPageList] = js.native
   def list(params: ParamsResourcePagesList, callback: BodyResponseCallback[SchemaPageList]): Unit = js.native
   def list(
@@ -142,6 +146,7 @@ class ResourcePages protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaPage] = js.native
   def patch(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def patch(params: ParamsResourcePagesPatch): GaxiosPromise[SchemaPage] = js.native
   def patch(params: ParamsResourcePagesPatch, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def patch(
@@ -170,6 +175,7 @@ class ResourcePages protected () extends js.Object {
     */
   def publish(): GaxiosPromise[SchemaPage] = js.native
   def publish(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def publish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def publish(params: ParamsResourcePagesPublish): GaxiosPromise[SchemaPage] = js.native
   def publish(params: ParamsResourcePagesPublish, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def publish(
@@ -198,6 +204,7 @@ class ResourcePages protected () extends js.Object {
     */
   def revert(): GaxiosPromise[SchemaPage] = js.native
   def revert(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def revert(params: ParamsResourcePagesRevert): GaxiosPromise[SchemaPage] = js.native
   def revert(params: ParamsResourcePagesRevert, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def revert(
@@ -229,6 +236,7 @@ class ResourcePages protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPage] = js.native
   def update(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def update(params: ParamsResourcePagesUpdate): GaxiosPromise[SchemaPage] = js.native
   def update(params: ParamsResourcePagesUpdate, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def update(

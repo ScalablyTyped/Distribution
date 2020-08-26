@@ -17,6 +17,7 @@ class FindRoomsRequest protected ()
     */
   def this(expr: MatchExpression) = this()
   def this(expr: MatchExpression, groupId: String) = this()
+  def this(expr: MatchExpression, groupId: js.UndefOr[scala.Nothing], limit: Double) = this()
   def this(expr: MatchExpression, groupId: String, limit: Double) = this()
 }
 

@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeyAgreeRecipientInfo extends js.Object {
-  var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default
-  var originator: typings.pkijs.originatorIdentifierOrKeyMod.default
-  var recipientCertificate: typings.pkijs.certificateMod.default
-  var recipientEncryptedKeys: typings.pkijs.recipientEncryptedKeysMod.default
-  var ukm: js.UndefOr[OctetString] = js.undefined
-  var version: Double
-  def fromSchema(schema: js.Any): Unit
-  def toJSON(): js.Any
-  def toSchema(): js.Any
+  var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+  var originator: typings.pkijs.originatorIdentifierOrKeyMod.default = js.native
+  var recipientCertificate: typings.pkijs.certificateMod.default = js.native
+  var recipientEncryptedKeys: typings.pkijs.recipientEncryptedKeysMod.default = js.native
+  var ukm: js.UndefOr[OctetString] = js.native
+  var version: Double = js.native
+  def fromSchema(schema: js.Any): Unit = js.native
+  def toJSON(): js.Any = js.native
+  def toSchema(): js.Any = js.native
 }
 
 object KeyAgreeRecipientInfo {
@@ -27,12 +28,43 @@ object KeyAgreeRecipientInfo {
     recipientEncryptedKeys: typings.pkijs.recipientEncryptedKeysMod.default,
     toJSON: () => js.Any,
     toSchema: () => js.Any,
-    version: Double,
-    ukm: OctetString = null
+    version: Double
   ): KeyAgreeRecipientInfo = {
     val __obj = js.Dynamic.literal(fromSchema = js.Any.fromFunction1(fromSchema), keyEncryptionAlgorithm = keyEncryptionAlgorithm.asInstanceOf[js.Any], originator = originator.asInstanceOf[js.Any], recipientCertificate = recipientCertificate.asInstanceOf[js.Any], recipientEncryptedKeys = recipientEncryptedKeys.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema), version = version.asInstanceOf[js.Any])
-    if (ukm != null) __obj.updateDynamic("ukm")(ukm.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyAgreeRecipientInfo]
   }
+  @scala.inline
+  implicit class KeyAgreeRecipientInfoOps[Self <: KeyAgreeRecipientInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFromSchema(value: js.Any => Unit): Self = this.set("fromSchema", js.Any.fromFunction1(value))
+    @scala.inline
+    def setKeyEncryptionAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = this.set("keyEncryptionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginator(value: typings.pkijs.originatorIdentifierOrKeyMod.default): Self = this.set("originator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecipientCertificate(value: typings.pkijs.certificateMod.default): Self = this.set("recipientCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecipientEncryptedKeys(value: typings.pkijs.recipientEncryptedKeysMod.default): Self = this.set("recipientEncryptedKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    @scala.inline
+    def setToSchema(value: () => js.Any): Self = this.set("toSchema", js.Any.fromFunction0(value))
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUkm(value: OctetString): Self = this.set("ukm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUkm: Self = this.set("ukm", js.undefined)
+  }
+  
 }
 

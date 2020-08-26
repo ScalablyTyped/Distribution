@@ -18,11 +18,30 @@ trait SchemaOrderCustomer extends js.Object {
 
 object SchemaOrderCustomer {
   @scala.inline
-  def apply(fullName: String = null, marketingRightsInfo: SchemaOrderCustomerMarketingRightsInfo = null): SchemaOrderCustomer = {
+  def apply(): SchemaOrderCustomer = {
     val __obj = js.Dynamic.literal()
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
-    if (marketingRightsInfo != null) __obj.updateDynamic("marketingRightsInfo")(marketingRightsInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrderCustomer]
   }
+  @scala.inline
+  implicit class SchemaOrderCustomerOps[Self <: SchemaOrderCustomer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullName: Self = this.set("fullName", js.undefined)
+    @scala.inline
+    def setMarketingRightsInfo(value: SchemaOrderCustomerMarketingRightsInfo): Self = this.set("marketingRightsInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketingRightsInfo: Self = this.set("marketingRightsInfo", js.undefined)
+  }
+  
 }
 

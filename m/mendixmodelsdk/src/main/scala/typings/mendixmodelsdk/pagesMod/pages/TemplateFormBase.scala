@@ -50,16 +50,14 @@ abstract class TemplateFormBase protected () extends FormBase {
     * In version 7.17.0: added public
     */
   def displayName: String = js.native
-  def displayName(newValue: String): js.Any = js.native
+  def displayName_=(newValue: String): Unit = js.native
   /**
     * In version 7.17.0: introduced
     */
   def documentationUrl: String = js.native
-  def documentationUrl(newValue: String): js.Any = js.native
-  def imageData(): js.Any = js.native
-  def imageData(newValue: String): js.Any = js.native
-  @JSName("imageData")
-  def imageData_Union: String | Null = js.native
+  def documentationUrl_=(newValue: String): Unit = js.native
+  def imageData: String | Null = js.native
+  def imageData_=(newValue: String | Null): Unit = js.native
 }
 
 /* static members */

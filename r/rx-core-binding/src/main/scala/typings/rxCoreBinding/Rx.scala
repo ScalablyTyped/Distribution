@@ -62,9 +62,54 @@ object Rx extends js.Object {
       initialValue: T
     ): Observable[TResult] = js.native
     def replay(): ConnectableObservable[T] = js.native
+    def replay(
+      selector: js.UndefOr[scala.Nothing],
+      bufferSize: js.UndefOr[scala.Nothing],
+      window: js.UndefOr[scala.Nothing],
+      scheduler: IScheduler
+    ): ConnectableObservable[T] = js.native
+    def replay(selector: js.UndefOr[scala.Nothing], bufferSize: js.UndefOr[scala.Nothing], window: Double): ConnectableObservable[T] = js.native
+    def replay(
+      selector: js.UndefOr[scala.Nothing],
+      bufferSize: js.UndefOr[scala.Nothing],
+      window: Double,
+      scheduler: IScheduler
+    ): ConnectableObservable[T] = js.native
+    def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double): ConnectableObservable[T] = js.native
+    def replay(
+      selector: js.UndefOr[scala.Nothing],
+      bufferSize: Double,
+      window: js.UndefOr[scala.Nothing],
+      scheduler: IScheduler
+    ): ConnectableObservable[T] = js.native
+    def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
+    def replay(selector: js.UndefOr[scala.Nothing], bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
         // hack to catch first omitted parameter
     def replay(selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]]): Observable[T] = js.native
+    def replay(
+      selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+      bufferSize: js.UndefOr[scala.Nothing],
+      window: js.UndefOr[scala.Nothing],
+      scheduler: IScheduler
+    ): Observable[T] = js.native
+    def replay(
+      selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+      bufferSize: js.UndefOr[scala.Nothing],
+      window: Double
+    ): Observable[T] = js.native
+    def replay(
+      selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+      bufferSize: js.UndefOr[scala.Nothing],
+      window: Double,
+      scheduler: IScheduler
+    ): Observable[T] = js.native
     def replay(selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]], bufferSize: Double): Observable[T] = js.native
+    def replay(
+      selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
+      bufferSize: Double,
+      window: js.UndefOr[scala.Nothing],
+      scheduler: IScheduler
+    ): Observable[T] = js.native
     def replay(
       selector: js.Function1[/* source */ ConnectableObservable[T], Observable[T]],
       bufferSize: Double,
@@ -77,7 +122,16 @@ object Rx extends js.Object {
       scheduler: IScheduler
     ): Observable[T] = js.native
     def replay(selector: Boolean): ConnectableObservable[T] = js.native
+    def replay(
+      selector: Boolean,
+      bufferSize: js.UndefOr[scala.Nothing],
+      window: js.UndefOr[scala.Nothing],
+      scheduler: IScheduler
+    ): ConnectableObservable[T] = js.native
+    def replay(selector: Boolean, bufferSize: js.UndefOr[scala.Nothing], window: Double): ConnectableObservable[T] = js.native
+    def replay(selector: Boolean, bufferSize: js.UndefOr[scala.Nothing], window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
     def replay(selector: Boolean, bufferSize: Double): ConnectableObservable[T] = js.native
+    def replay(selector: Boolean, bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler): ConnectableObservable[T] = js.native
     def replay(selector: Boolean, bufferSize: Double, window: Double): ConnectableObservable[T] = js.native
     def replay(selector: Boolean, bufferSize: Double, window: Double, scheduler: IScheduler): ConnectableObservable[T] = js.native
     /**
@@ -92,7 +146,11 @@ object Rx extends js.Object {
       */
     def share(): Observable[T] = js.native
     def shareReplay(): Observable[T] = js.native
+    def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
+    def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: Double): Observable[T] = js.native
+    def shareReplay(bufferSize: js.UndefOr[scala.Nothing], window: Double, scheduler: IScheduler): Observable[T] = js.native
     def shareReplay(bufferSize: Double): Observable[T] = js.native
+    def shareReplay(bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
     def shareReplay(bufferSize: Double, window: Double): Observable[T] = js.native
     def shareReplay(bufferSize: Double, window: Double, scheduler: IScheduler): Observable[T] = js.native
     /**
@@ -113,10 +171,10 @@ object Rx extends js.Object {
   trait ReplaySubjectStatic
     extends Instantiable0[ReplaySubject[js.Object]]
        with Instantiable1[/* bufferSize */ Double, ReplaySubject[js.Object]]
-       with Instantiable2[/* bufferSize */ Double, /* window */ Double, ReplaySubject[js.Object]]
+       with Instantiable2[js.UndefOr[/* bufferSize */ Double], /* window */ Double, ReplaySubject[js.Object]]
        with Instantiable3[
-          /* bufferSize */ Double, 
-          /* window */ Double, 
+          js.UndefOr[/* bufferSize */ Double], 
+          js.UndefOr[/* window */ Double], 
           /* scheduler */ IScheduler, 
           ReplaySubject[js.Object]
         ]
@@ -125,6 +183,7 @@ object Rx extends js.Object {
   trait SubjectStatic
     extends Instantiable0[Subject[js.Object]] {
     def create[T](): ISubject[T] = js.native
+    def create[T](observer: js.UndefOr[scala.Nothing], observable: Observable[T]): ISubject[T] = js.native
     def create[T](observer: Observer[T]): ISubject[T] = js.native
     def create[T](observer: Observer[T], observable: Observable[T]): ISubject[T] = js.native
   }

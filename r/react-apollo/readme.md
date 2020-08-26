@@ -10,9 +10,9 @@ React Apollo Hooks, Components, and HOC.
 | ------------------ | :-------------: |
 | Full name          | react-apollo |
 | Keywords           | apollo, graphql, react, hooks, hoc, components |
-| # releases         | 100 |
-| # dependents       | 475 |
-| # downloads        | 24890755 |
+| # releases         | 99 |
+| # dependents       | 478 |
+| # downloads        | 25226577 |
 | # stars            | 17 |
 
 ## Links

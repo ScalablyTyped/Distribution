@@ -7,51 +7,60 @@ import scala.scalajs.js.annotation._
 /**
   * Identifies a single production run
   */
+@js.native
 trait MedicationPackageBatch extends BackboneElement {
   /**
     * Contains extended information for property 'expirationDate'.
     */
-  var _expirationDate: js.UndefOr[Element] = js.undefined
+  var _expirationDate: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'lotNumber'.
     */
-  var _lotNumber: js.UndefOr[Element] = js.undefined
+  var _lotNumber: js.UndefOr[Element] = js.native
   /**
     * When batch will expire
     */
-  var expirationDate: js.UndefOr[dateTime] = js.undefined
+  var expirationDate: js.UndefOr[dateTime] = js.native
   /**
     * Identifier assigned to batch
     */
-  var lotNumber: js.UndefOr[String] = js.undefined
+  var lotNumber: js.UndefOr[String] = js.native
 }
 
 object MedicationPackageBatch {
   @scala.inline
-  def apply(
-    _expirationDate: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _lotNumber: Element = null,
-    expirationDate: dateTime = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    lotNumber: String = null,
-    modifierExtension: js.Array[Extension] = null
-  ): MedicationPackageBatch = {
+  def apply(): MedicationPackageBatch = {
     val __obj = js.Dynamic.literal()
-    if (_expirationDate != null) __obj.updateDynamic("_expirationDate")(_expirationDate.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_lotNumber != null) __obj.updateDynamic("_lotNumber")(_lotNumber.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lotNumber != null) __obj.updateDynamic("lotNumber")(lotNumber.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationPackageBatch]
   }
+  @scala.inline
+  implicit class MedicationPackageBatchOps[Self <: MedicationPackageBatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_expirationDate(value: Element): Self = this.set("_expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_expirationDate: Self = this.set("_expirationDate", js.undefined)
+    @scala.inline
+    def set_lotNumber(value: Element): Self = this.set("_lotNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_lotNumber: Self = this.set("_lotNumber", js.undefined)
+    @scala.inline
+    def setExpirationDate(value: dateTime): Self = this.set("expirationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationDate: Self = this.set("expirationDate", js.undefined)
+    @scala.inline
+    def setLotNumber(value: String): Self = this.set("lotNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLotNumber: Self = this.set("lotNumber", js.undefined)
+  }
+  
 }
 

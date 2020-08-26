@@ -22,10 +22,30 @@ trait PutBucketWebsiteRequest extends js.Object {
 
 object PutBucketWebsiteRequest {
   @scala.inline
-  def apply(Bucket: BucketName, WebsiteConfiguration: WebsiteConfiguration, ContentMD5: ContentMD5 = null): PutBucketWebsiteRequest = {
+  def apply(Bucket: BucketName, WebsiteConfiguration: WebsiteConfiguration): PutBucketWebsiteRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], WebsiteConfiguration = WebsiteConfiguration.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketWebsiteRequest]
   }
+  @scala.inline
+  implicit class PutBucketWebsiteRequestOps[Self <: PutBucketWebsiteRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebsiteConfiguration(value: WebsiteConfiguration): Self = this.set("WebsiteConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+  }
+  
 }
 

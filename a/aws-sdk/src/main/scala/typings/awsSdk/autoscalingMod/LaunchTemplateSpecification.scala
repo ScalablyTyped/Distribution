@@ -22,16 +22,34 @@ trait LaunchTemplateSpecification extends js.Object {
 
 object LaunchTemplateSpecification {
   @scala.inline
-  def apply(
-    LaunchTemplateId: XmlStringMaxLen255 = null,
-    LaunchTemplateName: LaunchTemplateName = null,
-    Version: XmlStringMaxLen255 = null
-  ): LaunchTemplateSpecification = {
+  def apply(): LaunchTemplateSpecification = {
     val __obj = js.Dynamic.literal()
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateSpecification]
   }
+  @scala.inline
+  implicit class LaunchTemplateSpecificationOps[Self <: LaunchTemplateSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchTemplateId(value: XmlStringMaxLen255): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    @scala.inline
+    def setVersion(value: XmlStringMaxLen255): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

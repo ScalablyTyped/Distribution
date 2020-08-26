@@ -9,13 +9,16 @@ import scala.scalajs.js.annotation._
 trait SmoothScroll extends js.Object {
   def animateScroll(): Unit = js.native
   def animateScroll(anchor: Double): Unit = js.native
+  def animateScroll(anchor: Double, toggle: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def animateScroll(anchor: Double, toggle: Null, options: Options): Unit = js.native
   def animateScroll(anchor: Double, toggle: Element): Unit = js.native
   def animateScroll(anchor: Double, toggle: Element, options: Options): Unit = js.native
+  def animateScroll(anchor: Null, toggle: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def animateScroll(anchor: Null, toggle: Null, options: Options): Unit = js.native
   def animateScroll(anchor: Null, toggle: Element): Unit = js.native
   def animateScroll(anchor: Null, toggle: Element, options: Options): Unit = js.native
   def animateScroll(anchor: Element): Unit = js.native
+  def animateScroll(anchor: Element, toggle: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
   def animateScroll(anchor: Element, toggle: Null, options: Options): Unit = js.native
   def animateScroll(anchor: Element, toggle: Element): Unit = js.native
   def animateScroll(anchor: Element, toggle: Element, options: Options): Unit = js.native

@@ -13,13 +13,29 @@ object formatMod extends js.Object {
   def format(
     dateTime: TimeStruct,
     utcTime: TimeStruct,
-    localZone: js.UndefOr[Null | TimeZone],
+    localZone: js.UndefOr[scala.Nothing],
     formatString: String
   ): String = js.native
   def format(
     dateTime: TimeStruct,
     utcTime: TimeStruct,
-    localZone: js.UndefOr[Null | TimeZone],
+    localZone: js.UndefOr[scala.Nothing],
+    formatString: String,
+    locale: PartialLocale
+  ): String = js.native
+  def format(dateTime: TimeStruct, utcTime: TimeStruct, localZone: Null, formatString: String): String = js.native
+  def format(
+    dateTime: TimeStruct,
+    utcTime: TimeStruct,
+    localZone: Null,
+    formatString: String,
+    locale: PartialLocale
+  ): String = js.native
+  def format(dateTime: TimeStruct, utcTime: TimeStruct, localZone: TimeZone, formatString: String): String = js.native
+  def format(
+    dateTime: TimeStruct,
+    utcTime: TimeStruct,
+    localZone: TimeZone,
     formatString: String,
     locale: PartialLocale
   ): String = js.native

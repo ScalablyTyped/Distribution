@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class NumberSequence ()
   extends typings.agGrid.utilsMod.NumberSequence {
   def this(initValue: Double) = this()
+  def this(initValue: js.UndefOr[scala.Nothing], step: Double) = this()
   def this(initValue: Double, step: Double) = this()
 }
 

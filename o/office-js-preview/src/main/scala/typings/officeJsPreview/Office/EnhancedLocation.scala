@@ -32,6 +32,11 @@ trait EnhancedLocation extends js.Object {
     locationIdentifiers: js.Array[LocationIdentifier],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addAsync(
+    locationIdentifiers: js.Array[LocationIdentifier],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): Unit = js.native
   def addAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
@@ -56,6 +61,10 @@ trait EnhancedLocation extends js.Object {
     */
   def getAsync(): Unit = js.native
   def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], Unit]): Unit = js.native
+  def getAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], Unit]
+  ): Unit = js.native
   def getAsync(options: AsyncContextOptions): Unit = js.native
   def getAsync(
     options: AsyncContextOptions,
@@ -83,6 +92,11 @@ trait EnhancedLocation extends js.Object {
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier]): Unit = js.native
   def removeAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def removeAsync(
+    locationIdentifiers: js.Array[LocationIdentifier],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): Unit = js.native

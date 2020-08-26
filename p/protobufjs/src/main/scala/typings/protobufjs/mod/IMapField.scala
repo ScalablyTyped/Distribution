@@ -1,29 +1,36 @@
 package typings.protobufjs.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IMapField extends IField {
   /** Key type */
-  var keyType: String
+  var keyType: String = js.native
 }
 
 object IMapField {
   @scala.inline
-  def apply(
-    id: Double,
-    keyType: String,
-    `type`: String,
-    options: StringDictionary[js.Any] = null,
-    rule: String = null
-  ): IMapField = {
+  def apply(id: Double, keyType: String, `type`: String): IMapField = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapField]
   }
+  @scala.inline
+  implicit class IMapFieldOps[Self <: IMapField] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyType(value: String): Self = this.set("keyType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

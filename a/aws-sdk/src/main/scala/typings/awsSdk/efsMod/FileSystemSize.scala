@@ -26,17 +26,36 @@ trait FileSystemSize extends js.Object {
 
 object FileSystemSize {
   @scala.inline
-  def apply(
-    Value: FileSystemSizeValue,
-    Timestamp: Timestamp = null,
-    ValueInIA: js.UndefOr[FileSystemNullableSizeValue] = js.undefined,
-    ValueInStandard: js.UndefOr[FileSystemNullableSizeValue] = js.undefined
-  ): FileSystemSize = {
+  def apply(Value: FileSystemSizeValue): FileSystemSize = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(ValueInIA)) __obj.updateDynamic("ValueInIA")(ValueInIA.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ValueInStandard)) __obj.updateDynamic("ValueInStandard")(ValueInStandard.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemSize]
   }
+  @scala.inline
+  implicit class FileSystemSizeOps[Self <: FileSystemSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setValue(value: FileSystemSizeValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+    @scala.inline
+    def setValueInIA(value: FileSystemNullableSizeValue): Self = this.set("ValueInIA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueInIA: Self = this.set("ValueInIA", js.undefined)
+    @scala.inline
+    def setValueInStandard(value: FileSystemNullableSizeValue): Self = this.set("ValueInStandard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueInStandard: Self = this.set("ValueInStandard", js.undefined)
+  }
+  
 }
 

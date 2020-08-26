@@ -26,18 +26,38 @@ trait GetProtectionStatusResponse extends js.Object {
 
 object GetProtectionStatusResponse {
   @scala.inline
-  def apply(
-    AdminAccountId: AWSAccountId = null,
-    Data: ProtectionData = null,
-    NextToken: PaginationToken = null,
-    ServiceType: SecurityServiceType = null
-  ): GetProtectionStatusResponse = {
+  def apply(): GetProtectionStatusResponse = {
     val __obj = js.Dynamic.literal()
-    if (AdminAccountId != null) __obj.updateDynamic("AdminAccountId")(AdminAccountId.asInstanceOf[js.Any])
-    if (Data != null) __obj.updateDynamic("Data")(Data.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ServiceType != null) __obj.updateDynamic("ServiceType")(ServiceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProtectionStatusResponse]
   }
+  @scala.inline
+  implicit class GetProtectionStatusResponseOps[Self <: GetProtectionStatusResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminAccountId(value: AWSAccountId): Self = this.set("AdminAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminAccountId: Self = this.set("AdminAccountId", js.undefined)
+    @scala.inline
+    def setData(value: ProtectionData): Self = this.set("Data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("Data", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setServiceType(value: SecurityServiceType): Self = this.set("ServiceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("ServiceType", js.undefined)
+  }
+  
 }
 

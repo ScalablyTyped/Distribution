@@ -1,5 +1,6 @@
 package typings.pulumiAws.getCertificateMod
 
+import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,6 +26,10 @@ trait GetCertificateArgs extends js.Object {
     */
   val statuses: js.UndefOr[js.Array[String]] = js.native
   /**
+    * A mapping of tags for the resource.
+    */
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
+  /**
     * A list of types on which to filter the returned list. Valid values are `AMAZON_ISSUED` and `IMPORTED`.
     */
   val types: js.UndefOr[js.Array[String]] = js.native
@@ -32,19 +37,50 @@ trait GetCertificateArgs extends js.Object {
 
 object GetCertificateArgs {
   @scala.inline
-  def apply(
-    domain: String,
-    keyTypes: js.Array[String] = null,
-    mostRecent: js.UndefOr[Boolean] = js.undefined,
-    statuses: js.Array[String] = null,
-    types: js.Array[String] = null
-  ): GetCertificateArgs = {
+  def apply(domain: String): GetCertificateArgs = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
-    if (keyTypes != null) __obj.updateDynamic("keyTypes")(keyTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent.get.asInstanceOf[js.Any])
-    if (statuses != null) __obj.updateDynamic("statuses")(statuses.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateArgs]
   }
+  @scala.inline
+  implicit class GetCertificateArgsOps[Self <: GetCertificateArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: String): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeyTypesVarargs(value: String*): Self = this.set("keyTypes", js.Array(value :_*))
+    @scala.inline
+    def setKeyTypes(value: js.Array[String]): Self = this.set("keyTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyTypes: Self = this.set("keyTypes", js.undefined)
+    @scala.inline
+    def setMostRecent(value: Boolean): Self = this.set("mostRecent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMostRecent: Self = this.set("mostRecent", js.undefined)
+    @scala.inline
+    def setStatusesVarargs(value: String*): Self = this.set("statuses", js.Array(value :_*))
+    @scala.inline
+    def setStatuses(value: js.Array[String]): Self = this.set("statuses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatuses: Self = this.set("statuses", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

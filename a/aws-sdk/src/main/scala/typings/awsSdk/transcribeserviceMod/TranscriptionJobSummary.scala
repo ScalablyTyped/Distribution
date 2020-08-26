@@ -46,28 +46,58 @@ trait TranscriptionJobSummary extends js.Object {
 
 object TranscriptionJobSummary {
   @scala.inline
-  def apply(
-    CompletionTime: DateTime = null,
-    ContentRedaction: ContentRedaction = null,
-    CreationTime: DateTime = null,
-    FailureReason: FailureReason = null,
-    LanguageCode: LanguageCode = null,
-    OutputLocationType: OutputLocationType = null,
-    StartTime: DateTime = null,
-    TranscriptionJobName: TranscriptionJobName = null,
-    TranscriptionJobStatus: TranscriptionJobStatus = null
-  ): TranscriptionJobSummary = {
+  def apply(): TranscriptionJobSummary = {
     val __obj = js.Dynamic.literal()
-    if (CompletionTime != null) __obj.updateDynamic("CompletionTime")(CompletionTime.asInstanceOf[js.Any])
-    if (ContentRedaction != null) __obj.updateDynamic("ContentRedaction")(ContentRedaction.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (OutputLocationType != null) __obj.updateDynamic("OutputLocationType")(OutputLocationType.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (TranscriptionJobName != null) __obj.updateDynamic("TranscriptionJobName")(TranscriptionJobName.asInstanceOf[js.Any])
-    if (TranscriptionJobStatus != null) __obj.updateDynamic("TranscriptionJobStatus")(TranscriptionJobStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranscriptionJobSummary]
   }
+  @scala.inline
+  implicit class TranscriptionJobSummaryOps[Self <: TranscriptionJobSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTime(value: DateTime): Self = this.set("CompletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTime: Self = this.set("CompletionTime", js.undefined)
+    @scala.inline
+    def setContentRedaction(value: ContentRedaction): Self = this.set("ContentRedaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentRedaction: Self = this.set("ContentRedaction", js.undefined)
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setOutputLocationType(value: OutputLocationType): Self = this.set("OutputLocationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocationType: Self = this.set("OutputLocationType", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTranscriptionJobName(value: TranscriptionJobName): Self = this.set("TranscriptionJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscriptionJobName: Self = this.set("TranscriptionJobName", js.undefined)
+    @scala.inline
+    def setTranscriptionJobStatus(value: TranscriptionJobStatus): Self = this.set("TranscriptionJobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranscriptionJobStatus: Self = this.set("TranscriptionJobStatus", js.undefined)
+  }
+  
 }
 

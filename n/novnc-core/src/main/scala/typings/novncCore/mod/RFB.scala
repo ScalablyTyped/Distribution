@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 trait RFB extends js.Object {
   def clipboardPasteFrom(text: String): Unit = js.native
   def connect(host: String, port: Double): Boolean = js.native
+  def connect(host: String, port: Double, password: js.UndefOr[scala.Nothing], path: String): Boolean = js.native
   def connect(host: String, port: Double, password: String): Boolean = js.native
   def connect(host: String, port: Double, password: String, path: String): Boolean = js.native
   def disconnect(): Unit = js.native

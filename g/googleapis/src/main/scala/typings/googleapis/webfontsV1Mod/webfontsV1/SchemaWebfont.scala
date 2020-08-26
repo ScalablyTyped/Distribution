@@ -45,26 +45,58 @@ trait SchemaWebfont extends js.Object {
 
 object SchemaWebfont {
   @scala.inline
-  def apply(
-    category: String = null,
-    family: String = null,
-    files: StringDictionary[String] = null,
-    kind: String = null,
-    lastModified: String = null,
-    subsets: js.Array[String] = null,
-    variants: js.Array[String] = null,
-    version: String = null
-  ): SchemaWebfont = {
+  def apply(): SchemaWebfont = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (subsets != null) __obj.updateDynamic("subsets")(subsets.asInstanceOf[js.Any])
-    if (variants != null) __obj.updateDynamic("variants")(variants.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebfont]
   }
+  @scala.inline
+  implicit class SchemaWebfontOps[Self <: SchemaWebfont] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setFamily(value: String): Self = this.set("family", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamily: Self = this.set("family", js.undefined)
+    @scala.inline
+    def setFiles(value: StringDictionary[String]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLastModified(value: String): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setSubsetsVarargs(value: String*): Self = this.set("subsets", js.Array(value :_*))
+    @scala.inline
+    def setSubsets(value: js.Array[String]): Self = this.set("subsets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubsets: Self = this.set("subsets", js.undefined)
+    @scala.inline
+    def setVariantsVarargs(value: String*): Self = this.set("variants", js.Array(value :_*))
+    @scala.inline
+    def setVariants(value: js.Array[String]): Self = this.set("variants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariants: Self = this.set("variants", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -46,16 +46,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class OAuthProvider protected () extends AuthProvider {
   def this(providerId: String) = this()
-  /* CompleteClass */
-  override var providerId: String = js.native
   /**
     * @param scope Provider OAuth scope to add.
     */
   def addScope(scope: String): AuthProvider = js.native
-  def credential(): OAuthCredential = js.native
-  def credential(optionsOrIdToken: String): OAuthCredential = js.native
-  def credential(optionsOrIdToken: String, accessToken: String): OAuthCredential = js.native
-  def credential(optionsOrIdToken: Null, accessToken: String): OAuthCredential = js.native
   /**
     * Creates a Firebase credential from a generic OAuth provider's access token or
     * ID token. The raw nonce is required when an ID token with a nonce field is
@@ -77,6 +71,10 @@ class OAuthProvider protected () extends AuthProvider {
     *     the ID token, access token and raw nonce or the ID token string.
     * @param accessToken The OAuth access token.
     */
+  def credential(): OAuthCredential = js.native
+  def credential(optionsOrIdToken: String): OAuthCredential = js.native
+  def credential(optionsOrIdToken: String, accessToken: String): OAuthCredential = js.native
+  def credential(optionsOrIdToken: Null, accessToken: String): OAuthCredential = js.native
   def credential(optionsOrIdToken: OAuthCredentialOptions): OAuthCredential = js.native
   def credential(optionsOrIdToken: OAuthCredentialOptions, accessToken: String): OAuthCredential = js.native
   /**

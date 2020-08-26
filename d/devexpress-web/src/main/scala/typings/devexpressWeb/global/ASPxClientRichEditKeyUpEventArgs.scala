@@ -16,10 +16,5 @@ class ASPxClientRichEditKeyUpEventArgs protected ()
     * @param htmlEvent A DHTML event object that relates to the processed event.
     */
   def this(htmlEvent: js.Any) = this()
-  /**
-    * Gets a DHTML event object that relates to the processed event.
-    */
-  /* CompleteClass */
-  override var htmlEvent: js.Any = js.native
 }
 

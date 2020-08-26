@@ -26,16 +26,9 @@ object createRepositoryCommandMod extends js.Object {
           Readable
         ] {
     def this(input: CreateRepositoryInput) = this()
-    /* CompleteClass */
-    override val input: CreateRepositoryInput = js.native
     val middlewareStack: MiddlewareStack[CreateRepositoryInput, CreateRepositoryOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[CreateRepositoryInput, CreateRepositoryOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[CreateRepositoryInput, CreateRepositoryOutput] = js.native
   }

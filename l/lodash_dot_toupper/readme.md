@@ -12,7 +12,7 @@ The lodash method `_.toUpper` exported as a module.
 | Keywords           | lodash-modularized, toupper |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 10917 |
+| # downloads        | 10921 |
 | # stars            | 0 |
 
 ## Links

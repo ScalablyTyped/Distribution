@@ -40,6 +40,7 @@ object KustoConnectionStringBuilder extends js.Object {
     ]
   ): KustoConnectionStringBuilder = js.native
   def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = js.native
+  def withAadManagedIdentities(connectionString: String, msiEndpoint: js.UndefOr[scala.Nothing], clientId: String): KustoConnectionStringBuilder = js.native
   def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = js.native
   def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = js.native
   def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): KustoConnectionStringBuilder = js.native

@@ -12,7 +12,7 @@ Run an array of functions in parallel
 | Keywords           | parallel, async, function, callback, asynchronous, run, array, run parallel |
 | # releases         | 4 |
 | # dependents       | 204 |
-| # downloads        | 39536819 |
+| # downloads        | 44763424 |
 | # stars            | 18 |
 
 ## Links

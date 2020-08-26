@@ -58,34 +58,70 @@ trait BatchInferenceJob extends js.Object {
 
 object BatchInferenceJob {
   @scala.inline
-  def apply(
-    batchInferenceJobArn: Arn = null,
-    creationDateTime: Date = null,
-    failureReason: FailureReason = null,
-    filterArn: Arn = null,
-    jobInput: BatchInferenceJobInput = null,
-    jobName: Name = null,
-    jobOutput: BatchInferenceJobOutput = null,
-    lastUpdatedDateTime: Date = null,
-    numResults: js.UndefOr[NumBatchResults] = js.undefined,
-    roleArn: RoleArn = null,
-    solutionVersionArn: Arn = null,
-    status: Status = null
-  ): BatchInferenceJob = {
+  def apply(): BatchInferenceJob = {
     val __obj = js.Dynamic.literal()
-    if (batchInferenceJobArn != null) __obj.updateDynamic("batchInferenceJobArn")(batchInferenceJobArn.asInstanceOf[js.Any])
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (filterArn != null) __obj.updateDynamic("filterArn")(filterArn.asInstanceOf[js.Any])
-    if (jobInput != null) __obj.updateDynamic("jobInput")(jobInput.asInstanceOf[js.Any])
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
-    if (jobOutput != null) __obj.updateDynamic("jobOutput")(jobOutput.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(numResults)) __obj.updateDynamic("numResults")(numResults.get.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (solutionVersionArn != null) __obj.updateDynamic("solutionVersionArn")(solutionVersionArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchInferenceJob]
   }
+  @scala.inline
+  implicit class BatchInferenceJobOps[Self <: BatchInferenceJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchInferenceJobArn(value: Arn): Self = this.set("batchInferenceJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchInferenceJobArn: Self = this.set("batchInferenceJobArn", js.undefined)
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setFilterArn(value: Arn): Self = this.set("filterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterArn: Self = this.set("filterArn", js.undefined)
+    @scala.inline
+    def setJobInput(value: BatchInferenceJobInput): Self = this.set("jobInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobInput: Self = this.set("jobInput", js.undefined)
+    @scala.inline
+    def setJobName(value: Name): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("jobName", js.undefined)
+    @scala.inline
+    def setJobOutput(value: BatchInferenceJobOutput): Self = this.set("jobOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobOutput: Self = this.set("jobOutput", js.undefined)
+    @scala.inline
+    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    @scala.inline
+    def setNumResults(value: NumBatchResults): Self = this.set("numResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("numResults", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setSolutionVersionArn(value: Arn): Self = this.set("solutionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionVersionArn: Self = this.set("solutionVersionArn", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

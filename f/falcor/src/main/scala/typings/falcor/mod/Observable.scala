@@ -14,7 +14,23 @@ class Observable[T] () extends js.Object {
     * These values can be received using either callbacks or an {@link Observer} object.
     */
   def forEach(): Subscription = js.native
+  def forEach(
+    onNext: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: ObservableOnCompletedCallback
+  ): Subscription = js.native
+  def forEach(onNext: js.UndefOr[scala.Nothing], onError: ObservableOnErrorCallback): Subscription = js.native
+  def forEach(
+    onNext: js.UndefOr[scala.Nothing],
+    onError: ObservableOnErrorCallback,
+    onCompleted: ObservableOnCompletedCallback
+  ): Subscription = js.native
   def forEach(onNext: ObservableOnNextCallback[T]): Subscription = js.native
+  def forEach(
+    onNext: ObservableOnNextCallback[T],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: ObservableOnCompletedCallback
+  ): Subscription = js.native
   def forEach(onNext: ObservableOnNextCallback[T], onError: ObservableOnErrorCallback): Subscription = js.native
   def forEach(
     onNext: ObservableOnNextCallback[T],
@@ -27,7 +43,23 @@ class Observable[T] () extends js.Object {
     * When forEach is called, we open the valve and the values within are pushed at us.  These values can be received using either callbacks or an {@link Observer} object.
     */
   def subscribe(): Subscription = js.native
+  def subscribe(
+    onNext: js.UndefOr[scala.Nothing],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: ObservableOnCompletedCallback
+  ): Subscription = js.native
+  def subscribe(onNext: js.UndefOr[scala.Nothing], onError: ObservableOnErrorCallback): Subscription = js.native
+  def subscribe(
+    onNext: js.UndefOr[scala.Nothing],
+    onError: ObservableOnErrorCallback,
+    onCompleted: ObservableOnCompletedCallback
+  ): Subscription = js.native
   def subscribe(onNext: ObservableOnNextCallback[T]): Subscription = js.native
+  def subscribe(
+    onNext: ObservableOnNextCallback[T],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: ObservableOnCompletedCallback
+  ): Subscription = js.native
   def subscribe(onNext: ObservableOnNextCallback[T], onError: ObservableOnErrorCallback): Subscription = js.native
   def subscribe(
     onNext: ObservableOnNextCallback[T],

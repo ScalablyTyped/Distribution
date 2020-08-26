@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextBufferGeometry protected ()
   extends typings.three.geometriesMod.TextBufferGeometry {
-  def this(text: String) = this()
   def this(text: String, parameters: TextGeometryParameters) = this()
 }
 

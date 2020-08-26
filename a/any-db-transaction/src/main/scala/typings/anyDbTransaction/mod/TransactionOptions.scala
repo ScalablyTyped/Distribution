@@ -6,51 +6,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransactionOptions extends js.Object {
   /**
     * Adapter name e.g. 'mysql'
     */
-  var adapter: js.UndefOr[Adapter] = js.undefined
+  var adapter: js.UndefOr[Adapter] = js.native
   /**
     * Rollback automatically on error, default true
     */
-  var autoRollback: js.UndefOr[Boolean] = js.undefined
+  var autoRollback: js.UndefOr[Boolean] = js.native
   /**
     * SQL statement for beginning a transaction, default 'BEGIN'
     */
-  var begin: js.UndefOr[String] = js.undefined
+  var begin: js.UndefOr[String] = js.native
   /**
     * Callback for transaction
     */
-  var callback: js.UndefOr[js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function2[/* error */ Error, /* transaction */ Transaction, Unit]] = js.native
   /**
     * SQL statement for committing a transaction, default 'COMMIT'
     */
-  var commit: js.UndefOr[String] = js.undefined
+  var commit: js.UndefOr[String] = js.native
   /**
     * SQL statement for rolling back a transaction, default 'ROLLBACK'
     */
-  var rollback: js.UndefOr[String] = js.undefined
+  var rollback: js.UndefOr[String] = js.native
 }
 
 object TransactionOptions {
   @scala.inline
-  def apply(
-    adapter: Adapter = null,
-    autoRollback: js.UndefOr[Boolean] = js.undefined,
-    begin: String = null,
-    callback: (/* error */ Error, /* transaction */ Transaction) => Unit = null,
-    commit: String = null,
-    rollback: String = null
-  ): TransactionOptions = {
+  def apply(): TransactionOptions = {
     val __obj = js.Dynamic.literal()
-    if (adapter != null) __obj.updateDynamic("adapter")(adapter.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRollback)) __obj.updateDynamic("autoRollback")(autoRollback.get.asInstanceOf[js.Any])
-    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (commit != null) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
-    if (rollback != null) __obj.updateDynamic("rollback")(rollback.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionOptions]
   }
+  @scala.inline
+  implicit class TransactionOptionsOps[Self <: TransactionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdapter(value: Adapter): Self = this.set("adapter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdapter: Self = this.set("adapter", js.undefined)
+    @scala.inline
+    def setAutoRollback(value: Boolean): Self = this.set("autoRollback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRollback: Self = this.set("autoRollback", js.undefined)
+    @scala.inline
+    def setBegin(value: String): Self = this.set("begin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBegin: Self = this.set("begin", js.undefined)
+    @scala.inline
+    def setCallback(value: (/* error */ Error, /* transaction */ Transaction) => Unit): Self = this.set("callback", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setCommit(value: String): Self = this.set("commit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommit: Self = this.set("commit", js.undefined)
+    @scala.inline
+    def setRollback(value: String): Self = this.set("rollback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollback: Self = this.set("rollback", js.undefined)
+  }
+  
 }
 

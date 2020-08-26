@@ -22,14 +22,30 @@ trait UpdateApprovalRuleTemplateContentInput extends js.Object {
 
 object UpdateApprovalRuleTemplateContentInput {
   @scala.inline
-  def apply(
-    approvalRuleTemplateName: ApprovalRuleTemplateName,
-    newRuleContent: ApprovalRuleTemplateContent,
-    existingRuleContentSha256: RuleContentSha256 = null
-  ): UpdateApprovalRuleTemplateContentInput = {
+  def apply(approvalRuleTemplateName: ApprovalRuleTemplateName, newRuleContent: ApprovalRuleTemplateContent): UpdateApprovalRuleTemplateContentInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any], newRuleContent = newRuleContent.asInstanceOf[js.Any])
-    if (existingRuleContentSha256 != null) __obj.updateDynamic("existingRuleContentSha256")(existingRuleContentSha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApprovalRuleTemplateContentInput]
   }
+  @scala.inline
+  implicit class UpdateApprovalRuleTemplateContentInputOps[Self <: UpdateApprovalRuleTemplateContentInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = this.set("approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewRuleContent(value: ApprovalRuleTemplateContent): Self = this.set("newRuleContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExistingRuleContentSha256(value: RuleContentSha256): Self = this.set("existingRuleContentSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExistingRuleContentSha256: Self = this.set("existingRuleContentSha256", js.undefined)
+  }
+  
 }
 

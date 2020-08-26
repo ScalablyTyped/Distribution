@@ -13,17 +13,7 @@ trait Slicers extends js.Object {
   def apply(Index: String): Slicer = js.native
   def apply(Index: Double): Slicer = js.native
   def Add(
-    SlicerDestination: String,
-    Level: js.UndefOr[js.Any],
-    Name: js.UndefOr[String],
-    Caption: js.UndefOr[String],
-    Top: js.UndefOr[Double],
-    Left: js.UndefOr[Double],
-    Width: js.UndefOr[Double],
-    Height: js.UndefOr[Double]
-  ): Slicer = js.native
-  def Add(
-    SlicerDestination: Worksheet,
+    SlicerDestination: String | Worksheet,
     Level: js.UndefOr[js.Any],
     Name: js.UndefOr[String],
     Caption: js.UndefOr[String],

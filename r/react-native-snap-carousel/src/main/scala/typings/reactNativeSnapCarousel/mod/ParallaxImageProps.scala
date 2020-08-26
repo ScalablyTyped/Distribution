@@ -1,184 +1,80 @@
 package typings.reactNativeSnapCarousel.mod
 
-import typings.react.mod.Component
-import typings.reactNative.mod.AccessibilityActionEvent
-import typings.reactNative.mod.AccessibilityActionInfo
-import typings.reactNative.mod.AccessibilityRole
-import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
-import typings.reactNative.mod.AccessibilityValue
-import typings.reactNative.mod.Animated.Value
-import typings.reactNative.mod.FlatListProps
-import typings.reactNative.mod.ImageErrorEventData
-import typings.reactNative.mod.ImageLoadEventData
-import typings.reactNative.mod.ImageProgressEventDataIOS
 import typings.reactNative.mod.ImageProps
-import typings.reactNative.mod.ImageResizeMode
 import typings.reactNative.mod.ImageSourcePropType
-import typings.reactNative.mod.ImageStyle
-import typings.reactNative.mod.ImageURISource
-import typings.reactNative.mod.Insets
-import typings.reactNative.mod.LayoutChangeEvent
-import typings.reactNative.mod.NativeSyntheticEvent
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
-import typings.reactNative.reactNativeStrings.`no-hide-descendants`
-import typings.reactNative.reactNativeStrings.assertive
-import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.button
-import typings.reactNative.reactNativeStrings.no
-import typings.reactNative.reactNativeStrings.none
-import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
-import typings.reactNative.reactNativeStrings.resize
-import typings.reactNative.reactNativeStrings.scale
-import typings.reactNative.reactNativeStrings.yes
 import typings.reactNativeSnapCarousel.anon.Height
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParallaxImageProps
   extends ImageProps
      with AdditionalParallaxProps {
   /**
     * Optional style for image's container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
   /**
     * On screen dimensions of the image
     */
-  var dimensions: js.UndefOr[Height] = js.undefined
+  var dimensions: js.UndefOr[Height] = js.native
   /**
     * Speed of parallax effect. A higher value appears more 'zoomed in'
     */
-  var parallaxFactor: js.UndefOr[Double] = js.undefined
+  var parallaxFactor: js.UndefOr[Double] = js.native
   /**
     * Whether to display a loading spinner
     */
-  var showSpinner: js.UndefOr[Boolean] = js.undefined
+  var showSpinner: js.UndefOr[Boolean] = js.native
   /**
     * Color of the loading spinner if displayed
     */
-  var spinnerColor: js.UndefOr[String] = js.undefined
+  var spinnerColor: js.UndefOr[String] = js.native
 }
 
 object ParallaxImageProps {
   @scala.inline
-  def apply(
-    source: ImageSourcePropType,
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityValue: AccessibilityValue = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    blurRadius: js.UndefOr[Double] = js.undefined,
-    borderBottomLeftRadius: js.UndefOr[Double] = js.undefined,
-    borderBottomRightRadius: js.UndefOr[Double] = js.undefined,
-    borderRadius: js.UndefOr[Double] = js.undefined,
-    borderTopLeftRadius: js.UndefOr[Double] = js.undefined,
-    borderTopRightRadius: js.UndefOr[Double] = js.undefined,
-    capInsets: Insets = null,
-    carouselRef: Component[FlatListProps[_], js.Object, _] = null,
-    containerStyle: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    defaultSource: ImageURISource | Double = null,
-    dimensions: Height = null,
-    fadeDuration: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    itemHeight: js.UndefOr[Double] = js.undefined,
-    itemWidth: js.UndefOr[Double] = js.undefined,
-    loadingIndicatorSource: ImageURISource = null,
-    onAccessibilityAction: /* event */ AccessibilityActionEvent => Unit = null,
-    onAccessibilityEscape: () => Unit = null,
-    onAccessibilityTap: () => Unit = null,
-    onError: /* error */ NativeSyntheticEvent[ImageErrorEventData] => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onLoad: /* event */ NativeSyntheticEvent[ImageLoadEventData] => Unit = null,
-    onLoadEnd: () => Unit = null,
-    onLoadStart: () => Unit = null,
-    onMagicTap: () => Unit = null,
-    onPartialLoad: () => Unit = null,
-    onProgress: /* event */ NativeSyntheticEvent[ImageProgressEventDataIOS] => Unit = null,
-    parallaxFactor: js.UndefOr[Double] = js.undefined,
-    progressiveRenderingEnabled: js.UndefOr[Boolean] = js.undefined,
-    resizeMethod: auto | resize | scale = null,
-    resizeMode: ImageResizeMode = null,
-    scrollPosition: Value = null,
-    showSpinner: js.UndefOr[Boolean] = js.undefined,
-    sliderHeight: js.UndefOr[Double] = js.undefined,
-    sliderWidth: js.UndefOr[Double] = js.undefined,
-    spinnerColor: String = null,
-    style: js.UndefOr[Null | StyleProp[ImageStyle]] = js.undefined,
-    testID: String = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): ParallaxImageProps = {
+  def apply(source: ImageSourcePropType): ParallaxImageProps = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (accessibilityValue != null) __obj.updateDynamic("accessibilityValue")(accessibilityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurRadius)) __obj.updateDynamic("blurRadius")(blurRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderBottomLeftRadius)) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderBottomRightRadius)) __obj.updateDynamic("borderBottomRightRadius")(borderBottomRightRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderTopLeftRadius)) __obj.updateDynamic("borderTopLeftRadius")(borderTopLeftRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderTopRightRadius)) __obj.updateDynamic("borderTopRightRadius")(borderTopRightRadius.get.asInstanceOf[js.Any])
-    if (capInsets != null) __obj.updateDynamic("capInsets")(capInsets.asInstanceOf[js.Any])
-    if (carouselRef != null) __obj.updateDynamic("carouselRef")(carouselRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerStyle)) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (defaultSource != null) __obj.updateDynamic("defaultSource")(defaultSource.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeDuration)) __obj.updateDynamic("fadeDuration")(fadeDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
-    if (loadingIndicatorSource != null) __obj.updateDynamic("loadingIndicatorSource")(loadingIndicatorSource.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1(onAccessibilityAction))
-    if (onAccessibilityEscape != null) __obj.updateDynamic("onAccessibilityEscape")(js.Any.fromFunction0(onAccessibilityEscape))
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadEnd != null) __obj.updateDynamic("onLoadEnd")(js.Any.fromFunction0(onLoadEnd))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction0(onLoadStart))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onPartialLoad != null) __obj.updateDynamic("onPartialLoad")(js.Any.fromFunction0(onPartialLoad))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (!js.isUndefined(parallaxFactor)) __obj.updateDynamic("parallaxFactor")(parallaxFactor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(progressiveRenderingEnabled)) __obj.updateDynamic("progressiveRenderingEnabled")(progressiveRenderingEnabled.get.asInstanceOf[js.Any])
-    if (resizeMethod != null) __obj.updateDynamic("resizeMethod")(resizeMethod.asInstanceOf[js.Any])
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
-    if (scrollPosition != null) __obj.updateDynamic("scrollPosition")(scrollPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSpinner)) __obj.updateDynamic("showSpinner")(showSpinner.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderHeight)) __obj.updateDynamic("sliderHeight")(sliderHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderWidth)) __obj.updateDynamic("sliderWidth")(sliderWidth.get.asInstanceOf[js.Any])
-    if (spinnerColor != null) __obj.updateDynamic("spinnerColor")(spinnerColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParallaxImageProps]
   }
+  @scala.inline
+  implicit class ParallaxImagePropsOps[Self <: ParallaxImageProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerStyle(value: StyleProp[ViewStyle]): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setContainerStyleNull: Self = this.set("containerStyle", null)
+    @scala.inline
+    def setDimensions(value: Height): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setParallaxFactor(value: Double): Self = this.set("parallaxFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallaxFactor: Self = this.set("parallaxFactor", js.undefined)
+    @scala.inline
+    def setShowSpinner(value: Boolean): Self = this.set("showSpinner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowSpinner: Self = this.set("showSpinner", js.undefined)
+    @scala.inline
+    def setSpinnerColor(value: String): Self = this.set("spinnerColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpinnerColor: Self = this.set("spinnerColor", js.undefined)
+  }
+  
 }
 

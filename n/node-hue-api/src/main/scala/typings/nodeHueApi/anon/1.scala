@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `1` extends js.Object {
-  var `1`: String
-  var `2`: String
-  var `3`: String
-  var `4`: String
-  var `5`: String
-  var `6`: String
-  var `7`: String
-  var `8`: String
+  var `1`: String = js.native
+  var `2`: String = js.native
+  var `3`: String = js.native
+  var `4`: String = js.native
+  var `5`: String = js.native
+  var `6`: String = js.native
+  var `7`: String = js.native
+  var `8`: String = js.native
 }
 
 object `1` {
@@ -38,5 +39,34 @@ object `1` {
     __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
+  @scala.inline
+  implicit class `1Ops`[Self <: `1`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set1(value: String): Self = this.set("1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set2(value: String): Self = this.set("2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set3(value: String): Self = this.set("3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set4(value: String): Self = this.set("4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set5(value: String): Self = this.set("5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set6(value: String): Self = this.set("6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set7(value: String): Self = this.set("7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set8(value: String): Self = this.set("8", value.asInstanceOf[js.Any])
+  }
+  
 }
 

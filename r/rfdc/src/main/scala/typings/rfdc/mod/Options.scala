@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Keeping track of circular references will slow down performance with
@@ -17,7 +18,7 @@ trait Options extends js.Object {
     * reference from the object (set to `undefined`) and then add it back
     * manually after cloning instead of using this option.
     */
-  var circles: js.UndefOr[Boolean] = js.undefined
+  var circles: js.UndefOr[Boolean] = js.native
   /**
     * Copy prototype properties as well as own properties into the new
     * object.
@@ -36,16 +37,35 @@ trait Options extends js.Object {
     * Setting `proto` to `true` will provide an additional 2% performance
     * boost.
     */
-  var proto: js.UndefOr[Boolean] = js.undefined
+  var proto: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(circles: js.UndefOr[Boolean] = js.undefined, proto: js.UndefOr[Boolean] = js.undefined): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(circles)) __obj.updateDynamic("circles")(circles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(proto)) __obj.updateDynamic("proto")(proto.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCircles(value: Boolean): Self = this.set("circles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircles: Self = this.set("circles", js.undefined)
+    @scala.inline
+    def setProto(value: Boolean): Self = this.set("proto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProto: Self = this.set("proto", js.undefined)
+  }
+  
 }
 

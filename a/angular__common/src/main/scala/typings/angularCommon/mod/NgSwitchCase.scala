@@ -17,14 +17,5 @@ class NgSwitchCase protected () extends DoCheck {
     * Stores the HTML template to be selected on match.
     */
   var ngSwitchCase: js.Any = js.native
-  /**
-    * A callback method that performs change-detection, invoked
-    * after the default change-detector runs.
-    * See `KeyValueDiffers` and `IterableDiffers` for implementing
-    * custom change checking for collections.
-    *
-    */
-  /* CompleteClass */
-  override def ngDoCheck(): Unit = js.native
 }
 

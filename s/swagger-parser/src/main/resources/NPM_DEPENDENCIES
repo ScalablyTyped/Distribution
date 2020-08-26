@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "swagger-parser" : "8.0.4"
+      "swagger-parser" : "10.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "swagger-parser" : "8.0.4"
+      "swagger-parser" : "10.0.1"
     }
   ],
   "compile-devDependencies" : [

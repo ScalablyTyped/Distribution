@@ -19,15 +19,32 @@ trait UpdateBandwidthRateLimitInput extends js.Object {
 
 object UpdateBandwidthRateLimitInput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN,
-    AverageDownloadRateLimitInBitsPerSec: js.UndefOr[BandwidthDownloadRateLimit] = js.undefined,
-    AverageUploadRateLimitInBitsPerSec: js.UndefOr[BandwidthUploadRateLimit] = js.undefined
-  ): UpdateBandwidthRateLimitInput = {
+  def apply(GatewayARN: GatewayARN): UpdateBandwidthRateLimitInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(AverageDownloadRateLimitInBitsPerSec)) __obj.updateDynamic("AverageDownloadRateLimitInBitsPerSec")(AverageDownloadRateLimitInBitsPerSec.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AverageUploadRateLimitInBitsPerSec)) __obj.updateDynamic("AverageUploadRateLimitInBitsPerSec")(AverageUploadRateLimitInBitsPerSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBandwidthRateLimitInput]
   }
+  @scala.inline
+  implicit class UpdateBandwidthRateLimitInputOps[Self <: UpdateBandwidthRateLimitInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = this.set("AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverageDownloadRateLimitInBitsPerSec: Self = this.set("AverageDownloadRateLimitInBitsPerSec", js.undefined)
+    @scala.inline
+    def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = this.set("AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverageUploadRateLimitInBitsPerSec: Self = this.set("AverageUploadRateLimitInBitsPerSec", js.undefined)
+  }
+  
 }
 

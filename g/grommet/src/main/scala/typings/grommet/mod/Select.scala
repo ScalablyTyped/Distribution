@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Select")
+@JSImport("grommet/es6", "Select")
 @js.native
 class Select protected ()
   extends Component[SelectProps, ComponentState, js.Any] {
@@ -17,7 +17,7 @@ class Select protected ()
   def this(props: SelectProps, context: js.Any) = this()
 }
 
-@JSImport("grommet", "Select")
+@JSImport("grommet/es6", "Select")
 @js.native
 object Select extends TopLevel[ComponentClass[SelectProps, ComponentState]]
 

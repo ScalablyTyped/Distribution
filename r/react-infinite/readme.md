@@ -10,8 +10,8 @@ A browser-ready efficient scrolling container based on UITableView
 | Full name          | react-infinite |
 | Keywords           | react, react-component, scrolling, uitableview, infinite |
 | # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 1430364 |
+| # dependents       | 30 |
+| # downloads        | 1430247 |
 | # stars            | 8 |
 
 ## Links

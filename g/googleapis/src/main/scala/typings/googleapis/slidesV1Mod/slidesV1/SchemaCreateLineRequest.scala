@@ -45,18 +45,38 @@ trait SchemaCreateLineRequest extends js.Object {
 
 object SchemaCreateLineRequest {
   @scala.inline
-  def apply(
-    category: String = null,
-    elementProperties: SchemaPageElementProperties = null,
-    lineCategory: String = null,
-    objectId: String = null
-  ): SchemaCreateLineRequest = {
+  def apply(): SchemaCreateLineRequest = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
-    if (lineCategory != null) __obj.updateDynamic("lineCategory")(lineCategory.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateLineRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateLineRequestOps[Self <: SchemaCreateLineRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setElementProperties(value: SchemaPageElementProperties): Self = this.set("elementProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElementProperties: Self = this.set("elementProperties", js.undefined)
+    @scala.inline
+    def setLineCategory(value: String): Self = this.set("lineCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineCategory: Self = this.set("lineCategory", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+  }
+  
 }
 

@@ -8,94 +8,104 @@ import scala.scalajs.js.annotation._
   * Specific and identified anatomical location
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait BodySite extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait BodySite extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.undefined
+  var _active: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Whether this body site record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * Named anatomical location
     */
-  var code: js.UndefOr[CodeableConcept] = js.undefined
+  var code: js.UndefOr[CodeableConcept] = js.native
   /**
     * Anatomical location description
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * Bodysite identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Attached images
     */
-  var image: js.UndefOr[js.Array[Attachment]] = js.undefined
+  var image: js.UndefOr[js.Array[Attachment]] = js.native
   /**
     * Who this is about
     */
-  var patient: Reference
+  var patient: Reference = js.native
   /**
     * Modification to location code
     */
-  var qualifier: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var qualifier: js.UndefOr[js.Array[CodeableConcept]] = js.native
 }
 
 object BodySite {
   @scala.inline
-  def apply(
-    patient: Reference,
-    _active: Element = null,
-    _description: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    code: CodeableConcept = null,
-    contained: js.Array[Resource] = null,
-    description: String = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    image: js.Array[Attachment] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    qualifier: js.Array[CodeableConcept] = null,
-    resourceType: code = null,
-    text: Narrative = null
-  ): BodySite = {
+  def apply(patient: Reference): BodySite = {
     val __obj = js.Dynamic.literal(patient = patient.asInstanceOf[js.Any])
-    if (_active != null) __obj.updateDynamic("_active")(_active.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodySite]
   }
+  @scala.inline
+  implicit class BodySiteOps[Self <: BodySite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPatient(value: Reference): Self = this.set("patient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_active: Self = this.set("_active", js.undefined)
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setImageVarargs(value: Attachment*): Self = this.set("image", js.Array(value :_*))
+    @scala.inline
+    def setImage(value: js.Array[Attachment]): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setQualifierVarargs(value: CodeableConcept*): Self = this.set("qualifier", js.Array(value :_*))
+    @scala.inline
+    def setQualifier(value: js.Array[CodeableConcept]): Self = this.set("qualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifier: Self = this.set("qualifier", js.undefined)
+  }
+  
 }
 

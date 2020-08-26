@@ -12,7 +12,7 @@ The lodash method `_.nthArg` exported as a module.
 | Keywords           | lodash-modularized, ntharg |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3526 |
+| # downloads        | 3943 |
 | # stars            | 0 |
 
 ## Links

@@ -12,11 +12,30 @@ trait Amount extends js.Object {
 
 object Amount {
   @scala.inline
-  def apply(amount: js.UndefOr[Double] = js.undefined, currencyCode: String = null): Amount = {
+  def apply(): Amount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amount]
   }
+  @scala.inline
+  implicit class AmountOps[Self <: Amount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+  }
+  
 }
 

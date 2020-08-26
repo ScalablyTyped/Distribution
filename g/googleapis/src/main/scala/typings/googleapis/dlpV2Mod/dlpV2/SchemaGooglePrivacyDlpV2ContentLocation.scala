@@ -48,22 +48,46 @@ trait SchemaGooglePrivacyDlpV2ContentLocation extends js.Object {
 
 object SchemaGooglePrivacyDlpV2ContentLocation {
   @scala.inline
-  def apply(
-    containerName: String = null,
-    containerTimestamp: String = null,
-    containerVersion: String = null,
-    documentLocation: SchemaGooglePrivacyDlpV2DocumentLocation = null,
-    imageLocation: SchemaGooglePrivacyDlpV2ImageLocation = null,
-    recordLocation: SchemaGooglePrivacyDlpV2RecordLocation = null
-  ): SchemaGooglePrivacyDlpV2ContentLocation = {
+  def apply(): SchemaGooglePrivacyDlpV2ContentLocation = {
     val __obj = js.Dynamic.literal()
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (containerTimestamp != null) __obj.updateDynamic("containerTimestamp")(containerTimestamp.asInstanceOf[js.Any])
-    if (containerVersion != null) __obj.updateDynamic("containerVersion")(containerVersion.asInstanceOf[js.Any])
-    if (documentLocation != null) __obj.updateDynamic("documentLocation")(documentLocation.asInstanceOf[js.Any])
-    if (imageLocation != null) __obj.updateDynamic("imageLocation")(imageLocation.asInstanceOf[js.Any])
-    if (recordLocation != null) __obj.updateDynamic("recordLocation")(recordLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2ContentLocation]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ContentLocationOps[Self <: SchemaGooglePrivacyDlpV2ContentLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    @scala.inline
+    def setContainerTimestamp(value: String): Self = this.set("containerTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerTimestamp: Self = this.set("containerTimestamp", js.undefined)
+    @scala.inline
+    def setContainerVersion(value: String): Self = this.set("containerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerVersion: Self = this.set("containerVersion", js.undefined)
+    @scala.inline
+    def setDocumentLocation(value: SchemaGooglePrivacyDlpV2DocumentLocation): Self = this.set("documentLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentLocation: Self = this.set("documentLocation", js.undefined)
+    @scala.inline
+    def setImageLocation(value: SchemaGooglePrivacyDlpV2ImageLocation): Self = this.set("imageLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageLocation: Self = this.set("imageLocation", js.undefined)
+    @scala.inline
+    def setRecordLocation(value: SchemaGooglePrivacyDlpV2RecordLocation): Self = this.set("recordLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordLocation: Self = this.set("recordLocation", js.undefined)
+  }
+  
 }
 

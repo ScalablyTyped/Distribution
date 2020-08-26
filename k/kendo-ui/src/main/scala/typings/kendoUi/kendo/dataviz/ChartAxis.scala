@@ -13,6 +13,7 @@ trait ChartAxis extends Observable {
   var options: ChartAxisOptions = js.native
   def range(): js.Any = js.native
   def slot(from: String): Rect = js.native
+  def slot(from: String, to: js.UndefOr[scala.Nothing], limit: Boolean): Rect = js.native
   def slot(from: String, to: String): Rect = js.native
   def slot(from: String, to: String, limit: Boolean): Rect = js.native
   def slot(from: String, to: Double): Rect = js.native
@@ -20,6 +21,7 @@ trait ChartAxis extends Observable {
   def slot(from: String, to: Date): Rect = js.native
   def slot(from: String, to: Date, limit: Boolean): Rect = js.native
   def slot(from: Double): Rect = js.native
+  def slot(from: Double, to: js.UndefOr[scala.Nothing], limit: Boolean): Rect = js.native
   def slot(from: Double, to: String): Rect = js.native
   def slot(from: Double, to: String, limit: Boolean): Rect = js.native
   def slot(from: Double, to: Double): Rect = js.native
@@ -27,6 +29,7 @@ trait ChartAxis extends Observable {
   def slot(from: Double, to: Date): Rect = js.native
   def slot(from: Double, to: Date, limit: Boolean): Rect = js.native
   def slot(from: Date): Rect = js.native
+  def slot(from: Date, to: js.UndefOr[scala.Nothing], limit: Boolean): Rect = js.native
   def slot(from: Date, to: String): Rect = js.native
   def slot(from: Date, to: String, limit: Boolean): Rect = js.native
   def slot(from: Date, to: Double): Rect = js.native

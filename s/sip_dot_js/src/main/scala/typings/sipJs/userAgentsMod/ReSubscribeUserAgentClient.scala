@@ -13,6 +13,7 @@ class ReSubscribeUserAgentClient protected ()
   extends typings.sipJs.reSubscribeUserAgentClientMod.ReSubscribeUserAgentClient {
   def this(dialog: SubscriptionDialog) = this()
   def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate) = this()
+  def this(dialog: SubscriptionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
   def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
 }
 

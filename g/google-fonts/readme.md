@@ -12,7 +12,7 @@ A small helper library for embedding Google Fonts on your page.
 | Keywords           | google, fonts, webfonts, inline, embed, append |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 12826 |
+| # downloads        | 12254 |
 | # stars            | 0 |
 
 ## Links

@@ -22,14 +22,30 @@ trait ReferenceDataSource extends js.Object {
 
 object ReferenceDataSource {
   @scala.inline
-  def apply(
-    ReferenceSchema: SourceSchema,
-    TableName: InAppTableName,
-    S3ReferenceDataSource: S3ReferenceDataSource = null
-  ): ReferenceDataSource = {
+  def apply(ReferenceSchema: SourceSchema, TableName: InAppTableName): ReferenceDataSource = {
     val __obj = js.Dynamic.literal(ReferenceSchema = ReferenceSchema.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (S3ReferenceDataSource != null) __obj.updateDynamic("S3ReferenceDataSource")(S3ReferenceDataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceDataSource]
   }
+  @scala.inline
+  implicit class ReferenceDataSourceOps[Self <: ReferenceDataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReferenceSchema(value: SourceSchema): Self = this.set("ReferenceSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: InAppTableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3ReferenceDataSource(value: S3ReferenceDataSource): Self = this.set("S3ReferenceDataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ReferenceDataSource: Self = this.set("S3ReferenceDataSource", js.undefined)
+  }
+  
 }
 

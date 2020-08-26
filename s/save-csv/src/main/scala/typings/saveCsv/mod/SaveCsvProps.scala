@@ -5,35 +5,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SaveCsvProps extends js.Object {
-  var bom: js.UndefOr[Boolean] = js.undefined
-  var eol: js.UndefOr[String] = js.undefined
-  var filename: String
-  var formatter: js.UndefOr[js.Function1[/* value */ String | JSON, Unit]] = js.undefined
-  var mime: js.UndefOr[String] = js.undefined
-  var quote: js.UndefOr[String] = js.undefined
-  var sep: js.UndefOr[String] = js.undefined
+  var bom: js.UndefOr[Boolean] = js.native
+  var eol: js.UndefOr[String] = js.native
+  var filename: String = js.native
+  var formatter: js.UndefOr[js.Function1[/* value */ String | JSON, Unit]] = js.native
+  var mime: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.native
+  var sep: js.UndefOr[String] = js.native
 }
 
 object SaveCsvProps {
   @scala.inline
-  def apply(
-    filename: String,
-    bom: js.UndefOr[Boolean] = js.undefined,
-    eol: String = null,
-    formatter: /* value */ String | JSON => Unit = null,
-    mime: String = null,
-    quote: String = null,
-    sep: String = null
-  ): SaveCsvProps = {
+  def apply(filename: String): SaveCsvProps = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    if (!js.isUndefined(bom)) __obj.updateDynamic("bom")(bom.get.asInstanceOf[js.Any])
-    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (mime != null) __obj.updateDynamic("mime")(mime.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (sep != null) __obj.updateDynamic("sep")(sep.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveCsvProps]
   }
+  @scala.inline
+  implicit class SaveCsvPropsOps[Self <: SaveCsvProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBom(value: Boolean): Self = this.set("bom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBom: Self = this.set("bom", js.undefined)
+    @scala.inline
+    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEol: Self = this.set("eol", js.undefined)
+    @scala.inline
+    def setFormatter(value: /* value */ String | JSON => Unit): Self = this.set("formatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setMime(value: String): Self = this.set("mime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMime: Self = this.set("mime", js.undefined)
+    @scala.inline
+    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote: Self = this.set("quote", js.undefined)
+    @scala.inline
+    def setSep(value: String): Self = this.set("sep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSep: Self = this.set("sep", js.undefined)
+  }
+  
 }
 

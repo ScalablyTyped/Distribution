@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GetBlockRequest_ () extends Message {
   def addTransactions(): TransactionExclusion = js.native
+  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): TransactionExclusion = js.native
   def addTransactions(value: TransactionExclusion): TransactionExclusion = js.native
   def addTransactions(value: TransactionExclusion, index: Double): TransactionExclusion = js.native
   def clearTransactionsList(): Unit = js.native

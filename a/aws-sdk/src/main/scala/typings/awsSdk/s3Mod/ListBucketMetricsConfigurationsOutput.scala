@@ -26,18 +26,40 @@ trait ListBucketMetricsConfigurationsOutput extends js.Object {
 
 object ListBucketMetricsConfigurationsOutput {
   @scala.inline
-  def apply(
-    ContinuationToken: Token = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
-    MetricsConfigurationList: MetricsConfigurationList = null,
-    NextContinuationToken: NextToken = null
-  ): ListBucketMetricsConfigurationsOutput = {
+  def apply(): ListBucketMetricsConfigurationsOutput = {
     val __obj = js.Dynamic.literal()
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (MetricsConfigurationList != null) __obj.updateDynamic("MetricsConfigurationList")(MetricsConfigurationList.asInstanceOf[js.Any])
-    if (NextContinuationToken != null) __obj.updateDynamic("NextContinuationToken")(NextContinuationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBucketMetricsConfigurationsOutput]
   }
+  @scala.inline
+  implicit class ListBucketMetricsConfigurationsOutputOps[Self <: ListBucketMetricsConfigurationsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setMetricsConfigurationListVarargs(value: MetricsConfiguration*): Self = this.set("MetricsConfigurationList", js.Array(value :_*))
+    @scala.inline
+    def setMetricsConfigurationList(value: MetricsConfigurationList): Self = this.set("MetricsConfigurationList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricsConfigurationList: Self = this.set("MetricsConfigurationList", js.undefined)
+    @scala.inline
+    def setNextContinuationToken(value: NextToken): Self = this.set("NextContinuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextContinuationToken: Self = this.set("NextContinuationToken", js.undefined)
+  }
+  
 }
 

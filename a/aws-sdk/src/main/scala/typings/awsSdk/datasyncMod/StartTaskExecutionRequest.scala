@@ -19,11 +19,34 @@ trait StartTaskExecutionRequest extends js.Object {
 
 object StartTaskExecutionRequest {
   @scala.inline
-  def apply(TaskArn: TaskArn, Includes: FilterList = null, OverrideOptions: Options = null): StartTaskExecutionRequest = {
+  def apply(TaskArn: TaskArn): StartTaskExecutionRequest = {
     val __obj = js.Dynamic.literal(TaskArn = TaskArn.asInstanceOf[js.Any])
-    if (Includes != null) __obj.updateDynamic("Includes")(Includes.asInstanceOf[js.Any])
-    if (OverrideOptions != null) __obj.updateDynamic("OverrideOptions")(OverrideOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartTaskExecutionRequest]
   }
+  @scala.inline
+  implicit class StartTaskExecutionRequestOps[Self <: StartTaskExecutionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskArn(value: TaskArn): Self = this.set("TaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludesVarargs(value: FilterRule*): Self = this.set("Includes", js.Array(value :_*))
+    @scala.inline
+    def setIncludes(value: FilterList): Self = this.set("Includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludes: Self = this.set("Includes", js.undefined)
+    @scala.inline
+    def setOverrideOptions(value: Options): Self = this.set("OverrideOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideOptions: Self = this.set("OverrideOptions", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,7 @@ trait TabStops extends js.Object {
   @JSName("Word.TabStops_typekey")
   var WordDotTabStops_typekey: TabStops = js.native
   def Add(Position: Double): TabStop = js.native
+  def Add(Position: Double, Alignment: js.UndefOr[scala.Nothing], Leader: js.Any): TabStop = js.native
   def Add(Position: Double, Alignment: js.Any): TabStop = js.native
   def Add(Position: Double, Alignment: js.Any, Leader: js.Any): TabStop = js.native
   def After(Position: Double): TabStop = js.native

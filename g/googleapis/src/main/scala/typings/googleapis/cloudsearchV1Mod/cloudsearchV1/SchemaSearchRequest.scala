@@ -46,26 +46,58 @@ trait SchemaSearchRequest extends js.Object {
 
 object SchemaSearchRequest {
   @scala.inline
-  def apply(
-    dataSourceRestrictions: js.Array[SchemaDataSourceRestriction] = null,
-    facetOptions: js.Array[SchemaFacetOptions] = null,
-    pageSize: js.UndefOr[Double] = js.undefined,
-    query: String = null,
-    queryInterpretationOptions: SchemaQueryInterpretationOptions = null,
-    requestOptions: SchemaRequestOptions = null,
-    sortOptions: SchemaSortOptions = null,
-    start: js.UndefOr[Double] = js.undefined
-  ): SchemaSearchRequest = {
+  def apply(): SchemaSearchRequest = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceRestrictions != null) __obj.updateDynamic("dataSourceRestrictions")(dataSourceRestrictions.asInstanceOf[js.Any])
-    if (facetOptions != null) __obj.updateDynamic("facetOptions")(facetOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (queryInterpretationOptions != null) __obj.updateDynamic("queryInterpretationOptions")(queryInterpretationOptions.asInstanceOf[js.Any])
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
-    if (sortOptions != null) __obj.updateDynamic("sortOptions")(sortOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchRequest]
   }
+  @scala.inline
+  implicit class SchemaSearchRequestOps[Self <: SchemaSearchRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = this.set("dataSourceRestrictions", js.Array(value :_*))
+    @scala.inline
+    def setDataSourceRestrictions(value: js.Array[SchemaDataSourceRestriction]): Self = this.set("dataSourceRestrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceRestrictions: Self = this.set("dataSourceRestrictions", js.undefined)
+    @scala.inline
+    def setFacetOptionsVarargs(value: SchemaFacetOptions*): Self = this.set("facetOptions", js.Array(value :_*))
+    @scala.inline
+    def setFacetOptions(value: js.Array[SchemaFacetOptions]): Self = this.set("facetOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacetOptions: Self = this.set("facetOptions", js.undefined)
+    @scala.inline
+    def setPageSize(value: Double): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setQueryInterpretationOptions(value: SchemaQueryInterpretationOptions): Self = this.set("queryInterpretationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryInterpretationOptions: Self = this.set("queryInterpretationOptions", js.undefined)
+    @scala.inline
+    def setRequestOptions(value: SchemaRequestOptions): Self = this.set("requestOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestOptions: Self = this.set("requestOptions", js.undefined)
+    @scala.inline
+    def setSortOptions(value: SchemaSortOptions): Self = this.set("sortOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOptions: Self = this.set("sortOptions", js.undefined)
+    @scala.inline
+    def setStart(value: Double): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

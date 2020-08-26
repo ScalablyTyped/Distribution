@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ensure-posix-path" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ensure-posix-path" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

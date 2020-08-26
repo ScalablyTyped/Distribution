@@ -63,20 +63,18 @@ object scheduledeventsMod extends js.Object {
       @JSName("containerAsFolderBase")
       def containerAsFolderBase_MScheduledEvent: FolderBase = js.native
       def enabled: Boolean = js.native
-      def enabled(newValue: Boolean): js.Any = js.native
+      def enabled_=(newValue: Boolean): Unit = js.native
       def interval: Double = js.native
-      def interval(newValue: Double): js.Any = js.native
       def intervalType: IntervalType = js.native
-      def intervalType(newValue: IntervalType): js.Any = js.native
-      def microflow(): js.Any = js.native
-      def microflow(newValue: IMicroflow): js.Any = js.native
+      def intervalType_=(newValue: IntervalType): Unit = js.native
+      def interval_=(newValue: Double): Unit = js.native
+      def microflow: IMicroflow | Null = js.native
       def microflowQualifiedName: String | Null = js.native
-      @JSName("microflow")
-      def microflow_Union: IMicroflow | Null = js.native
+      def microflow_=(newValue: IMicroflow | Null): Unit = js.native
       def startDateTime: String = js.native
-      def startDateTime(newValue: String): js.Any = js.native
+      def startDateTime_=(newValue: String): Unit = js.native
       def timeZone: TimeZoneEnum = js.native
-      def timeZone(newValue: TimeZoneEnum): js.Any = js.native
+      def timeZone_=(newValue: TimeZoneEnum): Unit = js.native
     }
     
     @js.native

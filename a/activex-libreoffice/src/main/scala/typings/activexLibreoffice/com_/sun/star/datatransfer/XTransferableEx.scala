@@ -13,12 +13,13 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.datatransfer.DataFlavor
   * @see com.sun.star.datatransfer.XTransferable
   */
+@js.native
 trait XTransferableEx extends XInterface {
   /**
     * @param requestedFlavors Sequence of {@link DataFlavor} of interest. Specify an empty sequence for interest in all data flavors with top-level MIME conte
     * @returns The list of the matching supported {@link DataFlavor} that were requested. For each requested top-level MIME content-type, all supported subtypes
     */
-  def queryTransferDataFlavors(requestedFlavors: SeqEquiv[DataFlavor]): SafeArray[DataFlavor]
+  def queryTransferDataFlavors(requestedFlavors: SeqEquiv[DataFlavor]): SafeArray[DataFlavor] = js.native
 }
 
 object XTransferableEx {
@@ -32,5 +33,20 @@ object XTransferableEx {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), queryTransferDataFlavors = js.Any.fromFunction1(queryTransferDataFlavors), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XTransferableEx]
   }
+  @scala.inline
+  implicit class XTransferableExOps[Self <: XTransferableEx] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQueryTransferDataFlavors(value: SeqEquiv[DataFlavor] => SafeArray[DataFlavor]): Self = this.set("queryTransferDataFlavors", js.Any.fromFunction1(value))
+  }
+  
 }
 

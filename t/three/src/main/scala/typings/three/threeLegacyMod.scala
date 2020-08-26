@@ -4,6 +4,7 @@ import typings.three.geometryMod.Geometry
 import typings.three.materialMod.Material
 import typings.three.object3DMod.Object3D
 import typings.three.sceneMod.Scene
+import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,6 +14,13 @@ import scala.scalajs.js.annotation._
 object threeLegacyMod extends js.Object {
   @js.native
   sealed trait Colors extends js.Object
+  
+  @js.native
+  class MultiMaterial () extends Material {
+    def this(materials: js.Array[Material]) = this()
+    val isMultiMaterial: `true` = js.native
+    var materials: js.Array[Material] = js.native
+  }
   
   val FaceColors: Colors = js.native
   val NoColors: Colors = js.native

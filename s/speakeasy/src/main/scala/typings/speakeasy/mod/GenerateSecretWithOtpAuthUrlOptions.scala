@@ -5,34 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GenerateSecretWithOtpAuthUrlOptions extends GenerateSecretOptions {
   /**
     * Whether to output a Google Authenticator-compatible otpauth:// URL
     * (only returns otpauth:// URL, no QR code), defaults to false
     */
   @JSName("otpauth_url")
-  var otpauth_url_GenerateSecretWithOtpAuthUrlOptions: `true`
+  var otpauth_url_GenerateSecretWithOtpAuthUrlOptions: `true` = js.native
 }
 
 object GenerateSecretWithOtpAuthUrlOptions {
   @scala.inline
-  def apply(
-    otpauth_url: `true`,
-    google_auth_qr: js.UndefOr[Boolean] = js.undefined,
-    issuer: String = null,
-    length: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    qr_codes: js.UndefOr[Boolean] = js.undefined,
-    symbols: js.UndefOr[Boolean] = js.undefined
-  ): GenerateSecretWithOtpAuthUrlOptions = {
+  def apply(otpauth_url: `true`): GenerateSecretWithOtpAuthUrlOptions = {
     val __obj = js.Dynamic.literal(otpauth_url = otpauth_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(google_auth_qr)) __obj.updateDynamic("google_auth_qr")(google_auth_qr.get.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(qr_codes)) __obj.updateDynamic("qr_codes")(qr_codes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbols)) __obj.updateDynamic("symbols")(symbols.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateSecretWithOtpAuthUrlOptions]
   }
+  @scala.inline
+  implicit class GenerateSecretWithOtpAuthUrlOptionsOps[Self <: GenerateSecretWithOtpAuthUrlOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOtpauth_url(value: `true`): Self = this.set("otpauth_url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

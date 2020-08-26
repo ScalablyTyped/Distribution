@@ -32,12 +32,15 @@ object mod extends js.Object {
     */
   // tslint:disable-next-line strict-export-declare-modifiers
   def apply(obj: String): String | Null = js.native
+  def apply(obj: String, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
   def apply(obj: String, data: Buffer): String | Null = js.native
   def apply(obj: String, data: Buffer, peekSize: Double): String | Null = js.native
   def apply(obj: IncomingHttpHeaders): String | Null = js.native
+  def apply(obj: IncomingHttpHeaders, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
   def apply(obj: IncomingHttpHeaders, data: Buffer): String | Null = js.native
   def apply(obj: IncomingHttpHeaders, data: Buffer, peekSize: Double): String | Null = js.native
   def apply(obj: IncomingMessage): String | Null = js.native
+  def apply(obj: IncomingMessage, data: js.UndefOr[scala.Nothing], peekSize: Double): String | Null = js.native
   def apply(obj: IncomingMessage, data: Buffer): String | Null = js.native
   def apply(obj: IncomingMessage, data: Buffer, peekSize: Double): String | Null = js.native
 }

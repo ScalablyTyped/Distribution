@@ -20,6 +20,12 @@ trait Set_ extends js.Object {
   def animate(
     attrs: StringDictionary[String | Double | Boolean | js.Any],
     duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Set_ = js.native
+  def animate(
+    attrs: StringDictionary[String | Double | Boolean | js.Any],
+    duration: Double,
     easing: js.Function1[/* num */ Double, Double]
   ): Set_ = js.native
   def animate(

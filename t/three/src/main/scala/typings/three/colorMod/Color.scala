@@ -2,6 +2,7 @@ package typings.three.colorMod
 
 import typings.std.ArrayLike
 import typings.std.Record
+import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.threeBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -90,6 +91,7 @@ class Color () extends js.Object {
   	 */
   def fromArray(array: ArrayLike[Double]): this.type = js.native
   def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
+  def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
   def getHSL(target: HSL): HSL = js.native
   /**
   	 * Returns the hexadecimal value of this color.
@@ -149,6 +151,7 @@ class Color () extends js.Object {
   	 * @return The created or provided array.
   	 */
   def toArray(): js.Array[Double] = js.native
+  def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
   def toArray(array: js.Array[Double]): js.Array[Double] = js.native
   def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
   /**

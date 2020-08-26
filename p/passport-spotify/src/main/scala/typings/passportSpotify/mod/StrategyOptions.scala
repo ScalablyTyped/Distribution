@@ -5,33 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrategyOptions extends StrategyOptionsBase {
-  var passReqToCallback: js.UndefOr[`false` | Null] = js.undefined
+  var passReqToCallback: js.UndefOr[`false` | Null] = js.native
 }
 
 object StrategyOptions {
   @scala.inline
-  def apply(
-    callbackURL: String,
-    clientID: String,
-    clientSecret: String,
-    authorizationURL: String = null,
-    passReqToCallback: js.UndefOr[Null | `false`] = js.undefined,
-    scope: js.Array[String] = null,
-    scopeSeparator: String = null,
-    showDialog: js.UndefOr[Boolean] = js.undefined,
-    tokenURL: String = null,
-    userProfileURL: String = null
-  ): StrategyOptions = {
+  def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOptions = {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
-    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDialog)) __obj.updateDynamic("showDialog")(showDialog.get.asInstanceOf[js.Any])
-    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOptions]
   }
+  @scala.inline
+  implicit class StrategyOptionsOps[Self <: StrategyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassReqToCallback(value: `false`): Self = this.set("passReqToCallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassReqToCallback: Self = this.set("passReqToCallback", js.undefined)
+    @scala.inline
+    def setPassReqToCallbackNull: Self = this.set("passReqToCallback", null)
+  }
+  
 }
 

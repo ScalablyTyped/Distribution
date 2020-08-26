@@ -22,14 +22,32 @@ trait SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponse extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponse {
   @scala.inline
-  def apply(
-    inputConfig: SchemaGoogleCloudVisionV1p1beta1InputConfig = null,
-    responses: js.Array[SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse] = null
-  ): SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponse = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponse = {
     val __obj = js.Dynamic.literal()
-    if (inputConfig != null) __obj.updateDynamic("inputConfig")(inputConfig.asInstanceOf[js.Any])
-    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponseOps[Self <: SchemaGoogleCloudVisionV1p1beta1AnnotateFileResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputConfig(value: SchemaGoogleCloudVisionV1p1beta1InputConfig): Self = this.set("inputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputConfig: Self = this.set("inputConfig", js.undefined)
+    @scala.inline
+    def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse*): Self = this.set("responses", js.Array(value :_*))
+    @scala.inline
+    def setResponses(value: js.Array[SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse]): Self = this.set("responses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponses: Self = this.set("responses", js.undefined)
+  }
+  
 }
 

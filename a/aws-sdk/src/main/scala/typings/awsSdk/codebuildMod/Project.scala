@@ -19,6 +19,10 @@ trait Project extends js.Object {
     */
   var badge: js.UndefOr[ProjectBadge] = js.native
   /**
+    * A ProjectBuildBatchConfig object that defines the batch build options for the project.
+    */
+  var buildBatchConfig: js.UndefOr[ProjectBuildBatchConfig] = js.native
+  /**
     * Information about the cache for the build project.
     */
   var cache: js.UndefOr[ProjectCache] = js.native
@@ -31,7 +35,7 @@ trait Project extends js.Object {
     */
   var description: js.UndefOr[ProjectDescription] = js.native
   /**
-    * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+    * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.  You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
     */
   var encryptionKey: js.UndefOr[NonEmptyString] = js.native
   /**
@@ -47,7 +51,7 @@ trait Project extends js.Object {
     */
   var lastModified: js.UndefOr[Timestamp] = js.native
   /**
-    *  Information about logs for the build project. A project can create logs in Amazon CloudWatch Logs, an S3 bucket, or both. 
+    * Information about logs for the build project. A project can create logs in Amazon CloudWatch Logs, an S3 bucket, or both. 
     */
   var logsConfig: js.UndefOr[LogsConfig] = js.native
   /**
@@ -55,19 +59,19 @@ trait Project extends js.Object {
     */
   var name: js.UndefOr[ProjectName] = js.native
   /**
-    *  The number of minutes a build is allowed to be queued before it times out. 
+    * The number of minutes a build is allowed to be queued before it times out. 
     */
   var queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.native
   /**
-    *  An array of ProjectArtifacts objects. 
+    * An array of ProjectArtifacts objects. 
     */
   var secondaryArtifacts: js.UndefOr[ProjectArtifactsList] = js.native
   /**
-    *  An array of ProjectSourceVersion objects. If secondarySourceVersions is specified at the build level, then they take over these secondarySourceVersions (at the project level). 
+    * An array of ProjectSourceVersion objects. If secondarySourceVersions is specified at the build level, then they take over these secondarySourceVersions (at the project level). 
     */
   var secondarySourceVersions: js.UndefOr[ProjectSecondarySourceVersions] = js.native
   /**
-    *  An array of ProjectSource objects. 
+    * An array of ProjectSource objects. 
     */
   var secondarySources: js.UndefOr[ProjectSources] = js.native
   /**
@@ -79,7 +83,7 @@ trait Project extends js.Object {
     */
   var source: js.UndefOr[ProjectSource] = js.native
   /**
-    * A version of the build input to be built for this project. If not specified, the latest version is used. If specified, it must be one of:   For AWS CodeCommit: the commit ID, branch, or Git tag to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.    If sourceVersion is specified at the build level, then that version takes precedence over this sourceVersion (at the project level).   For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
+    * A version of the build input to be built for this project. If not specified, the latest version is used. If specified, it must be one of:   For AWS CodeCommit: the commit ID, branch, or Git tag to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.   If sourceVersion is specified at the build level, then that version takes precedence over this sourceVersion (at the project level).  For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
     */
   var sourceVersion: js.UndefOr[String] = js.native
   /**
@@ -102,56 +106,128 @@ trait Project extends js.Object {
 
 object Project {
   @scala.inline
-  def apply(
-    arn: String = null,
-    artifacts: ProjectArtifacts = null,
-    badge: ProjectBadge = null,
-    cache: ProjectCache = null,
-    created: Timestamp = null,
-    description: ProjectDescription = null,
-    encryptionKey: NonEmptyString = null,
-    environment: ProjectEnvironment = null,
-    fileSystemLocations: ProjectFileSystemLocations = null,
-    lastModified: Timestamp = null,
-    logsConfig: LogsConfig = null,
-    name: ProjectName = null,
-    queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
-    secondaryArtifacts: ProjectArtifactsList = null,
-    secondarySourceVersions: ProjectSecondarySourceVersions = null,
-    secondarySources: ProjectSources = null,
-    serviceRole: NonEmptyString = null,
-    source: ProjectSource = null,
-    sourceVersion: String = null,
-    tags: TagList = null,
-    timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
-    vpcConfig: VpcConfig = null,
-    webhook: Webhook = null
-  ): Project = {
+  def apply(): Project = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (fileSystemLocations != null) __obj.updateDynamic("fileSystemLocations")(fileSystemLocations.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.get.asInstanceOf[js.Any])
-    if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
-    if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions.asInstanceOf[js.Any])
-    if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
-    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.get.asInstanceOf[js.Any])
-    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
-    if (webhook != null) __obj.updateDynamic("webhook")(webhook.asInstanceOf[js.Any])
     __obj.asInstanceOf[Project]
   }
+  @scala.inline
+  implicit class ProjectOps[Self <: Project] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setArtifacts(value: ProjectArtifacts): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    @scala.inline
+    def setBadge(value: ProjectBadge): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setBuildBatchConfig(value: ProjectBuildBatchConfig): Self = this.set("buildBatchConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildBatchConfig: Self = this.set("buildBatchConfig", js.undefined)
+    @scala.inline
+    def setCache(value: ProjectCache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setDescription(value: ProjectDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: NonEmptyString): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    @scala.inline
+    def setEnvironment(value: ProjectEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setFileSystemLocationsVarargs(value: ProjectFileSystemLocation*): Self = this.set("fileSystemLocations", js.Array(value :_*))
+    @scala.inline
+    def setFileSystemLocations(value: ProjectFileSystemLocations): Self = this.set("fileSystemLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemLocations: Self = this.set("fileSystemLocations", js.undefined)
+    @scala.inline
+    def setLastModified(value: Timestamp): Self = this.set("lastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("lastModified", js.undefined)
+    @scala.inline
+    def setLogsConfig(value: LogsConfig): Self = this.set("logsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogsConfig: Self = this.set("logsConfig", js.undefined)
+    @scala.inline
+    def setName(value: ProjectName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setQueuedTimeoutInMinutes(value: TimeOut): Self = this.set("queuedTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueuedTimeoutInMinutes: Self = this.set("queuedTimeoutInMinutes", js.undefined)
+    @scala.inline
+    def setSecondaryArtifactsVarargs(value: ProjectArtifacts*): Self = this.set("secondaryArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setSecondaryArtifacts(value: ProjectArtifactsList): Self = this.set("secondaryArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryArtifacts: Self = this.set("secondaryArtifacts", js.undefined)
+    @scala.inline
+    def setSecondarySourceVersionsVarargs(value: ProjectSourceVersion*): Self = this.set("secondarySourceVersions", js.Array(value :_*))
+    @scala.inline
+    def setSecondarySourceVersions(value: ProjectSecondarySourceVersions): Self = this.set("secondarySourceVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondarySourceVersions: Self = this.set("secondarySourceVersions", js.undefined)
+    @scala.inline
+    def setSecondarySourcesVarargs(value: ProjectSource*): Self = this.set("secondarySources", js.Array(value :_*))
+    @scala.inline
+    def setSecondarySources(value: ProjectSources): Self = this.set("secondarySources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondarySources: Self = this.set("secondarySources", js.undefined)
+    @scala.inline
+    def setServiceRole(value: NonEmptyString): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("serviceRole", js.undefined)
+    @scala.inline
+    def setSource(value: ProjectSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceVersion(value: String): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVersion: Self = this.set("sourceVersion", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTimeoutInMinutes(value: TimeOut): Self = this.set("timeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMinutes: Self = this.set("timeoutInMinutes", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("vpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("vpcConfig", js.undefined)
+    @scala.inline
+    def setWebhook(value: Webhook): Self = this.set("webhook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhook: Self = this.set("webhook", js.undefined)
+  }
+  
 }
 

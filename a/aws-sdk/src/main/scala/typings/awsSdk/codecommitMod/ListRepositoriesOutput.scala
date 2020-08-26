@@ -18,11 +18,32 @@ trait ListRepositoriesOutput extends js.Object {
 
 object ListRepositoriesOutput {
   @scala.inline
-  def apply(nextToken: NextToken = null, repositories: RepositoryNameIdPairList = null): ListRepositoriesOutput = {
+  def apply(): ListRepositoriesOutput = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (repositories != null) __obj.updateDynamic("repositories")(repositories.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRepositoriesOutput]
   }
+  @scala.inline
+  implicit class ListRepositoriesOutputOps[Self <: ListRepositoriesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRepositoriesVarargs(value: RepositoryNameIdPair*): Self = this.set("repositories", js.Array(value :_*))
+    @scala.inline
+    def setRepositories(value: RepositoryNameIdPairList): Self = this.set("repositories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositories: Self = this.set("repositories", js.undefined)
+  }
+  
 }
 

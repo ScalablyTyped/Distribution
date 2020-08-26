@@ -83,48 +83,98 @@ trait JobMetadata extends js.Object {
 
 object JobMetadata {
   @scala.inline
-  def apply(
-    AddressId: AddressId = null,
-    ClusterId: String = null,
-    CreationDate: Timestamp = null,
-    DataTransferProgress: DataTransfer = null,
-    Description: String = null,
-    DeviceConfiguration: DeviceConfiguration = null,
-    ForwardingAddressId: AddressId = null,
-    JobId: String = null,
-    JobLogInfo: JobLogs = null,
-    JobState: JobState = null,
-    JobType: JobType = null,
-    KmsKeyARN: KmsKeyARN = null,
-    Notification: Notification = null,
-    Resources: JobResource = null,
-    RoleARN: RoleARN = null,
-    ShippingDetails: ShippingDetails = null,
-    SnowballCapacityPreference: SnowballCapacity = null,
-    SnowballType: SnowballType = null,
-    TaxDocuments: TaxDocuments = null
-  ): JobMetadata = {
+  def apply(): JobMetadata = {
     val __obj = js.Dynamic.literal()
-    if (AddressId != null) __obj.updateDynamic("AddressId")(AddressId.asInstanceOf[js.Any])
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (DataTransferProgress != null) __obj.updateDynamic("DataTransferProgress")(DataTransferProgress.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DeviceConfiguration != null) __obj.updateDynamic("DeviceConfiguration")(DeviceConfiguration.asInstanceOf[js.Any])
-    if (ForwardingAddressId != null) __obj.updateDynamic("ForwardingAddressId")(ForwardingAddressId.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (JobLogInfo != null) __obj.updateDynamic("JobLogInfo")(JobLogInfo.asInstanceOf[js.Any])
-    if (JobState != null) __obj.updateDynamic("JobState")(JobState.asInstanceOf[js.Any])
-    if (JobType != null) __obj.updateDynamic("JobType")(JobType.asInstanceOf[js.Any])
-    if (KmsKeyARN != null) __obj.updateDynamic("KmsKeyARN")(KmsKeyARN.asInstanceOf[js.Any])
-    if (Notification != null) __obj.updateDynamic("Notification")(Notification.asInstanceOf[js.Any])
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (ShippingDetails != null) __obj.updateDynamic("ShippingDetails")(ShippingDetails.asInstanceOf[js.Any])
-    if (SnowballCapacityPreference != null) __obj.updateDynamic("SnowballCapacityPreference")(SnowballCapacityPreference.asInstanceOf[js.Any])
-    if (SnowballType != null) __obj.updateDynamic("SnowballType")(SnowballType.asInstanceOf[js.Any])
-    if (TaxDocuments != null) __obj.updateDynamic("TaxDocuments")(TaxDocuments.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobMetadata]
   }
+  @scala.inline
+  implicit class JobMetadataOps[Self <: JobMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressId(value: AddressId): Self = this.set("AddressId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressId: Self = this.set("AddressId", js.undefined)
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDataTransferProgress(value: DataTransfer): Self = this.set("DataTransferProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTransferProgress: Self = this.set("DataTransferProgress", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDeviceConfiguration(value: DeviceConfiguration): Self = this.set("DeviceConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceConfiguration: Self = this.set("DeviceConfiguration", js.undefined)
+    @scala.inline
+    def setForwardingAddressId(value: AddressId): Self = this.set("ForwardingAddressId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForwardingAddressId: Self = this.set("ForwardingAddressId", js.undefined)
+    @scala.inline
+    def setJobId(value: String): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setJobLogInfo(value: JobLogs): Self = this.set("JobLogInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobLogInfo: Self = this.set("JobLogInfo", js.undefined)
+    @scala.inline
+    def setJobState(value: JobState): Self = this.set("JobState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobState: Self = this.set("JobState", js.undefined)
+    @scala.inline
+    def setJobType(value: JobType): Self = this.set("JobType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobType: Self = this.set("JobType", js.undefined)
+    @scala.inline
+    def setKmsKeyARN(value: KmsKeyARN): Self = this.set("KmsKeyARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyARN: Self = this.set("KmsKeyARN", js.undefined)
+    @scala.inline
+    def setNotification(value: Notification): Self = this.set("Notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotification: Self = this.set("Notification", js.undefined)
+    @scala.inline
+    def setResources(value: JobResource): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("Resources", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setShippingDetails(value: ShippingDetails): Self = this.set("ShippingDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingDetails: Self = this.set("ShippingDetails", js.undefined)
+    @scala.inline
+    def setSnowballCapacityPreference(value: SnowballCapacity): Self = this.set("SnowballCapacityPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowballCapacityPreference: Self = this.set("SnowballCapacityPreference", js.undefined)
+    @scala.inline
+    def setSnowballType(value: SnowballType): Self = this.set("SnowballType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowballType: Self = this.set("SnowballType", js.undefined)
+    @scala.inline
+    def setTaxDocuments(value: TaxDocuments): Self = this.set("TaxDocuments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaxDocuments: Self = this.set("TaxDocuments", js.undefined)
+  }
+  
 }
 

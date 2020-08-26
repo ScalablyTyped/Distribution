@@ -1,13 +1,10 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Store
 
 import typings.std.Date
-import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState
-import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus
 import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreSystemFeature
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.WinRTError
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,20 +21,7 @@ object Preview extends js.Object {
   /** Provides information about the manufacturer for the current device. */
   @js.native
   abstract class StoreHardwareManufacturerInfo ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo {
-    /** Gets the hardware manufacture ID for the current device. */
-    /* CompleteClass */
-    override var hardwareManufacturerId: String = js.native
-    /** Gets the name of the hardware manufacturer for the current device. */
-    /* CompleteClass */
-    override var manufacturerName: String = js.native
-    /** Gets the model name for the current device. */
-    /* CompleteClass */
-    override var modelName: String = js.native
-    /** Gets the ID of the Windows Store content modifier. */
-    /* CompleteClass */
-    override var storeContentModifierId: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo
   
   /** Defines static methods for retrieving the in-app product SKUs available for the current app and requesting the purchase of an in-app product SKU for the app. */
   @js.native
@@ -47,65 +31,17 @@ object Preview extends js.Object {
   /** Provides information about an in-app product, including details about available SKUs. */
   @js.native
   abstract class StorePreviewProductInfo ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo {
-    /** Gets the description of the in-app product. */
-    /* CompleteClass */
-    override var description: String = js.native
-    /** Gets the ID of the in-app product. */
-    /* CompleteClass */
-    override var productId: String = js.native
-    /** Gets the type of the in-app product. */
-    /* CompleteClass */
-    override var productType: String = js.native
-    /** Gets information about the available SKUs for the in-app product. */
-    /* CompleteClass */
-    override var skuInfoList: IVectorView[typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo] = js.native
-    /** Gets the name of the in-app product that is displayed to customers. */
-    /* CompleteClass */
-    override var title: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo
   
   /** Contains information about the results of a purchase transaction for an in-app product SKU that was purchased by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
   @js.native
   abstract class StorePreviewPurchaseResults ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults {
-    /** Gets the current state of the purchase transaction for an in-app product SKU that was purchased by using the RequestProductPurchaseByProductIdAndSkuIdAsync method. */
-    /* CompleteClass */
-    override var productPurchaseStatus: StorePreviewProductPurchaseStatus = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults
   
   /** Provides information about the available SKUs for an in-app product. */
   @js.native
   abstract class StorePreviewSkuInfo ()
-    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo {
-    /** Gets the currency code for the current market. */
-    /* CompleteClass */
-    override var currencyCode: String = js.native
-    /** Gets custom developer data for the current SKU. */
-    /* CompleteClass */
-    override var customDeveloperData: String = js.native
-    /** Gets the description for the current SKU. */
-    /* CompleteClass */
-    override var description: String = js.native
-    /** Gets extended data for the current SKU. */
-    /* CompleteClass */
-    override var extendedData: String = js.native
-    /** Gets the current SKU's purchase price with the appropriate formatting for the current market. */
-    /* CompleteClass */
-    override var formattedListPrice: String = js.native
-    /** Gets the ID of the product that this SKU is associated with. */
-    /* CompleteClass */
-    override var productId: String = js.native
-    /** Gets the ID of this SKU. */
-    /* CompleteClass */
-    override var skuId: String = js.native
-    /** Gets a string that specifies the type of the in-app product SKU. */
-    /* CompleteClass */
-    override var skuType: String = js.native
-    /** Gets the name of the in-app product SKU that is displayed to customers. */
-    /* CompleteClass */
-    override var title: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo
   
   /** Provides an API for programmatically managing the installation of apps and app updates. This API is accessible through the AppInstallManager class. */
   @js.native
@@ -124,32 +60,12 @@ object Preview extends js.Object {
     /** Provides data for the ItemCompleted and ItemStatusChanged events. */
     @js.native
     abstract class AppInstallManagerItemEventArgs ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs {
-      /** Gets an object that describes the app that has finished installing (for the ItemCompleted event) or whose installation status has changed (for the ItemStatusChanged event). */
-      /* CompleteClass */
-      override var item: typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem = js.native
-    }
+      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs
     
     /** Describes the status of an app that is in the installation queue. */
     @js.native
     abstract class AppInstallStatus ()
-      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus {
-      /** Gets the number of bytes that have been downloaded for the current app. */
-      /* CompleteClass */
-      override var bytesDownloaded: Double = js.native
-      /** Gets the download size in bytes for the current app. */
-      /* CompleteClass */
-      override var downloadSizeInBytes: Double = js.native
-      /** Gets the error code for an app that has encountered an installation failure. */
-      /* CompleteClass */
-      override var errorCode: WinRTError = js.native
-      /** Gets the installation state of the current app. */
-      /* CompleteClass */
-      override var installState: AppInstallState = js.native
-      /** Gets the completion percentage for the installation of the current app. */
-      /* CompleteClass */
-      override var percentComplete: Double = js.native
-    }
+      extends typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus
     
     /** Defines the app install states that are returned by the InstallState property of the AppInstallStatus class. */
     @js.native

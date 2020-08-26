@@ -22,16 +22,34 @@ trait DocumentDefaultVersionDescription extends js.Object {
 
 object DocumentDefaultVersionDescription {
   @scala.inline
-  def apply(
-    DefaultVersion: DocumentVersion = null,
-    DefaultVersionName: DocumentVersionName = null,
-    Name: DocumentName = null
-  ): DocumentDefaultVersionDescription = {
+  def apply(): DocumentDefaultVersionDescription = {
     val __obj = js.Dynamic.literal()
-    if (DefaultVersion != null) __obj.updateDynamic("DefaultVersion")(DefaultVersion.asInstanceOf[js.Any])
-    if (DefaultVersionName != null) __obj.updateDynamic("DefaultVersionName")(DefaultVersionName.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentDefaultVersionDescription]
   }
+  @scala.inline
+  implicit class DocumentDefaultVersionDescriptionOps[Self <: DocumentDefaultVersionDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultVersion(value: DocumentVersion): Self = this.set("DefaultVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersion: Self = this.set("DefaultVersion", js.undefined)
+    @scala.inline
+    def setDefaultVersionName(value: DocumentVersionName): Self = this.set("DefaultVersionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersionName: Self = this.set("DefaultVersionName", js.undefined)
+    @scala.inline
+    def setName(value: DocumentName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

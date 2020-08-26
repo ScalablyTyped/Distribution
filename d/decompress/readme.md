@@ -11,8 +11,8 @@ Extracting archives made easy
 | Full name          | decompress |
 | Keywords           | bz2, bzip2, decompress, extract, tar, tar.bz, tar.gz, zip, unzip |
 | # releases         | 1 |
-| # dependents       | 408 |
-| # downloads        | 67709941 |
+| # dependents       | 414 |
+| # downloads        | 68978106 |
 | # stars            | 20 |
 
 ## Links

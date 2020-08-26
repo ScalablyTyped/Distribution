@@ -29,15 +29,6 @@ class CheckboxBase protected ()
   var _onFocus: js.Any = js.native
   var _onRenderLabel: js.Any = js.native
   var _renderContent: js.Any = js.native
-  /** Gets the current checked state. */
-  /* CompleteClass */
-  override var checked: Boolean = js.native
-  /** Gets the current indeterminate state. */
-  /* CompleteClass */
-  override var indeterminate: Boolean = js.native
-  /** Sets focus to the checkbox. */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

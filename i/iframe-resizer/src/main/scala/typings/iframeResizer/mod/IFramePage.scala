@@ -63,6 +63,7 @@ trait IFramePage extends js.Object {
     * prevent auto resizing and enable the `sizeWidth` option if you wish to set the width.
     */
   def size(): Unit = js.native
+  def size(customHeight: js.UndefOr[scala.Nothing], customWidth: String): Unit = js.native
   def size(customHeight: String): Unit = js.native
   def size(customHeight: String, customWidth: String): Unit = js.native
 }

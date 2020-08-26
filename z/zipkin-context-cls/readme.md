@@ -11,8 +11,8 @@ A Context API implementation that uses continuation-local-storage under the hood
 | Full name          | zipkin-context-cls |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 36 |
-| # downloads        | 752226 |
+| # dependents       | 35 |
+| # downloads        | 798271 |
 | # stars            | 0 |
 
 ## Links

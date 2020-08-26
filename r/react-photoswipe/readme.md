@@ -11,8 +11,8 @@ PhotoSwipe, PhotoSwipeGallery component for ReactJS base on PhotoSwipe.
 | Full name          | react-photoswipe |
 | Keywords           | react-component, react, component, react-photoswipe, photoswipe, gallery |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 266495 |
+| # dependents       | 6 |
+| # downloads        | 275693 |
 | # stars            | 4 |
 
 ## Links

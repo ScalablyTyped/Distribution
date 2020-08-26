@@ -1,48 +1,86 @@
 package typings.uws.mod
 
+import typings.uws.anon.Origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IServerOptions extends js.Object {
-  var clientTracking: js.UndefOr[Boolean] = js.undefined
-  var disableHixie: js.UndefOr[Boolean] = js.undefined
-  var handleProtocols: js.UndefOr[js.Any] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var noServer: js.UndefOr[Boolean] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var perMessageDeflate: js.UndefOr[Boolean | IPerMessageDeflateOptions] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var server: js.UndefOr[typings.node.httpMod.Server | typings.node.httpsMod.Server] = js.undefined
-  var verifyClient: js.UndefOr[VerifyClientCallbackAsync | VerifyClientCallbackSync] = js.undefined
+  var clientTracking: js.UndefOr[Boolean] = js.native
+  var disableHixie: js.UndefOr[Boolean] = js.native
+  var handleProtocols: js.UndefOr[js.Any] = js.native
+  var host: js.UndefOr[String] = js.native
+  var noServer: js.UndefOr[Boolean] = js.native
+  var path: js.UndefOr[String] = js.native
+  var perMessageDeflate: js.UndefOr[Boolean | IPerMessageDeflateOptions] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var server: js.UndefOr[typings.node.httpMod.Server | typings.node.httpsMod.Server] = js.native
+  var verifyClient: js.UndefOr[VerifyClientCallbackAsync | VerifyClientCallbackSync] = js.native
 }
 
 object IServerOptions {
   @scala.inline
-  def apply(
-    clientTracking: js.UndefOr[Boolean] = js.undefined,
-    disableHixie: js.UndefOr[Boolean] = js.undefined,
-    handleProtocols: js.Any = null,
-    host: String = null,
-    noServer: js.UndefOr[Boolean] = js.undefined,
-    path: String = null,
-    perMessageDeflate: Boolean | IPerMessageDeflateOptions = null,
-    port: js.UndefOr[Double] = js.undefined,
-    server: typings.node.httpMod.Server | typings.node.httpsMod.Server = null,
-    verifyClient: VerifyClientCallbackAsync | VerifyClientCallbackSync = null
-  ): IServerOptions = {
+  def apply(): IServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clientTracking)) __obj.updateDynamic("clientTracking")(clientTracking.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHixie)) __obj.updateDynamic("disableHixie")(disableHixie.get.asInstanceOf[js.Any])
-    if (handleProtocols != null) __obj.updateDynamic("handleProtocols")(handleProtocols.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(noServer)) __obj.updateDynamic("noServer")(noServer.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (verifyClient != null) __obj.updateDynamic("verifyClient")(verifyClient.asInstanceOf[js.Any])
     __obj.asInstanceOf[IServerOptions]
   }
+  @scala.inline
+  implicit class IServerOptionsOps[Self <: IServerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientTracking(value: Boolean): Self = this.set("clientTracking", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientTracking: Self = this.set("clientTracking", js.undefined)
+    @scala.inline
+    def setDisableHixie(value: Boolean): Self = this.set("disableHixie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableHixie: Self = this.set("disableHixie", js.undefined)
+    @scala.inline
+    def setHandleProtocols(value: js.Any): Self = this.set("handleProtocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleProtocols: Self = this.set("handleProtocols", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setNoServer(value: Boolean): Self = this.set("noServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoServer: Self = this.set("noServer", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPerMessageDeflate(value: Boolean | IPerMessageDeflateOptions): Self = this.set("perMessageDeflate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerMessageDeflate: Self = this.set("perMessageDeflate", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setServer(value: typings.node.httpMod.Server | typings.node.httpsMod.Server): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServer: Self = this.set("server", js.undefined)
+    @scala.inline
+    def setVerifyClientFunction2(value: (/* info */ Origin, /* callback */ js.Function1[/* res */ Boolean, Unit]) => Unit): Self = this.set("verifyClient", js.Any.fromFunction2(value))
+    @scala.inline
+    def setVerifyClientFunction1(value: /* info */ Origin => Boolean): Self = this.set("verifyClient", js.Any.fromFunction1(value))
+    @scala.inline
+    def setVerifyClient(value: VerifyClientCallbackAsync | VerifyClientCallbackSync): Self = this.set("verifyClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyClient: Self = this.set("verifyClient", js.undefined)
+  }
+  
 }
 

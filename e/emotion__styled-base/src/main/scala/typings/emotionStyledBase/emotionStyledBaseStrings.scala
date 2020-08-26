@@ -499,6 +499,9 @@ object emotionStyledBaseStrings {
   sealed trait thead extends js.Object
   
   @js.native
+  sealed trait theme extends js.Object
+  
+  @js.native
   sealed trait time extends js.Object
   
   @js.native
@@ -865,6 +868,8 @@ object emotionStyledBaseStrings {
   def th: th = "th".asInstanceOf[th]
   @scala.inline
   def thead: thead = "thead".asInstanceOf[thead]
+  @scala.inline
+  def theme: theme = "theme".asInstanceOf[theme]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   @scala.inline

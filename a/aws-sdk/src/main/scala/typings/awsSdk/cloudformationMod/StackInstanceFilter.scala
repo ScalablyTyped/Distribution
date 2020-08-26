@@ -18,11 +18,30 @@ trait StackInstanceFilter extends js.Object {
 
 object StackInstanceFilter {
   @scala.inline
-  def apply(Name: StackInstanceFilterName = null, Values: StackInstanceFilterValues = null): StackInstanceFilter = {
+  def apply(): StackInstanceFilter = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackInstanceFilter]
   }
+  @scala.inline
+  implicit class StackInstanceFilterOps[Self <: StackInstanceFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: StackInstanceFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setValues(value: StackInstanceFilterValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

@@ -77,28 +77,62 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig exten
 
 object SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig {
   @scala.inline
-  def apply(
-    audioTracks: js.Array[Double] = null,
-    diarizationSpeakerCount: js.UndefOr[Double] = js.undefined,
-    enableAutomaticPunctuation: js.UndefOr[Boolean] = js.undefined,
-    enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined,
-    enableWordConfidence: js.UndefOr[Boolean] = js.undefined,
-    filterProfanity: js.UndefOr[Boolean] = js.undefined,
-    languageCode: String = null,
-    maxAlternatives: js.UndefOr[Double] = js.undefined,
-    speechContexts: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext] = null
-  ): SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig = {
     val __obj = js.Dynamic.literal()
-    if (audioTracks != null) __obj.updateDynamic("audioTracks")(audioTracks.asInstanceOf[js.Any])
-    if (!js.isUndefined(diarizationSpeakerCount)) __obj.updateDynamic("diarizationSpeakerCount")(diarizationSpeakerCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAutomaticPunctuation)) __obj.updateDynamic("enableAutomaticPunctuation")(enableAutomaticPunctuation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSpeakerDiarization)) __obj.updateDynamic("enableSpeakerDiarization")(enableSpeakerDiarization.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableWordConfidence)) __obj.updateDynamic("enableWordConfidence")(enableWordConfidence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterProfanity)) __obj.updateDynamic("filterProfanity")(filterProfanity.get.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAlternatives)) __obj.updateDynamic("maxAlternatives")(maxAlternatives.get.asInstanceOf[js.Any])
-    if (speechContexts != null) __obj.updateDynamic("speechContexts")(speechContexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfigOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1SpeechTranscriptionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioTracksVarargs(value: Double*): Self = this.set("audioTracks", js.Array(value :_*))
+    @scala.inline
+    def setAudioTracks(value: js.Array[Double]): Self = this.set("audioTracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioTracks: Self = this.set("audioTracks", js.undefined)
+    @scala.inline
+    def setDiarizationSpeakerCount(value: Double): Self = this.set("diarizationSpeakerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiarizationSpeakerCount: Self = this.set("diarizationSpeakerCount", js.undefined)
+    @scala.inline
+    def setEnableAutomaticPunctuation(value: Boolean): Self = this.set("enableAutomaticPunctuation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAutomaticPunctuation: Self = this.set("enableAutomaticPunctuation", js.undefined)
+    @scala.inline
+    def setEnableSpeakerDiarization(value: Boolean): Self = this.set("enableSpeakerDiarization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSpeakerDiarization: Self = this.set("enableSpeakerDiarization", js.undefined)
+    @scala.inline
+    def setEnableWordConfidence(value: Boolean): Self = this.set("enableWordConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableWordConfidence: Self = this.set("enableWordConfidence", js.undefined)
+    @scala.inline
+    def setFilterProfanity(value: Boolean): Self = this.set("filterProfanity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterProfanity: Self = this.set("filterProfanity", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setMaxAlternatives(value: Double): Self = this.set("maxAlternatives", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAlternatives: Self = this.set("maxAlternatives", js.undefined)
+    @scala.inline
+    def setSpeechContextsVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext*): Self = this.set("speechContexts", js.Array(value :_*))
+    @scala.inline
+    def setSpeechContexts(value: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1SpeechContext]): Self = this.set("speechContexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeechContexts: Self = this.set("speechContexts", js.undefined)
+  }
+  
 }
 

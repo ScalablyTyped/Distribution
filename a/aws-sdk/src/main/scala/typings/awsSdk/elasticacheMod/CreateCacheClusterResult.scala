@@ -11,10 +11,26 @@ trait CreateCacheClusterResult extends js.Object {
 
 object CreateCacheClusterResult {
   @scala.inline
-  def apply(CacheCluster: CacheCluster = null): CreateCacheClusterResult = {
+  def apply(): CreateCacheClusterResult = {
     val __obj = js.Dynamic.literal()
-    if (CacheCluster != null) __obj.updateDynamic("CacheCluster")(CacheCluster.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCacheClusterResult]
   }
+  @scala.inline
+  implicit class CreateCacheClusterResultOps[Self <: CreateCacheClusterResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheCluster(value: CacheCluster): Self = this.set("CacheCluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheCluster: Self = this.set("CacheCluster", js.undefined)
+  }
+  
 }
 

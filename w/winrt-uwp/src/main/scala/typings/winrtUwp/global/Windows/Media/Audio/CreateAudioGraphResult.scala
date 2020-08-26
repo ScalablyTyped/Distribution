@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Audio.CreateAudioGraphResult")
 @js.native
 abstract class CreateAudioGraphResult ()
-  extends typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult {
-  /** Gets the audio graph object. */
-  /* CompleteClass */
-  override var graph: typings.winrtUwp.Windows.Media.Audio.AudioGraph = js.native
-  /** Gets the status of audio graph creation. */
-  /* CompleteClass */
-  override var status: typings.winrtUwp.Windows.Media.Audio.AudioGraphCreationStatus = js.native
-}
+  extends typings.winrtUwp.Windows.Media.Audio.CreateAudioGraphResult
 

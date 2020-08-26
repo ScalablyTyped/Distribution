@@ -26,18 +26,38 @@ trait AwsSqsQueueDetails extends js.Object {
 
 object AwsSqsQueueDetails {
   @scala.inline
-  def apply(
-    DeadLetterTargetArn: NonEmptyString = null,
-    KmsDataKeyReusePeriodSeconds: js.UndefOr[Integer] = js.undefined,
-    KmsMasterKeyId: NonEmptyString = null,
-    QueueName: NonEmptyString = null
-  ): AwsSqsQueueDetails = {
+  def apply(): AwsSqsQueueDetails = {
     val __obj = js.Dynamic.literal()
-    if (DeadLetterTargetArn != null) __obj.updateDynamic("DeadLetterTargetArn")(DeadLetterTargetArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(KmsDataKeyReusePeriodSeconds)) __obj.updateDynamic("KmsDataKeyReusePeriodSeconds")(KmsDataKeyReusePeriodSeconds.get.asInstanceOf[js.Any])
-    if (KmsMasterKeyId != null) __obj.updateDynamic("KmsMasterKeyId")(KmsMasterKeyId.asInstanceOf[js.Any])
-    if (QueueName != null) __obj.updateDynamic("QueueName")(QueueName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSqsQueueDetails]
   }
+  @scala.inline
+  implicit class AwsSqsQueueDetailsOps[Self <: AwsSqsQueueDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeadLetterTargetArn(value: NonEmptyString): Self = this.set("DeadLetterTargetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadLetterTargetArn: Self = this.set("DeadLetterTargetArn", js.undefined)
+    @scala.inline
+    def setKmsDataKeyReusePeriodSeconds(value: Integer): Self = this.set("KmsDataKeyReusePeriodSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsDataKeyReusePeriodSeconds: Self = this.set("KmsDataKeyReusePeriodSeconds", js.undefined)
+    @scala.inline
+    def setKmsMasterKeyId(value: NonEmptyString): Self = this.set("KmsMasterKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsMasterKeyId: Self = this.set("KmsMasterKeyId", js.undefined)
+    @scala.inline
+    def setQueueName(value: NonEmptyString): Self = this.set("QueueName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueName: Self = this.set("QueueName", js.undefined)
+  }
+  
 }
 

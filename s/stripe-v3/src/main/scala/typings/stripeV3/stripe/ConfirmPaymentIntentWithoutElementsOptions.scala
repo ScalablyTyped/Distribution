@@ -5,41 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfirmPaymentIntentWithoutElementsOptions extends ConfirmPaymentIntentOptions {
   /**
     * Only one of payment_method_data and payment_method is required.
     * Use payment_method to specify an existing PaymentMethod to use
     * for this payment.
     */
-  var payment_method: js.UndefOr[String] = js.undefined
+  var payment_method: js.UndefOr[String] = js.native
   /**
     * Use this parameter to supply additional data relevant to
     * the payment method, such as billing details
     */
   @JSName("payment_method_data")
-  var payment_method_data_ConfirmPaymentIntentWithoutElementsOptions: js.UndefOr[BillingdetailsCard] = js.undefined
+  var payment_method_data_ConfirmPaymentIntentWithoutElementsOptions: js.UndefOr[BillingdetailsCard] = js.native
 }
 
 object ConfirmPaymentIntentWithoutElementsOptions {
   @scala.inline
-  def apply(
-    payment_method: String = null,
-    payment_method_data: BillingdetailsCard = null,
-    receipt_email: String = null,
-    return_url: String = null,
-    save_payment_method: js.UndefOr[Boolean] = js.undefined,
-    setup_future_usage: String = null,
-    shipping: ShippingDetails = null
-  ): ConfirmPaymentIntentWithoutElementsOptions = {
+  def apply(): ConfirmPaymentIntentWithoutElementsOptions = {
     val __obj = js.Dynamic.literal()
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
-    if (payment_method_data != null) __obj.updateDynamic("payment_method_data")(payment_method_data.asInstanceOf[js.Any])
-    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email.asInstanceOf[js.Any])
-    if (return_url != null) __obj.updateDynamic("return_url")(return_url.asInstanceOf[js.Any])
-    if (!js.isUndefined(save_payment_method)) __obj.updateDynamic("save_payment_method")(save_payment_method.get.asInstanceOf[js.Any])
-    if (setup_future_usage != null) __obj.updateDynamic("setup_future_usage")(setup_future_usage.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmPaymentIntentWithoutElementsOptions]
   }
+  @scala.inline
+  implicit class ConfirmPaymentIntentWithoutElementsOptionsOps[Self <: ConfirmPaymentIntentWithoutElementsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPayment_method(value: String): Self = this.set("payment_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayment_method: Self = this.set("payment_method", js.undefined)
+    @scala.inline
+    def setPayment_method_data(value: BillingdetailsCard): Self = this.set("payment_method_data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayment_method_data: Self = this.set("payment_method_data", js.undefined)
+  }
+  
 }
 

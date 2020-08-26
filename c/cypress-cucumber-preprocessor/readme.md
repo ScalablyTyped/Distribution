@@ -10,9 +10,9 @@ Run gherkin-syntaxed specs with cypress.io
 | ------------------ | :-------------: |
 | Full name          | cypress-cucumber-preprocessor |
 | Keywords           | cucumber, gherkin, cypress, testing |
-| # releases         | 46 |
+| # releases         | 44 |
 | # dependents       | 5 |
-| # downloads        | 1006250 |
+| # downloads        | 1069285 |
 | # stars            | 0 |
 
 ## Links

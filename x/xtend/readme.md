@@ -11,8 +11,8 @@ extend like a boss
 | Full name          | xtend |
 | Keywords           | extend, merge, options, opts, object, array |
 | # releases         | 2 |
-| # dependents       | 2210 |
-| # downloads        | 529635045 |
+| # dependents       | 2229 |
+| # downloads        | 556903666 |
 | # stars            | 46 |
 
 ## Links

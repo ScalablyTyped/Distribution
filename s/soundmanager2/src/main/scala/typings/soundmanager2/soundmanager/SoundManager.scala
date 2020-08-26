@@ -30,6 +30,8 @@ trait SoundManager extends SoundManagerProps {
   def pause(id: String): SMSound = js.native
   def pauseAll(): Unit = js.native
   def play(): SMSound = js.native
+  def play(id: js.UndefOr[scala.Nothing], options: DefaultOptions): SMSound = js.native
+  def play(id: js.UndefOr[scala.Nothing], options: Flash9Options): SMSound = js.native
   def play(id: String): SMSound = js.native
   def play(id: String, options: DefaultOptions): SMSound = js.native
   def play(id: String, options: Flash9Options): SMSound = js.native

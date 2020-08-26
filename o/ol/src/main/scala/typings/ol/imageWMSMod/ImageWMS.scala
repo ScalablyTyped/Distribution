@@ -13,6 +13,7 @@ trait ImageWMS
   def getFeatureInfoUrl(coordinate: Coordinate, resolution: Double, projection: ProjectionLike, params: js.Any): String = js.native
   def getImageLoadFunction(): LoadFunction = js.native
   def getLegendUrl(): String = js.native
+  def getLegendUrl(resolution: js.UndefOr[scala.Nothing], params: js.Any): String = js.native
   def getLegendUrl(resolution: Double): String = js.native
   def getLegendUrl(resolution: Double, params: js.Any): String = js.native
   def getParams(): js.Any = js.native

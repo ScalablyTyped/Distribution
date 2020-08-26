@@ -18,10 +18,30 @@ trait History extends js.Object {
 
 object History {
   @scala.inline
-  def apply(events: HistoryEventList, nextPageToken: PageToken = null): History = {
+  def apply(events: HistoryEventList): History = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[History]
   }
+  @scala.inline
+  implicit class HistoryOps[Self <: History] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: HistoryEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: HistoryEventList): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

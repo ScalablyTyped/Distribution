@@ -11,8 +11,8 @@ pipe streams together and close all of them if one of them closes
 | Full name          | pump |
 | Keywords           | streams, pipe, destroy, callback |
 | # releases         | 3 |
-| # dependents       | 958 |
-| # downloads        | 719595011 |
+| # dependents       | 971 |
+| # downloads        | 744418740 |
 | # stars            | 69 |
 
 ## Links

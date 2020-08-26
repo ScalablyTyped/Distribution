@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
   - typings.detectBrowser.detectBrowserStrings.edge
   - typings.detectBrowser.detectBrowserStrings.`edge-ios`
   - typings.detectBrowser.detectBrowserStrings.yandexbrowser
-  - typings.detectBrowser.detectBrowserStrings.vivaldi
   - typings.detectBrowser.detectBrowserStrings.kakaotalk
   - typings.detectBrowser.detectBrowserStrings.samsung
   - typings.detectBrowser.detectBrowserStrings.silk
@@ -90,8 +89,6 @@ object Browser {
   def searchbot: typings.detectBrowser.detectBrowserStrings.searchbot = "searchbot".asInstanceOf[typings.detectBrowser.detectBrowserStrings.searchbot]
   @scala.inline
   def silk: typings.detectBrowser.detectBrowserStrings.silk = "silk".asInstanceOf[typings.detectBrowser.detectBrowserStrings.silk]
-  @scala.inline
-  def vivaldi: typings.detectBrowser.detectBrowserStrings.vivaldi = "vivaldi".asInstanceOf[typings.detectBrowser.detectBrowserStrings.vivaldi]
   @scala.inline
   def yandexbrowser: typings.detectBrowser.detectBrowserStrings.yandexbrowser = "yandexbrowser".asInstanceOf[typings.detectBrowser.detectBrowserStrings.yandexbrowser]
 }

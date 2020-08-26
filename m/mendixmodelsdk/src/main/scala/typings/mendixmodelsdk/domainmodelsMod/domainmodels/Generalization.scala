@@ -38,8 +38,8 @@ class Generalization protected () extends GeneralizationBase {
   @JSName("containerAsEntity")
   def containerAsEntity_MGeneralization: Entity = js.native
   def generalization: IEntity = js.native
-  def generalization(newValue: IEntity): js.Any = js.native
   def generalizationQualifiedName: String = js.native
+  def generalization_=(newValue: IEntity): Unit = js.native
 }
 
 /* static members */

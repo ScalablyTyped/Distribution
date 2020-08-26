@@ -172,47 +172,6 @@ object cades extends js.Object {
   class CompleteCertificateRefs ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cades.CompleteCertificateRefs {
     def this(params: Length) = this()
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    override var hL: String = js.native
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    override var hT: String = js.native
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    override var hTLV: String = js.native
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    override var hV: String = js.native
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    override var isModified: String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    /**
-      * set value by array
-      * @param a array of `KJUR.asn1.cades.OtherCertID` argument
-      */
-    /* CompleteClass */
-    override def setByArray(a: js.Array[typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID]): Unit = js.native
   }
   
   /**
@@ -233,51 +192,6 @@ object cades extends js.Object {
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID {
     def this(params: String) = this()
     def this(params: Cert) = this()
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    override var hL: String = js.native
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    override var hT: String = js.native
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    override var hTLV: String = js.native
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    override var hV: String = js.native
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    override var isModified: String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    /**
-      * set value by PEM string of certificate
-      * @param certPEM PEM string of certificate
-      * @description
-      * This method will set value by a PEM string of a certificate.
-      * This will add IssuerAndSerialNumber by default
-      * which depends on hasIssuerSerial flag.
-      */
-    /* CompleteClass */
-    override def setByCertPEM(certPEM: String): Unit = js.native
   }
   
   /**
@@ -304,51 +218,6 @@ object cades extends js.Object {
     def this(params: Alg) = this()
     def this(params: AlgCert) = this()
     def this(params: CertString) = this()
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    override var hL: String = js.native
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    override var hT: String = js.native
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    override var hTLV: String = js.native
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    override var hV: String = js.native
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    override var isModified: String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
-    /**
-      * set value by PEM string of certificate
-      * @param certPEM PEM string of certificate
-      * @description
-      * This method will set value by a PEM string of a certificate.
-      * An algorithm used to hash certificate data will
-      * be defined by 'alg' property and 'sha256' is default.
-      */
-    /* CompleteClass */
-    override def setByCertPEM(certPEM: String): Unit = js.native
   }
   
   /**
@@ -366,41 +235,6 @@ object cades extends js.Object {
   class OtherHashAlgAndValue ()
     extends typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
     def this(params: Alg) = this()
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    override var hL: String = js.native
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    override var hT: String = js.native
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    override var hTLV: String = js.native
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    override var hV: String = js.native
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    override var isModified: String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
   }
   
   /**
@@ -430,41 +264,6 @@ object cades extends js.Object {
   @js.native
   class SignaturePolicyIdentifier () extends Attribute {
     def this(params: Hash) = this()
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    override var hL: String = js.native
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    override var hT: String = js.native
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    override var hTLV: String = js.native
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    override var hV: String = js.native
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    override var isModified: String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
   }
   
   /**
@@ -480,41 +279,6 @@ object cades extends js.Object {
   @js.native
   class SignatureTimeStamp () extends Attribute {
     def this(params: Res) = this()
-    /** hexadecimal string of ASN.1 TLV length(L) */
-    /* CompleteClass */
-    override var hL: String = js.native
-    /** hexadecimal string of ASN.1 TLV tag(T) */
-    /* CompleteClass */
-    override var hT: String = js.native
-    /** hexadecimal string of ASN.1 TLV */
-    /* CompleteClass */
-    override var hTLV: String = js.native
-    /** hexadecimal string of ASN.1 TLV value(V) */
-    /* CompleteClass */
-    override var hV: String = js.native
-    /** flag whether internal data was changed */
-    /* CompleteClass */
-    override var isModified: String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV bytes
-      * @return hexadecimal string of ASN.1 TLV
-      */
-    /* CompleteClass */
-    override def getEncodedHex(): String = js.native
-    /* CompleteClass */
-    override def getFreshValueHex(): String = js.native
-    /**
-      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-      * @return hexadecimal string of ASN.1 TLV length(L)
-      */
-    /* CompleteClass */
-    override def getLengthHexFromValue(): String = js.native
-    /**
-      * get hexadecimal string of ASN.1 TLV value(V) bytes
-      * @return hexadecimal string of ASN.1 TLV value(V) bytes
-      */
-    /* CompleteClass */
-    override def getValueHex(): String = js.native
   }
   
   @js.native

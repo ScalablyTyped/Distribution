@@ -4,50 +4,91 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CardOverrides extends js.Object {
   var Action: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Body: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Contents: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var HeaderImage: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Root: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Thumbnail: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var Title: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object CardOverrides {
   @scala.inline
-  def apply(
-    Action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    Body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    Contents: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    HeaderImage: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    Root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    Thumbnail: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null,
-    Title: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any = null
-  ): CardOverrides = {
+  def apply(): CardOverrides = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (Contents != null) __obj.updateDynamic("Contents")(Contents.asInstanceOf[js.Any])
-    if (HeaderImage != null) __obj.updateDynamic("HeaderImage")(HeaderImage.asInstanceOf[js.Any])
-    if (Root != null) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
-    if (Thumbnail != null) __obj.updateDynamic("Thumbnail")(Thumbnail.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardOverrides]
   }
+  @scala.inline
+  implicit class CardOverridesOps[Self <: CardOverrides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setBody(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setContents(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("Contents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContents: Self = this.set("Contents", js.undefined)
+    @scala.inline
+    def setHeaderImage(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("HeaderImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderImage: Self = this.set("HeaderImage", js.undefined)
+    @scala.inline
+    def setRoot(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("Root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("Root", js.undefined)
+    @scala.inline
+    def setThumbnail(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("Thumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnail: Self = this.set("Thumbnail", js.undefined)
+    @scala.inline
+    def setTitle(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
+    ): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ standalone stripe checkout handler
 | Keywords           | stripe |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7422 |
+| # downloads        | 7453 |
 | # stars            | 0 |
 
 ## Links

@@ -16,12 +16,17 @@ object listViewDemoBasicMod extends js.Object {
     @JSName("state")
     var state_BasicListExample: Layout = js.native
     def onFetch(
-      page: js.UndefOr[Double],
+      page: js.UndefOr[scala.Nothing],
+      startFetch: js.Function2[/* arg0 */ js.Array[String], /* arg1 */ Double, Unit],
+      abortFetch: js.Function0[Unit]
+    ): js.Promise[Unit] = js.native
+    def onFetch(
+      page: Double,
       startFetch: js.Function2[/* arg0 */ js.Array[String], /* arg1 */ Double, Unit],
       abortFetch: js.Function0[Unit]
     ): js.Promise[Unit] = js.native
     def renderItem(item: js.Any): Element = js.native
-    def sleep(time: js.Any): js.Promise[js.Object] = js.native
+    def sleep(time: js.Any): js.Promise[_] = js.native
   }
   
   @js.native

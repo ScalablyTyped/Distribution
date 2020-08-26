@@ -17,12 +17,12 @@ trait GetAlert extends js.Object {
     * The security `alert_id` is found at the end of the security alert's URL. For example, the security alert ID for `https://github.com/Octo-org/octo-repo/security/code-scanning/88` is `88`.
     */
   @JSName("getAlert")
-  var getAlert_Original: `107` = js.native
+  var getAlert_Original: `115` = js.native
   /**
     * Lists all open code scanning alerts for the default branch (usually `master`) and protected branches in a repository. You must use an access token with the `security_events` scope to use this endpoint. GitHub Apps must have the `security_events` read permission to use this endpoint.
     */
   @JSName("listAlertsForRepo")
-  var listAlertsForRepo_Original: `108` = js.native
+  var listAlertsForRepo_Original: `116` = js.native
   /**
     * Gets a single code scanning alert. You must use an access token with the `security_events` scope to use this endpoint. GitHub Apps must have the `security_events` read permission to use this endpoint.
     *

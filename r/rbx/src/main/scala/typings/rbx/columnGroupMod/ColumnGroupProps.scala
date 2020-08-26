@@ -55,158 +55,265 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnGroupProps extends js.Object {
   var backgroundColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-  ] = js.undefined
-  var badge: js.UndefOr[Double | String] = js.undefined
+  ] = js.native
+  var badge: js.UndefOr[Double | String] = js.native
   var badgeColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.undefined
-  var badgeOutlined: js.UndefOr[Boolean] = js.undefined
-  var badgeRounded: js.UndefOr[Boolean] = js.undefined
-  var badgeSize: js.UndefOr[small | medium | large] = js.undefined
-  var breakpoint: js.UndefOr[mobile | tablet | desktop | widescreen | fullhd | touch] = js.undefined
-  var centered: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var clearfix: js.UndefOr[Boolean] = js.undefined
-  var clipped: js.UndefOr[Boolean] = js.undefined
-  var desktop: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
-  var fullhd: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
-  var gapSize: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
-  var gapless: js.UndefOr[Boolean] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var invisible: js.UndefOr[Boolean] = js.undefined
-  var italic: js.UndefOr[Boolean] = js.undefined
-  var marginless: js.UndefOr[Boolean] = js.undefined
-  var mobile: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
-  var multiline: js.UndefOr[Boolean] = js.undefined
-  var overlay: js.UndefOr[Boolean] = js.undefined
-  var paddingless: js.UndefOr[Boolean] = js.undefined
-  var pull: js.UndefOr[left | right] = js.undefined
-  var radiusless: js.UndefOr[Boolean] = js.undefined
-  var relative: js.UndefOr[Boolean] = js.undefined
-  var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
-  var shadowless: js.UndefOr[Boolean] = js.undefined
-  var srOnly: js.UndefOr[Boolean] = js.undefined
-  var tablet: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
-  var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
+  ] = js.native
+  var badgeOutlined: js.UndefOr[Boolean] = js.native
+  var badgeRounded: js.UndefOr[Boolean] = js.native
+  var badgeSize: js.UndefOr[small | medium | large] = js.native
+  var breakpoint: js.UndefOr[mobile | tablet | desktop | widescreen | fullhd | touch] = js.native
+  var centered: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var clearfix: js.UndefOr[Boolean] = js.native
+  var clipped: js.UndefOr[Boolean] = js.native
+  var desktop: js.UndefOr[ColumnGroupBreakpointOptions] = js.native
+  var fullhd: js.UndefOr[ColumnGroupBreakpointOptions] = js.native
+  var gapSize: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.native
+  var gapless: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var invisible: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.native
+  var marginless: js.UndefOr[Boolean] = js.native
+  var mobile: js.UndefOr[ColumnGroupBreakpointOptions] = js.native
+  var multiline: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.native
+  var paddingless: js.UndefOr[Boolean] = js.native
+  var pull: js.UndefOr[left | right] = js.native
+  var radiusless: js.UndefOr[Boolean] = js.native
+  var relative: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+  var shadowless: js.UndefOr[Boolean] = js.native
+  var srOnly: js.UndefOr[Boolean] = js.native
+  var tablet: js.UndefOr[ColumnGroupBreakpointOptions] = js.native
+  var textAlign: js.UndefOr[centered | justified | left | right] = js.native
   var textColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-  ] = js.undefined
-  var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
-  var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
-  var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
-  var tooltip: js.UndefOr[Double | String] = js.undefined
-  var tooltipActive: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
+  var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+  var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+  var tooltip: js.UndefOr[Double | String] = js.native
+  var tooltipActive: js.UndefOr[Boolean] = js.native
   var tooltipColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.undefined
-  var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
-  var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
-  var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.undefined
-  var touch: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
-  var unselectable: js.UndefOr[Boolean] = js.undefined
-  var vcentered: js.UndefOr[Boolean] = js.undefined
-  var widescreen: js.UndefOr[ColumnGroupBreakpointOptions] = js.undefined
+  ] = js.native
+  var tooltipMultiline: js.UndefOr[Boolean] = js.native
+  var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+  var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.native
+  var touch: js.UndefOr[ColumnGroupBreakpointOptions] = js.native
+  var unselectable: js.UndefOr[Boolean] = js.native
+  var vcentered: js.UndefOr[Boolean] = js.native
+  var widescreen: js.UndefOr[ColumnGroupBreakpointOptions] = js.native
 }
 
 object ColumnGroupProps {
   @scala.inline
-  def apply(
-    backgroundColor: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis` = null,
-    badge: Double | String = null,
-    badgeColor: primary | success | info | warning | danger | light | dark | white | black | link = null,
-    badgeOutlined: js.UndefOr[Boolean] = js.undefined,
-    badgeRounded: js.UndefOr[Boolean] = js.undefined,
-    badgeSize: small | medium | large = null,
-    breakpoint: mobile | tablet | desktop | widescreen | fullhd | touch = null,
-    centered: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clearfix: js.UndefOr[Boolean] = js.undefined,
-    clipped: js.UndefOr[Boolean] = js.undefined,
-    desktop: ColumnGroupBreakpointOptions = null,
-    fullhd: ColumnGroupBreakpointOptions = null,
-    gapSize: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` = null,
-    gapless: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    invisible: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    marginless: js.UndefOr[Boolean] = js.undefined,
-    mobile: ColumnGroupBreakpointOptions = null,
-    multiline: js.UndefOr[Boolean] = js.undefined,
-    overlay: js.UndefOr[Boolean] = js.undefined,
-    paddingless: js.UndefOr[Boolean] = js.undefined,
-    pull: left | right = null,
-    radiusless: js.UndefOr[Boolean] = js.undefined,
-    relative: js.UndefOr[Boolean] = js.undefined,
-    responsive: BinVariablesbreakpointsLi = null,
-    shadowless: js.UndefOr[Boolean] = js.undefined,
-    srOnly: js.UndefOr[Boolean] = js.undefined,
-    tablet: ColumnGroupBreakpointOptions = null,
-    textAlign: centered | justified | left | right = null,
-    textColor: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis` = null,
-    textSize: `1` | `2` | `3` | `4` | `5` | `6` | `7` = null,
-    textTransform: capitalized | lowercase | uppercase = null,
-    textWeight: light | medium | normal | semibold | bold = null,
-    tooltip: Double | String = null,
-    tooltipActive: js.UndefOr[Boolean] = js.undefined,
-    tooltipColor: primary | success | info | warning | danger | light | dark | white | black | link = null,
-    tooltipMultiline: js.UndefOr[Boolean] = js.undefined,
-    tooltipPosition: top | right | bottom | left = null,
-    tooltipResponsive: KinVariablesbreakpointsto = null,
-    touch: ColumnGroupBreakpointOptions = null,
-    unselectable: js.UndefOr[Boolean] = js.undefined,
-    vcentered: js.UndefOr[Boolean] = js.undefined,
-    widescreen: ColumnGroupBreakpointOptions = null
-  ): ColumnGroupProps = {
+  def apply(): ColumnGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(badgeOutlined)) __obj.updateDynamic("badgeOutlined")(badgeOutlined.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(badgeRounded)) __obj.updateDynamic("badgeRounded")(badgeRounded.get.asInstanceOf[js.Any])
-    if (badgeSize != null) __obj.updateDynamic("badgeSize")(badgeSize.asInstanceOf[js.Any])
-    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearfix)) __obj.updateDynamic("clearfix")(clearfix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipped)) __obj.updateDynamic("clipped")(clipped.get.asInstanceOf[js.Any])
-    if (desktop != null) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (fullhd != null) __obj.updateDynamic("fullhd")(fullhd.asInstanceOf[js.Any])
-    if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(gapless)) __obj.updateDynamic("gapless")(gapless.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginless)) __obj.updateDynamic("marginless")(marginless.get.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paddingless)) __obj.updateDynamic("paddingless")(paddingless.get.asInstanceOf[js.Any])
-    if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
-    if (!js.isUndefined(radiusless)) __obj.updateDynamic("radiusless")(radiusless.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.get.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowless)) __obj.updateDynamic("shadowless")(shadowless.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(srOnly)) __obj.updateDynamic("srOnly")(srOnly.get.asInstanceOf[js.Any])
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
-    if (textTransform != null) __obj.updateDynamic("textTransform")(textTransform.asInstanceOf[js.Any])
-    if (textWeight != null) __obj.updateDynamic("textWeight")(textWeight.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipActive)) __obj.updateDynamic("tooltipActive")(tooltipActive.get.asInstanceOf[js.Any])
-    if (tooltipColor != null) __obj.updateDynamic("tooltipColor")(tooltipColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(tooltipMultiline)) __obj.updateDynamic("tooltipMultiline")(tooltipMultiline.get.asInstanceOf[js.Any])
-    if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition.asInstanceOf[js.Any])
-    if (tooltipResponsive != null) __obj.updateDynamic("tooltipResponsive")(tooltipResponsive.asInstanceOf[js.Any])
-    if (touch != null) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vcentered)) __obj.updateDynamic("vcentered")(vcentered.get.asInstanceOf[js.Any])
-    if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnGroupProps]
   }
+  @scala.inline
+  implicit class ColumnGroupPropsOps[Self <: ColumnGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(
+      value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
+    ): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBadge(value: Double | String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("badgeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeColor: Self = this.set("badgeColor", js.undefined)
+    @scala.inline
+    def setBadgeOutlined(value: Boolean): Self = this.set("badgeOutlined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeOutlined: Self = this.set("badgeOutlined", js.undefined)
+    @scala.inline
+    def setBadgeRounded(value: Boolean): Self = this.set("badgeRounded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeRounded: Self = this.set("badgeRounded", js.undefined)
+    @scala.inline
+    def setBadgeSize(value: small | medium | large): Self = this.set("badgeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeSize: Self = this.set("badgeSize", js.undefined)
+    @scala.inline
+    def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = this.set("breakpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakpoint: Self = this.set("breakpoint", js.undefined)
+    @scala.inline
+    def setCentered(value: Boolean): Self = this.set("centered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCentered: Self = this.set("centered", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearfix(value: Boolean): Self = this.set("clearfix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearfix: Self = this.set("clearfix", js.undefined)
+    @scala.inline
+    def setClipped(value: Boolean): Self = this.set("clipped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClipped: Self = this.set("clipped", js.undefined)
+    @scala.inline
+    def setDesktop(value: ColumnGroupBreakpointOptions): Self = this.set("desktop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesktop: Self = this.set("desktop", js.undefined)
+    @scala.inline
+    def setFullhd(value: ColumnGroupBreakpointOptions): Self = this.set("fullhd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullhd: Self = this.set("fullhd", js.undefined)
+    @scala.inline
+    def setGapSize(value: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = this.set("gapSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGapSize: Self = this.set("gapSize", js.undefined)
+    @scala.inline
+    def setGapless(value: Boolean): Self = this.set("gapless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGapless: Self = this.set("gapless", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setInvisible(value: Boolean): Self = this.set("invisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvisible: Self = this.set("invisible", js.undefined)
+    @scala.inline
+    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItalic: Self = this.set("italic", js.undefined)
+    @scala.inline
+    def setMarginless(value: Boolean): Self = this.set("marginless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginless: Self = this.set("marginless", js.undefined)
+    @scala.inline
+    def setMobile(value: ColumnGroupBreakpointOptions): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobile: Self = this.set("mobile", js.undefined)
+    @scala.inline
+    def setMultiline(value: Boolean): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    @scala.inline
+    def setOverlay(value: Boolean): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setPaddingless(value: Boolean): Self = this.set("paddingless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaddingless: Self = this.set("paddingless", js.undefined)
+    @scala.inline
+    def setPull(value: left | right): Self = this.set("pull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePull: Self = this.set("pull", js.undefined)
+    @scala.inline
+    def setRadiusless(value: Boolean): Self = this.set("radiusless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusless: Self = this.set("radiusless", js.undefined)
+    @scala.inline
+    def setRelative(value: Boolean): Self = this.set("relative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelative: Self = this.set("relative", js.undefined)
+    @scala.inline
+    def setResponsive(value: BinVariablesbreakpointsLi): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setShadowless(value: Boolean): Self = this.set("shadowless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadowless: Self = this.set("shadowless", js.undefined)
+    @scala.inline
+    def setSrOnly(value: Boolean): Self = this.set("srOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrOnly: Self = this.set("srOnly", js.undefined)
+    @scala.inline
+    def setTablet(value: ColumnGroupBreakpointOptions): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTablet: Self = this.set("tablet", js.undefined)
+    @scala.inline
+    def setTextAlign(value: centered | justified | left | right): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setTextColor(
+      value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
+    ): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    @scala.inline
+    def setTextSize(value: `1` | `2` | `3` | `4` | `5` | `6` | `7`): Self = this.set("textSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextSize: Self = this.set("textSize", js.undefined)
+    @scala.inline
+    def setTextTransform(value: capitalized | lowercase | uppercase): Self = this.set("textTransform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextTransform: Self = this.set("textTransform", js.undefined)
+    @scala.inline
+    def setTextWeight(value: light | medium | normal | semibold | bold): Self = this.set("textWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextWeight: Self = this.set("textWeight", js.undefined)
+    @scala.inline
+    def setTooltip(value: Double | String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTooltipActive(value: Boolean): Self = this.set("tooltipActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipActive: Self = this.set("tooltipActive", js.undefined)
+    @scala.inline
+    def setTooltipColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("tooltipColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipColor: Self = this.set("tooltipColor", js.undefined)
+    @scala.inline
+    def setTooltipMultiline(value: Boolean): Self = this.set("tooltipMultiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipMultiline: Self = this.set("tooltipMultiline", js.undefined)
+    @scala.inline
+    def setTooltipPosition(value: top | right | bottom | left): Self = this.set("tooltipPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipPosition: Self = this.set("tooltipPosition", js.undefined)
+    @scala.inline
+    def setTooltipResponsive(value: KinVariablesbreakpointsto): Self = this.set("tooltipResponsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltipResponsive: Self = this.set("tooltipResponsive", js.undefined)
+    @scala.inline
+    def setTouch(value: ColumnGroupBreakpointOptions): Self = this.set("touch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouch: Self = this.set("touch", js.undefined)
+    @scala.inline
+    def setUnselectable(value: Boolean): Self = this.set("unselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectable: Self = this.set("unselectable", js.undefined)
+    @scala.inline
+    def setVcentered(value: Boolean): Self = this.set("vcentered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVcentered: Self = this.set("vcentered", js.undefined)
+    @scala.inline
+    def setWidescreen(value: ColumnGroupBreakpointOptions): Self = this.set("widescreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidescreen: Self = this.set("widescreen", js.undefined)
+  }
+  
 }
 

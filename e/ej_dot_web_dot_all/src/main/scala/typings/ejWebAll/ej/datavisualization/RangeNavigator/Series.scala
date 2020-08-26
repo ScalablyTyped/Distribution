@@ -4,51 +4,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Series extends js.Object {
   /** Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
     * @Default {null}
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[js.Any] = js.native
   /** Enable/disable the animation of series.
     * @Default {false}
     */
-  var enableAnimation: js.UndefOr[Boolean] = js.undefined
+  var enableAnimation: js.UndefOr[Boolean] = js.native
   /** Fill color of the series.
     * @Default {null}
     */
-  var fill: js.UndefOr[String] = js.undefined
+  var fill: js.UndefOr[String] = js.native
   /** Specifies the type of the series to render in chart.
     * @Default {column. see Type}
     */
-  var `type`: js.UndefOr[Type | String] = js.undefined
+  var `type`: js.UndefOr[Type | String] = js.native
   /** Name of the property in the datasource that contains x value for the series.
     * @Default {null}
     */
-  var xName: js.UndefOr[String] = js.undefined
+  var xName: js.UndefOr[String] = js.native
   /** Name of the property in the datasource that contains y value for the series.
     * @Default {null}
     */
-  var yName: js.UndefOr[String] = js.undefined
+  var yName: js.UndefOr[String] = js.native
 }
 
 object Series {
   @scala.inline
-  def apply(
-    dataSource: js.Any = null,
-    enableAnimation: js.UndefOr[Boolean] = js.undefined,
-    fill: String = null,
-    `type`: Type | String = null,
-    xName: String = null,
-    yName: String = null
-  ): Series = {
+  def apply(): Series = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation.get.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xName != null) __obj.updateDynamic("xName")(xName.asInstanceOf[js.Any])
-    if (yName != null) __obj.updateDynamic("yName")(yName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Series]
   }
+  @scala.inline
+  implicit class SeriesOps[Self <: Series] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setEnableAnimation(value: Boolean): Self = this.set("enableAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableAnimation: Self = this.set("enableAnimation", js.undefined)
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setType(value: Type | String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setXName(value: String): Self = this.set("xName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXName: Self = this.set("xName", js.undefined)
+    @scala.inline
+    def setYName(value: String): Self = this.set("yName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYName: Self = this.set("yName", js.undefined)
+  }
+  
 }
 

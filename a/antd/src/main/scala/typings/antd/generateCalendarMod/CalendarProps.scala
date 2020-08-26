@@ -8,69 +8,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CalendarProps[DateType] extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var dateCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
-  var dateFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
-  var defaultValue: js.UndefOr[DateType] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
-  var fullscreen: js.UndefOr[Boolean] = js.undefined
-  var headerRender: js.UndefOr[HeaderRender[DateType]] = js.undefined
-  var locale: js.UndefOr[PickerLocale] = js.undefined
-  var mode: js.UndefOr[CalendarMode] = js.undefined
-  var monthCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
-  var monthFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
-  var onPanelChange: js.UndefOr[js.Function2[/* date */ DateType, /* mode */ CalendarMode, Unit]] = js.undefined
-  var onSelect: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var validRange: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
-  var value: js.UndefOr[DateType] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var dateCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+  var dateFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+  var defaultValue: js.UndefOr[DateType] = js.native
+  var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.native
+  var headerRender: js.UndefOr[HeaderRender[DateType]] = js.native
+  var locale: js.UndefOr[PickerLocale] = js.native
+  var mode: js.UndefOr[CalendarMode] = js.native
+  var monthCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+  var monthFullCellRender: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+  var onPanelChange: js.UndefOr[js.Function2[/* date */ DateType, /* mode */ CalendarMode, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* date */ DateType, Unit]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var validRange: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+  var value: js.UndefOr[DateType] = js.native
 }
 
 object CalendarProps {
   @scala.inline
-  def apply[DateType](
-    className: String = null,
-    dateCellRender: /* date */ DateType => ReactNode = null,
-    dateFullCellRender: /* date */ DateType => ReactNode = null,
-    defaultValue: DateType = null,
-    disabledDate: /* date */ DateType => Boolean = null,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    headerRender: /* config */ OnChange[DateType] => ReactNode = null,
-    locale: PickerLocale = null,
-    mode: CalendarMode = null,
-    monthCellRender: /* date */ DateType => ReactNode = null,
-    monthFullCellRender: /* date */ DateType => ReactNode = null,
-    onChange: /* date */ DateType => Unit = null,
-    onPanelChange: (/* date */ DateType, /* mode */ CalendarMode) => Unit = null,
-    onSelect: /* date */ DateType => Unit = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    validRange: js.Tuple2[DateType, DateType] = null,
-    value: DateType = null
-  ): CalendarProps[DateType] = {
+  def apply[DateType](): CalendarProps[DateType] = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (dateCellRender != null) __obj.updateDynamic("dateCellRender")(js.Any.fromFunction1(dateCellRender))
-    if (dateFullCellRender != null) __obj.updateDynamic("dateFullCellRender")(js.Any.fromFunction1(dateFullCellRender))
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.get.asInstanceOf[js.Any])
-    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1(headerRender))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction1(monthCellRender))
-    if (monthFullCellRender != null) __obj.updateDynamic("monthFullCellRender")(js.Any.fromFunction1(monthFullCellRender))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2(onPanelChange))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (validRange != null) __obj.updateDynamic("validRange")(validRange.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarProps[DateType]]
   }
+  @scala.inline
+  implicit class CalendarPropsOps[Self <: CalendarProps[_], DateType] (val x: Self with CalendarProps[DateType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDateCellRender(value: /* date */ DateType => ReactNode): Self = this.set("dateCellRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateCellRender: Self = this.set("dateCellRender", js.undefined)
+    @scala.inline
+    def setDateFullCellRender(value: /* date */ DateType => ReactNode): Self = this.set("dateFullCellRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateFullCellRender: Self = this.set("dateFullCellRender", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: DateType): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabledDate(value: /* date */ DateType => Boolean): Self = this.set("disabledDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDisabledDate: Self = this.set("disabledDate", js.undefined)
+    @scala.inline
+    def setFullscreen(value: Boolean): Self = this.set("fullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullscreen: Self = this.set("fullscreen", js.undefined)
+    @scala.inline
+    def setHeaderRender(value: /* config */ OnChange[DateType] => ReactNode): Self = this.set("headerRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteHeaderRender: Self = this.set("headerRender", js.undefined)
+    @scala.inline
+    def setLocale(value: PickerLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMode(value: CalendarMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setMonthCellRender(value: /* date */ DateType => ReactNode): Self = this.set("monthCellRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMonthCellRender: Self = this.set("monthCellRender", js.undefined)
+    @scala.inline
+    def setMonthFullCellRender(value: /* date */ DateType => ReactNode): Self = this.set("monthFullCellRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMonthFullCellRender: Self = this.set("monthFullCellRender", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* date */ DateType => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnPanelChange(value: (/* date */ DateType, /* mode */ CalendarMode) => Unit): Self = this.set("onPanelChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnPanelChange: Self = this.set("onPanelChange", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* date */ DateType => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setValidRange(value: js.Tuple2[DateType, DateType]): Self = this.set("validRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidRange: Self = this.set("validRange", js.undefined)
+    @scala.inline
+    def setValue(value: DateType): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

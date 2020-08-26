@@ -20,13 +20,17 @@ trait RibbonGenerator[This, RibbonDatum, RibbonSubgroupDatum] extends js.Object 
     */
   def apply(d: RibbonDatum, args: js.Any*): String | Null = js.native
   /**
+    * Returns the current rendering context, which defaults to null.
+    */
+  def context(): CanvasRenderingContext2D | Null = js.native
+  /**
     * Sets the rendering context to null and returns this ribbon generator.
     *
     * A path data string representing the generated ribbon will be returned when the generator is invoked with data. See also d3-path.
     *
     * @param context null, to remove rendering context.
     */
-  def context(): this.type = js.native
+  def context(context: Null): this.type = js.native
   /**
     * Sets the rendering context and returns this ribbon generator.
     *
@@ -35,11 +39,6 @@ trait RibbonGenerator[This, RibbonDatum, RibbonSubgroupDatum] extends js.Object 
     * @param context The rendering context.
     */
   def context(context: CanvasRenderingContext2D): this.type = js.native
-  /**
-    * Returns the current rendering context, which defaults to null.
-    */
-  @JSName("context")
-  def context_Union(): CanvasRenderingContext2D | Null = js.native
   /**
     * Returns the current end angle accessor, which defaults to a function returning the "endAngle" property (assumed to be a number in radians) of the source or
     * target object returned by the source or target accessor, respectively.

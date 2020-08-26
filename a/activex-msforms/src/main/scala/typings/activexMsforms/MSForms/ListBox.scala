@@ -50,6 +50,7 @@ trait ListBox extends js.Object {
   var Value: js.Any = js.native
   val _Font_Reserved: NewFont = js.native
   def AddItem(): Unit = js.native
+  def AddItem(pvargItem: js.UndefOr[scala.Nothing], pvargIndex: js.Any): Unit = js.native
   def AddItem(pvargItem: js.Any): Unit = js.native
   def AddItem(pvargItem: js.Any, pvargIndex: js.Any): Unit = js.native
   def Clear(): Unit = js.native

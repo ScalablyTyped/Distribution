@@ -24,11 +24,32 @@ trait SchemaListQueuesResponse extends js.Object {
 
 object SchemaListQueuesResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, queues: js.Array[SchemaQueue] = null): SchemaListQueuesResponse = {
+  def apply(): SchemaListQueuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (queues != null) __obj.updateDynamic("queues")(queues.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListQueuesResponse]
   }
+  @scala.inline
+  implicit class SchemaListQueuesResponseOps[Self <: SchemaListQueuesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setQueuesVarargs(value: SchemaQueue*): Self = this.set("queues", js.Array(value :_*))
+    @scala.inline
+    def setQueues(value: js.Array[SchemaQueue]): Self = this.set("queues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueues: Self = this.set("queues", js.undefined)
+  }
+  
 }
 

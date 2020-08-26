@@ -26,16 +26,36 @@ trait EntityRecognizerInputDataConfig extends js.Object {
 
 object EntityRecognizerInputDataConfig {
   @scala.inline
-  def apply(
-    Documents: EntityRecognizerDocuments,
-    EntityTypes: EntityTypesList,
-    Annotations: EntityRecognizerAnnotations = null,
-    EntityList: EntityRecognizerEntityList = null
-  ): EntityRecognizerInputDataConfig = {
+  def apply(Documents: EntityRecognizerDocuments, EntityTypes: EntityTypesList): EntityRecognizerInputDataConfig = {
     val __obj = js.Dynamic.literal(Documents = Documents.asInstanceOf[js.Any], EntityTypes = EntityTypes.asInstanceOf[js.Any])
-    if (Annotations != null) __obj.updateDynamic("Annotations")(Annotations.asInstanceOf[js.Any])
-    if (EntityList != null) __obj.updateDynamic("EntityList")(EntityList.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityRecognizerInputDataConfig]
   }
+  @scala.inline
+  implicit class EntityRecognizerInputDataConfigOps[Self <: EntityRecognizerInputDataConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocuments(value: EntityRecognizerDocuments): Self = this.set("Documents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEntityTypesVarargs(value: EntityTypesListItem*): Self = this.set("EntityTypes", js.Array(value :_*))
+    @scala.inline
+    def setEntityTypes(value: EntityTypesList): Self = this.set("EntityTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnnotations(value: EntityRecognizerAnnotations): Self = this.set("Annotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotations: Self = this.set("Annotations", js.undefined)
+    @scala.inline
+    def setEntityList(value: EntityRecognizerEntityList): Self = this.set("EntityList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityList: Self = this.set("EntityList", js.undefined)
+  }
+  
 }
 

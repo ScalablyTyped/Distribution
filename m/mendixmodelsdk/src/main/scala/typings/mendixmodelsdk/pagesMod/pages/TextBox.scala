@@ -33,23 +33,28 @@ class TextBox protected () extends TextWidget {
     * In version 8.10.0: introduced
     */
   def autocomplete: Boolean = js.native
-  def autocomplete(newValue: Boolean): js.Any = js.native
+  /**
+    * In version 8.12.0: introduced
+    */
+  def autocompletePurpose: AutocompletePurposeType = js.native
+  def autocompletePurpose_=(newValue: AutocompletePurposeType): Unit = js.native
+  def autocomplete_=(newValue: Boolean): Unit = js.native
   def formattingInfo: FormattingInfo = js.native
-  def formattingInfo(newValue: FormattingInfo): js.Any = js.native
+  def formattingInfo_=(newValue: FormattingInfo): Unit = js.native
   def inputMask: String = js.native
-  def inputMask(newValue: String): js.Any = js.native
+  def inputMask_=(newValue: String): Unit = js.native
   def isPasswordBox: Boolean = js.native
-  def isPasswordBox(newValue: Boolean): js.Any = js.native
+  def isPasswordBox_=(newValue: Boolean): Unit = js.native
   /**
     * In version 8.0.0: introduced
     */
   def keyboardType: KeyboardType = js.native
-  def keyboardType(newValue: KeyboardType): js.Any = js.native
+  def keyboardType_=(newValue: KeyboardType): Unit = js.native
   /**
     * In version 8.7.0: introduced
     */
   def onEnterKeyPressAction: ClientAction = js.native
-  def onEnterKeyPressAction(newValue: ClientAction): js.Any = js.native
+  def onEnterKeyPressAction_=(newValue: ClientAction): Unit = js.native
 }
 
 /* static members */

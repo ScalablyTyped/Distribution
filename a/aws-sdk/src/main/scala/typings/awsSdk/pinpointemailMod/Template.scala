@@ -18,11 +18,30 @@ trait Template extends js.Object {
 
 object Template {
   @scala.inline
-  def apply(TemplateArn: TemplateArn = null, TemplateData: TemplateData = null): Template = {
+  def apply(): Template = {
     val __obj = js.Dynamic.literal()
-    if (TemplateArn != null) __obj.updateDynamic("TemplateArn")(TemplateArn.asInstanceOf[js.Any])
-    if (TemplateData != null) __obj.updateDynamic("TemplateData")(TemplateData.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
+  @scala.inline
+  implicit class TemplateOps[Self <: Template] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTemplateArn(value: TemplateArn): Self = this.set("TemplateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateArn: Self = this.set("TemplateArn", js.undefined)
+    @scala.inline
+    def setTemplateData(value: TemplateData): Self = this.set("TemplateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateData: Self = this.set("TemplateData", js.undefined)
+  }
+  
 }
 

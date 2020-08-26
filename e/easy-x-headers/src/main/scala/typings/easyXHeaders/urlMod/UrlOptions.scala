@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UrlOptions extends js.Object {
-  var auth: js.UndefOr[String] = js.undefined
-  var hash: js.UndefOr[String] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var hostname: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var pathname: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[String] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var query: js.UndefOr[js.Any] = js.undefined
-  var search: js.UndefOr[String] = js.undefined
+  var auth: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var pathname: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var query: js.UndefOr[js.Any] = js.native
+  var search: js.UndefOr[String] = js.native
 }
 
 object UrlOptions {
   @scala.inline
-  def apply(
-    auth: String = null,
-    hash: String = null,
-    host: String = null,
-    hostname: String = null,
-    path: String = null,
-    pathname: String = null,
-    port: String = null,
-    protocol: String = null,
-    query: js.Any = null,
-    search: String = null
-  ): UrlOptions = {
+  def apply(): UrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlOptions]
   }
+  @scala.inline
+  implicit class UrlOptionsOps[Self <: UrlOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPathname(value: String): Self = this.set("pathname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathname: Self = this.set("pathname", js.undefined)
+    @scala.inline
+    def setPort(value: String): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ The lodash method `_.gt` exported as a module.
 | Keywords           | lodash-modularized, gt |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 79047 |
+| # downloads        | 78541 |
 | # stars            | 0 |
 
 ## Links

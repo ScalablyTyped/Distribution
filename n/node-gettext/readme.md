@@ -12,7 +12,7 @@ A JavaScript implementation of gettext, a localization framework
 | Keywords           | i18n, l10n, internationalization, localization, translation, gettext |
 | # releases         | 1 |
 | # dependents       | 31 |
-| # downloads        | 993306 |
+| # downloads        | 1009056 |
 | # stars            | 5 |
 
 ## Links

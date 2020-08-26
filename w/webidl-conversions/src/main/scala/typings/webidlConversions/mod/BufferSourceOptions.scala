@@ -4,18 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BufferSourceOptions extends Options {
-  var allowShared: js.UndefOr[Boolean] = js.undefined
+  var allowShared: js.UndefOr[Boolean] = js.native
 }
 
 object BufferSourceOptions {
   @scala.inline
-  def apply(allowShared: js.UndefOr[Boolean] = js.undefined, context: String = null, globals: Globals = null): BufferSourceOptions = {
+  def apply(): BufferSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowShared)) __obj.updateDynamic("allowShared")(allowShared.get.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferSourceOptions]
   }
+  @scala.inline
+  implicit class BufferSourceOptionsOps[Self <: BufferSourceOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowShared(value: Boolean): Self = this.set("allowShared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowShared: Self = this.set("allowShared", js.undefined)
+  }
+  
 }
 

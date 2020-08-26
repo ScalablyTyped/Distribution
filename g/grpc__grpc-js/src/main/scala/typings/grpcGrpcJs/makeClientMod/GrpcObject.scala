@@ -5,15 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GrpcObject extends /* index */ StringDictionary[GrpcObject | ServiceClientConstructor | ProtobufTypeDefinition]
 
 object GrpcObject {
   @scala.inline
-  def apply(
-    StringDictionary: /* index */ StringDictionary[GrpcObject | ServiceClientConstructor | ProtobufTypeDefinition] = null
-  ): GrpcObject = {
+  def apply(): GrpcObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[GrpcObject]
   }
 }

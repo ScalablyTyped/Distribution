@@ -14,10 +14,26 @@ trait StreamProcessorSettings extends js.Object {
 
 object StreamProcessorSettings {
   @scala.inline
-  def apply(FaceSearch: FaceSearchSettings = null): StreamProcessorSettings = {
+  def apply(): StreamProcessorSettings = {
     val __obj = js.Dynamic.literal()
-    if (FaceSearch != null) __obj.updateDynamic("FaceSearch")(FaceSearch.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamProcessorSettings]
   }
+  @scala.inline
+  implicit class StreamProcessorSettingsOps[Self <: StreamProcessorSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceSearch(value: FaceSearchSettings): Self = this.set("FaceSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceSearch: Self = this.set("FaceSearch", js.undefined)
+  }
+  
 }
 

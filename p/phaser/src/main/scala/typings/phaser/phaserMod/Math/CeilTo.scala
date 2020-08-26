@@ -17,6 +17,7 @@ object CeilTo extends js.Object {
     * @param base The base to round in. Default is 10 for decimal. Default 10.
     */
   def apply(value: Double): Double = js.native
+  def apply(value: Double, place: js.UndefOr[scala.Nothing], base: integer): Double = js.native
   def apply(value: Double, place: Double): Double = js.native
   def apply(value: Double, place: Double, base: integer): Double = js.native
 }

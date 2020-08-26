@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ProxyConfig extends js.Object {
   /**
     * 'direct' = Never use a proxy
@@ -12,24 +13,41 @@ trait ProxyConfig extends js.Object {
     * 'fixed_servers' = Manually specify proxy servers
     * 'system' = Use system proxy settings
     */
-  var mode: String
+  var mode: String = js.native
   /** Optional. The proxy auto-config (PAC) script for this configuration. Use this for 'pac_script' mode. */
-  var pacScript: js.UndefOr[typings.chrome.chrome.proxy.PacScript] = js.undefined
+  var pacScript: js.UndefOr[typings.chrome.chrome.proxy.PacScript] = js.native
   /** Optional. The proxy rules describing this configuration. Use this for 'fixed_servers' mode. */
-  var rules: js.UndefOr[typings.chrome.chrome.proxy.ProxyRules] = js.undefined
+  var rules: js.UndefOr[typings.chrome.chrome.proxy.ProxyRules] = js.native
 }
 
 object ProxyConfig {
   @scala.inline
-  def apply(
-    mode: String,
-    pacScript: typings.chrome.chrome.proxy.PacScript = null,
-    rules: typings.chrome.chrome.proxy.ProxyRules = null
-  ): ProxyConfig = {
+  def apply(mode: String): ProxyConfig = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (pacScript != null) __obj.updateDynamic("pacScript")(pacScript.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfig]
   }
+  @scala.inline
+  implicit class ProxyConfigOps[Self <: ProxyConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPacScript(value: typings.chrome.chrome.proxy.PacScript): Self = this.set("pacScript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePacScript: Self = this.set("pacScript", js.undefined)
+    @scala.inline
+    def setRules(value: typings.chrome.chrome.proxy.ProxyRules): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+  }
+  
 }
 

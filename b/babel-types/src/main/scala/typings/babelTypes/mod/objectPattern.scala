@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectPattern extends js.Object {
   def apply(): ObjectPattern_ = js.native
+  def apply(properties: js.UndefOr[scala.Nothing], typeAnnotation: TypeAnnotation_): ObjectPattern_ = js.native
   def apply(properties: js.Array[AssignmentProperty | RestProperty_]): ObjectPattern_ = js.native
   def apply(properties: js.Array[AssignmentProperty | RestProperty_], typeAnnotation: TypeAnnotation_): ObjectPattern_ = js.native
 }

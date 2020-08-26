@@ -25,7 +25,7 @@ package object mod {
     java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double]) | typings.jss.jssStrings.Exclamationmarkimportant
   ]) | scala.Null | typings.jss.jssBooleans.`false`
   type Keyframes[Name /* <: java.lang.String */] = typings.std.Record[Name, java.lang.String]
-  type NormalCssProperties = typings.csstype.mod.Properties[java.lang.String | scala.Double]
+  type NormalCssProperties = typings.csstype.mod.Properties[java.lang.String | scala.Double, java.lang.String with js.Object]
   type NormalCssValues[K] = typings.jss.mod.JssValue | (/* import warning: importer.ImportType#apply Failed type conversion: jss.jss.NormalCssProperties[K] */ js.Any)
   type Styles[Name /* <: java.lang.String | scala.Double | js.Symbol */] = typings.std.Record[
     Name, 

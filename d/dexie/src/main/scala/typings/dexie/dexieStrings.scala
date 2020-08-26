@@ -10,6 +10,9 @@ object dexieStrings {
   sealed trait AbortError extends js.Object
   
   @js.native
+  sealed trait BulkError extends js.Object
+  
+  @js.native
   sealed trait ConstraintError extends js.Object
   
   @js.native
@@ -22,7 +25,10 @@ object dexieStrings {
   sealed trait DatabaseClosedError extends js.Object
   
   @js.native
-  sealed trait Error extends js.Object
+  sealed trait DexieError extends js.Object
+  
+  @js.native
+  sealed trait ForeignAwaitError extends js.Object
   
   @js.native
   sealed trait InternalError extends js.Object
@@ -55,7 +61,7 @@ object dexieStrings {
   sealed trait OpenFailedError extends js.Object
   
   @js.native
-  sealed trait Promise extends js.Object
+  sealed trait PrematureCommitError extends js.Object
   
   @js.native
   sealed trait QuotaExceededError extends js.Object
@@ -67,7 +73,7 @@ object dexieStrings {
   sealed trait SchemaError extends js.Object
   
   @js.native
-  sealed trait SyntaxError extends js.Object
+  sealed trait SubTransactionError extends js.Object
   
   @js.native
   sealed trait TimeoutError extends js.Object
@@ -94,6 +100,9 @@ object dexieStrings {
   sealed trait abort extends js.Object
   
   @js.native
+  sealed trait add extends js.Object
+  
+  @js.native
   sealed trait asap extends js.Object
   
   @js.native
@@ -106,13 +115,25 @@ object dexieStrings {
   sealed trait creating extends js.Object
   
   @js.native
+  sealed trait dbcore extends js.Object
+  
+  @js.native
+  sealed trait delete extends js.Object
+  
+  @js.native
+  sealed trait deleteRange extends js.Object
+  
+  @js.native
   sealed trait deleting extends js.Object
   
   @js.native
-  sealed trait error_ extends js.Object
+  sealed trait error extends js.Object
   
   @js.native
   sealed trait populate extends js.Object
+  
+  @js.native
+  sealed trait put extends js.Object
   
   @js.native
   sealed trait r extends TransactionMode
@@ -125,6 +146,12 @@ object dexieStrings {
   
   @js.native
   sealed trait reading extends js.Object
+  
+  @js.native
+  sealed trait readonly extends TransactionMode
+  
+  @js.native
+  sealed trait readwrite extends TransactionMode
   
   @js.native
   sealed trait ready extends js.Object
@@ -147,6 +174,8 @@ object dexieStrings {
   @scala.inline
   def AbortError: AbortError = "AbortError".asInstanceOf[AbortError]
   @scala.inline
+  def BulkError: BulkError = "BulkError".asInstanceOf[BulkError]
+  @scala.inline
   def ConstraintError: ConstraintError = "ConstraintError".asInstanceOf[ConstraintError]
   @scala.inline
   def DataCloneError: DataCloneError = "DataCloneError".asInstanceOf[DataCloneError]
@@ -155,7 +184,9 @@ object dexieStrings {
   @scala.inline
   def DatabaseClosedError: DatabaseClosedError = "DatabaseClosedError".asInstanceOf[DatabaseClosedError]
   @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
+  def DexieError: DexieError = "DexieError".asInstanceOf[DexieError]
+  @scala.inline
+  def ForeignAwaitError: ForeignAwaitError = "ForeignAwaitError".asInstanceOf[ForeignAwaitError]
   @scala.inline
   def InternalError: InternalError = "InternalError".asInstanceOf[InternalError]
   @scala.inline
@@ -177,7 +208,7 @@ object dexieStrings {
   @scala.inline
   def OpenFailedError: OpenFailedError = "OpenFailedError".asInstanceOf[OpenFailedError]
   @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
+  def PrematureCommitError: PrematureCommitError = "PrematureCommitError".asInstanceOf[PrematureCommitError]
   @scala.inline
   def QuotaExceededError: QuotaExceededError = "QuotaExceededError".asInstanceOf[QuotaExceededError]
   @scala.inline
@@ -185,7 +216,7 @@ object dexieStrings {
   @scala.inline
   def SchemaError: SchemaError = "SchemaError".asInstanceOf[SchemaError]
   @scala.inline
-  def SyntaxError: SyntaxError = "SyntaxError".asInstanceOf[SyntaxError]
+  def SubTransactionError: SubTransactionError = "SubTransactionError".asInstanceOf[SubTransactionError]
   @scala.inline
   def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
   @scala.inline
@@ -203,6 +234,8 @@ object dexieStrings {
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
+  def add: add = "add".asInstanceOf[add]
+  @scala.inline
   def asap: asap = "asap".asInstanceOf[asap]
   @scala.inline
   def blocked: blocked = "blocked".asInstanceOf[blocked]
@@ -211,11 +244,19 @@ object dexieStrings {
   @scala.inline
   def creating: creating = "creating".asInstanceOf[creating]
   @scala.inline
+  def dbcore: dbcore = "dbcore".asInstanceOf[dbcore]
+  @scala.inline
+  def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
+  def deleteRange: deleteRange = "deleteRange".asInstanceOf[deleteRange]
+  @scala.inline
   def deleting: deleting = "deleting".asInstanceOf[deleting]
   @scala.inline
-  def error_ : error_ = "error".asInstanceOf[error_]
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def populate: populate = "populate".asInstanceOf[populate]
+  @scala.inline
+  def put: put = "put".asInstanceOf[put]
   @scala.inline
   def r: r = "r".asInstanceOf[r]
   @scala.inline
@@ -224,6 +265,10 @@ object dexieStrings {
   def rQuestionmark: rQuestionmark = "r?".asInstanceOf[rQuestionmark]
   @scala.inline
   def reading: reading = "reading".asInstanceOf[reading]
+  @scala.inline
+  def readonly: readonly = "readonly".asInstanceOf[readonly]
+  @scala.inline
+  def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   @scala.inline

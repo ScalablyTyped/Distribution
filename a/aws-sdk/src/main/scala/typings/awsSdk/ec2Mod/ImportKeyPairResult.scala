@@ -26,18 +26,40 @@ trait ImportKeyPairResult extends js.Object {
 
 object ImportKeyPairResult {
   @scala.inline
-  def apply(
-    KeyFingerprint: String = null,
-    KeyName: String = null,
-    KeyPairId: String = null,
-    Tags: TagList = null
-  ): ImportKeyPairResult = {
+  def apply(): ImportKeyPairResult = {
     val __obj = js.Dynamic.literal()
-    if (KeyFingerprint != null) __obj.updateDynamic("KeyFingerprint")(KeyFingerprint.asInstanceOf[js.Any])
-    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])
-    if (KeyPairId != null) __obj.updateDynamic("KeyPairId")(KeyPairId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportKeyPairResult]
   }
+  @scala.inline
+  implicit class ImportKeyPairResultOps[Self <: ImportKeyPairResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyFingerprint(value: String): Self = this.set("KeyFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyFingerprint: Self = this.set("KeyFingerprint", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    @scala.inline
+    def setKeyPairId(value: String): Self = this.set("KeyPairId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPairId: Self = this.set("KeyPairId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

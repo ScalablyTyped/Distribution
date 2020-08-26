@@ -40,6 +40,7 @@ trait corePromise extends js.Object {
     *
     */
   def when(): js.Promise[_] = js.native
+  def when(callback: js.UndefOr[scala.Nothing], errback: js.Function): js.Promise[_] = js.native
   def when(callback: js.Function): js.Promise[_] = js.native
   def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
 }

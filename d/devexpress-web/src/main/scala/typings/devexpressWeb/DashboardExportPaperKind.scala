@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Lists constants used to identify a standard paper size used to export a dashboard/dashboard item.
   */
+@js.native
 trait DashboardExportPaperKind extends js.Object
 

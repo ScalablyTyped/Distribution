@@ -14,10 +14,28 @@ trait NotificationConfiguration extends js.Object {
 
 object NotificationConfiguration {
   @scala.inline
-  def apply(channels: Channels = null): NotificationConfiguration = {
+  def apply(): NotificationConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationConfiguration]
   }
+  @scala.inline
+  implicit class NotificationConfigurationOps[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelsVarargs(value: Channel*): Self = this.set("channels", js.Array(value :_*))
+    @scala.inline
+    def setChannels(value: Channels): Self = this.set("channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("channels", js.undefined)
+  }
+  
 }
 

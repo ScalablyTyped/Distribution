@@ -28,16 +28,34 @@ trait SchemaFrequencyCap extends js.Object {
 
 object SchemaFrequencyCap {
   @scala.inline
-  def apply(
-    maxImpressions: js.UndefOr[Double] = js.undefined,
-    numTimeUnits: js.UndefOr[Double] = js.undefined,
-    timeUnitType: String = null
-  ): SchemaFrequencyCap = {
+  def apply(): SchemaFrequencyCap = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxImpressions)) __obj.updateDynamic("maxImpressions")(maxImpressions.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numTimeUnits)) __obj.updateDynamic("numTimeUnits")(numTimeUnits.get.asInstanceOf[js.Any])
-    if (timeUnitType != null) __obj.updateDynamic("timeUnitType")(timeUnitType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFrequencyCap]
   }
+  @scala.inline
+  implicit class SchemaFrequencyCapOps[Self <: SchemaFrequencyCap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxImpressions(value: Double): Self = this.set("maxImpressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxImpressions: Self = this.set("maxImpressions", js.undefined)
+    @scala.inline
+    def setNumTimeUnits(value: Double): Self = this.set("numTimeUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumTimeUnits: Self = this.set("numTimeUnits", js.undefined)
+    @scala.inline
+    def setTimeUnitType(value: String): Self = this.set("timeUnitType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeUnitType: Self = this.set("timeUnitType", js.undefined)
+  }
+  
 }
 

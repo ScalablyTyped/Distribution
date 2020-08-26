@@ -12,49 +12,84 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<luaparse.luaparse.Options> */
+@js.native
 trait PartialOptions extends js.Object {
-  var comments: js.UndefOr[Boolean] = js.undefined
-  var extendedIdentifiers: js.UndefOr[`false`] = js.undefined
-  var locations: js.UndefOr[Boolean] = js.undefined
-  var luaVersion: js.UndefOr[`5Dot1` | `5Dot2` | `5Dot3` | LuaJIT] = js.undefined
-  var onCreateNode: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
-  var onCreateScope: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onDestroyScope: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onLocalDeclaration: js.UndefOr[js.Function1[/* identifier */ Identifier, Unit]] = js.undefined
-  var ranges: js.UndefOr[Boolean] = js.undefined
-  var scope: js.UndefOr[Boolean] = js.undefined
+  var comments: js.UndefOr[Boolean] = js.native
+  var extendedIdentifiers: js.UndefOr[`false`] = js.native
+  var locations: js.UndefOr[Boolean] = js.native
+  var luaVersion: js.UndefOr[`5Dot1` | `5Dot2` | `5Dot3` | LuaJIT] = js.native
+  var onCreateNode: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+  var onCreateScope: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDestroyScope: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLocalDeclaration: js.UndefOr[js.Function1[/* identifier */ Identifier, Unit]] = js.native
+  var ranges: js.UndefOr[Boolean] = js.native
+  var scope: js.UndefOr[Boolean] = js.native
   @JSName("wait")
-  var wait_FPartialOptions: js.UndefOr[Boolean] = js.undefined
+  var wait_FPartialOptions: js.UndefOr[Boolean] = js.native
 }
 
 object PartialOptions {
   @scala.inline
-  def apply(
-    comments: js.UndefOr[Boolean] = js.undefined,
-    extendedIdentifiers: `false` = null,
-    locations: js.UndefOr[Boolean] = js.undefined,
-    luaVersion: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT = null,
-    onCreateNode: /* node */ Node => Unit = null,
-    onCreateScope: () => Unit = null,
-    onDestroyScope: () => Unit = null,
-    onLocalDeclaration: /* identifier */ Identifier => Unit = null,
-    ranges: js.UndefOr[Boolean] = js.undefined,
-    scope: js.UndefOr[Boolean] = js.undefined,
-    wait: js.UndefOr[Boolean] = js.undefined
-  ): PartialOptions = {
+  def apply(): PartialOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments.get.asInstanceOf[js.Any])
-    if (extendedIdentifiers != null) __obj.updateDynamic("extendedIdentifiers")(extendedIdentifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(locations)) __obj.updateDynamic("locations")(locations.get.asInstanceOf[js.Any])
-    if (luaVersion != null) __obj.updateDynamic("luaVersion")(luaVersion.asInstanceOf[js.Any])
-    if (onCreateNode != null) __obj.updateDynamic("onCreateNode")(js.Any.fromFunction1(onCreateNode))
-    if (onCreateScope != null) __obj.updateDynamic("onCreateScope")(js.Any.fromFunction0(onCreateScope))
-    if (onDestroyScope != null) __obj.updateDynamic("onDestroyScope")(js.Any.fromFunction0(onDestroyScope))
-    if (onLocalDeclaration != null) __obj.updateDynamic("onLocalDeclaration")(js.Any.fromFunction1(onLocalDeclaration))
-    if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scope)) __obj.updateDynamic("scope")(scope.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialOptions]
   }
+  @scala.inline
+  implicit class PartialOptionsOps[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComments(value: Boolean): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComments: Self = this.set("comments", js.undefined)
+    @scala.inline
+    def setExtendedIdentifiers(value: `false`): Self = this.set("extendedIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedIdentifiers: Self = this.set("extendedIdentifiers", js.undefined)
+    @scala.inline
+    def setLocations(value: Boolean): Self = this.set("locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("locations", js.undefined)
+    @scala.inline
+    def setLuaVersion(value: `5Dot1` | `5Dot2` | `5Dot3` | LuaJIT): Self = this.set("luaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLuaVersion: Self = this.set("luaVersion", js.undefined)
+    @scala.inline
+    def setOnCreateNode(value: /* node */ Node => Unit): Self = this.set("onCreateNode", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCreateNode: Self = this.set("onCreateNode", js.undefined)
+    @scala.inline
+    def setOnCreateScope(value: () => Unit): Self = this.set("onCreateScope", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnCreateScope: Self = this.set("onCreateScope", js.undefined)
+    @scala.inline
+    def setOnDestroyScope(value: () => Unit): Self = this.set("onDestroyScope", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDestroyScope: Self = this.set("onDestroyScope", js.undefined)
+    @scala.inline
+    def setOnLocalDeclaration(value: /* identifier */ Identifier => Unit): Self = this.set("onLocalDeclaration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLocalDeclaration: Self = this.set("onLocalDeclaration", js.undefined)
+    @scala.inline
+    def setRanges(value: Boolean): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanges: Self = this.set("ranges", js.undefined)
+    @scala.inline
+    def setScope(value: Boolean): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setWait(value: Boolean): Self = this.set("wait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWait: Self = this.set("wait", js.undefined)
+  }
+  
 }
 

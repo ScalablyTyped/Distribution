@@ -18,10 +18,28 @@ trait CreateVirtualMFADeviceRequest extends js.Object {
 
 object CreateVirtualMFADeviceRequest {
   @scala.inline
-  def apply(VirtualMFADeviceName: virtualMFADeviceName, Path: pathType = null): CreateVirtualMFADeviceRequest = {
+  def apply(VirtualMFADeviceName: virtualMFADeviceName): CreateVirtualMFADeviceRequest = {
     val __obj = js.Dynamic.literal(VirtualMFADeviceName = VirtualMFADeviceName.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVirtualMFADeviceRequest]
   }
+  @scala.inline
+  implicit class CreateVirtualMFADeviceRequestOps[Self <: CreateVirtualMFADeviceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVirtualMFADeviceName(value: virtualMFADeviceName): Self = this.set("VirtualMFADeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ An interactive UI dashboard for Bee Queue
 | ------------------ | :-------------: |
 | Full name          | bull-arena |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 12 |
-| # downloads        | 688598 |
+| # releases         | 15 |
+| # dependents       | 13 |
+| # downloads        | 724635 |
 | # stars            | 0 |
 
 ## Links

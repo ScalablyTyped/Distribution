@@ -14,10 +14,10 @@ trait Osmosis extends js.Object {
   def config(option: String, value: js.Any): Osmosis = js.native
   def config(option: StringDictionary[js.Any]): Osmosis = js.native
   def config(option: StringDictionary[js.Any], value: js.Any): Osmosis = js.native
-  def cookie(name: String): Osmosis = js.native
   /**
     * Set a cookie. Short for `.config({ cookies: ... })`. Note: Setting a cookie to `null` will delete the cookie.
     */
+  def cookie(name: String): Osmosis = js.native
   def cookie(name: String, value: String): Osmosis = js.native
   /**
     * passing string to your function

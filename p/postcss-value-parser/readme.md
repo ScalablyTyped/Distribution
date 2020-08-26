@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-value-parser
 
-Typings are for version 4.0.3
+Typings are for version 4.1.0
 
 ## Library description:
 Transforms css values and at-rule params into the tree
@@ -10,9 +10,9 @@ Transforms css values and at-rule params into the tree
 | ------------------ | :-------------: |
 | Full name          | postcss-value-parser |
 | Keywords           | postcss, value, parser |
-| # releases         | 4 |
-| # dependents       | 273 |
-| # downloads        | 493199212 |
+| # releases         | 7 |
+| # dependents       | 314 |
+| # downloads        | 892828971 |
 | # stars            | 0 |
 
 ## Links

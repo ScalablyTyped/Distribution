@@ -18,14 +18,32 @@ trait DescribeProvisionedProductOutput extends js.Object {
 
 object DescribeProvisionedProductOutput {
   @scala.inline
-  def apply(
-    CloudWatchDashboards: CloudWatchDashboards = null,
-    ProvisionedProductDetail: ProvisionedProductDetail = null
-  ): DescribeProvisionedProductOutput = {
+  def apply(): DescribeProvisionedProductOutput = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchDashboards != null) __obj.updateDynamic("CloudWatchDashboards")(CloudWatchDashboards.asInstanceOf[js.Any])
-    if (ProvisionedProductDetail != null) __obj.updateDynamic("ProvisionedProductDetail")(ProvisionedProductDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProvisionedProductOutput]
   }
+  @scala.inline
+  implicit class DescribeProvisionedProductOutputOps[Self <: DescribeProvisionedProductOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchDashboardsVarargs(value: CloudWatchDashboard*): Self = this.set("CloudWatchDashboards", js.Array(value :_*))
+    @scala.inline
+    def setCloudWatchDashboards(value: CloudWatchDashboards): Self = this.set("CloudWatchDashboards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchDashboards: Self = this.set("CloudWatchDashboards", js.undefined)
+    @scala.inline
+    def setProvisionedProductDetail(value: ProvisionedProductDetail): Self = this.set("ProvisionedProductDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProductDetail: Self = this.set("ProvisionedProductDetail", js.undefined)
+  }
+  
 }
 

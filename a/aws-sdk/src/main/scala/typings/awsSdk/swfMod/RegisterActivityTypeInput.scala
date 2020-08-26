@@ -50,27 +50,56 @@ trait RegisterActivityTypeInput extends js.Object {
 
 object RegisterActivityTypeInput {
   @scala.inline
-  def apply(
-    domain: DomainName,
-    name: Name,
-    version: Version,
-    defaultTaskHeartbeatTimeout: DurationInSecondsOptional = null,
-    defaultTaskList: TaskList = null,
-    defaultTaskPriority: TaskPriority = null,
-    defaultTaskScheduleToCloseTimeout: DurationInSecondsOptional = null,
-    defaultTaskScheduleToStartTimeout: DurationInSecondsOptional = null,
-    defaultTaskStartToCloseTimeout: DurationInSecondsOptional = null,
-    description: Description = null
-  ): RegisterActivityTypeInput = {
+  def apply(domain: DomainName, name: Name, version: Version): RegisterActivityTypeInput = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (defaultTaskHeartbeatTimeout != null) __obj.updateDynamic("defaultTaskHeartbeatTimeout")(defaultTaskHeartbeatTimeout.asInstanceOf[js.Any])
-    if (defaultTaskList != null) __obj.updateDynamic("defaultTaskList")(defaultTaskList.asInstanceOf[js.Any])
-    if (defaultTaskPriority != null) __obj.updateDynamic("defaultTaskPriority")(defaultTaskPriority.asInstanceOf[js.Any])
-    if (defaultTaskScheduleToCloseTimeout != null) __obj.updateDynamic("defaultTaskScheduleToCloseTimeout")(defaultTaskScheduleToCloseTimeout.asInstanceOf[js.Any])
-    if (defaultTaskScheduleToStartTimeout != null) __obj.updateDynamic("defaultTaskScheduleToStartTimeout")(defaultTaskScheduleToStartTimeout.asInstanceOf[js.Any])
-    if (defaultTaskStartToCloseTimeout != null) __obj.updateDynamic("defaultTaskStartToCloseTimeout")(defaultTaskStartToCloseTimeout.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterActivityTypeInput]
   }
+  @scala.inline
+  implicit class RegisterActivityTypeInputOps[Self <: RegisterActivityTypeInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultTaskHeartbeatTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskHeartbeatTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTaskHeartbeatTimeout: Self = this.set("defaultTaskHeartbeatTimeout", js.undefined)
+    @scala.inline
+    def setDefaultTaskList(value: TaskList): Self = this.set("defaultTaskList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTaskList: Self = this.set("defaultTaskList", js.undefined)
+    @scala.inline
+    def setDefaultTaskPriority(value: TaskPriority): Self = this.set("defaultTaskPriority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTaskPriority: Self = this.set("defaultTaskPriority", js.undefined)
+    @scala.inline
+    def setDefaultTaskScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskScheduleToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTaskScheduleToCloseTimeout: Self = this.set("defaultTaskScheduleToCloseTimeout", js.undefined)
+    @scala.inline
+    def setDefaultTaskScheduleToStartTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskScheduleToStartTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTaskScheduleToStartTimeout: Self = this.set("defaultTaskScheduleToStartTimeout", js.undefined)
+    @scala.inline
+    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = this.set("defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTaskStartToCloseTimeout: Self = this.set("defaultTaskStartToCloseTimeout", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+  }
+  
 }
 

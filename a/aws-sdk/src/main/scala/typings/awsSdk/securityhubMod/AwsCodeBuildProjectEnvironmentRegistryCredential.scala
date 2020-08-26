@@ -18,11 +18,30 @@ trait AwsCodeBuildProjectEnvironmentRegistryCredential extends js.Object {
 
 object AwsCodeBuildProjectEnvironmentRegistryCredential {
   @scala.inline
-  def apply(Credential: NonEmptyString = null, CredentialProvider: NonEmptyString = null): AwsCodeBuildProjectEnvironmentRegistryCredential = {
+  def apply(): AwsCodeBuildProjectEnvironmentRegistryCredential = {
     val __obj = js.Dynamic.literal()
-    if (Credential != null) __obj.updateDynamic("Credential")(Credential.asInstanceOf[js.Any])
-    if (CredentialProvider != null) __obj.updateDynamic("CredentialProvider")(CredentialProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCodeBuildProjectEnvironmentRegistryCredential]
   }
+  @scala.inline
+  implicit class AwsCodeBuildProjectEnvironmentRegistryCredentialOps[Self <: AwsCodeBuildProjectEnvironmentRegistryCredential] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCredential(value: NonEmptyString): Self = this.set("Credential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredential: Self = this.set("Credential", js.undefined)
+    @scala.inline
+    def setCredentialProvider(value: NonEmptyString): Self = this.set("CredentialProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentialProvider: Self = this.set("CredentialProvider", js.undefined)
+  }
+  
 }
 

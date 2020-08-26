@@ -11,8 +11,8 @@ A NodeJS implementation of Dijkstra's algorithm
 | Full name          | node-dijkstra |
 | Keywords           | dijkstra, shortest path |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 101866 |
+| # dependents       | 13 |
+| # downloads        | 141106 |
 | # stars            | 4 |
 
 ## Links

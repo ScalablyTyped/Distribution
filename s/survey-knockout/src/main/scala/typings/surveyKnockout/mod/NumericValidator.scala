@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NumericValidator () extends SurveyValidator {
   def this(minValue: Double) = this()
+  def this(minValue: js.UndefOr[scala.Nothing], maxValue: Double) = this()
   def this(minValue: Double, maxValue: Double) = this()
   /**
     * The maxValue property.

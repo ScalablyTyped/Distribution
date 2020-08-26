@@ -1,7 +1,7 @@
 
 # Scala.js typings for public-ip
 
-Typings are for version 4.0.1
+Typings are for version 4.0.2
 
 ## Library description:
 Get your public IP address - very fast!
@@ -11,8 +11,8 @@ Get your public IP address - very fast!
 | Full name          | public-ip |
 | Keywords           | get, ip, ipv4, ipv6, address, external, public, machine, fast, opendns, dns |
 | # releases         | 6 |
-| # dependents       | 156 |
-| # downloads        | 3443331 |
+| # dependents       | 161 |
+| # downloads        | 3821740 |
 | # stars            | 14 |
 
 ## Links

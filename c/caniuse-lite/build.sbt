@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "caniuse-lite"
-version := "1.0-dt-20181205Z-f6aabc"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20181205Z-4f5264"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

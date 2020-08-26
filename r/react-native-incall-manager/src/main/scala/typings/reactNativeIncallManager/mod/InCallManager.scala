@@ -16,6 +16,7 @@ trait InCallManager extends js.Object {
   def requestCameraPermission(): js.Promise[String] = js.native
   def requestRecordPermission(): js.Promise[String] = js.native
   def setFlashOn(): Double = js.native
+  def setFlashOn(enable: js.UndefOr[scala.Nothing], brightness: Double): Double = js.native
   def setFlashOn(enable: Boolean): Double = js.native
   def setFlashOn(enable: Boolean, brightness: Double): Double = js.native
   def setForceSpeakerphoneOn(): Unit = js.native
@@ -31,8 +32,58 @@ trait InCallManager extends js.Object {
   def startRingback(): Unit = js.native
   def startRingback(ringback: String): Unit = js.native
   def startRingtone(): Unit = js.native
+  def startRingtone(
+    ringtone: js.UndefOr[scala.Nothing],
+    vibrate_pattern: js.UndefOr[scala.Nothing],
+    ios_category: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Unit = js.native
+  def startRingtone(
+    ringtone: js.UndefOr[scala.Nothing],
+    vibrate_pattern: js.UndefOr[scala.Nothing],
+    ios_category: String
+  ): Unit = js.native
+  def startRingtone(
+    ringtone: js.UndefOr[scala.Nothing],
+    vibrate_pattern: js.UndefOr[scala.Nothing],
+    ios_category: String,
+    seconds: Double
+  ): Unit = js.native
+  def startRingtone(ringtone: js.UndefOr[scala.Nothing], vibrate_pattern: js.Array[_]): Unit = js.native
+  def startRingtone(
+    ringtone: js.UndefOr[scala.Nothing],
+    vibrate_pattern: js.Array[_],
+    ios_category: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Unit = js.native
+  def startRingtone(ringtone: js.UndefOr[scala.Nothing], vibrate_pattern: js.Array[_], ios_category: String): Unit = js.native
+  def startRingtone(
+    ringtone: js.UndefOr[scala.Nothing],
+    vibrate_pattern: js.Array[_],
+    ios_category: String,
+    seconds: Double
+  ): Unit = js.native
   def startRingtone(ringtone: String): Unit = js.native
+  def startRingtone(
+    ringtone: String,
+    vibrate_pattern: js.UndefOr[scala.Nothing],
+    ios_category: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Unit = js.native
+  def startRingtone(ringtone: String, vibrate_pattern: js.UndefOr[scala.Nothing], ios_category: String): Unit = js.native
+  def startRingtone(
+    ringtone: String,
+    vibrate_pattern: js.UndefOr[scala.Nothing],
+    ios_category: String,
+    seconds: Double
+  ): Unit = js.native
   def startRingtone(ringtone: String, vibrate_pattern: js.Array[_]): Unit = js.native
+  def startRingtone(
+    ringtone: String,
+    vibrate_pattern: js.Array[_],
+    ios_category: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Unit = js.native
   def startRingtone(ringtone: String, vibrate_pattern: js.Array[_], ios_category: String): Unit = js.native
   def startRingtone(ringtone: String, vibrate_pattern: js.Array[_], ios_category: String, seconds: Double): Unit = js.native
   def stop(): Unit = js.native

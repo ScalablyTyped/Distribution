@@ -34,20 +34,42 @@ trait SchemaAnnotation extends js.Object {
 
 object SchemaAnnotation {
   @scala.inline
-  def apply(
-    annotationSource: SchemaAnnotationSource = null,
-    imageAnnotation: SchemaImageAnnotation = null,
-    name: String = null,
-    resourceAnnotation: SchemaResourceAnnotation = null,
-    textAnnotation: SchemaSensitiveTextAnnotation = null
-  ): SchemaAnnotation = {
+  def apply(): SchemaAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (annotationSource != null) __obj.updateDynamic("annotationSource")(annotationSource.asInstanceOf[js.Any])
-    if (imageAnnotation != null) __obj.updateDynamic("imageAnnotation")(imageAnnotation.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceAnnotation != null) __obj.updateDynamic("resourceAnnotation")(resourceAnnotation.asInstanceOf[js.Any])
-    if (textAnnotation != null) __obj.updateDynamic("textAnnotation")(textAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnnotation]
   }
+  @scala.inline
+  implicit class SchemaAnnotationOps[Self <: SchemaAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnnotationSource(value: SchemaAnnotationSource): Self = this.set("annotationSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnnotationSource: Self = this.set("annotationSource", js.undefined)
+    @scala.inline
+    def setImageAnnotation(value: SchemaImageAnnotation): Self = this.set("imageAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageAnnotation: Self = this.set("imageAnnotation", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceAnnotation(value: SchemaResourceAnnotation): Self = this.set("resourceAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAnnotation: Self = this.set("resourceAnnotation", js.undefined)
+    @scala.inline
+    def setTextAnnotation(value: SchemaSensitiveTextAnnotation): Self = this.set("textAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAnnotation: Self = this.set("textAnnotation", js.undefined)
+  }
+  
 }
 

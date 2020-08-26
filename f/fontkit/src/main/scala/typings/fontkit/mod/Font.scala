@@ -59,12 +59,97 @@ trait Font extends js.Object {
     * Returns a GlyphRun object, which includes an array of Glyphs and GlyphPositions for the given string.
     */
   def layout(string: String): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.UndefOr[scala.Nothing],
+    script: js.UndefOr[scala.Nothing],
+    language: js.UndefOr[scala.Nothing],
+    direction: String
+  ): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.UndefOr[scala.Nothing],
+    script: js.UndefOr[scala.Nothing],
+    language: String
+  ): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.UndefOr[scala.Nothing],
+    script: js.UndefOr[scala.Nothing],
+    language: String,
+    direction: String
+  ): GlyphRun = js.native
+  def layout(string: String, features: js.UndefOr[scala.Nothing], script: String): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.UndefOr[scala.Nothing],
+    script: String,
+    language: js.UndefOr[scala.Nothing],
+    direction: String
+  ): GlyphRun = js.native
+  def layout(string: String, features: js.UndefOr[scala.Nothing], script: String, language: String): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.UndefOr[scala.Nothing],
+    script: String,
+    language: String,
+    direction: String
+  ): GlyphRun = js.native
   def layout(string: String, features: js.Array[String]): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.Array[String],
+    script: js.UndefOr[scala.Nothing],
+    language: js.UndefOr[scala.Nothing],
+    direction: String
+  ): GlyphRun = js.native
+  def layout(string: String, features: js.Array[String], script: js.UndefOr[scala.Nothing], language: String): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.Array[String],
+    script: js.UndefOr[scala.Nothing],
+    language: String,
+    direction: String
+  ): GlyphRun = js.native
   def layout(string: String, features: js.Array[String], script: String): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: js.Array[String],
+    script: String,
+    language: js.UndefOr[scala.Nothing],
+    direction: String
+  ): GlyphRun = js.native
   def layout(string: String, features: js.Array[String], script: String, language: String): GlyphRun = js.native
   def layout(string: String, features: js.Array[String], script: String, language: String, direction: String): GlyphRun = js.native
   def layout(string: String, features: Record[String, Boolean]): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: Record[String, Boolean],
+    script: js.UndefOr[scala.Nothing],
+    language: js.UndefOr[scala.Nothing],
+    direction: String
+  ): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: Record[String, Boolean],
+    script: js.UndefOr[scala.Nothing],
+    language: String
+  ): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: Record[String, Boolean],
+    script: js.UndefOr[scala.Nothing],
+    language: String,
+    direction: String
+  ): GlyphRun = js.native
   def layout(string: String, features: Record[String, Boolean], script: String): GlyphRun = js.native
+  def layout(
+    string: String,
+    features: Record[String, Boolean],
+    script: String,
+    language: js.UndefOr[scala.Nothing],
+    direction: String
+  ): GlyphRun = js.native
   def layout(string: String, features: Record[String, Boolean], script: String, language: String): GlyphRun = js.native
   def layout(
     string: String,

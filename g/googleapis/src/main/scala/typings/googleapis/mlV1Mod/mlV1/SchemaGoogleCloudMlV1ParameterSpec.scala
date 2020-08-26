@@ -50,24 +50,54 @@ trait SchemaGoogleCloudMlV1ParameterSpec extends js.Object {
 
 object SchemaGoogleCloudMlV1ParameterSpec {
   @scala.inline
-  def apply(
-    categoricalValues: js.Array[String] = null,
-    discreteValues: js.Array[Double] = null,
-    maxValue: js.UndefOr[Double] = js.undefined,
-    minValue: js.UndefOr[Double] = js.undefined,
-    parameterName: String = null,
-    scaleType: String = null,
-    `type`: String = null
-  ): SchemaGoogleCloudMlV1ParameterSpec = {
+  def apply(): SchemaGoogleCloudMlV1ParameterSpec = {
     val __obj = js.Dynamic.literal()
-    if (categoricalValues != null) __obj.updateDynamic("categoricalValues")(categoricalValues.asInstanceOf[js.Any])
-    if (discreteValues != null) __obj.updateDynamic("discreteValues")(discreteValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
-    if (scaleType != null) __obj.updateDynamic("scaleType")(scaleType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1ParameterSpec]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1ParameterSpecOps[Self <: SchemaGoogleCloudMlV1ParameterSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategoricalValuesVarargs(value: String*): Self = this.set("categoricalValues", js.Array(value :_*))
+    @scala.inline
+    def setCategoricalValues(value: js.Array[String]): Self = this.set("categoricalValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategoricalValues: Self = this.set("categoricalValues", js.undefined)
+    @scala.inline
+    def setDiscreteValuesVarargs(value: Double*): Self = this.set("discreteValues", js.Array(value :_*))
+    @scala.inline
+    def setDiscreteValues(value: js.Array[Double]): Self = this.set("discreteValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscreteValues: Self = this.set("discreteValues", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: Double): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setParameterName(value: String): Self = this.set("parameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterName: Self = this.set("parameterName", js.undefined)
+    @scala.inline
+    def setScaleType(value: String): Self = this.set("scaleType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleType: Self = this.set("scaleType", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

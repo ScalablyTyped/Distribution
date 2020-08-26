@@ -98,6 +98,7 @@ class ResourceVpntunnels protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaVpnTunnelAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceVpntunnelsAggregatedlist): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceVpntunnelsAggregatedlist,
@@ -190,6 +191,7 @@ class ResourceVpntunnels protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceVpntunnelsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceVpntunnelsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -279,6 +281,7 @@ class ResourceVpntunnels protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVpnTunnel] = js.native
   def get(callback: BodyResponseCallback[SchemaVpnTunnel]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnTunnel] = js.native
   def get(params: ParamsResourceVpntunnelsGet): GaxiosPromise[SchemaVpnTunnel] = js.native
   def get(params: ParamsResourceVpntunnelsGet, callback: BodyResponseCallback[SchemaVpnTunnel]): Unit = js.native
   def get(
@@ -370,6 +373,7 @@ class ResourceVpntunnels protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceVpntunnelsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceVpntunnelsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -472,6 +476,7 @@ class ResourceVpntunnels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVpnTunnelList] = js.native
   def list(callback: BodyResponseCallback[SchemaVpnTunnelList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnTunnelList] = js.native
   def list(params: ParamsResourceVpntunnelsList): GaxiosPromise[SchemaVpnTunnelList] = js.native
   def list(params: ParamsResourceVpntunnelsList, callback: BodyResponseCallback[SchemaVpnTunnelList]): Unit = js.native
   def list(

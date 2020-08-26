@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NextGenEvents extends js.Object {
   def addListener(eventName: String): this.type = js.native
+  def addListener(eventName: String, fn: js.UndefOr[scala.Nothing], options: AddListenerOptions): this.type = js.native
   def addListener(eventName: String, fn: js.Any): this.type = js.native
   def addListener(eventName: String, fn: js.Any, options: AddListenerOptions): this.type = js.native
   def addListenerContext(contextName: String, options: ContextOptions): this.type = js.native
@@ -24,9 +25,11 @@ trait NextGenEvents extends js.Object {
   def listeners(eventName: String): js.Array[Func] = js.native
   def off(eventName: String, id: js.Any): this.type = js.native
   def on(eventName: String): this.type = js.native
+  def on(eventName: String, fn: js.UndefOr[scala.Nothing], options: AddListenerOptions): this.type = js.native
   def on(eventName: String, fn: js.Any): this.type = js.native
   def on(eventName: String, fn: js.Any, options: AddListenerOptions): this.type = js.native
   def once(eventName: String): this.type = js.native
+  def once(eventName: String, fn: js.UndefOr[scala.Nothing], options: AddListenerOptions): this.type = js.native
   def once(eventName: String, fn: js.Any): this.type = js.native
   def once(eventName: String, fn: js.Any, options: AddListenerOptions): this.type = js.native
   def queueListenerContext(contextName: String): this.type = js.native

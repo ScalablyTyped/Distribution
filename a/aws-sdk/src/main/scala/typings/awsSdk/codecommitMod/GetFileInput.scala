@@ -22,10 +22,30 @@ trait GetFileInput extends js.Object {
 
 object GetFileInput {
   @scala.inline
-  def apply(filePath: Path, repositoryName: RepositoryName, commitSpecifier: CommitName = null): GetFileInput = {
+  def apply(filePath: Path, repositoryName: RepositoryName): GetFileInput = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
-    if (commitSpecifier != null) __obj.updateDynamic("commitSpecifier")(commitSpecifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInput]
   }
+  @scala.inline
+  implicit class GetFileInputOps[Self <: GetFileInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommitSpecifier(value: CommitName): Self = this.set("commitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitSpecifier: Self = this.set("commitSpecifier", js.undefined)
+  }
+  
 }
 

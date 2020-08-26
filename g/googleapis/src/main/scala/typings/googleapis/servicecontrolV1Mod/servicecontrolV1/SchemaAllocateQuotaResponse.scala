@@ -41,20 +41,46 @@ trait SchemaAllocateQuotaResponse extends js.Object {
 
 object SchemaAllocateQuotaResponse {
   @scala.inline
-  def apply(
-    allocateErrors: js.Array[SchemaQuotaError] = null,
-    allocateInfo: SchemaAllocateInfo = null,
-    operationId: String = null,
-    quotaMetrics: js.Array[SchemaMetricValueSet] = null,
-    serviceConfigId: String = null
-  ): SchemaAllocateQuotaResponse = {
+  def apply(): SchemaAllocateQuotaResponse = {
     val __obj = js.Dynamic.literal()
-    if (allocateErrors != null) __obj.updateDynamic("allocateErrors")(allocateErrors.asInstanceOf[js.Any])
-    if (allocateInfo != null) __obj.updateDynamic("allocateInfo")(allocateInfo.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics.asInstanceOf[js.Any])
-    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAllocateQuotaResponse]
   }
+  @scala.inline
+  implicit class SchemaAllocateQuotaResponseOps[Self <: SchemaAllocateQuotaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocateErrorsVarargs(value: SchemaQuotaError*): Self = this.set("allocateErrors", js.Array(value :_*))
+    @scala.inline
+    def setAllocateErrors(value: js.Array[SchemaQuotaError]): Self = this.set("allocateErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocateErrors: Self = this.set("allocateErrors", js.undefined)
+    @scala.inline
+    def setAllocateInfo(value: SchemaAllocateInfo): Self = this.set("allocateInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocateInfo: Self = this.set("allocateInfo", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setQuotaMetricsVarargs(value: SchemaMetricValueSet*): Self = this.set("quotaMetrics", js.Array(value :_*))
+    @scala.inline
+    def setQuotaMetrics(value: js.Array[SchemaMetricValueSet]): Self = this.set("quotaMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaMetrics: Self = this.set("quotaMetrics", js.undefined)
+    @scala.inline
+    def setServiceConfigId(value: String): Self = this.set("serviceConfigId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceConfigId: Self = this.set("serviceConfigId", js.undefined)
+  }
+  
 }
 

@@ -12,10 +12,26 @@ trait SpacingOptions extends js.Object {
 
 object SpacingOptions {
   @scala.inline
-  def apply(unit: js.UndefOr[Double] = js.undefined): SpacingOptions = {
+  def apply(): SpacingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(unit)) __obj.updateDynamic("unit")(unit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacingOptions]
   }
+  @scala.inline
+  implicit class SpacingOptionsOps[Self <: SpacingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUnit(value: Double): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

@@ -23,16 +23,92 @@ object mod extends js.Object {
   def setSafeMode(enabled: Boolean): Unit = js.native
   def setXMLSerializer(serializer: XMLSerializer): Unit = js.native
   def toImage(str: String): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: js.UndefOr[scala.Nothing],
+    roundToPowerOfTwo: js.UndefOr[scala.Nothing],
+    size: js.UndefOr[scala.Nothing],
+    document: Document
+  ): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: js.UndefOr[scala.Nothing],
+    roundToPowerOfTwo: js.UndefOr[scala.Nothing],
+    size: Double
+  ): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: js.UndefOr[scala.Nothing],
+    roundToPowerOfTwo: js.UndefOr[scala.Nothing],
+    size: Double,
+    document: Document
+  ): HTMLImageElement = js.native
+  def toImage(str: String, rightToLeft: js.UndefOr[scala.Nothing], roundToPowerOfTwo: Boolean): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: js.UndefOr[scala.Nothing],
+    roundToPowerOfTwo: Boolean,
+    size: js.UndefOr[scala.Nothing],
+    document: Document
+  ): HTMLImageElement = js.native
+  def toImage(str: String, rightToLeft: js.UndefOr[scala.Nothing], roundToPowerOfTwo: Boolean, size: Double): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: js.UndefOr[scala.Nothing],
+    roundToPowerOfTwo: Boolean,
+    size: Double,
+    document: Document
+  ): HTMLImageElement = js.native
   def toImage(str: String, rightToLeft: Boolean): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: Boolean,
+    roundToPowerOfTwo: js.UndefOr[scala.Nothing],
+    size: js.UndefOr[scala.Nothing],
+    document: Document
+  ): HTMLImageElement = js.native
+  def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: js.UndefOr[scala.Nothing], size: Double): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: Boolean,
+    roundToPowerOfTwo: js.UndefOr[scala.Nothing],
+    size: Double,
+    document: Document
+  ): HTMLImageElement = js.native
   def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean): HTMLImageElement = js.native
+  def toImage(
+    str: String,
+    rightToLeft: Boolean,
+    roundToPowerOfTwo: Boolean,
+    size: js.UndefOr[scala.Nothing],
+    document: Document
+  ): HTMLImageElement = js.native
   def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean, size: Double): HTMLImageElement = js.native
   def toImage(str: String, rightToLeft: Boolean, roundToPowerOfTwo: Boolean, size: Double, document: Document): HTMLImageElement = js.native
   def toMathML(str: String): Element = js.native
+  def toMathML(
+    str: String,
+    displayMode: js.UndefOr[scala.Nothing],
+    rightToLeft: js.UndefOr[scala.Nothing],
+    throwOnError: Boolean
+  ): Element = js.native
+  def toMathML(str: String, displayMode: js.UndefOr[scala.Nothing], rightToLeft: Boolean): Element = js.native
+  def toMathML(str: String, displayMode: js.UndefOr[scala.Nothing], rightToLeft: Boolean, throwOnError: Boolean): Element = js.native
   def toMathML(str: String, displayMode: Boolean): Element = js.native
+  def toMathML(str: String, displayMode: Boolean, rightToLeft: js.UndefOr[scala.Nothing], throwOnError: Boolean): Element = js.native
   def toMathML(str: String, displayMode: Boolean, rightToLeft: Boolean): Element = js.native
   def toMathML(str: String, displayMode: Boolean, rightToLeft: Boolean, throwOnError: Boolean): Element = js.native
   def toMathMLString(str: String): String = js.native
+  def toMathMLString(
+    str: String,
+    displayMode: js.UndefOr[scala.Nothing],
+    rightToLeft: js.UndefOr[scala.Nothing],
+    throwOnError: Boolean
+  ): String = js.native
+  def toMathMLString(str: String, displayMode: js.UndefOr[scala.Nothing], rightToLeft: Boolean): String = js.native
+  def toMathMLString(str: String, displayMode: js.UndefOr[scala.Nothing], rightToLeft: Boolean, throwOnError: Boolean): String = js.native
   def toMathMLString(str: String, displayMode: Boolean): String = js.native
+  def toMathMLString(str: String, displayMode: Boolean, rightToLeft: js.UndefOr[scala.Nothing], throwOnError: Boolean): String = js.native
   def toMathMLString(str: String, displayMode: Boolean, rightToLeft: Boolean): String = js.native
   def toMathMLString(str: String, displayMode: Boolean, rightToLeft: Boolean, throwOnError: Boolean): String = js.native
 }

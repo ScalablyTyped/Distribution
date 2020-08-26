@@ -47,7 +47,11 @@ trait ContentControl extends js.Object {
     * @param string [Text='']
     */
   def SetPlaceholderText(): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: js.UndefOr[scala.Nothing], Range: js.UndefOr[scala.Nothing], Text: String): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: js.UndefOr[scala.Nothing], Range: typings.activexWord.Word.Range): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: js.UndefOr[scala.Nothing], Range: typings.activexWord.Word.Range, Text: String): Unit = js.native
   def SetPlaceholderText(BuildingBlock: BuildingBlock): Unit = js.native
+  def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: js.UndefOr[scala.Nothing], Text: String): Unit = js.native
   def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: typings.activexWord.Word.Range): Unit = js.native
   def SetPlaceholderText(BuildingBlock: BuildingBlock, Range: typings.activexWord.Word.Range, Text: String): Unit = js.native
   /** @param string [Font=''] */

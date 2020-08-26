@@ -34,18 +34,38 @@ trait SchemaFacetOptions extends js.Object {
 
 object SchemaFacetOptions {
   @scala.inline
-  def apply(
-    numFacetBuckets: js.UndefOr[Double] = js.undefined,
-    objectType: String = null,
-    operatorName: String = null,
-    sourceName: String = null
-  ): SchemaFacetOptions = {
+  def apply(): SchemaFacetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(numFacetBuckets)) __obj.updateDynamic("numFacetBuckets")(numFacetBuckets.get.asInstanceOf[js.Any])
-    if (objectType != null) __obj.updateDynamic("objectType")(objectType.asInstanceOf[js.Any])
-    if (operatorName != null) __obj.updateDynamic("operatorName")(operatorName.asInstanceOf[js.Any])
-    if (sourceName != null) __obj.updateDynamic("sourceName")(sourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFacetOptions]
   }
+  @scala.inline
+  implicit class SchemaFacetOptionsOps[Self <: SchemaFacetOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNumFacetBuckets(value: Double): Self = this.set("numFacetBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumFacetBuckets: Self = this.set("numFacetBuckets", js.undefined)
+    @scala.inline
+    def setObjectType(value: String): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectType: Self = this.set("objectType", js.undefined)
+    @scala.inline
+    def setOperatorName(value: String): Self = this.set("operatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatorName: Self = this.set("operatorName", js.undefined)
+    @scala.inline
+    def setSourceName(value: String): Self = this.set("sourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceName: Self = this.set("sourceName", js.undefined)
+  }
+  
 }
 

@@ -1,5 +1,8 @@
 package typings.keycloakJs.mod
 
+import typings.keycloakJs.keycloakJsStrings.cancelled
+import typings.keycloakJs.keycloakJsStrings.error
+import typings.keycloakJs.keycloakJsStrings.success
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -42,6 +45,10 @@ trait KeycloakInstance extends js.Object {
   		 * @private Undocumented.
   		 */
   var loginRequired: js.UndefOr[Boolean] = js.native
+  /**
+  		 * Called when a AIA has been requested by the application.
+  		 */
+  var onActionUpdate: js.UndefOr[js.Function1[/* status */ success | cancelled | error, Unit]] = js.native
   /**
   		 * Called if there was an error during authentication.
   		 */
@@ -164,17 +171,15 @@ trait KeycloakInstance extends js.Object {
   /**
   		 * Returns the URL to logout the user.
   		 * @param options Logout options.
-  		 * @param options.redirectUri Specifies the uri to redirect to after logout.
   		 */
   def createLogoutUrl(): String = js.native
-  def createLogoutUrl(options: js.Any): String = js.native
+  def createLogoutUrl(options: KeycloakLogoutOptions): String = js.native
   /**
   		 * Returns the URL to registration page.
-  		 * @param options Supports same options as Keycloak#createLoginUrl but
-  		 *                `action` is set to `'register'`.
+  		 * @param options The options used for creating the registration URL.
   		 */
   def createRegisterUrl(): String = js.native
-  def createRegisterUrl(options: KeycloakLoginOptions): String = js.native
+  def createRegisterUrl(options: KeycloakRegisterOptions): String = js.native
   /**
   		 * Returns true if the token has the given realm role.
   		 * @param role A realm role name.
@@ -218,17 +223,15 @@ trait KeycloakInstance extends js.Object {
   /**
   		 * Redirects to logout.
   		 * @param options Logout options.
-  		 * @param options.redirectUri Specifies the uri to redirect to after logout.
   		 */
   def logout(): KeycloakPromise[Unit, Unit] = js.native
-  def logout(options: js.Any): KeycloakPromise[Unit, Unit] = js.native
+  def logout(options: KeycloakLogoutOptions): KeycloakPromise[Unit, Unit] = js.native
   /**
   		 * Redirects to registration form.
-  		 * @param options Supports same options as Keycloak#login but `action` is
-  		 *                set to `'register'`.
+  		 * @param options The options used for the registration.
   		 */
   def register(): KeycloakPromise[Unit, Unit] = js.native
-  def register(options: js.Any): KeycloakPromise[Unit, Unit] = js.native
+  def register(options: KeycloakRegisterOptions): KeycloakPromise[Unit, Unit] = js.native
   /**
   		 * If the token expires within `minValidity` seconds, the token is refreshed.
   		 * If the session status iframe is enabled, the session status is also

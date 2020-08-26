@@ -11,8 +11,8 @@ Emoji plugin for markdown-it markdown parser.
 | Full name          | markdown-it-emoji |
 | Keywords           | markdown-it-plugin, markdown-it, markdown, emoji, emojies, emoticon, emoticons |
 | # releases         | 0 |
-| # dependents       | 226 |
-| # downloads        | 3417929 |
+| # dependents       | 238 |
+| # downloads        | 3816970 |
 | # stars            | 4 |
 
 ## Links

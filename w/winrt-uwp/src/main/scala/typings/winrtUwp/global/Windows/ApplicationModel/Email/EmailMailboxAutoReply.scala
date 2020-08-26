@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAutoReply")
 @js.native
 abstract class EmailMailboxAutoReply ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReply {
-  /** Gets or sets a Boolean value that indicates if the auto-reply message is enabled. */
-  /* CompleteClass */
-  override var isEnabled: Boolean = js.native
-  /** Gets or sets the auto-reply response text. */
-  /* CompleteClass */
-  override var response: String = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Email.EmailMailboxAutoReply
 

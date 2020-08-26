@@ -22,5 +22,22 @@ object RecencyDimension {
     val __obj = js.Dynamic.literal(Duration = Duration.asInstanceOf[js.Any], RecencyType = RecencyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecencyDimension]
   }
+  @scala.inline
+  implicit class RecencyDimensionOps[Self <: RecencyDimension] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Duration): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecencyType(value: RecencyType): Self = this.set("RecencyType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -7,23 +7,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VariableUsage extends js.Object {
-  val defaultValue: Maybe[_]
-  val node: VariableNode
-  val `type`: Maybe[GraphQLInputType]
+  val defaultValue: Maybe[_] = js.native
+  val node: VariableNode = js.native
+  val `type`: Maybe[GraphQLInputType] = js.native
 }
 
 object VariableUsage {
   @scala.inline
-  def apply(
-    node: VariableNode,
-    defaultValue: js.UndefOr[Null | Maybe[_]] = js.undefined,
-    `type`: js.UndefOr[Null | Maybe[GraphQLInputType]] = js.undefined
-  ): VariableUsage = {
+  def apply(node: VariableNode): VariableUsage = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariableUsage]
   }
+  @scala.inline
+  implicit class VariableUsageOps[Self <: VariableUsage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNode(value: VariableNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultValue(value: Maybe[_]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDefaultValueNull: Self = this.set("defaultValue", null)
+    @scala.inline
+    def setType(value: Maybe[GraphQLInputType]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeNull: Self = this.set("type", null)
+  }
+  
 }
 

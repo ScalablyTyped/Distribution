@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidStep extends js.Object {
-  var invalidStep: js.UndefOr[String] = js.undefined
-  var maxMin: js.UndefOr[String] = js.undefined
-  var noValue: js.UndefOr[String] = js.undefined
-  var optionNum: js.UndefOr[String] = js.undefined
-  var valueRange: js.UndefOr[String] = js.undefined
+  var invalidStep: js.UndefOr[String] = js.native
+  var maxMin: js.UndefOr[String] = js.native
+  var noValue: js.UndefOr[String] = js.native
+  var optionNum: js.UndefOr[String] = js.native
+  var valueRange: js.UndefOr[String] = js.native
 }
 
 object InvalidStep {
   @scala.inline
-  def apply(
-    invalidStep: String = null,
-    maxMin: String = null,
-    noValue: String = null,
-    optionNum: String = null,
-    valueRange: String = null
-  ): InvalidStep = {
+  def apply(): InvalidStep = {
     val __obj = js.Dynamic.literal()
-    if (invalidStep != null) __obj.updateDynamic("invalidStep")(invalidStep.asInstanceOf[js.Any])
-    if (maxMin != null) __obj.updateDynamic("maxMin")(maxMin.asInstanceOf[js.Any])
-    if (noValue != null) __obj.updateDynamic("noValue")(noValue.asInstanceOf[js.Any])
-    if (optionNum != null) __obj.updateDynamic("optionNum")(optionNum.asInstanceOf[js.Any])
-    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidStep]
   }
+  @scala.inline
+  implicit class InvalidStepOps[Self <: InvalidStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInvalidStep(value: String): Self = this.set("invalidStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidStep: Self = this.set("invalidStep", js.undefined)
+    @scala.inline
+    def setMaxMin(value: String): Self = this.set("maxMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxMin: Self = this.set("maxMin", js.undefined)
+    @scala.inline
+    def setNoValue(value: String): Self = this.set("noValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoValue: Self = this.set("noValue", js.undefined)
+    @scala.inline
+    def setOptionNum(value: String): Self = this.set("optionNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionNum: Self = this.set("optionNum", js.undefined)
+    @scala.inline
+    def setValueRange(value: String): Self = this.set("valueRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueRange: Self = this.set("valueRange", js.undefined)
+  }
+  
 }
 

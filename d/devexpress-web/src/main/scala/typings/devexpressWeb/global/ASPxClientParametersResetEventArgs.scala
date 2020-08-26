@@ -20,15 +20,5 @@ class ASPxClientParametersResetEventArgs protected ()
     parametersModel: js.Any,
     parameters: js.Array[typings.devexpressWeb.ASPxClientWebDocumentViewerParameter]
   ) = this()
-  /**
-    * Provides access to report parameters whose values have been reset.
-    */
-  /* CompleteClass */
-  override var Parameters: js.Array[typings.devexpressWeb.ASPxClientWebDocumentViewerParameter] = js.native
-  /**
-    * Provides access to a View Model for report parameters.
-    */
-  /* CompleteClass */
-  override var ParametersViewModel: js.Any = js.native
 }
 

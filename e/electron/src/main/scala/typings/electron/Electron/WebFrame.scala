@@ -1,6 +1,7 @@
 package typings.electron.Electron
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -62,7 +63,7 @@ trait WebFrame extends EventEmitter {
   def clearCache(): Unit = js.native
   /**
     * A promise that resolves with the result of the executed code or is rejected if
-    * the result of the code is a rejected promise.
+    * execution throws or results in a rejected promise.
     *
     * Evaluates `code` in page.
     *
@@ -71,7 +72,17 @@ trait WebFrame extends EventEmitter {
     * this limitation.
     */
   def executeJavaScript(code: String): js.Promise[_] = js.native
+  def executeJavaScript(
+    code: String,
+    userGesture: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
+  ): js.Promise[_] = js.native
   def executeJavaScript(code: String, userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScript(
+    code: String,
+    userGesture: Boolean,
+    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
+  ): js.Promise[_] = js.native
   /**
     * A promise that resolves with the result of the executed code or is rejected if
     * execution could not start.
@@ -83,7 +94,19 @@ trait WebFrame extends EventEmitter {
     * dispatch errors of isolated worlds to foreign worlds.
     */
   def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource]): js.Promise[_] = js.native
+  def executeJavaScriptInIsolatedWorld(
+    worldId: Double,
+    scripts: js.Array[WebSource],
+    userGesture: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
+  ): js.Promise[_] = js.native
   def executeJavaScriptInIsolatedWorld(worldId: Double, scripts: js.Array[WebSource], userGesture: Boolean): js.Promise[_] = js.native
+  def executeJavaScriptInIsolatedWorld(
+    worldId: Double,
+    scripts: js.Array[WebSource],
+    userGesture: Boolean,
+    callback: js.Function2[/* result */ js.Any, /* error */ Error, Unit]
+  ): js.Promise[_] = js.native
   /**
     * A child of `webFrame` with the supplied `name`, `null` would be returned if
     * there's no such frame or if the frame is not in the current renderer process.
@@ -143,14 +166,6 @@ trait WebFrame extends EventEmitter {
     * specified.
     */
   def setIsolatedWorldInfo(worldId: Double, info: Info): Unit = js.native
-  /**
-    * Sets the maximum and minimum layout-based (i.e. non-visual) zoom level.
-    * 
-  **Deprecated:** This API is no longer supported by Chromium.
-    *
-    * @deprecated
-    */
-  def setLayoutZoomLevelLimits(minimumLevel: Double, maximumLevel: Double): Unit = js.native
   /**
     * Sets a provider for spell checking in input fields and text areas.
     *

@@ -1,12 +1,10 @@
 package typings.senchaTouch.Ext.chart.axis.segmenter
 
-import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
-import typings.senchaTouch.Ext.chart.axis.IAxis
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITime extends ISegmenter {
   /** [Method] Add step units to the value
     * @param value Object
@@ -21,7 +19,7 @@ trait ITime extends ISegmenter {
       /* unit */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Align value with step of units
     * @param date Object
     * @param step Object
@@ -36,83 +34,61 @@ trait ITime extends ISegmenter {
       /* unit */ js.UndefOr[js.Any], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Returns the value of step
     * @returns Object
     */
-  var getStep: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStep: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Sets the value of step
     * @param step Object The new value.
     */
-  var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setStep: js.UndefOr[js.Function1[/* step */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Object) */
-  var step: js.UndefOr[js.Any] = js.undefined
+  var step: js.UndefOr[js.Any] = js.native
 }
 
 object ITime {
   @scala.inline
-  def apply(
-    add: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    align: (/* date */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => _ = null,
-    alternateClassName: js.Any = null,
-    axis: IAxis = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    diff: (/* min */ js.UndefOr[js.Any], /* max */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Double = null,
-    extend: String = null,
-    from: /* value */ js.UndefOr[js.Any] => _ = null,
-    getAxis: () => IAxis = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getStep: () => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    preferredStep: (/* start */ js.UndefOr[js.Any], /* estStepSize */ js.UndefOr[js.Any]) => _ = null,
-    renderer: (/* value */ js.UndefOr[js.Any], /* context */ js.UndefOr[js.Any]) => String = null,
-    self: IClass = null,
-    setAxis: /* axis */ js.UndefOr[IAxis] => Unit = null,
-    setStep: /* step */ js.UndefOr[js.Any] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    step: js.Any = null,
-    uses: Array = null
-  ): ITime = {
+  def apply(): ITime = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction3(add))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(js.Any.fromFunction3(align))
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (diff != null) __obj.updateDynamic("diff")(js.Any.fromFunction3(diff))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(js.Any.fromFunction1(from))
-    if (getAxis != null) __obj.updateDynamic("getAxis")(js.Any.fromFunction0(getAxis))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getStep != null) __obj.updateDynamic("getStep")(js.Any.fromFunction0(getStep))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (preferredStep != null) __obj.updateDynamic("preferredStep")(js.Any.fromFunction2(preferredStep))
-    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction2(renderer))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setAxis != null) __obj.updateDynamic("setAxis")(js.Any.fromFunction1(setAxis))
-    if (setStep != null) __obj.updateDynamic("setStep")(js.Any.fromFunction1(setStep))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITime]
   }
+  @scala.inline
+  implicit class ITimeOps[Self <: ITime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(
+      value: (/* value */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("add", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAlign(
+      value: (/* date */ js.UndefOr[js.Any], /* step */ js.UndefOr[js.Any], /* unit */ js.UndefOr[js.Any]) => _
+    ): Self = this.set("align", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setGetStep(value: () => _): Self = this.set("getStep", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStep: Self = this.set("getStep", js.undefined)
+    @scala.inline
+    def setSetStep(value: /* step */ js.UndefOr[js.Any] => Unit): Self = this.set("setStep", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStep: Self = this.set("setStep", js.undefined)
+    @scala.inline
+    def setStep(value: js.Any): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+  }
+  
 }
 

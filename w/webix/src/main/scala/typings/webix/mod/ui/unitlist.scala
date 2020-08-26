@@ -79,9 +79,11 @@ class unitlist ()
   def clearCss(css: String, silent: Boolean): Unit = js.native
   def clearValidation(): Unit = js.native
   def copy(sid: String, tindex: Double): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def copy(sid: String, tindex: Double, tobj: js.Any): Unit = js.native
   def copy(sid: String, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double, tobj: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
   def count(): Double = js.native
@@ -94,9 +96,11 @@ class unitlist ()
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
+  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def find(criterion: WebixCallback): js.Any = js.native
@@ -130,12 +134,14 @@ class unitlist ()
   def isSelected(id: String): Boolean = js.native
   def isSelected(id: Double): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
   def locate(e: Event): String | Double = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
   def moveBottom(id: String): Unit = js.native
@@ -167,6 +173,7 @@ class unitlist ()
   def select(id: String, preserve: Boolean): Unit = js.native
   def select(id: js.Array[_], preserve: Boolean): Unit = js.native
   def selectAll(): Unit = js.native
+  def selectAll(from: js.UndefOr[scala.Nothing], to: String): Unit = js.native
   def selectAll(from: String): Unit = js.native
   def selectAll(from: String, to: String): Unit = js.native
   def serialize(): js.Array[_] = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/DiffFilled", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/DiffFilled", JSImport.Namespace)
 @js.native
 object diffFilledMod extends js.Object {
   val default: IconDefinition = js.native

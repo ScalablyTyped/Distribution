@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/domutils/lib/element", "ElementExt.hitTest")
+@JSImport("@lumino/domutils/types/element", "ElementExt.hitTest")
 @js.native
 object hitTest extends js.Object {
   /**

@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Filter extends js.Object {
   /** A composite filter. */
-  var compositeFilter: js.UndefOr[CompositeFilter] = js.undefined
+  var compositeFilter: js.UndefOr[CompositeFilter] = js.native
   /** A filter on a property. */
-  var propertyFilter: js.UndefOr[PropertyFilter] = js.undefined
+  var propertyFilter: js.UndefOr[PropertyFilter] = js.native
 }
 
 object Filter {
   @scala.inline
-  def apply(compositeFilter: CompositeFilter = null, propertyFilter: PropertyFilter = null): Filter = {
+  def apply(): Filter = {
     val __obj = js.Dynamic.literal()
-    if (compositeFilter != null) __obj.updateDynamic("compositeFilter")(compositeFilter.asInstanceOf[js.Any])
-    if (propertyFilter != null) __obj.updateDynamic("propertyFilter")(propertyFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
+  @scala.inline
+  implicit class FilterOps[Self <: Filter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompositeFilter(value: CompositeFilter): Self = this.set("compositeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompositeFilter: Self = this.set("compositeFilter", js.undefined)
+    @scala.inline
+    def setPropertyFilter(value: PropertyFilter): Self = this.set("propertyFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyFilter: Self = this.set("propertyFilter", js.undefined)
+  }
+  
 }
 

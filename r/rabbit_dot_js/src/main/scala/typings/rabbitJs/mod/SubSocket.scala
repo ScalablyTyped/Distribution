@@ -13,6 +13,7 @@ class SubSocket protected ()
   extends Readable
      with Socket {
   def this(channel: String, opts: SocketOptions) = this()
+  def connect(source: String, topic: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
   def connect(source: String, topic: String): js.Any = js.native
   def connect(source: String, topic: String, callback: js.Function): js.Any = js.native
   /* InferMemberOverrides */

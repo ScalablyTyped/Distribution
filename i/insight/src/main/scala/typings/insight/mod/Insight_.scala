@@ -19,6 +19,7 @@ trait Insight_ extends js.Object {
   var trackingCode: String = js.native
   var trackingProvider: String = js.native
   def askPermission(): Unit = js.native
+  def askPermission(msg: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
   def askPermission(msg: String): Unit = js.native
   def askPermission(msg: String, cb: js.Function): Unit = js.native
   def track(args: String*): Unit = js.native

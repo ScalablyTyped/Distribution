@@ -6,31 +6,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxSlideOutItem extends CollectionWidgetItem {
   /** @name dxSlideOutItem.menuTemplate */
   var menuTemplate: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
-  ] = js.undefined
+  ] = js.native
 }
 
 object dxSlideOutItem {
   @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    menuTemplate: typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxSlideOutItem = {
+  def apply(): dxSlideOutItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (menuTemplate != null) __obj.updateDynamic("menuTemplate")(menuTemplate.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSlideOutItem]
   }
+  @scala.inline
+  implicit class dxSlideOutItemOps[Self <: dxSlideOutItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMenuTemplateFunction0(value: () => String | Element | JQuery): Self = this.set("menuTemplate", js.Any.fromFunction0(value))
+    @scala.inline
+    def setMenuTemplate(value: typings.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])): Self = this.set("menuTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMenuTemplate: Self = this.set("menuTemplate", js.undefined)
+  }
+  
 }
 

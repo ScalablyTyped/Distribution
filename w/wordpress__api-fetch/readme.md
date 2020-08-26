@@ -12,13 +12,12 @@ Utility to make WordPress REST API requests.
 | Keywords           | wordpress, rest-api, fetch |
 | # releases         | 35 |
 | # dependents       | 16 |
-| # downloads        | 258378 |
+| # downloads        | 270010 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/api-fetch/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fapi-fetch)
     
 

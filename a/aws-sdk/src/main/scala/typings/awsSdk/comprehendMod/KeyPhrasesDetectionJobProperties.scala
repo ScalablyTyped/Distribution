@@ -58,34 +58,70 @@ trait KeyPhrasesDetectionJobProperties extends js.Object {
 
 object KeyPhrasesDetectionJobProperties {
   @scala.inline
-  def apply(
-    DataAccessRoleArn: IamRoleArn = null,
-    EndTime: Timestamp = null,
-    InputDataConfig: InputDataConfig = null,
-    JobId: JobId = null,
-    JobName: JobName = null,
-    JobStatus: JobStatus = null,
-    LanguageCode: LanguageCode = null,
-    Message: AnyLengthString = null,
-    OutputDataConfig: OutputDataConfig = null,
-    SubmitTime: Timestamp = null,
-    VolumeKmsKeyId: KmsKeyId = null,
-    VpcConfig: VpcConfig = null
-  ): KeyPhrasesDetectionJobProperties = {
+  def apply(): KeyPhrasesDetectionJobProperties = {
     val __obj = js.Dynamic.literal()
-    if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig.asInstanceOf[js.Any])
-    if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime.asInstanceOf[js.Any])
-    if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyPhrasesDetectionJobProperties]
   }
+  @scala.inline
+  implicit class KeyPhrasesDetectionJobPropertiesOps[Self <: KeyPhrasesDetectionJobProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setMessage(value: AnyLengthString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDataConfig: Self = this.set("OutputDataConfig", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: Timestamp): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+    @scala.inline
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

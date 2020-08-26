@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PluginPeerDepsExternalOptions extends js.Object {
-  var includeDependencies: js.UndefOr[Boolean] = js.undefined
-  var packageJsonPath: js.UndefOr[String] = js.undefined
+  var includeDependencies: js.UndefOr[Boolean] = js.native
+  var packageJsonPath: js.UndefOr[String] = js.native
 }
 
 object PluginPeerDepsExternalOptions {
   @scala.inline
-  def apply(includeDependencies: js.UndefOr[Boolean] = js.undefined, packageJsonPath: String = null): PluginPeerDepsExternalOptions = {
+  def apply(): PluginPeerDepsExternalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeDependencies)) __obj.updateDynamic("includeDependencies")(includeDependencies.get.asInstanceOf[js.Any])
-    if (packageJsonPath != null) __obj.updateDynamic("packageJsonPath")(packageJsonPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginPeerDepsExternalOptions]
   }
+  @scala.inline
+  implicit class PluginPeerDepsExternalOptionsOps[Self <: PluginPeerDepsExternalOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeDependencies(value: Boolean): Self = this.set("includeDependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDependencies: Self = this.set("includeDependencies", js.undefined)
+    @scala.inline
+    def setPackageJsonPath(value: String): Self = this.set("packageJsonPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageJsonPath: Self = this.set("packageJsonPath", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ An HTTP client library for node.js
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 396 |
-| # downloads        | 1744530 |
+| # downloads        | 1763891 |
 | # stars            | 28 |
 
 ## Links

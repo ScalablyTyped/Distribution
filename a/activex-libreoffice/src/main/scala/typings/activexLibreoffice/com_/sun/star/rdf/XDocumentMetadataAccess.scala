@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * @see XDocumentRepository
   * @since OOo 3.2
   */
+@js.native
 trait XDocumentMetadataAccess
   extends XURI
      with XRepositorySupplier {
@@ -34,7 +35,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if the FileName is invalid
     * @throws com::sun::star::container::ElementExistException if a stream with the given FileName already exists
     */
-  def addContentOrStylesFile(FileName: String): Unit
+  def addContentOrStylesFile(FileName: String): Unit = js.native
   /**
     * add a metadata file to the manifest.
     *
@@ -46,27 +47,27 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if the FileName is invalid
     * @throws com::sun::star::container::ElementExistException if a stream with the given FileName already exists
     */
-  def addMetadataFile(FileName: String, Types: SeqEquiv[XURI]): XURI
+  def addMetadataFile(FileName: String, Types: SeqEquiv[XURI]): XURI = js.native
   /**
     * get the unique ODF element with the given metadata reference.
     * @param MetadataReference a metadata reference, comprising the stream name and the XML ID For example: Pair("content.xml", "foo-element-1")
     * @returns the ODF element with the given metadata references if it exists, else `NULL`
     */
-  def getElementByMetadataReference(MetadataReference: StringPair): XMetadatable
+  def getElementByMetadataReference(MetadataReference: StringPair): XMetadatable = js.native
   /**
     * get the ODF element that corresponds to an {@link URI} .
     * @param URI an {@link URI} that may identify an ODF element
     * @returns the ODF element that corresponds to the given {@link URI} , or `NULL`
     * @throws com::sun::star::lang::IllegalArgumentException if the given {@link URI} is `NULL`
     */
-  def getElementByURI(URI: XURI): XMetadatable
+  def getElementByURI(URI: XURI): XMetadatable = js.native
   /**
     * get the names of all metadata files with a given type.
     * @param Type the `rdf:type` property of the requested named graphs
     * @returns the names of all metadata graphs that have a `rdf:type` property with the given Type as object
     * @throws com::sun::star::lang::IllegalArgumentException if the given Type is `NULL`
     */
-  def getMetadataGraphsWithType(Type: XURI): SafeArray[XURI]
+  def getMetadataGraphsWithType(Type: XURI): SafeArray[XURI] = js.native
   /**
     * import a metadata file into the document repository, and add it to the manifest.
     *
@@ -86,7 +87,7 @@ trait XDocumentMetadataAccess
     * @throws ParseException if the input does not conform to the specified file format.
     * @throws com::sun::star::io::IOException if an I/O error occurs.
     */
-  def importMetadataFile(Format: Double, InStream: XInputStream, FileName: String, BaseURI: XURI, Types: SeqEquiv[XURI]): XURI
+  def importMetadataFile(Format: Double, InStream: XInputStream, FileName: String, BaseURI: XURI, Types: SeqEquiv[XURI]): XURI = js.native
   /**
     * loads document metadata from a medium.
     *
@@ -96,7 +97,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if the argument does not contain a URL or Stream property
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs while loading
     */
-  def loadMetadataFromMedium(Medium: SeqEquiv[PropertyValue]): Unit
+  def loadMetadataFromMedium(Medium: SeqEquiv[PropertyValue]): Unit = js.native
   /**
     * initialize document metadata from a storage.
     *
@@ -112,7 +113,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if any argument is `NULL`
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs while loading and no InteractionHandler given
     */
-  def loadMetadataFromStorage(Storage: XStorage, BaseURI: XURI, InteractionHandler: XInteractionHandler): Unit
+  def loadMetadataFromStorage(Storage: XStorage, BaseURI: XURI, InteractionHandler: XInteractionHandler): Unit = js.native
   /**
     * remove a content or styles file from the manifest.
     *
@@ -121,7 +122,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if the FileName is invalid
     * @throws com::sun::star::container::NoSuchElementException if a graph with the given GraphName does not exist
     */
-  def removeContentOrStylesFile(FileName: String): Unit
+  def removeContentOrStylesFile(FileName: String): Unit = js.native
   /**
     * remove a metadata file from the manifest and the repository.
     *
@@ -131,7 +132,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if the given GraphName is `NULL`
     * @throws com::sun::star::container::NoSuchElementException if a graph with the given GraphName does not exist
     */
-  def removeMetadataFile(GraphName: XURI): Unit
+  def removeMetadataFile(GraphName: XURI): Unit = js.native
   /**
     * stores document metadata to a medium.
     * @param Medium the {@link com.sun.star.document.MediaDescriptor} representing the target
@@ -139,7 +140,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if the argument does not contain a URL or Stream property
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs while storing
     */
-  def storeMetadataToMedium(Medium: SeqEquiv[PropertyValue]): Unit
+  def storeMetadataToMedium(Medium: SeqEquiv[PropertyValue]): Unit = js.native
   /**
     * store document metadata to a storage.
     *
@@ -150,7 +151,7 @@ trait XDocumentMetadataAccess
     * @throws com::sun::star::lang::IllegalArgumentException if Storage argument is `NULL`
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs while loading
     */
-  def storeMetadataToStorage(Storage: XStorage): Unit
+  def storeMetadataToStorage(Storage: XStorage): Unit = js.native
 }
 
 object XDocumentMetadataAccess {
@@ -177,5 +178,42 @@ object XDocumentMetadataAccess {
     val __obj = js.Dynamic.literal(LocalName = LocalName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], RDFRepository = RDFRepository.asInstanceOf[js.Any], StringValue = StringValue.asInstanceOf[js.Any], addContentOrStylesFile = js.Any.fromFunction1(addContentOrStylesFile), addMetadataFile = js.Any.fromFunction2(addMetadataFile), getElementByMetadataReference = js.Any.fromFunction1(getElementByMetadataReference), getElementByURI = js.Any.fromFunction1(getElementByURI), getMetadataGraphsWithType = js.Any.fromFunction1(getMetadataGraphsWithType), getRDFRepository = js.Any.fromFunction0(getRDFRepository), importMetadataFile = js.Any.fromFunction5(importMetadataFile), loadMetadataFromMedium = js.Any.fromFunction1(loadMetadataFromMedium), loadMetadataFromStorage = js.Any.fromFunction3(loadMetadataFromStorage), removeContentOrStylesFile = js.Any.fromFunction1(removeContentOrStylesFile), removeMetadataFile = js.Any.fromFunction1(removeMetadataFile), storeMetadataToMedium = js.Any.fromFunction1(storeMetadataToMedium), storeMetadataToStorage = js.Any.fromFunction1(storeMetadataToStorage))
     __obj.asInstanceOf[XDocumentMetadataAccess]
   }
+  @scala.inline
+  implicit class XDocumentMetadataAccessOps[Self <: XDocumentMetadataAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddContentOrStylesFile(value: String => Unit): Self = this.set("addContentOrStylesFile", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAddMetadataFile(value: (String, SeqEquiv[XURI]) => XURI): Self = this.set("addMetadataFile", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetElementByMetadataReference(value: StringPair => XMetadatable): Self = this.set("getElementByMetadataReference", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetElementByURI(value: XURI => XMetadatable): Self = this.set("getElementByURI", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetMetadataGraphsWithType(value: XURI => SafeArray[XURI]): Self = this.set("getMetadataGraphsWithType", js.Any.fromFunction1(value))
+    @scala.inline
+    def setImportMetadataFile(value: (Double, XInputStream, String, XURI, SeqEquiv[XURI]) => XURI): Self = this.set("importMetadataFile", js.Any.fromFunction5(value))
+    @scala.inline
+    def setLoadMetadataFromMedium(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("loadMetadataFromMedium", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLoadMetadataFromStorage(value: (XStorage, XURI, XInteractionHandler) => Unit): Self = this.set("loadMetadataFromStorage", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRemoveContentOrStylesFile(value: String => Unit): Self = this.set("removeContentOrStylesFile", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveMetadataFile(value: XURI => Unit): Self = this.set("removeMetadataFile", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStoreMetadataToMedium(value: SeqEquiv[PropertyValue] => Unit): Self = this.set("storeMetadataToMedium", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStoreMetadataToStorage(value: XStorage => Unit): Self = this.set("storeMetadataToStorage", js.Any.fromFunction1(value))
+  }
+  
 }
 

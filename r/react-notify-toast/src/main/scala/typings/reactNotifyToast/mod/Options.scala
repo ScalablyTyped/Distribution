@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var animationDuration: js.UndefOr[Double] = js.undefined
-  var colors: js.UndefOr[js.Any] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var top: js.UndefOr[Double | String] = js.undefined
-  var wrapperId: js.UndefOr[String] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var animationDuration: js.UndefOr[Double] = js.native
+  var colors: js.UndefOr[js.Any] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double | String] = js.native
+  var wrapperId: js.UndefOr[String] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    colors: js.Any = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    top: Double | String = null,
-    wrapperId: String = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (wrapperId != null) __obj.updateDynamic("wrapperId")(wrapperId.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDuration(value: Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setColors(value: js.Any): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setWrapperId(value: String): Self = this.set("wrapperId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapperId: Self = this.set("wrapperId", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

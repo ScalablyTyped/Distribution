@@ -26,12 +26,10 @@ object Definition {
     loc: Location,
     name: String,
     selections: js.Array[Selection],
-    `type`: CompositeTypeID,
-    metadata: Metadata = null
+    `type`: CompositeTypeID
   ): Definition = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
   @scala.inline
@@ -43,12 +41,10 @@ object Definition {
     name: String,
     operation: query | mutation | subscription,
     selections: Selection,
-    `type`: CompositeTypeID,
-    metadata: Metadata = null
+    `type`: CompositeTypeID
   ): Definition = {
     val __obj = js.Dynamic.literal(argumentDefinitions = argumentDefinitions.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
   @scala.inline
@@ -58,12 +54,10 @@ object Definition {
     name: String,
     parentSources: Set[String],
     selections: js.Array[Selection],
-    `type`: TypeID,
-    metadata: Metadata = null
+    `type`: TypeID
   ): Definition = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentSources = parentSources.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
 }

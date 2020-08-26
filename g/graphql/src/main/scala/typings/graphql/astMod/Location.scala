@@ -1,38 +1,35 @@
 package typings.graphql.astMod
 
+import typings.graphql.anon.End
 import typings.graphql.sourceMod.Source
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Location extends js.Object {
+@JSImport("graphql/language/ast", "Location")
+@js.native
+class Location protected () extends js.Object {
+  def this(startToken: Token, endToken: Token, source: Source) = this()
   /**
     * The character offset at which this Node ends.
     */
-  val end: Double
+  val end: Double = js.native
   /**
     * The Token at which this Node ends.
     */
-  val endToken: Token
+  val endToken: Token = js.native
   /**
     * The Source document the AST represents.
     */
-  val source: Source
+  val source: Source = js.native
   /**
     * The character offset at which this Node begins.
     */
-  val start: Double
+  val start: Double = js.native
   /**
     * The Token at which this Node begins.
     */
-  val startToken: Token
-}
-
-object Location {
-  @scala.inline
-  def apply(end: Double, endToken: Token, source: Source, start: Double, startToken: Token): Location = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], endToken = endToken.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], startToken = startToken.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Location]
-  }
+  val startToken: Token = js.native
+  def toJSON(): End = js.native
 }
 

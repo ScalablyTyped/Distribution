@@ -22,16 +22,34 @@ trait OutputLogEvent extends js.Object {
 
 object OutputLogEvent {
   @scala.inline
-  def apply(
-    ingestionTime: js.UndefOr[Timestamp] = js.undefined,
-    message: EventMessage = null,
-    timestamp: js.UndefOr[Timestamp] = js.undefined
-  ): OutputLogEvent = {
+  def apply(): OutputLogEvent = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ingestionTime)) __obj.updateDynamic("ingestionTime")(ingestionTime.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputLogEvent]
   }
+  @scala.inline
+  implicit class OutputLogEventOps[Self <: OutputLogEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIngestionTime(value: Timestamp): Self = this.set("ingestionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestionTime: Self = this.set("ingestionTime", js.undefined)
+    @scala.inline
+    def setMessage(value: EventMessage): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

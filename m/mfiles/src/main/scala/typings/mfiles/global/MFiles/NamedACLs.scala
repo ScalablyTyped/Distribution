@@ -1,7 +1,6 @@
 package typings.mfiles.global.MFiles
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.mfiles.INamedACL
 import typings.mfiles.INamedACLs
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,12 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.NamedACLs")
 @js.native
-class NamedACLs () extends INamedACLs {
-  /* CompleteClass */
-  override val Count: Double = js.native
-  /* CompleteClass */
-  override def Item(Index: Double): INamedACL = js.native
-}
+class NamedACLs () extends INamedACLs
 
 @JSGlobal("MFiles.NamedACLs")
 @js.native

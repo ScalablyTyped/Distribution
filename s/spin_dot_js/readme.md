@@ -12,7 +12,7 @@ A spinning activity indicator
 | Keywords           | css, progress indicator, spin, spinner |
 | # releases         | 3 |
 | # dependents       | 65 |
-| # downloads        | 5874814 |
+| # downloads        | 5969315 |
 | # stars            | 4 |
 
 ## Links

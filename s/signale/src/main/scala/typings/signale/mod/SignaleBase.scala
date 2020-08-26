@@ -60,6 +60,7 @@ trait SignaleBase[TTypes /* <: String */] extends js.Object {
     * @param span Total running time.
     */
   def timeEnd(): Label = js.native
+  def timeEnd(label: js.UndefOr[scala.Nothing], span: Double): Label = js.native
   def timeEnd(label: String): Label = js.native
   def timeEnd(label: String, span: Double): Label = js.native
   /** Clears the scope name of the logger. */

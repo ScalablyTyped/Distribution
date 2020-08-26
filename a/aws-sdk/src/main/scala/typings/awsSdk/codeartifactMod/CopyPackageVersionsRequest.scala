@@ -60,23 +60,60 @@ object CopyPackageVersionsRequest {
     destinationRepository: RepositoryName,
     domain: DomainName,
     format: PackageFormat,
-    sourceRepository: RepositoryName,
-    allowOverwrite: js.UndefOr[BooleanOptional] = js.undefined,
-    domainOwner: AccountId = null,
-    includeFromUpstream: js.UndefOr[BooleanOptional] = js.undefined,
-    namespace: PackageNamespace = null,
-    versionRevisions: PackageVersionRevisionMap = null,
-    versions: PackageVersionList = null
+    sourceRepository: RepositoryName
   ): CopyPackageVersionsRequest = {
     val __obj = js.Dynamic.literal(destinationRepository = destinationRepository.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], sourceRepository = sourceRepository.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowOverwrite)) __obj.updateDynamic("allowOverwrite")(allowOverwrite.get.asInstanceOf[js.Any])
-    if (domainOwner != null) __obj.updateDynamic("domainOwner")(domainOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeFromUpstream)) __obj.updateDynamic("includeFromUpstream")(includeFromUpstream.get.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (versionRevisions != null) __obj.updateDynamic("versionRevisions")(versionRevisions.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyPackageVersionsRequest]
   }
+  @scala.inline
+  implicit class CopyPackageVersionsRequestOps[Self <: CopyPackageVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationRepository(value: RepositoryName): Self = this.set("destinationRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceRepository(value: RepositoryName): Self = this.set("sourceRepository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowOverwrite(value: BooleanOptional): Self = this.set("allowOverwrite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOverwrite: Self = this.set("allowOverwrite", js.undefined)
+    @scala.inline
+    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    @scala.inline
+    def setIncludeFromUpstream(value: BooleanOptional): Self = this.set("includeFromUpstream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeFromUpstream: Self = this.set("includeFromUpstream", js.undefined)
+    @scala.inline
+    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setVersionRevisions(value: PackageVersionRevisionMap): Self = this.set("versionRevisions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionRevisions: Self = this.set("versionRevisions", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: PackageVersion*): Self = this.set("versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: PackageVersionList): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("versions", js.undefined)
+  }
+  
 }
 

@@ -19,18 +19,5 @@ class NotifyCollectionChangedEventArgs protected ()
     *           A CollectionChange object that contains an array of changes that were performed on the collection since the last event.
     */
   def this(changes: typings.microsoftAjax.Sys.CollectionChange) = this()
-  /**
-    * An object of type EventArgs that is used as a convenient way to specify an empty EventArgs instance.
-    */
-  /* CompleteClass */
-  override var Empty: typings.microsoftAjax.Sys.EventArgs = js.native
-  //#endregion
-  //#region Properties
-  /**
-    * Gets an array of changes that were performed on the collection since the last event.
-    * @return An array of CollectionChange objects that were performed on the collection since the last event.
-    */
-  /* CompleteClass */
-  override def get_changes(): js.Array[typings.microsoftAjax.Sys.CollectionChange] = js.native
 }
 

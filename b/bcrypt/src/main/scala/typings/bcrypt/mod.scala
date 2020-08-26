@@ -13,11 +13,32 @@ object mod extends js.Object {
   def compareSync(data: js.Any, encrypted: String): Boolean = js.native
   def genSalt(): js.Promise[String] = js.native
   def genSalt(callback: js.Function2[/* err */ Error, /* salt */ String, Unit]): js.Promise[String] = js.native
+  def genSalt(
+    rounds: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* salt */ String, Unit]
+  ): js.Promise[String] = js.native
+  def genSalt(
+    rounds: js.UndefOr[scala.Nothing],
+    minor: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* salt */ String, Unit]
+  ): js.Promise[String] = js.native
+  def genSalt(rounds: js.UndefOr[scala.Nothing], minor: String): js.Promise[String] = js.native
+  def genSalt(
+    rounds: js.UndefOr[scala.Nothing],
+    minor: String,
+    callback: js.Function2[/* err */ Error, /* salt */ String, Unit]
+  ): js.Promise[String] = js.native
   def genSalt(rounds: Double): js.Promise[String] = js.native
   def genSalt(rounds: Double, callback: js.Function2[/* err */ Error, /* salt */ String, Unit]): js.Promise[String] = js.native
+  def genSalt(
+    rounds: Double,
+    minor: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* salt */ String, Unit]
+  ): js.Promise[String] = js.native
   def genSalt(rounds: Double, minor: String): js.Promise[String] = js.native
   def genSalt(rounds: Double, minor: String, callback: js.Function2[/* err */ Error, /* salt */ String, Unit]): js.Promise[String] = js.native
   def genSaltSync(): String = js.native
+  def genSaltSync(rounds: js.UndefOr[scala.Nothing], minor: String): String = js.native
   def genSaltSync(rounds: Double): String = js.native
   def genSaltSync(rounds: Double, minor: String): String = js.native
   def getRounds(encrypted: String): Double = js.native

@@ -7,50 +7,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledJobParameters extends JobParameters {
   /**
     * <p>Input parameters used for range inventory retrieval.</p>
     */
   @JSName("InventoryRetrievalParameters")
-  var InventoryRetrievalParameters_UnmarshalledJobParameters: js.UndefOr[UnmarshalledInventoryRetrievalJobInput] = js.undefined
+  var InventoryRetrievalParameters_UnmarshalledJobParameters: js.UndefOr[UnmarshalledInventoryRetrievalJobInput] = js.native
   /**
     * <p>Contains information about the location where the select job results are stored.</p>
     */
   @JSName("OutputLocation")
-  var OutputLocation_UnmarshalledJobParameters: js.UndefOr[UnmarshalledOutputLocation] = js.undefined
+  var OutputLocation_UnmarshalledJobParameters: js.UndefOr[UnmarshalledOutputLocation] = js.native
   /**
     * <p>Contains the parameters that define a job.</p>
     */
   @JSName("SelectParameters")
-  var SelectParameters_UnmarshalledJobParameters: js.UndefOr[UnmarshalledSelectParameters] = js.undefined
+  var SelectParameters_UnmarshalledJobParameters: js.UndefOr[UnmarshalledSelectParameters] = js.native
 }
 
 object UnmarshalledJobParameters {
   @scala.inline
-  def apply(
-    ArchiveId: String = null,
-    Description: String = null,
-    Format: String = null,
-    InventoryRetrievalParameters: UnmarshalledInventoryRetrievalJobInput = null,
-    OutputLocation: UnmarshalledOutputLocation = null,
-    RetrievalByteRange: String = null,
-    SNSTopic: String = null,
-    SelectParameters: UnmarshalledSelectParameters = null,
-    Tier: String = null,
-    Type: String = null
-  ): UnmarshalledJobParameters = {
+  def apply(): UnmarshalledJobParameters = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters.asInstanceOf[js.Any])
-    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
-    if (RetrievalByteRange != null) __obj.updateDynamic("RetrievalByteRange")(RetrievalByteRange.asInstanceOf[js.Any])
-    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic.asInstanceOf[js.Any])
-    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledJobParameters]
   }
+  @scala.inline
+  implicit class UnmarshalledJobParametersOps[Self <: UnmarshalledJobParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInventoryRetrievalParameters(value: UnmarshalledInventoryRetrievalJobInput): Self = this.set("InventoryRetrievalParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryRetrievalParameters: Self = this.set("InventoryRetrievalParameters", js.undefined)
+    @scala.inline
+    def setOutputLocation(value: UnmarshalledOutputLocation): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    @scala.inline
+    def setSelectParameters(value: UnmarshalledSelectParameters): Self = this.set("SelectParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectParameters: Self = this.set("SelectParameters", js.undefined)
+  }
+  
 }
 

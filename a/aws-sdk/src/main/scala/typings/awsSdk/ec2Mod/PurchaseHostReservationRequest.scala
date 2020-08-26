@@ -34,20 +34,46 @@ trait PurchaseHostReservationRequest extends js.Object {
 
 object PurchaseHostReservationRequest {
   @scala.inline
-  def apply(
-    HostIdSet: RequestHostIdSet,
-    OfferingId: OfferingId,
-    ClientToken: String = null,
-    CurrencyCode: CurrencyCodeValues = null,
-    LimitPrice: String = null,
-    TagSpecifications: TagSpecificationList = null
-  ): PurchaseHostReservationRequest = {
+  def apply(HostIdSet: RequestHostIdSet, OfferingId: OfferingId): PurchaseHostReservationRequest = {
     val __obj = js.Dynamic.literal(HostIdSet = HostIdSet.asInstanceOf[js.Any], OfferingId = OfferingId.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (LimitPrice != null) __obj.updateDynamic("LimitPrice")(LimitPrice.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseHostReservationRequest]
   }
+  @scala.inline
+  implicit class PurchaseHostReservationRequestOps[Self <: PurchaseHostReservationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostIdSetVarargs(value: DedicatedHostId*): Self = this.set("HostIdSet", js.Array(value :_*))
+    @scala.inline
+    def setHostIdSet(value: RequestHostIdSet): Self = this.set("HostIdSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOfferingId(value: OfferingId): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setLimitPrice(value: String): Self = this.set("LimitPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitPrice: Self = this.set("LimitPrice", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+  }
+  
 }
 

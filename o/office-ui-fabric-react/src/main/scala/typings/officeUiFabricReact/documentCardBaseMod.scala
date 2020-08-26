@@ -20,11 +20,6 @@ object documentCardBaseMod extends js.Object {
     var _onClick: js.Any = js.native
     var _onKeyDown: js.Any = js.native
     var _rootElement: js.Any = js.native
-    /**
-      * Sets focus to the DocumentCard.
-      */
-    /* CompleteClass */
-    override def focus(): Unit = js.native
   }
   
   /* static members */

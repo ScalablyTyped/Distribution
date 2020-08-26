@@ -22,11 +22,30 @@ trait SchemaGoogleCloudServicebrokerV1beta1Operation extends js.Object {
 
 object SchemaGoogleCloudServicebrokerV1beta1Operation {
   @scala.inline
-  def apply(description: String = null, state: String = null): SchemaGoogleCloudServicebrokerV1beta1Operation = {
+  def apply(): SchemaGoogleCloudServicebrokerV1beta1Operation = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudServicebrokerV1beta1Operation]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudServicebrokerV1beta1OperationOps[Self <: SchemaGoogleCloudServicebrokerV1beta1Operation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

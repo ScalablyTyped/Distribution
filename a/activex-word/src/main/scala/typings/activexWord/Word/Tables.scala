@@ -14,6 +14,13 @@ trait Tables extends js.Object {
   @JSName("Word.Tables_typekey")
   var WordDotTables_typekey: Tables = js.native
   def Add(Range: Range, NumRows: Double, NumColumns: Double): Table = js.native
+  def Add(
+    Range: Range,
+    NumRows: Double,
+    NumColumns: Double,
+    DefaultTableBehavior: js.UndefOr[scala.Nothing],
+    AutoFitBehavior: js.Any
+  ): Table = js.native
   def Add(Range: Range, NumRows: Double, NumColumns: Double, DefaultTableBehavior: js.Any): Table = js.native
   def Add(
     Range: Range,

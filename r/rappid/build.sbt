@@ -1,19 +1,18 @@
 organization := "org.scalablytyped"
 name := "rappid"
-version := "1.5-dt-20190619Z-39be84"
-scalaVersion := "2.12.9"
+version := "1.5-dt-20200515Z-529eae"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "backbone" % "1.4-dt-20190619Z-f444dc",
-  "org.scalablytyped" %%% "jointjs" % "3.0.4-32771b",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190815Z-e99267",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-830e2a",
-  "org.scalablytyped" %%% "std" % "3.6-c16502",
-  "org.scalablytyped" %%% "underscore" % "1.9-dt-20190918Z-94766d")
+  "org.scalablytyped" %%% "backbone" % "1.4-dt-20200612Z-581380",
+  "org.scalablytyped" %%% "jointjs" % "3.2.0-07aaa7",
+  "org.scalablytyped" %%% "jquery" % "3.5-dt-20200621Z-02ea23",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20200515Z-078440",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13",
+  "org.scalablytyped" %%% "underscore" % "1.10-dt-20200724Z-76d649")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-P:scalajs:sjsDefinedByDefault", "-g:notailcalls")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
 bintrayRepository := "ScalablyTyped"
 resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-        

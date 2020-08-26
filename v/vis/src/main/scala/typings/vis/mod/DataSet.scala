@@ -20,6 +20,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     * @param [options] DataSet options.
     */
   def this(options: DataSetOptions) = this()
+  def this(data: js.UndefOr[scala.Nothing], options: DataSetOptions) = this()
   def this(data: js.Array[T], options: DataSetOptions) = this()
   /**
     * The number of items in the DataSet.

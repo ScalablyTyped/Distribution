@@ -12,7 +12,7 @@ The lodash method `_.stubTrue` exported as a module.
 | Keywords           | lodash-modularized, stubtrue |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 100360 |
+| # downloads        | 100490 |
 | # stars            | 0 |
 
 ## Links

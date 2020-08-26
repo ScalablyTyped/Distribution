@@ -11,8 +11,8 @@ Run shell commands before and after webpack builds
 | Full name          | webpack-shell-plugin |
 | Keywords           | webpack, shell, plugin, shell, serve, hmr, browser, script, opie, manion, 1337 |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 3876427 |
+| # dependents       | 35 |
+| # downloads        | 3938420 |
 | # stars            | 14 |
 
 ## Links

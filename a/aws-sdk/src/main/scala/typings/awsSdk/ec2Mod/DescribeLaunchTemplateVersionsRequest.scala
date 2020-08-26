@@ -15,11 +15,11 @@ trait DescribeLaunchTemplateVersionsRequest extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.native
   /**
-    * The ID of the launch template. You must specify either the launch template ID or launch template name in the request.
+    * The ID of the launch template. To describe one or more versions of a specified launch template, you must specify either the launch template ID or the launch template name in the request. To describe all the latest or default launch template versions in your account, you must omit this parameter.
     */
   var LaunchTemplateId: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateId] = js.native
   /**
-    * The name of the launch template. You must specify either the launch template ID or launch template name in the request.
+    * The name of the launch template. To describe one or more versions of a specified launch template, you must specify either the launch template ID or the launch template name in the request. To describe all the latest or default launch template versions in your account, you must omit this parameter.
     */
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.native
   /**
@@ -39,35 +39,69 @@ trait DescribeLaunchTemplateVersionsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[String] = js.native
   /**
-    * One or more versions of the launch template.
+    * One or more versions of the launch template. Valid values depend on whether you are describing a specified launch template (by ID or name) or all launch templates in your account. To describe one or more versions of a specified launch template, valid values are $Latest, $Default, and numbers. To describe all launch templates in your account that are defined as the latest version, the valid value is $Latest. To describe all launch templates in your account that are defined as the default version, the valid value is $Default. You can specify $Latest and $Default in the same call. You cannot specify numbers.
     */
   var Versions: js.UndefOr[VersionStringList] = js.native
 }
 
 object DescribeLaunchTemplateVersionsRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    LaunchTemplateId: LaunchTemplateId = null,
-    LaunchTemplateName: LaunchTemplateName = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    MaxVersion: String = null,
-    MinVersion: String = null,
-    NextToken: String = null,
-    Versions: VersionStringList = null
-  ): DescribeLaunchTemplateVersionsRequest = {
+  def apply(): DescribeLaunchTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (MaxVersion != null) __obj.updateDynamic("MaxVersion")(MaxVersion.asInstanceOf[js.Any])
-    if (MinVersion != null) __obj.updateDynamic("MinVersion")(MinVersion.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Versions != null) __obj.updateDynamic("Versions")(Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLaunchTemplateVersionsRequest]
   }
+  @scala.inline
+  implicit class DescribeLaunchTemplateVersionsRequestOps[Self <: DescribeLaunchTemplateVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setLaunchTemplateId(value: LaunchTemplateId): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMaxVersion(value: String): Self = this.set("MaxVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxVersion: Self = this.set("MaxVersion", js.undefined)
+    @scala.inline
+    def setMinVersion(value: String): Self = this.set("MinVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinVersion: Self = this.set("MinVersion", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: String*): Self = this.set("Versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: VersionStringList): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("Versions", js.undefined)
+  }
+  
 }
 

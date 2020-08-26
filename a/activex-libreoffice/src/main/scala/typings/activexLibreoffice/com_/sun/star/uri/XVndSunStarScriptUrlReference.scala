@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents absolute " vnd.sun.star.script " URL references. */
+@js.native
 trait XVndSunStarScriptUrlReference
   extends XUriReference
      with XVndSunStarScriptUrl

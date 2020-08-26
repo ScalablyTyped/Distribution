@@ -12,7 +12,7 @@ Produce URLs to test HTTP servers with ephemeral ports
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 180166 |
+| # downloads        | 195916 |
 | # stars            | 0 |
 
 ## Links

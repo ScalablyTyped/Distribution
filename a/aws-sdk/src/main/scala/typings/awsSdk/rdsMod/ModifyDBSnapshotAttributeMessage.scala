@@ -26,16 +26,38 @@ trait ModifyDBSnapshotAttributeMessage extends js.Object {
 
 object ModifyDBSnapshotAttributeMessage {
   @scala.inline
-  def apply(
-    AttributeName: String,
-    DBSnapshotIdentifier: String,
-    ValuesToAdd: AttributeValueList = null,
-    ValuesToRemove: AttributeValueList = null
-  ): ModifyDBSnapshotAttributeMessage = {
+  def apply(AttributeName: String, DBSnapshotIdentifier: String): ModifyDBSnapshotAttributeMessage = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], DBSnapshotIdentifier = DBSnapshotIdentifier.asInstanceOf[js.Any])
-    if (ValuesToAdd != null) __obj.updateDynamic("ValuesToAdd")(ValuesToAdd.asInstanceOf[js.Any])
-    if (ValuesToRemove != null) __obj.updateDynamic("ValuesToRemove")(ValuesToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyDBSnapshotAttributeMessage]
   }
+  @scala.inline
+  implicit class ModifyDBSnapshotAttributeMessageOps[Self <: ModifyDBSnapshotAttributeMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: String): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDBSnapshotIdentifier(value: String): Self = this.set("DBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValuesToAddVarargs(value: String*): Self = this.set("ValuesToAdd", js.Array(value :_*))
+    @scala.inline
+    def setValuesToAdd(value: AttributeValueList): Self = this.set("ValuesToAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuesToAdd: Self = this.set("ValuesToAdd", js.undefined)
+    @scala.inline
+    def setValuesToRemoveVarargs(value: String*): Self = this.set("ValuesToRemove", js.Array(value :_*))
+    @scala.inline
+    def setValuesToRemove(value: AttributeValueList): Self = this.set("ValuesToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuesToRemove: Self = this.set("ValuesToRemove", js.undefined)
+  }
+  
 }
 

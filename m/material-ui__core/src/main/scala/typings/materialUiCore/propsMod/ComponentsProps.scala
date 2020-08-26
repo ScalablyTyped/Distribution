@@ -180,178 +180,358 @@ trait ComponentsProps extends js.Object {
 
 object ComponentsProps {
   @scala.inline
-  def apply(
-    MuiAppBar: PartialAppBarProps = null,
-    MuiAvatar: PartialAvatarProps = null,
-    MuiBackdrop: PartialBackdropProps = null,
-    MuiBadge: PartialBadgeProps = null,
-    MuiBottomNavigation: PartialBottomNavigationPr = null,
-    MuiBottomNavigationAction: PartialBottomNavigationAc = null,
-    MuiButton: PartialButtonProps = null,
-    MuiButtonBase: PartialButtonBaseProps = null,
-    MuiCard: PartialCardProps = null,
-    MuiCardActions: PartialCardActionsProps = null,
-    MuiCardContent: PartialCardContentProps = null,
-    MuiCardHeader: PartialCardHeaderProps = null,
-    MuiCardMedia: PartialCardMediaProps = null,
-    MuiCheckbox: PartialCheckboxProps = null,
-    MuiChip: PartialChipProps = null,
-    MuiCircularProgress: PartialCircularProgressPr = null,
-    MuiCollapse: PartialCollapseProps = null,
-    MuiCssBaseline: PartialCssBaselineProps = null,
-    MuiDialog: PartialDialogProps = null,
-    MuiDialogActions: PartialDialogActionsProps = null,
-    MuiDialogContent: PartialDialogContentProps = null,
-    MuiDialogContentText: PartialDialogContentTextP = null,
-    MuiDialogTitle: PartialDialogTitleProps = null,
-    MuiDivider: PartialDividerProps = null,
-    MuiDrawer: PartialDrawerProps = null,
-    MuiExpansionPanel: PartialExpansionPanelProp = null,
-    MuiExpansionPanelActions: PartialExpansionPanelActi = null,
-    MuiExpansionPanelDetails: PartialExpansionPanelDeta = null,
-    MuiExpansionPanelSummary: PartialExpansionPanelSumm = null,
-    MuiFormControl: PartialFormControlProps = null,
-    MuiFormControlLabel: PartialFormControlLabelPr = null,
-    MuiFormGroup: PartialFormGroupProps = null,
-    MuiFormHelperText: PartialFormHelperTextProp = null,
-    MuiFormLabel: PartialFormLabelProps = null,
-    MuiGrid: PartialGridProps = null,
-    MuiGridList: PartialGridListProps = null,
-    MuiGridListTile: PartialGridListTileProps = null,
-    MuiGridListTileBar: PartialGridListTileBarPro = null,
-    MuiIcon: PartialIconProps = null,
-    MuiIconButton: PartialIconButtonProps = null,
-    MuiInput: PartialInputProps = null,
-    MuiInputAdornment: PartialInputAdornmentProp = null,
-    MuiInputLabel: PartialInputLabelProps = null,
-    MuiLinearProgress: PartialLinearProgressProp = null,
-    MuiList: PartialListProps = null,
-    MuiListItem: PartialListItemProps = null,
-    MuiListItemAvatar: PartialListItemAvatarProp = null,
-    MuiListItemIcon: PartialListItemIconProps = null,
-    MuiListItemSecondaryAction: PartialListItemSecondaryA = null,
-    MuiListItemText: PartialListItemTextProps = null,
-    MuiListSubheader: PartialListSubheaderProps = null,
-    MuiMenu: PartialMenuProps = null,
-    MuiMenuItem: PartialMenuItemProps = null,
-    MuiMobileStepper: PartialMobileStepperProps = null,
-    MuiModal: PartialModalProps = null,
-    MuiNativeSelect: PartialNativeSelectProps = null,
-    MuiPaper: PartialPaperProps = null,
-    MuiPopover: PartialPopoverProps = null,
-    MuiRadio: PartialRadioProps = null,
-    MuiSelect: PartialSelectProps = null,
-    MuiSnackbar: PartialSnackbarProps = null,
-    MuiSnackbarContent: PartialSnackbarContentPro = null,
-    MuiStep: PartialStepProps = null,
-    MuiStepButton: PartialStepButtonProps = null,
-    MuiStepConnector: PartialStepConnectorProps = null,
-    MuiStepContent: PartialStepContentProps = null,
-    MuiStepIcon: PartialStepIconProps = null,
-    MuiStepLabel: PartialStepLabelProps = null,
-    MuiStepper: PartialStepperProps = null,
-    MuiSvgIcon: PartialSvgIconProps = null,
-    MuiSwitch: PartialSwitchProps = null,
-    MuiSwitchBase: PartialSwitchBaseProps = null,
-    MuiTab: PartialTabProps = null,
-    MuiTable: PartialTableProps = null,
-    MuiTableCell: PartialTableCellProps = null,
-    MuiTablePagination: PartialTablePaginationPro = null,
-    MuiTableRow: PartialTableRowProps = null,
-    MuiTableSortLabel: PartialTableSortLabelProp = null,
-    MuiTabs: PartialTabsProps = null,
-    MuiToolbar: PartialToolbarProps = null,
-    MuiTooltip: PartialTooltipProps = null,
-    MuiTouchRipple: Partial[TouchRippleProps] = null,
-    MuiTypography: PartialTypographyProps = null,
-    MuiWithWidth: PartialWithWidthOptions = null
-  ): ComponentsProps = {
+  def apply(): ComponentsProps = {
     val __obj = js.Dynamic.literal()
-    if (MuiAppBar != null) __obj.updateDynamic("MuiAppBar")(MuiAppBar.asInstanceOf[js.Any])
-    if (MuiAvatar != null) __obj.updateDynamic("MuiAvatar")(MuiAvatar.asInstanceOf[js.Any])
-    if (MuiBackdrop != null) __obj.updateDynamic("MuiBackdrop")(MuiBackdrop.asInstanceOf[js.Any])
-    if (MuiBadge != null) __obj.updateDynamic("MuiBadge")(MuiBadge.asInstanceOf[js.Any])
-    if (MuiBottomNavigation != null) __obj.updateDynamic("MuiBottomNavigation")(MuiBottomNavigation.asInstanceOf[js.Any])
-    if (MuiBottomNavigationAction != null) __obj.updateDynamic("MuiBottomNavigationAction")(MuiBottomNavigationAction.asInstanceOf[js.Any])
-    if (MuiButton != null) __obj.updateDynamic("MuiButton")(MuiButton.asInstanceOf[js.Any])
-    if (MuiButtonBase != null) __obj.updateDynamic("MuiButtonBase")(MuiButtonBase.asInstanceOf[js.Any])
-    if (MuiCard != null) __obj.updateDynamic("MuiCard")(MuiCard.asInstanceOf[js.Any])
-    if (MuiCardActions != null) __obj.updateDynamic("MuiCardActions")(MuiCardActions.asInstanceOf[js.Any])
-    if (MuiCardContent != null) __obj.updateDynamic("MuiCardContent")(MuiCardContent.asInstanceOf[js.Any])
-    if (MuiCardHeader != null) __obj.updateDynamic("MuiCardHeader")(MuiCardHeader.asInstanceOf[js.Any])
-    if (MuiCardMedia != null) __obj.updateDynamic("MuiCardMedia")(MuiCardMedia.asInstanceOf[js.Any])
-    if (MuiCheckbox != null) __obj.updateDynamic("MuiCheckbox")(MuiCheckbox.asInstanceOf[js.Any])
-    if (MuiChip != null) __obj.updateDynamic("MuiChip")(MuiChip.asInstanceOf[js.Any])
-    if (MuiCircularProgress != null) __obj.updateDynamic("MuiCircularProgress")(MuiCircularProgress.asInstanceOf[js.Any])
-    if (MuiCollapse != null) __obj.updateDynamic("MuiCollapse")(MuiCollapse.asInstanceOf[js.Any])
-    if (MuiCssBaseline != null) __obj.updateDynamic("MuiCssBaseline")(MuiCssBaseline.asInstanceOf[js.Any])
-    if (MuiDialog != null) __obj.updateDynamic("MuiDialog")(MuiDialog.asInstanceOf[js.Any])
-    if (MuiDialogActions != null) __obj.updateDynamic("MuiDialogActions")(MuiDialogActions.asInstanceOf[js.Any])
-    if (MuiDialogContent != null) __obj.updateDynamic("MuiDialogContent")(MuiDialogContent.asInstanceOf[js.Any])
-    if (MuiDialogContentText != null) __obj.updateDynamic("MuiDialogContentText")(MuiDialogContentText.asInstanceOf[js.Any])
-    if (MuiDialogTitle != null) __obj.updateDynamic("MuiDialogTitle")(MuiDialogTitle.asInstanceOf[js.Any])
-    if (MuiDivider != null) __obj.updateDynamic("MuiDivider")(MuiDivider.asInstanceOf[js.Any])
-    if (MuiDrawer != null) __obj.updateDynamic("MuiDrawer")(MuiDrawer.asInstanceOf[js.Any])
-    if (MuiExpansionPanel != null) __obj.updateDynamic("MuiExpansionPanel")(MuiExpansionPanel.asInstanceOf[js.Any])
-    if (MuiExpansionPanelActions != null) __obj.updateDynamic("MuiExpansionPanelActions")(MuiExpansionPanelActions.asInstanceOf[js.Any])
-    if (MuiExpansionPanelDetails != null) __obj.updateDynamic("MuiExpansionPanelDetails")(MuiExpansionPanelDetails.asInstanceOf[js.Any])
-    if (MuiExpansionPanelSummary != null) __obj.updateDynamic("MuiExpansionPanelSummary")(MuiExpansionPanelSummary.asInstanceOf[js.Any])
-    if (MuiFormControl != null) __obj.updateDynamic("MuiFormControl")(MuiFormControl.asInstanceOf[js.Any])
-    if (MuiFormControlLabel != null) __obj.updateDynamic("MuiFormControlLabel")(MuiFormControlLabel.asInstanceOf[js.Any])
-    if (MuiFormGroup != null) __obj.updateDynamic("MuiFormGroup")(MuiFormGroup.asInstanceOf[js.Any])
-    if (MuiFormHelperText != null) __obj.updateDynamic("MuiFormHelperText")(MuiFormHelperText.asInstanceOf[js.Any])
-    if (MuiFormLabel != null) __obj.updateDynamic("MuiFormLabel")(MuiFormLabel.asInstanceOf[js.Any])
-    if (MuiGrid != null) __obj.updateDynamic("MuiGrid")(MuiGrid.asInstanceOf[js.Any])
-    if (MuiGridList != null) __obj.updateDynamic("MuiGridList")(MuiGridList.asInstanceOf[js.Any])
-    if (MuiGridListTile != null) __obj.updateDynamic("MuiGridListTile")(MuiGridListTile.asInstanceOf[js.Any])
-    if (MuiGridListTileBar != null) __obj.updateDynamic("MuiGridListTileBar")(MuiGridListTileBar.asInstanceOf[js.Any])
-    if (MuiIcon != null) __obj.updateDynamic("MuiIcon")(MuiIcon.asInstanceOf[js.Any])
-    if (MuiIconButton != null) __obj.updateDynamic("MuiIconButton")(MuiIconButton.asInstanceOf[js.Any])
-    if (MuiInput != null) __obj.updateDynamic("MuiInput")(MuiInput.asInstanceOf[js.Any])
-    if (MuiInputAdornment != null) __obj.updateDynamic("MuiInputAdornment")(MuiInputAdornment.asInstanceOf[js.Any])
-    if (MuiInputLabel != null) __obj.updateDynamic("MuiInputLabel")(MuiInputLabel.asInstanceOf[js.Any])
-    if (MuiLinearProgress != null) __obj.updateDynamic("MuiLinearProgress")(MuiLinearProgress.asInstanceOf[js.Any])
-    if (MuiList != null) __obj.updateDynamic("MuiList")(MuiList.asInstanceOf[js.Any])
-    if (MuiListItem != null) __obj.updateDynamic("MuiListItem")(MuiListItem.asInstanceOf[js.Any])
-    if (MuiListItemAvatar != null) __obj.updateDynamic("MuiListItemAvatar")(MuiListItemAvatar.asInstanceOf[js.Any])
-    if (MuiListItemIcon != null) __obj.updateDynamic("MuiListItemIcon")(MuiListItemIcon.asInstanceOf[js.Any])
-    if (MuiListItemSecondaryAction != null) __obj.updateDynamic("MuiListItemSecondaryAction")(MuiListItemSecondaryAction.asInstanceOf[js.Any])
-    if (MuiListItemText != null) __obj.updateDynamic("MuiListItemText")(MuiListItemText.asInstanceOf[js.Any])
-    if (MuiListSubheader != null) __obj.updateDynamic("MuiListSubheader")(MuiListSubheader.asInstanceOf[js.Any])
-    if (MuiMenu != null) __obj.updateDynamic("MuiMenu")(MuiMenu.asInstanceOf[js.Any])
-    if (MuiMenuItem != null) __obj.updateDynamic("MuiMenuItem")(MuiMenuItem.asInstanceOf[js.Any])
-    if (MuiMobileStepper != null) __obj.updateDynamic("MuiMobileStepper")(MuiMobileStepper.asInstanceOf[js.Any])
-    if (MuiModal != null) __obj.updateDynamic("MuiModal")(MuiModal.asInstanceOf[js.Any])
-    if (MuiNativeSelect != null) __obj.updateDynamic("MuiNativeSelect")(MuiNativeSelect.asInstanceOf[js.Any])
-    if (MuiPaper != null) __obj.updateDynamic("MuiPaper")(MuiPaper.asInstanceOf[js.Any])
-    if (MuiPopover != null) __obj.updateDynamic("MuiPopover")(MuiPopover.asInstanceOf[js.Any])
-    if (MuiRadio != null) __obj.updateDynamic("MuiRadio")(MuiRadio.asInstanceOf[js.Any])
-    if (MuiSelect != null) __obj.updateDynamic("MuiSelect")(MuiSelect.asInstanceOf[js.Any])
-    if (MuiSnackbar != null) __obj.updateDynamic("MuiSnackbar")(MuiSnackbar.asInstanceOf[js.Any])
-    if (MuiSnackbarContent != null) __obj.updateDynamic("MuiSnackbarContent")(MuiSnackbarContent.asInstanceOf[js.Any])
-    if (MuiStep != null) __obj.updateDynamic("MuiStep")(MuiStep.asInstanceOf[js.Any])
-    if (MuiStepButton != null) __obj.updateDynamic("MuiStepButton")(MuiStepButton.asInstanceOf[js.Any])
-    if (MuiStepConnector != null) __obj.updateDynamic("MuiStepConnector")(MuiStepConnector.asInstanceOf[js.Any])
-    if (MuiStepContent != null) __obj.updateDynamic("MuiStepContent")(MuiStepContent.asInstanceOf[js.Any])
-    if (MuiStepIcon != null) __obj.updateDynamic("MuiStepIcon")(MuiStepIcon.asInstanceOf[js.Any])
-    if (MuiStepLabel != null) __obj.updateDynamic("MuiStepLabel")(MuiStepLabel.asInstanceOf[js.Any])
-    if (MuiStepper != null) __obj.updateDynamic("MuiStepper")(MuiStepper.asInstanceOf[js.Any])
-    if (MuiSvgIcon != null) __obj.updateDynamic("MuiSvgIcon")(MuiSvgIcon.asInstanceOf[js.Any])
-    if (MuiSwitch != null) __obj.updateDynamic("MuiSwitch")(MuiSwitch.asInstanceOf[js.Any])
-    if (MuiSwitchBase != null) __obj.updateDynamic("MuiSwitchBase")(MuiSwitchBase.asInstanceOf[js.Any])
-    if (MuiTab != null) __obj.updateDynamic("MuiTab")(MuiTab.asInstanceOf[js.Any])
-    if (MuiTable != null) __obj.updateDynamic("MuiTable")(MuiTable.asInstanceOf[js.Any])
-    if (MuiTableCell != null) __obj.updateDynamic("MuiTableCell")(MuiTableCell.asInstanceOf[js.Any])
-    if (MuiTablePagination != null) __obj.updateDynamic("MuiTablePagination")(MuiTablePagination.asInstanceOf[js.Any])
-    if (MuiTableRow != null) __obj.updateDynamic("MuiTableRow")(MuiTableRow.asInstanceOf[js.Any])
-    if (MuiTableSortLabel != null) __obj.updateDynamic("MuiTableSortLabel")(MuiTableSortLabel.asInstanceOf[js.Any])
-    if (MuiTabs != null) __obj.updateDynamic("MuiTabs")(MuiTabs.asInstanceOf[js.Any])
-    if (MuiToolbar != null) __obj.updateDynamic("MuiToolbar")(MuiToolbar.asInstanceOf[js.Any])
-    if (MuiTooltip != null) __obj.updateDynamic("MuiTooltip")(MuiTooltip.asInstanceOf[js.Any])
-    if (MuiTouchRipple != null) __obj.updateDynamic("MuiTouchRipple")(MuiTouchRipple.asInstanceOf[js.Any])
-    if (MuiTypography != null) __obj.updateDynamic("MuiTypography")(MuiTypography.asInstanceOf[js.Any])
-    if (MuiWithWidth != null) __obj.updateDynamic("MuiWithWidth")(MuiWithWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentsProps]
   }
+  @scala.inline
+  implicit class ComponentsPropsOps[Self <: ComponentsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMuiAppBar(value: PartialAppBarProps): Self = this.set("MuiAppBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiAppBar: Self = this.set("MuiAppBar", js.undefined)
+    @scala.inline
+    def setMuiAvatar(value: PartialAvatarProps): Self = this.set("MuiAvatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiAvatar: Self = this.set("MuiAvatar", js.undefined)
+    @scala.inline
+    def setMuiBackdrop(value: PartialBackdropProps): Self = this.set("MuiBackdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiBackdrop: Self = this.set("MuiBackdrop", js.undefined)
+    @scala.inline
+    def setMuiBadge(value: PartialBadgeProps): Self = this.set("MuiBadge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiBadge: Self = this.set("MuiBadge", js.undefined)
+    @scala.inline
+    def setMuiBottomNavigation(value: PartialBottomNavigationPr): Self = this.set("MuiBottomNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiBottomNavigation: Self = this.set("MuiBottomNavigation", js.undefined)
+    @scala.inline
+    def setMuiBottomNavigationAction(value: PartialBottomNavigationAc): Self = this.set("MuiBottomNavigationAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiBottomNavigationAction: Self = this.set("MuiBottomNavigationAction", js.undefined)
+    @scala.inline
+    def setMuiButton(value: PartialButtonProps): Self = this.set("MuiButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiButton: Self = this.set("MuiButton", js.undefined)
+    @scala.inline
+    def setMuiButtonBase(value: PartialButtonBaseProps): Self = this.set("MuiButtonBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiButtonBase: Self = this.set("MuiButtonBase", js.undefined)
+    @scala.inline
+    def setMuiCard(value: PartialCardProps): Self = this.set("MuiCard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCard: Self = this.set("MuiCard", js.undefined)
+    @scala.inline
+    def setMuiCardActions(value: PartialCardActionsProps): Self = this.set("MuiCardActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCardActions: Self = this.set("MuiCardActions", js.undefined)
+    @scala.inline
+    def setMuiCardContent(value: PartialCardContentProps): Self = this.set("MuiCardContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCardContent: Self = this.set("MuiCardContent", js.undefined)
+    @scala.inline
+    def setMuiCardHeader(value: PartialCardHeaderProps): Self = this.set("MuiCardHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCardHeader: Self = this.set("MuiCardHeader", js.undefined)
+    @scala.inline
+    def setMuiCardMedia(value: PartialCardMediaProps): Self = this.set("MuiCardMedia", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCardMedia: Self = this.set("MuiCardMedia", js.undefined)
+    @scala.inline
+    def setMuiCheckbox(value: PartialCheckboxProps): Self = this.set("MuiCheckbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCheckbox: Self = this.set("MuiCheckbox", js.undefined)
+    @scala.inline
+    def setMuiChip(value: PartialChipProps): Self = this.set("MuiChip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiChip: Self = this.set("MuiChip", js.undefined)
+    @scala.inline
+    def setMuiCircularProgress(value: PartialCircularProgressPr): Self = this.set("MuiCircularProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCircularProgress: Self = this.set("MuiCircularProgress", js.undefined)
+    @scala.inline
+    def setMuiCollapse(value: PartialCollapseProps): Self = this.set("MuiCollapse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCollapse: Self = this.set("MuiCollapse", js.undefined)
+    @scala.inline
+    def setMuiCssBaseline(value: PartialCssBaselineProps): Self = this.set("MuiCssBaseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiCssBaseline: Self = this.set("MuiCssBaseline", js.undefined)
+    @scala.inline
+    def setMuiDialog(value: PartialDialogProps): Self = this.set("MuiDialog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDialog: Self = this.set("MuiDialog", js.undefined)
+    @scala.inline
+    def setMuiDialogActions(value: PartialDialogActionsProps): Self = this.set("MuiDialogActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDialogActions: Self = this.set("MuiDialogActions", js.undefined)
+    @scala.inline
+    def setMuiDialogContent(value: PartialDialogContentProps): Self = this.set("MuiDialogContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDialogContent: Self = this.set("MuiDialogContent", js.undefined)
+    @scala.inline
+    def setMuiDialogContentText(value: PartialDialogContentTextP): Self = this.set("MuiDialogContentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDialogContentText: Self = this.set("MuiDialogContentText", js.undefined)
+    @scala.inline
+    def setMuiDialogTitle(value: PartialDialogTitleProps): Self = this.set("MuiDialogTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDialogTitle: Self = this.set("MuiDialogTitle", js.undefined)
+    @scala.inline
+    def setMuiDivider(value: PartialDividerProps): Self = this.set("MuiDivider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDivider: Self = this.set("MuiDivider", js.undefined)
+    @scala.inline
+    def setMuiDrawer(value: PartialDrawerProps): Self = this.set("MuiDrawer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiDrawer: Self = this.set("MuiDrawer", js.undefined)
+    @scala.inline
+    def setMuiExpansionPanel(value: PartialExpansionPanelProp): Self = this.set("MuiExpansionPanel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiExpansionPanel: Self = this.set("MuiExpansionPanel", js.undefined)
+    @scala.inline
+    def setMuiExpansionPanelActions(value: PartialExpansionPanelActi): Self = this.set("MuiExpansionPanelActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiExpansionPanelActions: Self = this.set("MuiExpansionPanelActions", js.undefined)
+    @scala.inline
+    def setMuiExpansionPanelDetails(value: PartialExpansionPanelDeta): Self = this.set("MuiExpansionPanelDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiExpansionPanelDetails: Self = this.set("MuiExpansionPanelDetails", js.undefined)
+    @scala.inline
+    def setMuiExpansionPanelSummary(value: PartialExpansionPanelSumm): Self = this.set("MuiExpansionPanelSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiExpansionPanelSummary: Self = this.set("MuiExpansionPanelSummary", js.undefined)
+    @scala.inline
+    def setMuiFormControl(value: PartialFormControlProps): Self = this.set("MuiFormControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiFormControl: Self = this.set("MuiFormControl", js.undefined)
+    @scala.inline
+    def setMuiFormControlLabel(value: PartialFormControlLabelPr): Self = this.set("MuiFormControlLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiFormControlLabel: Self = this.set("MuiFormControlLabel", js.undefined)
+    @scala.inline
+    def setMuiFormGroup(value: PartialFormGroupProps): Self = this.set("MuiFormGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiFormGroup: Self = this.set("MuiFormGroup", js.undefined)
+    @scala.inline
+    def setMuiFormHelperText(value: PartialFormHelperTextProp): Self = this.set("MuiFormHelperText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiFormHelperText: Self = this.set("MuiFormHelperText", js.undefined)
+    @scala.inline
+    def setMuiFormLabel(value: PartialFormLabelProps): Self = this.set("MuiFormLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiFormLabel: Self = this.set("MuiFormLabel", js.undefined)
+    @scala.inline
+    def setMuiGrid(value: PartialGridProps): Self = this.set("MuiGrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiGrid: Self = this.set("MuiGrid", js.undefined)
+    @scala.inline
+    def setMuiGridList(value: PartialGridListProps): Self = this.set("MuiGridList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiGridList: Self = this.set("MuiGridList", js.undefined)
+    @scala.inline
+    def setMuiGridListTile(value: PartialGridListTileProps): Self = this.set("MuiGridListTile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiGridListTile: Self = this.set("MuiGridListTile", js.undefined)
+    @scala.inline
+    def setMuiGridListTileBar(value: PartialGridListTileBarPro): Self = this.set("MuiGridListTileBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiGridListTileBar: Self = this.set("MuiGridListTileBar", js.undefined)
+    @scala.inline
+    def setMuiIcon(value: PartialIconProps): Self = this.set("MuiIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiIcon: Self = this.set("MuiIcon", js.undefined)
+    @scala.inline
+    def setMuiIconButton(value: PartialIconButtonProps): Self = this.set("MuiIconButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiIconButton: Self = this.set("MuiIconButton", js.undefined)
+    @scala.inline
+    def setMuiInput(value: PartialInputProps): Self = this.set("MuiInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiInput: Self = this.set("MuiInput", js.undefined)
+    @scala.inline
+    def setMuiInputAdornment(value: PartialInputAdornmentProp): Self = this.set("MuiInputAdornment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiInputAdornment: Self = this.set("MuiInputAdornment", js.undefined)
+    @scala.inline
+    def setMuiInputLabel(value: PartialInputLabelProps): Self = this.set("MuiInputLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiInputLabel: Self = this.set("MuiInputLabel", js.undefined)
+    @scala.inline
+    def setMuiLinearProgress(value: PartialLinearProgressProp): Self = this.set("MuiLinearProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiLinearProgress: Self = this.set("MuiLinearProgress", js.undefined)
+    @scala.inline
+    def setMuiList(value: PartialListProps): Self = this.set("MuiList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiList: Self = this.set("MuiList", js.undefined)
+    @scala.inline
+    def setMuiListItem(value: PartialListItemProps): Self = this.set("MuiListItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiListItem: Self = this.set("MuiListItem", js.undefined)
+    @scala.inline
+    def setMuiListItemAvatar(value: PartialListItemAvatarProp): Self = this.set("MuiListItemAvatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiListItemAvatar: Self = this.set("MuiListItemAvatar", js.undefined)
+    @scala.inline
+    def setMuiListItemIcon(value: PartialListItemIconProps): Self = this.set("MuiListItemIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiListItemIcon: Self = this.set("MuiListItemIcon", js.undefined)
+    @scala.inline
+    def setMuiListItemSecondaryAction(value: PartialListItemSecondaryA): Self = this.set("MuiListItemSecondaryAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiListItemSecondaryAction: Self = this.set("MuiListItemSecondaryAction", js.undefined)
+    @scala.inline
+    def setMuiListItemText(value: PartialListItemTextProps): Self = this.set("MuiListItemText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiListItemText: Self = this.set("MuiListItemText", js.undefined)
+    @scala.inline
+    def setMuiListSubheader(value: PartialListSubheaderProps): Self = this.set("MuiListSubheader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiListSubheader: Self = this.set("MuiListSubheader", js.undefined)
+    @scala.inline
+    def setMuiMenu(value: PartialMenuProps): Self = this.set("MuiMenu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiMenu: Self = this.set("MuiMenu", js.undefined)
+    @scala.inline
+    def setMuiMenuItem(value: PartialMenuItemProps): Self = this.set("MuiMenuItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiMenuItem: Self = this.set("MuiMenuItem", js.undefined)
+    @scala.inline
+    def setMuiMobileStepper(value: PartialMobileStepperProps): Self = this.set("MuiMobileStepper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiMobileStepper: Self = this.set("MuiMobileStepper", js.undefined)
+    @scala.inline
+    def setMuiModal(value: PartialModalProps): Self = this.set("MuiModal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiModal: Self = this.set("MuiModal", js.undefined)
+    @scala.inline
+    def setMuiNativeSelect(value: PartialNativeSelectProps): Self = this.set("MuiNativeSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiNativeSelect: Self = this.set("MuiNativeSelect", js.undefined)
+    @scala.inline
+    def setMuiPaper(value: PartialPaperProps): Self = this.set("MuiPaper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiPaper: Self = this.set("MuiPaper", js.undefined)
+    @scala.inline
+    def setMuiPopover(value: PartialPopoverProps): Self = this.set("MuiPopover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiPopover: Self = this.set("MuiPopover", js.undefined)
+    @scala.inline
+    def setMuiRadio(value: PartialRadioProps): Self = this.set("MuiRadio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiRadio: Self = this.set("MuiRadio", js.undefined)
+    @scala.inline
+    def setMuiSelect(value: PartialSelectProps): Self = this.set("MuiSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiSelect: Self = this.set("MuiSelect", js.undefined)
+    @scala.inline
+    def setMuiSnackbar(value: PartialSnackbarProps): Self = this.set("MuiSnackbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiSnackbar: Self = this.set("MuiSnackbar", js.undefined)
+    @scala.inline
+    def setMuiSnackbarContent(value: PartialSnackbarContentPro): Self = this.set("MuiSnackbarContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiSnackbarContent: Self = this.set("MuiSnackbarContent", js.undefined)
+    @scala.inline
+    def setMuiStep(value: PartialStepProps): Self = this.set("MuiStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStep: Self = this.set("MuiStep", js.undefined)
+    @scala.inline
+    def setMuiStepButton(value: PartialStepButtonProps): Self = this.set("MuiStepButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStepButton: Self = this.set("MuiStepButton", js.undefined)
+    @scala.inline
+    def setMuiStepConnector(value: PartialStepConnectorProps): Self = this.set("MuiStepConnector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStepConnector: Self = this.set("MuiStepConnector", js.undefined)
+    @scala.inline
+    def setMuiStepContent(value: PartialStepContentProps): Self = this.set("MuiStepContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStepContent: Self = this.set("MuiStepContent", js.undefined)
+    @scala.inline
+    def setMuiStepIcon(value: PartialStepIconProps): Self = this.set("MuiStepIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStepIcon: Self = this.set("MuiStepIcon", js.undefined)
+    @scala.inline
+    def setMuiStepLabel(value: PartialStepLabelProps): Self = this.set("MuiStepLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStepLabel: Self = this.set("MuiStepLabel", js.undefined)
+    @scala.inline
+    def setMuiStepper(value: PartialStepperProps): Self = this.set("MuiStepper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiStepper: Self = this.set("MuiStepper", js.undefined)
+    @scala.inline
+    def setMuiSvgIcon(value: PartialSvgIconProps): Self = this.set("MuiSvgIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiSvgIcon: Self = this.set("MuiSvgIcon", js.undefined)
+    @scala.inline
+    def setMuiSwitch(value: PartialSwitchProps): Self = this.set("MuiSwitch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiSwitch: Self = this.set("MuiSwitch", js.undefined)
+    @scala.inline
+    def setMuiSwitchBase(value: PartialSwitchBaseProps): Self = this.set("MuiSwitchBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiSwitchBase: Self = this.set("MuiSwitchBase", js.undefined)
+    @scala.inline
+    def setMuiTab(value: PartialTabProps): Self = this.set("MuiTab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTab: Self = this.set("MuiTab", js.undefined)
+    @scala.inline
+    def setMuiTable(value: PartialTableProps): Self = this.set("MuiTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTable: Self = this.set("MuiTable", js.undefined)
+    @scala.inline
+    def setMuiTableCell(value: PartialTableCellProps): Self = this.set("MuiTableCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTableCell: Self = this.set("MuiTableCell", js.undefined)
+    @scala.inline
+    def setMuiTablePagination(value: PartialTablePaginationPro): Self = this.set("MuiTablePagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTablePagination: Self = this.set("MuiTablePagination", js.undefined)
+    @scala.inline
+    def setMuiTableRow(value: PartialTableRowProps): Self = this.set("MuiTableRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTableRow: Self = this.set("MuiTableRow", js.undefined)
+    @scala.inline
+    def setMuiTableSortLabel(value: PartialTableSortLabelProp): Self = this.set("MuiTableSortLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTableSortLabel: Self = this.set("MuiTableSortLabel", js.undefined)
+    @scala.inline
+    def setMuiTabs(value: PartialTabsProps): Self = this.set("MuiTabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTabs: Self = this.set("MuiTabs", js.undefined)
+    @scala.inline
+    def setMuiToolbar(value: PartialToolbarProps): Self = this.set("MuiToolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiToolbar: Self = this.set("MuiToolbar", js.undefined)
+    @scala.inline
+    def setMuiTooltip(value: PartialTooltipProps): Self = this.set("MuiTooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTooltip: Self = this.set("MuiTooltip", js.undefined)
+    @scala.inline
+    def setMuiTouchRipple(value: Partial[TouchRippleProps]): Self = this.set("MuiTouchRipple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTouchRipple: Self = this.set("MuiTouchRipple", js.undefined)
+    @scala.inline
+    def setMuiTypography(value: PartialTypographyProps): Self = this.set("MuiTypography", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiTypography: Self = this.set("MuiTypography", js.undefined)
+    @scala.inline
+    def setMuiWithWidth(value: PartialWithWidthOptions): Self = this.set("MuiWithWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuiWithWidth: Self = this.set("MuiWithWidth", js.undefined)
+  }
+  
 }
 

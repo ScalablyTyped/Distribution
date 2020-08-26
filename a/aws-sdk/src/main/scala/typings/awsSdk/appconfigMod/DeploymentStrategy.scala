@@ -42,26 +42,54 @@ trait DeploymentStrategy extends js.Object {
 
 object DeploymentStrategy {
   @scala.inline
-  def apply(
-    DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
-    Description: Description = null,
-    FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined,
-    GrowthFactor: js.UndefOr[Percentage] = js.undefined,
-    GrowthType: GrowthType = null,
-    Id: Id = null,
-    Name: Name = null,
-    ReplicateTo: ReplicateTo = null
-  ): DeploymentStrategy = {
+  def apply(): DeploymentStrategy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DeploymentDurationInMinutes)) __obj.updateDynamic("DeploymentDurationInMinutes")(DeploymentDurationInMinutes.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(FinalBakeTimeInMinutes)) __obj.updateDynamic("FinalBakeTimeInMinutes")(FinalBakeTimeInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GrowthFactor)) __obj.updateDynamic("GrowthFactor")(GrowthFactor.get.asInstanceOf[js.Any])
-    if (GrowthType != null) __obj.updateDynamic("GrowthType")(GrowthType.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ReplicateTo != null) __obj.updateDynamic("ReplicateTo")(ReplicateTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentStrategy]
   }
+  @scala.inline
+  implicit class DeploymentStrategyOps[Self <: DeploymentStrategy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = this.set("DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentDurationInMinutes: Self = this.set("DeploymentDurationInMinutes", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = this.set("FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalBakeTimeInMinutes: Self = this.set("FinalBakeTimeInMinutes", js.undefined)
+    @scala.inline
+    def setGrowthFactor(value: Percentage): Self = this.set("GrowthFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthFactor: Self = this.set("GrowthFactor", js.undefined)
+    @scala.inline
+    def setGrowthType(value: GrowthType): Self = this.set("GrowthType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrowthType: Self = this.set("GrowthType", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setReplicateTo(value: ReplicateTo): Self = this.set("ReplicateTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicateTo: Self = this.set("ReplicateTo", js.undefined)
+  }
+  
 }
 

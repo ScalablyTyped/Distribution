@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * implements {@link Backend} retrieving data from a {@link SingleBackend} .
   * @since OOo 1.1.2
   */
+@js.native
 trait BackendAdapter
   extends XSchemaSupplier
      with XBackend

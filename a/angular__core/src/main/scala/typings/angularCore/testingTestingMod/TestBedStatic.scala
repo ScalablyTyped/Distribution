@@ -44,10 +44,12 @@ trait TestBedStatic
   def get[T](token: InjectionToken[T]): js.Any = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = js.native
   def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
+  def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
   /** @deprecated from v9.0.0 use TestBed.inject */
   def get[T](token: Type[T]): js.Any = js.native
   def get[T](token: Type[T], notFoundValue: T): js.Any = js.native
   def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
+  def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
   def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef): TestBed = js.native
   def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): TestBed = js.native
   def initTestEnvironment(ngModule: Type[_], platform: PlatformRef): TestBed = js.native
@@ -55,14 +57,17 @@ trait TestBedStatic
   def inject[T](token: AbstractType[T]): T | Null = js.native
   def inject[T](token: AbstractType[T], notFoundValue: T): T = js.native
   def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def inject[T](token: AbstractType[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
   def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
   def inject[T](token: InjectionToken[T]): T | Null = js.native
   def inject[T](token: InjectionToken[T], notFoundValue: T): T = js.native
   def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def inject[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
   def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
   def inject[T](token: Type[T]): T | Null = js.native
   def inject[T](token: Type[T], notFoundValue: T): T = js.native
   def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def inject[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
   def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
   @JSName("inject")
   def inject_T_T[T](token: AbstractType[T]): T = js.native

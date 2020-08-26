@@ -30,19 +30,42 @@ trait UpdateGameServerGroupInput extends js.Object {
 
 object UpdateGameServerGroupInput {
   @scala.inline
-  def apply(
-    GameServerGroupName: GameServerGroupNameOrArn,
-    BalancingStrategy: BalancingStrategy = null,
-    GameServerProtectionPolicy: GameServerProtectionPolicy = null,
-    InstanceDefinitions: InstanceDefinitions = null,
-    RoleArn: IamRoleArn = null
-  ): UpdateGameServerGroupInput = {
+  def apply(GameServerGroupName: GameServerGroupNameOrArn): UpdateGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any])
-    if (BalancingStrategy != null) __obj.updateDynamic("BalancingStrategy")(BalancingStrategy.asInstanceOf[js.Any])
-    if (GameServerProtectionPolicy != null) __obj.updateDynamic("GameServerProtectionPolicy")(GameServerProtectionPolicy.asInstanceOf[js.Any])
-    if (InstanceDefinitions != null) __obj.updateDynamic("InstanceDefinitions")(InstanceDefinitions.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGameServerGroupInput]
   }
+  @scala.inline
+  implicit class UpdateGameServerGroupInputOps[Self <: UpdateGameServerGroupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBalancingStrategy(value: BalancingStrategy): Self = this.set("BalancingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBalancingStrategy: Self = this.set("BalancingStrategy", js.undefined)
+    @scala.inline
+    def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = this.set("GameServerProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerProtectionPolicy: Self = this.set("GameServerProtectionPolicy", js.undefined)
+    @scala.inline
+    def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = this.set("InstanceDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setInstanceDefinitions(value: InstanceDefinitions): Self = this.set("InstanceDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceDefinitions: Self = this.set("InstanceDefinitions", js.undefined)
+    @scala.inline
+    def setRoleArn(value: IamRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+  }
+  
 }
 

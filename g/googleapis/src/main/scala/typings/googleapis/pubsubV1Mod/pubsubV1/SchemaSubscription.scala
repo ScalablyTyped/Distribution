@@ -91,26 +91,54 @@ trait SchemaSubscription extends js.Object {
 
 object SchemaSubscription {
   @scala.inline
-  def apply(
-    ackDeadlineSeconds: js.UndefOr[Double] = js.undefined,
-    expirationPolicy: SchemaExpirationPolicy = null,
-    labels: StringDictionary[String] = null,
-    messageRetentionDuration: String = null,
-    name: String = null,
-    pushConfig: SchemaPushConfig = null,
-    retainAckedMessages: js.UndefOr[Boolean] = js.undefined,
-    topic: String = null
-  ): SchemaSubscription = {
+  def apply(): SchemaSubscription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ackDeadlineSeconds)) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.get.asInstanceOf[js.Any])
-    if (expirationPolicy != null) __obj.updateDynamic("expirationPolicy")(expirationPolicy.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (messageRetentionDuration != null) __obj.updateDynamic("messageRetentionDuration")(messageRetentionDuration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainAckedMessages)) __obj.updateDynamic("retainAckedMessages")(retainAckedMessages.get.asInstanceOf[js.Any])
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubscription]
   }
+  @scala.inline
+  implicit class SchemaSubscriptionOps[Self <: SchemaSubscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAckDeadlineSeconds(value: Double): Self = this.set("ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAckDeadlineSeconds: Self = this.set("ackDeadlineSeconds", js.undefined)
+    @scala.inline
+    def setExpirationPolicy(value: SchemaExpirationPolicy): Self = this.set("expirationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationPolicy: Self = this.set("expirationPolicy", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMessageRetentionDuration(value: String): Self = this.set("messageRetentionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageRetentionDuration: Self = this.set("messageRetentionDuration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPushConfig(value: SchemaPushConfig): Self = this.set("pushConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePushConfig: Self = this.set("pushConfig", js.undefined)
+    @scala.inline
+    def setRetainAckedMessages(value: Boolean): Self = this.set("retainAckedMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainAckedMessages: Self = this.set("retainAckedMessages", js.undefined)
+    @scala.inline
+    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopic: Self = this.set("topic", js.undefined)
+  }
+  
 }
 

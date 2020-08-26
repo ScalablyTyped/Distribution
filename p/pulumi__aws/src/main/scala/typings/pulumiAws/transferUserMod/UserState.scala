@@ -29,9 +29,9 @@ trait UserState extends js.Object {
     */
   val serverId: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The name used for log in to your SFTP server.
     */
@@ -40,24 +40,50 @@ trait UserState extends js.Object {
 
 object UserState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    homeDirectory: Input[String] = null,
-    policy: Input[String] = null,
-    role: Input[String] = null,
-    serverId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    userName: Input[String] = null
-  ): UserState = {
+  def apply(): UserState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (homeDirectory != null) __obj.updateDynamic("homeDirectory")(homeDirectory.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (serverId != null) __obj.updateDynamic("serverId")(serverId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserState]
   }
+  @scala.inline
+  implicit class UserStateOps[Self <: UserState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setHomeDirectory(value: Input[String]): Self = this.set("homeDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomeDirectory: Self = this.set("homeDirectory", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setRole(value: Input[String]): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setServerId(value: Input[String]): Self = this.set("serverId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerId: Self = this.set("serverId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUserName(value: Input[String]): Self = this.set("userName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserName: Self = this.set("userName", js.undefined)
+  }
+  
 }
 

@@ -19,14 +19,32 @@ trait NodeGroupResource extends js.Object {
 
 object NodeGroupResource {
   @scala.inline
-  def apply(
-    autoscalingGroups: Input[js.Array[Input[NodeGroupResourceAutoscalingGroup]]] = null,
-    remoteAccessSecurityGroupId: Input[String] = null
-  ): NodeGroupResource = {
+  def apply(): NodeGroupResource = {
     val __obj = js.Dynamic.literal()
-    if (autoscalingGroups != null) __obj.updateDynamic("autoscalingGroups")(autoscalingGroups.asInstanceOf[js.Any])
-    if (remoteAccessSecurityGroupId != null) __obj.updateDynamic("remoteAccessSecurityGroupId")(remoteAccessSecurityGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupResource]
   }
+  @scala.inline
+  implicit class NodeGroupResourceOps[Self <: NodeGroupResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingGroupsVarargs(value: Input[NodeGroupResourceAutoscalingGroup]*): Self = this.set("autoscalingGroups", js.Array(value :_*))
+    @scala.inline
+    def setAutoscalingGroups(value: Input[js.Array[Input[NodeGroupResourceAutoscalingGroup]]]): Self = this.set("autoscalingGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingGroups: Self = this.set("autoscalingGroups", js.undefined)
+    @scala.inline
+    def setRemoteAccessSecurityGroupId(value: Input[String]): Self = this.set("remoteAccessSecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteAccessSecurityGroupId: Self = this.set("remoteAccessSecurityGroupId", js.undefined)
+  }
+  
 }
 

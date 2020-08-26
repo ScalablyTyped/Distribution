@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GoogleActionsV2ExpectedIntent extends js.Object {
   /**
     * Additional configuration data required by a built-in intent. Possible
@@ -22,29 +23,51 @@ trait GoogleActionsV2ExpectedIntent extends js.Object {
     * `actions.intent.Link ->`
     * [google.actions.v2.LinkValueSpec]
     */
-  var inputValueData: js.UndefOr[ApiClientObjectMap[_]] = js.undefined
+  var inputValueData: js.UndefOr[ApiClientObjectMap[_]] = js.native
   /**
     * The built-in intent name, e.g. `actions.intent.TEXT`, or intents
     * defined in the action package. If the intent specified is not a built-in
     * intent, it is only used for speech biasing and the input provided by the
     * Google Assistant will be the `actions.intent.TEXT` intent.
     */
-  var intent: js.UndefOr[String] = js.undefined
+  var intent: js.UndefOr[String] = js.native
   /**
     * Optionally, a parameter of the intent that is being requested. Only valid
     * for requested intents. Used for speech biasing.
     */
-  var parameterName: js.UndefOr[String] = js.undefined
+  var parameterName: js.UndefOr[String] = js.native
 }
 
 object GoogleActionsV2ExpectedIntent {
   @scala.inline
-  def apply(inputValueData: ApiClientObjectMap[_] = null, intent: String = null, parameterName: String = null): GoogleActionsV2ExpectedIntent = {
+  def apply(): GoogleActionsV2ExpectedIntent = {
     val __obj = js.Dynamic.literal()
-    if (inputValueData != null) __obj.updateDynamic("inputValueData")(inputValueData.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoogleActionsV2ExpectedIntent]
   }
+  @scala.inline
+  implicit class GoogleActionsV2ExpectedIntentOps[Self <: GoogleActionsV2ExpectedIntent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputValueData(value: ApiClientObjectMap[_]): Self = this.set("inputValueData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputValueData: Self = this.set("inputValueData", js.undefined)
+    @scala.inline
+    def setIntent(value: String): Self = this.set("intent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntent: Self = this.set("intent", js.undefined)
+    @scala.inline
+    def setParameterName(value: String): Self = this.set("parameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterName: Self = this.set("parameterName", js.undefined)
+  }
+  
 }
 

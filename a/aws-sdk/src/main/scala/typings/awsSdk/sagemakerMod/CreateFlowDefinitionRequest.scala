@@ -42,16 +42,45 @@ object CreateFlowDefinitionRequest {
     FlowDefinitionName: FlowDefinitionName,
     HumanLoopConfig: HumanLoopConfig,
     OutputConfig: FlowDefinitionOutputConfig,
-    RoleArn: RoleArn,
-    HumanLoopActivationConfig: HumanLoopActivationConfig = null,
-    HumanLoopRequestSource: HumanLoopRequestSource = null,
-    Tags: TagList = null
+    RoleArn: RoleArn
   ): CreateFlowDefinitionRequest = {
     val __obj = js.Dynamic.literal(FlowDefinitionName = FlowDefinitionName.asInstanceOf[js.Any], HumanLoopConfig = HumanLoopConfig.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (HumanLoopActivationConfig != null) __obj.updateDynamic("HumanLoopActivationConfig")(HumanLoopActivationConfig.asInstanceOf[js.Any])
-    if (HumanLoopRequestSource != null) __obj.updateDynamic("HumanLoopRequestSource")(HumanLoopRequestSource.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFlowDefinitionRequest]
   }
+  @scala.inline
+  implicit class CreateFlowDefinitionRequestOps[Self <: CreateFlowDefinitionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlowDefinitionName(value: FlowDefinitionName): Self = this.set("FlowDefinitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHumanLoopConfig(value: HumanLoopConfig): Self = this.set("HumanLoopConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputConfig(value: FlowDefinitionOutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHumanLoopActivationConfig(value: HumanLoopActivationConfig): Self = this.set("HumanLoopActivationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanLoopActivationConfig: Self = this.set("HumanLoopActivationConfig", js.undefined)
+    @scala.inline
+    def setHumanLoopRequestSource(value: HumanLoopRequestSource): Self = this.set("HumanLoopRequestSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHumanLoopRequestSource: Self = this.set("HumanLoopRequestSource", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

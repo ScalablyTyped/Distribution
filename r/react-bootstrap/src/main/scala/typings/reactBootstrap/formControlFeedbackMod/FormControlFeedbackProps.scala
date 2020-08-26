@@ -6,24 +6,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormControlFeedbackProps
   extends AllHTMLAttributes[FormControlFeedback]
      with ClassAttributes[FormControlFeedback] {
-  var bsClass: js.UndefOr[String] = js.undefined
+  var bsClass: js.UndefOr[String] = js.native
 }
 
 object FormControlFeedbackProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[FormControlFeedback] = null,
-    ClassAttributes: ClassAttributes[FormControlFeedback] = null,
-    bsClass: String = null
-  ): FormControlFeedbackProps = {
+  def apply(): FormControlFeedbackProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormControlFeedbackProps]
   }
+  @scala.inline
+  implicit class FormControlFeedbackPropsOps[Self <: FormControlFeedbackProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBsClass(value: String): Self = this.set("bsClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsClass: Self = this.set("bsClass", js.undefined)
+  }
+  
 }
 

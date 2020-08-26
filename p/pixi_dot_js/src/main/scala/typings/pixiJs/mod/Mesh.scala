@@ -35,6 +35,12 @@ class Mesh protected ()
   def this(
     geometry: typings.pixiJs.PIXI.Geometry,
     shader: typings.pixiJs.PIXI.MeshMaterial,
+    state: js.UndefOr[scala.Nothing],
+    drawMode: Double
+  ) = this()
+  def this(
+    geometry: typings.pixiJs.PIXI.Geometry,
+    shader: typings.pixiJs.PIXI.MeshMaterial,
     state: typings.pixiJs.PIXI.State,
     drawMode: Double
   ) = this()

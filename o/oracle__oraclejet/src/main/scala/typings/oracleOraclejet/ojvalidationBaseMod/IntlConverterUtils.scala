@@ -14,6 +14,7 @@ object IntlConverterUtils extends js.Object {
   def getConverterInstance[T](converterOption: Converter[T]): Converter[T] | Null = js.native
   def getConverterInstance[T](converterOption: RegisteredConverter): Converter[T] | Null = js.native
   def getInitials(): js.UndefOr[String] = js.native
+  def getInitials(firstName: js.UndefOr[scala.Nothing], lastName: String): js.UndefOr[String] = js.native
   def getInitials(firstName: String): js.UndefOr[String] = js.native
   def getInitials(firstName: String, lastName: String): js.UndefOr[String] = js.native
   def getLocalTimeZoneOffset(): String = js.native

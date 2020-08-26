@@ -23,12 +23,15 @@ trait AxiosInstance extends js.Object {
   def options[T, R](url: String): js.Promise[R] = js.native
   def options[T, R](url: String, config: AxiosRequestConfig): js.Promise[R] = js.native
   def patch[T, R](url: String): js.Promise[R] = js.native
+  def patch[T, R](url: String, data: js.UndefOr[scala.Nothing], config: AxiosRequestConfig): js.Promise[R] = js.native
   def patch[T, R](url: String, data: js.Any): js.Promise[R] = js.native
   def patch[T, R](url: String, data: js.Any, config: AxiosRequestConfig): js.Promise[R] = js.native
   def post[T, R](url: String): js.Promise[R] = js.native
+  def post[T, R](url: String, data: js.UndefOr[scala.Nothing], config: AxiosRequestConfig): js.Promise[R] = js.native
   def post[T, R](url: String, data: js.Any): js.Promise[R] = js.native
   def post[T, R](url: String, data: js.Any, config: AxiosRequestConfig): js.Promise[R] = js.native
   def put[T, R](url: String): js.Promise[R] = js.native
+  def put[T, R](url: String, data: js.UndefOr[scala.Nothing], config: AxiosRequestConfig): js.Promise[R] = js.native
   def put[T, R](url: String, data: js.Any): js.Promise[R] = js.native
   def put[T, R](url: String, data: js.Any, config: AxiosRequestConfig): js.Promise[R] = js.native
   def request[T, R](config: AxiosRequestConfig): js.Promise[R] = js.native

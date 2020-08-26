@@ -30,20 +30,42 @@ trait RemediationExecutionStep extends js.Object {
 
 object RemediationExecutionStep {
   @scala.inline
-  def apply(
-    ErrorMessage: String = null,
-    Name: String = null,
-    StartTime: Date = null,
-    State: RemediationExecutionStepState = null,
-    StopTime: Date = null
-  ): RemediationExecutionStep = {
+  def apply(): RemediationExecutionStep = {
     val __obj = js.Dynamic.literal()
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StopTime != null) __obj.updateDynamic("StopTime")(StopTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemediationExecutionStep]
   }
+  @scala.inline
+  implicit class RemediationExecutionStepOps[Self <: RemediationExecutionStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStartTime(value: Date): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setState(value: RemediationExecutionStepState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStopTime(value: Date): Self = this.set("StopTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopTime: Self = this.set("StopTime", js.undefined)
+  }
+  
 }
 

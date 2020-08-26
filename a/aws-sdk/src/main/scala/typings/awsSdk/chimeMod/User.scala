@@ -62,35 +62,72 @@ trait User extends js.Object {
 
 object User {
   @scala.inline
-  def apply(
-    UserId: String,
-    AccountId: String = null,
-    AlexaForBusinessMetadata: AlexaForBusinessMetadata = null,
-    DisplayName: SensitiveString = null,
-    InvitedOn: Iso8601Timestamp = null,
-    LicenseType: License = null,
-    PersonalPIN: String = null,
-    PrimaryEmail: EmailAddress = null,
-    PrimaryProvisionedNumber: SensitiveString = null,
-    RegisteredOn: Iso8601Timestamp = null,
-    UserInvitationStatus: InviteStatus = null,
-    UserRegistrationStatus: RegistrationStatus = null,
-    UserType: UserType = null
-  ): User = {
+  def apply(UserId: String): User = {
     val __obj = js.Dynamic.literal(UserId = UserId.asInstanceOf[js.Any])
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (AlexaForBusinessMetadata != null) __obj.updateDynamic("AlexaForBusinessMetadata")(AlexaForBusinessMetadata.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (InvitedOn != null) __obj.updateDynamic("InvitedOn")(InvitedOn.asInstanceOf[js.Any])
-    if (LicenseType != null) __obj.updateDynamic("LicenseType")(LicenseType.asInstanceOf[js.Any])
-    if (PersonalPIN != null) __obj.updateDynamic("PersonalPIN")(PersonalPIN.asInstanceOf[js.Any])
-    if (PrimaryEmail != null) __obj.updateDynamic("PrimaryEmail")(PrimaryEmail.asInstanceOf[js.Any])
-    if (PrimaryProvisionedNumber != null) __obj.updateDynamic("PrimaryProvisionedNumber")(PrimaryProvisionedNumber.asInstanceOf[js.Any])
-    if (RegisteredOn != null) __obj.updateDynamic("RegisteredOn")(RegisteredOn.asInstanceOf[js.Any])
-    if (UserInvitationStatus != null) __obj.updateDynamic("UserInvitationStatus")(UserInvitationStatus.asInstanceOf[js.Any])
-    if (UserRegistrationStatus != null) __obj.updateDynamic("UserRegistrationStatus")(UserRegistrationStatus.asInstanceOf[js.Any])
-    if (UserType != null) __obj.updateDynamic("UserType")(UserType.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  @scala.inline
+  implicit class UserOps[Self <: User] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserId(value: String): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = this.set("AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlexaForBusinessMetadata: Self = this.set("AlexaForBusinessMetadata", js.undefined)
+    @scala.inline
+    def setDisplayName(value: SensitiveString): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setInvitedOn(value: Iso8601Timestamp): Self = this.set("InvitedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedOn: Self = this.set("InvitedOn", js.undefined)
+    @scala.inline
+    def setLicenseType(value: License): Self = this.set("LicenseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseType: Self = this.set("LicenseType", js.undefined)
+    @scala.inline
+    def setPersonalPIN(value: String): Self = this.set("PersonalPIN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonalPIN: Self = this.set("PersonalPIN", js.undefined)
+    @scala.inline
+    def setPrimaryEmail(value: EmailAddress): Self = this.set("PrimaryEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryEmail: Self = this.set("PrimaryEmail", js.undefined)
+    @scala.inline
+    def setPrimaryProvisionedNumber(value: SensitiveString): Self = this.set("PrimaryProvisionedNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryProvisionedNumber: Self = this.set("PrimaryProvisionedNumber", js.undefined)
+    @scala.inline
+    def setRegisteredOn(value: Iso8601Timestamp): Self = this.set("RegisteredOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredOn: Self = this.set("RegisteredOn", js.undefined)
+    @scala.inline
+    def setUserInvitationStatus(value: InviteStatus): Self = this.set("UserInvitationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserInvitationStatus: Self = this.set("UserInvitationStatus", js.undefined)
+    @scala.inline
+    def setUserRegistrationStatus(value: RegistrationStatus): Self = this.set("UserRegistrationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserRegistrationStatus: Self = this.set("UserRegistrationStatus", js.undefined)
+    @scala.inline
+    def setUserType(value: UserType): Self = this.set("UserType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserType: Self = this.set("UserType", js.undefined)
+  }
+  
 }
 

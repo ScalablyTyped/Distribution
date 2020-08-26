@@ -21,11 +21,30 @@ trait SchemaTlsCertificatePaths extends js.Object {
 
 object SchemaTlsCertificatePaths {
   @scala.inline
-  def apply(certificatePath: String = null, privateKeyPath: String = null): SchemaTlsCertificatePaths = {
+  def apply(): SchemaTlsCertificatePaths = {
     val __obj = js.Dynamic.literal()
-    if (certificatePath != null) __obj.updateDynamic("certificatePath")(certificatePath.asInstanceOf[js.Any])
-    if (privateKeyPath != null) __obj.updateDynamic("privateKeyPath")(privateKeyPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTlsCertificatePaths]
   }
+  @scala.inline
+  implicit class SchemaTlsCertificatePathsOps[Self <: SchemaTlsCertificatePaths] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificatePath(value: String): Self = this.set("certificatePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePath: Self = this.set("certificatePath", js.undefined)
+    @scala.inline
+    def setPrivateKeyPath(value: String): Self = this.set("privateKeyPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyPath: Self = this.set("privateKeyPath", js.undefined)
+  }
+  
 }
 

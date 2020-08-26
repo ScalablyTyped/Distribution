@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object duplexMockMod extends js.Object {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.node.NodeJS.EventEmitter because Already inherited
+  - typings.node.eventsMod.global.NodeJS.EventEmitter because Already inherited
   - typings.node.eventsMod.EventEmitter because Already inherited
-  - typings.node.NodeJS.EventEmitter because Already inherited
+  - typings.node.eventsMod.global.NodeJS.EventEmitter because Already inherited
   - typings.node.childProcessMod.StdioNull because Already inherited
   - typings.node.streamMod.internal because Already inherited
   - typings.node.NodeJS.ReadableStream because Already inherited
@@ -41,6 +41,7 @@ object duplexMockMod extends js.Object {
   class default () extends DuplexMock {
     def this(source: ArrayLike[_]) = this()
     def this(source: Iterable[_]) = this()
+    def this(source: js.UndefOr[scala.Nothing], options: DuplexOptions) = this()
     def this(source: ArrayLike[_], options: DuplexOptions) = this()
     def this(source: Iterable[_], options: DuplexOptions) = this()
   }

@@ -18,11 +18,30 @@ trait Ipv6Range extends js.Object {
 
 object Ipv6Range {
   @scala.inline
-  def apply(CidrIpv6: String = null, Description: String = null): Ipv6Range = {
+  def apply(): Ipv6Range = {
     val __obj = js.Dynamic.literal()
-    if (CidrIpv6 != null) __obj.updateDynamic("CidrIpv6")(CidrIpv6.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ipv6Range]
   }
+  @scala.inline
+  implicit class Ipv6RangeOps[Self <: Ipv6Range] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrIpv6(value: String): Self = this.set("CidrIpv6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrIpv6: Self = this.set("CidrIpv6", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

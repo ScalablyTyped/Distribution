@@ -26,16 +26,36 @@ trait UpdateWebACLRequest extends js.Object {
 
 object UpdateWebACLRequest {
   @scala.inline
-  def apply(
-    ChangeToken: ChangeToken,
-    WebACLId: ResourceId,
-    DefaultAction: WafAction = null,
-    Updates: WebACLUpdates = null
-  ): UpdateWebACLRequest = {
+  def apply(ChangeToken: ChangeToken, WebACLId: ResourceId): UpdateWebACLRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
-    if (DefaultAction != null) __obj.updateDynamic("DefaultAction")(DefaultAction.asInstanceOf[js.Any])
-    if (Updates != null) __obj.updateDynamic("Updates")(Updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWebACLRequest]
   }
+  @scala.inline
+  implicit class UpdateWebACLRequestOps[Self <: UpdateWebACLRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeToken(value: ChangeToken): Self = this.set("ChangeToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebACLId(value: ResourceId): Self = this.set("WebACLId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultAction(value: WafAction): Self = this.set("DefaultAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAction: Self = this.set("DefaultAction", js.undefined)
+    @scala.inline
+    def setUpdatesVarargs(value: WebACLUpdate*): Self = this.set("Updates", js.Array(value :_*))
+    @scala.inline
+    def setUpdates(value: WebACLUpdates): Self = this.set("Updates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdates: Self = this.set("Updates", js.undefined)
+  }
+  
 }
 

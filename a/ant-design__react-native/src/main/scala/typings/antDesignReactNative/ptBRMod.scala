@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/react-native/lib/date-picker/datepicker/locale/pt_BR", JSImport.Namespace)
+@JSImport("@ant-design/react-native/lib/date-picker-view/locale/pt_BR", JSImport.Namespace)
 @js.native
 object ptBRMod extends js.Object {
   @js.native

@@ -26,17 +26,38 @@ trait StartSimulationJobBatchRequest extends js.Object {
 
 object StartSimulationJobBatchRequest {
   @scala.inline
-  def apply(
-    createSimulationJobRequests: CreateSimulationJobRequests,
-    batchPolicy: BatchPolicy = null,
-    clientRequestToken: ClientRequestToken = null,
-    tags: TagMap = null
-  ): StartSimulationJobBatchRequest = {
+  def apply(createSimulationJobRequests: CreateSimulationJobRequests): StartSimulationJobBatchRequest = {
     val __obj = js.Dynamic.literal(createSimulationJobRequests = createSimulationJobRequests.asInstanceOf[js.Any])
-    if (batchPolicy != null) __obj.updateDynamic("batchPolicy")(batchPolicy.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSimulationJobBatchRequest]
   }
+  @scala.inline
+  implicit class StartSimulationJobBatchRequestOps[Self <: StartSimulationJobBatchRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateSimulationJobRequestsVarargs(value: SimulationJobRequest*): Self = this.set("createSimulationJobRequests", js.Array(value :_*))
+    @scala.inline
+    def setCreateSimulationJobRequests(value: CreateSimulationJobRequests): Self = this.set("createSimulationJobRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchPolicy(value: BatchPolicy): Self = this.set("batchPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchPolicy: Self = this.set("batchPolicy", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

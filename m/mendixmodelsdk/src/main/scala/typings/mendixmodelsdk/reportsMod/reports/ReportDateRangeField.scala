@@ -28,10 +28,10 @@ class ReportDateRangeField protected () extends Element {
   @JSName("model")
   var model_FReportDateRangeField: IModel = js.native
   def caption: Text = js.native
-  def caption(newValue: Text): js.Any = js.native
+  def caption_=(newValue: Text): Unit = js.native
   def containerAsReportDateRangeSelector: ReportDateRangeSelector = js.native
   def `type`: DateRangeFieldEnum = js.native
-  def `type`(newValue: DateRangeFieldEnum): js.Any = js.native
+  def type_=(newValue: DateRangeFieldEnum): Unit = js.native
 }
 
 /* static members */

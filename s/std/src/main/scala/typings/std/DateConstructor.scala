@@ -21,31 +21,37 @@ trait DateConstructor
     ]
      with Instantiable2[/* year */ Double, /* month */ Double, Date]
      with Instantiable3[/* year */ Double, /* month */ Double, /* date */ Double, Date]
-     with Instantiable4[/* year */ Double, /* month */ Double, /* date */ Double, /* hours */ Double, Date]
+     with Instantiable4[
+      /* year */ Double, 
+      /* month */ Double, 
+      js.UndefOr[/* date */ Double], 
+      /* hours */ Double, 
+      Date
+    ]
      with Instantiable5[
       /* year */ Double, 
       /* month */ Double, 
-      /* date */ Double, 
-      /* hours */ Double, 
+      js.UndefOr[/* date */ Double], 
+      js.UndefOr[/* hours */ Double], 
       /* minutes */ Double, 
       Date
     ]
      with Instantiable6[
       /* year */ Double, 
       /* month */ Double, 
-      /* date */ Double, 
-      /* hours */ Double, 
-      /* minutes */ Double, 
+      js.UndefOr[/* date */ Double], 
+      js.UndefOr[/* hours */ Double], 
+      js.UndefOr[/* minutes */ Double], 
       /* seconds */ Double, 
       Date
     ]
      with Instantiable7[
       /* year */ Double, 
       /* month */ Double, 
-      /* date */ Double, 
-      /* hours */ Double, 
-      /* minutes */ Double, 
-      /* seconds */ Double, 
+      js.UndefOr[/* date */ Double], 
+      js.UndefOr[/* hours */ Double], 
+      js.UndefOr[/* minutes */ Double], 
+      js.UndefOr[/* seconds */ Double], 
       /* ms */ Double, 
       Date
     ] {
@@ -61,9 +67,210 @@ trait DateConstructor
     * @param ms A number from 0 to 999 that specifies the milliseconds.
     */
   def UTC(year: Double, month: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: js.UndefOr[scala.Nothing], hours: Double, minutes: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Double,
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Double,
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
   def UTC(year: Double, month: Double, date: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
+  def UTC(year: Double, month: Double, date: Double, hours: js.UndefOr[scala.Nothing], minutes: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: js.UndefOr[scala.Nothing],
+    minutes: Double,
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
   def UTC(year: Double, month: Double, date: Double, hours: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double
+  ): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: js.UndefOr[scala.Nothing],
+    seconds: Double,
+    ms: Double
+  ): Double = js.native
   def UTC(year: Double, month: Double, date: Double, hours: Double, minutes: Double): Double = js.native
+  def UTC(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Double,
+    seconds: js.UndefOr[scala.Nothing],
+    ms: Double
+  ): Double = js.native
   def UTC(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
   def UTC(
     year: Double,

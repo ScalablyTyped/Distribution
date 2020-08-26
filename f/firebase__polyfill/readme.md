@@ -10,9 +10,9 @@ This is the a set of polyfills/shims used by the Firebase JS SDK. This package i
 | ------------------ | :-------------: |
 | Full name          | @firebase/polyfill |
 | Keywords           | - |
-| # releases         | 907 |
+| # releases         | 923 |
 | # dependents       | 10 |
-| # downloads        | 16626371 |
+| # downloads        | 16944694 |
 | # stars            | 0 |
 
 ## Links

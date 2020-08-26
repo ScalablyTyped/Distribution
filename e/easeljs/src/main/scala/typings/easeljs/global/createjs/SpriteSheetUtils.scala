@@ -19,7 +19,30 @@ object SpriteSheetUtils extends js.Object {
     * @deprecated
     */
   def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet): Unit = js.native
+  def addFlippedFrames(
+    spriteSheet: typings.easeljs.createjs.SpriteSheet,
+    horizontal: js.UndefOr[scala.Nothing],
+    vertical: js.UndefOr[scala.Nothing],
+    both: Boolean
+  ): Unit = js.native
+  def addFlippedFrames(
+    spriteSheet: typings.easeljs.createjs.SpriteSheet,
+    horizontal: js.UndefOr[scala.Nothing],
+    vertical: Boolean
+  ): Unit = js.native
+  def addFlippedFrames(
+    spriteSheet: typings.easeljs.createjs.SpriteSheet,
+    horizontal: js.UndefOr[scala.Nothing],
+    vertical: Boolean,
+    both: Boolean
+  ): Unit = js.native
   def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Boolean): Unit = js.native
+  def addFlippedFrames(
+    spriteSheet: typings.easeljs.createjs.SpriteSheet,
+    horizontal: Boolean,
+    vertical: js.UndefOr[scala.Nothing],
+    both: Boolean
+  ): Unit = js.native
   def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Boolean, vertical: Boolean): Unit = js.native
   def addFlippedFrames(
     spriteSheet: typings.easeljs.createjs.SpriteSheet,

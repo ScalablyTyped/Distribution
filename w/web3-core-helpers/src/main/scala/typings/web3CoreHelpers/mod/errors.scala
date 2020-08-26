@@ -20,6 +20,13 @@ object errors extends js.Object {
   def ConnectionNotOpenError(): Error = js.native
   def ConnectionTimeout(ms: String): Error = js.native
   def ContractCodeNotStoredError(receipt: js.Object): TransactionError = js.native
+  def ContractEventDoesNotExistError(eventName: String): Error = js.native
+  def ContractMissingABIError(): Error = js.native
+  def ContractMissingDeployDataError(): Error = js.native
+  def ContractNoAddressDefinedError(): Error = js.native
+  def ContractNoFromAddressDefinedError(): Error = js.native
+  def ContractOnceRequiresCallbackError(): Error = js.native
+  def ContractReservedEventError(`type`: String): Error = js.native
   def ErrorResponse(result: Error): Error = js.native
   def InvalidConnection(host: String): ConnectionError = js.native
   def InvalidConnection(host: String, event: WebSocketEvent): ConnectionError = js.native

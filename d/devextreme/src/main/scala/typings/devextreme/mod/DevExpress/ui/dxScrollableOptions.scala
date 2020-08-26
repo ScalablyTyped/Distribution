@@ -1,8 +1,5 @@
 package typings.devextreme.mod.DevExpress.ui
 
-import typings.devextreme.anon.Element
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.anon.ReachedRight
 import typings.devextreme.devextremeStrings.always
 import typings.devextreme.devextremeStrings.both
@@ -16,67 +13,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxScrollableOptions[T] extends DOMComponentOptions[T] {
   /** @name dxScrollable.Options.bounceEnabled */
-  var bounceEnabled: js.UndefOr[Boolean] = js.undefined
+  var bounceEnabled: js.UndefOr[Boolean] = js.native
   /** @name dxScrollable.Options.direction */
-  var direction: js.UndefOr[both | horizontal | vertical] = js.undefined
+  var direction: js.UndefOr[both | horizontal | vertical] = js.native
   /** @name dxScrollable.Options.disabled */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
   /** @name dxScrollable.Options.onScroll */
-  var onScroll: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.native
   /** @name dxScrollable.Options.onUpdated */
-  var onUpdated: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.undefined
+  var onUpdated: js.UndefOr[js.Function1[/* e */ ReachedRight[T], _]] = js.native
   /** @name dxScrollable.Options.scrollByContent */
-  var scrollByContent: js.UndefOr[Boolean] = js.undefined
+  var scrollByContent: js.UndefOr[Boolean] = js.native
   /** @name dxScrollable.Options.scrollByThumb */
-  var scrollByThumb: js.UndefOr[Boolean] = js.undefined
+  var scrollByThumb: js.UndefOr[Boolean] = js.native
   /** @name dxScrollable.Options.showScrollbar */
-  var showScrollbar: js.UndefOr[onScroll | onHover | always | never] = js.undefined
+  var showScrollbar: js.UndefOr[onScroll | onHover | always | never] = js.native
   /** @name dxScrollable.Options.useNative */
-  var useNative: js.UndefOr[Boolean] = js.undefined
+  var useNative: js.UndefOr[Boolean] = js.native
 }
 
 object dxScrollableOptions {
   @scala.inline
-  def apply[T](
-    bindingOptions: js.Any = null,
-    bounceEnabled: js.UndefOr[Boolean] = js.undefined,
-    direction: both | horizontal | vertical = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    onDisposing: /* e */ Model[T] => _ = null,
-    onInitialized: /* e */ Element[T] => _ = null,
-    onOptionChanged: /* e */ Name[T] => _ = null,
-    onScroll: /* e */ ReachedRight[T] => _ = null,
-    onUpdated: /* e */ ReachedRight[T] => _ = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrollByContent: js.UndefOr[Boolean] = js.undefined,
-    scrollByThumb: js.UndefOr[Boolean] = js.undefined,
-    showScrollbar: onScroll | onHover | always | never = null,
-    useNative: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxScrollableOptions[T] = {
+  def apply[T](): dxScrollableOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounceEnabled)) __obj.updateDynamic("bounceEnabled")(bounceEnabled.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onUpdated != null) __obj.updateDynamic("onUpdated")(js.Any.fromFunction1(onUpdated))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByContent)) __obj.updateDynamic("scrollByContent")(scrollByContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollByThumb)) __obj.updateDynamic("scrollByThumb")(scrollByThumb.get.asInstanceOf[js.Any])
-    if (showScrollbar != null) __obj.updateDynamic("showScrollbar")(showScrollbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNative)) __obj.updateDynamic("useNative")(useNative.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxScrollableOptions[T]]
   }
+  @scala.inline
+  implicit class dxScrollableOptionsOps[Self <: dxScrollableOptions[_], T] (val x: Self with dxScrollableOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounceEnabled(value: Boolean): Self = this.set("bounceEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounceEnabled: Self = this.set("bounceEnabled", js.undefined)
+    @scala.inline
+    def setDirection(value: both | horizontal | vertical): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOnScroll(value: /* e */ ReachedRight[T] => _): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnUpdated(value: /* e */ ReachedRight[T] => _): Self = this.set("onUpdated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUpdated: Self = this.set("onUpdated", js.undefined)
+    @scala.inline
+    def setScrollByContent(value: Boolean): Self = this.set("scrollByContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollByContent: Self = this.set("scrollByContent", js.undefined)
+    @scala.inline
+    def setScrollByThumb(value: Boolean): Self = this.set("scrollByThumb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollByThumb: Self = this.set("scrollByThumb", js.undefined)
+    @scala.inline
+    def setShowScrollbar(value: onScroll | onHover | always | never): Self = this.set("showScrollbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowScrollbar: Self = this.set("showScrollbar", js.undefined)
+    @scala.inline
+    def setUseNative(value: Boolean): Self = this.set("useNative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseNative: Self = this.set("useNative", js.undefined)
+  }
+  
 }
 

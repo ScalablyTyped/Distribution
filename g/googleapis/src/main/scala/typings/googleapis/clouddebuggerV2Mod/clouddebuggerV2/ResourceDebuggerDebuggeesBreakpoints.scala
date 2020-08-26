@@ -80,6 +80,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceDebuggerDebuggeesBreakpointsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceDebuggerDebuggeesBreakpointsDelete,
@@ -166,6 +167,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaGetBreakpointResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
   def get(params: ParamsResourceDebuggerDebuggeesBreakpointsGet): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
   def get(
     params: ParamsResourceDebuggerDebuggeesBreakpointsGet,
@@ -253,6 +255,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBreakpointsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
   def list(params: ParamsResourceDebuggerDebuggeesBreakpointsList): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
   def list(
     params: ParamsResourceDebuggerDebuggeesBreakpointsList,
@@ -340,6 +343,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends js.Object {
     */
   def set(): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
   def set(callback: BodyResponseCallback[SchemaSetBreakpointResponse]): Unit = js.native
+  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
   def set(params: ParamsResourceDebuggerDebuggeesBreakpointsSet): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
   def set(
     params: ParamsResourceDebuggerDebuggeesBreakpointsSet,

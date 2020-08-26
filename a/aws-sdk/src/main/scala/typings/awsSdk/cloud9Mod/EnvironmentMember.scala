@@ -30,20 +30,42 @@ trait EnvironmentMember extends js.Object {
 
 object EnvironmentMember {
   @scala.inline
-  def apply(
-    environmentId: EnvironmentId = null,
-    lastAccess: Timestamp = null,
-    permissions: Permissions = null,
-    userArn: UserArn = null,
-    userId: String = null
-  ): EnvironmentMember = {
+  def apply(): EnvironmentMember = {
     val __obj = js.Dynamic.literal()
-    if (environmentId != null) __obj.updateDynamic("environmentId")(environmentId.asInstanceOf[js.Any])
-    if (lastAccess != null) __obj.updateDynamic("lastAccess")(lastAccess.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
-    if (userArn != null) __obj.updateDynamic("userArn")(userArn.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentMember]
   }
+  @scala.inline
+  implicit class EnvironmentMemberOps[Self <: EnvironmentMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironmentId(value: EnvironmentId): Self = this.set("environmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentId: Self = this.set("environmentId", js.undefined)
+    @scala.inline
+    def setLastAccess(value: Timestamp): Self = this.set("lastAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccess: Self = this.set("lastAccess", js.undefined)
+    @scala.inline
+    def setPermissions(value: Permissions): Self = this.set("permissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissions: Self = this.set("permissions", js.undefined)
+    @scala.inline
+    def setUserArn(value: UserArn): Self = this.set("userArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserArn: Self = this.set("userArn", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

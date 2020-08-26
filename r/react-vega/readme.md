@@ -10,9 +10,9 @@ Convert Vega spec into React class conveniently
 | ------------------ | :-------------: |
 | Full name          | react-vega |
 | Keywords           | - |
-| # releases         | 14 |
+| # releases         | 13 |
 | # dependents       | 9 |
-| # downloads        | 140338 |
+| # downloads        | 154301 |
 | # stars            | 0 |
 
 ## Links

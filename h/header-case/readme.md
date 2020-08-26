@@ -10,9 +10,9 @@ Transform into a dash separated string of capitalized words
 | ------------------ | :-------------: |
 | Full name          | header-case |
 | Keywords           | header, case, dash, hyphen, capitalize, convert, transform |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 33452843 |
+| # releases         | 5 |
+| # dependents       | 8 |
+| # downloads        | 34656328 |
 | # stars            | 0 |
 
 ## Links

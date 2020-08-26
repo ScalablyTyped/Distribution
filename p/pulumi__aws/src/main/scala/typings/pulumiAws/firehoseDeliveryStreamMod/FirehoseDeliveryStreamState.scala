@@ -59,9 +59,9 @@ trait FirehoseDeliveryStreamState extends js.Object {
   val serverSideEncryption: js.UndefOr[Input[FirehoseDeliveryStreamServerSideEncryption]] = js.native
   val splunkConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamSplunkConfiguration]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Specifies the table version for the output data schema. Defaults to `LATEST`.
     */
@@ -70,36 +70,74 @@ trait FirehoseDeliveryStreamState extends js.Object {
 
 object FirehoseDeliveryStreamState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    destination: Input[String] = null,
-    destinationId: Input[String] = null,
-    elasticsearchConfiguration: Input[FirehoseDeliveryStreamElasticsearchConfiguration] = null,
-    extendedS3Configuration: Input[FirehoseDeliveryStreamExtendedS3Configuration] = null,
-    kinesisSourceConfiguration: Input[FirehoseDeliveryStreamKinesisSourceConfiguration] = null,
-    name: Input[String] = null,
-    redshiftConfiguration: Input[FirehoseDeliveryStreamRedshiftConfiguration] = null,
-    s3Configuration: Input[FirehoseDeliveryStreamS3Configuration] = null,
-    serverSideEncryption: Input[FirehoseDeliveryStreamServerSideEncryption] = null,
-    splunkConfiguration: Input[FirehoseDeliveryStreamSplunkConfiguration] = null,
-    tags: Input[StringDictionary[_]] = null,
-    versionId: Input[String] = null
-  ): FirehoseDeliveryStreamState = {
+  def apply(): FirehoseDeliveryStreamState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (destinationId != null) __obj.updateDynamic("destinationId")(destinationId.asInstanceOf[js.Any])
-    if (elasticsearchConfiguration != null) __obj.updateDynamic("elasticsearchConfiguration")(elasticsearchConfiguration.asInstanceOf[js.Any])
-    if (extendedS3Configuration != null) __obj.updateDynamic("extendedS3Configuration")(extendedS3Configuration.asInstanceOf[js.Any])
-    if (kinesisSourceConfiguration != null) __obj.updateDynamic("kinesisSourceConfiguration")(kinesisSourceConfiguration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (redshiftConfiguration != null) __obj.updateDynamic("redshiftConfiguration")(redshiftConfiguration.asInstanceOf[js.Any])
-    if (s3Configuration != null) __obj.updateDynamic("s3Configuration")(s3Configuration.asInstanceOf[js.Any])
-    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
-    if (splunkConfiguration != null) __obj.updateDynamic("splunkConfiguration")(splunkConfiguration.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamState]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamStateOps[Self <: FirehoseDeliveryStreamState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDestination(value: Input[String]): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setDestinationId(value: Input[String]): Self = this.set("destinationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationId: Self = this.set("destinationId", js.undefined)
+    @scala.inline
+    def setElasticsearchConfiguration(value: Input[FirehoseDeliveryStreamElasticsearchConfiguration]): Self = this.set("elasticsearchConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchConfiguration: Self = this.set("elasticsearchConfiguration", js.undefined)
+    @scala.inline
+    def setExtendedS3Configuration(value: Input[FirehoseDeliveryStreamExtendedS3Configuration]): Self = this.set("extendedS3Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedS3Configuration: Self = this.set("extendedS3Configuration", js.undefined)
+    @scala.inline
+    def setKinesisSourceConfiguration(value: Input[FirehoseDeliveryStreamKinesisSourceConfiguration]): Self = this.set("kinesisSourceConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisSourceConfiguration: Self = this.set("kinesisSourceConfiguration", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRedshiftConfiguration(value: Input[FirehoseDeliveryStreamRedshiftConfiguration]): Self = this.set("redshiftConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftConfiguration: Self = this.set("redshiftConfiguration", js.undefined)
+    @scala.inline
+    def setS3Configuration(value: Input[FirehoseDeliveryStreamS3Configuration]): Self = this.set("s3Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Configuration: Self = this.set("s3Configuration", js.undefined)
+    @scala.inline
+    def setServerSideEncryption(value: Input[FirehoseDeliveryStreamServerSideEncryption]): Self = this.set("serverSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryption: Self = this.set("serverSideEncryption", js.undefined)
+    @scala.inline
+    def setSplunkConfiguration(value: Input[FirehoseDeliveryStreamSplunkConfiguration]): Self = this.set("splunkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplunkConfiguration: Self = this.set("splunkConfiguration", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersionId(value: Input[String]): Self = this.set("versionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("versionId", js.undefined)
+  }
+  
 }
 

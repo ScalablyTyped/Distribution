@@ -18,11 +18,32 @@ trait UtteranceList extends js.Object {
 
 object UtteranceList {
   @scala.inline
-  def apply(botVersion: Version = null, utterances: ListOfUtterance = null): UtteranceList = {
+  def apply(): UtteranceList = {
     val __obj = js.Dynamic.literal()
-    if (botVersion != null) __obj.updateDynamic("botVersion")(botVersion.asInstanceOf[js.Any])
-    if (utterances != null) __obj.updateDynamic("utterances")(utterances.asInstanceOf[js.Any])
     __obj.asInstanceOf[UtteranceList]
   }
+  @scala.inline
+  implicit class UtteranceListOps[Self <: UtteranceList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotVersion(value: Version): Self = this.set("botVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBotVersion: Self = this.set("botVersion", js.undefined)
+    @scala.inline
+    def setUtterancesVarargs(value: UtteranceData*): Self = this.set("utterances", js.Array(value :_*))
+    @scala.inline
+    def setUtterances(value: ListOfUtterance): Self = this.set("utterances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtterances: Self = this.set("utterances", js.undefined)
+  }
+  
 }
 

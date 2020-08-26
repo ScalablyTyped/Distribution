@@ -12,7 +12,7 @@ http://jeromeetienne.github.com/jquery-qrcode
 | Keywords           | jquery, qrcode |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 60545 |
+| # downloads        | 65205 |
 | # stars            | 2 |
 
 ## Links

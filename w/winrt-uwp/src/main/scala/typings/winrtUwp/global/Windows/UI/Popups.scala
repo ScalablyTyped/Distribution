@@ -1,9 +1,5 @@
 package typings.winrtUwp.global.Windows.UI
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.UI.Popups.IUICommand
-import typings.winrtUwp.Windows.UI.Popups.MessageDialogOptions
 import typings.winrtUwp.Windows.UI.Popups.UICommandInvokedHandler
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -28,30 +24,6 @@ object Popups extends js.Object {
       * @param title The title you want displayed on the dialog.
       */
     def this(content: String, title: String) = this()
-    /** Gets or sets the index of the command you want to use as the cancel command. This is the command that fires when users press the ESC key. */
-    /* CompleteClass */
-    override var cancelCommandIndex: Double = js.native
-    /** Gets an array of commands that appear in the command bar of the message dialog. These commands makes the dialog actionable. */
-    /* CompleteClass */
-    override var commands: IVector[IUICommand] = js.native
-    /** Gets or sets the message to be displayed to the user. */
-    /* CompleteClass */
-    override var content: String = js.native
-    /** Gets or sets the index of the command you want to use as the default. This is the command that fires by default when users press the ENTER key. */
-    /* CompleteClass */
-    override var defaultCommandIndex: Double = js.native
-    /** Gets or sets the options for a MessageDialog . */
-    /* CompleteClass */
-    override var options: MessageDialogOptions = js.native
-    /** Gets or sets the title to display on the dialog, if any. */
-    /* CompleteClass */
-    override var title: String = js.native
-    /**
-      * Begins an asynchronous operation showing a dialog.
-      * @return An object that represents the asynchronous operation. For more on the async pattern, see Asynchronous programming.
-      */
-    /* CompleteClass */
-    override def showAsync(): IPromiseWithIAsyncOperation[IUICommand] = js.native
   }
   
   /** Represents a context menu. */

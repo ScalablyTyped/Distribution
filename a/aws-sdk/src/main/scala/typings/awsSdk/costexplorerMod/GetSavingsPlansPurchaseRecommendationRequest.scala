@@ -35,7 +35,7 @@ trait GetSavingsPlansPurchaseRecommendationRequest extends js.Object {
     */
   var SavingsPlansType: SupportedSavingsPlansType = js.native
   /**
-    * The savings plan recommendation term used to generated these recommendations.
+    * The savings plan recommendation term used to generate these recommendations.
     */
   var TermInYears: typings.awsSdk.costexplorerMod.TermInYears = js.native
 }
@@ -46,18 +46,47 @@ object GetSavingsPlansPurchaseRecommendationRequest {
     LookbackPeriodInDays: LookbackPeriodInDays,
     PaymentOption: PaymentOption,
     SavingsPlansType: SupportedSavingsPlansType,
-    TermInYears: TermInYears,
-    AccountScope: AccountScope = null,
-    Filter: Expression = null,
-    NextPageToken: NextPageToken = null,
-    PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
+    TermInYears: TermInYears
   ): GetSavingsPlansPurchaseRecommendationRequest = {
     val __obj = js.Dynamic.literal(LookbackPeriodInDays = LookbackPeriodInDays.asInstanceOf[js.Any], PaymentOption = PaymentOption.asInstanceOf[js.Any], SavingsPlansType = SavingsPlansType.asInstanceOf[js.Any], TermInYears = TermInYears.asInstanceOf[js.Any])
-    if (AccountScope != null) __obj.updateDynamic("AccountScope")(AccountScope.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(PageSize)) __obj.updateDynamic("PageSize")(PageSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansPurchaseRecommendationRequest]
   }
+  @scala.inline
+  implicit class GetSavingsPlansPurchaseRecommendationRequestOps[Self <: GetSavingsPlansPurchaseRecommendationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = this.set("LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaymentOption(value: PaymentOption): Self = this.set("PaymentOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSavingsPlansType(value: SupportedSavingsPlansType): Self = this.set("SavingsPlansType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTermInYears(value: TermInYears): Self = this.set("TermInYears", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccountScope(value: AccountScope): Self = this.set("AccountScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountScope: Self = this.set("AccountScope", js.undefined)
+    @scala.inline
+    def setFilter(value: Expression): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: NextPageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setPageSize(value: NonNegativeInteger): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+  }
+  
 }
 

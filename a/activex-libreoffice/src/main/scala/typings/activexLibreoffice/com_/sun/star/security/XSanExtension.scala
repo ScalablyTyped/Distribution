@@ -11,9 +11,10 @@ import scala.scalajs.js.annotation._
   *
   * This interface represents a x509 certificate extension.
   */
+@js.native
 trait XSanExtension extends XCertificateExtension {
   /** Contains the alternative names of a certificate */
-  var AlternativeNames: SafeArray[CertAltNameEntry]
+  var AlternativeNames: SafeArray[CertAltNameEntry] = js.native
 }
 
 object XSanExtension {
@@ -30,5 +31,20 @@ object XSanExtension {
     val __obj = js.Dynamic.literal(AlternativeNames = AlternativeNames.asInstanceOf[js.Any], ExtensionId = ExtensionId.asInstanceOf[js.Any], ExtensionValue = ExtensionValue.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), isCritical = js.Any.fromFunction0(isCritical), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XSanExtension]
   }
+  @scala.inline
+  implicit class XSanExtensionOps[Self <: XSanExtension] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternativeNames(value: SafeArray[CertAltNameEntry]): Self = this.set("AlternativeNames", value.asInstanceOf[js.Any])
+  }
+  
 }
 

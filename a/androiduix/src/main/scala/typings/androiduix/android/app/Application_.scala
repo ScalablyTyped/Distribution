@@ -7,9 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.app.Application")
 @js.native
-class Application_ () extends Context {
+trait Application_ extends Context {
   var mActivityLifecycleCallbacks: js.Any = js.native
   var mWindowManager: js.Any = js.native
   /* private */ def collectActivityLifecycleCallbacks(): js.Any = js.native

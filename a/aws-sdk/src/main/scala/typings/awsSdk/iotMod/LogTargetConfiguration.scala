@@ -18,11 +18,30 @@ trait LogTargetConfiguration extends js.Object {
 
 object LogTargetConfiguration {
   @scala.inline
-  def apply(logLevel: LogLevel = null, logTarget: LogTarget = null): LogTargetConfiguration = {
+  def apply(): LogTargetConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logTarget != null) __obj.updateDynamic("logTarget")(logTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogTargetConfiguration]
   }
+  @scala.inline
+  implicit class LogTargetConfigurationOps[Self <: LogTargetConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogLevel(value: LogLevel): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setLogTarget(value: LogTarget): Self = this.set("logTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogTarget: Self = this.set("logTarget", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,42 @@ trait ListSigningJobsRequest extends js.Object {
 
 object ListSigningJobsRequest {
   @scala.inline
-  def apply(
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    platformId: PlatformId = null,
-    requestedBy: RequestedBy = null,
-    status: SigningStatus = null
-  ): ListSigningJobsRequest = {
+  def apply(): ListSigningJobsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (platformId != null) __obj.updateDynamic("platformId")(platformId.asInstanceOf[js.Any])
-    if (requestedBy != null) __obj.updateDynamic("requestedBy")(requestedBy.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSigningJobsRequest]
   }
+  @scala.inline
+  implicit class ListSigningJobsRequestOps[Self <: ListSigningJobsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setPlatformId(value: PlatformId): Self = this.set("platformId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformId: Self = this.set("platformId", js.undefined)
+    @scala.inline
+    def setRequestedBy(value: RequestedBy): Self = this.set("requestedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedBy: Self = this.set("requestedBy", js.undefined)
+    @scala.inline
+    def setStatus(value: SigningStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

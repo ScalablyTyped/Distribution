@@ -26,18 +26,38 @@ trait SavingsPlansCoverageData extends js.Object {
 
 object SavingsPlansCoverageData {
   @scala.inline
-  def apply(
-    CoveragePercentage: GenericString = null,
-    OnDemandCost: GenericString = null,
-    SpendCoveredBySavingsPlans: GenericString = null,
-    TotalCost: GenericString = null
-  ): SavingsPlansCoverageData = {
+  def apply(): SavingsPlansCoverageData = {
     val __obj = js.Dynamic.literal()
-    if (CoveragePercentage != null) __obj.updateDynamic("CoveragePercentage")(CoveragePercentage.asInstanceOf[js.Any])
-    if (OnDemandCost != null) __obj.updateDynamic("OnDemandCost")(OnDemandCost.asInstanceOf[js.Any])
-    if (SpendCoveredBySavingsPlans != null) __obj.updateDynamic("SpendCoveredBySavingsPlans")(SpendCoveredBySavingsPlans.asInstanceOf[js.Any])
-    if (TotalCost != null) __obj.updateDynamic("TotalCost")(TotalCost.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlansCoverageData]
   }
+  @scala.inline
+  implicit class SavingsPlansCoverageDataOps[Self <: SavingsPlansCoverageData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoveragePercentage(value: GenericString): Self = this.set("CoveragePercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoveragePercentage: Self = this.set("CoveragePercentage", js.undefined)
+    @scala.inline
+    def setOnDemandCost(value: GenericString): Self = this.set("OnDemandCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandCost: Self = this.set("OnDemandCost", js.undefined)
+    @scala.inline
+    def setSpendCoveredBySavingsPlans(value: GenericString): Self = this.set("SpendCoveredBySavingsPlans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpendCoveredBySavingsPlans: Self = this.set("SpendCoveredBySavingsPlans", js.undefined)
+    @scala.inline
+    def setTotalCost(value: GenericString): Self = this.set("TotalCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCost: Self = this.set("TotalCost", js.undefined)
+  }
+  
 }
 

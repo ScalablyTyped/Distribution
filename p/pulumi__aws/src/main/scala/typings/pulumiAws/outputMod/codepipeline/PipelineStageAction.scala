@@ -24,6 +24,10 @@ trait PipelineStageAction extends js.Object {
     */
   var name: String = js.native
   /**
+    * The namespace all output variables will be accessed from.
+    */
+  var namespace: js.UndefOr[String] = js.native
+  /**
     * A list of artifact names to output. Output artifact names must be unique within a pipeline.
     */
   var outputArtifacts: js.UndefOr[js.Array[String]] = js.native
@@ -62,18 +66,61 @@ object PipelineStageAction {
     provider: String,
     region: String,
     runOrder: Double,
-    version: String,
-    configuration: StringDictionary[String] = null,
-    inputArtifacts: js.Array[String] = null,
-    outputArtifacts: js.Array[String] = null,
-    roleArn: String = null
+    version: String
   ): PipelineStageAction = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], runOrder = runOrder.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (inputArtifacts != null) __obj.updateDynamic("inputArtifacts")(inputArtifacts.asInstanceOf[js.Any])
-    if (outputArtifacts != null) __obj.updateDynamic("outputArtifacts")(outputArtifacts.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineStageAction]
   }
+  @scala.inline
+  implicit class PipelineStageActionOps[Self <: PipelineStageAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRunOrder(value: Double): Self = this.set("runOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfiguration(value: StringDictionary[String]): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setInputArtifactsVarargs(value: String*): Self = this.set("inputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setInputArtifacts(value: js.Array[String]): Self = this.set("inputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputArtifacts: Self = this.set("inputArtifacts", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setOutputArtifactsVarargs(value: String*): Self = this.set("outputArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setOutputArtifacts(value: js.Array[String]): Self = this.set("outputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputArtifacts: Self = this.set("outputArtifacts", js.undefined)
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

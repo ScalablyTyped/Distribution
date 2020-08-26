@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * @property type {string} - Name of the dispatched event
   * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
   */
+@js.native
 trait Event
   extends typings.heremaps.H.util.Event
 

@@ -5,36 +5,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Args extends js.Object {
-  var args: js.UndefOr[js.Array[String]] = js.undefined
-  var auth: js.UndefOr[Boolean] = js.undefined
-  var dbPath: js.UndefOr[String] = js.undefined
-  var ip: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var replSet: js.UndefOr[String] = js.undefined
-  var storageEngine: js.UndefOr[StorageEngineT] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
+  var auth: js.UndefOr[Boolean] = js.native
+  var dbPath: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var replSet: js.UndefOr[String] = js.native
+  var storageEngine: js.UndefOr[StorageEngineT] = js.native
 }
 
 object Args {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    auth: js.UndefOr[Boolean] = js.undefined,
-    dbPath: String = null,
-    ip: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    replSet: String = null,
-    storageEngine: StorageEngineT = null
-  ): Args = {
+  def apply(): Args = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (!js.isUndefined(auth)) __obj.updateDynamic("auth")(auth.get.asInstanceOf[js.Any])
-    if (dbPath != null) __obj.updateDynamic("dbPath")(dbPath.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (replSet != null) __obj.updateDynamic("replSet")(replSet.asInstanceOf[js.Any])
-    if (storageEngine != null) __obj.updateDynamic("storageEngine")(storageEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
+  @scala.inline
+  implicit class ArgsOps[Self <: Args] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setAuth(value: Boolean): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setDbPath(value: String): Self = this.set("dbPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbPath: Self = this.set("dbPath", js.undefined)
+    @scala.inline
+    def setIp(value: String): Self = this.set("ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp: Self = this.set("ip", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setReplSet(value: String): Self = this.set("replSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplSet: Self = this.set("replSet", js.undefined)
+    @scala.inline
+    def setStorageEngine(value: StorageEngineT): Self = this.set("storageEngine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEngine: Self = this.set("storageEngine", js.undefined)
+  }
+  
 }
 

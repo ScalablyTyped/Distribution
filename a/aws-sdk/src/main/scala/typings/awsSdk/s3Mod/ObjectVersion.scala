@@ -42,26 +42,54 @@ trait ObjectVersion extends js.Object {
 
 object ObjectVersion {
   @scala.inline
-  def apply(
-    ETag: ETag = null,
-    IsLatest: js.UndefOr[IsLatest] = js.undefined,
-    Key: ObjectKey = null,
-    LastModified: LastModified = null,
-    Owner: Owner = null,
-    Size: js.UndefOr[Size] = js.undefined,
-    StorageClass: ObjectVersionStorageClass = null,
-    VersionId: ObjectVersionId = null
-  ): ObjectVersion = {
+  def apply(): ObjectVersion = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsLatest)) __obj.updateDynamic("IsLatest")(IsLatest.get.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectVersion]
   }
+  @scala.inline
+  implicit class ObjectVersionOps[Self <: ObjectVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setETag(value: ETag): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setIsLatest(value: IsLatest): Self = this.set("IsLatest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLatest: Self = this.set("IsLatest", js.undefined)
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setOwner(value: Owner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+    @scala.inline
+    def setSize(value: Size): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+    @scala.inline
+    def setStorageClass(value: ObjectVersionStorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    @scala.inline
+    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

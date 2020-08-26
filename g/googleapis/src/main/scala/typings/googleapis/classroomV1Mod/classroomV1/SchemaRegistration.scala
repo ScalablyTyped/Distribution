@@ -32,18 +32,38 @@ trait SchemaRegistration extends js.Object {
 
 object SchemaRegistration {
   @scala.inline
-  def apply(
-    cloudPubsubTopic: SchemaCloudPubsubTopic = null,
-    expiryTime: String = null,
-    feed: SchemaFeed = null,
-    registrationId: String = null
-  ): SchemaRegistration = {
+  def apply(): SchemaRegistration = {
     val __obj = js.Dynamic.literal()
-    if (cloudPubsubTopic != null) __obj.updateDynamic("cloudPubsubTopic")(cloudPubsubTopic.asInstanceOf[js.Any])
-    if (expiryTime != null) __obj.updateDynamic("expiryTime")(expiryTime.asInstanceOf[js.Any])
-    if (feed != null) __obj.updateDynamic("feed")(feed.asInstanceOf[js.Any])
-    if (registrationId != null) __obj.updateDynamic("registrationId")(registrationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRegistration]
   }
+  @scala.inline
+  implicit class SchemaRegistrationOps[Self <: SchemaRegistration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudPubsubTopic(value: SchemaCloudPubsubTopic): Self = this.set("cloudPubsubTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudPubsubTopic: Self = this.set("cloudPubsubTopic", js.undefined)
+    @scala.inline
+    def setExpiryTime(value: String): Self = this.set("expiryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiryTime: Self = this.set("expiryTime", js.undefined)
+    @scala.inline
+    def setFeed(value: SchemaFeed): Self = this.set("feed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeed: Self = this.set("feed", js.undefined)
+    @scala.inline
+    def setRegistrationId(value: String): Self = this.set("registrationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationId: Self = this.set("registrationId", js.undefined)
+  }
+  
 }
 

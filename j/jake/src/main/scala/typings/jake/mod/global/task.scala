@@ -16,6 +16,7 @@ object task extends js.Object {
     * @param opts
     */
   def apply(name: String): Task = js.native
+  def apply(name: String, action: js.UndefOr[scala.Nothing], opts: TaskOptions): Task = js.native
   def apply(name: String, action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, _]): Task = js.native
   def apply(
     name: String,
@@ -28,7 +29,25 @@ object task extends js.Object {
     opts: TaskOptions,
     action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, _]
   ): Task = js.native
+  def apply(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.UndefOr[scala.Nothing],
+    opts: TaskOptions
+  ): Task = js.native
+  def apply(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, _]
+  ): Task = js.native
+  def apply(
+    name: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.ThisFunction1[/* this */ Task, /* repeated */ js.Any, _],
+    opts: TaskOptions
+  ): Task = js.native
   def apply(name: String, prereqs: js.Array[String]): Task = js.native
+  def apply(name: String, prereqs: js.Array[String], action: js.UndefOr[scala.Nothing], opts: TaskOptions): Task = js.native
   def apply(
     name: String,
     prereqs: js.Array[String],

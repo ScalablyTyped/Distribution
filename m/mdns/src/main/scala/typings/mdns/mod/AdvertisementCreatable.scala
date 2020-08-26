@@ -19,7 +19,7 @@ trait AdvertisementCreatable
      with Instantiable4[
       /* serviceType */ ServiceType, 
       /* port */ Double, 
-      /* options */ AdvertisementOptions, 
+      js.UndefOr[/* options */ AdvertisementOptions], 
       /* callback */ js.Function2[/* error */ DnsSdError, /* service */ Service, Unit], 
       Advertisement
     ]

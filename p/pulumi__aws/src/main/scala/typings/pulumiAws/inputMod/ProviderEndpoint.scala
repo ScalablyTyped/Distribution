@@ -32,6 +32,7 @@ trait ProviderEndpoint extends js.Object {
   var cloudwatch: js.UndefOr[Input[String]] = js.native
   var cloudwatchevents: js.UndefOr[Input[String]] = js.native
   var cloudwatchlogs: js.UndefOr[Input[String]] = js.native
+  var codeartifact: js.UndefOr[Input[String]] = js.native
   var codebuild: js.UndefOr[Input[String]] = js.native
   var codecommit: js.UndefOr[Input[String]] = js.native
   var codedeploy: js.UndefOr[Input[String]] = js.native
@@ -80,8 +81,12 @@ trait ProviderEndpoint extends js.Object {
   var iotevents: js.UndefOr[Input[String]] = js.native
   var kafka: js.UndefOr[Input[String]] = js.native
   var kinesis: js.UndefOr[Input[String]] = js.native
+  /**
+    * @deprecated use `endpoints` configuration block `kinesisanalytics` argument instead
+    */
   var kinesisAnalytics: js.UndefOr[Input[String]] = js.native
   var kinesisanalytics: js.UndefOr[Input[String]] = js.native
+  var kinesisanalyticsv2: js.UndefOr[Input[String]] = js.native
   var kinesisvideo: js.UndefOr[Input[String]] = js.native
   var kms: js.UndefOr[Input[String]] = js.native
   var lakeformation: js.UndefOr[Input[String]] = js.native
@@ -100,19 +105,26 @@ trait ProviderEndpoint extends js.Object {
   var mediastoredata: js.UndefOr[Input[String]] = js.native
   var mq: js.UndefOr[Input[String]] = js.native
   var neptune: js.UndefOr[Input[String]] = js.native
+  var networkmanager: js.UndefOr[Input[String]] = js.native
   var opsworks: js.UndefOr[Input[String]] = js.native
   var organizations: js.UndefOr[Input[String]] = js.native
+  var outposts: js.UndefOr[Input[String]] = js.native
   var personalize: js.UndefOr[Input[String]] = js.native
   var pinpoint: js.UndefOr[Input[String]] = js.native
   var pricing: js.UndefOr[Input[String]] = js.native
   var qldb: js.UndefOr[Input[String]] = js.native
   var quicksight: js.UndefOr[Input[String]] = js.native
+  /**
+    * @deprecated use `endpoints` configuration block `route53` argument instead
+    */
   var r53: js.UndefOr[Input[String]] = js.native
   var ram: js.UndefOr[Input[String]] = js.native
   var rds: js.UndefOr[Input[String]] = js.native
   var redshift: js.UndefOr[Input[String]] = js.native
   var resourcegroups: js.UndefOr[Input[String]] = js.native
+  var resourcegroupstaggingapi: js.UndefOr[Input[String]] = js.native
   var route53: js.UndefOr[Input[String]] = js.native
+  var route53domains: js.UndefOr[Input[String]] = js.native
   var route53resolver: js.UndefOr[Input[String]] = js.native
   var s3: js.UndefOr[Input[String]] = js.native
   var s3control: js.UndefOr[Input[String]] = js.native
@@ -133,6 +145,7 @@ trait ProviderEndpoint extends js.Object {
   var storagegateway: js.UndefOr[Input[String]] = js.native
   var sts: js.UndefOr[Input[String]] = js.native
   var swf: js.UndefOr[Input[String]] = js.native
+  var synthetics: js.UndefOr[Input[String]] = js.native
   var transfer: js.UndefOr[Input[String]] = js.native
   var waf: js.UndefOr[Input[String]] = js.native
   var wafregional: js.UndefOr[Input[String]] = js.native
@@ -145,278 +158,582 @@ trait ProviderEndpoint extends js.Object {
 
 object ProviderEndpoint {
   @scala.inline
-  def apply(
-    accessanalyzer: Input[String] = null,
-    acm: Input[String] = null,
-    acmpca: Input[String] = null,
-    amplify: Input[String] = null,
-    apigateway: Input[String] = null,
-    applicationautoscaling: Input[String] = null,
-    applicationinsights: Input[String] = null,
-    appmesh: Input[String] = null,
-    appstream: Input[String] = null,
-    appsync: Input[String] = null,
-    athena: Input[String] = null,
-    autoscaling: Input[String] = null,
-    autoscalingplans: Input[String] = null,
-    backup: Input[String] = null,
-    batch: Input[String] = null,
-    budgets: Input[String] = null,
-    cloud9: Input[String] = null,
-    cloudformation: Input[String] = null,
-    cloudfront: Input[String] = null,
-    cloudhsm: Input[String] = null,
-    cloudsearch: Input[String] = null,
-    cloudtrail: Input[String] = null,
-    cloudwatch: Input[String] = null,
-    cloudwatchevents: Input[String] = null,
-    cloudwatchlogs: Input[String] = null,
-    codebuild: Input[String] = null,
-    codecommit: Input[String] = null,
-    codedeploy: Input[String] = null,
-    codepipeline: Input[String] = null,
-    cognitoidentity: Input[String] = null,
-    cognitoidp: Input[String] = null,
-    configservice: Input[String] = null,
-    cur: Input[String] = null,
-    dataexchange: Input[String] = null,
-    datapipeline: Input[String] = null,
-    datasync: Input[String] = null,
-    dax: Input[String] = null,
-    devicefarm: Input[String] = null,
-    directconnect: Input[String] = null,
-    dlm: Input[String] = null,
-    dms: Input[String] = null,
-    docdb: Input[String] = null,
-    ds: Input[String] = null,
-    dynamodb: Input[String] = null,
-    ec2: Input[String] = null,
-    ecr: Input[String] = null,
-    ecs: Input[String] = null,
-    efs: Input[String] = null,
-    eks: Input[String] = null,
-    elasticache: Input[String] = null,
-    elasticbeanstalk: Input[String] = null,
-    elastictranscoder: Input[String] = null,
-    elb: Input[String] = null,
-    emr: Input[String] = null,
-    es: Input[String] = null,
-    firehose: Input[String] = null,
-    fms: Input[String] = null,
-    forecast: Input[String] = null,
-    fsx: Input[String] = null,
-    gamelift: Input[String] = null,
-    glacier: Input[String] = null,
-    globalaccelerator: Input[String] = null,
-    glue: Input[String] = null,
-    greengrass: Input[String] = null,
-    guardduty: Input[String] = null,
-    iam: Input[String] = null,
-    imagebuilder: Input[String] = null,
-    inspector: Input[String] = null,
-    iot: Input[String] = null,
-    iotanalytics: Input[String] = null,
-    iotevents: Input[String] = null,
-    kafka: Input[String] = null,
-    kinesis: Input[String] = null,
-    kinesisAnalytics: Input[String] = null,
-    kinesisanalytics: Input[String] = null,
-    kinesisvideo: Input[String] = null,
-    kms: Input[String] = null,
-    lakeformation: Input[String] = null,
-    lambda: Input[String] = null,
-    lexmodels: Input[String] = null,
-    licensemanager: Input[String] = null,
-    lightsail: Input[String] = null,
-    macie: Input[String] = null,
-    managedblockchain: Input[String] = null,
-    marketplacecatalog: Input[String] = null,
-    mediaconnect: Input[String] = null,
-    mediaconvert: Input[String] = null,
-    medialive: Input[String] = null,
-    mediapackage: Input[String] = null,
-    mediastore: Input[String] = null,
-    mediastoredata: Input[String] = null,
-    mq: Input[String] = null,
-    neptune: Input[String] = null,
-    opsworks: Input[String] = null,
-    organizations: Input[String] = null,
-    personalize: Input[String] = null,
-    pinpoint: Input[String] = null,
-    pricing: Input[String] = null,
-    qldb: Input[String] = null,
-    quicksight: Input[String] = null,
-    r53: Input[String] = null,
-    ram: Input[String] = null,
-    rds: Input[String] = null,
-    redshift: Input[String] = null,
-    resourcegroups: Input[String] = null,
-    route53: Input[String] = null,
-    route53resolver: Input[String] = null,
-    s3: Input[String] = null,
-    s3control: Input[String] = null,
-    sagemaker: Input[String] = null,
-    sdb: Input[String] = null,
-    secretsmanager: Input[String] = null,
-    securityhub: Input[String] = null,
-    serverlessrepo: Input[String] = null,
-    servicecatalog: Input[String] = null,
-    servicediscovery: Input[String] = null,
-    servicequotas: Input[String] = null,
-    ses: Input[String] = null,
-    shield: Input[String] = null,
-    sns: Input[String] = null,
-    sqs: Input[String] = null,
-    ssm: Input[String] = null,
-    stepfunctions: Input[String] = null,
-    storagegateway: Input[String] = null,
-    sts: Input[String] = null,
-    swf: Input[String] = null,
-    transfer: Input[String] = null,
-    waf: Input[String] = null,
-    wafregional: Input[String] = null,
-    wafv2: Input[String] = null,
-    worklink: Input[String] = null,
-    workmail: Input[String] = null,
-    workspaces: Input[String] = null,
-    xray: Input[String] = null
-  ): ProviderEndpoint = {
+  def apply(): ProviderEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (accessanalyzer != null) __obj.updateDynamic("accessanalyzer")(accessanalyzer.asInstanceOf[js.Any])
-    if (acm != null) __obj.updateDynamic("acm")(acm.asInstanceOf[js.Any])
-    if (acmpca != null) __obj.updateDynamic("acmpca")(acmpca.asInstanceOf[js.Any])
-    if (amplify != null) __obj.updateDynamic("amplify")(amplify.asInstanceOf[js.Any])
-    if (apigateway != null) __obj.updateDynamic("apigateway")(apigateway.asInstanceOf[js.Any])
-    if (applicationautoscaling != null) __obj.updateDynamic("applicationautoscaling")(applicationautoscaling.asInstanceOf[js.Any])
-    if (applicationinsights != null) __obj.updateDynamic("applicationinsights")(applicationinsights.asInstanceOf[js.Any])
-    if (appmesh != null) __obj.updateDynamic("appmesh")(appmesh.asInstanceOf[js.Any])
-    if (appstream != null) __obj.updateDynamic("appstream")(appstream.asInstanceOf[js.Any])
-    if (appsync != null) __obj.updateDynamic("appsync")(appsync.asInstanceOf[js.Any])
-    if (athena != null) __obj.updateDynamic("athena")(athena.asInstanceOf[js.Any])
-    if (autoscaling != null) __obj.updateDynamic("autoscaling")(autoscaling.asInstanceOf[js.Any])
-    if (autoscalingplans != null) __obj.updateDynamic("autoscalingplans")(autoscalingplans.asInstanceOf[js.Any])
-    if (backup != null) __obj.updateDynamic("backup")(backup.asInstanceOf[js.Any])
-    if (batch != null) __obj.updateDynamic("batch")(batch.asInstanceOf[js.Any])
-    if (budgets != null) __obj.updateDynamic("budgets")(budgets.asInstanceOf[js.Any])
-    if (cloud9 != null) __obj.updateDynamic("cloud9")(cloud9.asInstanceOf[js.Any])
-    if (cloudformation != null) __obj.updateDynamic("cloudformation")(cloudformation.asInstanceOf[js.Any])
-    if (cloudfront != null) __obj.updateDynamic("cloudfront")(cloudfront.asInstanceOf[js.Any])
-    if (cloudhsm != null) __obj.updateDynamic("cloudhsm")(cloudhsm.asInstanceOf[js.Any])
-    if (cloudsearch != null) __obj.updateDynamic("cloudsearch")(cloudsearch.asInstanceOf[js.Any])
-    if (cloudtrail != null) __obj.updateDynamic("cloudtrail")(cloudtrail.asInstanceOf[js.Any])
-    if (cloudwatch != null) __obj.updateDynamic("cloudwatch")(cloudwatch.asInstanceOf[js.Any])
-    if (cloudwatchevents != null) __obj.updateDynamic("cloudwatchevents")(cloudwatchevents.asInstanceOf[js.Any])
-    if (cloudwatchlogs != null) __obj.updateDynamic("cloudwatchlogs")(cloudwatchlogs.asInstanceOf[js.Any])
-    if (codebuild != null) __obj.updateDynamic("codebuild")(codebuild.asInstanceOf[js.Any])
-    if (codecommit != null) __obj.updateDynamic("codecommit")(codecommit.asInstanceOf[js.Any])
-    if (codedeploy != null) __obj.updateDynamic("codedeploy")(codedeploy.asInstanceOf[js.Any])
-    if (codepipeline != null) __obj.updateDynamic("codepipeline")(codepipeline.asInstanceOf[js.Any])
-    if (cognitoidentity != null) __obj.updateDynamic("cognitoidentity")(cognitoidentity.asInstanceOf[js.Any])
-    if (cognitoidp != null) __obj.updateDynamic("cognitoidp")(cognitoidp.asInstanceOf[js.Any])
-    if (configservice != null) __obj.updateDynamic("configservice")(configservice.asInstanceOf[js.Any])
-    if (cur != null) __obj.updateDynamic("cur")(cur.asInstanceOf[js.Any])
-    if (dataexchange != null) __obj.updateDynamic("dataexchange")(dataexchange.asInstanceOf[js.Any])
-    if (datapipeline != null) __obj.updateDynamic("datapipeline")(datapipeline.asInstanceOf[js.Any])
-    if (datasync != null) __obj.updateDynamic("datasync")(datasync.asInstanceOf[js.Any])
-    if (dax != null) __obj.updateDynamic("dax")(dax.asInstanceOf[js.Any])
-    if (devicefarm != null) __obj.updateDynamic("devicefarm")(devicefarm.asInstanceOf[js.Any])
-    if (directconnect != null) __obj.updateDynamic("directconnect")(directconnect.asInstanceOf[js.Any])
-    if (dlm != null) __obj.updateDynamic("dlm")(dlm.asInstanceOf[js.Any])
-    if (dms != null) __obj.updateDynamic("dms")(dms.asInstanceOf[js.Any])
-    if (docdb != null) __obj.updateDynamic("docdb")(docdb.asInstanceOf[js.Any])
-    if (ds != null) __obj.updateDynamic("ds")(ds.asInstanceOf[js.Any])
-    if (dynamodb != null) __obj.updateDynamic("dynamodb")(dynamodb.asInstanceOf[js.Any])
-    if (ec2 != null) __obj.updateDynamic("ec2")(ec2.asInstanceOf[js.Any])
-    if (ecr != null) __obj.updateDynamic("ecr")(ecr.asInstanceOf[js.Any])
-    if (ecs != null) __obj.updateDynamic("ecs")(ecs.asInstanceOf[js.Any])
-    if (efs != null) __obj.updateDynamic("efs")(efs.asInstanceOf[js.Any])
-    if (eks != null) __obj.updateDynamic("eks")(eks.asInstanceOf[js.Any])
-    if (elasticache != null) __obj.updateDynamic("elasticache")(elasticache.asInstanceOf[js.Any])
-    if (elasticbeanstalk != null) __obj.updateDynamic("elasticbeanstalk")(elasticbeanstalk.asInstanceOf[js.Any])
-    if (elastictranscoder != null) __obj.updateDynamic("elastictranscoder")(elastictranscoder.asInstanceOf[js.Any])
-    if (elb != null) __obj.updateDynamic("elb")(elb.asInstanceOf[js.Any])
-    if (emr != null) __obj.updateDynamic("emr")(emr.asInstanceOf[js.Any])
-    if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
-    if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
-    if (fms != null) __obj.updateDynamic("fms")(fms.asInstanceOf[js.Any])
-    if (forecast != null) __obj.updateDynamic("forecast")(forecast.asInstanceOf[js.Any])
-    if (fsx != null) __obj.updateDynamic("fsx")(fsx.asInstanceOf[js.Any])
-    if (gamelift != null) __obj.updateDynamic("gamelift")(gamelift.asInstanceOf[js.Any])
-    if (glacier != null) __obj.updateDynamic("glacier")(glacier.asInstanceOf[js.Any])
-    if (globalaccelerator != null) __obj.updateDynamic("globalaccelerator")(globalaccelerator.asInstanceOf[js.Any])
-    if (glue != null) __obj.updateDynamic("glue")(glue.asInstanceOf[js.Any])
-    if (greengrass != null) __obj.updateDynamic("greengrass")(greengrass.asInstanceOf[js.Any])
-    if (guardduty != null) __obj.updateDynamic("guardduty")(guardduty.asInstanceOf[js.Any])
-    if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
-    if (imagebuilder != null) __obj.updateDynamic("imagebuilder")(imagebuilder.asInstanceOf[js.Any])
-    if (inspector != null) __obj.updateDynamic("inspector")(inspector.asInstanceOf[js.Any])
-    if (iot != null) __obj.updateDynamic("iot")(iot.asInstanceOf[js.Any])
-    if (iotanalytics != null) __obj.updateDynamic("iotanalytics")(iotanalytics.asInstanceOf[js.Any])
-    if (iotevents != null) __obj.updateDynamic("iotevents")(iotevents.asInstanceOf[js.Any])
-    if (kafka != null) __obj.updateDynamic("kafka")(kafka.asInstanceOf[js.Any])
-    if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
-    if (kinesisAnalytics != null) __obj.updateDynamic("kinesisAnalytics")(kinesisAnalytics.asInstanceOf[js.Any])
-    if (kinesisanalytics != null) __obj.updateDynamic("kinesisanalytics")(kinesisanalytics.asInstanceOf[js.Any])
-    if (kinesisvideo != null) __obj.updateDynamic("kinesisvideo")(kinesisvideo.asInstanceOf[js.Any])
-    if (kms != null) __obj.updateDynamic("kms")(kms.asInstanceOf[js.Any])
-    if (lakeformation != null) __obj.updateDynamic("lakeformation")(lakeformation.asInstanceOf[js.Any])
-    if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
-    if (lexmodels != null) __obj.updateDynamic("lexmodels")(lexmodels.asInstanceOf[js.Any])
-    if (licensemanager != null) __obj.updateDynamic("licensemanager")(licensemanager.asInstanceOf[js.Any])
-    if (lightsail != null) __obj.updateDynamic("lightsail")(lightsail.asInstanceOf[js.Any])
-    if (macie != null) __obj.updateDynamic("macie")(macie.asInstanceOf[js.Any])
-    if (managedblockchain != null) __obj.updateDynamic("managedblockchain")(managedblockchain.asInstanceOf[js.Any])
-    if (marketplacecatalog != null) __obj.updateDynamic("marketplacecatalog")(marketplacecatalog.asInstanceOf[js.Any])
-    if (mediaconnect != null) __obj.updateDynamic("mediaconnect")(mediaconnect.asInstanceOf[js.Any])
-    if (mediaconvert != null) __obj.updateDynamic("mediaconvert")(mediaconvert.asInstanceOf[js.Any])
-    if (medialive != null) __obj.updateDynamic("medialive")(medialive.asInstanceOf[js.Any])
-    if (mediapackage != null) __obj.updateDynamic("mediapackage")(mediapackage.asInstanceOf[js.Any])
-    if (mediastore != null) __obj.updateDynamic("mediastore")(mediastore.asInstanceOf[js.Any])
-    if (mediastoredata != null) __obj.updateDynamic("mediastoredata")(mediastoredata.asInstanceOf[js.Any])
-    if (mq != null) __obj.updateDynamic("mq")(mq.asInstanceOf[js.Any])
-    if (neptune != null) __obj.updateDynamic("neptune")(neptune.asInstanceOf[js.Any])
-    if (opsworks != null) __obj.updateDynamic("opsworks")(opsworks.asInstanceOf[js.Any])
-    if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
-    if (personalize != null) __obj.updateDynamic("personalize")(personalize.asInstanceOf[js.Any])
-    if (pinpoint != null) __obj.updateDynamic("pinpoint")(pinpoint.asInstanceOf[js.Any])
-    if (pricing != null) __obj.updateDynamic("pricing")(pricing.asInstanceOf[js.Any])
-    if (qldb != null) __obj.updateDynamic("qldb")(qldb.asInstanceOf[js.Any])
-    if (quicksight != null) __obj.updateDynamic("quicksight")(quicksight.asInstanceOf[js.Any])
-    if (r53 != null) __obj.updateDynamic("r53")(r53.asInstanceOf[js.Any])
-    if (ram != null) __obj.updateDynamic("ram")(ram.asInstanceOf[js.Any])
-    if (rds != null) __obj.updateDynamic("rds")(rds.asInstanceOf[js.Any])
-    if (redshift != null) __obj.updateDynamic("redshift")(redshift.asInstanceOf[js.Any])
-    if (resourcegroups != null) __obj.updateDynamic("resourcegroups")(resourcegroups.asInstanceOf[js.Any])
-    if (route53 != null) __obj.updateDynamic("route53")(route53.asInstanceOf[js.Any])
-    if (route53resolver != null) __obj.updateDynamic("route53resolver")(route53resolver.asInstanceOf[js.Any])
-    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
-    if (s3control != null) __obj.updateDynamic("s3control")(s3control.asInstanceOf[js.Any])
-    if (sagemaker != null) __obj.updateDynamic("sagemaker")(sagemaker.asInstanceOf[js.Any])
-    if (sdb != null) __obj.updateDynamic("sdb")(sdb.asInstanceOf[js.Any])
-    if (secretsmanager != null) __obj.updateDynamic("secretsmanager")(secretsmanager.asInstanceOf[js.Any])
-    if (securityhub != null) __obj.updateDynamic("securityhub")(securityhub.asInstanceOf[js.Any])
-    if (serverlessrepo != null) __obj.updateDynamic("serverlessrepo")(serverlessrepo.asInstanceOf[js.Any])
-    if (servicecatalog != null) __obj.updateDynamic("servicecatalog")(servicecatalog.asInstanceOf[js.Any])
-    if (servicediscovery != null) __obj.updateDynamic("servicediscovery")(servicediscovery.asInstanceOf[js.Any])
-    if (servicequotas != null) __obj.updateDynamic("servicequotas")(servicequotas.asInstanceOf[js.Any])
-    if (ses != null) __obj.updateDynamic("ses")(ses.asInstanceOf[js.Any])
-    if (shield != null) __obj.updateDynamic("shield")(shield.asInstanceOf[js.Any])
-    if (sns != null) __obj.updateDynamic("sns")(sns.asInstanceOf[js.Any])
-    if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])
-    if (ssm != null) __obj.updateDynamic("ssm")(ssm.asInstanceOf[js.Any])
-    if (stepfunctions != null) __obj.updateDynamic("stepfunctions")(stepfunctions.asInstanceOf[js.Any])
-    if (storagegateway != null) __obj.updateDynamic("storagegateway")(storagegateway.asInstanceOf[js.Any])
-    if (sts != null) __obj.updateDynamic("sts")(sts.asInstanceOf[js.Any])
-    if (swf != null) __obj.updateDynamic("swf")(swf.asInstanceOf[js.Any])
-    if (transfer != null) __obj.updateDynamic("transfer")(transfer.asInstanceOf[js.Any])
-    if (waf != null) __obj.updateDynamic("waf")(waf.asInstanceOf[js.Any])
-    if (wafregional != null) __obj.updateDynamic("wafregional")(wafregional.asInstanceOf[js.Any])
-    if (wafv2 != null) __obj.updateDynamic("wafv2")(wafv2.asInstanceOf[js.Any])
-    if (worklink != null) __obj.updateDynamic("worklink")(worklink.asInstanceOf[js.Any])
-    if (workmail != null) __obj.updateDynamic("workmail")(workmail.asInstanceOf[js.Any])
-    if (workspaces != null) __obj.updateDynamic("workspaces")(workspaces.asInstanceOf[js.Any])
-    if (xray != null) __obj.updateDynamic("xray")(xray.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderEndpoint]
   }
+  @scala.inline
+  implicit class ProviderEndpointOps[Self <: ProviderEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessanalyzer(value: Input[String]): Self = this.set("accessanalyzer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessanalyzer: Self = this.set("accessanalyzer", js.undefined)
+    @scala.inline
+    def setAcm(value: Input[String]): Self = this.set("acm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcm: Self = this.set("acm", js.undefined)
+    @scala.inline
+    def setAcmpca(value: Input[String]): Self = this.set("acmpca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcmpca: Self = this.set("acmpca", js.undefined)
+    @scala.inline
+    def setAmplify(value: Input[String]): Self = this.set("amplify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmplify: Self = this.set("amplify", js.undefined)
+    @scala.inline
+    def setApigateway(value: Input[String]): Self = this.set("apigateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApigateway: Self = this.set("apigateway", js.undefined)
+    @scala.inline
+    def setApplicationautoscaling(value: Input[String]): Self = this.set("applicationautoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationautoscaling: Self = this.set("applicationautoscaling", js.undefined)
+    @scala.inline
+    def setApplicationinsights(value: Input[String]): Self = this.set("applicationinsights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationinsights: Self = this.set("applicationinsights", js.undefined)
+    @scala.inline
+    def setAppmesh(value: Input[String]): Self = this.set("appmesh", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppmesh: Self = this.set("appmesh", js.undefined)
+    @scala.inline
+    def setAppstream(value: Input[String]): Self = this.set("appstream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppstream: Self = this.set("appstream", js.undefined)
+    @scala.inline
+    def setAppsync(value: Input[String]): Self = this.set("appsync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppsync: Self = this.set("appsync", js.undefined)
+    @scala.inline
+    def setAthena(value: Input[String]): Self = this.set("athena", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAthena: Self = this.set("athena", js.undefined)
+    @scala.inline
+    def setAutoscaling(value: Input[String]): Self = this.set("autoscaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscaling: Self = this.set("autoscaling", js.undefined)
+    @scala.inline
+    def setAutoscalingplans(value: Input[String]): Self = this.set("autoscalingplans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingplans: Self = this.set("autoscalingplans", js.undefined)
+    @scala.inline
+    def setBackup(value: Input[String]): Self = this.set("backup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackup: Self = this.set("backup", js.undefined)
+    @scala.inline
+    def setBatch(value: Input[String]): Self = this.set("batch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatch: Self = this.set("batch", js.undefined)
+    @scala.inline
+    def setBudgets(value: Input[String]): Self = this.set("budgets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBudgets: Self = this.set("budgets", js.undefined)
+    @scala.inline
+    def setCloud9(value: Input[String]): Self = this.set("cloud9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloud9: Self = this.set("cloud9", js.undefined)
+    @scala.inline
+    def setCloudformation(value: Input[String]): Self = this.set("cloudformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudformation: Self = this.set("cloudformation", js.undefined)
+    @scala.inline
+    def setCloudfront(value: Input[String]): Self = this.set("cloudfront", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudfront: Self = this.set("cloudfront", js.undefined)
+    @scala.inline
+    def setCloudhsm(value: Input[String]): Self = this.set("cloudhsm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudhsm: Self = this.set("cloudhsm", js.undefined)
+    @scala.inline
+    def setCloudsearch(value: Input[String]): Self = this.set("cloudsearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudsearch: Self = this.set("cloudsearch", js.undefined)
+    @scala.inline
+    def setCloudtrail(value: Input[String]): Self = this.set("cloudtrail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudtrail: Self = this.set("cloudtrail", js.undefined)
+    @scala.inline
+    def setCloudwatch(value: Input[String]): Self = this.set("cloudwatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatch: Self = this.set("cloudwatch", js.undefined)
+    @scala.inline
+    def setCloudwatchevents(value: Input[String]): Self = this.set("cloudwatchevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchevents: Self = this.set("cloudwatchevents", js.undefined)
+    @scala.inline
+    def setCloudwatchlogs(value: Input[String]): Self = this.set("cloudwatchlogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchlogs: Self = this.set("cloudwatchlogs", js.undefined)
+    @scala.inline
+    def setCodeartifact(value: Input[String]): Self = this.set("codeartifact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeartifact: Self = this.set("codeartifact", js.undefined)
+    @scala.inline
+    def setCodebuild(value: Input[String]): Self = this.set("codebuild", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodebuild: Self = this.set("codebuild", js.undefined)
+    @scala.inline
+    def setCodecommit(value: Input[String]): Self = this.set("codecommit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecommit: Self = this.set("codecommit", js.undefined)
+    @scala.inline
+    def setCodedeploy(value: Input[String]): Self = this.set("codedeploy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodedeploy: Self = this.set("codedeploy", js.undefined)
+    @scala.inline
+    def setCodepipeline(value: Input[String]): Self = this.set("codepipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodepipeline: Self = this.set("codepipeline", js.undefined)
+    @scala.inline
+    def setCognitoidentity(value: Input[String]): Self = this.set("cognitoidentity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoidentity: Self = this.set("cognitoidentity", js.undefined)
+    @scala.inline
+    def setCognitoidp(value: Input[String]): Self = this.set("cognitoidp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoidp: Self = this.set("cognitoidp", js.undefined)
+    @scala.inline
+    def setConfigservice(value: Input[String]): Self = this.set("configservice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigservice: Self = this.set("configservice", js.undefined)
+    @scala.inline
+    def setCur(value: Input[String]): Self = this.set("cur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCur: Self = this.set("cur", js.undefined)
+    @scala.inline
+    def setDataexchange(value: Input[String]): Self = this.set("dataexchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataexchange: Self = this.set("dataexchange", js.undefined)
+    @scala.inline
+    def setDatapipeline(value: Input[String]): Self = this.set("datapipeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatapipeline: Self = this.set("datapipeline", js.undefined)
+    @scala.inline
+    def setDatasync(value: Input[String]): Self = this.set("datasync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasync: Self = this.set("datasync", js.undefined)
+    @scala.inline
+    def setDax(value: Input[String]): Self = this.set("dax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDax: Self = this.set("dax", js.undefined)
+    @scala.inline
+    def setDevicefarm(value: Input[String]): Self = this.set("devicefarm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevicefarm: Self = this.set("devicefarm", js.undefined)
+    @scala.inline
+    def setDirectconnect(value: Input[String]): Self = this.set("directconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectconnect: Self = this.set("directconnect", js.undefined)
+    @scala.inline
+    def setDlm(value: Input[String]): Self = this.set("dlm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDlm: Self = this.set("dlm", js.undefined)
+    @scala.inline
+    def setDms(value: Input[String]): Self = this.set("dms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDms: Self = this.set("dms", js.undefined)
+    @scala.inline
+    def setDocdb(value: Input[String]): Self = this.set("docdb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocdb: Self = this.set("docdb", js.undefined)
+    @scala.inline
+    def setDs(value: Input[String]): Self = this.set("ds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDs: Self = this.set("ds", js.undefined)
+    @scala.inline
+    def setDynamodb(value: Input[String]): Self = this.set("dynamodb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamodb: Self = this.set("dynamodb", js.undefined)
+    @scala.inline
+    def setEc2(value: Input[String]): Self = this.set("ec2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2: Self = this.set("ec2", js.undefined)
+    @scala.inline
+    def setEcr(value: Input[String]): Self = this.set("ecr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcr: Self = this.set("ecr", js.undefined)
+    @scala.inline
+    def setEcs(value: Input[String]): Self = this.set("ecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcs: Self = this.set("ecs", js.undefined)
+    @scala.inline
+    def setEfs(value: Input[String]): Self = this.set("efs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEfs: Self = this.set("efs", js.undefined)
+    @scala.inline
+    def setEks(value: Input[String]): Self = this.set("eks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEks: Self = this.set("eks", js.undefined)
+    @scala.inline
+    def setElasticache(value: Input[String]): Self = this.set("elasticache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticache: Self = this.set("elasticache", js.undefined)
+    @scala.inline
+    def setElasticbeanstalk(value: Input[String]): Self = this.set("elasticbeanstalk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticbeanstalk: Self = this.set("elasticbeanstalk", js.undefined)
+    @scala.inline
+    def setElastictranscoder(value: Input[String]): Self = this.set("elastictranscoder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElastictranscoder: Self = this.set("elastictranscoder", js.undefined)
+    @scala.inline
+    def setElb(value: Input[String]): Self = this.set("elb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElb: Self = this.set("elb", js.undefined)
+    @scala.inline
+    def setEmr(value: Input[String]): Self = this.set("emr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmr: Self = this.set("emr", js.undefined)
+    @scala.inline
+    def setEs(value: Input[String]): Self = this.set("es", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEs: Self = this.set("es", js.undefined)
+    @scala.inline
+    def setFirehose(value: Input[String]): Self = this.set("firehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirehose: Self = this.set("firehose", js.undefined)
+    @scala.inline
+    def setFms(value: Input[String]): Self = this.set("fms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFms: Self = this.set("fms", js.undefined)
+    @scala.inline
+    def setForecast(value: Input[String]): Self = this.set("forecast", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecast: Self = this.set("forecast", js.undefined)
+    @scala.inline
+    def setFsx(value: Input[String]): Self = this.set("fsx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFsx: Self = this.set("fsx", js.undefined)
+    @scala.inline
+    def setGamelift(value: Input[String]): Self = this.set("gamelift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGamelift: Self = this.set("gamelift", js.undefined)
+    @scala.inline
+    def setGlacier(value: Input[String]): Self = this.set("glacier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlacier: Self = this.set("glacier", js.undefined)
+    @scala.inline
+    def setGlobalaccelerator(value: Input[String]): Self = this.set("globalaccelerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalaccelerator: Self = this.set("globalaccelerator", js.undefined)
+    @scala.inline
+    def setGlue(value: Input[String]): Self = this.set("glue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlue: Self = this.set("glue", js.undefined)
+    @scala.inline
+    def setGreengrass(value: Input[String]): Self = this.set("greengrass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreengrass: Self = this.set("greengrass", js.undefined)
+    @scala.inline
+    def setGuardduty(value: Input[String]): Self = this.set("guardduty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuardduty: Self = this.set("guardduty", js.undefined)
+    @scala.inline
+    def setIam(value: Input[String]): Self = this.set("iam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIam: Self = this.set("iam", js.undefined)
+    @scala.inline
+    def setImagebuilder(value: Input[String]): Self = this.set("imagebuilder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagebuilder: Self = this.set("imagebuilder", js.undefined)
+    @scala.inline
+    def setInspector(value: Input[String]): Self = this.set("inspector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInspector: Self = this.set("inspector", js.undefined)
+    @scala.inline
+    def setIot(value: Input[String]): Self = this.set("iot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIot: Self = this.set("iot", js.undefined)
+    @scala.inline
+    def setIotanalytics(value: Input[String]): Self = this.set("iotanalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotanalytics: Self = this.set("iotanalytics", js.undefined)
+    @scala.inline
+    def setIotevents(value: Input[String]): Self = this.set("iotevents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIotevents: Self = this.set("iotevents", js.undefined)
+    @scala.inline
+    def setKafka(value: Input[String]): Self = this.set("kafka", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKafka: Self = this.set("kafka", js.undefined)
+    @scala.inline
+    def setKinesis(value: Input[String]): Self = this.set("kinesis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesis: Self = this.set("kinesis", js.undefined)
+    @scala.inline
+    def setKinesisAnalytics(value: Input[String]): Self = this.set("kinesisAnalytics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisAnalytics: Self = this.set("kinesisAnalytics", js.undefined)
+    @scala.inline
+    def setKinesisanalyticsv2(value: Input[String]): Self = this.set("kinesisanalyticsv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisanalyticsv2: Self = this.set("kinesisanalyticsv2", js.undefined)
+    @scala.inline
+    def setKinesisvideo(value: Input[String]): Self = this.set("kinesisvideo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisvideo: Self = this.set("kinesisvideo", js.undefined)
+    @scala.inline
+    def setKms(value: Input[String]): Self = this.set("kms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKms: Self = this.set("kms", js.undefined)
+    @scala.inline
+    def setLakeformation(value: Input[String]): Self = this.set("lakeformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLakeformation: Self = this.set("lakeformation", js.undefined)
+    @scala.inline
+    def setLambda(value: Input[String]): Self = this.set("lambda", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambda: Self = this.set("lambda", js.undefined)
+    @scala.inline
+    def setLexmodels(value: Input[String]): Self = this.set("lexmodels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexmodels: Self = this.set("lexmodels", js.undefined)
+    @scala.inline
+    def setLicensemanager(value: Input[String]): Self = this.set("licensemanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicensemanager: Self = this.set("licensemanager", js.undefined)
+    @scala.inline
+    def setLightsail(value: Input[String]): Self = this.set("lightsail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLightsail: Self = this.set("lightsail", js.undefined)
+    @scala.inline
+    def setMacie(value: Input[String]): Self = this.set("macie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMacie: Self = this.set("macie", js.undefined)
+    @scala.inline
+    def setManagedblockchain(value: Input[String]): Self = this.set("managedblockchain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedblockchain: Self = this.set("managedblockchain", js.undefined)
+    @scala.inline
+    def setMarketplacecatalog(value: Input[String]): Self = this.set("marketplacecatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplacecatalog: Self = this.set("marketplacecatalog", js.undefined)
+    @scala.inline
+    def setMediaconnect(value: Input[String]): Self = this.set("mediaconnect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaconnect: Self = this.set("mediaconnect", js.undefined)
+    @scala.inline
+    def setMediaconvert(value: Input[String]): Self = this.set("mediaconvert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaconvert: Self = this.set("mediaconvert", js.undefined)
+    @scala.inline
+    def setMedialive(value: Input[String]): Self = this.set("medialive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedialive: Self = this.set("medialive", js.undefined)
+    @scala.inline
+    def setMediapackage(value: Input[String]): Self = this.set("mediapackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediapackage: Self = this.set("mediapackage", js.undefined)
+    @scala.inline
+    def setMediastore(value: Input[String]): Self = this.set("mediastore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediastore: Self = this.set("mediastore", js.undefined)
+    @scala.inline
+    def setMediastoredata(value: Input[String]): Self = this.set("mediastoredata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediastoredata: Self = this.set("mediastoredata", js.undefined)
+    @scala.inline
+    def setMq(value: Input[String]): Self = this.set("mq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMq: Self = this.set("mq", js.undefined)
+    @scala.inline
+    def setNeptune(value: Input[String]): Self = this.set("neptune", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeptune: Self = this.set("neptune", js.undefined)
+    @scala.inline
+    def setNetworkmanager(value: Input[String]): Self = this.set("networkmanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkmanager: Self = this.set("networkmanager", js.undefined)
+    @scala.inline
+    def setOpsworks(value: Input[String]): Self = this.set("opsworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpsworks: Self = this.set("opsworks", js.undefined)
+    @scala.inline
+    def setOrganizations(value: Input[String]): Self = this.set("organizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizations: Self = this.set("organizations", js.undefined)
+    @scala.inline
+    def setOutposts(value: Input[String]): Self = this.set("outposts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutposts: Self = this.set("outposts", js.undefined)
+    @scala.inline
+    def setPersonalize(value: Input[String]): Self = this.set("personalize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersonalize: Self = this.set("personalize", js.undefined)
+    @scala.inline
+    def setPinpoint(value: Input[String]): Self = this.set("pinpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinpoint: Self = this.set("pinpoint", js.undefined)
+    @scala.inline
+    def setPricing(value: Input[String]): Self = this.set("pricing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricing: Self = this.set("pricing", js.undefined)
+    @scala.inline
+    def setQldb(value: Input[String]): Self = this.set("qldb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQldb: Self = this.set("qldb", js.undefined)
+    @scala.inline
+    def setQuicksight(value: Input[String]): Self = this.set("quicksight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuicksight: Self = this.set("quicksight", js.undefined)
+    @scala.inline
+    def setR53(value: Input[String]): Self = this.set("r53", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteR53: Self = this.set("r53", js.undefined)
+    @scala.inline
+    def setRam(value: Input[String]): Self = this.set("ram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRam: Self = this.set("ram", js.undefined)
+    @scala.inline
+    def setRds(value: Input[String]): Self = this.set("rds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRds: Self = this.set("rds", js.undefined)
+    @scala.inline
+    def setRedshift(value: Input[String]): Self = this.set("redshift", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshift: Self = this.set("redshift", js.undefined)
+    @scala.inline
+    def setResourcegroups(value: Input[String]): Self = this.set("resourcegroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcegroups: Self = this.set("resourcegroups", js.undefined)
+    @scala.inline
+    def setResourcegroupstaggingapi(value: Input[String]): Self = this.set("resourcegroupstaggingapi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcegroupstaggingapi: Self = this.set("resourcegroupstaggingapi", js.undefined)
+    @scala.inline
+    def setRoute53(value: Input[String]): Self = this.set("route53", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute53: Self = this.set("route53", js.undefined)
+    @scala.inline
+    def setRoute53domains(value: Input[String]): Self = this.set("route53domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute53domains: Self = this.set("route53domains", js.undefined)
+    @scala.inline
+    def setRoute53resolver(value: Input[String]): Self = this.set("route53resolver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute53resolver: Self = this.set("route53resolver", js.undefined)
+    @scala.inline
+    def setS3(value: Input[String]): Self = this.set("s3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3: Self = this.set("s3", js.undefined)
+    @scala.inline
+    def setS3control(value: Input[String]): Self = this.set("s3control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3control: Self = this.set("s3control", js.undefined)
+    @scala.inline
+    def setSagemaker(value: Input[String]): Self = this.set("sagemaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSagemaker: Self = this.set("sagemaker", js.undefined)
+    @scala.inline
+    def setSdb(value: Input[String]): Self = this.set("sdb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSdb: Self = this.set("sdb", js.undefined)
+    @scala.inline
+    def setSecretsmanager(value: Input[String]): Self = this.set("secretsmanager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretsmanager: Self = this.set("secretsmanager", js.undefined)
+    @scala.inline
+    def setSecurityhub(value: Input[String]): Self = this.set("securityhub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityhub: Self = this.set("securityhub", js.undefined)
+    @scala.inline
+    def setServerlessrepo(value: Input[String]): Self = this.set("serverlessrepo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerlessrepo: Self = this.set("serverlessrepo", js.undefined)
+    @scala.inline
+    def setServicecatalog(value: Input[String]): Self = this.set("servicecatalog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicecatalog: Self = this.set("servicecatalog", js.undefined)
+    @scala.inline
+    def setServicediscovery(value: Input[String]): Self = this.set("servicediscovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicediscovery: Self = this.set("servicediscovery", js.undefined)
+    @scala.inline
+    def setServicequotas(value: Input[String]): Self = this.set("servicequotas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicequotas: Self = this.set("servicequotas", js.undefined)
+    @scala.inline
+    def setSes(value: Input[String]): Self = this.set("ses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSes: Self = this.set("ses", js.undefined)
+    @scala.inline
+    def setShield(value: Input[String]): Self = this.set("shield", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShield: Self = this.set("shield", js.undefined)
+    @scala.inline
+    def setSns(value: Input[String]): Self = this.set("sns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSns: Self = this.set("sns", js.undefined)
+    @scala.inline
+    def setSqs(value: Input[String]): Self = this.set("sqs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqs: Self = this.set("sqs", js.undefined)
+    @scala.inline
+    def setSsm(value: Input[String]): Self = this.set("ssm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsm: Self = this.set("ssm", js.undefined)
+    @scala.inline
+    def setStepfunctions(value: Input[String]): Self = this.set("stepfunctions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepfunctions: Self = this.set("stepfunctions", js.undefined)
+    @scala.inline
+    def setStoragegateway(value: Input[String]): Self = this.set("storagegateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoragegateway: Self = this.set("storagegateway", js.undefined)
+    @scala.inline
+    def setSts(value: Input[String]): Self = this.set("sts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSts: Self = this.set("sts", js.undefined)
+    @scala.inline
+    def setSwf(value: Input[String]): Self = this.set("swf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwf: Self = this.set("swf", js.undefined)
+    @scala.inline
+    def setSynthetics(value: Input[String]): Self = this.set("synthetics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSynthetics: Self = this.set("synthetics", js.undefined)
+    @scala.inline
+    def setTransfer(value: Input[String]): Self = this.set("transfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransfer: Self = this.set("transfer", js.undefined)
+    @scala.inline
+    def setWaf(value: Input[String]): Self = this.set("waf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaf: Self = this.set("waf", js.undefined)
+    @scala.inline
+    def setWafregional(value: Input[String]): Self = this.set("wafregional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWafregional: Self = this.set("wafregional", js.undefined)
+    @scala.inline
+    def setWafv2(value: Input[String]): Self = this.set("wafv2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWafv2: Self = this.set("wafv2", js.undefined)
+    @scala.inline
+    def setWorklink(value: Input[String]): Self = this.set("worklink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorklink: Self = this.set("worklink", js.undefined)
+    @scala.inline
+    def setWorkmail(value: Input[String]): Self = this.set("workmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkmail: Self = this.set("workmail", js.undefined)
+    @scala.inline
+    def setWorkspaces(value: Input[String]): Self = this.set("workspaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaces: Self = this.set("workspaces", js.undefined)
+    @scala.inline
+    def setXray(value: Input[String]): Self = this.set("xray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXray: Self = this.set("xray", js.undefined)
+  }
+  
 }
 

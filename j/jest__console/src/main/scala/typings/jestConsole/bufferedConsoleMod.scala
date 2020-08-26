@@ -30,9 +30,9 @@ object bufferedConsoleMod extends js.Object {
     def dirxml(firstArg: js.Any, rest: js.Any*): Unit = js.native
     def error(firstArg: js.Any, rest: js.Any*): Unit = js.native
     def getBuffer(): js.UndefOr[js.Array[LogEntry]] = js.native
-    def group(): Unit = js.native
+    def group(title: js.UndefOr[scala.Nothing], rest: js.Any*): Unit = js.native
     def group(title: String, rest: js.Any*): Unit = js.native
-    def groupCollapsed(): Unit = js.native
+    def groupCollapsed(title: js.UndefOr[scala.Nothing], rest: js.Any*): Unit = js.native
     def groupCollapsed(title: String, rest: js.Any*): Unit = js.native
     def info(firstArg: js.Any, rest: js.Any*): Unit = js.native
     def log(firstArg: js.Any, rest: js.Any*): Unit = js.native
@@ -48,6 +48,13 @@ object bufferedConsoleMod extends js.Object {
   @js.native
   object default extends js.Object {
     def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
+    def write(
+      buffer: ConsoleBuffer,
+      `type`: LogType,
+      message: LogMessage,
+      level: js.UndefOr[scala.Nothing],
+      sourceMaps: SourceMapRegistry
+    ): js.Array[LogEntry] = js.native
     def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
     def write(
       buffer: ConsoleBuffer,

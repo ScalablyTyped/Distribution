@@ -10,9 +10,9 @@ getpass for node.js
 | ------------------ | :-------------: |
 | Full name          | getpass |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 511972195 |
+| # releases         | 1 |
+| # dependents       | 53 |
+| # downloads        | 525538964 |
 | # stars            | 1 |
 
 ## Links

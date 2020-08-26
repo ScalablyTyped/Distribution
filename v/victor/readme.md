@@ -12,7 +12,7 @@ A JavaScript 2D vector class with methods for common vector operations
 | Keywords           | vector, 2d |
 | # releases         | 1 |
 | # dependents       | 32 |
-| # downloads        | 96616 |
+| # downloads        | 99683 |
 | # stars            | 1 |
 
 ## Links

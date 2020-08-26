@@ -23,11 +23,30 @@ trait SchemaSubmitConfigSourceRequest extends js.Object {
 
 object SchemaSubmitConfigSourceRequest {
   @scala.inline
-  def apply(configSource: SchemaConfigSource = null, validateOnly: js.UndefOr[Boolean] = js.undefined): SchemaSubmitConfigSourceRequest = {
+  def apply(): SchemaSubmitConfigSourceRequest = {
     val __obj = js.Dynamic.literal()
-    if (configSource != null) __obj.updateDynamic("configSource")(configSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubmitConfigSourceRequest]
   }
+  @scala.inline
+  implicit class SchemaSubmitConfigSourceRequestOps[Self <: SchemaSubmitConfigSourceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigSource(value: SchemaConfigSource): Self = this.set("configSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigSource: Self = this.set("configSource", js.undefined)
+    @scala.inline
+    def setValidateOnly(value: Boolean): Self = this.set("validateOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidateOnly: Self = this.set("validateOnly", js.undefined)
+  }
+  
 }
 

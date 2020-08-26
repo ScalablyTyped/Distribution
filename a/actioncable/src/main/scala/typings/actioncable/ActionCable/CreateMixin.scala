@@ -5,27 +5,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateMixin
   extends /* key */ StringDictionary[js.Any] {
-  var connected: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var disconnected: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var received: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.undefined
+  var connected: js.UndefOr[js.Function0[Unit]] = js.native
+  var disconnected: js.UndefOr[js.Function0[Unit]] = js.native
+  var received: js.UndefOr[js.Function1[/* obj */ js.Any, Unit]] = js.native
 }
 
 object CreateMixin {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    connected: () => Unit = null,
-    disconnected: () => Unit = null,
-    received: /* obj */ js.Any => Unit = null
-  ): CreateMixin = {
+  def apply(): CreateMixin = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (connected != null) __obj.updateDynamic("connected")(js.Any.fromFunction0(connected))
-    if (disconnected != null) __obj.updateDynamic("disconnected")(js.Any.fromFunction0(disconnected))
-    if (received != null) __obj.updateDynamic("received")(js.Any.fromFunction1(received))
     __obj.asInstanceOf[CreateMixin]
   }
+  @scala.inline
+  implicit class CreateMixinOps[Self <: CreateMixin] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnected(value: () => Unit): Self = this.set("connected", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteConnected: Self = this.set("connected", js.undefined)
+    @scala.inline
+    def setDisconnected(value: () => Unit): Self = this.set("disconnected", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDisconnected: Self = this.set("disconnected", js.undefined)
+    @scala.inline
+    def setReceived(value: /* obj */ js.Any => Unit): Self = this.set("received", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReceived: Self = this.set("received", js.undefined)
+  }
+  
 }
 

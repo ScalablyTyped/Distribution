@@ -18,11 +18,32 @@ trait ListOperationsResponse extends js.Object {
 
 object ListOperationsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, Operations: OperationSummaryList = null): ListOperationsResponse = {
+  def apply(): ListOperationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Operations != null) __obj.updateDynamic("Operations")(Operations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOperationsResponse]
   }
+  @scala.inline
+  implicit class ListOperationsResponseOps[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOperationsVarargs(value: OperationSummary*): Self = this.set("Operations", js.Array(value :_*))
+    @scala.inline
+    def setOperations(value: OperationSummaryList): Self = this.set("Operations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperations: Self = this.set("Operations", js.undefined)
+  }
+  
 }
 

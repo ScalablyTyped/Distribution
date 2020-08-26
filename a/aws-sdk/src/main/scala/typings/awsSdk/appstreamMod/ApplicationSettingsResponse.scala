@@ -22,16 +22,34 @@ trait ApplicationSettingsResponse extends js.Object {
 
 object ApplicationSettingsResponse {
   @scala.inline
-  def apply(
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    S3BucketName: String = null,
-    SettingsGroup: SettingsGroup = null
-  ): ApplicationSettingsResponse = {
+  def apply(): ApplicationSettingsResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
-    if (SettingsGroup != null) __obj.updateDynamic("SettingsGroup")(SettingsGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSettingsResponse]
   }
+  @scala.inline
+  implicit class ApplicationSettingsResponseOps[Self <: ApplicationSettingsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    @scala.inline
+    def setSettingsGroup(value: SettingsGroup): Self = this.set("SettingsGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsGroup: Self = this.set("SettingsGroup", js.undefined)
+  }
+  
 }
 

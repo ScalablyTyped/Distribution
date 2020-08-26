@@ -4,45 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewAnimationOptions extends ScreenAnimationOptions {
   /**
     * ID of the Top Bar we want to animate
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
 }
 
 object ViewAnimationOptions {
   @scala.inline
-  def apply(
-    alpha: OptionsAnimationPropertyConfig = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    rotation: OptionsAnimationPropertyConfig = null,
-    rotationX: OptionsAnimationPropertyConfig = null,
-    rotationY: OptionsAnimationPropertyConfig = null,
-    scaleX: OptionsAnimationPropertyConfig = null,
-    scaleY: OptionsAnimationPropertyConfig = null,
-    translationX: OptionsAnimationPropertyConfig = null,
-    translationY: OptionsAnimationPropertyConfig = null,
-    waitForRender: js.UndefOr[Boolean] = js.undefined,
-    x: OptionsAnimationPropertyConfig = null,
-    y: OptionsAnimationPropertyConfig = null
-  ): ViewAnimationOptions = {
+  def apply(): ViewAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (rotationX != null) __obj.updateDynamic("rotationX")(rotationX.asInstanceOf[js.Any])
-    if (rotationY != null) __obj.updateDynamic("rotationY")(rotationY.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (translationX != null) __obj.updateDynamic("translationX")(translationX.asInstanceOf[js.Any])
-    if (translationY != null) __obj.updateDynamic("translationY")(translationY.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender.get.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewAnimationOptions]
   }
+  @scala.inline
+  implicit class ViewAnimationOptionsOps[Self <: ViewAnimationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/module-role relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/module-security relevant section in reference guide}
   */
 @js.native
 trait IModuleRole

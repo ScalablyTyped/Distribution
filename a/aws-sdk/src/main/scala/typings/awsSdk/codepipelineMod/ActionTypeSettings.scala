@@ -26,18 +26,38 @@ trait ActionTypeSettings extends js.Object {
 
 object ActionTypeSettings {
   @scala.inline
-  def apply(
-    entityUrlTemplate: UrlTemplate = null,
-    executionUrlTemplate: UrlTemplate = null,
-    revisionUrlTemplate: UrlTemplate = null,
-    thirdPartyConfigurationUrl: Url = null
-  ): ActionTypeSettings = {
+  def apply(): ActionTypeSettings = {
     val __obj = js.Dynamic.literal()
-    if (entityUrlTemplate != null) __obj.updateDynamic("entityUrlTemplate")(entityUrlTemplate.asInstanceOf[js.Any])
-    if (executionUrlTemplate != null) __obj.updateDynamic("executionUrlTemplate")(executionUrlTemplate.asInstanceOf[js.Any])
-    if (revisionUrlTemplate != null) __obj.updateDynamic("revisionUrlTemplate")(revisionUrlTemplate.asInstanceOf[js.Any])
-    if (thirdPartyConfigurationUrl != null) __obj.updateDynamic("thirdPartyConfigurationUrl")(thirdPartyConfigurationUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionTypeSettings]
   }
+  @scala.inline
+  implicit class ActionTypeSettingsOps[Self <: ActionTypeSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityUrlTemplate(value: UrlTemplate): Self = this.set("entityUrlTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityUrlTemplate: Self = this.set("entityUrlTemplate", js.undefined)
+    @scala.inline
+    def setExecutionUrlTemplate(value: UrlTemplate): Self = this.set("executionUrlTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionUrlTemplate: Self = this.set("executionUrlTemplate", js.undefined)
+    @scala.inline
+    def setRevisionUrlTemplate(value: UrlTemplate): Self = this.set("revisionUrlTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionUrlTemplate: Self = this.set("revisionUrlTemplate", js.undefined)
+    @scala.inline
+    def setThirdPartyConfigurationUrl(value: Url): Self = this.set("thirdPartyConfigurationUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThirdPartyConfigurationUrl: Self = this.set("thirdPartyConfigurationUrl", js.undefined)
+  }
+  
 }
 

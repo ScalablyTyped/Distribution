@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * which ones optional. Additionally, it's free to specify any additional requirements about the relations of properties.
   * @since OOo 1.1.2
   */
+@js.native
 trait DataAccessDescriptor extends js.Object {
   /**
     * is a connection to use.
@@ -32,7 +33,7 @@ trait DataAccessDescriptor extends js.Object {
     * If no ActiveConnection is given, then a {@link DataSourceName} is required.
     * @see DataSourceName
     */
-  var ActiveConnection: XConnection
+  var ActiveConnection: XConnection = js.native
   /**
     * specifies how to interpret {@link Selection}
     *
@@ -45,7 +46,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdbc.XResultSet
     * @see com.sun.star.sdb.XResultSetAccess
     */
-  var BookmarkSelection: Boolean
+  var BookmarkSelection: Boolean = js.native
   /**
     * specifies a column object
     *
@@ -55,21 +56,21 @@ trait DataAccessDescriptor extends js.Object {
     * The object will at least support the {@link com.sun.star.sdbcx.Column} service, but more often it will even be a {@link Column} from the {@link
     * com.sun.star.sdb} module.
     */
-  var Column: XPropertySet
+  var Column: XPropertySet = js.native
   /**
     * specifies a column name.
     *
     * This property is usually used together with the {@link Command} and {@link CommandType} properties.
     * @see Column
     */
-  var ColumnName: String
+  var ColumnName: String = js.native
   /**
     * specifies the command to execute to retrieve a result set.
     *
     * This property is only meaningful together with the {@link CommandType} property, thus either **both** or **none** of them are present.
     * @see CommandType
     */
-  var Command: String
+  var Command: String = js.native
   /**
     * specifies the type of the command to be executed to retrieve a result set.
     *
@@ -78,7 +79,7 @@ trait DataAccessDescriptor extends js.Object {
     * This property is only meaningful together with the {@link Command} property, thus either **both** or **none** of them are present.
     * @see com.sun.star.sdb.CommandType
     */
-  var CommandType: Double
+  var CommandType: Double = js.native
   /**
     * specifies additional info to use when creating a connection from a `ConnectionResource`
     *
@@ -87,7 +88,7 @@ trait DataAccessDescriptor extends js.Object {
     *
     * If the sequence is empty, it is ignored.
     */
-  var ConnectionInfo: SafeArray[PropertyValue]
+  var ConnectionInfo: SafeArray[PropertyValue] = js.native
   /**
     * specifies the database URL which locates a database driver.
     *
@@ -95,7 +96,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.DatabaseContext
     * @see ActiveConnection
     */
-  var ConnectionResource: String
+  var ConnectionResource: String = js.native
   /**
     * specifies the name of the datasource to access.
     *
@@ -104,7 +105,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.DatabaseContext
     * @see ActiveConnection
     */
-  var DataSourceName: String
+  var DataSourceName: String = js.native
   /**
     * specifies the URL of the database file.
     *
@@ -113,7 +114,7 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.DatabaseContext
     * @see ActiveConnection
     */
-  var DatabaseLocation: String
+  var DatabaseLocation: String = js.native
   /**
     * specifies if the {@link Command} should be analyzed on the client side before sending it to the database server.
     *
@@ -123,7 +124,7 @@ trait DataAccessDescriptor extends js.Object {
     * This property is usually present together with the {@link Command} and {@link CommandType} properties, and is evaluated if and only if {@link
     * CommandType} equals {@link CommandType.COMMAND} .
     */
-  var EscapeProcessing: Boolean
+  var EscapeProcessing: Boolean = js.native
   /**
     * specifies an additional filter to optionally use.
     *
@@ -136,25 +137,25 @@ trait DataAccessDescriptor extends js.Object {
     * @see com.sun.star.sdb.RowSet
     * @see ResultSet
     */
-  var Filter: String
+  var Filter: String = js.native
   /**
     * specifies an additional `GROUP BY` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `GROUP BY` itself is not part of this property.
     */
-  var GroupBy: String
+  var GroupBy: String = js.native
   /**
     * specifies an additional `HAVING` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `HAVING` itself is not part of this property.
     */
-  var HavingClause: String
+  var HavingClause: String = js.native
   /**
     * specifies an additional `ORDER BY` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `ORDER BY` itself is not part of this property.
     */
-  var Order: String
+  var Order: String = js.native
   /**
     * specifies an already existent result set to use.
     *
@@ -169,7 +170,7 @@ trait DataAccessDescriptor extends js.Object {
     * com.sun.star.sdb.RowSet} . This becomes important in conjunction with the {@link Selection} property.
     * @see com.sun.star.sdb.XResultSetAccess
     */
-  var ResultSet: XResultSet
+  var ResultSet: XResultSet = js.native
   /**
     * specifies a selection to confine the records in a result set.
     *
@@ -183,7 +184,7 @@ trait DataAccessDescriptor extends js.Object {
     * If the elements specify bookmarks, and a {@link ResultSet} has been specified, then this result set is required to support the {@link
     * com.sun.star.sdbcx.XRowLocate} interface.
     */
-  var Selection: SafeArray[_]
+  var Selection: SafeArray[_] = js.native
 }
 
 object DataAccessDescriptor {
@@ -210,5 +211,52 @@ object DataAccessDescriptor {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], BookmarkSelection = BookmarkSelection.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], CommandType = CommandType.asInstanceOf[js.Any], ConnectionInfo = ConnectionInfo.asInstanceOf[js.Any], ConnectionResource = ConnectionResource.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any], DatabaseLocation = DatabaseLocation.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataAccessDescriptor]
   }
+  @scala.inline
+  implicit class DataAccessDescriptorOps[Self <: DataAccessDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveConnection(value: XConnection): Self = this.set("ActiveConnection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBookmarkSelection(value: Boolean): Self = this.set("BookmarkSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumn(value: XPropertySet): Self = this.set("Column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnName(value: String): Self = this.set("ColumnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommand(value: String): Self = this.set("Command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommandType(value: Double): Self = this.set("CommandType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionInfo(value: SafeArray[PropertyValue]): Self = this.set("ConnectionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnectionResource(value: String): Self = this.set("ConnectionResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSourceName(value: String): Self = this.set("DataSourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatabaseLocation(value: String): Self = this.set("DatabaseLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEscapeProcessing(value: Boolean): Self = this.set("EscapeProcessing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupBy(value: String): Self = this.set("GroupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHavingClause(value: String): Self = this.set("HavingClause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrder(value: String): Self = this.set("Order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResultSet(value: XResultSet): Self = this.set("ResultSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelection(value: SafeArray[_]): Self = this.set("Selection", value.asInstanceOf[js.Any])
+  }
+  
 }
 

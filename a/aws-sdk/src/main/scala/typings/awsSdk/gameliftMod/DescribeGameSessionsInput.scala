@@ -34,22 +34,46 @@ trait DescribeGameSessionsInput extends js.Object {
 
 object DescribeGameSessionsInput {
   @scala.inline
-  def apply(
-    AliasId: AliasIdOrArn = null,
-    FleetId: FleetIdOrArn = null,
-    GameSessionId: ArnStringModel = null,
-    Limit: js.UndefOr[PositiveInteger] = js.undefined,
-    NextToken: NonZeroAndMaxString = null,
-    StatusFilter: NonZeroAndMaxString = null
-  ): DescribeGameSessionsInput = {
+  def apply(): DescribeGameSessionsInput = {
     val __obj = js.Dynamic.literal()
-    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StatusFilter != null) __obj.updateDynamic("StatusFilter")(StatusFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGameSessionsInput]
   }
+  @scala.inline
+  implicit class DescribeGameSessionsInputOps[Self <: DescribeGameSessionsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasId(value: AliasIdOrArn): Self = this.set("AliasId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasId: Self = this.set("AliasId", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setGameSessionId(value: ArnStringModel): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionId: Self = this.set("GameSessionId", js.undefined)
+    @scala.inline
+    def setLimit(value: PositiveInteger): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonZeroAndMaxString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStatusFilter(value: NonZeroAndMaxString): Self = this.set("StatusFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusFilter: Self = this.set("StatusFilter", js.undefined)
+  }
+  
 }
 

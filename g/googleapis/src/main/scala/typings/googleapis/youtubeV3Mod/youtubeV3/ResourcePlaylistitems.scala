@@ -28,6 +28,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePlaylistitemsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePlaylistitemsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,6 +58,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaPlaylistItem] = js.native
   def insert(callback: BodyResponseCallback[SchemaPlaylistItem]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlaylistItem] = js.native
   def insert(params: ParamsResourcePlaylistitemsInsert): GaxiosPromise[SchemaPlaylistItem] = js.native
   def insert(params: ParamsResourcePlaylistitemsInsert, callback: BodyResponseCallback[SchemaPlaylistItem]): Unit = js.native
   def insert(
@@ -92,6 +94,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPlaylistItemListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlaylistItemListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlaylistItemListResponse] = js.native
   def list(params: ParamsResourcePlaylistitemsList): GaxiosPromise[SchemaPlaylistItemListResponse] = js.native
   def list(
     params: ParamsResourcePlaylistitemsList,
@@ -125,6 +128,7 @@ class ResourcePlaylistitems protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPlaylistItem] = js.native
   def update(callback: BodyResponseCallback[SchemaPlaylistItem]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlaylistItem] = js.native
   def update(params: ParamsResourcePlaylistitemsUpdate): GaxiosPromise[SchemaPlaylistItem] = js.native
   def update(params: ParamsResourcePlaylistitemsUpdate, callback: BodyResponseCallback[SchemaPlaylistItem]): Unit = js.native
   def update(

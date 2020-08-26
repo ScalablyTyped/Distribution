@@ -25,18 +25,42 @@ trait SchemaUrlMapValidationResult extends js.Object {
 
 object SchemaUrlMapValidationResult {
   @scala.inline
-  def apply(
-    loadErrors: js.Array[String] = null,
-    loadSucceeded: js.UndefOr[Boolean] = js.undefined,
-    testFailures: js.Array[SchemaTestFailure] = null,
-    testPassed: js.UndefOr[Boolean] = js.undefined
-  ): SchemaUrlMapValidationResult = {
+  def apply(): SchemaUrlMapValidationResult = {
     val __obj = js.Dynamic.literal()
-    if (loadErrors != null) __obj.updateDynamic("loadErrors")(loadErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadSucceeded)) __obj.updateDynamic("loadSucceeded")(loadSucceeded.get.asInstanceOf[js.Any])
-    if (testFailures != null) __obj.updateDynamic("testFailures")(testFailures.asInstanceOf[js.Any])
-    if (!js.isUndefined(testPassed)) __obj.updateDynamic("testPassed")(testPassed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlMapValidationResult]
   }
+  @scala.inline
+  implicit class SchemaUrlMapValidationResultOps[Self <: SchemaUrlMapValidationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadErrorsVarargs(value: String*): Self = this.set("loadErrors", js.Array(value :_*))
+    @scala.inline
+    def setLoadErrors(value: js.Array[String]): Self = this.set("loadErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadErrors: Self = this.set("loadErrors", js.undefined)
+    @scala.inline
+    def setLoadSucceeded(value: Boolean): Self = this.set("loadSucceeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadSucceeded: Self = this.set("loadSucceeded", js.undefined)
+    @scala.inline
+    def setTestFailuresVarargs(value: SchemaTestFailure*): Self = this.set("testFailures", js.Array(value :_*))
+    @scala.inline
+    def setTestFailures(value: js.Array[SchemaTestFailure]): Self = this.set("testFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestFailures: Self = this.set("testFailures", js.undefined)
+    @scala.inline
+    def setTestPassed(value: Boolean): Self = this.set("testPassed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestPassed: Self = this.set("testPassed", js.undefined)
+  }
+  
 }
 

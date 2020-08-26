@@ -28,6 +28,7 @@ class ResourceTokens protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTokensDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTokensDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceTokens protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaToken] = js.native
   def get(callback: BodyResponseCallback[SchemaToken]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaToken] = js.native
   def get(params: ParamsResourceTokensGet): GaxiosPromise[SchemaToken] = js.native
   def get(params: ParamsResourceTokensGet, callback: BodyResponseCallback[SchemaToken]): Unit = js.native
   def get(
@@ -80,6 +82,7 @@ class ResourceTokens protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTokens] = js.native
   def list(callback: BodyResponseCallback[SchemaTokens]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTokens] = js.native
   def list(params: ParamsResourceTokensList): GaxiosPromise[SchemaTokens] = js.native
   def list(params: ParamsResourceTokensList, callback: BodyResponseCallback[SchemaTokens]): Unit = js.native
   def list(

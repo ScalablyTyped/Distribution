@@ -14,10 +14,26 @@ trait GetAppliedSchemaVersionResponse extends js.Object {
 
 object GetAppliedSchemaVersionResponse {
   @scala.inline
-  def apply(AppliedSchemaArn: Arn = null): GetAppliedSchemaVersionResponse = {
+  def apply(): GetAppliedSchemaVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (AppliedSchemaArn != null) __obj.updateDynamic("AppliedSchemaArn")(AppliedSchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppliedSchemaVersionResponse]
   }
+  @scala.inline
+  implicit class GetAppliedSchemaVersionResponseOps[Self <: GetAppliedSchemaVersionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppliedSchemaArn(value: Arn): Self = this.set("AppliedSchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliedSchemaArn: Self = this.set("AppliedSchemaArn", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait DescribeUsersResult extends js.Object {
 
 object DescribeUsersResult {
   @scala.inline
-  def apply(NextToken: String = null, Users: UserList = null): DescribeUsersResult = {
+  def apply(): DescribeUsersResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Users != null) __obj.updateDynamic("Users")(Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUsersResult]
   }
+  @scala.inline
+  implicit class DescribeUsersResultOps[Self <: DescribeUsersResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: User*): Self = this.set("Users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: UserList): Self = this.set("Users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("Users", js.undefined)
+  }
+  
 }
 

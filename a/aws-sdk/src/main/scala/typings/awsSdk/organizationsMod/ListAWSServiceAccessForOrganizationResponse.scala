@@ -18,11 +18,32 @@ trait ListAWSServiceAccessForOrganizationResponse extends js.Object {
 
 object ListAWSServiceAccessForOrganizationResponse {
   @scala.inline
-  def apply(EnabledServicePrincipals: EnabledServicePrincipals = null, NextToken: NextToken = null): ListAWSServiceAccessForOrganizationResponse = {
+  def apply(): ListAWSServiceAccessForOrganizationResponse = {
     val __obj = js.Dynamic.literal()
-    if (EnabledServicePrincipals != null) __obj.updateDynamic("EnabledServicePrincipals")(EnabledServicePrincipals.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAWSServiceAccessForOrganizationResponse]
   }
+  @scala.inline
+  implicit class ListAWSServiceAccessForOrganizationResponseOps[Self <: ListAWSServiceAccessForOrganizationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabledServicePrincipalsVarargs(value: EnabledServicePrincipal*): Self = this.set("EnabledServicePrincipals", js.Array(value :_*))
+    @scala.inline
+    def setEnabledServicePrincipals(value: EnabledServicePrincipals): Self = this.set("EnabledServicePrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledServicePrincipals: Self = this.set("EnabledServicePrincipals", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

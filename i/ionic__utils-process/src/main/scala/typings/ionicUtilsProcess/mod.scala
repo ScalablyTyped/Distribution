@@ -2,7 +2,7 @@ package typings.ionicUtilsProcess
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ionicUtilsProcess.anon.Interval
-import typings.node.NodeJS.ProcessEnv
+import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`

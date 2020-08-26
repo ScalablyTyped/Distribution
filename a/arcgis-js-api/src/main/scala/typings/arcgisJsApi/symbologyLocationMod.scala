@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/symbology/location", JSImport.Namespace)
+@JSImport("esri/smartMapping/symbology/location", JSImport.Namespace)
 @js.native
 object symbologyLocationMod extends TopLevel[symbologyLocation]
 

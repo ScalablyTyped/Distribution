@@ -18,6 +18,7 @@ trait FirebaseAnalytics extends js.Object {
     * the gtag.js reference documentation}.
     */
   def logEvent(eventName: EventNameString): Unit = js.native
+  def logEvent(eventName: EventNameString, eventParams: js.UndefOr[scala.Nothing], options: AnalyticsCallOptions): Unit = js.native
   def logEvent(eventName: EventNameString, eventParams: EventParams): Unit = js.native
   def logEvent(eventName: EventNameString, eventParams: EventParams, options: AnalyticsCallOptions): Unit = js.native
   /**

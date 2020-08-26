@@ -1,9 +1,8 @@
 package typings.materialSwitch
 
 import typings.materialBase.componentMod.MDCComponent
-import typings.materialBase.foundationMod.default
+import typings.materialRipple.componentMod.MDCRipple
 import typings.materialSwitch.foundationMod.MDCSwitchFoundation
-import typings.std.Element
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,13 +11,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/switch/component", JSImport.Namespace)
 @js.native
 object componentMod extends js.Object {
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRippleCapableSurface * / any */ @js.native
-  class MDCSwitch () extends MDCComponent[MDCSwitchFoundation, default[MDCSwitchFoundation]] {
-    var checked: Boolean = js.native
-    var disabled: Boolean = js.native
-    val ripple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCRipple */ js.Any = js.native
-    var root_ : Element = js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @js.native
+  class MDCSwitch () extends MDCComponent[MDCSwitchFoundation] {
+    @JSName("disabled")
+    var disabled_FMDCSwitch: js.UndefOr[Boolean] = js.native
+    var unbounded: js.UndefOr[Boolean] = js.native
+    def checked: Boolean = js.native
+    def checked_=(checked: Boolean): Unit = js.native
+    def disabled: Boolean = js.native
+    def disabled_=(disabled: Boolean): Unit = js.native
+    def ripple: MDCRipple = js.native
   }
   
   /* static members */

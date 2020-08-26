@@ -4,158 +4,273 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IOwlCarouselOptions extends js.Object {
-  var addClassActive: js.UndefOr[Boolean] = js.undefined
-  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var autoHeight: js.UndefOr[Boolean] = js.undefined
-  var autoPlay: js.UndefOr[js.Any] = js.undefined
-  var baseClass: js.UndefOr[String] = js.undefined
-  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addClassActive: js.UndefOr[Boolean] = js.native
+  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[js.Any] = js.native
+  var baseClass: js.UndefOr[String] = js.native
+  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
   // callbacks
-  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var dragBeforeAnimFinish: js.UndefOr[Boolean] = js.undefined
+  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var dragBeforeAnimFinish: js.UndefOr[Boolean] = js.native
   // options
-  var items: js.UndefOr[Double] = js.undefined
-  var itemsCustom: js.UndefOr[js.Any] = js.undefined
-  var itemsDesktop: js.UndefOr[js.Array[Double]] = js.undefined
-  var itemsDesktopSmall: js.UndefOr[js.Array[Double]] = js.undefined
-  var itemsMobile: js.UndefOr[js.Array[Double]] = js.undefined
-  var itemsScaleUp: js.UndefOr[Boolean] = js.undefined
-  var itemsTablet: js.UndefOr[js.Array[Double]] = js.undefined
-  var itemsTabletSmall: js.UndefOr[js.Any] = js.undefined
-  var jsonPath: js.UndefOr[js.Any] = js.undefined
-  var jsonSuccess: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
-  var lazyEffect: js.UndefOr[js.Any] = js.undefined
-  var lazyFollow: js.UndefOr[Boolean] = js.undefined
-  var lazyLoad: js.UndefOr[Boolean] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var mouseDrag: js.UndefOr[Boolean] = js.undefined
-  var nav: js.UndefOr[Boolean] = js.undefined
-  var navigation: js.UndefOr[Boolean] = js.undefined
-  var navigationText: js.UndefOr[js.Any] = js.undefined
-  var pagination: js.UndefOr[Boolean] = js.undefined
-  var paginationNumbers: js.UndefOr[Boolean] = js.undefined
-  var paginationSpeed: js.UndefOr[Double] = js.undefined
-  var responsive: js.UndefOr[Boolean] = js.undefined
-  var responsiveBaseWidth: js.UndefOr[JQuery | String] = js.undefined
-  var responsiveRefreshRate: js.UndefOr[Double] = js.undefined
-  var rewindNav: js.UndefOr[Boolean] = js.undefined
-  var rewindSpeed: js.UndefOr[Double] = js.undefined
-  var scrollPerPage: js.UndefOr[Boolean] = js.undefined
-  var singleItem: js.UndefOr[Boolean] = js.undefined
-  var slideSpeed: js.UndefOr[Double] = js.undefined
-  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var stopOnHover: js.UndefOr[Boolean] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var touchDrag: js.UndefOr[Boolean] = js.undefined
-  var transitionStyle: js.UndefOr[js.Any] = js.undefined
+  var items: js.UndefOr[Double] = js.native
+  var itemsCustom: js.UndefOr[js.Any] = js.native
+  var itemsDesktop: js.UndefOr[js.Array[Double]] = js.native
+  var itemsDesktopSmall: js.UndefOr[js.Array[Double]] = js.native
+  var itemsMobile: js.UndefOr[js.Array[Double]] = js.native
+  var itemsScaleUp: js.UndefOr[Boolean] = js.native
+  var itemsTablet: js.UndefOr[js.Array[Double]] = js.native
+  var itemsTabletSmall: js.UndefOr[js.Any] = js.native
+  var jsonPath: js.UndefOr[js.Any] = js.native
+  var jsonSuccess: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+  var lazyEffect: js.UndefOr[js.Any] = js.native
+  var lazyFollow: js.UndefOr[Boolean] = js.native
+  var lazyLoad: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var mouseDrag: js.UndefOr[Boolean] = js.native
+  var nav: js.UndefOr[Boolean] = js.native
+  var navigation: js.UndefOr[Boolean] = js.native
+  var navigationText: js.UndefOr[js.Any] = js.native
+  var pagination: js.UndefOr[Boolean] = js.native
+  var paginationNumbers: js.UndefOr[Boolean] = js.native
+  var paginationSpeed: js.UndefOr[Double] = js.native
+  var responsive: js.UndefOr[Boolean] = js.native
+  var responsiveBaseWidth: js.UndefOr[JQuery | String] = js.native
+  var responsiveRefreshRate: js.UndefOr[Double] = js.native
+  var rewindNav: js.UndefOr[Boolean] = js.native
+  var rewindSpeed: js.UndefOr[Double] = js.native
+  var scrollPerPage: js.UndefOr[Boolean] = js.native
+  var singleItem: js.UndefOr[Boolean] = js.native
+  var slideSpeed: js.UndefOr[Double] = js.native
+  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var stopOnHover: js.UndefOr[Boolean] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var touchDrag: js.UndefOr[Boolean] = js.native
+  var transitionStyle: js.UndefOr[js.Any] = js.native
 }
 
 object IOwlCarouselOptions {
   @scala.inline
-  def apply(
-    addClassActive: js.UndefOr[Boolean] = js.undefined,
-    afterAction: /* params */ js.UndefOr[js.Any] => Unit = null,
-    afterInit: /* params */ js.UndefOr[js.Any] => Unit = null,
-    afterLazyLoad: /* params */ js.UndefOr[js.Any] => Unit = null,
-    afterMove: /* params */ js.UndefOr[js.Any] => Unit = null,
-    afterUpdate: /* params */ js.UndefOr[js.Any] => Unit = null,
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.Any = null,
-    baseClass: String = null,
-    beforeInit: /* params */ js.UndefOr[js.Any] => Unit = null,
-    beforeMove: /* params */ js.UndefOr[js.Any] => Unit = null,
-    beforeUpdate: /* params */ js.UndefOr[js.Any] => Unit = null,
-    dragBeforeAnimFinish: js.UndefOr[Boolean] = js.undefined,
-    items: js.UndefOr[Double] = js.undefined,
-    itemsCustom: js.Any = null,
-    itemsDesktop: js.Array[Double] = null,
-    itemsDesktopSmall: js.Array[Double] = null,
-    itemsMobile: js.Array[Double] = null,
-    itemsScaleUp: js.UndefOr[Boolean] = js.undefined,
-    itemsTablet: js.Array[Double] = null,
-    itemsTabletSmall: js.Any = null,
-    jsonPath: js.Any = null,
-    jsonSuccess: /* data */ js.Any => Unit = null,
-    lazyEffect: js.Any = null,
-    lazyFollow: js.UndefOr[Boolean] = js.undefined,
-    lazyLoad: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    mouseDrag: js.UndefOr[Boolean] = js.undefined,
-    nav: js.UndefOr[Boolean] = js.undefined,
-    navigation: js.UndefOr[Boolean] = js.undefined,
-    navigationText: js.Any = null,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    paginationNumbers: js.UndefOr[Boolean] = js.undefined,
-    paginationSpeed: js.UndefOr[Double] = js.undefined,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    responsiveBaseWidth: JQuery | String = null,
-    responsiveRefreshRate: js.UndefOr[Double] = js.undefined,
-    rewindNav: js.UndefOr[Boolean] = js.undefined,
-    rewindSpeed: js.UndefOr[Double] = js.undefined,
-    scrollPerPage: js.UndefOr[Boolean] = js.undefined,
-    singleItem: js.UndefOr[Boolean] = js.undefined,
-    slideSpeed: js.UndefOr[Double] = js.undefined,
-    startDragging: /* params */ js.UndefOr[js.Any] => Unit = null,
-    stopOnHover: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null,
-    touchDrag: js.UndefOr[Boolean] = js.undefined,
-    transitionStyle: js.Any = null
-  ): IOwlCarouselOptions = {
+  def apply(): IOwlCarouselOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addClassActive)) __obj.updateDynamic("addClassActive")(addClassActive.get.asInstanceOf[js.Any])
-    if (afterAction != null) __obj.updateDynamic("afterAction")(js.Any.fromFunction1(afterAction))
-    if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction1(afterInit))
-    if (afterLazyLoad != null) __obj.updateDynamic("afterLazyLoad")(js.Any.fromFunction1(afterLazyLoad))
-    if (afterMove != null) __obj.updateDynamic("afterMove")(js.Any.fromFunction1(afterMove))
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1(afterUpdate))
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.get.asInstanceOf[js.Any])
-    if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction1(beforeInit))
-    if (beforeMove != null) __obj.updateDynamic("beforeMove")(js.Any.fromFunction1(beforeMove))
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1(beforeUpdate))
-    if (!js.isUndefined(dragBeforeAnimFinish)) __obj.updateDynamic("dragBeforeAnimFinish")(dragBeforeAnimFinish.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(items)) __obj.updateDynamic("items")(items.get.asInstanceOf[js.Any])
-    if (itemsCustom != null) __obj.updateDynamic("itemsCustom")(itemsCustom.asInstanceOf[js.Any])
-    if (itemsDesktop != null) __obj.updateDynamic("itemsDesktop")(itemsDesktop.asInstanceOf[js.Any])
-    if (itemsDesktopSmall != null) __obj.updateDynamic("itemsDesktopSmall")(itemsDesktopSmall.asInstanceOf[js.Any])
-    if (itemsMobile != null) __obj.updateDynamic("itemsMobile")(itemsMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemsScaleUp)) __obj.updateDynamic("itemsScaleUp")(itemsScaleUp.get.asInstanceOf[js.Any])
-    if (itemsTablet != null) __obj.updateDynamic("itemsTablet")(itemsTablet.asInstanceOf[js.Any])
-    if (itemsTabletSmall != null) __obj.updateDynamic("itemsTabletSmall")(itemsTabletSmall.asInstanceOf[js.Any])
-    if (jsonPath != null) __obj.updateDynamic("jsonPath")(jsonPath.asInstanceOf[js.Any])
-    if (jsonSuccess != null) __obj.updateDynamic("jsonSuccess")(js.Any.fromFunction1(jsonSuccess))
-    if (lazyEffect != null) __obj.updateDynamic("lazyEffect")(lazyEffect.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyFollow)) __obj.updateDynamic("lazyFollow")(lazyFollow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.get.asInstanceOf[js.Any])
-    if (navigationText != null) __obj.updateDynamic("navigationText")(navigationText.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationNumbers)) __obj.updateDynamic("paginationNumbers")(paginationNumbers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationSpeed)) __obj.updateDynamic("paginationSpeed")(paginationSpeed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
-    if (responsiveBaseWidth != null) __obj.updateDynamic("responsiveBaseWidth")(responsiveBaseWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsiveRefreshRate)) __obj.updateDynamic("responsiveRefreshRate")(responsiveRefreshRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewindNav)) __obj.updateDynamic("rewindNav")(rewindNav.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewindSpeed)) __obj.updateDynamic("rewindSpeed")(rewindSpeed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPerPage)) __obj.updateDynamic("scrollPerPage")(scrollPerPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleItem)) __obj.updateDynamic("singleItem")(singleItem.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slideSpeed)) __obj.updateDynamic("slideSpeed")(slideSpeed.get.asInstanceOf[js.Any])
-    if (startDragging != null) __obj.updateDynamic("startDragging")(js.Any.fromFunction1(startDragging))
-    if (!js.isUndefined(stopOnHover)) __obj.updateDynamic("stopOnHover")(stopOnHover.get.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag.get.asInstanceOf[js.Any])
-    if (transitionStyle != null) __obj.updateDynamic("transitionStyle")(transitionStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOwlCarouselOptions]
   }
+  @scala.inline
+  implicit class IOwlCarouselOptionsOps[Self <: IOwlCarouselOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddClassActive(value: Boolean): Self = this.set("addClassActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddClassActive: Self = this.set("addClassActive", js.undefined)
+    @scala.inline
+    def setAfterAction(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("afterAction", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterAction: Self = this.set("afterAction", js.undefined)
+    @scala.inline
+    def setAfterInit(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("afterInit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterInit: Self = this.set("afterInit", js.undefined)
+    @scala.inline
+    def setAfterLazyLoad(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("afterLazyLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterLazyLoad: Self = this.set("afterLazyLoad", js.undefined)
+    @scala.inline
+    def setAfterMove(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("afterMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterMove: Self = this.set("afterMove", js.undefined)
+    @scala.inline
+    def setAfterUpdate(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("afterUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterUpdate: Self = this.set("afterUpdate", js.undefined)
+    @scala.inline
+    def setAutoHeight(value: Boolean): Self = this.set("autoHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoHeight: Self = this.set("autoHeight", js.undefined)
+    @scala.inline
+    def setAutoPlay(value: js.Any): Self = this.set("autoPlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPlay: Self = this.set("autoPlay", js.undefined)
+    @scala.inline
+    def setBaseClass(value: String): Self = this.set("baseClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseClass: Self = this.set("baseClass", js.undefined)
+    @scala.inline
+    def setBeforeInit(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeInit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeInit: Self = this.set("beforeInit", js.undefined)
+    @scala.inline
+    def setBeforeMove(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeMove: Self = this.set("beforeMove", js.undefined)
+    @scala.inline
+    def setBeforeUpdate(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("beforeUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeUpdate: Self = this.set("beforeUpdate", js.undefined)
+    @scala.inline
+    def setDragBeforeAnimFinish(value: Boolean): Self = this.set("dragBeforeAnimFinish", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragBeforeAnimFinish: Self = this.set("dragBeforeAnimFinish", js.undefined)
+    @scala.inline
+    def setItems(value: Double): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setItemsCustom(value: js.Any): Self = this.set("itemsCustom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsCustom: Self = this.set("itemsCustom", js.undefined)
+    @scala.inline
+    def setItemsDesktopVarargs(value: Double*): Self = this.set("itemsDesktop", js.Array(value :_*))
+    @scala.inline
+    def setItemsDesktop(value: js.Array[Double]): Self = this.set("itemsDesktop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsDesktop: Self = this.set("itemsDesktop", js.undefined)
+    @scala.inline
+    def setItemsDesktopSmallVarargs(value: Double*): Self = this.set("itemsDesktopSmall", js.Array(value :_*))
+    @scala.inline
+    def setItemsDesktopSmall(value: js.Array[Double]): Self = this.set("itemsDesktopSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsDesktopSmall: Self = this.set("itemsDesktopSmall", js.undefined)
+    @scala.inline
+    def setItemsMobileVarargs(value: Double*): Self = this.set("itemsMobile", js.Array(value :_*))
+    @scala.inline
+    def setItemsMobile(value: js.Array[Double]): Self = this.set("itemsMobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsMobile: Self = this.set("itemsMobile", js.undefined)
+    @scala.inline
+    def setItemsScaleUp(value: Boolean): Self = this.set("itemsScaleUp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsScaleUp: Self = this.set("itemsScaleUp", js.undefined)
+    @scala.inline
+    def setItemsTabletVarargs(value: Double*): Self = this.set("itemsTablet", js.Array(value :_*))
+    @scala.inline
+    def setItemsTablet(value: js.Array[Double]): Self = this.set("itemsTablet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsTablet: Self = this.set("itemsTablet", js.undefined)
+    @scala.inline
+    def setItemsTabletSmall(value: js.Any): Self = this.set("itemsTabletSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsTabletSmall: Self = this.set("itemsTabletSmall", js.undefined)
+    @scala.inline
+    def setJsonPath(value: js.Any): Self = this.set("jsonPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonPath: Self = this.set("jsonPath", js.undefined)
+    @scala.inline
+    def setJsonSuccess(value: /* data */ js.Any => Unit): Self = this.set("jsonSuccess", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteJsonSuccess: Self = this.set("jsonSuccess", js.undefined)
+    @scala.inline
+    def setLazyEffect(value: js.Any): Self = this.set("lazyEffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyEffect: Self = this.set("lazyEffect", js.undefined)
+    @scala.inline
+    def setLazyFollow(value: Boolean): Self = this.set("lazyFollow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyFollow: Self = this.set("lazyFollow", js.undefined)
+    @scala.inline
+    def setLazyLoad(value: Boolean): Self = this.set("lazyLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazyLoad: Self = this.set("lazyLoad", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMouseDrag(value: Boolean): Self = this.set("mouseDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseDrag: Self = this.set("mouseDrag", js.undefined)
+    @scala.inline
+    def setNav(value: Boolean): Self = this.set("nav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNav: Self = this.set("nav", js.undefined)
+    @scala.inline
+    def setNavigation(value: Boolean): Self = this.set("navigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigation: Self = this.set("navigation", js.undefined)
+    @scala.inline
+    def setNavigationText(value: js.Any): Self = this.set("navigationText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigationText: Self = this.set("navigationText", js.undefined)
+    @scala.inline
+    def setPagination(value: Boolean): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setPaginationNumbers(value: Boolean): Self = this.set("paginationNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationNumbers: Self = this.set("paginationNumbers", js.undefined)
+    @scala.inline
+    def setPaginationSpeed(value: Double): Self = this.set("paginationSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationSpeed: Self = this.set("paginationSpeed", js.undefined)
+    @scala.inline
+    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setResponsiveBaseWidth(value: JQuery | String): Self = this.set("responsiveBaseWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsiveBaseWidth: Self = this.set("responsiveBaseWidth", js.undefined)
+    @scala.inline
+    def setResponsiveRefreshRate(value: Double): Self = this.set("responsiveRefreshRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsiveRefreshRate: Self = this.set("responsiveRefreshRate", js.undefined)
+    @scala.inline
+    def setRewindNav(value: Boolean): Self = this.set("rewindNav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewindNav: Self = this.set("rewindNav", js.undefined)
+    @scala.inline
+    def setRewindSpeed(value: Double): Self = this.set("rewindSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewindSpeed: Self = this.set("rewindSpeed", js.undefined)
+    @scala.inline
+    def setScrollPerPage(value: Boolean): Self = this.set("scrollPerPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollPerPage: Self = this.set("scrollPerPage", js.undefined)
+    @scala.inline
+    def setSingleItem(value: Boolean): Self = this.set("singleItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleItem: Self = this.set("singleItem", js.undefined)
+    @scala.inline
+    def setSlideSpeed(value: Double): Self = this.set("slideSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideSpeed: Self = this.set("slideSpeed", js.undefined)
+    @scala.inline
+    def setStartDragging(value: /* params */ js.UndefOr[js.Any] => Unit): Self = this.set("startDragging", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStartDragging: Self = this.set("startDragging", js.undefined)
+    @scala.inline
+    def setStopOnHover(value: Boolean): Self = this.set("stopOnHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopOnHover: Self = this.set("stopOnHover", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTouchDrag(value: Boolean): Self = this.set("touchDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchDrag: Self = this.set("touchDrag", js.undefined)
+    @scala.inline
+    def setTransitionStyle(value: js.Any): Self = this.set("transitionStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionStyle: Self = this.set("transitionStyle", js.undefined)
+  }
+  
 }
 

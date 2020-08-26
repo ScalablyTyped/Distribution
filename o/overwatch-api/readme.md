@@ -1,7 +1,7 @@
 
 # Scala.js typings for overwatch-api
 
-Typings are for version 0.8.2
+Typings are for version 0.10.1
 
 ## Library description:
 An Unoffical Overwatch API.

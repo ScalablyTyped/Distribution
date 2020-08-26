@@ -18,13 +18,14 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.awt.XWindowPeer
   * @see com.sun.star.form.component.GridControl
   */
+@js.native
 trait XGridPeer extends XInterface {
   /** retrieves the currently used column definitions of the peer. */
-  var Columns: XIndexContainer
+  var Columns: XIndexContainer = js.native
   /** retrieves the currently used column definitions of the peer. */
-  def getColumns(): XIndexContainer
+  def getColumns(): XIndexContainer = js.native
   /** sets the column definition for the peer. */
-  def setColumns(aColumns: XIndexContainer): Unit
+  def setColumns(aColumns: XIndexContainer): Unit = js.native
 }
 
 object XGridPeer {
@@ -40,5 +41,24 @@ object XGridPeer {
     val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getColumns = js.Any.fromFunction0(getColumns), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setColumns = js.Any.fromFunction1(setColumns))
     __obj.asInstanceOf[XGridPeer]
   }
+  @scala.inline
+  implicit class XGridPeerOps[Self <: XGridPeer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: XIndexContainer): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetColumns(value: () => XIndexContainer): Self = this.set("getColumns", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetColumns(value: XIndexContainer => Unit): Self = this.set("setColumns", js.Any.fromFunction1(value))
+  }
+  
 }
 

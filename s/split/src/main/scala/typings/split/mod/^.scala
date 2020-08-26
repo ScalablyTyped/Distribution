@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): ThroughStream = js.native
+  def apply(matcher: js.UndefOr[scala.Nothing], mapper: js.UndefOr[scala.Nothing], options: SplitOptions): ThroughStream = js.native
+  def apply(matcher: js.UndefOr[scala.Nothing], mapper: js.Any): ThroughStream = js.native
+  def apply(matcher: js.UndefOr[scala.Nothing], mapper: js.Any, options: SplitOptions): ThroughStream = js.native
   def apply(matcher: js.Any): ThroughStream = js.native
+  def apply(matcher: js.Any, mapper: js.UndefOr[scala.Nothing], options: SplitOptions): ThroughStream = js.native
   def apply(matcher: js.Any, mapper: js.Any): ThroughStream = js.native
   def apply(matcher: js.Any, mapper: js.Any, options: SplitOptions): ThroughStream = js.native
 }

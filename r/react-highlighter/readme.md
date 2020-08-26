@@ -11,8 +11,8 @@ Highlight select fragments of texts
 | Full name          | react-highlighter |
 | Keywords           | react-component, react, highlight |
 | # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 1573857 |
+| # dependents       | 24 |
+| # downloads        | 1701789 |
 | # stars            | 0 |
 
 ## Links

@@ -14,10 +14,6 @@ object ServiceSettings extends js.Object {
     def this(message: String) = this()
     def this(message: String, constr: js.Any) = this()
     var constr: js.Any = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   var DEFAULT_PROTOCOL: String = js.native

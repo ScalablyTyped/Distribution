@@ -12,7 +12,7 @@ Generate an HTML5 Application Cache for a Webpack build
 | Keywords           | webpack, appcache, application, cache, plugin |
 | # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 66100 |
+| # downloads        | 63308 |
 | # stars            | 2 |
 
 ## Links

@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 class Cylindrical ()
   extends typings.three.cylindricalMod.Cylindrical {
   def this(radius: Double) = this()
+  def this(radius: js.UndefOr[scala.Nothing], theta: Double) = this()
   def this(radius: Double, theta: Double) = this()
+  def this(radius: js.UndefOr[scala.Nothing], theta: js.UndefOr[scala.Nothing], y: Double) = this()
+  def this(radius: js.UndefOr[scala.Nothing], theta: Double, y: Double) = this()
+  def this(radius: Double, theta: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(radius: Double, theta: Double, y: Double) = this()
 }
 

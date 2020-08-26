@@ -26,11 +26,34 @@ trait RestoreServerRequest extends js.Object {
 
 object RestoreServerRequest {
   @scala.inline
-  def apply(BackupId: BackupId, ServerName: ServerName, InstanceType: String = null, KeyPair: KeyPair = null): RestoreServerRequest = {
+  def apply(BackupId: BackupId, ServerName: ServerName): RestoreServerRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KeyPair != null) __obj.updateDynamic("KeyPair")(KeyPair.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreServerRequest]
   }
+  @scala.inline
+  implicit class RestoreServerRequestOps[Self <: RestoreServerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupId(value: BackupId): Self = this.set("BackupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerName(value: ServerName): Self = this.set("ServerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKeyPair(value: KeyPair): Self = this.set("KeyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPair: Self = this.set("KeyPair", js.undefined)
+  }
+  
 }
 

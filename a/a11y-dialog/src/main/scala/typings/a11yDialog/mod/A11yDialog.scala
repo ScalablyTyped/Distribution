@@ -13,6 +13,9 @@ trait A11yDialog extends js.Object {
     * Bind click listeners to dialog openers and closers.
     */
   def create(): Unit = js.native
+  def create(el: js.UndefOr[scala.Nothing], containers: String): Unit = js.native
+  def create(el: js.UndefOr[scala.Nothing], containers: Element): Unit = js.native
+  def create(el: js.UndefOr[scala.Nothing], containers: NodeList): Unit = js.native
   def create(el: Null, containers: String): Unit = js.native
   def create(el: Null, containers: Element): Unit = js.native
   def create(el: Null, containers: NodeList): Unit = js.native

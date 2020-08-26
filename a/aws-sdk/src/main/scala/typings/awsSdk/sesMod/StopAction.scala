@@ -18,10 +18,28 @@ trait StopAction extends js.Object {
 
 object StopAction {
   @scala.inline
-  def apply(Scope: StopScope, TopicArn: AmazonResourceName = null): StopAction = {
+  def apply(Scope: StopScope): StopAction = {
     val __obj = js.Dynamic.literal(Scope = Scope.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopAction]
   }
+  @scala.inline
+  implicit class StopActionOps[Self <: StopAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScope(value: StopScope): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+  }
+  
 }
 

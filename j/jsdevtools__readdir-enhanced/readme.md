@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsdevtools__readdir-enhanced
 
-Typings are for version 6.0.3
+Typings are for version 6.0.4
 
 ## Library description:
 fs.readdir with sync, async, streaming, and async iterator APIs + filtering, recursion, absolute paths, etc.
@@ -10,9 +10,9 @@ fs.readdir with sync, async, streaming, and async iterator APIs + filtering, rec
 | ------------------ | :-------------: |
 | Full name          | @jsdevtools/readdir-enhanced |
 | Keywords           | fs, readdir, async, promise, iterator, generator, async-iterator, stream, event, event-emitter, recursive, deep, walk, crawl, filter, absolute |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 0 |
+| # releases         | 6 |
+| # dependents       | 4 |
+| # downloads        | 5000 |
 | # stars            | 0 |
 
 ## Links

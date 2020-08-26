@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EventEmitter
-  extends typings.node.NodeJS.EventEmitter {
+  extends typings.node.eventsMod.global.NodeJS.EventEmitter {
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
   @JSName("on")

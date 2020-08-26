@@ -13,6 +13,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def destroyCacheOnExit(destroy: Boolean): Unit = js.native
+  def destroyCacheOnExit(
+    destroy: Boolean,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def destroyCacheOnExit(destroy: Boolean, success: js.Function0[Unit]): Unit = js.native
   def destroyCacheOnExit(destroy: Boolean, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -22,6 +27,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def getTile(args: js.Array[_]): Unit = js.native
+  def getTile(
+    args: js.Array[_],
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def getTile(args: js.Array[_], success: js.Function1[/* tilePath */ String, Unit]): Unit = js.native
   def getTile(
     args: js.Array[_],
@@ -35,6 +45,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def initialize(mapFilePath: String): Unit = js.native
+  def initialize(
+    mapFilePath: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def initialize(mapFilePath: String, success: js.Function0[Unit]): Unit = js.native
   def initialize(mapFilePath: String, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -43,6 +58,7 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def onDestroy(): Unit = js.native
+  def onDestroy(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -52,6 +68,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def setCacheCleaningTrigger(sizeInMB: Double): Unit = js.native
+  def setCacheCleaningTrigger(
+    sizeInMB: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setCacheCleaningTrigger(sizeInMB: Double, success: js.Function0[Unit]): Unit = js.native
   def setCacheCleaningTrigger(sizeInMB: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -61,6 +82,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def setCacheEnabled(enabled: Boolean): Unit = js.native
+  def setCacheEnabled(
+    enabled: Boolean,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setCacheEnabled(enabled: Boolean, success: js.Function0[Unit]): Unit = js.native
   def setCacheEnabled(enabled: Boolean, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -71,6 +97,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def setExternalCache(external: Boolean): Unit = js.native
+  def setExternalCache(
+    external: Boolean,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setExternalCache(external: Boolean, success: js.Function0[Unit]): Unit = js.native
   def setExternalCache(external: Boolean, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -80,6 +111,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def setMapFile(absolutePath: String): Unit = js.native
+  def setMapFile(
+    absolutePath: String,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setMapFile(absolutePath: String, success: js.Function0[Unit]): Unit = js.native
   def setMapFile(absolutePath: String, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -89,6 +125,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def setMaxCacheAge(milliseconds: Double): Unit = js.native
+  def setMaxCacheAge(
+    milliseconds: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setMaxCacheAge(milliseconds: Double, success: js.Function0[Unit]): Unit = js.native
   def setMaxCacheAge(milliseconds: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -98,6 +139,11 @@ trait MapsforgeCachePlugin extends js.Object {
     * @param error Error callback
     */
   def setMaxCacheSize(sizeInMB: Double): Unit = js.native
+  def setMaxCacheSize(
+    sizeInMB: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setMaxCacheSize(sizeInMB: Double, success: js.Function0[Unit]): Unit = js.native
   def setMaxCacheSize(sizeInMB: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
 }

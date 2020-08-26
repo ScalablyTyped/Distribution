@@ -34,22 +34,48 @@ trait EventDestinationDefinition extends js.Object {
 
 object EventDestinationDefinition {
   @scala.inline
-  def apply(
-    CloudWatchDestination: CloudWatchDestination = null,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
-    KinesisFirehoseDestination: KinesisFirehoseDestination = null,
-    MatchingEventTypes: EventTypes = null,
-    PinpointDestination: PinpointDestination = null,
-    SnsDestination: SnsDestination = null
-  ): EventDestinationDefinition = {
+  def apply(): EventDestinationDefinition = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchDestination != null) __obj.updateDynamic("CloudWatchDestination")(CloudWatchDestination.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (KinesisFirehoseDestination != null) __obj.updateDynamic("KinesisFirehoseDestination")(KinesisFirehoseDestination.asInstanceOf[js.Any])
-    if (MatchingEventTypes != null) __obj.updateDynamic("MatchingEventTypes")(MatchingEventTypes.asInstanceOf[js.Any])
-    if (PinpointDestination != null) __obj.updateDynamic("PinpointDestination")(PinpointDestination.asInstanceOf[js.Any])
-    if (SnsDestination != null) __obj.updateDynamic("SnsDestination")(SnsDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventDestinationDefinition]
   }
+  @scala.inline
+  implicit class EventDestinationDefinitionOps[Self <: EventDestinationDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchDestination(value: CloudWatchDestination): Self = this.set("CloudWatchDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchDestination: Self = this.set("CloudWatchDestination", js.undefined)
+    @scala.inline
+    def setEnabled(value: Enabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setKinesisFirehoseDestination(value: KinesisFirehoseDestination): Self = this.set("KinesisFirehoseDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisFirehoseDestination: Self = this.set("KinesisFirehoseDestination", js.undefined)
+    @scala.inline
+    def setMatchingEventTypesVarargs(value: EventType*): Self = this.set("MatchingEventTypes", js.Array(value :_*))
+    @scala.inline
+    def setMatchingEventTypes(value: EventTypes): Self = this.set("MatchingEventTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchingEventTypes: Self = this.set("MatchingEventTypes", js.undefined)
+    @scala.inline
+    def setPinpointDestination(value: PinpointDestination): Self = this.set("PinpointDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinpointDestination: Self = this.set("PinpointDestination", js.undefined)
+    @scala.inline
+    def setSnsDestination(value: SnsDestination): Self = this.set("SnsDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnsDestination: Self = this.set("SnsDestination", js.undefined)
+  }
+  
 }
 

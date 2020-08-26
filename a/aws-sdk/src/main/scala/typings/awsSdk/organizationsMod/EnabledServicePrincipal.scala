@@ -18,11 +18,30 @@ trait EnabledServicePrincipal extends js.Object {
 
 object EnabledServicePrincipal {
   @scala.inline
-  def apply(DateEnabled: Timestamp = null, ServicePrincipal: ServicePrincipal = null): EnabledServicePrincipal = {
+  def apply(): EnabledServicePrincipal = {
     val __obj = js.Dynamic.literal()
-    if (DateEnabled != null) __obj.updateDynamic("DateEnabled")(DateEnabled.asInstanceOf[js.Any])
-    if (ServicePrincipal != null) __obj.updateDynamic("ServicePrincipal")(ServicePrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnabledServicePrincipal]
   }
+  @scala.inline
+  implicit class EnabledServicePrincipalOps[Self <: EnabledServicePrincipal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDateEnabled(value: Timestamp): Self = this.set("DateEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateEnabled: Self = this.set("DateEnabled", js.undefined)
+    @scala.inline
+    def setServicePrincipal(value: ServicePrincipal): Self = this.set("ServicePrincipal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServicePrincipal: Self = this.set("ServicePrincipal", js.undefined)
+  }
+  
 }
 

@@ -14,8 +14,6 @@ class WebglFilterBackend ()
   extends FilterBackend_
      with WebglFilterBackendOptions {
   def this(options: WebglFilterBackendOptions) = this()
-  /* CompleteClass */
-  override var tileSize: Double = js.native
   def applyFiltersDebug(
     filters: js.Array[IBaseFilter],
     sourceElement: HTMLCanvasElement,

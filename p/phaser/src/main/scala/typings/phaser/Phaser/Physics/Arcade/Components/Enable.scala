@@ -15,6 +15,7 @@ trait Enable extends js.Object {
     * @param hideGameObject Also hide this Game Object. Default false.
     */
   def disableBody(): this.type = js.native
+  def disableBody(disableGameObject: js.UndefOr[scala.Nothing], hideGameObject: Boolean): this.type = js.native
   def disableBody(disableGameObject: Boolean): this.type = js.native
   def disableBody(disableGameObject: Boolean, hideGameObject: Boolean): this.type = js.native
   /**

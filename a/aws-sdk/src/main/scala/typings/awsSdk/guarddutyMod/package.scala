@@ -20,6 +20,21 @@ package object guarddutyMod {
   type ClientToken = java.lang.String
   type CountBySeverity = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.guarddutyMod.Integer]
   type Criterion = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.guarddutyMod.Condition]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.FLOW_LOGS
+    - typings.awsSdk.awsSdkStrings.CLOUD_TRAIL
+    - typings.awsSdk.awsSdkStrings.DNS_LOGS
+    - typings.awsSdk.awsSdkStrings.S3_LOGS
+    - java.lang.String
+  */
+  type DataSource = typings.awsSdk.guarddutyMod._DataSource | java.lang.String
+  type DataSourceList = js.Array[typings.awsSdk.guarddutyMod.DataSource]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.ENABLED
+    - typings.awsSdk.awsSdkStrings.DISABLED
+    - java.lang.String
+  */
+  type DataSourceStatus = typings.awsSdk.guarddutyMod._DataSourceStatus | java.lang.String
   type DestinationType = typings.awsSdk.awsSdkStrings.S3 | java.lang.String
   type Destinations = js.Array[typings.awsSdk.guarddutyMod.Destination]
   type DetectorId = java.lang.String
@@ -93,6 +108,7 @@ package object guarddutyMod {
   type Location = java.lang.String
   type Long = scala.Double
   type MaxResults = scala.Double
+  type MemberDataSourceConfigurations = js.Array[typings.awsSdk.guarddutyMod.MemberDataSourceConfiguration]
   type Members = js.Array[typings.awsSdk.guarddutyMod.Member]
   type Name = java.lang.String
   type Neq = js.Array[typings.awsSdk.guarddutyMod.String]
@@ -115,6 +131,7 @@ package object guarddutyMod {
     - java.lang.String
   */
   type PublishingStatus = typings.awsSdk.guarddutyMod._PublishingStatus | java.lang.String
+  type ResourceList = js.Array[typings.awsSdk.guarddutyMod.String]
   type S3BucketDetails = js.Array[typings.awsSdk.guarddutyMod.S3BucketDetail]
   type SecurityGroups = js.Array[typings.awsSdk.guarddutyMod.SecurityGroup]
   type String = java.lang.String
@@ -149,6 +166,17 @@ package object guarddutyMod {
   type ThreatNames = js.Array[typings.awsSdk.guarddutyMod.String]
   type Timestamp = typings.std.Date
   type UnprocessedAccounts = js.Array[typings.awsSdk.guarddutyMod.UnprocessedAccount]
+  type UsageAccountResultList = js.Array[typings.awsSdk.guarddutyMod.UsageAccountResult]
+  type UsageDataSourceResultList = js.Array[typings.awsSdk.guarddutyMod.UsageDataSourceResult]
+  type UsageResourceResultList = js.Array[typings.awsSdk.guarddutyMod.UsageResourceResult]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.SUM_BY_ACCOUNT
+    - typings.awsSdk.awsSdkStrings.SUM_BY_DATA_SOURCE
+    - typings.awsSdk.awsSdkStrings.SUM_BY_RESOURCE
+    - typings.awsSdk.awsSdkStrings.TOP_RESOURCES
+    - java.lang.String
+  */
+  type UsageStatisticType = typings.awsSdk.guarddutyMod._UsageStatisticType | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.`2017-11-28`
     - typings.awsSdk.awsSdkStrings.latest_

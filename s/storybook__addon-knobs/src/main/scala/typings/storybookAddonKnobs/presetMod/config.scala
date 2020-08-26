@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object config extends js.Object {
   def apply(): js.Array[_] = js.native
+  def apply(entry: js.UndefOr[scala.Nothing], hasAddDecorator: KnobsOptions): js.Array[_] = js.native
   def apply(entry: js.Array[_]): js.Array[_] = js.native
   def apply(entry: js.Array[_], hasAddDecorator: KnobsOptions): js.Array[_] = js.native
 }

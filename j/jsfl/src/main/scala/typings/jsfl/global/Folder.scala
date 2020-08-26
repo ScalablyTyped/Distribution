@@ -9,7 +9,5 @@ import scala.scalajs.js.annotation._
 class Folder protected ()
   extends typings.jsfl.Folder {
   def this(path: String) = this()
-  /* CompleteClass */
-  override var contents: js.Array[typings.jsfl.File] = js.native
 }
 

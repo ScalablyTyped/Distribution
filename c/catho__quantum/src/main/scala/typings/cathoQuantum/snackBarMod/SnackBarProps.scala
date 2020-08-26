@@ -15,42 +15,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SnackBarProps extends js.Object {
-  var actionTrigger: js.UndefOr[CallbackFn] = js.undefined
-  var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inverted: js.UndefOr[Boolean] = js.undefined
-  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
-  var secondsToClose: js.UndefOr[Double] = js.undefined
-  var skin: js.UndefOr[primary | success | error | neutral | warning] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var theme: js.UndefOr[BaseFontSizeBreakpoints] = js.undefined
+  var actionTrigger: js.UndefOr[CallbackFn] = js.native
+  var closeButtonAriaLabel: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inverted: js.UndefOr[Boolean] = js.native
+  var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+  var secondsToClose: js.UndefOr[Double] = js.native
+  var skin: js.UndefOr[primary | success | error | neutral | warning] = js.native
+  var text: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[BaseFontSizeBreakpoints] = js.native
 }
 
 object SnackBarProps {
   @scala.inline
-  def apply(
-    actionTrigger: CallbackFn = null,
-    closeButtonAriaLabel: String = null,
-    id: String = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    onClose: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit = null,
-    secondsToClose: js.UndefOr[Double] = js.undefined,
-    skin: primary | success | error | neutral | warning = null,
-    text: String = null,
-    theme: BaseFontSizeBreakpoints = null
-  ): SnackBarProps = {
+  def apply(): SnackBarProps = {
     val __obj = js.Dynamic.literal()
-    if (actionTrigger != null) __obj.updateDynamic("actionTrigger")(actionTrigger.asInstanceOf[js.Any])
-    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (!js.isUndefined(secondsToClose)) __obj.updateDynamic("secondsToClose")(secondsToClose.get.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackBarProps]
   }
+  @scala.inline
+  implicit class SnackBarPropsOps[Self <: SnackBarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionTrigger(value: CallbackFn): Self = this.set("actionTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionTrigger: Self = this.set("actionTrigger", js.undefined)
+    @scala.inline
+    def setCloseButtonAriaLabel(value: String): Self = this.set("closeButtonAriaLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButtonAriaLabel: Self = this.set("closeButtonAriaLabel", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setOnClose(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setSecondsToClose(value: Double): Self = this.set("secondsToClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondsToClose: Self = this.set("secondsToClose", js.undefined)
+    @scala.inline
+    def setSkin(value: primary | success | error | neutral | warning): Self = this.set("skin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkin: Self = this.set("skin", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTheme(value: BaseFontSizeBreakpoints): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

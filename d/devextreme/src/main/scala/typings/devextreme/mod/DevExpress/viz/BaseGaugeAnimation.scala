@@ -7,27 +7,46 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @name BaseGauge.Options.animation */
+@js.native
 trait BaseGaugeAnimation extends js.Object {
   /** @name BaseGauge.Options.animation.duration */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /** @name BaseGauge.Options.animation.easing */
-  var easing: js.UndefOr[easeOutCubic | linear] = js.undefined
+  var easing: js.UndefOr[easeOutCubic | linear] = js.native
   /** @name BaseGauge.Options.animation.enabled */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
 }
 
 object BaseGaugeAnimation {
   @scala.inline
-  def apply(
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: easeOutCubic | linear = null,
-    enabled: js.UndefOr[Boolean] = js.undefined
-  ): BaseGaugeAnimation = {
+  def apply(): BaseGaugeAnimation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseGaugeAnimation]
   }
+  @scala.inline
+  implicit class BaseGaugeAnimationOps[Self <: BaseGaugeAnimation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEasing(value: easeOutCubic | linear): Self = this.set("easing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEasing: Self = this.set("easing", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+  }
+  
 }
 

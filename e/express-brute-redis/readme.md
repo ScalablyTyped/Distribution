@@ -12,7 +12,7 @@ A Redis store for express-brute
 | Keywords           | express, brute, redis |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 148512 |
+| # downloads        | 153014 |
 | # stars            | 3 |
 
 ## Links

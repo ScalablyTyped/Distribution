@@ -36,16 +36,36 @@ trait SchemaExemplar extends js.Object {
 
 object SchemaExemplar {
   @scala.inline
-  def apply(
-    attachments: js.Array[StringDictionary[_]] = null,
-    timestamp: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): SchemaExemplar = {
+  def apply(): SchemaExemplar = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExemplar]
   }
+  @scala.inline
+  implicit class SchemaExemplarOps[Self <: SchemaExemplar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: StringDictionary[js.Any]*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: js.Array[StringDictionary[_]]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

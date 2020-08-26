@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSExportAssignment
   extends Node
      with Statement {
-  var expression: Expression
+  var expression: Expression = js.native
   @JSName("type")
-  var type_TSExportAssignment: typings.babelTypes.babelTypesStrings.TSExportAssignment
+  var type_TSExportAssignment: typings.babelTypes.babelTypesStrings.TSExportAssignment = js.native
 }
 
 @JSImport("babel-types", "TSExportAssignment")

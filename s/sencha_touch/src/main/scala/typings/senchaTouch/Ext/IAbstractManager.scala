@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IAbstractManager extends IBase {
   /** [Property] (Ext.util.HashMap) */
-  var all: js.UndefOr[IHashMap] = js.undefined
+  var all: js.UndefOr[IHashMap] = js.native
   /** [Method] Creates and returns an instance of whatever this manager manages based on the supplied type and config object
     * @param config Object The config object.
     * @param defaultType String If no type is discovered in the config object, we fall back to this type.
@@ -15,26 +16,26 @@ trait IAbstractManager extends IBase {
     */
   var create: js.UndefOr[
     js.Function2[/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String], _]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Executes the specified function once for each item in the collection
     * @param fn Function The function to execute.
     * @param scope Object The scope to execute in.
     */
-  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Returns an item by id
     * @param id String The id of the item.
     * @returns Object The item, undefined if not found.
     */
-  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], _]] = js.native
   /** [Method] Gets the number of items in the collection
     * @returns Number The number of items in the collection.
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getCount: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Checks if an item type is registered
     * @param type String The mnemonic string by which the class may be looked up.
     * @returns Boolean Whether the type is registered.
     */
-  var isRegistered: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
+  var isRegistered: js.UndefOr[js.Function1[/* type */ js.UndefOr[java.lang.String], Boolean]] = js.native
   /** [Method] Registers a function that will be called when an item with the specified id is added to the manager
     * @param id String The item id.
     * @param fn Function The callback function. Called with a single parameter, the item.
@@ -47,84 +48,84 @@ trait IAbstractManager extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Registers an item to be managed
     * @param item Object The item to register.
     */
-  var register: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var register: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Registers a new item constructor keyed by a type key
     * @param type String The mnemonic string by which the class may be looked up.
     * @param cls Function The new instance class.
     */
   var registerType: js.UndefOr[
     js.Function2[/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Unregisters an item by removing it from this manager
     * @param item Object The item to unregister.
     */
-  var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var unregister: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Unit]] = js.native
 }
 
 object IAbstractManager {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    all: IHashMap = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    create: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => _ = null,
-    destroy: () => Unit = null,
-    each: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    extend: java.lang.String = null,
-    get: /* id */ js.UndefOr[java.lang.String] => _ = null,
-    getCount: () => Double = null,
-    getInitialConfig: /* name */ js.UndefOr[java.lang.String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    isRegistered: /* type */ js.UndefOr[java.lang.String] => Boolean = null,
-    mixins: js.Any = null,
-    onAvailable: (/* id */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    platformConfig: js.Any = null,
-    register: /* item */ js.UndefOr[js.Any] => Unit = null,
-    registerType: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any]) => Unit = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    unregister: /* item */ js.UndefOr[js.Any] => Unit = null,
-    uses: Array = null
-  ): IAbstractManager = {
+  def apply(): IAbstractManager = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (each != null) __obj.updateDynamic("each")(js.Any.fromFunction2(each))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (getCount != null) __obj.updateDynamic("getCount")(js.Any.fromFunction0(getCount))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (isRegistered != null) __obj.updateDynamic("isRegistered")(js.Any.fromFunction1(isRegistered))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (onAvailable != null) __obj.updateDynamic("onAvailable")(js.Any.fromFunction3(onAvailable))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction1(register))
-    if (registerType != null) __obj.updateDynamic("registerType")(js.Any.fromFunction2(registerType))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (unregister != null) __obj.updateDynamic("unregister")(js.Any.fromFunction1(unregister))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAbstractManager]
   }
+  @scala.inline
+  implicit class IAbstractManagerOps[Self <: IAbstractManager] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAll(value: IHashMap): Self = this.set("all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAll: Self = this.set("all", js.undefined)
+    @scala.inline
+    def setCreate(value: (/* config */ js.UndefOr[js.Any], /* defaultType */ js.UndefOr[java.lang.String]) => _): Self = this.set("create", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = this.set("each", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEach: Self = this.set("each", js.undefined)
+    @scala.inline
+    def setGet(value: /* id */ js.UndefOr[java.lang.String] => _): Self = this.set("get", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setGetCount(value: () => Double): Self = this.set("getCount", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCount: Self = this.set("getCount", js.undefined)
+    @scala.inline
+    def setIsRegistered(value: /* type */ js.UndefOr[java.lang.String] => Boolean): Self = this.set("isRegistered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIsRegistered: Self = this.set("isRegistered", js.undefined)
+    @scala.inline
+    def setOnAvailable(
+      value: (/* id */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("onAvailable", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnAvailable: Self = this.set("onAvailable", js.undefined)
+    @scala.inline
+    def setRegister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("register", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRegister: Self = this.set("register", js.undefined)
+    @scala.inline
+    def setRegisterType(value: (/* type */ js.UndefOr[java.lang.String], /* cls */ js.UndefOr[js.Any]) => Unit): Self = this.set("registerType", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRegisterType: Self = this.set("registerType", js.undefined)
+    @scala.inline
+    def setUnregister(value: /* item */ js.UndefOr[js.Any] => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnregister: Self = this.set("unregister", js.undefined)
+  }
+  
 }
 

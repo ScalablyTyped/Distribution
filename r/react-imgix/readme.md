@@ -11,8 +11,8 @@ React Component for displaying an image from Imgix
 | Full name          | react-imgix |
 | Keywords           | react |
 | # releases         | 18 |
-| # dependents       | 13 |
-| # downloads        | 731892 |
+| # dependents       | 15 |
+| # downloads        | 795868 |
 | # stars            | 0 |
 
 ## Links

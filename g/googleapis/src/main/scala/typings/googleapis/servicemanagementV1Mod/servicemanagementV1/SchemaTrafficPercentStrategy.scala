@@ -32,10 +32,26 @@ trait SchemaTrafficPercentStrategy extends js.Object {
 
 object SchemaTrafficPercentStrategy {
   @scala.inline
-  def apply(percentages: StringDictionary[Double] = null): SchemaTrafficPercentStrategy = {
+  def apply(): SchemaTrafficPercentStrategy = {
     val __obj = js.Dynamic.literal()
-    if (percentages != null) __obj.updateDynamic("percentages")(percentages.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTrafficPercentStrategy]
   }
+  @scala.inline
+  implicit class SchemaTrafficPercentStrategyOps[Self <: SchemaTrafficPercentStrategy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPercentages(value: StringDictionary[Double]): Self = this.set("percentages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentages: Self = this.set("percentages", js.undefined)
+  }
+  
 }
 

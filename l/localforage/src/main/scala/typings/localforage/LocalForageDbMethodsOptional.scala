@@ -11,6 +11,7 @@ trait LocalForageDbMethodsOptional extends js.Object {
   @JSName("dropInstance")
   var dropInstance_Original: LocalForageDropInstanceFn = js.native
   def dropInstance(): js.Promise[Unit] = js.native
+  def dropInstance(dbInstanceOptions: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
   def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions): js.Promise[Unit] = js.native
   def dropInstance(dbInstanceOptions: LocalForageDbInstanceOptions, callback: js.Function1[/* err */ js.Any, Unit]): js.Promise[Unit] = js.native
 }

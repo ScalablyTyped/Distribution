@@ -22,10 +22,32 @@ trait UpdateDocumentationVersionRequest extends js.Object {
 
 object UpdateDocumentationVersionRequest {
   @scala.inline
-  def apply(documentationVersion: String, restApiId: String, patchOperations: ListOfPatchOperation = null): UpdateDocumentationVersionRequest = {
+  def apply(documentationVersion: String, restApiId: String): UpdateDocumentationVersionRequest = {
     val __obj = js.Dynamic.literal(documentationVersion = documentationVersion.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
-    if (patchOperations != null) __obj.updateDynamic("patchOperations")(patchOperations.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocumentationVersionRequest]
   }
+  @scala.inline
+  implicit class UpdateDocumentationVersionRequestOps[Self <: UpdateDocumentationVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentationVersion(value: String): Self = this.set("documentationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPatchOperationsVarargs(value: PatchOperation*): Self = this.set("patchOperations", js.Array(value :_*))
+    @scala.inline
+    def setPatchOperations(value: ListOfPatchOperation): Self = this.set("patchOperations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatchOperations: Self = this.set("patchOperations", js.undefined)
+  }
+  
 }
 

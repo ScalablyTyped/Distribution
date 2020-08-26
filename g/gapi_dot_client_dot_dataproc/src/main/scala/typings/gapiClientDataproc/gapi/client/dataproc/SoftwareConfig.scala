@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SoftwareConfig extends js.Object {
   /**
     * Optional. The version of software inside the cluster. It must match the regular expression [0-9]+\.[0-9]+. If unspecified, it defaults to the latest
     * version (see Cloud Dataproc Versioning).
     */
-  var imageVersion: js.UndefOr[String] = js.undefined
+  var imageVersion: js.UndefOr[String] = js.native
   /**
     * Optional. The properties to set on daemon config files.Property keys are specified in prefix:property format, such as core:fs.defaultFS. The following
     * are supported prefixes and their mappings:
@@ -24,16 +25,35 @@ trait SoftwareConfig extends js.Object {
     * spark: spark-defaults.conf
     * yarn: yarn-site.xmlFor more information, see Cluster properties.
     */
-  var properties: js.UndefOr[Record[String, String]] = js.undefined
+  var properties: js.UndefOr[Record[String, String]] = js.native
 }
 
 object SoftwareConfig {
   @scala.inline
-  def apply(imageVersion: String = null, properties: Record[String, String] = null): SoftwareConfig = {
+  def apply(): SoftwareConfig = {
     val __obj = js.Dynamic.literal()
-    if (imageVersion != null) __obj.updateDynamic("imageVersion")(imageVersion.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftwareConfig]
   }
+  @scala.inline
+  implicit class SoftwareConfigOps[Self <: SoftwareConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageVersion(value: String): Self = this.set("imageVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageVersion: Self = this.set("imageVersion", js.undefined)
+    @scala.inline
+    def setProperties(value: Record[String, String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

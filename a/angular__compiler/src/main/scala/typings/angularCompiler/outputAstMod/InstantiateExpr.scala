@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 class InstantiateExpr protected () extends Expression {
   def this(classExpr: Expression, args: js.Array[Expression]) = this()
   def this(classExpr: Expression, args: js.Array[Expression], `type`: Type) = this()
+  def this(
+    classExpr: Expression,
+    args: js.Array[Expression],
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
   def this(classExpr: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan) = this()
   def this(classExpr: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan) = this()
   var args: js.Array[Expression] = js.native

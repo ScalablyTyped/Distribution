@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.SheetCellRange
   * @see com.sun.star.sheet.SheetCellRanges
   */
+@js.native
 trait TableConditionalFormat
   extends XSheetConditionalEntries
      with XNameAccess

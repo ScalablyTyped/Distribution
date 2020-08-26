@@ -7,9 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Access.Class")
 @js.native
 class Class protected ()
-  extends typings.activexAccess.Access.Class {
-  /* CompleteClass */
-  @JSName("Access.Class_typekey")
-  override var AccessDotClass_typekey: typings.activexAccess.Access.Class = js.native
-}
+  extends typings.activexAccess.Access.Class
 

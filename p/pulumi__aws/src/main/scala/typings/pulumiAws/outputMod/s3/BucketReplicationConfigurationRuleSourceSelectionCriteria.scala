@@ -15,12 +15,26 @@ trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends js.Objec
 
 object BucketReplicationConfigurationRuleSourceSelectionCriteria {
   @scala.inline
-  def apply(
-    sseKmsEncryptedObjects: BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects = null
-  ): BucketReplicationConfigurationRuleSourceSelectionCriteria = {
+  def apply(): BucketReplicationConfigurationRuleSourceSelectionCriteria = {
     val __obj = js.Dynamic.literal()
-    if (sseKmsEncryptedObjects != null) __obj.updateDynamic("sseKmsEncryptedObjects")(sseKmsEncryptedObjects.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRuleSourceSelectionCriteria]
   }
+  @scala.inline
+  implicit class BucketReplicationConfigurationRuleSourceSelectionCriteriaOps[Self <: BucketReplicationConfigurationRuleSourceSelectionCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSseKmsEncryptedObjects(value: BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects): Self = this.set("sseKmsEncryptedObjects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSseKmsEncryptedObjects: Self = this.set("sseKmsEncryptedObjects", js.undefined)
+  }
+  
 }
 

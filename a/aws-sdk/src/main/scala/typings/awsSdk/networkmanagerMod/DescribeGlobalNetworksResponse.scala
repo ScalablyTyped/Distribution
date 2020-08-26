@@ -18,11 +18,32 @@ trait DescribeGlobalNetworksResponse extends js.Object {
 
 object DescribeGlobalNetworksResponse {
   @scala.inline
-  def apply(GlobalNetworks: GlobalNetworkList = null, NextToken: String = null): DescribeGlobalNetworksResponse = {
+  def apply(): DescribeGlobalNetworksResponse = {
     val __obj = js.Dynamic.literal()
-    if (GlobalNetworks != null) __obj.updateDynamic("GlobalNetworks")(GlobalNetworks.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGlobalNetworksResponse]
   }
+  @scala.inline
+  implicit class DescribeGlobalNetworksResponseOps[Self <: DescribeGlobalNetworksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalNetworksVarargs(value: GlobalNetwork*): Self = this.set("GlobalNetworks", js.Array(value :_*))
+    @scala.inline
+    def setGlobalNetworks(value: GlobalNetworkList): Self = this.set("GlobalNetworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalNetworks: Self = this.set("GlobalNetworks", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 /**
   * Bounded Floor - represents a tracking space with its native origin at the floor, where the user
-  is expected to move within a pre-established boundary. Tracking in a bounded-floor reference space is optimized
-  for keeping the native origin and bounds geometry stable relative to the user’s environment.
+  * is expected to move within a pre-established boundary. Tracking in a bounded-floor reference space is optimized
+  * for keeping the native origin and bounds geometry stable relative to the user’s environment.
   */
 @JSImport("playcanvas", "XRSPACE_BOUNDEDFLOOR")
 @js.native

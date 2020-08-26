@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-limit
 
-Typings are for version 2.3.0
+Typings are for version 3.0.2
 
 ## Library description:
 Run multiple promise-returning & async functions with limited concurrency

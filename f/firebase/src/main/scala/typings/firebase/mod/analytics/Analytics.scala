@@ -72,6 +72,11 @@ trait Analytics extends js.Object {
     * the gtag.js reference documentation}.
     */
   def logEvent[T /* <: String */](eventName: CustomEventName[T]): Unit = js.native
+  def logEvent[T /* <: String */](
+    eventName: CustomEventName[T],
+    eventParams: js.UndefOr[scala.Nothing],
+    options: AnalyticsCallOptions
+  ): Unit = js.native
   def logEvent[T /* <: String */](eventName: CustomEventName[T], eventParams: StringDictionary[js.Any]): Unit = js.native
   def logEvent[T /* <: String */](
     eventName: CustomEventName[T],
@@ -88,6 +93,8 @@ trait Analytics extends js.Object {
     */
   @JSName("logEvent")
   def logEvent_addpaymentinfo(eventName: add_payment_info): Unit = js.native
+  @JSName("logEvent")
+  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: js.UndefOr[scala.Nothing], options: AnalyticsCallOptions): Unit = js.native
   @JSName("logEvent")
   def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: Dictkey): Unit = js.native
   @JSName("logEvent")

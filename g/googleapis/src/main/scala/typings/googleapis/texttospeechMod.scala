@@ -43,7 +43,7 @@ object texttospeechMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 Texttospeech
               ]
             ]
@@ -53,7 +53,7 @@ object texttospeechMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.texttospeechV1beta1Mod.texttospeechV1beta1.Texttospeech
               ]
             ]

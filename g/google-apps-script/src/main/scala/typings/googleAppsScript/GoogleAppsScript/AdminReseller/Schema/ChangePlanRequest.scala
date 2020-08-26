@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChangePlanRequest extends js.Object {
-  var dealCode: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var planName: js.UndefOr[String] = js.undefined
-  var purchaseOrderId: js.UndefOr[String] = js.undefined
-  var seats: js.UndefOr[Seats] = js.undefined
+  var dealCode: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.native
+  var purchaseOrderId: js.UndefOr[String] = js.native
+  var seats: js.UndefOr[Seats] = js.native
 }
 
 object ChangePlanRequest {
   @scala.inline
-  def apply(
-    dealCode: String = null,
-    kind: String = null,
-    planName: String = null,
-    purchaseOrderId: String = null,
-    seats: Seats = null
-  ): ChangePlanRequest = {
+  def apply(): ChangePlanRequest = {
     val __obj = js.Dynamic.literal()
-    if (dealCode != null) __obj.updateDynamic("dealCode")(dealCode.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (planName != null) __obj.updateDynamic("planName")(planName.asInstanceOf[js.Any])
-    if (purchaseOrderId != null) __obj.updateDynamic("purchaseOrderId")(purchaseOrderId.asInstanceOf[js.Any])
-    if (seats != null) __obj.updateDynamic("seats")(seats.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePlanRequest]
   }
+  @scala.inline
+  implicit class ChangePlanRequestOps[Self <: ChangePlanRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDealCode(value: String): Self = this.set("dealCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDealCode: Self = this.set("dealCode", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlanName(value: String): Self = this.set("planName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlanName: Self = this.set("planName", js.undefined)
+    @scala.inline
+    def setPurchaseOrderId(value: String): Self = this.set("purchaseOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchaseOrderId: Self = this.set("purchaseOrderId", js.undefined)
+    @scala.inline
+    def setSeats(value: Seats): Self = this.set("seats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeats: Self = this.set("seats", js.undefined)
+  }
+  
 }
 

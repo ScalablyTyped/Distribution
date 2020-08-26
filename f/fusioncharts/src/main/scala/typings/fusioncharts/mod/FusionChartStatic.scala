@@ -30,6 +30,7 @@ trait FusionChartStatic
   ): Unit = js.native
   def batchExport(options: js.Object): Unit = js.native
   def formatNumber(num: Double): Element = js.native
+  def formatNumber(num: Double, `type`: js.UndefOr[scala.Nothing], config: js.Object): Element = js.native
   def formatNumber(num: Double, `type`: String): Element = js.native
   def formatNumber(num: Double, `type`: String, config: js.Object): Element = js.native
   def getCurrentRenderer(): String = js.native
@@ -53,6 +54,7 @@ trait FusionChartStatic
     ]
   ): Unit = js.native
   def render(): FusionCharts = js.native
+  def render(options: js.UndefOr[scala.Nothing], callback: js.Function0[_]): FusionCharts = js.native
   def render(options: ChartObject): FusionCharts = js.native
   def render(options: ChartObject, callback: js.Function0[_]): FusionCharts = js.native
   def setCurrentRenderer(name: String): Unit = js.native

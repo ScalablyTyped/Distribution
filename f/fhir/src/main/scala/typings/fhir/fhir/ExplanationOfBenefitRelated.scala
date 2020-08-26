@@ -7,45 +7,52 @@ import scala.scalajs.js.annotation._
 /**
   * Related Claims which may be revelant to processing this claim
   */
+@js.native
 trait ExplanationOfBenefitRelated extends BackboneElement {
   /**
     * Reference to the related claim
     */
-  var claim: js.UndefOr[Reference] = js.undefined
+  var claim: js.UndefOr[Reference] = js.native
   /**
     * Related file or case reference
     */
-  var reference: js.UndefOr[Identifier] = js.undefined
+  var reference: js.UndefOr[Identifier] = js.native
   /**
     * How the reference claim is related
     */
-  var relationship: js.UndefOr[CodeableConcept] = js.undefined
+  var relationship: js.UndefOr[CodeableConcept] = js.native
 }
 
 object ExplanationOfBenefitRelated {
   @scala.inline
-  def apply(
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    claim: Reference = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    reference: Identifier = null,
-    relationship: CodeableConcept = null
-  ): ExplanationOfBenefitRelated = {
+  def apply(): ExplanationOfBenefitRelated = {
     val __obj = js.Dynamic.literal()
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (claim != null) __obj.updateDynamic("claim")(claim.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (reference != null) __obj.updateDynamic("reference")(reference.asInstanceOf[js.Any])
-    if (relationship != null) __obj.updateDynamic("relationship")(relationship.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitRelated]
   }
+  @scala.inline
+  implicit class ExplanationOfBenefitRelatedOps[Self <: ExplanationOfBenefitRelated] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClaim(value: Reference): Self = this.set("claim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaim: Self = this.set("claim", js.undefined)
+    @scala.inline
+    def setReference(value: Identifier): Self = this.set("reference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReference: Self = this.set("reference", js.undefined)
+    @scala.inline
+    def setRelationship(value: CodeableConcept): Self = this.set("relationship", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationship: Self = this.set("relationship", js.undefined)
+  }
+  
 }
 

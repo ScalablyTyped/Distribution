@@ -4,39 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlannerCategoryDescriptions extends js.Object {
   // The label associated with Category 1
-  var category1: js.UndefOr[String] = js.undefined
+  var category1: js.UndefOr[String] = js.native
   // The label associated with Category 2
-  var category2: js.UndefOr[String] = js.undefined
+  var category2: js.UndefOr[String] = js.native
   // The label associated with Category 3
-  var category3: js.UndefOr[String] = js.undefined
+  var category3: js.UndefOr[String] = js.native
   // The label associated with Category 4
-  var category4: js.UndefOr[String] = js.undefined
+  var category4: js.UndefOr[String] = js.native
   // The label associated with Category 5
-  var category5: js.UndefOr[String] = js.undefined
+  var category5: js.UndefOr[String] = js.native
   // The label associated with Category 6
-  var category6: js.UndefOr[String] = js.undefined
+  var category6: js.UndefOr[String] = js.native
 }
 
 object PlannerCategoryDescriptions {
   @scala.inline
-  def apply(
-    category1: String = null,
-    category2: String = null,
-    category3: String = null,
-    category4: String = null,
-    category5: String = null,
-    category6: String = null
-  ): PlannerCategoryDescriptions = {
+  def apply(): PlannerCategoryDescriptions = {
     val __obj = js.Dynamic.literal()
-    if (category1 != null) __obj.updateDynamic("category1")(category1.asInstanceOf[js.Any])
-    if (category2 != null) __obj.updateDynamic("category2")(category2.asInstanceOf[js.Any])
-    if (category3 != null) __obj.updateDynamic("category3")(category3.asInstanceOf[js.Any])
-    if (category4 != null) __obj.updateDynamic("category4")(category4.asInstanceOf[js.Any])
-    if (category5 != null) __obj.updateDynamic("category5")(category5.asInstanceOf[js.Any])
-    if (category6 != null) __obj.updateDynamic("category6")(category6.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerCategoryDescriptions]
   }
+  @scala.inline
+  implicit class PlannerCategoryDescriptionsOps[Self <: PlannerCategoryDescriptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory1(value: String): Self = this.set("category1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory1: Self = this.set("category1", js.undefined)
+    @scala.inline
+    def setCategory2(value: String): Self = this.set("category2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory2: Self = this.set("category2", js.undefined)
+    @scala.inline
+    def setCategory3(value: String): Self = this.set("category3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory3: Self = this.set("category3", js.undefined)
+    @scala.inline
+    def setCategory4(value: String): Self = this.set("category4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory4: Self = this.set("category4", js.undefined)
+    @scala.inline
+    def setCategory5(value: String): Self = this.set("category5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory5: Self = this.set("category5", js.undefined)
+    @scala.inline
+    def setCategory6(value: String): Self = this.set("category6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory6: Self = this.set("category6", js.undefined)
+  }
+  
 }
 

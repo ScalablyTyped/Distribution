@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransportOptions extends js.Object {
-  var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
-  var eol: js.UndefOr[String] = js.undefined
-  var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
-  var json: js.UndefOr[Boolean] = js.undefined
-  var level: js.UndefOr[LoggerLevel] = js.undefined
+  var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+  var encoding: js.UndefOr[String] = js.native
+  var eol: js.UndefOr[String] = js.native
+  var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+  var json: js.UndefOr[Boolean] = js.native
+  var level: js.UndefOr[LoggerLevel] = js.native
 }
 
 object TransportOptions {
   @scala.inline
-  def apply(
-    contextFormatter: /* meta */ js.UndefOr[js.Object] => String = null,
-    encoding: String = null,
-    eol: String = null,
-    formatter: /* meta */ js.UndefOr[js.Object] => String = null,
-    json: js.UndefOr[Boolean] = js.undefined,
-    level: LoggerLevel = null
-  ): TransportOptions = {
+  def apply(): TransportOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextFormatter != null) __obj.updateDynamic("contextFormatter")(js.Any.fromFunction1(contextFormatter))
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (eol != null) __obj.updateDynamic("eol")(eol.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransportOptions]
   }
+  @scala.inline
+  implicit class TransportOptionsOps[Self <: TransportOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = this.set("contextFormatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteContextFormatter: Self = this.set("contextFormatter", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setEol(value: String): Self = this.set("eol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEol: Self = this.set("eol", js.undefined)
+    @scala.inline
+    def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = this.set("formatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setJson(value: Boolean): Self = this.set("json", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJson: Self = this.set("json", js.undefined)
+    @scala.inline
+    def setLevel(value: LoggerLevel): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+  }
+  
 }
 

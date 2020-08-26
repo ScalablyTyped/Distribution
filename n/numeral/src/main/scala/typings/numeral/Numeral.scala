@@ -21,6 +21,7 @@ trait Numeral extends js.Object {
   def difference(value: js.Any): Double = js.native
   def divide(value: js.Any): Numeral = js.native
   def format(): String = js.native
+  def format(inputString: js.UndefOr[scala.Nothing], roundingFunction: RoundingFunction): String = js.native
   def format(inputString: String): String = js.native
   def format(inputString: String, roundingFunction: RoundingFunction): String = js.native
   /**

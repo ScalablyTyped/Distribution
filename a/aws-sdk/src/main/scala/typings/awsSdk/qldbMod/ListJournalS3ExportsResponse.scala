@@ -18,11 +18,32 @@ trait ListJournalS3ExportsResponse extends js.Object {
 
 object ListJournalS3ExportsResponse {
   @scala.inline
-  def apply(JournalS3Exports: JournalS3ExportList = null, NextToken: NextToken = null): ListJournalS3ExportsResponse = {
+  def apply(): ListJournalS3ExportsResponse = {
     val __obj = js.Dynamic.literal()
-    if (JournalS3Exports != null) __obj.updateDynamic("JournalS3Exports")(JournalS3Exports.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJournalS3ExportsResponse]
   }
+  @scala.inline
+  implicit class ListJournalS3ExportsResponseOps[Self <: ListJournalS3ExportsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJournalS3ExportsVarargs(value: JournalS3ExportDescription*): Self = this.set("JournalS3Exports", js.Array(value :_*))
+    @scala.inline
+    def setJournalS3Exports(value: JournalS3ExportList): Self = this.set("JournalS3Exports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJournalS3Exports: Self = this.set("JournalS3Exports", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

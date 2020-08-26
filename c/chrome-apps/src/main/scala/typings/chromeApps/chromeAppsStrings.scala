@@ -1063,7 +1063,7 @@ object chromeAppsStrings {
     extends OptionalPermission
        with Permission
   
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.chromeApps.chrome.runtime.Permission because Already inherited */ @js.native
   sealed trait audio_
     extends KioskOnlyPermissions

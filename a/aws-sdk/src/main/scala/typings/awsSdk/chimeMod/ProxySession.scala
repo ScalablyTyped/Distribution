@@ -62,36 +62,78 @@ trait ProxySession extends js.Object {
 
 object ProxySession {
   @scala.inline
-  def apply(
-    Capabilities: CapabilityList = null,
-    CreatedTimestamp: Iso8601Timestamp = null,
-    EndedTimestamp: Iso8601Timestamp = null,
-    ExpiryMinutes: js.UndefOr[PositiveInteger] = js.undefined,
-    GeoMatchLevel: GeoMatchLevel = null,
-    GeoMatchParams: GeoMatchParams = null,
-    Name: String128 = null,
-    NumberSelectionBehavior: NumberSelectionBehavior = null,
-    Participants: Participants = null,
-    ProxySessionId: NonEmptyString128 = null,
-    Status: ProxySessionStatus = null,
-    UpdatedTimestamp: Iso8601Timestamp = null,
-    VoiceConnectorId: NonEmptyString128 = null
-  ): ProxySession = {
+  def apply(): ProxySession = {
     val __obj = js.Dynamic.literal()
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (EndedTimestamp != null) __obj.updateDynamic("EndedTimestamp")(EndedTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExpiryMinutes)) __obj.updateDynamic("ExpiryMinutes")(ExpiryMinutes.get.asInstanceOf[js.Any])
-    if (GeoMatchLevel != null) __obj.updateDynamic("GeoMatchLevel")(GeoMatchLevel.asInstanceOf[js.Any])
-    if (GeoMatchParams != null) __obj.updateDynamic("GeoMatchParams")(GeoMatchParams.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberSelectionBehavior != null) __obj.updateDynamic("NumberSelectionBehavior")(NumberSelectionBehavior.asInstanceOf[js.Any])
-    if (Participants != null) __obj.updateDynamic("Participants")(Participants.asInstanceOf[js.Any])
-    if (ProxySessionId != null) __obj.updateDynamic("ProxySessionId")(ProxySessionId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
-    if (VoiceConnectorId != null) __obj.updateDynamic("VoiceConnectorId")(VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxySession]
   }
+  @scala.inline
+  implicit class ProxySessionOps[Self <: ProxySession] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: CapabilityList): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setEndedTimestamp(value: Iso8601Timestamp): Self = this.set("EndedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndedTimestamp: Self = this.set("EndedTimestamp", js.undefined)
+    @scala.inline
+    def setExpiryMinutes(value: PositiveInteger): Self = this.set("ExpiryMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiryMinutes: Self = this.set("ExpiryMinutes", js.undefined)
+    @scala.inline
+    def setGeoMatchLevel(value: GeoMatchLevel): Self = this.set("GeoMatchLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoMatchLevel: Self = this.set("GeoMatchLevel", js.undefined)
+    @scala.inline
+    def setGeoMatchParams(value: GeoMatchParams): Self = this.set("GeoMatchParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoMatchParams: Self = this.set("GeoMatchParams", js.undefined)
+    @scala.inline
+    def setName(value: String128): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNumberSelectionBehavior(value: NumberSelectionBehavior): Self = this.set("NumberSelectionBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberSelectionBehavior: Self = this.set("NumberSelectionBehavior", js.undefined)
+    @scala.inline
+    def setParticipantsVarargs(value: Participant*): Self = this.set("Participants", js.Array(value :_*))
+    @scala.inline
+    def setParticipants(value: Participants): Self = this.set("Participants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipants: Self = this.set("Participants", js.undefined)
+    @scala.inline
+    def setProxySessionId(value: NonEmptyString128): Self = this.set("ProxySessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxySessionId: Self = this.set("ProxySessionId", js.undefined)
+    @scala.inline
+    def setStatus(value: ProxySessionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+    @scala.inline
+    def setVoiceConnectorId(value: NonEmptyString128): Self = this.set("VoiceConnectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceConnectorId: Self = this.set("VoiceConnectorId", js.undefined)
+  }
+  
 }
 

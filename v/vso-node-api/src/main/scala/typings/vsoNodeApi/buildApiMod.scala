@@ -56,7 +56,26 @@ object buildApiMod extends js.Object {
     def createArtifact(artifact: BuildArtifact, buildId: Double): js.Promise[BuildArtifact] = js.native
     def createArtifact(artifact: BuildArtifact, buildId: Double, project: String): js.Promise[BuildArtifact] = js.native
     def createDefinition(definition: BuildDefinition): js.Promise[BuildDefinition] = js.native
+    def createDefinition(
+      definition: BuildDefinition,
+      project: js.UndefOr[scala.Nothing],
+      definitionToCloneId: js.UndefOr[scala.Nothing],
+      definitionToCloneRevision: Double
+    ): js.Promise[BuildDefinition] = js.native
+    def createDefinition(definition: BuildDefinition, project: js.UndefOr[scala.Nothing], definitionToCloneId: Double): js.Promise[BuildDefinition] = js.native
+    def createDefinition(
+      definition: BuildDefinition,
+      project: js.UndefOr[scala.Nothing],
+      definitionToCloneId: Double,
+      definitionToCloneRevision: Double
+    ): js.Promise[BuildDefinition] = js.native
     def createDefinition(definition: BuildDefinition, project: String): js.Promise[BuildDefinition] = js.native
+    def createDefinition(
+      definition: BuildDefinition,
+      project: String,
+      definitionToCloneId: js.UndefOr[scala.Nothing],
+      definitionToCloneRevision: Double
+    ): js.Promise[BuildDefinition] = js.native
     def createDefinition(definition: BuildDefinition, project: String, definitionToCloneId: Double): js.Promise[BuildDefinition] = js.native
     def createDefinition(
       definition: BuildDefinition,
@@ -82,16 +101,41 @@ object buildApiMod extends js.Object {
     def getBadge(project: String, definitionId: Double): js.Promise[String] = js.native
     def getBadge(project: String, definitionId: Double, branchName: String): js.Promise[String] = js.native
     def getBuild(buildId: Double): js.Promise[Build] = js.native
+    def getBuild(buildId: Double, project: js.UndefOr[scala.Nothing], propertyFilters: String): js.Promise[Build] = js.native
     def getBuild(buildId: Double, project: String): js.Promise[Build] = js.native
     def getBuild(buildId: Double, project: String, propertyFilters: String): js.Promise[Build] = js.native
     def getBuildBadge(project: String, repoType: String): js.Promise[BuildBadge] = js.native
+    def getBuildBadge(project: String, repoType: String, repoId: js.UndefOr[scala.Nothing], branchName: String): js.Promise[BuildBadge] = js.native
     def getBuildBadge(project: String, repoType: String, repoId: String): js.Promise[BuildBadge] = js.native
     def getBuildBadge(project: String, repoType: String, repoId: String, branchName: String): js.Promise[BuildBadge] = js.native
     def getBuildBadgeData(project: String, repoType: String): js.Promise[String] = js.native
+    def getBuildBadgeData(project: String, repoType: String, repoId: js.UndefOr[scala.Nothing], branchName: String): js.Promise[String] = js.native
     def getBuildBadgeData(project: String, repoType: String, repoId: String): js.Promise[String] = js.native
     def getBuildBadgeData(project: String, repoType: String, repoId: String, branchName: String): js.Promise[String] = js.native
     def getBuildChanges(project: String, buildId: Double): js.Promise[js.Array[Change]] = js.native
+    def getBuildChanges(
+      project: String,
+      buildId: Double,
+      continuationToken: js.UndefOr[scala.Nothing],
+      top: js.UndefOr[scala.Nothing],
+      includeSourceChange: Boolean
+    ): js.Promise[js.Array[Change]] = js.native
+    def getBuildChanges(project: String, buildId: Double, continuationToken: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[Change]] = js.native
+    def getBuildChanges(
+      project: String,
+      buildId: Double,
+      continuationToken: js.UndefOr[scala.Nothing],
+      top: Double,
+      includeSourceChange: Boolean
+    ): js.Promise[js.Array[Change]] = js.native
     def getBuildChanges(project: String, buildId: Double, continuationToken: String): js.Promise[js.Array[Change]] = js.native
+    def getBuildChanges(
+      project: String,
+      buildId: Double,
+      continuationToken: String,
+      top: js.UndefOr[scala.Nothing],
+      includeSourceChange: Boolean
+    ): js.Promise[js.Array[Change]] = js.native
     def getBuildChanges(project: String, buildId: Double, continuationToken: String, top: Double): js.Promise[js.Array[Change]] = js.native
     def getBuildChanges(
       project: String,
@@ -104,9 +148,23 @@ object buildApiMod extends js.Object {
     def getBuildControllers(): js.Promise[js.Array[BuildController]] = js.native
     def getBuildControllers(name: String): js.Promise[js.Array[BuildController]] = js.native
     def getBuildLog(project: String, buildId: Double, logId: Double): js.Promise[ReadableStream] = js.native
+    def getBuildLog(
+      project: String,
+      buildId: Double,
+      logId: Double,
+      startLine: js.UndefOr[scala.Nothing],
+      endLine: Double
+    ): js.Promise[ReadableStream] = js.native
     def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[ReadableStream] = js.native
     def getBuildLog(project: String, buildId: Double, logId: Double, startLine: Double, endLine: Double): js.Promise[ReadableStream] = js.native
     def getBuildLogLines(project: String, buildId: Double, logId: Double): js.Promise[js.Array[String]] = js.native
+    def getBuildLogLines(
+      project: String,
+      buildId: Double,
+      logId: Double,
+      startLine: js.UndefOr[scala.Nothing],
+      endLine: Double
+    ): js.Promise[js.Array[String]] = js.native
     def getBuildLogLines(project: String, buildId: Double, logId: Double, startLine: Double): js.Promise[js.Array[String]] = js.native
     def getBuildLogLines(project: String, buildId: Double, logId: Double, startLine: Double, endLine: Double): js.Promise[js.Array[String]] = js.native
     def getBuildLogs(project: String, buildId: Double): js.Promise[js.Array[BuildLog]] = js.native
@@ -122,7 +180,29 @@ object buildApiMod extends js.Object {
     def getBuildSettings(): js.Promise[BuildSettings] = js.native
     def getBuildTags(project: String, buildId: Double): js.Promise[js.Array[String]] = js.native
     def getBuildTimeline(project: String, buildId: Double): js.Promise[Timeline] = js.native
+    def getBuildTimeline(
+      project: String,
+      buildId: Double,
+      timelineId: js.UndefOr[scala.Nothing],
+      changeId: js.UndefOr[scala.Nothing],
+      planId: String
+    ): js.Promise[Timeline] = js.native
+    def getBuildTimeline(project: String, buildId: Double, timelineId: js.UndefOr[scala.Nothing], changeId: Double): js.Promise[Timeline] = js.native
+    def getBuildTimeline(
+      project: String,
+      buildId: Double,
+      timelineId: js.UndefOr[scala.Nothing],
+      changeId: Double,
+      planId: String
+    ): js.Promise[Timeline] = js.native
     def getBuildTimeline(project: String, buildId: Double, timelineId: String): js.Promise[Timeline] = js.native
+    def getBuildTimeline(
+      project: String,
+      buildId: Double,
+      timelineId: String,
+      changeId: js.UndefOr[scala.Nothing],
+      planId: String
+    ): js.Promise[Timeline] = js.native
     def getBuildTimeline(project: String, buildId: Double, timelineId: String, changeId: Double): js.Promise[Timeline] = js.native
     def getBuildTimeline(project: String, buildId: Double, timelineId: String, changeId: Double, planId: String): js.Promise[Timeline] = js.native
     def getBuildWorkItemsRefs(project: String, buildId: Double): js.Promise[js.Array[ResourceRef]] = js.native
@@ -153,13 +233,200 @@ object buildApiMod extends js.Object {
       repositoryType: js.UndefOr[String]
     ): js.Promise[js.Array[Build]] = js.native
     def getChangesBetweenBuilds(project: String): js.Promise[js.Array[Change]] = js.native
+    def getChangesBetweenBuilds(
+      project: String,
+      fromBuildId: js.UndefOr[scala.Nothing],
+      toBuildId: js.UndefOr[scala.Nothing],
+      top: Double
+    ): js.Promise[js.Array[Change]] = js.native
+    def getChangesBetweenBuilds(project: String, fromBuildId: js.UndefOr[scala.Nothing], toBuildId: Double): js.Promise[js.Array[Change]] = js.native
+    def getChangesBetweenBuilds(project: String, fromBuildId: js.UndefOr[scala.Nothing], toBuildId: Double, top: Double): js.Promise[js.Array[Change]] = js.native
     def getChangesBetweenBuilds(project: String, fromBuildId: Double): js.Promise[js.Array[Change]] = js.native
+    def getChangesBetweenBuilds(project: String, fromBuildId: Double, toBuildId: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[Change]] = js.native
     def getChangesBetweenBuilds(project: String, fromBuildId: Double, toBuildId: Double): js.Promise[js.Array[Change]] = js.native
     def getChangesBetweenBuilds(project: String, fromBuildId: Double, toBuildId: Double, top: Double): js.Promise[js.Array[Change]] = js.native
     def getDefinition(definitionId: Double): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date,
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date,
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date,
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: js.UndefOr[scala.Nothing], revision: Double): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: Double,
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: Double,
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: Double,
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: js.UndefOr[scala.Nothing], revision: Double, minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: Double,
+      minMetricsTime: Date,
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: Double,
+      minMetricsTime: Date,
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      revision: Double,
+      minMetricsTime: Date,
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
     def getDefinition(definitionId: Double, project: String): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(definitionId: Double, project: String, revision: js.UndefOr[scala.Nothing], minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date,
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date,
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: js.UndefOr[scala.Nothing],
+      minMetricsTime: Date,
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
     def getDefinition(definitionId: Double, project: String, revision: Double): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String]
+    ): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: js.UndefOr[scala.Nothing],
+      propertyFilters: js.Array[String],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
     def getDefinition(definitionId: Double, project: String, revision: Double, minMetricsTime: Date): js.Promise[BuildDefinition] = js.native
+    def getDefinition(
+      definitionId: Double,
+      project: String,
+      revision: Double,
+      minMetricsTime: Date,
+      propertyFilters: js.UndefOr[scala.Nothing],
+      includeLatestBuilds: Boolean
+    ): js.Promise[BuildDefinition] = js.native
     def getDefinition(
       definitionId: Double,
       project: String,
@@ -200,9 +467,11 @@ object buildApiMod extends js.Object {
       taskIdFilter: js.UndefOr[String]
     ): js.Promise[js.Array[BuildDefinitionReference]] = js.native
     def getFolders(project: String): js.Promise[js.Array[Folder]] = js.native
+    def getFolders(project: String, path: js.UndefOr[scala.Nothing], queryOrder: FolderQueryOrder): js.Promise[js.Array[Folder]] = js.native
     def getFolders(project: String, path: String): js.Promise[js.Array[Folder]] = js.native
     def getFolders(project: String, path: String, queryOrder: FolderQueryOrder): js.Promise[js.Array[Folder]] = js.native
     def getProjectMetrics(project: String): js.Promise[js.Array[BuildMetric]] = js.native
+    def getProjectMetrics(project: String, metricAggregationType: js.UndefOr[scala.Nothing], minMetricsTime: Date): js.Promise[js.Array[BuildMetric]] = js.native
     def getProjectMetrics(project: String, metricAggregationType: String): js.Promise[js.Array[BuildMetric]] = js.native
     def getProjectMetrics(project: String, metricAggregationType: String, minMetricsTime: Date): js.Promise[js.Array[BuildMetric]] = js.native
     def getResourceUsage(): js.Promise[BuildResourceUsage] = js.native
@@ -212,17 +481,44 @@ object buildApiMod extends js.Object {
     def getWorkItemsBetweenBuilds(project: String, fromBuildId: Double, toBuildId: Double): js.Promise[js.Array[ResourceRef]] = js.native
     def getWorkItemsBetweenBuilds(project: String, fromBuildId: Double, toBuildId: Double, top: Double): js.Promise[js.Array[ResourceRef]] = js.native
     def listBranches(project: String, providerName: String): js.Promise[js.Array[String]] = js.native
+    def listBranches(
+      project: String,
+      providerName: String,
+      serviceEndpointId: js.UndefOr[scala.Nothing],
+      repository: String
+    ): js.Promise[js.Array[String]] = js.native
     def listBranches(project: String, providerName: String, serviceEndpointId: String): js.Promise[js.Array[String]] = js.native
     def listBranches(project: String, providerName: String, serviceEndpointId: String, repository: String): js.Promise[js.Array[String]] = js.native
     def listRepositories(project: String, providerName: String): js.Promise[js.Array[SourceRepository]] = js.native
+    def listRepositories(
+      project: String,
+      providerName: String,
+      serviceEndpointId: js.UndefOr[scala.Nothing],
+      repository: String
+    ): js.Promise[js.Array[SourceRepository]] = js.native
     def listRepositories(project: String, providerName: String, serviceEndpointId: String): js.Promise[js.Array[SourceRepository]] = js.native
     def listRepositories(project: String, providerName: String, serviceEndpointId: String, repository: String): js.Promise[js.Array[SourceRepository]] = js.native
     def listSourceProviders(project: String): js.Promise[js.Array[SourceProviderAttributes]] = js.native
     def listWebhooks(project: String, providerName: String): js.Promise[js.Array[RepositoryWebhook]] = js.native
+    def listWebhooks(
+      project: String,
+      providerName: String,
+      serviceEndpointId: js.UndefOr[scala.Nothing],
+      repository: String
+    ): js.Promise[js.Array[RepositoryWebhook]] = js.native
     def listWebhooks(project: String, providerName: String, serviceEndpointId: String): js.Promise[js.Array[RepositoryWebhook]] = js.native
     def listWebhooks(project: String, providerName: String, serviceEndpointId: String, repository: String): js.Promise[js.Array[RepositoryWebhook]] = js.native
     def queueBuild(build: Build): js.Promise[Build] = js.native
+    def queueBuild(
+      build: Build,
+      project: js.UndefOr[scala.Nothing],
+      ignoreWarnings: js.UndefOr[scala.Nothing],
+      checkInTicket: String
+    ): js.Promise[Build] = js.native
+    def queueBuild(build: Build, project: js.UndefOr[scala.Nothing], ignoreWarnings: Boolean): js.Promise[Build] = js.native
+    def queueBuild(build: Build, project: js.UndefOr[scala.Nothing], ignoreWarnings: Boolean, checkInTicket: String): js.Promise[Build] = js.native
     def queueBuild(build: Build, project: String): js.Promise[Build] = js.native
+    def queueBuild(build: Build, project: String, ignoreWarnings: js.UndefOr[scala.Nothing], checkInTicket: String): js.Promise[Build] = js.native
     def queueBuild(build: Build, project: String, ignoreWarnings: Boolean): js.Promise[Build] = js.native
     def queueBuild(build: Build, project: String, ignoreWarnings: Boolean, checkInTicket: String): js.Promise[Build] = js.native
     def saveTemplate(template: BuildDefinitionTemplate, project: String, templateId: String): js.Promise[BuildDefinitionTemplate] = js.native
@@ -233,7 +529,34 @@ object buildApiMod extends js.Object {
     def updateBuilds(builds: js.Array[Build]): js.Promise[js.Array[Build]] = js.native
     def updateBuilds(builds: js.Array[Build], project: String): js.Promise[js.Array[Build]] = js.native
     def updateDefinition(definition: BuildDefinition, definitionId: Double): js.Promise[BuildDefinition] = js.native
+    def updateDefinition(
+      definition: BuildDefinition,
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      secretsSourceDefinitionId: js.UndefOr[scala.Nothing],
+      secretsSourceDefinitionRevision: Double
+    ): js.Promise[BuildDefinition] = js.native
+    def updateDefinition(
+      definition: BuildDefinition,
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      secretsSourceDefinitionId: Double
+    ): js.Promise[BuildDefinition] = js.native
+    def updateDefinition(
+      definition: BuildDefinition,
+      definitionId: Double,
+      project: js.UndefOr[scala.Nothing],
+      secretsSourceDefinitionId: Double,
+      secretsSourceDefinitionRevision: Double
+    ): js.Promise[BuildDefinition] = js.native
     def updateDefinition(definition: BuildDefinition, definitionId: Double, project: String): js.Promise[BuildDefinition] = js.native
+    def updateDefinition(
+      definition: BuildDefinition,
+      definitionId: Double,
+      project: String,
+      secretsSourceDefinitionId: js.UndefOr[scala.Nothing],
+      secretsSourceDefinitionRevision: Double
+    ): js.Promise[BuildDefinition] = js.native
     def updateDefinition(
       definition: BuildDefinition,
       definitionId: Double,

@@ -4,19 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICardholderBusinessEntity extends js.Object {
   /**
     * Whether the company’s business ID number was provided.
     */
-  var tax_id_provided: js.UndefOr[Boolean] = js.undefined
+  var tax_id_provided: js.UndefOr[Boolean] = js.native
 }
 
 object ICardholderBusinessEntity {
   @scala.inline
-  def apply(tax_id_provided: js.UndefOr[Boolean] = js.undefined): ICardholderBusinessEntity = {
+  def apply(): ICardholderBusinessEntity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(tax_id_provided)) __obj.updateDynamic("tax_id_provided")(tax_id_provided.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICardholderBusinessEntity]
   }
+  @scala.inline
+  implicit class ICardholderBusinessEntityOps[Self <: ICardholderBusinessEntity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTax_id_provided(value: Boolean): Self = this.set("tax_id_provided", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_id_provided: Self = this.set("tax_id_provided", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ Simple library to convert accents (diacritics) from strings to latin characters.
 | Full name          | latinize |
 | Keywords           | string, latinize, latinise, accents, diacritics |
 | # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 999846 |
+| # dependents       | 34 |
+| # downloads        | 1015198 |
 | # stars            | 2 |
 
 ## Links

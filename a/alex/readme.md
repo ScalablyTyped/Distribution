@@ -12,7 +12,7 @@ Catch insensitive, inconsiderate writing
 | Keywords           | cli-app, cli, bin, alex, equal, race, religion, sex, orientation, identity, gender, sensitive, insensitive, neutral, writing, language, english |
 | # releases         | 8 |
 | # dependents       | 14 |
-| # downloads        | 387326 |
+| # downloads        | 324901 |
 | # stars            | 5 |
 
 ## Links

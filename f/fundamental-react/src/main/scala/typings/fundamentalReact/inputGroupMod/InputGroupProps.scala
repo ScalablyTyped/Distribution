@@ -6,36 +6,59 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputGroupProps
   extends /* x */ StringDictionary[js.Any] {
-  var className: js.UndefOr[String] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
-  var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var props: js.UndefOr[js.Any] = js.undefined
-  var validationState: js.UndefOr[State] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var props: js.UndefOr[js.Any] = js.native
+  var validationState: js.UndefOr[State] = js.native
 }
 
 object InputGroupProps {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    props: js.Any = null,
-    validationState: State = null
-  ): InputGroupProps = {
+  def apply(): InputGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
-    if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputGroupProps]
   }
+  @scala.inline
+  implicit class InputGroupPropsOps[Self <: InputGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setProps(value: js.Any): Self = this.set("props", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProps: Self = this.set("props", js.undefined)
+    @scala.inline
+    def setValidationState(value: State): Self = this.set("validationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationState: Self = this.set("validationState", js.undefined)
+  }
+  
 }
 

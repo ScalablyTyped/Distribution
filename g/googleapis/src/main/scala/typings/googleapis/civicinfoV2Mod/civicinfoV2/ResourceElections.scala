@@ -27,6 +27,7 @@ class ResourceElections protected () extends js.Object {
     */
   def electionQuery(): GaxiosPromise[SchemaElectionsQueryResponse] = js.native
   def electionQuery(callback: BodyResponseCallback[SchemaElectionsQueryResponse]): Unit = js.native
+  def electionQuery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaElectionsQueryResponse] = js.native
   def electionQuery(params: ParamsResourceElectionsElectionquery): GaxiosPromise[SchemaElectionsQueryResponse] = js.native
   def electionQuery(
     params: ParamsResourceElectionsElectionquery,
@@ -62,6 +63,7 @@ class ResourceElections protected () extends js.Object {
     */
   def voterInfoQuery(): GaxiosPromise[SchemaVoterInfoResponse] = js.native
   def voterInfoQuery(callback: BodyResponseCallback[SchemaVoterInfoResponse]): Unit = js.native
+  def voterInfoQuery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVoterInfoResponse] = js.native
   def voterInfoQuery(params: ParamsResourceElectionsVoterinfoquery): GaxiosPromise[SchemaVoterInfoResponse] = js.native
   def voterInfoQuery(
     params: ParamsResourceElectionsVoterinfoquery,

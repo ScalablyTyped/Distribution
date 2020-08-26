@@ -34,19 +34,40 @@ trait LabelingJobForWorkteamSummary extends js.Object {
 
 object LabelingJobForWorkteamSummary {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp,
-    JobReferenceCode: JobReferenceCode,
-    WorkRequesterAccountId: AccountId,
-    LabelCounters: LabelCountersForWorkteam = null,
-    LabelingJobName: LabelingJobName = null,
-    NumberOfHumanWorkersPerDataObject: js.UndefOr[NumberOfHumanWorkersPerDataObject] = js.undefined
-  ): LabelingJobForWorkteamSummary = {
+  def apply(CreationTime: Timestamp, JobReferenceCode: JobReferenceCode, WorkRequesterAccountId: AccountId): LabelingJobForWorkteamSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], JobReferenceCode = JobReferenceCode.asInstanceOf[js.Any], WorkRequesterAccountId = WorkRequesterAccountId.asInstanceOf[js.Any])
-    if (LabelCounters != null) __obj.updateDynamic("LabelCounters")(LabelCounters.asInstanceOf[js.Any])
-    if (LabelingJobName != null) __obj.updateDynamic("LabelingJobName")(LabelingJobName.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfHumanWorkersPerDataObject)) __obj.updateDynamic("NumberOfHumanWorkersPerDataObject")(NumberOfHumanWorkersPerDataObject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobForWorkteamSummary]
   }
+  @scala.inline
+  implicit class LabelingJobForWorkteamSummaryOps[Self <: LabelingJobForWorkteamSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobReferenceCode(value: JobReferenceCode): Self = this.set("JobReferenceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkRequesterAccountId(value: AccountId): Self = this.set("WorkRequesterAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelCounters(value: LabelCountersForWorkteam): Self = this.set("LabelCounters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelCounters: Self = this.set("LabelCounters", js.undefined)
+    @scala.inline
+    def setLabelingJobName(value: LabelingJobName): Self = this.set("LabelingJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelingJobName: Self = this.set("LabelingJobName", js.undefined)
+    @scala.inline
+    def setNumberOfHumanWorkersPerDataObject(value: NumberOfHumanWorkersPerDataObject): Self = this.set("NumberOfHumanWorkersPerDataObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfHumanWorkersPerDataObject: Self = this.set("NumberOfHumanWorkersPerDataObject", js.undefined)
+  }
+  
 }
 

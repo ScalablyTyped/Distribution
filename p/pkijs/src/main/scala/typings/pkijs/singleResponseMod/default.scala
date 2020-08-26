@@ -1,6 +1,5 @@
 package typings.pkijs.singleResponseMod
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -9,20 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends SingleResponse {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var certID: typings.pkijs.certIDMod.default = js.native
-  /* CompleteClass */
-  override var certStatus: js.Any = js.native
-  /* CompleteClass */
-  override var singleExtensions: js.Array[typings.pkijs.extensionMod.default] = js.native
-  /* CompleteClass */
-  override var thisUpdate: Date = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

@@ -17,6 +17,12 @@ trait OpenFinExternalApplication extends js.Object {
   def addEventListener(
     `type`: OpenFinExternalApplicationEventType,
     listener: js.Function0[Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: OpenFinExternalApplicationEventType,
+    listener: js.Function0[Unit],
     callback: js.Function0[Unit]
   ): Unit = js.native
   def addEventListener(
@@ -29,6 +35,10 @@ trait OpenFinExternalApplication extends js.Object {
     * Retrieves information about the application.
     */
   def getInfo(): Unit = js.native
+  def getInfo(
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def getInfo(callback: js.Function1[/* info */ ExternalApplicationInfo, Unit]): Unit = js.native
   def getInfo(
     callback: js.Function1[/* info */ ExternalApplicationInfo, Unit],
@@ -38,6 +48,12 @@ trait OpenFinExternalApplication extends js.Object {
     * Removes a previously registered event listener from the specified event.
     */
   def removeEventListener(`type`: OpenFinExternalApplicationEventType, listener: js.Function0[Unit]): Unit = js.native
+  def removeEventListener(
+    `type`: OpenFinExternalApplicationEventType,
+    listener: js.Function0[Unit],
+    callback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
   def removeEventListener(
     `type`: OpenFinExternalApplicationEventType,
     listener: js.Function0[Unit],

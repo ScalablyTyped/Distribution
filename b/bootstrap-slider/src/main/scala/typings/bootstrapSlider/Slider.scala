@@ -65,6 +65,7 @@ trait Slider extends js.Object {
     * If optional triggerChangeEvent parameter is true, 'change' events will be triggered.
     */
   def setValue(newValue: Double): this.type = js.native
+  def setValue(newValue: Double, triggerSlideEvent: js.UndefOr[scala.Nothing], triggerChangeEvent: Boolean): this.type = js.native
   def setValue(newValue: Double, triggerSlideEvent: Boolean): this.type = js.native
   def setValue(newValue: Double, triggerSlideEvent: Boolean, triggerChangeEvent: Boolean): this.type = js.native
   /**

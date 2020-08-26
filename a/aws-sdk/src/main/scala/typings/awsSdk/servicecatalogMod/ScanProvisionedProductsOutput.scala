@@ -18,11 +18,32 @@ trait ScanProvisionedProductsOutput extends js.Object {
 
 object ScanProvisionedProductsOutput {
   @scala.inline
-  def apply(NextPageToken: PageToken = null, ProvisionedProducts: ProvisionedProductDetails = null): ScanProvisionedProductsOutput = {
+  def apply(): ScanProvisionedProductsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (ProvisionedProducts != null) __obj.updateDynamic("ProvisionedProducts")(ProvisionedProducts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanProvisionedProductsOutput]
   }
+  @scala.inline
+  implicit class ScanProvisionedProductsOutputOps[Self <: ScanProvisionedProductsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setProvisionedProductsVarargs(value: ProvisionedProductDetail*): Self = this.set("ProvisionedProducts", js.Array(value :_*))
+    @scala.inline
+    def setProvisionedProducts(value: ProvisionedProductDetails): Self = this.set("ProvisionedProducts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionedProducts: Self = this.set("ProvisionedProducts", js.undefined)
+  }
+  
 }
 

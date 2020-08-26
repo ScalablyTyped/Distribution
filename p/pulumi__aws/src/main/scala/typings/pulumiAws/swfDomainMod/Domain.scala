@@ -39,9 +39,9 @@ class Domain protected () extends CustomResource {
     */
   val namePrefix: Output_[js.UndefOr[String]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Length of time that SWF will continue to retain information about the workflow execution after the workflow execution is complete, must be between 0 and 90 days.
     */
@@ -59,8 +59,10 @@ object Domain extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Domain = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Domain = js.native
   def get(name: String, id: Input[ID], state: DomainState): Domain = js.native
   def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = js.native
   /**

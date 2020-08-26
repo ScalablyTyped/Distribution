@@ -80,7 +80,6 @@ trait InstanceArgs extends js.Object {
   /**
     * The IAM Instance Profile to
     * launch the instance with. Specified as the name of the Instance Profile. Ensure your credentials have the correct permission to assign the instance profile according to the [EC2 documentation](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html#roles-usingrole-ec2instance-permissions), notably `iam:PassRole`.
-    * * `ipv6AddressCount`- (Optional) A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
     */
   val iamInstanceProfile: js.UndefOr[Input[String | InstanceProfile]] = js.native
   /**
@@ -94,6 +93,9 @@ trait InstanceArgs extends js.Object {
     * The type of instance to start. Updates to this field will trigger a stop/start of the EC2 instance.
     */
   val instanceType: Input[InstanceType] = js.native
+  /**
+    * A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
+    */
   val ipv6AddressCount: js.UndefOr[Input[Double]] = js.native
   /**
     * Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface
@@ -145,9 +147,9 @@ trait InstanceArgs extends js.Object {
     */
   val subnetId: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for the import-instance command.
     */
@@ -161,9 +163,9 @@ trait InstanceArgs extends js.Object {
     */
   val userDataBase64: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the devices created by the instance at launch time.
+    * A map of tags to assign to the devices created by the instance at launch time.
     */
-  val volumeTags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val volumeTags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A list of security group IDs to associate with.
     */
@@ -172,76 +174,166 @@ trait InstanceArgs extends js.Object {
 
 object InstanceArgs {
   @scala.inline
-  def apply(
-    ami: Input[String],
-    instanceType: Input[InstanceType],
-    associatePublicIpAddress: Input[Boolean] = null,
-    availabilityZone: Input[String] = null,
-    cpuCoreCount: Input[Double] = null,
-    cpuThreadsPerCore: Input[Double] = null,
-    creditSpecification: Input[InstanceCreditSpecification] = null,
-    disableApiTermination: Input[Boolean] = null,
-    ebsBlockDevices: Input[js.Array[Input[InstanceEbsBlockDevice]]] = null,
-    ebsOptimized: Input[Boolean] = null,
-    ephemeralBlockDevices: Input[js.Array[Input[InstanceEphemeralBlockDevice]]] = null,
-    getPasswordData: Input[Boolean] = null,
-    hibernation: Input[Boolean] = null,
-    hostId: Input[String] = null,
-    iamInstanceProfile: Input[String | InstanceProfile] = null,
-    instanceInitiatedShutdownBehavior: Input[String] = null,
-    ipv6AddressCount: Input[Double] = null,
-    ipv6Addresses: Input[js.Array[Input[String]]] = null,
-    keyName: Input[String] = null,
-    metadataOptions: Input[InstanceMetadataOptions] = null,
-    monitoring: Input[Boolean] = null,
-    networkInterfaces: Input[js.Array[Input[InstanceNetworkInterface]]] = null,
-    placementGroup: Input[String] = null,
-    privateIp: Input[String] = null,
-    rootBlockDevice: Input[InstanceRootBlockDevice] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    sourceDestCheck: Input[Boolean] = null,
-    subnetId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    tenancy: Input[String] = null,
-    userData: Input[String] = null,
-    userDataBase64: Input[String] = null,
-    volumeTags: Input[StringDictionary[_]] = null,
-    vpcSecurityGroupIds: Input[js.Array[Input[String]]] = null
-  ): InstanceArgs = {
+  def apply(ami: Input[String], instanceType: Input[InstanceType]): InstanceArgs = {
     val __obj = js.Dynamic.literal(ami = ami.asInstanceOf[js.Any], instanceType = instanceType.asInstanceOf[js.Any])
-    if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (cpuCoreCount != null) __obj.updateDynamic("cpuCoreCount")(cpuCoreCount.asInstanceOf[js.Any])
-    if (cpuThreadsPerCore != null) __obj.updateDynamic("cpuThreadsPerCore")(cpuThreadsPerCore.asInstanceOf[js.Any])
-    if (creditSpecification != null) __obj.updateDynamic("creditSpecification")(creditSpecification.asInstanceOf[js.Any])
-    if (disableApiTermination != null) __obj.updateDynamic("disableApiTermination")(disableApiTermination.asInstanceOf[js.Any])
-    if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
-    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
-    if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
-    if (getPasswordData != null) __obj.updateDynamic("getPasswordData")(getPasswordData.asInstanceOf[js.Any])
-    if (hibernation != null) __obj.updateDynamic("hibernation")(hibernation.asInstanceOf[js.Any])
-    if (hostId != null) __obj.updateDynamic("hostId")(hostId.asInstanceOf[js.Any])
-    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
-    if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
-    if (ipv6AddressCount != null) __obj.updateDynamic("ipv6AddressCount")(ipv6AddressCount.asInstanceOf[js.Any])
-    if (ipv6Addresses != null) __obj.updateDynamic("ipv6Addresses")(ipv6Addresses.asInstanceOf[js.Any])
-    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
-    if (metadataOptions != null) __obj.updateDynamic("metadataOptions")(metadataOptions.asInstanceOf[js.Any])
-    if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
-    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
-    if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])
-    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
-    if (rootBlockDevice != null) __obj.updateDynamic("rootBlockDevice")(rootBlockDevice.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (sourceDestCheck != null) __obj.updateDynamic("sourceDestCheck")(sourceDestCheck.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (tenancy != null) __obj.updateDynamic("tenancy")(tenancy.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
-    if (userDataBase64 != null) __obj.updateDynamic("userDataBase64")(userDataBase64.asInstanceOf[js.Any])
-    if (volumeTags != null) __obj.updateDynamic("volumeTags")(volumeTags.asInstanceOf[js.Any])
-    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceArgs]
   }
+  @scala.inline
+  implicit class InstanceArgsOps[Self <: InstanceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmi(value: Input[String]): Self = this.set("ami", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: Input[InstanceType]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssociatePublicIpAddress(value: Input[Boolean]): Self = this.set("associatePublicIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatePublicIpAddress: Self = this.set("associatePublicIpAddress", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setCpuCoreCount(value: Input[Double]): Self = this.set("cpuCoreCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuCoreCount: Self = this.set("cpuCoreCount", js.undefined)
+    @scala.inline
+    def setCpuThreadsPerCore(value: Input[Double]): Self = this.set("cpuThreadsPerCore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuThreadsPerCore: Self = this.set("cpuThreadsPerCore", js.undefined)
+    @scala.inline
+    def setCreditSpecification(value: Input[InstanceCreditSpecification]): Self = this.set("creditSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreditSpecification: Self = this.set("creditSpecification", js.undefined)
+    @scala.inline
+    def setDisableApiTermination(value: Input[Boolean]): Self = this.set("disableApiTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableApiTermination: Self = this.set("disableApiTermination", js.undefined)
+    @scala.inline
+    def setEbsBlockDevicesVarargs(value: Input[InstanceEbsBlockDevice]*): Self = this.set("ebsBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEbsBlockDevices(value: Input[js.Array[Input[InstanceEbsBlockDevice]]]): Self = this.set("ebsBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsBlockDevices: Self = this.set("ebsBlockDevices", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Input[Boolean]): Self = this.set("ebsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("ebsOptimized", js.undefined)
+    @scala.inline
+    def setEphemeralBlockDevicesVarargs(value: Input[InstanceEphemeralBlockDevice]*): Self = this.set("ephemeralBlockDevices", js.Array(value :_*))
+    @scala.inline
+    def setEphemeralBlockDevices(value: Input[js.Array[Input[InstanceEphemeralBlockDevice]]]): Self = this.set("ephemeralBlockDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEphemeralBlockDevices: Self = this.set("ephemeralBlockDevices", js.undefined)
+    @scala.inline
+    def setGetPasswordData(value: Input[Boolean]): Self = this.set("getPasswordData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetPasswordData: Self = this.set("getPasswordData", js.undefined)
+    @scala.inline
+    def setHibernation(value: Input[Boolean]): Self = this.set("hibernation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHibernation: Self = this.set("hibernation", js.undefined)
+    @scala.inline
+    def setHostId(value: Input[String]): Self = this.set("hostId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostId: Self = this.set("hostId", js.undefined)
+    @scala.inline
+    def setIamInstanceProfile(value: Input[String | InstanceProfile]): Self = this.set("iamInstanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamInstanceProfile: Self = this.set("iamInstanceProfile", js.undefined)
+    @scala.inline
+    def setInstanceInitiatedShutdownBehavior(value: Input[String]): Self = this.set("instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInitiatedShutdownBehavior: Self = this.set("instanceInitiatedShutdownBehavior", js.undefined)
+    @scala.inline
+    def setIpv6AddressCount(value: Input[Double]): Self = this.set("ipv6AddressCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6AddressCount: Self = this.set("ipv6AddressCount", js.undefined)
+    @scala.inline
+    def setIpv6AddressesVarargs(value: Input[String]*): Self = this.set("ipv6Addresses", js.Array(value :_*))
+    @scala.inline
+    def setIpv6Addresses(value: Input[js.Array[Input[String]]]): Self = this.set("ipv6Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Addresses: Self = this.set("ipv6Addresses", js.undefined)
+    @scala.inline
+    def setKeyName(value: Input[String]): Self = this.set("keyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("keyName", js.undefined)
+    @scala.inline
+    def setMetadataOptions(value: Input[InstanceMetadataOptions]): Self = this.set("metadataOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataOptions: Self = this.set("metadataOptions", js.undefined)
+    @scala.inline
+    def setMonitoring(value: Input[Boolean]): Self = this.set("monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("monitoring", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: Input[InstanceNetworkInterface]*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: Input[js.Array[Input[InstanceNetworkInterface]]]): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
+    @scala.inline
+    def setPlacementGroup(value: Input[String]): Self = this.set("placementGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroup: Self = this.set("placementGroup", js.undefined)
+    @scala.inline
+    def setPrivateIp(value: Input[String]): Self = this.set("privateIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIp: Self = this.set("privateIp", js.undefined)
+    @scala.inline
+    def setRootBlockDevice(value: Input[InstanceRootBlockDevice]): Self = this.set("rootBlockDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootBlockDevice: Self = this.set("rootBlockDevice", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSourceDestCheck(value: Input[Boolean]): Self = this.set("sourceDestCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDestCheck: Self = this.set("sourceDestCheck", js.undefined)
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTenancy(value: Input[String]): Self = this.set("tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("tenancy", js.undefined)
+    @scala.inline
+    def setUserData(value: Input[String]): Self = this.set("userData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("userData", js.undefined)
+    @scala.inline
+    def setUserDataBase64(value: Input[String]): Self = this.set("userDataBase64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDataBase64: Self = this.set("userDataBase64", js.undefined)
+    @scala.inline
+    def setVolumeTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("volumeTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeTags: Self = this.set("volumeTags", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("vpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("vpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

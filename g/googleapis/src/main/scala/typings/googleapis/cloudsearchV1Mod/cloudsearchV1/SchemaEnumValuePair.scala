@@ -34,11 +34,30 @@ trait SchemaEnumValuePair extends js.Object {
 
 object SchemaEnumValuePair {
   @scala.inline
-  def apply(integerValue: js.UndefOr[Double] = js.undefined, stringValue: String = null): SchemaEnumValuePair = {
+  def apply(): SchemaEnumValuePair = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(integerValue)) __obj.updateDynamic("integerValue")(integerValue.get.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnumValuePair]
   }
+  @scala.inline
+  implicit class SchemaEnumValuePairOps[Self <: SchemaEnumValuePair] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIntegerValue(value: Double): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

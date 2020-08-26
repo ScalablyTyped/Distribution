@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * component).
   * @since OOo 2.0.4
   */
+@js.native
 trait ParaUserDefinedAttributesSupplier extends js.Object {
   /**
     * This container holds the {@link AttributeData} elements that represent uninterpreted XML attributes of a paragraph.
@@ -19,7 +20,7 @@ trait ParaUserDefinedAttributesSupplier extends js.Object {
     *
     * The {@link com.sun.star.container.XNameContainer} supports the service {@link AttributeContainer} .
     */
-  var ParaUserDefinedAttributes: XNameContainer
+  var ParaUserDefinedAttributes: XNameContainer = js.native
 }
 
 object ParaUserDefinedAttributesSupplier {
@@ -28,5 +29,20 @@ object ParaUserDefinedAttributesSupplier {
     val __obj = js.Dynamic.literal(ParaUserDefinedAttributes = ParaUserDefinedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParaUserDefinedAttributesSupplier]
   }
+  @scala.inline
+  implicit class ParaUserDefinedAttributesSupplierOps[Self <: ParaUserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParaUserDefinedAttributes(value: XNameContainer): Self = this.set("ParaUserDefinedAttributes", value.asInstanceOf[js.Any])
+  }
+  
 }
 

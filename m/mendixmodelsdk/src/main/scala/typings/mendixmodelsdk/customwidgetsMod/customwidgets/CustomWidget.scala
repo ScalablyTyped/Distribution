@@ -54,40 +54,30 @@ class CustomWidget protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FCustomWidget: IModel = js.native
-  def conditionalEditabilitySettings(): js.Any = js.native
-  def conditionalEditabilitySettings(newValue: ConditionalEditabilitySettings): js.Any = js.native
   /**
     * In version 8.1.0: introduced
     */
-  @JSName("conditionalEditabilitySettings")
-  def conditionalEditabilitySettings_Union: ConditionalEditabilitySettings | Null = js.native
-  def conditionalVisibilitySettings(): js.Any = js.native
-  def conditionalVisibilitySettings(newValue: ConditionalVisibilitySettings): js.Any = js.native
+  def conditionalEditabilitySettings: ConditionalEditabilitySettings | Null = js.native
+  def conditionalEditabilitySettings_=(newValue: ConditionalEditabilitySettings | Null): Unit = js.native
   /**
     * In version 8.1.0: introduced
     */
-  @JSName("conditionalVisibilitySettings")
-  def conditionalVisibilitySettings_Union: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings: ConditionalVisibilitySettings | Null = js.native
+  def conditionalVisibilitySettings_=(newValue: ConditionalVisibilitySettings | Null): Unit = js.native
   /**
     * In version 8.1.0: introduced
     */
   def editable: EditableEnum = js.native
-  def editable(newValue: EditableEnum): js.Any = js.native
-  def labelTemplate(): js.Any = js.native
-  def labelTemplate(newValue: ClientTemplate): js.Any = js.native
+  def editable_=(newValue: EditableEnum): Unit = js.native
   /**
     * In version 8.1.0: introduced
     */
-  @JSName("labelTemplate")
-  def labelTemplate_Union: ClientTemplate | Null = js.native
-  def `object`(): js.Any = js.native
-  def `object`(newValue: WidgetObject): js.Any = js.native
-  @JSName("object")
-  def object_Union: WidgetObject | Null = js.native
-  def `type`(): js.Any = js.native
-  def `type`(newValue: CustomWidgetType): js.Any = js.native
-  @JSName("type")
-  def type_Union: CustomWidgetType | Null = js.native
+  def labelTemplate: ClientTemplate | Null = js.native
+  def labelTemplate_=(newValue: ClientTemplate | Null): Unit = js.native
+  def `object`: WidgetObject | Null = js.native
+  def object_=(newValue: WidgetObject | Null): Unit = js.native
+  def `type`: CustomWidgetType | Null = js.native
+  def type_=(newValue: CustomWidgetType | Null): Unit = js.native
 }
 
 /* static members */

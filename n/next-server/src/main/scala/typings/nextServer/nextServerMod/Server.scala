@@ -16,11 +16,11 @@ trait Server extends js.Object {
   val _isLikeServerless: js.Any = js.native
   var buildId: String = js.native
   var close: js.Any = js.native
-  var compression: js.UndefOr[js.Any] = js.native
+  var compression: js.Any = js.native
   var currentPhase: js.Any = js.native
   var dir: String = js.native
   var distDir: String = js.native
-  var dynamicRoutes: js.UndefOr[js.Any] = js.native
+  var dynamicRoutes: js.Any = js.native
   var findPageComponents: js.Any = js.native
   var generatePublicRoutes: js.Any = js.native
   var generateRoutes: js.Any = js.native
@@ -60,6 +60,13 @@ trait Server extends js.Object {
   ] = js.native
   def prepare(): js.Promise[Unit] = js.native
   def render(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
+  def render(
+    req: IncomingMessage,
+    res: ServerResponse,
+    pathname: String,
+    query: js.UndefOr[scala.Nothing],
+    parsedUrl: UrlWithParsedQuery
+  ): js.Promise[Unit] = js.native
   def render(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
   def render(
     req: IncomingMessage,
@@ -79,6 +86,13 @@ trait Server extends js.Object {
   def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[_] = js.native
   def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[_] = js.native
   def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[String | Null] = js.native
+  def renderToHTML(
+    req: IncomingMessage,
+    res: ServerResponse,
+    pathname: String,
+    query: js.UndefOr[scala.Nothing],
+    hasAmphtmlDataOnlyHasAmp: Amphtml
+  ): js.Promise[String | Null] = js.native
   def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[String | Null] = js.native
   def renderToHTML(
     req: IncomingMessage,

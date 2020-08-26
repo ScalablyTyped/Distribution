@@ -1,6 +1,6 @@
 package typings.pulumiAws.logSubscriptionFilterMod
 
-import typings.pulumiAws.logGroupMod.LogGroup
+import typings.pulumiAws.cloudwatchMod.LogGroup
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -36,19 +36,40 @@ trait LogSubscriptionFilterArgs extends js.Object {
 
 object LogSubscriptionFilterArgs {
   @scala.inline
-  def apply(
-    destinationArn: Input[String],
-    filterPattern: Input[String],
-    logGroup: Input[String | LogGroup],
-    distribution: Input[String] = null,
-    name: Input[String] = null,
-    roleArn: Input[String] = null
-  ): LogSubscriptionFilterArgs = {
+  def apply(destinationArn: Input[String], filterPattern: Input[String], logGroup: Input[String | LogGroup]): LogSubscriptionFilterArgs = {
     val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], filterPattern = filterPattern.asInstanceOf[js.Any], logGroup = logGroup.asInstanceOf[js.Any])
-    if (distribution != null) __obj.updateDynamic("distribution")(distribution.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogSubscriptionFilterArgs]
   }
+  @scala.inline
+  implicit class LogSubscriptionFilterArgsOps[Self <: LogSubscriptionFilterArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationArn(value: Input[String]): Self = this.set("destinationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilterPattern(value: Input[String]): Self = this.set("filterPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogGroup(value: Input[String | LogGroup]): Self = this.set("logGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDistribution(value: Input[String]): Self = this.set("distribution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistribution: Self = this.set("distribution", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

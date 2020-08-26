@@ -50,6 +50,7 @@ class Mapping () extends Mappable {
     * Create a mapping that maps only through a part of this one.
     */
   def slice(): Mapping = js.native
+  def slice(from: js.UndefOr[scala.Nothing], to: Double): Mapping = js.native
   def slice(from: Double): Mapping = js.native
   def slice(from: Double, to: Double): Mapping = js.native
 }

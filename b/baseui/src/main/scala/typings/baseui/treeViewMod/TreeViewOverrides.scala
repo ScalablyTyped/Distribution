@@ -4,47 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeViewOverrides extends TreeLabelOverrides {
   var Root: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
-  ] = js.undefined
+  ] = js.native
   var TreeItem: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isLeafNode ? :boolean}> */ js.Any
-  ] = js.undefined
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isLeafNode :boolean | undefined}> */ js.Any
+  ] = js.native
   var TreeItemList: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isChildNode ? :boolean}> */ js.Any
-  ] = js.undefined
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isChildNode :boolean | undefined}> */ js.Any
+  ] = js.native
   var TreeLabel: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<TreeLabelProps> */ js.Any
-  ] = js.undefined
+  ] = js.native
 }
 
 object TreeViewOverrides {
   @scala.inline
-  def apply(
-    CollapseIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    ExpandIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    IconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    LeafIcon: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    LeafIconContainer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    Root: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    TreeItem: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isLeafNode ? :boolean}> */ js.Any = null,
-    TreeItemContent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any = null,
-    TreeItemList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isChildNode ? :boolean}> */ js.Any = null,
-    TreeLabel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<TreeLabelProps> */ js.Any = null
-  ): TreeViewOverrides = {
+  def apply(): TreeViewOverrides = {
     val __obj = js.Dynamic.literal()
-    if (CollapseIcon != null) __obj.updateDynamic("CollapseIcon")(CollapseIcon.asInstanceOf[js.Any])
-    if (ExpandIcon != null) __obj.updateDynamic("ExpandIcon")(ExpandIcon.asInstanceOf[js.Any])
-    if (IconContainer != null) __obj.updateDynamic("IconContainer")(IconContainer.asInstanceOf[js.Any])
-    if (LeafIcon != null) __obj.updateDynamic("LeafIcon")(LeafIcon.asInstanceOf[js.Any])
-    if (LeafIconContainer != null) __obj.updateDynamic("LeafIconContainer")(LeafIconContainer.asInstanceOf[js.Any])
-    if (Root != null) __obj.updateDynamic("Root")(Root.asInstanceOf[js.Any])
-    if (TreeItem != null) __obj.updateDynamic("TreeItem")(TreeItem.asInstanceOf[js.Any])
-    if (TreeItemContent != null) __obj.updateDynamic("TreeItemContent")(TreeItemContent.asInstanceOf[js.Any])
-    if (TreeItemList != null) __obj.updateDynamic("TreeItemList")(TreeItemList.asInstanceOf[js.Any])
-    if (TreeLabel != null) __obj.updateDynamic("TreeLabel")(TreeLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewOverrides]
   }
+  @scala.inline
+  implicit class TreeViewOverridesOps[Self <: TreeViewOverrides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoot(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
+    ): Self = this.set("Root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("Root", js.undefined)
+    @scala.inline
+    def setTreeItem(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isLeafNode :boolean | undefined}> */ js.Any
+    ): Self = this.set("TreeItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeItem: Self = this.set("TreeItem", js.undefined)
+    @scala.inline
+    def setTreeItemList(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{  $isChildNode :boolean | undefined}> */ js.Any
+    ): Self = this.set("TreeItemList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeItemList: Self = this.set("TreeItemList", js.undefined)
+    @scala.inline
+    def setTreeLabel(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<TreeLabelProps> */ js.Any
+    ): Self = this.set("TreeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreeLabel: Self = this.set("TreeLabel", js.undefined)
+  }
+  
 }
 

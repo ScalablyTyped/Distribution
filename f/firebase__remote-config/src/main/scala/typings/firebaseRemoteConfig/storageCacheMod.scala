@@ -13,12 +13,12 @@ object storageCacheMod extends js.Object {
   @js.native
   class StorageCache protected () extends js.Object {
     def this(storage: Storage) = this()
-    var activeConfig: js.UndefOr[js.Any] = js.native
+    var activeConfig: js.Any = js.native
     /**
       * Memory caches.
       */
-    var lastFetchStatus: js.UndefOr[js.Any] = js.native
-    var lastSuccessfulFetchTimestampMillis: js.UndefOr[js.Any] = js.native
+    var lastFetchStatus: js.Any = js.native
+    var lastSuccessfulFetchTimestampMillis: js.Any = js.native
     val storage: js.Any = js.native
     def getActiveConfig(): js.UndefOr[FirebaseRemoteConfigObject] = js.native
     /**

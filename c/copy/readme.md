@@ -12,7 +12,7 @@ Copy files or directories using globs.
 | Keywords           | async, copy, file, file-system, fs, glob, move, path, pattern, promise, stream, sync, system |
 | # releases         | 2 |
 | # dependents       | 180 |
-| # downloads        | 716786 |
+| # downloads        | 729130 |
 | # stars            | 11 |
 
 ## Links

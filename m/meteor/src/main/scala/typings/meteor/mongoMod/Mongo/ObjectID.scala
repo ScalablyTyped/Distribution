@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ObjectID extends js.Object {
-  def equals(otherID: ObjectID): Boolean
-  def toHexString(): String
+  def equals(otherID: ObjectID): Boolean = js.native
+  def toHexString(): String = js.native
 }
 
 @JSImport("meteor/mongo", "Mongo.ObjectID")

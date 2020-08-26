@@ -37,9 +37,11 @@ class Events ()
 object Events extends js.Object {
   def bind(): typings.avoscloudSdk.mod.Events = js.native
   def off(events: js.Array[String]): typings.avoscloudSdk.mod.Events = js.native
+  def off(events: js.Array[String], callback: js.UndefOr[scala.Nothing], context: js.Any): typings.avoscloudSdk.mod.Events = js.native
   def off(events: js.Array[String], callback: js.Function): typings.avoscloudSdk.mod.Events = js.native
   def off(events: js.Array[String], callback: js.Function, context: js.Any): typings.avoscloudSdk.mod.Events = js.native
   def on(events: js.Array[String]): typings.avoscloudSdk.mod.Events = js.native
+  def on(events: js.Array[String], callback: js.UndefOr[scala.Nothing], context: js.Any): typings.avoscloudSdk.mod.Events = js.native
   def on(events: js.Array[String], callback: js.Function): typings.avoscloudSdk.mod.Events = js.native
   def on(events: js.Array[String], callback: js.Function, context: js.Any): typings.avoscloudSdk.mod.Events = js.native
   def trigger(events: js.Array[String]): typings.avoscloudSdk.mod.Events = js.native

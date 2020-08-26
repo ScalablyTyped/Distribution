@@ -30,20 +30,46 @@ trait DescribeExportImageTasksRequest extends js.Object {
 
 object DescribeExportImageTasksRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    ExportImageTaskIds: ExportImageTaskIdList = null,
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeExportImageTasksMaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): DescribeExportImageTasksRequest = {
+  def apply(): DescribeExportImageTasksRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (ExportImageTaskIds != null) __obj.updateDynamic("ExportImageTaskIds")(ExportImageTaskIds.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeExportImageTasksRequest]
   }
+  @scala.inline
+  implicit class DescribeExportImageTasksRequestOps[Self <: DescribeExportImageTasksRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setExportImageTaskIdsVarargs(value: ExportImageTaskId*): Self = this.set("ExportImageTaskIds", js.Array(value :_*))
+    @scala.inline
+    def setExportImageTaskIds(value: ExportImageTaskIdList): Self = this.set("ExportImageTaskIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportImageTaskIds: Self = this.set("ExportImageTaskIds", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeExportImageTasksMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

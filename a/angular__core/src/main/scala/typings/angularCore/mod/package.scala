@@ -325,7 +325,7 @@ package object mod {
     */
   type LocalRefExtractor = js.Function2[
     /* tNode */ typings.angularCore.mod.TNodeWithLocalRefs, 
-    /* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBo, 
+    /* currentView */ typings.angularCore.mod.ɵangularPackagesCoreCoreBp, 
     js.Any
   ]
   type NgIterable[T] = js.Array[T] | typings.std.Iterable[T]
@@ -413,19 +413,6 @@ package object mod {
     - js.Array[js.Any]
   */
   type StaticProvider = typings.angularCore.mod._StaticProvider | js.Array[js.Any]
-  /**
-    * Used to intercept and sanitize style values before they are written to the renderer.
-    *
-    * This function is designed to be called in two modes. When a value is not provided
-    * then the function will return a boolean whether a property will be sanitized later.
-    * If a value is provided then the sanitized version of that will be returned.
-    */
-  type StyleSanitizeFn = js.Function3[
-    /* prop */ java.lang.String, 
-    /* value */ java.lang.String | typings.angularCore.mod.ɵSafeValue | scala.Null, 
-    /* mode */ js.UndefOr[typings.angularCore.mod.StyleSanitizeMode], 
-    js.Any
-  ]
   /**
     * A combination of:
     * - Attribute names and values.

@@ -11,8 +11,8 @@ Standalone parallax scrolling for mobile and desktop with CSS variables
 | Full name          | basicscroll |
 | Keywords           | parallax, scroll, scrolling |
 | # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 120739 |
+| # dependents       | 4 |
+| # downloads        | 116437 |
 | # stars            | 2 |
 
 ## Links

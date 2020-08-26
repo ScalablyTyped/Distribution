@@ -28,35 +28,5 @@ class ASPxClientValidationCompletedEventArgs protected ()
     firstInvalidControl: typings.devexpressWeb.ASPxClientControl,
     firstVisibleInvalidControl: typings.devexpressWeb.ASPxClientControl
   ) = this()
-  /**
-    * Gets a container object that holds the validated control(s).
-    */
-  /* CompleteClass */
-  override var container: js.Any = js.native
-  /**
-    * Gets the first control (either visible or invisible) that hasn't passed the validation applied.
-    */
-  /* CompleteClass */
-  override var firstInvalidControl: typings.devexpressWeb.ASPxClientControl = js.native
-  /**
-    * Gets the first visible control that hasn't passed the validation applied.
-    */
-  /* CompleteClass */
-  override var firstVisibleInvalidControl: typings.devexpressWeb.ASPxClientControl = js.native
-  /**
-    * Gets a value that indicates whether validation has been applied to both visible and invisible controls.
-    */
-  /* CompleteClass */
-  override var invisibleControlsValidated: Boolean = js.native
-  /**
-    * Gets a value specifying whether the validation has been completed successfully.
-    */
-  /* CompleteClass */
-  override var isValid: Boolean = js.native
-  /**
-    * Gets the name of the validation group name to which validation has been applied.
-    */
-  /* CompleteClass */
-  override var validationGroup: String = js.native
 }
 

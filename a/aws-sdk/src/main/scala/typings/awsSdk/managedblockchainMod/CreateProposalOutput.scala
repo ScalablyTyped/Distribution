@@ -14,10 +14,26 @@ trait CreateProposalOutput extends js.Object {
 
 object CreateProposalOutput {
   @scala.inline
-  def apply(ProposalId: ResourceIdString = null): CreateProposalOutput = {
+  def apply(): CreateProposalOutput = {
     val __obj = js.Dynamic.literal()
-    if (ProposalId != null) __obj.updateDynamic("ProposalId")(ProposalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProposalOutput]
   }
+  @scala.inline
+  implicit class CreateProposalOutputOps[Self <: CreateProposalOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProposalId(value: ResourceIdString): Self = this.set("ProposalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposalId: Self = this.set("ProposalId", js.undefined)
+  }
+  
 }
 

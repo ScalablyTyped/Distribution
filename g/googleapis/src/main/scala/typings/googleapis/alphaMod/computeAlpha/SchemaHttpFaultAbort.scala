@@ -24,11 +24,30 @@ trait SchemaHttpFaultAbort extends js.Object {
 
 object SchemaHttpFaultAbort {
   @scala.inline
-  def apply(httpStatus: js.UndefOr[Double] = js.undefined, percentage: js.UndefOr[Double] = js.undefined): SchemaHttpFaultAbort = {
+  def apply(): SchemaHttpFaultAbort = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(httpStatus)) __obj.updateDynamic("httpStatus")(httpStatus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpFaultAbort]
   }
+  @scala.inline
+  implicit class SchemaHttpFaultAbortOps[Self <: SchemaHttpFaultAbort] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpStatus(value: Double): Self = this.set("httpStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpStatus: Self = this.set("httpStatus", js.undefined)
+    @scala.inline
+    def setPercentage(value: Double): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentage: Self = this.set("percentage", js.undefined)
+  }
+  
 }
 

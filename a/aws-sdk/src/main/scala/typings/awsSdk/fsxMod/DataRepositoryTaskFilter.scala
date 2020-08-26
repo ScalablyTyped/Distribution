@@ -18,11 +18,32 @@ trait DataRepositoryTaskFilter extends js.Object {
 
 object DataRepositoryTaskFilter {
   @scala.inline
-  def apply(Name: DataRepositoryTaskFilterName = null, Values: DataRepositoryTaskFilterValues = null): DataRepositoryTaskFilter = {
+  def apply(): DataRepositoryTaskFilter = {
     val __obj = js.Dynamic.literal()
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRepositoryTaskFilter]
   }
+  @scala.inline
+  implicit class DataRepositoryTaskFilterOps[Self <: DataRepositoryTaskFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: DataRepositoryTaskFilterName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: DataRepositoryTaskFilterValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: DataRepositoryTaskFilterValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

@@ -30,6 +30,7 @@ class ResourceContactgroups protected () extends js.Object {
     */
   def batchGet(): GaxiosPromise[SchemaBatchGetContactGroupsResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaBatchGetContactGroupsResponse]): Unit = js.native
+  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetContactGroupsResponse] = js.native
   def batchGet(params: ParamsResourceContactgroupsBatchget): GaxiosPromise[SchemaBatchGetContactGroupsResponse] = js.native
   def batchGet(
     params: ParamsResourceContactgroupsBatchget,
@@ -60,6 +61,7 @@ class ResourceContactgroups protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaContactGroup] = js.native
   def create(callback: BodyResponseCallback[SchemaContactGroup]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContactGroup] = js.native
   def create(params: ParamsResourceContactgroupsCreate): GaxiosPromise[SchemaContactGroup] = js.native
   def create(params: ParamsResourceContactgroupsCreate, callback: BodyResponseCallback[SchemaContactGroup]): Unit = js.native
   def create(
@@ -89,6 +91,7 @@ class ResourceContactgroups protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceContactgroupsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceContactgroupsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -118,6 +121,7 @@ class ResourceContactgroups protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaContactGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaContactGroup]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContactGroup] = js.native
   def get(params: ParamsResourceContactgroupsGet): GaxiosPromise[SchemaContactGroup] = js.native
   def get(params: ParamsResourceContactgroupsGet, callback: BodyResponseCallback[SchemaContactGroup]): Unit = js.native
   def get(
@@ -148,6 +152,7 @@ class ResourceContactgroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListContactGroupsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListContactGroupsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListContactGroupsResponse] = js.native
   def list(params: ParamsResourceContactgroupsList): GaxiosPromise[SchemaListContactGroupsResponse] = js.native
   def list(
     params: ParamsResourceContactgroupsList,
@@ -180,6 +185,7 @@ class ResourceContactgroups protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaContactGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaContactGroup]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContactGroup] = js.native
   def update(params: ParamsResourceContactgroupsUpdate): GaxiosPromise[SchemaContactGroup] = js.native
   def update(params: ParamsResourceContactgroupsUpdate, callback: BodyResponseCallback[SchemaContactGroup]): Unit = js.native
   def update(

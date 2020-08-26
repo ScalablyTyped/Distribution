@@ -26,18 +26,38 @@ trait InstanceAssociation extends js.Object {
 
 object InstanceAssociation {
   @scala.inline
-  def apply(
-    AssociationId: AssociationId = null,
-    AssociationVersion: AssociationVersion = null,
-    Content: DocumentContent = null,
-    InstanceId: InstanceId = null
-  ): InstanceAssociation = {
+  def apply(): InstanceAssociation = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (AssociationVersion != null) __obj.updateDynamic("AssociationVersion")(AssociationVersion.asInstanceOf[js.Any])
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceAssociation]
   }
+  @scala.inline
+  implicit class InstanceAssociationOps[Self <: InstanceAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: AssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setAssociationVersion(value: AssociationVersion): Self = this.set("AssociationVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationVersion: Self = this.set("AssociationVersion", js.undefined)
+    @scala.inline
+    def setContent(value: DocumentContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+  }
+  
 }
 

@@ -1,11 +1,9 @@
 package typings.mobx.computedvalueMod
 
 import typings.mobx.coreObservableMod.IObservable
-import typings.mobx.derivationMod.IDerivation
 import typings.mobx.derivationMod.IDerivationState
 import typings.mobx.derivationMod.TraceMode
 import typings.mobx.internalMod.CaughtException
-import typings.std.Set
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,32 +30,13 @@ class ComputedValue[T] protected ()
   def this(options: IComputedValueOptions[T]) = this()
   var __mapid: String = js.native
   var dependenciesState: IDerivationState = js.native
-  /* CompleteClass */
-  override var diffValue: Double = js.native
   @JSName("equals")
   var equals_FComputedValue: js.Any = js.native
-  /* CompleteClass */
-  override var isBeingObserved: Boolean = js.native
   var isComputing: Boolean = js.native
-  /* CompleteClass */
-  override var isPendingUnobservation: Boolean = js.native
   var isRunningSetter: Boolean = js.native
   var isTracing: TraceMode = js.native
   var keepAlive: js.Any = js.native
-  /**
-    * Id of the derivation *run* that last accessed this observable.
-    * If this id equals the *run* id of the current derivation,
-    * the dependency is already established
-    */
-  /* CompleteClass */
-  override var lastAccessedBy: Double = js.native
-  /* CompleteClass */
-  override var lowestObserverState: IDerivationState = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   var newObserving: js.Array[IObservable] | Null = js.native
-  /* CompleteClass */
-  override var observers: Set[IDerivation] = js.native
   @JSName("observing")
   var observing_ComputedValue: js.Array[IObservable] = js.native
   /**
@@ -76,11 +55,7 @@ class ComputedValue[T] protected ()
   var value: js.UndefOr[T | CaughtException] = js.native
   def computeValue(track: Boolean): T | CaughtException = js.native
   def derivation(): T = js.native
-  /* CompleteClass */
-  override def onBecomeObserved(): Unit = js.native
   def onBecomeStale(): Unit = js.native
-  /* CompleteClass */
-  override def onBecomeUnobserved(): Unit = js.native
   def peek(): T = js.native
   def suspend(): Unit = js.native
   def toJSON(): T = js.native

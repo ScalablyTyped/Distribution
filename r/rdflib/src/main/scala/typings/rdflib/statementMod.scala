@@ -1,6 +1,5 @@
 package typings.rdflib
 
-import typings.rdflib.tfTypesMod.BaseQuad
 import typings.rdflib.tfTypesMod.DefaultGraph
 import typings.rdflib.tfTypesMod.Quad
 import typings.rdflib.tfTypesMod.QuadGraph
@@ -39,8 +38,7 @@ object statementMod extends js.Object {
     def toNT(): String = js.native
     /** Alias for graph, favored by Tim */
     def why: DefaultGraph | G = js.native
-    def why(g: G): js.Any = js.native
-    def why(g: DefaultGraph): js.Any = js.native
+    def why_=(g: DefaultGraph | G): Unit = js.native
   }
   
   @js.native
@@ -65,16 +63,6 @@ object statementMod extends js.Object {
     def this(subject: S, predicate: P, `object`: O) = this()
     def this(subject: S, predicate: P, `object`: O, graph: G) = this()
     def this(subject: S, predicate: P, `object`: O, graph: DefaultGraph) = this()
-    /* CompleteClass */
-    override var graph: G | DefaultGraph = js.native
-    /* CompleteClass */
-    override var `object`: O = js.native
-    /* CompleteClass */
-    override var predicate: P = js.native
-    /* CompleteClass */
-    override var subject: S = js.native
-    /* CompleteClass */
-    override def equals(other: BaseQuad): Boolean = js.native
   }
   
 }

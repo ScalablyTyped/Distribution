@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridIcons extends js.Object {
-  var collapseGroup: js.UndefOr[String] = js.undefined
-  var collapseRow: js.UndefOr[String] = js.undefined
-  var expandGroup: js.UndefOr[String] = js.undefined
-  var expandRow: js.UndefOr[String] = js.undefined
+  var collapseGroup: js.UndefOr[String] = js.native
+  var collapseRow: js.UndefOr[String] = js.native
+  var expandGroup: js.UndefOr[String] = js.native
+  var expandRow: js.UndefOr[String] = js.native
 }
 
 object GridIcons {
   @scala.inline
-  def apply(
-    collapseGroup: String = null,
-    collapseRow: String = null,
-    expandGroup: String = null,
-    expandRow: String = null
-  ): GridIcons = {
+  def apply(): GridIcons = {
     val __obj = js.Dynamic.literal()
-    if (collapseGroup != null) __obj.updateDynamic("collapseGroup")(collapseGroup.asInstanceOf[js.Any])
-    if (collapseRow != null) __obj.updateDynamic("collapseRow")(collapseRow.asInstanceOf[js.Any])
-    if (expandGroup != null) __obj.updateDynamic("expandGroup")(expandGroup.asInstanceOf[js.Any])
-    if (expandRow != null) __obj.updateDynamic("expandRow")(expandRow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridIcons]
   }
+  @scala.inline
+  implicit class GridIconsOps[Self <: GridIcons] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollapseGroup(value: String): Self = this.set("collapseGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseGroup: Self = this.set("collapseGroup", js.undefined)
+    @scala.inline
+    def setCollapseRow(value: String): Self = this.set("collapseRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapseRow: Self = this.set("collapseRow", js.undefined)
+    @scala.inline
+    def setExpandGroup(value: String): Self = this.set("expandGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandGroup: Self = this.set("expandGroup", js.undefined)
+    @scala.inline
+    def setExpandRow(value: String): Self = this.set("expandRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandRow: Self = this.set("expandRow", js.undefined)
+  }
+  
 }
 

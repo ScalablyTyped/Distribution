@@ -37,20 +37,44 @@ trait SchemaAdministrationRegion extends js.Object {
 
 object SchemaAdministrationRegion {
   @scala.inline
-  def apply(
-    electionAdministrationBody: SchemaAdministrativeBody = null,
-    id: String = null,
-    local_jurisdiction: SchemaAdministrationRegion = null,
-    name: String = null,
-    sources: js.Array[SchemaSource] = null
-  ): SchemaAdministrationRegion = {
+  def apply(): SchemaAdministrationRegion = {
     val __obj = js.Dynamic.literal()
-    if (electionAdministrationBody != null) __obj.updateDynamic("electionAdministrationBody")(electionAdministrationBody.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (local_jurisdiction != null) __obj.updateDynamic("local_jurisdiction")(local_jurisdiction.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sources != null) __obj.updateDynamic("sources")(sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdministrationRegion]
   }
+  @scala.inline
+  implicit class SchemaAdministrationRegionOps[Self <: SchemaAdministrationRegion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElectionAdministrationBody(value: SchemaAdministrativeBody): Self = this.set("electionAdministrationBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElectionAdministrationBody: Self = this.set("electionAdministrationBody", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLocal_jurisdiction(value: SchemaAdministrationRegion): Self = this.set("local_jurisdiction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocal_jurisdiction: Self = this.set("local_jurisdiction", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSourcesVarargs(value: SchemaSource*): Self = this.set("sources", js.Array(value :_*))
+    @scala.inline
+    def setSources(value: js.Array[SchemaSource]): Self = this.set("sources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSources: Self = this.set("sources", js.undefined)
+  }
+  
 }
 

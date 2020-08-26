@@ -34,22 +34,46 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe {
   @scala.inline
-  def apply(
-    blockSizeBytes: js.UndefOr[Double] = js.undefined,
-    compression: String = null,
-    enableDictionaryCompression: js.UndefOr[Boolean] = js.undefined,
-    maxPaddingBytes: js.UndefOr[Double] = js.undefined,
-    pageSizeBytes: js.UndefOr[Double] = js.undefined,
-    writerVersion: String = null
-  ): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe = {
+  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockSizeBytes)) __obj.updateDynamic("blockSizeBytes")(blockSizeBytes.get.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDictionaryCompression)) __obj.updateDynamic("enableDictionaryCompression")(enableDictionaryCompression.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxPaddingBytes)) __obj.updateDynamic("maxPaddingBytes")(maxPaddingBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSizeBytes)) __obj.updateDynamic("pageSizeBytes")(pageSizeBytes.get.asInstanceOf[js.Any])
-    if (writerVersion != null) __obj.updateDynamic("writerVersion")(writerVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeOps[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockSizeBytes(value: Double): Self = this.set("blockSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockSizeBytes: Self = this.set("blockSizeBytes", js.undefined)
+    @scala.inline
+    def setCompression(value: String): Self = this.set("compression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompression: Self = this.set("compression", js.undefined)
+    @scala.inline
+    def setEnableDictionaryCompression(value: Boolean): Self = this.set("enableDictionaryCompression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDictionaryCompression: Self = this.set("enableDictionaryCompression", js.undefined)
+    @scala.inline
+    def setMaxPaddingBytes(value: Double): Self = this.set("maxPaddingBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPaddingBytes: Self = this.set("maxPaddingBytes", js.undefined)
+    @scala.inline
+    def setPageSizeBytes(value: Double): Self = this.set("pageSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSizeBytes: Self = this.set("pageSizeBytes", js.undefined)
+    @scala.inline
+    def setWriterVersion(value: String): Self = this.set("writerVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriterVersion: Self = this.set("writerVersion", js.undefined)
+  }
+  
 }
 

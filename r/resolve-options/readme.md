@@ -12,7 +12,7 @@ Resolve an options object based on configuration.
 | Keywords           | options, functions, resolver, type, configuration, config, opts, opt, default |
 | # releases         | 1 |
 | # dependents       | 4 |
-| # downloads        | 32768703 |
+| # downloads        | 33630975 |
 | # stars            | 0 |
 
 ## Links

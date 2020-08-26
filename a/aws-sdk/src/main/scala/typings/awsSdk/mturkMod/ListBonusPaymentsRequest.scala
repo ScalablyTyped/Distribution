@@ -23,18 +23,38 @@ trait ListBonusPaymentsRequest extends js.Object {
 
 object ListBonusPaymentsRequest {
   @scala.inline
-  def apply(
-    AssignmentId: EntityId = null,
-    HITId: EntityId = null,
-    MaxResults: js.UndefOr[ResultSize] = js.undefined,
-    NextToken: PaginationToken = null
-  ): ListBonusPaymentsRequest = {
+  def apply(): ListBonusPaymentsRequest = {
     val __obj = js.Dynamic.literal()
-    if (AssignmentId != null) __obj.updateDynamic("AssignmentId")(AssignmentId.asInstanceOf[js.Any])
-    if (HITId != null) __obj.updateDynamic("HITId")(HITId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBonusPaymentsRequest]
   }
+  @scala.inline
+  implicit class ListBonusPaymentsRequestOps[Self <: ListBonusPaymentsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentId(value: EntityId): Self = this.set("AssignmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentId: Self = this.set("AssignmentId", js.undefined)
+    @scala.inline
+    def setHITId(value: EntityId): Self = this.set("HITId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHITId: Self = this.set("HITId", js.undefined)
+    @scala.inline
+    def setMaxResults(value: ResultSize): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

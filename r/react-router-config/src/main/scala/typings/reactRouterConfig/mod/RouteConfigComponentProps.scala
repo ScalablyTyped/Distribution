@@ -11,28 +11,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RouteConfigComponentProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ K in keyof Params ]:? string}
   */ typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with TopLevel[js.Any] */] extends RouteComponentProps[Params, StaticContext, LocationState] {
-  var route: js.UndefOr[RouteConfig] = js.undefined
+  var route: js.UndefOr[RouteConfig] = js.native
 }
 
 object RouteConfigComponentProps {
   @scala.inline
   def apply[/* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    * / typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with org.scalablytyped.runtime.TopLevel[js.Any] */ Params](
-    history: History[LocationState],
-    location: Location[LocationState],
-    `match`: `match`[Params],
-    route: RouteConfig = null,
-    staticContext: StaticContext = null
-  ): RouteConfigComponentProps[Params] = {
+    * / typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with org.scalablytyped.runtime.TopLevel[js.Any] */ Params](history: History[LocationState], location: Location[LocationState], `match`: `match`[Params]): RouteConfigComponentProps[Params] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
-    if (staticContext != null) __obj.updateDynamic("staticContext")(staticContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteConfigComponentProps[Params]]
   }
+  @scala.inline
+  implicit class RouteConfigComponentPropsOps[Self <: RouteConfigComponentProps[_], /* <: / * import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    * / typings.reactRouterConfig.reactRouterConfigStrings.RouteConfigComponentProps with org.scalablytyped.runtime.TopLevel[js.Any] */ Params] (val x: Self with RouteConfigComponentProps[Params]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoute(value: RouteConfig): Self = this.set("route", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute: Self = this.set("route", js.undefined)
+  }
+  
 }
 

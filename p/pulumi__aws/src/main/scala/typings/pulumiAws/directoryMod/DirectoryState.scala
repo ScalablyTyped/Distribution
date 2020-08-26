@@ -59,9 +59,9 @@ trait DirectoryState extends js.Object {
     */
   val size: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD` are accepted values). Defaults to `SimpleAD`.
     */
@@ -74,40 +74,84 @@ trait DirectoryState extends js.Object {
 
 object DirectoryState {
   @scala.inline
-  def apply(
-    accessUrl: Input[String] = null,
-    alias: Input[String] = null,
-    connectSettings: Input[DirectoryConnectSettings] = null,
-    description: Input[String] = null,
-    dnsIpAddresses: Input[js.Array[Input[String]]] = null,
-    edition: Input[String] = null,
-    enableSso: Input[Boolean] = null,
-    name: Input[String] = null,
-    password: Input[String] = null,
-    securityGroupId: Input[String] = null,
-    shortName: Input[String] = null,
-    size: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    `type`: Input[String] = null,
-    vpcSettings: Input[DirectoryVpcSettings] = null
-  ): DirectoryState = {
+  def apply(): DirectoryState = {
     val __obj = js.Dynamic.literal()
-    if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl.asInstanceOf[js.Any])
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (connectSettings != null) __obj.updateDynamic("connectSettings")(connectSettings.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dnsIpAddresses != null) __obj.updateDynamic("dnsIpAddresses")(dnsIpAddresses.asInstanceOf[js.Any])
-    if (edition != null) __obj.updateDynamic("edition")(edition.asInstanceOf[js.Any])
-    if (enableSso != null) __obj.updateDynamic("enableSso")(enableSso.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (securityGroupId != null) __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
-    if (shortName != null) __obj.updateDynamic("shortName")(shortName.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (vpcSettings != null) __obj.updateDynamic("vpcSettings")(vpcSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryState]
   }
+  @scala.inline
+  implicit class DirectoryStateOps[Self <: DirectoryState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessUrl(value: Input[String]): Self = this.set("accessUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessUrl: Self = this.set("accessUrl", js.undefined)
+    @scala.inline
+    def setAlias(value: Input[String]): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setConnectSettings(value: Input[DirectoryConnectSettings]): Self = this.set("connectSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectSettings: Self = this.set("connectSettings", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDnsIpAddressesVarargs(value: Input[String]*): Self = this.set("dnsIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setDnsIpAddresses(value: Input[js.Array[Input[String]]]): Self = this.set("dnsIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsIpAddresses: Self = this.set("dnsIpAddresses", js.undefined)
+    @scala.inline
+    def setEdition(value: Input[String]): Self = this.set("edition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdition: Self = this.set("edition", js.undefined)
+    @scala.inline
+    def setEnableSso(value: Input[Boolean]): Self = this.set("enableSso", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSso: Self = this.set("enableSso", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPassword(value: Input[String]): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setSecurityGroupId(value: Input[String]): Self = this.set("securityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupId: Self = this.set("securityGroupId", js.undefined)
+    @scala.inline
+    def setShortName(value: Input[String]): Self = this.set("shortName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortName: Self = this.set("shortName", js.undefined)
+    @scala.inline
+    def setSize(value: Input[String]): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVpcSettings(value: Input[DirectoryVpcSettings]): Self = this.set("vpcSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSettings: Self = this.set("vpcSettings", js.undefined)
+  }
+  
 }
 

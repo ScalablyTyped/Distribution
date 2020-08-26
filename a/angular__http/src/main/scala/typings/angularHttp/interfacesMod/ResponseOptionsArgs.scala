@@ -9,33 +9,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResponseOptionsArgs extends js.Object {
-  var body: js.UndefOr[String | js.Object | FormData | ArrayBuffer | Blob | Null] = js.undefined
-  var headers: js.UndefOr[Headers | Null] = js.undefined
-  var status: js.UndefOr[Double | Null] = js.undefined
-  var statusText: js.UndefOr[String | Null] = js.undefined
-  var `type`: js.UndefOr[ResponseType | Null] = js.undefined
-  var url: js.UndefOr[String | Null] = js.undefined
+  var body: js.UndefOr[String | js.Object | FormData | ArrayBuffer | Blob | Null] = js.native
+  var headers: js.UndefOr[Headers | Null] = js.native
+  var status: js.UndefOr[Double | Null] = js.native
+  var statusText: js.UndefOr[String | Null] = js.native
+  var `type`: js.UndefOr[ResponseType | Null] = js.native
+  var url: js.UndefOr[String | Null] = js.native
 }
 
 object ResponseOptionsArgs {
   @scala.inline
-  def apply(
-    body: js.UndefOr[Null | String | js.Object | FormData | ArrayBuffer | Blob] = js.undefined,
-    headers: js.UndefOr[Null | Headers] = js.undefined,
-    status: js.UndefOr[Null | Double] = js.undefined,
-    statusText: js.UndefOr[Null | String] = js.undefined,
-    `type`: js.UndefOr[Null | ResponseType] = js.undefined,
-    url: js.UndefOr[Null | String] = js.undefined
-  ): ResponseOptionsArgs = {
+  def apply(): ResponseOptionsArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusText)) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(url)) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOptionsArgs]
   }
+  @scala.inline
+  implicit class ResponseOptionsArgsOps[Self <: ResponseOptionsArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: String | js.Object | FormData | ArrayBuffer | Blob): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setBodyNull: Self = this.set("body", null)
+    @scala.inline
+    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHeadersNull: Self = this.set("headers", null)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusNull: Self = this.set("status", null)
+    @scala.inline
+    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusText: Self = this.set("statusText", js.undefined)
+    @scala.inline
+    def setStatusTextNull: Self = this.set("statusText", null)
+    @scala.inline
+    def setType(value: ResponseType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeNull: Self = this.set("type", null)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUrlNull: Self = this.set("url", null)
+  }
+  
 }
 

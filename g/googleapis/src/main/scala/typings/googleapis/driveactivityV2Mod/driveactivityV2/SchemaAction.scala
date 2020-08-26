@@ -36,20 +36,42 @@ trait SchemaAction extends js.Object {
 
 object SchemaAction {
   @scala.inline
-  def apply(
-    actor: SchemaActor = null,
-    detail: SchemaActionDetail = null,
-    target: SchemaTarget = null,
-    timeRange: SchemaTimeRange = null,
-    timestamp: String = null
-  ): SchemaAction = {
+  def apply(): SchemaAction = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAction]
   }
+  @scala.inline
+  implicit class SchemaActionOps[Self <: SchemaAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActor(value: SchemaActor): Self = this.set("actor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActor: Self = this.set("actor", js.undefined)
+    @scala.inline
+    def setDetail(value: SchemaActionDetail): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+    @scala.inline
+    def setTarget(value: SchemaTarget): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTimeRange(value: SchemaTimeRange): Self = this.set("timeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRange: Self = this.set("timeRange", js.undefined)
+    @scala.inline
+    def setTimestamp(value: String): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

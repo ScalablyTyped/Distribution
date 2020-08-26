@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("v2.4")
-  var v2Dot4: Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Analytics] = js.native
+  var v2Dot4: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Analytics] = js.native
   var v3: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.v3Mod.analyticsV3.Analytics
   ] = js.native
 }

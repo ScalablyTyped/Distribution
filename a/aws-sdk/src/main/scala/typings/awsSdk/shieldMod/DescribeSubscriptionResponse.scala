@@ -14,10 +14,26 @@ trait DescribeSubscriptionResponse extends js.Object {
 
 object DescribeSubscriptionResponse {
   @scala.inline
-  def apply(Subscription: Subscription = null): DescribeSubscriptionResponse = {
+  def apply(): DescribeSubscriptionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Subscription != null) __obj.updateDynamic("Subscription")(Subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSubscriptionResponse]
   }
+  @scala.inline
+  implicit class DescribeSubscriptionResponseOps[Self <: DescribeSubscriptionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubscription(value: Subscription): Self = this.set("Subscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscription: Self = this.set("Subscription", js.undefined)
+  }
+  
 }
 

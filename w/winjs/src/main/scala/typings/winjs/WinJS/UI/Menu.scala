@@ -118,6 +118,7 @@ trait Menu extends js.Object {
     * @param alignment For top or bottom placement, the alignment of the Menu to the anchor's edge: center, left, or right.
     **/
   def show(anchor: HTMLElement): Unit = js.native
+  def show(anchor: HTMLElement, placement: js.UndefOr[scala.Nothing], alignment: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String): Unit = js.native
   def show(anchor: HTMLElement, placement: String, alignment: String): Unit = js.native
   /**

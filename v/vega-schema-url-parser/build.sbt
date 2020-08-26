@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "vega-schema-url-parser"
-version := "1.1.0-fb3863"
-scalaVersion := "2.13.2"
+version := "1.1.0-9268c2"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

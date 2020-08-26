@@ -55,22 +55,46 @@ trait SchemaTurnBasedMatchParticipant extends js.Object {
 
 object SchemaTurnBasedMatchParticipant {
   @scala.inline
-  def apply(
-    autoMatched: js.UndefOr[Boolean] = js.undefined,
-    autoMatchedPlayer: SchemaAnonymousPlayer = null,
-    id: String = null,
-    kind: String = null,
-    player: SchemaPlayer = null,
-    status: String = null
-  ): SchemaTurnBasedMatchParticipant = {
+  def apply(): SchemaTurnBasedMatchParticipant = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched.get.asInstanceOf[js.Any])
-    if (autoMatchedPlayer != null) __obj.updateDynamic("autoMatchedPlayer")(autoMatchedPlayer.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTurnBasedMatchParticipant]
   }
+  @scala.inline
+  implicit class SchemaTurnBasedMatchParticipantOps[Self <: SchemaTurnBasedMatchParticipant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMatched(value: Boolean): Self = this.set("autoMatched", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatched: Self = this.set("autoMatched", js.undefined)
+    @scala.inline
+    def setAutoMatchedPlayer(value: SchemaAnonymousPlayer): Self = this.set("autoMatchedPlayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatchedPlayer: Self = this.set("autoMatchedPlayer", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlayer(value: SchemaPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayer: Self = this.set("player", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

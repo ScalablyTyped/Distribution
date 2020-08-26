@@ -30,15 +30,32 @@ trait PolicyStepAdjustment extends js.Object {
 
 object PolicyStepAdjustment {
   @scala.inline
-  def apply(
-    scalingAdjustment: Input[Double],
-    metricIntervalLowerBound: Input[String] = null,
-    metricIntervalUpperBound: Input[String] = null
-  ): PolicyStepAdjustment = {
+  def apply(scalingAdjustment: Input[Double]): PolicyStepAdjustment = {
     val __obj = js.Dynamic.literal(scalingAdjustment = scalingAdjustment.asInstanceOf[js.Any])
-    if (metricIntervalLowerBound != null) __obj.updateDynamic("metricIntervalLowerBound")(metricIntervalLowerBound.asInstanceOf[js.Any])
-    if (metricIntervalUpperBound != null) __obj.updateDynamic("metricIntervalUpperBound")(metricIntervalUpperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyStepAdjustment]
   }
+  @scala.inline
+  implicit class PolicyStepAdjustmentOps[Self <: PolicyStepAdjustment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScalingAdjustment(value: Input[Double]): Self = this.set("scalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricIntervalLowerBound(value: Input[String]): Self = this.set("metricIntervalLowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricIntervalLowerBound: Self = this.set("metricIntervalLowerBound", js.undefined)
+    @scala.inline
+    def setMetricIntervalUpperBound(value: Input[String]): Self = this.set("metricIntervalUpperBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricIntervalUpperBound: Self = this.set("metricIntervalUpperBound", js.undefined)
+  }
+  
 }
 

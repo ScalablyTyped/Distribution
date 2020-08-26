@@ -30,20 +30,42 @@ trait StackSetOperationSummary extends js.Object {
 
 object StackSetOperationSummary {
   @scala.inline
-  def apply(
-    Action: StackSetOperationAction = null,
-    CreationTimestamp: Timestamp = null,
-    EndTimestamp: Timestamp = null,
-    OperationId: ClientRequestToken = null,
-    Status: StackSetOperationStatus = null
-  ): StackSetOperationSummary = {
+  def apply(): StackSetOperationSummary = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (EndTimestamp != null) __obj.updateDynamic("EndTimestamp")(EndTimestamp.asInstanceOf[js.Any])
-    if (OperationId != null) __obj.updateDynamic("OperationId")(OperationId.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSetOperationSummary]
   }
+  @scala.inline
+  implicit class StackSetOperationSummaryOps[Self <: StackSetOperationSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: StackSetOperationAction): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: Timestamp): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setEndTimestamp(value: Timestamp): Self = this.set("EndTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTimestamp: Self = this.set("EndTimestamp", js.undefined)
+    @scala.inline
+    def setOperationId(value: ClientRequestToken): Self = this.set("OperationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("OperationId", js.undefined)
+    @scala.inline
+    def setStatus(value: StackSetOperationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

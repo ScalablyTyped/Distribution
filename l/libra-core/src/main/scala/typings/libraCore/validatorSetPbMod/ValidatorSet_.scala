@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValidatorSet_ () extends Message {
   def addValidatorPublicKeys(): ValidatorPublicKeys = js.native
+  def addValidatorPublicKeys(value: js.UndefOr[scala.Nothing], index: Double): ValidatorPublicKeys = js.native
   def addValidatorPublicKeys(value: ValidatorPublicKeys): ValidatorPublicKeys = js.native
   def addValidatorPublicKeys(value: ValidatorPublicKeys, index: Double): ValidatorPublicKeys = js.native
   def clearValidatorPublicKeysList(): Unit = js.native

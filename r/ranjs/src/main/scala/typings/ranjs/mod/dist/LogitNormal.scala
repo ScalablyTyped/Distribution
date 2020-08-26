@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class LogitNormal ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.LogitNormal] {
   def this(mu: Double) = this()
+  def this(mu: js.UndefOr[scala.Nothing], sigma: Double) = this()
   def this(mu: Double, sigma: Double) = this()
 }
 

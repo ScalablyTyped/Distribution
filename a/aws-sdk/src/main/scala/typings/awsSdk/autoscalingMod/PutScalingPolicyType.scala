@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PutScalingPolicyType extends js.Object {
   /**
-    * Specifies how the scaling adjustment is interpreted (either an absolute number or a percentage). The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity. Required if the policy type is StepScaling or SimpleScaling. For more information, see Scaling Adjustment Types in the Amazon EC2 Auto Scaling User Guide.
+    * Specifies how the scaling adjustment is interpreted (for example, an absolute number or a percentage). The valid values are ChangeInCapacity, ExactCapacity, and PercentChangeInCapacity. Required if the policy type is StepScaling or SimpleScaling. For more information, see Scaling Adjustment Types in the Amazon EC2 Auto Scaling User Guide.
     */
   var AdjustmentType: js.UndefOr[XmlStringMaxLen255] = js.native
   /**
@@ -62,34 +62,72 @@ trait PutScalingPolicyType extends js.Object {
 
 object PutScalingPolicyType {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: ResourceName,
-    PolicyName: XmlStringMaxLen255,
-    AdjustmentType: XmlStringMaxLen255 = null,
-    Cooldown: js.UndefOr[Cooldown] = js.undefined,
-    Enabled: js.UndefOr[ScalingPolicyEnabled] = js.undefined,
-    EstimatedInstanceWarmup: js.UndefOr[EstimatedInstanceWarmup] = js.undefined,
-    MetricAggregationType: XmlStringMaxLen32 = null,
-    MinAdjustmentMagnitude: js.UndefOr[MinAdjustmentMagnitude] = js.undefined,
-    MinAdjustmentStep: js.UndefOr[MinAdjustmentStep] = js.undefined,
-    PolicyType: XmlStringMaxLen64 = null,
-    ScalingAdjustment: js.UndefOr[PolicyIncrement] = js.undefined,
-    StepAdjustments: StepAdjustments = null,
-    TargetTrackingConfiguration: TargetTrackingConfiguration = null
-  ): PutScalingPolicyType = {
+  def apply(AutoScalingGroupName: ResourceName, PolicyName: XmlStringMaxLen255): PutScalingPolicyType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-    if (AdjustmentType != null) __obj.updateDynamic("AdjustmentType")(AdjustmentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(Cooldown)) __obj.updateDynamic("Cooldown")(Cooldown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedInstanceWarmup)) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.get.asInstanceOf[js.Any])
-    if (MetricAggregationType != null) __obj.updateDynamic("MetricAggregationType")(MetricAggregationType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinAdjustmentMagnitude)) __obj.updateDynamic("MinAdjustmentMagnitude")(MinAdjustmentMagnitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinAdjustmentStep)) __obj.updateDynamic("MinAdjustmentStep")(MinAdjustmentStep.get.asInstanceOf[js.Any])
-    if (PolicyType != null) __obj.updateDynamic("PolicyType")(PolicyType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScalingAdjustment)) __obj.updateDynamic("ScalingAdjustment")(ScalingAdjustment.get.asInstanceOf[js.Any])
-    if (StepAdjustments != null) __obj.updateDynamic("StepAdjustments")(StepAdjustments.asInstanceOf[js.Any])
-    if (TargetTrackingConfiguration != null) __obj.updateDynamic("TargetTrackingConfiguration")(TargetTrackingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutScalingPolicyType]
   }
+  @scala.inline
+  implicit class PutScalingPolicyTypeOps[Self <: PutScalingPolicyType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyName(value: XmlStringMaxLen255): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdjustmentType(value: XmlStringMaxLen255): Self = this.set("AdjustmentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustmentType: Self = this.set("AdjustmentType", js.undefined)
+    @scala.inline
+    def setCooldown(value: Cooldown): Self = this.set("Cooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCooldown: Self = this.set("Cooldown", js.undefined)
+    @scala.inline
+    def setEnabled(value: ScalingPolicyEnabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setEstimatedInstanceWarmup(value: EstimatedInstanceWarmup): Self = this.set("EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedInstanceWarmup: Self = this.set("EstimatedInstanceWarmup", js.undefined)
+    @scala.inline
+    def setMetricAggregationType(value: XmlStringMaxLen32): Self = this.set("MetricAggregationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricAggregationType: Self = this.set("MetricAggregationType", js.undefined)
+    @scala.inline
+    def setMinAdjustmentMagnitude(value: MinAdjustmentMagnitude): Self = this.set("MinAdjustmentMagnitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAdjustmentMagnitude: Self = this.set("MinAdjustmentMagnitude", js.undefined)
+    @scala.inline
+    def setMinAdjustmentStep(value: MinAdjustmentStep): Self = this.set("MinAdjustmentStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAdjustmentStep: Self = this.set("MinAdjustmentStep", js.undefined)
+    @scala.inline
+    def setPolicyType(value: XmlStringMaxLen64): Self = this.set("PolicyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyType: Self = this.set("PolicyType", js.undefined)
+    @scala.inline
+    def setScalingAdjustment(value: PolicyIncrement): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingAdjustment: Self = this.set("ScalingAdjustment", js.undefined)
+    @scala.inline
+    def setStepAdjustmentsVarargs(value: StepAdjustment*): Self = this.set("StepAdjustments", js.Array(value :_*))
+    @scala.inline
+    def setStepAdjustments(value: StepAdjustments): Self = this.set("StepAdjustments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepAdjustments: Self = this.set("StepAdjustments", js.undefined)
+    @scala.inline
+    def setTargetTrackingConfiguration(value: TargetTrackingConfiguration): Self = this.set("TargetTrackingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetTrackingConfiguration: Self = this.set("TargetTrackingConfiguration", js.undefined)
+  }
+  
 }
 

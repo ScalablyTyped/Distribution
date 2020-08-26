@@ -20,6 +20,7 @@ trait ExtensionSidebarPane extends js.Object {
     */
   def setExpression(expression: String): Unit = js.native
   def setExpression(expression: String, callback: js.Function0[Unit]): Unit = js.native
+  def setExpression(expression: String, rootTitle: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def setExpression(expression: String, rootTitle: String): Unit = js.native
   def setExpression(expression: String, rootTitle: String, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -37,6 +38,7 @@ trait ExtensionSidebarPane extends js.Object {
     */
   def setObject(jsonObject: js.Object): Unit = js.native
   def setObject(jsonObject: js.Object, callback: js.Function0[Unit]): Unit = js.native
+  def setObject(jsonObject: js.Object, rootTitle: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def setObject(jsonObject: js.Object, rootTitle: String): Unit = js.native
   def setObject(jsonObject: js.Object, rootTitle: String, callback: js.Function0[Unit]): Unit = js.native
   /**

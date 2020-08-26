@@ -38,24 +38,50 @@ trait MediaPlacement extends js.Object {
 
 object MediaPlacement {
   @scala.inline
-  def apply(
-    AudioFallbackUrl: UriType = null,
-    AudioHostUrl: UriType = null,
-    ScreenDataUrl: UriType = null,
-    ScreenSharingUrl: UriType = null,
-    ScreenViewingUrl: UriType = null,
-    SignalingUrl: UriType = null,
-    TurnControlUrl: UriType = null
-  ): MediaPlacement = {
+  def apply(): MediaPlacement = {
     val __obj = js.Dynamic.literal()
-    if (AudioFallbackUrl != null) __obj.updateDynamic("AudioFallbackUrl")(AudioFallbackUrl.asInstanceOf[js.Any])
-    if (AudioHostUrl != null) __obj.updateDynamic("AudioHostUrl")(AudioHostUrl.asInstanceOf[js.Any])
-    if (ScreenDataUrl != null) __obj.updateDynamic("ScreenDataUrl")(ScreenDataUrl.asInstanceOf[js.Any])
-    if (ScreenSharingUrl != null) __obj.updateDynamic("ScreenSharingUrl")(ScreenSharingUrl.asInstanceOf[js.Any])
-    if (ScreenViewingUrl != null) __obj.updateDynamic("ScreenViewingUrl")(ScreenViewingUrl.asInstanceOf[js.Any])
-    if (SignalingUrl != null) __obj.updateDynamic("SignalingUrl")(SignalingUrl.asInstanceOf[js.Any])
-    if (TurnControlUrl != null) __obj.updateDynamic("TurnControlUrl")(TurnControlUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlacement]
   }
+  @scala.inline
+  implicit class MediaPlacementOps[Self <: MediaPlacement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioFallbackUrl(value: UriType): Self = this.set("AudioFallbackUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioFallbackUrl: Self = this.set("AudioFallbackUrl", js.undefined)
+    @scala.inline
+    def setAudioHostUrl(value: UriType): Self = this.set("AudioHostUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioHostUrl: Self = this.set("AudioHostUrl", js.undefined)
+    @scala.inline
+    def setScreenDataUrl(value: UriType): Self = this.set("ScreenDataUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenDataUrl: Self = this.set("ScreenDataUrl", js.undefined)
+    @scala.inline
+    def setScreenSharingUrl(value: UriType): Self = this.set("ScreenSharingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenSharingUrl: Self = this.set("ScreenSharingUrl", js.undefined)
+    @scala.inline
+    def setScreenViewingUrl(value: UriType): Self = this.set("ScreenViewingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenViewingUrl: Self = this.set("ScreenViewingUrl", js.undefined)
+    @scala.inline
+    def setSignalingUrl(value: UriType): Self = this.set("SignalingUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignalingUrl: Self = this.set("SignalingUrl", js.undefined)
+    @scala.inline
+    def setTurnControlUrl(value: UriType): Self = this.set("TurnControlUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTurnControlUrl: Self = this.set("TurnControlUrl", js.undefined)
+  }
+  
 }
 

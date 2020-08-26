@@ -29,16 +29,34 @@ trait SchemaDimensionDimensionValue extends js.Object {
 
 object SchemaDimensionDimensionValue {
   @scala.inline
-  def apply(
-    id: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    percentage: js.UndefOr[Double] = js.undefined
-  ): SchemaDimensionDimensionValue = {
+  def apply(): SchemaDimensionDimensionValue = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDimensionDimensionValue]
   }
+  @scala.inline
+  implicit class SchemaDimensionDimensionValueOps[Self <: SchemaDimensionDimensionValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPercentage(value: Double): Self = this.set("percentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentage: Self = this.set("percentage", js.undefined)
+  }
+  
 }
 

@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InsertTableRequest extends js.Object {
-  var columns: js.UndefOr[Double] = js.undefined
-  var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.undefined
-  var location: js.UndefOr[Location] = js.undefined
-  var rows: js.UndefOr[Double] = js.undefined
+  var columns: js.UndefOr[Double] = js.native
+  var endOfSegmentLocation: js.UndefOr[EndOfSegmentLocation] = js.native
+  var location: js.UndefOr[Location] = js.native
+  var rows: js.UndefOr[Double] = js.native
 }
 
 object InsertTableRequest {
   @scala.inline
-  def apply(
-    columns: js.UndefOr[Double] = js.undefined,
-    endOfSegmentLocation: EndOfSegmentLocation = null,
-    location: Location = null,
-    rows: js.UndefOr[Double] = js.undefined
-  ): InsertTableRequest = {
+  def apply(): InsertTableRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (endOfSegmentLocation != null) __obj.updateDynamic("endOfSegmentLocation")(endOfSegmentLocation.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(rows)) __obj.updateDynamic("rows")(rows.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTableRequest]
   }
+  @scala.inline
+  implicit class InsertTableRequestOps[Self <: InsertTableRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = this.set("endOfSegmentLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOfSegmentLocation: Self = this.set("endOfSegmentLocation", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setRows(value: Double): Self = this.set("rows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRows: Self = this.set("rows", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,41 @@ trait DocumentationPartLocation extends js.Object {
 
 object DocumentationPartLocation {
   @scala.inline
-  def apply(
-    `type`: DocumentationPartType,
-    method: String = null,
-    name: String = null,
-    path: String = null,
-    statusCode: DocumentationPartLocationStatusCode = null
-  ): DocumentationPartLocation = {
+  def apply(`type`: DocumentationPartType): DocumentationPartLocation = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentationPartLocation]
   }
+  @scala.inline
+  implicit class DocumentationPartLocationOps[Self <: DocumentationPartLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: DocumentationPartType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setStatusCode(value: DocumentationPartLocationStatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

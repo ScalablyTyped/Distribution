@@ -35,6 +35,7 @@ class ResourceStats protected () extends js.Object {
     */
   def getIndex(): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
   def getIndex(callback: BodyResponseCallback[SchemaGetCustomerIndexStatsResponse]): Unit = js.native
+  def getIndex(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
   def getIndex(params: ParamsResourceStatsGetindex): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
   def getIndex(
     params: ParamsResourceStatsGetindex,

@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActiveSuggestion extends js.Object {
-  var activeSuggestion: js.UndefOr[String] = js.undefined
-  var remove: js.UndefOr[String] = js.undefined
-  var selected: js.UndefOr[String] = js.undefined
-  var suggestions: js.UndefOr[String] = js.undefined
-  var tag: js.UndefOr[String] = js.undefined
-  var tagInput: js.UndefOr[String] = js.undefined
-  var tagInputField: js.UndefOr[String] = js.undefined
-  var tags: js.UndefOr[String] = js.undefined
+  var activeSuggestion: js.UndefOr[String] = js.native
+  var remove: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.native
+  var suggestions: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.native
+  var tagInput: js.UndefOr[String] = js.native
+  var tagInputField: js.UndefOr[String] = js.native
+  var tags: js.UndefOr[String] = js.native
 }
 
 object ActiveSuggestion {
   @scala.inline
-  def apply(
-    activeSuggestion: String = null,
-    remove: String = null,
-    selected: String = null,
-    suggestions: String = null,
-    tag: String = null,
-    tagInput: String = null,
-    tagInputField: String = null,
-    tags: String = null
-  ): ActiveSuggestion = {
+  def apply(): ActiveSuggestion = {
     val __obj = js.Dynamic.literal()
-    if (activeSuggestion != null) __obj.updateDynamic("activeSuggestion")(activeSuggestion.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (suggestions != null) __obj.updateDynamic("suggestions")(suggestions.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (tagInput != null) __obj.updateDynamic("tagInput")(tagInput.asInstanceOf[js.Any])
-    if (tagInputField != null) __obj.updateDynamic("tagInputField")(tagInputField.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveSuggestion]
   }
+  @scala.inline
+  implicit class ActiveSuggestionOps[Self <: ActiveSuggestion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveSuggestion(value: String): Self = this.set("activeSuggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveSuggestion: Self = this.set("activeSuggestion", js.undefined)
+    @scala.inline
+    def setRemove(value: String): Self = this.set("remove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setSelected(value: String): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setSuggestions(value: String): Self = this.set("suggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestions: Self = this.set("suggestions", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTagInput(value: String): Self = this.set("tagInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagInput: Self = this.set("tagInput", js.undefined)
+    @scala.inline
+    def setTagInputField(value: String): Self = this.set("tagInputField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagInputField: Self = this.set("tagInputField", js.undefined)
+    @scala.inline
+    def setTags(value: String): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

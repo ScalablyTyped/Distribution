@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sdb.Connection
   * @since OOo 2.2
   */
+@js.native
 trait XTableUIProvider extends js.Object {
   /**
     * returns a component which can be used to edit the definition of an existing table.
@@ -20,7 +21,7 @@ trait XTableUIProvider extends js.Object {
     * @throws com::sun::star::lang::IllegalArgumentException if the given TableName does not denote an existing table
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs while creating the table editor component.
     */
-  def getTableEditor(DocumentUI: XDatabaseDocumentUI, TableName: String): XInterface
+  def getTableEditor(DocumentUI: XDatabaseDocumentUI, TableName: String): XInterface = js.native
   /**
     * provides the icon which should be used to represent the table in the database application window.
     *
@@ -30,7 +31,7 @@ trait XTableUIProvider extends js.Object {
     * @param ColorMode denotes the color mode of the graphic to retrieve, being one of the {@link com.sun.star.graphic.GraphicColorMode} constants.
     * @returns the icon which should be used to represent the table in the database application window, or `NULL` if the default icon should be used.
     */
-  def getTableIcon(TableName: String, ColorMode: Double): XGraphic
+  def getTableIcon(TableName: String, ColorMode: Double): XGraphic = js.native
 }
 
 object XTableUIProvider {
@@ -42,5 +43,22 @@ object XTableUIProvider {
     val __obj = js.Dynamic.literal(getTableEditor = js.Any.fromFunction2(getTableEditor), getTableIcon = js.Any.fromFunction2(getTableIcon))
     __obj.asInstanceOf[XTableUIProvider]
   }
+  @scala.inline
+  implicit class XTableUIProviderOps[Self <: XTableUIProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetTableEditor(value: (XDatabaseDocumentUI, String) => XInterface): Self = this.set("getTableEditor", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetTableIcon(value: (String, Double) => XGraphic): Self = this.set("getTableIcon", js.Any.fromFunction2(value))
+  }
+  
 }
 

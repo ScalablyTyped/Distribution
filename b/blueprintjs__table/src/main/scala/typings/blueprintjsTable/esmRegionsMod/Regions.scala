@@ -36,6 +36,7 @@ object Regions extends js.Object {
     * Returns a region containing one or more cells.
     */
   def cell(row: Double, col: Double): IRegion = js.native
+  def cell(row: Double, col: Double, row2: js.UndefOr[scala.Nothing], col2: Double): IRegion = js.native
   def cell(row: Double, col: Double, row2: Double): IRegion = js.native
   def cell(row: Double, col: Double, row2: Double, col2: Double): IRegion = js.native
   /**

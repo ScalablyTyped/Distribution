@@ -35,7 +35,7 @@ Instantiable1[
     ]
      with Instantiable3[
       /* player */ typings.videoJs.mod.videojs.Player, 
-      /* options */ ComponentOptions, 
+      js.UndefOr[/* options */ ComponentOptions], 
       /* ready */ ReadyCallback, 
       typings.videoJs.mod.videojs.CustomControlSpacer
     ]

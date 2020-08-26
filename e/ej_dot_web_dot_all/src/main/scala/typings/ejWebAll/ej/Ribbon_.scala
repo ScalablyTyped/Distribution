@@ -50,6 +50,13 @@ trait Ribbon_ extends Widget_ {
     * @returns {void}
     */
   def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any): Unit = js.native
+  def addTabGroupContent(
+    tabIndex: Double,
+    groupIndex: Double,
+    content: js.Any,
+    contentIndex: js.UndefOr[scala.Nothing],
+    subGroupIndex: Double
+  ): Unit = js.native
   def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Double): Unit = js.native
   def addTabGroupContent(tabIndex: Double, groupIndex: Double, content: js.Any, contentIndex: Double, subGroupIndex: Double): Unit = js.native
   /** Collapses the ribbon tab content.
@@ -102,6 +109,12 @@ trait Ribbon_ extends Widget_ {
     * @returns {void}
     */
   def removeTabGroupContent(tabIndex: Double, groupText: String): Unit = js.native
+  def removeTabGroupContent(
+    tabIndex: Double,
+    groupText: String,
+    contentIndex: js.UndefOr[scala.Nothing],
+    subGroupIndex: Double
+  ): Unit = js.native
   def removeTabGroupContent(tabIndex: Double, groupText: String, contentIndex: Double): Unit = js.native
   def removeTabGroupContent(tabIndex: Double, groupText: String, contentIndex: Double, subGroupIndex: Double): Unit = js.native
   /** Sets new text to the given text tab in the ribbon control.

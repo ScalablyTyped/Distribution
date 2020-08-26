@@ -12,7 +12,7 @@ Simple plugin providing to use fonts as rating
 | Keywords           | rating, font, askmethat, plugin, font-awesome, glyphicon |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 903 |
+| # downloads        | 872 |
 | # stars            | 0 |
 
 ## Links

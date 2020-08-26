@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "level-codec"
-version := "9.0-dt-20200515Z-1953af"
-scalaVersion := "2.13.2"
+version := "9.0-dt-20200515Z-9c6e26"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

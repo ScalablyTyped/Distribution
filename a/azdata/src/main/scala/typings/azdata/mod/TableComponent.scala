@@ -24,6 +24,11 @@ trait TableComponent extends Component {
   var title: js.UndefOr[String] = js.native
   var updateCells: js.UndefOr[js.Array[TableCell]] = js.native
   def onRowSelected(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+  def onRowSelected(
+    listener: js.Function1[/* e */ js.Any, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onRowSelected(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
   def onRowSelected(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
 }

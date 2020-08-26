@@ -11,13 +11,13 @@ trait DevicesObject extends js.Object {
   /** @name DevicesObject.current(deviceName) */
   def current(deviceName: String): Unit = js.native
   def current(deviceName: Device): Unit = js.native
-  /** @name EventsMixin.off(eventName) */
+  /** @name DevicesObject.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** @name EventsMixin.off(eventName, eventHandler) */
+  /** @name DevicesObject.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(eventName, eventHandler) */
+  /** @name DevicesObject.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(events) */
+  /** @name DevicesObject.on(events) */
   def on(events: js.Any): this.type = js.native
   /** @name DevicesObject.orientation() */
   def orientation(): String = js.native

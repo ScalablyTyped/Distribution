@@ -30,12 +30,38 @@ trait CreateMeshInput extends js.Object {
 
 object CreateMeshInput {
   @scala.inline
-  def apply(meshName: ResourceName, clientToken: String = null, spec: MeshSpec = null, tags: TagList = null): CreateMeshInput = {
+  def apply(meshName: ResourceName): CreateMeshInput = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMeshInput]
   }
+  @scala.inline
+  implicit class CreateMeshInputOps[Self <: CreateMeshInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeshName(value: ResourceName): Self = this.set("meshName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setSpec(value: MeshSpec): Self = this.set("spec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpec: Self = this.set("spec", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: TagRef*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

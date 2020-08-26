@@ -18,11 +18,30 @@ trait GetAppsRequest extends js.Object {
 
 object GetAppsRequest {
   @scala.inline
-  def apply(PageSize: string = null, Token: string = null): GetAppsRequest = {
+  def apply(): GetAppsRequest = {
     val __obj = js.Dynamic.literal()
-    if (PageSize != null) __obj.updateDynamic("PageSize")(PageSize.asInstanceOf[js.Any])
-    if (Token != null) __obj.updateDynamic("Token")(Token.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAppsRequest]
   }
+  @scala.inline
+  implicit class GetAppsRequestOps[Self <: GetAppsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPageSize(value: string): Self = this.set("PageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("PageSize", js.undefined)
+    @scala.inline
+    def setToken(value: string): Self = this.set("Token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("Token", js.undefined)
+  }
+  
 }
 

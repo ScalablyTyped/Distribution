@@ -27,7 +27,7 @@ object mod extends js.Object {
   def attrsEqual(a: typings.ltx.elementMod.Element, b: typings.ltx.elementMod.Element): Boolean = js.native
   def childrenEqual(a: typings.ltx.elementMod.Element, b: typings.ltx.elementMod.Element): Boolean = js.native
   def clone[T /* <: typings.ltx.elementMod.Element */](el: T): T = js.native
-  def createElement(name: String): typings.ltx.elementMod.Element = js.native
+  def createElement(name: String, attrs: js.UndefOr[scala.Nothing], children: Node*): typings.ltx.elementMod.Element = js.native
   def createElement(name: String, attrs: String, children: Node*): typings.ltx.elementMod.Element = js.native
   def createElement(name: String, attrs: StringDictionary[js.Any], children: Node*): typings.ltx.elementMod.Element = js.native
   def equal(a: typings.ltx.elementMod.Element, b: typings.ltx.elementMod.Element): Boolean = js.native
@@ -41,6 +41,7 @@ object mod extends js.Object {
   def parse(data: String, options: typings.ltx.parserMod.Parser): typings.ltx.elementMod.Element = js.native
   def parse(data: String, options: ParserOptions): typings.ltx.elementMod.Element = js.native
   def stringify(el: typings.ltx.elementMod.Element): String = js.native
+  def stringify(el: typings.ltx.elementMod.Element, indent: js.UndefOr[scala.Nothing], level: Double): String = js.native
   def stringify(el: typings.ltx.elementMod.Element, indent: Double): String = js.native
   def stringify(el: typings.ltx.elementMod.Element, indent: Double, level: Double): String = js.native
   def tag(literals: js.Array[String], substitutions: String*): typings.ltx.elementMod.Element = js.native

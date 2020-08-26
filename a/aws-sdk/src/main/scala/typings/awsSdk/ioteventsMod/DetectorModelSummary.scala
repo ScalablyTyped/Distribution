@@ -22,16 +22,34 @@ trait DetectorModelSummary extends js.Object {
 
 object DetectorModelSummary {
   @scala.inline
-  def apply(
-    creationTime: Timestamp = null,
-    detectorModelDescription: DetectorModelDescription = null,
-    detectorModelName: DetectorModelName = null
-  ): DetectorModelSummary = {
+  def apply(): DetectorModelSummary = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (detectorModelDescription != null) __obj.updateDynamic("detectorModelDescription")(detectorModelDescription.asInstanceOf[js.Any])
-    if (detectorModelName != null) __obj.updateDynamic("detectorModelName")(detectorModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorModelSummary]
   }
+  @scala.inline
+  implicit class DetectorModelSummaryOps[Self <: DetectorModelSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDetectorModelDescription(value: DetectorModelDescription): Self = this.set("detectorModelDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelDescription: Self = this.set("detectorModelDescription", js.undefined)
+    @scala.inline
+    def setDetectorModelName(value: DetectorModelName): Self = this.set("detectorModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorModelName: Self = this.set("detectorModelName", js.undefined)
+  }
+  
 }
 

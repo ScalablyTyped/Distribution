@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * A delegate object that controls a GeoJSON import in order to override
   * default behavior and provide custom style.
   */
+@js.native
 trait GeoJSONDelegate extends js.Object {
   /**
     * Completes the GeoJSON import.
@@ -16,14 +17,14 @@ trait GeoJSONDelegate extends js.Object {
     * @param result The mapped item collection.
     * @param geoJSON The original parsed GeoJSON object.
     */
-  var geoJSONDidComplete: js.UndefOr[js.Function2[/* result */ ItemCollection, /* geoJSON */ js.Object, Unit]] = js.undefined
+  var geoJSONDidComplete: js.UndefOr[js.Function2[/* result */ ItemCollection, /* geoJSON */ js.Object, Unit]] = js.native
   /**
     * Indicates the GeoJSON import failed.
     *
     * @param error An Error instance related to the last blocking error.
     * @param geoJSON The original parsed GeoJSON object.
     */
-  var geoJSONDidError: js.UndefOr[js.Function2[/* error */ Error, /* geoJSON */ js.Object, Unit]] = js.undefined
+  var geoJSONDidError: js.UndefOr[js.Function2[/* error */ Error, /* geoJSON */ js.Object, Unit]] = js.native
   /**
     * Overrides a feature.
     *
@@ -37,7 +38,7 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a feature collection.
     *
@@ -52,7 +53,7 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a line string.
     *
@@ -65,7 +66,7 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a multiline string.
     *
@@ -79,7 +80,7 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a multipoint object.
     *
@@ -93,7 +94,7 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a multipolygon.
     *
@@ -107,7 +108,7 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a point.
     *
@@ -118,7 +119,7 @@ trait GeoJSONDelegate extends js.Object {
     */
   var itemForPoint: js.UndefOr[
     js.Function2[/* coordinate */ Coordinate, /* geoJSON */ js.Object, js.Array[Annotation | Overlay]]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides a polygon.
     *
@@ -132,44 +133,92 @@ trait GeoJSONDelegate extends js.Object {
       /* geoJSON */ js.Object, 
       Annotation | Overlay | (js.Array[Annotation | Overlay])
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Overrides the style of overlays.
     *
     * @param overlay The overlay to style.
     * @param geoJSON The original GeoJSON for this feature or geometry object.
     */
-  var styleForOverlay: js.UndefOr[js.Function2[/* overlay */ Overlay, /* geoJSON */ js.Object, Style]] = js.undefined
+  var styleForOverlay: js.UndefOr[js.Function2[/* overlay */ Overlay, /* geoJSON */ js.Object, Style]] = js.native
 }
 
 object GeoJSONDelegate {
   @scala.inline
-  def apply(
-    geoJSONDidComplete: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit = null,
-    geoJSONDidError: (/* error */ Error, /* geoJSON */ js.Object) => Unit = null,
-    itemForFeature: (/* item */ Annotation | Overlay | Null, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    itemForFeatureCollection: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    itemForLineString: (/* overlay */ PolylineOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    itemForMultiLineString: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    itemForMultiPoint: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    itemForMultiPolygon: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    itemForPoint: (/* coordinate */ Coordinate, /* geoJSON */ js.Object) => js.Array[Annotation | Overlay] = null,
-    itemForPolygon: (/* overlay */ PolygonOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay]) = null,
-    styleForOverlay: (/* overlay */ Overlay, /* geoJSON */ js.Object) => Style = null
-  ): GeoJSONDelegate = {
+  def apply(): GeoJSONDelegate = {
     val __obj = js.Dynamic.literal()
-    if (geoJSONDidComplete != null) __obj.updateDynamic("geoJSONDidComplete")(js.Any.fromFunction2(geoJSONDidComplete))
-    if (geoJSONDidError != null) __obj.updateDynamic("geoJSONDidError")(js.Any.fromFunction2(geoJSONDidError))
-    if (itemForFeature != null) __obj.updateDynamic("itemForFeature")(js.Any.fromFunction2(itemForFeature))
-    if (itemForFeatureCollection != null) __obj.updateDynamic("itemForFeatureCollection")(js.Any.fromFunction2(itemForFeatureCollection))
-    if (itemForLineString != null) __obj.updateDynamic("itemForLineString")(js.Any.fromFunction2(itemForLineString))
-    if (itemForMultiLineString != null) __obj.updateDynamic("itemForMultiLineString")(js.Any.fromFunction2(itemForMultiLineString))
-    if (itemForMultiPoint != null) __obj.updateDynamic("itemForMultiPoint")(js.Any.fromFunction2(itemForMultiPoint))
-    if (itemForMultiPolygon != null) __obj.updateDynamic("itemForMultiPolygon")(js.Any.fromFunction2(itemForMultiPolygon))
-    if (itemForPoint != null) __obj.updateDynamic("itemForPoint")(js.Any.fromFunction2(itemForPoint))
-    if (itemForPolygon != null) __obj.updateDynamic("itemForPolygon")(js.Any.fromFunction2(itemForPolygon))
-    if (styleForOverlay != null) __obj.updateDynamic("styleForOverlay")(js.Any.fromFunction2(styleForOverlay))
     __obj.asInstanceOf[GeoJSONDelegate]
   }
+  @scala.inline
+  implicit class GeoJSONDelegateOps[Self <: GeoJSONDelegate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeoJSONDidComplete(value: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit): Self = this.set("geoJSONDidComplete", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGeoJSONDidComplete: Self = this.set("geoJSONDidComplete", js.undefined)
+    @scala.inline
+    def setGeoJSONDidError(value: (/* error */ Error, /* geoJSON */ js.Object) => Unit): Self = this.set("geoJSONDidError", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGeoJSONDidError: Self = this.set("geoJSONDidError", js.undefined)
+    @scala.inline
+    def setItemForFeature(
+      value: (/* item */ Annotation | Overlay | Null, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForFeature", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForFeature: Self = this.set("itemForFeature", js.undefined)
+    @scala.inline
+    def setItemForFeatureCollection(
+      value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForFeatureCollection", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForFeatureCollection: Self = this.set("itemForFeatureCollection", js.undefined)
+    @scala.inline
+    def setItemForLineString(
+      value: (/* overlay */ PolylineOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForLineString", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForLineString: Self = this.set("itemForLineString", js.undefined)
+    @scala.inline
+    def setItemForMultiLineString(
+      value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForMultiLineString", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForMultiLineString: Self = this.set("itemForMultiLineString", js.undefined)
+    @scala.inline
+    def setItemForMultiPoint(
+      value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForMultiPoint", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForMultiPoint: Self = this.set("itemForMultiPoint", js.undefined)
+    @scala.inline
+    def setItemForMultiPolygon(
+      value: (/* itemCollection */ ItemCollection, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForMultiPolygon", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForMultiPolygon: Self = this.set("itemForMultiPolygon", js.undefined)
+    @scala.inline
+    def setItemForPoint(value: (/* coordinate */ Coordinate, /* geoJSON */ js.Object) => js.Array[Annotation | Overlay]): Self = this.set("itemForPoint", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForPoint: Self = this.set("itemForPoint", js.undefined)
+    @scala.inline
+    def setItemForPolygon(
+      value: (/* overlay */ PolygonOverlay, /* geoJSON */ js.Object) => Annotation | Overlay | (js.Array[Annotation | Overlay])
+    ): Self = this.set("itemForPolygon", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteItemForPolygon: Self = this.set("itemForPolygon", js.undefined)
+    @scala.inline
+    def setStyleForOverlay(value: (/* overlay */ Overlay, /* geoJSON */ js.Object) => Style): Self = this.set("styleForOverlay", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStyleForOverlay: Self = this.set("styleForOverlay", js.undefined)
+  }
+  
 }
 

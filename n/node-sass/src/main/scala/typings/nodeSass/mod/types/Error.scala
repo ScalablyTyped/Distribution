@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Error
   extends ReturnValue
      with _ImporterReturnType {
@@ -15,7 +16,7 @@ trait Error
     * allow things that aren't types.Error to match it in case statements and
     * assignments.
     */
-  val ___SASS_ERROR___ : js.Symbol
+  val ___SASS_ERROR___ : js.Symbol = js.native
 }
 
 @JSImport("node-sass", "types.Error")

@@ -30,7 +30,7 @@ object youtubeMod extends js.Object {
     @js.native
     object v3
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Youtube]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Youtube]
             ]
     
   }

@@ -31,6 +31,7 @@ class ResourceLayersVolumeannotations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVolumeannotation] = js.native
   def get(callback: BodyResponseCallback[SchemaVolumeannotation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumeannotation] = js.native
   def get(params: ParamsResourceLayersVolumeannotationsGet): GaxiosPromise[SchemaVolumeannotation] = js.native
   def get(
     params: ParamsResourceLayersVolumeannotationsGet,
@@ -75,6 +76,7 @@ class ResourceLayersVolumeannotations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVolumeannotations] = js.native
   def list(callback: BodyResponseCallback[SchemaVolumeannotations]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVolumeannotations] = js.native
   def list(params: ParamsResourceLayersVolumeannotationsList): GaxiosPromise[SchemaVolumeannotations] = js.native
   def list(
     params: ParamsResourceLayersVolumeannotationsList,

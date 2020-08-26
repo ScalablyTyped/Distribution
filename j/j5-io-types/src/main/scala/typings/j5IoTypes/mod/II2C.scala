@@ -14,6 +14,7 @@ trait II2C extends IPeripheral {
   def readByteSync(address: Double): Double = js.native
   def readByteSync(address: Double, register: Double): Double = js.native
   def readSync(address: Double): Buffer = js.native
+  def readSync(address: Double, registerOrLength: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def readSync(address: Double, registerOrLength: Double): Buffer = js.native
   def readSync(address: Double, registerOrLength: Double, length: Double): Buffer = js.native
   def readWord(address: Double, cb: I2CReadNumberCallback): Unit = js.native

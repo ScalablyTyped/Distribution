@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait BitArrayStatic extends js.Object {
   /// Shift an array right.
   def _shiftRight(a: BitArray_, shift: Double): BitArray_ = js.native
+  def _shiftRight(a: BitArray_, shift: Double, carry: js.UndefOr[scala.Nothing], out: BitArray_): BitArray_ = js.native
   def _shiftRight(a: BitArray_, shift: Double, carry: Double): BitArray_ = js.native
   def _shiftRight(a: BitArray_, shift: Double, carry: Double, out: BitArray_): BitArray_ = js.native
   /// xor a block of 4 words together.

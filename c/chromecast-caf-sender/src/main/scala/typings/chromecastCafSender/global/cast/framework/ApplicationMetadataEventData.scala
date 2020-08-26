@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 class ApplicationMetadataEventData protected ()
   extends typings.chromecastCafSender.cast.framework.ApplicationMetadataEventData {
   def this(metadata: typings.chromecastCafSender.cast.framework.ApplicationMetadata) = this()
-  /* CompleteClass */
-  override var metadata: typings.chromecastCafSender.cast.framework.ApplicationMetadata = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
 }
 

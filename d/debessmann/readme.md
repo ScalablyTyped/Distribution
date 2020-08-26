@@ -12,7 +12,7 @@ SDK for sending events to debessmann
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 134 |
+| # downloads        | 132 |
 | # stars            | 0 |
 
 ## Links

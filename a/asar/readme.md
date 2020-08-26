@@ -1,7 +1,7 @@
 
 # Scala.js typings for asar
 
-Typings are for version 2.1.0
+Typings are for version 3.0.3
 
 ## Library description:
 Creating Electron app packages
@@ -10,9 +10,9 @@ Creating Electron app packages
 | ------------------ | :-------------: |
 | Full name          | asar |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 85 |
-| # downloads        | 6430132 |
+| # releases         | 13 |
+| # dependents       | 95 |
+| # downloads        | 9501413 |
 | # stars            | 15 |
 
 ## Links

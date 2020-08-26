@@ -26,17 +26,36 @@ trait UpdateFleetCapacityInput extends js.Object {
 
 object UpdateFleetCapacityInput {
   @scala.inline
-  def apply(
-    FleetId: FleetIdOrArn,
-    DesiredInstances: js.UndefOr[WholeNumber] = js.undefined,
-    MaxSize: js.UndefOr[WholeNumber] = js.undefined,
-    MinSize: js.UndefOr[WholeNumber] = js.undefined
-  ): UpdateFleetCapacityInput = {
+  def apply(FleetId: FleetIdOrArn): UpdateFleetCapacityInput = {
     val __obj = js.Dynamic.literal(FleetId = FleetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredInstances)) __obj.updateDynamic("DesiredInstances")(DesiredInstances.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSize)) __obj.updateDynamic("MaxSize")(MaxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinSize)) __obj.updateDynamic("MinSize")(MinSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFleetCapacityInput]
   }
+  @scala.inline
+  implicit class UpdateFleetCapacityInputOps[Self <: UpdateFleetCapacityInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesiredInstances(value: WholeNumber): Self = this.set("DesiredInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredInstances: Self = this.set("DesiredInstances", js.undefined)
+    @scala.inline
+    def setMaxSize(value: WholeNumber): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("MaxSize", js.undefined)
+    @scala.inline
+    def setMinSize(value: WholeNumber): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("MinSize", js.undefined)
+  }
+  
 }
 

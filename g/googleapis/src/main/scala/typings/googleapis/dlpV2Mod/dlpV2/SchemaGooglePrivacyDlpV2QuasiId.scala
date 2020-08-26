@@ -36,18 +36,38 @@ trait SchemaGooglePrivacyDlpV2QuasiId extends js.Object {
 
 object SchemaGooglePrivacyDlpV2QuasiId {
   @scala.inline
-  def apply(
-    customTag: String = null,
-    field: SchemaGooglePrivacyDlpV2FieldId = null,
-    inferred: SchemaGoogleProtobufEmpty = null,
-    infoType: SchemaGooglePrivacyDlpV2InfoType = null
-  ): SchemaGooglePrivacyDlpV2QuasiId = {
+  def apply(): SchemaGooglePrivacyDlpV2QuasiId = {
     val __obj = js.Dynamic.literal()
-    if (customTag != null) __obj.updateDynamic("customTag")(customTag.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (inferred != null) __obj.updateDynamic("inferred")(inferred.asInstanceOf[js.Any])
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2QuasiId]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2QuasiIdOps[Self <: SchemaGooglePrivacyDlpV2QuasiId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomTag(value: String): Self = this.set("customTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomTag: Self = this.set("customTag", js.undefined)
+    @scala.inline
+    def setField(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setInferred(value: SchemaGoogleProtobufEmpty): Self = this.set("inferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInferred: Self = this.set("inferred", js.undefined)
+    @scala.inline
+    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoType: Self = this.set("infoType", js.undefined)
+  }
+  
 }
 

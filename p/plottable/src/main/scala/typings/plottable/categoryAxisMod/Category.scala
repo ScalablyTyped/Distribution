@@ -76,6 +76,7 @@ class Category protected () extends Axis[String] {
     * @return {DownsampleInfo} an object holding the resultant domain and new stepWidth.
     */
   def getDownsampleInfo(): IDownsampleInfo = js.native
+  def getDownsampleInfo(scale: js.UndefOr[scala.Nothing], domain: js.Array[String]): IDownsampleInfo = js.native
   def getDownsampleInfo(scale: typings.plottable.scalesMod.Category): IDownsampleInfo = js.native
   def getDownsampleInfo(scale: typings.plottable.scalesMod.Category, domain: js.Array[String]): IDownsampleInfo = js.native
   /**

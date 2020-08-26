@@ -6,12 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** makes it possible to move a cursor word by word. */
+@js.native
 trait XWordCursor extends XTextCursor {
   /**
     * moves the cursor to the end of the current word.
     * @returns `TRUE` if the cursor is now at the end of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfWord(bExpand: Boolean): Boolean
+  def gotoEndOfWord(bExpand: Boolean): Boolean = js.native
   /**
     * moves the cursor to the next word.
     *
@@ -19,7 +20,7 @@ trait XWordCursor extends XTextCursor {
     * example if it travels over empty paragraphs.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextWord(bExpand: Boolean): Boolean
+  def gotoNextWord(bExpand: Boolean): Boolean = js.native
   /**
     * moves the cursor to the previous word.
     *
@@ -27,16 +28,16 @@ trait XWordCursor extends XTextCursor {
     * example if it travels over empty paragraphs.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousWord(bExpand: Boolean): Boolean
+  def gotoPreviousWord(bExpand: Boolean): Boolean = js.native
   /**
     * moves the cursor to the start of the current word.
     * @returns `TRUE` if the cursor is now at the start of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfWord(bExpand: Boolean): Boolean
+  def gotoStartOfWord(bExpand: Boolean): Boolean = js.native
   /** determines if the cursor is positioned at the end of a word. */
-  def isEndOfWord(): Boolean
+  def isEndOfWord(): Boolean = js.native
   /** determines if the cursor is positioned at the start of a word. */
-  def isStartOfWord(): Boolean
+  def isStartOfWord(): Boolean = js.native
 }
 
 object XWordCursor {
@@ -71,5 +72,30 @@ object XWordCursor {
     val __obj = js.Dynamic.literal(End = End.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], String = String.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), collapseToEnd = js.Any.fromFunction0(collapseToEnd), collapseToStart = js.Any.fromFunction0(collapseToStart), getEnd = js.Any.fromFunction0(getEnd), getStart = js.Any.fromFunction0(getStart), getString = js.Any.fromFunction0(getString), getText = js.Any.fromFunction0(getText), goLeft = js.Any.fromFunction2(goLeft), goRight = js.Any.fromFunction2(goRight), gotoEnd = js.Any.fromFunction1(gotoEnd), gotoEndOfWord = js.Any.fromFunction1(gotoEndOfWord), gotoNextWord = js.Any.fromFunction1(gotoNextWord), gotoPreviousWord = js.Any.fromFunction1(gotoPreviousWord), gotoRange = js.Any.fromFunction2(gotoRange), gotoStart = js.Any.fromFunction1(gotoStart), gotoStartOfWord = js.Any.fromFunction1(gotoStartOfWord), isCollapsed = js.Any.fromFunction0(isCollapsed), isEndOfWord = js.Any.fromFunction0(isEndOfWord), isStartOfWord = js.Any.fromFunction0(isStartOfWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setString = js.Any.fromFunction1(setString))
     __obj.asInstanceOf[XWordCursor]
   }
+  @scala.inline
+  implicit class XWordCursorOps[Self <: XWordCursor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGotoEndOfWord(value: Boolean => Boolean): Self = this.set("gotoEndOfWord", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGotoNextWord(value: Boolean => Boolean): Self = this.set("gotoNextWord", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGotoPreviousWord(value: Boolean => Boolean): Self = this.set("gotoPreviousWord", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGotoStartOfWord(value: Boolean => Boolean): Self = this.set("gotoStartOfWord", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsEndOfWord(value: () => Boolean): Self = this.set("isEndOfWord", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsStartOfWord(value: () => Boolean): Self = this.set("isStartOfWord", js.Any.fromFunction0(value))
+  }
+  
 }
 

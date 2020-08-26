@@ -12,7 +12,7 @@ A Long class for representing a 64-bit two's-complement integer value.
 | Keywords           | math |
 | # releases         | 7 |
 | # dependents       | 6 |
-| # downloads        | 191480546 |
+| # downloads        | 201168801 |
 | # stars            | 0 |
 
 ## Links

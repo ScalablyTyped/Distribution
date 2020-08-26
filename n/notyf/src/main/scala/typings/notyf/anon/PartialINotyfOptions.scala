@@ -6,30 +6,55 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<notyf.notyf/notyf.options.INotyfOptions> */
+@js.native
 trait PartialINotyfOptions extends js.Object {
-  var dismissible: js.UndefOr[Boolean] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[INotyfPosition] = js.undefined
-  var ripple: js.UndefOr[Boolean] = js.undefined
-  var types: js.UndefOr[js.Array[DeepPartialINotyfNotifica]] = js.undefined
+  var dismissible: js.UndefOr[Boolean] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[INotyfPosition] = js.native
+  var ripple: js.UndefOr[Boolean] = js.native
+  var types: js.UndefOr[js.Array[DeepPartialINotyfNotifica]] = js.native
 }
 
 object PartialINotyfOptions {
   @scala.inline
-  def apply(
-    dismissible: js.UndefOr[Boolean] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    position: INotyfPosition = null,
-    ripple: js.UndefOr[Boolean] = js.undefined,
-    types: js.Array[DeepPartialINotyfNotifica] = null
-  ): PartialINotyfOptions = {
+  def apply(): PartialINotyfOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dismissible)) __obj.updateDynamic("dismissible")(dismissible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(ripple)) __obj.updateDynamic("ripple")(ripple.get.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialINotyfOptions]
   }
+  @scala.inline
+  implicit class PartialINotyfOptionsOps[Self <: PartialINotyfOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDismissible(value: Boolean): Self = this.set("dismissible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDismissible: Self = this.set("dismissible", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setPosition(value: INotyfPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRipple(value: Boolean): Self = this.set("ripple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRipple: Self = this.set("ripple", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: DeepPartialINotyfNotifica*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[DeepPartialINotyfNotifica]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

@@ -30,6 +30,7 @@ class ResourceSuperchatevents protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSuperChatEventListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSuperChatEventListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSuperChatEventListResponse] = js.native
   def list(params: ParamsResourceSuperchateventsList): GaxiosPromise[SchemaSuperChatEventListResponse] = js.native
   def list(
     params: ParamsResourceSuperchateventsList,

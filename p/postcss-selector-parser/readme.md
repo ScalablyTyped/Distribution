@@ -10,9 +10,9 @@ Typings are for version 6.0.2
 | ------------------ | :-------------: |
 | Full name          | postcss-selector-parser |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 334 |
-| # downloads        | 628410223 |
+| # releases         | 7 |
+| # dependents       | 379 |
+| # downloads        | 886455194 |
 | # stars            | 2 |
 
 ## Links

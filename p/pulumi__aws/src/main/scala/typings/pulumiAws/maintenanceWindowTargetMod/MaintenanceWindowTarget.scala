@@ -35,11 +35,12 @@ class MaintenanceWindowTarget protected () extends CustomResource {
     */
   val ownerInformation: Output_[js.UndefOr[String]] = js.native
   /**
-    * The type of target being registered with the Maintenance Window. Possible values `INSTANCE`.
+    * The type of target being registered with the Maintenance Window. Possible values are `INSTANCE` and `RESOURCE_GROUP`.
     */
   val resourceType: Output_[String] = js.native
   /**
-    * The targets (either instances or tags). Instances are specified using Key=InstanceIds,Values=InstanceId1,InstanceId2. Tags are specified using Key=tag name,Values=tag value.
+    * The targets to register with the maintenance window. In other words, the instances to run commands on when the maintenance window runs. You can specify targets using instance IDs, resource group names, or tags that have been applied to instances. For more information about these examples formats see
+    * (https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-tutorial-targets-examples.html)
     */
   val targets: Output_[js.Array[MaintenanceWindowTargetTarget]] = js.native
   /**
@@ -59,8 +60,10 @@ object MaintenanceWindowTarget extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): MaintenanceWindowTarget = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MaintenanceWindowTarget = js.native
   def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState): MaintenanceWindowTarget = js.native
   def get(name: String, id: Input[ID], state: MaintenanceWindowTargetState, opts: CustomResourceOptions): MaintenanceWindowTarget = js.native
   /**

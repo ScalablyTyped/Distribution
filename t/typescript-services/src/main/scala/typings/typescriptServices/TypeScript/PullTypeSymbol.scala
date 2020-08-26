@@ -111,8 +111,6 @@ trait PullTypeSymbol
   override def getIsSpecialized(): Boolean = js.native
   def getKnownBaseTypeCount(): Double = js.native
   def getKnownSpecializations(): js.Array[PullTypeSymbol] = js.native
-  /* private */ def getMemberTypeNameEx(topLevel: js.Any): js.Any = js.native
-  /* private */ def getMemberTypeNameEx(topLevel: js.Any, scopeSymbol: js.Any): js.Any = js.native
   /* private */ def getMemberTypeNameEx(topLevel: js.Any, scopeSymbol: js.Any, getPrettyTypeName: js.Any): js.Any = js.native
   def getMembers(): js.Array[PullSymbol] = js.native
   def getOwnCallSignatures(): js.Array[PullSignatureSymbol] = js.native

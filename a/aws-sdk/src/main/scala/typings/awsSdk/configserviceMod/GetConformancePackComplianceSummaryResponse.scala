@@ -18,14 +18,32 @@ trait GetConformancePackComplianceSummaryResponse extends js.Object {
 
 object GetConformancePackComplianceSummaryResponse {
   @scala.inline
-  def apply(
-    ConformancePackComplianceSummaryList: ConformancePackComplianceSummaryList = null,
-    NextToken: NextToken = null
-  ): GetConformancePackComplianceSummaryResponse = {
+  def apply(): GetConformancePackComplianceSummaryResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConformancePackComplianceSummaryList != null) __obj.updateDynamic("ConformancePackComplianceSummaryList")(ConformancePackComplianceSummaryList.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConformancePackComplianceSummaryResponse]
   }
+  @scala.inline
+  implicit class GetConformancePackComplianceSummaryResponseOps[Self <: GetConformancePackComplianceSummaryResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConformancePackComplianceSummaryListVarargs(value: ConformancePackComplianceSummary*): Self = this.set("ConformancePackComplianceSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setConformancePackComplianceSummaryList(value: ConformancePackComplianceSummaryList): Self = this.set("ConformancePackComplianceSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConformancePackComplianceSummaryList: Self = this.set("ConformancePackComplianceSummaryList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

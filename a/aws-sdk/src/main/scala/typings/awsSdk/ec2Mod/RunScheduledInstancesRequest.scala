@@ -32,16 +32,39 @@ object RunScheduledInstancesRequest {
   @scala.inline
   def apply(
     LaunchSpecification: ScheduledInstancesLaunchSpecification,
-    ScheduledInstanceId: ScheduledInstanceId,
-    ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    InstanceCount: js.UndefOr[Integer] = js.undefined
+    ScheduledInstanceId: ScheduledInstanceId
   ): RunScheduledInstancesRequest = {
     val __obj = js.Dynamic.literal(LaunchSpecification = LaunchSpecification.asInstanceOf[js.Any], ScheduledInstanceId = ScheduledInstanceId.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunScheduledInstancesRequest]
   }
+  @scala.inline
+  implicit class RunScheduledInstancesRequestOps[Self <: RunScheduledInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchSpecification(value: ScheduledInstancesLaunchSpecification): Self = this.set("LaunchSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduledInstanceId(value: ScheduledInstanceId): Self = this.set("ScheduledInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Integer): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait ComputeResourceUpdate extends js.Object {
 
 object ComputeResourceUpdate {
   @scala.inline
-  def apply(
-    desiredvCpus: js.UndefOr[Integer] = js.undefined,
-    maxvCpus: js.UndefOr[Integer] = js.undefined,
-    minvCpus: js.UndefOr[Integer] = js.undefined
-  ): ComputeResourceUpdate = {
+  def apply(): ComputeResourceUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(desiredvCpus)) __obj.updateDynamic("desiredvCpus")(desiredvCpus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxvCpus)) __obj.updateDynamic("maxvCpus")(maxvCpus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minvCpus)) __obj.updateDynamic("minvCpus")(minvCpus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeResourceUpdate]
   }
+  @scala.inline
+  implicit class ComputeResourceUpdateOps[Self <: ComputeResourceUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesiredvCpus(value: Integer): Self = this.set("desiredvCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredvCpus: Self = this.set("desiredvCpus", js.undefined)
+    @scala.inline
+    def setMaxvCpus(value: Integer): Self = this.set("maxvCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxvCpus: Self = this.set("maxvCpus", js.undefined)
+    @scala.inline
+    def setMinvCpus(value: Integer): Self = this.set("minvCpus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinvCpus: Self = this.set("minvCpus", js.undefined)
+  }
+  
 }
 

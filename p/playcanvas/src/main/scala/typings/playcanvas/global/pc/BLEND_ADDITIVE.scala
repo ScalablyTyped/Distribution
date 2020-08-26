@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Add the color of the source fragment to the destination fragment
-  and write the result to the frame buffer.
+  * and write the result to the frame buffer.
   */
 @JSGlobal("pc.BLEND_ADDITIVE")
 @js.native

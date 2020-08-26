@@ -29,6 +29,7 @@ class ResourcePersonalizedstream protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDiscoveryclusters] = js.native
   def get(callback: BodyResponseCallback[SchemaDiscoveryclusters]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDiscoveryclusters] = js.native
   def get(params: ParamsResourcePersonalizedstreamGet): GaxiosPromise[SchemaDiscoveryclusters] = js.native
   def get(
     params: ParamsResourcePersonalizedstreamGet,

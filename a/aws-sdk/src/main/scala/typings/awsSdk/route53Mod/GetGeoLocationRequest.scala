@@ -22,16 +22,34 @@ trait GetGeoLocationRequest extends js.Object {
 
 object GetGeoLocationRequest {
   @scala.inline
-  def apply(
-    ContinentCode: GeoLocationContinentCode = null,
-    CountryCode: GeoLocationCountryCode = null,
-    SubdivisionCode: GeoLocationSubdivisionCode = null
-  ): GetGeoLocationRequest = {
+  def apply(): GetGeoLocationRequest = {
     val __obj = js.Dynamic.literal()
-    if (ContinentCode != null) __obj.updateDynamic("ContinentCode")(ContinentCode.asInstanceOf[js.Any])
-    if (CountryCode != null) __obj.updateDynamic("CountryCode")(CountryCode.asInstanceOf[js.Any])
-    if (SubdivisionCode != null) __obj.updateDynamic("SubdivisionCode")(SubdivisionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGeoLocationRequest]
   }
+  @scala.inline
+  implicit class GetGeoLocationRequestOps[Self <: GetGeoLocationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinentCode(value: GeoLocationContinentCode): Self = this.set("ContinentCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinentCode: Self = this.set("ContinentCode", js.undefined)
+    @scala.inline
+    def setCountryCode(value: GeoLocationCountryCode): Self = this.set("CountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountryCode: Self = this.set("CountryCode", js.undefined)
+    @scala.inline
+    def setSubdivisionCode(value: GeoLocationSubdivisionCode): Self = this.set("SubdivisionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdivisionCode: Self = this.set("SubdivisionCode", js.undefined)
+  }
+  
 }
 

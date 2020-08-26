@@ -10,9 +10,9 @@ Typings are for version 1.8.2
 | ------------------ | :-------------: |
 | Full name          | graphql-request |
 | Keywords           | graphql, request, fetch, graphql-client, apollo |
-| # releases         | 10 |
-| # dependents       | 251 |
-| # downloads        | 25442212 |
+| # releases         | 9 |
+| # dependents       | 261 |
+| # downloads        | 26393925 |
 | # stars            | 8 |
 
 ## Links

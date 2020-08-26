@@ -1238,10 +1238,16 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
   def setProperty(property: drilling, value: inherit): Unit = js.native
   def setProperty(property: drilling, value: off): Unit = js.native
   def setProperty(property: drilling, value: on): Unit = js.native
-  def setProperty(
-    property: shape,
-    value: circle | diamond | human | plus | rectangle | square | star | triangleDown | triangleUp | none | String
-  ): Unit = js.native
+  def setProperty(property: shape, value: circle): Unit = js.native
+  def setProperty(property: shape, value: diamond): Unit = js.native
+  def setProperty(property: shape, value: human): Unit = js.native
+  def setProperty(property: shape, value: none): Unit = js.native
+  def setProperty(property: shape, value: plus): Unit = js.native
+  def setProperty(property: shape, value: rectangle): Unit = js.native
+  def setProperty(property: shape, value: square): Unit = js.native
+  def setProperty(property: shape, value: star): Unit = js.native
+  def setProperty(property: shape, value: triangleDown): Unit = js.native
+  def setProperty(property: shape, value: triangleUp): Unit = js.native
   def setProperty[T /* <: String */](property: T, value: JetSetPropertyType[T, ojPictoChartItemSettableProperties]): Unit = js.native
   @JSName("setProperty")
   def setProperty_borderColor(property: borderColor, value: String): Unit = js.native
@@ -1259,6 +1265,10 @@ trait ojPictoChartItem extends JetElement[ojPictoChartItemSettableProperties] {
   def setProperty_name(property: name, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_rowSpan(property: rowSpan, value: Double): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shape(property: shape): Unit = js.native
+  @JSName("setProperty")
+  def setProperty_shape(property: shape, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_shortDesc(property: shortDesc, value: String): Unit = js.native
   @JSName("setProperty")

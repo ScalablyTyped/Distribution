@@ -4,21 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AsyncResponses extends js.Object {
-  var asyncResponses: js.UndefOr[Boolean] = js.undefined
-  var asyncTimeout: js.UndefOr[Double] = js.undefined
+  var asyncResponses: js.UndefOr[Boolean] = js.native
+  var asyncTimeout: js.UndefOr[Double] = js.native
 }
 
 object AsyncResponses {
   @scala.inline
-  def apply(
-    asyncResponses: js.UndefOr[Boolean] = js.undefined,
-    asyncTimeout: js.UndefOr[Double] = js.undefined
-  ): AsyncResponses = {
+  def apply(): AsyncResponses = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(asyncResponses)) __obj.updateDynamic("asyncResponses")(asyncResponses.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncTimeout)) __obj.updateDynamic("asyncTimeout")(asyncTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncResponses]
   }
+  @scala.inline
+  implicit class AsyncResponsesOps[Self <: AsyncResponses] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsyncResponses(value: Boolean): Self = this.set("asyncResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsyncResponses: Self = this.set("asyncResponses", js.undefined)
+    @scala.inline
+    def setAsyncTimeout(value: Double): Self = this.set("asyncTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsyncTimeout: Self = this.set("asyncTimeout", js.undefined)
+  }
+  
 }
 

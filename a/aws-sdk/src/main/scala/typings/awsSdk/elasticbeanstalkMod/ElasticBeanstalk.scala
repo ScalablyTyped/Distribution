@@ -1,5 +1,9 @@
 package typings.awsSdk.elasticbeanstalkMod
 
+import typings.awsSdk.anon.DescribeEnvironmentsMessa
+import typings.awsSdk.awsSdkStrings.environmentExists
+import typings.awsSdk.awsSdkStrings.environmentTerminated
+import typings.awsSdk.awsSdkStrings.environmentUpdated
 import typings.awsSdk.configMod.ConfigBase
 import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
@@ -611,5 +615,68 @@ trait ElasticBeanstalk extends Service {
     params: ValidateConfigurationSettingsMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ConfigurationSettingsValidationMessages, Unit]
   ): Request[ConfigurationSettingsValidationMessages, AWSError] = js.native
+  /**
+    * Waits for the environmentExists state by periodically calling the underlying ElasticBeanstalk.describeEnvironmentsoperation every 20 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_environmentExists(state: environmentExists): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_environmentExists(
+    state: environmentExists,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
+  ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  /**
+    * Waits for the environmentExists state by periodically calling the underlying ElasticBeanstalk.describeEnvironmentsoperation every 20 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_environmentExists(state: environmentExists, params: DescribeEnvironmentsMessa): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_environmentExists(
+    state: environmentExists,
+    params: DescribeEnvironmentsMessa,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
+  ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  /**
+    * Waits for the environmentTerminated state by periodically calling the underlying ElasticBeanstalk.describeEnvironmentsoperation every 20 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_environmentTerminated(state: environmentTerminated): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_environmentTerminated(
+    state: environmentTerminated,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
+  ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  /**
+    * Waits for the environmentTerminated state by periodically calling the underlying ElasticBeanstalk.describeEnvironmentsoperation every 20 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_environmentTerminated(state: environmentTerminated, params: DescribeEnvironmentsMessa): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_environmentTerminated(
+    state: environmentTerminated,
+    params: DescribeEnvironmentsMessa,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
+  ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  /**
+    * Waits for the environmentUpdated state by periodically calling the underlying ElasticBeanstalk.describeEnvironmentsoperation every 20 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_environmentUpdated(state: environmentUpdated): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_environmentUpdated(
+    state: environmentUpdated,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
+  ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  /**
+    * Waits for the environmentUpdated state by periodically calling the underlying ElasticBeanstalk.describeEnvironmentsoperation every 20 seconds (at most 20 times).
+    */
+  @JSName("waitFor")
+  def waitFor_environmentUpdated(state: environmentUpdated, params: DescribeEnvironmentsMessa): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_environmentUpdated(
+    state: environmentUpdated,
+    params: DescribeEnvironmentsMessa,
+    callback: js.Function2[/* err */ AWSError, /* data */ EnvironmentDescriptionsMessage, Unit]
+  ): Request[EnvironmentDescriptionsMessage, AWSError] = js.native
 }
 

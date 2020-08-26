@@ -20,7 +20,7 @@ trait ProjectSecondarySource extends js.Object {
     */
   var gitCloneDepth: js.UndefOr[Input[Double]] = js.native
   /**
-    * Information about the Git submodules configuration for an AWS CodeBuild build project. Git submodules config blocks are documented below. This option is only valid when the `type` is `CODECOMMIT`.
+    * Information about the Git submodules configuration for an AWS CodeBuild build project. Git submodules config blocks are documented below. This option is only valid when the `type` is `CODECOMMIT`, `GITHUB` or `GITHUB_ENTERPRISE`.
     */
   var gitSubmodulesConfig: js.UndefOr[Input[ProjectSecondarySourceGitSubmodulesConfig]] = js.native
   /**
@@ -47,27 +47,57 @@ trait ProjectSecondarySource extends js.Object {
 
 object ProjectSecondarySource {
   @scala.inline
-  def apply(
-    sourceIdentifier: Input[String],
-    `type`: Input[String],
-    auths: Input[js.Array[Input[ProjectSecondarySourceAuth]]] = null,
-    buildspec: Input[String] = null,
-    gitCloneDepth: Input[Double] = null,
-    gitSubmodulesConfig: Input[ProjectSecondarySourceGitSubmodulesConfig] = null,
-    insecureSsl: Input[Boolean] = null,
-    location: Input[String] = null,
-    reportBuildStatus: Input[Boolean] = null
-  ): ProjectSecondarySource = {
+  def apply(sourceIdentifier: Input[String], `type`: Input[String]): ProjectSecondarySource = {
     val __obj = js.Dynamic.literal(sourceIdentifier = sourceIdentifier.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (auths != null) __obj.updateDynamic("auths")(auths.asInstanceOf[js.Any])
-    if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec.asInstanceOf[js.Any])
-    if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])
-    if (gitSubmodulesConfig != null) __obj.updateDynamic("gitSubmodulesConfig")(gitSubmodulesConfig.asInstanceOf[js.Any])
-    if (insecureSsl != null) __obj.updateDynamic("insecureSsl")(insecureSsl.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (reportBuildStatus != null) __obj.updateDynamic("reportBuildStatus")(reportBuildStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSecondarySource]
   }
+  @scala.inline
+  implicit class ProjectSecondarySourceOps[Self <: ProjectSecondarySource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceIdentifier(value: Input[String]): Self = this.set("sourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthsVarargs(value: Input[ProjectSecondarySourceAuth]*): Self = this.set("auths", js.Array(value :_*))
+    @scala.inline
+    def setAuths(value: Input[js.Array[Input[ProjectSecondarySourceAuth]]]): Self = this.set("auths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuths: Self = this.set("auths", js.undefined)
+    @scala.inline
+    def setBuildspec(value: Input[String]): Self = this.set("buildspec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildspec: Self = this.set("buildspec", js.undefined)
+    @scala.inline
+    def setGitCloneDepth(value: Input[Double]): Self = this.set("gitCloneDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitCloneDepth: Self = this.set("gitCloneDepth", js.undefined)
+    @scala.inline
+    def setGitSubmodulesConfig(value: Input[ProjectSecondarySourceGitSubmodulesConfig]): Self = this.set("gitSubmodulesConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitSubmodulesConfig: Self = this.set("gitSubmodulesConfig", js.undefined)
+    @scala.inline
+    def setInsecureSsl(value: Input[Boolean]): Self = this.set("insecureSsl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsecureSsl: Self = this.set("insecureSsl", js.undefined)
+    @scala.inline
+    def setLocation(value: Input[String]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setReportBuildStatus(value: Input[Boolean]): Self = this.set("reportBuildStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportBuildStatus: Self = this.set("reportBuildStatus", js.undefined)
+  }
+  
 }
 

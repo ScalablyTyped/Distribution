@@ -26,16 +26,9 @@ object getCampaignsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetCampaignsInput) = this()
-    /* CompleteClass */
-    override val input: GetCampaignsInput = js.native
     val middlewareStack: MiddlewareStack[GetCampaignsInput, GetCampaignsOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[GetCampaignsInput, GetCampaignsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[GetCampaignsInput, GetCampaignsOutput] = js.native
   }

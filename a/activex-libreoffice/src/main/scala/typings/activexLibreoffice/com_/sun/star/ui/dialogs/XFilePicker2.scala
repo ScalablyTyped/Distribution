@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** extends file picker interface to workaround some design problems. */
+@js.native
 trait XFilePicker2 extends XFilePicker {
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
@@ -21,7 +22,7 @@ trait XFilePicker2 extends XFilePicker {
     *  Instead to the method {@link getFiles()} of base interface {@link XFilePicker} the new method return full qualified URLs for every selected file.
     * @returns A list of all selected file as complete URLs.  ;   **Notes for the implementation of a FileSave dialog:** If there exists a checkbox "Automatic F
     */
-  val SelectedFiles: SafeArray[String]
+  val SelectedFiles: SafeArray[String] = js.native
   /**
     * Returns a sequence of the selected files including path information in URL format, conforming to [Rfc1738]{@link
     * url="http://www.w3.org/Addressing/rfc1738.txt"} .
@@ -35,7 +36,7 @@ trait XFilePicker2 extends XFilePicker {
     *  Instead to the method {@link getFiles()} of base interface {@link XFilePicker} the new method return full qualified URLs for every selected file.
     * @returns A list of all selected file as complete URLs.  ;   **Notes for the implementation of a FileSave dialog:** If there exists a checkbox "Automatic F
     */
-  def getSelectedFiles(): SafeArray[String]
+  def getSelectedFiles(): SafeArray[String] = js.native
 }
 
 object XFilePicker2 {
@@ -59,5 +60,22 @@ object XFilePicker2 {
     val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory.asInstanceOf[js.Any], Files = Files.asInstanceOf[js.Any], SelectedFiles = SelectedFiles.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), execute = js.Any.fromFunction0(execute), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), getFiles = js.Any.fromFunction0(getFiles), getSelectedFiles = js.Any.fromFunction0(getSelectedFiles), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultName = js.Any.fromFunction1(setDefaultName), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setMultiSelectionMode = js.Any.fromFunction1(setMultiSelectionMode), setTitle = js.Any.fromFunction1(setTitle))
     __obj.asInstanceOf[XFilePicker2]
   }
+  @scala.inline
+  implicit class XFilePicker2Ops[Self <: XFilePicker2] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSelectedFiles(value: SafeArray[String]): Self = this.set("SelectedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetSelectedFiles(value: () => SafeArray[String]): Self = this.set("getSelectedFiles", js.Any.fromFunction0(value))
+  }
+  
 }
 

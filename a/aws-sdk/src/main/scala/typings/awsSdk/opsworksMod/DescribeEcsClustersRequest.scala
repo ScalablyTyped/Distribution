@@ -26,18 +26,40 @@ trait DescribeEcsClustersRequest extends js.Object {
 
 object DescribeEcsClustersRequest {
   @scala.inline
-  def apply(
-    EcsClusterArns: Strings = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null,
-    StackId: String = null
-  ): DescribeEcsClustersRequest = {
+  def apply(): DescribeEcsClustersRequest = {
     val __obj = js.Dynamic.literal()
-    if (EcsClusterArns != null) __obj.updateDynamic("EcsClusterArns")(EcsClusterArns.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEcsClustersRequest]
   }
+  @scala.inline
+  implicit class DescribeEcsClustersRequestOps[Self <: DescribeEcsClustersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEcsClusterArnsVarargs(value: String*): Self = this.set("EcsClusterArns", js.Array(value :_*))
+    @scala.inline
+    def setEcsClusterArns(value: Strings): Self = this.set("EcsClusterArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsClusterArns: Self = this.set("EcsClusterArns", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

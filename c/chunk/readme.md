@@ -11,8 +11,8 @@ Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,
 | Full name          | chunk |
 | Keywords           | array, chunk |
 | # releases         | 1 |
-| # dependents       | 34 |
-| # downloads        | 158929 |
+| # dependents       | 35 |
+| # downloads        | 165433 |
 | # stars            | 2 |
 
 ## Links

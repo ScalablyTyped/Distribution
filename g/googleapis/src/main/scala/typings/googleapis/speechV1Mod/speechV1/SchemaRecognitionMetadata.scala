@@ -59,28 +59,58 @@ trait SchemaRecognitionMetadata extends js.Object {
 
 object SchemaRecognitionMetadata {
   @scala.inline
-  def apply(
-    audioTopic: String = null,
-    industryNaicsCodeOfAudio: js.UndefOr[Double] = js.undefined,
-    interactionType: String = null,
-    microphoneDistance: String = null,
-    obfuscatedId: String = null,
-    originalMediaType: String = null,
-    originalMimeType: String = null,
-    recordingDeviceName: String = null,
-    recordingDeviceType: String = null
-  ): SchemaRecognitionMetadata = {
+  def apply(): SchemaRecognitionMetadata = {
     val __obj = js.Dynamic.literal()
-    if (audioTopic != null) __obj.updateDynamic("audioTopic")(audioTopic.asInstanceOf[js.Any])
-    if (!js.isUndefined(industryNaicsCodeOfAudio)) __obj.updateDynamic("industryNaicsCodeOfAudio")(industryNaicsCodeOfAudio.get.asInstanceOf[js.Any])
-    if (interactionType != null) __obj.updateDynamic("interactionType")(interactionType.asInstanceOf[js.Any])
-    if (microphoneDistance != null) __obj.updateDynamic("microphoneDistance")(microphoneDistance.asInstanceOf[js.Any])
-    if (obfuscatedId != null) __obj.updateDynamic("obfuscatedId")(obfuscatedId.asInstanceOf[js.Any])
-    if (originalMediaType != null) __obj.updateDynamic("originalMediaType")(originalMediaType.asInstanceOf[js.Any])
-    if (originalMimeType != null) __obj.updateDynamic("originalMimeType")(originalMimeType.asInstanceOf[js.Any])
-    if (recordingDeviceName != null) __obj.updateDynamic("recordingDeviceName")(recordingDeviceName.asInstanceOf[js.Any])
-    if (recordingDeviceType != null) __obj.updateDynamic("recordingDeviceType")(recordingDeviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRecognitionMetadata]
   }
+  @scala.inline
+  implicit class SchemaRecognitionMetadataOps[Self <: SchemaRecognitionMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioTopic(value: String): Self = this.set("audioTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioTopic: Self = this.set("audioTopic", js.undefined)
+    @scala.inline
+    def setIndustryNaicsCodeOfAudio(value: Double): Self = this.set("industryNaicsCodeOfAudio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndustryNaicsCodeOfAudio: Self = this.set("industryNaicsCodeOfAudio", js.undefined)
+    @scala.inline
+    def setInteractionType(value: String): Self = this.set("interactionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInteractionType: Self = this.set("interactionType", js.undefined)
+    @scala.inline
+    def setMicrophoneDistance(value: String): Self = this.set("microphoneDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMicrophoneDistance: Self = this.set("microphoneDistance", js.undefined)
+    @scala.inline
+    def setObfuscatedId(value: String): Self = this.set("obfuscatedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObfuscatedId: Self = this.set("obfuscatedId", js.undefined)
+    @scala.inline
+    def setOriginalMediaType(value: String): Self = this.set("originalMediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalMediaType: Self = this.set("originalMediaType", js.undefined)
+    @scala.inline
+    def setOriginalMimeType(value: String): Self = this.set("originalMimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalMimeType: Self = this.set("originalMimeType", js.undefined)
+    @scala.inline
+    def setRecordingDeviceName(value: String): Self = this.set("recordingDeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordingDeviceName: Self = this.set("recordingDeviceName", js.undefined)
+    @scala.inline
+    def setRecordingDeviceType(value: String): Self = this.set("recordingDeviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordingDeviceType: Self = this.set("recordingDeviceType", js.undefined)
+  }
+  
 }
 

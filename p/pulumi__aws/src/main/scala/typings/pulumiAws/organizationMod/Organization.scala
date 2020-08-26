@@ -24,6 +24,7 @@ class Organization protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: OrganizationArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: OrganizationArgs, opts: CustomResourceOptions) = this()
   /**
     * List of organization accounts including the master account. For a list excluding the master account, see the `nonMasterAccounts` attribute. All elements have these attributes:
@@ -38,7 +39,7 @@ class Organization protected () extends CustomResource {
     */
   val awsServiceAccessPrincipals: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
-    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `BACKUP_POLICY`, `SERVICE_CONTROL_POLICY`, and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
     */
   val enabledPolicyTypes: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -78,8 +79,10 @@ object Organization extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Organization = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Organization = js.native
   def get(name: String, id: Input[ID], state: OrganizationState): Organization = js.native
   def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): Organization = js.native
   /**

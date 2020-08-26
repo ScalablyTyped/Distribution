@@ -41,13 +41,13 @@ object nonInviteClientTransactionMod extends js.Object {
       * a timeout, and the client transaction MUST transition to the terminated state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    var timer_F: js.Any = js.native
+    var timerF: js.Any = js.native
     /**
       * If Timer K fires while in this (COMPLETED) state, the client transaction
       * MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.1.2.2
       */
-    var timer_K: js.Any = js.native
+    var timerK: js.Any = js.native
     /**
       * The client transaction SHOULD inform the TU that a transport failure has occurred,
       * and the client transaction SHOULD transition directly to the "Terminated" state.

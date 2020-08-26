@@ -51,12 +51,8 @@ class BoundEvent protected () extends Node {
   var handlerSpan: ParseSourceSpan = js.native
   var name: String = js.native
   var phase: String | Null = js.native
-  /* CompleteClass */
-  override var sourceSpan: ParseSourceSpan = js.native
   var target: String | Null = js.native
   var `type`: ParsedEventType = js.native
-  /* CompleteClass */
-  override def visit[Result](visitor: Visitor[Result]): Result = js.native
 }
 
 /* static members */

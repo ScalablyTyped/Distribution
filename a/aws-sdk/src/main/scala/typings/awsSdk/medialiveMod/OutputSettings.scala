@@ -18,26 +18,54 @@ trait OutputSettings extends js.Object {
 
 object OutputSettings {
   @scala.inline
-  def apply(
-    ArchiveOutputSettings: ArchiveOutputSettings = null,
-    FrameCaptureOutputSettings: FrameCaptureOutputSettings = null,
-    HlsOutputSettings: HlsOutputSettings = null,
-    MediaPackageOutputSettings: MediaPackageOutputSettings = null,
-    MsSmoothOutputSettings: MsSmoothOutputSettings = null,
-    MultiplexOutputSettings: MultiplexOutputSettings = null,
-    RtmpOutputSettings: RtmpOutputSettings = null,
-    UdpOutputSettings: UdpOutputSettings = null
-  ): OutputSettings = {
+  def apply(): OutputSettings = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveOutputSettings != null) __obj.updateDynamic("ArchiveOutputSettings")(ArchiveOutputSettings.asInstanceOf[js.Any])
-    if (FrameCaptureOutputSettings != null) __obj.updateDynamic("FrameCaptureOutputSettings")(FrameCaptureOutputSettings.asInstanceOf[js.Any])
-    if (HlsOutputSettings != null) __obj.updateDynamic("HlsOutputSettings")(HlsOutputSettings.asInstanceOf[js.Any])
-    if (MediaPackageOutputSettings != null) __obj.updateDynamic("MediaPackageOutputSettings")(MediaPackageOutputSettings.asInstanceOf[js.Any])
-    if (MsSmoothOutputSettings != null) __obj.updateDynamic("MsSmoothOutputSettings")(MsSmoothOutputSettings.asInstanceOf[js.Any])
-    if (MultiplexOutputSettings != null) __obj.updateDynamic("MultiplexOutputSettings")(MultiplexOutputSettings.asInstanceOf[js.Any])
-    if (RtmpOutputSettings != null) __obj.updateDynamic("RtmpOutputSettings")(RtmpOutputSettings.asInstanceOf[js.Any])
-    if (UdpOutputSettings != null) __obj.updateDynamic("UdpOutputSettings")(UdpOutputSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputSettings]
   }
+  @scala.inline
+  implicit class OutputSettingsOps[Self <: OutputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveOutputSettings(value: ArchiveOutputSettings): Self = this.set("ArchiveOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveOutputSettings: Self = this.set("ArchiveOutputSettings", js.undefined)
+    @scala.inline
+    def setFrameCaptureOutputSettings(value: FrameCaptureOutputSettings): Self = this.set("FrameCaptureOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameCaptureOutputSettings: Self = this.set("FrameCaptureOutputSettings", js.undefined)
+    @scala.inline
+    def setHlsOutputSettings(value: HlsOutputSettings): Self = this.set("HlsOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsOutputSettings: Self = this.set("HlsOutputSettings", js.undefined)
+    @scala.inline
+    def setMediaPackageOutputSettings(value: MediaPackageOutputSettings): Self = this.set("MediaPackageOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaPackageOutputSettings: Self = this.set("MediaPackageOutputSettings", js.undefined)
+    @scala.inline
+    def setMsSmoothOutputSettings(value: MsSmoothOutputSettings): Self = this.set("MsSmoothOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsSmoothOutputSettings: Self = this.set("MsSmoothOutputSettings", js.undefined)
+    @scala.inline
+    def setMultiplexOutputSettings(value: MultiplexOutputSettings): Self = this.set("MultiplexOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexOutputSettings: Self = this.set("MultiplexOutputSettings", js.undefined)
+    @scala.inline
+    def setRtmpOutputSettings(value: RtmpOutputSettings): Self = this.set("RtmpOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtmpOutputSettings: Self = this.set("RtmpOutputSettings", js.undefined)
+    @scala.inline
+    def setUdpOutputSettings(value: UdpOutputSettings): Self = this.set("UdpOutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUdpOutputSettings: Self = this.set("UdpOutputSettings", js.undefined)
+  }
+  
 }
 

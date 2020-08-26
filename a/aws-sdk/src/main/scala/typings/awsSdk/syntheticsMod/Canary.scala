@@ -61,40 +61,82 @@ trait Canary extends js.Object {
 
 object Canary {
   @scala.inline
-  def apply(
-    ArtifactS3Location: String = null,
-    Code: CanaryCodeOutput = null,
-    EngineArn: Arn = null,
-    ExecutionRoleArn: Arn = null,
-    FailureRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined,
-    Id: UUID = null,
-    Name: CanaryName = null,
-    RunConfig: CanaryRunConfigOutput = null,
-    RuntimeVersion: String = null,
-    Schedule: CanaryScheduleOutput = null,
-    Status: CanaryStatus = null,
-    SuccessRetentionPeriodInDays: js.UndefOr[MaxSize1024] = js.undefined,
-    Tags: TagMap = null,
-    Timeline: CanaryTimeline = null,
-    VpcConfig: VpcConfigOutput = null
-  ): Canary = {
+  def apply(): Canary = {
     val __obj = js.Dynamic.literal()
-    if (ArtifactS3Location != null) __obj.updateDynamic("ArtifactS3Location")(ArtifactS3Location.asInstanceOf[js.Any])
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (EngineArn != null) __obj.updateDynamic("EngineArn")(EngineArn.asInstanceOf[js.Any])
-    if (ExecutionRoleArn != null) __obj.updateDynamic("ExecutionRoleArn")(ExecutionRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(FailureRetentionPeriodInDays)) __obj.updateDynamic("FailureRetentionPeriodInDays")(FailureRetentionPeriodInDays.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RunConfig != null) __obj.updateDynamic("RunConfig")(RunConfig.asInstanceOf[js.Any])
-    if (RuntimeVersion != null) __obj.updateDynamic("RuntimeVersion")(RuntimeVersion.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(SuccessRetentionPeriodInDays)) __obj.updateDynamic("SuccessRetentionPeriodInDays")(SuccessRetentionPeriodInDays.get.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Timeline != null) __obj.updateDynamic("Timeline")(Timeline.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Canary]
   }
+  @scala.inline
+  implicit class CanaryOps[Self <: Canary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactS3Location(value: String): Self = this.set("ArtifactS3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactS3Location: Self = this.set("ArtifactS3Location", js.undefined)
+    @scala.inline
+    def setCode(value: CanaryCodeOutput): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("Code", js.undefined)
+    @scala.inline
+    def setEngineArn(value: Arn): Self = this.set("EngineArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineArn: Self = this.set("EngineArn", js.undefined)
+    @scala.inline
+    def setExecutionRoleArn(value: Arn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleArn: Self = this.set("ExecutionRoleArn", js.undefined)
+    @scala.inline
+    def setFailureRetentionPeriodInDays(value: MaxSize1024): Self = this.set("FailureRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureRetentionPeriodInDays: Self = this.set("FailureRetentionPeriodInDays", js.undefined)
+    @scala.inline
+    def setId(value: UUID): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: CanaryName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRunConfig(value: CanaryRunConfigOutput): Self = this.set("RunConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunConfig: Self = this.set("RunConfig", js.undefined)
+    @scala.inline
+    def setRuntimeVersion(value: String): Self = this.set("RuntimeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeVersion: Self = this.set("RuntimeVersion", js.undefined)
+    @scala.inline
+    def setSchedule(value: CanaryScheduleOutput): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setStatus(value: CanaryStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = this.set("SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessRetentionPeriodInDays: Self = this.set("SuccessRetentionPeriodInDays", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTimeline(value: CanaryTimeline): Self = this.set("Timeline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeline: Self = this.set("Timeline", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfigOutput): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

@@ -29,24 +29,33 @@ trait Buffer extends Proxy {
     * Appends `sourceBuffer` to the this buffer.
     */
   def append(sourceBuffer: Buffer): Double = js.native
+  def append(sourceBuffer: Buffer, sourceOffset: js.UndefOr[scala.Nothing], sourceLength: Double): Double = js.native
   def append(sourceBuffer: Buffer, sourceOffset: Double): Double = js.native
   def append(sourceBuffer: Buffer, sourceOffset: Double, sourceLength: Double): Double = js.native
   /**
     * Clears this buffer's contents but does not change the size of the buffer.
     */
   def clear(): Unit = js.native
+  def clone(offset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
   def clone(offset: Double): Buffer = js.native
   def clone(offset: Double, length: Double): Buffer = js.native
   /**
     * Copies data from `sourceBuffer` into the current buffer at `offset`.
     */
   def copy(sourceBuffer: Buffer, offset: Double): Double = js.native
+  def copy(
+    sourceBuffer: Buffer,
+    offset: Double,
+    sourceOffset: js.UndefOr[scala.Nothing],
+    sourceLength: Double
+  ): Double = js.native
   def copy(sourceBuffer: Buffer, offset: Double, sourceOffset: Double): Double = js.native
   def copy(sourceBuffer: Buffer, offset: Double, sourceOffset: Double, sourceLength: Double): Double = js.native
   /**
     * Fills this buffer with the specified byte value.
     */
   def fill(fillByte: Double): Unit = js.native
+  def fill(fillByte: Double, offset: js.UndefOr[scala.Nothing], length: Double): Unit = js.native
   def fill(fillByte: Double, offset: Double): Unit = js.native
   def fill(fillByte: Double, offset: Double, length: Double): Unit = js.native
   /**
@@ -73,6 +82,12 @@ trait Buffer extends Proxy {
     * Inserts data from `sourceBuffer` into this buffer at `offset`.
     */
   def insert(sourceBuffer: Buffer, offset: Double): Double = js.native
+  def insert(
+    sourceBuffer: Buffer,
+    offset: Double,
+    sourceOffset: js.UndefOr[scala.Nothing],
+    sourceLength: Double
+  ): Double = js.native
   def insert(sourceBuffer: Buffer, offset: Double, sourceOffset: Double): Double = js.native
   def insert(sourceBuffer: Buffer, offset: Double, sourceOffset: Double, sourceLength: Double): Double = js.native
   /**

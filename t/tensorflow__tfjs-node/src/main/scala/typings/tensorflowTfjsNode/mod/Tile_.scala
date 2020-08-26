@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-node", "Tile")
 @js.native
-object Tile_ extends TopLevel[/* "Identity" */ String]
+object Tile_ extends TopLevel[/* "Conv2D" */ String]
 

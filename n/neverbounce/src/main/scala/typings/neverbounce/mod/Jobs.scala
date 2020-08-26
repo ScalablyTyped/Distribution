@@ -7,7 +7,38 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Jobs extends js.Object {
   def create(input: js.Any, inputLocation: js.Any, fileName: js.Any): js.Promise[Response] = js.native
+  def create(
+    input: js.Any,
+    inputLocation: js.Any,
+    fileName: js.Any,
+    runSample: js.UndefOr[scala.Nothing],
+    autoParse: js.UndefOr[scala.Nothing],
+    autoStart: js.Any
+  ): js.Promise[Response] = js.native
+  def create(
+    input: js.Any,
+    inputLocation: js.Any,
+    fileName: js.Any,
+    runSample: js.UndefOr[scala.Nothing],
+    autoParse: js.Any
+  ): js.Promise[Response] = js.native
+  def create(
+    input: js.Any,
+    inputLocation: js.Any,
+    fileName: js.Any,
+    runSample: js.UndefOr[scala.Nothing],
+    autoParse: js.Any,
+    autoStart: js.Any
+  ): js.Promise[Response] = js.native
   def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: js.Any): js.Promise[Response] = js.native
+  def create(
+    input: js.Any,
+    inputLocation: js.Any,
+    fileName: js.Any,
+    runSample: js.Any,
+    autoParse: js.UndefOr[scala.Nothing],
+    autoStart: js.Any
+  ): js.Promise[Response] = js.native
   def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: js.Any, autoParse: js.Any): js.Promise[Response] = js.native
   def create(
     input: js.Any,

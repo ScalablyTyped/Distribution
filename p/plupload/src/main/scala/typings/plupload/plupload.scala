@@ -146,6 +146,7 @@ object plupload extends js.Object {
       * @return {Array} Array of files that was removed.
       */
     def splice(): js.Any = js.native
+    def splice(start: js.UndefOr[scala.Nothing], length: Double): js.Any = js.native
     def splice(start: Double): js.Any = js.native
     def splice(start: Double, length: Double): js.Any = js.native
     /**

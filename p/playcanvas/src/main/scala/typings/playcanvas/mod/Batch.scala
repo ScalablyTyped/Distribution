@@ -24,25 +24,5 @@ class Batch protected ()
     dynamic: Boolean,
     batchGroupId: Double
   ) = this()
-  /**
-    * Whether this batch is dynamic (supports transforming mesh instances at runtime).
-    */
-  /* CompleteClass */
-  override var dynamic: Boolean = js.native
-  /**
-    * A single combined mesh instance, the result of batching.
-    */
-  /* CompleteClass */
-  override var meshInstance: typings.playcanvas.pc.MeshInstance = js.native
-  /**
-    * A handy model object.
-    */
-  /* CompleteClass */
-  override var model: typings.playcanvas.pc.Model = js.native
-  /**
-    * An array of original mesh instances, from which this batch was generated.
-    */
-  /* CompleteClass */
-  override var origMeshInstances: js.Array[typings.playcanvas.pc.MeshInstance] = js.native
 }
 

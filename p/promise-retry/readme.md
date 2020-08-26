@@ -11,8 +11,8 @@ Retries a function that returns a promise, leveraging the power of the retry mod
 | Full name          | promise-retry |
 | Keywords           | retry, promise, backoff, repeat, replay |
 | # releases         | 1 |
-| # dependents       | 236 |
-| # downloads        | 64424549 |
+| # dependents       | 237 |
+| # downloads        | 67955950 |
 | # stars            | 18 |
 
 ## Links

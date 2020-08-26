@@ -16,22 +16,11 @@ import scala.scalajs.js.annotation._
 class b2RayCastInput ()
   extends typings.box2d.Box2D.Collision.b2RayCastInput {
   def this(p1: b2Vec2) = this()
+  def this(p1: js.UndefOr[scala.Nothing], p2: b2Vec2) = this()
   def this(p1: b2Vec2, p2: b2Vec2) = this()
+  def this(p1: js.UndefOr[scala.Nothing], p2: js.UndefOr[scala.Nothing], maxFraction: Double) = this()
+  def this(p1: js.UndefOr[scala.Nothing], p2: b2Vec2, maxFraction: Double) = this()
+  def this(p1: b2Vec2, p2: js.UndefOr[scala.Nothing], maxFraction: Double) = this()
   def this(p1: b2Vec2, p2: b2Vec2, maxFraction: Double) = this()
-  /**
-    * Truncate the ray to reach up to this fraction from p1 to p2
-    **/
-  /* CompleteClass */
-  override var maxFraction: Double = js.native
-  /**
-    * The start point of the ray.
-    **/
-  /* CompleteClass */
-  override var p1: b2Vec2 = js.native
-  /**
-    * The end point of the ray.
-    **/
-  /* CompleteClass */
-  override var p2: b2Vec2 = js.native
 }
 

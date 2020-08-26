@@ -26,6 +26,7 @@ object Errors extends js.Object {
       */
     def this(`type`: ErrorCode) = this()
     def this(`type`: ErrorCode, message: String) = this()
+    def this(`type`: ErrorCode, message: js.UndefOr[scala.Nothing], path: String) = this()
     def this(`type`: ErrorCode, message: String, path: String) = this()
   }
   

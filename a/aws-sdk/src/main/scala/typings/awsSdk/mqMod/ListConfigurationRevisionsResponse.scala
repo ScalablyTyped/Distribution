@@ -26,18 +26,40 @@ trait ListConfigurationRevisionsResponse extends js.Object {
 
 object ListConfigurationRevisionsResponse {
   @scala.inline
-  def apply(
-    ConfigurationId: string = null,
-    MaxResults: js.UndefOr[integer] = js.undefined,
-    NextToken: string = null,
-    Revisions: listOfConfigurationRevision = null
-  ): ListConfigurationRevisionsResponse = {
+  def apply(): ListConfigurationRevisionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (ConfigurationId != null) __obj.updateDynamic("ConfigurationId")(ConfigurationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Revisions != null) __obj.updateDynamic("Revisions")(Revisions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConfigurationRevisionsResponse]
   }
+  @scala.inline
+  implicit class ListConfigurationRevisionsResponseOps[Self <: ListConfigurationRevisionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationId(value: string): Self = this.set("ConfigurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationId: Self = this.set("ConfigurationId", js.undefined)
+    @scala.inline
+    def setMaxResults(value: integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRevisionsVarargs(value: ConfigurationRevision*): Self = this.set("Revisions", js.Array(value :_*))
+    @scala.inline
+    def setRevisions(value: listOfConfigurationRevision): Self = this.set("Revisions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisions: Self = this.set("Revisions", js.undefined)
+  }
+  
 }
 

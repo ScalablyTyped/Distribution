@@ -16,15 +16,16 @@ import scala.scalajs.js.annotation._
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
+@js.native
 trait CategoryDetails extends js.Object {
   /**
     * The color of the category.
     */
-  var color: CategoryColor | String
+  var color: CategoryColor | String = js.native
   /**
     * The name of the category. Maximum length is 255 characters.
     */
-  var displayName: String
+  var displayName: String = js.native
 }
 
 object CategoryDetails {
@@ -33,5 +34,22 @@ object CategoryDetails {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CategoryDetails]
   }
+  @scala.inline
+  implicit class CategoryDetailsOps[Self <: CategoryDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: CategoryColor | String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

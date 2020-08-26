@@ -4,41 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxTreeListEditingTexts extends GridBaseEditingTexts {
   /** @name dxTreeList.Options.editing.texts.addRowToNode */
-  var addRowToNode: js.UndefOr[String] = js.undefined
+  var addRowToNode: js.UndefOr[String] = js.native
 }
 
 object dxTreeListEditingTexts {
   @scala.inline
-  def apply(
-    addRow: String = null,
-    addRowToNode: String = null,
-    cancelAllChanges: String = null,
-    cancelRowChanges: String = null,
-    confirmDeleteMessage: String = null,
-    confirmDeleteTitle: String = null,
-    deleteRow: String = null,
-    editRow: String = null,
-    saveAllChanges: String = null,
-    saveRowChanges: String = null,
-    undeleteRow: String = null,
-    validationCancelChanges: String = null
-  ): dxTreeListEditingTexts = {
+  def apply(): dxTreeListEditingTexts = {
     val __obj = js.Dynamic.literal()
-    if (addRow != null) __obj.updateDynamic("addRow")(addRow.asInstanceOf[js.Any])
-    if (addRowToNode != null) __obj.updateDynamic("addRowToNode")(addRowToNode.asInstanceOf[js.Any])
-    if (cancelAllChanges != null) __obj.updateDynamic("cancelAllChanges")(cancelAllChanges.asInstanceOf[js.Any])
-    if (cancelRowChanges != null) __obj.updateDynamic("cancelRowChanges")(cancelRowChanges.asInstanceOf[js.Any])
-    if (confirmDeleteMessage != null) __obj.updateDynamic("confirmDeleteMessage")(confirmDeleteMessage.asInstanceOf[js.Any])
-    if (confirmDeleteTitle != null) __obj.updateDynamic("confirmDeleteTitle")(confirmDeleteTitle.asInstanceOf[js.Any])
-    if (deleteRow != null) __obj.updateDynamic("deleteRow")(deleteRow.asInstanceOf[js.Any])
-    if (editRow != null) __obj.updateDynamic("editRow")(editRow.asInstanceOf[js.Any])
-    if (saveAllChanges != null) __obj.updateDynamic("saveAllChanges")(saveAllChanges.asInstanceOf[js.Any])
-    if (saveRowChanges != null) __obj.updateDynamic("saveRowChanges")(saveRowChanges.asInstanceOf[js.Any])
-    if (undeleteRow != null) __obj.updateDynamic("undeleteRow")(undeleteRow.asInstanceOf[js.Any])
-    if (validationCancelChanges != null) __obj.updateDynamic("validationCancelChanges")(validationCancelChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTreeListEditingTexts]
   }
+  @scala.inline
+  implicit class dxTreeListEditingTextsOps[Self <: dxTreeListEditingTexts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddRowToNode(value: String): Self = this.set("addRowToNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddRowToNode: Self = this.set("addRowToNode", js.undefined)
+  }
+  
 }
 

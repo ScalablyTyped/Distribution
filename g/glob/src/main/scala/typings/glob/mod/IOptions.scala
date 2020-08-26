@@ -9,95 +9,126 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IOptions
   extends typings.minimatch.mod.IOptions {
-  var absolute: js.UndefOr[Boolean] = js.undefined
-  var cache: js.UndefOr[StringDictionary[Boolean | DIR | FILE | js.Array[String]]] = js.undefined
-  var cwd: js.UndefOr[String] = js.undefined
-  var follow: js.UndefOr[Boolean] = js.undefined
-  var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
-  var mark: js.UndefOr[Boolean] = js.undefined
-  var nodir: js.UndefOr[Boolean] = js.undefined
-  var nomount: js.UndefOr[Boolean] = js.undefined
-  var nosort: js.UndefOr[Boolean] = js.undefined
-  var nounique: js.UndefOr[Boolean] = js.undefined
-  var realpath: js.UndefOr[Boolean] = js.undefined
-  var realpathCache: js.UndefOr[StringDictionary[String]] = js.undefined
-  var root: js.UndefOr[String] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
-  var stat: js.UndefOr[Boolean] = js.undefined
-  var statCache: js.UndefOr[StringDictionary[js.UndefOr[`false` | IsDirectory]]] = js.undefined
-  var strict: js.UndefOr[Boolean] = js.undefined
-  var symlinks: js.UndefOr[StringDictionary[js.UndefOr[Boolean]]] = js.undefined
-  var sync: js.UndefOr[Boolean] = js.undefined
+  var absolute: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[StringDictionary[Boolean | DIR | FILE | js.Array[String]]] = js.native
+  var cwd: js.UndefOr[String] = js.native
+  var follow: js.UndefOr[Boolean] = js.native
+  var ignore: js.UndefOr[String | js.Array[String]] = js.native
+  var mark: js.UndefOr[Boolean] = js.native
+  var nodir: js.UndefOr[Boolean] = js.native
+  var nomount: js.UndefOr[Boolean] = js.native
+  var nosort: js.UndefOr[Boolean] = js.native
+  var nounique: js.UndefOr[Boolean] = js.native
+  var realpath: js.UndefOr[Boolean] = js.native
+  var realpathCache: js.UndefOr[StringDictionary[String]] = js.native
+  var root: js.UndefOr[String] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
+  var stat: js.UndefOr[Boolean] = js.native
+  var statCache: js.UndefOr[StringDictionary[js.UndefOr[`false` | IsDirectory]]] = js.native
+  var strict: js.UndefOr[Boolean] = js.native
+  var symlinks: js.UndefOr[StringDictionary[js.UndefOr[Boolean]]] = js.native
+  var sync: js.UndefOr[Boolean] = js.native
 }
 
 object IOptions {
   @scala.inline
-  def apply(
-    absolute: js.UndefOr[Boolean] = js.undefined,
-    cache: StringDictionary[Boolean | DIR | FILE | js.Array[String]] = null,
-    cwd: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    flipNegate: js.UndefOr[Boolean] = js.undefined,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    ignore: String | js.Array[String] = null,
-    mark: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.UndefOr[Boolean] = js.undefined,
-    nobrace: js.UndefOr[Boolean] = js.undefined,
-    nocase: js.UndefOr[Boolean] = js.undefined,
-    nocomment: js.UndefOr[Boolean] = js.undefined,
-    nodir: js.UndefOr[Boolean] = js.undefined,
-    noext: js.UndefOr[Boolean] = js.undefined,
-    noglobstar: js.UndefOr[Boolean] = js.undefined,
-    nomount: js.UndefOr[Boolean] = js.undefined,
-    nonegate: js.UndefOr[Boolean] = js.undefined,
-    nonull: js.UndefOr[Boolean] = js.undefined,
-    nosort: js.UndefOr[Boolean] = js.undefined,
-    nounique: js.UndefOr[Boolean] = js.undefined,
-    realpath: js.UndefOr[Boolean] = js.undefined,
-    realpathCache: StringDictionary[String] = null,
-    root: String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    stat: js.UndefOr[Boolean] = js.undefined,
-    statCache: StringDictionary[js.UndefOr[`false` | IsDirectory]] = null,
-    strict: js.UndefOr[Boolean] = js.undefined,
-    symlinks: StringDictionary[js.UndefOr[Boolean]] = null,
-    sync: js.UndefOr[Boolean] = js.undefined
-  ): IOptions = {
+  def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(absolute)) __obj.updateDynamic("absolute")(absolute.get.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodir)) __obj.updateDynamic("nodir")(nodir.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noext)) __obj.updateDynamic("noext")(noext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noglobstar)) __obj.updateDynamic("noglobstar")(noglobstar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nomount)) __obj.updateDynamic("nomount")(nomount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonegate)) __obj.updateDynamic("nonegate")(nonegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonull)) __obj.updateDynamic("nonull")(nonull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nosort)) __obj.updateDynamic("nosort")(nosort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nounique)) __obj.updateDynamic("nounique")(nounique.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(realpath)) __obj.updateDynamic("realpath")(realpath.get.asInstanceOf[js.Any])
-    if (realpathCache != null) __obj.updateDynamic("realpathCache")(realpathCache.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stat)) __obj.updateDynamic("stat")(stat.get.asInstanceOf[js.Any])
-    if (statCache != null) __obj.updateDynamic("statCache")(statCache.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
-    if (symlinks != null) __obj.updateDynamic("symlinks")(symlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions]
   }
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbsolute(value: Boolean): Self = this.set("absolute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsolute: Self = this.set("absolute", js.undefined)
+    @scala.inline
+    def setCache(value: StringDictionary[Boolean | DIR | FILE | js.Array[String]]): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollow: Self = this.set("follow", js.undefined)
+    @scala.inline
+    def setIgnoreVarargs(value: String*): Self = this.set("ignore", js.Array(value :_*))
+    @scala.inline
+    def setIgnore(value: String | js.Array[String]): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setMark(value: Boolean): Self = this.set("mark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMark: Self = this.set("mark", js.undefined)
+    @scala.inline
+    def setNodir(value: Boolean): Self = this.set("nodir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodir: Self = this.set("nodir", js.undefined)
+    @scala.inline
+    def setNomount(value: Boolean): Self = this.set("nomount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNomount: Self = this.set("nomount", js.undefined)
+    @scala.inline
+    def setNosort(value: Boolean): Self = this.set("nosort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNosort: Self = this.set("nosort", js.undefined)
+    @scala.inline
+    def setNounique(value: Boolean): Self = this.set("nounique", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNounique: Self = this.set("nounique", js.undefined)
+    @scala.inline
+    def setRealpath(value: Boolean): Self = this.set("realpath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealpath: Self = this.set("realpath", js.undefined)
+    @scala.inline
+    def setRealpathCache(value: StringDictionary[String]): Self = this.set("realpathCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealpathCache: Self = this.set("realpathCache", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setStat(value: Boolean): Self = this.set("stat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStat: Self = this.set("stat", js.undefined)
+    @scala.inline
+    def setStatCache(value: StringDictionary[js.UndefOr[`false` | IsDirectory]]): Self = this.set("statCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatCache: Self = this.set("statCache", js.undefined)
+    @scala.inline
+    def setStrict(value: Boolean): Self = this.set("strict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrict: Self = this.set("strict", js.undefined)
+    @scala.inline
+    def setSymlinks(value: StringDictionary[js.UndefOr[Boolean]]): Self = this.set("symlinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymlinks: Self = this.set("symlinks", js.undefined)
+    @scala.inline
+    def setSync(value: Boolean): Self = this.set("sync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSync: Self = this.set("sync", js.undefined)
+  }
+  
 }
 

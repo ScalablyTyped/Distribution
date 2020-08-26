@@ -4,47 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IosMobileAppConfiguration extends ManagedDeviceMobileAppConfiguration {
   // mdm app configuration Base64 binary.
-  var encodedSettingXml: js.UndefOr[Double] = js.undefined
+  var encodedSettingXml: js.UndefOr[Double] = js.native
   // app configuration setting items.
-  var settings: js.UndefOr[js.Array[AppConfigurationSettingItem]] = js.undefined
+  var settings: js.UndefOr[js.Array[AppConfigurationSettingItem]] = js.native
 }
 
 object IosMobileAppConfiguration {
   @scala.inline
-  def apply(
-    assignments: js.Array[ManagedDeviceMobileAppConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceStatusSummary: ManagedDeviceMobileAppConfigurationDeviceSummary = null,
-    deviceStatuses: js.Array[ManagedDeviceMobileAppConfigurationDeviceStatus] = null,
-    displayName: String = null,
-    encodedSettingXml: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    settings: js.Array[AppConfigurationSettingItem] = null,
-    targetedMobileApps: js.Array[String] = null,
-    userStatusSummary: ManagedDeviceMobileAppConfigurationUserSummary = null,
-    userStatuses: js.Array[ManagedDeviceMobileAppConfigurationUserStatus] = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): IosMobileAppConfiguration = {
+  def apply(): IosMobileAppConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceStatusSummary != null) __obj.updateDynamic("deviceStatusSummary")(deviceStatusSummary.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(encodedSettingXml)) __obj.updateDynamic("encodedSettingXml")(encodedSettingXml.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (targetedMobileApps != null) __obj.updateDynamic("targetedMobileApps")(targetedMobileApps.asInstanceOf[js.Any])
-    if (userStatusSummary != null) __obj.updateDynamic("userStatusSummary")(userStatusSummary.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosMobileAppConfiguration]
   }
+  @scala.inline
+  implicit class IosMobileAppConfigurationOps[Self <: IosMobileAppConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncodedSettingXml(value: Double): Self = this.set("encodedSettingXml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodedSettingXml: Self = this.set("encodedSettingXml", js.undefined)
+    @scala.inline
+    def setSettingsVarargs(value: AppConfigurationSettingItem*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: js.Array[AppConfigurationSettingItem]): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+  }
+  
 }
 

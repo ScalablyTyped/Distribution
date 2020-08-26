@@ -7,33 +7,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** gives access to the text and formatting of a fixed hyperlink field. */
+@js.native
 trait XFixedHyperlink extends XInterface {
   /** returns the alignment of the text in the control. */
-  var Alignment: Double
+  var Alignment: Double = js.native
   /** returns the text of the control. */
-  var Text: String
+  var Text: String = js.native
   /** returns the url of the control. */
-  var URL: String
+  var URL: String = js.native
   /** registers an event handler for click action event. */
-  def addActionListener(l: XActionListener): Unit
+  def addActionListener(l: XActionListener): Unit = js.native
   /** returns the alignment of the text in the control. */
-  def getAlignment(): Double
+  def getAlignment(): Double = js.native
   /** returns the text of the control. */
-  def getText(): String
+  def getText(): String = js.native
   /** returns the url of the control. */
-  def getURL(): String
+  def getURL(): String = js.native
   /** unregisters an event handler for click action event. */
-  def removeActionListener(l: XActionListener): Unit
+  def removeActionListener(l: XActionListener): Unit = js.native
   /**
     * sets the alignment of the text in the control.
     *
     * `; 0: left; 1: center; 2: right; `
     */
-  def setAlignment(nAlign: Double): Unit
+  def setAlignment(nAlign: Double): Unit = js.native
   /** sets the text of the control. */
-  def setText(Text: String): Unit
+  def setText(Text: String): Unit = js.native
   /** sets the url of the control. */
-  def setURL(URL: String): Unit
+  def setURL(URL: String): Unit = js.native
 }
 
 object XFixedHyperlink {
@@ -57,5 +58,40 @@ object XFixedHyperlink {
     val __obj = js.Dynamic.literal(Alignment = Alignment.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addActionListener = js.Any.fromFunction1(addActionListener), getAlignment = js.Any.fromFunction0(getAlignment), getText = js.Any.fromFunction0(getText), getURL = js.Any.fromFunction0(getURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeActionListener = js.Any.fromFunction1(removeActionListener), setAlignment = js.Any.fromFunction1(setAlignment), setText = js.Any.fromFunction1(setText), setURL = js.Any.fromFunction1(setURL))
     __obj.asInstanceOf[XFixedHyperlink]
   }
+  @scala.inline
+  implicit class XFixedHyperlinkOps[Self <: XFixedHyperlink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: Double): Self = this.set("Alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: String): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setURL(value: String): Self = this.set("URL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddActionListener(value: XActionListener => Unit): Self = this.set("addActionListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetAlignment(value: () => Double): Self = this.set("getAlignment", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetText(value: () => String): Self = this.set("getText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetURL(value: () => String): Self = this.set("getURL", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemoveActionListener(value: XActionListener => Unit): Self = this.set("removeActionListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetAlignment(value: Double => Unit): Self = this.set("setAlignment", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetText(value: String => Unit): Self = this.set("setText", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetURL(value: String => Unit): Self = this.set("setURL", js.Any.fromFunction1(value))
+  }
+  
 }
 

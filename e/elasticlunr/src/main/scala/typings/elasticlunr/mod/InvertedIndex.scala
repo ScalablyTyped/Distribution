@@ -10,6 +10,7 @@ class InvertedIndex () extends js.Object {
   def addToken(token: String, tokenInfo: TokenInfo): Unit = js.native
   def addToken(token: String, tokenInfo: TokenInfo, root: InvertedIndexNode): Unit = js.native
   def expandToken(token: String): js.Array[String] = js.native
+  def expandToken(token: String, memo: js.UndefOr[scala.Nothing], root: InvertedIndexNode): js.Array[String] = js.native
   def expandToken(token: String, memo: js.Array[String]): js.Array[String] = js.native
   def expandToken(token: String, memo: js.Array[String], root: InvertedIndexNode): js.Array[String] = js.native
   def getDocFreq(token: String): Double = js.native

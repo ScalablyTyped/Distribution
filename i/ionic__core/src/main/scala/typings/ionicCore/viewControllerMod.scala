@@ -3,6 +3,7 @@ package typings.ionicCore
 import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.mod.FrameworkDelegate
+import typings.ionicCore.navInterfaceMod.NavComponentWithProps
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -34,8 +35,10 @@ object viewControllerMod extends js.Object {
   val VIEW_STATE_NEW: /* 1 */ Double = js.native
   def convertToView(page: js.Any): ViewController | Null = js.native
   def convertToView(page: js.Any, params: ComponentProps[Null]): ViewController | Null = js.native
-  def convertToViews(pages: js.Array[_]): js.Array[ViewController] = js.native
-  def matches(view: js.UndefOr[ViewController], id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
-  def matches(view: js.UndefOr[ViewController], id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
+  def convertToViews(pages: js.Array[NavComponentWithProps[_]]): js.Array[ViewController] = js.native
+  def matches(view: js.UndefOr[scala.Nothing], id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
+  def matches(view: js.UndefOr[scala.Nothing], id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
+  def matches(view: ViewController, id: String): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
+  def matches(view: ViewController, id: String, params: ComponentProps[Null]): /* is @ionic/core.@ionic/core/dist/types/components/nav/view-controller.ViewController */ Boolean = js.native
 }
 

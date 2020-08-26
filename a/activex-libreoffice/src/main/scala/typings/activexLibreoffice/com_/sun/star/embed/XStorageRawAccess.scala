@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This interface represents main storage functionality. */
+@js.native
 trait XStorageRawAccess extends js.Object {
   /**
     * allows to get a plain raw stream representing a package stream.
@@ -20,7 +21,7 @@ trait XStorageRawAccess extends js.Object {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def getPlainRawStreamElement(sStreamName: String): XInputStream
+  def getPlainRawStreamElement(sStreamName: String): XInputStream = js.native
   /**
     * allows to get a raw stream representing encrypted stream with header.
     *
@@ -39,7 +40,7 @@ trait XStorageRawAccess extends js.Object {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def getRawEncrStreamElement(sStreamName: String): XInputStream
+  def getRawEncrStreamElement(sStreamName: String): XInputStream = js.native
   /**
     * allows to insert a raw stream representing encrypted stream with header.
     *
@@ -57,7 +58,7 @@ trait XStorageRawAccess extends js.Object {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def insertRawEncrStreamElement(sStreamName: String, xInStream: XInputStream): Unit
+  def insertRawEncrStreamElement(sStreamName: String, xInStream: XInputStream): Unit = js.native
 }
 
 object XStorageRawAccess {
@@ -70,5 +71,24 @@ object XStorageRawAccess {
     val __obj = js.Dynamic.literal(getPlainRawStreamElement = js.Any.fromFunction1(getPlainRawStreamElement), getRawEncrStreamElement = js.Any.fromFunction1(getRawEncrStreamElement), insertRawEncrStreamElement = js.Any.fromFunction2(insertRawEncrStreamElement))
     __obj.asInstanceOf[XStorageRawAccess]
   }
+  @scala.inline
+  implicit class XStorageRawAccessOps[Self <: XStorageRawAccess] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetPlainRawStreamElement(value: String => XInputStream): Self = this.set("getPlainRawStreamElement", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetRawEncrStreamElement(value: String => XInputStream): Self = this.set("getRawEncrStreamElement", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInsertRawEncrStreamElement(value: (String, XInputStream) => Unit): Self = this.set("insertRawEncrStreamElement", js.Any.fromFunction2(value))
+  }
+  
 }
 

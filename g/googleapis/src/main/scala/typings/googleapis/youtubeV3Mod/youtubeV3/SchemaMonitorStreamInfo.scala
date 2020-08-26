@@ -33,16 +33,34 @@ trait SchemaMonitorStreamInfo extends js.Object {
 
 object SchemaMonitorStreamInfo {
   @scala.inline
-  def apply(
-    broadcastStreamDelayMs: js.UndefOr[Double] = js.undefined,
-    embedHtml: String = null,
-    enableMonitorStream: js.UndefOr[Boolean] = js.undefined
-  ): SchemaMonitorStreamInfo = {
+  def apply(): SchemaMonitorStreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(broadcastStreamDelayMs)) __obj.updateDynamic("broadcastStreamDelayMs")(broadcastStreamDelayMs.get.asInstanceOf[js.Any])
-    if (embedHtml != null) __obj.updateDynamic("embedHtml")(embedHtml.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMonitorStream)) __obj.updateDynamic("enableMonitorStream")(enableMonitorStream.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMonitorStreamInfo]
   }
+  @scala.inline
+  implicit class SchemaMonitorStreamInfoOps[Self <: SchemaMonitorStreamInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBroadcastStreamDelayMs(value: Double): Self = this.set("broadcastStreamDelayMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBroadcastStreamDelayMs: Self = this.set("broadcastStreamDelayMs", js.undefined)
+    @scala.inline
+    def setEmbedHtml(value: String): Self = this.set("embedHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedHtml: Self = this.set("embedHtml", js.undefined)
+    @scala.inline
+    def setEnableMonitorStream(value: Boolean): Self = this.set("enableMonitorStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableMonitorStream: Self = this.set("enableMonitorStream", js.undefined)
+  }
+  
 }
 

@@ -38,23 +38,48 @@ trait ListApplicationRevisionsInput extends js.Object {
 
 object ListApplicationRevisionsInput {
   @scala.inline
-  def apply(
-    applicationName: ApplicationName,
-    deployed: ListStateFilterAction = null,
-    nextToken: NextToken = null,
-    s3Bucket: S3Bucket = null,
-    s3KeyPrefix: S3Key = null,
-    sortBy: ApplicationRevisionSortBy = null,
-    sortOrder: SortOrder = null
-  ): ListApplicationRevisionsInput = {
+  def apply(applicationName: ApplicationName): ListApplicationRevisionsInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
-    if (deployed != null) __obj.updateDynamic("deployed")(deployed.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
-    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationRevisionsInput]
   }
+  @scala.inline
+  implicit class ListApplicationRevisionsInputOps[Self <: ListApplicationRevisionsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeployed(value: ListStateFilterAction): Self = this.set("deployed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployed: Self = this.set("deployed", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: S3Bucket): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    @scala.inline
+    def setS3KeyPrefix(value: S3Key): Self = this.set("s3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KeyPrefix: Self = this.set("s3KeyPrefix", js.undefined)
+    @scala.inline
+    def setSortBy(value: ApplicationRevisionSortBy): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    @scala.inline
+    def setSortOrder(value: SortOrder): Self = this.set("sortOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortOrder: Self = this.set("sortOrder", js.undefined)
+  }
+  
 }
 

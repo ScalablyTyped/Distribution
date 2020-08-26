@@ -28,29 +28,53 @@ trait GetResolverRuleArgs extends js.Object {
     */
   val ruleType: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags assigned to the resolver rule.
+    * A map of tags assigned to the resolver rule.
     */
-  val tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val tags: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object GetResolverRuleArgs {
   @scala.inline
-  def apply(
-    domainName: String = null,
-    name: String = null,
-    resolverEndpointId: String = null,
-    resolverRuleId: String = null,
-    ruleType: String = null,
-    tags: StringDictionary[js.Any] = null
-  ): GetResolverRuleArgs = {
+  def apply(): GetResolverRuleArgs = {
     val __obj = js.Dynamic.literal()
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resolverEndpointId != null) __obj.updateDynamic("resolverEndpointId")(resolverEndpointId.asInstanceOf[js.Any])
-    if (resolverRuleId != null) __obj.updateDynamic("resolverRuleId")(resolverRuleId.asInstanceOf[js.Any])
-    if (ruleType != null) __obj.updateDynamic("ruleType")(ruleType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResolverRuleArgs]
   }
+  @scala.inline
+  implicit class GetResolverRuleArgsOps[Self <: GetResolverRuleArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResolverEndpointId(value: String): Self = this.set("resolverEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverEndpointId: Self = this.set("resolverEndpointId", js.undefined)
+    @scala.inline
+    def setResolverRuleId(value: String): Self = this.set("resolverRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolverRuleId: Self = this.set("resolverRuleId", js.undefined)
+    @scala.inline
+    def setRuleType(value: String): Self = this.set("ruleType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleType: Self = this.set("ruleType", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

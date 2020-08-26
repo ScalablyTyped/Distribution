@@ -13,9 +13,9 @@ trait HostedPublicVirtualInterfaceAccepterState extends js.Object {
     */
   val arn: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The ID of the Direct Connect virtual interface to accept.
     */
@@ -24,16 +24,34 @@ trait HostedPublicVirtualInterfaceAccepterState extends js.Object {
 
 object HostedPublicVirtualInterfaceAccepterState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    virtualInterfaceId: Input[String] = null
-  ): HostedPublicVirtualInterfaceAccepterState = {
+  def apply(): HostedPublicVirtualInterfaceAccepterState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedPublicVirtualInterfaceAccepterState]
   }
+  @scala.inline
+  implicit class HostedPublicVirtualInterfaceAccepterStateOps[Self <: HostedPublicVirtualInterfaceAccepterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVirtualInterfaceId(value: Input[String]): Self = this.set("virtualInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualInterfaceId: Self = this.set("virtualInterfaceId", js.undefined)
+  }
+  
 }
 

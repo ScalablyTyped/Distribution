@@ -17,6 +17,7 @@ class CylinderOutlineGeometry protected () extends Packable {
 object CylinderOutlineGeometry extends js.Object {
   def createGeometry(cylinderGeometry: CylinderOutlineGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): CylinderOutlineGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: CylinderOutlineGeometry): CylinderOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): CylinderOutlineGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: CylinderOutlineGeometry): CylinderOutlineGeometry = js.native
 }

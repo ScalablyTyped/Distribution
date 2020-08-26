@@ -12,7 +12,7 @@ Task registry that allows composition through series/parallel methods.
 | Keywords           | registry, runner, task |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 28272073 |
+| # downloads        | 29006181 |
 | # stars            | 4 |
 
 ## Links

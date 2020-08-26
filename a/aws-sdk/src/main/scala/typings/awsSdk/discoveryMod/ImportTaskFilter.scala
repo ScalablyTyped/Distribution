@@ -18,11 +18,32 @@ trait ImportTaskFilter extends js.Object {
 
 object ImportTaskFilter {
   @scala.inline
-  def apply(name: ImportTaskFilterName = null, values: ImportTaskFilterValueList = null): ImportTaskFilter = {
+  def apply(): ImportTaskFilter = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportTaskFilter]
   }
+  @scala.inline
+  implicit class ImportTaskFilterOps[Self <: ImportTaskFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: ImportTaskFilterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: ImportTaskFilterValue*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: ImportTaskFilterValueList): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,46 @@ trait ProvisioningTemplateSummary extends js.Object {
 
 object ProvisioningTemplateSummary {
   @scala.inline
-  def apply(
-    creationDate: DateType = null,
-    description: TemplateDescription = null,
-    enabled: js.UndefOr[Enabled] = js.undefined,
-    lastModifiedDate: DateType = null,
-    templateArn: TemplateArn = null,
-    templateName: TemplateName = null
-  ): ProvisioningTemplateSummary = {
+  def apply(): ProvisioningTemplateSummary = {
     val __obj = js.Dynamic.literal()
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (templateArn != null) __obj.updateDynamic("templateArn")(templateArn.asInstanceOf[js.Any])
-    if (templateName != null) __obj.updateDynamic("templateName")(templateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningTemplateSummary]
   }
+  @scala.inline
+  implicit class ProvisioningTemplateSummaryOps[Self <: ProvisioningTemplateSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: TemplateDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnabled(value: Enabled): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setTemplateArn(value: TemplateArn): Self = this.set("templateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateArn: Self = this.set("templateArn", js.undefined)
+    @scala.inline
+    def setTemplateName(value: TemplateName): Self = this.set("templateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("templateName", js.undefined)
+  }
+  
 }
 

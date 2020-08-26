@@ -30,20 +30,46 @@ trait DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest ext
 
 object DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds: LocalGatewayRouteTableVirtualInterfaceGroupAssociationIdSet = null,
-    MaxResults: js.UndefOr[LocalGatewayMaxResults] = js.undefined,
-    NextToken: String = null
-  ): DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest = {
+  def apply(): DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds != null) __obj.updateDynamic("LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds")(LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest]
   }
+  @scala.inline
+  implicit class DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestOps[Self <: DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationIdsVarargs(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociationId*): Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds", js.Array(value :_*))
+    @scala.inline
+    def setLocalGatewayRouteTableVirtualInterfaceGroupAssociationIds(value: LocalGatewayRouteTableVirtualInterfaceGroupAssociationIdSet): Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationIds: Self = this.set("LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds", js.undefined)
+    @scala.inline
+    def setMaxResults(value: LocalGatewayMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

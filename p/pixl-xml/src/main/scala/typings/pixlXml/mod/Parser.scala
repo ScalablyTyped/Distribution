@@ -29,6 +29,7 @@ class Parser[OutputJsonInterface] protected () extends js.Object {
     * @param eol
     */
   def compose(): String = js.native
+  def compose(indentCharacter: js.UndefOr[scala.Nothing], eol: String): String = js.native
   def compose(indentCharacter: String): String = js.native
   def compose(indentCharacter: String, eol: String): String = js.native
   /**

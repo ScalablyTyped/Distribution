@@ -2,7 +2,7 @@ package typings.reactNative.mod
 
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
-import typings.reactNative.anon.`1`
+import typings.reactNative.anon.AnimatedBoolean
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,10 +37,15 @@ class ScrollView ()
     * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
     */
   def scrollTo(): Unit = js.native
+  def scrollTo(y: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
+  def scrollTo(y: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
+  def scrollTo(y: js.UndefOr[scala.Nothing], x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: Double): Unit = js.native
+  def scrollTo(y: Double, x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
   /**
@@ -52,6 +57,6 @@ class ScrollView ()
     * The animated prop defaults to true
     */
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(options: `1`): Unit = js.native
+  def scrollToEnd(options: AnimatedBoolean): Unit = js.native
 }
 

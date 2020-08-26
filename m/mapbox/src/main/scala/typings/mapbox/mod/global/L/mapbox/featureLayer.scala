@@ -13,6 +13,7 @@ object featureLayer extends js.Object {
     * L.mapbox.featureLayer provides an easy way to integrate GeoJSON from Mapbox and elsewhere into your map.
     */
   def apply(): FeatureLayer_ = js.native
+  def apply(idOrGeoJson: js.UndefOr[scala.Nothing], options: FeatureLayerOptions): FeatureLayer_ = js.native
   def apply(idOrGeoJson: js.Any): FeatureLayer_ = js.native
   def apply(idOrGeoJson: js.Any, options: FeatureLayerOptions): FeatureLayer_ = js.native
 }

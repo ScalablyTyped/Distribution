@@ -18,7 +18,11 @@ trait TextColumns extends js.Object {
   @JSName("Word.TextColumns_typekey")
   var WordDotTextColumns_typekey: TextColumns = js.native
   def Add(): TextColumn = js.native
+  def Add(Width: js.UndefOr[scala.Nothing], Spacing: js.UndefOr[scala.Nothing], EvenlySpaced: js.Any): TextColumn = js.native
+  def Add(Width: js.UndefOr[scala.Nothing], Spacing: js.Any): TextColumn = js.native
+  def Add(Width: js.UndefOr[scala.Nothing], Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
   def Add(Width: js.Any): TextColumn = js.native
+  def Add(Width: js.Any, Spacing: js.UndefOr[scala.Nothing], EvenlySpaced: js.Any): TextColumn = js.native
   def Add(Width: js.Any, Spacing: js.Any): TextColumn = js.native
   def Add(Width: js.Any, Spacing: js.Any, EvenlySpaced: js.Any): TextColumn = js.native
   def Item(Index: Double): TextColumn = js.native

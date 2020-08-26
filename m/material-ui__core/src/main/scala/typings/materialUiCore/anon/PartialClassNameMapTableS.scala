@@ -16,20 +16,42 @@ trait PartialClassNameMapTableS extends js.Object {
 
 object PartialClassNameMapTableS {
   @scala.inline
-  def apply(
-    active: String = null,
-    icon: String = null,
-    iconDirectionAsc: String = null,
-    iconDirectionDesc: String = null,
-    root: String = null
-  ): PartialClassNameMapTableS = {
+  def apply(): PartialClassNameMapTableS = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconDirectionAsc != null) __obj.updateDynamic("iconDirectionAsc")(iconDirectionAsc.asInstanceOf[js.Any])
-    if (iconDirectionDesc != null) __obj.updateDynamic("iconDirectionDesc")(iconDirectionDesc.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTableS]
   }
+  @scala.inline
+  implicit class PartialClassNameMapTableSOps[Self <: PartialClassNameMapTableS] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconDirectionAsc(value: String): Self = this.set("iconDirectionAsc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconDirectionAsc: Self = this.set("iconDirectionAsc", js.undefined)
+    @scala.inline
+    def setIconDirectionDesc(value: String): Self = this.set("iconDirectionDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconDirectionDesc: Self = this.set("iconDirectionDesc", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

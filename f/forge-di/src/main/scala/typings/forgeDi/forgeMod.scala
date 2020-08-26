@@ -19,11 +19,13 @@ object forgeMod extends js.Object {
     var inspector: Inspector = js.native
     def bind(name: String): typings.forgeDi.bindingMod.default = js.native
     def get[T](name: String): T = js.native
+    def get[T](name: String, hint: js.UndefOr[scala.Nothing], args: Arguments): T = js.native
     def get[T](name: String, hint: js.Any): T = js.native
     def get[T](name: String, hint: js.Any, args: Arguments): T = js.native
     def getAll[T](name: String): js.Array[T] = js.native
     def getAll[T](name: String, args: Arguments): js.Array[T] = js.native
     def getOne[T](name: String): T = js.native
+    def getOne[T](name: String, hint: js.UndefOr[scala.Nothing], args: Arguments): T = js.native
     def getOne[T](name: String, hint: js.Any): T = js.native
     def getOne[T](name: String, hint: js.Any, args: Arguments): T = js.native
     def inspect(): String = js.native

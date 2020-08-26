@@ -41,6 +41,7 @@ trait Runner extends ExecFunction {
   @JSName("execSync")
   def execSync_Buffer(command: String): Buffer = js.native
   def spawn(command: String): ChildProcessWithoutNullStreams = js.native
+  def spawn(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
   def spawn(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
   def spawn(
@@ -56,6 +57,9 @@ trait Runner extends ExecFunction {
   ): ChildProcessByStdio[Null, Null, Null] = js.native
   def spawn(command: String, options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def spawnSync(command: String): SpawnSyncReturns[Buffer] = js.native
+  def spawnSync(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
+  def spawnSync(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native
+  def spawnSync(command: String, args: js.UndefOr[scala.Nothing], options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = js.native
   def spawnSync(command: String, args: js.Array[String]): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = js.native
   def spawnSync(command: String, args: js.Array[String], options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = js.native

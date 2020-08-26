@@ -46,28 +46,60 @@ trait TransformFilterCriteria extends js.Object {
 
 object TransformFilterCriteria {
   @scala.inline
-  def apply(
-    CreatedAfter: Timestamp = null,
-    CreatedBefore: Timestamp = null,
-    GlueVersion: GlueVersionString = null,
-    LastModifiedAfter: Timestamp = null,
-    LastModifiedBefore: Timestamp = null,
-    Name: NameString = null,
-    Schema: TransformSchema = null,
-    Status: TransformStatusType = null,
-    TransformType: TransformType = null
-  ): TransformFilterCriteria = {
+  def apply(): TransformFilterCriteria = {
     val __obj = js.Dynamic.literal()
-    if (CreatedAfter != null) __obj.updateDynamic("CreatedAfter")(CreatedAfter.asInstanceOf[js.Any])
-    if (CreatedBefore != null) __obj.updateDynamic("CreatedBefore")(CreatedBefore.asInstanceOf[js.Any])
-    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (LastModifiedAfter != null) __obj.updateDynamic("LastModifiedAfter")(LastModifiedAfter.asInstanceOf[js.Any])
-    if (LastModifiedBefore != null) __obj.updateDynamic("LastModifiedBefore")(LastModifiedBefore.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Schema != null) __obj.updateDynamic("Schema")(Schema.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TransformType != null) __obj.updateDynamic("TransformType")(TransformType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformFilterCriteria]
   }
+  @scala.inline
+  implicit class TransformFilterCriteriaOps[Self <: TransformFilterCriteria] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAfter(value: Timestamp): Self = this.set("CreatedAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAfter: Self = this.set("CreatedAfter", js.undefined)
+    @scala.inline
+    def setCreatedBefore(value: Timestamp): Self = this.set("CreatedBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBefore: Self = this.set("CreatedBefore", js.undefined)
+    @scala.inline
+    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    @scala.inline
+    def setLastModifiedAfter(value: Timestamp): Self = this.set("LastModifiedAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedAfter: Self = this.set("LastModifiedAfter", js.undefined)
+    @scala.inline
+    def setLastModifiedBefore(value: Timestamp): Self = this.set("LastModifiedBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedBefore: Self = this.set("LastModifiedBefore", js.undefined)
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSchemaVarargs(value: SchemaColumn*): Self = this.set("Schema", js.Array(value :_*))
+    @scala.inline
+    def setSchema(value: TransformSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("Schema", js.undefined)
+    @scala.inline
+    def setStatus(value: TransformStatusType): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTransformType(value: TransformType): Self = this.set("TransformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformType: Self = this.set("TransformType", js.undefined)
+  }
+  
 }
 

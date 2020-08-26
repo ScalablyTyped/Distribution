@@ -18,11 +18,30 @@ trait AssociateTrialComponentResponse extends js.Object {
 
 object AssociateTrialComponentResponse {
   @scala.inline
-  def apply(TrialArn: TrialArn = null, TrialComponentArn: TrialComponentArn = null): AssociateTrialComponentResponse = {
+  def apply(): AssociateTrialComponentResponse = {
     val __obj = js.Dynamic.literal()
-    if (TrialArn != null) __obj.updateDynamic("TrialArn")(TrialArn.asInstanceOf[js.Any])
-    if (TrialComponentArn != null) __obj.updateDynamic("TrialComponentArn")(TrialComponentArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTrialComponentResponse]
   }
+  @scala.inline
+  implicit class AssociateTrialComponentResponseOps[Self <: AssociateTrialComponentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrialArn(value: TrialArn): Self = this.set("TrialArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialArn: Self = this.set("TrialArn", js.undefined)
+    @scala.inline
+    def setTrialComponentArn(value: TrialComponentArn): Self = this.set("TrialComponentArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrialComponentArn: Self = this.set("TrialComponentArn", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ SMTP transport for Nodemailer
 | Keywords           | SMTP, Nodemailer |
 | # releases         | 1 |
 | # dependents       | 193 |
-| # downloads        | 16502793 |
+| # downloads        | 15849592 |
 | # stars            | 12 |
 
 ## Links

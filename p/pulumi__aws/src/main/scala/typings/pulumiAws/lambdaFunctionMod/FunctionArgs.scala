@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.arnMod.ARN
 import typings.pulumiAws.inputMod.lambda.FunctionDeadLetterConfig
 import typings.pulumiAws.inputMod.lambda.FunctionEnvironment
+import typings.pulumiAws.inputMod.lambda.FunctionFileSystemConfig
 import typings.pulumiAws.inputMod.lambda.FunctionTracingConfig
 import typings.pulumiAws.inputMod.lambda.FunctionVpcConfig
 import typings.pulumiPulumi.mod.asset.Archive
@@ -31,19 +32,23 @@ trait FunctionArgs extends js.Object {
     */
   val environment: js.UndefOr[Input[FunctionEnvironment]] = js.native
   /**
-    * The function [entrypoint][3] in your code.
+    * The connection settings for an EFS file system. Fields documented below. Before creating or updating Lambda functions with `fileSystemConfig`, EFS mount targets much be in available lifecycle state. Use `dependsOn` to explicitly declare this dependency. See [Using Amazon EFS with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-efs.html).
+    */
+  val fileSystemConfig: js.UndefOr[Input[FunctionFileSystemConfig]] = js.native
+  /**
+    * The function [entrypoint](https://docs.aws.amazon.com/lambda/latest/dg/walkthrough-custom-events-create-test-function.html) in your code.
     */
   val handler: Input[String] = js.native
   /**
-    * The ARN for the KMS encryption key.
+    * Amazon Resource Name (ARN) of the AWS Key Management Service (KMS) key that is used to encrypt environment variables. If this configuration is not provided when environment variables are in use, AWS Lambda uses a default service key. If this configuration is provided when environment variables are not in use, the AWS Lambda API does not save this configuration and this provider will show a perpetual difference of adding the key. To fix the perpetual difference, remove this configuration.
     */
   val kmsKeyArn: js.UndefOr[Input[String]] = js.native
   /**
-    * List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+    * List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)
     */
   val layers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
+    * Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
     */
   val memorySize: js.UndefOr[Input[Double]] = js.native
   /**
@@ -55,15 +60,15 @@ trait FunctionArgs extends js.Object {
     */
   val publish: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
+    * The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency](https://docs.aws.amazon.com/lambda/latest/dg/concurrent-executions.html)
     */
   val reservedConcurrentExecutions: js.UndefOr[Input[Double]] = js.native
   /**
-    * IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model][4] for more details.
+    * IAM role attached to the Lambda Function. This governs both who / what can invoke your Lambda Function, as well as what resources our Lambda Function has access to. See [Lambda Permission Model](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html) for more details.
     */
   val role: Input[ARN] = js.native
   /**
-    * See [Runtimes][6] for valid values.
+    * See [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html#SSS-CreateFunction-request-Runtime) for valid values.
     */
   val runtime: Input[String] = js.native
   /**
@@ -85,63 +90,120 @@ trait FunctionArgs extends js.Object {
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits][5]
+    * The amount of time your Lambda Function has to run in seconds. Defaults to `3`. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
     */
   val timeout: js.UndefOr[Input[Double]] = js.native
   val tracingConfig: js.UndefOr[Input[FunctionTracingConfig]] = js.native
   /**
-    * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
+    * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC](http://docs.aws.amazon.com/lambda/latest/dg/vpc.html)
     */
   val vpcConfig: js.UndefOr[Input[FunctionVpcConfig]] = js.native
 }
 
 object FunctionArgs {
   @scala.inline
-  def apply(
-    handler: Input[String],
-    role: Input[ARN],
-    runtime: Input[String],
-    code: Input[Archive] = null,
-    deadLetterConfig: Input[FunctionDeadLetterConfig] = null,
-    description: Input[String] = null,
-    environment: Input[FunctionEnvironment] = null,
-    kmsKeyArn: Input[String] = null,
-    layers: Input[js.Array[Input[String]]] = null,
-    memorySize: Input[Double] = null,
-    name: Input[String] = null,
-    publish: Input[Boolean] = null,
-    reservedConcurrentExecutions: Input[Double] = null,
-    s3Bucket: Input[String] = null,
-    s3Key: Input[String] = null,
-    s3ObjectVersion: Input[String] = null,
-    sourceCodeHash: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    timeout: Input[Double] = null,
-    tracingConfig: Input[FunctionTracingConfig] = null,
-    vpcConfig: Input[FunctionVpcConfig] = null
-  ): FunctionArgs = {
+  def apply(handler: Input[String], role: Input[ARN], runtime: Input[String]): FunctionArgs = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (deadLetterConfig != null) __obj.updateDynamic("deadLetterConfig")(deadLetterConfig.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (memorySize != null) __obj.updateDynamic("memorySize")(memorySize.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
-    if (reservedConcurrentExecutions != null) __obj.updateDynamic("reservedConcurrentExecutions")(reservedConcurrentExecutions.asInstanceOf[js.Any])
-    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
-    if (s3Key != null) __obj.updateDynamic("s3Key")(s3Key.asInstanceOf[js.Any])
-    if (s3ObjectVersion != null) __obj.updateDynamic("s3ObjectVersion")(s3ObjectVersion.asInstanceOf[js.Any])
-    if (sourceCodeHash != null) __obj.updateDynamic("sourceCodeHash")(sourceCodeHash.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (tracingConfig != null) __obj.updateDynamic("tracingConfig")(tracingConfig.asInstanceOf[js.Any])
-    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionArgs]
   }
+  @scala.inline
+  implicit class FunctionArgsOps[Self <: FunctionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHandler(value: Input[String]): Self = this.set("handler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRole(value: Input[ARN]): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuntime(value: Input[String]): Self = this.set("runtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCode(value: Input[Archive]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setDeadLetterConfig(value: Input[FunctionDeadLetterConfig]): Self = this.set("deadLetterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadLetterConfig: Self = this.set("deadLetterConfig", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnvironment(value: Input[FunctionEnvironment]): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setFileSystemConfig(value: Input[FunctionFileSystemConfig]): Self = this.set("fileSystemConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemConfig: Self = this.set("fileSystemConfig", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: Input[String]): Self = this.set("kmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("kmsKeyArn", js.undefined)
+    @scala.inline
+    def setLayersVarargs(value: Input[String]*): Self = this.set("layers", js.Array(value :_*))
+    @scala.inline
+    def setLayers(value: Input[js.Array[Input[String]]]): Self = this.set("layers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayers: Self = this.set("layers", js.undefined)
+    @scala.inline
+    def setMemorySize(value: Input[Double]): Self = this.set("memorySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemorySize: Self = this.set("memorySize", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPublish(value: Input[Boolean]): Self = this.set("publish", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublish: Self = this.set("publish", js.undefined)
+    @scala.inline
+    def setReservedConcurrentExecutions(value: Input[Double]): Self = this.set("reservedConcurrentExecutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedConcurrentExecutions: Self = this.set("reservedConcurrentExecutions", js.undefined)
+    @scala.inline
+    def setS3Bucket(value: Input[String]): Self = this.set("s3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Bucket: Self = this.set("s3Bucket", js.undefined)
+    @scala.inline
+    def setS3Key(value: Input[String]): Self = this.set("s3Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Key: Self = this.set("s3Key", js.undefined)
+    @scala.inline
+    def setS3ObjectVersion(value: Input[String]): Self = this.set("s3ObjectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3ObjectVersion: Self = this.set("s3ObjectVersion", js.undefined)
+    @scala.inline
+    def setSourceCodeHash(value: Input[String]): Self = this.set("sourceCodeHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeHash: Self = this.set("sourceCodeHash", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTimeout(value: Input[Double]): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTracingConfig(value: Input[FunctionTracingConfig]): Self = this.set("tracingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracingConfig: Self = this.set("tracingConfig", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: Input[FunctionVpcConfig]): Self = this.set("vpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("vpcConfig", js.undefined)
+  }
+  
 }
 

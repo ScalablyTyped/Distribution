@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CellEdit[TRow /* <: js.Object */] extends js.Object {
   /**
     * Accept a custom callback function, after cell saving, this function will be called.
@@ -23,7 +24,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
       /* props */ ColIndex, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Accept a custom callback function, before cell saving, this function will be called.
     * This callback function takes four arguments: row, cellName, cellValue and done.
@@ -46,46 +47,73 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
       /* props */ ColIndex, 
       Boolean | `1`
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Enabling blurToEscape will result in a cell edit being cancelled when the user clicks outside the table during
     * editing.
     * Default is false.
     */
-  var blurToEscape: js.UndefOr[Boolean] = js.undefined
+  var blurToEscape: js.UndefOr[Boolean] = js.native
   /**
     * Enabling blurToSave will trigger a saving event on the cell when the input field becomes deselected. Default is false.
     * In the default condition, you need to press ENTER to save the cell.
     */
-  var blurToSave: js.UndefOr[Boolean] = js.undefined
+  var blurToSave: js.UndefOr[Boolean] = js.native
   /**
     * Spectify which condition will trigger cell editing.(click or dbclick). Required.
     */
-  var mode: CellEditClickMode
+  var mode: CellEditClickMode = js.native
   /**
     * nonEditableRows tell react-bootstrap-table which rows should not be edited on all of the columns. Briefly, its a row level limitation
     * Please assign a callback function, and this function is supposed to be return an array of row keys.
     */
-  var nonEditableRows: js.UndefOr[js.Function0[js.Array[Double | String]]] = js.undefined
+  var nonEditableRows: js.UndefOr[js.Function0[js.Array[Double | String]]] = js.native
 }
 
 object CellEdit {
   @scala.inline
-  def apply[/* <: js.Object */ TRow](
-    mode: CellEditClickMode,
-    afterSaveCell: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ ColIndex) => Unit = null,
-    beforeSaveCell: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ ColIndex) => Boolean | `1` = null,
-    blurToEscape: js.UndefOr[Boolean] = js.undefined,
-    blurToSave: js.UndefOr[Boolean] = js.undefined,
-    nonEditableRows: () => js.Array[Double | String] = null
-  ): CellEdit[TRow] = {
+  def apply[/* <: js.Object */ TRow](mode: CellEditClickMode): CellEdit[TRow] = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (afterSaveCell != null) __obj.updateDynamic("afterSaveCell")(js.Any.fromFunction4(afterSaveCell))
-    if (beforeSaveCell != null) __obj.updateDynamic("beforeSaveCell")(js.Any.fromFunction5(beforeSaveCell))
-    if (!js.isUndefined(blurToEscape)) __obj.updateDynamic("blurToEscape")(blurToEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blurToSave)) __obj.updateDynamic("blurToSave")(blurToSave.get.asInstanceOf[js.Any])
-    if (nonEditableRows != null) __obj.updateDynamic("nonEditableRows")(js.Any.fromFunction0(nonEditableRows))
     __obj.asInstanceOf[CellEdit[TRow]]
   }
+  @scala.inline
+  implicit class CellEditOps[Self <: CellEdit[_], /* <: js.Object */ TRow] (val x: Self with CellEdit[TRow]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: CellEditClickMode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAfterSaveCell(
+      value: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* props */ ColIndex) => Unit
+    ): Self = this.set("afterSaveCell", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteAfterSaveCell: Self = this.set("afterSaveCell", js.undefined)
+    @scala.inline
+    def setBeforeSaveCell(
+      value: (/* row */ TRow, /* keyof TRow */ /* cellName */ String, /* import warning: importer.ImportType#apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, /* done */ js.Function1[/* isValid */ Boolean, Unit], /* props */ ColIndex) => Boolean | `1`
+    ): Self = this.set("beforeSaveCell", js.Any.fromFunction5(value))
+    @scala.inline
+    def deleteBeforeSaveCell: Self = this.set("beforeSaveCell", js.undefined)
+    @scala.inline
+    def setBlurToEscape(value: Boolean): Self = this.set("blurToEscape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlurToEscape: Self = this.set("blurToEscape", js.undefined)
+    @scala.inline
+    def setBlurToSave(value: Boolean): Self = this.set("blurToSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlurToSave: Self = this.set("blurToSave", js.undefined)
+    @scala.inline
+    def setNonEditableRows(value: () => js.Array[Double | String]): Self = this.set("nonEditableRows", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteNonEditableRows: Self = this.set("nonEditableRows", js.undefined)
+  }
+  
 }
 

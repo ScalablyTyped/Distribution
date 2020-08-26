@@ -1,8 +1,8 @@
 package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typings.sourceMap.anon.MappedPositionbiasnumber
-import typings.sourceMap.anon.Positionbiasnumber
+import typings.sourceMap.anon.MappedPositionbiasnumberu
+import typings.sourceMap.anon.Positionbiasnumberundefin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -56,6 +56,11 @@ trait SourceMapConsumer extends js.Object {
     *        `SourceMapConsumer.GENERATED_ORDER`.
     */
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit]): Unit = js.native
+  def eachMapping(
+    callback: js.Function1[/* mapping */ MappingItem, Unit],
+    context: js.UndefOr[scala.Nothing],
+    order: Double
+  ): Unit = js.native
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any): Unit = js.native
   def eachMapping(callback: js.Function1[/* mapping */ MappingItem, Unit], context: js.Any, order: Double): Unit = js.native
   /**
@@ -77,7 +82,7 @@ trait SourceMapConsumer extends js.Object {
     *   - line: The line number in the generated source, or null.
     *   - column: The column number in the generated source, or null.
     */
-  def generatedPositionFor(originalPosition: MappedPositionbiasnumber): NullablePosition = js.native
+  def generatedPositionFor(originalPosition: MappedPositionbiasnumberu): NullablePosition = js.native
   /**
     * Return true if we have the source content for every source in the source
     * map, false otherwise.
@@ -103,7 +108,7 @@ trait SourceMapConsumer extends js.Object {
     *   - column: The column number in the original source, or null.
     *   - name: The original identifier, or null.
     */
-  def originalPositionFor(generatedPosition: Positionbiasnumber): NullableMappedPosition = js.native
+  def originalPositionFor(generatedPosition: Positionbiasnumberundefin): NullableMappedPosition = js.native
   /**
     * Returns the original source content. The only argument is the url of the
     * original source file. Returns null if no original source content is

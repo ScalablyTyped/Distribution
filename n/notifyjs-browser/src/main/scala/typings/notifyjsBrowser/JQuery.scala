@@ -8,7 +8,15 @@ import scala.scalajs.js.annotation._
 trait JQuery extends js.Object {
   @JSName("notify")
   var notify_Original: JQueryStaticNotify = js.native
+  def notify(
+    element: js.UndefOr[scala.Nothing],
+    notificationdata: js.UndefOr[scala.Nothing],
+    options: NotificationOptions
+  ): JQueryStatic = js.native
+  def notify(element: js.UndefOr[scala.Nothing], notificationdata: js.Any): JQueryStatic = js.native
+  def notify(element: js.UndefOr[scala.Nothing], notificationdata: js.Any, options: NotificationOptions): JQueryStatic = js.native
   def notify(element: js.Any): JQueryStatic = js.native
+  def notify(element: js.Any, notificationdata: js.UndefOr[scala.Nothing], options: NotificationOptions): JQueryStatic = js.native
   def notify(element: js.Any, notificationdata: js.Any): JQueryStatic = js.native
   def notify(element: js.Any, notificationdata: js.Any, options: NotificationOptions): JQueryStatic = js.native
 }

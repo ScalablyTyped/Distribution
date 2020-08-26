@@ -39,6 +39,7 @@ object Model extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Get the current class name in string format
@@ -51,7 +52,11 @@ object Model extends js.Object {
     * @param scope Object Same as config.scope.
     */
   def load(): Unit = js.native
+  def load(id: js.UndefOr[scala.Nothing], config: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def load(id: js.UndefOr[scala.Nothing], config: js.Any): Unit = js.native
+  def load(id: js.UndefOr[scala.Nothing], config: js.Any, scope: js.Any): Unit = js.native
   def load(id: Double): Unit = js.native
+  def load(id: Double, config: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def load(id: Double, config: js.Any): Unit = js.native
   def load(id: Double, config: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Override members of this class

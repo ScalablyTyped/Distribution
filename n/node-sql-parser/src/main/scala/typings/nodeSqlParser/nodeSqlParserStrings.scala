@@ -1,6 +1,6 @@
 package typings.nodeSqlParser
 
-import typings.nodeSqlParser.mod.WhilteListCheckMode
+import typings.nodeSqlParser.typesMod.WhilteListCheckMode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -17,6 +17,9 @@ object nodeSqlParserStrings {
   
   @js.native
   sealed trait DISTINCT extends js.Object
+  
+  @js.native
+  sealed trait aggr_func extends js.Object
   
   @js.native
   sealed trait alter extends js.Object
@@ -46,6 +49,9 @@ object nodeSqlParserStrings {
   sealed trait select extends js.Object
   
   @js.native
+  sealed trait star extends js.Object
+  
+  @js.native
   sealed trait table extends WhilteListCheckMode
   
   @js.native
@@ -62,6 +68,8 @@ object nodeSqlParserStrings {
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   @scala.inline
   def DISTINCT: DISTINCT = "DISTINCT".asInstanceOf[DISTINCT]
+  @scala.inline
+  def aggr_func: aggr_func = "aggr_func".asInstanceOf[aggr_func]
   @scala.inline
   def alter: alter = "alter".asInstanceOf[alter]
   @scala.inline
@@ -80,6 +88,8 @@ object nodeSqlParserStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def star: star = "star".asInstanceOf[star]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline

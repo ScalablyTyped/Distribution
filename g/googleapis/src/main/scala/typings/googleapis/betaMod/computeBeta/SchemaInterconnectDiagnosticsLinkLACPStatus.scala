@@ -19,12 +19,34 @@ trait SchemaInterconnectDiagnosticsLinkLACPStatus extends js.Object {
 
 object SchemaInterconnectDiagnosticsLinkLACPStatus {
   @scala.inline
-  def apply(googleSystemId: String = null, neighborSystemId: String = null, state: String = null): SchemaInterconnectDiagnosticsLinkLACPStatus = {
+  def apply(): SchemaInterconnectDiagnosticsLinkLACPStatus = {
     val __obj = js.Dynamic.literal()
-    if (googleSystemId != null) __obj.updateDynamic("googleSystemId")(googleSystemId.asInstanceOf[js.Any])
-    if (neighborSystemId != null) __obj.updateDynamic("neighborSystemId")(neighborSystemId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInterconnectDiagnosticsLinkLACPStatus]
   }
+  @scala.inline
+  implicit class SchemaInterconnectDiagnosticsLinkLACPStatusOps[Self <: SchemaInterconnectDiagnosticsLinkLACPStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGoogleSystemId(value: String): Self = this.set("googleSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleSystemId: Self = this.set("googleSystemId", js.undefined)
+    @scala.inline
+    def setNeighborSystemId(value: String): Self = this.set("neighborSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeighborSystemId: Self = this.set("neighborSystemId", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

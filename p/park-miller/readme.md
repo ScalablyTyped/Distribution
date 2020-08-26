@@ -10,9 +10,9 @@ Park-Miller pseudorandom number generator (PRNG)
 | ------------------ | :-------------: |
 | Full name          | park-miller |
 | Keywords           | park-miller, park, miller, pseudorandom, number, generator, algorithm, random, lcg, congruential, integer, int, float, boolean, seed, seeded, prng, rng, lehmer |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 19417 |
+| # releases         | 2 |
+| # dependents       | 3 |
+| # downloads        | 22110 |
 | # stars            | 0 |
 
 ## Links

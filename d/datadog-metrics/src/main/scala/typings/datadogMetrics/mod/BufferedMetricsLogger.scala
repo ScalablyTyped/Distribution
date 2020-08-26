@@ -16,6 +16,7 @@ class BufferedMetricsLogger protected () extends js.Object {
     * metrics have been sent before you quit the application process, for example.
     */
   def flush(): Unit = js.native
+  def flush(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
   def flush(onSuccess: js.Function0[Unit]): Unit = js.native
   def flush(onSuccess: js.Function0[Unit], onError: js.Function1[/* err */ Error, Unit]): Unit = js.native
   /**
@@ -25,6 +26,7 @@ class BufferedMetricsLogger protected () extends js.Object {
     * process uptime, total number of active users, or number of rows in a database table.
     */
   def gauge(key: String, value: Double): Unit = js.native
+  def gauge(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def gauge(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def gauge(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
   /**
@@ -33,6 +35,7 @@ class BufferedMetricsLogger protected () extends js.Object {
     * 95th and 99th percentiles. Optionally, specify a list of tags to associate with the metric.
     */
   def histogram(key: String, value: Double): Unit = js.native
+  def histogram(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def histogram(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def histogram(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
   /**
@@ -41,7 +44,11 @@ class BufferedMetricsLogger protected () extends js.Object {
     * as incrementing a counter each time a page is requested.
     */
   def increment(key: String): Unit = js.native
+  def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
+  def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String]): Unit = js.native
+  def increment(key: String, value: js.UndefOr[scala.Nothing], tags: js.Array[String], timestamp: Double): Unit = js.native
   def increment(key: String, value: Double): Unit = js.native
+  def increment(key: String, value: Double, tags: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def increment(key: String, value: Double, tags: js.Array[String]): Unit = js.native
   def increment(key: String, value: Double, tags: js.Array[String], timestamp: Double): Unit = js.native
 }

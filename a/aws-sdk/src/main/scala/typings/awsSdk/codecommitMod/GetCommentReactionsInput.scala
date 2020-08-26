@@ -26,17 +26,36 @@ trait GetCommentReactionsInput extends js.Object {
 
 object GetCommentReactionsInput {
   @scala.inline
-  def apply(
-    commentId: CommentId,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null,
-    reactionUserArn: Arn = null
-  ): GetCommentReactionsInput = {
+  def apply(commentId: CommentId): GetCommentReactionsInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (reactionUserArn != null) __obj.updateDynamic("reactionUserArn")(reactionUserArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentReactionsInput]
   }
+  @scala.inline
+  implicit class GetCommentReactionsInputOps[Self <: GetCommentReactionsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommentId(value: CommentId): Self = this.set("commentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setReactionUserArn(value: Arn): Self = this.set("reactionUserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReactionUserArn: Self = this.set("reactionUserArn", js.undefined)
+  }
+  
 }
 

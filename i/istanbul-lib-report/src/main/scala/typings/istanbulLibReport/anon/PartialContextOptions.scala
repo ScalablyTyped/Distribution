@@ -7,30 +7,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<istanbul-lib-report.istanbul-lib-report.ContextOptions> */
+@js.native
 trait PartialContextOptions extends js.Object {
-  var coverageMap: js.UndefOr[CoverageMap] = js.undefined
-  var defaultSummarizer: js.UndefOr[Summarizers] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var sourceFinder: js.UndefOr[js.Function1[/* filepath */ String, String]] = js.undefined
-  var watermarks: js.UndefOr[PartialWatermarks] = js.undefined
+  var coverageMap: js.UndefOr[CoverageMap] = js.native
+  var defaultSummarizer: js.UndefOr[Summarizers] = js.native
+  var dir: js.UndefOr[String] = js.native
+  var sourceFinder: js.UndefOr[js.Function1[/* filepath */ String, String]] = js.native
+  var watermarks: js.UndefOr[PartialWatermarks] = js.native
 }
 
 object PartialContextOptions {
   @scala.inline
-  def apply(
-    coverageMap: CoverageMap = null,
-    defaultSummarizer: Summarizers = null,
-    dir: String = null,
-    sourceFinder: /* filepath */ String => String = null,
-    watermarks: PartialWatermarks = null
-  ): PartialContextOptions = {
+  def apply(): PartialContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (coverageMap != null) __obj.updateDynamic("coverageMap")(coverageMap.asInstanceOf[js.Any])
-    if (defaultSummarizer != null) __obj.updateDynamic("defaultSummarizer")(defaultSummarizer.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (sourceFinder != null) __obj.updateDynamic("sourceFinder")(js.Any.fromFunction1(sourceFinder))
-    if (watermarks != null) __obj.updateDynamic("watermarks")(watermarks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialContextOptions]
   }
+  @scala.inline
+  implicit class PartialContextOptionsOps[Self <: PartialContextOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoverageMap(value: CoverageMap): Self = this.set("coverageMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageMap: Self = this.set("coverageMap", js.undefined)
+    @scala.inline
+    def setDefaultSummarizer(value: Summarizers): Self = this.set("defaultSummarizer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSummarizer: Self = this.set("defaultSummarizer", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setSourceFinder(value: /* filepath */ String => String): Self = this.set("sourceFinder", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSourceFinder: Self = this.set("sourceFinder", js.undefined)
+    @scala.inline
+    def setWatermarks(value: PartialWatermarks): Self = this.set("watermarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatermarks: Self = this.set("watermarks", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListRegexMatchSetsResponse extends js.Object {
 
 object ListRegexMatchSetsResponse {
   @scala.inline
-  def apply(NextMarker: NextMarker = null, RegexMatchSets: RegexMatchSetSummaries = null): ListRegexMatchSetsResponse = {
+  def apply(): ListRegexMatchSetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (RegexMatchSets != null) __obj.updateDynamic("RegexMatchSets")(RegexMatchSets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRegexMatchSetsResponse]
   }
+  @scala.inline
+  implicit class ListRegexMatchSetsResponseOps[Self <: ListRegexMatchSetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    @scala.inline
+    def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = this.set("RegexMatchSets", js.Array(value :_*))
+    @scala.inline
+    def setRegexMatchSets(value: RegexMatchSetSummaries): Self = this.set("RegexMatchSets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegexMatchSets: Self = this.set("RegexMatchSets", js.undefined)
+  }
+  
 }
 

@@ -8,178 +8,236 @@ import scala.scalajs.js.annotation._
   * Investigation to increase healthcare-related patient-independent knowledge
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait ResearchStudy extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait ResearchStudy extends DomainResource {
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.undefined
+  var _title: js.UndefOr[Element] = js.native
   /**
     * Defined path through the study for a subject
     */
-  var arm: js.UndefOr[js.Array[ResearchStudyArm]] = js.undefined
+  var arm: js.UndefOr[js.Array[ResearchStudyArm]] = js.native
   /**
     * Classifications for the study
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Contact details for the study
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
   /**
     * What this is study doing
     */
-  var description: js.UndefOr[markdown] = js.undefined
+  var description: js.UndefOr[markdown] = js.native
   /**
     * Inclusion & exclusion criteria
     */
-  var enrollment: js.UndefOr[js.Array[Reference]] = js.undefined
+  var enrollment: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Drugs, devices, conditions, etc. under study
     */
-  var focus: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var focus: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Business Identifier for study
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Geographic region(s) for study
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Used to search for the study
     */
-  var keyword: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var keyword: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Comments made about the event
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.native
   /**
     * Part of larger study
     */
-  var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
+  var partOf: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * When the study began and ended
     */
-  var period: js.UndefOr[Period] = js.undefined
+  var period: js.UndefOr[Period] = js.native
   /**
     * The individual responsible for the study
     */
-  var principalInvestigator: js.UndefOr[Reference] = js.undefined
+  var principalInvestigator: js.UndefOr[Reference] = js.native
   /**
     * Steps followed in executing study
     */
-  var protocol: js.UndefOr[js.Array[Reference]] = js.undefined
+  var protocol: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Reason for terminating study early
     */
-  var reasonStopped: js.UndefOr[CodeableConcept] = js.undefined
+  var reasonStopped: js.UndefOr[CodeableConcept] = js.native
   /**
     * References and dependencies
     */
-  var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
+  var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.native
   /**
     * Location involved in study execution
     */
-  var site: js.UndefOr[js.Array[Reference]] = js.undefined
+  var site: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Organization responsible for the study
     */
-  var sponsor: js.UndefOr[Reference] = js.undefined
+  var sponsor: js.UndefOr[Reference] = js.native
   /**
     * draft | in-progress | suspended | stopped | completed | entered-in-error
     */
-  var status: code
+  var status: code = js.native
   /**
     * Name for this study
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object ResearchStudy {
   @scala.inline
-  def apply(
-    status: code,
-    _description: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    _title: Element = null,
-    arm: js.Array[ResearchStudyArm] = null,
-    category: js.Array[CodeableConcept] = null,
-    contact: js.Array[ContactDetail] = null,
-    contained: js.Array[Resource] = null,
-    description: markdown = null,
-    enrollment: js.Array[Reference] = null,
-    extension: js.Array[Extension] = null,
-    focus: js.Array[CodeableConcept] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    jurisdiction: js.Array[CodeableConcept] = null,
-    keyword: js.Array[CodeableConcept] = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    note: js.Array[Annotation] = null,
-    partOf: js.Array[Reference] = null,
-    period: Period = null,
-    principalInvestigator: Reference = null,
-    protocol: js.Array[Reference] = null,
-    reasonStopped: CodeableConcept = null,
-    relatedArtifact: js.Array[RelatedArtifact] = null,
-    resourceType: code = null,
-    site: js.Array[Reference] = null,
-    sponsor: Reference = null,
-    text: Narrative = null,
-    title: String = null
-  ): ResearchStudy = {
+  def apply(status: code): ResearchStudy = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_title != null) __obj.updateDynamic("_title")(_title.asInstanceOf[js.Any])
-    if (arm != null) __obj.updateDynamic("arm")(arm.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (enrollment != null) __obj.updateDynamic("enrollment")(enrollment.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
-    if (keyword != null) __obj.updateDynamic("keyword")(keyword.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (note != null) __obj.updateDynamic("note")(note.asInstanceOf[js.Any])
-    if (partOf != null) __obj.updateDynamic("partOf")(partOf.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (principalInvestigator != null) __obj.updateDynamic("principalInvestigator")(principalInvestigator.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (reasonStopped != null) __obj.updateDynamic("reasonStopped")(reasonStopped.asInstanceOf[js.Any])
-    if (relatedArtifact != null) __obj.updateDynamic("relatedArtifact")(relatedArtifact.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
-    if (sponsor != null) __obj.updateDynamic("sponsor")(sponsor.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResearchStudy]
   }
+  @scala.inline
+  implicit class ResearchStudyOps[Self <: ResearchStudy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_title: Self = this.set("_title", js.undefined)
+    @scala.inline
+    def setArmVarargs(value: ResearchStudyArm*): Self = this.set("arm", js.Array(value :_*))
+    @scala.inline
+    def setArm(value: js.Array[ResearchStudyArm]): Self = this.set("arm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArm: Self = this.set("arm", js.undefined)
+    @scala.inline
+    def setCategoryVarargs(value: CodeableConcept*): Self = this.set("category", js.Array(value :_*))
+    @scala.inline
+    def setCategory(value: js.Array[CodeableConcept]): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+    @scala.inline
+    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnrollmentVarargs(value: Reference*): Self = this.set("enrollment", js.Array(value :_*))
+    @scala.inline
+    def setEnrollment(value: js.Array[Reference]): Self = this.set("enrollment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnrollment: Self = this.set("enrollment", js.undefined)
+    @scala.inline
+    def setFocusVarargs(value: CodeableConcept*): Self = this.set("focus", js.Array(value :_*))
+    @scala.inline
+    def setFocus(value: js.Array[CodeableConcept]): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    @scala.inline
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    @scala.inline
+    def setKeywordVarargs(value: CodeableConcept*): Self = this.set("keyword", js.Array(value :_*))
+    @scala.inline
+    def setKeyword(value: js.Array[CodeableConcept]): Self = this.set("keyword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyword: Self = this.set("keyword", js.undefined)
+    @scala.inline
+    def setNoteVarargs(value: Annotation*): Self = this.set("note", js.Array(value :_*))
+    @scala.inline
+    def setNote(value: js.Array[Annotation]): Self = this.set("note", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNote: Self = this.set("note", js.undefined)
+    @scala.inline
+    def setPartOfVarargs(value: Reference*): Self = this.set("partOf", js.Array(value :_*))
+    @scala.inline
+    def setPartOf(value: js.Array[Reference]): Self = this.set("partOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartOf: Self = this.set("partOf", js.undefined)
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("period", js.undefined)
+    @scala.inline
+    def setPrincipalInvestigator(value: Reference): Self = this.set("principalInvestigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalInvestigator: Self = this.set("principalInvestigator", js.undefined)
+    @scala.inline
+    def setProtocolVarargs(value: Reference*): Self = this.set("protocol", js.Array(value :_*))
+    @scala.inline
+    def setProtocol(value: js.Array[Reference]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setReasonStopped(value: CodeableConcept): Self = this.set("reasonStopped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonStopped: Self = this.set("reasonStopped", js.undefined)
+    @scala.inline
+    def setRelatedArtifactVarargs(value: RelatedArtifact*): Self = this.set("relatedArtifact", js.Array(value :_*))
+    @scala.inline
+    def setRelatedArtifact(value: js.Array[RelatedArtifact]): Self = this.set("relatedArtifact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedArtifact: Self = this.set("relatedArtifact", js.undefined)
+    @scala.inline
+    def setSiteVarargs(value: Reference*): Self = this.set("site", js.Array(value :_*))
+    @scala.inline
+    def setSite(value: js.Array[Reference]): Self = this.set("site", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSite: Self = this.set("site", js.undefined)
+    @scala.inline
+    def setSponsor(value: Reference): Self = this.set("sponsor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSponsor: Self = this.set("sponsor", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

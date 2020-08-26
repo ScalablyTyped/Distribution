@@ -1,49 +1,63 @@
 package typings.nodeLogglyBulk.mod
 
-import typings.loggly.anon.Password
 import typings.loggly.mod.LogglyOptions
 import typings.nodeLogglyBulk.anon.RetriesInMilliSeconds
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogglyBulkOptions extends LogglyOptions {
-  var bufferOptions: js.UndefOr[RetriesInMilliSeconds] = js.undefined
-  var isBulk: js.UndefOr[Boolean] = js.undefined
-  var networkErrorsOnConsole: js.UndefOr[Boolean] = js.undefined
-  var proxy: js.UndefOr[js.Any] = js.undefined
-  var useTagHeader: js.UndefOr[Boolean] = js.undefined
-  var userAgent: js.UndefOr[String] = js.undefined
+  var bufferOptions: js.UndefOr[RetriesInMilliSeconds] = js.native
+  var isBulk: js.UndefOr[Boolean] = js.native
+  var networkErrorsOnConsole: js.UndefOr[Boolean] = js.native
+  var proxy: js.UndefOr[js.Any] = js.native
+  var useTagHeader: js.UndefOr[Boolean] = js.native
+  var userAgent: js.UndefOr[String] = js.native
 }
 
 object LogglyBulkOptions {
   @scala.inline
-  def apply(
-    subdomain: String,
-    token: String,
-    auth: Password = null,
-    bufferOptions: RetriesInMilliSeconds = null,
-    host: String = null,
-    isBulk: js.UndefOr[Boolean] = js.undefined,
-    json: js.UndefOr[Boolean] = js.undefined,
-    networkErrorsOnConsole: js.UndefOr[Boolean] = js.undefined,
-    proxy: js.Any = null,
-    tags: js.Array[String] = null,
-    useTagHeader: js.UndefOr[Boolean] = js.undefined,
-    userAgent: String = null
-  ): LogglyBulkOptions = {
+  def apply(subdomain: String, token: String): LogglyBulkOptions = {
     val __obj = js.Dynamic.literal(subdomain = subdomain.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (bufferOptions != null) __obj.updateDynamic("bufferOptions")(bufferOptions.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBulk)) __obj.updateDynamic("isBulk")(isBulk.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkErrorsOnConsole)) __obj.updateDynamic("networkErrorsOnConsole")(networkErrorsOnConsole.get.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(useTagHeader)) __obj.updateDynamic("useTagHeader")(useTagHeader.get.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogglyBulkOptions]
   }
+  @scala.inline
+  implicit class LogglyBulkOptionsOps[Self <: LogglyBulkOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBufferOptions(value: RetriesInMilliSeconds): Self = this.set("bufferOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferOptions: Self = this.set("bufferOptions", js.undefined)
+    @scala.inline
+    def setIsBulk(value: Boolean): Self = this.set("isBulk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBulk: Self = this.set("isBulk", js.undefined)
+    @scala.inline
+    def setNetworkErrorsOnConsole(value: Boolean): Self = this.set("networkErrorsOnConsole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkErrorsOnConsole: Self = this.set("networkErrorsOnConsole", js.undefined)
+    @scala.inline
+    def setProxy(value: js.Any): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setUseTagHeader(value: Boolean): Self = this.set("useTagHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseTagHeader: Self = this.set("useTagHeader", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+  }
+  
 }
 

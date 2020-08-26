@@ -1,6 +1,5 @@
 package typings.dingtalkRobotSender.mod
 
-import typings.dingtalkRobotSender.anon.AtMobiles
 import typings.dingtalkRobotSender.anon.BtnOrientation
 import typings.dingtalkRobotSender.anon.Content
 import typings.dingtalkRobotSender.anon.IsAtAll
@@ -36,9 +35,8 @@ object MessageType {
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline
-  def Text(msgtype: text, text: Content, at: AtMobiles = null): MessageType = {
+  def Text(msgtype: text, text: Content): MessageType = {
     val __obj = js.Dynamic.literal(msgtype = msgtype.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    if (at != null) __obj.updateDynamic("at")(at.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageType]
   }
   @scala.inline

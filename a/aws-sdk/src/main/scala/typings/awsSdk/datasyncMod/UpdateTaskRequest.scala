@@ -31,21 +31,46 @@ trait UpdateTaskRequest extends js.Object {
 
 object UpdateTaskRequest {
   @scala.inline
-  def apply(
-    TaskArn: TaskArn,
-    CloudWatchLogGroupArn: LogGroupArn = null,
-    Excludes: FilterList = null,
-    Name: TagValue = null,
-    Options: Options = null,
-    Schedule: TaskSchedule = null
-  ): UpdateTaskRequest = {
+  def apply(TaskArn: TaskArn): UpdateTaskRequest = {
     val __obj = js.Dynamic.literal(TaskArn = TaskArn.asInstanceOf[js.Any])
-    if (CloudWatchLogGroupArn != null) __obj.updateDynamic("CloudWatchLogGroupArn")(CloudWatchLogGroupArn.asInstanceOf[js.Any])
-    if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTaskRequest]
   }
+  @scala.inline
+  implicit class UpdateTaskRequestOps[Self <: UpdateTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskArn(value: TaskArn): Self = this.set("TaskArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudWatchLogGroupArn(value: LogGroupArn): Self = this.set("CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLogGroupArn: Self = this.set("CloudWatchLogGroupArn", js.undefined)
+    @scala.inline
+    def setExcludesVarargs(value: FilterRule*): Self = this.set("Excludes", js.Array(value :_*))
+    @scala.inline
+    def setExcludes(value: FilterList): Self = this.set("Excludes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludes: Self = this.set("Excludes", js.undefined)
+    @scala.inline
+    def setName(value: TagValue): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOptions(value: Options): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setSchedule(value: TaskSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+  }
+  
 }
 

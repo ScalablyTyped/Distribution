@@ -1,6 +1,6 @@
 package typings.gulpMocha
 
-import typings.mocha.MochaSetupOptions
+import typings.mocha.Mocha.MochaOptions
 import typings.node.NodeJS.ReadWriteStream
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(): ReadWriteStream = js.native
-  def apply(setupOptions: MochaSetupOptions): ReadWriteStream = js.native
+  def apply(setupOptions: MochaOptions): ReadWriteStream = js.native
 }
 

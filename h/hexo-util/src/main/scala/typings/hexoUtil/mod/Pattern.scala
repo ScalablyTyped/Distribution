@@ -8,9 +8,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Pattern[T] extends js.Object {
-  def `match`(str: String): T
-  def test(str: String): Boolean
+  def `match`(str: String): T = js.native
+  def test(str: String): Boolean = js.native
 }
 
 @JSImport("hexo-util", "Pattern")

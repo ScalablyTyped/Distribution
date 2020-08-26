@@ -13,7 +13,26 @@ trait SharedWorkspaceFiles extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: Double): SharedWorkspaceFile = js.native
   def Add(FileName: String): SharedWorkspaceFile = js.native
+  def Add(
+    FileName: String,
+    ParentFolder: js.UndefOr[scala.Nothing],
+    OverwriteIfFileAlreadyExists: js.UndefOr[scala.Nothing],
+    KeepInSync: Boolean
+  ): SharedWorkspaceFile = js.native
+  def Add(FileName: String, ParentFolder: js.UndefOr[scala.Nothing], OverwriteIfFileAlreadyExists: Boolean): SharedWorkspaceFile = js.native
+  def Add(
+    FileName: String,
+    ParentFolder: js.UndefOr[scala.Nothing],
+    OverwriteIfFileAlreadyExists: Boolean,
+    KeepInSync: Boolean
+  ): SharedWorkspaceFile = js.native
   def Add(FileName: String, ParentFolder: SharedWorkspaceFolder): SharedWorkspaceFile = js.native
+  def Add(
+    FileName: String,
+    ParentFolder: SharedWorkspaceFolder,
+    OverwriteIfFileAlreadyExists: js.UndefOr[scala.Nothing],
+    KeepInSync: Boolean
+  ): SharedWorkspaceFile = js.native
   def Add(FileName: String, ParentFolder: SharedWorkspaceFolder, OverwriteIfFileAlreadyExists: Boolean): SharedWorkspaceFile = js.native
   def Add(
     FileName: String,

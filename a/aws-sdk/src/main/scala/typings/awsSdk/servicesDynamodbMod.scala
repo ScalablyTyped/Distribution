@@ -22,7 +22,7 @@ object servicesDynamodbMod extends js.Object {
       * This abstraction annotates native JavaScript types supplied as input parameters, as well as converts annotated response data to native JavaScript types.
       */
     var DocumentClient: Instantiable1[
-        js.UndefOr[/* options */ DocumentClientOptions with ClientConfiguration], 
+        /* options */ js.UndefOr[DocumentClientOptions with ClientConfiguration], 
         typings.awsSdk.documentClientMod.DocumentClient
       ] = js.native
   }

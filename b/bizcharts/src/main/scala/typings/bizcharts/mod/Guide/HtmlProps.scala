@@ -6,38 +6,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HtmlProps extends js.Object {
-  var alignX: js.UndefOr[AlignXType] = js.undefined
-  var alignY: js.UndefOr[AlignYType] = js.undefined
-  var html: js.UndefOr[String] = js.undefined
-  var offsetX: js.UndefOr[Double] = js.undefined
-  var offsetY: js.UndefOr[Double] = js.undefined
+  var alignX: js.UndefOr[AlignXType] = js.native
+  var alignY: js.UndefOr[AlignYType] = js.native
+  var html: js.UndefOr[String] = js.native
+  var offsetX: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.native
   var position: js.UndefOr[
     js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
-  ] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object HtmlProps {
   @scala.inline
-  def apply(
-    alignX: AlignXType = null,
-    alignY: AlignYType = null,
-    html: String = null,
-    offsetX: js.UndefOr[Double] = js.undefined,
-    offsetY: js.UndefOr[Double] = js.undefined,
-    position: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _]) = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): HtmlProps = {
+  def apply(): HtmlProps = {
     val __obj = js.Dynamic.literal()
-    if (alignX != null) __obj.updateDynamic("alignX")(alignX.asInstanceOf[js.Any])
-    if (alignY != null) __obj.updateDynamic("alignY")(alignY.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlProps]
   }
+  @scala.inline
+  implicit class HtmlPropsOps[Self <: HtmlProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignX(value: AlignXType): Self = this.set("alignX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignX: Self = this.set("alignX", js.undefined)
+    @scala.inline
+    def setAlignY(value: AlignYType): Self = this.set("alignY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignY: Self = this.set("alignY", js.undefined)
+    @scala.inline
+    def setHtml(value: String): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    @scala.inline
+    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    @scala.inline
+    def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => _): Self = this.set("position", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPositionVarargs(value: js.Any*): Self = this.set("position", js.Array(value :_*))
+    @scala.inline
+    def setPosition(
+      value: js.Object | js.Array[_] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], _])
+    ): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

@@ -21,11 +21,34 @@ trait SchemaUrlSampleDetails extends js.Object {
 
 object SchemaUrlSampleDetails {
   @scala.inline
-  def apply(containingSitemaps: js.Array[String] = null, linkedFromUrls: js.Array[String] = null): SchemaUrlSampleDetails = {
+  def apply(): SchemaUrlSampleDetails = {
     val __obj = js.Dynamic.literal()
-    if (containingSitemaps != null) __obj.updateDynamic("containingSitemaps")(containingSitemaps.asInstanceOf[js.Any])
-    if (linkedFromUrls != null) __obj.updateDynamic("linkedFromUrls")(linkedFromUrls.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUrlSampleDetails]
   }
+  @scala.inline
+  implicit class SchemaUrlSampleDetailsOps[Self <: SchemaUrlSampleDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainingSitemapsVarargs(value: String*): Self = this.set("containingSitemaps", js.Array(value :_*))
+    @scala.inline
+    def setContainingSitemaps(value: js.Array[String]): Self = this.set("containingSitemaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainingSitemaps: Self = this.set("containingSitemaps", js.undefined)
+    @scala.inline
+    def setLinkedFromUrlsVarargs(value: String*): Self = this.set("linkedFromUrls", js.Array(value :_*))
+    @scala.inline
+    def setLinkedFromUrls(value: js.Array[String]): Self = this.set("linkedFromUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedFromUrls: Self = this.set("linkedFromUrls", js.undefined)
+  }
+  
 }
 

@@ -31,7 +31,6 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def __addJoinsToQuery__(query: js.Any, queryInfo: js.Any): js.Any = js.native
   /* private */ def __addJoinsToQuery__(query: js.Any, queryInfo: js.Any, includeColumns: js.Any): js.Any = js.native
   /**
     * Collapses linked list of queries into an array (for .reduce, .map etc)
@@ -46,7 +45,6 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def __generateCountQuery__(): js.Any = js.native
   /* private */ def __generateCountQuery__(useLimit: js.Any): js.Any = js.native
   /**
     * Generate a SQL query and its associated parameters from the current composer instance
@@ -55,8 +53,6 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Has "params" and "sql" properties.
     * @private
     */
-  /* private */ def __generateQuery__(): js.Any = js.native
-  /* private */ def __generateQuery__(includeColumns: js.Any): js.Any = js.native
   /* private */ def __generateQuery__(includeColumns: js.Any, disableJoins: js.Any): js.Any = js.native
   /**
     * Gets last limit command from a collapsed array of composer commands
@@ -84,7 +80,6 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Array}
     * @private
     */
-  /* private */ def __parseComparisons__(comparisons: js.Any): js.Any = js.native
   /* private */ def __parseComparisons__(comparisons: js.Any, model: js.Any): js.Any = js.native
   /**
     * Given rows with repeated data (due to joining in multiple children),
@@ -94,7 +89,6 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Nodal.ModelArray}
     * @private
     */
-  /* private */ def __parseModelsFromRows__(rows: js.Any): js.Any = js.native
   /* private */ def __parseModelsFromRows__(rows: js.Any, grouped: js.Any): js.Any = js.native
   /**
     * Reduces an array of commands from query informtion to a SQL query
@@ -103,7 +97,6 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @return {Object} Looks like {sql: [], params: []}
     * @private
     */
-  /* private */ def __reduceCommandsToQuery__(commandArray: js.Any): js.Any = js.native
   /* private */ def __reduceCommandsToQuery__(commandArray: js.Any, includeColumns: js.Any): js.Any = js.native
   /**
     * Reduces an array of composer queries to a single query information object
@@ -152,10 +145,93 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @param {array} comparisonsArray comparisons to perform on this join (can be overloaded)
     */
   def join(joinName: String): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: js.UndefOr[scala.Nothing],
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: js.UndefOr[scala.Nothing],
+    count: Double
+  ): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: js.UndefOr[scala.Nothing],
+    count: Double,
+    offset: Double
+  ): this.type = js.native
   def join(joinName: String, comparisonsArray: js.Array[IComparison]): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: js.UndefOr[scala.Nothing],
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: js.UndefOr[scala.Nothing],
+    count: Double
+  ): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: js.UndefOr[scala.Nothing],
+    count: Double,
+    offset: Double
+  ): this.type = js.native
   def join(joinName: String, comparisonsArray: IComparison): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: IComparison,
+    orderBy: js.UndefOr[scala.Nothing],
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
+  def join(joinName: String, comparisonsArray: IComparison, orderBy: js.UndefOr[scala.Nothing], count: Double): this.type = js.native
+  def join(
+    joinName: String,
+    comparisonsArray: IComparison,
+    orderBy: js.UndefOr[scala.Nothing],
+    count: Double,
+    offset: Double
+  ): this.type = js.native
+  @JSName("join")
+  def join_ASC(joinName: String, comparisonsArray: js.UndefOr[scala.Nothing], orderBy: ASC): this.type = js.native
+  @JSName("join")
+  def join_ASC(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: ASC,
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
+  @JSName("join")
+  def join_ASC(joinName: String, comparisonsArray: js.UndefOr[scala.Nothing], orderBy: ASC, count: Double): this.type = js.native
+  @JSName("join")
+  def join_ASC(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: ASC,
+    count: Double,
+    offset: Double
+  ): this.type = js.native
   @JSName("join")
   def join_ASC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: ASC): this.type = js.native
+  @JSName("join")
+  def join_ASC(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: ASC,
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
   @JSName("join")
   def join_ASC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: ASC, count: Double): this.type = js.native
   @JSName("join")
@@ -169,11 +245,47 @@ class Composer[T /* <: Model */] protected () extends js.Object {
   @JSName("join")
   def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC): this.type = js.native
   @JSName("join")
+  def join_ASC(
+    joinName: String,
+    comparisonsArray: IComparison,
+    orderBy: ASC,
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
+  @JSName("join")
   def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC, count: Double): this.type = js.native
   @JSName("join")
   def join_ASC(joinName: String, comparisonsArray: IComparison, orderBy: ASC, count: Double, offset: Double): this.type = js.native
   @JSName("join")
+  def join_DESC(joinName: String, comparisonsArray: js.UndefOr[scala.Nothing], orderBy: DESC): this.type = js.native
+  @JSName("join")
+  def join_DESC(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: DESC,
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
+  @JSName("join")
+  def join_DESC(joinName: String, comparisonsArray: js.UndefOr[scala.Nothing], orderBy: DESC, count: Double): this.type = js.native
+  @JSName("join")
+  def join_DESC(
+    joinName: String,
+    comparisonsArray: js.UndefOr[scala.Nothing],
+    orderBy: DESC,
+    count: Double,
+    offset: Double
+  ): this.type = js.native
+  @JSName("join")
   def join_DESC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: DESC): this.type = js.native
+  @JSName("join")
+  def join_DESC(
+    joinName: String,
+    comparisonsArray: js.Array[IComparison],
+    orderBy: DESC,
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
   @JSName("join")
   def join_DESC(joinName: String, comparisonsArray: js.Array[IComparison], orderBy: DESC, count: Double): this.type = js.native
   @JSName("join")
@@ -186,6 +298,14 @@ class Composer[T /* <: Model */] protected () extends js.Object {
   ): this.type = js.native
   @JSName("join")
   def join_DESC(joinName: String, comparisonsArray: IComparison, orderBy: DESC): this.type = js.native
+  @JSName("join")
+  def join_DESC(
+    joinName: String,
+    comparisonsArray: IComparison,
+    orderBy: DESC,
+    count: js.UndefOr[scala.Nothing],
+    offset: Double
+  ): this.type = js.native
   @JSName("join")
   def join_DESC(joinName: String, comparisonsArray: IComparison, orderBy: DESC, count: Double): this.type = js.native
   @JSName("join")

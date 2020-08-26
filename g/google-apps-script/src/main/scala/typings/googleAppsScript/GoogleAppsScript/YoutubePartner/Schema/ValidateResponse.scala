@@ -4,20 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ValidateResponse extends js.Object {
-  var errors: js.UndefOr[js.Array[ValidateError]] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[String] = js.undefined
+  var errors: js.UndefOr[js.Array[ValidateError]] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.native
 }
 
 object ValidateResponse {
   @scala.inline
-  def apply(errors: js.Array[ValidateError] = null, kind: String = null, status: String = null): ValidateResponse = {
+  def apply(): ValidateResponse = {
     val __obj = js.Dynamic.literal()
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateResponse]
   }
+  @scala.inline
+  implicit class ValidateResponseOps[Self <: ValidateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorsVarargs(value: ValidateError*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[ValidateError]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -32,11 +32,11 @@ object mod extends js.Object {
   @js.native
   object MDCSwitchFoundation extends js.Object {
     /** The CSS classes used by the switch. */
-    val cssClasses: CHECKED = js.native
+    def cssClasses: CHECKED = js.native
     /** The default Adapter for the switch. */
-    val defaultAdapter: MDCSwitchAdapter = js.native
+    def defaultAdapter: MDCSwitchAdapter = js.native
     /** The string constants used by the switch. */
-    val strings: ARIACHECKEDATTR = js.native
+    def strings: ARIACHECKEDATTR = js.native
   }
   
   /** CSS classes used by the switch. */

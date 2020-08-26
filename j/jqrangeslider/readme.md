@@ -12,7 +12,7 @@ jQRangeSlider, jQDateRangeSlider & jQEditRangeSlider [![Build Status](https://tr
 | Keywords           | jqrangeslider, jqueryui-range, selection-slider, dates-slider |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 7233 |
+| # downloads        | 8244 |
 | # stars            | 0 |
 
 ## Links

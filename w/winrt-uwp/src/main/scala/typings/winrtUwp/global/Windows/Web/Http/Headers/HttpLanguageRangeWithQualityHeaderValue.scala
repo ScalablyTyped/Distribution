@@ -21,12 +21,6 @@ class HttpLanguageRangeWithQualityHeaderValue protected ()
     * @param quality The value of the qvalue or quality factor used in the Accept-Language HTTP header.
     */
   def this(languageRange: String, quality: Double) = this()
-  /** Gets the value of the language-range information from the HttpLanguageRangeWithQualityHeaderValue used in the Accept-Language HTTP header. */
-  /* CompleteClass */
-  override var languageRange: String = js.native
-  /** Gets the value of the qvalue or quality factor from the HttpLanguageRangeWithQualityHeaderValue used in the Accept-Language HTTP header. */
-  /* CompleteClass */
-  override var quality: Double = js.native
 }
 
 /* static members */

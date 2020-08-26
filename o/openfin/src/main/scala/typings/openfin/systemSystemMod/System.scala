@@ -1,6 +1,7 @@
 package typings.openfin.systemSystemMod
 
 import typings.openfin.baseMod.EmitterBase
+import typings.openfin.certifiedAppInfoMod.CertifiedAppInfo
 import typings.openfin.clearCacheOptionMod.ClearCacheOption
 import typings.openfin.cookieMod.CookieInfo
 import typings.openfin.cookieMod.CookieOption
@@ -20,6 +21,7 @@ import typings.openfin.externalProcessMod.ServiceConfiguration
 import typings.openfin.externalProcessMod.TerminateExternalRequestType
 import typings.openfin.hostSpecsMod.HostSpecs
 import typings.openfin.identityMod.Identity
+import typings.openfin.installedAppsMod.InstalledApps
 import typings.openfin.logMod.GetLogRequestType
 import typings.openfin.logMod.LogInfo
 import typings.openfin.logMod.LogLevel
@@ -198,6 +200,7 @@ trait System extends EmitterBase[SystemEvents] {
     * @tutorial System.getHostSpecs
     */
   def getHostSpecs(): js.Promise[HostSpecs] = js.native
+  def getInstalledApps(): js.Promise[InstalledApps] = js.native
   /**
     * Returns an array of all the installed runtime versions in an object.
     * @return {Promise.<string[]>}
@@ -369,6 +372,12 @@ trait System extends EmitterBase[SystemEvents] {
     * @tutorial System.getVersion
     */
   def getVersion(): js.Promise[String] = js.native
+  /**
+    * Returns information about the given app's certification status
+    * @return {Promise.<CertifiedAppInfo>}
+    * @tutorial System.isAppCertified
+    */
+  def isAppCertified(manifestUrl: String): js.Promise[CertifiedAppInfo] = js.native
   /**
     * Runs an executable or batch file. A path to the file must be included in options.
     * <br> A uuid may be optionally provided. If not provided, OpenFin will create a uuid for the new process.

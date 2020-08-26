@@ -17,10 +17,26 @@ trait SchemaReimageNodeRequest extends js.Object {
 
 object SchemaReimageNodeRequest {
   @scala.inline
-  def apply(tensorflowVersion: String = null): SchemaReimageNodeRequest = {
+  def apply(): SchemaReimageNodeRequest = {
     val __obj = js.Dynamic.literal()
-    if (tensorflowVersion != null) __obj.updateDynamic("tensorflowVersion")(tensorflowVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReimageNodeRequest]
   }
+  @scala.inline
+  implicit class SchemaReimageNodeRequestOps[Self <: SchemaReimageNodeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTensorflowVersion(value: String): Self = this.set("tensorflowVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTensorflowVersion: Self = this.set("tensorflowVersion", js.undefined)
+  }
+  
 }
 

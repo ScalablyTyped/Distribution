@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/opsworks.DescribeInstancesRequest & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/opsworks.DescribeInstancesRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeInstancesRequestwInstanceIds extends js.Object {
   @JSName("$waiter")
@@ -28,18 +28,40 @@ trait DescribeInstancesRequestwInstanceIds extends js.Object {
 
 object DescribeInstancesRequestwInstanceIds {
   @scala.inline
-  def apply(
-    $waiter: WaiterConfiguration = null,
-    InstanceIds: Strings = null,
-    LayerId: String = null,
-    StackId: String = null
-  ): DescribeInstancesRequestwInstanceIds = {
+  def apply(): DescribeInstancesRequestwInstanceIds = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (InstanceIds != null) __obj.updateDynamic("InstanceIds")(InstanceIds.asInstanceOf[js.Any])
-    if (LayerId != null) __obj.updateDynamic("LayerId")(LayerId.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstancesRequestwInstanceIds]
   }
+  @scala.inline
+  implicit class DescribeInstancesRequestwInstanceIdsOps[Self <: DescribeInstancesRequestwInstanceIds] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setInstanceIdsVarargs(value: String*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: Strings): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceIds: Self = this.set("InstanceIds", js.undefined)
+    @scala.inline
+    def setLayerId(value: String): Self = this.set("LayerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerId: Self = this.set("LayerId", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+  }
+  
 }
 

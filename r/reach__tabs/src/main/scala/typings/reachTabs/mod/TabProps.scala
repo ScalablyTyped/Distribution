@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabProps extends TabPanelProps
 
 object TabProps {
   @scala.inline
-  def apply(TabPanelProps: TabPanelProps = null): TabProps = {
+  def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (TabPanelProps != null) js.Dynamic.global.Object.assign(__obj, TabPanelProps)
     __obj.asInstanceOf[TabProps]
   }
 }

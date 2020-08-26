@@ -4,7 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait WorkspaceSymbolProvider[T] extends js.Object {
+@js.native
+trait WorkspaceSymbolProvider[T /* <: SymbolInformation */] extends js.Object {
   /**
     * Given a symbol fill in its [location](#SymbolInformation.location). This method is called whenever a symbol
     * is selected in the UI. Providers can implement this method and return incomplete symbols from
@@ -17,7 +18,7 @@ trait WorkspaceSymbolProvider[T] extends js.Object {
     * @return The resolved symbol or a thenable that resolves to that. When no result is returned,
     * the given `symbol` is used.
     */
-  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.undefined
+  var resolveWorkspaceSymbol: js.UndefOr[js.Function2[/* symbol */ T, /* token */ CancellationToken, ProviderResult[T]]] = js.native
   /**
     * Project-wide search for a symbol matching the given query string.
     *
@@ -35,18 +36,33 @@ trait WorkspaceSymbolProvider[T] extends js.Object {
     * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined`, `null`, or an empty array.
     */
-  def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]]
+  def provideWorkspaceSymbols(query: String, token: CancellationToken): ProviderResult[js.Array[T]] = js.native
 }
 
 object WorkspaceSymbolProvider {
   @scala.inline
-  def apply[T](
-    provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]],
-    resolveWorkspaceSymbol: (/* symbol */ T, /* token */ CancellationToken) => ProviderResult[T] = null
-  ): WorkspaceSymbolProvider[T] = {
+  def apply[/* <: typings.vscode.mod.SymbolInformation */ T](provideWorkspaceSymbols: (String, CancellationToken) => ProviderResult[js.Array[T]]): WorkspaceSymbolProvider[T] = {
     val __obj = js.Dynamic.literal(provideWorkspaceSymbols = js.Any.fromFunction2(provideWorkspaceSymbols))
-    if (resolveWorkspaceSymbol != null) __obj.updateDynamic("resolveWorkspaceSymbol")(js.Any.fromFunction2(resolveWorkspaceSymbol))
     __obj.asInstanceOf[WorkspaceSymbolProvider[T]]
   }
+  @scala.inline
+  implicit class WorkspaceSymbolProviderOps[Self <: WorkspaceSymbolProvider[_], /* <: typings.vscode.mod.SymbolInformation */ T] (val x: Self with WorkspaceSymbolProvider[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvideWorkspaceSymbols(value: (String, CancellationToken) => ProviderResult[js.Array[T]]): Self = this.set("provideWorkspaceSymbols", js.Any.fromFunction2(value))
+    @scala.inline
+    def setResolveWorkspaceSymbol(value: (/* symbol */ T, /* token */ CancellationToken) => ProviderResult[T]): Self = this.set("resolveWorkspaceSymbol", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteResolveWorkspaceSymbol: Self = this.set("resolveWorkspaceSymbol", js.undefined)
+  }
+  
 }
 

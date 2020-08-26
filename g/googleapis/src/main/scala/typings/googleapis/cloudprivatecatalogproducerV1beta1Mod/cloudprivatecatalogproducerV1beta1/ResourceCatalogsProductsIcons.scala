@@ -32,6 +32,7 @@ class ResourceCatalogsProductsIcons protected () extends js.Object {
     */
   def upload(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def upload(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def upload(params: ParamsResourceCatalogsProductsIconsUpload): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def upload(
     params: ParamsResourceCatalogsProductsIconsUpload,

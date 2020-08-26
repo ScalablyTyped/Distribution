@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object validationRulesMod extends js.Object {
   val default: Validations[js.Any] = js.native
+  def addValidationRule[V](name: String, func: ValidationFunction[V]): Unit = js.native
   def isDefaultRequiredValue(value: js.Any): Boolean = js.native
   def isEmpty[V](value: V): Boolean = js.native
   def isExisty[V](value: V): Boolean = js.native

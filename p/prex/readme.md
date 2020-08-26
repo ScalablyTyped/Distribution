@@ -12,7 +12,7 @@ Async coordination primitives and extensions on top of ES6 Promises
 | Keywords           | async, promise, promises, future, deferred, promise-a, promise-a-plus, then, await, coordination, semaphore, cancellation, cancellationtoken |
 | # releases         | 8 |
 | # dependents       | 4 |
-| # downloads        | 48895 |
+| # downloads        | 57137 |
 | # stars            | 2 |
 
 ## Links

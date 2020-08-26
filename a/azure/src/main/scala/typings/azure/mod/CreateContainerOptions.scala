@@ -4,27 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateContainerOptions extends TimeoutIntervalOptions {
-  var metadata: js.UndefOr[StorageMetadata] = js.undefined
-  var publicAccessLevel: js.UndefOr[String] = js.undefined
+  var metadata: js.UndefOr[StorageMetadata] = js.native
+  var publicAccessLevel: js.UndefOr[String] = js.native
 }
 
 object CreateContainerOptions {
   @scala.inline
-  def apply(
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    metadata: StorageMetadata = null,
-    publicAccessLevel: String = null,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): CreateContainerOptions = {
+  def apply(): CreateContainerOptions = {
     val __obj = js.Dynamic.literal()
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (publicAccessLevel != null) __obj.updateDynamic("publicAccessLevel")(publicAccessLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContainerOptions]
   }
+  @scala.inline
+  implicit class CreateContainerOptionsOps[Self <: CreateContainerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: StorageMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setPublicAccessLevel(value: String): Self = this.set("publicAccessLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicAccessLevel: Self = this.set("publicAccessLevel", js.undefined)
+  }
+  
 }
 

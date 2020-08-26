@@ -13,6 +13,7 @@ trait Transaction extends js.Object {
   def commit(): Unit = js.native
   def commit(options: SendOptions): Unit = js.native
   def send(): Writable = js.native
+  def send(headers: js.UndefOr[scala.Nothing], options: SendOptions): Writable = js.native
   def send(headers: js.Any): Writable = js.native
   def send(headers: js.Any, options: SendOptions): Writable = js.native
 }

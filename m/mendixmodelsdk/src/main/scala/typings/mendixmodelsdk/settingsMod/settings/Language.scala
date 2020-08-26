@@ -24,16 +24,16 @@ class Language protected () extends Element {
   @JSName("model")
   var model_FLanguage: IModel = js.native
   def checkCompleteness: Boolean = js.native
-  def checkCompleteness(newValue: Boolean): js.Any = js.native
+  def checkCompleteness_=(newValue: Boolean): Unit = js.native
   def code: String = js.native
-  def code(newValue: String): js.Any = js.native
+  def code_=(newValue: String): Unit = js.native
   def containerAsLanguageSettings: LanguageSettings = js.native
   def customDateFormat: String = js.native
-  def customDateFormat(newValue: String): js.Any = js.native
+  def customDateFormat_=(newValue: String): Unit = js.native
   def customDateTimeFormat: String = js.native
-  def customDateTimeFormat(newValue: String): js.Any = js.native
+  def customDateTimeFormat_=(newValue: String): Unit = js.native
   def customTimeFormat: String = js.native
-  def customTimeFormat(newValue: String): js.Any = js.native
+  def customTimeFormat_=(newValue: String): Unit = js.native
 }
 
 /* static members */

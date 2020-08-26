@@ -5,78 +5,133 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MarkerOptions extends js.Object {
-  var angle: js.UndefOr[Double] = js.undefined
-  var animation: js.UndefOr[String] = js.undefined
-  var autoRotation: js.UndefOr[Boolean] = js.undefined
-  var clickable: js.UndefOr[Boolean] = js.undefined
-  var content: js.UndefOr[String | HTMLElement] = js.undefined
-  var cursor: js.UndefOr[String] = js.undefined
-  var draggable: js.UndefOr[Boolean] = js.undefined
-  var extData: js.UndefOr[js.Any] = js.undefined
-  var icon: js.UndefOr[String | Icon] = js.undefined
-  var label: js.UndefOr[typings.amapJsSdk.anon.Content] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
-  var offset: js.UndefOr[Pixel] = js.undefined
-  var position: js.UndefOr[LngLat] = js.undefined
-  var raiseOnDrag: js.UndefOr[Boolean] = js.undefined
-  var shadow: js.UndefOr[Icon] = js.undefined
-  var shape: js.UndefOr[MarkerShape] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var topWhenClick: js.UndefOr[Boolean] = js.undefined
-  var topWhenMouseOver: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var angle: js.UndefOr[Double] = js.native
+  var animation: js.UndefOr[String] = js.native
+  var autoRotation: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[String | HTMLElement] = js.native
+  var cursor: js.UndefOr[String] = js.native
+  var draggable: js.UndefOr[Boolean] = js.native
+  var extData: js.UndefOr[js.Any] = js.native
+  var icon: js.UndefOr[String | Icon] = js.native
+  var label: js.UndefOr[typings.amapJsSdk.anon.Content] = js.native
+  var map: js.UndefOr[Map] = js.native
+  var offset: js.UndefOr[Pixel] = js.native
+  var position: js.UndefOr[LngLat] = js.native
+  var raiseOnDrag: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Icon] = js.native
+  var shape: js.UndefOr[MarkerShape] = js.native
+  var title: js.UndefOr[String] = js.native
+  var topWhenClick: js.UndefOr[Boolean] = js.native
+  var topWhenMouseOver: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object MarkerOptions {
   @scala.inline
-  def apply(
-    angle: js.UndefOr[Double] = js.undefined,
-    animation: String = null,
-    autoRotation: js.UndefOr[Boolean] = js.undefined,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    content: String | HTMLElement = null,
-    cursor: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    extData: js.Any = null,
-    icon: String | Icon = null,
-    label: typings.amapJsSdk.anon.Content = null,
-    map: Map = null,
-    offset: Pixel = null,
-    position: LngLat = null,
-    raiseOnDrag: js.UndefOr[Boolean] = js.undefined,
-    shadow: Icon = null,
-    shape: MarkerShape = null,
-    title: String = null,
-    topWhenClick: js.UndefOr[Boolean] = js.undefined,
-    topWhenMouseOver: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): MarkerOptions = {
+  def apply(): MarkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(angle)) __obj.updateDynamic("angle")(angle.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRotation)) __obj.updateDynamic("autoRotation")(autoRotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnDrag)) __obj.updateDynamic("raiseOnDrag")(raiseOnDrag.get.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(topWhenClick)) __obj.updateDynamic("topWhenClick")(topWhenClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(topWhenMouseOver)) __obj.updateDynamic("topWhenMouseOver")(topWhenMouseOver.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
+  @scala.inline
+  implicit class MarkerOptionsOps[Self <: MarkerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAngle(value: Double): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+    @scala.inline
+    def setAnimation(value: String): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAutoRotation(value: Boolean): Self = this.set("autoRotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRotation: Self = this.set("autoRotation", js.undefined)
+    @scala.inline
+    def setClickable(value: Boolean): Self = this.set("clickable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClickable: Self = this.set("clickable", js.undefined)
+    @scala.inline
+    def setContent(value: String | HTMLElement): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setExtData(value: js.Any): Self = this.set("extData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtData: Self = this.set("extData", js.undefined)
+    @scala.inline
+    def setIcon(value: String | Icon): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setLabel(value: typings.amapJsSdk.anon.Content): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setOffset(value: Pixel): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPosition(value: LngLat): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setRaiseOnDrag(value: Boolean): Self = this.set("raiseOnDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRaiseOnDrag: Self = this.set("raiseOnDrag", js.undefined)
+    @scala.inline
+    def setShadow(value: Icon): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShape(value: MarkerShape): Self = this.set("shape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShape: Self = this.set("shape", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTopWhenClick(value: Boolean): Self = this.set("topWhenClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopWhenClick: Self = this.set("topWhenClick", js.undefined)
+    @scala.inline
+    def setTopWhenMouseOver(value: Boolean): Self = this.set("topWhenMouseOver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopWhenMouseOver: Self = this.set("topWhenMouseOver", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

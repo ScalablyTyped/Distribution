@@ -44,7 +44,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val availabilityZone: Output_[String] = js.native
   /**
-    * The identifier of the [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html) in which to launch this instance.
+    * The identifier of the `aws.neptune.Cluster` in which to launch this instance.
     */
   val clusterIdentifier: Output_[String] = js.native
   /**
@@ -84,7 +84,7 @@ class ClusterInstance protected () extends CustomResource {
     */
   val neptuneParameterGroupName: Output_[js.UndefOr[String]] = js.native
   /**
-    * A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptuneSubnetGroupName` of the attached [`aws.neptune.Cluster`](https://www.terraform.io/docs/providers/aws/r/neptune_cluster.html).
+    * A subnet group to associate with this neptune instance. **NOTE:** This must match the `neptuneSubnetGroupName` of the attached `aws.neptune.Cluster`.
     */
   val neptuneSubnetGroupName: Output_[String] = js.native
   /**
@@ -113,9 +113,9 @@ class ClusterInstance protected () extends CustomResource {
     */
   val storageEncrypted: Output_[Boolean] = js.native
   /**
-    * A mapping of tags to assign to the instance.
+    * A map of tags to assign to the instance.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
     */
@@ -133,8 +133,10 @@ object ClusterInstance extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ClusterInstance = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ClusterInstance = js.native
   def get(name: String, id: Input[ID], state: ClusterInstanceState): ClusterInstance = js.native
   def get(name: String, id: Input[ID], state: ClusterInstanceState, opts: CustomResourceOptions): ClusterInstance = js.native
   /**

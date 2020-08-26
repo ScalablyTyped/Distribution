@@ -22,16 +22,34 @@ trait SimpleEmail extends js.Object {
 
 object SimpleEmail {
   @scala.inline
-  def apply(
-    HtmlPart: SimpleEmailPart = null,
-    Subject: SimpleEmailPart = null,
-    TextPart: SimpleEmailPart = null
-  ): SimpleEmail = {
+  def apply(): SimpleEmail = {
     val __obj = js.Dynamic.literal()
-    if (HtmlPart != null) __obj.updateDynamic("HtmlPart")(HtmlPart.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
-    if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleEmail]
   }
+  @scala.inline
+  implicit class SimpleEmailOps[Self <: SimpleEmail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHtmlPart(value: SimpleEmailPart): Self = this.set("HtmlPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlPart: Self = this.set("HtmlPart", js.undefined)
+    @scala.inline
+    def setSubject(value: SimpleEmailPart): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("Subject", js.undefined)
+    @scala.inline
+    def setTextPart(value: SimpleEmailPart): Self = this.set("TextPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextPart: Self = this.set("TextPart", js.undefined)
+  }
+  
 }
 

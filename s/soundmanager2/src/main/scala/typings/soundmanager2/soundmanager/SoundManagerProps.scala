@@ -5,112 +5,183 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SoundManagerProps extends js.Object {
-  var allowScriptAccess: js.UndefOr[ScriptAccess] = js.undefined
-  var altURL: js.UndefOr[String] = js.undefined
-  var bgColor: js.UndefOr[String] = js.undefined
-  var consoleOnly: js.UndefOr[Boolean] = js.undefined
-  var debugFlash: js.UndefOr[Boolean] = js.undefined
-  var debugMode: js.UndefOr[Boolean] = js.undefined
-  var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
+  var allowScriptAccess: js.UndefOr[ScriptAccess] = js.native
+  var altURL: js.UndefOr[String] = js.native
+  var bgColor: js.UndefOr[String] = js.native
+  var consoleOnly: js.UndefOr[Boolean] = js.native
+  var debugFlash: js.UndefOr[Boolean] = js.native
+  var debugMode: js.UndefOr[Boolean] = js.native
+  var defaultOptions: js.UndefOr[DefaultOptions] = js.native
   /**
     * Some properties are dynamic, determined at initialisation or later
     * during runtime, and should be treated as read-only.
     */
-  val features: js.UndefOr[js.Object] = js.undefined
-  var flash9Options: js.UndefOr[Flash9Options] = js.undefined
+  val features: js.UndefOr[js.Object] = js.native
+  var flash9Options: js.UndefOr[Flash9Options] = js.native
   // html5PollingInterval: number;
   // html5Test: string;
-  var flashLoadTimeout: js.UndefOr[Double] = js.undefined
-  var flashVersion: js.UndefOr[Double] = js.undefined
+  var flashLoadTimeout: js.UndefOr[Double] = js.native
+  var flashVersion: js.UndefOr[Double] = js.native
   // flashPollingInterval: number;
-  var forceUseGlobalHTML5Audio: js.UndefOr[Boolean] = js.undefined
-  val html5Only: js.UndefOr[Boolean] = js.undefined
-  var idPrefix: js.UndefOr[String] = js.undefined
-  var ignoreMobileRestrications: js.UndefOr[Boolean] = js.undefined
-  var movieStarOptions: js.UndefOr[MovieStarOptions] = js.undefined
-  var noSWFCache: js.UndefOr[Boolean] = js.undefined
-  var onready: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var ontimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var preferFlash: js.UndefOr[Boolean] = js.undefined
+  var forceUseGlobalHTML5Audio: js.UndefOr[Boolean] = js.native
+  val html5Only: js.UndefOr[Boolean] = js.native
+  var idPrefix: js.UndefOr[String] = js.native
+  var ignoreMobileRestrications: js.UndefOr[Boolean] = js.native
+  var movieStarOptions: js.UndefOr[MovieStarOptions] = js.native
+  var noSWFCache: js.UndefOr[Boolean] = js.native
+  var onready: js.UndefOr[js.Function0[Unit]] = js.native
+  var ontimeout: js.UndefOr[js.Function0[Unit]] = js.native
+  var preferFlash: js.UndefOr[Boolean] = js.native
   /**
     * The directory where SM2 can find the flash movies (soundmanager2.swf,
     * soundmanager2_flash9.swf and debug versions etc.) Note that SM2 will
     * append the correct SWF file name, depending on flashVersion and
     * debugMode settings.
     */
-  var url: js.UndefOr[String] = js.undefined
-  var useAltURL: js.UndefOr[Boolean] = js.undefined
-  var useConsole: js.UndefOr[Boolean] = js.undefined
-  var useFlashBlock: js.UndefOr[Boolean] = js.undefined
-  var useHTML5Audio: js.UndefOr[Boolean] = js.undefined
-  var useHighPerformance: js.UndefOr[Boolean] = js.undefined
-  var waitForWindowLoad: js.UndefOr[`false`] = js.undefined
-  var wmode: js.UndefOr[String | Null] = js.undefined
+  var url: js.UndefOr[String] = js.native
+  var useAltURL: js.UndefOr[Boolean] = js.native
+  var useConsole: js.UndefOr[Boolean] = js.native
+  var useFlashBlock: js.UndefOr[Boolean] = js.native
+  var useHTML5Audio: js.UndefOr[Boolean] = js.native
+  var useHighPerformance: js.UndefOr[Boolean] = js.native
+  var waitForWindowLoad: js.UndefOr[`false`] = js.native
+  var wmode: js.UndefOr[String | Null] = js.native
 }
 
 object SoundManagerProps {
   @scala.inline
-  def apply(
-    allowScriptAccess: ScriptAccess = null,
-    altURL: String = null,
-    bgColor: String = null,
-    consoleOnly: js.UndefOr[Boolean] = js.undefined,
-    debugFlash: js.UndefOr[Boolean] = js.undefined,
-    debugMode: js.UndefOr[Boolean] = js.undefined,
-    defaultOptions: DefaultOptions = null,
-    features: js.Object = null,
-    flash9Options: Flash9Options = null,
-    flashLoadTimeout: js.UndefOr[Double] = js.undefined,
-    flashVersion: js.UndefOr[Double] = js.undefined,
-    forceUseGlobalHTML5Audio: js.UndefOr[Boolean] = js.undefined,
-    html5Only: js.UndefOr[Boolean] = js.undefined,
-    idPrefix: String = null,
-    ignoreMobileRestrications: js.UndefOr[Boolean] = js.undefined,
-    movieStarOptions: MovieStarOptions = null,
-    noSWFCache: js.UndefOr[Boolean] = js.undefined,
-    onready: () => Unit = null,
-    ontimeout: () => Unit = null,
-    preferFlash: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    useAltURL: js.UndefOr[Boolean] = js.undefined,
-    useConsole: js.UndefOr[Boolean] = js.undefined,
-    useFlashBlock: js.UndefOr[Boolean] = js.undefined,
-    useHTML5Audio: js.UndefOr[Boolean] = js.undefined,
-    useHighPerformance: js.UndefOr[Boolean] = js.undefined,
-    waitForWindowLoad: `false` = null,
-    wmode: js.UndefOr[Null | String] = js.undefined
-  ): SoundManagerProps = {
+  def apply(): SoundManagerProps = {
     val __obj = js.Dynamic.literal()
-    if (allowScriptAccess != null) __obj.updateDynamic("allowScriptAccess")(allowScriptAccess.asInstanceOf[js.Any])
-    if (altURL != null) __obj.updateDynamic("altURL")(altURL.asInstanceOf[js.Any])
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(consoleOnly)) __obj.updateDynamic("consoleOnly")(consoleOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugFlash)) __obj.updateDynamic("debugFlash")(debugFlash.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode.get.asInstanceOf[js.Any])
-    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (flash9Options != null) __obj.updateDynamic("flash9Options")(flash9Options.asInstanceOf[js.Any])
-    if (!js.isUndefined(flashLoadTimeout)) __obj.updateDynamic("flashLoadTimeout")(flashLoadTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flashVersion)) __obj.updateDynamic("flashVersion")(flashVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceUseGlobalHTML5Audio)) __obj.updateDynamic("forceUseGlobalHTML5Audio")(forceUseGlobalHTML5Audio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5Only)) __obj.updateDynamic("html5Only")(html5Only.get.asInstanceOf[js.Any])
-    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreMobileRestrications)) __obj.updateDynamic("ignoreMobileRestrications")(ignoreMobileRestrications.get.asInstanceOf[js.Any])
-    if (movieStarOptions != null) __obj.updateDynamic("movieStarOptions")(movieStarOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSWFCache)) __obj.updateDynamic("noSWFCache")(noSWFCache.get.asInstanceOf[js.Any])
-    if (onready != null) __obj.updateDynamic("onready")(js.Any.fromFunction0(onready))
-    if (ontimeout != null) __obj.updateDynamic("ontimeout")(js.Any.fromFunction0(ontimeout))
-    if (!js.isUndefined(preferFlash)) __obj.updateDynamic("preferFlash")(preferFlash.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAltURL)) __obj.updateDynamic("useAltURL")(useAltURL.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useConsole)) __obj.updateDynamic("useConsole")(useConsole.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFlashBlock)) __obj.updateDynamic("useFlashBlock")(useFlashBlock.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML5Audio)) __obj.updateDynamic("useHTML5Audio")(useHTML5Audio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHighPerformance)) __obj.updateDynamic("useHighPerformance")(useHighPerformance.get.asInstanceOf[js.Any])
-    if (waitForWindowLoad != null) __obj.updateDynamic("waitForWindowLoad")(waitForWindowLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(wmode)) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoundManagerProps]
   }
+  @scala.inline
+  implicit class SoundManagerPropsOps[Self <: SoundManagerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowScriptAccess(value: ScriptAccess): Self = this.set("allowScriptAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowScriptAccess: Self = this.set("allowScriptAccess", js.undefined)
+    @scala.inline
+    def setAltURL(value: String): Self = this.set("altURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltURL: Self = this.set("altURL", js.undefined)
+    @scala.inline
+    def setBgColor(value: String): Self = this.set("bgColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgColor: Self = this.set("bgColor", js.undefined)
+    @scala.inline
+    def setConsoleOnly(value: Boolean): Self = this.set("consoleOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsoleOnly: Self = this.set("consoleOnly", js.undefined)
+    @scala.inline
+    def setDebugFlash(value: Boolean): Self = this.set("debugFlash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugFlash: Self = this.set("debugFlash", js.undefined)
+    @scala.inline
+    def setDebugMode(value: Boolean): Self = this.set("debugMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugMode: Self = this.set("debugMode", js.undefined)
+    @scala.inline
+    def setDefaultOptions(value: DefaultOptions): Self = this.set("defaultOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOptions: Self = this.set("defaultOptions", js.undefined)
+    @scala.inline
+    def setFeatures(value: js.Object): Self = this.set("features", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatures: Self = this.set("features", js.undefined)
+    @scala.inline
+    def setFlash9Options(value: Flash9Options): Self = this.set("flash9Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlash9Options: Self = this.set("flash9Options", js.undefined)
+    @scala.inline
+    def setFlashLoadTimeout(value: Double): Self = this.set("flashLoadTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashLoadTimeout: Self = this.set("flashLoadTimeout", js.undefined)
+    @scala.inline
+    def setFlashVersion(value: Double): Self = this.set("flashVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashVersion: Self = this.set("flashVersion", js.undefined)
+    @scala.inline
+    def setForceUseGlobalHTML5Audio(value: Boolean): Self = this.set("forceUseGlobalHTML5Audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceUseGlobalHTML5Audio: Self = this.set("forceUseGlobalHTML5Audio", js.undefined)
+    @scala.inline
+    def setHtml5Only(value: Boolean): Self = this.set("html5Only", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml5Only: Self = this.set("html5Only", js.undefined)
+    @scala.inline
+    def setIdPrefix(value: String): Self = this.set("idPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdPrefix: Self = this.set("idPrefix", js.undefined)
+    @scala.inline
+    def setIgnoreMobileRestrications(value: Boolean): Self = this.set("ignoreMobileRestrications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreMobileRestrications: Self = this.set("ignoreMobileRestrications", js.undefined)
+    @scala.inline
+    def setMovieStarOptions(value: MovieStarOptions): Self = this.set("movieStarOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovieStarOptions: Self = this.set("movieStarOptions", js.undefined)
+    @scala.inline
+    def setNoSWFCache(value: Boolean): Self = this.set("noSWFCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoSWFCache: Self = this.set("noSWFCache", js.undefined)
+    @scala.inline
+    def setOnready(value: () => Unit): Self = this.set("onready", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnready: Self = this.set("onready", js.undefined)
+    @scala.inline
+    def setOntimeout(value: () => Unit): Self = this.set("ontimeout", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOntimeout: Self = this.set("ontimeout", js.undefined)
+    @scala.inline
+    def setPreferFlash(value: Boolean): Self = this.set("preferFlash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferFlash: Self = this.set("preferFlash", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUseAltURL(value: Boolean): Self = this.set("useAltURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAltURL: Self = this.set("useAltURL", js.undefined)
+    @scala.inline
+    def setUseConsole(value: Boolean): Self = this.set("useConsole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseConsole: Self = this.set("useConsole", js.undefined)
+    @scala.inline
+    def setUseFlashBlock(value: Boolean): Self = this.set("useFlashBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseFlashBlock: Self = this.set("useFlashBlock", js.undefined)
+    @scala.inline
+    def setUseHTML5Audio(value: Boolean): Self = this.set("useHTML5Audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHTML5Audio: Self = this.set("useHTML5Audio", js.undefined)
+    @scala.inline
+    def setUseHighPerformance(value: Boolean): Self = this.set("useHighPerformance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHighPerformance: Self = this.set("useHighPerformance", js.undefined)
+    @scala.inline
+    def setWaitForWindowLoad(value: `false`): Self = this.set("waitForWindowLoad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForWindowLoad: Self = this.set("waitForWindowLoad", js.undefined)
+    @scala.inline
+    def setWmode(value: String): Self = this.set("wmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWmode: Self = this.set("wmode", js.undefined)
+    @scala.inline
+    def setWmodeNull: Self = this.set("wmode", null)
+  }
+  
 }
 

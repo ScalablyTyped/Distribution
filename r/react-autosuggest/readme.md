@@ -12,7 +12,7 @@ WAI-ARIA compliant React autosuggest component
 | Keywords           | autosuggest, autocomplete, auto-suggest, auto-complete, auto suggest, auto complete, react autosuggest, react autocomplete, react auto-suggest, react auto-complete, react auto suggest, react auto complete, react-autosuggest, react-autocomplete, react-auto-suggest, react-auto-complete, react-component |
 | # releases         | 7 |
 | # dependents       | 247 |
-| # downloads        | 11059283 |
+| # downloads        | 11282920 |
 | # stars            | 14 |
 
 ## Links

@@ -18,11 +18,32 @@ trait DescribeSSLPoliciesOutput extends js.Object {
 
 object DescribeSSLPoliciesOutput {
   @scala.inline
-  def apply(NextMarker: Marker = null, SslPolicies: SslPolicies = null): DescribeSSLPoliciesOutput = {
+  def apply(): DescribeSSLPoliciesOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (SslPolicies != null) __obj.updateDynamic("SslPolicies")(SslPolicies.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSSLPoliciesOutput]
   }
+  @scala.inline
+  implicit class DescribeSSLPoliciesOutputOps[Self <: DescribeSSLPoliciesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    @scala.inline
+    def setSslPoliciesVarargs(value: SslPolicy*): Self = this.set("SslPolicies", js.Array(value :_*))
+    @scala.inline
+    def setSslPolicies(value: SslPolicies): Self = this.set("SslPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslPolicies: Self = this.set("SslPolicies", js.undefined)
+  }
+  
 }
 

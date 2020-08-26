@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FunctionExpression_
   extends Node
      with BlockParent
@@ -13,15 +14,15 @@ trait FunctionExpression_
      with FunctionParent
      with Pureish
      with Scopable {
-  var async: Boolean
-  var body: BlockStatement_
-  var generator: Boolean
-  var id: Identifier_
-  var params: js.Array[LVal]
-  var returnType: js.UndefOr[TypeAnnotation_] = js.undefined
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_] = js.undefined
+  var async: Boolean = js.native
+  var body: BlockStatement_ = js.native
+  var generator: Boolean = js.native
+  var id: Identifier_ = js.native
+  var params: js.Array[LVal] = js.native
+  var returnType: js.UndefOr[TypeAnnotation_] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_] = js.native
   @JSName("type")
-  var type_FunctionExpression_ : FunctionExpression
+  var type_FunctionExpression_ : FunctionExpression = js.native
 }
 
 object FunctionExpression_ {
@@ -35,21 +36,46 @@ object FunctionExpression_ {
     loc: SourceLocation,
     params: js.Array[LVal],
     start: Double,
-    `type`: FunctionExpression,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    returnType: TypeAnnotation_ = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
+    `type`: FunctionExpression
   ): FunctionExpression_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (returnType != null) __obj.updateDynamic("returnType")(returnType.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionExpression_]
   }
+  @scala.inline
+  implicit class FunctionExpression_Ops[Self <: FunctionExpression_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: BlockStatement_): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGenerator(value: Boolean): Self = this.set("generator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: Identifier_): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParamsVarargs(value: LVal*): Self = this.set("params", js.Array(value :_*))
+    @scala.inline
+    def setParams(value: js.Array[LVal]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: FunctionExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReturnType(value: TypeAnnotation_): Self = this.set("returnType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnType: Self = this.set("returnType", js.undefined)
+    @scala.inline
+    def setTypeParameters(value: TypeParameterDeclaration_): Self = this.set("typeParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeParameters: Self = this.set("typeParameters", js.undefined)
+  }
+  
 }
 

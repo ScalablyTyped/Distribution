@@ -76,28 +76,64 @@ trait SchemaPresentation extends js.Object {
 
 object SchemaPresentation {
   @scala.inline
-  def apply(
-    layouts: js.Array[SchemaPage] = null,
-    locale: String = null,
-    masters: js.Array[SchemaPage] = null,
-    notesMaster: SchemaPage = null,
-    pageSize: SchemaSize = null,
-    presentationId: String = null,
-    revisionId: String = null,
-    slides: js.Array[SchemaPage] = null,
-    title: String = null
-  ): SchemaPresentation = {
+  def apply(): SchemaPresentation = {
     val __obj = js.Dynamic.literal()
-    if (layouts != null) __obj.updateDynamic("layouts")(layouts.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (masters != null) __obj.updateDynamic("masters")(masters.asInstanceOf[js.Any])
-    if (notesMaster != null) __obj.updateDynamic("notesMaster")(notesMaster.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (presentationId != null) __obj.updateDynamic("presentationId")(presentationId.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
-    if (slides != null) __obj.updateDynamic("slides")(slides.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPresentation]
   }
+  @scala.inline
+  implicit class SchemaPresentationOps[Self <: SchemaPresentation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayoutsVarargs(value: SchemaPage*): Self = this.set("layouts", js.Array(value :_*))
+    @scala.inline
+    def setLayouts(value: js.Array[SchemaPage]): Self = this.set("layouts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayouts: Self = this.set("layouts", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMastersVarargs(value: SchemaPage*): Self = this.set("masters", js.Array(value :_*))
+    @scala.inline
+    def setMasters(value: js.Array[SchemaPage]): Self = this.set("masters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasters: Self = this.set("masters", js.undefined)
+    @scala.inline
+    def setNotesMaster(value: SchemaPage): Self = this.set("notesMaster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotesMaster: Self = this.set("notesMaster", js.undefined)
+    @scala.inline
+    def setPageSize(value: SchemaSize): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setPresentationId(value: String): Self = this.set("presentationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentationId: Self = this.set("presentationId", js.undefined)
+    @scala.inline
+    def setRevisionId(value: String): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+    @scala.inline
+    def setSlidesVarargs(value: SchemaPage*): Self = this.set("slides", js.Array(value :_*))
+    @scala.inline
+    def setSlides(value: js.Array[SchemaPage]): Self = this.set("slides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlides: Self = this.set("slides", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

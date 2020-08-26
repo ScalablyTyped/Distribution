@@ -17,6 +17,7 @@ class HtmlContext protected ()
     */
   def this(element: HTMLElement) = this()
   def this(element: HTMLElement, className: String) = this()
+  def this(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean) = this()
   def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
 }
 

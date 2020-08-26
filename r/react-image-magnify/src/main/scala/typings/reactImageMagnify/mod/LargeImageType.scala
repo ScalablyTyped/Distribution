@@ -4,34 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LargeImageType extends CommonImageType {
   /**
     * Defaults to empty string
     */
-  var alt: js.UndefOr[String] = js.undefined
-  var height: Double
-  var width: Double
+  var alt: js.UndefOr[String] = js.native
+  var height: Double = js.native
+  var width: Double = js.native
 }
 
 object LargeImageType {
   @scala.inline
-  def apply(
-    height: Double,
-    src: String,
-    width: Double,
-    alt: String = null,
-    onError: () => Unit = null,
-    onLoad: () => Unit = null,
-    sizes: String = null,
-    srcSet: String = null
-  ): LargeImageType = {
+  def apply(height: Double, src: String, width: Double): LargeImageType = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction0(onError))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction0(onLoad))
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[LargeImageType]
   }
+  @scala.inline
+  implicit class LargeImageTypeOps[Self <: LargeImageType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+  }
+  
 }
 

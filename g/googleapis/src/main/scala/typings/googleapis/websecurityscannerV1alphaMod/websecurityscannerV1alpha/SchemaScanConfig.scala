@@ -62,30 +62,68 @@ trait SchemaScanConfig extends js.Object {
 
 object SchemaScanConfig {
   @scala.inline
-  def apply(
-    authentication: SchemaAuthentication = null,
-    blacklistPatterns: js.Array[String] = null,
-    displayName: String = null,
-    latestRun: SchemaScanRun = null,
-    maxQps: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    schedule: SchemaSchedule = null,
-    startingUrls: js.Array[String] = null,
-    targetPlatforms: js.Array[String] = null,
-    userAgent: String = null
-  ): SchemaScanConfig = {
+  def apply(): SchemaScanConfig = {
     val __obj = js.Dynamic.literal()
-    if (authentication != null) __obj.updateDynamic("authentication")(authentication.asInstanceOf[js.Any])
-    if (blacklistPatterns != null) __obj.updateDynamic("blacklistPatterns")(blacklistPatterns.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (latestRun != null) __obj.updateDynamic("latestRun")(latestRun.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxQps)) __obj.updateDynamic("maxQps")(maxQps.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (startingUrls != null) __obj.updateDynamic("startingUrls")(startingUrls.asInstanceOf[js.Any])
-    if (targetPlatforms != null) __obj.updateDynamic("targetPlatforms")(targetPlatforms.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScanConfig]
   }
+  @scala.inline
+  implicit class SchemaScanConfigOps[Self <: SchemaScanConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthentication(value: SchemaAuthentication): Self = this.set("authentication", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthentication: Self = this.set("authentication", js.undefined)
+    @scala.inline
+    def setBlacklistPatternsVarargs(value: String*): Self = this.set("blacklistPatterns", js.Array(value :_*))
+    @scala.inline
+    def setBlacklistPatterns(value: js.Array[String]): Self = this.set("blacklistPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlacklistPatterns: Self = this.set("blacklistPatterns", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setLatestRun(value: SchemaScanRun): Self = this.set("latestRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestRun: Self = this.set("latestRun", js.undefined)
+    @scala.inline
+    def setMaxQps(value: Double): Self = this.set("maxQps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxQps: Self = this.set("maxQps", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSchedule(value: SchemaSchedule): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setStartingUrlsVarargs(value: String*): Self = this.set("startingUrls", js.Array(value :_*))
+    @scala.inline
+    def setStartingUrls(value: js.Array[String]): Self = this.set("startingUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartingUrls: Self = this.set("startingUrls", js.undefined)
+    @scala.inline
+    def setTargetPlatformsVarargs(value: String*): Self = this.set("targetPlatforms", js.Array(value :_*))
+    @scala.inline
+    def setTargetPlatforms(value: js.Array[String]): Self = this.set("targetPlatforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetPlatforms: Self = this.set("targetPlatforms", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+  }
+  
 }
 

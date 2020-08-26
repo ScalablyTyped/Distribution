@@ -17,6 +17,7 @@ trait Response extends js.Object {
     * response body.
     */
   def end(): Unit = js.native
+  def end(data: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
   def end(data: String): Unit = js.native
   def end(data: String, encoding: String): Unit = js.native
   def end(data: Buffer): Unit = js.native

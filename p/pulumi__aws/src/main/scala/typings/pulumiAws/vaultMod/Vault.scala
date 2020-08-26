@@ -22,6 +22,7 @@ class Vault protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: VaultArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: VaultArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN of the vault.
@@ -42,7 +43,7 @@ class Vault protected () extends CustomResource {
   /**
     * Metadata that you can assign to help organize the resources that you create.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -56,8 +57,10 @@ object Vault extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Vault = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Vault = js.native
   def get(name: String, id: Input[ID], state: VaultState): Vault = js.native
   def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = js.native
   /**

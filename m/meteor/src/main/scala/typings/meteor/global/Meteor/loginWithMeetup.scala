@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object loginWithMeetup extends js.Object {
   def apply(): Unit = js.native
+  def apply(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[
+      /* error */ js.UndefOr[globalError | typings.meteor.Meteor.Error | typings.meteor.Meteor.TypedError], 
+      Unit
+    ]
+  ): Unit = js.native
   def apply(options: LoginWithExternalServiceOptions): Unit = js.native
   def apply(
     options: LoginWithExternalServiceOptions,

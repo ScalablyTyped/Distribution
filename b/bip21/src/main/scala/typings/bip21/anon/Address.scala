@@ -4,17 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Address extends js.Object {
-  var address: String
-  var amount: js.UndefOr[Double] = js.undefined
+  var address: String = js.native
+  var amount: js.UndefOr[Double] = js.native
 }
 
 object Address {
   @scala.inline
-  def apply(address: String, amount: js.UndefOr[Double] = js.undefined): Address = {
+  def apply(address: String): Address = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
+  @scala.inline
+  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+  }
+  
 }
 

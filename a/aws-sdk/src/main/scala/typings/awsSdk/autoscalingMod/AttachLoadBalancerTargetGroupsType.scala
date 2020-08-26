@@ -22,5 +22,24 @@ object AttachLoadBalancerTargetGroupsType {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], TargetGroupARNs = TargetGroupARNs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachLoadBalancerTargetGroupsType]
   }
+  @scala.inline
+  implicit class AttachLoadBalancerTargetGroupsTypeOps[Self <: AttachLoadBalancerTargetGroupsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetGroupARNsVarargs(value: XmlStringMaxLen511*): Self = this.set("TargetGroupARNs", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupARNs(value: TargetGroupARNs): Self = this.set("TargetGroupARNs", value.asInstanceOf[js.Any])
+  }
+  
 }
 

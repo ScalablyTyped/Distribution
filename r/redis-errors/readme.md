@@ -12,7 +12,7 @@ Error classes used in node_redis
 | Keywords           | redis, javascript, node, error |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 12245753 |
+| # downloads        | 13307938 |
 | # stars            | 0 |
 
 ## Links

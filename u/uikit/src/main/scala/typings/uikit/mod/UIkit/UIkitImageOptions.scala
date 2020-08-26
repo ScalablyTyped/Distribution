@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UIkitImageOptions extends js.Object {
-  var dataSrc: js.UndefOr[String] = js.undefined
-  var dataSrcset: js.UndefOr[String | Boolean] = js.undefined
-  var height: js.UndefOr[String | Boolean] = js.undefined
-  var offsetLeft: js.UndefOr[String | Double] = js.undefined
-  var offsetTop: js.UndefOr[String] = js.undefined
-  var sizes: js.UndefOr[String | Boolean] = js.undefined
-  var target: js.UndefOr[String | Boolean] = js.undefined
-  var width: js.UndefOr[String | Boolean] = js.undefined
+  var dataSrc: js.UndefOr[String] = js.native
+  var dataSrcset: js.UndefOr[String | Boolean] = js.native
+  var height: js.UndefOr[String | Boolean] = js.native
+  var offsetLeft: js.UndefOr[String | Double] = js.native
+  var offsetTop: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String | Boolean] = js.native
+  var target: js.UndefOr[String | Boolean] = js.native
+  var width: js.UndefOr[String | Boolean] = js.native
 }
 
 object UIkitImageOptions {
   @scala.inline
-  def apply(
-    dataSrc: String = null,
-    dataSrcset: String | Boolean = null,
-    height: String | Boolean = null,
-    offsetLeft: String | Double = null,
-    offsetTop: String = null,
-    sizes: String | Boolean = null,
-    target: String | Boolean = null,
-    width: String | Boolean = null
-  ): UIkitImageOptions = {
+  def apply(): UIkitImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (dataSrc != null) __obj.updateDynamic("dataSrc")(dataSrc.asInstanceOf[js.Any])
-    if (dataSrcset != null) __obj.updateDynamic("dataSrcset")(dataSrcset.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (offsetLeft != null) __obj.updateDynamic("offsetLeft")(offsetLeft.asInstanceOf[js.Any])
-    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIkitImageOptions]
   }
+  @scala.inline
+  implicit class UIkitImageOptionsOps[Self <: UIkitImageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSrc(value: String): Self = this.set("dataSrc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSrc: Self = this.set("dataSrc", js.undefined)
+    @scala.inline
+    def setDataSrcset(value: String | Boolean): Self = this.set("dataSrcset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSrcset: Self = this.set("dataSrcset", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Boolean): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOffsetLeft(value: String | Double): Self = this.set("offsetLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetLeft: Self = this.set("offsetLeft", js.undefined)
+    @scala.inline
+    def setOffsetTop(value: String): Self = this.set("offsetTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetTop: Self = this.set("offsetTop", js.undefined)
+    @scala.inline
+    def setSizes(value: String | Boolean): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setTarget(value: String | Boolean): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Boolean): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

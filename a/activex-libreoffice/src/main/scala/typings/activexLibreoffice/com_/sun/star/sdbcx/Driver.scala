@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * Definition and deletion of database catalogs can't be defined in a common manner for DBMS, but it should be possible to hide much of the complexity of
   * creation and deletion of catalogs. Each driver could provide methods to cover these tasks.
   */
+@js.native
 trait Driver
   extends XDriver
      with XDataDefinitionSupplier

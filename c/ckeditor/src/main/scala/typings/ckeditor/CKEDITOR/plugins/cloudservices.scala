@@ -12,7 +12,9 @@ object cloudservices extends js.Object {
   trait cloudServicesLoader extends fileLoader {
     var customToken: String = js.native
     def loadAndUpload(): Unit = js.native
+    def loadAndUpload(url: js.UndefOr[scala.Nothing], additionalRequestParameters: js.Any): Unit = js.native
     def upload(): Unit = js.native
+    def upload(url: js.UndefOr[scala.Nothing], additionalRequestParameters: js.Any): Unit = js.native
   }
   
 }

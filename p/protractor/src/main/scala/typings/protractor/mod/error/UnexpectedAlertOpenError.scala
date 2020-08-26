@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class UnexpectedAlertOpenError ()
   extends typings.seleniumWebdriver.mod.error.UnexpectedAlertOpenError {
   def this(message: String) = this()
+  def this(message: js.UndefOr[scala.Nothing], openAlertText: String) = this()
   def this(message: String, openAlertText: String) = this()
 }
 

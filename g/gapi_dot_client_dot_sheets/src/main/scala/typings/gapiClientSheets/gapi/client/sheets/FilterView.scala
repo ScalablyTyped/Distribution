@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FilterView extends js.Object {
   /**
     * The criteria for showing/hiding values per column.
@@ -15,52 +16,80 @@ trait FilterView extends js.Object {
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: gapi.client.sheets.gapi.client.sheets.FilterCriteria}
     */ typings.gapiClientSheets.gapiClientSheetsStrings.FilterView with TopLevel[js.Any]
-  ] = js.undefined
+  ] = js.native
   /** The ID of the filter view. */
-  var filterViewId: js.UndefOr[Double] = js.undefined
+  var filterViewId: js.UndefOr[Double] = js.native
   /**
     * The named range this filter view is backed by, if any.
     *
     * When writing, only one of range or named_range_id
     * may be set.
     */
-  var namedRangeId: js.UndefOr[String] = js.undefined
+  var namedRangeId: js.UndefOr[String] = js.native
   /**
     * The range this filter view covers.
     *
     * When writing, only one of range or named_range_id
     * may be set.
     */
-  var range: js.UndefOr[GridRange] = js.undefined
+  var range: js.UndefOr[GridRange] = js.native
   /**
     * The sort order per column. Later specifications are used when values
     * are equal in the earlier specifications.
     */
-  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
+  var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.native
   /** The name of the filter view. */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object FilterView {
   @scala.inline
-  def apply(
-    criteria: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in string ]: gapi.client.sheets.gapi.client.sheets.FilterCriteria}
-    */ typings.gapiClientSheets.gapiClientSheetsStrings.FilterView with TopLevel[js.Any] = null,
-    filterViewId: js.UndefOr[Double] = js.undefined,
-    namedRangeId: String = null,
-    range: GridRange = null,
-    sortSpecs: js.Array[SortSpec] = null,
-    title: String = null
-  ): FilterView = {
+  def apply(): FilterView = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterViewId)) __obj.updateDynamic("filterViewId")(filterViewId.get.asInstanceOf[js.Any])
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterView]
   }
+  @scala.inline
+  implicit class FilterViewOps[Self <: FilterView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCriteria(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in string ]: gapi.client.sheets.gapi.client.sheets.FilterCriteria}
+      */ typings.gapiClientSheets.gapiClientSheetsStrings.FilterView with TopLevel[js.Any]
+    ): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    @scala.inline
+    def setFilterViewId(value: Double): Self = this.set("filterViewId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterViewId: Self = this.set("filterViewId", js.undefined)
+    @scala.inline
+    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    @scala.inline
+    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setSortSpecsVarargs(value: SortSpec*): Self = this.set("sortSpecs", js.Array(value :_*))
+    @scala.inline
+    def setSortSpecs(value: js.Array[SortSpec]): Self = this.set("sortSpecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortSpecs: Self = this.set("sortSpecs", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

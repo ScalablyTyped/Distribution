@@ -14,7 +14,7 @@ package object mod {
     * Webpack plugin to merge your source files together into single file, to be included in index.html,
     * and achieving same effect as you would by including them all separately through <script> or <link>.
     */
-  type MergeIntoFile = typings.webpack.mod.Plugin
+  type MergeIntoFile = typings.std.Plugin
   /**
     * Alternative way to specify files as array of src & dest,
     * for flexibility to transform and create multiple destination files for same source when you need to generate additional map file for example.

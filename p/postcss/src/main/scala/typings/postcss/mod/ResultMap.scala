@@ -34,6 +34,7 @@ trait ResultMap extends js.Object {
     * thus, not needing any rewriting (Supplying '.' has the same effect).
     */
   def applySourceMap(sourceMapConsumer: SourceMapConsumer): Unit = js.native
+  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: js.UndefOr[scala.Nothing], sourceMapPath: String): Unit = js.native
   def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String): Unit = js.native
   def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String, sourceMapPath: String): Unit = js.native
   /**

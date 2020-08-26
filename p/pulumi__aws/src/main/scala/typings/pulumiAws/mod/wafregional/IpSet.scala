@@ -22,6 +22,7 @@ class IpSet protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: IpSetArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: IpSetArgs, opts: CustomResourceOptions) = this()
 }
 
@@ -36,8 +37,10 @@ object IpSet extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): typings.pulumiAws.wafregionalIpSetMod.IpSet = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.wafregionalIpSetMod.IpSet = js.native
   def get(name: String, id: Input[ID], state: IpSetState): typings.pulumiAws.wafregionalIpSetMod.IpSet = js.native
   def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): typings.pulumiAws.wafregionalIpSetMod.IpSet = js.native
   /**

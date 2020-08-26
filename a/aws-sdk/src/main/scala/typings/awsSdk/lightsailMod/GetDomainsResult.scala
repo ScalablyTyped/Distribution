@@ -18,11 +18,32 @@ trait GetDomainsResult extends js.Object {
 
 object GetDomainsResult {
   @scala.inline
-  def apply(domains: DomainList = null, nextPageToken: String = null): GetDomainsResult = {
+  def apply(): GetDomainsResult = {
     val __obj = js.Dynamic.literal()
-    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainsResult]
   }
+  @scala.inline
+  implicit class GetDomainsResultOps[Self <: GetDomainsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainsVarargs(value: Domain*): Self = this.set("domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: DomainList): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

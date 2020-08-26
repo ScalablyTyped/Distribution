@@ -30,7 +30,7 @@ object calendarMod extends js.Object {
     @js.native
     object v3
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Calendar]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Calendar]
             ]
     
   }

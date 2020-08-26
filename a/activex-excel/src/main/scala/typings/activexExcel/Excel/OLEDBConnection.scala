@@ -51,6 +51,7 @@ trait OLEDBConnection extends js.Object {
   def Reconnect(): Unit = js.native
   def Refresh(): Unit = js.native
   def SaveAsODC(ODCFileName: String): Unit = js.native
+  def SaveAsODC(ODCFileName: String, Description: js.UndefOr[scala.Nothing], Keywords: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String, Keywords: String): Unit = js.native
 }

@@ -7,39 +7,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FadeProps
   extends AllHTMLAttributes[Fade]
      with TransitionCallbacks
      with ClassAttributes[Fade] {
-  var appear: js.UndefOr[Boolean] = js.undefined
-  var in: js.UndefOr[Boolean] = js.undefined
-  var mountOnEnter: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var unmountOnExit: js.UndefOr[Boolean] = js.undefined
+  var appear: js.UndefOr[Boolean] = js.native
+  var in: js.UndefOr[Boolean] = js.native
+  var mountOnEnter: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var unmountOnExit: js.UndefOr[Boolean] = js.native
 }
 
 object FadeProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[Fade] = null,
-    ClassAttributes: ClassAttributes[Fade] = null,
-    TransitionCallbacks: TransitionCallbacks = null,
-    appear: js.UndefOr[Boolean] = js.undefined,
-    in: js.UndefOr[Boolean] = js.undefined,
-    mountOnEnter: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    unmountOnExit: js.UndefOr[Boolean] = js.undefined
-  ): FadeProps = {
+  def apply(): FadeProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (TransitionCallbacks != null) js.Dynamic.global.Object.assign(__obj, TransitionCallbacks)
-    if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mountOnEnter)) __obj.updateDynamic("mountOnEnter")(mountOnEnter.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnExit)) __obj.updateDynamic("unmountOnExit")(unmountOnExit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FadeProps]
   }
+  @scala.inline
+  implicit class FadePropsOps[Self <: FadeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppear(value: Boolean): Self = this.set("appear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppear: Self = this.set("appear", js.undefined)
+    @scala.inline
+    def setIn(value: Boolean): Self = this.set("in", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIn: Self = this.set("in", js.undefined)
+    @scala.inline
+    def setMountOnEnter(value: Boolean): Self = this.set("mountOnEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountOnEnter: Self = this.set("mountOnEnter", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUnmountOnExit(value: Boolean): Self = this.set("unmountOnExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmountOnExit: Self = this.set("unmountOnExit", js.undefined)
+  }
+  
 }
 

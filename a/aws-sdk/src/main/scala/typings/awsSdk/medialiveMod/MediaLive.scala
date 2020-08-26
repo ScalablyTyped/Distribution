@@ -255,6 +255,19 @@ trait MediaLive extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputDeviceResponse, Unit]
   ): Request[DescribeInputDeviceResponse, AWSError] = js.native
   /**
+    * Get the latest thumbnail data for the input device.
+    */
+  def describeInputDeviceThumbnail(): Request[DescribeInputDeviceThumbnailResponse, AWSError] = js.native
+  def describeInputDeviceThumbnail(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputDeviceThumbnailResponse, Unit]): Request[DescribeInputDeviceThumbnailResponse, AWSError] = js.native
+  /**
+    * Get the latest thumbnail data for the input device.
+    */
+  def describeInputDeviceThumbnail(params: DescribeInputDeviceThumbnailRequest): Request[DescribeInputDeviceThumbnailResponse, AWSError] = js.native
+  def describeInputDeviceThumbnail(
+    params: DescribeInputDeviceThumbnailRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInputDeviceThumbnailResponse, Unit]
+  ): Request[DescribeInputDeviceThumbnailResponse, AWSError] = js.native
+  /**
     * Produces a summary of an Input Security Group
     */
   def describeInputSecurityGroup(): Request[DescribeInputSecurityGroupResponse, AWSError] = js.native

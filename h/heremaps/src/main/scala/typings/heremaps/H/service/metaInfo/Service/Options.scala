@@ -10,20 +10,43 @@ import scala.scalajs.js.annotation._
   * @property version {string=} - the map version hash to use for retrieving tiles, default is newest and will be automatically updated
   * @property subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
   */
+@js.native
 trait Options extends js.Object {
-  var subDomain: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
+  var subDomain: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(subDomain: String = null, `type`: String = null, version: String = null): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubDomain(value: String): Self = this.set("subDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubDomain: Self = this.set("subDomain", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

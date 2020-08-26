@@ -100,6 +100,7 @@ package object servicecatalogMod {
   type OrganizationNodeType = typings.awsSdk.servicecatalogMod._OrganizationNodeType | java.lang.String
   type OrganizationNodeValue = java.lang.String
   type OrganizationNodes = js.Array[typings.awsSdk.servicecatalogMod.OrganizationNode]
+  type OutputDescription = java.lang.String
   type OutputKey = java.lang.String
   type OutputValue = java.lang.String
   type PageSize = scala.Double
@@ -211,6 +212,8 @@ package object servicecatalogMod {
   type ProvisioningArtifactInfoKey = java.lang.String
   type ProvisioningArtifactInfoValue = java.lang.String
   type ProvisioningArtifactName = java.lang.String
+  type ProvisioningArtifactOutputKey = java.lang.String
+  type ProvisioningArtifactOutputs = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactOutput]
   type ProvisioningArtifactParameters = js.Array[typings.awsSdk.servicecatalogMod.ProvisioningArtifactParameter]
   type ProvisioningArtifactPropertyName = typings.awsSdk.awsSdkStrings.Id_ | java.lang.String
   type ProvisioningArtifactPropertyValue = java.lang.String

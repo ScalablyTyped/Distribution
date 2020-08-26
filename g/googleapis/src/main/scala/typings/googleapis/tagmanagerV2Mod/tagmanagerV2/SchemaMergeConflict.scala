@@ -25,11 +25,30 @@ trait SchemaMergeConflict extends js.Object {
 
 object SchemaMergeConflict {
   @scala.inline
-  def apply(entityInBaseVersion: SchemaEntity = null, entityInWorkspace: SchemaEntity = null): SchemaMergeConflict = {
+  def apply(): SchemaMergeConflict = {
     val __obj = js.Dynamic.literal()
-    if (entityInBaseVersion != null) __obj.updateDynamic("entityInBaseVersion")(entityInBaseVersion.asInstanceOf[js.Any])
-    if (entityInWorkspace != null) __obj.updateDynamic("entityInWorkspace")(entityInWorkspace.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMergeConflict]
   }
+  @scala.inline
+  implicit class SchemaMergeConflictOps[Self <: SchemaMergeConflict] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityInBaseVersion(value: SchemaEntity): Self = this.set("entityInBaseVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityInBaseVersion: Self = this.set("entityInBaseVersion", js.undefined)
+    @scala.inline
+    def setEntityInWorkspace(value: SchemaEntity): Self = this.set("entityInWorkspace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityInWorkspace: Self = this.set("entityInWorkspace", js.undefined)
+  }
+  
 }
 

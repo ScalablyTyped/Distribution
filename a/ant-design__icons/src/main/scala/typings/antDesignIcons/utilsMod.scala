@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons/dist/utils", JSImport.Namespace)
+@JSImport("@ant-design/icons/es/utils", JSImport.Namespace)
 @js.native
 object utilsMod extends js.Object {
   val iconStyles: /* "\n.anticon {\n  display: inline-block;\n  color: inherit;\n  font-style: normal;\n  line-height: 0;\n  text-align: center;\n  text-transform: none;\n  vertical-align: -0.125em;\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.anticon > * {\n  line-height: 1;\n}\n\n.anticon svg {\n  display: inline-block;\n}\n\n.anticon::before {\n  display: none;\n}\n\n.anticon .anticon-icon {\n  display: block;\n}\n\n.anticon[tabindex] {\n  cursor: pointer;\n}\n\n.anticon-spin::before,\n.anticon-spin {\n  display: inline-block;\n  -webkit-animation: loadingCircle 1s infinite linear;\n  animation: loadingCircle 1s infinite linear;\n}\n\n@-webkit-keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes loadingCircle {\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n  }\n}\n" */ String = js.native
@@ -16,7 +16,7 @@ object utilsMod extends js.Object {
   @JSName("generate")
   def generate_false(node: AbstractNode, key: String, rootProps: `false`): js.Any = js.native
   def getSecondaryColor(primaryColor: String): String = js.native
-  def isIconDefinition(target: js.Any): /* is @ant-design/icons-svg.@ant-design/icons-svg/lib/types.IconDefinition */ Boolean = js.native
+  def isIconDefinition(target: js.Any): /* is @ant-design/icons-svg.@ant-design/icons-svg/es/types.IconDefinition */ Boolean = js.native
   def normalizeAttrs(): Attrs = js.native
   def normalizeAttrs(attrs: Attrs): Attrs = js.native
   def normalizeTwoToneColors(): js.Array[String] = js.native

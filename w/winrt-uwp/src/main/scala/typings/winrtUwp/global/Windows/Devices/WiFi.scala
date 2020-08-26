@@ -1,13 +1,8 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.WiFi.WiFiAccessStatus
-import typings.winrtUwp.Windows.Devices.WiFi.WiFiConnectionStatus
-import typings.winrtUwp.Windows.Devices.WiFi.WiFiNetworkKind
-import typings.winrtUwp.Windows.Devices.WiFi.WiFiPhyKind
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
-import typings.winrtUwp.Windows.Networking.Connectivity.NetworkSecuritySettings
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -24,62 +19,17 @@ object WiFi extends js.Object {
   /** Describes an available Wi-Fi network. */
   @js.native
   abstract class WiFiAvailableNetwork ()
-    extends typings.winrtUwp.Windows.Devices.WiFi.WiFiAvailableNetwork {
-    /** Gets the interval between 802.11 Beacon frames used by this network. */
-    /* CompleteClass */
-    override var beaconInterval: Double = js.native
-    /** Gets the MAC address of the access point. */
-    /* CompleteClass */
-    override var bssid: String = js.native
-    /** Gets the channel center frequency of the band on which the 802.11 Beacon or Probe Response was received. */
-    /* CompleteClass */
-    override var channelCenterFrequencyInKilohertz: Double = js.native
-    /** Gets a value indicating whether this network originates from a Wi-Fi Direct access point. */
-    /* CompleteClass */
-    override var isWiFiDirect: Boolean = js.native
-    /** Gets a value describing the kind of network being described. */
-    /* CompleteClass */
-    override var networkKind: WiFiNetworkKind = js.native
-    /** Gets the signal strength of the network. */
-    /* CompleteClass */
-    override var networkRssiInDecibelMilliwatts: Double = js.native
-    /** Gets a value describing the kind of PHY used by this network. */
-    /* CompleteClass */
-    override var phyKind: WiFiPhyKind = js.native
-    /** Gets the security configuration of the network. */
-    /* CompleteClass */
-    override var securitySettings: NetworkSecuritySettings = js.native
-    /** Gets the strength of the signal as a number of bars. */
-    /* CompleteClass */
-    override var signalBars: Double = js.native
-    /** Gets the SSID (name) of the network. */
-    /* CompleteClass */
-    override var ssid: String = js.native
-    /** Gets the uptime value reported by the network. */
-    /* CompleteClass */
-    override var uptime: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.WiFi.WiFiAvailableNetwork
   
   /** Describes the results of an attempt to connect to a Wi-Fi network. */
   @js.native
   abstract class WiFiConnectionResult ()
-    extends typings.winrtUwp.Windows.Devices.WiFi.WiFiConnectionResult {
-    /** Gets the connection result value. */
-    /* CompleteClass */
-    override var connectionStatus: WiFiConnectionStatus = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.WiFi.WiFiConnectionResult
   
   /** Contains the result of a network scan operation. */
   @js.native
   abstract class WiFiNetworkReport ()
-    extends typings.winrtUwp.Windows.Devices.WiFi.WiFiNetworkReport {
-    /** A list of available networks. */
-    /* CompleteClass */
-    override var availableNetworks: IVectorView[typings.winrtUwp.Windows.Devices.WiFi.WiFiAvailableNetwork] = js.native
-    /** Contains the result of a network scan operation. */
-    /* CompleteClass */
-    override var timestamp: Date = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.WiFi.WiFiNetworkReport
   
   var irect: js.Any = js.native
   /** Used to report the results of an attempt to request access to a Wi-Fi adapter. */

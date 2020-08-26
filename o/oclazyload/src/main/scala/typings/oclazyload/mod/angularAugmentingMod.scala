@@ -20,6 +20,7 @@ object angularAugmentingMod extends js.Object {
       * @param configFn Optional configuration function for the module.
       */
     def module(name: String): js.Any = js.native
+    def module(name: String, requires: js.UndefOr[scala.Nothing], configFn: js.Function): js.Any = js.native
     def module(name: String, requires: js.Array[String | IModuleConfig]): js.Any = js.native
     def module(name: String, requires: js.Array[String | IModuleConfig], configFn: js.Function): js.Any = js.native
   }

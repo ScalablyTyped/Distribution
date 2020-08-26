@@ -29,6 +29,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def Characters(): TextRange2 = js.native
+  def Characters(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def Characters(Start: Double): TextRange2 = js.native
   def Characters(Start: Double, Length: Double): TextRange2 = js.native
   def Copy(): Unit = js.native
@@ -40,7 +41,21 @@ trait TextRange2 extends js.Object {
     * @param WholeWords [WholeWords=0]
     */
   def Find(FindWhat: String): TextRange2 = js.native
+  def Find(
+    FindWhat: String,
+    After: js.UndefOr[scala.Nothing],
+    MatchCase: js.UndefOr[scala.Nothing],
+    WholeWords: MsoTriState
+  ): TextRange2 = js.native
+  def Find(FindWhat: String, After: js.UndefOr[scala.Nothing], MatchCase: MsoTriState): TextRange2 = js.native
+  def Find(
+    FindWhat: String,
+    After: js.UndefOr[scala.Nothing],
+    MatchCase: MsoTriState,
+    WholeWords: MsoTriState
+  ): TextRange2 = js.native
   def Find(FindWhat: String, After: Double): TextRange2 = js.native
+  def Find(FindWhat: String, After: Double, MatchCase: js.UndefOr[scala.Nothing], WholeWords: MsoTriState): TextRange2 = js.native
   def Find(FindWhat: String, After: Double, MatchCase: MsoTriState): TextRange2 = js.native
   def Find(FindWhat: String, After: Double, MatchCase: MsoTriState, WholeWords: MsoTriState): TextRange2 = js.native
   /** @param NewText [NewText=''] */
@@ -54,6 +69,7 @@ trait TextRange2 extends js.Object {
     * @param Position [Position=-1]
     */
   def InsertChartField(ChartFieldType: MsoChartFieldType): TextRange2 = js.native
+  def InsertChartField(ChartFieldType: MsoChartFieldType, Formula: js.UndefOr[scala.Nothing], Position: Double): TextRange2 = js.native
   def InsertChartField(ChartFieldType: MsoChartFieldType, Formula: String): TextRange2 = js.native
   def InsertChartField(ChartFieldType: MsoChartFieldType, Formula: String, Position: Double): TextRange2 = js.native
   /** @param Unicode [Unicode=0] */
@@ -65,6 +81,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def Lines(): TextRange2 = js.native
+  def Lines(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def Lines(Start: Double): TextRange2 = js.native
   def Lines(Start: Double, Length: Double): TextRange2 = js.native
   def LtrRun(): Unit = js.native
@@ -73,6 +90,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def MathZones(): TextRange2 = js.native
+  def MathZones(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def MathZones(Start: Double): TextRange2 = js.native
   def MathZones(Start: Double, Length: Double): TextRange2 = js.native
   /**
@@ -80,6 +98,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def Paragraphs(): TextRange2 = js.native
+  def Paragraphs(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def Paragraphs(Start: Double): TextRange2 = js.native
   def Paragraphs(Start: Double, Length: Double): TextRange2 = js.native
   def Paste(): TextRange2 = js.native
@@ -91,7 +110,29 @@ trait TextRange2 extends js.Object {
     * @param WholeWords [WholeWords=0]
     */
   def Replace(FindWhat: String, ReplaceWhat: String): TextRange2 = js.native
+  def Replace(
+    FindWhat: String,
+    ReplaceWhat: String,
+    After: js.UndefOr[scala.Nothing],
+    MatchCase: js.UndefOr[scala.Nothing],
+    WholeWords: MsoTriState
+  ): TextRange2 = js.native
+  def Replace(FindWhat: String, ReplaceWhat: String, After: js.UndefOr[scala.Nothing], MatchCase: MsoTriState): TextRange2 = js.native
+  def Replace(
+    FindWhat: String,
+    ReplaceWhat: String,
+    After: js.UndefOr[scala.Nothing],
+    MatchCase: MsoTriState,
+    WholeWords: MsoTriState
+  ): TextRange2 = js.native
   def Replace(FindWhat: String, ReplaceWhat: String, After: Double): TextRange2 = js.native
+  def Replace(
+    FindWhat: String,
+    ReplaceWhat: String,
+    After: Double,
+    MatchCase: js.UndefOr[scala.Nothing],
+    WholeWords: MsoTriState
+  ): TextRange2 = js.native
   def Replace(FindWhat: String, ReplaceWhat: String, After: Double, MatchCase: MsoTriState): TextRange2 = js.native
   def Replace(
     FindWhat: String,
@@ -107,6 +148,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def Runs(): TextRange2 = js.native
+  def Runs(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def Runs(Start: Double): TextRange2 = js.native
   def Runs(Start: Double, Length: Double): TextRange2 = js.native
   def Select(): Unit = js.native
@@ -115,6 +157,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def Sentences(): TextRange2 = js.native
+  def Sentences(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def Sentences(Start: Double): TextRange2 = js.native
   def Sentences(Start: Double, Length: Double): TextRange2 = js.native
   def TrimText(): TextRange2 = js.native
@@ -123,6 +166,7 @@ trait TextRange2 extends js.Object {
     * @param Length [Length=-1]
     */
   def Words(): TextRange2 = js.native
+  def Words(Start: js.UndefOr[scala.Nothing], Length: Double): TextRange2 = js.native
   def Words(Start: Double): TextRange2 = js.native
   def Words(Start: Double, Length: Double): TextRange2 = js.native
 }

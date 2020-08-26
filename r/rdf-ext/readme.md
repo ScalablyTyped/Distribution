@@ -11,8 +11,8 @@ Extended Linked Data module
 | Full name          | rdf-ext |
 | Keywords           | rdf, rdfjs, rdf-ext |
 | # releases         | 7 |
-| # dependents       | 56 |
-| # downloads        | 36228 |
+| # dependents       | 54 |
+| # downloads        | 37528 |
 | # stars            | 2 |
 
 ## Links

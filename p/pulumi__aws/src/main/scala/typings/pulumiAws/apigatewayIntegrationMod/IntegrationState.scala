@@ -1,7 +1,7 @@
 package typings.pulumiAws.apigatewayIntegrationMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.restApiMod.RestApi
+import typings.pulumiAws.apigatewayMod.RestApi
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -78,49 +78,95 @@ trait IntegrationState extends js.Object {
   /**
     * The input's URI. **Required** if `type` is `AWS`, `AWS_PROXY`, `HTTP` or `HTTP_PROXY`.
     * For HTTP integrations, the URI must be a fully formed, encoded HTTP(S) URL according to the RFC-3986 specification . For AWS integrations, the URI should be of the form `arn:aws:apigateway:{region}:{subdomain.service|service}:{path|action}/{service_api}`. `region`, `subdomain` and `service` are used to determine the right endpoint.
-    * e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:012345678901:function:my-func/invocations`
+    * e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:012345678901:function:my-func/invocations`. For private integrations, the URI parameter is not used for routing requests to your endpoint, but is used for setting the Host header and for certificate validation.
     */
   val uri: js.UndefOr[Input[String]] = js.native
 }
 
 object IntegrationState {
   @scala.inline
-  def apply(
-    cacheKeyParameters: Input[js.Array[Input[String]]] = null,
-    cacheNamespace: Input[String] = null,
-    connectionId: Input[String] = null,
-    connectionType: Input[String] = null,
-    contentHandling: Input[String] = null,
-    credentials: Input[String] = null,
-    httpMethod: Input[String] = null,
-    integrationHttpMethod: Input[String] = null,
-    passthroughBehavior: Input[String] = null,
-    requestParameters: Input[StringDictionary[Input[String]]] = null,
-    requestTemplates: Input[StringDictionary[Input[String]]] = null,
-    resourceId: Input[String] = null,
-    restApi: Input[String | RestApi] = null,
-    timeoutMilliseconds: Input[Double] = null,
-    `type`: Input[String] = null,
-    uri: Input[String] = null
-  ): IntegrationState = {
+  def apply(): IntegrationState = {
     val __obj = js.Dynamic.literal()
-    if (cacheKeyParameters != null) __obj.updateDynamic("cacheKeyParameters")(cacheKeyParameters.asInstanceOf[js.Any])
-    if (cacheNamespace != null) __obj.updateDynamic("cacheNamespace")(cacheNamespace.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (connectionType != null) __obj.updateDynamic("connectionType")(connectionType.asInstanceOf[js.Any])
-    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
-    if (integrationHttpMethod != null) __obj.updateDynamic("integrationHttpMethod")(integrationHttpMethod.asInstanceOf[js.Any])
-    if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
-    if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
-    if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
-    if (timeoutMilliseconds != null) __obj.updateDynamic("timeoutMilliseconds")(timeoutMilliseconds.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationState]
   }
+  @scala.inline
+  implicit class IntegrationStateOps[Self <: IntegrationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheKeyParametersVarargs(value: Input[String]*): Self = this.set("cacheKeyParameters", js.Array(value :_*))
+    @scala.inline
+    def setCacheKeyParameters(value: Input[js.Array[Input[String]]]): Self = this.set("cacheKeyParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheKeyParameters: Self = this.set("cacheKeyParameters", js.undefined)
+    @scala.inline
+    def setCacheNamespace(value: Input[String]): Self = this.set("cacheNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNamespace: Self = this.set("cacheNamespace", js.undefined)
+    @scala.inline
+    def setConnectionId(value: Input[String]): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    @scala.inline
+    def setConnectionType(value: Input[String]): Self = this.set("connectionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionType: Self = this.set("connectionType", js.undefined)
+    @scala.inline
+    def setContentHandling(value: Input[String]): Self = this.set("contentHandling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandling: Self = this.set("contentHandling", js.undefined)
+    @scala.inline
+    def setCredentials(value: Input[String]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setHttpMethod(value: Input[String]): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpMethod: Self = this.set("httpMethod", js.undefined)
+    @scala.inline
+    def setIntegrationHttpMethod(value: Input[String]): Self = this.set("integrationHttpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationHttpMethod: Self = this.set("integrationHttpMethod", js.undefined)
+    @scala.inline
+    def setPassthroughBehavior(value: Input[String]): Self = this.set("passthroughBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassthroughBehavior: Self = this.set("passthroughBehavior", js.undefined)
+    @scala.inline
+    def setRequestParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("requestParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestParameters: Self = this.set("requestParameters", js.undefined)
+    @scala.inline
+    def setRequestTemplates(value: Input[StringDictionary[Input[String]]]): Self = this.set("requestTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTemplates: Self = this.set("requestTemplates", js.undefined)
+    @scala.inline
+    def setResourceId(value: Input[String]): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setRestApi(value: Input[String | RestApi]): Self = this.set("restApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestApi: Self = this.set("restApi", js.undefined)
+    @scala.inline
+    def setTimeoutMilliseconds(value: Input[Double]): Self = this.set("timeoutMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutMilliseconds: Self = this.set("timeoutMilliseconds", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUri(value: Input[String]): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

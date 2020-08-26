@@ -18,14 +18,30 @@ trait DolbyVisionLevel6Metadata extends js.Object {
 
 object DolbyVisionLevel6Metadata {
   @scala.inline
-  def apply(
-    MaxCll: js.UndefOr[integerMin0Max65535] = js.undefined,
-    MaxFall: js.UndefOr[integerMin0Max65535] = js.undefined
-  ): DolbyVisionLevel6Metadata = {
+  def apply(): DolbyVisionLevel6Metadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxCll)) __obj.updateDynamic("MaxCll")(MaxCll.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxFall)) __obj.updateDynamic("MaxFall")(MaxFall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DolbyVisionLevel6Metadata]
   }
+  @scala.inline
+  implicit class DolbyVisionLevel6MetadataOps[Self <: DolbyVisionLevel6Metadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxCll(value: integerMin0Max65535): Self = this.set("MaxCll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCll: Self = this.set("MaxCll", js.undefined)
+    @scala.inline
+    def setMaxFall(value: integerMin0Max65535): Self = this.set("MaxFall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFall: Self = this.set("MaxFall", js.undefined)
+  }
+  
 }
 

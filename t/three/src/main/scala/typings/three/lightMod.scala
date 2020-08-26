@@ -15,6 +15,7 @@ object lightMod extends js.Object {
   class Light () extends Object3D {
     def this(hex: String) = this()
     def this(hex: Double) = this()
+    def this(hex: js.UndefOr[scala.Nothing], intensity: Double) = this()
     def this(hex: String, intensity: Double) = this()
     def this(hex: Double, intensity: Double) = this()
     var color: Color = js.native

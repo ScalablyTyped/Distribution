@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/table-(document-template) relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/table-document-template relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.Table")
 @js.native
@@ -27,13 +27,13 @@ class Table protected () extends Widget {
   @JSName("model")
   var model_FTable: IModel = js.native
   def cellPadding: Double = js.native
-  def cellPadding(newValue: Double): js.Any = js.native
+  def cellPadding_=(newValue: Double): Unit = js.native
   def cellSpacing: Double = js.native
-  def cellSpacing(newValue: Double): js.Any = js.native
+  def cellSpacing_=(newValue: Double): Unit = js.native
   def columnWeights: IList[Double] = js.native
   def rows: IList[TableRow] = js.native
   def style: Style = js.native
-  def style(newValue: Style): js.Any = js.native
+  def style_=(newValue: Style): Unit = js.native
 }
 
 /* static members */

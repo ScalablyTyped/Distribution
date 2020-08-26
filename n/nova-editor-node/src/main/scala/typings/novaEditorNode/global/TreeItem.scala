@@ -11,9 +11,5 @@ class TreeItem protected ()
   extends typings.novaEditorNode.TreeItem {
   def this(name: String) = this()
   def this(name: String, collapsibleState: typings.novaEditorNode.TreeItemCollapsibleState) = this()
-  /* CompleteClass */
-  override val collapsibleState: typings.novaEditorNode.TreeItemCollapsibleState = js.native
-  /* CompleteClass */
-  override val name: String = js.native
 }
 

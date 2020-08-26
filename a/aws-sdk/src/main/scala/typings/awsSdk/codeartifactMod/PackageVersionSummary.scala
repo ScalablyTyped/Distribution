@@ -22,10 +22,30 @@ trait PackageVersionSummary extends js.Object {
 
 object PackageVersionSummary {
   @scala.inline
-  def apply(status: PackageVersionStatus, version: PackageVersion, revision: PackageVersionRevision = null): PackageVersionSummary = {
+  def apply(status: PackageVersionStatus, version: PackageVersion): PackageVersionSummary = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageVersionSummary]
   }
+  @scala.inline
+  implicit class PackageVersionSummaryOps[Self <: PackageVersionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: PackageVersionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: PackageVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevision(value: PackageVersionRevision): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+  }
+  
 }
 

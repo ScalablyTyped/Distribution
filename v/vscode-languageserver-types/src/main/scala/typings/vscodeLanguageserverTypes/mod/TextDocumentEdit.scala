@@ -4,15 +4,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextDocumentEdit extends js.Object {
   /**
     * The edits to be applied.
     */
-  var edits: js.Array[TextEdit]
+  var edits: js.Array[TextEdit] = js.native
   /**
     * The text document to change.
     */
-  var textDocument: VersionedTextDocumentIdentifier
+  var textDocument: VersionedTextDocumentIdentifier = js.native
 }
 
 @JSImport("vscode-languageserver-types", "TextDocumentEdit")

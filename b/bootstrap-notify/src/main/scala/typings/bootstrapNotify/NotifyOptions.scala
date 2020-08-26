@@ -4,29 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotifyOptions extends js.Object {
-  var icon: js.UndefOr[String] = js.undefined
-  var message: String
-  var target: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
+  var message: String = js.native
+  var target: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.native
 }
 
 object NotifyOptions {
   @scala.inline
-  def apply(
-    message: String,
-    icon: String = null,
-    target: String = null,
-    title: String = null,
-    url: String = null
-  ): NotifyOptions = {
+  def apply(message: String): NotifyOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyOptions]
   }
+  @scala.inline
+  implicit class NotifyOptionsOps[Self <: NotifyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ JavaScript wrapper for pointer and any-pointer media queries
 | Keywords           | detect, pointer, any-pointer, media query |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 740039 |
+| # downloads        | 766283 |
 | # stars            | 0 |
 
 ## Links

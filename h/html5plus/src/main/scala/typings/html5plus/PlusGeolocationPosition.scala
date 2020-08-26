@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
+@js.native
 trait PlusGeolocationPosition extends js.Object {
   /**
     * 获取到地理位置对应的地址信息
@@ -17,20 +18,20 @@ trait PlusGeolocationPosition extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var address: js.UndefOr[PlusGeolocationAddress] = js.undefined
+  var address: js.UndefOr[PlusGeolocationAddress] = js.native
   /**
     * 获取完整地址描述信息
     * 如果没有获取到地址信息则返回undefined。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var addresses: js.UndefOr[String] = js.undefined
+  var addresses: js.UndefOr[String] = js.native
   /**
     * 地理坐标信息，包括经纬度、海拔、速度等信息
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var coords: js.UndefOr[PlusGeolocationCoordinates] = js.undefined
+  var coords: js.UndefOr[PlusGeolocationCoordinates] = js.native
   /**
     * 获取到地理坐标信息的坐标系类型
     * 可取以下坐标系类型：
@@ -41,32 +42,54 @@ trait PlusGeolocationPosition extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var coordsType: js.UndefOr[String] = js.undefined
+  var coordsType: js.UndefOr[String] = js.native
   /**
     * 获取到地理坐标的时间戳信息
     * 时间戳值为从1970年1月1日至今的毫秒数。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var timestamp: js.UndefOr[Double] = js.undefined
+  var timestamp: js.UndefOr[Double] = js.native
 }
 
 object PlusGeolocationPosition {
   @scala.inline
-  def apply(
-    address: PlusGeolocationAddress = null,
-    addresses: String = null,
-    coords: PlusGeolocationCoordinates = null,
-    coordsType: String = null,
-    timestamp: js.UndefOr[Double] = js.undefined
-  ): PlusGeolocationPosition = {
+  def apply(): PlusGeolocationPosition = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (addresses != null) __obj.updateDynamic("addresses")(addresses.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (coordsType != null) __obj.updateDynamic("coordsType")(coordsType.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusGeolocationPosition]
   }
+  @scala.inline
+  implicit class PlusGeolocationPositionOps[Self <: PlusGeolocationPosition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: PlusGeolocationAddress): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setAddresses(value: String): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddresses: Self = this.set("addresses", js.undefined)
+    @scala.inline
+    def setCoords(value: PlusGeolocationCoordinates): Self = this.set("coords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoords: Self = this.set("coords", js.undefined)
+    @scala.inline
+    def setCoordsType(value: String): Self = this.set("coordsType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordsType: Self = this.set("coordsType", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

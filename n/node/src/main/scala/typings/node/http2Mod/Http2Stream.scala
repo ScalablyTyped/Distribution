@@ -47,6 +47,7 @@ trait Http2Stream extends Duplex {
   @JSName("addListener")
   def addListener_wantTrailers(event: wantTrailers, listener: js.Function0[Unit]): this.type = js.native
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, callback: js.Function0[Unit]): Unit = js.native
   @JSName("emit")

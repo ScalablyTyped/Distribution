@@ -73,6 +73,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-treemap
   */
+@js.native
 trait SeriesTreemap_ extends js.Object {
   /**
     * Delay before updating the first animation, which supports callback
@@ -89,7 +90,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -101,7 +102,7 @@ trait SeriesTreemap_ extends js.Object {
     * 1500
     * @see https://echarts.apache.org/en/option.html#series-treemap.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -113,7 +114,7 @@ trait SeriesTreemap_ extends js.Object {
     * "quinticInOut"
     * @see https://echarts.apache.org/en/option.html#series-treemap.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Distance between treemap component and the bottom side of the
     * container.
@@ -128,14 +129,14 @@ trait SeriesTreemap_ extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-treemap.bottom
     */
-  var bottom: js.UndefOr[Double | String] = js.undefined
+  var bottom: js.UndefOr[Double | String] = js.native
   /**
     * breadcrumb, showing the path of the current node.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.breadcrumb
     */
-  var breadcrumb: js.UndefOr[Bottom] = js.undefined
+  var breadcrumb: js.UndefOr[Bottom] = js.native
   /**
     * Children will not be shown when area size of a node is smaller
     * than this value (unit: px square).
@@ -168,7 +169,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.childrenVisibleMin
     */
-  var childrenVisibleMin: js.UndefOr[Double] = js.undefined
+  var childrenVisibleMin: js.UndefOr[Double] = js.native
   /**
     * It indicates the range of tranparent rate (color alpha) of the
     * series. The range of values is 0 ~ 1.
@@ -198,7 +199,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.colorAlpha
     */
-  var colorAlpha: js.UndefOr[js.Array[_]] = js.undefined
+  var colorAlpha: js.UndefOr[js.Array[_]] = js.native
   /**
     * Specify the rule according to which each node obtain color from
     * [color list](https://echarts.apache.org/en/option.html#series-treemap.levels.color)
@@ -264,7 +265,7 @@ trait SeriesTreemap_ extends js.Object {
     * "index"
     * @see https://echarts.apache.org/en/option.html#series-treemap.colorMappingBy
     */
-  var colorMappingBy: js.UndefOr[String] = js.undefined
+  var colorMappingBy: js.UndefOr[String] = js.native
   /**
     * It indicates the range of saturation (color alpha) of the series.
     * The range of values is 0 ~ 1.
@@ -294,7 +295,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.colorSaturation
     */
-  var colorSaturation: js.UndefOr[Double] = js.undefined
+  var colorSaturation: js.UndefOr[Double] = js.native
   /**
     * the the data format of
     * [series-treemap.data](https://echarts.apache.org/en/option.html#series-treemap.data)
@@ -305,7 +306,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data
     */
-  var data: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * Marker when the node is able to be drilled down.
     *
@@ -314,11 +315,11 @@ trait SeriesTreemap_ extends js.Object {
     * '▶'
     * @see https://echarts.apache.org/en/option.html#series-treemap.drillDownIcon
     */
-  var drillDownIcon: js.UndefOr[String] = js.undefined
+  var drillDownIcon: js.UndefOr[String] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-treemap.emphasis
     */
-  var emphasis: js.UndefOr[UpperLabel] = js.undefined
+  var emphasis: js.UndefOr[UpperLabel] = js.native
   /**
     * Height of treemap component.
     *
@@ -327,7 +328,7 @@ trait SeriesTreemap_ extends js.Object {
     * 80%
     * @see https://echarts.apache.org/en/option.html#series-treemap.height
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -336,7 +337,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     *
     * > Tps: In treemap, `itemStyle` attribute could appear in more
@@ -358,7 +359,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.itemStyle
     */
-  var itemStyle: js.UndefOr[BorderColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[BorderColorSaturation] = js.native
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -381,7 +382,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.label
     */
-  var label: js.UndefOr[Ellipsis] = js.undefined
+  var label: js.UndefOr[Ellipsis] = js.native
   /**
     * When `leafDepth` is set, the feature "drill down" is enabled,
     * which means when clicking a tree node, this node will be set
@@ -401,7 +402,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.leafDepth
     */
-  var leafDepth: js.UndefOr[Double] = js.undefined
+  var leafDepth: js.UndefOr[Double] = js.native
   /**
     * Distance between treemap component and the left side of the container.
     *
@@ -417,7 +418,7 @@ trait SeriesTreemap_ extends js.Object {
     * "center"
     * @see https://echarts.apache.org/en/option.html#series-treemap.left
     */
-  var left: js.UndefOr[Double | String] = js.undefined
+  var left: js.UndefOr[Double | String] = js.native
   /**
     * **Multiple Levels Configuration**
     *
@@ -514,7 +515,7 @@ trait SeriesTreemap_ extends js.Object {
     * []
     * @see https://echarts.apache.org/en/option.html#series-treemap.levels
     */
-  var levels: js.UndefOr[ChildrenVisibleMin] = js.undefined
+  var levels: js.UndefOr[ChildrenVisibleMin] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -525,7 +526,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * The behaviour when clicking a node. Optional values are:
     *
@@ -540,7 +541,7 @@ trait SeriesTreemap_ extends js.Object {
     * "zoomToNode"
     * @see https://echarts.apache.org/en/option.html#series-treemap.nodeClick
     */
-  var nodeClick: js.UndefOr[Boolean | String] = js.undefined
+  var nodeClick: js.UndefOr[Boolean | String] = js.native
   /**
     * Distance between treemap component and the right side of the
     * container.
@@ -555,7 +556,7 @@ trait SeriesTreemap_ extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-treemap.right
     */
-  var right: js.UndefOr[Double | String] = js.undefined
+  var right: js.UndefOr[Double | String] = js.native
   /**
     * Whether to enable dragging roam (move and zoom).
     * Optional values are:
@@ -570,7 +571,7 @@ trait SeriesTreemap_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-treemap.roam
     */
-  var roam: js.UndefOr[Boolean | String] = js.undefined
+  var roam: js.UndefOr[Boolean | String] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -579,7 +580,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.silent
     */
-  var silent: js.UndefOr[Link] = js.undefined
+  var silent: js.UndefOr[Link] = js.native
   /**
     * The expected square ratio.
     * Layout would approach the ratio as close as possible.
@@ -590,14 +591,14 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.squareRatio
     */
-  var squareRatio: js.UndefOr[Double] = js.undefined
+  var squareRatio: js.UndefOr[Double] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * Distance between treemap component and the top side of the container.
     *
@@ -613,13 +614,13 @@ trait SeriesTreemap_ extends js.Object {
     * "middle"
     * @see https://echarts.apache.org/en/option.html#series-treemap.top
     */
-  var top: js.UndefOr[Double | String] = js.undefined
+  var top: js.UndefOr[Double | String] = js.native
   /**
     * @default
     * "treemap"
     * @see https://echarts.apache.org/en/option.html#series-treemap.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * `upperLabel` is used to specify whether show label when the node
     * has children. When
@@ -665,7 +666,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.upperLabel
     */
-  var upperLabel: js.UndefOr[TextShadowColor] = js.undefined
+  var upperLabel: js.UndefOr[TextShadowColor] = js.native
   /**
     * A node will not be shown when its area size is smaller than this
     * value (unit: px square).
@@ -701,7 +702,7 @@ trait SeriesTreemap_ extends js.Object {
     * 10
     * @see https://echarts.apache.org/en/option.html#series-treemap.visibleMin
     */
-  var visibleMin: js.UndefOr[Double] = js.undefined
+  var visibleMin: js.UndefOr[Double] = js.native
   /**
     * `treemap` is able to map any dimensions of data to visual.
     *
@@ -735,7 +736,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.visualDimension
     */
-  var visualDimension: js.UndefOr[Double] = js.undefined
+  var visualDimension: js.UndefOr[Double] = js.native
   /**
     * The maximal value of current level.
     * Auto-statistics by default.
@@ -748,7 +749,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.visualMax
     */
-  var visualMax: js.UndefOr[Double] = js.undefined
+  var visualMax: js.UndefOr[Double] = js.native
   /**
     * The minimal value of current level.
     * Auto-statistics by default.
@@ -761,7 +762,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.visualMin
     */
-  var visualMin: js.UndefOr[Double] = js.undefined
+  var visualMin: js.UndefOr[Double] = js.native
   /**
     * Width of treemap component.
     *
@@ -770,7 +771,7 @@ trait SeriesTreemap_ extends js.Object {
     * 80%
     * @see https://echarts.apache.org/en/option.html#series-treemap.width
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
   /**
     * `z` value of all graghical elements in , which controls order
     * of drawing graphical components.
@@ -785,7 +786,7 @@ trait SeriesTreemap_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-treemap.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in .
     *
@@ -803,7 +804,7 @@ trait SeriesTreemap_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
   /**
     * The treemap will be auto zoomed to a appropriate ratio when a
     * node is clicked (when
@@ -816,89 +817,179 @@ trait SeriesTreemap_ extends js.Object {
     * 0.32*0.32
     * @see https://echarts.apache.org/en/option.html#series-treemap.zoomToNodeRatio
     */
-  var zoomToNodeRatio: js.UndefOr[Double] = js.undefined
+  var zoomToNodeRatio: js.UndefOr[Double] = js.native
 }
 
 object SeriesTreemap_ {
   @scala.inline
-  def apply(
-    animationDelay: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationEasing: String = null,
-    bottom: Double | String = null,
-    breadcrumb: Bottom = null,
-    childrenVisibleMin: js.UndefOr[Double] = js.undefined,
-    colorAlpha: js.Array[_] = null,
-    colorMappingBy: String = null,
-    colorSaturation: js.UndefOr[Double] = js.undefined,
-    data: js.Array[DataObject] = null,
-    drillDownIcon: String = null,
-    emphasis: UpperLabel = null,
-    height: Double | String = null,
-    id: String = null,
-    itemStyle: BorderColorSaturation = null,
-    label: Ellipsis = null,
-    leafDepth: js.UndefOr[Double] = js.undefined,
-    left: Double | String = null,
-    levels: ChildrenVisibleMin = null,
-    name: String = null,
-    nodeClick: Boolean | String = null,
-    right: Double | String = null,
-    roam: Boolean | String = null,
-    silent: Link = null,
-    squareRatio: js.UndefOr[Double] = js.undefined,
-    tooltip: BaseTooltip = null,
-    top: Double | String = null,
-    `type`: String = null,
-    upperLabel: TextShadowColor = null,
-    visibleMin: js.UndefOr[Double] = js.undefined,
-    visualDimension: js.UndefOr[Double] = js.undefined,
-    visualMax: js.UndefOr[Double] = js.undefined,
-    visualMin: js.UndefOr[Double] = js.undefined,
-    width: Double | String = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined,
-    zoomToNodeRatio: js.UndefOr[Double] = js.undefined
-  ): SeriesTreemap_ = {
+  def apply(): SeriesTreemap_ = {
     val __obj = js.Dynamic.literal()
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
-    if (!js.isUndefined(childrenVisibleMin)) __obj.updateDynamic("childrenVisibleMin")(childrenVisibleMin.get.asInstanceOf[js.Any])
-    if (colorAlpha != null) __obj.updateDynamic("colorAlpha")(colorAlpha.asInstanceOf[js.Any])
-    if (colorMappingBy != null) __obj.updateDynamic("colorMappingBy")(colorMappingBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorSaturation)) __obj.updateDynamic("colorSaturation")(colorSaturation.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (drillDownIcon != null) __obj.updateDynamic("drillDownIcon")(drillDownIcon.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(leafDepth)) __obj.updateDynamic("leafDepth")(leafDepth.get.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nodeClick != null) __obj.updateDynamic("nodeClick")(nodeClick.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
-    if (silent != null) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(squareRatio)) __obj.updateDynamic("squareRatio")(squareRatio.get.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleMin)) __obj.updateDynamic("visibleMin")(visibleMin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visualDimension)) __obj.updateDynamic("visualDimension")(visualDimension.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visualMax)) __obj.updateDynamic("visualMax")(visualMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visualMin)) __obj.updateDynamic("visualMin")(visualMin.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomToNodeRatio)) __obj.updateDynamic("zoomToNodeRatio")(zoomToNodeRatio.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTreemap_]
   }
+  @scala.inline
+  implicit class SeriesTreemap_Ops[Self <: SeriesTreemap_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setBreadcrumb(value: Bottom): Self = this.set("breadcrumb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreadcrumb: Self = this.set("breadcrumb", js.undefined)
+    @scala.inline
+    def setChildrenVisibleMin(value: Double): Self = this.set("childrenVisibleMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildrenVisibleMin: Self = this.set("childrenVisibleMin", js.undefined)
+    @scala.inline
+    def setColorAlphaVarargs(value: js.Any*): Self = this.set("colorAlpha", js.Array(value :_*))
+    @scala.inline
+    def setColorAlpha(value: js.Array[_]): Self = this.set("colorAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorAlpha: Self = this.set("colorAlpha", js.undefined)
+    @scala.inline
+    def setColorMappingBy(value: String): Self = this.set("colorMappingBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorMappingBy: Self = this.set("colorMappingBy", js.undefined)
+    @scala.inline
+    def setColorSaturation(value: Double): Self = this.set("colorSaturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSaturation: Self = this.set("colorSaturation", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataObject*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDrillDownIcon(value: String): Self = this.set("drillDownIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrillDownIcon: Self = this.set("drillDownIcon", js.undefined)
+    @scala.inline
+    def setEmphasis(value: UpperLabel): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: BorderColorSaturation): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: Ellipsis): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLeafDepth(value: Double): Self = this.set("leafDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeafDepth: Self = this.set("leafDepth", js.undefined)
+    @scala.inline
+    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setLevels(value: ChildrenVisibleMin): Self = this.set("levels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevels: Self = this.set("levels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNodeClick(value: Boolean | String): Self = this.set("nodeClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeClick: Self = this.set("nodeClick", js.undefined)
+    @scala.inline
+    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setRoam(value: Boolean | String): Self = this.set("roam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoam: Self = this.set("roam", js.undefined)
+    @scala.inline
+    def setSilent(value: Link): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSquareRatio(value: Double): Self = this.set("squareRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSquareRatio: Self = this.set("squareRatio", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpperLabel(value: TextShadowColor): Self = this.set("upperLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpperLabel: Self = this.set("upperLabel", js.undefined)
+    @scala.inline
+    def setVisibleMin(value: Double): Self = this.set("visibleMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleMin: Self = this.set("visibleMin", js.undefined)
+    @scala.inline
+    def setVisualDimension(value: Double): Self = this.set("visualDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualDimension: Self = this.set("visualDimension", js.undefined)
+    @scala.inline
+    def setVisualMax(value: Double): Self = this.set("visualMax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualMax: Self = this.set("visualMax", js.undefined)
+    @scala.inline
+    def setVisualMin(value: Double): Self = this.set("visualMin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisualMin: Self = this.set("visualMin", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+    @scala.inline
+    def setZoomToNodeRatio(value: Double): Self = this.set("zoomToNodeRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomToNodeRatio: Self = this.set("zoomToNodeRatio", js.undefined)
+  }
+  
 }
 

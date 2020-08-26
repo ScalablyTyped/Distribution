@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Notifications.ToastActivatedEventArgs")
 @js.native
 abstract class ToastActivatedEventArgs ()
-  extends typings.winrtUwp.Windows.UI.Notifications.ToastActivatedEventArgs {
-  /** Gets the arguments associated with a toast action initiated by the user. This arguments string was included in the toast's XML payload. */
-  /* CompleteClass */
-  override var arguments: String = js.native
-}
+  extends typings.winrtUwp.Windows.UI.Notifications.ToastActivatedEventArgs
 

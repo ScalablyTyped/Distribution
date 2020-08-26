@@ -1,6 +1,6 @@
 package typings.apolloServer.mod
 
-import typings.graphqlTools.interfacesMod.ITypedef
+import typings.graphqlToolsUtils.interfacesMod.ITypedef
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

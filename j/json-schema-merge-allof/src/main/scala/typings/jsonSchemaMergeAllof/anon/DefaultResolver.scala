@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DefaultResolver[Schema /* <: JSONSchema */] extends js.Object {
   /**
     * ### Default resolver
@@ -33,17 +34,33 @@ trait DefaultResolver[Schema /* <: JSONSchema */] extends js.Object {
       /* options */ Options_[Schema], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object DefaultResolver {
   @scala.inline
-  def apply[/* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema](
-    defaultResolver: (/* values */ js.Array[_], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => _ = null
-  ): DefaultResolver[Schema] = {
+  def apply[/* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema](): DefaultResolver[Schema] = {
     val __obj = js.Dynamic.literal()
-    if (defaultResolver != null) __obj.updateDynamic("defaultResolver")(js.Any.fromFunction4(defaultResolver))
     __obj.asInstanceOf[DefaultResolver[Schema]]
   }
+  @scala.inline
+  implicit class DefaultResolverOps[Self <: DefaultResolver[_], /* <: typings.jsonSchemaMergeAllof.mod.JSONSchema */ Schema] (val x: Self with DefaultResolver[Schema]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultResolver(
+      value: (/* values */ js.Array[_], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => _
+    ): Self = this.set("defaultResolver", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteDefaultResolver: Self = this.set("defaultResolver", js.undefined)
+  }
+  
 }
 

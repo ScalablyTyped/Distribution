@@ -14,8 +14,39 @@ trait Coffeelint extends js.Object {
     * @param rules Add custom rules to coffeelint.
     */
   def apply(): ReadWriteStream = js.native
+  def apply(
+    optFile: js.UndefOr[scala.Nothing],
+    opt: js.UndefOr[scala.Nothing],
+    literate: js.UndefOr[scala.Nothing],
+    rules: js.Array[js.Function]
+  ): ReadWriteStream = js.native
+  def apply(optFile: js.UndefOr[scala.Nothing], opt: js.UndefOr[scala.Nothing], literate: Boolean): ReadWriteStream = js.native
+  def apply(
+    optFile: js.UndefOr[scala.Nothing],
+    opt: js.UndefOr[scala.Nothing],
+    literate: Boolean,
+    rules: js.Array[js.Function]
+  ): ReadWriteStream = js.native
+  def apply(optFile: js.UndefOr[scala.Nothing], opt: js.Any): ReadWriteStream = js.native
+  def apply(
+    optFile: js.UndefOr[scala.Nothing],
+    opt: js.Any,
+    literate: js.UndefOr[scala.Nothing],
+    rules: js.Array[js.Function]
+  ): ReadWriteStream = js.native
+  def apply(optFile: js.UndefOr[scala.Nothing], opt: js.Any, literate: Boolean): ReadWriteStream = js.native
+  def apply(optFile: js.UndefOr[scala.Nothing], opt: js.Any, literate: Boolean, rules: js.Array[js.Function]): ReadWriteStream = js.native
   def apply(optFile: String): ReadWriteStream = js.native
+  def apply(
+    optFile: String,
+    opt: js.UndefOr[scala.Nothing],
+    literate: js.UndefOr[scala.Nothing],
+    rules: js.Array[js.Function]
+  ): ReadWriteStream = js.native
+  def apply(optFile: String, opt: js.UndefOr[scala.Nothing], literate: Boolean): ReadWriteStream = js.native
+  def apply(optFile: String, opt: js.UndefOr[scala.Nothing], literate: Boolean, rules: js.Array[js.Function]): ReadWriteStream = js.native
   def apply(optFile: String, opt: js.Any): ReadWriteStream = js.native
+  def apply(optFile: String, opt: js.Any, literate: js.UndefOr[scala.Nothing], rules: js.Array[js.Function]): ReadWriteStream = js.native
   def apply(optFile: String, opt: js.Any, literate: Boolean): ReadWriteStream = js.native
   def apply(optFile: String, opt: js.Any, literate: Boolean, rules: js.Array[js.Function]): ReadWriteStream = js.native
   def reporter(): ReadWriteStream = js.native

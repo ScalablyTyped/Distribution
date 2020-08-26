@@ -30,17 +30,38 @@ trait CreateDevicePoolRequest extends js.Object {
 
 object CreateDevicePoolRequest {
   @scala.inline
-  def apply(
-    name: Name,
-    projectArn: AmazonResourceName,
-    rules: Rules,
-    description: Message = null,
-    maxDevices: js.UndefOr[Integer] = js.undefined
-  ): CreateDevicePoolRequest = {
+  def apply(name: Name, projectArn: AmazonResourceName, rules: Rules): CreateDevicePoolRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDevices)) __obj.updateDynamic("maxDevices")(maxDevices.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDevicePoolRequest]
   }
+  @scala.inline
+  implicit class CreateDevicePoolRequestOps[Self <: CreateDevicePoolRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProjectArn(value: AmazonResourceName): Self = this.set("projectArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRulesVarargs(value: Rule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: Rules): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setMaxDevices(value: Integer): Self = this.set("maxDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDevices: Self = this.set("maxDevices", js.undefined)
+  }
+  
 }
 

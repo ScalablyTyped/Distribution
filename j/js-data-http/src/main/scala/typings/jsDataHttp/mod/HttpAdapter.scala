@@ -12,17 +12,21 @@ import scala.scalajs.js.annotation._
 class HttpAdapter () extends Adapter {
   def this(opts: IBaseHttpAdapter) = this()
   def DEL(url: String): js.Promise[_] = js.native
+  def DEL(url: String, config: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def DEL(url: String, config: js.Any): js.Promise[_] = js.native
   def DEL(url: String, config: js.Any, opts: js.Any): js.Promise[_] = js.native
   def GET(url: String): js.Promise[_] = js.native
+  def GET(url: String, config: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def GET(url: String, config: js.Any): js.Promise[_] = js.native
   def GET(url: String, config: js.Any, opts: js.Any): js.Promise[_] = js.native
   def HTTP(config: js.Any): js.Promise[_] = js.native
   def HTTP(config: js.Any, opts: js.Any): js.Promise[_] = js.native
   def POST(url: String, data: js.Any): js.Promise[_] = js.native
+  def POST(url: String, data: js.Any, config: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def POST(url: String, data: js.Any, config: js.Any): js.Promise[_] = js.native
   def POST(url: String, data: js.Any, config: js.Any, opts: js.Any): js.Promise[_] = js.native
   def PUT(url: String, data: js.Any): js.Promise[_] = js.native
+  def PUT(url: String, data: js.Any, config: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[_] = js.native
   def PUT(url: String, data: js.Any, config: js.Any): js.Promise[_] = js.native
   def PUT(url: String, data: js.Any, config: js.Any, opts: js.Any): js.Promise[_] = js.native
   def _count(mapper: js.Any, query: js.Any): js.Promise[_] = js.native
@@ -98,6 +102,7 @@ class HttpAdapter () extends Adapter {
   def queryTransform(mapper: js.Any, params: js.Any): js.Any = js.native
   def queryTransform(mapper: js.Any, params: js.Any, opts: js.Any): js.Any = js.native
   def responseError(err: js.Any): js.Any = js.native
+  def responseError(err: js.Any, config: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
   def responseError(err: js.Any, config: js.Any): js.Any = js.native
   def responseError(err: js.Any, config: js.Any, opts: js.Any): js.Any = js.native
   def serialize(mapper: js.Any, data: js.Any): js.Promise[_] = js.native
@@ -118,6 +123,7 @@ class HttpAdapter () extends Adapter {
 object HttpAdapter extends js.Object {
   var version: Alpha = js.native
   def extend(): TypeofHttpAdapter = js.native
+  def extend(instanceProps: js.UndefOr[scala.Nothing], classProps: IDict): TypeofHttpAdapter = js.native
   def extend(instanceProps: IDict): TypeofHttpAdapter = js.native
   def extend(instanceProps: IDict, classProps: IDict): TypeofHttpAdapter = js.native
 }

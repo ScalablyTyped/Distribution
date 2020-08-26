@@ -14,10 +14,28 @@ trait RegisterDBProxyTargetsResponse extends js.Object {
 
 object RegisterDBProxyTargetsResponse {
   @scala.inline
-  def apply(DBProxyTargets: TargetList = null): RegisterDBProxyTargetsResponse = {
+  def apply(): RegisterDBProxyTargetsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DBProxyTargets != null) __obj.updateDynamic("DBProxyTargets")(DBProxyTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDBProxyTargetsResponse]
   }
+  @scala.inline
+  implicit class RegisterDBProxyTargetsResponseOps[Self <: RegisterDBProxyTargetsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBProxyTargetsVarargs(value: DBProxyTarget*): Self = this.set("DBProxyTargets", js.Array(value :_*))
+    @scala.inline
+    def setDBProxyTargets(value: TargetList): Self = this.set("DBProxyTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBProxyTargets: Self = this.set("DBProxyTargets", js.undefined)
+  }
+  
 }
 

@@ -4,25 +4,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CanvasOverlayProps extends BaseControlProps {
-  def redraw(opts: CanvasRedrawOptions): Unit
+  def redraw(opts: CanvasRedrawOptions): Unit = js.native
 }
 
 object CanvasOverlayProps {
   @scala.inline
-  def apply(
-    redraw: CanvasRedrawOptions => Unit,
-    captureClick: js.UndefOr[Boolean] = js.undefined,
-    captureDoubleClick: js.UndefOr[Boolean] = js.undefined,
-    captureDrag: js.UndefOr[Boolean] = js.undefined,
-    captureScroll: js.UndefOr[Boolean] = js.undefined
-  ): CanvasOverlayProps = {
+  def apply(redraw: CanvasRedrawOptions => Unit): CanvasOverlayProps = {
     val __obj = js.Dynamic.literal(redraw = js.Any.fromFunction1(redraw))
-    if (!js.isUndefined(captureClick)) __obj.updateDynamic("captureClick")(captureClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDoubleClick)) __obj.updateDynamic("captureDoubleClick")(captureDoubleClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureDrag)) __obj.updateDynamic("captureDrag")(captureDrag.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(captureScroll)) __obj.updateDynamic("captureScroll")(captureScroll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasOverlayProps]
   }
+  @scala.inline
+  implicit class CanvasOverlayPropsOps[Self <: CanvasOverlayProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRedraw(value: CanvasRedrawOptions => Unit): Self = this.set("redraw", js.Any.fromFunction1(value))
+  }
+  
 }
 

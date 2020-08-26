@@ -54,20 +54,42 @@ trait SchemaLocationFilter extends js.Object {
 
 object SchemaLocationFilter {
   @scala.inline
-  def apply(
-    distanceInMiles: js.UndefOr[Double] = js.undefined,
-    isTelecommute: js.UndefOr[Boolean] = js.undefined,
-    latLng: SchemaLatLng = null,
-    name: String = null,
-    regionCode: String = null
-  ): SchemaLocationFilter = {
+  def apply(): SchemaLocationFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(distanceInMiles)) __obj.updateDynamic("distanceInMiles")(distanceInMiles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTelecommute)) __obj.updateDynamic("isTelecommute")(isTelecommute.get.asInstanceOf[js.Any])
-    if (latLng != null) __obj.updateDynamic("latLng")(latLng.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLocationFilter]
   }
+  @scala.inline
+  implicit class SchemaLocationFilterOps[Self <: SchemaLocationFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDistanceInMiles(value: Double): Self = this.set("distanceInMiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceInMiles: Self = this.set("distanceInMiles", js.undefined)
+    @scala.inline
+    def setIsTelecommute(value: Boolean): Self = this.set("isTelecommute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTelecommute: Self = this.set("isTelecommute", js.undefined)
+    @scala.inline
+    def setLatLng(value: SchemaLatLng): Self = this.set("latLng", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatLng: Self = this.set("latLng", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait AwsEc2NetworkInterfaceDetails extends js.Object {
 
 object AwsEc2NetworkInterfaceDetails {
   @scala.inline
-  def apply(
-    Attachment: AwsEc2NetworkInterfaceAttachment = null,
-    NetworkInterfaceId: NonEmptyString = null,
-    SecurityGroups: AwsEc2NetworkInterfaceSecurityGroupList = null,
-    SourceDestCheck: js.UndefOr[Boolean] = js.undefined
-  ): AwsEc2NetworkInterfaceDetails = {
+  def apply(): AwsEc2NetworkInterfaceDetails = {
     val __obj = js.Dynamic.literal()
-    if (Attachment != null) __obj.updateDynamic("Attachment")(Attachment.asInstanceOf[js.Any])
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourceDestCheck)) __obj.updateDynamic("SourceDestCheck")(SourceDestCheck.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsEc2NetworkInterfaceDetails]
   }
+  @scala.inline
+  implicit class AwsEc2NetworkInterfaceDetailsOps[Self <: AwsEc2NetworkInterfaceDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachment(value: AwsEc2NetworkInterfaceAttachment): Self = this.set("Attachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachment: Self = this.set("Attachment", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: NonEmptyString): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: AwsEc2NetworkInterfaceSecurityGroup*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: AwsEc2NetworkInterfaceSecurityGroupList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setSourceDestCheck(value: Boolean): Self = this.set("SourceDestCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDestCheck: Self = this.set("SourceDestCheck", js.undefined)
+  }
+  
 }
 

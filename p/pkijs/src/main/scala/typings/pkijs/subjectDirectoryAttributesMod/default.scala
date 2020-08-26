@@ -8,14 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends SubjectDirectoryAttributes {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var attributes: js.Array[typings.pkijs.attributeMod.default] = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

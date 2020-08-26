@@ -17,22 +17,46 @@ trait PartialClassNameMapListSu extends js.Object {
 
 object PartialClassNameMapListSu {
   @scala.inline
-  def apply(
-    colorInherit: String = null,
-    colorPrimary: String = null,
-    gutters: String = null,
-    inset: String = null,
-    root: String = null,
-    sticky: String = null
-  ): PartialClassNameMapListSu = {
+  def apply(): PartialClassNameMapListSu = {
     val __obj = js.Dynamic.literal()
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (gutters != null) __obj.updateDynamic("gutters")(gutters.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (sticky != null) __obj.updateDynamic("sticky")(sticky.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapListSu]
   }
+  @scala.inline
+  implicit class PartialClassNameMapListSuOps[Self <: PartialClassNameMapListSu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorInherit(value: String): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setGutters(value: String): Self = this.set("gutters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGutters: Self = this.set("gutters", js.undefined)
+    @scala.inline
+    def setInset(value: String): Self = this.set("inset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInset: Self = this.set("inset", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSticky(value: String): Self = this.set("sticky", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSticky: Self = this.set("sticky", js.undefined)
+  }
+  
 }
 

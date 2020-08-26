@@ -4,29 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkbookComment extends Entity {
   // The content of comment.
-  var content: js.UndefOr[String] = js.undefined
+  var content: js.UndefOr[String] = js.native
   // Indicates the type for the comment.
-  var contentType: js.UndefOr[String] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
   // Read-only. Nullable.
-  var replies: js.UndefOr[js.Array[WorkbookCommentReply]] = js.undefined
+  var replies: js.UndefOr[js.Array[WorkbookCommentReply]] = js.native
 }
 
 object WorkbookComment {
   @scala.inline
-  def apply(
-    content: String = null,
-    contentType: String = null,
-    id: String = null,
-    replies: js.Array[WorkbookCommentReply] = null
-  ): WorkbookComment = {
+  def apply(): WorkbookComment = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookComment]
   }
+  @scala.inline
+  implicit class WorkbookCommentOps[Self <: WorkbookComment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setRepliesVarargs(value: WorkbookCommentReply*): Self = this.set("replies", js.Array(value :_*))
+    @scala.inline
+    def setReplies(value: js.Array[WorkbookCommentReply]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplies: Self = this.set("replies", js.undefined)
+  }
+  
 }
 

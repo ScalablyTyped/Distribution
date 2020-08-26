@@ -16,11 +16,5 @@ class PhoneTrigger protected ()
     * @param oneShot Indicates if the trigger is a one-shot notification. If you weren't subscribed when a one-shot notification was sent, you get nothing. If you weren't connected when you fired a one-shot notification, nothing happens.
     */
   def this(`type`: PhoneTriggerType, oneShot: Boolean) = this()
-  /** Gets a Boolean value indicating if the trigger is a one-shot notification. */
-  /* CompleteClass */
-  override var oneShot: Boolean = js.native
-  /** Gets the type of phone event indicated by the trigger. */
-  /* CompleteClass */
-  override var triggerType: PhoneTriggerType = js.native
 }
 

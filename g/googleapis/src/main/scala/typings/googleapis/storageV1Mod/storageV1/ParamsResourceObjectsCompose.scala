@@ -59,42 +59,58 @@ trait ParamsResourceObjectsCompose extends StandardParameters {
 
 object ParamsResourceObjectsCompose {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    destinationBucket: String = null,
-    destinationObject: String = null,
-    destinationPredefinedAcl: String = null,
-    fields: String = null,
-    ifGenerationMatch: String = null,
-    ifMetagenerationMatch: String = null,
-    key: String = null,
-    kmsKeyName: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaComposeRequest = null,
-    userIp: String = null,
-    userProject: String = null
-  ): ParamsResourceObjectsCompose = {
+  def apply(): ParamsResourceObjectsCompose = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (destinationBucket != null) __obj.updateDynamic("destinationBucket")(destinationBucket.asInstanceOf[js.Any])
-    if (destinationObject != null) __obj.updateDynamic("destinationObject")(destinationObject.asInstanceOf[js.Any])
-    if (destinationPredefinedAcl != null) __obj.updateDynamic("destinationPredefinedAcl")(destinationPredefinedAcl.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceObjectsCompose]
   }
+  @scala.inline
+  implicit class ParamsResourceObjectsComposeOps[Self <: ParamsResourceObjectsCompose] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setDestinationBucket(value: String): Self = this.set("destinationBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationBucket: Self = this.set("destinationBucket", js.undefined)
+    @scala.inline
+    def setDestinationObject(value: String): Self = this.set("destinationObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationObject: Self = this.set("destinationObject", js.undefined)
+    @scala.inline
+    def setDestinationPredefinedAcl(value: String): Self = this.set("destinationPredefinedAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPredefinedAcl: Self = this.set("destinationPredefinedAcl", js.undefined)
+    @scala.inline
+    def setIfGenerationMatch(value: String): Self = this.set("ifGenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfGenerationMatch: Self = this.set("ifGenerationMatch", js.undefined)
+    @scala.inline
+    def setIfMetagenerationMatch(value: String): Self = this.set("ifMetagenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMetagenerationMatch: Self = this.set("ifMetagenerationMatch", js.undefined)
+    @scala.inline
+    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaComposeRequest): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProject: Self = this.set("userProject", js.undefined)
+  }
+  
 }
 

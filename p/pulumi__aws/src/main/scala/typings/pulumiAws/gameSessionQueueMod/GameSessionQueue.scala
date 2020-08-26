@@ -23,6 +23,7 @@ class GameSessionQueue protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: GameSessionQueueArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: GameSessionQueueArgs, opts: CustomResourceOptions) = this()
   /**
     * Game Session Queue ARN.
@@ -41,9 +42,9 @@ class GameSessionQueue protected () extends CustomResource {
     */
   val playerLatencyPolicies: Output_[js.UndefOr[js.Array[GameSessionQueuePlayerLatencyPolicy]]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Maximum time a game session request can remain in the queue.
     */
@@ -61,8 +62,10 @@ object GameSessionQueue extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): GameSessionQueue = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GameSessionQueue = js.native
   def get(name: String, id: Input[ID], state: GameSessionQueueState): GameSessionQueue = js.native
   def get(name: String, id: Input[ID], state: GameSessionQueueState, opts: CustomResourceOptions): GameSessionQueue = js.native
   /**

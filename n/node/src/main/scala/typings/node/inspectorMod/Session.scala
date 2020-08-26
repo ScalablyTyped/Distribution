@@ -913,6 +913,11 @@ class Session () extends EventEmitter {
     method: String,
     callback: js.Function2[/* err */ Error | Null, /* params */ js.UndefOr[js.Object], Unit]
   ): Unit = js.native
+  def post(
+    method: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ js.UndefOr[js.Object], Unit]
+  ): Unit = js.native
   def post(method: String, params: js.Object): Unit = js.native
   def post(
     method: String,
@@ -947,6 +952,12 @@ class Session () extends EventEmitter {
   def post_DebuggercontinueToLocation(method: DebuggerDotcontinueToLocation): Unit = js.native
   @JSName("post")
   def post_DebuggercontinueToLocation(method: DebuggerDotcontinueToLocation, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggercontinueToLocation(
+    method: DebuggerDotcontinueToLocation,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggercontinueToLocation(method: DebuggerDotcontinueToLocation, params: ContinueToLocationParameterType): Unit = js.native
   @JSName("post")
@@ -983,6 +994,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_DebuggerevaluateOnCallFrame(
+    method: DebuggerDotevaluateOnCallFrame,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ EvaluateOnCallFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggerevaluateOnCallFrame(method: DebuggerDotevaluateOnCallFrame, params: EvaluateOnCallFrameParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggerevaluateOnCallFrame(
@@ -998,6 +1015,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggergetPossibleBreakpoints(
     method: DebuggerDotgetPossibleBreakpoints,
+    callback: js.Function2[/* err */ Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_DebuggergetPossibleBreakpoints(
+    method: DebuggerDotgetPossibleBreakpoints,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ GetPossibleBreakpointsReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1019,6 +1042,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ GetScriptSourceReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_DebuggergetScriptSource(
+    method: DebuggerDotgetScriptSource,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ GetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggergetScriptSource(method: DebuggerDotgetScriptSource, params: GetScriptSourceParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggergetScriptSource(
@@ -1035,6 +1064,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggergetStackTrace(
     method: DebuggerDotgetStackTrace,
+    callback: js.Function2[/* err */ Error | Null, /* params */ GetStackTraceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_DebuggergetStackTrace(
+    method: DebuggerDotgetStackTrace,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ GetStackTraceReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1060,6 +1095,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggerpauseOnAsyncCall(method: DebuggerDotpauseOnAsyncCall, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_DebuggerpauseOnAsyncCall(
+    method: DebuggerDotpauseOnAsyncCall,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggerpauseOnAsyncCall(method: DebuggerDotpauseOnAsyncCall, params: PauseOnAsyncCallParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggerpauseOnAsyncCall(
@@ -1074,6 +1115,12 @@ class Session () extends EventEmitter {
   def post_DebuggerremoveBreakpoint(method: DebuggerDotremoveBreakpoint): Unit = js.native
   @JSName("post")
   def post_DebuggerremoveBreakpoint(method: DebuggerDotremoveBreakpoint, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggerremoveBreakpoint(
+    method: DebuggerDotremoveBreakpoint,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggerremoveBreakpoint(method: DebuggerDotremoveBreakpoint, params: RemoveBreakpointParameterType): Unit = js.native
   @JSName("post")
@@ -1090,6 +1137,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggerrestartFrame(
     method: DebuggerDotrestartFrame,
+    callback: js.Function2[/* err */ Error | Null, /* params */ RestartFrameReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_DebuggerrestartFrame(
+    method: DebuggerDotrestartFrame,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ RestartFrameReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1126,6 +1179,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ SearchInContentReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_DebuggersearchInContent(
+    method: DebuggerDotsearchInContent,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ SearchInContentReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersearchInContent(method: DebuggerDotsearchInContent, params: SearchInContentParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersearchInContent(
@@ -1140,6 +1199,12 @@ class Session () extends EventEmitter {
   def post_DebuggersetAsyncCallStackDepth(method: DebuggerDotsetAsyncCallStackDepth): Unit = js.native
   @JSName("post")
   def post_DebuggersetAsyncCallStackDepth(method: DebuggerDotsetAsyncCallStackDepth, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggersetAsyncCallStackDepth(
+    method: DebuggerDotsetAsyncCallStackDepth,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggersetAsyncCallStackDepth(method: DebuggerDotsetAsyncCallStackDepth, params: SetAsyncCallStackDepthParameterType): Unit = js.native
   @JSName("post")
@@ -1157,6 +1222,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggersetBlackboxPatterns(method: DebuggerDotsetBlackboxPatterns, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_DebuggersetBlackboxPatterns(
+    method: DebuggerDotsetBlackboxPatterns,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersetBlackboxPatterns(method: DebuggerDotsetBlackboxPatterns, params: SetBlackboxPatternsParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersetBlackboxPatterns(
@@ -1173,6 +1244,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggersetBlackboxedRanges(method: DebuggerDotsetBlackboxedRanges, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_DebuggersetBlackboxedRanges(
+    method: DebuggerDotsetBlackboxedRanges,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersetBlackboxedRanges(method: DebuggerDotsetBlackboxedRanges, params: SetBlackboxedRangesParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersetBlackboxedRanges(
@@ -1188,6 +1265,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggersetBreakpoint(
     method: DebuggerDotsetBreakpoint,
+    callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_DebuggersetBreakpoint(
+    method: DebuggerDotsetBreakpoint,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1209,6 +1292,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_DebuggersetBreakpointByUrl(
+    method: DebuggerDotsetBreakpointByUrl,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ SetBreakpointByUrlReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersetBreakpointByUrl(method: DebuggerDotsetBreakpointByUrl, params: SetBreakpointByUrlParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersetBreakpointByUrl(
@@ -1223,6 +1312,12 @@ class Session () extends EventEmitter {
   def post_DebuggersetBreakpointsActive(method: DebuggerDotsetBreakpointsActive): Unit = js.native
   @JSName("post")
   def post_DebuggersetBreakpointsActive(method: DebuggerDotsetBreakpointsActive, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggersetBreakpointsActive(
+    method: DebuggerDotsetBreakpointsActive,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggersetBreakpointsActive(method: DebuggerDotsetBreakpointsActive, params: SetBreakpointsActiveParameterType): Unit = js.native
   @JSName("post")
@@ -1239,6 +1334,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggersetPauseOnExceptions(method: DebuggerDotsetPauseOnExceptions, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_DebuggersetPauseOnExceptions(
+    method: DebuggerDotsetPauseOnExceptions,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersetPauseOnExceptions(method: DebuggerDotsetPauseOnExceptions, params: SetPauseOnExceptionsParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersetPauseOnExceptions(
@@ -1254,6 +1355,12 @@ class Session () extends EventEmitter {
   def post_DebuggersetReturnValue(method: DebuggerDotsetReturnValue): Unit = js.native
   @JSName("post")
   def post_DebuggersetReturnValue(method: DebuggerDotsetReturnValue, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggersetReturnValue(
+    method: DebuggerDotsetReturnValue,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggersetReturnValue(method: DebuggerDotsetReturnValue, params: SetReturnValueParameterType): Unit = js.native
   @JSName("post")
@@ -1273,6 +1380,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ SetScriptSourceReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_DebuggersetScriptSource(
+    method: DebuggerDotsetScriptSource,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ SetScriptSourceReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersetScriptSource(method: DebuggerDotsetScriptSource, params: SetScriptSourceParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersetScriptSource(
@@ -1287,6 +1400,12 @@ class Session () extends EventEmitter {
   def post_DebuggersetSkipAllPauses(method: DebuggerDotsetSkipAllPauses): Unit = js.native
   @JSName("post")
   def post_DebuggersetSkipAllPauses(method: DebuggerDotsetSkipAllPauses, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggersetSkipAllPauses(
+    method: DebuggerDotsetSkipAllPauses,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggersetSkipAllPauses(method: DebuggerDotsetSkipAllPauses, params: SetSkipAllPausesParameterType): Unit = js.native
   @JSName("post")
@@ -1303,6 +1422,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_DebuggersetVariableValue(method: DebuggerDotsetVariableValue, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_DebuggersetVariableValue(
+    method: DebuggerDotsetVariableValue,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_DebuggersetVariableValue(method: DebuggerDotsetVariableValue, params: SetVariableValueParameterType): Unit = js.native
   @JSName("post")
   def post_DebuggersetVariableValue(
@@ -1317,6 +1442,12 @@ class Session () extends EventEmitter {
   def post_DebuggerstepInto(method: DebuggerDotstepInto): Unit = js.native
   @JSName("post")
   def post_DebuggerstepInto(method: DebuggerDotstepInto, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_DebuggerstepInto(
+    method: DebuggerDotstepInto,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_DebuggerstepInto(method: DebuggerDotstepInto, params: StepIntoParameterType): Unit = js.native
   @JSName("post")
@@ -1350,6 +1481,12 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_HeapProfileraddInspectedHeapObject(
+    method: HeapProfilerDotaddInspectedHeapObject,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_HeapProfileraddInspectedHeapObject(method: HeapProfilerDotaddInspectedHeapObject, params: AddInspectedHeapObjectParameterType): Unit = js.native
   @JSName("post")
   def post_HeapProfileraddInspectedHeapObject(
@@ -1377,6 +1514,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_HeapProfilergetHeapObjectId(
+    method: HeapProfilerDotgetHeapObjectId,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ GetHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_HeapProfilergetHeapObjectId(method: HeapProfilerDotgetHeapObjectId, params: GetHeapObjectIdParameterType): Unit = js.native
   @JSName("post")
   def post_HeapProfilergetHeapObjectId(
@@ -1389,6 +1532,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_HeapProfilergetObjectByHeapObjectId(
     method: HeapProfilerDotgetObjectByHeapObjectId,
+    callback: js.Function2[/* err */ Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_HeapProfilergetObjectByHeapObjectId(
+    method: HeapProfilerDotgetObjectByHeapObjectId,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ GetObjectByHeapObjectIdReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1411,6 +1560,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_HeapProfilerstartSampling(method: HeapProfilerDotstartSampling, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_HeapProfilerstartSampling(
+    method: HeapProfilerDotstartSampling,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_HeapProfilerstartSampling(method: HeapProfilerDotstartSampling, params: StartSamplingParameterType): Unit = js.native
   @JSName("post")
   def post_HeapProfilerstartSampling(
@@ -1423,6 +1578,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_HeapProfilerstartTrackingHeapObjects(
     method: HeapProfilerDotstartTrackingHeapObjects,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_HeapProfilerstartTrackingHeapObjects(
+    method: HeapProfilerDotstartTrackingHeapObjects,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1448,6 +1609,12 @@ class Session () extends EventEmitter {
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_HeapProfilerstopTrackingHeapObjects(
+    method: HeapProfilerDotstopTrackingHeapObjects,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_HeapProfilerstopTrackingHeapObjects(method: HeapProfilerDotstopTrackingHeapObjects, params: StopTrackingHeapObjectsParameterType): Unit = js.native
   @JSName("post")
   def post_HeapProfilerstopTrackingHeapObjects(
@@ -1459,6 +1626,12 @@ class Session () extends EventEmitter {
   def post_HeapProfilertakeHeapSnapshot(method: HeapProfilerDottakeHeapSnapshot): Unit = js.native
   @JSName("post")
   def post_HeapProfilertakeHeapSnapshot(method: HeapProfilerDottakeHeapSnapshot, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_HeapProfilertakeHeapSnapshot(
+    method: HeapProfilerDottakeHeapSnapshot,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_HeapProfilertakeHeapSnapshot(method: HeapProfilerDottakeHeapSnapshot, params: TakeHeapSnapshotParameterType): Unit = js.native
   @JSName("post")
@@ -1475,6 +1648,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_NodeRuntimenotifyWhenWaitingForDisconnect(
     method: NodeRuntimeDotnotifyWhenWaitingForDisconnect,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_NodeRuntimenotifyWhenWaitingForDisconnect(
+    method: NodeRuntimeDotnotifyWhenWaitingForDisconnect,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1506,6 +1685,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_NodeTracingstart(method: NodeTracingDotstart, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_NodeTracingstart(
+    method: NodeTracingDotstart,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_NodeTracingstart(method: NodeTracingDotstart, params: StartParameterType): Unit = js.native
   @JSName("post")
   def post_NodeTracingstart(
@@ -1528,6 +1713,12 @@ class Session () extends EventEmitter {
   def post_NodeWorkerdetach(method: NodeWorkerDotdetach): Unit = js.native
   @JSName("post")
   def post_NodeWorkerdetach(method: NodeWorkerDotdetach, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_NodeWorkerdetach(
+    method: NodeWorkerDotdetach,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_NodeWorkerdetach(method: NodeWorkerDotdetach, params: DetachParameterType): Unit = js.native
   @JSName("post")
@@ -1552,6 +1743,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_NodeWorkerenable(method: NodeWorkerDotenable, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_NodeWorkerenable(
+    method: NodeWorkerDotenable,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_NodeWorkerenable(method: NodeWorkerDotenable, params: EnableParameterType): Unit = js.native
   @JSName("post")
   def post_NodeWorkerenable(
@@ -1566,6 +1763,12 @@ class Session () extends EventEmitter {
   def post_NodeWorkersendMessageToWorker(method: NodeWorkerDotsendMessageToWorker): Unit = js.native
   @JSName("post")
   def post_NodeWorkersendMessageToWorker(method: NodeWorkerDotsendMessageToWorker, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_NodeWorkersendMessageToWorker(
+    method: NodeWorkerDotsendMessageToWorker,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_NodeWorkersendMessageToWorker(method: NodeWorkerDotsendMessageToWorker, params: SendMessageToWorkerParameterType): Unit = js.native
   @JSName("post")
@@ -1600,6 +1803,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_ProfilersetSamplingInterval(method: ProfilerDotsetSamplingInterval, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_ProfilersetSamplingInterval(
+    method: ProfilerDotsetSamplingInterval,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_ProfilersetSamplingInterval(method: ProfilerDotsetSamplingInterval, params: SetSamplingIntervalParameterType): Unit = js.native
   @JSName("post")
   def post_ProfilersetSamplingInterval(
@@ -1618,6 +1827,12 @@ class Session () extends EventEmitter {
   def post_ProfilerstartPreciseCoverage(method: ProfilerDotstartPreciseCoverage): Unit = js.native
   @JSName("post")
   def post_ProfilerstartPreciseCoverage(method: ProfilerDotstartPreciseCoverage, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_ProfilerstartPreciseCoverage(
+    method: ProfilerDotstartPreciseCoverage,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_ProfilerstartPreciseCoverage(method: ProfilerDotstartPreciseCoverage, params: StartPreciseCoverageParameterType): Unit = js.native
   @JSName("post")
@@ -1688,6 +1903,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ AwaitPromiseReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_RuntimeawaitPromise(
+    method: RuntimeDotawaitPromise,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ AwaitPromiseReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_RuntimeawaitPromise(method: RuntimeDotawaitPromise, params: AwaitPromiseParameterType): Unit = js.native
   @JSName("post")
   def post_RuntimeawaitPromise(
@@ -1706,6 +1927,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ CallFunctionOnReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_RuntimecallFunctionOn(
+    method: RuntimeDotcallFunctionOn,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ CallFunctionOnReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_RuntimecallFunctionOn(method: RuntimeDotcallFunctionOn, params: CallFunctionOnParameterType): Unit = js.native
   @JSName("post")
   def post_RuntimecallFunctionOn(
@@ -1721,6 +1948,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_RuntimecompileScript(
     method: RuntimeDotcompileScript,
+    callback: js.Function2[/* err */ Error | Null, /* params */ CompileScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_RuntimecompileScript(
+    method: RuntimeDotcompileScript,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ CompileScriptReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1763,6 +1996,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ EvaluateReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_Runtimeevaluate(
+    method: RuntimeDotevaluate,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ EvaluateReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_Runtimeevaluate(method: RuntimeDotevaluate, params: EvaluateParameterType): Unit = js.native
   @JSName("post")
   def post_Runtimeevaluate(
@@ -1778,6 +2017,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_RuntimegetProperties(
     method: RuntimeDotgetProperties,
+    callback: js.Function2[/* err */ Error | Null, /* params */ GetPropertiesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_RuntimegetProperties(
+    method: RuntimeDotgetProperties,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ GetPropertiesReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1799,6 +2044,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_RuntimeglobalLexicalScopeNames(
+    method: RuntimeDotglobalLexicalScopeNames,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ GlobalLexicalScopeNamesReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_RuntimeglobalLexicalScopeNames(method: RuntimeDotglobalLexicalScopeNames, params: GlobalLexicalScopeNamesParameterType): Unit = js.native
   @JSName("post")
   def post_RuntimeglobalLexicalScopeNames(
@@ -1811,6 +2062,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_RuntimequeryObjects(
     method: RuntimeDotqueryObjects,
+    callback: js.Function2[/* err */ Error | Null, /* params */ QueryObjectsReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_RuntimequeryObjects(
+    method: RuntimeDotqueryObjects,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* err */ Error | Null, /* params */ QueryObjectsReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
@@ -1829,6 +2086,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_RuntimereleaseObject(method: RuntimeDotreleaseObject, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   @JSName("post")
+  def post_RuntimereleaseObject(
+    method: RuntimeDotreleaseObject,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_RuntimereleaseObject(method: RuntimeDotreleaseObject, params: ReleaseObjectParameterType): Unit = js.native
   @JSName("post")
   def post_RuntimereleaseObject(
@@ -1843,6 +2106,12 @@ class Session () extends EventEmitter {
   def post_RuntimereleaseObjectGroup(method: RuntimeDotreleaseObjectGroup): Unit = js.native
   @JSName("post")
   def post_RuntimereleaseObjectGroup(method: RuntimeDotreleaseObjectGroup, callback: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
+  @JSName("post")
+  def post_RuntimereleaseObjectGroup(
+    method: RuntimeDotreleaseObjectGroup,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
   @JSName("post")
   def post_RuntimereleaseObjectGroup(method: RuntimeDotreleaseObjectGroup, params: ReleaseObjectGroupParameterType): Unit = js.native
   @JSName("post")
@@ -1869,6 +2138,12 @@ class Session () extends EventEmitter {
     callback: js.Function2[/* err */ Error | Null, /* params */ RunScriptReturnType, Unit]
   ): Unit = js.native
   @JSName("post")
+  def post_RuntimerunScript(
+    method: RuntimeDotrunScript,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error | Null, /* params */ RunScriptReturnType, Unit]
+  ): Unit = js.native
+  @JSName("post")
   def post_RuntimerunScript(method: RuntimeDotrunScript, params: RunScriptParameterType): Unit = js.native
   @JSName("post")
   def post_RuntimerunScript(
@@ -1884,6 +2159,12 @@ class Session () extends EventEmitter {
   @JSName("post")
   def post_RuntimesetCustomObjectFormatterEnabled(
     method: RuntimeDotsetCustomObjectFormatterEnabled,
+    callback: js.Function1[/* err */ Error | Null, Unit]
+  ): Unit = js.native
+  @JSName("post")
+  def post_RuntimesetCustomObjectFormatterEnabled(
+    method: RuntimeDotsetCustomObjectFormatterEnabled,
+    params: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ Error | Null, Unit]
   ): Unit = js.native
   @JSName("post")

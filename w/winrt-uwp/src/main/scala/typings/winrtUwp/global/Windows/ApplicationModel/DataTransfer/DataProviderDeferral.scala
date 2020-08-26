@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.DataTransfer.DataProviderDeferral")
 @js.native
 abstract class DataProviderDeferral ()
-  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataProviderDeferral {
-  /** Informs a DataPackage that it is ready for processing. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataProviderDeferral
 

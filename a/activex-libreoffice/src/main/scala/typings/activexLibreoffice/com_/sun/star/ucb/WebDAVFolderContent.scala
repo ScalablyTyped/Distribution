@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.ucb.WebDAVContentProvider
   * @see com.sun.star.ucb.WebDAVDocumentContent
   */
+@js.native
 trait WebDAVFolderContent
   extends XCommandProcessor2
      with XComponent

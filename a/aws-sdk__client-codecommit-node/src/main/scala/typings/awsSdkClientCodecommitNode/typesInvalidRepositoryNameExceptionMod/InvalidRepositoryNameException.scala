@@ -35,6 +35,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidRepositoryNameException
   extends ServiceException[InvalidRepositoryNameExceptionDetails]
      with BatchGetRepositoriesExceptionsUnion
@@ -67,7 +68,7 @@ trait InvalidRepositoryNameException
      with UpdateRepositoryDescriptionExceptionsUnion
      with UpdateRepositoryNameExceptionsUnion {
   @JSName("name")
-  var name_InvalidRepositoryNameException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
+  var name_InvalidRepositoryNameException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException = js.native
 }
 
 object InvalidRepositoryNameException {
@@ -76,12 +77,27 @@ object InvalidRepositoryNameException {
     $metadata: ResponseMetadata,
     details: InvalidRepositoryNameExceptionDetails,
     message: String,
-    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException,
-    stack: String = null
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
   ): InvalidRepositoryNameException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidRepositoryNameException]
   }
+  @scala.inline
+  implicit class InvalidRepositoryNameExceptionOps[Self <: InvalidRepositoryNameException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(
+      value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
+    ): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

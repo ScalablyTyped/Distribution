@@ -30,20 +30,42 @@ trait UploadSettings extends js.Object {
 
 object UploadSettings {
   @scala.inline
-  def apply(
-    ContainsHeader: js.UndefOr[Boolean] = js.undefined,
-    Delimiter: Delimiter = null,
-    Format: FileFormat = null,
-    StartFromRow: js.UndefOr[PositiveInteger] = js.undefined,
-    TextQualifier: TextQualifier = null
-  ): UploadSettings = {
+  def apply(): UploadSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContainsHeader)) __obj.updateDynamic("ContainsHeader")(ContainsHeader.get.asInstanceOf[js.Any])
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (!js.isUndefined(StartFromRow)) __obj.updateDynamic("StartFromRow")(StartFromRow.get.asInstanceOf[js.Any])
-    if (TextQualifier != null) __obj.updateDynamic("TextQualifier")(TextQualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadSettings]
   }
+  @scala.inline
+  implicit class UploadSettingsOps[Self <: UploadSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainsHeader(value: Boolean): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsHeader: Self = this.set("ContainsHeader", js.undefined)
+    @scala.inline
+    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    @scala.inline
+    def setFormat(value: FileFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setStartFromRow(value: PositiveInteger): Self = this.set("StartFromRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartFromRow: Self = this.set("StartFromRow", js.undefined)
+    @scala.inline
+    def setTextQualifier(value: TextQualifier): Self = this.set("TextQualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextQualifier: Self = this.set("TextQualifier", js.undefined)
+  }
+  
 }
 

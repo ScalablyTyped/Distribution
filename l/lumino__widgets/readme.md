@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__widgets
 
-Typings are for version 1.12.2
+Typings are for version 1.13.4
 
 ## Library description:
 Lumino Widgets
@@ -10,9 +10,9 @@ Lumino Widgets
 | ------------------ | :-------------: |
 | Full name          | @lumino/widgets |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 7 |
-| # downloads        | 13847 |
+| # releases         | 21 |
+| # dependents       | 191 |
+| # downloads        | 463982 |
 | # stars            | 0 |
 
 ## Links

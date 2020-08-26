@@ -27,17 +27,10 @@ object deleteBucketTaggingCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteBucketTaggingInput) = this()
-    /* CompleteClass */
-    override val input: DeleteBucketTaggingInput = js.native
     val middlewareStack: MiddlewareStack[DeleteBucketTaggingInput, DeleteBucketTaggingOutput, Readable] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: S3ResolvedConfiguration
-    ): Handler[DeleteBucketTaggingInput, DeleteBucketTaggingOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: S3ResolvedConfiguration
     ): Handler[DeleteBucketTaggingInput, DeleteBucketTaggingOutput] = js.native
   }

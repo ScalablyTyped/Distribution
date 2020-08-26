@@ -34,22 +34,48 @@ trait LocalSecondaryIndexDescription extends js.Object {
 
 object LocalSecondaryIndexDescription {
   @scala.inline
-  def apply(
-    IndexArn: String = null,
-    IndexName: IndexName = null,
-    IndexSizeBytes: js.UndefOr[Long] = js.undefined,
-    ItemCount: js.UndefOr[Long] = js.undefined,
-    KeySchema: KeySchema = null,
-    Projection: Projection = null
-  ): LocalSecondaryIndexDescription = {
+  def apply(): LocalSecondaryIndexDescription = {
     val __obj = js.Dynamic.literal()
-    if (IndexArn != null) __obj.updateDynamic("IndexArn")(IndexArn.asInstanceOf[js.Any])
-    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName.asInstanceOf[js.Any])
-    if (!js.isUndefined(IndexSizeBytes)) __obj.updateDynamic("IndexSizeBytes")(IndexSizeBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
-    if (KeySchema != null) __obj.updateDynamic("KeySchema")(KeySchema.asInstanceOf[js.Any])
-    if (Projection != null) __obj.updateDynamic("Projection")(Projection.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSecondaryIndexDescription]
   }
+  @scala.inline
+  implicit class LocalSecondaryIndexDescriptionOps[Self <: LocalSecondaryIndexDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexArn(value: String): Self = this.set("IndexArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexArn: Self = this.set("IndexArn", js.undefined)
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("IndexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("IndexName", js.undefined)
+    @scala.inline
+    def setIndexSizeBytes(value: Long): Self = this.set("IndexSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexSizeBytes: Self = this.set("IndexSizeBytes", js.undefined)
+    @scala.inline
+    def setItemCount(value: Long): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    @scala.inline
+    def setKeySchemaVarargs(value: KeySchemaElement*): Self = this.set("KeySchema", js.Array(value :_*))
+    @scala.inline
+    def setKeySchema(value: KeySchema): Self = this.set("KeySchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeySchema: Self = this.set("KeySchema", js.undefined)
+    @scala.inline
+    def setProjection(value: Projection): Self = this.set("Projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("Projection", js.undefined)
+  }
+  
 }
 

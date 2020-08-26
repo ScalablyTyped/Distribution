@@ -12,51 +12,90 @@ import scala.scalajs.js.annotation._
   * realm configuration
   * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
   */
+@js.native
 trait Configuration extends js.Object {
-  var deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.undefined
-  var disableFormatUpgrade: js.UndefOr[Boolean] = js.undefined
-  var encryptionKey: js.UndefOr[ArrayBuffer | ArrayBufferView | Int8Array] = js.undefined
-  var fifoFilesFallbackPath: js.UndefOr[String] = js.undefined
-  var inMemory: js.UndefOr[Boolean] = js.undefined
-  var migration: js.UndefOr[MigrationCallback] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.undefined
-  var schemaVersion: js.UndefOr[Double] = js.undefined
-  var shouldCompactOnLaunch: js.UndefOr[js.Function2[/* totalBytes */ Double, /* usedBytes */ Double, Boolean]] = js.undefined
-  var sync: js.UndefOr[PartialSyncConfiguration] = js.undefined
+  var deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.native
+  var disableFormatUpgrade: js.UndefOr[Boolean] = js.native
+  var encryptionKey: js.UndefOr[ArrayBuffer | ArrayBufferView | Int8Array] = js.native
+  var fifoFilesFallbackPath: js.UndefOr[String] = js.native
+  var inMemory: js.UndefOr[Boolean] = js.native
+  var migration: js.UndefOr[MigrationCallback] = js.native
+  var path: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.native
+  var schemaVersion: js.UndefOr[Double] = js.native
+  var shouldCompactOnLaunch: js.UndefOr[js.Function2[/* totalBytes */ Double, /* usedBytes */ Double, Boolean]] = js.native
+  var sync: js.UndefOr[PartialSyncConfiguration] = js.native
 }
 
 object Configuration {
   @scala.inline
-  def apply(
-    deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.undefined,
-    disableFormatUpgrade: js.UndefOr[Boolean] = js.undefined,
-    encryptionKey: ArrayBuffer | ArrayBufferView | Int8Array = null,
-    fifoFilesFallbackPath: String = null,
-    inMemory: js.UndefOr[Boolean] = js.undefined,
-    migration: (/* oldRealm */ typings.realm.Realm, /* newRealm */ typings.realm.Realm) => Unit = null,
-    path: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    schema: js.Array[ObjectClass | ObjectSchema] = null,
-    schemaVersion: js.UndefOr[Double] = js.undefined,
-    shouldCompactOnLaunch: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean = null,
-    sync: PartialSyncConfiguration = null
-  ): Configuration = {
+  def apply(): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleteRealmIfMigrationNeeded)) __obj.updateDynamic("deleteRealmIfMigrationNeeded")(deleteRealmIfMigrationNeeded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFormatUpgrade)) __obj.updateDynamic("disableFormatUpgrade")(disableFormatUpgrade.get.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (fifoFilesFallbackPath != null) __obj.updateDynamic("fifoFilesFallbackPath")(fifoFilesFallbackPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(inMemory)) __obj.updateDynamic("inMemory")(inMemory.get.asInstanceOf[js.Any])
-    if (migration != null) __obj.updateDynamic("migration")(js.Any.fromFunction2(migration))
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(schemaVersion)) __obj.updateDynamic("schemaVersion")(schemaVersion.get.asInstanceOf[js.Any])
-    if (shouldCompactOnLaunch != null) __obj.updateDynamic("shouldCompactOnLaunch")(js.Any.fromFunction2(shouldCompactOnLaunch))
-    if (sync != null) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
+  @scala.inline
+  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteRealmIfMigrationNeeded(value: Boolean): Self = this.set("deleteRealmIfMigrationNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteRealmIfMigrationNeeded: Self = this.set("deleteRealmIfMigrationNeeded", js.undefined)
+    @scala.inline
+    def setDisableFormatUpgrade(value: Boolean): Self = this.set("disableFormatUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFormatUpgrade: Self = this.set("disableFormatUpgrade", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: ArrayBuffer | ArrayBufferView | Int8Array): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    @scala.inline
+    def setFifoFilesFallbackPath(value: String): Self = this.set("fifoFilesFallbackPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFifoFilesFallbackPath: Self = this.set("fifoFilesFallbackPath", js.undefined)
+    @scala.inline
+    def setInMemory(value: Boolean): Self = this.set("inMemory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInMemory: Self = this.set("inMemory", js.undefined)
+    @scala.inline
+    def setMigration(value: (/* oldRealm */ typings.realm.Realm, /* newRealm */ typings.realm.Realm) => Unit): Self = this.set("migration", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMigration: Self = this.set("migration", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setSchemaVarargs(value: (ObjectClass | ObjectSchema)*): Self = this.set("schema", js.Array(value :_*))
+    @scala.inline
+    def setSchema(value: js.Array[ObjectClass | ObjectSchema]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: Double): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("schemaVersion", js.undefined)
+    @scala.inline
+    def setShouldCompactOnLaunch(value: (/* totalBytes */ Double, /* usedBytes */ Double) => Boolean): Self = this.set("shouldCompactOnLaunch", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShouldCompactOnLaunch: Self = this.set("shouldCompactOnLaunch", js.undefined)
+    @scala.inline
+    def setSync(value: PartialSyncConfiguration): Self = this.set("sync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSync: Self = this.set("sync", js.undefined)
+  }
+  
 }
 

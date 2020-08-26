@@ -30,20 +30,42 @@ trait DebugRuleEvaluationStatus extends js.Object {
 
 object DebugRuleEvaluationStatus {
   @scala.inline
-  def apply(
-    LastModifiedTime: Timestamp = null,
-    RuleConfigurationName: RuleConfigurationName = null,
-    RuleEvaluationJobArn: ProcessingJobArn = null,
-    RuleEvaluationStatus: RuleEvaluationStatus = null,
-    StatusDetails: StatusDetails = null
-  ): DebugRuleEvaluationStatus = {
+  def apply(): DebugRuleEvaluationStatus = {
     val __obj = js.Dynamic.literal()
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (RuleConfigurationName != null) __obj.updateDynamic("RuleConfigurationName")(RuleConfigurationName.asInstanceOf[js.Any])
-    if (RuleEvaluationJobArn != null) __obj.updateDynamic("RuleEvaluationJobArn")(RuleEvaluationJobArn.asInstanceOf[js.Any])
-    if (RuleEvaluationStatus != null) __obj.updateDynamic("RuleEvaluationStatus")(RuleEvaluationStatus.asInstanceOf[js.Any])
-    if (StatusDetails != null) __obj.updateDynamic("StatusDetails")(StatusDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[DebugRuleEvaluationStatus]
   }
+  @scala.inline
+  implicit class DebugRuleEvaluationStatusOps[Self <: DebugRuleEvaluationStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastModifiedTime(value: Timestamp): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setRuleConfigurationName(value: RuleConfigurationName): Self = this.set("RuleConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleConfigurationName: Self = this.set("RuleConfigurationName", js.undefined)
+    @scala.inline
+    def setRuleEvaluationJobArn(value: ProcessingJobArn): Self = this.set("RuleEvaluationJobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleEvaluationJobArn: Self = this.set("RuleEvaluationJobArn", js.undefined)
+    @scala.inline
+    def setRuleEvaluationStatus(value: RuleEvaluationStatus): Self = this.set("RuleEvaluationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleEvaluationStatus: Self = this.set("RuleEvaluationStatus", js.undefined)
+    @scala.inline
+    def setStatusDetails(value: StatusDetails): Self = this.set("StatusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetails: Self = this.set("StatusDetails", js.undefined)
+  }
+  
 }
 

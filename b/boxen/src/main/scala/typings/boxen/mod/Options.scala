@@ -26,12 +26,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
   		Align the text in the box based on the widest line.
   		@default 'left'
   		*/
-  val align: js.UndefOr[left | right | center] = js.undefined
+  val align: js.UndefOr[left | right | center] = js.native
   /**
   		Color of the background.
   		*/
@@ -40,7 +41,7 @@ trait Options extends js.Object {
       black | red | green | yellow | blue | magenta | cyan | white | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
       String
     ]
-  ] = js.undefined
+  ] = js.native
   /**
   		Color of the box border.
   		*/
@@ -49,62 +50,94 @@ trait Options extends js.Object {
       black | red | green | yellow | blue | magenta | cyan | white | gray | grey | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
       String
     ]
-  ] = js.undefined
+  ] = js.native
   /**
   		Style of the box border.
   		@default BorderStyle.Single
   		*/
-  val borderStyle: js.UndefOr[BorderStyle | CustomBorderStyle] = js.undefined
+  val borderStyle: js.UndefOr[BorderStyle | CustomBorderStyle] = js.native
   /**
   		Reduce opacity of the border.
   		@default false
   		*/
-  val dimBorder: js.UndefOr[Boolean] = js.undefined
+  val dimBorder: js.UndefOr[Boolean] = js.native
   /**
   		Float the box on the available terminal screen space.
   		@default 'left'
   		*/
-  val float: js.UndefOr[left | right | center] = js.undefined
+  val float: js.UndefOr[left | right | center] = js.native
   /**
   		Space around the box.
   		@default 0
   		*/
-  val margin: js.UndefOr[Double | Spacing] = js.undefined
+  val margin: js.UndefOr[Double | Spacing] = js.native
   /**
   		Space between the text and box border.
   		@default 0
   		*/
-  val padding: js.UndefOr[Double | Spacing] = js.undefined
+  val padding: js.UndefOr[Double | Spacing] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    align: left | right | center = null,
-    backgroundColor: LiteralUnion[
-      black | red | green | yellow | blue | magenta | cyan | white | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
-      String
-    ] = null,
-    borderColor: LiteralUnion[
-      black | red | green | yellow | blue | magenta | cyan | white | gray | grey | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
-      String
-    ] = null,
-    borderStyle: BorderStyle | CustomBorderStyle = null,
-    dimBorder: js.UndefOr[Boolean] = js.undefined,
-    float: left | right | center = null,
-    margin: Double | Spacing = null,
-    padding: Double | Spacing = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dimBorder)) __obj.updateDynamic("dimBorder")(dimBorder.get.asInstanceOf[js.Any])
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: left | right | center): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setBackgroundColor(
+      value: LiteralUnion[
+          black | red | green | yellow | blue | magenta | cyan | white | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
+          String
+        ]
+    ): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(
+      value: LiteralUnion[
+          black | red | green | yellow | blue | magenta | cyan | white | gray | grey | blackBright | redBright | greenBright | yellowBright | blueBright | magentaBright | cyanBright | whiteBright, 
+          String
+        ]
+    ): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderStyle(value: BorderStyle | CustomBorderStyle): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    @scala.inline
+    def setDimBorder(value: Boolean): Self = this.set("dimBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimBorder: Self = this.set("dimBorder", js.undefined)
+    @scala.inline
+    def setFloat(value: left | right | center): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setMargin(value: Double | Spacing): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | Spacing): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+  }
+  
 }
 

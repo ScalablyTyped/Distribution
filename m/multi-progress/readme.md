@@ -12,7 +12,7 @@ Multiple progress bars based on the "progress" package
 | Keywords           | multi, multiple, progress, bar |
 | # releases         | 0 |
 | # dependents       | 46 |
-| # downloads        | 535587 |
+| # downloads        | 539985 |
 | # stars            | 1 |
 
 ## Links

@@ -16,15 +16,5 @@ class ASPxClientVerticalGridRowExpandingEventArgs protected ()
     * @param row An ASPxClientVerticalGridRowobject that represents the row to expand.
     */
   def this(row: typings.devexpressWeb.ASPxClientVerticalGridRow) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets the expanded row.
-    */
-  /* CompleteClass */
-  override var row: typings.devexpressWeb.ASPxClientVerticalGridRow = js.native
 }
 

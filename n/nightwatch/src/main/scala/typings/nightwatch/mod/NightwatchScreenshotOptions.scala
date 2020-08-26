@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NightwatchScreenshotOptions extends js.Object {
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var on_error: js.UndefOr[Boolean] = js.undefined
-  var on_failure: js.UndefOr[Boolean] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
+  var on_error: js.UndefOr[Boolean] = js.native
+  var on_failure: js.UndefOr[Boolean] = js.native
+  var path: js.UndefOr[String] = js.native
 }
 
 object NightwatchScreenshotOptions {
   @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    on_error: js.UndefOr[Boolean] = js.undefined,
-    on_failure: js.UndefOr[Boolean] = js.undefined,
-    path: String = null
-  ): NightwatchScreenshotOptions = {
+  def apply(): NightwatchScreenshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(on_error)) __obj.updateDynamic("on_error")(on_error.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(on_failure)) __obj.updateDynamic("on_failure")(on_failure.get.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchScreenshotOptions]
   }
+  @scala.inline
+  implicit class NightwatchScreenshotOptionsOps[Self <: NightwatchScreenshotOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setOn_error(value: Boolean): Self = this.set("on_error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn_error: Self = this.set("on_error", js.undefined)
+    @scala.inline
+    def setOn_failure(value: Boolean): Self = this.set("on_failure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn_failure: Self = this.set("on_failure", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

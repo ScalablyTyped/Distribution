@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ListPoliciesForTargetRequest extends js.Object {
   /**
-    * The type of policy that you want to include in the returned list. You must specify one of the following values:    BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY   
+    * The type of policy that you want to include in the returned list. You must specify one of the following values:    AISERVICES_OPT_OUT_POLICY     BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY   
     */
   var Filter: PolicyType = js.native
   /**
@@ -26,16 +26,34 @@ trait ListPoliciesForTargetRequest extends js.Object {
 
 object ListPoliciesForTargetRequest {
   @scala.inline
-  def apply(
-    Filter: PolicyType,
-    TargetId: PolicyTargetId,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): ListPoliciesForTargetRequest = {
+  def apply(Filter: PolicyType, TargetId: PolicyTargetId): ListPoliciesForTargetRequest = {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any], TargetId = TargetId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesForTargetRequest]
   }
+  @scala.inline
+  implicit class ListPoliciesForTargetRequestOps[Self <: ListPoliciesForTargetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: PolicyType): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetId(value: PolicyTargetId): Self = this.set("TargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

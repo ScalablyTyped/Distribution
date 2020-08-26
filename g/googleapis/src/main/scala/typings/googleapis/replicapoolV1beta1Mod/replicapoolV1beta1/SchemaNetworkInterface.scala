@@ -28,16 +28,36 @@ trait SchemaNetworkInterface extends js.Object {
 
 object SchemaNetworkInterface {
   @scala.inline
-  def apply(
-    accessConfigs: js.Array[SchemaAccessConfig] = null,
-    network: String = null,
-    networkIp: String = null
-  ): SchemaNetworkInterface = {
+  def apply(): SchemaNetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (accessConfigs != null) __obj.updateDynamic("accessConfigs")(accessConfigs.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (networkIp != null) __obj.updateDynamic("networkIp")(networkIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkInterface]
   }
+  @scala.inline
+  implicit class SchemaNetworkInterfaceOps[Self <: SchemaNetworkInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessConfigsVarargs(value: SchemaAccessConfig*): Self = this.set("accessConfigs", js.Array(value :_*))
+    @scala.inline
+    def setAccessConfigs(value: js.Array[SchemaAccessConfig]): Self = this.set("accessConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessConfigs: Self = this.set("accessConfigs", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNetworkIp(value: String): Self = this.set("networkIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkIp: Self = this.set("networkIp", js.undefined)
+  }
+  
 }
 

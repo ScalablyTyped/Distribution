@@ -6,33 +6,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavigationBarProps extends js.Object {
-  var leftButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.undefined
-  var rightButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.undefined
-  var statusBar: js.UndefOr[StatusBar] = js.undefined
-  var style: js.UndefOr[ViewStyle] = js.undefined
-  var tintColor: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[NavigationBarTitle | ReactElement | Null] = js.undefined
+  var leftButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.native
+  var rightButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.native
+  var statusBar: js.UndefOr[StatusBar] = js.native
+  var style: js.UndefOr[ViewStyle] = js.native
+  var tintColor: js.UndefOr[String] = js.native
+  var title: js.UndefOr[NavigationBarTitle | ReactElement | Null] = js.native
 }
 
 object NavigationBarProps {
   @scala.inline
-  def apply(
-    leftButton: js.UndefOr[Null | NavigationBarButton | ReactElement] = js.undefined,
-    rightButton: js.UndefOr[Null | NavigationBarButton | ReactElement] = js.undefined,
-    statusBar: StatusBar = null,
-    style: ViewStyle = null,
-    tintColor: String = null,
-    title: js.UndefOr[Null | NavigationBarTitle | ReactElement] = js.undefined
-  ): NavigationBarProps = {
+  def apply(): NavigationBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(leftButton)) __obj.updateDynamic("leftButton")(leftButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightButton)) __obj.updateDynamic("rightButton")(rightButton.asInstanceOf[js.Any])
-    if (statusBar != null) __obj.updateDynamic("statusBar")(statusBar.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBarProps]
   }
+  @scala.inline
+  implicit class NavigationBarPropsOps[Self <: NavigationBarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLeftButton(value: NavigationBarButton | ReactElement): Self = this.set("leftButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftButton: Self = this.set("leftButton", js.undefined)
+    @scala.inline
+    def setLeftButtonNull: Self = this.set("leftButton", null)
+    @scala.inline
+    def setRightButton(value: NavigationBarButton | ReactElement): Self = this.set("rightButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightButton: Self = this.set("rightButton", js.undefined)
+    @scala.inline
+    def setRightButtonNull: Self = this.set("rightButton", null)
+    @scala.inline
+    def setStatusBar(value: StatusBar): Self = this.set("statusBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusBar: Self = this.set("statusBar", js.undefined)
+    @scala.inline
+    def setStyle(value: ViewStyle): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTintColor(value: String): Self = this.set("tintColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTintColor: Self = this.set("tintColor", js.undefined)
+    @scala.inline
+    def setTitle(value: NavigationBarTitle | ReactElement): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleNull: Self = this.set("title", null)
+  }
+  
 }
 

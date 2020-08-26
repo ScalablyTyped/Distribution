@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object endOfFileStreamMod extends js.Object {
   @js.native
-  class EndOfStreamError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+  class EndOfStreamError () extends Error
   
   val defaultMessages: /* "End-Of-Stream" */ String = js.native
 }

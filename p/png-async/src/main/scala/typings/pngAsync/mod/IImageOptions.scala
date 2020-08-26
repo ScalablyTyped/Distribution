@@ -4,39 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IImageOptions extends js.Object {
-  var checkCRC: js.UndefOr[Boolean] = js.undefined
-  var deflateChunkSize: js.UndefOr[Double] = js.undefined
-  var deflateLevel: js.UndefOr[Double] = js.undefined
-  var deflateStrategy: js.UndefOr[EDeflateStrategy] = js.undefined
-  var fill: js.UndefOr[Boolean] = js.undefined
-  var filterType: js.UndefOr[EFilterType] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var checkCRC: js.UndefOr[Boolean] = js.native
+  var deflateChunkSize: js.UndefOr[Double] = js.native
+  var deflateLevel: js.UndefOr[Double] = js.native
+  var deflateStrategy: js.UndefOr[EDeflateStrategy] = js.native
+  var fill: js.UndefOr[Boolean] = js.native
+  var filterType: js.UndefOr[EFilterType] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object IImageOptions {
   @scala.inline
-  def apply(
-    checkCRC: js.UndefOr[Boolean] = js.undefined,
-    deflateChunkSize: js.UndefOr[Double] = js.undefined,
-    deflateLevel: js.UndefOr[Double] = js.undefined,
-    deflateStrategy: EDeflateStrategy = null,
-    fill: js.UndefOr[Boolean] = js.undefined,
-    filterType: EFilterType = null,
-    height: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): IImageOptions = {
+  def apply(): IImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkCRC)) __obj.updateDynamic("checkCRC")(checkCRC.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflateChunkSize)) __obj.updateDynamic("deflateChunkSize")(deflateChunkSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deflateLevel)) __obj.updateDynamic("deflateLevel")(deflateLevel.get.asInstanceOf[js.Any])
-    if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill.get.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IImageOptions]
   }
+  @scala.inline
+  implicit class IImageOptionsOps[Self <: IImageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckCRC(value: Boolean): Self = this.set("checkCRC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckCRC: Self = this.set("checkCRC", js.undefined)
+    @scala.inline
+    def setDeflateChunkSize(value: Double): Self = this.set("deflateChunkSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflateChunkSize: Self = this.set("deflateChunkSize", js.undefined)
+    @scala.inline
+    def setDeflateLevel(value: Double): Self = this.set("deflateLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflateLevel: Self = this.set("deflateLevel", js.undefined)
+    @scala.inline
+    def setDeflateStrategy(value: EDeflateStrategy): Self = this.set("deflateStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeflateStrategy: Self = this.set("deflateStrategy", js.undefined)
+    @scala.inline
+    def setFill(value: Boolean): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setFilterType(value: EFilterType): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

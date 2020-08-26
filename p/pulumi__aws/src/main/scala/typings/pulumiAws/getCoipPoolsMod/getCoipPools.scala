@@ -1,0 +1,16 @@
+package typings.pulumiAws.getCoipPoolsMod
+
+import typings.pulumiPulumi.invokeMod.InvokeOptions
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/ec2/getCoipPools", "getCoipPools")
+@js.native
+object getCoipPools extends js.Object {
+  def apply(): js.Promise[GetCoipPoolsResult] = js.native
+  def apply(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetCoipPoolsResult] = js.native
+  def apply(args: GetCoipPoolsArgs): js.Promise[GetCoipPoolsResult] = js.native
+  def apply(args: GetCoipPoolsArgs, opts: InvokeOptions): js.Promise[GetCoipPoolsResult] = js.native
+}
+

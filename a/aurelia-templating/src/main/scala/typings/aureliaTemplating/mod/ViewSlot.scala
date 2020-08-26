@@ -57,6 +57,7 @@ class ViewSlot protected () extends js.Object {
     * @param targetIndex The index to insert the view at.
     */
   def move(): js.Any = js.native
+  def move(sourceIndex: js.UndefOr[scala.Nothing], targetIndex: js.Any): js.Any = js.native
   def move(sourceIndex: js.Any): js.Any = js.native
   def move(sourceIndex: js.Any, targetIndex: js.Any): js.Any = js.native
   def projectTo(slots: js.Object): Unit = js.native
@@ -68,6 +69,7 @@ class ViewSlot protected () extends js.Object {
     * @return May return a promise if the view removal triggered an animation.
     */
   def remove(view: View_): View_ | js.Promise[View_] = js.native
+  def remove(view: View_, returnToCache: js.UndefOr[scala.Nothing], skipAnimation: Boolean): View_ | js.Promise[View_] = js.native
   def remove(view: View_, returnToCache: Boolean): View_ | js.Promise[View_] = js.native
   def remove(view: View_, returnToCache: Boolean, skipAnimation: Boolean): View_ | js.Promise[View_] = js.native
   /**
@@ -77,6 +79,7 @@ class ViewSlot protected () extends js.Object {
     * @return May return a promise if the view removals triggered an animation.
     */
   def removeAll(): Unit | js.Promise[_] = js.native
+  def removeAll(returnToCache: js.UndefOr[scala.Nothing], skipAnimation: Boolean): Unit | js.Promise[_] = js.native
   def removeAll(returnToCache: Boolean): Unit | js.Promise[_] = js.native
   def removeAll(returnToCache: Boolean, skipAnimation: Boolean): Unit | js.Promise[_] = js.native
   /**
@@ -87,6 +90,7 @@ class ViewSlot protected () extends js.Object {
     * @return May return a promise if the view removal triggered an animation.
     */
   def removeAt(index: Double): View_ | js.Promise[View_] = js.native
+  def removeAt(index: Double, returnToCache: js.UndefOr[scala.Nothing], skipAnimation: Boolean): View_ | js.Promise[View_] = js.native
   def removeAt(index: Double, returnToCache: Boolean): View_ | js.Promise[View_] = js.native
   def removeAt(index: Double, returnToCache: Boolean, skipAnimation: Boolean): View_ | js.Promise[View_] = js.native
   /**
@@ -97,6 +101,7 @@ class ViewSlot protected () extends js.Object {
     * @return May return a promise if the view removal triggered an animation.
     */
   def removeMany(viewsToRemove: js.Array[View_]): Unit | js.Promise[Unit] = js.native
+  def removeMany(viewsToRemove: js.Array[View_], returnToCache: js.UndefOr[scala.Nothing], skipAnimation: Boolean): Unit | js.Promise[Unit] = js.native
   def removeMany(viewsToRemove: js.Array[View_], returnToCache: Boolean): Unit | js.Promise[Unit] = js.native
   def removeMany(viewsToRemove: js.Array[View_], returnToCache: Boolean, skipAnimation: Boolean): Unit | js.Promise[Unit] = js.native
   /**

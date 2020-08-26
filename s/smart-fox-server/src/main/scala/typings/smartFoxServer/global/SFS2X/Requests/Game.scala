@@ -3,7 +3,6 @@ package typings.smartFoxServer.global.SFS2X.Requests
 import typings.smartFoxServer.SFS2X.Entities.Match.MatchExpression
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
-import typings.smartFoxServer.SFS2X.Entities.Variables.ReservedRoomVariables
 import typings.smartFoxServer.SFS2X.IINVITATION
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -79,70 +78,6 @@ object Game extends js.Object {
       * @param {string} name The name of the Game Room to be created.
       */
     def this(name: String) = this()
-    /** @type {RoomEvents} Sets the flags indicating which events related to the Room are dispatched by the SmartFox client. */
-    /* CompleteClass */
-    override var events: typings.smartFoxServer.SFS2X.Requests.RoomEvents = js.native
-    /** @type {RoomExtension} Sets the Extension that must be attached to the Room on the server-side, and its settings. */
-    /* CompleteClass */
-    override var extension: typings.smartFoxServer.SFS2X.Requests.RoomExtension = js.native
-    /** @type {string} Sets the id of the Group to which the Room should belong. */
-    /* CompleteClass */
-    override var groupId: String = js.native
-    /** @type {number} In private games, defines the number of seconds that users have to reply to the invitation to join a game. The suggested range is 10 to 40 seconds. */
-    /* CompleteClass */
-    override var invitationExpiryTime: Double = js.native
-    /** @type {Object} In private games, defines a list of SFSUser objects representing players to be invited to join the game. */
-    /* CompleteClass */
-    override var invitiationParams: js.Object = js.native
-    /** @type {Entities.SFSUser[]} In private games, defines a list of SFSUser objects representing players to be invited to join the game.. */
-    /* CompleteClass */
-    override var invitiedPlayers: js.Array[SFSUser] = js.native
-    /** @type {boolean} Sets whether the Room is a Game Room or not. */
-    /* CompleteClass */
-    override var isGame: Boolean = js.native
-    /** @type {boolean} Indicates whether the game is public or private. */
-    /* CompleteClass */
-    override var isPublic: Boolean = js.native
-    /** @type {boolean} In private games, indicates whether the players must leave the previous Room when joining the game or not. */
-    /* CompleteClass */
-    override var leaveLastJoinedRoom: Boolean = js.native
-    /** @type {number} Sets the maximum number of spectators allowed in the Room (only for Game Rooms). */
-    /* CompleteClass */
-    override var maxSpectators: Double = js.native
-    /** @type {number} Sets the maximum number of users allowed in the Room. */
-    /* CompleteClass */
-    override var maxUsers: Double = js.native
-    /** @type {number} Sets the maximum number of Room Variables allowed for the Room. */
-    /* CompleteClass */
-    override var maxVariables: Double = js.native
-    /** @type {number} Defines the minimum number of players required to start the game. If the notifyGameStarted property is set to true, when this number is reached, the game start is notified. */
-    /* CompleteClass */
-    override var minPlayersToStartGame: Double = js.native
-    /** @type {string} Defines the name of the Room. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /** @type {boolean} Indicates if a game state change must be notified when the minimum number of players is reached. */
-    /* CompleteClass */
-    override var notifyGameStarted: Boolean = js.native
-    /** @type {string} Sets the password of the Room. */
-    /* CompleteClass */
-    override var password: String = js.native
-    /** @type {RoomPermissions} Sets the flags indicating which operations are permitted on the Room. */
-    /* CompleteClass */
-    override var permissions: typings.smartFoxServer.SFS2X.Requests.RoomPermissions = js.native
-    /** @type {Entities.Match.MatchExpression} Defines the game matching expression to be used to filters players. */
-    /* CompleteClass */
-    override var playerMatchExpression: MatchExpression = js.native
-    /** @type {string[]} In private games, defines a list of Groups names where to search players to invite. */
-    /* CompleteClass */
-    override var serachableRooms: js.Array[String] = js.native
-     // Might need any
-    /** @type {Entities.Match.MatchExpression} Defines the game matching expression to be used to filters spectators. */
-    /* CompleteClass */
-    override var spectatorMatchExpression: MatchExpression = js.native
-    /** @type {Entities.Variables.ReservedRoomVariables[]} Sets a list of SFSRooomVariable objects to be attached to the Room. */
-    /* CompleteClass */
-    override var variables: js.Array[ReservedRoomVariables] = js.native
   }
   
 }

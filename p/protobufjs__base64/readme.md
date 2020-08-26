@@ -12,7 +12,7 @@ A minimal base64 implementation for number arrays.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 31 |
-| # downloads        | 54074848 |
+| # downloads        | 57493270 |
 | # stars            | 0 |
 
 ## Links

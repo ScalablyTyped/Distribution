@@ -66,26 +66,56 @@ trait SchemaAddSubnetworkRequest extends js.Object {
 
 object SchemaAddSubnetworkRequest {
   @scala.inline
-  def apply(
-    consumer: String = null,
-    consumerNetwork: String = null,
-    description: String = null,
-    ipPrefixLength: js.UndefOr[Double] = js.undefined,
-    region: String = null,
-    requestedAddress: String = null,
-    subnetwork: String = null,
-    subnetworkUsers: js.Array[String] = null
-  ): SchemaAddSubnetworkRequest = {
+  def apply(): SchemaAddSubnetworkRequest = {
     val __obj = js.Dynamic.literal()
-    if (consumer != null) __obj.updateDynamic("consumer")(consumer.asInstanceOf[js.Any])
-    if (consumerNetwork != null) __obj.updateDynamic("consumerNetwork")(consumerNetwork.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(ipPrefixLength)) __obj.updateDynamic("ipPrefixLength")(ipPrefixLength.get.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (requestedAddress != null) __obj.updateDynamic("requestedAddress")(requestedAddress.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (subnetworkUsers != null) __obj.updateDynamic("subnetworkUsers")(subnetworkUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAddSubnetworkRequest]
   }
+  @scala.inline
+  implicit class SchemaAddSubnetworkRequestOps[Self <: SchemaAddSubnetworkRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumer(value: String): Self = this.set("consumer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumer: Self = this.set("consumer", js.undefined)
+    @scala.inline
+    def setConsumerNetwork(value: String): Self = this.set("consumerNetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerNetwork: Self = this.set("consumerNetwork", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIpPrefixLength(value: Double): Self = this.set("ipPrefixLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpPrefixLength: Self = this.set("ipPrefixLength", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRequestedAddress(value: String): Self = this.set("requestedAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedAddress: Self = this.set("requestedAddress", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setSubnetworkUsersVarargs(value: String*): Self = this.set("subnetworkUsers", js.Array(value :_*))
+    @scala.inline
+    def setSubnetworkUsers(value: js.Array[String]): Self = this.set("subnetworkUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetworkUsers: Self = this.set("subnetworkUsers", js.undefined)
+  }
+  
 }
 

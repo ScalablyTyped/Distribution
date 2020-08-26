@@ -43,11 +43,9 @@ object nanoflowsMod extends js.Object {
       ) = this()
       @JSName("model")
       var model_FNanoflowParameterValue: IModel = js.native
-      def nanoflow(): js.Any = js.native
-      def nanoflow(newValue: INanoflow): js.Any = js.native
+      def nanoflow: INanoflow | Null = js.native
       def nanoflowQualifiedName: String | Null = js.native
-      @JSName("nanoflow")
-      def nanoflow_Union: INanoflow | Null = js.native
+      def nanoflow_=(newValue: INanoflow | Null): Unit = js.native
     }
     
     /* static members */

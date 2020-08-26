@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Field_ () extends Message {
   def addOptions(): Option = js.native
+  def addOptions(value: js.UndefOr[scala.Nothing], index: Double): Option = js.native
   def addOptions(value: Option): Option = js.native
   def addOptions(value: Option, index: Double): Option = js.native
   def clearOptionsList(): Unit = js.native

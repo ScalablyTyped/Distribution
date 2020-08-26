@@ -16,7 +16,34 @@ trait Push extends js.Object {
     * @param callback Optional callback accepting (error, results) parameters.
     */
   def register(platform: String, pushChannel: String): Unit = js.native
+  def register(
+    platform: String,
+    pushChannel: String,
+    templates: js.UndefOr[scala.Nothing],
+    secondaryTiles: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+  ): Unit = js.native
+  def register(
+    platform: String,
+    pushChannel: String,
+    templates: js.UndefOr[scala.Nothing],
+    secondaryTiles: js.Any
+  ): Unit = js.native
+  def register(
+    platform: String,
+    pushChannel: String,
+    templates: js.UndefOr[scala.Nothing],
+    secondaryTiles: js.Any,
+    callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+  ): Unit = js.native
   def register(platform: String, pushChannel: String, templates: js.Any): Unit = js.native
+  def register(
+    platform: String,
+    pushChannel: String,
+    templates: js.Any,
+    secondaryTiles: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ js.Any, /* results */ js.Any, Unit]
+  ): Unit = js.native
   def register(platform: String, pushChannel: String, templates: js.Any, secondaryTiles: js.Any): Unit = js.native
   def register(
     platform: String,

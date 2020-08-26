@@ -22,11 +22,36 @@ trait AwsVpcConfiguration extends js.Object {
 
 object AwsVpcConfiguration {
   @scala.inline
-  def apply(Subnets: StringList, AssignPublicIp: AssignPublicIp = null, SecurityGroups: StringList = null): AwsVpcConfiguration = {
+  def apply(Subnets: StringList): AwsVpcConfiguration = {
     val __obj = js.Dynamic.literal(Subnets = Subnets.asInstanceOf[js.Any])
-    if (AssignPublicIp != null) __obj.updateDynamic("AssignPublicIp")(AssignPublicIp.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsVpcConfiguration]
   }
+  @scala.inline
+  implicit class AwsVpcConfigurationOps[Self <: AwsVpcConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetsVarargs(value: String*): Self = this.set("Subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: StringList): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssignPublicIp(value: AssignPublicIp): Self = this.set("AssignPublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignPublicIp: Self = this.set("AssignPublicIp", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: String*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: StringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+  }
+  
 }
 

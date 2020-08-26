@@ -22,16 +22,36 @@ trait ListImageRecipesResponse extends js.Object {
 
 object ListImageRecipesResponse {
   @scala.inline
-  def apply(
-    imageRecipeSummaryList: ImageRecipeSummaryList = null,
-    nextToken: NonEmptyString = null,
-    requestId: NonEmptyString = null
-  ): ListImageRecipesResponse = {
+  def apply(): ListImageRecipesResponse = {
     val __obj = js.Dynamic.literal()
-    if (imageRecipeSummaryList != null) __obj.updateDynamic("imageRecipeSummaryList")(imageRecipeSummaryList.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListImageRecipesResponse]
   }
+  @scala.inline
+  implicit class ListImageRecipesResponseOps[Self <: ListImageRecipesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageRecipeSummaryListVarargs(value: ImageRecipeSummary*): Self = this.set("imageRecipeSummaryList", js.Array(value :_*))
+    @scala.inline
+    def setImageRecipeSummaryList(value: ImageRecipeSummaryList): Self = this.set("imageRecipeSummaryList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageRecipeSummaryList: Self = this.set("imageRecipeSummaryList", js.undefined)
+    @scala.inline
+    def setNextToken(value: NonEmptyString): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

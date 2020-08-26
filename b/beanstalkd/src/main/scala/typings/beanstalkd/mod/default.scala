@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends BeanstalkdClient {
   def this(host: String) = this()
+  def this(host: js.UndefOr[scala.Nothing], port: Double) = this()
   def this(host: String, port: Double) = this()
+  def this(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], options: js.Object) = this()
+  def this(host: js.UndefOr[scala.Nothing], port: Double, options: js.Object) = this()
+  def this(host: String, port: js.UndefOr[scala.Nothing], options: js.Object) = this()
   def this(host: String, port: Double, options: js.Object) = this()
 }
 

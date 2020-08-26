@@ -30,20 +30,42 @@ trait GatewayResponse extends js.Object {
 
 object GatewayResponse {
   @scala.inline
-  def apply(
-    defaultResponse: js.UndefOr[Boolean] = js.undefined,
-    responseParameters: MapOfStringToString = null,
-    responseTemplates: MapOfStringToString = null,
-    responseType: GatewayResponseType = null,
-    statusCode: StatusCode = null
-  ): GatewayResponse = {
+  def apply(): GatewayResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultResponse)) __obj.updateDynamic("defaultResponse")(defaultResponse.get.asInstanceOf[js.Any])
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayResponse]
   }
+  @scala.inline
+  implicit class GatewayResponseOps[Self <: GatewayResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultResponse(value: Boolean): Self = this.set("defaultResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultResponse: Self = this.set("defaultResponse", js.undefined)
+    @scala.inline
+    def setResponseParameters(value: MapOfStringToString): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    @scala.inline
+    def setResponseTemplates(value: MapOfStringToString): Self = this.set("responseTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTemplates: Self = this.set("responseTemplates", js.undefined)
+    @scala.inline
+    def setResponseType(value: GatewayResponseType): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

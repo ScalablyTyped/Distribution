@@ -4,24 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PagerInitialRows extends js.Object {
   /**
     * The filtered number of rows.
     */
-  var filtered: js.UndefOr[Double] = js.undefined
+  var filtered: js.UndefOr[Double] = js.native
   /**
     * The total number of rows.
     */
-  var total: js.UndefOr[Double] = js.undefined
+  var total: js.UndefOr[Double] = js.native
 }
 
 object PagerInitialRows {
   @scala.inline
-  def apply(filtered: js.UndefOr[Double] = js.undefined, total: js.UndefOr[Double] = js.undefined): PagerInitialRows = {
+  def apply(): PagerInitialRows = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagerInitialRows]
   }
+  @scala.inline
+  implicit class PagerInitialRowsOps[Self <: PagerInitialRows] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltered(value: Double): Self = this.set("filtered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiltered: Self = this.set("filtered", js.undefined)
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

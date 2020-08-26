@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "angular-tooltips"
-version := "1.2-dt-20200515Z-8a70c5"
-scalaVersion := "2.13.2"
+version := "1.2-dt-20200515Z-49ffb7"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

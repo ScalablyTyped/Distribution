@@ -36,18 +36,47 @@ object CreateHyperParameterTuningJobRequest {
   @scala.inline
   def apply(
     HyperParameterTuningJobConfig: HyperParameterTuningJobConfig,
-    HyperParameterTuningJobName: HyperParameterTuningJobName,
-    Tags: TagList = null,
-    TrainingJobDefinition: HyperParameterTrainingJobDefinition = null,
-    TrainingJobDefinitions: HyperParameterTrainingJobDefinitions = null,
-    WarmStartConfig: HyperParameterTuningJobWarmStartConfig = null
+    HyperParameterTuningJobName: HyperParameterTuningJobName
   ): CreateHyperParameterTuningJobRequest = {
     val __obj = js.Dynamic.literal(HyperParameterTuningJobConfig = HyperParameterTuningJobConfig.asInstanceOf[js.Any], HyperParameterTuningJobName = HyperParameterTuningJobName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TrainingJobDefinition != null) __obj.updateDynamic("TrainingJobDefinition")(TrainingJobDefinition.asInstanceOf[js.Any])
-    if (TrainingJobDefinitions != null) __obj.updateDynamic("TrainingJobDefinitions")(TrainingJobDefinitions.asInstanceOf[js.Any])
-    if (WarmStartConfig != null) __obj.updateDynamic("WarmStartConfig")(WarmStartConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHyperParameterTuningJobRequest]
   }
+  @scala.inline
+  implicit class CreateHyperParameterTuningJobRequestOps[Self <: CreateHyperParameterTuningJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHyperParameterTuningJobConfig(value: HyperParameterTuningJobConfig): Self = this.set("HyperParameterTuningJobConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = this.set("HyperParameterTuningJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTrainingJobDefinition(value: HyperParameterTrainingJobDefinition): Self = this.set("TrainingJobDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobDefinition: Self = this.set("TrainingJobDefinition", js.undefined)
+    @scala.inline
+    def setTrainingJobDefinitionsVarargs(value: HyperParameterTrainingJobDefinition*): Self = this.set("TrainingJobDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setTrainingJobDefinitions(value: HyperParameterTrainingJobDefinitions): Self = this.set("TrainingJobDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingJobDefinitions: Self = this.set("TrainingJobDefinitions", js.undefined)
+    @scala.inline
+    def setWarmStartConfig(value: HyperParameterTuningJobWarmStartConfig): Self = this.set("WarmStartConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmStartConfig: Self = this.set("WarmStartConfig", js.undefined)
+  }
+  
 }
 

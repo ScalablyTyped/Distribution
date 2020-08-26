@@ -12,7 +12,7 @@ The lodash method `_.eq` exported as a module.
 | Keywords           | lodash, lodash-modularized, stdlib, util, eq |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 48640 |
+| # downloads        | 49340 |
 | # stars            | 0 |
 
 ## Links

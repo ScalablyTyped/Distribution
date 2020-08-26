@@ -78,20 +78,46 @@ trait SchemaDocumentation extends js.Object {
 
 object SchemaDocumentation {
   @scala.inline
-  def apply(
-    documentationRootUrl: String = null,
-    overview: String = null,
-    pages: js.Array[SchemaPage] = null,
-    rules: js.Array[SchemaDocumentationRule] = null,
-    summary: String = null
-  ): SchemaDocumentation = {
+  def apply(): SchemaDocumentation = {
     val __obj = js.Dynamic.literal()
-    if (documentationRootUrl != null) __obj.updateDynamic("documentationRootUrl")(documentationRootUrl.asInstanceOf[js.Any])
-    if (overview != null) __obj.updateDynamic("overview")(overview.asInstanceOf[js.Any])
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDocumentation]
   }
+  @scala.inline
+  implicit class SchemaDocumentationOps[Self <: SchemaDocumentation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentationRootUrl(value: String): Self = this.set("documentationRootUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentationRootUrl: Self = this.set("documentationRootUrl", js.undefined)
+    @scala.inline
+    def setOverview(value: String): Self = this.set("overview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverview: Self = this.set("overview", js.undefined)
+    @scala.inline
+    def setPagesVarargs(value: SchemaPage*): Self = this.set("pages", js.Array(value :_*))
+    @scala.inline
+    def setPages(value: js.Array[SchemaPage]): Self = this.set("pages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePages: Self = this.set("pages", js.undefined)
+    @scala.inline
+    def setRulesVarargs(value: SchemaDocumentationRule*): Self = this.set("rules", js.Array(value :_*))
+    @scala.inline
+    def setRules(value: js.Array[SchemaDocumentationRule]): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRules: Self = this.set("rules", js.undefined)
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

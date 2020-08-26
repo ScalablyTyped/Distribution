@@ -19,35 +19,5 @@ class ASPxClientRect protected ()
     * @param height An integer value specifying the rectangle height.
     */
   def this(x: Double, y: Double, width: Double, height: Double) = this()
-  /**
-    * Gets the Y-coordinate of the rectangle's bottom edge.
-    */
-  /* CompleteClass */
-  override def GetBottom(): Double = js.native
-  /**
-    * Gets the rectangle's height.
-    */
-  /* CompleteClass */
-  override def GetHeight(): Double = js.native
-  /**
-    * Gets the X-coordinate of the rectangle's left edge.
-    */
-  /* CompleteClass */
-  override def GetLeft(): Double = js.native
-  /**
-    * Gets the X-coordinate of the rectangle's right edge.
-    */
-  /* CompleteClass */
-  override def GetRight(): Double = js.native
-  /**
-    * Gets the Y-coordinate of the rectangle's top edge.
-    */
-  /* CompleteClass */
-  override def GetTop(): Double = js.native
-  /**
-    * Gets the rectangle's width.
-    */
-  /* CompleteClass */
-  override def GetWidth(): Double = js.native
 }
 

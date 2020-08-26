@@ -12,7 +12,7 @@ Allows Microphone access in node with arecord (Linux) and sox (Windows/OSX).
 | Keywords           | microphone, alsa, mic, record, audio, sox, capture, node-microphone, arecord, input |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 1598 |
+| # downloads        | 1639 |
 | # stars            | 0 |
 
 ## Links

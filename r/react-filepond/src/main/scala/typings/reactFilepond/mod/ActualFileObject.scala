@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 // see: https://developer.mozilla.org/en-US/docs/Web/API/File
 // see: https://github.com/Microsoft/dtslint/issues/173
 // see: https://stackoverflow.com/q/53876793/2517147
-/* Inlined std.Blob & { readonly lastModified  :number,  readonly name  :string} */
+/* Inlined std.Blob & { readonly lastModified :number,  readonly name :string} */
 @js.native
 trait ActualFileObject extends js.Object {
   val lastModified: Double = js.native
@@ -21,7 +21,11 @@ trait ActualFileObject extends js.Object {
   val `type`: String = js.native
   def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
   def slice(): Blob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): Blob = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double, contentType: String): Blob = js.native
   def slice(start: Double): Blob = js.native
+  def slice(start: Double, end: js.UndefOr[scala.Nothing], contentType: String): Blob = js.native
   def slice(start: Double, end: Double): Blob = js.native
   def slice(start: Double, end: Double, contentType: String): Blob = js.native
   def stream(): ReadableStream[_] = js.native

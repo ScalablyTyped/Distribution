@@ -5,52 +5,77 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OptionsTopBarSubtitle extends js.Object {
   /**
     * Set subtitle alignment
     */
-  var alignment: js.UndefOr[center] = js.undefined
+  var alignment: js.UndefOr[center] = js.native
   /**
     * Set subtitle color
     */
-  var color: js.UndefOr[Color] = js.undefined
+  var color: js.UndefOr[Color] = js.native
   /**
     * Set subtitle font family
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.undefined
+  var fontFamily: js.UndefOr[FontFamily] = js.native
   /**
     * Set subtitle font size
     */
-  var fontSize: js.UndefOr[Double] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.native
   /**
     * Set the font weight, ignore fontFamily and use the iOS system fonts instead
     * #### (iOS specific)
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.undefined
+  var fontWeight: js.UndefOr[FontWeight] = js.native
   /**
     * Set subtitle text
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
 }
 
 object OptionsTopBarSubtitle {
   @scala.inline
-  def apply(
-    alignment: center = null,
-    color: Color = null,
-    fontFamily: FontFamily = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontWeight: FontWeight = null,
-    text: String = null
-  ): OptionsTopBarSubtitle = {
+  def apply(): OptionsTopBarSubtitle = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsTopBarSubtitle]
   }
+  @scala.inline
+  implicit class OptionsTopBarSubtitleOps[Self <: OptionsTopBarSubtitle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: center): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFontFamily(value: FontFamily): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontWeight(value: FontWeight): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

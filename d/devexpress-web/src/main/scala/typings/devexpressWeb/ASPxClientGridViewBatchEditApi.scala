@@ -105,6 +105,7 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
     * @param columnFieldNameOrId A string value that identifies the column by the name of the data source field to which the column is bound, or by the column's name.
     */
   def HasChanges(): Boolean = js.native
+  def HasChanges(visibleIndex: js.UndefOr[scala.Nothing], columnFieldNameOrId: String): Boolean = js.native
   def HasChanges(visibleIndex: Double): Boolean = js.native
   def HasChanges(visibleIndex: Double, columnFieldNameOrId: String): Boolean = js.native
   /**
@@ -179,6 +180,13 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
+  def SetCellValue(
+    visibleIndex: Double,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: js.UndefOr[scala.Nothing],
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
   def SetCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValue(
     visibleIndex: Double,
@@ -196,6 +204,13 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValueByKey(key: js.Any, columnFieldNameOrId: String, value: js.Any): Unit = js.native
+  def SetCellValueByKey(
+    key: js.Any,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: js.UndefOr[scala.Nothing],
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
   def SetCellValueByKey(key: js.Any, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValueByKey(
     key: js.Any,
@@ -236,6 +251,7 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
     * @param validateOnCurrentPageOnly true, to validate rows that are located only on the current page; otherwise, false.
     */
   def ValidateRows(): Boolean = js.native
+  def ValidateRows(validateOnlyModified: js.UndefOr[scala.Nothing], validateOnCurrentPageOnly: Boolean): Boolean = js.native
   def ValidateRows(validateOnlyModified: Boolean): Boolean = js.native
   def ValidateRows(validateOnlyModified: Boolean, validateOnCurrentPageOnly: Boolean): Boolean = js.native
 }

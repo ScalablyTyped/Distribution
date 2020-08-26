@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 trait IntercomStatic extends js.Object {
   var booted: Boolean = js.native
   def apply(command: IntercomCommand): Unit = js.native
+  def apply(command: IntercomCommand, param1: js.UndefOr[scala.Nothing], param2: js.Any): Unit = js.native
   def apply(command: IntercomCommand, param1: js.Any): Unit = js.native
   def apply(command: IntercomCommand, param1: js.Any, param2: js.Any): Unit = js.native
   def apply(command: boot, param: IntercomSettings): Unit = js.native
@@ -39,6 +40,7 @@ trait IntercomStatic extends js.Object {
   def apply(command: showNewMessage, param: String): Unit = js.native
   def apply(command: shutdown): Unit = js.native
   def apply(command: trackEvent): Unit = js.native
+  def apply(command: trackEvent, tag: js.UndefOr[scala.Nothing], metadata: js.Any): Unit = js.native
   def apply(command: trackEvent, tag: String): Unit = js.native
   def apply(command: trackEvent, tag: String, metadata: js.Any): Unit = js.native
   def apply(command: update): Unit = js.native

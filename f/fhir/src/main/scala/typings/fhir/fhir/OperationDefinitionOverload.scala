@@ -7,51 +7,64 @@ import scala.scalajs.js.annotation._
 /**
   * Define overloaded variants for when  generating code
   */
+@js.native
 trait OperationDefinitionOverload extends BackboneElement {
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.undefined
+  var _comment: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'parameterName'.
     */
-  var _parameterName: js.UndefOr[js.Array[Element]] = js.undefined
+  var _parameterName: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Comments to go on overload
     */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /**
     * Name of parameter to include in overload
     */
-  var parameterName: js.UndefOr[js.Array[String]] = js.undefined
+  var parameterName: js.UndefOr[js.Array[String]] = js.native
 }
 
 object OperationDefinitionOverload {
   @scala.inline
-  def apply(
-    _comment: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _parameterName: js.Array[Element] = null,
-    comment: String = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    parameterName: js.Array[String] = null
-  ): OperationDefinitionOverload = {
+  def apply(): OperationDefinitionOverload = {
     val __obj = js.Dynamic.literal()
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_parameterName != null) __obj.updateDynamic("_parameterName")(_parameterName.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationDefinitionOverload]
   }
+  @scala.inline
+  implicit class OperationDefinitionOverloadOps[Self <: OperationDefinitionOverload] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_parameterNameVarargs(value: Element*): Self = this.set("_parameterName", js.Array(value :_*))
+    @scala.inline
+    def set_parameterName(value: js.Array[Element]): Self = this.set("_parameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_parameterName: Self = this.set("_parameterName", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setParameterNameVarargs(value: String*): Self = this.set("parameterName", js.Array(value :_*))
+    @scala.inline
+    def setParameterName(value: js.Array[String]): Self = this.set("parameterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterName: Self = this.set("parameterName", js.undefined)
+  }
+  
 }
 

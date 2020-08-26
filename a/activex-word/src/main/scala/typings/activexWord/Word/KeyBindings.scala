@@ -14,6 +14,13 @@ trait KeyBindings extends js.Object {
   @JSName("Word.KeyBindings_typekey")
   var WordDotKeyBindings_typekey: KeyBindings = js.native
   def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double): KeyBinding = js.native
+  def Add(
+    KeyCategory: WdKeyCategory,
+    Command: String,
+    KeyCode: Double,
+    KeyCode2: js.UndefOr[scala.Nothing],
+    CommandParameter: js.Any
+  ): KeyBinding = js.native
   def Add(KeyCategory: WdKeyCategory, Command: String, KeyCode: Double, KeyCode2: js.Any): KeyBinding = js.native
   def Add(
     KeyCategory: WdKeyCategory,

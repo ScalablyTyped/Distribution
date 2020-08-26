@@ -8,12 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PushSubscriptionOptions")
 @js.native
 class PushSubscriptionOptions ()
-  extends typings.std.PushSubscriptionOptions {
-  /* CompleteClass */
-  override val applicationServerKey: typings.std.ArrayBuffer | Null = js.native
-  /* CompleteClass */
-  override val userVisibleOnly: scala.Boolean = js.native
-}
+  extends typings.std.PushSubscriptionOptions
 
 @JSGlobal("PushSubscriptionOptions")
 @js.native

@@ -161,6 +161,8 @@ package object macie2Mod {
     - typings.awsSdk.awsSdkStrings.Resigned
     - typings.awsSdk.awsSdkStrings.EmailVerificationInProgress
     - typings.awsSdk.awsSdkStrings.EmailVerificationFailed
+    - typings.awsSdk.awsSdkStrings.RegionDisabled
+    - typings.awsSdk.awsSdkStrings.AccountSuspended
     - java.lang.String
   */
   type RelationshipStatus = typings.awsSdk.macie2Mod._RelationshipStatus | java.lang.String
@@ -210,10 +212,30 @@ package object macie2Mod {
   type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.macie2Mod.string]
   type TagTarget = typings.awsSdk.awsSdkStrings.S3_OBJECT | java.lang.String
   type Unit = typings.awsSdk.awsSdkStrings.TERABYTES | java.lang.String
-  type UsageStatisticsFilterKey = typings.awsSdk.awsSdkStrings.accountId_ | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.GT
+    - typings.awsSdk.awsSdkStrings.GTE
+    - typings.awsSdk.awsSdkStrings.LT
+    - typings.awsSdk.awsSdkStrings.LTE
+    - typings.awsSdk.awsSdkStrings.EQ
+    - typings.awsSdk.awsSdkStrings.NE
+    - typings.awsSdk.awsSdkStrings.CONTAINS
+    - java.lang.String
+  */
+  type UsageStatisticsFilterComparator = typings.awsSdk.macie2Mod._UsageStatisticsFilterComparator | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.accountId_
+    - typings.awsSdk.awsSdkStrings.serviceLimit
+    - typings.awsSdk.awsSdkStrings.freeTrialStartDate
+    - typings.awsSdk.awsSdkStrings.total_
+    - java.lang.String
+  */
+  type UsageStatisticsFilterKey = typings.awsSdk.macie2Mod._UsageStatisticsFilterKey | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.accountId_
     - typings.awsSdk.awsSdkStrings.total_
+    - typings.awsSdk.awsSdkStrings.serviceLimitValue
+    - typings.awsSdk.awsSdkStrings.freeTrialStartDate
     - java.lang.String
   */
   type UsageStatisticsSortKey = typings.awsSdk.macie2Mod._UsageStatisticsSortKey | java.lang.String

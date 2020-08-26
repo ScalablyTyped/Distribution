@@ -1,10 +1,5 @@
 package typings.antdMobileRn.whiteSpaceIndexNativeMod
 
-import typings.antdMobileRn.antdMobileRnStrings.lg
-import typings.antdMobileRn.antdMobileRnStrings.md
-import typings.antdMobileRn.antdMobileRnStrings.sm
-import typings.antdMobileRn.antdMobileRnStrings.xl
-import typings.antdMobileRn.antdMobileRnStrings.xs
 import typings.antdMobileRn.whiteSpacePropsTypeMod.WhiteSpacePropsType
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
@@ -12,17 +7,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WhiteSpaceProps extends WhiteSpacePropsType {
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
 }
 
 object WhiteSpaceProps {
   @scala.inline
-  def apply(size: xs | sm | md | lg | xl = null, style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined): WhiteSpaceProps = {
+  def apply(): WhiteSpaceProps = {
     val __obj = js.Dynamic.literal()
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhiteSpaceProps]
   }
+  @scala.inline
+  implicit class WhiteSpacePropsOps[Self <: WhiteSpaceProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyle(value: StyleProp[ViewStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+  }
+  
 }
 

@@ -4,89 +4,94 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CertificateCreationOptions extends CSRCreationOptions {
   /**
     * extension config file - with '-extensions v3_req'
     */
-  var config: js.UndefOr[String] = js.undefined
+  var config: js.UndefOr[String] = js.native
   /**
     * CSR for the certificate, if not defined a new one is generated from the provided parameters
     */
-  var csr: js.UndefOr[String] = js.undefined
+  var csr: js.UndefOr[String] = js.native
   /**
     * Certificate expire time in days, defaults to 365
     */
-  var days: js.UndefOr[Double] = js.undefined
+  var days: js.UndefOr[Double] = js.native
   /**
     * extension config file - without '-extensions v3_req'
     */
-  var extFile: js.UndefOr[String] = js.undefined
+  var extFile: js.UndefOr[String] = js.native
   /**
     * If set to true and serviceKey is not defined, use clientKey for signing
     */
-  var selfSigned: js.UndefOr[Boolean] = js.undefined
-  var serial: js.UndefOr[js.Any] = js.undefined
-  var serviceCertificate: js.UndefOr[js.Any] = js.undefined
+  var selfSigned: js.UndefOr[Boolean] = js.native
+  var serial: js.UndefOr[js.Any] = js.native
+  var serviceCertificate: js.UndefOr[js.Any] = js.native
   /**
     * Private key for signing the certificate, if not defined a new one is generated
     */
-  var serviceKey: js.UndefOr[String] = js.undefined
+  var serviceKey: js.UndefOr[String] = js.native
   /**
     * Password of the service key
     */
-  var serviceKeyPassword: js.UndefOr[String] = js.undefined
+  var serviceKeyPassword: js.UndefOr[String] = js.native
 }
 
 object CertificateCreationOptions {
   @scala.inline
-  def apply(
-    altNames: js.Array[String] = null,
-    clientKey: String = null,
-    clientKeyPassword: String = null,
-    commonName: String = null,
-    config: String = null,
-    country: String = null,
-    csr: String = null,
-    csrConfigFile: String = null,
-    days: js.UndefOr[Double] = js.undefined,
-    emailAddress: String = null,
-    extFile: String = null,
-    hash: HashFunction = null,
-    keyBitsize: js.UndefOr[Double] = js.undefined,
-    locality: String = null,
-    organization: String = null,
-    organizationUnit: String = null,
-    selfSigned: js.UndefOr[Boolean] = js.undefined,
-    serial: js.Any = null,
-    serviceCertificate: js.Any = null,
-    serviceKey: String = null,
-    serviceKeyPassword: String = null,
-    state: String = null
-  ): CertificateCreationOptions = {
+  def apply(): CertificateCreationOptions = {
     val __obj = js.Dynamic.literal()
-    if (altNames != null) __obj.updateDynamic("altNames")(altNames.asInstanceOf[js.Any])
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
-    if (clientKeyPassword != null) __obj.updateDynamic("clientKeyPassword")(clientKeyPassword.asInstanceOf[js.Any])
-    if (commonName != null) __obj.updateDynamic("commonName")(commonName.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (csr != null) __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
-    if (csrConfigFile != null) __obj.updateDynamic("csrConfigFile")(csrConfigFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(days)) __obj.updateDynamic("days")(days.get.asInstanceOf[js.Any])
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
-    if (extFile != null) __obj.updateDynamic("extFile")(extFile.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyBitsize)) __obj.updateDynamic("keyBitsize")(keyBitsize.get.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
-    if (organization != null) __obj.updateDynamic("organization")(organization.asInstanceOf[js.Any])
-    if (organizationUnit != null) __obj.updateDynamic("organizationUnit")(organizationUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfSigned)) __obj.updateDynamic("selfSigned")(selfSigned.get.asInstanceOf[js.Any])
-    if (serial != null) __obj.updateDynamic("serial")(serial.asInstanceOf[js.Any])
-    if (serviceCertificate != null) __obj.updateDynamic("serviceCertificate")(serviceCertificate.asInstanceOf[js.Any])
-    if (serviceKey != null) __obj.updateDynamic("serviceKey")(serviceKey.asInstanceOf[js.Any])
-    if (serviceKeyPassword != null) __obj.updateDynamic("serviceKeyPassword")(serviceKeyPassword.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateCreationOptions]
   }
+  @scala.inline
+  implicit class CertificateCreationOptionsOps[Self <: CertificateCreationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(value: String): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setCsr(value: String): Self = this.set("csr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsr: Self = this.set("csr", js.undefined)
+    @scala.inline
+    def setDays(value: Double): Self = this.set("days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDays: Self = this.set("days", js.undefined)
+    @scala.inline
+    def setExtFile(value: String): Self = this.set("extFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtFile: Self = this.set("extFile", js.undefined)
+    @scala.inline
+    def setSelfSigned(value: Boolean): Self = this.set("selfSigned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfSigned: Self = this.set("selfSigned", js.undefined)
+    @scala.inline
+    def setSerial(value: js.Any): Self = this.set("serial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerial: Self = this.set("serial", js.undefined)
+    @scala.inline
+    def setServiceCertificate(value: js.Any): Self = this.set("serviceCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCertificate: Self = this.set("serviceCertificate", js.undefined)
+    @scala.inline
+    def setServiceKey(value: String): Self = this.set("serviceKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceKey: Self = this.set("serviceKey", js.undefined)
+    @scala.inline
+    def setServiceKeyPassword(value: String): Self = this.set("serviceKeyPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceKeyPassword: Self = this.set("serviceKeyPassword", js.undefined)
+  }
+  
 }
 

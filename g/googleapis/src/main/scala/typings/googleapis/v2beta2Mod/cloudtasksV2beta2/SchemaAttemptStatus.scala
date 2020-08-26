@@ -34,18 +34,38 @@ trait SchemaAttemptStatus extends js.Object {
 
 object SchemaAttemptStatus {
   @scala.inline
-  def apply(
-    dispatchTime: String = null,
-    responseStatus: SchemaStatus = null,
-    responseTime: String = null,
-    scheduleTime: String = null
-  ): SchemaAttemptStatus = {
+  def apply(): SchemaAttemptStatus = {
     val __obj = js.Dynamic.literal()
-    if (dispatchTime != null) __obj.updateDynamic("dispatchTime")(dispatchTime.asInstanceOf[js.Any])
-    if (responseStatus != null) __obj.updateDynamic("responseStatus")(responseStatus.asInstanceOf[js.Any])
-    if (responseTime != null) __obj.updateDynamic("responseTime")(responseTime.asInstanceOf[js.Any])
-    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttemptStatus]
   }
+  @scala.inline
+  implicit class SchemaAttemptStatusOps[Self <: SchemaAttemptStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDispatchTime(value: String): Self = this.set("dispatchTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDispatchTime: Self = this.set("dispatchTime", js.undefined)
+    @scala.inline
+    def setResponseStatus(value: SchemaStatus): Self = this.set("responseStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseStatus: Self = this.set("responseStatus", js.undefined)
+    @scala.inline
+    def setResponseTime(value: String): Self = this.set("responseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTime: Self = this.set("responseTime", js.undefined)
+    @scala.inline
+    def setScheduleTime(value: String): Self = this.set("scheduleTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTime: Self = this.set("scheduleTime", js.undefined)
+  }
+  
 }
 

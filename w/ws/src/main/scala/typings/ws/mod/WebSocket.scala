@@ -72,6 +72,7 @@ trait WebSocket extends EventEmitter {
   @JSName("addListener")
   def addListener_upgrade(event: upgrade, listener: js.Function1[/* request */ IncomingMessage, Unit]): this.type = js.native
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], data: String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, data: String): Unit = js.native
   def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
@@ -112,11 +113,35 @@ trait WebSocket extends EventEmitter {
   def onmessage(event: MessageEvent): Unit = js.native
   def onopen(event: OpenEvent): Unit = js.native
   def ping(): Unit = js.native
+  def ping(
+    data: js.UndefOr[scala.Nothing],
+    mask: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ typings.std.Error, Unit]
+  ): Unit = js.native
+  def ping(data: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
+  def ping(
+    data: js.UndefOr[scala.Nothing],
+    mask: Boolean,
+    cb: js.Function1[/* err */ typings.std.Error, Unit]
+  ): Unit = js.native
   def ping(data: js.Any): Unit = js.native
+  def ping(data: js.Any, mask: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ typings.std.Error, Unit]): Unit = js.native
   def ping(data: js.Any, mask: Boolean): Unit = js.native
   def ping(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ typings.std.Error, Unit]): Unit = js.native
   def pong(): Unit = js.native
+  def pong(
+    data: js.UndefOr[scala.Nothing],
+    mask: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* err */ typings.std.Error, Unit]
+  ): Unit = js.native
+  def pong(data: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
+  def pong(
+    data: js.UndefOr[scala.Nothing],
+    mask: Boolean,
+    cb: js.Function1[/* err */ typings.std.Error, Unit]
+  ): Unit = js.native
   def pong(data: js.Any): Unit = js.native
+  def pong(data: js.Any, mask: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ typings.std.Error, Unit]): Unit = js.native
   def pong(data: js.Any, mask: Boolean): Unit = js.native
   def pong(data: js.Any, mask: Boolean, cb: js.Function1[/* err */ typings.std.Error, Unit]): Unit = js.native
   def removeEventListener(method: String): Unit = js.native

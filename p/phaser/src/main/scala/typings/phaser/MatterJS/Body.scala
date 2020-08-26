@@ -13,5 +13,6 @@ import scala.scalajs.js.annotation._
   * 
   * @class Body
   */
+@js.native
 trait Body extends js.Object
 

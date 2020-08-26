@@ -50,30 +50,64 @@ trait SingleInstanceHealth extends js.Object {
 
 object SingleInstanceHealth {
   @scala.inline
-  def apply(
-    ApplicationMetrics: ApplicationMetrics = null,
-    AvailabilityZone: String = null,
-    Causes: Causes = null,
-    Color: String = null,
-    Deployment: Deployment = null,
-    HealthStatus: String = null,
-    InstanceId: InstanceId = null,
-    InstanceType: String = null,
-    LaunchedAt: LaunchedAt = null,
-    System: SystemStatus = null
-  ): SingleInstanceHealth = {
+  def apply(): SingleInstanceHealth = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationMetrics != null) __obj.updateDynamic("ApplicationMetrics")(ApplicationMetrics.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (Causes != null) __obj.updateDynamic("Causes")(Causes.asInstanceOf[js.Any])
-    if (Color != null) __obj.updateDynamic("Color")(Color.asInstanceOf[js.Any])
-    if (Deployment != null) __obj.updateDynamic("Deployment")(Deployment.asInstanceOf[js.Any])
-    if (HealthStatus != null) __obj.updateDynamic("HealthStatus")(HealthStatus.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LaunchedAt != null) __obj.updateDynamic("LaunchedAt")(LaunchedAt.asInstanceOf[js.Any])
-    if (System != null) __obj.updateDynamic("System")(System.asInstanceOf[js.Any])
     __obj.asInstanceOf[SingleInstanceHealth]
   }
+  @scala.inline
+  implicit class SingleInstanceHealthOps[Self <: SingleInstanceHealth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationMetrics(value: ApplicationMetrics): Self = this.set("ApplicationMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationMetrics: Self = this.set("ApplicationMetrics", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setCausesVarargs(value: Cause*): Self = this.set("Causes", js.Array(value :_*))
+    @scala.inline
+    def setCauses(value: Causes): Self = this.set("Causes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCauses: Self = this.set("Causes", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("Color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("Color", js.undefined)
+    @scala.inline
+    def setDeployment(value: Deployment): Self = this.set("Deployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployment: Self = this.set("Deployment", js.undefined)
+    @scala.inline
+    def setHealthStatus(value: String): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthStatus: Self = this.set("HealthStatus", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLaunchedAt(value: LaunchedAt): Self = this.set("LaunchedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchedAt: Self = this.set("LaunchedAt", js.undefined)
+    @scala.inline
+    def setSystem(value: SystemStatus): Self = this.set("System", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem: Self = this.set("System", js.undefined)
+  }
+  
 }
 

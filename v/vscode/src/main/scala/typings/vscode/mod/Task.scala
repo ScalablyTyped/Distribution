@@ -44,6 +44,20 @@ class Task protected () extends js.Object {
     taskDefinition: TaskDefinition,
     name: String,
     source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    name: String,
+    source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    name: String,
+    source: String,
     execution: ProcessExecution,
     problemMatchers: String
   ) = this()
@@ -136,6 +150,22 @@ class Task protected () extends js.Object {
     scope: Global,
     name: String,
     source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Global,
+    name: String,
+    source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Global,
+    name: String,
+    source: String,
     execution: CustomExecution,
     problemMatchers: String
   ) = this()
@@ -184,6 +214,22 @@ class Task protected () extends js.Object {
     scope: Workspace,
     name: String,
     source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Workspace,
+    name: String,
+    source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: Workspace,
+    name: String,
+    source: String,
     execution: CustomExecution,
     problemMatchers: String
   ) = this()
@@ -225,6 +271,22 @@ class Task protected () extends js.Object {
     name: String,
     source: String,
     execution: ShellExecution,
+    problemMatchers: js.Array[String]
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: WorkspaceFolder,
+    name: String,
+    source: String,
+    execution: js.UndefOr[scala.Nothing],
+    problemMatchers: String
+  ) = this()
+  def this(
+    taskDefinition: TaskDefinition,
+    scope: WorkspaceFolder,
+    name: String,
+    source: String,
+    execution: js.UndefOr[scala.Nothing],
     problemMatchers: js.Array[String]
   ) = this()
   def this(

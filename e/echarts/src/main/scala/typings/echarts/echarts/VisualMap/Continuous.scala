@@ -14,121 +14,214 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Continuous
   extends typings.echarts.echarts.EChartOption.VisualMap {
-  var align: js.UndefOr[auto | left | right | top | bottom] = js.undefined
-  var backgroundColor: js.UndefOr[String] = js.undefined
-  var borderColor: js.UndefOr[String] = js.undefined
-  var borderWidth: js.UndefOr[Double] = js.undefined
-  var bottom: js.UndefOr[Double | String] = js.undefined
-  var calculable: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[js.Array[String]] = js.undefined
-  var controller: js.UndefOr[InRange] = js.undefined
-  var dimension: js.UndefOr[String | Double] = js.undefined
-  var formatter: js.UndefOr[String | js.Function] = js.undefined
-  var hoverLink: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inRange: js.UndefOr[RangeObject] = js.undefined
-  var inverse: js.UndefOr[Boolean] = js.undefined
-  var itemHeight: js.UndefOr[Double] = js.undefined
-  var itemWidth: js.UndefOr[Double] = js.undefined
-  var left: js.UndefOr[Double | String] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var orient: js.UndefOr[vertical | horizontal] = js.undefined
-  var outOfRange: js.UndefOr[RangeObject] = js.undefined
-  var padding: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var precision: js.UndefOr[Double] = js.undefined
-  var range: js.UndefOr[js.Array[Double]] = js.undefined
-  var realtime: js.UndefOr[Boolean] = js.undefined
-  var right: js.UndefOr[Double | String] = js.undefined
-  var seriesIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var text: js.UndefOr[js.Array[String]] = js.undefined
-  var textGap: js.UndefOr[Double] = js.undefined
-  var textStyle: js.UndefOr[BaseTextStyleWithRich] = js.undefined
-  var top: js.UndefOr[Double | String] = js.undefined
-  var `type`: js.UndefOr[continuous] = js.undefined
-  var z: js.UndefOr[Double] = js.undefined
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[auto | left | right | top | bottom] = js.native
+  var backgroundColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.native
+  var borderWidth: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double | String] = js.native
+  var calculable: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[js.Array[String]] = js.native
+  var controller: js.UndefOr[InRange] = js.native
+  var dimension: js.UndefOr[String | Double] = js.native
+  var formatter: js.UndefOr[String | js.Function] = js.native
+  var hoverLink: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inRange: js.UndefOr[RangeObject] = js.native
+  var inverse: js.UndefOr[Boolean] = js.native
+  var itemHeight: js.UndefOr[Double] = js.native
+  var itemWidth: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double | String] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var orient: js.UndefOr[vertical | horizontal] = js.native
+  var outOfRange: js.UndefOr[RangeObject] = js.native
+  var padding: js.UndefOr[Double | js.Array[Double]] = js.native
+  var precision: js.UndefOr[Double] = js.native
+  var range: js.UndefOr[js.Array[Double]] = js.native
+  var realtime: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Double | String] = js.native
+  var seriesIndex: js.UndefOr[Double | js.Array[Double]] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[js.Array[String]] = js.native
+  var textGap: js.UndefOr[Double] = js.native
+  var textStyle: js.UndefOr[BaseTextStyleWithRich] = js.native
+  var top: js.UndefOr[Double | String] = js.native
+  var `type`: js.UndefOr[continuous] = js.native
+  var z: js.UndefOr[Double] = js.native
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object Continuous {
   @scala.inline
-  def apply(
-    align: auto | left | right | top | bottom = null,
-    backgroundColor: String = null,
-    borderColor: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    bottom: Double | String = null,
-    calculable: js.UndefOr[Boolean] = js.undefined,
-    color: js.Array[String] = null,
-    controller: InRange = null,
-    dimension: String | Double = null,
-    formatter: String | js.Function = null,
-    hoverLink: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    inRange: RangeObject = null,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    itemHeight: js.UndefOr[Double] = js.undefined,
-    itemWidth: js.UndefOr[Double] = js.undefined,
-    left: Double | String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    orient: vertical | horizontal = null,
-    outOfRange: RangeObject = null,
-    padding: Double | js.Array[Double] = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    range: js.Array[Double] = null,
-    realtime: js.UndefOr[Boolean] = js.undefined,
-    right: Double | String = null,
-    seriesIndex: Double | js.Array[Double] = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    text: js.Array[String] = null,
-    textGap: js.UndefOr[Double] = js.undefined,
-    textStyle: BaseTextStyleWithRich = null,
-    top: Double | String = null,
-    `type`: continuous = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): Continuous = {
+  def apply(): Continuous = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(calculable)) __obj.updateDynamic("calculable")(calculable.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (dimension != null) __obj.updateDynamic("dimension")(dimension.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverLink)) __obj.updateDynamic("hoverLink")(hoverLink.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inRange != null) __obj.updateDynamic("inRange")(inRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemHeight)) __obj.updateDynamic("itemHeight")(itemHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemWidth)) __obj.updateDynamic("itemWidth")(itemWidth.get.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (orient != null) __obj.updateDynamic("orient")(orient.asInstanceOf[js.Any])
-    if (outOfRange != null) __obj.updateDynamic("outOfRange")(outOfRange.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime.get.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(textGap)) __obj.updateDynamic("textGap")(textGap.get.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Continuous]
   }
+  @scala.inline
+  implicit class ContinuousOps[Self <: Continuous] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: auto | left | right | top | bottom): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setCalculable(value: Boolean): Self = this.set("calculable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalculable: Self = this.set("calculable", js.undefined)
+    @scala.inline
+    def setColorVarargs(value: String*): Self = this.set("color", js.Array(value :_*))
+    @scala.inline
+    def setColor(value: js.Array[String]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setController(value: InRange): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteController: Self = this.set("controller", js.undefined)
+    @scala.inline
+    def setDimension(value: String | Double): Self = this.set("dimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension: Self = this.set("dimension", js.undefined)
+    @scala.inline
+    def setFormatter(value: String | js.Function): Self = this.set("formatter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setHoverLink(value: Boolean): Self = this.set("hoverLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverLink: Self = this.set("hoverLink", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInRange(value: RangeObject): Self = this.set("inRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInRange: Self = this.set("inRange", js.undefined)
+    @scala.inline
+    def setInverse(value: Boolean): Self = this.set("inverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverse: Self = this.set("inverse", js.undefined)
+    @scala.inline
+    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemHeight: Self = this.set("itemHeight", js.undefined)
+    @scala.inline
+    def setItemWidth(value: Double): Self = this.set("itemWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemWidth: Self = this.set("itemWidth", js.undefined)
+    @scala.inline
+    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOrient(value: vertical | horizontal): Self = this.set("orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrient: Self = this.set("orient", js.undefined)
+    @scala.inline
+    def setOutOfRange(value: RangeObject): Self = this.set("outOfRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutOfRange: Self = this.set("outOfRange", js.undefined)
+    @scala.inline
+    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
+    @scala.inline
+    def setPadding(value: Double | js.Array[Double]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setRangeVarargs(value: Double*): Self = this.set("range", js.Array(value :_*))
+    @scala.inline
+    def setRange(value: js.Array[Double]): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRealtime(value: Boolean): Self = this.set("realtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRealtime: Self = this.set("realtime", js.undefined)
+    @scala.inline
+    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setSeriesIndexVarargs(value: Double*): Self = this.set("seriesIndex", js.Array(value :_*))
+    @scala.inline
+    def setSeriesIndex(value: Double | js.Array[Double]): Self = this.set("seriesIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesIndex: Self = this.set("seriesIndex", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTextVarargs(value: String*): Self = this.set("text", js.Array(value :_*))
+    @scala.inline
+    def setText(value: js.Array[String]): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextGap(value: Double): Self = this.set("textGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextGap: Self = this.set("textGap", js.undefined)
+    @scala.inline
+    def setTextStyle(value: BaseTextStyleWithRich): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    @scala.inline
+    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setType(value: continuous): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

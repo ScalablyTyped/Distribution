@@ -64,32 +64,68 @@ trait SchemaQueryMetadata extends js.Object {
 
 object SchemaQueryMetadata {
   @scala.inline
-  def apply(
-    dataRange: String = null,
-    format: String = null,
-    googleCloudStoragePathForLatestReport: String = null,
-    googleDrivePathForLatestReport: String = null,
-    latestReportRunTimeMs: String = null,
-    locale: String = null,
-    reportCount: js.UndefOr[Double] = js.undefined,
-    running: js.UndefOr[Boolean] = js.undefined,
-    sendNotification: js.UndefOr[Boolean] = js.undefined,
-    shareEmailAddress: js.Array[String] = null,
-    title: String = null
-  ): SchemaQueryMetadata = {
+  def apply(): SchemaQueryMetadata = {
     val __obj = js.Dynamic.literal()
-    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (googleCloudStoragePathForLatestReport != null) __obj.updateDynamic("googleCloudStoragePathForLatestReport")(googleCloudStoragePathForLatestReport.asInstanceOf[js.Any])
-    if (googleDrivePathForLatestReport != null) __obj.updateDynamic("googleDrivePathForLatestReport")(googleDrivePathForLatestReport.asInstanceOf[js.Any])
-    if (latestReportRunTimeMs != null) __obj.updateDynamic("latestReportRunTimeMs")(latestReportRunTimeMs.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(reportCount)) __obj.updateDynamic("reportCount")(reportCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(running)) __obj.updateDynamic("running")(running.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sendNotification)) __obj.updateDynamic("sendNotification")(sendNotification.get.asInstanceOf[js.Any])
-    if (shareEmailAddress != null) __obj.updateDynamic("shareEmailAddress")(shareEmailAddress.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaQueryMetadata]
   }
+  @scala.inline
+  implicit class SchemaQueryMetadataOps[Self <: SchemaQueryMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataRange(value: String): Self = this.set("dataRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRange: Self = this.set("dataRange", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGoogleCloudStoragePathForLatestReport(value: String): Self = this.set("googleCloudStoragePathForLatestReport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleCloudStoragePathForLatestReport: Self = this.set("googleCloudStoragePathForLatestReport", js.undefined)
+    @scala.inline
+    def setGoogleDrivePathForLatestReport(value: String): Self = this.set("googleDrivePathForLatestReport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoogleDrivePathForLatestReport: Self = this.set("googleDrivePathForLatestReport", js.undefined)
+    @scala.inline
+    def setLatestReportRunTimeMs(value: String): Self = this.set("latestReportRunTimeMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestReportRunTimeMs: Self = this.set("latestReportRunTimeMs", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setReportCount(value: Double): Self = this.set("reportCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportCount: Self = this.set("reportCount", js.undefined)
+    @scala.inline
+    def setRunning(value: Boolean): Self = this.set("running", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunning: Self = this.set("running", js.undefined)
+    @scala.inline
+    def setSendNotification(value: Boolean): Self = this.set("sendNotification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendNotification: Self = this.set("sendNotification", js.undefined)
+    @scala.inline
+    def setShareEmailAddressVarargs(value: String*): Self = this.set("shareEmailAddress", js.Array(value :_*))
+    @scala.inline
+    def setShareEmailAddress(value: js.Array[String]): Self = this.set("shareEmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareEmailAddress: Self = this.set("shareEmailAddress", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

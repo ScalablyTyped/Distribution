@@ -1,59 +1,34 @@
 package typings.xhr.mod
 
-import typings.std.XMLHttpRequest
-import typings.xhr.xhrStrings.DELETE
-import typings.xhr.xhrStrings.GET
-import typings.xhr.xhrStrings.HEAD
-import typings.xhr.xhrStrings.OPTIONS
-import typings.xhr.xhrStrings.POST
-import typings.xhr.xhrStrings.PUT
-import typings.xhr.xhrStrings._empty
-import typings.xhr.xhrStrings.arraybuffer
-import typings.xhr.xhrStrings.blob
-import typings.xhr.xhrStrings.document
-import typings.xhr.xhrStrings.json
-import typings.xhr.xhrStrings.text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XhrUrlConfig extends XhrBaseConfig {
-  var url: String
+  var url: String = js.native
 }
 
 object XhrUrlConfig {
   @scala.inline
-  def apply(
-    url: String,
-    beforeSend: /* xhrObject */ XMLHttpRequest => Unit = null,
-    body: String | js.Any = null,
-    headers: XhrHeaders = null,
-    json: js.UndefOr[Boolean] = js.undefined,
-    method: DELETE | GET | HEAD | OPTIONS | POST | PUT = null,
-    password: String = null,
-    responseType: _empty | arraybuffer | blob | document | json | text = null,
-    sync: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    useXDR: js.UndefOr[Boolean] = js.undefined,
-    username: String = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined,
-    xhr: XMLHttpRequest = null
-  ): XhrUrlConfig = {
+  def apply(url: String): XhrUrlConfig = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (beforeSend != null) __obj.updateDynamic("beforeSend")(js.Any.fromFunction1(beforeSend))
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useXDR)) __obj.updateDynamic("useXDR")(useXDR.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[XhrUrlConfig]
   }
+  @scala.inline
+  implicit class XhrUrlConfigOps[Self <: XhrUrlConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClientRequestProperties () extends js.Object {
   def this(options: js.Any) = this()
+  def this(options: js.UndefOr[scala.Nothing], parameters: js.Any) = this()
   def this(options: js.Any, parameters: js.Any) = this()
   def clearOptions(): Unit = js.native
   def clearParameters(): Unit = js.native

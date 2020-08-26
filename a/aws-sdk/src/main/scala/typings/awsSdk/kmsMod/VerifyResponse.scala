@@ -22,16 +22,34 @@ trait VerifyResponse extends js.Object {
 
 object VerifyResponse {
   @scala.inline
-  def apply(
-    KeyId: KeyIdType = null,
-    SignatureValid: js.UndefOr[BooleanType] = js.undefined,
-    SigningAlgorithm: SigningAlgorithmSpec = null
-  ): VerifyResponse = {
+  def apply(): VerifyResponse = {
     val __obj = js.Dynamic.literal()
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(SignatureValid)) __obj.updateDynamic("SignatureValid")(SignatureValid.get.asInstanceOf[js.Any])
-    if (SigningAlgorithm != null) __obj.updateDynamic("SigningAlgorithm")(SigningAlgorithm.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyResponse]
   }
+  @scala.inline
+  implicit class VerifyResponseOps[Self <: VerifyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setSignatureValid(value: BooleanType): Self = this.set("SignatureValid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureValid: Self = this.set("SignatureValid", js.undefined)
+    @scala.inline
+    def setSigningAlgorithm(value: SigningAlgorithmSpec): Self = this.set("SigningAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningAlgorithm: Self = this.set("SigningAlgorithm", js.undefined)
+  }
+  
 }
 

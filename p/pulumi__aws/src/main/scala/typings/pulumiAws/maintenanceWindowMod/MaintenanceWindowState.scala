@@ -49,39 +49,73 @@ trait MaintenanceWindowState extends js.Object {
     */
   val startDate: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object MaintenanceWindowState {
   @scala.inline
-  def apply(
-    allowUnassociatedTargets: Input[Boolean] = null,
-    cutoff: Input[Double] = null,
-    description: Input[String] = null,
-    duration: Input[Double] = null,
-    enabled: Input[Boolean] = null,
-    endDate: Input[String] = null,
-    name: Input[String] = null,
-    schedule: Input[String] = null,
-    scheduleTimezone: Input[String] = null,
-    startDate: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): MaintenanceWindowState = {
+  def apply(): MaintenanceWindowState = {
     val __obj = js.Dynamic.literal()
-    if (allowUnassociatedTargets != null) __obj.updateDynamic("allowUnassociatedTargets")(allowUnassociatedTargets.asInstanceOf[js.Any])
-    if (cutoff != null) __obj.updateDynamic("cutoff")(cutoff.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (schedule != null) __obj.updateDynamic("schedule")(schedule.asInstanceOf[js.Any])
-    if (scheduleTimezone != null) __obj.updateDynamic("scheduleTimezone")(scheduleTimezone.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowState]
   }
+  @scala.inline
+  implicit class MaintenanceWindowStateOps[Self <: MaintenanceWindowState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowUnassociatedTargets(value: Input[Boolean]): Self = this.set("allowUnassociatedTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowUnassociatedTargets: Self = this.set("allowUnassociatedTargets", js.undefined)
+    @scala.inline
+    def setCutoff(value: Input[Double]): Self = this.set("cutoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCutoff: Self = this.set("cutoff", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDuration(value: Input[Double]): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setEndDate(value: Input[String]): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSchedule(value: Input[String]): Self = this.set("schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("schedule", js.undefined)
+    @scala.inline
+    def setScheduleTimezone(value: Input[String]): Self = this.set("scheduleTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduleTimezone: Self = this.set("scheduleTimezone", js.undefined)
+    @scala.inline
+    def setStartDate(value: Input[String]): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

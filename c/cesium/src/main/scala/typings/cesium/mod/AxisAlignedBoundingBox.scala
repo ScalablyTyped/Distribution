@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class AxisAlignedBoundingBox () extends js.Object {
   def this(minimum: Cartesian3) = this()
+  def this(minimum: js.UndefOr[scala.Nothing], maximum: Cartesian3) = this()
   def this(minimum: Cartesian3, maximum: Cartesian3) = this()
+  def this(minimum: js.UndefOr[scala.Nothing], maximum: js.UndefOr[scala.Nothing], center: Cartesian3) = this()
+  def this(minimum: js.UndefOr[scala.Nothing], maximum: Cartesian3, center: Cartesian3) = this()
+  def this(minimum: Cartesian3, maximum: js.UndefOr[scala.Nothing], center: Cartesian3) = this()
   def this(minimum: Cartesian3, maximum: Cartesian3, center: Cartesian3) = this()
   var center: Cartesian3 = js.native
   var maximum: Cartesian3 = js.native
@@ -26,6 +30,7 @@ object AxisAlignedBoundingBox extends js.Object {
   def clone(box: AxisAlignedBoundingBox): AxisAlignedBoundingBox = js.native
   def clone(box: AxisAlignedBoundingBox, result: AxisAlignedBoundingBox): AxisAlignedBoundingBox = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: AxisAlignedBoundingBox): Boolean = js.native
   def equals(left: AxisAlignedBoundingBox): Boolean = js.native
   def equals(left: AxisAlignedBoundingBox, right: AxisAlignedBoundingBox): Boolean = js.native
   def fromPoints(positions: js.Array[Cartesian3]): AxisAlignedBoundingBox = js.native

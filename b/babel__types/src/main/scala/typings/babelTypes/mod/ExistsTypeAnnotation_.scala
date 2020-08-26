@@ -6,28 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait ExistsTypeAnnotation_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait ExistsTypeAnnotation_
   extends Flow
      with BaseNode
      with FlowType {
   @JSName("type")
-  var type_ExistsTypeAnnotation_ : ExistsTypeAnnotation
+  var type_ExistsTypeAnnotation_ : ExistsTypeAnnotation = js.native
 }
 
 object ExistsTypeAnnotation_ {
   @scala.inline
-  def apply(
-    `type`: ExistsTypeAnnotation,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): ExistsTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(`type`: ExistsTypeAnnotation): ExistsTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistsTypeAnnotation_]
   }
+  @scala.inline
+  implicit class ExistsTypeAnnotation_Ops[Self <: ExistsTypeAnnotation_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: ExistsTypeAnnotation): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

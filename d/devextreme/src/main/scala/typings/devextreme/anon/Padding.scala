@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Padding extends js.Object {
-  var border: js.UndefOr[ColorVisible] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var hoverStyle: js.UndefOr[ColorHatching] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var padding: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var border: js.UndefOr[ColorVisible] = js.native
+  var color: js.UndefOr[String] = js.native
+  var hoverStyle: js.UndefOr[ColorHatching] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Padding {
   @scala.inline
-  def apply(
-    border: ColorVisible = null,
-    color: String = null,
-    hoverStyle: ColorHatching = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    padding: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): Padding = {
+  def apply(): Padding = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Padding]
   }
+  @scala.inline
+  implicit class PaddingOps[Self <: Padding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorder(value: ColorVisible): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHoverStyle(value: ColorHatching): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

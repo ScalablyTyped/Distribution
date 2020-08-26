@@ -28,6 +28,7 @@ class ResourceRegionalinventory protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaRegionalinventoryCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaRegionalinventoryCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionalinventoryCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceRegionalinventoryCustombatch): GaxiosPromise[SchemaRegionalinventoryCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceRegionalinventoryCustombatch,
@@ -62,6 +63,7 @@ class ResourceRegionalinventory protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaRegionalInventory] = js.native
   def insert(callback: BodyResponseCallback[SchemaRegionalInventory]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegionalInventory] = js.native
   def insert(params: ParamsResourceRegionalinventoryInsert): GaxiosPromise[SchemaRegionalInventory] = js.native
   def insert(
     params: ParamsResourceRegionalinventoryInsert,

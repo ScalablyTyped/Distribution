@@ -30,14 +30,14 @@ abstract class ExposedMember protected () extends Element {
     * In version 7.15.0: introduced
     */
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */
   def example: String = js.native
-  def example(newValue: String): js.Any = js.native
+  def example_=(newValue: String): Unit = js.native
   def originalName: String = js.native
-  def originalName(newValue: String): js.Any = js.native
+  def originalName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

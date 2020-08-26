@@ -13,6 +13,7 @@ import org.scalablytyped.runtime.Instantiable8
 import org.scalablytyped.runtime.Instantiable9
 import typings.std.ArrayLike
 import typings.std.AudioNode
+import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import typings.std.ImageData
@@ -28,6 +29,7 @@ import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.cameraMod.Camera
 import typings.three.colorMod.Color
 import typings.three.constantsMod.AnimationActionLoopStyles
+import typings.three.constantsMod.AnimationBlendMode
 import typings.three.constantsMod.Blending
 import typings.three.constantsMod.BlendingDstFactor
 import typings.three.constantsMod.BlendingEquation
@@ -37,7 +39,6 @@ import typings.three.constantsMod.CompressedPixelFormat
 import typings.three.constantsMod.CullFace
 import typings.three.constantsMod.DepthModes
 import typings.three.constantsMod.DepthPackingStrategies
-import typings.three.constantsMod.FrontFaceDirection
 import typings.three.constantsMod.InterpolationEndingModes
 import typings.three.constantsMod.InterpolationModes
 import typings.three.constantsMod.Mapping
@@ -69,6 +70,7 @@ import typings.three.planeMod.Plane
 import typings.three.pointLightMod.PointLight
 import typings.three.polyfillsMod.TypedArray
 import typings.three.shapeMod.Shape
+import typings.three.textGeometryMod.TextGeometryParameters
 import typings.three.threeLegacyMod.Colors
 import typings.three.vector2Mod.Vector
 import typings.three.vector2Mod.Vector2
@@ -76,8 +78,10 @@ import typings.three.vector3Mod.Vector3
 import typings.three.webGLAttributesMod.WebGLAttributes
 import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLCapabilitiesMod.WebGLCapabilitiesParameters
+import typings.three.webGLCubeRenderTargetMod.WebGLCubeRenderTarget
 import typings.three.webGLExtensionsMod.WebGLExtensions
 import typings.three.webGLInfoMod.WebGLInfo
+import typings.three.webGLObjectsMod.WebGLObjects
 import typings.three.webGLPropertiesMod.WebGLProperties
 import typings.three.webGLRendererMod.WebGLRenderer
 import typings.three.webGLStateMod.WebGLState
@@ -91,6 +95,7 @@ trait TypeofTHREE extends js.Object {
   val ACESFilmicToneMapping: ToneMapping = js.native
   val AddEquation: BlendingEquation = js.native
   val AddOperation: Combine = js.native
+  val AdditiveAnimationBlendMode: AnimationBlendMode = js.native
   val AdditiveBlending: Blending = js.native
   val AlphaFormat: PixelFormat = js.native
   val AlwaysDepth: DepthModes = js.native
@@ -138,21 +143,21 @@ trait TypeofTHREE extends js.Object {
   var Box3: Instantiable0[typings.three.mod.Box3] = js.native
   var Box3Helper: Instantiable1[/* box */ Box3, typings.three.mod.Box3Helper] = js.native
   var BoxBufferGeometry: Instantiable6[
-    js.UndefOr[/* width */ Double], 
-    js.UndefOr[/* height */ Double], 
-    js.UndefOr[/* depth */ Double], 
-    js.UndefOr[/* widthSegments */ Double], 
-    js.UndefOr[/* heightSegments */ Double], 
-    js.UndefOr[/* depthSegments */ Double], 
+    /* width */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* depth */ js.UndefOr[Double], 
+    /* widthSegments */ js.UndefOr[Double], 
+    /* heightSegments */ js.UndefOr[Double], 
+    /* depthSegments */ js.UndefOr[Double], 
     typings.three.mod.BoxBufferGeometry
   ] = js.native
   var BoxGeometry: Instantiable6[
-    js.UndefOr[/* width */ Double], 
-    js.UndefOr[/* height */ Double], 
-    js.UndefOr[/* depth */ Double], 
-    js.UndefOr[/* widthSegments */ Double], 
-    js.UndefOr[/* heightSegments */ Double], 
-    js.UndefOr[/* depthSegments */ Double], 
+    /* width */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* depth */ js.UndefOr[Double], 
+    /* widthSegments */ js.UndefOr[Double], 
+    /* heightSegments */ js.UndefOr[Double], 
+    /* depthSegments */ js.UndefOr[Double], 
     typings.three.mod.BoxGeometry
   ] = js.native
   var BoxHelper: Instantiable1[/* object */ Object3D, typings.three.mod.BoxHelper] = js.native
@@ -169,15 +174,15 @@ trait TypeofTHREE extends js.Object {
   var Camera: Instantiable0[typings.three.mod.Camera] = js.native
   var CameraHelper: Instantiable1[/* camera */ Camera, typings.three.mod.CameraHelper] = js.native
   var CanvasTexture: Instantiable9[
-    /* canvas */ HTMLImageElement, 
-    js.UndefOr[/* mapping */ Mapping], 
-    js.UndefOr[/* wrapS */ Wrapping], 
-    js.UndefOr[/* wrapT */ Wrapping], 
-    js.UndefOr[/* magFilter */ TextureFilter], 
-    js.UndefOr[/* minFilter */ TextureFilter], 
-    js.UndefOr[/* format */ PixelFormat], 
-    js.UndefOr[/* type */ TextureDataType], 
-    js.UndefOr[/* anisotropy */ Double], 
+    /* canvas */ HTMLImageElement | HTMLCanvasElement | HTMLVideoElement, 
+    /* mapping */ js.UndefOr[Mapping], 
+    /* wrapS */ js.UndefOr[Wrapping], 
+    /* wrapT */ js.UndefOr[Wrapping], 
+    /* magFilter */ js.UndefOr[TextureFilter], 
+    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* format */ js.UndefOr[PixelFormat], 
+    /* type */ js.UndefOr[TextureDataType], 
+    /* anisotropy */ js.UndefOr[Double], 
     typings.three.mod.CanvasTexture
   ] = js.native
   var CatmullRomCurve3: Instantiable0[typings.three.mod.CatmullRomCurve3] = js.native
@@ -197,52 +202,57 @@ trait TypeofTHREE extends js.Object {
     /* mipmaps */ js.Array[ImageData], 
     /* width */ Double, 
     /* height */ Double, 
-    js.UndefOr[/* format */ CompressedPixelFormat], 
-    js.UndefOr[/* type */ TextureDataType], 
-    js.UndefOr[/* mapping */ Mapping], 
-    js.UndefOr[/* wrapS */ Wrapping], 
-    js.UndefOr[/* wrapT */ Wrapping], 
-    js.UndefOr[/* magFilter */ TextureFilter], 
-    js.UndefOr[/* minFilter */ TextureFilter], 
-    js.UndefOr[/* anisotropy */ Double], 
-    js.UndefOr[/* encoding */ TextureEncoding], 
+    /* format */ js.UndefOr[CompressedPixelFormat], 
+    /* type */ js.UndefOr[TextureDataType], 
+    /* mapping */ js.UndefOr[Mapping], 
+    /* wrapS */ js.UndefOr[Wrapping], 
+    /* wrapT */ js.UndefOr[Wrapping], 
+    /* magFilter */ js.UndefOr[TextureFilter], 
+    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* anisotropy */ js.UndefOr[Double], 
+    /* encoding */ js.UndefOr[TextureEncoding], 
     typings.three.mod.CompressedTexture
   ] = js.native
   var CompressedTextureLoader: Instantiable0[typings.three.mod.CompressedTextureLoader] = js.native
   var ConeBufferGeometry: Instantiable7[
-    js.UndefOr[/* radius */ Double], 
-    js.UndefOr[/* height */ Double], 
-    js.UndefOr[/* radialSegment */ Double], 
-    js.UndefOr[/* heightSegment */ Double], 
-    js.UndefOr[/* openEnded */ Boolean], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* radius */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* radialSegment */ js.UndefOr[Double], 
+    /* heightSegment */ js.UndefOr[Double], 
+    /* openEnded */ js.UndefOr[Boolean], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.ConeBufferGeometry
   ] = js.native
   var ConeGeometry: Instantiable7[
-    js.UndefOr[/* radius */ Double], 
-    js.UndefOr[/* height */ Double], 
-    js.UndefOr[/* radialSegment */ Double], 
-    js.UndefOr[/* heightSegment */ Double], 
-    js.UndefOr[/* openEnded */ Boolean], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* radius */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* radialSegment */ js.UndefOr[Double], 
+    /* heightSegment */ js.UndefOr[Double], 
+    /* openEnded */ js.UndefOr[Boolean], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.ConeGeometry
   ] = js.native
-  var CubeCamera: Instantiable0[typings.three.mod.CubeCamera] = js.native
+  var CubeCamera: Instantiable3[
+    /* near */ Double, 
+    /* far */ Double, 
+    /* renderTarget */ WebGLCubeRenderTarget, 
+    typings.three.mod.CubeCamera
+  ] = js.native
   val CubeReflectionMapping: Mapping = js.native
   val CubeRefractionMapping: Mapping = js.native
   var CubeTexture: Instantiable10[
-    js.UndefOr[/* images */ js.Array[js.Any]], 
-    js.UndefOr[/* mapping */ Mapping], 
-    js.UndefOr[/* wrapS */ Wrapping], 
-    js.UndefOr[/* wrapT */ Wrapping], 
-    js.UndefOr[/* magFilter */ TextureFilter], 
-    js.UndefOr[/* minFilter */ TextureFilter], 
-    js.UndefOr[/* format */ PixelFormat], 
-    js.UndefOr[/* type */ TextureDataType], 
-    js.UndefOr[/* anisotropy */ Double], 
-    js.UndefOr[/* encoding */ TextureEncoding], 
+    /* images */ js.UndefOr[js.Array[js.Any]], 
+    /* mapping */ js.UndefOr[Mapping], 
+    /* wrapS */ js.UndefOr[Wrapping], 
+    /* wrapT */ js.UndefOr[Wrapping], 
+    /* magFilter */ js.UndefOr[TextureFilter], 
+    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* format */ js.UndefOr[PixelFormat], 
+    /* type */ js.UndefOr[TextureDataType], 
+    /* anisotropy */ js.UndefOr[Double], 
+    /* encoding */ js.UndefOr[TextureEncoding], 
     typings.three.mod.CubeTexture
   ] = js.native
   var CubeTextureLoader: Instantiable0[typings.three.mod.CubeTextureLoader] = js.native
@@ -277,25 +287,25 @@ trait TypeofTHREE extends js.Object {
   val CurveUtils: TypeofCurveUtils = js.native
   val CustomBlending: Blending = js.native
   var CylinderBufferGeometry: Instantiable8[
-    js.UndefOr[/* radiusTop */ Double], 
-    js.UndefOr[/* radiusBottom */ Double], 
-    js.UndefOr[/* height */ Double], 
-    js.UndefOr[/* radialSegments */ Double], 
-    js.UndefOr[/* heightSegments */ Double], 
-    js.UndefOr[/* openEnded */ Boolean], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* radiusTop */ js.UndefOr[Double], 
+    /* radiusBottom */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* radialSegments */ js.UndefOr[Double], 
+    /* heightSegments */ js.UndefOr[Double], 
+    /* openEnded */ js.UndefOr[Boolean], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.CylinderBufferGeometry
   ] = js.native
   var CylinderGeometry: Instantiable8[
-    js.UndefOr[/* radiusTop */ Double], 
-    js.UndefOr[/* radiusBottom */ Double], 
-    js.UndefOr[/* height */ Double], 
-    js.UndefOr[/* radiusSegments */ Double], 
-    js.UndefOr[/* heightSegments */ Double], 
-    js.UndefOr[/* openEnded */ Boolean], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* radiusTop */ js.UndefOr[Double], 
+    /* radiusBottom */ js.UndefOr[Double], 
+    /* height */ js.UndefOr[Double], 
+    /* radiusSegments */ js.UndefOr[Double], 
+    /* heightSegments */ js.UndefOr[Double], 
+    /* openEnded */ js.UndefOr[Boolean], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.CylinderGeometry
   ] = js.native
   var Cylindrical: Instantiable0[typings.three.mod.Cylindrical] = js.native
@@ -303,15 +313,15 @@ trait TypeofTHREE extends js.Object {
     /* data */ TypedArray, 
     /* width */ Double, 
     /* height */ Double, 
-    js.UndefOr[/* format */ PixelFormat], 
-    js.UndefOr[/* type */ TextureDataType], 
-    js.UndefOr[/* mapping */ Mapping], 
-    js.UndefOr[/* wrapS */ Wrapping], 
-    js.UndefOr[/* wrapT */ Wrapping], 
-    js.UndefOr[/* magFilter */ TextureFilter], 
-    js.UndefOr[/* minFilter */ TextureFilter], 
-    js.UndefOr[/* anisotropy */ Double], 
-    js.UndefOr[/* encoding */ TextureEncoding], 
+    /* format */ js.UndefOr[PixelFormat], 
+    /* type */ js.UndefOr[TextureDataType], 
+    /* mapping */ js.UndefOr[Mapping], 
+    /* wrapS */ js.UndefOr[Wrapping], 
+    /* wrapT */ js.UndefOr[Wrapping], 
+    /* magFilter */ js.UndefOr[TextureFilter], 
+    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* anisotropy */ js.UndefOr[Double], 
+    /* encoding */ js.UndefOr[TextureEncoding], 
     typings.three.mod.DataTexture
   ] = js.native
   var DataTexture3D: Instantiable4[
@@ -330,13 +340,13 @@ trait TypeofTHREE extends js.Object {
   var DepthTexture: Instantiable9[
     /* width */ Double, 
     /* heighht */ Double, 
-    js.UndefOr[/* type */ TextureDataType], 
-    js.UndefOr[/* mapping */ Mapping], 
-    js.UndefOr[/* wrapS */ Wrapping], 
-    js.UndefOr[/* wrapT */ Wrapping], 
-    js.UndefOr[/* magFilter */ TextureFilter], 
-    js.UndefOr[/* minFilter */ TextureFilter], 
-    js.UndefOr[/* anisotropy */ Double], 
+    /* type */ js.UndefOr[TextureDataType], 
+    /* mapping */ js.UndefOr[Mapping], 
+    /* wrapS */ js.UndefOr[Wrapping], 
+    /* wrapT */ js.UndefOr[Wrapping], 
+    /* magFilter */ js.UndefOr[TextureFilter], 
+    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* anisotropy */ js.UndefOr[Double], 
     typings.three.mod.DepthTexture
   ] = js.native
   var DirectGeometry: Instantiable0[typings.three.mod.DirectGeometry] = js.native
@@ -394,20 +404,18 @@ trait TypeofTHREE extends js.Object {
     typings.three.mod.Float64BufferAttribute
   ] = js.native
   val FloatType: TextureDataType = js.native
-  var Fog: Instantiable1[/* hex */ Double, typings.three.mod.Fog] = js.native
+  var Fog: Instantiable1[/* color */ Color, typings.three.mod.Fog] = js.native
   var FogExp2: Instantiable1[/* hex */ Double, typings.three.mod.FogExp2] = js.native
   var Font: Instantiable1[/* jsondata */ js.Any, typings.three.mod.Font] = js.native
   var FontLoader: Instantiable0[typings.three.mod.FontLoader] = js.native
-  val FrontFaceDirectionCCW: FrontFaceDirection = js.native
-  val FrontFaceDirectionCW: FrontFaceDirection = js.native
   val FrontSide: Side = js.native
   var Frustum: Instantiable6[
-    js.UndefOr[/* p0 */ Plane], 
-    js.UndefOr[/* p1 */ Plane], 
-    js.UndefOr[/* p2 */ Plane], 
-    js.UndefOr[/* p3 */ Plane], 
-    js.UndefOr[/* p4 */ Plane], 
-    js.UndefOr[/* p5 */ Plane], 
+    /* p0 */ js.UndefOr[Plane], 
+    /* p1 */ js.UndefOr[Plane], 
+    /* p2 */ js.UndefOr[Plane], 
+    /* p3 */ js.UndefOr[Plane], 
+    /* p4 */ js.UndefOr[Plane], 
+    /* p5 */ js.UndefOr[Plane], 
     typings.three.mod.Frustum
   ] = js.native
   val GammaEncoding: TextureEncoding = js.native
@@ -448,10 +456,10 @@ trait TypeofTHREE extends js.Object {
     typings.three.mod.InstancedInterleavedBuffer
   ] = js.native
   var InstancedMesh: Instantiable3[
-    /* geometry */ Geometry, 
-    /* material */ Material, 
+    /* import warning: RewrittenClass.unapply cls was tparam TGeometry */ /* geometry */ js.Any, 
+    /* import warning: RewrittenClass.unapply cls was tparam TMaterial */ /* material */ js.Any, 
     /* count */ Double, 
-    typings.three.mod.InstancedMesh
+    typings.three.mod.InstancedMesh[Geometry | BufferGeometry, Material | js.Array[Material]]
   ] = js.native
   var Int16Attribute: Instantiable2[/* array */ js.Any, /* itemSize */ Double, typings.three.mod.Int16Attribute] = js.native
   var Int16BufferAttribute: Instantiable2[
@@ -506,15 +514,19 @@ trait TypeofTHREE extends js.Object {
   var Light: Instantiable0[typings.three.mod.Light] = js.native
   var LightProbe: Instantiable0[typings.three.mod.LightProbe] = js.native
   var LightShadow: Instantiable1[/* camera */ Camera, typings.three.mod.LightShadow] = js.native
-  var Line: Instantiable0[typings.three.mod.Line] = js.native
+  var Line: Instantiable0[typings.three.mod.Line[Geometry | BufferGeometry, Material | js.Array[Material]]] = js.native
   var Line3: Instantiable0[typings.three.mod.Line3] = js.native
   var LineBasicMaterial: Instantiable0[typings.three.mod.LineBasicMaterial] = js.native
   var LineCurve: Instantiable2[/* v1 */ Vector2, /* v2 */ Vector2, typings.three.mod.LineCurve] = js.native
   var LineCurve3: Instantiable2[/* v1 */ Vector3, /* v2 */ Vector3, typings.three.mod.LineCurve3] = js.native
   var LineDashedMaterial: Instantiable0[typings.three.mod.LineDashedMaterial] = js.native
-  var LineLoop: Instantiable0[typings.three.mod.LineLoop] = js.native
+  var LineLoop: Instantiable0[
+    typings.three.mod.LineLoop[Geometry | BufferGeometry, Material | js.Array[Material]]
+  ] = js.native
   val LinePieces: Double = js.native
-  var LineSegments: Instantiable0[typings.three.mod.LineSegments] = js.native
+  var LineSegments: Instantiable0[
+    typings.three.mod.LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]]
+  ] = js.native
   val LineStrip: Double = js.native
   val LinearEncoding: TextureEncoding = js.native
   val LinearFilter: TextureFilter = js.native
@@ -545,7 +557,7 @@ trait TypeofTHREE extends js.Object {
   var Matrix3: Instantiable0[typings.three.mod.Matrix3] = js.native
   var Matrix4: Instantiable0[typings.three.mod.Matrix4] = js.native
   val MaxEquation: BlendingEquation = js.native
-  var Mesh: Instantiable0[typings.three.mod.Mesh] = js.native
+  var Mesh: Instantiable0[typings.three.mod.Mesh[Geometry | BufferGeometry, Material | js.Array[Material]]] = js.native
   var MeshBasicMaterial: Instantiable0[typings.three.mod.MeshBasicMaterial] = js.native
   var MeshDepthMaterial: Instantiable0[typings.three.mod.MeshDepthMaterial] = js.native
   var MeshDistanceMaterial: Instantiable0[typings.three.mod.MeshDistanceMaterial] = js.native
@@ -575,6 +587,7 @@ trait TypeofTHREE extends js.Object {
   val NoBlending: Blending = js.native
   val NoColors: Colors = js.native
   val NoToneMapping: ToneMapping = js.native
+  val NormalAnimationBlendMode: AnimationBlendMode = js.native
   val NormalBlending: Blending = js.native
   val NotEqualDepth: DepthModes = js.native
   val NotEqualStencilFunc: StencilFunc = js.native
@@ -625,7 +638,9 @@ trait TypeofTHREE extends js.Object {
   var PlaneHelper: Instantiable1[/* plane */ Plane, typings.three.mod.PlaneHelper] = js.native
   var PointLight: Instantiable0[typings.three.mod.PointLight] = js.native
   var PointLightHelper: Instantiable1[/* light */ PointLight, typings.three.mod.PointLightHelper] = js.native
-  var Points: Instantiable0[typings.three.mod.Points] = js.native
+  var Points: Instantiable0[
+    typings.three.mod.Points[Geometry | BufferGeometry, Material | js.Array[Material]]
+  ] = js.native
   var PointsMaterial: Instantiable0[typings.three.mod.PointsMaterial] = js.native
   var PolarGridHelper: Instantiable4[
     /* radius */ Double, 
@@ -695,6 +710,7 @@ trait TypeofTHREE extends js.Object {
   val RGBA_ASTC_8x5_Format: CompressedPixelFormat = js.native
   val RGBA_ASTC_8x6_Format: CompressedPixelFormat = js.native
   val RGBA_ASTC_8x8_Format: CompressedPixelFormat = js.native
+  val RGBA_BPTC_Format: CompressedPixelFormat = js.native
   val RGBA_ETC2_EAC_Format: CompressedPixelFormat = js.native
   val RGBA_PVRTC_2BPPV1_Format: CompressedPixelFormat = js.native
   val RGBA_PVRTC_4BPPV1_Format: CompressedPixelFormat = js.native
@@ -726,21 +742,21 @@ trait TypeofTHREE extends js.Object {
   val ReplaceStencilOp: StencilOp = js.native
   val ReverseSubtractEquation: BlendingEquation = js.native
   var RingBufferGeometry: Instantiable6[
-    js.UndefOr[/* innerRadius */ Double], 
-    js.UndefOr[/* outerRadius */ Double], 
-    js.UndefOr[/* thetaSegments */ Double], 
-    js.UndefOr[/* phiSegments */ Double], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* innerRadius */ js.UndefOr[Double], 
+    /* outerRadius */ js.UndefOr[Double], 
+    /* thetaSegments */ js.UndefOr[Double], 
+    /* phiSegments */ js.UndefOr[Double], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.RingBufferGeometry
   ] = js.native
   var RingGeometry: Instantiable6[
-    js.UndefOr[/* innerRadius */ Double], 
-    js.UndefOr[/* outerRadius */ Double], 
-    js.UndefOr[/* thetaSegments */ Double], 
-    js.UndefOr[/* phiSegments */ Double], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* innerRadius */ js.UndefOr[Double], 
+    /* outerRadius */ js.UndefOr[Double], 
+    /* thetaSegments */ js.UndefOr[Double], 
+    /* phiSegments */ js.UndefOr[Double], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.RingGeometry
   ] = js.native
   val SRGB8_ALPHA8_ASTC_10x10_Format: CompressedPixelFormat = js.native
@@ -771,40 +787,41 @@ trait TypeofTHREE extends js.Object {
   val ShortType: TextureDataType = js.native
   var Skeleton: Instantiable1[/* bones */ js.Array[Bone], typings.three.mod.Skeleton] = js.native
   var SkeletonHelper: Instantiable1[/* object */ Object3D, typings.three.mod.SkeletonHelper] = js.native
-  var SkinnedMesh: Instantiable0[typings.three.mod.SkinnedMesh] = js.native
+  var SkinnedMesh: Instantiable0[
+    typings.three.mod.SkinnedMesh[Geometry | BufferGeometry, Material | js.Array[Material]]
+  ] = js.native
   val SmoothShading: Shading = js.native
   var Sphere: Instantiable0[typings.three.mod.Sphere] = js.native
   var SphereBufferGeometry: Instantiable7[
-    js.UndefOr[/* radius */ Double], 
-    js.UndefOr[/* widthSegments */ Double], 
-    js.UndefOr[/* heightSegments */ Double], 
-    js.UndefOr[/* phiStart */ Double], 
-    js.UndefOr[/* phiLength */ Double], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* radius */ js.UndefOr[Double], 
+    /* widthSegments */ js.UndefOr[Double], 
+    /* heightSegments */ js.UndefOr[Double], 
+    /* phiStart */ js.UndefOr[Double], 
+    /* phiLength */ js.UndefOr[Double], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.SphereBufferGeometry
   ] = js.native
   var SphereGeometry: Instantiable7[
-    js.UndefOr[/* radius */ Double], 
-    js.UndefOr[/* widthSegments */ Double], 
-    js.UndefOr[/* heightSegments */ Double], 
-    js.UndefOr[/* phiStart */ Double], 
-    js.UndefOr[/* phiLength */ Double], 
-    js.UndefOr[/* thetaStart */ Double], 
-    js.UndefOr[/* thetaLength */ Double], 
+    /* radius */ js.UndefOr[Double], 
+    /* widthSegments */ js.UndefOr[Double], 
+    /* heightSegments */ js.UndefOr[Double], 
+    /* phiStart */ js.UndefOr[Double], 
+    /* phiLength */ js.UndefOr[Double], 
+    /* thetaStart */ js.UndefOr[Double], 
+    /* thetaLength */ js.UndefOr[Double], 
     typings.three.mod.SphereGeometry
   ] = js.native
   var Spherical: Instantiable0[typings.three.mod.Spherical] = js.native
   var SphericalHarmonics3: TypeofSphericalHarmonics3 = js.native
-  val SphericalReflectionMapping: Mapping = js.native
   var SplineCurve: Instantiable0[typings.three.mod.SplineCurve] = js.native
   var SpotLight: Instantiable6[
-    js.UndefOr[/* color */ Color], 
-    js.UndefOr[/* intensity */ Double], 
-    js.UndefOr[/* distance */ Double], 
-    js.UndefOr[/* angle */ Double], 
-    js.UndefOr[/* penumbra */ Double], 
-    js.UndefOr[/* decay */ Double], 
+    /* color */ js.UndefOr[Color | String | Double], 
+    /* intensity */ js.UndefOr[Double], 
+    /* distance */ js.UndefOr[Double], 
+    /* angle */ js.UndefOr[Double], 
+    /* penumbra */ js.UndefOr[Double], 
+    /* decay */ js.UndefOr[Double], 
     typings.three.mod.SpotLight
   ] = js.native
   var SpotLightHelper: Instantiable1[/* light */ Light, typings.three.mod.SpotLightHelper] = js.native
@@ -832,29 +849,37 @@ trait TypeofTHREE extends js.Object {
   val TangentSpaceNormalMap: NormalMapTypes = js.native
   var TetrahedronBufferGeometry: Instantiable0[typings.three.mod.TetrahedronBufferGeometry] = js.native
   var TetrahedronGeometry: Instantiable0[typings.three.mod.TetrahedronGeometry] = js.native
-  var TextBufferGeometry: Instantiable1[/* text */ String, typings.three.mod.TextBufferGeometry] = js.native
-  var TextGeometry: Instantiable1[/* text */ String, typings.three.mod.TextGeometry] = js.native
+  var TextBufferGeometry: Instantiable2[
+    /* text */ String, 
+    /* parameters */ TextGeometryParameters, 
+    typings.three.mod.TextBufferGeometry
+  ] = js.native
+  var TextGeometry: Instantiable2[
+    /* text */ String, 
+    /* parameters */ TextGeometryParameters, 
+    typings.three.mod.TextGeometry
+  ] = js.native
   var Texture: TypeofTexture = js.native
   var TextureIdCount: Double = js.native
   var TextureLoader: Instantiable0[typings.three.mod.TextureLoader] = js.native
   var TorusBufferGeometry: Instantiable0[typings.three.mod.TorusBufferGeometry] = js.native
   var TorusGeometry: Instantiable0[typings.three.mod.TorusGeometry] = js.native
   var TorusKnotBufferGeometry: Instantiable6[
-    js.UndefOr[/* radius */ Double], 
-    js.UndefOr[/* tube */ Double], 
-    js.UndefOr[/* tubularSegments */ Double], 
-    js.UndefOr[/* radialSegments */ Double], 
-    js.UndefOr[/* p */ Double], 
-    js.UndefOr[/* q */ Double], 
+    /* radius */ js.UndefOr[Double], 
+    /* tube */ js.UndefOr[Double], 
+    /* tubularSegments */ js.UndefOr[Double], 
+    /* radialSegments */ js.UndefOr[Double], 
+    /* p */ js.UndefOr[Double], 
+    /* q */ js.UndefOr[Double], 
     typings.three.mod.TorusKnotBufferGeometry
   ] = js.native
   var TorusKnotGeometry: Instantiable6[
-    js.UndefOr[/* radius */ Double], 
-    js.UndefOr[/* tube */ Double], 
-    js.UndefOr[/* tubularSegments */ Double], 
-    js.UndefOr[/* radialSegments */ Double], 
-    js.UndefOr[/* p */ Double], 
-    js.UndefOr[/* q */ Double], 
+    /* radius */ js.UndefOr[Double], 
+    /* tube */ js.UndefOr[Double], 
+    /* tubularSegments */ js.UndefOr[Double], 
+    /* radialSegments */ js.UndefOr[Double], 
+    /* p */ js.UndefOr[Double], 
+    /* q */ js.UndefOr[Double], 
     typings.three.mod.TorusKnotGeometry
   ] = js.native
   var Triangle: TypeofTriangle = js.native
@@ -888,7 +913,6 @@ trait TypeofTHREE extends js.Object {
     /* itemSize */ Double, 
     typings.three.mod.Uint8ClampedBufferAttribute
   ] = js.native
-  val Uncharted2ToneMapping: ToneMapping = js.native
   var Uniform: Instantiable1[/* value */ js.Any, typings.three.mod.Uniform] = js.native
   var UniformsLib: Aomap = js.native
   val UniformsUtils: js.Any = js.native
@@ -912,20 +936,22 @@ trait TypeofTHREE extends js.Object {
   val VertexColors: Colors = js.native
   var VideoTexture: Instantiable9[
     /* video */ HTMLVideoElement, 
-    js.UndefOr[/* mapping */ Mapping], 
-    js.UndefOr[/* wrapS */ Wrapping], 
-    js.UndefOr[/* wrapT */ Wrapping], 
-    js.UndefOr[/* magFilter */ TextureFilter], 
-    js.UndefOr[/* minFilter */ TextureFilter], 
-    js.UndefOr[/* format */ PixelFormat], 
-    js.UndefOr[/* type */ TextureDataType], 
-    js.UndefOr[/* anisotropy */ Double], 
+    /* mapping */ js.UndefOr[Mapping], 
+    /* wrapS */ js.UndefOr[Wrapping], 
+    /* wrapT */ js.UndefOr[Wrapping], 
+    /* magFilter */ js.UndefOr[TextureFilter], 
+    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* format */ js.UndefOr[PixelFormat], 
+    /* type */ js.UndefOr[TextureDataType], 
+    /* anisotropy */ js.UndefOr[Double], 
     typings.three.mod.VideoTexture
   ] = js.native
-  var WebGLBufferRenderer: Instantiable3[
-    /* _gl */ WebGLRenderingContext, 
-    /* extensions */ js.Any, 
-    /* _infoRender */ js.Any, 
+  var WebGL1Renderer: Instantiable0[typings.three.mod.WebGL1Renderer] = js.native
+  var WebGLBufferRenderer: Instantiable4[
+    /* gl */ WebGLRenderingContext, 
+    /* extensions */ WebGLExtensions, 
+    /* info */ WebGLInfo, 
+    /* capabilities */ WebGLCapabilities, 
     typings.three.mod.WebGLBufferRenderer
   ] = js.native
   var WebGLCapabilities: Instantiable3[
@@ -984,8 +1010,8 @@ trait TypeofTHREE extends js.Object {
     typings.three.mod.WebGLPrograms
   ] = js.native
   var WebGLProperties: Instantiable0[typings.three.mod.WebGLProperties] = js.native
-  var WebGLRenderList: Instantiable0[typings.three.mod.WebGLRenderList] = js.native
-  var WebGLRenderLists: Instantiable0[typings.three.mod.WebGLRenderLists] = js.native
+  var WebGLRenderList: Instantiable1[/* properties */ WebGLProperties, typings.three.mod.WebGLRenderList] = js.native
+  var WebGLRenderLists: Instantiable1[/* properties */ WebGLProperties, typings.three.mod.WebGLRenderLists] = js.native
   var WebGLRenderTarget: Instantiable2[/* width */ Double, /* height */ Double, typings.three.mod.WebGLRenderTarget] = js.native
   var WebGLRenderer: Instantiable0[typings.three.mod.WebGLRenderer] = js.native
   var WebGLShader: Instantiable3[
@@ -996,7 +1022,7 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   var WebGLShadowMap: Instantiable3[
     /* _renderer */ WebGLRenderer, 
-    /* _objects */ js.Array[js.Any], 
+    /* _objects */ WebGLObjects, 
     /* maxTextureSize */ Double, 
     typings.three.mod.WebGLShadowMap
   ] = js.native
@@ -1026,12 +1052,12 @@ trait TypeofTHREE extends js.Object {
   val ZeroStencilOp: StencilOp = js.native
   val sRGBEncoding: TextureEncoding = js.native
   def cloneUniforms(uniforms_src: js.Any): js.Any = js.native
-  def error(): Unit = js.native
+  def error(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
-  def log(): Unit = js.native
+  def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
   def mergeUniforms(uniforms: js.Array[_]): js.Any = js.native
-  def warn(): Unit = js.native
+  def warn(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
   def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
 }
 

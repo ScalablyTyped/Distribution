@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "terminal-image" : "0.2.0"
+      "terminal-image" : "1.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "terminal-image" : "0.2.0"
+      "terminal-image" : "1.2.0"
     }
   ],
   "compile-devDependencies" : [

@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISavedScrollFocus extends js.Object {
-  var colName: js.UndefOr[String] = js.undefined
-  var focus: js.UndefOr[Boolean] = js.undefined
-  var rowVal: js.UndefOr[IRowVal] = js.undefined
+  var colName: js.UndefOr[String] = js.native
+  var focus: js.UndefOr[Boolean] = js.native
+  var rowVal: js.UndefOr[IRowVal] = js.native
 }
 
 object ISavedScrollFocus {
   @scala.inline
-  def apply(colName: String = null, focus: js.UndefOr[Boolean] = js.undefined, rowVal: IRowVal = null): ISavedScrollFocus = {
+  def apply(): ISavedScrollFocus = {
     val __obj = js.Dynamic.literal()
-    if (colName != null) __obj.updateDynamic("colName")(colName.asInstanceOf[js.Any])
-    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus.get.asInstanceOf[js.Any])
-    if (rowVal != null) __obj.updateDynamic("rowVal")(rowVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISavedScrollFocus]
   }
+  @scala.inline
+  implicit class ISavedScrollFocusOps[Self <: ISavedScrollFocus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColName(value: String): Self = this.set("colName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColName: Self = this.set("colName", js.undefined)
+    @scala.inline
+    def setFocus(value: Boolean): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setRowVal(value: IRowVal): Self = this.set("rowVal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowVal: Self = this.set("rowVal", js.undefined)
+  }
+  
 }
 

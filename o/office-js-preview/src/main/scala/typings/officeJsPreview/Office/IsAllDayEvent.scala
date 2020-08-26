@@ -77,6 +77,11 @@ trait IsAllDayEvent extends js.Object {
     */
   def setAsync(isAllDayEvent: Boolean): Unit = js.native
   def setAsync(isAllDayEvent: Boolean, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setAsync(
+    isAllDayEvent: Boolean,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setAsync(isAllDayEvent: Boolean, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     isAllDayEvent: Boolean,

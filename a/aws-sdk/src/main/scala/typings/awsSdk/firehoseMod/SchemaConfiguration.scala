@@ -34,22 +34,46 @@ trait SchemaConfiguration extends js.Object {
 
 object SchemaConfiguration {
   @scala.inline
-  def apply(
-    CatalogId: NonEmptyStringWithoutWhitespace = null,
-    DatabaseName: NonEmptyStringWithoutWhitespace = null,
-    Region: NonEmptyStringWithoutWhitespace = null,
-    RoleARN: NonEmptyStringWithoutWhitespace = null,
-    TableName: NonEmptyStringWithoutWhitespace = null,
-    VersionId: NonEmptyStringWithoutWhitespace = null
-  ): SchemaConfiguration = {
+  def apply(): SchemaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (CatalogId != null) __obj.updateDynamic("CatalogId")(CatalogId.asInstanceOf[js.Any])
-    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (TableName != null) __obj.updateDynamic("TableName")(TableName.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfiguration]
   }
+  @scala.inline
+  implicit class SchemaConfigurationOps[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalogId(value: NonEmptyStringWithoutWhitespace): Self = this.set("CatalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("CatalogId", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: NonEmptyStringWithoutWhitespace): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    @scala.inline
+    def setRegion(value: NonEmptyStringWithoutWhitespace): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setRoleARN(value: NonEmptyStringWithoutWhitespace): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setTableName(value: NonEmptyStringWithoutWhitespace): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableName: Self = this.set("TableName", js.undefined)
+    @scala.inline
+    def setVersionId(value: NonEmptyStringWithoutWhitespace): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

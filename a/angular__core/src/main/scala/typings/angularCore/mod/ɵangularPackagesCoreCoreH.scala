@@ -11,10 +11,10 @@ object ɵangularPackagesCoreCoreH extends js.Object {
   def apply(
     ElementRefToken: Instantiable1[
       /* import warning: RewrittenClass.unapply cls was tparam T */ /* nativeElement */ js.Any, 
-      ElementRef[js.Any]
+      ElementRef[js.Object]
     ],
     tNode: TNode,
-    view: ɵangularPackagesCoreCoreBo
+    view: ɵangularPackagesCoreCoreBp
   ): ElementRef[_] = js.native
 }
 

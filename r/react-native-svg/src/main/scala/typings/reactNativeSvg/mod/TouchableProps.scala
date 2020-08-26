@@ -5,39 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TouchableProps extends js.Object {
-  var delayLongPress: js.UndefOr[Double] = js.undefined
-  var delayPressIn: js.UndefOr[Double] = js.undefined
-  var delayPressOut: js.UndefOr[Double] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
+  var delayLongPress: js.UndefOr[Double] = js.native
+  var delayPressIn: js.UndefOr[Double] = js.native
+  var delayPressOut: js.UndefOr[Double] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
 }
 
 object TouchableProps {
   @scala.inline
-  def apply(
-    delayLongPress: js.UndefOr[Double] = js.undefined,
-    delayPressIn: js.UndefOr[Double] = js.undefined,
-    delayPressOut: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onLongPress: /* event */ GestureResponderEvent => Unit = null,
-    onPress: /* event */ GestureResponderEvent => Unit = null,
-    onPressIn: /* event */ GestureResponderEvent => Unit = null,
-    onPressOut: /* event */ GestureResponderEvent => Unit = null
-  ): TouchableProps = {
+  def apply(): TouchableProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delayLongPress)) __obj.updateDynamic("delayLongPress")(delayLongPress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayPressIn)) __obj.updateDynamic("delayPressIn")(delayPressIn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayPressOut)) __obj.updateDynamic("delayPressOut")(delayPressOut.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1(onPressIn))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1(onPressOut))
     __obj.asInstanceOf[TouchableProps]
   }
+  @scala.inline
+  implicit class TouchablePropsOps[Self <: TouchableProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelayLongPress(value: Double): Self = this.set("delayLongPress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayLongPress: Self = this.set("delayLongPress", js.undefined)
+    @scala.inline
+    def setDelayPressIn(value: Double): Self = this.set("delayPressIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayPressIn: Self = this.set("delayPressIn", js.undefined)
+    @scala.inline
+    def setDelayPressOut(value: Double): Self = this.set("delayPressOut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelayPressOut: Self = this.set("delayPressOut", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onLongPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLongPress: Self = this.set("onLongPress", js.undefined)
+    @scala.inline
+    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onPressIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPressIn: Self = this.set("onPressIn", js.undefined)
+    @scala.inline
+    def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onPressOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPressOut: Self = this.set("onPressOut", js.undefined)
+  }
+  
 }
 

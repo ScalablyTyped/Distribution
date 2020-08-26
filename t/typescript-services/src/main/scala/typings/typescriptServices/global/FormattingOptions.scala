@@ -9,14 +9,6 @@ import scala.scalajs.js.annotation._
 class FormattingOptions protected ()
   extends typings.typescriptServices.FormattingOptions {
   def this(useTabs: Boolean, spacesPerTab: Double, indentSpaces: Double, newLineCharacter: String) = this()
-  /* CompleteClass */
-  override var indentSpaces: Double = js.native
-  /* CompleteClass */
-  override var newLineCharacter: String = js.native
-  /* CompleteClass */
-  override var spacesPerTab: Double = js.native
-  /* CompleteClass */
-  override var useTabs: Boolean = js.native
 }
 
 /* static members */

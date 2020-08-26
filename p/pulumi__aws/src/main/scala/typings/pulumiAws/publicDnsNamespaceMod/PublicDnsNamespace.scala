@@ -1,5 +1,6 @@
 package typings.pulumiAws.publicDnsNamespaceMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -21,6 +22,7 @@ class PublicDnsNamespace protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: PublicDnsNamespaceArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: PublicDnsNamespaceArgs, opts: CustomResourceOptions) = this()
   /**
     * The ARN that Amazon Route 53 assigns to the namespace when you create it.
@@ -38,6 +40,10 @@ class PublicDnsNamespace protected () extends CustomResource {
     * The name of the namespace.
     */
   val name: Output_[String] = js.native
+  /**
+    * A map of tags to assign to the namespace.
+    */
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -51,8 +57,10 @@ object PublicDnsNamespace extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): PublicDnsNamespace = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PublicDnsNamespace = js.native
   def get(name: String, id: Input[ID], state: PublicDnsNamespaceState): PublicDnsNamespace = js.native
   def get(name: String, id: Input[ID], state: PublicDnsNamespaceState, opts: CustomResourceOptions): PublicDnsNamespace = js.native
   /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isActiveMod extends js.Object {
   def default(pathname: Pathname): Boolean = js.native
+  def default(pathname: Pathname, query: js.UndefOr[scala.Nothing], indexOnly: Boolean): Boolean = js.native
   def default(
     pathname: Pathname,
     query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any

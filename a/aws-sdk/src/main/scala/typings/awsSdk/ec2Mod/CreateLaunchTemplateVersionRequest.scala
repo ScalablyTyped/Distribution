@@ -38,23 +38,48 @@ trait CreateLaunchTemplateVersionRequest extends js.Object {
 
 object CreateLaunchTemplateVersionRequest {
   @scala.inline
-  def apply(
-    LaunchTemplateData: RequestLaunchTemplateData,
-    ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    LaunchTemplateId: LaunchTemplateId = null,
-    LaunchTemplateName: LaunchTemplateName = null,
-    SourceVersion: String = null,
-    VersionDescription: VersionDescription = null
-  ): CreateLaunchTemplateVersionRequest = {
+  def apply(LaunchTemplateData: RequestLaunchTemplateData): CreateLaunchTemplateVersionRequest = {
     val __obj = js.Dynamic.literal(LaunchTemplateData = LaunchTemplateData.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (SourceVersion != null) __obj.updateDynamic("SourceVersion")(SourceVersion.asInstanceOf[js.Any])
-    if (VersionDescription != null) __obj.updateDynamic("VersionDescription")(VersionDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLaunchTemplateVersionRequest]
   }
+  @scala.inline
+  implicit class CreateLaunchTemplateVersionRequestOps[Self <: CreateLaunchTemplateVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLaunchTemplateData(value: RequestLaunchTemplateData): Self = this.set("LaunchTemplateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setLaunchTemplateId(value: LaunchTemplateId): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    @scala.inline
+    def setSourceVersion(value: String): Self = this.set("SourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVersion: Self = this.set("SourceVersion", js.undefined)
+    @scala.inline
+    def setVersionDescription(value: VersionDescription): Self = this.set("VersionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionDescription: Self = this.set("VersionDescription", js.undefined)
+  }
+  
 }
 

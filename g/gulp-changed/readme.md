@@ -9,9 +9,9 @@ Only pass through changed files
 | ------------------ | :-------------: |
 | Full name          | gulp-changed |
 | Keywords           | gulpplugin, file, files, changed, newer, modified, modification, updated, time, mtime, stat, cache, cached, passthrough |
-| # releases         | 5 |
-| # dependents       | 312 |
-| # downloads        | 3338068 |
+| # releases         | 4 |
+| # dependents       | 313 |
+| # downloads        | 3377061 |
 | # stars            | 142 |
 
 ## Links

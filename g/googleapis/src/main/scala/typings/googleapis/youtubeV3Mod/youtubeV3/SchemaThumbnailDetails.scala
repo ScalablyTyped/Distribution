@@ -33,20 +33,42 @@ trait SchemaThumbnailDetails extends js.Object {
 
 object SchemaThumbnailDetails {
   @scala.inline
-  def apply(
-    default: SchemaThumbnail = null,
-    high: SchemaThumbnail = null,
-    maxres: SchemaThumbnail = null,
-    medium: SchemaThumbnail = null,
-    standard: SchemaThumbnail = null
-  ): SchemaThumbnailDetails = {
+  def apply(): SchemaThumbnailDetails = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (maxres != null) __obj.updateDynamic("maxres")(maxres.asInstanceOf[js.Any])
-    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
-    if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaThumbnailDetails]
   }
+  @scala.inline
+  implicit class SchemaThumbnailDetailsOps[Self <: SchemaThumbnailDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: SchemaThumbnail): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setHigh(value: SchemaThumbnail): Self = this.set("high", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigh: Self = this.set("high", js.undefined)
+    @scala.inline
+    def setMaxres(value: SchemaThumbnail): Self = this.set("maxres", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxres: Self = this.set("maxres", js.undefined)
+    @scala.inline
+    def setMedium(value: SchemaThumbnail): Self = this.set("medium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedium: Self = this.set("medium", js.undefined)
+    @scala.inline
+    def setStandard(value: SchemaThumbnail): Self = this.set("standard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStandard: Self = this.set("standard", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait UsageReportSubscription extends js.Object {
 
 object UsageReportSubscription {
   @scala.inline
-  def apply(
-    LastGeneratedReportDate: Timestamp = null,
-    S3BucketName: String = null,
-    Schedule: UsageReportSchedule = null,
-    SubscriptionErrors: LastReportGenerationExecutionErrors = null
-  ): UsageReportSubscription = {
+  def apply(): UsageReportSubscription = {
     val __obj = js.Dynamic.literal()
-    if (LastGeneratedReportDate != null) __obj.updateDynamic("LastGeneratedReportDate")(LastGeneratedReportDate.asInstanceOf[js.Any])
-    if (S3BucketName != null) __obj.updateDynamic("S3BucketName")(S3BucketName.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (SubscriptionErrors != null) __obj.updateDynamic("SubscriptionErrors")(SubscriptionErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageReportSubscription]
   }
+  @scala.inline
+  implicit class UsageReportSubscriptionOps[Self <: UsageReportSubscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastGeneratedReportDate(value: Timestamp): Self = this.set("LastGeneratedReportDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastGeneratedReportDate: Self = this.set("LastGeneratedReportDate", js.undefined)
+    @scala.inline
+    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BucketName: Self = this.set("S3BucketName", js.undefined)
+    @scala.inline
+    def setSchedule(value: UsageReportSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setSubscriptionErrorsVarargs(value: LastReportGenerationExecutionError*): Self = this.set("SubscriptionErrors", js.Array(value :_*))
+    @scala.inline
+    def setSubscriptionErrors(value: LastReportGenerationExecutionErrors): Self = this.set("SubscriptionErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionErrors: Self = this.set("SubscriptionErrors", js.undefined)
+  }
+  
 }
 

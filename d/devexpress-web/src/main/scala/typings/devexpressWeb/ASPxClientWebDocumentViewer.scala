@@ -98,6 +98,7 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * @param inlineResult true, to try opening the result file in a new browser tab without a download; otherwise, false.
     */
   def ExportTo(): Unit = js.native
+  def ExportTo(format: js.UndefOr[scala.Nothing], inlineResult: Boolean): Unit = js.native
   def ExportTo(format: String): Unit = js.native
   def ExportTo(format: String, inlineResult: Boolean): Unit = js.native
   /**
@@ -132,6 +133,7 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * @param hideMessageFromUser true, to hide a message with the operation result from a user; otherwise, false.
     */
   def PerformCustomDocumentOperation(): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
+  def PerformCustomDocumentOperation(customData: js.UndefOr[scala.Nothing], hideMessageFromUser: Boolean): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   def PerformCustomDocumentOperation(customData: String): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   def PerformCustomDocumentOperation(customData: String, hideMessageFromUser: Boolean): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   /**

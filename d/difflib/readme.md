@@ -10,9 +10,9 @@ text diff library ported from Python's difflib module
 | ------------------ | :-------------: |
 | Full name          | difflib |
 | Keywords           | diff |
-| # releases         | 1 |
-| # dependents       | 28 |
-| # downloads        | 2451480 |
+| # releases         | 0 |
+| # dependents       | 30 |
+| # downloads        | 2597390 |
 | # stars            | 1 |
 
 ## Links

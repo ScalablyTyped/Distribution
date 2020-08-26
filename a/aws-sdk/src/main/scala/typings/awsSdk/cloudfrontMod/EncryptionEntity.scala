@@ -26,5 +26,24 @@ object EncryptionEntity {
     val __obj = js.Dynamic.literal(FieldPatterns = FieldPatterns.asInstanceOf[js.Any], ProviderId = ProviderId.asInstanceOf[js.Any], PublicKeyId = PublicKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionEntity]
   }
+  @scala.inline
+  implicit class EncryptionEntityOps[Self <: EncryptionEntity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldPatterns(value: FieldPatterns): Self = this.set("FieldPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProviderId(value: String): Self = this.set("ProviderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublicKeyId(value: String): Self = this.set("PublicKeyId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

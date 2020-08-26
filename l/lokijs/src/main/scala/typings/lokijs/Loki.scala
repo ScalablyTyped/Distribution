@@ -102,6 +102,7 @@ trait Loki extends LokiEventEmitter {
     * @param [callback] - (Optional) user supplied async callback
     */
   def autosaveEnable(): Unit = js.native
+  def autosaveEnable(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def autosaveEnable(options: js.Any): Unit = js.native
   def autosaveEnable(options: js.Any, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
   /**
@@ -132,6 +133,7 @@ trait Loki extends LokiEventEmitter {
     * @param initialConfig - (internal) true is passed when loki ctor is invoking
     */
   def configureOptions(): Unit = js.native
+  def configureOptions(options: js.UndefOr[scala.Nothing], initialConfig: Boolean): Unit = js.native
   def configureOptions(options: PartialLokiConfigOptionsP): Unit = js.native
   def configureOptions(options: PartialLokiConfigOptionsP, initialConfig: Boolean): Unit = js.native
   /**
@@ -152,6 +154,10 @@ trait Loki extends LokiEventEmitter {
     * @param callback - (Optional) user supplied async callback / error handler
     */
   def deleteDatabase(callback: js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]): Unit = js.native
+  def deleteDatabase(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
   def deleteDatabase(
     options: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit],
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
@@ -174,7 +180,6 @@ trait Loki extends LokiEventEmitter {
   def deserializeCollection(destructuredSource: String, options: Partitioned): js.Array[_] = js.native
   def deserializeCollection(destructuredSource: js.Array[String]): js.Array[_] = js.native
   def deserializeCollection(destructuredSource: js.Array[String], options: Partitioned): js.Array[_] = js.native
-  def deserializeDestructured(): js.Any = js.native
   /**
     * Database level destructured JSON deserialization routine to minimize memory overhead.
     * Internally, Loki supports destructuring via loki "serializationMethod' option and
@@ -190,6 +195,7 @@ trait Loki extends LokiEventEmitter {
     *
     * @returns An object representation of the deserialized database, not yet applied to 'this' db or document array
     */
+  def deserializeDestructured(): js.Any = js.native
   def deserializeDestructured(destructuredSource: String): js.Any = js.native
   def deserializeDestructured(destructuredSource: String, options: DeserializeOptions): js.Any = js.native
   def deserializeDestructured(destructuredSource: js.Array[String]): js.Any = js.native
@@ -249,6 +255,7 @@ trait Loki extends LokiEventEmitter {
     * });
     */
   def loadDatabase(): Unit = js.native
+  def loadDatabase(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   def loadDatabase(options: PartialThrottledSaveDrain): Unit = js.native
   def loadDatabase(options: PartialThrottledSaveDrain, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   /**
@@ -258,6 +265,10 @@ trait Loki extends LokiEventEmitter {
     * @param [callback] - (Optional) user supplied async callback / error handler
     */
   def loadDatabaseInternal(): Unit = js.native
+  def loadDatabaseInternal(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
   def loadDatabaseInternal(options: js.Any): Unit = js.native
   def loadDatabaseInternal(
     options: js.Any,

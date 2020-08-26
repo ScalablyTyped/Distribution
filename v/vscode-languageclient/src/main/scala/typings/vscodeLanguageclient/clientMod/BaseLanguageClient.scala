@@ -127,6 +127,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   /* protected */ def createMessageTransports(encoding: String): js.Promise[MessageTransports] = js.native
   def diagnostics: js.UndefOr[DiagnosticCollection] = js.native
   def error(message: String): Unit = js.native
+  def error(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def error(message: String, data: js.Any): Unit = js.native
   def error(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
   @JSName("getFeature")
@@ -188,6 +189,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   def getFeature_workspacesymbol(request: workspaceSlashsymbol): DynamicFeature[typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions] with WorkspaceProviderFeature[WorkspaceSymbolProvider[typings.vscode.mod.SymbolInformation]] = js.native
   /* protected */ def handleConnectionClosed(): Unit = js.native
   def info(message: String): Unit = js.native
+  def info(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def info(message: String, data: js.Any): Unit = js.native
   def info(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
   def initializeResult: js.UndefOr[InitializeResult[_]] = js.native
@@ -255,11 +257,12 @@ abstract class BaseLanguageClient protected () extends js.Object {
   ): js.Promise[R] = js.native
   def start(): typings.vscode.mod.Disposable = js.native
   /* private */ def state: js.Any = js.native
-  /* private */ def state(value: js.Any): js.Any = js.native
+  /* private */ def state_=(value: js.Any): Unit = js.native
   def stop(): js.Promise[Unit] = js.native
-  def trace(value: typings.vscodeJsonrpc.mod.Trace): js.Any = js.native
   def traceOutputChannel: OutputChannel = js.native
+  def trace_=(value: typings.vscodeJsonrpc.mod.Trace): Unit = js.native
   def warn(message: String): Unit = js.native
+  def warn(message: String, data: js.UndefOr[scala.Nothing], showNotification: Boolean): Unit = js.native
   def warn(message: String, data: js.Any): Unit = js.native
   def warn(message: String, data: js.Any, showNotification: Boolean): Unit = js.native
 }

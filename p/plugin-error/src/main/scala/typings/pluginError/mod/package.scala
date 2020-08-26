@@ -5,5 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type PluginError = typings.std.Error
+  /**
+    * Abstraction for error handling for Vinyl plugins
+    */
+  type PluginError[T] = typings.pluginError.mod.SimplePluginError with T
 }

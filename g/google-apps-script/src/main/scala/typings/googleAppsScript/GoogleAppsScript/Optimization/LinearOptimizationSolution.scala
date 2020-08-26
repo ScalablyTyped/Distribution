@@ -56,11 +56,12 @@ import scala.scalajs.js.annotation._
   *       Logger.log('Value of y: ' + solution.getVariableValue('y'));
   *     }
   */
+@js.native
 trait LinearOptimizationSolution extends js.Object {
-  def getObjectiveValue(): Double
-  def getStatus(): Status
-  def getVariableValue(variableName: String): Double
-  def isValid(): Boolean
+  def getObjectiveValue(): Double = js.native
+  def getStatus(): Status = js.native
+  def getVariableValue(variableName: String): Double = js.native
+  def isValid(): Boolean = js.native
 }
 
 object LinearOptimizationSolution {
@@ -74,5 +75,26 @@ object LinearOptimizationSolution {
     val __obj = js.Dynamic.literal(getObjectiveValue = js.Any.fromFunction0(getObjectiveValue), getStatus = js.Any.fromFunction0(getStatus), getVariableValue = js.Any.fromFunction1(getVariableValue), isValid = js.Any.fromFunction0(isValid))
     __obj.asInstanceOf[LinearOptimizationSolution]
   }
+  @scala.inline
+  implicit class LinearOptimizationSolutionOps[Self <: LinearOptimizationSolution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetObjectiveValue(value: () => Double): Self = this.set("getObjectiveValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetStatus(value: () => Status): Self = this.set("getStatus", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetVariableValue(value: String => Double): Self = this.set("getVariableValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+  }
+  
 }
 

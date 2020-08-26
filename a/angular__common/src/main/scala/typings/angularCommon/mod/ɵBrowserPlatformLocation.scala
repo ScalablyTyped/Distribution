@@ -11,6 +11,6 @@ class ɵBrowserPlatformLocation protected () extends PlatformLocation {
   var _doc: js.Any = js.native
   var _history: js.Any = js.native
   val location: Location = js.native
-  def pathname(newPath: String): js.Any = js.native
+  def pathname_=(newPath: String): Unit = js.native
 }
 

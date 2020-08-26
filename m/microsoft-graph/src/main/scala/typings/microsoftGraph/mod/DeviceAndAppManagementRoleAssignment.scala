@@ -4,29 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeviceAndAppManagementRoleAssignment extends RoleAssignment {
   // The list of ids of role member security groups. These are IDs from Azure Active Directory.
-  var members: js.UndefOr[js.Array[String]] = js.undefined
+  var members: js.UndefOr[js.Array[String]] = js.native
 }
 
 object DeviceAndAppManagementRoleAssignment {
   @scala.inline
-  def apply(
-    description: String = null,
-    displayName: String = null,
-    id: String = null,
-    members: js.Array[String] = null,
-    resourceScopes: js.Array[String] = null,
-    roleDefinition: RoleDefinition = null
-  ): DeviceAndAppManagementRoleAssignment = {
+  def apply(): DeviceAndAppManagementRoleAssignment = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (members != null) __obj.updateDynamic("members")(members.asInstanceOf[js.Any])
-    if (resourceScopes != null) __obj.updateDynamic("resourceScopes")(resourceScopes.asInstanceOf[js.Any])
-    if (roleDefinition != null) __obj.updateDynamic("roleDefinition")(roleDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceAndAppManagementRoleAssignment]
   }
+  @scala.inline
+  implicit class DeviceAndAppManagementRoleAssignmentOps[Self <: DeviceAndAppManagementRoleAssignment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembersVarargs(value: String*): Self = this.set("members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: js.Array[String]): Self = this.set("members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembers: Self = this.set("members", js.undefined)
+  }
+  
 }
 

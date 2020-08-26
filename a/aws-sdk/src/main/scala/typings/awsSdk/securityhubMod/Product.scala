@@ -46,27 +46,60 @@ trait Product extends js.Object {
 
 object Product {
   @scala.inline
-  def apply(
-    ProductArn: NonEmptyString,
-    ActivationUrl: NonEmptyString = null,
-    Categories: CategoryList = null,
-    CompanyName: NonEmptyString = null,
-    Description: NonEmptyString = null,
-    IntegrationTypes: IntegrationTypeList = null,
-    MarketplaceUrl: NonEmptyString = null,
-    ProductName: NonEmptyString = null,
-    ProductSubscriptionResourcePolicy: NonEmptyString = null
-  ): Product = {
+  def apply(ProductArn: NonEmptyString): Product = {
     val __obj = js.Dynamic.literal(ProductArn = ProductArn.asInstanceOf[js.Any])
-    if (ActivationUrl != null) __obj.updateDynamic("ActivationUrl")(ActivationUrl.asInstanceOf[js.Any])
-    if (Categories != null) __obj.updateDynamic("Categories")(Categories.asInstanceOf[js.Any])
-    if (CompanyName != null) __obj.updateDynamic("CompanyName")(CompanyName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (IntegrationTypes != null) __obj.updateDynamic("IntegrationTypes")(IntegrationTypes.asInstanceOf[js.Any])
-    if (MarketplaceUrl != null) __obj.updateDynamic("MarketplaceUrl")(MarketplaceUrl.asInstanceOf[js.Any])
-    if (ProductName != null) __obj.updateDynamic("ProductName")(ProductName.asInstanceOf[js.Any])
-    if (ProductSubscriptionResourcePolicy != null) __obj.updateDynamic("ProductSubscriptionResourcePolicy")(ProductSubscriptionResourcePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Product]
   }
+  @scala.inline
+  implicit class ProductOps[Self <: Product] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductArn(value: NonEmptyString): Self = this.set("ProductArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivationUrl(value: NonEmptyString): Self = this.set("ActivationUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivationUrl: Self = this.set("ActivationUrl", js.undefined)
+    @scala.inline
+    def setCategoriesVarargs(value: NonEmptyString*): Self = this.set("Categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: CategoryList): Self = this.set("Categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("Categories", js.undefined)
+    @scala.inline
+    def setCompanyName(value: NonEmptyString): Self = this.set("CompanyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyName: Self = this.set("CompanyName", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setIntegrationTypesVarargs(value: IntegrationType*): Self = this.set("IntegrationTypes", js.Array(value :_*))
+    @scala.inline
+    def setIntegrationTypes(value: IntegrationTypeList): Self = this.set("IntegrationTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegrationTypes: Self = this.set("IntegrationTypes", js.undefined)
+    @scala.inline
+    def setMarketplaceUrl(value: NonEmptyString): Self = this.set("MarketplaceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarketplaceUrl: Self = this.set("MarketplaceUrl", js.undefined)
+    @scala.inline
+    def setProductName(value: NonEmptyString): Self = this.set("ProductName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductName: Self = this.set("ProductName", js.undefined)
+    @scala.inline
+    def setProductSubscriptionResourcePolicy(value: NonEmptyString): Self = this.set("ProductSubscriptionResourcePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductSubscriptionResourcePolicy: Self = this.set("ProductSubscriptionResourcePolicy", js.undefined)
+  }
+  
 }
 

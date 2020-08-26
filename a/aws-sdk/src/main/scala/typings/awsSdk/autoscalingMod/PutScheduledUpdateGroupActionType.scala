@@ -46,26 +46,54 @@ trait PutScheduledUpdateGroupActionType extends js.Object {
 
 object PutScheduledUpdateGroupActionType {
   @scala.inline
-  def apply(
-    AutoScalingGroupName: ResourceName,
-    ScheduledActionName: XmlStringMaxLen255,
-    DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined,
-    EndTime: TimestampType = null,
-    MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined,
-    MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined,
-    Recurrence: XmlStringMaxLen255 = null,
-    StartTime: TimestampType = null,
-    Time: TimestampType = null
-  ): PutScheduledUpdateGroupActionType = {
+  def apply(AutoScalingGroupName: ResourceName, ScheduledActionName: XmlStringMaxLen255): PutScheduledUpdateGroupActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredCapacity)) __obj.updateDynamic("DesiredCapacity")(DesiredCapacity.get.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSize)) __obj.updateDynamic("MaxSize")(MaxSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinSize)) __obj.updateDynamic("MinSize")(MinSize.get.asInstanceOf[js.Any])
-    if (Recurrence != null) __obj.updateDynamic("Recurrence")(Recurrence.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Time != null) __obj.updateDynamic("Time")(Time.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutScheduledUpdateGroupActionType]
   }
+  @scala.inline
+  implicit class PutScheduledUpdateGroupActionTypeOps[Self <: PutScheduledUpdateGroupActionType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScheduledActionName(value: XmlStringMaxLen255): Self = this.set("ScheduledActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = this.set("DesiredCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredCapacity: Self = this.set("DesiredCapacity", js.undefined)
+    @scala.inline
+    def setEndTime(value: TimestampType): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setMaxSize(value: AutoScalingGroupMaxSize): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSize: Self = this.set("MaxSize", js.undefined)
+    @scala.inline
+    def setMinSize(value: AutoScalingGroupMinSize): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSize: Self = this.set("MinSize", js.undefined)
+    @scala.inline
+    def setRecurrence(value: XmlStringMaxLen255): Self = this.set("Recurrence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurrence: Self = this.set("Recurrence", js.undefined)
+    @scala.inline
+    def setStartTime(value: TimestampType): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTime(value: TimestampType): Self = this.set("Time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("Time", js.undefined)
+  }
+  
 }
 

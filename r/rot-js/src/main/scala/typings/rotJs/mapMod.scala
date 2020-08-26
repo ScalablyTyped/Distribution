@@ -71,7 +71,7 @@ object mapMod extends js.Object {
               Instantiable3[
                 /* width */ Double, 
                 /* height */ Double, 
-                js.UndefOr[/* options */ PartialOptionsBorn], 
+                /* options */ js.UndefOr[PartialOptionsBorn], 
                 typings.rotJs.cellularMod.default
               ]
             ]
@@ -82,7 +82,7 @@ object mapMod extends js.Object {
               Instantiable3[
                 /* width */ Double, 
                 /* height */ Double, 
-                js.UndefOr[/* options */ PartialOptionsCorridorLength], 
+                /* options */ js.UndefOr[PartialOptionsCorridorLength], 
                 typings.rotJs.diggerMod.default
               ]
             ]
@@ -101,7 +101,7 @@ object mapMod extends js.Object {
               Instantiable3[
                 /* width */ Double, 
                 /* height */ Double, 
-                js.UndefOr[/* regularity */ Double], 
+                /* regularity */ js.UndefOr[Double], 
                 typings.rotJs.iceymazeMod.default
               ]
             ]

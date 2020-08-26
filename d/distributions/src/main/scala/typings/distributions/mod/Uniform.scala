@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object Uniform extends js.Object {
   def apply(): Distribution = js.native
+  def apply(a: js.UndefOr[scala.Nothing], b: Double): Distribution = js.native
   def apply(a: Double): Distribution = js.native
   def apply(a: Double, b: Double): Distribution = js.native
 }

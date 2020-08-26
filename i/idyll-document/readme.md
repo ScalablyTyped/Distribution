@@ -12,7 +12,7 @@ The Idyll runtime, implemented as a React component.
 | Keywords           | - |
 | # releases         | 72 |
 | # dependents       | 2 |
-| # downloads        | 11175 |
+| # downloads        | 11333 |
 | # stars            | 0 |
 
 ## Links

@@ -58,33 +58,68 @@ trait UpdateNetworkProfileRequest extends js.Object {
 
 object UpdateNetworkProfileRequest {
   @scala.inline
-  def apply(
-    arn: AmazonResourceName,
-    description: Message = null,
-    downlinkBandwidthBits: js.UndefOr[Long] = js.undefined,
-    downlinkDelayMs: js.UndefOr[Long] = js.undefined,
-    downlinkJitterMs: js.UndefOr[Long] = js.undefined,
-    downlinkLossPercent: js.UndefOr[PercentInteger] = js.undefined,
-    name: Name = null,
-    `type`: NetworkProfileType = null,
-    uplinkBandwidthBits: js.UndefOr[Long] = js.undefined,
-    uplinkDelayMs: js.UndefOr[Long] = js.undefined,
-    uplinkJitterMs: js.UndefOr[Long] = js.undefined,
-    uplinkLossPercent: js.UndefOr[PercentInteger] = js.undefined
-  ): UpdateNetworkProfileRequest = {
+  def apply(arn: AmazonResourceName): UpdateNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(downlinkBandwidthBits)) __obj.updateDynamic("downlinkBandwidthBits")(downlinkBandwidthBits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(downlinkDelayMs)) __obj.updateDynamic("downlinkDelayMs")(downlinkDelayMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(downlinkJitterMs)) __obj.updateDynamic("downlinkJitterMs")(downlinkJitterMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(downlinkLossPercent)) __obj.updateDynamic("downlinkLossPercent")(downlinkLossPercent.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uplinkBandwidthBits)) __obj.updateDynamic("uplinkBandwidthBits")(uplinkBandwidthBits.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uplinkDelayMs)) __obj.updateDynamic("uplinkDelayMs")(uplinkDelayMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uplinkJitterMs)) __obj.updateDynamic("uplinkJitterMs")(uplinkJitterMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uplinkLossPercent)) __obj.updateDynamic("uplinkLossPercent")(uplinkLossPercent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNetworkProfileRequest]
   }
+  @scala.inline
+  implicit class UpdateNetworkProfileRequestOps[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: AmazonResourceName): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Message): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDownlinkBandwidthBits(value: Long): Self = this.set("downlinkBandwidthBits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownlinkBandwidthBits: Self = this.set("downlinkBandwidthBits", js.undefined)
+    @scala.inline
+    def setDownlinkDelayMs(value: Long): Self = this.set("downlinkDelayMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownlinkDelayMs: Self = this.set("downlinkDelayMs", js.undefined)
+    @scala.inline
+    def setDownlinkJitterMs(value: Long): Self = this.set("downlinkJitterMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownlinkJitterMs: Self = this.set("downlinkJitterMs", js.undefined)
+    @scala.inline
+    def setDownlinkLossPercent(value: PercentInteger): Self = this.set("downlinkLossPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownlinkLossPercent: Self = this.set("downlinkLossPercent", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: NetworkProfileType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUplinkBandwidthBits(value: Long): Self = this.set("uplinkBandwidthBits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUplinkBandwidthBits: Self = this.set("uplinkBandwidthBits", js.undefined)
+    @scala.inline
+    def setUplinkDelayMs(value: Long): Self = this.set("uplinkDelayMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUplinkDelayMs: Self = this.set("uplinkDelayMs", js.undefined)
+    @scala.inline
+    def setUplinkJitterMs(value: Long): Self = this.set("uplinkJitterMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUplinkJitterMs: Self = this.set("uplinkJitterMs", js.undefined)
+    @scala.inline
+    def setUplinkLossPercent(value: PercentInteger): Self = this.set("uplinkLossPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUplinkLossPercent: Self = this.set("uplinkLossPercent", js.undefined)
+  }
+  
 }
 

@@ -44,6 +44,7 @@ abstract class Geometry () extends js.Object {
   def toKML(): Geometry = js.native
   def toObject(): js.Object = js.native
   def toWKB(): Geometry = js.native
+  def toWKB(byte_order: js.UndefOr[scala.Nothing], variant: String): Geometry = js.native
   def toWKB(byte_order: String): Geometry = js.native
   def toWKB(byte_order: String, variant: String): Geometry = js.native
   def toWKT(): Geometry = js.native

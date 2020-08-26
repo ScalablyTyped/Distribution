@@ -22,6 +22,7 @@ object FeatureGroup_ extends js.Object {
   class SubGroup[P] ()
     extends typings.leaflet.mod.FeatureGroup_[P] {
     def this(parentGroup: LayerGroup_[_]) = this()
+    def this(parentGroup: js.UndefOr[scala.Nothing], layers: js.Array[Layer]) = this()
     def this(parentGroup: LayerGroup_[_], layers: js.Array[Layer]) = this()
     /**
       * Returns the current parent group.

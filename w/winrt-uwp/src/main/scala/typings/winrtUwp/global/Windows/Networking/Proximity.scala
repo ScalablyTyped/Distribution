@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.Networking.Proximity.PeerDiscoveryTypes
 import typings.winrtUwp.Windows.Networking.Proximity.PeerRole
-import typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectState
 import typings.winrtUwp.Windows.Networking.Sockets.StreamSocket
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.WinRTEvent
@@ -24,11 +23,7 @@ object Proximity extends js.Object {
   /** Contains properties that are passed to an application with the ConnectionRequested event. */
   @js.native
   abstract class ConnectionRequestedEventArgs ()
-    extends typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs {
-    /** Gets the information for a peer that's requesting a connection. */
-    /* CompleteClass */
-    override var peerInformation: typings.winrtUwp.Windows.Networking.Proximity.PeerInformation = js.native
-  }
+    extends typings.winrtUwp.Windows.Networking.Proximity.ConnectionRequestedEventArgs
   
   /** Enables you to discover other instances of your app on nearby devices and create a socket connection between the peer apps by using a tap gesture or by browsing. For creating Bluetooth socket connections on Windows 8.1 and later, use Windows.Devices.Bluetooth.Rfcomm instead. */
   @js.native
@@ -38,23 +33,7 @@ object Proximity extends js.Object {
   /** Contains information that identifies a peer. */
   @js.native
   abstract class PeerInformation ()
-    extends typings.winrtUwp.Windows.Networking.Proximity.PeerInformation {
-    /** Gets the device data included during device discovery. */
-    /* CompleteClass */
-    override var discoveryData: IBuffer = js.native
-    /** Gets the display name of the peer. */
-    /* CompleteClass */
-    override var displayName: String = js.native
-    /** Gets the hostname or IP address of the peer. */
-    /* CompleteClass */
-    override var hostName: typings.winrtUwp.Windows.Networking.HostName = js.native
-    /** Gets the app id for the peer app. */
-    /* CompleteClass */
-    override var id: String = js.native
-    /** Gets the service name or TCP port number of the peer. */
-    /* CompleteClass */
-    override var serviceName: String = js.native
-  }
+    extends typings.winrtUwp.Windows.Networking.Proximity.PeerInformation
   
   /** Dynamically discovers peer apps within wireless range. */
   @js.native
@@ -69,35 +48,12 @@ object Proximity extends js.Object {
   /** Represents a message that's received from a subscription. */
   @js.native
   abstract class ProximityMessage ()
-    extends typings.winrtUwp.Windows.Networking.Proximity.ProximityMessage {
-    /** Gets the binary data of the message. */
-    /* CompleteClass */
-    override var data: IBuffer = js.native
-    /** Gets the message data as text. */
-    /* CompleteClass */
-    override var dataAsString: String = js.native
-    /** Gets the type of the message. */
-    /* CompleteClass */
-    override var messageType: String = js.native
-    /** Gets the subscription ID of the message. */
-    /* CompleteClass */
-    override var subscriptionId: Double = js.native
-  }
+    extends typings.winrtUwp.Windows.Networking.Proximity.ProximityMessage
   
   /** Contains properties that the TriggeredConnectionStateChanged event passes to an application. */
   @js.native
   abstract class TriggeredConnectionStateChangedEventArgs ()
-    extends typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs {
-    /** Gets the unique identifier for the connection in progress. */
-    /* CompleteClass */
-    override var id: Double = js.native
-    /** Gets the StreamSocket instance for the connection. */
-    /* CompleteClass */
-    override var socket: StreamSocket = js.native
-    /** Gets the state of the connection in progress. */
-    /* CompleteClass */
-    override var state: TriggeredConnectState = js.native
-  }
+    extends typings.winrtUwp.Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs
   
   /** Indicates which discovery options are available to use with the PeerFinder class. */
   @js.native

@@ -15,142 +15,241 @@ import scala.scalajs.js.annotation._
   * See online docs for more info:
   *  https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
   */
+@js.native
 trait DatepickerOptions extends js.Object {
-  var assumeNearbyYear: js.UndefOr[Boolean | Double] = js.undefined
-  var autoclose: js.UndefOr[Boolean] = js.undefined
+  var assumeNearbyYear: js.UndefOr[Boolean | Double] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.native
   var beforeShowCentury: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.undefined
+  ] = js.native
   var beforeShowDay: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]]
-  ] = js.undefined
+  ] = js.native
   var beforeShowDecade: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.undefined
+  ] = js.native
   var beforeShowMonth: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.undefined
+  ] = js.native
   var beforeShowYear: js.UndefOr[
     js.Function1[/* date */ Date, js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]]
-  ] = js.undefined
-  var calendarWeeks: js.UndefOr[Boolean] = js.undefined
-  var clearBtn: js.UndefOr[Boolean] = js.undefined
-  var container: js.UndefOr[String] = js.undefined
-  var datesDisabled: js.UndefOr[String | js.Array[String]] = js.undefined
-  var daysOfWeekDisabled: js.UndefOr[String | js.Array[Double]] = js.undefined
-  var daysOfWeekHighlighted: js.UndefOr[String | js.Array[Double]] = js.undefined
-  var defaultViewDate: js.UndefOr[Date | String | DatepickerViewDate] = js.undefined
-  var enableOnReadonly: js.UndefOr[Boolean] = js.undefined
-  var endDate: js.UndefOr[Date | String] = js.undefined
-  var forceParse: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[String | DatepickerCustomFormatOptions] = js.undefined
-  var immediateUpdates: js.UndefOr[Boolean] = js.undefined
-  var inputs: js.UndefOr[js.Array[_]] = js.undefined
-  var keepEmptyValues: js.UndefOr[Boolean] = js.undefined
-  var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var maxViewMode: js.UndefOr[DatepickerViewModes] = js.undefined
-  var minViewMode: js.UndefOr[DatepickerViewModes] = js.undefined
-  var multidate: js.UndefOr[Boolean | Double] = js.undefined
-  var multidateSeparator: js.UndefOr[String] = js.undefined
-  var orientation: js.UndefOr[DatepickerOrientations] = js.undefined
-  var showOnFocus: js.UndefOr[Boolean] = js.undefined
-  var showWeekDays: js.UndefOr[Boolean] = js.undefined
-  var startDate: js.UndefOr[Date | String] = js.undefined
-  var startView: js.UndefOr[DatepickerViewModes] = js.undefined
-  var templates: js.UndefOr[js.Any] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var todayBtn: js.UndefOr[Boolean | linked] = js.undefined
-  var todayHighlight: js.UndefOr[Boolean] = js.undefined
-  var updateViewDate: js.UndefOr[Boolean] = js.undefined
-  var weekStart: js.UndefOr[Double] = js.undefined
-  var zIndexOffset: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var calendarWeeks: js.UndefOr[Boolean] = js.native
+  var clearBtn: js.UndefOr[Boolean] = js.native
+  var container: js.UndefOr[String] = js.native
+  var datesDisabled: js.UndefOr[String | js.Array[String]] = js.native
+  var daysOfWeekDisabled: js.UndefOr[String | js.Array[Double]] = js.native
+  var daysOfWeekHighlighted: js.UndefOr[String | js.Array[Double]] = js.native
+  var defaultViewDate: js.UndefOr[Date | String | DatepickerViewDate] = js.native
+  var enableOnReadonly: js.UndefOr[Boolean] = js.native
+  var endDate: js.UndefOr[Date | String] = js.native
+  var forceParse: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[String | DatepickerCustomFormatOptions] = js.native
+  var immediateUpdates: js.UndefOr[Boolean] = js.native
+  var inputs: js.UndefOr[js.Array[_]] = js.native
+  var keepEmptyValues: js.UndefOr[Boolean] = js.native
+  var keyboardNavigation: js.UndefOr[Boolean] = js.native
+  var language: js.UndefOr[String] = js.native
+  var maxViewMode: js.UndefOr[DatepickerViewModes] = js.native
+  var minViewMode: js.UndefOr[DatepickerViewModes] = js.native
+  var multidate: js.UndefOr[Boolean | Double] = js.native
+  var multidateSeparator: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[DatepickerOrientations] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showWeekDays: js.UndefOr[Boolean] = js.native
+  var startDate: js.UndefOr[Date | String] = js.native
+  var startView: js.UndefOr[DatepickerViewModes] = js.native
+  var templates: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[String] = js.native
+  var todayBtn: js.UndefOr[Boolean | linked] = js.native
+  var todayHighlight: js.UndefOr[Boolean] = js.native
+  var updateViewDate: js.UndefOr[Boolean] = js.native
+  var weekStart: js.UndefOr[Double] = js.native
+  var zIndexOffset: js.UndefOr[Double] = js.native
 }
 
 object DatepickerOptions {
   @scala.inline
-  def apply(
-    assumeNearbyYear: Boolean | Double = null,
-    autoclose: js.UndefOr[Boolean] = js.undefined,
-    beforeShowCentury: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
-    beforeShowDay: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse] = null,
-    beforeShowDecade: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
-    beforeShowMonth: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
-    beforeShowYear: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse] = null,
-    calendarWeeks: js.UndefOr[Boolean] = js.undefined,
-    clearBtn: js.UndefOr[Boolean] = js.undefined,
-    container: String = null,
-    datesDisabled: String | js.Array[String] = null,
-    daysOfWeekDisabled: String | js.Array[Double] = null,
-    daysOfWeekHighlighted: String | js.Array[Double] = null,
-    defaultViewDate: Date | String | DatepickerViewDate = null,
-    enableOnReadonly: js.UndefOr[Boolean] = js.undefined,
-    endDate: Date | String = null,
-    forceParse: js.UndefOr[Boolean] = js.undefined,
-    format: String | DatepickerCustomFormatOptions = null,
-    immediateUpdates: js.UndefOr[Boolean] = js.undefined,
-    inputs: js.Array[_] = null,
-    keepEmptyValues: js.UndefOr[Boolean] = js.undefined,
-    keyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    maxViewMode: DatepickerViewModes = null,
-    minViewMode: DatepickerViewModes = null,
-    multidate: Boolean | Double = null,
-    multidateSeparator: String = null,
-    orientation: DatepickerOrientations = null,
-    showOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showWeekDays: js.UndefOr[Boolean] = js.undefined,
-    startDate: Date | String = null,
-    startView: DatepickerViewModes = null,
-    templates: js.Any = null,
-    title: String = null,
-    todayBtn: Boolean | linked = null,
-    todayHighlight: js.UndefOr[Boolean] = js.undefined,
-    updateViewDate: js.UndefOr[Boolean] = js.undefined,
-    weekStart: js.UndefOr[Double] = js.undefined,
-    zIndexOffset: js.UndefOr[Double] = js.undefined
-  ): DatepickerOptions = {
+  def apply(): DatepickerOptions = {
     val __obj = js.Dynamic.literal()
-    if (assumeNearbyYear != null) __obj.updateDynamic("assumeNearbyYear")(assumeNearbyYear.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.get.asInstanceOf[js.Any])
-    if (beforeShowCentury != null) __obj.updateDynamic("beforeShowCentury")(js.Any.fromFunction1(beforeShowCentury))
-    if (beforeShowDay != null) __obj.updateDynamic("beforeShowDay")(js.Any.fromFunction1(beforeShowDay))
-    if (beforeShowDecade != null) __obj.updateDynamic("beforeShowDecade")(js.Any.fromFunction1(beforeShowDecade))
-    if (beforeShowMonth != null) __obj.updateDynamic("beforeShowMonth")(js.Any.fromFunction1(beforeShowMonth))
-    if (beforeShowYear != null) __obj.updateDynamic("beforeShowYear")(js.Any.fromFunction1(beforeShowYear))
-    if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearBtn)) __obj.updateDynamic("clearBtn")(clearBtn.get.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (datesDisabled != null) __obj.updateDynamic("datesDisabled")(datesDisabled.asInstanceOf[js.Any])
-    if (daysOfWeekDisabled != null) __obj.updateDynamic("daysOfWeekDisabled")(daysOfWeekDisabled.asInstanceOf[js.Any])
-    if (daysOfWeekHighlighted != null) __obj.updateDynamic("daysOfWeekHighlighted")(daysOfWeekHighlighted.asInstanceOf[js.Any])
-    if (defaultViewDate != null) __obj.updateDynamic("defaultViewDate")(defaultViewDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOnReadonly)) __obj.updateDynamic("enableOnReadonly")(enableOnReadonly.get.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceParse)) __obj.updateDynamic("forceParse")(forceParse.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(immediateUpdates)) __obj.updateDynamic("immediateUpdates")(immediateUpdates.get.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepEmptyValues)) __obj.updateDynamic("keepEmptyValues")(keepEmptyValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardNavigation)) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (maxViewMode != null) __obj.updateDynamic("maxViewMode")(maxViewMode.asInstanceOf[js.Any])
-    if (minViewMode != null) __obj.updateDynamic("minViewMode")(minViewMode.asInstanceOf[js.Any])
-    if (multidate != null) __obj.updateDynamic("multidate")(multidate.asInstanceOf[js.Any])
-    if (multidateSeparator != null) __obj.updateDynamic("multidateSeparator")(multidateSeparator.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWeekDays)) __obj.updateDynamic("showWeekDays")(showWeekDays.get.asInstanceOf[js.Any])
-    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
-    if (startView != null) __obj.updateDynamic("startView")(startView.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (todayBtn != null) __obj.updateDynamic("todayBtn")(todayBtn.asInstanceOf[js.Any])
-    if (!js.isUndefined(todayHighlight)) __obj.updateDynamic("todayHighlight")(todayHighlight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateViewDate)) __obj.updateDynamic("updateViewDate")(updateViewDate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekStart)) __obj.updateDynamic("weekStart")(weekStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndexOffset)) __obj.updateDynamic("zIndexOffset")(zIndexOffset.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerOptions]
   }
+  @scala.inline
+  implicit class DatepickerOptionsOps[Self <: DatepickerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssumeNearbyYear(value: Boolean | Double): Self = this.set("assumeNearbyYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumeNearbyYear: Self = this.set("assumeNearbyYear", js.undefined)
+    @scala.inline
+    def setAutoclose(value: Boolean): Self = this.set("autoclose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoclose: Self = this.set("autoclose", js.undefined)
+    @scala.inline
+    def setBeforeShowCentury(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = this.set("beforeShowCentury", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeShowCentury: Self = this.set("beforeShowCentury", js.undefined)
+    @scala.inline
+    def setBeforeShowDay(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowDayResponse]): Self = this.set("beforeShowDay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeShowDay: Self = this.set("beforeShowDay", js.undefined)
+    @scala.inline
+    def setBeforeShowDecade(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = this.set("beforeShowDecade", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeShowDecade: Self = this.set("beforeShowDecade", js.undefined)
+    @scala.inline
+    def setBeforeShowMonth(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = this.set("beforeShowMonth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeShowMonth: Self = this.set("beforeShowMonth", js.undefined)
+    @scala.inline
+    def setBeforeShowYear(value: /* date */ Date => js.UndefOr[String | Boolean | DatepickerBeforeShowResponse]): Self = this.set("beforeShowYear", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeShowYear: Self = this.set("beforeShowYear", js.undefined)
+    @scala.inline
+    def setCalendarWeeks(value: Boolean): Self = this.set("calendarWeeks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarWeeks: Self = this.set("calendarWeeks", js.undefined)
+    @scala.inline
+    def setClearBtn(value: Boolean): Self = this.set("clearBtn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearBtn: Self = this.set("clearBtn", js.undefined)
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setDatesDisabledVarargs(value: String*): Self = this.set("datesDisabled", js.Array(value :_*))
+    @scala.inline
+    def setDatesDisabled(value: String | js.Array[String]): Self = this.set("datesDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatesDisabled: Self = this.set("datesDisabled", js.undefined)
+    @scala.inline
+    def setDaysOfWeekDisabledVarargs(value: Double*): Self = this.set("daysOfWeekDisabled", js.Array(value :_*))
+    @scala.inline
+    def setDaysOfWeekDisabled(value: String | js.Array[Double]): Self = this.set("daysOfWeekDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaysOfWeekDisabled: Self = this.set("daysOfWeekDisabled", js.undefined)
+    @scala.inline
+    def setDaysOfWeekHighlightedVarargs(value: Double*): Self = this.set("daysOfWeekHighlighted", js.Array(value :_*))
+    @scala.inline
+    def setDaysOfWeekHighlighted(value: String | js.Array[Double]): Self = this.set("daysOfWeekHighlighted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDaysOfWeekHighlighted: Self = this.set("daysOfWeekHighlighted", js.undefined)
+    @scala.inline
+    def setDefaultViewDate(value: Date | String | DatepickerViewDate): Self = this.set("defaultViewDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultViewDate: Self = this.set("defaultViewDate", js.undefined)
+    @scala.inline
+    def setEnableOnReadonly(value: Boolean): Self = this.set("enableOnReadonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableOnReadonly: Self = this.set("enableOnReadonly", js.undefined)
+    @scala.inline
+    def setEndDate(value: Date | String): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+    @scala.inline
+    def setForceParse(value: Boolean): Self = this.set("forceParse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceParse: Self = this.set("forceParse", js.undefined)
+    @scala.inline
+    def setFormat(value: String | DatepickerCustomFormatOptions): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setImmediateUpdates(value: Boolean): Self = this.set("immediateUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImmediateUpdates: Self = this.set("immediateUpdates", js.undefined)
+    @scala.inline
+    def setInputsVarargs(value: js.Any*): Self = this.set("inputs", js.Array(value :_*))
+    @scala.inline
+    def setInputs(value: js.Array[_]): Self = this.set("inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("inputs", js.undefined)
+    @scala.inline
+    def setKeepEmptyValues(value: Boolean): Self = this.set("keepEmptyValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepEmptyValues: Self = this.set("keepEmptyValues", js.undefined)
+    @scala.inline
+    def setKeyboardNavigation(value: Boolean): Self = this.set("keyboardNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardNavigation: Self = this.set("keyboardNavigation", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setMaxViewMode(value: DatepickerViewModes): Self = this.set("maxViewMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxViewMode: Self = this.set("maxViewMode", js.undefined)
+    @scala.inline
+    def setMinViewMode(value: DatepickerViewModes): Self = this.set("minViewMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinViewMode: Self = this.set("minViewMode", js.undefined)
+    @scala.inline
+    def setMultidate(value: Boolean | Double): Self = this.set("multidate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultidate: Self = this.set("multidate", js.undefined)
+    @scala.inline
+    def setMultidateSeparator(value: String): Self = this.set("multidateSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultidateSeparator: Self = this.set("multidateSeparator", js.undefined)
+    @scala.inline
+    def setOrientation(value: DatepickerOrientations): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setShowOnFocus(value: Boolean): Self = this.set("showOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnFocus: Self = this.set("showOnFocus", js.undefined)
+    @scala.inline
+    def setShowWeekDays(value: Boolean): Self = this.set("showWeekDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWeekDays: Self = this.set("showWeekDays", js.undefined)
+    @scala.inline
+    def setStartDate(value: Date | String): Self = this.set("startDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartDate: Self = this.set("startDate", js.undefined)
+    @scala.inline
+    def setStartView(value: DatepickerViewModes): Self = this.set("startView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartView: Self = this.set("startView", js.undefined)
+    @scala.inline
+    def setTemplates(value: js.Any): Self = this.set("templates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplates: Self = this.set("templates", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTodayBtn(value: Boolean | linked): Self = this.set("todayBtn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTodayBtn: Self = this.set("todayBtn", js.undefined)
+    @scala.inline
+    def setTodayHighlight(value: Boolean): Self = this.set("todayHighlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTodayHighlight: Self = this.set("todayHighlight", js.undefined)
+    @scala.inline
+    def setUpdateViewDate(value: Boolean): Self = this.set("updateViewDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateViewDate: Self = this.set("updateViewDate", js.undefined)
+    @scala.inline
+    def setWeekStart(value: Double): Self = this.set("weekStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeekStart: Self = this.set("weekStart", js.undefined)
+    @scala.inline
+    def setZIndexOffset(value: Double): Self = this.set("zIndexOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndexOffset: Self = this.set("zIndexOffset", js.undefined)
+  }
+  
 }
 

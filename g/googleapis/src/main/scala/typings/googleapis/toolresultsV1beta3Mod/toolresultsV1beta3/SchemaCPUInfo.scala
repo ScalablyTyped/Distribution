@@ -23,16 +23,34 @@ trait SchemaCPUInfo extends js.Object {
 
 object SchemaCPUInfo {
   @scala.inline
-  def apply(
-    cpuProcessor: String = null,
-    cpuSpeedInGhz: js.UndefOr[Double] = js.undefined,
-    numberOfCores: js.UndefOr[Double] = js.undefined
-  ): SchemaCPUInfo = {
+  def apply(): SchemaCPUInfo = {
     val __obj = js.Dynamic.literal()
-    if (cpuProcessor != null) __obj.updateDynamic("cpuProcessor")(cpuProcessor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cpuSpeedInGhz)) __obj.updateDynamic("cpuSpeedInGhz")(cpuSpeedInGhz.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfCores)) __obj.updateDynamic("numberOfCores")(numberOfCores.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCPUInfo]
   }
+  @scala.inline
+  implicit class SchemaCPUInfoOps[Self <: SchemaCPUInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpuProcessor(value: String): Self = this.set("cpuProcessor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuProcessor: Self = this.set("cpuProcessor", js.undefined)
+    @scala.inline
+    def setCpuSpeedInGhz(value: Double): Self = this.set("cpuSpeedInGhz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuSpeedInGhz: Self = this.set("cpuSpeedInGhz", js.undefined)
+    @scala.inline
+    def setNumberOfCores(value: Double): Self = this.set("numberOfCores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfCores: Self = this.set("numberOfCores", js.undefined)
+  }
+  
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents a client-side equivalent of the WeeklyRecurrenceControl.
   */
+@js.native
 trait ASPxClientWeeklyRecurrenceControl extends ASPxClientRecurrenceControlBase
 
 object ASPxClientWeeklyRecurrenceControl {

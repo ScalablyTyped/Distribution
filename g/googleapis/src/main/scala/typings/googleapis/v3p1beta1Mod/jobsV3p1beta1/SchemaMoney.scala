@@ -31,12 +31,34 @@ trait SchemaMoney extends js.Object {
 
 object SchemaMoney {
   @scala.inline
-  def apply(currencyCode: String = null, nanos: js.UndefOr[Double] = js.undefined, units: String = null): SchemaMoney = {
+  def apply(): SchemaMoney = {
     val __obj = js.Dynamic.literal()
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.get.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMoney]
   }
+  @scala.inline
+  implicit class SchemaMoneyOps[Self <: SchemaMoney] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNanos: Self = this.set("nanos", js.undefined)
+    @scala.inline
+    def setUnits(value: String): Self = this.set("units", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnits: Self = this.set("units", js.undefined)
+  }
+  
 }
 

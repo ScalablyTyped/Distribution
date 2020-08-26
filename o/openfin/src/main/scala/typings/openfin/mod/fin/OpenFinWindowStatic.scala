@@ -32,7 +32,7 @@ Instantiable1[/* options */ WindowOption, OpenFinWindow]
     ]
      with Instantiable3[
       /* options */ WindowOption, 
-      /* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit], 
+      js.UndefOr[/* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit]], 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinWindow
     ] {

@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to all indexes in a document. */
+@js.native
 trait DocumentIndexes
   extends XNameAccess
      with XIndexAccess

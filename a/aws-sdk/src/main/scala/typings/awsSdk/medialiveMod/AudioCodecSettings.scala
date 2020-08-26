@@ -15,20 +15,42 @@ trait AudioCodecSettings extends js.Object {
 
 object AudioCodecSettings {
   @scala.inline
-  def apply(
-    AacSettings: AacSettings = null,
-    Ac3Settings: Ac3Settings = null,
-    Eac3Settings: Eac3Settings = null,
-    Mp2Settings: Mp2Settings = null,
-    PassThroughSettings: PassThroughSettings = null
-  ): AudioCodecSettings = {
+  def apply(): AudioCodecSettings = {
     val __obj = js.Dynamic.literal()
-    if (AacSettings != null) __obj.updateDynamic("AacSettings")(AacSettings.asInstanceOf[js.Any])
-    if (Ac3Settings != null) __obj.updateDynamic("Ac3Settings")(Ac3Settings.asInstanceOf[js.Any])
-    if (Eac3Settings != null) __obj.updateDynamic("Eac3Settings")(Eac3Settings.asInstanceOf[js.Any])
-    if (Mp2Settings != null) __obj.updateDynamic("Mp2Settings")(Mp2Settings.asInstanceOf[js.Any])
-    if (PassThroughSettings != null) __obj.updateDynamic("PassThroughSettings")(PassThroughSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioCodecSettings]
   }
+  @scala.inline
+  implicit class AudioCodecSettingsOps[Self <: AudioCodecSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAacSettings(value: AacSettings): Self = this.set("AacSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAacSettings: Self = this.set("AacSettings", js.undefined)
+    @scala.inline
+    def setAc3Settings(value: Ac3Settings): Self = this.set("Ac3Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAc3Settings: Self = this.set("Ac3Settings", js.undefined)
+    @scala.inline
+    def setEac3Settings(value: Eac3Settings): Self = this.set("Eac3Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEac3Settings: Self = this.set("Eac3Settings", js.undefined)
+    @scala.inline
+    def setMp2Settings(value: Mp2Settings): Self = this.set("Mp2Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMp2Settings: Self = this.set("Mp2Settings", js.undefined)
+    @scala.inline
+    def setPassThroughSettings(value: PassThroughSettings): Self = this.set("PassThroughSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassThroughSettings: Self = this.set("PassThroughSettings", js.undefined)
+  }
+  
 }
 

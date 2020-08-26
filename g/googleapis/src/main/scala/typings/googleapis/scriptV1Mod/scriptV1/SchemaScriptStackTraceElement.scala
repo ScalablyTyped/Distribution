@@ -21,11 +21,30 @@ trait SchemaScriptStackTraceElement extends js.Object {
 
 object SchemaScriptStackTraceElement {
   @scala.inline
-  def apply(function: String = null, lineNumber: js.UndefOr[Double] = js.undefined): SchemaScriptStackTraceElement = {
+  def apply(): SchemaScriptStackTraceElement = {
     val __obj = js.Dynamic.literal()
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScriptStackTraceElement]
   }
+  @scala.inline
+  implicit class SchemaScriptStackTraceElementOps[Self <: SchemaScriptStackTraceElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunction(value: String): Self = this.set("function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunction: Self = this.set("function", js.undefined)
+    @scala.inline
+    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+  }
+  
 }
 

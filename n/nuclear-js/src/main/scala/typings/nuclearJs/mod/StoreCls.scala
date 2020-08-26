@@ -14,16 +14,5 @@ class StoreCls[T] protected () extends Store[T] {
     * application state.
     */
   def this(config: StoreLike[T]) = this()
-  /**
-    * Gets the initial state for this type of store
-    */
-  /* CompleteClass */
-  override def getInitialState(): T = js.native
-  /**
-    * Sets up message handlers via `this.on` and to set up the initial
-    * state.
-    */
-  /* CompleteClass */
-  override def initialize(): Unit = js.native
 }
 

@@ -18,11 +18,32 @@ trait DescribeAccessPointsOutput extends js.Object {
 
 object DescribeAccessPointsOutput {
   @scala.inline
-  def apply(LoadBalancerDescriptions: LoadBalancerDescriptions = null, NextMarker: Marker = null): DescribeAccessPointsOutput = {
+  def apply(): DescribeAccessPointsOutput = {
     val __obj = js.Dynamic.literal()
-    if (LoadBalancerDescriptions != null) __obj.updateDynamic("LoadBalancerDescriptions")(LoadBalancerDescriptions.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccessPointsOutput]
   }
+  @scala.inline
+  implicit class DescribeAccessPointsOutputOps[Self <: DescribeAccessPointsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = this.set("LoadBalancerDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancerDescriptions(value: LoadBalancerDescriptions): Self = this.set("LoadBalancerDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerDescriptions: Self = this.set("LoadBalancerDescriptions", js.undefined)
+    @scala.inline
+    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

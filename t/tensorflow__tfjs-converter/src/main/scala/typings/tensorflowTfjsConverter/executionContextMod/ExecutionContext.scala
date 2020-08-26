@@ -1,5 +1,7 @@
 package typings.tensorflowTfjsConverter.executionContextMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.tensorflowTfjsConverter.executorTypesMod.FunctionExecutor
 import typings.tensorflowTfjsConverter.tensorArrayMod.TensorArray
 import typings.tensorflowTfjsConverter.typesMod.NamedTensorsMap
 import typings.tensorflowTfjsConverter.typesMod.TensorArrayMap
@@ -13,6 +15,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExecutionContext protected () extends js.Object {
   def this(weightMap: NamedTensorsMap, tensorArrayMap: TensorArrayMap) = this()
+  def this(
+    weightMap: NamedTensorsMap,
+    tensorArrayMap: TensorArrayMap,
+    functionMap: StringDictionary[FunctionExecutor]
+  ) = this()
   var _currentContextIds: js.Any = js.native
   var contextIdforContexts: js.Any = js.native
   var contexts: js.Any = js.native
@@ -31,6 +38,7 @@ class ExecutionContext protected () extends js.Object {
     * This allow access to the nodes in the current and parent frames.
     */
   val currentContextIds: js.Array[String] = js.native
+  val functionMap: StringDictionary[FunctionExecutor] = js.native
   var generateCurrentContextIds: js.Any = js.native
   var lastId: js.Any = js.native
   var newFrame: js.Any = js.native

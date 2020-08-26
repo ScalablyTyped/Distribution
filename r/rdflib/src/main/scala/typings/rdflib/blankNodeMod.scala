@@ -49,7 +49,7 @@ object blankNodeMod extends js.Object {
       * The identifier for the blank node
       */
     def id: String = js.native
-    def id(value: String): js.Any = js.native
+    def id_=(value: String): Unit = js.native
   }
   
   @js.native

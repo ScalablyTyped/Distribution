@@ -22,10 +22,32 @@ trait RegisterClientRequest extends js.Object {
 
 object RegisterClientRequest {
   @scala.inline
-  def apply(clientName: ClientName, clientType: ClientType, scopes: Scopes = null): RegisterClientRequest = {
+  def apply(clientName: ClientName, clientType: ClientType): RegisterClientRequest = {
     val __obj = js.Dynamic.literal(clientName = clientName.asInstanceOf[js.Any], clientType = clientType.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterClientRequest]
   }
+  @scala.inline
+  implicit class RegisterClientRequestOps[Self <: RegisterClientRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientName(value: ClientName): Self = this.set("clientName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientType(value: ClientType): Self = this.set("clientType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScopesVarargs(value: Scope*): Self = this.set("scopes", js.Array(value :_*))
+    @scala.inline
+    def setScopes(value: Scopes): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopes: Self = this.set("scopes", js.undefined)
+  }
+  
 }
 

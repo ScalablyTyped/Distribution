@@ -11,7 +11,7 @@ A simple and intuitive object validation library
 | Keywords           | json, schema, JSON Schema, validation, validator |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 61322 |
+| # downloads        | 61975 |
 | # stars            | 4 |
 
 ## Links

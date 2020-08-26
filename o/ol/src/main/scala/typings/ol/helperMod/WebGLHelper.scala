@@ -20,6 +20,7 @@ trait WebGLHelper
   def bindBuffer(buffer: typings.ol.bufferMod.default): Unit = js.native
   def compileShader(source: String, `type`: ShaderType): WebGLShader = js.native
   def createTexture(size: js.Array[Double]): WebGLTexture = js.native
+  def createTexture(size: js.Array[Double], opt_data: js.UndefOr[scala.Nothing], opt_texture: WebGLTexture): WebGLTexture = js.native
   def createTexture(size: js.Array[Double], opt_data: HTMLCanvasElement): WebGLTexture = js.native
   def createTexture(size: js.Array[Double], opt_data: HTMLCanvasElement, opt_texture: WebGLTexture): WebGLTexture = js.native
   def createTexture(size: js.Array[Double], opt_data: HTMLImageElement): WebGLTexture = js.native

@@ -89,6 +89,7 @@ trait Event
     * @deprecated
     */
   def initEvent(`type`: String): Unit = js.native
+  def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
   def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
   /**

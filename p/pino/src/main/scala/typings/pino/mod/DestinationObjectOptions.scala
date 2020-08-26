@@ -8,27 +8,48 @@ import scala.scalajs.js.annotation._
   * Equivalent of SonicBoom constructor options object
   */
 // TODO: use SonicBoom constructor options interface when available
+@js.native
 trait DestinationObjectOptions extends js.Object {
-  var dest: js.UndefOr[String] = js.undefined
-  var fd: js.UndefOr[String | Double] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var sync: js.UndefOr[Boolean] = js.undefined
+  var dest: js.UndefOr[String] = js.native
+  var fd: js.UndefOr[String | Double] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var sync: js.UndefOr[Boolean] = js.native
 }
 
 object DestinationObjectOptions {
   @scala.inline
-  def apply(
-    dest: String = null,
-    fd: String | Double = null,
-    minLength: js.UndefOr[Double] = js.undefined,
-    sync: js.UndefOr[Boolean] = js.undefined
-  ): DestinationObjectOptions = {
+  def apply(): DestinationObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (dest != null) __obj.updateDynamic("dest")(dest.asInstanceOf[js.Any])
-    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationObjectOptions]
   }
+  @scala.inline
+  implicit class DestinationObjectOptionsOps[Self <: DestinationObjectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDest(value: String): Self = this.set("dest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDest: Self = this.set("dest", js.undefined)
+    @scala.inline
+    def setFd(value: String | Double): Self = this.set("fd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFd: Self = this.set("fd", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setSync(value: Boolean): Self = this.set("sync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSync: Self = this.set("sync", js.undefined)
+  }
+  
 }
 

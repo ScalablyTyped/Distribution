@@ -12,7 +12,7 @@ A responsive YouTube embed component for React.
 | Keywords           | react, youtube, embed, responsive |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 7443 |
+| # downloads        | 8660 |
 | # stars            | 0 |
 
 ## Links

@@ -19,14 +19,30 @@ trait InventoryDestinationBucketEncryption extends js.Object {
 
 object InventoryDestinationBucketEncryption {
   @scala.inline
-  def apply(
-    sseKms: Input[InventoryDestinationBucketEncryptionSseKms] = null,
-    sseS3: Input[InventoryDestinationBucketEncryptionSseS3] = null
-  ): InventoryDestinationBucketEncryption = {
+  def apply(): InventoryDestinationBucketEncryption = {
     val __obj = js.Dynamic.literal()
-    if (sseKms != null) __obj.updateDynamic("sseKms")(sseKms.asInstanceOf[js.Any])
-    if (sseS3 != null) __obj.updateDynamic("sseS3")(sseS3.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventoryDestinationBucketEncryption]
   }
+  @scala.inline
+  implicit class InventoryDestinationBucketEncryptionOps[Self <: InventoryDestinationBucketEncryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSseKms(value: Input[InventoryDestinationBucketEncryptionSseKms]): Self = this.set("sseKms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSseKms: Self = this.set("sseKms", js.undefined)
+    @scala.inline
+    def setSseS3(value: Input[InventoryDestinationBucketEncryptionSseS3]): Self = this.set("sseS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSseS3: Self = this.set("sseS3", js.undefined)
+  }
+  
 }
 

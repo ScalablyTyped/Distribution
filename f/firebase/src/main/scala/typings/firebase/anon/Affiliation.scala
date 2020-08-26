@@ -6,42 +6,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Affiliation
   extends /* key */ StringDictionary[js.Any] {
-  var affiliation: js.UndefOr[String] = js.undefined
-  var coupon: js.UndefOr[String] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[js.Array[Item]] = js.undefined
-  var shipping: js.UndefOr[typings.firebase.mod.analytics.Currency] = js.undefined
-  var tax: js.UndefOr[typings.firebase.mod.analytics.Currency] = js.undefined
-  var transaction_id: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var affiliation: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.native
+  var shipping: js.UndefOr[typings.firebase.mod.analytics.Currency] = js.native
+  var tax: js.UndefOr[typings.firebase.mod.analytics.Currency] = js.native
+  var transaction_id: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object Affiliation {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    affiliation: String = null,
-    coupon: String = null,
-    currency: String = null,
-    items: js.Array[Item] = null,
-    shipping: typings.firebase.mod.analytics.Currency = null,
-    tax: typings.firebase.mod.analytics.Currency = null,
-    transaction_id: String = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): Affiliation = {
+  def apply(): Affiliation = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (shipping != null) __obj.updateDynamic("shipping")(shipping.asInstanceOf[js.Any])
-    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
-    if (transaction_id != null) __obj.updateDynamic("transaction_id")(transaction_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Affiliation]
   }
+  @scala.inline
+  implicit class AffiliationOps[Self <: Affiliation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffiliation(value: String): Self = this.set("affiliation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffiliation: Self = this.set("affiliation", js.undefined)
+    @scala.inline
+    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setShipping(value: typings.firebase.mod.analytics.Currency): Self = this.set("shipping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipping: Self = this.set("shipping", js.undefined)
+    @scala.inline
+    def setTax(value: typings.firebase.mod.analytics.Currency): Self = this.set("tax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax: Self = this.set("tax", js.undefined)
+    @scala.inline
+    def setTransaction_id(value: String): Self = this.set("transaction_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction_id: Self = this.set("transaction_id", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

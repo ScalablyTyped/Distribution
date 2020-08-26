@@ -30,6 +30,7 @@ class ResourceSitesReleases protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaRelease] = js.native
   def create(callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
   def create(params: ParamsResourceSitesReleasesCreate): GaxiosPromise[SchemaRelease] = js.native
   def create(params: ParamsResourceSitesReleasesCreate, callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def create(
@@ -59,6 +60,7 @@ class ResourceSitesReleases protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListReleasesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(params: ParamsResourceSitesReleasesList): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(
     params: ParamsResourceSitesReleasesList,

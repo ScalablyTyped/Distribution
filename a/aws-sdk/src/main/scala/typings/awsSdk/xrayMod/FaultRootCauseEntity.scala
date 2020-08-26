@@ -22,16 +22,36 @@ trait FaultRootCauseEntity extends js.Object {
 
 object FaultRootCauseEntity {
   @scala.inline
-  def apply(
-    Exceptions: RootCauseExceptions = null,
-    Name: String = null,
-    Remote: js.UndefOr[NullableBoolean] = js.undefined
-  ): FaultRootCauseEntity = {
+  def apply(): FaultRootCauseEntity = {
     val __obj = js.Dynamic.literal()
-    if (Exceptions != null) __obj.updateDynamic("Exceptions")(Exceptions.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(Remote)) __obj.updateDynamic("Remote")(Remote.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaultRootCauseEntity]
   }
+  @scala.inline
+  implicit class FaultRootCauseEntityOps[Self <: FaultRootCauseEntity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExceptionsVarargs(value: RootCauseException*): Self = this.set("Exceptions", js.Array(value :_*))
+    @scala.inline
+    def setExceptions(value: RootCauseExceptions): Self = this.set("Exceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExceptions: Self = this.set("Exceptions", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRemote(value: NullableBoolean): Self = this.set("Remote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemote: Self = this.set("Remote", js.undefined)
+  }
+  
 }
 

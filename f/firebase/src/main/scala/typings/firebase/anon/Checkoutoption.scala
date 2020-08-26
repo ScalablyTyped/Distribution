@@ -6,36 +6,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Checkoutoption
   extends /* key */ StringDictionary[js.Any] {
-  var checkout_option: js.UndefOr[String] = js.undefined
-  var checkout_step: js.UndefOr[Double] = js.undefined
-  var coupon: js.UndefOr[String] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[js.Array[Item]] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var checkout_option: js.UndefOr[String] = js.native
+  var checkout_step: js.UndefOr[Double] = js.native
+  var coupon: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object Checkoutoption {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    checkout_option: String = null,
-    checkout_step: js.UndefOr[Double] = js.undefined,
-    coupon: String = null,
-    currency: String = null,
-    items: js.Array[Item] = null,
-    value: js.UndefOr[Double] = js.undefined
-  ): Checkoutoption = {
+  def apply(): Checkoutoption = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkout_option != null) __obj.updateDynamic("checkout_option")(checkout_option.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkout_step)) __obj.updateDynamic("checkout_step")(checkout_step.get.asInstanceOf[js.Any])
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Checkoutoption]
   }
+  @scala.inline
+  implicit class CheckoutoptionOps[Self <: Checkoutoption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckout_option(value: String): Self = this.set("checkout_option", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckout_option: Self = this.set("checkout_option", js.undefined)
+    @scala.inline
+    def setCheckout_step(value: Double): Self = this.set("checkout_step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCheckout_step: Self = this.set("checkout_step", js.undefined)
+    @scala.inline
+    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: Item*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[Item]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

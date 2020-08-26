@@ -48,6 +48,7 @@ import scala.scalajs.js.annotation._
   - typings.csstype.csstypeStrings.ColonColonbackdrop
   - typings.csstype.csstypeStrings.ColonColonbefore
   - typings.csstype.csstypeStrings.ColonColoncue
+  - typings.csstype.csstypeStrings.`ColonColoncue-region`
   - typings.csstype.csstypeStrings.`ColonColonfirst-letter`
   - typings.csstype.csstypeStrings.`ColonColonfirst-line`
   - typings.csstype.csstypeStrings.`ColonColongrammar-error`
@@ -187,6 +188,8 @@ object SimplePseudos {
   def ColonColonbefore: typings.csstype.csstypeStrings.ColonColonbefore = "::before".asInstanceOf[typings.csstype.csstypeStrings.ColonColonbefore]
   @scala.inline
   def ColonColoncue: typings.csstype.csstypeStrings.ColonColoncue = "::cue".asInstanceOf[typings.csstype.csstypeStrings.ColonColoncue]
+  @scala.inline
+  def `ColonColoncue-region`: typings.csstype.csstypeStrings.`ColonColoncue-region` = "::cue-region".asInstanceOf[typings.csstype.csstypeStrings.`ColonColoncue-region`]
   @scala.inline
   def `ColonColonfirst-letter`: typings.csstype.csstypeStrings.`ColonColonfirst-letter` = "::first-letter".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonfirst-letter`]
   @scala.inline

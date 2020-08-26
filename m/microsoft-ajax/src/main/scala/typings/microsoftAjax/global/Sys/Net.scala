@@ -1,7 +1,5 @@
 package typings.microsoftAjax.global.Sys
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.XMLDocument
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -78,104 +76,7 @@ object Net extends js.Object {
     * Initializes a new instance of the Sys.Net.WebRequestManager class when implemented in a derived class.
     */
   class IWebRequestManager ()
-    extends typings.microsoftAjax.Sys.Net.IWebRequestManager {
-    //#endregion
-    //#region Methods
-    /**
-      * Registers a handler for the completed request event of the WebRequestManager.
-      * @param handler
-      *      The function registered to handle the completed request event.
-      */
-    /* CompleteClass */
-    override def add_completedRequest(
-      handler: js.Function2[
-          /* sender */ typings.microsoftAjax.Sys.Net.WebRequestExecutor, 
-          /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, 
-          Unit
-        ]
-    ): Unit = js.native
-    /**
-      * Registers a handler for processing the invoking request event of the WebRequestManager.
-      * @param handler
-      *      The function registered to handle the invoking request event.
-      */
-    /* CompleteClass */
-    override def add_invokingRequest(
-      handler: js.Function2[
-          /* sender */ typings.microsoftAjax.Sys.Net.WebRequestExecutor, 
-          /* networkRequestEventArgs */ typings.microsoftAjax.Sys.Net.NetworkRequestEventArgs, 
-          Unit
-        ]
-    ): Unit = js.native
-    /**
-      * Sends Web requests to the default network executor.
-      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
-      * @param WebRequest
-      *      An instance of the Sys.Net.WebRequest class.
-      */
-    /* CompleteClass */
-    override def executeRequest(WebRequest: typings.microsoftAjax.Sys.Net.WebRequest): Unit = js.native
-    //#endregion
-    //#region Properties
-    /**
-      * Gets or sets the default network executor type that is used to make network requests.
-      * @return
-      *      The object that represents the default Web request executor.
-      */
-    /* CompleteClass */
-    override def get_defaultExecutorType(): typings.microsoftAjax.Sys.Net.WebRequestExecutor = js.native
-    /**
-      * Gets or sets the time-out for the default network executor.
-      * @return
-      *      An integer value that indicates the current time-out for the default executor.
-      */
-    /* CompleteClass */
-    override def get_defaultTimeout(): Double = js.native
-    /**
-      * Removes the event handler set by the add_completedRequest method.
-      * Use the remove_ completedRequest method to remove the event handler you set using the add_ completedRequest method.
-      * @param handler
-      *      The function that handles the completed request event.
-      */
-    /* CompleteClass */
-    override def remove_completedRequest(
-      handler: js.Function2[
-          /* sender */ typings.microsoftAjax.Sys.Net.WebRequestExecutor, 
-          /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, 
-          Unit
-        ]
-    ): Unit = js.native
-    /**
-      * Removes the event handler set by the add_invokingRequest method.
-      * Use the remove_invokingRequest method to remove the event handler you set using the add_invokingRequest method.
-      * @param handler
-      *          The function that handles the invoking request event.
-      */
-    /* CompleteClass */
-    override def remove_invokingRequest(
-      handler: js.Function2[
-          /* sender */ typings.microsoftAjax.Sys.Net.WebRequestExecutor, 
-          /* networkRequestEventArgs */ typings.microsoftAjax.Sys.Net.NetworkRequestEventArgs, 
-          Unit
-        ]
-    ): Unit = js.native
-    /**
-      * Gets or sets the default network executor type that is used to make network requests.
-      * @param value
-      *          A reference to an implementation of the WebRequestExecutor class.
-      */
-    /* CompleteClass */
-    override def set_defaultExecutorType(value: typings.microsoftAjax.Sys.Net.WebRequestExecutor): Unit = js.native
-    /**
-      * Gets or sets the time-out for the default network executor.
-      *
-      * @throws Sys.ArgumentOutOfRangeException An invalid parameter was passed.
-      * @param value
-      *          The time in milliseconds that the default executor should wait before timing out a Web request. This value must be 0 or a positive integer.
-      */
-    /* CompleteClass */
-    override def set_defaultTimeout(value: Double): Unit = js.native
-  }
+    extends typings.microsoftAjax.Sys.Net.IWebRequestManager
   
   /**
     * Contains information about a Web request that is ready to be sent to the current Sys.Net.WebRequestExecutor instance.
@@ -194,20 +95,6 @@ object Net extends js.Object {
       *      The current WebRequest instance.
       */
     def this(value: typings.microsoftAjax.Sys.Net.WebRequest) = this()
-    //#endregion
-    //#region Methods
-    //#endregion
-    //#region Properties
-    /**
-      * Gets the Web request to be routed to the current Sys.Net.WebRequestExecutor instance.
-      * Use this property to inspect the contents of a Web request before it is routed to the current instance of the Sys.Net.WebRequestExecutor class.
-      * You can access the Web request instance from the handler that is called before the request is routed.
-      * This event handler is added by using the add_invokingRequest method.
-      * @return
-      *      The WebRequest.
-      */
-    /* CompleteClass */
-    override def get_webRequest(): typings.microsoftAjax.Sys.Net.WebRequest = js.native
   }
   
   /**
@@ -220,70 +107,7 @@ object Net extends js.Object {
     * Initializes a new instance of the Sys.Net.WebRequest class.
     */
   class WebRequest ()
-    extends typings.microsoftAjax.Sys.Net.WebRequest {
-    /**
-      * Registers a handler for the completed request event of the Web request.
-      * @see {@link http://msdn.microsoft.com/en-us/library/bb310841(v=vs.100).aspx}
-      */
-    /* CompleteClass */
-    override def add_completed(
-      handler: js.Function2[/* reference */ js.Any, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
-    ): Unit = js.native
-    /**
-      * Raises the completed event for the associated Sys.Net.WebRequest instance.
-      * @param eventArgs
-      *           The value to pass to the Web request completed event handler.
-      */
-    /* CompleteClass */
-    override def completed(eventArgs: typings.microsoftAjax.Sys.EventArgs): Unit = js.native
-    /**
-      * Gets the resolved URL of the Sys.Net.WebRequest instance.
-      * @returns The resolved URL that the Web request is directed to.
-      */
-    /* CompleteClass */
-    override def getResolvedUrl(): String = js.native
-    /* CompleteClass */
-    override def get_body(): String = js.native
-    /* CompleteClass */
-    override def get_executor(): typings.microsoftAjax.Sys.Net.WebRequestExecutor = js.native
-    /* CompleteClass */
-    override def get_headers(): StringDictionary[String] = js.native
-    /* CompleteClass */
-    override def get_httpVerb(): String = js.native
-    /* CompleteClass */
-    override def get_timeout(): Double = js.native
-    //#endregion
-    //#region Members
-    /* CompleteClass */
-    override def get_url(): String = js.native
-    /* CompleteClass */
-    override def get_userContext(): js.Any = js.native
-    /**
-      * Executes a Web request.
-      */
-    /* CompleteClass */
-    override def invoke(): Unit = js.native
-    /**
-      * Removes the event handler added by the add_completed method.
-      * @see {@link http://msdn.microsoft.com/en-us/library/bb397454(v=vs.100).aspx}
-      */
-    /* CompleteClass */
-    override def remove_completed(
-      handler: js.Function2[/* reference */ js.Any, /* eventArgs */ typings.microsoftAjax.Sys.EventArgs, Unit]
-    ): Unit = js.native
-    /* CompleteClass */
-    override def set_body(value: String): Unit = js.native
-    /* CompleteClass */
-    override def set_executor(value: typings.microsoftAjax.Sys.Net.WebRequestExecutor): Unit = js.native
-    /* CompleteClass */
-    override def set_httpVerb(value: String): Unit = js.native
-    /* CompleteClass */
-    override def set_timeout(value: Double): Unit = js.native
-    /* CompleteClass */
-    override def set_url(value: String): Unit = js.native
-    /* CompleteClass */
-    override def set_userContext(value: js.Any): Unit = js.native
-  }
+    extends typings.microsoftAjax.Sys.Net.WebRequest
   
   /**
     * Provides the abstract base class from which network executors derive.
@@ -295,127 +119,11 @@ object Net extends js.Object {
     * Initializes a Sys.Net.WebRequestExecutor instance when implemented in a derived class.
     */
   class WebRequestExecutor ()
-    extends typings.microsoftAjax.Sys.Net.WebRequestExecutor {
-    //#endregion
-    //#region Methods
-    /**
-      * Stops the pending network request issued by the executor.
-      * The specifics of aborting a request vary depending on how an executor is implemented.
-      * However, all executors that derive from WebRequestExecutor must set their state to aborted and must raise the completed event of the associated Sys.Net.WebRequest object.
-      * The executor properties do not contain consistent data after abort has been called.
-      */
-    /* CompleteClass */
-    override def abort(): Unit = js.native
-    /**
-      * Instructs the executor to execute a Web request.
-      * When this method is called, the executor packages the content of the Web request instance and initiates processing.
-      * This method is intended to be used by a custom executor. If you are implementing a custom executor, you instantiate the executor, assign it to the Web request instance, and then invoke the method on the executor instance.
-      * @see {@link http://msdn.microsoft.com/en-us/library/bb383834(v=vs.100).aspx}
-      */
-    /* CompleteClass */
-    override def executeRequest(): Unit = js.native
-    /**
-      * Gets all the response headers for the current request.
-      * If a request finished successfully and with valid response data, this method returns all the response headers.
-      * @return All the response headers
-      * @see {@link http://msdn.microsoft.com/en-us/library/bb310805(v=vs.100).aspx}
-      */
-    /* CompleteClass */
-    override def getAllResponseHeaders(): String = js.native
-    /**
-      * Gets the value of the specified response header.
-      * @return The specified response header.
-      */
-    /* CompleteClass */
-    override def getResponseHeader(key: String): String = js.native
-    /**
-      * Gets a value indicating whether the request associated with the executor was aborted.
-      * When the current instance of the Sys.Net.WebRequestExecutor class is aborted, it must set its state to aborted and it must raise the completed event of the associated request object.
-      * @return true if the request associated with the executor was aborted; otherwise, false.
-      */
-    /* CompleteClass */
-    override def get_aborted(): Boolean = js.native
-    /**
-      * Gets a value indicating whether the request completed successfully.
-      * Successful completion usually means a well-formed response was received by the executor.
-      * If a response was received, the current instance of the Sys.Net.WebRequestExecutor class must set its state to completed.
-      * It must also raise the completed event of the associated request object.
-      * @return true if the request completed successfully; otherwise, false.
-      */
-    /* CompleteClass */
-    override def get_responseAvailable(): Boolean = js.native
-    /**
-      * Gets the text representation of the response body. When a request has completed successfully with valid response data, this property returns the text that is contained in the response body.
-      * @return The text representation of the response body.
-      */
-    /* CompleteClass */
-    override def get_responseData(): String = js.native
-    /**
-      * Returns a value indicating whether the executor has started processing the request.
-      * The executor returns true if substantial processing of the request has started. For executors that make network calls, substantial processing means that a network call has been started.
-      * @return true if the executor has started processing the request; otherwise, false.
-      */
-    /* CompleteClass */
-    override def get_started(): Boolean = js.native
-    /**
-      * Gets a success status code.
-      * The statusCode property returns an integer that specifies that a request completed successfully and with valid response data.
-      * @return An integer that represents a status code.
-      */
-    /* CompleteClass */
-    override def get_statusCode(): Double = js.native
-    /**
-      * Gets status information about a request that completed successfully.
-      * The statusText property returns status information if a request completed successfully and with valid response data.
-      * @return the status text
-      */
-    /* CompleteClass */
-    override def get_statusText(): String = js.native
-    /**
-      * Gets a value indicating whether the request timed out.
-      * Executors use the time-out information associated with the request to raise the completed event on the associated WebRequest object.
-      * @return true if the request timed out; otherwise, false.
-      */
-    /* CompleteClass */
-    override def get_timedOut(): Boolean = js.native
-    /**
-      * Gets the WebRequest object associated with the executor.
-      * @return The WebRequest object associated with the current executor instance.
-      */
-    /* CompleteClass */
-    override def get_webRequest(): typings.microsoftAjax.Sys.Net.WebRequest = js.native
-    /**
-      * Attempts to get the response to the current request as an XMLDOM object.
-      * If a request finished successfully with valid response data, this method tries to get the response as an XMLDOM object.
-      */
-    /* CompleteClass */
-    override def get_xml(): XMLDocument = js.native
-    //#endregion
-    //#region Properties
-    /**
-      * Gets the JSON-evaluated object from the response.
-      * @return The JSON-evaluated response object.
-      */
-    /* CompleteClass */
-    override def `object`(): js.Any = js.native
-  }
+    extends typings.microsoftAjax.Sys.Net.WebRequestExecutor
   
   @js.native
   class WebServiceError ()
-    extends typings.microsoftAjax.Sys.Net.WebServiceError {
-    /* CompleteClass */
-    override def get_errorObject(): js.Any = js.native
-    /* CompleteClass */
-    override def get_exceptionType(): js.Any = js.native
-    /* CompleteClass */
-    override def get_message(): String = js.native
-    /* CompleteClass */
-    override def get_stackTrace(): String = js.native
-    /* CompleteClass */
-    override def get_statusCode(): Double = js.native
-    /* CompleteClass */
-    override def get_timedOut(): Boolean = js.native
-  }
+    extends typings.microsoftAjax.Sys.Net.WebServiceError
   
   /**
     * Generated Proxy Classes

@@ -23,7 +23,7 @@ object ruleWalkerMod extends js.Object {
     def this(sourceFile: SourceFile, options: IOptions) = this()
     val failures: js.Any = js.native
     val limit: js.Any = js.native
-    val options: js.UndefOr[js.Any] = js.native
+    val options: js.Any = js.native
     val ruleName: js.Any = js.native
     val sourceFile: js.Any = js.native
     /** @deprecated Prefer `addFailureAt` and its variants. */
@@ -44,17 +44,11 @@ object ruleWalkerMod extends js.Object {
     def createReplacement(start: Double, length: Double, text: String): Replacement = js.native
     def deleteFromTo(start: Double, end: Double): Replacement = js.native
     def deleteText(start: Double, length: Double): Replacement = js.native
-    /* CompleteClass */
-    override def getFailures(): js.Array[RuleFailure] = js.native
     def getLimit(): Double = js.native
     def getLineAndCharacterOfPosition(position: Double): LineAndCharacter = js.native
     def getOptions(): js.Any = js.native
     def getRuleName(): String = js.native
-    /* CompleteClass */
-    override def getSourceFile(): SourceFile = js.native
     def hasOption(option: String): Boolean = js.native
-    /* CompleteClass */
-    override def walk(sourceFile: SourceFile): Unit = js.native
   }
   
 }

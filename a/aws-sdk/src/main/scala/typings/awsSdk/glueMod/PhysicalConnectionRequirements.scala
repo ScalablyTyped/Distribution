@@ -22,16 +22,36 @@ trait PhysicalConnectionRequirements extends js.Object {
 
 object PhysicalConnectionRequirements {
   @scala.inline
-  def apply(
-    AvailabilityZone: NameString = null,
-    SecurityGroupIdList: SecurityGroupIdList = null,
-    SubnetId: NameString = null
-  ): PhysicalConnectionRequirements = {
+  def apply(): PhysicalConnectionRequirements = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (SecurityGroupIdList != null) __obj.updateDynamic("SecurityGroupIdList")(SecurityGroupIdList.asInstanceOf[js.Any])
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicalConnectionRequirements]
   }
+  @scala.inline
+  implicit class PhysicalConnectionRequirementsOps[Self <: PhysicalConnectionRequirements] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: NameString): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdListVarargs(value: NameString*): Self = this.set("SecurityGroupIdList", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIdList(value: SecurityGroupIdList): Self = this.set("SecurityGroupIdList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIdList: Self = this.set("SecurityGroupIdList", js.undefined)
+    @scala.inline
+    def setSubnetId(value: NameString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+  }
+  
 }
 

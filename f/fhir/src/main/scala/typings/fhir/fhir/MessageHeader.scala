@@ -8,116 +8,130 @@ import scala.scalajs.js.annotation._
   * A resource that describes a message that is exchanged between systems
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait MessageHeader extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait MessageHeader extends DomainResource {
   /**
     * Contains extended information for property 'timestamp'.
     */
-  var _timestamp: js.UndefOr[Element] = js.undefined
+  var _timestamp: js.UndefOr[Element] = js.native
   /**
     * The source of the decision
     */
-  var author: js.UndefOr[Reference] = js.undefined
+  var author: js.UndefOr[Reference] = js.native
   /**
     * Message destination application(s)
     */
-  var destination: js.UndefOr[js.Array[MessageHeaderDestination]] = js.undefined
+  var destination: js.UndefOr[js.Array[MessageHeaderDestination]] = js.native
   /**
     * The source of the data entry
     */
-  var enterer: js.UndefOr[Reference] = js.undefined
+  var enterer: js.UndefOr[Reference] = js.native
   /**
     * Code for the event this message represents
     */
-  var event: Coding
+  var event: Coding = js.native
   /**
     * The actual content of the message
     */
-  var focus: js.UndefOr[js.Array[Reference]] = js.undefined
+  var focus: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Cause of event
     */
-  var reason: js.UndefOr[CodeableConcept] = js.undefined
+  var reason: js.UndefOr[CodeableConcept] = js.native
   /**
     * Intended "real-world" recipient for the data
     */
-  var receiver: js.UndefOr[Reference] = js.undefined
+  var receiver: js.UndefOr[Reference] = js.native
   /**
     * If this is a reply to prior message
     */
-  var response: js.UndefOr[MessageHeaderResponse] = js.undefined
+  var response: js.UndefOr[MessageHeaderResponse] = js.native
   /**
     * Final responsibility for event
     */
-  var responsible: js.UndefOr[Reference] = js.undefined
+  var responsible: js.UndefOr[Reference] = js.native
   /**
     * Real world sender of the message
     */
-  var sender: js.UndefOr[Reference] = js.undefined
+  var sender: js.UndefOr[Reference] = js.native
   /**
     * Message source application
     */
-  var source: MessageHeaderSource
+  var source: MessageHeaderSource = js.native
   /**
     * Time that the message was sent
     */
-  var timestamp: instant
+  var timestamp: instant = js.native
 }
 
 object MessageHeader {
   @scala.inline
-  def apply(
-    event: Coding,
-    source: MessageHeaderSource,
-    timestamp: instant,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _timestamp: Element = null,
-    author: Reference = null,
-    contained: js.Array[Resource] = null,
-    destination: js.Array[MessageHeaderDestination] = null,
-    enterer: Reference = null,
-    extension: js.Array[Extension] = null,
-    focus: js.Array[Reference] = null,
-    id: id = null,
-    implicitRules: uri = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    reason: CodeableConcept = null,
-    receiver: Reference = null,
-    resourceType: code = null,
-    response: MessageHeaderResponse = null,
-    responsible: Reference = null,
-    sender: Reference = null,
-    text: Narrative = null
-  ): MessageHeader = {
+  def apply(event: Coding, source: MessageHeaderSource, timestamp: instant): MessageHeader = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_timestamp != null) __obj.updateDynamic("_timestamp")(_timestamp.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (enterer != null) __obj.updateDynamic("enterer")(enterer.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(focus.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (responsible != null) __obj.updateDynamic("responsible")(responsible.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageHeader]
   }
+  @scala.inline
+  implicit class MessageHeaderOps[Self <: MessageHeader] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvent(value: Coding): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: MessageHeaderSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: instant): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_timestamp(value: Element): Self = this.set("_timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_timestamp: Self = this.set("_timestamp", js.undefined)
+    @scala.inline
+    def setAuthor(value: Reference): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setDestinationVarargs(value: MessageHeaderDestination*): Self = this.set("destination", js.Array(value :_*))
+    @scala.inline
+    def setDestination(value: js.Array[MessageHeaderDestination]): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setEnterer(value: Reference): Self = this.set("enterer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnterer: Self = this.set("enterer", js.undefined)
+    @scala.inline
+    def setFocusVarargs(value: Reference*): Self = this.set("focus", js.Array(value :_*))
+    @scala.inline
+    def setFocus(value: js.Array[Reference]): Self = this.set("focus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocus: Self = this.set("focus", js.undefined)
+    @scala.inline
+    def setReason(value: CodeableConcept): Self = this.set("reason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReason: Self = this.set("reason", js.undefined)
+    @scala.inline
+    def setReceiver(value: Reference): Self = this.set("receiver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiver: Self = this.set("receiver", js.undefined)
+    @scala.inline
+    def setResponse(value: MessageHeaderResponse): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setResponsible(value: Reference): Self = this.set("responsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsible: Self = this.set("responsible", js.undefined)
+    @scala.inline
+    def setSender(value: Reference): Self = this.set("sender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSender: Self = this.set("sender", js.undefined)
+  }
+  
 }
 

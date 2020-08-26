@@ -17,41 +17,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SharedStylePropsArg extends js.Object {
   @JSName("$arrowOffset")
-  var $arrowOffset: js.UndefOr[Offset] = js.undefined
+  var $arrowOffset: js.UndefOr[Offset] = js.native
   @JSName("$isAnimating")
-  var $isAnimating: js.UndefOr[Boolean] = js.undefined
+  var $isAnimating: js.UndefOr[Boolean] = js.native
   @JSName("$isOpen")
-  var $isOpen: js.UndefOr[Boolean] = js.undefined
+  var $isOpen: js.UndefOr[Boolean] = js.native
   @JSName("$placement")
   var $placement: js.UndefOr[
     topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
-  ] = js.undefined
+  ] = js.native
   @JSName("$popoverOffset")
-  var $popoverOffset: js.UndefOr[Offset] = js.undefined
+  var $popoverOffset: js.UndefOr[Offset] = js.native
   @JSName("$showArrow")
-  var $showArrow: js.UndefOr[Boolean] = js.undefined
+  var $showArrow: js.UndefOr[Boolean] = js.native
 }
 
 object SharedStylePropsArg {
   @scala.inline
-  def apply(
-    $arrowOffset: Offset = null,
-    $isAnimating: js.UndefOr[Boolean] = js.undefined,
-    $isOpen: js.UndefOr[Boolean] = js.undefined,
-    $placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
-    $popoverOffset: Offset = null,
-    $showArrow: js.UndefOr[Boolean] = js.undefined
-  ): SharedStylePropsArg = {
+  def apply(): SharedStylePropsArg = {
     val __obj = js.Dynamic.literal()
-    if ($arrowOffset != null) __obj.updateDynamic("$arrowOffset")($arrowOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined($isAnimating)) __obj.updateDynamic("$isAnimating")($isAnimating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined($isOpen)) __obj.updateDynamic("$isOpen")($isOpen.get.asInstanceOf[js.Any])
-    if ($placement != null) __obj.updateDynamic("$placement")($placement.asInstanceOf[js.Any])
-    if ($popoverOffset != null) __obj.updateDynamic("$popoverOffset")($popoverOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined($showArrow)) __obj.updateDynamic("$showArrow")($showArrow.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedStylePropsArg]
   }
+  @scala.inline
+  implicit class SharedStylePropsArgOps[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$arrowOffset(value: Offset): Self = this.set("$arrowOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$arrowOffset: Self = this.set("$arrowOffset", js.undefined)
+    @scala.inline
+    def set$isAnimating(value: Boolean): Self = this.set("$isAnimating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$isAnimating: Self = this.set("$isAnimating", js.undefined)
+    @scala.inline
+    def set$isOpen(value: Boolean): Self = this.set("$isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$isOpen: Self = this.set("$isOpen", js.undefined)
+    @scala.inline
+    def set$placement(
+      value: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top
+    ): Self = this.set("$placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$placement: Self = this.set("$placement", js.undefined)
+    @scala.inline
+    def set$popoverOffset(value: Offset): Self = this.set("$popoverOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$popoverOffset: Self = this.set("$popoverOffset", js.undefined)
+    @scala.inline
+    def set$showArrow(value: Boolean): Self = this.set("$showArrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$showArrow: Self = this.set("$showArrow", js.undefined)
+  }
+  
 }
 

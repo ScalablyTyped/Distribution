@@ -12,7 +12,7 @@ Run promise-returning & async functions in series
 | Keywords           | promise, series, serial, sequence, sequential, ordered, task, tasks, array, collection, iterable, iterator, async, await, promises, bluebird |
 | # releases         | 4 |
 | # dependents       | 51 |
-| # downloads        | 1873380 |
+| # downloads        | 1849010 |
 | # stars            | 0 |
 
 ## Links

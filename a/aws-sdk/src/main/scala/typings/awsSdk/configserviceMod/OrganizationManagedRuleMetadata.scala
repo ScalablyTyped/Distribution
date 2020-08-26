@@ -42,25 +42,54 @@ trait OrganizationManagedRuleMetadata extends js.Object {
 
 object OrganizationManagedRuleMetadata {
   @scala.inline
-  def apply(
-    RuleIdentifier: StringWithCharLimit256,
-    Description: StringWithCharLimit256Min0 = null,
-    InputParameters: StringWithCharLimit2048 = null,
-    MaximumExecutionFrequency: MaximumExecutionFrequency = null,
-    ResourceIdScope: StringWithCharLimit768 = null,
-    ResourceTypesScope: ResourceTypesScope = null,
-    TagKeyScope: StringWithCharLimit128 = null,
-    TagValueScope: StringWithCharLimit256 = null
-  ): OrganizationManagedRuleMetadata = {
+  def apply(RuleIdentifier: StringWithCharLimit256): OrganizationManagedRuleMetadata = {
     val __obj = js.Dynamic.literal(RuleIdentifier = RuleIdentifier.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (InputParameters != null) __obj.updateDynamic("InputParameters")(InputParameters.asInstanceOf[js.Any])
-    if (MaximumExecutionFrequency != null) __obj.updateDynamic("MaximumExecutionFrequency")(MaximumExecutionFrequency.asInstanceOf[js.Any])
-    if (ResourceIdScope != null) __obj.updateDynamic("ResourceIdScope")(ResourceIdScope.asInstanceOf[js.Any])
-    if (ResourceTypesScope != null) __obj.updateDynamic("ResourceTypesScope")(ResourceTypesScope.asInstanceOf[js.Any])
-    if (TagKeyScope != null) __obj.updateDynamic("TagKeyScope")(TagKeyScope.asInstanceOf[js.Any])
-    if (TagValueScope != null) __obj.updateDynamic("TagValueScope")(TagValueScope.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationManagedRuleMetadata]
   }
+  @scala.inline
+  implicit class OrganizationManagedRuleMetadataOps[Self <: OrganizationManagedRuleMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleIdentifier(value: StringWithCharLimit256): Self = this.set("RuleIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: StringWithCharLimit256Min0): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setInputParameters(value: StringWithCharLimit2048): Self = this.set("InputParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputParameters: Self = this.set("InputParameters", js.undefined)
+    @scala.inline
+    def setMaximumExecutionFrequency(value: MaximumExecutionFrequency): Self = this.set("MaximumExecutionFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumExecutionFrequency: Self = this.set("MaximumExecutionFrequency", js.undefined)
+    @scala.inline
+    def setResourceIdScope(value: StringWithCharLimit768): Self = this.set("ResourceIdScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIdScope: Self = this.set("ResourceIdScope", js.undefined)
+    @scala.inline
+    def setResourceTypesScopeVarargs(value: StringWithCharLimit256*): Self = this.set("ResourceTypesScope", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypesScope(value: ResourceTypesScope): Self = this.set("ResourceTypesScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypesScope: Self = this.set("ResourceTypesScope", js.undefined)
+    @scala.inline
+    def setTagKeyScope(value: StringWithCharLimit128): Self = this.set("TagKeyScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagKeyScope: Self = this.set("TagKeyScope", js.undefined)
+    @scala.inline
+    def setTagValueScope(value: StringWithCharLimit256): Self = this.set("TagValueScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagValueScope: Self = this.set("TagValueScope", js.undefined)
+  }
+  
 }
 

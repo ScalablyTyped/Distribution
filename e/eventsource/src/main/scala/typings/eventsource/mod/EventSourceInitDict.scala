@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EventSourceInitDict extends js.Object {
-  var headers: js.UndefOr[js.Object] = js.undefined
-  var https: js.UndefOr[js.Object] = js.undefined
-  var proxy: js.UndefOr[String] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
-  var withCredentials: js.UndefOr[Boolean] = js.undefined
+  var headers: js.UndefOr[js.Object] = js.native
+  var https: js.UndefOr[js.Object] = js.native
+  var proxy: js.UndefOr[String] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.native
 }
 
 object EventSourceInitDict {
   @scala.inline
-  def apply(
-    headers: js.Object = null,
-    https: js.Object = null,
-    proxy: String = null,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    withCredentials: js.UndefOr[Boolean] = js.undefined
-  ): EventSourceInitDict = {
+  def apply(): EventSourceInitDict = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceInitDict]
   }
+  @scala.inline
+  implicit class EventSourceInitDictOps[Self <: EventSourceInitDict] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHttps(value: js.Object): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+    @scala.inline
+    def setProxy(value: String): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+  }
+  
 }
 

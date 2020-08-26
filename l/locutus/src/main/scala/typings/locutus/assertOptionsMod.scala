@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object assertOptionsMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(what: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def apply(what: js.Any): js.Any = js.native
   def apply(what: js.Any, value: js.Any): js.Any = js.native
 }

@@ -15,6 +15,7 @@ trait Key extends js.Object {
   def thumbprint(): js.Promise[String] = js.native
   def thumbprint(hash: String): js.Promise[String] = js.native
   def toJSON(): js.Object = js.native
+  def toJSON(isPrivate: js.UndefOr[scala.Nothing], excluded: js.Array[String]): js.Object = js.native
   def toJSON(isPrivate: Boolean): js.Object = js.native
   def toJSON(isPrivate: Boolean, excluded: js.Array[String]): js.Object = js.native
   def toPEM(): String = js.native

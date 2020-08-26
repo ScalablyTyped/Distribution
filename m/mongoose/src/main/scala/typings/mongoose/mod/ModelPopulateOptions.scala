@@ -4,30 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ModelPopulateOptions extends QueryPopulateOptions {
   /** optional, if true Mongoose will always set path to an array. Inferred from schema by default */
-  var justOne: js.UndefOr[Boolean] = js.undefined
+  var justOne: js.UndefOr[Boolean] = js.native
 }
 
 object ModelPopulateOptions {
   @scala.inline
-  def apply(
-    path: String,
-    justOne: js.UndefOr[Boolean] = js.undefined,
-    `match`: js.Any = null,
-    model: String | (Model_[_, js.Object]) = null,
-    options: js.Any = null,
-    populate: QueryPopulateOptions | js.Array[QueryPopulateOptions] = null,
-    select: js.Any = null
-  ): ModelPopulateOptions = {
+  def apply(path: String): ModelPopulateOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(justOne)) __obj.updateDynamic("justOne")(justOne.get.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelPopulateOptions]
   }
+  @scala.inline
+  implicit class ModelPopulateOptionsOps[Self <: ModelPopulateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJustOne(value: Boolean): Self = this.set("justOne", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustOne: Self = this.set("justOne", js.undefined)
+  }
+  
 }
 

@@ -13,6 +13,7 @@ trait StatsdClient extends js.Object {
   def counter(metric: String, delta: Double): this.type = js.native
   def counter(metric: String, delta: Double, tags: Tags): this.type = js.native
   def decrement(metric: String): this.type = js.native
+  def decrement(metric: String, delta: js.UndefOr[scala.Nothing], tags: Tags): this.type = js.native
   def decrement(metric: String, delta: Double): this.type = js.native
   def decrement(metric: String, delta: Double, tags: Tags): this.type = js.native
   def formatTags(): String = js.native
@@ -25,6 +26,7 @@ trait StatsdClient extends js.Object {
   def histogram(name: String, value: Double): this.type = js.native
   def histogram(name: String, value: Double, tags: Tags): this.type = js.native
   def increment(metric: String): this.type = js.native
+  def increment(metric: String, delta: js.UndefOr[scala.Nothing], tags: Tags): this.type = js.native
   def increment(metric: String, delta: Double): this.type = js.native
   def increment(metric: String, delta: Double, tags: Tags): this.type = js.native
   def raw(rawData: String): this.type = js.native

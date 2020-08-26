@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateNFSFileShareInput extends js.Object {
   /**
+    * Refresh cache information.
+    */
+  var CacheAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.CacheAttributes] = js.native
+  /**
     * The list of clients that are allowed to access the file gateway. The list must contain either valid IP addresses or valid CIDR blocks.
     */
   var ClientList: js.UndefOr[FileShareClientList] = js.native
@@ -18,6 +22,10 @@ trait CreateNFSFileShareInput extends js.Object {
     * The default storage class for objects put into an Amazon S3 bucket by the file gateway. The default value is S3_INTELLIGENT_TIERING. Optional. Valid Values: S3_STANDARD | S3_INTELLIGENT_TIERING | S3_STANDARD_IA | S3_ONEZONE_IA 
     */
   var DefaultStorageClass: js.UndefOr[StorageClass] = js.native
+  /**
+    * The name of the file share. Optional.   FileShareName must be set if an S3 prefix name is set in LocationARN. 
+    */
+  var FileShareName: js.UndefOr[typings.awsSdk.storagegatewayMod.FileShareName] = js.native
   /**
     * The Amazon Resource Name (ARN) of the file gateway on which you want to create a file share.
     */
@@ -35,7 +43,7 @@ trait CreateNFSFileShareInput extends js.Object {
     */
   var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
   /**
-    * The ARN of the backed storage used for storing file data.
+    * The ARN of the backend storage used for storing file data. A prefix name can be added to the S3 bucket name. It must end with a "/".
     */
   var LocationARN: typings.awsSdk.storagegatewayMod.LocationARN = js.native
   /**
@@ -70,36 +78,86 @@ trait CreateNFSFileShareInput extends js.Object {
 
 object CreateNFSFileShareInput {
   @scala.inline
-  def apply(
-    ClientToken: ClientToken,
-    GatewayARN: GatewayARN,
-    LocationARN: LocationARN,
-    Role: Role,
-    ClientList: FileShareClientList = null,
-    DefaultStorageClass: StorageClass = null,
-    GuessMIMETypeEnabled: js.UndefOr[Boolean] = js.undefined,
-    KMSEncrypted: js.UndefOr[Boolean] = js.undefined,
-    KMSKey: KMSKey = null,
-    NFSFileShareDefaults: NFSFileShareDefaults = null,
-    ObjectACL: ObjectACL = null,
-    ReadOnly: js.UndefOr[Boolean] = js.undefined,
-    RequesterPays: js.UndefOr[Boolean] = js.undefined,
-    Squash: Squash = null,
-    Tags: Tags = null
-  ): CreateNFSFileShareInput = {
+  def apply(ClientToken: ClientToken, GatewayARN: GatewayARN, LocationARN: LocationARN, Role: Role): CreateNFSFileShareInput = {
     val __obj = js.Dynamic.literal(ClientToken = ClientToken.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], LocationARN = LocationARN.asInstanceOf[js.Any], Role = Role.asInstanceOf[js.Any])
-    if (ClientList != null) __obj.updateDynamic("ClientList")(ClientList.asInstanceOf[js.Any])
-    if (DefaultStorageClass != null) __obj.updateDynamic("DefaultStorageClass")(DefaultStorageClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(GuessMIMETypeEnabled)) __obj.updateDynamic("GuessMIMETypeEnabled")(GuessMIMETypeEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(KMSEncrypted)) __obj.updateDynamic("KMSEncrypted")(KMSEncrypted.get.asInstanceOf[js.Any])
-    if (KMSKey != null) __obj.updateDynamic("KMSKey")(KMSKey.asInstanceOf[js.Any])
-    if (NFSFileShareDefaults != null) __obj.updateDynamic("NFSFileShareDefaults")(NFSFileShareDefaults.asInstanceOf[js.Any])
-    if (ObjectACL != null) __obj.updateDynamic("ObjectACL")(ObjectACL.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReadOnly)) __obj.updateDynamic("ReadOnly")(ReadOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterPays)) __obj.updateDynamic("RequesterPays")(RequesterPays.get.asInstanceOf[js.Any])
-    if (Squash != null) __obj.updateDynamic("Squash")(Squash.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateNFSFileShareInput]
   }
+  @scala.inline
+  implicit class CreateNFSFileShareInputOps[Self <: CreateNFSFileShareInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocationARN(value: LocationARN): Self = this.set("LocationARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRole(value: Role): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheAttributes(value: CacheAttributes): Self = this.set("CacheAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheAttributes: Self = this.set("CacheAttributes", js.undefined)
+    @scala.inline
+    def setClientListVarargs(value: IPV4AddressCIDR*): Self = this.set("ClientList", js.Array(value :_*))
+    @scala.inline
+    def setClientList(value: FileShareClientList): Self = this.set("ClientList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientList: Self = this.set("ClientList", js.undefined)
+    @scala.inline
+    def setDefaultStorageClass(value: StorageClass): Self = this.set("DefaultStorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultStorageClass: Self = this.set("DefaultStorageClass", js.undefined)
+    @scala.inline
+    def setFileShareName(value: FileShareName): Self = this.set("FileShareName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileShareName: Self = this.set("FileShareName", js.undefined)
+    @scala.inline
+    def setGuessMIMETypeEnabled(value: Boolean): Self = this.set("GuessMIMETypeEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuessMIMETypeEnabled: Self = this.set("GuessMIMETypeEnabled", js.undefined)
+    @scala.inline
+    def setKMSEncrypted(value: Boolean): Self = this.set("KMSEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSEncrypted: Self = this.set("KMSEncrypted", js.undefined)
+    @scala.inline
+    def setKMSKey(value: KMSKey): Self = this.set("KMSKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKMSKey: Self = this.set("KMSKey", js.undefined)
+    @scala.inline
+    def setNFSFileShareDefaults(value: NFSFileShareDefaults): Self = this.set("NFSFileShareDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNFSFileShareDefaults: Self = this.set("NFSFileShareDefaults", js.undefined)
+    @scala.inline
+    def setObjectACL(value: ObjectACL): Self = this.set("ObjectACL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectACL: Self = this.set("ObjectACL", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("ReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("ReadOnly", js.undefined)
+    @scala.inline
+    def setRequesterPays(value: Boolean): Self = this.set("RequesterPays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterPays: Self = this.set("RequesterPays", js.undefined)
+    @scala.inline
+    def setSquash(value: Squash): Self = this.set("Squash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSquash: Self = this.set("Squash", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

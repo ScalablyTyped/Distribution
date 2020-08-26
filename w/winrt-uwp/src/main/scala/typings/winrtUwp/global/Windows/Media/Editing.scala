@@ -1,16 +1,9 @@
 package typings.winrtUwp.global.Windows.Media
 
-import typings.winrtUwp.Windows.Foundation.Collections.IMap
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface
-import typings.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
 import typings.winrtUwp.Windows.Media.Effects.IVideoCompositorDefinition
-import typings.winrtUwp.Windows.Media.Effects.IVideoEffectDefinition
-import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
-import typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
 import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.UI.Color
@@ -25,98 +18,17 @@ object Editing extends js.Object {
   /** Represents a single audio track for accompanying a video clip. */
   @js.native
   abstract class BackgroundAudioTrack ()
-    extends typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack {
-    /** Gets the list of audio effect definitions for processing the background audio track. */
-    /* CompleteClass */
-    override var audioEffectDefinitions: IVector[IAudioEffectDefinition] = js.native
-    /** Specifies how long to wait before starting background audio playback. */
-    /* CompleteClass */
-    override var delay: Double = js.native
-    /** Original playback time of the background audio track, without the effects of the TrimTimeFromStart and TrimTimeFromEnd properties. */
-    /* CompleteClass */
-    override var originalDuration: Double = js.native
-    /** The amount of time to trim from the end of the background audio track. */
-    /* CompleteClass */
-    override var trimTimeFromEnd: Double = js.native
-    /** The amount of time to trim from the beginning of the background audio track. */
-    /* CompleteClass */
-    override var trimTimeFromStart: Double = js.native
-    /** Duration of the background audio track with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
-    /* CompleteClass */
-    override var trimmedDuration: Double = js.native
-    /** An associative collection for storing custom properties associated with the background audio track. */
-    /* CompleteClass */
-    override var userData: IMap[String, String] = js.native
-    /** Gets or sets the volume of the background audio track. */
-    /* CompleteClass */
-    override var volume: Double = js.native
-    /**
-      * Gets the AudioEncodingProperties for the background audio track.
-      * @return The AudioEncodingProperties for the background audio track.
-      */
-    /* CompleteClass */
-    override def getAudioEncodingProperties(): AudioEncodingProperties = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Editing.BackgroundAudioTrack
   
   /** Represents an audio track embedded in the media clip. */
   @js.native
   abstract class EmbeddedAudioTrack ()
-    extends typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack {
-    /**
-      * Gets the AudioEncodingProperties for the embedded audio track.
-      * @return The AudioEncodingProperties for the embedded audio track.
-      */
-    /* CompleteClass */
-    override def getAudioEncodingProperties(): AudioEncodingProperties = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack
   
   /** Represents a single media object. */
   @js.native
   abstract class MediaClip ()
-    extends typings.winrtUwp.Windows.Media.Editing.MediaClip {
-    /** Gets the list of audio effect definitions for processing the media clip. */
-    /* CompleteClass */
-    override var audioEffectDefinitions: IVector[IAudioEffectDefinition] = js.native
-    /** The list of embedded audio tracks in this media clip. */
-    /* CompleteClass */
-    override var embeddedAudioTracks: IVectorView[typings.winrtUwp.Windows.Media.Editing.EmbeddedAudioTrack] = js.native
-    /** The time when the media clip stops playing within a MediaComposition . */
-    /* CompleteClass */
-    override var endTimeInComposition: Double = js.native
-    /** Original playback time of the media clip, without the effects of TrimTimeFromStart and TrimTimeFromEnd properties. */
-    /* CompleteClass */
-    override var originalDuration: Double = js.native
-    /** The index of the audio track within the media clip that is used for playback. */
-    /* CompleteClass */
-    override var selectedEmbeddedAudioTrackIndex: Double = js.native
-    /** The time when the media clip starts playing within a MediaComposition . */
-    /* CompleteClass */
-    override var startTimeInComposition: Double = js.native
-    /** The amount of time to trim from the end of the media clip. */
-    /* CompleteClass */
-    override var trimTimeFromEnd: Double = js.native
-    /** The amount of time to trim from the beginning of the media clip. */
-    /* CompleteClass */
-    override var trimTimeFromStart: Double = js.native
-    /** Duration of the media clip with TrimTimeFromStart and TrimTimeFromEnd applied to playback. */
-    /* CompleteClass */
-    override var trimmedDuration: Double = js.native
-    /** An associative collection for storing custom properties associated with the media clip. */
-    /* CompleteClass */
-    override var userData: IMap[String, String] = js.native
-    /** Gets the list of video effect definitions for processing the media clip. */
-    /* CompleteClass */
-    override var videoEffectDefinitions: IVector[IVideoEffectDefinition] = js.native
-    /** Gets or sets the volume of the media clip. */
-    /* CompleteClass */
-    override var volume: Double = js.native
-    /**
-      * Gets the VideoEncodingProperties for the media clip.
-      * @return The VideoEncodingProperties for the media clip.
-      */
-    /* CompleteClass */
-    override def getVideoEncodingProperties(): VideoEncodingProperties = js.native
-  }
+    extends typings.winrtUwp.Windows.Media.Editing.MediaClip
   
   /** Represents a collection of media clips and background audio tracks. */
   @js.native
@@ -140,21 +52,6 @@ object Editing extends js.Object {
       * @param opacity The opacity of the overlay, in the range of 0.0 to 1.0, where 0.0 is completely transparent and 1.0 is completely opaque.
       */
     def this(clip: typings.winrtUwp.Windows.Media.Editing.MediaClip, position: Rect, opacity: Double) = this()
-    /** Gets or sets a value indicating whether audio is enabled for the MediaOverlay . */
-    /* CompleteClass */
-    override var audioEnabled: Boolean = js.native
-    /** Gets the media clip to be used for the overlay. */
-    /* CompleteClass */
-    override var clip: typings.winrtUwp.Windows.Media.Editing.MediaClip = js.native
-    /** Gets or sets the time span from the start of the clip after which the media overlay should be rendered. */
-    /* CompleteClass */
-    override var delay: Double = js.native
-    /** Gets the opacity of the overlay. */
-    /* CompleteClass */
-    override var opacity: Double = js.native
-    /** Gets the position of the overlay. */
-    /* CompleteClass */
-    override var position: Rect = js.native
   }
   
   /** Represents a layer of a media overlay. */
@@ -167,12 +64,6 @@ object Editing extends js.Object {
       * @param compositorDefinition The definition of the custom compositor associated with the media overlay layer.
       */
     def this(compositorDefinition: IVideoCompositorDefinition) = this()
-    /** Gets the definition of the custom compositor associated with the media overlay layer, if there is one. */
-    /* CompleteClass */
-    override var customCompositorDefinition: IVideoCompositorDefinition = js.native
-    /** Gets the list of overlays for this media overlay layer. */
-    /* CompleteClass */
-    override var overlays: IVector[typings.winrtUwp.Windows.Media.Editing.MediaOverlay] = js.native
   }
   
   /* static members */

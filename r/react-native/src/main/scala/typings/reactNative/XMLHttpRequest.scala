@@ -37,7 +37,18 @@ trait XMLHttpRequest
   def getResponseHeader(header: String): String | Null = js.native
   //  msCachingEnabled(): boolean;
   def open(method: String, url: String): Unit = js.native
+  def open(
+    method: String,
+    url: String,
+    async: js.UndefOr[scala.Nothing],
+    user: js.UndefOr[scala.Nothing],
+    password: String
+  ): Unit = js.native
+  def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: String): Unit = js.native
+  def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: String, password: String): Unit = js.native
+  def open(method: String, url: String, async: js.UndefOr[scala.Nothing], user: Null, password: String): Unit = js.native
   def open(method: String, url: String, async: Boolean): Unit = js.native
+  def open(method: String, url: String, async: Boolean, user: js.UndefOr[scala.Nothing], password: String): Unit = js.native
   def open(method: String, url: String, async: Boolean, user: String): Unit = js.native
   def open(method: String, url: String, async: Boolean, user: String, password: String): Unit = js.native
   def open(method: String, url: String, async: Boolean, user: Null, password: String): Unit = js.native

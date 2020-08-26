@@ -1,7 +1,5 @@
 package typings.sharedb.agentMod
 
-import typings.sharedb.anon.DuplexisServerboolean
-import typings.sharedb.sharedbMod.JSONObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,24 +18,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("sharedb/lib/agent", JSImport.Namespace)
 @js.native
-class ^ () extends Agent {
-  /* CompleteClass */
-  override var backend: typings.sharedb.mod.^ = js.native
-  /**
-    * Object for custom use in middleware to store app-specific state for a
-    * given client session. It is in memory only as long as the session is
-    * active, and it is passed to each middleware call.
-    */
-  /* CompleteClass */
-  override var custom: Custom = js.native
-  /* CompleteClass */
-  override var stream: DuplexisServerboolean = js.native
-  /**
-    * Sends a JSON-compatible message to the client for this agent.
-    *
-    * @param message
-    */
-  /* CompleteClass */
-  override def send(message: JSONObject): Unit = js.native
-}
+class ^ () extends Agent
 

@@ -14,6 +14,7 @@ trait IObservable[T] extends js.Object {
     * @param handler Function to be deleted from EventListeners
     */
   def off(): T = js.native
+  def off(eventName: js.UndefOr[scala.Nothing], handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
   def off(eventName: String): T = js.native
   def off(eventName: String, handler: js.Function1[/* e */ IEvent, Unit]): T = js.native
   def off(eventName: js.Any): T = js.native

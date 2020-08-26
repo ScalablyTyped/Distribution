@@ -30,9 +30,11 @@ object virtualTimeSchedulerMod extends js.Object {
     @JSName("scheduler")
     var scheduler_VirtualAction: VirtualTimeScheduler = js.native
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler): js.Any = js.native
+    /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.Any): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: VirtualTimeScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.Any, delay: Double): js.Any = js.native
   }
@@ -48,6 +50,7 @@ object virtualTimeSchedulerMod extends js.Object {
             ], 
             AsyncAction[js.Object]
           ]) = this()
+    def this(SchedulerAction: js.UndefOr[scala.Nothing], maxFrames: Double) = this()
     def this(
       SchedulerAction: Instantiable2[
             /* scheduler */ AsyncScheduler, 

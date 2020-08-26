@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-svg/lib/asn/GooglePlusOutlined", JSImport.Namespace)
+@JSImport("@ant-design/icons-svg/es/asn/GooglePlusOutlined", JSImport.Namespace)
 @js.native
 object googlePlusOutlinedMod extends js.Object {
   val default: IconDefinition = js.native

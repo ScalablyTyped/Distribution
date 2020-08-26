@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-core", "OneHot")
 @js.native
-object OneHot_ extends TopLevel[/* "Identity" */ String]
+object OneHot_ extends TopLevel[/* "Conv2D" */ String]
 

@@ -12,7 +12,7 @@ Fetch JSONP like a boss using Fetch API
 | Keywords           | fetch, jsonp, github fetch, ajax |
 | # releases         | 0 |
 | # dependents       | 137 |
-| # downloads        | 1791457 |
+| # downloads        | 1828091 |
 | # stars            | 8 |
 
 ## Links

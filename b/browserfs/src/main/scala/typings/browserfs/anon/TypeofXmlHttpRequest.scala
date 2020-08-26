@@ -22,7 +22,7 @@ trait TypeofXmlHttpRequest
     ]
      with Instantiable3[
       (/* listingUrlOrObj */ js.Object) | (/* listingUrlOrObj */ String), 
-      /* prefixUrl */ String, 
+      js.UndefOr[/* prefixUrl */ String], 
       /* deprecateMsg */ Boolean, 
       default
     ] {
@@ -40,6 +40,12 @@ trait TypeofXmlHttpRequest
     * @param cb Called when the file system has been instantiated, or if an error occurs.
     */
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = js.native
+  def FromURL(
+    url: String,
+    cb: BFSCallback[XmlHttpRequest],
+    baseUrl: js.UndefOr[scala.Nothing],
+    deprecateMsg: Boolean
+  ): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = js.native
   def isAvailable(): Boolean = js.native

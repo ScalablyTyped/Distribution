@@ -18,14 +18,32 @@ trait ListServiceQuotaIncreaseRequestsInTemplateResponse extends js.Object {
 
 object ListServiceQuotaIncreaseRequestsInTemplateResponse {
   @scala.inline
-  def apply(
-    NextToken: NextToken = null,
-    ServiceQuotaIncreaseRequestInTemplateList: ServiceQuotaIncreaseRequestInTemplateList = null
-  ): ListServiceQuotaIncreaseRequestsInTemplateResponse = {
+  def apply(): ListServiceQuotaIncreaseRequestsInTemplateResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ServiceQuotaIncreaseRequestInTemplateList != null) __obj.updateDynamic("ServiceQuotaIncreaseRequestInTemplateList")(ServiceQuotaIncreaseRequestInTemplateList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServiceQuotaIncreaseRequestsInTemplateResponse]
   }
+  @scala.inline
+  implicit class ListServiceQuotaIncreaseRequestsInTemplateResponseOps[Self <: ListServiceQuotaIncreaseRequestsInTemplateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setServiceQuotaIncreaseRequestInTemplateListVarargs(value: ServiceQuotaIncreaseRequestInTemplate*): Self = this.set("ServiceQuotaIncreaseRequestInTemplateList", js.Array(value :_*))
+    @scala.inline
+    def setServiceQuotaIncreaseRequestInTemplateList(value: ServiceQuotaIncreaseRequestInTemplateList): Self = this.set("ServiceQuotaIncreaseRequestInTemplateList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceQuotaIncreaseRequestInTemplateList: Self = this.set("ServiceQuotaIncreaseRequestInTemplateList", js.undefined)
+  }
+  
 }
 

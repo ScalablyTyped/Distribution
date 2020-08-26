@@ -283,7 +283,6 @@ trait Map[E /* <: Element */] extends MVCObject {
   def setMapTypeId(mapTypeId: MapTypeId): Unit = js.native
   /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map.setOptions Maps JavaScript API} */
   def setOptions(options: MapOptions): Unit = js.native
-  def setStreetView(): Unit = js.native
   /**
     * Binds a {@link StreetViewPanorama} to the map.
     * This panorama overrides the default {@link StreetViewPanorama}, allowing the map to bind to an external panorama outside of the map.
@@ -292,6 +291,7 @@ trait Map[E /* <: Element */] extends MVCObject {
     * @see {@link MapOptions#streetView}
     * @see {@link getStreetView}
     */
+  def setStreetView(): Unit = js.native
   def setStreetView(panorama: StreetViewPanorama): Unit = js.native
   /**
     * Controls the automatic switching behavior for the angle of incidence of the map.

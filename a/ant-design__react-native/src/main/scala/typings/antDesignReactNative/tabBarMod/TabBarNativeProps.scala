@@ -6,28 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabBarNativeProps extends TabBarProps {
-  var styles: js.UndefOr[TabBarStyle] = js.undefined
+  var styles: js.UndefOr[TabBarStyle] = js.native
 }
 
 object TabBarNativeProps {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    barTintColor: String = null,
-    styles: TabBarStyle = null,
-    swipeable: js.UndefOr[Boolean] = js.undefined,
-    tintColor: String = null,
-    unselectedTintColor: String = null
-  ): TabBarNativeProps = {
+  def apply(): TabBarNativeProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (barTintColor != null) __obj.updateDynamic("barTintColor")(barTintColor.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeable)) __obj.updateDynamic("swipeable")(swipeable.get.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (unselectedTintColor != null) __obj.updateDynamic("unselectedTintColor")(unselectedTintColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarNativeProps]
   }
+  @scala.inline
+  implicit class TabBarNativePropsOps[Self <: TabBarNativeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyles(value: TabBarStyle): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+  }
+  
 }
 

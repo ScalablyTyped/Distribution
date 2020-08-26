@@ -27,6 +27,7 @@ trait KramedStatic extends js.Object {
     * @return String of compiled HTML
     */
   def apply(src: String, callback: js.Function0[Unit]): String = js.native
+  def apply(src: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): String = js.native
   def apply(src: String, options: KramedOptions): String = js.native
   def apply(src: String, options: KramedOptions, callback: js.Function0[Unit]): String = js.native
   /**
@@ -52,6 +53,7 @@ trait KramedStatic extends js.Object {
     * @return String of compiled HTML
     */
   def parse(src: String, callback: js.Function0[Unit]): String = js.native
+  def parse(src: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): String = js.native
   def parse(src: String, options: KramedOptions): String = js.native
   def parse(src: String, options: KramedOptions, callback: js.Function0[Unit]): String = js.native
   /**

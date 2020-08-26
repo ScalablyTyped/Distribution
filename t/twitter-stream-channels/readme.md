@@ -12,7 +12,7 @@ Manage multiple filters on the same Twitter stream
 | Keywords           | twitter, api, stream, filter |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 2605 |
+| # downloads        | 2512 |
 | # stars            | 9 |
 
 ## Links

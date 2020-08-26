@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "realm" : "3.6.5"
+      "realm" : "6.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "realm" : "3.6.5"
+      "realm" : "6.0.3"
     }
   ],
   "compile-devDependencies" : [

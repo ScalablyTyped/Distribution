@@ -428,6 +428,7 @@ trait BaseCamera
     * @param y The vertical origin value. If not defined it will be set to the value of `x`. Default x.
     */
   def setOrigin(): this.type = js.native
+  def setOrigin(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setOrigin(x: Double): this.type = js.native
   def setOrigin(x: Double, y: Double): this.type = js.native
   /**

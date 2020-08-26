@@ -31,13 +31,38 @@ trait SchemaImageButton extends js.Object {
 
 object SchemaImageButton {
   @scala.inline
-  def apply(icon: String = null, iconUrl: String = null, name: String = null, onClick: SchemaOnClick = null): SchemaImageButton = {
+  def apply(): SchemaImageButton = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageButton]
   }
+  @scala.inline
+  implicit class SchemaImageButtonOps[Self <: SchemaImageButton] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconUrl(value: String): Self = this.set("iconUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconUrl: Self = this.set("iconUrl", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnClick(value: SchemaOnClick): Self = this.set("onClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+  }
+  
 }
 

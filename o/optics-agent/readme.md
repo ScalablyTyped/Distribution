@@ -12,7 +12,7 @@ Apollo Optics Agent for GraphQL-js
 | Keywords           | graphql |
 | # releases         | 1 |
 | # dependents       | 1 |
-| # downloads        | 84636 |
+| # downloads        | 85609 |
 | # stars            | 0 |
 
 ## Links

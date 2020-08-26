@@ -11,8 +11,8 @@ A library for manipulating IPv4 and IPv6 addresses in JavaScript.
 | Full name          | ipaddr.js |
 | Keywords           | ip, ipv4, ipv6 |
 | # releases         | 7 |
-| # dependents       | 246 |
-| # downloads        | 482518660 |
+| # dependents       | 250 |
+| # downloads        | 495095865 |
 | # stars            | 18 |
 
 ## Links

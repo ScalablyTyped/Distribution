@@ -59,30 +59,78 @@ trait SchemaPrincipal extends js.Object {
 
 object SchemaPrincipal {
   @scala.inline
-  def apply(
-    condition: String = null,
-    groups: js.Array[String] = null,
-    ips: js.Array[String] = null,
-    namespaces: js.Array[String] = null,
-    notGroups: js.Array[String] = null,
-    notIps: js.Array[String] = null,
-    notNamespaces: js.Array[String] = null,
-    notUsers: js.Array[String] = null,
-    properties: StringDictionary[String] = null,
-    users: js.Array[String] = null
-  ): SchemaPrincipal = {
+  def apply(): SchemaPrincipal = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (ips != null) __obj.updateDynamic("ips")(ips.asInstanceOf[js.Any])
-    if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces.asInstanceOf[js.Any])
-    if (notGroups != null) __obj.updateDynamic("notGroups")(notGroups.asInstanceOf[js.Any])
-    if (notIps != null) __obj.updateDynamic("notIps")(notIps.asInstanceOf[js.Any])
-    if (notNamespaces != null) __obj.updateDynamic("notNamespaces")(notNamespaces.asInstanceOf[js.Any])
-    if (notUsers != null) __obj.updateDynamic("notUsers")(notUsers.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (users != null) __obj.updateDynamic("users")(users.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrincipal]
   }
+  @scala.inline
+  implicit class SchemaPrincipalOps[Self <: SchemaPrincipal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCondition(value: String): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: String*): Self = this.set("groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: js.Array[String]): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+    @scala.inline
+    def setIpsVarargs(value: String*): Self = this.set("ips", js.Array(value :_*))
+    @scala.inline
+    def setIps(value: js.Array[String]): Self = this.set("ips", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIps: Self = this.set("ips", js.undefined)
+    @scala.inline
+    def setNamespacesVarargs(value: String*): Self = this.set("namespaces", js.Array(value :_*))
+    @scala.inline
+    def setNamespaces(value: js.Array[String]): Self = this.set("namespaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaces: Self = this.set("namespaces", js.undefined)
+    @scala.inline
+    def setNotGroupsVarargs(value: String*): Self = this.set("notGroups", js.Array(value :_*))
+    @scala.inline
+    def setNotGroups(value: js.Array[String]): Self = this.set("notGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotGroups: Self = this.set("notGroups", js.undefined)
+    @scala.inline
+    def setNotIpsVarargs(value: String*): Self = this.set("notIps", js.Array(value :_*))
+    @scala.inline
+    def setNotIps(value: js.Array[String]): Self = this.set("notIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotIps: Self = this.set("notIps", js.undefined)
+    @scala.inline
+    def setNotNamespacesVarargs(value: String*): Self = this.set("notNamespaces", js.Array(value :_*))
+    @scala.inline
+    def setNotNamespaces(value: js.Array[String]): Self = this.set("notNamespaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotNamespaces: Self = this.set("notNamespaces", js.undefined)
+    @scala.inline
+    def setNotUsersVarargs(value: String*): Self = this.set("notUsers", js.Array(value :_*))
+    @scala.inline
+    def setNotUsers(value: js.Array[String]): Self = this.set("notUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotUsers: Self = this.set("notUsers", js.undefined)
+    @scala.inline
+    def setProperties(value: StringDictionary[String]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setUsersVarargs(value: String*): Self = this.set("users", js.Array(value :_*))
+    @scala.inline
+    def setUsers(value: js.Array[String]): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsers: Self = this.set("users", js.undefined)
+  }
+  
 }
 

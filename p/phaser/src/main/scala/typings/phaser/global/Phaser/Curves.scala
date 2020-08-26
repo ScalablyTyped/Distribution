@@ -104,6 +104,7 @@ object Curves extends js.Object {
   class MoveTo ()
     extends typings.phaser.Phaser.Curves.MoveTo {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
   }
   
@@ -123,6 +124,7 @@ object Curves extends js.Object {
   class Path ()
     extends typings.phaser.Phaser.Curves.Path {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
   }
   

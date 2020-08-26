@@ -14,6 +14,7 @@ trait Rect
   def geometry(): typings.kendoUi.kendo.geometry.Rect = js.native
   def geometry(value: typings.kendoUi.kendo.geometry.Rect): Unit = js.native
   def stroke(color: String): typings.kendoUi.kendo.drawing.Rect = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): typings.kendoUi.kendo.drawing.Rect = js.native
   def stroke(color: String, width: Double): typings.kendoUi.kendo.drawing.Rect = js.native
   def stroke(color: String, width: Double, opacity: Double): typings.kendoUi.kendo.drawing.Rect = js.native
 }

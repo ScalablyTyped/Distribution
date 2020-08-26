@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 class Class () extends ListStream {
   def this(callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]) = this()
   def this(options: DuplexOptions) = this()
+  def this(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]
+  ) = this()
   def this(options: DuplexOptions, callback: js.Function2[/* err */ Error, /* data */ js.Array[_], Unit]) = this()
 }
 

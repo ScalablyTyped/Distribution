@@ -18,11 +18,30 @@ trait BillingModeSummary extends js.Object {
 
 object BillingModeSummary {
   @scala.inline
-  def apply(BillingMode: BillingMode = null, LastUpdateToPayPerRequestDateTime: Date = null): BillingModeSummary = {
+  def apply(): BillingModeSummary = {
     val __obj = js.Dynamic.literal()
-    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
-    if (LastUpdateToPayPerRequestDateTime != null) __obj.updateDynamic("LastUpdateToPayPerRequestDateTime")(LastUpdateToPayPerRequestDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingModeSummary]
   }
+  @scala.inline
+  implicit class BillingModeSummaryOps[Self <: BillingModeSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingMode(value: BillingMode): Self = this.set("BillingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMode: Self = this.set("BillingMode", js.undefined)
+    @scala.inline
+    def setLastUpdateToPayPerRequestDateTime(value: Date): Self = this.set("LastUpdateToPayPerRequestDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateToPayPerRequestDateTime: Self = this.set("LastUpdateToPayPerRequestDateTime", js.undefined)
+  }
+  
 }
 

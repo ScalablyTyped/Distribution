@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 class GeneralizedNormal ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.GeneralizedNormal] {
   def this(mu: Double) = this()
+  def this(mu: js.UndefOr[scala.Nothing], alpha: Double) = this()
   def this(mu: Double, alpha: Double) = this()
+  def this(mu: js.UndefOr[scala.Nothing], alpha: js.UndefOr[scala.Nothing], beta: Double) = this()
+  def this(mu: js.UndefOr[scala.Nothing], alpha: Double, beta: Double) = this()
+  def this(mu: Double, alpha: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(mu: Double, alpha: Double, beta: Double) = this()
 }
 

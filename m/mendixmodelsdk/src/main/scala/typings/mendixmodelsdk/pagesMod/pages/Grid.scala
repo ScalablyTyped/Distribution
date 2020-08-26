@@ -23,19 +23,19 @@ abstract class Grid protected () extends ListenTargetWidget {
   @JSName("model")
   var model_FGrid: IModel = js.native
   def controlBar: GridControlBar = js.native
-  def controlBar(newValue: GridControlBar): js.Any = js.native
+  def controlBar_=(newValue: GridControlBar): Unit = js.native
   def defaultButtonTrigger: ClickTypeType = js.native
-  def defaultButtonTrigger(newValue: ClickTypeType): js.Any = js.native
+  def defaultButtonTrigger_=(newValue: ClickTypeType): Unit = js.native
   def isControlBarVisible: Boolean = js.native
-  def isControlBarVisible(newValue: Boolean): js.Any = js.native
+  def isControlBarVisible_=(newValue: Boolean): Unit = js.native
   def isPagingEnabled: Boolean = js.native
-  def isPagingEnabled(newValue: Boolean): js.Any = js.native
+  def isPagingEnabled_=(newValue: Boolean): Unit = js.native
   def refreshTime: Double = js.native
-  def refreshTime(newValue: Double): js.Any = js.native
+  def refreshTime_=(newValue: Double): Unit = js.native
   def selectFirst: Boolean = js.native
-  def selectFirst(newValue: Boolean): js.Any = js.native
+  def selectFirst_=(newValue: Boolean): Unit = js.native
   def selectionMode: GridSelectionMode = js.native
-  def selectionMode(newValue: GridSelectionMode): js.Any = js.native
+  def selectionMode_=(newValue: GridSelectionMode): Unit = js.native
 }
 
 /* static members */

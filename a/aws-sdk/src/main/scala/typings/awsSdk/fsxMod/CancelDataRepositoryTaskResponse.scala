@@ -18,11 +18,30 @@ trait CancelDataRepositoryTaskResponse extends js.Object {
 
 object CancelDataRepositoryTaskResponse {
   @scala.inline
-  def apply(Lifecycle: DataRepositoryTaskLifecycle = null, TaskId: TaskId = null): CancelDataRepositoryTaskResponse = {
+  def apply(): CancelDataRepositoryTaskResponse = {
     val __obj = js.Dynamic.literal()
-    if (Lifecycle != null) __obj.updateDynamic("Lifecycle")(Lifecycle.asInstanceOf[js.Any])
-    if (TaskId != null) __obj.updateDynamic("TaskId")(TaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelDataRepositoryTaskResponse]
   }
+  @scala.inline
+  implicit class CancelDataRepositoryTaskResponseOps[Self <: CancelDataRepositoryTaskResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLifecycle(value: DataRepositoryTaskLifecycle): Self = this.set("Lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("Lifecycle", js.undefined)
+    @scala.inline
+    def setTaskId(value: TaskId): Self = this.set("TaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskId: Self = this.set("TaskId", js.undefined)
+  }
+  
 }
 

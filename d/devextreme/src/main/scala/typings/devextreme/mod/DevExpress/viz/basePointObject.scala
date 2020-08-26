@@ -5,39 +5,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait basePointObject extends js.Object {
   /** @name basePointObject.data */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** @name basePointObject.fullState */
-  var fullState: js.UndefOr[Double] = js.undefined
+  var fullState: js.UndefOr[Double] = js.native
   /** @name basePointObject.originalArgument */
-  var originalArgument: js.UndefOr[String | Double | Date] = js.undefined
+  var originalArgument: js.UndefOr[String | Double | Date] = js.native
   /** @name basePointObject.originalValue */
-  var originalValue: js.UndefOr[String | Double | Date] = js.undefined
+  var originalValue: js.UndefOr[String | Double | Date] = js.native
   /** @name basePointObject.series */
-  var series: js.UndefOr[js.Any] = js.undefined
+  var series: js.UndefOr[js.Any] = js.native
   /** @name basePointObject.tag */
-  var tag: js.UndefOr[js.Any] = js.undefined
+  var tag: js.UndefOr[js.Any] = js.native
   /** @name basePointObject.clearHover() */
-  def clearHover(): Unit
+  def clearHover(): Unit = js.native
   /** @name basePointObject.clearSelection() */
-  def clearSelection(): Unit
+  def clearSelection(): Unit = js.native
   /** @name basePointObject.getColor() */
-  def getColor(): String
+  def getColor(): String = js.native
   /** @name basePointObject.getLabel() */
-  def getLabel(): baseLabelObject with js.Array[baseLabelObject]
+  def getLabel(): baseLabelObject with js.Array[baseLabelObject] = js.native
   /** @name basePointObject.hideTooltip() */
-  def hideTooltip(): Unit
+  def hideTooltip(): Unit = js.native
   /** @name basePointObject.hover() */
-  def hover(): Unit
+  def hover(): Unit = js.native
   /** @name basePointObject.isHovered() */
-  def isHovered(): Boolean
+  def isHovered(): Boolean = js.native
   /** @name basePointObject.isSelected() */
-  def isSelected(): Boolean
+  def isSelected(): Boolean = js.native
   /** @name basePointObject.select() */
-  def select(): Unit
+  def select(): Unit = js.native
   /** @name basePointObject.showTooltip() */
-  def showTooltip(): Unit
+  def showTooltip(): Unit = js.native
 }
 
 object basePointObject {
@@ -52,22 +53,67 @@ object basePointObject {
     isHovered: () => Boolean,
     isSelected: () => Boolean,
     select: () => Unit,
-    showTooltip: () => Unit,
-    data: js.Any = null,
-    fullState: js.UndefOr[Double] = js.undefined,
-    originalArgument: String | Double | Date = null,
-    originalValue: String | Double | Date = null,
-    series: js.Any = null,
-    tag: js.Any = null
+    showTooltip: () => Unit
   ): basePointObject = {
     val __obj = js.Dynamic.literal(clearHover = js.Any.fromFunction0(clearHover), clearSelection = js.Any.fromFunction0(clearSelection), getColor = js.Any.fromFunction0(getColor), getLabel = js.Any.fromFunction0(getLabel), hideTooltip = js.Any.fromFunction0(hideTooltip), hover = js.Any.fromFunction0(hover), isHovered = js.Any.fromFunction0(isHovered), isSelected = js.Any.fromFunction0(isSelected), select = js.Any.fromFunction0(select), showTooltip = js.Any.fromFunction0(showTooltip))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullState)) __obj.updateDynamic("fullState")(fullState.get.asInstanceOf[js.Any])
-    if (originalArgument != null) __obj.updateDynamic("originalArgument")(originalArgument.asInstanceOf[js.Any])
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[basePointObject]
   }
+  @scala.inline
+  implicit class basePointObjectOps[Self <: basePointObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearHover(value: () => Unit): Self = this.set("clearHover", js.Any.fromFunction0(value))
+    @scala.inline
+    def setClearSelection(value: () => Unit): Self = this.set("clearSelection", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetColor(value: () => String): Self = this.set("getColor", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetLabel(value: () => baseLabelObject with js.Array[baseLabelObject]): Self = this.set("getLabel", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHideTooltip(value: () => Unit): Self = this.set("hideTooltip", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHover(value: () => Unit): Self = this.set("hover", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsHovered(value: () => Boolean): Self = this.set("isHovered", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsSelected(value: () => Boolean): Self = this.set("isSelected", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSelect(value: () => Unit): Self = this.set("select", js.Any.fromFunction0(value))
+    @scala.inline
+    def setShowTooltip(value: () => Unit): Self = this.set("showTooltip", js.Any.fromFunction0(value))
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setFullState(value: Double): Self = this.set("fullState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullState: Self = this.set("fullState", js.undefined)
+    @scala.inline
+    def setOriginalArgument(value: String | Double | Date): Self = this.set("originalArgument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalArgument: Self = this.set("originalArgument", js.undefined)
+    @scala.inline
+    def setOriginalValue(value: String | Double | Date): Self = this.set("originalValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalValue: Self = this.set("originalValue", js.undefined)
+    @scala.inline
+    def setSeries(value: js.Any): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setTag(value: js.Any): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

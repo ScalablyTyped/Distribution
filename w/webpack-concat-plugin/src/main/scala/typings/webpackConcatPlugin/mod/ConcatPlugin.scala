@@ -1,9 +1,7 @@
 package typings.webpackConcatPlugin.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.webpack.mod.Compiler_
-import typings.webpack.mod.Plugin
-import typings.webpack.mod.compilation.Compilation
+import typings.std.Plugin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,7 +19,12 @@ trait ConcatPlugin extends Plugin {
   def getRelativePathAsync(context: String): js.Promise[String] = js.native
   def hashFile(files: String): String = js.native
   def hashFile(files: StringDictionary[String]): String = js.native
-  def resolveConcatAndUglify(compilation: Compilation, files: js.Array[String]): Unit = js.native
-  def resolveReadFiles(compiler: Compiler_): Unit = js.native
+  def resolveConcatAndUglify(
+    compilation: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any,
+    files: js.Array[String]
+  ): Unit = js.native
+  def resolveReadFiles(
+    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+  ): Unit = js.native
 }
 

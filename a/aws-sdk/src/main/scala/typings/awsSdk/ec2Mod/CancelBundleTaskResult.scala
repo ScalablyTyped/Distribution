@@ -14,10 +14,26 @@ trait CancelBundleTaskResult extends js.Object {
 
 object CancelBundleTaskResult {
   @scala.inline
-  def apply(BundleTask: BundleTask = null): CancelBundleTaskResult = {
+  def apply(): CancelBundleTaskResult = {
     val __obj = js.Dynamic.literal()
-    if (BundleTask != null) __obj.updateDynamic("BundleTask")(BundleTask.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelBundleTaskResult]
   }
+  @scala.inline
+  implicit class CancelBundleTaskResultOps[Self <: CancelBundleTaskResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleTask(value: BundleTask): Self = this.set("BundleTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleTask: Self = this.set("BundleTask", js.undefined)
+  }
+  
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/symbology/dotDensity", JSImport.Namespace)
+@JSImport("esri/smartMapping/symbology/dotDensity", JSImport.Namespace)
 @js.native
 object symbologyDotDensityMod extends TopLevel[symbologyDotDensity]
 

@@ -19,16 +19,34 @@ trait DescribeAvailabilityMonitorTestOutput extends js.Object {
 
 object DescribeAvailabilityMonitorTestOutput {
   @scala.inline
-  def apply(
-    GatewayARN: GatewayARN = null,
-    StartTime: Time = null,
-    Status: AvailabilityMonitorTestStatus = null
-  ): DescribeAvailabilityMonitorTestOutput = {
+  def apply(): DescribeAvailabilityMonitorTestOutput = {
     val __obj = js.Dynamic.literal()
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAvailabilityMonitorTestOutput]
   }
+  @scala.inline
+  implicit class DescribeAvailabilityMonitorTestOutputOps[Self <: DescribeAvailabilityMonitorTestOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setStartTime(value: Time): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: AvailabilityMonitorTestStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

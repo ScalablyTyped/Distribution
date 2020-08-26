@@ -12,7 +12,7 @@ Typings are for version v1.8.0
 | Keywords           | file, fs, finder, recursive, walk |
 | # releases         | 0 |
 | # dependents       | 63 |
-| # downloads        | 299149 |
+| # downloads        | 305007 |
 | # stars            | 5 |
 
 ## Links

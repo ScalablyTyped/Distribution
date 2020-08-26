@@ -85,9 +85,9 @@ trait LoadBalancerState extends js.Object {
     */
   val subnets: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   val vpcId: js.UndefOr[Input[String]] = js.native
   /**
     * The canonical hosted zone ID of the load balancer (to be used in a Route 53 Alias record).
@@ -97,50 +97,108 @@ trait LoadBalancerState extends js.Object {
 
 object LoadBalancerState {
   @scala.inline
-  def apply(
-    accessLogs: Input[LoadBalancerAccessLogs] = null,
-    arn: Input[String] = null,
-    arnSuffix: Input[String] = null,
-    dnsName: Input[String] = null,
-    dropInvalidHeaderFields: Input[Boolean] = null,
-    enableCrossZoneLoadBalancing: Input[Boolean] = null,
-    enableDeletionProtection: Input[Boolean] = null,
-    enableHttp2: Input[Boolean] = null,
-    idleTimeout: Input[Double] = null,
-    internal: Input[Boolean] = null,
-    ipAddressType: Input[String] = null,
-    loadBalancerType: Input[String] = null,
-    name: Input[String] = null,
-    namePrefix: Input[String] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    subnetMappings: Input[js.Array[Input[LoadBalancerSubnetMapping]]] = null,
-    subnets: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcId: Input[String] = null,
-    zoneId: Input[String] = null
-  ): LoadBalancerState = {
+  def apply(): LoadBalancerState = {
     val __obj = js.Dynamic.literal()
-    if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (arnSuffix != null) __obj.updateDynamic("arnSuffix")(arnSuffix.asInstanceOf[js.Any])
-    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
-    if (dropInvalidHeaderFields != null) __obj.updateDynamic("dropInvalidHeaderFields")(dropInvalidHeaderFields.asInstanceOf[js.Any])
-    if (enableCrossZoneLoadBalancing != null) __obj.updateDynamic("enableCrossZoneLoadBalancing")(enableCrossZoneLoadBalancing.asInstanceOf[js.Any])
-    if (enableDeletionProtection != null) __obj.updateDynamic("enableDeletionProtection")(enableDeletionProtection.asInstanceOf[js.Any])
-    if (enableHttp2 != null) __obj.updateDynamic("enableHttp2")(enableHttp2.asInstanceOf[js.Any])
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
-    if (ipAddressType != null) __obj.updateDynamic("ipAddressType")(ipAddressType.asInstanceOf[js.Any])
-    if (loadBalancerType != null) __obj.updateDynamic("loadBalancerType")(loadBalancerType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (subnetMappings != null) __obj.updateDynamic("subnetMappings")(subnetMappings.asInstanceOf[js.Any])
-    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
-    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerState]
   }
+  @scala.inline
+  implicit class LoadBalancerStateOps[Self <: LoadBalancerState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessLogs(value: Input[LoadBalancerAccessLogs]): Self = this.set("accessLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLogs: Self = this.set("accessLogs", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setArnSuffix(value: Input[String]): Self = this.set("arnSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArnSuffix: Self = this.set("arnSuffix", js.undefined)
+    @scala.inline
+    def setDnsName(value: Input[String]): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("dnsName", js.undefined)
+    @scala.inline
+    def setDropInvalidHeaderFields(value: Input[Boolean]): Self = this.set("dropInvalidHeaderFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropInvalidHeaderFields: Self = this.set("dropInvalidHeaderFields", js.undefined)
+    @scala.inline
+    def setEnableCrossZoneLoadBalancing(value: Input[Boolean]): Self = this.set("enableCrossZoneLoadBalancing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCrossZoneLoadBalancing: Self = this.set("enableCrossZoneLoadBalancing", js.undefined)
+    @scala.inline
+    def setEnableDeletionProtection(value: Input[Boolean]): Self = this.set("enableDeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDeletionProtection: Self = this.set("enableDeletionProtection", js.undefined)
+    @scala.inline
+    def setEnableHttp2(value: Input[Boolean]): Self = this.set("enableHttp2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableHttp2: Self = this.set("enableHttp2", js.undefined)
+    @scala.inline
+    def setIdleTimeout(value: Input[Double]): Self = this.set("idleTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdleTimeout: Self = this.set("idleTimeout", js.undefined)
+    @scala.inline
+    def setInternal(value: Input[Boolean]): Self = this.set("internal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternal: Self = this.set("internal", js.undefined)
+    @scala.inline
+    def setIpAddressType(value: Input[String]): Self = this.set("ipAddressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressType: Self = this.set("ipAddressType", js.undefined)
+    @scala.inline
+    def setLoadBalancerType(value: Input[String]): Self = this.set("loadBalancerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerType: Self = this.set("loadBalancerType", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamePrefix(value: Input[String]): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefix: Self = this.set("namePrefix", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSubnetMappingsVarargs(value: Input[LoadBalancerSubnetMapping]*): Self = this.set("subnetMappings", js.Array(value :_*))
+    @scala.inline
+    def setSubnetMappings(value: Input[js.Array[Input[LoadBalancerSubnetMapping]]]): Self = this.set("subnetMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetMappings: Self = this.set("subnetMappings", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: Input[String]*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Input[js.Array[Input[String]]]): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("subnets", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+    @scala.inline
+    def setZoneId(value: Input[String]): Self = this.set("zoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneId: Self = this.set("zoneId", js.undefined)
+  }
+  
 }
 

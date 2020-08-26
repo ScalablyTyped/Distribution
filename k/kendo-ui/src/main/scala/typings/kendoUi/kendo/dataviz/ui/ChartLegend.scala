@@ -4,66 +4,113 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartLegend extends js.Object {
-  var align: js.UndefOr[String] = js.undefined
-  var background: js.UndefOr[String] = js.undefined
-  var border: js.UndefOr[ChartLegendBorder] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var inactiveItems: js.UndefOr[ChartLegendInactiveItems] = js.undefined
-  var item: js.UndefOr[ChartLegendItem] = js.undefined
-  var labels: js.UndefOr[ChartLegendLabels] = js.undefined
-  var margin: js.UndefOr[Double | ChartLegendMargin] = js.undefined
-  var offsetX: js.UndefOr[Double] = js.undefined
-  var offsetY: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
-  var padding: js.UndefOr[Double | ChartLegendPadding] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var reverse: js.UndefOr[Boolean] = js.undefined
-  var spacing: js.UndefOr[Double] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.native
+  var border: js.UndefOr[ChartLegendBorder] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var inactiveItems: js.UndefOr[ChartLegendInactiveItems] = js.native
+  var item: js.UndefOr[ChartLegendItem] = js.native
+  var labels: js.UndefOr[ChartLegendLabels] = js.native
+  var margin: js.UndefOr[Double | ChartLegendMargin] = js.native
+  var offsetX: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[Double | ChartLegendPadding] = js.native
+  var position: js.UndefOr[String] = js.native
+  var reverse: js.UndefOr[Boolean] = js.native
+  var spacing: js.UndefOr[Double] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ChartLegend {
   @scala.inline
-  def apply(
-    align: String = null,
-    background: String = null,
-    border: ChartLegendBorder = null,
-    height: js.UndefOr[Double] = js.undefined,
-    inactiveItems: ChartLegendInactiveItems = null,
-    item: ChartLegendItem = null,
-    labels: ChartLegendLabels = null,
-    margin: Double | ChartLegendMargin = null,
-    offsetX: js.UndefOr[Double] = js.undefined,
-    offsetY: js.UndefOr[Double] = js.undefined,
-    orientation: String = null,
-    padding: Double | ChartLegendPadding = null,
-    position: String = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    spacing: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): ChartLegend = {
+  def apply(): ChartLegend = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (inactiveItems != null) __obj.updateDynamic("inactiveItems")(inactiveItems.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetX)) __obj.updateDynamic("offsetX")(offsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offsetY)) __obj.updateDynamic("offsetY")(offsetY.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacing)) __obj.updateDynamic("spacing")(spacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegend]
   }
+  @scala.inline
+  implicit class ChartLegendOps[Self <: ChartLegend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorder(value: ChartLegendBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setInactiveItems(value: ChartLegendInactiveItems): Self = this.set("inactiveItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInactiveItems: Self = this.set("inactiveItems", js.undefined)
+    @scala.inline
+    def setItem(value: ChartLegendItem): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setLabels(value: ChartLegendLabels): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMargin(value: Double | ChartLegendMargin): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setOffsetX(value: Double): Self = this.set("offsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetX: Self = this.set("offsetX", js.undefined)
+    @scala.inline
+    def setOffsetY(value: Double): Self = this.set("offsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetY: Self = this.set("offsetY", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | ChartLegendPadding): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverse: Self = this.set("reverse", js.undefined)
+    @scala.inline
+    def setSpacing(value: Double): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

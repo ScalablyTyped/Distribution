@@ -81,44 +81,90 @@ trait SchemaResponse extends js.Object {
 
 object SchemaResponse {
   @scala.inline
-  def apply(
-    addBanding: SchemaAddBandingResponse = null,
-    addChart: SchemaAddChartResponse = null,
-    addDimensionGroup: SchemaAddDimensionGroupResponse = null,
-    addFilterView: SchemaAddFilterViewResponse = null,
-    addNamedRange: SchemaAddNamedRangeResponse = null,
-    addProtectedRange: SchemaAddProtectedRangeResponse = null,
-    addSheet: SchemaAddSheetResponse = null,
-    createDeveloperMetadata: SchemaCreateDeveloperMetadataResponse = null,
-    deleteConditionalFormatRule: SchemaDeleteConditionalFormatRuleResponse = null,
-    deleteDeveloperMetadata: SchemaDeleteDeveloperMetadataResponse = null,
-    deleteDimensionGroup: SchemaDeleteDimensionGroupResponse = null,
-    duplicateFilterView: SchemaDuplicateFilterViewResponse = null,
-    duplicateSheet: SchemaDuplicateSheetResponse = null,
-    findReplace: SchemaFindReplaceResponse = null,
-    updateConditionalFormatRule: SchemaUpdateConditionalFormatRuleResponse = null,
-    updateDeveloperMetadata: SchemaUpdateDeveloperMetadataResponse = null,
-    updateEmbeddedObjectPosition: SchemaUpdateEmbeddedObjectPositionResponse = null
-  ): SchemaResponse = {
+  def apply(): SchemaResponse = {
     val __obj = js.Dynamic.literal()
-    if (addBanding != null) __obj.updateDynamic("addBanding")(addBanding.asInstanceOf[js.Any])
-    if (addChart != null) __obj.updateDynamic("addChart")(addChart.asInstanceOf[js.Any])
-    if (addDimensionGroup != null) __obj.updateDynamic("addDimensionGroup")(addDimensionGroup.asInstanceOf[js.Any])
-    if (addFilterView != null) __obj.updateDynamic("addFilterView")(addFilterView.asInstanceOf[js.Any])
-    if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange.asInstanceOf[js.Any])
-    if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange.asInstanceOf[js.Any])
-    if (addSheet != null) __obj.updateDynamic("addSheet")(addSheet.asInstanceOf[js.Any])
-    if (createDeveloperMetadata != null) __obj.updateDynamic("createDeveloperMetadata")(createDeveloperMetadata.asInstanceOf[js.Any])
-    if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule.asInstanceOf[js.Any])
-    if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata.asInstanceOf[js.Any])
-    if (deleteDimensionGroup != null) __obj.updateDynamic("deleteDimensionGroup")(deleteDimensionGroup.asInstanceOf[js.Any])
-    if (duplicateFilterView != null) __obj.updateDynamic("duplicateFilterView")(duplicateFilterView.asInstanceOf[js.Any])
-    if (duplicateSheet != null) __obj.updateDynamic("duplicateSheet")(duplicateSheet.asInstanceOf[js.Any])
-    if (findReplace != null) __obj.updateDynamic("findReplace")(findReplace.asInstanceOf[js.Any])
-    if (updateConditionalFormatRule != null) __obj.updateDynamic("updateConditionalFormatRule")(updateConditionalFormatRule.asInstanceOf[js.Any])
-    if (updateDeveloperMetadata != null) __obj.updateDynamic("updateDeveloperMetadata")(updateDeveloperMetadata.asInstanceOf[js.Any])
-    if (updateEmbeddedObjectPosition != null) __obj.updateDynamic("updateEmbeddedObjectPosition")(updateEmbeddedObjectPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResponse]
   }
+  @scala.inline
+  implicit class SchemaResponseOps[Self <: SchemaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddBanding(value: SchemaAddBandingResponse): Self = this.set("addBanding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddBanding: Self = this.set("addBanding", js.undefined)
+    @scala.inline
+    def setAddChart(value: SchemaAddChartResponse): Self = this.set("addChart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddChart: Self = this.set("addChart", js.undefined)
+    @scala.inline
+    def setAddDimensionGroup(value: SchemaAddDimensionGroupResponse): Self = this.set("addDimensionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddDimensionGroup: Self = this.set("addDimensionGroup", js.undefined)
+    @scala.inline
+    def setAddFilterView(value: SchemaAddFilterViewResponse): Self = this.set("addFilterView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddFilterView: Self = this.set("addFilterView", js.undefined)
+    @scala.inline
+    def setAddNamedRange(value: SchemaAddNamedRangeResponse): Self = this.set("addNamedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddNamedRange: Self = this.set("addNamedRange", js.undefined)
+    @scala.inline
+    def setAddProtectedRange(value: SchemaAddProtectedRangeResponse): Self = this.set("addProtectedRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddProtectedRange: Self = this.set("addProtectedRange", js.undefined)
+    @scala.inline
+    def setAddSheet(value: SchemaAddSheetResponse): Self = this.set("addSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddSheet: Self = this.set("addSheet", js.undefined)
+    @scala.inline
+    def setCreateDeveloperMetadata(value: SchemaCreateDeveloperMetadataResponse): Self = this.set("createDeveloperMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDeveloperMetadata: Self = this.set("createDeveloperMetadata", js.undefined)
+    @scala.inline
+    def setDeleteConditionalFormatRule(value: SchemaDeleteConditionalFormatRuleResponse): Self = this.set("deleteConditionalFormatRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteConditionalFormatRule: Self = this.set("deleteConditionalFormatRule", js.undefined)
+    @scala.inline
+    def setDeleteDeveloperMetadata(value: SchemaDeleteDeveloperMetadataResponse): Self = this.set("deleteDeveloperMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteDeveloperMetadata: Self = this.set("deleteDeveloperMetadata", js.undefined)
+    @scala.inline
+    def setDeleteDimensionGroup(value: SchemaDeleteDimensionGroupResponse): Self = this.set("deleteDimensionGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteDimensionGroup: Self = this.set("deleteDimensionGroup", js.undefined)
+    @scala.inline
+    def setDuplicateFilterView(value: SchemaDuplicateFilterViewResponse): Self = this.set("duplicateFilterView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateFilterView: Self = this.set("duplicateFilterView", js.undefined)
+    @scala.inline
+    def setDuplicateSheet(value: SchemaDuplicateSheetResponse): Self = this.set("duplicateSheet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateSheet: Self = this.set("duplicateSheet", js.undefined)
+    @scala.inline
+    def setFindReplace(value: SchemaFindReplaceResponse): Self = this.set("findReplace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindReplace: Self = this.set("findReplace", js.undefined)
+    @scala.inline
+    def setUpdateConditionalFormatRule(value: SchemaUpdateConditionalFormatRuleResponse): Self = this.set("updateConditionalFormatRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateConditionalFormatRule: Self = this.set("updateConditionalFormatRule", js.undefined)
+    @scala.inline
+    def setUpdateDeveloperMetadata(value: SchemaUpdateDeveloperMetadataResponse): Self = this.set("updateDeveloperMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDeveloperMetadata: Self = this.set("updateDeveloperMetadata", js.undefined)
+    @scala.inline
+    def setUpdateEmbeddedObjectPosition(value: SchemaUpdateEmbeddedObjectPositionResponse): Self = this.set("updateEmbeddedObjectPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateEmbeddedObjectPosition: Self = this.set("updateEmbeddedObjectPosition", js.undefined)
+  }
+  
 }
 

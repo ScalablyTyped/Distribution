@@ -12,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/scrollbar", "ScrollBar")
+@JSImport("@lumino/widgets/types/scrollbar", "ScrollBar")
 @js.native
 /**
   * Construct a new scroll bar.

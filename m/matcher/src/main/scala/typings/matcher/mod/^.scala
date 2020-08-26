@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   /**
   	Simple [wildcard](https://en.wikipedia.org/wiki/Wildcard_character) matching.
+  	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
   	@param inputs - Strings to match.
   	@param patterns - Use `*` to match zero or more characters. A pattern starting with `!` will be negated.
   	@returns The `inputs` filtered based on the `patterns`.
@@ -24,6 +25,7 @@ object ^ extends js.Object {
   def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = js.native
   def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = js.native
   /**
+  	It matches even across newlines. For example, `foo*r` will match `foo\nbar`.
   	@param input - String or array of strings to match.
   	@param pattern - String or array of string patterns. Use `*` to match zero or more characters. A pattern starting with `!` will be negated.
   	@returns Whether any given `input` matches every given `pattern`.

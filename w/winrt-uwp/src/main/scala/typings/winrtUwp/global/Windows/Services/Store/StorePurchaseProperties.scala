@@ -14,11 +14,5 @@ class StorePurchaseProperties ()
     * @param name The product name that is displayed to the user during the purchase.
     */
   def this(name: String) = this()
-  /** Gets or sets a JSON-formatted string that contains extended data to pass with the purchase request to the Windows Store. */
-  /* CompleteClass */
-  override var extendedJsonData: String = js.native
-  /** Gets or sets the product name that is displayed to the user during the purchase. The specified name appears in the title bar of the purchase UI. */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

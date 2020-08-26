@@ -14,9 +14,11 @@ trait Parser extends js.Object {
   def getBrowser(): BrowserDetails = js.native
   /**
     * Get browser's name
+    * @param {Boolean} [toLowerCase] return lower-cased value
     * @return {String} Browser's name or an empty string
     */
   def getBrowserName(): String = js.native
+  def getBrowserName(toLowerCase: Boolean): String = js.native
   /**
     * Get browser's version
     * @return {String} version of browser

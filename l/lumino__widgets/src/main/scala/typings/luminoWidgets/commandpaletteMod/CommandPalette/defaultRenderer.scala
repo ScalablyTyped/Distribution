@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * The default `Renderer` instance.
   */
-@JSImport("@lumino/widgets/lib/commandpalette", "CommandPalette.defaultRenderer")
+@JSImport("@lumino/widgets/types/commandpalette", "CommandPalette.defaultRenderer")
 @js.native
 object defaultRenderer extends TopLevel[Renderer]
 

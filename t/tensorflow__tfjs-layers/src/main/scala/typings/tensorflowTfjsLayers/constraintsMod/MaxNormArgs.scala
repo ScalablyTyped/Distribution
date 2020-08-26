@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MaxNormArgs extends js.Object {
   /**
     * Axis along which to calculate norms.
@@ -19,20 +20,39 @@ trait MaxNormArgs extends js.Object {
     *  to constrain the weights of each filter tensor of size
     *  `[rows, cols, inputDepth]`.
     */
-  var axis: js.UndefOr[Double] = js.undefined
+  var axis: js.UndefOr[Double] = js.native
   /**
     * Maximum norm for incoming weights
     */
-  var maxValue: js.UndefOr[Double] = js.undefined
+  var maxValue: js.UndefOr[Double] = js.native
 }
 
 object MaxNormArgs {
   @scala.inline
-  def apply(axis: js.UndefOr[Double] = js.undefined, maxValue: js.UndefOr[Double] = js.undefined): MaxNormArgs = {
+  def apply(): MaxNormArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(axis)) __obj.updateDynamic("axis")(axis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxNormArgs]
   }
+  @scala.inline
+  implicit class MaxNormArgsOps[Self <: MaxNormArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxis(value: Double): Self = this.set("axis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxis: Self = this.set("axis", js.undefined)
+    @scala.inline
+    def setMaxValue(value: Double): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+  }
+  
 }
 

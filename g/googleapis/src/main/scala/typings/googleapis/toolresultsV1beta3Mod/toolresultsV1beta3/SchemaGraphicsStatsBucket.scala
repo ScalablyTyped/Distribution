@@ -18,11 +18,30 @@ trait SchemaGraphicsStatsBucket extends js.Object {
 
 object SchemaGraphicsStatsBucket {
   @scala.inline
-  def apply(frameCount: String = null, renderMillis: String = null): SchemaGraphicsStatsBucket = {
+  def apply(): SchemaGraphicsStatsBucket = {
     val __obj = js.Dynamic.literal()
-    if (frameCount != null) __obj.updateDynamic("frameCount")(frameCount.asInstanceOf[js.Any])
-    if (renderMillis != null) __obj.updateDynamic("renderMillis")(renderMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGraphicsStatsBucket]
   }
+  @scala.inline
+  implicit class SchemaGraphicsStatsBucketOps[Self <: SchemaGraphicsStatsBucket] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrameCount(value: String): Self = this.set("frameCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameCount: Self = this.set("frameCount", js.undefined)
+    @scala.inline
+    def setRenderMillis(value: String): Self = this.set("renderMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderMillis: Self = this.set("renderMillis", js.undefined)
+  }
+  
 }
 

@@ -32,6 +32,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceProjectsInstancesCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceProjectsInstancesCreate,
@@ -64,6 +65,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(params: ParamsResourceProjectsInstancesDelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(
     params: ParamsResourceProjectsInstancesDelete,
@@ -94,6 +96,7 @@ class ResourceProjectsInstances protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] = js.native
   def get(params: ParamsResourceProjectsInstancesGet): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance] = js.native
   def get(
     params: ParamsResourceProjectsInstancesGet,
@@ -126,6 +129,7 @@ class ResourceProjectsInstances protected () extends js.Object {
   def list(
     callback: BodyResponseCallback[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse]
   ): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesList): GaxiosPromise[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesList,

@@ -10,48 +10,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ElementsOptions extends js.Object {
-  var classes: js.UndefOr[Base] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var hideIcon: js.UndefOr[Boolean] = js.undefined
-  var hidePostalCode: js.UndefOr[Boolean] = js.undefined
-  var iconStyle: js.UndefOr[solid | default] = js.undefined
-  var paymentRequest: js.UndefOr[StripePaymentRequest] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var placeholderCountry: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[Complete] = js.undefined
-  var supportedCountries: js.UndefOr[js.Array[String]] = js.undefined
-  var value: js.UndefOr[String | StringDictionary[String]] = js.undefined
+  var classes: js.UndefOr[Base] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var hideIcon: js.UndefOr[Boolean] = js.native
+  var hidePostalCode: js.UndefOr[Boolean] = js.native
+  var iconStyle: js.UndefOr[solid | default] = js.native
+  var paymentRequest: js.UndefOr[StripePaymentRequest] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var placeholderCountry: js.UndefOr[String] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Complete] = js.native
+  var supportedCountries: js.UndefOr[js.Array[String]] = js.native
+  var value: js.UndefOr[String | StringDictionary[String]] = js.native
 }
 
 object ElementsOptions {
   @scala.inline
-  def apply(
-    classes: Base = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    hideIcon: js.UndefOr[Boolean] = js.undefined,
-    hidePostalCode: js.UndefOr[Boolean] = js.undefined,
-    iconStyle: solid | default = null,
-    paymentRequest: StripePaymentRequest = null,
-    placeholder: String = null,
-    placeholderCountry: String = null,
-    style: Complete = null,
-    supportedCountries: js.Array[String] = null,
-    value: String | StringDictionary[String] = null
-  ): ElementsOptions = {
+  def apply(): ElementsOptions = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIcon)) __obj.updateDynamic("hideIcon")(hideIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidePostalCode)) __obj.updateDynamic("hidePostalCode")(hidePostalCode.get.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (paymentRequest != null) __obj.updateDynamic("paymentRequest")(paymentRequest.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderCountry != null) __obj.updateDynamic("placeholderCountry")(placeholderCountry.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (supportedCountries != null) __obj.updateDynamic("supportedCountries")(supportedCountries.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementsOptions]
   }
+  @scala.inline
+  implicit class ElementsOptionsOps[Self <: ElementsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClasses(value: Base): Self = this.set("classes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClasses: Self = this.set("classes", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setHideIcon(value: Boolean): Self = this.set("hideIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideIcon: Self = this.set("hideIcon", js.undefined)
+    @scala.inline
+    def setHidePostalCode(value: Boolean): Self = this.set("hidePostalCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidePostalCode: Self = this.set("hidePostalCode", js.undefined)
+    @scala.inline
+    def setIconStyle(value: solid | default): Self = this.set("iconStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyle: Self = this.set("iconStyle", js.undefined)
+    @scala.inline
+    def setPaymentRequest(value: StripePaymentRequest): Self = this.set("paymentRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentRequest: Self = this.set("paymentRequest", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPlaceholderCountry(value: String): Self = this.set("placeholderCountry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholderCountry: Self = this.set("placeholderCountry", js.undefined)
+    @scala.inline
+    def setShowIcon(value: Boolean): Self = this.set("showIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowIcon: Self = this.set("showIcon", js.undefined)
+    @scala.inline
+    def setStyle(value: Complete): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSupportedCountriesVarargs(value: String*): Self = this.set("supportedCountries", js.Array(value :_*))
+    @scala.inline
+    def setSupportedCountries(value: js.Array[String]): Self = this.set("supportedCountries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedCountries: Self = this.set("supportedCountries", js.undefined)
+    @scala.inline
+    def setValue(value: String | StringDictionary[String]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

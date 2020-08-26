@@ -46,7 +46,7 @@ trait ClusterState extends js.Object {
     */
   val platformVersion: js.UndefOr[Input[String]] = js.native
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf. Ensure the resource configuration includes explicit dependencies on the IAM Role permissions by adding [`dependsOn`](https://www.pulumi.com/docs/intro/concepts/programming-model/#dependson) if using the [`aws.iam.RolePolicy` resource](https://www.terraform.io/docs/providers/aws/r/iam_role_policy.html) or [`aws.iam.RolePolicyAttachment` resource](https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment.html), otherwise EKS cannot delete EKS managed EC2 infrastructure such as Security Groups on EKS Cluster deletion.
+    * The Amazon Resource Name (ARN) of the IAM role that provides permissions for the Kubernetes control plane to make calls to AWS API operations on your behalf. Ensure the resource configuration includes explicit dependencies on the IAM Role permissions by adding [`dependsOn`](https://www.pulumi.com/docs/intro/concepts/programming-model/#dependson) if using the `aws.iam.RolePolicy` resource) or `aws.iam.RolePolicyAttachment` resource, otherwise EKS cannot delete EKS managed EC2 infrastructure such as Security Groups on EKS Cluster deletion.
     */
   val roleArn: js.UndefOr[Input[String]] = js.native
   /**
@@ -54,9 +54,9 @@ trait ClusterState extends js.Object {
     */
   val status: js.UndefOr[Input[String]] = js.native
   /**
-    * Key-value mapping of resource tags.
+    * Key-value map of resource tags.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Desired Kubernetes master version. If you do not specify a value, the latest available version at resource creation is used and no upgrades will occur except those automatically triggered by EKS. The value must be configured and increased to upgrade the version when desired. Downgrades are not supported by EKS.
     */
@@ -69,38 +69,82 @@ trait ClusterState extends js.Object {
 
 object ClusterState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    certificateAuthority: Input[ClusterCertificateAuthority] = null,
-    createdAt: Input[String] = null,
-    enabledClusterLogTypes: Input[js.Array[Input[String]]] = null,
-    encryptionConfig: Input[ClusterEncryptionConfig] = null,
-    endpoint: Input[String] = null,
-    identities: Input[js.Array[Input[ClusterIdentity]]] = null,
-    name: Input[String] = null,
-    platformVersion: Input[String] = null,
-    roleArn: Input[String] = null,
-    status: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    version: Input[String] = null,
-    vpcConfig: Input[ClusterVpcConfig] = null
-  ): ClusterState = {
+  def apply(): ClusterState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (certificateAuthority != null) __obj.updateDynamic("certificateAuthority")(certificateAuthority.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (enabledClusterLogTypes != null) __obj.updateDynamic("enabledClusterLogTypes")(enabledClusterLogTypes.asInstanceOf[js.Any])
-    if (encryptionConfig != null) __obj.updateDynamic("encryptionConfig")(encryptionConfig.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (identities != null) __obj.updateDynamic("identities")(identities.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]
   }
+  @scala.inline
+  implicit class ClusterStateOps[Self <: ClusterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCertificateAuthority(value: Input[ClusterCertificateAuthority]): Self = this.set("certificateAuthority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthority: Self = this.set("certificateAuthority", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Input[String]): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setEnabledClusterLogTypesVarargs(value: Input[String]*): Self = this.set("enabledClusterLogTypes", js.Array(value :_*))
+    @scala.inline
+    def setEnabledClusterLogTypes(value: Input[js.Array[Input[String]]]): Self = this.set("enabledClusterLogTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledClusterLogTypes: Self = this.set("enabledClusterLogTypes", js.undefined)
+    @scala.inline
+    def setEncryptionConfig(value: Input[ClusterEncryptionConfig]): Self = this.set("encryptionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfig: Self = this.set("encryptionConfig", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Input[String]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setIdentitiesVarargs(value: Input[ClusterIdentity]*): Self = this.set("identities", js.Array(value :_*))
+    @scala.inline
+    def setIdentities(value: Input[js.Array[Input[ClusterIdentity]]]): Self = this.set("identities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentities: Self = this.set("identities", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: Input[String]): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: Input[String]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: Input[ClusterVpcConfig]): Self = this.set("vpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("vpcConfig", js.undefined)
+  }
+  
 }
 

@@ -28,7 +28,11 @@ trait ForceGraphInstance extends js.Object {
   def backgroundColor(): ForceGraphInstance with String = js.native
   def backgroundColor(color: String): ForceGraphInstance with String = js.native
   def centerAt(): ForceGraphInstancexnumber = js.native
+  def centerAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], milliseconds: Double): ForceGraphInstancexnumber = js.native
+  def centerAt(x: js.UndefOr[scala.Nothing], y: Double): ForceGraphInstancexnumber = js.native
+  def centerAt(x: js.UndefOr[scala.Nothing], y: Double, milliseconds: Double): ForceGraphInstancexnumber = js.native
   def centerAt(x: Double): ForceGraphInstancexnumber = js.native
+  def centerAt(x: Double, y: js.UndefOr[scala.Nothing], milliseconds: Double): ForceGraphInstancexnumber = js.native
   def centerAt(x: Double, y: Double): ForceGraphInstancexnumber = js.native
   def centerAt(x: Double, y: Double, milliseconds: Double): ForceGraphInstancexnumber = js.native
   def cooldownTicks(): ForceGraphInstance with Double = js.native
@@ -182,6 +186,7 @@ trait ForceGraphInstance extends js.Object {
   def width(): ForceGraphInstance with Double = js.native
   def width(width: Double): ForceGraphInstance with Double = js.native
   def zoom(): ForceGraphInstance with Double = js.native
+  def zoom(zoomLevel: js.UndefOr[scala.Nothing], duration: Double): ForceGraphInstance with Double = js.native
   def zoom(zoomLevel: Double): ForceGraphInstance with Double = js.native
   def zoom(zoomLevel: Double, duration: Double): ForceGraphInstance with Double = js.native
 }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 /** Construct a Point object */
 class Point () extends js.Object {
   def this(row: Double) = this()
+  def this(row: js.UndefOr[scala.Nothing], column: Double) = this()
   def this(row: Double, column: Double) = this()
   /** A zero-indexed number representing the column of the Point. */
   var column: Double = js.native

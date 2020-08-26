@@ -7,54 +7,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait uiElement extends js.Object {
-  var align: js.UndefOr[String] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var commit: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var onHide: js.UndefOr[js.Function1[/* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement, Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function1[/* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement, Unit]] = js.undefined
-  var onShow: js.UndefOr[js.Function1[/* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement, Unit]] = js.undefined
-  var requiredContent: js.UndefOr[String | StringDictionary[js.Any] | style] = js.undefined
-  var setup: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.native
+  var commit: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.native
+  var onHide: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.native
+  var requiredContent: js.UndefOr[String | StringDictionary[js.Any] | style] = js.native
+  var setup: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.native
+  var style: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object uiElement {
   @scala.inline
-  def apply(
-    align: String = null,
-    className: String = null,
-    commit: /* widget */ widget => Unit = null,
-    id: String = null,
-    label: String = null,
-    onHide: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
-    onLoad: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
-    onShow: /* elem */ typings.ckeditor.CKEDITOR.ui.dialog.uiElement => Unit = null,
-    requiredContent: String | StringDictionary[js.Any] | style = null,
-    setup: /* widget */ widget => Unit = null,
-    style: String = null,
-    title: String = null,
-    `type`: String = null
-  ): uiElement = {
+  def apply(): uiElement = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (commit != null) __obj.updateDynamic("commit")(js.Any.fromFunction1(commit))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1(onHide))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1(onShow))
-    if (requiredContent != null) __obj.updateDynamic("requiredContent")(requiredContent.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[uiElement]
   }
+  @scala.inline
+  implicit class uiElementOps[Self <: uiElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCommit(value: /* widget */ widget => Unit): Self = this.set("commit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCommit: Self = this.set("commit", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setOnHide(value: uiElement => Unit): Self = this.set("onHide", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    @scala.inline
+    def setOnLoad(value: uiElement => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnShow(value: uiElement => Unit): Self = this.set("onShow", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setRequiredContent(value: String | StringDictionary[js.Any] | style): Self = this.set("requiredContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiredContent: Self = this.set("requiredContent", js.undefined)
+    @scala.inline
+    def setSetup(value: /* widget */ widget => Unit): Self = this.set("setup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetup: Self = this.set("setup", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

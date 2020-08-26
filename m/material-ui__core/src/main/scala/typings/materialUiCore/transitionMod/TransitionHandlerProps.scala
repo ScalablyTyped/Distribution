@@ -17,22 +17,46 @@ trait TransitionHandlerProps extends js.Object {
 
 object TransitionHandlerProps {
   @scala.inline
-  def apply(
-    onEnter: js.Any = null,
-    onEntered: js.Any = null,
-    onEntering: js.Any = null,
-    onExit: js.Any = null,
-    onExited: js.Any = null,
-    onExiting: js.Any = null
-  ): TransitionHandlerProps = {
+  def apply(): TransitionHandlerProps = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionHandlerProps]
   }
+  @scala.inline
+  implicit class TransitionHandlerPropsOps[Self <: TransitionHandlerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnEnter(value: js.Any): Self = this.set("onEnter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    @scala.inline
+    def setOnEntered(value: js.Any): Self = this.set("onEntered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEntered: Self = this.set("onEntered", js.undefined)
+    @scala.inline
+    def setOnEntering(value: js.Any): Self = this.set("onEntering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnEntering: Self = this.set("onEntering", js.undefined)
+    @scala.inline
+    def setOnExit(value: js.Any): Self = this.set("onExit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExit: Self = this.set("onExit", js.undefined)
+    @scala.inline
+    def setOnExited(value: js.Any): Self = this.set("onExited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExited: Self = this.set("onExited", js.undefined)
+    @scala.inline
+    def setOnExiting(value: js.Any): Self = this.set("onExiting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnExiting: Self = this.set("onExiting", js.undefined)
+  }
+  
 }
 

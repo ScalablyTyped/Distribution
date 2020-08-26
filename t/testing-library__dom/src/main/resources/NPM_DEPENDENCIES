@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@testing-library/dom" : "7.19.0"
+      "@testing-library/dom" : "7.21.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@testing-library/dom" : "7.19.0"
+      "@testing-library/dom" : "7.21.7"
     }
   ],
   "compile-devDependencies" : [

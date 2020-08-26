@@ -26,18 +26,38 @@ trait ResourceFilters extends js.Object {
 
 object ResourceFilters {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    Region: AwsRegion = null,
-    ResourceId: ResourceId = null,
-    ResourceName: ResourceName = null
-  ): ResourceFilters = {
+  def apply(): ResourceFilters = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceFilters]
   }
+  @scala.inline
+  implicit class ResourceFiltersOps[Self <: ResourceFilters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setRegion(value: AwsRegion): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setResourceId(value: ResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("ResourceName", js.undefined)
+  }
+  
 }
 

@@ -19,6 +19,12 @@ object global extends js.Object {
     def this(
       src: String,
       mediaSuccess: js.Function0[Unit],
+      mediaError: js.UndefOr[scala.Nothing],
+      mediaStatus: js.Function1[/* status */ Double, Unit]
+    ) = this()
+    def this(
+      src: String,
+      mediaSuccess: js.Function0[Unit],
       mediaError: js.Function1[/* error */ MediaError, _],
       mediaStatus: js.Function1[/* status */ Double, Unit]
     ) = this()
@@ -40,7 +46,7 @@ object global extends js.Object {
        with Instantiable4[
           /* src */ String, 
           /* mediaSuccess */ js.Function0[Unit], 
-          /* mediaError */ js.Function1[/* error */ MediaError, js.Any], 
+          js.UndefOr[/* mediaError */ js.Function1[/* error */ MediaError, js.Any]], 
           /* mediaStatus */ js.Function1[/* status */ Double, Unit], 
           typings.cordovaPluginMedia.Media
         ] {

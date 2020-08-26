@@ -28,6 +28,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def get(callback: BodyResponseCallback[SchemaFloodlightConfiguration]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def get(params: ParamsResourceFloodlightconfigurationsGet): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def get(
     params: ParamsResourceFloodlightconfigurationsGet,
@@ -59,6 +60,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaFloodlightConfigurationsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
   def list(params: ParamsResourceFloodlightconfigurationsList): GaxiosPromise[SchemaFloodlightConfigurationsListResponse] = js.native
   def list(
     params: ParamsResourceFloodlightconfigurationsList,
@@ -92,6 +94,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def patch(callback: BodyResponseCallback[SchemaFloodlightConfiguration]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def patch(params: ParamsResourceFloodlightconfigurationsPatch): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def patch(
     params: ParamsResourceFloodlightconfigurationsPatch,
@@ -123,6 +126,7 @@ class ResourceFloodlightconfigurations protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def update(callback: BodyResponseCallback[SchemaFloodlightConfiguration]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def update(params: ParamsResourceFloodlightconfigurationsUpdate): GaxiosPromise[SchemaFloodlightConfiguration] = js.native
   def update(
     params: ParamsResourceFloodlightconfigurationsUpdate,

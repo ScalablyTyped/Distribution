@@ -10,9 +10,9 @@ Transform into upper case string with an underscore between words
 | ------------------ | :-------------: |
 | Full name          | constant-case |
 | Keywords           | constant, case, upper, uppercase, underscore, convert, transform |
-| # releases         | 3 |
-| # dependents       | 39 |
-| # downloads        | 41622893 |
+| # releases         | 5 |
+| # dependents       | 43 |
+| # downloads        | 42896981 |
 | # stars            | 1 |
 
 ## Links

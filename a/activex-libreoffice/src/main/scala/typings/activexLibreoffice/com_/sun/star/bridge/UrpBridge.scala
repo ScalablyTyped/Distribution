@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * This bridge works with the urp protocol.
   * @see com.sun.star.bridge.Bridge
   */
+@js.native
 trait UrpBridge
   extends XInitialization
      with XBridge

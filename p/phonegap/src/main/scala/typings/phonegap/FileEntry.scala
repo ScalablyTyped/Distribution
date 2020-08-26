@@ -14,12 +14,14 @@ trait FileEntry extends FileSystemEntry {
     onError: js.Function1[/* arg */ FileError, Unit]
   ): Unit = js.native
   def createWriter(): Unit = js.native
+  def createWriter(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* arg */ FileError, Unit]): Unit = js.native
   def createWriter(onSuccess: js.Function1[/* arg */ FileWriter, Unit]): Unit = js.native
   def createWriter(
     onSuccess: js.Function1[/* arg */ FileWriter, Unit],
     onError: js.Function1[/* arg */ FileError, Unit]
   ): Unit = js.native
   def file(): Unit = js.native
+  def file(onSuccess: js.UndefOr[scala.Nothing], onError: js.Function1[/* arg */ FileError, Unit]): Unit = js.native
   def file(onSuccess: js.Function1[/* arg */ File, Unit]): Unit = js.native
   def file(onSuccess: js.Function1[/* arg */ File, Unit], onError: js.Function1[/* arg */ FileError, Unit]): Unit = js.native
   def moveTo(

@@ -30,20 +30,44 @@ trait AttackProperty extends js.Object {
 
 object AttackProperty {
   @scala.inline
-  def apply(
-    AttackLayer: AttackLayer = null,
-    AttackPropertyIdentifier: AttackPropertyIdentifier = null,
-    TopContributors: TopContributors = null,
-    Total: js.UndefOr[Long] = js.undefined,
-    Unit: Unit = null
-  ): AttackProperty = {
+  def apply(): AttackProperty = {
     val __obj = js.Dynamic.literal()
-    if (AttackLayer != null) __obj.updateDynamic("AttackLayer")(AttackLayer.asInstanceOf[js.Any])
-    if (AttackPropertyIdentifier != null) __obj.updateDynamic("AttackPropertyIdentifier")(AttackPropertyIdentifier.asInstanceOf[js.Any])
-    if (TopContributors != null) __obj.updateDynamic("TopContributors")(TopContributors.asInstanceOf[js.Any])
-    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total.get.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttackProperty]
   }
+  @scala.inline
+  implicit class AttackPropertyOps[Self <: AttackProperty] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttackLayer(value: AttackLayer): Self = this.set("AttackLayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttackLayer: Self = this.set("AttackLayer", js.undefined)
+    @scala.inline
+    def setAttackPropertyIdentifier(value: AttackPropertyIdentifier): Self = this.set("AttackPropertyIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttackPropertyIdentifier: Self = this.set("AttackPropertyIdentifier", js.undefined)
+    @scala.inline
+    def setTopContributorsVarargs(value: Contributor*): Self = this.set("TopContributors", js.Array(value :_*))
+    @scala.inline
+    def setTopContributors(value: TopContributors): Self = this.set("TopContributors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopContributors: Self = this.set("TopContributors", js.undefined)
+    @scala.inline
+    def setTotal(value: Long): Self = this.set("Total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("Total", js.undefined)
+    @scala.inline
+    def setUnit(value: Unit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

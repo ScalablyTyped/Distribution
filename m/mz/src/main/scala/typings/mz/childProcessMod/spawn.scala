@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
 object spawn extends js.Object {
   // overloads of spawn without 'args'
   def apply(command: String): ChildProcessWithoutNullStreams = js.native
+  def apply(command: String, args: js.UndefOr[scala.Nothing], options: SpawnOptionsWithoutStdio): ChildProcessWithoutNullStreams = js.native
   def apply(command: String, args: js.Array[String]): ChildProcessWithoutNullStreams = js.native
   def apply(command: String, args: js.Array[String], options: SpawnOptions): ChildProcess = js.native
   def apply(

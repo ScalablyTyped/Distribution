@@ -46,27 +46,58 @@ trait CreateGameSessionInput extends js.Object {
 
 object CreateGameSessionInput {
   @scala.inline
-  def apply(
-    MaximumPlayerSessionCount: WholeNumber,
-    AliasId: AliasIdOrArn = null,
-    CreatorId: NonZeroAndMaxString = null,
-    FleetId: FleetIdOrArn = null,
-    GameProperties: GamePropertyList = null,
-    GameSessionData: GameSessionData = null,
-    GameSessionId: IdStringModel = null,
-    IdempotencyToken: IdStringModel = null,
-    Name: NonZeroAndMaxString = null
-  ): CreateGameSessionInput = {
+  def apply(MaximumPlayerSessionCount: WholeNumber): CreateGameSessionInput = {
     val __obj = js.Dynamic.literal(MaximumPlayerSessionCount = MaximumPlayerSessionCount.asInstanceOf[js.Any])
-    if (AliasId != null) __obj.updateDynamic("AliasId")(AliasId.asInstanceOf[js.Any])
-    if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (GameProperties != null) __obj.updateDynamic("GameProperties")(GameProperties.asInstanceOf[js.Any])
-    if (GameSessionData != null) __obj.updateDynamic("GameSessionData")(GameSessionData.asInstanceOf[js.Any])
-    if (GameSessionId != null) __obj.updateDynamic("GameSessionId")(GameSessionId.asInstanceOf[js.Any])
-    if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGameSessionInput]
   }
+  @scala.inline
+  implicit class CreateGameSessionInputOps[Self <: CreateGameSessionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaximumPlayerSessionCount(value: WholeNumber): Self = this.set("MaximumPlayerSessionCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAliasId(value: AliasIdOrArn): Self = this.set("AliasId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasId: Self = this.set("AliasId", js.undefined)
+    @scala.inline
+    def setCreatorId(value: NonZeroAndMaxString): Self = this.set("CreatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorId: Self = this.set("CreatorId", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetIdOrArn): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setGamePropertiesVarargs(value: GameProperty*): Self = this.set("GameProperties", js.Array(value :_*))
+    @scala.inline
+    def setGameProperties(value: GamePropertyList): Self = this.set("GameProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameProperties: Self = this.set("GameProperties", js.undefined)
+    @scala.inline
+    def setGameSessionData(value: GameSessionData): Self = this.set("GameSessionData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionData: Self = this.set("GameSessionData", js.undefined)
+    @scala.inline
+    def setGameSessionId(value: IdStringModel): Self = this.set("GameSessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameSessionId: Self = this.set("GameSessionId", js.undefined)
+    @scala.inline
+    def setIdempotencyToken(value: IdStringModel): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdempotencyToken: Self = this.set("IdempotencyToken", js.undefined)
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

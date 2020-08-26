@@ -30,14 +30,6 @@ object mod extends js.Object {
   class WeakSet[T] ()
     extends typings.es6Collections.WeakSet[T] {
     def this(iterable: ForEachable[T]) = this()
-    /* CompleteClass */
-    override def add(value: T): typings.es6Collections.WeakSet[T] = js.native
-    /* CompleteClass */
-    override def clear(): Unit = js.native
-    /* CompleteClass */
-    override def delete(value: T): Boolean = js.native
-    /* CompleteClass */
-    override def has(value: T): Boolean = js.native
   }
   
   @js.native

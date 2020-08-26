@@ -17,10 +17,26 @@ trait SchemaCourseWorkChangesInfo extends js.Object {
 
 object SchemaCourseWorkChangesInfo {
   @scala.inline
-  def apply(courseId: String = null): SchemaCourseWorkChangesInfo = {
+  def apply(): SchemaCourseWorkChangesInfo = {
     val __obj = js.Dynamic.literal()
-    if (courseId != null) __obj.updateDynamic("courseId")(courseId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCourseWorkChangesInfo]
   }
+  @scala.inline
+  implicit class SchemaCourseWorkChangesInfoOps[Self <: SchemaCourseWorkChangesInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCourseId(value: String): Self = this.set("courseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCourseId: Self = this.set("courseId", js.undefined)
+  }
+  
 }
 

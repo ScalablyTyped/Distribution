@@ -22,15 +22,32 @@ trait ComplianceExecutionSummary extends js.Object {
 
 object ComplianceExecutionSummary {
   @scala.inline
-  def apply(
-    ExecutionTime: DateTime,
-    ExecutionId: ComplianceExecutionId = null,
-    ExecutionType: ComplianceExecutionType = null
-  ): ComplianceExecutionSummary = {
+  def apply(ExecutionTime: DateTime): ComplianceExecutionSummary = {
     val __obj = js.Dynamic.literal(ExecutionTime = ExecutionTime.asInstanceOf[js.Any])
-    if (ExecutionId != null) __obj.updateDynamic("ExecutionId")(ExecutionId.asInstanceOf[js.Any])
-    if (ExecutionType != null) __obj.updateDynamic("ExecutionType")(ExecutionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComplianceExecutionSummary]
   }
+  @scala.inline
+  implicit class ComplianceExecutionSummaryOps[Self <: ComplianceExecutionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionTime(value: DateTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionId(value: ComplianceExecutionId): Self = this.set("ExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("ExecutionId", js.undefined)
+    @scala.inline
+    def setExecutionType(value: ComplianceExecutionType): Self = this.set("ExecutionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionType: Self = this.set("ExecutionType", js.undefined)
+  }
+  
 }
 

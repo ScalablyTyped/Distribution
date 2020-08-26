@@ -12,6 +12,7 @@ class Evented () extends js.Object {
   def fire(`type`: String): this.type = js.native
   def fire(`type`: String, properties: StringDictionary[js.Any]): this.type = js.native
   def off(): this.type = js.native
+  def off(`type`: js.UndefOr[scala.Nothing], listener: js.Function): this.type = js.native
   def off(`type`: String): this.type = js.native
   def off(`type`: String, listener: js.Function): this.type = js.native
   def off(`type`: js.Any): this.type = js.native

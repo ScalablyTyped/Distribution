@@ -75,38 +75,90 @@ trait SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse extends js.Object {
 
 object SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse {
   @scala.inline
-  def apply(
-    context: SchemaGoogleCloudVisionV1p3beta1ImageAnnotationContext = null,
-    cropHintsAnnotation: SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation = null,
-    error: SchemaStatus = null,
-    faceAnnotations: js.Array[SchemaGoogleCloudVisionV1p3beta1FaceAnnotation] = null,
-    fullTextAnnotation: SchemaGoogleCloudVisionV1p3beta1TextAnnotation = null,
-    imagePropertiesAnnotation: SchemaGoogleCloudVisionV1p3beta1ImageProperties = null,
-    labelAnnotations: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation] = null,
-    landmarkAnnotations: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation] = null,
-    localizedObjectAnnotations: js.Array[SchemaGoogleCloudVisionV1p3beta1LocalizedObjectAnnotation] = null,
-    logoAnnotations: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation] = null,
-    productSearchResults: SchemaGoogleCloudVisionV1p3beta1ProductSearchResults = null,
-    safeSearchAnnotation: SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation = null,
-    textAnnotations: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation] = null,
-    webDetection: SchemaGoogleCloudVisionV1p3beta1WebDetection = null
-  ): SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse = {
+  def apply(): SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (cropHintsAnnotation != null) __obj.updateDynamic("cropHintsAnnotation")(cropHintsAnnotation.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (faceAnnotations != null) __obj.updateDynamic("faceAnnotations")(faceAnnotations.asInstanceOf[js.Any])
-    if (fullTextAnnotation != null) __obj.updateDynamic("fullTextAnnotation")(fullTextAnnotation.asInstanceOf[js.Any])
-    if (imagePropertiesAnnotation != null) __obj.updateDynamic("imagePropertiesAnnotation")(imagePropertiesAnnotation.asInstanceOf[js.Any])
-    if (labelAnnotations != null) __obj.updateDynamic("labelAnnotations")(labelAnnotations.asInstanceOf[js.Any])
-    if (landmarkAnnotations != null) __obj.updateDynamic("landmarkAnnotations")(landmarkAnnotations.asInstanceOf[js.Any])
-    if (localizedObjectAnnotations != null) __obj.updateDynamic("localizedObjectAnnotations")(localizedObjectAnnotations.asInstanceOf[js.Any])
-    if (logoAnnotations != null) __obj.updateDynamic("logoAnnotations")(logoAnnotations.asInstanceOf[js.Any])
-    if (productSearchResults != null) __obj.updateDynamic("productSearchResults")(productSearchResults.asInstanceOf[js.Any])
-    if (safeSearchAnnotation != null) __obj.updateDynamic("safeSearchAnnotation")(safeSearchAnnotation.asInstanceOf[js.Any])
-    if (textAnnotations != null) __obj.updateDynamic("textAnnotations")(textAnnotations.asInstanceOf[js.Any])
-    if (webDetection != null) __obj.updateDynamic("webDetection")(webDetection.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponseOps[Self <: SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: SchemaGoogleCloudVisionV1p3beta1ImageAnnotationContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setCropHintsAnnotation(value: SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation): Self = this.set("cropHintsAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCropHintsAnnotation: Self = this.set("cropHintsAnnotation", js.undefined)
+    @scala.inline
+    def setError(value: SchemaStatus): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFaceAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p3beta1FaceAnnotation*): Self = this.set("faceAnnotations", js.Array(value :_*))
+    @scala.inline
+    def setFaceAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p3beta1FaceAnnotation]): Self = this.set("faceAnnotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceAnnotations: Self = this.set("faceAnnotations", js.undefined)
+    @scala.inline
+    def setFullTextAnnotation(value: SchemaGoogleCloudVisionV1p3beta1TextAnnotation): Self = this.set("fullTextAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullTextAnnotation: Self = this.set("fullTextAnnotation", js.undefined)
+    @scala.inline
+    def setImagePropertiesAnnotation(value: SchemaGoogleCloudVisionV1p3beta1ImageProperties): Self = this.set("imagePropertiesAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePropertiesAnnotation: Self = this.set("imagePropertiesAnnotation", js.undefined)
+    @scala.inline
+    def setLabelAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p3beta1EntityAnnotation*): Self = this.set("labelAnnotations", js.Array(value :_*))
+    @scala.inline
+    def setLabelAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation]): Self = this.set("labelAnnotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelAnnotations: Self = this.set("labelAnnotations", js.undefined)
+    @scala.inline
+    def setLandmarkAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p3beta1EntityAnnotation*): Self = this.set("landmarkAnnotations", js.Array(value :_*))
+    @scala.inline
+    def setLandmarkAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation]): Self = this.set("landmarkAnnotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLandmarkAnnotations: Self = this.set("landmarkAnnotations", js.undefined)
+    @scala.inline
+    def setLocalizedObjectAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p3beta1LocalizedObjectAnnotation*): Self = this.set("localizedObjectAnnotations", js.Array(value :_*))
+    @scala.inline
+    def setLocalizedObjectAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p3beta1LocalizedObjectAnnotation]): Self = this.set("localizedObjectAnnotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalizedObjectAnnotations: Self = this.set("localizedObjectAnnotations", js.undefined)
+    @scala.inline
+    def setLogoAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p3beta1EntityAnnotation*): Self = this.set("logoAnnotations", js.Array(value :_*))
+    @scala.inline
+    def setLogoAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation]): Self = this.set("logoAnnotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogoAnnotations: Self = this.set("logoAnnotations", js.undefined)
+    @scala.inline
+    def setProductSearchResults(value: SchemaGoogleCloudVisionV1p3beta1ProductSearchResults): Self = this.set("productSearchResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductSearchResults: Self = this.set("productSearchResults", js.undefined)
+    @scala.inline
+    def setSafeSearchAnnotation(value: SchemaGoogleCloudVisionV1p3beta1SafeSearchAnnotation): Self = this.set("safeSearchAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafeSearchAnnotation: Self = this.set("safeSearchAnnotation", js.undefined)
+    @scala.inline
+    def setTextAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p3beta1EntityAnnotation*): Self = this.set("textAnnotations", js.Array(value :_*))
+    @scala.inline
+    def setTextAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p3beta1EntityAnnotation]): Self = this.set("textAnnotations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAnnotations: Self = this.set("textAnnotations", js.undefined)
+    @scala.inline
+    def setWebDetection(value: SchemaGoogleCloudVisionV1p3beta1WebDetection): Self = this.set("webDetection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebDetection: Self = this.set("webDetection", js.undefined)
+  }
+  
 }
 

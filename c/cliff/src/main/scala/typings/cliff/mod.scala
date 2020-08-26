@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def inspect(obj: js.Any): String = js.native
   def putObject(level: String, `object`: js.Any): Unit = js.native
+  def putObject(level: String, `object`: js.Any, rewriters: js.UndefOr[scala.Nothing], padding: js.Any): Unit = js.native
   def putObject(level: String, `object`: js.Any, rewriters: js.Any): Unit = js.native
   def putObject(level: String, `object`: js.Any, rewriters: js.Any, padding: js.Any): Unit = js.native
   def putObjectRows(level: String, rows: js.Array[js.Object], keys: js.Array[String]): Unit = js.native

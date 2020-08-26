@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Expanded extends js.Object {
-  var expanded: js.UndefOr[Boolean] = js.undefined
+  var expanded: js.UndefOr[Boolean] = js.native
 }
 
 object Expanded {
   @scala.inline
-  def apply(expanded: js.UndefOr[Boolean] = js.undefined): Expanded = {
+  def apply(): Expanded = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expanded]
   }
+  @scala.inline
+  implicit class ExpandedOps[Self <: Expanded] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+  }
+  
 }
 

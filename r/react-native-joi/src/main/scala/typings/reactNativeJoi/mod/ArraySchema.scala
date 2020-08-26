@@ -67,6 +67,7 @@ trait ArraySchema extends AnySchema {
     * a performance penalty is to be expected for this kind of operation.
     */
   def unique(): this.type = js.native
+  def unique(comparator: js.UndefOr[scala.Nothing], options: ArrayUniqueOptions): this.type = js.native
   def unique(comparator: String): this.type = js.native
   def unique(comparator: String, options: ArrayUniqueOptions): this.type = js.native
   def unique[T](comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): this.type = js.native

@@ -4,30 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BeforeBatchSaveEventArgs extends js.Object {
   /** Returns the changed record object.
     */
-  var batchChanges: js.UndefOr[js.Any] = js.undefined
+  var batchChanges: js.UndefOr[js.Any] = js.native
   /** Returns the query, primary key,batch changes for the data Source.
     */
-  var dataSetting: js.UndefOr[js.Any] = js.undefined
+  var dataSetting: js.UndefOr[js.Any] = js.native
   /** Returns the sheet index.
     */
-  var sheetIdx: js.UndefOr[Double] = js.undefined
+  var sheetIdx: js.UndefOr[Double] = js.native
 }
 
 object BeforeBatchSaveEventArgs {
   @scala.inline
-  def apply(
-    batchChanges: js.Any = null,
-    dataSetting: js.Any = null,
-    sheetIdx: js.UndefOr[Double] = js.undefined
-  ): BeforeBatchSaveEventArgs = {
+  def apply(): BeforeBatchSaveEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges.asInstanceOf[js.Any])
-    if (dataSetting != null) __obj.updateDynamic("dataSetting")(dataSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetIdx)) __obj.updateDynamic("sheetIdx")(sheetIdx.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BeforeBatchSaveEventArgs]
   }
+  @scala.inline
+  implicit class BeforeBatchSaveEventArgsOps[Self <: BeforeBatchSaveEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchChanges(value: js.Any): Self = this.set("batchChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchChanges: Self = this.set("batchChanges", js.undefined)
+    @scala.inline
+    def setDataSetting(value: js.Any): Self = this.set("dataSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSetting: Self = this.set("dataSetting", js.undefined)
+    @scala.inline
+    def setSheetIdx(value: Double): Self = this.set("sheetIdx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetIdx: Self = this.set("sheetIdx", js.undefined)
+  }
+  
 }
 

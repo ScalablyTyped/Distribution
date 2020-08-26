@@ -73,6 +73,7 @@ trait JSZipObject extends js.Object {
   @JSName("async")
   def async_uint8array(`type`: uint8array, onUpdate: OnUpdateCallback): js.Promise[Uint8Array] = js.native
   def nodeStream(): ReadableStream = js.native
+  def nodeStream(`type`: js.UndefOr[scala.Nothing], onUpdate: OnUpdateCallback): ReadableStream = js.native
   @JSName("nodeStream")
   def nodeStream_nodebuffer(`type`: nodebuffer): ReadableStream = js.native
   @JSName("nodeStream")

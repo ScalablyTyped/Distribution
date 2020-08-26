@@ -12,6 +12,7 @@ trait PDFGradient
   def apply(): Unit = js.native
   def embed(): Unit = js.native
   def stop(pos: Double): PDFGradient = js.native
+  def stop(pos: Double, color: js.UndefOr[scala.Nothing], opacity: Double): PDFGradient = js.native
   def stop(pos: Double, color: String): PDFGradient = js.native
   def stop(pos: Double, color: String, opacity: Double): PDFGradient = js.native
   def stop(pos: Double, color: PDFGradient): PDFGradient = js.native

@@ -1,7 +1,7 @@
 package typings.expressWechatAccess.mod
 
 import typings.express.mod.NextFunction
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.httpMod.ServerResponse
 import typings.std.Response
 import scala.scalajs.js

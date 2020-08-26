@@ -16,20 +16,38 @@ trait EndpointIdentifier
 
 object EndpointIdentifier {
   @scala.inline
-  def apply(
-    StringDictionary: /* header */ StringDictionary[js.UndefOr[String]] = null,
-    accessKeyId: String = null,
-    operation: String = null,
-    region: String = null,
-    serviceId: String = null
-  ): EndpointIdentifier = {
+  def apply(): EndpointIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (accessKeyId != null) __obj.updateDynamic("accessKeyId")(accessKeyId.asInstanceOf[js.Any])
-    if (operation != null) __obj.updateDynamic("operation")(operation.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointIdentifier]
   }
+  @scala.inline
+  implicit class EndpointIdentifierOps[Self <: EndpointIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessKeyId(value: String): Self = this.set("accessKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessKeyId: Self = this.set("accessKeyId", js.undefined)
+    @scala.inline
+    def setOperation(value: String): Self = this.set("operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("operation", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setServiceId(value: String): Self = this.set("serviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceId: Self = this.set("serviceId", js.undefined)
+  }
+  
 }
 

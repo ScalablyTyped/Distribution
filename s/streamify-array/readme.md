@@ -12,7 +12,7 @@ Converts an array into a Node readable stream
 | Keywords           | array, stream, readable |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 4790 |
+| # downloads        | 4659 |
 | # stars            | 0 |
 
 ## Links

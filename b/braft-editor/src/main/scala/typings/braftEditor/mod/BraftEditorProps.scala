@@ -22,175 +22,322 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BraftEditorProps extends js.Object {
-  var allowInsertLinkText: js.UndefOr[Boolean] = js.undefined
-  var blockRenderMap: js.UndefOr[(Map[_, _]) | js.Function] = js.undefined
-  var blockRendererFn: js.UndefOr[js.Function] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var colors: js.UndefOr[js.Array[String]] = js.undefined
-  var componentBelowControlBar: js.UndefOr[ReactNode] = js.undefined
-  var contentClassName: js.UndefOr[String] = js.undefined
-  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
-  var controlBarClassName: js.UndefOr[String] = js.undefined
-  var controlBarStyle: js.UndefOr[CSSProperties] = js.undefined
-  var controls: js.UndefOr[js.Array[ControlType]] = js.undefined
-  var converts: js.UndefOr[js.Object] = js.undefined
-  var defaultLinkTarget: js.UndefOr[String] = js.undefined
-  var defaultValue: js.UndefOr[EditorState] = js.undefined
+  var allowInsertLinkText: js.UndefOr[Boolean] = js.native
+  var blockRenderMap: js.UndefOr[(Map[_, _]) | js.Function] = js.native
+  var blockRendererFn: js.UndefOr[js.Function] = js.native
+  var className: js.UndefOr[String] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.native
+  var componentBelowControlBar: js.UndefOr[ReactNode] = js.native
+  var contentClassName: js.UndefOr[String] = js.native
+  var contentStyle: js.UndefOr[CSSProperties] = js.native
+  var controlBarClassName: js.UndefOr[String] = js.native
+  var controlBarStyle: js.UndefOr[CSSProperties] = js.native
+  var controls: js.UndefOr[js.Array[ControlType]] = js.native
+  var converts: js.UndefOr[js.Object] = js.native
+  var defaultLinkTarget: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[EditorState] = js.native
   var draftProps: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any
-  ] = js.undefined
-  var editorId: js.UndefOr[String] = js.undefined
-  var emojis: js.UndefOr[js.Array[String]] = js.undefined
-  var excludeControls: js.UndefOr[js.Array[BuiltInControlType]] = js.undefined
-  var extendControls: js.UndefOr[js.Array[ExtendControlType]] = js.undefined
-  var fixPlaceholder: js.UndefOr[Boolean] = js.undefined
-  var fontFamilies: js.UndefOr[js.Array[Family]] = js.undefined
-  var fontSizes: js.UndefOr[js.Array[Double]] = js.undefined
-  var handleBeforeInput: js.UndefOr[js.Function] = js.undefined
-  var handleDroppedFiles: js.UndefOr[js.Function] = js.undefined
-  var handleKeyCommand: js.UndefOr[js.Function] = js.undefined
-  var handlePastedFiles: js.UndefOr[js.Function] = js.undefined
-  var handlePastedText: js.UndefOr[js.Function] = js.undefined
-  var handleReturn: js.UndefOr[js.Function] = js.undefined
-  var headings: js.UndefOr[js.Array[String]] = js.undefined
-  var hooks: js.UndefOr[HooksType] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var imageControls: js.UndefOr[js.Array[ImageControlType]] = js.undefined
-  var imageEqualRatio: js.UndefOr[Boolean] = js.undefined
-  var imageResizable: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var editorId: js.UndefOr[String] = js.native
+  var emojis: js.UndefOr[js.Array[String]] = js.native
+  var excludeControls: js.UndefOr[js.Array[BuiltInControlType]] = js.native
+  var extendControls: js.UndefOr[js.Array[ExtendControlType]] = js.native
+  var fixPlaceholder: js.UndefOr[Boolean] = js.native
+  var fontFamilies: js.UndefOr[js.Array[Family]] = js.native
+  var fontSizes: js.UndefOr[js.Array[Double]] = js.native
+  var handleBeforeInput: js.UndefOr[js.Function] = js.native
+  var handleDroppedFiles: js.UndefOr[js.Function] = js.native
+  var handleKeyCommand: js.UndefOr[js.Function] = js.native
+  var handlePastedFiles: js.UndefOr[js.Function] = js.native
+  var handlePastedText: js.UndefOr[js.Function] = js.native
+  var handleReturn: js.UndefOr[js.Function] = js.native
+  var headings: js.UndefOr[js.Array[String]] = js.native
+  var hooks: js.UndefOr[HooksType] = js.native
+  var id: js.UndefOr[String] = js.native
+  var imageControls: js.UndefOr[js.Array[ImageControlType]] = js.native
+  var imageEqualRatio: js.UndefOr[Boolean] = js.native
+  var imageResizable: js.UndefOr[Boolean] = js.native
   var language: js.UndefOr[
     zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | `vi-vn` | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _])
-  ] = js.undefined
-  var letterSpacings: js.UndefOr[js.Array[Double]] = js.undefined
-  var lineHeights: js.UndefOr[js.Array[Double]] = js.undefined
-  var media: js.UndefOr[MediaType] = js.undefined
-  var onBlur: js.UndefOr[js.Function] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* editorState */ EditorState, Unit]] = js.undefined
-  var onDelete: js.UndefOr[js.Function] = js.undefined
-  var onFocus: js.UndefOr[js.Function] = js.undefined
-  var onFullscreen: js.UndefOr[js.Function] = js.undefined
-  var onSave: js.UndefOr[js.Function] = js.undefined
-  var onTab: js.UndefOr[js.Function] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var stripPastedStyles: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var textAligns: js.UndefOr[js.Array[left | center | right | justify]] = js.undefined
-  var textBackgroundColor: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[EditorState] = js.undefined
+  ] = js.native
+  var letterSpacings: js.UndefOr[js.Array[Double]] = js.native
+  var lineHeights: js.UndefOr[js.Array[Double]] = js.native
+  var media: js.UndefOr[MediaType] = js.native
+  var onBlur: js.UndefOr[js.Function] = js.native
+  var onChange: js.UndefOr[js.Function1[/* editorState */ EditorState, Unit]] = js.native
+  var onDelete: js.UndefOr[js.Function] = js.native
+  var onFocus: js.UndefOr[js.Function] = js.native
+  var onFullscreen: js.UndefOr[js.Function] = js.native
+  var onSave: js.UndefOr[js.Function] = js.native
+  var onTab: js.UndefOr[js.Function] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var stripPastedStyles: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var textAligns: js.UndefOr[js.Array[left | center | right | justify]] = js.native
+  var textBackgroundColor: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[EditorState] = js.native
 }
 
 object BraftEditorProps {
   @scala.inline
-  def apply(
-    allowInsertLinkText: js.UndefOr[Boolean] = js.undefined,
-    blockRenderMap: (Map[_, _]) | js.Function = null,
-    blockRendererFn: js.Function = null,
-    className: String = null,
-    colors: js.Array[String] = null,
-    componentBelowControlBar: ReactNode = null,
-    contentClassName: String = null,
-    contentStyle: CSSProperties = null,
-    controlBarClassName: String = null,
-    controlBarStyle: CSSProperties = null,
-    controls: js.Array[ControlType] = null,
-    converts: js.Object = null,
-    defaultLinkTarget: String = null,
-    defaultValue: EditorState = null,
-    draftProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any = null,
-    editorId: String = null,
-    emojis: js.Array[String] = null,
-    excludeControls: js.Array[BuiltInControlType] = null,
-    extendControls: js.Array[ExtendControlType] = null,
-    fixPlaceholder: js.UndefOr[Boolean] = js.undefined,
-    fontFamilies: js.Array[Family] = null,
-    fontSizes: js.Array[Double] = null,
-    handleBeforeInput: js.Function = null,
-    handleDroppedFiles: js.Function = null,
-    handleKeyCommand: js.Function = null,
-    handlePastedFiles: js.Function = null,
-    handlePastedText: js.Function = null,
-    handleReturn: js.Function = null,
-    headings: js.Array[String] = null,
-    hooks: HooksType = null,
-    id: String = null,
-    imageControls: js.Array[ImageControlType] = null,
-    imageEqualRatio: js.UndefOr[Boolean] = js.undefined,
-    imageResizable: js.UndefOr[Boolean] = js.undefined,
-    language: zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | `vi-vn` | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _]) = null,
-    letterSpacings: js.Array[Double] = null,
-    lineHeights: js.Array[Double] = null,
-    media: MediaType = null,
-    onBlur: js.Function = null,
-    onChange: /* editorState */ EditorState => Unit = null,
-    onDelete: js.Function = null,
-    onFocus: js.Function = null,
-    onFullscreen: js.Function = null,
-    onSave: js.Function = null,
-    onTab: js.Function = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    stripPastedStyles: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    textAligns: js.Array[left | center | right | justify] = null,
-    textBackgroundColor: js.UndefOr[Boolean] = js.undefined,
-    value: EditorState = null
-  ): BraftEditorProps = {
+  def apply(): BraftEditorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowInsertLinkText)) __obj.updateDynamic("allowInsertLinkText")(allowInsertLinkText.get.asInstanceOf[js.Any])
-    if (blockRenderMap != null) __obj.updateDynamic("blockRenderMap")(blockRenderMap.asInstanceOf[js.Any])
-    if (blockRendererFn != null) __obj.updateDynamic("blockRendererFn")(blockRendererFn.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (componentBelowControlBar != null) __obj.updateDynamic("componentBelowControlBar")(componentBelowControlBar.asInstanceOf[js.Any])
-    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (controlBarClassName != null) __obj.updateDynamic("controlBarClassName")(controlBarClassName.asInstanceOf[js.Any])
-    if (controlBarStyle != null) __obj.updateDynamic("controlBarStyle")(controlBarStyle.asInstanceOf[js.Any])
-    if (controls != null) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (converts != null) __obj.updateDynamic("converts")(converts.asInstanceOf[js.Any])
-    if (defaultLinkTarget != null) __obj.updateDynamic("defaultLinkTarget")(defaultLinkTarget.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (draftProps != null) __obj.updateDynamic("draftProps")(draftProps.asInstanceOf[js.Any])
-    if (editorId != null) __obj.updateDynamic("editorId")(editorId.asInstanceOf[js.Any])
-    if (emojis != null) __obj.updateDynamic("emojis")(emojis.asInstanceOf[js.Any])
-    if (excludeControls != null) __obj.updateDynamic("excludeControls")(excludeControls.asInstanceOf[js.Any])
-    if (extendControls != null) __obj.updateDynamic("extendControls")(extendControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixPlaceholder)) __obj.updateDynamic("fixPlaceholder")(fixPlaceholder.get.asInstanceOf[js.Any])
-    if (fontFamilies != null) __obj.updateDynamic("fontFamilies")(fontFamilies.asInstanceOf[js.Any])
-    if (fontSizes != null) __obj.updateDynamic("fontSizes")(fontSizes.asInstanceOf[js.Any])
-    if (handleBeforeInput != null) __obj.updateDynamic("handleBeforeInput")(handleBeforeInput.asInstanceOf[js.Any])
-    if (handleDroppedFiles != null) __obj.updateDynamic("handleDroppedFiles")(handleDroppedFiles.asInstanceOf[js.Any])
-    if (handleKeyCommand != null) __obj.updateDynamic("handleKeyCommand")(handleKeyCommand.asInstanceOf[js.Any])
-    if (handlePastedFiles != null) __obj.updateDynamic("handlePastedFiles")(handlePastedFiles.asInstanceOf[js.Any])
-    if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(handlePastedText.asInstanceOf[js.Any])
-    if (handleReturn != null) __obj.updateDynamic("handleReturn")(handleReturn.asInstanceOf[js.Any])
-    if (headings != null) __obj.updateDynamic("headings")(headings.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageControls != null) __obj.updateDynamic("imageControls")(imageControls.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageEqualRatio)) __obj.updateDynamic("imageEqualRatio")(imageEqualRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageResizable)) __obj.updateDynamic("imageResizable")(imageResizable.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (letterSpacings != null) __obj.updateDynamic("letterSpacings")(letterSpacings.asInstanceOf[js.Any])
-    if (lineHeights != null) __obj.updateDynamic("lineHeights")(lineHeights.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
-    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus.asInstanceOf[js.Any])
-    if (onFullscreen != null) __obj.updateDynamic("onFullscreen")(onFullscreen.asInstanceOf[js.Any])
-    if (onSave != null) __obj.updateDynamic("onSave")(onSave.asInstanceOf[js.Any])
-    if (onTab != null) __obj.updateDynamic("onTab")(onTab.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textAligns != null) __obj.updateDynamic("textAligns")(textAligns.asInstanceOf[js.Any])
-    if (!js.isUndefined(textBackgroundColor)) __obj.updateDynamic("textBackgroundColor")(textBackgroundColor.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BraftEditorProps]
   }
+  @scala.inline
+  implicit class BraftEditorPropsOps[Self <: BraftEditorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowInsertLinkText(value: Boolean): Self = this.set("allowInsertLinkText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowInsertLinkText: Self = this.set("allowInsertLinkText", js.undefined)
+    @scala.inline
+    def setBlockRenderMap(value: (Map[_, _]) | js.Function): Self = this.set("blockRenderMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockRenderMap: Self = this.set("blockRenderMap", js.undefined)
+    @scala.inline
+    def setBlockRendererFn(value: js.Function): Self = this.set("blockRendererFn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockRendererFn: Self = this.set("blockRendererFn", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColors: Self = this.set("colors", js.undefined)
+    @scala.inline
+    def setComponentBelowControlBar(value: ReactNode): Self = this.set("componentBelowControlBar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentBelowControlBar: Self = this.set("componentBelowControlBar", js.undefined)
+    @scala.inline
+    def setContentClassName(value: String): Self = this.set("contentClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentClassName: Self = this.set("contentClassName", js.undefined)
+    @scala.inline
+    def setContentStyle(value: CSSProperties): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    @scala.inline
+    def setControlBarClassName(value: String): Self = this.set("controlBarClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlBarClassName: Self = this.set("controlBarClassName", js.undefined)
+    @scala.inline
+    def setControlBarStyle(value: CSSProperties): Self = this.set("controlBarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControlBarStyle: Self = this.set("controlBarStyle", js.undefined)
+    @scala.inline
+    def setControlsVarargs(value: ControlType*): Self = this.set("controls", js.Array(value :_*))
+    @scala.inline
+    def setControls(value: js.Array[ControlType]): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setConverts(value: js.Object): Self = this.set("converts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConverts: Self = this.set("converts", js.undefined)
+    @scala.inline
+    def setDefaultLinkTarget(value: String): Self = this.set("defaultLinkTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLinkTarget: Self = this.set("defaultLinkTarget", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: EditorState): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDraftProps(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DraftEditorProps */ js.Any
+    ): Self = this.set("draftProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraftProps: Self = this.set("draftProps", js.undefined)
+    @scala.inline
+    def setEditorId(value: String): Self = this.set("editorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditorId: Self = this.set("editorId", js.undefined)
+    @scala.inline
+    def setEmojisVarargs(value: String*): Self = this.set("emojis", js.Array(value :_*))
+    @scala.inline
+    def setEmojis(value: js.Array[String]): Self = this.set("emojis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmojis: Self = this.set("emojis", js.undefined)
+    @scala.inline
+    def setExcludeControlsVarargs(value: BuiltInControlType*): Self = this.set("excludeControls", js.Array(value :_*))
+    @scala.inline
+    def setExcludeControls(value: js.Array[BuiltInControlType]): Self = this.set("excludeControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeControls: Self = this.set("excludeControls", js.undefined)
+    @scala.inline
+    def setExtendControlsVarargs(value: ExtendControlType*): Self = this.set("extendControls", js.Array(value :_*))
+    @scala.inline
+    def setExtendControls(value: js.Array[ExtendControlType]): Self = this.set("extendControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendControls: Self = this.set("extendControls", js.undefined)
+    @scala.inline
+    def setFixPlaceholder(value: Boolean): Self = this.set("fixPlaceholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixPlaceholder: Self = this.set("fixPlaceholder", js.undefined)
+    @scala.inline
+    def setFontFamiliesVarargs(value: Family*): Self = this.set("fontFamilies", js.Array(value :_*))
+    @scala.inline
+    def setFontFamilies(value: js.Array[Family]): Self = this.set("fontFamilies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamilies: Self = this.set("fontFamilies", js.undefined)
+    @scala.inline
+    def setFontSizesVarargs(value: Double*): Self = this.set("fontSizes", js.Array(value :_*))
+    @scala.inline
+    def setFontSizes(value: js.Array[Double]): Self = this.set("fontSizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizes: Self = this.set("fontSizes", js.undefined)
+    @scala.inline
+    def setHandleBeforeInput(value: js.Function): Self = this.set("handleBeforeInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleBeforeInput: Self = this.set("handleBeforeInput", js.undefined)
+    @scala.inline
+    def setHandleDroppedFiles(value: js.Function): Self = this.set("handleDroppedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleDroppedFiles: Self = this.set("handleDroppedFiles", js.undefined)
+    @scala.inline
+    def setHandleKeyCommand(value: js.Function): Self = this.set("handleKeyCommand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleKeyCommand: Self = this.set("handleKeyCommand", js.undefined)
+    @scala.inline
+    def setHandlePastedFiles(value: js.Function): Self = this.set("handlePastedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandlePastedFiles: Self = this.set("handlePastedFiles", js.undefined)
+    @scala.inline
+    def setHandlePastedText(value: js.Function): Self = this.set("handlePastedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandlePastedText: Self = this.set("handlePastedText", js.undefined)
+    @scala.inline
+    def setHandleReturn(value: js.Function): Self = this.set("handleReturn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleReturn: Self = this.set("handleReturn", js.undefined)
+    @scala.inline
+    def setHeadingsVarargs(value: String*): Self = this.set("headings", js.Array(value :_*))
+    @scala.inline
+    def setHeadings(value: js.Array[String]): Self = this.set("headings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadings: Self = this.set("headings", js.undefined)
+    @scala.inline
+    def setHooks(value: HooksType): Self = this.set("hooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHooks: Self = this.set("hooks", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageControlsVarargs(value: ImageControlType*): Self = this.set("imageControls", js.Array(value :_*))
+    @scala.inline
+    def setImageControls(value: js.Array[ImageControlType]): Self = this.set("imageControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageControls: Self = this.set("imageControls", js.undefined)
+    @scala.inline
+    def setImageEqualRatio(value: Boolean): Self = this.set("imageEqualRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageEqualRatio: Self = this.set("imageEqualRatio", js.undefined)
+    @scala.inline
+    def setImageResizable(value: Boolean): Self = this.set("imageResizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageResizable: Self = this.set("imageResizable", js.undefined)
+    @scala.inline
+    def setLanguageFunction2(value: (/* languages */ js.Any, /* context */ js.Any) => _): Self = this.set("language", js.Any.fromFunction2(value))
+    @scala.inline
+    def setLanguage(
+      value: zh | `zh-hant` | en | tr | ru | jpn | kr | pl | fr | `vi-vn` | (js.Function2[/* languages */ js.Any, /* context */ js.Any, _])
+    ): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLetterSpacingsVarargs(value: Double*): Self = this.set("letterSpacings", js.Array(value :_*))
+    @scala.inline
+    def setLetterSpacings(value: js.Array[Double]): Self = this.set("letterSpacings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLetterSpacings: Self = this.set("letterSpacings", js.undefined)
+    @scala.inline
+    def setLineHeightsVarargs(value: Double*): Self = this.set("lineHeights", js.Array(value :_*))
+    @scala.inline
+    def setLineHeights(value: js.Array[Double]): Self = this.set("lineHeights", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeights: Self = this.set("lineHeights", js.undefined)
+    @scala.inline
+    def setMedia(value: MediaType): Self = this.set("media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedia: Self = this.set("media", js.undefined)
+    @scala.inline
+    def setOnBlur(value: js.Function): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* editorState */ EditorState => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnDelete(value: js.Function): Self = this.set("onDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDelete: Self = this.set("onDelete", js.undefined)
+    @scala.inline
+    def setOnFocus(value: js.Function): Self = this.set("onFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnFullscreen(value: js.Function): Self = this.set("onFullscreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFullscreen: Self = this.set("onFullscreen", js.undefined)
+    @scala.inline
+    def setOnSave(value: js.Function): Self = this.set("onSave", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnSave: Self = this.set("onSave", js.undefined)
+    @scala.inline
+    def setOnTab(value: js.Function): Self = this.set("onTab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnTab: Self = this.set("onTab", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setStripPastedStyles(value: Boolean): Self = this.set("stripPastedStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStripPastedStyles: Self = this.set("stripPastedStyles", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTextAlignsVarargs(value: (left | center | right | justify)*): Self = this.set("textAligns", js.Array(value :_*))
+    @scala.inline
+    def setTextAligns(value: js.Array[left | center | right | justify]): Self = this.set("textAligns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAligns: Self = this.set("textAligns", js.undefined)
+    @scala.inline
+    def setTextBackgroundColor(value: Boolean): Self = this.set("textBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextBackgroundColor: Self = this.set("textBackgroundColor", js.undefined)
+    @scala.inline
+    def setValue(value: EditorState): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

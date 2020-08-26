@@ -10,8 +10,8 @@ merge() utility function
 | Full name          | utils-merge |
 | Keywords           | util |
 | # releases         | 0 |
-| # dependents       | 409 |
-| # downloads        | 421317115 |
+| # dependents       | 411 |
+| # downloads        | 430540203 |
 | # stars            | 11 |
 
 ## Links

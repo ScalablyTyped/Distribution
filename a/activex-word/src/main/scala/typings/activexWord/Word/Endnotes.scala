@@ -20,6 +20,7 @@ trait Endnotes extends js.Object {
   @JSName("Word.Endnotes_typekey")
   var WordDotEndnotes_typekey: Endnotes = js.native
   def Add(Range: Range): Endnote = js.native
+  def Add(Range: Range, Reference: js.UndefOr[scala.Nothing], Text: js.Any): Endnote = js.native
   def Add(Range: Range, Reference: js.Any): Endnote = js.native
   def Add(Range: Range, Reference: js.Any, Text: js.Any): Endnote = js.native
   def Convert(): Unit = js.native

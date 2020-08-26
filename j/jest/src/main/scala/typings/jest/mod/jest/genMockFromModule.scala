@@ -10,6 +10,7 @@ object genMockFromModule extends js.Object {
   /**
     * Use the automatic mocking system to generate a mocked version of the given module.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def apply[T](moduleName: String): T = js.native
 }
 

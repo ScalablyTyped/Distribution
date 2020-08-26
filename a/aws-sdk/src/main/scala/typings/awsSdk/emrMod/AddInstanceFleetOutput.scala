@@ -22,16 +22,34 @@ trait AddInstanceFleetOutput extends js.Object {
 
 object AddInstanceFleetOutput {
   @scala.inline
-  def apply(
-    ClusterArn: ArnType = null,
-    ClusterId: XmlStringMaxLen256 = null,
-    InstanceFleetId: InstanceFleetId = null
-  ): AddInstanceFleetOutput = {
+  def apply(): AddInstanceFleetOutput = {
     val __obj = js.Dynamic.literal()
-    if (ClusterArn != null) __obj.updateDynamic("ClusterArn")(ClusterArn.asInstanceOf[js.Any])
-    if (ClusterId != null) __obj.updateDynamic("ClusterId")(ClusterId.asInstanceOf[js.Any])
-    if (InstanceFleetId != null) __obj.updateDynamic("InstanceFleetId")(InstanceFleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddInstanceFleetOutput]
   }
+  @scala.inline
+  implicit class AddInstanceFleetOutputOps[Self <: AddInstanceFleetOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterArn(value: ArnType): Self = this.set("ClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("ClusterArn", js.undefined)
+    @scala.inline
+    def setClusterId(value: XmlStringMaxLen256): Self = this.set("ClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("ClusterId", js.undefined)
+    @scala.inline
+    def setInstanceFleetId(value: InstanceFleetId): Self = this.set("InstanceFleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFleetId: Self = this.set("InstanceFleetId", js.undefined)
+  }
+  
 }
 

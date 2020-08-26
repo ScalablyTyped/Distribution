@@ -38,23 +38,50 @@ trait UpdateNetworkProfileRequest extends js.Object {
 
 object UpdateNetworkProfileRequest {
   @scala.inline
-  def apply(
-    NetworkProfileArn: Arn,
-    CertificateAuthorityArn: Arn = null,
-    CurrentPassword: CurrentWiFiPassword = null,
-    Description: NetworkProfileDescription = null,
-    NetworkProfileName: NetworkProfileName = null,
-    NextPassword: NextWiFiPassword = null,
-    TrustAnchors: TrustAnchorList = null
-  ): UpdateNetworkProfileRequest = {
+  def apply(NetworkProfileArn: Arn): UpdateNetworkProfileRequest = {
     val __obj = js.Dynamic.literal(NetworkProfileArn = NetworkProfileArn.asInstanceOf[js.Any])
-    if (CertificateAuthorityArn != null) __obj.updateDynamic("CertificateAuthorityArn")(CertificateAuthorityArn.asInstanceOf[js.Any])
-    if (CurrentPassword != null) __obj.updateDynamic("CurrentPassword")(CurrentPassword.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (NetworkProfileName != null) __obj.updateDynamic("NetworkProfileName")(NetworkProfileName.asInstanceOf[js.Any])
-    if (NextPassword != null) __obj.updateDynamic("NextPassword")(NextPassword.asInstanceOf[js.Any])
-    if (TrustAnchors != null) __obj.updateDynamic("TrustAnchors")(TrustAnchors.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNetworkProfileRequest]
   }
+  @scala.inline
+  implicit class UpdateNetworkProfileRequestOps[Self <: UpdateNetworkProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkProfileArn(value: Arn): Self = this.set("NetworkProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    @scala.inline
+    def setCurrentPassword(value: CurrentWiFiPassword): Self = this.set("CurrentPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPassword: Self = this.set("CurrentPassword", js.undefined)
+    @scala.inline
+    def setDescription(value: NetworkProfileDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setNetworkProfileName(value: NetworkProfileName): Self = this.set("NetworkProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfileName: Self = this.set("NetworkProfileName", js.undefined)
+    @scala.inline
+    def setNextPassword(value: NextWiFiPassword): Self = this.set("NextPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPassword: Self = this.set("NextPassword", js.undefined)
+    @scala.inline
+    def setTrustAnchorsVarargs(value: TrustAnchor*): Self = this.set("TrustAnchors", js.Array(value :_*))
+    @scala.inline
+    def setTrustAnchors(value: TrustAnchorList): Self = this.set("TrustAnchors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustAnchors: Self = this.set("TrustAnchors", js.undefined)
+  }
+  
 }
 

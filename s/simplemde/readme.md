@@ -11,8 +11,8 @@ A simple, beautiful, and embeddable JavaScript Markdown editor. Features autosav
 | Full name          | simplemde |
 | Keywords           | embeddable, markdown, editor, javascript, wysiwyg |
 | # releases         | 1 |
-| # dependents       | 115 |
-| # downloads        | 1012078 |
+| # dependents       | 114 |
+| # downloads        | 1020506 |
 | # stars            | 6 |
 
 ## Links

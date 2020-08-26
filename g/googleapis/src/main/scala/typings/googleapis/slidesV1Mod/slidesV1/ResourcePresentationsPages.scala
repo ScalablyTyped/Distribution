@@ -28,6 +28,7 @@ class ResourcePresentationsPages protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPage] = js.native
   def get(callback: BodyResponseCallback[SchemaPage]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPage] = js.native
   def get(params: ParamsResourcePresentationsPagesGet): GaxiosPromise[SchemaPage] = js.native
   def get(params: ParamsResourcePresentationsPagesGet, callback: BodyResponseCallback[SchemaPage]): Unit = js.native
   def get(
@@ -61,6 +62,7 @@ class ResourcePresentationsPages protected () extends js.Object {
     */
   def getThumbnail(): GaxiosPromise[SchemaThumbnail] = js.native
   def getThumbnail(callback: BodyResponseCallback[SchemaThumbnail]): Unit = js.native
+  def getThumbnail(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaThumbnail] = js.native
   def getThumbnail(params: ParamsResourcePresentationsPagesGetthumbnail): GaxiosPromise[SchemaThumbnail] = js.native
   def getThumbnail(
     params: ParamsResourcePresentationsPagesGetthumbnail,

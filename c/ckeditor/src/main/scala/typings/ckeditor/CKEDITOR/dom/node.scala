@@ -20,7 +20,26 @@ trait node extends domObject {
   def getNext(): node = js.native
   def getNext(evaluator: js.Function1[/* node */ this.type, Boolean]): node = js.native
   def getNextSourceNode(): node = js.native
+  def getNextSourceNode(
+    startFromSibling: js.UndefOr[scala.Nothing],
+    nodeType: js.UndefOr[scala.Nothing],
+    guard: js.Function1[/* node */ this.type, Boolean]
+  ): node = js.native
+  def getNextSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
+  def getNextSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double): node = js.native
+  def getNextSourceNode(
+    startFromSibling: js.UndefOr[scala.Nothing],
+    nodeType: Double,
+    guard: js.Function1[/* node */ this.type, Boolean]
+  ): node = js.native
+  def getNextSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double, guard: node): node = js.native
   def getNextSourceNode(startFromSibling: Boolean): node = js.native
+  def getNextSourceNode(
+    startFromSibling: Boolean,
+    nodeType: js.UndefOr[scala.Nothing],
+    guard: js.Function1[/* node */ this.type, Boolean]
+  ): node = js.native
+  def getNextSourceNode(startFromSibling: Boolean, nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
   def getNextSourceNode(startFromSibling: Boolean, nodeType: Double): node = js.native
   def getNextSourceNode(startFromSibling: Boolean, nodeType: Double, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
   def getNextSourceNode(startFromSibling: Boolean, nodeType: Double, guard: node): node = js.native
@@ -32,7 +51,26 @@ trait node extends domObject {
   def getPrevious(): node = js.native
   def getPrevious(evaluator: js.Function1[/* node */ this.type, Boolean]): node = js.native
   def getPreviousSourceNode(): node = js.native
+  def getPreviousSourceNode(
+    startFromSibling: js.UndefOr[scala.Nothing],
+    nodeType: js.UndefOr[scala.Nothing],
+    guard: js.Function1[/* node */ this.type, Boolean]
+  ): node = js.native
+  def getPreviousSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
+  def getPreviousSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double): node = js.native
+  def getPreviousSourceNode(
+    startFromSibling: js.UndefOr[scala.Nothing],
+    nodeType: Double,
+    guard: js.Function1[/* node */ this.type, Boolean]
+  ): node = js.native
+  def getPreviousSourceNode(startFromSibling: js.UndefOr[scala.Nothing], nodeType: Double, guard: node): node = js.native
   def getPreviousSourceNode(startFromSibling: Boolean): node = js.native
+  def getPreviousSourceNode(
+    startFromSibling: Boolean,
+    nodeType: js.UndefOr[scala.Nothing],
+    guard: js.Function1[/* node */ this.type, Boolean]
+  ): node = js.native
+  def getPreviousSourceNode(startFromSibling: Boolean, nodeType: js.UndefOr[scala.Nothing], guard: node): node = js.native
   def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Double): node = js.native
   def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Double, guard: js.Function1[/* node */ this.type, Boolean]): node = js.native
   def getPreviousSourceNode(startFromSibling: Boolean, nodeType: Double, guard: node): node = js.native

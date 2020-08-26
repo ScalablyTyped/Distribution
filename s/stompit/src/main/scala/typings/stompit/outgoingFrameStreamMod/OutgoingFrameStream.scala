@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait OutgoingFrameStream extends js.Object {
   def finish(): Unit = js.native
   def frame(command: String): Writable = js.native
+  def frame(command: String, headers: js.UndefOr[scala.Nothing], streamOptions: WritableOptions): Writable = js.native
   def frame(command: String, headers: js.Any): Writable = js.native
   def frame(command: String, headers: js.Any, streamOptions: WritableOptions): Writable = js.native
   def hasFinished(): Boolean = js.native

@@ -12,7 +12,7 @@ Mailjet NodeJS API client
 | Keywords           | email, sms, node, mail, mailjet |
 | # releases         | 3 |
 | # dependents       | 31 |
-| # downloads        | 911008 |
+| # downloads        | 948675 |
 | # stars            | 2 |
 
 ## Links

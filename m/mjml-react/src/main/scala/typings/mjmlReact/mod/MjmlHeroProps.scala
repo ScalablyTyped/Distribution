@@ -1,50 +1,81 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.BackgroundPositionProperty
-import typings.csstype.mod.VerticalAlignProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.BackgroundPosition
+import typings.csstype.mod.Property.VerticalAlign
 import typings.mjmlReact.mjmlReactStrings.`fixed-height`
 import typings.mjmlReact.mjmlReactStrings.`fluid-height`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MjmlHeroProps extends js.Object {
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
-  var backgroundHeight: js.UndefOr[String] = js.undefined
-  var backgroundPosition: js.UndefOr[BackgroundPositionProperty[String | Double]] = js.undefined
-  var backgroundUrl: js.UndefOr[String] = js.undefined
-  var backgroundWidth: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[String | Double] = js.undefined
-  var mode: js.UndefOr[`fluid-height` | `fixed-height`] = js.undefined
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
-  var width: js.UndefOr[String | Double] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.native
+  var backgroundHeight: js.UndefOr[String] = js.native
+  var backgroundPosition: js.UndefOr[BackgroundPosition[String | Double]] = js.native
+  var backgroundUrl: js.UndefOr[String] = js.native
+  var backgroundWidth: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String | Double] = js.native
+  var mode: js.UndefOr[`fluid-height` | `fixed-height`] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlign[String | Double]] = js.native
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object MjmlHeroProps {
   @scala.inline
-  def apply(
-    backgroundColor: BackgroundColorProperty = null,
-    backgroundHeight: String = null,
-    backgroundPosition: BackgroundPositionProperty[String | Double] = null,
-    backgroundUrl: String = null,
-    backgroundWidth: String = null,
-    height: String | Double = null,
-    mode: `fluid-height` | `fixed-height` = null,
-    verticalAlign: VerticalAlignProperty[String | Double] = null,
-    width: String | Double = null
-  ): MjmlHeroProps = {
+  def apply(): MjmlHeroProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundHeight != null) __obj.updateDynamic("backgroundHeight")(backgroundHeight.asInstanceOf[js.Any])
-    if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
-    if (backgroundUrl != null) __obj.updateDynamic("backgroundUrl")(backgroundUrl.asInstanceOf[js.Any])
-    if (backgroundWidth != null) __obj.updateDynamic("backgroundWidth")(backgroundWidth.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlHeroProps]
   }
+  @scala.inline
+  implicit class MjmlHeroPropsOps[Self <: MjmlHeroProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundColor(value: BackgroundColor): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBackgroundHeight(value: String): Self = this.set("backgroundHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundHeight: Self = this.set("backgroundHeight", js.undefined)
+    @scala.inline
+    def setBackgroundPosition(value: BackgroundPosition[String | Double]): Self = this.set("backgroundPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundPosition: Self = this.set("backgroundPosition", js.undefined)
+    @scala.inline
+    def setBackgroundUrl(value: String): Self = this.set("backgroundUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundUrl: Self = this.set("backgroundUrl", js.undefined)
+    @scala.inline
+    def setBackgroundWidth(value: String): Self = this.set("backgroundWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundWidth: Self = this.set("backgroundWidth", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setMode(value: `fluid-height` | `fixed-height`): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: VerticalAlign[String | Double]): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -21,6 +21,7 @@ class Image () extends Object {
   def this(element: String) = this()
   def this(element: HTMLImageElement) = this()
   def this(element: HTMLVideoElement) = this()
+  def this(element: js.UndefOr[scala.Nothing], options: IImageOptions) = this()
   def this(element: String, options: IImageOptions) = this()
   def this(element: HTMLImageElement, options: IImageOptions) = this()
   def this(element: HTMLVideoElement, options: IImageOptions) = this()
@@ -138,6 +139,7 @@ class Image () extends Object {
     * @chainable
     */
   def setSrc(src: String): Image = js.native
+  def setSrc(src: String, callback: js.UndefOr[scala.Nothing], options: IImageOptions): Image = js.native
   def setSrc(src: String, callback: js.Function): Image = js.native
   def setSrc(src: String, callback: js.Function, options: IImageOptions): Image = js.native
 }
@@ -167,6 +169,7 @@ object Image extends js.Object {
     * @param [imgOptions] Options object
     */
   def fromURL(url: String): Image = js.native
+  def fromURL(url: String, callback: js.UndefOr[scala.Nothing], imgOptions: IImageOptions): Image = js.native
   def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit]): Image = js.native
   def fromURL(url: String, callback: js.Function1[/* image */ this.type, Unit], imgOptions: IImageOptions): Image = js.native
 }

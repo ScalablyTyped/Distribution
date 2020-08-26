@@ -12,7 +12,7 @@ VSCode Language client implementation
 | Keywords           | - |
 | # releases         | 55 |
 | # dependents       | 38 |
-| # downloads        | 803190 |
+| # downloads        | 810774 |
 | # stars            | 0 |
 
 ## Links

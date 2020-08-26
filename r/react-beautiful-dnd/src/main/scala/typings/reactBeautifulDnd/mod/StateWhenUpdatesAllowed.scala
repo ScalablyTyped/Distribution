@@ -27,13 +27,9 @@ object StateWhenUpdatesAllowed {
     movementMode: MovementMode,
     onLiftImpact: DragImpact,
     phase: DRAGGING,
-    viewport: Viewport,
-    forceShouldAnimate: js.UndefOr[Boolean] = js.undefined,
-    scrollJumpRequest: Position = null
+    viewport: Viewport
   ): StateWhenUpdatesAllowed = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceShouldAnimate)) __obj.updateDynamic("forceShouldAnimate")(forceShouldAnimate.get.asInstanceOf[js.Any])
-    if (scrollJumpRequest != null) __obj.updateDynamic("scrollJumpRequest")(scrollJumpRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateWhenUpdatesAllowed]
   }
   @scala.inline
@@ -49,13 +45,9 @@ object StateWhenUpdatesAllowed {
     movementMode: MovementMode,
     onLiftImpact: DragImpact,
     phase: COLLECTING,
-    viewport: Viewport,
-    forceShouldAnimate: js.UndefOr[Boolean] = js.undefined,
-    scrollJumpRequest: Position = null
+    viewport: Viewport
   ): StateWhenUpdatesAllowed = {
     val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceShouldAnimate)) __obj.updateDynamic("forceShouldAnimate")(forceShouldAnimate.get.asInstanceOf[js.Any])
-    if (scrollJumpRequest != null) __obj.updateDynamic("scrollJumpRequest")(scrollJumpRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateWhenUpdatesAllowed]
   }
 }

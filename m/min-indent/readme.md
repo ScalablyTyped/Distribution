@@ -12,7 +12,7 @@ Get the shortest leading whitespace from lines in a string
 | Keywords           | indent, indentation, normalize, whitespace, space, tab, string, str, min, minimum |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 6245438 |
+| # downloads        | 7871167 |
 | # stars            | 0 |
 
 ## Links

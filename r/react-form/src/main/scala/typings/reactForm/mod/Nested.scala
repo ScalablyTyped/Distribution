@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Nested[T] extends /* key */ StringDictionary[T | Nested[T]]
 
 object Nested {
   @scala.inline
-  def apply[T](StringDictionary: /* key */ StringDictionary[T | Nested[T]] = null): Nested[T] = {
+  def apply[T](): Nested[T] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Nested[T]]
   }
 }

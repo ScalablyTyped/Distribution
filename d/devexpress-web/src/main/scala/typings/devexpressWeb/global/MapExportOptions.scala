@@ -10,18 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MapExportOptions")
 @js.native
 class MapExportOptions ()
-  extends typings.devexpressWeb.MapExportOptions {
-  /** @deprecated The MapExportOptions.AutomaticPageLayout property is obsolete now. Use the DashboardPdfExportOptions.MapAutomaticPageLayout property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
-  /**
-    * Gets or sets whether the page orientation used to export a map dashboard item is selected automatically.
-    */
-  /* CompleteClass */
-  override var AutomaticPageLayout: Boolean = js.native
-  /** @deprecated The MapExportOptions.SizeMode property is obsolete now. Use the DashboardPdfExportOptions.MapSizeMode property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
-  /**
-    * Gets or sets the export size mode for the map dashboard item.
-    */
-  /* CompleteClass */
-  override var SizeMode: String = js.native
-}
+  extends typings.devexpressWeb.MapExportOptions
 

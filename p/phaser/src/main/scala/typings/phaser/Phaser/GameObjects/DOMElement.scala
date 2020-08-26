@@ -61,6 +61,9 @@ import scala.scalajs.js.annotation._
   * 
   * Also, all DOM Elements are inserted into the same DOM Container, regardless of which Scene they are created in.
   * 
+  * Note that you should only have DOM Elements in a Scene with a _single_ Camera. If you require multiple cameras,
+  * use parallel scenes to achieve this.
+  * 
   * DOM Elements are a powerful way to align native HTML with your Phaser Game Objects. For example, you can insert
   * a login form for a multiplayer game directly into your title screen. Or a text input box for a highscore table.
   * Or a banner ad from a 3rd party service. Or perhaps you'd like to use them for high resolution text display and
@@ -221,6 +224,7 @@ trait DOMElement
     * @param innerText A DOMString that holds the text that will be set as the innerText of the created element.
     */
   def createElement(tagName: String): this.type = js.native
+  def createElement(tagName: String, style: js.UndefOr[scala.Nothing], innerText: String): this.type = js.native
   def createElement(tagName: String, style: String): this.type = js.native
   def createElement(tagName: String, style: String, innerText: String): this.type = js.native
   def createElement(tagName: String, style: js.Any): this.type = js.native
@@ -366,11 +370,13 @@ trait DOMElement
     * @param innerText A DOMString that holds the text that will be set as the innerText of the created element.
     */
   def setElement(element: String): this.type = js.native
+  def setElement(element: String, style: js.UndefOr[scala.Nothing], innerText: String): this.type = js.native
   def setElement(element: String, style: String): this.type = js.native
   def setElement(element: String, style: String, innerText: String): this.type = js.native
   def setElement(element: String, style: js.Any): this.type = js.native
   def setElement(element: String, style: js.Any, innerText: String): this.type = js.native
   def setElement(element: Element): this.type = js.native
+  def setElement(element: Element, style: js.UndefOr[scala.Nothing], innerText: String): this.type = js.native
   def setElement(element: Element, style: String): this.type = js.native
   def setElement(element: Element, style: String, innerText: String): this.type = js.native
   def setElement(element: Element, style: js.Any): this.type = js.native
@@ -400,6 +406,7 @@ trait DOMElement
     * @param y The angle, in radians, by which to skew the DOM Element on the vertical axis. Default x.
     */
   def setSkew(): this.type = js.native
+  def setSkew(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setSkew(x: Double): this.type = js.native
   def setSkew(x: Double, y: Double): this.type = js.native
   /**

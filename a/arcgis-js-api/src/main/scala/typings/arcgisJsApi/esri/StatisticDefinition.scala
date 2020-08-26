@@ -38,7 +38,7 @@ trait StatisticDefinition
     */
   var statisticParameters: StatisticDefinitionStatisticParameters = js.native
   /**
-    * Defines the type of statistic.  **Possible Values:**
+    * Defines the type of statistic.  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |
@@ -55,7 +55,6 @@ trait StatisticDefinition
     * > **Known Limitations**
     *   * The [statisticParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters) must be set when calculating `percentile-continuous` or `percentile-discrete` statistics.
     *   * The `percentile-continuous` and `percentile-discrete` statistic types cannot be used with the [having](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#having) parameter.
-    *   * The `percentile-continuous` and `percentile-discrete` statistic types are only supported with server-side [FeatureLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
     *   * The `percentile-continuous` and `percentile-discrete` statistic types are supported if [capabilities.query.supportsPercentileStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticType)

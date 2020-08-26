@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__parser
 
-Typings are for version 7.10.4
+Typings are for version 7.11.0
 
 ## Library description:
 A JavaScript parser
@@ -10,9 +10,9 @@ A JavaScript parser
 | ------------------ | :-------------: |
 | Full name          | @babel/parser |
 | Keywords           | babel, javascript, parser, tc39, ecmascript, @babel/parser |
-| # releases         | 46 |
-| # dependents       | 670 |
-| # downloads        | 475794112 |
+| # releases         | 48 |
+| # dependents       | 699 |
+| # downloads        | 502292122 |
 | # stars            | 0 |
 
 ## Links

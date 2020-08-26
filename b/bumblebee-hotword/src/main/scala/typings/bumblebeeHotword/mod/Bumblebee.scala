@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Bumblebee extends EventEmitter {
   def addHotword(name: String): Unit = js.native
+  def addHotword(name: String, data: js.UndefOr[scala.Nothing], sensitivity: Double): Unit = js.native
   def addHotword(name: String, data: Uint8Array): Unit = js.native
   def addHotword(name: String, data: Uint8Array, sensitivity: Double): Unit = js.native
   def audioAnalyserCallback(audioAnalyser: AnalyserNode, gainNode: GainNode): Unit = js.native

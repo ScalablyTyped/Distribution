@@ -1,0 +1,13 @@
+package typings.badgin.titleMod
+
+import typings.badgin.mod.Value
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("badgin/build/title", "changeTitle")
+@js.native
+object changeTitle extends js.Object {
+  def apply(title: Title, value: Value, options: Options): Unit = js.native
+}
+

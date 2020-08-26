@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Sensors.ProximitySensorReadingChangedEventArgs")
 @js.native
 abstract class ProximitySensorReadingChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReadingChangedEventArgs {
-  /** Gets or sets the most recent proximity sensor reading. */
-  /* CompleteClass */
-  override var reading: typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReading = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Sensors.ProximitySensorReadingChangedEventArgs
 

@@ -12,7 +12,7 @@ A cross-platform UTF-8 string <-> UInt8Array converter
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 788 |
+| # downloads        | 816 |
 | # stars            | 0 |
 
 ## Links

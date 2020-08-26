@@ -30,20 +30,42 @@ trait UnprocessedUpdateAction extends js.Object {
 
 object UnprocessedUpdateAction {
   @scala.inline
-  def apply(
-    CacheClusterId: String = null,
-    ErrorMessage: String = null,
-    ErrorType: String = null,
-    ReplicationGroupId: String = null,
-    ServiceUpdateName: String = null
-  ): UnprocessedUpdateAction = {
+  def apply(): UnprocessedUpdateAction = {
     val __obj = js.Dynamic.literal()
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (ErrorType != null) __obj.updateDynamic("ErrorType")(ErrorType.asInstanceOf[js.Any])
-    if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
-    if (ServiceUpdateName != null) __obj.updateDynamic("ServiceUpdateName")(ServiceUpdateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnprocessedUpdateAction]
   }
+  @scala.inline
+  implicit class UnprocessedUpdateActionOps[Self <: UnprocessedUpdateAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setErrorType(value: String): Self = this.set("ErrorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorType: Self = this.set("ErrorType", js.undefined)
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+    @scala.inline
+    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
+  }
+  
 }
 

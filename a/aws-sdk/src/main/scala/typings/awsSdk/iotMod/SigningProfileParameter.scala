@@ -22,16 +22,34 @@ trait SigningProfileParameter extends js.Object {
 
 object SigningProfileParameter {
   @scala.inline
-  def apply(
-    certificateArn: CertificateArn = null,
-    certificatePathOnDevice: CertificatePathOnDevice = null,
-    platform: Platform = null
-  ): SigningProfileParameter = {
+  def apply(): SigningProfileParameter = {
     val __obj = js.Dynamic.literal()
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificatePathOnDevice != null) __obj.updateDynamic("certificatePathOnDevice")(certificatePathOnDevice.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningProfileParameter]
   }
+  @scala.inline
+  implicit class SigningProfileParameterOps[Self <: SigningProfileParameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCertificatePathOnDevice(value: CertificatePathOnDevice): Self = this.set("certificatePathOnDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePathOnDevice: Self = this.set("certificatePathOnDevice", js.undefined)
+    @scala.inline
+    def setPlatform(value: Platform): Self = this.set("platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("platform", js.undefined)
+  }
+  
 }
 

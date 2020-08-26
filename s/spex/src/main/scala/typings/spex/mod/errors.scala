@@ -16,10 +16,6 @@ object errors extends js.Object {
     // extended properties:
     var data: js.Array[IBatchData] = js.native
     var first: js.Any = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     @JSName("stack")
     var stack_BatchError: String = js.native
     var stat: IBatchStat = js.native
@@ -35,10 +31,6 @@ object errors extends js.Object {
     // extended properties:
     var error: js.Any = js.native
     var index: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var reason: String = js.native
     var source: js.Any = js.native
     @JSName("stack")
@@ -53,10 +45,6 @@ object errors extends js.Object {
     // extended properties:
     var error: js.Any = js.native
     var index: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var reason: String = js.native
     var source: js.Any = js.native
     @JSName("stack")

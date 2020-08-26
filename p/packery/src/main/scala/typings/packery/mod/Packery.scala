@@ -72,6 +72,7 @@ class Packery protected () extends js.Object {
     * @param {number} y       [description]
     */
   def fit(element: Element): Unit = js.native
+  def fit(element: Element, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def fit(element: Element, x: Double): Unit = js.native
   def fit(element: Element, x: Double, y: Double): Unit = js.native
   /**

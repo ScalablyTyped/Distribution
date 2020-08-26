@@ -67,20 +67,46 @@ trait SchemaAuth extends js.Object {
 
 object SchemaAuth {
   @scala.inline
-  def apply(
-    accessLevels: js.Array[String] = null,
-    audiences: js.Array[String] = null,
-    claims: StringDictionary[js.Any] = null,
-    presenter: String = null,
-    principal: String = null
-  ): SchemaAuth = {
+  def apply(): SchemaAuth = {
     val __obj = js.Dynamic.literal()
-    if (accessLevels != null) __obj.updateDynamic("accessLevels")(accessLevels.asInstanceOf[js.Any])
-    if (audiences != null) __obj.updateDynamic("audiences")(audiences.asInstanceOf[js.Any])
-    if (claims != null) __obj.updateDynamic("claims")(claims.asInstanceOf[js.Any])
-    if (presenter != null) __obj.updateDynamic("presenter")(presenter.asInstanceOf[js.Any])
-    if (principal != null) __obj.updateDynamic("principal")(principal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuth]
   }
+  @scala.inline
+  implicit class SchemaAuthOps[Self <: SchemaAuth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessLevelsVarargs(value: String*): Self = this.set("accessLevels", js.Array(value :_*))
+    @scala.inline
+    def setAccessLevels(value: js.Array[String]): Self = this.set("accessLevels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLevels: Self = this.set("accessLevels", js.undefined)
+    @scala.inline
+    def setAudiencesVarargs(value: String*): Self = this.set("audiences", js.Array(value :_*))
+    @scala.inline
+    def setAudiences(value: js.Array[String]): Self = this.set("audiences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudiences: Self = this.set("audiences", js.undefined)
+    @scala.inline
+    def setClaims(value: StringDictionary[js.Any]): Self = this.set("claims", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaims: Self = this.set("claims", js.undefined)
+    @scala.inline
+    def setPresenter(value: String): Self = this.set("presenter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresenter: Self = this.set("presenter", js.undefined)
+    @scala.inline
+    def setPrincipal(value: String): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipal: Self = this.set("principal", js.undefined)
+  }
+  
 }
 

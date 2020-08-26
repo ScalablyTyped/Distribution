@@ -26,18 +26,38 @@ trait ConfigurationOptionSetting extends js.Object {
 
 object ConfigurationOptionSetting {
   @scala.inline
-  def apply(
-    Namespace: OptionNamespace = null,
-    OptionName: ConfigurationOptionName = null,
-    ResourceName: ResourceName = null,
-    Value: ConfigurationOptionValue = null
-  ): ConfigurationOptionSetting = {
+  def apply(): ConfigurationOptionSetting = {
     val __obj = js.Dynamic.literal()
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
-    if (OptionName != null) __obj.updateDynamic("OptionName")(OptionName.asInstanceOf[js.Any])
-    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOptionSetting]
   }
+  @scala.inline
+  implicit class ConfigurationOptionSettingOps[Self <: ConfigurationOptionSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespace(value: OptionNamespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+    @scala.inline
+    def setOptionName(value: ConfigurationOptionName): Self = this.set("OptionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionName: Self = this.set("OptionName", js.undefined)
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("ResourceName", js.undefined)
+    @scala.inline
+    def setValue(value: ConfigurationOptionValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

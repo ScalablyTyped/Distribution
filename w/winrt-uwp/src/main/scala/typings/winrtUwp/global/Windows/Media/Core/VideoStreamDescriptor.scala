@@ -15,17 +15,5 @@ class VideoStreamDescriptor protected ()
     * @param encodingProperties The encoding properties for the video stream.
     */
   def this(encodingProperties: VideoEncodingProperties) = this()
-  /** Gets the encoding properties on the video stream. */
-  /* CompleteClass */
-  override var encodingProperties: VideoEncodingProperties = js.native
-  /** Specifies whether the stream is currently in use by the MediaStreamSource . */
-  /* CompleteClass */
-  override var isSelected: Boolean = js.native
-  /** Gets or sets the RFC-1766 language code for the stream. */
-  /* CompleteClass */
-  override var language: String = js.native
-  /** Gets or sets the name of the stream. */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

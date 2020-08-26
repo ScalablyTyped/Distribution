@@ -49,26 +49,56 @@ trait SchemaAppAccessCollections extends js.Object {
 
 object SchemaAppAccessCollections {
   @scala.inline
-  def apply(
-    blockedApiAccessBuckets: js.Array[String] = null,
-    enforceSettingsForAndroidDrive: js.UndefOr[Boolean] = js.undefined,
-    errorMessage: String = null,
-    etag: String = null,
-    kind: String = null,
-    resourceId: String = null,
-    resourceName: String = null,
-    trustDomainOwnedApps: js.UndefOr[Boolean] = js.undefined
-  ): SchemaAppAccessCollections = {
+  def apply(): SchemaAppAccessCollections = {
     val __obj = js.Dynamic.literal()
-    if (blockedApiAccessBuckets != null) __obj.updateDynamic("blockedApiAccessBuckets")(blockedApiAccessBuckets.asInstanceOf[js.Any])
-    if (!js.isUndefined(enforceSettingsForAndroidDrive)) __obj.updateDynamic("enforceSettingsForAndroidDrive")(enforceSettingsForAndroidDrive.get.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(trustDomainOwnedApps)) __obj.updateDynamic("trustDomainOwnedApps")(trustDomainOwnedApps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppAccessCollections]
   }
+  @scala.inline
+  implicit class SchemaAppAccessCollectionsOps[Self <: SchemaAppAccessCollections] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockedApiAccessBucketsVarargs(value: String*): Self = this.set("blockedApiAccessBuckets", js.Array(value :_*))
+    @scala.inline
+    def setBlockedApiAccessBuckets(value: js.Array[String]): Self = this.set("blockedApiAccessBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockedApiAccessBuckets: Self = this.set("blockedApiAccessBuckets", js.undefined)
+    @scala.inline
+    def setEnforceSettingsForAndroidDrive(value: Boolean): Self = this.set("enforceSettingsForAndroidDrive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceSettingsForAndroidDrive: Self = this.set("enforceSettingsForAndroidDrive", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setResourceId(value: String): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setTrustDomainOwnedApps(value: Boolean): Self = this.set("trustDomainOwnedApps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustDomainOwnedApps: Self = this.set("trustDomainOwnedApps", js.undefined)
+  }
+  
 }
 

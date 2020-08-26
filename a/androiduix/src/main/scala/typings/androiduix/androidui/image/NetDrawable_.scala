@@ -1,6 +1,5 @@
 package typings.androiduix.androidui.image
 
-import typings.androiduix.android.graphics.Paint
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.androidui.image.NetDrawable.LoadListener
 import typings.androiduix.androidui.image.NetDrawable.TileMode
@@ -8,15 +7,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("androidui.image.NetDrawable")
 @js.native
-class NetDrawable_ protected () extends Drawable {
-  def this(src: String) = this()
-  def this(src: NetImage) = this()
-  def this(src: String, paint: Paint) = this()
-  def this(src: NetImage, paint: Paint) = this()
-  def this(src: String, paint: Paint, overrideImageRatio: Double) = this()
-  def this(src: NetImage, paint: Paint, overrideImageRatio: Double) = this()
+trait NetDrawable_ extends Drawable {
   var mImageHeight: Double = js.native
   var mImageWidth: Double = js.native
   var mLoadListener: js.Any = js.native

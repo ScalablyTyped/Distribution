@@ -30,20 +30,42 @@ trait ProvisionedBandwidth extends js.Object {
 
 object ProvisionedBandwidth {
   @scala.inline
-  def apply(
-    ProvisionTime: DateTime = null,
-    Provisioned: String = null,
-    RequestTime: DateTime = null,
-    Requested: String = null,
-    Status: String = null
-  ): ProvisionedBandwidth = {
+  def apply(): ProvisionedBandwidth = {
     val __obj = js.Dynamic.literal()
-    if (ProvisionTime != null) __obj.updateDynamic("ProvisionTime")(ProvisionTime.asInstanceOf[js.Any])
-    if (Provisioned != null) __obj.updateDynamic("Provisioned")(Provisioned.asInstanceOf[js.Any])
-    if (RequestTime != null) __obj.updateDynamic("RequestTime")(RequestTime.asInstanceOf[js.Any])
-    if (Requested != null) __obj.updateDynamic("Requested")(Requested.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedBandwidth]
   }
+  @scala.inline
+  implicit class ProvisionedBandwidthOps[Self <: ProvisionedBandwidth] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvisionTime(value: DateTime): Self = this.set("ProvisionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisionTime: Self = this.set("ProvisionTime", js.undefined)
+    @scala.inline
+    def setProvisioned(value: String): Self = this.set("Provisioned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioned: Self = this.set("Provisioned", js.undefined)
+    @scala.inline
+    def setRequestTime(value: DateTime): Self = this.set("RequestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestTime: Self = this.set("RequestTime", js.undefined)
+    @scala.inline
+    def setRequested(value: String): Self = this.set("Requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequested: Self = this.set("Requested", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

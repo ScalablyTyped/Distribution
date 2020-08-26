@@ -43,7 +43,7 @@ object subscribeUserAgentClientMod extends js.Object {
       * subscription attempt.
       * https://tools.ietf.org/html/rfc6665#section-4.1.2.4
       */
-    var timer_N: js.Any = js.native
+    var timerN: js.Any = js.native
     /**
       * Handle out of dialog NOTIFY associated with SUBSCRIBE request.
       * This is the first NOTIFY received after the SUBSCRIBE request.

@@ -54,32 +54,68 @@ trait FolderMetadata extends js.Object {
 
 object FolderMetadata {
   @scala.inline
-  def apply(
-    CreatedTimestamp: TimestampType = null,
-    CreatorId: IdType = null,
-    Id: ResourceIdType = null,
-    Labels: SharedLabels = null,
-    LatestVersionSize: js.UndefOr[SizeType] = js.undefined,
-    ModifiedTimestamp: TimestampType = null,
-    Name: ResourceNameType = null,
-    ParentFolderId: ResourceIdType = null,
-    ResourceState: ResourceStateType = null,
-    Signature: HashType = null,
-    Size: js.UndefOr[SizeType] = js.undefined
-  ): FolderMetadata = {
+  def apply(): FolderMetadata = {
     val __obj = js.Dynamic.literal()
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (CreatorId != null) __obj.updateDynamic("CreatorId")(CreatorId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (!js.isUndefined(LatestVersionSize)) __obj.updateDynamic("LatestVersionSize")(LatestVersionSize.get.asInstanceOf[js.Any])
-    if (ModifiedTimestamp != null) __obj.updateDynamic("ModifiedTimestamp")(ModifiedTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ParentFolderId != null) __obj.updateDynamic("ParentFolderId")(ParentFolderId.asInstanceOf[js.Any])
-    if (ResourceState != null) __obj.updateDynamic("ResourceState")(ResourceState.asInstanceOf[js.Any])
-    if (Signature != null) __obj.updateDynamic("Signature")(Signature.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderMetadata]
   }
+  @scala.inline
+  implicit class FolderMetadataOps[Self <: FolderMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setCreatorId(value: IdType): Self = this.set("CreatorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorId: Self = this.set("CreatorId", js.undefined)
+    @scala.inline
+    def setId(value: ResourceIdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: SharedLabel*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: SharedLabels): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setLatestVersionSize(value: SizeType): Self = this.set("LatestVersionSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestVersionSize: Self = this.set("LatestVersionSize", js.undefined)
+    @scala.inline
+    def setModifiedTimestamp(value: TimestampType): Self = this.set("ModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTimestamp: Self = this.set("ModifiedTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: ResourceNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setParentFolderId(value: ResourceIdType): Self = this.set("ParentFolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentFolderId: Self = this.set("ParentFolderId", js.undefined)
+    @scala.inline
+    def setResourceState(value: ResourceStateType): Self = this.set("ResourceState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceState: Self = this.set("ResourceState", js.undefined)
+    @scala.inline
+    def setSignature(value: HashType): Self = this.set("Signature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignature: Self = this.set("Signature", js.undefined)
+    @scala.inline
+    def setSize(value: SizeType): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+  }
+  
 }
 

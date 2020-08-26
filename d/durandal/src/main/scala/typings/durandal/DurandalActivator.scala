@@ -1,19 +1,17 @@
 package typings.durandal
 
-import typings.knockout.KnockoutComputed
-import typings.knockout.KnockoutObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait DurandalActivator[T] extends KnockoutComputed[T] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<T> * / any */ @js.native
+trait DurandalActivator[T] extends js.Object {
   /**
     * An observable which indicates whether or not the activator is currently in the process of activating an instance.
     * @returns {boolean}
     */
-  @JSName("isActivating")
-  var isActivating_Original: KnockoutObservable[Boolean] = js.native
+  var isActivating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
   /**
     * The settings for this activator.
     */
@@ -76,15 +74,5 @@ trait DurandalActivator[T] extends KnockoutComputed[T] {
     * Adds canActivate, activate, canDeactivate and deactivate functions to the provided model which pass through to the corresponding functions on the activator.
     */
   def includeIn(includeIn: js.Any): Unit = js.native
-  /**
-    * An observable which indicates whether or not the activator is currently in the process of activating an instance.
-    * @returns {boolean}
-    */
-  def isActivating(): Boolean = js.native
-  /**
-    * An observable which indicates whether or not the activator is currently in the process of activating an instance.
-    * @returns {boolean}
-    */
-  def isActivating(value: Boolean): Unit = js.native
 }
 

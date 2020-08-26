@@ -17,6 +17,12 @@ object EJSON extends js.Object {
   def stringify(value: js.Object): String = js.native
   def stringify(value: js.Object, options: Relaxed): String = js.native
   def stringify(value: js.Object, replacer: js.Array[scala.Double | String]): String = js.native
+  def stringify(
+    value: js.Object,
+    replacer: js.Array[String | scala.Double],
+    indents: js.UndefOr[scala.Nothing],
+    options: Relaxed
+  ): String = js.native
   def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String): String = js.native
   def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: String, options: Relaxed): String = js.native
   def stringify(value: js.Object, replacer: js.Array[String | scala.Double], indents: scala.Double): String = js.native
@@ -28,6 +34,12 @@ object EJSON extends js.Object {
   ): String = js.native
   def stringify(value: js.Object, replacer: js.Array[String | scala.Double], options: Relaxed): String = js.native
   def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
+  def stringify(
+    value: js.Object,
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, _],
+    indents: js.UndefOr[scala.Nothing],
+    options: Relaxed
+  ): String = js.native
   def stringify(value: js.Object, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], indents: String): String = js.native
   def stringify(
     value: js.Object,

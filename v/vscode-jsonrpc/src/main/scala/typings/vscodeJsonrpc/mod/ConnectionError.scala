@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class ConnectionError protected () extends Error {
   def this(code: ConnectionErrors, message: String) = this()
   val code: ConnectionErrors = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

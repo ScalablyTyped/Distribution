@@ -12,7 +12,7 @@ Debounce promise-returning & async functions
 | Keywords           | promise, debounce, debounced, limit, limited, concurrency, throttle, throat, limited, interval, rate, batch, ratelimit, task, queue, async, await, promises, bluebird |
 | # releases         | 3 |
 | # dependents       | 37 |
-| # downloads        | 515401 |
+| # downloads        | 550764 |
 | # stars            | 0 |
 
 ## Links

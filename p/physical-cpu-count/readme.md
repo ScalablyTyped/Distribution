@@ -11,8 +11,8 @@ Provides the number of physical cores
 | Full name          | physical-cpu-count |
 | Keywords           | os, cpu, cpus, length, physical, logical, cores |
 | # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 16889517 |
+| # dependents       | 32 |
+| # downloads        | 15331737 |
 | # stars            | 1 |
 
 ## Links

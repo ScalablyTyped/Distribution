@@ -18,10 +18,28 @@ trait CreateInstanceProfileRequest extends js.Object {
 
 object CreateInstanceProfileRequest {
   @scala.inline
-  def apply(InstanceProfileName: instanceProfileNameType, Path: pathType = null): CreateInstanceProfileRequest = {
+  def apply(InstanceProfileName: instanceProfileNameType): CreateInstanceProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceProfileName = InstanceProfileName.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceProfileRequest]
   }
+  @scala.inline
+  implicit class CreateInstanceProfileRequestOps[Self <: CreateInstanceProfileRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceProfileName(value: instanceProfileNameType): Self = this.set("InstanceProfileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: pathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

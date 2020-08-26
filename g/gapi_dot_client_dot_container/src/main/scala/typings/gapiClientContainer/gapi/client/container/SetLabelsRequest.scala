@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SetLabelsRequest extends js.Object {
   /**
     * The fingerprint of the previous set of labels for this resource,
@@ -14,18 +15,37 @@ trait SetLabelsRequest extends js.Object {
     * updating or changing labels. Make a <code>get()</code> request to the
     * resource to get the latest fingerprint.
     */
-  var labelFingerprint: js.UndefOr[String] = js.undefined
+  var labelFingerprint: js.UndefOr[String] = js.native
   /** The labels to set for that cluster. */
-  var resourceLabels: js.UndefOr[Record[String, String]] = js.undefined
+  var resourceLabels: js.UndefOr[Record[String, String]] = js.native
 }
 
 object SetLabelsRequest {
   @scala.inline
-  def apply(labelFingerprint: String = null, resourceLabels: Record[String, String] = null): SetLabelsRequest = {
+  def apply(): SetLabelsRequest = {
     val __obj = js.Dynamic.literal()
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (resourceLabels != null) __obj.updateDynamic("resourceLabels")(resourceLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLabelsRequest]
   }
+  @scala.inline
+  implicit class SetLabelsRequestOps[Self <: SetLabelsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setResourceLabels(value: Record[String, String]): Self = this.set("resourceLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLabels: Self = this.set("resourceLabels", js.undefined)
+  }
+  
 }
 

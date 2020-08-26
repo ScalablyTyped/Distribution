@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails")
 @js.native
 abstract class HotspotAuthenticationEventDetails ()
-  extends typings.winrtUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails {
-  /** Gets a GUID that uniquely identifies the authentication attempt for which this event was raised. */
-  /* CompleteClass */
-  override var eventToken: String = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails
 

@@ -57,36 +57,76 @@ trait ClusterSnapshotState extends js.Object {
 
 object ClusterSnapshotState {
   @scala.inline
-  def apply(
-    availabilityZones: Input[js.Array[Input[String]]] = null,
-    dbClusterIdentifier: Input[String] = null,
-    dbClusterSnapshotArn: Input[String] = null,
-    dbClusterSnapshotIdentifier: Input[String] = null,
-    engine: Input[String] = null,
-    engineVersion: Input[String] = null,
-    kmsKeyId: Input[String] = null,
-    port: Input[Double] = null,
-    snapshotType: Input[String] = null,
-    sourceDbClusterSnapshotArn: Input[String] = null,
-    status: Input[String] = null,
-    storageEncrypted: Input[Boolean] = null,
-    vpcId: Input[String] = null
-  ): ClusterSnapshotState = {
+  def apply(): ClusterSnapshotState = {
     val __obj = js.Dynamic.literal()
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
-    if (dbClusterIdentifier != null) __obj.updateDynamic("dbClusterIdentifier")(dbClusterIdentifier.asInstanceOf[js.Any])
-    if (dbClusterSnapshotArn != null) __obj.updateDynamic("dbClusterSnapshotArn")(dbClusterSnapshotArn.asInstanceOf[js.Any])
-    if (dbClusterSnapshotIdentifier != null) __obj.updateDynamic("dbClusterSnapshotIdentifier")(dbClusterSnapshotIdentifier.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (snapshotType != null) __obj.updateDynamic("snapshotType")(snapshotType.asInstanceOf[js.Any])
-    if (sourceDbClusterSnapshotArn != null) __obj.updateDynamic("sourceDbClusterSnapshotArn")(sourceDbClusterSnapshotArn.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (storageEncrypted != null) __obj.updateDynamic("storageEncrypted")(storageEncrypted.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterSnapshotState]
   }
+  @scala.inline
+  implicit class ClusterSnapshotStateOps[Self <: ClusterSnapshotState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: Input[String]*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    @scala.inline
+    def setDbClusterIdentifier(value: Input[String]): Self = this.set("dbClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterIdentifier: Self = this.set("dbClusterIdentifier", js.undefined)
+    @scala.inline
+    def setDbClusterSnapshotArn(value: Input[String]): Self = this.set("dbClusterSnapshotArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterSnapshotArn: Self = this.set("dbClusterSnapshotArn", js.undefined)
+    @scala.inline
+    def setDbClusterSnapshotIdentifier(value: Input[String]): Self = this.set("dbClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterSnapshotIdentifier: Self = this.set("dbClusterSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[String]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setSnapshotType(value: Input[String]): Self = this.set("snapshotType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotType: Self = this.set("snapshotType", js.undefined)
+    @scala.inline
+    def setSourceDbClusterSnapshotArn(value: Input[String]): Self = this.set("sourceDbClusterSnapshotArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDbClusterSnapshotArn: Self = this.set("sourceDbClusterSnapshotArn", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Input[Boolean]): Self = this.set("storageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("storageEncrypted", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

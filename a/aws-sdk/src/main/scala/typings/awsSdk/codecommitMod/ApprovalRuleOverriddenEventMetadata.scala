@@ -18,11 +18,30 @@ trait ApprovalRuleOverriddenEventMetadata extends js.Object {
 
 object ApprovalRuleOverriddenEventMetadata {
   @scala.inline
-  def apply(overrideStatus: OverrideStatus = null, revisionId: RevisionId = null): ApprovalRuleOverriddenEventMetadata = {
+  def apply(): ApprovalRuleOverriddenEventMetadata = {
     val __obj = js.Dynamic.literal()
-    if (overrideStatus != null) __obj.updateDynamic("overrideStatus")(overrideStatus.asInstanceOf[js.Any])
-    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApprovalRuleOverriddenEventMetadata]
   }
+  @scala.inline
+  implicit class ApprovalRuleOverriddenEventMetadataOps[Self <: ApprovalRuleOverriddenEventMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverrideStatus(value: OverrideStatus): Self = this.set("overrideStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideStatus: Self = this.set("overrideStatus", js.undefined)
+    @scala.inline
+    def setRevisionId(value: RevisionId): Self = this.set("revisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("revisionId", js.undefined)
+  }
+  
 }
 

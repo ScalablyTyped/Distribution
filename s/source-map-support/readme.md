@@ -11,8 +11,8 @@ Fixes stack traces for files with source maps
 | Full name          | source-map-support |
 | Keywords           | - |
 | # releases         | 17 |
-| # dependents       | 2455 |
-| # downloads        | 678858376 |
+| # dependents       | 2488 |
+| # downloads        | 694074099 |
 | # stars            | 30 |
 
 ## Links

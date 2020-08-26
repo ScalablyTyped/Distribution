@@ -18,11 +18,30 @@ trait ThingGroupProperties extends js.Object {
 
 object ThingGroupProperties {
   @scala.inline
-  def apply(attributePayload: AttributePayload = null, thingGroupDescription: ThingGroupDescription = null): ThingGroupProperties = {
+  def apply(): ThingGroupProperties = {
     val __obj = js.Dynamic.literal()
-    if (attributePayload != null) __obj.updateDynamic("attributePayload")(attributePayload.asInstanceOf[js.Any])
-    if (thingGroupDescription != null) __obj.updateDynamic("thingGroupDescription")(thingGroupDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingGroupProperties]
   }
+  @scala.inline
+  implicit class ThingGroupPropertiesOps[Self <: ThingGroupProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributePayload(value: AttributePayload): Self = this.set("attributePayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributePayload: Self = this.set("attributePayload", js.undefined)
+    @scala.inline
+    def setThingGroupDescription(value: ThingGroupDescription): Self = this.set("thingGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupDescription: Self = this.set("thingGroupDescription", js.undefined)
+  }
+  
 }
 

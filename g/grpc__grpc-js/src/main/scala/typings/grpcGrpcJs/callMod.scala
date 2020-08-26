@@ -1,7 +1,7 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.callStreamMod.Call
 import typings.grpcGrpcJs.callStreamMod.StatusObject
+import typings.grpcGrpcJs.clientInterceptorsMod.InterceptingCallInterface
 import typings.grpcGrpcJs.grpcGrpcJsStrings.close
 import typings.grpcGrpcJs.grpcGrpcJsStrings.data
 import typings.grpcGrpcJs.grpcGrpcJsStrings.drain
@@ -49,10 +49,12 @@ object callMod extends js.Object {
           Unit
         ]
       ] = js.native
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     var destroyed: Boolean = js.native
     var readable: Boolean = js.native
     val readableEncoding: BufferEncoding | Null = js.native
     val readableEnded: Boolean = js.native
+    val readableFlowing: Boolean | Null = js.native
     val readableHighWaterMark: Double = js.native
     val readableLength: Double = js.native
     val readableObjectMode: Boolean = js.native
@@ -151,9 +153,11 @@ object callMod extends js.Object {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: RequestType): Unit = js.native
     def end(chunk: RequestType, cb: js.Function): Unit = js.native
+    def end(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: RequestType, encoding: js.Any): Unit = js.native
     def end(chunk: RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
     def end(chunk: js.Any with RequestType, cb: js.Function): Unit = js.native
+    def end(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: js.Any with RequestType, encoding: js.Any): Unit = js.native
     def end(chunk: js.Any with RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
     def end(chunk: (js.Any with RequestType) | js.Any): Unit = js.native
@@ -164,6 +168,7 @@ object callMod extends js.Object {
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -363,8 +368,10 @@ object callMod extends js.Object {
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: RequestType): Boolean = js.native
     def write(chunk: RequestType, cb: js.Function): Boolean = js.native
+    def write(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(chunk: RequestType, encoding: js.Any): Boolean = js.native
     def write(chunk: RequestType, encoding: js.Any, cb: js.Function): Boolean = js.native
+    def write(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: WriteCallback): Boolean = js.native
     def write(chunk: js.Any with RequestType, encoding: js.Any): Boolean = js.native
     def write(chunk: js.Any with RequestType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
     def write(chunk: (js.Any with RequestType) | js.Any): Boolean = js.native
@@ -378,21 +385,25 @@ object callMod extends js.Object {
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
+    def write(
+      str: String,
+      encoding: js.UndefOr[scala.Nothing],
+      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    ): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.grpcGrpcJs.callMod.ClientDuplexStream because var conflicts: _writev, destroyed, readable. Inlined serialize, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status, deserialize */ @js.native
+  - typings.grpcGrpcJs.callMod.ClientDuplexStream because var conflicts: _writev, destroyed, readable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status, deserialize */ @js.native
   class ClientDuplexStreamImpl[RequestType, ResponseType] protected () extends Duplex {
     def this(
-      call: Call,
       serialize: js.Function1[/* value */ RequestType, Buffer],
       deserialize: js.Function1[/* chunk */ Buffer, ResponseType]
     ) = this()
-    val call: js.Any = js.native
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     def _final(cb: js.Function): Unit = js.native
-    def _write(chunk: RequestType, encoding: String, cb: js.Function): Unit = js.native
+    def _write(chunk: RequestType, encoding: String, cb: WriteCallback): Unit = js.native
     @JSName("addListener")
     def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
     @JSName("addListener")
@@ -430,10 +441,12 @@ object callMod extends js.Object {
   /* Inlined {deserialize (chunk : node.Buffer): ResponseType} & @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectReadable<ResponseType> */
   @js.native
   trait ClientReadableStream[ResponseType] extends js.Object {
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     var destroyed: Boolean = js.native
     var readable: Boolean = js.native
     val readableEncoding: BufferEncoding | Null = js.native
     val readableEnded: Boolean = js.native
+    val readableFlowing: Boolean | Null = js.native
     val readableHighWaterMark: Double = js.native
     val readableLength: Double = js.native
     val readableObjectMode: Boolean = js.native
@@ -647,10 +660,10 @@ object callMod extends js.Object {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.grpcGrpcJs.callMod.ClientReadableStream because var conflicts: destroyed, readable. Inlined deserialize, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @js.native
+  - typings.grpcGrpcJs.callMod.ClientReadableStream because var conflicts: destroyed, readable. Inlined deserialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @js.native
   class ClientReadableStreamImpl[ResponseType] protected () extends Readable {
-    def this(call: Call, deserialize: js.Function1[/* chunk */ Buffer, ResponseType]) = this()
-    val call: js.Any = js.native
+    def this(deserialize: js.Function1[/* chunk */ Buffer, ResponseType]) = this()
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     @JSName("addListener")
     def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
     @JSName("addListener")
@@ -687,6 +700,7 @@ object callMod extends js.Object {
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall */
   @js.native
   trait ClientUnaryCall extends js.Object {
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("addListener")
@@ -749,11 +763,9 @@ object callMod extends js.Object {
   }
   
   @js.native
-  class ClientUnaryCallImpl protected ()
+  class ClientUnaryCallImpl ()
     extends EventEmitter
        with ClientUnaryCall {
-    def this(call: Call) = this()
-    val call: js.Any = js.native
     /* InferMemberOverrides */
     override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     /* InferMemberOverrides */
@@ -823,6 +835,7 @@ object callMod extends js.Object {
           Unit
         ]
       ] = js.native
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     var destroyed: Boolean = js.native
     val writable: Boolean = js.native
     val writableCorked: Double = js.native
@@ -895,9 +908,11 @@ object callMod extends js.Object {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: RequestType): Unit = js.native
     def end(chunk: RequestType, cb: js.Function): Unit = js.native
+    def end(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: RequestType, encoding: js.Any): Unit = js.native
     def end(chunk: RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
     def end(chunk: js.Any with RequestType, cb: js.Function): Unit = js.native
+    def end(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
     def end(chunk: js.Any with RequestType, encoding: js.Any): Unit = js.native
     def end(chunk: js.Any with RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
     def end(chunk: (js.Any with RequestType) | js.Any): Unit = js.native
@@ -908,6 +923,7 @@ object callMod extends js.Object {
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     def eventNames(): js.Array[String | js.Symbol] = js.native
@@ -1028,8 +1044,10 @@ object callMod extends js.Object {
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: RequestType): Boolean = js.native
     def write(chunk: RequestType, cb: js.Function): Boolean = js.native
+    def write(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
     def write(chunk: RequestType, encoding: js.Any): Boolean = js.native
     def write(chunk: RequestType, encoding: js.Any, cb: js.Function): Boolean = js.native
+    def write(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: WriteCallback): Boolean = js.native
     def write(chunk: js.Any with RequestType, encoding: js.Any): Boolean = js.native
     def write(chunk: js.Any with RequestType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
     def write(chunk: (js.Any with RequestType) | js.Any): Boolean = js.native
@@ -1043,17 +1061,22 @@ object callMod extends js.Object {
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
+    def write(
+      str: String,
+      encoding: js.UndefOr[scala.Nothing],
+      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
+    ): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.grpcGrpcJs.callMod.ClientWritableStream because var conflicts: _writev, destroyed, writable. Inlined serialize, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @js.native
+  - typings.grpcGrpcJs.callMod.ClientWritableStream because var conflicts: _writev, destroyed, writable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status */ @js.native
   class ClientWritableStreamImpl[RequestType] protected () extends Writable {
-    def this(call: Call, serialize: js.Function1[/* value */ RequestType, Buffer]) = this()
-    val call: js.Any = js.native
+    def this(serialize: js.Function1[/* value */ RequestType, Buffer]) = this()
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     def _final(cb: js.Function): Unit = js.native
-    def _write(chunk: RequestType, encoding: String, cb: js.Function): Unit = js.native
+    def _write(chunk: RequestType, encoding: String, cb: WriteCallback): Unit = js.native
     @JSName("addListener")
     def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
     @JSName("addListener")
@@ -1087,9 +1110,10 @@ object callMod extends js.Object {
     def serialize(value: RequestType): Buffer = js.native
   }
   
-  /* Inlined {cancel (): void, getPeer (): string} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'metadata', @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata> & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'status', @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject> & node.events.EventEmitter */
+  /* Inlined {  call :@grpc/grpc-js.@grpc/grpc-js/build/src/client-interceptors.InterceptingCallInterface | undefined, cancel (): void, getPeer (): string} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'metadata', @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata> & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'status', @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject> & node.events.EventEmitter */
   @js.native
   trait SurfaceCall extends js.Object {
+    var call: js.UndefOr[InterceptingCallInterface] = js.native
     def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     @JSName("addListener")

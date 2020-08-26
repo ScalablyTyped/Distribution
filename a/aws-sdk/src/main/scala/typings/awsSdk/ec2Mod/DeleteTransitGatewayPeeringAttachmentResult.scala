@@ -14,10 +14,26 @@ trait DeleteTransitGatewayPeeringAttachmentResult extends js.Object {
 
 object DeleteTransitGatewayPeeringAttachmentResult {
   @scala.inline
-  def apply(TransitGatewayPeeringAttachment: TransitGatewayPeeringAttachment = null): DeleteTransitGatewayPeeringAttachmentResult = {
+  def apply(): DeleteTransitGatewayPeeringAttachmentResult = {
     val __obj = js.Dynamic.literal()
-    if (TransitGatewayPeeringAttachment != null) __obj.updateDynamic("TransitGatewayPeeringAttachment")(TransitGatewayPeeringAttachment.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTransitGatewayPeeringAttachmentResult]
   }
+  @scala.inline
+  implicit class DeleteTransitGatewayPeeringAttachmentResultOps[Self <: DeleteTransitGatewayPeeringAttachmentResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransitGatewayPeeringAttachment(value: TransitGatewayPeeringAttachment): Self = this.set("TransitGatewayPeeringAttachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayPeeringAttachment: Self = this.set("TransitGatewayPeeringAttachment", js.undefined)
+  }
+  
 }
 

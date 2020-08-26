@@ -42,26 +42,56 @@ trait AuthEventType extends js.Object {
 
 object AuthEventType {
   @scala.inline
-  def apply(
-    ChallengeResponses: ChallengeResponseListType = null,
-    CreationDate: DateType = null,
-    EventContextData: EventContextDataType = null,
-    EventFeedback: EventFeedbackType = null,
-    EventId: StringType = null,
-    EventResponse: EventResponseType = null,
-    EventRisk: EventRiskType = null,
-    EventType: EventType = null
-  ): AuthEventType = {
+  def apply(): AuthEventType = {
     val __obj = js.Dynamic.literal()
-    if (ChallengeResponses != null) __obj.updateDynamic("ChallengeResponses")(ChallengeResponses.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (EventContextData != null) __obj.updateDynamic("EventContextData")(EventContextData.asInstanceOf[js.Any])
-    if (EventFeedback != null) __obj.updateDynamic("EventFeedback")(EventFeedback.asInstanceOf[js.Any])
-    if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
-    if (EventResponse != null) __obj.updateDynamic("EventResponse")(EventResponse.asInstanceOf[js.Any])
-    if (EventRisk != null) __obj.updateDynamic("EventRisk")(EventRisk.asInstanceOf[js.Any])
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthEventType]
   }
+  @scala.inline
+  implicit class AuthEventTypeOps[Self <: AuthEventType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChallengeResponsesVarargs(value: ChallengeResponseType*): Self = this.set("ChallengeResponses", js.Array(value :_*))
+    @scala.inline
+    def setChallengeResponses(value: ChallengeResponseListType): Self = this.set("ChallengeResponses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChallengeResponses: Self = this.set("ChallengeResponses", js.undefined)
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setEventContextData(value: EventContextDataType): Self = this.set("EventContextData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventContextData: Self = this.set("EventContextData", js.undefined)
+    @scala.inline
+    def setEventFeedback(value: EventFeedbackType): Self = this.set("EventFeedback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventFeedback: Self = this.set("EventFeedback", js.undefined)
+    @scala.inline
+    def setEventId(value: StringType): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("EventId", js.undefined)
+    @scala.inline
+    def setEventResponse(value: EventResponseType): Self = this.set("EventResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventResponse: Self = this.set("EventResponse", js.undefined)
+    @scala.inline
+    def setEventRisk(value: EventRiskType): Self = this.set("EventRisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventRisk: Self = this.set("EventRisk", js.undefined)
+    @scala.inline
+    def setEventType(value: EventType): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("EventType", js.undefined)
+  }
+  
 }
 

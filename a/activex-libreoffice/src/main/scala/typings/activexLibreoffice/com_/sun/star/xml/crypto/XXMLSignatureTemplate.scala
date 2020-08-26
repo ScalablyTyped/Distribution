@@ -19,17 +19,18 @@ import scala.scalajs.js.annotation._
   *
   * Owner: Andrew Fan
   */
+@js.native
 trait XXMLSignatureTemplate extends XXMLSecurityTemplate {
   /** Get the dynamic URI binding */
-  var Binding: XUriBinding
+  var Binding: XUriBinding = js.native
   /** Get the target XML element, i.e. the element to be signed */
-  val Targets: SafeArray[XXMLElementWrapper]
+  val Targets: SafeArray[XXMLElementWrapper] = js.native
   /** Get the dynamic URI binding */
-  def getBinding(): XUriBinding
+  def getBinding(): XUriBinding = js.native
   /** Get the target XML element, i.e. the element to be signed */
-  def getTargets(): SafeArray[XXMLElementWrapper]
+  def getTargets(): SafeArray[XXMLElementWrapper] = js.native
   /** Set the dynamic URI binding */
-  def setBinding(aUriBinding: XUriBinding): Unit
+  def setBinding(aUriBinding: XUriBinding): Unit = js.native
 }
 
 object XXMLSignatureTemplate {
@@ -54,5 +55,28 @@ object XXMLSignatureTemplate {
     val __obj = js.Dynamic.literal(Binding = Binding.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Targets = Targets.asInstanceOf[js.Any], Template = Template.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getBinding = js.Any.fromFunction0(getBinding), getStatus = js.Any.fromFunction0(getStatus), getTargets = js.Any.fromFunction0(getTargets), getTemplate = js.Any.fromFunction0(getTemplate), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setBinding = js.Any.fromFunction1(setBinding), setStatus = js.Any.fromFunction1(setStatus), setTarget = js.Any.fromFunction1(setTarget), setTemplate = js.Any.fromFunction1(setTemplate))
     __obj.asInstanceOf[XXMLSignatureTemplate]
   }
+  @scala.inline
+  implicit class XXMLSignatureTemplateOps[Self <: XXMLSignatureTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinding(value: XUriBinding): Self = this.set("Binding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargets(value: SafeArray[XXMLElementWrapper]): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetBinding(value: () => XUriBinding): Self = this.set("getBinding", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetTargets(value: () => SafeArray[XXMLElementWrapper]): Self = this.set("getTargets", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetBinding(value: XUriBinding => Unit): Self = this.set("setBinding", js.Any.fromFunction1(value))
+  }
+  
 }
 

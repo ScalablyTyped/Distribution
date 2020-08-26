@@ -12,8 +12,13 @@ import scala.scalajs.js.annotation._
 trait prng
   extends Instantiable0[prng]
      with Instantiable1[/* seed */ String, prng]
-     with Instantiable2[/* seed */ String, /* options */ seedRandomOptions, prng]
-     with Instantiable3[/* seed */ String, /* options */ seedRandomOptions, /* callback */ js.Any, prng] {
+     with Instantiable2[js.UndefOr[/* seed */ String], /* options */ seedRandomOptions, prng]
+     with Instantiable3[
+      js.UndefOr[/* seed */ String], 
+      js.UndefOr[/* options */ seedRandomOptions], 
+      /* callback */ js.Any, 
+      prng
+    ] {
   def apply(): Double = js.native
   def double(): Double = js.native
   def int32(): Double = js.native

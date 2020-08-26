@@ -4,48 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQEditRangeSliderOptions extends JQNumericRangeSliderOptions {
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object JQEditRangeSliderOptions {
   @scala.inline
-  def apply(
-    arrows: js.UndefOr[Boolean] = js.undefined,
-    bounds: JQRangeSliderNumericRange = null,
-    defaultValues: JQRangeSliderNumericRange = null,
-    delayOut: js.UndefOr[Double] = js.undefined,
-    durationIn: js.UndefOr[Double] = js.undefined,
-    durationOut: js.UndefOr[Double] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    formatter: /* int */ Double => String = null,
-    range: Boolean | JQRangeSliderRangeLength = null,
-    scales: js.Array[jQRangeSliderScale] = null,
-    step: js.UndefOr[Double] = js.undefined,
-    symmetricPositionning: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    valueLabels: String = null,
-    wheelMode: String = null,
-    wheelSpeed: js.UndefOr[Double] = js.undefined
-  ): JQEditRangeSliderOptions = {
+  def apply(): JQEditRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows.get.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (defaultValues != null) __obj.updateDynamic("defaultValues")(defaultValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayOut)) __obj.updateDynamic("delayOut")(delayOut.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationIn)) __obj.updateDynamic("durationIn")(durationIn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationOut)) __obj.updateDynamic("durationOut")(durationOut.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(symmetricPositionning)) __obj.updateDynamic("symmetricPositionning")(symmetricPositionning.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (valueLabels != null) __obj.updateDynamic("valueLabels")(valueLabels.asInstanceOf[js.Any])
-    if (wheelMode != null) __obj.updateDynamic("wheelMode")(wheelMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(wheelSpeed)) __obj.updateDynamic("wheelSpeed")(wheelSpeed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQEditRangeSliderOptions]
   }
+  @scala.inline
+  implicit class JQEditRangeSliderOptionsOps[Self <: JQEditRangeSliderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

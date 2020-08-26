@@ -44,10 +44,38 @@ trait ZoneDelegate extends js.Object {
   def hasTask(targetZone: Zone, isEmpty: HasTaskState): Unit = js.native
   def intercept(targetZone: Zone, callback: js.Function, source: String): js.Function = js.native
   def invoke(targetZone: Zone, callback: js.Function): js.Any = js.native
+  def invoke(
+    targetZone: Zone,
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.UndefOr[scala.Nothing],
+    source: String
+  ): js.Any = js.native
+  def invoke(
+    targetZone: Zone,
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_]
+  ): js.Any = js.native
+  def invoke(
+    targetZone: Zone,
+    callback: js.Function,
+    applyThis: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[_],
+    source: String
+  ): js.Any = js.native
   def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any): js.Any = js.native
+  def invoke(
+    targetZone: Zone,
+    callback: js.Function,
+    applyThis: js.Any,
+    applyArgs: js.UndefOr[scala.Nothing],
+    source: String
+  ): js.Any = js.native
   def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): js.Any = js.native
   def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_], source: String): js.Any = js.native
   def invokeTask(targetZone: Zone, task: Task): js.Any = js.native
+  def invokeTask(targetZone: Zone, task: Task, applyThis: js.UndefOr[scala.Nothing], applyArgs: js.Array[_]): js.Any = js.native
   def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any): js.Any = js.native
   def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any, applyArgs: js.Array[_]): js.Any = js.native
   def scheduleTask(targetZone: Zone, task: Task): Task = js.native

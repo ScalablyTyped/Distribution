@@ -17,10 +17,28 @@ trait SchemaMultipleChoiceQuestion extends js.Object {
 
 object SchemaMultipleChoiceQuestion {
   @scala.inline
-  def apply(choices: js.Array[String] = null): SchemaMultipleChoiceQuestion = {
+  def apply(): SchemaMultipleChoiceQuestion = {
     val __obj = js.Dynamic.literal()
-    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMultipleChoiceQuestion]
   }
+  @scala.inline
+  implicit class SchemaMultipleChoiceQuestionOps[Self <: SchemaMultipleChoiceQuestion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChoicesVarargs(value: String*): Self = this.set("choices", js.Array(value :_*))
+    @scala.inline
+    def setChoices(value: js.Array[String]): Self = this.set("choices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChoices: Self = this.set("choices", js.undefined)
+  }
+  
 }
 

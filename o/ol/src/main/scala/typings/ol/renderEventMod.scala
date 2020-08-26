@@ -23,7 +23,30 @@ object renderEventMod extends js.Object {
   class default protected () extends RenderEvent {
     def this(`type`: EventType) = this()
     def this(`type`: EventType, opt_inversePixelTransform: Transform) = this()
+    def this(
+      `type`: EventType,
+      opt_inversePixelTransform: js.UndefOr[scala.Nothing],
+      opt_frameState: FrameState
+    ) = this()
     def this(`type`: EventType, opt_inversePixelTransform: Transform, opt_frameState: FrameState) = this()
+    def this(
+      `type`: EventType,
+      opt_inversePixelTransform: js.UndefOr[scala.Nothing],
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: CanvasRenderingContext2D
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_inversePixelTransform: js.UndefOr[scala.Nothing],
+      opt_frameState: FrameState,
+      opt_context: CanvasRenderingContext2D
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_inversePixelTransform: Transform,
+      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_context: CanvasRenderingContext2D
+    ) = this()
     def this(
       `type`: EventType,
       opt_inversePixelTransform: Transform,

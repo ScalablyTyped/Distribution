@@ -136,6 +136,7 @@ trait DynamicView[E /* <: js.Object */] extends LokiEventEmitter {
     * @returns A copy of the internal resultset for branched queries.
     */
   def branchResultset(): Resultset[_] = js.native
+  def branchResultset(transform: js.UndefOr[scala.Nothing], parameters: js.Object): Resultset[_] = js.native
   def branchResultset(transform: String): Resultset[_] = js.native
   def branchResultset(transform: String, parameters: js.Object): Resultset[_] = js.native
   def branchResultset(transform: js.Array[String | Transform]): Resultset[_] = js.native

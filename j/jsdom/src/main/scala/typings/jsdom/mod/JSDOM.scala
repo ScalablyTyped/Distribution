@@ -15,8 +15,8 @@ class JSDOM () extends js.Object {
   def this(html: String) = this()
   def this(html: BinaryData) = this()
   def this(html: Buffer) = this()
+  def this(html: js.UndefOr[BinaryData], options: ConstructorOptions) = this()
   def this(html: String, options: ConstructorOptions) = this()
-  def this(html: BinaryData, options: ConstructorOptions) = this()
   def this(html: Buffer, options: ConstructorOptions) = this()
   val cookieJar: CookieJar = js.native
   val virtualConsole: VirtualConsole = js.native

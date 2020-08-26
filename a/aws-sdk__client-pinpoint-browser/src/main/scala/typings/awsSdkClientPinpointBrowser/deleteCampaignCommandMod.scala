@@ -26,16 +26,9 @@ object deleteCampaignCommandMod extends js.Object {
           Blob
         ] {
     def this(input: DeleteCampaignInput) = this()
-    /* CompleteClass */
-    override val input: DeleteCampaignInput = js.native
     val middlewareStack: MiddlewareStack[DeleteCampaignInput, DeleteCampaignOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[DeleteCampaignInput, DeleteCampaignOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[DeleteCampaignInput, DeleteCampaignOutput] = js.native
   }

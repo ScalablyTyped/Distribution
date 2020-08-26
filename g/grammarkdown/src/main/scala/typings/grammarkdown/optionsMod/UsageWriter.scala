@@ -13,6 +13,7 @@ class UsageWriter protected () extends js.Object {
   var padding: js.Any = js.native
   var remainder: js.Any = js.native
   def writeOption(): Unit = js.native
+  def writeOption(left: js.UndefOr[scala.Nothing], right: String): Unit = js.native
   def writeOption(left: String): Unit = js.native
   def writeOption(left: String, right: String): Unit = js.native
   def writeln(): Unit = js.native

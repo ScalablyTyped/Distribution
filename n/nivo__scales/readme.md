@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__scales
 
-Typings are for version 0.61.0
+Typings are for version 0.62.0
 
 ## Library description:
 [![version](https://img.shields.io/npm/v/@nivo/scales.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/scales)
@@ -10,9 +10,9 @@ Typings are for version 0.61.0
 | ------------------ | :-------------: |
 | Full name          | @nivo/scales |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 20 |
 | # dependents       | 7 |
-| # downloads        | 630848 |
+| # downloads        | 687994 |
 | # stars            | 0 |
 
 ## Links

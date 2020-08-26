@@ -22,10 +22,30 @@ trait EnableVgwRoutePropagationRequest extends js.Object {
 
 object EnableVgwRoutePropagationRequest {
   @scala.inline
-  def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId, DryRun: js.UndefOr[Boolean] = js.undefined): EnableVgwRoutePropagationRequest = {
+  def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId): EnableVgwRoutePropagationRequest = {
     val __obj = js.Dynamic.literal(GatewayId = GatewayId.asInstanceOf[js.Any], RouteTableId = RouteTableId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableVgwRoutePropagationRequest]
   }
+  @scala.inline
+  implicit class EnableVgwRoutePropagationRequestOps[Self <: EnableVgwRoutePropagationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayId(value: VpnGatewayId): Self = this.set("GatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRouteTableId(value: RouteTableId): Self = this.set("RouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

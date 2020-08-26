@@ -43,10 +43,10 @@ class ClientTemplate protected () extends Element {
     * In version 8.3.0: introduced
     */
   def fallback: Text = js.native
-  def fallback(newValue: Text): js.Any = js.native
+  def fallback_=(newValue: Text): Unit = js.native
   def parameters: IList[ClientTemplateParameter] = js.native
   def template: Text = js.native
-  def template(newValue: Text): js.Any = js.native
+  def template_=(newValue: Text): Unit = js.native
 }
 
 /* static members */
@@ -121,6 +121,15 @@ object ClientTemplate extends js.Object {
     *  7.18.0 and higher
     */
   def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = js.native
+  /**
+    * Creates and returns a new ClientTemplate instance in the SDK and on the server.
+    * The new ClientTemplate will be automatically stored in the 'screenReaderLabel' property
+    * of the parent InputWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  8.12.0 and higher
+    */
+  def createInInputWidgetUnderScreenReaderLabel(container: InputWidget): ClientTemplate = js.native
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
     * The new ClientTemplate will be automatically stored in the 'alternativeText' property

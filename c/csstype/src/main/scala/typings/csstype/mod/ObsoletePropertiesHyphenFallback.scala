@@ -1,823 +1,784 @@
 package typings.csstype.mod
 
+import typings.csstype.mod.Property.Animation
+import typings.csstype.mod.Property.AnimationDelay
+import typings.csstype.mod.Property.AnimationDirection
+import typings.csstype.mod.Property.AnimationDuration
+import typings.csstype.mod.Property.AnimationFillMode
+import typings.csstype.mod.Property.AnimationIterationCount
+import typings.csstype.mod.Property.AnimationName
+import typings.csstype.mod.Property.AnimationPlayState
+import typings.csstype.mod.Property.AnimationTimingFunction
+import typings.csstype.mod.Property.BackgroundClip
+import typings.csstype.mod.Property.BackgroundOrigin
+import typings.csstype.mod.Property.BackgroundSize
+import typings.csstype.mod.Property.BorderBottomLeftRadius
+import typings.csstype.mod.Property.BorderBottomRightRadius
+import typings.csstype.mod.Property.BorderImage
+import typings.csstype.mod.Property.BorderRadius
+import typings.csstype.mod.Property.BorderTopLeftRadius
+import typings.csstype.mod.Property.BorderTopRightRadius
+import typings.csstype.mod.Property.BoxAlign
+import typings.csstype.mod.Property.BoxDecorationBreak
+import typings.csstype.mod.Property.BoxDirection
+import typings.csstype.mod.Property.BoxFlex
+import typings.csstype.mod.Property.BoxFlexGroup
+import typings.csstype.mod.Property.BoxLines
+import typings.csstype.mod.Property.BoxOrdinalGroup
+import typings.csstype.mod.Property.BoxOrient
+import typings.csstype.mod.Property.BoxPack
+import typings.csstype.mod.Property.BoxShadow
+import typings.csstype.mod.Property.Clip
+import typings.csstype.mod.Property.FontVariantAlternates
+import typings.csstype.mod.Property.GridColumnGap
+import typings.csstype.mod.Property.GridGap
+import typings.csstype.mod.Property.GridRowGap
+import typings.csstype.mod.Property.ImeMode
+import typings.csstype.mod.Property.InsetBlock
+import typings.csstype.mod.Property.InsetBlockEnd
+import typings.csstype.mod.Property.InsetBlockStart
+import typings.csstype.mod.Property.InsetInline
+import typings.csstype.mod.Property.InsetInlineEnd
+import typings.csstype.mod.Property.InsetInlineStart
+import typings.csstype.mod.Property.LineBreak
+import typings.csstype.mod.Property.MozBinding
+import typings.csstype.mod.Property.MozOutlineRadius
+import typings.csstype.mod.Property.MozUserInput
+import typings.csstype.mod.Property.MsScrollbarTrackColor
+import typings.csstype.mod.Property.Opacity
+import typings.csstype.mod.Property.Outline
+import typings.csstype.mod.Property.OutlineColor
+import typings.csstype.mod.Property.OutlineStyle
+import typings.csstype.mod.Property.OutlineWidth
+import typings.csstype.mod.Property.ScrollSnapCoordinate
+import typings.csstype.mod.Property.ScrollSnapDestination
+import typings.csstype.mod.Property.ScrollSnapPointsX
+import typings.csstype.mod.Property.ScrollSnapPointsY
+import typings.csstype.mod.Property.ScrollSnapTypeX
+import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.TextAlignLast
+import typings.csstype.mod.Property.TextCombineUpright
+import typings.csstype.mod.Property.TextDecorationColor
+import typings.csstype.mod.Property.TextDecorationLine
+import typings.csstype.mod.Property.TextDecorationStyle
+import typings.csstype.mod.Property.Transform
+import typings.csstype.mod.Property.Transition
+import typings.csstype.mod.Property.TransitionDelay
+import typings.csstype.mod.Property.TransitionDuration
+import typings.csstype.mod.Property.TransitionProperty
+import typings.csstype.mod.Property.TransitionTimingFunction
+import typings.csstype.mod.Property.UserSelect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
-  /**
-    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `stretch`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-align`: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
-  /**
-    * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
-    *
-    * **Initial value**: `normal`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-direction`: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
-  /**
-    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-flex-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
-    *
-    * **Initial value**: `single`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-lines`: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.undefined
-  /**
-    * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
-    *
-    * **Initial value**: `inline-axis` (`horizontal` in XUL)
-    *
-    * @deprecated
-    */
-  var `-khtml-box-orient`: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
-  /**
-    * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `start`
-    *
-    * @deprecated
-    */
-  var `-khtml-box-pack`: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
-  /**
-    * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `-khtml-line-break`: js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]] = js.undefined
-  /**
-    * The **`opacity`** CSS property sets the transparency of an element or the degree to which content behind an element is visible.
-    *
-    * **Initial value**: `1.0`
-    *
-    * @deprecated
-    */
-  var `-khtml-opacity`: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
-  /**
-    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `-khtml-user-select`: js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]] = js.undefined
-  /**
-    * The **`background-clip`** CSS property sets whether an element's background `<color>` or `<image>` extends underneath its border.
-    *
-    * **Initial value**: `border-box`
-    *
-    * @deprecated
-    */
-  var `-moz-background-clip`: js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]] = js.undefined
-  /**
-    * The **`box-decoration-break`** CSS property specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages.
-    *
-    * **Initial value**: `slice`
-    *
-    * @deprecated
-    */
-  var `-moz-background-inline-policy`: js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]] = js.undefined
-  /**
-    * The **`background-origin`** CSS property sets the _background positioning area_. In other words, it sets the origin position of an image set with the `background-image` property.
-    *
-    * **Initial value**: `padding-box`
-    *
-    * @deprecated
-    */
-  var `-moz-background-origin`: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.undefined
-  /**
-    * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
-    *
-    * **Initial value**: `auto auto`
-    *
-    * @deprecated
-    */
-  var `-moz-background-size`: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
-  /**
-    * The **`-moz-binding`** CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-binding`: js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-border-bottom-colors`: js.UndefOr[MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-left-colors`** CSS property sets a list of colors for the left border.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-border-left-colors`: js.UndefOr[MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]] = js.undefined
-  /**
-    * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
-    *
-    * @deprecated
-    */
-  var `-moz-border-radius`: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-bottom-left-radius`** CSS property rounds the bottom-left corner of an element.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
+/* Inlined {[ P in keyof csstype.csstype.ObsoletePropertiesHyphen<TLength, TTime> ]: csstype.csstype.ObsoletePropertiesHyphen<TLength, TTime>[P] | std.Array<csstype.csstype.ObsoletePropertiesHyphen<TLength, TTime>[P]>} */
+@js.native
+trait ObsoletePropertiesHyphenFallback[TLength, TTime] extends js.Object {
+  var `-khtml-box-align`: js.UndefOr[BoxAlign | js.Array[js.UndefOr[BoxAlign]]] = js.native
+  var `-khtml-box-direction`: js.UndefOr[BoxDirection | js.Array[js.UndefOr[BoxDirection]]] = js.native
+  var `-khtml-box-flex`: js.UndefOr[BoxFlex | js.Array[js.UndefOr[BoxFlex]]] = js.native
+  var `-khtml-box-flex-group`: js.UndefOr[BoxFlexGroup | js.Array[js.UndefOr[BoxFlexGroup]]] = js.native
+  var `-khtml-box-lines`: js.UndefOr[BoxLines | js.Array[js.UndefOr[BoxLines]]] = js.native
+  var `-khtml-box-ordinal-group`: js.UndefOr[BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]] = js.native
+  var `-khtml-box-orient`: js.UndefOr[BoxOrient | js.Array[js.UndefOr[BoxOrient]]] = js.native
+  var `-khtml-box-pack`: js.UndefOr[BoxPack | js.Array[js.UndefOr[BoxPack]]] = js.native
+  var `-khtml-line-break`: js.UndefOr[LineBreak | js.Array[js.UndefOr[LineBreak]]] = js.native
+  var `-khtml-opacity`: js.UndefOr[Opacity | js.Array[js.UndefOr[Opacity]]] = js.native
+  var `-khtml-user-select`: js.UndefOr[UserSelect | js.Array[js.UndefOr[UserSelect]]] = js.native
+  var `-moz-background-clip`: js.UndefOr[BackgroundClip | js.Array[js.UndefOr[BackgroundClip]]] = js.native
+  var `-moz-background-inline-policy`: js.UndefOr[BoxDecorationBreak | js.Array[js.UndefOr[BoxDecorationBreak]]] = js.native
+  var `-moz-background-origin`: js.UndefOr[BackgroundOrigin | js.Array[js.UndefOr[BackgroundOrigin]]] = js.native
+  var `-moz-background-size`: js.UndefOr[BackgroundSize[TLength] | js.Array[js.UndefOr[BackgroundSize[TLength]]]] = js.native
+  var `-moz-binding`: js.UndefOr[MozBinding | js.Array[js.UndefOr[MozBinding]]] = js.native
+  var `-moz-border-radius`: js.UndefOr[BorderRadius[TLength] | js.Array[js.UndefOr[BorderRadius[TLength]]]] = js.native
   var `-moz-border-radius-bottomleft`: js.UndefOr[
-    BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`border-bottom-right-radius`** CSS property rounds the bottom-right corner of an element.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
+    BorderBottomLeftRadius[TLength] | js.Array[js.UndefOr[BorderBottomLeftRadius[TLength]]]
+  ] = js.native
   var `-moz-border-radius-bottomright`: js.UndefOr[
-    BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`border-top-left-radius`** CSS property rounds the top-left corner of an element.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
+    BorderBottomRightRadius[TLength] | js.Array[js.UndefOr[BorderBottomRightRadius[TLength]]]
+  ] = js.native
   var `-moz-border-radius-topleft`: js.UndefOr[
-    BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`border-top-right-radius`** CSS property rounds the top-right corner of an element.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
+    BorderTopLeftRadius[TLength] | js.Array[js.UndefOr[BorderTopLeftRadius[TLength]]]
+  ] = js.native
   var `-moz-border-radius-topright`: js.UndefOr[
-    BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]]
-  ] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-right-colors`** CSS property sets a list of colors for the right border.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-border-right-colors`: js.UndefOr[MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-border-top-colors`** CSS property sets a list of colors for the top border.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-border-top-colors`: js.UndefOr[MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]] = js.undefined
-  /**
-    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `stretch`
-    *
-    * @deprecated
-    */
-  var `-moz-box-align`: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
-  /**
-    * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
-    *
-    * **Initial value**: `normal`
-    *
-    * @deprecated
-    */
-  var `-moz-box-direction`: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
-  /**
-    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
-  var `-moz-box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `-moz-box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
-    *
-    * **Initial value**: `inline-axis` (`horizontal` in XUL)
-    *
-    * @deprecated
-    */
-  var `-moz-box-orient`: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
-  /**
-    * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `start`
-    *
-    * @deprecated
-    */
-  var `-moz-box-pack`: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
-  /**
-    * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-box-shadow`: js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]] = js.undefined
-  /**
-    * The **`opacity`** CSS property sets the transparency of an element or the degree to which content behind an element is visible.
-    *
-    * **Initial value**: `1.0`
-    *
-    * @deprecated
-    */
-  var `-moz-opacity`: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
-  /**
-    * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
-    *
-    * @deprecated
-    */
-  var `-moz-outline`: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.undefined
-  /**
-    * The **`outline-color`** CSS property sets the color of an element's outline.
-    *
-    * **Initial value**: `invert`, for browsers supporting it, `currentColor` for the other
-    *
-    * @deprecated
-    */
-  var `-moz-outline-color`: js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]] = js.undefined
-  /**
-    * In Mozilla applications like Firefox, the **`-moz-outline-radius`** CSS property can be used to give an element's `outline` rounded corners.
-    *
-    * @deprecated
-    */
-  var `-moz-outline-radius`: js.UndefOr[MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]]] = js.undefined
-  /**
-    * The **`outline-style`** CSS property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-outline-style`: js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]] = js.undefined
-  /**
-    * The **`outline-width`** CSS property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
-    *
-    * **Initial value**: `medium`
-    *
-    * @deprecated
-    */
-  var `-moz-outline-width`: js.UndefOr[OutlineWidthProperty[TLength] | js.Array[OutlineWidthProperty[TLength]]] = js.undefined
-  /**
-    * The **`text-align-last`** CSS property sets how the last line of a block or a line, right before a forced line break, is aligned.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `-moz-text-align-last`: js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]] = js.undefined
-  /**
-    * The **`-moz-text-blink`** non-standard Mozilla CSS extension specifies the blink mode.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-text-blink`: js.UndefOr[MozTextBlinkProperty | js.Array[MozTextBlinkProperty]] = js.undefined
-  /**
-    * The **`text-decoration-color`** CSS property sets the color of decorations added to text by `text-decoration-line`.
-    *
-    * **Initial value**: `currentcolor`
-    *
-    * @deprecated
-    */
-  var `-moz-text-decoration-color`: js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]] = js.undefined
-  /**
-    * The **`text-decoration-line`** CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-text-decoration-line`: js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]] = js.undefined
-  /**
-    * The **`text-decoration-style`** CSS property sets the style of the lines specified by `text-decoration-line`. The style applies to all lines that are set with `text-decoration-line`.
-    *
-    * **Initial value**: `solid`
-    *
-    * @deprecated
-    */
-  var `-moz-text-decoration-style`: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.undefined
-  /**
-    * In Mozilla applications, **`-moz-user-input`** determines if an element will accept user input.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `-moz-user-input`: js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]] = js.undefined
-  /**
-    * The **`-moz-window-shadow`** CSS property specifies whether a window will have a shadow. It only works on Mac OS X.
-    *
-    * **Initial value**: `default`
-    *
-    * @deprecated
-    */
-  var `-moz-window-shadow`: js.UndefOr[MozWindowShadowProperty | js.Array[MozWindowShadowProperty]] = js.undefined
-  /**
-    * The **`ime-mode`** CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `-ms-ime-mode`: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
-    *
-    * **Initial value**: `Scrollbar`
-    *
-    * @deprecated
-    */
-  var `-ms-scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
-  /**
-    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
-    *
-    * @deprecated
-    */
-  var `-o-animation`: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
-  /**
-    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
-    *
-    * **Initial value**: `0s`
-    *
-    * @deprecated
-    */
-  var `-o-animation-delay`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
-    *
-    * **Initial value**: `normal`
-    *
-    * @deprecated
-    */
-  var `-o-animation-direction`: js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]] = js.undefined
-  /**
-    * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
-    *
-    * **Initial value**: `0s`
-    *
-    * @deprecated
-    */
-  var `-o-animation-duration`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-o-animation-fill-mode`: js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]] = js.undefined
-  /**
-    * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `-o-animation-iteration-count`: js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]] = js.undefined
-  /**
-    * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-o-animation-name`: js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]] = js.undefined
-  /**
-    * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
-    *
-    * **Initial value**: `running`
-    *
-    * @deprecated
-    */
-  var `-o-animation-play-state`: js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]] = js.undefined
-  /**
-    * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
-    *
-    * **Initial value**: `ease`
-    *
-    * @deprecated
-    */
-  var `-o-animation-timing-function`: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.undefined
-  /**
-    * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
-    *
-    * **Initial value**: `auto auto`
-    *
-    * @deprecated
-    */
-  var `-o-background-size`: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
-    *
-    * @deprecated
-    */
-  var `-o-border-image`: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
-  /**
-    * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-o-transform`: js.UndefOr[TransformProperty | js.Array[TransformProperty]] = js.undefined
-  /**
-    * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
-    *
-    * @deprecated
-    */
-  var `-o-transition`: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
-  /**
-    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
-    *
-    * **Initial value**: `0s`
-    *
-    * @deprecated
-    */
-  var `-o-transition-delay`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
-    *
-    * **Initial value**: `0s`
-    *
-    * @deprecated
-    */
-  var `-o-transition-duration`: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
-  /**
-    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
-    *
-    * **Initial value**: all
-    *
-    * @deprecated
-    */
-  var `-o-transition-property`: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
-  /**
-    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
-    *
-    * **Initial value**: `ease`
-    *
-    * @deprecated
-    */
-  var `-o-transition-timing-function`: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.undefined
-  /**
-    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `stretch`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-align`: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
-  /**
-    * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
-    *
-    * **Initial value**: `normal`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-direction`: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
-  /**
-    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-flex-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
-    *
-    * **Initial value**: `single`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-lines`: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.undefined
-  /**
-    * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
-    *
-    * **Initial value**: `inline-axis` (`horizontal` in XUL)
-    *
-    * @deprecated
-    */
-  var `-webkit-box-orient`: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
-  /**
-    * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `start`
-    *
-    * @deprecated
-    */
-  var `-webkit-box-pack`: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
-  /**
-    * The **`scroll-snap-points-x`** CSS property defines the horizontal positioning of snap points within the content of the scroll container they are applied to.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-webkit-scroll-snap-points-x`: js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]] = js.undefined
-  /**
-    * The **`scroll-snap-points-y`** CSS property defines the vertical positioning of snap points within the content of the scroll container they are applied to.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-webkit-scroll-snap-points-y`: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.undefined
-  /**
-    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `stretch`
-    *
-    * @deprecated
-    */
-  var `box-align`: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
-  /**
-    * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
-    *
-    * **Initial value**: `normal`
-    *
-    * @deprecated
-    */
-  var `box-direction`: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
-  /**
-    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
-  var `box-flex`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `box-flex-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
-    *
-    * **Initial value**: `single`
-    *
-    * @deprecated
-    */
-  var `box-lines`: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.undefined
-  /**
-    * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
-    *
-    * **Initial value**: `1`
-    *
-    * @deprecated
-    */
-  var `box-ordinal-group`: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  /**
-    * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
-    *
-    * **Initial value**: `inline-axis` (`horizontal` in XUL)
-    *
-    * @deprecated
-    */
-  var `box-orient`: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
-  /**
-    * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
-    *
-    * **Initial value**: `start`
-    *
-    * @deprecated
-    */
-  var `box-pack`: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
-  /**
-    * The **`clip`** CSS property defines what portion of an element is visible. The `clip` property applies only to absolutely positioned elements, that is elements with `position:absolute` or `position:fixed`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var clip: js.UndefOr[ClipProperty | js.Array[ClipProperty]] = js.undefined
-  /**
-    * The **`font-variant-alternates`** CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in `@font-feature-values`.
-    *
-    * **Initial value**: `normal`
-    *
-    * @deprecated
-    */
-  var `font-variant-alternates`: js.UndefOr[FontVariantAlternatesProperty | js.Array[FontVariantAlternatesProperty]] = js.undefined
-  /**
-    * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
-  var `grid-column-gap`: js.UndefOr[GridColumnGapProperty[TLength] | js.Array[GridColumnGapProperty[TLength]]] = js.undefined
-  /**
-    * The **`gap`** CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
-    *
-    * @deprecated
-    */
-  var `grid-gap`: js.UndefOr[GridGapProperty[TLength] | js.Array[GridGapProperty[TLength]]] = js.undefined
-  /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
-    *
-    * **Initial value**: `0`
-    *
-    * @deprecated
-    */
-  var `grid-row-gap`: js.UndefOr[GridRowGapProperty[TLength] | js.Array[GridRowGapProperty[TLength]]] = js.undefined
-  /**
-    * The **`ime-mode`** CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `ime-mode`: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.undefined
-  /**
-    * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `offset-block`: js.UndefOr[InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]]] = js.undefined
-  /**
-    * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `offset-block-end`: js.UndefOr[InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`inset-block-start`** CSS property defines the logical block start offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `offset-block-start`: js.UndefOr[InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]]] = js.undefined
-  /**
-    * The **`inset-inline`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `offset-inline`: js.UndefOr[InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]]] = js.undefined
-  /**
-    * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `offset-inline-end`: js.UndefOr[InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`inset-inline-start`** CSS property defines the logical inline start inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
-    *
-    * **Initial value**: `auto`
-    *
-    * @deprecated
-    */
-  var `offset-inline-start`: js.UndefOr[InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]]] = js.undefined
-  /**
-    * The **`scroll-snap-coordinate`** CSS property defines the x and y coordinate positions within an element that will align with its nearest ancestor scroll container's `scroll-snap-destination` for each respective axis.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
+    BorderTopRightRadius[TLength] | js.Array[js.UndefOr[BorderTopRightRadius[TLength]]]
+  ] = js.native
+  var `-moz-box-align`: js.UndefOr[BoxAlign | js.Array[js.UndefOr[BoxAlign]]] = js.native
+  var `-moz-box-direction`: js.UndefOr[BoxDirection | js.Array[js.UndefOr[BoxDirection]]] = js.native
+  var `-moz-box-flex`: js.UndefOr[BoxFlex | js.Array[js.UndefOr[BoxFlex]]] = js.native
+  var `-moz-box-ordinal-group`: js.UndefOr[BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]] = js.native
+  var `-moz-box-orient`: js.UndefOr[BoxOrient | js.Array[js.UndefOr[BoxOrient]]] = js.native
+  var `-moz-box-pack`: js.UndefOr[BoxPack | js.Array[js.UndefOr[BoxPack]]] = js.native
+  var `-moz-box-shadow`: js.UndefOr[BoxShadow | js.Array[js.UndefOr[BoxShadow]]] = js.native
+  var `-moz-opacity`: js.UndefOr[Opacity | js.Array[js.UndefOr[Opacity]]] = js.native
+  var `-moz-outline`: js.UndefOr[Outline[TLength] | js.Array[js.UndefOr[Outline[TLength]]]] = js.native
+  var `-moz-outline-color`: js.UndefOr[OutlineColor | js.Array[js.UndefOr[OutlineColor]]] = js.native
+  var `-moz-outline-radius`: js.UndefOr[MozOutlineRadius[TLength] | js.Array[js.UndefOr[MozOutlineRadius[TLength]]]] = js.native
+  var `-moz-outline-style`: js.UndefOr[OutlineStyle | js.Array[js.UndefOr[OutlineStyle]]] = js.native
+  var `-moz-outline-width`: js.UndefOr[OutlineWidth[TLength] | js.Array[js.UndefOr[OutlineWidth[TLength]]]] = js.native
+  var `-moz-text-align-last`: js.UndefOr[TextAlignLast | js.Array[js.UndefOr[TextAlignLast]]] = js.native
+  var `-moz-text-decoration-color`: js.UndefOr[TextDecorationColor | js.Array[js.UndefOr[TextDecorationColor]]] = js.native
+  var `-moz-text-decoration-line`: js.UndefOr[TextDecorationLine | js.Array[js.UndefOr[TextDecorationLine]]] = js.native
+  var `-moz-text-decoration-style`: js.UndefOr[TextDecorationStyle | js.Array[js.UndefOr[TextDecorationStyle]]] = js.native
+  var `-moz-user-input`: js.UndefOr[MozUserInput | js.Array[js.UndefOr[MozUserInput]]] = js.native
+  var `-ms-ime-mode`: js.UndefOr[ImeMode | js.Array[js.UndefOr[ImeMode]]] = js.native
+  var `-ms-scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColor | js.Array[js.UndefOr[MsScrollbarTrackColor]]] = js.native
+  var `-o-animation`: js.UndefOr[Animation[TTime] | js.Array[js.UndefOr[Animation[TTime]]]] = js.native
+  var `-o-animation-delay`: js.UndefOr[AnimationDelay[TTime] | js.Array[js.UndefOr[AnimationDelay[TTime]]]] = js.native
+  var `-o-animation-direction`: js.UndefOr[AnimationDirection | js.Array[js.UndefOr[AnimationDirection]]] = js.native
+  var `-o-animation-duration`: js.UndefOr[AnimationDuration[TTime] | js.Array[js.UndefOr[AnimationDuration[TTime]]]] = js.native
+  var `-o-animation-fill-mode`: js.UndefOr[AnimationFillMode | js.Array[js.UndefOr[AnimationFillMode]]] = js.native
+  var `-o-animation-iteration-count`: js.UndefOr[AnimationIterationCount | js.Array[js.UndefOr[AnimationIterationCount]]] = js.native
+  var `-o-animation-name`: js.UndefOr[AnimationName | js.Array[js.UndefOr[AnimationName]]] = js.native
+  var `-o-animation-play-state`: js.UndefOr[AnimationPlayState | js.Array[js.UndefOr[AnimationPlayState]]] = js.native
+  var `-o-animation-timing-function`: js.UndefOr[AnimationTimingFunction | js.Array[js.UndefOr[AnimationTimingFunction]]] = js.native
+  var `-o-background-size`: js.UndefOr[BackgroundSize[TLength] | js.Array[js.UndefOr[BackgroundSize[TLength]]]] = js.native
+  var `-o-border-image`: js.UndefOr[BorderImage | js.Array[js.UndefOr[BorderImage]]] = js.native
+  var `-o-transform`: js.UndefOr[Transform | js.Array[js.UndefOr[Transform]]] = js.native
+  var `-o-transition`: js.UndefOr[Transition[TTime] | js.Array[js.UndefOr[Transition[TTime]]]] = js.native
+  var `-o-transition-delay`: js.UndefOr[TransitionDelay[TTime] | js.Array[js.UndefOr[TransitionDelay[TTime]]]] = js.native
+  var `-o-transition-duration`: js.UndefOr[TransitionDuration[TTime] | js.Array[js.UndefOr[TransitionDuration[TTime]]]] = js.native
+  var `-o-transition-property`: js.UndefOr[TransitionProperty | js.Array[js.UndefOr[TransitionProperty]]] = js.native
+  var `-o-transition-timing-function`: js.UndefOr[TransitionTimingFunction | js.Array[js.UndefOr[TransitionTimingFunction]]] = js.native
+  var `-webkit-box-align`: js.UndefOr[BoxAlign | js.Array[js.UndefOr[BoxAlign]]] = js.native
+  var `-webkit-box-direction`: js.UndefOr[BoxDirection | js.Array[js.UndefOr[BoxDirection]]] = js.native
+  var `-webkit-box-flex`: js.UndefOr[BoxFlex | js.Array[js.UndefOr[BoxFlex]]] = js.native
+  var `-webkit-box-flex-group`: js.UndefOr[BoxFlexGroup | js.Array[js.UndefOr[BoxFlexGroup]]] = js.native
+  var `-webkit-box-lines`: js.UndefOr[BoxLines | js.Array[js.UndefOr[BoxLines]]] = js.native
+  var `-webkit-box-ordinal-group`: js.UndefOr[BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]] = js.native
+  var `-webkit-box-orient`: js.UndefOr[BoxOrient | js.Array[js.UndefOr[BoxOrient]]] = js.native
+  var `-webkit-box-pack`: js.UndefOr[BoxPack | js.Array[js.UndefOr[BoxPack]]] = js.native
+  var `-webkit-scroll-snap-points-x`: js.UndefOr[ScrollSnapPointsX | js.Array[js.UndefOr[ScrollSnapPointsX]]] = js.native
+  var `-webkit-scroll-snap-points-y`: js.UndefOr[ScrollSnapPointsY | js.Array[js.UndefOr[ScrollSnapPointsY]]] = js.native
+  var `box-align`: js.UndefOr[BoxAlign | js.Array[js.UndefOr[BoxAlign]]] = js.native
+  var `box-direction`: js.UndefOr[BoxDirection | js.Array[js.UndefOr[BoxDirection]]] = js.native
+  var `box-flex`: js.UndefOr[BoxFlex | js.Array[js.UndefOr[BoxFlex]]] = js.native
+  var `box-flex-group`: js.UndefOr[BoxFlexGroup | js.Array[js.UndefOr[BoxFlexGroup]]] = js.native
+  var `box-lines`: js.UndefOr[BoxLines | js.Array[js.UndefOr[BoxLines]]] = js.native
+  var `box-ordinal-group`: js.UndefOr[BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]] = js.native
+  var `box-orient`: js.UndefOr[BoxOrient | js.Array[js.UndefOr[BoxOrient]]] = js.native
+  var `box-pack`: js.UndefOr[BoxPack | js.Array[js.UndefOr[BoxPack]]] = js.native
+  var clip: js.UndefOr[Clip | js.Array[js.UndefOr[Clip]]] = js.native
+  var `font-variant-alternates`: js.UndefOr[FontVariantAlternates | js.Array[js.UndefOr[FontVariantAlternates]]] = js.native
+  var `grid-column-gap`: js.UndefOr[GridColumnGap[TLength] | js.Array[js.UndefOr[GridColumnGap[TLength]]]] = js.native
+  var `grid-gap`: js.UndefOr[GridGap[TLength] | js.Array[js.UndefOr[GridGap[TLength]]]] = js.native
+  var `grid-row-gap`: js.UndefOr[GridRowGap[TLength] | js.Array[js.UndefOr[GridRowGap[TLength]]]] = js.native
+  var `ime-mode`: js.UndefOr[ImeMode | js.Array[js.UndefOr[ImeMode]]] = js.native
+  var `offset-block`: js.UndefOr[InsetBlock[TLength] | js.Array[js.UndefOr[InsetBlock[TLength]]]] = js.native
+  var `offset-block-end`: js.UndefOr[InsetBlockEnd[TLength] | js.Array[js.UndefOr[InsetBlockEnd[TLength]]]] = js.native
+  var `offset-block-start`: js.UndefOr[InsetBlockStart[TLength] | js.Array[js.UndefOr[InsetBlockStart[TLength]]]] = js.native
+  var `offset-inline`: js.UndefOr[InsetInline[TLength] | js.Array[js.UndefOr[InsetInline[TLength]]]] = js.native
+  var `offset-inline-end`: js.UndefOr[InsetInlineEnd[TLength] | js.Array[js.UndefOr[InsetInlineEnd[TLength]]]] = js.native
+  var `offset-inline-start`: js.UndefOr[InsetInlineStart[TLength] | js.Array[js.UndefOr[InsetInlineStart[TLength]]]] = js.native
   var `scroll-snap-coordinate`: js.UndefOr[
-    ScrollSnapCoordinateProperty[TLength] | js.Array[ScrollSnapCoordinateProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`scroll-snap-destination`** CSS property defines the position in x and y coordinates within the scroll container's visual viewport which element snap points align with.
-    *
-    * **Initial value**: `0px 0px`
-    *
-    * @deprecated
-    */
+    ScrollSnapCoordinate[TLength] | js.Array[js.UndefOr[ScrollSnapCoordinate[TLength]]]
+  ] = js.native
   var `scroll-snap-destination`: js.UndefOr[
-    ScrollSnapDestinationProperty[TLength] | js.Array[ScrollSnapDestinationProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`scroll-snap-points-x`** CSS property defines the horizontal positioning of snap points within the content of the scroll container they are applied to.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `scroll-snap-points-x`: js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]] = js.undefined
-  /**
-    * The **`scroll-snap-points-y`** CSS property defines the vertical positioning of snap points within the content of the scroll container they are applied to.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `scroll-snap-points-y`: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.undefined
-  /**
-    * The **`scroll-snap-type-x`** CSS property defines how strictly snap points are enforced on the horizontal axis of the scroll container in case there is one.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `scroll-snap-type-x`: js.UndefOr[ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty]] = js.undefined
-  /**
-    * The **`scroll-snap-type-y`** CSS property defines how strictly snap points are enforced on the vertical axis of the scroll container in case there is one.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `scroll-snap-type-y`: js.UndefOr[ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty]] = js.undefined
-  /**
-    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
-    *
-    * **Initial value**: `Scrollbar`
-    *
-    * @deprecated
-    */
-  var `scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
-  /**
-    * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `text-combine-horizontal`: js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]] = js.undefined
+    ScrollSnapDestination[TLength] | js.Array[js.UndefOr[ScrollSnapDestination[TLength]]]
+  ] = js.native
+  var `scroll-snap-points-x`: js.UndefOr[ScrollSnapPointsX | js.Array[js.UndefOr[ScrollSnapPointsX]]] = js.native
+  var `scroll-snap-points-y`: js.UndefOr[ScrollSnapPointsY | js.Array[js.UndefOr[ScrollSnapPointsY]]] = js.native
+  var `scroll-snap-type-x`: js.UndefOr[ScrollSnapTypeX | js.Array[js.UndefOr[ScrollSnapTypeX]]] = js.native
+  var `scroll-snap-type-y`: js.UndefOr[ScrollSnapTypeY | js.Array[js.UndefOr[ScrollSnapTypeY]]] = js.native
+  var `scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColor | js.Array[js.UndefOr[MsScrollbarTrackColor]]] = js.native
+  var `text-combine-horizontal`: js.UndefOr[TextCombineUpright | js.Array[js.UndefOr[TextCombineUpright]]] = js.native
+}
+
+object ObsoletePropertiesHyphenFallback {
+  @scala.inline
+  def apply[TLength, TTime](): ObsoletePropertiesHyphenFallback[TLength, TTime] = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ObsoletePropertiesHyphenFallback[TLength, TTime]]
+  }
+  @scala.inline
+  implicit class ObsoletePropertiesHyphenFallbackOps[Self <: ObsoletePropertiesHyphenFallback[_, _], TLength, TTime] (val x: Self with (ObsoletePropertiesHyphenFallback[TLength, TTime])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `set-khtml-box-alignVarargs`(value: js.UndefOr[BoxAlign]*): Self = this.set("-khtml-box-align", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-align`(value: BoxAlign | js.Array[js.UndefOr[BoxAlign]]): Self = this.set("-khtml-box-align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-align`: Self = this.set("-khtml-box-align", js.undefined)
+    @scala.inline
+    def `set-khtml-box-directionVarargs`(value: js.UndefOr[BoxDirection]*): Self = this.set("-khtml-box-direction", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-direction`(value: BoxDirection | js.Array[js.UndefOr[BoxDirection]]): Self = this.set("-khtml-box-direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-direction`: Self = this.set("-khtml-box-direction", js.undefined)
+    @scala.inline
+    def `set-khtml-box-flexVarargs`(value: js.UndefOr[BoxFlex]*): Self = this.set("-khtml-box-flex", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-flex`(value: BoxFlex | js.Array[js.UndefOr[BoxFlex]]): Self = this.set("-khtml-box-flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-flex`: Self = this.set("-khtml-box-flex", js.undefined)
+    @scala.inline
+    def `set-khtml-box-flex-groupVarargs`(value: js.UndefOr[BoxFlexGroup]*): Self = this.set("-khtml-box-flex-group", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-flex-group`(value: BoxFlexGroup | js.Array[js.UndefOr[BoxFlexGroup]]): Self = this.set("-khtml-box-flex-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-flex-group`: Self = this.set("-khtml-box-flex-group", js.undefined)
+    @scala.inline
+    def `set-khtml-box-linesVarargs`(value: js.UndefOr[BoxLines]*): Self = this.set("-khtml-box-lines", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-lines`(value: BoxLines | js.Array[js.UndefOr[BoxLines]]): Self = this.set("-khtml-box-lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-lines`: Self = this.set("-khtml-box-lines", js.undefined)
+    @scala.inline
+    def `set-khtml-box-ordinal-groupVarargs`(value: js.UndefOr[BoxOrdinalGroup]*): Self = this.set("-khtml-box-ordinal-group", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-ordinal-group`(value: BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]): Self = this.set("-khtml-box-ordinal-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-ordinal-group`: Self = this.set("-khtml-box-ordinal-group", js.undefined)
+    @scala.inline
+    def `set-khtml-box-orientVarargs`(value: js.UndefOr[BoxOrient]*): Self = this.set("-khtml-box-orient", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-orient`(value: BoxOrient | js.Array[js.UndefOr[BoxOrient]]): Self = this.set("-khtml-box-orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-orient`: Self = this.set("-khtml-box-orient", js.undefined)
+    @scala.inline
+    def `set-khtml-box-packVarargs`(value: js.UndefOr[BoxPack]*): Self = this.set("-khtml-box-pack", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-box-pack`(value: BoxPack | js.Array[js.UndefOr[BoxPack]]): Self = this.set("-khtml-box-pack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-box-pack`: Self = this.set("-khtml-box-pack", js.undefined)
+    @scala.inline
+    def `set-khtml-line-breakVarargs`(value: js.UndefOr[LineBreak]*): Self = this.set("-khtml-line-break", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-line-break`(value: LineBreak | js.Array[js.UndefOr[LineBreak]]): Self = this.set("-khtml-line-break", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-line-break`: Self = this.set("-khtml-line-break", js.undefined)
+    @scala.inline
+    def `set-khtml-opacityVarargs`(value: js.UndefOr[Opacity]*): Self = this.set("-khtml-opacity", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-opacity`(value: Opacity | js.Array[js.UndefOr[Opacity]]): Self = this.set("-khtml-opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-opacity`: Self = this.set("-khtml-opacity", js.undefined)
+    @scala.inline
+    def `set-khtml-user-selectVarargs`(value: js.UndefOr[UserSelect]*): Self = this.set("-khtml-user-select", js.Array(value :_*))
+    @scala.inline
+    def `set-khtml-user-select`(value: UserSelect | js.Array[js.UndefOr[UserSelect]]): Self = this.set("-khtml-user-select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-khtml-user-select`: Self = this.set("-khtml-user-select", js.undefined)
+    @scala.inline
+    def `set-moz-background-clipVarargs`(value: js.UndefOr[BackgroundClip]*): Self = this.set("-moz-background-clip", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-background-clip`(value: BackgroundClip | js.Array[js.UndefOr[BackgroundClip]]): Self = this.set("-moz-background-clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-background-clip`: Self = this.set("-moz-background-clip", js.undefined)
+    @scala.inline
+    def `set-moz-background-inline-policyVarargs`(value: js.UndefOr[BoxDecorationBreak]*): Self = this.set("-moz-background-inline-policy", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-background-inline-policy`(value: BoxDecorationBreak | js.Array[js.UndefOr[BoxDecorationBreak]]): Self = this.set("-moz-background-inline-policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-background-inline-policy`: Self = this.set("-moz-background-inline-policy", js.undefined)
+    @scala.inline
+    def `set-moz-background-originVarargs`(value: js.UndefOr[BackgroundOrigin]*): Self = this.set("-moz-background-origin", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-background-origin`(value: BackgroundOrigin | js.Array[js.UndefOr[BackgroundOrigin]]): Self = this.set("-moz-background-origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-background-origin`: Self = this.set("-moz-background-origin", js.undefined)
+    @scala.inline
+    def `set-moz-background-sizeVarargs`(value: js.UndefOr[BackgroundSize[TLength]]*): Self = this.set("-moz-background-size", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-background-size`(value: BackgroundSize[TLength] | js.Array[js.UndefOr[BackgroundSize[TLength]]]): Self = this.set("-moz-background-size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-background-size`: Self = this.set("-moz-background-size", js.undefined)
+    @scala.inline
+    def `set-moz-bindingVarargs`(value: js.UndefOr[MozBinding]*): Self = this.set("-moz-binding", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-binding`(value: MozBinding | js.Array[js.UndefOr[MozBinding]]): Self = this.set("-moz-binding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-binding`: Self = this.set("-moz-binding", js.undefined)
+    @scala.inline
+    def `set-moz-border-radiusVarargs`(value: js.UndefOr[BorderRadius[TLength]]*): Self = this.set("-moz-border-radius", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-border-radius`(value: BorderRadius[TLength] | js.Array[js.UndefOr[BorderRadius[TLength]]]): Self = this.set("-moz-border-radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-border-radius`: Self = this.set("-moz-border-radius", js.undefined)
+    @scala.inline
+    def `set-moz-border-radius-bottomleftVarargs`(value: js.UndefOr[BorderBottomLeftRadius[TLength]]*): Self = this.set("-moz-border-radius-bottomleft", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-border-radius-bottomleft`(value: BorderBottomLeftRadius[TLength] | js.Array[js.UndefOr[BorderBottomLeftRadius[TLength]]]): Self = this.set("-moz-border-radius-bottomleft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-border-radius-bottomleft`: Self = this.set("-moz-border-radius-bottomleft", js.undefined)
+    @scala.inline
+    def `set-moz-border-radius-bottomrightVarargs`(value: js.UndefOr[BorderBottomRightRadius[TLength]]*): Self = this.set("-moz-border-radius-bottomright", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-border-radius-bottomright`(value: BorderBottomRightRadius[TLength] | js.Array[js.UndefOr[BorderBottomRightRadius[TLength]]]): Self = this.set("-moz-border-radius-bottomright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-border-radius-bottomright`: Self = this.set("-moz-border-radius-bottomright", js.undefined)
+    @scala.inline
+    def `set-moz-border-radius-topleftVarargs`(value: js.UndefOr[BorderTopLeftRadius[TLength]]*): Self = this.set("-moz-border-radius-topleft", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-border-radius-topleft`(value: BorderTopLeftRadius[TLength] | js.Array[js.UndefOr[BorderTopLeftRadius[TLength]]]): Self = this.set("-moz-border-radius-topleft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-border-radius-topleft`: Self = this.set("-moz-border-radius-topleft", js.undefined)
+    @scala.inline
+    def `set-moz-border-radius-toprightVarargs`(value: js.UndefOr[BorderTopRightRadius[TLength]]*): Self = this.set("-moz-border-radius-topright", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-border-radius-topright`(value: BorderTopRightRadius[TLength] | js.Array[js.UndefOr[BorderTopRightRadius[TLength]]]): Self = this.set("-moz-border-radius-topright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-border-radius-topright`: Self = this.set("-moz-border-radius-topright", js.undefined)
+    @scala.inline
+    def `set-moz-box-alignVarargs`(value: js.UndefOr[BoxAlign]*): Self = this.set("-moz-box-align", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-align`(value: BoxAlign | js.Array[js.UndefOr[BoxAlign]]): Self = this.set("-moz-box-align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-align`: Self = this.set("-moz-box-align", js.undefined)
+    @scala.inline
+    def `set-moz-box-directionVarargs`(value: js.UndefOr[BoxDirection]*): Self = this.set("-moz-box-direction", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-direction`(value: BoxDirection | js.Array[js.UndefOr[BoxDirection]]): Self = this.set("-moz-box-direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-direction`: Self = this.set("-moz-box-direction", js.undefined)
+    @scala.inline
+    def `set-moz-box-flexVarargs`(value: js.UndefOr[BoxFlex]*): Self = this.set("-moz-box-flex", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-flex`(value: BoxFlex | js.Array[js.UndefOr[BoxFlex]]): Self = this.set("-moz-box-flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-flex`: Self = this.set("-moz-box-flex", js.undefined)
+    @scala.inline
+    def `set-moz-box-ordinal-groupVarargs`(value: js.UndefOr[BoxOrdinalGroup]*): Self = this.set("-moz-box-ordinal-group", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-ordinal-group`(value: BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]): Self = this.set("-moz-box-ordinal-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-ordinal-group`: Self = this.set("-moz-box-ordinal-group", js.undefined)
+    @scala.inline
+    def `set-moz-box-orientVarargs`(value: js.UndefOr[BoxOrient]*): Self = this.set("-moz-box-orient", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-orient`(value: BoxOrient | js.Array[js.UndefOr[BoxOrient]]): Self = this.set("-moz-box-orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-orient`: Self = this.set("-moz-box-orient", js.undefined)
+    @scala.inline
+    def `set-moz-box-packVarargs`(value: js.UndefOr[BoxPack]*): Self = this.set("-moz-box-pack", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-pack`(value: BoxPack | js.Array[js.UndefOr[BoxPack]]): Self = this.set("-moz-box-pack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-pack`: Self = this.set("-moz-box-pack", js.undefined)
+    @scala.inline
+    def `set-moz-box-shadowVarargs`(value: js.UndefOr[BoxShadow]*): Self = this.set("-moz-box-shadow", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-box-shadow`(value: BoxShadow | js.Array[js.UndefOr[BoxShadow]]): Self = this.set("-moz-box-shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-box-shadow`: Self = this.set("-moz-box-shadow", js.undefined)
+    @scala.inline
+    def `set-moz-opacityVarargs`(value: js.UndefOr[Opacity]*): Self = this.set("-moz-opacity", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-opacity`(value: Opacity | js.Array[js.UndefOr[Opacity]]): Self = this.set("-moz-opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-opacity`: Self = this.set("-moz-opacity", js.undefined)
+    @scala.inline
+    def `set-moz-outlineVarargs`(value: js.UndefOr[Outline[TLength]]*): Self = this.set("-moz-outline", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-outline`(value: Outline[TLength] | js.Array[js.UndefOr[Outline[TLength]]]): Self = this.set("-moz-outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-outline`: Self = this.set("-moz-outline", js.undefined)
+    @scala.inline
+    def `set-moz-outline-colorVarargs`(value: js.UndefOr[OutlineColor]*): Self = this.set("-moz-outline-color", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-outline-color`(value: OutlineColor | js.Array[js.UndefOr[OutlineColor]]): Self = this.set("-moz-outline-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-outline-color`: Self = this.set("-moz-outline-color", js.undefined)
+    @scala.inline
+    def `set-moz-outline-radiusVarargs`(value: js.UndefOr[MozOutlineRadius[TLength]]*): Self = this.set("-moz-outline-radius", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-outline-radius`(value: MozOutlineRadius[TLength] | js.Array[js.UndefOr[MozOutlineRadius[TLength]]]): Self = this.set("-moz-outline-radius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-outline-radius`: Self = this.set("-moz-outline-radius", js.undefined)
+    @scala.inline
+    def `set-moz-outline-styleVarargs`(value: js.UndefOr[OutlineStyle]*): Self = this.set("-moz-outline-style", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-outline-style`(value: OutlineStyle | js.Array[js.UndefOr[OutlineStyle]]): Self = this.set("-moz-outline-style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-outline-style`: Self = this.set("-moz-outline-style", js.undefined)
+    @scala.inline
+    def `set-moz-outline-widthVarargs`(value: js.UndefOr[OutlineWidth[TLength]]*): Self = this.set("-moz-outline-width", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-outline-width`(value: OutlineWidth[TLength] | js.Array[js.UndefOr[OutlineWidth[TLength]]]): Self = this.set("-moz-outline-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-outline-width`: Self = this.set("-moz-outline-width", js.undefined)
+    @scala.inline
+    def `set-moz-text-align-lastVarargs`(value: js.UndefOr[TextAlignLast]*): Self = this.set("-moz-text-align-last", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-text-align-last`(value: TextAlignLast | js.Array[js.UndefOr[TextAlignLast]]): Self = this.set("-moz-text-align-last", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-text-align-last`: Self = this.set("-moz-text-align-last", js.undefined)
+    @scala.inline
+    def `set-moz-text-decoration-colorVarargs`(value: js.UndefOr[TextDecorationColor]*): Self = this.set("-moz-text-decoration-color", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-text-decoration-color`(value: TextDecorationColor | js.Array[js.UndefOr[TextDecorationColor]]): Self = this.set("-moz-text-decoration-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-text-decoration-color`: Self = this.set("-moz-text-decoration-color", js.undefined)
+    @scala.inline
+    def `set-moz-text-decoration-lineVarargs`(value: js.UndefOr[TextDecorationLine]*): Self = this.set("-moz-text-decoration-line", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-text-decoration-line`(value: TextDecorationLine | js.Array[js.UndefOr[TextDecorationLine]]): Self = this.set("-moz-text-decoration-line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-text-decoration-line`: Self = this.set("-moz-text-decoration-line", js.undefined)
+    @scala.inline
+    def `set-moz-text-decoration-styleVarargs`(value: js.UndefOr[TextDecorationStyle]*): Self = this.set("-moz-text-decoration-style", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-text-decoration-style`(value: TextDecorationStyle | js.Array[js.UndefOr[TextDecorationStyle]]): Self = this.set("-moz-text-decoration-style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-text-decoration-style`: Self = this.set("-moz-text-decoration-style", js.undefined)
+    @scala.inline
+    def `set-moz-user-inputVarargs`(value: js.UndefOr[MozUserInput]*): Self = this.set("-moz-user-input", js.Array(value :_*))
+    @scala.inline
+    def `set-moz-user-input`(value: MozUserInput | js.Array[js.UndefOr[MozUserInput]]): Self = this.set("-moz-user-input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-moz-user-input`: Self = this.set("-moz-user-input", js.undefined)
+    @scala.inline
+    def `set-ms-ime-modeVarargs`(value: js.UndefOr[ImeMode]*): Self = this.set("-ms-ime-mode", js.Array(value :_*))
+    @scala.inline
+    def `set-ms-ime-mode`(value: ImeMode | js.Array[js.UndefOr[ImeMode]]): Self = this.set("-ms-ime-mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-ms-ime-mode`: Self = this.set("-ms-ime-mode", js.undefined)
+    @scala.inline
+    def `set-ms-scrollbar-track-colorVarargs`(value: js.UndefOr[MsScrollbarTrackColor]*): Self = this.set("-ms-scrollbar-track-color", js.Array(value :_*))
+    @scala.inline
+    def `set-ms-scrollbar-track-color`(value: MsScrollbarTrackColor | js.Array[js.UndefOr[MsScrollbarTrackColor]]): Self = this.set("-ms-scrollbar-track-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-ms-scrollbar-track-color`: Self = this.set("-ms-scrollbar-track-color", js.undefined)
+    @scala.inline
+    def `set-o-animationVarargs`(value: js.UndefOr[Animation[TTime]]*): Self = this.set("-o-animation", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation`(value: Animation[TTime] | js.Array[js.UndefOr[Animation[TTime]]]): Self = this.set("-o-animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation`: Self = this.set("-o-animation", js.undefined)
+    @scala.inline
+    def `set-o-animation-delayVarargs`(value: js.UndefOr[AnimationDelay[TTime]]*): Self = this.set("-o-animation-delay", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-delay`(value: AnimationDelay[TTime] | js.Array[js.UndefOr[AnimationDelay[TTime]]]): Self = this.set("-o-animation-delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-delay`: Self = this.set("-o-animation-delay", js.undefined)
+    @scala.inline
+    def `set-o-animation-directionVarargs`(value: js.UndefOr[AnimationDirection]*): Self = this.set("-o-animation-direction", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-direction`(value: AnimationDirection | js.Array[js.UndefOr[AnimationDirection]]): Self = this.set("-o-animation-direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-direction`: Self = this.set("-o-animation-direction", js.undefined)
+    @scala.inline
+    def `set-o-animation-durationVarargs`(value: js.UndefOr[AnimationDuration[TTime]]*): Self = this.set("-o-animation-duration", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-duration`(value: AnimationDuration[TTime] | js.Array[js.UndefOr[AnimationDuration[TTime]]]): Self = this.set("-o-animation-duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-duration`: Self = this.set("-o-animation-duration", js.undefined)
+    @scala.inline
+    def `set-o-animation-fill-modeVarargs`(value: js.UndefOr[AnimationFillMode]*): Self = this.set("-o-animation-fill-mode", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-fill-mode`(value: AnimationFillMode | js.Array[js.UndefOr[AnimationFillMode]]): Self = this.set("-o-animation-fill-mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-fill-mode`: Self = this.set("-o-animation-fill-mode", js.undefined)
+    @scala.inline
+    def `set-o-animation-iteration-countVarargs`(value: js.UndefOr[AnimationIterationCount]*): Self = this.set("-o-animation-iteration-count", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-iteration-count`(value: AnimationIterationCount | js.Array[js.UndefOr[AnimationIterationCount]]): Self = this.set("-o-animation-iteration-count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-iteration-count`: Self = this.set("-o-animation-iteration-count", js.undefined)
+    @scala.inline
+    def `set-o-animation-nameVarargs`(value: js.UndefOr[AnimationName]*): Self = this.set("-o-animation-name", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-name`(value: AnimationName | js.Array[js.UndefOr[AnimationName]]): Self = this.set("-o-animation-name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-name`: Self = this.set("-o-animation-name", js.undefined)
+    @scala.inline
+    def `set-o-animation-play-stateVarargs`(value: js.UndefOr[AnimationPlayState]*): Self = this.set("-o-animation-play-state", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-play-state`(value: AnimationPlayState | js.Array[js.UndefOr[AnimationPlayState]]): Self = this.set("-o-animation-play-state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-play-state`: Self = this.set("-o-animation-play-state", js.undefined)
+    @scala.inline
+    def `set-o-animation-timing-functionVarargs`(value: js.UndefOr[AnimationTimingFunction]*): Self = this.set("-o-animation-timing-function", js.Array(value :_*))
+    @scala.inline
+    def `set-o-animation-timing-function`(value: AnimationTimingFunction | js.Array[js.UndefOr[AnimationTimingFunction]]): Self = this.set("-o-animation-timing-function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-animation-timing-function`: Self = this.set("-o-animation-timing-function", js.undefined)
+    @scala.inline
+    def `set-o-background-sizeVarargs`(value: js.UndefOr[BackgroundSize[TLength]]*): Self = this.set("-o-background-size", js.Array(value :_*))
+    @scala.inline
+    def `set-o-background-size`(value: BackgroundSize[TLength] | js.Array[js.UndefOr[BackgroundSize[TLength]]]): Self = this.set("-o-background-size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-background-size`: Self = this.set("-o-background-size", js.undefined)
+    @scala.inline
+    def `set-o-border-imageVarargs`(value: js.UndefOr[BorderImage]*): Self = this.set("-o-border-image", js.Array(value :_*))
+    @scala.inline
+    def `set-o-border-image`(value: BorderImage | js.Array[js.UndefOr[BorderImage]]): Self = this.set("-o-border-image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-border-image`: Self = this.set("-o-border-image", js.undefined)
+    @scala.inline
+    def `set-o-transformVarargs`(value: js.UndefOr[Transform]*): Self = this.set("-o-transform", js.Array(value :_*))
+    @scala.inline
+    def `set-o-transform`(value: Transform | js.Array[js.UndefOr[Transform]]): Self = this.set("-o-transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-transform`: Self = this.set("-o-transform", js.undefined)
+    @scala.inline
+    def `set-o-transitionVarargs`(value: js.UndefOr[Transition[TTime]]*): Self = this.set("-o-transition", js.Array(value :_*))
+    @scala.inline
+    def `set-o-transition`(value: Transition[TTime] | js.Array[js.UndefOr[Transition[TTime]]]): Self = this.set("-o-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-transition`: Self = this.set("-o-transition", js.undefined)
+    @scala.inline
+    def `set-o-transition-delayVarargs`(value: js.UndefOr[TransitionDelay[TTime]]*): Self = this.set("-o-transition-delay", js.Array(value :_*))
+    @scala.inline
+    def `set-o-transition-delay`(value: TransitionDelay[TTime] | js.Array[js.UndefOr[TransitionDelay[TTime]]]): Self = this.set("-o-transition-delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-transition-delay`: Self = this.set("-o-transition-delay", js.undefined)
+    @scala.inline
+    def `set-o-transition-durationVarargs`(value: js.UndefOr[TransitionDuration[TTime]]*): Self = this.set("-o-transition-duration", js.Array(value :_*))
+    @scala.inline
+    def `set-o-transition-duration`(value: TransitionDuration[TTime] | js.Array[js.UndefOr[TransitionDuration[TTime]]]): Self = this.set("-o-transition-duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-transition-duration`: Self = this.set("-o-transition-duration", js.undefined)
+    @scala.inline
+    def `set-o-transition-propertyVarargs`(value: js.UndefOr[TransitionProperty]*): Self = this.set("-o-transition-property", js.Array(value :_*))
+    @scala.inline
+    def `set-o-transition-property`(value: TransitionProperty | js.Array[js.UndefOr[TransitionProperty]]): Self = this.set("-o-transition-property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-transition-property`: Self = this.set("-o-transition-property", js.undefined)
+    @scala.inline
+    def `set-o-transition-timing-functionVarargs`(value: js.UndefOr[TransitionTimingFunction]*): Self = this.set("-o-transition-timing-function", js.Array(value :_*))
+    @scala.inline
+    def `set-o-transition-timing-function`(value: TransitionTimingFunction | js.Array[js.UndefOr[TransitionTimingFunction]]): Self = this.set("-o-transition-timing-function", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-o-transition-timing-function`: Self = this.set("-o-transition-timing-function", js.undefined)
+    @scala.inline
+    def `set-webkit-box-alignVarargs`(value: js.UndefOr[BoxAlign]*): Self = this.set("-webkit-box-align", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-align`(value: BoxAlign | js.Array[js.UndefOr[BoxAlign]]): Self = this.set("-webkit-box-align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-align`: Self = this.set("-webkit-box-align", js.undefined)
+    @scala.inline
+    def `set-webkit-box-directionVarargs`(value: js.UndefOr[BoxDirection]*): Self = this.set("-webkit-box-direction", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-direction`(value: BoxDirection | js.Array[js.UndefOr[BoxDirection]]): Self = this.set("-webkit-box-direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-direction`: Self = this.set("-webkit-box-direction", js.undefined)
+    @scala.inline
+    def `set-webkit-box-flexVarargs`(value: js.UndefOr[BoxFlex]*): Self = this.set("-webkit-box-flex", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-flex`(value: BoxFlex | js.Array[js.UndefOr[BoxFlex]]): Self = this.set("-webkit-box-flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-flex`: Self = this.set("-webkit-box-flex", js.undefined)
+    @scala.inline
+    def `set-webkit-box-flex-groupVarargs`(value: js.UndefOr[BoxFlexGroup]*): Self = this.set("-webkit-box-flex-group", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-flex-group`(value: BoxFlexGroup | js.Array[js.UndefOr[BoxFlexGroup]]): Self = this.set("-webkit-box-flex-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-flex-group`: Self = this.set("-webkit-box-flex-group", js.undefined)
+    @scala.inline
+    def `set-webkit-box-linesVarargs`(value: js.UndefOr[BoxLines]*): Self = this.set("-webkit-box-lines", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-lines`(value: BoxLines | js.Array[js.UndefOr[BoxLines]]): Self = this.set("-webkit-box-lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-lines`: Self = this.set("-webkit-box-lines", js.undefined)
+    @scala.inline
+    def `set-webkit-box-ordinal-groupVarargs`(value: js.UndefOr[BoxOrdinalGroup]*): Self = this.set("-webkit-box-ordinal-group", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-ordinal-group`(value: BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]): Self = this.set("-webkit-box-ordinal-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-ordinal-group`: Self = this.set("-webkit-box-ordinal-group", js.undefined)
+    @scala.inline
+    def `set-webkit-box-orientVarargs`(value: js.UndefOr[BoxOrient]*): Self = this.set("-webkit-box-orient", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-orient`(value: BoxOrient | js.Array[js.UndefOr[BoxOrient]]): Self = this.set("-webkit-box-orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-orient`: Self = this.set("-webkit-box-orient", js.undefined)
+    @scala.inline
+    def `set-webkit-box-packVarargs`(value: js.UndefOr[BoxPack]*): Self = this.set("-webkit-box-pack", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-box-pack`(value: BoxPack | js.Array[js.UndefOr[BoxPack]]): Self = this.set("-webkit-box-pack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-box-pack`: Self = this.set("-webkit-box-pack", js.undefined)
+    @scala.inline
+    def `set-webkit-scroll-snap-points-xVarargs`(value: js.UndefOr[ScrollSnapPointsX]*): Self = this.set("-webkit-scroll-snap-points-x", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-scroll-snap-points-x`(value: ScrollSnapPointsX | js.Array[js.UndefOr[ScrollSnapPointsX]]): Self = this.set("-webkit-scroll-snap-points-x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-scroll-snap-points-x`: Self = this.set("-webkit-scroll-snap-points-x", js.undefined)
+    @scala.inline
+    def `set-webkit-scroll-snap-points-yVarargs`(value: js.UndefOr[ScrollSnapPointsY]*): Self = this.set("-webkit-scroll-snap-points-y", js.Array(value :_*))
+    @scala.inline
+    def `set-webkit-scroll-snap-points-y`(value: ScrollSnapPointsY | js.Array[js.UndefOr[ScrollSnapPointsY]]): Self = this.set("-webkit-scroll-snap-points-y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `delete-webkit-scroll-snap-points-y`: Self = this.set("-webkit-scroll-snap-points-y", js.undefined)
+    @scala.inline
+    def `setBox-alignVarargs`(value: js.UndefOr[BoxAlign]*): Self = this.set("box-align", js.Array(value :_*))
+    @scala.inline
+    def `setBox-align`(value: BoxAlign | js.Array[js.UndefOr[BoxAlign]]): Self = this.set("box-align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-align`: Self = this.set("box-align", js.undefined)
+    @scala.inline
+    def `setBox-directionVarargs`(value: js.UndefOr[BoxDirection]*): Self = this.set("box-direction", js.Array(value :_*))
+    @scala.inline
+    def `setBox-direction`(value: BoxDirection | js.Array[js.UndefOr[BoxDirection]]): Self = this.set("box-direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-direction`: Self = this.set("box-direction", js.undefined)
+    @scala.inline
+    def `setBox-flexVarargs`(value: js.UndefOr[BoxFlex]*): Self = this.set("box-flex", js.Array(value :_*))
+    @scala.inline
+    def `setBox-flex`(value: BoxFlex | js.Array[js.UndefOr[BoxFlex]]): Self = this.set("box-flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-flex`: Self = this.set("box-flex", js.undefined)
+    @scala.inline
+    def `setBox-flex-groupVarargs`(value: js.UndefOr[BoxFlexGroup]*): Self = this.set("box-flex-group", js.Array(value :_*))
+    @scala.inline
+    def `setBox-flex-group`(value: BoxFlexGroup | js.Array[js.UndefOr[BoxFlexGroup]]): Self = this.set("box-flex-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-flex-group`: Self = this.set("box-flex-group", js.undefined)
+    @scala.inline
+    def `setBox-linesVarargs`(value: js.UndefOr[BoxLines]*): Self = this.set("box-lines", js.Array(value :_*))
+    @scala.inline
+    def `setBox-lines`(value: BoxLines | js.Array[js.UndefOr[BoxLines]]): Self = this.set("box-lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-lines`: Self = this.set("box-lines", js.undefined)
+    @scala.inline
+    def `setBox-ordinal-groupVarargs`(value: js.UndefOr[BoxOrdinalGroup]*): Self = this.set("box-ordinal-group", js.Array(value :_*))
+    @scala.inline
+    def `setBox-ordinal-group`(value: BoxOrdinalGroup | js.Array[js.UndefOr[BoxOrdinalGroup]]): Self = this.set("box-ordinal-group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-ordinal-group`: Self = this.set("box-ordinal-group", js.undefined)
+    @scala.inline
+    def `setBox-orientVarargs`(value: js.UndefOr[BoxOrient]*): Self = this.set("box-orient", js.Array(value :_*))
+    @scala.inline
+    def `setBox-orient`(value: BoxOrient | js.Array[js.UndefOr[BoxOrient]]): Self = this.set("box-orient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-orient`: Self = this.set("box-orient", js.undefined)
+    @scala.inline
+    def `setBox-packVarargs`(value: js.UndefOr[BoxPack]*): Self = this.set("box-pack", js.Array(value :_*))
+    @scala.inline
+    def `setBox-pack`(value: BoxPack | js.Array[js.UndefOr[BoxPack]]): Self = this.set("box-pack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteBox-pack`: Self = this.set("box-pack", js.undefined)
+    @scala.inline
+    def setClipVarargs(value: js.UndefOr[Clip]*): Self = this.set("clip", js.Array(value :_*))
+    @scala.inline
+    def setClip(value: Clip | js.Array[js.UndefOr[Clip]]): Self = this.set("clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClip: Self = this.set("clip", js.undefined)
+    @scala.inline
+    def `setFont-variant-alternatesVarargs`(value: js.UndefOr[FontVariantAlternates]*): Self = this.set("font-variant-alternates", js.Array(value :_*))
+    @scala.inline
+    def `setFont-variant-alternates`(value: FontVariantAlternates | js.Array[js.UndefOr[FontVariantAlternates]]): Self = this.set("font-variant-alternates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteFont-variant-alternates`: Self = this.set("font-variant-alternates", js.undefined)
+    @scala.inline
+    def `setGrid-column-gapVarargs`(value: js.UndefOr[GridColumnGap[TLength]]*): Self = this.set("grid-column-gap", js.Array(value :_*))
+    @scala.inline
+    def `setGrid-column-gap`(value: GridColumnGap[TLength] | js.Array[js.UndefOr[GridColumnGap[TLength]]]): Self = this.set("grid-column-gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-column-gap`: Self = this.set("grid-column-gap", js.undefined)
+    @scala.inline
+    def `setGrid-gapVarargs`(value: js.UndefOr[GridGap[TLength]]*): Self = this.set("grid-gap", js.Array(value :_*))
+    @scala.inline
+    def `setGrid-gap`(value: GridGap[TLength] | js.Array[js.UndefOr[GridGap[TLength]]]): Self = this.set("grid-gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-gap`: Self = this.set("grid-gap", js.undefined)
+    @scala.inline
+    def `setGrid-row-gapVarargs`(value: js.UndefOr[GridRowGap[TLength]]*): Self = this.set("grid-row-gap", js.Array(value :_*))
+    @scala.inline
+    def `setGrid-row-gap`(value: GridRowGap[TLength] | js.Array[js.UndefOr[GridRowGap[TLength]]]): Self = this.set("grid-row-gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-row-gap`: Self = this.set("grid-row-gap", js.undefined)
+    @scala.inline
+    def `setIme-modeVarargs`(value: js.UndefOr[ImeMode]*): Self = this.set("ime-mode", js.Array(value :_*))
+    @scala.inline
+    def `setIme-mode`(value: ImeMode | js.Array[js.UndefOr[ImeMode]]): Self = this.set("ime-mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIme-mode`: Self = this.set("ime-mode", js.undefined)
+    @scala.inline
+    def `setOffset-blockVarargs`(value: js.UndefOr[InsetBlock[TLength]]*): Self = this.set("offset-block", js.Array(value :_*))
+    @scala.inline
+    def `setOffset-block`(value: InsetBlock[TLength] | js.Array[js.UndefOr[InsetBlock[TLength]]]): Self = this.set("offset-block", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-block`: Self = this.set("offset-block", js.undefined)
+    @scala.inline
+    def `setOffset-block-endVarargs`(value: js.UndefOr[InsetBlockEnd[TLength]]*): Self = this.set("offset-block-end", js.Array(value :_*))
+    @scala.inline
+    def `setOffset-block-end`(value: InsetBlockEnd[TLength] | js.Array[js.UndefOr[InsetBlockEnd[TLength]]]): Self = this.set("offset-block-end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-block-end`: Self = this.set("offset-block-end", js.undefined)
+    @scala.inline
+    def `setOffset-block-startVarargs`(value: js.UndefOr[InsetBlockStart[TLength]]*): Self = this.set("offset-block-start", js.Array(value :_*))
+    @scala.inline
+    def `setOffset-block-start`(value: InsetBlockStart[TLength] | js.Array[js.UndefOr[InsetBlockStart[TLength]]]): Self = this.set("offset-block-start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-block-start`: Self = this.set("offset-block-start", js.undefined)
+    @scala.inline
+    def `setOffset-inlineVarargs`(value: js.UndefOr[InsetInline[TLength]]*): Self = this.set("offset-inline", js.Array(value :_*))
+    @scala.inline
+    def `setOffset-inline`(value: InsetInline[TLength] | js.Array[js.UndefOr[InsetInline[TLength]]]): Self = this.set("offset-inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-inline`: Self = this.set("offset-inline", js.undefined)
+    @scala.inline
+    def `setOffset-inline-endVarargs`(value: js.UndefOr[InsetInlineEnd[TLength]]*): Self = this.set("offset-inline-end", js.Array(value :_*))
+    @scala.inline
+    def `setOffset-inline-end`(value: InsetInlineEnd[TLength] | js.Array[js.UndefOr[InsetInlineEnd[TLength]]]): Self = this.set("offset-inline-end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-inline-end`: Self = this.set("offset-inline-end", js.undefined)
+    @scala.inline
+    def `setOffset-inline-startVarargs`(value: js.UndefOr[InsetInlineStart[TLength]]*): Self = this.set("offset-inline-start", js.Array(value :_*))
+    @scala.inline
+    def `setOffset-inline-start`(value: InsetInlineStart[TLength] | js.Array[js.UndefOr[InsetInlineStart[TLength]]]): Self = this.set("offset-inline-start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteOffset-inline-start`: Self = this.set("offset-inline-start", js.undefined)
+    @scala.inline
+    def `setScroll-snap-coordinateVarargs`(value: js.UndefOr[ScrollSnapCoordinate[TLength]]*): Self = this.set("scroll-snap-coordinate", js.Array(value :_*))
+    @scala.inline
+    def `setScroll-snap-coordinate`(value: ScrollSnapCoordinate[TLength] | js.Array[js.UndefOr[ScrollSnapCoordinate[TLength]]]): Self = this.set("scroll-snap-coordinate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScroll-snap-coordinate`: Self = this.set("scroll-snap-coordinate", js.undefined)
+    @scala.inline
+    def `setScroll-snap-destinationVarargs`(value: js.UndefOr[ScrollSnapDestination[TLength]]*): Self = this.set("scroll-snap-destination", js.Array(value :_*))
+    @scala.inline
+    def `setScroll-snap-destination`(value: ScrollSnapDestination[TLength] | js.Array[js.UndefOr[ScrollSnapDestination[TLength]]]): Self = this.set("scroll-snap-destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScroll-snap-destination`: Self = this.set("scroll-snap-destination", js.undefined)
+    @scala.inline
+    def `setScroll-snap-points-xVarargs`(value: js.UndefOr[ScrollSnapPointsX]*): Self = this.set("scroll-snap-points-x", js.Array(value :_*))
+    @scala.inline
+    def `setScroll-snap-points-x`(value: ScrollSnapPointsX | js.Array[js.UndefOr[ScrollSnapPointsX]]): Self = this.set("scroll-snap-points-x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScroll-snap-points-x`: Self = this.set("scroll-snap-points-x", js.undefined)
+    @scala.inline
+    def `setScroll-snap-points-yVarargs`(value: js.UndefOr[ScrollSnapPointsY]*): Self = this.set("scroll-snap-points-y", js.Array(value :_*))
+    @scala.inline
+    def `setScroll-snap-points-y`(value: ScrollSnapPointsY | js.Array[js.UndefOr[ScrollSnapPointsY]]): Self = this.set("scroll-snap-points-y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScroll-snap-points-y`: Self = this.set("scroll-snap-points-y", js.undefined)
+    @scala.inline
+    def `setScroll-snap-type-xVarargs`(value: js.UndefOr[ScrollSnapTypeX]*): Self = this.set("scroll-snap-type-x", js.Array(value :_*))
+    @scala.inline
+    def `setScroll-snap-type-x`(value: ScrollSnapTypeX | js.Array[js.UndefOr[ScrollSnapTypeX]]): Self = this.set("scroll-snap-type-x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScroll-snap-type-x`: Self = this.set("scroll-snap-type-x", js.undefined)
+    @scala.inline
+    def `setScroll-snap-type-yVarargs`(value: js.UndefOr[ScrollSnapTypeY]*): Self = this.set("scroll-snap-type-y", js.Array(value :_*))
+    @scala.inline
+    def `setScroll-snap-type-y`(value: ScrollSnapTypeY | js.Array[js.UndefOr[ScrollSnapTypeY]]): Self = this.set("scroll-snap-type-y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScroll-snap-type-y`: Self = this.set("scroll-snap-type-y", js.undefined)
+    @scala.inline
+    def `setScrollbar-track-colorVarargs`(value: js.UndefOr[MsScrollbarTrackColor]*): Self = this.set("scrollbar-track-color", js.Array(value :_*))
+    @scala.inline
+    def `setScrollbar-track-color`(value: MsScrollbarTrackColor | js.Array[js.UndefOr[MsScrollbarTrackColor]]): Self = this.set("scrollbar-track-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteScrollbar-track-color`: Self = this.set("scrollbar-track-color", js.undefined)
+    @scala.inline
+    def `setText-combine-horizontalVarargs`(value: js.UndefOr[TextCombineUpright]*): Self = this.set("text-combine-horizontal", js.Array(value :_*))
+    @scala.inline
+    def `setText-combine-horizontal`(value: TextCombineUpright | js.Array[js.UndefOr[TextCombineUpright]]): Self = this.set("text-combine-horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-combine-horizontal`: Self = this.set("text-combine-horizontal", js.undefined)
+  }
+  
 }
 

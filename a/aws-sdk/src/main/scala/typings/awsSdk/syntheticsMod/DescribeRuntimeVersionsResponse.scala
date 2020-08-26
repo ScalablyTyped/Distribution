@@ -18,11 +18,32 @@ trait DescribeRuntimeVersionsResponse extends js.Object {
 
 object DescribeRuntimeVersionsResponse {
   @scala.inline
-  def apply(NextToken: Token = null, RuntimeVersions: RuntimeVersionList = null): DescribeRuntimeVersionsResponse = {
+  def apply(): DescribeRuntimeVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (RuntimeVersions != null) __obj.updateDynamic("RuntimeVersions")(RuntimeVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRuntimeVersionsResponse]
   }
+  @scala.inline
+  implicit class DescribeRuntimeVersionsResponseOps[Self <: DescribeRuntimeVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRuntimeVersionsVarargs(value: RuntimeVersion*): Self = this.set("RuntimeVersions", js.Array(value :_*))
+    @scala.inline
+    def setRuntimeVersions(value: RuntimeVersionList): Self = this.set("RuntimeVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeVersions: Self = this.set("RuntimeVersions", js.undefined)
+  }
+  
 }
 

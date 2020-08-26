@@ -44,6 +44,7 @@ trait CheckType extends js.Object {
   def array(a: js.Any): /* is std.Array<any> */ Boolean = js.native
   def arrayLike(a: js.Any): /* is std.ArrayLike<any> */ Boolean = js.native
   def assert[T](possibleFalsy: T): T = js.native
+  def assert[T](possibleFalsy: T, message: js.UndefOr[scala.Nothing], errorType: Instantiable): T = js.native
   def assert[T](possibleFalsy: T, message: String): T = js.native
   def assert[T](possibleFalsy: T, message: String, errorType: Instantiable): T = js.native
   def assigned(a: js.Any): Boolean = js.native

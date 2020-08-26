@@ -38,14 +38,39 @@ object PutResourceConfigRequest {
     Configuration: Configuration,
     ResourceId: ResourceId,
     ResourceType: ResourceTypeString,
-    SchemaVersionId: SchemaVersionId,
-    ResourceName: ResourceName = null,
-    Tags: Tags = null
+    SchemaVersionId: SchemaVersionId
   ): PutResourceConfigRequest = {
     val __obj = js.Dynamic.literal(Configuration = Configuration.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], SchemaVersionId = SchemaVersionId.asInstanceOf[js.Any])
-    if (ResourceName != null) __obj.updateDynamic("ResourceName")(ResourceName.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResourceConfigRequest]
   }
+  @scala.inline
+  implicit class PutResourceConfigRequestOps[Self <: PutResourceConfigRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: Configuration): Self = this.set("Configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceId(value: ResourceId): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceType(value: ResourceTypeString): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchemaVersionId(value: SchemaVersionId): Self = this.set("SchemaVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("ResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("ResourceName", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

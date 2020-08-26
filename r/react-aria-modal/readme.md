@@ -10,9 +10,9 @@ A fully accessible and flexible React modal built according WAI-ARIA Authoring P
 | ------------------ | :-------------: |
 | Full name          | react-aria-modal |
 | Keywords           | react, react-component, modal, accessibility, accessible, dialog |
-| # releases         | 9 |
-| # dependents       | 19 |
-| # downloads        | 825707 |
+| # releases         | 8 |
+| # dependents       | 20 |
+| # downloads        | 845207 |
 | # stars            | 0 |
 
 ## Links

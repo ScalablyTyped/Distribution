@@ -16,11 +16,32 @@ trait SchemaManagedZonePrivateVisibilityConfig extends js.Object {
 
 object SchemaManagedZonePrivateVisibilityConfig {
   @scala.inline
-  def apply(kind: String = null, networks: js.Array[SchemaManagedZonePrivateVisibilityConfigNetwork] = null): SchemaManagedZonePrivateVisibilityConfig = {
+  def apply(): SchemaManagedZonePrivateVisibilityConfig = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (networks != null) __obj.updateDynamic("networks")(networks.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManagedZonePrivateVisibilityConfig]
   }
+  @scala.inline
+  implicit class SchemaManagedZonePrivateVisibilityConfigOps[Self <: SchemaManagedZonePrivateVisibilityConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNetworksVarargs(value: SchemaManagedZonePrivateVisibilityConfigNetwork*): Self = this.set("networks", js.Array(value :_*))
+    @scala.inline
+    def setNetworks(value: js.Array[SchemaManagedZonePrivateVisibilityConfigNetwork]): Self = this.set("networks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworks: Self = this.set("networks", js.undefined)
+  }
+  
 }
 

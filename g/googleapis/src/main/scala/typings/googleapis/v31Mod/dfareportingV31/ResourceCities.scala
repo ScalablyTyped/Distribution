@@ -31,6 +31,7 @@ class ResourceCities protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCitiesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCitiesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCitiesListResponse] = js.native
   def list(params: ParamsResourceCitiesList): GaxiosPromise[SchemaCitiesListResponse] = js.native
   def list(params: ParamsResourceCitiesList, callback: BodyResponseCallback[SchemaCitiesListResponse]): Unit = js.native
   def list(

@@ -20,10 +20,12 @@ class ImagesStatic () extends js.Object {
   def height(height: Double): ImagesStatic = js.native
   def loadFromBuffer(buffer: Buffer): ImagesStatic = js.native
   def resize(width: Double): ImagesStatic = js.native
+  def resize(width: Double, height: js.UndefOr[scala.Nothing], filter: String): ImagesStatic = js.native
   def resize(width: Double, height: Double): ImagesStatic = js.native
   def resize(width: Double, height: Double, filter: String): ImagesStatic = js.native
   def save(file: String): Unit = js.native
   def save(file: String, config: ImagesConfig): Unit = js.native
+  def save(file: String, `type`: js.UndefOr[scala.Nothing], config: ImagesConfig): Unit = js.native
   def save(file: String, `type`: SupportType): Unit = js.native
   def save(file: String, `type`: SupportType, config: ImagesConfig): Unit = js.native
   def setGCThreshold(value: Double): Unit = js.native

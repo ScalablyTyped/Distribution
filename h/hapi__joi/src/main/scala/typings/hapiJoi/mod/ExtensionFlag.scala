@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtensionFlag extends js.Object {
-  var default: js.UndefOr[js.Any] = js.undefined
-  var setter: js.UndefOr[String] = js.undefined
+  var default: js.UndefOr[js.Any] = js.native
+  var setter: js.UndefOr[String] = js.native
 }
 
 object ExtensionFlag {
   @scala.inline
-  def apply(default: js.Any = null, setter: String = null): ExtensionFlag = {
+  def apply(): ExtensionFlag = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (setter != null) __obj.updateDynamic("setter")(setter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionFlag]
   }
+  @scala.inline
+  implicit class ExtensionFlagOps[Self <: ExtensionFlag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefault(value: js.Any): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault: Self = this.set("default", js.undefined)
+    @scala.inline
+    def setSetter(value: String): Self = this.set("setter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetter: Self = this.set("setter", js.undefined)
+  }
+  
 }
 

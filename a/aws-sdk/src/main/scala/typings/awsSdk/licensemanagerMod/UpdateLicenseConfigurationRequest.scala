@@ -42,25 +42,56 @@ trait UpdateLicenseConfigurationRequest extends js.Object {
 
 object UpdateLicenseConfigurationRequest {
   @scala.inline
-  def apply(
-    LicenseConfigurationArn: String,
-    Description: String = null,
-    LicenseConfigurationStatus: LicenseConfigurationStatus = null,
-    LicenseCount: js.UndefOr[BoxLong] = js.undefined,
-    LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined,
-    LicenseRules: StringList = null,
-    Name: String = null,
-    ProductInformationList: ProductInformationList = null
-  ): UpdateLicenseConfigurationRequest = {
+  def apply(LicenseConfigurationArn: String): UpdateLicenseConfigurationRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LicenseConfigurationStatus != null) __obj.updateDynamic("LicenseConfigurationStatus")(LicenseConfigurationStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCount)) __obj.updateDynamic("LicenseCount")(LicenseCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LicenseCountHardLimit)) __obj.updateDynamic("LicenseCountHardLimit")(LicenseCountHardLimit.get.asInstanceOf[js.Any])
-    if (LicenseRules != null) __obj.updateDynamic("LicenseRules")(LicenseRules.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ProductInformationList != null) __obj.updateDynamic("ProductInformationList")(ProductInformationList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateLicenseConfigurationRequest]
   }
+  @scala.inline
+  implicit class UpdateLicenseConfigurationRequestOps[Self <: UpdateLicenseConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLicenseConfigurationArn(value: String): Self = this.set("LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLicenseConfigurationStatus(value: LicenseConfigurationStatus): Self = this.set("LicenseConfigurationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseConfigurationStatus: Self = this.set("LicenseConfigurationStatus", js.undefined)
+    @scala.inline
+    def setLicenseCount(value: BoxLong): Self = this.set("LicenseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCount: Self = this.set("LicenseCount", js.undefined)
+    @scala.inline
+    def setLicenseCountHardLimit(value: BoxBoolean): Self = this.set("LicenseCountHardLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseCountHardLimit: Self = this.set("LicenseCountHardLimit", js.undefined)
+    @scala.inline
+    def setLicenseRulesVarargs(value: String*): Self = this.set("LicenseRules", js.Array(value :_*))
+    @scala.inline
+    def setLicenseRules(value: StringList): Self = this.set("LicenseRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseRules: Self = this.set("LicenseRules", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProductInformationListVarargs(value: ProductInformation*): Self = this.set("ProductInformationList", js.Array(value :_*))
+    @scala.inline
+    def setProductInformationList(value: ProductInformationList): Self = this.set("ProductInformationList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductInformationList: Self = this.set("ProductInformationList", js.undefined)
+  }
+  
 }
 

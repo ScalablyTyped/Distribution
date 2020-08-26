@@ -10,6 +10,7 @@ object mod extends js.Object {
   @js.native
   class Injector () extends js.Object {
     def this(modules: js.Array[js.Object]) = this()
+    def this(modules: js.UndefOr[scala.Nothing], parent: Injector) = this()
     def this(modules: js.Array[js.Object], parent: Injector) = this()
     def createChild(modules: js.Array[js.Object]): Injector = js.native
     def get(dep: String): js.Object = js.native

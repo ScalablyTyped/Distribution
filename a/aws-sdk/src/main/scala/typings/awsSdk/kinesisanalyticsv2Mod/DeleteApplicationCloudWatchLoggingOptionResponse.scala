@@ -22,16 +22,36 @@ trait DeleteApplicationCloudWatchLoggingOptionResponse extends js.Object {
 
 object DeleteApplicationCloudWatchLoggingOptionResponse {
   @scala.inline
-  def apply(
-    ApplicationARN: ResourceARN = null,
-    ApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined,
-    CloudWatchLoggingOptionDescriptions: CloudWatchLoggingOptionDescriptions = null
-  ): DeleteApplicationCloudWatchLoggingOptionResponse = {
+  def apply(): DeleteApplicationCloudWatchLoggingOptionResponse = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationARN != null) __obj.updateDynamic("ApplicationARN")(ApplicationARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplicationVersionId)) __obj.updateDynamic("ApplicationVersionId")(ApplicationVersionId.get.asInstanceOf[js.Any])
-    if (CloudWatchLoggingOptionDescriptions != null) __obj.updateDynamic("CloudWatchLoggingOptionDescriptions")(CloudWatchLoggingOptionDescriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationCloudWatchLoggingOptionResponse]
   }
+  @scala.inline
+  implicit class DeleteApplicationCloudWatchLoggingOptionResponseOps[Self <: DeleteApplicationCloudWatchLoggingOptionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationARN(value: ResourceARN): Self = this.set("ApplicationARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationARN: Self = this.set("ApplicationARN", js.undefined)
+    @scala.inline
+    def setApplicationVersionId(value: ApplicationVersionId): Self = this.set("ApplicationVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationVersionId: Self = this.set("ApplicationVersionId", js.undefined)
+    @scala.inline
+    def setCloudWatchLoggingOptionDescriptionsVarargs(value: CloudWatchLoggingOptionDescription*): Self = this.set("CloudWatchLoggingOptionDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setCloudWatchLoggingOptionDescriptions(value: CloudWatchLoggingOptionDescriptions): Self = this.set("CloudWatchLoggingOptionDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchLoggingOptionDescriptions: Self = this.set("CloudWatchLoggingOptionDescriptions", js.undefined)
+  }
+  
 }
 

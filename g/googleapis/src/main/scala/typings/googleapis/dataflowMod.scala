@@ -30,7 +30,7 @@ object dataflowMod extends js.Object {
     @js.native
     object v1b3
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Dataflow]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataflow]
             ]
     
   }

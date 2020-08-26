@@ -11,8 +11,8 @@ Sticky component for React
 | Full name          | react-sticky |
 | Keywords           | react-component, React, Sticky |
 | # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 3632518 |
+| # dependents       | 71 |
+| # downloads        | 3711295 |
 | # stars            | 20 |
 
 ## Links

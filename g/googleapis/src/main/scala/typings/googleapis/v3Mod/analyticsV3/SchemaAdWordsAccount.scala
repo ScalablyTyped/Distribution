@@ -26,16 +26,34 @@ trait SchemaAdWordsAccount extends js.Object {
 
 object SchemaAdWordsAccount {
   @scala.inline
-  def apply(
-    autoTaggingEnabled: js.UndefOr[Boolean] = js.undefined,
-    customerId: String = null,
-    kind: String = null
-  ): SchemaAdWordsAccount = {
+  def apply(): SchemaAdWordsAccount = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoTaggingEnabled)) __obj.updateDynamic("autoTaggingEnabled")(autoTaggingEnabled.get.asInstanceOf[js.Any])
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdWordsAccount]
   }
+  @scala.inline
+  implicit class SchemaAdWordsAccountOps[Self <: SchemaAdWordsAccount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoTaggingEnabled(value: Boolean): Self = this.set("autoTaggingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoTaggingEnabled: Self = this.set("autoTaggingEnabled", js.undefined)
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

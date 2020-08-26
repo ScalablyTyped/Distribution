@@ -13,16 +13,36 @@ trait UpdateJobOutput extends js.Object {
 
 object UpdateJobOutput {
   @scala.inline
-  def apply(
-    ArtifactList: ArtifactList = null,
-    Success: js.UndefOr[Success] = js.undefined,
-    WarningMessage: WarningMessage = null
-  ): UpdateJobOutput = {
+  def apply(): UpdateJobOutput = {
     val __obj = js.Dynamic.literal()
-    if (ArtifactList != null) __obj.updateDynamic("ArtifactList")(ArtifactList.asInstanceOf[js.Any])
-    if (!js.isUndefined(Success)) __obj.updateDynamic("Success")(Success.get.asInstanceOf[js.Any])
-    if (WarningMessage != null) __obj.updateDynamic("WarningMessage")(WarningMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobOutput]
   }
+  @scala.inline
+  implicit class UpdateJobOutputOps[Self <: UpdateJobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArtifactListVarargs(value: Artifact*): Self = this.set("ArtifactList", js.Array(value :_*))
+    @scala.inline
+    def setArtifactList(value: ArtifactList): Self = this.set("ArtifactList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactList: Self = this.set("ArtifactList", js.undefined)
+    @scala.inline
+    def setSuccess(value: Success): Self = this.set("Success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("Success", js.undefined)
+    @scala.inline
+    def setWarningMessage(value: WarningMessage): Self = this.set("WarningMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarningMessage: Self = this.set("WarningMessage", js.undefined)
+  }
+  
 }
 

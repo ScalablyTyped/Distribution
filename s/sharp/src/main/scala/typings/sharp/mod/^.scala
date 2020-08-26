@@ -17,6 +17,7 @@ object ^ extends js.Object {
     * @returns A sharp instance that can be used to chain operations
     */
   def apply(): Sharp = js.native
+  def apply(input: js.UndefOr[scala.Nothing], options: SharpOptions): Sharp = js.native
   def apply(input: String): Sharp = js.native
   def apply(input: String, options: SharpOptions): Sharp = js.native
   def apply(input: Buffer): Sharp = js.native

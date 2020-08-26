@@ -1,5 +1,6 @@
 package typings.rcTreeSelect
 
+import typings.rcSelect.optionListMod.RefOptionListProps
 import typings.rcTreeSelect.anon.Selected
 import typings.rcTreeSelect.interfaceMod.DataNode
 import typings.rcTreeSelect.interfaceMod.FlattenDataNode
@@ -14,7 +15,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/OptionList", JSImport.Namespace)
+@JSImport("rc-tree-select/es/OptionList", JSImport.Namespace)
 @js.native
 object optionListMod extends js.Object {
   @js.native
@@ -43,10 +44,6 @@ object optionListMod extends js.Object {
     def onToggleOpen(open: Boolean): Unit = js.native
   }
   
-  val default: ForwardRefExoticComponent[
-    OptionListProps[js.Array[DataNode]] with (RefAttributes[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RefOptionListProps */ _
-    ])
-  ] = js.native
+  val default: ForwardRefExoticComponent[OptionListProps[js.Array[DataNode]] with RefAttributes[RefOptionListProps]] = js.native
 }
 

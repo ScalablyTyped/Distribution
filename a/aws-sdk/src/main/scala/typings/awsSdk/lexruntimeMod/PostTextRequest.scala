@@ -34,18 +34,38 @@ trait PostTextRequest extends js.Object {
 
 object PostTextRequest {
   @scala.inline
-  def apply(
-    botAlias: BotAlias,
-    botName: BotName,
-    inputText: Text,
-    userId: UserId,
-    requestAttributes: StringMap = null,
-    sessionAttributes: StringMap = null
-  ): PostTextRequest = {
+  def apply(botAlias: BotAlias, botName: BotName, inputText: Text, userId: UserId): PostTextRequest = {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], inputText = inputText.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
-    if (requestAttributes != null) __obj.updateDynamic("requestAttributes")(requestAttributes.asInstanceOf[js.Any])
-    if (sessionAttributes != null) __obj.updateDynamic("sessionAttributes")(sessionAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostTextRequest]
   }
+  @scala.inline
+  implicit class PostTextRequestOps[Self <: PostTextRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputText(value: Text): Self = this.set("inputText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestAttributes(value: StringMap): Self = this.set("requestAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestAttributes: Self = this.set("requestAttributes", js.undefined)
+    @scala.inline
+    def setSessionAttributes(value: StringMap): Self = this.set("sessionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionAttributes: Self = this.set("sessionAttributes", js.undefined)
+  }
+  
 }
 

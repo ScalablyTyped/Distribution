@@ -18,11 +18,30 @@ trait AvailabilityZone extends js.Object {
 
 object AvailabilityZone {
   @scala.inline
-  def apply(SubnetId: NonEmptyString = null, ZoneName: NonEmptyString = null): AvailabilityZone = {
+  def apply(): AvailabilityZone = {
     val __obj = js.Dynamic.literal()
-    if (SubnetId != null) __obj.updateDynamic("SubnetId")(SubnetId.asInstanceOf[js.Any])
-    if (ZoneName != null) __obj.updateDynamic("ZoneName")(ZoneName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailabilityZone]
   }
+  @scala.inline
+  implicit class AvailabilityZoneOps[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetId(value: NonEmptyString): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("SubnetId", js.undefined)
+    @scala.inline
+    def setZoneName(value: NonEmptyString): Self = this.set("ZoneName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneName: Self = this.set("ZoneName", js.undefined)
+  }
+  
 }
 

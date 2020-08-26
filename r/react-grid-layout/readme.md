@@ -11,8 +11,8 @@ A draggable and resizable grid layout with responsive breakpoints, for React.
 | Full name          | react-grid-layout |
 | Keywords           | react, grid, drag, draggable, resize, resizable, fluid, responsive |
 | # releases         | 7 |
-| # dependents       | 105 |
-| # downloads        | 3137591 |
+| # dependents       | 110 |
+| # downloads        | 3282486 |
 | # stars            | 19 |
 
 ## Links

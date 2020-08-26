@@ -25,16 +25,34 @@ trait SchemaSourceConfig extends js.Object {
 
 object SchemaSourceConfig {
   @scala.inline
-  def apply(
-    crowdingConfig: SchemaSourceCrowdingConfig = null,
-    scoringConfig: SchemaSourceScoringConfig = null,
-    source: SchemaSource = null
-  ): SchemaSourceConfig = {
+  def apply(): SchemaSourceConfig = {
     val __obj = js.Dynamic.literal()
-    if (crowdingConfig != null) __obj.updateDynamic("crowdingConfig")(crowdingConfig.asInstanceOf[js.Any])
-    if (scoringConfig != null) __obj.updateDynamic("scoringConfig")(scoringConfig.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceConfig]
   }
+  @scala.inline
+  implicit class SchemaSourceConfigOps[Self <: SchemaSourceConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrowdingConfig(value: SchemaSourceCrowdingConfig): Self = this.set("crowdingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrowdingConfig: Self = this.set("crowdingConfig", js.undefined)
+    @scala.inline
+    def setScoringConfig(value: SchemaSourceScoringConfig): Self = this.set("scoringConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoringConfig: Self = this.set("scoringConfig", js.undefined)
+    @scala.inline
+    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+  }
+  
 }
 

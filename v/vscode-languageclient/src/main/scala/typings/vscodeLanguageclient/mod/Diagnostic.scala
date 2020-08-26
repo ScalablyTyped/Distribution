@@ -14,13 +14,125 @@ object Diagnostic extends js.Object {
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: js.UndefOr[scala.Nothing],
+    source: String
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: js.UndefOr[scala.Nothing],
+    source: String,
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: String
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: String,
+    source: js.UndefOr[scala.Nothing],
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: String,
+    source: String
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: String,
+    source: String,
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: Double
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: Double,
+    source: js.UndefOr[scala.Nothing],
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: Double,
+    source: String
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: js.UndefOr[scala.Nothing],
+    code: Double,
+    source: String,
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
     severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
     message: String,
     severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
+    code: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
+    code: js.UndefOr[scala.Nothing],
+    source: String
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
+    code: js.UndefOr[scala.Nothing],
+    source: String,
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
     code: String
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
+    code: String,
+    source: js.UndefOr[scala.Nothing],
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,
@@ -42,6 +154,14 @@ object Diagnostic extends js.Object {
     message: String,
     severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
     code: Double
+  ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    message: String,
+    severity: typings.vscodeLanguageserverTypes.mod.DiagnosticSeverity,
+    code: Double,
+    source: js.UndefOr[scala.Nothing],
+    relatedInformation: js.Array[typings.vscodeLanguageserverTypes.mod.DiagnosticRelatedInformation]
   ): typings.vscodeLanguageserverTypes.mod.Diagnostic = js.native
   def create(
     range: typings.vscodeLanguageserverTypes.mod.Range,

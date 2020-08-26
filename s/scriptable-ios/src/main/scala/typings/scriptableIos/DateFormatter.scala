@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * To convert between dates and their textual representation, use the `string()` and `date()` functions.
   * @see https://docs.scriptable.app/dateformatter/#-new-dateformatter
   */
+@js.native
 trait DateFormatter extends js.Object {
   /**
     * _Date format to be used by the formatter._
@@ -78,14 +79,14 @@ trait DateFormatter extends js.Object {
     * A great resource for experimenting with date formats is nsdateformatter.com developed by Ben Scheirman.
     * @see https://docs.scriptable.app/dateformatter/#dateformat
     */
-  var dateFormat: String
+  var dateFormat: String = js.native
   /**
     * _Locale to use when formatting._
     *
     * The locale should be specified using a string identifier, e.g. "en", "it" or "da". When no locale is set, the formatter will use the current locale of the device.
     * @see https://docs.scriptable.app/dateformatter/#locale
     */
-  var locale: String
+  var locale: String = js.native
   /**
     * _Creates a date from a string._
     *
@@ -93,83 +94,83 @@ trait DateFormatter extends js.Object {
     * @param str - The string to parse into a date.
     * @see https://docs.scriptable.app/dateformatter/#-date
     */
-  def date(str: String): String
+  def date(str: String): String = js.native
   /**
     * _Creates a string from a date._
     * @param date - The date to convert to a string.
     * @see https://docs.scriptable.app/dateformatter/#-string
     */
-  def string(date: Date): String
+  def string(date: Date): String = js.native
   /**
     * _Use a full style for the date._
     *
     * Dates with a full style includes all details, e.g. "Friday, August 23, 2019 AD".
     * @see https://docs.scriptable.app/dateformatter/#-usefulldatestyle
     */
-  def useFullDateStyle(): Unit
+  def useFullDateStyle(): Unit = js.native
   /**
     * _Use a full style for the time._
     *
     * Times with a full style includes all details, e.g. "7:16:42 PM Pacific Standard Time".
     * @see https://docs.scriptable.app/dateformatter/#-usefulltimestyle
     */
-  def useFullTimeStyle(): Unit
+  def useFullTimeStyle(): Unit = js.native
   /**
     * _Use a long style for the date._
     *
     * Dates with a long style usually includes a full text, e.g. "August 23, 2019".
     * @see https://docs.scriptable.app/dateformatter/#-uselongdatestyle
     */
-  def useLongDateStyle(): Unit
+  def useLongDateStyle(): Unit = js.native
   /**
     * _Use a long style for the time._
     *
     * Times with a long style usually includes a full text, e.g. "7:16:42 PM PST".
     * @see https://docs.scriptable.app/dateformatter/#-uselongtimestyle
     */
-  def useLongTimeStyle(): Unit
+  def useLongTimeStyle(): Unit = js.native
   /**
     * _Use a medium style for the date._
     *
     * Dates with a medium style usually includes abbreviations, e.g. "Aug 23, 2019" or "7:16:42 PM".
     * @see https://docs.scriptable.app/dateformatter/#-usemediumdatestyle
     */
-  def useMediumDateStyle(): Unit
+  def useMediumDateStyle(): Unit = js.native
   /**
     * _Use a short style for the time._
     *
     * Times with a medium style usually includes abbreviations, e.g. "7:16:42 PM".
     * @see https://docs.scriptable.app/dateformatter/#-usemediumtimestyle
     */
-  def useMediumTimeStyle(): Unit
+  def useMediumTimeStyle(): Unit = js.native
   /**
     * _Use no style for the date._
     *
     * This will remove the date from the formatted string.
     * @see https://docs.scriptable.app/dateformatter/#-usenodatestyle
     */
-  def useNoDateStyle(): Unit
+  def useNoDateStyle(): Unit = js.native
   /**
     * _Use no style for the time._
     *
     * This will remove the time from the formatted string.
     * @see https://docs.scriptable.app/dateformatter/#-usenotimestyle
     */
-  def useNoTimeStyle(): Unit
+  def useNoTimeStyle(): Unit = js.native
   /**
     * _Use a short style for the date._
     *
     * Dates with a short style are typically numeric only e.g. "08/23/19".
     * @see https://docs.scriptable.app/dateformatter/#-useshortdatestyle
     */
-  def useShortDateStyle(): Unit
+  def useShortDateStyle(): Unit = js.native
   /**
     * _Use a short style for the time._
     *
     * Times with a short style are typically numeric only but also includes the period for 12-hour clocks, e.g. "7:17 PM".
     * @see https://docs.scriptable.app/dateformatter/#-useshorttimestyle
     */
-  def useShortTimeStyle(): Unit
+  def useShortTimeStyle(): Unit = js.native
 }
 
 object DateFormatter {
@@ -193,5 +194,46 @@ object DateFormatter {
     val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), dateFormat = dateFormat.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], string = js.Any.fromFunction1(string), useFullDateStyle = js.Any.fromFunction0(useFullDateStyle), useFullTimeStyle = js.Any.fromFunction0(useFullTimeStyle), useLongDateStyle = js.Any.fromFunction0(useLongDateStyle), useLongTimeStyle = js.Any.fromFunction0(useLongTimeStyle), useMediumDateStyle = js.Any.fromFunction0(useMediumDateStyle), useMediumTimeStyle = js.Any.fromFunction0(useMediumTimeStyle), useNoDateStyle = js.Any.fromFunction0(useNoDateStyle), useNoTimeStyle = js.Any.fromFunction0(useNoTimeStyle), useShortDateStyle = js.Any.fromFunction0(useShortDateStyle), useShortTimeStyle = js.Any.fromFunction0(useShortTimeStyle))
     __obj.asInstanceOf[DateFormatter]
   }
+  @scala.inline
+  implicit class DateFormatterOps[Self <: DateFormatter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDate(value: String => String): Self = this.set("date", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDateFormat(value: String): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setString(value: Date => String): Self = this.set("string", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUseFullDateStyle(value: () => Unit): Self = this.set("useFullDateStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseFullTimeStyle(value: () => Unit): Self = this.set("useFullTimeStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseLongDateStyle(value: () => Unit): Self = this.set("useLongDateStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseLongTimeStyle(value: () => Unit): Self = this.set("useLongTimeStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseMediumDateStyle(value: () => Unit): Self = this.set("useMediumDateStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseMediumTimeStyle(value: () => Unit): Self = this.set("useMediumTimeStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseNoDateStyle(value: () => Unit): Self = this.set("useNoDateStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseNoTimeStyle(value: () => Unit): Self = this.set("useNoTimeStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseShortDateStyle(value: () => Unit): Self = this.set("useShortDateStyle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseShortTimeStyle(value: () => Unit): Self = this.set("useShortTimeStyle", js.Any.fromFunction0(value))
+  }
+  
 }
 

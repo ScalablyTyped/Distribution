@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ODatabaseSession () extends ODatabase {
   def this(client: OrientDBClient) = this()
+  def this(client: js.UndefOr[scala.Nothing], options: ODatabaseSessionOptions) = this()
   def this(client: OrientDBClient, options: ODatabaseSessionOptions) = this()
   var pool: ODatabaseSessionPool = js.native
   var sessionManager: OSessionManager = js.native

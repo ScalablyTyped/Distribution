@@ -12,7 +12,7 @@ A React component for displaying a calendar.
 | Keywords           | - |
 | # releases         | 63 |
 | # dependents       | 5 |
-| # downloads        | 947275 |
+| # downloads        | 955794 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,7 @@ Utilities for reading and writing the metadata of JavaScript functions.
 | Keywords           | aurelia, metadata, annotations |
 | # releases         | 4 |
 | # dependents       | 55 |
-| # downloads        | 534705 |
+| # downloads        | 540412 |
 | # stars            | 0 |
 
 ## Links

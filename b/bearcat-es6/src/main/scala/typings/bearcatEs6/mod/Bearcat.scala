@@ -23,6 +23,7 @@ trait Bearcat extends js.Object {
   def async(ids: String, cb: CallbackFunc): Unit = js.native
   def async(ids: js.Array[String]): Unit = js.native
   def async(ids: js.Array[String], cb: CallbackFunc): Unit = js.native
+  def call(beanName: String, context: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
   /**
     * Bearcat call function used for inherits to call super constructor function.
     *
@@ -37,9 +38,8 @@ trait Bearcat extends js.Object {
     * @param   args
     * @api     public
     */
-  def call(beanName: String): Unit = js.native
-  def call(beanName: String, args: js.Any*): Unit = js.native
   def call(beanName: String, context: js.Object, args: js.Any*): Unit = js.native
+  def call(beanName: String, context: Null, args: js.Any*): Unit = js.native
   /**
     * Bearcat createApp constructor function.
     *
@@ -61,7 +61,6 @@ trait Bearcat extends js.Object {
     */
   def createApp(configLocations: js.Array[String], opts: js.Object): Bearcat = js.native
   def createApp(opts: js.Object): Bearcat = js.native
-  def define(id: String, factory: ParamClassFunc): Unit = js.native
   /**
     * Bearcat define module(bean).
     *
@@ -70,6 +69,7 @@ trait Bearcat extends js.Object {
     * @param   context object
     * @api     public
     */
+  def define(id: String, factory: ParamClassFunc): Unit = js.native
   def define(id: String, factory: ParamClassFunc, context: js.Object): Unit = js.native
   /**
     * Bearcat shim to enable function inherits.

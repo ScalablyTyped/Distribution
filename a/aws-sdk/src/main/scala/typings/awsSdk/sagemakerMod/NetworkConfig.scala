@@ -19,16 +19,34 @@ trait NetworkConfig extends js.Object {
 
 object NetworkConfig {
   @scala.inline
-  def apply(
-    EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
-    VpcConfig: VpcConfig = null
-  ): NetworkConfig = {
+  def apply(): NetworkConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EnableInterContainerTrafficEncryption)) __obj.updateDynamic("EnableInterContainerTrafficEncryption")(EnableInterContainerTrafficEncryption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkConfig]
   }
+  @scala.inline
+  implicit class NetworkConfigOps[Self <: NetworkConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableInterContainerTrafficEncryption(value: Boolean): Self = this.set("EnableInterContainerTrafficEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableInterContainerTrafficEncryption: Self = this.set("EnableInterContainerTrafficEncryption", js.undefined)
+    @scala.inline
+    def setEnableNetworkIsolation(value: Boolean): Self = this.set("EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNetworkIsolation: Self = this.set("EnableNetworkIsolation", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

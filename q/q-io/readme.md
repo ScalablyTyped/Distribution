@@ -11,7 +11,7 @@ IO using Q promises
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 209 |
-| # downloads        | 1715379 |
+| # downloads        | 1705835 |
 | # stars            | 26 |
 
 ## Links

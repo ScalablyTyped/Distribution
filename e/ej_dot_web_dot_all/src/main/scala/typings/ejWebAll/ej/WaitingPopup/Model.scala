@@ -4,73 +4,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Model extends js.Object {
   /** Waitingpopup element append to given container element.
     * @Default {null}
     */
-  var appendTo: js.UndefOr[String] = js.undefined
+  var appendTo: js.UndefOr[String] = js.native
   /** Fires after Create WaitingPopup successfully
     */
-  var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
+  var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
   /** Sets the root class for the WaitingPopup control theme
     * @Default {null}
     */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** Fires after Destroy WaitingPopup successfully
     */
-  var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
+  var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
   /** Specifies the list of HTML attributes to be added to waitingpopup control.
     * @Default {{}}
     */
-  var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+  var htmlAttributes: js.UndefOr[js.Any] = js.native
   /** Enables or disables the default loading icon.
     * @Default {true}
     */
-  var showImage: js.UndefOr[Boolean] = js.undefined
+  var showImage: js.UndefOr[Boolean] = js.native
   /** Enables the visibility of the WaitingPopup control
     * @Default {false}
     */
-  var showOnInit: js.UndefOr[Boolean] = js.undefined
+  var showOnInit: js.UndefOr[Boolean] = js.native
   /** Specified a selector for elements, within the container.
     * @Default {null}
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[String] = js.native
   /** Loads HTML content inside the popup panel instead of the default icon
     * @Default {null}
     */
-  var template: js.UndefOr[js.Any] = js.undefined
+  var template: js.UndefOr[js.Any] = js.native
   /** Sets the custom text in the pop-up panel to notify the waiting process
     * @Default {null}
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    appendTo: String = null,
-    create: /* e */ CreateEventArgs => Unit = null,
-    cssClass: String = null,
-    destroy: /* e */ DestroyEventArgs => Unit = null,
-    htmlAttributes: js.Any = null,
-    showImage: js.UndefOr[Boolean] = js.undefined,
-    showOnInit: js.UndefOr[Boolean] = js.undefined,
-    target: String = null,
-    template: js.Any = null,
-    text: String = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction1(create))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(showImage)) __obj.updateDynamic("showImage")(showImage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnInit)) __obj.updateDynamic("showOnInit")(showOnInit.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: String): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setCreate(value: /* e */ CreateEventArgs => Unit): Self = this.set("create", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDestroy(value: /* e */ DestroyEventArgs => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setHtmlAttributes(value: js.Any): Self = this.set("htmlAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlAttributes: Self = this.set("htmlAttributes", js.undefined)
+    @scala.inline
+    def setShowImage(value: Boolean): Self = this.set("showImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowImage: Self = this.set("showImage", js.undefined)
+    @scala.inline
+    def setShowOnInit(value: Boolean): Self = this.set("showOnInit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnInit: Self = this.set("showOnInit", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTemplate(value: js.Any): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

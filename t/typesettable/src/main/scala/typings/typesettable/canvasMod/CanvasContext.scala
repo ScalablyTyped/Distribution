@@ -14,6 +14,7 @@ class CanvasContext protected ()
      with IRulerFactoryContext {
   def this(ctx: CanvasRenderingContext2D) = this()
   def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
+  def this(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle) = this()
   def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
   var ctx: js.Any = js.native
   var lineHeight: js.Any = js.native

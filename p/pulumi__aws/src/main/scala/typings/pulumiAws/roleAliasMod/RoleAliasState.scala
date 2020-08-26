@@ -27,18 +27,38 @@ trait RoleAliasState extends js.Object {
 
 object RoleAliasState {
   @scala.inline
-  def apply(
-    alias: Input[String] = null,
-    arn: Input[String] = null,
-    credentialDuration: Input[Double] = null,
-    roleArn: Input[String] = null
-  ): RoleAliasState = {
+  def apply(): RoleAliasState = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (credentialDuration != null) __obj.updateDynamic("credentialDuration")(credentialDuration.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleAliasState]
   }
+  @scala.inline
+  implicit class RoleAliasStateOps[Self <: RoleAliasState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: Input[String]): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCredentialDuration(value: Input[Double]): Self = this.set("credentialDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentialDuration: Self = this.set("credentialDuration", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

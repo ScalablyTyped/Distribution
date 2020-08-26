@@ -86,46 +86,102 @@ trait CreateFleetInput extends js.Object {
 
 object CreateFleetInput {
   @scala.inline
-  def apply(
-    EC2InstanceType: EC2InstanceType,
-    Name: NonZeroAndMaxString,
-    BuildId: BuildIdOrArn = null,
-    CertificateConfiguration: CertificateConfiguration = null,
-    Description: NonZeroAndMaxString = null,
-    EC2InboundPermissions: IpPermissionsList = null,
-    FleetType: FleetType = null,
-    InstanceRoleArn: NonEmptyString = null,
-    LogPaths: StringList = null,
-    MetricGroups: MetricGroupList = null,
-    NewGameSessionProtectionPolicy: ProtectionPolicy = null,
-    PeerVpcAwsAccountId: NonZeroAndMaxString = null,
-    PeerVpcId: NonZeroAndMaxString = null,
-    ResourceCreationLimitPolicy: ResourceCreationLimitPolicy = null,
-    RuntimeConfiguration: RuntimeConfiguration = null,
-    ScriptId: ScriptIdOrArn = null,
-    ServerLaunchParameters: NonZeroAndMaxString = null,
-    ServerLaunchPath: NonZeroAndMaxString = null,
-    Tags: TagList = null
-  ): CreateFleetInput = {
+  def apply(EC2InstanceType: EC2InstanceType, Name: NonZeroAndMaxString): CreateFleetInput = {
     val __obj = js.Dynamic.literal(EC2InstanceType = EC2InstanceType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (BuildId != null) __obj.updateDynamic("BuildId")(BuildId.asInstanceOf[js.Any])
-    if (CertificateConfiguration != null) __obj.updateDynamic("CertificateConfiguration")(CertificateConfiguration.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EC2InboundPermissions != null) __obj.updateDynamic("EC2InboundPermissions")(EC2InboundPermissions.asInstanceOf[js.Any])
-    if (FleetType != null) __obj.updateDynamic("FleetType")(FleetType.asInstanceOf[js.Any])
-    if (InstanceRoleArn != null) __obj.updateDynamic("InstanceRoleArn")(InstanceRoleArn.asInstanceOf[js.Any])
-    if (LogPaths != null) __obj.updateDynamic("LogPaths")(LogPaths.asInstanceOf[js.Any])
-    if (MetricGroups != null) __obj.updateDynamic("MetricGroups")(MetricGroups.asInstanceOf[js.Any])
-    if (NewGameSessionProtectionPolicy != null) __obj.updateDynamic("NewGameSessionProtectionPolicy")(NewGameSessionProtectionPolicy.asInstanceOf[js.Any])
-    if (PeerVpcAwsAccountId != null) __obj.updateDynamic("PeerVpcAwsAccountId")(PeerVpcAwsAccountId.asInstanceOf[js.Any])
-    if (PeerVpcId != null) __obj.updateDynamic("PeerVpcId")(PeerVpcId.asInstanceOf[js.Any])
-    if (ResourceCreationLimitPolicy != null) __obj.updateDynamic("ResourceCreationLimitPolicy")(ResourceCreationLimitPolicy.asInstanceOf[js.Any])
-    if (RuntimeConfiguration != null) __obj.updateDynamic("RuntimeConfiguration")(RuntimeConfiguration.asInstanceOf[js.Any])
-    if (ScriptId != null) __obj.updateDynamic("ScriptId")(ScriptId.asInstanceOf[js.Any])
-    if (ServerLaunchParameters != null) __obj.updateDynamic("ServerLaunchParameters")(ServerLaunchParameters.asInstanceOf[js.Any])
-    if (ServerLaunchPath != null) __obj.updateDynamic("ServerLaunchPath")(ServerLaunchPath.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFleetInput]
   }
+  @scala.inline
+  implicit class CreateFleetInputOps[Self <: CreateFleetInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEC2InstanceType(value: EC2InstanceType): Self = this.set("EC2InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: NonZeroAndMaxString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBuildId(value: BuildIdOrArn): Self = this.set("BuildId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildId: Self = this.set("BuildId", js.undefined)
+    @scala.inline
+    def setCertificateConfiguration(value: CertificateConfiguration): Self = this.set("CertificateConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateConfiguration: Self = this.set("CertificateConfiguration", js.undefined)
+    @scala.inline
+    def setDescription(value: NonZeroAndMaxString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEC2InboundPermissionsVarargs(value: IpPermission*): Self = this.set("EC2InboundPermissions", js.Array(value :_*))
+    @scala.inline
+    def setEC2InboundPermissions(value: IpPermissionsList): Self = this.set("EC2InboundPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEC2InboundPermissions: Self = this.set("EC2InboundPermissions", js.undefined)
+    @scala.inline
+    def setFleetType(value: FleetType): Self = this.set("FleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetType: Self = this.set("FleetType", js.undefined)
+    @scala.inline
+    def setInstanceRoleArn(value: NonEmptyString): Self = this.set("InstanceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceRoleArn: Self = this.set("InstanceRoleArn", js.undefined)
+    @scala.inline
+    def setLogPathsVarargs(value: NonZeroAndMaxString*): Self = this.set("LogPaths", js.Array(value :_*))
+    @scala.inline
+    def setLogPaths(value: StringList): Self = this.set("LogPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPaths: Self = this.set("LogPaths", js.undefined)
+    @scala.inline
+    def setMetricGroupsVarargs(value: MetricGroup*): Self = this.set("MetricGroups", js.Array(value :_*))
+    @scala.inline
+    def setMetricGroups(value: MetricGroupList): Self = this.set("MetricGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricGroups: Self = this.set("MetricGroups", js.undefined)
+    @scala.inline
+    def setNewGameSessionProtectionPolicy(value: ProtectionPolicy): Self = this.set("NewGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGameSessionProtectionPolicy: Self = this.set("NewGameSessionProtectionPolicy", js.undefined)
+    @scala.inline
+    def setPeerVpcAwsAccountId(value: NonZeroAndMaxString): Self = this.set("PeerVpcAwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcAwsAccountId: Self = this.set("PeerVpcAwsAccountId", js.undefined)
+    @scala.inline
+    def setPeerVpcId(value: NonZeroAndMaxString): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+    @scala.inline
+    def setResourceCreationLimitPolicy(value: ResourceCreationLimitPolicy): Self = this.set("ResourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceCreationLimitPolicy: Self = this.set("ResourceCreationLimitPolicy", js.undefined)
+    @scala.inline
+    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = this.set("RuntimeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeConfiguration: Self = this.set("RuntimeConfiguration", js.undefined)
+    @scala.inline
+    def setScriptId(value: ScriptIdOrArn): Self = this.set("ScriptId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScriptId: Self = this.set("ScriptId", js.undefined)
+    @scala.inline
+    def setServerLaunchParameters(value: NonZeroAndMaxString): Self = this.set("ServerLaunchParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerLaunchParameters: Self = this.set("ServerLaunchParameters", js.undefined)
+    @scala.inline
+    def setServerLaunchPath(value: NonZeroAndMaxString): Self = this.set("ServerLaunchPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerLaunchPath: Self = this.set("ServerLaunchPath", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListIndexResponse extends js.Object {
 
 object ListIndexResponse {
   @scala.inline
-  def apply(IndexAttachments: IndexAttachmentList = null, NextToken: NextToken = null): ListIndexResponse = {
+  def apply(): ListIndexResponse = {
     val __obj = js.Dynamic.literal()
-    if (IndexAttachments != null) __obj.updateDynamic("IndexAttachments")(IndexAttachments.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIndexResponse]
   }
+  @scala.inline
+  implicit class ListIndexResponseOps[Self <: ListIndexResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexAttachmentsVarargs(value: IndexAttachment*): Self = this.set("IndexAttachments", js.Array(value :_*))
+    @scala.inline
+    def setIndexAttachments(value: IndexAttachmentList): Self = this.set("IndexAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexAttachments: Self = this.set("IndexAttachments", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -29,6 +29,7 @@ class ResourcePages protected () extends js.Object {
   def create(
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   ): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] = js.native
   def create(params: ParamsResourcePagesCreate): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] = js.native
   def create(
     params: ParamsResourcePagesCreate,
@@ -59,6 +60,7 @@ class ResourcePages protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourcePagesDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourcePagesDelete, callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
   def delete(
@@ -88,6 +90,7 @@ class ResourcePages protected () extends js.Object {
   def get(
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   ): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] = js.native
   def get(params: ParamsResourcePagesGet): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] = js.native
   def get(
     params: ParamsResourcePagesGet,
@@ -125,6 +128,7 @@ class ResourcePages protected () extends js.Object {
   def list(
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse]
   ): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse] = js.native
   def list(params: ParamsResourcePagesList): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse] = js.native
   def list(
     params: ParamsResourcePagesList,
@@ -161,6 +165,7 @@ class ResourcePages protected () extends js.Object {
   def update(
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage]
   ): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] = js.native
   def update(params: ParamsResourcePagesUpdate): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupPage] = js.native
   def update(
     params: ParamsResourcePagesUpdate,

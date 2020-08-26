@@ -11,14 +11,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends js.Object {
-  // Modifying -------------------------------
-  /**
-    * For each selected element, the attribute with the specified name will be cleared at the start of the transition.
-    *
-    * @param name Name of the attribute.
-    * @param value Use null to clear the attribute.
-    */
-  def attr(name: String): this.type = js.native
   /**
     * For each selected element, assigns the attribute tween for the attribute with the specified name to the specified target value.
     * The starting value of the tween is the attribute’s value when the transition starts.
@@ -37,6 +29,14 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
   def attr(name: String, value: String): this.type = js.native
   def attr(name: String, value: Boolean): this.type = js.native
   def attr(name: String, value: Double): this.type = js.native
+  // Modifying -------------------------------
+  /**
+    * For each selected element, the attribute with the specified name will be cleared at the start of the transition.
+    *
+    * @param name Name of the attribute.
+    * @param value Use null to clear the attribute.
+    */
+  def attr(name: String, value: Null): this.type = js.native
   /**
     * For each selected element, assigns the attribute tween for the attribute with the specified name to the specified target value.
     * The starting value of the tween is the attribute’s value when the transition starts.
@@ -56,12 +56,18 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     */
   def attr(name: String, value: ValueFn[GElement, Datum, String | Double | Boolean | Null]): this.type = js.native
   /**
+    * Return the current interpolator factory for attribute with the specified name, or undefined if no such tween exists.
+    *
+    * @param name Name of attribute.
+    */
+  def attrTween(name: String): js.UndefOr[ValueFn[GElement, Datum, js.Function1[/* t */ Double, String]]] = js.native
+  /**
     * Remove the previously-assigned attribute tween of the specified name, if any.
     *
     * @param name Name of attribute.
     * @param factory Use null to remove previously-assigned attribute tween.
     */
-  def attrTween(name: String): this.type = js.native
+  def attrTween(name: String, factory: Null): this.type = js.native
   /**
     * Assign the attribute tween for the attribute with the specified name to the specified interpolator factory.
     * An interpolator factory is a function that returns an interpolator; when the transition starts, the factory is evaluated for each selected element.
@@ -75,13 +81,6 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     * which takes as its argument eased time t, typically in the range [0, 1] and returns the interpolated string.
     */
   def attrTween(name: String, factory: ValueFn[GElement, Datum, js.Function1[/* t */ Double, String]]): this.type = js.native
-  /**
-    * Return the current interpolator factory for attribute with the specified name, or undefined if no such tween exists.
-    *
-    * @param name Name of attribute.
-    */
-  @JSName("attrTween")
-  def attrTween_Union(name: String): js.UndefOr[ValueFn[GElement, Datum, js.Function1[/* t */ Double, String]]] = js.native
   /**
     * Invoke the specified function exactly once, passing in this transition along with any optional arguments.
     * Returns this transition.
@@ -240,6 +239,17 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     * Return an array of all (non-null) elements in this transition.
     */
   def nodes(): js.Array[GElement] = js.native
+  // Event Handling -------------------
+  /**
+    * Return the currently-assigned listener for the specified event typename on the first (non-null) selected element, if any.
+    * If multiple typenames are specified, the first matching listener is returned.
+    *
+    * @param typenames The typenames is one of the following string event types: start (when the transition starts), end (when the transition ends),
+    * interrupt (when the transition is interrupted.) Note that these are not native DOM events. The type may be optionally followed by a period (.) and a name;
+    * the optional name allows multiple callbacks to be registered to receive events of the same type, such as "start.foo"" and "start.bar".
+    * To specify multiple typenames, separate typenames with spaces, such as "interrupt end"" or "start.foo start.bar".
+    */
+  def on(`type`: String): js.UndefOr[ValueFn[GElement, Datum, Unit]] = js.native
   /**
     * Add a listener to each selected element for the specified event typenames.
     *
@@ -263,19 +273,7 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     * as the typename, where foo is the name; to remove all listeners with no name, specify "." as the typename.
     * @param listener Use null to remove listeners.
     */
-  def on(typenames: String): this.type = js.native
-  // Event Handling -------------------
-  /**
-    * Return the currently-assigned listener for the specified event typename on the first (non-null) selected element, if any.
-    * If multiple typenames are specified, the first matching listener is returned.
-    *
-    * @param typenames The typenames is one of the following string event types: start (when the transition starts), end (when the transition ends),
-    * interrupt (when the transition is interrupted.) Note that these are not native DOM events. The type may be optionally followed by a period (.) and a name;
-    * the optional name allows multiple callbacks to be registered to receive events of the same type, such as "start.foo"" and "start.bar".
-    * To specify multiple typenames, separate typenames with spaces, such as "interrupt end"" or "start.foo start.bar".
-    */
-  @JSName("on")
-  def on_Union(`type`: String): js.UndefOr[ValueFn[GElement, Datum, Unit]] = js.native
+  def on(typenames: String, listener: Null): this.type = js.native
   /**
     * For each selected element, removes the element when the transition ends, as long as the element has no other active or pending transitions.
     * If the element has other active or pending transitions, does nothing.
@@ -339,13 +337,6 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     */
   def size(): Double = js.native
   /**
-    * For each selected element, the style with the specified name will be cleared at the start of the transition.
-    *
-    * @param name Name of the style.
-    * @param value Use null to clear the style.
-    */
-  def style(name: String): this.type = js.native
-  /**
     * For each selected element, assigns the style tween for the style with the specified name to the specified target value with the
     * specified priority.
     * The starting value of the tween is the style’s inline value if present, and otherwise its computed value.
@@ -365,6 +356,13 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
   def style(name: String, value: String): this.type = js.native
   def style(name: String, value: Boolean): this.type = js.native
   def style(name: String, value: Double): this.type = js.native
+  /**
+    * For each selected element, the style with the specified name will be cleared at the start of the transition.
+    *
+    * @param name Name of the style.
+    * @param value Use null to clear the style.
+    */
+  def style(name: String, value: Null): this.type = js.native
   /**
     * For each selected element, assigns the style tween for the style with the specified name to the specified target value with the
     * specified priority.
@@ -386,12 +384,18 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     */
   def style(name: String, value: ValueFn[GElement, Datum, String | Double | Boolean | Null]): this.type = js.native
   /**
+    * Return the current interpolator factory for style with the specified name, or undefined if no such tween exists.
+    *
+    * @param name Name of style.
+    */
+  def styleTween(name: String): js.UndefOr[ValueFn[GElement, Datum, js.Function1[/* t */ Double, String]]] = js.native
+  /**
     * Remove the previously-assigned style tween of the specified name, if any.
     *
     * @param name Name of style.
     * @param factory Use null to remove previously-assigned style tween.
     */
-  def styleTween(name: String): this.type = js.native
+  def styleTween(name: String, factory: Null): this.type = js.native
   /**
     * Assign the style tween for the style with the specified name to the specified interpolator factory.
     * An interpolator factory is a function that returns an interpolator; when the transition starts, the factory is evaluated for each selected element.
@@ -406,13 +410,6 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     * @param priority An optional priority flag, either null or the string important (without the exclamation point)
     */
   def styleTween(name: String, factory: ValueFn[GElement, Datum, js.Function1[/* t */ Double, String]]): this.type = js.native
-  /**
-    * Return the current interpolator factory for style with the specified name, or undefined if no such tween exists.
-    *
-    * @param name Name of style.
-    */
-  @JSName("styleTween")
-  def styleTween_Union(name: String): js.UndefOr[ValueFn[GElement, Datum, js.Function1[/* t */ Double, String]]] = js.native
   @JSName("styleTween")
   def styleTween_important(
     name: String,
@@ -432,12 +429,6 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     priority: important
   ): this.type = js.native
   /**
-    * For each selected element, the text content will be cleared, replacing any existing child elements.
-    *
-    * @param value Use null to clear the text content.
-    */
-  def text(): this.type = js.native
-  /**
     * For each selected element, sets the text content to the specified target value when the transition starts.
     * To interpolate text rather than to set it on start, use transition.tween (for example) or
     * append a replacement element and cross-fade opacity (for example). Text is not interpolated by default because it is usually undesirable.
@@ -447,6 +438,12 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
   def text(value: String): this.type = js.native
   def text(value: Boolean): this.type = js.native
   def text(value: Double): this.type = js.native
+  /**
+    * For each selected element, the text content will be cleared, replacing any existing child elements.
+    *
+    * @param value Use null to clear the text content.
+    */
+  def text(value: Null): this.type = js.native
   /**
     * For each selected element, sets the text content returned by the value function for each selected element when the transition starts.
     *
@@ -468,13 +465,20 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     */
   def transition(): Transition_[GElement, Datum, PElement, PDatum] = js.native
   /**
+    * Returns the tween with the specified name, or undefined, if no tween was previously assigned to
+    * that name.
+    *
+    * @param name Name of tween.
+    */
+  def tween(name: String): js.UndefOr[ValueFn[GElement, Datum, js.Function1[/* t */ Double, Unit]]] = js.native
+  /**
     * Removes the tween with the specified name, if a tween was previously assigned to
     * that name.
     *
     * @param name Name of tween.
     * @param tweenFn Use null to remove a previously-assigned tween.
     */
-  def tween(name: String): this.type = js.native
+  def tween(name: String, tweenFn: Null): this.type = js.native
   /**
     * For each selected element, assigns the tween with the specified name with the specified value function.
     * The value must be specified as a function that returns a function.
@@ -488,13 +492,5 @@ trait Transition_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */,
     * which takes as its argument eased time t, typically in the range [0, 1] and performs the tweening activities for each transition frame.
     */
   def tween(name: String, tweenFn: ValueFn[GElement, Datum, js.Function1[/* t */ Double, Unit]]): this.type = js.native
-  /**
-    * Returns the tween with the specified name, or undefined, if no tween was previously assigned to
-    * that name.
-    *
-    * @param name Name of tween.
-    */
-  @JSName("tween")
-  def tween_Union(name: String): js.UndefOr[ValueFn[GElement, Datum, js.Function1[/* t */ Double, Unit]]] = js.native
 }
 

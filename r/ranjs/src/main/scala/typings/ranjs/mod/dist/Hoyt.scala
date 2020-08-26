@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Hoyt ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Hoyt] {
   def this(q: Double) = this()
+  def this(q: js.UndefOr[scala.Nothing], omega: Double) = this()
   def this(q: Double, omega: Double) = this()
 }
 

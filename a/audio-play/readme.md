@@ -12,7 +12,7 @@ Play audio buffer in node or browser
 | Keywords           | player, audio, audiojs, web-audio-api, sound |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 17991 |
+| # downloads        | 19006 |
 | # stars            | 2 |
 
 ## Links

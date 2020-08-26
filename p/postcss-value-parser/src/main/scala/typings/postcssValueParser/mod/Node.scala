@@ -1,6 +1,5 @@
 package typings.postcssValueParser.mod
 
-import typings.postcssValueParser.postcssValueParserBooleans.`true`
 import typings.postcssValueParser.postcssValueParserStrings.Apostrophe
 import typings.postcssValueParser.postcssValueParserStrings.Quotationmark
 import typings.postcssValueParser.postcssValueParserStrings.`unicode-range`
@@ -60,32 +59,22 @@ object Node {
     nodes: js.Array[Node],
     sourceIndex: Double,
     `type`: function,
-    value: String,
-    unclosed: `true` = null
+    value: String
   ): Node = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unclosed != null) __obj.updateDynamic("unclosed")(unclosed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def CommentNode(sourceIndex: Double, `type`: comment, value: String, unclosed: `true` = null): Node = {
+  def CommentNode(sourceIndex: Double, `type`: comment, value: String): Node = {
     val __obj = js.Dynamic.literal(sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unclosed != null) __obj.updateDynamic("unclosed")(unclosed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def StringNode(
-    quote: Quotationmark | Apostrophe,
-    sourceIndex: Double,
-    `type`: string,
-    value: String,
-    unclosed: `true` = null
-  ): Node = {
+  def StringNode(quote: Quotationmark | Apostrophe, sourceIndex: Double, `type`: string, value: String): Node = {
     val __obj = js.Dynamic.literal(quote = quote.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unclosed != null) __obj.updateDynamic("unclosed")(unclosed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

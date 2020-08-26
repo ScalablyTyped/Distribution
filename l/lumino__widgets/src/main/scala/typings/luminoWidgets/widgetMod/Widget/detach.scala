@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/widget", "Widget.detach")
+@JSImport("@lumino/widgets/types/widget", "Widget.detach")
 @js.native
 object detach extends js.Object {
   /**

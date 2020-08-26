@@ -13,16 +13,36 @@ trait LinuxParameters extends js.Object {
 
 object LinuxParameters {
   @scala.inline
-  def apply(
-    capabilities: KernelCapabilities = null,
-    devices: js.Array[Device] = null,
-    initProcessEnabled: js.UndefOr[Boolean] = js.undefined
-  ): LinuxParameters = {
+  def apply(): LinuxParameters = {
     val __obj = js.Dynamic.literal()
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
-    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxParameters]
   }
+  @scala.inline
+  implicit class LinuxParametersOps[Self <: LinuxParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapabilities(value: KernelCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setDevicesVarargs(value: Device*): Self = this.set("devices", js.Array(value :_*))
+    @scala.inline
+    def setDevices(value: js.Array[Device]): Self = this.set("devices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevices: Self = this.set("devices", js.undefined)
+    @scala.inline
+    def setInitProcessEnabled(value: Boolean): Self = this.set("initProcessEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitProcessEnabled: Self = this.set("initProcessEnabled", js.undefined)
+  }
+  
 }
 

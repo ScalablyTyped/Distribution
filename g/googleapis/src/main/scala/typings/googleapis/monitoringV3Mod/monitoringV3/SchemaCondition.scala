@@ -48,18 +48,38 @@ trait SchemaCondition extends js.Object {
 
 object SchemaCondition {
   @scala.inline
-  def apply(
-    conditionAbsent: SchemaMetricAbsence = null,
-    conditionThreshold: SchemaMetricThreshold = null,
-    displayName: String = null,
-    name: String = null
-  ): SchemaCondition = {
+  def apply(): SchemaCondition = {
     val __obj = js.Dynamic.literal()
-    if (conditionAbsent != null) __obj.updateDynamic("conditionAbsent")(conditionAbsent.asInstanceOf[js.Any])
-    if (conditionThreshold != null) __obj.updateDynamic("conditionThreshold")(conditionThreshold.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCondition]
   }
+  @scala.inline
+  implicit class SchemaConditionOps[Self <: SchemaCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionAbsent(value: SchemaMetricAbsence): Self = this.set("conditionAbsent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionAbsent: Self = this.set("conditionAbsent", js.undefined)
+    @scala.inline
+    def setConditionThreshold(value: SchemaMetricThreshold): Self = this.set("conditionThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditionThreshold: Self = this.set("conditionThreshold", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

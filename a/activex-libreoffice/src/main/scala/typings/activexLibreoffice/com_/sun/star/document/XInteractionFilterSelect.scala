@@ -19,17 +19,18 @@ import scala.scalajs.js.annotation._
   * @see NoSuchFilterRequest
   * @see com.sun.star.task.XInteractionAbort
   */
+@js.native
 trait XInteractionFilterSelect extends XInteractionContinuation {
   /** used by detection to get selected filter */
-  var Filter: String
+  var Filter: String = js.native
   /** used by detection to get selected filter */
-  def getFilter(): String
+  def getFilter(): String = js.native
   /**
     * used by interaction to set selected filter
     *
     * This value must be saved till another one will be set and must be provided on {@link getFilter()} for interest users.
     */
-  def setFilter(Name: String): Unit
+  def setFilter(Name: String): Unit = js.native
 }
 
 object XInteractionFilterSelect {
@@ -46,5 +47,24 @@ object XInteractionFilterSelect {
     val __obj = js.Dynamic.literal(Filter = Filter.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getFilter = js.Any.fromFunction0(getFilter), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), select = js.Any.fromFunction0(select), setFilter = js.Any.fromFunction1(setFilter))
     __obj.asInstanceOf[XInteractionFilterSelect]
   }
+  @scala.inline
+  implicit class XInteractionFilterSelectOps[Self <: XInteractionFilterSelect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilter(value: String): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetFilter(value: () => String): Self = this.set("getFilter", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetFilter(value: String => Unit): Self = this.set("setFilter", js.Any.fromFunction1(value))
+  }
+  
 }
 

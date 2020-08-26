@@ -12,7 +12,7 @@ Formats whitespaces in a SQL query to make it more readable
 | Keywords           | sql, formatter, format, n1ql, whitespaces |
 | # releases         | 8 |
 | # dependents       | 35 |
-| # downloads        | 574137 |
+| # downloads        | 697276 |
 | # stars            | 0 |
 
 ## Links

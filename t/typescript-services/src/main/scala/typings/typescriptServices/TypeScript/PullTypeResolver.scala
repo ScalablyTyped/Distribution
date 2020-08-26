@@ -118,7 +118,6 @@ trait PullTypeResolver extends js.Object {
   /* private */ def checkTypeCompatibilityBetweenBases(name: js.Any, typeSymbol: js.Any, context: js.Any): js.Any = js.native
   /* private */ def checkTypeForDuplicateIndexSignatures(enclosingTypeSymbol: js.Any): js.Any = js.native
   /* private */ def checkTypePrivacyOfSignatures(declSymbol: js.Any, signatures: js.Any, privacyErrorReporter: js.Any): js.Any = js.native
-  /* private */ def checkUniquenessOfImportNames(decls: js.Any): js.Any = js.native
   /* private */ def checkUniquenessOfImportNames(decls: js.Any, doesNameExistOutside: js.Any): js.Any = js.native
   /* private */ def computeArrayLiteralExpressionSymbol(arrayLit: js.Any, isContextuallyTyped: js.Any, context: js.Any): js.Any = js.native
   /* private */ def computeDottedNameExpression(expression: js.Any, name: js.Any, context: js.Any, checkSuperPrivateAndStaticAccess: js.Any): js.Any = js.native
@@ -133,7 +132,6 @@ trait PullTypeResolver extends js.Object {
   /* private */ def computeInvocationExpressionSymbol(callEx: js.Any, context: js.Any, additionalResults: js.Any): js.Any = js.native
   /* private */ def computeNameExpression(nameAST: js.Any, context: js.Any): js.Any = js.native
   /* private */ def computeObjectCreationExpressionSymbol(callEx: js.Any, context: js.Any, additionalResults: js.Any): js.Any = js.native
-  /* private */ def computeObjectLiteralExpression(objectLitAST: js.Any, isContextuallyTyped: js.Any, context: js.Any): js.Any = js.native
   /* private */ def computeObjectLiteralExpression(objectLitAST: js.Any, isContextuallyTyped: js.Any, context: js.Any, additionalResults: js.Any): js.Any = js.native
   /* private */ def computeQualifiedName(dottedNameAST: js.Any, context: js.Any): js.Any = js.native
   /* private */ def computeTypeNameExpression(nameAST: js.Any, context: js.Any): js.Any = js.native
@@ -532,19 +530,6 @@ trait PullTypeResolver extends js.Object {
     allNumericMemberTypes: js.Any,
     boundMemberSymbols: js.Any,
     isUsingExistingSymbol: js.Any,
-    pullTypeContext: js.Any
-  ): js.Any = js.native
-  /* private */ def resolveObjectLiteralMembers(
-    objectLiteralDeclaration: js.Any,
-    objectLiteralTypeSymbol: js.Any,
-    objectLiteralContextualType: js.Any,
-    objectLiteralMembers: js.Any,
-    stringIndexerSignature: js.Any,
-    numericIndexerSignature: js.Any,
-    allMemberTypes: js.Any,
-    allNumericMemberTypes: js.Any,
-    boundMemberSymbols: js.Any,
-    isUsingExistingSymbol: js.Any,
     pullTypeContext: js.Any,
     additionalResults: js.Any
   ): js.Any = js.native
@@ -603,7 +588,6 @@ trait PullTypeResolver extends js.Object {
   /* private */ def resolveVoidExpression(ast: js.Any, context: js.Any): js.Any = js.native
   /* private */ def resolveWhileStatement(ast: js.Any, context: js.Any): js.Any = js.native
   /* private */ def resolveWithStatement(ast: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def scanVariableDeclarationGroups(enclosingDecl: js.Any, firstDeclHandler: js.Any): js.Any = js.native
   /* private */ def scanVariableDeclarationGroups(enclosingDecl: js.Any, firstDeclHandler: js.Any, subsequentDeclHandler: js.Any): js.Any = js.native
   /* private */ def setSymbolForAST(ast: js.Any, symbol: js.Any, context: js.Any): js.Any = js.native
   /* private */ def setTypeChecked(ast: js.Any, context: js.Any): js.Any = js.native
@@ -628,8 +612,6 @@ trait PullTypeResolver extends js.Object {
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
   /* private */ def signatureGroupsAreIdentical(sg1: js.Any, sg2: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def signatureIsAssignableToTarget(s1: js.Any, s2: js.Any, ast: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def signatureIsAssignableToTarget(s1: js.Any, s2: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def signatureIsAssignableToTarget(
     s1: js.Any,
     s2: js.Any,
@@ -659,9 +641,7 @@ trait PullTypeResolver extends js.Object {
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
   def signatureReturnTypesAreIdentical(s1: PullSignatureSymbol, s2: PullSignatureSymbol, context: PullTypeResolutionContext): Boolean = js.native
-  /* private */ def signatureTypeParametersParametersAndReturnTypesAreIdentical(s1: js.Any, s2: js.Any, context: js.Any): js.Any = js.native
   /* private */ def signatureTypeParametersParametersAndReturnTypesAreIdentical(s1: js.Any, s2: js.Any, context: js.Any, includingReturnType: js.Any): js.Any = js.native
-  /* private */ def signaturesAreIdentical(s1: js.Any, s2: js.Any, context: js.Any): js.Any = js.native
   /* private */ def signaturesAreIdentical(s1: js.Any, s2: js.Any, context: js.Any, includingReturnType: js.Any): js.Any = js.native
   def signaturesAreIdenticalWithNewEnclosingTypes(s1: PullSignatureSymbol, s2: PullSignatureSymbol, context: PullTypeResolutionContext): Boolean = js.native
   def signaturesAreIdenticalWithNewEnclosingTypes(
@@ -677,7 +657,6 @@ trait PullTypeResolver extends js.Object {
     context: PullTypeResolutionContext,
     includingReturnType: Boolean
   ): Boolean = js.native
-  /* private */ def sourceCallSignaturesAreAssignableToTargetCallSignatures(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceCallSignaturesAreAssignableToTargetCallSignatures(
     source: js.Any,
     target: js.Any,
@@ -696,7 +675,6 @@ trait PullTypeResolver extends js.Object {
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
-  /* private */ def sourceConstructSignaturesAreAssignableToTargetConstructSignatures(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceConstructSignaturesAreAssignableToTargetConstructSignatures(
     source: js.Any,
     target: js.Any,
@@ -715,7 +693,6 @@ trait PullTypeResolver extends js.Object {
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
-  /* private */ def sourceIndexSignaturesAreAssignableToTargetIndexSignatures(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceIndexSignaturesAreAssignableToTargetIndexSignatures(
     source: js.Any,
     target: js.Any,
@@ -734,8 +711,6 @@ trait PullTypeResolver extends js.Object {
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
-  /* private */ def sourceIsAssignableToTarget(source: js.Any, target: js.Any, ast: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def sourceIsAssignableToTarget(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceIsAssignableToTarget(
     source: js.Any,
     target: js.Any,
@@ -744,8 +719,6 @@ trait PullTypeResolver extends js.Object {
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
-  /* private */ def sourceIsAssignableToTargetWithNewEnclosingTypes(source: js.Any, target: js.Any, ast: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def sourceIsAssignableToTargetWithNewEnclosingTypes(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceIsAssignableToTargetWithNewEnclosingTypes(
     source: js.Any,
     target: js.Any,
@@ -795,8 +768,6 @@ trait PullTypeResolver extends js.Object {
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
-  /* private */ def sourceIsSubtypeOfTarget(source: js.Any, target: js.Any, ast: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def sourceIsSubtypeOfTarget(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceIsSubtypeOfTarget(
     source: js.Any,
     target: js.Any,
@@ -805,7 +776,6 @@ trait PullTypeResolver extends js.Object {
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
   ): js.Any = js.native
-  /* private */ def sourceMembersAreAssignableToTargetMembers(source: js.Any, target: js.Any, ast: js.Any, context: js.Any, comparisonInfo: js.Any): js.Any = js.native
   /* private */ def sourceMembersAreAssignableToTargetMembers(
     source: js.Any,
     target: js.Any,
@@ -823,15 +793,6 @@ trait PullTypeResolver extends js.Object {
     context: js.Any,
     comparisonInfo: js.Any,
     isComparingInstantiatedSignatures: js.Any
-  ): js.Any = js.native
-  /* private */ def sourcePropertyIsAssignableToTargetProperty(
-    source: js.Any,
-    target: js.Any,
-    sourceProp: js.Any,
-    targetProp: js.Any,
-    ast: js.Any,
-    context: js.Any,
-    comparisonInfo: js.Any
   ): js.Any = js.native
   /* private */ def sourcePropertyIsAssignableToTargetProperty(
     source: js.Any,
@@ -919,8 +880,6 @@ trait PullTypeResolver extends js.Object {
   /* private */ def typeCheckFinallyClause(ast: js.Any, context: js.Any): js.Any = js.native
   /* private */ def typeCheckForInStatement(forInStatement: js.Any, context: js.Any): js.Any = js.native
   /* private */ def typeCheckFunctionExpression(funcDecl: js.Any, isContextuallyTyped: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def typeCheckFunctionOverloads(funcDecl: js.Any, context: js.Any): js.Any = js.native
-  /* private */ def typeCheckFunctionOverloads(funcDecl: js.Any, context: js.Any, signature: js.Any): js.Any = js.native
   /* private */ def typeCheckFunctionOverloads(funcDecl: js.Any, context: js.Any, signature: js.Any, allSignatures: js.Any): js.Any = js.native
   /* private */ def typeCheckFunctionPropertyAssignment(funcProp: js.Any, isContextuallyTyped: js.Any, context: js.Any): js.Any = js.native
   /* private */ def typeCheckGetAccessorDeclaration(funcDeclAST: js.Any, context: js.Any): js.Any = js.native

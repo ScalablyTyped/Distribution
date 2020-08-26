@@ -19,41 +19,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlyoutProps extends js.Object {
-  var anchor: js.Any
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var color: js.UndefOr[blue | orange | red | white | darkGray] = js.undefined
-  var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
-  var positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined
-  var shouldFocus: js.UndefOr[Boolean] = js.undefined
-  var showCaret: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[xs | sm | md | lg | xl | Double] = js.undefined
+  var anchor: js.Any = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var color: js.UndefOr[blue | orange | red | white | darkGray] = js.native
+  var idealDirection: js.UndefOr[up | right | down | left] = js.native
+  var positionRelativeToAnchor: js.UndefOr[Boolean] = js.native
+  var shouldFocus: js.UndefOr[Boolean] = js.native
+  var showCaret: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[xs | sm | md | lg | xl | Double] = js.native
    // ideally a HTMLAnchorElement
-  def onDismiss(): Unit
+  def onDismiss(): Unit = js.native
 }
 
 object FlyoutProps {
   @scala.inline
-  def apply(
-    anchor: js.Any,
-    onDismiss: () => Unit,
-    children: ReactNode = null,
-    color: blue | orange | red | white | darkGray = null,
-    idealDirection: up | right | down | left = null,
-    positionRelativeToAnchor: js.UndefOr[Boolean] = js.undefined,
-    shouldFocus: js.UndefOr[Boolean] = js.undefined,
-    showCaret: js.UndefOr[Boolean] = js.undefined,
-    size: xs | sm | md | lg | xl | Double = null
-  ): FlyoutProps = {
+  def apply(anchor: js.Any, onDismiss: () => Unit): FlyoutProps = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (idealDirection != null) __obj.updateDynamic("idealDirection")(idealDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionRelativeToAnchor)) __obj.updateDynamic("positionRelativeToAnchor")(positionRelativeToAnchor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldFocus)) __obj.updateDynamic("shouldFocus")(shouldFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCaret)) __obj.updateDynamic("showCaret")(showCaret.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyoutProps]
   }
+  @scala.inline
+  implicit class FlyoutPropsOps[Self <: FlyoutProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchor(value: js.Any): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnDismiss(value: () => Unit): Self = this.set("onDismiss", js.Any.fromFunction0(value))
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setColor(value: blue | orange | red | white | darkGray): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setIdealDirection(value: up | right | down | left): Self = this.set("idealDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdealDirection: Self = this.set("idealDirection", js.undefined)
+    @scala.inline
+    def setPositionRelativeToAnchor(value: Boolean): Self = this.set("positionRelativeToAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionRelativeToAnchor: Self = this.set("positionRelativeToAnchor", js.undefined)
+    @scala.inline
+    def setShouldFocus(value: Boolean): Self = this.set("shouldFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldFocus: Self = this.set("shouldFocus", js.undefined)
+    @scala.inline
+    def setShowCaret(value: Boolean): Self = this.set("showCaret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCaret: Self = this.set("showCaret", js.undefined)
+    @scala.inline
+    def setSize(value: xs | sm | md | lg | xl | Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

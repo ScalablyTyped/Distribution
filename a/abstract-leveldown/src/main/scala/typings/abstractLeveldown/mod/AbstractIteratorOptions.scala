@@ -1,51 +1,81 @@
 package typings.abstractLeveldown.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AbstractIteratorOptions[K] extends AbstractOptions {
-  var gt: js.UndefOr[K] = js.undefined
-  var gte: js.UndefOr[K] = js.undefined
-  var keyAsBuffer: js.UndefOr[Boolean] = js.undefined
-  var keys: js.UndefOr[Boolean] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var lt: js.UndefOr[K] = js.undefined
-  var lte: js.UndefOr[K] = js.undefined
-  var reverse: js.UndefOr[Boolean] = js.undefined
-  var valueAsBuffer: js.UndefOr[Boolean] = js.undefined
-  var values: js.UndefOr[Boolean] = js.undefined
+  var gt: js.UndefOr[K] = js.native
+  var gte: js.UndefOr[K] = js.native
+  var keyAsBuffer: js.UndefOr[Boolean] = js.native
+  var keys: js.UndefOr[Boolean] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var lt: js.UndefOr[K] = js.native
+  var lte: js.UndefOr[K] = js.native
+  var reverse: js.UndefOr[Boolean] = js.native
+  var valueAsBuffer: js.UndefOr[Boolean] = js.native
+  var values: js.UndefOr[Boolean] = js.native
 }
 
 object AbstractIteratorOptions {
   @scala.inline
-  def apply[K](
-    StringDictionary: StringDictionary[js.Any] = null,
-    gt: K = null,
-    gte: K = null,
-    keyAsBuffer: js.UndefOr[Boolean] = js.undefined,
-    keys: js.UndefOr[Boolean] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined,
-    lt: K = null,
-    lte: K = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    valueAsBuffer: js.UndefOr[Boolean] = js.undefined,
-    values: js.UndefOr[Boolean] = js.undefined
-  ): AbstractIteratorOptions[K] = {
+  def apply[K](): AbstractIteratorOptions[K] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (gt != null) __obj.updateDynamic("gt")(gt.asInstanceOf[js.Any])
-    if (gte != null) __obj.updateDynamic("gte")(gte.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyAsBuffer)) __obj.updateDynamic("keyAsBuffer")(keyAsBuffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keys)) __obj.updateDynamic("keys")(keys.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (lt != null) __obj.updateDynamic("lt")(lt.asInstanceOf[js.Any])
-    if (lte != null) __obj.updateDynamic("lte")(lte.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueAsBuffer)) __obj.updateDynamic("valueAsBuffer")(valueAsBuffer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractIteratorOptions[K]]
   }
+  @scala.inline
+  implicit class AbstractIteratorOptionsOps[Self <: AbstractIteratorOptions[_], K] (val x: Self with AbstractIteratorOptions[K]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGt(value: K): Self = this.set("gt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGt: Self = this.set("gt", js.undefined)
+    @scala.inline
+    def setGte(value: K): Self = this.set("gte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGte: Self = this.set("gte", js.undefined)
+    @scala.inline
+    def setKeyAsBuffer(value: Boolean): Self = this.set("keyAsBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyAsBuffer: Self = this.set("keyAsBuffer", js.undefined)
+    @scala.inline
+    def setKeys(value: Boolean): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeys: Self = this.set("keys", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setLt(value: K): Self = this.set("lt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLt: Self = this.set("lt", js.undefined)
+    @scala.inline
+    def setLte(value: K): Self = this.set("lte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLte: Self = this.set("lte", js.undefined)
+    @scala.inline
+    def setReverse(value: Boolean): Self = this.set("reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReverse: Self = this.set("reverse", js.undefined)
+    @scala.inline
+    def setValueAsBuffer(value: Boolean): Self = this.set("valueAsBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueAsBuffer: Self = this.set("valueAsBuffer", js.undefined)
+    @scala.inline
+    def setValues(value: Boolean): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

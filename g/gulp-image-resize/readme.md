@@ -12,7 +12,7 @@ Resizing images made easy.
 | Keywords           | gulpplugin |
 | # releases         | 2 |
 | # dependents       | 23 |
-| # downloads        | 130029 |
+| # downloads        | 131214 |
 | # stars            | 45 |
 
 ## Links

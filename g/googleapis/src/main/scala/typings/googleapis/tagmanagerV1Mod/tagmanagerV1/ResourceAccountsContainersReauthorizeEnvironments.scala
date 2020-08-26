@@ -30,6 +30,7 @@ class ResourceAccountsContainersReauthorizeEnvironments protected () extends js.
     */
   def update(): GaxiosPromise[SchemaEnvironment] = js.native
   def update(callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
   def update(params: ParamsResourceAccountsContainersReauthorizeEnvironmentsUpdate): GaxiosPromise[SchemaEnvironment] = js.native
   def update(
     params: ParamsResourceAccountsContainersReauthorizeEnvironmentsUpdate,

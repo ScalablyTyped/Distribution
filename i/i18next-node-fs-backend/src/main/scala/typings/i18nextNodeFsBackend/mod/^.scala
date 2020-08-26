@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 object ^
   extends TopLevel[
       Instantiable2[
-        js.UndefOr[/* services */ js.Any], 
-        js.UndefOr[/* options */ i18nextNodeFsBackEndOptions], 
+        /* services */ js.UndefOr[js.Any], 
+        /* options */ js.UndefOr[i18nextNodeFsBackEndOptions], 
         Backend
       ]
     ]

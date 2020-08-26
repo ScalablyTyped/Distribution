@@ -14,6 +14,7 @@ object lengthRequired extends js.Object {
     * @see {@link https://github.com/hapijs/boom#boomlengthrequiredmessage-data}
     */
   def apply[Data](): Boom[Data] = js.native
+  def apply[Data](message: js.UndefOr[scala.Nothing], data: Data): Boom[Data] = js.native
   def apply[Data](message: String): Boom[Data] = js.native
   def apply[Data](message: String, data: Data): Boom[Data] = js.native
 }

@@ -38,7 +38,6 @@ class TargetLocator protected () extends js.Object {
     *     driver has changed focus to the default content.
     */
   def defaultContent(): js.Promise[Unit] = js.native
-  def frame(): js.Promise[Unit] = js.native
   /**
     * Changes the focus of all future commands to another frame on the page. The
     * target frame may be specified as one of the following:
@@ -57,6 +56,7 @@ class TargetLocator protected () extends js.Object {
     * @return {!Promise<void>} A promise that will be resolved
     *     when the driver has changed focus to the specified frame.
     */
+  def frame(): js.Promise[Unit] = js.native
   def frame(id: Double): js.Promise[Unit] = js.native
   def frame(id: WebElement): js.Promise[Unit] = js.native
   /**

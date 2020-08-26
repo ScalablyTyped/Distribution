@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object importSpecifier extends js.Object {
   def apply(): ImportSpecifier_ = js.native
+  def apply(local: js.UndefOr[scala.Nothing], imported: Identifier_): ImportSpecifier_ = js.native
   def apply(local: Identifier_): ImportSpecifier_ = js.native
   def apply(local: Identifier_, imported: Identifier_): ImportSpecifier_ = js.native
 }

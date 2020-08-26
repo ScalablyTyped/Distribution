@@ -5,30 +5,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DraggerOptions extends js.Object {
-  val onDragEnd: js.UndefOr[DragEndListener] = js.undefined
-  val onDragMove: js.UndefOr[DragMoveListener] = js.undefined
-  val onDragStart: js.UndefOr[DragStartListener] = js.undefined
+  val onDragEnd: js.UndefOr[DragEndListener] = js.native
+  val onDragMove: js.UndefOr[DragMoveListener] = js.native
+  val onDragStart: js.UndefOr[DragStartListener] = js.native
   /**
     * The element to start dragging on the initial `mousedown`, `pointerdown`, or `touchstart` event.
     */
-  val startElement: js.UndefOr[String | Element] = js.undefined
+  val startElement: js.UndefOr[String | Element] = js.native
 }
 
 object DraggerOptions {
   @scala.inline
-  def apply(
-    onDragEnd: DragEndListener = null,
-    onDragMove: DragMoveListener = null,
-    onDragStart: DragStartListener = null,
-    startElement: String | Element = null
-  ): DraggerOptions = {
+  def apply(): DraggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragMove != null) __obj.updateDynamic("onDragMove")(onDragMove.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (startElement != null) __obj.updateDynamic("startElement")(startElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggerOptions]
   }
+  @scala.inline
+  implicit class DraggerOptionsOps[Self <: DraggerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnDragEnd(value: DragEndListener): Self = this.set("onDragEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragMove(value: DragMoveListener): Self = this.set("onDragMove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragMove: Self = this.set("onDragMove", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: DragStartListener): Self = this.set("onDragStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setStartElement(value: String | Element): Self = this.set("startElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartElement: Self = this.set("startElement", js.undefined)
+  }
+  
 }
 

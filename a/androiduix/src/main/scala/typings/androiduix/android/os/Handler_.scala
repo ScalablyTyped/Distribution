@@ -1,15 +1,13 @@
 package typings.androiduix.android.os
 
 import typings.androiduix.android.os.Handler.Callback
-import typings.androiduix.java.lang.Runnable
+import typings.androiduix.java_.lang.Runnable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.os.Handler")
 @js.native
-class Handler_ () extends js.Object {
-  def this(callback: Callback) = this()
+trait Handler_ extends js.Object {
   var mCallback: Callback = js.native
   def dispatchMessage(msg: Message): Unit = js.native
   def handleMessage(msg: Message): Unit = js.native

@@ -26,18 +26,38 @@ trait CustomAvailabilityZone extends js.Object {
 
 object CustomAvailabilityZone {
   @scala.inline
-  def apply(
-    CustomAvailabilityZoneId: String = null,
-    CustomAvailabilityZoneName: String = null,
-    CustomAvailabilityZoneStatus: String = null,
-    VpnDetails: VpnDetails = null
-  ): CustomAvailabilityZone = {
+  def apply(): CustomAvailabilityZone = {
     val __obj = js.Dynamic.literal()
-    if (CustomAvailabilityZoneId != null) __obj.updateDynamic("CustomAvailabilityZoneId")(CustomAvailabilityZoneId.asInstanceOf[js.Any])
-    if (CustomAvailabilityZoneName != null) __obj.updateDynamic("CustomAvailabilityZoneName")(CustomAvailabilityZoneName.asInstanceOf[js.Any])
-    if (CustomAvailabilityZoneStatus != null) __obj.updateDynamic("CustomAvailabilityZoneStatus")(CustomAvailabilityZoneStatus.asInstanceOf[js.Any])
-    if (VpnDetails != null) __obj.updateDynamic("VpnDetails")(VpnDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomAvailabilityZone]
   }
+  @scala.inline
+  implicit class CustomAvailabilityZoneOps[Self <: CustomAvailabilityZone] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomAvailabilityZoneId(value: String): Self = this.set("CustomAvailabilityZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAvailabilityZoneId: Self = this.set("CustomAvailabilityZoneId", js.undefined)
+    @scala.inline
+    def setCustomAvailabilityZoneName(value: String): Self = this.set("CustomAvailabilityZoneName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAvailabilityZoneName: Self = this.set("CustomAvailabilityZoneName", js.undefined)
+    @scala.inline
+    def setCustomAvailabilityZoneStatus(value: String): Self = this.set("CustomAvailabilityZoneStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAvailabilityZoneStatus: Self = this.set("CustomAvailabilityZoneStatus", js.undefined)
+    @scala.inline
+    def setVpnDetails(value: VpnDetails): Self = this.set("VpnDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnDetails: Self = this.set("VpnDetails", js.undefined)
+  }
+  
 }
 

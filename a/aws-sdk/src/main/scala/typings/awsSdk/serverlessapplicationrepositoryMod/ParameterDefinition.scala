@@ -79,34 +79,74 @@ trait ParameterDefinition extends js.Object {
 
 object ParameterDefinition {
   @scala.inline
-  def apply(
-    Name: string,
-    ReferencedByResources: listOfString,
-    AllowedPattern: string = null,
-    AllowedValues: listOfString = null,
-    ConstraintDescription: string = null,
-    DefaultValue: string = null,
-    Description: string = null,
-    MaxLength: js.UndefOr[integer] = js.undefined,
-    MaxValue: js.UndefOr[integer] = js.undefined,
-    MinLength: js.UndefOr[integer] = js.undefined,
-    MinValue: js.UndefOr[integer] = js.undefined,
-    NoEcho: js.UndefOr[boolean] = js.undefined,
-    Type: string = null
-  ): ParameterDefinition = {
+  def apply(Name: string, ReferencedByResources: listOfString): ParameterDefinition = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ReferencedByResources = ReferencedByResources.asInstanceOf[js.Any])
-    if (AllowedPattern != null) __obj.updateDynamic("AllowedPattern")(AllowedPattern.asInstanceOf[js.Any])
-    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues.asInstanceOf[js.Any])
-    if (ConstraintDescription != null) __obj.updateDynamic("ConstraintDescription")(ConstraintDescription.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxLength)) __obj.updateDynamic("MaxLength")(MaxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxValue)) __obj.updateDynamic("MaxValue")(MaxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinLength)) __obj.updateDynamic("MinLength")(MinLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinValue)) __obj.updateDynamic("MinValue")(MinValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(NoEcho)) __obj.updateDynamic("NoEcho")(NoEcho.get.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterDefinition]
   }
+  @scala.inline
+  implicit class ParameterDefinitionOps[Self <: ParameterDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReferencedByResourcesVarargs(value: string*): Self = this.set("ReferencedByResources", js.Array(value :_*))
+    @scala.inline
+    def setReferencedByResources(value: listOfString): Self = this.set("ReferencedByResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedPattern(value: string): Self = this.set("AllowedPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPattern: Self = this.set("AllowedPattern", js.undefined)
+    @scala.inline
+    def setAllowedValuesVarargs(value: string*): Self = this.set("AllowedValues", js.Array(value :_*))
+    @scala.inline
+    def setAllowedValues(value: listOfString): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    @scala.inline
+    def setConstraintDescription(value: string): Self = this.set("ConstraintDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintDescription: Self = this.set("ConstraintDescription", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: string): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setMaxLength(value: integer): Self = this.set("MaxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("MaxLength", js.undefined)
+    @scala.inline
+    def setMaxValue(value: integer): Self = this.set("MaxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("MaxValue", js.undefined)
+    @scala.inline
+    def setMinLength(value: integer): Self = this.set("MinLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("MinLength", js.undefined)
+    @scala.inline
+    def setMinValue(value: integer): Self = this.set("MinValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("MinValue", js.undefined)
+    @scala.inline
+    def setNoEcho(value: boolean): Self = this.set("NoEcho", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoEcho: Self = this.set("NoEcho", js.undefined)
+    @scala.inline
+    def setType(value: string): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

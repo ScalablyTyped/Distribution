@@ -1,7 +1,6 @@
 package typings.heremaps.global.H
 
 import typings.heremaps.H.util.ContextItem.Options
-import typings.heremaps.H.util.Request.State
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -28,6 +27,11 @@ object util extends js.Object {
     def this(maxSize: Double, opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit]) = this()
     def this(
       maxSize: Double,
+      opt_onDrop: js.UndefOr[scala.Nothing],
+      opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
+    ) = this()
+    def this(
+      maxSize: Double,
       opt_onDrop: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Unit],
       opt_filter: js.Function3[/* s */ String, /* i */ js.Any, /* n */ Double, Boolean]
     ) = this()
@@ -50,24 +54,6 @@ object util extends js.Object {
       * @param oldValue {*} - The previous value of the property
       */
     def this(`type`: String, newValue: js.Any, oldValue: js.Any) = this()
-    /* CompleteClass */
-    override var currentTarget: js.Any = js.native
-    /* CompleteClass */
-    override var defaultPrevented: Boolean = js.native
-    /* CompleteClass */
-    override var target: js.Any = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /**
-      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-      */
-    /* CompleteClass */
-    override def preventDefault(): Unit = js.native
-    /**
-      * Stops propagation for current event.
-      */
-    /* CompleteClass */
-    override def stopPropagation(): Unit = js.native
   }
   
   /**
@@ -111,24 +97,6 @@ object util extends js.Object {
       */
     def this(`type`: String) = this()
     def this(`type`: String, opt_target: js.Any) = this()
-    /* CompleteClass */
-    override var currentTarget: js.Any = js.native
-    /* CompleteClass */
-    override var defaultPrevented: Boolean = js.native
-    /* CompleteClass */
-    override var target: js.Any = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
-    /**
-      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-      */
-    /* CompleteClass */
-    override def preventDefault(): Unit = js.native
-    /**
-      * Stops propagation for current event.
-      */
-    /* CompleteClass */
-    override def stopPropagation(): Unit = js.native
   }
   
   /**
@@ -164,31 +132,8 @@ object util extends js.Object {
   class Request ()
     extends typings.heremaps.H.util.Request {
     def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit]) = this()
+    def this(opt_onprogress: js.UndefOr[scala.Nothing], opt_total: Double) = this()
     def this(opt_onprogress: js.Function1[/* req */ typings.heremaps.H.util.Request, Unit], opt_total: Double) = this()
-    /**
-      * Returns the number of processingsteps which have been failed
-      * @returns {number}
-      */
-    /* CompleteClass */
-    override def getFailed(): Double = js.native
-    /**
-      * Returns the number of steps which are already processed by this request
-      * @returns {number}
-      */
-    /* CompleteClass */
-    override def getProcessed(): Double = js.native
-    /**
-      * Returns the state of this request
-      * @returns {H.util.Request.State}
-      */
-    /* CompleteClass */
-    override def getState(): State = js.native
-    /**
-      * Returns the number of processing steps to complete this request
-      * @returns {number}
-      */
-    /* CompleteClass */
-    override def getTotal(): Double = js.native
   }
   
   /* static members */
@@ -232,24 +177,6 @@ object util extends js.Object {
         removed: js.Any,
         moved: js.Any
       ) = this()
-      /* CompleteClass */
-      override var currentTarget: js.Any = js.native
-      /* CompleteClass */
-      override var defaultPrevented: Boolean = js.native
-      /* CompleteClass */
-      override var target: js.Any = js.native
-      /* CompleteClass */
-      override var `type`: String = js.native
-      /**
-        * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
-        */
-      /* CompleteClass */
-      override def preventDefault(): Unit = js.native
-      /**
-        * Stops propagation for current event.
-        */
-      /* CompleteClass */
-      override def stopPropagation(): Unit = js.native
     }
     
   }

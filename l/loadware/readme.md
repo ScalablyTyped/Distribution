@@ -12,7 +12,7 @@ A library to make sense of a bunch of middleware definitions and return a simple
 | Keywords           | loadware, middleware, load, normalize |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 86431 |
+| # downloads        | 111348 |
 | # stars            | 0 |
 
 ## Links

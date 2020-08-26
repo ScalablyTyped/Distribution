@@ -23,7 +23,16 @@ object imageMod extends js.Object {
   def decodeBmp(contents: Uint8Array, channels: Double): Tensor3D = js.native
   def decodeGif(contents: Uint8Array): Tensor4D = js.native
   def decodeImage(content: Uint8Array): Tensor3D | Tensor4D = js.native
+  def decodeImage(
+    content: Uint8Array,
+    channels: js.UndefOr[scala.Nothing],
+    dtype: js.UndefOr[scala.Nothing],
+    expandAnimations: Boolean
+  ): Tensor3D | Tensor4D = js.native
+  def decodeImage(content: Uint8Array, channels: js.UndefOr[scala.Nothing], dtype: String): Tensor3D | Tensor4D = js.native
+  def decodeImage(content: Uint8Array, channels: js.UndefOr[scala.Nothing], dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = js.native
   def decodeImage(content: Uint8Array, channels: Double): Tensor3D | Tensor4D = js.native
+  def decodeImage(content: Uint8Array, channels: Double, dtype: js.UndefOr[scala.Nothing], expandAnimations: Boolean): Tensor3D | Tensor4D = js.native
   def decodeImage(content: Uint8Array, channels: Double, dtype: String): Tensor3D | Tensor4D = js.native
   def decodeImage(content: Uint8Array, channels: Double, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = js.native
   def decodeJpeg(
@@ -36,42 +45,17 @@ object imageMod extends js.Object {
     dctMethod: js.UndefOr[String]
   ): Tensor3D = js.native
   def decodePng(contents: Uint8Array): Tensor3D = js.native
+  def decodePng(contents: Uint8Array, channels: js.UndefOr[scala.Nothing], dtype: String): Tensor3D = js.native
   def decodePng(contents: Uint8Array, channels: Double): Tensor3D = js.native
   def decodePng(contents: Uint8Array, channels: Double, dtype: String): Tensor3D = js.native
   def encodeJpeg(
     image: Tensor3D,
-    format: js.UndefOr[grayscale | rgb],
+    format: js.UndefOr[_empty | grayscale | rgb],
     quality: js.UndefOr[Double],
     progressive: js.UndefOr[Boolean],
     optimizeSize: js.UndefOr[Boolean],
     chromaDownsampling: js.UndefOr[Boolean],
-    densityUnit: js.UndefOr[cm | in],
-    xDensity: js.UndefOr[Double],
-    yDensity: js.UndefOr[Double],
-    xmpMetadata: js.UndefOr[String]
-  ): js.Promise[Uint8Array] = js.native
-  @JSName("encodeJpeg")
-  def encodeJpeg_cm(
-    image: Tensor3D,
-    format: js.UndefOr[_empty],
-    quality: js.UndefOr[Double],
-    progressive: js.UndefOr[Boolean],
-    optimizeSize: js.UndefOr[Boolean],
-    chromaDownsampling: js.UndefOr[Boolean],
-    densityUnit: js.UndefOr[cm],
-    xDensity: js.UndefOr[Double],
-    yDensity: js.UndefOr[Double],
-    xmpMetadata: js.UndefOr[String]
-  ): js.Promise[Uint8Array] = js.native
-  @JSName("encodeJpeg")
-  def encodeJpeg_in(
-    image: Tensor3D,
-    format: js.UndefOr[_empty],
-    quality: js.UndefOr[Double],
-    progressive: js.UndefOr[Boolean],
-    optimizeSize: js.UndefOr[Boolean],
-    chromaDownsampling: js.UndefOr[Boolean],
-    densityUnit: js.UndefOr[in],
+    densityUnit: js.UndefOr[in | cm],
     xDensity: js.UndefOr[Double],
     yDensity: js.UndefOr[Double],
     xmpMetadata: js.UndefOr[String]

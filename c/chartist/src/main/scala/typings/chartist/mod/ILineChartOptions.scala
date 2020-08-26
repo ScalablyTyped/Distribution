@@ -6,67 +6,110 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ILineChartOptions extends IChartOptions {
-  var areaBase: js.UndefOr[Double] = js.undefined
-  var axisX: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.undefined
-  var axisY: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.undefined
-  var chartPadding: js.UndefOr[IChartPadding] = js.undefined
-  var classNames: js.UndefOr[ILineChartClasses] = js.undefined
-  var fullWidth: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var high: js.UndefOr[Double] = js.undefined
-  var lineSmooth: js.UndefOr[js.Function | Boolean] = js.undefined
-  var low: js.UndefOr[Double] = js.undefined
-  var series: js.UndefOr[StringDictionary[AreaBase]] = js.undefined
-  var showArea: js.UndefOr[Boolean] = js.undefined
-  var showLine: js.UndefOr[Boolean] = js.undefined
-  var showPoint: js.UndefOr[Boolean] = js.undefined
-  var ticks: js.UndefOr[js.Array[String | Double]] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var areaBase: js.UndefOr[Double] = js.native
+  var axisX: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.native
+  var axisY: js.UndefOr[IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis] = js.native
+  var chartPadding: js.UndefOr[IChartPadding] = js.native
+  var classNames: js.UndefOr[ILineChartClasses] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var high: js.UndefOr[Double] = js.native
+  var lineSmooth: js.UndefOr[js.Function | Boolean] = js.native
+  var low: js.UndefOr[Double] = js.native
+  var series: js.UndefOr[StringDictionary[AreaBase]] = js.native
+  var showArea: js.UndefOr[Boolean] = js.native
+  var showLine: js.UndefOr[Boolean] = js.native
+  var showPoint: js.UndefOr[Boolean] = js.native
+  var ticks: js.UndefOr[js.Array[String | Double]] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object ILineChartOptions {
   @scala.inline
-  def apply(
-    areaBase: js.UndefOr[Double] = js.undefined,
-    axisX: IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis = null,
-    axisY: IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis = null,
-    chartPadding: IChartPadding = null,
-    classNames: ILineChartClasses = null,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    high: js.UndefOr[Double] = js.undefined,
-    lineSmooth: js.Function | Boolean = null,
-    low: js.UndefOr[Double] = js.undefined,
-    plugins: js.Array[_] = null,
-    reverseData: js.UndefOr[Boolean] = js.undefined,
-    series: StringDictionary[AreaBase] = null,
-    showArea: js.UndefOr[Boolean] = js.undefined,
-    showLine: js.UndefOr[Boolean] = js.undefined,
-    showPoint: js.UndefOr[Boolean] = js.undefined,
-    ticks: js.Array[String | Double] = null,
-    width: Double | String = null
-  ): ILineChartOptions = {
+  def apply(): ILineChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(areaBase)) __obj.updateDynamic("areaBase")(areaBase.get.asInstanceOf[js.Any])
-    if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
-    if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
-    if (chartPadding != null) __obj.updateDynamic("chartPadding")(chartPadding.asInstanceOf[js.Any])
-    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
-    if (lineSmooth != null) __obj.updateDynamic("lineSmooth")(lineSmooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.get.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArea)) __obj.updateDynamic("showArea")(showArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPoint)) __obj.updateDynamic("showPoint")(showPoint.get.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILineChartOptions]
   }
+  @scala.inline
+  implicit class ILineChartOptionsOps[Self <: ILineChartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAreaBase(value: Double): Self = this.set("areaBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreaBase: Self = this.set("areaBase", js.undefined)
+    @scala.inline
+    def setAxisX(value: IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis): Self = this.set("axisX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisX: Self = this.set("axisX", js.undefined)
+    @scala.inline
+    def setAxisY(value: IChartistStepAxis | IChartistFixedScaleAxis | IChartistAutoScaleAxis): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisY: Self = this.set("axisY", js.undefined)
+    @scala.inline
+    def setChartPadding(value: IChartPadding): Self = this.set("chartPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartPadding: Self = this.set("chartPadding", js.undefined)
+    @scala.inline
+    def setClassNames(value: ILineChartClasses): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassNames: Self = this.set("classNames", js.undefined)
+    @scala.inline
+    def setFullWidth(value: Boolean): Self = this.set("fullWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullWidth: Self = this.set("fullWidth", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHigh(value: Double): Self = this.set("high", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigh: Self = this.set("high", js.undefined)
+    @scala.inline
+    def setLineSmooth(value: js.Function | Boolean): Self = this.set("lineSmooth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineSmooth: Self = this.set("lineSmooth", js.undefined)
+    @scala.inline
+    def setLow(value: Double): Self = this.set("low", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLow: Self = this.set("low", js.undefined)
+    @scala.inline
+    def setSeries(value: StringDictionary[AreaBase]): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeries: Self = this.set("series", js.undefined)
+    @scala.inline
+    def setShowArea(value: Boolean): Self = this.set("showArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowArea: Self = this.set("showArea", js.undefined)
+    @scala.inline
+    def setShowLine(value: Boolean): Self = this.set("showLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowLine: Self = this.set("showLine", js.undefined)
+    @scala.inline
+    def setShowPoint(value: Boolean): Self = this.set("showPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPoint: Self = this.set("showPoint", js.undefined)
+    @scala.inline
+    def setTicksVarargs(value: (String | Double)*): Self = this.set("ticks", js.Array(value :_*))
+    @scala.inline
+    def setTicks(value: js.Array[String | Double]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

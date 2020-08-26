@@ -14,10 +14,26 @@ trait DeleteTapeOutput extends js.Object {
 
 object DeleteTapeOutput {
   @scala.inline
-  def apply(TapeARN: TapeARN = null): DeleteTapeOutput = {
+  def apply(): DeleteTapeOutput = {
     val __obj = js.Dynamic.literal()
-    if (TapeARN != null) __obj.updateDynamic("TapeARN")(TapeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTapeOutput]
   }
+  @scala.inline
+  implicit class DeleteTapeOutputOps[Self <: DeleteTapeOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTapeARN(value: TapeARN): Self = this.set("TapeARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeARN: Self = this.set("TapeARN", js.undefined)
+  }
+  
 }
 

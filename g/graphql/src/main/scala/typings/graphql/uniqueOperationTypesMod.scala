@@ -10,7 +10,5 @@ import scala.scalajs.js.annotation._
 @js.native
 object uniqueOperationTypesMod extends js.Object {
   def UniqueOperationTypes(context: SDLValidationContext): ASTVisitor = js.native
-  def duplicateOperationTypeMessage(operation: String): String = js.native
-  def existedOperationTypeMessage(operation: String): String = js.native
 }
 

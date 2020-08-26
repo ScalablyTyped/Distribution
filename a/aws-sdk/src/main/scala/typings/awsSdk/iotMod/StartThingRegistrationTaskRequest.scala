@@ -35,5 +35,26 @@ object StartThingRegistrationTaskRequest {
     val __obj = js.Dynamic.literal(inputFileBucket = inputFileBucket.asInstanceOf[js.Any], inputFileKey = inputFileKey.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], templateBody = templateBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartThingRegistrationTaskRequest]
   }
+  @scala.inline
+  implicit class StartThingRegistrationTaskRequestOps[Self <: StartThingRegistrationTaskRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputFileBucket(value: RegistryS3BucketName): Self = this.set("inputFileBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputFileKey(value: RegistryS3KeyName): Self = this.set("inputFileKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("templateBody", value.asInstanceOf[js.Any])
+  }
+  
 }
 

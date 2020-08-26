@@ -23,16 +23,34 @@ trait EventStreamState extends js.Object {
 
 object EventStreamState {
   @scala.inline
-  def apply(
-    applicationId: Input[String] = null,
-    destinationStreamArn: Input[String] = null,
-    roleArn: Input[String] = null
-  ): EventStreamState = {
+  def apply(): EventStreamState = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (destinationStreamArn != null) __obj.updateDynamic("destinationStreamArn")(destinationStreamArn.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventStreamState]
   }
+  @scala.inline
+  implicit class EventStreamStateOps[Self <: EventStreamState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Input[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setDestinationStreamArn(value: Input[String]): Self = this.set("destinationStreamArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationStreamArn: Self = this.set("destinationStreamArn", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

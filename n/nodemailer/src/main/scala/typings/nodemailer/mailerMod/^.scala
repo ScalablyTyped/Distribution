@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 class ^ protected () extends Mail {
   def this(transporter: Transport) = this()
   def this(transporter: Transport, options: TransportOptions) = this()
+  def this(transporter: Transport, options: js.UndefOr[scala.Nothing], defaults: TransportOptions) = this()
   def this(transporter: Transport, options: TransportOptions, defaults: TransportOptions) = this()
 }
 

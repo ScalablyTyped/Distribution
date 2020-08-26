@@ -31,6 +31,7 @@ class ResourceAccountsCustomapps protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCustomApp] = js.native
   def create(callback: BodyResponseCallback[SchemaCustomApp]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomApp] = js.native
   def create(params: ParamsResourceAccountsCustomappsCreate): GaxiosPromise[SchemaCustomApp] = js.native
   def create(params: ParamsResourceAccountsCustomappsCreate, callback: BodyResponseCallback[SchemaCustomApp]): Unit = js.native
   def create(

@@ -40,5 +40,38 @@ object InferenceSpecification {
     val __obj = js.Dynamic.literal(Containers = Containers.asInstanceOf[js.Any], SupportedContentTypes = SupportedContentTypes.asInstanceOf[js.Any], SupportedRealtimeInferenceInstanceTypes = SupportedRealtimeInferenceInstanceTypes.asInstanceOf[js.Any], SupportedResponseMIMETypes = SupportedResponseMIMETypes.asInstanceOf[js.Any], SupportedTransformInstanceTypes = SupportedTransformInstanceTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferenceSpecification]
   }
+  @scala.inline
+  implicit class InferenceSpecificationOps[Self <: InferenceSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainersVarargs(value: ModelPackageContainerDefinition*): Self = this.set("Containers", js.Array(value :_*))
+    @scala.inline
+    def setContainers(value: ModelPackageContainerDefinitionList): Self = this.set("Containers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSupportedContentTypesVarargs(value: ContentType*): Self = this.set("SupportedContentTypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedContentTypes(value: ContentTypes): Self = this.set("SupportedContentTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSupportedRealtimeInferenceInstanceTypesVarargs(value: ProductionVariantInstanceType*): Self = this.set("SupportedRealtimeInferenceInstanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedRealtimeInferenceInstanceTypes(value: RealtimeInferenceInstanceTypes): Self = this.set("SupportedRealtimeInferenceInstanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSupportedResponseMIMETypesVarargs(value: ResponseMIMEType*): Self = this.set("SupportedResponseMIMETypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedResponseMIMETypes(value: ResponseMIMETypes): Self = this.set("SupportedResponseMIMETypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSupportedTransformInstanceTypesVarargs(value: TransformInstanceType*): Self = this.set("SupportedTransformInstanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setSupportedTransformInstanceTypes(value: TransformInstanceTypes): Self = this.set("SupportedTransformInstanceTypes", value.asInstanceOf[js.Any])
+  }
+  
 }
 

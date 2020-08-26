@@ -12,7 +12,7 @@ Hypermedia API/HATEOAS client for Node.js and the browser
 | Keywords           | JSON, REST, API, HATEOAS, hypertext, hypermedia, HAL |
 | # releases         | 9 |
 | # dependents       | 9 |
-| # downloads        | 195021 |
+| # downloads        | 191702 |
 | # stars            | 4 |
 
 ## Links

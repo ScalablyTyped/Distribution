@@ -7,16 +7,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateExportJobOutput extends OutputTypesUnion {
   /**
     * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
     */
   @JSName("$metadata")
-  var $metadata: ResponseMetadata
+  var $metadata: ResponseMetadata = js.native
   /**
     * Export job response.
     */
-  var ExportJobResponse: UnmarshalledExportJobResponse
+  var ExportJobResponse: UnmarshalledExportJobResponse = js.native
 }
 
 object CreateExportJobOutput {
@@ -25,5 +26,22 @@ object CreateExportJobOutput {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ExportJobResponse = ExportJobResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateExportJobOutput]
   }
+  @scala.inline
+  implicit class CreateExportJobOutputOps[Self <: CreateExportJobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$metadata(value: ResponseMetadata): Self = this.set("$metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExportJobResponse(value: UnmarshalledExportJobResponse): Self = this.set("ExportJobResponse", value.asInstanceOf[js.Any])
+  }
+  
 }
 

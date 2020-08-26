@@ -195,52 +195,108 @@ trait SchemaForwardingRule extends js.Object {
 
 object SchemaForwardingRule {
   @scala.inline
-  def apply(
-    IPAddress: String = null,
-    IPProtocol: String = null,
-    allPorts: js.UndefOr[Boolean] = js.undefined,
-    backendService: String = null,
-    creationTimestamp: String = null,
-    description: String = null,
-    id: String = null,
-    ipVersion: String = null,
-    kind: String = null,
-    loadBalancingScheme: String = null,
-    name: String = null,
-    network: String = null,
-    networkTier: String = null,
-    portRange: String = null,
-    ports: js.Array[String] = null,
-    region: String = null,
-    selfLink: String = null,
-    serviceLabel: String = null,
-    serviceName: String = null,
-    subnetwork: String = null,
-    target: String = null
-  ): SchemaForwardingRule = {
+  def apply(): SchemaForwardingRule = {
     val __obj = js.Dynamic.literal()
-    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
-    if (IPProtocol != null) __obj.updateDynamic("IPProtocol")(IPProtocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(allPorts)) __obj.updateDynamic("allPorts")(allPorts.get.asInstanceOf[js.Any])
-    if (backendService != null) __obj.updateDynamic("backendService")(backendService.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipVersion != null) __obj.updateDynamic("ipVersion")(ipVersion.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (loadBalancingScheme != null) __obj.updateDynamic("loadBalancingScheme")(loadBalancingScheme.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (networkTier != null) __obj.updateDynamic("networkTier")(networkTier.asInstanceOf[js.Any])
-    if (portRange != null) __obj.updateDynamic("portRange")(portRange.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (serviceLabel != null) __obj.updateDynamic("serviceLabel")(serviceLabel.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaForwardingRule]
   }
+  @scala.inline
+  implicit class SchemaForwardingRuleOps[Self <: SchemaForwardingRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIPAddress(value: String): Self = this.set("IPAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPAddress: Self = this.set("IPAddress", js.undefined)
+    @scala.inline
+    def setIPProtocol(value: String): Self = this.set("IPProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPProtocol: Self = this.set("IPProtocol", js.undefined)
+    @scala.inline
+    def setAllPorts(value: Boolean): Self = this.set("allPorts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllPorts: Self = this.set("allPorts", js.undefined)
+    @scala.inline
+    def setBackendService(value: String): Self = this.set("backendService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendService: Self = this.set("backendService", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIpVersion(value: String): Self = this.set("ipVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpVersion: Self = this.set("ipVersion", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLoadBalancingScheme(value: String): Self = this.set("loadBalancingScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancingScheme: Self = this.set("loadBalancingScheme", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNetworkTier(value: String): Self = this.set("networkTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkTier: Self = this.set("networkTier", js.undefined)
+    @scala.inline
+    def setPortRange(value: String): Self = this.set("portRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortRange: Self = this.set("portRange", js.undefined)
+    @scala.inline
+    def setPortsVarargs(value: String*): Self = this.set("ports", js.Array(value :_*))
+    @scala.inline
+    def setPorts(value: js.Array[String]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePorts: Self = this.set("ports", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setServiceLabel(value: String): Self = this.set("serviceLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceLabel: Self = this.set("serviceLabel", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setTarget(value: String): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+  }
+  
 }
 

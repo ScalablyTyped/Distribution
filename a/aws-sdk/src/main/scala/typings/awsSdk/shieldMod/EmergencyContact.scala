@@ -22,11 +22,32 @@ trait EmergencyContact extends js.Object {
 
 object EmergencyContact {
   @scala.inline
-  def apply(EmailAddress: EmailAddress, ContactNotes: ContactNotes = null, PhoneNumber: PhoneNumber = null): EmergencyContact = {
+  def apply(EmailAddress: EmailAddress): EmergencyContact = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
-    if (ContactNotes != null) __obj.updateDynamic("ContactNotes")(ContactNotes.asInstanceOf[js.Any])
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmergencyContact]
   }
+  @scala.inline
+  implicit class EmergencyContactOps[Self <: EmergencyContact] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmailAddress(value: EmailAddress): Self = this.set("EmailAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContactNotes(value: ContactNotes): Self = this.set("ContactNotes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactNotes: Self = this.set("ContactNotes", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: PhoneNumber): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+  }
+  
 }
 

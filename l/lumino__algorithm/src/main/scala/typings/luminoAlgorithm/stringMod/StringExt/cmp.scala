@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/string", "StringExt.cmp")
+@JSImport("@lumino/algorithm/types/string", "StringExt.cmp")
 @js.native
 object cmp extends js.Object {
   /**

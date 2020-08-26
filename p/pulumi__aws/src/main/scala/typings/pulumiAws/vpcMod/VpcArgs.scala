@@ -21,7 +21,7 @@ trait VpcArgs extends js.Object {
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
-    * See the [ClassicLink documentation][1] for more information. Defaults false.
+    * See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html) for more information. Defaults false.
     */
   val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -38,36 +38,64 @@ trait VpcArgs extends js.Object {
     */
   val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A tenancy option for instances launched into the VPC
+    * A tenancy option for instances launched into the VPC. Default is `default`, which
+    * makes your instances shared on the host. Using either of the other options (`dedicated` or `host`) costs at least $2/hr.
     */
   val instanceTenancy: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object VpcArgs {
   @scala.inline
-  def apply(
-    cidrBlock: Input[String],
-    assignGeneratedIpv6CidrBlock: Input[Boolean] = null,
-    enableClassiclink: Input[Boolean] = null,
-    enableClassiclinkDnsSupport: Input[Boolean] = null,
-    enableDnsHostnames: Input[Boolean] = null,
-    enableDnsSupport: Input[Boolean] = null,
-    instanceTenancy: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): VpcArgs = {
+  def apply(cidrBlock: Input[String]): VpcArgs = {
     val __obj = js.Dynamic.literal(cidrBlock = cidrBlock.asInstanceOf[js.Any])
-    if (assignGeneratedIpv6CidrBlock != null) __obj.updateDynamic("assignGeneratedIpv6CidrBlock")(assignGeneratedIpv6CidrBlock.asInstanceOf[js.Any])
-    if (enableClassiclink != null) __obj.updateDynamic("enableClassiclink")(enableClassiclink.asInstanceOf[js.Any])
-    if (enableClassiclinkDnsSupport != null) __obj.updateDynamic("enableClassiclinkDnsSupport")(enableClassiclinkDnsSupport.asInstanceOf[js.Any])
-    if (enableDnsHostnames != null) __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames.asInstanceOf[js.Any])
-    if (enableDnsSupport != null) __obj.updateDynamic("enableDnsSupport")(enableDnsSupport.asInstanceOf[js.Any])
-    if (instanceTenancy != null) __obj.updateDynamic("instanceTenancy")(instanceTenancy.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcArgs]
   }
+  @scala.inline
+  implicit class VpcArgsOps[Self <: VpcArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrBlock(value: Input[String]): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAssignGeneratedIpv6CidrBlock(value: Input[Boolean]): Self = this.set("assignGeneratedIpv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignGeneratedIpv6CidrBlock: Self = this.set("assignGeneratedIpv6CidrBlock", js.undefined)
+    @scala.inline
+    def setEnableClassiclink(value: Input[Boolean]): Self = this.set("enableClassiclink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableClassiclink: Self = this.set("enableClassiclink", js.undefined)
+    @scala.inline
+    def setEnableClassiclinkDnsSupport(value: Input[Boolean]): Self = this.set("enableClassiclinkDnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableClassiclinkDnsSupport: Self = this.set("enableClassiclinkDnsSupport", js.undefined)
+    @scala.inline
+    def setEnableDnsHostnames(value: Input[Boolean]): Self = this.set("enableDnsHostnames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDnsHostnames: Self = this.set("enableDnsHostnames", js.undefined)
+    @scala.inline
+    def setEnableDnsSupport(value: Input[Boolean]): Self = this.set("enableDnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDnsSupport: Self = this.set("enableDnsSupport", js.undefined)
+    @scala.inline
+    def setInstanceTenancy(value: Input[String]): Self = this.set("instanceTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTenancy: Self = this.set("instanceTenancy", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

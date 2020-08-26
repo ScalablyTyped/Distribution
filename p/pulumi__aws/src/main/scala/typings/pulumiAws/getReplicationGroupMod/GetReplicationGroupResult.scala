@@ -19,7 +19,7 @@ trait GetReplicationGroupResult extends js.Object {
     */
   val configurationEndpointAddress: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -80,5 +80,46 @@ object GetReplicationGroupResult {
     val __obj = js.Dynamic.literal(authTokenEnabled = authTokenEnabled.asInstanceOf[js.Any], automaticFailoverEnabled = automaticFailoverEnabled.asInstanceOf[js.Any], configurationEndpointAddress = configurationEndpointAddress.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], memberClusters = memberClusters.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], numberCacheClusters = numberCacheClusters.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], primaryEndpointAddress = primaryEndpointAddress.asInstanceOf[js.Any], replicationGroupDescription = replicationGroupDescription.asInstanceOf[js.Any], replicationGroupId = replicationGroupId.asInstanceOf[js.Any], snapshotRetentionLimit = snapshotRetentionLimit.asInstanceOf[js.Any], snapshotWindow = snapshotWindow.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReplicationGroupResult]
   }
+  @scala.inline
+  implicit class GetReplicationGroupResultOps[Self <: GetReplicationGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthTokenEnabled(value: Boolean): Self = this.set("authTokenEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutomaticFailoverEnabled(value: Boolean): Self = this.set("automaticFailoverEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationEndpointAddress(value: String): Self = this.set("configurationEndpointAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMemberClustersVarargs(value: String*): Self = this.set("memberClusters", js.Array(value :_*))
+    @scala.inline
+    def setMemberClusters(value: js.Array[String]): Self = this.set("memberClusters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeType(value: String): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumberCacheClusters(value: Double): Self = this.set("numberCacheClusters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrimaryEndpointAddress(value: String): Self = this.set("primaryEndpointAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationGroupDescription(value: String): Self = this.set("replicationGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("replicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotRetentionLimit(value: Double): Self = this.set("snapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotWindow(value: String): Self = this.set("snapshotWindow", value.asInstanceOf[js.Any])
+  }
+  
 }
 

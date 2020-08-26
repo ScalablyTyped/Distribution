@@ -22,6 +22,7 @@ object global extends js.Object {
     def expressQuery(validator: Validatable): js.Any = js.native
     def isAnyObject(): IsObjectValidator = js.native
     def isArray(): Validatable = js.native
+    def isArray(validator: js.UndefOr[scala.Nothing], options: Options): Validatable = js.native
     def isArray(validator: Validatable): Validatable = js.native
     def isArray(validator: Validatable, options: Options): Validatable = js.native
     def isBoolean(): Validatable = js.native

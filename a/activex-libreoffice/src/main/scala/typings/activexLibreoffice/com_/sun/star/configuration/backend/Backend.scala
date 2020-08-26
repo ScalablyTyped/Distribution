@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   * A layer contains data for multiple components associated to a single entity.
   * @since OOo 1.1.2
   */
+@js.native
 trait Backend
   extends XSchemaSupplier
      with XBackend

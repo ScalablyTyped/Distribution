@@ -19,7 +19,7 @@ trait TestCustomDataIdentifierRequest extends js.Object {
     */
   var maximumMatchDistance: js.UndefOr[integer] = js.native
   /**
-    * The regular expression (regex) that defines the pattern to match. The expression can contain as many as 500 characters.
+    * The regular expression (regex) that defines the pattern to match. The expression can contain as many as 512 characters.
     */
   var regex: string = js.native
   /**
@@ -30,18 +30,42 @@ trait TestCustomDataIdentifierRequest extends js.Object {
 
 object TestCustomDataIdentifierRequest {
   @scala.inline
-  def apply(
-    regex: string,
-    sampleText: string,
-    ignoreWords: listOfString = null,
-    keywords: listOfString = null,
-    maximumMatchDistance: js.UndefOr[integer] = js.undefined
-  ): TestCustomDataIdentifierRequest = {
+  def apply(regex: string, sampleText: string): TestCustomDataIdentifierRequest = {
     val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any], sampleText = sampleText.asInstanceOf[js.Any])
-    if (ignoreWords != null) __obj.updateDynamic("ignoreWords")(ignoreWords.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumMatchDistance)) __obj.updateDynamic("maximumMatchDistance")(maximumMatchDistance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestCustomDataIdentifierRequest]
   }
+  @scala.inline
+  implicit class TestCustomDataIdentifierRequestOps[Self <: TestCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegex(value: string): Self = this.set("regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSampleText(value: string): Self = this.set("sampleText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIgnoreWordsVarargs(value: string*): Self = this.set("ignoreWords", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreWords(value: listOfString): Self = this.set("ignoreWords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreWords: Self = this.set("ignoreWords", js.undefined)
+    @scala.inline
+    def setKeywordsVarargs(value: string*): Self = this.set("keywords", js.Array(value :_*))
+    @scala.inline
+    def setKeywords(value: listOfString): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setMaximumMatchDistance(value: integer): Self = this.set("maximumMatchDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumMatchDistance: Self = this.set("maximumMatchDistance", js.undefined)
+  }
+  
 }
 

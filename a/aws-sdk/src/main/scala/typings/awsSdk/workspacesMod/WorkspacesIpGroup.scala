@@ -26,18 +26,40 @@ trait WorkspacesIpGroup extends js.Object {
 
 object WorkspacesIpGroup {
   @scala.inline
-  def apply(
-    groupDesc: IpGroupDesc = null,
-    groupId: IpGroupId = null,
-    groupName: IpGroupName = null,
-    userRules: IpRuleList = null
-  ): WorkspacesIpGroup = {
+  def apply(): WorkspacesIpGroup = {
     val __obj = js.Dynamic.literal()
-    if (groupDesc != null) __obj.updateDynamic("groupDesc")(groupDesc.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (userRules != null) __obj.updateDynamic("userRules")(userRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspacesIpGroup]
   }
+  @scala.inline
+  implicit class WorkspacesIpGroupOps[Self <: WorkspacesIpGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupDesc(value: IpGroupDesc): Self = this.set("groupDesc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupDesc: Self = this.set("groupDesc", js.undefined)
+    @scala.inline
+    def setGroupId(value: IpGroupId): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    @scala.inline
+    def setGroupName(value: IpGroupName): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    @scala.inline
+    def setUserRulesVarargs(value: IpRuleItem*): Self = this.set("userRules", js.Array(value :_*))
+    @scala.inline
+    def setUserRules(value: IpRuleList): Self = this.set("userRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserRules: Self = this.set("userRules", js.undefined)
+  }
+  
 }
 

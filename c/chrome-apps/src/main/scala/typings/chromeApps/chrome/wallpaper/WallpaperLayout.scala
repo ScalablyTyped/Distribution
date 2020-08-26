@@ -1,6 +1,5 @@
 package typings.chromeApps.chrome.wallpaper
 
-import org.scalablytyped.runtime.TopLevel
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -19,17 +18,6 @@ object WallpaperLayout extends js.Object {
   
   @js.native
   sealed trait STRETCH extends WallpaperLayout
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[WallpaperLayout with String] = js.native
-  /* "CENTER" */ @js.native
-  object CENTER extends TopLevel[CENTER with String]
-  
-  /* "CENTER_CROPPED" */ @js.native
-  object CENTER_CROPPED extends TopLevel[CENTER_CROPPED with String]
-  
-  /* "STRETCH" */ @js.native
-  object STRETCH extends TopLevel[STRETCH with String]
   
 }
 

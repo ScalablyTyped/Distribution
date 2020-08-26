@@ -11,8 +11,8 @@ Implemets the CIEDE2000 color difference algorithm, conversion between RGB and L
 | Full name          | color-diff |
 | Keywords           | color, diff, color-diff, pallette, closest, convert, conversion, CIEDE2000, ciede2000 |
 | # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 6758927 |
+| # dependents       | 26 |
+| # downloads        | 6670339 |
 | # stars            | 3 |
 
 ## Links

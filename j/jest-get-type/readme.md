@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-get-type
 
-Typings are for version 25.2.6
+Typings are for version 26.0.0
 
 ## Library description:
 A utility function to get the type of a value
@@ -10,9 +10,9 @@ A utility function to get the type of a value
 | ------------------ | :-------------: |
 | Full name          | jest-get-type |
 | Keywords           | - |
-| # releases         | 25 |
+| # releases         | 24 |
 | # dependents       | 29 |
-| # downloads        | 228915699 |
+| # downloads        | 232218058 |
 | # stars            | 0 |
 
 ## Links

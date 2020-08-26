@@ -1,9 +1,9 @@
 package typings.antDesignReactNative.defaultTabBarMod
 
 import typings.antDesignReactNative.anon.ActiveTab
-import typings.antDesignReactNative.anon.Tab
 import typings.antDesignReactNative.libStyleMod.Theme
 import typings.antDesignReactNative.tabsPropsTypeMod.TabData
+import typings.antDesignReactNative.tabsStyleMod.TabBarStyle
 import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.LayoutChangeEvent
@@ -28,7 +28,14 @@ class DefaultTabBar protected ()
   def onContainerLayout(e: LayoutChangeEvent): Unit = js.native
   def onPress(index: Double): Unit = js.native
   def onTabContainerLayout(e: LayoutChangeEvent): Unit = js.native
-  def renderTab(tab: TabData, index: Double, width: Double, onLayoutHandler: js.Any, styles: Tab, theme: Theme): Element = js.native
+  def renderTab(
+    tab: TabData,
+    index: Double,
+    width: Double,
+    onLayoutHandler: js.Any,
+    styles: TabBarStyle,
+    theme: Theme
+  ): Element = js.native
   def updateTabPanel(position: Double, pageOffset: Double): Unit = js.native
   def updateTabUnderline(position: Double, pageOffset: Double, tabCount: Double): Unit = js.native
   def updateView(offset: js.Any): Unit = js.native

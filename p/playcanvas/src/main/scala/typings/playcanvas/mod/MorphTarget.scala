@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * A Morph Target (also known as Blend Shape) contains deformation data to apply to existing mesh.
-  Multiple morph targets can be blended together on a mesh. This is useful for effects that are hard to achieve with conventional animation and skinning.
+  * Multiple morph targets can be blended together on a mesh. This is useful for effects that are hard to achieve with conventional animation and skinning.
   * @param options - Object for passing optional arguments.
   * @param options.deltaPositions - An array of 3-dimensional vertex position offsets.
   * @param options.deltaPositionsType - A format to store position offsets inside {@link pc.VertexBuffer}. Defaults to {@link pc.TYPE_FLOAT32} if not provided.

@@ -6,41 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionsListJobsForWorkflowRunEndpoint extends js.Object {
   /**
     * Filters jobs by their `completed_at` timestamp. Can be one of:
     * \* `latest`: Returns jobs from the most recent execution of the workflow run.
     * \* `all`: Returns all jobs for a workflow run, including from old executions of the workflow run.
     */
-  var filter: js.UndefOr[latest | all] = js.undefined
-  var owner: String
+  var filter: js.UndefOr[latest | all] = js.native
+  var owner: String = js.native
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.undefined
+  var page: js.UndefOr[Double] = js.native
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.undefined
-  var repo: String
-  var run_id: Double
+  var per_page: js.UndefOr[Double] = js.native
+  var repo: String = js.native
+  var run_id: Double = js.native
 }
 
 object ActionsListJobsForWorkflowRunEndpoint {
   @scala.inline
-  def apply(
-    owner: String,
-    repo: String,
-    run_id: Double,
-    filter: latest | all = null,
-    page: js.UndefOr[Double] = js.undefined,
-    per_page: js.UndefOr[Double] = js.undefined
-  ): ActionsListJobsForWorkflowRunEndpoint = {
+  def apply(owner: String, repo: String, run_id: Double): ActionsListJobsForWorkflowRunEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], run_id = run_id.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(page)) __obj.updateDynamic("page")(page.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(per_page)) __obj.updateDynamic("per_page")(per_page.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsListJobsForWorkflowRunEndpoint]
   }
+  @scala.inline
+  implicit class ActionsListJobsForWorkflowRunEndpointOps[Self <: ActionsListJobsForWorkflowRunEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOwner(value: String): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRun_id(value: Double): Self = this.set("run_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: latest | all): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setPage(value: Double): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPer_page(value: Double): Self = this.set("per_page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePer_page: Self = this.set("per_page", js.undefined)
+  }
+  
 }
 

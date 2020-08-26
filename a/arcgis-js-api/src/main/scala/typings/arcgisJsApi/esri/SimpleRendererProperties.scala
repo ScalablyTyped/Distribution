@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimpleRendererProperties
   extends RendererProperties
      with VisualVariablesMixinProperties {
@@ -12,29 +13,41 @@ trait SimpleRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#label)
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * The symbol used by the renderer to visualize all features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol)
     */
-  var symbol: js.UndefOr[SymbolProperties] = js.undefined
+  var symbol: js.UndefOr[SymbolProperties] = js.native
 }
 
 object SimpleRendererProperties {
   @scala.inline
-  def apply(
-    authoringInfo: AuthoringInfoProperties = null,
-    label: String = null,
-    symbol: SymbolProperties = null,
-    visualVariables: js.Array[VisualVariableProperties] = null
-  ): SimpleRendererProperties = {
+  def apply(): SimpleRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRendererProperties]
   }
+  @scala.inline
+  implicit class SimpleRendererPropertiesOps[Self <: SimpleRendererProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setSymbol(value: SymbolProperties): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+  }
+  
 }
 

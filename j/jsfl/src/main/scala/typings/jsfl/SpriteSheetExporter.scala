@@ -30,7 +30,16 @@ trait SpriteSheetExporter extends js.Object {
   var version: String = js.native
   def addBitmap(item: FlashItem): js.Any = js.native
   def addSymbol(item: FlashItem): js.Any = js.native
+  def addSymbol(
+    item: FlashItem,
+    name: js.UndefOr[scala.Nothing],
+    beginFrame: js.UndefOr[scala.Nothing],
+    endFrame: Double
+  ): js.Any = js.native
+  def addSymbol(item: FlashItem, name: js.UndefOr[scala.Nothing], beginFrame: Double): js.Any = js.native
+  def addSymbol(item: FlashItem, name: js.UndefOr[scala.Nothing], beginFrame: Double, endFrame: Double): js.Any = js.native
   def addSymbol(item: FlashItem, name: String): js.Any = js.native
+  def addSymbol(item: FlashItem, name: String, beginFrame: js.UndefOr[scala.Nothing], endFrame: Double): js.Any = js.native
   def addSymbol(item: FlashItem, name: String, beginFrame: Double): js.Any = js.native
   def addSymbol(item: FlashItem, name: String, beginFrame: Double, endFrame: Double): js.Any = js.native
   def beginExport(): js.Any = js.native

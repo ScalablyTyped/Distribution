@@ -22,5 +22,22 @@ object UpdateTerminationProtectionInput {
     val __obj = js.Dynamic.literal(EnableTerminationProtection = EnableTerminationProtection.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTerminationProtectionInput]
   }
+  @scala.inline
+  implicit class UpdateTerminationProtectionInputOps[Self <: UpdateTerminationProtectionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = this.set("EnableTerminationProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

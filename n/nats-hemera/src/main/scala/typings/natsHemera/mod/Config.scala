@@ -6,54 +6,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Config extends js.Object {
-  var bloomrun: js.UndefOr[BloomrunConfig] = js.undefined
-  var childLogger: js.UndefOr[Boolean] = js.undefined
-  var errio: js.UndefOr[ErrioConfig] = js.undefined
-  var load: js.UndefOr[LoadConfig] = js.undefined
-  var logLevel: js.UndefOr[LogLevel] = js.undefined
-  var logger: js.UndefOr[Logger | Stream] = js.undefined
-  var maxRecursion: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var pluginTimeout: js.UndefOr[Double] = js.undefined
-  var prettyLog: js.UndefOr[Boolean] = js.undefined
-  var tag: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double | `2000`] = js.undefined
-  var traceLog: js.UndefOr[Boolean] = js.undefined
+  var bloomrun: js.UndefOr[BloomrunConfig] = js.native
+  var childLogger: js.UndefOr[Boolean] = js.native
+  var errio: js.UndefOr[ErrioConfig] = js.native
+  var load: js.UndefOr[LoadConfig] = js.native
+  var logLevel: js.UndefOr[LogLevel] = js.native
+  var logger: js.UndefOr[Logger | Stream] = js.native
+  var maxRecursion: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var pluginTimeout: js.UndefOr[Double] = js.native
+  var prettyLog: js.UndefOr[Boolean] = js.native
+  var tag: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double | `2000`] = js.native
+  var traceLog: js.UndefOr[Boolean] = js.native
 }
 
 object Config {
   @scala.inline
-  def apply(
-    bloomrun: BloomrunConfig = null,
-    childLogger: js.UndefOr[Boolean] = js.undefined,
-    errio: ErrioConfig = null,
-    load: LoadConfig = null,
-    logLevel: LogLevel = null,
-    logger: Logger | Stream = null,
-    maxRecursion: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    pluginTimeout: js.UndefOr[Double] = js.undefined,
-    prettyLog: js.UndefOr[Boolean] = js.undefined,
-    tag: String = null,
-    timeout: Double | `2000` = null,
-    traceLog: js.UndefOr[Boolean] = js.undefined
-  ): Config = {
+  def apply(): Config = {
     val __obj = js.Dynamic.literal()
-    if (bloomrun != null) __obj.updateDynamic("bloomrun")(bloomrun.asInstanceOf[js.Any])
-    if (!js.isUndefined(childLogger)) __obj.updateDynamic("childLogger")(childLogger.get.asInstanceOf[js.Any])
-    if (errio != null) __obj.updateDynamic("errio")(errio.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRecursion)) __obj.updateDynamic("maxRecursion")(maxRecursion.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(pluginTimeout)) __obj.updateDynamic("pluginTimeout")(pluginTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyLog)) __obj.updateDynamic("prettyLog")(prettyLog.get.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceLog)) __obj.updateDynamic("traceLog")(traceLog.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  @scala.inline
+  implicit class ConfigOps[Self <: Config] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBloomrun(value: BloomrunConfig): Self = this.set("bloomrun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBloomrun: Self = this.set("bloomrun", js.undefined)
+    @scala.inline
+    def setChildLogger(value: Boolean): Self = this.set("childLogger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildLogger: Self = this.set("childLogger", js.undefined)
+    @scala.inline
+    def setErrio(value: ErrioConfig): Self = this.set("errio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrio: Self = this.set("errio", js.undefined)
+    @scala.inline
+    def setLoad(value: LoadConfig): Self = this.set("load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setLogLevel(value: LogLevel): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setLogger(value: Logger | Stream): Self = this.set("logger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogger: Self = this.set("logger", js.undefined)
+    @scala.inline
+    def setMaxRecursion(value: Double): Self = this.set("maxRecursion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecursion: Self = this.set("maxRecursion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPluginTimeout(value: Double): Self = this.set("pluginTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePluginTimeout: Self = this.set("pluginTimeout", js.undefined)
+    @scala.inline
+    def setPrettyLog(value: Boolean): Self = this.set("prettyLog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyLog: Self = this.set("prettyLog", js.undefined)
+    @scala.inline
+    def setTag(value: String): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double | `2000`): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTraceLog(value: Boolean): Self = this.set("traceLog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceLog: Self = this.set("traceLog", js.undefined)
+  }
+  
 }
 

@@ -49,6 +49,16 @@ class ClassStmt protected () extends Statement {
     getters: js.Array[ClassGetter],
     constructorMethod: ClassMethod,
     methods: js.Array[ClassMethod],
+    modifiers: js.UndefOr[scala.Nothing],
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    parent: Null,
+    fields: js.Array[ClassField],
+    getters: js.Array[ClassGetter],
+    constructorMethod: ClassMethod,
+    methods: js.Array[ClassMethod],
     modifiers: js.Array[StmtModifier],
     sourceSpan: ParseSourceSpan
   ) = this()
@@ -60,6 +70,16 @@ class ClassStmt protected () extends Statement {
     constructorMethod: ClassMethod,
     methods: js.Array[ClassMethod],
     modifiers: Null,
+    sourceSpan: ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    parent: Expression,
+    fields: js.Array[ClassField],
+    getters: js.Array[ClassGetter],
+    constructorMethod: ClassMethod,
+    methods: js.Array[ClassMethod],
+    modifiers: js.UndefOr[scala.Nothing],
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(

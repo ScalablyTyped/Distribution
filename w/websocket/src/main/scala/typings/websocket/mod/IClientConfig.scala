@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IClientConfig extends IConfig {
   /**
-    * Options to pass to https.request if connecting via TLS.
-    * See Node's HTTPS documentation
+    * Options to pass to `https.request` if connecting via TLS.
     * @see https://nodejs.org/api/https.html#https_https_request_options_callback
     */
-  var tlsOptions: js.UndefOr[RequestOptions] = js.undefined
+  var tlsOptions: js.UndefOr[RequestOptions] = js.native
   /**
     * Which version of the WebSocket protocol to use when making the connection.
     * Currently supported values are 8 and 13. This option will be removed once the
@@ -20,31 +20,35 @@ trait IClientConfig extends IConfig {
     * the name of the Origin header.
     * @default 13
     */
-  var webSocketVersion: js.UndefOr[Double] = js.undefined
+  var webSocketVersion: js.UndefOr[Double] = js.native
 }
 
 object IClientConfig {
   @scala.inline
-  def apply(
-    assembleFragments: js.UndefOr[Boolean] = js.undefined,
-    closeTimeout: js.UndefOr[Double] = js.undefined,
-    fragmentOutgoingMessages: js.UndefOr[Boolean] = js.undefined,
-    fragmentationThreshold: js.UndefOr[Double] = js.undefined,
-    maxReceivedFrameSize: js.UndefOr[Double] = js.undefined,
-    maxReceivedMessageSize: js.UndefOr[Double] = js.undefined,
-    tlsOptions: RequestOptions = null,
-    webSocketVersion: js.UndefOr[Double] = js.undefined
-  ): IClientConfig = {
+  def apply(): IClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeTimeout)) __obj.updateDynamic("closeTimeout")(closeTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fragmentationThreshold)) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxReceivedFrameSize)) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxReceivedMessageSize)) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.get.asInstanceOf[js.Any])
-    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(webSocketVersion)) __obj.updateDynamic("webSocketVersion")(webSocketVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClientConfig]
   }
+  @scala.inline
+  implicit class IClientConfigOps[Self <: IClientConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTlsOptions(value: RequestOptions): Self = this.set("tlsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTlsOptions: Self = this.set("tlsOptions", js.undefined)
+    @scala.inline
+    def setWebSocketVersion(value: Double): Self = this.set("webSocketVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebSocketVersion: Self = this.set("webSocketVersion", js.undefined)
+  }
+  
 }
 

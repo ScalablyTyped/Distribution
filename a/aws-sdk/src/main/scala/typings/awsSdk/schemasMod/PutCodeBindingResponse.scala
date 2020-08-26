@@ -26,18 +26,38 @@ trait PutCodeBindingResponse extends js.Object {
 
 object PutCodeBindingResponse {
   @scala.inline
-  def apply(
-    CreationDate: timestampIso8601 = null,
-    LastModified: timestampIso8601 = null,
-    SchemaVersion: string = null,
-    Status: CodeGenerationStatus = null
-  ): PutCodeBindingResponse = {
+  def apply(): PutCodeBindingResponse = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (SchemaVersion != null) __obj.updateDynamic("SchemaVersion")(SchemaVersion.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutCodeBindingResponse]
   }
+  @scala.inline
+  implicit class PutCodeBindingResponseOps[Self <: PutCodeBindingResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: timestampIso8601): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setLastModified(value: timestampIso8601): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: string): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
+    @scala.inline
+    def setStatus(value: CodeGenerationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -17,9 +17,9 @@ trait ImmutableStyleMap
   @JSName("get")
   def get_aliases(key: aliases): Aliases = js.native
   @JSName("get")
-  def get_global(key: global): Props = js.native
+  def get_global(key: global): js.UndefOr[Props] = js.native
   @JSName("get")
-  def get_imports(key: imports): js.Array[String] = js.native
+  def get_imports(key: imports): js.UndefOr[js.Array[String]] = js.native
   @JSName("get")
   def get_meta(key: meta): Meta = js.native
   @JSName("get")

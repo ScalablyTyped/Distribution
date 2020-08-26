@@ -18,11 +18,32 @@ trait ListContainerInstancesResponse extends js.Object {
 
 object ListContainerInstancesResponse {
   @scala.inline
-  def apply(containerInstanceArns: StringList = null, nextToken: String = null): ListContainerInstancesResponse = {
+  def apply(): ListContainerInstancesResponse = {
     val __obj = js.Dynamic.literal()
-    if (containerInstanceArns != null) __obj.updateDynamic("containerInstanceArns")(containerInstanceArns.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListContainerInstancesResponse]
   }
+  @scala.inline
+  implicit class ListContainerInstancesResponseOps[Self <: ListContainerInstancesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerInstanceArnsVarargs(value: String*): Self = this.set("containerInstanceArns", js.Array(value :_*))
+    @scala.inline
+    def setContainerInstanceArns(value: StringList): Self = this.set("containerInstanceArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerInstanceArns: Self = this.set("containerInstanceArns", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

@@ -38,6 +38,7 @@ object ClassService extends js.Object {
     * 
     */
   def install(name: String, cmd: String): Unit = js.native
+  def install(name: String, cmd: String, displayName: js.UndefOr[scala.Nothing], description: String): Unit = js.native
   def install(name: String, cmd: String, displayName: String): Unit = js.native
   def install(name: String, cmd: String, displayName: String, description: String): Unit = js.native
   /**

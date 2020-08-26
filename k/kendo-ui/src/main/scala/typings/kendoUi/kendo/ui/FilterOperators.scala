@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FilterOperators extends js.Object {
-  var boolean: js.UndefOr[FilterOperatorsBoolean] = js.undefined
-  var date: js.UndefOr[FilterOperatorsDate] = js.undefined
-  var number: js.UndefOr[FilterOperatorsNumber] = js.undefined
-  var string: js.UndefOr[FilterOperatorsString] = js.undefined
+  var boolean: js.UndefOr[FilterOperatorsBoolean] = js.native
+  var date: js.UndefOr[FilterOperatorsDate] = js.native
+  var number: js.UndefOr[FilterOperatorsNumber] = js.native
+  var string: js.UndefOr[FilterOperatorsString] = js.native
 }
 
 object FilterOperators {
   @scala.inline
-  def apply(
-    boolean: FilterOperatorsBoolean = null,
-    date: FilterOperatorsDate = null,
-    number: FilterOperatorsNumber = null,
-    string: FilterOperatorsString = null
-  ): FilterOperators = {
+  def apply(): FilterOperators = {
     val __obj = js.Dynamic.literal()
-    if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperators]
   }
+  @scala.inline
+  implicit class FilterOperatorsOps[Self <: FilterOperators] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoolean(value: FilterOperatorsBoolean): Self = this.set("boolean", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoolean: Self = this.set("boolean", js.undefined)
+    @scala.inline
+    def setDate(value: FilterOperatorsDate): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setNumber(value: FilterOperatorsNumber): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setString(value: FilterOperatorsString): Self = this.set("string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+  }
+  
 }
 

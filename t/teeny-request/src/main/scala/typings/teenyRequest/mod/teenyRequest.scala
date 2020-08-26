@@ -1,5 +1,6 @@
 package typings.teenyRequest.mod
 
+import typings.teenyRequest.teenyStatisticsMod.TeenyStatistics
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +16,8 @@ object teenyRequest extends js.Object {
       Unit | Request
     ]
   ] = js.native
+  var resetStats: js.Function0[Unit] = js.native
+  var stats: TeenyStatistics = js.native
   def apply(reqOpts: Options): Request = js.native
   def apply(reqOpts: Options, callback: RequestCallback[_]): Unit = js.native
 }

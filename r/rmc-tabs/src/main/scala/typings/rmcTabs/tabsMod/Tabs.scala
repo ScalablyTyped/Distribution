@@ -1,7 +1,6 @@
 package typings.rmcTabs.tabsMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rcGesture.mod.IGestureStatus
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.rmcTabs.anon.OnPanMove
@@ -21,9 +20,30 @@ class Tabs protected ()
   var onPan: OnPanMove = js.native
   def getContentPosByIndex(index: Double, isVertical: Boolean): String = js.native
   def getContentPosByIndex(index: Double, isVertical: Boolean, useLeft: Boolean): String = js.native
+  def goToTab(
+    index: Double,
+    force: js.UndefOr[scala.Nothing],
+    usePaged: js.UndefOr[scala.Nothing],
+    props: ReadonlychildrenReactNode
+  ): Boolean = js.native
+  def goToTab(index: Double, force: js.UndefOr[scala.Nothing], usePaged: Boolean): Boolean = js.native
+  def goToTab(
+    index: Double,
+    force: js.UndefOr[scala.Nothing],
+    usePaged: Boolean,
+    props: ReadonlychildrenReactNode
+  ): Boolean = js.native
+  def goToTab(
+    index: Double,
+    force: Boolean,
+    usePaged: js.UndefOr[scala.Nothing],
+    props: ReadonlychildrenReactNode
+  ): Boolean = js.native
   def goToTab(index: Double, force: Boolean, usePaged: Boolean): Boolean = js.native
   def goToTab(index: Double, force: Boolean, usePaged: Boolean, props: ReadonlychildrenReactNode): Boolean = js.native
-  def onSwipe(status: IGestureStatus): Unit = js.native
+  def onSwipe(
+    status: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IGestureStatus */ js.Any
+  ): Unit = js.native
   def renderContent(): Element = js.native
   def renderContent(
     getSubElements: js.Function2[

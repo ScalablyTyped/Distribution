@@ -30,6 +30,7 @@ object inspectorMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: AssessmentTargetArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: AssessmentTargetArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -61,8 +62,8 @@ object inspectorMod extends js.Object {
     def this(name: String, args: ResourceGroupArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getRulesPackages(): js.Promise[GetRulesPackagesResult] with GetRulesPackagesResult = js.native
-  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] with GetRulesPackagesResult = js.native
+  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = js.native
+  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
   /* static members */
   @js.native
   object AssessmentTarget extends js.Object {
@@ -73,8 +74,10 @@ object inspectorMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
     def get(name: String, id: Input[ID], state: AssessmentTargetState): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
     def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTargetMod.AssessmentTarget = js.native
     /**
@@ -94,8 +97,10 @@ object inspectorMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
     def get(name: String, id: Input[ID], state: AssessmentTemplateState): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
     def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): typings.pulumiAws.assessmentTemplateMod.AssessmentTemplate = js.native
     /**
@@ -115,8 +120,10 @@ object inspectorMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
     def get(name: String, id: Input[ID], state: ResourceGroupState): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
     def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): typings.pulumiAws.resourceGroupMod.ResourceGroup = js.native
     /**

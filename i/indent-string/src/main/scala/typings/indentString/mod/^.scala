@@ -21,6 +21,7 @@ object ^ extends js.Object {
   ```
   */
   def apply(string: String): String = js.native
+  def apply(string: String, count: js.UndefOr[scala.Nothing], options: Options): String = js.native
   def apply(string: String, count: Double): String = js.native
   def apply(string: String, count: Double, options: Options): String = js.native
 }

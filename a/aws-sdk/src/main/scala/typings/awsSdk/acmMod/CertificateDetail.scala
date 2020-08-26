@@ -114,62 +114,136 @@ trait CertificateDetail extends js.Object {
 
 object CertificateDetail {
   @scala.inline
-  def apply(
-    CertificateArn: Arn = null,
-    CertificateAuthorityArn: Arn = null,
-    CreatedAt: TStamp = null,
-    DomainName: DomainNameString = null,
-    DomainValidationOptions: DomainValidationList = null,
-    ExtendedKeyUsages: ExtendedKeyUsageList = null,
-    FailureReason: FailureReason = null,
-    ImportedAt: TStamp = null,
-    InUseBy: InUseList = null,
-    IssuedAt: TStamp = null,
-    Issuer: String = null,
-    KeyAlgorithm: KeyAlgorithm = null,
-    KeyUsages: KeyUsageList = null,
-    NotAfter: TStamp = null,
-    NotBefore: TStamp = null,
-    Options: CertificateOptions = null,
-    RenewalEligibility: RenewalEligibility = null,
-    RenewalSummary: RenewalSummary = null,
-    RevocationReason: RevocationReason = null,
-    RevokedAt: TStamp = null,
-    Serial: String = null,
-    SignatureAlgorithm: String = null,
-    Status: CertificateStatus = null,
-    Subject: String = null,
-    SubjectAlternativeNames: DomainList = null,
-    Type: CertificateType = null
-  ): CertificateDetail = {
+  def apply(): CertificateDetail = {
     val __obj = js.Dynamic.literal()
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (CertificateAuthorityArn != null) __obj.updateDynamic("CertificateAuthorityArn")(CertificateAuthorityArn.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (DomainValidationOptions != null) __obj.updateDynamic("DomainValidationOptions")(DomainValidationOptions.asInstanceOf[js.Any])
-    if (ExtendedKeyUsages != null) __obj.updateDynamic("ExtendedKeyUsages")(ExtendedKeyUsages.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (ImportedAt != null) __obj.updateDynamic("ImportedAt")(ImportedAt.asInstanceOf[js.Any])
-    if (InUseBy != null) __obj.updateDynamic("InUseBy")(InUseBy.asInstanceOf[js.Any])
-    if (IssuedAt != null) __obj.updateDynamic("IssuedAt")(IssuedAt.asInstanceOf[js.Any])
-    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer.asInstanceOf[js.Any])
-    if (KeyAlgorithm != null) __obj.updateDynamic("KeyAlgorithm")(KeyAlgorithm.asInstanceOf[js.Any])
-    if (KeyUsages != null) __obj.updateDynamic("KeyUsages")(KeyUsages.asInstanceOf[js.Any])
-    if (NotAfter != null) __obj.updateDynamic("NotAfter")(NotAfter.asInstanceOf[js.Any])
-    if (NotBefore != null) __obj.updateDynamic("NotBefore")(NotBefore.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (RenewalEligibility != null) __obj.updateDynamic("RenewalEligibility")(RenewalEligibility.asInstanceOf[js.Any])
-    if (RenewalSummary != null) __obj.updateDynamic("RenewalSummary")(RenewalSummary.asInstanceOf[js.Any])
-    if (RevocationReason != null) __obj.updateDynamic("RevocationReason")(RevocationReason.asInstanceOf[js.Any])
-    if (RevokedAt != null) __obj.updateDynamic("RevokedAt")(RevokedAt.asInstanceOf[js.Any])
-    if (Serial != null) __obj.updateDynamic("Serial")(Serial.asInstanceOf[js.Any])
-    if (SignatureAlgorithm != null) __obj.updateDynamic("SignatureAlgorithm")(SignatureAlgorithm.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
-    if (SubjectAlternativeNames != null) __obj.updateDynamic("SubjectAlternativeNames")(SubjectAlternativeNames.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateDetail]
   }
+  @scala.inline
+  implicit class CertificateDetailOps[Self <: CertificateDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: Arn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateAuthorityArn: Self = this.set("CertificateAuthorityArn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: TStamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainNameString): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setDomainValidationOptionsVarargs(value: DomainValidation*): Self = this.set("DomainValidationOptions", js.Array(value :_*))
+    @scala.inline
+    def setDomainValidationOptions(value: DomainValidationList): Self = this.set("DomainValidationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainValidationOptions: Self = this.set("DomainValidationOptions", js.undefined)
+    @scala.inline
+    def setExtendedKeyUsagesVarargs(value: ExtendedKeyUsage*): Self = this.set("ExtendedKeyUsages", js.Array(value :_*))
+    @scala.inline
+    def setExtendedKeyUsages(value: ExtendedKeyUsageList): Self = this.set("ExtendedKeyUsages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedKeyUsages: Self = this.set("ExtendedKeyUsages", js.undefined)
+    @scala.inline
+    def setFailureReason(value: FailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setImportedAt(value: TStamp): Self = this.set("ImportedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportedAt: Self = this.set("ImportedAt", js.undefined)
+    @scala.inline
+    def setInUseByVarargs(value: String*): Self = this.set("InUseBy", js.Array(value :_*))
+    @scala.inline
+    def setInUseBy(value: InUseList): Self = this.set("InUseBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInUseBy: Self = this.set("InUseBy", js.undefined)
+    @scala.inline
+    def setIssuedAt(value: TStamp): Self = this.set("IssuedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuedAt: Self = this.set("IssuedAt", js.undefined)
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+    @scala.inline
+    def setKeyAlgorithm(value: KeyAlgorithm): Self = this.set("KeyAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyAlgorithm: Self = this.set("KeyAlgorithm", js.undefined)
+    @scala.inline
+    def setKeyUsagesVarargs(value: KeyUsage*): Self = this.set("KeyUsages", js.Array(value :_*))
+    @scala.inline
+    def setKeyUsages(value: KeyUsageList): Self = this.set("KeyUsages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyUsages: Self = this.set("KeyUsages", js.undefined)
+    @scala.inline
+    def setNotAfter(value: TStamp): Self = this.set("NotAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAfter: Self = this.set("NotAfter", js.undefined)
+    @scala.inline
+    def setNotBefore(value: TStamp): Self = this.set("NotBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotBefore: Self = this.set("NotBefore", js.undefined)
+    @scala.inline
+    def setOptions(value: CertificateOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setRenewalEligibility(value: RenewalEligibility): Self = this.set("RenewalEligibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenewalEligibility: Self = this.set("RenewalEligibility", js.undefined)
+    @scala.inline
+    def setRenewalSummary(value: RenewalSummary): Self = this.set("RenewalSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenewalSummary: Self = this.set("RenewalSummary", js.undefined)
+    @scala.inline
+    def setRevocationReason(value: RevocationReason): Self = this.set("RevocationReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocationReason: Self = this.set("RevocationReason", js.undefined)
+    @scala.inline
+    def setRevokedAt(value: TStamp): Self = this.set("RevokedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevokedAt: Self = this.set("RevokedAt", js.undefined)
+    @scala.inline
+    def setSerial(value: String): Self = this.set("Serial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerial: Self = this.set("Serial", js.undefined)
+    @scala.inline
+    def setSignatureAlgorithm(value: String): Self = this.set("SignatureAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureAlgorithm: Self = this.set("SignatureAlgorithm", js.undefined)
+    @scala.inline
+    def setStatus(value: CertificateStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubject(value: String): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("Subject", js.undefined)
+    @scala.inline
+    def setSubjectAlternativeNamesVarargs(value: DomainNameString*): Self = this.set("SubjectAlternativeNames", js.Array(value :_*))
+    @scala.inline
+    def setSubjectAlternativeNames(value: DomainList): Self = this.set("SubjectAlternativeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectAlternativeNames: Self = this.set("SubjectAlternativeNames", js.undefined)
+    @scala.inline
+    def setType(value: CertificateType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

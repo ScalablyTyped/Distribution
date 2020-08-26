@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "subscriptions-transport-ws" : "0.9.16"
+      "subscriptions-transport-ws" : "0.9.17"
     }
   ],
   "test-dependencies" : [
     {
-      "subscriptions-transport-ws" : "0.9.16"
+      "subscriptions-transport-ws" : "0.9.17"
     }
   ],
   "compile-devDependencies" : [

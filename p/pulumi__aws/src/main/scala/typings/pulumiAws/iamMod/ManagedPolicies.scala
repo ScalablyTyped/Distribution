@@ -33,6 +33,7 @@ object ManagedPolicies extends js.Object {
   val AWSCodeDeployFullAccess: ARN = js.native
   val AWSCodeDeployReadOnlyAccess: ARN = js.native
   val AWSCodeDeployRole: ARN = js.native
+  val AWSCodeDeployRoleForECS: ARN = js.native
   val AWSCodePipelineApproverAccess: ARN = js.native
   val AWSCodePipelineCustomActionAccess: ARN = js.native
   val AWSCodePipelineFullAccess: ARN = js.native
@@ -151,6 +152,7 @@ object ManagedPolicies extends js.Object {
   val AmazonEC2RoleforSSM: ARN = js.native
   val AmazonEC2SpotFleetAutoscaleRole: ARN = js.native
   val AmazonEC2SpotFleetRole: ARN = js.native
+  val AmazonEC2SpotFleetTaggingRole: ARN = js.native
   val AmazonESFullAccess: ARN = js.native
   val AmazonESReadOnlyAccess: ARN = js.native
   val AmazonElastiCacheFullAccess: ARN = js.native
@@ -194,6 +196,7 @@ object ManagedPolicies extends js.Object {
   val AmazonMobileAnalyticsWriteOnlyAccess: ARN = js.native
   val AmazonPollyFullAccess: ARN = js.native
   val AmazonPollyReadOnlyAccess: ARN = js.native
+  val AmazonRDSDataFullAccess: ARN = js.native
   val AmazonRDSDirectoryServiceAccess: ARN = js.native
   val AmazonRDSEnhancedMonitoringRole: ARN = js.native
   val AmazonRDSFullAccess: ARN = js.native
@@ -218,6 +221,7 @@ object ManagedPolicies extends js.Object {
   val AmazonSSMAutomationRole: ARN = js.native
   val AmazonSSMFullAccess: ARN = js.native
   val AmazonSSMMaintenanceWindowRole: ARN = js.native
+  val AmazonSSMManagedInstanceCore: ARN = js.native
   val AmazonSSMReadOnlyAccess: ARN = js.native
   val AmazonVPCFullAccess: ARN = js.native
   val AmazonVPCReadOnlyAccess: ARN = js.native

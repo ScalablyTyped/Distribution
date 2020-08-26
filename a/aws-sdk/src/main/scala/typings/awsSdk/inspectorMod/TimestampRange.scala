@@ -18,11 +18,30 @@ trait TimestampRange extends js.Object {
 
 object TimestampRange {
   @scala.inline
-  def apply(beginDate: Timestamp = null, endDate: Timestamp = null): TimestampRange = {
+  def apply(): TimestampRange = {
     val __obj = js.Dynamic.literal()
-    if (beginDate != null) __obj.updateDynamic("beginDate")(beginDate.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimestampRange]
   }
+  @scala.inline
+  implicit class TimestampRangeOps[Self <: TimestampRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeginDate(value: Timestamp): Self = this.set("beginDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeginDate: Self = this.set("beginDate", js.undefined)
+    @scala.inline
+    def setEndDate(value: Timestamp): Self = this.set("endDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndDate: Self = this.set("endDate", js.undefined)
+  }
+  
 }
 

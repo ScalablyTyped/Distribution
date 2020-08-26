@@ -43,18 +43,38 @@ trait SchemaPubsubMessage extends js.Object {
 
 object SchemaPubsubMessage {
   @scala.inline
-  def apply(
-    attributes: StringDictionary[String] = null,
-    data: String = null,
-    messageId: String = null,
-    publishTime: String = null
-  ): SchemaPubsubMessage = {
+  def apply(): SchemaPubsubMessage = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (publishTime != null) __obj.updateDynamic("publishTime")(publishTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPubsubMessage]
   }
+  @scala.inline
+  implicit class SchemaPubsubMessageOps[Self <: SchemaPubsubMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: StringDictionary[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setMessageId(value: String): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    @scala.inline
+    def setPublishTime(value: String): Self = this.set("publishTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishTime: Self = this.set("publishTime", js.undefined)
+  }
+  
 }
 

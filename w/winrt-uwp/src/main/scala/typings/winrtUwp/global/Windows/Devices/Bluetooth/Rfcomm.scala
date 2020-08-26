@@ -17,23 +17,7 @@ object Rfcomm extends js.Object {
   /** Represents an RFCOMM service ID. */
   @js.native
   abstract class RfcommServiceId ()
-    extends typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId {
-    /** Retrieves the 128-bit service id. */
-    /* CompleteClass */
-    override var uuid: String = js.native
-    /**
-      * Converts the RfcommServiceId to a 32-bit service id if possible.
-      * @return Returns the 32-bit service id if the RfcommServiceId represents a standardized service.
-      */
-    /* CompleteClass */
-    override def asShortId(): Double = js.native
-    /**
-      * Converts the RfcommServiceId to a string.
-      * @return Returns the string representation of the 128-bit service id.
-      */
-    /* CompleteClass */
-    override def asString(): String = js.native
-  }
+    extends typings.winrtUwp.Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId
   
   /** Represents an instance of a local RFCOMM service. */
   @js.native

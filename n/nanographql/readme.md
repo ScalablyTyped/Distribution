@@ -12,7 +12,7 @@ Tiny graphQL client library
 | Keywords           | graphql, small, nano |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 5520 |
+| # downloads        | 5683 |
 | # stars            | 0 |
 
 ## Links

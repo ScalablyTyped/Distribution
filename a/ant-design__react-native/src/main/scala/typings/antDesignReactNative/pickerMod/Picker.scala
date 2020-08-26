@@ -14,9 +14,30 @@ trait Picker
   var scrollValue: js.Any = js.native
   def fixOnOk(cascader: js.Any): Unit = js.native
   def getCascade(
-    cascade: js.UndefOr[Boolean],
+    cascade: js.UndefOr[scala.Nothing],
     data: js.Array[js.Array[PickerData] | PickerData],
-    cols: js.UndefOr[Double],
+    cols: js.UndefOr[scala.Nothing],
+    itemStyle: js.Any,
+    indicatorStyle: js.Any
+  ): Cascader = js.native
+  def getCascade(
+    cascade: js.UndefOr[scala.Nothing],
+    data: js.Array[js.Array[PickerData] | PickerData],
+    cols: Double,
+    itemStyle: js.Any,
+    indicatorStyle: js.Any
+  ): Cascader = js.native
+  def getCascade(
+    cascade: Boolean,
+    data: js.Array[js.Array[PickerData] | PickerData],
+    cols: js.UndefOr[scala.Nothing],
+    itemStyle: js.Any,
+    indicatorStyle: js.Any
+  ): Cascader = js.native
+  def getCascade(
+    cascade: Boolean,
+    data: js.Array[js.Array[PickerData] | PickerData],
+    cols: Double,
     itemStyle: js.Any,
     indicatorStyle: js.Any
   ): Cascader = js.native

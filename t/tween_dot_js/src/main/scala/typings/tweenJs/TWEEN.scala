@@ -14,6 +14,7 @@ object TWEEN extends js.Object {
     def remove(tween: Tween): Unit = js.native
     def removeAll(): Unit = js.native
     def update(): Boolean = js.native
+    def update(time: js.UndefOr[scala.Nothing], preserve: Boolean): Boolean = js.native
     def update(time: Double): Boolean = js.native
     def update(time: Double, preserve: Boolean): Boolean = js.native
   }

@@ -34,6 +34,7 @@ object mod extends js.Object {
   @js.native
   object LocaleUtils extends js.Object {
     def formatDate(date: Date): String = js.native
+    def formatDate(date: Date, format: js.UndefOr[scala.Nothing], locale: String): String = js.native
     def formatDate(date: Date, format: String): String = js.native
     def formatDate(date: Date, format: String, locale: String): String = js.native
     def formatDate(date: Date, format: js.Array[String]): String = js.native
@@ -51,6 +52,7 @@ object mod extends js.Object {
     def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
     def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
     def parseDate(str: String): Date = js.native
+    def parseDate(str: String, format: js.UndefOr[scala.Nothing], locale: String): Date = js.native
     def parseDate(str: String, format: String): Date = js.native
     def parseDate(str: String, format: String, locale: String): Date = js.native
   }

@@ -11,8 +11,8 @@ The lodash method `_.isInteger` exported as a module.
 | Full name          | lodash.isinteger |
 | Keywords           | lodash-modularized, isinteger |
 | # releases         | 0 |
-| # dependents       | 37 |
-| # downloads        | 86384707 |
+| # dependents       | 38 |
+| # downloads        | 89726572 |
 | # stars            | 0 |
 
 ## Links

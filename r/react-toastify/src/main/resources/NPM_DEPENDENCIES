@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-toastify" : "5.5.0"
+      "react-toastify" : "6.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "react-toastify" : "5.5.0"
+      "react-toastify" : "6.0.8"
     }
   ],
   "compile-devDependencies" : [

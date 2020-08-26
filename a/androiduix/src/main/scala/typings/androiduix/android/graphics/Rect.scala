@@ -1,15 +1,12 @@
 package typings.androiduix.android.graphics
 
-import typings.androiduix.java.lang.StringBuilder
+import typings.androiduix.java_.lang.StringBuilder
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.Rect")
 @js.native
-class Rect () extends js.Object {
-  def this(r: Rect) = this()
-  def this(left: Double, top: Double, right: Double, bottom: Double) = this()
+trait Rect extends js.Object {
   var bottom: Double = js.native
   var left: Double = js.native
   var right: Double = js.native
@@ -44,13 +41,5 @@ class Rect () extends js.Object {
   def union(r: Rect): js.Any = js.native
   def union(x: Double, y: Double): js.Any = js.native
   def width(): Double = js.native
-}
-
-/* static members */
-@JSGlobal("android.graphics.Rect")
-@js.native
-object Rect extends js.Object {
-  def intersects(a: Rect, b: Rect): Boolean = js.native
-  def unflattenFromString(str: String): Rect = js.native
 }
 

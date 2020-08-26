@@ -46,28 +46,58 @@ trait DomainNameConfiguration extends js.Object {
 
 object DomainNameConfiguration {
   @scala.inline
-  def apply(
-    ApiGatewayDomainName: string = null,
-    CertificateArn: Arn = null,
-    CertificateName: StringWithLengthBetween1And128 = null,
-    CertificateUploadDate: timestampIso8601 = null,
-    DomainNameStatus: DomainNameStatus = null,
-    DomainNameStatusMessage: string = null,
-    EndpointType: EndpointType = null,
-    HostedZoneId: string = null,
-    SecurityPolicy: SecurityPolicy = null
-  ): DomainNameConfiguration = {
+  def apply(): DomainNameConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ApiGatewayDomainName != null) __obj.updateDynamic("ApiGatewayDomainName")(ApiGatewayDomainName.asInstanceOf[js.Any])
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (CertificateName != null) __obj.updateDynamic("CertificateName")(CertificateName.asInstanceOf[js.Any])
-    if (CertificateUploadDate != null) __obj.updateDynamic("CertificateUploadDate")(CertificateUploadDate.asInstanceOf[js.Any])
-    if (DomainNameStatus != null) __obj.updateDynamic("DomainNameStatus")(DomainNameStatus.asInstanceOf[js.Any])
-    if (DomainNameStatusMessage != null) __obj.updateDynamic("DomainNameStatusMessage")(DomainNameStatusMessage.asInstanceOf[js.Any])
-    if (EndpointType != null) __obj.updateDynamic("EndpointType")(EndpointType.asInstanceOf[js.Any])
-    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
-    if (SecurityPolicy != null) __obj.updateDynamic("SecurityPolicy")(SecurityPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainNameConfiguration]
   }
+  @scala.inline
+  implicit class DomainNameConfigurationOps[Self <: DomainNameConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiGatewayDomainName(value: string): Self = this.set("ApiGatewayDomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiGatewayDomainName: Self = this.set("ApiGatewayDomainName", js.undefined)
+    @scala.inline
+    def setCertificateArn(value: Arn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setCertificateName(value: StringWithLengthBetween1And128): Self = this.set("CertificateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateName: Self = this.set("CertificateName", js.undefined)
+    @scala.inline
+    def setCertificateUploadDate(value: timestampIso8601): Self = this.set("CertificateUploadDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateUploadDate: Self = this.set("CertificateUploadDate", js.undefined)
+    @scala.inline
+    def setDomainNameStatus(value: DomainNameStatus): Self = this.set("DomainNameStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainNameStatus: Self = this.set("DomainNameStatus", js.undefined)
+    @scala.inline
+    def setDomainNameStatusMessage(value: string): Self = this.set("DomainNameStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainNameStatusMessage: Self = this.set("DomainNameStatusMessage", js.undefined)
+    @scala.inline
+    def setEndpointType(value: EndpointType): Self = this.set("EndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointType: Self = this.set("EndpointType", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: string): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    @scala.inline
+    def setSecurityPolicy(value: SecurityPolicy): Self = this.set("SecurityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPolicy: Self = this.set("SecurityPolicy", js.undefined)
+  }
+  
 }
 

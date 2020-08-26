@@ -18,11 +18,32 @@ trait DescribeInstanceRefreshesAnswer extends js.Object {
 
 object DescribeInstanceRefreshesAnswer {
   @scala.inline
-  def apply(InstanceRefreshes: InstanceRefreshes = null, NextToken: XmlString = null): DescribeInstanceRefreshesAnswer = {
+  def apply(): DescribeInstanceRefreshesAnswer = {
     val __obj = js.Dynamic.literal()
-    if (InstanceRefreshes != null) __obj.updateDynamic("InstanceRefreshes")(InstanceRefreshes.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInstanceRefreshesAnswer]
   }
+  @scala.inline
+  implicit class DescribeInstanceRefreshesAnswerOps[Self <: DescribeInstanceRefreshesAnswer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceRefreshesVarargs(value: InstanceRefresh*): Self = this.set("InstanceRefreshes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceRefreshes(value: InstanceRefreshes): Self = this.set("InstanceRefreshes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceRefreshes: Self = this.set("InstanceRefreshes", js.undefined)
+    @scala.inline
+    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

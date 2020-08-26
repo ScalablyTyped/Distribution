@@ -38,24 +38,50 @@ trait SchemaAttributeType extends js.Object {
 
 object SchemaAttributeType {
   @scala.inline
-  def apply(
-    AttributeDataType: AttributeDataType = null,
-    DeveloperOnlyAttribute: js.UndefOr[BooleanType] = js.undefined,
-    Mutable: js.UndefOr[BooleanType] = js.undefined,
-    Name: CustomAttributeNameType = null,
-    NumberAttributeConstraints: NumberAttributeConstraintsType = null,
-    Required: js.UndefOr[BooleanType] = js.undefined,
-    StringAttributeConstraints: StringAttributeConstraintsType = null
-  ): SchemaAttributeType = {
+  def apply(): SchemaAttributeType = {
     val __obj = js.Dynamic.literal()
-    if (AttributeDataType != null) __obj.updateDynamic("AttributeDataType")(AttributeDataType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeveloperOnlyAttribute)) __obj.updateDynamic("DeveloperOnlyAttribute")(DeveloperOnlyAttribute.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Mutable)) __obj.updateDynamic("Mutable")(Mutable.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NumberAttributeConstraints != null) __obj.updateDynamic("NumberAttributeConstraints")(NumberAttributeConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(Required)) __obj.updateDynamic("Required")(Required.get.asInstanceOf[js.Any])
-    if (StringAttributeConstraints != null) __obj.updateDynamic("StringAttributeConstraints")(StringAttributeConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAttributeType]
   }
+  @scala.inline
+  implicit class SchemaAttributeTypeOps[Self <: SchemaAttributeType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeDataType(value: AttributeDataType): Self = this.set("AttributeDataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeDataType: Self = this.set("AttributeDataType", js.undefined)
+    @scala.inline
+    def setDeveloperOnlyAttribute(value: BooleanType): Self = this.set("DeveloperOnlyAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperOnlyAttribute: Self = this.set("DeveloperOnlyAttribute", js.undefined)
+    @scala.inline
+    def setMutable(value: BooleanType): Self = this.set("Mutable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutable: Self = this.set("Mutable", js.undefined)
+    @scala.inline
+    def setName(value: CustomAttributeNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNumberAttributeConstraints(value: NumberAttributeConstraintsType): Self = this.set("NumberAttributeConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberAttributeConstraints: Self = this.set("NumberAttributeConstraints", js.undefined)
+    @scala.inline
+    def setRequired(value: BooleanType): Self = this.set("Required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("Required", js.undefined)
+    @scala.inline
+    def setStringAttributeConstraints(value: StringAttributeConstraintsType): Self = this.set("StringAttributeConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringAttributeConstraints: Self = this.set("StringAttributeConstraints", js.undefined)
+  }
+  
 }
 

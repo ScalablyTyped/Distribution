@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation._
 trait VirtualNodeSpecListenerHealthCheck extends js.Object {
   /**
     * The number of consecutive successful health checks that must occur before declaring listener healthy.
-    * * `intervalMillis`- (Required) The time period in milliseconds between each health check execution.
     */
   var healthyThreshold: Input[Double] = js.native
+  /**
+    * The time period in milliseconds between each health check execution.
+    */
   var intervalMillis: Input[Double] = js.native
   /**
     * The destination path for the health check request. This is only required if the specified protocol is `http`.
@@ -42,14 +44,41 @@ object VirtualNodeSpecListenerHealthCheck {
     intervalMillis: Input[Double],
     protocol: Input[String],
     timeoutMillis: Input[Double],
-    unhealthyThreshold: Input[Double],
-    path: Input[String] = null,
-    port: Input[Double] = null
+    unhealthyThreshold: Input[Double]
   ): VirtualNodeSpecListenerHealthCheck = {
     val __obj = js.Dynamic.literal(healthyThreshold = healthyThreshold.asInstanceOf[js.Any], intervalMillis = intervalMillis.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], timeoutMillis = timeoutMillis.asInstanceOf[js.Any], unhealthyThreshold = unhealthyThreshold.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecListenerHealthCheck]
   }
+  @scala.inline
+  implicit class VirtualNodeSpecListenerHealthCheckOps[Self <: VirtualNodeSpecListenerHealthCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthyThreshold(value: Input[Double]): Self = this.set("healthyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIntervalMillis(value: Input[Double]): Self = this.set("intervalMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocol(value: Input[String]): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeoutMillis(value: Input[Double]): Self = this.set("timeoutMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnhealthyThreshold(value: Input[Double]): Self = this.set("unhealthyThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: Input[String]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+  }
+  
 }
 

@@ -26,12 +26,35 @@ object CopyOptionGroupMessage {
   def apply(
     SourceOptionGroupIdentifier: String,
     TargetOptionGroupDescription: String,
-    TargetOptionGroupIdentifier: String,
-    Tags: TagList = null
+    TargetOptionGroupIdentifier: String
   ): CopyOptionGroupMessage = {
     val __obj = js.Dynamic.literal(SourceOptionGroupIdentifier = SourceOptionGroupIdentifier.asInstanceOf[js.Any], TargetOptionGroupDescription = TargetOptionGroupDescription.asInstanceOf[js.Any], TargetOptionGroupIdentifier = TargetOptionGroupIdentifier.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyOptionGroupMessage]
   }
+  @scala.inline
+  implicit class CopyOptionGroupMessageOps[Self <: CopyOptionGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceOptionGroupIdentifier(value: String): Self = this.set("SourceOptionGroupIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetOptionGroupDescription(value: String): Self = this.set("TargetOptionGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetOptionGroupIdentifier(value: String): Self = this.set("TargetOptionGroupIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

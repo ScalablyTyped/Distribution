@@ -1,72 +1,64 @@
 package typings.fetchIo.mod
 
-import typings.std.AbortSignal
 import typings.std.BodyInit
-import typings.std.HeadersInit
-import typings.std.ReferrerPolicy
-import typings.std.RequestCache
-import typings.std.RequestCredentials
 import typings.std.RequestInit
-import typings.std.RequestMode
-import typings.std.RequestRedirect
 import typings.std.Response
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends RequestInit {
-  var afterJSON: js.UndefOr[js.Function1[/* body */ js.Any, Unit]] = js.undefined
-  var afterResponse: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.undefined
-  var beforeRequest: js.UndefOr[js.Function2[/* url */ TUrl, /* body */ BodyInit, Boolean | Unit]] = js.undefined
-  var header: js.UndefOr[Header] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
-  var query: js.UndefOr[Query] = js.undefined
+  var afterJSON: js.UndefOr[js.Function1[/* body */ js.Any, Unit]] = js.native
+  var afterResponse: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.native
+  var beforeRequest: js.UndefOr[js.Function2[/* url */ TUrl, /* body */ BodyInit, Boolean | Unit]] = js.native
+  var header: js.UndefOr[Header] = js.native
+  var prefix: js.UndefOr[String] = js.native
+  var query: js.UndefOr[Query] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    afterJSON: /* body */ js.Any => Unit = null,
-    afterResponse: /* res */ Response => Unit = null,
-    beforeRequest: (/* url */ TUrl, /* body */ BodyInit) => Boolean | Unit = null,
-    body: js.UndefOr[Null | BodyInit] = js.undefined,
-    cache: RequestCache = null,
-    credentials: RequestCredentials = null,
-    header: Header = null,
-    headers: HeadersInit = null,
-    integrity: String = null,
-    keepalive: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    mode: RequestMode = null,
-    prefix: String = null,
-    query: Query = null,
-    redirect: RequestRedirect = null,
-    referrer: String = null,
-    referrerPolicy: ReferrerPolicy = null,
-    signal: js.UndefOr[Null | AbortSignal] = js.undefined,
-    window: js.Any = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (afterJSON != null) __obj.updateDynamic("afterJSON")(js.Any.fromFunction1(afterJSON))
-    if (afterResponse != null) __obj.updateDynamic("afterResponse")(js.Any.fromFunction1(afterResponse))
-    if (beforeRequest != null) __obj.updateDynamic("beforeRequest")(js.Any.fromFunction2(beforeRequest))
-    if (!js.isUndefined(body)) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(signal)) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterJSON(value: /* body */ js.Any => Unit): Self = this.set("afterJSON", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterJSON: Self = this.set("afterJSON", js.undefined)
+    @scala.inline
+    def setAfterResponse(value: /* res */ Response => Unit): Self = this.set("afterResponse", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterResponse: Self = this.set("afterResponse", js.undefined)
+    @scala.inline
+    def setBeforeRequest(value: (/* url */ TUrl, /* body */ BodyInit) => Boolean | Unit): Self = this.set("beforeRequest", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBeforeRequest: Self = this.set("beforeRequest", js.undefined)
+    @scala.inline
+    def setHeader(value: Header): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setQuery(value: Query): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+  }
+  
 }
 

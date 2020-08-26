@@ -29,6 +29,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(params: ParamsResourceProjectsKnowledgebasesDocumentsCreate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def create(
     params: ParamsResourceProjectsKnowledgebasesDocumentsCreate,
@@ -60,6 +61,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(params: ParamsResourceProjectsKnowledgebasesDocumentsDelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def delete(
     params: ParamsResourceProjectsKnowledgebasesDocumentsDelete,
@@ -90,6 +92,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Document]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
   def get(params: ParamsResourceProjectsKnowledgebasesDocumentsGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Document] = js.native
   def get(
     params: ParamsResourceProjectsKnowledgebasesDocumentsGet,
@@ -122,6 +125,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
   def list(params: ParamsResourceProjectsKnowledgebasesDocumentsList): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1ListDocumentsResponse] = js.native
   def list(
     params: ParamsResourceProjectsKnowledgebasesDocumentsList,
@@ -155,6 +159,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(params: ParamsResourceProjectsKnowledgebasesDocumentsPatch): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def patch(
     params: ParamsResourceProjectsKnowledgebasesDocumentsPatch,
@@ -191,6 +196,7 @@ class ResourceProjectsKnowledgebasesDocuments protected () extends js.Object {
     */
   def reload(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def reload(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def reload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def reload(params: ParamsResourceProjectsKnowledgebasesDocumentsReload): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def reload(
     params: ParamsResourceProjectsKnowledgebasesDocumentsReload,

@@ -34,18 +34,38 @@ trait SchemaTaskStatus extends js.Object {
 
 object SchemaTaskStatus {
   @scala.inline
-  def apply(
-    attemptDispatchCount: js.UndefOr[Double] = js.undefined,
-    attemptResponseCount: js.UndefOr[Double] = js.undefined,
-    firstAttemptStatus: SchemaAttemptStatus = null,
-    lastAttemptStatus: SchemaAttemptStatus = null
-  ): SchemaTaskStatus = {
+  def apply(): SchemaTaskStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attemptDispatchCount)) __obj.updateDynamic("attemptDispatchCount")(attemptDispatchCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(attemptResponseCount)) __obj.updateDynamic("attemptResponseCount")(attemptResponseCount.get.asInstanceOf[js.Any])
-    if (firstAttemptStatus != null) __obj.updateDynamic("firstAttemptStatus")(firstAttemptStatus.asInstanceOf[js.Any])
-    if (lastAttemptStatus != null) __obj.updateDynamic("lastAttemptStatus")(lastAttemptStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTaskStatus]
   }
+  @scala.inline
+  implicit class SchemaTaskStatusOps[Self <: SchemaTaskStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttemptDispatchCount(value: Double): Self = this.set("attemptDispatchCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttemptDispatchCount: Self = this.set("attemptDispatchCount", js.undefined)
+    @scala.inline
+    def setAttemptResponseCount(value: Double): Self = this.set("attemptResponseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttemptResponseCount: Self = this.set("attemptResponseCount", js.undefined)
+    @scala.inline
+    def setFirstAttemptStatus(value: SchemaAttemptStatus): Self = this.set("firstAttemptStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstAttemptStatus: Self = this.set("firstAttemptStatus", js.undefined)
+    @scala.inline
+    def setLastAttemptStatus(value: SchemaAttemptStatus): Self = this.set("lastAttemptStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttemptStatus: Self = this.set("lastAttemptStatus", js.undefined)
+  }
+  
 }
 

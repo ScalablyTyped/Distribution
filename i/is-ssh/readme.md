@@ -12,7 +12,7 @@ Check if an input value is a ssh url or not.
 | Keywords           | ssh, url, check, parser |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 27998579 |
+| # downloads        | 30300741 |
 | # stars            | 1 |
 
 ## Links

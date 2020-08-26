@@ -39,20 +39,44 @@ trait SchemaTenancyUnit extends js.Object {
 
 object SchemaTenancyUnit {
   @scala.inline
-  def apply(
-    consumer: String = null,
-    createTime: String = null,
-    name: String = null,
-    service: String = null,
-    tenantResources: js.Array[SchemaTenantResource] = null
-  ): SchemaTenancyUnit = {
+  def apply(): SchemaTenancyUnit = {
     val __obj = js.Dynamic.literal()
-    if (consumer != null) __obj.updateDynamic("consumer")(consumer.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (tenantResources != null) __obj.updateDynamic("tenantResources")(tenantResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTenancyUnit]
   }
+  @scala.inline
+  implicit class SchemaTenancyUnitOps[Self <: SchemaTenancyUnit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumer(value: String): Self = this.set("consumer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumer: Self = this.set("consumer", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setService(value: String): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+    @scala.inline
+    def setTenantResourcesVarargs(value: SchemaTenantResource*): Self = this.set("tenantResources", js.Array(value :_*))
+    @scala.inline
+    def setTenantResources(value: js.Array[SchemaTenantResource]): Self = this.set("tenantResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantResources: Self = this.set("tenantResources", js.undefined)
+  }
+  
 }
 

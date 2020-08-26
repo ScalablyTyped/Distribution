@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@electron/get/dist/cjs/Cache", JSImport.Namespace)
+@JSImport("@electron/get/dist/esm/Cache", JSImport.Namespace)
 @js.native
 object cacheMod extends js.Object {
   @js.native

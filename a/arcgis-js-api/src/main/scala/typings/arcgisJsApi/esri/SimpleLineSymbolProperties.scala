@@ -8,7 +8,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`short-dash-dot-dot`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-dash-dot`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-dash`
 import typings.arcgisJsApi.arcgisJsApiStrings.`short-dot`
-import typings.arcgisJsApi.arcgisJsApiStrings.`simple-line`
 import typings.arcgisJsApi.arcgisJsApiStrings.bevel
 import typings.arcgisJsApi.arcgisJsApiStrings.butt
 import typings.arcgisJsApi.arcgisJsApiStrings.dash
@@ -22,6 +21,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SimpleLineSymbolProperties extends LineSymbolProperties {
   /**
     * Specifies the cap style. The cap is the end node of a polyline, or the end of a line segment that does not connect with another segment of the same polyline.  See the table below for possible values.
@@ -39,7 +39,7 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
     *
     * @default round
     */
-  var cap: js.UndefOr[butt | round | square] = js.undefined
+  var cap: js.UndefOr[butt | round | square] = js.native
   /**
     * Specifies the join style. A `join` refers to the joint of a polyline, or the end of a line segment that connects to another segment of the same polyline. See the table below for possible values.
     *
@@ -54,7 +54,15 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
     *
     * @default round
     */
-  var join: js.UndefOr[miter | round | bevel] = js.undefined
+  var join: js.UndefOr[miter | round | bevel] = js.native
+  /**
+    * Specifies the color, style, and placement of a symbol marker on the line.
+    * > **Known Limitations**
+    *   * This is not currently supported within a 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html#marker)
+    */
+  var marker: js.UndefOr[LineSymbolMarkerProperties] = js.native
   /**
     * Maximum allowed ratio of the width of a miter join to the line width. Miter joins can get very wide at sharp line angles; this can be visually unpleasant or interfere with cartography. In the example below, the width of the miter join is about 3.6 times the width of the line.  ![SimpleLineSymbol.miterLimit](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/sls-miter-limit.png)  A miter limit of `X` means that a miter join can be at most `X` times as wide as the line itself. Beyond that threshold, it is replaced with a bevel join. Referring to the previous example, setting the miter limit to 3.6 or greater has no effect on the generated visuals; setting the miter limit to 3.5 or smaller causes the replacement with a bevel join.  ![Enforcing miterLimit](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/sls-miter-limit-enforcement.png)
     * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
@@ -63,7 +71,7 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
     *
     * @default 2
     */
-  var miterLimit: js.UndefOr[Double] = js.undefined
+  var miterLimit: js.UndefOr[Double] = js.native
   /**
     * Specifies the line style. Possible values are listed in the table below:
     *
@@ -90,29 +98,49 @@ trait SimpleLineSymbolProperties extends LineSymbolProperties {
     */
   var style: js.UndefOr[
     dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid
-  ] = js.undefined
+  ] = js.native
 }
 
 object SimpleLineSymbolProperties {
   @scala.inline
-  def apply(
-    cap: butt | round | square = null,
-    color: Color_ | js.Array[Double] | String = null,
-    join: miter | round | bevel = null,
-    miterLimit: js.UndefOr[Double] = js.undefined,
-    style: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid = null,
-    `type`: `simple-line` = null,
-    width: Double | String = null
-  ): SimpleLineSymbolProperties = {
+  def apply(): SimpleLineSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (cap != null) __obj.updateDynamic("cap")(cap.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (join != null) __obj.updateDynamic("join")(join.asInstanceOf[js.Any])
-    if (!js.isUndefined(miterLimit)) __obj.updateDynamic("miterLimit")(miterLimit.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleLineSymbolProperties]
   }
+  @scala.inline
+  implicit class SimpleLineSymbolPropertiesOps[Self <: SimpleLineSymbolProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCap(value: butt | round | square): Self = this.set("cap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCap: Self = this.set("cap", js.undefined)
+    @scala.inline
+    def setJoin(value: miter | round | bevel): Self = this.set("join", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJoin: Self = this.set("join", js.undefined)
+    @scala.inline
+    def setMarker(value: LineSymbolMarkerProperties): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setMiterLimit(value: Double): Self = this.set("miterLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiterLimit: Self = this.set("miterLimit", js.undefined)
+    @scala.inline
+    def setStyle(
+      value: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid
+    ): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

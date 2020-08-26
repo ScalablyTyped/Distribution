@@ -26,7 +26,7 @@ object menus extends js.Object {
   }
   
   /**
-    * See: {@link https://docs.mendix.com/refguide7/menu-item relevant section in reference guide}
+    * See: {@link https://docs.mendix.com/refguide7/menu relevant section in reference guide}
     */
   @js.native
   class MenuItem protected ()

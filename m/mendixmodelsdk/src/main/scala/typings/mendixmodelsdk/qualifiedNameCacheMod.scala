@@ -24,12 +24,12 @@ object qualifiedNameCacheMod extends js.Object {
       * Removes the structure and its children from the cache.
       */
     def removeStructureFromCache(structure: IStructure): Unit = js.native
-    def resolve(structureTypeName: String): IAbstractElement | Null = js.native
     /**
       * @param structureTypeName        type name in syntax "MetaModelname$ElementName"
       * @param qualifiedName
       * @returns The element found, or `null` when no element is found.
       */
+    def resolve(structureTypeName: String): IAbstractElement | Null = js.native
     def resolve(structureTypeName: String, qualifiedName: String): IAbstractElement | Null = js.native
     def size(): Double = js.native
   }

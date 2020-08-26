@@ -4,44 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatCommonParams extends GenericParams {
-  var format: String
-  var h: js.UndefOr[NameList] = js.undefined
-  var help: js.UndefOr[Boolean] = js.undefined
-  var local: js.UndefOr[Boolean] = js.undefined
-  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
-  var v: js.UndefOr[Boolean] = js.undefined
+  var format: String = js.native
+  var h: js.UndefOr[NameList] = js.native
+  var help: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var v: js.UndefOr[Boolean] = js.native
 }
 
 object CatCommonParams {
   @scala.inline
-  def apply(
-    format: String,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    h: NameList = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    v: js.UndefOr[Boolean] = js.undefined
-  ): CatCommonParams = {
+  def apply(format: String): CatCommonParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.get.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatCommonParams]
   }
+  @scala.inline
+  implicit class CatCommonParamsOps[Self <: CatCommonParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHVarargs(value: String*): Self = this.set("h", js.Array(value :_*))
+    @scala.inline
+    def setH(value: NameList): Self = this.set("h", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH: Self = this.set("h", js.undefined)
+    @scala.inline
+    def setHelp(value: Boolean): Self = this.set("help", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelp: Self = this.set("help", js.undefined)
+    @scala.inline
+    def setLocal(value: Boolean): Self = this.set("local", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocal: Self = this.set("local", js.undefined)
+    @scala.inline
+    def setMasterTimeout(value: TimeSpan): Self = this.set("masterTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterTimeout: Self = this.set("masterTimeout", js.undefined)
+    @scala.inline
+    def setV(value: Boolean): Self = this.set("v", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteV: Self = this.set("v", js.undefined)
+  }
+  
 }
 

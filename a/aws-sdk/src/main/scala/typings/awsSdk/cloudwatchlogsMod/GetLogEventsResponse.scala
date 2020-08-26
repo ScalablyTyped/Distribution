@@ -22,16 +22,36 @@ trait GetLogEventsResponse extends js.Object {
 
 object GetLogEventsResponse {
   @scala.inline
-  def apply(
-    events: OutputLogEvents = null,
-    nextBackwardToken: NextToken = null,
-    nextForwardToken: NextToken = null
-  ): GetLogEventsResponse = {
+  def apply(): GetLogEventsResponse = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (nextBackwardToken != null) __obj.updateDynamic("nextBackwardToken")(nextBackwardToken.asInstanceOf[js.Any])
-    if (nextForwardToken != null) __obj.updateDynamic("nextForwardToken")(nextForwardToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogEventsResponse]
   }
+  @scala.inline
+  implicit class GetLogEventsResponseOps[Self <: GetLogEventsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventsVarargs(value: OutputLogEvent*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: OutputLogEvents): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setNextBackwardToken(value: NextToken): Self = this.set("nextBackwardToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextBackwardToken: Self = this.set("nextBackwardToken", js.undefined)
+    @scala.inline
+    def setNextForwardToken(value: NextToken): Self = this.set("nextForwardToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextForwardToken: Self = this.set("nextForwardToken", js.undefined)
+  }
+  
 }
 

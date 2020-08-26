@@ -26,6 +26,7 @@ trait ResponseToolkit extends js.Object {
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#replyviewtemplate-context-options}
     */
   def view(templatePath: String): ResponseObject = js.native
+  def view(templatePath: String, context: js.UndefOr[scala.Nothing], options: ViewHandlerOrReplyOptions): ResponseObject = js.native
   def view(templatePath: String, context: js.Any): ResponseObject = js.native
   def view(templatePath: String, context: js.Any, options: ViewHandlerOrReplyOptions): ResponseObject = js.native
 }

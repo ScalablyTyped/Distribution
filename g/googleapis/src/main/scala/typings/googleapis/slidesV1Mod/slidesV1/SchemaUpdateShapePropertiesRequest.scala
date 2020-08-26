@@ -31,12 +31,34 @@ trait SchemaUpdateShapePropertiesRequest extends js.Object {
 
 object SchemaUpdateShapePropertiesRequest {
   @scala.inline
-  def apply(fields: String = null, objectId: String = null, shapeProperties: SchemaShapeProperties = null): SchemaUpdateShapePropertiesRequest = {
+  def apply(): SchemaUpdateShapePropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (shapeProperties != null) __obj.updateDynamic("shapeProperties")(shapeProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateShapePropertiesRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateShapePropertiesRequestOps[Self <: SchemaUpdateShapePropertiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setShapeProperties(value: SchemaShapeProperties): Self = this.set("shapeProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShapeProperties: Self = this.set("shapeProperties", js.undefined)
+  }
+  
 }
 

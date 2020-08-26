@@ -17,10 +17,10 @@ object mod extends js.Object {
   val notUndef: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<any> */ js.Any = js.native
   val number: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<number> */ js.Any = js.native
   val `object`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<object> */ js.Any = js.native
-  val observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<{  subscribe  :Function}> */ js.Any = js.native
+  val observable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<{  subscribe :Function}> */ js.Any = js.native
   val pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<Pattern<any> | ActionPattern> */ js.Any = js.native
   val promise: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<Promise<any>> */ js.Any = js.native
-  val sagaAction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<Action & {  @@redux-saga/SAGA_ACTION  :true}> */ js.Any = js.native
+  val sagaAction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<Action & {  @@redux-saga/SAGA_ACTION :true}> */ js.Any = js.native
   val string: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<string> */ js.Any = js.native
   val stringableFunc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<Function> */ js.Any = js.native
   val task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GuardPredicate<Task> */ js.Any = js.native

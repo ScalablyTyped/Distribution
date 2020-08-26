@@ -19,11 +19,30 @@ trait SchemaOrdersCreateTestOrderResponse extends js.Object {
 
 object SchemaOrdersCreateTestOrderResponse {
   @scala.inline
-  def apply(kind: String = null, orderId: String = null): SchemaOrdersCreateTestOrderResponse = {
+  def apply(): SchemaOrdersCreateTestOrderResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrdersCreateTestOrderResponse]
   }
+  @scala.inline
+  implicit class SchemaOrdersCreateTestOrderResponseOps[Self <: SchemaOrdersCreateTestOrderResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderId: Self = this.set("orderId", js.undefined)
+  }
+  
 }
 

@@ -54,32 +54,66 @@ trait SetSourceRequest extends js.Object {
 
 object SetSourceRequest {
   @scala.inline
-  def apply(
-    Decryption: Encryption = null,
-    Description: string = null,
-    EntitlementArn: string = null,
-    IngestPort: js.UndefOr[integer] = js.undefined,
-    MaxBitrate: js.UndefOr[integer] = js.undefined,
-    MaxLatency: js.UndefOr[integer] = js.undefined,
-    Name: string = null,
-    Protocol: Protocol = null,
-    StreamId: string = null,
-    VpcInterfaceName: string = null,
-    WhitelistCidr: string = null
-  ): SetSourceRequest = {
+  def apply(): SetSourceRequest = {
     val __obj = js.Dynamic.literal()
-    if (Decryption != null) __obj.updateDynamic("Decryption")(Decryption.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EntitlementArn != null) __obj.updateDynamic("EntitlementArn")(EntitlementArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IngestPort)) __obj.updateDynamic("IngestPort")(IngestPort.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxBitrate)) __obj.updateDynamic("MaxBitrate")(MaxBitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxLatency)) __obj.updateDynamic("MaxLatency")(MaxLatency.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (StreamId != null) __obj.updateDynamic("StreamId")(StreamId.asInstanceOf[js.Any])
-    if (VpcInterfaceName != null) __obj.updateDynamic("VpcInterfaceName")(VpcInterfaceName.asInstanceOf[js.Any])
-    if (WhitelistCidr != null) __obj.updateDynamic("WhitelistCidr")(WhitelistCidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSourceRequest]
   }
+  @scala.inline
+  implicit class SetSourceRequestOps[Self <: SetSourceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDecryption(value: Encryption): Self = this.set("Decryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecryption: Self = this.set("Decryption", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEntitlementArn(value: string): Self = this.set("EntitlementArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitlementArn: Self = this.set("EntitlementArn", js.undefined)
+    @scala.inline
+    def setIngestPort(value: integer): Self = this.set("IngestPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngestPort: Self = this.set("IngestPort", js.undefined)
+    @scala.inline
+    def setMaxBitrate(value: integer): Self = this.set("MaxBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBitrate: Self = this.set("MaxBitrate", js.undefined)
+    @scala.inline
+    def setMaxLatency(value: integer): Self = this.set("MaxLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLatency: Self = this.set("MaxLatency", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setStreamId(value: string): Self = this.set("StreamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamId: Self = this.set("StreamId", js.undefined)
+    @scala.inline
+    def setVpcInterfaceName(value: string): Self = this.set("VpcInterfaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcInterfaceName: Self = this.set("VpcInterfaceName", js.undefined)
+    @scala.inline
+    def setWhitelistCidr(value: string): Self = this.set("WhitelistCidr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhitelistCidr: Self = this.set("WhitelistCidr", js.undefined)
+  }
+  
 }
 

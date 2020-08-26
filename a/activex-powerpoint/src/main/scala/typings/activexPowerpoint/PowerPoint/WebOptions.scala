@@ -8,23 +8,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WebOptions extends js.Object {
-  var AllowPNG: MsoTriState
-  var Encoding: MsoEncoding
-  val FolderSuffix: String
-  var FrameColors: PpFrameColors
-  var HTMLVersion: PpHTMLVersion
-  var IncludeNavigation: MsoTriState
-  var OrganizeInFolder: MsoTriState
+  var AllowPNG: MsoTriState = js.native
+  var Encoding: MsoEncoding = js.native
+  val FolderSuffix: String = js.native
+  var FrameColors: PpFrameColors = js.native
+  var HTMLVersion: PpHTMLVersion = js.native
+  var IncludeNavigation: MsoTriState = js.native
+  var OrganizeInFolder: MsoTriState = js.native
   @JSName("PowerPoint.WebOptions_typekey")
-  var PowerPointDotWebOptions_typekey: WebOptions
-  var RelyOnVML: MsoTriState
-  var ResizeGraphics: MsoTriState
-  var ScreenSize: MsoScreenSize
-  var ShowSlideAnimation: MsoTriState
-  var TargetBrowser: MsoTargetBrowser
-  var UseLongFileNames: MsoTriState
-  def UseDefaultFolderSuffix(): Unit
+  var PowerPointDotWebOptions_typekey: WebOptions = js.native
+  var RelyOnVML: MsoTriState = js.native
+  var ResizeGraphics: MsoTriState = js.native
+  var ScreenSize: MsoScreenSize = js.native
+  var ShowSlideAnimation: MsoTriState = js.native
+  var TargetBrowser: MsoTargetBrowser = js.native
+  var UseLongFileNames: MsoTriState = js.native
+  def UseDefaultFolderSuffix(): Unit = js.native
 }
 
 object WebOptions {
@@ -50,5 +51,48 @@ object WebOptions {
     __obj.updateDynamic("PowerPoint.WebOptions_typekey")(PowerPointDotWebOptions_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebOptions]
   }
+  @scala.inline
+  implicit class WebOptionsOps[Self <: WebOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowPNG(value: MsoTriState): Self = this.set("AllowPNG", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncoding(value: MsoEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFolderSuffix(value: String): Self = this.set("FolderSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrameColors(value: PpFrameColors): Self = this.set("FrameColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHTMLVersion(value: PpHTMLVersion): Self = this.set("HTMLVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIncludeNavigation(value: MsoTriState): Self = this.set("IncludeNavigation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrganizeInFolder(value: MsoTriState): Self = this.set("OrganizeInFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPowerPointDotWebOptions_typekey(value: WebOptions): Self = this.set("PowerPoint.WebOptions_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelyOnVML(value: MsoTriState): Self = this.set("RelyOnVML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResizeGraphics(value: MsoTriState): Self = this.set("ResizeGraphics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScreenSize(value: MsoScreenSize): Self = this.set("ScreenSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowSlideAnimation(value: MsoTriState): Self = this.set("ShowSlideAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetBrowser(value: MsoTargetBrowser): Self = this.set("TargetBrowser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseDefaultFolderSuffix(value: () => Unit): Self = this.set("UseDefaultFolderSuffix", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUseLongFileNames(value: MsoTriState): Self = this.set("UseLongFileNames", value.asInstanceOf[js.Any])
+  }
+  
 }
 

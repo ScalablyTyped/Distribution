@@ -5,45 +5,78 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ key in angular-aria.angular.aria.IAriaAttribute ]:? boolean} */
+@js.native
 trait IAriaProviderOptions extends js.Object {
-  var ariaChecked: js.UndefOr[Boolean] = js.undefined
-  var ariaDisabled: js.UndefOr[Boolean] = js.undefined
-  var ariaHidden: js.UndefOr[Boolean] = js.undefined
-  var ariaInvalid: js.UndefOr[Boolean] = js.undefined
-  var ariaReadonly: js.UndefOr[Boolean] = js.undefined
-  var ariaRequired: js.UndefOr[Boolean] = js.undefined
-  var ariaValue: js.UndefOr[Boolean] = js.undefined
-  var bindKeydown: js.UndefOr[Boolean] = js.undefined
-  var bindRoleForClick: js.UndefOr[Boolean] = js.undefined
-  var tabindex: js.UndefOr[Boolean] = js.undefined
+  var ariaChecked: js.UndefOr[Boolean] = js.native
+  var ariaDisabled: js.UndefOr[Boolean] = js.native
+  var ariaHidden: js.UndefOr[Boolean] = js.native
+  var ariaInvalid: js.UndefOr[Boolean] = js.native
+  var ariaReadonly: js.UndefOr[Boolean] = js.native
+  var ariaRequired: js.UndefOr[Boolean] = js.native
+  var ariaValue: js.UndefOr[Boolean] = js.native
+  var bindKeydown: js.UndefOr[Boolean] = js.native
+  var bindRoleForClick: js.UndefOr[Boolean] = js.native
+  var tabindex: js.UndefOr[Boolean] = js.native
 }
 
 object IAriaProviderOptions {
   @scala.inline
-  def apply(
-    ariaChecked: js.UndefOr[Boolean] = js.undefined,
-    ariaDisabled: js.UndefOr[Boolean] = js.undefined,
-    ariaHidden: js.UndefOr[Boolean] = js.undefined,
-    ariaInvalid: js.UndefOr[Boolean] = js.undefined,
-    ariaReadonly: js.UndefOr[Boolean] = js.undefined,
-    ariaRequired: js.UndefOr[Boolean] = js.undefined,
-    ariaValue: js.UndefOr[Boolean] = js.undefined,
-    bindKeydown: js.UndefOr[Boolean] = js.undefined,
-    bindRoleForClick: js.UndefOr[Boolean] = js.undefined,
-    tabindex: js.UndefOr[Boolean] = js.undefined
-  ): IAriaProviderOptions = {
+  def apply(): IAriaProviderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ariaChecked)) __obj.updateDynamic("ariaChecked")(ariaChecked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaDisabled)) __obj.updateDynamic("ariaDisabled")(ariaDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaInvalid)) __obj.updateDynamic("ariaInvalid")(ariaInvalid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaReadonly)) __obj.updateDynamic("ariaReadonly")(ariaReadonly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaRequired)) __obj.updateDynamic("ariaRequired")(ariaRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaValue)) __obj.updateDynamic("ariaValue")(ariaValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindKeydown)) __obj.updateDynamic("bindKeydown")(bindKeydown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindRoleForClick)) __obj.updateDynamic("bindRoleForClick")(bindRoleForClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabindex)) __obj.updateDynamic("tabindex")(tabindex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAriaProviderOptions]
   }
+  @scala.inline
+  implicit class IAriaProviderOptionsOps[Self <: IAriaProviderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAriaChecked(value: Boolean): Self = this.set("ariaChecked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaChecked: Self = this.set("ariaChecked", js.undefined)
+    @scala.inline
+    def setAriaDisabled(value: Boolean): Self = this.set("ariaDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaDisabled: Self = this.set("ariaDisabled", js.undefined)
+    @scala.inline
+    def setAriaHidden(value: Boolean): Self = this.set("ariaHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaHidden: Self = this.set("ariaHidden", js.undefined)
+    @scala.inline
+    def setAriaInvalid(value: Boolean): Self = this.set("ariaInvalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaInvalid: Self = this.set("ariaInvalid", js.undefined)
+    @scala.inline
+    def setAriaReadonly(value: Boolean): Self = this.set("ariaReadonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaReadonly: Self = this.set("ariaReadonly", js.undefined)
+    @scala.inline
+    def setAriaRequired(value: Boolean): Self = this.set("ariaRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaRequired: Self = this.set("ariaRequired", js.undefined)
+    @scala.inline
+    def setAriaValue(value: Boolean): Self = this.set("ariaValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaValue: Self = this.set("ariaValue", js.undefined)
+    @scala.inline
+    def setBindKeydown(value: Boolean): Self = this.set("bindKeydown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindKeydown: Self = this.set("bindKeydown", js.undefined)
+    @scala.inline
+    def setBindRoleForClick(value: Boolean): Self = this.set("bindRoleForClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindRoleForClick: Self = this.set("bindRoleForClick", js.undefined)
+    @scala.inline
+    def setTabindex(value: Boolean): Self = this.set("tabindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabindex: Self = this.set("tabindex", js.undefined)
+  }
+  
 }
 

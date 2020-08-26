@@ -73,6 +73,7 @@ class World () extends EventEmitter {
   def setGlobalRelaxation(relaxation: Double): Unit = js.native
   def setGlobalStiffness(stiffness: Double): Unit = js.native
   def step(dt: Double): Unit = js.native
+  def step(dt: Double, timeSinceLastCalled: js.UndefOr[scala.Nothing], maxSubSteps: Double): Unit = js.native
   def step(dt: Double, timeSinceLastCalled: Double): Unit = js.native
   def step(dt: Double, timeSinceLastCalled: Double, maxSubSteps: Double): Unit = js.native
 }

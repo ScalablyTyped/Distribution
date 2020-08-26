@@ -26,17 +26,38 @@ trait UpdateListenerRequest extends js.Object {
 
 object UpdateListenerRequest {
   @scala.inline
-  def apply(
-    ListenerArn: GenericString,
-    ClientAffinity: ClientAffinity = null,
-    PortRanges: PortRanges = null,
-    Protocol: Protocol = null
-  ): UpdateListenerRequest = {
+  def apply(ListenerArn: GenericString): UpdateListenerRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
-    if (ClientAffinity != null) __obj.updateDynamic("ClientAffinity")(ClientAffinity.asInstanceOf[js.Any])
-    if (PortRanges != null) __obj.updateDynamic("PortRanges")(PortRanges.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateListenerRequest]
   }
+  @scala.inline
+  implicit class UpdateListenerRequestOps[Self <: UpdateListenerRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListenerArn(value: GenericString): Self = this.set("ListenerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientAffinity(value: ClientAffinity): Self = this.set("ClientAffinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientAffinity: Self = this.set("ClientAffinity", js.undefined)
+    @scala.inline
+    def setPortRangesVarargs(value: PortRange*): Self = this.set("PortRanges", js.Array(value :_*))
+    @scala.inline
+    def setPortRanges(value: PortRanges): Self = this.set("PortRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortRanges: Self = this.set("PortRanges", js.undefined)
+    @scala.inline
+    def setProtocol(value: Protocol): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+  }
+  
 }
 

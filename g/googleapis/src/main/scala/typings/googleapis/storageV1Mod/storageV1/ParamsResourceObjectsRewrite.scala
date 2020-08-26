@@ -130,66 +130,106 @@ trait ParamsResourceObjectsRewrite extends StandardParameters {
 
 object ParamsResourceObjectsRewrite {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    destinationBucket: String = null,
-    destinationKmsKeyName: String = null,
-    destinationObject: String = null,
-    destinationPredefinedAcl: String = null,
-    fields: String = null,
-    ifGenerationMatch: String = null,
-    ifGenerationNotMatch: String = null,
-    ifMetagenerationMatch: String = null,
-    ifMetagenerationNotMatch: String = null,
-    ifSourceGenerationMatch: String = null,
-    ifSourceGenerationNotMatch: String = null,
-    ifSourceMetagenerationMatch: String = null,
-    ifSourceMetagenerationNotMatch: String = null,
-    key: String = null,
-    maxBytesRewrittenPerCall: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    projection: String = null,
-    quotaUser: String = null,
-    requestBody: SchemaObject = null,
-    rewriteToken: String = null,
-    sourceBucket: String = null,
-    sourceGeneration: String = null,
-    sourceObject: String = null,
-    userIp: String = null,
-    userProject: String = null
-  ): ParamsResourceObjectsRewrite = {
+  def apply(): ParamsResourceObjectsRewrite = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (destinationBucket != null) __obj.updateDynamic("destinationBucket")(destinationBucket.asInstanceOf[js.Any])
-    if (destinationKmsKeyName != null) __obj.updateDynamic("destinationKmsKeyName")(destinationKmsKeyName.asInstanceOf[js.Any])
-    if (destinationObject != null) __obj.updateDynamic("destinationObject")(destinationObject.asInstanceOf[js.Any])
-    if (destinationPredefinedAcl != null) __obj.updateDynamic("destinationPredefinedAcl")(destinationPredefinedAcl.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch.asInstanceOf[js.Any])
-    if (ifGenerationNotMatch != null) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationNotMatch != null) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch.asInstanceOf[js.Any])
-    if (ifSourceGenerationMatch != null) __obj.updateDynamic("ifSourceGenerationMatch")(ifSourceGenerationMatch.asInstanceOf[js.Any])
-    if (ifSourceGenerationNotMatch != null) __obj.updateDynamic("ifSourceGenerationNotMatch")(ifSourceGenerationNotMatch.asInstanceOf[js.Any])
-    if (ifSourceMetagenerationMatch != null) __obj.updateDynamic("ifSourceMetagenerationMatch")(ifSourceMetagenerationMatch.asInstanceOf[js.Any])
-    if (ifSourceMetagenerationNotMatch != null) __obj.updateDynamic("ifSourceMetagenerationNotMatch")(ifSourceMetagenerationNotMatch.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxBytesRewrittenPerCall != null) __obj.updateDynamic("maxBytesRewrittenPerCall")(maxBytesRewrittenPerCall.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (rewriteToken != null) __obj.updateDynamic("rewriteToken")(rewriteToken.asInstanceOf[js.Any])
-    if (sourceBucket != null) __obj.updateDynamic("sourceBucket")(sourceBucket.asInstanceOf[js.Any])
-    if (sourceGeneration != null) __obj.updateDynamic("sourceGeneration")(sourceGeneration.asInstanceOf[js.Any])
-    if (sourceObject != null) __obj.updateDynamic("sourceObject")(sourceObject.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceObjectsRewrite]
   }
+  @scala.inline
+  implicit class ParamsResourceObjectsRewriteOps[Self <: ParamsResourceObjectsRewrite] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setDestinationBucket(value: String): Self = this.set("destinationBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationBucket: Self = this.set("destinationBucket", js.undefined)
+    @scala.inline
+    def setDestinationKmsKeyName(value: String): Self = this.set("destinationKmsKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationKmsKeyName: Self = this.set("destinationKmsKeyName", js.undefined)
+    @scala.inline
+    def setDestinationObject(value: String): Self = this.set("destinationObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationObject: Self = this.set("destinationObject", js.undefined)
+    @scala.inline
+    def setDestinationPredefinedAcl(value: String): Self = this.set("destinationPredefinedAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPredefinedAcl: Self = this.set("destinationPredefinedAcl", js.undefined)
+    @scala.inline
+    def setIfGenerationMatch(value: String): Self = this.set("ifGenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfGenerationMatch: Self = this.set("ifGenerationMatch", js.undefined)
+    @scala.inline
+    def setIfGenerationNotMatch(value: String): Self = this.set("ifGenerationNotMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfGenerationNotMatch: Self = this.set("ifGenerationNotMatch", js.undefined)
+    @scala.inline
+    def setIfMetagenerationMatch(value: String): Self = this.set("ifMetagenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMetagenerationMatch: Self = this.set("ifMetagenerationMatch", js.undefined)
+    @scala.inline
+    def setIfMetagenerationNotMatch(value: String): Self = this.set("ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMetagenerationNotMatch: Self = this.set("ifMetagenerationNotMatch", js.undefined)
+    @scala.inline
+    def setIfSourceGenerationMatch(value: String): Self = this.set("ifSourceGenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfSourceGenerationMatch: Self = this.set("ifSourceGenerationMatch", js.undefined)
+    @scala.inline
+    def setIfSourceGenerationNotMatch(value: String): Self = this.set("ifSourceGenerationNotMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfSourceGenerationNotMatch: Self = this.set("ifSourceGenerationNotMatch", js.undefined)
+    @scala.inline
+    def setIfSourceMetagenerationMatch(value: String): Self = this.set("ifSourceMetagenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfSourceMetagenerationMatch: Self = this.set("ifSourceMetagenerationMatch", js.undefined)
+    @scala.inline
+    def setIfSourceMetagenerationNotMatch(value: String): Self = this.set("ifSourceMetagenerationNotMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfSourceMetagenerationNotMatch: Self = this.set("ifSourceMetagenerationNotMatch", js.undefined)
+    @scala.inline
+    def setMaxBytesRewrittenPerCall(value: String): Self = this.set("maxBytesRewrittenPerCall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBytesRewrittenPerCall: Self = this.set("maxBytesRewrittenPerCall", js.undefined)
+    @scala.inline
+    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaObject): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setRewriteToken(value: String): Self = this.set("rewriteToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewriteToken: Self = this.set("rewriteToken", js.undefined)
+    @scala.inline
+    def setSourceBucket(value: String): Self = this.set("sourceBucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBucket: Self = this.set("sourceBucket", js.undefined)
+    @scala.inline
+    def setSourceGeneration(value: String): Self = this.set("sourceGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceGeneration: Self = this.set("sourceGeneration", js.undefined)
+    @scala.inline
+    def setSourceObject(value: String): Self = this.set("sourceObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceObject: Self = this.set("sourceObject", js.undefined)
+    @scala.inline
+    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProject: Self = this.set("userProject", js.undefined)
+  }
+  
 }
 

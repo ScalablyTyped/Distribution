@@ -12,7 +12,7 @@ Trianglify is a javascript library for generating colorful triangle meshes that 
 | Keywords           | svg, d3.js, visualization |
 | # releases         | 5 |
 | # dependents       | 8 |
-| # downloads        | 58505 |
+| # downloads        | 59355 |
 | # stars            | 7 |
 
 ## Links

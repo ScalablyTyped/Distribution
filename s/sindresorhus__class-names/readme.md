@@ -12,7 +12,7 @@ Conditionally join CSS class names together - Especially useful with React
 | Keywords           | class-names, classnames, class, names, name, classes, react, jsx, component, join, concatenate, concat |
 | # releases         | 5 |
 | # dependents       | 7 |
-| # downloads        | 10636 |
+| # downloads        | 10683 |
 | # stars            | 0 |
 
 ## Links

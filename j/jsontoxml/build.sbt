@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jsontoxml"
-version := "1.0-dt-20190212Z-9414c8"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20190212Z-bbdad4"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

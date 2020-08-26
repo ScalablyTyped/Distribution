@@ -44,24 +44,52 @@ trait SchemaActivity extends js.Object {
 
 object SchemaActivity {
   @scala.inline
-  def apply(
-    actor: CallerType = null,
-    etag: String = null,
-    events: js.Array[Name] = null,
-    id: ApplicationName = null,
-    ipAddress: String = null,
-    kind: String = null,
-    ownerDomain: String = null
-  ): SchemaActivity = {
+  def apply(): SchemaActivity = {
     val __obj = js.Dynamic.literal()
-    if (actor != null) __obj.updateDynamic("actor")(actor.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (ownerDomain != null) __obj.updateDynamic("ownerDomain")(ownerDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaActivity]
   }
+  @scala.inline
+  implicit class SchemaActivityOps[Self <: SchemaActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActor(value: CallerType): Self = this.set("actor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActor: Self = this.set("actor", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: Name*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[Name]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setId(value: ApplicationName): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setOwnerDomain(value: String): Self = this.set("ownerDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerDomain: Self = this.set("ownerDomain", js.undefined)
+  }
+  
 }
 

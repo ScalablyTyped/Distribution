@@ -28,36 +28,74 @@ trait PaletteOptions extends js.Object {
 
 object PaletteOptions {
   @scala.inline
-  def apply(
-    action: PartialTypeAction = null,
-    background: PartialTypeBackground = null,
-    common: PartialCommonColors = null,
-    contrastThreshold: js.UndefOr[Double] = js.undefined,
-    divider: String = null,
-    error: PaletteColorOptions = null,
-    getContrastText: /* background */ String => String = null,
-    grey: ColorPartial = null,
-    primary: PaletteColorOptions = null,
-    secondary: PaletteColorOptions = null,
-    text: PartialTypeText = null,
-    tonalOffset: js.UndefOr[Double] = js.undefined,
-    `type`: PaletteType = null
-  ): PaletteOptions = {
+  def apply(): PaletteOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (common != null) __obj.updateDynamic("common")(common.asInstanceOf[js.Any])
-    if (!js.isUndefined(contrastThreshold)) __obj.updateDynamic("contrastThreshold")(contrastThreshold.get.asInstanceOf[js.Any])
-    if (divider != null) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (getContrastText != null) __obj.updateDynamic("getContrastText")(js.Any.fromFunction1(getContrastText))
-    if (grey != null) __obj.updateDynamic("grey")(grey.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(tonalOffset)) __obj.updateDynamic("tonalOffset")(tonalOffset.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaletteOptions]
   }
+  @scala.inline
+  implicit class PaletteOptionsOps[Self <: PaletteOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: PartialTypeAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setBackground(value: PartialTypeBackground): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setCommon(value: PartialCommonColors): Self = this.set("common", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommon: Self = this.set("common", js.undefined)
+    @scala.inline
+    def setContrastThreshold(value: Double): Self = this.set("contrastThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContrastThreshold: Self = this.set("contrastThreshold", js.undefined)
+    @scala.inline
+    def setDivider(value: String): Self = this.set("divider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDivider: Self = this.set("divider", js.undefined)
+    @scala.inline
+    def setError(value: PaletteColorOptions): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setGetContrastText(value: /* background */ String => String): Self = this.set("getContrastText", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetContrastText: Self = this.set("getContrastText", js.undefined)
+    @scala.inline
+    def setGrey(value: ColorPartial): Self = this.set("grey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrey: Self = this.set("grey", js.undefined)
+    @scala.inline
+    def setPrimary(value: PaletteColorOptions): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setSecondary(value: PaletteColorOptions): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setText(value: PartialTypeText): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTonalOffset(value: Double): Self = this.set("tonalOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTonalOffset: Self = this.set("tonalOffset", js.undefined)
+    @scala.inline
+    def setType(value: PaletteType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

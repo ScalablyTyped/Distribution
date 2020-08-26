@@ -27,11 +27,30 @@ trait SchemaSecurityPolicyRuleMatcher extends js.Object {
 
 object SchemaSecurityPolicyRuleMatcher {
   @scala.inline
-  def apply(config: SchemaSecurityPolicyRuleMatcherConfig = null, versionedExpr: String = null): SchemaSecurityPolicyRuleMatcher = {
+  def apply(): SchemaSecurityPolicyRuleMatcher = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (versionedExpr != null) __obj.updateDynamic("versionedExpr")(versionedExpr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyRuleMatcher]
   }
+  @scala.inline
+  implicit class SchemaSecurityPolicyRuleMatcherOps[Self <: SchemaSecurityPolicyRuleMatcher] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(value: SchemaSecurityPolicyRuleMatcherConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setVersionedExpr(value: String): Self = this.set("versionedExpr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionedExpr: Self = this.set("versionedExpr", js.undefined)
+  }
+  
 }
 

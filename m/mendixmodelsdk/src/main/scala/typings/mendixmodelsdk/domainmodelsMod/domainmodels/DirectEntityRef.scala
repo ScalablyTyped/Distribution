@@ -33,8 +33,8 @@ class DirectEntityRef protected () extends EntityRef {
   @JSName("model")
   var model_FDirectEntityRef: IModel = js.native
   def entity: IEntity = js.native
-  def entity(newValue: IEntity): js.Any = js.native
   def entityQualifiedName: String = js.native
+  def entity_=(newValue: IEntity): Unit = js.native
 }
 
 /* static members */

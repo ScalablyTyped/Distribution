@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GulpHtmlPrettifyOptions extends js.Object {
-  var indent_char: js.UndefOr[String] = js.undefined
-  var indent_size: js.UndefOr[Double] = js.undefined
+  var indent_char: js.UndefOr[String] = js.native
+  var indent_size: js.UndefOr[Double] = js.native
 }
 
 object GulpHtmlPrettifyOptions {
   @scala.inline
-  def apply(indent_char: String = null, indent_size: js.UndefOr[Double] = js.undefined): GulpHtmlPrettifyOptions = {
+  def apply(): GulpHtmlPrettifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (indent_char != null) __obj.updateDynamic("indent_char")(indent_char.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent_size)) __obj.updateDynamic("indent_size")(indent_size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GulpHtmlPrettifyOptions]
   }
+  @scala.inline
+  implicit class GulpHtmlPrettifyOptionsOps[Self <: GulpHtmlPrettifyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndent_char(value: String): Self = this.set("indent_char", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndent_char: Self = this.set("indent_char", js.undefined)
+    @scala.inline
+    def setIndent_size(value: Double): Self = this.set("indent_size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndent_size: Self = this.set("indent_size", js.undefined)
+  }
+  
 }
 

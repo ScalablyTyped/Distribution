@@ -13,5 +13,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Constraint
   */
+@js.native
 trait Constraint extends js.Object
 

@@ -22,12 +22,38 @@ trait VpcConfig extends js.Object {
 
 object VpcConfig {
   @scala.inline
-  def apply(securityGroupIds: SecurityGroupIds = null, subnets: Subnets = null, vpcId: NonEmptyString = null): VpcConfig = {
+  def apply(): VpcConfig = {
     val __obj = js.Dynamic.literal()
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcConfig]
   }
+  @scala.inline
+  implicit class VpcConfigOps[Self <: VpcConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIds): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: NonEmptyString*): Self = this.set("subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Subnets): Self = this.set("subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("subnets", js.undefined)
+    @scala.inline
+    def setVpcId(value: NonEmptyString): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+  }
+  
 }
 

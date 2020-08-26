@@ -780,6 +780,9 @@ object pulumiKubernetesStrings {
   sealed trait message extends js.Object
   
   @js.native
+  sealed trait metaSlashv1SlashStatus extends js.Object
+  
+  @js.native
   sealed trait metadata extends js.Object
   
   @js.native
@@ -1207,9 +1210,6 @@ object pulumiKubernetesStrings {
   
   @js.native
   sealed trait v1SlashServiceList extends js.Object
-  
-  @js.native
-  sealed trait v1SlashStatus extends js.Object
   
   @js.native
   sealed trait value extends js.Object
@@ -1737,6 +1737,8 @@ object pulumiKubernetesStrings {
   @scala.inline
   def message: message = "message".asInstanceOf[message]
   @scala.inline
+  def metaSlashv1SlashStatus: metaSlashv1SlashStatus = "meta/v1/Status".asInstanceOf[metaSlashv1SlashStatus]
+  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def mountOptions: mountOptions = "mountOptions".asInstanceOf[mountOptions]
@@ -2022,8 +2024,6 @@ object pulumiKubernetesStrings {
   def v1SlashServiceAccountList: v1SlashServiceAccountList = "v1/ServiceAccountList".asInstanceOf[v1SlashServiceAccountList]
   @scala.inline
   def v1SlashServiceList: v1SlashServiceList = "v1/ServiceList".asInstanceOf[v1SlashServiceList]
-  @scala.inline
-  def v1SlashStatus: v1SlashStatus = "v1/Status".asInstanceOf[v1SlashStatus]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline

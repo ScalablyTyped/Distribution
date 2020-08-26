@@ -17,19 +17,49 @@ import scala.scalajs.js.annotation._
 trait YouTubePlayer extends js.Object {
   def addEventListener(event: String, listener: js.Function1[/* event */ CustomEvent[_], Unit]): Unit = js.native
   def cuePlaylist(playlist: String): Unit = js.native
+  def cuePlaylist(
+    playlist: String,
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: String
+  ): Unit = js.native
+  def cuePlaylist(playlist: String, index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def cuePlaylist(playlist: String, index: js.UndefOr[scala.Nothing], startSeconds: Double, suggestedQuality: String): Unit = js.native
   def cuePlaylist(playlist: String, index: Double): Unit = js.native
+  def cuePlaylist(playlist: String, index: Double, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: String): Unit = js.native
   def cuePlaylist(playlist: String, index: Double, startSeconds: Double): Unit = js.native
   def cuePlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def cuePlaylist(playlist: js.Array[String]): Unit = js.native
+  def cuePlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: String
+  ): Unit = js.native
+  def cuePlaylist(playlist: js.Array[String], index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def cuePlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: Double,
+    suggestedQuality: String
+  ): Unit = js.native
   def cuePlaylist(playlist: js.Array[String], index: Double): Unit = js.native
+  def cuePlaylist(
+    playlist: js.Array[String],
+    index: Double,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: String
+  ): Unit = js.native
   def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): Unit = js.native
   def cuePlaylist(playlist: js.Array[String], index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def cuePlaylist(playlist: Index): Unit = js.native
   def cueVideoById(videoId: String): Unit = js.native
+  def cueVideoById(videoId: String, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: String): Unit = js.native
   def cueVideoById(videoId: String, startSeconds: Double): Unit = js.native
   def cueVideoById(videoId: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def cueVideoById(video: EndSeconds): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String): Unit = js.native
+  def cueVideoByUrl(mediaContentUrl: String, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: String): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
   def cueVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def cueVideoByUrl(video: MediaContentUrl): Unit = js.native
@@ -53,19 +83,49 @@ trait YouTubePlayer extends js.Object {
   def getVolume(): Double = js.native
   def isMuted(): Boolean = js.native
   def loadPlaylist(playlist: String): Unit = js.native
+  def loadPlaylist(
+    playlist: String,
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: String
+  ): Unit = js.native
+  def loadPlaylist(playlist: String, index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def loadPlaylist(playlist: String, index: js.UndefOr[scala.Nothing], startSeconds: Double, suggestedQuality: String): Unit = js.native
   def loadPlaylist(playlist: String, index: Double): Unit = js.native
+  def loadPlaylist(playlist: String, index: Double, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: String): Unit = js.native
   def loadPlaylist(playlist: String, index: Double, startSeconds: Double): Unit = js.native
   def loadPlaylist(playlist: String, index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def loadPlaylist(playlist: js.Array[String]): Unit = js.native
+  def loadPlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: String
+  ): Unit = js.native
+  def loadPlaylist(playlist: js.Array[String], index: js.UndefOr[scala.Nothing], startSeconds: Double): Unit = js.native
+  def loadPlaylist(
+    playlist: js.Array[String],
+    index: js.UndefOr[scala.Nothing],
+    startSeconds: Double,
+    suggestedQuality: String
+  ): Unit = js.native
   def loadPlaylist(playlist: js.Array[String], index: Double): Unit = js.native
+  def loadPlaylist(
+    playlist: js.Array[String],
+    index: Double,
+    startSeconds: js.UndefOr[scala.Nothing],
+    suggestedQuality: String
+  ): Unit = js.native
   def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double): Unit = js.native
   def loadPlaylist(playlist: js.Array[String], index: Double, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def loadPlaylist(playlist: Index): Unit = js.native
   def loadVideoById(videoId: String): Unit = js.native
+  def loadVideoById(videoId: String, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: String): Unit = js.native
   def loadVideoById(videoId: String, startSeconds: Double): Unit = js.native
   def loadVideoById(videoId: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def loadVideoById(video: EndSeconds): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String): Unit = js.native
+  def loadVideoByUrl(mediaContentUrl: String, startSeconds: js.UndefOr[scala.Nothing], suggestedQuality: String): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double): Unit = js.native
   def loadVideoByUrl(mediaContentUrl: String, startSeconds: Double, suggestedQuality: String): Unit = js.native
   def loadVideoByUrl(video: MediaContentUrl): Unit = js.native

@@ -20,6 +20,7 @@ class Bezier protected ()
 object Bezier
   extends Instantiable1[/* points */ js.Array[Point], typings.bezierJs.global.BezierJs.Bezier] {
   def cubicFromPoints(S: Point, B: Point, E: Point): typings.bezierJs.BezierJs.Bezier = js.native
+  def cubicFromPoints(S: Point, B: Point, E: Point, t: js.UndefOr[scala.Nothing], d1: Double): typings.bezierJs.BezierJs.Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: Double): typings.bezierJs.BezierJs.Bezier = js.native
   def cubicFromPoints(S: Point, B: Point, E: Point, t: Double, d1: Double): typings.bezierJs.BezierJs.Bezier = js.native
   def fromSVG(svgString: String): typings.bezierJs.BezierJs.Bezier = js.native

@@ -29,6 +29,7 @@ object acm extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: CertificateArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: CertificateArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -46,8 +47,8 @@ object acm extends js.Object {
     def this(name: String, args: CertificateValidationArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] with GetCertificateResult = js.native
-  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] with GetCertificateResult = js.native
+  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = js.native
+  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = js.native
   /* static members */
   @js.native
   object Certificate extends js.Object {
@@ -58,8 +59,10 @@ object acm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.certificateMod.Certificate = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateMod.Certificate = js.native
     def get(name: String, id: Input[ID], state: CertificateState): typings.pulumiAws.certificateMod.Certificate = js.native
     def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): typings.pulumiAws.certificateMod.Certificate = js.native
     /**
@@ -79,8 +82,10 @@ object acm extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
     def get(name: String, id: Input[ID], state: CertificateValidationState): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
     def get(name: String, id: Input[ID], state: CertificateValidationState, opts: CustomResourceOptions): typings.pulumiAws.certificateValidationMod.CertificateValidation = js.native
     /**

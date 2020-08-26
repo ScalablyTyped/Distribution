@@ -34,20 +34,44 @@ trait IndexFacesRequest extends js.Object {
 
 object IndexFacesRequest {
   @scala.inline
-  def apply(
-    CollectionId: CollectionId,
-    Image: Image,
-    DetectionAttributes: Attributes = null,
-    ExternalImageId: ExternalImageId = null,
-    MaxFaces: js.UndefOr[MaxFacesToIndex] = js.undefined,
-    QualityFilter: QualityFilter = null
-  ): IndexFacesRequest = {
+  def apply(CollectionId: CollectionId, Image: Image): IndexFacesRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any], Image = Image.asInstanceOf[js.Any])
-    if (DetectionAttributes != null) __obj.updateDynamic("DetectionAttributes")(DetectionAttributes.asInstanceOf[js.Any])
-    if (ExternalImageId != null) __obj.updateDynamic("ExternalImageId")(ExternalImageId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxFaces)) __obj.updateDynamic("MaxFaces")(MaxFaces.get.asInstanceOf[js.Any])
-    if (QualityFilter != null) __obj.updateDynamic("QualityFilter")(QualityFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexFacesRequest]
   }
+  @scala.inline
+  implicit class IndexFacesRequestOps[Self <: IndexFacesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCollectionId(value: CollectionId): Self = this.set("CollectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: Image): Self = this.set("Image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectionAttributesVarargs(value: Attribute*): Self = this.set("DetectionAttributes", js.Array(value :_*))
+    @scala.inline
+    def setDetectionAttributes(value: Attributes): Self = this.set("DetectionAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectionAttributes: Self = this.set("DetectionAttributes", js.undefined)
+    @scala.inline
+    def setExternalImageId(value: ExternalImageId): Self = this.set("ExternalImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalImageId: Self = this.set("ExternalImageId", js.undefined)
+    @scala.inline
+    def setMaxFaces(value: MaxFacesToIndex): Self = this.set("MaxFaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFaces: Self = this.set("MaxFaces", js.undefined)
+    @scala.inline
+    def setQualityFilter(value: QualityFilter): Self = this.set("QualityFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualityFilter: Self = this.set("QualityFilter", js.undefined)
+  }
+  
 }
 

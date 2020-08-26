@@ -82,44 +82,104 @@ trait SchemaContainerVersion extends js.Object {
 
 object SchemaContainerVersion {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    builtInVariable: js.Array[SchemaBuiltInVariable] = null,
-    container: SchemaContainer = null,
-    containerId: String = null,
-    containerVersionId: String = null,
-    customTemplate: js.Array[SchemaCustomTemplate] = null,
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    fingerprint: String = null,
-    folder: js.Array[SchemaFolder] = null,
-    name: String = null,
-    path: String = null,
-    tag: js.Array[SchemaTag] = null,
-    tagManagerUrl: String = null,
-    trigger: js.Array[SchemaTrigger] = null,
-    variable: js.Array[SchemaVariable] = null,
-    zone: js.Array[SchemaZone] = null
-  ): SchemaContainerVersion = {
+  def apply(): SchemaContainerVersion = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (builtInVariable != null) __obj.updateDynamic("builtInVariable")(builtInVariable.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (containerVersionId != null) __obj.updateDynamic("containerVersionId")(containerVersionId.asInstanceOf[js.Any])
-    if (customTemplate != null) __obj.updateDynamic("customTemplate")(customTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (tagManagerUrl != null) __obj.updateDynamic("tagManagerUrl")(tagManagerUrl.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (variable != null) __obj.updateDynamic("variable")(variable.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainerVersion]
   }
+  @scala.inline
+  implicit class SchemaContainerVersionOps[Self <: SchemaContainerVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setBuiltInVariableVarargs(value: SchemaBuiltInVariable*): Self = this.set("builtInVariable", js.Array(value :_*))
+    @scala.inline
+    def setBuiltInVariable(value: js.Array[SchemaBuiltInVariable]): Self = this.set("builtInVariable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuiltInVariable: Self = this.set("builtInVariable", js.undefined)
+    @scala.inline
+    def setContainer(value: SchemaContainer): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setContainerVersionId(value: String): Self = this.set("containerVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerVersionId: Self = this.set("containerVersionId", js.undefined)
+    @scala.inline
+    def setCustomTemplateVarargs(value: SchemaCustomTemplate*): Self = this.set("customTemplate", js.Array(value :_*))
+    @scala.inline
+    def setCustomTemplate(value: js.Array[SchemaCustomTemplate]): Self = this.set("customTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomTemplate: Self = this.set("customTemplate", js.undefined)
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setFolderVarargs(value: SchemaFolder*): Self = this.set("folder", js.Array(value :_*))
+    @scala.inline
+    def setFolder(value: js.Array[SchemaFolder]): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolder: Self = this.set("folder", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setTagVarargs(value: SchemaTag*): Self = this.set("tag", js.Array(value :_*))
+    @scala.inline
+    def setTag(value: js.Array[SchemaTag]): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTagManagerUrl(value: String): Self = this.set("tagManagerUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagManagerUrl: Self = this.set("tagManagerUrl", js.undefined)
+    @scala.inline
+    def setTriggerVarargs(value: SchemaTrigger*): Self = this.set("trigger", js.Array(value :_*))
+    @scala.inline
+    def setTrigger(value: js.Array[SchemaTrigger]): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+    @scala.inline
+    def setVariableVarargs(value: SchemaVariable*): Self = this.set("variable", js.Array(value :_*))
+    @scala.inline
+    def setVariable(value: js.Array[SchemaVariable]): Self = this.set("variable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariable: Self = this.set("variable", js.undefined)
+    @scala.inline
+    def setZoneVarargs(value: SchemaZone*): Self = this.set("zone", js.Array(value :_*))
+    @scala.inline
+    def setZone(value: js.Array[SchemaZone]): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

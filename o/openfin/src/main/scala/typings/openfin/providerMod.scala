@@ -3,8 +3,8 @@ package typings.openfin
 import typings.openfin.anon.FnCall
 import typings.openfin.channelChannelMod.ChannelBase
 import typings.openfin.identityMod.Identity
-import typings.openfin.shapesMod.ClientIdentity
-import typings.openfin.shapesMod.ProviderIdentity
+import typings.openfin.shapesIdentityMod.ClientIdentity
+import typings.openfin.shapesIdentityMod.ProviderIdentity
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

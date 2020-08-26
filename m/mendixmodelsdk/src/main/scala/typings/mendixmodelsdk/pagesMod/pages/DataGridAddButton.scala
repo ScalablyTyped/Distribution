@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/add-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGridAddButton")
 @js.native
@@ -26,7 +26,7 @@ class DataGridAddButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FDataGridAddButton: IModel = js.native
   def pageSettings: PageSettings = js.native
-  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pageSettings_=(newValue: PageSettings): Unit = js.native
 }
 
 /* static members */

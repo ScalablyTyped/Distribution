@@ -22,15 +22,32 @@ trait UpdateNotificationSettingsRequest extends js.Object {
 
 object UpdateNotificationSettingsRequest {
   @scala.inline
-  def apply(
-    HITTypeId: EntityId,
-    Active: js.UndefOr[Boolean] = js.undefined,
-    Notification: NotificationSpecification = null
-  ): UpdateNotificationSettingsRequest = {
+  def apply(HITTypeId: EntityId): UpdateNotificationSettingsRequest = {
     val __obj = js.Dynamic.literal(HITTypeId = HITTypeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Active)) __obj.updateDynamic("Active")(Active.get.asInstanceOf[js.Any])
-    if (Notification != null) __obj.updateDynamic("Notification")(Notification.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotificationSettingsRequest]
   }
+  @scala.inline
+  implicit class UpdateNotificationSettingsRequestOps[Self <: UpdateNotificationSettingsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHITTypeId(value: EntityId): Self = this.set("HITTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("Active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("Active", js.undefined)
+    @scala.inline
+    def setNotification(value: NotificationSpecification): Self = this.set("Notification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotification: Self = this.set("Notification", js.undefined)
+  }
+  
 }
 

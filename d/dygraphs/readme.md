@@ -10,9 +10,9 @@ dygraphs is a fast, flexible open source JavaScript charting library.
 | ------------------ | :-------------: |
 | Full name          | dygraphs |
 | Keywords           | dygraphs, javascript, visualization, canvas, chart, timeseries |
-| # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 393014 |
+| # releases         | 0 |
+| # dependents       | 11 |
+| # downloads        | 398824 |
 | # stars            | 3 |
 
 ## Links

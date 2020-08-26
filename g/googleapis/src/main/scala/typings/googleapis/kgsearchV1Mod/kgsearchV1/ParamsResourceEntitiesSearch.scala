@@ -51,48 +51,60 @@ trait ParamsResourceEntitiesSearch extends StandardParameters {
 
 object ParamsResourceEntitiesSearch {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    fields: String = null,
-    ids: js.Array[String] = null,
-    indent: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    languages: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    prefix: js.UndefOr[Boolean] = js.undefined,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    query: String = null,
-    quotaUser: String = null,
-    types: js.Array[String] = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceEntitiesSearch = {
+  def apply(): ParamsResourceEntitiesSearch = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (languages != null) __obj.updateDynamic("languages")(languages.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prefix)) __obj.updateDynamic("prefix")(prefix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceEntitiesSearch]
   }
+  @scala.inline
+  implicit class ParamsResourceEntitiesSearchOps[Self <: ParamsResourceEntitiesSearch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setIdsVarargs(value: String*): Self = this.set("ids", js.Array(value :_*))
+    @scala.inline
+    def setIds(value: js.Array[String]): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+    @scala.inline
+    def setIndent(value: Boolean): Self = this.set("indent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndent: Self = this.set("indent", js.undefined)
+    @scala.inline
+    def setLanguagesVarargs(value: String*): Self = this.set("languages", js.Array(value :_*))
+    @scala.inline
+    def setLanguages(value: js.Array[String]): Self = this.set("languages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguages: Self = this.set("languages", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPrefix(value: Boolean): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

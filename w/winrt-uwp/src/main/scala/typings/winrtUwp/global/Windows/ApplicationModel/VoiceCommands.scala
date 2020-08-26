@@ -1,15 +1,9 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
 import typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceTriggerDetails
-import typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletionReason
-import typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTileType
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
-import typings.winrtUwp.Windows.Media.SpeechRecognition.SpeechRecognitionResult
-import typings.winrtUwp.Windows.Storage.IStorageFile
 import typings.winrtUwp.Windows.Storage.StorageFile
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -22,86 +16,28 @@ object VoiceCommands extends js.Object {
   /** The command given to Cortana, using either speech or text, and routed to a background app. */
   @js.native
   abstract class VoiceCommand ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommand {
-    /** Gets the value of the Name attribute for the Command element declared in the Voice Command Definition (VCD) file. */
-    /* CompleteClass */
-    override var commandName: String = js.native
-    /** Gets a dictionary containing the semantic properties of the recognized phrase in the voice command. */
-    /* CompleteClass */
-    override var properties: IMapView[String, IVectorView[_]] = js.native
-    /** Gets the SpeechRecognitionResult object representing the results returned by the voice command. */
-    /* CompleteClass */
-    override var speechRecognitionResult: SpeechRecognitionResult = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommand
   
   /** Contains event data for the VoiceCommandCompleted event. */
   @js.native
   abstract class VoiceCommandCompletedEventArgs ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs {
-    /** The reason the voice command completed. */
-    /* CompleteClass */
-    override var reason: VoiceCommandCompletionReason = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs
   
   /** The response to the question specified by the background app and shown on the Cortana confirmation screen. This screen is displayed when the background app service calls RequestConfirmationAsync . */
   @js.native
   abstract class VoiceCommandConfirmationResult ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult {
-    /** Gets the response to the question specified by the background app and shown on the Cortana confirmation screen. */
-    /* CompleteClass */
-    override var confirmed: Boolean = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult
   
   /** An asset, containing image, text, and link data, provided by the background app service for display on the Cortana canvas. */
   @js.native
   /** Creates an instance of the VoiceCommandContentTile class. */
   class VoiceCommandContentTile ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile {
-    /** Gets or sets supplementary information the background app service can associate with the content tile. This information is not used by Cortana. */
-    /* CompleteClass */
-    override var appContext: js.Any = js.native
-    /** Gets or sets a string as a launch parameter that can be associated with the response by the background app service. */
-    /* CompleteClass */
-    override var appLaunchArgument: String = js.native
-    /** Gets or sets the layout template used to display the content tile on the Cortana canvas. */
-    /* CompleteClass */
-    override var contentTileType: VoiceCommandContentTileType = js.native
-    /** Gets or sets an image the background app service can associate with the content tile. */
-    /* CompleteClass */
-    override var image: IStorageFile = js.native
-    /** Gets or sets the first line of text the background app service can associate with the content tile. */
-    /* CompleteClass */
-    override var textLine1: String = js.native
-    /** Gets or sets the second line of text the background app service can associate with the content tile. */
-    /* CompleteClass */
-    override var textLine2: String = js.native
-    /** Gets or sets the third line of text the background app service can associate with the content tile. */
-    /* CompleteClass */
-    override var textLine3: String = js.native
-    /** Gets or sets the title the background app service can associate with the content tile. */
-    /* CompleteClass */
-    override var title: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile
   
   /** Enables operations on a specific installed command set. */
   @js.native
   abstract class VoiceCommandDefinition ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition {
-    /** Gets the language ( xml:lang ) value of the CommandSet element in the Voice Command Definition (VCD) file. */
-    /* CompleteClass */
-    override var language: String = js.native
-    /** Gets the Name attribute value of the CommandSet element in the Voice Command Definition (VCD) file. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /**
-      * Populates a PhraseList element with an array of Item elements.
-      * @param phraseListName The string that corresponds to the label attribute of the PhraseList element.
-      * @param phraseList A string array of values that will be added to the PhraseList element as Item elements.
-      * @return A string array of values that will be added to the PhraseList element as Item elements.
-      */
-    /* CompleteClass */
-    override def setPhraseListAsync(phraseListName: String, phraseList: IIterable[String]): IPromiseWithIAsyncAction = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition
   
   /** A static class that enables installing command sets from a Voice Command Definition (VCD) file, and getting installed command sets. */
   @js.native
@@ -111,29 +47,12 @@ object VoiceCommands extends js.Object {
   /** The result obtained from the disambiguation screen displayed on the Cortana canvas. */
   @js.native
   abstract class VoiceCommandDisambiguationResult ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult {
-    /** The item selected from the list of items displayed on the Cortana disambiguation screen. */
-    /* CompleteClass */
-    override var selectedItem: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult
   
   /** The response from a background app service for progress, confirmation, disambiguation, completion, or failure screens displayed on the Cortana canvas. */
   @js.native
   abstract class VoiceCommandResponse ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse {
-    /** Gets or sets a string as a launch parameter that can be associated with the response by the background app service. */
-    /* CompleteClass */
-    override var appLaunchArgument: String = js.native
-    /** The initial message that is spoken by Cortana and shown on the Cortana canvas. */
-    /* CompleteClass */
-    override var message: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage = js.native
-    /** The secondary message (for disambiguation and confirmation screens only) that is spoken by Cortana and shown on the Cortana canvas, if a response was not understood. */
-    /* CompleteClass */
-    override var repeatMessage: typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage = js.native
-    /** The collection of assets, containing image and text data, provided by the background app service for display on the Cortana canvas. */
-    /* CompleteClass */
-    override var voiceCommandContentTiles: IVector[typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile] = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse
   
   /** The background app service connection to Cortana. */
   @js.native
@@ -144,14 +63,7 @@ object VoiceCommands extends js.Object {
   @js.native
   /** Creates an instance of the VoiceCommandUserMessage class. */
   class VoiceCommandUserMessage ()
-    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage {
-    /** Gets or sets the message that is shown on the Cortana canvas. */
-    /* CompleteClass */
-    override var displayMessage: String = js.native
-    /** The message that is spoken by Cortana. */
-    /* CompleteClass */
-    override var spokenMessage: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage
   
   /** Specifies the possible reasons the voice command completed. */
   @js.native

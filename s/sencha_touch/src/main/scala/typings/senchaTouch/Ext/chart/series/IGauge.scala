@@ -1,501 +1,376 @@
 package typings.senchaTouch.Ext.chart.series
 
 import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
-import typings.senchaTouch.Ext.mixin.IObservable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IGauge extends ISeries {
   /** [Config Option] (String) */
-  var angleField: js.UndefOr[String] = js.undefined
+  var angleField: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var donut: js.UndefOr[Double] = js.undefined
+  var donut: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var field: js.UndefOr[String] = js.undefined
+  var field: js.UndefOr[String] = js.native
   /** [Method] Returns the value of angleField
     * @returns String
     */
-  var getAngleField: js.UndefOr[js.Function0[String]] = js.undefined
+  var getAngleField: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of center
     * @returns Array
     */
-  var getCenter: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getCenter: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the value of donut
     * @returns Number
     */
-  var getDonut: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getDonut: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of field
     * @returns String
     */
-  var getField: js.UndefOr[js.Function0[String]] = js.undefined
+  var getField: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of maximum
     * @returns Number
     */
-  var getMaximum: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMaximum: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minimum
     * @returns Number
     */
-  var getMinimum: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinimum: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of needle
     * @returns Boolean
     */
-  var getNeedle: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getNeedle: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of needleLength
     * @returns Number
     */
-  var getNeedleLength: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getNeedleLength: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of needleLengthRatio
     * @returns Number
     */
-  var getNeedleLengthRatio: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getNeedleLengthRatio: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of needleWidth
     * @returns Number
     */
-  var getNeedleWidth: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getNeedleWidth: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of radius
     * @returns Number
     */
-  var getRadius: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getRadius: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of region
     * @returns Array
     */
-  var getRegion: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getRegion: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the value of rotation
     * @returns Number
     */
-  var getRotation: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getRotation: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of sectors
     * @returns Array
     */
-  var getSectors: js.UndefOr[js.Function0[Array]] = js.undefined
+  var getSectors: js.UndefOr[js.Function0[Array]] = js.native
   /** [Method] Returns the value of totalAngle
     * @returns Object
     */
-  var getTotalAngle: js.UndefOr[js.Function0[_]] = js.undefined
+  var getTotalAngle: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of value
     * @returns Number
     */
-  var getValue: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of wholeDisk
     * @returns Boolean
     */
-  var getWholeDisk: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getWholeDisk: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Config Option] (Number) */
-  var maximum: js.UndefOr[Double] = js.undefined
+  var maximum: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minimum: js.UndefOr[Double] = js.undefined
+  var minimum: js.UndefOr[Double] = js.native
   /** [Config Option] (Boolean) */
-  var needle: js.UndefOr[Boolean] = js.undefined
+  var needle: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var needleLength: js.UndefOr[Double] = js.undefined
+  var needleLength: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var needleLengthRatio: js.UndefOr[Double] = js.undefined
+  var needleLengthRatio: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var needleWidth: js.UndefOr[Double] = js.undefined
+  var needleWidth: js.UndefOr[Double] = js.native
   /** [Config Option] (Array) */
-  var sectors: js.UndefOr[Array] = js.undefined
+  var sectors: js.UndefOr[Array] = js.native
   /** [Method] Sets the value of angleField
     * @param angleField String The new value.
     */
-  var setAngleField: js.UndefOr[js.Function1[/* angleField */ js.UndefOr[String], Unit]] = js.undefined
+  var setAngleField: js.UndefOr[js.Function1[/* angleField */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of center
     * @param center Array The new value.
     */
-  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.undefined
+  var setCenter: js.UndefOr[js.Function1[/* center */ js.UndefOr[Array], Unit]] = js.native
   /** [Method] Sets the value of donut
     * @param donut Number The new value.
     */
-  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[Double], Unit]] = js.undefined
+  var setDonut: js.UndefOr[js.Function1[/* donut */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of field
     * @param field String The new value.
     */
-  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.undefined
+  var setField: js.UndefOr[js.Function1[/* field */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of maximum
     * @param maximum Number The new value.
     */
-  var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMaximum: js.UndefOr[js.Function1[/* maximum */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minimum
     * @param minimum Number The new value.
     */
-  var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinimum: js.UndefOr[js.Function1[/* minimum */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of needle
     * @param needle Boolean The new value.
     */
-  var setNeedle: js.UndefOr[js.Function1[/* needle */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setNeedle: js.UndefOr[js.Function1[/* needle */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of needleLength
     * @param needleLength Number The new value.
     */
-  var setNeedleLength: js.UndefOr[js.Function1[/* needleLength */ js.UndefOr[Double], Unit]] = js.undefined
+  var setNeedleLength: js.UndefOr[js.Function1[/* needleLength */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of needleLengthRatio
     * @param needleLengthRatio Number The new value.
     */
-  var setNeedleLengthRatio: js.UndefOr[js.Function1[/* needleLengthRatio */ js.UndefOr[Double], Unit]] = js.undefined
+  var setNeedleLengthRatio: js.UndefOr[js.Function1[/* needleLengthRatio */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of needleWidth
     * @param needleWidth Number The new value.
     */
-  var setNeedleWidth: js.UndefOr[js.Function1[/* needleWidth */ js.UndefOr[Double], Unit]] = js.undefined
+  var setNeedleWidth: js.UndefOr[js.Function1[/* needleWidth */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of radius
     * @param radius Number The new value.
     */
-  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.undefined
+  var setRadius: js.UndefOr[js.Function1[/* radius */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of region
     * @param region Array The new value.
     */
-  var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.undefined
+  var setRegion: js.UndefOr[js.Function1[/* region */ js.UndefOr[Array], Unit]] = js.native
   /** [Method] Sets the value of rotation
     * @param rotation Number The new value.
     */
-  var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.undefined
+  var setRotation: js.UndefOr[js.Function1[/* rotation */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of sectors
     * @param sectors Array The new value.
     */
-  var setSectors: js.UndefOr[js.Function1[/* sectors */ js.UndefOr[Array], Unit]] = js.undefined
+  var setSectors: js.UndefOr[js.Function1[/* sectors */ js.UndefOr[Array], Unit]] = js.native
   /** [Method] Sets the value of totalAngle
     * @param totalAngle Object The new value.
     */
-  var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTotalAngle: js.UndefOr[js.Function1[/* totalAngle */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of value
     * @param value Number The new value.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of wholeDisk
     * @param wholeDisk Boolean The new value.
     */
-  var setWholeDisk: js.UndefOr[js.Function1[/* wholeDisk */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setWholeDisk: js.UndefOr[js.Function1[/* wholeDisk */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Config Option] (Number) */
-  var value: js.UndefOr[Double] = js.undefined
+  var value: js.UndefOr[Double] = js.native
   /** [Config Option] (Boolean) */
-  var wholeDisk: js.UndefOr[Boolean] = js.undefined
+  var wholeDisk: js.UndefOr[Boolean] = js.native
 }
 
 object IGauge {
   @scala.inline
-  def apply(
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Unit = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    angleField: String = null,
-    animate: js.Any = null,
-    background: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    clearListeners: () => Unit = null,
-    colors: Array = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    donut: js.UndefOr[Double] = js.undefined,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Unit = null,
-    extend: String = null,
-    field: String = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _ = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => Boolean = null,
-    getAngleField: () => String = null,
-    getAnimate: () => _ = null,
-    getBackground: () => _ = null,
-    getBubbleEvents: () => _ = null,
-    getCenter: () => Array = null,
-    getColors: () => Array = null,
-    getDonut: () => Double = null,
-    getField: () => String = null,
-    getHidden: () => _ = null,
-    getHighlightCfg: () => _ = null,
-    getHighlightItem: () => _ = null,
-    getId: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getItemForPoint: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* target */ js.UndefOr[js.Any]) => _ = null,
-    getItemInstancing: () => _ = null,
-    getLabel: () => _ = null,
-    getLabelField: () => _ = null,
-    getLabelOverflowPadding: () => Double = null,
-    getListeners: () => _ = null,
-    getMarker: () => _ = null,
-    getMarkerSubStyle: () => _ = null,
-    getMaximum: () => Double = null,
-    getMinimum: () => Double = null,
-    getNeedle: () => Boolean = null,
-    getNeedleLength: () => Double = null,
-    getNeedleLengthRatio: () => Double = null,
-    getNeedleWidth: () => Double = null,
-    getOverlaySurface: () => _ = null,
-    getRadius: () => Double = null,
-    getRegion: () => Array = null,
-    getRenderer: () => _ = null,
-    getRotation: () => Double = null,
-    getSectors: () => Array = null,
-    getShowInLegend: () => Boolean = null,
-    getSprites: () => Unit = null,
-    getStyle: () => _ = null,
-    getSubStyle: () => _ = null,
-    getSurface: () => _ = null,
-    getTitle: () => String = null,
-    getTotalAngle: () => _ = null,
-    getValue: () => Double = null,
-    getWholeDisk: () => Boolean = null,
-    hasListener: /* eventName */ js.UndefOr[String] => Boolean = null,
-    hidden: js.Any = null,
-    highlightCfg: js.Any = null,
-    highlightItem: js.Any = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    itemInstancing: js.Any = null,
-    label: js.Any = null,
-    labelField: js.Any = null,
-    labelOverflowPadding: js.UndefOr[Double] = js.undefined,
-    listeners: js.Any = null,
-    marker: js.Any = null,
-    markerSubStyle: js.Any = null,
-    maximum: js.UndefOr[Double] = js.undefined,
-    minimum: js.UndefOr[Double] = js.undefined,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    needle: js.UndefOr[Boolean] = js.undefined,
-    needleLength: js.UndefOr[Double] = js.undefined,
-    needleLengthRatio: js.UndefOr[Double] = js.undefined,
-    needleWidth: js.UndefOr[Double] = js.undefined,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    overlaySurface: js.Any = null,
-    platformConfig: js.Any = null,
-    provideLegendInfo: /* target */ js.UndefOr[Array] => Unit = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    renderer: js.Any = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Unit = null,
-    sectors: Array = null,
-    self: IClass = null,
-    seriesType: String = null,
-    setAngleField: /* angleField */ js.UndefOr[String] => Unit = null,
-    setAnimate: /* animate */ js.UndefOr[js.Any] => Unit = null,
-    setBackground: /* background */ js.UndefOr[js.Any] => Unit = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Unit = null,
-    setCenter: /* center */ js.UndefOr[Array] => Unit = null,
-    setColors: /* colors */ js.UndefOr[Array] => Unit = null,
-    setDonut: /* donut */ js.UndefOr[Double] => Unit = null,
-    setField: /* field */ js.UndefOr[String] => Unit = null,
-    setHidden: /* hidden */ js.UndefOr[js.Any] => Unit = null,
-    setHiddenByIndex: (/* index */ js.UndefOr[Double], /* value */ js.UndefOr[Boolean]) => Unit = null,
-    setHighlightCfg: /* highlightCfg */ js.UndefOr[js.Any] => Unit = null,
-    setHighlightItem: /* highlightItem */ js.UndefOr[js.Any] => Unit = null,
-    setItemInstancing: /* itemInstancing */ js.UndefOr[js.Any] => Unit = null,
-    setLabel: /* label */ js.UndefOr[js.Any] => _ = null,
-    setLabelField: /* labelField */ js.UndefOr[js.Any] => Unit = null,
-    setLabelOverflowPadding: /* labelOverflowPadding */ js.UndefOr[Double] => Unit = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Unit = null,
-    setMarker: /* marker */ js.UndefOr[js.Any] => Unit = null,
-    setMarkerSubStyle: /* markerSubStyle */ js.UndefOr[js.Any] => Unit = null,
-    setMaximum: /* maximum */ js.UndefOr[Double] => Unit = null,
-    setMinimum: /* minimum */ js.UndefOr[Double] => Unit = null,
-    setNeedle: /* needle */ js.UndefOr[Boolean] => Unit = null,
-    setNeedleLength: /* needleLength */ js.UndefOr[Double] => Unit = null,
-    setNeedleLengthRatio: /* needleLengthRatio */ js.UndefOr[Double] => Unit = null,
-    setNeedleWidth: /* needleWidth */ js.UndefOr[Double] => Unit = null,
-    setOverlaySurface: /* overlaySurface */ js.UndefOr[js.Any] => Unit = null,
-    setRadius: /* radius */ js.UndefOr[Double] => Unit = null,
-    setRegion: /* region */ js.UndefOr[Array] => Unit = null,
-    setRenderer: /* renderer */ js.UndefOr[js.Any] => _ = null,
-    setRotation: /* rotation */ js.UndefOr[Double] => Unit = null,
-    setSectors: /* sectors */ js.UndefOr[Array] => Unit = null,
-    setShowInLegend: /* showInLegend */ js.UndefOr[Boolean] => Unit = null,
-    setStore: /* store */ js.UndefOr[js.Any] => Unit = null,
-    setStyle: /* style */ js.UndefOr[js.Any] => Unit = null,
-    setSubStyle: /* subStyle */ js.UndefOr[js.Any] => Unit = null,
-    setSurface: /* surface */ js.UndefOr[js.Any] => Unit = null,
-    setTitle: /* title */ js.UndefOr[String] => Unit = null,
-    setTotalAngle: /* totalAngle */ js.UndefOr[js.Any] => Unit = null,
-    setValue: /* value */ js.UndefOr[Double] => Unit = null,
-    setWholeDisk: /* wholeDisk */ js.UndefOr[Boolean] => Unit = null,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    store: js.Any = null,
-    style: js.Any = null,
-    subStyle: js.Any = null,
-    surface: js.Any = null,
-    suspendEvents: () => Unit = null,
-    title: String = null,
-    `type`: String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Unit = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null,
-    value: js.UndefOr[Double] = js.undefined,
-    wholeDisk: js.UndefOr[Boolean] = js.undefined
-  ): IGauge = {
+  def apply(): IGauge = {
     val __obj = js.Dynamic.literal()
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4(addAfterListener))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4(addBeforeListener))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1(addEvents))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5(addListener))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5(addManagedListener))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (angleField != null) __obj.updateDynamic("angleField")(angleField.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (clearListeners != null) __obj.updateDynamic("clearListeners")(js.Any.fromFunction0(clearListeners))
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(donut)) __obj.updateDynamic("donut")(donut.get.asInstanceOf[js.Any])
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1(enableBubble))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4(fireAction))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2(fireEvent))
-    if (getAngleField != null) __obj.updateDynamic("getAngleField")(js.Any.fromFunction0(getAngleField))
-    if (getAnimate != null) __obj.updateDynamic("getAnimate")(js.Any.fromFunction0(getAnimate))
-    if (getBackground != null) __obj.updateDynamic("getBackground")(js.Any.fromFunction0(getBackground))
-    if (getBubbleEvents != null) __obj.updateDynamic("getBubbleEvents")(js.Any.fromFunction0(getBubbleEvents))
-    if (getCenter != null) __obj.updateDynamic("getCenter")(js.Any.fromFunction0(getCenter))
-    if (getColors != null) __obj.updateDynamic("getColors")(js.Any.fromFunction0(getColors))
-    if (getDonut != null) __obj.updateDynamic("getDonut")(js.Any.fromFunction0(getDonut))
-    if (getField != null) __obj.updateDynamic("getField")(js.Any.fromFunction0(getField))
-    if (getHidden != null) __obj.updateDynamic("getHidden")(js.Any.fromFunction0(getHidden))
-    if (getHighlightCfg != null) __obj.updateDynamic("getHighlightCfg")(js.Any.fromFunction0(getHighlightCfg))
-    if (getHighlightItem != null) __obj.updateDynamic("getHighlightItem")(js.Any.fromFunction0(getHighlightItem))
-    if (getId != null) __obj.updateDynamic("getId")(js.Any.fromFunction0(getId))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getItemForPoint != null) __obj.updateDynamic("getItemForPoint")(js.Any.fromFunction3(getItemForPoint))
-    if (getItemInstancing != null) __obj.updateDynamic("getItemInstancing")(js.Any.fromFunction0(getItemInstancing))
-    if (getLabel != null) __obj.updateDynamic("getLabel")(js.Any.fromFunction0(getLabel))
-    if (getLabelField != null) __obj.updateDynamic("getLabelField")(js.Any.fromFunction0(getLabelField))
-    if (getLabelOverflowPadding != null) __obj.updateDynamic("getLabelOverflowPadding")(js.Any.fromFunction0(getLabelOverflowPadding))
-    if (getListeners != null) __obj.updateDynamic("getListeners")(js.Any.fromFunction0(getListeners))
-    if (getMarker != null) __obj.updateDynamic("getMarker")(js.Any.fromFunction0(getMarker))
-    if (getMarkerSubStyle != null) __obj.updateDynamic("getMarkerSubStyle")(js.Any.fromFunction0(getMarkerSubStyle))
-    if (getMaximum != null) __obj.updateDynamic("getMaximum")(js.Any.fromFunction0(getMaximum))
-    if (getMinimum != null) __obj.updateDynamic("getMinimum")(js.Any.fromFunction0(getMinimum))
-    if (getNeedle != null) __obj.updateDynamic("getNeedle")(js.Any.fromFunction0(getNeedle))
-    if (getNeedleLength != null) __obj.updateDynamic("getNeedleLength")(js.Any.fromFunction0(getNeedleLength))
-    if (getNeedleLengthRatio != null) __obj.updateDynamic("getNeedleLengthRatio")(js.Any.fromFunction0(getNeedleLengthRatio))
-    if (getNeedleWidth != null) __obj.updateDynamic("getNeedleWidth")(js.Any.fromFunction0(getNeedleWidth))
-    if (getOverlaySurface != null) __obj.updateDynamic("getOverlaySurface")(js.Any.fromFunction0(getOverlaySurface))
-    if (getRadius != null) __obj.updateDynamic("getRadius")(js.Any.fromFunction0(getRadius))
-    if (getRegion != null) __obj.updateDynamic("getRegion")(js.Any.fromFunction0(getRegion))
-    if (getRenderer != null) __obj.updateDynamic("getRenderer")(js.Any.fromFunction0(getRenderer))
-    if (getRotation != null) __obj.updateDynamic("getRotation")(js.Any.fromFunction0(getRotation))
-    if (getSectors != null) __obj.updateDynamic("getSectors")(js.Any.fromFunction0(getSectors))
-    if (getShowInLegend != null) __obj.updateDynamic("getShowInLegend")(js.Any.fromFunction0(getShowInLegend))
-    if (getSprites != null) __obj.updateDynamic("getSprites")(js.Any.fromFunction0(getSprites))
-    if (getStyle != null) __obj.updateDynamic("getStyle")(js.Any.fromFunction0(getStyle))
-    if (getSubStyle != null) __obj.updateDynamic("getSubStyle")(js.Any.fromFunction0(getSubStyle))
-    if (getSurface != null) __obj.updateDynamic("getSurface")(js.Any.fromFunction0(getSurface))
-    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
-    if (getTotalAngle != null) __obj.updateDynamic("getTotalAngle")(js.Any.fromFunction0(getTotalAngle))
-    if (getValue != null) __obj.updateDynamic("getValue")(js.Any.fromFunction0(getValue))
-    if (getWholeDisk != null) __obj.updateDynamic("getWholeDisk")(js.Any.fromFunction0(getWholeDisk))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1(hasListener))
-    if (hidden != null) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (highlightCfg != null) __obj.updateDynamic("highlightCfg")(highlightCfg.asInstanceOf[js.Any])
-    if (highlightItem != null) __obj.updateDynamic("highlightItem")(highlightItem.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (itemInstancing != null) __obj.updateDynamic("itemInstancing")(itemInstancing.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelOverflowPadding)) __obj.updateDynamic("labelOverflowPadding")(labelOverflowPadding.get.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (markerSubStyle != null) __obj.updateDynamic("markerSubStyle")(markerSubStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5(mon))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4(mun))
-    if (!js.isUndefined(needle)) __obj.updateDynamic("needle")(needle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(needleLength)) __obj.updateDynamic("needleLength")(needleLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(needleLengthRatio)) __obj.updateDynamic("needleLengthRatio")(needleLengthRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(needleWidth)) __obj.updateDynamic("needleWidth")(needleWidth.get.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5(on))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4(onAfter))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4(onBefore))
-    if (overlaySurface != null) __obj.updateDynamic("overlaySurface")(overlaySurface.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (provideLegendInfo != null) __obj.updateDynamic("provideLegendInfo")(js.Any.fromFunction1(provideLegendInfo))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2(relayEvents))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4(removeAfterListener))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4(removeBeforeListener))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5(removeListener))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4(removeManagedListener))
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1(resumeEvents))
-    if (sectors != null) __obj.updateDynamic("sectors")(sectors.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType.asInstanceOf[js.Any])
-    if (setAngleField != null) __obj.updateDynamic("setAngleField")(js.Any.fromFunction1(setAngleField))
-    if (setAnimate != null) __obj.updateDynamic("setAnimate")(js.Any.fromFunction1(setAnimate))
-    if (setBackground != null) __obj.updateDynamic("setBackground")(js.Any.fromFunction1(setBackground))
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1(setBubbleEvents))
-    if (setCenter != null) __obj.updateDynamic("setCenter")(js.Any.fromFunction1(setCenter))
-    if (setColors != null) __obj.updateDynamic("setColors")(js.Any.fromFunction1(setColors))
-    if (setDonut != null) __obj.updateDynamic("setDonut")(js.Any.fromFunction1(setDonut))
-    if (setField != null) __obj.updateDynamic("setField")(js.Any.fromFunction1(setField))
-    if (setHidden != null) __obj.updateDynamic("setHidden")(js.Any.fromFunction1(setHidden))
-    if (setHiddenByIndex != null) __obj.updateDynamic("setHiddenByIndex")(js.Any.fromFunction2(setHiddenByIndex))
-    if (setHighlightCfg != null) __obj.updateDynamic("setHighlightCfg")(js.Any.fromFunction1(setHighlightCfg))
-    if (setHighlightItem != null) __obj.updateDynamic("setHighlightItem")(js.Any.fromFunction1(setHighlightItem))
-    if (setItemInstancing != null) __obj.updateDynamic("setItemInstancing")(js.Any.fromFunction1(setItemInstancing))
-    if (setLabel != null) __obj.updateDynamic("setLabel")(js.Any.fromFunction1(setLabel))
-    if (setLabelField != null) __obj.updateDynamic("setLabelField")(js.Any.fromFunction1(setLabelField))
-    if (setLabelOverflowPadding != null) __obj.updateDynamic("setLabelOverflowPadding")(js.Any.fromFunction1(setLabelOverflowPadding))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1(setListeners))
-    if (setMarker != null) __obj.updateDynamic("setMarker")(js.Any.fromFunction1(setMarker))
-    if (setMarkerSubStyle != null) __obj.updateDynamic("setMarkerSubStyle")(js.Any.fromFunction1(setMarkerSubStyle))
-    if (setMaximum != null) __obj.updateDynamic("setMaximum")(js.Any.fromFunction1(setMaximum))
-    if (setMinimum != null) __obj.updateDynamic("setMinimum")(js.Any.fromFunction1(setMinimum))
-    if (setNeedle != null) __obj.updateDynamic("setNeedle")(js.Any.fromFunction1(setNeedle))
-    if (setNeedleLength != null) __obj.updateDynamic("setNeedleLength")(js.Any.fromFunction1(setNeedleLength))
-    if (setNeedleLengthRatio != null) __obj.updateDynamic("setNeedleLengthRatio")(js.Any.fromFunction1(setNeedleLengthRatio))
-    if (setNeedleWidth != null) __obj.updateDynamic("setNeedleWidth")(js.Any.fromFunction1(setNeedleWidth))
-    if (setOverlaySurface != null) __obj.updateDynamic("setOverlaySurface")(js.Any.fromFunction1(setOverlaySurface))
-    if (setRadius != null) __obj.updateDynamic("setRadius")(js.Any.fromFunction1(setRadius))
-    if (setRegion != null) __obj.updateDynamic("setRegion")(js.Any.fromFunction1(setRegion))
-    if (setRenderer != null) __obj.updateDynamic("setRenderer")(js.Any.fromFunction1(setRenderer))
-    if (setRotation != null) __obj.updateDynamic("setRotation")(js.Any.fromFunction1(setRotation))
-    if (setSectors != null) __obj.updateDynamic("setSectors")(js.Any.fromFunction1(setSectors))
-    if (setShowInLegend != null) __obj.updateDynamic("setShowInLegend")(js.Any.fromFunction1(setShowInLegend))
-    if (setStore != null) __obj.updateDynamic("setStore")(js.Any.fromFunction1(setStore))
-    if (setStyle != null) __obj.updateDynamic("setStyle")(js.Any.fromFunction1(setStyle))
-    if (setSubStyle != null) __obj.updateDynamic("setSubStyle")(js.Any.fromFunction1(setSubStyle))
-    if (setSurface != null) __obj.updateDynamic("setSurface")(js.Any.fromFunction1(setSurface))
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (setTotalAngle != null) __obj.updateDynamic("setTotalAngle")(js.Any.fromFunction1(setTotalAngle))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1(setValue))
-    if (setWholeDisk != null) __obj.updateDynamic("setWholeDisk")(js.Any.fromFunction1(setWholeDisk))
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subStyle != null) __obj.updateDynamic("subStyle")(subStyle.asInstanceOf[js.Any])
-    if (surface != null) __obj.updateDynamic("surface")(surface.asInstanceOf[js.Any])
-    if (suspendEvents != null) __obj.updateDynamic("suspendEvents")(js.Any.fromFunction0(suspendEvents))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5(un))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4(unAfter))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4(unBefore))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wholeDisk)) __obj.updateDynamic("wholeDisk")(wholeDisk.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGauge]
   }
+  @scala.inline
+  implicit class IGaugeOps[Self <: IGauge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAngleField(value: String): Self = this.set("angleField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngleField: Self = this.set("angleField", js.undefined)
+    @scala.inline
+    def setDonut(value: Double): Self = this.set("donut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDonut: Self = this.set("donut", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setGetAngleField(value: () => String): Self = this.set("getAngleField", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetAngleField: Self = this.set("getAngleField", js.undefined)
+    @scala.inline
+    def setGetCenter(value: () => Array): Self = this.set("getCenter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetCenter: Self = this.set("getCenter", js.undefined)
+    @scala.inline
+    def setGetDonut(value: () => Double): Self = this.set("getDonut", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDonut: Self = this.set("getDonut", js.undefined)
+    @scala.inline
+    def setGetField(value: () => String): Self = this.set("getField", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetField: Self = this.set("getField", js.undefined)
+    @scala.inline
+    def setGetMaximum(value: () => Double): Self = this.set("getMaximum", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaximum: Self = this.set("getMaximum", js.undefined)
+    @scala.inline
+    def setGetMinimum(value: () => Double): Self = this.set("getMinimum", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinimum: Self = this.set("getMinimum", js.undefined)
+    @scala.inline
+    def setGetNeedle(value: () => Boolean): Self = this.set("getNeedle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetNeedle: Self = this.set("getNeedle", js.undefined)
+    @scala.inline
+    def setGetNeedleLength(value: () => Double): Self = this.set("getNeedleLength", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetNeedleLength: Self = this.set("getNeedleLength", js.undefined)
+    @scala.inline
+    def setGetNeedleLengthRatio(value: () => Double): Self = this.set("getNeedleLengthRatio", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetNeedleLengthRatio: Self = this.set("getNeedleLengthRatio", js.undefined)
+    @scala.inline
+    def setGetNeedleWidth(value: () => Double): Self = this.set("getNeedleWidth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetNeedleWidth: Self = this.set("getNeedleWidth", js.undefined)
+    @scala.inline
+    def setGetRadius(value: () => Double): Self = this.set("getRadius", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRadius: Self = this.set("getRadius", js.undefined)
+    @scala.inline
+    def setGetRegion(value: () => Array): Self = this.set("getRegion", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRegion: Self = this.set("getRegion", js.undefined)
+    @scala.inline
+    def setGetRotation(value: () => Double): Self = this.set("getRotation", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetRotation: Self = this.set("getRotation", js.undefined)
+    @scala.inline
+    def setGetSectors(value: () => Array): Self = this.set("getSectors", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetSectors: Self = this.set("getSectors", js.undefined)
+    @scala.inline
+    def setGetTotalAngle(value: () => _): Self = this.set("getTotalAngle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTotalAngle: Self = this.set("getTotalAngle", js.undefined)
+    @scala.inline
+    def setGetValue(value: () => Double): Self = this.set("getValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetValue: Self = this.set("getValue", js.undefined)
+    @scala.inline
+    def setGetWholeDisk(value: () => Boolean): Self = this.set("getWholeDisk", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetWholeDisk: Self = this.set("getWholeDisk", js.undefined)
+    @scala.inline
+    def setMaximum(value: Double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: Double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setNeedle(value: Boolean): Self = this.set("needle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedle: Self = this.set("needle", js.undefined)
+    @scala.inline
+    def setNeedleLength(value: Double): Self = this.set("needleLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedleLength: Self = this.set("needleLength", js.undefined)
+    @scala.inline
+    def setNeedleLengthRatio(value: Double): Self = this.set("needleLengthRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedleLengthRatio: Self = this.set("needleLengthRatio", js.undefined)
+    @scala.inline
+    def setNeedleWidth(value: Double): Self = this.set("needleWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedleWidth: Self = this.set("needleWidth", js.undefined)
+    @scala.inline
+    def setSectors(value: Array): Self = this.set("sectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectors: Self = this.set("sectors", js.undefined)
+    @scala.inline
+    def setSetAngleField(value: /* angleField */ js.UndefOr[String] => Unit): Self = this.set("setAngleField", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetAngleField: Self = this.set("setAngleField", js.undefined)
+    @scala.inline
+    def setSetCenter(value: /* center */ js.UndefOr[Array] => Unit): Self = this.set("setCenter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetCenter: Self = this.set("setCenter", js.undefined)
+    @scala.inline
+    def setSetDonut(value: /* donut */ js.UndefOr[Double] => Unit): Self = this.set("setDonut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDonut: Self = this.set("setDonut", js.undefined)
+    @scala.inline
+    def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = this.set("setField", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetField: Self = this.set("setField", js.undefined)
+    @scala.inline
+    def setSetMaximum(value: /* maximum */ js.UndefOr[Double] => Unit): Self = this.set("setMaximum", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaximum: Self = this.set("setMaximum", js.undefined)
+    @scala.inline
+    def setSetMinimum(value: /* minimum */ js.UndefOr[Double] => Unit): Self = this.set("setMinimum", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinimum: Self = this.set("setMinimum", js.undefined)
+    @scala.inline
+    def setSetNeedle(value: /* needle */ js.UndefOr[Boolean] => Unit): Self = this.set("setNeedle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetNeedle: Self = this.set("setNeedle", js.undefined)
+    @scala.inline
+    def setSetNeedleLength(value: /* needleLength */ js.UndefOr[Double] => Unit): Self = this.set("setNeedleLength", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetNeedleLength: Self = this.set("setNeedleLength", js.undefined)
+    @scala.inline
+    def setSetNeedleLengthRatio(value: /* needleLengthRatio */ js.UndefOr[Double] => Unit): Self = this.set("setNeedleLengthRatio", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetNeedleLengthRatio: Self = this.set("setNeedleLengthRatio", js.undefined)
+    @scala.inline
+    def setSetNeedleWidth(value: /* needleWidth */ js.UndefOr[Double] => Unit): Self = this.set("setNeedleWidth", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetNeedleWidth: Self = this.set("setNeedleWidth", js.undefined)
+    @scala.inline
+    def setSetRadius(value: /* radius */ js.UndefOr[Double] => Unit): Self = this.set("setRadius", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRadius: Self = this.set("setRadius", js.undefined)
+    @scala.inline
+    def setSetRegion(value: /* region */ js.UndefOr[Array] => Unit): Self = this.set("setRegion", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRegion: Self = this.set("setRegion", js.undefined)
+    @scala.inline
+    def setSetRotation(value: /* rotation */ js.UndefOr[Double] => Unit): Self = this.set("setRotation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetRotation: Self = this.set("setRotation", js.undefined)
+    @scala.inline
+    def setSetSectors(value: /* sectors */ js.UndefOr[Array] => Unit): Self = this.set("setSectors", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetSectors: Self = this.set("setSectors", js.undefined)
+    @scala.inline
+    def setSetTotalAngle(value: /* totalAngle */ js.UndefOr[js.Any] => Unit): Self = this.set("setTotalAngle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTotalAngle: Self = this.set("setTotalAngle", js.undefined)
+    @scala.inline
+    def setSetValue(value: /* value */ js.UndefOr[Double] => Unit): Self = this.set("setValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetValue: Self = this.set("setValue", js.undefined)
+    @scala.inline
+    def setSetWholeDisk(value: /* wholeDisk */ js.UndefOr[Boolean] => Unit): Self = this.set("setWholeDisk", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetWholeDisk: Self = this.set("setWholeDisk", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWholeDisk(value: Boolean): Self = this.set("wholeDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWholeDisk: Self = this.set("wholeDisk", js.undefined)
+  }
+  
 }
 

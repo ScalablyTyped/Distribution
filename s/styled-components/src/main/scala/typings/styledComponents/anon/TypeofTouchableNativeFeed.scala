@@ -1,6 +1,7 @@
 package typings.styledComponents.anon
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.RippleBackgroundPropType
 import typings.reactNative.mod.ThemeAttributeBackgroundPropType
 import typings.reactNative.mod.TouchableNativeFeedback
@@ -20,8 +21,8 @@ trait TypeofTouchableNativeFeed extends Instantiable0[TouchableNativeFeedback] {
     * @param color The ripple color
     * @param borderless If the ripple can render outside it's bounds
     */
-  def Ripple(color: String): RippleBackgroundPropType = js.native
-  def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = js.native
+  def Ripple(color: ColorValue): RippleBackgroundPropType = js.native
+  def Ripple(color: ColorValue, borderless: Boolean): RippleBackgroundPropType = js.native
   /**
     * Creates an object that represents android theme's default background for
     * selectable elements (?android:attr/selectableItemBackground).

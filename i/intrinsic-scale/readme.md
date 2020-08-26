@@ -12,7 +12,7 @@ Replicate background-size: cover/contain (scale+crop) for canvas/CSS/Node/… on
 | Keywords           | background-size, browser, canvas, contain, cover, crop, css, image, intrinsic, media, object-fit, scale, video, webcam |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 16897 |
+| # downloads        | 17467 |
 | # stars            | 2 |
 
 ## Links

@@ -81,6 +81,7 @@ trait People extends js.Object {
     * @param callback If provided, the callback will be called after the tracking event
     */
   def increment(prop: String): Unit = js.native
+  def increment(prop: String, value: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def increment(prop: String, value: Double): Unit = js.native
   def increment(prop: String, value: Double, callback: js.Function0[Unit]): Unit = js.native
   def set(keys: StringDictionary[js.Any]): Unit = js.native
@@ -151,6 +152,7 @@ trait People extends js.Object {
     * @param callback If provided, the callback will be called when the server responds
     */
   def track_charge(amount: Double): Unit = js.native
+  def track_charge(amount: Double, properties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def track_charge(amount: Double, properties: StringDictionary[js.Any]): Unit = js.native
   def track_charge(amount: Double, properties: StringDictionary[js.Any], callback: js.Function0[Unit]): Unit = js.native
   def union(keys: StringDictionary[js.Any]): Unit = js.native

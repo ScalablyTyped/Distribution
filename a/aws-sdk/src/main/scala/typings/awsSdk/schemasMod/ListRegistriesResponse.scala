@@ -18,11 +18,32 @@ trait ListRegistriesResponse extends js.Object {
 
 object ListRegistriesResponse {
   @scala.inline
-  def apply(NextToken: string = null, Registries: listOfRegistrySummary = null): ListRegistriesResponse = {
+  def apply(): ListRegistriesResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Registries != null) __obj.updateDynamic("Registries")(Registries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRegistriesResponse]
   }
+  @scala.inline
+  implicit class ListRegistriesResponseOps[Self <: ListRegistriesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setRegistriesVarargs(value: RegistrySummary*): Self = this.set("Registries", js.Array(value :_*))
+    @scala.inline
+    def setRegistries(value: listOfRegistrySummary): Self = this.set("Registries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistries: Self = this.set("Registries", js.undefined)
+  }
+  
 }
 

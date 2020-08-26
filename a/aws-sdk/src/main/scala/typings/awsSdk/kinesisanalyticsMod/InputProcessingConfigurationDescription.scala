@@ -14,10 +14,26 @@ trait InputProcessingConfigurationDescription extends js.Object {
 
 object InputProcessingConfigurationDescription {
   @scala.inline
-  def apply(InputLambdaProcessorDescription: InputLambdaProcessorDescription = null): InputProcessingConfigurationDescription = {
+  def apply(): InputProcessingConfigurationDescription = {
     val __obj = js.Dynamic.literal()
-    if (InputLambdaProcessorDescription != null) __obj.updateDynamic("InputLambdaProcessorDescription")(InputLambdaProcessorDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputProcessingConfigurationDescription]
   }
+  @scala.inline
+  implicit class InputProcessingConfigurationDescriptionOps[Self <: InputProcessingConfigurationDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputLambdaProcessorDescription(value: InputLambdaProcessorDescription): Self = this.set("InputLambdaProcessorDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputLambdaProcessorDescription: Self = this.set("InputLambdaProcessorDescription", js.undefined)
+  }
+  
 }
 

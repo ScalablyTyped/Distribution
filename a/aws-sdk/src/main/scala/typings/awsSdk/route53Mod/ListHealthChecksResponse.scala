@@ -30,16 +30,36 @@ trait ListHealthChecksResponse extends js.Object {
 
 object ListHealthChecksResponse {
   @scala.inline
-  def apply(
-    HealthChecks: HealthChecks,
-    IsTruncated: PageTruncated,
-    Marker: PageMarker,
-    MaxItems: PageMaxItems,
-    NextMarker: PageMarker = null
-  ): ListHealthChecksResponse = {
+  def apply(HealthChecks: HealthChecks, IsTruncated: PageTruncated, Marker: PageMarker, MaxItems: PageMaxItems): ListHealthChecksResponse = {
     val __obj = js.Dynamic.literal(HealthChecks = HealthChecks.asInstanceOf[js.Any], IsTruncated = IsTruncated.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], MaxItems = MaxItems.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHealthChecksResponse]
   }
+  @scala.inline
+  implicit class ListHealthChecksResponseOps[Self <: ListHealthChecksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthChecksVarargs(value: HealthCheck*): Self = this.set("HealthChecks", js.Array(value :_*))
+    @scala.inline
+    def setHealthChecks(value: HealthChecks): Self = this.set("HealthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsTruncated(value: PageTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: PageMarker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNextMarker(value: PageMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

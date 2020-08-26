@@ -4,36 +4,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonOptions extends js.Object {
-  var addHash: js.UndefOr[AddHashFunction] = js.undefined
-  var addPublicPath: js.UndefOr[AddPublicPathFunction] = js.undefined
-  var append: js.UndefOr[Boolean] = js.undefined
-  var hash: js.UndefOr[Boolean | String | AddHashFunction] = js.undefined
-  var publicPath: js.UndefOr[Boolean | String | AddPublicPathFunction] = js.undefined
-  var useHash: js.UndefOr[Boolean] = js.undefined
-  var usePublicPath: js.UndefOr[Boolean] = js.undefined
+  var addHash: js.UndefOr[AddHashFunction] = js.native
+  var addPublicPath: js.UndefOr[AddPublicPathFunction] = js.native
+  var append: js.UndefOr[Boolean] = js.native
+  var hash: js.UndefOr[Boolean | String | AddHashFunction] = js.native
+  var publicPath: js.UndefOr[Boolean | String | AddPublicPathFunction] = js.native
+  var useHash: js.UndefOr[Boolean] = js.native
+  var usePublicPath: js.UndefOr[Boolean] = js.native
 }
 
 object CommonOptions {
   @scala.inline
-  def apply(
-    addHash: (/* assetPath */ String, /* hash */ String) => String = null,
-    addPublicPath: (/* assetPath */ String, /* publicPath */ String) => String = null,
-    append: js.UndefOr[Boolean] = js.undefined,
-    hash: Boolean | String | AddHashFunction = null,
-    publicPath: Boolean | String | AddPublicPathFunction = null,
-    useHash: js.UndefOr[Boolean] = js.undefined,
-    usePublicPath: js.UndefOr[Boolean] = js.undefined
-  ): CommonOptions = {
+  def apply(): CommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (addHash != null) __obj.updateDynamic("addHash")(js.Any.fromFunction2(addHash))
-    if (addPublicPath != null) __obj.updateDynamic("addPublicPath")(js.Any.fromFunction2(addPublicPath))
-    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append.get.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePublicPath)) __obj.updateDynamic("usePublicPath")(usePublicPath.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOptions]
   }
+  @scala.inline
+  implicit class CommonOptionsOps[Self <: CommonOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddHash(value: (/* assetPath */ String, /* hash */ String) => String): Self = this.set("addHash", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAddHash: Self = this.set("addHash", js.undefined)
+    @scala.inline
+    def setAddPublicPath(value: (/* assetPath */ String, /* publicPath */ String) => String): Self = this.set("addPublicPath", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAddPublicPath: Self = this.set("addPublicPath", js.undefined)
+    @scala.inline
+    def setAppend(value: Boolean): Self = this.set("append", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppend: Self = this.set("append", js.undefined)
+    @scala.inline
+    def setHashFunction2(value: (/* assetPath */ String, /* hash */ String) => String): Self = this.set("hash", js.Any.fromFunction2(value))
+    @scala.inline
+    def setHash(value: Boolean | String | AddHashFunction): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setPublicPathFunction2(value: (/* assetPath */ String, /* publicPath */ String) => String): Self = this.set("publicPath", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPublicPath(value: Boolean | String | AddPublicPathFunction): Self = this.set("publicPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicPath: Self = this.set("publicPath", js.undefined)
+    @scala.inline
+    def setUseHash(value: Boolean): Self = this.set("useHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHash: Self = this.set("useHash", js.undefined)
+    @scala.inline
+    def setUsePublicPath(value: Boolean): Self = this.set("usePublicPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePublicPath: Self = this.set("usePublicPath", js.undefined)
+  }
+  
 }
 

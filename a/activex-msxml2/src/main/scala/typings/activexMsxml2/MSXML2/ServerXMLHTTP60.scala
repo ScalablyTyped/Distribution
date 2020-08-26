@@ -35,7 +35,29 @@ trait ServerXMLHTTP60 extends js.Object {
   def getResponseHeader(bstrHeader: String): String = js.native
   /** Open HTTP connection */
   def open(bstrMethod: String, bstrUrl: String): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrUrl: String,
+    varAsync: js.UndefOr[scala.Nothing],
+    bstrUser: js.UndefOr[scala.Nothing],
+    bstrPassword: js.Any
+  ): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: js.UndefOr[scala.Nothing], bstrUser: js.Any): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrUrl: String,
+    varAsync: js.UndefOr[scala.Nothing],
+    bstrUser: js.Any,
+    bstrPassword: js.Any
+  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrUrl: String,
+    varAsync: js.Any,
+    bstrUser: js.UndefOr[scala.Nothing],
+    bstrPassword: js.Any
+  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
   /** Send HTTP request */
@@ -45,6 +67,7 @@ trait ServerXMLHTTP60 extends js.Object {
   def setOption(option: SERVERXMLHTTP_OPTION, value: js.Any): Unit = js.native
   /** Specify proxy configuration */
   def setProxy(proxySetting: SXH_PROXY_SETTING): Unit = js.native
+  def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.UndefOr[scala.Nothing], varBypassList: js.Any): Unit = js.native
   def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any): Unit = js.native
   def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any, varBypassList: js.Any): Unit = js.native
   /** Specify proxy authentication credentials */

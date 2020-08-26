@@ -16,6 +16,9 @@ object xstateStrings {
   sealed trait PropertyAssigner extends js.Object
   
   @js.native
+  sealed trait PropertyMapper extends js.Object
+  
+  @js.native
   sealed trait StateNodesConfig extends js.Object
   
   @js.native
@@ -78,6 +81,8 @@ object xstateStrings {
   def ExtractStateValue: ExtractStateValue = "ExtractStateValue".asInstanceOf[ExtractStateValue]
   @scala.inline
   def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
+  @scala.inline
+  def PropertyMapper: PropertyMapper = "PropertyMapper".asInstanceOf[PropertyMapper]
   @scala.inline
   def StateNodesConfig: StateNodesConfig = "StateNodesConfig".asInstanceOf[StateNodesConfig]
   @scala.inline

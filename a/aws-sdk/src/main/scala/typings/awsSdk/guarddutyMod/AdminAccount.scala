@@ -18,11 +18,30 @@ trait AdminAccount extends js.Object {
 
 object AdminAccount {
   @scala.inline
-  def apply(AdminAccountId: String = null, AdminStatus: AdminStatus = null): AdminAccount = {
+  def apply(): AdminAccount = {
     val __obj = js.Dynamic.literal()
-    if (AdminAccountId != null) __obj.updateDynamic("AdminAccountId")(AdminAccountId.asInstanceOf[js.Any])
-    if (AdminStatus != null) __obj.updateDynamic("AdminStatus")(AdminStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminAccount]
   }
+  @scala.inline
+  implicit class AdminAccountOps[Self <: AdminAccount] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdminAccountId(value: String): Self = this.set("AdminAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminAccountId: Self = this.set("AdminAccountId", js.undefined)
+    @scala.inline
+    def setAdminStatus(value: AdminStatus): Self = this.set("AdminStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminStatus: Self = this.set("AdminStatus", js.undefined)
+  }
+  
 }
 

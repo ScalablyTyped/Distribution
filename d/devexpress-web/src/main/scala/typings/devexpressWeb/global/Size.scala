@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Size")
 @js.native
 class Size ()
-  extends typings.devexpressWeb.Size {
-  /**
-    * Gets or sets the height value in twips.
-    */
-  /* CompleteClass */
-  override var height: Double = js.native
-  /**
-    * Gets or sets the width value in twips.
-    */
-  /* CompleteClass */
-  override var width: Double = js.native
-}
+  extends typings.devexpressWeb.Size
 

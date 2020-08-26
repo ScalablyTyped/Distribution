@@ -18,6 +18,7 @@ trait Peer extends js.Object {
   var open: Boolean = js.native
   var rooms: js.Any = js.native
   def call(peerId: String): js.UndefOr[MediaConnection] = js.native
+  def call(peerId: String, stream: js.UndefOr[scala.Nothing], options: CallOptions): js.UndefOr[MediaConnection] = js.native
   def call(peerId: String, stream: MediaStream): js.UndefOr[MediaConnection] = js.native
   def call(peerId: String, stream: MediaStream, options: CallOptions): js.UndefOr[MediaConnection] = js.native
   def connect(peerId: String): js.UndefOr[DataConnection] = js.native

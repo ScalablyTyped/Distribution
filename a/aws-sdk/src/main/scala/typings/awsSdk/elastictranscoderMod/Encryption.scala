@@ -26,18 +26,38 @@ trait Encryption extends js.Object {
 
 object Encryption {
   @scala.inline
-  def apply(
-    InitializationVector: ZeroTo255String = null,
-    Key: Base64EncodedString = null,
-    KeyMd5: Base64EncodedString = null,
-    Mode: EncryptionMode = null
-  ): Encryption = {
+  def apply(): Encryption = {
     val __obj = js.Dynamic.literal()
-    if (InitializationVector != null) __obj.updateDynamic("InitializationVector")(InitializationVector.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (KeyMd5 != null) __obj.updateDynamic("KeyMd5")(KeyMd5.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encryption]
   }
+  @scala.inline
+  implicit class EncryptionOps[Self <: Encryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitializationVector(value: ZeroTo255String): Self = this.set("InitializationVector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitializationVector: Self = this.set("InitializationVector", js.undefined)
+    @scala.inline
+    def setKey(value: Base64EncodedString): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setKeyMd5(value: Base64EncodedString): Self = this.set("KeyMd5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyMd5: Self = this.set("KeyMd5", js.undefined)
+    @scala.inline
+    def setMode(value: EncryptionMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+  }
+  
 }
 

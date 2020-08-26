@@ -5,31 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Result extends js.Object {
-  var date: js.UndefOr[Date] = js.undefined
-  var description: js.UndefOr[String] = js.undefined
-  var keywords: js.UndefOr[js.Array[String]] = js.undefined
-  var maintainers: js.UndefOr[js.Array[Maintainer]] = js.undefined
-  var name: String
-  var version: String
+  var date: js.UndefOr[Date] = js.native
+  var description: js.UndefOr[String] = js.native
+  var keywords: js.UndefOr[js.Array[String]] = js.native
+  var maintainers: js.UndefOr[js.Array[Maintainer]] = js.native
+  var name: String = js.native
+  var version: String = js.native
 }
 
 object Result {
   @scala.inline
-  def apply(
-    name: String,
-    version: String,
-    date: Date = null,
-    description: String = null,
-    keywords: js.Array[String] = null,
-    maintainers: js.Array[Maintainer] = null
-  ): Result = {
+  def apply(name: String, version: String): Result = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
+  @scala.inline
+  implicit class ResultOps[Self <: Result] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setKeywordsVarargs(value: String*): Self = this.set("keywords", js.Array(value :_*))
+    @scala.inline
+    def setKeywords(value: js.Array[String]): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setMaintainersVarargs(value: Maintainer*): Self = this.set("maintainers", js.Array(value :_*))
+    @scala.inline
+    def setMaintainers(value: js.Array[Maintainer]): Self = this.set("maintainers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintainers: Self = this.set("maintainers", js.undefined)
+  }
+  
 }
 

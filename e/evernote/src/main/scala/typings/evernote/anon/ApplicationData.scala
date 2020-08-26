@@ -5,51 +5,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationData extends js.Object {
-  var altitude: js.UndefOr[Double] = js.undefined
-  var applicationData: js.UndefOr[LazyMap] = js.undefined
-  var attachment: js.UndefOr[Boolean] = js.undefined
-  var cameraMake: js.UndefOr[String] = js.undefined
-  var cameraModel: js.UndefOr[String] = js.undefined
-  var clientWillIndex: js.UndefOr[Boolean] = js.undefined
-  var fileName: js.UndefOr[String] = js.undefined
-  var latitude: js.UndefOr[Double] = js.undefined
-  var longitude: js.UndefOr[Double] = js.undefined
-  var recoType: js.UndefOr[String] = js.undefined
-  var sourceURL: js.UndefOr[String] = js.undefined
-  var timestamp: js.UndefOr[Double] = js.undefined
+  var altitude: js.UndefOr[Double] = js.native
+  var applicationData: js.UndefOr[LazyMap] = js.native
+  var attachment: js.UndefOr[Boolean] = js.native
+  var cameraMake: js.UndefOr[String] = js.native
+  var cameraModel: js.UndefOr[String] = js.native
+  var clientWillIndex: js.UndefOr[Boolean] = js.native
+  var fileName: js.UndefOr[String] = js.native
+  var latitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.native
+  var recoType: js.UndefOr[String] = js.native
+  var sourceURL: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[Double] = js.native
 }
 
 object ApplicationData {
   @scala.inline
-  def apply(
-    altitude: js.UndefOr[Double] = js.undefined,
-    applicationData: LazyMap = null,
-    attachment: js.UndefOr[Boolean] = js.undefined,
-    cameraMake: String = null,
-    cameraModel: String = null,
-    clientWillIndex: js.UndefOr[Boolean] = js.undefined,
-    fileName: String = null,
-    latitude: js.UndefOr[Double] = js.undefined,
-    longitude: js.UndefOr[Double] = js.undefined,
-    recoType: String = null,
-    sourceURL: String = null,
-    timestamp: js.UndefOr[Double] = js.undefined
-  ): ApplicationData = {
+  def apply(): ApplicationData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude.get.asInstanceOf[js.Any])
-    if (applicationData != null) __obj.updateDynamic("applicationData")(applicationData.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachment)) __obj.updateDynamic("attachment")(attachment.get.asInstanceOf[js.Any])
-    if (cameraMake != null) __obj.updateDynamic("cameraMake")(cameraMake.asInstanceOf[js.Any])
-    if (cameraModel != null) __obj.updateDynamic("cameraModel")(cameraModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(clientWillIndex)) __obj.updateDynamic("clientWillIndex")(clientWillIndex.get.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(latitude)) __obj.updateDynamic("latitude")(latitude.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longitude)) __obj.updateDynamic("longitude")(longitude.get.asInstanceOf[js.Any])
-    if (recoType != null) __obj.updateDynamic("recoType")(recoType.asInstanceOf[js.Any])
-    if (sourceURL != null) __obj.updateDynamic("sourceURL")(sourceURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestamp)) __obj.updateDynamic("timestamp")(timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationData]
   }
+  @scala.inline
+  implicit class ApplicationDataOps[Self <: ApplicationData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltitude(value: Double): Self = this.set("altitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAltitude: Self = this.set("altitude", js.undefined)
+    @scala.inline
+    def setApplicationData(value: LazyMap): Self = this.set("applicationData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationData: Self = this.set("applicationData", js.undefined)
+    @scala.inline
+    def setAttachment(value: Boolean): Self = this.set("attachment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachment: Self = this.set("attachment", js.undefined)
+    @scala.inline
+    def setCameraMake(value: String): Self = this.set("cameraMake", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCameraMake: Self = this.set("cameraMake", js.undefined)
+    @scala.inline
+    def setCameraModel(value: String): Self = this.set("cameraModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCameraModel: Self = this.set("cameraModel", js.undefined)
+    @scala.inline
+    def setClientWillIndex(value: Boolean): Self = this.set("clientWillIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientWillIndex: Self = this.set("clientWillIndex", js.undefined)
+    @scala.inline
+    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileName: Self = this.set("fileName", js.undefined)
+    @scala.inline
+    def setLatitude(value: Double): Self = this.set("latitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatitude: Self = this.set("latitude", js.undefined)
+    @scala.inline
+    def setLongitude(value: Double): Self = this.set("longitude", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongitude: Self = this.set("longitude", js.undefined)
+    @scala.inline
+    def setRecoType(value: String): Self = this.set("recoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecoType: Self = this.set("recoType", js.undefined)
+    @scala.inline
+    def setSourceURL(value: String): Self = this.set("sourceURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceURL: Self = this.set("sourceURL", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Double): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,50 @@ trait CreateClusterRequest extends js.Object {
 
 object CreateClusterRequest {
   @scala.inline
-  def apply(
-    capacityProviders: StringList = null,
-    clusterName: String = null,
-    defaultCapacityProviderStrategy: CapacityProviderStrategy = null,
-    settings: ClusterSettings = null,
-    tags: Tags = null
-  ): CreateClusterRequest = {
+  def apply(): CreateClusterRequest = {
     val __obj = js.Dynamic.literal()
-    if (capacityProviders != null) __obj.updateDynamic("capacityProviders")(capacityProviders.asInstanceOf[js.Any])
-    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName.asInstanceOf[js.Any])
-    if (defaultCapacityProviderStrategy != null) __obj.updateDynamic("defaultCapacityProviderStrategy")(defaultCapacityProviderStrategy.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
+  @scala.inline
+  implicit class CreateClusterRequestOps[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProvidersVarargs(value: String*): Self = this.set("capacityProviders", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviders(value: StringList): Self = this.set("capacityProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviders: Self = this.set("capacityProviders", js.undefined)
+    @scala.inline
+    def setClusterName(value: String): Self = this.set("clusterName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterName: Self = this.set("clusterName", js.undefined)
+    @scala.inline
+    def setDefaultCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("defaultCapacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setDefaultCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("defaultCapacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultCapacityProviderStrategy: Self = this.set("defaultCapacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setSettingsVarargs(value: ClusterSetting*): Self = this.set("settings", js.Array(value :_*))
+    @scala.inline
+    def setSettings(value: ClusterSettings): Self = this.set("settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("settings", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

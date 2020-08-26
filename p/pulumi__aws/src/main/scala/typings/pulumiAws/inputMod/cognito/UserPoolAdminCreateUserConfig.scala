@@ -17,22 +17,42 @@ trait UserPoolAdminCreateUserConfig extends js.Object {
   var inviteMessageTemplate: js.UndefOr[Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]] = js.native
   /**
     * **DEPRECATED** Use password_policy.temporary_password_validity_days instead - The user account expiration limit, in days, after which the account is no longer usable.
+    *
+    * @deprecated Use password_policy.temporary_password_validity_days instead
     */
   var unusedAccountValidityDays: js.UndefOr[Input[Double]] = js.native
 }
 
 object UserPoolAdminCreateUserConfig {
   @scala.inline
-  def apply(
-    allowAdminCreateUserOnly: Input[Boolean] = null,
-    inviteMessageTemplate: Input[UserPoolAdminCreateUserConfigInviteMessageTemplate] = null,
-    unusedAccountValidityDays: Input[Double] = null
-  ): UserPoolAdminCreateUserConfig = {
+  def apply(): UserPoolAdminCreateUserConfig = {
     val __obj = js.Dynamic.literal()
-    if (allowAdminCreateUserOnly != null) __obj.updateDynamic("allowAdminCreateUserOnly")(allowAdminCreateUserOnly.asInstanceOf[js.Any])
-    if (inviteMessageTemplate != null) __obj.updateDynamic("inviteMessageTemplate")(inviteMessageTemplate.asInstanceOf[js.Any])
-    if (unusedAccountValidityDays != null) __obj.updateDynamic("unusedAccountValidityDays")(unusedAccountValidityDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolAdminCreateUserConfig]
   }
+  @scala.inline
+  implicit class UserPoolAdminCreateUserConfigOps[Self <: UserPoolAdminCreateUserConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAdminCreateUserOnly(value: Input[Boolean]): Self = this.set("allowAdminCreateUserOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAdminCreateUserOnly: Self = this.set("allowAdminCreateUserOnly", js.undefined)
+    @scala.inline
+    def setInviteMessageTemplate(value: Input[UserPoolAdminCreateUserConfigInviteMessageTemplate]): Self = this.set("inviteMessageTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInviteMessageTemplate: Self = this.set("inviteMessageTemplate", js.undefined)
+    @scala.inline
+    def setUnusedAccountValidityDays(value: Input[Double]): Self = this.set("unusedAccountValidityDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnusedAccountValidityDays: Self = this.set("unusedAccountValidityDays", js.undefined)
+  }
+  
 }
 

@@ -41,20 +41,42 @@ trait SchemaDeployment extends js.Object {
 
 object SchemaDeployment {
   @scala.inline
-  def apply(
-    build: SchemaBuildInfo = null,
-    cloudBuildOptions: SchemaCloudBuildOptions = null,
-    container: SchemaContainerInfo = null,
-    files: StringDictionary[SchemaFileInfo] = null,
-    zip: SchemaZipInfo = null
-  ): SchemaDeployment = {
+  def apply(): SchemaDeployment = {
     val __obj = js.Dynamic.literal()
-    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (cloudBuildOptions != null) __obj.updateDynamic("cloudBuildOptions")(cloudBuildOptions.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeployment]
   }
+  @scala.inline
+  implicit class SchemaDeploymentOps[Self <: SchemaDeployment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuild(value: SchemaBuildInfo): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+    @scala.inline
+    def setCloudBuildOptions(value: SchemaCloudBuildOptions): Self = this.set("cloudBuildOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudBuildOptions: Self = this.set("cloudBuildOptions", js.undefined)
+    @scala.inline
+    def setContainer(value: SchemaContainerInfo): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setFiles(value: StringDictionary[SchemaFileInfo]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setZip(value: SchemaZipInfo): Self = this.set("zip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZip: Self = this.set("zip", js.undefined)
+  }
+  
 }
 

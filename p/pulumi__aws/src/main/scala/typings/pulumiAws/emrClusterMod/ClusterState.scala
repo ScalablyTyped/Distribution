@@ -70,7 +70,7 @@ trait ClusterState extends js.Object {
     */
   val ec2Attributes: js.UndefOr[Input[ClusterEc2Attributes]] = js.native
   /**
-    * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and [`aws.emr.InstanceGroup` resource(s)](https://www.terraform.io/docs/providers/aws/r/emr_instance_group.html) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
+    * Use the `masterInstanceGroup` configuration block, `coreInstanceGroup` configuration block and `aws.emr.InstanceGroup` resource(s) instead. A list of `instanceGroup` objects for each instance group in the cluster. Exactly one of `masterInstanceType` and `instanceGroup` must be specified. If `instanceGroup` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Cannot be specified if `masterInstanceGroup` or `coreInstanceGroup` configuration blocks are set. Defined below
     *
     * @deprecated use `master_instance_group` configuration block, `core_instance_group` configuration block, and `aws_emr_instance_group` resource(s) instead
     */
@@ -103,7 +103,7 @@ trait ClusterState extends js.Object {
     */
   val masterPublicDns: js.UndefOr[Input[String]] = js.native
   /**
-    * The name of the job flow
+    * The name of the step.
     */
   val name: js.UndefOr[Input[String]] = js.native
   /**
@@ -133,7 +133,7 @@ trait ClusterState extends js.Object {
   /**
     * list of tags to apply to the EMR Cluster
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Switch on/off termination protection (default is `false`, except when using multiple master nodes). Before attempting to destroy the resource when termination protection is enabled, this configuration must be applied with its value set to `false`.
     */
@@ -146,72 +146,154 @@ trait ClusterState extends js.Object {
 
 object ClusterState {
   @scala.inline
-  def apply(
-    additionalInfo: Input[String] = null,
-    applications: Input[js.Array[Input[String]]] = null,
-    arn: Input[String] = null,
-    autoscalingRole: Input[String] = null,
-    bootstrapActions: Input[js.Array[Input[ClusterBootstrapAction]]] = null,
-    clusterState: Input[String] = null,
-    configurations: Input[String] = null,
-    configurationsJson: Input[String] = null,
-    coreInstanceCount: Input[Double] = null,
-    coreInstanceGroup: Input[ClusterCoreInstanceGroup] = null,
-    coreInstanceType: Input[String] = null,
-    customAmiId: Input[String] = null,
-    ebsRootVolumeSize: Input[Double] = null,
-    ec2Attributes: Input[ClusterEc2Attributes] = null,
-    instanceGroups: Input[js.Array[Input[ClusterInstanceGroup]]] = null,
-    keepJobFlowAliveWhenNoSteps: Input[Boolean] = null,
-    kerberosAttributes: Input[ClusterKerberosAttributes] = null,
-    logUri: Input[String] = null,
-    masterInstanceGroup: Input[ClusterMasterInstanceGroup] = null,
-    masterInstanceType: Input[String] = null,
-    masterPublicDns: Input[String] = null,
-    name: Input[String] = null,
-    releaseLabel: Input[String] = null,
-    scaleDownBehavior: Input[String] = null,
-    securityConfiguration: Input[String] = null,
-    serviceRole: Input[String] = null,
-    stepConcurrencyLevel: Input[Double] = null,
-    steps: Input[js.Array[Input[ClusterStep]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    terminationProtection: Input[Boolean] = null,
-    visibleToAllUsers: Input[Boolean] = null
-  ): ClusterState = {
+  def apply(): ClusterState = {
     val __obj = js.Dynamic.literal()
-    if (additionalInfo != null) __obj.updateDynamic("additionalInfo")(additionalInfo.asInstanceOf[js.Any])
-    if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (autoscalingRole != null) __obj.updateDynamic("autoscalingRole")(autoscalingRole.asInstanceOf[js.Any])
-    if (bootstrapActions != null) __obj.updateDynamic("bootstrapActions")(bootstrapActions.asInstanceOf[js.Any])
-    if (clusterState != null) __obj.updateDynamic("clusterState")(clusterState.asInstanceOf[js.Any])
-    if (configurations != null) __obj.updateDynamic("configurations")(configurations.asInstanceOf[js.Any])
-    if (configurationsJson != null) __obj.updateDynamic("configurationsJson")(configurationsJson.asInstanceOf[js.Any])
-    if (coreInstanceCount != null) __obj.updateDynamic("coreInstanceCount")(coreInstanceCount.asInstanceOf[js.Any])
-    if (coreInstanceGroup != null) __obj.updateDynamic("coreInstanceGroup")(coreInstanceGroup.asInstanceOf[js.Any])
-    if (coreInstanceType != null) __obj.updateDynamic("coreInstanceType")(coreInstanceType.asInstanceOf[js.Any])
-    if (customAmiId != null) __obj.updateDynamic("customAmiId")(customAmiId.asInstanceOf[js.Any])
-    if (ebsRootVolumeSize != null) __obj.updateDynamic("ebsRootVolumeSize")(ebsRootVolumeSize.asInstanceOf[js.Any])
-    if (ec2Attributes != null) __obj.updateDynamic("ec2Attributes")(ec2Attributes.asInstanceOf[js.Any])
-    if (instanceGroups != null) __obj.updateDynamic("instanceGroups")(instanceGroups.asInstanceOf[js.Any])
-    if (keepJobFlowAliveWhenNoSteps != null) __obj.updateDynamic("keepJobFlowAliveWhenNoSteps")(keepJobFlowAliveWhenNoSteps.asInstanceOf[js.Any])
-    if (kerberosAttributes != null) __obj.updateDynamic("kerberosAttributes")(kerberosAttributes.asInstanceOf[js.Any])
-    if (logUri != null) __obj.updateDynamic("logUri")(logUri.asInstanceOf[js.Any])
-    if (masterInstanceGroup != null) __obj.updateDynamic("masterInstanceGroup")(masterInstanceGroup.asInstanceOf[js.Any])
-    if (masterInstanceType != null) __obj.updateDynamic("masterInstanceType")(masterInstanceType.asInstanceOf[js.Any])
-    if (masterPublicDns != null) __obj.updateDynamic("masterPublicDns")(masterPublicDns.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (releaseLabel != null) __obj.updateDynamic("releaseLabel")(releaseLabel.asInstanceOf[js.Any])
-    if (scaleDownBehavior != null) __obj.updateDynamic("scaleDownBehavior")(scaleDownBehavior.asInstanceOf[js.Any])
-    if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])
-    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
-    if (stepConcurrencyLevel != null) __obj.updateDynamic("stepConcurrencyLevel")(stepConcurrencyLevel.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (terminationProtection != null) __obj.updateDynamic("terminationProtection")(terminationProtection.asInstanceOf[js.Any])
-    if (visibleToAllUsers != null) __obj.updateDynamic("visibleToAllUsers")(visibleToAllUsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]
   }
+  @scala.inline
+  implicit class ClusterStateOps[Self <: ClusterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalInfo(value: Input[String]): Self = this.set("additionalInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalInfo: Self = this.set("additionalInfo", js.undefined)
+    @scala.inline
+    def setApplicationsVarargs(value: Input[String]*): Self = this.set("applications", js.Array(value :_*))
+    @scala.inline
+    def setApplications(value: Input[js.Array[Input[String]]]): Self = this.set("applications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplications: Self = this.set("applications", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutoscalingRole(value: Input[String]): Self = this.set("autoscalingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingRole: Self = this.set("autoscalingRole", js.undefined)
+    @scala.inline
+    def setBootstrapActionsVarargs(value: Input[ClusterBootstrapAction]*): Self = this.set("bootstrapActions", js.Array(value :_*))
+    @scala.inline
+    def setBootstrapActions(value: Input[js.Array[Input[ClusterBootstrapAction]]]): Self = this.set("bootstrapActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootstrapActions: Self = this.set("bootstrapActions", js.undefined)
+    @scala.inline
+    def setClusterState(value: Input[String]): Self = this.set("clusterState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterState: Self = this.set("clusterState", js.undefined)
+    @scala.inline
+    def setConfigurations(value: Input[String]): Self = this.set("configurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurations: Self = this.set("configurations", js.undefined)
+    @scala.inline
+    def setConfigurationsJson(value: Input[String]): Self = this.set("configurationsJson", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationsJson: Self = this.set("configurationsJson", js.undefined)
+    @scala.inline
+    def setCoreInstanceCount(value: Input[Double]): Self = this.set("coreInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoreInstanceCount: Self = this.set("coreInstanceCount", js.undefined)
+    @scala.inline
+    def setCoreInstanceGroup(value: Input[ClusterCoreInstanceGroup]): Self = this.set("coreInstanceGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoreInstanceGroup: Self = this.set("coreInstanceGroup", js.undefined)
+    @scala.inline
+    def setCoreInstanceType(value: Input[String]): Self = this.set("coreInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoreInstanceType: Self = this.set("coreInstanceType", js.undefined)
+    @scala.inline
+    def setCustomAmiId(value: Input[String]): Self = this.set("customAmiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAmiId: Self = this.set("customAmiId", js.undefined)
+    @scala.inline
+    def setEbsRootVolumeSize(value: Input[Double]): Self = this.set("ebsRootVolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsRootVolumeSize: Self = this.set("ebsRootVolumeSize", js.undefined)
+    @scala.inline
+    def setEc2Attributes(value: Input[ClusterEc2Attributes]): Self = this.set("ec2Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2Attributes: Self = this.set("ec2Attributes", js.undefined)
+    @scala.inline
+    def setInstanceGroupsVarargs(value: Input[ClusterInstanceGroup]*): Self = this.set("instanceGroups", js.Array(value :_*))
+    @scala.inline
+    def setInstanceGroups(value: Input[js.Array[Input[ClusterInstanceGroup]]]): Self = this.set("instanceGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceGroups: Self = this.set("instanceGroups", js.undefined)
+    @scala.inline
+    def setKeepJobFlowAliveWhenNoSteps(value: Input[Boolean]): Self = this.set("keepJobFlowAliveWhenNoSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepJobFlowAliveWhenNoSteps: Self = this.set("keepJobFlowAliveWhenNoSteps", js.undefined)
+    @scala.inline
+    def setKerberosAttributes(value: Input[ClusterKerberosAttributes]): Self = this.set("kerberosAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKerberosAttributes: Self = this.set("kerberosAttributes", js.undefined)
+    @scala.inline
+    def setLogUri(value: Input[String]): Self = this.set("logUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogUri: Self = this.set("logUri", js.undefined)
+    @scala.inline
+    def setMasterInstanceGroup(value: Input[ClusterMasterInstanceGroup]): Self = this.set("masterInstanceGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterInstanceGroup: Self = this.set("masterInstanceGroup", js.undefined)
+    @scala.inline
+    def setMasterInstanceType(value: Input[String]): Self = this.set("masterInstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterInstanceType: Self = this.set("masterInstanceType", js.undefined)
+    @scala.inline
+    def setMasterPublicDns(value: Input[String]): Self = this.set("masterPublicDns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterPublicDns: Self = this.set("masterPublicDns", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setReleaseLabel(value: Input[String]): Self = this.set("releaseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReleaseLabel: Self = this.set("releaseLabel", js.undefined)
+    @scala.inline
+    def setScaleDownBehavior(value: Input[String]): Self = this.set("scaleDownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleDownBehavior: Self = this.set("scaleDownBehavior", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: Input[String]): Self = this.set("securityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("securityConfiguration", js.undefined)
+    @scala.inline
+    def setServiceRole(value: Input[String]): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("serviceRole", js.undefined)
+    @scala.inline
+    def setStepConcurrencyLevel(value: Input[Double]): Self = this.set("stepConcurrencyLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepConcurrencyLevel: Self = this.set("stepConcurrencyLevel", js.undefined)
+    @scala.inline
+    def setStepsVarargs(value: Input[ClusterStep]*): Self = this.set("steps", js.Array(value :_*))
+    @scala.inline
+    def setSteps(value: Input[js.Array[Input[ClusterStep]]]): Self = this.set("steps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSteps: Self = this.set("steps", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTerminationProtection(value: Input[Boolean]): Self = this.set("terminationProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationProtection: Self = this.set("terminationProtection", js.undefined)
+    @scala.inline
+    def setVisibleToAllUsers(value: Input[Boolean]): Self = this.set("visibleToAllUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleToAllUsers: Self = this.set("visibleToAllUsers", js.undefined)
+  }
+  
 }
 

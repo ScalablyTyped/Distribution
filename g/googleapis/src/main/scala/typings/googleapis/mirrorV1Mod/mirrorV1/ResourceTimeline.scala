@@ -28,6 +28,7 @@ class ResourceTimeline protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTimelineDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTimelineDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -51,6 +52,7 @@ class ResourceTimeline protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTimelineItem] = js.native
   def get(callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTimelineItem] = js.native
   def get(params: ParamsResourceTimelineGet): GaxiosPromise[SchemaTimelineItem] = js.native
   def get(params: ParamsResourceTimelineGet, callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
   def get(
@@ -81,6 +83,7 @@ class ResourceTimeline protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaTimelineItem] = js.native
   def insert(callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTimelineItem] = js.native
   def insert(params: ParamsResourceTimelineInsert): GaxiosPromise[SchemaTimelineItem] = js.native
   def insert(params: ParamsResourceTimelineInsert, callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
   def insert(
@@ -114,6 +117,7 @@ class ResourceTimeline protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTimelineListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTimelineListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTimelineListResponse] = js.native
   def list(params: ParamsResourceTimelineList): GaxiosPromise[SchemaTimelineListResponse] = js.native
   def list(params: ParamsResourceTimelineList, callback: BodyResponseCallback[SchemaTimelineListResponse]): Unit = js.native
   def list(
@@ -143,6 +147,7 @@ class ResourceTimeline protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaTimelineItem] = js.native
   def patch(callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTimelineItem] = js.native
   def patch(params: ParamsResourceTimelinePatch): GaxiosPromise[SchemaTimelineItem] = js.native
   def patch(params: ParamsResourceTimelinePatch, callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
   def patch(
@@ -174,6 +179,7 @@ class ResourceTimeline protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaTimelineItem] = js.native
   def update(callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTimelineItem] = js.native
   def update(params: ParamsResourceTimelineUpdate): GaxiosPromise[SchemaTimelineItem] = js.native
   def update(params: ParamsResourceTimelineUpdate, callback: BodyResponseCallback[SchemaTimelineItem]): Unit = js.native
   def update(

@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridRowSelectors
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,11 +15,11 @@ trait IgGridRowSelectors
   /**
     * Event fired after a row selector checkbox had changed state.
     */
-  var checkBoxStateChanged: js.UndefOr[CheckBoxStateChangedEvent] = js.undefined
+  var checkBoxStateChanged: js.UndefOr[CheckBoxStateChangedEvent] = js.native
   /**
     * Event fired when a row selector checkbox is changing.
     */
-  var checkBoxStateChanging: js.UndefOr[CheckBoxStateChangingEvent] = js.undefined
+  var checkBoxStateChanging: js.UndefOr[CheckBoxStateChangingEvent] = js.native
   /**
     * Custom template for "deselect all" overlay with paging
     * Element with attribute data-rs-deselect-all is used for sellecting all the records
@@ -27,43 +28,43 @@ trait IgGridRowSelectors
     * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
     *
     */
-  var deselectAllForPagingTemplate: js.UndefOr[String] = js.undefined
+  var deselectAllForPagingTemplate: js.UndefOr[String] = js.native
   /**
     * Determines whether the row selectors column should contain checkboxes
     *
     */
-  var enableCheckBoxes: js.UndefOr[Boolean] = js.undefined
+  var enableCheckBoxes: js.UndefOr[Boolean] = js.native
   /**
     * Determines whether the row selectors column should contain row numbering
     *
     */
-  var enableRowNumbering: js.UndefOr[Boolean] = js.undefined
+  var enableRowNumbering: js.UndefOr[Boolean] = js.native
   /**
     * Enables/disables showing an overlay after clicking on the header checkbox, which allows selecting all records from all pages.
     *
     */
-  var enableSelectAllForPaging: js.UndefOr[Boolean] = js.undefined
+  var enableSelectAllForPaging: js.UndefOr[Boolean] = js.native
   /**
     * Enables/disables feature inheritance for the child layouts. NOTE: It only applies for igHierarchicalGrid.
     */
-  var inherit: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[IgGridRowSelectorsLocale] = js.undefined
+  var inherit: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[IgGridRowSelectorsLocale] = js.native
   /**
     * Determines whether the selection feature is required for the row selectors. If set to "false"
     * the widget will not check for Selection availability. If set to "true" an exception will be thrown if Selection is
     * not available.
     *
     */
-  var requireSelection: js.UndefOr[Boolean] = js.undefined
+  var requireSelection: js.UndefOr[Boolean] = js.native
   /**
     * The seed to be added to the default numbering
     *
     */
-  var rowNumberingSeed: js.UndefOr[Double] = js.undefined
+  var rowNumberingSeed: js.UndefOr[Double] = js.native
   /**
     * Event fired after a row selector is clicked.
     */
-  var rowSelectorClicked: js.UndefOr[RowSelectorClickedEvent] = js.undefined
+  var rowSelectorClicked: js.UndefOr[RowSelectorClickedEvent] = js.native
   /**
     * defines width of the row selector`s column in pixels or percentage.
     *
@@ -73,7 +74,7 @@ trait IgGridRowSelectors
     * "number" The row selector width can be set as a number
     * "null" will let the feature decide the best width depending on enabled contents
     */
-  var rowSelectorColumnWidth: js.UndefOr[String | Double] = js.undefined
+  var rowSelectorColumnWidth: js.UndefOr[String | Double] = js.native
   /**
     * Custom template for "select all" overlay with paging
     * Element with attribute data-rs-select-all is used for sellecting all the records
@@ -82,50 +83,88 @@ trait IgGridRowSelectors
     * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
     *
     */
-  var selectAllForPagingTemplate: js.UndefOr[String] = js.undefined
+  var selectAllForPagingTemplate: js.UndefOr[String] = js.native
   /**
     * Determines whether checkboxes will be shown only if row selectors are on focus/selected.
     *
     */
-  var showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.undefined
+  var showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.native
 }
 
 object IgGridRowSelectors {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    checkBoxStateChanged: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit = null,
-    checkBoxStateChanging: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit = null,
-    deselectAllForPagingTemplate: String = null,
-    enableCheckBoxes: js.UndefOr[Boolean] = js.undefined,
-    enableRowNumbering: js.UndefOr[Boolean] = js.undefined,
-    enableSelectAllForPaging: js.UndefOr[Boolean] = js.undefined,
-    inherit: js.UndefOr[Boolean] = js.undefined,
-    locale: IgGridRowSelectorsLocale = null,
-    requireSelection: js.UndefOr[Boolean] = js.undefined,
-    rowNumberingSeed: js.UndefOr[Double] = js.undefined,
-    rowSelectorClicked: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit = null,
-    rowSelectorColumnWidth: String | Double = null,
-    selectAllForPagingTemplate: String = null,
-    showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.undefined
-  ): IgGridRowSelectors = {
+  def apply(): IgGridRowSelectors = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkBoxStateChanged != null) __obj.updateDynamic("checkBoxStateChanged")(js.Any.fromFunction2(checkBoxStateChanged))
-    if (checkBoxStateChanging != null) __obj.updateDynamic("checkBoxStateChanging")(js.Any.fromFunction2(checkBoxStateChanging))
-    if (deselectAllForPagingTemplate != null) __obj.updateDynamic("deselectAllForPagingTemplate")(deselectAllForPagingTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCheckBoxes)) __obj.updateDynamic("enableCheckBoxes")(enableCheckBoxes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowNumbering)) __obj.updateDynamic("enableRowNumbering")(enableRowNumbering.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectAllForPaging)) __obj.updateDynamic("enableSelectAllForPaging")(enableSelectAllForPaging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSelection)) __obj.updateDynamic("requireSelection")(requireSelection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowNumberingSeed)) __obj.updateDynamic("rowNumberingSeed")(rowNumberingSeed.get.asInstanceOf[js.Any])
-    if (rowSelectorClicked != null) __obj.updateDynamic("rowSelectorClicked")(js.Any.fromFunction2(rowSelectorClicked))
-    if (rowSelectorColumnWidth != null) __obj.updateDynamic("rowSelectorColumnWidth")(rowSelectorColumnWidth.asInstanceOf[js.Any])
-    if (selectAllForPagingTemplate != null) __obj.updateDynamic("selectAllForPagingTemplate")(selectAllForPagingTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckBoxesOnFocus)) __obj.updateDynamic("showCheckBoxesOnFocus")(showCheckBoxesOnFocus.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridRowSelectors]
   }
+  @scala.inline
+  implicit class IgGridRowSelectorsOps[Self <: IgGridRowSelectors] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit): Self = this.set("checkBoxStateChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCheckBoxStateChanged: Self = this.set("checkBoxStateChanged", js.undefined)
+    @scala.inline
+    def setCheckBoxStateChanging(value: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Unit): Self = this.set("checkBoxStateChanging", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCheckBoxStateChanging: Self = this.set("checkBoxStateChanging", js.undefined)
+    @scala.inline
+    def setDeselectAllForPagingTemplate(value: String): Self = this.set("deselectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeselectAllForPagingTemplate: Self = this.set("deselectAllForPagingTemplate", js.undefined)
+    @scala.inline
+    def setEnableCheckBoxes(value: Boolean): Self = this.set("enableCheckBoxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCheckBoxes: Self = this.set("enableCheckBoxes", js.undefined)
+    @scala.inline
+    def setEnableRowNumbering(value: Boolean): Self = this.set("enableRowNumbering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableRowNumbering: Self = this.set("enableRowNumbering", js.undefined)
+    @scala.inline
+    def setEnableSelectAllForPaging(value: Boolean): Self = this.set("enableSelectAllForPaging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSelectAllForPaging: Self = this.set("enableSelectAllForPaging", js.undefined)
+    @scala.inline
+    def setInherit(value: Boolean): Self = this.set("inherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInherit: Self = this.set("inherit", js.undefined)
+    @scala.inline
+    def setLocale(value: IgGridRowSelectorsLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setRequireSelection(value: Boolean): Self = this.set("requireSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireSelection: Self = this.set("requireSelection", js.undefined)
+    @scala.inline
+    def setRowNumberingSeed(value: Double): Self = this.set("rowNumberingSeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowNumberingSeed: Self = this.set("rowNumberingSeed", js.undefined)
+    @scala.inline
+    def setRowSelectorClicked(value: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Unit): Self = this.set("rowSelectorClicked", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRowSelectorClicked: Self = this.set("rowSelectorClicked", js.undefined)
+    @scala.inline
+    def setRowSelectorColumnWidth(value: String | Double): Self = this.set("rowSelectorColumnWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSelectorColumnWidth: Self = this.set("rowSelectorColumnWidth", js.undefined)
+    @scala.inline
+    def setSelectAllForPagingTemplate(value: String): Self = this.set("selectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectAllForPagingTemplate: Self = this.set("selectAllForPagingTemplate", js.undefined)
+    @scala.inline
+    def setShowCheckBoxesOnFocus(value: Boolean): Self = this.set("showCheckBoxesOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCheckBoxesOnFocus: Self = this.set("showCheckBoxesOnFocus", js.undefined)
+  }
+  
 }
 

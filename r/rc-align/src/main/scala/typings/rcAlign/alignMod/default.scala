@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-align/lib/Align", JSImport.Default)
+@JSImport("rc-align/es/Align", JSImport.Default)
 @js.native
 object default extends TopLevel[ForwardRefExoticComponent[AlignProps with RefAttributes[RefAlign]]]
 

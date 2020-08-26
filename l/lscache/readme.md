@@ -12,7 +12,7 @@ A simple library that emulates memcache functions using HTML5 localStorage
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 28 |
-| # downloads        | 600271 |
+| # downloads        | 610497 |
 | # stars            | 3 |
 
 ## Links

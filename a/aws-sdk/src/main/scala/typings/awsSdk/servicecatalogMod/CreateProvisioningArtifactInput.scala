@@ -26,15 +26,32 @@ trait CreateProvisioningArtifactInput extends js.Object {
 
 object CreateProvisioningArtifactInput {
   @scala.inline
-  def apply(
-    IdempotencyToken: IdempotencyToken,
-    Parameters: ProvisioningArtifactProperties,
-    ProductId: Id,
-    AcceptLanguage: AcceptLanguage = null
-  ): CreateProvisioningArtifactInput = {
+  def apply(IdempotencyToken: IdempotencyToken, Parameters: ProvisioningArtifactProperties, ProductId: Id): CreateProvisioningArtifactInput = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any], ProductId = ProductId.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProvisioningArtifactInput]
   }
+  @scala.inline
+  implicit class CreateProvisioningArtifactInputOps[Self <: CreateProvisioningArtifactInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParameters(value: ProvisioningArtifactProperties): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProductId(value: Id): Self = this.set("ProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+  }
+  
 }
 

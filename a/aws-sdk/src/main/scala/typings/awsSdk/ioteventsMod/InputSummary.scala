@@ -34,22 +34,46 @@ trait InputSummary extends js.Object {
 
 object InputSummary {
   @scala.inline
-  def apply(
-    creationTime: Timestamp = null,
-    inputArn: InputArn = null,
-    inputDescription: InputDescription = null,
-    inputName: InputName = null,
-    lastUpdateTime: Timestamp = null,
-    status: InputStatus = null
-  ): InputSummary = {
+  def apply(): InputSummary = {
     val __obj = js.Dynamic.literal()
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (inputArn != null) __obj.updateDynamic("inputArn")(inputArn.asInstanceOf[js.Any])
-    if (inputDescription != null) __obj.updateDynamic("inputDescription")(inputDescription.asInstanceOf[js.Any])
-    if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSummary]
   }
+  @scala.inline
+  implicit class InputSummaryOps[Self <: InputSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setInputArn(value: InputArn): Self = this.set("inputArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputArn: Self = this.set("inputArn", js.undefined)
+    @scala.inline
+    def setInputDescription(value: InputDescription): Self = this.set("inputDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDescription: Self = this.set("inputDescription", js.undefined)
+    @scala.inline
+    def setInputName(value: InputName): Self = this.set("inputName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputName: Self = this.set("inputName", js.undefined)
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setStatus(value: InputStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait FecOutputSettings extends js.Object {
 
 object FecOutputSettings {
   @scala.inline
-  def apply(
-    ColumnDepth: js.UndefOr[integerMin4Max20] = js.undefined,
-    IncludeFec: FecOutputIncludeFec = null,
-    RowLength: js.UndefOr[integerMin1Max20] = js.undefined
-  ): FecOutputSettings = {
+  def apply(): FecOutputSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ColumnDepth)) __obj.updateDynamic("ColumnDepth")(ColumnDepth.get.asInstanceOf[js.Any])
-    if (IncludeFec != null) __obj.updateDynamic("IncludeFec")(IncludeFec.asInstanceOf[js.Any])
-    if (!js.isUndefined(RowLength)) __obj.updateDynamic("RowLength")(RowLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FecOutputSettings]
   }
+  @scala.inline
+  implicit class FecOutputSettingsOps[Self <: FecOutputSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnDepth(value: integerMin4Max20): Self = this.set("ColumnDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnDepth: Self = this.set("ColumnDepth", js.undefined)
+    @scala.inline
+    def setIncludeFec(value: FecOutputIncludeFec): Self = this.set("IncludeFec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeFec: Self = this.set("IncludeFec", js.undefined)
+    @scala.inline
+    def setRowLength(value: integerMin1Max20): Self = this.set("RowLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowLength: Self = this.set("RowLength", js.undefined)
+  }
+  
 }
 

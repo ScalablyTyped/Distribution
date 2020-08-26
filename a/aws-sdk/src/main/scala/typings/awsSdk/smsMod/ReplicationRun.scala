@@ -54,32 +54,66 @@ trait ReplicationRun extends js.Object {
 
 object ReplicationRun {
   @scala.inline
-  def apply(
-    amiId: AmiId = null,
-    completedTime: Timestamp = null,
-    description: Description = null,
-    encrypted: js.UndefOr[Encrypted] = js.undefined,
-    kmsKeyId: KmsKeyId = null,
-    replicationRunId: ReplicationRunId = null,
-    scheduledStartTime: Timestamp = null,
-    stageDetails: ReplicationRunStageDetails = null,
-    state: ReplicationRunState = null,
-    statusMessage: ReplicationRunStatusMessage = null,
-    `type`: ReplicationRunType = null
-  ): ReplicationRun = {
+  def apply(): ReplicationRun = {
     val __obj = js.Dynamic.literal()
-    if (amiId != null) __obj.updateDynamic("amiId")(amiId.asInstanceOf[js.Any])
-    if (completedTime != null) __obj.updateDynamic("completedTime")(completedTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(encrypted)) __obj.updateDynamic("encrypted")(encrypted.get.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (replicationRunId != null) __obj.updateDynamic("replicationRunId")(replicationRunId.asInstanceOf[js.Any])
-    if (scheduledStartTime != null) __obj.updateDynamic("scheduledStartTime")(scheduledStartTime.asInstanceOf[js.Any])
-    if (stageDetails != null) __obj.updateDynamic("stageDetails")(stageDetails.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationRun]
   }
+  @scala.inline
+  implicit class ReplicationRunOps[Self <: ReplicationRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmiId(value: AmiId): Self = this.set("amiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmiId: Self = this.set("amiId", js.undefined)
+    @scala.inline
+    def setCompletedTime(value: Timestamp): Self = this.set("completedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedTime: Self = this.set("completedTime", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Encrypted): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setReplicationRunId(value: ReplicationRunId): Self = this.set("replicationRunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationRunId: Self = this.set("replicationRunId", js.undefined)
+    @scala.inline
+    def setScheduledStartTime(value: Timestamp): Self = this.set("scheduledStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledStartTime: Self = this.set("scheduledStartTime", js.undefined)
+    @scala.inline
+    def setStageDetails(value: ReplicationRunStageDetails): Self = this.set("stageDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageDetails: Self = this.set("stageDetails", js.undefined)
+    @scala.inline
+    def setState(value: ReplicationRunState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: ReplicationRunStatusMessage): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setType(value: ReplicationRunType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

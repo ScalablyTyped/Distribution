@@ -67,6 +67,7 @@ trait FieldInfo
   var tooltip: String = js.native
   /**
     * Indicates whether the field is visible in the popup window.
+    * > As of version 4.16, the default [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) has been improved to no longer display system fields that do not hold significant value, e.g. `Shape__Area` and `Shape__Length` are two fields that no longer display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html#visible)
     *

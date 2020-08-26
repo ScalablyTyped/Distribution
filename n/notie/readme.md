@@ -11,7 +11,7 @@ notie - a clean and simple notification, input, and selection suite for javascri
 | Keywords           | javascript, notification, alert, prompt, confirm, growl, toast, message |
 | # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 230830 |
+| # downloads        | 211720 |
 | # stars            | 5 |
 
 ## Links

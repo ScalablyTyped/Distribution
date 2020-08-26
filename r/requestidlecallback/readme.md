@@ -12,7 +12,7 @@ A polyfill for the requestIdleCallback.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 10 |
-| # downloads        | 1444109 |
+| # downloads        | 1589486 |
 | # stars            | 2 |
 
 ## Links

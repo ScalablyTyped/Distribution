@@ -30,6 +30,7 @@ class ResourcePlayers protected () extends js.Object {
     */
   def hide(): GaxiosPromise[Unit] = js.native
   def hide(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def hide(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def hide(params: ParamsResourcePlayersHide): GaxiosPromise[Unit] = js.native
   def hide(params: ParamsResourcePlayersHide, callback: BodyResponseCallback[Unit]): Unit = js.native
   def hide(
@@ -56,6 +57,7 @@ class ResourcePlayers protected () extends js.Object {
     */
   def unhide(): GaxiosPromise[Unit] = js.native
   def unhide(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def unhide(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unhide(params: ParamsResourcePlayersUnhide): GaxiosPromise[Unit] = js.native
   def unhide(params: ParamsResourcePlayersUnhide, callback: BodyResponseCallback[Unit]): Unit = js.native
   def unhide(

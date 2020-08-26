@@ -54,36 +54,78 @@ trait DashPackage extends js.Object {
 
 object DashPackage {
   @scala.inline
-  def apply(
-    AdTriggers: AdTriggers = null,
-    AdsOnDeliveryRestrictions: AdsOnDeliveryRestrictions = null,
-    Encryption: DashEncryption = null,
-    ManifestLayout: ManifestLayout = null,
-    ManifestWindowSeconds: js.UndefOr[integer] = js.undefined,
-    MinBufferTimeSeconds: js.UndefOr[integer] = js.undefined,
-    MinUpdatePeriodSeconds: js.UndefOr[integer] = js.undefined,
-    PeriodTriggers: listOfPeriodTriggersElement = null,
-    Profile: Profile = null,
-    SegmentDurationSeconds: js.UndefOr[integer] = js.undefined,
-    SegmentTemplateFormat: SegmentTemplateFormat = null,
-    StreamSelection: StreamSelection = null,
-    SuggestedPresentationDelaySeconds: js.UndefOr[integer] = js.undefined
-  ): DashPackage = {
+  def apply(): DashPackage = {
     val __obj = js.Dynamic.literal()
-    if (AdTriggers != null) __obj.updateDynamic("AdTriggers")(AdTriggers.asInstanceOf[js.Any])
-    if (AdsOnDeliveryRestrictions != null) __obj.updateDynamic("AdsOnDeliveryRestrictions")(AdsOnDeliveryRestrictions.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (ManifestLayout != null) __obj.updateDynamic("ManifestLayout")(ManifestLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(ManifestWindowSeconds)) __obj.updateDynamic("ManifestWindowSeconds")(ManifestWindowSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinBufferTimeSeconds)) __obj.updateDynamic("MinBufferTimeSeconds")(MinBufferTimeSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinUpdatePeriodSeconds)) __obj.updateDynamic("MinUpdatePeriodSeconds")(MinUpdatePeriodSeconds.get.asInstanceOf[js.Any])
-    if (PeriodTriggers != null) __obj.updateDynamic("PeriodTriggers")(PeriodTriggers.asInstanceOf[js.Any])
-    if (Profile != null) __obj.updateDynamic("Profile")(Profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(SegmentDurationSeconds)) __obj.updateDynamic("SegmentDurationSeconds")(SegmentDurationSeconds.get.asInstanceOf[js.Any])
-    if (SegmentTemplateFormat != null) __obj.updateDynamic("SegmentTemplateFormat")(SegmentTemplateFormat.asInstanceOf[js.Any])
-    if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(SuggestedPresentationDelaySeconds)) __obj.updateDynamic("SuggestedPresentationDelaySeconds")(SuggestedPresentationDelaySeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashPackage]
   }
+  @scala.inline
+  implicit class DashPackageOps[Self <: DashPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdTriggersVarargs(value: AdTriggersElement*): Self = this.set("AdTriggers", js.Array(value :_*))
+    @scala.inline
+    def setAdTriggers(value: AdTriggers): Self = this.set("AdTriggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdTriggers: Self = this.set("AdTriggers", js.undefined)
+    @scala.inline
+    def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = this.set("AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdsOnDeliveryRestrictions: Self = this.set("AdsOnDeliveryRestrictions", js.undefined)
+    @scala.inline
+    def setEncryption(value: DashEncryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setManifestLayout(value: ManifestLayout): Self = this.set("ManifestLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestLayout: Self = this.set("ManifestLayout", js.undefined)
+    @scala.inline
+    def setManifestWindowSeconds(value: integer): Self = this.set("ManifestWindowSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestWindowSeconds: Self = this.set("ManifestWindowSeconds", js.undefined)
+    @scala.inline
+    def setMinBufferTimeSeconds(value: integer): Self = this.set("MinBufferTimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinBufferTimeSeconds: Self = this.set("MinBufferTimeSeconds", js.undefined)
+    @scala.inline
+    def setMinUpdatePeriodSeconds(value: integer): Self = this.set("MinUpdatePeriodSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinUpdatePeriodSeconds: Self = this.set("MinUpdatePeriodSeconds", js.undefined)
+    @scala.inline
+    def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = this.set("PeriodTriggers", js.Array(value :_*))
+    @scala.inline
+    def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = this.set("PeriodTriggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodTriggers: Self = this.set("PeriodTriggers", js.undefined)
+    @scala.inline
+    def setProfile(value: Profile): Self = this.set("Profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("Profile", js.undefined)
+    @scala.inline
+    def setSegmentDurationSeconds(value: integer): Self = this.set("SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDurationSeconds: Self = this.set("SegmentDurationSeconds", js.undefined)
+    @scala.inline
+    def setSegmentTemplateFormat(value: SegmentTemplateFormat): Self = this.set("SegmentTemplateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentTemplateFormat: Self = this.set("SegmentTemplateFormat", js.undefined)
+    @scala.inline
+    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+    @scala.inline
+    def setSuggestedPresentationDelaySeconds(value: integer): Self = this.set("SuggestedPresentationDelaySeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedPresentationDelaySeconds: Self = this.set("SuggestedPresentationDelaySeconds", js.undefined)
+  }
+  
 }
 

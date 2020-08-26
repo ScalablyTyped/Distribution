@@ -1,7 +1,6 @@
 package typings.mfiles.global.MFiles
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.mfiles.IStrings
 import typings.mfiles.IVerifyVaultJobOutput
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -9,10 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.VerifyVaultJobOutput")
 @js.native
-class VerifyVaultJobOutput () extends IVerifyVaultJobOutput {
-  /* CompleteClass */
-  override val Errors: IStrings = js.native
-}
+class VerifyVaultJobOutput () extends IVerifyVaultJobOutput
 
 @JSGlobal("MFiles.VerifyVaultJobOutput")
 @js.native

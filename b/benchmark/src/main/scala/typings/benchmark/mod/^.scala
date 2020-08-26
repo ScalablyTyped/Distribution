@@ -47,6 +47,7 @@ object ^ extends js.Object {
   def invoke(benches: js.Array[Benchmark], name: String, args: js.Any*): js.Array[_] = js.native
   def invoke(benches: js.Array[Benchmark], name: js.Object, args: js.Any*): js.Array[_] = js.native
   def join(obj: js.Object): String = js.native
+  def join(obj: js.Object, separator1: js.UndefOr[scala.Nothing], separator2: String): String = js.native
   def join(obj: js.Object, separator1: String): String = js.native
   def join(obj: js.Object, separator1: String, separator2: String): String = js.native
   def map[T, K](arr: js.Array[T], callback: js.Function1[/* value */ T, K]): js.Array[K] = js.native

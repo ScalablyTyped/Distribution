@@ -22,12 +22,36 @@ trait EstimateTemplateCostInput extends js.Object {
 
 object EstimateTemplateCostInput {
   @scala.inline
-  def apply(Parameters: Parameters = null, TemplateBody: TemplateBody = null, TemplateURL: TemplateURL = null): EstimateTemplateCostInput = {
+  def apply(): EstimateTemplateCostInput = {
     val __obj = js.Dynamic.literal()
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
-    if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[EstimateTemplateCostInput]
   }
+  @scala.inline
+  implicit class EstimateTemplateCostInputOps[Self <: EstimateTemplateCostInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    @scala.inline
+    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
+  }
+  
 }
 

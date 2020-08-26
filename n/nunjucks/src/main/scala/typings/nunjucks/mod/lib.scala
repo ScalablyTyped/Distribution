@@ -14,10 +14,6 @@ object lib extends js.Object {
     var cause: js.UndefOr[Error] = js.native
     var colno: Double = js.native
     var lineno: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     @JSName("stack")
     var stack_TemplateError: String = js.native
   }

@@ -101,6 +101,7 @@ class ResourceResourcerecordsets protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaResourceRecordSetsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
   def list(params: ParamsResourceResourcerecordsetsList): GaxiosPromise[SchemaResourceRecordSetsListResponse] = js.native
   def list(
     params: ParamsResourceResourcerecordsetsList,

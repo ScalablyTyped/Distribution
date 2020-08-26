@@ -50,27 +50,56 @@ trait ApnsVoipChannelArgs extends js.Object {
 
 object ApnsVoipChannelArgs {
   @scala.inline
-  def apply(
-    applicationId: Input[String],
-    bundleId: Input[String] = null,
-    certificate: Input[String] = null,
-    defaultAuthenticationMethod: Input[String] = null,
-    enabled: Input[Boolean] = null,
-    privateKey: Input[String] = null,
-    teamId: Input[String] = null,
-    tokenKey: Input[String] = null,
-    tokenKeyId: Input[String] = null
-  ): ApnsVoipChannelArgs = {
+  def apply(applicationId: Input[String]): ApnsVoipChannelArgs = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (defaultAuthenticationMethod != null) __obj.updateDynamic("defaultAuthenticationMethod")(defaultAuthenticationMethod.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
-    if (tokenKey != null) __obj.updateDynamic("tokenKey")(tokenKey.asInstanceOf[js.Any])
-    if (tokenKeyId != null) __obj.updateDynamic("tokenKeyId")(tokenKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApnsVoipChannelArgs]
   }
+  @scala.inline
+  implicit class ApnsVoipChannelArgsOps[Self <: ApnsVoipChannelArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Input[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBundleId(value: Input[String]): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setCertificate(value: Input[String]): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("certificate", js.undefined)
+    @scala.inline
+    def setDefaultAuthenticationMethod(value: Input[String]): Self = this.set("defaultAuthenticationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAuthenticationMethod: Self = this.set("defaultAuthenticationMethod", js.undefined)
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setPrivateKey(value: Input[String]): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    @scala.inline
+    def setTeamId(value: Input[String]): Self = this.set("teamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamId: Self = this.set("teamId", js.undefined)
+    @scala.inline
+    def setTokenKey(value: Input[String]): Self = this.set("tokenKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenKey: Self = this.set("tokenKey", js.undefined)
+    @scala.inline
+    def setTokenKeyId(value: Input[String]): Self = this.set("tokenKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenKeyId: Self = this.set("tokenKeyId", js.undefined)
+  }
+  
 }
 

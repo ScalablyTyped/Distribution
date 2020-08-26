@@ -13,15 +13,16 @@ import scala.scalajs.js.annotation._
   * Component events are provided **only** for notification purposes. Moves and resizes will be handled internally by the window component, so that GUI
   * layout works properly regardless of whether a program registers such a listener or not.
   */
+@js.native
 trait XWindowListener extends XEventListener {
   /** is invoked when the window has been hidden. */
-  def windowHidden(e: EventObject): Unit
+  def windowHidden(e: EventObject): Unit = js.native
   /** is invoked when the window has been moved. */
-  def windowMoved(e: WindowEvent): Unit
+  def windowMoved(e: WindowEvent): Unit = js.native
   /** is invoked when the window has been resized. */
-  def windowResized(e: WindowEvent): Unit
+  def windowResized(e: WindowEvent): Unit = js.native
   /** is invoked when the window has been shown. */
-  def windowShown(e: EventObject): Unit
+  def windowShown(e: EventObject): Unit = js.native
 }
 
 object XWindowListener {
@@ -39,5 +40,26 @@ object XWindowListener {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), windowHidden = js.Any.fromFunction1(windowHidden), windowMoved = js.Any.fromFunction1(windowMoved), windowResized = js.Any.fromFunction1(windowResized), windowShown = js.Any.fromFunction1(windowShown))
     __obj.asInstanceOf[XWindowListener]
   }
+  @scala.inline
+  implicit class XWindowListenerOps[Self <: XWindowListener] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWindowHidden(value: EventObject => Unit): Self = this.set("windowHidden", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWindowMoved(value: WindowEvent => Unit): Self = this.set("windowMoved", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWindowResized(value: WindowEvent => Unit): Self = this.set("windowResized", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWindowShown(value: EventObject => Unit): Self = this.set("windowShown", js.Any.fromFunction1(value))
+  }
+  
 }
 

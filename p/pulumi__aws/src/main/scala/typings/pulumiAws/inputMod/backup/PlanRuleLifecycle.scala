@@ -19,11 +19,30 @@ trait PlanRuleLifecycle extends js.Object {
 
 object PlanRuleLifecycle {
   @scala.inline
-  def apply(coldStorageAfter: Input[Double] = null, deleteAfter: Input[Double] = null): PlanRuleLifecycle = {
+  def apply(): PlanRuleLifecycle = {
     val __obj = js.Dynamic.literal()
-    if (coldStorageAfter != null) __obj.updateDynamic("coldStorageAfter")(coldStorageAfter.asInstanceOf[js.Any])
-    if (deleteAfter != null) __obj.updateDynamic("deleteAfter")(deleteAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlanRuleLifecycle]
   }
+  @scala.inline
+  implicit class PlanRuleLifecycleOps[Self <: PlanRuleLifecycle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColdStorageAfter(value: Input[Double]): Self = this.set("coldStorageAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColdStorageAfter: Self = this.set("coldStorageAfter", js.undefined)
+    @scala.inline
+    def setDeleteAfter(value: Input[Double]): Self = this.set("deleteAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteAfter: Self = this.set("deleteAfter", js.undefined)
+  }
+  
 }
 

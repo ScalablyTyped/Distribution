@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object params extends js.Object {
   def apply(maxtime: Double): js.Promise[Params_] = js.native
   def apply(maxtime: Double, cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]): Unit = js.native
+  def apply(maxtime: Double, maxmem: js.UndefOr[scala.Nothing], maxmemfrac: Double): js.Promise[Params_] = js.native
   def apply(maxtime: Double, maxmem: Double): js.Promise[Params_] = js.native
   def apply(maxtime: Double, maxmem: Double, cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]): Unit = js.native
   def apply(maxtime: Double, maxmem: Double, maxmemfrac: Double): js.Promise[Params_] = js.native

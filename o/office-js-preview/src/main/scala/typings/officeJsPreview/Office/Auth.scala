@@ -36,6 +36,7 @@ trait Auth extends js.Object {
     */
   def getAccessTokenAsync(): Unit = js.native
   def getAccessTokenAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getAccessTokenAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getAccessTokenAsync(options: AuthOptions): Unit = js.native
   def getAccessTokenAsync(options: AuthOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
 }

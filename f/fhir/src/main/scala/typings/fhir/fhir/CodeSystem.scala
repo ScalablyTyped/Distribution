@@ -8,297 +8,380 @@ import scala.scalajs.js.annotation._
   * A set of codes drawn from one or more code systems
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait CodeSystem extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait CodeSystem extends DomainResource {
   /**
     * Contains extended information for property 'caseSensitive'.
     */
-  var _caseSensitive: js.UndefOr[Element] = js.undefined
+  var _caseSensitive: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'compositional'.
     */
-  var _compositional: js.UndefOr[Element] = js.undefined
+  var _compositional: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'content'.
     */
-  var _content: js.UndefOr[Element] = js.undefined
+  var _content: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'copyright'.
     */
-  var _copyright: js.UndefOr[Element] = js.undefined
+  var _copyright: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'count'.
     */
-  var _count: js.UndefOr[Element] = js.undefined
+  var _count: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.undefined
+  var _experimental: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'hierarchyMeaning'.
     */
-  var _hierarchyMeaning: js.UndefOr[Element] = js.undefined
+  var _hierarchyMeaning: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.undefined
+  var _publisher: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'purpose'.
     */
-  var _purpose: js.UndefOr[Element] = js.undefined
+  var _purpose: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.undefined
+  var _title: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.undefined
+  var _url: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'valueSet'.
     */
-  var _valueSet: js.UndefOr[Element] = js.undefined
+  var _valueSet: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.undefined
+  var _version: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'versionNeeded'.
     */
-  var _versionNeeded: js.UndefOr[Element] = js.undefined
+  var _versionNeeded: js.UndefOr[Element] = js.native
   /**
     * If code comparison is case sensitive
     */
-  var caseSensitive: js.UndefOr[Boolean] = js.undefined
+  var caseSensitive: js.UndefOr[Boolean] = js.native
   /**
     * If code system defines a post-composition grammar
     */
-  var compositional: js.UndefOr[Boolean] = js.undefined
+  var compositional: js.UndefOr[Boolean] = js.native
   /**
     * Concepts in the code system
     */
-  var concept: js.UndefOr[js.Array[CodeSystemConcept]] = js.undefined
+  var concept: js.UndefOr[js.Array[CodeSystemConcept]] = js.native
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
   /**
     * not-present | example | fragment | complete
     */
-  var content: code
+  var content: code = js.native
   /**
     * Use and/or publishing restrictions
     */
-  var copyright: js.UndefOr[markdown] = js.undefined
+  var copyright: js.UndefOr[markdown] = js.native
   /**
     * Total concepts in the code system
     */
-  var count: js.UndefOr[unsignedInt] = js.undefined
+  var count: js.UndefOr[unsignedInt] = js.native
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.undefined
+  var date: js.UndefOr[dateTime] = js.native
   /**
     * Natural language description of the code system
     */
-  var description: js.UndefOr[markdown] = js.undefined
+  var description: js.UndefOr[markdown] = js.native
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.undefined
+  var experimental: js.UndefOr[Boolean] = js.native
   /**
     * Filter that can be used in a value set
     */
-  var filter: js.UndefOr[js.Array[CodeSystemFilter]] = js.undefined
+  var filter: js.UndefOr[js.Array[CodeSystemFilter]] = js.native
   /**
     * grouped-by | is-a | part-of | classified-with
     */
-  var hierarchyMeaning: js.UndefOr[code] = js.undefined
+  var hierarchyMeaning: js.UndefOr[code] = js.native
   /**
     * Additional identifier for the code system
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Intended jurisdiction for code system (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Name for this code system (computer friendly)
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Additional information supplied about each concept
     */
-  var property: js.UndefOr[js.Array[CodeSystemProperty]] = js.undefined
+  var property: js.UndefOr[js.Array[CodeSystemProperty]] = js.native
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.undefined
+  var publisher: js.UndefOr[String] = js.native
   /**
     * Why this code system is defined
     */
-  var purpose: js.UndefOr[markdown] = js.undefined
+  var purpose: js.UndefOr[markdown] = js.native
   /**
     * draft | active | retired | unknown
     */
-  var status: code
+  var status: code = js.native
   /**
     * Name for this code system (human friendly)
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
   /**
     * Logical URI to reference this code system (globally unique) (Coding.system)
     */
-  var url: js.UndefOr[uri] = js.undefined
+  var url: js.UndefOr[uri] = js.native
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
   /**
     * Canonical URL for value set with entire code system
     */
-  var valueSet: js.UndefOr[uri] = js.undefined
+  var valueSet: js.UndefOr[uri] = js.native
   /**
     * Business version of the code system (Coding.version)
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
   /**
     * If definitions are not stable
     */
-  var versionNeeded: js.UndefOr[Boolean] = js.undefined
+  var versionNeeded: js.UndefOr[Boolean] = js.native
 }
 
 object CodeSystem {
   @scala.inline
-  def apply(
-    content: code,
-    status: code,
-    _caseSensitive: Element = null,
-    _compositional: Element = null,
-    _content: Element = null,
-    _copyright: Element = null,
-    _count: Element = null,
-    _date: Element = null,
-    _description: Element = null,
-    _experimental: Element = null,
-    _hierarchyMeaning: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _name: Element = null,
-    _publisher: Element = null,
-    _purpose: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    _title: Element = null,
-    _url: Element = null,
-    _valueSet: Element = null,
-    _version: Element = null,
-    _versionNeeded: Element = null,
-    caseSensitive: js.UndefOr[Boolean] = js.undefined,
-    compositional: js.UndefOr[Boolean] = js.undefined,
-    concept: js.Array[CodeSystemConcept] = null,
-    contact: js.Array[ContactDetail] = null,
-    contained: js.Array[Resource] = null,
-    copyright: markdown = null,
-    count: js.UndefOr[unsignedInt] = js.undefined,
-    date: dateTime = null,
-    description: markdown = null,
-    experimental: js.UndefOr[Boolean] = js.undefined,
-    extension: js.Array[Extension] = null,
-    filter: js.Array[CodeSystemFilter] = null,
-    hierarchyMeaning: code = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    jurisdiction: js.Array[CodeableConcept] = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: String = null,
-    property: js.Array[CodeSystemProperty] = null,
-    publisher: String = null,
-    purpose: markdown = null,
-    resourceType: code = null,
-    text: Narrative = null,
-    title: String = null,
-    url: uri = null,
-    useContext: js.Array[UsageContext] = null,
-    valueSet: uri = null,
-    version: String = null,
-    versionNeeded: js.UndefOr[Boolean] = js.undefined
-  ): CodeSystem = {
+  def apply(content: code, status: code): CodeSystem = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    if (_caseSensitive != null) __obj.updateDynamic("_caseSensitive")(_caseSensitive.asInstanceOf[js.Any])
-    if (_compositional != null) __obj.updateDynamic("_compositional")(_compositional.asInstanceOf[js.Any])
-    if (_content != null) __obj.updateDynamic("_content")(_content.asInstanceOf[js.Any])
-    if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright.asInstanceOf[js.Any])
-    if (_count != null) __obj.updateDynamic("_count")(_count.asInstanceOf[js.Any])
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental.asInstanceOf[js.Any])
-    if (_hierarchyMeaning != null) __obj.updateDynamic("_hierarchyMeaning")(_hierarchyMeaning.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher.asInstanceOf[js.Any])
-    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_title != null) __obj.updateDynamic("_title")(_title.asInstanceOf[js.Any])
-    if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
-    if (_valueSet != null) __obj.updateDynamic("_valueSet")(_valueSet.asInstanceOf[js.Any])
-    if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (_versionNeeded != null) __obj.updateDynamic("_versionNeeded")(_versionNeeded.asInstanceOf[js.Any])
-    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(compositional)) __obj.updateDynamic("compositional")(compositional.get.asInstanceOf[js.Any])
-    if (concept != null) __obj.updateDynamic("concept")(concept.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (hierarchyMeaning != null) __obj.updateDynamic("hierarchyMeaning")(hierarchyMeaning.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (purpose != null) __obj.updateDynamic("purpose")(purpose.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (useContext != null) __obj.updateDynamic("useContext")(useContext.asInstanceOf[js.Any])
-    if (valueSet != null) __obj.updateDynamic("valueSet")(valueSet.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionNeeded)) __obj.updateDynamic("versionNeeded")(versionNeeded.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeSystem]
   }
+  @scala.inline
+  implicit class CodeSystemOps[Self <: CodeSystem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: code): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_caseSensitive(value: Element): Self = this.set("_caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_caseSensitive: Self = this.set("_caseSensitive", js.undefined)
+    @scala.inline
+    def set_compositional(value: Element): Self = this.set("_compositional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_compositional: Self = this.set("_compositional", js.undefined)
+    @scala.inline
+    def set_content(value: Element): Self = this.set("_content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_content: Self = this.set("_content", js.undefined)
+    @scala.inline
+    def set_copyright(value: Element): Self = this.set("_copyright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_copyright: Self = this.set("_copyright", js.undefined)
+    @scala.inline
+    def set_count(value: Element): Self = this.set("_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_count: Self = this.set("_count", js.undefined)
+    @scala.inline
+    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_date: Self = this.set("_date", js.undefined)
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_experimental(value: Element): Self = this.set("_experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_experimental: Self = this.set("_experimental", js.undefined)
+    @scala.inline
+    def set_hierarchyMeaning(value: Element): Self = this.set("_hierarchyMeaning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_hierarchyMeaning: Self = this.set("_hierarchyMeaning", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_publisher(value: Element): Self = this.set("_publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_publisher: Self = this.set("_publisher", js.undefined)
+    @scala.inline
+    def set_purpose(value: Element): Self = this.set("_purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_purpose: Self = this.set("_purpose", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_title(value: Element): Self = this.set("_title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_title: Self = this.set("_title", js.undefined)
+    @scala.inline
+    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_url: Self = this.set("_url", js.undefined)
+    @scala.inline
+    def set_valueSet(value: Element): Self = this.set("_valueSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_valueSet: Self = this.set("_valueSet", js.undefined)
+    @scala.inline
+    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_version: Self = this.set("_version", js.undefined)
+    @scala.inline
+    def set_versionNeeded(value: Element): Self = this.set("_versionNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_versionNeeded: Self = this.set("_versionNeeded", js.undefined)
+    @scala.inline
+    def setCaseSensitive(value: Boolean): Self = this.set("caseSensitive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseSensitive: Self = this.set("caseSensitive", js.undefined)
+    @scala.inline
+    def setCompositional(value: Boolean): Self = this.set("compositional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompositional: Self = this.set("compositional", js.undefined)
+    @scala.inline
+    def setConceptVarargs(value: CodeSystemConcept*): Self = this.set("concept", js.Array(value :_*))
+    @scala.inline
+    def setConcept(value: js.Array[CodeSystemConcept]): Self = this.set("concept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConcept: Self = this.set("concept", js.undefined)
+    @scala.inline
+    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+    @scala.inline
+    def setCopyright(value: markdown): Self = this.set("copyright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyright: Self = this.set("copyright", js.undefined)
+    @scala.inline
+    def setCount(value: unsignedInt): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setExperimental(value: Boolean): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    @scala.inline
+    def setFilterVarargs(value: CodeSystemFilter*): Self = this.set("filter", js.Array(value :_*))
+    @scala.inline
+    def setFilter(value: js.Array[CodeSystemFilter]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setHierarchyMeaning(value: code): Self = this.set("hierarchyMeaning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHierarchyMeaning: Self = this.set("hierarchyMeaning", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    @scala.inline
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPropertyVarargs(value: CodeSystemProperty*): Self = this.set("property", js.Array(value :_*))
+    @scala.inline
+    def setProperty(value: js.Array[CodeSystemProperty]): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisher: Self = this.set("publisher", js.undefined)
+    @scala.inline
+    def setPurpose(value: markdown): Self = this.set("purpose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurpose: Self = this.set("purpose", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUseContextVarargs(value: UsageContext*): Self = this.set("useContext", js.Array(value :_*))
+    @scala.inline
+    def setUseContext(value: js.Array[UsageContext]): Self = this.set("useContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseContext: Self = this.set("useContext", js.undefined)
+    @scala.inline
+    def setValueSet(value: uri): Self = this.set("valueSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueSet: Self = this.set("valueSet", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionNeeded(value: Boolean): Self = this.set("versionNeeded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNeeded: Self = this.set("versionNeeded", js.undefined)
+  }
+  
 }
 

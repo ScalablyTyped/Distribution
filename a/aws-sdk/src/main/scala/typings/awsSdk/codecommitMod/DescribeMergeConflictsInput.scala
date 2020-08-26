@@ -51,18 +51,49 @@ object DescribeMergeConflictsInput {
     filePath: Path,
     mergeOption: MergeOptionTypeEnum,
     repositoryName: RepositoryName,
-    sourceCommitSpecifier: CommitName,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = null,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null,
-    maxMergeHunks: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
+    sourceCommitSpecifier: CommitName
   ): DescribeMergeConflictsInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], mergeOption = mergeOption.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any], sourceCommitSpecifier = sourceCommitSpecifier.asInstanceOf[js.Any])
-    if (conflictDetailLevel != null) __obj.updateDynamic("conflictDetailLevel")(conflictDetailLevel.asInstanceOf[js.Any])
-    if (conflictResolutionStrategy != null) __obj.updateDynamic("conflictResolutionStrategy")(conflictResolutionStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxMergeHunks)) __obj.updateDynamic("maxMergeHunks")(maxMergeHunks.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMergeConflictsInput]
   }
+  @scala.inline
+  implicit class DescribeMergeConflictsInputOps[Self <: DescribeMergeConflictsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCommitSpecifier(value: CommitName): Self = this.set("destinationCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilePath(value: Path): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMergeOption(value: MergeOptionTypeEnum): Self = this.set("mergeOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceCommitSpecifier(value: CommitName): Self = this.set("sourceCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = this.set("conflictDetailLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictDetailLevel: Self = this.set("conflictDetailLevel", js.undefined)
+    @scala.inline
+    def setConflictResolutionStrategy(value: ConflictResolutionStrategyTypeEnum): Self = this.set("conflictResolutionStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictResolutionStrategy: Self = this.set("conflictResolutionStrategy", js.undefined)
+    @scala.inline
+    def setMaxMergeHunks(value: MaxResults): Self = this.set("maxMergeHunks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxMergeHunks: Self = this.set("maxMergeHunks", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

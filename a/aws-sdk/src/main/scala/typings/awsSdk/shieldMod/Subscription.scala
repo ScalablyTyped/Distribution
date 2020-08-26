@@ -34,22 +34,48 @@ trait Subscription extends js.Object {
 
 object Subscription {
   @scala.inline
-  def apply(
-    AutoRenew: AutoRenew = null,
-    EndTime: Timestamp = null,
-    Limits: Limits = null,
-    ProactiveEngagementStatus: ProactiveEngagementStatus = null,
-    StartTime: Timestamp = null,
-    TimeCommitmentInSeconds: js.UndefOr[DurationInSeconds] = js.undefined
-  ): Subscription = {
+  def apply(): Subscription = {
     val __obj = js.Dynamic.literal()
-    if (AutoRenew != null) __obj.updateDynamic("AutoRenew")(AutoRenew.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (ProactiveEngagementStatus != null) __obj.updateDynamic("ProactiveEngagementStatus")(ProactiveEngagementStatus.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeCommitmentInSeconds)) __obj.updateDynamic("TimeCommitmentInSeconds")(TimeCommitmentInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subscription]
   }
+  @scala.inline
+  implicit class SubscriptionOps[Self <: Subscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRenew(value: AutoRenew): Self = this.set("AutoRenew", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRenew: Self = this.set("AutoRenew", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setLimitsVarargs(value: Limit*): Self = this.set("Limits", js.Array(value :_*))
+    @scala.inline
+    def setLimits(value: Limits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("Limits", js.undefined)
+    @scala.inline
+    def setProactiveEngagementStatus(value: ProactiveEngagementStatus): Self = this.set("ProactiveEngagementStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProactiveEngagementStatus: Self = this.set("ProactiveEngagementStatus", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setTimeCommitmentInSeconds(value: DurationInSeconds): Self = this.set("TimeCommitmentInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCommitmentInSeconds: Self = this.set("TimeCommitmentInSeconds", js.undefined)
+  }
+  
 }
 

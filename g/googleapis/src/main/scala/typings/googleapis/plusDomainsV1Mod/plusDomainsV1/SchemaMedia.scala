@@ -93,46 +93,96 @@ trait SchemaMedia extends js.Object {
 
 object SchemaMedia {
   @scala.inline
-  def apply(
-    author: Image = null,
-    displayName: String = null,
-    etag: String = null,
-    exif: Time = null,
-    height: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    kind: String = null,
-    mediaCreatedTime: String = null,
-    mediaUrl: String = null,
-    published: String = null,
-    sizeBytes: String = null,
-    streams: js.Array[SchemaVideostream] = null,
-    summary: String = null,
-    updated: String = null,
-    url: String = null,
-    videoDuration: String = null,
-    videoStatus: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): SchemaMedia = {
+  def apply(): SchemaMedia = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (exif != null) __obj.updateDynamic("exif")(exif.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (mediaCreatedTime != null) __obj.updateDynamic("mediaCreatedTime")(mediaCreatedTime.asInstanceOf[js.Any])
-    if (mediaUrl != null) __obj.updateDynamic("mediaUrl")(mediaUrl.asInstanceOf[js.Any])
-    if (published != null) __obj.updateDynamic("published")(published.asInstanceOf[js.Any])
-    if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes.asInstanceOf[js.Any])
-    if (streams != null) __obj.updateDynamic("streams")(streams.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration.asInstanceOf[js.Any])
-    if (videoStatus != null) __obj.updateDynamic("videoStatus")(videoStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMedia]
   }
+  @scala.inline
+  implicit class SchemaMediaOps[Self <: SchemaMedia] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: Image): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setExif(value: Time): Self = this.set("exif", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExif: Self = this.set("exif", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMediaCreatedTime(value: String): Self = this.set("mediaCreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaCreatedTime: Self = this.set("mediaCreatedTime", js.undefined)
+    @scala.inline
+    def setMediaUrl(value: String): Self = this.set("mediaUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaUrl: Self = this.set("mediaUrl", js.undefined)
+    @scala.inline
+    def setPublished(value: String): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublished: Self = this.set("published", js.undefined)
+    @scala.inline
+    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+    @scala.inline
+    def setStreamsVarargs(value: SchemaVideostream*): Self = this.set("streams", js.Array(value :_*))
+    @scala.inline
+    def setStreams(value: js.Array[SchemaVideostream]): Self = this.set("streams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreams: Self = this.set("streams", js.undefined)
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVideoDuration(value: String): Self = this.set("videoDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoDuration: Self = this.set("videoDuration", js.undefined)
+    @scala.inline
+    def setVideoStatus(value: String): Self = this.set("videoStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoStatus: Self = this.set("videoStatus", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

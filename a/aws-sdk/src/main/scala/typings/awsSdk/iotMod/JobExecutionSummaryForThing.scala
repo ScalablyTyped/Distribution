@@ -18,11 +18,30 @@ trait JobExecutionSummaryForThing extends js.Object {
 
 object JobExecutionSummaryForThing {
   @scala.inline
-  def apply(jobExecutionSummary: JobExecutionSummary = null, jobId: JobId = null): JobExecutionSummaryForThing = {
+  def apply(): JobExecutionSummaryForThing = {
     val __obj = js.Dynamic.literal()
-    if (jobExecutionSummary != null) __obj.updateDynamic("jobExecutionSummary")(jobExecutionSummary.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionSummaryForThing]
   }
+  @scala.inline
+  implicit class JobExecutionSummaryForThingOps[Self <: JobExecutionSummaryForThing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobExecutionSummary(value: JobExecutionSummary): Self = this.set("jobExecutionSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobExecutionSummary: Self = this.set("jobExecutionSummary", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+  }
+  
 }
 

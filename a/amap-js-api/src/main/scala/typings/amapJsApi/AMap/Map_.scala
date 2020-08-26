@@ -256,8 +256,66 @@ trait Map_ extends EventEmitter {
     * @param maxZoom 最大缩放级别
     */
   def setFitView(): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.UndefOr[scala.Nothing],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.UndefOr[scala.Nothing],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.UndefOr[scala.Nothing],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double]
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.UndefOr[scala.Nothing],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.UndefOr[scala.Nothing], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.UndefOr[scala.Nothing],
+    immediately: Boolean,
+    avoid: js.UndefOr[scala.Nothing],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.UndefOr[scala.Nothing],
+    immediately: Boolean,
+    avoid: js.Tuple4[Double, Double, Double, Double]
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.UndefOr[scala.Nothing],
+    immediately: Boolean,
+    avoid: js.Tuple4[Double, Double, Double, Double],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: js.Array[Overlay[_]]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.Array[Overlay[_]],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.UndefOr[scala.Nothing],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.Array[Overlay[_]],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double]
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.Array[Overlay[_]],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: js.Array[Overlay[_]], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: js.Array[Overlay[_]],
+    immediately: Boolean,
+    avoid: js.UndefOr[scala.Nothing],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
     overlayList: js.Array[Overlay[_]],
     immediately: Boolean,
@@ -270,7 +328,25 @@ trait Map_ extends EventEmitter {
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: Overlay[_]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: Overlay[_],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.UndefOr[scala.Nothing],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: Overlay[_],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double]
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: Overlay[_],
+    immediately: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: Overlay[_], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[_], immediately: Boolean, avoid: js.UndefOr[scala.Nothing], maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(overlayList: Overlay[_], immediately: Boolean, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
     overlayList: Overlay[_],

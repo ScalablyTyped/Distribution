@@ -7,50 +7,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesHotThreads extends Generic {
-  var ignore_idle_threads: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[String] = js.undefined
-  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
-  var snapshots: js.UndefOr[Double] = js.undefined
-  var threads: js.UndefOr[Double] = js.undefined
-  var timeout: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[cpu | wait | block] = js.undefined
+  var ignore_idle_threads: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[String] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var snapshots: js.UndefOr[Double] = js.native
+  var threads: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[cpu | wait | block] = js.native
 }
 
 object NodesHotThreads {
   @scala.inline
-  def apply(
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    ignore_idle_threads: js.UndefOr[Boolean] = js.undefined,
-    interval: String = null,
-    method: String = null,
-    node_id: String | js.Array[String] = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    snapshots: js.UndefOr[Double] = js.undefined,
-    source: String = null,
-    threads: js.UndefOr[Double] = js.undefined,
-    timeout: String = null,
-    `type`: cpu | wait | block = null
-  ): NodesHotThreads = {
+  def apply(): NodesHotThreads = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore_idle_threads)) __obj.updateDynamic("ignore_idle_threads")(ignore_idle_threads.get.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (node_id != null) __obj.updateDynamic("node_id")(node_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshots)) __obj.updateDynamic("snapshots")(snapshots.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(threads)) __obj.updateDynamic("threads")(threads.get.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesHotThreads]
   }
+  @scala.inline
+  implicit class NodesHotThreadsOps[Self <: NodesHotThreads] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIgnore_idle_threads(value: Boolean): Self = this.set("ignore_idle_threads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore_idle_threads: Self = this.set("ignore_idle_threads", js.undefined)
+    @scala.inline
+    def setInterval(value: String): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setNode_idVarargs(value: String*): Self = this.set("node_id", js.Array(value :_*))
+    @scala.inline
+    def setNode_id(value: String | js.Array[String]): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode_id: Self = this.set("node_id", js.undefined)
+    @scala.inline
+    def setSnapshots(value: Double): Self = this.set("snapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshots: Self = this.set("snapshots", js.undefined)
+    @scala.inline
+    def setThreads(value: Double): Self = this.set("threads", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreads: Self = this.set("threads", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setType(value: cpu | wait | block): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

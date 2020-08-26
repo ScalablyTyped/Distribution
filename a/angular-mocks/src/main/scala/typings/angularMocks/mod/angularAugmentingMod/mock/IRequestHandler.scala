@@ -22,9 +22,11 @@ trait IRequestHandler extends js.Object {
     * @param responseText Response text to add to the response.
     */
   def respond(data: String): IRequestHandler = js.native
+  def respond(data: String, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
   def respond(data: String, headers: IHttpHeaders): IRequestHandler = js.native
   def respond(data: String, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
   def respond(data: js.Object): IRequestHandler = js.native
+  def respond(data: js.Object, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
   def respond(data: js.Object, headers: IHttpHeaders): IRequestHandler = js.native
   def respond(data: js.Object, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
   /**
@@ -53,10 +55,20 @@ trait IRequestHandler extends js.Object {
     * @param responseText Response text to add to the response.
     */
   def respond(status: Double): IRequestHandler = js.native
+  def respond(
+    status: Double,
+    data: js.UndefOr[scala.Nothing],
+    headers: js.UndefOr[scala.Nothing],
+    responseText: String
+  ): IRequestHandler = js.native
+  def respond(status: Double, data: js.UndefOr[scala.Nothing], headers: IHttpHeaders): IRequestHandler = js.native
+  def respond(status: Double, data: js.UndefOr[scala.Nothing], headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
   def respond(status: Double, data: String): IRequestHandler = js.native
+  def respond(status: Double, data: String, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
   def respond(status: Double, data: String, headers: IHttpHeaders): IRequestHandler = js.native
   def respond(status: Double, data: String, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
   def respond(status: Double, data: js.Object): IRequestHandler = js.native
+  def respond(status: Double, data: js.Object, headers: js.UndefOr[scala.Nothing], responseText: String): IRequestHandler = js.native
   def respond(status: Double, data: js.Object, headers: IHttpHeaders): IRequestHandler = js.native
   def respond(status: Double, data: js.Object, headers: IHttpHeaders, responseText: String): IRequestHandler = js.native
 }

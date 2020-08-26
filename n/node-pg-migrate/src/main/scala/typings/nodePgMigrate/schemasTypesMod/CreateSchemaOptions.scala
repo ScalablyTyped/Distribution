@@ -5,17 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateSchemaOptions extends IfNotExistsOption {
-  var authorization: js.UndefOr[String] = js.undefined
+  var authorization: js.UndefOr[String] = js.native
 }
 
 object CreateSchemaOptions {
   @scala.inline
-  def apply(authorization: String = null, ifNotExists: js.UndefOr[Boolean] = js.undefined): CreateSchemaOptions = {
+  def apply(): CreateSchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorization != null) __obj.updateDynamic("authorization")(authorization.asInstanceOf[js.Any])
-    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSchemaOptions]
   }
+  @scala.inline
+  implicit class CreateSchemaOptionsOps[Self <: CreateSchemaOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorization(value: String): Self = this.set("authorization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization: Self = this.set("authorization", js.undefined)
+  }
+  
 }
 

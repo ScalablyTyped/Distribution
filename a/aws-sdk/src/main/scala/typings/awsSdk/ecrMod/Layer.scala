@@ -26,18 +26,38 @@ trait Layer extends js.Object {
 
 object Layer {
   @scala.inline
-  def apply(
-    layerAvailability: LayerAvailability = null,
-    layerDigest: LayerDigest = null,
-    layerSize: js.UndefOr[LayerSizeInBytes] = js.undefined,
-    mediaType: MediaType = null
-  ): Layer = {
+  def apply(): Layer = {
     val __obj = js.Dynamic.literal()
-    if (layerAvailability != null) __obj.updateDynamic("layerAvailability")(layerAvailability.asInstanceOf[js.Any])
-    if (layerDigest != null) __obj.updateDynamic("layerDigest")(layerDigest.asInstanceOf[js.Any])
-    if (!js.isUndefined(layerSize)) __obj.updateDynamic("layerSize")(layerSize.get.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
+  @scala.inline
+  implicit class LayerOps[Self <: Layer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayerAvailability(value: LayerAvailability): Self = this.set("layerAvailability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerAvailability: Self = this.set("layerAvailability", js.undefined)
+    @scala.inline
+    def setLayerDigest(value: LayerDigest): Self = this.set("layerDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerDigest: Self = this.set("layerDigest", js.undefined)
+    @scala.inline
+    def setLayerSize(value: LayerSizeInBytes): Self = this.set("layerSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerSize: Self = this.set("layerSize", js.undefined)
+    @scala.inline
+    def setMediaType(value: MediaType): Self = this.set("mediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaType: Self = this.set("mediaType", js.undefined)
+  }
+  
 }
 

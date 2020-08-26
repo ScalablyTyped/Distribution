@@ -31,6 +31,7 @@ class Message protected () extends EventEmitter {
   @JSName("on")
   def on_respond(event: respond, listener: js.Function2[/* responseType */ Double, /* wireData */ Buffer, Unit]): this.type = js.native
   def requeue(): js.Any = js.native
+  def requeue(delay: js.UndefOr[scala.Nothing], backoff: Boolean): js.Any = js.native
   def requeue(delay: Double): js.Any = js.native
   def requeue(delay: Double, backoff: Boolean): js.Any = js.native
   def respond(responseType: Double, wireData: Buffer): js.Any = js.native

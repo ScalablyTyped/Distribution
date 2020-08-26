@@ -46,27 +46,58 @@ trait CreateTrialComponentRequest extends js.Object {
 
 object CreateTrialComponentRequest {
   @scala.inline
-  def apply(
-    TrialComponentName: ExperimentEntityName,
-    DisplayName: ExperimentEntityName = null,
-    EndTime: Timestamp = null,
-    InputArtifacts: TrialComponentArtifacts = null,
-    OutputArtifacts: TrialComponentArtifacts = null,
-    Parameters: TrialComponentParameters = null,
-    StartTime: Timestamp = null,
-    Status: TrialComponentStatus = null,
-    Tags: TagList = null
-  ): CreateTrialComponentRequest = {
+  def apply(TrialComponentName: ExperimentEntityName): CreateTrialComponentRequest = {
     val __obj = js.Dynamic.literal(TrialComponentName = TrialComponentName.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (InputArtifacts != null) __obj.updateDynamic("InputArtifacts")(InputArtifacts.asInstanceOf[js.Any])
-    if (OutputArtifacts != null) __obj.updateDynamic("OutputArtifacts")(OutputArtifacts.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTrialComponentRequest]
   }
+  @scala.inline
+  implicit class CreateTrialComponentRequestOps[Self <: CreateTrialComponentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrialComponentName(value: ExperimentEntityName): Self = this.set("TrialComponentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDisplayName(value: ExperimentEntityName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setInputArtifacts(value: TrialComponentArtifacts): Self = this.set("InputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputArtifacts: Self = this.set("InputArtifacts", js.undefined)
+    @scala.inline
+    def setOutputArtifacts(value: TrialComponentArtifacts): Self = this.set("OutputArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputArtifacts: Self = this.set("OutputArtifacts", js.undefined)
+    @scala.inline
+    def setParameters(value: TrialComponentParameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: TrialComponentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

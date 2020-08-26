@@ -4,96 +4,163 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait XEditableOptions extends js.Object {
-  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
-  var anim: js.UndefOr[String] = js.undefined
-  var autotext: js.UndefOr[String] = js.undefined
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var display: js.UndefOr[js.Any] = js.undefined
-  var emptyclass: js.UndefOr[String] = js.undefined
-  var emptytext: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[js.Any] = js.undefined
-  var highlight: js.UndefOr[js.Any] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onblur: js.UndefOr[String] = js.undefined
-  var params: js.UndefOr[js.Any] = js.undefined
-  var pk: js.UndefOr[js.Any] = js.undefined
-  var placement: js.UndefOr[String] = js.undefined
-  var savenochange: js.UndefOr[Boolean] = js.undefined
-  var selector: js.UndefOr[String] = js.undefined
-  var send: js.UndefOr[String] = js.undefined
-  var showbuttons: js.UndefOr[js.Any] = js.undefined
-  var success: js.UndefOr[js.Any] = js.undefined
-  var toggle: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var unsavedclass: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
-  var validate: js.UndefOr[js.Any] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var ajaxOptions: js.UndefOr[js.Any] = js.native
+  var anim: js.UndefOr[String] = js.native
+  var autotext: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[js.Any] = js.native
+  var emptyclass: js.UndefOr[String] = js.native
+  var emptytext: js.UndefOr[String] = js.native
+  var error: js.UndefOr[js.Any] = js.native
+  var highlight: js.UndefOr[js.Any] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onblur: js.UndefOr[String] = js.native
+  var params: js.UndefOr[js.Any] = js.native
+  var pk: js.UndefOr[js.Any] = js.native
+  var placement: js.UndefOr[String] = js.native
+  var savenochange: js.UndefOr[Boolean] = js.native
+  var selector: js.UndefOr[String] = js.native
+  var send: js.UndefOr[String] = js.native
+  var showbuttons: js.UndefOr[js.Any] = js.native
+  var success: js.UndefOr[js.Any] = js.native
+  var toggle: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var unsavedclass: js.UndefOr[String] = js.native
+  var url: js.UndefOr[js.Any] = js.native
+  var validate: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object XEditableOptions {
   @scala.inline
-  def apply(
-    ajaxOptions: js.Any = null,
-    anim: String = null,
-    autotext: String = null,
-    defaultValue: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    display: js.Any = null,
-    emptyclass: String = null,
-    emptytext: String = null,
-    error: js.Any = null,
-    highlight: js.Any = null,
-    mode: String = null,
-    name: String = null,
-    onblur: String = null,
-    params: js.Any = null,
-    pk: js.Any = null,
-    placement: String = null,
-    savenochange: js.UndefOr[Boolean] = js.undefined,
-    selector: String = null,
-    send: String = null,
-    showbuttons: js.Any = null,
-    success: js.Any = null,
-    toggle: String = null,
-    `type`: String = null,
-    unsavedclass: String = null,
-    url: js.Any = null,
-    validate: js.Any = null,
-    value: js.Any = null
-  ): XEditableOptions = {
+  def apply(): XEditableOptions = {
     val __obj = js.Dynamic.literal()
-    if (ajaxOptions != null) __obj.updateDynamic("ajaxOptions")(ajaxOptions.asInstanceOf[js.Any])
-    if (anim != null) __obj.updateDynamic("anim")(anim.asInstanceOf[js.Any])
-    if (autotext != null) __obj.updateDynamic("autotext")(autotext.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (emptyclass != null) __obj.updateDynamic("emptyclass")(emptyclass.asInstanceOf[js.Any])
-    if (emptytext != null) __obj.updateDynamic("emptytext")(emptytext.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onblur != null) __obj.updateDynamic("onblur")(onblur.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (pk != null) __obj.updateDynamic("pk")(pk.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(savenochange)) __obj.updateDynamic("savenochange")(savenochange.get.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
-    if (showbuttons != null) __obj.updateDynamic("showbuttons")(showbuttons.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unsavedclass != null) __obj.updateDynamic("unsavedclass")(unsavedclass.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[XEditableOptions]
   }
+  @scala.inline
+  implicit class XEditableOptionsOps[Self <: XEditableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAjaxOptions(value: js.Any): Self = this.set("ajaxOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAjaxOptions: Self = this.set("ajaxOptions", js.undefined)
+    @scala.inline
+    def setAnim(value: String): Self = this.set("anim", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnim: Self = this.set("anim", js.undefined)
+    @scala.inline
+    def setAutotext(value: String): Self = this.set("autotext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutotext: Self = this.set("autotext", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplay(value: js.Any): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setEmptyclass(value: String): Self = this.set("emptyclass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyclass: Self = this.set("emptyclass", js.undefined)
+    @scala.inline
+    def setEmptytext(value: String): Self = this.set("emptytext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptytext: Self = this.set("emptytext", js.undefined)
+    @scala.inline
+    def setError(value: js.Any): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHighlight(value: js.Any): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnblur(value: String): Self = this.set("onblur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnblur: Self = this.set("onblur", js.undefined)
+    @scala.inline
+    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setPk(value: js.Any): Self = this.set("pk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePk: Self = this.set("pk", js.undefined)
+    @scala.inline
+    def setPlacement(value: String): Self = this.set("placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("placement", js.undefined)
+    @scala.inline
+    def setSavenochange(value: Boolean): Self = this.set("savenochange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavenochange: Self = this.set("savenochange", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setSend(value: String): Self = this.set("send", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSend: Self = this.set("send", js.undefined)
+    @scala.inline
+    def setShowbuttons(value: js.Any): Self = this.set("showbuttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowbuttons: Self = this.set("showbuttons", js.undefined)
+    @scala.inline
+    def setSuccess(value: js.Any): Self = this.set("success", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+    @scala.inline
+    def setToggle(value: String): Self = this.set("toggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToggle: Self = this.set("toggle", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnsavedclass(value: String): Self = this.set("unsavedclass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsavedclass: Self = this.set("unsavedclass", js.undefined)
+    @scala.inline
+    def setUrl(value: js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setValidate(value: js.Any): Self = this.set("validate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidate: Self = this.set("validate", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

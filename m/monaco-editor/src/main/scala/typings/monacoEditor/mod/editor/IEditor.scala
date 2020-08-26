@@ -144,7 +144,6 @@ trait IEditor extends js.Object {
     * Saves current view state of the editor in a serializable object.
     */
   def saveViewState(): IEditorViewState | Null = js.native
-  def setModel(): Unit = js.native
   /**
     * Sets the current model attached to this editor.
     * If the previous model was created by the editor via the value key in the options
@@ -153,6 +152,7 @@ trait IEditor extends js.Object {
     * will not be destroyed.
     * It is safe to call setModel(null) to simply detach the current model from the editor.
     */
+  def setModel(): Unit = js.native
   def setModel(model: IEditorModel): Unit = js.native
   /**
     * Set the primary position of the cursor. This will remove any secondary cursors.

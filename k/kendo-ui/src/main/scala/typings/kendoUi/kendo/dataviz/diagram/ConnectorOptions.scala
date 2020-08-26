@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConnectorOptions extends js.Object {
-  var fill: js.UndefOr[String | ConnectorFill] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hover: js.UndefOr[ConnectorHover] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var stroke: js.UndefOr[String | ConnectorStroke] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var fill: js.UndefOr[String | ConnectorFill] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hover: js.UndefOr[ConnectorHover] = js.native
+  var name: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String | ConnectorStroke] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object ConnectorOptions {
   @scala.inline
-  def apply(
-    fill: String | ConnectorFill = null,
-    height: js.UndefOr[Double] = js.undefined,
-    hover: ConnectorHover = null,
-    name: String = null,
-    stroke: String | ConnectorStroke = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): ConnectorOptions = {
+  def apply(): ConnectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectorOptions]
   }
+  @scala.inline
+  implicit class ConnectorOptionsOps[Self <: ConnectorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill(value: String | ConnectorFill): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHover(value: ConnectorHover): Self = this.set("hover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHover: Self = this.set("hover", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStroke(value: String | ConnectorStroke): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceSubaccounts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSubaccount] = js.native
   def get(callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubaccount] = js.native
   def get(params: ParamsResourceSubaccountsGet): GaxiosPromise[SchemaSubaccount] = js.native
   def get(params: ParamsResourceSubaccountsGet, callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
   def get(
@@ -56,6 +57,7 @@ class ResourceSubaccounts protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaSubaccount] = js.native
   def insert(callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubaccount] = js.native
   def insert(params: ParamsResourceSubaccountsInsert): GaxiosPromise[SchemaSubaccount] = js.native
   def insert(params: ParamsResourceSubaccountsInsert, callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
   def insert(
@@ -90,6 +92,7 @@ class ResourceSubaccounts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSubaccountsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSubaccountsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubaccountsListResponse] = js.native
   def list(params: ParamsResourceSubaccountsList): GaxiosPromise[SchemaSubaccountsListResponse] = js.native
   def list(
     params: ParamsResourceSubaccountsList,
@@ -123,6 +126,7 @@ class ResourceSubaccounts protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaSubaccount] = js.native
   def patch(callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubaccount] = js.native
   def patch(params: ParamsResourceSubaccountsPatch): GaxiosPromise[SchemaSubaccount] = js.native
   def patch(params: ParamsResourceSubaccountsPatch, callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
   def patch(
@@ -151,6 +155,7 @@ class ResourceSubaccounts protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaSubaccount] = js.native
   def update(callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubaccount] = js.native
   def update(params: ParamsResourceSubaccountsUpdate): GaxiosPromise[SchemaSubaccount] = js.native
   def update(params: ParamsResourceSubaccountsUpdate, callback: BodyResponseCallback[SchemaSubaccount]): Unit = js.native
   def update(

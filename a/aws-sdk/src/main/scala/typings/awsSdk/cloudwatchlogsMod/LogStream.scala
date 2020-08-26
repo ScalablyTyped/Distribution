@@ -42,26 +42,54 @@ trait LogStream extends js.Object {
 
 object LogStream {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    creationTime: js.UndefOr[Timestamp] = js.undefined,
-    firstEventTimestamp: js.UndefOr[Timestamp] = js.undefined,
-    lastEventTimestamp: js.UndefOr[Timestamp] = js.undefined,
-    lastIngestionTime: js.UndefOr[Timestamp] = js.undefined,
-    logStreamName: LogStreamName = null,
-    storedBytes: js.UndefOr[StoredBytes] = js.undefined,
-    uploadSequenceToken: SequenceToken = null
-  ): LogStream = {
+  def apply(): LogStream = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstEventTimestamp)) __obj.updateDynamic("firstEventTimestamp")(firstEventTimestamp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastEventTimestamp)) __obj.updateDynamic("lastEventTimestamp")(lastEventTimestamp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastIngestionTime)) __obj.updateDynamic("lastIngestionTime")(lastIngestionTime.get.asInstanceOf[js.Any])
-    if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(storedBytes)) __obj.updateDynamic("storedBytes")(storedBytes.get.asInstanceOf[js.Any])
-    if (uploadSequenceToken != null) __obj.updateDynamic("uploadSequenceToken")(uploadSequenceToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogStream]
   }
+  @scala.inline
+  implicit class LogStreamOps[Self <: LogStream] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setFirstEventTimestamp(value: Timestamp): Self = this.set("firstEventTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstEventTimestamp: Self = this.set("firstEventTimestamp", js.undefined)
+    @scala.inline
+    def setLastEventTimestamp(value: Timestamp): Self = this.set("lastEventTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEventTimestamp: Self = this.set("lastEventTimestamp", js.undefined)
+    @scala.inline
+    def setLastIngestionTime(value: Timestamp): Self = this.set("lastIngestionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastIngestionTime: Self = this.set("lastIngestionTime", js.undefined)
+    @scala.inline
+    def setLogStreamName(value: LogStreamName): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamName: Self = this.set("logStreamName", js.undefined)
+    @scala.inline
+    def setStoredBytes(value: StoredBytes): Self = this.set("storedBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoredBytes: Self = this.set("storedBytes", js.undefined)
+    @scala.inline
+    def setUploadSequenceToken(value: SequenceToken): Self = this.set("uploadSequenceToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadSequenceToken: Self = this.set("uploadSequenceToken", js.undefined)
+  }
+  
 }
 

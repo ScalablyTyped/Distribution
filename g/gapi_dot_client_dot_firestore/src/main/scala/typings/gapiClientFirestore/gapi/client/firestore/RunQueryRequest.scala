@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RunQueryRequest extends js.Object {
   /**
     * Starts a new transaction and reads the documents.
@@ -11,32 +12,52 @@ trait RunQueryRequest extends js.Object {
     * The new transaction ID will be returned as the first response in the
     * stream.
     */
-  var newTransaction: js.UndefOr[TransactionOptions] = js.undefined
+  var newTransaction: js.UndefOr[TransactionOptions] = js.native
   /**
     * Reads documents as they were at the given time.
     * This may not be older than 60 seconds.
     */
-  var readTime: js.UndefOr[String] = js.undefined
+  var readTime: js.UndefOr[String] = js.native
   /** A structured query. */
-  var structuredQuery: js.UndefOr[StructuredQuery] = js.undefined
+  var structuredQuery: js.UndefOr[StructuredQuery] = js.native
   /** Reads documents in a transaction. */
-  var transaction: js.UndefOr[String] = js.undefined
+  var transaction: js.UndefOr[String] = js.native
 }
 
 object RunQueryRequest {
   @scala.inline
-  def apply(
-    newTransaction: TransactionOptions = null,
-    readTime: String = null,
-    structuredQuery: StructuredQuery = null,
-    transaction: String = null
-  ): RunQueryRequest = {
+  def apply(): RunQueryRequest = {
     val __obj = js.Dynamic.literal()
-    if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
-    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunQueryRequest]
   }
+  @scala.inline
+  implicit class RunQueryRequestOps[Self <: RunQueryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewTransaction(value: TransactionOptions): Self = this.set("newTransaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewTransaction: Self = this.set("newTransaction", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+    @scala.inline
+    def setStructuredQuery(value: StructuredQuery): Self = this.set("structuredQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructuredQuery: Self = this.set("structuredQuery", js.undefined)
+    @scala.inline
+    def setTransaction(value: String): Self = this.set("transaction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransaction: Self = this.set("transaction", js.undefined)
+  }
+  
 }
 

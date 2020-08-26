@@ -26,12 +26,34 @@ trait SchemaInstanceWebDetails extends js.Object {
 
 object SchemaInstanceWebDetails {
   @scala.inline
-  def apply(kind: String = null, launchUrl: String = null, preferred: js.UndefOr[Boolean] = js.undefined): SchemaInstanceWebDetails = {
+  def apply(): SchemaInstanceWebDetails = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (launchUrl != null) __obj.updateDynamic("launchUrl")(launchUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceWebDetails]
   }
+  @scala.inline
+  implicit class SchemaInstanceWebDetailsOps[Self <: SchemaInstanceWebDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLaunchUrl(value: String): Self = this.set("launchUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchUrl: Self = this.set("launchUrl", js.undefined)
+    @scala.inline
+    def setPreferred(value: Boolean): Self = this.set("preferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferred: Self = this.set("preferred", js.undefined)
+  }
+  
 }
 

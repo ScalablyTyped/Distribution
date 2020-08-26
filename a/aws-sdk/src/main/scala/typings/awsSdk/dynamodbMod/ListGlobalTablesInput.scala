@@ -22,16 +22,34 @@ trait ListGlobalTablesInput extends js.Object {
 
 object ListGlobalTablesInput {
   @scala.inline
-  def apply(
-    ExclusiveStartGlobalTableName: TableName = null,
-    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
-    RegionName: RegionName = null
-  ): ListGlobalTablesInput = {
+  def apply(): ListGlobalTablesInput = {
     val __obj = js.Dynamic.literal()
-    if (ExclusiveStartGlobalTableName != null) __obj.updateDynamic("ExclusiveStartGlobalTableName")(ExclusiveStartGlobalTableName.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGlobalTablesInput]
   }
+  @scala.inline
+  implicit class ListGlobalTablesInputOps[Self <: ListGlobalTablesInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExclusiveStartGlobalTableName(value: TableName): Self = this.set("ExclusiveStartGlobalTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartGlobalTableName: Self = this.set("ExclusiveStartGlobalTableName", js.undefined)
+    @scala.inline
+    def setLimit(value: PositiveIntegerObject): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setRegionName(value: RegionName): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+  }
+  
 }
 

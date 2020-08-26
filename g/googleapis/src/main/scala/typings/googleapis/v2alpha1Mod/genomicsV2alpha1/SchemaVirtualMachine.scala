@@ -91,32 +91,70 @@ trait SchemaVirtualMachine extends js.Object {
 
 object SchemaVirtualMachine {
   @scala.inline
-  def apply(
-    accelerators: js.Array[SchemaAccelerator] = null,
-    bootDiskSizeGb: js.UndefOr[Double] = js.undefined,
-    bootImage: String = null,
-    cpuPlatform: String = null,
-    disks: js.Array[SchemaDisk] = null,
-    labels: StringDictionary[String] = null,
-    machineType: String = null,
-    network: SchemaNetwork = null,
-    nvidiaDriverVersion: String = null,
-    preemptible: js.UndefOr[Boolean] = js.undefined,
-    serviceAccount: SchemaServiceAccount = null
-  ): SchemaVirtualMachine = {
+  def apply(): SchemaVirtualMachine = {
     val __obj = js.Dynamic.literal()
-    if (accelerators != null) __obj.updateDynamic("accelerators")(accelerators.asInstanceOf[js.Any])
-    if (!js.isUndefined(bootDiskSizeGb)) __obj.updateDynamic("bootDiskSizeGb")(bootDiskSizeGb.get.asInstanceOf[js.Any])
-    if (bootImage != null) __obj.updateDynamic("bootImage")(bootImage.asInstanceOf[js.Any])
-    if (cpuPlatform != null) __obj.updateDynamic("cpuPlatform")(cpuPlatform.asInstanceOf[js.Any])
-    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (nvidiaDriverVersion != null) __obj.updateDynamic("nvidiaDriverVersion")(nvidiaDriverVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible.get.asInstanceOf[js.Any])
-    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVirtualMachine]
   }
+  @scala.inline
+  implicit class SchemaVirtualMachineOps[Self <: SchemaVirtualMachine] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorsVarargs(value: SchemaAccelerator*): Self = this.set("accelerators", js.Array(value :_*))
+    @scala.inline
+    def setAccelerators(value: js.Array[SchemaAccelerator]): Self = this.set("accelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerators: Self = this.set("accelerators", js.undefined)
+    @scala.inline
+    def setBootDiskSizeGb(value: Double): Self = this.set("bootDiskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootDiskSizeGb: Self = this.set("bootDiskSizeGb", js.undefined)
+    @scala.inline
+    def setBootImage(value: String): Self = this.set("bootImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBootImage: Self = this.set("bootImage", js.undefined)
+    @scala.inline
+    def setCpuPlatform(value: String): Self = this.set("cpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuPlatform: Self = this.set("cpuPlatform", js.undefined)
+    @scala.inline
+    def setDisksVarargs(value: SchemaDisk*): Self = this.set("disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: js.Array[SchemaDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("disks", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setNetwork(value: SchemaNetwork): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNvidiaDriverVersion(value: String): Self = this.set("nvidiaDriverVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNvidiaDriverVersion: Self = this.set("nvidiaDriverVersion", js.undefined)
+    @scala.inline
+    def setPreemptible(value: Boolean): Self = this.set("preemptible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreemptible: Self = this.set("preemptible", js.undefined)
+    @scala.inline
+    def setServiceAccount(value: SchemaServiceAccount): Self = this.set("serviceAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccount: Self = this.set("serviceAccount", js.undefined)
+  }
+  
 }
 

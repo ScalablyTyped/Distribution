@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IEditOperationBuilder extends js.Object {
-  def addEditOperation(range: Range): Unit = js.native
   /**
     * Add a new edit operation (a replace operation).
     * @param range The range to replace (delete). May be empty to represent a simple insert.
     * @param text The text to replace with. May be null to represent a simple delete.
     */
+  def addEditOperation(range: Range): Unit = js.native
   def addEditOperation(range: Range, text: String): Unit = js.native
   def addEditOperation(range: Range, text: String, forceMoveMarkers: Boolean): Unit = js.native
   def addEditOperation(range: Range, text: Null, forceMoveMarkers: Boolean): Unit = js.native
-  def addTrackedEditOperation(range: Range): Unit = js.native
   /**
     * Add a new edit operation (a replace operation).
     * The inverse edits will be accessible in `ICursorStateComputerData.getInverseEditOperations()`
     * @param range The range to replace (delete). May be empty to represent a simple insert.
     * @param text The text to replace with. May be null to represent a simple delete.
     */
+  def addTrackedEditOperation(range: Range): Unit = js.native
   def addTrackedEditOperation(range: Range, text: String): Unit = js.native
   def addTrackedEditOperation(range: Range, text: String, forceMoveMarkers: Boolean): Unit = js.native
   def addTrackedEditOperation(range: Range, text: Null, forceMoveMarkers: Boolean): Unit = js.native

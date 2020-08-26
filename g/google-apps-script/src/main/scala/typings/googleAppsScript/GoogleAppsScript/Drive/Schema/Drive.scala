@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Drive extends js.Object {
-  var backgroundImageFile: js.UndefOr[DriveBackgroundImageFile] = js.undefined
-  var backgroundImageLink: js.UndefOr[String] = js.undefined
-  var capabilities: js.UndefOr[DriveCapabilities] = js.undefined
-  var colorRgb: js.UndefOr[String] = js.undefined
-  var createdDate: js.UndefOr[String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var restrictions: js.UndefOr[DriveRestrictions] = js.undefined
-  var themeId: js.UndefOr[String] = js.undefined
+  var backgroundImageFile: js.UndefOr[DriveBackgroundImageFile] = js.native
+  var backgroundImageLink: js.UndefOr[String] = js.native
+  var capabilities: js.UndefOr[DriveCapabilities] = js.native
+  var colorRgb: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var restrictions: js.UndefOr[DriveRestrictions] = js.native
+  var themeId: js.UndefOr[String] = js.native
 }
 
 object Drive {
   @scala.inline
-  def apply(
-    backgroundImageFile: DriveBackgroundImageFile = null,
-    backgroundImageLink: String = null,
-    capabilities: DriveCapabilities = null,
-    colorRgb: String = null,
-    createdDate: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    kind: String = null,
-    name: String = null,
-    restrictions: DriveRestrictions = null,
-    themeId: String = null
-  ): Drive = {
+  def apply(): Drive = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImageFile != null) __obj.updateDynamic("backgroundImageFile")(backgroundImageFile.asInstanceOf[js.Any])
-    if (backgroundImageLink != null) __obj.updateDynamic("backgroundImageLink")(backgroundImageLink.asInstanceOf[js.Any])
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (colorRgb != null) __obj.updateDynamic("colorRgb")(colorRgb.asInstanceOf[js.Any])
-    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
-    if (themeId != null) __obj.updateDynamic("themeId")(themeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Drive]
   }
+  @scala.inline
+  implicit class DriveOps[Self <: Drive] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundImageFile(value: DriveBackgroundImageFile): Self = this.set("backgroundImageFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageFile: Self = this.set("backgroundImageFile", js.undefined)
+    @scala.inline
+    def setBackgroundImageLink(value: String): Self = this.set("backgroundImageLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageLink: Self = this.set("backgroundImageLink", js.undefined)
+    @scala.inline
+    def setCapabilities(value: DriveCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setColorRgb(value: String): Self = this.set("colorRgb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorRgb: Self = this.set("colorRgb", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: String): Self = this.set("createdDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("createdDate", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRestrictions(value: DriveRestrictions): Self = this.set("restrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictions: Self = this.set("restrictions", js.undefined)
+    @scala.inline
+    def setThemeId(value: String): Self = this.set("themeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThemeId: Self = this.set("themeId", js.undefined)
+  }
+  
 }
 

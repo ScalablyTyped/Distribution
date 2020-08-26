@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
+@js.native
 trait SettableRowProperties extends SettableCellProperties {
   /**
     *
@@ -19,30 +20,42 @@ trait SettableRowProperties extends SettableCellProperties {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_SettableRowProperties: js.UndefOr[CellPropertiesFormatrowHe] = js.undefined
+  var format_SettableRowProperties: js.UndefOr[CellPropertiesFormatrowHe] = js.native
   /**
     *
     * Represents the `rowHidden` property.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rowHidden: js.UndefOr[Boolean] = js.undefined
+  var rowHidden: js.UndefOr[Boolean] = js.native
 }
 
 object SettableRowProperties {
   @scala.inline
-  def apply(
-    format: CellPropertiesFormatrowHe = null,
-    hyperlink: RangeHyperlink = null,
-    rowHidden: js.UndefOr[Boolean] = js.undefined,
-    style: String = null
-  ): SettableRowProperties = {
+  def apply(): SettableRowProperties = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableRowProperties]
   }
+  @scala.inline
+  implicit class SettableRowPropertiesOps[Self <: SettableRowProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: CellPropertiesFormatrowHe): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setRowHidden(value: Boolean): Self = this.set("rowHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHidden: Self = this.set("rowHidden", js.undefined)
+  }
+  
 }
 

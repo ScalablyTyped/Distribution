@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.slice")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.slice")
 @js.native
 object ^ extends js.Object {
   /**

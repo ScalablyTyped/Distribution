@@ -4,31 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationDirectory extends js.Object {
   /* Read-only directory where the application is installed. */
-  var applicationDirectory: String
+  var applicationDirectory: String = js.native
   /* Root of app's private writable storage */
-  var applicationStorageDirectory: String
+  var applicationStorageDirectory: String = js.native
   /* Cached files that should survive app restarts. Apps should not rely on the OS to delete files in here. */
-  var cacheDirectory: String
+  var cacheDirectory: String = js.native
   /* Where to put app-specific data files. */
-  var dataDirectory: String
+  var dataDirectory: String = js.native
   /* iOS: Files private to the app, but that are meaningful to other applciations (e.g. Office files) */
-  var documentsDirectory: String
+  var documentsDirectory: String = js.native
   /* Android: the application space on external storage. */
-  var externalApplicationStorageDirectory: String
+  var externalApplicationStorageDirectory: String = js.native
   /* Android: the application cache on external storage. */
-  var externalCacheDirectory: String
+  var externalCacheDirectory: String = js.native
   /* Android: Where to put app-specific data files on external storage. */
-  var externalDataDirectory: String
+  var externalDataDirectory: String = js.native
   /* Android: the external storage (SD card) root. */
-  var externalRootDirectory: String
+  var externalRootDirectory: String = js.native
   /* BlackBerry10: Files globally available to all apps */
-  var sharedDirectory: String
+  var sharedDirectory: String = js.native
   /* iOS: Holds app-specific files that should be synced (e.g. to iCloud). */
-  var syncedDataDirectory: String
+  var syncedDataDirectory: String = js.native
   /* iOS: Temp directory that the OS can clear at will. */
-  var tempDirectory: String
+  var tempDirectory: String = js.native
 }
 
 object ApplicationDirectory {
@@ -50,5 +51,42 @@ object ApplicationDirectory {
     val __obj = js.Dynamic.literal(applicationDirectory = applicationDirectory.asInstanceOf[js.Any], applicationStorageDirectory = applicationStorageDirectory.asInstanceOf[js.Any], cacheDirectory = cacheDirectory.asInstanceOf[js.Any], dataDirectory = dataDirectory.asInstanceOf[js.Any], documentsDirectory = documentsDirectory.asInstanceOf[js.Any], externalApplicationStorageDirectory = externalApplicationStorageDirectory.asInstanceOf[js.Any], externalCacheDirectory = externalCacheDirectory.asInstanceOf[js.Any], externalDataDirectory = externalDataDirectory.asInstanceOf[js.Any], externalRootDirectory = externalRootDirectory.asInstanceOf[js.Any], sharedDirectory = sharedDirectory.asInstanceOf[js.Any], syncedDataDirectory = syncedDataDirectory.asInstanceOf[js.Any], tempDirectory = tempDirectory.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationDirectory]
   }
+  @scala.inline
+  implicit class ApplicationDirectoryOps[Self <: ApplicationDirectory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationDirectory(value: String): Self = this.set("applicationDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationStorageDirectory(value: String): Self = this.set("applicationStorageDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheDirectory(value: String): Self = this.set("cacheDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataDirectory(value: String): Self = this.set("dataDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocumentsDirectory(value: String): Self = this.set("documentsDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalApplicationStorageDirectory(value: String): Self = this.set("externalApplicationStorageDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalCacheDirectory(value: String): Self = this.set("externalCacheDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalDataDirectory(value: String): Self = this.set("externalDataDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExternalRootDirectory(value: String): Self = this.set("externalRootDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSharedDirectory(value: String): Self = this.set("sharedDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSyncedDataDirectory(value: String): Self = this.set("syncedDataDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTempDirectory(value: String): Self = this.set("tempDirectory", value.asInstanceOf[js.Any])
+  }
+  
 }
 

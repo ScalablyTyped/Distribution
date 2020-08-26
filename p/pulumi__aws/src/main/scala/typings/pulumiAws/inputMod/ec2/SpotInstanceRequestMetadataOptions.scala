@@ -23,16 +23,34 @@ trait SpotInstanceRequestMetadataOptions extends js.Object {
 
 object SpotInstanceRequestMetadataOptions {
   @scala.inline
-  def apply(
-    httpEndpoint: Input[String] = null,
-    httpPutResponseHopLimit: Input[Double] = null,
-    httpTokens: Input[String] = null
-  ): SpotInstanceRequestMetadataOptions = {
+  def apply(): SpotInstanceRequestMetadataOptions = {
     val __obj = js.Dynamic.literal()
-    if (httpEndpoint != null) __obj.updateDynamic("httpEndpoint")(httpEndpoint.asInstanceOf[js.Any])
-    if (httpPutResponseHopLimit != null) __obj.updateDynamic("httpPutResponseHopLimit")(httpPutResponseHopLimit.asInstanceOf[js.Any])
-    if (httpTokens != null) __obj.updateDynamic("httpTokens")(httpTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotInstanceRequestMetadataOptions]
   }
+  @scala.inline
+  implicit class SpotInstanceRequestMetadataOptionsOps[Self <: SpotInstanceRequestMetadataOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpEndpoint(value: Input[String]): Self = this.set("httpEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpoint: Self = this.set("httpEndpoint", js.undefined)
+    @scala.inline
+    def setHttpPutResponseHopLimit(value: Input[Double]): Self = this.set("httpPutResponseHopLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpPutResponseHopLimit: Self = this.set("httpPutResponseHopLimit", js.undefined)
+    @scala.inline
+    def setHttpTokens(value: Input[String]): Self = this.set("httpTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpTokens: Self = this.set("httpTokens", js.undefined)
+  }
+  
 }
 

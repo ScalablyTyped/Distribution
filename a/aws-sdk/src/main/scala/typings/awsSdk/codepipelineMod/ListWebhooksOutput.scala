@@ -18,11 +18,32 @@ trait ListWebhooksOutput extends js.Object {
 
 object ListWebhooksOutput {
   @scala.inline
-  def apply(NextToken: NextToken = null, webhooks: WebhookList = null): ListWebhooksOutput = {
+  def apply(): ListWebhooksOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (webhooks != null) __obj.updateDynamic("webhooks")(webhooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWebhooksOutput]
   }
+  @scala.inline
+  implicit class ListWebhooksOutputOps[Self <: ListWebhooksOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setWebhooksVarargs(value: ListWebhookItem*): Self = this.set("webhooks", js.Array(value :_*))
+    @scala.inline
+    def setWebhooks(value: WebhookList): Self = this.set("webhooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhooks: Self = this.set("webhooks", js.undefined)
+  }
+  
 }
 

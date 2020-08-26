@@ -43,12 +43,40 @@ object ^ extends js.Object {
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]]): Unit = js.native
   /** @name viz.exportWidgets(widgetInstances, options) */
   def exportWidgets(widgetInstances: js.Array[js.Array[DOMComponent]], options: FileName): Unit = js.native
+  def generateColors(palette: js.Array[String], count: Double, options: BaseColorSet): js.Array[String] = js.native
   /** @name viz.generateColors(palette, count, options) */
-  def generateColors(
-    palette: Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office | js.Array[String],
-    count: Double,
-    options: BaseColorSet
-  ): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Bright(palette: Bright, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Carmine(palette: Carmine, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_DarkMoon(palette: `Dark Moon`, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_DarkViolet(palette: `Dark Violet`, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Default(palette: Default, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_GreenMist(palette: `Green Mist`, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_HarmonyLight(palette: `Harmony Light`, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Material(palette: Material, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Ocean(palette: Ocean, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Office(palette: Office, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Pastel(palette: Pastel, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Soft(palette: Soft, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_SoftBlue(palette: `Soft Blue`, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_SoftPastel(palette: `Soft Pastel`, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Vintage(palette: Vintage, count: Double, options: BaseColorSet): js.Array[String] = js.native
+  @JSName("generateColors")
+  def generateColors_Violet(palette: Violet, count: Double, options: BaseColorSet): js.Array[String] = js.native
   /** @name viz.getMarkup(widgetInstances) */
   def getMarkup(widgetInstances: js.Array[DOMComponent]): String = js.native
   /** @name viz.getPalette(paletteName) */

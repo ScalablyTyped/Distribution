@@ -7,41 +7,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The interface for manipulating an SMS Application message. Application messages are those which cannot be characterized as any other message type. */
+@js.native
 trait SmsAppMessage extends js.Object {
   /** Reads or writes the binary part of the Application message. */
-  var binaryBody: IBuffer
+  var binaryBody: IBuffer = js.native
   /** The plain text body of the message. */
-  var body: String
+  var body: String = js.native
   /** The number to be dialed in reply to a received SMS message. */
-  var callbackNumber: String
+  var callbackNumber: String = js.native
   /** The class of the cellular device that received the message. */
-  var cellularClass: CellularClass
+  var cellularClass: CellularClass = js.native
   /** The device ID of the device that received the message. */
-  var deviceId: String
+  var deviceId: String = js.native
   /** The encoding used to send the message. */
-  var encoding: SmsEncoding
+  var encoding: SmsEncoding = js.native
   /** The telephone number of the sender of the message. */
-  var from: String
+  var from: String = js.native
   /** Indicates whether an SMS delivery status report was sent by the SMSC. */
-  var isDeliveryNotificationEnabled: Boolean
+  var isDeliveryNotificationEnabled: Boolean = js.native
   /** The message class of the message. */
-  var messageClass: SmsMessageClass
+  var messageClass: SmsMessageClass = js.native
   /** The message type of the message. */
-  var messageType: SmsMessageType
+  var messageType: SmsMessageType = js.native
   /** The port number of the message. */
-  var portNumber: Double
+  var portNumber: Double = js.native
   /** The Protocol identifier for the message. */
-  var protocolId: Double
+  var protocolId: Double = js.native
   /** The retry attempt count for the message. */
-  var retryAttemptCount: Double
+  var retryAttemptCount: Double = js.native
   /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
-  var simIccId: String
+  var simIccId: String = js.native
   /** The Teleservice identifier for the message. */
-  var teleserviceId: Double
+  var teleserviceId: Double = js.native
   /** The timestamp of the message. */
-  var timestamp: Date
+  var timestamp: Date = js.native
   /** The telephone number of the recipient of this message. */
-  var to: String
+  var to: String = js.native
 }
 
 object SmsAppMessage {
@@ -68,5 +69,52 @@ object SmsAppMessage {
     val __obj = js.Dynamic.literal(binaryBody = binaryBody.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], callbackNumber = callbackNumber.asInstanceOf[js.Any], cellularClass = cellularClass.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], isDeliveryNotificationEnabled = isDeliveryNotificationEnabled.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any], portNumber = portNumber.asInstanceOf[js.Any], protocolId = protocolId.asInstanceOf[js.Any], retryAttemptCount = retryAttemptCount.asInstanceOf[js.Any], simIccId = simIccId.asInstanceOf[js.Any], teleserviceId = teleserviceId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsAppMessage]
   }
+  @scala.inline
+  implicit class SmsAppMessageOps[Self <: SmsAppMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBinaryBody(value: IBuffer): Self = this.set("binaryBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCallbackNumber(value: String): Self = this.set("callbackNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCellularClass(value: CellularClass): Self = this.set("cellularClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeviceId(value: String): Self = this.set("deviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncoding(value: SmsEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsDeliveryNotificationEnabled(value: Boolean): Self = this.set("isDeliveryNotificationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageClass(value: SmsMessageClass): Self = this.set("messageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageType(value: SmsMessageType): Self = this.set("messageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortNumber(value: Double): Self = this.set("portNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtocolId(value: Double): Self = this.set("protocolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetryAttemptCount(value: Double): Self = this.set("retryAttemptCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSimIccId(value: String): Self = this.set("simIccId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTeleserviceId(value: Double): Self = this.set("teleserviceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimestamp(value: Date): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+  }
+  
 }
 

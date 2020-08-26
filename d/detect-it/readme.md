@@ -12,7 +12,7 @@ Detect if a device is mouse only, touch only, or hybrid
 | Keywords           | detect, device, mouse, touch, hybrid, passive events |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 754878 |
+| # downloads        | 784848 |
 | # stars            | 1 |
 
 ## Links

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_rateit"
-version := "1.1.1-dt-20200515Z-c821fb"
-scalaVersion := "2.13.2"
+version := "1.1.1-dt-20200515Z-da7829"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-table.react-table.TableInstance<D> & {  column  :react-table.react-table.ColumnInstance<D>} */
+/* Inlined react-table.react-table.TableInstance<D> & {  column :react-table.react-table.ColumnInstance<D>} */
 @js.native
 trait HeaderProps[D /* <: js.Object */] extends js.Object {
   var allColumns: js.Array[ColumnInstance[D]] = js.native

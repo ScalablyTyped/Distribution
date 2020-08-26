@@ -1,24 +1,17 @@
 package typings.androiduix.android.widget
 
-import typings.androiduix.android.content.Context
 import typings.androiduix.android.graphics.drawable.Drawable
 import typings.androiduix.android.view.View
 import typings.androiduix.android.widget.ExpandableListView.OnChildClickListener
 import typings.androiduix.android.widget.ExpandableListView.OnGroupClickListener
 import typings.androiduix.android.widget.ExpandableListView.OnGroupCollapseListener
 import typings.androiduix.android.widget.ExpandableListView.OnGroupExpandListener
-import typings.std.HTMLElement
-import typings.std.Map
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.ExpandableListView")
 @js.native
-class ExpandableListView_ protected () extends ListView {
-  def this(context: Context) = this()
-  def this(context: Context, attrs: HTMLElement) = this()
-  def this(context: Context, attrs: HTMLElement, defStyle: Map[String, String]) = this()
+trait ExpandableListView_ extends ListView {
   var mChildDivider: js.Any = js.native
   var mChildIndicator: js.Any = js.native
   var mChildIndicatorEnd: js.Any = js.native

@@ -14,7 +14,16 @@ trait Fields extends js.Object {
   @JSName("Word.Fields_typekey")
   var WordDotFields_typekey: Fields = js.native
   def Add(Range: Range): Field = js.native
+  def Add(
+    Range: Range,
+    Type: js.UndefOr[scala.Nothing],
+    Text: js.UndefOr[scala.Nothing],
+    PreserveFormatting: js.Any
+  ): Field = js.native
+  def Add(Range: Range, Type: js.UndefOr[scala.Nothing], Text: js.Any): Field = js.native
+  def Add(Range: Range, Type: js.UndefOr[scala.Nothing], Text: js.Any, PreserveFormatting: js.Any): Field = js.native
   def Add(Range: Range, Type: js.Any): Field = js.native
+  def Add(Range: Range, Type: js.Any, Text: js.UndefOr[scala.Nothing], PreserveFormatting: js.Any): Field = js.native
   def Add(Range: Range, Type: js.Any, Text: js.Any): Field = js.native
   def Add(Range: Range, Type: js.Any, Text: js.Any, PreserveFormatting: js.Any): Field = js.native
   def Item(Index: Double): Field = js.native

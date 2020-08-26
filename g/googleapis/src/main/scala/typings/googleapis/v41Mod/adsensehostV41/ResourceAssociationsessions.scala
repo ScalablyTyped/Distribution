@@ -31,6 +31,7 @@ class ResourceAssociationsessions protected () extends js.Object {
     */
   def start(): GaxiosPromise[SchemaAssociationSession] = js.native
   def start(callback: BodyResponseCallback[SchemaAssociationSession]): Unit = js.native
+  def start(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAssociationSession] = js.native
   def start(params: ParamsResourceAssociationsessionsStart): GaxiosPromise[SchemaAssociationSession] = js.native
   def start(
     params: ParamsResourceAssociationsessionsStart,
@@ -62,6 +63,7 @@ class ResourceAssociationsessions protected () extends js.Object {
     */
   def verify(): GaxiosPromise[SchemaAssociationSession] = js.native
   def verify(callback: BodyResponseCallback[SchemaAssociationSession]): Unit = js.native
+  def verify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAssociationSession] = js.native
   def verify(params: ParamsResourceAssociationsessionsVerify): GaxiosPromise[SchemaAssociationSession] = js.native
   def verify(
     params: ParamsResourceAssociationsessionsVerify,

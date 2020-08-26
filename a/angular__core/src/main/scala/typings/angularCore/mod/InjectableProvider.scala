@@ -36,15 +36,13 @@ object InjectableProvider {
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
-  def ConstructorSansProvider(deps: js.Array[_] = null): InjectableProvider = {
+  def ConstructorSansProvider(): InjectableProvider = {
     val __obj = js.Dynamic.literal()
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectableProvider]
   }
   @scala.inline
-  def FactorySansProvider(useFactory: js.Function, deps: js.Array[_] = null): InjectableProvider = {
+  def FactorySansProvider(useFactory: js.Function): InjectableProvider = {
     val __obj = js.Dynamic.literal(useFactory = useFactory.asInstanceOf[js.Any])
-    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectableProvider]
   }
 }

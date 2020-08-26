@@ -4,87 +4,154 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlaylistTrack extends js.Object {
-  var album: js.UndefOr[String] = js.undefined
-  var albumArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined
-  var albumArtist: js.UndefOr[String] = js.undefined
-  var albumAvailableForPurchase: js.UndefOr[Boolean] = js.undefined
-  var albumId: js.UndefOr[String] = js.undefined
-  var artist: js.UndefOr[String] = js.undefined
-  var artistArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined
-  var artistId: js.UndefOr[js.Array[String]] = js.undefined
-  var composer: js.UndefOr[String] = js.undefined
-  var contentType: js.UndefOr[String] = js.undefined
-  var discNumber: js.UndefOr[Double] = js.undefined
-  var durationMillis: js.UndefOr[String] = js.undefined
-  var estimatedSize: js.UndefOr[String] = js.undefined
-  var genre: js.UndefOr[String] = js.undefined
-  var kind: js.UndefOr[String] = js.undefined
-  var nid: js.UndefOr[String] = js.undefined
-  var playCount: js.UndefOr[Double] = js.undefined
-  var storeId: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var trackAvailableForPurchase: js.UndefOr[Boolean] = js.undefined
-  var trackAvailableForSubscription: js.UndefOr[Boolean] = js.undefined
-  var trackNumber: js.UndefOr[Double] = js.undefined
-  var trackType: js.UndefOr[String] = js.undefined
-  var year: js.UndefOr[Double] = js.undefined
+  var album: js.UndefOr[String] = js.native
+  var albumArtRef: js.UndefOr[js.Array[ArtRef]] = js.native
+  var albumArtist: js.UndefOr[String] = js.native
+  var albumAvailableForPurchase: js.UndefOr[Boolean] = js.native
+  var albumId: js.UndefOr[String] = js.native
+  var artist: js.UndefOr[String] = js.native
+  var artistArtRef: js.UndefOr[js.Array[ArtRef]] = js.native
+  var artistId: js.UndefOr[js.Array[String]] = js.native
+  var composer: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.native
+  var discNumber: js.UndefOr[Double] = js.native
+  var durationMillis: js.UndefOr[String] = js.native
+  var estimatedSize: js.UndefOr[String] = js.native
+  var genre: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.native
+  var nid: js.UndefOr[String] = js.native
+  var playCount: js.UndefOr[Double] = js.native
+  var storeId: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var trackAvailableForPurchase: js.UndefOr[Boolean] = js.native
+  var trackAvailableForSubscription: js.UndefOr[Boolean] = js.native
+  var trackNumber: js.UndefOr[Double] = js.native
+  var trackType: js.UndefOr[String] = js.native
+  var year: js.UndefOr[Double] = js.native
 }
 
 object PlaylistTrack {
   @scala.inline
-  def apply(
-    album: String = null,
-    albumArtRef: js.Array[ArtRef] = null,
-    albumArtist: String = null,
-    albumAvailableForPurchase: js.UndefOr[Boolean] = js.undefined,
-    albumId: String = null,
-    artist: String = null,
-    artistArtRef: js.Array[ArtRef] = null,
-    artistId: js.Array[String] = null,
-    composer: String = null,
-    contentType: String = null,
-    discNumber: js.UndefOr[Double] = js.undefined,
-    durationMillis: String = null,
-    estimatedSize: String = null,
-    genre: String = null,
-    kind: String = null,
-    nid: String = null,
-    playCount: js.UndefOr[Double] = js.undefined,
-    storeId: String = null,
-    title: String = null,
-    trackAvailableForPurchase: js.UndefOr[Boolean] = js.undefined,
-    trackAvailableForSubscription: js.UndefOr[Boolean] = js.undefined,
-    trackNumber: js.UndefOr[Double] = js.undefined,
-    trackType: String = null,
-    year: js.UndefOr[Double] = js.undefined
-  ): PlaylistTrack = {
+  def apply(): PlaylistTrack = {
     val __obj = js.Dynamic.literal()
-    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
-    if (albumArtRef != null) __obj.updateDynamic("albumArtRef")(albumArtRef.asInstanceOf[js.Any])
-    if (albumArtist != null) __obj.updateDynamic("albumArtist")(albumArtist.asInstanceOf[js.Any])
-    if (!js.isUndefined(albumAvailableForPurchase)) __obj.updateDynamic("albumAvailableForPurchase")(albumAvailableForPurchase.get.asInstanceOf[js.Any])
-    if (albumId != null) __obj.updateDynamic("albumId")(albumId.asInstanceOf[js.Any])
-    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
-    if (artistArtRef != null) __obj.updateDynamic("artistArtRef")(artistArtRef.asInstanceOf[js.Any])
-    if (artistId != null) __obj.updateDynamic("artistId")(artistId.asInstanceOf[js.Any])
-    if (composer != null) __obj.updateDynamic("composer")(composer.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(discNumber)) __obj.updateDynamic("discNumber")(discNumber.get.asInstanceOf[js.Any])
-    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis.asInstanceOf[js.Any])
-    if (estimatedSize != null) __obj.updateDynamic("estimatedSize")(estimatedSize.asInstanceOf[js.Any])
-    if (genre != null) __obj.updateDynamic("genre")(genre.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (nid != null) __obj.updateDynamic("nid")(nid.asInstanceOf[js.Any])
-    if (!js.isUndefined(playCount)) __obj.updateDynamic("playCount")(playCount.get.asInstanceOf[js.Any])
-    if (storeId != null) __obj.updateDynamic("storeId")(storeId.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackAvailableForPurchase)) __obj.updateDynamic("trackAvailableForPurchase")(trackAvailableForPurchase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackAvailableForSubscription)) __obj.updateDynamic("trackAvailableForSubscription")(trackAvailableForSubscription.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackNumber)) __obj.updateDynamic("trackNumber")(trackNumber.get.asInstanceOf[js.Any])
-    if (trackType != null) __obj.updateDynamic("trackType")(trackType.asInstanceOf[js.Any])
-    if (!js.isUndefined(year)) __obj.updateDynamic("year")(year.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistTrack]
   }
+  @scala.inline
+  implicit class PlaylistTrackOps[Self <: PlaylistTrack] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbum(value: String): Self = this.set("album", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbum: Self = this.set("album", js.undefined)
+    @scala.inline
+    def setAlbumArtRefVarargs(value: ArtRef*): Self = this.set("albumArtRef", js.Array(value :_*))
+    @scala.inline
+    def setAlbumArtRef(value: js.Array[ArtRef]): Self = this.set("albumArtRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumArtRef: Self = this.set("albumArtRef", js.undefined)
+    @scala.inline
+    def setAlbumArtist(value: String): Self = this.set("albumArtist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumArtist: Self = this.set("albumArtist", js.undefined)
+    @scala.inline
+    def setAlbumAvailableForPurchase(value: Boolean): Self = this.set("albumAvailableForPurchase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumAvailableForPurchase: Self = this.set("albumAvailableForPurchase", js.undefined)
+    @scala.inline
+    def setAlbumId(value: String): Self = this.set("albumId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumId: Self = this.set("albumId", js.undefined)
+    @scala.inline
+    def setArtist(value: String): Self = this.set("artist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtist: Self = this.set("artist", js.undefined)
+    @scala.inline
+    def setArtistArtRefVarargs(value: ArtRef*): Self = this.set("artistArtRef", js.Array(value :_*))
+    @scala.inline
+    def setArtistArtRef(value: js.Array[ArtRef]): Self = this.set("artistArtRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtistArtRef: Self = this.set("artistArtRef", js.undefined)
+    @scala.inline
+    def setArtistIdVarargs(value: String*): Self = this.set("artistId", js.Array(value :_*))
+    @scala.inline
+    def setArtistId(value: js.Array[String]): Self = this.set("artistId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtistId: Self = this.set("artistId", js.undefined)
+    @scala.inline
+    def setComposer(value: String): Self = this.set("composer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComposer: Self = this.set("composer", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setDiscNumber(value: Double): Self = this.set("discNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscNumber: Self = this.set("discNumber", js.undefined)
+    @scala.inline
+    def setDurationMillis(value: String): Self = this.set("durationMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationMillis: Self = this.set("durationMillis", js.undefined)
+    @scala.inline
+    def setEstimatedSize(value: String): Self = this.set("estimatedSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedSize: Self = this.set("estimatedSize", js.undefined)
+    @scala.inline
+    def setGenre(value: String): Self = this.set("genre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenre: Self = this.set("genre", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNid(value: String): Self = this.set("nid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNid: Self = this.set("nid", js.undefined)
+    @scala.inline
+    def setPlayCount(value: Double): Self = this.set("playCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayCount: Self = this.set("playCount", js.undefined)
+    @scala.inline
+    def setStoreId(value: String): Self = this.set("storeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreId: Self = this.set("storeId", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTrackAvailableForPurchase(value: Boolean): Self = this.set("trackAvailableForPurchase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackAvailableForPurchase: Self = this.set("trackAvailableForPurchase", js.undefined)
+    @scala.inline
+    def setTrackAvailableForSubscription(value: Boolean): Self = this.set("trackAvailableForSubscription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackAvailableForSubscription: Self = this.set("trackAvailableForSubscription", js.undefined)
+    @scala.inline
+    def setTrackNumber(value: Double): Self = this.set("trackNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackNumber: Self = this.set("trackNumber", js.undefined)
+    @scala.inline
+    def setTrackType(value: String): Self = this.set("trackType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackType: Self = this.set("trackType", js.undefined)
+    @scala.inline
+    def setYear(value: Double): Self = this.set("year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYear: Self = this.set("year", js.undefined)
+  }
+  
 }
 

@@ -83,46 +83,94 @@ trait GetObjectRequest extends js.Object {
 
 object GetObjectRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Key: ObjectKey,
-    IfMatch: IfMatch = null,
-    IfModifiedSince: IfModifiedSince = null,
-    IfNoneMatch: IfNoneMatch = null,
-    IfUnmodifiedSince: IfUnmodifiedSince = null,
-    PartNumber: js.UndefOr[PartNumber] = js.undefined,
-    Range: Range = null,
-    RequestPayer: RequestPayer = null,
-    ResponseCacheControl: ResponseCacheControl = null,
-    ResponseContentDisposition: ResponseContentDisposition = null,
-    ResponseContentEncoding: ResponseContentEncoding = null,
-    ResponseContentLanguage: ResponseContentLanguage = null,
-    ResponseContentType: ResponseContentType = null,
-    ResponseExpires: ResponseExpires = null,
-    SSECustomerAlgorithm: SSECustomerAlgorithm = null,
-    SSECustomerKey: SSECustomerKey = null,
-    SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
-    VersionId: ObjectVersionId = null
-  ): GetObjectRequest = {
+  def apply(Bucket: BucketName, Key: ObjectKey): GetObjectRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (IfMatch != null) __obj.updateDynamic("IfMatch")(IfMatch.asInstanceOf[js.Any])
-    if (IfModifiedSince != null) __obj.updateDynamic("IfModifiedSince")(IfModifiedSince.asInstanceOf[js.Any])
-    if (IfNoneMatch != null) __obj.updateDynamic("IfNoneMatch")(IfNoneMatch.asInstanceOf[js.Any])
-    if (IfUnmodifiedSince != null) __obj.updateDynamic("IfUnmodifiedSince")(IfUnmodifiedSince.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartNumber)) __obj.updateDynamic("PartNumber")(PartNumber.get.asInstanceOf[js.Any])
-    if (Range != null) __obj.updateDynamic("Range")(Range.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (ResponseCacheControl != null) __obj.updateDynamic("ResponseCacheControl")(ResponseCacheControl.asInstanceOf[js.Any])
-    if (ResponseContentDisposition != null) __obj.updateDynamic("ResponseContentDisposition")(ResponseContentDisposition.asInstanceOf[js.Any])
-    if (ResponseContentEncoding != null) __obj.updateDynamic("ResponseContentEncoding")(ResponseContentEncoding.asInstanceOf[js.Any])
-    if (ResponseContentLanguage != null) __obj.updateDynamic("ResponseContentLanguage")(ResponseContentLanguage.asInstanceOf[js.Any])
-    if (ResponseContentType != null) __obj.updateDynamic("ResponseContentType")(ResponseContentType.asInstanceOf[js.Any])
-    if (ResponseExpires != null) __obj.updateDynamic("ResponseExpires")(ResponseExpires.asInstanceOf[js.Any])
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
-    if (SSECustomerKey != null) __obj.updateDynamic("SSECustomerKey")(SSECustomerKey.asInstanceOf[js.Any])
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectRequest]
   }
+  @scala.inline
+  implicit class GetObjectRequestOps[Self <: GetObjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIfMatch(value: IfMatch): Self = this.set("IfMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMatch: Self = this.set("IfMatch", js.undefined)
+    @scala.inline
+    def setIfModifiedSince(value: IfModifiedSince): Self = this.set("IfModifiedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfModifiedSince: Self = this.set("IfModifiedSince", js.undefined)
+    @scala.inline
+    def setIfNoneMatch(value: IfNoneMatch): Self = this.set("IfNoneMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfNoneMatch: Self = this.set("IfNoneMatch", js.undefined)
+    @scala.inline
+    def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = this.set("IfUnmodifiedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfUnmodifiedSince: Self = this.set("IfUnmodifiedSince", js.undefined)
+    @scala.inline
+    def setPartNumber(value: PartNumber): Self = this.set("PartNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartNumber: Self = this.set("PartNumber", js.undefined)
+    @scala.inline
+    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("Range", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setResponseCacheControl(value: ResponseCacheControl): Self = this.set("ResponseCacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCacheControl: Self = this.set("ResponseCacheControl", js.undefined)
+    @scala.inline
+    def setResponseContentDisposition(value: ResponseContentDisposition): Self = this.set("ResponseContentDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseContentDisposition: Self = this.set("ResponseContentDisposition", js.undefined)
+    @scala.inline
+    def setResponseContentEncoding(value: ResponseContentEncoding): Self = this.set("ResponseContentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseContentEncoding: Self = this.set("ResponseContentEncoding", js.undefined)
+    @scala.inline
+    def setResponseContentLanguage(value: ResponseContentLanguage): Self = this.set("ResponseContentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseContentLanguage: Self = this.set("ResponseContentLanguage", js.undefined)
+    @scala.inline
+    def setResponseContentType(value: ResponseContentType): Self = this.set("ResponseContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseContentType: Self = this.set("ResponseContentType", js.undefined)
+    @scala.inline
+    def setResponseExpires(value: ResponseExpires): Self = this.set("ResponseExpires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseExpires: Self = this.set("ResponseExpires", js.undefined)
+    @scala.inline
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    @scala.inline
+    def setSSECustomerKey(value: SSECustomerKey): Self = this.set("SSECustomerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKey: Self = this.set("SSECustomerKey", js.undefined)
+    @scala.inline
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    @scala.inline
+    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

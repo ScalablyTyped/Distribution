@@ -31,7 +31,35 @@ trait WebDriverProtocolSessions extends js.Object {
     * }
     */
   def session(): this.type = js.native
+  def session(
+    action: js.UndefOr[scala.Nothing],
+    sessionId: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, _]], 
+      Unit
+    ]
+  ): this.type = js.native
+  def session(action: js.UndefOr[scala.Nothing], sessionId: String): this.type = js.native
+  def session(
+    action: js.UndefOr[scala.Nothing],
+    sessionId: String,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, _]], 
+      Unit
+    ]
+  ): this.type = js.native
   def session(action: String): this.type = js.native
+  def session(
+    action: String,
+    sessionId: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, _]], 
+      Unit
+    ]
+  ): this.type = js.native
   def session(action: String, sessionId: String): this.type = js.native
   def session(
     action: String,

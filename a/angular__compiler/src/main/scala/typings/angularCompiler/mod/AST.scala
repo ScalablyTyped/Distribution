@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "AST")
 @js.native
 class AST protected ()
-  extends typings.angularCompiler.publicApiMod.AST {
+  extends typings.angularCompiler.compilerMod.AST {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     /**

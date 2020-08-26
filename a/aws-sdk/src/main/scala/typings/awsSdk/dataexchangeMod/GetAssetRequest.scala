@@ -26,5 +26,24 @@ object GetAssetRequest {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetRequest]
   }
+  @scala.inline
+  implicit class GetAssetRequestOps[Self <: GetAssetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetId(value: string): Self = this.set("AssetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSetId(value: string): Self = this.set("DataSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionId(value: string): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

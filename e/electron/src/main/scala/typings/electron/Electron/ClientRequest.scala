@@ -8,7 +8,7 @@ import typings.electron.electronStrings.login
 import typings.electron.electronStrings.redirect
 import typings.electron.electronStrings.response
 import typings.node.Buffer
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import typings.std.Record
 import scala.scalajs.js
@@ -60,10 +60,19 @@ trait ClientRequest extends EventEmitter {
     * will not be allowed. The `finish` event is emitted just after the end operation.
     */
   def end(): Unit = js.native
+  def end(
+    chunk: js.UndefOr[scala.Nothing],
+    encoding: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Unit = js.native
+  def end(chunk: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
+  def end(chunk: js.UndefOr[scala.Nothing], encoding: String, callback: js.Function0[Unit]): Unit = js.native
   def end(chunk: String): Unit = js.native
+  def end(chunk: String, encoding: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def end(chunk: String, encoding: String): Unit = js.native
   def end(chunk: String, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   def end(chunk: Buffer): Unit = js.native
+  def end(chunk: Buffer, encoding: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def end(chunk: Buffer, encoding: String): Unit = js.native
   def end(chunk: Buffer, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   /**
@@ -237,9 +246,11 @@ trait ClientRequest extends EventEmitter {
     * it is not allowed to add or remove a custom header.
     */
   def write(chunk: String): Unit = js.native
+  def write(chunk: String, encoding: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def write(chunk: String, encoding: String): Unit = js.native
   def write(chunk: String, encoding: String, callback: js.Function0[Unit]): Unit = js.native
   def write(chunk: Buffer): Unit = js.native
+  def write(chunk: Buffer, encoding: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def write(chunk: Buffer, encoding: String): Unit = js.native
   def write(chunk: Buffer, encoding: String, callback: js.Function0[Unit]): Unit = js.native
 }

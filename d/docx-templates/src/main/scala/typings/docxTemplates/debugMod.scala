@@ -12,7 +12,7 @@ object debugMod extends js.Object {
   object logger extends js.Object {
     @JSName("debug")
     var debug_Original: LogSink = js.native
-    def debug(): Unit = js.native
+    def debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
   }
   

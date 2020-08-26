@@ -1,54 +1,39 @@
 package typings.rcTabs.interfaceMod
 
 import typings.rcTabs.tabPaneMod.TabPaneProps
-import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tab extends TabPaneProps {
-  var key: String
-  var node: ReactElement
+  var key: String = js.native
+  var node: ReactElement = js.native
 }
 
 object Tab {
   @scala.inline
-  def apply(
-    key: String,
-    node: ReactElement,
-    active: js.UndefOr[Boolean] = js.undefined,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    className: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    closeIcon: ReactNode = null,
-    destroyInactiveTabPane: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    forceRender: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    tab: ReactNode = null,
-    tabKey: String = null
-  ): Tab = {
+  def apply(key: String, node: ReactElement): Tab = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyInactiveTabPane)) __obj.updateDynamic("destroyInactiveTabPane")(destroyInactiveTabPane.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tab != null) __obj.updateDynamic("tab")(tab.asInstanceOf[js.Any])
-    if (tabKey != null) __obj.updateDynamic("tabKey")(tabKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tab]
   }
+  @scala.inline
+  implicit class TabOps[Self <: Tab] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNode(value: ReactElement): Self = this.set("node", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -52,6 +52,7 @@ object configParserMod extends js.Object {
       */
     def getSpecs(config: Config): js.Array[String] = js.native
     def resolveFilePatterns(patterns: String): js.Array[String] = js.native
+    def resolveFilePatterns(patterns: String, opt_omitWarnings: js.UndefOr[scala.Nothing], opt_relativeTo: String): js.Array[String] = js.native
     def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean): js.Array[String] = js.native
     def resolveFilePatterns(patterns: String, opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = js.native
     /**
@@ -64,6 +65,7 @@ object configParserMod extends js.Object {
       * @return {Array} The resolved file paths.
       */
     def resolveFilePatterns(patterns: js.Array[String]): js.Array[String] = js.native
+    def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: js.UndefOr[scala.Nothing], opt_relativeTo: String): js.Array[String] = js.native
     def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean): js.Array[String] = js.native
     def resolveFilePatterns(patterns: js.Array[String], opt_omitWarnings: Boolean, opt_relativeTo: String): js.Array[String] = js.native
   }

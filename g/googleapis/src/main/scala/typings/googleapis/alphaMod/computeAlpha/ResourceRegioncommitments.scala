@@ -31,6 +31,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaCommitmentAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaCommitmentAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitmentAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceRegioncommitmentsAggregatedlist): GaxiosPromise[SchemaCommitmentAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceRegioncommitmentsAggregatedlist,
@@ -64,6 +65,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaCommitment] = js.native
   def get(callback: BodyResponseCallback[SchemaCommitment]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitment] = js.native
   def get(params: ParamsResourceRegioncommitmentsGet): GaxiosPromise[SchemaCommitment] = js.native
   def get(params: ParamsResourceRegioncommitmentsGet, callback: BodyResponseCallback[SchemaCommitment]): Unit = js.native
   def get(
@@ -95,6 +97,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegioncommitmentsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceRegioncommitmentsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -128,6 +131,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaCommitmentList] = js.native
   def list(callback: BodyResponseCallback[SchemaCommitmentList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitmentList] = js.native
   def list(params: ParamsResourceRegioncommitmentsList): GaxiosPromise[SchemaCommitmentList] = js.native
   def list(params: ParamsResourceRegioncommitmentsList, callback: BodyResponseCallback[SchemaCommitmentList]): Unit = js.native
   def list(
@@ -158,6 +162,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceRegioncommitmentsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceRegioncommitmentsTestiampermissions,
@@ -193,6 +198,7 @@ class ResourceRegioncommitments protected () extends js.Object {
     */
   def updateReservations(): GaxiosPromise[SchemaOperation] = js.native
   def updateReservations(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updateReservations(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updateReservations(params: ParamsResourceRegioncommitmentsUpdatereservations): GaxiosPromise[SchemaOperation] = js.native
   def updateReservations(
     params: ParamsResourceRegioncommitmentsUpdatereservations,

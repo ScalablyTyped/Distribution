@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Plan extends js.Object {
-  var data_source_uuid: js.UndefOr[String] = js.undefined
-  var external_id: js.UndefOr[String] = js.undefined
-  var interval_count: js.UndefOr[Double] = js.undefined
-  var interval_unit: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var uuid: js.UndefOr[String] = js.undefined
+  var data_source_uuid: js.UndefOr[String] = js.native
+  var external_id: js.UndefOr[String] = js.native
+  var interval_count: js.UndefOr[Double] = js.native
+  var interval_unit: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.native
 }
 
 object Plan {
   @scala.inline
-  def apply(
-    data_source_uuid: String = null,
-    external_id: String = null,
-    interval_count: js.UndefOr[Double] = js.undefined,
-    interval_unit: String = null,
-    name: String = null,
-    uuid: String = null
-  ): Plan = {
+  def apply(): Plan = {
     val __obj = js.Dynamic.literal()
-    if (data_source_uuid != null) __obj.updateDynamic("data_source_uuid")(data_source_uuid.asInstanceOf[js.Any])
-    if (external_id != null) __obj.updateDynamic("external_id")(external_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(interval_count)) __obj.updateDynamic("interval_count")(interval_count.get.asInstanceOf[js.Any])
-    if (interval_unit != null) __obj.updateDynamic("interval_unit")(interval_unit.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plan]
   }
+  @scala.inline
+  implicit class PlanOps[Self <: typings.chartmogulNode.mod.Plan.Plan] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData_source_uuid(value: String): Self = this.set("data_source_uuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData_source_uuid: Self = this.set("data_source_uuid", js.undefined)
+    @scala.inline
+    def setExternal_id(value: String): Self = this.set("external_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternal_id: Self = this.set("external_id", js.undefined)
+    @scala.inline
+    def setInterval_count(value: Double): Self = this.set("interval_count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval_count: Self = this.set("interval_count", js.undefined)
+    @scala.inline
+    def setInterval_unit(value: String): Self = this.set("interval_unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval_unit: Self = this.set("interval_unit", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUuid(value: String): Self = this.set("uuid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUuid: Self = this.set("uuid", js.undefined)
+  }
+  
 }
 

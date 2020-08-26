@@ -34,12 +34,12 @@ trait Clownface[T /* <: AnyContext */, D /* <: DatasetCore[Quad, Quad] */] exten
     callback: AddCallback[D, X]
   ): Clownface[T, D] = js.native
   def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term]): Clownface[T, D] = js.native
-  def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): Clownface[T, D] = js.native
   def addList[X /* <: Term */](
     predicates: SingleOrArrayOfTerms[Term],
-    objects: SingleOrArrayOfTermsOrLiterals[X],
+    objects: js.UndefOr[SingleOrArrayOfTermsOrLiterals[X]],
     callback: AddCallback[D, X]
   ): Clownface[T, D] = js.native
+  def addList[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): Clownface[T, D] = js.native
   def addOut(predicates: SingleOrArrayOfTerms[Term]): Clownface[T, D] = js.native
   def addOut(predicates: SingleOrArrayOfTerms[Term], callback: AddCallback[D, BlankNode]): Clownface[T, D] = js.native
   def addOut[X /* <: Term */](predicates: SingleOrArrayOfTerms[Term], objects: SingleOrArrayOfTermsOrLiterals[X]): Clownface[T, D] = js.native

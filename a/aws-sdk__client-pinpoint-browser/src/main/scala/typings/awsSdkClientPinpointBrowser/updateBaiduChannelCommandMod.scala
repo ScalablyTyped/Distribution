@@ -26,16 +26,9 @@ object updateBaiduChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateBaiduChannelInput) = this()
-    /* CompleteClass */
-    override val input: UpdateBaiduChannelInput = js.native
     val middlewareStack: MiddlewareStack[UpdateBaiduChannelInput, UpdateBaiduChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateBaiduChannelInput, UpdateBaiduChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateBaiduChannelInput, UpdateBaiduChannelOutput] = js.native
   }

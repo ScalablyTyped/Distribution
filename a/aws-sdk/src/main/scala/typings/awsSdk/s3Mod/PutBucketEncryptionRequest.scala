@@ -19,14 +19,30 @@ trait PutBucketEncryptionRequest extends js.Object {
 
 object PutBucketEncryptionRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration,
-    ContentMD5: ContentMD5 = null
-  ): PutBucketEncryptionRequest = {
+  def apply(Bucket: BucketName, ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration): PutBucketEncryptionRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ServerSideEncryptionConfiguration = ServerSideEncryptionConfiguration.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketEncryptionRequest]
   }
+  @scala.inline
+  implicit class PutBucketEncryptionRequestOps[Self <: PutBucketEncryptionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = this.set("ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+  }
+  
 }
 

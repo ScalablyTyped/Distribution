@@ -14,10 +14,28 @@ trait BatchGetCustomDataIdentifiersRequest extends js.Object {
 
 object BatchGetCustomDataIdentifiersRequest {
   @scala.inline
-  def apply(ids: listOfString = null): BatchGetCustomDataIdentifiersRequest = {
+  def apply(): BatchGetCustomDataIdentifiersRequest = {
     val __obj = js.Dynamic.literal()
-    if (ids != null) __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetCustomDataIdentifiersRequest]
   }
+  @scala.inline
+  implicit class BatchGetCustomDataIdentifiersRequestOps[Self <: BatchGetCustomDataIdentifiersRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdsVarargs(value: string*): Self = this.set("ids", js.Array(value :_*))
+    @scala.inline
+    def setIds(value: listOfString): Self = this.set("ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIds: Self = this.set("ids", js.undefined)
+  }
+  
 }
 

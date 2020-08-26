@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   * A thread will be created that reads from the input stream and writes the data to the connected output stream. Data will not be buffered by this
   * service.
   */
+@js.native
 trait Pump
   extends XActiveDataSource
      with XActiveDataSink

@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Devices.Sensors.LightSensorReadingChangedEventArgs")
 @js.native
 abstract class LightSensorReadingChangedEventArgs ()
-  extends typings.winrtUwp.Windows.Devices.Sensors.LightSensorReadingChangedEventArgs {
-  /** Gets the current ambient light-sensor reading. */
-  /* CompleteClass */
-  override var reading: typings.winrtUwp.Windows.Devices.Sensors.LightSensorReading = js.native
-}
+  extends typings.winrtUwp.Windows.Devices.Sensors.LightSensorReadingChangedEventArgs
 

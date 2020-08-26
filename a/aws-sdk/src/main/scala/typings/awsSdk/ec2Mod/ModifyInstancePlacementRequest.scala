@@ -38,23 +38,48 @@ trait ModifyInstancePlacementRequest extends js.Object {
 
 object ModifyInstancePlacementRequest {
   @scala.inline
-  def apply(
-    InstanceId: InstanceId,
-    Affinity: Affinity = null,
-    GroupName: PlacementGroupName = null,
-    HostId: DedicatedHostId = null,
-    HostResourceGroupArn: String = null,
-    PartitionNumber: js.UndefOr[Integer] = js.undefined,
-    Tenancy: HostTenancy = null
-  ): ModifyInstancePlacementRequest = {
+  def apply(InstanceId: InstanceId): ModifyInstancePlacementRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
-    if (Affinity != null) __obj.updateDynamic("Affinity")(Affinity.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (HostId != null) __obj.updateDynamic("HostId")(HostId.asInstanceOf[js.Any])
-    if (HostResourceGroupArn != null) __obj.updateDynamic("HostResourceGroupArn")(HostResourceGroupArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartitionNumber)) __obj.updateDynamic("PartitionNumber")(PartitionNumber.get.asInstanceOf[js.Any])
-    if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstancePlacementRequest]
   }
+  @scala.inline
+  implicit class ModifyInstancePlacementRequestOps[Self <: ModifyInstancePlacementRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAffinity(value: Affinity): Self = this.set("Affinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffinity: Self = this.set("Affinity", js.undefined)
+    @scala.inline
+    def setGroupName(value: PlacementGroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setHostId(value: DedicatedHostId): Self = this.set("HostId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostId: Self = this.set("HostId", js.undefined)
+    @scala.inline
+    def setHostResourceGroupArn(value: String): Self = this.set("HostResourceGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostResourceGroupArn: Self = this.set("HostResourceGroupArn", js.undefined)
+    @scala.inline
+    def setPartitionNumber(value: Integer): Self = this.set("PartitionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionNumber: Self = this.set("PartitionNumber", js.undefined)
+    @scala.inline
+    def setTenancy(value: HostTenancy): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+  }
+  
 }
 

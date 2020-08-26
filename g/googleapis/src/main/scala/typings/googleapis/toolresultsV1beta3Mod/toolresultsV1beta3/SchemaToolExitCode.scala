@@ -19,10 +19,26 @@ trait SchemaToolExitCode extends js.Object {
 
 object SchemaToolExitCode {
   @scala.inline
-  def apply(number: js.UndefOr[Double] = js.undefined): SchemaToolExitCode = {
+  def apply(): SchemaToolExitCode = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaToolExitCode]
   }
+  @scala.inline
+  implicit class SchemaToolExitCodeOps[Self <: SchemaToolExitCode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+  }
+  
 }
 

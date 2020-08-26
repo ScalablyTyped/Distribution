@@ -22,14 +22,30 @@ trait CloudFrontOriginAccessIdentity extends js.Object {
 
 object CloudFrontOriginAccessIdentity {
   @scala.inline
-  def apply(
-    Id: String,
-    S3CanonicalUserId: String,
-    CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfig = null
-  ): CloudFrontOriginAccessIdentity = {
+  def apply(Id: String, S3CanonicalUserId: String): CloudFrontOriginAccessIdentity = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], S3CanonicalUserId = S3CanonicalUserId.asInstanceOf[js.Any])
-    if (CloudFrontOriginAccessIdentityConfig != null) __obj.updateDynamic("CloudFrontOriginAccessIdentityConfig")(CloudFrontOriginAccessIdentityConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudFrontOriginAccessIdentity]
   }
+  @scala.inline
+  implicit class CloudFrontOriginAccessIdentityOps[Self <: CloudFrontOriginAccessIdentity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3CanonicalUserId(value: String): Self = this.set("S3CanonicalUserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloudFrontOriginAccessIdentityConfig(value: CloudFrontOriginAccessIdentityConfig): Self = this.set("CloudFrontOriginAccessIdentityConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudFrontOriginAccessIdentityConfig: Self = this.set("CloudFrontOriginAccessIdentityConfig", js.undefined)
+  }
+  
 }
 

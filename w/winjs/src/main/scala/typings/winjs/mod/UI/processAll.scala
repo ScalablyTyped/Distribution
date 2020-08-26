@@ -16,6 +16,7 @@ object processAll extends js.Object {
     * @returns A promise that is fulfilled when binding has been applied to all the controls.
     **/
   def apply(): Promise[_] = js.native
+  def apply(rootElement: js.UndefOr[scala.Nothing], skipRoot: Boolean): Promise[_] = js.native
   def apply(rootElement: Element): Promise[_] = js.native
   def apply(rootElement: Element, skipRoot: Boolean): Promise[_] = js.native
 }

@@ -38,9 +38,9 @@ trait VpcEndpointArgs extends js.Object {
     */
   val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The VPC endpoint type, `Gateway` or `Interface`. Defaults to `Gateway`.
     */
@@ -53,28 +53,64 @@ trait VpcEndpointArgs extends js.Object {
 
 object VpcEndpointArgs {
   @scala.inline
-  def apply(
-    serviceName: Input[String],
-    vpcId: Input[String],
-    autoAccept: Input[Boolean] = null,
-    policy: Input[String] = null,
-    privateDnsEnabled: Input[Boolean] = null,
-    routeTableIds: Input[js.Array[Input[String]]] = null,
-    securityGroupIds: Input[js.Array[Input[String]]] = null,
-    subnetIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcEndpointType: Input[String] = null
-  ): VpcEndpointArgs = {
+  def apply(serviceName: Input[String], vpcId: Input[String]): VpcEndpointArgs = {
     val __obj = js.Dynamic.literal(serviceName = serviceName.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
-    if (autoAccept != null) __obj.updateDynamic("autoAccept")(autoAccept.asInstanceOf[js.Any])
-    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
-    if (privateDnsEnabled != null) __obj.updateDynamic("privateDnsEnabled")(privateDnsEnabled.asInstanceOf[js.Any])
-    if (routeTableIds != null) __obj.updateDynamic("routeTableIds")(routeTableIds.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcEndpointType != null) __obj.updateDynamic("vpcEndpointType")(vpcEndpointType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointArgs]
   }
+  @scala.inline
+  implicit class VpcEndpointArgsOps[Self <: VpcEndpointArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceName(value: Input[String]): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoAccept(value: Input[Boolean]): Self = this.set("autoAccept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAccept: Self = this.set("autoAccept", js.undefined)
+    @scala.inline
+    def setPolicy(value: Input[String]): Self = this.set("policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("policy", js.undefined)
+    @scala.inline
+    def setPrivateDnsEnabled(value: Input[Boolean]): Self = this.set("privateDnsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsEnabled: Self = this.set("privateDnsEnabled", js.undefined)
+    @scala.inline
+    def setRouteTableIdsVarargs(value: Input[String]*): Self = this.set("routeTableIds", js.Array(value :_*))
+    @scala.inline
+    def setRouteTableIds(value: Input[js.Array[Input[String]]]): Self = this.set("routeTableIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteTableIds: Self = this.set("routeTableIds", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: Input[String]*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcEndpointType(value: Input[String]): Self = this.set("vpcEndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointType: Self = this.set("vpcEndpointType", js.undefined)
+  }
+  
 }
 

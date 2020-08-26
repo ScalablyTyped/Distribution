@@ -30,16 +30,36 @@ trait SchemaListCreativeStatusBreakdownByDetailResponse extends js.Object {
 
 object SchemaListCreativeStatusBreakdownByDetailResponse {
   @scala.inline
-  def apply(
-    detailType: String = null,
-    filteredBidDetailRows: js.Array[SchemaFilteredBidDetailRow] = null,
-    nextPageToken: String = null
-  ): SchemaListCreativeStatusBreakdownByDetailResponse = {
+  def apply(): SchemaListCreativeStatusBreakdownByDetailResponse = {
     val __obj = js.Dynamic.literal()
-    if (detailType != null) __obj.updateDynamic("detailType")(detailType.asInstanceOf[js.Any])
-    if (filteredBidDetailRows != null) __obj.updateDynamic("filteredBidDetailRows")(filteredBidDetailRows.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListCreativeStatusBreakdownByDetailResponse]
   }
+  @scala.inline
+  implicit class SchemaListCreativeStatusBreakdownByDetailResponseOps[Self <: SchemaListCreativeStatusBreakdownByDetailResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetailType(value: String): Self = this.set("detailType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailType: Self = this.set("detailType", js.undefined)
+    @scala.inline
+    def setFilteredBidDetailRowsVarargs(value: SchemaFilteredBidDetailRow*): Self = this.set("filteredBidDetailRows", js.Array(value :_*))
+    @scala.inline
+    def setFilteredBidDetailRows(value: js.Array[SchemaFilteredBidDetailRow]): Self = this.set("filteredBidDetailRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilteredBidDetailRows: Self = this.set("filteredBidDetailRows", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

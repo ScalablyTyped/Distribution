@@ -71,6 +71,7 @@ trait KnockoutStatic extends js.Object {
   def applyBindingAccessorsToNode(node: Node, bindings: js.Object, bindingContext: KnockoutBindingContext): Unit = js.native
   def applyBindingAccessorsToNode(node: Node, bindings: js.Object, viewModel: js.Any): Unit = js.native
   def applyBindings(): Unit = js.native
+  def applyBindings(viewModelOrBindingContext: js.UndefOr[scala.Nothing], rootNode: js.Any): Unit = js.native
   def applyBindings(viewModelOrBindingContext: js.Any): Unit = js.native
   def applyBindings(viewModelOrBindingContext: js.Any, rootNode: js.Any): Unit = js.native
   def applyBindingsToDescendants(viewModelOrBindingContext: js.Any, rootNode: js.Any): Unit = js.native
@@ -81,6 +82,7 @@ trait KnockoutStatic extends js.Object {
   def computed[T](`def`: KnockoutComputedDefine[T]): KnockoutComputed[T] = js.native
   def computed[T](`def`: KnockoutComputedDefine[T], context: js.Any): KnockoutComputed[T] = js.native
   def computed[T](func: js.Function0[T]): KnockoutComputed[T] = js.native
+  def computed[T](func: js.Function0[T], context: js.UndefOr[scala.Nothing], options: js.Any): KnockoutComputed[T] = js.native
   def computed[T](func: js.Function0[T], context: js.Any): KnockoutComputed[T] = js.native
   def computed[T](func: js.Function0[T], context: js.Any, options: js.Any): KnockoutComputed[T] = js.native
   def contextFor(node: js.Any): js.Any = js.native
@@ -95,6 +97,7 @@ trait KnockoutStatic extends js.Object {
   def observableArray[T](): KnockoutObservableArray[T] = js.native
   def observableArray[T](value: js.Array[T]): KnockoutObservableArray[T] = js.native
   def pagedObservableArray[T](): KnockoutPagedObservableArray[T] = js.native
+  def pagedObservableArray[T](initialValue: js.UndefOr[scala.Nothing], options: KnockoutPagedOptions): KnockoutPagedObservableArray[T] = js.native
   def pagedObservableArray[T](initialValue: js.Array[T]): KnockoutPagedObservableArray[T] = js.native
   def pagedObservableArray[T](initialValue: js.Array[T], options: KnockoutPagedOptions): KnockoutPagedObservableArray[T] = js.native
   def pureComputed[T](evaluatorFunction: js.Function0[T]): KnockoutComputed[T] = js.native
@@ -103,7 +106,29 @@ trait KnockoutStatic extends js.Object {
   def pureComputed[T](options: KnockoutComputedDefine[T], context: js.Any): KnockoutComputed[T] = js.native
   def removeNode(node: Element): Unit = js.native
   def renderTemplate(template: String, viewModel: js.Any): js.Any = js.native
+  def renderTemplate(
+    template: String,
+    viewModel: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    renderMode: js.Any
+  ): js.Any = js.native
+  def renderTemplate(template: String, viewModel: js.Any, options: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
+  def renderTemplate(
+    template: String,
+    viewModel: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    target: js.Any,
+    renderMode: js.Any
+  ): js.Any = js.native
   def renderTemplate(template: String, viewModel: js.Any, options: js.Any): js.Any = js.native
+  def renderTemplate(
+    template: String,
+    viewModel: js.Any,
+    options: js.Any,
+    target: js.UndefOr[scala.Nothing],
+    renderMode: js.Any
+  ): js.Any = js.native
   def renderTemplate(template: String, viewModel: js.Any, options: js.Any, target: js.Any): js.Any = js.native
   def renderTemplate(template: String, viewModel: js.Any, options: js.Any, target: js.Any, renderMode: js.Any): js.Any = js.native
   def renderTemplate(
@@ -163,7 +188,29 @@ trait KnockoutStatic extends js.Object {
     renderMode: String
   ): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any): js.Any = js.native
+  def renderTemplate(
+    template: js.Function,
+    viewModel: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    target: js.UndefOr[scala.Nothing],
+    renderMode: js.Any
+  ): js.Any = js.native
+  def renderTemplate(template: js.Function, viewModel: js.Any, options: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
+  def renderTemplate(
+    template: js.Function,
+    viewModel: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    target: js.Any,
+    renderMode: js.Any
+  ): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any): js.Any = js.native
+  def renderTemplate(
+    template: js.Function,
+    viewModel: js.Any,
+    options: js.Any,
+    target: js.UndefOr[scala.Nothing],
+    renderMode: js.Any
+  ): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any, target: js.Any): js.Any = js.native
   def renderTemplate(template: js.Function, viewModel: js.Any, options: js.Any, target: js.Any, renderMode: js.Any): js.Any = js.native
   def renderTemplateForEach(
@@ -200,6 +247,7 @@ trait KnockoutStatic extends js.Object {
   def setTemplateEngine(templateEngine: KnockoutNativeTemplateEngine): Unit = js.native
   def toJS(viewModel: js.Any): js.Any = js.native
   def toJSON(viewModel: js.Any): String = js.native
+  def toJSON(viewModel: js.Any, replacer: js.UndefOr[scala.Nothing], space: js.Any): String = js.native
   def toJSON(viewModel: js.Any, replacer: js.Function): String = js.native
   def toJSON(viewModel: js.Any, replacer: js.Function, space: js.Any): String = js.native
   def unwrap[T](value: T): T = js.native

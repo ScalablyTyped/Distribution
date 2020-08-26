@@ -30,20 +30,42 @@ trait EndpointDescription extends js.Object {
 
 object EndpointDescription {
   @scala.inline
-  def apply(
-    ClientIPPreservationEnabled: js.UndefOr[GenericBoolean] = js.undefined,
-    EndpointId: GenericString = null,
-    HealthReason: GenericString = null,
-    HealthState: HealthState = null,
-    Weight: js.UndefOr[EndpointWeight] = js.undefined
-  ): EndpointDescription = {
+  def apply(): EndpointDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ClientIPPreservationEnabled)) __obj.updateDynamic("ClientIPPreservationEnabled")(ClientIPPreservationEnabled.get.asInstanceOf[js.Any])
-    if (EndpointId != null) __obj.updateDynamic("EndpointId")(EndpointId.asInstanceOf[js.Any])
-    if (HealthReason != null) __obj.updateDynamic("HealthReason")(HealthReason.asInstanceOf[js.Any])
-    if (HealthState != null) __obj.updateDynamic("HealthState")(HealthState.asInstanceOf[js.Any])
-    if (!js.isUndefined(Weight)) __obj.updateDynamic("Weight")(Weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointDescription]
   }
+  @scala.inline
+  implicit class EndpointDescriptionOps[Self <: EndpointDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientIPPreservationEnabled(value: GenericBoolean): Self = this.set("ClientIPPreservationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientIPPreservationEnabled: Self = this.set("ClientIPPreservationEnabled", js.undefined)
+    @scala.inline
+    def setEndpointId(value: GenericString): Self = this.set("EndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointId: Self = this.set("EndpointId", js.undefined)
+    @scala.inline
+    def setHealthReason(value: GenericString): Self = this.set("HealthReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthReason: Self = this.set("HealthReason", js.undefined)
+    @scala.inline
+    def setHealthState(value: HealthState): Self = this.set("HealthState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthState: Self = this.set("HealthState", js.undefined)
+    @scala.inline
+    def setWeight(value: EndpointWeight): Self = this.set("Weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("Weight", js.undefined)
+  }
+  
 }
 

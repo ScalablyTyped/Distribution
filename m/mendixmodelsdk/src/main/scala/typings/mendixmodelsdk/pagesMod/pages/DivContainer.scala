@@ -34,19 +34,22 @@ class DivContainer protected () extends ConditionallyVisibleWidget {
     * In version 8.3.0: introduced
     */
   def onClickAction: ClientAction = js.native
-  def onClickAction(newValue: ClientAction): js.Any = js.native
+  def onClickAction_=(newValue: ClientAction): Unit = js.native
   /**
     * In version 7.23.0: introduced
     */
   def renderMode: ContainerRenderMode = js.native
-  def renderMode(newValue: ContainerRenderMode): js.Any = js.native
-  def widget(): js.Any = js.native
-  def widget(newValue: Widget): js.Any = js.native
+  def renderMode_=(newValue: ContainerRenderMode): Unit = js.native
+  /**
+    * In version 8.12.0: introduced
+    */
+  def screenReaderHidden: Boolean = js.native
+  def screenReaderHidden_=(newValue: Boolean): Unit = js.native
   /**
     * In version 7.15.0: deleted
     */
-  @JSName("widget")
-  def widget_Union: Widget | Null = js.native
+  def widget: Widget | Null = js.native
+  def widget_=(newValue: Widget | Null): Unit = js.native
   /**
     * In version 7.15.0: introduced
     */

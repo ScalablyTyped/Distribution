@@ -26,17 +26,36 @@ trait Template extends js.Object {
 
 object Template {
   @scala.inline
-  def apply(
-    TemplateName: TemplateName,
-    HtmlPart: HtmlPart = null,
-    SubjectPart: SubjectPart = null,
-    TextPart: TextPart = null
-  ): Template = {
+  def apply(TemplateName: TemplateName): Template = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
-    if (HtmlPart != null) __obj.updateDynamic("HtmlPart")(HtmlPart.asInstanceOf[js.Any])
-    if (SubjectPart != null) __obj.updateDynamic("SubjectPart")(SubjectPart.asInstanceOf[js.Any])
-    if (TextPart != null) __obj.updateDynamic("TextPart")(TextPart.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
+  @scala.inline
+  implicit class TemplateOps[Self <: Template] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTemplateName(value: TemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHtmlPart(value: HtmlPart): Self = this.set("HtmlPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlPart: Self = this.set("HtmlPart", js.undefined)
+    @scala.inline
+    def setSubjectPart(value: SubjectPart): Self = this.set("SubjectPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectPart: Self = this.set("SubjectPart", js.undefined)
+    @scala.inline
+    def setTextPart(value: TextPart): Self = this.set("TextPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextPart: Self = this.set("TextPart", js.undefined)
+  }
+  
 }
 

@@ -26,6 +26,7 @@ trait PlusAndroidInstanceObject extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def plusSetAttribute(): Unit = js.native
+  def plusSetAttribute(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def plusSetAttribute(name: String): Unit = js.native
   def plusSetAttribute(name: String, value: js.Any): Unit = js.native
 }

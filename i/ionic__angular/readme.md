@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__angular
 
-Typings are for version 5.2.2
+Typings are for version 5.3.1
 
 ## Library description:
 Angular specific wrappers for @ionic/core
@@ -10,9 +10,9 @@ Angular specific wrappers for @ionic/core
 | ------------------ | :-------------: |
 | Full name          | @ionic/angular |
 | Keywords           | ionic, framework, angular, mobile, app, webapp, capacitor, cordova, progressive web app, pwa |
-| # releases         | 456 |
+| # releases         | 458 |
 | # dependents       | 64 |
-| # downloads        | 2446491 |
+| # downloads        | 2518271 |
 | # stars            | 0 |
 
 ## Links

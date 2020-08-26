@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * can handle framesets; the frames may be top frames only.
   * @see Desktop
   */
+@js.native
 trait XDesktop extends XInterface {
   /**
     * provides read access to collection of all currently loaded components inside the frame tree
@@ -24,7 +25,7 @@ trait XDesktop extends XInterface {
     * @returns the collection of all components
     * @see Components
     */
-  val Components: XEnumerationAccess
+  val Components: XEnumerationAccess = js.native
   /**
     * provides read access to the component inside the tree which has the UI focus
     *
@@ -32,19 +33,19 @@ trait XDesktop extends XInterface {
     * @returns the component within the desktop environment which has the UI focus.
     * @see XDesktop.getCurrentFrame()
     */
-  val CurrentComponent: XComponent
+  val CurrentComponent: XComponent = js.native
   /**
     * provides read access to the frame which contains the current component
     * @returns the frame of the component which has the UI focus within this desktop environment
     * @see XDesktop.getCurrentComponent()
     */
-  val CurrentFrame: XFrame
+  val CurrentFrame: XFrame = js.native
   /**
     * registers an event listener to the desktop, which is called when the desktop is queried to terminate, and when it really terminates.
     * @param Listener listener for termination events
     * @see XDesktop.removeTerminateListener()
     */
-  def addTerminateListener(Listener: XTerminateListener): Unit
+  def addTerminateListener(Listener: XTerminateListener): Unit = js.native
   /**
     * provides read access to collection of all currently loaded components inside the frame tree
     *
@@ -53,7 +54,7 @@ trait XDesktop extends XInterface {
     * @returns the collection of all components
     * @see Components
     */
-  def getComponents(): XEnumerationAccess
+  def getComponents(): XEnumerationAccess = js.native
   /**
     * provides read access to the component inside the tree which has the UI focus
     *
@@ -61,19 +62,19 @@ trait XDesktop extends XInterface {
     * @returns the component within the desktop environment which has the UI focus.
     * @see XDesktop.getCurrentFrame()
     */
-  def getCurrentComponent(): XComponent
+  def getCurrentComponent(): XComponent = js.native
   /**
     * provides read access to the frame which contains the current component
     * @returns the frame of the component which has the UI focus within this desktop environment
     * @see XDesktop.getCurrentComponent()
     */
-  def getCurrentFrame(): XFrame
+  def getCurrentFrame(): XFrame = js.native
   /**
     * unregisters an event listener for termination events.
     * @param Listener listener which wish to be deregistered
     * @see XDesktop.addTerminateListener()
     */
-  def removeTerminateListener(Listener: XTerminateListener): Unit
+  def removeTerminateListener(Listener: XTerminateListener): Unit = js.native
   /**
     * tries to terminate the desktop.
     *
@@ -85,7 +86,7 @@ trait XDesktop extends XInterface {
     * @see XTerminateListener
     * @see TerminationVetoException
     */
-  def terminate(): Boolean
+  def terminate(): Boolean = js.native
 }
 
 object XDesktop {
@@ -107,5 +108,36 @@ object XDesktop {
     val __obj = js.Dynamic.literal(Components = Components.asInstanceOf[js.Any], CurrentComponent = CurrentComponent.asInstanceOf[js.Any], CurrentFrame = CurrentFrame.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addTerminateListener = js.Any.fromFunction1(addTerminateListener), getComponents = js.Any.fromFunction0(getComponents), getCurrentComponent = js.Any.fromFunction0(getCurrentComponent), getCurrentFrame = js.Any.fromFunction0(getCurrentFrame), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeTerminateListener = js.Any.fromFunction1(removeTerminateListener), terminate = js.Any.fromFunction0(terminate))
     __obj.asInstanceOf[XDesktop]
   }
+  @scala.inline
+  implicit class XDesktopOps[Self <: XDesktop] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponents(value: XEnumerationAccess): Self = this.set("Components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentComponent(value: XComponent): Self = this.set("CurrentComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCurrentFrame(value: XFrame): Self = this.set("CurrentFrame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddTerminateListener(value: XTerminateListener => Unit): Self = this.set("addTerminateListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetComponents(value: () => XEnumerationAccess): Self = this.set("getComponents", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetCurrentComponent(value: () => XComponent): Self = this.set("getCurrentComponent", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetCurrentFrame(value: () => XFrame): Self = this.set("getCurrentFrame", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemoveTerminateListener(value: XTerminateListener => Unit): Self = this.set("removeTerminateListener", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTerminate(value: () => Boolean): Self = this.set("terminate", js.Any.fromFunction0(value))
+  }
+  
 }
 

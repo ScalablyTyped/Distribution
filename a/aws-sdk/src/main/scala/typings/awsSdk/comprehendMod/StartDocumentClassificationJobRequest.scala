@@ -46,18 +46,47 @@ object StartDocumentClassificationJobRequest {
     DataAccessRoleArn: IamRoleArn,
     DocumentClassifierArn: DocumentClassifierArn,
     InputDataConfig: InputDataConfig,
-    OutputDataConfig: OutputDataConfig,
-    ClientRequestToken: ClientRequestTokenString = null,
-    JobName: JobName = null,
-    VolumeKmsKeyId: KmsKeyId = null,
-    VpcConfig: VpcConfig = null
+    OutputDataConfig: OutputDataConfig
   ): StartDocumentClassificationJobRequest = {
     val __obj = js.Dynamic.literal(DataAccessRoleArn = DataAccessRoleArn.asInstanceOf[js.Any], DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any], InputDataConfig = InputDataConfig.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDocumentClassificationJobRequest]
   }
+  @scala.inline
+  implicit class StartDocumentClassificationJobRequestOps[Self <: StartDocumentClassificationJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocumentClassifierArn(value: DocumentClassifierArn): Self = this.set("DocumentClassifierArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputDataConfig(value: OutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestTokenString): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

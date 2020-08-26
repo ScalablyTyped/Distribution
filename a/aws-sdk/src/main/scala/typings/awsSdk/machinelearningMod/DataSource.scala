@@ -64,46 +64,94 @@ trait DataSource extends js.Object {
 
 object DataSource {
   @scala.inline
-  def apply(
-    ComputeStatistics: js.UndefOr[ComputeStatistics] = js.undefined,
-    ComputeTime: js.UndefOr[LongType] = js.undefined,
-    CreatedAt: EpochTime = null,
-    CreatedByIamUser: AwsUserArn = null,
-    DataLocationS3: S3Url = null,
-    DataRearrangement: DataRearrangement = null,
-    DataSizeInBytes: js.UndefOr[LongType] = js.undefined,
-    DataSourceId: EntityId = null,
-    FinishedAt: EpochTime = null,
-    LastUpdatedAt: EpochTime = null,
-    Message: Message = null,
-    Name: EntityName = null,
-    NumberOfFiles: js.UndefOr[LongType] = js.undefined,
-    RDSMetadata: RDSMetadata = null,
-    RedshiftMetadata: RedshiftMetadata = null,
-    RoleARN: RoleARN = null,
-    StartedAt: EpochTime = null,
-    Status: EntityStatus = null
-  ): DataSource = {
+  def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ComputeStatistics)) __obj.updateDynamic("ComputeStatistics")(ComputeStatistics.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ComputeTime)) __obj.updateDynamic("ComputeTime")(ComputeTime.get.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (CreatedByIamUser != null) __obj.updateDynamic("CreatedByIamUser")(CreatedByIamUser.asInstanceOf[js.Any])
-    if (DataLocationS3 != null) __obj.updateDynamic("DataLocationS3")(DataLocationS3.asInstanceOf[js.Any])
-    if (DataRearrangement != null) __obj.updateDynamic("DataRearrangement")(DataRearrangement.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataSizeInBytes)) __obj.updateDynamic("DataSizeInBytes")(DataSizeInBytes.get.asInstanceOf[js.Any])
-    if (DataSourceId != null) __obj.updateDynamic("DataSourceId")(DataSourceId.asInstanceOf[js.Any])
-    if (FinishedAt != null) __obj.updateDynamic("FinishedAt")(FinishedAt.asInstanceOf[js.Any])
-    if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfFiles)) __obj.updateDynamic("NumberOfFiles")(NumberOfFiles.get.asInstanceOf[js.Any])
-    if (RDSMetadata != null) __obj.updateDynamic("RDSMetadata")(RDSMetadata.asInstanceOf[js.Any])
-    if (RedshiftMetadata != null) __obj.updateDynamic("RedshiftMetadata")(RedshiftMetadata.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (StartedAt != null) __obj.updateDynamic("StartedAt")(StartedAt.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSource]
   }
+  @scala.inline
+  implicit class DataSourceOps[Self <: DataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComputeStatistics(value: ComputeStatistics): Self = this.set("ComputeStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeStatistics: Self = this.set("ComputeStatistics", js.undefined)
+    @scala.inline
+    def setComputeTime(value: LongType): Self = this.set("ComputeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeTime: Self = this.set("ComputeTime", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: EpochTime): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCreatedByIamUser(value: AwsUserArn): Self = this.set("CreatedByIamUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedByIamUser: Self = this.set("CreatedByIamUser", js.undefined)
+    @scala.inline
+    def setDataLocationS3(value: S3Url): Self = this.set("DataLocationS3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLocationS3: Self = this.set("DataLocationS3", js.undefined)
+    @scala.inline
+    def setDataRearrangement(value: DataRearrangement): Self = this.set("DataRearrangement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRearrangement: Self = this.set("DataRearrangement", js.undefined)
+    @scala.inline
+    def setDataSizeInBytes(value: LongType): Self = this.set("DataSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSizeInBytes: Self = this.set("DataSizeInBytes", js.undefined)
+    @scala.inline
+    def setDataSourceId(value: EntityId): Self = this.set("DataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("DataSourceId", js.undefined)
+    @scala.inline
+    def setFinishedAt(value: EpochTime): Self = this.set("FinishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinishedAt: Self = this.set("FinishedAt", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: EpochTime): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setName(value: EntityName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNumberOfFiles(value: LongType): Self = this.set("NumberOfFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfFiles: Self = this.set("NumberOfFiles", js.undefined)
+    @scala.inline
+    def setRDSMetadata(value: RDSMetadata): Self = this.set("RDSMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRDSMetadata: Self = this.set("RDSMetadata", js.undefined)
+    @scala.inline
+    def setRedshiftMetadata(value: RedshiftMetadata): Self = this.set("RedshiftMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftMetadata: Self = this.set("RedshiftMetadata", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setStartedAt(value: EpochTime): Self = this.set("StartedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("StartedAt", js.undefined)
+    @scala.inline
+    def setStatus(value: EntityStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

@@ -27,6 +27,7 @@ class ResourceFreebusy protected () extends js.Object {
     */
   def query(): GaxiosPromise[SchemaFreeBusyResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaFreeBusyResponse]): Unit = js.native
+  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFreeBusyResponse] = js.native
   def query(params: ParamsResourceFreebusyQuery): GaxiosPromise[SchemaFreeBusyResponse] = js.native
   def query(params: ParamsResourceFreebusyQuery, callback: BodyResponseCallback[SchemaFreeBusyResponse]): Unit = js.native
   def query(

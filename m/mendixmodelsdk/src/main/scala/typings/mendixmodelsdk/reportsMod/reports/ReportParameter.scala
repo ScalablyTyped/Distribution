@@ -24,19 +24,17 @@ abstract class ReportParameter protected () extends Widget {
   ) = this()
   @JSName("model")
   var model_FReportParameter: IModel = js.native
-  def parameter(): js.Any = js.native
-  def parameter(newValue: IDataSetParameter): js.Any = js.native
+  /**
+    * In version 6.10.0: introduced
+    */
+  def parameter: IDataSetParameter | Null = js.native
   /**
     * In version 6.10.0: deleted
     */
   def parameterName: String = js.native
-  def parameterName(newValue: String): js.Any = js.native
+  def parameterName_=(newValue: String): Unit = js.native
   def parameterQualifiedName: String | Null = js.native
-  /**
-    * In version 6.10.0: introduced
-    */
-  @JSName("parameter")
-  def parameter_Union: IDataSetParameter | Null = js.native
+  def parameter_=(newValue: IDataSetParameter | Null): Unit = js.native
 }
 
 /* static members */

@@ -18,10 +18,28 @@ trait CalculatedSpend extends js.Object {
 
 object CalculatedSpend {
   @scala.inline
-  def apply(ActualSpend: Spend, ForecastedSpend: Spend = null): CalculatedSpend = {
+  def apply(ActualSpend: Spend): CalculatedSpend = {
     val __obj = js.Dynamic.literal(ActualSpend = ActualSpend.asInstanceOf[js.Any])
-    if (ForecastedSpend != null) __obj.updateDynamic("ForecastedSpend")(ForecastedSpend.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculatedSpend]
   }
+  @scala.inline
+  implicit class CalculatedSpendOps[Self <: CalculatedSpend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActualSpend(value: Spend): Self = this.set("ActualSpend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForecastedSpend(value: Spend): Self = this.set("ForecastedSpend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastedSpend: Self = this.set("ForecastedSpend", js.undefined)
+  }
+  
 }
 

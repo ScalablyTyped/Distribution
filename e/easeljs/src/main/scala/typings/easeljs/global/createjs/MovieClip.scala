@@ -9,8 +9,39 @@ import scala.scalajs.js.annotation._
 class MovieClip ()
   extends typings.easeljs.createjs.MovieClip {
   def this(mode: String) = this()
+  def this(mode: js.UndefOr[scala.Nothing], startPosition: Double) = this()
   def this(mode: String, startPosition: Double) = this()
+  def this(mode: js.UndefOr[scala.Nothing], startPosition: js.UndefOr[scala.Nothing], loop: Boolean) = this()
+  def this(mode: js.UndefOr[scala.Nothing], startPosition: Double, loop: Boolean) = this()
+  def this(mode: String, startPosition: js.UndefOr[scala.Nothing], loop: Boolean) = this()
   def this(mode: String, startPosition: Double, loop: Boolean) = this()
+  def this(
+    mode: js.UndefOr[scala.Nothing],
+    startPosition: js.UndefOr[scala.Nothing],
+    loop: js.UndefOr[scala.Nothing],
+    labels: js.Object
+  ) = this()
+  def this(
+    mode: js.UndefOr[scala.Nothing],
+    startPosition: js.UndefOr[scala.Nothing],
+    loop: Boolean,
+    labels: js.Object
+  ) = this()
+  def this(
+    mode: js.UndefOr[scala.Nothing],
+    startPosition: Double,
+    loop: js.UndefOr[scala.Nothing],
+    labels: js.Object
+  ) = this()
+  def this(mode: js.UndefOr[scala.Nothing], startPosition: Double, loop: Boolean, labels: js.Object) = this()
+  def this(
+    mode: String,
+    startPosition: js.UndefOr[scala.Nothing],
+    loop: js.UndefOr[scala.Nothing],
+    labels: js.Object
+  ) = this()
+  def this(mode: String, startPosition: js.UndefOr[scala.Nothing], loop: Boolean, labels: js.Object) = this()
+  def this(mode: String, startPosition: Double, loop: js.UndefOr[scala.Nothing], labels: js.Object) = this()
   def this(mode: String, startPosition: Double, loop: Boolean, labels: js.Object) = this()
 }
 

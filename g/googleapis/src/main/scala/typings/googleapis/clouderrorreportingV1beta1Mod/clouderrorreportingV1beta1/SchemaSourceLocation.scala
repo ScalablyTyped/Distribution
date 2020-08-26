@@ -31,16 +31,34 @@ trait SchemaSourceLocation extends js.Object {
 
 object SchemaSourceLocation {
   @scala.inline
-  def apply(
-    filePath: String = null,
-    functionName: String = null,
-    lineNumber: js.UndefOr[Double] = js.undefined
-  ): SchemaSourceLocation = {
+  def apply(): SchemaSourceLocation = {
     val __obj = js.Dynamic.literal()
-    if (filePath != null) __obj.updateDynamic("filePath")(filePath.asInstanceOf[js.Any])
-    if (functionName != null) __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineNumber)) __obj.updateDynamic("lineNumber")(lineNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceLocation]
   }
+  @scala.inline
+  implicit class SchemaSourceLocationOps[Self <: SchemaSourceLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilePath(value: String): Self = this.set("filePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilePath: Self = this.set("filePath", js.undefined)
+    @scala.inline
+    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("functionName", js.undefined)
+    @scala.inline
+    def setLineNumber(value: Double): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+  }
+  
 }
 

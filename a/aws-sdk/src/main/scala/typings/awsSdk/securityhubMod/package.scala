@@ -18,6 +18,7 @@ package object securityhubMod {
   type AwsEc2SecurityGroupIpv6RangeList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupIpv6Range]
   type AwsEc2SecurityGroupPrefixListIdList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupPrefixListId]
   type AwsEc2SecurityGroupUserIdGroupPairList = js.Array[typings.awsSdk.securityhubMod.AwsEc2SecurityGroupUserIdGroupPair]
+  type AwsEc2VolumeAttachmentList = js.Array[typings.awsSdk.securityhubMod.AwsEc2VolumeAttachment]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.Active_
     - typings.awsSdk.awsSdkStrings.Inactive_
@@ -37,6 +38,7 @@ package object securityhubMod {
   type BatchUpdateFindingsUnprocessedFindingsList = js.Array[typings.awsSdk.securityhubMod.BatchUpdateFindingsUnprocessedFinding]
   type Boolean = scala.Boolean
   type CategoryList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
+  type CidrBlockAssociationList = js.Array[typings.awsSdk.securityhubMod.CidrBlockAssociation]
   type ClientConfiguration = typings.awsSdk.serviceMod.ServiceConfigurationOptions with typings.awsSdk.securityhubMod.ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.PASSED
@@ -52,6 +54,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type ControlStatus = typings.awsSdk.securityhubMod._ControlStatus | java.lang.String
+  type CvssList = js.Array[typings.awsSdk.securityhubMod.Cvss]
   type DateFilterList = js.Array[typings.awsSdk.securityhubMod.DateFilter]
   type DateRangeUnit = typings.awsSdk.awsSdkStrings.DAYS | java.lang.String
   type Double = scala.Double
@@ -69,6 +72,7 @@ package object securityhubMod {
   type IntegrationTypeList = js.Array[typings.awsSdk.securityhubMod.IntegrationType]
   type InvitationList = js.Array[typings.awsSdk.securityhubMod.Invitation]
   type IpFilterList = js.Array[typings.awsSdk.securityhubMod.IpFilter]
+  type Ipv6CidrBlockAssociationList = js.Array[typings.awsSdk.securityhubMod.Ipv6CidrBlockAssociation]
   type KeywordFilterList = js.Array[typings.awsSdk.securityhubMod.KeywordFilter]
   type MalwareList = js.Array[typings.awsSdk.securityhubMod.Malware]
   /* Rewritten from type alias, can be one of: 
@@ -107,6 +111,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type NetworkDirection = typings.awsSdk.securityhubMod._NetworkDirection | java.lang.String
+  type NetworkPathList = js.Array[typings.awsSdk.securityhubMod.NetworkPathComponent]
   type NextToken = java.lang.String
   type NonEmptyString = java.lang.String
   type NonEmptyStringList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
@@ -118,6 +123,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type Partition = typings.awsSdk.securityhubMod._Partition | java.lang.String
+  type PortRangeList = js.Array[typings.awsSdk.securityhubMod.PortRange]
   type ProductSubscriptionArnList = js.Array[typings.awsSdk.securityhubMod.NonEmptyString]
   type ProductsList = js.Array[typings.awsSdk.securityhubMod.Product]
   type RatioScale = scala.Double
@@ -150,6 +156,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type SeverityRating = typings.awsSdk.securityhubMod._SeverityRating | java.lang.String
+  type SoftwarePackageList = js.Array[typings.awsSdk.securityhubMod.SoftwarePackage]
   type SortCriteria = js.Array[typings.awsSdk.securityhubMod.SortCriterion]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.asc_
@@ -221,6 +228,7 @@ package object securityhubMod {
     - java.lang.String
   */
   type VerificationState = typings.awsSdk.securityhubMod._VerificationState | java.lang.String
+  type VulnerabilityList = js.Array[typings.awsSdk.securityhubMod.Vulnerability]
   type WafExcludedRuleList = js.Array[typings.awsSdk.securityhubMod.WafExcludedRule]
   /* Rewritten from type alias, can be one of: 
     - typings.awsSdk.awsSdkStrings.NEW

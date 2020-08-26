@@ -1,5 +1,6 @@
 package typings.vfile.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.unist.mod.Node
 import typings.unist.mod.Point
 import typings.unist.mod.Position
@@ -9,7 +10,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait VFile extends _VFileCompatible {
+trait VFile
+  extends /* key */ StringDictionary[js.Any]
+     with _VFileCompatible {
   /**
     * Current name (including extension) of `vfile`.
     * Cannot contain path separators.
@@ -81,6 +84,7 @@ trait VFile extends _VFileCompatible {
     * @param ruleId Category of message.
     */
   def fail(reason: String): scala.Nothing = js.native
+  def fail(reason: String, position: js.UndefOr[scala.Nothing], ruleId: String): scala.Nothing = js.native
   def fail(reason: String, position: Node): scala.Nothing = js.native
   def fail(reason: String, position: Node, ruleId: String): scala.Nothing = js.native
   def fail(reason: String, position: Point): scala.Nothing = js.native
@@ -95,6 +99,7 @@ trait VFile extends _VFileCompatible {
     * @param ruleId Category of message.
     */
   def info(reason: String): VFileMessage = js.native
+  def info(reason: String, position: js.UndefOr[scala.Nothing], ruleId: String): VFileMessage = js.native
   def info(reason: String, position: Node): VFileMessage = js.native
   def info(reason: String, position: Node, ruleId: String): VFileMessage = js.native
   def info(reason: String, position: Point): VFileMessage = js.native
@@ -110,6 +115,7 @@ trait VFile extends _VFileCompatible {
     * @param ruleId Category of message.
     */
   def message(reason: String): VFileMessage = js.native
+  def message(reason: String, position: js.UndefOr[scala.Nothing], ruleId: String): VFileMessage = js.native
   def message(reason: String, position: Node): VFileMessage = js.native
   def message(reason: String, position: Node, ruleId: String): VFileMessage = js.native
   def message(reason: String, position: Point): VFileMessage = js.native

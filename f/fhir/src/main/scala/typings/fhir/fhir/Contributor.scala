@@ -7,54 +7,67 @@ import scala.scalajs.js.annotation._
 /**
   * Contributor information
   */
+@js.native
 trait Contributor extends Element {
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Contact details of the contributor
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
   /**
     * Who contributed the content
     */
-  var name: String
+  var name: String = js.native
   /**
     * author | editor | reviewer | endorser
     */
-  var `type`: code
+  var `type`: code = js.native
 }
 
 object Contributor {
   @scala.inline
-  def apply(
-    name: String,
-    `type`: code,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _name: Element = null,
-    _type: Element = null,
-    contact: js.Array[ContactDetail] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null
-  ): Contributor = {
+  def apply(name: String, `type`: code): Contributor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contributor]
   }
+  @scala.inline
+  implicit class ContributorOps[Self <: Contributor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+  }
+  
 }
 

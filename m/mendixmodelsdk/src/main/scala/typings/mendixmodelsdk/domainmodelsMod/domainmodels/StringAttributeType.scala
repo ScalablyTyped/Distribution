@@ -36,7 +36,7 @@ class StringAttributeType protected () extends AttributeType {
   @JSName("containerAsODataKeyPart")
   def containerAsODataKeyPart_MStringAttributeType: ODataKeyPart = js.native
   def length: Double = js.native
-  def length(newValue: Double): js.Any = js.native
+  def length_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

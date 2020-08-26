@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 /**
   * Class for line path.
   */
+@js.native
 trait Line extends IPathLine
 
 object Line {
   @scala.inline
-  def apply(end: IPoint, origin: IPoint, `type`: String, layer: String = null): Line = {
+  def apply(end: IPoint, origin: IPoint, `type`: String): Line = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Line]
   }
 }

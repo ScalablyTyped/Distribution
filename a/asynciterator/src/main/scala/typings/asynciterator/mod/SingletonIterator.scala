@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asynciterator", "SingletonIterator")
 @js.native
-class SingletonIterator[T] () extends AsyncIterator[T] {
+class SingletonIterator[T] protected () extends AsyncIterator[T] {
+  /**
+    Creates a new `SingletonIterator`.
+    @param {object} item The item that will be emitted.
+    */
   def this(item: T) = this()
+  var _item: js.Any = js.native
 }
 

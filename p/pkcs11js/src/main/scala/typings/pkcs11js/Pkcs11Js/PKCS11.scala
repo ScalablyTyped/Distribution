@@ -406,6 +406,7 @@ trait PKCS11 extends js.Object {
     * @returns {string} 32-byte token label (blank padded)
     */
   def C_InitToken(slot: Handle): String = js.native
+  def C_InitToken(slot: Handle, pin: js.UndefOr[scala.Nothing], label: String): String = js.native
   def C_InitToken(slot: Handle, pin: String): String = js.native
   def C_InitToken(slot: Handle, pin: String, label: String): String = js.native
   /**

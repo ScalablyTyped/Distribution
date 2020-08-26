@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jsonpointer"
-version := "4.0-dt-20190822Z-eb8857"
-scalaVersion := "2.13.2"
+version := "4.0-dt-20190822Z-d2362a"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

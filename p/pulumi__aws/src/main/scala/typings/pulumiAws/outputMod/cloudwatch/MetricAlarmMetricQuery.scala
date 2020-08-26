@@ -30,19 +30,40 @@ trait MetricAlarmMetricQuery extends js.Object {
 
 object MetricAlarmMetricQuery {
   @scala.inline
-  def apply(
-    id: String,
-    expression: String = null,
-    label: String = null,
-    metric: MetricAlarmMetricQueryMetric = null,
-    returnData: js.UndefOr[Boolean] = js.undefined
-  ): MetricAlarmMetricQuery = {
+  def apply(id: String): MetricAlarmMetricQuery = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (expression != null) __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnData)) __obj.updateDynamic("returnData")(returnData.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricAlarmMetricQuery]
   }
+  @scala.inline
+  implicit class MetricAlarmMetricQueryOps[Self <: MetricAlarmMetricQuery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpression(value: String): Self = this.set("expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("expression", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMetric(value: MetricAlarmMetricQueryMetric): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setReturnData(value: Boolean): Self = this.set("returnData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnData: Self = this.set("returnData", js.undefined)
+  }
+  
 }
 

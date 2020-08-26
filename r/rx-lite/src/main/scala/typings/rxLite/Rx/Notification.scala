@@ -15,6 +15,11 @@ trait Notification[T] extends js.Object {
   def accept[TResult](onNext: js.Function1[/* value */ T, TResult]): TResult = js.native
   def accept[TResult](
     onNext: js.Function1[/* value */ T, TResult],
+    onError: js.UndefOr[scala.Nothing],
+    onCompleted: js.Function0[TResult]
+  ): TResult = js.native
+  def accept[TResult](
+    onNext: js.Function1[/* value */ T, TResult],
     onError: js.Function1[/* exception */ js.Any, TResult]
   ): TResult = js.native
   def accept[TResult](

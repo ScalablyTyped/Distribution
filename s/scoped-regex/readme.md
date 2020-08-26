@@ -11,8 +11,8 @@ Regular expression for matching scoped npm package names
 | Full name          | scoped-regex |
 | Keywords           | scoped, npm, package, name, regex, regexp, regular, expression |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 13475037 |
+| # dependents       | 5 |
+| # downloads        | 13416627 |
 | # stars            | 0 |
 
 ## Links

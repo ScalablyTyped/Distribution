@@ -43,14 +43,41 @@ object GenerateDataSetRequest {
     dataSetType: DataSetType,
     destinationS3BucketName: DestinationS3BucketName,
     roleNameArn: RoleNameArn,
-    snsTopicArn: SnsTopicArn,
-    customerDefinedValues: CustomerDefinedValues = null,
-    destinationS3Prefix: DestinationS3Prefix = null
+    snsTopicArn: SnsTopicArn
   ): GenerateDataSetRequest = {
     val __obj = js.Dynamic.literal(dataSetPublicationDate = dataSetPublicationDate.asInstanceOf[js.Any], dataSetType = dataSetType.asInstanceOf[js.Any], destinationS3BucketName = destinationS3BucketName.asInstanceOf[js.Any], roleNameArn = roleNameArn.asInstanceOf[js.Any], snsTopicArn = snsTopicArn.asInstanceOf[js.Any])
-    if (customerDefinedValues != null) __obj.updateDynamic("customerDefinedValues")(customerDefinedValues.asInstanceOf[js.Any])
-    if (destinationS3Prefix != null) __obj.updateDynamic("destinationS3Prefix")(destinationS3Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateDataSetRequest]
   }
+  @scala.inline
+  implicit class GenerateDataSetRequestOps[Self <: GenerateDataSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSetPublicationDate(value: DataSetPublicationDate): Self = this.set("dataSetPublicationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataSetType(value: DataSetType): Self = this.set("dataSetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationS3BucketName(value: DestinationS3BucketName): Self = this.set("destinationS3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleNameArn(value: RoleNameArn): Self = this.set("roleNameArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnsTopicArn(value: SnsTopicArn): Self = this.set("snsTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomerDefinedValues(value: CustomerDefinedValues): Self = this.set("customerDefinedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerDefinedValues: Self = this.set("customerDefinedValues", js.undefined)
+    @scala.inline
+    def setDestinationS3Prefix(value: DestinationS3Prefix): Self = this.set("destinationS3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationS3Prefix: Self = this.set("destinationS3Prefix", js.undefined)
+  }
+  
 }
 

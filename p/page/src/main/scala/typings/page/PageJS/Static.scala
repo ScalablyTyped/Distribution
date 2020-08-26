@@ -130,7 +130,11 @@ trait Static extends js.Object {
     *
     */
   def replace(path: String): Context = js.native
+  def replace(path: String, state: js.UndefOr[scala.Nothing], init: js.UndefOr[scala.Nothing], dispatch: Boolean): Context = js.native
+  def replace(path: String, state: js.UndefOr[scala.Nothing], init: Boolean): Context = js.native
+  def replace(path: String, state: js.UndefOr[scala.Nothing], init: Boolean, dispatch: Boolean): Context = js.native
   def replace(path: String, state: js.Any): Context = js.native
+  def replace(path: String, state: js.Any, init: js.UndefOr[scala.Nothing], dispatch: Boolean): Context = js.native
   def replace(path: String, state: js.Any, init: Boolean): Context = js.native
   def replace(path: String, state: js.Any, init: Boolean, dispatch: Boolean): Context = js.native
   /**

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.chartJs.anon.Dictkey
 import typings.chartJs.anon.DisableCSSInjection
 import typings.chartJs.anon.TypeofChart
+import typings.chartJs.anon.UpdateScaleDefaults
 import typings.std.ArrayLike
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -33,5 +34,6 @@ object ^ extends js.Object {
   var platform: DisableCSSInjection = js.native
   var pluginService: PluginServiceStatic = js.native
   var plugins: PluginServiceStatic = js.native
+  var scaleService: UpdateScaleDefaults = js.native
 }
 

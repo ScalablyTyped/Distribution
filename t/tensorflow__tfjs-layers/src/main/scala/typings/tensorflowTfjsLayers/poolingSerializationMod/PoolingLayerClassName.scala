@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation._
 
 /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/pooling_serialization.PoolingLayerSerialization['class_name'] */
 /* Rewritten from type alias, can be one of: 
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling2D
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling1D
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalAveragePooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.MaxPooling1D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.GlobalMaxPooling2D
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.AveragePooling2D
 */
 trait PoolingLayerClassName extends js.Object
 

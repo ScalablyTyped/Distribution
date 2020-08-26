@@ -18,11 +18,30 @@ trait LaunchTemplateOverrides extends js.Object {
 
 object LaunchTemplateOverrides {
   @scala.inline
-  def apply(InstanceType: XmlStringMaxLen255 = null, WeightedCapacity: XmlStringMaxLen32 = null): LaunchTemplateOverrides = {
+  def apply(): LaunchTemplateOverrides = {
     val __obj = js.Dynamic.literal()
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateOverrides]
   }
+  @scala.inline
+  implicit class LaunchTemplateOverridesOps[Self <: LaunchTemplateOverrides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceType(value: XmlStringMaxLen255): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setWeightedCapacity(value: XmlStringMaxLen32): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+  }
+  
 }
 

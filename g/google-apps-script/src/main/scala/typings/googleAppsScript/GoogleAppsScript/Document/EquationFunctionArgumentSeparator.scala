@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   * document structure, see the guide to
   * extending Google Docs.
   */
+@js.native
 trait EquationFunctionArgumentSeparator extends Element
 
 object EquationFunctionArgumentSeparator {

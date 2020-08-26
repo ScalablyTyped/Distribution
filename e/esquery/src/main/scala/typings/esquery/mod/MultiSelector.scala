@@ -17,39 +17,27 @@ trait MultiSelector extends SubjectSelector
 
 object MultiSelector {
   @scala.inline
-  def Sequence(
-    selectors: js.Array[SubjectSelector],
-    `type`: compound,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): MultiSelector = {
+  def Sequence(selectors: js.Array[SubjectSelector], `type`: compound): MultiSelector = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelector]
   }
   @scala.inline
-  def Negation(selectors: js.Array[SubjectSelector], `type`: not, subject: js.UndefOr[Boolean] = js.undefined): MultiSelector = {
+  def Negation(selectors: js.Array[SubjectSelector], `type`: not): MultiSelector = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelector]
   }
   @scala.inline
-  def Matches_(
-    selectors: js.Array[SubjectSelector],
-    `type`: typings.esquery.esqueryStrings.matches,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): MultiSelector = {
+  def Matches_(selectors: js.Array[SubjectSelector], `type`: typings.esquery.esqueryStrings.matches): MultiSelector = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelector]
   }
   @scala.inline
-  def Has(selectors: js.Array[SubjectSelector], `type`: has, subject: js.UndefOr[Boolean] = js.undefined): MultiSelector = {
+  def Has(selectors: js.Array[SubjectSelector], `type`: has): MultiSelector = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSelector]
   }
 }

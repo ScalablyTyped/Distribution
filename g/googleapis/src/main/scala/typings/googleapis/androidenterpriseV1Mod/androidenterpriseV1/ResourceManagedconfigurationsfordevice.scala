@@ -31,6 +31,7 @@ class ResourceManagedconfigurationsfordevice protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagedconfigurationsfordeviceDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagedconfigurationsfordeviceDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,6 +62,7 @@ class ResourceManagedconfigurationsfordevice protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def get(callback: BodyResponseCallback[SchemaManagedConfiguration]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def get(params: ParamsResourceManagedconfigurationsfordeviceGet): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def get(
     params: ParamsResourceManagedconfigurationsfordeviceGet,
@@ -94,6 +96,7 @@ class ResourceManagedconfigurationsfordevice protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaManagedConfigurationsForDeviceListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaManagedConfigurationsForDeviceListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaManagedConfigurationsForDeviceListResponse] = js.native
   def list(params: ParamsResourceManagedconfigurationsfordeviceList): GaxiosPromise[SchemaManagedConfigurationsForDeviceListResponse] = js.native
   def list(
     params: ParamsResourceManagedconfigurationsfordeviceList,
@@ -129,6 +132,7 @@ class ResourceManagedconfigurationsfordevice protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def patch(callback: BodyResponseCallback[SchemaManagedConfiguration]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def patch(params: ParamsResourceManagedconfigurationsfordevicePatch): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def patch(
     params: ParamsResourceManagedconfigurationsfordevicePatch,
@@ -164,6 +168,7 @@ class ResourceManagedconfigurationsfordevice protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def update(callback: BodyResponseCallback[SchemaManagedConfiguration]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def update(params: ParamsResourceManagedconfigurationsfordeviceUpdate): GaxiosPromise[SchemaManagedConfiguration] = js.native
   def update(
     params: ParamsResourceManagedconfigurationsfordeviceUpdate,

@@ -22,6 +22,7 @@ trait PickerDialog extends js.Object {
     * @param ExistingResults [ExistingResults=0]
     */
   def Show(): PickerResults = js.native
+  def Show(IsMultiSelect: js.UndefOr[scala.Nothing], ExistingResults: PickerResults): PickerResults = js.native
   def Show(IsMultiSelect: Boolean): PickerResults = js.native
   def Show(IsMultiSelect: Boolean, ExistingResults: PickerResults): PickerResults = js.native
 }

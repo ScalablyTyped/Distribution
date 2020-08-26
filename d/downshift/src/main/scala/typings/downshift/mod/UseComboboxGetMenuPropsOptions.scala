@@ -4,13 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UseComboboxGetMenuPropsOptions extends GetMenuPropsOptions
 
 object UseComboboxGetMenuPropsOptions {
   @scala.inline
-  def apply(GetMenuPropsOptions: GetMenuPropsOptions = null): UseComboboxGetMenuPropsOptions = {
+  def apply(): UseComboboxGetMenuPropsOptions = {
     val __obj = js.Dynamic.literal()
-    if (GetMenuPropsOptions != null) js.Dynamic.global.Object.assign(__obj, GetMenuPropsOptions)
     __obj.asInstanceOf[UseComboboxGetMenuPropsOptions]
   }
 }

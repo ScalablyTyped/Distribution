@@ -18,10 +18,28 @@ trait DeleteTargetRequest extends js.Object {
 
 object DeleteTargetRequest {
   @scala.inline
-  def apply(TargetAddress: TargetAddress, ForceUnsubscribeAll: js.UndefOr[ForceUnsubscribeAll] = js.undefined): DeleteTargetRequest = {
+  def apply(TargetAddress: TargetAddress): DeleteTargetRequest = {
     val __obj = js.Dynamic.literal(TargetAddress = TargetAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceUnsubscribeAll)) __obj.updateDynamic("ForceUnsubscribeAll")(ForceUnsubscribeAll.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTargetRequest]
   }
+  @scala.inline
+  implicit class DeleteTargetRequestOps[Self <: DeleteTargetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetAddress(value: TargetAddress): Self = this.set("TargetAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForceUnsubscribeAll(value: ForceUnsubscribeAll): Self = this.set("ForceUnsubscribeAll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceUnsubscribeAll: Self = this.set("ForceUnsubscribeAll", js.undefined)
+  }
+  
 }
 

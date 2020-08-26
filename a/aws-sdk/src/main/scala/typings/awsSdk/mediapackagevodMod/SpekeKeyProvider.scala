@@ -27,5 +27,26 @@ object SpekeKeyProvider {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], SystemIds = SystemIds.asInstanceOf[js.Any], Url = Url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpekeKeyProvider]
   }
+  @scala.inline
+  implicit class SpekeKeyProviderOps[Self <: SpekeKeyProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleArn(value: string): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSystemIdsVarargs(value: string*): Self = this.set("SystemIds", js.Array(value :_*))
+    @scala.inline
+    def setSystemIds(value: listOfString): Self = this.set("SystemIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: string): Self = this.set("Url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

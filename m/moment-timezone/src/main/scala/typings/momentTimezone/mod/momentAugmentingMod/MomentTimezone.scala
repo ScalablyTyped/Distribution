@@ -38,16 +38,12 @@ trait MomentTimezone extends js.Object {
   def link(packedLinkString: js.Array[String]): Unit = js.native
   def load(data: Links): Unit = js.native
   def names(): js.Array[String] = js.native
-  def setDefault(): typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.Moment = js.native
-  def setDefault(timezone: String): typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.Moment = js.native
-  def zone(timezone: String): typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.MomentZone | Null = js.native
-  def zonesForCountry(country: String): js.Array[
-    typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.MomentZoneOffset | String
-  ] = js.native
-  def zonesForCountry(country: String, with_offset: Boolean): js.Array[
-    typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.MomentZoneOffset | String
-  ] = js.native
-  def zonesForCountry[T /* <: `true` */](country: String, with_offset: T): js.Array[typings.momentTimezone.momentTimezoneMod.momentAugmentingMod.MomentZoneOffset] = js.native
+  def setDefault(): Moment = js.native
+  def setDefault(timezone: String): Moment = js.native
+  def zone(timezone: String): MomentZone | Null = js.native
+  def zonesForCountry(country: String): js.Array[MomentZoneOffset | String] = js.native
+  def zonesForCountry(country: String, with_offset: Boolean): js.Array[MomentZoneOffset | String] = js.native
+  def zonesForCountry[T /* <: `true` */](country: String, with_offset: T): js.Array[MomentZoneOffset] = js.native
   @JSName("zonesForCountry")
   def zonesForCountry_T_false[T /* <: `false` */](country: String): js.Array[String] = js.native
   @JSName("zonesForCountry")

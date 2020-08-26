@@ -17,6 +17,8 @@ object distMod extends js.Object {
     def this(equaler: Equaler[T]) = this()
     def this(equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T]) = this()
+    def this(iterable: js.UndefOr[scala.Nothing], equaler: Equaler[T]) = this()
+    def this(iterable: js.UndefOr[scala.Nothing], equaler: EqualityComparison[T]) = this()
     def this(iterable: Iterable[T], equaler: Equaler[T]) = this()
     def this(iterable: Iterable[T], equaler: EqualityComparison[T]) = this()
     var _deleteNode: js.Any = js.native
@@ -189,10 +191,18 @@ object distMod extends js.Object {
       thisArg: js.Any
     ): Unit = js.native
     def has(value: T): Boolean = js.native
-    def insertAfter(node: js.UndefOr[LinkedListNode[T] | Null], value: T): LinkedListNode[T] = js.native
-    def insertBefore(node: js.UndefOr[LinkedListNode[T] | Null], value: T): LinkedListNode[T] = js.native
-    def insertNodeAfter(node: js.UndefOr[LinkedListNode[T] | Null], newNode: LinkedListNode[T]): Unit = js.native
-    def insertNodeBefore(node: js.UndefOr[LinkedListNode[T] | Null], newNode: LinkedListNode[T]): Unit = js.native
+    def insertAfter(node: js.UndefOr[scala.Nothing], value: T): LinkedListNode[T] = js.native
+    def insertAfter(node: Null, value: T): LinkedListNode[T] = js.native
+    def insertAfter(node: LinkedListNode[T], value: T): LinkedListNode[T] = js.native
+    def insertBefore(node: js.UndefOr[scala.Nothing], value: T): LinkedListNode[T] = js.native
+    def insertBefore(node: Null, value: T): LinkedListNode[T] = js.native
+    def insertBefore(node: LinkedListNode[T], value: T): LinkedListNode[T] = js.native
+    def insertNodeAfter(node: js.UndefOr[scala.Nothing], newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeAfter(node: Null, newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeAfter(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeBefore(node: js.UndefOr[scala.Nothing], newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeBefore(node: Null, newNode: LinkedListNode[T]): Unit = js.native
+    def insertNodeBefore(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
     def lastNodeOf(value: T): js.UndefOr[LinkedListNode[T]] = js.native
     def lastNodeOf(value: T, fromNode: LinkedListNode[T]): js.UndefOr[LinkedListNode[T]] = js.native
     def map[U](callback: js.Function3[/* value */ T, /* node */ LinkedListNode[T], /* list */ LinkedList[T], U]): LinkedList[U] = js.native
@@ -270,6 +280,7 @@ object distMod extends js.Object {
     def shift(): js.UndefOr[T] = js.native
     def shiftNode(): js.UndefOr[LinkedListNode[T]] = js.native
     def some(): Boolean = js.native
+    def some(callback: js.UndefOr[scala.Nothing], thisArg: js.Any): Boolean = js.native
     def some(
       callback: js.Function3[/* value */ T, /* node */ LinkedListNode[T], /* list */ LinkedList[T], Boolean]
     ): Boolean = js.native

@@ -14,10 +14,26 @@ trait CreateStreamProcessorResponse extends js.Object {
 
 object CreateStreamProcessorResponse {
   @scala.inline
-  def apply(StreamProcessorArn: StreamProcessorArn = null): CreateStreamProcessorResponse = {
+  def apply(): CreateStreamProcessorResponse = {
     val __obj = js.Dynamic.literal()
-    if (StreamProcessorArn != null) __obj.updateDynamic("StreamProcessorArn")(StreamProcessorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamProcessorResponse]
   }
+  @scala.inline
+  implicit class CreateStreamProcessorResponseOps[Self <: CreateStreamProcessorResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamProcessorArn(value: StreamProcessorArn): Self = this.set("StreamProcessorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamProcessorArn: Self = this.set("StreamProcessorArn", js.undefined)
+  }
+  
 }
 

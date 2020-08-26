@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Credentials extends js.Object {
-  var authzid: js.UndefOr[String] = js.undefined
-  var clientKey: js.UndefOr[String] = js.undefined
-  var password: js.UndefOr[String] = js.undefined
-  var salt: js.UndefOr[String] = js.undefined
-  var saltedPassword: js.UndefOr[String] = js.undefined
-  var serverKey: js.UndefOr[String] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var authzid: js.UndefOr[String] = js.native
+  var clientKey: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.native
+  var salt: js.UndefOr[String] = js.native
+  var saltedPassword: js.UndefOr[String] = js.native
+  var serverKey: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object Credentials {
   @scala.inline
-  def apply(
-    authzid: String = null,
-    clientKey: String = null,
-    password: String = null,
-    salt: String = null,
-    saltedPassword: String = null,
-    serverKey: String = null,
-    username: String = null
-  ): Credentials = {
+  def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (authzid != null) __obj.updateDynamic("authzid")(authzid.asInstanceOf[js.Any])
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (salt != null) __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
-    if (saltedPassword != null) __obj.updateDynamic("saltedPassword")(saltedPassword.asInstanceOf[js.Any])
-    if (serverKey != null) __obj.updateDynamic("serverKey")(serverKey.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
+  @scala.inline
+  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthzid(value: String): Self = this.set("authzid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthzid: Self = this.set("authzid", js.undefined)
+    @scala.inline
+    def setClientKey(value: String): Self = this.set("clientKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientKey: Self = this.set("clientKey", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setSalt(value: String): Self = this.set("salt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalt: Self = this.set("salt", js.undefined)
+    @scala.inline
+    def setSaltedPassword(value: String): Self = this.set("saltedPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaltedPassword: Self = this.set("saltedPassword", js.undefined)
+    @scala.inline
+    def setServerKey(value: String): Self = this.set("serverKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerKey: Self = this.set("serverKey", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

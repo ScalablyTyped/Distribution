@@ -11,8 +11,8 @@ The lodash method `_.words` exported as a module.
 | Full name          | lodash.words |
 | Keywords           | lodash-modularized, words |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 5850952 |
+| # dependents       | 20 |
+| # downloads        | 5770837 |
 | # stars            | 0 |
 
 ## Links

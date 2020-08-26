@@ -22,16 +22,34 @@ trait PendingModifiedRelationalDatabaseValues extends js.Object {
 
 object PendingModifiedRelationalDatabaseValues {
   @scala.inline
-  def apply(
-    backupRetentionEnabled: js.UndefOr[Boolean] = js.undefined,
-    engineVersion: String = null,
-    masterUserPassword: String = null
-  ): PendingModifiedRelationalDatabaseValues = {
+  def apply(): PendingModifiedRelationalDatabaseValues = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(backupRetentionEnabled)) __obj.updateDynamic("backupRetentionEnabled")(backupRetentionEnabled.get.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (masterUserPassword != null) __obj.updateDynamic("masterUserPassword")(masterUserPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[PendingModifiedRelationalDatabaseValues]
   }
+  @scala.inline
+  implicit class PendingModifiedRelationalDatabaseValuesOps[Self <: PendingModifiedRelationalDatabaseValues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupRetentionEnabled(value: Boolean): Self = this.set("backupRetentionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionEnabled: Self = this.set("backupRetentionEnabled", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setMasterUserPassword(value: String): Self = this.set("masterUserPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUserPassword: Self = this.set("masterUserPassword", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ A small tool to find unused Sass variables
 | Keywords           | sass, unused, variables, scss |
 | # releases         | 19 |
 | # dependents       | 0 |
-| # downloads        | 66756 |
+| # downloads        | 64064 |
 | # stars            | 0 |
 
 ## Links

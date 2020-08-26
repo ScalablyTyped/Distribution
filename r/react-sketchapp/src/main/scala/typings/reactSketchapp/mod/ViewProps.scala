@@ -7,30 +7,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewProps extends js.Object {
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var resizingConstraint: js.UndefOr[ResizeConstraints] = js.undefined
-  var shadows: js.UndefOr[js.Array[SketchShadow]] = js.undefined
-  var style: js.UndefOr[Style | StyleReference] = js.undefined
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var name: js.UndefOr[String] = js.native
+  var resizingConstraint: js.UndefOr[ResizeConstraints] = js.native
+  var shadows: js.UndefOr[js.Array[SketchShadow]] = js.native
+  var style: js.UndefOr[Style | StyleReference] = js.native
 }
 
 object ViewProps {
   @scala.inline
-  def apply(
-    children: js.Array[ReactNode] | ReactNode = null,
-    name: String = null,
-    resizingConstraint: ResizeConstraints = null,
-    shadows: js.Array[SketchShadow] = null,
-    style: Style | StyleReference = null
-  ): ViewProps = {
+  def apply(): ViewProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resizingConstraint != null) __obj.updateDynamic("resizingConstraint")(resizingConstraint.asInstanceOf[js.Any])
-    if (shadows != null) __obj.updateDynamic("shadows")(shadows.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewProps]
   }
+  @scala.inline
+  implicit class ViewPropsOps[Self <: ViewProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[ReactNode] | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResizingConstraint(value: ResizeConstraints): Self = this.set("resizingConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizingConstraint: Self = this.set("resizingConstraint", js.undefined)
+    @scala.inline
+    def setShadowsVarargs(value: SketchShadow*): Self = this.set("shadows", js.Array(value :_*))
+    @scala.inline
+    def setShadows(value: js.Array[SketchShadow]): Self = this.set("shadows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadows: Self = this.set("shadows", js.undefined)
+    @scala.inline
+    def setStyle(value: Style | StyleReference): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

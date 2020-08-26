@@ -26,16 +26,34 @@ trait Get extends js.Object {
 
 object Get {
   @scala.inline
-  def apply(
-    Key: Key,
-    TableName: TableName,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ProjectionExpression: ProjectionExpression = null
-  ): Get = {
+  def apply(Key: Key, TableName: TableName): Get = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[Get]
   }
+  @scala.inline
+  implicit class GetOps[Self <: Get] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setProjectionExpression(value: ProjectionExpression): Self = this.set("ProjectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectionExpression: Self = this.set("ProjectionExpression", js.undefined)
+  }
+  
 }
 

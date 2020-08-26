@@ -1,58 +1,65 @@
 package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.core.dxElement
-import typings.devextreme.mod.DevExpress.event
+import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxDraggable
 import typings.devextreme.mod.DevExpress.ui.dxSortable
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FromComponentFromData extends js.Object {
-  var component: js.UndefOr[dxSortable] = js.undefined
-  var element: js.UndefOr[dxElement] = js.undefined
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.event] = js.undefined
-  var fromComponent: js.UndefOr[dxSortable | dxDraggable] = js.undefined
-  var fromData: js.UndefOr[js.Any] = js.undefined
-  var fromIndex: js.UndefOr[Double] = js.undefined
-  var itemData: js.UndefOr[js.Any] = js.undefined
-  var itemElement: js.UndefOr[dxElement] = js.undefined
-  var model: js.UndefOr[js.Any] = js.undefined
-  var toComponent: js.UndefOr[dxSortable | dxDraggable] = js.undefined
-  var toData: js.UndefOr[js.Any] = js.undefined
-  var toIndex: js.UndefOr[Double] = js.undefined
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var fromComponent: js.UndefOr[dxSortable | dxDraggable] = js.native
+  var fromData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.native
+  var toComponent: js.UndefOr[dxSortable | dxDraggable] = js.native
 }
 
 object FromComponentFromData {
   @scala.inline
-  def apply(
-    component: dxSortable = null,
-    element: dxElement = null,
-    event: event = null,
-    fromComponent: dxSortable | dxDraggable = null,
-    fromData: js.Any = null,
-    fromIndex: js.UndefOr[Double] = js.undefined,
-    itemData: js.Any = null,
-    itemElement: dxElement = null,
-    model: js.Any = null,
-    toComponent: dxSortable | dxDraggable = null,
-    toData: js.Any = null,
-    toIndex: js.UndefOr[Double] = js.undefined
-  ): FromComponentFromData = {
+  def apply(): FromComponentFromData = {
     val __obj = js.Dynamic.literal()
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (fromComponent != null) __obj.updateDynamic("fromComponent")(fromComponent.asInstanceOf[js.Any])
-    if (fromData != null) __obj.updateDynamic("fromData")(fromData.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromIndex)) __obj.updateDynamic("fromIndex")(fromIndex.get.asInstanceOf[js.Any])
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    if (itemElement != null) __obj.updateDynamic("itemElement")(itemElement.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (toComponent != null) __obj.updateDynamic("toComponent")(toComponent.asInstanceOf[js.Any])
-    if (toData != null) __obj.updateDynamic("toData")(toData.asInstanceOf[js.Any])
-    if (!js.isUndefined(toIndex)) __obj.updateDynamic("toIndex")(toIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromComponentFromData]
   }
+  @scala.inline
+  implicit class FromComponentFromDataOps[Self <: FromComponentFromData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvent(value: event): Self = this.set("event", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvent: Self = this.set("event", js.undefined)
+    @scala.inline
+    def setFromComponent(value: dxSortable | dxDraggable): Self = this.set("fromComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromComponent: Self = this.set("fromComponent", js.undefined)
+    @scala.inline
+    def setFromData(value: js.Any): Self = this.set("fromData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromData: Self = this.set("fromData", js.undefined)
+    @scala.inline
+    def setItemData(value: js.Any): Self = this.set("itemData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemData: Self = this.set("itemData", js.undefined)
+    @scala.inline
+    def setItemElement(value: dxElement): Self = this.set("itemElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemElement: Self = this.set("itemElement", js.undefined)
+    @scala.inline
+    def setToComponent(value: dxSortable | dxDraggable): Self = this.set("toComponent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToComponent: Self = this.set("toComponent", js.undefined)
+  }
+  
 }
 

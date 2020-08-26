@@ -183,8 +183,76 @@ trait Renderer extends AbstractRenderer {
     * @param {boolean} [skipUpdateTransform=false] - Should we skip the update transform pass?
     */
   def render(displayObject: DisplayObject): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: js.UndefOr[scala.Nothing],
+    clear: js.UndefOr[scala.Nothing],
+    transform: js.UndefOr[scala.Nothing],
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: js.UndefOr[scala.Nothing],
+    clear: js.UndefOr[scala.Nothing],
+    transform: Matrix
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: js.UndefOr[scala.Nothing],
+    clear: js.UndefOr[scala.Nothing],
+    transform: Matrix,
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
+  def render(displayObject: DisplayObject, renderTexture: js.UndefOr[scala.Nothing], clear: Boolean): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: js.UndefOr[scala.Nothing],
+    clear: Boolean,
+    transform: js.UndefOr[scala.Nothing],
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: js.UndefOr[scala.Nothing],
+    clear: Boolean,
+    transform: Matrix
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: js.UndefOr[scala.Nothing],
+    clear: Boolean,
+    transform: Matrix,
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
   def render(displayObject: DisplayObject, renderTexture: RenderTexture): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: RenderTexture,
+    clear: js.UndefOr[scala.Nothing],
+    transform: js.UndefOr[scala.Nothing],
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: RenderTexture,
+    clear: js.UndefOr[scala.Nothing],
+    transform: Matrix
+  ): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: RenderTexture,
+    clear: js.UndefOr[scala.Nothing],
+    transform: Matrix,
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
   def render(displayObject: DisplayObject, renderTexture: RenderTexture, clear: Boolean): Unit = js.native
+  def render(
+    displayObject: DisplayObject,
+    renderTexture: RenderTexture,
+    clear: Boolean,
+    transform: js.UndefOr[scala.Nothing],
+    skipUpdateTransform: Boolean
+  ): Unit = js.native
   def render(displayObject: DisplayObject, renderTexture: RenderTexture, clear: Boolean, transform: Matrix): Unit = js.native
   def render(
     displayObject: DisplayObject,

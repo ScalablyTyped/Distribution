@@ -24,7 +24,29 @@ trait ga extends js.Object {
   def apply(command: String, fields: js.Any*): Unit = js.native
   def apply(command: String, hitType: HitType, fields: js.Any*): Unit = js.native
   def apply(command: create, trackingId: String): Unit = js.native
+  def apply(
+    command: create,
+    trackingId: String,
+    cookieDomain: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    fieldsObject: FieldsObject
+  ): Unit = js.native
+  def apply(command: create, trackingId: String, cookieDomain: js.UndefOr[scala.Nothing], name: String): Unit = js.native
+  def apply(
+    command: create,
+    trackingId: String,
+    cookieDomain: js.UndefOr[scala.Nothing],
+    name: String,
+    fieldsObject: FieldsObject
+  ): Unit = js.native
   def apply(command: create, trackingId: String, cookieDomain: String): Unit = js.native
+  def apply(
+    command: create,
+    trackingId: String,
+    cookieDomain: String,
+    name: js.UndefOr[scala.Nothing],
+    fieldsObject: FieldsObject
+  ): Unit = js.native
   def apply(command: create, trackingId: String, cookieDomain: String, name: String): Unit = js.native
   def apply(
     command: create,
@@ -44,7 +66,42 @@ trait ga extends js.Object {
   def apply(command: send, fieldsObject: FieldsObject): Unit = js.native
   def apply(command: send, fieldsObject: EventCategory): Unit = js.native
   def apply(command: send, hitType: event, eventCategory: String, eventAction: String): Unit = js.native
+  def apply(
+    command: send,
+    hitType: event,
+    eventCategory: String,
+    eventAction: String,
+    eventLabel: js.UndefOr[scala.Nothing],
+    eventValue: js.UndefOr[scala.Nothing],
+    fieldsObject: FieldsObject
+  ): Unit = js.native
+  def apply(
+    command: send,
+    hitType: event,
+    eventCategory: String,
+    eventAction: String,
+    eventLabel: js.UndefOr[scala.Nothing],
+    eventValue: Double
+  ): Unit = js.native
+  def apply(
+    command: send,
+    hitType: event,
+    eventCategory: String,
+    eventAction: String,
+    eventLabel: js.UndefOr[scala.Nothing],
+    eventValue: Double,
+    fieldsObject: FieldsObject
+  ): Unit = js.native
   def apply(command: send, hitType: event, eventCategory: String, eventAction: String, eventLabel: String): Unit = js.native
+  def apply(
+    command: send,
+    hitType: event,
+    eventCategory: String,
+    eventAction: String,
+    eventLabel: String,
+    eventValue: js.UndefOr[scala.Nothing],
+    fieldsObject: FieldsObject
+  ): Unit = js.native
   def apply(
     command: send,
     hitType: event,

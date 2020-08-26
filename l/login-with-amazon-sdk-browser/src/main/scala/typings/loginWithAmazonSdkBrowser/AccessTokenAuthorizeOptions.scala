@@ -5,28 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessTokenAuthorizeOptions extends AuthorizeOptions {
   @JSName("response_type")
-  var response_type_AccessTokenAuthorizeOptions: js.UndefOr[token] = js.undefined
+  var response_type_AccessTokenAuthorizeOptions: js.UndefOr[token] = js.native
 }
 
 object AccessTokenAuthorizeOptions {
   @scala.inline
-  def apply(
-    scope: AuthorizeScope,
-    interactive: AuthorizeInteractiveOption = null,
-    popup: js.UndefOr[Boolean] = js.undefined,
-    response_type: token = null,
-    scope_data: AuthorizeScopeData = null,
-    state: String = null
-  ): AccessTokenAuthorizeOptions = {
+  def apply(scope: AuthorizeScope): AccessTokenAuthorizeOptions = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-    if (interactive != null) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.get.asInstanceOf[js.Any])
-    if (response_type != null) __obj.updateDynamic("response_type")(response_type.asInstanceOf[js.Any])
-    if (scope_data != null) __obj.updateDynamic("scope_data")(scope_data.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessTokenAuthorizeOptions]
   }
+  @scala.inline
+  implicit class AccessTokenAuthorizeOptionsOps[Self <: AccessTokenAuthorizeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResponse_type(value: token): Self = this.set("response_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse_type: Self = this.set("response_type", js.undefined)
+  }
+  
 }
 

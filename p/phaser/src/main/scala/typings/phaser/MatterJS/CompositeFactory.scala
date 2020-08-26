@@ -134,6 +134,12 @@ trait CompositeFactory extends js.Object {
     * @param {boolean} [updateChildren=false]
     */
   def setModified(composite: CompositeType, isModified: Boolean): Unit = js.native
+  def setModified(
+    composite: CompositeType,
+    isModified: Boolean,
+    updateParents: js.UndefOr[scala.Nothing],
+    updateChildren: Boolean
+  ): Unit = js.native
   def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean): Unit = js.native
   def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = js.native
   /**

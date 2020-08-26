@@ -22,16 +22,34 @@ trait H264QvbrSettings extends js.Object {
 
 object H264QvbrSettings {
   @scala.inline
-  def apply(
-    MaxAverageBitrate: js.UndefOr[integerMin1000Max1152000000] = js.undefined,
-    QvbrQualityLevel: js.UndefOr[integerMin1Max10] = js.undefined,
-    QvbrQualityLevelFineTune: js.UndefOr[doubleMin0Max1] = js.undefined
-  ): H264QvbrSettings = {
+  def apply(): H264QvbrSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxAverageBitrate)) __obj.updateDynamic("MaxAverageBitrate")(MaxAverageBitrate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(QvbrQualityLevel)) __obj.updateDynamic("QvbrQualityLevel")(QvbrQualityLevel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(QvbrQualityLevelFineTune)) __obj.updateDynamic("QvbrQualityLevelFineTune")(QvbrQualityLevelFineTune.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[H264QvbrSettings]
   }
+  @scala.inline
+  implicit class H264QvbrSettingsOps[Self <: H264QvbrSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxAverageBitrate(value: integerMin1000Max1152000000): Self = this.set("MaxAverageBitrate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAverageBitrate: Self = this.set("MaxAverageBitrate", js.undefined)
+    @scala.inline
+    def setQvbrQualityLevel(value: integerMin1Max10): Self = this.set("QvbrQualityLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQvbrQualityLevel: Self = this.set("QvbrQualityLevel", js.undefined)
+    @scala.inline
+    def setQvbrQualityLevelFineTune(value: doubleMin0Max1): Self = this.set("QvbrQualityLevelFineTune", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQvbrQualityLevelFineTune: Self = this.set("QvbrQualityLevelFineTune", js.undefined)
+  }
+  
 }
 

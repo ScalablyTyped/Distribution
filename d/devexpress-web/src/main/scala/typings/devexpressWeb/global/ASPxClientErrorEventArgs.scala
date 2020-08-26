@@ -16,10 +16,5 @@ class ASPxClientErrorEventArgs protected ()
     * @param error An object that provides information about a server-side error. This value is assigned to the Error property.
     */
   def this(error: js.Any) = this()
-  /**
-    * Provides access to information about a server-side error.
-    */
-  /* CompleteClass */
-  override var Error: js.Any = js.native
 }
 

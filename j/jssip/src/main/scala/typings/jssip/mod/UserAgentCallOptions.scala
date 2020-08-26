@@ -10,45 +10,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserAgentCallOptions extends js.Object {
-  var anonymous: js.UndefOr[Boolean] = js.undefined
-  var eventHandlers: js.UndefOr[StringDictionary[js.Function1[/* data */ js.Any, Unit]]] = js.undefined
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
-  var mediaConstraints: js.UndefOr[MediaStreamConstraints] = js.undefined
-  var mediaStream: js.UndefOr[MediaStream] = js.undefined
-  var pcConfig: js.UndefOr[RTCConfiguration] = js.undefined
-  var rtcAnswerConstraints: js.UndefOr[RTCAnswerOptions] = js.undefined
-  var rtcConstraints: js.UndefOr[js.Any] = js.undefined
-  var rtcOfferConstraints: js.UndefOr[RTCOfferOptions] = js.undefined
-  var sessionTimersExpires: js.UndefOr[Double] = js.undefined
+  var anonymous: js.UndefOr[Boolean] = js.native
+  var eventHandlers: js.UndefOr[StringDictionary[js.Function1[/* data */ js.Any, Unit]]] = js.native
+  var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+  var mediaConstraints: js.UndefOr[MediaStreamConstraints] = js.native
+  var mediaStream: js.UndefOr[MediaStream] = js.native
+  var pcConfig: js.UndefOr[RTCConfiguration] = js.native
+  var rtcAnswerConstraints: js.UndefOr[RTCAnswerOptions] = js.native
+  var rtcConstraints: js.UndefOr[js.Any] = js.native
+  var rtcOfferConstraints: js.UndefOr[RTCOfferOptions] = js.native
+  var sessionTimersExpires: js.UndefOr[Double] = js.native
 }
 
 object UserAgentCallOptions {
   @scala.inline
-  def apply(
-    anonymous: js.UndefOr[Boolean] = js.undefined,
-    eventHandlers: StringDictionary[js.Function1[/* data */ js.Any, Unit]] = null,
-    extraHeaders: js.Array[String] = null,
-    mediaConstraints: MediaStreamConstraints = null,
-    mediaStream: MediaStream = null,
-    pcConfig: RTCConfiguration = null,
-    rtcAnswerConstraints: RTCAnswerOptions = null,
-    rtcConstraints: js.Any = null,
-    rtcOfferConstraints: RTCOfferOptions = null,
-    sessionTimersExpires: js.UndefOr[Double] = js.undefined
-  ): UserAgentCallOptions = {
+  def apply(): UserAgentCallOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous.get.asInstanceOf[js.Any])
-    if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers.asInstanceOf[js.Any])
-    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders.asInstanceOf[js.Any])
-    if (mediaConstraints != null) __obj.updateDynamic("mediaConstraints")(mediaConstraints.asInstanceOf[js.Any])
-    if (mediaStream != null) __obj.updateDynamic("mediaStream")(mediaStream.asInstanceOf[js.Any])
-    if (pcConfig != null) __obj.updateDynamic("pcConfig")(pcConfig.asInstanceOf[js.Any])
-    if (rtcAnswerConstraints != null) __obj.updateDynamic("rtcAnswerConstraints")(rtcAnswerConstraints.asInstanceOf[js.Any])
-    if (rtcConstraints != null) __obj.updateDynamic("rtcConstraints")(rtcConstraints.asInstanceOf[js.Any])
-    if (rtcOfferConstraints != null) __obj.updateDynamic("rtcOfferConstraints")(rtcOfferConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionTimersExpires)) __obj.updateDynamic("sessionTimersExpires")(sessionTimersExpires.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentCallOptions]
   }
+  @scala.inline
+  implicit class UserAgentCallOptionsOps[Self <: UserAgentCallOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnonymous(value: Boolean): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    @scala.inline
+    def setEventHandlers(value: StringDictionary[js.Function1[/* data */ js.Any, Unit]]): Self = this.set("eventHandlers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventHandlers: Self = this.set("eventHandlers", js.undefined)
+    @scala.inline
+    def setExtraHeadersVarargs(value: String*): Self = this.set("extraHeaders", js.Array(value :_*))
+    @scala.inline
+    def setExtraHeaders(value: js.Array[String]): Self = this.set("extraHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraHeaders: Self = this.set("extraHeaders", js.undefined)
+    @scala.inline
+    def setMediaConstraints(value: MediaStreamConstraints): Self = this.set("mediaConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaConstraints: Self = this.set("mediaConstraints", js.undefined)
+    @scala.inline
+    def setMediaStream(value: MediaStream): Self = this.set("mediaStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaStream: Self = this.set("mediaStream", js.undefined)
+    @scala.inline
+    def setPcConfig(value: RTCConfiguration): Self = this.set("pcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePcConfig: Self = this.set("pcConfig", js.undefined)
+    @scala.inline
+    def setRtcAnswerConstraints(value: RTCAnswerOptions): Self = this.set("rtcAnswerConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtcAnswerConstraints: Self = this.set("rtcAnswerConstraints", js.undefined)
+    @scala.inline
+    def setRtcConstraints(value: js.Any): Self = this.set("rtcConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtcConstraints: Self = this.set("rtcConstraints", js.undefined)
+    @scala.inline
+    def setRtcOfferConstraints(value: RTCOfferOptions): Self = this.set("rtcOfferConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtcOfferConstraints: Self = this.set("rtcOfferConstraints", js.undefined)
+    @scala.inline
+    def setSessionTimersExpires(value: Double): Self = this.set("sessionTimersExpires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionTimersExpires: Self = this.set("sessionTimersExpires", js.undefined)
+  }
+  
 }
 

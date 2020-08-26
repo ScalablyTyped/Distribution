@@ -11,7 +11,7 @@ Jasmine Promise Matchers ================
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 43016 |
+| # downloads        | 47037 |
 | # stars            | 1 |
 
 ## Links

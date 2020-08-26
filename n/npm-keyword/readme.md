@@ -12,7 +12,7 @@ Get a list of npm packages with a certain keyword
 | Keywords           | npm, keyword, package, packages, pkg, registry, find, search |
 | # releases         | 3 |
 | # dependents       | 22 |
-| # downloads        | 2403477 |
+| # downloads        | 2551350 |
 | # stars            | 2 |
 
 ## Links

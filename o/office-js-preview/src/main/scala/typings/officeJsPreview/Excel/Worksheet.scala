@@ -339,6 +339,7 @@ trait Worksheet extends ClientObject {
     * @returns The newly created worksheet.
     */
   def copy(): Worksheet = js.native
+  def copy(positionType: js.UndefOr[scala.Nothing], relativeTo: Worksheet): Worksheet = js.native
   def copy(positionType: WorksheetPositionType): Worksheet = js.native
   def copy(positionType: WorksheetPositionType, relativeTo: Worksheet): Worksheet = js.native
   @JSName("copy")

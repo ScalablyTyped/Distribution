@@ -10,9 +10,9 @@ Node's event emitter for all engines.
 | ------------------ | :-------------: |
 | Full name          | events |
 | Keywords           | events, eventEmitter, eventDispatcher, listeners |
-| # releases         | 4 |
-| # dependents       | 1752 |
-| # downloads        | 421815123 |
+| # releases         | 3 |
+| # dependents       | 1762 |
+| # downloads        | 423532517 |
 | # stars            | 57 |
 
 ## Links

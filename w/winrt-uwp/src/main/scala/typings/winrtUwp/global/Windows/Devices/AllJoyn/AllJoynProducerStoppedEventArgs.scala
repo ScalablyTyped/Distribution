@@ -14,8 +14,5 @@ class AllJoynProducerStoppedEventArgs protected ()
     * @param status An AllJoyn status code that indicates why the Producer was stopped.
     */
   def this(status: Double) = this()
-  /** Returns an AllJoyn status code that indicates why the Producer was stopped. Common values are defined by AllJoynStatus . */
-  /* CompleteClass */
-  override var status: Double = js.native
 }
 

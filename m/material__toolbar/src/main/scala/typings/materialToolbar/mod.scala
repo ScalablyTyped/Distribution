@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class MDCToolbar () extends MDCComponent[MDCToolbarAdapter, default] {
+  class MDCToolbar () extends MDCComponent[MDCToolbarAdapter] {
     var fixedAdjustElement: HTMLElement = js.native
   }
   

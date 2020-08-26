@@ -27,6 +27,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersPhotosDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersPhotosDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -54,6 +55,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUserPhoto] = js.native
   def get(callback: BodyResponseCallback[SchemaUserPhoto]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserPhoto] = js.native
   def get(params: ParamsResourceUsersPhotosGet): GaxiosPromise[SchemaUserPhoto] = js.native
   def get(params: ParamsResourceUsersPhotosGet, callback: BodyResponseCallback[SchemaUserPhoto]): Unit = js.native
   def get(
@@ -82,6 +84,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaUserPhoto] = js.native
   def patch(callback: BodyResponseCallback[SchemaUserPhoto]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserPhoto] = js.native
   def patch(params: ParamsResourceUsersPhotosPatch): GaxiosPromise[SchemaUserPhoto] = js.native
   def patch(params: ParamsResourceUsersPhotosPatch, callback: BodyResponseCallback[SchemaUserPhoto]): Unit = js.native
   def patch(
@@ -110,6 +113,7 @@ class ResourceUsersPhotos protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaUserPhoto] = js.native
   def update(callback: BodyResponseCallback[SchemaUserPhoto]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserPhoto] = js.native
   def update(params: ParamsResourceUsersPhotosUpdate): GaxiosPromise[SchemaUserPhoto] = js.native
   def update(params: ParamsResourceUsersPhotosUpdate, callback: BodyResponseCallback[SchemaUserPhoto]): Unit = js.native
   def update(

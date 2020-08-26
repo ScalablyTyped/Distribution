@@ -61,6 +61,7 @@ trait MiniPass
   def emit_resume(event: resume): Boolean = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: String): Unit = js.native
   def end(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Unit = js.native
@@ -154,6 +155,7 @@ trait MiniPass
   def setEncoding(encoding: String): Unit = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function0[Unit]): Boolean = js.native
+  def write(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Boolean = js.native
   def write(chunk: js.Any, encoding: String): Boolean = js.native
   def write(chunk: js.Any, encoding: String, cb: js.Function0[Unit]): Boolean = js.native
   def write(chunk: js.Any, encoding: Null, cb: js.Function0[Unit]): Boolean = js.native

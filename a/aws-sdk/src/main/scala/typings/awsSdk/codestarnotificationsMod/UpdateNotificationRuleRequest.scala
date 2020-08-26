@@ -34,21 +34,48 @@ trait UpdateNotificationRuleRequest extends js.Object {
 
 object UpdateNotificationRuleRequest {
   @scala.inline
-  def apply(
-    Arn: NotificationRuleArn,
-    DetailType: DetailType = null,
-    EventTypeIds: EventTypeIds = null,
-    Name: NotificationRuleName = null,
-    Status: NotificationRuleStatus = null,
-    Targets: Targets = null
-  ): UpdateNotificationRuleRequest = {
+  def apply(Arn: NotificationRuleArn): UpdateNotificationRuleRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
-    if (DetailType != null) __obj.updateDynamic("DetailType")(DetailType.asInstanceOf[js.Any])
-    if (EventTypeIds != null) __obj.updateDynamic("EventTypeIds")(EventTypeIds.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotificationRuleRequest]
   }
+  @scala.inline
+  implicit class UpdateNotificationRuleRequestOps[Self <: UpdateNotificationRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NotificationRuleArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetailType(value: DetailType): Self = this.set("DetailType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailType: Self = this.set("DetailType", js.undefined)
+    @scala.inline
+    def setEventTypeIdsVarargs(value: EventTypeId*): Self = this.set("EventTypeIds", js.Array(value :_*))
+    @scala.inline
+    def setEventTypeIds(value: EventTypeIds): Self = this.set("EventTypeIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeIds: Self = this.set("EventTypeIds", js.undefined)
+    @scala.inline
+    def setName(value: NotificationRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setStatus(value: NotificationRuleStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+  }
+  
 }
 

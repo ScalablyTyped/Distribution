@@ -14,10 +14,6 @@ object utilsMod extends js.Object {
   @js.native
   class DegitError () extends Error {
     var code: DegitErrorCode = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var original: js.UndefOr[Error] = js.native
     var ref: js.UndefOr[String] = js.native
     var url: js.UndefOr[String] = js.native

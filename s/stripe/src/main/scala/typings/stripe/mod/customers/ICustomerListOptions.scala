@@ -1,38 +1,40 @@
 package typings.stripe.mod.customers
 
-import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICustomerListOptions extends IListOptionsCreated {
   /**
     * A filter on the list based on the customer’s email field. The value must be a string.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String] = js.native
 }
 
 object ICustomerListOptions {
   @scala.inline
-  def apply(
-    created: String | IDateFilter = null,
-    email: String = null,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    starting_after: String = null
-  ): ICustomerListOptions = {
+  def apply(): ICustomerListOptions = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomerListOptions]
   }
+  @scala.inline
+  implicit class ICustomerListOptionsOps[Self <: ICustomerListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+  }
+  
 }
 

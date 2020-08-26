@@ -11,15 +11,11 @@ object clusterer extends js.Object {
   class Balloon protected () extends IBalloonManager[Clusterer_] {
     //tslint:disable-line no-shadowed-variable
     def this(clusterer: Clusterer_) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
   }
   
   @js.native
   class Hint protected () extends IPopupManager[Clusterer_] {
     def this(clusterer: Clusterer_) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
   }
   
 }

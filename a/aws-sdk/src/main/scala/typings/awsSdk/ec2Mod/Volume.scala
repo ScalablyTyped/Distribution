@@ -70,40 +70,86 @@ trait Volume extends js.Object {
 
 object Volume {
   @scala.inline
-  def apply(
-    Attachments: VolumeAttachmentList = null,
-    AvailabilityZone: String = null,
-    CreateTime: DateTime = null,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    FastRestored: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[Integer] = js.undefined,
-    KmsKeyId: String = null,
-    MultiAttachEnabled: js.UndefOr[Boolean] = js.undefined,
-    OutpostArn: String = null,
-    Size: js.UndefOr[Integer] = js.undefined,
-    SnapshotId: String = null,
-    State: VolumeState = null,
-    Tags: TagList = null,
-    VolumeId: String = null,
-    VolumeType: VolumeType = null
-  ): Volume = {
+  def apply(): Volume = {
     val __obj = js.Dynamic.literal()
-    if (Attachments != null) __obj.updateDynamic("Attachments")(Attachments.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FastRestored)) __obj.updateDynamic("FastRestored")(FastRestored.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAttachEnabled)) __obj.updateDynamic("MultiAttachEnabled")(MultiAttachEnabled.get.asInstanceOf[js.Any])
-    if (OutpostArn != null) __obj.updateDynamic("OutpostArn")(OutpostArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
-    if (SnapshotId != null) __obj.updateDynamic("SnapshotId")(SnapshotId.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Volume]
   }
+  @scala.inline
+  implicit class VolumeOps[Self <: Volume] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: VolumeAttachment*): Self = this.set("Attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: VolumeAttachmentList): Self = this.set("Attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("Attachments", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setFastRestored(value: Boolean): Self = this.set("FastRestored", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFastRestored: Self = this.set("FastRestored", js.undefined)
+    @scala.inline
+    def setIops(value: Integer): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("Iops", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMultiAttachEnabled(value: Boolean): Self = this.set("MultiAttachEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAttachEnabled: Self = this.set("MultiAttachEnabled", js.undefined)
+    @scala.inline
+    def setOutpostArn(value: String): Self = this.set("OutpostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutpostArn: Self = this.set("OutpostArn", js.undefined)
+    @scala.inline
+    def setSize(value: Integer): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("Size", js.undefined)
+    @scala.inline
+    def setSnapshotId(value: String): Self = this.set("SnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("SnapshotId", js.undefined)
+    @scala.inline
+    def setState(value: VolumeState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+    @scala.inline
+    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+  }
+  
 }
 

@@ -15,10 +15,16 @@ trait Button extends js.Object {
     * @param disabled Whether the button is disabled.
     */
   def update(): Unit = js.native
+  def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: js.UndefOr[scala.Nothing], disabled: Boolean): Unit = js.native
+  def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: String): Unit = js.native
+  def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: String, disabled: Boolean): Unit = js.native
+  def update(iconPath: js.UndefOr[scala.Nothing], tooltipText: Null, disabled: Boolean): Unit = js.native
   def update(iconPath: String): Unit = js.native
+  def update(iconPath: String, tooltipText: js.UndefOr[scala.Nothing], disabled: Boolean): Unit = js.native
   def update(iconPath: String, tooltipText: String): Unit = js.native
   def update(iconPath: String, tooltipText: String, disabled: Boolean): Unit = js.native
   def update(iconPath: String, tooltipText: Null, disabled: Boolean): Unit = js.native
+  def update(iconPath: Null, tooltipText: js.UndefOr[scala.Nothing], disabled: Boolean): Unit = js.native
   def update(iconPath: Null, tooltipText: String): Unit = js.native
   def update(iconPath: Null, tooltipText: String, disabled: Boolean): Unit = js.native
   def update(iconPath: Null, tooltipText: Null, disabled: Boolean): Unit = js.native

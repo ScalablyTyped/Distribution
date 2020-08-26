@@ -71,6 +71,7 @@ trait CanvasRenderingContext2D extends js.Object {
   ): Unit = js.native
    //
   def fill(): Unit = js.native
+  def fill(Path2D: js.UndefOr[scala.Nothing], fillRule: js.Any): Unit = js.native
   def fill(Path2D: Path2D): Unit = js.native
   def fill(Path2D: Path2D, fillRule: js.Any): Unit = js.native
   def fillRect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
@@ -84,8 +85,96 @@ trait CanvasRenderingContext2D extends js.Object {
   def measureText(text: String): js.Any = js.native
   def moveTo(x: Double, y: Double): Unit = js.native
   def putImageData(imageData: ImageData, dx: Double, dy: Double): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: js.UndefOr[scala.Nothing],
+    dirtyY: js.UndefOr[scala.Nothing],
+    dirtyWidth: js.UndefOr[scala.Nothing],
+    dirtyHeight: Double
+  ): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: js.UndefOr[scala.Nothing],
+    dirtyY: js.UndefOr[scala.Nothing],
+    dirtyWidth: Double
+  ): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: js.UndefOr[scala.Nothing],
+    dirtyY: js.UndefOr[scala.Nothing],
+    dirtyWidth: Double,
+    dirtyHeight: Double
+  ): Unit = js.native
+  def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: js.UndefOr[scala.Nothing], dirtyY: Double): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: js.UndefOr[scala.Nothing],
+    dirtyY: Double,
+    dirtyWidth: js.UndefOr[scala.Nothing],
+    dirtyHeight: Double
+  ): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: js.UndefOr[scala.Nothing],
+    dirtyY: Double,
+    dirtyWidth: Double
+  ): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: js.UndefOr[scala.Nothing],
+    dirtyY: Double,
+    dirtyWidth: Double,
+    dirtyHeight: Double
+  ): Unit = js.native
   def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: Double,
+    dirtyY: js.UndefOr[scala.Nothing],
+    dirtyWidth: js.UndefOr[scala.Nothing],
+    dirtyHeight: Double
+  ): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: Double,
+    dirtyY: js.UndefOr[scala.Nothing],
+    dirtyWidth: Double
+  ): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: Double,
+    dirtyY: js.UndefOr[scala.Nothing],
+    dirtyWidth: Double,
+    dirtyHeight: Double
+  ): Unit = js.native
   def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double, dirtyY: Double): Unit = js.native
+  def putImageData(
+    imageData: ImageData,
+    dx: Double,
+    dy: Double,
+    dirtyX: Double,
+    dirtyY: Double,
+    dirtyWidth: js.UndefOr[scala.Nothing],
+    dirtyHeight: Double
+  ): Unit = js.native
   def putImageData(imageData: ImageData, dx: Double, dy: Double, dirtyX: Double, dirtyY: Double, dirtyWidth: Double): Unit = js.native
   def putImageData(
     imageData: ImageData,

@@ -25,12 +25,10 @@ class ListOperationAction protected () extends MicroflowAction {
   ) = this()
   @JSName("model")
   var model_FListOperationAction: IModel = js.native
-  def operation(): js.Any = js.native
-  def operation(newValue: ListOperation): js.Any = js.native
-  @JSName("operation")
-  def operation_Union: ListOperation | Null = js.native
+  def operation: ListOperation | Null = js.native
+  def operation_=(newValue: ListOperation | Null): Unit = js.native
   def outputVariableName: String = js.native
-  def outputVariableName(newValue: String): js.Any = js.native
+  def outputVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -30,6 +30,7 @@ class ResourceAccountsClientsInvitations protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def create(callback: BodyResponseCallback[SchemaClientUserInvitation]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def create(params: ParamsResourceAccountsClientsInvitationsCreate): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def create(
     params: ParamsResourceAccountsClientsInvitationsCreate,
@@ -62,6 +63,7 @@ class ResourceAccountsClientsInvitations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def get(callback: BodyResponseCallback[SchemaClientUserInvitation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def get(params: ParamsResourceAccountsClientsInvitationsGet): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def get(
     params: ParamsResourceAccountsClientsInvitationsGet,
@@ -96,6 +98,7 @@ class ResourceAccountsClientsInvitations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClientUserInvitationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
   def list(params: ParamsResourceAccountsClientsInvitationsList): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
   def list(
     params: ParamsResourceAccountsClientsInvitationsList,

@@ -22,16 +22,34 @@ trait ShippingDetails extends js.Object {
 
 object ShippingDetails {
   @scala.inline
-  def apply(
-    InboundShipment: Shipment = null,
-    OutboundShipment: Shipment = null,
-    ShippingOption: ShippingOption = null
-  ): ShippingDetails = {
+  def apply(): ShippingDetails = {
     val __obj = js.Dynamic.literal()
-    if (InboundShipment != null) __obj.updateDynamic("InboundShipment")(InboundShipment.asInstanceOf[js.Any])
-    if (OutboundShipment != null) __obj.updateDynamic("OutboundShipment")(OutboundShipment.asInstanceOf[js.Any])
-    if (ShippingOption != null) __obj.updateDynamic("ShippingOption")(ShippingOption.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShippingDetails]
   }
+  @scala.inline
+  implicit class ShippingDetailsOps[Self <: ShippingDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInboundShipment(value: Shipment): Self = this.set("InboundShipment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInboundShipment: Self = this.set("InboundShipment", js.undefined)
+    @scala.inline
+    def setOutboundShipment(value: Shipment): Self = this.set("OutboundShipment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutboundShipment: Self = this.set("OutboundShipment", js.undefined)
+    @scala.inline
+    def setShippingOption(value: ShippingOption): Self = this.set("ShippingOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingOption: Self = this.set("ShippingOption", js.undefined)
+  }
+  
 }
 

@@ -22,7 +22,7 @@ class Behavior () extends Object {
     * The behaviors key allows a behavior to group multiple behaviors
     * together.
     */
-  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[js.UndefOr[/* options */ js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]]) = js.native
   /**
     * collectionEvents will respond to the view's collection events.
     */

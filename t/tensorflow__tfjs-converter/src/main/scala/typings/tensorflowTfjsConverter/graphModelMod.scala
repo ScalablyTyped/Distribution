@@ -8,6 +8,7 @@ import typings.tensorflowTfjsCore.tensorMod.Tensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
+import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveConfig
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import scala.scalajs.js
@@ -102,6 +103,12 @@ object graphModelMod extends js.Object {
       * compile the inference graph.
       */
     def load(): js.Promise[Boolean] = js.native
+    /**
+      * Synchronously construct the in memory weight map and
+      * compile the inference graph.
+      */
+    /** @doc {heading: 'Models', subheading: 'Classes', ignoreCI: true} */
+    def loadSync(artifacts: ModelArtifacts): Boolean = js.native
     def predict(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     /**
       * Execute the inference for the input tensors.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for web3-eth-ens
 
-Typings are for version 1.2.9
+Typings are for version 1.2.11
 
 ## Library description:
 ENS support for web3.
@@ -10,9 +10,9 @@ ENS support for web3.
 | ------------------ | :-------------: |
 | Full name          | web3-eth-ens |
 | Keywords           | - |
-| # releases         | 30 |
+| # releases         | 29 |
 | # dependents       | 5 |
-| # downloads        | 2949869 |
+| # downloads        | 3017021 |
 | # stars            | 0 |
 
 ## Links

@@ -17,22 +17,46 @@ trait PartialClassNameMapListItDense extends js.Object {
 
 object PartialClassNameMapListItDense {
   @scala.inline
-  def apply(
-    dense: String = null,
-    inset: String = null,
-    primary: String = null,
-    root: String = null,
-    secondary: String = null,
-    textDense: String = null
-  ): PartialClassNameMapListItDense = {
+  def apply(): PartialClassNameMapListItDense = {
     val __obj = js.Dynamic.literal()
-    if (dense != null) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
-    if (inset != null) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (textDense != null) __obj.updateDynamic("textDense")(textDense.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapListItDense]
   }
+  @scala.inline
+  implicit class PartialClassNameMapListItDenseOps[Self <: PartialClassNameMapListItDense] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDense(value: String): Self = this.set("dense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDense: Self = this.set("dense", js.undefined)
+    @scala.inline
+    def setInset(value: String): Self = this.set("inset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInset: Self = this.set("inset", js.undefined)
+    @scala.inline
+    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSecondary(value: String): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setTextDense(value: String): Self = this.set("textDense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDense: Self = this.set("textDense", js.undefined)
+  }
+  
 }
 

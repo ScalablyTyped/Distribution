@@ -9,17 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger")
 @js.native
 abstract class DeviceConnectionChangeTrigger ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger {
-  /** Gets whether the system can maintain a connection to the specified device. */
-  /* CompleteClass */
-  override var canMaintainConnection: Boolean = js.native
-  /** Gets the device Id associated with the device. */
-  /* CompleteClass */
-  override var deviceId: String = js.native
-  /** Gets or sets whether the system should automatically attempt to keep the referenced device connected. */
-  /* CompleteClass */
-  override var maintainConnection: Boolean = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger
 
 /* static members */
 @JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger")

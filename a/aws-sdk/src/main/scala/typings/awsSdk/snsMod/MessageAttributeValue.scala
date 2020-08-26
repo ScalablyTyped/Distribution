@@ -22,11 +22,32 @@ trait MessageAttributeValue extends js.Object {
 
 object MessageAttributeValue {
   @scala.inline
-  def apply(DataType: String, BinaryValue: Binary = null, StringValue: String = null): MessageAttributeValue = {
+  def apply(DataType: String): MessageAttributeValue = {
     val __obj = js.Dynamic.literal(DataType = DataType.asInstanceOf[js.Any])
-    if (BinaryValue != null) __obj.updateDynamic("BinaryValue")(BinaryValue.asInstanceOf[js.Any])
-    if (StringValue != null) __obj.updateDynamic("StringValue")(StringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageAttributeValue]
   }
+  @scala.inline
+  implicit class MessageAttributeValueOps[Self <: MessageAttributeValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataType(value: String): Self = this.set("DataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBinaryValue(value: Binary): Self = this.set("BinaryValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinaryValue: Self = this.set("BinaryValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("StringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("StringValue", js.undefined)
+  }
+  
 }
 

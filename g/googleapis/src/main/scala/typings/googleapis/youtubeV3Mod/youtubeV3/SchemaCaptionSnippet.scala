@@ -81,36 +81,74 @@ trait SchemaCaptionSnippet extends js.Object {
 
 object SchemaCaptionSnippet {
   @scala.inline
-  def apply(
-    audioTrackType: String = null,
-    failureReason: String = null,
-    isAutoSynced: js.UndefOr[Boolean] = js.undefined,
-    isCC: js.UndefOr[Boolean] = js.undefined,
-    isDraft: js.UndefOr[Boolean] = js.undefined,
-    isEasyReader: js.UndefOr[Boolean] = js.undefined,
-    isLarge: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    lastUpdated: String = null,
-    name: String = null,
-    status: String = null,
-    trackKind: String = null,
-    videoId: String = null
-  ): SchemaCaptionSnippet = {
+  def apply(): SchemaCaptionSnippet = {
     val __obj = js.Dynamic.literal()
-    if (audioTrackType != null) __obj.updateDynamic("audioTrackType")(audioTrackType.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAutoSynced)) __obj.updateDynamic("isAutoSynced")(isAutoSynced.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCC)) __obj.updateDynamic("isCC")(isCC.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDraft)) __obj.updateDynamic("isDraft")(isDraft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEasyReader)) __obj.updateDynamic("isEasyReader")(isEasyReader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLarge)) __obj.updateDynamic("isLarge")(isLarge.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (lastUpdated != null) __obj.updateDynamic("lastUpdated")(lastUpdated.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (trackKind != null) __obj.updateDynamic("trackKind")(trackKind.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCaptionSnippet]
   }
+  @scala.inline
+  implicit class SchemaCaptionSnippetOps[Self <: SchemaCaptionSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioTrackType(value: String): Self = this.set("audioTrackType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioTrackType: Self = this.set("audioTrackType", js.undefined)
+    @scala.inline
+    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setIsAutoSynced(value: Boolean): Self = this.set("isAutoSynced", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsAutoSynced: Self = this.set("isAutoSynced", js.undefined)
+    @scala.inline
+    def setIsCC(value: Boolean): Self = this.set("isCC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCC: Self = this.set("isCC", js.undefined)
+    @scala.inline
+    def setIsDraft(value: Boolean): Self = this.set("isDraft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDraft: Self = this.set("isDraft", js.undefined)
+    @scala.inline
+    def setIsEasyReader(value: Boolean): Self = this.set("isEasyReader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEasyReader: Self = this.set("isEasyReader", js.undefined)
+    @scala.inline
+    def setIsLarge(value: Boolean): Self = this.set("isLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsLarge: Self = this.set("isLarge", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLastUpdated(value: String): Self = this.set("lastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("lastUpdated", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTrackKind(value: String): Self = this.set("trackKind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackKind: Self = this.set("trackKind", js.undefined)
+    @scala.inline
+    def setVideoId(value: String): Self = this.set("videoId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoId: Self = this.set("videoId", js.undefined)
+  }
+  
 }
 

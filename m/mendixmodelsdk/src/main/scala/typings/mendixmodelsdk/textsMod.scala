@@ -17,6 +17,7 @@ import typings.mendixmodelsdk.menusMod.menus.MenuItem
 import typings.mendixmodelsdk.microflowsMod.microflows.Microflow
 import typings.mendixmodelsdk.microflowsMod.microflows.TextTemplate
 import typings.mendixmodelsdk.nativepagesMod.nativepages.BottomBarItem
+import typings.mendixmodelsdk.navigationMod.navigation.NavigationProfile
 import typings.mendixmodelsdk.pagesMod.pages.AttributeWidget
 import typings.mendixmodelsdk.pagesMod.pages.AttributeWidgetWithPlaceholder
 import typings.mendixmodelsdk.pagesMod.pages.Button
@@ -91,9 +92,9 @@ object textsMod extends js.Object {
       var model_FSystemText: IModel = js.native
       def containerAsSystemTextCollection: SystemTextCollection = js.native
       def key: String = js.native
-      def key(newValue: String): js.Any = js.native
+      def key_=(newValue: String): Unit = js.native
       def text: Text = js.native
-      def text(newValue: Text): js.Any = js.native
+      def text_=(newValue: Text): Unit = js.native
     }
     
     /**
@@ -161,6 +162,7 @@ object textsMod extends js.Object {
       def containerAsMenuItem: MenuItem = js.native
       def containerAsMicroflow: Microflow = js.native
       def containerAsMicroflowSettings: MicroflowSettings = js.native
+      def containerAsNavigationProfile: NavigationProfile = js.native
       def containerAsPage: Page = js.native
       def containerAsPageSettings: PageSettings = js.native
       def containerAsReferenceSelector: ReferenceSelector = js.native
@@ -196,9 +198,9 @@ object textsMod extends js.Object {
       var model_FTranslation: IModel = js.native
       def containerAsText: Text = js.native
       def languageCode: String = js.native
-      def languageCode(newValue: String): js.Any = js.native
+      def languageCode_=(newValue: String): Unit = js.native
       def text: String = js.native
-      def text(newValue: String): js.Any = js.native
+      def text_=(newValue: String): Unit = js.native
     }
     
     /* static members */
@@ -434,6 +436,15 @@ object textsMod extends js.Object {
       def createInMasterDetailDetailRegionUnderTitle(container: MasterDetailDetailRegion): Text = js.native
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
+        * The new Text will be automatically stored in the 'alternativeText' property
+        * of the parent menus.MenuItem element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  8.12.0 and higher
+        */
+      def createInMenuItemUnderAlternativeText(container: MenuItem): Text = js.native
+      /**
+        * Creates and returns a new Text instance in the SDK and on the server.
         * The new Text will be automatically stored in the 'caption' property
         * of the parent menus.MenuItem element passed as argument.
         */
@@ -452,8 +463,20 @@ object textsMod extends js.Object {
       def createInMicroflowUnderConcurrencyErrorMessage(container: Microflow): Text = js.native
       /**
         * Creates and returns a new Text instance in the SDK and on the server.
+        * The new Text will be automatically stored in the 'appTitle' property
+        * of the parent navigation.NavigationProfile element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  8.12.0 and higher
+        */
+      def createInNavigationProfileUnderAppTitle(container: NavigationProfile): Text = js.native
+      /**
+        * Creates and returns a new Text instance in the SDK and on the server.
         * The new Text will be automatically stored in the 'formTitle' property
         * of the parent pages.PageSettings element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  6.0.0 to 8.11.0
         */
       def createInPageSettingsUnderFormTitle(container: PageSettings): Text = js.native
       /**

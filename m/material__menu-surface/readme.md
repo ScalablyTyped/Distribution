@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__menu-surface
 
-Typings are for version 5.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 The Material Components for the web menu surface component
@@ -10,9 +10,9 @@ The Material Components for the web menu surface component
 | ------------------ | :-------------: |
 | Full name          | @material/menu-surface |
 | Keywords           | material components, material design, menu surface |
-| # releases         | 102 |
+| # releases         | 151 |
 | # dependents       | 18 |
-| # downloads        | 1150693 |
+| # downloads        | 1192690 |
 | # stars            | 0 |
 
 ## Links

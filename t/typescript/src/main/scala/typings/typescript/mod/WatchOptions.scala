@@ -5,30 +5,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WatchOptions
   extends /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
-  var fallbackPolling: js.UndefOr[PollingWatchKind] = js.undefined
-  var synchronousWatchDirectory: js.UndefOr[Boolean] = js.undefined
-  var watchDirectory: js.UndefOr[WatchDirectoryKind] = js.undefined
-  var watchFile: js.UndefOr[WatchFileKind] = js.undefined
+  var fallbackPolling: js.UndefOr[PollingWatchKind] = js.native
+  var synchronousWatchDirectory: js.UndefOr[Boolean] = js.native
+  var watchDirectory: js.UndefOr[WatchDirectoryKind] = js.native
+  var watchFile: js.UndefOr[WatchFileKind] = js.native
 }
 
 object WatchOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] = null,
-    fallbackPolling: PollingWatchKind = null,
-    synchronousWatchDirectory: js.UndefOr[Boolean] = js.undefined,
-    watchDirectory: WatchDirectoryKind = null,
-    watchFile: WatchFileKind = null
-  ): WatchOptions = {
+  def apply(): WatchOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fallbackPolling != null) __obj.updateDynamic("fallbackPolling")(fallbackPolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronousWatchDirectory)) __obj.updateDynamic("synchronousWatchDirectory")(synchronousWatchDirectory.get.asInstanceOf[js.Any])
-    if (watchDirectory != null) __obj.updateDynamic("watchDirectory")(watchDirectory.asInstanceOf[js.Any])
-    if (watchFile != null) __obj.updateDynamic("watchFile")(watchFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatchOptions]
   }
+  @scala.inline
+  implicit class WatchOptionsOps[Self <: WatchOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFallbackPolling(value: PollingWatchKind): Self = this.set("fallbackPolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFallbackPolling: Self = this.set("fallbackPolling", js.undefined)
+    @scala.inline
+    def setSynchronousWatchDirectory(value: Boolean): Self = this.set("synchronousWatchDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSynchronousWatchDirectory: Self = this.set("synchronousWatchDirectory", js.undefined)
+    @scala.inline
+    def setWatchDirectory(value: WatchDirectoryKind): Self = this.set("watchDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchDirectory: Self = this.set("watchDirectory", js.undefined)
+    @scala.inline
+    def setWatchFile(value: WatchFileKind): Self = this.set("watchFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchFile: Self = this.set("watchFile", js.undefined)
+  }
+  
 }
 

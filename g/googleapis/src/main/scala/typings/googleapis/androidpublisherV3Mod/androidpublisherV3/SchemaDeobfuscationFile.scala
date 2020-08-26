@@ -17,10 +17,26 @@ trait SchemaDeobfuscationFile extends js.Object {
 
 object SchemaDeobfuscationFile {
   @scala.inline
-  def apply(symbolType: String = null): SchemaDeobfuscationFile = {
+  def apply(): SchemaDeobfuscationFile = {
     val __obj = js.Dynamic.literal()
-    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeobfuscationFile]
   }
+  @scala.inline
+  implicit class SchemaDeobfuscationFileOps[Self <: SchemaDeobfuscationFile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSymbolType(value: String): Self = this.set("symbolType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolType: Self = this.set("symbolType", js.undefined)
+  }
+  
 }
 

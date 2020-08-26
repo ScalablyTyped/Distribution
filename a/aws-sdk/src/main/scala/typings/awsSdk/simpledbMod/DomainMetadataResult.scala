@@ -38,24 +38,50 @@ trait DomainMetadataResult extends js.Object {
 
 object DomainMetadataResult {
   @scala.inline
-  def apply(
-    AttributeNameCount: js.UndefOr[Integer] = js.undefined,
-    AttributeNamesSizeBytes: js.UndefOr[Long] = js.undefined,
-    AttributeValueCount: js.UndefOr[Integer] = js.undefined,
-    AttributeValuesSizeBytes: js.UndefOr[Long] = js.undefined,
-    ItemCount: js.UndefOr[Integer] = js.undefined,
-    ItemNamesSizeBytes: js.UndefOr[Long] = js.undefined,
-    Timestamp: js.UndefOr[Integer] = js.undefined
-  ): DomainMetadataResult = {
+  def apply(): DomainMetadataResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AttributeNameCount)) __obj.updateDynamic("AttributeNameCount")(AttributeNameCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttributeNamesSizeBytes)) __obj.updateDynamic("AttributeNamesSizeBytes")(AttributeNamesSizeBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttributeValueCount)) __obj.updateDynamic("AttributeValueCount")(AttributeValueCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AttributeValuesSizeBytes)) __obj.updateDynamic("AttributeValuesSizeBytes")(AttributeValuesSizeBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemCount)) __obj.updateDynamic("ItemCount")(ItemCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ItemNamesSizeBytes)) __obj.updateDynamic("ItemNamesSizeBytes")(ItemNamesSizeBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timestamp)) __obj.updateDynamic("Timestamp")(Timestamp.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainMetadataResult]
   }
+  @scala.inline
+  implicit class DomainMetadataResultOps[Self <: DomainMetadataResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeNameCount(value: Integer): Self = this.set("AttributeNameCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeNameCount: Self = this.set("AttributeNameCount", js.undefined)
+    @scala.inline
+    def setAttributeNamesSizeBytes(value: Long): Self = this.set("AttributeNamesSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeNamesSizeBytes: Self = this.set("AttributeNamesSizeBytes", js.undefined)
+    @scala.inline
+    def setAttributeValueCount(value: Integer): Self = this.set("AttributeValueCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValueCount: Self = this.set("AttributeValueCount", js.undefined)
+    @scala.inline
+    def setAttributeValuesSizeBytes(value: Long): Self = this.set("AttributeValuesSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValuesSizeBytes: Self = this.set("AttributeValuesSizeBytes", js.undefined)
+    @scala.inline
+    def setItemCount(value: Integer): Self = this.set("ItemCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemCount: Self = this.set("ItemCount", js.undefined)
+    @scala.inline
+    def setItemNamesSizeBytes(value: Long): Self = this.set("ItemNamesSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemNamesSizeBytes: Self = this.set("ItemNamesSizeBytes", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Integer): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

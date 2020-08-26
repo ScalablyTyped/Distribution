@@ -33,7 +33,28 @@ trait Promise[T] extends js.Object {
     * itself throw an error.
     */
   def done(): Unit = js.native
+  def done(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Unit = js.native
+  def done(onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* reason */ js.Any, _]): Unit = js.native
+  def done(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, _],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Unit = js.native
+  def done(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: Null,
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Unit = js.native
   def done(onFulfilled: js.Function1[/* value */ T, _]): Unit = js.native
+  def done(
+    onFulfilled: js.Function1[/* value */ T, _],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Unit = js.native
   def done(onFulfilled: js.Function1[/* value */ T, _], onRejected: js.Function1[/* reason */ js.Any, _]): Unit = js.native
   def done(
     onFulfilled: js.Function1[/* value */ T, _],
@@ -43,6 +64,11 @@ trait Promise[T] extends js.Object {
   def done(
     onFulfilled: js.Function1[/* value */ T, _],
     onRejected: Null,
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Unit = js.native
+  def done(
+    onFulfilled: Null,
+    onRejected: js.UndefOr[scala.Nothing],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): Unit = js.native
   def done(onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, _]): Unit = js.native
@@ -177,7 +203,28 @@ trait Promise[T] extends js.Object {
     * The then method from the Promises/A+ specification, with an additional progress handler.
     */
   def `then`[U](): Promise[U] = js.native
+  def `then`[U](
+    onFulfill: js.UndefOr[scala.Nothing],
+    onReject: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U] = js.native
+  def `then`[U](onFulfill: js.UndefOr[scala.Nothing], onReject: js.Function1[/* error */ js.Any, IWhenable[U]]): Promise[U] = js.native
+  def `then`[U](
+    onFulfill: js.UndefOr[scala.Nothing],
+    onReject: js.Function1[/* error */ js.Any, IWhenable[U]],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U] = js.native
+  def `then`[U](
+    onFulfill: js.UndefOr[scala.Nothing],
+    onReject: Null,
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U] = js.native
   def `then`[U](onFulfill: js.Function1[/* value */ T, IWhenable[U]]): Promise[U] = js.native
+  def `then`[U](
+    onFulfill: js.Function1[/* value */ T, IWhenable[U]],
+    onReject: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U] = js.native
   def `then`[U](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
     onReject: js.Function1[/* error */ js.Any, IWhenable[U]]
@@ -190,6 +237,11 @@ trait Promise[T] extends js.Object {
   def `then`[U](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
     onReject: Null,
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U] = js.native
+  def `then`[U](
+    onFulfill: Null,
+    onReject: js.UndefOr[scala.Nothing],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): Promise[U] = js.native
   def `then`[U](onFulfill: Null, onReject: js.Function1[/* error */ js.Any, IWhenable[U]]): Promise[U] = js.native
@@ -211,7 +263,33 @@ trait Promise[T] extends js.Object {
   @JSName("then")
   def then_UV[U, V](): Promise[U | V] = js.native
   @JSName("then")
+  def then_UV[U, V](
+    onFulfill: js.UndefOr[scala.Nothing],
+    onReject: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U | V] = js.native
+  @JSName("then")
+  def then_UV[U, V](onFulfill: js.UndefOr[scala.Nothing], onReject: js.Function1[/* error */ js.Any, IWhenable[V]]): Promise[U | V] = js.native
+  @JSName("then")
+  def then_UV[U, V](
+    onFulfill: js.UndefOr[scala.Nothing],
+    onReject: js.Function1[/* error */ js.Any, IWhenable[V]],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U | V] = js.native
+  @JSName("then")
+  def then_UV[U, V](
+    onFulfill: js.UndefOr[scala.Nothing],
+    onReject: Null,
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U | V] = js.native
+  @JSName("then")
   def then_UV[U, V](onFulfill: js.Function1[/* value */ T, IWhenable[U]]): Promise[U | V] = js.native
+  @JSName("then")
+  def then_UV[U, V](
+    onFulfill: js.Function1[/* value */ T, IWhenable[U]],
+    onReject: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U | V] = js.native
   @JSName("then")
   def then_UV[U, V](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
@@ -227,6 +305,12 @@ trait Promise[T] extends js.Object {
   def then_UV[U, V](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
     onReject: Null,
+    onProgress: js.Function1[/* progress */ js.Any, _]
+  ): Promise[U | V] = js.native
+  @JSName("then")
+  def then_UV[U, V](
+    onFulfill: Null,
+    onReject: js.UndefOr[scala.Nothing],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): Promise[U | V] = js.native
   @JSName("then")

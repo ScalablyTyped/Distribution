@@ -13,6 +13,7 @@ trait CollectionEndpoint extends Endpoint[CollectionEndpoint] {
     * @param headers
     */
   def delete[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
+  def delete[T](id: js.Any, data: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
   def delete[T](id: js.Any, data: js.Any): js.Promise[MemberResponse[T]] = js.native
   def delete[T](id: js.Any, data: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**
@@ -20,12 +21,14 @@ trait CollectionEndpoint extends Endpoint[CollectionEndpoint] {
     * @param id
     */
   def get[T](id: js.Any): js.Promise[MemberResponse[T]] = js.native
+  def get[T](id: js.Any, params: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[MemberResponse[T]] = js.native
   def get[T](id: js.Any, params: js.Any): js.Promise[MemberResponse[T]] = js.native
   def get[T](id: js.Any, params: js.Any, headers: Headers): js.Promise[MemberResponse[T]] = js.native
   /**
     * Get a full collection. Returns a promise with an array of entities.
     */
   def getAll[T](): js.Promise[CollectionResponse[T]] = js.native
+  def getAll[T](params: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[CollectionResponse[T]] = js.native
   def getAll[T](params: js.Any): js.Promise[CollectionResponse[T]] = js.native
   def getAll[T](params: js.Any, headers: Headers): js.Promise[CollectionResponse[T]] = js.native
   /**

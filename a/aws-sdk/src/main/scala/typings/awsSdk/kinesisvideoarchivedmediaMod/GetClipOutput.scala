@@ -18,11 +18,30 @@ trait GetClipOutput extends js.Object {
 
 object GetClipOutput {
   @scala.inline
-  def apply(ContentType: ContentType = null, Payload: Payload = null): GetClipOutput = {
+  def apply(): GetClipOutput = {
     val __obj = js.Dynamic.literal()
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClipOutput]
   }
+  @scala.inline
+  implicit class GetClipOutputOps[Self <: GetClipOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setPayload(value: Payload): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("Payload", js.undefined)
+  }
+  
 }
 

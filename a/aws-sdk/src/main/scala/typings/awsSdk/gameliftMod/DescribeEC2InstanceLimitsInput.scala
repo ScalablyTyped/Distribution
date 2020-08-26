@@ -14,10 +14,26 @@ trait DescribeEC2InstanceLimitsInput extends js.Object {
 
 object DescribeEC2InstanceLimitsInput {
   @scala.inline
-  def apply(EC2InstanceType: EC2InstanceType = null): DescribeEC2InstanceLimitsInput = {
+  def apply(): DescribeEC2InstanceLimitsInput = {
     val __obj = js.Dynamic.literal()
-    if (EC2InstanceType != null) __obj.updateDynamic("EC2InstanceType")(EC2InstanceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEC2InstanceLimitsInput]
   }
+  @scala.inline
+  implicit class DescribeEC2InstanceLimitsInputOps[Self <: DescribeEC2InstanceLimitsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEC2InstanceType(value: EC2InstanceType): Self = this.set("EC2InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEC2InstanceType: Self = this.set("EC2InstanceType", js.undefined)
+  }
+  
 }
 

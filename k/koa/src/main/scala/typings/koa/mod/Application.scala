@@ -53,19 +53,68 @@ trait Application[StateT, CustomT] extends EventEmitter {
     */
   def listen(): Server = js.native
   def listen(handle: js.Any): Server = js.native
+  def listen(handle: js.Any, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
   def listen(handle: js.Any, backlog: Double): Server = js.native
   def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(options: ListenOptions): Server = js.native
   def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(path: String): Server = js.native
+  def listen(path: String, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
   def listen(path: String, backlog: Double): Server = js.native
   def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(path: String, listeningListener: js.Function0[Unit]): Server = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: String): Server = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: String,
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: String, backlog: Double): Server = js.native
+  def listen(
+    port: js.UndefOr[scala.Nothing],
+    hostname: String,
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
   def listen(port: Double): Server = js.native
   def listen(port: Double, backlog: Double): Server = js.native
   def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
+  def listen(
+    port: Double,
+    hostname: js.UndefOr[scala.Nothing],
+    backlog: Double,
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
+  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
   def listen(port: Double, hostname: String): Server = js.native
+  def listen(
+    port: Double,
+    hostname: String,
+    backlog: js.UndefOr[scala.Nothing],
+    listeningListener: js.Function0[Unit]
+  ): Server = js.native
   def listen(port: Double, hostname: String, backlog: Double): Server = js.native
   def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
   def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): Server = js.native

@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndexedAccessType extends Type {
-  var constraint: js.UndefOr[Type] = js.undefined
-  var indexType: Type
-  var objectType: Type
-  var simplifiedForReading: js.UndefOr[Type] = js.undefined
-  var simplifiedForWriting: js.UndefOr[Type] = js.undefined
+  var constraint: js.UndefOr[Type] = js.native
+  var indexType: Type = js.native
+  var objectType: Type = js.native
+  var simplifiedForReading: js.UndefOr[Type] = js.native
+  var simplifiedForWriting: js.UndefOr[Type] = js.native
 }
 
 object IndexedAccessType {
@@ -40,22 +41,39 @@ object IndexedAccessType {
     isUnion: () => /* is typescript.typescript.UnionType */ Boolean,
     isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean,
     objectType: Type,
-    symbol: Symbol,
-    aliasSymbol: Symbol = null,
-    aliasTypeArguments: js.Array[Type] = null,
-    constraint: Type = null,
-    pattern: DestructuringPattern = null,
-    simplifiedForReading: Type = null,
-    simplifiedForWriting: Type = null
+    symbol: Symbol
   ): IndexedAccessType = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), indexType = indexType.asInstanceOf[js.Any], isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectType = objectType.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol.asInstanceOf[js.Any])
-    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (simplifiedForReading != null) __obj.updateDynamic("simplifiedForReading")(simplifiedForReading.asInstanceOf[js.Any])
-    if (simplifiedForWriting != null) __obj.updateDynamic("simplifiedForWriting")(simplifiedForWriting.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexedAccessType]
   }
+  @scala.inline
+  implicit class IndexedAccessTypeOps[Self <: IndexedAccessType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexType(value: Type): Self = this.set("indexType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObjectType(value: Type): Self = this.set("objectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConstraint(value: Type): Self = this.set("constraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraint: Self = this.set("constraint", js.undefined)
+    @scala.inline
+    def setSimplifiedForReading(value: Type): Self = this.set("simplifiedForReading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimplifiedForReading: Self = this.set("simplifiedForReading", js.undefined)
+    @scala.inline
+    def setSimplifiedForWriting(value: Type): Self = this.set("simplifiedForWriting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimplifiedForWriting: Self = this.set("simplifiedForWriting", js.undefined)
+  }
+  
 }
 

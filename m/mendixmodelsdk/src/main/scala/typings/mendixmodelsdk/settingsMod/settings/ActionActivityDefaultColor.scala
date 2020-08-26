@@ -31,9 +31,9 @@ class ActionActivityDefaultColor protected () extends Element {
   @JSName("model")
   var model_FActionActivityDefaultColor: IModel = js.native
   def actionActivityType: String = js.native
-  def actionActivityType(newValue: String): js.Any = js.native
+  def actionActivityType_=(newValue: String): Unit = js.native
   def backgroundColor: ActionActivityColor = js.native
-  def backgroundColor(newValue: ActionActivityColor): js.Any = js.native
+  def backgroundColor_=(newValue: ActionActivityColor): Unit = js.native
   def containerAsModelerSettings: ModelerSettings = js.native
 }
 

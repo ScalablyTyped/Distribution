@@ -1,48 +1,34 @@
 package typings.semanticUiReact.transitionTransitionMod
 
-import typings.react.mod.ReactNode
-import typings.semanticUiReact.genericMod.SemanticTRANSITIONS
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransitionEventData extends TransitionProps {
-  var status: TRANSITION_STATUSES
+  var status: TRANSITION_STATUSES = js.native
 }
 
 object TransitionEventData {
   @scala.inline
-  def apply(
-    status: TRANSITION_STATUSES,
-    animation: SemanticTRANSITIONS | String = null,
-    children: ReactNode = null,
-    directional: js.UndefOr[Boolean] = js.undefined,
-    duration: Double | String | TransitionPropDuration = null,
-    mountOnShow: js.UndefOr[Boolean] = js.undefined,
-    onComplete: (/* nothing */ Null, /* data */ TransitionEventData) => Unit = null,
-    onHide: (/* nothing */ Null, /* data */ TransitionEventData) => Unit = null,
-    onShow: (/* nothing */ Null, /* data */ TransitionEventData) => Unit = null,
-    onStart: (/* nothing */ Null, /* data */ TransitionEventData) => Unit = null,
-    reactKey: String = null,
-    transitionOnMount: js.UndefOr[Boolean] = js.undefined,
-    unmountOnHide: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): TransitionEventData = {
+  def apply(status: TRANSITION_STATUSES): TransitionEventData = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(directional)) __obj.updateDynamic("directional")(directional.get.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(mountOnShow)) __obj.updateDynamic("mountOnShow")(mountOnShow.get.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction2(onComplete))
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2(onHide))
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction2(onShow))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
-    if (reactKey != null) __obj.updateDynamic("reactKey")(reactKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitionOnMount)) __obj.updateDynamic("transitionOnMount")(transitionOnMount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmountOnHide)) __obj.updateDynamic("unmountOnHide")(unmountOnHide.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionEventData]
   }
+  @scala.inline
+  implicit class TransitionEventDataOps[Self <: TransitionEventData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: TRANSITION_STATUSES): Self = this.set("status", value.asInstanceOf[js.Any])
+  }
+  
 }
 

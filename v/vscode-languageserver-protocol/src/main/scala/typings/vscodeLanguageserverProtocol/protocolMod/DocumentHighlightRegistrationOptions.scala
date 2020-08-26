@@ -4,15 +4,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DocumentHighlightRegistrationOptions
   extends TextDocumentRegistrationOptions
      with WorkDoneProgressOptions
 
 object DocumentHighlightRegistrationOptions {
   @scala.inline
-  def apply(documentSelector: DocumentSelector = null, workDoneProgress: js.UndefOr[Boolean] = js.undefined): DocumentHighlightRegistrationOptions = {
-    val __obj = js.Dynamic.literal(documentSelector = documentSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(workDoneProgress)) __obj.updateDynamic("workDoneProgress")(workDoneProgress.get.asInstanceOf[js.Any])
+  def apply(): DocumentHighlightRegistrationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentHighlightRegistrationOptions]
   }
 }

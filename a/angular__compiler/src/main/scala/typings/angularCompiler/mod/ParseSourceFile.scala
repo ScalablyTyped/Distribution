@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "ParseSourceFile")
 @js.native
 class ParseSourceFile protected ()
-  extends typings.angularCompiler.publicApiMod.ParseSourceFile {
+  extends typings.angularCompiler.compilerMod.ParseSourceFile {
   def this(content: String, url: String) = this()
 }
 

@@ -28,31 +28,57 @@ trait ZoneArgs extends js.Object {
   /**
     * A mapping of tags to assign to the zone.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
-    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any [`aws.route53.ZoneAssociation` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
+    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegationSetId` argument in this resource and any `aws.route53.ZoneAssociation` resource specifying the same zone ID. Detailed below.
     */
   val vpcs: js.UndefOr[Input[js.Array[Input[ZoneVpc]]]] = js.native
 }
 
 object ZoneArgs {
   @scala.inline
-  def apply(
-    comment: Input[String] = null,
-    delegationSetId: Input[String] = null,
-    forceDestroy: Input[Boolean] = null,
-    name: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcs: Input[js.Array[Input[ZoneVpc]]] = null
-  ): ZoneArgs = {
+  def apply(): ZoneArgs = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (delegationSetId != null) __obj.updateDynamic("delegationSetId")(delegationSetId.asInstanceOf[js.Any])
-    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcs != null) __obj.updateDynamic("vpcs")(vpcs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoneArgs]
   }
+  @scala.inline
+  implicit class ZoneArgsOps[Self <: ZoneArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComment(value: Input[String]): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setDelegationSetId(value: Input[String]): Self = this.set("delegationSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegationSetId: Self = this.set("delegationSetId", js.undefined)
+    @scala.inline
+    def setForceDestroy(value: Input[Boolean]): Self = this.set("forceDestroy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceDestroy: Self = this.set("forceDestroy", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcsVarargs(value: Input[ZoneVpc]*): Self = this.set("vpcs", js.Array(value :_*))
+    @scala.inline
+    def setVpcs(value: Input[js.Array[Input[ZoneVpc]]]): Self = this.set("vpcs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcs: Self = this.set("vpcs", js.undefined)
+  }
+  
 }
 

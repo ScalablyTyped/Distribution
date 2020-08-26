@@ -30,6 +30,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaChange] = js.native
   def get(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def get(params: ParamsResourceChangesGet): GaxiosPromise[SchemaChange] = js.native
   def get(params: ParamsResourceChangesGet, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def get(
@@ -58,6 +59,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def getStartPageToken(): GaxiosPromise[SchemaStartPageToken] = js.native
   def getStartPageToken(callback: BodyResponseCallback[SchemaStartPageToken]): Unit = js.native
+  def getStartPageToken(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStartPageToken] = js.native
   def getStartPageToken(params: ParamsResourceChangesGetstartpagetoken): GaxiosPromise[SchemaStartPageToken] = js.native
   def getStartPageToken(
     params: ParamsResourceChangesGetstartpagetoken,
@@ -97,6 +99,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaChangeList] = js.native
   def list(callback: BodyResponseCallback[SchemaChangeList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChangeList] = js.native
   def list(params: ParamsResourceChangesList): GaxiosPromise[SchemaChangeList] = js.native
   def list(params: ParamsResourceChangesList, callback: BodyResponseCallback[SchemaChangeList]): Unit = js.native
   def list(
@@ -134,6 +137,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceChangesWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceChangesWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

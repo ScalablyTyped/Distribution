@@ -15,7 +15,11 @@ import scala.scalajs.js.annotation._
   */
 class Terminal () extends js.Object {
   def this(file: String) = this()
+  def this(file: js.UndefOr[scala.Nothing], args: js.Array[String]) = this()
   def this(file: String, args: js.Array[String]) = this()
+  def this(file: js.UndefOr[scala.Nothing], args: js.UndefOr[scala.Nothing], opt: TerminalOptions) = this()
+  def this(file: js.UndefOr[scala.Nothing], args: js.Array[String], opt: TerminalOptions) = this()
+  def this(file: String, args: js.UndefOr[scala.Nothing], opt: TerminalOptions) = this()
   def this(file: String, args: js.Array[String], opt: TerminalOptions) = this()
   /** Read-only number of columns in the terminal. */
   var cols: Double = js.native
@@ -69,6 +73,7 @@ class Terminal () extends js.Object {
   def removeAllListeners(event: String): this.type = js.native
   def removeListener(event: String, listener: js.Function): this.type = js.native
   def resize(): Unit = js.native
+  def resize(cols: js.UndefOr[scala.Nothing], rows: Double): Unit = js.native
   def resize(cols: Double): Unit = js.native
   def resize(cols: Double, rows: Double): Unit = js.native
   def resume(): Unit = js.native

@@ -12,7 +12,7 @@ Image processing component for React
 | Keywords           | react, image processing, image, jimp, sepia, colors, invert, image component |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 5094 |
+| # downloads        | 5136 |
 | # stars            | 6 |
 
 ## Links

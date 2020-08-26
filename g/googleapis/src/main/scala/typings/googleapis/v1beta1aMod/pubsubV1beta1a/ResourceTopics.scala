@@ -27,6 +27,7 @@ class ResourceTopics protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTopic] = js.native
   def create(callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
   def create(params: ParamsResourceTopicsCreate): GaxiosPromise[SchemaTopic] = js.native
   def create(params: ParamsResourceTopicsCreate, callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
   def create(
@@ -56,6 +57,7 @@ class ResourceTopics protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceTopicsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceTopicsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -86,6 +88,7 @@ class ResourceTopics protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTopic] = js.native
   def get(callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTopic] = js.native
   def get(params: ParamsResourceTopicsGet): GaxiosPromise[SchemaTopic] = js.native
   def get(params: ParamsResourceTopicsGet, callback: BodyResponseCallback[SchemaTopic]): Unit = js.native
   def get(
@@ -115,6 +118,7 @@ class ResourceTopics protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTopicsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTopicsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTopicsResponse] = js.native
   def list(params: ParamsResourceTopicsList): GaxiosPromise[SchemaListTopicsResponse] = js.native
   def list(params: ParamsResourceTopicsList, callback: BodyResponseCallback[SchemaListTopicsResponse]): Unit = js.native
   def list(
@@ -143,6 +147,7 @@ class ResourceTopics protected () extends js.Object {
     */
   def publish(): GaxiosPromise[SchemaEmpty] = js.native
   def publish(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def publish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def publish(params: ParamsResourceTopicsPublish): GaxiosPromise[SchemaEmpty] = js.native
   def publish(params: ParamsResourceTopicsPublish, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def publish(
@@ -171,6 +176,7 @@ class ResourceTopics protected () extends js.Object {
     */
   def publishBatch(): GaxiosPromise[SchemaPublishBatchResponse] = js.native
   def publishBatch(callback: BodyResponseCallback[SchemaPublishBatchResponse]): Unit = js.native
+  def publishBatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublishBatchResponse] = js.native
   def publishBatch(params: ParamsResourceTopicsPublishbatch): GaxiosPromise[SchemaPublishBatchResponse] = js.native
   def publishBatch(
     params: ParamsResourceTopicsPublishbatch,

@@ -11,5 +11,6 @@ import scala.scalajs.js.annotation._
   *
   * @class Query
   */
+@js.native
 trait Query extends js.Object
 

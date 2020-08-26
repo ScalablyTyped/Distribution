@@ -30,19 +30,44 @@ trait ListConfigurationsRequest extends js.Object {
 
 object ListConfigurationsRequest {
   @scala.inline
-  def apply(
-    configurationType: ConfigurationItemType,
-    filters: Filters = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
-    nextToken: NextToken = null,
-    orderBy: OrderByList = null
-  ): ListConfigurationsRequest = {
+  def apply(configurationType: ConfigurationItemType): ListConfigurationsRequest = {
     val __obj = js.Dynamic.literal(configurationType = configurationType.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConfigurationsRequest]
   }
+  @scala.inline
+  implicit class ListConfigurationsRequestOps[Self <: ListConfigurationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationType(value: ConfigurationItemType): Self = this.set("configurationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: Filters): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setOrderByVarargs(value: OrderByElement*): Self = this.set("orderBy", js.Array(value :_*))
+    @scala.inline
+    def setOrderBy(value: OrderByList): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+  }
+  
 }
 

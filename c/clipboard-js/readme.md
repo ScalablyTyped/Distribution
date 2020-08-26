@@ -11,8 +11,8 @@ A web shim to handle clipboard APIs across browsers using a simple Promise API.
 | Full name          | clipboard-js |
 | Keywords           | clipboard, HTML5, copy, copying, cut, paste, execCommand, setData, getData |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 1696281 |
+| # dependents       | 17 |
+| # downloads        | 1610228 |
 | # stars            | 11 |
 
 ## Links

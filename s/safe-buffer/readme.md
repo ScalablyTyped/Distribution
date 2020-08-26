@@ -1,7 +1,7 @@
 
 # Scala.js typings for safe-buffer
 
-Typings are for version 5.1.2
+Typings are for version 5.2.1
 
 ## Library description:
 Safer Node.js Buffer API

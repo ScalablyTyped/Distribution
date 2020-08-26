@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "cryptr"
-version := "4.0-dt-20200515Z-a5bea5"
-scalaVersion := "2.13.2"
+version := "4.0-dt-20200515Z-f151aa"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

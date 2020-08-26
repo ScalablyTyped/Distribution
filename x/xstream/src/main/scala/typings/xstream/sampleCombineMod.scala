@@ -15,12 +15,6 @@ object sampleCombineMod extends js.Object {
     def this(i: Double, p: SampleCombineOperator[_]) = this()
     var i: js.Any = js.native
     var p: js.Any = js.native
-    /* CompleteClass */
-    override def _c(): Unit = js.native
-    /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def _n(v: T): Unit = js.native
   }
   
   @js.native
@@ -29,28 +23,10 @@ object sampleCombineMod extends js.Object {
     def this(ins: Stream[T], streams: js.Array[Stream[_]]) = this()
     var Nn: Double = js.native
     var ils: js.Array[SampleCombineListener[_]] = js.native
-    /* CompleteClass */
-    override var ins: Stream[T] = js.native
     var others: js.Array[Stream[_]] = js.native
-    /* CompleteClass */
-    override var out: Stream[js.Array[js.Any]] = js.native
     @JSName("out")
     var out_SampleCombineOperator: Stream[js.Array[_]] = js.native
-    /* CompleteClass */
-    override var `type`: String = js.native
     var vals: js.Array[_] = js.native
-    /* CompleteClass */
-    override def _c(): Unit = js.native
-    /* CompleteClass */
-    override def _e(err: js.Any): Unit = js.native
-    /* CompleteClass */
-    override def _n(v: T): Unit = js.native
-    /* CompleteClass */
-    override def _start(listener: InternalListener[js.Array[js.Any]]): Unit = js.native
-    /* CompleteClass */
-    override def _start(out: Stream[js.Array[js.Any]]): Unit = js.native
-    /* CompleteClass */
-    override def _stop(): Unit = js.native
     def down(i: Double, l: SampleCombineListener[_]): Unit = js.native
     def up(t: js.Any, i: Double): Unit = js.native
   }

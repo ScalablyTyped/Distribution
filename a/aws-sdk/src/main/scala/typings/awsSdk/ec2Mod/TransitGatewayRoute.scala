@@ -26,18 +26,40 @@ trait TransitGatewayRoute extends js.Object {
 
 object TransitGatewayRoute {
   @scala.inline
-  def apply(
-    DestinationCidrBlock: String = null,
-    State: TransitGatewayRouteState = null,
-    TransitGatewayAttachments: TransitGatewayRouteAttachmentList = null,
-    Type: TransitGatewayRouteType = null
-  ): TransitGatewayRoute = {
+  def apply(): TransitGatewayRoute = {
     val __obj = js.Dynamic.literal()
-    if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TransitGatewayAttachments != null) __obj.updateDynamic("TransitGatewayAttachments")(TransitGatewayAttachments.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGatewayRoute]
   }
+  @scala.inline
+  implicit class TransitGatewayRouteOps[Self <: TransitGatewayRoute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCidrBlock(value: String): Self = this.set("DestinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("DestinationCidrBlock", js.undefined)
+    @scala.inline
+    def setState(value: TransitGatewayRouteState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTransitGatewayAttachmentsVarargs(value: TransitGatewayRouteAttachment*): Self = this.set("TransitGatewayAttachments", js.Array(value :_*))
+    @scala.inline
+    def setTransitGatewayAttachments(value: TransitGatewayRouteAttachmentList): Self = this.set("TransitGatewayAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayAttachments: Self = this.set("TransitGatewayAttachments", js.undefined)
+    @scala.inline
+    def setType(value: TransitGatewayRouteType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

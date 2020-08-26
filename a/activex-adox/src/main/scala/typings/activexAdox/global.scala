@@ -1,6 +1,5 @@
 package typings.activexAdox
 
-import typings.std.VarDate
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -32,19 +31,7 @@ object global extends js.Object {
     
     @js.native
     class Procedure protected ()
-      extends typings.activexAdox.ADOX.Procedure {
-      /* CompleteClass */
-      @JSName("ADOX.Procedure_typekey")
-      override var ADOXDotProcedure_typekey: typings.activexAdox.ADOX.Procedure = js.native
-      /* CompleteClass */
-      override var Command: typings.activexAdodb.ADODB.Command = js.native
-      /* CompleteClass */
-      override val DateCreated: VarDate | Null = js.native
-      /* CompleteClass */
-      override val DateModified: VarDate | Null = js.native
-      /* CompleteClass */
-      override val Name: String = js.native
-    }
+      extends typings.activexAdox.ADOX.Procedure
     
     @js.native
     class Table protected ()
@@ -56,19 +43,7 @@ object global extends js.Object {
     
     @js.native
     class View protected ()
-      extends typings.activexAdox.ADOX.View {
-      /* CompleteClass */
-      @JSName("ADOX.View_typekey")
-      override var ADOXDotView_typekey: typings.activexAdox.ADOX.View = js.native
-      /* CompleteClass */
-      override var Command: typings.activexAdodb.ADODB.Command = js.native
-      /* CompleteClass */
-      override val DateCreated: VarDate = js.native
-      /* CompleteClass */
-      override val DateModified: VarDate = js.native
-      /* CompleteClass */
-      override val Name: String = js.native
-    }
+      extends typings.activexAdox.ADOX.View
     
   }
   

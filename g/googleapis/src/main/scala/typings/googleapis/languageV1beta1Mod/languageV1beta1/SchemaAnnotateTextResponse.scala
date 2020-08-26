@@ -41,20 +41,48 @@ trait SchemaAnnotateTextResponse extends js.Object {
 
 object SchemaAnnotateTextResponse {
   @scala.inline
-  def apply(
-    documentSentiment: SchemaSentiment = null,
-    entities: js.Array[SchemaEntity] = null,
-    language: String = null,
-    sentences: js.Array[SchemaSentence] = null,
-    tokens: js.Array[SchemaToken] = null
-  ): SchemaAnnotateTextResponse = {
+  def apply(): SchemaAnnotateTextResponse = {
     val __obj = js.Dynamic.literal()
-    if (documentSentiment != null) __obj.updateDynamic("documentSentiment")(documentSentiment.asInstanceOf[js.Any])
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (sentences != null) __obj.updateDynamic("sentences")(sentences.asInstanceOf[js.Any])
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAnnotateTextResponse]
   }
+  @scala.inline
+  implicit class SchemaAnnotateTextResponseOps[Self <: SchemaAnnotateTextResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentSentiment(value: SchemaSentiment): Self = this.set("documentSentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentSentiment: Self = this.set("documentSentiment", js.undefined)
+    @scala.inline
+    def setEntitiesVarargs(value: SchemaEntity*): Self = this.set("entities", js.Array(value :_*))
+    @scala.inline
+    def setEntities(value: js.Array[SchemaEntity]): Self = this.set("entities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntities: Self = this.set("entities", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setSentencesVarargs(value: SchemaSentence*): Self = this.set("sentences", js.Array(value :_*))
+    @scala.inline
+    def setSentences(value: js.Array[SchemaSentence]): Self = this.set("sentences", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentences: Self = this.set("sentences", js.undefined)
+    @scala.inline
+    def setTokensVarargs(value: SchemaToken*): Self = this.set("tokens", js.Array(value :_*))
+    @scala.inline
+    def setTokens(value: js.Array[SchemaToken]): Self = this.set("tokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokens: Self = this.set("tokens", js.undefined)
+  }
+  
 }
 

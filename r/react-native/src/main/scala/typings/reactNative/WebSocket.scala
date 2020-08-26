@@ -16,6 +16,7 @@ trait WebSocket extends EventTarget {
   var onopen: js.Function0[Unit] | Null = js.native
   val readyState: Double = js.native
   def close(): Unit = js.native
+  def close(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def close(code: Double): Unit = js.native
   def close(code: Double, reason: String): Unit = js.native
   def send(data: String): Unit = js.native

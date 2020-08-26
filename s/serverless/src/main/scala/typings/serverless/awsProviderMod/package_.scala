@@ -11,7 +11,7 @@ package object awsProviderMod {
   type CloudFormationResources = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.CloudFormationResource]
   type Custom = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Detail = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-  type Environment = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  type Environment = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Functions = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.AwsFunction]
   type Input = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Layers = org.scalablytyped.runtime.StringDictionary[typings.serverless.awsProviderMod.Layer]

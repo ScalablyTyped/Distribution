@@ -64,38 +64,78 @@ trait HostedTransitVirtualInterfaceState extends js.Object {
 
 object HostedTransitVirtualInterfaceState {
   @scala.inline
-  def apply(
-    addressFamily: Input[String] = null,
-    amazonAddress: Input[String] = null,
-    amazonSideAsn: Input[String] = null,
-    arn: Input[String] = null,
-    awsDevice: Input[String] = null,
-    bgpAsn: Input[Double] = null,
-    bgpAuthKey: Input[String] = null,
-    connectionId: Input[String] = null,
-    customerAddress: Input[String] = null,
-    jumboFrameCapable: Input[Boolean] = null,
-    mtu: Input[Double] = null,
-    name: Input[String] = null,
-    ownerAccountId: Input[String] = null,
-    vlan: Input[Double] = null
-  ): HostedTransitVirtualInterfaceState = {
+  def apply(): HostedTransitVirtualInterfaceState = {
     val __obj = js.Dynamic.literal()
-    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
-    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
-    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
-    if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
-    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
-    if (jumboFrameCapable != null) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
-    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId.asInstanceOf[js.Any])
-    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostedTransitVirtualInterfaceState]
   }
+  @scala.inline
+  implicit class HostedTransitVirtualInterfaceStateOps[Self <: HostedTransitVirtualInterfaceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressFamily(value: Input[String]): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    @scala.inline
+    def setAmazonAddress(value: Input[String]): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    @scala.inline
+    def setAmazonSideAsn(value: Input[String]): Self = this.set("amazonSideAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonSideAsn: Self = this.set("amazonSideAsn", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAwsDevice(value: Input[String]): Self = this.set("awsDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsDevice: Self = this.set("awsDevice", js.undefined)
+    @scala.inline
+    def setBgpAsn(value: Input[Double]): Self = this.set("bgpAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpAsn: Self = this.set("bgpAsn", js.undefined)
+    @scala.inline
+    def setBgpAuthKey(value: Input[String]): Self = this.set("bgpAuthKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpAuthKey: Self = this.set("bgpAuthKey", js.undefined)
+    @scala.inline
+    def setConnectionId(value: Input[String]): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    @scala.inline
+    def setCustomerAddress(value: Input[String]): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+    @scala.inline
+    def setJumboFrameCapable(value: Input[Boolean]): Self = this.set("jumboFrameCapable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJumboFrameCapable: Self = this.set("jumboFrameCapable", js.undefined)
+    @scala.inline
+    def setMtu(value: Input[Double]): Self = this.set("mtu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtu: Self = this.set("mtu", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwnerAccountId(value: Input[String]): Self = this.set("ownerAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccountId: Self = this.set("ownerAccountId", js.undefined)
+    @scala.inline
+    def setVlan(value: Input[Double]): Self = this.set("vlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVlan: Self = this.set("vlan", js.undefined)
+  }
+  
 }
 

@@ -11,8 +11,8 @@ A small library for generalized transformation of data. This provides a bunch of
 | Full name          | transducers.js |
 | Keywords           | browser, client, functional, util |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 52820 |
+| # dependents       | 17 |
+| # downloads        | 53063 |
 | # stars            | 3 |
 
 ## Links

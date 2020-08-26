@@ -41,7 +41,7 @@ object bloggerMod extends js.Object {
     @js.native
     object v2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Blogger]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Blogger]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object bloggerMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.bloggerV3Mod.bloggerV3.Blogger
               ]
             ]

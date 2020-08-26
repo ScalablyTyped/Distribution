@@ -1,63 +1,60 @@
 package typings.materialSnackbar.adapterMod
 
-import typings.std.EventListener
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MDCSnackbarAdapter extends js.Object {
-  def addClass(className: String): Unit
-  def deregisterActionClickHandler(handler: EventListener): Unit
-  def deregisterCapturedBlurHandler(handler: EventListener): Unit
-  def deregisterCapturedInteractionHandler(evtType: String, handler: EventListener): Unit
-  def deregisterTransitionEndHandler(handler: EventListener): Unit
-  def deregisterVisibilityChangeHandler(handler: EventListener): Unit
-  def notifyHide(): Unit
-  def notifyShow(): Unit
-  def registerActionClickHandler(handler: EventListener): Unit
-  def registerCapturedBlurHandler(handler: EventListener): Unit
-  def registerCapturedInteractionHandler(evtType: String, handler: EventListener): Unit
-  def registerTransitionEndHandler(handler: EventListener): Unit
-  def registerVisibilityChangeHandler(handler: EventListener): Unit
-  def removeClass(className: String): Unit
-  def setActionAriaHidden(): Unit
-  def setActionText(actionText: String): Unit
-  def setAriaHidden(): Unit
-  def setFocus(): Unit
-  def setMessageText(message: String): Unit
-  def unsetActionAriaHidden(): Unit
-  def unsetAriaHidden(): Unit
-  def visibilityIsHidden(): Boolean
+  def addClass(className: String): Unit = js.native
+  def announce(): Unit = js.native
+  def notifyClosed(reason: String): Unit = js.native
+  def notifyClosing(reason: String): Unit = js.native
+  def notifyOpened(): Unit = js.native
+  def notifyOpening(): Unit = js.native
+  def removeClass(className: String): Unit = js.native
 }
 
 object MDCSnackbarAdapter {
   @scala.inline
   def apply(
     addClass: String => Unit,
-    deregisterActionClickHandler: EventListener => Unit,
-    deregisterCapturedBlurHandler: EventListener => Unit,
-    deregisterCapturedInteractionHandler: (String, EventListener) => Unit,
-    deregisterTransitionEndHandler: EventListener => Unit,
-    deregisterVisibilityChangeHandler: EventListener => Unit,
-    notifyHide: () => Unit,
-    notifyShow: () => Unit,
-    registerActionClickHandler: EventListener => Unit,
-    registerCapturedBlurHandler: EventListener => Unit,
-    registerCapturedInteractionHandler: (String, EventListener) => Unit,
-    registerTransitionEndHandler: EventListener => Unit,
-    registerVisibilityChangeHandler: EventListener => Unit,
-    removeClass: String => Unit,
-    setActionAriaHidden: () => Unit,
-    setActionText: String => Unit,
-    setAriaHidden: () => Unit,
-    setFocus: () => Unit,
-    setMessageText: String => Unit,
-    unsetActionAriaHidden: () => Unit,
-    unsetAriaHidden: () => Unit,
-    visibilityIsHidden: () => Boolean
+    announce: () => Unit,
+    notifyClosed: String => Unit,
+    notifyClosing: String => Unit,
+    notifyOpened: () => Unit,
+    notifyOpening: () => Unit,
+    removeClass: String => Unit
   ): MDCSnackbarAdapter = {
-    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), deregisterActionClickHandler = js.Any.fromFunction1(deregisterActionClickHandler), deregisterCapturedBlurHandler = js.Any.fromFunction1(deregisterCapturedBlurHandler), deregisterCapturedInteractionHandler = js.Any.fromFunction2(deregisterCapturedInteractionHandler), deregisterTransitionEndHandler = js.Any.fromFunction1(deregisterTransitionEndHandler), deregisterVisibilityChangeHandler = js.Any.fromFunction1(deregisterVisibilityChangeHandler), notifyHide = js.Any.fromFunction0(notifyHide), notifyShow = js.Any.fromFunction0(notifyShow), registerActionClickHandler = js.Any.fromFunction1(registerActionClickHandler), registerCapturedBlurHandler = js.Any.fromFunction1(registerCapturedBlurHandler), registerCapturedInteractionHandler = js.Any.fromFunction2(registerCapturedInteractionHandler), registerTransitionEndHandler = js.Any.fromFunction1(registerTransitionEndHandler), registerVisibilityChangeHandler = js.Any.fromFunction1(registerVisibilityChangeHandler), removeClass = js.Any.fromFunction1(removeClass), setActionAriaHidden = js.Any.fromFunction0(setActionAriaHidden), setActionText = js.Any.fromFunction1(setActionText), setAriaHidden = js.Any.fromFunction0(setAriaHidden), setFocus = js.Any.fromFunction0(setFocus), setMessageText = js.Any.fromFunction1(setMessageText), unsetActionAriaHidden = js.Any.fromFunction0(unsetActionAriaHidden), unsetAriaHidden = js.Any.fromFunction0(unsetAriaHidden), visibilityIsHidden = js.Any.fromFunction0(visibilityIsHidden))
+    val __obj = js.Dynamic.literal(addClass = js.Any.fromFunction1(addClass), announce = js.Any.fromFunction0(announce), notifyClosed = js.Any.fromFunction1(notifyClosed), notifyClosing = js.Any.fromFunction1(notifyClosing), notifyOpened = js.Any.fromFunction0(notifyOpened), notifyOpening = js.Any.fromFunction0(notifyOpening), removeClass = js.Any.fromFunction1(removeClass))
     __obj.asInstanceOf[MDCSnackbarAdapter]
   }
+  @scala.inline
+  implicit class MDCSnackbarAdapterOps[Self <: MDCSnackbarAdapter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddClass(value: String => Unit): Self = this.set("addClass", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAnnounce(value: () => Unit): Self = this.set("announce", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNotifyClosed(value: String => Unit): Self = this.set("notifyClosed", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNotifyClosing(value: String => Unit): Self = this.set("notifyClosing", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNotifyOpened(value: () => Unit): Self = this.set("notifyOpened", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNotifyOpening(value: () => Unit): Self = this.set("notifyOpening", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemoveClass(value: String => Unit): Self = this.set("removeClass", js.Any.fromFunction1(value))
+  }
+  
 }
 

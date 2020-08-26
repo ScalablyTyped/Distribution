@@ -5,6 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type FitProps = typings.spectacle.mod.FillProps
-  type Theme = org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]
+  type TemplateFn = js.Function1[/* options */ typings.spectacle.anon.CurrentSlide, typings.react.mod.ReactNode]
 }

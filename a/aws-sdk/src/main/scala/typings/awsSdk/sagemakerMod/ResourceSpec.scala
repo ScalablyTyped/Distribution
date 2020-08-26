@@ -13,16 +13,35 @@ trait ResourceSpec extends js.Object {
   /**
     * The Amazon Resource Name (ARN) of the SageMaker image created on the instance.
     */
-  var SageMakerImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.SageMakerImageArn] = js.native
+  var SageMakerImageArn: js.UndefOr[ImageArn] = js.native
 }
 
 object ResourceSpec {
   @scala.inline
-  def apply(InstanceType: AppInstanceType = null, SageMakerImageArn: SageMakerImageArn = null): ResourceSpec = {
+  def apply(): ResourceSpec = {
     val __obj = js.Dynamic.literal()
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (SageMakerImageArn != null) __obj.updateDynamic("SageMakerImageArn")(SageMakerImageArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceSpec]
   }
+  @scala.inline
+  implicit class ResourceSpecOps[Self <: ResourceSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceType(value: AppInstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setSageMakerImageArn(value: ImageArn): Self = this.set("SageMakerImageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSageMakerImageArn: Self = this.set("SageMakerImageArn", js.undefined)
+  }
+  
 }
 

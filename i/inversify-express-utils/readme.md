@@ -10,9 +10,9 @@ Some utilities for the development of express applications with Inversify
 | ------------------ | :-------------: |
 | Full name          | inversify-express-utils |
 | Keywords           | InversifyJS, express |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 23 |
-| # downloads        | 556913 |
+| # downloads        | 576867 |
 | # stars            | 0 |
 
 ## Links

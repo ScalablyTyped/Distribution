@@ -8,21 +8,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BreadcrumbMap extends js.Object {
-  var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.undefined
-  var location: js.UndefOr[Location[LocationState] | Pathname] = js.undefined
+  var breadcrumbMap: js.UndefOr[Map[String, MenuDataItem]] = js.native
+  var location: js.UndefOr[Location[LocationState] | Pathname] = js.native
 }
 
 object BreadcrumbMap {
   @scala.inline
-  def apply(
-    breadcrumbMap: Map[String, MenuDataItem] = null,
-    location: Location[LocationState] | Pathname = null
-  ): BreadcrumbMap = {
+  def apply(): BreadcrumbMap = {
     val __obj = js.Dynamic.literal()
-    if (breadcrumbMap != null) __obj.updateDynamic("breadcrumbMap")(breadcrumbMap.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[BreadcrumbMap]
   }
+  @scala.inline
+  implicit class BreadcrumbMapOps[Self <: BreadcrumbMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreadcrumbMap(value: Map[String, MenuDataItem]): Self = this.set("breadcrumbMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreadcrumbMap: Self = this.set("breadcrumbMap", js.undefined)
+    @scala.inline
+    def setLocation(value: Location[LocationState] | Pathname): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

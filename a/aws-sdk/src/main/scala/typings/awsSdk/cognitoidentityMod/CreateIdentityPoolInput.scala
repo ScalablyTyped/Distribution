@@ -46,26 +46,60 @@ trait CreateIdentityPoolInput extends js.Object {
 
 object CreateIdentityPoolInput {
   @scala.inline
-  def apply(
-    AllowUnauthenticatedIdentities: IdentityPoolUnauthenticated,
-    IdentityPoolName: IdentityPoolName,
-    AllowClassicFlow: js.UndefOr[ClassicFlow] = js.undefined,
-    CognitoIdentityProviders: CognitoIdentityProviderList = null,
-    DeveloperProviderName: DeveloperProviderName = null,
-    IdentityPoolTags: IdentityPoolTagsType = null,
-    OpenIdConnectProviderARNs: OIDCProviderList = null,
-    SamlProviderARNs: SAMLProviderList = null,
-    SupportedLoginProviders: IdentityProviders = null
-  ): CreateIdentityPoolInput = {
+  def apply(AllowUnauthenticatedIdentities: IdentityPoolUnauthenticated, IdentityPoolName: IdentityPoolName): CreateIdentityPoolInput = {
     val __obj = js.Dynamic.literal(AllowUnauthenticatedIdentities = AllowUnauthenticatedIdentities.asInstanceOf[js.Any], IdentityPoolName = IdentityPoolName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowClassicFlow)) __obj.updateDynamic("AllowClassicFlow")(AllowClassicFlow.get.asInstanceOf[js.Any])
-    if (CognitoIdentityProviders != null) __obj.updateDynamic("CognitoIdentityProviders")(CognitoIdentityProviders.asInstanceOf[js.Any])
-    if (DeveloperProviderName != null) __obj.updateDynamic("DeveloperProviderName")(DeveloperProviderName.asInstanceOf[js.Any])
-    if (IdentityPoolTags != null) __obj.updateDynamic("IdentityPoolTags")(IdentityPoolTags.asInstanceOf[js.Any])
-    if (OpenIdConnectProviderARNs != null) __obj.updateDynamic("OpenIdConnectProviderARNs")(OpenIdConnectProviderARNs.asInstanceOf[js.Any])
-    if (SamlProviderARNs != null) __obj.updateDynamic("SamlProviderARNs")(SamlProviderARNs.asInstanceOf[js.Any])
-    if (SupportedLoginProviders != null) __obj.updateDynamic("SupportedLoginProviders")(SupportedLoginProviders.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIdentityPoolInput]
   }
+  @scala.inline
+  implicit class CreateIdentityPoolInputOps[Self <: CreateIdentityPoolInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowUnauthenticatedIdentities(value: IdentityPoolUnauthenticated): Self = this.set("AllowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentityPoolName(value: IdentityPoolName): Self = this.set("IdentityPoolName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowClassicFlow(value: ClassicFlow): Self = this.set("AllowClassicFlow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowClassicFlow: Self = this.set("AllowClassicFlow", js.undefined)
+    @scala.inline
+    def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = this.set("CognitoIdentityProviders", js.Array(value :_*))
+    @scala.inline
+    def setCognitoIdentityProviders(value: CognitoIdentityProviderList): Self = this.set("CognitoIdentityProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoIdentityProviders: Self = this.set("CognitoIdentityProviders", js.undefined)
+    @scala.inline
+    def setDeveloperProviderName(value: DeveloperProviderName): Self = this.set("DeveloperProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeveloperProviderName: Self = this.set("DeveloperProviderName", js.undefined)
+    @scala.inline
+    def setIdentityPoolTags(value: IdentityPoolTagsType): Self = this.set("IdentityPoolTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityPoolTags: Self = this.set("IdentityPoolTags", js.undefined)
+    @scala.inline
+    def setOpenIdConnectProviderARNsVarargs(value: ARNString*): Self = this.set("OpenIdConnectProviderARNs", js.Array(value :_*))
+    @scala.inline
+    def setOpenIdConnectProviderARNs(value: OIDCProviderList): Self = this.set("OpenIdConnectProviderARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenIdConnectProviderARNs: Self = this.set("OpenIdConnectProviderARNs", js.undefined)
+    @scala.inline
+    def setSamlProviderARNsVarargs(value: ARNString*): Self = this.set("SamlProviderARNs", js.Array(value :_*))
+    @scala.inline
+    def setSamlProviderARNs(value: SAMLProviderList): Self = this.set("SamlProviderARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamlProviderARNs: Self = this.set("SamlProviderARNs", js.undefined)
+    @scala.inline
+    def setSupportedLoginProviders(value: IdentityProviders): Self = this.set("SupportedLoginProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedLoginProviders: Self = this.set("SupportedLoginProviders", js.undefined)
+  }
+  
 }
 

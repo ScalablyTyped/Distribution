@@ -13,6 +13,19 @@ trait EBS extends Service {
   @JSName("config")
   var config_EBS: ConfigBase with ClientConfiguration = js.native
   /**
+    * Seals and completes the snapshot after all of the required blocks of data have been written to it. Completing the snapshot changes the status to completed. You cannot write new blocks to a snapshot after it has been completed.
+    */
+  def completeSnapshot(): Request[CompleteSnapshotResponse, AWSError] = js.native
+  def completeSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ CompleteSnapshotResponse, Unit]): Request[CompleteSnapshotResponse, AWSError] = js.native
+  /**
+    * Seals and completes the snapshot after all of the required blocks of data have been written to it. Completing the snapshot changes the status to completed. You cannot write new blocks to a snapshot after it has been completed.
+    */
+  def completeSnapshot(params: CompleteSnapshotRequest): Request[CompleteSnapshotResponse, AWSError] = js.native
+  def completeSnapshot(
+    params: CompleteSnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CompleteSnapshotResponse, Unit]
+  ): Request[CompleteSnapshotResponse, AWSError] = js.native
+  /**
     * Returns the data in a block in an Amazon Elastic Block Store snapshot.
     */
   def getSnapshotBlock(): Request[GetSnapshotBlockResponse, AWSError] = js.native
@@ -51,5 +64,31 @@ trait EBS extends Service {
     params: ListSnapshotBlocksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListSnapshotBlocksResponse, Unit]
   ): Request[ListSnapshotBlocksResponse, AWSError] = js.native
+  /**
+    * Writes a block of data to a block in the snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-byte sectors.
+    */
+  def putSnapshotBlock(): Request[PutSnapshotBlockResponse, AWSError] = js.native
+  def putSnapshotBlock(callback: js.Function2[/* err */ AWSError, /* data */ PutSnapshotBlockResponse, Unit]): Request[PutSnapshotBlockResponse, AWSError] = js.native
+  /**
+    * Writes a block of data to a block in the snapshot. If the specified block contains data, the existing data is overwritten. The target snapshot must be in the pending state. Data written to a snapshot must be aligned with 512-byte sectors.
+    */
+  def putSnapshotBlock(params: PutSnapshotBlockRequest): Request[PutSnapshotBlockResponse, AWSError] = js.native
+  def putSnapshotBlock(
+    params: PutSnapshotBlockRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutSnapshotBlockResponse, Unit]
+  ): Request[PutSnapshotBlockResponse, AWSError] = js.native
+  /**
+    * Creates a new Amazon EBS snapshot. The new snapshot enters the pending state after the request completes.  After creating the snapshot, use  PutSnapshotBlock to write blocks of data to the snapshot.
+    */
+  def startSnapshot(): Request[StartSnapshotResponse, AWSError] = js.native
+  def startSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ StartSnapshotResponse, Unit]): Request[StartSnapshotResponse, AWSError] = js.native
+  /**
+    * Creates a new Amazon EBS snapshot. The new snapshot enters the pending state after the request completes.  After creating the snapshot, use  PutSnapshotBlock to write blocks of data to the snapshot.
+    */
+  def startSnapshot(params: StartSnapshotRequest): Request[StartSnapshotResponse, AWSError] = js.native
+  def startSnapshot(
+    params: StartSnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartSnapshotResponse, Unit]
+  ): Request[StartSnapshotResponse, AWSError] = js.native
 }
 

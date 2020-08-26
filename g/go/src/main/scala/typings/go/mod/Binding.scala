@@ -25,7 +25,23 @@ import scala.scalajs.js.annotation._
   */
 class Binding () extends js.Object {
   def this(targetprop: String) = this()
+  def this(targetprop: js.UndefOr[scala.Nothing], sourceprop: String) = this()
   def this(targetprop: String, sourceprop: String) = this()
+  def this(
+    targetprop: js.UndefOr[scala.Nothing],
+    sourceprop: js.UndefOr[scala.Nothing],
+    conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]
+  ) = this()
+  def this(
+    targetprop: js.UndefOr[scala.Nothing],
+    sourceprop: String,
+    conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]
+  ) = this()
+  def this(
+    targetprop: String,
+    sourceprop: js.UndefOr[scala.Nothing],
+    conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]
+  ) = this()
   def this(targetprop: String, sourceprop: String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]) = this()
   /**
     * Gets or sets the directions and frequency in which the binding may be evaluated.

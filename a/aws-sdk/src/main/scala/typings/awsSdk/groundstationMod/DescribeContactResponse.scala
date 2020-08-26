@@ -15,6 +15,10 @@ trait DescribeContactResponse extends js.Object {
     */
   var contactStatus: js.UndefOr[ContactStatus] = js.native
   /**
+    * List describing source and destination details for each dataflow edge.
+    */
+  var dataflowList: js.UndefOr[DataflowList] = js.native
+  /**
     * End time of a contact.
     */
   var endTime: js.UndefOr[Timestamp] = js.native
@@ -62,36 +66,80 @@ trait DescribeContactResponse extends js.Object {
 
 object DescribeContactResponse {
   @scala.inline
-  def apply(
-    contactId: String = null,
-    contactStatus: ContactStatus = null,
-    endTime: Timestamp = null,
-    errorMessage: String = null,
-    groundStation: String = null,
-    maximumElevation: Elevation = null,
-    missionProfileArn: MissionProfileArn = null,
-    postPassEndTime: Timestamp = null,
-    prePassStartTime: Timestamp = null,
-    region: String = null,
-    satelliteArn: satelliteArn = null,
-    startTime: Timestamp = null,
-    tags: TagsMap = null
-  ): DescribeContactResponse = {
+  def apply(): DescribeContactResponse = {
     val __obj = js.Dynamic.literal()
-    if (contactId != null) __obj.updateDynamic("contactId")(contactId.asInstanceOf[js.Any])
-    if (contactStatus != null) __obj.updateDynamic("contactStatus")(contactStatus.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (groundStation != null) __obj.updateDynamic("groundStation")(groundStation.asInstanceOf[js.Any])
-    if (maximumElevation != null) __obj.updateDynamic("maximumElevation")(maximumElevation.asInstanceOf[js.Any])
-    if (missionProfileArn != null) __obj.updateDynamic("missionProfileArn")(missionProfileArn.asInstanceOf[js.Any])
-    if (postPassEndTime != null) __obj.updateDynamic("postPassEndTime")(postPassEndTime.asInstanceOf[js.Any])
-    if (prePassStartTime != null) __obj.updateDynamic("prePassStartTime")(prePassStartTime.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (satelliteArn != null) __obj.updateDynamic("satelliteArn")(satelliteArn.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContactResponse]
   }
+  @scala.inline
+  implicit class DescribeContactResponseOps[Self <: DescribeContactResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactId(value: String): Self = this.set("contactId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactId: Self = this.set("contactId", js.undefined)
+    @scala.inline
+    def setContactStatus(value: ContactStatus): Self = this.set("contactStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactStatus: Self = this.set("contactStatus", js.undefined)
+    @scala.inline
+    def setDataflowListVarargs(value: DataflowDetail*): Self = this.set("dataflowList", js.Array(value :_*))
+    @scala.inline
+    def setDataflowList(value: DataflowList): Self = this.set("dataflowList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataflowList: Self = this.set("dataflowList", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setGroundStation(value: String): Self = this.set("groundStation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroundStation: Self = this.set("groundStation", js.undefined)
+    @scala.inline
+    def setMaximumElevation(value: Elevation): Self = this.set("maximumElevation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumElevation: Self = this.set("maximumElevation", js.undefined)
+    @scala.inline
+    def setMissionProfileArn(value: MissionProfileArn): Self = this.set("missionProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissionProfileArn: Self = this.set("missionProfileArn", js.undefined)
+    @scala.inline
+    def setPostPassEndTime(value: Timestamp): Self = this.set("postPassEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostPassEndTime: Self = this.set("postPassEndTime", js.undefined)
+    @scala.inline
+    def setPrePassStartTime(value: Timestamp): Self = this.set("prePassStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrePassStartTime: Self = this.set("prePassStartTime", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSatelliteArn(value: satelliteArn): Self = this.set("satelliteArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSatelliteArn: Self = this.set("satelliteArn", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTags(value: TagsMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

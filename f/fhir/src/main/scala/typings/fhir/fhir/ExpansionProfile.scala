@@ -8,274 +8,346 @@ import scala.scalajs.js.annotation._
   * Defines behaviour and contraints on the ValueSet Expansion operation
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait ExpansionProfile extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait ExpansionProfile extends DomainResource {
   /**
     * Contains extended information for property 'activeOnly'.
     */
-  var _activeOnly: js.UndefOr[Element] = js.undefined
+  var _activeOnly: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.undefined
+  var _date: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'displayLanguage'.
     */
-  var _displayLanguage: js.UndefOr[Element] = js.undefined
+  var _displayLanguage: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'excludeNested'.
     */
-  var _excludeNested: js.UndefOr[Element] = js.undefined
+  var _excludeNested: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'excludeNotForUI'.
     */
-  var _excludeNotForUI: js.UndefOr[Element] = js.undefined
+  var _excludeNotForUI: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'excludePostCoordinated'.
     */
-  var _excludePostCoordinated: js.UndefOr[Element] = js.undefined
+  var _excludePostCoordinated: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.undefined
+  var _experimental: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'includeDefinition'.
     */
-  var _includeDefinition: js.UndefOr[Element] = js.undefined
+  var _includeDefinition: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'includeDesignations'.
     */
-  var _includeDesignations: js.UndefOr[Element] = js.undefined
+  var _includeDesignations: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'limitedExpansion'.
     */
-  var _limitedExpansion: js.UndefOr[Element] = js.undefined
+  var _limitedExpansion: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.undefined
+  var _publisher: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.undefined
+  var _url: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.undefined
+  var _version: js.UndefOr[Element] = js.native
   /**
     * Include or exclude inactive concepts in the expansion
     */
-  var activeOnly: js.UndefOr[Boolean] = js.undefined
+  var activeOnly: js.UndefOr[Boolean] = js.native
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.undefined
+  var date: js.UndefOr[dateTime] = js.native
   /**
     * Natural language description of the expansion profile
     */
-  var description: js.UndefOr[markdown] = js.undefined
+  var description: js.UndefOr[markdown] = js.native
   /**
     * When the expansion profile imposes designation contraints
     */
-  var designation: js.UndefOr[ExpansionProfileDesignation] = js.undefined
+  var designation: js.UndefOr[ExpansionProfileDesignation] = js.native
   /**
     * Specify the language for the display element of codes in the value set expansion
     */
-  var displayLanguage: js.UndefOr[code] = js.undefined
+  var displayLanguage: js.UndefOr[code] = js.native
   /**
     * Nested codes in the expansion or not
     */
-  var excludeNested: js.UndefOr[Boolean] = js.undefined
+  var excludeNested: js.UndefOr[Boolean] = js.native
   /**
     * Include or exclude codes which cannot be rendered in user interfaces in the value set expansion
     */
-  var excludeNotForUI: js.UndefOr[Boolean] = js.undefined
+  var excludeNotForUI: js.UndefOr[Boolean] = js.native
   /**
     * Include or exclude codes which are post coordinated expressions in the value set expansion
     */
-  var excludePostCoordinated: js.UndefOr[Boolean] = js.undefined
+  var excludePostCoordinated: js.UndefOr[Boolean] = js.native
   /**
     * Systems/Versions to be exclude
     */
-  var excludedSystem: js.UndefOr[ExpansionProfileExcludedSystem] = js.undefined
+  var excludedSystem: js.UndefOr[ExpansionProfileExcludedSystem] = js.native
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.undefined
+  var experimental: js.UndefOr[Boolean] = js.native
   /**
     * Fix use of a code system to a particular version
     */
-  var fixedVersion: js.UndefOr[js.Array[ExpansionProfileFixedVersion]] = js.undefined
+  var fixedVersion: js.UndefOr[js.Array[ExpansionProfileFixedVersion]] = js.native
   /**
     * Additional identifier for the expansion profile
     */
-  var identifier: js.UndefOr[Identifier] = js.undefined
+  var identifier: js.UndefOr[Identifier] = js.native
   /**
     * Include or exclude the value set definition in the expansion
     */
-  var includeDefinition: js.UndefOr[Boolean] = js.undefined
+  var includeDefinition: js.UndefOr[Boolean] = js.native
   /**
     * Whether the expansion should include concept designations
     */
-  var includeDesignations: js.UndefOr[Boolean] = js.undefined
+  var includeDesignations: js.UndefOr[Boolean] = js.native
   /**
     * Intended jurisdiction for expansion profile (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Controls behaviour of the value set expand operation when value sets are too large to be completely expanded
     */
-  var limitedExpansion: js.UndefOr[Boolean] = js.undefined
+  var limitedExpansion: js.UndefOr[Boolean] = js.native
   /**
     * Name for this expansion profile (computer friendly)
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.undefined
+  var publisher: js.UndefOr[String] = js.native
   /**
     * draft | active | retired | unknown
     */
-  var status: code
+  var status: code = js.native
   /**
     * Logical URI to reference this expansion profile (globally unique)
     */
-  var url: js.UndefOr[uri] = js.undefined
+  var url: js.UndefOr[uri] = js.native
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
   /**
     * Business version of the expansion profile
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object ExpansionProfile {
   @scala.inline
-  def apply(
-    status: code,
-    _activeOnly: Element = null,
-    _date: Element = null,
-    _description: Element = null,
-    _displayLanguage: Element = null,
-    _excludeNested: Element = null,
-    _excludeNotForUI: Element = null,
-    _excludePostCoordinated: Element = null,
-    _experimental: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _includeDefinition: Element = null,
-    _includeDesignations: Element = null,
-    _language: Element = null,
-    _limitedExpansion: Element = null,
-    _name: Element = null,
-    _publisher: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    _url: Element = null,
-    _version: Element = null,
-    activeOnly: js.UndefOr[Boolean] = js.undefined,
-    contact: js.Array[ContactDetail] = null,
-    contained: js.Array[Resource] = null,
-    date: dateTime = null,
-    description: markdown = null,
-    designation: ExpansionProfileDesignation = null,
-    displayLanguage: code = null,
-    excludeNested: js.UndefOr[Boolean] = js.undefined,
-    excludeNotForUI: js.UndefOr[Boolean] = js.undefined,
-    excludePostCoordinated: js.UndefOr[Boolean] = js.undefined,
-    excludedSystem: ExpansionProfileExcludedSystem = null,
-    experimental: js.UndefOr[Boolean] = js.undefined,
-    extension: js.Array[Extension] = null,
-    fixedVersion: js.Array[ExpansionProfileFixedVersion] = null,
-    id: id = null,
-    identifier: Identifier = null,
-    implicitRules: uri = null,
-    includeDefinition: js.UndefOr[Boolean] = js.undefined,
-    includeDesignations: js.UndefOr[Boolean] = js.undefined,
-    jurisdiction: js.Array[CodeableConcept] = null,
-    language: code = null,
-    limitedExpansion: js.UndefOr[Boolean] = js.undefined,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: String = null,
-    publisher: String = null,
-    resourceType: code = null,
-    text: Narrative = null,
-    url: uri = null,
-    useContext: js.Array[UsageContext] = null,
-    version: String = null
-  ): ExpansionProfile = {
+  def apply(status: code): ExpansionProfile = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (_activeOnly != null) __obj.updateDynamic("_activeOnly")(_activeOnly.asInstanceOf[js.Any])
-    if (_date != null) __obj.updateDynamic("_date")(_date.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_displayLanguage != null) __obj.updateDynamic("_displayLanguage")(_displayLanguage.asInstanceOf[js.Any])
-    if (_excludeNested != null) __obj.updateDynamic("_excludeNested")(_excludeNested.asInstanceOf[js.Any])
-    if (_excludeNotForUI != null) __obj.updateDynamic("_excludeNotForUI")(_excludeNotForUI.asInstanceOf[js.Any])
-    if (_excludePostCoordinated != null) __obj.updateDynamic("_excludePostCoordinated")(_excludePostCoordinated.asInstanceOf[js.Any])
-    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_includeDefinition != null) __obj.updateDynamic("_includeDefinition")(_includeDefinition.asInstanceOf[js.Any])
-    if (_includeDesignations != null) __obj.updateDynamic("_includeDesignations")(_includeDesignations.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_limitedExpansion != null) __obj.updateDynamic("_limitedExpansion")(_limitedExpansion.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (_url != null) __obj.updateDynamic("_url")(_url.asInstanceOf[js.Any])
-    if (_version != null) __obj.updateDynamic("_version")(_version.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeOnly)) __obj.updateDynamic("activeOnly")(activeOnly.get.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (designation != null) __obj.updateDynamic("designation")(designation.asInstanceOf[js.Any])
-    if (displayLanguage != null) __obj.updateDynamic("displayLanguage")(displayLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeNested)) __obj.updateDynamic("excludeNested")(excludeNested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeNotForUI)) __obj.updateDynamic("excludeNotForUI")(excludeNotForUI.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludePostCoordinated)) __obj.updateDynamic("excludePostCoordinated")(excludePostCoordinated.get.asInstanceOf[js.Any])
-    if (excludedSystem != null) __obj.updateDynamic("excludedSystem")(excludedSystem.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental.get.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fixedVersion != null) __obj.updateDynamic("fixedVersion")(fixedVersion.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDefinition)) __obj.updateDynamic("includeDefinition")(includeDefinition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDesignations)) __obj.updateDynamic("includeDesignations")(includeDesignations.get.asInstanceOf[js.Any])
-    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (!js.isUndefined(limitedExpansion)) __obj.updateDynamic("limitedExpansion")(limitedExpansion.get.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (useContext != null) __obj.updateDynamic("useContext")(useContext.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionProfile]
   }
+  @scala.inline
+  implicit class ExpansionProfileOps[Self <: ExpansionProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_activeOnly(value: Element): Self = this.set("_activeOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_activeOnly: Self = this.set("_activeOnly", js.undefined)
+    @scala.inline
+    def set_date(value: Element): Self = this.set("_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_date: Self = this.set("_date", js.undefined)
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_displayLanguage(value: Element): Self = this.set("_displayLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_displayLanguage: Self = this.set("_displayLanguage", js.undefined)
+    @scala.inline
+    def set_excludeNested(value: Element): Self = this.set("_excludeNested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_excludeNested: Self = this.set("_excludeNested", js.undefined)
+    @scala.inline
+    def set_excludeNotForUI(value: Element): Self = this.set("_excludeNotForUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_excludeNotForUI: Self = this.set("_excludeNotForUI", js.undefined)
+    @scala.inline
+    def set_excludePostCoordinated(value: Element): Self = this.set("_excludePostCoordinated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_excludePostCoordinated: Self = this.set("_excludePostCoordinated", js.undefined)
+    @scala.inline
+    def set_experimental(value: Element): Self = this.set("_experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_experimental: Self = this.set("_experimental", js.undefined)
+    @scala.inline
+    def set_includeDefinition(value: Element): Self = this.set("_includeDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_includeDefinition: Self = this.set("_includeDefinition", js.undefined)
+    @scala.inline
+    def set_includeDesignations(value: Element): Self = this.set("_includeDesignations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_includeDesignations: Self = this.set("_includeDesignations", js.undefined)
+    @scala.inline
+    def set_limitedExpansion(value: Element): Self = this.set("_limitedExpansion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_limitedExpansion: Self = this.set("_limitedExpansion", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_publisher(value: Element): Self = this.set("_publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_publisher: Self = this.set("_publisher", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def set_url(value: Element): Self = this.set("_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_url: Self = this.set("_url", js.undefined)
+    @scala.inline
+    def set_version(value: Element): Self = this.set("_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_version: Self = this.set("_version", js.undefined)
+    @scala.inline
+    def setActiveOnly(value: Boolean): Self = this.set("activeOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveOnly: Self = this.set("activeOnly", js.undefined)
+    @scala.inline
+    def setContactVarargs(value: ContactDetail*): Self = this.set("contact", js.Array(value :_*))
+    @scala.inline
+    def setContact(value: js.Array[ContactDetail]): Self = this.set("contact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContact: Self = this.set("contact", js.undefined)
+    @scala.inline
+    def setDate(value: dateTime): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDescription(value: markdown): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDesignation(value: ExpansionProfileDesignation): Self = this.set("designation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesignation: Self = this.set("designation", js.undefined)
+    @scala.inline
+    def setDisplayLanguage(value: code): Self = this.set("displayLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayLanguage: Self = this.set("displayLanguage", js.undefined)
+    @scala.inline
+    def setExcludeNested(value: Boolean): Self = this.set("excludeNested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeNested: Self = this.set("excludeNested", js.undefined)
+    @scala.inline
+    def setExcludeNotForUI(value: Boolean): Self = this.set("excludeNotForUI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeNotForUI: Self = this.set("excludeNotForUI", js.undefined)
+    @scala.inline
+    def setExcludePostCoordinated(value: Boolean): Self = this.set("excludePostCoordinated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludePostCoordinated: Self = this.set("excludePostCoordinated", js.undefined)
+    @scala.inline
+    def setExcludedSystem(value: ExpansionProfileExcludedSystem): Self = this.set("excludedSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedSystem: Self = this.set("excludedSystem", js.undefined)
+    @scala.inline
+    def setExperimental(value: Boolean): Self = this.set("experimental", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimental: Self = this.set("experimental", js.undefined)
+    @scala.inline
+    def setFixedVersionVarargs(value: ExpansionProfileFixedVersion*): Self = this.set("fixedVersion", js.Array(value :_*))
+    @scala.inline
+    def setFixedVersion(value: js.Array[ExpansionProfileFixedVersion]): Self = this.set("fixedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedVersion: Self = this.set("fixedVersion", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setIncludeDefinition(value: Boolean): Self = this.set("includeDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDefinition: Self = this.set("includeDefinition", js.undefined)
+    @scala.inline
+    def setIncludeDesignations(value: Boolean): Self = this.set("includeDesignations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDesignations: Self = this.set("includeDesignations", js.undefined)
+    @scala.inline
+    def setJurisdictionVarargs(value: CodeableConcept*): Self = this.set("jurisdiction", js.Array(value :_*))
+    @scala.inline
+    def setJurisdiction(value: js.Array[CodeableConcept]): Self = this.set("jurisdiction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJurisdiction: Self = this.set("jurisdiction", js.undefined)
+    @scala.inline
+    def setLimitedExpansion(value: Boolean): Self = this.set("limitedExpansion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitedExpansion: Self = this.set("limitedExpansion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPublisher(value: String): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisher: Self = this.set("publisher", js.undefined)
+    @scala.inline
+    def setUrl(value: uri): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUseContextVarargs(value: UsageContext*): Self = this.set("useContext", js.Array(value :_*))
+    @scala.inline
+    def setUseContext(value: js.Array[UsageContext]): Self = this.set("useContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseContext: Self = this.set("useContext", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

@@ -38,22 +38,46 @@ trait NeptuneSettings extends js.Object {
 
 object NeptuneSettings {
   @scala.inline
-  def apply(
-    S3BucketFolder: String,
-    S3BucketName: String,
-    ErrorRetryDuration: js.UndefOr[IntegerOptional] = js.undefined,
-    IamAuthEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    MaxFileSize: js.UndefOr[IntegerOptional] = js.undefined,
-    MaxRetryCount: js.UndefOr[IntegerOptional] = js.undefined,
-    ServiceAccessRoleArn: String = null
-  ): NeptuneSettings = {
+  def apply(S3BucketFolder: String, S3BucketName: String): NeptuneSettings = {
     val __obj = js.Dynamic.literal(S3BucketFolder = S3BucketFolder.asInstanceOf[js.Any], S3BucketName = S3BucketName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ErrorRetryDuration)) __obj.updateDynamic("ErrorRetryDuration")(ErrorRetryDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IamAuthEnabled)) __obj.updateDynamic("IamAuthEnabled")(IamAuthEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxFileSize)) __obj.updateDynamic("MaxFileSize")(MaxFileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRetryCount)) __obj.updateDynamic("MaxRetryCount")(MaxRetryCount.get.asInstanceOf[js.Any])
-    if (ServiceAccessRoleArn != null) __obj.updateDynamic("ServiceAccessRoleArn")(ServiceAccessRoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[NeptuneSettings]
   }
+  @scala.inline
+  implicit class NeptuneSettingsOps[Self <: NeptuneSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3BucketFolder(value: String): Self = this.set("S3BucketFolder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS3BucketName(value: String): Self = this.set("S3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setErrorRetryDuration(value: IntegerOptional): Self = this.set("ErrorRetryDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorRetryDuration: Self = this.set("ErrorRetryDuration", js.undefined)
+    @scala.inline
+    def setIamAuthEnabled(value: BooleanOptional): Self = this.set("IamAuthEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamAuthEnabled: Self = this.set("IamAuthEnabled", js.undefined)
+    @scala.inline
+    def setMaxFileSize(value: IntegerOptional): Self = this.set("MaxFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFileSize: Self = this.set("MaxFileSize", js.undefined)
+    @scala.inline
+    def setMaxRetryCount(value: IntegerOptional): Self = this.set("MaxRetryCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRetryCount: Self = this.set("MaxRetryCount", js.undefined)
+    @scala.inline
+    def setServiceAccessRoleArn(value: String): Self = this.set("ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccessRoleArn: Self = this.set("ServiceAccessRoleArn", js.undefined)
+  }
+  
 }
 

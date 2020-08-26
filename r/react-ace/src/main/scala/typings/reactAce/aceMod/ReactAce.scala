@@ -1,7 +1,8 @@
 package typings.reactAce.aceMod
 
 import typings.react.mod.Component
-import typings.reactAce.aceEditorClassMod.AceEditorClass
+import typings.reactAce.anon.Text
+import typings.reactAce.typesMod.IAceEditor
 import typings.reactAce.typesMod.IMarker
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReactAce
   extends Component[IAceEditorProps, js.Object, js.Any] {
-  var editor: AceEditorClass = js.native
+  var editor: IAceEditor = js.native
   var refEditor: HTMLElement = js.native
   var silent: Boolean = js.native
   @JSName("componentDidMount")
@@ -25,13 +26,15 @@ trait ReactAce
   def handleOptions(props: IAceEditorProps): Unit = js.native
   def handleScrollMargins(): Unit = js.native
   def handleScrollMargins(margins: js.Array[Double]): Unit = js.native
+  def isInShadow(node: HTMLElement): Boolean = js.native
   def onBlur(event: js.Any): Unit = js.native
   def onChange(event: js.Any): Unit = js.native
-  def onCopy(text: String): Unit = js.native
+  def onCopy(hasText: Text): Unit = js.native
   def onCursorChange(event: js.Any): Unit = js.native
   def onFocus(event: js.Any): Unit = js.native
+  def onInput(): Unit = js.native
   def onInput(event: js.Any): Unit = js.native
-  def onPaste(text: String): Unit = js.native
+  def onPaste(hasText: Text): Unit = js.native
   def onScroll(): Unit = js.native
   def onSelectionChange(event: js.Any): Unit = js.native
   def updatePlaceholder(): Unit = js.native

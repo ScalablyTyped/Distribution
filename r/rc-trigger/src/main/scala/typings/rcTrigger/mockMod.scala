@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-trigger/lib/mock", JSImport.Namespace)
+@JSImport("rc-trigger/es/mock", JSImport.Namespace)
 @js.native
 object mockMod extends js.Object {
   @js.native

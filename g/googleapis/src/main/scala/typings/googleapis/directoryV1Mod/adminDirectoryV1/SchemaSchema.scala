@@ -37,22 +37,48 @@ trait SchemaSchema extends js.Object {
 
 object SchemaSchema {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    etag: String = null,
-    fields: js.Array[SchemaSchemaFieldSpec] = null,
-    kind: String = null,
-    schemaId: String = null,
-    schemaName: String = null
-  ): SchemaSchema = {
+  def apply(): SchemaSchema = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (schemaId != null) __obj.updateDynamic("schemaId")(schemaId.asInstanceOf[js.Any])
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchema]
   }
+  @scala.inline
+  implicit class SchemaSchemaOps[Self <: SchemaSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: SchemaSchemaFieldSpec*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: js.Array[SchemaSchemaFieldSpec]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSchemaId(value: String): Self = this.set("schemaId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaId: Self = this.set("schemaId", js.undefined)
+    @scala.inline
+    def setSchemaName(value: String): Self = this.set("schemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaName: Self = this.set("schemaName", js.undefined)
+  }
+  
 }
 

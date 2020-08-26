@@ -11,18 +11,11 @@ trait Transaction extends js.Object {
   def check(path: String): this.type = js.native
   def check(path: String, version: Double): this.type = js.native
   def commit(callback: js.Function2[/* error */ Error | Exception, /* results */ js.Any, Unit]): Unit = js.native
-  def create(path: String): this.type = js.native
-  def create(path: String, dataOrAclsOrmode1: Buffer | js.Array[ACL] | Double): this.type = js.native
   def create(
     path: String,
-    dataOrAclsOrmode1: Buffer | js.Array[ACL] | Double,
-    dataOrAclsOrmode2: Buffer | js.Array[ACL] | Double
-  ): this.type = js.native
-  def create(
-    path: String,
-    dataOrAclsOrmode1: Buffer | js.Array[ACL] | Double,
-    dataOrAclsOrmode2: Buffer | js.Array[ACL] | Double,
-    dataOrAclsOrmode3: Buffer | js.Array[ACL] | Double
+    dataOrAclsOrmode1: js.UndefOr[Buffer | js.Array[ACL] | Double],
+    dataOrAclsOrmode2: js.UndefOr[Buffer | js.Array[ACL] | Double],
+    dataOrAclsOrmode3: js.UndefOr[Buffer | js.Array[ACL] | Double]
   ): this.type = js.native
   def remove(path: String): this.type = js.native
   def remove(path: String, version: Double): this.type = js.native

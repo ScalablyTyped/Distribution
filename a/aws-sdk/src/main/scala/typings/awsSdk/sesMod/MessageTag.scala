@@ -22,5 +22,22 @@ object MessageTag {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageTag]
   }
+  @scala.inline
+  implicit class MessageTagOps[Self <: MessageTag] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: MessageTagName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValue(value: MessageTagValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+  }
+  
 }
 

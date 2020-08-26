@@ -12,7 +12,7 @@ Single component release of rating
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 3276 |
+| # downloads        | 3305 |
 | # stars            | 0 |
 
 ## Links

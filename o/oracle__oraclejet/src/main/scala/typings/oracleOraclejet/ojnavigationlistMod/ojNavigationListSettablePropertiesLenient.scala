@@ -19,57 +19,98 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojNavigationListSettableProperties<K, D>> */
+@js.native
 trait ojNavigationListSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var as: js.UndefOr[String] = js.undefined
-  var currentItem: js.UndefOr[K] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var display: js.UndefOr[all | icons] = js.undefined
-  var drillMode: js.UndefOr[none | collapsible | sliding] = js.undefined
-  var edge: js.UndefOr[top | start] = js.undefined
-  var expanded: js.UndefOr[KeySet[K]] = js.undefined
-  var hierarchyMenuThreshold: js.UndefOr[Double] = js.undefined
-  var item: js.UndefOr[Selectable[K, D]] = js.undefined
-  var overflow: js.UndefOr[popup | hidden] = js.undefined
-  var rootLabel: js.UndefOr[String] = js.undefined
-  var selection: js.UndefOr[K] = js.undefined
-  var translations: js.UndefOr[DefaultRootLabel] = js.undefined
+  var as: js.UndefOr[String] = js.native
+  var currentItem: js.UndefOr[K] = js.native
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+  var display: js.UndefOr[all | icons] = js.native
+  var drillMode: js.UndefOr[none | collapsible | sliding] = js.native
+  var edge: js.UndefOr[top | start] = js.native
+  var expanded: js.UndefOr[KeySet[K]] = js.native
+  var hierarchyMenuThreshold: js.UndefOr[Double] = js.native
+  var item: js.UndefOr[Selectable[K, D]] = js.native
+  var overflow: js.UndefOr[popup | hidden] = js.native
+  var rootLabel: js.UndefOr[String | Null] = js.native
+  var selection: js.UndefOr[K] = js.native
+  var translations: js.UndefOr[DefaultRootLabel] = js.native
 }
 
 object ojNavigationListSettablePropertiesLenient {
   @scala.inline
-  def apply[K, D](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    as: String = null,
-    currentItem: K = null,
-    data: DataProvider[K, D] = null,
-    display: all | icons = null,
-    drillMode: none | collapsible | sliding = null,
-    edge: top | start = null,
-    expanded: KeySet[K] = null,
-    hierarchyMenuThreshold: js.UndefOr[Double] = js.undefined,
-    item: Selectable[K, D] = null,
-    overflow: popup | hidden = null,
-    rootLabel: String = null,
-    selection: K = null,
-    translations: DefaultRootLabel = null
-  ): ojNavigationListSettablePropertiesLenient[K, D] = {
+  def apply[K, D](): ojNavigationListSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (currentItem != null) __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (drillMode != null) __obj.updateDynamic("drillMode")(drillMode.asInstanceOf[js.Any])
-    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(hierarchyMenuThreshold)) __obj.updateDynamic("hierarchyMenuThreshold")(hierarchyMenuThreshold.get.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (rootLabel != null) __obj.updateDynamic("rootLabel")(rootLabel.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojNavigationListSettablePropertiesLenient[K, D]]
   }
+  @scala.inline
+  implicit class ojNavigationListSettablePropertiesLenientOps[Self <: ojNavigationListSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojNavigationListSettablePropertiesLenient[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setCurrentItem(value: K): Self = this.set("currentItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentItem: Self = this.set("currentItem", js.undefined)
+    @scala.inline
+    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataNull: Self = this.set("data", null)
+    @scala.inline
+    def setDisplay(value: all | icons): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setDrillMode(value: none | collapsible | sliding): Self = this.set("drillMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDrillMode: Self = this.set("drillMode", js.undefined)
+    @scala.inline
+    def setEdge(value: top | start): Self = this.set("edge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdge: Self = this.set("edge", js.undefined)
+    @scala.inline
+    def setExpanded(value: KeySet[K]): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setHierarchyMenuThreshold(value: Double): Self = this.set("hierarchyMenuThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHierarchyMenuThreshold: Self = this.set("hierarchyMenuThreshold", js.undefined)
+    @scala.inline
+    def setItem(value: Selectable[K, D]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setOverflow(value: popup | hidden): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setRootLabel(value: String): Self = this.set("rootLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootLabel: Self = this.set("rootLabel", js.undefined)
+    @scala.inline
+    def setRootLabelNull: Self = this.set("rootLabel", null)
+    @scala.inline
+    def setSelection(value: K): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setTranslations(value: DefaultRootLabel): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

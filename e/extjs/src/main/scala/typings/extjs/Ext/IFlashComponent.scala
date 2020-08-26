@@ -4,69 +4,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFlashComponent extends IComponent {
   /** [Property] (String) */
-  var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.undefined
+  var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (String) */
-  var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  var backgroundColor: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (Boolean) */
-  var expressInstall: js.UndefOr[Boolean] = js.undefined
+  var expressInstall: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Object) */
-  var flashAttributes: js.UndefOr[js.Any] = js.undefined
+  var flashAttributes: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var flashParams: js.UndefOr[js.Any] = js.undefined
+  var flashParams: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var flashVars: js.UndefOr[js.Any] = js.undefined
+  var flashVars: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var flashVersion: js.UndefOr[java.lang.String] = js.undefined
+  var flashVersion: js.UndefOr[java.lang.String] = js.native
   /** [Method] Retrieves the id of the SWF object embed element  */
-  var getSwfId: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var getSwfId: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Property] (Ext.Element) */
-  var swf: js.UndefOr[IElement] = js.undefined
+  var swf: js.UndefOr[IElement] = js.native
   /** [Config Option] (String/Number) */
-  var swfHeight: js.UndefOr[js.Any] = js.undefined
+  var swfHeight: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String/Number) */
-  var swfWidth: js.UndefOr[js.Any] = js.undefined
+  var swfWidth: js.UndefOr[js.Any] = js.native
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  var url: js.UndefOr[java.lang.String] = js.native
   /** [Config Option] (String) */
-  var wmode: js.UndefOr[java.lang.String] = js.undefined
+  var wmode: js.UndefOr[java.lang.String] = js.native
 }
 
 object IFlashComponent {
   @scala.inline
-  def apply(
-    EXPRESS_INSTALL_URL: java.lang.String = null,
-    IComponent: IComponent = null,
-    backgroundColor: java.lang.String = null,
-    expressInstall: js.UndefOr[Boolean] = js.undefined,
-    flashAttributes: js.Any = null,
-    flashParams: js.Any = null,
-    flashVars: js.Any = null,
-    flashVersion: java.lang.String = null,
-    getSwfId: () => Unit = null,
-    swf: IElement = null,
-    swfHeight: js.Any = null,
-    swfWidth: js.Any = null,
-    url: java.lang.String = null,
-    wmode: java.lang.String = null
-  ): IFlashComponent = {
+  def apply(): IFlashComponent = {
     val __obj = js.Dynamic.literal()
-    if (EXPRESS_INSTALL_URL != null) __obj.updateDynamic("EXPRESS_INSTALL_URL")(EXPRESS_INSTALL_URL.asInstanceOf[js.Any])
-    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(expressInstall)) __obj.updateDynamic("expressInstall")(expressInstall.get.asInstanceOf[js.Any])
-    if (flashAttributes != null) __obj.updateDynamic("flashAttributes")(flashAttributes.asInstanceOf[js.Any])
-    if (flashParams != null) __obj.updateDynamic("flashParams")(flashParams.asInstanceOf[js.Any])
-    if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars.asInstanceOf[js.Any])
-    if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
-    if (getSwfId != null) __obj.updateDynamic("getSwfId")(js.Any.fromFunction0(getSwfId))
-    if (swf != null) __obj.updateDynamic("swf")(swf.asInstanceOf[js.Any])
-    if (swfHeight != null) __obj.updateDynamic("swfHeight")(swfHeight.asInstanceOf[js.Any])
-    if (swfWidth != null) __obj.updateDynamic("swfWidth")(swfWidth.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFlashComponent]
   }
+  @scala.inline
+  implicit class IFlashComponentOps[Self <: IFlashComponent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEXPRESS_INSTALL_URL(value: java.lang.String): Self = this.set("EXPRESS_INSTALL_URL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEXPRESS_INSTALL_URL: Self = this.set("EXPRESS_INSTALL_URL", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: java.lang.String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setExpressInstall(value: Boolean): Self = this.set("expressInstall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressInstall: Self = this.set("expressInstall", js.undefined)
+    @scala.inline
+    def setFlashAttributes(value: js.Any): Self = this.set("flashAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashAttributes: Self = this.set("flashAttributes", js.undefined)
+    @scala.inline
+    def setFlashParams(value: js.Any): Self = this.set("flashParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashParams: Self = this.set("flashParams", js.undefined)
+    @scala.inline
+    def setFlashVars(value: js.Any): Self = this.set("flashVars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashVars: Self = this.set("flashVars", js.undefined)
+    @scala.inline
+    def setFlashVersion(value: java.lang.String): Self = this.set("flashVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashVersion: Self = this.set("flashVersion", js.undefined)
+    @scala.inline
+    def setGetSwfId(value: () => Unit): Self = this.set("getSwfId", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetSwfId: Self = this.set("getSwfId", js.undefined)
+    @scala.inline
+    def setSwf(value: IElement): Self = this.set("swf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwf: Self = this.set("swf", js.undefined)
+    @scala.inline
+    def setSwfHeight(value: js.Any): Self = this.set("swfHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwfHeight: Self = this.set("swfHeight", js.undefined)
+    @scala.inline
+    def setSwfWidth(value: js.Any): Self = this.set("swfWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwfWidth: Self = this.set("swfWidth", js.undefined)
+    @scala.inline
+    def setUrl(value: java.lang.String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWmode(value: java.lang.String): Self = this.set("wmode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWmode: Self = this.set("wmode", js.undefined)
+  }
+  
 }
 

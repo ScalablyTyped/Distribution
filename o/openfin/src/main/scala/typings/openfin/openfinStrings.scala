@@ -5,12 +5,12 @@ import typings.openfin.frameFrameMod.EntityType
 import typings.openfin.logMod.LogLevel
 import typings.openfin.mod.fin.OpenFinApplicationEventType
 import typings.openfin.mod.fin.OpenFinExternalApplicationEventType
-import typings.openfin.mod.fin.OpenFinExternalWindowEventType
 import typings.openfin.mod.fin.OpenFinGlobalHotkeyEventType
 import typings.openfin.mod.fin.OpenFinSystemEventType
 import typings.openfin.mod.fin.OpenFinWindowEventType
 import typings.openfin.shapesMod.AnchorType
 import typings.openfin.utilsMod.LayoutPresetTypes
+import typings.openfin.webcontentsWebcontentsMod.ImageFormat
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,6 +18,9 @@ import scala.scalajs.js.annotation._
 object openfinStrings {
   @js.native
   sealed trait `abnormal-termination` extends js.Object
+  
+  @js.native
+  sealed trait all extends js.Object
   
   @js.native
   sealed trait app extends js.Object
@@ -62,12 +65,13 @@ object openfinStrings {
   sealed trait `auth-requested` extends OpenFinWindowEventType
   
   @js.native
-  sealed trait `begin-user-bounds-changing` extends OpenFinExternalWindowEventType
+  sealed trait `begin-user-bounds-changing` extends js.Object
   
   @js.native
-  sealed trait blurred
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait blurred extends OpenFinWindowEventType
+  
+  @js.native
+  sealed trait bmp extends ImageFormat
   
   @js.native
   sealed trait `bottom-left` extends AnchorType
@@ -76,14 +80,10 @@ object openfinStrings {
   sealed trait `bottom-right` extends AnchorType
   
   @js.native
-  sealed trait `bounds-changed`
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait `bounds-changed` extends OpenFinWindowEventType
   
   @js.native
-  sealed trait `bounds-changing`
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait `bounds-changing` extends OpenFinWindowEventType
   
   @js.native
   sealed trait channel extends js.Object
@@ -106,14 +106,19 @@ object openfinStrings {
   @js.native
   sealed trait closed
     extends OpenFinApplicationEventType
-       with OpenFinExternalWindowEventType
        with OpenFinWindowEventType
   
   @js.native
-  sealed trait closing extends OpenFinExternalWindowEventType
+  sealed trait closing extends js.Object
+  
+  @js.native
+  sealed trait column extends js.Object
   
   @js.native
   sealed trait columns extends LayoutPresetTypes
+  
+  @js.native
+  sealed trait component extends js.Object
   
   @js.native
   sealed trait connected
@@ -148,10 +153,10 @@ object openfinStrings {
   sealed trait `disabled-frame-bounds-changing` extends OpenFinWindowEventType
   
   @js.native
-  sealed trait `disabled-movement-bounds-changed` extends OpenFinExternalWindowEventType
+  sealed trait `disabled-movement-bounds-changed` extends js.Object
   
   @js.native
-  sealed trait `disabled-movement-bounds-changing` extends OpenFinExternalWindowEventType
+  sealed trait `disabled-movement-bounds-changing` extends js.Object
   
   @js.native
   sealed trait disband extends js.Object
@@ -163,7 +168,7 @@ object openfinStrings {
   sealed trait embedded extends OpenFinWindowEventType
   
   @js.native
-  sealed trait `end-user-bounds-changing` extends OpenFinExternalWindowEventType
+  sealed trait `end-user-bounds-changing` extends js.Object
   
   @js.native
   sealed trait error extends LogLevel
@@ -211,9 +216,7 @@ object openfinStrings {
   sealed trait fdc3Dotorganization extends js.Object
   
   @js.native
-  sealed trait focused
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait focused extends OpenFinWindowEventType
   
   @js.native
   sealed trait frame extends js.Object
@@ -231,14 +234,10 @@ object openfinStrings {
   sealed trait grid extends LayoutPresetTypes
   
   @js.native
-  sealed trait `group-changed`
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait `group-changed` extends OpenFinWindowEventType
   
   @js.native
-  sealed trait hidden
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait hidden extends OpenFinWindowEventType
   
   @js.native
   sealed trait hide extends js.Object
@@ -270,6 +269,9 @@ object openfinStrings {
   sealed trait join extends js.Object
   
   @js.native
+  sealed trait jpg extends ImageFormat
+  
+  @js.native
   sealed trait keyDown extends js.Object
   
   @js.native
@@ -277,6 +279,9 @@ object openfinStrings {
   
   @js.native
   sealed trait killed extends js.Object
+  
+  @js.native
+  sealed trait last extends js.Object
   
   @js.native
   sealed trait `launch-failed` extends js.Object
@@ -306,15 +311,16 @@ object openfinStrings {
   sealed trait longEdge extends js.Object
   
   @js.native
+  sealed trait `main-window` extends js.Object
+  
+  @js.native
   sealed trait mainFrame extends js.Object
   
   @js.native
   sealed trait `manifest-changed` extends OpenFinApplicationEventType
   
   @js.native
-  sealed trait maximized
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait maximized extends OpenFinWindowEventType
   
   @js.native
   sealed trait merge extends js.Object
@@ -323,9 +329,7 @@ object openfinStrings {
   sealed trait message extends js.Object
   
   @js.native
-  sealed trait minimized
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait minimized extends OpenFinWindowEventType
   
   @js.native
   sealed trait `monitor-info-changed` extends OpenFinSystemEventType
@@ -376,6 +380,9 @@ object openfinStrings {
   sealed trait `platform-snapshot-applied` extends js.Object
   
   @js.native
+  sealed trait png extends ImageFormat
+  
+  @js.native
   sealed trait `preload-scripts-state-changed` extends js.Object
   
   @js.native
@@ -411,9 +418,10 @@ object openfinStrings {
   sealed trait responding extends OpenFinApplicationEventType
   
   @js.native
-  sealed trait restored
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait restored extends OpenFinWindowEventType
+  
+  @js.native
+  sealed trait row extends js.Object
   
   @js.native
   sealed trait rows extends LayoutPresetTypes
@@ -437,9 +445,7 @@ object openfinStrings {
   sealed trait `show-requested` extends OpenFinWindowEventType
   
   @js.native
-  sealed trait shown
-    extends OpenFinExternalWindowEventType
-       with OpenFinWindowEventType
+  sealed trait shown extends OpenFinWindowEventType
   
   @js.native
   sealed trait simplex extends js.Object
@@ -498,10 +504,10 @@ object openfinStrings {
        with nonHotkeyEvents
   
   @js.native
-  sealed trait `user-movement-disabled` extends OpenFinExternalWindowEventType
+  sealed trait `user-movement-disabled` extends js.Object
   
   @js.native
-  sealed trait `user-movement-enabled` extends OpenFinExternalWindowEventType
+  sealed trait `user-movement-enabled` extends js.Object
   
   @js.native
   sealed trait verbose extends LogLevel
@@ -511,6 +517,9 @@ object openfinStrings {
   
   @js.native
   sealed trait `view-attached` extends js.Object
+  
+  @js.native
+  sealed trait `view-blurred` extends js.Object
   
   @js.native
   sealed trait `view-crashed` extends js.Object
@@ -725,6 +734,8 @@ object openfinStrings {
   @scala.inline
   def `abnormal-termination`: `abnormal-termination` = "abnormal-termination".asInstanceOf[`abnormal-termination`]
   @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def app: app = "app".asInstanceOf[app]
   @scala.inline
   def application: application = "application".asInstanceOf[application]
@@ -757,6 +768,8 @@ object openfinStrings {
   @scala.inline
   def blurred: blurred = "blurred".asInstanceOf[blurred]
   @scala.inline
+  def bmp: bmp = "bmp".asInstanceOf[bmp]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
@@ -781,7 +794,11 @@ object openfinStrings {
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
   @scala.inline
+  def column: column = "column".asInstanceOf[column]
+  @scala.inline
   def columns: columns = "columns".asInstanceOf[columns]
+  @scala.inline
+  def component: component = "component".asInstanceOf[component]
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   @scala.inline
@@ -879,11 +896,15 @@ object openfinStrings {
   @scala.inline
   def join: join = "join".asInstanceOf[join]
   @scala.inline
+  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  @scala.inline
   def keyDown: keyDown = "keyDown".asInstanceOf[keyDown]
   @scala.inline
   def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
   @scala.inline
   def killed: killed = "killed".asInstanceOf[killed]
+  @scala.inline
+  def last: last = "last".asInstanceOf[last]
   @scala.inline
   def `launch-failed`: `launch-failed` = "launch-failed".asInstanceOf[`launch-failed`]
   @scala.inline
@@ -902,6 +923,8 @@ object openfinStrings {
   def lock: lock = "lock".asInstanceOf[lock]
   @scala.inline
   def longEdge: longEdge = "longEdge".asInstanceOf[longEdge]
+  @scala.inline
+  def `main-window`: `main-window` = "main-window".asInstanceOf[`main-window`]
   @scala.inline
   def mainFrame: mainFrame = "mainFrame".asInstanceOf[mainFrame]
   @scala.inline
@@ -947,6 +970,8 @@ object openfinStrings {
   @scala.inline
   def `platform-snapshot-applied`: `platform-snapshot-applied` = "platform-snapshot-applied".asInstanceOf[`platform-snapshot-applied`]
   @scala.inline
+  def png: png = "png".asInstanceOf[png]
+  @scala.inline
   def `preload-scripts-state-changed`: `preload-scripts-state-changed` = "preload-scripts-state-changed".asInstanceOf[`preload-scripts-state-changed`]
   @scala.inline
   def `preload-scripts-state-changing`: `preload-scripts-state-changing` = "preload-scripts-state-changing".asInstanceOf[`preload-scripts-state-changing`]
@@ -970,6 +995,8 @@ object openfinStrings {
   def responding: responding = "responding".asInstanceOf[responding]
   @scala.inline
   def restored: restored = "restored".asInstanceOf[restored]
+  @scala.inline
+  def row: row = "row".asInstanceOf[row]
   @scala.inline
   def rows: rows = "rows".asInstanceOf[rows]
   @scala.inline
@@ -1032,6 +1059,8 @@ object openfinStrings {
   def view: view = "view".asInstanceOf[view]
   @scala.inline
   def `view-attached`: `view-attached` = "view-attached".asInstanceOf[`view-attached`]
+  @scala.inline
+  def `view-blurred`: `view-blurred` = "view-blurred".asInstanceOf[`view-blurred`]
   @scala.inline
   def `view-crashed`: `view-crashed` = "view-crashed".asInstanceOf[`view-crashed`]
   @scala.inline

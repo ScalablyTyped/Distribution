@@ -21,6 +21,16 @@ trait BootstrapAccordion extends Control {
   def getGroupCount(): Double = js.native
   def getItemByName(name: String): BootstrapAccordionItem | Null = js.native
   def getSelectedItem(): BootstrapAccordionItem | Null = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        AccordionGroupCancelEventArgs | AccordionGroupClickEventArgs | AccordionGroupEventArgs | AccordionItemEventArgs | BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")

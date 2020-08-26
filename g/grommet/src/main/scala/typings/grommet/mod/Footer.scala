@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Footer")
+@JSImport("grommet/es6", "Footer")
 @js.native
 object Footer extends TopLevel[FC[BoxProps]]
 

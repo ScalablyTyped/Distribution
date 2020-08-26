@@ -6,25 +6,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait S3StreamDownloaderOptions extends js.Object {
-  var chunkSize: js.UndefOr[String] = js.undefined
-  var client: S3
-  var concurrency: js.UndefOr[Double] = js.undefined
-  var params: GetObjectRequest
+  var chunkSize: js.UndefOr[String] = js.native
+  var client: S3 = js.native
+  var concurrency: js.UndefOr[Double] = js.native
+  var params: GetObjectRequest = js.native
 }
 
 object S3StreamDownloaderOptions {
   @scala.inline
-  def apply(
-    client: S3,
-    params: GetObjectRequest,
-    chunkSize: String = null,
-    concurrency: js.UndefOr[Double] = js.undefined
-  ): S3StreamDownloaderOptions = {
+  def apply(client: S3, params: GetObjectRequest): S3StreamDownloaderOptions = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(concurrency)) __obj.updateDynamic("concurrency")(concurrency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3StreamDownloaderOptions]
   }
+  @scala.inline
+  implicit class S3StreamDownloaderOptionsOps[Self <: S3StreamDownloaderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient(value: S3): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParams(value: GetObjectRequest): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChunkSize(value: String): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    @scala.inline
+    def setConcurrency(value: Double): Self = this.set("concurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConcurrency: Self = this.set("concurrency", js.undefined)
+  }
+  
 }
 

@@ -51,7 +51,7 @@ trait ClosestFacilitySolveResult
     */
   var polylineBarriers: js.Array[Polyline] = js.native
   /**
-    * The array of routes. Route graphics are returned if `returnRoutes = true` and `outputLines` does not equal `none`. From version 2.0 to 2.5 the type is an array of Polylines. At version 2.6 the type is an array of Graphics.
+    * The array of graphics representing routes.  Route graphics are returned if `returnRoutes` is `true` and `outputLines` does not equal `none`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html#routes)
     */

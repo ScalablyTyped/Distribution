@@ -26,16 +26,9 @@ object describeJobCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DescribeJobInput) = this()
-    /* CompleteClass */
-    override val input: DescribeJobInput = js.native
     val middlewareStack: MiddlewareStack[DescribeJobInput, DescribeJobOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: GlacierResolvedConfiguration
-    ): Handler[DescribeJobInput, DescribeJobOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: GlacierResolvedConfiguration
     ): Handler[DescribeJobInput, DescribeJobOutput] = js.native
   }

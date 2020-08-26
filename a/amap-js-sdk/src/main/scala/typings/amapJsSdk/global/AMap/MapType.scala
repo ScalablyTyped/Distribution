@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class MapType ()
   extends typings.amapJsSdk.AMap.MapType {
   def this(options: DefaultType) = this()
-  /* CompleteClass */
-  override def hide(): Unit = js.native
-  /* CompleteClass */
-  override def show(): Unit = js.native
 }
 

@@ -25,18 +25,40 @@ trait ChainableTemporaryCredentialsOptions extends js.Object {
 
 object ChainableTemporaryCredentialsOptions {
   @scala.inline
-  def apply(
-    masterCredentials: Credentials = null,
-    params: AssumeRoleRequest | GetSessionTokenRequest = null,
-    stsConfig: ClientConfiguration = null,
-    tokenCodeFn: (/* serialNumber */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit = null
-  ): ChainableTemporaryCredentialsOptions = {
+  def apply(): ChainableTemporaryCredentialsOptions = {
     val __obj = js.Dynamic.literal()
-    if (masterCredentials != null) __obj.updateDynamic("masterCredentials")(masterCredentials.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (stsConfig != null) __obj.updateDynamic("stsConfig")(stsConfig.asInstanceOf[js.Any])
-    if (tokenCodeFn != null) __obj.updateDynamic("tokenCodeFn")(js.Any.fromFunction2(tokenCodeFn))
     __obj.asInstanceOf[ChainableTemporaryCredentialsOptions]
   }
+  @scala.inline
+  implicit class ChainableTemporaryCredentialsOptionsOps[Self <: ChainableTemporaryCredentialsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMasterCredentials(value: Credentials): Self = this.set("masterCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterCredentials: Self = this.set("masterCredentials", js.undefined)
+    @scala.inline
+    def setParams(value: AssumeRoleRequest | GetSessionTokenRequest): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setStsConfig(value: ClientConfiguration): Self = this.set("stsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStsConfig: Self = this.set("stsConfig", js.undefined)
+    @scala.inline
+    def setTokenCodeFn(
+      value: (/* serialNumber */ String, /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit]) => Unit
+    ): Self = this.set("tokenCodeFn", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTokenCodeFn: Self = this.set("tokenCodeFn", js.undefined)
+  }
+  
 }
 

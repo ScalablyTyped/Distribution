@@ -22,15 +22,34 @@ trait UpdateInputSecurityGroupRequest extends js.Object {
 
 object UpdateInputSecurityGroupRequest {
   @scala.inline
-  def apply(
-    InputSecurityGroupId: string,
-    Tags: Tags = null,
-    WhitelistRules: listOfInputWhitelistRuleCidr = null
-  ): UpdateInputSecurityGroupRequest = {
+  def apply(InputSecurityGroupId: string): UpdateInputSecurityGroupRequest = {
     val __obj = js.Dynamic.literal(InputSecurityGroupId = InputSecurityGroupId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (WhitelistRules != null) __obj.updateDynamic("WhitelistRules")(WhitelistRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInputSecurityGroupRequest]
   }
+  @scala.inline
+  implicit class UpdateInputSecurityGroupRequestOps[Self <: UpdateInputSecurityGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputSecurityGroupId(value: string): Self = this.set("InputSecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = this.set("WhitelistRules", js.Array(value :_*))
+    @scala.inline
+    def setWhitelistRules(value: listOfInputWhitelistRuleCidr): Self = this.set("WhitelistRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWhitelistRules: Self = this.set("WhitelistRules", js.undefined)
+  }
+  
 }
 

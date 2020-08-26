@@ -19,11 +19,30 @@ trait AssessmentTargetArgs extends js.Object {
 
 object AssessmentTargetArgs {
   @scala.inline
-  def apply(name: Input[String] = null, resourceGroupArn: Input[String] = null): AssessmentTargetArgs = {
+  def apply(): AssessmentTargetArgs = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceGroupArn != null) __obj.updateDynamic("resourceGroupArn")(resourceGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTargetArgs]
   }
+  @scala.inline
+  implicit class AssessmentTargetArgsOps[Self <: AssessmentTargetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceGroupArn(value: Input[String]): Self = this.set("resourceGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceGroupArn: Self = this.set("resourceGroupArn", js.undefined)
+  }
+  
 }
 

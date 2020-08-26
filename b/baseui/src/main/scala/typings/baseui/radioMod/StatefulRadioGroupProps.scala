@@ -10,36 +10,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StatefulRadioGroupProps extends js.Object {
-  var align: js.UndefOr[horizontal | vertical] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var initialState: js.UndefOr[State] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
-  var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.undefined
+  var align: js.UndefOr[horizontal | vertical] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var initialState: js.UndefOr[State] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+  var overrides: js.UndefOr[RadioOverrides with RadioGroupOverrides] = js.native
 }
 
 object StatefulRadioGroupProps {
   @scala.inline
-  def apply(
-    align: horizontal | vertical = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    initialState: State = null,
-    name: String = null,
-    onChange: ChangeEvent[HTMLInputElement] => Unit = null,
-    overrides: RadioOverrides with RadioGroupOverrides = null
-  ): StatefulRadioGroupProps = {
+  def apply(): StatefulRadioGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulRadioGroupProps]
   }
+  @scala.inline
+  implicit class StatefulRadioGroupPropsOps[Self <: StatefulRadioGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: horizontal | vertical): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setInitialState(value: State): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOverrides(value: RadioOverrides with RadioGroupOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+  }
+  
 }
 

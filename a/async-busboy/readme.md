@@ -12,7 +12,7 @@ Promise based multipart form parser
 | Keywords           | koa, multipart, form, file-upload |
 | # releases         | 2 |
 | # dependents       | 32 |
-| # downloads        | 205781 |
+| # downloads        | 220925 |
 | # stars            | 3 |
 
 ## Links

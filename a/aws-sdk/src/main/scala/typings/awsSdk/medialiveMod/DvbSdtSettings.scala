@@ -26,18 +26,38 @@ trait DvbSdtSettings extends js.Object {
 
 object DvbSdtSettings {
   @scala.inline
-  def apply(
-    OutputSdt: DvbSdtOutputSdt = null,
-    RepInterval: js.UndefOr[integerMin25Max2000] = js.undefined,
-    ServiceName: stringMin1Max256 = null,
-    ServiceProviderName: stringMin1Max256 = null
-  ): DvbSdtSettings = {
+  def apply(): DvbSdtSettings = {
     val __obj = js.Dynamic.literal()
-    if (OutputSdt != null) __obj.updateDynamic("OutputSdt")(OutputSdt.asInstanceOf[js.Any])
-    if (!js.isUndefined(RepInterval)) __obj.updateDynamic("RepInterval")(RepInterval.get.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
-    if (ServiceProviderName != null) __obj.updateDynamic("ServiceProviderName")(ServiceProviderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DvbSdtSettings]
   }
+  @scala.inline
+  implicit class DvbSdtSettingsOps[Self <: DvbSdtSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOutputSdt(value: DvbSdtOutputSdt): Self = this.set("OutputSdt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputSdt: Self = this.set("OutputSdt", js.undefined)
+    @scala.inline
+    def setRepInterval(value: integerMin25Max2000): Self = this.set("RepInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepInterval: Self = this.set("RepInterval", js.undefined)
+    @scala.inline
+    def setServiceName(value: stringMin1Max256): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    @scala.inline
+    def setServiceProviderName(value: stringMin1Max256): Self = this.set("ServiceProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceProviderName: Self = this.set("ServiceProviderName", js.undefined)
+  }
+  
 }
 

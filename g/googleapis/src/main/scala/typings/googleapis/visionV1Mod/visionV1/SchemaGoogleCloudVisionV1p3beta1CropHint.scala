@@ -27,16 +27,34 @@ trait SchemaGoogleCloudVisionV1p3beta1CropHint extends js.Object {
 
 object SchemaGoogleCloudVisionV1p3beta1CropHint {
   @scala.inline
-  def apply(
-    boundingPoly: SchemaGoogleCloudVisionV1p3beta1BoundingPoly = null,
-    confidence: js.UndefOr[Double] = js.undefined,
-    importanceFraction: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleCloudVisionV1p3beta1CropHint = {
+  def apply(): SchemaGoogleCloudVisionV1p3beta1CropHint = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(importanceFraction)) __obj.updateDynamic("importanceFraction")(importanceFraction.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1CropHint]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p3beta1CropHintOps[Self <: SchemaGoogleCloudVisionV1p3beta1CropHint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p3beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setImportanceFraction(value: Double): Self = this.set("importanceFraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportanceFraction: Self = this.set("importanceFraction", js.undefined)
+  }
+  
 }
 

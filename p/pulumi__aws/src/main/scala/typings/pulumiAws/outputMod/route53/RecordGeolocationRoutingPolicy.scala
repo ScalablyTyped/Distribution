@@ -22,12 +22,34 @@ trait RecordGeolocationRoutingPolicy extends js.Object {
 
 object RecordGeolocationRoutingPolicy {
   @scala.inline
-  def apply(continent: String = null, country: String = null, subdivision: String = null): RecordGeolocationRoutingPolicy = {
+  def apply(): RecordGeolocationRoutingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (subdivision != null) __obj.updateDynamic("subdivision")(subdivision.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordGeolocationRoutingPolicy]
   }
+  @scala.inline
+  implicit class RecordGeolocationRoutingPolicyOps[Self <: RecordGeolocationRoutingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinent(value: String): Self = this.set("continent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinent: Self = this.set("continent", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setSubdivision(value: String): Self = this.set("subdivision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubdivision: Self = this.set("subdivision", js.undefined)
+  }
+  
 }
 

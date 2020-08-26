@@ -10,8 +10,8 @@ Public Key Infrastructure (PKI) is the basis of how identity and key management 
 | Full name          | pkijs |
 | Keywords           | ES6, ES2015, WebCrypto, Web Cryptography API, X.509, certificate, crl, cms, encrypted, enveloped, OCSP, timestamp, PKCS |
 | # releases         | 63 |
-| # dependents       | 38 |
-| # downloads        | 585373 |
+| # dependents       | 40 |
+| # downloads        | 581390 |
 | # stars            | 2 |
 
 ## Links

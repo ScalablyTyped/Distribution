@@ -18,14 +18,30 @@ trait SearchedLogStream extends js.Object {
 
 object SearchedLogStream {
   @scala.inline
-  def apply(
-    logStreamName: LogStreamName = null,
-    searchedCompletely: js.UndefOr[LogStreamSearchedCompletely] = js.undefined
-  ): SearchedLogStream = {
+  def apply(): SearchedLogStream = {
     val __obj = js.Dynamic.literal()
-    if (logStreamName != null) __obj.updateDynamic("logStreamName")(logStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchedCompletely)) __obj.updateDynamic("searchedCompletely")(searchedCompletely.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchedLogStream]
   }
+  @scala.inline
+  implicit class SearchedLogStreamOps[Self <: SearchedLogStream] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogStreamName(value: LogStreamName): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogStreamName: Self = this.set("logStreamName", js.undefined)
+    @scala.inline
+    def setSearchedCompletely(value: LogStreamSearchedCompletely): Self = this.set("searchedCompletely", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchedCompletely: Self = this.set("searchedCompletely", js.undefined)
+  }
+  
 }
 

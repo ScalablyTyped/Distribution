@@ -12,7 +12,7 @@ Semantic empowers designers and developers by creating a shared vocabulary for U
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 41 |
-| # downloads        | 742381 |
+| # downloads        | 718905 |
 | # stars            | 35 |
 
 ## Links

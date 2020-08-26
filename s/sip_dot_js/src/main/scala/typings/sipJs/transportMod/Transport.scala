@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Transport
   extends typings.sipJs.coreTransportMod.Transport {
   /**
@@ -18,7 +19,7 @@ trait Transport
     * - The `state` MUST be "Connected" when called.
     * ```
     */
-  var onConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onConnect: js.UndefOr[js.Function0[Unit]] = js.native
   /**
     * Callback on state transition from "Connected".
     *
@@ -35,7 +36,7 @@ trait Transport
     * transport initiated the transition from "Connected" - for example,
     * perhaps network connectivity was lost.
     */
-  var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
+  var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.native
   /**
     * Callback on receipt of a message.
     *
@@ -43,18 +44,18 @@ trait Transport
     * When the `UserAgent` is constructed, this property is set.
     * The `state` MUST be "Connected" when this is called.
     */
-  var onMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
+  var onMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
   /**
     * Transport state.
     *
     * @remarks
     * The initial Transport state MUST be "disconnected" (after calling constructor).
     */
-  val state: TransportState
+  val state: TransportState = js.native
   /**
     * Transport state change emitter.
     */
-  val stateChange: Emitter[TransportState]
+  val stateChange: Emitter[TransportState] = js.native
   /**
     * Connect to network.
     *
@@ -71,7 +72,7 @@ trait Transport
     * Rejects with {@link StateTransitionError} if a loop is detected.
     * In particular, callbacks and emitters MUST NOT call this method synchronously.
     */
-  def connect(): js.Promise[Unit]
+  def connect(): js.Promise[Unit] = js.native
   /**
     * Disconnect from network.
     *
@@ -88,7 +89,7 @@ trait Transport
     * Rejects with {@link StateTransitionError} if a loop is detected.
     * In particular, callbacks and emitters MUST NOT call this method synchronously.
     */
-  def disconnect(): js.Promise[Unit]
+  def disconnect(): js.Promise[Unit] = js.native
   /**
     * Dispose.
     *
@@ -96,7 +97,7 @@ trait Transport
     * When the `UserAgent` is disposed or stopped, this method is called.
     * The `UserAgent` MUST NOT continue to utilize the instance after calling this method.
     */
-  def dispose(): js.Promise[Unit]
+  def dispose(): js.Promise[Unit] = js.native
   /**
     * Returns true if the `state` equals "Connected".
     *
@@ -116,7 +117,7 @@ trait Transport
     * });
     * ```
     */
-  def isConnected(): Boolean
+  def isConnected(): Boolean = js.native
 }
 
 object Transport {
@@ -129,16 +130,47 @@ object Transport {
     protocol: String,
     send: String => js.Promise[Unit],
     state: TransportState,
-    stateChange: Emitter[TransportState],
-    onConnect: () => Unit = null,
-    onDisconnect: /* error */ js.UndefOr[Error] => Unit = null,
-    onMessage: /* message */ String => Unit = null
+    stateChange: Emitter[TransportState]
   ): Transport = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), dispose = js.Any.fromFunction0(dispose), isConnected = js.Any.fromFunction0(isConnected), protocol = protocol.asInstanceOf[js.Any], send = js.Any.fromFunction1(send), state = state.asInstanceOf[js.Any], stateChange = stateChange.asInstanceOf[js.Any])
-    if (onConnect != null) __obj.updateDynamic("onConnect")(js.Any.fromFunction0(onConnect))
-    if (onDisconnect != null) __obj.updateDynamic("onDisconnect")(js.Any.fromFunction1(onDisconnect))
-    if (onMessage != null) __obj.updateDynamic("onMessage")(js.Any.fromFunction1(onMessage))
     __obj.asInstanceOf[Transport]
   }
+  @scala.inline
+  implicit class TransportOps[Self <: Transport] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnect(value: () => js.Promise[Unit]): Self = this.set("connect", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDisconnect(value: () => js.Promise[Unit]): Self = this.set("disconnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDispose(value: () => js.Promise[Unit]): Self = this.set("dispose", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsConnected(value: () => Boolean): Self = this.set("isConnected", js.Any.fromFunction0(value))
+    @scala.inline
+    def setState(value: TransportState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStateChange(value: Emitter[TransportState]): Self = this.set("stateChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnConnect(value: () => Unit): Self = this.set("onConnect", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnConnect: Self = this.set("onConnect", js.undefined)
+    @scala.inline
+    def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = this.set("onDisconnect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDisconnect: Self = this.set("onDisconnect", js.undefined)
+    @scala.inline
+    def setOnMessage(value: /* message */ String => Unit): Self = this.set("onMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMessage: Self = this.set("onMessage", js.undefined)
+  }
+  
 }
 

@@ -4,33 +4,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OrdersCustomBatchRequestEntryShipLineItems extends js.Object {
-  var carrier: js.UndefOr[String] = js.undefined
-  var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.undefined
-  var shipmentGroupId: js.UndefOr[String] = js.undefined
-  var shipmentId: js.UndefOr[String] = js.undefined
-  var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.undefined
-  var trackingId: js.UndefOr[String] = js.undefined
+  var carrier: js.UndefOr[String] = js.native
+  var lineItems: js.UndefOr[js.Array[OrderShipmentLineItemShipment]] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentInfos: js.UndefOr[js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.native
+  var trackingId: js.UndefOr[String] = js.native
 }
 
 object OrdersCustomBatchRequestEntryShipLineItems {
   @scala.inline
-  def apply(
-    carrier: String = null,
-    lineItems: js.Array[OrderShipmentLineItemShipment] = null,
-    shipmentGroupId: String = null,
-    shipmentId: String = null,
-    shipmentInfos: js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] = null,
-    trackingId: String = null
-  ): OrdersCustomBatchRequestEntryShipLineItems = {
+  def apply(): OrdersCustomBatchRequestEntryShipLineItems = {
     val __obj = js.Dynamic.literal()
-    if (carrier != null) __obj.updateDynamic("carrier")(carrier.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
-    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId.asInstanceOf[js.Any])
-    if (shipmentId != null) __obj.updateDynamic("shipmentId")(shipmentId.asInstanceOf[js.Any])
-    if (shipmentInfos != null) __obj.updateDynamic("shipmentInfos")(shipmentInfos.asInstanceOf[js.Any])
-    if (trackingId != null) __obj.updateDynamic("trackingId")(trackingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryShipLineItems]
   }
+  @scala.inline
+  implicit class OrdersCustomBatchRequestEntryShipLineItemsOps[Self <: OrdersCustomBatchRequestEntryShipLineItems] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCarrier(value: String): Self = this.set("carrier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCarrier: Self = this.set("carrier", js.undefined)
+    @scala.inline
+    def setLineItemsVarargs(value: OrderShipmentLineItemShipment*): Self = this.set("lineItems", js.Array(value :_*))
+    @scala.inline
+    def setLineItems(value: js.Array[OrderShipmentLineItemShipment]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    @scala.inline
+    def setShipmentGroupId(value: String): Self = this.set("shipmentGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipmentGroupId: Self = this.set("shipmentGroupId", js.undefined)
+    @scala.inline
+    def setShipmentId(value: String): Self = this.set("shipmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipmentId: Self = this.set("shipmentId", js.undefined)
+    @scala.inline
+    def setShipmentInfosVarargs(value: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo*): Self = this.set("shipmentInfos", js.Array(value :_*))
+    @scala.inline
+    def setShipmentInfos(value: js.Array[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]): Self = this.set("shipmentInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipmentInfos: Self = this.set("shipmentInfos", js.undefined)
+    @scala.inline
+    def setTrackingId(value: String): Self = this.set("trackingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingId: Self = this.set("trackingId", js.undefined)
+  }
+  
 }
 

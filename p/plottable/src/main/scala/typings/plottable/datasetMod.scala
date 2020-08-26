@@ -18,6 +18,7 @@ object datasetMod extends js.Object {
     */
   class Dataset () extends js.Object {
     def this(data: js.Array[_]) = this()
+    def this(data: js.UndefOr[scala.Nothing], metadata: js.Any) = this()
     def this(data: js.Array[_], metadata: js.Any) = this()
     var _callbacks: js.Any = js.native
     var _data: js.Any = js.native

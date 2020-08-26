@@ -34,19 +34,39 @@ trait CreateApiCacheRequest extends js.Object {
 
 object CreateApiCacheRequest {
   @scala.inline
-  def apply(
-    apiCachingBehavior: ApiCachingBehavior,
-    apiId: String,
-    ttl: Long,
-    `type`: ApiCacheType,
-    atRestEncryptionEnabled: js.UndefOr[Boolean] = js.undefined,
-    transitEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
-  ): CreateApiCacheRequest = {
+  def apply(apiCachingBehavior: ApiCachingBehavior, apiId: String, ttl: Long, `type`: ApiCacheType): CreateApiCacheRequest = {
     val __obj = js.Dynamic.literal(apiCachingBehavior = apiCachingBehavior.asInstanceOf[js.Any], apiId = apiId.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(atRestEncryptionEnabled)) __obj.updateDynamic("atRestEncryptionEnabled")(atRestEncryptionEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitEncryptionEnabled)) __obj.updateDynamic("transitEncryptionEnabled")(transitEncryptionEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApiCacheRequest]
   }
+  @scala.inline
+  implicit class CreateApiCacheRequestOps[Self <: CreateApiCacheRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApiCachingBehavior(value: ApiCachingBehavior): Self = this.set("apiCachingBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApiId(value: String): Self = this.set("apiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTtl(value: Long): Self = this.set("ttl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ApiCacheType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAtRestEncryptionEnabled(value: Boolean): Self = this.set("atRestEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtRestEncryptionEnabled: Self = this.set("atRestEncryptionEnabled", js.undefined)
+    @scala.inline
+    def setTransitEncryptionEnabled(value: Boolean): Self = this.set("transitEncryptionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitEncryptionEnabled: Self = this.set("transitEncryptionEnabled", js.undefined)
+  }
+  
 }
 

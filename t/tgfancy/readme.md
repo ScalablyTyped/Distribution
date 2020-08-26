@@ -10,9 +10,9 @@ A Fancy, Higher-Level Wrapper for Telegram Bot API
 | ------------------ | :-------------: |
 | Full name          | tgfancy |
 | Keywords           | telegram, bot, api |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 9218 |
+| # downloads        | 9502 |
 | # stars            | 0 |
 
 ## Links

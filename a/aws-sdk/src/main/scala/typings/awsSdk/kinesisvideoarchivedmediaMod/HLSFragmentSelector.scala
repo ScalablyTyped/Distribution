@@ -18,11 +18,30 @@ trait HLSFragmentSelector extends js.Object {
 
 object HLSFragmentSelector {
   @scala.inline
-  def apply(FragmentSelectorType: HLSFragmentSelectorType = null, TimestampRange: HLSTimestampRange = null): HLSFragmentSelector = {
+  def apply(): HLSFragmentSelector = {
     val __obj = js.Dynamic.literal()
-    if (FragmentSelectorType != null) __obj.updateDynamic("FragmentSelectorType")(FragmentSelectorType.asInstanceOf[js.Any])
-    if (TimestampRange != null) __obj.updateDynamic("TimestampRange")(TimestampRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[HLSFragmentSelector]
   }
+  @scala.inline
+  implicit class HLSFragmentSelectorOps[Self <: HLSFragmentSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFragmentSelectorType(value: HLSFragmentSelectorType): Self = this.set("FragmentSelectorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentSelectorType: Self = this.set("FragmentSelectorType", js.undefined)
+    @scala.inline
+    def setTimestampRange(value: HLSTimestampRange): Self = this.set("TimestampRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampRange: Self = this.set("TimestampRange", js.undefined)
+  }
+  
 }
 

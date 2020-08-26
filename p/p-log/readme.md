@@ -12,7 +12,7 @@ Log the value/error of a promise
 | Keywords           | promise, log, logging, logger, debug, debugging, console, print, tap, catch, error, rejection, chain, pipeline, thunk, function, async, await, promises, bluebird |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 1402 |
+| # downloads        | 1419 |
 | # stars            | 1 |
 
 ## Links

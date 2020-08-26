@@ -1,6 +1,7 @@
 package typings.wouter.preactMod
 
 import typings.preact.mod.VNode
+import typings.wouter.preactMatcherMod.DefaultParams
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

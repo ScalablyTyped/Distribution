@@ -21,7 +21,5 @@ class Telemetry protected () extends ITelemetry {
   val project: js.UndefOr[IProject] = js.native
   val session: ISession = js.native
   /* protected */ def getInfo(): js.Promise[js.Array[InfoItem]] = js.native
-  /* CompleteClass */
-  override def sendCommand(command: String, args: js.Array[String]): js.Promise[Unit] = js.native
 }
 

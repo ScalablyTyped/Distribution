@@ -34,22 +34,46 @@ trait Summary extends js.Object {
 
 object Summary {
   @scala.inline
-  def apply(
-    LastUpdated: LastUpdated = null,
-    NonCompliantResources: js.UndefOr[NonCompliantResources] = js.undefined,
-    Region: Region = null,
-    ResourceType: AmazonResourceType = null,
-    TargetId: TargetId = null,
-    TargetIdType: TargetIdType = null
-  ): Summary = {
+  def apply(): Summary = {
     val __obj = js.Dynamic.literal()
-    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (!js.isUndefined(NonCompliantResources)) __obj.updateDynamic("NonCompliantResources")(NonCompliantResources.get.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (TargetId != null) __obj.updateDynamic("TargetId")(TargetId.asInstanceOf[js.Any])
-    if (TargetIdType != null) __obj.updateDynamic("TargetIdType")(TargetIdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Summary]
   }
+  @scala.inline
+  implicit class SummaryOps[Self <: Summary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastUpdated(value: LastUpdated): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    @scala.inline
+    def setNonCompliantResources(value: NonCompliantResources): Self = this.set("NonCompliantResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonCompliantResources: Self = this.set("NonCompliantResources", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setResourceType(value: AmazonResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setTargetId(value: TargetId): Self = this.set("TargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("TargetId", js.undefined)
+    @scala.inline
+    def setTargetIdType(value: TargetIdType): Self = this.set("TargetIdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetIdType: Self = this.set("TargetIdType", js.undefined)
+  }
+  
 }
 

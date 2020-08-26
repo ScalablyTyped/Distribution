@@ -1,9 +1,6 @@
 package typings.materialUi.MaterialUI.Stepper
 
 import typings.materialUi.MaterialUI.SharedEnhancedButtonProps
-import typings.react.mod.CSSProperties
-import typings.react.mod.FocusEvent
-import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
@@ -14,78 +11,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StepButtonProps extends SharedEnhancedButtonProps[StepButton] {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var completed: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[ReactNode | String | Double] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var completed: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[ReactNode | String | Double] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.native
 }
 
 object StepButtonProps {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    centerRipple: js.UndefOr[Boolean] = js.undefined,
-    completed: js.UndefOr[Boolean] = js.undefined,
-    containerElement: ReactNode | String = null,
-    disableFocusRipple: js.UndefOr[Boolean] = js.undefined,
-    disableKeyboardFocus: js.UndefOr[Boolean] = js.undefined,
-    disableTouchRipple: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    focusRippleColor: String = null,
-    focusRippleOpacity: js.UndefOr[Double] = js.undefined,
-    href: String = null,
-    icon: ReactNode | String | Double = null,
-    keyboardFocused: js.UndefOr[Boolean] = js.undefined,
-    onBlur: FocusEvent[js.Object] => Unit = null,
-    onClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    onFocus: FocusEvent[js.Object] => Unit = null,
-    onKeyDown: KeyboardEvent[js.Object] => Unit = null,
-    onKeyUp: KeyboardEvent[js.Object] => Unit = null,
-    onKeyboardFocus: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit = null,
-    onMouseEnter: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    onTouchStart: TouchEvent[js.Object] => Unit = null,
-    style: CSSProperties = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    target: String = null,
-    touchRippleColor: String = null,
-    touchRippleOpacity: js.UndefOr[Double] = js.undefined,
-    `type`: String = null
-  ): StepButtonProps = {
+  def apply(): StepButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerRipple)) __obj.updateDynamic("centerRipple")(centerRipple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed.get.asInstanceOf[js.Any])
-    if (containerElement != null) __obj.updateDynamic("containerElement")(containerElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFocusRipple)) __obj.updateDynamic("disableFocusRipple")(disableFocusRipple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKeyboardFocus)) __obj.updateDynamic("disableKeyboardFocus")(disableKeyboardFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTouchRipple)) __obj.updateDynamic("disableTouchRipple")(disableTouchRipple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (focusRippleColor != null) __obj.updateDynamic("focusRippleColor")(focusRippleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusRippleOpacity)) __obj.updateDynamic("focusRippleOpacity")(focusRippleOpacity.get.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardFocused)) __obj.updateDynamic("keyboardFocused")(keyboardFocused.get.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onKeyboardFocus != null) __obj.updateDynamic("onKeyboardFocus")(js.Any.fromFunction2(onKeyboardFocus))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (touchRippleColor != null) __obj.updateDynamic("touchRippleColor")(touchRippleColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchRippleOpacity)) __obj.updateDynamic("touchRippleOpacity")(touchRippleOpacity.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepButtonProps]
   }
+  @scala.inline
+  implicit class StepButtonPropsOps[Self <: StepButtonProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setCompleted(value: Boolean): Self = this.set("completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleted: Self = this.set("completed", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setIcon(value: ReactNode | String | Double): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: TouchEvent[js.Object] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SurveyError () extends js.Object {
   def this(text: String) = this()
+  def this(text: js.UndefOr[scala.Nothing], errorOwner: ISurveyErrorOwner) = this()
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
   var errorOwner: ISurveyErrorOwner = js.native
   val locText: LocalizableString = js.native

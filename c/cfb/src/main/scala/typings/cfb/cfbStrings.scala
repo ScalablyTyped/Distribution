@@ -24,6 +24,9 @@ object cfbStrings {
   sealed trait file extends js.Object
   
   @js.native
+  sealed trait mad extends js.Object
+  
+  @js.native
   sealed trait zip extends js.Object
   
   @scala.inline
@@ -38,6 +41,8 @@ object cfbStrings {
   def cfb: cfb = "cfb".asInstanceOf[cfb]
   @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
+  def mad: mad = "mad".asInstanceOf[mad]
   @scala.inline
   def zip: zip = "zip".asInstanceOf[zip]
 }

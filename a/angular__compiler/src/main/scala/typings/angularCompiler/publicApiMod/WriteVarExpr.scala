@@ -17,6 +17,12 @@ class WriteVarExpr protected ()
   def this(
     name: String,
     value: typings.angularCompiler.outputAstMod.Expression,
+    `type`: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    name: String,
+    value: typings.angularCompiler.outputAstMod.Expression,
     `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()

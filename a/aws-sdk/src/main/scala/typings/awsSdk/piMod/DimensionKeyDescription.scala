@@ -22,16 +22,36 @@ trait DimensionKeyDescription extends js.Object {
 
 object DimensionKeyDescription {
   @scala.inline
-  def apply(
-    Dimensions: DimensionMap = null,
-    Partitions: MetricValuesList = null,
-    Total: js.UndefOr[Double] = js.undefined
-  ): DimensionKeyDescription = {
+  def apply(): DimensionKeyDescription = {
     val __obj = js.Dynamic.literal()
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (Partitions != null) __obj.updateDynamic("Partitions")(Partitions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Total)) __obj.updateDynamic("Total")(Total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionKeyDescription]
   }
+  @scala.inline
+  implicit class DimensionKeyDescriptionOps[Self <: DimensionKeyDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensions(value: DimensionMap): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setPartitionsVarargs(value: Double*): Self = this.set("Partitions", js.Array(value :_*))
+    @scala.inline
+    def setPartitions(value: MetricValuesList): Self = this.set("Partitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitions: Self = this.set("Partitions", js.undefined)
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("Total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("Total", js.undefined)
+  }
+  
 }
 

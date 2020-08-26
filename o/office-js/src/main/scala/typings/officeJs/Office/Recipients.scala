@@ -51,6 +51,11 @@ trait Recipients extends js.Object {
     recipients: js.Array[String | EmailUser | EmailAddressDetails],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addAsync(
+    recipients: js.Array[String | EmailUser | EmailAddressDetails],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addAsync(recipients: js.Array[String | EmailUser | EmailAddressDetails], options: AsyncContextOptions): Unit = js.native
   def addAsync(
     recipients: js.Array[String | EmailUser | EmailAddressDetails],

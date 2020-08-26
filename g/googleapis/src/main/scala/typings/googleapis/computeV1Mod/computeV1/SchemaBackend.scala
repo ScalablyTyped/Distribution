@@ -105,32 +105,66 @@ trait SchemaBackend extends js.Object {
 
 object SchemaBackend {
   @scala.inline
-  def apply(
-    balancingMode: String = null,
-    capacityScaler: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    group: String = null,
-    maxConnections: js.UndefOr[Double] = js.undefined,
-    maxConnectionsPerEndpoint: js.UndefOr[Double] = js.undefined,
-    maxConnectionsPerInstance: js.UndefOr[Double] = js.undefined,
-    maxRate: js.UndefOr[Double] = js.undefined,
-    maxRatePerEndpoint: js.UndefOr[Double] = js.undefined,
-    maxRatePerInstance: js.UndefOr[Double] = js.undefined,
-    maxUtilization: js.UndefOr[Double] = js.undefined
-  ): SchemaBackend = {
+  def apply(): SchemaBackend = {
     val __obj = js.Dynamic.literal()
-    if (balancingMode != null) __obj.updateDynamic("balancingMode")(balancingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(capacityScaler)) __obj.updateDynamic("capacityScaler")(capacityScaler.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnectionsPerEndpoint)) __obj.updateDynamic("maxConnectionsPerEndpoint")(maxConnectionsPerEndpoint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnectionsPerInstance)) __obj.updateDynamic("maxConnectionsPerInstance")(maxConnectionsPerInstance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRate)) __obj.updateDynamic("maxRate")(maxRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRatePerEndpoint)) __obj.updateDynamic("maxRatePerEndpoint")(maxRatePerEndpoint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRatePerInstance)) __obj.updateDynamic("maxRatePerInstance")(maxRatePerInstance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxUtilization)) __obj.updateDynamic("maxUtilization")(maxUtilization.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackend]
   }
+  @scala.inline
+  implicit class SchemaBackendOps[Self <: SchemaBackend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBalancingMode(value: String): Self = this.set("balancingMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBalancingMode: Self = this.set("balancingMode", js.undefined)
+    @scala.inline
+    def setCapacityScaler(value: Double): Self = this.set("capacityScaler", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityScaler: Self = this.set("capacityScaler", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setGroup(value: String): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    @scala.inline
+    def setMaxConnectionsPerEndpoint(value: Double): Self = this.set("maxConnectionsPerEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConnectionsPerEndpoint: Self = this.set("maxConnectionsPerEndpoint", js.undefined)
+    @scala.inline
+    def setMaxConnectionsPerInstance(value: Double): Self = this.set("maxConnectionsPerInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConnectionsPerInstance: Self = this.set("maxConnectionsPerInstance", js.undefined)
+    @scala.inline
+    def setMaxRate(value: Double): Self = this.set("maxRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRate: Self = this.set("maxRate", js.undefined)
+    @scala.inline
+    def setMaxRatePerEndpoint(value: Double): Self = this.set("maxRatePerEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRatePerEndpoint: Self = this.set("maxRatePerEndpoint", js.undefined)
+    @scala.inline
+    def setMaxRatePerInstance(value: Double): Self = this.set("maxRatePerInstance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRatePerInstance: Self = this.set("maxRatePerInstance", js.undefined)
+    @scala.inline
+    def setMaxUtilization(value: Double): Self = this.set("maxUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUtilization: Self = this.set("maxUtilization", js.undefined)
+  }
+  
 }
 

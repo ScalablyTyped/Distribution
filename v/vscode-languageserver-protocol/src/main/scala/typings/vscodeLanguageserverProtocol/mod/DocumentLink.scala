@@ -11,6 +11,11 @@ object DocumentLink extends js.Object {
     * Creates a new DocumentLink literal.
     */
   def create(range: typings.vscodeLanguageserverTypes.mod.Range): typings.vscodeLanguageserverTypes.mod.DocumentLink = js.native
+  def create(
+    range: typings.vscodeLanguageserverTypes.mod.Range,
+    target: js.UndefOr[scala.Nothing],
+    data: js.Any
+  ): typings.vscodeLanguageserverTypes.mod.DocumentLink = js.native
   def create(range: typings.vscodeLanguageserverTypes.mod.Range, target: String): typings.vscodeLanguageserverTypes.mod.DocumentLink = js.native
   def create(range: typings.vscodeLanguageserverTypes.mod.Range, target: String, data: js.Any): typings.vscodeLanguageserverTypes.mod.DocumentLink = js.native
   /**

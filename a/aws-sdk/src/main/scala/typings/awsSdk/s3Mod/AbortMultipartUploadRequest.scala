@@ -23,10 +23,32 @@ trait AbortMultipartUploadRequest extends js.Object {
 
 object AbortMultipartUploadRequest {
   @scala.inline
-  def apply(Bucket: BucketName, Key: ObjectKey, UploadId: MultipartUploadId, RequestPayer: RequestPayer = null): AbortMultipartUploadRequest = {
+  def apply(Bucket: BucketName, Key: ObjectKey, UploadId: MultipartUploadId): AbortMultipartUploadRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortMultipartUploadRequest]
   }
+  @scala.inline
+  implicit class AbortMultipartUploadRequestOps[Self <: AbortMultipartUploadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUploadId(value: MultipartUploadId): Self = this.set("UploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+  }
+  
 }
 

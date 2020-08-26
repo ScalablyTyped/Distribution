@@ -26,16 +26,34 @@ trait PutBucketPolicyRequest extends js.Object {
 
 object PutBucketPolicyRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Policy: Policy,
-    ConfirmRemoveSelfBucketAccess: js.UndefOr[ConfirmRemoveSelfBucketAccess] = js.undefined,
-    ContentMD5: ContentMD5 = null
-  ): PutBucketPolicyRequest = {
+  def apply(Bucket: BucketName, Policy: Policy): PutBucketPolicyRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConfirmRemoveSelfBucketAccess)) __obj.updateDynamic("ConfirmRemoveSelfBucketAccess")(ConfirmRemoveSelfBucketAccess.get.asInstanceOf[js.Any])
-    if (ContentMD5 != null) __obj.updateDynamic("ContentMD5")(ContentMD5.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketPolicyRequest]
   }
+  @scala.inline
+  implicit class PutBucketPolicyRequestOps[Self <: PutBucketPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicy(value: Policy): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfirmRemoveSelfBucketAccess(value: ConfirmRemoveSelfBucketAccess): Self = this.set("ConfirmRemoveSelfBucketAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmRemoveSelfBucketAccess: Self = this.set("ConfirmRemoveSelfBucketAccess", js.undefined)
+    @scala.inline
+    def setContentMD5(value: ContentMD5): Self = this.set("ContentMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentMD5: Self = this.set("ContentMD5", js.undefined)
+  }
+  
 }
 

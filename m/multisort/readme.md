@@ -12,7 +12,7 @@ Sort an array using any number of separate, ranked criteria
 | Keywords           | sort, sorting, multiple, multi, multisort, comparator |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 25047 |
+| # downloads        | 25209 |
 | # stars            | 0 |
 
 ## Links

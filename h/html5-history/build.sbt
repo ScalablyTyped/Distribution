@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "html5-history"
-version := "0.1-dt-20190304Z-d8510a"
-scalaVersion := "2.13.2"
+version := "0.1-dt-20190304Z-614fcb"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

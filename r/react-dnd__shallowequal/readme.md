@@ -12,7 +12,7 @@ Like lodash isEqualWith but for shallow equal.
 | Keywords           | shallowequal, shallow, equal, isequal, compare, isequalwith |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 328304 |
+| # downloads        | 2839478 |
 | # stars            | 0 |
 
 ## Links

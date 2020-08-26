@@ -4,38 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndicesRecoveryParams extends GenericParams {
-  var activeOnly: js.UndefOr[Boolean] = js.undefined
-  var detailed: js.UndefOr[Boolean] = js.undefined
-  var human: js.UndefOr[Boolean] = js.undefined
-  var index: NameList
+  var activeOnly: js.UndefOr[Boolean] = js.native
+  var detailed: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.native
+  var index: NameList = js.native
 }
 
 object IndicesRecoveryParams {
   @scala.inline
-  def apply(
-    index: NameList,
-    activeOnly: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    detailed: js.UndefOr[Boolean] = js.undefined,
-    filterPath: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined
-  ): IndicesRecoveryParams = {
+  def apply(index: NameList): IndicesRecoveryParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeOnly)) __obj.updateDynamic("activeOnly")(activeOnly.get.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.get.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesRecoveryParams]
   }
+  @scala.inline
+  implicit class IndicesRecoveryParamsOps[Self <: IndicesRecoveryParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActiveOnly(value: Boolean): Self = this.set("activeOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveOnly: Self = this.set("activeOnly", js.undefined)
+    @scala.inline
+    def setDetailed(value: Boolean): Self = this.set("detailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailed: Self = this.set("detailed", js.undefined)
+    @scala.inline
+    def setHuman(value: Boolean): Self = this.set("human", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHuman: Self = this.set("human", js.undefined)
+  }
+  
 }
 

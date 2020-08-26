@@ -4,54 +4,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PayerInfo extends js.Object {
-  var billing_address: js.UndefOr[Address] = js.undefined
-  var birth_date: js.UndefOr[String] = js.undefined
-  var country_code: js.UndefOr[String] = js.undefined
-  var email: js.UndefOr[String] = js.undefined
-  val first_name: js.UndefOr[String] = js.undefined
-  val last_name: js.UndefOr[String] = js.undefined
-  val middle_name: js.UndefOr[String] = js.undefined
-  val payer_id: js.UndefOr[String] = js.undefined
-  val salutation: js.UndefOr[String] = js.undefined
-  val shipping_address: js.UndefOr[Address] = js.undefined
-  val suffix: js.UndefOr[String] = js.undefined
-  var tax_id: js.UndefOr[String] = js.undefined
-  var tax_id_type: js.UndefOr[String] = js.undefined
+  var billing_address: js.UndefOr[Address] = js.native
+  var birth_date: js.UndefOr[String] = js.native
+  var country_code: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.native
+  val first_name: js.UndefOr[String] = js.native
+  val last_name: js.UndefOr[String] = js.native
+  val middle_name: js.UndefOr[String] = js.native
+  val payer_id: js.UndefOr[String] = js.native
+  val salutation: js.UndefOr[String] = js.native
+  val shipping_address: js.UndefOr[Address] = js.native
+  val suffix: js.UndefOr[String] = js.native
+  var tax_id: js.UndefOr[String] = js.native
+  var tax_id_type: js.UndefOr[String] = js.native
 }
 
 object PayerInfo {
   @scala.inline
-  def apply(
-    billing_address: Address = null,
-    birth_date: String = null,
-    country_code: String = null,
-    email: String = null,
-    first_name: String = null,
-    last_name: String = null,
-    middle_name: String = null,
-    payer_id: String = null,
-    salutation: String = null,
-    shipping_address: Address = null,
-    suffix: String = null,
-    tax_id: String = null,
-    tax_id_type: String = null
-  ): PayerInfo = {
+  def apply(): PayerInfo = {
     val __obj = js.Dynamic.literal()
-    if (billing_address != null) __obj.updateDynamic("billing_address")(billing_address.asInstanceOf[js.Any])
-    if (birth_date != null) __obj.updateDynamic("birth_date")(birth_date.asInstanceOf[js.Any])
-    if (country_code != null) __obj.updateDynamic("country_code")(country_code.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
-    if (middle_name != null) __obj.updateDynamic("middle_name")(middle_name.asInstanceOf[js.Any])
-    if (payer_id != null) __obj.updateDynamic("payer_id")(payer_id.asInstanceOf[js.Any])
-    if (salutation != null) __obj.updateDynamic("salutation")(salutation.asInstanceOf[js.Any])
-    if (shipping_address != null) __obj.updateDynamic("shipping_address")(shipping_address.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (tax_id != null) __obj.updateDynamic("tax_id")(tax_id.asInstanceOf[js.Any])
-    if (tax_id_type != null) __obj.updateDynamic("tax_id_type")(tax_id_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayerInfo]
   }
+  @scala.inline
+  implicit class PayerInfoOps[Self <: PayerInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBilling_address(value: Address): Self = this.set("billing_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBilling_address: Self = this.set("billing_address", js.undefined)
+    @scala.inline
+    def setBirth_date(value: String): Self = this.set("birth_date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBirth_date: Self = this.set("birth_date", js.undefined)
+    @scala.inline
+    def setCountry_code(value: String): Self = this.set("country_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry_code: Self = this.set("country_code", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst_name: Self = this.set("first_name", js.undefined)
+    @scala.inline
+    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_name: Self = this.set("last_name", js.undefined)
+    @scala.inline
+    def setMiddle_name(value: String): Self = this.set("middle_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiddle_name: Self = this.set("middle_name", js.undefined)
+    @scala.inline
+    def setPayer_id(value: String): Self = this.set("payer_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayer_id: Self = this.set("payer_id", js.undefined)
+    @scala.inline
+    def setSalutation(value: String): Self = this.set("salutation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalutation: Self = this.set("salutation", js.undefined)
+    @scala.inline
+    def setShipping_address(value: Address): Self = this.set("shipping_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipping_address: Self = this.set("shipping_address", js.undefined)
+    @scala.inline
+    def setSuffix(value: String): Self = this.set("suffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffix: Self = this.set("suffix", js.undefined)
+    @scala.inline
+    def setTax_id(value: String): Self = this.set("tax_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_id: Self = this.set("tax_id", js.undefined)
+    @scala.inline
+    def setTax_id_type(value: String): Self = this.set("tax_id_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax_id_type: Self = this.set("tax_id_type", js.undefined)
+  }
+  
 }
 

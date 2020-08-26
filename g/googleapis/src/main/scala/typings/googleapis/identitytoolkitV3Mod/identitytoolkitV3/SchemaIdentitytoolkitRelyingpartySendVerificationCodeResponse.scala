@@ -17,10 +17,26 @@ trait SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse extends js.O
 
 object SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse {
   @scala.inline
-  def apply(sessionInfo: String = null): SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse = {
+  def apply(): SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse = {
     val __obj = js.Dynamic.literal()
-    if (sessionInfo != null) __obj.updateDynamic("sessionInfo")(sessionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponseOps[Self <: SchemaIdentitytoolkitRelyingpartySendVerificationCodeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSessionInfo(value: String): Self = this.set("sessionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionInfo: Self = this.set("sessionInfo", js.undefined)
+  }
+  
 }
 

@@ -18,10 +18,30 @@ trait GetContextKeysForPrincipalPolicyRequest extends js.Object {
 
 object GetContextKeysForPrincipalPolicyRequest {
   @scala.inline
-  def apply(PolicySourceArn: arnType, PolicyInputList: SimulationPolicyListType = null): GetContextKeysForPrincipalPolicyRequest = {
+  def apply(PolicySourceArn: arnType): GetContextKeysForPrincipalPolicyRequest = {
     val __obj = js.Dynamic.literal(PolicySourceArn = PolicySourceArn.asInstanceOf[js.Any])
-    if (PolicyInputList != null) __obj.updateDynamic("PolicyInputList")(PolicyInputList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetContextKeysForPrincipalPolicyRequest]
   }
+  @scala.inline
+  implicit class GetContextKeysForPrincipalPolicyRequestOps[Self <: GetContextKeysForPrincipalPolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicySourceArn(value: arnType): Self = this.set("PolicySourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyInputListVarargs(value: policyDocumentType*): Self = this.set("PolicyInputList", js.Array(value :_*))
+    @scala.inline
+    def setPolicyInputList(value: SimulationPolicyListType): Self = this.set("PolicyInputList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyInputList: Self = this.set("PolicyInputList", js.undefined)
+  }
+  
 }
 

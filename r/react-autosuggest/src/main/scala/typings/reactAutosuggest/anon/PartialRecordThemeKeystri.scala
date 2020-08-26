@@ -6,57 +6,98 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Record<react-autosuggest.react-autosuggest.ThemeKey, string | react.react.CSSProperties>> */
+@js.native
 trait PartialRecordThemeKeystri extends js.Object {
-  var container: js.UndefOr[String | CSSProperties] = js.undefined
-  var containerOpen: js.UndefOr[String | CSSProperties] = js.undefined
-  var input: js.UndefOr[String | CSSProperties] = js.undefined
-  var inputFocused: js.UndefOr[String | CSSProperties] = js.undefined
-  var inputOpen: js.UndefOr[String | CSSProperties] = js.undefined
-  var sectionContainer: js.UndefOr[String | CSSProperties] = js.undefined
-  var sectionContainerFirst: js.UndefOr[String | CSSProperties] = js.undefined
-  var sectionTitle: js.UndefOr[String | CSSProperties] = js.undefined
-  var suggestion: js.UndefOr[String | CSSProperties] = js.undefined
-  var suggestionFirst: js.UndefOr[String | CSSProperties] = js.undefined
-  var suggestionHighlighted: js.UndefOr[String | CSSProperties] = js.undefined
-  var suggestionsContainer: js.UndefOr[String | CSSProperties] = js.undefined
-  var suggestionsContainerOpen: js.UndefOr[String | CSSProperties] = js.undefined
-  var suggestionsList: js.UndefOr[String | CSSProperties] = js.undefined
+  var container: js.UndefOr[String | CSSProperties] = js.native
+  var containerOpen: js.UndefOr[String | CSSProperties] = js.native
+  var input: js.UndefOr[String | CSSProperties] = js.native
+  var inputFocused: js.UndefOr[String | CSSProperties] = js.native
+  var inputOpen: js.UndefOr[String | CSSProperties] = js.native
+  var sectionContainer: js.UndefOr[String | CSSProperties] = js.native
+  var sectionContainerFirst: js.UndefOr[String | CSSProperties] = js.native
+  var sectionTitle: js.UndefOr[String | CSSProperties] = js.native
+  var suggestion: js.UndefOr[String | CSSProperties] = js.native
+  var suggestionFirst: js.UndefOr[String | CSSProperties] = js.native
+  var suggestionHighlighted: js.UndefOr[String | CSSProperties] = js.native
+  var suggestionsContainer: js.UndefOr[String | CSSProperties] = js.native
+  var suggestionsContainerOpen: js.UndefOr[String | CSSProperties] = js.native
+  var suggestionsList: js.UndefOr[String | CSSProperties] = js.native
 }
 
 object PartialRecordThemeKeystri {
   @scala.inline
-  def apply(
-    container: String | CSSProperties = null,
-    containerOpen: String | CSSProperties = null,
-    input: String | CSSProperties = null,
-    inputFocused: String | CSSProperties = null,
-    inputOpen: String | CSSProperties = null,
-    sectionContainer: String | CSSProperties = null,
-    sectionContainerFirst: String | CSSProperties = null,
-    sectionTitle: String | CSSProperties = null,
-    suggestion: String | CSSProperties = null,
-    suggestionFirst: String | CSSProperties = null,
-    suggestionHighlighted: String | CSSProperties = null,
-    suggestionsContainer: String | CSSProperties = null,
-    suggestionsContainerOpen: String | CSSProperties = null,
-    suggestionsList: String | CSSProperties = null
-  ): PartialRecordThemeKeystri = {
+  def apply(): PartialRecordThemeKeystri = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerOpen != null) __obj.updateDynamic("containerOpen")(containerOpen.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputFocused != null) __obj.updateDynamic("inputFocused")(inputFocused.asInstanceOf[js.Any])
-    if (inputOpen != null) __obj.updateDynamic("inputOpen")(inputOpen.asInstanceOf[js.Any])
-    if (sectionContainer != null) __obj.updateDynamic("sectionContainer")(sectionContainer.asInstanceOf[js.Any])
-    if (sectionContainerFirst != null) __obj.updateDynamic("sectionContainerFirst")(sectionContainerFirst.asInstanceOf[js.Any])
-    if (sectionTitle != null) __obj.updateDynamic("sectionTitle")(sectionTitle.asInstanceOf[js.Any])
-    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
-    if (suggestionFirst != null) __obj.updateDynamic("suggestionFirst")(suggestionFirst.asInstanceOf[js.Any])
-    if (suggestionHighlighted != null) __obj.updateDynamic("suggestionHighlighted")(suggestionHighlighted.asInstanceOf[js.Any])
-    if (suggestionsContainer != null) __obj.updateDynamic("suggestionsContainer")(suggestionsContainer.asInstanceOf[js.Any])
-    if (suggestionsContainerOpen != null) __obj.updateDynamic("suggestionsContainerOpen")(suggestionsContainerOpen.asInstanceOf[js.Any])
-    if (suggestionsList != null) __obj.updateDynamic("suggestionsList")(suggestionsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRecordThemeKeystri]
   }
+  @scala.inline
+  implicit class PartialRecordThemeKeystriOps[Self <: PartialRecordThemeKeystri] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: String | CSSProperties): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContainerOpen(value: String | CSSProperties): Self = this.set("containerOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerOpen: Self = this.set("containerOpen", js.undefined)
+    @scala.inline
+    def setInput(value: String | CSSProperties): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setInputFocused(value: String | CSSProperties): Self = this.set("inputFocused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputFocused: Self = this.set("inputFocused", js.undefined)
+    @scala.inline
+    def setInputOpen(value: String | CSSProperties): Self = this.set("inputOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputOpen: Self = this.set("inputOpen", js.undefined)
+    @scala.inline
+    def setSectionContainer(value: String | CSSProperties): Self = this.set("sectionContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionContainer: Self = this.set("sectionContainer", js.undefined)
+    @scala.inline
+    def setSectionContainerFirst(value: String | CSSProperties): Self = this.set("sectionContainerFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionContainerFirst: Self = this.set("sectionContainerFirst", js.undefined)
+    @scala.inline
+    def setSectionTitle(value: String | CSSProperties): Self = this.set("sectionTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSectionTitle: Self = this.set("sectionTitle", js.undefined)
+    @scala.inline
+    def setSuggestion(value: String | CSSProperties): Self = this.set("suggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestion: Self = this.set("suggestion", js.undefined)
+    @scala.inline
+    def setSuggestionFirst(value: String | CSSProperties): Self = this.set("suggestionFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionFirst: Self = this.set("suggestionFirst", js.undefined)
+    @scala.inline
+    def setSuggestionHighlighted(value: String | CSSProperties): Self = this.set("suggestionHighlighted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionHighlighted: Self = this.set("suggestionHighlighted", js.undefined)
+    @scala.inline
+    def setSuggestionsContainer(value: String | CSSProperties): Self = this.set("suggestionsContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsContainer: Self = this.set("suggestionsContainer", js.undefined)
+    @scala.inline
+    def setSuggestionsContainerOpen(value: String | CSSProperties): Self = this.set("suggestionsContainerOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsContainerOpen: Self = this.set("suggestionsContainerOpen", js.undefined)
+    @scala.inline
+    def setSuggestionsList(value: String | CSSProperties): Self = this.set("suggestionsList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestionsList: Self = this.set("suggestionsList", js.undefined)
+  }
+  
 }
 

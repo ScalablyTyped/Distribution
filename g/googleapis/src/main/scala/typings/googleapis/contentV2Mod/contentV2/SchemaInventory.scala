@@ -89,42 +89,86 @@ trait SchemaInventory extends js.Object {
 
 object SchemaInventory {
   @scala.inline
-  def apply(
-    availability: String = null,
-    customLabel0: String = null,
-    customLabel1: String = null,
-    customLabel2: String = null,
-    customLabel3: String = null,
-    customLabel4: String = null,
-    installment: SchemaInstallment = null,
-    instoreProductLocation: String = null,
-    kind: String = null,
-    loyaltyPoints: SchemaLoyaltyPoints = null,
-    pickup: SchemaInventoryPickup = null,
-    price: SchemaPrice = null,
-    quantity: js.UndefOr[Double] = js.undefined,
-    salePrice: SchemaPrice = null,
-    salePriceEffectiveDate: String = null,
-    sellOnGoogleQuantity: js.UndefOr[Double] = js.undefined
-  ): SchemaInventory = {
+  def apply(): SchemaInventory = {
     val __obj = js.Dynamic.literal()
-    if (availability != null) __obj.updateDynamic("availability")(availability.asInstanceOf[js.Any])
-    if (customLabel0 != null) __obj.updateDynamic("customLabel0")(customLabel0.asInstanceOf[js.Any])
-    if (customLabel1 != null) __obj.updateDynamic("customLabel1")(customLabel1.asInstanceOf[js.Any])
-    if (customLabel2 != null) __obj.updateDynamic("customLabel2")(customLabel2.asInstanceOf[js.Any])
-    if (customLabel3 != null) __obj.updateDynamic("customLabel3")(customLabel3.asInstanceOf[js.Any])
-    if (customLabel4 != null) __obj.updateDynamic("customLabel4")(customLabel4.asInstanceOf[js.Any])
-    if (installment != null) __obj.updateDynamic("installment")(installment.asInstanceOf[js.Any])
-    if (instoreProductLocation != null) __obj.updateDynamic("instoreProductLocation")(instoreProductLocation.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (loyaltyPoints != null) __obj.updateDynamic("loyaltyPoints")(loyaltyPoints.asInstanceOf[js.Any])
-    if (pickup != null) __obj.updateDynamic("pickup")(pickup.asInstanceOf[js.Any])
-    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantity)) __obj.updateDynamic("quantity")(quantity.get.asInstanceOf[js.Any])
-    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice.asInstanceOf[js.Any])
-    if (salePriceEffectiveDate != null) __obj.updateDynamic("salePriceEffectiveDate")(salePriceEffectiveDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(sellOnGoogleQuantity)) __obj.updateDynamic("sellOnGoogleQuantity")(sellOnGoogleQuantity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInventory]
   }
+  @scala.inline
+  implicit class SchemaInventoryOps[Self <: SchemaInventory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailability(value: String): Self = this.set("availability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailability: Self = this.set("availability", js.undefined)
+    @scala.inline
+    def setCustomLabel0(value: String): Self = this.set("customLabel0", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel0: Self = this.set("customLabel0", js.undefined)
+    @scala.inline
+    def setCustomLabel1(value: String): Self = this.set("customLabel1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel1: Self = this.set("customLabel1", js.undefined)
+    @scala.inline
+    def setCustomLabel2(value: String): Self = this.set("customLabel2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel2: Self = this.set("customLabel2", js.undefined)
+    @scala.inline
+    def setCustomLabel3(value: String): Self = this.set("customLabel3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel3: Self = this.set("customLabel3", js.undefined)
+    @scala.inline
+    def setCustomLabel4(value: String): Self = this.set("customLabel4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLabel4: Self = this.set("customLabel4", js.undefined)
+    @scala.inline
+    def setInstallment(value: SchemaInstallment): Self = this.set("installment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallment: Self = this.set("installment", js.undefined)
+    @scala.inline
+    def setInstoreProductLocation(value: String): Self = this.set("instoreProductLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstoreProductLocation: Self = this.set("instoreProductLocation", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLoyaltyPoints(value: SchemaLoyaltyPoints): Self = this.set("loyaltyPoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoyaltyPoints: Self = this.set("loyaltyPoints", js.undefined)
+    @scala.inline
+    def setPickup(value: SchemaInventoryPickup): Self = this.set("pickup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickup: Self = this.set("pickup", js.undefined)
+    @scala.inline
+    def setPrice(value: SchemaPrice): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    @scala.inline
+    def setSalePrice(value: SchemaPrice): Self = this.set("salePrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalePrice: Self = this.set("salePrice", js.undefined)
+    @scala.inline
+    def setSalePriceEffectiveDate(value: String): Self = this.set("salePriceEffectiveDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalePriceEffectiveDate: Self = this.set("salePriceEffectiveDate", js.undefined)
+    @scala.inline
+    def setSellOnGoogleQuantity(value: Double): Self = this.set("sellOnGoogleQuantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellOnGoogleQuantity: Self = this.set("sellOnGoogleQuantity", js.undefined)
+  }
+  
 }
 

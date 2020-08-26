@@ -26,16 +26,9 @@ object getQueueUrlCommandMod extends js.Object {
           Readable
         ] {
     def this(input: GetQueueUrlInput) = this()
-    /* CompleteClass */
-    override val input: GetQueueUrlInput = js.native
     val middlewareStack: MiddlewareStack[GetQueueUrlInput, GetQueueUrlOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: SQSResolvedConfiguration
-    ): Handler[GetQueueUrlInput, GetQueueUrlOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: SQSResolvedConfiguration
     ): Handler[GetQueueUrlInput, GetQueueUrlOutput] = js.native
   }

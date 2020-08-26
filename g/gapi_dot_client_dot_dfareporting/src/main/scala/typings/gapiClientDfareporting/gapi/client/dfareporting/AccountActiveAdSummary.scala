@@ -4,35 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccountActiveAdSummary extends js.Object {
   /** ID of the account. */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String] = js.native
   /** Ads that have been activated for the account */
-  var activeAds: js.UndefOr[String] = js.undefined
+  var activeAds: js.UndefOr[String] = js.native
   /** Maximum number of active ads allowed for the account. */
-  var activeAdsLimitTier: js.UndefOr[String] = js.undefined
+  var activeAdsLimitTier: js.UndefOr[String] = js.native
   /** Ads that can be activated for the account. */
-  var availableAds: js.UndefOr[String] = js.undefined
+  var availableAds: js.UndefOr[String] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#accountActiveAdSummary". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
 }
 
 object AccountActiveAdSummary {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    activeAds: String = null,
-    activeAdsLimitTier: String = null,
-    availableAds: String = null,
-    kind: String = null
-  ): AccountActiveAdSummary = {
+  def apply(): AccountActiveAdSummary = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (activeAds != null) __obj.updateDynamic("activeAds")(activeAds.asInstanceOf[js.Any])
-    if (activeAdsLimitTier != null) __obj.updateDynamic("activeAdsLimitTier")(activeAdsLimitTier.asInstanceOf[js.Any])
-    if (availableAds != null) __obj.updateDynamic("availableAds")(availableAds.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountActiveAdSummary]
   }
+  @scala.inline
+  implicit class AccountActiveAdSummaryOps[Self <: AccountActiveAdSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setActiveAds(value: String): Self = this.set("activeAds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveAds: Self = this.set("activeAds", js.undefined)
+    @scala.inline
+    def setActiveAdsLimitTier(value: String): Self = this.set("activeAdsLimitTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveAdsLimitTier: Self = this.set("activeAdsLimitTier", js.undefined)
+    @scala.inline
+    def setAvailableAds(value: String): Self = this.set("availableAds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableAds: Self = this.set("availableAds", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

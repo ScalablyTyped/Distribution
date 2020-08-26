@@ -42,26 +42,54 @@ trait ReviewActionDetail extends js.Object {
 
 object ReviewActionDetail {
   @scala.inline
-  def apply(
-    ActionId: EntityId = null,
-    ActionName: String = null,
-    CompleteTime: Timestamp = null,
-    ErrorCode: String = null,
-    Result: String = null,
-    Status: ReviewActionStatus = null,
-    TargetId: EntityId = null,
-    TargetType: String = null
-  ): ReviewActionDetail = {
+  def apply(): ReviewActionDetail = {
     val __obj = js.Dynamic.literal()
-    if (ActionId != null) __obj.updateDynamic("ActionId")(ActionId.asInstanceOf[js.Any])
-    if (ActionName != null) __obj.updateDynamic("ActionName")(ActionName.asInstanceOf[js.Any])
-    if (CompleteTime != null) __obj.updateDynamic("CompleteTime")(CompleteTime.asInstanceOf[js.Any])
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TargetId != null) __obj.updateDynamic("TargetId")(TargetId.asInstanceOf[js.Any])
-    if (TargetType != null) __obj.updateDynamic("TargetType")(TargetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReviewActionDetail]
   }
+  @scala.inline
+  implicit class ReviewActionDetailOps[Self <: ReviewActionDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionId(value: EntityId): Self = this.set("ActionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("ActionId", js.undefined)
+    @scala.inline
+    def setActionName(value: String): Self = this.set("ActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionName: Self = this.set("ActionName", js.undefined)
+    @scala.inline
+    def setCompleteTime(value: Timestamp): Self = this.set("CompleteTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleteTime: Self = this.set("CompleteTime", js.undefined)
+    @scala.inline
+    def setErrorCode(value: String): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setResult(value: String): Self = this.set("Result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("Result", js.undefined)
+    @scala.inline
+    def setStatus(value: ReviewActionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTargetId(value: EntityId): Self = this.set("TargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetId: Self = this.set("TargetId", js.undefined)
+    @scala.inline
+    def setTargetType(value: String): Self = this.set("TargetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetType: Self = this.set("TargetType", js.undefined)
+  }
+  
 }
 

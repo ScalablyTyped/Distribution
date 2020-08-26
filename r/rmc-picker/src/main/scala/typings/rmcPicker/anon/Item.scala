@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait Item
   extends Instantiable0[ComponentDidUpdate]
      with Instantiable1[/* props */ IPickerProps, ComponentDidUpdate]
-     with Instantiable2[/* props */ IPickerProps, /* context */ js.Any, ComponentDidUpdate] {
+     with Instantiable2[js.UndefOr[/* props */ IPickerProps], /* context */ js.Any, ComponentDidUpdate] {
   def Item(_props: IItemProps): js.Any = js.native
 }
 

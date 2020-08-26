@@ -22,16 +22,34 @@ trait ListActivatedRulesInRuleGroupRequest extends js.Object {
 
 object ListActivatedRulesInRuleGroupRequest {
   @scala.inline
-  def apply(
-    Limit: js.UndefOr[PaginationLimit] = js.undefined,
-    NextMarker: NextMarker = null,
-    RuleGroupId: ResourceId = null
-  ): ListActivatedRulesInRuleGroupRequest = {
+  def apply(): ListActivatedRulesInRuleGroupRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
-    if (RuleGroupId != null) __obj.updateDynamic("RuleGroupId")(RuleGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListActivatedRulesInRuleGroupRequest]
   }
+  @scala.inline
+  implicit class ListActivatedRulesInRuleGroupRequestOps[Self <: ListActivatedRulesInRuleGroupRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimit(value: PaginationLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextMarker(value: NextMarker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+    @scala.inline
+    def setRuleGroupId(value: ResourceId): Self = this.set("RuleGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleGroupId: Self = this.set("RuleGroupId", js.undefined)
+  }
+  
 }
 

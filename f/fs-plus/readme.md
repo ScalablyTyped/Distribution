@@ -12,7 +12,7 @@ node's fs with more helpers
 | Keywords           | fs, filesystem |
 | # releases         | 5 |
 | # dependents       | 151 |
-| # downloads        | 4136961 |
+| # downloads        | 4296776 |
 | # stars            | 13 |
 
 ## Links

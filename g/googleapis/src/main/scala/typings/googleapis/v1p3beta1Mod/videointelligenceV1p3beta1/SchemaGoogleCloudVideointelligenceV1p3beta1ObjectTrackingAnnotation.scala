@@ -41,20 +41,44 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation extend
 
 object SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation {
   @scala.inline
-  def apply(
-    confidence: js.UndefOr[Double] = js.undefined,
-    entity: SchemaGoogleCloudVideointelligenceV1p3beta1Entity = null,
-    frames: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame] = null,
-    segment: SchemaGoogleCloudVideointelligenceV1p3beta1VideoSegment = null,
-    trackId: String = null
-  ): SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (entity != null) __obj.updateDynamic("entity")(entity.asInstanceOf[js.Any])
-    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (trackId != null) __obj.updateDynamic("trackId")(trackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotationOps[Self <: SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setEntity(value: SchemaGoogleCloudVideointelligenceV1p3beta1Entity): Self = this.set("entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("entity", js.undefined)
+    @scala.inline
+    def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame*): Self = this.set("frames", js.Array(value :_*))
+    @scala.inline
+    def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame]): Self = this.set("frames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrames: Self = this.set("frames", js.undefined)
+    @scala.inline
+    def setSegment(value: SchemaGoogleCloudVideointelligenceV1p3beta1VideoSegment): Self = this.set("segment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegment: Self = this.set("segment", js.undefined)
+    @scala.inline
+    def setTrackId(value: String): Self = this.set("trackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackId: Self = this.set("trackId", js.undefined)
+  }
+  
 }
 

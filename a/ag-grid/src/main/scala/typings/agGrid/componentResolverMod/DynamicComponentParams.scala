@@ -9,38 +9,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DynamicComponentParams extends js.Object {
   @JSName("$scope")
-  var $scope: js.UndefOr[js.Any] = js.undefined
-  var api: GridApi
-  var colDef: js.UndefOr[ColDef] = js.undefined
-  var column: js.UndefOr[Column] = js.undefined
-  var columnApi: ColumnApi
-  var data: js.UndefOr[js.Any] = js.undefined
-  var node: js.UndefOr[RowNode] = js.undefined
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var $scope: js.UndefOr[js.Any] = js.native
+  var api: GridApi = js.native
+  var colDef: js.UndefOr[ColDef] = js.native
+  var column: js.UndefOr[Column] = js.native
+  var columnApi: ColumnApi = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var node: js.UndefOr[RowNode] = js.native
+  var rowIndex: js.UndefOr[Double] = js.native
 }
 
 object DynamicComponentParams {
   @scala.inline
-  def apply(
-    api: GridApi,
-    columnApi: ColumnApi,
-    $scope: js.Any = null,
-    colDef: ColDef = null,
-    column: Column = null,
-    data: js.Any = null,
-    node: RowNode = null,
-    rowIndex: js.UndefOr[Double] = js.undefined
-  ): DynamicComponentParams = {
+  def apply(api: GridApi, columnApi: ColumnApi): DynamicComponentParams = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any])
-    if ($scope != null) __obj.updateDynamic("$scope")($scope.asInstanceOf[js.Any])
-    if (colDef != null) __obj.updateDynamic("colDef")(colDef.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicComponentParams]
   }
+  @scala.inline
+  implicit class DynamicComponentParamsOps[Self <: DynamicComponentParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApi(value: GridApi): Self = this.set("api", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnApi(value: ColumnApi): Self = this.set("columnApi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set$scope(value: js.Any): Self = this.set("$scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$scope: Self = this.set("$scope", js.undefined)
+    @scala.inline
+    def setColDef(value: ColDef): Self = this.set("colDef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColDef: Self = this.set("colDef", js.undefined)
+    @scala.inline
+    def setColumn(value: Column): Self = this.set("column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumn: Self = this.set("column", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setNode(value: RowNode): Self = this.set("node", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode: Self = this.set("node", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+  }
+  
 }
 

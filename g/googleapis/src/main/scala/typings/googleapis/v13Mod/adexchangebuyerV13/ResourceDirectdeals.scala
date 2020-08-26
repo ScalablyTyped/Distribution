@@ -27,6 +27,7 @@ class ResourceDirectdeals protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaDirectDeal] = js.native
   def get(callback: BodyResponseCallback[SchemaDirectDeal]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectDeal] = js.native
   def get(params: ParamsResourceDirectdealsGet): GaxiosPromise[SchemaDirectDeal] = js.native
   def get(params: ParamsResourceDirectdealsGet, callback: BodyResponseCallback[SchemaDirectDeal]): Unit = js.native
   def get(
@@ -53,6 +54,7 @@ class ResourceDirectdeals protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDirectDealsList] = js.native
   def list(callback: BodyResponseCallback[SchemaDirectDealsList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectDealsList] = js.native
   def list(params: ParamsResourceDirectdealsList): GaxiosPromise[SchemaDirectDealsList] = js.native
   def list(params: ParamsResourceDirectdealsList, callback: BodyResponseCallback[SchemaDirectDealsList]): Unit = js.native
   def list(

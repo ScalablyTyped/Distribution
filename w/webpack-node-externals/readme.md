@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-node-externals
 
-Typings are for version 1.7
+Typings are for version 2.5
 
 ## Library description:
 Easily exclude node_modules in Webpack bundle
@@ -11,8 +11,8 @@ Easily exclude node_modules in Webpack bundle
 | Full name          | webpack-node-externals |
 | Keywords           | webpack, node_modules, node, bundle, externals |
 | # releases         | 4 |
-| # dependents       | 847 |
-| # downloads        | 26090508 |
+| # dependents       | 890 |
+| # downloads        | 28457929 |
 | # stars            | 30 |
 
 ## Links

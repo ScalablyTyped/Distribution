@@ -18,10 +18,28 @@ trait QueryArgProfileConfig extends js.Object {
 
 object QueryArgProfileConfig {
   @scala.inline
-  def apply(ForwardWhenQueryArgProfileIsUnknown: Boolean, QueryArgProfiles: QueryArgProfiles = null): QueryArgProfileConfig = {
+  def apply(ForwardWhenQueryArgProfileIsUnknown: Boolean): QueryArgProfileConfig = {
     val __obj = js.Dynamic.literal(ForwardWhenQueryArgProfileIsUnknown = ForwardWhenQueryArgProfileIsUnknown.asInstanceOf[js.Any])
-    if (QueryArgProfiles != null) __obj.updateDynamic("QueryArgProfiles")(QueryArgProfiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryArgProfileConfig]
   }
+  @scala.inline
+  implicit class QueryArgProfileConfigOps[Self <: QueryArgProfileConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setForwardWhenQueryArgProfileIsUnknown(value: Boolean): Self = this.set("ForwardWhenQueryArgProfileIsUnknown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQueryArgProfiles(value: QueryArgProfiles): Self = this.set("QueryArgProfiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryArgProfiles: Self = this.set("QueryArgProfiles", js.undefined)
+  }
+  
 }
 

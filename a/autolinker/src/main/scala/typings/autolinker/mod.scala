@@ -192,14 +192,14 @@ object mod extends js.Object {
       * class is provided as a static on the Autolinker class.
       */
     val AnchorTagBuilder: Instantiable1[
-        js.UndefOr[/* cfg */ AnchorTagBuilderCfg], 
+        /* cfg */ js.UndefOr[AnchorTagBuilderCfg], 
         typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
       ] = js.native
     /**
       * For backwards compatibility with Autolinker 1.x, the HtmlTag class is
       * provided as a static on the Autolinker class.
       */
-    val HtmlTag: Instantiable1[js.UndefOr[/* cfg */ HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
+    val HtmlTag: Instantiable1[/* cfg */ js.UndefOr[HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
     /**
       * For backwards compatibility with Autolinker 1.x, the Match classes are
       * provided as statics on the Autolinker class.
@@ -287,14 +287,14 @@ object mod extends js.Object {
       * class is provided as a static on the Autolinker class.
       */
     val AnchorTagBuilder: Instantiable1[
-        js.UndefOr[/* cfg */ AnchorTagBuilderCfg], 
+        /* cfg */ js.UndefOr[AnchorTagBuilderCfg], 
         typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
       ] = js.native
     /**
       * For backwards compatibility with Autolinker 1.x, the HtmlTag class is
       * provided as a static on the Autolinker class.
       */
-    val HtmlTag: Instantiable1[js.UndefOr[/* cfg */ HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
+    val HtmlTag: Instantiable1[/* cfg */ js.UndefOr[HtmlTagCfg], typings.autolinker.htmlTagMod.HtmlTag] = js.native
     /**
       * For backwards compatibility with Autolinker 1.x, the Match classes are
       * provided as statics on the Autolinker class.

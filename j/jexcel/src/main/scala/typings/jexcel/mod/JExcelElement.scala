@@ -71,7 +71,11 @@ trait JExcelElement extends js.Object {
     * @return string value
     */
   def copy(): String = js.native
+  def copy(highlighted: js.UndefOr[scala.Nothing], delimiter: js.UndefOr[scala.Nothing], returnData: Boolean): String = js.native
+  def copy(highlighted: js.UndefOr[scala.Nothing], delimiter: String): String = js.native
+  def copy(highlighted: js.UndefOr[scala.Nothing], delimiter: String, returnData: Boolean): String = js.native
   def copy(highlighted: Boolean): String = js.native
+  def copy(highlighted: Boolean, delimiter: js.UndefOr[scala.Nothing], returnData: Boolean): String = js.native
   def copy(highlighted: Boolean, delimiter: String): String = js.native
   def copy(highlighted: Boolean, delimiter: String, returnData: Boolean): String = js.native
   /**
@@ -100,6 +104,7 @@ trait JExcelElement extends js.Object {
   def getComments(cell: js.Any, withAuthor: js.Any): js.Any = js.native
   def getConfig(): js.Any = js.native
   def getData(): js.Array[js.Array[CellValue]] = js.native
+  def getData(highlighted: js.UndefOr[scala.Nothing], dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
   def getData(highlighted: Boolean): js.Array[js.Array[CellValue]] = js.native
   def getData(highlighted: Boolean, dataOnly: Boolean): js.Array[js.Array[CellValue]] = js.native
   def getDropDownValue(column: js.Any, key: js.Any): js.Any = js.native
@@ -137,11 +142,34 @@ trait JExcelElement extends js.Object {
     * @return void
     */
   def insertColumn(mixed: js.Any): js.Any = js.native
+  def insertColumn(
+    mixed: js.Any,
+    columnNumber: js.UndefOr[scala.Nothing],
+    insertBefore: js.UndefOr[scala.Nothing],
+    properties: js.Object
+  ): js.Any = js.native
+  def insertColumn(mixed: js.Any, columnNumber: js.UndefOr[scala.Nothing], insertBefore: Boolean): js.Any = js.native
+  def insertColumn(
+    mixed: js.Any,
+    columnNumber: js.UndefOr[scala.Nothing],
+    insertBefore: Boolean,
+    properties: js.Object
+  ): js.Any = js.native
   def insertColumn(mixed: js.Any, columnNumber: Double): js.Any = js.native
+  def insertColumn(
+    mixed: js.Any,
+    columnNumber: Double,
+    insertBefore: js.UndefOr[scala.Nothing],
+    properties: js.Object
+  ): js.Any = js.native
   def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Boolean): js.Any = js.native
   def insertColumn(mixed: js.Any, columnNumber: Double, insertBefore: Boolean, properties: js.Object): js.Any = js.native
   def insertRow(): js.Any = js.native
+  def insertRow(mixed: js.UndefOr[scala.Nothing], rowNumber: js.UndefOr[scala.Nothing], insertBefore: Boolean): js.Any = js.native
+  def insertRow(mixed: js.UndefOr[scala.Nothing], rowNumber: Double): js.Any = js.native
+  def insertRow(mixed: js.UndefOr[scala.Nothing], rowNumber: Double, insertBefore: Boolean): js.Any = js.native
   def insertRow(mixed: js.Any): js.Any = js.native
+  def insertRow(mixed: js.Any, rowNumber: js.UndefOr[scala.Nothing], insertBefore: Boolean): js.Any = js.native
   def insertRow(mixed: js.Any, rowNumber: Double): js.Any = js.native
   def insertRow(mixed: js.Any, rowNumber: Double, insertBefore: Boolean): js.Any = js.native
   def isColMerged(x: Double): js.Any = js.native
@@ -169,7 +197,11 @@ trait JExcelElement extends js.Object {
   def parseNumber(value: Double): Double | Null = js.native
   def parseNumber(value: Double, columnNumber: Double): Double | Null = js.native
   def paste(): js.Any = js.native
+  def paste(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], data: CellValue): js.Any = js.native
+  def paste(x: js.UndefOr[scala.Nothing], y: Double): js.Any = js.native
+  def paste(x: js.UndefOr[scala.Nothing], y: Double, data: CellValue): js.Any = js.native
   def paste(x: Double): js.Any = js.native
+  def paste(x: Double, y: js.UndefOr[scala.Nothing], data: CellValue): js.Any = js.native
   def paste(x: Double, y: Double): js.Any = js.native
   def paste(x: Double, y: Double, data: CellValue): js.Any = js.native
   def prepareTable(): js.Any = js.native
@@ -199,6 +231,7 @@ trait JExcelElement extends js.Object {
   def setMeta(o: js.Any, k: js.Any, v: js.Any): js.Any = js.native
   def setRowData(rowNumber: Double, data: js.Any): js.Any = js.native
   def setStyle(o: js.Any, k: js.Any, v: js.Any): js.Any = js.native
+  def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.UndefOr[scala.Nothing], ignoreHistoryAndEvents: js.Any): js.Any = js.native
   def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.Any): js.Any = js.native
   def setStyle(o: js.Any, k: js.Any, v: js.Any, force: js.Any, ignoreHistoryAndEvents: js.Any): js.Any = js.native
   def setValue(cell: js.Any, value: js.Any, force: js.Any): js.Any = js.native
@@ -209,8 +242,8 @@ trait JExcelElement extends js.Object {
   def undo(): js.Any = js.native
   def up(shiftKey: js.Any, ctrlKey: js.Any): js.Any = js.native
   def updateCell(x: Double, y: Double): js.Any = js.native
+  def updateCell(x: Double, y: Double, value: js.UndefOr[CellValue], force: js.Any): js.Any = js.native
   def updateCell(x: Double, y: Double, value: CellValue): js.Any = js.native
-  def updateCell(x: Double, y: Double, value: CellValue, force: js.Any): js.Any = js.native
   def updateCopySelection(x3: js.Any, y3: js.Any): js.Any = js.native
   def updateCornerPosition(): js.Any = js.native
   def updateFormula(formula: js.Any, referencesToUpdate: js.Any): js.Any = js.native

@@ -29,6 +29,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPermission] = js.native
   def get(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def get(params: ParamsResourcePermissionsGet): GaxiosPromise[SchemaPermission] = js.native
   def get(params: ParamsResourcePermissionsGet, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def get(

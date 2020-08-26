@@ -29,7 +29,18 @@ object mod extends js.Object {
     def artwork(options: js.Object): Art = js.native
     def artwork(options: js.Object, callback: Cb): Art = js.native
     def font(text: String): Art = js.native
+    def font(
+      text: String,
+      font: js.UndefOr[scala.Nothing],
+      styleOrCallback: js.UndefOr[scala.Nothing],
+      callback: Cb
+    ): Art = js.native
+    def font(text: String, font: js.UndefOr[scala.Nothing], styleOrCallback: String): Art = js.native
+    def font(text: String, font: js.UndefOr[scala.Nothing], styleOrCallback: String, callback: Cb): Art = js.native
+    def font(text: String, font: js.UndefOr[scala.Nothing], styleOrCallback: Cb): Art = js.native
+    def font(text: String, font: js.UndefOr[scala.Nothing], styleOrCallback: Cb, callback: Cb): Art = js.native
     def font(text: String, font: String): Art = js.native
+    def font(text: String, font: String, styleOrCallback: js.UndefOr[scala.Nothing], callback: Cb): Art = js.native
     def font(text: String, font: String, styleOrCallback: String): Art = js.native
     def font(text: String, font: String, styleOrCallback: String, callback: Cb): Art = js.native
     def font(text: String, font: String, styleOrCallback: Cb): Art = js.native
@@ -40,6 +51,7 @@ object mod extends js.Object {
     def lines(options: js.Any*): Art = js.native
     def overlay(options: js.Any*): Art = js.native
     def style(text: String): Art = js.native
+    def style(text: String, style: js.UndefOr[scala.Nothing], close: Boolean): Art = js.native
     def style(text: String, style: String): Art = js.native
     def style(text: String, style: String, close: Boolean): Art = js.native
     def table(options: js.Object): Art = js.native

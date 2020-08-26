@@ -46,28 +46,62 @@ trait TransitGatewayVpcAttachment extends js.Object {
 
 object TransitGatewayVpcAttachment {
   @scala.inline
-  def apply(
-    CreationTime: DateTime = null,
-    Options: TransitGatewayVpcAttachmentOptions = null,
-    State: TransitGatewayAttachmentState = null,
-    SubnetIds: ValueStringList = null,
-    Tags: TagList = null,
-    TransitGatewayAttachmentId: String = null,
-    TransitGatewayId: String = null,
-    VpcId: String = null,
-    VpcOwnerId: String = null
-  ): TransitGatewayVpcAttachment = {
+  def apply(): TransitGatewayVpcAttachment = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TransitGatewayAttachmentId != null) __obj.updateDynamic("TransitGatewayAttachmentId")(TransitGatewayAttachmentId.asInstanceOf[js.Any])
-    if (TransitGatewayId != null) __obj.updateDynamic("TransitGatewayId")(TransitGatewayId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
-    if (VpcOwnerId != null) __obj.updateDynamic("VpcOwnerId")(VpcOwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGatewayVpcAttachment]
   }
+  @scala.inline
+  implicit class TransitGatewayVpcAttachmentOps[Self <: TransitGatewayVpcAttachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: DateTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setOptions(value: TransitGatewayVpcAttachmentOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setState(value: TransitGatewayAttachmentState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: ValueStringList): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTransitGatewayAttachmentId(value: String): Self = this.set("TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayAttachmentId: Self = this.set("TransitGatewayAttachmentId", js.undefined)
+    @scala.inline
+    def setTransitGatewayId(value: String): Self = this.set("TransitGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayId: Self = this.set("TransitGatewayId", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+    @scala.inline
+    def setVpcOwnerId(value: String): Self = this.set("VpcOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcOwnerId: Self = this.set("VpcOwnerId", js.undefined)
+  }
+  
 }
 

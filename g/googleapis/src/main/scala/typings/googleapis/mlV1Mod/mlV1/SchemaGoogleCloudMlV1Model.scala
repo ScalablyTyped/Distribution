@@ -81,26 +81,56 @@ trait SchemaGoogleCloudMlV1Model extends js.Object {
 
 object SchemaGoogleCloudMlV1Model {
   @scala.inline
-  def apply(
-    defaultVersion: SchemaGoogleCloudMlV1Version = null,
-    description: String = null,
-    etag: String = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    onlinePredictionConsoleLogging: js.UndefOr[Boolean] = js.undefined,
-    onlinePredictionLogging: js.UndefOr[Boolean] = js.undefined,
-    regions: js.Array[String] = null
-  ): SchemaGoogleCloudMlV1Model = {
+  def apply(): SchemaGoogleCloudMlV1Model = {
     val __obj = js.Dynamic.literal()
-    if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlinePredictionConsoleLogging)) __obj.updateDynamic("onlinePredictionConsoleLogging")(onlinePredictionConsoleLogging.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlinePredictionLogging)) __obj.updateDynamic("onlinePredictionLogging")(onlinePredictionLogging.get.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1Model]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1ModelOps[Self <: SchemaGoogleCloudMlV1Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultVersion(value: SchemaGoogleCloudMlV1Version): Self = this.set("defaultVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersion: Self = this.set("defaultVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnlinePredictionConsoleLogging(value: Boolean): Self = this.set("onlinePredictionConsoleLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlinePredictionConsoleLogging: Self = this.set("onlinePredictionConsoleLogging", js.undefined)
+    @scala.inline
+    def setOnlinePredictionLogging(value: Boolean): Self = this.set("onlinePredictionLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlinePredictionLogging: Self = this.set("onlinePredictionLogging", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("regions", js.undefined)
+  }
+  
 }
 

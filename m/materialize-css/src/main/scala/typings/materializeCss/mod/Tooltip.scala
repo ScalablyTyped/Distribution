@@ -9,28 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("materialize-css", "Tooltip")
 @js.native
 class Tooltip ()
-  extends typings.materializeCss.M.Tooltip {
-  /**
-    * If tooltip is hovered.
-    */
-  /* CompleteClass */
-  override var isHovered: Boolean = js.native
-  /**
-    * If tooltip is open.
-    */
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /**
-    * Hide tooltip.
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Show tooltip.
-    */
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+  extends typings.materializeCss.M.Tooltip
 
 /* static members */
 @JSImport("materialize-css", "Tooltip")

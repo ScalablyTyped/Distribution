@@ -5,11 +5,12 @@ import typings.antDesignProLayout.anon.Locale
 import typings.antDesignProLayout.anon.Tip
 import typings.antDesignProLayout.basicLayoutMod.BasicLayoutProps
 import typings.antDesignProLayout.footerMod.FooterProps
+import typings.antDesignProLayout.footerToolbarMod.FooterToolbarProps
 import typings.antDesignProLayout.getPageTitleMod.GetPageTitleProps
 import typings.antDesignProLayout.gridContentMod.GridContentProps
 import typings.antDesignProLayout.headerMod.HeaderView
 import typings.antDesignProLayout.libSettingDrawerMod.SettingDrawerProps
-import typings.antDesignProLayout.pageHeaderWrapperMod.PageHeaderWrapperProps
+import typings.antDesignProLayout.pageContainerMod.PageContainerProps
 import typings.antDesignProLayout.routeContextMod.RouteContextType
 import typings.antDesignProLayout.topNavHeaderMod.TopNavHeaderProps
 import typings.antDesignProLayout.typingsMod.MenuDataItem
@@ -35,13 +36,15 @@ object mod extends js.Object {
     */
   val BasicLayout: FC[BasicLayoutProps] = js.native
   val DefaultFooter: FC[FooterProps] = js.native
+  val FooterToolbar: FC[FooterToolbarProps] = js.native
   /**
     * This component can support contentWidth so you don't need to calculate the width
     * contentWidth=Fixed, width will is 1200
     * @param props
     */
   val GridContent: SFC[GridContentProps] = js.native
-  val PageHeaderWrapper: SFC[PageHeaderWrapperProps] = js.native
+  val PageContainer: FC[PageContainerProps] = js.native
+  val PageHeaderWrapper: FC[PageContainerProps] = js.native
   val PageLoading: FC[Tip] = js.native
   val RouteContext: Context[RouteContextType] = js.native
   /**
@@ -57,7 +60,30 @@ object mod extends js.Object {
     */
   val default: FC[BasicLayoutProps] = js.native
   def getMenuData(routes: js.Array[Route]): Breadcrumb = js.native
+  def getMenuData(
+    routes: js.Array[Route],
+    menu: js.UndefOr[scala.Nothing],
+    formatMessage: js.UndefOr[scala.Nothing],
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = js.native
+  def getMenuData(
+    routes: js.Array[Route],
+    menu: js.UndefOr[scala.Nothing],
+    formatMessage: js.Function1[/* message */ MessageDescriptor, String]
+  ): Breadcrumb = js.native
+  def getMenuData(
+    routes: js.Array[Route],
+    menu: js.UndefOr[scala.Nothing],
+    formatMessage: js.Function1[/* message */ MessageDescriptor, String],
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = js.native
   def getMenuData(routes: js.Array[Route], menu: Locale): Breadcrumb = js.native
+  def getMenuData(
+    routes: js.Array[Route],
+    menu: Locale,
+    formatMessage: js.UndefOr[scala.Nothing],
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = js.native
   def getMenuData(
     routes: js.Array[Route],
     menu: Locale,

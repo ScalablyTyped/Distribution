@@ -12,7 +12,7 @@ Declarative data binding + templating solution.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 168422 |
+| # downloads        | 153682 |
 | # stars            | 2 |
 
 ## Links

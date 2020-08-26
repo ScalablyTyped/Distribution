@@ -7,63 +7,108 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Antialias extends js.Object {
-  var antialias: js.UndefOr[Boolean] = js.undefined
-  var autoDensity: js.UndefOr[Boolean] = js.undefined
-  var autoStart: js.UndefOr[Boolean] = js.undefined
-  var backgroundColor: js.UndefOr[Double] = js.undefined
-  var clearBeforeRender: js.UndefOr[Boolean] = js.undefined
-  var forceCanvas: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var powerPreference: js.UndefOr[String] = js.undefined
-  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
-  var resizeTo: js.UndefOr[Window | HTMLElement] = js.undefined
-  var resolution: js.UndefOr[Double] = js.undefined
-  var sharedLoader: js.UndefOr[Boolean] = js.undefined
-  var sharedTicker: js.UndefOr[Boolean] = js.undefined
-  var transparent: js.UndefOr[Boolean] = js.undefined
-  var view: js.UndefOr[HTMLCanvasElement] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var antialias: js.UndefOr[Boolean] = js.native
+  var autoDensity: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.native
+  var backgroundColor: js.UndefOr[Double] = js.native
+  var clearBeforeRender: js.UndefOr[Boolean] = js.native
+  var forceCanvas: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var powerPreference: js.UndefOr[String] = js.native
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+  var resizeTo: js.UndefOr[Window | HTMLElement] = js.native
+  var resolution: js.UndefOr[Double] = js.native
+  var sharedLoader: js.UndefOr[Boolean] = js.native
+  var sharedTicker: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.native
+  var view: js.UndefOr[HTMLCanvasElement] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Antialias {
   @scala.inline
-  def apply(
-    antialias: js.UndefOr[Boolean] = js.undefined,
-    autoDensity: js.UndefOr[Boolean] = js.undefined,
-    autoStart: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: js.UndefOr[Double] = js.undefined,
-    clearBeforeRender: js.UndefOr[Boolean] = js.undefined,
-    forceCanvas: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    powerPreference: String = null,
-    preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
-    resizeTo: Window | HTMLElement = null,
-    resolution: js.UndefOr[Double] = js.undefined,
-    sharedLoader: js.UndefOr[Boolean] = js.undefined,
-    sharedTicker: js.UndefOr[Boolean] = js.undefined,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    view: HTMLCanvasElement = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Antialias = {
+  def apply(): Antialias = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoDensity)) __obj.updateDynamic("autoDensity")(autoDensity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backgroundColor)) __obj.updateDynamic("backgroundColor")(backgroundColor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceCanvas)) __obj.updateDynamic("forceCanvas")(forceCanvas.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.get.asInstanceOf[js.Any])
-    if (resizeTo != null) __obj.updateDynamic("resizeTo")(resizeTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolution)) __obj.updateDynamic("resolution")(resolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedLoader)) __obj.updateDynamic("sharedLoader")(sharedLoader.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedTicker)) __obj.updateDynamic("sharedTicker")(sharedTicker.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Antialias]
   }
+  @scala.inline
+  implicit class AntialiasOps[Self <: Antialias] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAntialias(value: Boolean): Self = this.set("antialias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAntialias: Self = this.set("antialias", js.undefined)
+    @scala.inline
+    def setAutoDensity(value: Boolean): Self = this.set("autoDensity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDensity: Self = this.set("autoDensity", js.undefined)
+    @scala.inline
+    def setAutoStart(value: Boolean): Self = this.set("autoStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoStart: Self = this.set("autoStart", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: Double): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setClearBeforeRender(value: Boolean): Self = this.set("clearBeforeRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearBeforeRender: Self = this.set("clearBeforeRender", js.undefined)
+    @scala.inline
+    def setForceCanvas(value: Boolean): Self = this.set("forceCanvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceCanvas: Self = this.set("forceCanvas", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setPowerPreference(value: String): Self = this.set("powerPreference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePowerPreference: Self = this.set("powerPreference", js.undefined)
+    @scala.inline
+    def setPreserveDrawingBuffer(value: Boolean): Self = this.set("preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDrawingBuffer: Self = this.set("preserveDrawingBuffer", js.undefined)
+    @scala.inline
+    def setResizeTo(value: Window | HTMLElement): Self = this.set("resizeTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizeTo: Self = this.set("resizeTo", js.undefined)
+    @scala.inline
+    def setResolution(value: Double): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setSharedLoader(value: Boolean): Self = this.set("sharedLoader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedLoader: Self = this.set("sharedLoader", js.undefined)
+    @scala.inline
+    def setSharedTicker(value: Boolean): Self = this.set("sharedTicker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedTicker: Self = this.set("sharedTicker", js.undefined)
+    @scala.inline
+    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setView(value: HTMLCanvasElement): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

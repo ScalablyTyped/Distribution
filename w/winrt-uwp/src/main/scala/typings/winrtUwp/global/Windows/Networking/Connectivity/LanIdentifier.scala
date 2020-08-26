@@ -8,15 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Networking.Connectivity.LanIdentifier")
 @js.native
 abstract class LanIdentifier ()
-  extends typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier {
-  /** Gets a LanIdentifierData object containing locality identification information for the network adapter's connection. */
-  /* CompleteClass */
-  override var infrastructureId: typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifierData = js.native
-  /** Gets the adapter GUID that identifies the network adapter to associate with the locality information. */
-  /* CompleteClass */
-  override var networkAdapterId: String = js.native
-  /** Gets a LanIdentifierData object containing the port ID from the Link Layer Discovery Protocol (LLDP) locality information for an Ethernet type network adapter. */
-  /* CompleteClass */
-  override var portId: typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifierData = js.native
-}
+  extends typings.winrtUwp.Windows.Networking.Connectivity.LanIdentifier
 

@@ -12,7 +12,7 @@ ETW logging native Node.js module for the TypeScript project
 | Keywords           | etw, napi, node |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 416 |
+| # downloads        | 490 |
 | # stars            | 0 |
 
 ## Links

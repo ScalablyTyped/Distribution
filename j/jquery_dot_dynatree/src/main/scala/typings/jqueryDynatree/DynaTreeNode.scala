@@ -53,6 +53,7 @@ trait DynaTreeNode extends js.Object {
   def setLazyNodeStatus(status: Double): Unit = js.native
   def setTitle(title: String): Unit = js.native
   def sortChildren(): Unit = js.native
+  def sortChildren(cmp: js.UndefOr[scala.Nothing], deep: Boolean): Unit = js.native
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double]): Unit = js.native
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double], deep: Boolean): Unit = js.native
   def toDict(recursive: Boolean): js.Any = js.native

@@ -12,7 +12,7 @@ A lightweight jQuery plugin for collapsing and expanding long blocks of text wit
 | Keywords           | css, jquery, readmore, expand, collapse |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 752610 |
+| # downloads        | 769419 |
 | # stars            | 3 |
 
 ## Links

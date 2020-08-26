@@ -22,12 +22,34 @@ trait UserIdentityInfo extends js.Object {
 
 object UserIdentityInfo {
   @scala.inline
-  def apply(Email: Email = null, FirstName: AgentFirstName = null, LastName: AgentLastName = null): UserIdentityInfo = {
+  def apply(): UserIdentityInfo = {
     val __obj = js.Dynamic.literal()
-    if (Email != null) __obj.updateDynamic("Email")(Email.asInstanceOf[js.Any])
-    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])
-    if (LastName != null) __obj.updateDynamic("LastName")(LastName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIdentityInfo]
   }
+  @scala.inline
+  implicit class UserIdentityInfoOps[Self <: UserIdentityInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: Email): Self = this.set("Email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("Email", js.undefined)
+    @scala.inline
+    def setFirstName(value: AgentFirstName): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    @scala.inline
+    def setLastName(value: AgentLastName): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("LastName", js.undefined)
+  }
+  
 }
 

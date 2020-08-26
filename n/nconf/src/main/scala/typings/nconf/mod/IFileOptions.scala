@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IFileOptions extends js.Object {
-  var dir: js.UndefOr[String] = js.undefined
-  var file: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[IFormat] = js.undefined
-  var json_spacing: js.UndefOr[Double] = js.undefined
-  var search: js.UndefOr[Boolean] = js.undefined
-  var secure: js.UndefOr[ISecureFileOptions] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var dir: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.native
+  var format: js.UndefOr[IFormat] = js.native
+  var json_spacing: js.UndefOr[Double] = js.native
+  var search: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[ISecureFileOptions] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object IFileOptions {
   @scala.inline
-  def apply(
-    dir: String = null,
-    file: String = null,
-    format: IFormat = null,
-    json_spacing: js.UndefOr[Double] = js.undefined,
-    search: js.UndefOr[Boolean] = js.undefined,
-    secure: ISecureFileOptions = null,
-    `type`: String = null
-  ): IFileOptions = {
+  def apply(): IFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(json_spacing)) __obj.updateDynamic("json_spacing")(json_spacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.get.asInstanceOf[js.Any])
-    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileOptions]
   }
+  @scala.inline
+  implicit class IFileOptionsOps[Self <: IFileOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFormat(value: IFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setJson_spacing(value: Double): Self = this.set("json_spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJson_spacing: Self = this.set("json_spacing", js.undefined)
+    @scala.inline
+    def setSearch(value: Boolean): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSecure(value: ISecureFileOptions): Self = this.set("secure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecure: Self = this.set("secure", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -30,11 +30,30 @@ trait SchemaPartitionOptions extends js.Object {
 
 object SchemaPartitionOptions {
   @scala.inline
-  def apply(maxPartitions: String = null, partitionSizeBytes: String = null): SchemaPartitionOptions = {
+  def apply(): SchemaPartitionOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxPartitions != null) __obj.updateDynamic("maxPartitions")(maxPartitions.asInstanceOf[js.Any])
-    if (partitionSizeBytes != null) __obj.updateDynamic("partitionSizeBytes")(partitionSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPartitionOptions]
   }
+  @scala.inline
+  implicit class SchemaPartitionOptionsOps[Self <: SchemaPartitionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxPartitions(value: String): Self = this.set("maxPartitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPartitions: Self = this.set("maxPartitions", js.undefined)
+    @scala.inline
+    def setPartitionSizeBytes(value: String): Self = this.set("partitionSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionSizeBytes: Self = this.set("partitionSizeBytes", js.undefined)
+  }
+  
 }
 

@@ -1,35 +1,47 @@
 package typings.jqueryui.JQueryUI
 
-import typings.jquery.JQueryEventObject
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Progressbar //////////////////////////////////////////////////
+@js.native
 trait ProgressbarOptions extends ProgressbarEvents {
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var value: js.UndefOr[Double | Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double | Boolean] = js.native
 }
 
 object ProgressbarOptions {
   @scala.inline
-  def apply(
-    change: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
-    complete: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
-    create: (/* event */ JQueryEventObject, /* ui */ ProgressbarUIParams) => Unit = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Double] = js.undefined,
-    value: Double | Boolean = null
-  ): ProgressbarOptions = {
+  def apply(): ProgressbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction2(complete))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2(create))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProgressbarOptions]
   }
+  @scala.inline
+  implicit class ProgressbarOptionsOps[Self <: ProgressbarOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setValue(value: Double | Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

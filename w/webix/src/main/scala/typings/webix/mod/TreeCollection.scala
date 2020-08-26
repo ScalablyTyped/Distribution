@@ -13,12 +13,14 @@ trait TreeCollection extends js.Object {
   var name: String = js.native
   var waitData: js.Promise[_] = js.native
   def add(obj: js.Any): String = js.native
+  def add(obj: js.Any, index: js.UndefOr[scala.Nothing], parentId: String): String = js.native
   def add(obj: js.Any, index: Double): String = js.native
   def add(obj: js.Any, index: Double, parentId: String): String = js.native
   def addBind(source: js.Any, rule: String, format: String): Unit = js.native
   def attachEvent(`type`: TreeCollectionEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: TreeCollectionEventName, functor: WebixCallback, id: String): String | Double = js.native
   def bind(target: js.Any): Unit = js.native
+  def bind(target: js.Any, rule: js.UndefOr[scala.Nothing], format: String): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback): Unit = js.native
   def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
   def blockEvent(): Unit = js.native
@@ -27,9 +29,11 @@ trait TreeCollection extends js.Object {
   def clearAll(soft: Boolean): Unit = js.native
   def clearValidation(): Unit = js.native
   def copy(sid: String, tindex: Double): Unit = js.native
+  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def copy(sid: String, tindex: Double, tobj: js.Any): Unit = js.native
   def copy(sid: String, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double): Unit = js.native
+  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double, tobj: js.Any): Unit = js.native
   def copy(sid: Double, tindex: Double, tobj: js.Any, details: js.Any): Unit = js.native
   def count(): Double = js.native
@@ -39,9 +43,11 @@ trait TreeCollection extends js.Object {
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
+  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def find(criterion: WebixCallback): js.Any = js.native
@@ -80,6 +86,7 @@ trait TreeCollection extends js.Object {
   def isBranch(id: Double): Boolean = js.native
   def isVisible(): Boolean = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
@@ -87,9 +94,11 @@ trait TreeCollection extends js.Object {
   def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
   def mapEvent(map: js.Any): Unit = js.native
   def move(sid: String, tindex: Double): String | Double = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: baseview): String | Double = js.native
   def move(sid: String, tindex: Double, tobj: baseview, details: js.Any): String | Double = js.native
   def move(sid: Double, tindex: Double): String | Double = js.native
+  def move(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: baseview): String | Double = js.native
   def move(sid: Double, tindex: Double, tobj: baseview, details: js.Any): String | Double = js.native
   def moveBottom(id: String): Unit = js.native
@@ -113,6 +122,7 @@ trait TreeCollection extends js.Object {
   def setCursor(cursor: String): Unit = js.native
   def setCursor(cursor: Double): Unit = js.native
   def sort(by: String): Unit = js.native
+  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native

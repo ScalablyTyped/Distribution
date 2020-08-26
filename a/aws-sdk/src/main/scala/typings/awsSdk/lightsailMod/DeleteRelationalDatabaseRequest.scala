@@ -22,15 +22,32 @@ trait DeleteRelationalDatabaseRequest extends js.Object {
 
 object DeleteRelationalDatabaseRequest {
   @scala.inline
-  def apply(
-    relationalDatabaseName: ResourceName,
-    finalRelationalDatabaseSnapshotName: ResourceName = null,
-    skipFinalSnapshot: js.UndefOr[Boolean] = js.undefined
-  ): DeleteRelationalDatabaseRequest = {
+  def apply(relationalDatabaseName: ResourceName): DeleteRelationalDatabaseRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (finalRelationalDatabaseSnapshotName != null) __obj.updateDynamic("finalRelationalDatabaseSnapshotName")(finalRelationalDatabaseSnapshotName.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFinalSnapshot)) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRelationalDatabaseRequest]
   }
+  @scala.inline
+  implicit class DeleteRelationalDatabaseRequestOps[Self <: DeleteRelationalDatabaseRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFinalRelationalDatabaseSnapshotName(value: ResourceName): Self = this.set("finalRelationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalRelationalDatabaseSnapshotName: Self = this.set("finalRelationalDatabaseSnapshotName", js.undefined)
+    @scala.inline
+    def setSkipFinalSnapshot(value: Boolean): Self = this.set("skipFinalSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalSnapshot: Self = this.set("skipFinalSnapshot", js.undefined)
+  }
+  
 }
 

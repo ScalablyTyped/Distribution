@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 object createCapsule extends js.Object {
   /**
     * Creates a procedural capsule-shaped mesh.
-    
-    The size, shape and tesselation properties of the capsule can be controlled via function
-    parameters. By default, the function will create a capsule standing vertically centred
-    on the XZ-plane with a radius of 0.25, a height of 1.0, 1 height segment and 10 cap
-    segments.
-    
-    Note that the capsule is created with UVs in the range of 0 to 1. Additionally, tangent information
-    is generated into the vertex buffer of the capsule's mesh.
+    *
+    * The size, shape and tesselation properties of the capsule can be controlled via function
+    * parameters. By default, the function will create a capsule standing vertically centred
+    * on the XZ-plane with a radius of 0.25, a height of 1.0, 1 height segment and 10 cap
+    * segments.
+    *
+    * Note that the capsule is created with UVs in the range of 0 to 1. Additionally, tangent information
+    * is generated into the vertex buffer of the capsule's mesh.
     * @param device - The graphics device used to manage the mesh.
     * @param [opts] - An object that specifies optional inputs for the function as follows:
     * @param [opts.radius] - The radius of the tube forming the body of the capsule (defaults to 0.3).

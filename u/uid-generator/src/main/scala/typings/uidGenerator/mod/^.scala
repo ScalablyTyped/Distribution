@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ^ () extends UIDGeneratorInstance {
   def this(baseEncoding: String) = this()
   def this(bitSize: Double) = this()
+  def this(bitSize: js.UndefOr[scala.Nothing], baseEncoding: String) = this()
   def this(bitSize: Double, baseEncoding: String) = this()
 }
 

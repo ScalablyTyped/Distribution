@@ -9,72 +9,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options
   extends /* key */ StringDictionary[js.Any] {
-  var data: js.UndefOr[String] = js.undefined
-  var file: js.UndefOr[String] = js.undefined
-  var functions: js.UndefOr[FunctionDeclarations[SassFunction]] = js.undefined
-  var importer: js.UndefOr[Importer | js.Array[Importer]] = js.undefined
-  var includePaths: js.UndefOr[js.Array[String]] = js.undefined
-  var indentType: js.UndefOr[String] = js.undefined
-  var indentWidth: js.UndefOr[Double] = js.undefined
-  var indentedSyntax: js.UndefOr[Boolean] = js.undefined
-  var linefeed: js.UndefOr[String] = js.undefined
-  var omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined
-  var outFile: js.UndefOr[String] = js.undefined
-  var outputStyle: js.UndefOr[compact | compressed | expanded | nested] = js.undefined
-  var precision: js.UndefOr[Double] = js.undefined
-  var sourceComments: js.UndefOr[Boolean] = js.undefined
-  var sourceMap: js.UndefOr[Boolean | String] = js.undefined
-  var sourceMapContents: js.UndefOr[Boolean] = js.undefined
-  var sourceMapEmbed: js.UndefOr[Boolean] = js.undefined
-  var sourceMapRoot: js.UndefOr[String] = js.undefined
+  var data: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.native
+  var functions: js.UndefOr[FunctionDeclarations[SassFunction]] = js.native
+  var importer: js.UndefOr[Importer | js.Array[Importer]] = js.native
+  var includePaths: js.UndefOr[js.Array[String]] = js.native
+  var indentType: js.UndefOr[String] = js.native
+  var indentWidth: js.UndefOr[Double] = js.native
+  var indentedSyntax: js.UndefOr[Boolean] = js.native
+  var linefeed: js.UndefOr[String] = js.native
+  var omitSourceMapUrl: js.UndefOr[Boolean] = js.native
+  var outFile: js.UndefOr[String] = js.native
+  var outputStyle: js.UndefOr[compact | compressed | expanded | nested] = js.native
+  var precision: js.UndefOr[Double] = js.native
+  var sourceComments: js.UndefOr[Boolean] = js.native
+  var sourceMap: js.UndefOr[Boolean | String] = js.native
+  var sourceMapContents: js.UndefOr[Boolean] = js.native
+  var sourceMapEmbed: js.UndefOr[Boolean] = js.native
+  var sourceMapRoot: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    data: String = null,
-    file: String = null,
-    functions: FunctionDeclarations[SassFunction] = null,
-    importer: Importer | js.Array[Importer] = null,
-    includePaths: js.Array[String] = null,
-    indentType: String = null,
-    indentWidth: js.UndefOr[Double] = js.undefined,
-    indentedSyntax: js.UndefOr[Boolean] = js.undefined,
-    linefeed: String = null,
-    omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined,
-    outFile: String = null,
-    outputStyle: compact | compressed | expanded | nested = null,
-    precision: js.UndefOr[Double] = js.undefined,
-    sourceComments: js.UndefOr[Boolean] = js.undefined,
-    sourceMap: Boolean | String = null,
-    sourceMapContents: js.UndefOr[Boolean] = js.undefined,
-    sourceMapEmbed: js.UndefOr[Boolean] = js.undefined,
-    sourceMapRoot: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
-    if (importer != null) __obj.updateDynamic("importer")(importer.asInstanceOf[js.Any])
-    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths.asInstanceOf[js.Any])
-    if (indentType != null) __obj.updateDynamic("indentType")(indentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentWidth)) __obj.updateDynamic("indentWidth")(indentWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentedSyntax)) __obj.updateDynamic("indentedSyntax")(indentedSyntax.get.asInstanceOf[js.Any])
-    if (linefeed != null) __obj.updateDynamic("linefeed")(linefeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitSourceMapUrl)) __obj.updateDynamic("omitSourceMapUrl")(omitSourceMapUrl.get.asInstanceOf[js.Any])
-    if (outFile != null) __obj.updateDynamic("outFile")(outFile.asInstanceOf[js.Any])
-    if (outputStyle != null) __obj.updateDynamic("outputStyle")(outputStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(precision)) __obj.updateDynamic("precision")(precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceComments)) __obj.updateDynamic("sourceComments")(sourceComments.get.asInstanceOf[js.Any])
-    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapContents)) __obj.updateDynamic("sourceMapContents")(sourceMapContents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapEmbed)) __obj.updateDynamic("sourceMapEmbed")(sourceMapEmbed.get.asInstanceOf[js.Any])
-    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("file", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("file", js.undefined)
+    @scala.inline
+    def setFunctions(value: FunctionDeclarations[SassFunction]): Self = this.set("functions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctions: Self = this.set("functions", js.undefined)
+    @scala.inline
+    def setImporterVarargs(value: Importer*): Self = this.set("importer", js.Array(value :_*))
+    @scala.inline
+    def setImporter(value: Importer | js.Array[Importer]): Self = this.set("importer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImporter: Self = this.set("importer", js.undefined)
+    @scala.inline
+    def setIncludePathsVarargs(value: String*): Self = this.set("includePaths", js.Array(value :_*))
+    @scala.inline
+    def setIncludePaths(value: js.Array[String]): Self = this.set("includePaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludePaths: Self = this.set("includePaths", js.undefined)
+    @scala.inline
+    def setIndentType(value: String): Self = this.set("indentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentType: Self = this.set("indentType", js.undefined)
+    @scala.inline
+    def setIndentWidth(value: Double): Self = this.set("indentWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentWidth: Self = this.set("indentWidth", js.undefined)
+    @scala.inline
+    def setIndentedSyntax(value: Boolean): Self = this.set("indentedSyntax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentedSyntax: Self = this.set("indentedSyntax", js.undefined)
+    @scala.inline
+    def setLinefeed(value: String): Self = this.set("linefeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinefeed: Self = this.set("linefeed", js.undefined)
+    @scala.inline
+    def setOmitSourceMapUrl(value: Boolean): Self = this.set("omitSourceMapUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOmitSourceMapUrl: Self = this.set("omitSourceMapUrl", js.undefined)
+    @scala.inline
+    def setOutFile(value: String): Self = this.set("outFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutFile: Self = this.set("outFile", js.undefined)
+    @scala.inline
+    def setOutputStyle(value: compact | compressed | expanded | nested): Self = this.set("outputStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputStyle: Self = this.set("outputStyle", js.undefined)
+    @scala.inline
+    def setPrecision(value: Double): Self = this.set("precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("precision", js.undefined)
+    @scala.inline
+    def setSourceComments(value: Boolean): Self = this.set("sourceComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceComments: Self = this.set("sourceComments", js.undefined)
+    @scala.inline
+    def setSourceMap(value: Boolean | String): Self = this.set("sourceMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMap: Self = this.set("sourceMap", js.undefined)
+    @scala.inline
+    def setSourceMapContents(value: Boolean): Self = this.set("sourceMapContents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMapContents: Self = this.set("sourceMapContents", js.undefined)
+    @scala.inline
+    def setSourceMapEmbed(value: Boolean): Self = this.set("sourceMapEmbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMapEmbed: Self = this.set("sourceMapEmbed", js.undefined)
+    @scala.inline
+    def setSourceMapRoot(value: String): Self = this.set("sourceMapRoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMapRoot: Self = this.set("sourceMapRoot", js.undefined)
+  }
+  
 }
 

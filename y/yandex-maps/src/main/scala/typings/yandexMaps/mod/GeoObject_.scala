@@ -10,11 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoObject_ () extends IGeoObject {
   def this(feature: IGeoObjectFeature) = this()
+  def this(feature: js.UndefOr[scala.Nothing], options: IGeoObjectOptions) = this()
   def this(feature: IGeoObjectFeature, options: IGeoObjectOptions) = this()
   var balloon: typings.yandexMaps.mod.geoObject.Balloon = js.native
   var editor: IGeometryEditor = js.native
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   @JSName("events")
   var events_GeoObject_ : Manager = js.native
   var hint: Hint = js.native
@@ -24,8 +23,6 @@ class GeoObject_ () extends IGeoObject {
   var properties_GeoObject_ : typings.yandexMaps.mod.data.Manager = js.native
   @JSName("state")
   var state_GeoObject_ : typings.yandexMaps.mod.data.Manager = js.native
-  /* CompleteClass */
-  override def getMap(): Map_ = js.native
   def setParent(parent: IControlParent): this.type = js.native
 }
 

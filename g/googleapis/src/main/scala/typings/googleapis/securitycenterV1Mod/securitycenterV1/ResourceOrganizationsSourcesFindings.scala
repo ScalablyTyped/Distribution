@@ -30,6 +30,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaFinding] = js.native
   def create(callback: BodyResponseCallback[SchemaFinding]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFinding] = js.native
   def create(params: ParamsResourceOrganizationsSourcesFindingsCreate): GaxiosPromise[SchemaFinding] = js.native
   def create(
     params: ParamsResourceOrganizationsSourcesFindingsCreate,
@@ -63,6 +64,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     */
   def group(): GaxiosPromise[SchemaGroupFindingsResponse] = js.native
   def group(callback: BodyResponseCallback[SchemaGroupFindingsResponse]): Unit = js.native
+  def group(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupFindingsResponse] = js.native
   def group(params: ParamsResourceOrganizationsSourcesFindingsGroup): GaxiosPromise[SchemaGroupFindingsResponse] = js.native
   def group(
     params: ParamsResourceOrganizationsSourcesFindingsGroup,
@@ -102,6 +104,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListFindingsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFindingsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFindingsResponse] = js.native
   def list(params: ParamsResourceOrganizationsSourcesFindingsList): GaxiosPromise[SchemaListFindingsResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsSourcesFindingsList,
@@ -135,6 +138,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaFinding] = js.native
   def patch(callback: BodyResponseCallback[SchemaFinding]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFinding] = js.native
   def patch(params: ParamsResourceOrganizationsSourcesFindingsPatch): GaxiosPromise[SchemaFinding] = js.native
   def patch(
     params: ParamsResourceOrganizationsSourcesFindingsPatch,
@@ -166,6 +170,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     */
   def setState(): GaxiosPromise[SchemaFinding] = js.native
   def setState(callback: BodyResponseCallback[SchemaFinding]): Unit = js.native
+  def setState(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFinding] = js.native
   def setState(params: ParamsResourceOrganizationsSourcesFindingsSetstate): GaxiosPromise[SchemaFinding] = js.native
   def setState(
     params: ParamsResourceOrganizationsSourcesFindingsSetstate,
@@ -199,6 +204,7 @@ class ResourceOrganizationsSourcesFindings protected () extends js.Object {
     */
   def updateSecurityMarks(): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(callback: BodyResponseCallback[SchemaSecurityMarks]): Unit = js.native
+  def updateSecurityMarks(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(params: ParamsResourceOrganizationsSourcesFindingsUpdatesecuritymarks): GaxiosPromise[SchemaSecurityMarks] = js.native
   def updateSecurityMarks(
     params: ParamsResourceOrganizationsSourcesFindingsUpdatesecuritymarks,

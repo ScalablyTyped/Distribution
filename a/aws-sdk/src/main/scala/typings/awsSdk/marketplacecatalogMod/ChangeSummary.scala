@@ -26,18 +26,40 @@ trait ChangeSummary extends js.Object {
 
 object ChangeSummary {
   @scala.inline
-  def apply(
-    ChangeType: ChangeType = null,
-    Details: Json = null,
-    Entity: Entity = null,
-    ErrorDetailList: ErrorDetailList = null
-  ): ChangeSummary = {
+  def apply(): ChangeSummary = {
     val __obj = js.Dynamic.literal()
-    if (ChangeType != null) __obj.updateDynamic("ChangeType")(ChangeType.asInstanceOf[js.Any])
-    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
-    if (Entity != null) __obj.updateDynamic("Entity")(Entity.asInstanceOf[js.Any])
-    if (ErrorDetailList != null) __obj.updateDynamic("ErrorDetailList")(ErrorDetailList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeSummary]
   }
+  @scala.inline
+  implicit class ChangeSummaryOps[Self <: ChangeSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeType(value: ChangeType): Self = this.set("ChangeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeType: Self = this.set("ChangeType", js.undefined)
+    @scala.inline
+    def setDetails(value: Json): Self = this.set("Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("Details", js.undefined)
+    @scala.inline
+    def setEntity(value: Entity): Self = this.set("Entity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntity: Self = this.set("Entity", js.undefined)
+    @scala.inline
+    def setErrorDetailListVarargs(value: ErrorDetail*): Self = this.set("ErrorDetailList", js.Array(value :_*))
+    @scala.inline
+    def setErrorDetailList(value: ErrorDetailList): Self = this.set("ErrorDetailList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorDetailList: Self = this.set("ErrorDetailList", js.undefined)
+  }
+  
 }
 

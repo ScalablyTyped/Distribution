@@ -133,6 +133,7 @@ object Msg extends js.Object {
     * @param skip Object (Boolean) skip true to skip adding it to the class and do it later (via the return).
     */
   def addClsWithUI(): Unit = js.native
+  def addClsWithUI(classes: js.UndefOr[scala.Nothing], skip: js.Any): Unit = js.native
   def addClsWithUI(classes: js.Any): Unit = js.native
   def addClsWithUI(classes: js.Any, skip: js.Any): Unit = js.native
   /** [Method] Adds docked item s to the container
@@ -141,6 +142,7 @@ object Msg extends js.Object {
     * @returns Ext.Component[] The added components.
     */
   def addDocked(): typings.extjs.Ext.Array = js.native
+  def addDocked(component: js.UndefOr[scala.Nothing], pos: Double): typings.extjs.Ext.Array = js.native
   def addDocked(component: js.Any): typings.extjs.Ext.Array = js.native
   def addDocked(component: js.Any, pos: Double): typings.extjs.Ext.Array = js.native
   /** [Method] Adds the specified events to the list of events which this Observable may fire
@@ -156,8 +158,39 @@ object Msg extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def addListener(): js.Any = js.native
+  def addListener(
+    element: js.UndefOr[scala.Nothing],
+    listeners: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(element: js.UndefOr[scala.Nothing], listeners: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addListener(
+    element: js.UndefOr[scala.Nothing],
+    listeners: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(element: js.UndefOr[scala.Nothing], listeners: js.Any): js.Any = js.native
+  def addListener(
+    element: js.UndefOr[scala.Nothing],
+    listeners: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(element: js.UndefOr[scala.Nothing], listeners: js.Any, scope: js.Any): js.Any = js.native
+  def addListener(element: js.UndefOr[scala.Nothing], listeners: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addListener(element: js.Any): js.Any = js.native
+  def addListener(
+    element: js.Any,
+    listeners: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(element: js.Any, listeners: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addListener(element: js.Any, listeners: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def addListener(element: js.Any, listeners: js.Any): js.Any = js.native
+  def addListener(element: js.Any, listeners: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def addListener(element: js.Any, listeners: js.Any, scope: js.Any): js.Any = js.native
   def addListener(element: js.Any, listeners: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
@@ -169,9 +202,106 @@ object Msg extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def addManagedListener(): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Save a property to the given state object if it is not its default or configured value
@@ -181,7 +311,11 @@ object Msg extends js.Object {
     * @returns Boolean The state object or a new object if state was null and the property was saved.
     */
   def addPropertyToState(): Boolean = js.native
+  def addPropertyToState(state: js.UndefOr[scala.Nothing], propName: js.UndefOr[scala.Nothing], value: java.lang.String): Boolean = js.native
+  def addPropertyToState(state: js.UndefOr[scala.Nothing], propName: java.lang.String): Boolean = js.native
+  def addPropertyToState(state: js.UndefOr[scala.Nothing], propName: java.lang.String, value: java.lang.String): Boolean = js.native
   def addPropertyToState(state: js.Any): Boolean = js.native
+  def addPropertyToState(state: js.Any, propName: js.UndefOr[scala.Nothing], value: java.lang.String): Boolean = js.native
   def addPropertyToState(state: js.Any, propName: java.lang.String): Boolean = js.native
   def addPropertyToState(state: js.Any, propName: java.lang.String, value: java.lang.String): Boolean = js.native
   /** [Method] Add events that will trigger the state to be saved
@@ -215,6 +349,7 @@ object Msg extends js.Object {
     * @param ay Object
     */
   def afterSetPosition(): Unit = js.native
+  def afterSetPosition(ax: js.UndefOr[scala.Nothing], ay: js.Any): Unit = js.native
   def afterSetPosition(ax: js.Any): Unit = js.native
   def afterSetPosition(ax: js.Any, ay: js.Any): Unit = js.native
   /** [Method] Invoked after the Component is shown after onShow is called
@@ -223,7 +358,11 @@ object Msg extends js.Object {
     * @param scope Object
     */
   def afterShow(): Unit = js.native
+  def afterShow(animateTarget: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def afterShow(animateTarget: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
+  def afterShow(animateTarget: js.UndefOr[scala.Nothing], callback: js.Any, scope: js.Any): Unit = js.native
   def afterShow(animateTarget: js.Any): Unit = js.native
+  def afterShow(animateTarget: js.Any, callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def afterShow(animateTarget: js.Any, callback: js.Any): Unit = js.native
   def afterShow(animateTarget: js.Any, callback: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Displays a standard read only message box with an OK button comparable to the basic JavaScript alert prompt
@@ -234,8 +373,34 @@ object Msg extends js.Object {
     * @returns Ext.window.MessageBox this
     */
   def alert(): IMessageBox = js.native
+  def alert(
+    title: js.UndefOr[scala.Nothing],
+    msg: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IMessageBox = js.native
+  def alert(title: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], fn: js.Any): IMessageBox = js.native
+  def alert(title: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): IMessageBox = js.native
+  def alert(title: js.UndefOr[scala.Nothing], msg: java.lang.String): IMessageBox = js.native
+  def alert(
+    title: js.UndefOr[scala.Nothing],
+    msg: java.lang.String,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IMessageBox = js.native
+  def alert(title: js.UndefOr[scala.Nothing], msg: java.lang.String, fn: js.Any): IMessageBox = js.native
+  def alert(title: js.UndefOr[scala.Nothing], msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = js.native
   def alert(title: java.lang.String): IMessageBox = js.native
+  def alert(
+    title: java.lang.String,
+    msg: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IMessageBox = js.native
+  def alert(title: java.lang.String, msg: js.UndefOr[scala.Nothing], fn: js.Any): IMessageBox = js.native
+  def alert(title: java.lang.String, msg: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): IMessageBox = js.native
   def alert(title: java.lang.String, msg: java.lang.String): IMessageBox = js.native
+  def alert(title: java.lang.String, msg: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): IMessageBox = js.native
   def alert(title: java.lang.String, msg: java.lang.String, fn: js.Any): IMessageBox = js.native
   def alert(title: java.lang.String, msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = js.native
   /** [Method] Aligns the element with another element relative to the specified anchor points
@@ -246,8 +411,53 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def alignTo(): IPositionable = js.native
+  def alignTo(
+    element: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    offsets: js.UndefOr[scala.Nothing],
+    animate: js.Any
+  ): IPositionable = js.native
+  def alignTo(
+    element: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    offsets: typings.extjs.Ext.Array
+  ): IPositionable = js.native
+  def alignTo(
+    element: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    offsets: typings.extjs.Ext.Array,
+    animate: js.Any
+  ): IPositionable = js.native
+  def alignTo(element: js.UndefOr[scala.Nothing], position: java.lang.String): IPositionable = js.native
+  def alignTo(
+    element: js.UndefOr[scala.Nothing],
+    position: java.lang.String,
+    offsets: js.UndefOr[scala.Nothing],
+    animate: js.Any
+  ): IPositionable = js.native
+  def alignTo(element: js.UndefOr[scala.Nothing], position: java.lang.String, offsets: typings.extjs.Ext.Array): IPositionable = js.native
+  def alignTo(
+    element: js.UndefOr[scala.Nothing],
+    position: java.lang.String,
+    offsets: typings.extjs.Ext.Array,
+    animate: js.Any
+  ): IPositionable = js.native
   def alignTo(element: js.Any): IPositionable = js.native
+  def alignTo(
+    element: js.Any,
+    position: js.UndefOr[scala.Nothing],
+    offsets: js.UndefOr[scala.Nothing],
+    animate: js.Any
+  ): IPositionable = js.native
+  def alignTo(element: js.Any, position: js.UndefOr[scala.Nothing], offsets: typings.extjs.Ext.Array): IPositionable = js.native
+  def alignTo(
+    element: js.Any,
+    position: js.UndefOr[scala.Nothing],
+    offsets: typings.extjs.Ext.Array,
+    animate: js.Any
+  ): IPositionable = js.native
   def alignTo(element: js.Any, position: java.lang.String): IPositionable = js.native
+  def alignTo(element: js.Any, position: java.lang.String, offsets: js.UndefOr[scala.Nothing], animate: js.Any): IPositionable = js.native
   def alignTo(element: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): IPositionable = js.native
   def alignTo(element: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array, animate: js.Any): IPositionable = js.native
   /** [Method] Anchors an element to another element and realigns it when the window is resized
@@ -288,6 +498,7 @@ object Msg extends js.Object {
     * @param adjHeight Number The box-adjusted height that was set.
     */
   def beforeComponentLayout(): Unit = js.native
+  def beforeComponentLayout(adjWidth: js.UndefOr[scala.Nothing], adjHeight: Double): Unit = js.native
   def beforeComponentLayout(adjWidth: Double): Unit = js.native
   def beforeComponentLayout(adjWidth: Double, adjHeight: Double): Unit = js.native
   /** [Method] Template method to do any pre focus processing
@@ -306,7 +517,11 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def bubble(): IComponent = js.native
+  def bubble(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): IComponent = js.native
+  def bubble(fn: js.UndefOr[scala.Nothing], scope: js.Any): IComponent = js.native
+  def bubble(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.extjs.Ext.Array): IComponent = js.native
   def bubble(fn: js.Any): IComponent = js.native
+  def bubble(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): IComponent = js.native
   def bubble(fn: js.Any, scope: js.Any): IComponent = js.native
   def bubble(fn: js.Any, scope: js.Any, args: typings.extjs.Ext.Array): IComponent = js.native
   /** [Method] Calculates the new x y position to move this Positionable into a constrain region
@@ -317,8 +532,58 @@ object Msg extends js.Object {
     * @returns Number[] If the element needs to be translated, the new [X, Y] position within constraints if possible, giving priority to keeping the top and left edge in the constrain region. Otherwise, false.
     */
   def calculateConstrainedPosition(): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: js.UndefOr[scala.Nothing],
+    local: js.UndefOr[scala.Nothing],
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: js.UndefOr[scala.Nothing],
+    local: Boolean
+  ): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: js.UndefOr[scala.Nothing],
+    local: Boolean,
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(constrainTo: js.UndefOr[scala.Nothing], proposedPosition: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: typings.extjs.Ext.Array,
+    local: js.UndefOr[scala.Nothing],
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(constrainTo: js.UndefOr[scala.Nothing], proposedPosition: typings.extjs.Ext.Array, local: Boolean): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: typings.extjs.Ext.Array,
+    local: Boolean,
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
   def calculateConstrainedPosition(constrainTo: js.Any): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.Any,
+    proposedPosition: js.UndefOr[scala.Nothing],
+    local: js.UndefOr[scala.Nothing],
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: js.UndefOr[scala.Nothing], local: Boolean): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.Any,
+    proposedPosition: js.UndefOr[scala.Nothing],
+    local: Boolean,
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
   def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
+  def calculateConstrainedPosition(
+    constrainTo: js.Any,
+    proposedPosition: typings.extjs.Ext.Array,
+    local: js.UndefOr[scala.Nothing],
+    proposedSize: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
   def calculateConstrainedPosition(constrainTo: js.Any, proposedPosition: typings.extjs.Ext.Array, local: Boolean): typings.extjs.Ext.Array = js.native
   def calculateConstrainedPosition(
     constrainTo: js.Any,
@@ -353,7 +618,11 @@ object Msg extends js.Object {
     * @returns Ext.Container this
     */
   def cascade(): IContainer = js.native
+  def cascade(fn: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): IContainer = js.native
+  def cascade(fn: js.UndefOr[scala.Nothing], scope: js.Any): IContainer = js.native
+  def cascade(fn: js.UndefOr[scala.Nothing], scope: js.Any, args: typings.extjs.Ext.Array): IContainer = js.native
   def cascade(fn: js.Any): IContainer = js.native
+  def cascade(fn: js.Any, scope: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): IContainer = js.native
   def cascade(fn: js.Any, scope: js.Any): IContainer = js.native
   def cascade(fn: js.Any, scope: js.Any, args: typings.extjs.Ext.Array): IContainer = js.native
   /** [Method] Center this Component in its container
@@ -384,6 +653,7 @@ object Msg extends js.Object {
     * @returns Ext.panel.Panel this
     */
   def collapse(): IPanel = js.native
+  def collapse(direction: js.UndefOr[scala.Nothing], animate: Boolean): IPanel = js.native
   def collapse(direction: java.lang.String): IPanel = js.native
   def collapse(direction: java.lang.String, animate: Boolean): IPanel = js.native
   /** [Method] Displays a confirmation message box with Yes and No buttons comparable to JavaScript s confirm
@@ -394,8 +664,34 @@ object Msg extends js.Object {
     * @returns Ext.window.MessageBox this
     */
   def confirm(): IMessageBox = js.native
+  def confirm(
+    title: js.UndefOr[scala.Nothing],
+    msg: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IMessageBox = js.native
+  def confirm(title: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], fn: js.Any): IMessageBox = js.native
+  def confirm(title: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): IMessageBox = js.native
+  def confirm(title: js.UndefOr[scala.Nothing], msg: java.lang.String): IMessageBox = js.native
+  def confirm(
+    title: js.UndefOr[scala.Nothing],
+    msg: java.lang.String,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IMessageBox = js.native
+  def confirm(title: js.UndefOr[scala.Nothing], msg: java.lang.String, fn: js.Any): IMessageBox = js.native
+  def confirm(title: js.UndefOr[scala.Nothing], msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = js.native
   def confirm(title: java.lang.String): IMessageBox = js.native
+  def confirm(
+    title: java.lang.String,
+    msg: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IMessageBox = js.native
+  def confirm(title: java.lang.String, msg: js.UndefOr[scala.Nothing], fn: js.Any): IMessageBox = js.native
+  def confirm(title: java.lang.String, msg: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): IMessageBox = js.native
   def confirm(title: java.lang.String, msg: java.lang.String): IMessageBox = js.native
+  def confirm(title: java.lang.String, msg: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): IMessageBox = js.native
   def confirm(title: java.lang.String, msg: java.lang.String, fn: js.Any): IMessageBox = js.native
   def confirm(title: java.lang.String, msg: java.lang.String, fn: js.Any, scope: js.Any): IMessageBox = js.native
   /** [Method] Determines whether the passed Component is either an immediate child of this Container or whether it is a descendant
@@ -404,6 +700,7 @@ object Msg extends js.Object {
     * @returns Boolean true if the passed Component is contained at the specified level.
     */
   def contains(): Boolean = js.native
+  def contains(comp: js.UndefOr[scala.Nothing], deep: Boolean): Boolean = js.native
   def contains(comp: IComponent): Boolean = js.native
   def contains(comp: IComponent, deep: Boolean): Boolean = js.native
   /** [Method] converts a collapsdDir into an anchor argument for Element slideIn overridden in rtl mode to switch l and r
@@ -482,6 +779,7 @@ object Msg extends js.Object {
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
   def fireEventArgs(): Boolean = js.native
+  def fireEventArgs(eventName: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): Boolean = js.native
   def fireEventArgs(eventName: java.lang.String): Boolean = js.native
   def fireEventArgs(eventName: java.lang.String, args: typings.extjs.Ext.Array): Boolean = js.native
   /** [Method] Try to focus this component
@@ -492,8 +790,39 @@ object Msg extends js.Object {
     * @returns Ext.Component The focused Component. Usually this Component. Some Containers may delegate focus to a descendant Component (Windows can do this through their defaultFocus config option.
     */
   def focus(): IComponent = js.native
+  def focus(
+    selectText: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IComponent = js.native
+  def focus(selectText: js.UndefOr[scala.Nothing], delay: js.UndefOr[scala.Nothing], callback: js.Any): IComponent = js.native
+  def focus(
+    selectText: js.UndefOr[scala.Nothing],
+    delay: js.UndefOr[scala.Nothing],
+    callback: js.Any,
+    scope: js.Any
+  ): IComponent = js.native
+  def focus(selectText: js.UndefOr[scala.Nothing], delay: js.Any): IComponent = js.native
+  def focus(
+    selectText: js.UndefOr[scala.Nothing],
+    delay: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IComponent = js.native
+  def focus(selectText: js.UndefOr[scala.Nothing], delay: js.Any, callback: js.Any): IComponent = js.native
+  def focus(selectText: js.UndefOr[scala.Nothing], delay: js.Any, callback: js.Any, scope: js.Any): IComponent = js.native
   def focus(selectText: Boolean): IComponent = js.native
+  def focus(
+    selectText: Boolean,
+    delay: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): IComponent = js.native
+  def focus(selectText: Boolean, delay: js.UndefOr[scala.Nothing], callback: js.Any): IComponent = js.native
+  def focus(selectText: Boolean, delay: js.UndefOr[scala.Nothing], callback: js.Any, scope: js.Any): IComponent = js.native
   def focus(selectText: Boolean, delay: js.Any): IComponent = js.native
+  def focus(selectText: Boolean, delay: js.Any, callback: js.UndefOr[scala.Nothing], scope: js.Any): IComponent = js.native
   def focus(selectText: Boolean, delay: js.Any, callback: js.Any): IComponent = js.native
   def focus(selectText: Boolean, delay: js.Any, callback: js.Any, scope: js.Any): IComponent = js.native
   /** [Method] Forces this component to redo its componentLayout  */
@@ -509,7 +838,15 @@ object Msg extends js.Object {
     * @returns Number[] [x, y]
     */
   def getAlignToXY(): typings.extjs.Ext.Array = js.native
+  def getAlignToXY(
+    element: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    offsets: typings.extjs.Ext.Array
+  ): typings.extjs.Ext.Array = js.native
+  def getAlignToXY(element: js.UndefOr[scala.Nothing], position: java.lang.String): typings.extjs.Ext.Array = js.native
+  def getAlignToXY(element: js.UndefOr[scala.Nothing], position: java.lang.String, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
   def getAlignToXY(element: js.Any): typings.extjs.Ext.Array = js.native
+  def getAlignToXY(element: js.Any, position: js.UndefOr[scala.Nothing], offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
   def getAlignToXY(element: js.Any, position: java.lang.String): typings.extjs.Ext.Array = js.native
   def getAlignToXY(element: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): typings.extjs.Ext.Array = js.native
   /** [Method] Gets the x y coordinates specified by the anchor position on the element
@@ -519,7 +856,11 @@ object Msg extends js.Object {
     * @returns Number[] [x, y] An array containing the element's x and y coordinates
     */
   def getAnchorXY(): typings.extjs.Ext.Array = js.native
+  def getAnchorXY(anchor: js.UndefOr[scala.Nothing], local: js.UndefOr[scala.Nothing], size: js.Any): typings.extjs.Ext.Array = js.native
+  def getAnchorXY(anchor: js.UndefOr[scala.Nothing], local: Boolean): typings.extjs.Ext.Array = js.native
+  def getAnchorXY(anchor: js.UndefOr[scala.Nothing], local: Boolean, size: js.Any): typings.extjs.Ext.Array = js.native
   def getAnchorXY(anchor: java.lang.String): typings.extjs.Ext.Array = js.native
+  def getAnchorXY(anchor: java.lang.String, local: js.UndefOr[scala.Nothing], size: js.Any): typings.extjs.Ext.Array = js.native
   def getAnchorXY(anchor: java.lang.String, local: Boolean): typings.extjs.Ext.Array = js.native
   def getAnchorXY(anchor: java.lang.String, local: Boolean, size: js.Any): typings.extjs.Ext.Array = js.native
   /** [Method] Return an object defining the area of this Element which can be passed to setBox to set another Element s size locati
@@ -528,6 +869,7 @@ object Msg extends js.Object {
     * @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
     */
   def getBox(): js.Any = js.native
+  def getBox(contentBox: js.UndefOr[scala.Nothing], local: Boolean): js.Any = js.native
   def getBox(contentBox: Boolean): js.Any = js.native
   def getBox(contentBox: Boolean, local: Boolean): js.Any = js.native
   /** [Method] Implements an upward event bubbling policy  */
@@ -538,6 +880,7 @@ object Msg extends js.Object {
     * @returns Ext.Component The child item which contains the passed element.
     */
   def getChildByElement(): IComponent = js.native
+  def getChildByElement(el: js.UndefOr[scala.Nothing], deep: Boolean): IComponent = js.native
   def getChildByElement(el: js.Any): IComponent = js.native
   def getChildByElement(el: js.Any, deep: Boolean): IComponent = js.native
   /** [Method] Returns the current collapsed state of the panel
@@ -557,7 +900,23 @@ object Msg extends js.Object {
     * @returns Number[]/Boolean If the element needs to be translated, an [X, Y] vector by which this element must be translated. Otherwise, false.
     */
   def getConstrainVector(): js.Any = js.native
+  def getConstrainVector(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: js.UndefOr[scala.Nothing],
+    proposedSize: typings.extjs.Ext.Array
+  ): js.Any = js.native
+  def getConstrainVector(constrainTo: js.UndefOr[scala.Nothing], proposedPosition: typings.extjs.Ext.Array): js.Any = js.native
+  def getConstrainVector(
+    constrainTo: js.UndefOr[scala.Nothing],
+    proposedPosition: typings.extjs.Ext.Array,
+    proposedSize: typings.extjs.Ext.Array
+  ): js.Any = js.native
   def getConstrainVector(constrainTo: js.Any): js.Any = js.native
+  def getConstrainVector(
+    constrainTo: js.Any,
+    proposedPosition: js.UndefOr[scala.Nothing],
+    proposedSize: typings.extjs.Ext.Array
+  ): js.Any = js.native
   def getConstrainVector(constrainTo: js.Any, proposedPosition: typings.extjs.Ext.Array): js.Any = js.native
   def getConstrainVector(
     constrainTo: js.Any,
@@ -578,6 +937,7 @@ object Msg extends js.Object {
     * @returns Ext.Component[] The array of docked components meeting the specified criteria.
     */
   def getDockedItems(): typings.extjs.Ext.Array = js.native
+  def getDockedItems(selector: js.UndefOr[scala.Nothing], beforeBody: Boolean): typings.extjs.Ext.Array = js.native
   def getDockedItems(selector: java.lang.String): typings.extjs.Ext.Array = js.native
   def getDockedItems(selector: java.lang.String, beforeBody: Boolean): typings.extjs.Ext.Array = js.native
   /** [Method] Retrieves the top level element representing this component
@@ -734,6 +1094,7 @@ object Msg extends js.Object {
     * @returns Ext.Component component The Component (or config object) that was inserted with the Container's default config values applied.
     */
   def insert(): IComponent = js.native
+  def insert(index: js.UndefOr[scala.Nothing], component: js.Any): IComponent = js.native
   def insert(index: Double): IComponent = js.native
   def insert(index: Double, component: js.Any): IComponent = js.native
   /** [Method] Inserts docked item s to the panel at the indicated position
@@ -741,6 +1102,7 @@ object Msg extends js.Object {
     * @param component Object/Object[] The Component or array of components to add. The components must include a 'dock' paramater on each component to indicate where it should be docked ('top', 'right', 'bottom', 'left').
     */
   def insertDocked(): Unit = js.native
+  def insertDocked(pos: js.UndefOr[scala.Nothing], component: js.Any): Unit = js.native
   def insertDocked(pos: Double): Unit = js.native
   def insertDocked(pos: Double, component: js.Any): Unit = js.native
   /** [Method] Tests whether this Component matches the selector string
@@ -798,6 +1160,7 @@ object Msg extends js.Object {
     * @returns Boolean true if this component descends from the specified xtype, false otherwise.
     */
   def isXType(): Boolean = js.native
+  def isXType(xtype: js.UndefOr[scala.Nothing], shallow: Boolean): Boolean = js.native
   def isXType(xtype: java.lang.String): Boolean = js.native
   def isXType(xtype: java.lang.String, shallow: Boolean): Boolean = js.native
   /** [Method] Fits the window within its current container and automatically replaces the maximize tool button with the restore
@@ -819,9 +1182,106 @@ object Msg extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def mon(): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Moves a Component within the Container
@@ -830,6 +1290,7 @@ object Msg extends js.Object {
     * @returns Ext.Component component The Component that was moved.
     */
   def move(): IComponent = js.native
+  def move(fromIdx: js.UndefOr[scala.Nothing], toIdx: Double): IComponent = js.native
   def move(fromIdx: js.Any): IComponent = js.native
   def move(fromIdx: js.Any, toIdx: Double): IComponent = js.native
   /** [Method] Shorthand for removeManagedListener
@@ -839,8 +1300,24 @@ object Msg extends js.Object {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   def mun(): Unit = js.native
+  def mun(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def mun(item: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Returns the next node in the Component tree in tree traversal order
@@ -863,8 +1340,39 @@ object Msg extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def on(): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def on(eventName: js.Any): js.Any = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any): js.Any = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] This method is invoked after a new Component has been added
@@ -872,6 +1380,7 @@ object Msg extends js.Object {
     * @param position Number
     */
   def onAdd(): Unit = js.native
+  def onAdd(component: js.UndefOr[scala.Nothing], position: Double): Unit = js.native
   def onAdd(component: IComponent): Unit = js.native
   def onAdd(component: IComponent, position: Double): Unit = js.native
   /** [Method] Method to manage awareness of when components are added to their respective Container firing an added event  */
@@ -906,6 +1415,7 @@ object Msg extends js.Object {
     * @param autoDestroy Boolean
     */
   def onRemove(): Unit = js.native
+  def onRemove(component: js.UndefOr[scala.Nothing], autoDestroy: Boolean): Unit = js.native
   def onRemove(component: IComponent): Unit = js.native
   def onRemove(component: IComponent, autoDestroy: Boolean): Unit = js.native
   /** [Method] Method to manage awareness of when components are removed from their respective Container firing a removed event
@@ -922,6 +1432,7 @@ object Msg extends js.Object {
     * @param scope Object
     */
   def onShowComplete(): Unit = js.native
+  def onShowComplete(callback: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def onShowComplete(callback: js.Any): Unit = js.native
   def onShowComplete(callback: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Template method to do any post blur processing
@@ -948,7 +1459,11 @@ object Msg extends js.Object {
     * @returns Ext.window.MessageBox this
     */
   def progress(): IMessageBox = js.native
+  def progress(title: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], progressText: java.lang.String): IMessageBox = js.native
+  def progress(title: js.UndefOr[scala.Nothing], msg: java.lang.String): IMessageBox = js.native
+  def progress(title: js.UndefOr[scala.Nothing], msg: java.lang.String, progressText: java.lang.String): IMessageBox = js.native
   def progress(title: java.lang.String): IMessageBox = js.native
+  def progress(title: java.lang.String, msg: js.UndefOr[scala.Nothing], progressText: java.lang.String): IMessageBox = js.native
   def progress(title: java.lang.String, msg: java.lang.String): IMessageBox = js.native
   def progress(title: java.lang.String, msg: java.lang.String, progressText: java.lang.String): IMessageBox = js.native
   /** [Method] Displays a message box with OK and Cancel buttons prompting the user to enter some text comparable to JavaScript s p
@@ -980,6 +1495,7 @@ object Msg extends js.Object {
     * @returns Ext.Component[] Components matched by the passed function
     */
   def queryBy(): typings.extjs.Ext.Array = js.native
+  def queryBy(fn: js.UndefOr[scala.Nothing], scope: js.Any): typings.extjs.Ext.Array = js.native
   def queryBy(fn: js.Any): typings.extjs.Ext.Array = js.native
   def queryBy(fn: js.Any, scope: js.Any): typings.extjs.Ext.Array = js.native
   /** [Method] Finds a component at any level under this container matching the id itemId
@@ -1000,7 +1516,11 @@ object Msg extends js.Object {
     * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
     */
   def relayEvents(): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
   def relayEvents(origin: js.Any): js.Any = js.native
+  def relayEvents(origin: js.Any, events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
   def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array): js.Any = js.native
   def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
   /** [Method] Removes a component from this container
@@ -1009,6 +1529,7 @@ object Msg extends js.Object {
     * @returns Ext.Component component The Component that was removed.
     */
   def remove(): IComponent = js.native
+  def remove(component: js.UndefOr[scala.Nothing], autoDestroy: Boolean): IComponent = js.native
   def remove(component: js.Any): IComponent = js.native
   def remove(component: js.Any, autoDestroy: Boolean): IComponent = js.native
   /** [Method] Removes all components from this container
@@ -1048,6 +1569,7 @@ object Msg extends js.Object {
     * @param autoDestroy Boolean Destroy the component after removal.
     */
   def removeDocked(): Unit = js.native
+  def removeDocked(item: js.UndefOr[scala.Nothing], autoDestroy: Boolean): Unit = js.native
   def removeDocked(item: IComponent): Unit = js.native
   def removeDocked(item: IComponent, autoDestroy: Boolean): Unit = js.native
   /** [Method] Removes an event handler
@@ -1056,7 +1578,11 @@ object Msg extends js.Object {
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   def removeListener(): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeListener(eventName: java.lang.String): Unit = js.native
+  def removeListener(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
   def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes listeners that were added by the mon method
@@ -1066,8 +1592,24 @@ object Msg extends js.Object {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   def removeManagedListener(): Unit = js.native
+  def removeManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] inherit docs
@@ -1080,6 +1622,7 @@ object Msg extends js.Object {
     * @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
     */
   def render(): Unit = js.native
+  def render(container: js.UndefOr[scala.Nothing], position: js.Any): Unit = js.native
   def render(container: js.Any): Unit = js.native
   def render(container: js.Any, position: js.Any): Unit = js.native
   /** [Method] Restores a maximized window back to its original size and position prior to being maximized and also replaces the re
@@ -1101,7 +1644,11 @@ object Msg extends js.Object {
     * @returns Boolean True if the property was saved, false if not.
     */
   def savePropToState(): Boolean = js.native
+  def savePropToState(propName: js.UndefOr[scala.Nothing], state: js.UndefOr[scala.Nothing], stateName: java.lang.String): Boolean = js.native
+  def savePropToState(propName: js.UndefOr[scala.Nothing], state: js.Any): Boolean = js.native
+  def savePropToState(propName: js.UndefOr[scala.Nothing], state: js.Any, stateName: java.lang.String): Boolean = js.native
   def savePropToState(propName: java.lang.String): Boolean = js.native
+  def savePropToState(propName: java.lang.String, state: js.UndefOr[scala.Nothing], stateName: java.lang.String): Boolean = js.native
   def savePropToState(propName: java.lang.String, state: js.Any): Boolean = js.native
   def savePropToState(propName: java.lang.String, state: js.Any, stateName: java.lang.String): Boolean = js.native
   /** [Method] Gathers additional named properties of the instance and adds their current values to the passed state object
@@ -1110,6 +1657,7 @@ object Msg extends js.Object {
     * @returns Object state
     */
   def savePropsToState(): js.Any = js.native
+  def savePropsToState(propNames: js.UndefOr[scala.Nothing], state: js.Any): js.Any = js.native
   def savePropsToState(propNames: js.Any): js.Any = js.native
   def savePropsToState(propNames: js.Any, state: js.Any): js.Any = js.native
   /** [Method] Saves the state of the object to the persistence store  */
@@ -1120,7 +1668,11 @@ object Msg extends js.Object {
     * @param animate Boolean/Object Animate flag/config object if the delta values were passed separately.
     */
   def scrollBy(): Unit = js.native
+  def scrollBy(deltaX: js.UndefOr[scala.Nothing], deltaY: js.UndefOr[scala.Nothing], animate: js.Any): Unit = js.native
+  def scrollBy(deltaX: js.UndefOr[scala.Nothing], deltaY: js.Any): Unit = js.native
+  def scrollBy(deltaX: js.UndefOr[scala.Nothing], deltaY: js.Any, animate: js.Any): Unit = js.native
   def scrollBy(deltaX: js.Any): Unit = js.native
+  def scrollBy(deltaX: js.Any, deltaY: js.UndefOr[scala.Nothing], animate: js.Any): Unit = js.native
   def scrollBy(deltaX: js.Any, deltaY: js.Any): Unit = js.native
   def scrollBy(deltaX: js.Any, deltaY: js.Any, animate: js.Any): Unit = js.native
   /** [Method] Ensures that all effects queued after sequenceFx is called on this object are run in sequence
@@ -1132,6 +1684,7 @@ object Msg extends js.Object {
     * @param newActive Ext.Component The newly active Component which is taking over topmost zIndex position.
     */
   def setActive(): Unit = js.native
+  def setActive(active: js.UndefOr[scala.Nothing], newActive: IComponent): Unit = js.native
   def setActive(active: Boolean): Unit = js.native
   def setActive(active: Boolean, newActive: IComponent): Unit = js.native
   /** [Method] Sets the overflow on the content element of the component
@@ -1146,6 +1699,7 @@ object Msg extends js.Object {
     * @returns Ext.panel.Panel this
     */
   def setBodyStyle(): IPanel = js.native
+  def setBodyStyle(style: js.UndefOr[scala.Nothing], value: java.lang.String): IPanel = js.native
   def setBodyStyle(style: js.Any): IPanel = js.native
   def setBodyStyle(style: js.Any, value: java.lang.String): IPanel = js.native
   /** [Method]
@@ -1153,6 +1707,7 @@ object Msg extends js.Object {
     * @param targetEl Object
     */
   def setBorder(): Unit = js.native
+  def setBorder(border: js.UndefOr[scala.Nothing], targetEl: js.Any): Unit = js.native
   def setBorder(border: js.Any): Unit = js.native
   def setBorder(border: js.Any, targetEl: js.Any): Unit = js.native
   /** [Method] This method changes the region config property for this border region
@@ -1167,6 +1722,7 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def setBox(): IPositionable = js.native
+  def setBox(box: js.UndefOr[scala.Nothing], animate: js.Any): IPositionable = js.native
   def setBox(box: js.Any): IPositionable = js.native
   def setBox(box: js.Any, animate: js.Any): IPositionable = js.native
   /** [Method] Enable or disable the component
@@ -1180,6 +1736,7 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def setDocked(): IComponent = js.native
+  def setDocked(dock: js.UndefOr[scala.Nothing], layoutParent: Boolean): IComponent = js.native
   def setDocked(dock: js.Any): IComponent = js.native
   def setDocked(dock: js.Any, layoutParent: Boolean): IComponent = js.native
   /** [Method] Set the glyph for the panel s header
@@ -1200,7 +1757,11 @@ object Msg extends js.Object {
     * @returns Ext.window.MessageBox this
     */
   def setIcon(): IMessageBox = js.native
+  def setIcon(icon: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double): IMessageBox = js.native
+  def setIcon(icon: js.UndefOr[scala.Nothing], width: Double): IMessageBox = js.native
+  def setIcon(icon: js.UndefOr[scala.Nothing], width: Double, height: Double): IMessageBox = js.native
   def setIcon(icon: java.lang.String): IMessageBox = js.native
+  def setIcon(icon: java.lang.String, width: js.UndefOr[scala.Nothing], height: Double): IMessageBox = js.native
   def setIcon(icon: java.lang.String, width: Double): IMessageBox = js.native
   def setIcon(icon: java.lang.String, width: Double, height: Double): IMessageBox = js.native
   /** [Method] Set the iconCls for the panel s header
@@ -1214,6 +1775,7 @@ object Msg extends js.Object {
     * @returns Ext.LoadMask The LoadMask instance that has just been shown.
     */
   def setLoading(): ILoadMask = js.native
+  def setLoading(load: js.UndefOr[scala.Nothing], targetEl: Boolean): ILoadMask = js.native
   def setLoading(load: js.Any): ILoadMask = js.native
   def setLoading(load: js.Any, targetEl: Boolean): ILoadMask = js.native
   /** [Method] Overridden in Ext rtl AbstractComponent
@@ -1228,6 +1790,7 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def setLocalXY(): IPositionable = js.native
+  def setLocalXY(x: js.UndefOr[scala.Nothing], y: js.Any): IPositionable = js.native
   def setLocalXY(x: js.Any): IPositionable = js.native
   def setLocalXY(x: js.Any, y: js.Any): IPositionable = js.native
   /** [Method] Sets the local y coordinate of this element using CSS style
@@ -1247,6 +1810,7 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def setOverflowXY(): IComponent = js.native
+  def setOverflowXY(overflowX: js.UndefOr[scala.Nothing], overflowY: java.lang.String): IComponent = js.native
   def setOverflowXY(overflowX: java.lang.String): IComponent = js.native
   def setOverflowXY(overflowX: java.lang.String, overflowY: java.lang.String): IComponent = js.native
   /** [Method] Sets the page XY position of the component
@@ -1256,7 +1820,11 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def setPagePosition(): IComponent = js.native
+  def setPagePosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], animate: js.Any): IComponent = js.native
+  def setPagePosition(x: js.UndefOr[scala.Nothing], y: Double): IComponent = js.native
+  def setPagePosition(x: js.UndefOr[scala.Nothing], y: Double, animate: js.Any): IComponent = js.native
   def setPagePosition(x: js.Any): IComponent = js.native
+  def setPagePosition(x: js.Any, y: js.UndefOr[scala.Nothing], animate: js.Any): IComponent = js.native
   def setPagePosition(x: js.Any, y: Double): IComponent = js.native
   def setPagePosition(x: js.Any, y: Double, animate: js.Any): IComponent = js.native
   /** [Method] Sets the left and top of the component
@@ -1266,7 +1834,11 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def setPosition(): IComponent = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], animate: js.Any): IComponent = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double): IComponent = js.native
+  def setPosition(x: js.UndefOr[scala.Nothing], y: Double, animate: js.Any): IComponent = js.native
   def setPosition(x: js.Any): IComponent = js.native
+  def setPosition(x: js.Any, y: js.UndefOr[scala.Nothing], animate: js.Any): IComponent = js.native
   def setPosition(x: js.Any, y: Double): IComponent = js.native
   def setPosition(x: js.Any, y: Double, animate: js.Any): IComponent = js.native
   /** [Method] Sets the element s position and size to the specified region
@@ -1275,6 +1847,7 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def setRegion(): IPositionable = js.native
+  def setRegion(region: js.UndefOr[scala.Nothing], animate: js.Any): IPositionable = js.native
   def setRegion(region: IRegion): IPositionable = js.native
   def setRegion(region: IRegion, animate: js.Any): IPositionable = js.native
   /** [Method] Sets the weight config property for this component
@@ -1289,6 +1862,7 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def setSize(): IComponent = js.native
+  def setSize(width: js.UndefOr[scala.Nothing], height: js.Any): IComponent = js.native
   def setSize(width: js.Any): IComponent = js.native
   def setSize(width: js.Any, height: js.Any): IComponent = js.native
   /** [Method] Set a title for the panel s header
@@ -1319,6 +1893,7 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def setX(): IPositionable = js.native
+  def setX(x: js.UndefOr[scala.Nothing], animate: js.Any): IPositionable = js.native
   def setX(x: js.Any): IPositionable = js.native
   def setX(x: js.Any, animate: js.Any): IPositionable = js.native
   /** [Method] Sets the position of the DOM element in page coordinates
@@ -1327,6 +1902,7 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def setXY(): IPositionable = js.native
+  def setXY(xy: js.UndefOr[scala.Nothing], animate: js.Any): IPositionable = js.native
   def setXY(xy: js.Any): IPositionable = js.native
   def setXY(xy: js.Any, animate: js.Any): IPositionable = js.native
   /** [Method] Sets the Y position of the DOM element based on page coordinates
@@ -1335,6 +1911,7 @@ object Msg extends js.Object {
     * @returns Ext.util.Positionable this
     */
   def setY(): IPositionable = js.native
+  def setY(y: js.UndefOr[scala.Nothing], animate: js.Any): IPositionable = js.native
   def setY(y: js.Any): IPositionable = js.native
   def setY(y: js.Any, animate: js.Any): IPositionable = js.native
   /** [Method] Displays a new message box or reinitializes an existing message box based on the config options passed in
@@ -1350,7 +1927,11 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def showAt(): IComponent = js.native
+  def showAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], animate: js.Any): IComponent = js.native
+  def showAt(x: js.UndefOr[scala.Nothing], y: Double): IComponent = js.native
+  def showAt(x: js.UndefOr[scala.Nothing], y: Double, animate: js.Any): IComponent = js.native
   def showAt(x: js.Any): IComponent = js.native
+  def showAt(x: js.Any, y: js.UndefOr[scala.Nothing], animate: js.Any): IComponent = js.native
   def showAt(x: js.Any, y: Double): IComponent = js.native
   def showAt(x: js.Any, y: Double, animate: js.Any): IComponent = js.native
   /** [Method] Shows this component by the specified Component or Element
@@ -1360,7 +1941,15 @@ object Msg extends js.Object {
     * @returns Ext.Component this
     */
   def showBy(): IComponent = js.native
+  def showBy(
+    component: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    offsets: typings.extjs.Ext.Array
+  ): IComponent = js.native
+  def showBy(component: js.UndefOr[scala.Nothing], position: java.lang.String): IComponent = js.native
+  def showBy(component: js.UndefOr[scala.Nothing], position: java.lang.String, offsets: typings.extjs.Ext.Array): IComponent = js.native
   def showBy(component: js.Any): IComponent = js.native
+  def showBy(component: js.Any, position: js.UndefOr[scala.Nothing], offsets: typings.extjs.Ext.Array): IComponent = js.native
   def showBy(component: js.Any, position: java.lang.String): IComponent = js.native
   def showBy(component: js.Any, position: java.lang.String, offsets: typings.extjs.Ext.Array): IComponent = js.native
   /** [Method] Get the reference to the class from which this object was instantiated
@@ -1412,6 +2001,7 @@ object Msg extends js.Object {
     * @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
     */
   def translatePoints(): js.Any = js.native
+  def translatePoints(x: js.UndefOr[scala.Nothing], y: Double): js.Any = js.native
   def translatePoints(x: js.Any): js.Any = js.native
   def translatePoints(x: js.Any, y: Double): js.Any = js.native
   /** [Method] Shorthand for removeListener
@@ -1420,7 +2010,11 @@ object Msg extends js.Object {
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   def un(): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def un(eventName: java.lang.String): Unit = js.native
+  def un(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
   def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Navigates up the ownership hierarchy searching for an ancestor Container which matches any passed simple selector or
@@ -1429,6 +2023,7 @@ object Msg extends js.Object {
     * @returns Ext.container.Container The matching ancestor Container (or undefined if no match was found).
     */
   def up(): typings.extjs.Ext.container.IContainer = js.native
+  def up(selector: js.UndefOr[scala.Nothing], limit: js.Any): typings.extjs.Ext.container.IContainer = js.native
   def up(selector: js.Any): typings.extjs.Ext.container.IContainer = js.native
   def up(selector: js.Any, limit: js.Any): typings.extjs.Ext.container.IContainer = js.native
   /** [Method] Update the content area of a component
@@ -1437,7 +2032,11 @@ object Msg extends js.Object {
     * @param callback Function Only legitimate when using the html configuration. Callback to execute when scripts have finished loading.
     */
   def update(): Unit = js.native
+  def update(htmlOrData: js.UndefOr[scala.Nothing], loadScripts: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
+  def update(htmlOrData: js.UndefOr[scala.Nothing], loadScripts: Boolean): Unit = js.native
+  def update(htmlOrData: js.UndefOr[scala.Nothing], loadScripts: Boolean, callback: js.Any): Unit = js.native
   def update(htmlOrData: js.Any): Unit = js.native
+  def update(htmlOrData: js.Any, loadScripts: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
   def update(htmlOrData: js.Any, loadScripts: Boolean): Unit = js.native
   def update(htmlOrData: js.Any, loadScripts: Boolean, callback: js.Any): Unit = js.native
   /** [Method] Sets the current box measurements of the component s underlying element
@@ -1458,10 +2057,18 @@ object Msg extends js.Object {
     * @returns Ext.window.MessageBox this
     */
   def updateProgress(): IMessageBox = js.native
+  def updateProgress(value: js.UndefOr[scala.Nothing], progressText: js.UndefOr[scala.Nothing], msg: java.lang.String): IMessageBox = js.native
+  def updateProgress(value: js.UndefOr[scala.Nothing], progressText: java.lang.String): IMessageBox = js.native
+  def updateProgress(value: js.UndefOr[scala.Nothing], progressText: java.lang.String, msg: java.lang.String): IMessageBox = js.native
   def updateProgress(value: Double): IMessageBox = js.native
+  def updateProgress(value: Double, progressText: js.UndefOr[scala.Nothing], msg: java.lang.String): IMessageBox = js.native
   def updateProgress(value: Double, progressText: java.lang.String): IMessageBox = js.native
   def updateProgress(value: Double, progressText: java.lang.String, msg: java.lang.String): IMessageBox = js.native
+  def wait(msg: js.UndefOr[scala.Nothing], title: js.UndefOr[scala.Nothing], config: js.Any): IMessageBox = js.native
+  def wait(msg: js.UndefOr[scala.Nothing], title: java.lang.String): IMessageBox = js.native
+  def wait(msg: js.UndefOr[scala.Nothing], title: java.lang.String, config: js.Any): IMessageBox = js.native
   def wait(msg: java.lang.String): IMessageBox = js.native
+  def wait(msg: java.lang.String, title: js.UndefOr[scala.Nothing], config: js.Any): IMessageBox = js.native
   def wait(msg: java.lang.String, title: java.lang.String): IMessageBox = js.native
   def wait(msg: java.lang.String, title: java.lang.String, config: js.Any): IMessageBox = js.native
 }

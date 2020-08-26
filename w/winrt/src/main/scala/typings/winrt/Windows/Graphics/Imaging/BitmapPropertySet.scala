@@ -8,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BitmapPropertySet extends IMap[String, BitmapTypedValue]
 
 object BitmapPropertySet {

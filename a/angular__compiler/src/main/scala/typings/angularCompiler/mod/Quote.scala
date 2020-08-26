@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "Quote")
 @js.native
 class Quote protected ()
-  extends typings.angularCompiler.publicApiMod.Quote {
+  extends typings.angularCompiler.compilerMod.Quote {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

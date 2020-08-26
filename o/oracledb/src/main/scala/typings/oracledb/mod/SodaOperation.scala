@@ -28,6 +28,17 @@ trait SodaOperation extends js.Object {
   def count(): js.Promise[SodaCountResult] = js.native
   def count(callback: js.Function2[/* error */ DBError, /* result */ SodaCountResult, Unit]): Unit = js.native
   /**
+    * This property sets the size of an internal buffer used for fetching documents from a collection
+    * with the terminal SodaOperation methods getCursor() and getDocuments(). Changing size may affect
+    * performance but does not affect how many documents are returned.
+    * 
+    * If fetchArraySize() is not used, the size defaults to the current value of oracledb.fetchArraySize.
+    * 
+    * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaqbesearches
+    * @since 5.0
+    */
+  def fetchArraySize(size: Double): SodaOperation = js.native
+  /**
     * Sets a filter specification for the operation, allowing for complex document queries and ordering
     * of JSON documents. Filter specifications can include comparisons, regular expressions, logical,
     * and spatial operators, among others.

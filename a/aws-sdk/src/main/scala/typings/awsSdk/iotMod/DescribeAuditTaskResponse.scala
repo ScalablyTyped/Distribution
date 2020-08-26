@@ -34,22 +34,46 @@ trait DescribeAuditTaskResponse extends js.Object {
 
 object DescribeAuditTaskResponse {
   @scala.inline
-  def apply(
-    auditDetails: AuditDetails = null,
-    scheduledAuditName: ScheduledAuditName = null,
-    taskStartTime: Timestamp = null,
-    taskStatistics: TaskStatistics = null,
-    taskStatus: AuditTaskStatus = null,
-    taskType: AuditTaskType = null
-  ): DescribeAuditTaskResponse = {
+  def apply(): DescribeAuditTaskResponse = {
     val __obj = js.Dynamic.literal()
-    if (auditDetails != null) __obj.updateDynamic("auditDetails")(auditDetails.asInstanceOf[js.Any])
-    if (scheduledAuditName != null) __obj.updateDynamic("scheduledAuditName")(scheduledAuditName.asInstanceOf[js.Any])
-    if (taskStartTime != null) __obj.updateDynamic("taskStartTime")(taskStartTime.asInstanceOf[js.Any])
-    if (taskStatistics != null) __obj.updateDynamic("taskStatistics")(taskStatistics.asInstanceOf[js.Any])
-    if (taskStatus != null) __obj.updateDynamic("taskStatus")(taskStatus.asInstanceOf[js.Any])
-    if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAuditTaskResponse]
   }
+  @scala.inline
+  implicit class DescribeAuditTaskResponseOps[Self <: DescribeAuditTaskResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditDetails(value: AuditDetails): Self = this.set("auditDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditDetails: Self = this.set("auditDetails", js.undefined)
+    @scala.inline
+    def setScheduledAuditName(value: ScheduledAuditName): Self = this.set("scheduledAuditName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduledAuditName: Self = this.set("scheduledAuditName", js.undefined)
+    @scala.inline
+    def setTaskStartTime(value: Timestamp): Self = this.set("taskStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStartTime: Self = this.set("taskStartTime", js.undefined)
+    @scala.inline
+    def setTaskStatistics(value: TaskStatistics): Self = this.set("taskStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatistics: Self = this.set("taskStatistics", js.undefined)
+    @scala.inline
+    def setTaskStatus(value: AuditTaskStatus): Self = this.set("taskStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskStatus: Self = this.set("taskStatus", js.undefined)
+    @scala.inline
+    def setTaskType(value: AuditTaskType): Self = this.set("taskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskType: Self = this.set("taskType", js.undefined)
+  }
+  
 }
 

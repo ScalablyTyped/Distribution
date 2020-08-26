@@ -4,33 +4,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var allowCredentials: js.UndefOr[Boolean] = js.undefined
-  var allowHeaders: js.UndefOr[js.Array[String]] = js.undefined
-  var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
-  var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
-  var maxAge: js.UndefOr[Double] = js.undefined
-  var origin: js.UndefOr[String] = js.undefined
+  var allowCredentials: js.UndefOr[Boolean] = js.native
+  var allowHeaders: js.UndefOr[js.Array[String]] = js.native
+  var allowMethods: js.UndefOr[js.Array[String]] = js.native
+  var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+  var maxAge: js.UndefOr[Double] = js.native
+  var origin: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    allowCredentials: js.UndefOr[Boolean] = js.undefined,
-    allowHeaders: js.Array[String] = null,
-    allowMethods: js.Array[String] = null,
-    exposeHeaders: js.Array[String] = null,
-    maxAge: js.UndefOr[Double] = js.undefined,
-    origin: String = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowCredentials)) __obj.updateDynamic("allowCredentials")(allowCredentials.get.asInstanceOf[js.Any])
-    if (allowHeaders != null) __obj.updateDynamic("allowHeaders")(allowHeaders.asInstanceOf[js.Any])
-    if (allowMethods != null) __obj.updateDynamic("allowMethods")(allowMethods.asInstanceOf[js.Any])
-    if (exposeHeaders != null) __obj.updateDynamic("exposeHeaders")(exposeHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAge)) __obj.updateDynamic("maxAge")(maxAge.get.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowCredentials(value: Boolean): Self = this.set("allowCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCredentials: Self = this.set("allowCredentials", js.undefined)
+    @scala.inline
+    def setAllowHeadersVarargs(value: String*): Self = this.set("allowHeaders", js.Array(value :_*))
+    @scala.inline
+    def setAllowHeaders(value: js.Array[String]): Self = this.set("allowHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHeaders: Self = this.set("allowHeaders", js.undefined)
+    @scala.inline
+    def setAllowMethodsVarargs(value: String*): Self = this.set("allowMethods", js.Array(value :_*))
+    @scala.inline
+    def setAllowMethods(value: js.Array[String]): Self = this.set("allowMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowMethods: Self = this.set("allowMethods", js.undefined)
+    @scala.inline
+    def setExposeHeadersVarargs(value: String*): Self = this.set("exposeHeaders", js.Array(value :_*))
+    @scala.inline
+    def setExposeHeaders(value: js.Array[String]): Self = this.set("exposeHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposeHeaders: Self = this.set("exposeHeaders", js.undefined)
+    @scala.inline
+    def setMaxAge(value: Double): Self = this.set("maxAge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAge: Self = this.set("maxAge", js.undefined)
+    @scala.inline
+    def setOrigin(value: String): Self = this.set("origin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigin: Self = this.set("origin", js.undefined)
+  }
+  
 }
 

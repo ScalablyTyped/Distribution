@@ -18,11 +18,32 @@ trait GetRepositoryTriggersOutput extends js.Object {
 
 object GetRepositoryTriggersOutput {
   @scala.inline
-  def apply(configurationId: RepositoryTriggersConfigurationId = null, triggers: RepositoryTriggersList = null): GetRepositoryTriggersOutput = {
+  def apply(): GetRepositoryTriggersOutput = {
     val __obj = js.Dynamic.literal()
-    if (configurationId != null) __obj.updateDynamic("configurationId")(configurationId.asInstanceOf[js.Any])
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryTriggersOutput]
   }
+  @scala.inline
+  implicit class GetRepositoryTriggersOutputOps[Self <: GetRepositoryTriggersOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationId(value: RepositoryTriggersConfigurationId): Self = this.set("configurationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationId: Self = this.set("configurationId", js.undefined)
+    @scala.inline
+    def setTriggersVarargs(value: RepositoryTrigger*): Self = this.set("triggers", js.Array(value :_*))
+    @scala.inline
+    def setTriggers(value: RepositoryTriggersList): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggers: Self = this.set("triggers", js.undefined)
+  }
+  
 }
 

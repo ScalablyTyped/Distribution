@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GetMenuPropsOptions
   extends AllHTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement]
@@ -14,15 +15,8 @@ trait GetMenuPropsOptions
 
 object GetMenuPropsOptions {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    GetPropsWithRefKey: GetPropsWithRefKey = null
-  ): GetMenuPropsOptions = {
+  def apply(): GetMenuPropsOptions = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (GetPropsWithRefKey != null) js.Dynamic.global.Object.assign(__obj, GetPropsWithRefKey)
     __obj.asInstanceOf[GetMenuPropsOptions]
   }
 }

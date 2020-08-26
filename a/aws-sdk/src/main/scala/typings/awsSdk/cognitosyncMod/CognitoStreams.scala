@@ -22,16 +22,34 @@ trait CognitoStreams extends js.Object {
 
 object CognitoStreams {
   @scala.inline
-  def apply(
-    RoleArn: AssumeRoleArn = null,
-    StreamName: StreamName = null,
-    StreamingStatus: StreamingStatus = null
-  ): CognitoStreams = {
+  def apply(): CognitoStreams = {
     val __obj = js.Dynamic.literal()
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
-    if (StreamingStatus != null) __obj.updateDynamic("StreamingStatus")(StreamingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoStreams]
   }
+  @scala.inline
+  implicit class CognitoStreamsOps[Self <: CognitoStreams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRoleArn(value: AssumeRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    @scala.inline
+    def setStreamingStatus(value: StreamingStatus): Self = this.set("StreamingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamingStatus: Self = this.set("StreamingStatus", js.undefined)
+  }
+  
 }
 

@@ -18,14 +18,30 @@ trait ModifyCertificatesMessage extends js.Object {
 
 object ModifyCertificatesMessage {
   @scala.inline
-  def apply(
-    CertificateIdentifier: String = null,
-    RemoveCustomerOverride: js.UndefOr[BooleanOptional] = js.undefined
-  ): ModifyCertificatesMessage = {
+  def apply(): ModifyCertificatesMessage = {
     val __obj = js.Dynamic.literal()
-    if (CertificateIdentifier != null) __obj.updateDynamic("CertificateIdentifier")(CertificateIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(RemoveCustomerOverride)) __obj.updateDynamic("RemoveCustomerOverride")(RemoveCustomerOverride.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyCertificatesMessage]
   }
+  @scala.inline
+  implicit class ModifyCertificatesMessageOps[Self <: ModifyCertificatesMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateIdentifier(value: String): Self = this.set("CertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateIdentifier: Self = this.set("CertificateIdentifier", js.undefined)
+    @scala.inline
+    def setRemoveCustomerOverride(value: BooleanOptional): Self = this.set("RemoveCustomerOverride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveCustomerOverride: Self = this.set("RemoveCustomerOverride", js.undefined)
+  }
+  
 }
 

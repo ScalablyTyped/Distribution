@@ -17,7 +17,6 @@ object testsCustomersMod extends js.Object {
     def TestDelete(): js.Promise[Unit] = js.native
     def TestList(): js.Promise[Unit] = js.native
     def TestUpdate(): js.Promise[Unit] = js.native
-    /* private */ def create(email: js.Any): js.Any = js.native
     /* private */ def create(email: js.Any, scheduleForDeletion: js.Any): js.Any = js.native
     /* private */ def teardownAsync(): js.Any = js.native
   }

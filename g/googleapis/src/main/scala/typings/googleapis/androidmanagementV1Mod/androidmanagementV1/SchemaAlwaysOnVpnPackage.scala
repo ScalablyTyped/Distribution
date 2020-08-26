@@ -21,11 +21,30 @@ trait SchemaAlwaysOnVpnPackage extends js.Object {
 
 object SchemaAlwaysOnVpnPackage {
   @scala.inline
-  def apply(lockdownEnabled: js.UndefOr[Boolean] = js.undefined, packageName: String = null): SchemaAlwaysOnVpnPackage = {
+  def apply(): SchemaAlwaysOnVpnPackage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lockdownEnabled)) __obj.updateDynamic("lockdownEnabled")(lockdownEnabled.get.asInstanceOf[js.Any])
-    if (packageName != null) __obj.updateDynamic("packageName")(packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAlwaysOnVpnPackage]
   }
+  @scala.inline
+  implicit class SchemaAlwaysOnVpnPackageOps[Self <: SchemaAlwaysOnVpnPackage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLockdownEnabled(value: Boolean): Self = this.set("lockdownEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockdownEnabled: Self = this.set("lockdownEnabled", js.undefined)
+    @scala.inline
+    def setPackageName(value: String): Self = this.set("packageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageName: Self = this.set("packageName", js.undefined)
+  }
+  
 }
 

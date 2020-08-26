@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   */
 class GraphLinksModel () extends Model {
   def this(nodedataarray: js.Array[js.Object]) = this()
+  def this(nodedataarray: js.UndefOr[scala.Nothing], linkdataarray: js.Array[js.Object]) = this()
   def this(nodedataarray: js.Array[js.Object], linkdataarray: js.Array[js.Object]) = this()
   /**
     * Gets or sets a data object that will be copied and added to the model as a new node data each time there

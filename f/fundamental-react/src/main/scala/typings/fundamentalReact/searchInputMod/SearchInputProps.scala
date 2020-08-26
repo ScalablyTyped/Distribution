@@ -9,66 +9,111 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchInputProps
   extends /* x */ StringDictionary[js.Any] {
-  var className: js.UndefOr[String] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
-  var disableStyles: js.UndefOr[Boolean] = js.undefined
-  var inShellbar: js.UndefOr[Boolean] = js.undefined
-  var inputGroupAddonProps: js.UndefOr[js.Any] = js.undefined
-  var inputGroupProps: js.UndefOr[js.Any] = js.undefined
-  var inputProps: js.UndefOr[js.Any] = js.undefined
-  var listProps: js.UndefOr[js.Any] = js.undefined
-  var noSearchBtn: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.undefined
-  var onEnter: js.UndefOr[js.Function1[/* value */ js.UndefOr[String | Double | js.Array[String]], Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var popoverProps: js.UndefOr[js.Any] = js.undefined
-  var searchBtnProps: js.UndefOr[js.Any] = js.undefined
-  var searchList: js.UndefOr[js.Array[Callback]] = js.undefined
-  var validationState: js.UndefOr[Text] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.native
+  var inShellbar: js.UndefOr[Boolean] = js.native
+  var inputGroupAddonProps: js.UndefOr[js.Any] = js.native
+  var inputGroupProps: js.UndefOr[js.Any] = js.native
+  var inputProps: js.UndefOr[js.Any] = js.native
+  var listProps: js.UndefOr[js.Any] = js.native
+  var noSearchBtn: js.UndefOr[Boolean] = js.native
+  var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.native
+  var onEnter: js.UndefOr[js.Function1[/* value */ js.UndefOr[String | Double | js.Array[String]], Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var popoverProps: js.UndefOr[js.Any] = js.native
+  var searchBtnProps: js.UndefOr[js.Any] = js.native
+  var searchList: js.UndefOr[js.Array[Callback]] = js.native
+  var validationState: js.UndefOr[Text] = js.native
 }
 
 object SearchInputProps {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    inShellbar: js.UndefOr[Boolean] = js.undefined,
-    inputGroupAddonProps: js.Any = null,
-    inputGroupProps: js.Any = null,
-    inputProps: js.Any = null,
-    listProps: js.Any = null,
-    noSearchBtn: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* event */ ChangeEvent[HTMLInputElement] => Unit = null,
-    onEnter: /* value */ js.UndefOr[String | Double | js.Array[String]] => Unit = null,
-    placeholder: String = null,
-    popoverProps: js.Any = null,
-    searchBtnProps: js.Any = null,
-    searchList: js.Array[Callback] = null,
-    validationState: Text = null
-  ): SearchInputProps = {
+  def apply(): SearchInputProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar.get.asInstanceOf[js.Any])
-    if (inputGroupAddonProps != null) __obj.updateDynamic("inputGroupAddonProps")(inputGroupAddonProps.asInstanceOf[js.Any])
-    if (inputGroupProps != null) __obj.updateDynamic("inputGroupProps")(inputGroupProps.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSearchBtn)) __obj.updateDynamic("noSearchBtn")(noSearchBtn.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1(onEnter))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps.asInstanceOf[js.Any])
-    if (searchBtnProps != null) __obj.updateDynamic("searchBtnProps")(searchBtnProps.asInstanceOf[js.Any])
-    if (searchList != null) __obj.updateDynamic("searchList")(searchList.asInstanceOf[js.Any])
-    if (validationState != null) __obj.updateDynamic("validationState")(validationState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchInputProps]
   }
+  @scala.inline
+  implicit class SearchInputPropsOps[Self <: SearchInputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDisableStyles(value: Boolean): Self = this.set("disableStyles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableStyles: Self = this.set("disableStyles", js.undefined)
+    @scala.inline
+    def setInShellbar(value: Boolean): Self = this.set("inShellbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInShellbar: Self = this.set("inShellbar", js.undefined)
+    @scala.inline
+    def setInputGroupAddonProps(value: js.Any): Self = this.set("inputGroupAddonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputGroupAddonProps: Self = this.set("inputGroupAddonProps", js.undefined)
+    @scala.inline
+    def setInputGroupProps(value: js.Any): Self = this.set("inputGroupProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputGroupProps: Self = this.set("inputGroupProps", js.undefined)
+    @scala.inline
+    def setInputProps(value: js.Any): Self = this.set("inputProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputProps: Self = this.set("inputProps", js.undefined)
+    @scala.inline
+    def setListProps(value: js.Any): Self = this.set("listProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListProps: Self = this.set("listProps", js.undefined)
+    @scala.inline
+    def setNoSearchBtn(value: Boolean): Self = this.set("noSearchBtn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoSearchBtn: Self = this.set("noSearchBtn", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* event */ ChangeEvent[HTMLInputElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnEnter(value: /* value */ js.UndefOr[String | Double | js.Array[String]] => Unit): Self = this.set("onEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnter: Self = this.set("onEnter", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopoverProps(value: js.Any): Self = this.set("popoverProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopoverProps: Self = this.set("popoverProps", js.undefined)
+    @scala.inline
+    def setSearchBtnProps(value: js.Any): Self = this.set("searchBtnProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchBtnProps: Self = this.set("searchBtnProps", js.undefined)
+    @scala.inline
+    def setSearchListVarargs(value: Callback*): Self = this.set("searchList", js.Array(value :_*))
+    @scala.inline
+    def setSearchList(value: js.Array[Callback]): Self = this.set("searchList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchList: Self = this.set("searchList", js.undefined)
+    @scala.inline
+    def setValidationState(value: Text): Self = this.set("validationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationState: Self = this.set("validationState", js.undefined)
+  }
+  
 }
 

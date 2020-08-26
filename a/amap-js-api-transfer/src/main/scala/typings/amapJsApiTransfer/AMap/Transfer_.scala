@@ -24,6 +24,7 @@ trait Transfer_ extends EventEmitter {
     * @param date 日期
     */
   def leaveAt(): Unit = js.native
+  def leaveAt(time: js.UndefOr[scala.Nothing], date: String): Unit = js.native
   def leaveAt(time: String): Unit = js.native
   def leaveAt(time: String, date: String): Unit = js.native
   // internal

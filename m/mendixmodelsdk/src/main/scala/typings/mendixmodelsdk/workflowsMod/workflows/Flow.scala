@@ -33,17 +33,17 @@ class Flow protected () extends Element {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def from: WorkflowActivity = js.native
-  def from(newValue: WorkflowActivity): js.Any = js.native
+  def from_=(newValue: WorkflowActivity): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def to: WorkflowActivity = js.native
-  def to(newValue: WorkflowActivity): js.Any = js.native
+  def to_=(newValue: WorkflowActivity): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def value: FlowValue = js.native
-  def value(newValue: FlowValue): js.Any = js.native
+  def value_=(newValue: FlowValue): Unit = js.native
 }
 
 /* static members */

@@ -4,45 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpenFailureEventArgs extends js.Object {
   /** Returns the cancel option value.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** Returns the failure type.
     */
-  var failureType: js.UndefOr[String] = js.undefined
+  var failureType: js.UndefOr[String] = js.native
   /** Returns the Spreadsheet model.
     */
-  var model: js.UndefOr[Model] = js.undefined
+  var model: js.UndefOr[Model] = js.native
   /** Returns the status index.
     */
-  var status: js.UndefOr[Double] = js.undefined
+  var status: js.UndefOr[Double] = js.native
   /** Returns the status in text.
     */
-  var statusText: js.UndefOr[String] = js.undefined
+  var statusText: js.UndefOr[String] = js.native
   /** Returns the name of the event.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object OpenFailureEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    failureType: String = null,
-    model: Model = null,
-    status: js.UndefOr[Double] = js.undefined,
-    statusText: String = null,
-    `type`: String = null
-  ): OpenFailureEventArgs = {
+  def apply(): OpenFailureEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (failureType != null) __obj.updateDynamic("failureType")(failureType.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenFailureEventArgs]
   }
+  @scala.inline
+  implicit class OpenFailureEventArgsOps[Self <: OpenFailureEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setFailureType(value: String): Self = this.set("failureType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureType: Self = this.set("failureType", js.undefined)
+    @scala.inline
+    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusText(value: String): Self = this.set("statusText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusText: Self = this.set("statusText", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -23,6 +23,16 @@ object ɵdid extends js.Object {
     childCount: Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _],
+    props: js.UndefOr[scala.Nothing],
+    outputs: StringDictionary[String]
+  ): NodeDef = js.native
+  def apply(
+    checkIndex: Double,
+    flags: ɵNodeFlags,
+    matchedQueries: js.Array[js.Tuple2[String | Double, ɵQueryValueType]],
+    childCount: Double,
+    ctor: js.Any,
+    deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _],
     props: StringDictionary[js.Tuple2[Double, String]]
   ): NodeDef = js.native
   def apply(
@@ -52,6 +62,16 @@ object ɵdid extends js.Object {
     childCount: Double,
     ctor: js.Any,
     deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _]
+  ): NodeDef = js.native
+  def apply(
+    checkIndex: Double,
+    flags: ɵNodeFlags,
+    matchedQueries: Null,
+    childCount: Double,
+    ctor: js.Any,
+    deps: js.Array[(js.Tuple2[ɵDepFlags, _]) | _],
+    props: js.UndefOr[scala.Nothing],
+    outputs: StringDictionary[String]
   ): NodeDef = js.native
   def apply(
     checkIndex: Double,

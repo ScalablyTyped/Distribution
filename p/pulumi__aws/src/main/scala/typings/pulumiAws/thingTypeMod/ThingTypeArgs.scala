@@ -24,16 +24,34 @@ trait ThingTypeArgs extends js.Object {
 
 object ThingTypeArgs {
   @scala.inline
-  def apply(
-    deprecated: Input[Boolean] = null,
-    name: Input[String] = null,
-    properties: Input[ThingTypeProperties] = null
-  ): ThingTypeArgs = {
+  def apply(): ThingTypeArgs = {
     val __obj = js.Dynamic.literal()
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThingTypeArgs]
   }
+  @scala.inline
+  implicit class ThingTypeArgsOps[Self <: ThingTypeArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeprecated(value: Input[Boolean]): Self = this.set("deprecated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecated: Self = this.set("deprecated", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setProperties(value: Input[ThingTypeProperties]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+  }
+  
 }
 

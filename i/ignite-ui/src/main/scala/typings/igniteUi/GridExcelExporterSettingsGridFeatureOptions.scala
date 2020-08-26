@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridExcelExporterSettingsGridFeatureOptions
   extends /**
   * Option for JSONPDataSourceSettings
@@ -18,7 +19,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "none" No column fixing will be applied in the excel document.
     * "applied" Column fixing will be applied in the excel document.
     */
-  var columnfixing: js.UndefOr[String] = js.undefined
+  var columnfixing: js.UndefOr[String] = js.native
   /**
     * Indicates whether filtering will be applied in the exported table. this is set to none by default, but will change to applied if filtering feature is defined in the igGrid.
     *
@@ -28,7 +29,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "applied" Filtering will be applied in the excel document.
     * "filteredRowsOnly" Filtering will be exported in the excel document.
     */
-  var filtering: js.UndefOr[String] = js.undefined
+  var filtering: js.UndefOr[String] = js.native
   /**
     * Indicates whether hidden columns will be removed from the exported table. This is set to none by default, but will change to applied if hiding feature is defined in the igGrid.
     *
@@ -38,7 +39,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "applied" Hidden columns will be exported as hidden in the excel document.
     * "visibleColumnsOnly" Only visible columns will be exported.
     */
-  var hiding: js.UndefOr[String] = js.undefined
+  var hiding: js.UndefOr[String] = js.native
   /**
     * Indicates whether the rows on the current page or entire data will exported.
     *
@@ -47,7 +48,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "currentPage" Only current page will be exported to the excel document.
     * "allRows" All pages will be exported to the excel document.
     */
-  var paging: js.UndefOr[String] = js.undefined
+  var paging: js.UndefOr[String] = js.native
   /**
     * Indicates whether sorting will be applied in the exported table. This is set_ to none by default, but will change to applied if sorting feature is defined in the igGrid.
     *
@@ -56,7 +57,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "none" No sorting will be applied in the excel document.
     * "applied" Sorting will be applied in the excel document.
     */
-  var sorting: js.UndefOr[String] = js.undefined
+  var sorting: js.UndefOr[String] = js.native
   /**
     * Indicates whether summaries will be added in the exported table. This is set to none by default, but will change to applied if summaries feature is defined in the igGrid.
     *
@@ -65,29 +66,51 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "none" No summaries will be exported to the excel document.
     * "applied" Summaries will be exported to the excel document.
     */
-  var summaries: js.UndefOr[String] = js.undefined
+  var summaries: js.UndefOr[String] = js.native
 }
 
 object GridExcelExporterSettingsGridFeatureOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    columnfixing: String = null,
-    filtering: String = null,
-    hiding: String = null,
-    paging: String = null,
-    sorting: String = null,
-    summaries: String = null
-  ): GridExcelExporterSettingsGridFeatureOptions = {
+  def apply(): GridExcelExporterSettingsGridFeatureOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (columnfixing != null) __obj.updateDynamic("columnfixing")(columnfixing.asInstanceOf[js.Any])
-    if (filtering != null) __obj.updateDynamic("filtering")(filtering.asInstanceOf[js.Any])
-    if (hiding != null) __obj.updateDynamic("hiding")(hiding.asInstanceOf[js.Any])
-    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
-    if (summaries != null) __obj.updateDynamic("summaries")(summaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcelExporterSettingsGridFeatureOptions]
   }
+  @scala.inline
+  implicit class GridExcelExporterSettingsGridFeatureOptionsOps[Self <: GridExcelExporterSettingsGridFeatureOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnfixing(value: String): Self = this.set("columnfixing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnfixing: Self = this.set("columnfixing", js.undefined)
+    @scala.inline
+    def setFiltering(value: String): Self = this.set("filtering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiltering: Self = this.set("filtering", js.undefined)
+    @scala.inline
+    def setHiding(value: String): Self = this.set("hiding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiding: Self = this.set("hiding", js.undefined)
+    @scala.inline
+    def setPaging(value: String): Self = this.set("paging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaging: Self = this.set("paging", js.undefined)
+    @scala.inline
+    def setSorting(value: String): Self = this.set("sorting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSorting: Self = this.set("sorting", js.undefined)
+    @scala.inline
+    def setSummaries(value: String): Self = this.set("summaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaries: Self = this.set("summaries", js.undefined)
+  }
+  
 }
 

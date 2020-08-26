@@ -22,16 +22,34 @@ trait InstanceCapacity extends js.Object {
 
 object InstanceCapacity {
   @scala.inline
-  def apply(
-    AvailableCapacity: js.UndefOr[Integer] = js.undefined,
-    InstanceType: String = null,
-    TotalCapacity: js.UndefOr[Integer] = js.undefined
-  ): InstanceCapacity = {
+  def apply(): InstanceCapacity = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AvailableCapacity)) __obj.updateDynamic("AvailableCapacity")(AvailableCapacity.get.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalCapacity)) __obj.updateDynamic("TotalCapacity")(TotalCapacity.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceCapacity]
   }
+  @scala.inline
+  implicit class InstanceCapacityOps[Self <: InstanceCapacity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailableCapacity(value: Integer): Self = this.set("AvailableCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableCapacity: Self = this.set("AvailableCapacity", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setTotalCapacity(value: Integer): Self = this.set("TotalCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalCapacity: Self = this.set("TotalCapacity", js.undefined)
+  }
+  
 }
 

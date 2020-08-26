@@ -5,25 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SettingType[TItem] extends js.Object {
   /**
     * Show autocomplete only if it's preceded by whitespace. Cannot be combined with allowWhitespace.
     * @default false
     */
-  var afterWhitespace: js.UndefOr[Boolean] = js.undefined
+  var afterWhitespace: js.UndefOr[Boolean] = js.native
   /**
     * Set this to true if you want to provide autocomplete for words (tokens) containing whitespace.
     * @default false
     */
-  var allowWhitespace: js.UndefOr[Boolean] = js.undefined
+  var allowWhitespace: js.UndefOr[Boolean] = js.native
   /**
     * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
     */
-  var component: SFC[ItemComponentProps[TItem]]
+  var component: SFC[ItemComponentProps[TItem]] = js.native
   /**
     * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
     */
-  var dataProvider: DataProviderType[TItem]
+  var dataProvider: DataProviderType[TItem] = js.native
   /**
     * (Optional for string based item. If the item is an object this method is required) This function defines text
     * which will be placed into textarea after the user makes a selection.
@@ -39,23 +40,46 @@ trait SettingType[TItem] extends js.Object {
     */
   var output: js.UndefOr[
     js.Function2[/* item */ TItem, /* trigger */ js.UndefOr[String], TextToReplaceType | String]
-  ] = js.undefined
+  ] = js.native
 }
 
 object SettingType {
   @scala.inline
   def apply[TItem](
     component: SFC[ItemComponentProps[TItem]],
-    dataProvider: /* token */ String => js.Promise[js.Array[TItem]] | js.Array[TItem],
-    afterWhitespace: js.UndefOr[Boolean] = js.undefined,
-    allowWhitespace: js.UndefOr[Boolean] = js.undefined,
-    output: (/* item */ TItem, /* trigger */ js.UndefOr[String]) => TextToReplaceType | String = null
+    dataProvider: /* token */ String => js.Promise[js.Array[TItem]] | js.Array[TItem]
   ): SettingType[TItem] = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dataProvider = js.Any.fromFunction1(dataProvider))
-    if (!js.isUndefined(afterWhitespace)) __obj.updateDynamic("afterWhitespace")(afterWhitespace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowWhitespace)) __obj.updateDynamic("allowWhitespace")(allowWhitespace.get.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(js.Any.fromFunction2(output))
     __obj.asInstanceOf[SettingType[TItem]]
   }
+  @scala.inline
+  implicit class SettingTypeOps[Self <: SettingType[_], TItem] (val x: Self with SettingType[TItem]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComponent(value: SFC[ItemComponentProps[TItem]]): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataProvider(value: /* token */ String => js.Promise[js.Array[TItem]] | js.Array[TItem]): Self = this.set("dataProvider", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAfterWhitespace(value: Boolean): Self = this.set("afterWhitespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterWhitespace: Self = this.set("afterWhitespace", js.undefined)
+    @scala.inline
+    def setAllowWhitespace(value: Boolean): Self = this.set("allowWhitespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowWhitespace: Self = this.set("allowWhitespace", js.undefined)
+    @scala.inline
+    def setOutput(value: (/* item */ TItem, /* trigger */ js.UndefOr[String]) => TextToReplaceType | String): Self = this.set("output", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOutput: Self = this.set("output", js.undefined)
+  }
+  
 }
 

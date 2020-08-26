@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PayPalMobileStatic extends js.Object {
   /**
     * @deprecated
@@ -20,7 +21,7 @@ trait PayPalMobileStatic extends js.Object {
     * @param environment available options are "PayPalEnvironmentNoNetwork", "PayPalEnvironmentProduction" and "PayPalEnvironmentSandbox"
     * @param callback applicationCorrelationID Your server will send this to PayPal in a 'Paypal-Application-Correlation-Id' header.
     */
-  def applicationCorrelationIDForEnvironment(environment: String, completionCallback: js.Function1[/* applicationCorrelationId */ String, Unit]): Unit
+  def applicationCorrelationIDForEnvironment(environment: String, completionCallback: js.Function1[/* applicationCorrelationId */ String, Unit]): Unit = js.native
   /**
     * Once a user has consented to future payments, when the user subsequently initiates a PayPal payment
     * from their device to be completed by your server, PayPal uses a Correlation ID to verify that the
@@ -32,7 +33,7 @@ trait PayPalMobileStatic extends js.Object {
     *
     * @param callback clientMetadataID Your server will send this to PayPal in a 'PayPal-Client-Metadata-Id' header.
     */
-  def clientMetadataID(completionCallback: js.Function1[/* clientMetadataId */ String, Unit]): Unit
+  def clientMetadataID(completionCallback: js.Function1[/* clientMetadataId */ String, Unit]): Unit = js.native
   /**
     * You MUST call this method to initialize the PayPal Mobile SDK.
     *
@@ -45,7 +46,7 @@ trait PayPalMobileStatic extends js.Object {
     *  }
     * @param completionCallback a callback function on success
     */
-  def init(clientIdsForEnvironments: PayPalClientIds, completionCallback: js.Function0[Unit]): Unit
+  def init(clientIdsForEnvironments: PayPalClientIds, completionCallback: js.Function0[Unit]): Unit = js.native
   /**
     * You must preconnect to PayPal to prepare the device for processing payments.
     * This improves the user experience, by making the presentation of the
@@ -57,7 +58,7 @@ trait PayPalMobileStatic extends js.Object {
     *      and merchantUserAgreementURL must be set be set
     * @param completionCallback a callback function on success
     */
-  def prepareToRender(environment: String, configuration: PayPalConfiguration, completionCallback: js.Function0[Unit]): Unit
+  def prepareToRender(environment: String, configuration: PayPalConfiguration, completionCallback: js.Function0[Unit]): Unit = js.native
   /**
     * Please Read Docs on Future Payments at https://github.com/paypal/PayPal-iOS-SDK#future-payments
     *
@@ -67,7 +68,7 @@ trait PayPalMobileStatic extends js.Object {
   def renderFuturePaymentUI(
     completionCallback: js.Function1[/* result */ FuturePaymentResult, Unit],
     cancelCallback: js.Function1[/* cancelReason */ String, Unit]
-  ): Unit
+  ): Unit = js.native
   /**
     * Please Read Docs on Profile Sharing at https://github.com/paypal/PayPal-iOS-SDK#profile-sharing
     *
@@ -80,7 +81,7 @@ trait PayPalMobileStatic extends js.Object {
     scopes: js.Array[String],
     completionCallback: js.Function1[/* result */ js.Any, Unit],
     cancelCallback: js.Function1[/* cancelReason */ String, Unit]
-  ): Unit
+  ): Unit = js.native
   /**
     * Start PayPal UI to collect payment from the user.
     * See https://developer.paypal.com/webapps/developer/docs/integration/mobile/ios-integration-guide/
@@ -94,13 +95,13 @@ trait PayPalMobileStatic extends js.Object {
     payment: PayPalPayment,
     completionCallback: js.Function1[/* result */ SinglePaymentResult, Unit],
     cancelCallback: js.Function1[/* cancelReason */ String, Unit]
-  ): Unit
+  ): Unit = js.native
   /**
     * Retrieve the version of the PayPal iOS SDK library. Useful when contacting support.
     *
     * @param completionCallback a callback function accepting a string
     */
-  def version(completionCallback: js.Function1[/* result */ String, Unit]): Unit
+  def version(completionCallback: js.Function1[/* result */ String, Unit]): Unit = js.native
 }
 
 object PayPalMobileStatic {
@@ -118,5 +119,40 @@ object PayPalMobileStatic {
     val __obj = js.Dynamic.literal(applicationCorrelationIDForEnvironment = js.Any.fromFunction2(applicationCorrelationIDForEnvironment), clientMetadataID = js.Any.fromFunction1(clientMetadataID), init = js.Any.fromFunction2(init), prepareToRender = js.Any.fromFunction3(prepareToRender), renderFuturePaymentUI = js.Any.fromFunction2(renderFuturePaymentUI), renderProfileSharingUI = js.Any.fromFunction3(renderProfileSharingUI), renderSinglePaymentUI = js.Any.fromFunction3(renderSinglePaymentUI), version = js.Any.fromFunction1(version))
     __obj.asInstanceOf[PayPalMobileStatic]
   }
+  @scala.inline
+  implicit class PayPalMobileStaticOps[Self <: PayPalMobileStatic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationCorrelationIDForEnvironment(value: (String, js.Function1[/* applicationCorrelationId */ String, Unit]) => Unit): Self = this.set("applicationCorrelationIDForEnvironment", js.Any.fromFunction2(value))
+    @scala.inline
+    def setClientMetadataID(value: js.Function1[/* clientMetadataId */ String, Unit] => Unit): Self = this.set("clientMetadataID", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInit(value: (PayPalClientIds, js.Function0[Unit]) => Unit): Self = this.set("init", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPrepareToRender(value: (String, PayPalConfiguration, js.Function0[Unit]) => Unit): Self = this.set("prepareToRender", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRenderFuturePaymentUI(
+      value: (js.Function1[/* result */ FuturePaymentResult, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
+    ): Self = this.set("renderFuturePaymentUI", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRenderProfileSharingUI(
+      value: (js.Array[String], js.Function1[/* result */ js.Any, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
+    ): Self = this.set("renderProfileSharingUI", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRenderSinglePaymentUI(
+      value: (PayPalPayment, js.Function1[/* result */ SinglePaymentResult, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
+    ): Self = this.set("renderSinglePaymentUI", js.Any.fromFunction3(value))
+    @scala.inline
+    def setVersion(value: js.Function1[/* result */ String, Unit] => Unit): Self = this.set("version", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait LocalVolumeResourceData extends js.Object {
 
 object LocalVolumeResourceData {
   @scala.inline
-  def apply(
-    DestinationPath: string = null,
-    GroupOwnerSetting: GroupOwnerSetting = null,
-    SourcePath: string = null
-  ): LocalVolumeResourceData = {
+  def apply(): LocalVolumeResourceData = {
     val __obj = js.Dynamic.literal()
-    if (DestinationPath != null) __obj.updateDynamic("DestinationPath")(DestinationPath.asInstanceOf[js.Any])
-    if (GroupOwnerSetting != null) __obj.updateDynamic("GroupOwnerSetting")(GroupOwnerSetting.asInstanceOf[js.Any])
-    if (SourcePath != null) __obj.updateDynamic("SourcePath")(SourcePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalVolumeResourceData]
   }
+  @scala.inline
+  implicit class LocalVolumeResourceDataOps[Self <: LocalVolumeResourceData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationPath(value: string): Self = this.set("DestinationPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPath: Self = this.set("DestinationPath", js.undefined)
+    @scala.inline
+    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = this.set("GroupOwnerSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupOwnerSetting: Self = this.set("GroupOwnerSetting", js.undefined)
+    @scala.inline
+    def setSourcePath(value: string): Self = this.set("SourcePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePath: Self = this.set("SourcePath", js.undefined)
+  }
+  
 }
 

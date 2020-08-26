@@ -18,14 +18,32 @@ trait ListPoliciesGrantingServiceAccessEntry extends js.Object {
 
 object ListPoliciesGrantingServiceAccessEntry {
   @scala.inline
-  def apply(
-    Policies: policyGrantingServiceAccessListType = null,
-    ServiceNamespace: serviceNamespaceType = null
-  ): ListPoliciesGrantingServiceAccessEntry = {
+  def apply(): ListPoliciesGrantingServiceAccessEntry = {
     val __obj = js.Dynamic.literal()
-    if (Policies != null) __obj.updateDynamic("Policies")(Policies.asInstanceOf[js.Any])
-    if (ServiceNamespace != null) __obj.updateDynamic("ServiceNamespace")(ServiceNamespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPoliciesGrantingServiceAccessEntry]
   }
+  @scala.inline
+  implicit class ListPoliciesGrantingServiceAccessEntryOps[Self <: ListPoliciesGrantingServiceAccessEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPoliciesVarargs(value: PolicyGrantingServiceAccess*): Self = this.set("Policies", js.Array(value :_*))
+    @scala.inline
+    def setPolicies(value: policyGrantingServiceAccessListType): Self = this.set("Policies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicies: Self = this.set("Policies", js.undefined)
+    @scala.inline
+    def setServiceNamespace(value: serviceNamespaceType): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceNamespace: Self = this.set("ServiceNamespace", js.undefined)
+  }
+  
 }
 

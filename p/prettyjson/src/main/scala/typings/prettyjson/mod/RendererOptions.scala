@@ -4,49 +4,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RendererOptions extends js.Object {
-  var dashColor: js.UndefOr[String] = js.undefined
-  var defaultIndentation: js.UndefOr[Double] = js.undefined
+  var dashColor: js.UndefOr[String] = js.native
+  var defaultIndentation: js.UndefOr[Double] = js.native
   /**
     * Define behavior for Array objects
     */
-  var emptyArrayMsg: js.UndefOr[String] = js.undefined
+  var emptyArrayMsg: js.UndefOr[String] = js.native
     // default: (empty)
-  var inlineArrays: js.UndefOr[Boolean] = js.undefined
-  var keysColor: js.UndefOr[String] = js.undefined
-  var noAlign: js.UndefOr[Boolean] = js.undefined
+  var inlineArrays: js.UndefOr[Boolean] = js.native
+  var keysColor: js.UndefOr[String] = js.native
+  var noAlign: js.UndefOr[Boolean] = js.native
   /**
     * Color definition
     */
-  var noColor: js.UndefOr[Boolean] = js.undefined
-  var numberColor: js.UndefOr[String] = js.undefined
-  var stringColor: js.UndefOr[String] = js.undefined
+  var noColor: js.UndefOr[Boolean] = js.native
+  var numberColor: js.UndefOr[String] = js.native
+  var stringColor: js.UndefOr[String] = js.native
 }
 
 object RendererOptions {
   @scala.inline
-  def apply(
-    dashColor: String = null,
-    defaultIndentation: js.UndefOr[Double] = js.undefined,
-    emptyArrayMsg: String = null,
-    inlineArrays: js.UndefOr[Boolean] = js.undefined,
-    keysColor: String = null,
-    noAlign: js.UndefOr[Boolean] = js.undefined,
-    noColor: js.UndefOr[Boolean] = js.undefined,
-    numberColor: String = null,
-    stringColor: String = null
-  ): RendererOptions = {
+  def apply(): RendererOptions = {
     val __obj = js.Dynamic.literal()
-    if (dashColor != null) __obj.updateDynamic("dashColor")(dashColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultIndentation)) __obj.updateDynamic("defaultIndentation")(defaultIndentation.get.asInstanceOf[js.Any])
-    if (emptyArrayMsg != null) __obj.updateDynamic("emptyArrayMsg")(emptyArrayMsg.asInstanceOf[js.Any])
-    if (!js.isUndefined(inlineArrays)) __obj.updateDynamic("inlineArrays")(inlineArrays.get.asInstanceOf[js.Any])
-    if (keysColor != null) __obj.updateDynamic("keysColor")(keysColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAlign)) __obj.updateDynamic("noAlign")(noAlign.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor.get.asInstanceOf[js.Any])
-    if (numberColor != null) __obj.updateDynamic("numberColor")(numberColor.asInstanceOf[js.Any])
-    if (stringColor != null) __obj.updateDynamic("stringColor")(stringColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererOptions]
   }
+  @scala.inline
+  implicit class RendererOptionsOps[Self <: RendererOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashColor(value: String): Self = this.set("dashColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashColor: Self = this.set("dashColor", js.undefined)
+    @scala.inline
+    def setDefaultIndentation(value: Double): Self = this.set("defaultIndentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultIndentation: Self = this.set("defaultIndentation", js.undefined)
+    @scala.inline
+    def setEmptyArrayMsg(value: String): Self = this.set("emptyArrayMsg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyArrayMsg: Self = this.set("emptyArrayMsg", js.undefined)
+    @scala.inline
+    def setInlineArrays(value: Boolean): Self = this.set("inlineArrays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInlineArrays: Self = this.set("inlineArrays", js.undefined)
+    @scala.inline
+    def setKeysColor(value: String): Self = this.set("keysColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeysColor: Self = this.set("keysColor", js.undefined)
+    @scala.inline
+    def setNoAlign(value: Boolean): Self = this.set("noAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoAlign: Self = this.set("noAlign", js.undefined)
+    @scala.inline
+    def setNoColor(value: Boolean): Self = this.set("noColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoColor: Self = this.set("noColor", js.undefined)
+    @scala.inline
+    def setNumberColor(value: String): Self = this.set("numberColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberColor: Self = this.set("numberColor", js.undefined)
+    @scala.inline
+    def setStringColor(value: String): Self = this.set("stringColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringColor: Self = this.set("stringColor", js.undefined)
+  }
+  
 }
 

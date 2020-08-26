@@ -6,73 +6,74 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait b2RevoluteJoint extends b2Joint {
   /**
     * Enable/disable the joint limit.
     * @param flag True to enable, false to disable.
     **/
-  def EnableLimit(flag: Boolean): Unit
+  def EnableLimit(flag: Boolean): Unit = js.native
   /**
     * Enable/disable the joint motor.
     * @param flag True to enable, false to diasable.
     **/
-  def EnableMotor(flag: Boolean): Unit
+  def EnableMotor(flag: Boolean): Unit = js.native
   /**
     * Get the current joint angle in radians.
     * @return Joint angle.
     **/
-  def GetJointAngle(): Double
+  def GetJointAngle(): Double = js.native
   /**
     * Get the current joint angle speed in radians per second.
     * @return Joint speed.
     **/
-  def GetJointSpeed(): Double
+  def GetJointSpeed(): Double = js.native
   /**
     * Get the lower joint limit in radians.
     * @return Lower limit.
     **/
-  def GetLowerLimit(): Double
+  def GetLowerLimit(): Double = js.native
   /**
     * Get the motor speed in radians per second.
     * @return Motor speed.
     **/
-  def GetMotorSpeed(): Double
+  def GetMotorSpeed(): Double = js.native
   /**
     * Get the current motor torque, usually in N-m.
     * @return Motor torque.
     **/
-  def GetMotorTorque(): Double
+  def GetMotorTorque(): Double = js.native
   /**
     * Get the upper joint limit in radians.
     * @return Upper limit.
     **/
-  def GetUpperLimit(): Double
+  def GetUpperLimit(): Double = js.native
   /**
     * Is the joint limit enabled?
     * @return True if enabled, false if disabled.
     **/
-  def IsLimitEnabled(): Boolean
+  def IsLimitEnabled(): Boolean = js.native
   /**
     * Is the joint motor enabled?
     * @return True if enabled, false if disabled.
     **/
-  def IsMotorEnabled(): Boolean
+  def IsMotorEnabled(): Boolean = js.native
   /**
     * Set the joint limits in radians.
     * @param lower New lower limit.
     * @param upper New upper limit.
     **/
-  def SetLimits(lower: Double, upper: Double): Unit
+  def SetLimits(lower: Double, upper: Double): Unit = js.native
   /**
     * Set the maximum motor torque, usually in N-m.
     * @param torque New max torque.
     **/
-  def SetMaxMotorTorque(torque: Double): Unit
+  def SetMaxMotorTorque(torque: Double): Unit = js.native
   /**
     * Set the motor speed in radians per second.
     * @param speed New motor speed.
     **/
-  def SetMotorSpeed(speed: Double): Unit
+  def SetMotorSpeed(speed: Double): Unit = js.native
 }
 
 object b2RevoluteJoint {
@@ -106,5 +107,44 @@ object b2RevoluteJoint {
     val __obj = js.Dynamic.literal(EnableLimit = js.Any.fromFunction1(EnableLimit), EnableMotor = js.Any.fromFunction1(EnableMotor), GetAnchorA = js.Any.fromFunction0(GetAnchorA), GetAnchorB = js.Any.fromFunction0(GetAnchorB), GetBodyA = js.Any.fromFunction0(GetBodyA), GetBodyB = js.Any.fromFunction0(GetBodyB), GetJointAngle = js.Any.fromFunction0(GetJointAngle), GetJointSpeed = js.Any.fromFunction0(GetJointSpeed), GetLowerLimit = js.Any.fromFunction0(GetLowerLimit), GetMotorSpeed = js.Any.fromFunction0(GetMotorSpeed), GetMotorTorque = js.Any.fromFunction0(GetMotorTorque), GetNext = js.Any.fromFunction0(GetNext), GetReactionForce = js.Any.fromFunction1(GetReactionForce), GetReactionTorque = js.Any.fromFunction1(GetReactionTorque), GetType = js.Any.fromFunction0(GetType), GetUpperLimit = js.Any.fromFunction0(GetUpperLimit), GetUserData = js.Any.fromFunction0(GetUserData), IsActive = js.Any.fromFunction0(IsActive), IsLimitEnabled = js.Any.fromFunction0(IsLimitEnabled), IsMotorEnabled = js.Any.fromFunction0(IsMotorEnabled), SetLimits = js.Any.fromFunction2(SetLimits), SetMaxMotorTorque = js.Any.fromFunction1(SetMaxMotorTorque), SetMotorSpeed = js.Any.fromFunction1(SetMotorSpeed), SetUserData = js.Any.fromFunction1(SetUserData))
     __obj.asInstanceOf[b2RevoluteJoint]
   }
+  @scala.inline
+  implicit class b2RevoluteJointOps[Self <: b2RevoluteJoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableLimit(value: Boolean => Unit): Self = this.set("EnableLimit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEnableMotor(value: Boolean => Unit): Self = this.set("EnableMotor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetJointAngle(value: () => Double): Self = this.set("GetJointAngle", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetJointSpeed(value: () => Double): Self = this.set("GetJointSpeed", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetLowerLimit(value: () => Double): Self = this.set("GetLowerLimit", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetMotorSpeed(value: () => Double): Self = this.set("GetMotorSpeed", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetMotorTorque(value: () => Double): Self = this.set("GetMotorTorque", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetUpperLimit(value: () => Double): Self = this.set("GetUpperLimit", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsLimitEnabled(value: () => Boolean): Self = this.set("IsLimitEnabled", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsMotorEnabled(value: () => Boolean): Self = this.set("IsMotorEnabled", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetLimits(value: (Double, Double) => Unit): Self = this.set("SetLimits", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetMaxMotorTorque(value: Double => Unit): Self = this.set("SetMaxMotorTorque", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetMotorSpeed(value: Double => Unit): Self = this.set("SetMotorSpeed", js.Any.fromFunction1(value))
+  }
+  
 }
 

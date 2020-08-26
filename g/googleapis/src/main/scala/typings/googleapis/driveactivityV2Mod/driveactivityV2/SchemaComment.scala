@@ -29,18 +29,40 @@ trait SchemaComment extends js.Object {
 
 object SchemaComment {
   @scala.inline
-  def apply(
-    assignment: SchemaAssignment = null,
-    mentionedUsers: js.Array[SchemaUser] = null,
-    post: SchemaPost = null,
-    suggestion: SchemaSuggestion = null
-  ): SchemaComment = {
+  def apply(): SchemaComment = {
     val __obj = js.Dynamic.literal()
-    if (assignment != null) __obj.updateDynamic("assignment")(assignment.asInstanceOf[js.Any])
-    if (mentionedUsers != null) __obj.updateDynamic("mentionedUsers")(mentionedUsers.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
-    if (suggestion != null) __obj.updateDynamic("suggestion")(suggestion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaComment]
   }
+  @scala.inline
+  implicit class SchemaCommentOps[Self <: SchemaComment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignment(value: SchemaAssignment): Self = this.set("assignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignment: Self = this.set("assignment", js.undefined)
+    @scala.inline
+    def setMentionedUsersVarargs(value: SchemaUser*): Self = this.set("mentionedUsers", js.Array(value :_*))
+    @scala.inline
+    def setMentionedUsers(value: js.Array[SchemaUser]): Self = this.set("mentionedUsers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMentionedUsers: Self = this.set("mentionedUsers", js.undefined)
+    @scala.inline
+    def setPost(value: SchemaPost): Self = this.set("post", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePost: Self = this.set("post", js.undefined)
+    @scala.inline
+    def setSuggestion(value: SchemaSuggestion): Self = this.set("suggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestion: Self = this.set("suggestion", js.undefined)
+  }
+  
 }
 

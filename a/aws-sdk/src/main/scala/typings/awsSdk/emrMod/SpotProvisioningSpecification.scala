@@ -26,16 +26,34 @@ trait SpotProvisioningSpecification extends js.Object {
 
 object SpotProvisioningSpecification {
   @scala.inline
-  def apply(
-    TimeoutAction: SpotProvisioningTimeoutAction,
-    TimeoutDurationMinutes: WholeNumber,
-    AllocationStrategy: SpotProvisioningAllocationStrategy = null,
-    BlockDurationMinutes: js.UndefOr[WholeNumber] = js.undefined
-  ): SpotProvisioningSpecification = {
+  def apply(TimeoutAction: SpotProvisioningTimeoutAction, TimeoutDurationMinutes: WholeNumber): SpotProvisioningSpecification = {
     val __obj = js.Dynamic.literal(TimeoutAction = TimeoutAction.asInstanceOf[js.Any], TimeoutDurationMinutes = TimeoutDurationMinutes.asInstanceOf[js.Any])
-    if (AllocationStrategy != null) __obj.updateDynamic("AllocationStrategy")(AllocationStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(BlockDurationMinutes)) __obj.updateDynamic("BlockDurationMinutes")(BlockDurationMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotProvisioningSpecification]
   }
+  @scala.inline
+  implicit class SpotProvisioningSpecificationOps[Self <: SpotProvisioningSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTimeoutAction(value: SpotProvisioningTimeoutAction): Self = this.set("TimeoutAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeoutDurationMinutes(value: WholeNumber): Self = this.set("TimeoutDurationMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllocationStrategy(value: SpotProvisioningAllocationStrategy): Self = this.set("AllocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("AllocationStrategy", js.undefined)
+    @scala.inline
+    def setBlockDurationMinutes(value: WholeNumber): Self = this.set("BlockDurationMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDurationMinutes: Self = this.set("BlockDurationMinutes", js.undefined)
+  }
+  
 }
 

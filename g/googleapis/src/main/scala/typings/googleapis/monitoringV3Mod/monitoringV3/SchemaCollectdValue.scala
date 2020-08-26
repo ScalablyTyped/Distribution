@@ -26,12 +26,34 @@ trait SchemaCollectdValue extends js.Object {
 
 object SchemaCollectdValue {
   @scala.inline
-  def apply(dataSourceName: String = null, dataSourceType: String = null, value: SchemaTypedValue = null): SchemaCollectdValue = {
+  def apply(): SchemaCollectdValue = {
     val __obj = js.Dynamic.literal()
-    if (dataSourceName != null) __obj.updateDynamic("dataSourceName")(dataSourceName.asInstanceOf[js.Any])
-    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCollectdValue]
   }
+  @scala.inline
+  implicit class SchemaCollectdValueOps[Self <: SchemaCollectdValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceName(value: String): Self = this.set("dataSourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceName: Self = this.set("dataSourceName", js.undefined)
+    @scala.inline
+    def setDataSourceType(value: String): Self = this.set("dataSourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceType: Self = this.set("dataSourceType", js.undefined)
+    @scala.inline
+    def setValue(value: SchemaTypedValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

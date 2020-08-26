@@ -5,51 +5,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined graphql.graphql/language/kinds._Kind[keyof graphql.graphql/language/kinds._Kind] */
+/* Inlined {  NAME :'Name',   DOCUMENT :'Document',   OPERATION_DEFINITION :'OperationDefinition',   VARIABLE_DEFINITION :'VariableDefinition',   SELECTION_SET :'SelectionSet',   FIELD :'Field',   ARGUMENT :'Argument',   FRAGMENT_SPREAD :'FragmentSpread',   INLINE_FRAGMENT :'InlineFragment',   FRAGMENT_DEFINITION :'FragmentDefinition',   VARIABLE :'Variable',   INT :'IntValue',   FLOAT :'FloatValue',   STRING :'StringValue',   BOOLEAN :'BooleanValue',   NULL :'NullValue',   ENUM :'EnumValue',   LIST :'ListValue',   OBJECT :'ObjectValue',   OBJECT_FIELD :'ObjectField',   DIRECTIVE :'Directive',   NAMED_TYPE :'NamedType',   LIST_TYPE :'ListType',   NON_NULL_TYPE :'NonNullType',   SCHEMA_DEFINITION :'SchemaDefinition',   OPERATION_TYPE_DEFINITION :'OperationTypeDefinition',   SCALAR_TYPE_DEFINITION :'ScalarTypeDefinition',   OBJECT_TYPE_DEFINITION :'ObjectTypeDefinition',   FIELD_DEFINITION :'FieldDefinition',   INPUT_VALUE_DEFINITION :'InputValueDefinition',   INTERFACE_TYPE_DEFINITION :'InterfaceTypeDefinition',   UNION_TYPE_DEFINITION :'UnionTypeDefinition',   ENUM_TYPE_DEFINITION :'EnumTypeDefinition',   ENUM_VALUE_DEFINITION :'EnumValueDefinition',   INPUT_OBJECT_TYPE_DEFINITION :'InputObjectTypeDefinition',   DIRECTIVE_DEFINITION :'DirectiveDefinition',   SCHEMA_EXTENSION :'SchemaExtension',   SCALAR_TYPE_EXTENSION :'ScalarTypeExtension',   OBJECT_TYPE_EXTENSION :'ObjectTypeExtension',   INTERFACE_TYPE_EXTENSION :'InterfaceTypeExtension',   UNION_TYPE_EXTENSION :'UnionTypeExtension',   ENUM_TYPE_EXTENSION :'EnumTypeExtension',   INPUT_OBJECT_TYPE_EXTENSION :'InputObjectTypeExtension'}[keyof {  NAME :'Name',   DOCUMENT :'Document',   OPERATION_DEFINITION :'OperationDefinition',   VARIABLE_DEFINITION :'VariableDefinition',   SELECTION_SET :'SelectionSet',   FIELD :'Field',   ARGUMENT :'Argument',   FRAGMENT_SPREAD :'FragmentSpread',   INLINE_FRAGMENT :'InlineFragment',   FRAGMENT_DEFINITION :'FragmentDefinition',   VARIABLE :'Variable',   INT :'IntValue',   FLOAT :'FloatValue',   STRING :'StringValue',   BOOLEAN :'BooleanValue',   NULL :'NullValue',   ENUM :'EnumValue',   LIST :'ListValue',   OBJECT :'ObjectValue',   OBJECT_FIELD :'ObjectField',   DIRECTIVE :'Directive',   NAMED_TYPE :'NamedType',   LIST_TYPE :'ListType',   NON_NULL_TYPE :'NonNullType',   SCHEMA_DEFINITION :'SchemaDefinition',   OPERATION_TYPE_DEFINITION :'OperationTypeDefinition',   SCALAR_TYPE_DEFINITION :'ScalarTypeDefinition',   OBJECT_TYPE_DEFINITION :'ObjectTypeDefinition',   FIELD_DEFINITION :'FieldDefinition',   INPUT_VALUE_DEFINITION :'InputValueDefinition',   INTERFACE_TYPE_DEFINITION :'InterfaceTypeDefinition',   UNION_TYPE_DEFINITION :'UnionTypeDefinition',   ENUM_TYPE_DEFINITION :'EnumTypeDefinition',   ENUM_VALUE_DEFINITION :'EnumValueDefinition',   INPUT_OBJECT_TYPE_DEFINITION :'InputObjectTypeDefinition',   DIRECTIVE_DEFINITION :'DirectiveDefinition',   SCHEMA_EXTENSION :'SchemaExtension',   SCALAR_TYPE_EXTENSION :'ScalarTypeExtension',   OBJECT_TYPE_EXTENSION :'ObjectTypeExtension',   INTERFACE_TYPE_EXTENSION :'InterfaceTypeExtension',   UNION_TYPE_EXTENSION :'UnionTypeExtension',   ENUM_TYPE_EXTENSION :'EnumTypeExtension',   INPUT_OBJECT_TYPE_EXTENSION :'InputObjectTypeExtension'}] */
 /* Rewritten from type alias, can be one of: 
-  - typings.graphql.graphqlStrings.NullValue
-  - typings.graphql.graphqlStrings.ScalarTypeDefinition
-  - typings.graphql.graphqlStrings.OperationDefinition
-  - typings.graphql.graphqlStrings.UnionTypeDefinition
-  - typings.graphql.graphqlStrings.NonNullType
-  - typings.graphql.graphqlStrings.NamedType
-  - typings.graphql.graphqlStrings.Directive
-  - typings.graphql.graphqlStrings.EnumValueDefinition
-  - typings.graphql.graphqlStrings.InputObjectTypeExtension
-  - typings.graphql.graphqlStrings.InputValueDefinition
-  - typings.graphql.graphqlStrings.Field_
-  - typings.graphql.graphqlStrings.ListType
-  - typings.graphql.graphqlStrings.UnionTypeExtension
-  - typings.graphql.graphqlStrings.BooleanValue
-  - typings.graphql.graphqlStrings.SchemaDefinition
-  - typings.graphql.graphqlStrings.EnumValue
-  - typings.graphql.graphqlStrings.DirectiveDefinition
-  - typings.graphql.graphqlStrings.ObjectField
-  - typings.graphql.graphqlStrings.InterfaceTypeDefinition
-  - typings.graphql.graphqlStrings.InputObjectTypeDefinition
-  - typings.graphql.graphqlStrings.FragmentSpread
-  - typings.graphql.graphqlStrings.StringValue
   - typings.graphql.graphqlStrings.InterfaceTypeExtension
-  - typings.graphql.graphqlStrings.InlineFragment
-  - typings.graphql.graphqlStrings.Document
-  - typings.graphql.graphqlStrings.IntValue
-  - typings.graphql.graphqlStrings.FieldDefinition
-  - typings.graphql.graphqlStrings.ObjectTypeDefinition
-  - typings.graphql.graphqlStrings.FragmentDefinition
-  - typings.graphql.graphqlStrings.Variable
-  - typings.graphql.graphqlStrings.EnumTypeExtension
   - typings.graphql.graphqlStrings.SelectionSet
-  - typings.graphql.graphqlStrings.Name
-  - typings.graphql.graphqlStrings.ObjectValue
-  - typings.graphql.graphqlStrings.EnumTypeDefinition
-  - typings.graphql.graphqlStrings.FloatValue
-  - typings.graphql.graphqlStrings.Argument
+  - typings.graphql.graphqlStrings.InterfaceTypeDefinition
+  - typings.graphql.graphqlStrings.OperationDefinition
   - typings.graphql.graphqlStrings.VariableDefinition
-  - typings.graphql.graphqlStrings.ListValue
-  - typings.graphql.graphqlStrings.SchemaExtension
+  - typings.graphql.graphqlStrings.ListType
+  - typings.graphql.graphqlStrings.InlineFragment
+  - typings.graphql.graphqlStrings.DirectiveDefinition
+  - typings.graphql.graphqlStrings.EnumValue
+  - typings.graphql.graphqlStrings.Directive
+  - typings.graphql.graphqlStrings.UnionTypeDefinition
   - typings.graphql.graphqlStrings.OperationTypeDefinition
-  - typings.graphql.graphqlStrings.ObjectTypeExtension
+  - typings.graphql.graphqlStrings.IntValue
+  - typings.graphql.graphqlStrings.SchemaDefinition
+  - typings.graphql.graphqlStrings.StringValue
+  - typings.graphql.graphqlStrings.NullValue
+  - typings.graphql.graphqlStrings.BooleanValue
+  - typings.graphql.graphqlStrings.SchemaExtension
+  - typings.graphql.graphqlStrings.FloatValue
+  - typings.graphql.graphqlStrings.Document
+  - typings.graphql.graphqlStrings.NamedType
+  - typings.graphql.graphqlStrings.Name
+  - typings.graphql.graphqlStrings.EnumValueDefinition
+  - typings.graphql.graphqlStrings.UnionTypeExtension
+  - typings.graphql.graphqlStrings.Argument
+  - typings.graphql.graphqlStrings.ListValue
+  - typings.graphql.graphqlStrings.EnumTypeDefinition
+  - typings.graphql.graphqlStrings.NonNullType
+  - typings.graphql.graphqlStrings.InputObjectTypeDefinition
+  - typings.graphql.graphqlStrings.FragmentDefinition
+  - typings.graphql.graphqlStrings.EnumTypeExtension
+  - typings.graphql.graphqlStrings.Variable
+  - typings.graphql.graphqlStrings.ObjectValue
+  - typings.graphql.graphqlStrings.ObjectField
+  - typings.graphql.graphqlStrings.ScalarTypeDefinition
   - typings.graphql.graphqlStrings.ScalarTypeExtension
+  - typings.graphql.graphqlStrings.InputObjectTypeExtension
+  - typings.graphql.graphqlStrings.ObjectTypeDefinition
+  - typings.graphql.graphqlStrings.ObjectTypeExtension
+  - typings.graphql.graphqlStrings.InputValueDefinition
+  - typings.graphql.graphqlStrings.FieldDefinition
+  - typings.graphql.graphqlStrings.FragmentSpread
+  - typings.graphql.graphqlStrings.Field_
 */
 trait KindEnum extends js.Object
 

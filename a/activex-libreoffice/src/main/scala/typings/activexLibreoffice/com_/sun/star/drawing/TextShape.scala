@@ -29,6 +29,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service is for a text shape. */
+@js.native
 trait TextShape
   extends Shape
      with FillProperties
@@ -38,7 +39,7 @@ trait TextShape
      with TextProperties
      with RotationDescriptor {
   /** This is the radius of the corners. */
-  var CornerRadius: Double
+  var CornerRadius: Double = js.native
 }
 
 object TextShape {
@@ -158,5 +159,20 @@ object TextShape {
     js.Dynamic.global.Object.assign(__obj, TextProperties)
     __obj.asInstanceOf[TextShape]
   }
+  @scala.inline
+  implicit class TextShapeOps[Self <: TextShape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCornerRadius(value: Double): Self = this.set("CornerRadius", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Browser extends js.Object {
-  var browser: js.UndefOr[LoggingPreferences] = js.undefined
-  var client: js.UndefOr[LoggingPreferences] = js.undefined
-  var driver: js.UndefOr[LoggingPreferences] = js.undefined
-  var server: js.UndefOr[LoggingPreferences] = js.undefined
+  var browser: js.UndefOr[LoggingPreferences] = js.native
+  var client: js.UndefOr[LoggingPreferences] = js.native
+  var driver: js.UndefOr[LoggingPreferences] = js.native
+  var server: js.UndefOr[LoggingPreferences] = js.native
 }
 
 object Browser {
   @scala.inline
-  def apply(
-    browser: LoggingPreferences = null,
-    client: LoggingPreferences = null,
-    driver: LoggingPreferences = null,
-    server: LoggingPreferences = null
-  ): Browser = {
+  def apply(): Browser = {
     val __obj = js.Dynamic.literal()
-    if (browser != null) __obj.updateDynamic("browser")(browser.asInstanceOf[js.Any])
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (driver != null) __obj.updateDynamic("driver")(driver.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]
   }
+  @scala.inline
+  implicit class BrowserOps[Self <: Browser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrowser(value: LoggingPreferences): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowser: Self = this.set("browser", js.undefined)
+    @scala.inline
+    def setClient(value: LoggingPreferences): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("client", js.undefined)
+    @scala.inline
+    def setDriver(value: LoggingPreferences): Self = this.set("driver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriver: Self = this.set("driver", js.undefined)
+    @scala.inline
+    def setServer(value: LoggingPreferences): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServer: Self = this.set("server", js.undefined)
+  }
+  
 }
 

@@ -53,6 +53,7 @@ object ecs extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ClusterArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -66,7 +67,9 @@ object ecs extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
+    def this(name: String) = this()
     def this(name: String, args: ServiceArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -84,14 +87,14 @@ object ecs extends js.Object {
     def this(name: String, args: TaskDefinitionArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] with GetClusterResult = js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] with GetClusterResult = js.native
-  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] with GetContainerDefinitionResult = js.native
-  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] with GetContainerDefinitionResult = js.native
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] with GetServiceResult = js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] with GetServiceResult = js.native
-  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] with GetTaskDefinitionResult = js.native
-  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] with GetTaskDefinitionResult = js.native
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = js.native
+  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = js.native
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = js.native
+  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = js.native
   /* static members */
   @js.native
   object CapacityProvider extends js.Object {
@@ -102,8 +105,10 @@ object ecs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
     def get(name: String, id: Input[ID], state: CapacityProviderState): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
     def get(name: String, id: Input[ID], state: CapacityProviderState, opts: CustomResourceOptions): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
     /**
@@ -123,8 +128,10 @@ object ecs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.ecsClusterMod.Cluster = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecsClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.ecsClusterMod.Cluster = js.native
     def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.ecsClusterMod.Cluster = js.native
     /**
@@ -144,8 +151,10 @@ object ecs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.serviceMod.Service = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serviceMod.Service = js.native
     def get(name: String, id: Input[ID], state: ServiceState): typings.pulumiAws.serviceMod.Service = js.native
     def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): typings.pulumiAws.serviceMod.Service = js.native
     /**
@@ -165,8 +174,10 @@ object ecs extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
     def get(name: String, id: Input[ID], state: TaskDefinitionState): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
     def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
     /**

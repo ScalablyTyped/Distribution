@@ -26,11 +26,32 @@ trait SchemaManualRuleGroup extends js.Object {
 
 object SchemaManualRuleGroup {
   @scala.inline
-  def apply(groupName: SchemaExtendedValue = null, items: js.Array[SchemaExtendedValue] = null): SchemaManualRuleGroup = {
+  def apply(): SchemaManualRuleGroup = {
     val __obj = js.Dynamic.literal()
-    if (groupName != null) __obj.updateDynamic("groupName")(groupName.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaManualRuleGroup]
   }
+  @scala.inline
+  implicit class SchemaManualRuleGroupOps[Self <: SchemaManualRuleGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupName(value: SchemaExtendedValue): Self = this.set("groupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("groupName", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: SchemaExtendedValue*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[SchemaExtendedValue]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+  }
+  
 }
 

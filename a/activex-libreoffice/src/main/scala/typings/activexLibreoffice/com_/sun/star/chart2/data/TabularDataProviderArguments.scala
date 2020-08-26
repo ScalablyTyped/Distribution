@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabularDataProviderArguments extends js.Object {
   /**
     * the range address string spanning all data.
@@ -22,14 +23,14 @@ trait TabularDataProviderArguments extends js.Object {
     * ambiguous, i.e., a splitting of this range would not yield the same result, this property should be empty. The latter is the case, when ranges are
     * overlapping, the lengths of sequences are not equal or even if the order of two sequences is swapped (e.g. data comes from column A, C, B).
     */
-  var CellRangeRepresentation: String
+  var CellRangeRepresentation: String = js.native
   /**
     * determines, whether data sequences are created out of columns or rows in a table.
     *
     * If this property is not given as argument it is assumed to com::sun::star::chart::ChartDataRowSource::COLUMNS, i.e., the default is "take data from
     * columns".
     */
-  var DataRowSource: ChartDataRowSource
+  var DataRowSource: ChartDataRowSource = js.native
   /**
     * If data comes from columns, the first row will provide the labels for all sequences, if data comes from rows, the first column will provide the labels
     * for all sequences.
@@ -39,7 +40,7 @@ trait TabularDataProviderArguments extends js.Object {
     *
     * If this property is not given as argument it is assumed to be `FALSE` , i.e., the default is "no labels".
     */
-  var FirstCellAsLabel: Boolean
+  var FirstCellAsLabel: Boolean = js.native
   /**
     * If `FALSE` the data provider may create a data sequence containing generated categories that fit the rest of the data, like e.g. "Row 12", "Row 13",
     * etc.
@@ -50,7 +51,7 @@ trait TabularDataProviderArguments extends js.Object {
     * The generic category labeled sequence returned should be the first one in the returned {@link XDataSource} . It needs no label. The values should have
     * their role set to "categories". The generic strings returned should also be localized.
     */
-  var HasCategories: Boolean
+  var HasCategories: Boolean = js.native
   /**
     * determines the order of the created labeled sequences
     *
@@ -63,12 +64,12 @@ trait TabularDataProviderArguments extends js.Object {
     * If the given SequenceMapping does not cover all existing labeled sequences just put the remaining sequences in old order behind the others. For
     * example you have 4 sequences and a SequenceMapping [3,1]. The result should be a as if [3,1,0,2] was given.
     */
-  var SequenceMapping: SafeArray[Double]
+  var SequenceMapping: SafeArray[Double] = js.native
   /**
     * This property is for providing proprietary table indexes for each table appearing in a range given in CellRangeRepresentation.
     * @deprecated Deprecated  This argument is supported by Spreadsheets in order to be able to export a document into the StarOffice 5.0 binary format.  Example:
     */
-  var TableNumberList: String
+  var TableNumberList: String = js.native
 }
 
 object TabularDataProviderArguments {
@@ -84,5 +85,30 @@ object TabularDataProviderArguments {
     val __obj = js.Dynamic.literal(CellRangeRepresentation = CellRangeRepresentation.asInstanceOf[js.Any], DataRowSource = DataRowSource.asInstanceOf[js.Any], FirstCellAsLabel = FirstCellAsLabel.asInstanceOf[js.Any], HasCategories = HasCategories.asInstanceOf[js.Any], SequenceMapping = SequenceMapping.asInstanceOf[js.Any], TableNumberList = TableNumberList.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabularDataProviderArguments]
   }
+  @scala.inline
+  implicit class TabularDataProviderArgumentsOps[Self <: TabularDataProviderArguments] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellRangeRepresentation(value: String): Self = this.set("CellRangeRepresentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataRowSource(value: ChartDataRowSource): Self = this.set("DataRowSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFirstCellAsLabel(value: Boolean): Self = this.set("FirstCellAsLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasCategories(value: Boolean): Self = this.set("HasCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSequenceMapping(value: SafeArray[Double]): Self = this.set("SequenceMapping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableNumberList(value: String): Self = this.set("TableNumberList", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -30,20 +30,42 @@ trait UpgradeTarget extends js.Object {
 
 object UpgradeTarget {
   @scala.inline
-  def apply(
-    AutoUpgrade: js.UndefOr[Boolean] = js.undefined,
-    Description: String = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    IsMajorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
-  ): UpgradeTarget = {
+  def apply(): UpgradeTarget = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoUpgrade)) __obj.updateDynamic("AutoUpgrade")(AutoUpgrade.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsMajorVersionUpgrade)) __obj.updateDynamic("IsMajorVersionUpgrade")(IsMajorVersionUpgrade.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeTarget]
   }
+  @scala.inline
+  implicit class UpgradeTargetOps[Self <: UpgradeTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoUpgrade(value: Boolean): Self = this.set("AutoUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoUpgrade: Self = this.set("AutoUpgrade", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setIsMajorVersionUpgrade(value: Boolean): Self = this.set("IsMajorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMajorVersionUpgrade: Self = this.set("IsMajorVersionUpgrade", js.undefined)
+  }
+  
 }
 

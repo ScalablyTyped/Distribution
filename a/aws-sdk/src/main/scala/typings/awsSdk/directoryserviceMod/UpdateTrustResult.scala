@@ -15,11 +15,30 @@ trait UpdateTrustResult extends js.Object {
 
 object UpdateTrustResult {
   @scala.inline
-  def apply(RequestId: RequestId = null, TrustId: TrustId = null): UpdateTrustResult = {
+  def apply(): UpdateTrustResult = {
     val __obj = js.Dynamic.literal()
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (TrustId != null) __obj.updateDynamic("TrustId")(TrustId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTrustResult]
   }
+  @scala.inline
+  implicit class UpdateTrustResultOps[Self <: UpdateTrustResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequestId(value: RequestId): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setTrustId(value: TrustId): Self = this.set("TrustId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrustId: Self = this.set("TrustId", js.undefined)
+  }
+  
 }
 

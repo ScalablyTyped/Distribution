@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
+  - typings.pulumiAws.pulumiAwsStrings.`af-south-1`
   - typings.pulumiAws.pulumiAwsStrings.`ap-east-1`
   - typings.pulumiAws.pulumiAwsStrings.`ap-northeast-1`
   - typings.pulumiAws.pulumiAwsStrings.`ap-northeast-2`
@@ -19,6 +20,7 @@ import scala.scalajs.js.annotation._
   - typings.pulumiAws.pulumiAwsStrings.`eu-west-1`
   - typings.pulumiAws.pulumiAwsStrings.`eu-west-2`
   - typings.pulumiAws.pulumiAwsStrings.`eu-west-3`
+  - typings.pulumiAws.pulumiAwsStrings.`eu-south-1`
   - typings.pulumiAws.pulumiAwsStrings.`me-south-1`
   - typings.pulumiAws.pulumiAwsStrings.`sa-east-1`
   - typings.pulumiAws.pulumiAwsStrings.`us-east-1`
@@ -29,6 +31,8 @@ import scala.scalajs.js.annotation._
 trait Region extends js.Object
 
 object Region {
+  @scala.inline
+  def `af-south-1`: typings.pulumiAws.pulumiAwsStrings.`af-south-1` = "af-south-1".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`af-south-1`]
   @scala.inline
   def `ap-east-1`: typings.pulumiAws.pulumiAwsStrings.`ap-east-1` = "ap-east-1".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`ap-east-1`]
   @scala.inline
@@ -51,6 +55,8 @@ object Region {
   def `eu-central-1`: typings.pulumiAws.pulumiAwsStrings.`eu-central-1` = "eu-central-1".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`eu-central-1`]
   @scala.inline
   def `eu-north-1`: typings.pulumiAws.pulumiAwsStrings.`eu-north-1` = "eu-north-1".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`eu-north-1`]
+  @scala.inline
+  def `eu-south-1`: typings.pulumiAws.pulumiAwsStrings.`eu-south-1` = "eu-south-1".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`eu-south-1`]
   @scala.inline
   def `eu-west-1`: typings.pulumiAws.pulumiAwsStrings.`eu-west-1` = "eu-west-1".asInstanceOf[typings.pulumiAws.pulumiAwsStrings.`eu-west-1`]
   @scala.inline

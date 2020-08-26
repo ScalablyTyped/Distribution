@@ -36,18 +36,40 @@ trait SchemaInvideoPromotion extends js.Object {
 
 object SchemaInvideoPromotion {
   @scala.inline
-  def apply(
-    defaultTiming: SchemaInvideoTiming = null,
-    items: js.Array[SchemaPromotedItem] = null,
-    position: SchemaInvideoPosition = null,
-    useSmartTiming: js.UndefOr[Boolean] = js.undefined
-  ): SchemaInvideoPromotion = {
+  def apply(): SchemaInvideoPromotion = {
     val __obj = js.Dynamic.literal()
-    if (defaultTiming != null) __obj.updateDynamic("defaultTiming")(defaultTiming.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSmartTiming)) __obj.updateDynamic("useSmartTiming")(useSmartTiming.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInvideoPromotion]
   }
+  @scala.inline
+  implicit class SchemaInvideoPromotionOps[Self <: SchemaInvideoPromotion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultTiming(value: SchemaInvideoTiming): Self = this.set("defaultTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultTiming: Self = this.set("defaultTiming", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: SchemaPromotedItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[SchemaPromotedItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setPosition(value: SchemaInvideoPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setUseSmartTiming(value: Boolean): Self = this.set("useSmartTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseSmartTiming: Self = this.set("useSmartTiming", js.undefined)
+  }
+  
 }
 

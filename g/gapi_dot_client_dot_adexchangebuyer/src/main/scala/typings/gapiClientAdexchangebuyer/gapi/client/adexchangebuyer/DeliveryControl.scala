@@ -4,24 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeliveryControl extends js.Object {
-  var creativeBlockingLevel: js.UndefOr[String] = js.undefined
-  var deliveryRateType: js.UndefOr[String] = js.undefined
-  var frequencyCaps: js.UndefOr[js.Array[DeliveryControlFrequencyCap]] = js.undefined
+  var creativeBlockingLevel: js.UndefOr[String] = js.native
+  var deliveryRateType: js.UndefOr[String] = js.native
+  var frequencyCaps: js.UndefOr[js.Array[DeliveryControlFrequencyCap]] = js.native
 }
 
 object DeliveryControl {
   @scala.inline
-  def apply(
-    creativeBlockingLevel: String = null,
-    deliveryRateType: String = null,
-    frequencyCaps: js.Array[DeliveryControlFrequencyCap] = null
-  ): DeliveryControl = {
+  def apply(): DeliveryControl = {
     val __obj = js.Dynamic.literal()
-    if (creativeBlockingLevel != null) __obj.updateDynamic("creativeBlockingLevel")(creativeBlockingLevel.asInstanceOf[js.Any])
-    if (deliveryRateType != null) __obj.updateDynamic("deliveryRateType")(deliveryRateType.asInstanceOf[js.Any])
-    if (frequencyCaps != null) __obj.updateDynamic("frequencyCaps")(frequencyCaps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryControl]
   }
+  @scala.inline
+  implicit class DeliveryControlOps[Self <: DeliveryControl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreativeBlockingLevel(value: String): Self = this.set("creativeBlockingLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeBlockingLevel: Self = this.set("creativeBlockingLevel", js.undefined)
+    @scala.inline
+    def setDeliveryRateType(value: String): Self = this.set("deliveryRateType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryRateType: Self = this.set("deliveryRateType", js.undefined)
+    @scala.inline
+    def setFrequencyCapsVarargs(value: DeliveryControlFrequencyCap*): Self = this.set("frequencyCaps", js.Array(value :_*))
+    @scala.inline
+    def setFrequencyCaps(value: js.Array[DeliveryControlFrequencyCap]): Self = this.set("frequencyCaps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrequencyCaps: Self = this.set("frequencyCaps", js.undefined)
+  }
+  
 }
 

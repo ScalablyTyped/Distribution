@@ -12,11 +12,32 @@ trait ReportTime extends js.Object {
 
 object ReportTime {
   @scala.inline
-  def apply(reportTime: String = null, systemRamFreeInfo: js.Array[String] = null): ReportTime = {
+  def apply(): ReportTime = {
     val __obj = js.Dynamic.literal()
-    if (reportTime != null) __obj.updateDynamic("reportTime")(reportTime.asInstanceOf[js.Any])
-    if (systemRamFreeInfo != null) __obj.updateDynamic("systemRamFreeInfo")(systemRamFreeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportTime]
   }
+  @scala.inline
+  implicit class ReportTimeOps[Self <: ReportTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReportTime(value: String): Self = this.set("reportTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportTime: Self = this.set("reportTime", js.undefined)
+    @scala.inline
+    def setSystemRamFreeInfoVarargs(value: String*): Self = this.set("systemRamFreeInfo", js.Array(value :_*))
+    @scala.inline
+    def setSystemRamFreeInfo(value: js.Array[String]): Self = this.set("systemRamFreeInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemRamFreeInfo: Self = this.set("systemRamFreeInfo", js.undefined)
+  }
+  
 }
 

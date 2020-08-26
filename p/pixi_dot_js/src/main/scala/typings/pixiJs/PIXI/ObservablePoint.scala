@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ObservablePoint extends IPoint {
+  def clone(cb: js.UndefOr[scala.Nothing], scope: js.Any): ObservablePoint = js.native
   def clone(cb: js.Function1[/* repeated */ js.Any, _]): ObservablePoint = js.native
   def clone(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any): ObservablePoint = js.native
 }

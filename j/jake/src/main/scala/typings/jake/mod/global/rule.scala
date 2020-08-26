@@ -18,7 +18,29 @@ object rule extends js.Object {
     * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
     */
   def apply(pattern: RegExp, source: String): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.UndefOr[scala.Nothing],
+    opts: TaskOptions
+  ): Unit = js.native
+  def apply(pattern: RegExp, source: String, prereqs: js.UndefOr[scala.Nothing], action: js.Function0[Unit]): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: String,
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.Function0[Unit],
+    opts: TaskOptions
+  ): Unit = js.native
   def apply(pattern: RegExp, source: String, prereqs: js.Array[String]): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: String,
+    prereqs: js.Array[String],
+    action: js.UndefOr[scala.Nothing],
+    opts: TaskOptions
+  ): Unit = js.native
   def apply(pattern: RegExp, source: String, prereqs: js.Array[String], action: js.Function0[Unit]): Unit = js.native
   def apply(
     pattern: RegExp,
@@ -28,7 +50,34 @@ object rule extends js.Object {
     opts: TaskOptions
   ): Unit = js.native
   def apply(pattern: RegExp, source: js.Function1[/* name */ String, String]): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: js.Function1[/* name */ String, String],
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.UndefOr[scala.Nothing],
+    opts: TaskOptions
+  ): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: js.Function1[/* name */ String, String],
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.Function0[Unit]
+  ): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: js.Function1[/* name */ String, String],
+    prereqs: js.UndefOr[scala.Nothing],
+    action: js.Function0[Unit],
+    opts: TaskOptions
+  ): Unit = js.native
   def apply(pattern: RegExp, source: js.Function1[/* name */ String, String], prereqs: js.Array[String]): Unit = js.native
+  def apply(
+    pattern: RegExp,
+    source: js.Function1[/* name */ String, String],
+    prereqs: js.Array[String],
+    action: js.UndefOr[scala.Nothing],
+    opts: TaskOptions
+  ): Unit = js.native
   def apply(
     pattern: RegExp,
     source: js.Function1[/* name */ String, String],

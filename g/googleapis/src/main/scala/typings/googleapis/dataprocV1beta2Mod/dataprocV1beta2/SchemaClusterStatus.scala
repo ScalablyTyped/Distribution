@@ -30,18 +30,38 @@ trait SchemaClusterStatus extends js.Object {
 
 object SchemaClusterStatus {
   @scala.inline
-  def apply(
-    detail: String = null,
-    state: String = null,
-    stateStartTime: String = null,
-    substate: String = null
-  ): SchemaClusterStatus = {
+  def apply(): SchemaClusterStatus = {
     val __obj = js.Dynamic.literal()
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (stateStartTime != null) __obj.updateDynamic("stateStartTime")(stateStartTime.asInstanceOf[js.Any])
-    if (substate != null) __obj.updateDynamic("substate")(substate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterStatus]
   }
+  @scala.inline
+  implicit class SchemaClusterStatusOps[Self <: SchemaClusterStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStateStartTime(value: String): Self = this.set("stateStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateStartTime: Self = this.set("stateStartTime", js.undefined)
+    @scala.inline
+    def setSubstate(value: String): Self = this.set("substate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstate: Self = this.set("substate", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Detects if a file is binary in Node.js. Similar to Perl's -B.
 | ------------------ | :-------------: |
 | Full name          | isbinaryfile |
 | Keywords           | text, binary, encoding, istext, is text, isbinary, is binary, is text or binary, is text or binary file, isbinaryfile, is binary file, istextfile, is text file |
-| # releases         | 7 |
-| # dependents       | 272 |
-| # downloads        | 91147851 |
+| # releases         | 6 |
+| # dependents       | 274 |
+| # downloads        | 91609056 |
 | # stars            | 3 |
 
 ## Links

@@ -28,8 +28,66 @@ class LayerVariable protected ()
     */
   def this(`val`: Tensor[Rank]) = this()
   def this(`val`: Tensor[Rank], dtype: DataType) = this()
+  def this(`val`: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String) = this()
   def this(`val`: Tensor[Rank], dtype: DataType, name: String) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    trainable: Boolean
+  ) = this()
+  def this(`val`: Tensor[Rank], dtype: js.UndefOr[scala.Nothing], name: String, trainable: Boolean) = this()
+  def this(`val`: Tensor[Rank], dtype: DataType, name: js.UndefOr[scala.Nothing], trainable: Boolean) = this()
   def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    trainable: Boolean,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: js.UndefOr[scala.Nothing],
+    name: String,
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: js.UndefOr[scala.Nothing],
+    name: String,
+    trainable: Boolean,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: DataType,
+    name: js.UndefOr[scala.Nothing],
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: DataType,
+    name: js.UndefOr[scala.Nothing],
+    trainable: Boolean,
+    constraint: Constraint
+  ) = this()
+  def this(
+    `val`: Tensor[Rank],
+    dtype: DataType,
+    name: String,
+    trainable: js.UndefOr[scala.Nothing],
+    constraint: Constraint
+  ) = this()
   def this(`val`: Tensor[Rank], dtype: DataType, name: String, trainable: Boolean, constraint: Constraint) = this()
 }
 

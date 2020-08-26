@@ -6,27 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DateTimeFormats extends js.Object {
-  var dateTimeFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.DateTimeFormats] = js.undefined
-  var messages: js.UndefOr[LocaleMessages] = js.undefined
-  var numberFormats: js.UndefOr[NumberFormats] = js.undefined
-  var sharedMessages: js.UndefOr[LocaleMessages] = js.undefined
+  var dateTimeFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.DateTimeFormats] = js.native
+  var messages: js.UndefOr[LocaleMessages] = js.native
+  var numberFormats: js.UndefOr[NumberFormats] = js.native
+  var sharedMessages: js.UndefOr[LocaleMessages] = js.native
 }
 
 object DateTimeFormats {
   @scala.inline
-  def apply(
-    dateTimeFormats: typings.vueI18n.mod.VueI18n.DateTimeFormats = null,
-    messages: LocaleMessages = null,
-    numberFormats: NumberFormats = null,
-    sharedMessages: LocaleMessages = null
-  ): DateTimeFormats = {
+  def apply(): DateTimeFormats = {
     val __obj = js.Dynamic.literal()
-    if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats.asInstanceOf[js.Any])
-    if (sharedMessages != null) __obj.updateDynamic("sharedMessages")(sharedMessages.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeFormats]
   }
+  @scala.inline
+  implicit class DateTimeFormatsOps[Self <: DateTimeFormats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDateTimeFormats(value: typings.vueI18n.mod.VueI18n.DateTimeFormats): Self = this.set("dateTimeFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTimeFormats: Self = this.set("dateTimeFormats", js.undefined)
+    @scala.inline
+    def setMessages(value: LocaleMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setNumberFormats(value: NumberFormats): Self = this.set("numberFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberFormats: Self = this.set("numberFormats", js.undefined)
+    @scala.inline
+    def setSharedMessages(value: LocaleMessages): Self = this.set("sharedMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedMessages: Self = this.set("sharedMessages", js.undefined)
+  }
+  
 }
 

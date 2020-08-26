@@ -1,10 +1,10 @@
 package typings.styledSystem.mod
 
-import typings.csstype.mod.FlexWrapProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlexWrapProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Object {
   /**
     * The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines.
@@ -12,15 +12,45 @@ trait FlexWrapProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends js.Ob
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
     */
-  var flexWrap: js.UndefOr[ResponsiveValue[FlexWrapProperty, ThemeType]] = js.undefined
+  var flexWrap: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FlexWrapProperty */ _, 
+      ThemeType
+    ]
+  ] = js.native
 }
 
 object FlexWrapProps {
   @scala.inline
-  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](flexWrap: js.UndefOr[Null | (ResponsiveValue[FlexWrapProperty, ThemeType])] = js.undefined): FlexWrapProps[ThemeType] = {
+  def apply[/* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType](): FlexWrapProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flexWrap)) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexWrapProps[ThemeType]]
   }
+  @scala.inline
+  implicit class FlexWrapPropsOps[Self <: FlexWrapProps[_], /* <: typings.styledSystem.mod.Theme[typings.styledSystem.mod.TLengthStyledSystem] */ ThemeType] (val x: Self with FlexWrapProps[ThemeType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlexWrapVarargs(value: (js.Any | Null)*): Self = this.set("flexWrap", js.Array(value :_*))
+    @scala.inline
+    def setFlexWrap(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.FlexWrapProperty */ _, 
+          ThemeType
+        ]
+    ): Self = this.set("flexWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexWrap: Self = this.set("flexWrap", js.undefined)
+    @scala.inline
+    def setFlexWrapNull: Self = this.set("flexWrap", null)
+  }
+  
 }
 

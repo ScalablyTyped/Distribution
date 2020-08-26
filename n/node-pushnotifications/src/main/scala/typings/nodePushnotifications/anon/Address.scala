@@ -5,98 +5,157 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Address extends js.Object {
-  var address: js.UndefOr[String] = js.undefined
-  var autoAdjustCache: js.UndefOr[Boolean] = js.undefined
-  var buffersNotifications: js.UndefOr[Boolean] = js.undefined
+  var address: js.UndefOr[String] = js.native
+  var autoAdjustCache: js.UndefOr[Boolean] = js.native
+  var buffersNotifications: js.UndefOr[Boolean] = js.native
   /**
     * An array of trusted certificates. Each element should contain either a filename to load, or a
     * Buffer/String (in PEM format) to be used directly. If this is omitted several well known "root" CAs
     * will be used. - You may need to use this as some environments don't include the CA used by
     * Apple (entrust_2048).
     */
-  var ca: js.UndefOr[js.Array[Buffer | String]] = js.undefined
-  var cacheLength: js.UndefOr[Double] = js.undefined
+  var ca: js.UndefOr[js.Array[Buffer | String]] = js.native
+  var cacheLength: js.UndefOr[Double] = js.native
   /**
     * The filename of the connection certificate to load from disk, or a Buffer/String containing the
     * certificate data.
     */
-  var cert: js.UndefOr[String] = js.undefined
-  var connectTimeout: js.UndefOr[Double] = js.undefined
-  var connectionRetryLimit: js.UndefOr[Double] = js.undefined
-  var connectionTimeout: js.UndefOr[Double] = js.undefined
-  var disableEPIPEFix: js.UndefOr[Boolean] = js.undefined
-  var disableNagle: js.UndefOr[Boolean] = js.undefined
-  var fastMode: js.UndefOr[Boolean] = js.undefined
+  var cert: js.UndefOr[String] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.native
+  var connectionRetryLimit: js.UndefOr[Double] = js.native
+  var connectionTimeout: js.UndefOr[Double] = js.native
+  var disableEPIPEFix: js.UndefOr[Boolean] = js.native
+  var disableNagle: js.UndefOr[Boolean] = js.native
+  var fastMode: js.UndefOr[Boolean] = js.native
   /** The filename of the connection key to load from disk, or a Buffer or String containing the key data. */
-  var key: js.UndefOr[String] = js.undefined
-  var maxConnections: js.UndefOr[Double] = js.undefined
-  var minConnections: js.UndefOr[Double] = js.undefined
+  var key: js.UndefOr[String] = js.native
+  var maxConnections: js.UndefOr[Double] = js.native
+  var minConnections: js.UndefOr[Double] = js.native
   /** The passphrase for the connection key, if required */
-  var passphrase: js.UndefOr[String] = js.undefined
+  var passphrase: js.UndefOr[String] = js.native
   /**
     * File path for private key, certificate and CA certs in PFX or PKCS12 format, or a Buffer containing
     * the PFX data. If supplied will always be used instead of certificate and key above.
     */
-  var pfx: js.UndefOr[Buffer | String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var production: js.UndefOr[Boolean] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  var pfx: js.UndefOr[Buffer | String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var production: js.UndefOr[Boolean] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
   /** APN Token */
-  var token: js.UndefOr[Key] = js.undefined
-  var voip: js.UndefOr[Boolean] = js.undefined
+  var token: js.UndefOr[Key] = js.native
+  var voip: js.UndefOr[Boolean] = js.native
 }
 
 object Address {
   @scala.inline
-  def apply(
-    address: String = null,
-    autoAdjustCache: js.UndefOr[Boolean] = js.undefined,
-    buffersNotifications: js.UndefOr[Boolean] = js.undefined,
-    ca: js.Array[Buffer | String] = null,
-    cacheLength: js.UndefOr[Double] = js.undefined,
-    cert: String = null,
-    connectTimeout: js.UndefOr[Double] = js.undefined,
-    connectionRetryLimit: js.UndefOr[Double] = js.undefined,
-    connectionTimeout: js.UndefOr[Double] = js.undefined,
-    disableEPIPEFix: js.UndefOr[Boolean] = js.undefined,
-    disableNagle: js.UndefOr[Boolean] = js.undefined,
-    fastMode: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    maxConnections: js.UndefOr[Double] = js.undefined,
-    minConnections: js.UndefOr[Double] = js.undefined,
-    passphrase: String = null,
-    pfx: Buffer | String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    production: js.UndefOr[Boolean] = js.undefined,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    token: Key = null,
-    voip: js.UndefOr[Boolean] = js.undefined
-  ): Address = {
+  def apply(): Address = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoAdjustCache)) __obj.updateDynamic("autoAdjustCache")(autoAdjustCache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffersNotifications)) __obj.updateDynamic("buffersNotifications")(buffersNotifications.get.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheLength)) __obj.updateDynamic("cacheLength")(cacheLength.get.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectTimeout)) __obj.updateDynamic("connectTimeout")(connectTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionRetryLimit)) __obj.updateDynamic("connectionRetryLimit")(connectionRetryLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableEPIPEFix)) __obj.updateDynamic("disableEPIPEFix")(disableEPIPEFix.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableNagle)) __obj.updateDynamic("disableNagle")(disableNagle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastMode)) __obj.updateDynamic("fastMode")(fastMode.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minConnections)) __obj.updateDynamic("minConnections")(minConnections.get.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (!js.isUndefined(voip)) __obj.updateDynamic("voip")(voip.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Address]
   }
+  @scala.inline
+  implicit class AddressOps[Self <: Address] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddress(value: String): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setAutoAdjustCache(value: Boolean): Self = this.set("autoAdjustCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAdjustCache: Self = this.set("autoAdjustCache", js.undefined)
+    @scala.inline
+    def setBuffersNotifications(value: Boolean): Self = this.set("buffersNotifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuffersNotifications: Self = this.set("buffersNotifications", js.undefined)
+    @scala.inline
+    def setCaVarargs(value: (Buffer | String)*): Self = this.set("ca", js.Array(value :_*))
+    @scala.inline
+    def setCa(value: js.Array[Buffer | String]): Self = this.set("ca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCa: Self = this.set("ca", js.undefined)
+    @scala.inline
+    def setCacheLength(value: Double): Self = this.set("cacheLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheLength: Self = this.set("cacheLength", js.undefined)
+    @scala.inline
+    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setConnectTimeout(value: Double): Self = this.set("connectTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectTimeout: Self = this.set("connectTimeout", js.undefined)
+    @scala.inline
+    def setConnectionRetryLimit(value: Double): Self = this.set("connectionRetryLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionRetryLimit: Self = this.set("connectionRetryLimit", js.undefined)
+    @scala.inline
+    def setConnectionTimeout(value: Double): Self = this.set("connectionTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionTimeout: Self = this.set("connectionTimeout", js.undefined)
+    @scala.inline
+    def setDisableEPIPEFix(value: Boolean): Self = this.set("disableEPIPEFix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableEPIPEFix: Self = this.set("disableEPIPEFix", js.undefined)
+    @scala.inline
+    def setDisableNagle(value: Boolean): Self = this.set("disableNagle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableNagle: Self = this.set("disableNagle", js.undefined)
+    @scala.inline
+    def setFastMode(value: Boolean): Self = this.set("fastMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFastMode: Self = this.set("fastMode", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setMaxConnections(value: Double): Self = this.set("maxConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxConnections: Self = this.set("maxConnections", js.undefined)
+    @scala.inline
+    def setMinConnections(value: Double): Self = this.set("minConnections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinConnections: Self = this.set("minConnections", js.undefined)
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    @scala.inline
+    def setPfx(value: Buffer | String): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfx: Self = this.set("pfx", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProduction(value: Boolean): Self = this.set("production", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduction: Self = this.set("production", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setToken(value: Key): Self = this.set("token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken: Self = this.set("token", js.undefined)
+    @scala.inline
+    def setVoip(value: Boolean): Self = this.set("voip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoip: Self = this.set("voip", js.undefined)
+  }
+  
 }
 

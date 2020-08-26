@@ -39,8 +39,39 @@ trait Assert extends js.Object {
   def equal(act: js.Any, exp: js.Any): Unit = js.native
   def equal(act: js.Any, exp: js.Any, msg: String): Unit = js.native
   def fail(): Unit = js.native
+  def fail(
+    actual: js.UndefOr[scala.Nothing],
+    expected: js.UndefOr[scala.Nothing],
+    msg: js.UndefOr[scala.Nothing],
+    operator: String
+  ): Unit = js.native
+  def fail(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
+  def fail(
+    actual: js.UndefOr[scala.Nothing],
+    expected: js.UndefOr[scala.Nothing],
+    msg: String,
+    operator: String
+  ): Unit = js.native
+  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
+  def fail(
+    actual: js.UndefOr[scala.Nothing],
+    expected: js.Any,
+    msg: js.UndefOr[scala.Nothing],
+    operator: String
+  ): Unit = js.native
+  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
+  def fail(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String, operator: String): Unit = js.native
   def fail(actual: js.Any): Unit = js.native
+  def fail(
+    actual: js.Any,
+    expected: js.UndefOr[scala.Nothing],
+    msg: js.UndefOr[scala.Nothing],
+    operator: String
+  ): Unit = js.native
+  def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
+  def fail(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String, operator: String): Unit = js.native
   def fail(actual: js.Any, expected: js.Any): Unit = js.native
+  def fail(actual: js.Any, expected: js.Any, msg: js.UndefOr[scala.Nothing], operator: String): Unit = js.native
   def fail(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
   def fail(actual: js.Any, expected: js.Any, msg: String, operator: String): Unit = js.native
   def ifError(`val`: js.Any): Unit = js.native

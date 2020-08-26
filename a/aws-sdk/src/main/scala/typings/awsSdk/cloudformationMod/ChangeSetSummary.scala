@@ -46,28 +46,58 @@ trait ChangeSetSummary extends js.Object {
 
 object ChangeSetSummary {
   @scala.inline
-  def apply(
-    ChangeSetId: ChangeSetId = null,
-    ChangeSetName: ChangeSetName = null,
-    CreationTime: CreationTime = null,
-    Description: Description = null,
-    ExecutionStatus: ExecutionStatus = null,
-    StackId: StackId = null,
-    StackName: StackName = null,
-    Status: ChangeSetStatus = null,
-    StatusReason: ChangeSetStatusReason = null
-  ): ChangeSetSummary = {
+  def apply(): ChangeSetSummary = {
     val __obj = js.Dynamic.literal()
-    if (ChangeSetId != null) __obj.updateDynamic("ChangeSetId")(ChangeSetId.asInstanceOf[js.Any])
-    if (ChangeSetName != null) __obj.updateDynamic("ChangeSetName")(ChangeSetName.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (ExecutionStatus != null) __obj.updateDynamic("ExecutionStatus")(ExecutionStatus.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeSetSummary]
   }
+  @scala.inline
+  implicit class ChangeSetSummaryOps[Self <: ChangeSetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChangeSetId(value: ChangeSetId): Self = this.set("ChangeSetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetId: Self = this.set("ChangeSetId", js.undefined)
+    @scala.inline
+    def setChangeSetName(value: ChangeSetName): Self = this.set("ChangeSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChangeSetName: Self = this.set("ChangeSetName", js.undefined)
+    @scala.inline
+    def setCreationTime(value: CreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setExecutionStatus(value: ExecutionStatus): Self = this.set("ExecutionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStatus: Self = this.set("ExecutionStatus", js.undefined)
+    @scala.inline
+    def setStackId(value: StackId): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackName: Self = this.set("StackName", js.undefined)
+    @scala.inline
+    def setStatus(value: ChangeSetStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: ChangeSetStatusReason): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+  }
+  
 }
 

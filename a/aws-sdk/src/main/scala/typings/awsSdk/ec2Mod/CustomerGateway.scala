@@ -42,26 +42,56 @@ trait CustomerGateway extends js.Object {
 
 object CustomerGateway {
   @scala.inline
-  def apply(
-    BgpAsn: String = null,
-    CertificateArn: String = null,
-    CustomerGatewayId: String = null,
-    DeviceName: String = null,
-    IpAddress: String = null,
-    State: String = null,
-    Tags: TagList = null,
-    Type: String = null
-  ): CustomerGateway = {
+  def apply(): CustomerGateway = {
     val __obj = js.Dynamic.literal()
-    if (BgpAsn != null) __obj.updateDynamic("BgpAsn")(BgpAsn.asInstanceOf[js.Any])
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (CustomerGatewayId != null) __obj.updateDynamic("CustomerGatewayId")(CustomerGatewayId.asInstanceOf[js.Any])
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerGateway]
   }
+  @scala.inline
+  implicit class CustomerGatewayOps[Self <: CustomerGateway] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBgpAsn(value: String): Self = this.set("BgpAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgpAsn: Self = this.set("BgpAsn", js.undefined)
+    @scala.inline
+    def setCertificateArn(value: String): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setCustomerGatewayId(value: String): Self = this.set("CustomerGatewayId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerGatewayId: Self = this.set("CustomerGatewayId", js.undefined)
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    @scala.inline
+    def setIpAddress(value: String): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

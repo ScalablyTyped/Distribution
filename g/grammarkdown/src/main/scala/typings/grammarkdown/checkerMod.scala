@@ -24,7 +24,7 @@ object checkerMod extends js.Object {
   class Checker () extends js.Object {
     def this(options: CompilerOptions) = this()
     var bindings: js.Any = js.native
-    var cancelToken: js.UndefOr[js.Any] = js.native
+    var cancelToken: js.Any = js.native
     var checkArgument: js.Any = js.native
     var checkArgumentList: js.Any = js.native
     var checkAssertion: js.Any = js.native
@@ -102,7 +102,7 @@ object checkerMod extends js.Object {
     var noChecks: js.Any = js.native
     var noStrictParametricProductions: js.Any = js.native
     var noUnusedParameters: js.Any = js.native
-    var nodeLinks: js.UndefOr[js.Any] = js.native
+    var nodeLinks: js.Any = js.native
     var options: js.Any = js.native
     var preprocessDefine: js.Any = js.native
     var preprocessSourceElement: js.Any = js.native
@@ -117,7 +117,7 @@ object checkerMod extends js.Object {
     var resolveProduction: js.Any = js.native
     var resolveSymbol: js.Any = js.native
     var sourceFile: js.Any = js.native
-    var symbolLinks: js.UndefOr[js.Any] = js.native
+    var symbolLinks: js.Any = js.native
     def checkSourceFile(sourceFile: SourceFile, bindings: BindingTable, diagnostics: DiagnosticMessages): Unit = js.native
     def checkSourceFile(
       sourceFile: SourceFile,

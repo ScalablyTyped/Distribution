@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * The ultimate fallback encoding used if no valid encoding is supplied
@@ -17,22 +18,41 @@ trait Options extends js.Object {
     * Which is recommended by the algorithm's table of suggested
     * defaults for "All other locales" (including the `en` locale).
     */
-  var defaultEncoding: js.UndefOr[String] = js.undefined
+  var defaultEncoding: js.UndefOr[String] = js.native
   /**
     * An encoding label that is obtained from the "transport layer"
     * (probably an HTTP `Content-Type` header), which overrides
     * everything but a BOM.
     */
-  var transportLayerEncodingLabel: js.UndefOr[String] = js.undefined
+  var transportLayerEncodingLabel: js.UndefOr[String] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(defaultEncoding: String = null, transportLayerEncodingLabel: String = null): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (transportLayerEncodingLabel != null) __obj.updateDynamic("transportLayerEncodingLabel")(transportLayerEncodingLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultEncoding(value: String): Self = this.set("defaultEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultEncoding: Self = this.set("defaultEncoding", js.undefined)
+    @scala.inline
+    def setTransportLayerEncodingLabel(value: String): Self = this.set("transportLayerEncodingLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransportLayerEncodingLabel: Self = this.set("transportLayerEncodingLabel", js.undefined)
+  }
+  
 }
 

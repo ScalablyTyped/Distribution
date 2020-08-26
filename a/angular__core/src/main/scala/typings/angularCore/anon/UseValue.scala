@@ -4,8 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UseValue extends js.Object {
-  var useValue: js.Any
+  var useValue: js.Any = js.native
 }
 
 object UseValue {
@@ -14,5 +15,20 @@ object UseValue {
     val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseValue]
   }
+  @scala.inline
+  implicit class UseValueOps[Self <: UseValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUseValue(value: js.Any): Self = this.set("useValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -6,43 +6,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RealWorldSize extends Object {
   /**
     * See [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#field). The field name containing the planar size of the feature in the units of the view's spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var field: js.UndefOr[String] = js.undefined
+  var field: js.UndefOr[String] = js.native
   /**
     * See [normalizationField](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#normalizationField).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var normalizationField: js.UndefOr[String] = js.undefined
+  var normalizationField: js.UndefOr[String] = js.native
   /**
     * Value must be `size`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var `type`: String
+  var `type`: String = js.native
   /**
     * See [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression). The expression must return the planar size of the feature in the units of the view's spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var valueExpression: js.UndefOr[String] = js.undefined
+  var valueExpression: js.UndefOr[String] = js.native
   /**
     * See [valueRepresentation](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueRepresentation).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var valueRepresentation: js.UndefOr[String] = js.undefined
+  var valueRepresentation: js.UndefOr[String] = js.native
   /**
     * See [valueUnit](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueUnit).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#RealWorldSize)
     */
-  var valueUnit: String
+  var valueUnit: String = js.native
 }
 
 object RealWorldSize {
@@ -52,19 +53,44 @@ object RealWorldSize {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     `type`: String,
-    valueUnit: String,
-    field: String = null,
-    normalizationField: String = null,
-    valueExpression: String = null,
-    valueRepresentation: String = null
+    valueUnit: String
   ): RealWorldSize = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), valueUnit = valueUnit.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
-    if (valueRepresentation != null) __obj.updateDynamic("valueRepresentation")(valueRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[RealWorldSize]
   }
+  @scala.inline
+  implicit class RealWorldSizeOps[Self <: RealWorldSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValueUnit(value: String): Self = this.set("valueUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setNormalizationField(value: String): Self = this.set("normalizationField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNormalizationField: Self = this.set("normalizationField", js.undefined)
+    @scala.inline
+    def setValueExpression(value: String): Self = this.set("valueExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueExpression: Self = this.set("valueExpression", js.undefined)
+    @scala.inline
+    def setValueRepresentation(value: String): Self = this.set("valueRepresentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueRepresentation: Self = this.set("valueRepresentation", js.undefined)
+  }
+  
 }
 

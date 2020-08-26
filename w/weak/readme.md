@@ -12,7 +12,7 @@ Make weak references to JavaScript Objects.
 | Keywords           | weak, reference, js, javascript, object, function, callback |
 | # releases         | 0 |
 | # dependents       | 35 |
-| # downloads        | 1748751 |
+| # downloads        | 1709961 |
 | # stars            | 11 |
 
 ## Links

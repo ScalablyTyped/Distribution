@@ -39,53 +39,5 @@ class ColorCls protected () extends Color {
     */
   def this(r: Double, g: Double, b: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
-  /**
-    * Get the alpha transparency component of the color.
-    * @returns number between 0 and 1 inclusive;
-    */
-  /* CompleteClass */
-  override def getA(): Double = js.native
-  /**
-    * Get the blue component of the color.
-    * @returns integer between 0 and 255 inclusive;
-    */
-  /* CompleteClass */
-  override def getB(): Double = js.native
-  /**
-    * Get the green component of the color.
-    * @returns integer between 0 and 255 inclusive;
-    */
-  /* CompleteClass */
-  override def getG(): Double = js.native
-  /**
-    * Get the red component of the color.
-    * @returns integer between 0 and 255 inclusive;
-    */
-  /* CompleteClass */
-  override def getR(): Double = js.native
-  /**
-    * Set the alpha component of the color.
-    * @param a number between 0 and 1 inclusive;
-    */
-  /* CompleteClass */
-  override def setA(a: Double): Unit = js.native
-  /**
-    * Set the blue component of the color.
-    * @param b integer between 0 and 255 inclusive;
-    */
-  /* CompleteClass */
-  override def setB(b: Double): Unit = js.native
-  /**
-    * Set the green component of the color.
-    * @param g integer between 0 and 255 inclusive;
-    */
-  /* CompleteClass */
-  override def setG(g: Double): Unit = js.native
-  /**
-    * Set the red component of the color.
-    * @returns integer between 0 and 255 inclusive;
-    */
-  /* CompleteClass */
-  override def setR(r: Double): Unit = js.native
 }
 

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expect", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
-  def apply(): Root = js.native
-  def apply(target: js.Any): Root = js.native
+  def apply(target: js.UndefOr[js.Any]): Root = js.native
 }
 

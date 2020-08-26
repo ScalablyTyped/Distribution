@@ -6,18 +6,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IThemeProviderProps extends js.Object {
-  var scheme: js.UndefOr[ISchemeNames] = js.undefined
-  var theme: js.UndefOr[ITheme] = js.undefined
+  var scheme: js.UndefOr[ISchemeNames] = js.native
+  var theme: js.UndefOr[ITheme] = js.native
 }
 
 object IThemeProviderProps {
   @scala.inline
-  def apply(scheme: ISchemeNames = null, theme: ITheme = null): IThemeProviderProps = {
+  def apply(): IThemeProviderProps = {
     val __obj = js.Dynamic.literal()
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[IThemeProviderProps]
   }
+  @scala.inline
+  implicit class IThemeProviderPropsOps[Self <: IThemeProviderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheme(value: ISchemeNames): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

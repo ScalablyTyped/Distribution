@@ -12,7 +12,7 @@ Tools for working with all sorts of browser viewports
 | Keywords           | viewport, scaling, position, mobile |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 127 |
+| # downloads        | 124 |
 | # stars            | 0 |
 
 ## Links

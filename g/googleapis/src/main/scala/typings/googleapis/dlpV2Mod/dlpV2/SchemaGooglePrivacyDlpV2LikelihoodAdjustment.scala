@@ -28,11 +28,30 @@ trait SchemaGooglePrivacyDlpV2LikelihoodAdjustment extends js.Object {
 
 object SchemaGooglePrivacyDlpV2LikelihoodAdjustment {
   @scala.inline
-  def apply(fixedLikelihood: String = null, relativeLikelihood: js.UndefOr[Double] = js.undefined): SchemaGooglePrivacyDlpV2LikelihoodAdjustment = {
+  def apply(): SchemaGooglePrivacyDlpV2LikelihoodAdjustment = {
     val __obj = js.Dynamic.literal()
-    if (fixedLikelihood != null) __obj.updateDynamic("fixedLikelihood")(fixedLikelihood.asInstanceOf[js.Any])
-    if (!js.isUndefined(relativeLikelihood)) __obj.updateDynamic("relativeLikelihood")(relativeLikelihood.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2LikelihoodAdjustment]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2LikelihoodAdjustmentOps[Self <: SchemaGooglePrivacyDlpV2LikelihoodAdjustment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFixedLikelihood(value: String): Self = this.set("fixedLikelihood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedLikelihood: Self = this.set("fixedLikelihood", js.undefined)
+    @scala.inline
+    def setRelativeLikelihood(value: Double): Self = this.set("relativeLikelihood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelativeLikelihood: Self = this.set("relativeLikelihood", js.undefined)
+  }
+  
 }
 

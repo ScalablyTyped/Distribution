@@ -19,7 +19,15 @@ object Class extends js.Object {
     * @returns The newly-defined type.
     **/
   def define(): js.Any = js.native
+  def define(
+    constructor: js.UndefOr[scala.Nothing],
+    instanceMembers: js.UndefOr[scala.Nothing],
+    staticMembers: js.Any
+  ): js.Any = js.native
+  def define(constructor: js.UndefOr[scala.Nothing], instanceMembers: js.Any): js.Any = js.native
+  def define(constructor: js.UndefOr[scala.Nothing], instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
   def define(constructor: js.Function): js.Any = js.native
+  def define(constructor: js.Function, instanceMembers: js.UndefOr[scala.Nothing], staticMembers: js.Any): js.Any = js.native
   def define(constructor: js.Function, instanceMembers: js.Any): js.Any = js.native
   def define(constructor: js.Function, instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
   /**
@@ -31,6 +39,12 @@ object Class extends js.Object {
     * @returns The newly-defined type.
     **/
   def derive(baseClass: js.Any, constructor: js.Function): js.Any = js.native
+  def derive(
+    baseClass: js.Any,
+    constructor: js.Function,
+    instanceMembers: js.UndefOr[scala.Nothing],
+    staticMembers: js.Any
+  ): js.Any = js.native
   def derive(baseClass: js.Any, constructor: js.Function, instanceMembers: js.Any): js.Any = js.native
   def derive(baseClass: js.Any, constructor: js.Function, instanceMembers: js.Any, staticMembers: js.Any): js.Any = js.native
   /**

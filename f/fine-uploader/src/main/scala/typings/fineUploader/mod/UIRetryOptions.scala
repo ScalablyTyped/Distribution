@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UIRetryOptions extends RetryOptions {
   /**
     * The text of the note that will optionally appear next to the item during automatic retry attempts.
@@ -13,13 +14,13 @@ trait UIRetryOptions extends RetryOptions {
     *
     * @default `'Retrying {retryNum}/{maxAuto} ...'`
     */
-  var autoRetryNote: js.UndefOr[String] = js.undefined
+  var autoRetryNote: js.UndefOr[String] = js.native
   /**
     * Enable or disable a status message appearing next to the item during auto retry attempts
     *
     * @default `true`
     */
-  var showAutoRetryNote: js.UndefOr[Boolean] = js.undefined
+  var showAutoRetryNote: js.UndefOr[Boolean] = js.native
   /**
     * Enable or disable the showing of a button/link next to the failed item after all retry attempts have been exhausted.
     *
@@ -27,29 +28,39 @@ trait UIRetryOptions extends RetryOptions {
     *
     * @default `false`
     */
-  var showButton: js.UndefOr[Boolean] = js.undefined
+  var showButton: js.UndefOr[Boolean] = js.native
 }
 
 object UIRetryOptions {
   @scala.inline
-  def apply(
-    autoAttemptDelay: js.UndefOr[Double] = js.undefined,
-    autoRetryNote: String = null,
-    enableAuto: js.UndefOr[Boolean] = js.undefined,
-    maxAutoAttempts: js.UndefOr[Double] = js.undefined,
-    preventRetryResponseProperty: String = null,
-    showAutoRetryNote: js.UndefOr[Boolean] = js.undefined,
-    showButton: js.UndefOr[Boolean] = js.undefined
-  ): UIRetryOptions = {
+  def apply(): UIRetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoAttemptDelay)) __obj.updateDynamic("autoAttemptDelay")(autoAttemptDelay.get.asInstanceOf[js.Any])
-    if (autoRetryNote != null) __obj.updateDynamic("autoRetryNote")(autoRetryNote.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAuto)) __obj.updateDynamic("enableAuto")(enableAuto.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAutoAttempts)) __obj.updateDynamic("maxAutoAttempts")(maxAutoAttempts.get.asInstanceOf[js.Any])
-    if (preventRetryResponseProperty != null) __obj.updateDynamic("preventRetryResponseProperty")(preventRetryResponseProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAutoRetryNote)) __obj.updateDynamic("showAutoRetryNote")(showAutoRetryNote.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButton)) __obj.updateDynamic("showButton")(showButton.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIRetryOptions]
   }
+  @scala.inline
+  implicit class UIRetryOptionsOps[Self <: UIRetryOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRetryNote(value: String): Self = this.set("autoRetryNote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRetryNote: Self = this.set("autoRetryNote", js.undefined)
+    @scala.inline
+    def setShowAutoRetryNote(value: Boolean): Self = this.set("showAutoRetryNote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAutoRetryNote: Self = this.set("showAutoRetryNote", js.undefined)
+    @scala.inline
+    def setShowButton(value: Boolean): Self = this.set("showButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowButton: Self = this.set("showButton", js.undefined)
+  }
+  
 }
 

@@ -137,6 +137,19 @@ trait EFS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccessPointsResponse, Unit]
   ): Request[DescribeAccessPointsResponse, AWSError] = js.native
   /**
+    * Returns the backup policy for the specified EFS file system.
+    */
+  def describeBackupPolicy(): Request[BackupPolicyDescription, AWSError] = js.native
+  def describeBackupPolicy(callback: js.Function2[/* err */ AWSError, /* data */ BackupPolicyDescription, Unit]): Request[BackupPolicyDescription, AWSError] = js.native
+  /**
+    * Returns the backup policy for the specified EFS file system.
+    */
+  def describeBackupPolicy(params: DescribeBackupPolicyRequest): Request[BackupPolicyDescription, AWSError] = js.native
+  def describeBackupPolicy(
+    params: DescribeBackupPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BackupPolicyDescription, Unit]
+  ): Request[BackupPolicyDescription, AWSError] = js.native
+  /**
     * Returns the FileSystemPolicy for the specified EFS file system. This operation requires permissions for the elasticfilesystem:DescribeFileSystemPolicy action.
     */
   def describeFileSystemPolicy(): Request[FileSystemPolicyDescription, AWSError] = js.native
@@ -242,6 +255,19 @@ trait EFS extends Service {
     params: ModifyMountTargetSecurityGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Updates the file system's backup policy. Use this action to start or stop automatic backups of the file system. 
+    */
+  def putBackupPolicy(): Request[BackupPolicyDescription, AWSError] = js.native
+  def putBackupPolicy(callback: js.Function2[/* err */ AWSError, /* data */ BackupPolicyDescription, Unit]): Request[BackupPolicyDescription, AWSError] = js.native
+  /**
+    * Updates the file system's backup policy. Use this action to start or stop automatic backups of the file system. 
+    */
+  def putBackupPolicy(params: PutBackupPolicyRequest): Request[BackupPolicyDescription, AWSError] = js.native
+  def putBackupPolicy(
+    params: PutBackupPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BackupPolicyDescription, Unit]
+  ): Request[BackupPolicyDescription, AWSError] = js.native
   /**
     * Applies an Amazon EFS FileSystemPolicy to an Amazon EFS file system. A file system policy is an IAM resource-based policy and can contain multiple policy statements. A file system always has exactly one file system policy, which can be the default policy or an explicit policy set or updated using this API operation. When an explicit policy is set, it overrides the default policy. For more information about the default file system policy, see Default EFS File System Policy.  This operation requires permissions for the elasticfilesystem:PutFileSystemPolicy action.
     */

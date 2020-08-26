@@ -10,13 +10,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Typeofomnibox extends js.Object {
-  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent
-  var onInputCancelled: OmniboxInputCancelledEvent
-  var onInputChanged: OmniboxInputChangedEvent
-  var onInputEntered: OmniboxInputEnteredEvent
-  var onInputStarted: OmniboxInputStartedEvent
-  def setDefaultSuggestion(suggestion: Suggestion): Unit
+  var onDeleteSuggestion: OmniboxSuggestionDeletedEvent = js.native
+  var onInputCancelled: OmniboxInputCancelledEvent = js.native
+  var onInputChanged: OmniboxInputChangedEvent = js.native
+  var onInputEntered: OmniboxInputEnteredEvent = js.native
+  var onInputStarted: OmniboxInputStartedEvent = js.native
+  def setDefaultSuggestion(suggestion: Suggestion): Unit = js.native
 }
 
 object Typeofomnibox {
@@ -32,5 +33,30 @@ object Typeofomnibox {
     val __obj = js.Dynamic.literal(onDeleteSuggestion = onDeleteSuggestion.asInstanceOf[js.Any], onInputCancelled = onInputCancelled.asInstanceOf[js.Any], onInputChanged = onInputChanged.asInstanceOf[js.Any], onInputEntered = onInputEntered.asInstanceOf[js.Any], onInputStarted = onInputStarted.asInstanceOf[js.Any], setDefaultSuggestion = js.Any.fromFunction1(setDefaultSuggestion))
     __obj.asInstanceOf[Typeofomnibox]
   }
+  @scala.inline
+  implicit class TypeofomniboxOps[Self <: Typeofomnibox] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnDeleteSuggestion(value: OmniboxSuggestionDeletedEvent): Self = this.set("onDeleteSuggestion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnInputCancelled(value: OmniboxInputCancelledEvent): Self = this.set("onInputCancelled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnInputChanged(value: OmniboxInputChangedEvent): Self = this.set("onInputChanged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnInputEntered(value: OmniboxInputEnteredEvent): Self = this.set("onInputEntered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnInputStarted(value: OmniboxInputStartedEvent): Self = this.set("onInputStarted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSetDefaultSuggestion(value: Suggestion => Unit): Self = this.set("setDefaultSuggestion", js.Any.fromFunction1(value))
+  }
+  
 }
 

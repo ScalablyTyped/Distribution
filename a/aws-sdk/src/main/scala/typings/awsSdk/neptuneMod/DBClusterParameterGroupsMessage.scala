@@ -18,11 +18,32 @@ trait DBClusterParameterGroupsMessage extends js.Object {
 
 object DBClusterParameterGroupsMessage {
   @scala.inline
-  def apply(DBClusterParameterGroups: DBClusterParameterGroupList = null, Marker: String = null): DBClusterParameterGroupsMessage = {
+  def apply(): DBClusterParameterGroupsMessage = {
     val __obj = js.Dynamic.literal()
-    if (DBClusterParameterGroups != null) __obj.updateDynamic("DBClusterParameterGroups")(DBClusterParameterGroups.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBClusterParameterGroupsMessage]
   }
+  @scala.inline
+  implicit class DBClusterParameterGroupsMessageOps[Self <: DBClusterParameterGroupsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = this.set("DBClusterParameterGroups", js.Array(value :_*))
+    @scala.inline
+    def setDBClusterParameterGroups(value: DBClusterParameterGroupList): Self = this.set("DBClusterParameterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterParameterGroups: Self = this.set("DBClusterParameterGroups", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

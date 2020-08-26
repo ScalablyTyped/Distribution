@@ -32,6 +32,7 @@ object id3v2tagcontentsMod extends js.Object {
     def _updateFlags(flags: TagHeaderFlags, binaryFlags: Double): ID3v2TagContents = js.native
     def _updateSize(): Unit = js.native
     def addFrame(id: String, data: ByteArray): ID3v2TagContents = js.native
+    def addFrame(id: String, data: ByteArray, flags: js.UndefOr[scala.Nothing], noFlagsDataLength: Double): ID3v2TagContents = js.native
     def addFrame(id: String, data: ByteArray, flags: TagFrameFlags): ID3v2TagContents = js.native
     def addFrame(id: String, data: ByteArray, flags: TagFrameFlags, noFlagsDataLength: Double): ID3v2TagContents = js.native
     def setCrc(crc: ByteArray): ID3v2TagContents = js.native

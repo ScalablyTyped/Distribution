@@ -12,7 +12,7 @@ Add Mapzen Search geocoding to your Leaflet map.
 | Keywords           | leaflet, plugin, search, geocoder, pelias, mapzen |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 6410 |
+| # downloads        | 6408 |
 | # stars            | 0 |
 
 ## Links

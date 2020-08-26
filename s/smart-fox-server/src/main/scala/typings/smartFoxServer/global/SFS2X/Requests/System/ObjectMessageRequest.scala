@@ -18,6 +18,7 @@ class ObjectMessageRequest protected ()
     */
   def this(obj: js.Object) = this()
   def this(obj: js.Object, targetRoom: SFSRoom) = this()
+  def this(obj: js.Object, targetRoom: js.UndefOr[scala.Nothing], recipients: js.Array[SFSUser]) = this()
   def this(obj: js.Object, targetRoom: SFSRoom, recipients: js.Array[SFSUser]) = this()
 }
 

@@ -14,10 +14,28 @@ trait Logging extends js.Object {
 
 object Logging {
   @scala.inline
-  def apply(clusterLogging: LogSetups = null): Logging = {
+  def apply(): Logging = {
     val __obj = js.Dynamic.literal()
-    if (clusterLogging != null) __obj.updateDynamic("clusterLogging")(clusterLogging.asInstanceOf[js.Any])
     __obj.asInstanceOf[Logging]
   }
+  @scala.inline
+  implicit class LoggingOps[Self <: Logging] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterLoggingVarargs(value: LogSetup*): Self = this.set("clusterLogging", js.Array(value :_*))
+    @scala.inline
+    def setClusterLogging(value: LogSetups): Self = this.set("clusterLogging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterLogging: Self = this.set("clusterLogging", js.undefined)
+  }
+  
 }
 

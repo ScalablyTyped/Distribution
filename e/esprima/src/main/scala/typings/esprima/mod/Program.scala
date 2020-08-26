@@ -2,18 +2,17 @@ package typings.esprima.mod
 
 import typings.estree.estreeStrings.module
 import typings.estree.estreeStrings.script
-import typings.estree.mod.Comment
 import typings.estree.mod.Directive
 import typings.estree.mod.ModuleDeclaration
-import typings.estree.mod.SourceLocation
 import typings.estree.mod.Statement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Program
   extends typings.estree.mod.Program {
-  var tokens: js.UndefOr[js.Array[Token]] = js.undefined
+  var tokens: js.UndefOr[js.Array[Token]] = js.native
 }
 
 object Program {
@@ -21,23 +20,30 @@ object Program {
   def apply(
     body: js.Array[Directive | Statement | ModuleDeclaration],
     sourceType: script | module,
-    `type`: typings.estree.estreeStrings.Program,
-    comments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: js.UndefOr[Null | SourceLocation] = js.undefined,
-    range: js.Tuple2[Double, Double] = null,
-    tokens: js.Array[Token] = null,
-    trailingComments: js.Array[Comment] = null
+    `type`: typings.estree.estreeStrings.Program
   ): Program = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[Program]
   }
+  @scala.inline
+  implicit class ProgramOps[Self <: Program] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTokensVarargs(value: Token*): Self = this.set("tokens", js.Array(value :_*))
+    @scala.inline
+    def setTokens(value: js.Array[Token]): Self = this.set("tokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokens: Self = this.set("tokens", js.undefined)
+  }
+  
 }
 

@@ -10,76 +10,103 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
+@js.native
 trait ShapeLineFormatLoadOptions extends js.Object {
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.undefined
+  var $all: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the line color in HTML color format, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
     * [Api set: ExcelApi 1.9]
     */
-  var color: js.UndefOr[Boolean] = js.undefined
+  var color: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash styles. See Excel.ShapeLineStyle for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var dashStyle: js.UndefOr[Boolean] = js.undefined
+  var dashStyle: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See Excel.ShapeLineStyle for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var style: js.UndefOr[Boolean] = js.undefined
+  var style: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var transparency: js.UndefOr[Boolean] = js.undefined
+  var transparency: js.UndefOr[Boolean] = js.native
   /**
     *
     * Specifies if the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /**
     *
     * Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent line weights.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var weight: js.UndefOr[Boolean] = js.undefined
+  var weight: js.UndefOr[Boolean] = js.native
 }
 
 object ShapeLineFormatLoadOptions {
   @scala.inline
-  def apply(
-    $all: js.UndefOr[Boolean] = js.undefined,
-    color: js.UndefOr[Boolean] = js.undefined,
-    dashStyle: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Boolean] = js.undefined,
-    transparency: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    weight: js.UndefOr[Boolean] = js.undefined
-  ): ShapeLineFormatLoadOptions = {
+  def apply(): ShapeLineFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashStyle)) __obj.updateDynamic("dashStyle")(dashStyle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeLineFormatLoadOptions]
   }
+  @scala.inline
+  implicit class ShapeLineFormatLoadOptionsOps[Self <: ShapeLineFormatLoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$all(value: Boolean): Self = this.set("$all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$all: Self = this.set("$all", js.undefined)
+    @scala.inline
+    def setColor(value: Boolean): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDashStyle(value: Boolean): Self = this.set("dashStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashStyle: Self = this.set("dashStyle", js.undefined)
+    @scala.inline
+    def setStyle(value: Boolean): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTransparency(value: Boolean): Self = this.set("transparency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparency: Self = this.set("transparency", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWeight(value: Boolean): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

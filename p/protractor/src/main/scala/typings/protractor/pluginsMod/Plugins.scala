@@ -42,7 +42,6 @@ class Plugins protected () extends js.Object {
     *
     * @return The handler
     */
-  /* private */ def pluginFunFactory(funName: js.Any, promiseType: js.Any): js.Any = js.native
   /* private */ def pluginFunFactory(funName: js.Any, promiseType: js.Any, failReturnVal: js.Any): js.Any = js.native
   def postResults(args: js.Any*): Promise[js.Array[_]] = js.native
   def postTest(args: js.Any*): Promise[js.Array[_]] = js.native

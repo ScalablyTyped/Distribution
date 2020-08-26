@@ -9,40 +9,41 @@ import scala.scalajs.js.annotation._
   * Simple object for specifying options to
   * [openPhotoGallery](Titanium.Media.openPhotoGallery).
   */
+@js.native
 trait PhotoGalleryOptionsType extends js.Object {
   /**
     * Specifies if the media should be editable after capture/selection.
     */
-  var allowEditing: js.UndefOr[Boolean] = js.undefined
+  var allowEditing: js.UndefOr[Boolean] = js.native
   /**
     * Specifies if the user should be able to select multiple photos.
     */
-  var allowMultiple: js.UndefOr[Boolean] = js.undefined
+  var allowMultiple: js.UndefOr[Boolean] = js.native
   /**
     * Specifies if the video should be transcoded (using highest quality preset) . If set to false no video transcoding will be performed.
     */
-  var allowTranscoding: js.UndefOr[Boolean] = js.undefined
+  var allowTranscoding: js.UndefOr[Boolean] = js.native
   /**
     * Specifies if the dialog should be animated upon showing and hiding.
     */
-  var animated: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
   /**
     * Controls the type of arrow and position of the popover.
     */
-  var arrowDirection: js.UndefOr[Double] = js.undefined
+  var arrowDirection: js.UndefOr[Double] = js.native
   /**
     * Specifies if the photo gallery should be hidden automatically after the media
     * selection is completed.
     */
-  var autohide: js.UndefOr[Boolean] = js.undefined
+  var autohide: js.UndefOr[Boolean] = js.native
   /**
     * Function to call if the user presses the cancel button.
     */
-  var cancel: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.undefined
+  var cancel: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.native
   /**
     * Function to call upon receiving an error.
     */
-  var error: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* param0 */ FailureResponse, Unit]] = js.native
   /**
     * Array of media type constants to allow.
     * Live photos is only supported on the iOS platform, starting with iOS 9.1. If you want
@@ -50,45 +51,81 @@ trait PhotoGalleryOptionsType extends js.Object {
     * at least <Titanium.Media.MEDIA_TYPE_PHOTO> as a fallback. If you do not allow live
     * photos, they still can be selected, but will be represented as a normal static photo.
     */
-  var mediaTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var mediaTypes: js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
     * View to position the photo gallery popover on top of.
     */
-  var popoverView: js.UndefOr[View] = js.undefined
+  var popoverView: js.UndefOr[View] = js.native
   /**
     * Function to call when the photo gallery is closed after a successful selection.
     */
-  var success: js.UndefOr[js.Function1[/* param0 */ CameraMediaItemType, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* param0 */ CameraMediaItemType, Unit]] = js.native
 }
 
 object PhotoGalleryOptionsType {
   @scala.inline
-  def apply(
-    allowEditing: js.UndefOr[Boolean] = js.undefined,
-    allowMultiple: js.UndefOr[Boolean] = js.undefined,
-    allowTranscoding: js.UndefOr[Boolean] = js.undefined,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    arrowDirection: js.UndefOr[Double] = js.undefined,
-    autohide: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* param0 */ FailureResponse => Unit = null,
-    error: /* param0 */ FailureResponse => Unit = null,
-    mediaTypes: js.Array[java.lang.String] = null,
-    popoverView: View = null,
-    success: /* param0 */ CameraMediaItemType => Unit = null
-  ): PhotoGalleryOptionsType = {
+  def apply(): PhotoGalleryOptionsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowTranscoding)) __obj.updateDynamic("allowTranscoding")(allowTranscoding.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowDirection)) __obj.updateDynamic("arrowDirection")(arrowDirection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (mediaTypes != null) __obj.updateDynamic("mediaTypes")(mediaTypes.asInstanceOf[js.Any])
-    if (popoverView != null) __obj.updateDynamic("popoverView")(popoverView.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[PhotoGalleryOptionsType]
   }
+  @scala.inline
+  implicit class PhotoGalleryOptionsTypeOps[Self <: PhotoGalleryOptionsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowEditing(value: Boolean): Self = this.set("allowEditing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEditing: Self = this.set("allowEditing", js.undefined)
+    @scala.inline
+    def setAllowMultiple(value: Boolean): Self = this.set("allowMultiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowMultiple: Self = this.set("allowMultiple", js.undefined)
+    @scala.inline
+    def setAllowTranscoding(value: Boolean): Self = this.set("allowTranscoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowTranscoding: Self = this.set("allowTranscoding", js.undefined)
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setArrowDirection(value: Double): Self = this.set("arrowDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowDirection: Self = this.set("arrowDirection", js.undefined)
+    @scala.inline
+    def setAutohide(value: Boolean): Self = this.set("autohide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutohide: Self = this.set("autohide", js.undefined)
+    @scala.inline
+    def setCancel(value: /* param0 */ FailureResponse => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setError(value: /* param0 */ FailureResponse => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setMediaTypesVarargs(value: java.lang.String*): Self = this.set("mediaTypes", js.Array(value :_*))
+    @scala.inline
+    def setMediaTypes(value: js.Array[java.lang.String]): Self = this.set("mediaTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaTypes: Self = this.set("mediaTypes", js.undefined)
+    @scala.inline
+    def setPopoverView(value: View): Self = this.set("popoverView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopoverView: Self = this.set("popoverView", js.undefined)
+    @scala.inline
+    def setSuccess(value: /* param0 */ CameraMediaItemType => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

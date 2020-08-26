@@ -60,6 +60,7 @@ object lightsail extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: KeyPairArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: KeyPairArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -75,6 +76,7 @@ object lightsail extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: StaticIpArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: StaticIpArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -102,8 +104,10 @@ object lightsail extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailDomainMod.Domain = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lightsailDomainMod.Domain = js.native
     def get(name: String, id: Input[ID], state: DomainState): typings.pulumiAws.lightsailDomainMod.Domain = js.native
     def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): typings.pulumiAws.lightsailDomainMod.Domain = js.native
     /**
@@ -123,8 +127,10 @@ object lightsail extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
     def get(name: String, id: Input[ID], state: InstanceState): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
     def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): typings.pulumiAws.lightsailInstanceMod.Instance = js.native
     /**
@@ -144,8 +150,10 @@ object lightsail extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
     def get(name: String, id: Input[ID], state: KeyPairState): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
     def get(name: String, id: Input[ID], state: KeyPairState, opts: CustomResourceOptions): typings.pulumiAws.lightsailKeyPairMod.KeyPair = js.native
     /**
@@ -165,8 +173,10 @@ object lightsail extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.staticIpMod.StaticIp = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.staticIpMod.StaticIp = js.native
     def get(name: String, id: Input[ID], state: StaticIpState): typings.pulumiAws.staticIpMod.StaticIp = js.native
     def get(name: String, id: Input[ID], state: StaticIpState, opts: CustomResourceOptions): typings.pulumiAws.staticIpMod.StaticIp = js.native
     /**
@@ -186,8 +196,10 @@ object lightsail extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
     def get(name: String, id: Input[ID], state: StaticIpAttachmentState): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
     def get(name: String, id: Input[ID], state: StaticIpAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.staticIpAttachmentMod.StaticIpAttachment = js.native
     /**

@@ -10,11 +10,19 @@ object option extends js.Object {
   @js.native
   class Manager () extends IOptionManager {
     def this(options: js.Object) = this()
+    def this(options: js.UndefOr[scala.Nothing], parent: IOptionManager) = this()
     def this(options: js.Object, parent: IOptionManager) = this()
+    def this(options: js.UndefOr[scala.Nothing], parent: js.UndefOr[scala.Nothing], name: String) = this()
+    def this(options: js.UndefOr[scala.Nothing], parent: IOptionManager, name: String) = this()
+    def this(options: js.Object, parent: js.UndefOr[scala.Nothing], name: String) = this()
     def this(options: js.Object, parent: IOptionManager, name: String) = this()
-    /* CompleteClass */
-    override var events: IEventManager = js.native
     def add(types: String, callback: js.Function1[/* event */ js.Object | IEvent, Unit]): this.type = js.native
+    def add(
+      types: String,
+      callback: js.Function1[/* event */ js.Object | IEvent, Unit],
+      context: js.UndefOr[scala.Nothing],
+      priority: Double
+    ): this.type = js.native
     def add(types: String, callback: js.Function1[/* event */ js.Object | IEvent, Unit], context: js.Object): this.type = js.native
     def add(
       types: String,
@@ -23,6 +31,12 @@ object option extends js.Object {
       priority: Double
     ): this.type = js.native
     def add(types: js.Array[js.Array[String] | String], callback: js.Function1[IEvent | js.Object, Unit]): this.type = js.native
+    def add(
+      types: js.Array[js.Array[String] | String],
+      callback: js.Function1[IEvent | js.Object, Unit],
+      context: js.UndefOr[scala.Nothing],
+      priority: Double
+    ): this.type = js.native
     def add(
       types: js.Array[js.Array[String] | String],
       callback: js.Function1[IEvent | js.Object, Unit],
@@ -38,6 +52,12 @@ object option extends js.Object {
     def fire(`type`: String, eventobject: IEvent): this.type = js.native
     def group(): IEventGroup = js.native
     def remove(types: String, callback: js.Function1[/* event */ js.Object | IEvent, Unit]): this.type = js.native
+    def remove(
+      types: String,
+      callback: js.Function1[/* event */ js.Object | IEvent, Unit],
+      context: js.UndefOr[scala.Nothing],
+      priority: Double
+    ): this.type = js.native
     def remove(types: String, callback: js.Function1[/* event */ js.Object | IEvent, Unit], context: js.Object): this.type = js.native
     def remove(
       types: String,
@@ -46,6 +66,12 @@ object option extends js.Object {
       priority: Double
     ): this.type = js.native
     def remove(types: js.Array[js.Array[String] | String], callback: js.Function1[IEvent | js.Object, Unit]): this.type = js.native
+    def remove(
+      types: js.Array[js.Array[String] | String],
+      callback: js.Function1[IEvent | js.Object, Unit],
+      context: js.UndefOr[scala.Nothing],
+      priority: Double
+    ): this.type = js.native
     def remove(
       types: js.Array[js.Array[String] | String],
       callback: js.Function1[IEvent | js.Object, Unit],

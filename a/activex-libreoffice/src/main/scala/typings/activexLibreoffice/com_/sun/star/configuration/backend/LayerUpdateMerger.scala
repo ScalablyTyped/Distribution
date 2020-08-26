@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.configuration.backend.UpdatableLayer Service describes a layer and accepts a changed layer..
   * @since OOo 1.1.2
   */
+@js.native
 trait LayerUpdateMerger
   extends XUpdateHandler
      with XInitialization

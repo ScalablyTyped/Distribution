@@ -20,11 +20,30 @@ trait SchemaProductSigningCertificate extends js.Object {
 
 object SchemaProductSigningCertificate {
   @scala.inline
-  def apply(certificateHashSha1: String = null, certificateHashSha256: String = null): SchemaProductSigningCertificate = {
+  def apply(): SchemaProductSigningCertificate = {
     val __obj = js.Dynamic.literal()
-    if (certificateHashSha1 != null) __obj.updateDynamic("certificateHashSha1")(certificateHashSha1.asInstanceOf[js.Any])
-    if (certificateHashSha256 != null) __obj.updateDynamic("certificateHashSha256")(certificateHashSha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProductSigningCertificate]
   }
+  @scala.inline
+  implicit class SchemaProductSigningCertificateOps[Self <: SchemaProductSigningCertificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateHashSha1(value: String): Self = this.set("certificateHashSha1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateHashSha1: Self = this.set("certificateHashSha1", js.undefined)
+    @scala.inline
+    def setCertificateHashSha256(value: String): Self = this.set("certificateHashSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateHashSha256: Self = this.set("certificateHashSha256", js.undefined)
+  }
+  
 }
 

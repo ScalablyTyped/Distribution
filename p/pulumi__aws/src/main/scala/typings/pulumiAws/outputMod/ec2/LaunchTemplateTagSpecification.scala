@@ -12,18 +12,37 @@ trait LaunchTemplateTagSpecification extends js.Object {
     */
   var resourceType: js.UndefOr[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var tags: js.UndefOr[StringDictionary[String]] = js.native
 }
 
 object LaunchTemplateTagSpecification {
   @scala.inline
-  def apply(resourceType: String = null, tags: StringDictionary[js.Any] = null): LaunchTemplateTagSpecification = {
+  def apply(): LaunchTemplateTagSpecification = {
     val __obj = js.Dynamic.literal()
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateTagSpecification]
   }
+  @scala.inline
+  implicit class LaunchTemplateTagSpecificationOps[Self <: LaunchTemplateTagSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

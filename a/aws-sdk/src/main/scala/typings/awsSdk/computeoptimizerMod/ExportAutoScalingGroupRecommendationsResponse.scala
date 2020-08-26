@@ -18,11 +18,30 @@ trait ExportAutoScalingGroupRecommendationsResponse extends js.Object {
 
 object ExportAutoScalingGroupRecommendationsResponse {
   @scala.inline
-  def apply(jobId: JobId = null, s3Destination: S3Destination = null): ExportAutoScalingGroupRecommendationsResponse = {
+  def apply(): ExportAutoScalingGroupRecommendationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (s3Destination != null) __obj.updateDynamic("s3Destination")(s3Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportAutoScalingGroupRecommendationsResponse]
   }
+  @scala.inline
+  implicit class ExportAutoScalingGroupRecommendationsResponseOps[Self <: ExportAutoScalingGroupRecommendationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setS3Destination(value: S3Destination): Self = this.set("s3Destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Destination: Self = this.set("s3Destination", js.undefined)
+  }
+  
 }
 

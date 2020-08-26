@@ -62,36 +62,80 @@ trait ListObjectVersionsOutput extends js.Object {
 
 object ListObjectVersionsOutput {
   @scala.inline
-  def apply(
-    CommonPrefixes: CommonPrefixList = null,
-    DeleteMarkers: DeleteMarkers = null,
-    Delimiter: Delimiter = null,
-    EncodingType: EncodingType = null,
-    IsTruncated: js.UndefOr[IsTruncated] = js.undefined,
-    KeyMarker: KeyMarker = null,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
-    Name: BucketName = null,
-    NextKeyMarker: NextKeyMarker = null,
-    NextVersionIdMarker: NextVersionIdMarker = null,
-    Prefix: Prefix = null,
-    VersionIdMarker: VersionIdMarker = null,
-    Versions: ObjectVersionList = null
-  ): ListObjectVersionsOutput = {
+  def apply(): ListObjectVersionsOutput = {
     val __obj = js.Dynamic.literal()
-    if (CommonPrefixes != null) __obj.updateDynamic("CommonPrefixes")(CommonPrefixes.asInstanceOf[js.Any])
-    if (DeleteMarkers != null) __obj.updateDynamic("DeleteMarkers")(DeleteMarkers.asInstanceOf[js.Any])
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (KeyMarker != null) __obj.updateDynamic("KeyMarker")(KeyMarker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NextKeyMarker != null) __obj.updateDynamic("NextKeyMarker")(NextKeyMarker.asInstanceOf[js.Any])
-    if (NextVersionIdMarker != null) __obj.updateDynamic("NextVersionIdMarker")(NextVersionIdMarker.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (VersionIdMarker != null) __obj.updateDynamic("VersionIdMarker")(VersionIdMarker.asInstanceOf[js.Any])
-    if (Versions != null) __obj.updateDynamic("Versions")(Versions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectVersionsOutput]
   }
+  @scala.inline
+  implicit class ListObjectVersionsOutputOps[Self <: ListObjectVersionsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommonPrefixesVarargs(value: CommonPrefix*): Self = this.set("CommonPrefixes", js.Array(value :_*))
+    @scala.inline
+    def setCommonPrefixes(value: CommonPrefixList): Self = this.set("CommonPrefixes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommonPrefixes: Self = this.set("CommonPrefixes", js.undefined)
+    @scala.inline
+    def setDeleteMarkersVarargs(value: DeleteMarkerEntry*): Self = this.set("DeleteMarkers", js.Array(value :_*))
+    @scala.inline
+    def setDeleteMarkers(value: DeleteMarkers): Self = this.set("DeleteMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteMarkers: Self = this.set("DeleteMarkers", js.undefined)
+    @scala.inline
+    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    @scala.inline
+    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    @scala.inline
+    def setIsTruncated(value: IsTruncated): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setKeyMarker(value: KeyMarker): Self = this.set("KeyMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyMarker: Self = this.set("KeyMarker", js.undefined)
+    @scala.inline
+    def setMaxKeys(value: MaxKeys): Self = this.set("MaxKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxKeys: Self = this.set("MaxKeys", js.undefined)
+    @scala.inline
+    def setName(value: BucketName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNextKeyMarker(value: NextKeyMarker): Self = this.set("NextKeyMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextKeyMarker: Self = this.set("NextKeyMarker", js.undefined)
+    @scala.inline
+    def setNextVersionIdMarker(value: NextVersionIdMarker): Self = this.set("NextVersionIdMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextVersionIdMarker: Self = this.set("NextVersionIdMarker", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setVersionIdMarker(value: VersionIdMarker): Self = this.set("VersionIdMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionIdMarker: Self = this.set("VersionIdMarker", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: ObjectVersion*): Self = this.set("Versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: ObjectVersionList): Self = this.set("Versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("Versions", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "babel-jest" : "24.9.0"
+      "babel-jest" : "26.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "babel-jest" : "24.9.0"
+      "babel-jest" : "26.2.2"
     }
   ],
   "compile-devDependencies" : [

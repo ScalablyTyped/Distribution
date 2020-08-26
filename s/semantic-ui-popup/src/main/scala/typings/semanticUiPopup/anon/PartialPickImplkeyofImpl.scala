@@ -19,156 +19,263 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, keyof semantic-ui-popup.SemanticUI.PopupSettings._Impl>> */
+@js.native
 trait PartialPickImplkeyofImpl extends js.Object {
-  var addTouchEvents: js.UndefOr[Boolean] = js.undefined
-  var boundary: js.UndefOr[String | JQuery] = js.undefined
-  var className: js.UndefOr[ClassNameSettings] = js.undefined
-  var closable: js.UndefOr[Boolean] = js.undefined
-  var content: js.UndefOr[String] = js.undefined
-  var context: js.UndefOr[String | JQuery] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var delay: js.UndefOr[DelaySettings] = js.undefined
-  var distanceAway: js.UndefOr[Double] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var error: js.UndefOr[ErrorSettings] = js.undefined
-  var exclusive: js.UndefOr[Boolean] = js.undefined
-  var hideOnScroll: js.UndefOr[auto | `false`] = js.undefined
-  var hoverable: js.UndefOr[Boolean] = js.undefined
-  var html: js.UndefOr[String | JQuery] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var jitter: js.UndefOr[Double] = js.undefined
-  var lastResort: js.UndefOr[Boolean | String] = js.undefined
-  var maxSearchDepth: js.UndefOr[Double] = js.undefined
-  var metadata: js.UndefOr[MetadataSettings] = js.undefined
-  var movePopup: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var namespace: js.UndefOr[String] = js.undefined
-  var observeChanges: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var on: js.UndefOr[focus | click | hover | manual] = js.undefined
-  var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
-  var onHidden: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
-  var onHide: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.undefined
-  var onRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
-  var onShow: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.undefined
-  var onUnplaceable: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
-  var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
-  var performance: js.UndefOr[Boolean] = js.undefined
-  var popup: js.UndefOr[`false` | String | JQuery] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var prefer: js.UndefOr[adjacent | opposite] = js.undefined
-  var preserve: js.UndefOr[Boolean] = js.undefined
-  var scrollContext: js.UndefOr[String | JQuery] = js.undefined
-  var selector: js.UndefOr[SelectorSettings] = js.undefined
-  var setFluidWidth: js.UndefOr[Boolean] = js.undefined
-  var silent: js.UndefOr[Boolean] = js.undefined
-  var target: js.UndefOr[`false` | String | JQuery] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var transition: js.UndefOr[String] = js.undefined
-  var variation: js.UndefOr[String] = js.undefined
-  var verbose: js.UndefOr[Boolean] = js.undefined
+  var addTouchEvents: js.UndefOr[Boolean] = js.native
+  var boundary: js.UndefOr[String | JQuery] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.native
+  var closable: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String | JQuery] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var delay: js.UndefOr[DelaySettings] = js.native
+  var distanceAway: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.native
+  var hideOnScroll: js.UndefOr[auto | `false`] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[String | JQuery] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var jitter: js.UndefOr[Double] = js.native
+  var lastResort: js.UndefOr[Boolean | String] = js.native
+  var maxSearchDepth: js.UndefOr[Double] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var movePopup: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.native
+  var observeChanges: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var on: js.UndefOr[focus | click | hover | manual] = js.native
+  var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onHidden: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.native
+  var onRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.native
+  var onUnplaceable: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var performance: js.UndefOr[Boolean] = js.native
+  var popup: js.UndefOr[`false` | String | JQuery] = js.native
+  var position: js.UndefOr[String] = js.native
+  var prefer: js.UndefOr[adjacent | opposite] = js.native
+  var preserve: js.UndefOr[Boolean] = js.native
+  var scrollContext: js.UndefOr[String | JQuery] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.native
+  var setFluidWidth: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.native
+  var target: js.UndefOr[`false` | String | JQuery] = js.native
+  var title: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.native
+  var variation: js.UndefOr[String] = js.native
+  var verbose: js.UndefOr[Boolean] = js.native
 }
 
 object PartialPickImplkeyofImpl {
   @scala.inline
-  def apply(
-    addTouchEvents: js.UndefOr[Boolean] = js.undefined,
-    boundary: String | JQuery = null,
-    className: ClassNameSettings = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    content: String = null,
-    context: String | JQuery = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    delay: DelaySettings = null,
-    distanceAway: js.UndefOr[Double] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    error: ErrorSettings = null,
-    exclusive: js.UndefOr[Boolean] = js.undefined,
-    hideOnScroll: auto | `false` = null,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    html: String | JQuery = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    jitter: js.UndefOr[Double] = js.undefined,
-    lastResort: Boolean | String = null,
-    maxSearchDepth: js.UndefOr[Double] = js.undefined,
-    metadata: MetadataSettings = null,
-    movePopup: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    namespace: String = null,
-    observeChanges: js.UndefOr[Boolean] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    on: focus | click | hover | manual = null,
-    onCreate: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = null,
-    onHidden: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = null,
-    onHide: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = null,
-    onRemove: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = null,
-    onShow: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit] = null,
-    onUnplaceable: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = null,
-    onVisible: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit] = null,
-    performance: js.UndefOr[Boolean] = js.undefined,
-    popup: `false` | String | JQuery = null,
-    position: String = null,
-    prefer: adjacent | opposite = null,
-    preserve: js.UndefOr[Boolean] = js.undefined,
-    scrollContext: String | JQuery = null,
-    selector: SelectorSettings = null,
-    setFluidWidth: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    target: `false` | String | JQuery = null,
-    title: String = null,
-    transition: String = null,
-    variation: String = null,
-    verbose: js.UndefOr[Boolean] = js.undefined
-  ): PartialPickImplkeyofImpl = {
+  def apply(): PartialPickImplkeyofImpl = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addTouchEvents)) __obj.updateDynamic("addTouchEvents")(addTouchEvents.get.asInstanceOf[js.Any])
-    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(distanceAway)) __obj.updateDynamic("distanceAway")(distanceAway.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive.get.asInstanceOf[js.Any])
-    if (hideOnScroll != null) __obj.updateDynamic("hideOnScroll")(hideOnScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(jitter)) __obj.updateDynamic("jitter")(jitter.get.asInstanceOf[js.Any])
-    if (lastResort != null) __obj.updateDynamic("lastResort")(lastResort.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSearchDepth)) __obj.updateDynamic("maxSearchDepth")(maxSearchDepth.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(movePopup)) __obj.updateDynamic("movePopup")(movePopup.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(observeChanges)) __obj.updateDynamic("observeChanges")(observeChanges.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onCreate != null) __obj.updateDynamic("onCreate")(onCreate.asInstanceOf[js.Any])
-    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden.asInstanceOf[js.Any])
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
-    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
-    if (onUnplaceable != null) __obj.updateDynamic("onUnplaceable")(onUnplaceable.asInstanceOf[js.Any])
-    if (onVisible != null) __obj.updateDynamic("onVisible")(onVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(performance)) __obj.updateDynamic("performance")(performance.get.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (prefer != null) __obj.updateDynamic("prefer")(prefer.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserve)) __obj.updateDynamic("preserve")(preserve.get.asInstanceOf[js.Any])
-    if (scrollContext != null) __obj.updateDynamic("scrollContext")(scrollContext.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (!js.isUndefined(setFluidWidth)) __obj.updateDynamic("setFluidWidth")(setFluidWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (variation != null) __obj.updateDynamic("variation")(variation.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPickImplkeyofImpl]
   }
+  @scala.inline
+  implicit class PartialPickImplkeyofImplOps[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddTouchEvents(value: Boolean): Self = this.set("addTouchEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddTouchEvents: Self = this.set("addTouchEvents", js.undefined)
+    @scala.inline
+    def setBoundary(value: String | JQuery): Self = this.set("boundary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundary: Self = this.set("boundary", js.undefined)
+    @scala.inline
+    def setClassName(value: ClassNameSettings): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosable: Self = this.set("closable", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setContext(value: String | JQuery): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setDelay(value: DelaySettings): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setDistanceAway(value: Double): Self = this.set("distanceAway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistanceAway: Self = this.set("distanceAway", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setError(value: ErrorSettings): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExclusive(value: Boolean): Self = this.set("exclusive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusive: Self = this.set("exclusive", js.undefined)
+    @scala.inline
+    def setHideOnScroll(value: auto | `false`): Self = this.set("hideOnScroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnScroll: Self = this.set("hideOnScroll", js.undefined)
+    @scala.inline
+    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    @scala.inline
+    def setHtml(value: String | JQuery): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setJitter(value: Double): Self = this.set("jitter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJitter: Self = this.set("jitter", js.undefined)
+    @scala.inline
+    def setLastResort(value: Boolean | String): Self = this.set("lastResort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastResort: Self = this.set("lastResort", js.undefined)
+    @scala.inline
+    def setMaxSearchDepth(value: Double): Self = this.set("maxSearchDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSearchDepth: Self = this.set("maxSearchDepth", js.undefined)
+    @scala.inline
+    def setMetadata(value: MetadataSettings): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMovePopup(value: Boolean): Self = this.set("movePopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMovePopup: Self = this.set("movePopup", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNamespace(value: String): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setObserveChanges(value: Boolean): Self = this.set("observeChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObserveChanges: Self = this.set("observeChanges", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOn(value: focus | click | hover | manual): Self = this.set("on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn: Self = this.set("on", js.undefined)
+    @scala.inline
+    def setOnCreate(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = this.set("onCreate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCreate: Self = this.set("onCreate", js.undefined)
+    @scala.inline
+    def setOnHidden(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = this.set("onHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHidden: Self = this.set("onHidden", js.undefined)
+    @scala.inline
+    def setOnHide(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]): Self = this.set("onHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHide: Self = this.set("onHide", js.undefined)
+    @scala.inline
+    def setOnRemove(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = this.set("onRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnRemove: Self = this.set("onRemove", js.undefined)
+    @scala.inline
+    def setOnShow(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]): Self = this.set("onShow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnShow: Self = this.set("onShow", js.undefined)
+    @scala.inline
+    def setOnUnplaceable(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = this.set("onUnplaceable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnUnplaceable: Self = this.set("onUnplaceable", js.undefined)
+    @scala.inline
+    def setOnVisible(value: js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]): Self = this.set("onVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnVisible: Self = this.set("onVisible", js.undefined)
+    @scala.inline
+    def setPerformance(value: Boolean): Self = this.set("performance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformance: Self = this.set("performance", js.undefined)
+    @scala.inline
+    def setPopup(value: `false` | String | JQuery): Self = this.set("popup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopup: Self = this.set("popup", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPrefer(value: adjacent | opposite): Self = this.set("prefer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefer: Self = this.set("prefer", js.undefined)
+    @scala.inline
+    def setPreserve(value: Boolean): Self = this.set("preserve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserve: Self = this.set("preserve", js.undefined)
+    @scala.inline
+    def setScrollContext(value: String | JQuery): Self = this.set("scrollContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollContext: Self = this.set("scrollContext", js.undefined)
+    @scala.inline
+    def setSelector(value: SelectorSettings): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+    @scala.inline
+    def setSetFluidWidth(value: Boolean): Self = this.set("setFluidWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetFluidWidth: Self = this.set("setFluidWidth", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setTarget(value: `false` | String | JQuery): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransition(value: String): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+    @scala.inline
+    def setVariation(value: String): Self = this.set("variation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariation: Self = this.set("variation", js.undefined)
+    @scala.inline
+    def setVerbose(value: Boolean): Self = this.set("verbose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerbose: Self = this.set("verbose", js.undefined)
+  }
+  
 }
 

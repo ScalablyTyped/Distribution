@@ -59,6 +59,8 @@ class GatewayAssociation protected () extends CustomResource {
   /**
     * *Deprecated:* Use `associatedGatewayId` instead. The ID of the VGW with which to associate the gateway.
     * Used for single account Direct Connect gateway associations.
+    *
+    * @deprecated use 'associated_gateway_id' argument instead
     */
   val vpnGatewayId: Output_[js.UndefOr[String]] = js.native
 }
@@ -74,8 +76,10 @@ object GatewayAssociation extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): GatewayAssociation = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GatewayAssociation = js.native
   def get(name: String, id: Input[ID], state: GatewayAssociationState): GatewayAssociation = js.native
   def get(name: String, id: Input[ID], state: GatewayAssociationState, opts: CustomResourceOptions): GatewayAssociation = js.native
   /**

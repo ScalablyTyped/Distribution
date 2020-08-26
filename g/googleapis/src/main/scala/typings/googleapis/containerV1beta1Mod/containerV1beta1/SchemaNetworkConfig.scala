@@ -31,16 +31,34 @@ trait SchemaNetworkConfig extends js.Object {
 
 object SchemaNetworkConfig {
   @scala.inline
-  def apply(
-    enableIntraNodeVisibility: js.UndefOr[Boolean] = js.undefined,
-    network: String = null,
-    subnetwork: String = null
-  ): SchemaNetworkConfig = {
+  def apply(): SchemaNetworkConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enableIntraNodeVisibility)) __obj.updateDynamic("enableIntraNodeVisibility")(enableIntraNodeVisibility.get.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkConfig]
   }
+  @scala.inline
+  implicit class SchemaNetworkConfigOps[Self <: SchemaNetworkConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnableIntraNodeVisibility(value: Boolean): Self = this.set("enableIntraNodeVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableIntraNodeVisibility: Self = this.set("enableIntraNodeVisibility", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+  }
+  
 }
 

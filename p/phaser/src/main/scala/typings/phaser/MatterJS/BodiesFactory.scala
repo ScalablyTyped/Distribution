@@ -19,6 +19,7 @@ trait BodiesFactory extends js.Object {
     * @return {body} A new circle body
     */
   def circle(x: Double, y: Double, radius: Double): BodyType = js.native
+  def circle(x: Double, y: Double, radius: Double, options: js.UndefOr[scala.Nothing], maxSides: Double): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): BodyType = js.native
   /**
@@ -42,13 +43,107 @@ trait BodiesFactory extends js.Object {
     * @return {body}
     */
   def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]]): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: js.UndefOr[scala.Nothing],
+    removeCollinear: js.UndefOr[scala.Nothing],
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: js.UndefOr[scala.Nothing],
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: js.UndefOr[scala.Nothing],
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: Boolean
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: Boolean,
+    removeCollinear: js.UndefOr[scala.Nothing],
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: Boolean,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: js.UndefOr[scala.Nothing],
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
   def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]], options: IBodyDefinition): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[Vector]],
     options: IBodyDefinition,
+    flagInternal: js.UndefOr[scala.Nothing],
+    removeCollinear: js.UndefOr[scala.Nothing],
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: js.UndefOr[scala.Nothing],
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: js.UndefOr[scala.Nothing],
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
     flagInternal: Boolean
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: js.UndefOr[scala.Nothing],
+    minimumArea: Double
   ): BodyType = js.native
   def fromVertices(
     x: Double,

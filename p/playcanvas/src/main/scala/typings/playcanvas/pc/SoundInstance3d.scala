@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
   * @property position - The position of the sound in 3D space.
   * @property velocity - The velocity of the sound.
   * @property distanceModel - Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be:
-  
-  * {@link pc.DISTANCE_LINEAR}
-  * {@link pc.DISTANCE_INVERSE}
-  * {@link pc.DISTANCE_EXPONENTIAL}
-  
-  Default is {@link pc.DISTANCE_LINEAR}.
+  *
+  * * {@link pc.DISTANCE_LINEAR}
+  * * {@link pc.DISTANCE_INVERSE}
+  * * {@link pc.DISTANCE_EXPONENTIAL}
+  *
+  * Default is {@link pc.DISTANCE_LINEAR}.
   * @property refDistance - The reference distance for reducing volume as the sound source moves further from the listener.
   * @property maxDistance - The maximum distance from the listener at which audio falloff stops. Note the volume of the audio is not 0 after this distance, but just doesn't fall off anymore.
   * @property rollOffFactor - The factor used in the falloff equation.
@@ -29,12 +29,12 @@ import scala.scalajs.js.annotation._
   * @param [options.position = null] - The position of the sound in 3D space.
   * @param [options.velocity = null] - The velocity of the sound.
   * @param [options.distanceModel = pc.DISTANCE_LINEAR] - Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be:
-  
-  * {@link pc.DISTANCE_LINEAR}
-  * {@link pc.DISTANCE_INVERSE}
-  * {@link pc.DISTANCE_EXPONENTIAL}
-  
-  Default is {@link pc.DISTANCE_LINEAR}.
+  *
+  * * {@link pc.DISTANCE_LINEAR}
+  * * {@link pc.DISTANCE_INVERSE}
+  * * {@link pc.DISTANCE_EXPONENTIAL}
+  *
+  * Default is {@link pc.DISTANCE_LINEAR}.
   * @param [options.refDistance = 1] - The reference distance for reducing volume as the sound source moves further from the listener.
   * @param [options.maxDistance = 10000] - The maximum distance from the listener at which audio falloff stops. Note the volume of the audio is not 0 after this distance, but just doesn't fall off anymore.
   * @param [options.rollOffFactor = 1] - The factor used in the falloff equation.
@@ -43,10 +43,12 @@ import scala.scalajs.js.annotation._
 trait SoundInstance3d extends SoundInstance {
   /**
     * Determines which algorithm to use to reduce the volume of the audio as it moves away from the listener. Can be:
-    * * {@link pc.DISTANCE_LINEAR}
-    * * {@link pc.DISTANCE_INVERSE}
-    * * {@link pc.DISTANCE_EXPONENTIAL}
-    * Default is {@link pc.DISTANCE_LINEAR}.
+    
+    * {@link pc.DISTANCE_LINEAR}
+    * {@link pc.DISTANCE_INVERSE}
+    * {@link pc.DISTANCE_EXPONENTIAL}
+    
+    Default is {@link pc.DISTANCE_LINEAR}.
     */
   var distanceModel: String = js.native
   /**

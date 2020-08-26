@@ -47,6 +47,7 @@ trait Row extends Style {
   var values: js.Array[CellValue] | StringDictionary[CellValue] = js.native
   val worksheet: Worksheet = js.native
   def addPageBreak(): Unit = js.native
+  def addPageBreak(lft: js.UndefOr[scala.Nothing], rght: Double): Unit = js.native
   def addPageBreak(lft: Double): Unit = js.native
   def addPageBreak(lft: Double, rght: Double): Unit = js.native
   /**

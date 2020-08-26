@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileDescriptorSet_ () extends Message {
   def addFile(): FileDescriptorProto = js.native
+  def addFile(value: js.UndefOr[scala.Nothing], index: Double): FileDescriptorProto = js.native
   def addFile(value: FileDescriptorProto): FileDescriptorProto = js.native
   def addFile(value: FileDescriptorProto, index: Double): FileDescriptorProto = js.native
   def clearFileList(): Unit = js.native

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class EntityView protected () extends js.Object {
   def this(entity: Entity, scene: Scene) = this()
   def this(entity: Entity, scene: Scene, ellipsoid: Ellipsoid) = this()
+  def this(entity: Entity, scene: Scene, ellipsoid: js.UndefOr[scala.Nothing], boundingSphere: BoundingSphere) = this()
   def this(entity: Entity, scene: Scene, ellipsoid: Ellipsoid, boundingSphere: BoundingSphere) = this()
   var boundingSphere: Entity = js.native
   var ellipsoid: Ellipsoid = js.native

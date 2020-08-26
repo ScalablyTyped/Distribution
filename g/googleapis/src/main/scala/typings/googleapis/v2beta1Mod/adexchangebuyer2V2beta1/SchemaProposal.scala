@@ -106,46 +106,102 @@ trait SchemaProposal extends js.Object {
 
 object SchemaProposal {
   @scala.inline
-  def apply(
-    billedBuyer: SchemaBuyer = null,
-    buyer: SchemaBuyer = null,
-    buyerContacts: js.Array[SchemaContactInformation] = null,
-    buyerPrivateData: SchemaPrivateData = null,
-    deals: js.Array[SchemaDeal] = null,
-    displayName: String = null,
-    isRenegotiating: js.UndefOr[Boolean] = js.undefined,
-    isSetupComplete: js.UndefOr[Boolean] = js.undefined,
-    lastUpdaterOrCommentorRole: String = null,
-    notes: js.Array[SchemaNote] = null,
-    originatorRole: String = null,
-    privateAuctionId: String = null,
-    proposalId: String = null,
-    proposalRevision: String = null,
-    proposalState: String = null,
-    seller: SchemaSeller = null,
-    sellerContacts: js.Array[SchemaContactInformation] = null,
-    updateTime: String = null
-  ): SchemaProposal = {
+  def apply(): SchemaProposal = {
     val __obj = js.Dynamic.literal()
-    if (billedBuyer != null) __obj.updateDynamic("billedBuyer")(billedBuyer.asInstanceOf[js.Any])
-    if (buyer != null) __obj.updateDynamic("buyer")(buyer.asInstanceOf[js.Any])
-    if (buyerContacts != null) __obj.updateDynamic("buyerContacts")(buyerContacts.asInstanceOf[js.Any])
-    if (buyerPrivateData != null) __obj.updateDynamic("buyerPrivateData")(buyerPrivateData.asInstanceOf[js.Any])
-    if (deals != null) __obj.updateDynamic("deals")(deals.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRenegotiating)) __obj.updateDynamic("isRenegotiating")(isRenegotiating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSetupComplete)) __obj.updateDynamic("isSetupComplete")(isSetupComplete.get.asInstanceOf[js.Any])
-    if (lastUpdaterOrCommentorRole != null) __obj.updateDynamic("lastUpdaterOrCommentorRole")(lastUpdaterOrCommentorRole.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (originatorRole != null) __obj.updateDynamic("originatorRole")(originatorRole.asInstanceOf[js.Any])
-    if (privateAuctionId != null) __obj.updateDynamic("privateAuctionId")(privateAuctionId.asInstanceOf[js.Any])
-    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId.asInstanceOf[js.Any])
-    if (proposalRevision != null) __obj.updateDynamic("proposalRevision")(proposalRevision.asInstanceOf[js.Any])
-    if (proposalState != null) __obj.updateDynamic("proposalState")(proposalState.asInstanceOf[js.Any])
-    if (seller != null) __obj.updateDynamic("seller")(seller.asInstanceOf[js.Any])
-    if (sellerContacts != null) __obj.updateDynamic("sellerContacts")(sellerContacts.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProposal]
   }
+  @scala.inline
+  implicit class SchemaProposalOps[Self <: SchemaProposal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBilledBuyer(value: SchemaBuyer): Self = this.set("billedBuyer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBilledBuyer: Self = this.set("billedBuyer", js.undefined)
+    @scala.inline
+    def setBuyer(value: SchemaBuyer): Self = this.set("buyer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyer: Self = this.set("buyer", js.undefined)
+    @scala.inline
+    def setBuyerContactsVarargs(value: SchemaContactInformation*): Self = this.set("buyerContacts", js.Array(value :_*))
+    @scala.inline
+    def setBuyerContacts(value: js.Array[SchemaContactInformation]): Self = this.set("buyerContacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyerContacts: Self = this.set("buyerContacts", js.undefined)
+    @scala.inline
+    def setBuyerPrivateData(value: SchemaPrivateData): Self = this.set("buyerPrivateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuyerPrivateData: Self = this.set("buyerPrivateData", js.undefined)
+    @scala.inline
+    def setDealsVarargs(value: SchemaDeal*): Self = this.set("deals", js.Array(value :_*))
+    @scala.inline
+    def setDeals(value: js.Array[SchemaDeal]): Self = this.set("deals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeals: Self = this.set("deals", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setIsRenegotiating(value: Boolean): Self = this.set("isRenegotiating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRenegotiating: Self = this.set("isRenegotiating", js.undefined)
+    @scala.inline
+    def setIsSetupComplete(value: Boolean): Self = this.set("isSetupComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSetupComplete: Self = this.set("isSetupComplete", js.undefined)
+    @scala.inline
+    def setLastUpdaterOrCommentorRole(value: String): Self = this.set("lastUpdaterOrCommentorRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdaterOrCommentorRole: Self = this.set("lastUpdaterOrCommentorRole", js.undefined)
+    @scala.inline
+    def setNotesVarargs(value: SchemaNote*): Self = this.set("notes", js.Array(value :_*))
+    @scala.inline
+    def setNotes(value: js.Array[SchemaNote]): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotes: Self = this.set("notes", js.undefined)
+    @scala.inline
+    def setOriginatorRole(value: String): Self = this.set("originatorRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginatorRole: Self = this.set("originatorRole", js.undefined)
+    @scala.inline
+    def setPrivateAuctionId(value: String): Self = this.set("privateAuctionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateAuctionId: Self = this.set("privateAuctionId", js.undefined)
+    @scala.inline
+    def setProposalId(value: String): Self = this.set("proposalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposalId: Self = this.set("proposalId", js.undefined)
+    @scala.inline
+    def setProposalRevision(value: String): Self = this.set("proposalRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposalRevision: Self = this.set("proposalRevision", js.undefined)
+    @scala.inline
+    def setProposalState(value: String): Self = this.set("proposalState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProposalState: Self = this.set("proposalState", js.undefined)
+    @scala.inline
+    def setSeller(value: SchemaSeller): Self = this.set("seller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeller: Self = this.set("seller", js.undefined)
+    @scala.inline
+    def setSellerContactsVarargs(value: SchemaContactInformation*): Self = this.set("sellerContacts", js.Array(value :_*))
+    @scala.inline
+    def setSellerContacts(value: js.Array[SchemaContactInformation]): Self = this.set("sellerContacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSellerContacts: Self = this.set("sellerContacts", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

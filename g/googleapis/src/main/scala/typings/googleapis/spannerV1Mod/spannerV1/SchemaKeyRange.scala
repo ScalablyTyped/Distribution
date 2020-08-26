@@ -74,18 +74,46 @@ trait SchemaKeyRange extends js.Object {
 
 object SchemaKeyRange {
   @scala.inline
-  def apply(
-    endClosed: js.Array[_] = null,
-    endOpen: js.Array[_] = null,
-    startClosed: js.Array[_] = null,
-    startOpen: js.Array[_] = null
-  ): SchemaKeyRange = {
+  def apply(): SchemaKeyRange = {
     val __obj = js.Dynamic.literal()
-    if (endClosed != null) __obj.updateDynamic("endClosed")(endClosed.asInstanceOf[js.Any])
-    if (endOpen != null) __obj.updateDynamic("endOpen")(endOpen.asInstanceOf[js.Any])
-    if (startClosed != null) __obj.updateDynamic("startClosed")(startClosed.asInstanceOf[js.Any])
-    if (startOpen != null) __obj.updateDynamic("startOpen")(startOpen.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaKeyRange]
   }
+  @scala.inline
+  implicit class SchemaKeyRangeOps[Self <: SchemaKeyRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndClosedVarargs(value: js.Any*): Self = this.set("endClosed", js.Array(value :_*))
+    @scala.inline
+    def setEndClosed(value: js.Array[_]): Self = this.set("endClosed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndClosed: Self = this.set("endClosed", js.undefined)
+    @scala.inline
+    def setEndOpenVarargs(value: js.Any*): Self = this.set("endOpen", js.Array(value :_*))
+    @scala.inline
+    def setEndOpen(value: js.Array[_]): Self = this.set("endOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndOpen: Self = this.set("endOpen", js.undefined)
+    @scala.inline
+    def setStartClosedVarargs(value: js.Any*): Self = this.set("startClosed", js.Array(value :_*))
+    @scala.inline
+    def setStartClosed(value: js.Array[_]): Self = this.set("startClosed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartClosed: Self = this.set("startClosed", js.undefined)
+    @scala.inline
+    def setStartOpenVarargs(value: js.Any*): Self = this.set("startOpen", js.Array(value :_*))
+    @scala.inline
+    def setStartOpen(value: js.Array[_]): Self = this.set("startOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartOpen: Self = this.set("startOpen", js.undefined)
+  }
+  
 }
 

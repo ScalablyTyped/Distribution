@@ -16,20 +16,42 @@ trait PartialClassNameMapStepIc extends js.Object {
 
 object PartialClassNameMapStepIc {
   @scala.inline
-  def apply(
-    active: String = null,
-    completed: String = null,
-    error: String = null,
-    root: String = null,
-    text: String = null
-  ): PartialClassNameMapStepIc = {
+  def apply(): PartialClassNameMapStepIc = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapStepIc]
   }
+  @scala.inline
+  implicit class PartialClassNameMapStepIcOps[Self <: PartialClassNameMapStepIc] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setCompleted(value: String): Self = this.set("completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleted: Self = this.set("completed", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

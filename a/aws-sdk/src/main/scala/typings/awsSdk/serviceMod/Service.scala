@@ -34,8 +34,8 @@ class Service () extends js.Object {
     * @param {string[]} versions - a list of versions that work with this service.
     * @param {Object} features - an object to attach to the prototype.
     */
-  def defineService(serviceIdentifier: String, versions: js.Array[String]): Instantiable1[js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
-  def defineService(serviceIdentifier: String, versions: js.Array[String], features: js.Any): Instantiable1[js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
+  def defineService(serviceIdentifier: String, versions: js.Array[String]): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
+  def defineService(serviceIdentifier: String, versions: js.Array[String], features: js.Any): Instantiable1[/* config */ js.UndefOr[ServiceConfigurationOptions], Service] = js.native
   /**
     * Calls an operation on a service with the given input parameters.
     * 
@@ -43,6 +43,11 @@ class Service () extends js.Object {
     * @param {map} params - a map of input options for the operation. 
     */
   def makeRequest(operation: String): Request[_, AWSError] = js.native
+  def makeRequest(
+    operation: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
+  ): Request[_, AWSError] = js.native
   def makeRequest(operation: String, params: StringDictionary[js.Any]): Request[_, AWSError] = js.native
   def makeRequest(
     operation: String,
@@ -56,6 +61,11 @@ class Service () extends js.Object {
     * @param {map} params - a map of input options for the operation. 
     */
   def makeUnauthenticatedRequest(operation: String): Request[_, AWSError] = js.native
+  def makeUnauthenticatedRequest(
+    operation: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
+  ): Request[_, AWSError] = js.native
   def makeUnauthenticatedRequest(operation: String, params: StringDictionary[js.Any]): Request[_, AWSError] = js.native
   def makeUnauthenticatedRequest(
     operation: String,
@@ -71,6 +81,11 @@ class Service () extends js.Object {
     */
   def waitFor(state: String): Request[_, AWSError] = js.native
   def waitFor(state: String, callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]): Request[_, AWSError] = js.native
+  def waitFor(
+    state: String,
+    params: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Any, Unit]
+  ): Request[_, AWSError] = js.native
   def waitFor(state: String, params: Dictkey): Request[_, AWSError] = js.native
   def waitFor(
     state: String,

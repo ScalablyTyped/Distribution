@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/export-to-excel-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataGridExportToExcelButton")
 @js.native
@@ -26,9 +26,9 @@ class DataGridExportToExcelButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FDataGridExportToExcelButton: IModel = js.native
   def maxNumberOfRows: Double = js.native
-  def maxNumberOfRows(newValue: Double): js.Any = js.native
+  def maxNumberOfRows_=(newValue: Double): Unit = js.native
   def useExcelDateType: Boolean = js.native
-  def useExcelDateType(newValue: Boolean): js.Any = js.native
+  def useExcelDateType_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

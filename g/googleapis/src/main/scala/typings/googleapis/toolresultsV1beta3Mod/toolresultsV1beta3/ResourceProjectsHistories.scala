@@ -34,6 +34,7 @@ class ResourceProjectsHistories protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaHistory] = js.native
   def create(callback: BodyResponseCallback[SchemaHistory]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHistory] = js.native
   def create(params: ParamsResourceProjectsHistoriesCreate): GaxiosPromise[SchemaHistory] = js.native
   def create(params: ParamsResourceProjectsHistoriesCreate, callback: BodyResponseCallback[SchemaHistory]): Unit = js.native
   def create(
@@ -65,6 +66,7 @@ class ResourceProjectsHistories protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaHistory] = js.native
   def get(callback: BodyResponseCallback[SchemaHistory]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHistory] = js.native
   def get(params: ParamsResourceProjectsHistoriesGet): GaxiosPromise[SchemaHistory] = js.native
   def get(params: ParamsResourceProjectsHistoriesGet, callback: BodyResponseCallback[SchemaHistory]): Unit = js.native
   def get(
@@ -100,6 +102,7 @@ class ResourceProjectsHistories protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListHistoriesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListHistoriesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListHistoriesResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesList): GaxiosPromise[SchemaListHistoriesResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesList,

@@ -28,11 +28,9 @@ class NanoflowCall protected () extends Element {
   @JSName("model")
   var model_FNanoflowCall: IModel = js.native
   def containerAsNanoflowCallAction: NanoflowCallAction = js.native
-  def nanoflow(): js.Any = js.native
-  def nanoflow(newValue: INanoflow): js.Any = js.native
+  def nanoflow: INanoflow | Null = js.native
   def nanoflowQualifiedName: String | Null = js.native
-  @JSName("nanoflow")
-  def nanoflow_Union: INanoflow | Null = js.native
+  def nanoflow_=(newValue: INanoflow | Null): Unit = js.native
   def parameterMappings: IList[NanoflowCallParameterMapping] = js.native
 }
 

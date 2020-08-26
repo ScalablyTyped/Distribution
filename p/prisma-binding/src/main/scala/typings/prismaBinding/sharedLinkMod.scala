@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object sharedLinkMod extends js.Object {
   @js.native
   class SharedLink () extends ApolloLink {
-    var innerLink: js.UndefOr[js.Any] = js.native
+    var innerLink: js.Any = js.native
     def setInnerLink(innerLink: ApolloLink): Unit = js.native
   }
   

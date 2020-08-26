@@ -18,11 +18,30 @@ trait FaceRecord extends js.Object {
 
 object FaceRecord {
   @scala.inline
-  def apply(Face: Face = null, FaceDetail: FaceDetail = null): FaceRecord = {
+  def apply(): FaceRecord = {
     val __obj = js.Dynamic.literal()
-    if (Face != null) __obj.updateDynamic("Face")(Face.asInstanceOf[js.Any])
-    if (FaceDetail != null) __obj.updateDynamic("FaceDetail")(FaceDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaceRecord]
   }
+  @scala.inline
+  implicit class FaceRecordOps[Self <: FaceRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFace(value: Face): Self = this.set("Face", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFace: Self = this.set("Face", js.undefined)
+    @scala.inline
+    def setFaceDetail(value: FaceDetail): Self = this.set("FaceDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceDetail: Self = this.set("FaceDetail", js.undefined)
+  }
+  
 }
 

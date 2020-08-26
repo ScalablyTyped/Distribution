@@ -11,8 +11,8 @@ Use webpack with karma
 | Full name          | karma-webpack |
 | Keywords           | karma, karma-plugin, karma-preprocessor, karma-webpack, webpack |
 | # releases         | 26 |
-| # dependents       | 311 |
-| # downloads        | 17968682 |
+| # dependents       | 313 |
+| # downloads        | 18102004 |
 | # stars            | 13 |
 
 ## Links

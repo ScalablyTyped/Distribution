@@ -8,11 +8,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Gives access to an event container represented by an XNameContainer containing {@link ScriptEventDescriptor} instances. */
+@js.native
 trait XScriptEventsSupplier extends XInterface {
   /** Returns an XNameContainer containing instances of {@link ScriptEventDescriptor} */
-  val Events: XNameContainer
+  val Events: XNameContainer = js.native
   /** Returns an XNameContainer containing instances of {@link ScriptEventDescriptor} */
-  def getEvents(): XNameContainer
+  def getEvents(): XNameContainer = js.native
 }
 
 object XScriptEventsSupplier {
@@ -27,5 +28,22 @@ object XScriptEventsSupplier {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getEvents = js.Any.fromFunction0(getEvents), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XScriptEventsSupplier]
   }
+  @scala.inline
+  implicit class XScriptEventsSupplierOps[Self <: XScriptEventsSupplier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvents(value: XNameContainer): Self = this.set("Events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetEvents(value: () => XNameContainer): Self = this.set("getEvents", js.Any.fromFunction0(value))
+  }
+  
 }
 

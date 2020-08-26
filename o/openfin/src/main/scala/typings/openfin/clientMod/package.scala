@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object clientMod {
-  type DisconnectionListener = js.Function1[/* providerIdentity */ typings.openfin.shapesMod.ProviderIdentity, js.Any]
+  type DisconnectionListener = js.Function1[/* providerIdentity */ typings.openfin.shapesIdentityMod.ProviderIdentity, js.Any]
 }

@@ -10,12 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("PieExportOptions")
 @js.native
 class PieExportOptions ()
-  extends typings.devexpressWeb.PieExportOptions {
-  /** @deprecated The PieExportOptions.AutoArrangeContent property is obsolete now. Use the DashboardPdfExportOptions.PieAutoArrangeContent property instead. To learn more, see the following KB article: https://www.devexpress.com/Support/Center/Question/Details/T488764 */
-  /**
-    * Gets or sets whether dashboard item elements are arranged automatically on the exported page.
-    */
-  /* CompleteClass */
-  override var AutoArrangeContent: Boolean = js.native
-}
+  extends typings.devexpressWeb.PieExportOptions
 

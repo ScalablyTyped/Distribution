@@ -30,6 +30,7 @@ class ResourceSponsors protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSponsorListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSponsorListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSponsorListResponse] = js.native
   def list(params: ParamsResourceSponsorsList): GaxiosPromise[SchemaSponsorListResponse] = js.native
   def list(params: ParamsResourceSponsorsList, callback: BodyResponseCallback[SchemaSponsorListResponse]): Unit = js.native
   def list(

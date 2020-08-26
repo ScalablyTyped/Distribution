@@ -4,26 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotificationPayloadObject extends PayloadObject {
   @JSName("method")
-  var method_NotificationPayloadObject: String
+  var method_NotificationPayloadObject: String = js.native
 }
 
 object NotificationPayloadObject {
   @scala.inline
-  def apply(
-    method: String,
-    error: SerializerError = null,
-    id: String | Double = null,
-    params: js.Any = null,
-    result: js.Any = null
-  ): NotificationPayloadObject = {
+  def apply(method: String): NotificationPayloadObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationPayloadObject]
   }
+  @scala.inline
+  implicit class NotificationPayloadObjectOps[Self <: NotificationPayloadObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+  }
+  
 }
 

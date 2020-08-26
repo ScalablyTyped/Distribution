@@ -12,7 +12,7 @@ Yet another JS code coverage tool that computes statement, line, function and br
 | Keywords           | coverage, code coverage, JS code coverage, JS coverage |
 | # releases         | 1 |
 | # dependents       | 844 |
-| # downloads        | 57699018 |
+| # downloads        | 57261599 |
 | # stars            | 222 |
 
 ## Links

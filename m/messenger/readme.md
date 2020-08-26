@@ -12,7 +12,7 @@ A json communication layer for node.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 4892 |
+| # downloads        | 5030 |
 | # stars            | 3 |
 
 ## Links

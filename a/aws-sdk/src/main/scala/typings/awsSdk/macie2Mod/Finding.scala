@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Finding extends js.Object {
   /**
-    * The identifier for the AWS account that the finding applies to. This is typically the account that owns the affected resource.
+    * The unique identifier for the AWS account that the finding applies to. This is typically the account that owns the affected resource.
     */
   var accountId: js.UndefOr[string] = js.native
   /**
@@ -82,46 +82,94 @@ trait Finding extends js.Object {
 
 object Finding {
   @scala.inline
-  def apply(
-    accountId: string = null,
-    archived: js.UndefOr[boolean] = js.undefined,
-    category: FindingCategory = null,
-    classificationDetails: ClassificationDetails = null,
-    count: js.UndefOr[long] = js.undefined,
-    createdAt: timestampIso8601 = null,
-    description: string = null,
-    id: string = null,
-    partition: string = null,
-    policyDetails: PolicyDetails = null,
-    region: string = null,
-    resourcesAffected: ResourcesAffected = null,
-    sample: js.UndefOr[boolean] = js.undefined,
-    schemaVersion: string = null,
-    severity: Severity = null,
-    title: string = null,
-    `type`: FindingType = null,
-    updatedAt: timestampIso8601 = null
-  ): Finding = {
+  def apply(): Finding = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived.get.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (classificationDetails != null) __obj.updateDynamic("classificationDetails")(classificationDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (partition != null) __obj.updateDynamic("partition")(partition.asInstanceOf[js.Any])
-    if (policyDetails != null) __obj.updateDynamic("policyDetails")(policyDetails.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (resourcesAffected != null) __obj.updateDynamic("resourcesAffected")(resourcesAffected.asInstanceOf[js.Any])
-    if (!js.isUndefined(sample)) __obj.updateDynamic("sample")(sample.get.asInstanceOf[js.Any])
-    if (schemaVersion != null) __obj.updateDynamic("schemaVersion")(schemaVersion.asInstanceOf[js.Any])
-    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Finding]
   }
+  @scala.inline
+  implicit class FindingOps[Self <: Finding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setArchived(value: boolean): Self = this.set("archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("archived", js.undefined)
+    @scala.inline
+    def setCategory(value: FindingCategory): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setClassificationDetails(value: ClassificationDetails): Self = this.set("classificationDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassificationDetails: Self = this.set("classificationDetails", js.undefined)
+    @scala.inline
+    def setCount(value: long): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setPartition(value: string): Self = this.set("partition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartition: Self = this.set("partition", js.undefined)
+    @scala.inline
+    def setPolicyDetails(value: PolicyDetails): Self = this.set("policyDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyDetails: Self = this.set("policyDetails", js.undefined)
+    @scala.inline
+    def setRegion(value: string): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setResourcesAffected(value: ResourcesAffected): Self = this.set("resourcesAffected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesAffected: Self = this.set("resourcesAffected", js.undefined)
+    @scala.inline
+    def setSample(value: boolean): Self = this.set("sample", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSample: Self = this.set("sample", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: string): Self = this.set("schemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("schemaVersion", js.undefined)
+    @scala.inline
+    def setSeverity(value: Severity): Self = this.set("severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("severity", js.undefined)
+    @scala.inline
+    def setTitle(value: string): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: FindingType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: timestampIso8601): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

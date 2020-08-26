@@ -142,6 +142,7 @@ object mod extends js.Object {
       */ typings.rosie.rosieStrings.IFactory with TopLevel[T],
       options: js.Any
     ): T = js.native
+    def attributes(attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
     /**
       * Convenience function for defining a set of attributes on this object as
       * builder functions or static values. If you need to specify dependencies,
@@ -159,7 +160,7 @@ object mod extends js.Object {
       */
     def attrs[Keys /* <: /* keyof T */ String */](
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in Keys ]: T[K] | (opts? : any): T[K]}
+    {[ K in Keys ]: T[K] | (opts : any | undefined): T[K]}
       */ typings.rosie.rosieStrings.IFactory with TopLevel[js.Any]
     ): IFactory[T] = js.native
     /**
@@ -182,6 +183,7 @@ object mod extends js.Object {
       */ typings.rosie.rosieStrings.IFactory with TopLevel[T],
       options: js.Any
     ): T = js.native
+    def build(attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
     def buildList(size: Double): js.Array[T] = js.native
     def buildList(
       size: Double,
@@ -196,6 +198,7 @@ object mod extends js.Object {
       */ typings.rosie.rosieStrings.IFactory with TopLevel[T],
       options: js.Any
     ): js.Array[T] = js.native
+    def buildList(size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[T] = js.native
     /**
       * Extends a given factory by copying over its attributes, options,
       * callbacks, and constructor. This can be useful when you want to make
@@ -243,6 +246,7 @@ object mod extends js.Object {
       * @return {Factory}
       */
     def option(name: String): IFactory[T] = js.native
+    def option(name: String, dependenciesOrValue: js.UndefOr[scala.Nothing], value: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Any, value: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Array[String]): IFactory[T] = js.native
@@ -316,6 +320,7 @@ object mod extends js.Object {
       */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T],
       options: js.Any
     ): T = js.native
+    def build[T](name: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
     /**
       * Builds a collection of objects using the named factory.
       *
@@ -326,6 +331,7 @@ object mod extends js.Object {
       * @return {Array.<*>}
       */
     def buildList(name: String, size: Double): js.Array[_] = js.native
+    def buildList(name: String, size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[_] = js.native
     def buildList(name: String, size: Double, attributes: js.Any): js.Array[_] = js.native
     def buildList(name: String, size: Double, attributes: js.Any, options: js.Any): js.Array[_] = js.native
     /**

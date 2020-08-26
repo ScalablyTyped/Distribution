@@ -6,33 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * NetworkPolicyPeer describes a peer to allow traffic from. Only certain combinations of fields
-  * are allowed
+  * NetworkPolicyPeer describes a peer to allow traffic from. Only certain combinations of fields are allowed
   */
+@js.native
 trait NetworkPolicyPeer extends js.Object {
   /**
-    * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the
-    * other fields can be.
+    * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the other fields can be.
     */
-  val ipBlock: IPBlock
+  var ipBlock: IPBlock = js.native
   /**
-    * Selects Namespaces using cluster-scoped labels. This field follows standard label selector
-    * semantics; if present but empty, it selects all namespaces.
+    * Selects Namespaces using cluster-scoped labels. This field follows standard label selector semantics; if present but empty, it selects all namespaces.
     *
-    * If PodSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods matching
-    * PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects all Pods
-    * in the Namespaces selected by NamespaceSelector.
+    * If PodSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods matching PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects all Pods in the Namespaces selected by NamespaceSelector.
     */
-  val namespaceSelector: LabelSelector
+  var namespaceSelector: LabelSelector = js.native
   /**
-    * This is a label selector which selects Pods. This field follows standard label selector
-    * semantics; if present but empty, it selects all pods.
+    * This is a label selector which selects Pods. This field follows standard label selector semantics; if present but empty, it selects all pods.
     *
-    * If NamespaceSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods
-    * matching PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects
-    * the Pods matching PodSelector in the policy's own Namespace.
+    * If NamespaceSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods matching PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects the Pods matching PodSelector in the policy's own Namespace.
     */
-  val podSelector: LabelSelector
+  var podSelector: LabelSelector = js.native
 }
 
 object NetworkPolicyPeer {
@@ -41,5 +34,24 @@ object NetworkPolicyPeer {
     val __obj = js.Dynamic.literal(ipBlock = ipBlock.asInstanceOf[js.Any], namespaceSelector = namespaceSelector.asInstanceOf[js.Any], podSelector = podSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkPolicyPeer]
   }
+  @scala.inline
+  implicit class NetworkPolicyPeerOps[Self <: NetworkPolicyPeer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIpBlock(value: IPBlock): Self = this.set("ipBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespaceSelector(value: LabelSelector): Self = this.set("namespaceSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPodSelector(value: LabelSelector): Self = this.set("podSelector", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -30,6 +30,7 @@ class ResourceBiddersAccountsFiltersetsLosingbids protected () extends js.Object
     */
   def list(): GaxiosPromise[SchemaListLosingBidsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLosingBidsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLosingBidsResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsLosingbidsList): GaxiosPromise[SchemaListLosingBidsResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsLosingbidsList,

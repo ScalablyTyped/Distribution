@@ -28,8 +28,6 @@ class Grant protected () extends CustomResource {
   val constraints: Output_[js.UndefOr[js.Array[GrantConstraint]]] = js.native
   /**
     * A list of grant tokens to be used when creating the grant. See [Grant Tokens](http://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#grant_token) for more information about grant tokens.
-    * * `retireOnDelete` -(Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
-    * See [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) for more information.
     */
   val grantCreationTokens: Output_[js.UndefOr[js.Array[String]]] = js.native
   /**
@@ -56,6 +54,10 @@ class Grant protected () extends CustomResource {
     * A list of operations that the grant permits. The permitted values are: `Decrypt, Encrypt, GenerateDataKey, GenerateDataKeyWithoutPlaintext, ReEncryptFrom, ReEncryptTo, CreateGrant, RetireGrant, DescribeKey`
     */
   val operations: Output_[js.Array[String]] = js.native
+  /**
+    * -(Defaults to false, Forces new resources) If set to false (the default) the grants will be revoked upon deletion, and if set to true the grants will try to be retired upon deletion. Note that retiring grants requires special permissions, hence why we default to revoking grants.
+    * See [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) for more information.
+    */
   val retireOnDelete: Output_[js.UndefOr[Boolean]] = js.native
   /**
     * The principal that is given permission to retire the grant by using RetireGrant operation in ARN format. Note that due to eventual consistency issues around IAM principals, the state may not always be refreshed to reflect what is true in AWS.
@@ -74,8 +76,10 @@ object Grant extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Grant = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Grant = js.native
   def get(name: String, id: Input[ID], state: GrantState): Grant = js.native
   def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): Grant = js.native
   /**

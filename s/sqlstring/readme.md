@@ -11,8 +11,8 @@ Simple SQL escape and format for MySQL
 | Full name          | sqlstring |
 | Keywords           | sqlstring, sql, escape, sql escape |
 | # releases         | 2 |
-| # dependents       | 135 |
-| # downloads        | 26334300 |
+| # dependents       | 142 |
+| # downloads        | 28291453 |
 | # stars            | 9 |
 
 ## Links

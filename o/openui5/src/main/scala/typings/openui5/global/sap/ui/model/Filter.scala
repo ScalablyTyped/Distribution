@@ -40,12 +40,19 @@ class Filter protected ()
   def this(vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter], vOperator: js.Any) = this()
   def this(vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter], vOperator: Boolean) = this()
   def this(vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter], vOperator: TypeofFilterOperator) = this()
+  def this(vFilterInfo: String, vOperator: js.UndefOr[scala.Nothing], oValue1: js.Any) = this()
   def this(vFilterInfo: String, vOperator: js.Any, oValue1: js.Any) = this()
   def this(vFilterInfo: String, vOperator: Boolean, oValue1: js.Any) = this()
   def this(vFilterInfo: String, vOperator: TypeofFilterOperator, oValue1: js.Any) = this()
+  def this(vFilterInfo: js.Any, vOperator: js.UndefOr[scala.Nothing], oValue1: js.Any) = this()
   def this(vFilterInfo: js.Any, vOperator: js.Any, oValue1: js.Any) = this()
   def this(vFilterInfo: js.Any, vOperator: Boolean, oValue1: js.Any) = this()
   def this(vFilterInfo: js.Any, vOperator: TypeofFilterOperator, oValue1: js.Any) = this()
+  def this(
+    vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
+    vOperator: js.UndefOr[scala.Nothing],
+    oValue1: js.Any
+  ) = this()
   def this(vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter], vOperator: js.Any, oValue1: js.Any) = this()
   def this(vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter], vOperator: Boolean, oValue1: js.Any) = this()
   def this(
@@ -53,12 +60,60 @@ class Filter protected ()
     vOperator: TypeofFilterOperator,
     oValue1: js.Any
   ) = this()
+  def this(
+    vFilterInfo: String,
+    vOperator: js.UndefOr[scala.Nothing],
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
+  def this(vFilterInfo: String, vOperator: js.UndefOr[scala.Nothing], oValue1: js.Any, oValue2: js.Any) = this()
+  def this(vFilterInfo: String, vOperator: js.Any, oValue1: js.UndefOr[scala.Nothing], oValue2: js.Any) = this()
   def this(vFilterInfo: String, vOperator: js.Any, oValue1: js.Any, oValue2: js.Any) = this()
+  def this(vFilterInfo: String, vOperator: Boolean, oValue1: js.UndefOr[scala.Nothing], oValue2: js.Any) = this()
   def this(vFilterInfo: String, vOperator: Boolean, oValue1: js.Any, oValue2: js.Any) = this()
+  def this(
+    vFilterInfo: String,
+    vOperator: TypeofFilterOperator,
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
   def this(vFilterInfo: String, vOperator: TypeofFilterOperator, oValue1: js.Any, oValue2: js.Any) = this()
+  def this(
+    vFilterInfo: js.Any,
+    vOperator: js.UndefOr[scala.Nothing],
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
+  def this(vFilterInfo: js.Any, vOperator: js.UndefOr[scala.Nothing], oValue1: js.Any, oValue2: js.Any) = this()
+  def this(vFilterInfo: js.Any, vOperator: js.Any, oValue1: js.UndefOr[scala.Nothing], oValue2: js.Any) = this()
   def this(vFilterInfo: js.Any, vOperator: js.Any, oValue1: js.Any, oValue2: js.Any) = this()
+  def this(vFilterInfo: js.Any, vOperator: Boolean, oValue1: js.UndefOr[scala.Nothing], oValue2: js.Any) = this()
   def this(vFilterInfo: js.Any, vOperator: Boolean, oValue1: js.Any, oValue2: js.Any) = this()
+  def this(
+    vFilterInfo: js.Any,
+    vOperator: TypeofFilterOperator,
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
   def this(vFilterInfo: js.Any, vOperator: TypeofFilterOperator, oValue1: js.Any, oValue2: js.Any) = this()
+  def this(
+    vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
+    vOperator: js.UndefOr[scala.Nothing],
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
+  def this(
+    vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
+    vOperator: js.UndefOr[scala.Nothing],
+    oValue1: js.Any,
+    oValue2: js.Any
+  ) = this()
+  def this(
+    vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
+    vOperator: js.Any,
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
   def this(
     vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
     vOperator: js.Any,
@@ -68,7 +123,19 @@ class Filter protected ()
   def this(
     vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
     vOperator: Boolean,
+    oValue1: js.UndefOr[scala.Nothing],
+    oValue2: js.Any
+  ) = this()
+  def this(
+    vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
+    vOperator: Boolean,
     oValue1: js.Any,
+    oValue2: js.Any
+  ) = this()
+  def this(
+    vFilterInfo: js.Array[typings.openui5.sap.ui.model.Filter],
+    vOperator: TypeofFilterOperator,
+    oValue1: js.UndefOr[scala.Nothing],
     oValue2: js.Any
   ) = this()
   def this(

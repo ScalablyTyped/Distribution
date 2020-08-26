@@ -34,22 +34,48 @@ trait PhoneNumberOrder extends js.Object {
 
 object PhoneNumberOrder {
   @scala.inline
-  def apply(
-    CreatedTimestamp: Iso8601Timestamp = null,
-    OrderedPhoneNumbers: OrderedPhoneNumberList = null,
-    PhoneNumberOrderId: GuidString = null,
-    ProductType: PhoneNumberProductType = null,
-    Status: PhoneNumberOrderStatus = null,
-    UpdatedTimestamp: Iso8601Timestamp = null
-  ): PhoneNumberOrder = {
+  def apply(): PhoneNumberOrder = {
     val __obj = js.Dynamic.literal()
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (OrderedPhoneNumbers != null) __obj.updateDynamic("OrderedPhoneNumbers")(OrderedPhoneNumbers.asInstanceOf[js.Any])
-    if (PhoneNumberOrderId != null) __obj.updateDynamic("PhoneNumberOrderId")(PhoneNumberOrderId.asInstanceOf[js.Any])
-    if (ProductType != null) __obj.updateDynamic("ProductType")(ProductType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumberOrder]
   }
+  @scala.inline
+  implicit class PhoneNumberOrderOps[Self <: PhoneNumberOrder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setOrderedPhoneNumbersVarargs(value: OrderedPhoneNumber*): Self = this.set("OrderedPhoneNumbers", js.Array(value :_*))
+    @scala.inline
+    def setOrderedPhoneNumbers(value: OrderedPhoneNumberList): Self = this.set("OrderedPhoneNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderedPhoneNumbers: Self = this.set("OrderedPhoneNumbers", js.undefined)
+    @scala.inline
+    def setPhoneNumberOrderId(value: GuidString): Self = this.set("PhoneNumberOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumberOrderId: Self = this.set("PhoneNumberOrderId", js.undefined)
+    @scala.inline
+    def setProductType(value: PhoneNumberProductType): Self = this.set("ProductType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductType: Self = this.set("ProductType", js.undefined)
+    @scala.inline
+    def setStatus(value: PhoneNumberOrderStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+  }
+  
 }
 

@@ -34,21 +34,44 @@ trait NotifyConfigurationType extends js.Object {
 
 object NotifyConfigurationType {
   @scala.inline
-  def apply(
-    SourceArn: ArnType,
-    BlockEmail: NotifyEmailType = null,
-    From: StringType = null,
-    MfaEmail: NotifyEmailType = null,
-    NoActionEmail: NotifyEmailType = null,
-    ReplyTo: StringType = null
-  ): NotifyConfigurationType = {
+  def apply(SourceArn: ArnType): NotifyConfigurationType = {
     val __obj = js.Dynamic.literal(SourceArn = SourceArn.asInstanceOf[js.Any])
-    if (BlockEmail != null) __obj.updateDynamic("BlockEmail")(BlockEmail.asInstanceOf[js.Any])
-    if (From != null) __obj.updateDynamic("From")(From.asInstanceOf[js.Any])
-    if (MfaEmail != null) __obj.updateDynamic("MfaEmail")(MfaEmail.asInstanceOf[js.Any])
-    if (NoActionEmail != null) __obj.updateDynamic("NoActionEmail")(NoActionEmail.asInstanceOf[js.Any])
-    if (ReplyTo != null) __obj.updateDynamic("ReplyTo")(ReplyTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyConfigurationType]
   }
+  @scala.inline
+  implicit class NotifyConfigurationTypeOps[Self <: NotifyConfigurationType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceArn(value: ArnType): Self = this.set("SourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlockEmail(value: NotifyEmailType): Self = this.set("BlockEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockEmail: Self = this.set("BlockEmail", js.undefined)
+    @scala.inline
+    def setFrom(value: StringType): Self = this.set("From", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("From", js.undefined)
+    @scala.inline
+    def setMfaEmail(value: NotifyEmailType): Self = this.set("MfaEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMfaEmail: Self = this.set("MfaEmail", js.undefined)
+    @scala.inline
+    def setNoActionEmail(value: NotifyEmailType): Self = this.set("NoActionEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoActionEmail: Self = this.set("NoActionEmail", js.undefined)
+    @scala.inline
+    def setReplyTo(value: StringType): Self = this.set("ReplyTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplyTo: Self = this.set("ReplyTo", js.undefined)
+  }
+  
 }
 

@@ -7,12 +7,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FromIniInit extends SharedConfigInit {
   /**
     * A promise that will be resolved with loaded and parsed credentials files.
     * Used to avoid loading shared config files multiple times.
     */
-  var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.undefined
+  var loadedConfig: js.UndefOr[js.Promise[SharedConfigFiles]] = js.native
   /**
     * A function that returna a promise fulfilled with an MFA token code for
     * the provided MFA Serial code. If a profile requires an MFA code and
@@ -21,11 +22,11 @@ trait FromIniInit extends SharedConfigInit {
     *
     * @param mfaSerial The serial code of the MFA device specified.
     */
-  var mfaCodeProvider: js.UndefOr[js.Function1[/* mfaSerial */ String, js.Promise[String]]] = js.undefined
+  var mfaCodeProvider: js.UndefOr[js.Function1[/* mfaSerial */ String, js.Promise[String]]] = js.native
   /**
     * The configuration profile to use.
     */
-  var profile: js.UndefOr[String] = js.undefined
+  var profile: js.UndefOr[String] = js.native
   /**
     * A function that assumes a role and returns a promise fulfilled with
     * credentials for the assumed role.
@@ -39,27 +40,43 @@ trait FromIniInit extends SharedConfigInit {
       /* params */ AssumeRoleParams, 
       js.Promise[Credentials]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object FromIniInit {
   @scala.inline
-  def apply(
-    configFilepath: String = null,
-    filepath: String = null,
-    loadedConfig: js.Promise[SharedConfigFiles] = null,
-    mfaCodeProvider: /* mfaSerial */ String => js.Promise[String] = null,
-    profile: String = null,
-    roleAssumer: (/* sourceCreds */ Credentials, /* params */ AssumeRoleParams) => js.Promise[Credentials] = null
-  ): FromIniInit = {
+  def apply(): FromIniInit = {
     val __obj = js.Dynamic.literal()
-    if (configFilepath != null) __obj.updateDynamic("configFilepath")(configFilepath.asInstanceOf[js.Any])
-    if (filepath != null) __obj.updateDynamic("filepath")(filepath.asInstanceOf[js.Any])
-    if (loadedConfig != null) __obj.updateDynamic("loadedConfig")(loadedConfig.asInstanceOf[js.Any])
-    if (mfaCodeProvider != null) __obj.updateDynamic("mfaCodeProvider")(js.Any.fromFunction1(mfaCodeProvider))
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (roleAssumer != null) __obj.updateDynamic("roleAssumer")(js.Any.fromFunction2(roleAssumer))
     __obj.asInstanceOf[FromIniInit]
   }
+  @scala.inline
+  implicit class FromIniInitOps[Self <: FromIniInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = this.set("loadedConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadedConfig: Self = this.set("loadedConfig", js.undefined)
+    @scala.inline
+    def setMfaCodeProvider(value: /* mfaSerial */ String => js.Promise[String]): Self = this.set("mfaCodeProvider", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMfaCodeProvider: Self = this.set("mfaCodeProvider", js.undefined)
+    @scala.inline
+    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setRoleAssumer(value: (/* sourceCreds */ Credentials, /* params */ AssumeRoleParams) => js.Promise[Credentials]): Self = this.set("roleAssumer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRoleAssumer: Self = this.set("roleAssumer", js.undefined)
+  }
+  
 }
 

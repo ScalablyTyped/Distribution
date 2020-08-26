@@ -38,24 +38,50 @@ trait RoleAliasDescription extends js.Object {
 
 object RoleAliasDescription {
   @scala.inline
-  def apply(
-    creationDate: DateType = null,
-    credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined,
-    lastModifiedDate: DateType = null,
-    owner: AwsAccountId = null,
-    roleAlias: RoleAlias = null,
-    roleAliasArn: RoleAliasArn = null,
-    roleArn: RoleArn = null
-  ): RoleAliasDescription = {
+  def apply(): RoleAliasDescription = {
     val __obj = js.Dynamic.literal()
-    if (creationDate != null) __obj.updateDynamic("creationDate")(creationDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(credentialDurationSeconds)) __obj.updateDynamic("credentialDurationSeconds")(credentialDurationSeconds.get.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (roleAlias != null) __obj.updateDynamic("roleAlias")(roleAlias.asInstanceOf[js.Any])
-    if (roleAliasArn != null) __obj.updateDynamic("roleAliasArn")(roleAliasArn.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleAliasDescription]
   }
+  @scala.inline
+  implicit class RoleAliasDescriptionOps[Self <: RoleAliasDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("creationDate", js.undefined)
+    @scala.inline
+    def setCredentialDurationSeconds(value: CredentialDurationSeconds): Self = this.set("credentialDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentialDurationSeconds: Self = this.set("credentialDurationSeconds", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("lastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("lastModifiedDate", js.undefined)
+    @scala.inline
+    def setOwner(value: AwsAccountId): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setRoleAlias(value: RoleAlias): Self = this.set("roleAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleAlias: Self = this.set("roleAlias", js.undefined)
+    @scala.inline
+    def setRoleAliasArn(value: RoleAliasArn): Self = this.set("roleAliasArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleAliasArn: Self = this.set("roleAliasArn", js.undefined)
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

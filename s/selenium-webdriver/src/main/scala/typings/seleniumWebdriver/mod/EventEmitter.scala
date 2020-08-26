@@ -23,6 +23,7 @@ class EventEmitter () extends js.Object {
     * @private
     */
   def addListener(`type`: String, fn: js.Function): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: js.UndefOr[scala.Nothing], opt_oneshot: Boolean): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
   def addListener(`type`: String, fn: js.Function, opt_scope: js.Any, opt_oneshot: Boolean): EventEmitter = js.native
   // endregion

@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def default(value: String): js.Array[String] = js.native
+  def default(value: String, env: js.UndefOr[scala.Nothing], file: String): js.Array[String] = js.native
   def default(value: String, env: String): js.Array[String] = js.native
   def default(value: String, env: String, file: String): js.Array[String] = js.native
   def parseArgsStringToArgv(value: String): js.Array[String] = js.native
+  def parseArgsStringToArgv(value: String, env: js.UndefOr[scala.Nothing], file: String): js.Array[String] = js.native
   def parseArgsStringToArgv(value: String, env: String): js.Array[String] = js.native
   def parseArgsStringToArgv(value: String, env: String, file: String): js.Array[String] = js.native
 }

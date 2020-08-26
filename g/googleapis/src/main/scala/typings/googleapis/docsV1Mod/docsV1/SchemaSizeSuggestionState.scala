@@ -23,14 +23,30 @@ trait SchemaSizeSuggestionState extends js.Object {
 
 object SchemaSizeSuggestionState {
   @scala.inline
-  def apply(
-    heightSuggested: js.UndefOr[Boolean] = js.undefined,
-    widthSuggested: js.UndefOr[Boolean] = js.undefined
-  ): SchemaSizeSuggestionState = {
+  def apply(): SchemaSizeSuggestionState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(heightSuggested)) __obj.updateDynamic("heightSuggested")(heightSuggested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(widthSuggested)) __obj.updateDynamic("widthSuggested")(widthSuggested.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSizeSuggestionState]
   }
+  @scala.inline
+  implicit class SchemaSizeSuggestionStateOps[Self <: SchemaSizeSuggestionState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeightSuggested(value: Boolean): Self = this.set("heightSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightSuggested: Self = this.set("heightSuggested", js.undefined)
+    @scala.inline
+    def setWidthSuggested(value: Boolean): Self = this.set("widthSuggested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidthSuggested: Self = this.set("widthSuggested", js.undefined)
+  }
+  
 }
 

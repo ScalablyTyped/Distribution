@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains static methods that implement data management functionality common to cryptographic operations. */
+@js.native
 trait CryptographicBuffer extends js.Object
 

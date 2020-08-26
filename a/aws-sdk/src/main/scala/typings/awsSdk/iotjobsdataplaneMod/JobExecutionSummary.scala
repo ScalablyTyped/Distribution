@@ -34,22 +34,46 @@ trait JobExecutionSummary extends js.Object {
 
 object JobExecutionSummary {
   @scala.inline
-  def apply(
-    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
-    jobId: JobId = null,
-    lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined,
-    queuedAt: js.UndefOr[QueuedAt] = js.undefined,
-    startedAt: js.UndefOr[StartedAt] = js.undefined,
-    versionNumber: js.UndefOr[VersionNumber] = js.undefined
-  ): JobExecutionSummary = {
+  def apply(): JobExecutionSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber.get.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (!js.isUndefined(lastUpdatedAt)) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(queuedAt)) __obj.updateDynamic("queuedAt")(queuedAt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(versionNumber)) __obj.updateDynamic("versionNumber")(versionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobExecutionSummary]
   }
+  @scala.inline
+  implicit class JobExecutionSummaryOps[Self <: JobExecutionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionNumber(value: ExecutionNumber): Self = this.set("executionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionNumber: Self = this.set("executionNumber", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: LastUpdatedAt): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setQueuedAt(value: QueuedAt): Self = this.set("queuedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueuedAt: Self = this.set("queuedAt", js.undefined)
+    @scala.inline
+    def setStartedAt(value: StartedAt): Self = this.set("startedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedAt: Self = this.set("startedAt", js.undefined)
+    @scala.inline
+    def setVersionNumber(value: VersionNumber): Self = this.set("versionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNumber: Self = this.set("versionNumber", js.undefined)
+  }
+  
 }
 

@@ -90,6 +90,11 @@ trait Pebble extends js.Object {
     * @return string
     */
   def sendAppMessage(jsonAppMessage: js.Object): String = js.native
+  def sendAppMessage(
+    jsonAppMessage: js.Object,
+    callbackForAck: js.UndefOr[scala.Nothing],
+    callbackForNack: js.Function1[/* e */ AppMessageEvent, Unit]
+  ): String = js.native
   def sendAppMessage(jsonAppMessage: js.Object, callbackForAck: js.Function1[/* e */ AppMessageEvent, Unit]): String = js.native
   def sendAppMessage(
     jsonAppMessage: js.Object,

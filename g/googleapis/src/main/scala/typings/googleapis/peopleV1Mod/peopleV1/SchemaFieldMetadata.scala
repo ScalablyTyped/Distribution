@@ -28,16 +28,34 @@ trait SchemaFieldMetadata extends js.Object {
 
 object SchemaFieldMetadata {
   @scala.inline
-  def apply(
-    primary: js.UndefOr[Boolean] = js.undefined,
-    source: SchemaSource = null,
-    verified: js.UndefOr[Boolean] = js.undefined
-  ): SchemaFieldMetadata = {
+  def apply(): SchemaFieldMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFieldMetadata]
   }
+  @scala.inline
+  implicit class SchemaFieldMetadataOps[Self <: SchemaFieldMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setSource(value: SchemaSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setVerified(value: Boolean): Self = this.set("verified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerified: Self = this.set("verified", js.undefined)
+  }
+  
 }
 

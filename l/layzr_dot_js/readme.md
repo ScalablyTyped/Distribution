@@ -12,7 +12,7 @@ A modern lazy loading library for images.
 | Keywords           | images, lazy, load, scroll |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 88334 |
+| # downloads        | 90193 |
 | # stars            | 3 |
 
 ## Links

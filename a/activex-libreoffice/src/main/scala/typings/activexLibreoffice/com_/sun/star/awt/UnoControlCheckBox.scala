@@ -10,6 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies a check box control. */
+@js.native
 trait UnoControlCheckBox
   extends XControl
      with XWindow

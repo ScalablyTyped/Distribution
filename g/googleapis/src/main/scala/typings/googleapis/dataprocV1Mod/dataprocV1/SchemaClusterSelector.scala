@@ -24,11 +24,30 @@ trait SchemaClusterSelector extends js.Object {
 
 object SchemaClusterSelector {
   @scala.inline
-  def apply(clusterLabels: StringDictionary[String] = null, zone: String = null): SchemaClusterSelector = {
+  def apply(): SchemaClusterSelector = {
     val __obj = js.Dynamic.literal()
-    if (clusterLabels != null) __obj.updateDynamic("clusterLabels")(clusterLabels.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClusterSelector]
   }
+  @scala.inline
+  implicit class SchemaClusterSelectorOps[Self <: SchemaClusterSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterLabels(value: StringDictionary[String]): Self = this.set("clusterLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterLabels: Self = this.set("clusterLabels", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

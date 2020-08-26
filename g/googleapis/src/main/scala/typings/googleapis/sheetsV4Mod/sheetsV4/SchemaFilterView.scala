@@ -42,22 +42,48 @@ trait SchemaFilterView extends js.Object {
 
 object SchemaFilterView {
   @scala.inline
-  def apply(
-    criteria: StringDictionary[SchemaFilterCriteria] = null,
-    filterViewId: js.UndefOr[Double] = js.undefined,
-    namedRangeId: String = null,
-    range: SchemaGridRange = null,
-    sortSpecs: js.Array[SchemaSortSpec] = null,
-    title: String = null
-  ): SchemaFilterView = {
+  def apply(): SchemaFilterView = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterViewId)) __obj.updateDynamic("filterViewId")(filterViewId.get.asInstanceOf[js.Any])
-    if (namedRangeId != null) __obj.updateDynamic("namedRangeId")(namedRangeId.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFilterView]
   }
+  @scala.inline
+  implicit class SchemaFilterViewOps[Self <: SchemaFilterView] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCriteria(value: StringDictionary[SchemaFilterCriteria]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    @scala.inline
+    def setFilterViewId(value: Double): Self = this.set("filterViewId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterViewId: Self = this.set("filterViewId", js.undefined)
+    @scala.inline
+    def setNamedRangeId(value: String): Self = this.set("namedRangeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamedRangeId: Self = this.set("namedRangeId", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setSortSpecsVarargs(value: SchemaSortSpec*): Self = this.set("sortSpecs", js.Array(value :_*))
+    @scala.inline
+    def setSortSpecs(value: js.Array[SchemaSortSpec]): Self = this.set("sortSpecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortSpecs: Self = this.set("sortSpecs", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

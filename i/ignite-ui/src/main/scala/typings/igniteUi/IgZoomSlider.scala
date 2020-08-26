@@ -6,191 +6,306 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgZoomSlider
   extends /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
-  var actualPixelScalingRatio: js.UndefOr[Double] = js.undefined
-  var areThumbCalloutsEnabled: js.UndefOr[Boolean] = js.undefined
-  var barBrush: js.UndefOr[js.Any] = js.undefined
-  var barExtent: js.UndefOr[Double] = js.undefined
-  var barOutline: js.UndefOr[js.Any] = js.undefined
-  var barStrokeThickness: js.UndefOr[Double] = js.undefined
-  var endInset: js.UndefOr[Double] = js.undefined
+  var actualPixelScalingRatio: js.UndefOr[Double] = js.native
+  var areThumbCalloutsEnabled: js.UndefOr[Boolean] = js.native
+  var barBrush: js.UndefOr[js.Any] = js.native
+  var barExtent: js.UndefOr[Double] = js.native
+  var barOutline: js.UndefOr[js.Any] = js.native
+  var barStrokeThickness: js.UndefOr[Double] = js.native
+  var endInset: js.UndefOr[Double] = js.native
   /**
     * The height of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.undefined
-  var higherCalloutBrush: js.UndefOr[js.Any] = js.undefined
-  var higherCalloutOutline: js.UndefOr[js.Any] = js.undefined
-  var higherCalloutStrokeThickness: js.UndefOr[Double] = js.undefined
-  var higherCalloutTextColor: js.UndefOr[js.Any] = js.undefined
-  var higherShadeBrush: js.UndefOr[js.Any] = js.undefined
-  var higherShadeOutline: js.UndefOr[js.Any] = js.undefined
-  var higherShadeStrokeThickness: js.UndefOr[Double] = js.undefined
-  var higherThumbBrush: js.UndefOr[js.Any] = js.undefined
-  var higherThumbHeight: js.UndefOr[Double] = js.undefined
-  var higherThumbOutline: js.UndefOr[js.Any] = js.undefined
-  var higherThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
-  var higherThumbStrokeThickness: js.UndefOr[Double] = js.undefined
-  var higherThumbWidth: js.UndefOr[Double] = js.undefined
-  var lowerCalloutBrush: js.UndefOr[js.Any] = js.undefined
-  var lowerCalloutOutline: js.UndefOr[js.Any] = js.undefined
-  var lowerCalloutStrokeThickness: js.UndefOr[Double] = js.undefined
-  var lowerCalloutTextColor: js.UndefOr[js.Any] = js.undefined
-  var lowerShadeBrush: js.UndefOr[js.Any] = js.undefined
-  var lowerShadeOutline: js.UndefOr[js.Any] = js.undefined
-  var lowerShadeStrokeThickness: js.UndefOr[Double] = js.undefined
-  var lowerThumbBrush: js.UndefOr[js.Any] = js.undefined
-  var lowerThumbHeight: js.UndefOr[Double] = js.undefined
-  var lowerThumbOutline: js.UndefOr[js.Any] = js.undefined
-  var lowerThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
-  var lowerThumbStrokeThickness: js.UndefOr[Double] = js.undefined
-  var lowerThumbWidth: js.UndefOr[Double] = js.undefined
-  var maxZoomWidth: js.UndefOr[Double] = js.undefined
-  var minZoomWidth: js.UndefOr[Double] = js.undefined
-  var orientation: js.UndefOr[String] = js.undefined
-  var panTransitionDuration: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
+  var higherCalloutBrush: js.UndefOr[js.Any] = js.native
+  var higherCalloutOutline: js.UndefOr[js.Any] = js.native
+  var higherCalloutStrokeThickness: js.UndefOr[Double] = js.native
+  var higherCalloutTextColor: js.UndefOr[js.Any] = js.native
+  var higherShadeBrush: js.UndefOr[js.Any] = js.native
+  var higherShadeOutline: js.UndefOr[js.Any] = js.native
+  var higherShadeStrokeThickness: js.UndefOr[Double] = js.native
+  var higherThumbBrush: js.UndefOr[js.Any] = js.native
+  var higherThumbHeight: js.UndefOr[Double] = js.native
+  var higherThumbOutline: js.UndefOr[js.Any] = js.native
+  var higherThumbRidgesBrush: js.UndefOr[js.Any] = js.native
+  var higherThumbStrokeThickness: js.UndefOr[Double] = js.native
+  var higherThumbWidth: js.UndefOr[Double] = js.native
+  var lowerCalloutBrush: js.UndefOr[js.Any] = js.native
+  var lowerCalloutOutline: js.UndefOr[js.Any] = js.native
+  var lowerCalloutStrokeThickness: js.UndefOr[Double] = js.native
+  var lowerCalloutTextColor: js.UndefOr[js.Any] = js.native
+  var lowerShadeBrush: js.UndefOr[js.Any] = js.native
+  var lowerShadeOutline: js.UndefOr[js.Any] = js.native
+  var lowerShadeStrokeThickness: js.UndefOr[Double] = js.native
+  var lowerThumbBrush: js.UndefOr[js.Any] = js.native
+  var lowerThumbHeight: js.UndefOr[Double] = js.native
+  var lowerThumbOutline: js.UndefOr[js.Any] = js.native
+  var lowerThumbRidgesBrush: js.UndefOr[js.Any] = js.native
+  var lowerThumbStrokeThickness: js.UndefOr[Double] = js.native
+  var lowerThumbWidth: js.UndefOr[Double] = js.native
+  var maxZoomWidth: js.UndefOr[Double] = js.native
+  var minZoomWidth: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[String] = js.native
+  var panTransitionDuration: js.UndefOr[Double] = js.native
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
-  var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.undefined
-  var rangeThumbBrush: js.UndefOr[js.Any] = js.undefined
-  var rangeThumbOutline: js.UndefOr[js.Any] = js.undefined
-  var rangeThumbRidgesBrush: js.UndefOr[js.Any] = js.undefined
-  var rangeThumbStrokeThickness: js.UndefOr[Double] = js.undefined
-  var resolvingAxisValue: js.UndefOr[ResolvingAxisValueEvent] = js.undefined
-  var startInset: js.UndefOr[Double] = js.undefined
-  var thumbCalloutTextStyle: js.UndefOr[js.Any] = js.undefined
-  var trackEndInset: js.UndefOr[Double] = js.undefined
-  var trackStartInset: js.UndefOr[Double] = js.undefined
+  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.native
+  var rangeThumbBrush: js.UndefOr[js.Any] = js.native
+  var rangeThumbOutline: js.UndefOr[js.Any] = js.native
+  var rangeThumbRidgesBrush: js.UndefOr[js.Any] = js.native
+  var rangeThumbStrokeThickness: js.UndefOr[Double] = js.native
+  var resolvingAxisValue: js.UndefOr[ResolvingAxisValueEvent] = js.native
+  var startInset: js.UndefOr[Double] = js.native
+  var thumbCalloutTextStyle: js.UndefOr[js.Any] = js.native
+  var trackEndInset: js.UndefOr[Double] = js.native
+  var trackStartInset: js.UndefOr[Double] = js.native
   /**
     * The width of the gauge. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.undefined
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var width: js.UndefOr[String | Double] = js.native
+  var windowRect: js.UndefOr[js.Any] = js.native
   /**
     * Occurs just after the current ZoomSlider's window rectangle is changed.
     */
-  var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.undefined
+  var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.native
 }
 
 object IgZoomSlider {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    actualPixelScalingRatio: js.UndefOr[Double] = js.undefined,
-    areThumbCalloutsEnabled: js.UndefOr[Boolean] = js.undefined,
-    barBrush: js.Any = null,
-    barExtent: js.UndefOr[Double] = js.undefined,
-    barOutline: js.Any = null,
-    barStrokeThickness: js.UndefOr[Double] = js.undefined,
-    endInset: js.UndefOr[Double] = js.undefined,
-    height: String | Double = null,
-    higherCalloutBrush: js.Any = null,
-    higherCalloutOutline: js.Any = null,
-    higherCalloutStrokeThickness: js.UndefOr[Double] = js.undefined,
-    higherCalloutTextColor: js.Any = null,
-    higherShadeBrush: js.Any = null,
-    higherShadeOutline: js.Any = null,
-    higherShadeStrokeThickness: js.UndefOr[Double] = js.undefined,
-    higherThumbBrush: js.Any = null,
-    higherThumbHeight: js.UndefOr[Double] = js.undefined,
-    higherThumbOutline: js.Any = null,
-    higherThumbRidgesBrush: js.Any = null,
-    higherThumbStrokeThickness: js.UndefOr[Double] = js.undefined,
-    higherThumbWidth: js.UndefOr[Double] = js.undefined,
-    lowerCalloutBrush: js.Any = null,
-    lowerCalloutOutline: js.Any = null,
-    lowerCalloutStrokeThickness: js.UndefOr[Double] = js.undefined,
-    lowerCalloutTextColor: js.Any = null,
-    lowerShadeBrush: js.Any = null,
-    lowerShadeOutline: js.Any = null,
-    lowerShadeStrokeThickness: js.UndefOr[Double] = js.undefined,
-    lowerThumbBrush: js.Any = null,
-    lowerThumbHeight: js.UndefOr[Double] = js.undefined,
-    lowerThumbOutline: js.Any = null,
-    lowerThumbRidgesBrush: js.Any = null,
-    lowerThumbStrokeThickness: js.UndefOr[Double] = js.undefined,
-    lowerThumbWidth: js.UndefOr[Double] = js.undefined,
-    maxZoomWidth: js.UndefOr[Double] = js.undefined,
-    minZoomWidth: js.UndefOr[Double] = js.undefined,
-    orientation: String = null,
-    panTransitionDuration: js.UndefOr[Double] = js.undefined,
-    pixelScalingRatio: js.UndefOr[Double] = js.undefined,
-    propertyChanged: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit = null,
-    rangeThumbBrush: js.Any = null,
-    rangeThumbOutline: js.Any = null,
-    rangeThumbRidgesBrush: js.Any = null,
-    rangeThumbStrokeThickness: js.UndefOr[Double] = js.undefined,
-    resolvingAxisValue: (/* event */ Event, /* ui */ ResolvingAxisValueEventUIParam) => Unit = null,
-    startInset: js.UndefOr[Double] = js.undefined,
-    thumbCalloutTextStyle: js.Any = null,
-    trackEndInset: js.UndefOr[Double] = js.undefined,
-    trackStartInset: js.UndefOr[Double] = js.undefined,
-    width: String | Double = null,
-    windowRect: js.Any = null,
-    windowRectChanged: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit = null
-  ): IgZoomSlider = {
+  def apply(): IgZoomSlider = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(actualPixelScalingRatio)) __obj.updateDynamic("actualPixelScalingRatio")(actualPixelScalingRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(areThumbCalloutsEnabled)) __obj.updateDynamic("areThumbCalloutsEnabled")(areThumbCalloutsEnabled.get.asInstanceOf[js.Any])
-    if (barBrush != null) __obj.updateDynamic("barBrush")(barBrush.asInstanceOf[js.Any])
-    if (!js.isUndefined(barExtent)) __obj.updateDynamic("barExtent")(barExtent.get.asInstanceOf[js.Any])
-    if (barOutline != null) __obj.updateDynamic("barOutline")(barOutline.asInstanceOf[js.Any])
-    if (!js.isUndefined(barStrokeThickness)) __obj.updateDynamic("barStrokeThickness")(barStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(endInset)) __obj.updateDynamic("endInset")(endInset.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (higherCalloutBrush != null) __obj.updateDynamic("higherCalloutBrush")(higherCalloutBrush.asInstanceOf[js.Any])
-    if (higherCalloutOutline != null) __obj.updateDynamic("higherCalloutOutline")(higherCalloutOutline.asInstanceOf[js.Any])
-    if (!js.isUndefined(higherCalloutStrokeThickness)) __obj.updateDynamic("higherCalloutStrokeThickness")(higherCalloutStrokeThickness.get.asInstanceOf[js.Any])
-    if (higherCalloutTextColor != null) __obj.updateDynamic("higherCalloutTextColor")(higherCalloutTextColor.asInstanceOf[js.Any])
-    if (higherShadeBrush != null) __obj.updateDynamic("higherShadeBrush")(higherShadeBrush.asInstanceOf[js.Any])
-    if (higherShadeOutline != null) __obj.updateDynamic("higherShadeOutline")(higherShadeOutline.asInstanceOf[js.Any])
-    if (!js.isUndefined(higherShadeStrokeThickness)) __obj.updateDynamic("higherShadeStrokeThickness")(higherShadeStrokeThickness.get.asInstanceOf[js.Any])
-    if (higherThumbBrush != null) __obj.updateDynamic("higherThumbBrush")(higherThumbBrush.asInstanceOf[js.Any])
-    if (!js.isUndefined(higherThumbHeight)) __obj.updateDynamic("higherThumbHeight")(higherThumbHeight.get.asInstanceOf[js.Any])
-    if (higherThumbOutline != null) __obj.updateDynamic("higherThumbOutline")(higherThumbOutline.asInstanceOf[js.Any])
-    if (higherThumbRidgesBrush != null) __obj.updateDynamic("higherThumbRidgesBrush")(higherThumbRidgesBrush.asInstanceOf[js.Any])
-    if (!js.isUndefined(higherThumbStrokeThickness)) __obj.updateDynamic("higherThumbStrokeThickness")(higherThumbStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(higherThumbWidth)) __obj.updateDynamic("higherThumbWidth")(higherThumbWidth.get.asInstanceOf[js.Any])
-    if (lowerCalloutBrush != null) __obj.updateDynamic("lowerCalloutBrush")(lowerCalloutBrush.asInstanceOf[js.Any])
-    if (lowerCalloutOutline != null) __obj.updateDynamic("lowerCalloutOutline")(lowerCalloutOutline.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerCalloutStrokeThickness)) __obj.updateDynamic("lowerCalloutStrokeThickness")(lowerCalloutStrokeThickness.get.asInstanceOf[js.Any])
-    if (lowerCalloutTextColor != null) __obj.updateDynamic("lowerCalloutTextColor")(lowerCalloutTextColor.asInstanceOf[js.Any])
-    if (lowerShadeBrush != null) __obj.updateDynamic("lowerShadeBrush")(lowerShadeBrush.asInstanceOf[js.Any])
-    if (lowerShadeOutline != null) __obj.updateDynamic("lowerShadeOutline")(lowerShadeOutline.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerShadeStrokeThickness)) __obj.updateDynamic("lowerShadeStrokeThickness")(lowerShadeStrokeThickness.get.asInstanceOf[js.Any])
-    if (lowerThumbBrush != null) __obj.updateDynamic("lowerThumbBrush")(lowerThumbBrush.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerThumbHeight)) __obj.updateDynamic("lowerThumbHeight")(lowerThumbHeight.get.asInstanceOf[js.Any])
-    if (lowerThumbOutline != null) __obj.updateDynamic("lowerThumbOutline")(lowerThumbOutline.asInstanceOf[js.Any])
-    if (lowerThumbRidgesBrush != null) __obj.updateDynamic("lowerThumbRidgesBrush")(lowerThumbRidgesBrush.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerThumbStrokeThickness)) __obj.updateDynamic("lowerThumbStrokeThickness")(lowerThumbStrokeThickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerThumbWidth)) __obj.updateDynamic("lowerThumbWidth")(lowerThumbWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxZoomWidth)) __obj.updateDynamic("maxZoomWidth")(maxZoomWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoomWidth)) __obj.updateDynamic("minZoomWidth")(minZoomWidth.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(panTransitionDuration)) __obj.updateDynamic("panTransitionDuration")(panTransitionDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pixelScalingRatio)) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.get.asInstanceOf[js.Any])
-    if (propertyChanged != null) __obj.updateDynamic("propertyChanged")(js.Any.fromFunction2(propertyChanged))
-    if (rangeThumbBrush != null) __obj.updateDynamic("rangeThumbBrush")(rangeThumbBrush.asInstanceOf[js.Any])
-    if (rangeThumbOutline != null) __obj.updateDynamic("rangeThumbOutline")(rangeThumbOutline.asInstanceOf[js.Any])
-    if (rangeThumbRidgesBrush != null) __obj.updateDynamic("rangeThumbRidgesBrush")(rangeThumbRidgesBrush.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeThumbStrokeThickness)) __obj.updateDynamic("rangeThumbStrokeThickness")(rangeThumbStrokeThickness.get.asInstanceOf[js.Any])
-    if (resolvingAxisValue != null) __obj.updateDynamic("resolvingAxisValue")(js.Any.fromFunction2(resolvingAxisValue))
-    if (!js.isUndefined(startInset)) __obj.updateDynamic("startInset")(startInset.get.asInstanceOf[js.Any])
-    if (thumbCalloutTextStyle != null) __obj.updateDynamic("thumbCalloutTextStyle")(thumbCalloutTextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackEndInset)) __obj.updateDynamic("trackEndInset")(trackEndInset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackStartInset)) __obj.updateDynamic("trackStartInset")(trackStartInset.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (windowRect != null) __obj.updateDynamic("windowRect")(windowRect.asInstanceOf[js.Any])
-    if (windowRectChanged != null) __obj.updateDynamic("windowRectChanged")(js.Any.fromFunction2(windowRectChanged))
     __obj.asInstanceOf[IgZoomSlider]
   }
+  @scala.inline
+  implicit class IgZoomSliderOps[Self <: IgZoomSlider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActualPixelScalingRatio(value: Double): Self = this.set("actualPixelScalingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActualPixelScalingRatio: Self = this.set("actualPixelScalingRatio", js.undefined)
+    @scala.inline
+    def setAreThumbCalloutsEnabled(value: Boolean): Self = this.set("areThumbCalloutsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreThumbCalloutsEnabled: Self = this.set("areThumbCalloutsEnabled", js.undefined)
+    @scala.inline
+    def setBarBrush(value: js.Any): Self = this.set("barBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarBrush: Self = this.set("barBrush", js.undefined)
+    @scala.inline
+    def setBarExtent(value: Double): Self = this.set("barExtent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarExtent: Self = this.set("barExtent", js.undefined)
+    @scala.inline
+    def setBarOutline(value: js.Any): Self = this.set("barOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarOutline: Self = this.set("barOutline", js.undefined)
+    @scala.inline
+    def setBarStrokeThickness(value: Double): Self = this.set("barStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBarStrokeThickness: Self = this.set("barStrokeThickness", js.undefined)
+    @scala.inline
+    def setEndInset(value: Double): Self = this.set("endInset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndInset: Self = this.set("endInset", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHigherCalloutBrush(value: js.Any): Self = this.set("higherCalloutBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherCalloutBrush: Self = this.set("higherCalloutBrush", js.undefined)
+    @scala.inline
+    def setHigherCalloutOutline(value: js.Any): Self = this.set("higherCalloutOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherCalloutOutline: Self = this.set("higherCalloutOutline", js.undefined)
+    @scala.inline
+    def setHigherCalloutStrokeThickness(value: Double): Self = this.set("higherCalloutStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherCalloutStrokeThickness: Self = this.set("higherCalloutStrokeThickness", js.undefined)
+    @scala.inline
+    def setHigherCalloutTextColor(value: js.Any): Self = this.set("higherCalloutTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherCalloutTextColor: Self = this.set("higherCalloutTextColor", js.undefined)
+    @scala.inline
+    def setHigherShadeBrush(value: js.Any): Self = this.set("higherShadeBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherShadeBrush: Self = this.set("higherShadeBrush", js.undefined)
+    @scala.inline
+    def setHigherShadeOutline(value: js.Any): Self = this.set("higherShadeOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherShadeOutline: Self = this.set("higherShadeOutline", js.undefined)
+    @scala.inline
+    def setHigherShadeStrokeThickness(value: Double): Self = this.set("higherShadeStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherShadeStrokeThickness: Self = this.set("higherShadeStrokeThickness", js.undefined)
+    @scala.inline
+    def setHigherThumbBrush(value: js.Any): Self = this.set("higherThumbBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherThumbBrush: Self = this.set("higherThumbBrush", js.undefined)
+    @scala.inline
+    def setHigherThumbHeight(value: Double): Self = this.set("higherThumbHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherThumbHeight: Self = this.set("higherThumbHeight", js.undefined)
+    @scala.inline
+    def setHigherThumbOutline(value: js.Any): Self = this.set("higherThumbOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherThumbOutline: Self = this.set("higherThumbOutline", js.undefined)
+    @scala.inline
+    def setHigherThumbRidgesBrush(value: js.Any): Self = this.set("higherThumbRidgesBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherThumbRidgesBrush: Self = this.set("higherThumbRidgesBrush", js.undefined)
+    @scala.inline
+    def setHigherThumbStrokeThickness(value: Double): Self = this.set("higherThumbStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherThumbStrokeThickness: Self = this.set("higherThumbStrokeThickness", js.undefined)
+    @scala.inline
+    def setHigherThumbWidth(value: Double): Self = this.set("higherThumbWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigherThumbWidth: Self = this.set("higherThumbWidth", js.undefined)
+    @scala.inline
+    def setLowerCalloutBrush(value: js.Any): Self = this.set("lowerCalloutBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerCalloutBrush: Self = this.set("lowerCalloutBrush", js.undefined)
+    @scala.inline
+    def setLowerCalloutOutline(value: js.Any): Self = this.set("lowerCalloutOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerCalloutOutline: Self = this.set("lowerCalloutOutline", js.undefined)
+    @scala.inline
+    def setLowerCalloutStrokeThickness(value: Double): Self = this.set("lowerCalloutStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerCalloutStrokeThickness: Self = this.set("lowerCalloutStrokeThickness", js.undefined)
+    @scala.inline
+    def setLowerCalloutTextColor(value: js.Any): Self = this.set("lowerCalloutTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerCalloutTextColor: Self = this.set("lowerCalloutTextColor", js.undefined)
+    @scala.inline
+    def setLowerShadeBrush(value: js.Any): Self = this.set("lowerShadeBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerShadeBrush: Self = this.set("lowerShadeBrush", js.undefined)
+    @scala.inline
+    def setLowerShadeOutline(value: js.Any): Self = this.set("lowerShadeOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerShadeOutline: Self = this.set("lowerShadeOutline", js.undefined)
+    @scala.inline
+    def setLowerShadeStrokeThickness(value: Double): Self = this.set("lowerShadeStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerShadeStrokeThickness: Self = this.set("lowerShadeStrokeThickness", js.undefined)
+    @scala.inline
+    def setLowerThumbBrush(value: js.Any): Self = this.set("lowerThumbBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerThumbBrush: Self = this.set("lowerThumbBrush", js.undefined)
+    @scala.inline
+    def setLowerThumbHeight(value: Double): Self = this.set("lowerThumbHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerThumbHeight: Self = this.set("lowerThumbHeight", js.undefined)
+    @scala.inline
+    def setLowerThumbOutline(value: js.Any): Self = this.set("lowerThumbOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerThumbOutline: Self = this.set("lowerThumbOutline", js.undefined)
+    @scala.inline
+    def setLowerThumbRidgesBrush(value: js.Any): Self = this.set("lowerThumbRidgesBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerThumbRidgesBrush: Self = this.set("lowerThumbRidgesBrush", js.undefined)
+    @scala.inline
+    def setLowerThumbStrokeThickness(value: Double): Self = this.set("lowerThumbStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerThumbStrokeThickness: Self = this.set("lowerThumbStrokeThickness", js.undefined)
+    @scala.inline
+    def setLowerThumbWidth(value: Double): Self = this.set("lowerThumbWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerThumbWidth: Self = this.set("lowerThumbWidth", js.undefined)
+    @scala.inline
+    def setMaxZoomWidth(value: Double): Self = this.set("maxZoomWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxZoomWidth: Self = this.set("maxZoomWidth", js.undefined)
+    @scala.inline
+    def setMinZoomWidth(value: Double): Self = this.set("minZoomWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoomWidth: Self = this.set("minZoomWidth", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setPanTransitionDuration(value: Double): Self = this.set("panTransitionDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanTransitionDuration: Self = this.set("panTransitionDuration", js.undefined)
+    @scala.inline
+    def setPixelScalingRatio(value: Double): Self = this.set("pixelScalingRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelScalingRatio: Self = this.set("pixelScalingRatio", js.undefined)
+    @scala.inline
+    def setPropertyChanged(value: (/* event */ Event, /* ui */ PropertyChangedEventUIParam) => Unit): Self = this.set("propertyChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePropertyChanged: Self = this.set("propertyChanged", js.undefined)
+    @scala.inline
+    def setRangeThumbBrush(value: js.Any): Self = this.set("rangeThumbBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeThumbBrush: Self = this.set("rangeThumbBrush", js.undefined)
+    @scala.inline
+    def setRangeThumbOutline(value: js.Any): Self = this.set("rangeThumbOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeThumbOutline: Self = this.set("rangeThumbOutline", js.undefined)
+    @scala.inline
+    def setRangeThumbRidgesBrush(value: js.Any): Self = this.set("rangeThumbRidgesBrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeThumbRidgesBrush: Self = this.set("rangeThumbRidgesBrush", js.undefined)
+    @scala.inline
+    def setRangeThumbStrokeThickness(value: Double): Self = this.set("rangeThumbStrokeThickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeThumbStrokeThickness: Self = this.set("rangeThumbStrokeThickness", js.undefined)
+    @scala.inline
+    def setResolvingAxisValue(value: (/* event */ Event, /* ui */ ResolvingAxisValueEventUIParam) => Unit): Self = this.set("resolvingAxisValue", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteResolvingAxisValue: Self = this.set("resolvingAxisValue", js.undefined)
+    @scala.inline
+    def setStartInset(value: Double): Self = this.set("startInset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartInset: Self = this.set("startInset", js.undefined)
+    @scala.inline
+    def setThumbCalloutTextStyle(value: js.Any): Self = this.set("thumbCalloutTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbCalloutTextStyle: Self = this.set("thumbCalloutTextStyle", js.undefined)
+    @scala.inline
+    def setTrackEndInset(value: Double): Self = this.set("trackEndInset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackEndInset: Self = this.set("trackEndInset", js.undefined)
+    @scala.inline
+    def setTrackStartInset(value: Double): Self = this.set("trackStartInset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackStartInset: Self = this.set("trackStartInset", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWindowRect(value: js.Any): Self = this.set("windowRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowRect: Self = this.set("windowRect", js.undefined)
+    @scala.inline
+    def setWindowRectChanged(value: (/* event */ Event, /* ui */ WindowRectChangedEventUIParam) => Unit): Self = this.set("windowRectChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteWindowRectChanged: Self = this.set("windowRectChanged", js.undefined)
+  }
+  
 }
 

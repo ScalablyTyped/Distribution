@@ -48,20 +48,46 @@ trait SchemaRouterBgp extends js.Object {
 
 object SchemaRouterBgp {
   @scala.inline
-  def apply(
-    advertiseMode: String = null,
-    advertisedGroups: js.Array[String] = null,
-    advertisedIpRanges: js.Array[SchemaRouterAdvertisedIpRange] = null,
-    asn: js.UndefOr[Double] = js.undefined,
-    keepaliveInterval: js.UndefOr[Double] = js.undefined
-  ): SchemaRouterBgp = {
+  def apply(): SchemaRouterBgp = {
     val __obj = js.Dynamic.literal()
-    if (advertiseMode != null) __obj.updateDynamic("advertiseMode")(advertiseMode.asInstanceOf[js.Any])
-    if (advertisedGroups != null) __obj.updateDynamic("advertisedGroups")(advertisedGroups.asInstanceOf[js.Any])
-    if (advertisedIpRanges != null) __obj.updateDynamic("advertisedIpRanges")(advertisedIpRanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(asn)) __obj.updateDynamic("asn")(asn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepaliveInterval)) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRouterBgp]
   }
+  @scala.inline
+  implicit class SchemaRouterBgpOps[Self <: SchemaRouterBgp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertiseMode(value: String): Self = this.set("advertiseMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiseMode: Self = this.set("advertiseMode", js.undefined)
+    @scala.inline
+    def setAdvertisedGroupsVarargs(value: String*): Self = this.set("advertisedGroups", js.Array(value :_*))
+    @scala.inline
+    def setAdvertisedGroups(value: js.Array[String]): Self = this.set("advertisedGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedGroups: Self = this.set("advertisedGroups", js.undefined)
+    @scala.inline
+    def setAdvertisedIpRangesVarargs(value: SchemaRouterAdvertisedIpRange*): Self = this.set("advertisedIpRanges", js.Array(value :_*))
+    @scala.inline
+    def setAdvertisedIpRanges(value: js.Array[SchemaRouterAdvertisedIpRange]): Self = this.set("advertisedIpRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedIpRanges: Self = this.set("advertisedIpRanges", js.undefined)
+    @scala.inline
+    def setAsn(value: Double): Self = this.set("asn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsn: Self = this.set("asn", js.undefined)
+    @scala.inline
+    def setKeepaliveInterval(value: Double): Self = this.set("keepaliveInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepaliveInterval: Self = this.set("keepaliveInterval", js.undefined)
+  }
+  
 }
 

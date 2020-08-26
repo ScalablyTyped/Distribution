@@ -146,10 +146,42 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns true when both inputs are defined with a
     * nonzero/nonempty value.
     */
-  def and(
-    x: Double | BigNumber | Complex | Unit | MathArray | Matrix,
-    y: Double | BigNumber | Complex | Unit | MathArray | Matrix
-  ): Boolean | MathArray | Matrix = js.native
+  def and(x: Double, y: Double): Boolean | MathArray | Matrix = js.native
+  def and(x: Double, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def and(x: Double, y: Complex): Boolean | MathArray | Matrix = js.native
+  def and(x: Double, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def and(x: Double, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def and(x: Double, y: Unit): Boolean | MathArray | Matrix = js.native
+  def and(x: BigNumber, y: Double): Boolean | MathArray | Matrix = js.native
+  def and(x: BigNumber, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def and(x: BigNumber, y: Complex): Boolean | MathArray | Matrix = js.native
+  def and(x: BigNumber, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def and(x: BigNumber, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def and(x: BigNumber, y: Unit): Boolean | MathArray | Matrix = js.native
+  def and(x: Complex, y: Double): Boolean | MathArray | Matrix = js.native
+  def and(x: Complex, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def and(x: Complex, y: Complex): Boolean | MathArray | Matrix = js.native
+  def and(x: Complex, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def and(x: Complex, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def and(x: Complex, y: Unit): Boolean | MathArray | Matrix = js.native
+  def and(x: MathArray, y: Double): Boolean | MathArray | Matrix = js.native
+  def and(x: MathArray, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def and(x: MathArray, y: Complex): Boolean | MathArray | Matrix = js.native
+  def and(x: MathArray, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def and(x: MathArray, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def and(x: MathArray, y: Unit): Boolean | MathArray | Matrix = js.native
+  def and(x: Matrix, y: Double): Boolean | MathArray | Matrix = js.native
+  def and(x: Matrix, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def and(x: Matrix, y: Complex): Boolean | MathArray | Matrix = js.native
+  def and(x: Matrix, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def and(x: Matrix, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def and(x: Matrix, y: Unit): Boolean | MathArray | Matrix = js.native
+  def and(x: Unit, y: Double): Boolean | MathArray | Matrix = js.native
+  def and(x: Unit, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def and(x: Unit, y: Complex): Boolean | MathArray | Matrix = js.native
+  def and(x: Unit, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def and(x: Unit, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def and(x: Unit, y: Unit): Boolean | MathArray | Matrix = js.native
   /*************************************************************************
     * Complex functions
     ************************************************************************/
@@ -346,7 +378,6 @@ trait MathJsStatic extends FactoryDependencies {
   def bitXor(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
   def bitXor(x: Matrix, y: MathArray): NoLiteralType[Matrix] = js.native
   def bitXor(x: Matrix, y: Matrix): NoLiteralType[Matrix] = js.native
-  def boolean(): Boolean | MathArray | Matrix = js.native
   /**
     * Create a boolean or convert a string or number to a boolean. In case
     * of a number, true is returned for non-zero numbers, and false in case
@@ -355,6 +386,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @param x A value of any type
     * @returns The boolean value
     */
+  def boolean(): Boolean | MathArray | Matrix = js.native
   def boolean(x: String): Boolean | MathArray | Matrix = js.native
   def boolean(x: Boolean): Boolean | MathArray | Matrix = js.native
   def boolean(x: Double): Boolean | MathArray | Matrix = js.native
@@ -642,6 +674,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The new unit
     */
   def createUnit(name: String): Unit = js.native
+  def createUnit(name: String, definition: js.UndefOr[scala.Nothing], options: CreateUnitOptions): Unit = js.native
   def createUnit(name: String, definition: String): Unit = js.native
   def createUnit(name: String, definition: String, options: CreateUnitOptions): Unit = js.native
   def createUnit(name: String, definition: UnitDefinition): Unit = js.native
@@ -1026,6 +1059,11 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The formatted value
     */
   def format(value: js.Any): String = js.native
+  def format(
+    value: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* value */ js.Any, String]
+  ): String = js.native
   def format(value: js.Any, options: js.Function1[/* item */ js.Any, String]): String = js.native
   def format(
     value: js.Any,
@@ -1481,18 +1519,23 @@ trait MathJsStatic extends FactoryDependencies {
   def lup(A: MathArray): L = js.native
   def lup(A: Matrix): L = js.native
   def lusolve(A: Double, b: MathArray): Matrix | MathArray = js.native
+  def lusolve(A: Double, b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: Matrix): Matrix | MathArray = js.native
+  def lusolve(A: Double, b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: Matrix, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: Matrix, order: Double, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray): Matrix | MathArray = js.native
+  def lusolve(A: MathArray, b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: Matrix): Matrix | MathArray = js.native
+  def lusolve(A: MathArray, b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: Matrix, order: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: Matrix, order: Double, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: MathArray): Matrix | MathArray = js.native
+  def lusolve(A: Matrix, b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
   /**
@@ -1508,6 +1551,7 @@ trait MathJsStatic extends FactoryDependencies {
     * b
     */
   def lusolve(A: Matrix, b: Matrix): Matrix | MathArray = js.native
+  def lusolve(A: Matrix, b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: Matrix, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: Matrix, order: Double, threshold: Double): Matrix | MathArray = js.native
   /*************************************************************************
@@ -1560,7 +1604,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The created Matrix
     */
   def matrix(data: MathArray): Matrix = js.native
+  def matrix(data: MathArray, format: js.UndefOr[scala.Nothing], dataType: String): Matrix = js.native
   def matrix(data: Matrix): Matrix = js.native
+  def matrix(data: Matrix, format: js.UndefOr[scala.Nothing], dataType: String): Matrix = js.native
   @JSName("matrix")
   def matrix_dense(data: MathArray, format: dense): Matrix = js.native
   @JSName("matrix")
@@ -1824,10 +1870,42 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns true when one of the inputs is defined with a
     * nonzero/nonempty value.
     */
-  def or(
-    x: Double | BigNumber | Complex | Unit | MathArray | Matrix,
-    y: Double | BigNumber | Complex | Unit | MathArray | Matrix
-  ): Boolean | MathArray | Matrix = js.native
+  def or(x: Double, y: Double): Boolean | MathArray | Matrix = js.native
+  def or(x: Double, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def or(x: Double, y: Complex): Boolean | MathArray | Matrix = js.native
+  def or(x: Double, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def or(x: Double, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def or(x: Double, y: Unit): Boolean | MathArray | Matrix = js.native
+  def or(x: BigNumber, y: Double): Boolean | MathArray | Matrix = js.native
+  def or(x: BigNumber, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def or(x: BigNumber, y: Complex): Boolean | MathArray | Matrix = js.native
+  def or(x: BigNumber, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def or(x: BigNumber, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def or(x: BigNumber, y: Unit): Boolean | MathArray | Matrix = js.native
+  def or(x: Complex, y: Double): Boolean | MathArray | Matrix = js.native
+  def or(x: Complex, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def or(x: Complex, y: Complex): Boolean | MathArray | Matrix = js.native
+  def or(x: Complex, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def or(x: Complex, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def or(x: Complex, y: Unit): Boolean | MathArray | Matrix = js.native
+  def or(x: MathArray, y: Double): Boolean | MathArray | Matrix = js.native
+  def or(x: MathArray, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def or(x: MathArray, y: Complex): Boolean | MathArray | Matrix = js.native
+  def or(x: MathArray, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def or(x: MathArray, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def or(x: MathArray, y: Unit): Boolean | MathArray | Matrix = js.native
+  def or(x: Matrix, y: Double): Boolean | MathArray | Matrix = js.native
+  def or(x: Matrix, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def or(x: Matrix, y: Complex): Boolean | MathArray | Matrix = js.native
+  def or(x: Matrix, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def or(x: Matrix, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def or(x: Matrix, y: Unit): Boolean | MathArray | Matrix = js.native
+  def or(x: Unit, y: Double): Boolean | MathArray | Matrix = js.native
+  def or(x: Unit, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def or(x: Unit, y: Complex): Boolean | MathArray | Matrix = js.native
+  def or(x: Unit, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def or(x: Unit, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def or(x: Unit, y: Unit): Boolean | MathArray | Matrix = js.native
   /**
     * @param exprs Expressions to be parsed
     * @param options Available options: nodes - a set of custome nodes
@@ -1897,6 +1975,7 @@ trait MathJsStatic extends FactoryDependencies {
     * when number is > 1.
     */
   def pickRandom(array: js.Array[Double]): Double | js.Array[Double] = js.native
+  def pickRandom(array: js.Array[Double], number: js.UndefOr[scala.Nothing], weights: js.Array[Double]): Double | js.Array[Double] = js.native
   def pickRandom(array: js.Array[Double], number: Double): Double | js.Array[Double] = js.native
   def pickRandom(array: js.Array[Double], number: Double, weights: js.Array[Double]): Double | js.Array[Double] = js.native
   /**
@@ -1921,6 +2000,8 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Interpolated string
     */
   def print(template: String, values: js.Any): scala.Unit = js.native
+  def print(template: String, values: js.Any, precision: js.UndefOr[scala.Nothing], options: js.Object): scala.Unit = js.native
+  def print(template: String, values: js.Any, precision: js.UndefOr[scala.Nothing], options: Double): scala.Unit = js.native
   def print(template: String, values: js.Any, precision: Double): scala.Unit = js.native
   def print(template: String, values: js.Any, precision: Double, options: js.Object): scala.Unit = js.native
   def print(template: String, values: js.Any, precision: Double, options: Double): scala.Unit = js.native
@@ -1978,12 +2059,15 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns A random number
     */
   def random(): Double = js.native
+  def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
   def random(size: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def random(size: js.Array[js.Array[Double] | Double], min: js.UndefOr[scala.Nothing], max: Double): js.Array[Double] = js.native
   def random(size: js.Array[js.Array[Double] | Double], min: Double): js.Array[Double] = js.native
   def random(size: js.Array[js.Array[Double] | Double], min: Double, max: Double): js.Array[Double] = js.native
   def random(size: Matrix): Matrix = js.native
+  def random(size: Matrix, min: js.UndefOr[scala.Nothing], max: Double): Matrix = js.native
   def random(size: Matrix, min: Double): Matrix = js.native
   def random(size: Matrix, min: Double, max: Double): Matrix = js.native
   /**
@@ -1998,9 +2082,11 @@ trait MathJsStatic extends FactoryDependencies {
   def randomInt(min: Double): Double = js.native
   def randomInt(min: Double, max: Double): Double = js.native
   def randomInt(size: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
+  def randomInt(size: js.Array[js.Array[Double] | Double], min: js.UndefOr[scala.Nothing], max: Double): js.Array[Double] = js.native
   def randomInt(size: js.Array[js.Array[Double] | Double], min: Double): js.Array[Double] = js.native
   def randomInt(size: js.Array[js.Array[Double] | Double], min: Double, max: Double): js.Array[Double] = js.native
   def randomInt(size: Matrix): Matrix = js.native
+  def randomInt(size: Matrix, min: js.UndefOr[scala.Nothing], max: Double): Matrix = js.native
   def randomInt(size: Matrix, min: Double): Matrix = js.native
   def randomInt(size: Matrix, min: Double, max: Double): Matrix = js.native
   def range(start: Double, end: Double): Matrix = js.native
@@ -2073,17 +2159,25 @@ trait MathJsStatic extends FactoryDependencies {
   @JSName("rationalize")
   def rationalize_Coefficients(expr: MathNode, optional: Boolean): Coefficients = js.native
   @JSName("rationalize")
+  def rationalize_false(expr: String, optional: js.UndefOr[scala.Nothing], detailed: `false`): MathNode = js.native
+  @JSName("rationalize")
   def rationalize_false(expr: String, optional: js.Object, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_false(expr: String, optional: Boolean, detailed: `false`): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_false(expr: MathNode, optional: js.UndefOr[scala.Nothing], detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_false(expr: MathNode, optional: js.Object, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_false(expr: MathNode, optional: Boolean, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
+  def rationalize_true(expr: String, optional: js.UndefOr[scala.Nothing], detailed: `true`): Coefficients = js.native
+  @JSName("rationalize")
   def rationalize_true(expr: String, optional: js.Object, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
   def rationalize_true(expr: String, optional: Boolean, detailed: `true`): Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_true(expr: MathNode, optional: js.UndefOr[scala.Nothing], detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
   def rationalize_true(expr: MathNode, optional: js.Object, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
@@ -2340,6 +2434,7 @@ trait MathJsStatic extends FactoryDependencies {
   def sign(x: Matrix): Matrix = js.native
   def sign(x: Unit): Unit = js.native
   def simplify(expr: String): MathNode = js.native
+  def simplify(expr: String, rules: js.UndefOr[scala.Nothing], scope: js.Object): MathNode = js.native
   def simplify(expr: String, rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: String,
@@ -2357,6 +2452,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns the simplified form of expr
     */
   def simplify(expr: MathNode): MathNode = js.native
+  def simplify(expr: MathNode, rules: js.UndefOr[scala.Nothing], scope: js.Object): MathNode = js.native
   def simplify(expr: MathNode, rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: MathNode,
@@ -2484,6 +2580,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The created matrix
     */
   def sparse(): Matrix = js.native
+  def sparse(data: js.UndefOr[scala.Nothing], dataType: String): Matrix = js.native
   def sparse(data: MathArray): Matrix = js.native
   def sparse(data: MathArray, dataType: String): Matrix = js.native
   def sparse(data: Matrix): Matrix = js.native
@@ -2581,15 +2678,16 @@ trait MathJsStatic extends FactoryDependencies {
   def stirlingS2(n: Double, k: BigNumber): NoLiteralType[Double] = js.native
   def stirlingS2(n: Decimal, k: Double): NoLiteralType[Decimal] = js.native
   def stirlingS2(n: Decimal, k: BigNumber): NoLiteralType[Decimal] = js.native
-  def string(): String | MathArray | Matrix = js.native
   /**
     * Create a string or convert any object into a string. Elements of
     * Arrays and Matrices are processed element wise.
     * @param value A value to convert to a string
     * @returns The created string
     */
+  def string(): String | MathArray | Matrix = js.native
   def string(value: MathType): String | MathArray | Matrix = js.native
   def subset(value: String, index: Index): String = js.native
+  def subset(value: String, index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): String = js.native
   def subset(value: String, index: Index, replacement: js.Any): String = js.native
   def subset(value: String, index: Index, replacement: js.Any, defaultValue: js.Any): String = js.native
   /**
@@ -2605,6 +2703,12 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Either the retrieved subset or the updated matrix
     */
   def subset(value: js.Array[js.Array[Double] | Double], index: Index): js.Array[Double] = js.native
+  def subset(
+    value: js.Array[js.Array[Double] | Double],
+    index: Index,
+    replacement: js.UndefOr[scala.Nothing],
+    defaultValue: js.Any
+  ): js.Array[Double] = js.native
   def subset(value: js.Array[js.Array[Double] | Double], index: Index, replacement: js.Any): js.Array[Double] = js.native
   def subset(
     value: js.Array[js.Array[Double] | Double],
@@ -2613,6 +2717,7 @@ trait MathJsStatic extends FactoryDependencies {
     defaultValue: js.Any
   ): js.Array[Double] = js.native
   def subset(value: Matrix, index: Index): Matrix = js.native
+  def subset(value: Matrix, index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): Matrix = js.native
   def subset(value: Matrix, index: Index, replacement: js.Any): Matrix = js.native
   def subset(value: Matrix, index: Index, replacement: js.Any, defaultValue: js.Any): Matrix = js.native
   /**
@@ -2847,10 +2952,42 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns true when one and only one input is defined with a
     * nonzero/nonempty value.
     */
-  def xor(
-    x: Double | BigNumber | Complex | Unit | MathArray | Matrix,
-    y: Double | BigNumber | Complex | Unit | MathArray | Matrix
-  ): Boolean | MathArray | Matrix = js.native
+  def xor(x: Double, y: Double): Boolean | MathArray | Matrix = js.native
+  def xor(x: Double, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def xor(x: Double, y: Complex): Boolean | MathArray | Matrix = js.native
+  def xor(x: Double, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def xor(x: Double, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def xor(x: Double, y: Unit): Boolean | MathArray | Matrix = js.native
+  def xor(x: BigNumber, y: Double): Boolean | MathArray | Matrix = js.native
+  def xor(x: BigNumber, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def xor(x: BigNumber, y: Complex): Boolean | MathArray | Matrix = js.native
+  def xor(x: BigNumber, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def xor(x: BigNumber, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def xor(x: BigNumber, y: Unit): Boolean | MathArray | Matrix = js.native
+  def xor(x: Complex, y: Double): Boolean | MathArray | Matrix = js.native
+  def xor(x: Complex, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def xor(x: Complex, y: Complex): Boolean | MathArray | Matrix = js.native
+  def xor(x: Complex, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def xor(x: Complex, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def xor(x: Complex, y: Unit): Boolean | MathArray | Matrix = js.native
+  def xor(x: MathArray, y: Double): Boolean | MathArray | Matrix = js.native
+  def xor(x: MathArray, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def xor(x: MathArray, y: Complex): Boolean | MathArray | Matrix = js.native
+  def xor(x: MathArray, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def xor(x: MathArray, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def xor(x: MathArray, y: Unit): Boolean | MathArray | Matrix = js.native
+  def xor(x: Matrix, y: Double): Boolean | MathArray | Matrix = js.native
+  def xor(x: Matrix, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def xor(x: Matrix, y: Complex): Boolean | MathArray | Matrix = js.native
+  def xor(x: Matrix, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def xor(x: Matrix, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def xor(x: Matrix, y: Unit): Boolean | MathArray | Matrix = js.native
+  def xor(x: Unit, y: Double): Boolean | MathArray | Matrix = js.native
+  def xor(x: Unit, y: BigNumber): Boolean | MathArray | Matrix = js.native
+  def xor(x: Unit, y: Complex): Boolean | MathArray | Matrix = js.native
+  def xor(x: Unit, y: MathArray): Boolean | MathArray | Matrix = js.native
+  def xor(x: Unit, y: Matrix): Boolean | MathArray | Matrix = js.native
+  def xor(x: Unit, y: Unit): Boolean | MathArray | Matrix = js.native
   /**
     * @param m The x dimension of the matrix
     * @param n The y dimension of the matrix

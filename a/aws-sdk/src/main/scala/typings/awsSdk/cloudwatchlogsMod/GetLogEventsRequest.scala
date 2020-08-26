@@ -38,22 +38,46 @@ trait GetLogEventsRequest extends js.Object {
 
 object GetLogEventsRequest {
   @scala.inline
-  def apply(
-    logGroupName: LogGroupName,
-    logStreamName: LogStreamName,
-    endTime: js.UndefOr[Timestamp] = js.undefined,
-    limit: js.UndefOr[EventsLimit] = js.undefined,
-    nextToken: NextToken = null,
-    startFromHead: js.UndefOr[StartFromHead] = js.undefined,
-    startTime: js.UndefOr[Timestamp] = js.undefined
-  ): GetLogEventsRequest = {
+  def apply(logGroupName: LogGroupName, logStreamName: LogStreamName): GetLogEventsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], logStreamName = logStreamName.asInstanceOf[js.Any])
-    if (!js.isUndefined(endTime)) __obj.updateDynamic("endTime")(endTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(startFromHead)) __obj.updateDynamic("startFromHead")(startFromHead.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startTime)) __obj.updateDynamic("startTime")(startTime.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogEventsRequest]
   }
+  @scala.inline
+  implicit class GetLogEventsRequestOps[Self <: GetLogEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogStreamName(value: LogStreamName): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setLimit(value: EventsLimit): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setStartFromHead(value: StartFromHead): Self = this.set("startFromHead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartFromHead: Self = this.set("startFromHead", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+  }
+  
 }
 

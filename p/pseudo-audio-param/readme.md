@@ -12,7 +12,7 @@ Simulate scheduled AudioParam values
 | Keywords           | AudioParam, WebAudioAPI, simulator |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 656 |
+| # downloads        | 659 |
 | # stars            | 0 |
 
 ## Links

@@ -17,12 +17,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("MatterJS.Vector")
 @js.native
 class Vector ()
-  extends typings.phaser.MatterJS.Vector {
-  /* CompleteClass */
-  override var x: Double = js.native
-  /* CompleteClass */
-  override var y: Double = js.native
-}
+  extends typings.phaser.MatterJS.Vector
 
 /* static members */
 @JSGlobal("MatterJS.Vector")
@@ -65,6 +60,7 @@ object Vector extends js.Object {
     * @return {vector} A new vector
     */
   def create(): typings.phaser.MatterJS.Vector = js.native
+  def create(x: js.UndefOr[scala.Nothing], y: Double): typings.phaser.MatterJS.Vector = js.native
   def create(x: Double): typings.phaser.MatterJS.Vector = js.native
   def create(x: Double, y: Double): typings.phaser.MatterJS.Vector = js.native
   /**

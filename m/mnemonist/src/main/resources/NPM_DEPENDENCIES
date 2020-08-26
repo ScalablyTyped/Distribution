@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mnemonist" : "0.32.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mnemonist" : "0.32.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

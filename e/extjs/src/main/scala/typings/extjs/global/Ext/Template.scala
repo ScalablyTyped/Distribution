@@ -35,6 +35,7 @@ object Template extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Creates a template from the passed element s value display none textarea preferred or innerHTML
@@ -43,6 +44,7 @@ object Template extends js.Object {
     * @returns Ext.Template The created template
     */
   def from(): ITemplate = js.native
+  def from(el: js.UndefOr[scala.Nothing], config: js.Any): ITemplate = js.native
   def from(el: js.Any): ITemplate = js.native
   def from(el: js.Any, config: js.Any): ITemplate = js.native
   /** [Method] Get the current class name in string format

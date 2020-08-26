@@ -38,24 +38,52 @@ trait PipelineExecutionSummary extends js.Object {
 
 object PipelineExecutionSummary {
   @scala.inline
-  def apply(
-    lastUpdateTime: Timestamp = null,
-    pipelineExecutionId: PipelineExecutionId = null,
-    sourceRevisions: SourceRevisionList = null,
-    startTime: Timestamp = null,
-    status: PipelineExecutionStatus = null,
-    stopTrigger: StopExecutionTrigger = null,
-    trigger: ExecutionTrigger = null
-  ): PipelineExecutionSummary = {
+  def apply(): PipelineExecutionSummary = {
     val __obj = js.Dynamic.literal()
-    if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime.asInstanceOf[js.Any])
-    if (pipelineExecutionId != null) __obj.updateDynamic("pipelineExecutionId")(pipelineExecutionId.asInstanceOf[js.Any])
-    if (sourceRevisions != null) __obj.updateDynamic("sourceRevisions")(sourceRevisions.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (stopTrigger != null) __obj.updateDynamic("stopTrigger")(stopTrigger.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineExecutionSummary]
   }
+  @scala.inline
+  implicit class PipelineExecutionSummaryOps[Self <: PipelineExecutionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastUpdateTime(value: Timestamp): Self = this.set("lastUpdateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTime: Self = this.set("lastUpdateTime", js.undefined)
+    @scala.inline
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineExecutionId: Self = this.set("pipelineExecutionId", js.undefined)
+    @scala.inline
+    def setSourceRevisionsVarargs(value: SourceRevision*): Self = this.set("sourceRevisions", js.Array(value :_*))
+    @scala.inline
+    def setSourceRevisions(value: SourceRevisionList): Self = this.set("sourceRevisions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRevisions: Self = this.set("sourceRevisions", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: PipelineExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStopTrigger(value: StopExecutionTrigger): Self = this.set("stopTrigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopTrigger: Self = this.set("stopTrigger", js.undefined)
+    @scala.inline
+    def setTrigger(value: ExecutionTrigger): Self = this.set("trigger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrigger: Self = this.set("trigger", js.undefined)
+  }
+  
 }
 

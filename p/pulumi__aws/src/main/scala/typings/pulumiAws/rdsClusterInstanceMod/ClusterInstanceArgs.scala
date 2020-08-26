@@ -28,7 +28,7 @@ trait ClusterInstanceArgs extends js.Object {
     */
   val caCertIdentifier: js.UndefOr[Input[String]] = js.native
   /**
-    * The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+    * The identifier of the `aws.rds.Cluster` in which to launch this instance.
     */
   val clusterIdentifier: Input[String] = js.native
   /**
@@ -40,7 +40,7 @@ trait ClusterInstanceArgs extends js.Object {
     */
   val dbParameterGroupName: js.UndefOr[Input[String]] = js.native
   /**
-    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+    * A DB subnet group to associate with this DB instance. **NOTE:** This must match the `dbSubnetGroupName` of the attached `aws.rds.Cluster`.
     */
   val dbSubnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
@@ -64,7 +64,7 @@ trait ClusterInstanceArgs extends js.Object {
   val identifierPrefix: js.UndefOr[Input[String]] = js.native
   /**
     * The instance class to use. For details on CPU
-    * and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
+    * and memory, see [Scaling Aurora DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Aurora.Managing.html). Aurora uses `db.*` instance classes/types. Please see [AWS Documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) for currently available instance classes and complete details.
     */
   val instanceClass: Input[String | InstanceType] = js.native
   /**
@@ -101,64 +101,118 @@ trait ClusterInstanceArgs extends js.Object {
   val promotionTier: js.UndefOr[Input[Double]] = js.native
   /**
     * Bool to control if instance is publicly accessible.
-    * Default `false`. See the documentation on [Creating DB Instances][6] for more
+    * Default `false`. See the documentation on [Creating DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) for more
     * details on controlling this property.
     */
   val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A mapping of tags to assign to the instance.
+    * A map of tags to assign to the instance.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object ClusterInstanceArgs {
   @scala.inline
-  def apply(
-    clusterIdentifier: Input[String],
-    instanceClass: Input[String | InstanceType],
-    applyImmediately: Input[Boolean] = null,
-    autoMinorVersionUpgrade: Input[Boolean] = null,
-    availabilityZone: Input[String] = null,
-    caCertIdentifier: Input[String] = null,
-    copyTagsToSnapshot: Input[Boolean] = null,
-    dbParameterGroupName: Input[String] = null,
-    dbSubnetGroupName: Input[String] = null,
-    engine: Input[EngineType] = null,
-    engineVersion: Input[String] = null,
-    identifier: Input[String] = null,
-    identifierPrefix: Input[String] = null,
-    monitoringInterval: Input[Double] = null,
-    monitoringRoleArn: Input[String] = null,
-    performanceInsightsEnabled: Input[Boolean] = null,
-    performanceInsightsKmsKeyId: Input[String] = null,
-    preferredBackupWindow: Input[String] = null,
-    preferredMaintenanceWindow: Input[String] = null,
-    promotionTier: Input[Double] = null,
-    publiclyAccessible: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): ClusterInstanceArgs = {
+  def apply(clusterIdentifier: Input[String], instanceClass: Input[String | InstanceType]): ClusterInstanceArgs = {
     val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], instanceClass = instanceClass.asInstanceOf[js.Any])
-    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
-    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (caCertIdentifier != null) __obj.updateDynamic("caCertIdentifier")(caCertIdentifier.asInstanceOf[js.Any])
-    if (copyTagsToSnapshot != null) __obj.updateDynamic("copyTagsToSnapshot")(copyTagsToSnapshot.asInstanceOf[js.Any])
-    if (dbParameterGroupName != null) __obj.updateDynamic("dbParameterGroupName")(dbParameterGroupName.asInstanceOf[js.Any])
-    if (dbSubnetGroupName != null) __obj.updateDynamic("dbSubnetGroupName")(dbSubnetGroupName.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (identifierPrefix != null) __obj.updateDynamic("identifierPrefix")(identifierPrefix.asInstanceOf[js.Any])
-    if (monitoringInterval != null) __obj.updateDynamic("monitoringInterval")(monitoringInterval.asInstanceOf[js.Any])
-    if (monitoringRoleArn != null) __obj.updateDynamic("monitoringRoleArn")(monitoringRoleArn.asInstanceOf[js.Any])
-    if (performanceInsightsEnabled != null) __obj.updateDynamic("performanceInsightsEnabled")(performanceInsightsEnabled.asInstanceOf[js.Any])
-    if (performanceInsightsKmsKeyId != null) __obj.updateDynamic("performanceInsightsKmsKeyId")(performanceInsightsKmsKeyId.asInstanceOf[js.Any])
-    if (preferredBackupWindow != null) __obj.updateDynamic("preferredBackupWindow")(preferredBackupWindow.asInstanceOf[js.Any])
-    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (promotionTier != null) __obj.updateDynamic("promotionTier")(promotionTier.asInstanceOf[js.Any])
-    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterInstanceArgs]
   }
+  @scala.inline
+  implicit class ClusterInstanceArgsOps[Self <: ClusterInstanceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: Input[String]): Self = this.set("clusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceClass(value: Input[String | InstanceType]): Self = this.set("instanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyImmediately(value: Input[Boolean]): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = this.set("autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("autoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setCaCertIdentifier(value: Input[String]): Self = this.set("caCertIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaCertIdentifier: Self = this.set("caCertIdentifier", js.undefined)
+    @scala.inline
+    def setCopyTagsToSnapshot(value: Input[Boolean]): Self = this.set("copyTagsToSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToSnapshot: Self = this.set("copyTagsToSnapshot", js.undefined)
+    @scala.inline
+    def setDbParameterGroupName(value: Input[String]): Self = this.set("dbParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbParameterGroupName: Self = this.set("dbParameterGroupName", js.undefined)
+    @scala.inline
+    def setDbSubnetGroupName(value: Input[String]): Self = this.set("dbSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbSubnetGroupName: Self = this.set("dbSubnetGroupName", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[EngineType]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setIdentifier(value: Input[String]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setIdentifierPrefix(value: Input[String]): Self = this.set("identifierPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifierPrefix: Self = this.set("identifierPrefix", js.undefined)
+    @scala.inline
+    def setMonitoringInterval(value: Input[Double]): Self = this.set("monitoringInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringInterval: Self = this.set("monitoringInterval", js.undefined)
+    @scala.inline
+    def setMonitoringRoleArn(value: Input[String]): Self = this.set("monitoringRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringRoleArn: Self = this.set("monitoringRoleArn", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsEnabled(value: Input[Boolean]): Self = this.set("performanceInsightsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsEnabled: Self = this.set("performanceInsightsEnabled", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsKmsKeyId(value: Input[String]): Self = this.set("performanceInsightsKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsKmsKeyId: Self = this.set("performanceInsightsKmsKeyId", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: Input[String]): Self = this.set("preferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("preferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: Input[String]): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPromotionTier(value: Input[Double]): Self = this.set("promotionTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionTier: Self = this.set("promotionTier", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Input[Boolean]): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

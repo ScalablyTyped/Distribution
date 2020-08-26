@@ -18,11 +18,30 @@ trait InstanceExportDetails extends js.Object {
 
 object InstanceExportDetails {
   @scala.inline
-  def apply(InstanceId: String = null, TargetEnvironment: ExportEnvironment = null): InstanceExportDetails = {
+  def apply(): InstanceExportDetails = {
     val __obj = js.Dynamic.literal()
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (TargetEnvironment != null) __obj.updateDynamic("TargetEnvironment")(TargetEnvironment.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceExportDetails]
   }
+  @scala.inline
+  implicit class InstanceExportDetailsOps[Self <: InstanceExportDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setTargetEnvironment(value: ExportEnvironment): Self = this.set("TargetEnvironment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetEnvironment: Self = this.set("TargetEnvironment", js.undefined)
+  }
+  
 }
 

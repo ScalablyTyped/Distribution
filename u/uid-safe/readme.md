@@ -11,8 +11,8 @@ URL and cookie safe UIDs
 | Full name          | uid-safe |
 | Keywords           | random, generator, uid, safe |
 | # releases         | 1 |
-| # dependents       | 157 |
-| # downloads        | 46657175 |
+| # dependents       | 160 |
+| # downloads        | 46565775 |
 | # stars            | 15 |
 
 ## Links

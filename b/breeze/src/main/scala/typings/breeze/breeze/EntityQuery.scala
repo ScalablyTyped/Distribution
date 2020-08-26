@@ -16,6 +16,7 @@ trait EntityQuery extends js.Object {
   var takeCount: Double = js.native
   var wherePredicate: Predicate = js.native
   def execute(): js.Promise[QueryResult] = js.native
+  def execute(callback: js.UndefOr[scala.Nothing], errorCallback: ExecuteQueryErrorCallback): js.Promise[QueryResult] = js.native
   def execute(callback: ExecuteQuerySuccessCallback): js.Promise[QueryResult] = js.native
   def execute(callback: ExecuteQuerySuccessCallback, errorCallback: ExecuteQueryErrorCallback): js.Promise[QueryResult] = js.native
   def executeLocally(): js.Array[Entity] = js.native

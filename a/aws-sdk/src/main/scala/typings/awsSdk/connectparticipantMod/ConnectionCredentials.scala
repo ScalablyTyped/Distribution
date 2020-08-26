@@ -18,11 +18,30 @@ trait ConnectionCredentials extends js.Object {
 
 object ConnectionCredentials {
   @scala.inline
-  def apply(ConnectionToken: ParticipantToken = null, Expiry: ISO8601Datetime = null): ConnectionCredentials = {
+  def apply(): ConnectionCredentials = {
     val __obj = js.Dynamic.literal()
-    if (ConnectionToken != null) __obj.updateDynamic("ConnectionToken")(ConnectionToken.asInstanceOf[js.Any])
-    if (Expiry != null) __obj.updateDynamic("Expiry")(Expiry.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionCredentials]
   }
+  @scala.inline
+  implicit class ConnectionCredentialsOps[Self <: ConnectionCredentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionToken(value: ParticipantToken): Self = this.set("ConnectionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionToken: Self = this.set("ConnectionToken", js.undefined)
+    @scala.inline
+    def setExpiry(value: ISO8601Datetime): Self = this.set("Expiry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiry: Self = this.set("Expiry", js.undefined)
+  }
+  
 }
 

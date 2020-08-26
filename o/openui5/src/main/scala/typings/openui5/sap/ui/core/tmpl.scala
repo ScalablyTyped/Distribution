@@ -305,6 +305,7 @@ object tmpl extends js.Object {
       * @returns new DOM element instance
       */
     def createDOMElement(mSettings: js.Any): Control = js.native
+    def createDOMElement(mSettings: js.Any, sParentPath: js.UndefOr[scala.Nothing], bDoNotAdd: Boolean): Control = js.native
     def createDOMElement(mSettings: js.Any, sParentPath: String): Control = js.native
     def createDOMElement(mSettings: js.Any, sParentPath: String, bDoNotAdd: Boolean): Control = js.native
     /**

@@ -1,6 +1,5 @@
 package typings.mocha.global.Mocha_
 
-import typings.mocha.Mocha.ISuite
 import typings.mocha.Mocha.RunnerConstants
 import typings.mocha.Mocha.Suite
 import scala.scalajs.js
@@ -41,8 +40,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Runner protected ()
   extends typings.mocha.Mocha.Runner {
-  /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
-  def this(suite: ISuite, delay: Boolean) = this()
   def this(suite: Suite, delay: Boolean) = this()
 }
 

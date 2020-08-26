@@ -10,9 +10,9 @@ An easy way to install Dev Tools extensions into Electron applications
 | ------------------ | :-------------: |
 | Full name          | electron-devtools-installer |
 | Keywords           | electron, dev, tools |
-| # releases         | 4 |
-| # dependents       | 49 |
-| # downloads        | 1645533 |
+| # releases         | 2 |
+| # dependents       | 50 |
+| # downloads        | 1664611 |
 | # stars            | 7 |
 
 ## Links

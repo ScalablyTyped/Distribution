@@ -11,8 +11,8 @@ A well-tested CSS minifier
 | Full name          | clean-css |
 | Keywords           | css, minifier |
 | # releases         | 5 |
-| # dependents       | 1182 |
-| # downloads        | 273715132 |
+| # dependents       | 1189 |
+| # downloads        | 278192770 |
 | # stars            | 90 |
 
 ## Links

@@ -10,15 +10,5 @@ import scala.scalajs.js.annotation._
 class OlapResultAxis protected ()
   extends typings.igniteUi.Infragistics.OlapResultAxis {
   def this(options: OlapResultAxisOptions) = this()
-  /**
-    * Returns the count of the $.ig.OlapResultAxisMember objects of each tuple.
-    */
-  /* CompleteClass */
-  override def tupleSize(): Double = js.native
-  /**
-    * Returns an array of $.ig.OlapResultTuple objects which form the axis.
-    */
-  /* CompleteClass */
-  override def tuples(): js.Array[_] = js.native
 }
 

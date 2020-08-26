@@ -4,29 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Compartment extends js.Object {
-  var compartment: js.UndefOr[typings.fhirKitClient.mod.Compartment] = js.undefined
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
-  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
-  var resourceType: typings.fhirKitClient.mod.ResourceType
-  var searchParams: js.UndefOr[typings.fhirKitClient.mod.SearchParams] = js.undefined
+  var compartment: js.UndefOr[typings.fhirKitClient.mod.Compartment] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var resourceType: typings.fhirKitClient.mod.ResourceType = js.native
+  var searchParams: js.UndefOr[typings.fhirKitClient.mod.SearchParams] = js.native
 }
 
 object Compartment {
   @scala.inline
-  def apply(
-    resourceType: typings.fhirKitClient.mod.ResourceType,
-    compartment: typings.fhirKitClient.mod.Compartment = null,
-    headers: typings.request.mod.Headers = null,
-    options: typings.request.mod.Options = null,
-    searchParams: typings.fhirKitClient.mod.SearchParams = null
-  ): Compartment = {
+  def apply(resourceType: typings.fhirKitClient.mod.ResourceType): Compartment = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any])
-    if (compartment != null) __obj.updateDynamic("compartment")(compartment.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (searchParams != null) __obj.updateDynamic("searchParams")(searchParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[Compartment]
   }
+  @scala.inline
+  implicit class CompartmentOps[Self <: Compartment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceType(value: typings.fhirKitClient.mod.ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompartment(value: typings.fhirKitClient.mod.Compartment): Self = this.set("compartment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompartment: Self = this.set("compartment", js.undefined)
+    @scala.inline
+    def setHeaders(value: typings.request.mod.Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setOptions(value: typings.request.mod.Options): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSearchParams(value: typings.fhirKitClient.mod.SearchParams): Self = this.set("searchParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchParams: Self = this.set("searchParams", js.undefined)
+  }
+  
 }
 

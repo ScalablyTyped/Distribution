@@ -12,7 +12,7 @@ AWS SDK Core Handler
 | Keywords           | - |
 | # releases         | 9 |
 | # dependents       | 368 |
-| # downloads        | 30232 |
+| # downloads        | 37316 |
 | # stars            | 0 |
 
 ## Links

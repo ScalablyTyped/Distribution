@@ -1,34 +1,39 @@
 package typings.actionsOnGoogle.convMod
 
 import typings.actionsOnGoogle.conversationConversationMod.ConversationBaseOptions
-import typings.actionsOnGoogle.conversationConversationMod.ConversationOptionsInit
-import typings.actionsOnGoogle.frameworkFrameworkMod.Headers
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2AppRequest
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionsSdkConversationOptions[TConvData, TUserStorage] extends ConversationBaseOptions[TConvData, TUserStorage] {
   /** @public */
-  var body: js.UndefOr[GoogleActionsV2AppRequest] = js.undefined
+  var body: js.UndefOr[GoogleActionsV2AppRequest] = js.native
 }
 
 object ActionsSdkConversationOptions {
   @scala.inline
-  def apply[TConvData, TUserStorage](
-    body: GoogleActionsV2AppRequest = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    headers: Headers = null,
-    init: ConversationOptionsInit[TConvData, TUserStorage] = null,
-    ordersv3: js.UndefOr[Boolean] = js.undefined
-  ): ActionsSdkConversationOptions[TConvData, TUserStorage] = {
+  def apply[TConvData, TUserStorage](): ActionsSdkConversationOptions[TConvData, TUserStorage] = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordersv3)) __obj.updateDynamic("ordersv3")(ordersv3.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsSdkConversationOptions[TConvData, TUserStorage]]
   }
+  @scala.inline
+  implicit class ActionsSdkConversationOptionsOps[Self <: ActionsSdkConversationOptions[_, _], TConvData, TUserStorage] (val x: Self with (ActionsSdkConversationOptions[TConvData, TUserStorage])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: GoogleActionsV2AppRequest): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+  }
+  
 }
 

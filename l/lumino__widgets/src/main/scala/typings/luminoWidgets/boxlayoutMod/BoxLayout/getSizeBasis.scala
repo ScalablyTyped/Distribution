@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/boxlayout", "BoxLayout.getSizeBasis")
+@JSImport("@lumino/widgets/types/boxlayout", "BoxLayout.getSizeBasis")
 @js.native
 object getSizeBasis extends js.Object {
   /**

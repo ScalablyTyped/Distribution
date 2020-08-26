@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ObjectTypeAnnotation_
   extends Node
      with Flow
      with FlowTypeAnnotation {
-  var callProperties: js.Array[ObjectTypeCallProperty_]
-  var indexers: js.Array[ObjectTypeIndexer_]
-  var properties: js.Array[ObjectTypeProperty_]
+  var callProperties: js.Array[ObjectTypeCallProperty_] = js.native
+  var indexers: js.Array[ObjectTypeIndexer_] = js.native
+  var properties: js.Array[ObjectTypeProperty_] = js.native
   @JSName("type")
-  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation
+  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation = js.native
 }
 
 object ObjectTypeAnnotation_ {
@@ -25,17 +26,38 @@ object ObjectTypeAnnotation_ {
     loc: SourceLocation,
     properties: js.Array[ObjectTypeProperty_],
     start: Double,
-    `type`: ObjectTypeAnnotation,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
+    `type`: ObjectTypeAnnotation
   ): ObjectTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(callProperties = callProperties.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], indexers = indexers.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectTypeAnnotation_]
   }
+  @scala.inline
+  implicit class ObjectTypeAnnotation_Ops[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallPropertiesVarargs(value: ObjectTypeCallProperty_ *): Self = this.set("callProperties", js.Array(value :_*))
+    @scala.inline
+    def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = this.set("callProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIndexersVarargs(value: ObjectTypeIndexer_ *): Self = this.set("indexers", js.Array(value :_*))
+    @scala.inline
+    def setIndexers(value: js.Array[ObjectTypeIndexer_]): Self = this.set("indexers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPropertiesVarargs(value: ObjectTypeProperty_ *): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: js.Array[ObjectTypeProperty_]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ObjectTypeAnnotation): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

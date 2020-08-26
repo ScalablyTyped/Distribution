@@ -11,8 +11,8 @@ Convert a value to an array
 | Full name          | arrify |
 | Keywords           | array, arrify, arrayify, convert, value, ensure |
 | # releases         | 3 |
-| # dependents       | 395 |
-| # downloads        | 383542942 |
+| # dependents       | 399 |
+| # downloads        | 394242102 |
 | # stars            | 8 |
 
 ## Links

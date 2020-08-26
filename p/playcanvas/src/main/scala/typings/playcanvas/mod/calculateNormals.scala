@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 object calculateNormals extends js.Object {
   /**
     * Generates normal information from the specified positions and
-    triangle indices. See {@link pc.createMesh}.
+    * triangle indices. See {@link pc.createMesh}.
     * @example
     * var normals = pc.calculateNormals(positions, indices);
-    var tangents = pc.calculateTangents(positions, normals, uvs, indices);
-    var mesh = pc.createMesh(positions, normals, tangents, uvs, indices);
+    * var tangents = pc.calculateTangents(positions, normals, uvs, indices);
+    * var mesh = pc.createMesh(positions, normals, tangents, uvs, indices);
     * @param positions - An array of 3-dimensional vertex positions.
     * @param indices - An array of triangle indices.
     * @returns An array of 3-dimensional vertex normals.

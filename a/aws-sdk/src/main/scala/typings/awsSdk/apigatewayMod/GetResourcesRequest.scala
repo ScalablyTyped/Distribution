@@ -26,17 +26,38 @@ trait GetResourcesRequest extends js.Object {
 
 object GetResourcesRequest {
   @scala.inline
-  def apply(
-    restApiId: String,
-    embed: ListOfString = null,
-    limit: js.UndefOr[NullableInteger] = js.undefined,
-    position: String = null
-  ): GetResourcesRequest = {
+  def apply(restApiId: String): GetResourcesRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-    if (embed != null) __obj.updateDynamic("embed")(embed.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourcesRequest]
   }
+  @scala.inline
+  implicit class GetResourcesRequestOps[Self <: GetResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmbedVarargs(value: String*): Self = this.set("embed", js.Array(value :_*))
+    @scala.inline
+    def setEmbed(value: ListOfString): Self = this.set("embed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbed: Self = this.set("embed", js.undefined)
+    @scala.inline
+    def setLimit(value: NullableInteger): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+  }
+  
 }
 

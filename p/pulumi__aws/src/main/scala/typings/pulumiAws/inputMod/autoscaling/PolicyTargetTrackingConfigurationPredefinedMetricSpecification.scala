@@ -19,10 +19,28 @@ trait PolicyTargetTrackingConfigurationPredefinedMetricSpecification extends js.
 
 object PolicyTargetTrackingConfigurationPredefinedMetricSpecification {
   @scala.inline
-  def apply(predefinedMetricType: Input[String], resourceLabel: Input[String] = null): PolicyTargetTrackingConfigurationPredefinedMetricSpecification = {
+  def apply(predefinedMetricType: Input[String]): PolicyTargetTrackingConfigurationPredefinedMetricSpecification = {
     val __obj = js.Dynamic.literal(predefinedMetricType = predefinedMetricType.asInstanceOf[js.Any])
-    if (resourceLabel != null) __obj.updateDynamic("resourceLabel")(resourceLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyTargetTrackingConfigurationPredefinedMetricSpecification]
   }
+  @scala.inline
+  implicit class PolicyTargetTrackingConfigurationPredefinedMetricSpecificationOps[Self <: PolicyTargetTrackingConfigurationPredefinedMetricSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPredefinedMetricType(value: Input[String]): Self = this.set("predefinedMetricType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceLabel(value: Input[String]): Self = this.set("resourceLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLabel: Self = this.set("resourceLabel", js.undefined)
+  }
+  
 }
 

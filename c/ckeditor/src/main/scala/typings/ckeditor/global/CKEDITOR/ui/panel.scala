@@ -1,7 +1,6 @@
 package typings.ckeditor.global.CKEDITOR.ui
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ckeditor.CKEDITOR.dom.nodeList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,12 +17,7 @@ class panel protected ()
 object panel extends js.Object {
   @js.native
   class block ()
-    extends typings.ckeditor.CKEDITOR.ui.panel.block {
-    /* CompleteClass */
-    override def getItems(): nodeList = js.native
-    /* CompleteClass */
-    override def markItem(index: Double): Unit = js.native
-  }
+    extends typings.ckeditor.CKEDITOR.ui.panel.block
   
   val handler: typings.ckeditor.CKEDITOR.ui.handlerDefinition[typings.ckeditor.CKEDITOR.ui.panel] = js.native
 }

@@ -13,6 +13,7 @@ trait AddMethod extends js.Object {
     *  - Return a stream or a promise
     */
   def apply(name: String): Orchestrator = js.native
+  def apply(name: String, deps: js.UndefOr[scala.Nothing], fn: TaskFunc): Orchestrator = js.native
   def apply(name: String, deps: js.Array[String]): Orchestrator = js.native
   def apply(name: String, deps: js.Array[String], fn: TaskFunc): Orchestrator = js.native
   def apply(name: String, fn: TaskFunc): Orchestrator = js.native

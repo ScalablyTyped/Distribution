@@ -42,26 +42,54 @@ trait LaunchTemplateVersion extends js.Object {
 
 object LaunchTemplateVersion {
   @scala.inline
-  def apply(
-    CreateTime: DateTime = null,
-    CreatedBy: String = null,
-    DefaultVersion: js.UndefOr[Boolean] = js.undefined,
-    LaunchTemplateData: ResponseLaunchTemplateData = null,
-    LaunchTemplateId: String = null,
-    LaunchTemplateName: LaunchTemplateName = null,
-    VersionDescription: VersionDescription = null,
-    VersionNumber: js.UndefOr[Long] = js.undefined
-  ): LaunchTemplateVersion = {
+  def apply(): LaunchTemplateVersion = {
     val __obj = js.Dynamic.literal()
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(DefaultVersion)) __obj.updateDynamic("DefaultVersion")(DefaultVersion.get.asInstanceOf[js.Any])
-    if (LaunchTemplateData != null) __obj.updateDynamic("LaunchTemplateData")(LaunchTemplateData.asInstanceOf[js.Any])
-    if (LaunchTemplateId != null) __obj.updateDynamic("LaunchTemplateId")(LaunchTemplateId.asInstanceOf[js.Any])
-    if (LaunchTemplateName != null) __obj.updateDynamic("LaunchTemplateName")(LaunchTemplateName.asInstanceOf[js.Any])
-    if (VersionDescription != null) __obj.updateDynamic("VersionDescription")(VersionDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(VersionNumber)) __obj.updateDynamic("VersionNumber")(VersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateVersion]
   }
+  @scala.inline
+  implicit class LaunchTemplateVersionOps[Self <: LaunchTemplateVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: String): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setDefaultVersion(value: Boolean): Self = this.set("DefaultVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersion: Self = this.set("DefaultVersion", js.undefined)
+    @scala.inline
+    def setLaunchTemplateData(value: ResponseLaunchTemplateData): Self = this.set("LaunchTemplateData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateData: Self = this.set("LaunchTemplateData", js.undefined)
+    @scala.inline
+    def setLaunchTemplateId(value: String): Self = this.set("LaunchTemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateId: Self = this.set("LaunchTemplateId", js.undefined)
+    @scala.inline
+    def setLaunchTemplateName(value: LaunchTemplateName): Self = this.set("LaunchTemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateName: Self = this.set("LaunchTemplateName", js.undefined)
+    @scala.inline
+    def setVersionDescription(value: VersionDescription): Self = this.set("VersionDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionDescription: Self = this.set("VersionDescription", js.undefined)
+    @scala.inline
+    def setVersionNumber(value: Long): Self = this.set("VersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionNumber: Self = this.set("VersionNumber", js.undefined)
+  }
+  
 }
 

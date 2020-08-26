@@ -22,16 +22,36 @@ trait AssessmentTemplateFilter extends js.Object {
 
 object AssessmentTemplateFilter {
   @scala.inline
-  def apply(
-    durationRange: DurationRange = null,
-    namePattern: NamePattern = null,
-    rulesPackageArns: FilterRulesPackageArnList = null
-  ): AssessmentTemplateFilter = {
+  def apply(): AssessmentTemplateFilter = {
     val __obj = js.Dynamic.literal()
-    if (durationRange != null) __obj.updateDynamic("durationRange")(durationRange.asInstanceOf[js.Any])
-    if (namePattern != null) __obj.updateDynamic("namePattern")(namePattern.asInstanceOf[js.Any])
-    if (rulesPackageArns != null) __obj.updateDynamic("rulesPackageArns")(rulesPackageArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentTemplateFilter]
   }
+  @scala.inline
+  implicit class AssessmentTemplateFilterOps[Self <: AssessmentTemplateFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationRange(value: DurationRange): Self = this.set("durationRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationRange: Self = this.set("durationRange", js.undefined)
+    @scala.inline
+    def setNamePattern(value: NamePattern): Self = this.set("namePattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePattern: Self = this.set("namePattern", js.undefined)
+    @scala.inline
+    def setRulesPackageArnsVarargs(value: Arn*): Self = this.set("rulesPackageArns", js.Array(value :_*))
+    @scala.inline
+    def setRulesPackageArns(value: FilterRulesPackageArnList): Self = this.set("rulesPackageArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRulesPackageArns: Self = this.set("rulesPackageArns", js.undefined)
+  }
+  
 }
 

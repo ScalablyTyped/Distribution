@@ -10,7 +10,11 @@ trait ActiveXObject extends js.Object {
   def hasRegisteredObjects(): Boolean = js.native
   /** Unregister all handlers, all handlers on a specific object, all handlers for a specific object's events, or a specific handler */
   def off(): Unit = js.native
+  def off(obj: js.UndefOr[scala.Nothing], eventName: js.UndefOr[scala.Nothing], handler: js.Function): Unit = js.native
+  def off(obj: js.UndefOr[scala.Nothing], eventName: String): Unit = js.native
+  def off(obj: js.UndefOr[scala.Nothing], eventName: String, handler: js.Function): Unit = js.native
   def off(obj: js.Any): Unit = js.native
+  def off(obj: js.Any, eventName: js.UndefOr[scala.Nothing], handler: js.Function): Unit = js.native
   def off(obj: js.Any, eventName: String): Unit = js.native
   def off(obj: js.Any, eventName: String, handler: js.Function): Unit = js.native
   /** Register an event handler with the passed-in object, for the specified event */

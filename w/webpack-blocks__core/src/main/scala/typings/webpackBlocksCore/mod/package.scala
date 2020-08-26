@@ -8,6 +8,9 @@ package object mod {
   type ConfigSetter[T /* <: typings.webpackBlocksCore.mod.Context */] = js.Function2[
     /* context */ T, 
     /* util */ typings.webpackBlocksCore.mod.Util, 
-    js.Function1[/* config */ typings.webpack.mod.Configuration, typings.webpack.mod.Configuration]
+    js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ /* config */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
+    ]
   ]
 }

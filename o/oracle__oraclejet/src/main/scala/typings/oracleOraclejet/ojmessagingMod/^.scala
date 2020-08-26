@@ -11,12 +11,6 @@ class ^ protected () extends Message {
   def this(summary: String, detail: String) = this()
   def this(summary: String, detail: String, severity: SEVERITY_LEVEL) = this()
   def this(summary: String, detail: String, severity: SEVERITY_TYPE) = this()
-  /* CompleteClass */
-  override var detail: String = js.native
-  /* CompleteClass */
-  override var severity: SEVERITY_TYPE | SEVERITY_LEVEL = js.native
-  /* CompleteClass */
-  override var summary: String = js.native
 }
 
 @JSImport("@oracle/oraclejet/ojmessaging", JSImport.Namespace)

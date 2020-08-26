@@ -24,7 +24,7 @@ object axePuppeteerMod extends js.Object {
     var excludes: js.Any = js.native
     var frame: js.Any = js.native
     var includes: js.Any = js.native
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.Any = js.native
     def analyze(): js.Promise[AxeResults] = js.native
     def analyze[T /* <: AnalyzeCB */](callback: T): js.Promise[AxeResults | Null] = js.native
     @JSName("analyze")

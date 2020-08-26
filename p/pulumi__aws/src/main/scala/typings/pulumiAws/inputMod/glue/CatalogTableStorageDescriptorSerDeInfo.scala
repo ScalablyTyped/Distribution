@@ -24,16 +24,34 @@ trait CatalogTableStorageDescriptorSerDeInfo extends js.Object {
 
 object CatalogTableStorageDescriptorSerDeInfo {
   @scala.inline
-  def apply(
-    name: Input[String] = null,
-    parameters: Input[StringDictionary[Input[String]]] = null,
-    serializationLibrary: Input[String] = null
-  ): CatalogTableStorageDescriptorSerDeInfo = {
+  def apply(): CatalogTableStorageDescriptorSerDeInfo = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (serializationLibrary != null) __obj.updateDynamic("serializationLibrary")(serializationLibrary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogTableStorageDescriptorSerDeInfo]
   }
+  @scala.inline
+  implicit class CatalogTableStorageDescriptorSerDeInfoOps[Self <: CatalogTableStorageDescriptorSerDeInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setSerializationLibrary(value: Input[String]): Self = this.set("serializationLibrary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerializationLibrary: Self = this.set("serializationLibrary", js.undefined)
+  }
+  
 }
 

@@ -94,6 +94,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[SchemaJob] = js.native
   def cancel(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def cancel(params: ParamsResourceProjectsRegionsJobsCancel): GaxiosPromise[SchemaJob] = js.native
   def cancel(params: ParamsResourceProjectsRegionsJobsCancel, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def cancel(
@@ -181,6 +182,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsRegionsJobsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsRegionsJobsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -270,6 +272,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaJob] = js.native
   def get(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceProjectsRegionsJobsGet): GaxiosPromise[SchemaJob] = js.native
   def get(params: ParamsResourceProjectsRegionsJobsGet, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def get(
@@ -299,6 +302,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsRegionsJobsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsRegionsJobsGetiampolicy,
@@ -405,6 +409,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListJobsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(params: ParamsResourceProjectsRegionsJobsList): GaxiosPromise[SchemaListJobsResponse] = js.native
   def list(
     params: ParamsResourceProjectsRegionsJobsList,
@@ -505,6 +510,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaJob] = js.native
   def patch(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def patch(params: ParamsResourceProjectsRegionsJobsPatch): GaxiosPromise[SchemaJob] = js.native
   def patch(params: ParamsResourceProjectsRegionsJobsPatch, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def patch(
@@ -534,6 +540,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsRegionsJobsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsRegionsJobsSetiampolicy,
@@ -625,6 +632,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def submit(): GaxiosPromise[SchemaJob] = js.native
   def submit(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def submit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def submit(params: ParamsResourceProjectsRegionsJobsSubmit): GaxiosPromise[SchemaJob] = js.native
   def submit(params: ParamsResourceProjectsRegionsJobsSubmit, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def submit(
@@ -657,6 +665,7 @@ class ResourceProjectsRegionsJobs protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsRegionsJobsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsRegionsJobsTestiampermissions,

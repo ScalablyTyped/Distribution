@@ -30,20 +30,42 @@ trait DeleteTemplateAliasResponse extends js.Object {
 
 object DeleteTemplateAliasResponse {
   @scala.inline
-  def apply(
-    AliasName: AliasName = null,
-    Arn: Arn = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined,
-    TemplateId: RestrictiveResourceId = null
-  ): DeleteTemplateAliasResponse = {
+  def apply(): DeleteTemplateAliasResponse = {
     val __obj = js.Dynamic.literal()
-    if (AliasName != null) __obj.updateDynamic("AliasName")(AliasName.asInstanceOf[js.Any])
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
-    if (TemplateId != null) __obj.updateDynamic("TemplateId")(TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTemplateAliasResponse]
   }
+  @scala.inline
+  implicit class DeleteTemplateAliasResponseOps[Self <: DeleteTemplateAliasResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasName(value: AliasName): Self = this.set("AliasName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasName: Self = this.set("AliasName", js.undefined)
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTemplateId(value: RestrictiveResourceId): Self = this.set("TemplateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateId: Self = this.set("TemplateId", js.undefined)
+  }
+  
 }
 

@@ -35,5 +35,26 @@ object RetryStageExecutionInput {
     val __obj = js.Dynamic.literal(pipelineExecutionId = pipelineExecutionId.asInstanceOf[js.Any], pipelineName = pipelineName.asInstanceOf[js.Any], retryMode = retryMode.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryStageExecutionInput]
   }
+  @scala.inline
+  implicit class RetryStageExecutionInputOps[Self <: RetryStageExecutionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPipelineExecutionId(value: PipelineExecutionId): Self = this.set("pipelineExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPipelineName(value: PipelineName): Self = this.set("pipelineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRetryMode(value: StageRetryMode): Self = this.set("retryMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStageName(value: StageName): Self = this.set("stageName", value.asInstanceOf[js.Any])
+  }
+  
 }
 

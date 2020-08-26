@@ -46,26 +46,56 @@ trait CopySnapshotRequest extends js.Object {
 
 object CopySnapshotRequest {
   @scala.inline
-  def apply(
-    SourceRegion: String,
-    SourceSnapshotId: String,
-    Description: String = null,
-    DestinationRegion: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Encrypted: js.UndefOr[Boolean] = js.undefined,
-    KmsKeyId: KmsKeyId = null,
-    PresignedUrl: String = null,
-    TagSpecifications: TagSpecificationList = null
-  ): CopySnapshotRequest = {
+  def apply(SourceRegion: String, SourceSnapshotId: String): CopySnapshotRequest = {
     val __obj = js.Dynamic.literal(SourceRegion = SourceRegion.asInstanceOf[js.Any], SourceSnapshotId = SourceSnapshotId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DestinationRegion != null) __obj.updateDynamic("DestinationRegion")(DestinationRegion.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Encrypted)) __obj.updateDynamic("Encrypted")(Encrypted.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (PresignedUrl != null) __obj.updateDynamic("PresignedUrl")(PresignedUrl.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopySnapshotRequest]
   }
+  @scala.inline
+  implicit class CopySnapshotRequestOps[Self <: CopySnapshotRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceRegion(value: String): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceSnapshotId(value: String): Self = this.set("SourceSnapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDestinationRegion(value: String): Self = this.set("DestinationRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationRegion: Self = this.set("DestinationRegion", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Boolean): Self = this.set("Encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("Encrypted", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setPresignedUrl(value: String): Self = this.set("PresignedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresignedUrl: Self = this.set("PresignedUrl", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+  }
+  
 }
 

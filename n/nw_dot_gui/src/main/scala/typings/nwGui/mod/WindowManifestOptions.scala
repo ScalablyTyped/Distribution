@@ -4,48 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowManifestOptions extends js.Object {
-  var frame: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var max_height: js.UndefOr[Double] = js.undefined
-  var max_width: js.UndefOr[Double] = js.undefined
-  var min_height: js.UndefOr[Double] = js.undefined
-  var min_width: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var toolbar: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var frame: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var max_height: js.UndefOr[Double] = js.native
+  var max_width: js.UndefOr[Double] = js.native
+  var min_height: js.UndefOr[Double] = js.native
+  var min_width: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var toolbar: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object WindowManifestOptions {
   @scala.inline
-  def apply(
-    frame: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    icon: String = null,
-    max_height: js.UndefOr[Double] = js.undefined,
-    max_width: js.UndefOr[Double] = js.undefined,
-    min_height: js.UndefOr[Double] = js.undefined,
-    min_width: js.UndefOr[Double] = js.undefined,
-    position: String = null,
-    title: String = null,
-    toolbar: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): WindowManifestOptions = {
+  def apply(): WindowManifestOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_height)) __obj.updateDynamic("max_height")(max_height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max_width)) __obj.updateDynamic("max_width")(max_width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min_height)) __obj.updateDynamic("min_height")(min_height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min_width)) __obj.updateDynamic("min_width")(min_width.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowManifestOptions]
   }
+  @scala.inline
+  implicit class WindowManifestOptionsOps[Self <: WindowManifestOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrame(value: Boolean): Self = this.set("frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrame: Self = this.set("frame", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setMax_height(value: Double): Self = this.set("max_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_height: Self = this.set("max_height", js.undefined)
+    @scala.inline
+    def setMax_width(value: Double): Self = this.set("max_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax_width: Self = this.set("max_width", js.undefined)
+    @scala.inline
+    def setMin_height(value: Double): Self = this.set("min_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin_height: Self = this.set("min_height", js.undefined)
+    @scala.inline
+    def setMin_width(value: Double): Self = this.set("min_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin_width: Self = this.set("min_width", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setToolbar(value: Boolean): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

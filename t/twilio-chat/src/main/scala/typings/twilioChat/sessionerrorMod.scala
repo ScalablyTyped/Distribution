@@ -12,10 +12,6 @@ object sessionerrorMod extends js.Object {
   class SessionError protected () extends Error {
     def this(message: String, code: Double) = this()
     var code: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
 }

@@ -9,10 +9,9 @@ import typings.officeUiFabricReact.imageTypesMod.IImageProps
 import typings.officeUiFabricReact.teachingBubbleBaseMod.TeachingBubbleBase
 import typings.officeUiFabricReact.teachingBubbleContentBaseMod.TeachingBubbleContentBase
 import typings.react.mod.ClassAttributes
-import typings.react.mod.Key
-import typings.react.mod.LegacyRef
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
+import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricStyling.ithemeMod.ITheme
 import typings.uifabricUtilities.createRefMod.IRefObject
@@ -20,158 +19,201 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITeachingBubbleProps
   extends ClassAttributes[TeachingBubbleBase | TeachingBubbleContentBase]
      with IAccessiblePopupProps {
   /**
     * Defines the element id referencing the element containing the description for the TeachingBubble.
     */
-  var ariaDescribedBy: js.UndefOr[String] = js.undefined
+  var ariaDescribedBy: js.UndefOr[String] = js.native
   /**
     *  Defines the element id referencing the element containing label text for TeachingBubble.
     */
-  var ariaLabelledBy: js.UndefOr[String] = js.undefined
+  var ariaLabelledBy: js.UndefOr[String] = js.native
   /**
     * Properties to pass through for Callout, reference detail properties in ICalloutProps
     */
-  var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
+  var calloutProps: js.UndefOr[ICalloutProps] = js.native
   /**
     * Optional callback to access the ITeachingBubble interface. Use this instead of ref for accessing
     * the public methods and properties of the component.
     */
-  var componentRef: js.UndefOr[IRefObject[ITeachingBubble]] = js.undefined
+  var componentRef: js.UndefOr[IRefObject[ITeachingBubble]] = js.native
   /**
     * Properties to pass through for FocusTrapZone, reference detail properties in IFocusTrapZoneProps
     */
-  var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
+  var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.native
   /**
     * Text that will be rendered in the footer of the TeachingBubble.
     * May be rendered alongside primary and secondary buttons.
     */
-  var footerContent: js.UndefOr[String | Element] = js.undefined
+  var footerContent: js.UndefOr[String | Element] = js.native
   /**
     * Whether the TeachingBubble renders close button in the top right corner.
     */
-  var hasCloseButton: js.UndefOr[Boolean] = js.undefined
+  var hasCloseButton: js.UndefOr[Boolean] = js.native
   /**
     * @deprecated Use `hasCloseButton`.
     */
-  var hasCloseIcon: js.UndefOr[Boolean] = js.undefined
+  var hasCloseIcon: js.UndefOr[Boolean] = js.native
   /**
     * A variation with smaller bold headline and no margins.
     */
-  var hasCondensedHeadline: js.UndefOr[Boolean] = js.undefined
+  var hasCondensedHeadline: js.UndefOr[Boolean] = js.native
   /**
     * A variation with smaller bold headline and margins to the body.
     * (`hasCondensedHeadline` takes precedence if it is also set to true.)
     */
-  var hasSmallHeadline: js.UndefOr[Boolean] = js.undefined
+  var hasSmallHeadline: js.UndefOr[Boolean] = js.native
   /**
     * A headline for the Teaching Bubble.
     */
-  var headline: js.UndefOr[String] = js.undefined
+  var headline: js.UndefOr[String] = js.native
   /**
     * An Image for the TeachingBubble.
     */
-  var illustrationImage: js.UndefOr[IImageProps] = js.undefined
+  var illustrationImage: js.UndefOr[IImageProps] = js.native
   /**
     * Whether or not the TeachingBubble is wide, with image on the left side.
     */
-  var isWide: js.UndefOr[Boolean] = js.undefined
+  var isWide: js.UndefOr[Boolean] = js.native
   /**
     * Callback when the TeachingBubble tries to close.
     */
-  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
   /**
     * The Primary interaction button
     */
-  var primaryButtonProps: js.UndefOr[IButtonProps] = js.undefined
+  var primaryButtonProps: js.UndefOr[IButtonProps] = js.native
   /**
     * The Secondary interaction button
     */
-  var secondaryButtonProps: js.UndefOr[IButtonProps] = js.undefined
+  var secondaryButtonProps: js.UndefOr[IButtonProps] = js.native
   /**
     * Call to provide customized styling that will layer on top of the variant rules.
     */
-  var styles: js.UndefOr[IStyleFunctionOrObject[ITeachingBubbleStyleProps, ITeachingBubbleStyles]] = js.undefined
+  var styles: js.UndefOr[IStyleFunctionOrObject[ITeachingBubbleStyleProps, ITeachingBubbleStyles]] = js.native
   /**
     * Element, MouseEvent, Point, or querySelector string that the TeachingBubble
     * should anchor to.
     */
-  var target: js.UndefOr[Target] = js.undefined
+  var target: js.UndefOr[Target] = js.native
   /**
     * @deprecated use target instead
     * Element to anchor the TeachingBubble to.
     */
-  var targetElement: js.UndefOr[HTMLElement] = js.undefined
+  var targetElement: js.UndefOr[HTMLElement] = js.native
   /**
     * Theme provided by High-Order Component.
     */
-  var theme: js.UndefOr[ITheme] = js.undefined
+  var theme: js.UndefOr[ITheme] = js.native
 }
 
 object ITeachingBubbleProps {
   @scala.inline
-  def apply(
-    ariaDescribedBy: String = null,
-    ariaLabelledBy: String = null,
-    calloutProps: ICalloutProps = null,
-    closeButtonAriaLabel: String = null,
-    componentRef: IRefObject[ITeachingBubble] = null,
-    elementToFocusOnDismiss: HTMLElement = null,
-    firstFocusableSelector: String | js.Function0[String] = null,
-    focusTrapZoneProps: IFocusTrapZoneProps = null,
-    footerContent: String | Element = null,
-    forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
-    hasCloseButton: js.UndefOr[Boolean] = js.undefined,
-    hasCloseIcon: js.UndefOr[Boolean] = js.undefined,
-    hasCondensedHeadline: js.UndefOr[Boolean] = js.undefined,
-    hasSmallHeadline: js.UndefOr[Boolean] = js.undefined,
-    headline: String = null,
-    ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined,
-    illustrationImage: IImageProps = null,
-    isClickableOutsideFocusTrap: js.UndefOr[Boolean] = js.undefined,
-    isWide: js.UndefOr[Boolean] = js.undefined,
-    key: Key = null,
-    onDismiss: /* ev */ js.UndefOr[js.Any] => Unit = null,
-    primaryButtonProps: IButtonProps = null,
-    ref: js.UndefOr[Null | (LegacyRef[TeachingBubbleBase | TeachingBubbleContentBase])] = js.undefined,
-    secondaryButtonProps: IButtonProps = null,
-    styles: IStyleFunctionOrObject[ITeachingBubbleStyleProps, ITeachingBubbleStyles] = null,
-    target: js.UndefOr[Null | Target] = js.undefined,
-    targetElement: HTMLElement = null,
-    theme: ITheme = null
-  ): ITeachingBubbleProps = {
+  def apply(): ITeachingBubbleProps = {
     val __obj = js.Dynamic.literal()
-    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy.asInstanceOf[js.Any])
-    if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy.asInstanceOf[js.Any])
-    if (calloutProps != null) __obj.updateDynamic("calloutProps")(calloutProps.asInstanceOf[js.Any])
-    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (elementToFocusOnDismiss != null) __obj.updateDynamic("elementToFocusOnDismiss")(elementToFocusOnDismiss.asInstanceOf[js.Any])
-    if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
-    if (focusTrapZoneProps != null) __obj.updateDynamic("focusTrapZoneProps")(focusTrapZoneProps.asInstanceOf[js.Any])
-    if (footerContent != null) __obj.updateDynamic("footerContent")(footerContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCloseButton)) __obj.updateDynamic("hasCloseButton")(hasCloseButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCloseIcon)) __obj.updateDynamic("hasCloseIcon")(hasCloseIcon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasCondensedHeadline)) __obj.updateDynamic("hasCondensedHeadline")(hasCondensedHeadline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasSmallHeadline)) __obj.updateDynamic("hasSmallHeadline")(hasSmallHeadline.get.asInstanceOf[js.Any])
-    if (headline != null) __obj.updateDynamic("headline")(headline.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExternalFocusing)) __obj.updateDynamic("ignoreExternalFocusing")(ignoreExternalFocusing.get.asInstanceOf[js.Any])
-    if (illustrationImage != null) __obj.updateDynamic("illustrationImage")(illustrationImage.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClickableOutsideFocusTrap)) __obj.updateDynamic("isClickableOutsideFocusTrap")(isClickableOutsideFocusTrap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWide)) __obj.updateDynamic("isWide")(isWide.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1(onDismiss))
-    if (primaryButtonProps != null) __obj.updateDynamic("primaryButtonProps")(primaryButtonProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (secondaryButtonProps != null) __obj.updateDynamic("secondaryButtonProps")(secondaryButtonProps.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITeachingBubbleProps]
   }
+  @scala.inline
+  implicit class ITeachingBubblePropsOps[Self <: ITeachingBubbleProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAriaDescribedBy(value: String): Self = this.set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaDescribedBy: Self = this.set("ariaDescribedBy", js.undefined)
+    @scala.inline
+    def setAriaLabelledBy(value: String): Self = this.set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAriaLabelledBy: Self = this.set("ariaLabelledBy", js.undefined)
+    @scala.inline
+    def setCalloutProps(value: ICalloutProps): Self = this.set("calloutProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutProps: Self = this.set("calloutProps", js.undefined)
+    @scala.inline
+    def setComponentRefFunction1(value: /* ref */ ITeachingBubble | Null => Unit): Self = this.set("componentRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setComponentRef(value: IRefObject[ITeachingBubble]): Self = this.set("componentRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentRef: Self = this.set("componentRef", js.undefined)
+    @scala.inline
+    def setFocusTrapZoneProps(value: IFocusTrapZoneProps): Self = this.set("focusTrapZoneProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusTrapZoneProps: Self = this.set("focusTrapZoneProps", js.undefined)
+    @scala.inline
+    def setFooterContent(value: String | Element): Self = this.set("footerContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterContent: Self = this.set("footerContent", js.undefined)
+    @scala.inline
+    def setHasCloseButton(value: Boolean): Self = this.set("hasCloseButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCloseButton: Self = this.set("hasCloseButton", js.undefined)
+    @scala.inline
+    def setHasCloseIcon(value: Boolean): Self = this.set("hasCloseIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCloseIcon: Self = this.set("hasCloseIcon", js.undefined)
+    @scala.inline
+    def setHasCondensedHeadline(value: Boolean): Self = this.set("hasCondensedHeadline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasCondensedHeadline: Self = this.set("hasCondensedHeadline", js.undefined)
+    @scala.inline
+    def setHasSmallHeadline(value: Boolean): Self = this.set("hasSmallHeadline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasSmallHeadline: Self = this.set("hasSmallHeadline", js.undefined)
+    @scala.inline
+    def setHeadline(value: String): Self = this.set("headline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeadline: Self = this.set("headline", js.undefined)
+    @scala.inline
+    def setIllustrationImage(value: IImageProps): Self = this.set("illustrationImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIllustrationImage: Self = this.set("illustrationImage", js.undefined)
+    @scala.inline
+    def setIsWide(value: Boolean): Self = this.set("isWide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsWide: Self = this.set("isWide", js.undefined)
+    @scala.inline
+    def setOnDismiss(value: /* ev */ js.UndefOr[js.Any] => Unit): Self = this.set("onDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDismiss: Self = this.set("onDismiss", js.undefined)
+    @scala.inline
+    def setPrimaryButtonProps(value: IButtonProps): Self = this.set("primaryButtonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryButtonProps: Self = this.set("primaryButtonProps", js.undefined)
+    @scala.inline
+    def setSecondaryButtonProps(value: IButtonProps): Self = this.set("secondaryButtonProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryButtonProps: Self = this.set("secondaryButtonProps", js.undefined)
+    @scala.inline
+    def setStylesFunction1(value: ITeachingBubbleStyleProps => DeepPartial[ITeachingBubbleStyles]): Self = this.set("styles", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStyles(value: IStyleFunctionOrObject[ITeachingBubbleStyleProps, ITeachingBubbleStyles]): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+    @scala.inline
+    def setTarget(value: Target): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTargetNull: Self = this.set("target", null)
+    @scala.inline
+    def setTargetElement(value: HTMLElement): Self = this.set("targetElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetElement: Self = this.set("targetElement", js.undefined)
+    @scala.inline
+    def setTheme(value: ITheme): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+  }
+  
 }
 

@@ -24,14 +24,14 @@ Instantiable1[/* name */ String, Table]
      with Instantiable2[/* name */ String, /* primaryKey */ Input[String], Table]
      with Instantiable3[
       /* name */ String, 
-      /* primaryKey */ Input[String], 
+      js.UndefOr[/* primaryKey */ Input[String]], 
       /* primaryKeyType */ Input[PrimaryKeyType], 
       Table
     ]
      with Instantiable4[
       /* name */ String, 
-      /* primaryKey */ Input[String], 
-      /* primaryKeyType */ Input[PrimaryKeyType], 
+      js.UndefOr[/* primaryKey */ Input[String]], 
+      js.UndefOr[/* primaryKeyType */ Input[PrimaryKeyType]], 
       /* opts */ ResourceOptions, 
       Table
     ]

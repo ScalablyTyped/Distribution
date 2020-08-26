@@ -43,7 +43,7 @@ object infiniteScrollMod extends js.Object {
       * The value can be either `top` or `bottom`.
       */
     var position: top | bottom = js.native
-    var scrollEl: js.UndefOr[js.Any] = js.native
+    var scrollEl: js.Any = js.native
     var thrPc: js.Any = js.native
     var thrPx: js.Any = js.native
     /**

@@ -12,7 +12,7 @@ Test utils to simplify testing of containers in redux.
 | Keywords           | redux, store, test |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 1213499 |
+| # downloads        | 1221219 |
 | # stars            | 1 |
 
 ## Links

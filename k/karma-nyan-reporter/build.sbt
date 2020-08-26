@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "karma-nyan-reporter"
-version := "0.2-dt-20200616Z-ca4ea7"
-scalaVersion := "2.13.2"
+version := "0.2-dt-20200616Z-e1864d"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

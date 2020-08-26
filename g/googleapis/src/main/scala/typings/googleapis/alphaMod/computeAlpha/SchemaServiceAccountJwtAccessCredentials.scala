@@ -21,11 +21,30 @@ trait SchemaServiceAccountJwtAccessCredentials extends js.Object {
 
 object SchemaServiceAccountJwtAccessCredentials {
   @scala.inline
-  def apply(jsonKey: String = null, tokenLifetimeSeconds: String = null): SchemaServiceAccountJwtAccessCredentials = {
+  def apply(): SchemaServiceAccountJwtAccessCredentials = {
     val __obj = js.Dynamic.literal()
-    if (jsonKey != null) __obj.updateDynamic("jsonKey")(jsonKey.asInstanceOf[js.Any])
-    if (tokenLifetimeSeconds != null) __obj.updateDynamic("tokenLifetimeSeconds")(tokenLifetimeSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaServiceAccountJwtAccessCredentials]
   }
+  @scala.inline
+  implicit class SchemaServiceAccountJwtAccessCredentialsOps[Self <: SchemaServiceAccountJwtAccessCredentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJsonKey(value: String): Self = this.set("jsonKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJsonKey: Self = this.set("jsonKey", js.undefined)
+    @scala.inline
+    def setTokenLifetimeSeconds(value: String): Self = this.set("tokenLifetimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenLifetimeSeconds: Self = this.set("tokenLifetimeSeconds", js.undefined)
+  }
+  
 }
 

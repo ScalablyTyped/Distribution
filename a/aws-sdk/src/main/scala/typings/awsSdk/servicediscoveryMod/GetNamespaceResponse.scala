@@ -14,10 +14,26 @@ trait GetNamespaceResponse extends js.Object {
 
 object GetNamespaceResponse {
   @scala.inline
-  def apply(Namespace: Namespace = null): GetNamespaceResponse = {
+  def apply(): GetNamespaceResponse = {
     val __obj = js.Dynamic.literal()
-    if (Namespace != null) __obj.updateDynamic("Namespace")(Namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNamespaceResponse]
   }
+  @scala.inline
+  implicit class GetNamespaceResponseOps[Self <: GetNamespaceResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("Namespace", js.undefined)
+  }
+  
 }
 

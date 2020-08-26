@@ -11,7 +11,7 @@ A [JSONSchema](https://json-schema.org/) validator that uses code generation to 
 | Keywords           | json, schema, orderly, jsonschema |
 | # releases         | 6 |
 | # dependents       | 197 |
-| # downloads        | 95543326 |
+| # downloads        | 93852129 |
 | # stars            | 24 |
 
 ## Links

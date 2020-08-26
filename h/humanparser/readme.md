@@ -12,7 +12,7 @@ Parse a human name string into salutation, first name, middle name, last name, s
 | Keywords           | human, address, name, parser, parse, fullname, full name, first name, last name, human name, city state zip, city, state, zip |
 | # releases         | 8 |
 | # dependents       | 7 |
-| # downloads        | 632044 |
+| # downloads        | 671595 |
 | # stars            | 1 |
 
 ## Links

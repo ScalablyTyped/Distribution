@@ -17,6 +17,7 @@ class PolylineVolumeGeometry protected () extends Packable {
 object PolylineVolumeGeometry extends js.Object {
   def createGeometry(polylineVolumeGeometry: PolylineVolumeGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): PolylineVolumeGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: PolylineVolumeGeometry): PolylineVolumeGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): PolylineVolumeGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: PolylineVolumeGeometry): PolylineVolumeGeometry = js.native
 }

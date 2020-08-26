@@ -47,20 +47,44 @@ trait SchemaAuthenticationInfo extends js.Object {
 
 object SchemaAuthenticationInfo {
   @scala.inline
-  def apply(
-    authoritySelector: String = null,
-    principalEmail: String = null,
-    serviceAccountDelegationInfo: js.Array[SchemaServiceAccountDelegationInfo] = null,
-    serviceAccountKeyName: String = null,
-    thirdPartyPrincipal: StringDictionary[js.Any] = null
-  ): SchemaAuthenticationInfo = {
+  def apply(): SchemaAuthenticationInfo = {
     val __obj = js.Dynamic.literal()
-    if (authoritySelector != null) __obj.updateDynamic("authoritySelector")(authoritySelector.asInstanceOf[js.Any])
-    if (principalEmail != null) __obj.updateDynamic("principalEmail")(principalEmail.asInstanceOf[js.Any])
-    if (serviceAccountDelegationInfo != null) __obj.updateDynamic("serviceAccountDelegationInfo")(serviceAccountDelegationInfo.asInstanceOf[js.Any])
-    if (serviceAccountKeyName != null) __obj.updateDynamic("serviceAccountKeyName")(serviceAccountKeyName.asInstanceOf[js.Any])
-    if (thirdPartyPrincipal != null) __obj.updateDynamic("thirdPartyPrincipal")(thirdPartyPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuthenticationInfo]
   }
+  @scala.inline
+  implicit class SchemaAuthenticationInfoOps[Self <: SchemaAuthenticationInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthoritySelector(value: String): Self = this.set("authoritySelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthoritySelector: Self = this.set("authoritySelector", js.undefined)
+    @scala.inline
+    def setPrincipalEmail(value: String): Self = this.set("principalEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalEmail: Self = this.set("principalEmail", js.undefined)
+    @scala.inline
+    def setServiceAccountDelegationInfoVarargs(value: SchemaServiceAccountDelegationInfo*): Self = this.set("serviceAccountDelegationInfo", js.Array(value :_*))
+    @scala.inline
+    def setServiceAccountDelegationInfo(value: js.Array[SchemaServiceAccountDelegationInfo]): Self = this.set("serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountDelegationInfo: Self = this.set("serviceAccountDelegationInfo", js.undefined)
+    @scala.inline
+    def setServiceAccountKeyName(value: String): Self = this.set("serviceAccountKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccountKeyName: Self = this.set("serviceAccountKeyName", js.undefined)
+    @scala.inline
+    def setThirdPartyPrincipal(value: StringDictionary[js.Any]): Self = this.set("thirdPartyPrincipal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThirdPartyPrincipal: Self = this.set("thirdPartyPrincipal", js.undefined)
+  }
+  
 }
 

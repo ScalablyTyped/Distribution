@@ -13,71 +13,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFormGroupItem extends js.Object {
   /** @name dxFormGroupItem.alignItemLabels */
-  var alignItemLabels: js.UndefOr[Boolean] = js.undefined
+  var alignItemLabels: js.UndefOr[Boolean] = js.native
   /** @name dxFormGroupItem.caption */
-  var caption: js.UndefOr[String] = js.undefined
+  var caption: js.UndefOr[String] = js.native
   /** @name dxFormGroupItem.colCount */
-  var colCount: js.UndefOr[Double] = js.undefined
+  var colCount: js.UndefOr[Double] = js.native
   /** @name dxFormGroupItem.colCountByScreen */
-  var colCountByScreen: js.UndefOr[js.Any] = js.undefined
+  var colCountByScreen: js.UndefOr[js.Any] = js.native
   /** @name dxFormGroupItem.colSpan */
-  var colSpan: js.UndefOr[Double] = js.undefined
+  var colSpan: js.UndefOr[Double] = js.native
   /** @name dxFormGroupItem.cssClass */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** @name dxFormGroupItem.itemType */
-  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
+  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.native
   /** @name dxFormGroupItem.items */
   var items: js.UndefOr[
     js.Array[
       dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name dxFormGroupItem.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxFormGroupItem.template */
   var template: js.UndefOr[
     typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ FormData, /* itemElement */ dxElement, String | Element | JQuery])
-  ] = js.undefined
+  ] = js.native
   /** @name dxFormGroupItem.visible */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** @name dxFormGroupItem.visibleIndex */
-  var visibleIndex: js.UndefOr[Double] = js.undefined
+  var visibleIndex: js.UndefOr[Double] = js.native
 }
 
 object dxFormGroupItem {
   @scala.inline
-  def apply(
-    alignItemLabels: js.UndefOr[Boolean] = js.undefined,
-    caption: String = null,
-    colCount: js.UndefOr[Double] = js.undefined,
-    colCountByScreen: js.Any = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    cssClass: String = null,
-    itemType: empty | group | simple | tabbed | button = null,
-    items: js.Array[
-      dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
-    ] = null,
-    name: String = null,
-    template: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ FormData, /* itemElement */ dxElement, String | Element | JQuery]) = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: js.UndefOr[Double] = js.undefined
-  ): dxFormGroupItem = {
+  def apply(): dxFormGroupItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignItemLabels)) __obj.updateDynamic("alignItemLabels")(alignItemLabels.get.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(colCount)) __obj.updateDynamic("colCount")(colCount.get.asInstanceOf[js.Any])
-    if (colCountByScreen != null) __obj.updateDynamic("colCountByScreen")(colCountByScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visibleIndex)) __obj.updateDynamic("visibleIndex")(visibleIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormGroupItem]
   }
+  @scala.inline
+  implicit class dxFormGroupItemOps[Self <: dxFormGroupItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignItemLabels(value: Boolean): Self = this.set("alignItemLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignItemLabels: Self = this.set("alignItemLabels", js.undefined)
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setColCount(value: Double): Self = this.set("colCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColCount: Self = this.set("colCount", js.undefined)
+    @scala.inline
+    def setColCountByScreen(value: js.Any): Self = this.set("colCountByScreen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColCountByScreen: Self = this.set("colCountByScreen", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setItemType(value: empty | group | simple | tabbed | button): Self = this.set("itemType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemType: Self = this.set("itemType", js.undefined)
+    @scala.inline
+    def setItemsVarargs(
+      value: (dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem)*
+    ): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(
+      value: js.Array[
+          dxFormSimpleItem | dxFormGroupItem | dxFormTabbedItem | dxFormEmptyItem | dxFormButtonItem
+        ]
+    ): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTemplateFunction2(value: (/* data */ FormData, /* itemElement */ dxElement) => String | Element | JQuery): Self = this.set("template", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTemplate(
+      value: typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ FormData, /* itemElement */ dxElement, String | Element | JQuery])
+    ): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setVisibleIndex(value: Double): Self = this.set("visibleIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibleIndex: Self = this.set("visibleIndex", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ object App extends js.Object {
   def getErrorMessage(exception: js.Any): String = js.native
   def hideSplashScreen(): Unit = js.native
   def openURL(url: String): Unit = js.native
+  def openURL(url: String, target: js.UndefOr[scala.Nothing], options: OpenURLOptions): Unit = js.native
   def openURL(url: String, target: String): Unit = js.native
   def openURL(url: String, target: String, options: OpenURLOptions): Unit = js.native
   def overrideBackButton(callback: Callback): Unit = js.native

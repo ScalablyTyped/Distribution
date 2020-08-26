@@ -26,7 +26,7 @@ class WebServiceOperationSimpleParameterMapping protected () extends WebServiceO
     * The value of this property is conceptually of type mappings.ElementPath.
     */
   def parameterPath: String = js.native
-  def parameterPath(newValue: String): js.Any = js.native
+  def parameterPath_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -4,33 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Range extends js.Object {
-  var end: Point
-  var start: Point
-  def clipRows(firstRow: Double, lastRow: Double): Range
-  def collapseRows(): Range
-  def compare(row: Double, column: Double): Double
-  def compareEnd(row: Double, column: Double): Double
-  def compareInside(row: Double, column: Double): Double
-  def comparePoint(p: Point): Double
-  def compareRange(range: Range): Double
-  def compareStart(row: Double, column: Double): Double
-  def contains(row: Double, column: Double): Boolean
-  def containsRange(range: Range): Boolean
-  def extend(row: Double, column: Double): Range
-  def inside(row: Double, column: Double): Boolean
-  def insideEnd(row: Double, column: Double): Boolean
-  def insideStart(row: Double, column: Double): Boolean
-  def intersects(range: Range): Boolean
-  def isEmpty(): Boolean
-  def isEnd(row: Double, column: Double): Boolean
-  def isEqual(range: Range): Boolean
-  def isMultiLine(): Boolean
-  def isStart(row: Double, column: Double): Boolean
-  def moveBy(row: Double, column: Double): Unit
-  def setEnd(row: Double, column: Double): Unit
-  def setStart(row: Double, column: Double): Unit
-  def toScreenRange(session: EditSession): Range
+  var end: Point = js.native
+  var start: Point = js.native
+  def clipRows(firstRow: Double, lastRow: Double): Range = js.native
+  def collapseRows(): Range = js.native
+  def compare(row: Double, column: Double): Double = js.native
+  def compareEnd(row: Double, column: Double): Double = js.native
+  def compareInside(row: Double, column: Double): Double = js.native
+  def comparePoint(p: Point): Double = js.native
+  def compareRange(range: Range): Double = js.native
+  def compareStart(row: Double, column: Double): Double = js.native
+  def contains(row: Double, column: Double): Boolean = js.native
+  def containsRange(range: Range): Boolean = js.native
+  def extend(row: Double, column: Double): Range = js.native
+  def inside(row: Double, column: Double): Boolean = js.native
+  def insideEnd(row: Double, column: Double): Boolean = js.native
+  def insideStart(row: Double, column: Double): Boolean = js.native
+  def intersects(range: Range): Boolean = js.native
+  def isEmpty(): Boolean = js.native
+  def isEnd(row: Double, column: Double): Boolean = js.native
+  def isEqual(range: Range): Boolean = js.native
+  def isMultiLine(): Boolean = js.native
+  def isStart(row: Double, column: Double): Boolean = js.native
+  def moveBy(row: Double, column: Double): Unit = js.native
+  def setEnd(row: Double, column: Double): Unit = js.native
+  def setStart(row: Double, column: Double): Unit = js.native
+  def toScreenRange(session: EditSession): Range = js.native
 }
 
 object Range {
@@ -66,5 +67,70 @@ object Range {
     val __obj = js.Dynamic.literal(clipRows = js.Any.fromFunction2(clipRows), collapseRows = js.Any.fromFunction0(collapseRows), compare = js.Any.fromFunction2(compare), compareEnd = js.Any.fromFunction2(compareEnd), compareInside = js.Any.fromFunction2(compareInside), comparePoint = js.Any.fromFunction1(comparePoint), compareRange = js.Any.fromFunction1(compareRange), compareStart = js.Any.fromFunction2(compareStart), contains = js.Any.fromFunction2(contains), containsRange = js.Any.fromFunction1(containsRange), end = end.asInstanceOf[js.Any], extend = js.Any.fromFunction2(extend), inside = js.Any.fromFunction2(inside), insideEnd = js.Any.fromFunction2(insideEnd), insideStart = js.Any.fromFunction2(insideStart), intersects = js.Any.fromFunction1(intersects), isEmpty = js.Any.fromFunction0(isEmpty), isEnd = js.Any.fromFunction2(isEnd), isEqual = js.Any.fromFunction1(isEqual), isMultiLine = js.Any.fromFunction0(isMultiLine), isStart = js.Any.fromFunction2(isStart), moveBy = js.Any.fromFunction2(moveBy), setEnd = js.Any.fromFunction2(setEnd), setStart = js.Any.fromFunction2(setStart), start = start.asInstanceOf[js.Any], toScreenRange = js.Any.fromFunction1(toScreenRange))
     __obj.asInstanceOf[Range]
   }
+  @scala.inline
+  implicit class RangeOps[Self <: Range] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClipRows(value: (Double, Double) => Range): Self = this.set("clipRows", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCollapseRows(value: () => Range): Self = this.set("collapseRows", js.Any.fromFunction0(value))
+    @scala.inline
+    def setCompare(value: (Double, Double) => Double): Self = this.set("compare", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCompareEnd(value: (Double, Double) => Double): Self = this.set("compareEnd", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCompareInside(value: (Double, Double) => Double): Self = this.set("compareInside", js.Any.fromFunction2(value))
+    @scala.inline
+    def setComparePoint(value: Point => Double): Self = this.set("comparePoint", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCompareRange(value: Range => Double): Self = this.set("compareRange", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCompareStart(value: (Double, Double) => Double): Self = this.set("compareStart", js.Any.fromFunction2(value))
+    @scala.inline
+    def setContains(value: (Double, Double) => Boolean): Self = this.set("contains", js.Any.fromFunction2(value))
+    @scala.inline
+    def setContainsRange(value: Range => Boolean): Self = this.set("containsRange", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEnd(value: Point): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtend(value: (Double, Double) => Range): Self = this.set("extend", js.Any.fromFunction2(value))
+    @scala.inline
+    def setInside(value: (Double, Double) => Boolean): Self = this.set("inside", js.Any.fromFunction2(value))
+    @scala.inline
+    def setInsideEnd(value: (Double, Double) => Boolean): Self = this.set("insideEnd", js.Any.fromFunction2(value))
+    @scala.inline
+    def setInsideStart(value: (Double, Double) => Boolean): Self = this.set("insideStart", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIntersects(value: Range => Boolean): Self = this.set("intersects", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsEmpty(value: () => Boolean): Self = this.set("isEmpty", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsEnd(value: (Double, Double) => Boolean): Self = this.set("isEnd", js.Any.fromFunction2(value))
+    @scala.inline
+    def setIsEqual(value: Range => Boolean): Self = this.set("isEqual", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIsMultiLine(value: () => Boolean): Self = this.set("isMultiLine", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsStart(value: (Double, Double) => Boolean): Self = this.set("isStart", js.Any.fromFunction2(value))
+    @scala.inline
+    def setMoveBy(value: (Double, Double) => Unit): Self = this.set("moveBy", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetEnd(value: (Double, Double) => Unit): Self = this.set("setEnd", js.Any.fromFunction2(value))
+    @scala.inline
+    def setSetStart(value: (Double, Double) => Unit): Self = this.set("setStart", js.Any.fromFunction2(value))
+    @scala.inline
+    def setStart(value: Point): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToScreenRange(value: EditSession => Range): Self = this.set("toScreenRange", js.Any.fromFunction1(value))
+  }
+  
 }
 

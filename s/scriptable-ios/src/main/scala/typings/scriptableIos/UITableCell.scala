@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
   * _Cell in a UITableRow._
   * @see https://docs.scriptable.app/uitablecell
   */
+@js.native
 trait UITableCell extends js.Object {
   /**
     * _Whether to dismiss the table when the button is tapped._
@@ -15,7 +16,7 @@ trait UITableCell extends js.Object {
     * Defaults to false.
     * @see https://docs.scriptable.app/uitablecell/#dismissontap
     */
-  var dismissOnTap: Boolean
+  var dismissOnTap: Boolean = js.native
   /**
     * _Color of the subtitle._
     *
@@ -23,7 +24,7 @@ trait UITableCell extends js.Object {
     * context the script is running in.
     * @see https://docs.scriptable.app/uitablecell/#subtitlecolor
     */
-  var subtitleColor: Color
+  var subtitleColor: Color = js.native
   /**
     * _Color of the title._
     *
@@ -31,7 +32,7 @@ trait UITableCell extends js.Object {
     * context the script is running in.
     * @see https://docs.scriptable.app/uitablecell/#titlecolor
     */
-  var titleColor: Color
+  var titleColor: Color = js.native
   /**
     * _Relative width of the cell._
     *
@@ -43,35 +44,35 @@ trait UITableCell extends js.Object {
     * three times as wide as A.
     * @see https://docs.scriptable.app/uitablecell/#widthweight
     */
-  var widthWeight: Double
+  var widthWeight: Double = js.native
   /**
     * _Center aligns content._
     *
     * Specifies that content in the cell should be center aligned.
     * @see https://docs.scriptable.app/uitablecell/#-centeraligned
     */
-  def centerAligned(): Unit
+  def centerAligned(): Unit = js.native
   /**
     * _Left aligns content._
     *
     * Specifies that content in the cell should be left aligned.
     * @see https://docs.scriptable.app/uitablecell/#-leftaligned
     */
-  def leftAligned(): Unit
+  def leftAligned(): Unit = js.native
   /**
     * _Called when the button is tapped._
     *
     * Buttons cannot be tapped when the table is presented in Siri.
     * @see https://docs.scriptable.app/uitablecell/#ontap
     */
-  def onTap(): Unit
+  def onTap(): Unit = js.native
   /**
     * _Right aligns content._
     *
     * Specifies that content in the cell should be right aligned.
     * @see https://docs.scriptable.app/uitablecell/#-rightaligned
     */
-  def rightAligned(): Unit
+  def rightAligned(): Unit = js.native
 }
 
 object UITableCell {
@@ -89,5 +90,34 @@ object UITableCell {
     val __obj = js.Dynamic.literal(centerAligned = js.Any.fromFunction0(centerAligned), dismissOnTap = dismissOnTap.asInstanceOf[js.Any], leftAligned = js.Any.fromFunction0(leftAligned), onTap = js.Any.fromFunction0(onTap), rightAligned = js.Any.fromFunction0(rightAligned), subtitleColor = subtitleColor.asInstanceOf[js.Any], titleColor = titleColor.asInstanceOf[js.Any], widthWeight = widthWeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[UITableCell]
   }
+  @scala.inline
+  implicit class UITableCellOps[Self <: UITableCell] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCenterAligned(value: () => Unit): Self = this.set("centerAligned", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDismissOnTap(value: Boolean): Self = this.set("dismissOnTap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLeftAligned(value: () => Unit): Self = this.set("leftAligned", js.Any.fromFunction0(value))
+    @scala.inline
+    def setOnTap(value: () => Unit): Self = this.set("onTap", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRightAligned(value: () => Unit): Self = this.set("rightAligned", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSubtitleColor(value: Color): Self = this.set("subtitleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitleColor(value: Color): Self = this.set("titleColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidthWeight(value: Double): Self = this.set("widthWeight", value.asInstanceOf[js.Any])
+  }
+  
 }
 

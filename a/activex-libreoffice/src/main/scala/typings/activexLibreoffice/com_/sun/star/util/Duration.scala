@@ -13,23 +13,24 @@ import scala.scalajs.js.annotation._
   * Days is valid.
   * @since OOo 3.3
   */
+@js.native
 trait Duration extends js.Object {
   /** contains the days. */
-  var Days: Double
+  var Days: Double = js.native
   /** contains the hours. */
-  var Hours: Double
+  var Hours: Double = js.native
   /** contains the minutes. */
-  var Minutes: Double
+  var Minutes: Double = js.native
   /** contains the months. */
-  var Months: Double
+  var Months: Double = js.native
   /** contains the nanoseconds. */
-  var NanoSeconds: Double
+  var NanoSeconds: Double = js.native
   /** explicit sign bit. */
-  var Negative: Boolean
+  var Negative: Boolean = js.native
   /** contains the seconds. */
-  var Seconds: Double
+  var Seconds: Double = js.native
   /** contains the years. */
-  var Years: Double
+  var Years: Double = js.native
 }
 
 object Duration {
@@ -47,5 +48,34 @@ object Duration {
     val __obj = js.Dynamic.literal(Days = Days.asInstanceOf[js.Any], Hours = Hours.asInstanceOf[js.Any], Minutes = Minutes.asInstanceOf[js.Any], Months = Months.asInstanceOf[js.Any], NanoSeconds = NanoSeconds.asInstanceOf[js.Any], Negative = Negative.asInstanceOf[js.Any], Seconds = Seconds.asInstanceOf[js.Any], Years = Years.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
+  @scala.inline
+  implicit class DurationOps[Self <: Duration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDays(value: Double): Self = this.set("Days", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHours(value: Double): Self = this.set("Hours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinutes(value: Double): Self = this.set("Minutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMonths(value: Double): Self = this.set("Months", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNanoSeconds(value: Double): Self = this.set("NanoSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNegative(value: Boolean): Self = this.set("Negative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSeconds(value: Double): Self = this.set("Seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYears(value: Double): Self = this.set("Years", value.asInstanceOf[js.Any])
+  }
+  
 }
 

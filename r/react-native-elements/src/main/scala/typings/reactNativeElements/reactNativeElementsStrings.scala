@@ -134,6 +134,9 @@ object reactNativeElementsStrings {
   sealed trait `font-awesome` extends _IconType
   
   @js.native
+  sealed trait `font-awesome-5` extends _IconType
+  
+  @js.native
   sealed trait formSheet extends js.Object
   
   @js.native
@@ -532,6 +535,8 @@ object reactNativeElementsStrings {
   def flickr: flickr = "flickr".asInstanceOf[flickr]
   @scala.inline
   def `font-awesome`: `font-awesome` = "font-awesome".asInstanceOf[`font-awesome`]
+  @scala.inline
+  def `font-awesome-5`: `font-awesome-5` = "font-awesome-5".asInstanceOf[`font-awesome-5`]
   @scala.inline
   def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
   @scala.inline

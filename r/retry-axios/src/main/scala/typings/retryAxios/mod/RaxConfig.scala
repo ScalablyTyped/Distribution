@@ -14,99 +14,177 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  raxConfig  :retry-axios.retry-axios.RetryConfig} & axios.axios.AxiosRequestConfig */
+/* Inlined {  raxConfig :retry-axios.retry-axios.RetryConfig} & axios.axios.AxiosRequestConfig */
+@js.native
 trait RaxConfig extends js.Object {
-  var adapter: js.UndefOr[AxiosAdapter] = js.undefined
-  var auth: js.UndefOr[AxiosBasicCredentials] = js.undefined
-  var baseURL: js.UndefOr[String] = js.undefined
-  var cancelToken: js.UndefOr[CancelToken] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
-  var httpAgent: js.UndefOr[js.Any] = js.undefined
-  var httpsAgent: js.UndefOr[js.Any] = js.undefined
-  var maxContentLength: js.UndefOr[Double] = js.undefined
-  var maxRedirects: js.UndefOr[Double] = js.undefined
-  var method: js.UndefOr[Method] = js.undefined
-  var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
-  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
-  var params: js.UndefOr[js.Any] = js.undefined
-  var paramsSerializer: js.UndefOr[js.Function1[/* params */ js.Any, String]] = js.undefined
-  var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.undefined
-  var raxConfig: RetryConfig
-  var responseType: js.UndefOr[ResponseType] = js.undefined
-  var socketPath: js.UndefOr[String | Null] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var timeoutErrorMessage: js.UndefOr[String] = js.undefined
-  var transformRequest: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.undefined
-  var transformResponse: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var validateStatus: js.UndefOr[js.Function1[/* status */ Double, Boolean]] = js.undefined
-  var withCredentials: js.UndefOr[Boolean] = js.undefined
-  var xsrfCookieName: js.UndefOr[String] = js.undefined
-  var xsrfHeaderName: js.UndefOr[String] = js.undefined
+  var adapter: js.UndefOr[AxiosAdapter] = js.native
+  var auth: js.UndefOr[AxiosBasicCredentials] = js.native
+  var baseURL: js.UndefOr[String] = js.native
+  var cancelToken: js.UndefOr[CancelToken] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.native
+  var httpAgent: js.UndefOr[js.Any] = js.native
+  var httpsAgent: js.UndefOr[js.Any] = js.native
+  var maxContentLength: js.UndefOr[Double] = js.native
+  var maxRedirects: js.UndefOr[Double] = js.native
+  var method: js.UndefOr[Method] = js.native
+  var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
+  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
+  var params: js.UndefOr[js.Any] = js.native
+  var paramsSerializer: js.UndefOr[js.Function1[/* params */ js.Any, String]] = js.native
+  var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.native
+  var raxConfig: RetryConfig = js.native
+  var responseType: js.UndefOr[ResponseType] = js.native
+  var socketPath: js.UndefOr[String | Null] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var timeoutErrorMessage: js.UndefOr[String] = js.native
+  var transformRequest: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.native
+  var transformResponse: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.native
+  var url: js.UndefOr[String] = js.native
+  var validateStatus: js.UndefOr[js.Function1[/* status */ Double, Boolean]] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.native
+  var xsrfCookieName: js.UndefOr[String] = js.native
+  var xsrfHeaderName: js.UndefOr[String] = js.native
 }
 
 object RaxConfig {
   @scala.inline
-  def apply(
-    raxConfig: RetryConfig,
-    adapter: /* config */ AxiosRequestConfig => AxiosPromise[js.Any] = null,
-    auth: AxiosBasicCredentials = null,
-    baseURL: String = null,
-    cancelToken: CancelToken = null,
-    data: js.Any = null,
-    headers: js.Any = null,
-    httpAgent: js.Any = null,
-    httpsAgent: js.Any = null,
-    maxContentLength: js.UndefOr[Double] = js.undefined,
-    maxRedirects: js.UndefOr[Double] = js.undefined,
-    method: Method = null,
-    onDownloadProgress: /* progressEvent */ js.Any => Unit = null,
-    onUploadProgress: /* progressEvent */ js.Any => Unit = null,
-    params: js.Any = null,
-    paramsSerializer: /* params */ js.Any => String = null,
-    proxy: AxiosProxyConfig | `false` = null,
-    responseType: ResponseType = null,
-    socketPath: js.UndefOr[Null | String] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    timeoutErrorMessage: String = null,
-    transformRequest: AxiosTransformer | js.Array[AxiosTransformer] = null,
-    transformResponse: AxiosTransformer | js.Array[AxiosTransformer] = null,
-    url: String = null,
-    validateStatus: /* status */ Double => Boolean = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined,
-    xsrfCookieName: String = null,
-    xsrfHeaderName: String = null
-  ): RaxConfig = {
+  def apply(raxConfig: RetryConfig): RaxConfig = {
     val __obj = js.Dynamic.literal(raxConfig = raxConfig.asInstanceOf[js.Any])
-    if (adapter != null) __obj.updateDynamic("adapter")(js.Any.fromFunction1(adapter))
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (baseURL != null) __obj.updateDynamic("baseURL")(baseURL.asInstanceOf[js.Any])
-    if (cancelToken != null) __obj.updateDynamic("cancelToken")(cancelToken.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (httpAgent != null) __obj.updateDynamic("httpAgent")(httpAgent.asInstanceOf[js.Any])
-    if (httpsAgent != null) __obj.updateDynamic("httpsAgent")(httpsAgent.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxContentLength)) __obj.updateDynamic("maxContentLength")(maxContentLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRedirects)) __obj.updateDynamic("maxRedirects")(maxRedirects.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (onDownloadProgress != null) __obj.updateDynamic("onDownloadProgress")(js.Any.fromFunction1(onDownloadProgress))
-    if (onUploadProgress != null) __obj.updateDynamic("onUploadProgress")(js.Any.fromFunction1(onUploadProgress))
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (paramsSerializer != null) __obj.updateDynamic("paramsSerializer")(js.Any.fromFunction1(paramsSerializer))
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(socketPath)) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (timeoutErrorMessage != null) __obj.updateDynamic("timeoutErrorMessage")(timeoutErrorMessage.asInstanceOf[js.Any])
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
-    if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (validateStatus != null) __obj.updateDynamic("validateStatus")(js.Any.fromFunction1(validateStatus))
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.get.asInstanceOf[js.Any])
-    if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName.asInstanceOf[js.Any])
-    if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaxConfig]
   }
+  @scala.inline
+  implicit class RaxConfigOps[Self <: RaxConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRaxConfig(value: RetryConfig): Self = this.set("raxConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdapter(value: /* config */ AxiosRequestConfig => AxiosPromise[js.Any]): Self = this.set("adapter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAdapter: Self = this.set("adapter", js.undefined)
+    @scala.inline
+    def setAuth(value: AxiosBasicCredentials): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setBaseURL(value: String): Self = this.set("baseURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseURL: Self = this.set("baseURL", js.undefined)
+    @scala.inline
+    def setCancelToken(value: CancelToken): Self = this.set("cancelToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelToken: Self = this.set("cancelToken", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Any): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHttpAgent(value: js.Any): Self = this.set("httpAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpAgent: Self = this.set("httpAgent", js.undefined)
+    @scala.inline
+    def setHttpsAgent(value: js.Any): Self = this.set("httpsAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpsAgent: Self = this.set("httpsAgent", js.undefined)
+    @scala.inline
+    def setMaxContentLength(value: Double): Self = this.set("maxContentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxContentLength: Self = this.set("maxContentLength", js.undefined)
+    @scala.inline
+    def setMaxRedirects(value: Double): Self = this.set("maxRedirects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRedirects: Self = this.set("maxRedirects", js.undefined)
+    @scala.inline
+    def setMethod(value: Method): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setOnDownloadProgress(value: /* progressEvent */ js.Any => Unit): Self = this.set("onDownloadProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDownloadProgress: Self = this.set("onDownloadProgress", js.undefined)
+    @scala.inline
+    def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = this.set("onUploadProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUploadProgress: Self = this.set("onUploadProgress", js.undefined)
+    @scala.inline
+    def setParams(value: js.Any): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setParamsSerializer(value: /* params */ js.Any => String): Self = this.set("paramsSerializer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteParamsSerializer: Self = this.set("paramsSerializer", js.undefined)
+    @scala.inline
+    def setProxy(value: AxiosProxyConfig | `false`): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setResponseType(value: ResponseType): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    @scala.inline
+    def setSocketPathNull: Self = this.set("socketPath", null)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTimeoutErrorMessage(value: String): Self = this.set("timeoutErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutErrorMessage: Self = this.set("timeoutErrorMessage", js.undefined)
+    @scala.inline
+    def setTransformRequestVarargs(value: AxiosTransformer*): Self = this.set("transformRequest", js.Array(value :_*))
+    @scala.inline
+    def setTransformRequestFunction2(value: (/* data */ js.Any, /* headers */ js.UndefOr[js.Any]) => js.Any): Self = this.set("transformRequest", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTransformRequest(value: AxiosTransformer | js.Array[AxiosTransformer]): Self = this.set("transformRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformRequest: Self = this.set("transformRequest", js.undefined)
+    @scala.inline
+    def setTransformResponseVarargs(value: AxiosTransformer*): Self = this.set("transformResponse", js.Array(value :_*))
+    @scala.inline
+    def setTransformResponseFunction2(value: (/* data */ js.Any, /* headers */ js.UndefOr[js.Any]) => js.Any): Self = this.set("transformResponse", js.Any.fromFunction2(value))
+    @scala.inline
+    def setTransformResponse(value: AxiosTransformer | js.Array[AxiosTransformer]): Self = this.set("transformResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransformResponse: Self = this.set("transformResponse", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setValidateStatus(value: /* status */ Double => Boolean): Self = this.set("validateStatus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteValidateStatus: Self = this.set("validateStatus", js.undefined)
+    @scala.inline
+    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
+    @scala.inline
+    def setXsrfCookieName(value: String): Self = this.set("xsrfCookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsrfCookieName: Self = this.set("xsrfCookieName", js.undefined)
+    @scala.inline
+    def setXsrfHeaderName(value: String): Self = this.set("xsrfHeaderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsrfHeaderName: Self = this.set("xsrfHeaderName", js.undefined)
+  }
+  
 }
 

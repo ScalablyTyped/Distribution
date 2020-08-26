@@ -10,9 +10,9 @@ Awesome extensions to KnockoutJS
 | ------------------ | :-------------: |
 | Full name          | ko.plus |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 7508 |
+| # downloads        | 10084 |
 | # stars            | 0 |
 
 ## Links

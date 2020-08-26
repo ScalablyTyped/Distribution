@@ -65,32 +65,66 @@ trait SchemaMySqlReplicaConfiguration extends js.Object {
 
 object SchemaMySqlReplicaConfiguration {
   @scala.inline
-  def apply(
-    caCertificate: String = null,
-    clientCertificate: String = null,
-    clientKey: String = null,
-    connectRetryInterval: js.UndefOr[Double] = js.undefined,
-    dumpFilePath: String = null,
-    kind: String = null,
-    masterHeartbeatPeriod: String = null,
-    password: String = null,
-    sslCipher: String = null,
-    username: String = null,
-    verifyServerCertificate: js.UndefOr[Boolean] = js.undefined
-  ): SchemaMySqlReplicaConfiguration = {
+  def apply(): SchemaMySqlReplicaConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (caCertificate != null) __obj.updateDynamic("caCertificate")(caCertificate.asInstanceOf[js.Any])
-    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate.asInstanceOf[js.Any])
-    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(connectRetryInterval)) __obj.updateDynamic("connectRetryInterval")(connectRetryInterval.get.asInstanceOf[js.Any])
-    if (dumpFilePath != null) __obj.updateDynamic("dumpFilePath")(dumpFilePath.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (masterHeartbeatPeriod != null) __obj.updateDynamic("masterHeartbeatPeriod")(masterHeartbeatPeriod.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (sslCipher != null) __obj.updateDynamic("sslCipher")(sslCipher.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifyServerCertificate)) __obj.updateDynamic("verifyServerCertificate")(verifyServerCertificate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMySqlReplicaConfiguration]
   }
+  @scala.inline
+  implicit class SchemaMySqlReplicaConfigurationOps[Self <: SchemaMySqlReplicaConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaCertificate(value: String): Self = this.set("caCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaCertificate: Self = this.set("caCertificate", js.undefined)
+    @scala.inline
+    def setClientCertificate(value: String): Self = this.set("clientCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertificate: Self = this.set("clientCertificate", js.undefined)
+    @scala.inline
+    def setClientKey(value: String): Self = this.set("clientKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientKey: Self = this.set("clientKey", js.undefined)
+    @scala.inline
+    def setConnectRetryInterval(value: Double): Self = this.set("connectRetryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectRetryInterval: Self = this.set("connectRetryInterval", js.undefined)
+    @scala.inline
+    def setDumpFilePath(value: String): Self = this.set("dumpFilePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDumpFilePath: Self = this.set("dumpFilePath", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMasterHeartbeatPeriod(value: String): Self = this.set("masterHeartbeatPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterHeartbeatPeriod: Self = this.set("masterHeartbeatPeriod", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setSslCipher(value: String): Self = this.set("sslCipher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslCipher: Self = this.set("sslCipher", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+    @scala.inline
+    def setVerifyServerCertificate(value: Boolean): Self = this.set("verifyServerCertificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyServerCertificate: Self = this.set("verifyServerCertificate", js.undefined)
+  }
+  
 }
 

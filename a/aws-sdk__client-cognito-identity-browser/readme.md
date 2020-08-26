@@ -12,7 +12,7 @@ Browser SDK for Amazon Cognito Identity
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 1836 |
+| # downloads        | 2650 |
 | # stars            | 0 |
 
 ## Links

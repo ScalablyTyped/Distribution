@@ -11,6 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MilkCocoa extends js.Object {
   def addAccount(email: String, password: String): Unit = js.native
+  def addAccount(
+    email: String,
+    password: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ AddAccount, /* user */ User, Unit]
+  ): Unit = js.native
   def addAccount(email: String, password: String, options: js.Object): Unit = js.native
   def addAccount(
     email: String,

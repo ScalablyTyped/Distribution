@@ -26,5 +26,26 @@ object AdminDeleteUserAttributesRequest {
     val __obj = js.Dynamic.literal(UserAttributeNames = UserAttributeNames.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminDeleteUserAttributesRequest]
   }
+  @scala.inline
+  implicit class AdminDeleteUserAttributesRequestOps[Self <: AdminDeleteUserAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserAttributeNamesVarargs(value: AttributeNameType*): Self = this.set("UserAttributeNames", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributeNames(value: AttributeNameListType): Self = this.set("UserAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+  }
+  
 }
 

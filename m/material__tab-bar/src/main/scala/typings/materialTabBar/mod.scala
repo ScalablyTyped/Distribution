@@ -31,9 +31,9 @@ object mod extends js.Object {
   /* static members */
   @js.native
   object MDCTabBarFoundation extends js.Object {
-    val defaultAdapter: MDCTabBarAdapter = js.native
-    val numbers: ARROWLEFTKEYCODE = js.native
-    val strings: ARROWLEFTKEY = js.native
+    def defaultAdapter: MDCTabBarAdapter = js.native
+    def numbers: ARROWLEFTKEYCODE = js.native
+    def strings: ARROWLEFTKEY = js.native
   }
   
   @js.native

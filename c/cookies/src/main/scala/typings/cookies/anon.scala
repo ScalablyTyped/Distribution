@@ -16,7 +16,7 @@ object anon extends js.Object {
   trait Instantiable
     extends Instantiable1[/* name */ String, Cookie]
        with Instantiable2[/* name */ String, /* value */ String, Cookie]
-       with Instantiable3[/* name */ String, /* value */ String, /* attrs */ CookieAttr, Cookie]
+       with Instantiable3[/* name */ String, js.UndefOr[/* value */ String], /* attrs */ CookieAttr, Cookie]
   
 }
 

@@ -20,7 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined node.stream.Readable & { readonly fileType ? :file-type.file-type/core.FileTypeResult} */
+/* Inlined node.stream.Readable & { readonly fileType :file-type.file-type/core.FileTypeResult | undefined} */
 @js.native
 trait ReadableStreamWithFileType extends js.Object {
   var destroyed: Boolean = js.native
@@ -28,6 +28,7 @@ trait ReadableStreamWithFileType extends js.Object {
   var readable: Boolean = js.native
   val readableEncoding: BufferEncoding | Null = js.native
   val readableEnded: Boolean = js.native
+  val readableFlowing: Boolean | Null = js.native
   val readableHighWaterMark: Double = js.native
   val readableLength: Double = js.native
   val readableObjectMode: Boolean = js.native

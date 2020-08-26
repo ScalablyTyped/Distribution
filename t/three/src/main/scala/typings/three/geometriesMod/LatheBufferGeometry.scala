@@ -11,7 +11,26 @@ class LatheBufferGeometry protected ()
   extends typings.three.latheGeometryMod.LatheBufferGeometry {
   def this(points: js.Array[Vector2]) = this()
   def this(points: js.Array[Vector2], segments: Double) = this()
+  def this(points: js.Array[Vector2], segments: js.UndefOr[scala.Nothing], phiStart: Double) = this()
   def this(points: js.Array[Vector2], segments: Double, phiStart: Double) = this()
+  def this(
+    points: js.Array[Vector2],
+    segments: js.UndefOr[scala.Nothing],
+    phiStart: js.UndefOr[scala.Nothing],
+    phiLength: Double
+  ) = this()
+  def this(
+    points: js.Array[Vector2],
+    segments: js.UndefOr[scala.Nothing],
+    phiStart: Double,
+    phiLength: Double
+  ) = this()
+  def this(
+    points: js.Array[Vector2],
+    segments: Double,
+    phiStart: js.UndefOr[scala.Nothing],
+    phiLength: Double
+  ) = this()
   def this(points: js.Array[Vector2], segments: Double, phiStart: Double, phiLength: Double) = this()
 }
 

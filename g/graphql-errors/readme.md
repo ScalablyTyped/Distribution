@@ -10,9 +10,9 @@ Better error handling for GraphQL
 | ------------------ | :-------------: |
 | Full name          | graphql-errors |
 | Keywords           | graphql |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 177273 |
+| # downloads        | 177474 |
 | # stars            | 1 |
 
 ## Links

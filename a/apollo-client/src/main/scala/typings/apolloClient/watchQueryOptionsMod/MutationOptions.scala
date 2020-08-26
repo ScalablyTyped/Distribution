@@ -1,48 +1,45 @@
 package typings.apolloClient.watchQueryOptionsMod
 
-import typings.apolloCache.dataProxyMod.DataProxy
-import typings.apolloClient.typesMod.MutationQueryReducersMap
-import typings.apolloLink.typesMod.FetchResult
 import typings.graphql.astMod.DocumentNode
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MutationOptions[T, TVariables] extends MutationBaseOptions[T, TVariables] {
-  var context: js.UndefOr[js.Any] = js.undefined
-  var fetchPolicy: js.UndefOr[FetchPolicy] = js.undefined
-  var mutation: DocumentNode
+  var context: js.UndefOr[js.Any] = js.native
+  var fetchPolicy: js.UndefOr[FetchPolicy] = js.native
+  var mutation: DocumentNode = js.native
 }
 
 object MutationOptions {
   @scala.inline
-  def apply[T, TVariables](
-    mutation: DocumentNode,
-    awaitRefetchQueries: js.UndefOr[Boolean] = js.undefined,
-    context: js.Any = null,
-    errorPolicy: ErrorPolicy = null,
-    fetchPolicy: FetchPolicy = null,
-    optimisticResponse: T | (js.Function1[TVariables, T]) = null,
-    refetchQueries: (js.Function1[
-      /* result */ FetchResult[T, Record[String, _], Record[String, _]], 
-      RefetchQueryDescription
-    ]) | RefetchQueryDescription = null,
-    update: (/* proxy */ DataProxy, /* mutationResult */ FetchResult[T, Record[String, js.Any], Record[String, js.Any]]) => Unit = null,
-    updateQueries: MutationQueryReducersMap[T] = null,
-    variables: TVariables = null
-  ): MutationOptions[T, TVariables] = {
+  def apply[T, TVariables](mutation: DocumentNode): MutationOptions[T, TVariables] = {
     val __obj = js.Dynamic.literal(mutation = mutation.asInstanceOf[js.Any])
-    if (!js.isUndefined(awaitRefetchQueries)) __obj.updateDynamic("awaitRefetchQueries")(awaitRefetchQueries.get.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (errorPolicy != null) __obj.updateDynamic("errorPolicy")(errorPolicy.asInstanceOf[js.Any])
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse.asInstanceOf[js.Any])
-    if (refetchQueries != null) __obj.updateDynamic("refetchQueries")(refetchQueries.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
-    if (updateQueries != null) __obj.updateDynamic("updateQueries")(updateQueries.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationOptions[T, TVariables]]
   }
+  @scala.inline
+  implicit class MutationOptionsOps[Self <: MutationOptions[_, _], T, TVariables] (val x: Self with (MutationOptions[T, TVariables])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMutation(value: DocumentNode): Self = this.set("mutation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContext(value: js.Any): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setFetchPolicy(value: FetchPolicy): Self = this.set("fetchPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchPolicy: Self = this.set("fetchPolicy", js.undefined)
+  }
+  
 }
 

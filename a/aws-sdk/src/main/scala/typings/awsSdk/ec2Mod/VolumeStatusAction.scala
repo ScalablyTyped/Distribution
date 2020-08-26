@@ -26,13 +26,38 @@ trait VolumeStatusAction extends js.Object {
 
 object VolumeStatusAction {
   @scala.inline
-  def apply(Code: String = null, Description: String = null, EventId: String = null, EventType: String = null): VolumeStatusAction = {
+  def apply(): VolumeStatusAction = {
     val __obj = js.Dynamic.literal()
-    if (Code != null) __obj.updateDynamic("Code")(Code.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EventId != null) __obj.updateDynamic("EventId")(EventId.asInstanceOf[js.Any])
-    if (EventType != null) __obj.updateDynamic("EventType")(EventType.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeStatusAction]
   }
+  @scala.inline
+  implicit class VolumeStatusActionOps[Self <: VolumeStatusAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("Code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("Code", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEventId(value: String): Self = this.set("EventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventId: Self = this.set("EventId", js.undefined)
+    @scala.inline
+    def setEventType(value: String): Self = this.set("EventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("EventType", js.undefined)
+  }
+  
 }
 

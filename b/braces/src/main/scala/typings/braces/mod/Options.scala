@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
   /**
     * Generate an "expanded" brace pattern (alternatively you can use the `braces.expand()` method).
@@ -13,7 +14,7 @@ trait Options extends js.Object {
     * console.log(braces('a/{b,c}/d', { expand: true }));
     * //=> [ 'a/b/d', 'a/c/d' ]
     */
-  var expand: js.UndefOr[Boolean] = js.undefined
+  var expand: js.UndefOr[Boolean] = js.native
   /**
     * Limit the length of the input string. Useful when the input string is generated or your application allows
     * users to pass a string, et cetera.
@@ -23,13 +24,13 @@ trait Options extends js.Object {
     * console.log(braces('a/{b,c}/d', { maxLength: 3 }));
     * //=> throws an error
     */
-  var maxLength: js.UndefOr[Double] = js.undefined
+  var maxLength: js.UndefOr[Double] = js.native
   /**
     * Remove duplicates from the returned array.
     *
     * @default undefined
     */
-  var nodupes: js.UndefOr[Boolean] = js.undefined
+  var nodupes: js.UndefOr[Boolean] = js.native
   /**
     * In regular expressions, quanitifiers can be used to specify how many times a token can be repeated.
     * For example, `a{1,3}` will match the letter `a` one to three times.
@@ -49,7 +50,7 @@ trait Options extends js.Object {
     * console.log(braces('a/b{1,3}/{x,y,z}', {quantifiers: true, expand: true}));
     * //=> [ 'a/b{1,3}/x', 'a/b{1,3}/y', 'a/b{1,3}/z' ]
     */
-  var quantifiers: js.UndefOr[Boolean] = js.undefined
+  var quantifiers: js.UndefOr[Boolean] = js.native
   /**
     * To prevent malicious patterns from being passed by users, an error is thrown when `braces.expand()`
     * is used or `options.expand` is true and the generated range will exceed the `rangeLimit`.
@@ -66,7 +67,7 @@ trait Options extends js.Object {
     * console.log(braces.expand('{1..100}'));
     * //=> ['1', '2', '3', '4', '5', …, '100']
     */
-  var rangeLimit: js.UndefOr[Double] = js.undefined
+  var rangeLimit: js.UndefOr[Double] = js.native
   /**
     * Customize range expansion.
     *
@@ -79,35 +80,61 @@ trait Options extends js.Object {
     * console.log(range);
     * //=> [ 'xfooay', 'xfooby', 'xfoocy', 'xfoody', 'xfooey' ]
     */
-  var transform: js.UndefOr[Transform] = js.undefined
+  var transform: js.UndefOr[Transform] = js.native
   /**
     * Strip backslashes that were used for escaping from the result.
     *
     * @default undefined
     */
-  var unescape: js.UndefOr[Boolean] = js.undefined
+  var unescape: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    expand: js.UndefOr[Boolean] = js.undefined,
-    maxLength: js.UndefOr[Double] = js.undefined,
-    nodupes: js.UndefOr[Boolean] = js.undefined,
-    quantifiers: js.UndefOr[Boolean] = js.undefined,
-    rangeLimit: js.UndefOr[Double] = js.undefined,
-    transform: /* str */ String => String = null,
-    unescape: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(expand)) __obj.updateDynamic("expand")(expand.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodupes)) __obj.updateDynamic("nodupes")(nodupes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quantifiers)) __obj.updateDynamic("quantifiers")(quantifiers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rangeLimit)) __obj.updateDynamic("rangeLimit")(rangeLimit.get.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (!js.isUndefined(unescape)) __obj.updateDynamic("unescape")(unescape.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpand(value: Boolean): Self = this.set("expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpand: Self = this.set("expand", js.undefined)
+    @scala.inline
+    def setMaxLength(value: Double): Self = this.set("maxLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxLength: Self = this.set("maxLength", js.undefined)
+    @scala.inline
+    def setNodupes(value: Boolean): Self = this.set("nodupes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodupes: Self = this.set("nodupes", js.undefined)
+    @scala.inline
+    def setQuantifiers(value: Boolean): Self = this.set("quantifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantifiers: Self = this.set("quantifiers", js.undefined)
+    @scala.inline
+    def setRangeLimit(value: Double): Self = this.set("rangeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangeLimit: Self = this.set("rangeLimit", js.undefined)
+    @scala.inline
+    def setTransform(value: /* str */ String => String): Self = this.set("transform", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setUnescape(value: Boolean): Self = this.set("unescape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnescape: Self = this.set("unescape", js.undefined)
+  }
+  
 }
 

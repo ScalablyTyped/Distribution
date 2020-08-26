@@ -1,7 +1,5 @@
 package typings.protonNative.mod
 
-import typings.protonNative.anon.H
-import typings.protonNative.anon.X
 import typings.protonNative.protonNativeStrings.bevel
 import typings.protonNative.protonNativeStrings.flat
 import typings.protonNative.protonNativeStrings.miter
@@ -10,6 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AreaBaseProps
   extends GridChildrenProps
      with Label
@@ -17,74 +16,90 @@ trait AreaBaseProps
   /**
     * The fill color for the component.
     */
-  var fill: js.UndefOr[String] = js.undefined
+  var fill: js.UndefOr[String] = js.native
   /**
     * The opacity of the fill (between 0 and 1). Gets multiplied with the fill colors alpha value.
     */
-  var fillOpacity: js.UndefOr[Double] = js.undefined
+  var fillOpacity: js.UndefOr[Double] = js.native
   /**
     * The stroke (line) color for the component.
     */
-  var stroke: js.UndefOr[String] = js.undefined
-  var strokeLinecap: js.UndefOr[flat | round | bevel] = js.undefined
-  var strokeLinejoin: js.UndefOr[miter | round | bevel] = js.undefined
+  var stroke: js.UndefOr[String] = js.native
+  var strokeLinecap: js.UndefOr[flat | round | bevel] = js.native
+  var strokeLinejoin: js.UndefOr[miter | round | bevel] = js.native
   /**
     * How far to extend the stroke at a sharp corner when using `strokeLinejoin='miter'`
     * @see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-miterlimit
     * for a more detailed explanation.
     */
-  var strokeMiterlimit: js.UndefOr[Double] = js.undefined
+  var strokeMiterlimit: js.UndefOr[Double] = js.native
   /**
     * The opacity of the stroke (between 0 and 1). Gets multiplied with the stroke colors alpha value.
     */
-  var strokeOpacity: js.UndefOr[Double] = js.undefined
-  var strokeWidth: js.UndefOr[Double] = js.undefined
+  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.native
   /**
     * List of transformations to apply to the component (are quite similar to SVG transformations). Example for multiple transformations: `transform="translate(100, 100) rotate(90)"`.
     *
     * All x and y coordinates specified in a transformation are relative _to the component itself_, meaning that `translate(-50%, 0)` will translate the component by 50% of it's own width to left.
     */
-  var transform: js.UndefOr[String] = js.undefined
+  var transform: js.UndefOr[String] = js.native
 }
 
 object AreaBaseProps {
   @scala.inline
-  def apply(
-    align: H = null,
-    column: js.UndefOr[Double] = js.undefined,
-    expand: H = null,
-    fill: String = null,
-    fillOpacity: js.UndefOr[Double] = js.undefined,
-    label: String = null,
-    row: js.UndefOr[Double] = js.undefined,
-    span: X = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    stroke: String = null,
-    strokeLinecap: flat | round | bevel = null,
-    strokeLinejoin: miter | round | bevel = null,
-    strokeMiterlimit: js.UndefOr[Double] = js.undefined,
-    strokeOpacity: js.UndefOr[Double] = js.undefined,
-    strokeWidth: js.UndefOr[Double] = js.undefined,
-    transform: String = null
-  ): AreaBaseProps = {
+  def apply(): AreaBaseProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.get.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeMiterlimit)) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeOpacity)) __obj.updateDynamic("strokeOpacity")(strokeOpacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaBaseProps]
   }
+  @scala.inline
+  implicit class AreaBasePropsOps[Self <: AreaBaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill: Self = this.set("fill", js.undefined)
+    @scala.inline
+    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    @scala.inline
+    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStroke: Self = this.set("stroke", js.undefined)
+    @scala.inline
+    def setStrokeLinecap(value: flat | round | bevel): Self = this.set("strokeLinecap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeLinecap: Self = this.set("strokeLinecap", js.undefined)
+    @scala.inline
+    def setStrokeLinejoin(value: miter | round | bevel): Self = this.set("strokeLinejoin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeLinejoin: Self = this.set("strokeLinejoin", js.undefined)
+    @scala.inline
+    def setStrokeMiterlimit(value: Double): Self = this.set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeMiterlimit: Self = this.set("strokeMiterlimit", js.undefined)
+    @scala.inline
+    def setStrokeOpacity(value: Double): Self = this.set("strokeOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeOpacity: Self = this.set("strokeOpacity", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+    @scala.inline
+    def setTransform(value: String): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

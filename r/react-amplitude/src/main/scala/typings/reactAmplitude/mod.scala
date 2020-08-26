@@ -14,7 +14,16 @@ object mod extends js.Object {
     def getSessionId(): Unit = js.native
     def identify(idObj: js.Any, cb: js.Function0[Unit]): Unit = js.native
     def init(apiKey: String): Unit = js.native
+    def init(
+      apiKey: String,
+      userId: js.UndefOr[scala.Nothing],
+      config: js.UndefOr[scala.Nothing],
+      cb: js.Function0[Unit]
+    ): Unit = js.native
+    def init(apiKey: String, userId: js.UndefOr[scala.Nothing], config: js.Any): Unit = js.native
+    def init(apiKey: String, userId: js.UndefOr[scala.Nothing], config: js.Any, cb: js.Function0[Unit]): Unit = js.native
     def init(apiKey: String, userId: String): Unit = js.native
+    def init(apiKey: String, userId: String, config: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def init(apiKey: String, userId: String, config: js.Any): Unit = js.native
     def init(apiKey: String, userId: String, config: js.Any, cb: js.Function0[Unit]): Unit = js.native
     def isNewSession(): Unit = js.native

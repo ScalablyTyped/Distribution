@@ -6,78 +6,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrategyOption extends AuthenticateOptions {
-  var authorizationURL: js.UndefOr[String] = js.undefined
-  var callbackURL: String
-  var clientID: String
-  var clientSecret: String
-  var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
-  var scopeSeparator: js.UndefOr[String] = js.undefined
+  var authorizationURL: js.UndefOr[String] = js.native
+  var callbackURL: String = js.native
+  var clientID: String = js.native
+  var clientSecret: String = js.native
+  var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+  var scopeSeparator: js.UndefOr[String] = js.native
   @JSName("scope")
-  var scope_StrategyOption: js.UndefOr[js.Array[String]] = js.undefined
-  var tokenURL: js.UndefOr[String] = js.undefined
-  var userAgent: js.UndefOr[String] = js.undefined
-  var userEmailURL: js.UndefOr[String] = js.undefined
-  var userProfileURL: js.UndefOr[String] = js.undefined
+  var scope_StrategyOption: js.UndefOr[js.Array[String]] = js.native
+  var tokenURL: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.native
+  var userEmailURL: js.UndefOr[String] = js.native
+  var userProfileURL: js.UndefOr[String] = js.native
 }
 
 object StrategyOption {
   @scala.inline
-  def apply(
-    callbackURL: String,
-    clientID: String,
-    clientSecret: String,
-    assignProperty: String = null,
-    authInfo: js.UndefOr[Boolean] = js.undefined,
-    authorizationURL: String = null,
-    customHeaders: OutgoingHttpHeaders = null,
-    failWithError: js.UndefOr[Boolean] = js.undefined,
-    failureFlash: String | Boolean = null,
-    failureMessage: Boolean | String = null,
-    failureRedirect: String = null,
-    passReqToCallback: js.UndefOr[Boolean] = js.undefined,
-    pauseStream: js.UndefOr[Boolean] = js.undefined,
-    prompt: String = null,
-    scope: js.Array[String] = null,
-    scopeSeparator: String = null,
-    session: js.UndefOr[Boolean] = js.undefined,
-    state: String = null,
-    successFlash: String | Boolean = null,
-    successMessage: Boolean | String = null,
-    successRedirect: String = null,
-    successReturnToOrRedirect: String = null,
-    tokenURL: String = null,
-    userAgent: String = null,
-    userEmailURL: String = null,
-    userProfileURL: String = null,
-    userProperty: String = null
-  ): StrategyOption = {
+  def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOption = {
     val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
-    if (assignProperty != null) __obj.updateDynamic("assignProperty")(assignProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(authInfo)) __obj.updateDynamic("authInfo")(authInfo.get.asInstanceOf[js.Any])
-    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL.asInstanceOf[js.Any])
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(failWithError)) __obj.updateDynamic("failWithError")(failWithError.get.asInstanceOf[js.Any])
-    if (failureFlash != null) __obj.updateDynamic("failureFlash")(failureFlash.asInstanceOf[js.Any])
-    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
-    if (failureRedirect != null) __obj.updateDynamic("failureRedirect")(failureRedirect.asInstanceOf[js.Any])
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseStream)) __obj.updateDynamic("pauseStream")(pauseStream.get.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (scopeSeparator != null) __obj.updateDynamic("scopeSeparator")(scopeSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (successFlash != null) __obj.updateDynamic("successFlash")(successFlash.asInstanceOf[js.Any])
-    if (successMessage != null) __obj.updateDynamic("successMessage")(successMessage.asInstanceOf[js.Any])
-    if (successRedirect != null) __obj.updateDynamic("successRedirect")(successRedirect.asInstanceOf[js.Any])
-    if (successReturnToOrRedirect != null) __obj.updateDynamic("successReturnToOrRedirect")(successReturnToOrRedirect.asInstanceOf[js.Any])
-    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
-    if (userEmailURL != null) __obj.updateDynamic("userEmailURL")(userEmailURL.asInstanceOf[js.Any])
-    if (userProfileURL != null) __obj.updateDynamic("userProfileURL")(userProfileURL.asInstanceOf[js.Any])
-    if (userProperty != null) __obj.updateDynamic("userProperty")(userProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrategyOption]
   }
+  @scala.inline
+  implicit class StrategyOptionOps[Self <: StrategyOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbackURL(value: String): Self = this.set("callbackURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientID(value: String): Self = this.set("clientID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientSecret(value: String): Self = this.set("clientSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorizationURL(value: String): Self = this.set("authorizationURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationURL: Self = this.set("authorizationURL", js.undefined)
+    @scala.inline
+    def setCustomHeaders(value: OutgoingHttpHeaders): Self = this.set("customHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomHeaders: Self = this.set("customHeaders", js.undefined)
+    @scala.inline
+    def setScopeVarargs(value: String*): Self = this.set("scope", js.Array(value :_*))
+    @scala.inline
+    def setScope(value: js.Array[String]): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+    @scala.inline
+    def setScopeSeparator(value: String): Self = this.set("scopeSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopeSeparator: Self = this.set("scopeSeparator", js.undefined)
+    @scala.inline
+    def setTokenURL(value: String): Self = this.set("tokenURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenURL: Self = this.set("tokenURL", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    @scala.inline
+    def setUserEmailURL(value: String): Self = this.set("userEmailURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserEmailURL: Self = this.set("userEmailURL", js.undefined)
+    @scala.inline
+    def setUserProfileURL(value: String): Self = this.set("userProfileURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProfileURL: Self = this.set("userProfileURL", js.undefined)
+  }
+  
 }
 

@@ -10,33 +10,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TooltipOptions extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var delay: js.UndefOr[Double] = js.undefined
-  var hideOnClick: js.UndefOr[Boolean] = js.undefined
-  var passthrough: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[bottom | horizontal | left | right | top | vertical] = js.undefined
-  var showOnClick: js.UndefOr[Boolean] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var delay: js.UndefOr[Double] = js.native
+  var hideOnClick: js.UndefOr[Boolean] = js.native
+  var passthrough: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[bottom | horizontal | left | right | top | vertical] = js.native
+  var showOnClick: js.UndefOr[Boolean] = js.native
 }
 
 object TooltipOptions {
   @scala.inline
-  def apply(
-    className: String = null,
-    delay: js.UndefOr[Double] = js.undefined,
-    hideOnClick: js.UndefOr[Boolean] = js.undefined,
-    passthrough: js.UndefOr[Boolean] = js.undefined,
-    position: bottom | horizontal | left | right | top | vertical = null,
-    showOnClick: js.UndefOr[Boolean] = js.undefined
-  ): TooltipOptions = {
+  def apply(): TooltipOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(delay)) __obj.updateDynamic("delay")(delay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnClick)) __obj.updateDynamic("showOnClick")(showOnClick.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TooltipOptions]
   }
+  @scala.inline
+  implicit class TooltipOptionsOps[Self <: TooltipOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setDelay(value: Double): Self = this.set("delay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelay: Self = this.set("delay", js.undefined)
+    @scala.inline
+    def setHideOnClick(value: Boolean): Self = this.set("hideOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideOnClick: Self = this.set("hideOnClick", js.undefined)
+    @scala.inline
+    def setPassthrough(value: Boolean): Self = this.set("passthrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassthrough: Self = this.set("passthrough", js.undefined)
+    @scala.inline
+    def setPosition(value: bottom | horizontal | left | right | top | vertical): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setShowOnClick(value: Boolean): Self = this.set("showOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowOnClick: Self = this.set("showOnClick", js.undefined)
+  }
+  
 }
 

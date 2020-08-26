@@ -20,15 +20,5 @@ class ASPxClientPopupWindowCloseUpEventArgs protected ()
     window: typings.devexpressWeb.ASPxClientPopupWindow,
     closeReason: typings.devexpressWeb.ASPxClientPopupControlCloseReason
   ) = this()
-  /**
-    * Gets the value that identifies the reason the popup window closes.
-    */
-  /* CompleteClass */
-  override var closeReason: typings.devexpressWeb.ASPxClientPopupControlCloseReason = js.native
-  /**
-    * Gets the popup window object related to the event.
-    */
-  /* CompleteClass */
-  override var window: typings.devexpressWeb.ASPxClientPopupWindow = js.native
 }
 

@@ -38,23 +38,48 @@ trait GetDocumentationPartsRequest extends js.Object {
 
 object GetDocumentationPartsRequest {
   @scala.inline
-  def apply(
-    restApiId: String,
-    limit: js.UndefOr[NullableInteger] = js.undefined,
-    locationStatus: LocationStatusType = null,
-    nameQuery: String = null,
-    path: String = null,
-    position: String = null,
-    `type`: DocumentationPartType = null
-  ): GetDocumentationPartsRequest = {
+  def apply(restApiId: String): GetDocumentationPartsRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (locationStatus != null) __obj.updateDynamic("locationStatus")(locationStatus.asInstanceOf[js.Any])
-    if (nameQuery != null) __obj.updateDynamic("nameQuery")(nameQuery.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentationPartsRequest]
   }
+  @scala.inline
+  implicit class GetDocumentationPartsRequestOps[Self <: GetDocumentationPartsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRestApiId(value: String): Self = this.set("restApiId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLimit(value: NullableInteger): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setLocationStatus(value: LocationStatusType): Self = this.set("locationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationStatus: Self = this.set("locationStatus", js.undefined)
+    @scala.inline
+    def setNameQuery(value: String): Self = this.set("nameQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameQuery: Self = this.set("nameQuery", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setType(value: DocumentationPartType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

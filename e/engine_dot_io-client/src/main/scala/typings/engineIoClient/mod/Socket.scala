@@ -73,6 +73,7 @@ class Socket () extends js.Object {
     * Sends a message to the server
     */
   def send(message: Message): this.type = js.native
+  def send(message: Message, opts: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): this.type = js.native
   def send(message: Message, opts: MessageOptions): this.type = js.native
   def send(message: Message, opts: MessageOptions, cb: js.Function0[Unit]): this.type = js.native
 }

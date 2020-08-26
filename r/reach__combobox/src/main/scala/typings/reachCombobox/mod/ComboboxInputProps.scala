@@ -7,31 +7,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComboboxInputProps
   extends AllHTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement] {
-  var autocomplete: js.UndefOr[Boolean] = js.undefined
-  var selectOnClick: js.UndefOr[Boolean] = js.undefined
+  var autocomplete: js.UndefOr[Boolean] = js.native
+  var selectOnClick: js.UndefOr[Boolean] = js.native
   @JSName("value")
-  var value_ComboboxInputProps: js.UndefOr[String] = js.undefined
+  var value_ComboboxInputProps: js.UndefOr[String] = js.native
 }
 
 object ComboboxInputProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    autocomplete: js.UndefOr[Boolean] = js.undefined,
-    selectOnClick: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
-  ): ComboboxInputProps = {
+  def apply(): ComboboxInputProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(autocomplete)) __obj.updateDynamic("autocomplete")(autocomplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.get.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboboxInputProps]
   }
+  @scala.inline
+  implicit class ComboboxInputPropsOps[Self <: ComboboxInputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutocomplete(value: Boolean): Self = this.set("autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutocomplete: Self = this.set("autocomplete", js.undefined)
+    @scala.inline
+    def setSelectOnClick(value: Boolean): Self = this.set("selectOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOnClick: Self = this.set("selectOnClick", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object schemeMod extends js.Object {
   def getThemedContext(context: ICustomizerContext): ICustomizerContext = js.native
+  def getThemedContext(context: ICustomizerContext, scheme: js.UndefOr[scala.Nothing], theme: ITheme): ICustomizerContext = js.native
   def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames): ICustomizerContext = js.native
   def getThemedContext(context: ICustomizerContext, scheme: ISchemeNames, theme: ITheme): ICustomizerContext = js.native
 }

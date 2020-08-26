@@ -41,7 +41,7 @@ object loggingMod extends js.Object {
     @js.native
     object v2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Logging]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Logging]
             ]
     
     @js.native
@@ -49,7 +49,7 @@ object loggingMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.loggingV2beta1Mod.loggingV2beta1.Logging
               ]
             ]

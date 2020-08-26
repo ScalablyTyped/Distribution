@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-account
 
-Typings are for version 4.3.0
+Typings are for version 4.3.1
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 4.3.0
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-account |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 27 |
 | # dependents       | 1 |
-| # downloads        | 62574 |
+| # downloads        | 1728225 |
 | # stars            | 0 |
 
 ## Links

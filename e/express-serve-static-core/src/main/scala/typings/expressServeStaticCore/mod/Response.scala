@@ -4,6 +4,7 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import typings.std.Error
+import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -39,7 +40,7 @@ trait Response[ResBody]
     */
   @JSName("jsonp")
   var jsonp_Original: Send[ResBody, this.type] = js.native
-  var locals: js.Any = js.native
+  var locals: Record[String, _] = js.native
   /**
     * After middleware.init executed, Response will contain req property
     * See: express/lib/middleware/init.js
@@ -289,6 +290,11 @@ trait Response[ResBody]
     */
   def render(view: String): Unit = js.native
   def render(view: String, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
+  def render(
+    view: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* html */ String, Unit]
+  ): Unit = js.native
   def render(view: String, options: js.Object): Unit = js.native
   def render(view: String, options: js.Object, callback: js.Function2[/* err */ Error, /* html */ String, Unit]): Unit = js.native
   /**

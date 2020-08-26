@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents a collection of data pilot tables. */
+@js.native
 trait DataPilotTables
   extends XDataPilotTables
      with XEnumerationAccess

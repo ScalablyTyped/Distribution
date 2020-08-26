@@ -58,6 +58,7 @@ trait List[T] extends ListBaseWithMutators[T] {
     **/
   def sort(): Unit = js.native
   def sort(sortFunction: js.Function2[/* left */ T, /* right */ T, Double]): Unit = js.native
+  def splice(start: Double, howMany: js.UndefOr[scala.Nothing], item: T*): js.Array[T] = js.native
   /**
     * Removes elements from a list and, if necessary, inserts new elements in their place, returning the deleted elements.
     * @param start The zero-based location in the list from which to start removing elements.
@@ -65,7 +66,6 @@ trait List[T] extends ListBaseWithMutators[T] {
     * @param item The elements to insert into the list in place of the deleted elements.
     * @returns The deleted elements.
     **/
-  def splice(start: Double): js.Array[T] = js.native
   def splice(start: Double, howMany: Double, item: T*): js.Array[T] = js.native
 }
 

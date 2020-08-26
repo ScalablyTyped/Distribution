@@ -18,11 +18,30 @@ trait Block extends js.Object {
 
 object Block {
   @scala.inline
-  def apply(BlockIndex: js.UndefOr[BlockIndex] = js.undefined, BlockToken: BlockToken = null): Block = {
+  def apply(): Block = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BlockIndex)) __obj.updateDynamic("BlockIndex")(BlockIndex.get.asInstanceOf[js.Any])
-    if (BlockToken != null) __obj.updateDynamic("BlockToken")(BlockToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
+  @scala.inline
+  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockIndex(value: BlockIndex): Self = this.set("BlockIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockIndex: Self = this.set("BlockIndex", js.undefined)
+    @scala.inline
+    def setBlockToken(value: BlockToken): Self = this.set("BlockToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockToken: Self = this.set("BlockToken", js.undefined)
+  }
+  
 }
 

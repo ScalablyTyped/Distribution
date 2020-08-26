@@ -10,9 +10,9 @@ Making Password storage safer for all
 | ------------------ | :-------------: |
 | Full name          | secure-password |
 | Keywords           | password, secure, argon2, libsodium, sodium, credentials |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 39139 |
+| # downloads        | 44818 |
 | # stars            | 8 |
 
 ## Links

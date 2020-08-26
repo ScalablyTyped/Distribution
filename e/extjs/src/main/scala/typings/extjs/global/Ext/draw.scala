@@ -45,6 +45,7 @@ object draw extends js.Object {
       * @param origin String/Object The original method name
       */
     def createAlias(): Unit = js.native
+    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
     def createAlias(alias: js.Any): Unit = js.native
     def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
     /** [Method] Create a new color based on the specified HSL values
@@ -54,7 +55,11 @@ object draw extends js.Object {
       * @returns Object Ext.draw.Color
       */
     def fromHSL(): js.Any = js.native
+    def fromHSL(h: js.UndefOr[scala.Nothing], s: js.UndefOr[scala.Nothing], l: Double): js.Any = js.native
+    def fromHSL(h: js.UndefOr[scala.Nothing], s: Double): js.Any = js.native
+    def fromHSL(h: js.UndefOr[scala.Nothing], s: Double, l: Double): js.Any = js.native
     def fromHSL(h: Double): js.Any = js.native
+    def fromHSL(h: Double, s: js.UndefOr[scala.Nothing], l: Double): js.Any = js.native
     def fromHSL(h: Double, s: Double): js.Any = js.native
     def fromHSL(h: Double, s: Double, l: Double): js.Any = js.native
     /** [Method] Parse the string and create a new color
@@ -126,8 +131,39 @@ object draw extends js.Object {
       * @returns Object The calculated step and ends info; properties are: - from: The result start value, which may be lower than the original start value - to: The result end value, which may be higher than the original end value - step: The fixed value size of each step, or undefined if the steps are not fixed. - steps: The number of steps if the steps are fixed, or an array of step values. NOTE: Even when the steps have a fixed value, they may not divide the from/to range perfectly evenly; there may be a smaller distance between the last step and the end value than between prior steps, particularly when the endsLocked param is true. Therefore it is best to not use the steps result when finding the axis tick points, instead use the step, to, and from to find the correct point for each tick.
       */
     def snapEndsByDate(): js.Any = js.native
+    def snapEndsByDate(
+      from: js.UndefOr[scala.Nothing],
+      to: js.UndefOr[scala.Nothing],
+      stepsMax: js.UndefOr[scala.Nothing],
+      lockEnds: Boolean
+    ): js.Any = js.native
+    def snapEndsByDate(from: js.UndefOr[scala.Nothing], to: js.UndefOr[scala.Nothing], stepsMax: Double): js.Any = js.native
+    def snapEndsByDate(
+      from: js.UndefOr[scala.Nothing],
+      to: js.UndefOr[scala.Nothing],
+      stepsMax: Double,
+      lockEnds: Boolean
+    ): js.Any = js.native
+    def snapEndsByDate(from: js.UndefOr[scala.Nothing], to: js.Any): js.Any = js.native
+    def snapEndsByDate(
+      from: js.UndefOr[scala.Nothing],
+      to: js.Any,
+      stepsMax: js.UndefOr[scala.Nothing],
+      lockEnds: Boolean
+    ): js.Any = js.native
+    def snapEndsByDate(from: js.UndefOr[scala.Nothing], to: js.Any, stepsMax: Double): js.Any = js.native
+    def snapEndsByDate(from: js.UndefOr[scala.Nothing], to: js.Any, stepsMax: Double, lockEnds: Boolean): js.Any = js.native
     def snapEndsByDate(from: js.Any): js.Any = js.native
+    def snapEndsByDate(
+      from: js.Any,
+      to: js.UndefOr[scala.Nothing],
+      stepsMax: js.UndefOr[scala.Nothing],
+      lockEnds: Boolean
+    ): js.Any = js.native
+    def snapEndsByDate(from: js.Any, to: js.UndefOr[scala.Nothing], stepsMax: Double): js.Any = js.native
+    def snapEndsByDate(from: js.Any, to: js.UndefOr[scala.Nothing], stepsMax: Double, lockEnds: Boolean): js.Any = js.native
     def snapEndsByDate(from: js.Any, to: js.Any): js.Any = js.native
+    def snapEndsByDate(from: js.Any, to: js.Any, stepsMax: js.UndefOr[scala.Nothing], lockEnds: Boolean): js.Any = js.native
     def snapEndsByDate(from: js.Any, to: js.Any, stepsMax: Double): js.Any = js.native
     def snapEndsByDate(from: js.Any, to: js.Any, stepsMax: Double, lockEnds: Boolean): js.Any = js.native
     /** [Method] snapEndsByDateAndStep is a utility method to deduce an appropriate tick configuration for the data set of given featu
@@ -138,8 +174,29 @@ object draw extends js.Object {
       * @returns Object The calculated step and ends info; properties are: - from: The result start value, which may be lower than the original start value - to: The result end value, which may be higher than the original end value - step: The fixed value size of each step, or undefined if the steps are not fixed. - steps: The number of steps if the steps are fixed, or an array of step values. NOTE: Even when the steps have a fixed value, they may not divide the from/to range perfectly evenly; there may be a smaller distance between the last step and the end value than between prior steps, particularly when the endsLocked param is true. Therefore it is best to not use the steps result when finding the axis tick points, instead use the step, to, and from to find the correct point for each tick.
       */
     def snapEndsByDateAndStep(): js.Any = js.native
+    def snapEndsByDateAndStep(
+      from: js.UndefOr[scala.Nothing],
+      to: js.UndefOr[scala.Nothing],
+      step: js.UndefOr[scala.Nothing],
+      lockEnds: Boolean
+    ): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.UndefOr[scala.Nothing], to: js.UndefOr[scala.Nothing], step: typings.extjs.Ext.Array): js.Any = js.native
+    def snapEndsByDateAndStep(
+      from: js.UndefOr[scala.Nothing],
+      to: js.UndefOr[scala.Nothing],
+      step: typings.extjs.Ext.Array,
+      lockEnds: Boolean
+    ): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.UndefOr[scala.Nothing], to: js.Any): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.UndefOr[scala.Nothing], to: js.Any, step: js.UndefOr[scala.Nothing], lockEnds: Boolean): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.UndefOr[scala.Nothing], to: js.Any, step: typings.extjs.Ext.Array): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.UndefOr[scala.Nothing], to: js.Any, step: typings.extjs.Ext.Array, lockEnds: Boolean): js.Any = js.native
     def snapEndsByDateAndStep(from: js.Any): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.Any, to: js.UndefOr[scala.Nothing], step: js.UndefOr[scala.Nothing], lockEnds: Boolean): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.Any, to: js.UndefOr[scala.Nothing], step: typings.extjs.Ext.Array): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.Any, to: js.UndefOr[scala.Nothing], step: typings.extjs.Ext.Array, lockEnds: Boolean): js.Any = js.native
     def snapEndsByDateAndStep(from: js.Any, to: js.Any): js.Any = js.native
+    def snapEndsByDateAndStep(from: js.Any, to: js.Any, step: js.UndefOr[scala.Nothing], lockEnds: Boolean): js.Any = js.native
     def snapEndsByDateAndStep(from: js.Any, to: js.Any, step: typings.extjs.Ext.Array): js.Any = js.native
     def snapEndsByDateAndStep(from: js.Any, to: js.Any, step: typings.extjs.Ext.Array, lockEnds: Boolean): js.Any = js.native
     /** [Method] Get the reference to the class from which this object was instantiated
@@ -168,6 +225,7 @@ object draw extends js.Object {
       * @returns Object The created Surface or false.
       */
     def create(): js.Any = js.native
+    def create(config: js.UndefOr[scala.Nothing], enginePriority: typings.extjs.Ext.Array): js.Any = js.native
     def create(config: js.Any): js.Any = js.native
     def create(config: js.Any, enginePriority: typings.extjs.Ext.Array): js.Any = js.native
     /** [Method] Create aliases for existing prototype methods
@@ -175,6 +233,7 @@ object draw extends js.Object {
       * @param origin String/Object The original method name
       */
     def createAlias(): Unit = js.native
+    def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
     def createAlias(alias: js.Any): Unit = js.native
     def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
     /** [Method] Get the current class name in string format
@@ -195,6 +254,7 @@ object draw extends js.Object {
       * @returns Object See the return types for the appropriate exporter
       */
     def save(): js.Any = js.native
+    def save(surface: js.UndefOr[scala.Nothing], config: js.Any): js.Any = js.native
     def save(surface: ISurface): js.Any = js.native
     def save(surface: ISurface, config: js.Any): js.Any = js.native
   }
@@ -250,6 +310,7 @@ object draw extends js.Object {
         * @returns Boolean True if the surface was successfully sent to the server.
         */
       def generate(): Boolean = js.native
+      def generate(surface: js.UndefOr[scala.Nothing], config: js.Any): Boolean = js.native
       def generate(surface: ISurface): Boolean = js.native
       def generate(surface: ISurface, config: js.Any): Boolean = js.native
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -299,6 +360,7 @@ object draw extends js.Object {
         * @returns String The SVG as a string
         */
       def generate(): java.lang.String = js.native
+      def generate(surface: js.UndefOr[scala.Nothing], config: js.Any): java.lang.String = js.native
       def generate(surface: ISurface): java.lang.String = js.native
       def generate(surface: ISurface, config: js.Any): java.lang.String = js.native
       /** [Method] Returns the initial configuration passed to constructor when instantiating this class

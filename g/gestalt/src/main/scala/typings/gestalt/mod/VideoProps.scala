@@ -16,96 +16,164 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoProps extends js.Object {
-  var accessibilityMaximizeLabel: js.UndefOr[String] = js.undefined
-  var accessibilityMinimizeLabel: js.UndefOr[String] = js.undefined
-  var accessibilityMuteLabel: js.UndefOr[String] = js.undefined
-  var accessibilityPauseLabel: js.UndefOr[String] = js.undefined
-  var accessibilityPlayLabel: js.UndefOr[String] = js.undefined
-  var accessibilityUnmuteLabel: js.UndefOr[String] = js.undefined
-  var aspectRatio: Double
-  var captions: String
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var controls: js.UndefOr[Boolean] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var onDurationChange: js.UndefOr[js.Function1[/* args */ Duration, Unit]] = js.undefined
-  var onEnded: js.UndefOr[js.Function1[/* args */ `4`, Unit]] = js.undefined
-  var onFullscreenChange: js.UndefOr[js.Function1[/* args */ Fullscreen, Unit]] = js.undefined
-  var onLoadedChange: js.UndefOr[js.Function1[/* args */ Loaded, Unit]] = js.undefined
-  var onPause: js.UndefOr[js.Function1[/* args */ `5`, Unit]] = js.undefined
-  var onPlay: js.UndefOr[js.Function1[/* args */ `5`, Unit]] = js.undefined
-  var onReady: js.UndefOr[js.Function1[/* args */ `4`, Unit]] = js.undefined
-  var onSeek: js.UndefOr[js.Function1[/* args */ `4`, Unit]] = js.undefined
-  var onTimeChange: js.UndefOr[js.Function1[/* args */ Time, Unit]] = js.undefined
-  var onVolumeChange: js.UndefOr[js.Function1[/* args */ Volume, Unit]] = js.undefined
-  var playbackRate: js.UndefOr[Double] = js.undefined
-  var playing: js.UndefOr[Boolean] = js.undefined
-  var playsInline: js.UndefOr[Boolean] = js.undefined
-  var poster: js.UndefOr[String] = js.undefined
-  var preload: js.UndefOr[auto | metadata | none] = js.undefined
-  var src: String | js.Array[Src]
-  var volume: js.UndefOr[Double] = js.undefined
+  var accessibilityMaximizeLabel: js.UndefOr[String] = js.native
+  var accessibilityMinimizeLabel: js.UndefOr[String] = js.native
+  var accessibilityMuteLabel: js.UndefOr[String] = js.native
+  var accessibilityPauseLabel: js.UndefOr[String] = js.native
+  var accessibilityPlayLabel: js.UndefOr[String] = js.native
+  var accessibilityUnmuteLabel: js.UndefOr[String] = js.native
+  var aspectRatio: Double = js.native
+  var captions: String = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var controls: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var onDurationChange: js.UndefOr[js.Function1[/* args */ Duration, Unit]] = js.native
+  var onEnded: js.UndefOr[js.Function1[/* args */ `4`, Unit]] = js.native
+  var onFullscreenChange: js.UndefOr[js.Function1[/* args */ Fullscreen, Unit]] = js.native
+  var onLoadedChange: js.UndefOr[js.Function1[/* args */ Loaded, Unit]] = js.native
+  var onPause: js.UndefOr[js.Function1[/* args */ `5`, Unit]] = js.native
+  var onPlay: js.UndefOr[js.Function1[/* args */ `5`, Unit]] = js.native
+  var onReady: js.UndefOr[js.Function1[/* args */ `4`, Unit]] = js.native
+  var onSeek: js.UndefOr[js.Function1[/* args */ `4`, Unit]] = js.native
+  var onTimeChange: js.UndefOr[js.Function1[/* args */ Time, Unit]] = js.native
+  var onVolumeChange: js.UndefOr[js.Function1[/* args */ Volume, Unit]] = js.native
+  var playbackRate: js.UndefOr[Double] = js.native
+  var playing: js.UndefOr[Boolean] = js.native
+  var playsInline: js.UndefOr[Boolean] = js.native
+  var poster: js.UndefOr[String] = js.native
+  var preload: js.UndefOr[auto | metadata | none] = js.native
+  var src: String | js.Array[Src] = js.native
+  var volume: js.UndefOr[Double] = js.native
 }
 
 object VideoProps {
   @scala.inline
-  def apply(
-    aspectRatio: Double,
-    captions: String,
-    src: String | js.Array[Src],
-    accessibilityMaximizeLabel: String = null,
-    accessibilityMinimizeLabel: String = null,
-    accessibilityMuteLabel: String = null,
-    accessibilityPauseLabel: String = null,
-    accessibilityPlayLabel: String = null,
-    accessibilityUnmuteLabel: String = null,
-    children: ReactNode = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    onDurationChange: /* args */ Duration => Unit = null,
-    onEnded: /* args */ `4` => Unit = null,
-    onFullscreenChange: /* args */ Fullscreen => Unit = null,
-    onLoadedChange: /* args */ Loaded => Unit = null,
-    onPause: /* args */ `5` => Unit = null,
-    onPlay: /* args */ `5` => Unit = null,
-    onReady: /* args */ `4` => Unit = null,
-    onSeek: /* args */ `4` => Unit = null,
-    onTimeChange: /* args */ Time => Unit = null,
-    onVolumeChange: /* args */ Volume => Unit = null,
-    playbackRate: js.UndefOr[Double] = js.undefined,
-    playing: js.UndefOr[Boolean] = js.undefined,
-    playsInline: js.UndefOr[Boolean] = js.undefined,
-    poster: String = null,
-    preload: auto | metadata | none = null,
-    volume: js.UndefOr[Double] = js.undefined
-  ): VideoProps = {
+  def apply(aspectRatio: Double, captions: String, src: String | js.Array[Src]): VideoProps = {
     val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], captions = captions.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
-    if (accessibilityMaximizeLabel != null) __obj.updateDynamic("accessibilityMaximizeLabel")(accessibilityMaximizeLabel.asInstanceOf[js.Any])
-    if (accessibilityMinimizeLabel != null) __obj.updateDynamic("accessibilityMinimizeLabel")(accessibilityMinimizeLabel.asInstanceOf[js.Any])
-    if (accessibilityMuteLabel != null) __obj.updateDynamic("accessibilityMuteLabel")(accessibilityMuteLabel.asInstanceOf[js.Any])
-    if (accessibilityPauseLabel != null) __obj.updateDynamic("accessibilityPauseLabel")(accessibilityPauseLabel.asInstanceOf[js.Any])
-    if (accessibilityPlayLabel != null) __obj.updateDynamic("accessibilityPlayLabel")(accessibilityPlayLabel.asInstanceOf[js.Any])
-    if (accessibilityUnmuteLabel != null) __obj.updateDynamic("accessibilityUnmuteLabel")(accessibilityUnmuteLabel.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onFullscreenChange != null) __obj.updateDynamic("onFullscreenChange")(js.Any.fromFunction1(onFullscreenChange))
-    if (onLoadedChange != null) __obj.updateDynamic("onLoadedChange")(js.Any.fromFunction1(onLoadedChange))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1(onReady))
-    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
-    if (onTimeChange != null) __obj.updateDynamic("onTimeChange")(js.Any.fromFunction1(onTimeChange))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (!js.isUndefined(playbackRate)) __obj.updateDynamic("playbackRate")(playbackRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playing)) __obj.updateDynamic("playing")(playing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsInline)) __obj.updateDynamic("playsInline")(playsInline.get.asInstanceOf[js.Any])
-    if (poster != null) __obj.updateDynamic("poster")(poster.asInstanceOf[js.Any])
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(volume)) __obj.updateDynamic("volume")(volume.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProps]
   }
+  @scala.inline
+  implicit class VideoPropsOps[Self <: VideoProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatio(value: Double): Self = this.set("aspectRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaptions(value: String): Self = this.set("captions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSrcVarargs(value: Src*): Self = this.set("src", js.Array(value :_*))
+    @scala.inline
+    def setSrc(value: String | js.Array[Src]): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessibilityMaximizeLabel(value: String): Self = this.set("accessibilityMaximizeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityMaximizeLabel: Self = this.set("accessibilityMaximizeLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityMinimizeLabel(value: String): Self = this.set("accessibilityMinimizeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityMinimizeLabel: Self = this.set("accessibilityMinimizeLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityMuteLabel(value: String): Self = this.set("accessibilityMuteLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityMuteLabel: Self = this.set("accessibilityMuteLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityPauseLabel(value: String): Self = this.set("accessibilityPauseLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityPauseLabel: Self = this.set("accessibilityPauseLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityPlayLabel(value: String): Self = this.set("accessibilityPlayLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityPlayLabel: Self = this.set("accessibilityPlayLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityUnmuteLabel(value: String): Self = this.set("accessibilityUnmuteLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityUnmuteLabel: Self = this.set("accessibilityUnmuteLabel", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: /* args */ Duration => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnEnded(value: /* args */ `4` => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnFullscreenChange(value: /* args */ Fullscreen => Unit): Self = this.set("onFullscreenChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFullscreenChange: Self = this.set("onFullscreenChange", js.undefined)
+    @scala.inline
+    def setOnLoadedChange(value: /* args */ Loaded => Unit): Self = this.set("onLoadedChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedChange: Self = this.set("onLoadedChange", js.undefined)
+    @scala.inline
+    def setOnPause(value: /* args */ `5` => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: /* args */ `5` => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnReady(value: /* args */ `4` => Unit): Self = this.set("onReady", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReady: Self = this.set("onReady", js.undefined)
+    @scala.inline
+    def setOnSeek(value: /* args */ `4` => Unit): Self = this.set("onSeek", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeek: Self = this.set("onSeek", js.undefined)
+    @scala.inline
+    def setOnTimeChange(value: /* args */ Time => Unit): Self = this.set("onTimeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTimeChange: Self = this.set("onTimeChange", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: /* args */ Volume => Unit): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setPlaybackRate(value: Double): Self = this.set("playbackRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackRate: Self = this.set("playbackRate", js.undefined)
+    @scala.inline
+    def setPlaying(value: Boolean): Self = this.set("playing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaying: Self = this.set("playing", js.undefined)
+    @scala.inline
+    def setPlaysInline(value: Boolean): Self = this.set("playsInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaysInline: Self = this.set("playsInline", js.undefined)
+    @scala.inline
+    def setPoster(value: String): Self = this.set("poster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoster: Self = this.set("poster", js.undefined)
+    @scala.inline
+    def setPreload(value: auto | metadata | none): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setVolume(value: Double): Self = this.set("volume", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolume: Self = this.set("volume", js.undefined)
+  }
+  
 }
 

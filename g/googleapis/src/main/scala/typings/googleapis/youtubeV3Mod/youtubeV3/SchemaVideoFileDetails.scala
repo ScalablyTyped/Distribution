@@ -62,28 +62,62 @@ trait SchemaVideoFileDetails extends js.Object {
 
 object SchemaVideoFileDetails {
   @scala.inline
-  def apply(
-    audioStreams: js.Array[SchemaVideoFileDetailsAudioStream] = null,
-    bitrateBps: String = null,
-    container: String = null,
-    creationTime: String = null,
-    durationMs: String = null,
-    fileName: String = null,
-    fileSize: String = null,
-    fileType: String = null,
-    videoStreams: js.Array[SchemaVideoFileDetailsVideoStream] = null
-  ): SchemaVideoFileDetails = {
+  def apply(): SchemaVideoFileDetails = {
     val __obj = js.Dynamic.literal()
-    if (audioStreams != null) __obj.updateDynamic("audioStreams")(audioStreams.asInstanceOf[js.Any])
-    if (bitrateBps != null) __obj.updateDynamic("bitrateBps")(bitrateBps.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (durationMs != null) __obj.updateDynamic("durationMs")(durationMs.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize.asInstanceOf[js.Any])
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (videoStreams != null) __obj.updateDynamic("videoStreams")(videoStreams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoFileDetails]
   }
+  @scala.inline
+  implicit class SchemaVideoFileDetailsOps[Self <: SchemaVideoFileDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioStreamsVarargs(value: SchemaVideoFileDetailsAudioStream*): Self = this.set("audioStreams", js.Array(value :_*))
+    @scala.inline
+    def setAudioStreams(value: js.Array[SchemaVideoFileDetailsAudioStream]): Self = this.set("audioStreams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioStreams: Self = this.set("audioStreams", js.undefined)
+    @scala.inline
+    def setBitrateBps(value: String): Self = this.set("bitrateBps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBitrateBps: Self = this.set("bitrateBps", js.undefined)
+    @scala.inline
+    def setContainer(value: String): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCreationTime(value: String): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setDurationMs(value: String): Self = this.set("durationMs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationMs: Self = this.set("durationMs", js.undefined)
+    @scala.inline
+    def setFileName(value: String): Self = this.set("fileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileName: Self = this.set("fileName", js.undefined)
+    @scala.inline
+    def setFileSize(value: String): Self = this.set("fileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSize: Self = this.set("fileSize", js.undefined)
+    @scala.inline
+    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileType: Self = this.set("fileType", js.undefined)
+    @scala.inline
+    def setVideoStreamsVarargs(value: SchemaVideoFileDetailsVideoStream*): Self = this.set("videoStreams", js.Array(value :_*))
+    @scala.inline
+    def setVideoStreams(value: js.Array[SchemaVideoFileDetailsVideoStream]): Self = this.set("videoStreams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoStreams: Self = this.set("videoStreams", js.undefined)
+  }
+  
 }
 

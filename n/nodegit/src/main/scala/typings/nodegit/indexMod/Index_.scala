@@ -14,13 +14,19 @@ import scala.scalajs.js.annotation._
 class Index_ () extends js.Object {
   def add(sourceEntry: IndexEntry): Double = js.native
   def addAll(): js.Promise[Double] = js.native
+  def addAll(pathspec: js.UndefOr[scala.Nothing], flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
+  def addAll(pathspec: js.UndefOr[scala.Nothing], flags: Double): js.Promise[Double] = js.native
+  def addAll(pathspec: js.UndefOr[scala.Nothing], flags: Double, callback: js.Function): js.Promise[Double] = js.native
   def addAll(pathspec: String): js.Promise[Double] = js.native
+  def addAll(pathspec: String, flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
   def addAll(pathspec: String, flags: Double): js.Promise[Double] = js.native
   def addAll(pathspec: String, flags: Double, callback: js.Function): js.Promise[Double] = js.native
   def addAll(pathspec: js.Array[String]): js.Promise[Double] = js.native
+  def addAll(pathspec: js.Array[String], flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
   def addAll(pathspec: js.Array[String], flags: Double): js.Promise[Double] = js.native
   def addAll(pathspec: js.Array[String], flags: Double, callback: js.Function): js.Promise[Double] = js.native
   def addAll(pathspec: Strarray): js.Promise[Double] = js.native
+  def addAll(pathspec: Strarray, flags: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
   def addAll(pathspec: Strarray, flags: Double): js.Promise[Double] = js.native
   def addAll(pathspec: Strarray, flags: Double, callback: js.Function): js.Promise[Double] = js.native
   def addByPath(path: String): js.Promise[Double] = js.native

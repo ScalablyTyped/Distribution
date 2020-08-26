@@ -36,6 +36,7 @@ object typesetterMod extends js.Object {
       * Delegates to `Writer.write` using the internal `ITypesetterContext`.
       */
     def write(text: String, width: Double, height: Double): Unit = js.native
+    def write(text: String, width: Double, height: Double, options: js.UndefOr[scala.Nothing], into: js.Any): Unit = js.native
     def write(text: String, width: Double, height: Double, options: IWriteOptions): Unit = js.native
     def write(text: String, width: Double, height: Double, options: IWriteOptions, into: js.Any): Unit = js.native
   }
@@ -44,12 +45,15 @@ object typesetterMod extends js.Object {
   @js.native
   object Typesetter extends js.Object {
     def canvas(ctx: CanvasRenderingContext2D): Typesetter = js.native
+    def canvas(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle): Typesetter = js.native
     def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double): Typesetter = js.native
     def canvas(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle): Typesetter = js.native
     def html(element: HTMLElement): Typesetter = js.native
+    def html(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean): Typesetter = js.native
     def html(element: HTMLElement, className: String): Typesetter = js.native
     def html(element: HTMLElement, className: String, addTitle: Boolean): Typesetter = js.native
     def svg(element: SVGElement): Typesetter = js.native
+    def svg(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean): Typesetter = js.native
     def svg(element: SVGElement, className: String): Typesetter = js.native
     def svg(element: SVGElement, className: String, addTitleElement: Boolean): Typesetter = js.native
   }

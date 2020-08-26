@@ -26,18 +26,38 @@ trait TextTranslationJobFilter extends js.Object {
 
 object TextTranslationJobFilter {
   @scala.inline
-  def apply(
-    JobName: JobName = null,
-    JobStatus: JobStatus = null,
-    SubmittedAfterTime: Timestamp = null,
-    SubmittedBeforeTime: Timestamp = null
-  ): TextTranslationJobFilter = {
+  def apply(): TextTranslationJobFilter = {
     val __obj = js.Dynamic.literal()
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (JobStatus != null) __obj.updateDynamic("JobStatus")(JobStatus.asInstanceOf[js.Any])
-    if (SubmittedAfterTime != null) __obj.updateDynamic("SubmittedAfterTime")(SubmittedAfterTime.asInstanceOf[js.Any])
-    if (SubmittedBeforeTime != null) __obj.updateDynamic("SubmittedBeforeTime")(SubmittedBeforeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTranslationJobFilter]
   }
+  @scala.inline
+  implicit class TextTranslationJobFilterOps[Self <: TextTranslationJobFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setJobStatus(value: JobStatus): Self = this.set("JobStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobStatus: Self = this.set("JobStatus", js.undefined)
+    @scala.inline
+    def setSubmittedAfterTime(value: Timestamp): Self = this.set("SubmittedAfterTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedAfterTime: Self = this.set("SubmittedAfterTime", js.undefined)
+    @scala.inline
+    def setSubmittedBeforeTime(value: Timestamp): Self = this.set("SubmittedBeforeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmittedBeforeTime: Self = this.set("SubmittedBeforeTime", js.undefined)
+  }
+  
 }
 

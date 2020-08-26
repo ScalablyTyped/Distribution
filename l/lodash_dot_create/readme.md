@@ -12,7 +12,7 @@ The lodash method `_.create` exported as a module.
 | Keywords           | lodash-modularized, create |
 | # releases         | 0 |
 | # dependents       | 23 |
-| # downloads        | 25268413 |
+| # downloads        | 24915731 |
 | # stars            | 0 |
 
 ## Links

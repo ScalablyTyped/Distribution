@@ -18,22 +18,46 @@ trait PartialStyleRulesCardHead extends js.Object {
 
 object PartialStyleRulesCardHead {
   @scala.inline
-  def apply(
-    action: CSSProperties = null,
-    avatar: CSSProperties = null,
-    content: CSSProperties = null,
-    root: CSSProperties = null,
-    subheader: CSSProperties = null,
-    title: CSSProperties = null
-  ): PartialStyleRulesCardHead = {
+  def apply(): PartialStyleRulesCardHead = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (subheader != null) __obj.updateDynamic("subheader")(subheader.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesCardHead]
   }
+  @scala.inline
+  implicit class PartialStyleRulesCardHeadOps[Self <: PartialStyleRulesCardHead] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: CSSProperties): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAvatar(value: CSSProperties): Self = this.set("avatar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvatar: Self = this.set("avatar", js.undefined)
+    @scala.inline
+    def setContent(value: CSSProperties): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSubheader(value: CSSProperties): Self = this.set("subheader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubheader: Self = this.set("subheader", js.undefined)
+    @scala.inline
+    def setTitle(value: CSSProperties): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

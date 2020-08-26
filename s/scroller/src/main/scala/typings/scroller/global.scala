@@ -12,12 +12,6 @@ object global extends js.Object {
   class EasyScroller protected ()
     extends typings.scroller.EasyScroller {
     def this(content: js.Any, options: Options) = this()
-    /* CompleteClass */
-    override def bindEvents(): Unit = js.native
-    /* CompleteClass */
-    override def reflow(): Unit = js.native
-    /* CompleteClass */
-    override def render(): Unit = js.native
   }
   
   @js.native

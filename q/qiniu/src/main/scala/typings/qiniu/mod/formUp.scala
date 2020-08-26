@@ -80,9 +80,250 @@ object formUp extends js.Object {
     */
   class PutExtra () extends js.Object {
     def this(fname: String) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.Any) = this()
     def this(fname: String, params: js.Any) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], mimeType: String) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String) = this()
+    def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String) = this()
     def this(fname: String, params: js.Any, mimeType: String) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: String
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String
+    ) = this()
+    def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String, crc32: String) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String
+    ) = this()
+    def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String, crc32: String) = this()
+    def this(fname: String, params: js.Any, mimeType: js.UndefOr[scala.Nothing], crc32: String) = this()
     def this(fname: String, params: js.Any, mimeType: String, crc32: String) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: String,
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: js.UndefOr[scala.Nothing],
+      params: js.Any,
+      mimeType: String,
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.UndefOr[scala.Nothing],
+      mimeType: String,
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: js.UndefOr[scala.Nothing],
+      crc32: String,
+      checkCrc: Double
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Boolean
+    ) = this()
+    def this(
+      fname: String,
+      params: js.Any,
+      mimeType: String,
+      crc32: js.UndefOr[scala.Nothing],
+      checkCrc: Double
+    ) = this()
     def this(fname: String, params: js.Any, mimeType: String, crc32: String, checkCrc: Boolean) = this()
     def this(fname: String, params: js.Any, mimeType: String, crc32: String, checkCrc: Double) = this()
     /**

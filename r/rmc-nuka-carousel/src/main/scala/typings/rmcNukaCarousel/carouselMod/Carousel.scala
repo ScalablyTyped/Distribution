@@ -33,8 +33,39 @@ trait Carousel
   var touchObject: js.Any = js.native
   def _rafCb(): Unit = js.native
   def animateSlide(): Unit = js.native
+  def animateSlide(
+    easing: js.UndefOr[scala.Nothing],
+    duration: js.UndefOr[scala.Nothing],
+    endValue: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Unit = js.native
+  def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], endValue: js.Any): Unit = js.native
+  def animateSlide(
+    easing: js.UndefOr[scala.Nothing],
+    duration: js.UndefOr[scala.Nothing],
+    endValue: js.Any,
+    callback: js.Function
+  ): Unit = js.native
+  def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.Any): Unit = js.native
+  def animateSlide(
+    easing: js.UndefOr[scala.Nothing],
+    duration: js.Any,
+    endValue: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Unit = js.native
+  def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.Any, endValue: js.Any): Unit = js.native
+  def animateSlide(easing: js.UndefOr[scala.Nothing], duration: js.Any, endValue: js.Any, callback: js.Function): Unit = js.native
   def animateSlide(easing: js.Any): Unit = js.native
+  def animateSlide(
+    easing: js.Any,
+    duration: js.UndefOr[scala.Nothing],
+    endValue: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Unit = js.native
+  def animateSlide(easing: js.Any, duration: js.UndefOr[scala.Nothing], endValue: js.Any): Unit = js.native
+  def animateSlide(easing: js.Any, duration: js.UndefOr[scala.Nothing], endValue: js.Any, callback: js.Function): Unit = js.native
   def animateSlide(easing: js.Any, duration: js.Any): Unit = js.native
+  def animateSlide(easing: js.Any, duration: js.Any, endValue: js.UndefOr[scala.Nothing], callback: js.Function): Unit = js.native
   def animateSlide(easing: js.Any, duration: js.Any, endValue: js.Any): Unit = js.native
   def animateSlide(easing: js.Any, duration: js.Any, endValue: js.Any, callback: js.Function): Unit = js.native
   def autoplayIterator(): Unit = js.native
@@ -57,6 +88,7 @@ trait Carousel
   def getSliderStyles(): BoxSizing = js.native
   def getStyleTagStyles(): String = js.native
   def getTargetLeft(): Double = js.native
+  def getTargetLeft(touchOffset: js.UndefOr[scala.Nothing], slide: js.Any): Double = js.native
   def getTargetLeft(touchOffset: js.Any): Double = js.native
   def getTargetLeft(touchOffset: js.Any, slide: js.Any): Double = js.native
   def getTouchEvents(): OnTouchCancel | Null = js.native

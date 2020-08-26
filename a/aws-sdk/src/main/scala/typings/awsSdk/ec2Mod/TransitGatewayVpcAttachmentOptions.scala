@@ -18,11 +18,30 @@ trait TransitGatewayVpcAttachmentOptions extends js.Object {
 
 object TransitGatewayVpcAttachmentOptions {
   @scala.inline
-  def apply(DnsSupport: DnsSupportValue = null, Ipv6Support: Ipv6SupportValue = null): TransitGatewayVpcAttachmentOptions = {
+  def apply(): TransitGatewayVpcAttachmentOptions = {
     val __obj = js.Dynamic.literal()
-    if (DnsSupport != null) __obj.updateDynamic("DnsSupport")(DnsSupport.asInstanceOf[js.Any])
-    if (Ipv6Support != null) __obj.updateDynamic("Ipv6Support")(Ipv6Support.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitGatewayVpcAttachmentOptions]
   }
+  @scala.inline
+  implicit class TransitGatewayVpcAttachmentOptionsOps[Self <: TransitGatewayVpcAttachmentOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDnsSupport(value: DnsSupportValue): Self = this.set("DnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsSupport: Self = this.set("DnsSupport", js.undefined)
+    @scala.inline
+    def setIpv6Support(value: Ipv6SupportValue): Self = this.set("Ipv6Support", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6Support: Self = this.set("Ipv6Support", js.undefined)
+  }
+  
 }
 

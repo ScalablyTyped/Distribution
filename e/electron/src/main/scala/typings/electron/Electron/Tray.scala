@@ -9,13 +9,15 @@ import typings.electron.electronStrings.`drag-enter`
 import typings.electron.electronStrings.`drag-leave`
 import typings.electron.electronStrings.`drop-files`
 import typings.electron.electronStrings.`drop-text`
+import typings.electron.electronStrings.`mouse-down`
 import typings.electron.electronStrings.`mouse-enter`
 import typings.electron.electronStrings.`mouse-leave`
 import typings.electron.electronStrings.`mouse-move`
+import typings.electron.electronStrings.`mouse-up`
 import typings.electron.electronStrings.`right-click`
 import typings.electron.electronStrings.click
 import typings.electron.electronStrings.drop
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -51,6 +53,8 @@ trait Tray extends EventEmitter {
   @JSName("addListener")
   def addListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   @JSName("addListener")
+  def addListener_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("addListener")
   def addListener_mouseenter(
     event: `mouse-enter`,
     listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
@@ -63,10 +67,18 @@ trait Tray extends EventEmitter {
   @JSName("addListener")
   def addListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("addListener")
+  def addListener_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("addListener")
   def addListener_rightclick(
     event: `right-click`,
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
+  /**
+    * Closes an open context menu, as set by `tray.setContextMenu()`.
+    *
+    * @platform darwin,win32
+    */
+  def closeContextMenu(): Unit = js.native
   /**
     * Destroys the tray icon immediately.
     */
@@ -192,6 +204,13 @@ trait Tray extends EventEmitter {
   @JSName("on")
   def on_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   /**
+    * Emitted when the mouse clicks the tray icon.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  def on_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  /**
     * Emitted when the mouse enters the tray icon.
     *
     * @platform darwin
@@ -218,6 +237,16 @@ trait Tray extends EventEmitter {
     */
   @JSName("on")
   def on_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  /**
+    * Emitted when the mouse is released from clicking the tray icon.
+    *
+    * Note: This will not be emitted if you have set a context menu for your Tray
+    * using `tray.setContextMenu`, as a result of macOS-level constraints.
+    *
+    * @platform darwin
+    */
+  @JSName("on")
+  def on_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   /**
     * Emitted when the tray icon is right clicked.
     *
@@ -257,6 +286,8 @@ trait Tray extends EventEmitter {
   @JSName("once")
   def once_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   @JSName("once")
+  def once_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("once")
   def once_mouseenter(
     event: `mouse-enter`,
     listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
@@ -268,6 +299,8 @@ trait Tray extends EventEmitter {
   ): this.type = js.native
   @JSName("once")
   def once_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("once")
+  def once_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("once")
   def once_rightclick(
     event: `right-click`,
@@ -282,6 +315,7 @@ trait Tray extends EventEmitter {
     * @platform darwin,win32
     */
   def popUpContextMenu(): Unit = js.native
+  def popUpContextMenu(menu: js.UndefOr[scala.Nothing], position: Point): Unit = js.native
   def popUpContextMenu(menu: Menu): Unit = js.native
   def popUpContextMenu(menu: Menu, position: Point): Unit = js.native
   /**
@@ -319,6 +353,8 @@ trait Tray extends EventEmitter {
   @JSName("removeListener")
   def removeListener_droptext(event: `drop-text`, listener: js.Function2[/* event */ Event, /* text */ String, Unit]): this.type = js.native
   @JSName("removeListener")
+  def removeListener_mousedown(event: `mouse-down`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("removeListener")
   def removeListener_mouseenter(
     event: `mouse-enter`,
     listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]
@@ -331,14 +367,16 @@ trait Tray extends EventEmitter {
   @JSName("removeListener")
   def removeListener_mousemove(event: `mouse-move`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
   @JSName("removeListener")
+  def removeListener_mouseup(event: `mouse-up`, listener: js.Function2[/* event */ KeyboardEvent, /* position */ Point, Unit]): this.type = js.native
+  @JSName("removeListener")
   def removeListener_rightclick(
     event: `right-click`,
     listener: js.Function2[/* event */ KeyboardEvent, /* bounds */ Rectangle, Unit]
   ): this.type = js.native
-  def setContextMenu(): Unit = js.native
   /**
     * Sets the context menu for this icon.
     */
+  def setContextMenu(): Unit = js.native
   def setContextMenu(menu: Menu): Unit = js.native
   /**
     * Sets the option to ignore double click events. Ignoring these events allows you

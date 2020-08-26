@@ -14,10 +14,8 @@ trait Change[T] extends js.Object
 
 object Change {
   @scala.inline
-  def ModificationChange[T](ccid: String, id: String, o: M, v: JSONDiff[T], d: T = null, sv: js.UndefOr[Double] = js.undefined): Change[T] = {
+  def ModificationChange[T](ccid: String, id: String, o: M, v: JSONDiff[T]): Change[T] = {
     val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (!js.isUndefined(sv)) __obj.updateDynamic("sv")(sv.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change[T]]
   }
   @scala.inline

@@ -36,8 +36,6 @@ abstract class Node protected ()
     * Render index (document order index) of the last render call.
     */
   var index: Double = js.native
-  /* CompleteClass */
-  override var options: INodeOptions = js.native
   /**
     * Parent node.
     */
@@ -56,17 +54,15 @@ abstract class Node protected ()
   def append(node: Node): Unit = js.native
   def collectAncestors(s: js.Any): Unit = js.native
   def collectDescendants(s: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
   /**
     * Remove node from its parent.
     */
   def detach(): Unit = js.native
   def emitAncestors(): Unit = js.native
+  def emitDescendants(`type`: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
   /**
     * Emit event for element, and recursively emit same event for all descendants.
     */
-  def emitDescendants(): Unit = js.native
   def emitDescendants(`type`: String, args: js.Any*): Unit = js.native
   def forAncestors(iter: js.Function1[/* node */ this.type, Unit], s: js.Any): Unit = js.native
   def forDescendants(iter: js.Function1[/* node */ this.type, Unit], s: js.Any): Unit = js.native

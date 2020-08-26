@@ -79,6 +79,7 @@ object reflectionsMod extends js.Object {
     /* 1 */ val Private: typings.typedoc.abstractMod.ReflectionFlag.Private with Double = js.native
     /* 2 */ val Protected: typings.typedoc.abstractMod.ReflectionFlag.Protected with Double = js.native
     /* 4 */ val Public: typings.typedoc.abstractMod.ReflectionFlag.Public with Double = js.native
+    /* 16384 */ val Readonly: typings.typedoc.abstractMod.ReflectionFlag.Readonly with Double = js.native
     /* 512 */ val Rest: typings.typedoc.abstractMod.ReflectionFlag.Rest with Double = js.native
     /* 8 */ val Static: typings.typedoc.abstractMod.ReflectionFlag.Static with Double = js.native
     @JSBracketAccess
@@ -97,7 +98,6 @@ object reflectionsMod extends js.Object {
     /* 4 */ val Enum: typings.typedoc.abstractMod.ReflectionKind.Enum with Double = js.native
     /* 16 */ val EnumMember: typings.typedoc.abstractMod.ReflectionKind.EnumMember with Double = js.native
     /* 8388608 */ val Event: typings.typedoc.abstractMod.ReflectionKind.Event with Double = js.native
-    /* 1 */ val ExternalModule: typings.typedoc.abstractMod.ReflectionKind.ExternalModule with Double = js.native
     /* 64 */ val Function: typings.typedoc.abstractMod.ReflectionKind.Function with Double = js.native
     /* 2112 */ val FunctionOrMethod: typings.typedoc.abstractMod.ReflectionKind.FunctionOrMethod with Double = js.native
     /* 524288 */ val GetSignature: typings.typedoc.abstractMod.ReflectionKind.GetSignature with Double = js.native
@@ -105,7 +105,8 @@ object reflectionsMod extends js.Object {
     /* 8192 */ val IndexSignature: typings.typedoc.abstractMod.ReflectionKind.IndexSignature with Double = js.native
     /* 256 */ val Interface: typings.typedoc.abstractMod.ReflectionKind.Interface with Double = js.native
     /* 2048 */ val Method: typings.typedoc.abstractMod.ReflectionKind.Method with Double = js.native
-    /* 2 */ val Module: typings.typedoc.abstractMod.ReflectionKind.Module with Double = js.native
+    /* 1 */ val Module: typings.typedoc.abstractMod.ReflectionKind.Module with Double = js.native
+    /* 2 */ val Namespace: typings.typedoc.abstractMod.ReflectionKind.Namespace with Double = js.native
     /* 2097152 */ val ObjectLiteral: typings.typedoc.abstractMod.ReflectionKind.ObjectLiteral with Double = js.native
     /* 32768 */ val Parameter: typings.typedoc.abstractMod.ReflectionKind.Parameter with Double = js.native
     /* 1024 */ val Property: typings.typedoc.abstractMod.ReflectionKind.Property with Double = js.native

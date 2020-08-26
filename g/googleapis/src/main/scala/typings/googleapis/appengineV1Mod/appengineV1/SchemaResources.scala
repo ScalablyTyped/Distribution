@@ -29,18 +29,40 @@ trait SchemaResources extends js.Object {
 
 object SchemaResources {
   @scala.inline
-  def apply(
-    cpu: js.UndefOr[Double] = js.undefined,
-    diskGb: js.UndefOr[Double] = js.undefined,
-    memoryGb: js.UndefOr[Double] = js.undefined,
-    volumes: js.Array[SchemaVolume] = null
-  ): SchemaResources = {
+  def apply(): SchemaResources = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cpu)) __obj.updateDynamic("cpu")(cpu.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(diskGb)) __obj.updateDynamic("diskGb")(diskGb.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(memoryGb)) __obj.updateDynamic("memoryGb")(memoryGb.get.asInstanceOf[js.Any])
-    if (volumes != null) __obj.updateDynamic("volumes")(volumes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResources]
   }
+  @scala.inline
+  implicit class SchemaResourcesOps[Self <: SchemaResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCpu(value: Double): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpu: Self = this.set("cpu", js.undefined)
+    @scala.inline
+    def setDiskGb(value: Double): Self = this.set("diskGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskGb: Self = this.set("diskGb", js.undefined)
+    @scala.inline
+    def setMemoryGb(value: Double): Self = this.set("memoryGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemoryGb: Self = this.set("memoryGb", js.undefined)
+    @scala.inline
+    def setVolumesVarargs(value: SchemaVolume*): Self = this.set("volumes", js.Array(value :_*))
+    @scala.inline
+    def setVolumes(value: js.Array[SchemaVolume]): Self = this.set("volumes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumes: Self = this.set("volumes", js.undefined)
+  }
+  
 }
 

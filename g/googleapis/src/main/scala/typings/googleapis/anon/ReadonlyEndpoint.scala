@@ -33,5 +33,30 @@ object ReadonlyEndpoint {
     val __obj = js.Dynamic.literal(_options = _options.asInstanceOf[js.Any], applyMethodsFromSchema = applyMethodsFromSchema.asInstanceOf[js.Any], applySchema = js.Any.fromFunction4(applySchema), getPathParams = getPathParams.asInstanceOf[js.Any], google = google.asInstanceOf[js.Any], makeMethod = makeMethod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyEndpoint]
   }
+  @scala.inline
+  implicit class ReadonlyEndpointOps[Self <: ReadonlyEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_options(value: GlobalOptions): Self = this.set("_options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyMethodsFromSchema(value: js.Any): Self = this.set("applyMethodsFromSchema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplySchema(value: (Target, Schema, SchemaResource, APIRequestContext) => scala.Unit): Self = this.set("applySchema", js.Any.fromFunction4(value))
+    @scala.inline
+    def setGetPathParams(value: js.Any): Self = this.set("getPathParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGoogle(value: js.Any): Self = this.set("google", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMakeMethod(value: js.Any): Self = this.set("makeMethod", value.asInstanceOf[js.Any])
+  }
+  
 }
 

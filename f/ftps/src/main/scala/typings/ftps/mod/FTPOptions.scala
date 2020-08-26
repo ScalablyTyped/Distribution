@@ -4,62 +4,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FTPOptions extends js.Object {
-  var additionalLftpCommands: js.UndefOr[String] = js.undefined
-  var autoConfirm: js.UndefOr[Boolean] = js.undefined
-  var cwd: js.UndefOr[String] = js.undefined
-  var escape: js.UndefOr[Boolean] = js.undefined
-  var host: String
-  var password: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var protocol: js.UndefOr[String] = js.undefined
-  var requireSSHKey: js.UndefOr[Boolean] = js.undefined
-  var requiresPassword: js.UndefOr[Boolean] = js.undefined
-  var retries: js.UndefOr[Double] = js.undefined
-  var retryInterval: js.UndefOr[Double] = js.undefined
-  var retryIntervalMultiplier: js.UndefOr[Double] = js.undefined
-  var sshKeyPath: js.UndefOr[Boolean] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var additionalLftpCommands: js.UndefOr[String] = js.native
+  var autoConfirm: js.UndefOr[Boolean] = js.native
+  var cwd: js.UndefOr[String] = js.native
+  var escape: js.UndefOr[Boolean] = js.native
+  var host: String = js.native
+  var password: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var protocol: js.UndefOr[String] = js.native
+  var requireSSHKey: js.UndefOr[Boolean] = js.native
+  var requiresPassword: js.UndefOr[Boolean] = js.native
+  var retries: js.UndefOr[Double] = js.native
+  var retryInterval: js.UndefOr[Double] = js.native
+  var retryIntervalMultiplier: js.UndefOr[Double] = js.native
+  var sshKeyPath: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Double] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object FTPOptions {
   @scala.inline
-  def apply(
-    host: String,
-    additionalLftpCommands: String = null,
-    autoConfirm: js.UndefOr[Boolean] = js.undefined,
-    cwd: String = null,
-    escape: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    protocol: String = null,
-    requireSSHKey: js.UndefOr[Boolean] = js.undefined,
-    requiresPassword: js.UndefOr[Boolean] = js.undefined,
-    retries: js.UndefOr[Double] = js.undefined,
-    retryInterval: js.UndefOr[Double] = js.undefined,
-    retryIntervalMultiplier: js.UndefOr[Double] = js.undefined,
-    sshKeyPath: js.UndefOr[Boolean] = js.undefined,
-    timeout: js.UndefOr[Double] = js.undefined,
-    username: String = null
-  ): FTPOptions = {
+  def apply(host: String): FTPOptions = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
-    if (additionalLftpCommands != null) __obj.updateDynamic("additionalLftpCommands")(additionalLftpCommands.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConfirm)) __obj.updateDynamic("autoConfirm")(autoConfirm.get.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (!js.isUndefined(escape)) __obj.updateDynamic("escape")(escape.get.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSSHKey)) __obj.updateDynamic("requireSSHKey")(requireSSHKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requiresPassword)) __obj.updateDynamic("requiresPassword")(requiresPassword.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryInterval)) __obj.updateDynamic("retryInterval")(retryInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryIntervalMultiplier)) __obj.updateDynamic("retryIntervalMultiplier")(retryIntervalMultiplier.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sshKeyPath)) __obj.updateDynamic("sshKeyPath")(sshKeyPath.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[FTPOptions]
   }
+  @scala.inline
+  implicit class FTPOptionsOps[Self <: FTPOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdditionalLftpCommands(value: String): Self = this.set("additionalLftpCommands", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalLftpCommands: Self = this.set("additionalLftpCommands", js.undefined)
+    @scala.inline
+    def setAutoConfirm(value: Boolean): Self = this.set("autoConfirm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoConfirm: Self = this.set("autoConfirm", js.undefined)
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setEscape(value: Boolean): Self = this.set("escape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEscape: Self = this.set("escape", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRequireSSHKey(value: Boolean): Self = this.set("requireSSHKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequireSSHKey: Self = this.set("requireSSHKey", js.undefined)
+    @scala.inline
+    def setRequiresPassword(value: Boolean): Self = this.set("requiresPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresPassword: Self = this.set("requiresPassword", js.undefined)
+    @scala.inline
+    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetries: Self = this.set("retries", js.undefined)
+    @scala.inline
+    def setRetryInterval(value: Double): Self = this.set("retryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryInterval: Self = this.set("retryInterval", js.undefined)
+    @scala.inline
+    def setRetryIntervalMultiplier(value: Double): Self = this.set("retryIntervalMultiplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryIntervalMultiplier: Self = this.set("retryIntervalMultiplier", js.undefined)
+    @scala.inline
+    def setSshKeyPath(value: Boolean): Self = this.set("sshKeyPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshKeyPath: Self = this.set("sshKeyPath", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

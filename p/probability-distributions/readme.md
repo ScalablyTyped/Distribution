@@ -12,7 +12,7 @@ Generate random variables from a variety of probability distributions. Includes 
 | Keywords           | statistical distributions, normal distribution, gamma distribution, beta distribution, Laplace distribution, Poisson distribution, Chi-squared distribution, probability, probability distributions, random, random numbers, random variates, random variables, Random words, random number generator, Rstats, Rlang, R-stats, prng, Uniform distribution, Sampling |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 17509 |
+| # downloads        | 17510 |
 | # stars            | 3 |
 
 ## Links

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 // Use trick with prototype to allow abstract classes.
 // More info: https://stackoverflow.com/a/38642922/2009373
-/* Inlined std.Function & {  prototype  :any} */
+/* Inlined std.Function & {  prototype :any} */
 @js.native
 trait Constructor extends js.Object {
   // Non-standard extensions

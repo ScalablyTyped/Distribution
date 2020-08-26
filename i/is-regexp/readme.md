@@ -12,7 +12,7 @@ Check if a value is a regular expression
 | Keywords           | regex, regexp, regular, expression, regular expression, re, check, type, is |
 | # releases         | 3 |
 | # dependents       | 35 |
-| # downloads        | 142364903 |
+| # downloads        | 148759973 |
 | # stars            | 1 |
 
 ## Links

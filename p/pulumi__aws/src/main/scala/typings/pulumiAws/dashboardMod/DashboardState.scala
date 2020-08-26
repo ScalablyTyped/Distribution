@@ -23,16 +23,34 @@ trait DashboardState extends js.Object {
 
 object DashboardState {
   @scala.inline
-  def apply(
-    dashboardArn: Input[String] = null,
-    dashboardBody: Input[String] = null,
-    dashboardName: Input[String] = null
-  ): DashboardState = {
+  def apply(): DashboardState = {
     val __obj = js.Dynamic.literal()
-    if (dashboardArn != null) __obj.updateDynamic("dashboardArn")(dashboardArn.asInstanceOf[js.Any])
-    if (dashboardBody != null) __obj.updateDynamic("dashboardBody")(dashboardBody.asInstanceOf[js.Any])
-    if (dashboardName != null) __obj.updateDynamic("dashboardName")(dashboardName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardState]
   }
+  @scala.inline
+  implicit class DashboardStateOps[Self <: DashboardState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDashboardArn(value: Input[String]): Self = this.set("dashboardArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardArn: Self = this.set("dashboardArn", js.undefined)
+    @scala.inline
+    def setDashboardBody(value: Input[String]): Self = this.set("dashboardBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardBody: Self = this.set("dashboardBody", js.undefined)
+    @scala.inline
+    def setDashboardName(value: Input[String]): Self = this.set("dashboardName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardName: Self = this.set("dashboardName", js.undefined)
+  }
+  
 }
 

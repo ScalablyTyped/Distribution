@@ -42,26 +42,54 @@ trait FleetSummary extends js.Object {
 
 object FleetSummary {
   @scala.inline
-  def apply(
-    CompanyCode: CompanyCode = null,
-    CreatedTime: DateTime = null,
-    DisplayName: DisplayName = null,
-    FleetArn: FleetArn = null,
-    FleetName: FleetName = null,
-    FleetStatus: FleetStatus = null,
-    LastUpdatedTime: DateTime = null,
-    Tags: TagMap = null
-  ): FleetSummary = {
+  def apply(): FleetSummary = {
     val __obj = js.Dynamic.literal()
-    if (CompanyCode != null) __obj.updateDynamic("CompanyCode")(CompanyCode.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
-    if (FleetName != null) __obj.updateDynamic("FleetName")(FleetName.asInstanceOf[js.Any])
-    if (FleetStatus != null) __obj.updateDynamic("FleetStatus")(FleetStatus.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetSummary]
   }
+  @scala.inline
+  implicit class FleetSummaryOps[Self <: FleetSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompanyCode(value: CompanyCode): Self = this.set("CompanyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyCode: Self = this.set("CompanyCode", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: DateTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDisplayName(value: DisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    @scala.inline
+    def setFleetName(value: FleetName): Self = this.set("FleetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetName: Self = this.set("FleetName", js.undefined)
+    @scala.inline
+    def setFleetStatus(value: FleetStatus): Self = this.set("FleetStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetStatus: Self = this.set("FleetStatus", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: DateTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

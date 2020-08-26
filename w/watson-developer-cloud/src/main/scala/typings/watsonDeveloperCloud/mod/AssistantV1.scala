@@ -254,6 +254,7 @@ trait AssistantV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def createWorkspace(): js.Promise[_] | Unit = js.native
+  def createWorkspace(params: js.UndefOr[scala.Nothing], callback: Callback[Workspace]): js.Promise[_] | Unit = js.native
   def createWorkspace(params: CreateWorkspaceParams): js.Promise[_] | Unit = js.native
   def createWorkspace(params: CreateWorkspaceParams, callback: Callback[Workspace]): js.Promise[_] | Unit = js.native
   /**
@@ -836,6 +837,7 @@ trait AssistantV1 extends BaseService {
     * @returns {Promise<any>|void}
     */
   def listWorkspaces(): js.Promise[_] | Unit = js.native
+  def listWorkspaces(params: js.UndefOr[scala.Nothing], callback: Callback[WorkspaceCollection]): js.Promise[_] | Unit = js.native
   def listWorkspaces(params: ListWorkspacesParams): js.Promise[_] | Unit = js.native
   def listWorkspaces(params: ListWorkspacesParams, callback: Callback[WorkspaceCollection]): js.Promise[_] | Unit = js.native
   /*************************

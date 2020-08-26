@@ -4,84 +4,143 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JQueryMaskedInputOptions extends js.Object {
-  var alias: js.UndefOr[String] = js.undefined
-  var autoUnmask: js.UndefOr[Boolean] = js.undefined
-  var clearIncomplete: js.UndefOr[Boolean] = js.undefined
-  var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined
-  var greedy: js.UndefOr[Boolean] = js.undefined
-  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Any, /* options */ js.Any, js.Object]] = js.undefined
-  var mask: js.UndefOr[String] = js.undefined
-  var numeric: js.UndefOr[Boolean] = js.undefined
-  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ js.Any, Unit]] = js.undefined
-  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ js.Any, Unit]] = js.undefined
-  var onKeyValidation: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
-  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ js.Any, /* unmaskedValue */ js.Any, Unit]] = js.undefined
-  var oncleared: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var onincomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var radixPoint: js.UndefOr[String] = js.undefined
-  var repeat: js.UndefOr[Double] = js.undefined
-  var rightAlignNumerics: js.UndefOr[Boolean] = js.undefined
-  var showMaskOnFocus: js.UndefOr[Boolean] = js.undefined
-  var showMaskOnHover: js.UndefOr[Boolean] = js.undefined
-  var showToolTip: js.UndefOr[Boolean] = js.undefined
-  var skipOptionalPartCharacter: js.UndefOr[String] = js.undefined
+  var alias: js.UndefOr[String] = js.native
+  var autoUnmask: js.UndefOr[Boolean] = js.native
+  var clearIncomplete: js.UndefOr[Boolean] = js.native
+  var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.native
+  var greedy: js.UndefOr[Boolean] = js.native
+  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Any, /* options */ js.Any, js.Object]] = js.native
+  var mask: js.UndefOr[String] = js.native
+  var numeric: js.UndefOr[Boolean] = js.native
+  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ js.Any, Unit]] = js.native
+  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ js.Any, Unit]] = js.native
+  var onKeyValidation: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ js.Any, /* unmaskedValue */ js.Any, Unit]] = js.native
+  var oncleared: js.UndefOr[js.Function0[Unit]] = js.native
+  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var onincomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var radixPoint: js.UndefOr[String] = js.native
+  var repeat: js.UndefOr[Double] = js.native
+  var rightAlignNumerics: js.UndefOr[Boolean] = js.native
+  var showMaskOnFocus: js.UndefOr[Boolean] = js.native
+  var showMaskOnHover: js.UndefOr[Boolean] = js.native
+  var showToolTip: js.UndefOr[Boolean] = js.native
+  var skipOptionalPartCharacter: js.UndefOr[String] = js.native
 }
 
 object JQueryMaskedInputOptions {
   @scala.inline
-  def apply(
-    alias: String = null,
-    autoUnmask: js.UndefOr[Boolean] = js.undefined,
-    clearIncomplete: js.UndefOr[Boolean] = js.undefined,
-    clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined,
-    greedy: js.UndefOr[Boolean] = js.undefined,
-    isComplete: (/* buffer */ js.Any, /* options */ js.Any) => js.Object = null,
-    mask: String = null,
-    numeric: js.UndefOr[Boolean] = js.undefined,
-    onBeforeMask: /* initialValue */ js.Any => Unit = null,
-    onBeforePaste: /* pastedValue */ js.Any => Unit = null,
-    onKeyValidation: /* result */ js.Any => Unit = null,
-    onUnMask: (/* maskedValue */ js.Any, /* unmaskedValue */ js.Any) => Unit = null,
-    oncleared: () => Unit = null,
-    oncomplete: /* value */ js.UndefOr[js.Any] => Unit = null,
-    onincomplete: () => Unit = null,
-    placeholder: String = null,
-    radixPoint: String = null,
-    repeat: js.UndefOr[Double] = js.undefined,
-    rightAlignNumerics: js.UndefOr[Boolean] = js.undefined,
-    showMaskOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showMaskOnHover: js.UndefOr[Boolean] = js.undefined,
-    showToolTip: js.UndefOr[Boolean] = js.undefined,
-    skipOptionalPartCharacter: String = null
-  ): JQueryMaskedInputOptions = {
+  def apply(): JQueryMaskedInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.get.asInstanceOf[js.Any])
-    if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction2(isComplete))
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.get.asInstanceOf[js.Any])
-    if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(js.Any.fromFunction1(onBeforeMask))
-    if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(js.Any.fromFunction1(onBeforePaste))
-    if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(js.Any.fromFunction1(onKeyValidation))
-    if (onUnMask != null) __obj.updateDynamic("onUnMask")(js.Any.fromFunction2(onUnMask))
-    if (oncleared != null) __obj.updateDynamic("oncleared")(js.Any.fromFunction0(oncleared))
-    if (oncomplete != null) __obj.updateDynamic("oncomplete")(js.Any.fromFunction1(oncomplete))
-    if (onincomplete != null) __obj.updateDynamic("onincomplete")(js.Any.fromFunction0(onincomplete))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightAlignNumerics)) __obj.updateDynamic("rightAlignNumerics")(rightAlignNumerics.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip.get.asInstanceOf[js.Any])
-    if (skipOptionalPartCharacter != null) __obj.updateDynamic("skipOptionalPartCharacter")(skipOptionalPartCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryMaskedInputOptions]
   }
+  @scala.inline
+  implicit class JQueryMaskedInputOptionsOps[Self <: JQueryMaskedInputOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: String): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setAutoUnmask(value: Boolean): Self = this.set("autoUnmask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoUnmask: Self = this.set("autoUnmask", js.undefined)
+    @scala.inline
+    def setClearIncomplete(value: Boolean): Self = this.set("clearIncomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearIncomplete: Self = this.set("clearIncomplete", js.undefined)
+    @scala.inline
+    def setClearMaskOnLostFocus(value: Boolean): Self = this.set("clearMaskOnLostFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearMaskOnLostFocus: Self = this.set("clearMaskOnLostFocus", js.undefined)
+    @scala.inline
+    def setGreedy(value: Boolean): Self = this.set("greedy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreedy: Self = this.set("greedy", js.undefined)
+    @scala.inline
+    def setIsComplete(value: (/* buffer */ js.Any, /* options */ js.Any) => js.Object): Self = this.set("isComplete", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteIsComplete: Self = this.set("isComplete", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setNumeric(value: Boolean): Self = this.set("numeric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumeric: Self = this.set("numeric", js.undefined)
+    @scala.inline
+    def setOnBeforeMask(value: /* initialValue */ js.Any => Unit): Self = this.set("onBeforeMask", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBeforeMask: Self = this.set("onBeforeMask", js.undefined)
+    @scala.inline
+    def setOnBeforePaste(value: /* pastedValue */ js.Any => Unit): Self = this.set("onBeforePaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBeforePaste: Self = this.set("onBeforePaste", js.undefined)
+    @scala.inline
+    def setOnKeyValidation(value: /* result */ js.Any => Unit): Self = this.set("onKeyValidation", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyValidation: Self = this.set("onKeyValidation", js.undefined)
+    @scala.inline
+    def setOnUnMask(value: (/* maskedValue */ js.Any, /* unmaskedValue */ js.Any) => Unit): Self = this.set("onUnMask", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnUnMask: Self = this.set("onUnMask", js.undefined)
+    @scala.inline
+    def setOncleared(value: () => Unit): Self = this.set("oncleared", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOncleared: Self = this.set("oncleared", js.undefined)
+    @scala.inline
+    def setOncomplete(value: /* value */ js.UndefOr[js.Any] => Unit): Self = this.set("oncomplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOncomplete: Self = this.set("oncomplete", js.undefined)
+    @scala.inline
+    def setOnincomplete(value: () => Unit): Self = this.set("onincomplete", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnincomplete: Self = this.set("onincomplete", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setRadixPoint(value: String): Self = this.set("radixPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadixPoint: Self = this.set("radixPoint", js.undefined)
+    @scala.inline
+    def setRepeat(value: Double): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    @scala.inline
+    def setRightAlignNumerics(value: Boolean): Self = this.set("rightAlignNumerics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightAlignNumerics: Self = this.set("rightAlignNumerics", js.undefined)
+    @scala.inline
+    def setShowMaskOnFocus(value: Boolean): Self = this.set("showMaskOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMaskOnFocus: Self = this.set("showMaskOnFocus", js.undefined)
+    @scala.inline
+    def setShowMaskOnHover(value: Boolean): Self = this.set("showMaskOnHover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMaskOnHover: Self = this.set("showMaskOnHover", js.undefined)
+    @scala.inline
+    def setShowToolTip(value: Boolean): Self = this.set("showToolTip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowToolTip: Self = this.set("showToolTip", js.undefined)
+    @scala.inline
+    def setSkipOptionalPartCharacter(value: String): Self = this.set("skipOptionalPartCharacter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipOptionalPartCharacter: Self = this.set("skipOptionalPartCharacter", js.undefined)
+  }
+  
 }
 

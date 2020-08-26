@@ -12,7 +12,7 @@ The lodash method `_.rest` exported as a module.
 | Keywords           | lodash-modularized, rest |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 8032495 |
+| # downloads        | 7882712 |
 | # stars            | 0 |
 
 ## Links

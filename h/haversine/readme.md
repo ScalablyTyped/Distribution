@@ -12,7 +12,7 @@ A simple haversine module
 | Keywords           | haversine, distance, coordinates, geolocation |
 | # releases         | 2 |
 | # dependents       | 28 |
-| # downloads        | 680236 |
+| # downloads        | 682474 |
 | # stars            | 3 |
 
 ## Links

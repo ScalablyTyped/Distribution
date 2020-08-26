@@ -37,6 +37,11 @@ Instantiable0[Signal[T]] {
     *        Listeners with same priority level will be executed at the same order as they were added. (default = 0)
     */
   def add(listener: js.Function1[/* repeated */ T, Unit]): SignalBinding[T] = js.native
+  def add(
+    listener: js.Function1[/* repeated */ T, Unit],
+    listenerContext: js.UndefOr[scala.Nothing],
+    priority: Number
+  ): SignalBinding[T] = js.native
   def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any): SignalBinding[T] = js.native
   def add(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any, priority: Number): SignalBinding[T] = js.native
   /**
@@ -49,6 +54,11 @@ Instantiable0[Signal[T]] {
     *                 Listeners with same priority level will be executed at the same order as they were added. (default = 0)
     */
   def addOnce(listener: js.Function1[/* repeated */ T, Unit]): SignalBinding[T] = js.native
+  def addOnce(
+    listener: js.Function1[/* repeated */ T, Unit],
+    listenerContext: js.UndefOr[scala.Nothing],
+    priority: Number
+  ): SignalBinding[T] = js.native
   def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any): SignalBinding[T] = js.native
   def addOnce(listener: js.Function1[/* repeated */ T, Unit], listenerContext: js.Any, priority: Number): SignalBinding[T] = js.native
   /**

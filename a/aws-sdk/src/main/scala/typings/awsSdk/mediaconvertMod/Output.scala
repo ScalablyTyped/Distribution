@@ -42,26 +42,58 @@ trait Output extends js.Object {
 
 object Output {
   @scala.inline
-  def apply(
-    AudioDescriptions: listOfAudioDescription = null,
-    CaptionDescriptions: listOfCaptionDescription = null,
-    ContainerSettings: ContainerSettings = null,
-    Extension: string = null,
-    NameModifier: stringMin1 = null,
-    OutputSettings: OutputSettings = null,
-    Preset: stringMin0 = null,
-    VideoDescription: VideoDescription = null
-  ): Output = {
+  def apply(): Output = {
     val __obj = js.Dynamic.literal()
-    if (AudioDescriptions != null) __obj.updateDynamic("AudioDescriptions")(AudioDescriptions.asInstanceOf[js.Any])
-    if (CaptionDescriptions != null) __obj.updateDynamic("CaptionDescriptions")(CaptionDescriptions.asInstanceOf[js.Any])
-    if (ContainerSettings != null) __obj.updateDynamic("ContainerSettings")(ContainerSettings.asInstanceOf[js.Any])
-    if (Extension != null) __obj.updateDynamic("Extension")(Extension.asInstanceOf[js.Any])
-    if (NameModifier != null) __obj.updateDynamic("NameModifier")(NameModifier.asInstanceOf[js.Any])
-    if (OutputSettings != null) __obj.updateDynamic("OutputSettings")(OutputSettings.asInstanceOf[js.Any])
-    if (Preset != null) __obj.updateDynamic("Preset")(Preset.asInstanceOf[js.Any])
-    if (VideoDescription != null) __obj.updateDynamic("VideoDescription")(VideoDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
+  @scala.inline
+  implicit class OutputOps[Self <: Output] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAudioDescriptionsVarargs(value: AudioDescription*): Self = this.set("AudioDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setAudioDescriptions(value: listOfAudioDescription): Self = this.set("AudioDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudioDescriptions: Self = this.set("AudioDescriptions", js.undefined)
+    @scala.inline
+    def setCaptionDescriptionsVarargs(value: CaptionDescription*): Self = this.set("CaptionDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setCaptionDescriptions(value: listOfCaptionDescription): Self = this.set("CaptionDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionDescriptions: Self = this.set("CaptionDescriptions", js.undefined)
+    @scala.inline
+    def setContainerSettings(value: ContainerSettings): Self = this.set("ContainerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerSettings: Self = this.set("ContainerSettings", js.undefined)
+    @scala.inline
+    def setExtension(value: string): Self = this.set("Extension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtension: Self = this.set("Extension", js.undefined)
+    @scala.inline
+    def setNameModifier(value: stringMin1): Self = this.set("NameModifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameModifier: Self = this.set("NameModifier", js.undefined)
+    @scala.inline
+    def setOutputSettings(value: OutputSettings): Self = this.set("OutputSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputSettings: Self = this.set("OutputSettings", js.undefined)
+    @scala.inline
+    def setPreset(value: stringMin0): Self = this.set("Preset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreset: Self = this.set("Preset", js.undefined)
+    @scala.inline
+    def setVideoDescription(value: VideoDescription): Self = this.set("VideoDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoDescription: Self = this.set("VideoDescription", js.undefined)
+  }
+  
 }
 

@@ -61,6 +61,7 @@ trait Http2Session extends EventEmitter {
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native
   def destroy(): Unit = js.native
+  def destroy(error: js.UndefOr[scala.Nothing], code: Double): Unit = js.native
   def destroy(error: Error): Unit = js.native
   def destroy(error: Error, code: Double): Unit = js.native
   @JSName("emit")
@@ -80,7 +81,15 @@ trait Http2Session extends EventEmitter {
   @JSName("emit")
   def emit_timeout(event: timeout): Boolean = js.native
   def goaway(): Unit = js.native
+  def goaway(
+    code: js.UndefOr[scala.Nothing],
+    lastStreamID: js.UndefOr[scala.Nothing],
+    opaqueData: ArrayBufferView
+  ): Unit = js.native
+  def goaway(code: js.UndefOr[scala.Nothing], lastStreamID: Double): Unit = js.native
+  def goaway(code: js.UndefOr[scala.Nothing], lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
   def goaway(code: Double): Unit = js.native
+  def goaway(code: Double, lastStreamID: js.UndefOr[scala.Nothing], opaqueData: ArrayBufferView): Unit = js.native
   def goaway(code: Double, lastStreamID: Double): Unit = js.native
   def goaway(code: Double, lastStreamID: Double, opaqueData: ArrayBufferView): Unit = js.native
   @JSName("on")

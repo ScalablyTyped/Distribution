@@ -4,51 +4,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColProps extends js.Object {
-  var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.undefined
-  var large: js.UndefOr[Double] = js.undefined
-  var `large-offset`: js.UndefOr[Double] = js.undefined
-  var medium: js.UndefOr[Double] = js.undefined
-  var `medium-offset`: js.UndefOr[Double] = js.undefined
-  var `no-gutters`: js.UndefOr[Boolean] = js.undefined
-  var small: js.UndefOr[Double] = js.undefined
-  var `small-offset`: js.UndefOr[Double] = js.undefined
-  var xlarge: js.UndefOr[Double] = js.undefined
-  var `xlarge-offset`: js.UndefOr[Double] = js.undefined
-  var xsmall: js.UndefOr[Double] = js.undefined
-  var `xsmall-offset`: js.UndefOr[Double] = js.undefined
+  var hide: js.UndefOr[BreakpointsType | js.Array[BreakpointsType]] = js.native
+  var large: js.UndefOr[Double] = js.native
+  var `large-offset`: js.UndefOr[Double] = js.native
+  var medium: js.UndefOr[Double] = js.native
+  var `medium-offset`: js.UndefOr[Double] = js.native
+  var `no-gutters`: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Double] = js.native
+  var `small-offset`: js.UndefOr[Double] = js.native
+  var xlarge: js.UndefOr[Double] = js.native
+  var `xlarge-offset`: js.UndefOr[Double] = js.native
+  var xsmall: js.UndefOr[Double] = js.native
+  var `xsmall-offset`: js.UndefOr[Double] = js.native
 }
 
 object ColProps {
   @scala.inline
-  def apply(
-    hide: BreakpointsType | js.Array[BreakpointsType] = null,
-    large: js.UndefOr[Double] = js.undefined,
-    `large-offset`: js.UndefOr[Double] = js.undefined,
-    medium: js.UndefOr[Double] = js.undefined,
-    `medium-offset`: js.UndefOr[Double] = js.undefined,
-    `no-gutters`: js.UndefOr[Boolean] = js.undefined,
-    small: js.UndefOr[Double] = js.undefined,
-    `small-offset`: js.UndefOr[Double] = js.undefined,
-    xlarge: js.UndefOr[Double] = js.undefined,
-    `xlarge-offset`: js.UndefOr[Double] = js.undefined,
-    xsmall: js.UndefOr[Double] = js.undefined,
-    `xsmall-offset`: js.UndefOr[Double] = js.undefined
-  ): ColProps = {
+  def apply(): ColProps = {
     val __obj = js.Dynamic.literal()
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`large-offset`)) __obj.updateDynamic("large-offset")(`large-offset`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(medium)) __obj.updateDynamic("medium")(medium.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`medium-offset`)) __obj.updateDynamic("medium-offset")(`medium-offset`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`no-gutters`)) __obj.updateDynamic("no-gutters")(`no-gutters`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(small)) __obj.updateDynamic("small")(small.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`small-offset`)) __obj.updateDynamic("small-offset")(`small-offset`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xlarge)) __obj.updateDynamic("xlarge")(xlarge.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`xlarge-offset`)) __obj.updateDynamic("xlarge-offset")(`xlarge-offset`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xsmall)) __obj.updateDynamic("xsmall")(xsmall.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`xsmall-offset`)) __obj.updateDynamic("xsmall-offset")(`xsmall-offset`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColProps]
   }
+  @scala.inline
+  implicit class ColPropsOps[Self <: ColProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHideVarargs(value: BreakpointsType*): Self = this.set("hide", js.Array(value :_*))
+    @scala.inline
+    def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = this.set("hide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setLarge(value: Double): Self = this.set("large", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLarge: Self = this.set("large", js.undefined)
+    @scala.inline
+    def `setLarge-offset`(value: Double): Self = this.set("large-offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteLarge-offset`: Self = this.set("large-offset", js.undefined)
+    @scala.inline
+    def setMedium(value: Double): Self = this.set("medium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMedium: Self = this.set("medium", js.undefined)
+    @scala.inline
+    def `setMedium-offset`(value: Double): Self = this.set("medium-offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteMedium-offset`: Self = this.set("medium-offset", js.undefined)
+    @scala.inline
+    def `setNo-gutters`(value: Boolean): Self = this.set("no-gutters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteNo-gutters`: Self = this.set("no-gutters", js.undefined)
+    @scala.inline
+    def setSmall(value: Double): Self = this.set("small", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmall: Self = this.set("small", js.undefined)
+    @scala.inline
+    def `setSmall-offset`(value: Double): Self = this.set("small-offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSmall-offset`: Self = this.set("small-offset", js.undefined)
+    @scala.inline
+    def setXlarge(value: Double): Self = this.set("xlarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXlarge: Self = this.set("xlarge", js.undefined)
+    @scala.inline
+    def `setXlarge-offset`(value: Double): Self = this.set("xlarge-offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteXlarge-offset`: Self = this.set("xlarge-offset", js.undefined)
+    @scala.inline
+    def setXsmall(value: Double): Self = this.set("xsmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXsmall: Self = this.set("xsmall", js.undefined)
+    @scala.inline
+    def `setXsmall-offset`(value: Double): Self = this.set("xsmall-offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteXsmall-offset`: Self = this.set("xsmall-offset", js.undefined)
+  }
+  
 }
 

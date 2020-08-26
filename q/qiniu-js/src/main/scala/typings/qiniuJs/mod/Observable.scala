@@ -15,6 +15,11 @@ trait Observable extends js.Object {
     * @returns
     */
   def subscribe(next: js.Function1[/* obj */ Next, Unit]): Subscription = js.native
+  def subscribe(
+    next: js.Function1[/* obj */ Next, Unit],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function1[/* obj */ CompletedResult, Unit]
+  ): Subscription = js.native
   def subscribe(next: js.Function1[/* obj */ Next, Unit], error: js.Function1[/* err */ Error | String, Unit]): Subscription = js.native
   def subscribe(
     next: js.Function1[/* obj */ Next, Unit],

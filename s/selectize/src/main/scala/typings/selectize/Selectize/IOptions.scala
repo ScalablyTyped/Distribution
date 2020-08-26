@@ -10,32 +10,33 @@ import scala.scalajs.js.annotation._
 
 // see https://github.com/brianreavis/selectize.js/blob/master/docs/usage.md
 // option identifiers are parameterized by T; data is parameterized by U
+@js.native
 trait IOptions[T, U] extends js.Object {
   /**
     * Sets if the "Add..." option should be the default selection in the dropdown.
     *
     * Default: false
     */
-  var addPrecedence: js.UndefOr[Boolean] = js.undefined
+  var addPrecedence: js.UndefOr[Boolean] = js.native
   /**
     * If true, Selectize will treat any options with a "" value like normal. This defaults to false to
     * accomodate the common <select> practice of having the first empty option act as a placeholder.
     *
     * Default: false
     */
-  var allowEmptyOption: js.UndefOr[Boolean] = js.undefined
+  var allowEmptyOption: js.UndefOr[Boolean] = js.native
   /**
     * If true, the dropdown will be closed after a selection is made.
     *
     * Default: false
     */
-  var closeAfterSelect: js.UndefOr[Boolean] = js.undefined
+  var closeAfterSelect: js.UndefOr[Boolean] = js.native
   /**
     * Copy the original input classes to the Dropdown element.
     *
     * Default: true
     */
-  var copyClassesToDropdown: js.UndefOr[Boolean] = js.undefined
+  var copyClassesToDropdown: js.UndefOr[Boolean] = js.native
   /**
     * Allows the user to create a new items that aren't in the list of options.
     * This option can be any of the following: "true", "false" (disabled), or a function that accepts two
@@ -43,7 +44,7 @@ trait IOptions[T, U] extends js.Object {
     *
     * Default: false
     */
-  var create: js.UndefOr[js.Any] = js.undefined
+  var create: js.UndefOr[js.Any] = js.native
   /**
     * Specifies a RegExp or String containing a regular expression that the current search filter must match to
     * be allowed to be created. May also be a predicate function that takes the filter text and returns whether
@@ -51,200 +52,200 @@ trait IOptions[T, U] extends js.Object {
     *
     * Default: null
     */
-  var createFilter: js.UndefOr[js.Any] = js.undefined
+  var createFilter: js.UndefOr[js.Any] = js.native
   /**
     * If true, when user exits the field (clicks outside of input or presses ESC) new option is created and
     * selected (if `create`-option is enabled).
     *
     * Default: false
     */
-  var createOnBlur: js.UndefOr[Boolean] = js.undefined
+  var createOnBlur: js.UndefOr[Boolean] = js.native
   /**
     * The <option> attribute from which to read JSON data about the option.
     *
     * Default: "data-data"
     */
-  var dataAttr: js.UndefOr[String] = js.undefined
+  var dataAttr: js.UndefOr[String] = js.native
   /**
     * The string to separate items by. This option is only used when Selectize is instantiated from a
     * <input type="text"> element.
     *
     * Default: ','
     */
-  var delimiter: js.UndefOr[String] = js.undefined
+  var delimiter: js.UndefOr[String] = js.native
   /**
     * Enable or disable international character support.
     *
     * Default: true
     */
-  var diacritics: js.UndefOr[Boolean] = js.undefined
+  var diacritics: js.UndefOr[Boolean] = js.native
   /**
     * The name of the property to disabled option and optgroup.
     *
     * Default: 'disabled'
     */
-  var disabledField: js.UndefOr[String] = js.undefined
+  var disabledField: js.UndefOr[String] = js.native
   /**
     * The element the dropdown menu is appended to. This should be "body" or null.
     * If null, the dropdown will be appended as a child of the selectize control.
     *
     * Default: null
     */
-  var dropdownParent: js.UndefOr[String] = js.undefined
+  var dropdownParent: js.UndefOr[String] = js.native
   /**
     * If true, the items that are currently selected will not be shown in the dropdown list of available options.
     *
     * Default: false
     */
-  var hideSelected: js.UndefOr[Boolean] = js.undefined
+  var hideSelected: js.UndefOr[Boolean] = js.native
   /**
     * Toggles match highlighting within the dropdown menu.
     *
     * Default: true
     */
-  var highlight: js.UndefOr[Boolean] = js.undefined
+  var highlight: js.UndefOr[Boolean] = js.native
   // General
   // ------------------------------------------------------------------------------------------------------------
   /**
     * An array of the initial selected values. By default this is populated from the original input element.
     */
-  var items: js.UndefOr[js.Array[T]] = js.undefined
+  var items: js.UndefOr[js.Array[T]] = js.native
   /**
     * The name of the property to render as an option / item label (not needed when custom rendering
     * functions are defined).
     *
     * Default: "text"
     */
-  var labelField: js.UndefOr[String] = js.undefined
+  var labelField: js.UndefOr[String] = js.native
   // Callbacks
   // ------------------------------------------------------------------------------------------------------------
   /**
     * Invoked when new options should be loaded from the server.
     */
-  var load: js.UndefOr[js.Function2[/* query */ String, /* callback */ js.Function, _]] = js.undefined
+  var load: js.UndefOr[js.Function2[/* query */ String, /* callback */ js.Function, _]] = js.native
   /**
     * The number of milliseconds to wait before requesting options from the server or null.
     * If null, throttling is disabled.
     *
     * Default: 300
     */
-  var loadThrottle: js.UndefOr[Double] = js.undefined
+  var loadThrottle: js.UndefOr[Double] = js.native
   /**
     * If truthy, Selectize will make all optgroups be in the same order as they were added (by the `$order`
     * property). Otherwise, it will order based on the score of the results in each.
     *
     * Default: false
     */
-  var lockOptgroupOrder: js.UndefOr[Boolean] = js.undefined
+  var lockOptgroupOrder: js.UndefOr[Boolean] = js.native
   /**
     * The max number of items the user can select.
     *
     * Default: Infinity
     */
-  var maxItems: js.UndefOr[Double] = js.undefined
+  var maxItems: js.UndefOr[Double] = js.native
   /**
     * The max number of items to render at once in the dropdown list of options.
     *
     * Default: 1000
     */
-  var maxOptions: js.UndefOr[Double] = js.undefined
+  var maxOptions: js.UndefOr[Double] = js.native
   /**
     * Invoked when the control loses focus.
     */
-  var onBlur: js.UndefOr[js.Function0[_]] = js.undefined
+  var onBlur: js.UndefOr[js.Function0[_]] = js.native
   /**
     * Invoked when the value of the control changes.
     *
     * If single select, value is of type T.
     * If multi select, value is of type T[].
     */
-  var onChange: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
   /**
     * Invoked when the control is manually cleared via the clear() method.
     */
-  var onClear: js.UndefOr[js.Function0[_]] = js.undefined
+  var onClear: js.UndefOr[js.Function0[_]] = js.native
   /**
     * Invoked when the user attempts to delete the current selection.
     */
-  var onDelete: js.UndefOr[js.Function1[/* values */ js.Array[T], _]] = js.undefined
+  var onDelete: js.UndefOr[js.Function1[/* values */ js.Array[T], _]] = js.native
   /**
     * Invoked when the dropdown closes.
     */
-  var onDropdownClose: js.UndefOr[js.Function1[/* dropdown */ JQuery, _]] = js.undefined
+  var onDropdownClose: js.UndefOr[js.Function1[/* dropdown */ JQuery, _]] = js.native
   /**
     * Invoked when the dropdown opens.
     */
-  var onDropdownOpen: js.UndefOr[js.Function1[/* dropdown */ JQuery, _]] = js.undefined
+  var onDropdownOpen: js.UndefOr[js.Function1[/* dropdown */ JQuery, _]] = js.native
   /**
     * Invoked when the control gains focus.
     */
-  var onFocus: js.UndefOr[js.Function0[_]] = js.undefined
+  var onFocus: js.UndefOr[js.Function0[_]] = js.native
   /**
     * Invoked once the control is completely initialized.
     */
-  var onInitialize: js.UndefOr[js.Function0[_]] = js.undefined
+  var onInitialize: js.UndefOr[js.Function0[_]] = js.native
   /**
     * Invoked when an item is selected.
     */
-  var onItemAdd: js.UndefOr[js.Function2[/* value */ T, /* item */ JQuery, _]] = js.undefined
+  var onItemAdd: js.UndefOr[js.Function2[/* value */ T, /* item */ JQuery, _]] = js.native
   /**
     * Invoked when an item is deselected.
     */
-  var onItemRemove: js.UndefOr[js.Function1[/* value */ T, _]] = js.undefined
+  var onItemRemove: js.UndefOr[js.Function1[/* value */ T, _]] = js.native
   /**
     * Invoked when new options have been loaded and added to the control (via the "load" option or "load" API method).
     */
-  var onLoad: js.UndefOr[js.Function1[/* data */ js.Array[U], _]] = js.undefined
+  var onLoad: js.UndefOr[js.Function1[/* data */ js.Array[U], _]] = js.native
   /**
     * Invoked when a new option is added to the available options list.
     */
-  var onOptionAdd: js.UndefOr[js.Function2[/* value */ T, /* data */ U, _]] = js.undefined
+  var onOptionAdd: js.UndefOr[js.Function2[/* value */ T, /* data */ U, _]] = js.native
   /**
     * Invoked when an option is removed from the available options.
     */
-  var onOptionRemove: js.UndefOr[js.Function1[/* value */ T, _]] = js.undefined
+  var onOptionRemove: js.UndefOr[js.Function1[/* value */ T, _]] = js.native
   /**
     * Invoked when the user types while filtering options.
     */
-  var onType: js.UndefOr[js.Function1[/* srt */ String, _]] = js.undefined
+  var onType: js.UndefOr[js.Function1[/* srt */ String, _]] = js.native
   /**
     * Show the dropdown immediately when the control receives focus.
     *
     * Default: true
     */
-  var openOnFocus: js.UndefOr[Boolean] = js.undefined
+  var openOnFocus: js.UndefOr[Boolean] = js.native
   /**
     * The name of the property to group items by.
     *
     * Default: "optgroup"
     */
-  var optgroupField: js.UndefOr[String] = js.undefined
+  var optgroupField: js.UndefOr[String] = js.native
   /**
     * The name of the property to render as an option group label (not needed when custom rendering
     * functions are defined).
     *
     * Default: "label"
     */
-  var optgroupLabelField: js.UndefOr[String] = js.undefined
+  var optgroupLabelField: js.UndefOr[String] = js.native
   /**
     * An array of optgroup values that indicates the order they should be listed in in the dropdown.
     * If not provided, groups will be ordered by the ranking of the options within them.
     *
     * Default: null
     */
-  var optgroupOrder: js.UndefOr[js.Array[String]] = js.undefined
+  var optgroupOrder: js.UndefOr[js.Array[String]] = js.native
   /**
     * The name of the option group property that serves as its unique identifier.
     *
     * Default: "value"
     */
-  var optgroupValueField: js.UndefOr[String] = js.undefined
+  var optgroupValueField: js.UndefOr[String] = js.native
   /**
     * Option groups that options will be bucketed into.
     * If your element is a <select> with <optgroup>s this property gets populated automatically.
     * Make sure each object in the array has a property named whatever "optgroupValueField" is set to.
     */
-  var optgroups: js.UndefOr[js.Array[U]] = js.undefined
+  var optgroups: js.UndefOr[js.Array[U]] = js.native
   // Data / Searching
   // ------------------------------------------------------------------------------------------------------------
   /**
@@ -254,65 +255,65 @@ trait IOptions[T, U] extends js.Object {
     *
     * Default: []
     */
-  var options: js.UndefOr[js.Array[U]] = js.undefined
+  var options: js.UndefOr[js.Array[U]] = js.native
   /**
     * If false, items created by the user will not show up as available options once they are unselected.
     *
     * Default: true
     */
-  var persist: js.UndefOr[Boolean] = js.undefined
+  var persist: js.UndefOr[Boolean] = js.native
   /**
     * The placeholder of the control (displayed when nothing is selected / typed).
     * Defaults to input element's placeholder, unless this one is specified.
     */
-  var placeholder: js.UndefOr[String] = js.undefined
+  var placeholder: js.UndefOr[String] = js.native
   /**
     * Plugins to use
     *
     * Default: null
     */
-  var plugins: js.UndefOr[(js.Array[IPluginOption | String]) | StringDictionary[js.Any]] = js.undefined
+  var plugins: js.UndefOr[(js.Array[IPluginOption | String]) | StringDictionary[js.Any]] = js.native
   /**
     * If true, the "load" function will be called upon control initialization (with an empty search).
     * Alternatively it can be set to "focus" to call the "load" function when control receives focus.
     *
     * Default: false
     */
-  var preload: js.UndefOr[Boolean | focus] = js.undefined
+  var preload: js.UndefOr[Boolean | focus] = js.native
   // Rendering
   // ------------------------------------------------------------------------------------------------------------
-  var render: js.UndefOr[ICustomRenderers[U]] = js.undefined
+  var render: js.UndefOr[ICustomRenderers[U]] = js.native
   /**
     * Overrides the scoring function used to sort available options. The provided function should return a
     * function that returns a number greater than or equal to zero to represent the "score" of an item
     * (the function's first argument). If 0, the option is declared not a match.
     */
-  var score: js.UndefOr[js.Function1[/* search */ ISearch, js.Function1[/* item */ _, Double]]] = js.undefined
+  var score: js.UndefOr[js.Function1[/* search */ ISearch, js.Function1[/* item */ _, Double]]] = js.native
   /**
     * The animation duration (in milliseconds) of the scroll animation triggered when going [up] and [down] in
     * the options dropdown.
     *
     * Default: 60
     */
-  var scrollDuration: js.UndefOr[Double] = js.undefined
+  var scrollDuration: js.UndefOr[Double] = js.native
   /**
     * When searching for multiple terms (separated by a space), this is the operator used. Can be "and" or "or".
     *
     * Default: "and"
     */
-  var searchConjunction: js.UndefOr[String] = js.undefined
+  var searchConjunction: js.UndefOr[String] = js.native
   /**
     * An array of property names to analyze when filtering options.
     *
     * Default: ["text"]
     */
-  var searchField: js.UndefOr[String | js.Array[String]] = js.undefined
+  var searchField: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * If true, the tab key will choose the currently selected item.
     *
     * Default: false
     */
-  var selectOnTab: js.UndefOr[Boolean] = js.undefined
+  var selectOnTab: js.UndefOr[Boolean] = js.native
   /**
     * A single field or an array of fields to sort by. Each item in the array should be an object containing at
     * least a "field" property. Optionally, "direction" can be set to "asc" or "desc". The order of the array
@@ -323,129 +324,263 @@ trait IOptions[T, U] extends js.Object {
     *
     * Default: "$order"
     */
-  var sortField: js.UndefOr[String | js.Array[Direction]] = js.undefined
+  var sortField: js.UndefOr[String | js.Array[Direction]] = js.native
   /**
     * The name of the property to use as the "value" when an item is selected.
     *
     * Default: "value"
     */
-  var valueField: js.UndefOr[String] = js.undefined
+  var valueField: js.UndefOr[String] = js.native
 }
 
 object IOptions {
   @scala.inline
-  def apply[T, U](
-    addPrecedence: js.UndefOr[Boolean] = js.undefined,
-    allowEmptyOption: js.UndefOr[Boolean] = js.undefined,
-    closeAfterSelect: js.UndefOr[Boolean] = js.undefined,
-    copyClassesToDropdown: js.UndefOr[Boolean] = js.undefined,
-    create: js.Any = null,
-    createFilter: js.Any = null,
-    createOnBlur: js.UndefOr[Boolean] = js.undefined,
-    dataAttr: String = null,
-    delimiter: String = null,
-    diacritics: js.UndefOr[Boolean] = js.undefined,
-    disabledField: String = null,
-    dropdownParent: String = null,
-    hideSelected: js.UndefOr[Boolean] = js.undefined,
-    highlight: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[T] = null,
-    labelField: String = null,
-    load: (/* query */ String, /* callback */ js.Function) => _ = null,
-    loadThrottle: js.UndefOr[Double] = js.undefined,
-    lockOptgroupOrder: js.UndefOr[Boolean] = js.undefined,
-    maxItems: js.UndefOr[Double] = js.undefined,
-    maxOptions: js.UndefOr[Double] = js.undefined,
-    onBlur: () => _ = null,
-    onChange: /* value */ js.Any => _ = null,
-    onClear: () => _ = null,
-    onDelete: /* values */ js.Array[T] => _ = null,
-    onDropdownClose: /* dropdown */ JQuery => _ = null,
-    onDropdownOpen: /* dropdown */ JQuery => _ = null,
-    onFocus: () => _ = null,
-    onInitialize: () => _ = null,
-    onItemAdd: (/* value */ T, /* item */ JQuery) => _ = null,
-    onItemRemove: /* value */ T => _ = null,
-    onLoad: /* data */ js.Array[U] => _ = null,
-    onOptionAdd: (/* value */ T, /* data */ U) => _ = null,
-    onOptionRemove: /* value */ T => _ = null,
-    onType: /* srt */ String => _ = null,
-    openOnFocus: js.UndefOr[Boolean] = js.undefined,
-    optgroupField: String = null,
-    optgroupLabelField: String = null,
-    optgroupOrder: js.Array[String] = null,
-    optgroupValueField: String = null,
-    optgroups: js.Array[U] = null,
-    options: js.Array[U] = null,
-    persist: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    plugins: (js.Array[IPluginOption | String]) | StringDictionary[js.Any] = null,
-    preload: Boolean | focus = null,
-    render: ICustomRenderers[U] = null,
-    score: /* search */ ISearch => js.Function1[/* item */ _, Double] = null,
-    scrollDuration: js.UndefOr[Double] = js.undefined,
-    searchConjunction: String = null,
-    searchField: String | js.Array[String] = null,
-    selectOnTab: js.UndefOr[Boolean] = js.undefined,
-    sortField: String | js.Array[Direction] = null,
-    valueField: String = null
-  ): IOptions[T, U] = {
+  def apply[T, U](): IOptions[T, U] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addPrecedence)) __obj.updateDynamic("addPrecedence")(addPrecedence.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEmptyOption)) __obj.updateDynamic("allowEmptyOption")(allowEmptyOption.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeAfterSelect)) __obj.updateDynamic("closeAfterSelect")(closeAfterSelect.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyClassesToDropdown)) __obj.updateDynamic("copyClassesToDropdown")(copyClassesToDropdown.get.asInstanceOf[js.Any])
-    if (create != null) __obj.updateDynamic("create")(create.asInstanceOf[js.Any])
-    if (createFilter != null) __obj.updateDynamic("createFilter")(createFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(createOnBlur)) __obj.updateDynamic("createOnBlur")(createOnBlur.get.asInstanceOf[js.Any])
-    if (dataAttr != null) __obj.updateDynamic("dataAttr")(dataAttr.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(diacritics)) __obj.updateDynamic("diacritics")(diacritics.get.asInstanceOf[js.Any])
-    if (disabledField != null) __obj.updateDynamic("disabledField")(disabledField.asInstanceOf[js.Any])
-    if (dropdownParent != null) __obj.updateDynamic("dropdownParent")(dropdownParent.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideSelected)) __obj.updateDynamic("hideSelected")(hideSelected.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.get.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (labelField != null) __obj.updateDynamic("labelField")(labelField.asInstanceOf[js.Any])
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2(load))
-    if (!js.isUndefined(loadThrottle)) __obj.updateDynamic("loadThrottle")(loadThrottle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockOptgroupOrder)) __obj.updateDynamic("lockOptgroupOrder")(lockOptgroupOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxItems)) __obj.updateDynamic("maxItems")(maxItems.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxOptions)) __obj.updateDynamic("maxOptions")(maxOptions.get.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClear != null) __obj.updateDynamic("onClear")(js.Any.fromFunction0(onClear))
-    if (onDelete != null) __obj.updateDynamic("onDelete")(js.Any.fromFunction1(onDelete))
-    if (onDropdownClose != null) __obj.updateDynamic("onDropdownClose")(js.Any.fromFunction1(onDropdownClose))
-    if (onDropdownOpen != null) __obj.updateDynamic("onDropdownOpen")(js.Any.fromFunction1(onDropdownOpen))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
-    if (onInitialize != null) __obj.updateDynamic("onInitialize")(js.Any.fromFunction0(onInitialize))
-    if (onItemAdd != null) __obj.updateDynamic("onItemAdd")(js.Any.fromFunction2(onItemAdd))
-    if (onItemRemove != null) __obj.updateDynamic("onItemRemove")(js.Any.fromFunction1(onItemRemove))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onOptionAdd != null) __obj.updateDynamic("onOptionAdd")(js.Any.fromFunction2(onOptionAdd))
-    if (onOptionRemove != null) __obj.updateDynamic("onOptionRemove")(js.Any.fromFunction1(onOptionRemove))
-    if (onType != null) __obj.updateDynamic("onType")(js.Any.fromFunction1(onType))
-    if (!js.isUndefined(openOnFocus)) __obj.updateDynamic("openOnFocus")(openOnFocus.get.asInstanceOf[js.Any])
-    if (optgroupField != null) __obj.updateDynamic("optgroupField")(optgroupField.asInstanceOf[js.Any])
-    if (optgroupLabelField != null) __obj.updateDynamic("optgroupLabelField")(optgroupLabelField.asInstanceOf[js.Any])
-    if (optgroupOrder != null) __obj.updateDynamic("optgroupOrder")(optgroupOrder.asInstanceOf[js.Any])
-    if (optgroupValueField != null) __obj.updateDynamic("optgroupValueField")(optgroupValueField.asInstanceOf[js.Any])
-    if (optgroups != null) __obj.updateDynamic("optgroups")(optgroups.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (score != null) __obj.updateDynamic("score")(js.Any.fromFunction1(score))
-    if (!js.isUndefined(scrollDuration)) __obj.updateDynamic("scrollDuration")(scrollDuration.get.asInstanceOf[js.Any])
-    if (searchConjunction != null) __obj.updateDynamic("searchConjunction")(searchConjunction.asInstanceOf[js.Any])
-    if (searchField != null) __obj.updateDynamic("searchField")(searchField.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab.get.asInstanceOf[js.Any])
-    if (sortField != null) __obj.updateDynamic("sortField")(sortField.asInstanceOf[js.Any])
-    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOptions[T, U]]
   }
+  @scala.inline
+  implicit class IOptionsOps[Self <: IOptions[_, _], T, U] (val x: Self with (IOptions[T, U])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddPrecedence(value: Boolean): Self = this.set("addPrecedence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddPrecedence: Self = this.set("addPrecedence", js.undefined)
+    @scala.inline
+    def setAllowEmptyOption(value: Boolean): Self = this.set("allowEmptyOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEmptyOption: Self = this.set("allowEmptyOption", js.undefined)
+    @scala.inline
+    def setCloseAfterSelect(value: Boolean): Self = this.set("closeAfterSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseAfterSelect: Self = this.set("closeAfterSelect", js.undefined)
+    @scala.inline
+    def setCopyClassesToDropdown(value: Boolean): Self = this.set("copyClassesToDropdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyClassesToDropdown: Self = this.set("copyClassesToDropdown", js.undefined)
+    @scala.inline
+    def setCreate(value: js.Any): Self = this.set("create", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreate: Self = this.set("create", js.undefined)
+    @scala.inline
+    def setCreateFilter(value: js.Any): Self = this.set("createFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateFilter: Self = this.set("createFilter", js.undefined)
+    @scala.inline
+    def setCreateOnBlur(value: Boolean): Self = this.set("createOnBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateOnBlur: Self = this.set("createOnBlur", js.undefined)
+    @scala.inline
+    def setDataAttr(value: String): Self = this.set("dataAttr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAttr: Self = this.set("dataAttr", js.undefined)
+    @scala.inline
+    def setDelimiter(value: String): Self = this.set("delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("delimiter", js.undefined)
+    @scala.inline
+    def setDiacritics(value: Boolean): Self = this.set("diacritics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiacritics: Self = this.set("diacritics", js.undefined)
+    @scala.inline
+    def setDisabledField(value: String): Self = this.set("disabledField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabledField: Self = this.set("disabledField", js.undefined)
+    @scala.inline
+    def setDropdownParent(value: String): Self = this.set("dropdownParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownParent: Self = this.set("dropdownParent", js.undefined)
+    @scala.inline
+    def setHideSelected(value: Boolean): Self = this.set("hideSelected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideSelected: Self = this.set("hideSelected", js.undefined)
+    @scala.inline
+    def setHighlight(value: Boolean): Self = this.set("highlight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlight: Self = this.set("highlight", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: T*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[T]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setLabelField(value: String): Self = this.set("labelField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelField: Self = this.set("labelField", js.undefined)
+    @scala.inline
+    def setLoad(value: (/* query */ String, /* callback */ js.Function) => _): Self = this.set("load", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLoad: Self = this.set("load", js.undefined)
+    @scala.inline
+    def setLoadThrottle(value: Double): Self = this.set("loadThrottle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadThrottle: Self = this.set("loadThrottle", js.undefined)
+    @scala.inline
+    def setLockOptgroupOrder(value: Boolean): Self = this.set("lockOptgroupOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockOptgroupOrder: Self = this.set("lockOptgroupOrder", js.undefined)
+    @scala.inline
+    def setMaxItems(value: Double): Self = this.set("maxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("maxItems", js.undefined)
+    @scala.inline
+    def setMaxOptions(value: Double): Self = this.set("maxOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxOptions: Self = this.set("maxOptions", js.undefined)
+    @scala.inline
+    def setOnBlur(value: () => _): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ js.Any => _): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClear(value: () => _): Self = this.set("onClear", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClear: Self = this.set("onClear", js.undefined)
+    @scala.inline
+    def setOnDelete(value: /* values */ js.Array[T] => _): Self = this.set("onDelete", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDelete: Self = this.set("onDelete", js.undefined)
+    @scala.inline
+    def setOnDropdownClose(value: /* dropdown */ JQuery => _): Self = this.set("onDropdownClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDropdownClose: Self = this.set("onDropdownClose", js.undefined)
+    @scala.inline
+    def setOnDropdownOpen(value: /* dropdown */ JQuery => _): Self = this.set("onDropdownOpen", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDropdownOpen: Self = this.set("onDropdownOpen", js.undefined)
+    @scala.inline
+    def setOnFocus(value: () => _): Self = this.set("onFocus", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnInitialize(value: () => _): Self = this.set("onInitialize", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnInitialize: Self = this.set("onInitialize", js.undefined)
+    @scala.inline
+    def setOnItemAdd(value: (/* value */ T, /* item */ JQuery) => _): Self = this.set("onItemAdd", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnItemAdd: Self = this.set("onItemAdd", js.undefined)
+    @scala.inline
+    def setOnItemRemove(value: /* value */ T => _): Self = this.set("onItemRemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnItemRemove: Self = this.set("onItemRemove", js.undefined)
+    @scala.inline
+    def setOnLoad(value: /* data */ js.Array[U] => _): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnOptionAdd(value: (/* value */ T, /* data */ U) => _): Self = this.set("onOptionAdd", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnOptionAdd: Self = this.set("onOptionAdd", js.undefined)
+    @scala.inline
+    def setOnOptionRemove(value: /* value */ T => _): Self = this.set("onOptionRemove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOptionRemove: Self = this.set("onOptionRemove", js.undefined)
+    @scala.inline
+    def setOnType(value: /* srt */ String => _): Self = this.set("onType", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnType: Self = this.set("onType", js.undefined)
+    @scala.inline
+    def setOpenOnFocus(value: Boolean): Self = this.set("openOnFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenOnFocus: Self = this.set("openOnFocus", js.undefined)
+    @scala.inline
+    def setOptgroupField(value: String): Self = this.set("optgroupField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptgroupField: Self = this.set("optgroupField", js.undefined)
+    @scala.inline
+    def setOptgroupLabelField(value: String): Self = this.set("optgroupLabelField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptgroupLabelField: Self = this.set("optgroupLabelField", js.undefined)
+    @scala.inline
+    def setOptgroupOrderVarargs(value: String*): Self = this.set("optgroupOrder", js.Array(value :_*))
+    @scala.inline
+    def setOptgroupOrder(value: js.Array[String]): Self = this.set("optgroupOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptgroupOrder: Self = this.set("optgroupOrder", js.undefined)
+    @scala.inline
+    def setOptgroupValueField(value: String): Self = this.set("optgroupValueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptgroupValueField: Self = this.set("optgroupValueField", js.undefined)
+    @scala.inline
+    def setOptgroupsVarargs(value: U*): Self = this.set("optgroups", js.Array(value :_*))
+    @scala.inline
+    def setOptgroups(value: js.Array[U]): Self = this.set("optgroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptgroups: Self = this.set("optgroups", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: U*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[U]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPersist(value: Boolean): Self = this.set("persist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersist: Self = this.set("persist", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPluginsVarargs(value: (IPluginOption | String)*): Self = this.set("plugins", js.Array(value :_*))
+    @scala.inline
+    def setPlugins(value: (js.Array[IPluginOption | String]) | StringDictionary[js.Any]): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setPreload(value: Boolean | focus): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setRender(value: ICustomRenderers[U]): Self = this.set("render", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setScore(value: /* search */ ISearch => js.Function1[/* item */ _, Double]): Self = this.set("score", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setScrollDuration(value: Double): Self = this.set("scrollDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollDuration: Self = this.set("scrollDuration", js.undefined)
+    @scala.inline
+    def setSearchConjunction(value: String): Self = this.set("searchConjunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchConjunction: Self = this.set("searchConjunction", js.undefined)
+    @scala.inline
+    def setSearchFieldVarargs(value: String*): Self = this.set("searchField", js.Array(value :_*))
+    @scala.inline
+    def setSearchField(value: String | js.Array[String]): Self = this.set("searchField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchField: Self = this.set("searchField", js.undefined)
+    @scala.inline
+    def setSelectOnTab(value: Boolean): Self = this.set("selectOnTab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectOnTab: Self = this.set("selectOnTab", js.undefined)
+    @scala.inline
+    def setSortFieldVarargs(value: Direction*): Self = this.set("sortField", js.Array(value :_*))
+    @scala.inline
+    def setSortField(value: String | js.Array[Direction]): Self = this.set("sortField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortField: Self = this.set("sortField", js.undefined)
+    @scala.inline
+    def setValueField(value: String): Self = this.set("valueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueField: Self = this.set("valueField", js.undefined)
+  }
+  
 }
 

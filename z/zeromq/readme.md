@@ -10,9 +10,9 @@ Next-generation ZeroMQ bindings for Node.js
 | ------------------ | :-------------: |
 | Full name          | zeromq |
 | Keywords           | zeromq, zmq, 0mq, ømq, libzmq, zmtp, message, messaging, queue, async, sockets, native, binding, addon, napi |
-| # releases         | 9 |
-| # dependents       | 192 |
-| # downloads        | 825168 |
+| # releases         | 11 |
+| # dependents       | 194 |
+| # downloads        | 823041 |
 | # stars            | 7 |
 
 ## Links

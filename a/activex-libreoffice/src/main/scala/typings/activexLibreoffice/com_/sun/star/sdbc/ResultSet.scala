@@ -42,6 +42,7 @@ import scala.scalajs.js.annotation._
   *
   * The number, types, and properties of a {@link ResultSet} 's columns are provided by the ResultSetMetaData object returned by the getMetaData method.
   */
+@js.native
 trait ResultSet
   extends XComponent
      with XCloseable
@@ -64,27 +65,27 @@ trait ResultSet
     * ** Note: ** By definition, positioned update/delete execution must be done by a different {@link Statement} than the one which generated the {@link
     * ResultSet} being used for positioning. Also, cursor names must be unique within a connection.
     */
-  var CursorName: String
+  var CursorName: String = js.native
   /**
     * retrieves the direction for fetching rows from database tables that is the default for result sets generated from this {@link
     * com.sun.star.sdbcx.Statement} object. ;  If this `Statement` object has not set a fetch direction, the return value is implementation-specific.
     */
-  var FetchDirection: Double
+  var FetchDirection: Double = js.native
   /**
     * retrieves the number of result set rows that is the default fetch size for result sets generated from this {@link com.sun.star.sdbcx.Statement}
     * object. ;  If this {@link com.sun.star.sdbcx.Statement} object has not set a fetch size, the return value is implementation-specific.
     */
-  var FetchSize: Double
+  var FetchSize: Double = js.native
   /**
     * retrieves the result set concurrency.
     * @see com.sun.star.sdbc.ResultSetConcurrency
     */
-  var ResultSetConcurrency: Double
+  var ResultSetConcurrency: Double = js.native
   /**
     * determines the result set type.
     * @see com.sun.star.sdbc.ResultSetType
     */
-  var ResultSetType: Double
+  var ResultSetType: Double = js.native
 }
 
 object ResultSet {
@@ -183,5 +184,28 @@ object ResultSet {
     val __obj = js.Dynamic.literal(CursorName = CursorName.asInstanceOf[js.Any], FetchDirection = FetchDirection.asInstanceOf[js.Any], FetchSize = FetchSize.asInstanceOf[js.Any], MetaData = MetaData.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ResultSetConcurrency = ResultSetConcurrency.asInstanceOf[js.Any], ResultSetType = ResultSetType.asInstanceOf[js.Any], Row = Row.asInstanceOf[js.Any], Statement = Statement.asInstanceOf[js.Any], Warnings = Warnings.asInstanceOf[js.Any], absolute = js.Any.fromFunction1(absolute), acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), afterLast = js.Any.fromFunction0(afterLast), beforeFirst = js.Any.fromFunction0(beforeFirst), cancelRowUpdates = js.Any.fromFunction0(cancelRowUpdates), clearWarnings = js.Any.fromFunction0(clearWarnings), close = js.Any.fromFunction0(close), deleteRow = js.Any.fromFunction0(deleteRow), dispose = js.Any.fromFunction0(dispose), findColumn = js.Any.fromFunction1(findColumn), first = js.Any.fromFunction0(first), getArray = js.Any.fromFunction1(getArray), getBinaryStream = js.Any.fromFunction1(getBinaryStream), getBlob = js.Any.fromFunction1(getBlob), getBoolean = js.Any.fromFunction1(getBoolean), getByte = js.Any.fromFunction1(getByte), getBytes = js.Any.fromFunction1(getBytes), getCharacterStream = js.Any.fromFunction1(getCharacterStream), getClob = js.Any.fromFunction1(getClob), getDate = js.Any.fromFunction1(getDate), getDouble = js.Any.fromFunction1(getDouble), getFloat = js.Any.fromFunction1(getFloat), getInt = js.Any.fromFunction1(getInt), getLong = js.Any.fromFunction1(getLong), getMetaData = js.Any.fromFunction0(getMetaData), getObject = js.Any.fromFunction2(getObject), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getRef = js.Any.fromFunction1(getRef), getRow = js.Any.fromFunction0(getRow), getShort = js.Any.fromFunction1(getShort), getStatement = js.Any.fromFunction0(getStatement), getString = js.Any.fromFunction1(getString), getTime = js.Any.fromFunction1(getTime), getTimestamp = js.Any.fromFunction1(getTimestamp), getWarnings = js.Any.fromFunction0(getWarnings), insertRow = js.Any.fromFunction0(insertRow), isAfterLast = js.Any.fromFunction0(isAfterLast), isBeforeFirst = js.Any.fromFunction0(isBeforeFirst), isFirst = js.Any.fromFunction0(isFirst), isLast = js.Any.fromFunction0(isLast), last = js.Any.fromFunction0(last), moveToCurrentRow = js.Any.fromFunction0(moveToCurrentRow), moveToInsertRow = js.Any.fromFunction0(moveToInsertRow), next = js.Any.fromFunction0(next), previous = js.Any.fromFunction0(previous), queryInterface = js.Any.fromFunction1(queryInterface), refreshRow = js.Any.fromFunction0(refreshRow), relative = js.Any.fromFunction1(relative), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), rowDeleted = js.Any.fromFunction0(rowDeleted), rowInserted = js.Any.fromFunction0(rowInserted), rowUpdated = js.Any.fromFunction0(rowUpdated), setPropertyValue = js.Any.fromFunction2(setPropertyValue), updateBinaryStream = js.Any.fromFunction3(updateBinaryStream), updateBoolean = js.Any.fromFunction2(updateBoolean), updateByte = js.Any.fromFunction2(updateByte), updateBytes = js.Any.fromFunction2(updateBytes), updateCharacterStream = js.Any.fromFunction3(updateCharacterStream), updateDate = js.Any.fromFunction2(updateDate), updateDouble = js.Any.fromFunction2(updateDouble), updateFloat = js.Any.fromFunction2(updateFloat), updateInt = js.Any.fromFunction2(updateInt), updateLong = js.Any.fromFunction2(updateLong), updateNull = js.Any.fromFunction1(updateNull), updateNumericObject = js.Any.fromFunction3(updateNumericObject), updateObject = js.Any.fromFunction2(updateObject), updateRow = js.Any.fromFunction0(updateRow), updateShort = js.Any.fromFunction2(updateShort), updateString = js.Any.fromFunction2(updateString), updateTime = js.Any.fromFunction2(updateTime), updateTimestamp = js.Any.fromFunction2(updateTimestamp), wasNull = js.Any.fromFunction0(wasNull))
     __obj.asInstanceOf[ResultSet]
   }
+  @scala.inline
+  implicit class ResultSetOps[Self <: ResultSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCursorName(value: String): Self = this.set("CursorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFetchDirection(value: Double): Self = this.set("FetchDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFetchSize(value: Double): Self = this.set("FetchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResultSetConcurrency(value: Double): Self = this.set("ResultSetConcurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResultSetType(value: Double): Self = this.set("ResultSetType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

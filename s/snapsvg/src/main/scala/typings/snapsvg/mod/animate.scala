@@ -19,6 +19,14 @@ object animate extends js.Object {
     to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): MinaAnimation = js.native
+  def apply(
+    from: js.Array[Double],
+    to: js.Array[Double],
+    updater: js.Function1[/* n */ Double, Unit],
+    duration: Double,
     easing: js.Function1[/* num */ Double, Double]
   ): MinaAnimation = js.native
   def apply(
@@ -30,6 +38,14 @@ object animate extends js.Object {
     callback: js.Function0[Unit]
   ): MinaAnimation = js.native
   def apply(from: js.Array[Double], to: Double, updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = js.native
+  def apply(
+    from: js.Array[Double],
+    to: Double,
+    updater: js.Function1[/* n */ Double, Unit],
+    duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): MinaAnimation = js.native
   def apply(
     from: js.Array[Double],
     to: Double,
@@ -51,6 +67,14 @@ object animate extends js.Object {
     to: js.Array[Double],
     updater: js.Function1[/* n */ Double, Unit],
     duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): MinaAnimation = js.native
+  def apply(
+    from: Double,
+    to: js.Array[Double],
+    updater: js.Function1[/* n */ Double, Unit],
+    duration: Double,
     easing: js.Function1[/* num */ Double, Double]
   ): MinaAnimation = js.native
   def apply(
@@ -62,6 +86,14 @@ object animate extends js.Object {
     callback: js.Function0[Unit]
   ): MinaAnimation = js.native
   def apply(from: Double, to: Double, updater: js.Function1[/* n */ Double, Unit], duration: Double): MinaAnimation = js.native
+  def apply(
+    from: Double,
+    to: Double,
+    updater: js.Function1[/* n */ Double, Unit],
+    duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): MinaAnimation = js.native
   def apply(
     from: Double,
     to: Double,

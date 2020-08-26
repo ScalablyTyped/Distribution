@@ -29,6 +29,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     */
   def bindDeviceToGateway(): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
   def bindDeviceToGateway(callback: BodyResponseCallback[SchemaBindDeviceToGatewayResponse]): Unit = js.native
+  def bindDeviceToGateway(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
   def bindDeviceToGateway(params: ParamsResourceProjectsLocationsRegistriesGroupsBinddevicetogateway): GaxiosPromise[SchemaBindDeviceToGatewayResponse] = js.native
   def bindDeviceToGateway(
     params: ParamsResourceProjectsLocationsRegistriesGroupsBinddevicetogateway,
@@ -61,6 +62,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsRegistriesGroupsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsRegistriesGroupsGetiampolicy,
@@ -93,6 +95,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsRegistriesGroupsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsRegistriesGroupsSetiampolicy,
@@ -126,6 +129,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsRegistriesGroupsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsRegistriesGroupsTestiampermissions,
@@ -158,6 +162,7 @@ class ResourceProjectsLocationsRegistriesGroups protected () extends js.Object {
     */
   def unbindDeviceFromGateway(): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
   def unbindDeviceFromGateway(callback: BodyResponseCallback[SchemaUnbindDeviceFromGatewayResponse]): Unit = js.native
+  def unbindDeviceFromGateway(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
   def unbindDeviceFromGateway(params: ParamsResourceProjectsLocationsRegistriesGroupsUnbinddevicefromgateway): GaxiosPromise[SchemaUnbindDeviceFromGatewayResponse] = js.native
   def unbindDeviceFromGateway(
     params: ParamsResourceProjectsLocationsRegistriesGroupsUnbinddevicefromgateway,

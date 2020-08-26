@@ -11,8 +11,8 @@ QR Code generator (png, svg, pdf, eps)
 | Full name          | qr-image |
 | Keywords           | qrcode, qr code, qr, png, svg, image |
 | # releases         | 1 |
-| # dependents       | 211 |
-| # downloads        | 2334324 |
+| # dependents       | 218 |
+| # downloads        | 2332722 |
 | # stars            | 64 |
 
 ## Links

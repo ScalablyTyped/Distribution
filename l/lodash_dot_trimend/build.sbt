@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_trimend"
-version := "4.5-dt-20200515Z-532d0e"
-scalaVersion := "2.13.2"
+version := "4.5-dt-20200515Z-b636de"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

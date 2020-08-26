@@ -11,6 +11,7 @@ trait Point extends js.Object {
   var y: Double = js.native
   def copy(point: Point): Point = js.native
   def setValues(): Point = js.native
+  def setValues(x: js.UndefOr[scala.Nothing], y: Double): Point = js.native
   def setValues(x: Double): Point = js.native
   def setValues(x: Double, y: Double): Point = js.native
 }

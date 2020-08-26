@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__strings
 
-Typings are for version 5.0.1
+Typings are for version 5.0.2
 
 ## Library description:
 String utility functions.

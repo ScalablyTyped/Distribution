@@ -8,20 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CDATASection")
 @js.native
 class CDATASection ()
-  extends typings.std.Text {
-  /* CompleteClass */
-  override val assignedSlot: typings.std.HTMLSlotElement | Null = js.native
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val nextElementSibling: typings.std.Element | Null = js.native
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  /* CompleteClass */
-  override val previousElementSibling: typings.std.Element | Null = js.native
-}
+  extends typings.std.Text
 
 @JSGlobal("CDATASection")
 @js.native

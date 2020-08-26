@@ -66,13 +66,13 @@ object Data extends js.Object {
       * Destroy this data manager.
       */
     def destroy(): Unit = js.native
+    def each(callback: DataEachCallback, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
     /**
       * Passes all data entries to the given callback.
       * @param callback The function to call.
       * @param context Value to use as `this` when executing callback.
       * @param args Additional arguments that will be passed to the callback, after the game object, key, and data.
       */
-    def each(callback: DataEachCallback): this.type = js.native
     def each(callback: DataEachCallback, context: js.Any, args: js.Any*): this.type = js.native
     /**
       * Retrieves the value for the given key, or undefined if it doesn't exist.

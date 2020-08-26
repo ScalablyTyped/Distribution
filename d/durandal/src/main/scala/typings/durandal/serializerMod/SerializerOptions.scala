@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SerializerOptions extends js.Object {
   /**
     * The default replacer function used during serialization. By default properties starting with '_' or '$' are removed from the serialized object.
@@ -11,20 +12,38 @@ trait SerializerOptions extends js.Object {
     * @param {object} value The object value to check.
     * @returns {object} The value to serialize.
     */
-  var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.undefined
+  var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
   /**
     * The amount of space to use for indentation when writing out JSON.
     * @default undefined
     */
-  var space: js.Any
+  var space: js.Any = js.native
 }
 
 object SerializerOptions {
   @scala.inline
-  def apply(space: js.Any, replacer: (/* key */ String, /* value */ js.Any) => _ = null): SerializerOptions = {
+  def apply(space: js.Any): SerializerOptions = {
     val __obj = js.Dynamic.literal(space = space.asInstanceOf[js.Any])
-    if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction2(replacer))
     __obj.asInstanceOf[SerializerOptions]
   }
+  @scala.inline
+  implicit class SerializerOptionsOps[Self <: SerializerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSpace(value: js.Any): Self = this.set("space", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = this.set("replacer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteReplacer: Self = this.set("replacer", js.undefined)
+  }
+  
 }
 

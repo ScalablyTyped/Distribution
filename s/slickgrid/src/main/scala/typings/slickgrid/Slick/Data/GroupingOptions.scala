@@ -6,46 +6,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GroupingOptions[T] extends js.Object {
-  var aggregateChildGroups: js.UndefOr[Boolean] = js.undefined
-  var aggregateCollapsed: js.UndefOr[Boolean] = js.undefined
-  var aggregateEmpty: js.UndefOr[Boolean] = js.undefined
+  var aggregateChildGroups: js.UndefOr[Boolean] = js.native
+  var aggregateCollapsed: js.UndefOr[Boolean] = js.native
+  var aggregateEmpty: js.UndefOr[Boolean] = js.native
       // todo
-  var aggregators: js.UndefOr[js.Array[Aggregator[T]]] = js.undefined
-  var collapsed: js.UndefOr[Boolean] = js.undefined
-  var comparer: js.UndefOr[js.Function2[/* a */ Group[T], /* b */ Group[T], Double]] = js.undefined
-  var displayTotalsRow: js.UndefOr[Boolean] = js.undefined
-  var formatter: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], String]] = js.undefined
-  var getter: js.UndefOr[(js.Function1[/* item */ js.UndefOr[T], _]) | String] = js.undefined
-  var predefinedValues: js.UndefOr[js.Array[_]] = js.undefined
+  var aggregators: js.UndefOr[js.Array[Aggregator[T]]] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.native
+  var comparer: js.UndefOr[js.Function2[/* a */ Group[T], /* b */ Group[T], Double]] = js.native
+  var displayTotalsRow: js.UndefOr[Boolean] = js.native
+  var formatter: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], String]] = js.native
+  var getter: js.UndefOr[(js.Function1[/* item */ js.UndefOr[T], _]) | String] = js.native
+  var predefinedValues: js.UndefOr[js.Array[_]] = js.native
 }
 
 object GroupingOptions {
   @scala.inline
-  def apply[T](
-    aggregateChildGroups: js.UndefOr[Boolean] = js.undefined,
-    aggregateCollapsed: js.UndefOr[Boolean] = js.undefined,
-    aggregateEmpty: js.UndefOr[Boolean] = js.undefined,
-    aggregators: js.Array[Aggregator[T]] = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    comparer: (/* a */ Group[T], /* b */ Group[T]) => Double = null,
-    displayTotalsRow: js.UndefOr[Boolean] = js.undefined,
-    formatter: /* item */ js.UndefOr[T] => String = null,
-    getter: (js.Function1[/* item */ js.UndefOr[T], _]) | String = null,
-    predefinedValues: js.Array[_] = null
-  ): GroupingOptions[T] = {
+  def apply[T](): GroupingOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(aggregateChildGroups)) __obj.updateDynamic("aggregateChildGroups")(aggregateChildGroups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregateCollapsed)) __obj.updateDynamic("aggregateCollapsed")(aggregateCollapsed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(aggregateEmpty)) __obj.updateDynamic("aggregateEmpty")(aggregateEmpty.get.asInstanceOf[js.Any])
-    if (aggregators != null) __obj.updateDynamic("aggregators")(aggregators.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.get.asInstanceOf[js.Any])
-    if (comparer != null) __obj.updateDynamic("comparer")(js.Any.fromFunction2(comparer))
-    if (!js.isUndefined(displayTotalsRow)) __obj.updateDynamic("displayTotalsRow")(displayTotalsRow.get.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (getter != null) __obj.updateDynamic("getter")(getter.asInstanceOf[js.Any])
-    if (predefinedValues != null) __obj.updateDynamic("predefinedValues")(predefinedValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupingOptions[T]]
   }
+  @scala.inline
+  implicit class GroupingOptionsOps[Self <: GroupingOptions[_], T] (val x: Self with GroupingOptions[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregateChildGroups(value: Boolean): Self = this.set("aggregateChildGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateChildGroups: Self = this.set("aggregateChildGroups", js.undefined)
+    @scala.inline
+    def setAggregateCollapsed(value: Boolean): Self = this.set("aggregateCollapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateCollapsed: Self = this.set("aggregateCollapsed", js.undefined)
+    @scala.inline
+    def setAggregateEmpty(value: Boolean): Self = this.set("aggregateEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregateEmpty: Self = this.set("aggregateEmpty", js.undefined)
+    @scala.inline
+    def setAggregatorsVarargs(value: Aggregator[T]*): Self = this.set("aggregators", js.Array(value :_*))
+    @scala.inline
+    def setAggregators(value: js.Array[Aggregator[T]]): Self = this.set("aggregators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregators: Self = this.set("aggregators", js.undefined)
+    @scala.inline
+    def setCollapsed(value: Boolean): Self = this.set("collapsed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsed: Self = this.set("collapsed", js.undefined)
+    @scala.inline
+    def setComparer(value: (/* a */ Group[T], /* b */ Group[T]) => Double): Self = this.set("comparer", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteComparer: Self = this.set("comparer", js.undefined)
+    @scala.inline
+    def setDisplayTotalsRow(value: Boolean): Self = this.set("displayTotalsRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayTotalsRow: Self = this.set("displayTotalsRow", js.undefined)
+    @scala.inline
+    def setFormatter(value: /* item */ js.UndefOr[T] => String): Self = this.set("formatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setGetterFunction1(value: /* item */ js.UndefOr[T] => _): Self = this.set("getter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetter(value: (js.Function1[/* item */ js.UndefOr[T], _]) | String): Self = this.set("getter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetter: Self = this.set("getter", js.undefined)
+    @scala.inline
+    def setPredefinedValuesVarargs(value: js.Any*): Self = this.set("predefinedValues", js.Array(value :_*))
+    @scala.inline
+    def setPredefinedValues(value: js.Array[_]): Self = this.set("predefinedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredefinedValues: Self = this.set("predefinedValues", js.undefined)
+  }
+  
 }
 

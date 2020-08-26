@@ -28,6 +28,7 @@ class ResourceManagementSegments protected () extends js.Object {
     */
   def list(): GaxiosPromise[Unit] = js.native
   def list(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def list(params: ParamsResourceManagementSegmentsList): GaxiosPromise[Unit] = js.native
   def list(params: ParamsResourceManagementSegmentsList, callback: BodyResponseCallback[Unit]): Unit = js.native
   def list(

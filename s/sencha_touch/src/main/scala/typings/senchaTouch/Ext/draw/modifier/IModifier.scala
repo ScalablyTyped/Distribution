@@ -1,127 +1,128 @@
 package typings.senchaTouch.Ext.draw.modifier
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.draw.sprite.ISprite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IModifier extends IBase {
   /** [Method] Returns the value of next
     * @returns Ext.draw.modifier.Modifier
     */
-  var getNext: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var getNext: js.UndefOr[js.Function0[this.type]] = js.native
   /** [Method] Returns the value of previous
     * @returns Ext.draw.modifier.Modifier
     */
-  var getPrevious: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var getPrevious: js.UndefOr[js.Function0[this.type]] = js.native
   /** [Method] Returns the value of sprite
     * @returns Ext.draw.sprite.Sprite
     */
-  var getSprite: js.UndefOr[js.Function0[ISprite]] = js.undefined
+  var getSprite: js.UndefOr[js.Function0[ISprite]] = js.native
   /** [Config Option] (Ext.draw.modifier.Modifier) */
-  var next: js.UndefOr[IModifier] = js.undefined
+  var next: js.UndefOr[IModifier] = js.native
   /** [Method] Invoked when changes need to be popped up to the top
     * @param attributes Object The source attributes.
     * @param changes Object The changes to be popped up.
     */
   var popUp: js.UndefOr[
     js.Function2[/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Method] Validate attribute set before use
     * @param attr Object The attribute to be validated. Note that it may be already initialized, so do not override properties that have already been used.
     */
-  var prepareAttributes: js.UndefOr[js.Function1[/* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var prepareAttributes: js.UndefOr[js.Function1[/* attr */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Ext.draw.modifier.Modifier) */
-  var previous: js.UndefOr[IModifier] = js.undefined
+  var previous: js.UndefOr[IModifier] = js.native
   /** [Method] Invoked when changes need to be pushed down to the sprite
     * @param attr Object The source attributes.
     * @param changes Object The changes to make. This object might be changed unexpectedly inside the method.
     * @returns Mixed
     */
-  var pushDown: js.UndefOr[js.Function2[/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], _]] = js.undefined
+  var pushDown: js.UndefOr[js.Function2[/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], _]] = js.native
   /** [Method] Sets the value of next
     * @param next Ext.draw.modifier.Modifier The new value.
     */
-  var setNext: js.UndefOr[js.Function1[/* next */ js.UndefOr[this.type], Unit]] = js.undefined
+  var setNext: js.UndefOr[js.Function1[/* next */ js.UndefOr[this.type], Unit]] = js.native
   /** [Method] Sets the value of previous
     * @param previous Ext.draw.modifier.Modifier The new value.
     */
-  var setPrevious: js.UndefOr[js.Function1[/* previous */ js.UndefOr[this.type], Unit]] = js.undefined
+  var setPrevious: js.UndefOr[js.Function1[/* previous */ js.UndefOr[this.type], Unit]] = js.native
   /** [Method] Sets the value of sprite
     * @param sprite Ext.draw.sprite.Sprite The new value.
     */
-  var setSprite: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.undefined
+  var setSprite: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[ISprite], Unit]] = js.native
   /** [Config Option] (Ext.draw.sprite.Sprite) */
-  var sprite: js.UndefOr[ISprite] = js.undefined
+  var sprite: js.UndefOr[ISprite] = js.native
 }
 
 object IModifier {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getNext: () => IModifier = null,
-    getPrevious: () => IModifier = null,
-    getSprite: () => ISprite = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    mixins: js.Any = null,
-    next: IModifier = null,
-    platformConfig: js.Any = null,
-    popUp: (/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => Unit = null,
-    prepareAttributes: /* attr */ js.UndefOr[js.Any] => Unit = null,
-    previous: IModifier = null,
-    pushDown: (/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => _ = null,
-    self: IClass = null,
-    setNext: /* next */ js.UndefOr[IModifier] => Unit = null,
-    setPrevious: /* previous */ js.UndefOr[IModifier] => Unit = null,
-    setSprite: /* sprite */ js.UndefOr[ISprite] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    sprite: ISprite = null,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IModifier = {
+  def apply(): IModifier = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getNext != null) __obj.updateDynamic("getNext")(js.Any.fromFunction0(getNext))
-    if (getPrevious != null) __obj.updateDynamic("getPrevious")(js.Any.fromFunction0(getPrevious))
-    if (getSprite != null) __obj.updateDynamic("getSprite")(js.Any.fromFunction0(getSprite))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (popUp != null) __obj.updateDynamic("popUp")(js.Any.fromFunction2(popUp))
-    if (prepareAttributes != null) __obj.updateDynamic("prepareAttributes")(js.Any.fromFunction1(prepareAttributes))
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
-    if (pushDown != null) __obj.updateDynamic("pushDown")(js.Any.fromFunction2(pushDown))
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setNext != null) __obj.updateDynamic("setNext")(js.Any.fromFunction1(setNext))
-    if (setPrevious != null) __obj.updateDynamic("setPrevious")(js.Any.fromFunction1(setPrevious))
-    if (setSprite != null) __obj.updateDynamic("setSprite")(js.Any.fromFunction1(setSprite))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (sprite != null) __obj.updateDynamic("sprite")(sprite.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModifier]
   }
+  @scala.inline
+  implicit class IModifierOps[Self <: IModifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetNext(value: () => IModifier): Self = this.set("getNext", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetNext: Self = this.set("getNext", js.undefined)
+    @scala.inline
+    def setGetPrevious(value: () => IModifier): Self = this.set("getPrevious", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPrevious: Self = this.set("getPrevious", js.undefined)
+    @scala.inline
+    def setGetSprite(value: () => ISprite): Self = this.set("getSprite", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetSprite: Self = this.set("getSprite", js.undefined)
+    @scala.inline
+    def setNext(value: IModifier): Self = this.set("next", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setPopUp(value: (/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => Unit): Self = this.set("popUp", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePopUp: Self = this.set("popUp", js.undefined)
+    @scala.inline
+    def setPrepareAttributes(value: /* attr */ js.UndefOr[js.Any] => Unit): Self = this.set("prepareAttributes", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePrepareAttributes: Self = this.set("prepareAttributes", js.undefined)
+    @scala.inline
+    def setPrevious(value: IModifier): Self = this.set("previous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevious: Self = this.set("previous", js.undefined)
+    @scala.inline
+    def setPushDown(value: (/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any]) => _): Self = this.set("pushDown", js.Any.fromFunction2(value))
+    @scala.inline
+    def deletePushDown: Self = this.set("pushDown", js.undefined)
+    @scala.inline
+    def setSetNext(value: /* next */ js.UndefOr[IModifier] => Unit): Self = this.set("setNext", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetNext: Self = this.set("setNext", js.undefined)
+    @scala.inline
+    def setSetPrevious(value: /* previous */ js.UndefOr[IModifier] => Unit): Self = this.set("setPrevious", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetPrevious: Self = this.set("setPrevious", js.undefined)
+    @scala.inline
+    def setSetSprite(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = this.set("setSprite", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetSprite: Self = this.set("setSprite", js.undefined)
+    @scala.inline
+    def setSprite(value: ISprite): Self = this.set("sprite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSprite: Self = this.set("sprite", js.undefined)
+  }
+  
 }
 

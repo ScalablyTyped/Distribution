@@ -11,8 +11,8 @@ CSRF token middleware
 | Full name          | csurf |
 | Keywords           | csrf, tokens, middleware, express |
 | # releases         | 2 |
-| # dependents       | 238 |
-| # downloads        | 12946389 |
+| # dependents       | 241 |
+| # downloads        | 12939896 |
 | # stars            | 122 |
 
 ## Links

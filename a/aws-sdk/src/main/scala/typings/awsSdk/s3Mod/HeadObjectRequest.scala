@@ -59,34 +59,70 @@ trait HeadObjectRequest extends js.Object {
 
 object HeadObjectRequest {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    Key: ObjectKey,
-    IfMatch: IfMatch = null,
-    IfModifiedSince: IfModifiedSince = null,
-    IfNoneMatch: IfNoneMatch = null,
-    IfUnmodifiedSince: IfUnmodifiedSince = null,
-    PartNumber: js.UndefOr[PartNumber] = js.undefined,
-    Range: Range = null,
-    RequestPayer: RequestPayer = null,
-    SSECustomerAlgorithm: SSECustomerAlgorithm = null,
-    SSECustomerKey: SSECustomerKey = null,
-    SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
-    VersionId: ObjectVersionId = null
-  ): HeadObjectRequest = {
+  def apply(Bucket: BucketName, Key: ObjectKey): HeadObjectRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
-    if (IfMatch != null) __obj.updateDynamic("IfMatch")(IfMatch.asInstanceOf[js.Any])
-    if (IfModifiedSince != null) __obj.updateDynamic("IfModifiedSince")(IfModifiedSince.asInstanceOf[js.Any])
-    if (IfNoneMatch != null) __obj.updateDynamic("IfNoneMatch")(IfNoneMatch.asInstanceOf[js.Any])
-    if (IfUnmodifiedSince != null) __obj.updateDynamic("IfUnmodifiedSince")(IfUnmodifiedSince.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartNumber)) __obj.updateDynamic("PartNumber")(PartNumber.get.asInstanceOf[js.Any])
-    if (Range != null) __obj.updateDynamic("Range")(Range.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
-    if (SSECustomerKey != null) __obj.updateDynamic("SSECustomerKey")(SSECustomerKey.asInstanceOf[js.Any])
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadObjectRequest]
   }
+  @scala.inline
+  implicit class HeadObjectRequestOps[Self <: HeadObjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: ObjectKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIfMatch(value: IfMatch): Self = this.set("IfMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMatch: Self = this.set("IfMatch", js.undefined)
+    @scala.inline
+    def setIfModifiedSince(value: IfModifiedSince): Self = this.set("IfModifiedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfModifiedSince: Self = this.set("IfModifiedSince", js.undefined)
+    @scala.inline
+    def setIfNoneMatch(value: IfNoneMatch): Self = this.set("IfNoneMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfNoneMatch: Self = this.set("IfNoneMatch", js.undefined)
+    @scala.inline
+    def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = this.set("IfUnmodifiedSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfUnmodifiedSince: Self = this.set("IfUnmodifiedSince", js.undefined)
+    @scala.inline
+    def setPartNumber(value: PartNumber): Self = this.set("PartNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartNumber: Self = this.set("PartNumber", js.undefined)
+    @scala.inline
+    def setRange(value: Range): Self = this.set("Range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("Range", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    @scala.inline
+    def setSSECustomerKey(value: SSECustomerKey): Self = this.set("SSECustomerKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKey: Self = this.set("SSECustomerKey", js.undefined)
+    @scala.inline
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    @scala.inline
+    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

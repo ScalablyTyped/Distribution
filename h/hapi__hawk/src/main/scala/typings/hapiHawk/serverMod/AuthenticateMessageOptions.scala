@@ -5,24 +5,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<@hapi/hawk.@hapi/hawk/lib/server.AuthenticateOptions, 'nonceFunc' | 'timestampSkewSec' | 'localtimeOffsetMsec'> */
+@js.native
 trait AuthenticateMessageOptions extends js.Object {
-  var localtimeOffsetMsec: js.UndefOr[Double] = js.undefined
-  var nonceFunc: js.UndefOr[NonceFunc] = js.undefined
-  var timestampSkewSec: js.UndefOr[Double] = js.undefined
+  var localtimeOffsetMsec: js.UndefOr[Double] = js.native
+  var nonceFunc: js.UndefOr[NonceFunc] = js.native
+  var timestampSkewSec: js.UndefOr[Double] = js.native
 }
 
 object AuthenticateMessageOptions {
   @scala.inline
-  def apply(
-    localtimeOffsetMsec: js.UndefOr[Double] = js.undefined,
-    nonceFunc: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit = null,
-    timestampSkewSec: js.UndefOr[Double] = js.undefined
-  ): AuthenticateMessageOptions = {
+  def apply(): AuthenticateMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(localtimeOffsetMsec)) __obj.updateDynamic("localtimeOffsetMsec")(localtimeOffsetMsec.get.asInstanceOf[js.Any])
-    if (nonceFunc != null) __obj.updateDynamic("nonceFunc")(js.Any.fromFunction3(nonceFunc))
-    if (!js.isUndefined(timestampSkewSec)) __obj.updateDynamic("timestampSkewSec")(timestampSkewSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateMessageOptions]
   }
+  @scala.inline
+  implicit class AuthenticateMessageOptionsOps[Self <: AuthenticateMessageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocaltimeOffsetMsec(value: Double): Self = this.set("localtimeOffsetMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocaltimeOffsetMsec: Self = this.set("localtimeOffsetMsec", js.undefined)
+    @scala.inline
+    def setNonceFunc(value: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit): Self = this.set("nonceFunc", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteNonceFunc: Self = this.set("nonceFunc", js.undefined)
+    @scala.inline
+    def setTimestampSkewSec(value: Double): Self = this.set("timestampSkewSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampSkewSec: Self = this.set("timestampSkewSec", js.undefined)
+  }
+  
 }
 

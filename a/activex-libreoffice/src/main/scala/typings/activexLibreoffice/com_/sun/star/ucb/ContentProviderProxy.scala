@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * provider can be created and registered at the UCB.
   * @see XContentProviderProxyFactory
   */
+@js.native
 trait ContentProviderProxy
   extends XContentProviderSupplier
      with XContentProvider

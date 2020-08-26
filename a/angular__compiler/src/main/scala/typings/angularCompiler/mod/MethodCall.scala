@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "MethodCall")
 @js.native
 class MethodCall protected ()
-  extends typings.angularCompiler.publicApiMod.MethodCall {
+  extends typings.angularCompiler.compilerMod.MethodCall {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

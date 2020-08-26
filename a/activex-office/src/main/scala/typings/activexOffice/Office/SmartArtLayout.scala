@@ -4,16 +4,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SmartArtLayout extends js.Object {
-  val Application: js.Any
-  val Category: String
-  val Creator: Double
-  val Description: String
-  val Id: String
-  val Name: String
+  val Application: js.Any = js.native
+  val Category: String = js.native
+  val Creator: Double = js.native
+  val Description: String = js.native
+  val Id: String = js.native
+  val Name: String = js.native
   @JSName("Office.SmartArtLayout_typekey")
-  var OfficeDotSmartArtLayout_typekey: SmartArtLayout
-  val Parent: js.Any
+  var OfficeDotSmartArtLayout_typekey: SmartArtLayout = js.native
+  val Parent: js.Any = js.native
 }
 
 object SmartArtLayout {
@@ -32,5 +33,34 @@ object SmartArtLayout {
     __obj.updateDynamic("Office.SmartArtLayout_typekey")(OfficeDotSmartArtLayout_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmartArtLayout]
   }
+  @scala.inline
+  implicit class SmartArtLayoutOps[Self <: SmartArtLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCategory(value: String): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOfficeDotSmartArtLayout_typekey(value: SmartArtLayout): Self = this.set("Office.SmartArtLayout_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+  }
+  
 }
 

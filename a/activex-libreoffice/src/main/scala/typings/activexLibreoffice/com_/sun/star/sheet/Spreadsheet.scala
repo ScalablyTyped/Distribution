@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * This service extents the service {@link SheetCellRange} . A spreadsheet is nothing else than a cell range with extended functionality.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
+@js.native
 trait Spreadsheet
   extends SheetCellRange
      with Scenario
@@ -46,15 +47,15 @@ trait Spreadsheet
     * removed.
     * @see XPrintAreas
     */
-  var AutomaticPrintArea: Boolean
+  var AutomaticPrintArea: Boolean = js.native
   /** specifies all conditional formats of that sheet */
-  var ConditionalFormats: XConditionalFormats
+  var ConditionalFormats: XConditionalFormats = js.native
   /** specifies if the sheet is visible. */
-  var IsVisible: Boolean
+  var IsVisible: Boolean = js.native
   /** specifies the page style of the sheet. */
-  var PageStyle: String
+  var PageStyle: String = js.native
   /** specifies the color of the sheet tab, if any. */
-  var TabColor: Color
+  var TabColor: Color = js.native
   /**
     * specifies the direction of the columns in the spreadsheet.
     *
@@ -62,7 +63,7 @@ trait Spreadsheet
     * com.sun.star.text.WritingMode2.RL_TB} to order the columns from right to left.
     * @see com.sun.star.text.WritingMode2
     */
-  var TableLayout: Double
+  var TableLayout: Double = js.native
 }
 
 object Spreadsheet {
@@ -110,5 +111,30 @@ object Spreadsheet {
     js.Dynamic.global.Object.assign(__obj, XTableChartsSupplier)
     __obj.asInstanceOf[Spreadsheet]
   }
+  @scala.inline
+  implicit class SpreadsheetOps[Self <: Spreadsheet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutomaticPrintArea(value: Boolean): Self = this.set("AutomaticPrintArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConditionalFormats(value: XConditionalFormats): Self = this.set("ConditionalFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsVisible(value: Boolean): Self = this.set("IsVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPageStyle(value: String): Self = this.set("PageStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTabColor(value: Color): Self = this.set("TabColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableLayout(value: Double): Self = this.set("TableLayout", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -7,67 +7,80 @@ import scala.scalajs.js.annotation._
 /**
   * Care Team members
   */
+@js.native
 trait ExplanationOfBenefitCareTeam extends BackboneElement {
   /**
     * Contains extended information for property 'responsible'.
     */
-  var _responsible: js.UndefOr[Element] = js.undefined
+  var _responsible: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.undefined
+  var _sequence: js.UndefOr[Element] = js.native
   /**
     * Member of the Care Team
     */
-  var provider: Reference
+  var provider: Reference = js.native
   /**
     * Type, classification or Specialization
     */
-  var qualification: js.UndefOr[CodeableConcept] = js.undefined
+  var qualification: js.UndefOr[CodeableConcept] = js.native
   /**
     * Billing practitioner
     */
-  var responsible: js.UndefOr[Boolean] = js.undefined
+  var responsible: js.UndefOr[Boolean] = js.native
   /**
     * Role on the team
     */
-  var role: js.UndefOr[CodeableConcept] = js.undefined
+  var role: js.UndefOr[CodeableConcept] = js.native
   /**
     * Number to covey order of careteam
     */
-  var sequence: positiveInt
+  var sequence: positiveInt = js.native
 }
 
 object ExplanationOfBenefitCareTeam {
   @scala.inline
-  def apply(
-    provider: Reference,
-    sequence: positiveInt,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _responsible: Element = null,
-    _sequence: Element = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    qualification: CodeableConcept = null,
-    responsible: js.UndefOr[Boolean] = js.undefined,
-    role: CodeableConcept = null
-  ): ExplanationOfBenefitCareTeam = {
+  def apply(provider: Reference, sequence: positiveInt): ExplanationOfBenefitCareTeam = {
     val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_responsible != null) __obj.updateDynamic("_responsible")(_responsible.asInstanceOf[js.Any])
-    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (qualification != null) __obj.updateDynamic("qualification")(qualification.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsible)) __obj.updateDynamic("responsible")(responsible.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefitCareTeam]
   }
+  @scala.inline
+  implicit class ExplanationOfBenefitCareTeamOps[Self <: ExplanationOfBenefitCareTeam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProvider(value: Reference): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSequence(value: positiveInt): Self = this.set("sequence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_responsible(value: Element): Self = this.set("_responsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_responsible: Self = this.set("_responsible", js.undefined)
+    @scala.inline
+    def set_sequence(value: Element): Self = this.set("_sequence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_sequence: Self = this.set("_sequence", js.undefined)
+    @scala.inline
+    def setQualification(value: CodeableConcept): Self = this.set("qualification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualification: Self = this.set("qualification", js.undefined)
+    @scala.inline
+    def setResponsible(value: Boolean): Self = this.set("responsible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsible: Self = this.set("responsible", js.undefined)
+    @scala.inline
+    def setRole(value: CodeableConcept): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+  }
+  
 }
 

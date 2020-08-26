@@ -10,9 +10,9 @@ Javascript Library for IOTA
 | ------------------ | :-------------: |
 | Full name          | iota.lib.js |
 | Keywords           | iota, tangle, library, browser, javascript, nodejs, API |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 53 |
-| # downloads        | 39681 |
+| # downloads        | 38760 |
 | # stars            | 2 |
 
 ## Links

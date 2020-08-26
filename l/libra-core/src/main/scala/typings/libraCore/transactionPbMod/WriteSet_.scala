@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WriteSet_ () extends Message {
   def addWriteSet(): WriteOp = js.native
+  def addWriteSet(value: js.UndefOr[scala.Nothing], index: Double): WriteOp = js.native
   def addWriteSet(value: WriteOp): WriteOp = js.native
   def addWriteSet(value: WriteOp, index: Double): WriteOp = js.native
   def clearWriteSetList(): Unit = js.native

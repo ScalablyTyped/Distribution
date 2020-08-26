@@ -3,60 +3,101 @@ package typings.childProcessPromise.anon
 import typings.childProcessPromise.childProcessPromiseStrings.stderr
 import typings.childProcessPromise.childProcessPromiseStrings.stdout
 import typings.node.BufferEncoding
-import typings.node.NodeJS.ProcessEnv
-import typings.node.NodeJS.Signals
+import typings.node.processMod.global.NodeJS.ProcessEnv
+import typings.node.processMod.global.NodeJS.Signals
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding ? :node.BufferEncoding} & node.child_process.ExecOptions> */
+/* Inlined std.Readonly<child-process-promise.child-process-promise.Options & {  encoding :node.BufferEncoding | undefined} & node.child_process.ExecOptions> */
+@js.native
 trait ReadonlyOptionsencodingBu_ extends js.Object {
   val capture: js.UndefOr[
     (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])
-  ] = js.undefined
-  val cwd: js.UndefOr[String] = js.undefined
-  val encoding: js.UndefOr[BufferEncoding] = js.undefined
-  val env: js.UndefOr[ProcessEnv] = js.undefined
-  val gid: js.UndefOr[Double] = js.undefined
-  val killSignal: js.UndefOr[Signals | Double] = js.undefined
-  val maxBuffer: js.UndefOr[Double] = js.undefined
-  val shell: js.UndefOr[String] = js.undefined
-  val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.undefined
-  val timeout: js.UndefOr[Double] = js.undefined
-  val uid: js.UndefOr[Double] = js.undefined
-  val windowsHide: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  val cwd: js.UndefOr[String] = js.native
+  val encoding: js.UndefOr[BufferEncoding] = js.native
+  val env: js.UndefOr[ProcessEnv] = js.native
+  val gid: js.UndefOr[Double] = js.native
+  val killSignal: js.UndefOr[Signals | Double] = js.native
+  val maxBuffer: js.UndefOr[Double] = js.native
+  val shell: js.UndefOr[String] = js.native
+  val successfulExitCodes: js.UndefOr[js.Array[Double]] = js.native
+  val timeout: js.UndefOr[Double] = js.native
+  val uid: js.UndefOr[Double] = js.native
+  val windowsHide: js.UndefOr[Boolean] = js.native
 }
 
 object ReadonlyOptionsencodingBu_ {
   @scala.inline
-  def apply(
-    capture: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout]) = null,
-    cwd: String = null,
-    encoding: BufferEncoding = null,
-    env: ProcessEnv = null,
-    gid: js.UndefOr[Double] = js.undefined,
-    killSignal: Signals | Double = null,
-    maxBuffer: js.UndefOr[Double] = js.undefined,
-    shell: String = null,
-    successfulExitCodes: js.Array[Double] = null,
-    timeout: js.UndefOr[Double] = js.undefined,
-    uid: js.UndefOr[Double] = js.undefined,
-    windowsHide: js.UndefOr[Boolean] = js.undefined
-  ): ReadonlyOptionsencodingBu_ = {
+  def apply(): ReadonlyOptionsencodingBu_ = {
     val __obj = js.Dynamic.literal()
-    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(gid)) __obj.updateDynamic("gid")(gid.get.asInstanceOf[js.Any])
-    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBuffer)) __obj.updateDynamic("maxBuffer")(maxBuffer.get.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (successfulExitCodes != null) __obj.updateDynamic("successfulExitCodes")(successfulExitCodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uid)) __obj.updateDynamic("uid")(uid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyOptionsencodingBu_]
   }
+  @scala.inline
+  implicit class ReadonlyOptionsencodingBu_Ops[Self <: ReadonlyOptionsencodingBu_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureVarargs(value: (stdout | stderr | js.Any)*): Self = this.set("capture", js.Array(value :_*))
+    @scala.inline
+    def setCapture(value: (js.Array[stdout | stderr | js.Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = this.set("capture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapture: Self = this.set("capture", js.undefined)
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setEncoding(value: BufferEncoding): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setEnv(value: ProcessEnv): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setGid(value: Double): Self = this.set("gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("gid", js.undefined)
+    @scala.inline
+    def setKillSignal(value: Signals | Double): Self = this.set("killSignal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKillSignal: Self = this.set("killSignal", js.undefined)
+    @scala.inline
+    def setMaxBuffer(value: Double): Self = this.set("maxBuffer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBuffer: Self = this.set("maxBuffer", js.undefined)
+    @scala.inline
+    def setShell(value: String): Self = this.set("shell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShell: Self = this.set("shell", js.undefined)
+    @scala.inline
+    def setSuccessfulExitCodesVarargs(value: Double*): Self = this.set("successfulExitCodes", js.Array(value :_*))
+    @scala.inline
+    def setSuccessfulExitCodes(value: js.Array[Double]): Self = this.set("successfulExitCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfulExitCodes: Self = this.set("successfulExitCodes", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setUid(value: Double): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+    @scala.inline
+    def setWindowsHide(value: Boolean): Self = this.set("windowsHide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowsHide: Self = this.set("windowsHide", js.undefined)
+  }
+  
 }
 

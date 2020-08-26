@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object extentMod extends js.Object {
   def applyTransform(extent: Extent, transformFn: TransformFunction): Extent = js.native
+  def applyTransform(
+    extent: Extent,
+    transformFn: TransformFunction,
+    opt_extent: js.UndefOr[scala.Nothing],
+    opt_stops: Double
+  ): Extent = js.native
   def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent): Extent = js.native
   def applyTransform(extent: Extent, transformFn: TransformFunction, opt_extent: Extent, opt_stops: Double): Extent = js.native
   def approximatelyEquals(extent1: Extent, extent2: Extent, tolerance: Double): Boolean = js.native

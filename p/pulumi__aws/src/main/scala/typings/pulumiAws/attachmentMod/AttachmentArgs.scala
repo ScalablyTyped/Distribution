@@ -23,15 +23,32 @@ trait AttachmentArgs extends js.Object {
 
 object AttachmentArgs {
   @scala.inline
-  def apply(
-    autoscalingGroupName: Input[String],
-    albTargetGroupArn: Input[String] = null,
-    elb: Input[String] = null
-  ): AttachmentArgs = {
+  def apply(autoscalingGroupName: Input[String]): AttachmentArgs = {
     val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any])
-    if (albTargetGroupArn != null) __obj.updateDynamic("albTargetGroupArn")(albTargetGroupArn.asInstanceOf[js.Any])
-    if (elb != null) __obj.updateDynamic("elb")(elb.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentArgs]
   }
+  @scala.inline
+  implicit class AttachmentArgsOps[Self <: AttachmentArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingGroupName(value: Input[String]): Self = this.set("autoscalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlbTargetGroupArn(value: Input[String]): Self = this.set("albTargetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbTargetGroupArn: Self = this.set("albTargetGroupArn", js.undefined)
+    @scala.inline
+    def setElb(value: Input[String]): Self = this.set("elb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElb: Self = this.set("elb", js.undefined)
+  }
+  
 }
 

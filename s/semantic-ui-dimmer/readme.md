@@ -12,7 +12,7 @@ Single component release of dimmer
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 45940 |
+| # downloads        | 48454 |
 | # stars            | 0 |
 
 ## Links

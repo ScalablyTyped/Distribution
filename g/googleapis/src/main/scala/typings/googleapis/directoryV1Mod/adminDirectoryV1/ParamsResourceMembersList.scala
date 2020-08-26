@@ -38,36 +38,46 @@ trait ParamsResourceMembersList extends StandardParameters {
 
 object ParamsResourceMembersList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    fields: String = null,
-    groupKey: String = null,
-    includeDerivedMembership: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    pageToken: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    roles: String = null,
-    userIp: String = null
-  ): ParamsResourceMembersList = {
+  def apply(): ParamsResourceMembersList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (groupKey != null) __obj.updateDynamic("groupKey")(groupKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDerivedMembership)) __obj.updateDynamic("includeDerivedMembership")(includeDerivedMembership.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceMembersList]
   }
+  @scala.inline
+  implicit class ParamsResourceMembersListOps[Self <: ParamsResourceMembersList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setGroupKey(value: String): Self = this.set("groupKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupKey: Self = this.set("groupKey", js.undefined)
+    @scala.inline
+    def setIncludeDerivedMembership(value: Boolean): Self = this.set("includeDerivedMembership", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDerivedMembership: Self = this.set("includeDerivedMembership", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setRoles(value: String): Self = this.set("roles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoles: Self = this.set("roles", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,5 @@
 package typings.pkijs.certIDMod
 
-import typings.asn1js.mod.Integer
-import typings.asn1js.mod.OctetString
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,35 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends CertID {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var hashAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
-  /* CompleteClass */
-  override var issuerKeyHash: OctetString = js.native
-  /* CompleteClass */
-  override var issuerNameHash: OctetString = js.native
-  /* CompleteClass */
-  override var serialNumber: Integer = js.native
-  /**
-    * Making OCSP certificate identifier for specific certificate
-    * @param {Certificate} certificate Certificate making OCSP Request for
-    * @param {CreateFroCertificateParams} parameters Additional parameters
-    * @returns {Promise}
-    */
-  /* CompleteClass */
-  override def createForCertificate(certificate: typings.pkijs.certificateMod.default, parameters: CreateFroCertificateParams): js.Thenable[Unit] = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): Unit = js.native
-  /**
-    * Check that two "CertIDs" are equal
-    * @param {CertID} certificateID Identifier of the certificate to be checked
-    * @returns {boolean}
-    */
-  /* CompleteClass */
-  override def isEqual(certificateID: CertID): Boolean = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

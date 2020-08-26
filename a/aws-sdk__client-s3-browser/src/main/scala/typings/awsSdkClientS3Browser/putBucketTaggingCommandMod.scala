@@ -27,17 +27,10 @@ object putBucketTaggingCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutBucketTaggingInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketTaggingInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketTaggingInput, PutBucketTaggingOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketTaggingInput, PutBucketTaggingOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketTaggingInput, PutBucketTaggingOutput] = js.native
   }

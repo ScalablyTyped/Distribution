@@ -24,6 +24,10 @@ trait BootstrapTreeViewNode extends Control {
   def getNodeByText(text: String): BootstrapTreeViewNode | Null = js.native
   def getNodeCount(): Double = js.native
   def getText(): String = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
+  ): this.type = js.native
   def setBadgeIconCssClass(cssClass: String): Unit = js.native
   def setBadgeText(text: String): Unit = js.native
   def setChecked(value: Boolean): Unit = js.native

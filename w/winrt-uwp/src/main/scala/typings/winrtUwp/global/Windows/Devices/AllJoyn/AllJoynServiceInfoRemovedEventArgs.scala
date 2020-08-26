@@ -14,8 +14,5 @@ class AllJoynServiceInfoRemovedEventArgs protected ()
     * @param uniqueName The unique app name.
     */
   def this(uniqueName: String) = this()
-  /** The unique bus name of the advertising app that is no longer available. */
-  /* CompleteClass */
-  override var uniqueName: String = js.native
 }
 

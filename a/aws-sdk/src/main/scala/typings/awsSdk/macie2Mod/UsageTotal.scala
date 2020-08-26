@@ -22,12 +22,34 @@ trait UsageTotal extends js.Object {
 
 object UsageTotal {
   @scala.inline
-  def apply(currency: Currency = null, estimatedCost: string = null, `type`: UsageType = null): UsageTotal = {
+  def apply(): UsageTotal = {
     val __obj = js.Dynamic.literal()
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (estimatedCost != null) __obj.updateDynamic("estimatedCost")(estimatedCost.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageTotal]
   }
+  @scala.inline
+  implicit class UsageTotalOps[Self <: UsageTotal] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrency(value: Currency): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setEstimatedCost(value: string): Self = this.set("estimatedCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedCost: Self = this.set("estimatedCost", js.undefined)
+    @scala.inline
+    def setType(value: UsageType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

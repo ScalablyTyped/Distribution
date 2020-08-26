@@ -26,13 +26,38 @@ trait PatchOperation extends js.Object {
 
 object PatchOperation {
   @scala.inline
-  def apply(from: String = null, op: Op = null, path: String = null, value: String = null): PatchOperation = {
+  def apply(): PatchOperation = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (op != null) __obj.updateDynamic("op")(op.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchOperation]
   }
+  @scala.inline
+  implicit class PatchOperationOps[Self <: PatchOperation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setOp(value: Op): Self = this.set("op", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOp: Self = this.set("op", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

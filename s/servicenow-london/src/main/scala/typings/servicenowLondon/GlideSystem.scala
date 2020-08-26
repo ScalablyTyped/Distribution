@@ -24,9 +24,164 @@ trait GlideSystem extends js.Object {
   def daysAgoEnd(days: Double): String = js.native
   def daysAgoStart(days: Double): String = js.native
   def debug(message: String): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def debug(message: String, parm1: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any, parm4: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def debug(message: String, parm1: js.Any, parm2: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def debug(message: String, parm1: js.Any, parm2: js.Any, parm3: js.UndefOr[scala.Nothing], parm4: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def debug(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any): Unit = js.native
+  def debug(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
   def debug(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
   def debug(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any, parm5: js.Any): Unit = js.native
   def endOfLastMonth(): String = js.native
@@ -40,9 +195,164 @@ trait GlideSystem extends js.Object {
   def endOfThisWeek(): String = js.native
   def endOfThisYear(): String = js.native
   def error(message: String): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def error(message: String, parm1: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any, parm4: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def error(message: String, parm1: js.Any, parm2: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.UndefOr[scala.Nothing], parm4: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any): Unit = js.native
+  def error(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
   def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
   def error(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any, parm5: js.Any): Unit = js.native
   def eventQueue(eventName: String, gr: ScopedGlideRecord, optionalParam1: String, optionalParam2: String): Unit = js.native
@@ -84,9 +394,164 @@ trait GlideSystem extends js.Object {
   def hoursAgoStart(hours: Double): String = js.native
   def include(include: String): Unit = js.native
   def info(message: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.UndefOr[scala.Nothing], parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.UndefOr[scala.Nothing], parm2: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def info(message: js.Any, parm1: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any, parm4: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def info(message: js.Any, parm1: js.Any, parm2: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def info(message: js.Any, parm1: js.Any, parm2: js.Any, parm3: js.UndefOr[scala.Nothing], parm4: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def info(message: js.Any, parm1: js.Any, parm2: js.Any, parm3: js.Any): Unit = js.native
+  def info(
+    message: js.Any,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
   def info(message: js.Any, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
   def info(message: js.Any, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any, parm5: js.Any): Unit = js.native
   def isDebugging(): Boolean = js.native
@@ -105,9 +570,164 @@ trait GlideSystem extends js.Object {
   def setRedirect(uri: String): Unit = js.native
   def tableExists(table: String): Boolean = js.native
   def warn(message: String): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.UndefOr[scala.Nothing], parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.UndefOr[scala.Nothing],
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def warn(message: String, parm1: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any
+  ): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.Any, parm2: js.UndefOr[scala.Nothing], parm3: js.Any, parm4: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.UndefOr[scala.Nothing],
+    parm3: js.Any,
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def warn(message: String, parm1: js.Any, parm2: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
+  def warn(message: String, parm1: js.Any, parm2: js.Any, parm3: js.UndefOr[scala.Nothing], parm4: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.UndefOr[scala.Nothing],
+    parm4: js.Any,
+    parm5: js.Any
+  ): Unit = js.native
   def warn(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any): Unit = js.native
+  def warn(
+    message: String,
+    parm1: js.Any,
+    parm2: js.Any,
+    parm3: js.Any,
+    parm4: js.UndefOr[scala.Nothing],
+    parm5: js.Any
+  ): Unit = js.native
   def warn(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any): Unit = js.native
   def warn(message: String, parm1: js.Any, parm2: js.Any, parm3: js.Any, parm4: js.Any, parm5: js.Any): Unit = js.native
   def xmlToJSON(xml: String): js.Any = js.native

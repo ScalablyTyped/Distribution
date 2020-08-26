@@ -29,7 +29,7 @@ object mod extends js.Object {
   }
   
   @JSName("version_converter")
-  val versionConverter: /* "1.7.4" */ String = js.native
+  val versionConverter: /* "2.0.1" */ String = js.native
   def deregisterOp(name: String): Unit = js.native
   def loadGraphModel(modelUrl: String): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native
   def loadGraphModel(modelUrl: String, options: LoadOptions): js.Promise[typings.tensorflowTfjsConverter.graphModelMod.GraphModel] = js.native

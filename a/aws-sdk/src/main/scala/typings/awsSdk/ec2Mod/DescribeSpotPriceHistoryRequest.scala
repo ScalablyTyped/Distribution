@@ -46,28 +46,64 @@ trait DescribeSpotPriceHistoryRequest extends js.Object {
 
 object DescribeSpotPriceHistoryRequest {
   @scala.inline
-  def apply(
-    AvailabilityZone: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    EndTime: DateTime = null,
-    Filters: FilterList = null,
-    InstanceTypes: InstanceTypeList = null,
-    MaxResults: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null,
-    ProductDescriptions: ProductDescriptionList = null,
-    StartTime: DateTime = null
-  ): DescribeSpotPriceHistoryRequest = {
+  def apply(): DescribeSpotPriceHistoryRequest = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (InstanceTypes != null) __obj.updateDynamic("InstanceTypes")(InstanceTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ProductDescriptions != null) __obj.updateDynamic("ProductDescriptions")(ProductDescriptions.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSpotPriceHistoryRequest]
   }
+  @scala.inline
+  implicit class DescribeSpotPriceHistoryRequestOps[Self <: DescribeSpotPriceHistoryRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setEndTime(value: DateTime): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setInstanceTypesVarargs(value: InstanceType*): Self = this.set("InstanceTypes", js.Array(value :_*))
+    @scala.inline
+    def setInstanceTypes(value: InstanceTypeList): Self = this.set("InstanceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTypes: Self = this.set("InstanceTypes", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setProductDescriptionsVarargs(value: String*): Self = this.set("ProductDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setProductDescriptions(value: ProductDescriptionList): Self = this.set("ProductDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductDescriptions: Self = this.set("ProductDescriptions", js.undefined)
+    @scala.inline
+    def setStartTime(value: DateTime): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

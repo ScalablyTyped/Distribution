@@ -4,13 +4,6 @@ import typings.geojson.mod.Feature
 import typings.geojson.mod.FeatureCollection
 import typings.geojson.mod.GeoJsonProperties
 import typings.geojson.mod.Geometry
-import typings.mapboxGl.mapboxGlStrings.`raster-dem`
-import typings.mapboxGl.mapboxGlStrings.canvas
-import typings.mapboxGl.mapboxGlStrings.geojson
-import typings.mapboxGl.mapboxGlStrings.image_
-import typings.mapboxGl.mapboxGlStrings.raster
-import typings.mapboxGl.mapboxGlStrings.vector
-import typings.mapboxGl.mapboxGlStrings.video
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -21,11 +14,6 @@ class GeoJSONSource ()
   extends GeoJSONSourceRaw
      with AnySourceImpl {
   def this(options: GeoJSONSourceOptions) = this()
-  /* CompleteClass */
-  override var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
-  /* CompleteClass */
-  @JSName("type")
-  override var type_GeoJSONSourceRaw: geojson = js.native
   def getClusterChildren(
     clusterId: Double,
     callback: js.Function2[

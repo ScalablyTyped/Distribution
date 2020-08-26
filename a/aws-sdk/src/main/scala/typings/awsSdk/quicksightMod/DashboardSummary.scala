@@ -38,24 +38,50 @@ trait DashboardSummary extends js.Object {
 
 object DashboardSummary {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    CreatedTime: Timestamp_ = null,
-    DashboardId: RestrictiveResourceId = null,
-    LastPublishedTime: Timestamp_ = null,
-    LastUpdatedTime: Timestamp_ = null,
-    Name: DashboardName = null,
-    PublishedVersionNumber: js.UndefOr[VersionNumber] = js.undefined
-  ): DashboardSummary = {
+  def apply(): DashboardSummary = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (DashboardId != null) __obj.updateDynamic("DashboardId")(DashboardId.asInstanceOf[js.Any])
-    if (LastPublishedTime != null) __obj.updateDynamic("LastPublishedTime")(LastPublishedTime.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(PublishedVersionNumber)) __obj.updateDynamic("PublishedVersionNumber")(PublishedVersionNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DashboardSummary]
   }
+  @scala.inline
+  implicit class DashboardSummaryOps[Self <: DashboardSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: Timestamp_): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDashboardId(value: RestrictiveResourceId): Self = this.set("DashboardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDashboardId: Self = this.set("DashboardId", js.undefined)
+    @scala.inline
+    def setLastPublishedTime(value: Timestamp_): Self = this.set("LastPublishedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastPublishedTime: Self = this.set("LastPublishedTime", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: Timestamp_): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setName(value: DashboardName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setPublishedVersionNumber(value: VersionNumber): Self = this.set("PublishedVersionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedVersionNumber: Self = this.set("PublishedVersionNumber", js.undefined)
+  }
+  
 }
 

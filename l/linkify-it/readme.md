@@ -11,8 +11,8 @@ Links recognition library with FULL unicode support
 | Full name          | linkify-it |
 | Keywords           | linkify, linkifier, autolink, autolinker |
 | # releases         | 3 |
-| # dependents       | 125 |
-| # downloads        | 40822711 |
+| # dependents       | 127 |
+| # downloads        | 42465030 |
 | # stars            | 5 |
 
 ## Links

@@ -4,135 +4,228 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UltimateListViewProps extends js.Object {
-  var allLoadedText: js.UndefOr[js.Any] = js.undefined
-  var arrowImageSource: js.UndefOr[js.Any] = js.undefined
-  var arrowImageStyle: js.UndefOr[js.Any] = js.undefined
-  var autoPagination: js.UndefOr[js.Any] = js.undefined
-  var customRefreshControl: js.UndefOr[js.Any] = js.undefined
-  var customRefreshView: js.UndefOr[js.Any] = js.undefined
-  var dateFormat: js.UndefOr[js.Any] = js.undefined
-  var dateStyle: js.UndefOr[js.Any] = js.undefined
-  var dateTitle: js.UndefOr[js.Any] = js.undefined
-  var displayDate: js.UndefOr[js.Any] = js.undefined
-  var emptyView: js.UndefOr[js.Any] = js.undefined
-  var enableEmptySections: js.UndefOr[js.Any] = js.undefined
-  var fetchingSpinnerSize: js.UndefOr[js.Any] = js.undefined
-  var firstLoader: js.UndefOr[js.Any] = js.undefined
-  var header: js.UndefOr[js.Any] = js.undefined
-  var horizontal: js.UndefOr[js.Any] = js.undefined
-  var initialNumToRender: js.UndefOr[js.Any] = js.undefined
-  var numColumns: js.UndefOr[js.Any] = js.undefined
-  var pagination: js.UndefOr[js.Any] = js.undefined
-  var paginationAllLoadedView: js.UndefOr[js.Any] = js.undefined
-  var paginationBtnText: js.UndefOr[js.Any] = js.undefined
-  var paginationFetchingView: js.UndefOr[js.Any] = js.undefined
-  var paginationWaitingView: js.UndefOr[js.Any] = js.undefined
-  var refreshViewHeight: js.UndefOr[js.Any] = js.undefined
-  var refreshViewStyle: js.UndefOr[js.Any] = js.undefined
-  var refreshable: js.UndefOr[js.Any] = js.undefined
-  var refreshableColors: js.UndefOr[js.Any] = js.undefined
-  var refreshableMode: js.UndefOr[js.Any] = js.undefined
-  var refreshableProgressBackgroundColor: js.UndefOr[js.Any] = js.undefined
-  var refreshableSize: js.UndefOr[js.Any] = js.undefined
-  var refreshableTintColor: js.UndefOr[js.Any] = js.undefined
-  var refreshableTitle: js.UndefOr[js.Any] = js.undefined
-  var refreshableTitlePull: js.UndefOr[js.Any] = js.undefined
-  var refreshableTitleRefreshing: js.UndefOr[js.Any] = js.undefined
-  var refreshableTitleRelease: js.UndefOr[js.Any] = js.undefined
-  var scrollEnabled: js.UndefOr[js.Any] = js.undefined
-  var separator: js.UndefOr[js.Any] = js.undefined
-  var spinnerColor: js.UndefOr[js.Any] = js.undefined
-  var waitingSpinnerSize: js.UndefOr[js.Any] = js.undefined
-  var waitingSpinnerText: js.UndefOr[js.Any] = js.undefined
+  var allLoadedText: js.UndefOr[js.Any] = js.native
+  var arrowImageSource: js.UndefOr[js.Any] = js.native
+  var arrowImageStyle: js.UndefOr[js.Any] = js.native
+  var autoPagination: js.UndefOr[js.Any] = js.native
+  var customRefreshControl: js.UndefOr[js.Any] = js.native
+  var customRefreshView: js.UndefOr[js.Any] = js.native
+  var dateFormat: js.UndefOr[js.Any] = js.native
+  var dateStyle: js.UndefOr[js.Any] = js.native
+  var dateTitle: js.UndefOr[js.Any] = js.native
+  var displayDate: js.UndefOr[js.Any] = js.native
+  var emptyView: js.UndefOr[js.Any] = js.native
+  var enableEmptySections: js.UndefOr[js.Any] = js.native
+  var fetchingSpinnerSize: js.UndefOr[js.Any] = js.native
+  var firstLoader: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.native
+  var horizontal: js.UndefOr[js.Any] = js.native
+  var initialNumToRender: js.UndefOr[js.Any] = js.native
+  var numColumns: js.UndefOr[js.Any] = js.native
+  var pagination: js.UndefOr[js.Any] = js.native
+  var paginationAllLoadedView: js.UndefOr[js.Any] = js.native
+  var paginationBtnText: js.UndefOr[js.Any] = js.native
+  var paginationFetchingView: js.UndefOr[js.Any] = js.native
+  var paginationWaitingView: js.UndefOr[js.Any] = js.native
+  var refreshViewHeight: js.UndefOr[js.Any] = js.native
+  var refreshViewStyle: js.UndefOr[js.Any] = js.native
+  var refreshable: js.UndefOr[js.Any] = js.native
+  var refreshableColors: js.UndefOr[js.Any] = js.native
+  var refreshableMode: js.UndefOr[js.Any] = js.native
+  var refreshableProgressBackgroundColor: js.UndefOr[js.Any] = js.native
+  var refreshableSize: js.UndefOr[js.Any] = js.native
+  var refreshableTintColor: js.UndefOr[js.Any] = js.native
+  var refreshableTitle: js.UndefOr[js.Any] = js.native
+  var refreshableTitlePull: js.UndefOr[js.Any] = js.native
+  var refreshableTitleRefreshing: js.UndefOr[js.Any] = js.native
+  var refreshableTitleRelease: js.UndefOr[js.Any] = js.native
+  var scrollEnabled: js.UndefOr[js.Any] = js.native
+  var separator: js.UndefOr[js.Any] = js.native
+  var spinnerColor: js.UndefOr[js.Any] = js.native
+  var waitingSpinnerSize: js.UndefOr[js.Any] = js.native
+  var waitingSpinnerText: js.UndefOr[js.Any] = js.native
 }
 
 object UltimateListViewProps {
   @scala.inline
-  def apply(
-    allLoadedText: js.Any = null,
-    arrowImageSource: js.Any = null,
-    arrowImageStyle: js.Any = null,
-    autoPagination: js.Any = null,
-    customRefreshControl: js.Any = null,
-    customRefreshView: js.Any = null,
-    dateFormat: js.Any = null,
-    dateStyle: js.Any = null,
-    dateTitle: js.Any = null,
-    displayDate: js.Any = null,
-    emptyView: js.Any = null,
-    enableEmptySections: js.Any = null,
-    fetchingSpinnerSize: js.Any = null,
-    firstLoader: js.Any = null,
-    header: js.Any = null,
-    horizontal: js.Any = null,
-    initialNumToRender: js.Any = null,
-    numColumns: js.Any = null,
-    pagination: js.Any = null,
-    paginationAllLoadedView: js.Any = null,
-    paginationBtnText: js.Any = null,
-    paginationFetchingView: js.Any = null,
-    paginationWaitingView: js.Any = null,
-    refreshViewHeight: js.Any = null,
-    refreshViewStyle: js.Any = null,
-    refreshable: js.Any = null,
-    refreshableColors: js.Any = null,
-    refreshableMode: js.Any = null,
-    refreshableProgressBackgroundColor: js.Any = null,
-    refreshableSize: js.Any = null,
-    refreshableTintColor: js.Any = null,
-    refreshableTitle: js.Any = null,
-    refreshableTitlePull: js.Any = null,
-    refreshableTitleRefreshing: js.Any = null,
-    refreshableTitleRelease: js.Any = null,
-    scrollEnabled: js.Any = null,
-    separator: js.Any = null,
-    spinnerColor: js.Any = null,
-    waitingSpinnerSize: js.Any = null,
-    waitingSpinnerText: js.Any = null
-  ): UltimateListViewProps = {
+  def apply(): UltimateListViewProps = {
     val __obj = js.Dynamic.literal()
-    if (allLoadedText != null) __obj.updateDynamic("allLoadedText")(allLoadedText.asInstanceOf[js.Any])
-    if (arrowImageSource != null) __obj.updateDynamic("arrowImageSource")(arrowImageSource.asInstanceOf[js.Any])
-    if (arrowImageStyle != null) __obj.updateDynamic("arrowImageStyle")(arrowImageStyle.asInstanceOf[js.Any])
-    if (autoPagination != null) __obj.updateDynamic("autoPagination")(autoPagination.asInstanceOf[js.Any])
-    if (customRefreshControl != null) __obj.updateDynamic("customRefreshControl")(customRefreshControl.asInstanceOf[js.Any])
-    if (customRefreshView != null) __obj.updateDynamic("customRefreshView")(customRefreshView.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dateStyle != null) __obj.updateDynamic("dateStyle")(dateStyle.asInstanceOf[js.Any])
-    if (dateTitle != null) __obj.updateDynamic("dateTitle")(dateTitle.asInstanceOf[js.Any])
-    if (displayDate != null) __obj.updateDynamic("displayDate")(displayDate.asInstanceOf[js.Any])
-    if (emptyView != null) __obj.updateDynamic("emptyView")(emptyView.asInstanceOf[js.Any])
-    if (enableEmptySections != null) __obj.updateDynamic("enableEmptySections")(enableEmptySections.asInstanceOf[js.Any])
-    if (fetchingSpinnerSize != null) __obj.updateDynamic("fetchingSpinnerSize")(fetchingSpinnerSize.asInstanceOf[js.Any])
-    if (firstLoader != null) __obj.updateDynamic("firstLoader")(firstLoader.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (initialNumToRender != null) __obj.updateDynamic("initialNumToRender")(initialNumToRender.asInstanceOf[js.Any])
-    if (numColumns != null) __obj.updateDynamic("numColumns")(numColumns.asInstanceOf[js.Any])
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (paginationAllLoadedView != null) __obj.updateDynamic("paginationAllLoadedView")(paginationAllLoadedView.asInstanceOf[js.Any])
-    if (paginationBtnText != null) __obj.updateDynamic("paginationBtnText")(paginationBtnText.asInstanceOf[js.Any])
-    if (paginationFetchingView != null) __obj.updateDynamic("paginationFetchingView")(paginationFetchingView.asInstanceOf[js.Any])
-    if (paginationWaitingView != null) __obj.updateDynamic("paginationWaitingView")(paginationWaitingView.asInstanceOf[js.Any])
-    if (refreshViewHeight != null) __obj.updateDynamic("refreshViewHeight")(refreshViewHeight.asInstanceOf[js.Any])
-    if (refreshViewStyle != null) __obj.updateDynamic("refreshViewStyle")(refreshViewStyle.asInstanceOf[js.Any])
-    if (refreshable != null) __obj.updateDynamic("refreshable")(refreshable.asInstanceOf[js.Any])
-    if (refreshableColors != null) __obj.updateDynamic("refreshableColors")(refreshableColors.asInstanceOf[js.Any])
-    if (refreshableMode != null) __obj.updateDynamic("refreshableMode")(refreshableMode.asInstanceOf[js.Any])
-    if (refreshableProgressBackgroundColor != null) __obj.updateDynamic("refreshableProgressBackgroundColor")(refreshableProgressBackgroundColor.asInstanceOf[js.Any])
-    if (refreshableSize != null) __obj.updateDynamic("refreshableSize")(refreshableSize.asInstanceOf[js.Any])
-    if (refreshableTintColor != null) __obj.updateDynamic("refreshableTintColor")(refreshableTintColor.asInstanceOf[js.Any])
-    if (refreshableTitle != null) __obj.updateDynamic("refreshableTitle")(refreshableTitle.asInstanceOf[js.Any])
-    if (refreshableTitlePull != null) __obj.updateDynamic("refreshableTitlePull")(refreshableTitlePull.asInstanceOf[js.Any])
-    if (refreshableTitleRefreshing != null) __obj.updateDynamic("refreshableTitleRefreshing")(refreshableTitleRefreshing.asInstanceOf[js.Any])
-    if (refreshableTitleRelease != null) __obj.updateDynamic("refreshableTitleRelease")(refreshableTitleRelease.asInstanceOf[js.Any])
-    if (scrollEnabled != null) __obj.updateDynamic("scrollEnabled")(scrollEnabled.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (spinnerColor != null) __obj.updateDynamic("spinnerColor")(spinnerColor.asInstanceOf[js.Any])
-    if (waitingSpinnerSize != null) __obj.updateDynamic("waitingSpinnerSize")(waitingSpinnerSize.asInstanceOf[js.Any])
-    if (waitingSpinnerText != null) __obj.updateDynamic("waitingSpinnerText")(waitingSpinnerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[UltimateListViewProps]
   }
+  @scala.inline
+  implicit class UltimateListViewPropsOps[Self <: UltimateListViewProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllLoadedText(value: js.Any): Self = this.set("allLoadedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllLoadedText: Self = this.set("allLoadedText", js.undefined)
+    @scala.inline
+    def setArrowImageSource(value: js.Any): Self = this.set("arrowImageSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowImageSource: Self = this.set("arrowImageSource", js.undefined)
+    @scala.inline
+    def setArrowImageStyle(value: js.Any): Self = this.set("arrowImageStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowImageStyle: Self = this.set("arrowImageStyle", js.undefined)
+    @scala.inline
+    def setAutoPagination(value: js.Any): Self = this.set("autoPagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPagination: Self = this.set("autoPagination", js.undefined)
+    @scala.inline
+    def setCustomRefreshControl(value: js.Any): Self = this.set("customRefreshControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRefreshControl: Self = this.set("customRefreshControl", js.undefined)
+    @scala.inline
+    def setCustomRefreshView(value: js.Any): Self = this.set("customRefreshView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRefreshView: Self = this.set("customRefreshView", js.undefined)
+    @scala.inline
+    def setDateFormat(value: js.Any): Self = this.set("dateFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    @scala.inline
+    def setDateStyle(value: js.Any): Self = this.set("dateStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateStyle: Self = this.set("dateStyle", js.undefined)
+    @scala.inline
+    def setDateTitle(value: js.Any): Self = this.set("dateTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateTitle: Self = this.set("dateTitle", js.undefined)
+    @scala.inline
+    def setDisplayDate(value: js.Any): Self = this.set("displayDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayDate: Self = this.set("displayDate", js.undefined)
+    @scala.inline
+    def setEmptyView(value: js.Any): Self = this.set("emptyView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyView: Self = this.set("emptyView", js.undefined)
+    @scala.inline
+    def setEnableEmptySections(value: js.Any): Self = this.set("enableEmptySections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableEmptySections: Self = this.set("enableEmptySections", js.undefined)
+    @scala.inline
+    def setFetchingSpinnerSize(value: js.Any): Self = this.set("fetchingSpinnerSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchingSpinnerSize: Self = this.set("fetchingSpinnerSize", js.undefined)
+    @scala.inline
+    def setFirstLoader(value: js.Any): Self = this.set("firstLoader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstLoader: Self = this.set("firstLoader", js.undefined)
+    @scala.inline
+    def setHeader(value: js.Any): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setHorizontal(value: js.Any): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setInitialNumToRender(value: js.Any): Self = this.set("initialNumToRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialNumToRender: Self = this.set("initialNumToRender", js.undefined)
+    @scala.inline
+    def setNumColumns(value: js.Any): Self = this.set("numColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumColumns: Self = this.set("numColumns", js.undefined)
+    @scala.inline
+    def setPagination(value: js.Any): Self = this.set("pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("pagination", js.undefined)
+    @scala.inline
+    def setPaginationAllLoadedView(value: js.Any): Self = this.set("paginationAllLoadedView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationAllLoadedView: Self = this.set("paginationAllLoadedView", js.undefined)
+    @scala.inline
+    def setPaginationBtnText(value: js.Any): Self = this.set("paginationBtnText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationBtnText: Self = this.set("paginationBtnText", js.undefined)
+    @scala.inline
+    def setPaginationFetchingView(value: js.Any): Self = this.set("paginationFetchingView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationFetchingView: Self = this.set("paginationFetchingView", js.undefined)
+    @scala.inline
+    def setPaginationWaitingView(value: js.Any): Self = this.set("paginationWaitingView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaginationWaitingView: Self = this.set("paginationWaitingView", js.undefined)
+    @scala.inline
+    def setRefreshViewHeight(value: js.Any): Self = this.set("refreshViewHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshViewHeight: Self = this.set("refreshViewHeight", js.undefined)
+    @scala.inline
+    def setRefreshViewStyle(value: js.Any): Self = this.set("refreshViewStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshViewStyle: Self = this.set("refreshViewStyle", js.undefined)
+    @scala.inline
+    def setRefreshable(value: js.Any): Self = this.set("refreshable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshable: Self = this.set("refreshable", js.undefined)
+    @scala.inline
+    def setRefreshableColors(value: js.Any): Self = this.set("refreshableColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableColors: Self = this.set("refreshableColors", js.undefined)
+    @scala.inline
+    def setRefreshableMode(value: js.Any): Self = this.set("refreshableMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableMode: Self = this.set("refreshableMode", js.undefined)
+    @scala.inline
+    def setRefreshableProgressBackgroundColor(value: js.Any): Self = this.set("refreshableProgressBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableProgressBackgroundColor: Self = this.set("refreshableProgressBackgroundColor", js.undefined)
+    @scala.inline
+    def setRefreshableSize(value: js.Any): Self = this.set("refreshableSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableSize: Self = this.set("refreshableSize", js.undefined)
+    @scala.inline
+    def setRefreshableTintColor(value: js.Any): Self = this.set("refreshableTintColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableTintColor: Self = this.set("refreshableTintColor", js.undefined)
+    @scala.inline
+    def setRefreshableTitle(value: js.Any): Self = this.set("refreshableTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableTitle: Self = this.set("refreshableTitle", js.undefined)
+    @scala.inline
+    def setRefreshableTitlePull(value: js.Any): Self = this.set("refreshableTitlePull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableTitlePull: Self = this.set("refreshableTitlePull", js.undefined)
+    @scala.inline
+    def setRefreshableTitleRefreshing(value: js.Any): Self = this.set("refreshableTitleRefreshing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableTitleRefreshing: Self = this.set("refreshableTitleRefreshing", js.undefined)
+    @scala.inline
+    def setRefreshableTitleRelease(value: js.Any): Self = this.set("refreshableTitleRelease", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshableTitleRelease: Self = this.set("refreshableTitleRelease", js.undefined)
+    @scala.inline
+    def setScrollEnabled(value: js.Any): Self = this.set("scrollEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollEnabled: Self = this.set("scrollEnabled", js.undefined)
+    @scala.inline
+    def setSeparator(value: js.Any): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setSpinnerColor(value: js.Any): Self = this.set("spinnerColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpinnerColor: Self = this.set("spinnerColor", js.undefined)
+    @scala.inline
+    def setWaitingSpinnerSize(value: js.Any): Self = this.set("waitingSpinnerSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitingSpinnerSize: Self = this.set("waitingSpinnerSize", js.undefined)
+    @scala.inline
+    def setWaitingSpinnerText(value: js.Any): Self = this.set("waitingSpinnerText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitingSpinnerText: Self = this.set("waitingSpinnerText", js.undefined)
+  }
+  
 }
 

@@ -42,6 +42,7 @@ trait State extends js.Object {
   def channel(`type`: NamedColor): State = js.native
   def charcoal(factor: Double): State = js.native
   def chop(width: Double, height: Double): State = js.native
+  def chop(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): State = js.native
   def chop(width: Double, height: Double, x: Double): State = js.native
   def chop(width: Double, height: Double, x: Double, y: Double): State = js.native
   def clip(): State = js.native
@@ -61,13 +62,25 @@ trait State extends js.Object {
   def command(customCommand: String): State = js.native
   def compose(operator: String): State = js.native
   def compose(operator: ComposeOperator): State = js.native
+  def composite(changeImagePath: String): State = js.native
+  def composite(changeImagePath: String, maskImagePath: String): State = js.native
   def compress(`type`: String): State = js.native
   def compress(`type`: CompressionType): State = js.native
   def contrast(multiplier: Double): State = js.native
   def convolve(kernel: String): State = js.native
   def createDirectories(): State = js.native
   def crop(width: Double, height: Double): State = js.native
+  def crop(
+    width: Double,
+    height: Double,
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    percent: Boolean
+  ): State = js.native
+  def crop(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): State = js.native
+  def crop(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double, percent: Boolean): State = js.native
   def crop(width: Double, height: Double, x: Double): State = js.native
+  def crop(width: Double, height: Double, x: Double, y: js.UndefOr[scala.Nothing], percent: Boolean): State = js.native
   def crop(width: Double, height: Double, x: Double, y: Double): State = js.native
   def crop(width: Double, height: Double, x: Double, y: Double, percent: Boolean): State = js.native
   def cycle(amount: Double): State = js.native
@@ -110,6 +123,7 @@ trait State extends js.Object {
     coords: (js.Tuple2[Double, Double])*
   ): State = js.native
   def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double): State = js.native
+  def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: js.UndefOr[scala.Nothing], hc: Double): State = js.native
   def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: Double): State = js.native
   def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: Double, hc: Double): State = js.native
   def drawText(x: Double, y: Double, text: String): State = js.native
@@ -150,6 +164,7 @@ trait State extends js.Object {
   def gaussian(radius: Double, sigma: Double): State = js.native
   def geometry(geometry: String): State = js.native
   def geometry(width: Double): State = js.native
+  def geometry(width: Double, height: js.UndefOr[scala.Nothing], option: ResizeOption): State = js.native
   def geometry(width: Double, height: Double): State = js.native
   def geometry(width: Double, height: Double, option: ResizeOption): State = js.native
   def gravity(direction: String): State = js.native
@@ -193,6 +208,7 @@ trait State extends js.Object {
   def mode(mode: String): State = js.native
   def mode(mode: OperationMode): State = js.native
   def modulate(b: Double): State = js.native
+  def modulate(b: Double, s: js.UndefOr[scala.Nothing], h: Double): State = js.native
   def modulate(b: Double, s: Double): State = js.native
   def modulate(b: Double, s: Double, h: Double): State = js.native
   def monitor(): State = js.native
@@ -204,6 +220,7 @@ trait State extends js.Object {
   def morph(otherImg: js.Array[String], outName: String, callback: WriteCallback): State = js.native
   def mosaic(): State = js.native
   def motionBlur(radius: Double): State = js.native
+  def motionBlur(radius: Double, sigma: js.UndefOr[scala.Nothing], angle: Double): State = js.native
   def motionBlur(radius: Double, sigma: Double): State = js.native
   def motionBlur(radius: Double, sigma: Double, angle: Double): State = js.native
   def name(): State = js.native
@@ -249,6 +266,7 @@ trait State extends js.Object {
   def recolor(matrix: String): State = js.native
   def redPrimary(x: Double, y: Double): State = js.native
   def region(width: Double, height: Double): State = js.native
+  def region(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): State = js.native
   def region(width: Double, height: Double, x: Double): State = js.native
   def region(width: Double, height: Double, x: Double, y: Double): State = js.native
   def remote(): State = js.native
@@ -261,6 +279,7 @@ trait State extends js.Object {
   def res(opts: GetterOptions, callback: GetterCallback[String]): State = js.native
   def resample(horizontal: Double, vertical: Double): State = js.native
   def resize(width: Double): State = js.native
+  def resize(width: Double, height: js.UndefOr[scala.Nothing], option: ResizeOption): State = js.native
   def resize(width: Double, height: Double): State = js.native
   def resize(width: Double, height: Double, option: ResizeOption): State = js.native
   def roll(horizontal: Double, vertical: Double): State = js.native
@@ -352,7 +371,16 @@ trait State extends js.Object {
   def units(`type`: String): State = js.native
   def units(`type`: UnitType): State = js.native
   def unsharp(radius: Double): State = js.native
+  def unsharp(
+    radius: Double,
+    sigma: js.UndefOr[scala.Nothing],
+    amount: js.UndefOr[scala.Nothing],
+    threshold: Double
+  ): State = js.native
+  def unsharp(radius: Double, sigma: js.UndefOr[scala.Nothing], amount: Double): State = js.native
+  def unsharp(radius: Double, sigma: js.UndefOr[scala.Nothing], amount: Double, threshold: Double): State = js.native
   def unsharp(radius: Double, sigma: Double): State = js.native
+  def unsharp(radius: Double, sigma: Double, amount: js.UndefOr[scala.Nothing], threshold: Double): State = js.native
   def unsharp(radius: Double, sigma: Double, amount: Double): State = js.native
   def unsharp(radius: Double, sigma: Double, amount: Double, threshold: Double): State = js.native
   def update(seconds: Double): State = js.native

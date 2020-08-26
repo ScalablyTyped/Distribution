@@ -4,30 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TransitionEventInit extends EventInit {
-  var elapsedTime: js.UndefOr[Double] = js.undefined
-  var propertyName: js.UndefOr[java.lang.String] = js.undefined
-  var pseudoElement: js.UndefOr[java.lang.String] = js.undefined
+  var elapsedTime: js.UndefOr[Double] = js.native
+  var propertyName: js.UndefOr[java.lang.String] = js.native
+  var pseudoElement: js.UndefOr[java.lang.String] = js.native
 }
 
 object TransitionEventInit {
   @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    elapsedTime: js.UndefOr[Double] = js.undefined,
-    propertyName: java.lang.String = null,
-    pseudoElement: java.lang.String = null
-  ): TransitionEventInit = {
+  def apply(): TransitionEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(elapsedTime)) __obj.updateDynamic("elapsedTime")(elapsedTime.get.asInstanceOf[js.Any])
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
-    if (pseudoElement != null) __obj.updateDynamic("pseudoElement")(pseudoElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionEventInit]
   }
+  @scala.inline
+  implicit class TransitionEventInitOps[Self <: TransitionEventInit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElapsedTime(value: Double): Self = this.set("elapsedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElapsedTime: Self = this.set("elapsedTime", js.undefined)
+    @scala.inline
+    def setPropertyName(value: java.lang.String): Self = this.set("propertyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePropertyName: Self = this.set("propertyName", js.undefined)
+    @scala.inline
+    def setPseudoElement(value: java.lang.String): Self = this.set("pseudoElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePseudoElement: Self = this.set("pseudoElement", js.undefined)
+  }
+  
 }
 

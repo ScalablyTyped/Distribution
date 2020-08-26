@@ -2,7 +2,7 @@ package typings.electron.Electron
 
 import typings.electron.electronStrings.detach
 import typings.electron.electronStrings.message
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -14,7 +14,13 @@ trait Debugger extends EventEmitter {
   @JSName("addListener")
   def addListener_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* method */ String, 
+      /* params */ js.Any, 
+      /* sessionId */ String, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * Attaches the debugger to the `webContents`.
@@ -42,21 +48,39 @@ trait Debugger extends EventEmitter {
   @JSName("on")
   def on_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* method */ String, 
+      /* params */ js.Any, 
+      /* sessionId */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("once")
   def once_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* method */ String, 
+      /* params */ js.Any, 
+      /* sessionId */ String, 
+      Unit
+    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[
+      /* event */ Event, 
+      /* method */ String, 
+      /* params */ js.Any, 
+      /* sessionId */ String, 
+      Unit
+    ]
   ): this.type = js.native
   /**
     * A promise that resolves with the response defined by the 'returns' attribute of
@@ -66,6 +90,8 @@ trait Debugger extends EventEmitter {
   Send given command to the debugging target.
     */
   def sendCommand(method: String): js.Promise[_] = js.native
+  def sendCommand(method: String, commandParams: js.UndefOr[scala.Nothing], sessionId: String): js.Promise[_] = js.native
   def sendCommand(method: String, commandParams: js.Any): js.Promise[_] = js.native
+  def sendCommand(method: String, commandParams: js.Any, sessionId: String): js.Promise[_] = js.native
 }
 

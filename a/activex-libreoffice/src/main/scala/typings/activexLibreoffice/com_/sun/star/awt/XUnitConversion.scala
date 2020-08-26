@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * allows converting between different measurement units
   * @since OOo 3.0
   */
+@js.native
 trait XUnitConversion extends XInterface {
   /**
     * converts the given {@link Point} , which is specified in pixels, into the given logical unit
@@ -17,28 +18,28 @@ trait XUnitConversion extends XInterface {
     * @param TargetUnit A type from {@link com.sun.star.util.MeasureUnit} in which the {@link Point} will convert to.
     * @returns Returns a new {@link Point} in the TargetUnit type format.
     */
-  def convertPointToLogic(Point: Point, TargetUnit: Double): Point
+  def convertPointToLogic(Point: Point, TargetUnit: Double): Point = js.native
   /**
     * converts the given {@link Point} , which is specified in the given logical unit, into pixels
     * @param Point A given {@link Point} in the SourceUnit type
     * @param SourceUnit The type from {@link com.sun.star.util.MeasureUnit} of the {@link Point} .
     * @returns Return a new {@link Point} in Pixel type format.
     */
-  def convertPointToPixel(Point: Point, SourceUnit: Double): Point
+  def convertPointToPixel(Point: Point, SourceUnit: Double): Point = js.native
   /**
     * converts the given {@link Size} , which is specified in pixels, into the given logical unit
     * @param Size A given {@link Size} in a well known type
     * @param TargetUnit A type from {@link com.sun.star.util.MeasureUnit} in which the {@link Size} will convert to.
     * @returns Returns a new {@link Size} in the TargetUnit type format.
     */
-  def convertSizeToLogic(Size: Size, TargetUnit: Double): Size
+  def convertSizeToLogic(Size: Size, TargetUnit: Double): Size = js.native
   /**
     * converts the given {@link Size} , which is specified in the given logical unit, into pixels
     * @param Size A given {@link Size} in a well known type
     * @param SourceUnit The type from {@link com.sun.star.util.MeasureUnit} of the {@link Size} .
     * @returns Returns a new {@link Size} in the TargetUnit type format.
     */
-  def convertSizeToPixel(Size: Size, SourceUnit: Double): Size
+  def convertSizeToPixel(Size: Size, SourceUnit: Double): Size = js.native
 }
 
 object XUnitConversion {
@@ -55,5 +56,26 @@ object XUnitConversion {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convertPointToLogic = js.Any.fromFunction2(convertPointToLogic), convertPointToPixel = js.Any.fromFunction2(convertPointToPixel), convertSizeToLogic = js.Any.fromFunction2(convertSizeToLogic), convertSizeToPixel = js.Any.fromFunction2(convertSizeToPixel), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUnitConversion]
   }
+  @scala.inline
+  implicit class XUnitConversionOps[Self <: XUnitConversion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConvertPointToLogic(value: (Point, Double) => Point): Self = this.set("convertPointToLogic", js.Any.fromFunction2(value))
+    @scala.inline
+    def setConvertPointToPixel(value: (Point, Double) => Point): Self = this.set("convertPointToPixel", js.Any.fromFunction2(value))
+    @scala.inline
+    def setConvertSizeToLogic(value: (Size, Double) => Size): Self = this.set("convertSizeToLogic", js.Any.fromFunction2(value))
+    @scala.inline
+    def setConvertSizeToPixel(value: (Size, Double) => Size): Self = this.set("convertSizeToPixel", js.Any.fromFunction2(value))
+  }
+  
 }
 

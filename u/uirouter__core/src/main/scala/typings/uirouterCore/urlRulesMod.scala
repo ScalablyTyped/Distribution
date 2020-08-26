@@ -19,17 +19,17 @@ import scala.scalajs.js.annotation._
 object urlRulesMod extends js.Object {
   @js.native
   class UrlRules protected () extends Disposable {
-    /** @hidden */
-    def this(/** @hidden */ router: UIRouter) = this()
-    /** @hidden */ var _id: js.Any = js.native
-    /** @hidden */ var _otherwiseFn: js.Any = js.native
-    /** @hidden */ var _rules: js.Any = js.native
-    /** @hidden */ var _sortFn: js.Any = js.native
-    /** @hidden */ var _sorted: js.Any = js.native
-    /** @hidden */
+    /** @internal */
+    def this(/** @internal */ router: UIRouter) = this()
+    /** @internal */ var _id: js.Any = js.native
+    /** @internal */ var _otherwiseFn: js.Any = js.native
+    /** @internal */ var _rules: js.Any = js.native
+    /** @internal */ var _sortFn: js.Any = js.native
+    /** @internal */ var _sorted: js.Any = js.native
+    /** @internal */
     var ensureSorted: js.Any = js.native
     var router: js.Any = js.native
-    /** @hidden */
+    /** @internal */
     var stableSort: js.Any = js.native
     /** used to create [[UrlRule]] objects for common cases */
     var urlRuleFactory: UrlRuleFactory = js.native

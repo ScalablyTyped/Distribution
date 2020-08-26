@@ -10,9 +10,9 @@ Extra assertions on top of node's assert module
 | ------------------ | :-------------: |
 | Full name          | assert-plus |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 470 |
-| # downloads        | 642616875 |
+| # releases         | 1 |
+| # dependents       | 473 |
+| # downloads        | 653637190 |
 | # stars            | 16 |
 
 ## Links

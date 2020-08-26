@@ -150,7 +150,7 @@ trait Popup extends ManagedObject {
     iDuration: Double,
     my: js.UndefOr[TypeofDock],
     at: js.UndefOr[TypeofDock],
-    of: js.UndefOr[js.Any | Element | JQueryStatic | String],
+    of: js.UndefOr[String | Element | js.Any | JQueryStatic],
     offset: js.UndefOr[String],
     collision: js.UndefOr[String],
     followOf: js.UndefOr[Boolean]
@@ -238,16 +238,29 @@ trait Popup extends ManagedObject {
   def setModal(bModal: Boolean): Popup = js.native
   def setModal(bModal: Boolean, sModalCSSClass: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any): Popup = js.native
+  def setPosition(
+    my: TypeofDock,
+    at: js.Any,
+    of: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    collision: String
+  ): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: js.UndefOr[scala.Nothing], offset: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: js.UndefOr[scala.Nothing], offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: String, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: String, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: String, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: js.Any): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: js.Any, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: js.Any, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: js.Any, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: JQueryStatic, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: Element): Popup = js.native
+  def setPosition(my: TypeofDock, at: js.Any, of: Element, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: Element, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: js.Any, of: Element, offset: String, collision: String): Popup = js.native
   /**
@@ -268,16 +281,35 @@ trait Popup extends ManagedObject {
     * @returns <code>this</code> to allow method chaining
     */
   def setPosition(my: TypeofDock, at: TypeofDock): Popup = js.native
+  def setPosition(
+    my: TypeofDock,
+    at: TypeofDock,
+    of: js.UndefOr[scala.Nothing],
+    offset: js.UndefOr[scala.Nothing],
+    collision: String
+  ): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: js.UndefOr[scala.Nothing], offset: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: js.UndefOr[scala.Nothing], offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: String): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: String, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: String, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: String, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: js.Any, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: JQueryStatic): Popup = js.native
+  def setPosition(
+    my: TypeofDock,
+    at: TypeofDock,
+    of: JQueryStatic,
+    offset: js.UndefOr[scala.Nothing],
+    collision: String
+  ): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: JQueryStatic, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: JQueryStatic, offset: String, collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element): Popup = js.native
+  def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: js.UndefOr[scala.Nothing], collision: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: String): Popup = js.native
   def setPosition(my: TypeofDock, at: TypeofDock, of: Element, offset: String, collision: String): Popup = js.native
   /**

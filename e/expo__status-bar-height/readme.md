@@ -12,7 +12,7 @@ Listen to status bar changes during incoming calls and other multi-tasking event
 | Keywords           | expo, statusbar, tools, react-native, react, ui, multitask |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 39196 |
+| # downloads        | 39246 |
 | # stars            | 0 |
 
 ## Links

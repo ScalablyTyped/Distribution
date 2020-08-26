@@ -1,29 +1,27 @@
 package typings.packageJson.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.packageJson.anon.Email
 import typings.packageJson.anon.Integrity
-import typings.packageJson.anon.Type
-import typings.packageJson.anon.Url
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FullVersion
   extends AbbreviatedVersion
      with HoistedData {
-  val _id: String
-  val _nodeVersion: String
-  val _npmUser: String
-  val _npmVersion: String
-  val files: js.UndefOr[js.Array[String]] = js.undefined
-  val gitHead: js.UndefOr[String] = js.undefined
-  val main: js.UndefOr[String] = js.undefined
-  val man: js.UndefOr[js.Array[String]] = js.undefined
-  val scripts: js.UndefOr[StringDictionary[String]] = js.undefined
-  val types: js.UndefOr[String] = js.undefined
+  val _id: String = js.native
+  val _nodeVersion: String = js.native
+  val _npmUser: String = js.native
+  val _npmVersion: String = js.native
+  val files: js.UndefOr[js.Array[String]] = js.native
+  val gitHead: js.UndefOr[String] = js.native
+  val main: js.UndefOr[String] = js.native
+  val man: js.UndefOr[js.Array[String]] = js.native
+  val scripts: js.UndefOr[StringDictionary[String]] = js.native
+  val types: js.UndefOr[String] = js.native
   @JSName("typings")
-  val typings_ : js.UndefOr[String] = js.undefined
+  val typings_ : js.UndefOr[String] = js.native
 }
 
 object FullVersion {
@@ -35,66 +33,63 @@ object FullVersion {
     _npmVersion: String,
     dist: Integrity,
     name: String,
-    version: String,
-    _hasShrinkwrap: js.UndefOr[Boolean] = js.undefined,
-    author: Person = null,
-    bin: StringDictionary[String] = null,
-    bugs: Email | Url = null,
-    bundleDependencies: StringDictionary[String] = null,
-    contributors: js.Array[Person] = null,
-    dependencies: StringDictionary[String] = null,
-    deprecated: String = null,
-    description: String = null,
-    devDependencies: StringDictionary[String] = null,
-    directories: js.Array[String] = null,
-    engines: StringDictionary[String] = null,
-    files: js.Array[String] = null,
-    gitHead: String = null,
-    homepage: String = null,
-    keywords: js.Array[String] = null,
-    license: String = null,
-    main: String = null,
-    maintainers: js.Array[Person] = null,
-    man: js.Array[String] = null,
-    optionalDependencies: StringDictionary[String] = null,
-    peerDependencies: StringDictionary[String] = null,
-    readme: String = null,
-    readmeFilename: String = null,
-    repository: Type = null,
-    scripts: StringDictionary[String] = null,
-    types: String = null,
-    typings_ : String = null
+    version: String
   ): FullVersion = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], _nodeVersion = _nodeVersion.asInstanceOf[js.Any], _npmUser = _npmUser.asInstanceOf[js.Any], _npmVersion = _npmVersion.asInstanceOf[js.Any], dist = dist.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (!js.isUndefined(_hasShrinkwrap)) __obj.updateDynamic("_hasShrinkwrap")(_hasShrinkwrap.get.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
-    if (bugs != null) __obj.updateDynamic("bugs")(bugs.asInstanceOf[js.Any])
-    if (bundleDependencies != null) __obj.updateDynamic("bundleDependencies")(bundleDependencies.asInstanceOf[js.Any])
-    if (contributors != null) __obj.updateDynamic("contributors")(contributors.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (devDependencies != null) __obj.updateDynamic("devDependencies")(devDependencies.asInstanceOf[js.Any])
-    if (directories != null) __obj.updateDynamic("directories")(directories.asInstanceOf[js.Any])
-    if (engines != null) __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (gitHead != null) __obj.updateDynamic("gitHead")(gitHead.asInstanceOf[js.Any])
-    if (homepage != null) __obj.updateDynamic("homepage")(homepage.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (main != null) __obj.updateDynamic("main")(main.asInstanceOf[js.Any])
-    if (maintainers != null) __obj.updateDynamic("maintainers")(maintainers.asInstanceOf[js.Any])
-    if (man != null) __obj.updateDynamic("man")(man.asInstanceOf[js.Any])
-    if (optionalDependencies != null) __obj.updateDynamic("optionalDependencies")(optionalDependencies.asInstanceOf[js.Any])
-    if (peerDependencies != null) __obj.updateDynamic("peerDependencies")(peerDependencies.asInstanceOf[js.Any])
-    if (readme != null) __obj.updateDynamic("readme")(readme.asInstanceOf[js.Any])
-    if (readmeFilename != null) __obj.updateDynamic("readmeFilename")(readmeFilename.asInstanceOf[js.Any])
-    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
-    if (typings_ != null) __obj.updateDynamic("typings")(typings_.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullVersion]
   }
+  @scala.inline
+  implicit class FullVersionOps[Self <: FullVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_id(value: String): Self = this.set("_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_nodeVersion(value: String): Self = this.set("_nodeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_npmUser(value: String): Self = this.set("_npmUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_npmVersion(value: String): Self = this.set("_npmVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilesVarargs(value: String*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[String]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setGitHead(value: String): Self = this.set("gitHead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitHead: Self = this.set("gitHead", js.undefined)
+    @scala.inline
+    def setMain(value: String): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMain: Self = this.set("main", js.undefined)
+    @scala.inline
+    def setManVarargs(value: String*): Self = this.set("man", js.Array(value :_*))
+    @scala.inline
+    def setMan(value: js.Array[String]): Self = this.set("man", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMan: Self = this.set("man", js.undefined)
+    @scala.inline
+    def setScripts(value: StringDictionary[String]): Self = this.set("scripts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScripts: Self = this.set("scripts", js.undefined)
+    @scala.inline
+    def setTypes(value: String): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+    @scala.inline
+    def setTypings_(value: String): Self = this.set("typings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypings_ : Self = this.set("typings", js.undefined)
+  }
+  
 }
 

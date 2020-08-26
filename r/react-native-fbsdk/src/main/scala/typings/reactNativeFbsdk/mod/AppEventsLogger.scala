@@ -50,11 +50,11 @@ object AppEventsLogger extends js.Object {
     * Set additional data about the user to increase chances of matching a Facebook user.
     */
   def setUserData(userData: UserData): Unit = js.native
-  def setUserID(): Unit = js.native
   /**
     * Sets a custom user ID to associate with all app events.
     * The userID is persisted until it is cleared by passing nil.
     */
+  def setUserID(): Unit = js.native
   def setUserID(userID: String): Unit = js.native
 }
 

@@ -54,8 +54,8 @@ trait Router extends BaseRouter {
     * @param options object you can define `shallow` and other options
     */
   def push(url: Url): js.Promise[Boolean] = js.native
+  def push(url: Url, as: js.UndefOr[Url], options: js.Object): js.Promise[Boolean] = js.native
   def push(url: Url, as: Url): js.Promise[Boolean] = js.native
-  def push(url: Url, as: Url, options: js.Object): js.Promise[Boolean] = js.native
   def reload(): Unit = js.native
   /**
     * Performs a `replaceState` with arguments
@@ -64,8 +64,8 @@ trait Router extends BaseRouter {
     * @param options object you can define `shallow` and other options
     */
   def replace(url: Url): js.Promise[Boolean] = js.native
+  def replace(url: Url, as: js.UndefOr[Url], options: js.Object): js.Promise[Boolean] = js.native
   def replace(url: Url, as: Url): js.Promise[Boolean] = js.native
-  def replace(url: Url, as: Url, options: js.Object): js.Promise[Boolean] = js.native
   def scrollToHash(as: String): Unit = js.native
   def set(route: String, pathname: String, query: js.Any, as: String, data: RouteInfo): Unit = js.native
   def update(route: String, Component: ComponentType[js.Object]): Unit = js.native

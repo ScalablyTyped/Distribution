@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PlayToConnectionErrorEventArgs extends IPlayToConnectionErrorEventArgs
 
 object PlayToConnectionErrorEventArgs {

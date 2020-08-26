@@ -11,8 +11,8 @@ WebCola =======
 | Full name          | webcola |
 | Keywords           | Graph, Layout, Constraints, Optimization |
 | # releases         | 5 |
-| # dependents       | 25 |
-| # downloads        | 328856 |
+| # dependents       | 26 |
+| # downloads        | 344522 |
 | # stars            | 3 |
 
 ## Links

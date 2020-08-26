@@ -51,18 +51,49 @@ object Instance {
     HealthStatus: XmlStringMaxLen32,
     InstanceId: XmlStringMaxLen19,
     LifecycleState: LifecycleState,
-    ProtectedFromScaleIn: InstanceProtected,
-    InstanceType: XmlStringMaxLen255 = null,
-    LaunchConfigurationName: XmlStringMaxLen255 = null,
-    LaunchTemplate: LaunchTemplateSpecification = null,
-    WeightedCapacity: XmlStringMaxLen32 = null
+    ProtectedFromScaleIn: InstanceProtected
   ): Instance = {
     val __obj = js.Dynamic.literal(AvailabilityZone = AvailabilityZone.asInstanceOf[js.Any], HealthStatus = HealthStatus.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], LifecycleState = LifecycleState.asInstanceOf[js.Any], ProtectedFromScaleIn = ProtectedFromScaleIn.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName.asInstanceOf[js.Any])
-    if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate.asInstanceOf[js.Any])
-    if (WeightedCapacity != null) __obj.updateDynamic("WeightedCapacity")(WeightedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instance]
   }
+  @scala.inline
+  implicit class InstanceOps[Self <: Instance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: XmlStringMaxLen255): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthStatus(value: XmlStringMaxLen32): Self = this.set("HealthStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceId(value: XmlStringMaxLen19): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifecycleState(value: LifecycleState): Self = this.set("LifecycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtectedFromScaleIn(value: InstanceProtected): Self = this.set("ProtectedFromScaleIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceType(value: XmlStringMaxLen255): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = this.set("LaunchConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchConfigurationName: Self = this.set("LaunchConfigurationName", js.undefined)
+    @scala.inline
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
+    @scala.inline
+    def setWeightedCapacity(value: XmlStringMaxLen32): Self = this.set("WeightedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeightedCapacity: Self = this.set("WeightedCapacity", js.undefined)
+  }
+  
 }
 

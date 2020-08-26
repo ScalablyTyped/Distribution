@@ -11,8 +11,8 @@ The lodash method `_.escapeRegExp` exported as a module.
 | Full name          | lodash.escaperegexp |
 | Keywords           | lodash-modularized, escaperegexp |
 | # releases         | 0 |
-| # dependents       | 147 |
-| # downloads        | 30610585 |
+| # dependents       | 152 |
+| # downloads        | 31490280 |
 | # stars            | 0 |
 
 ## Links

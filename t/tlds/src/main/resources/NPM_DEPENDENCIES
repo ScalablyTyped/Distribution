@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tlds" : "1.207.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tlds" : "1.207.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

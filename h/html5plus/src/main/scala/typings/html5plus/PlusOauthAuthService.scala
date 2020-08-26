@@ -64,6 +64,7 @@ trait PlusOauthAuthService extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def addPhoneNumber(): Unit = js.native
+  def addPhoneNumber(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addPhoneNumber(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addPhoneNumber(
     successCallback: js.Function1[/* result */ js.Any, Unit],
@@ -78,7 +79,23 @@ trait PlusOauthAuthService extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def authorize(): Unit = js.native
+  def authorize(
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.UndefOr[scala.Nothing],
+    options: PlusOauthAuthOptions
+  ): Unit = js.native
+  def authorize(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def authorize(
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    options: PlusOauthAuthOptions
+  ): Unit = js.native
   def authorize(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def authorize(
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.UndefOr[scala.Nothing],
+    options: PlusOauthAuthOptions
+  ): Unit = js.native
   def authorize(
     successCallback: js.Function1[/* result */ js.Any, Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
@@ -96,6 +113,7 @@ trait PlusOauthAuthService extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def getUserInfo(): Unit = js.native
+  def getUserInfo(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getUserInfo(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getUserInfo(
     successCallback: js.Function1[/* result */ js.Any, Unit],
@@ -109,7 +127,23 @@ trait PlusOauthAuthService extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def login(): Unit = js.native
+  def login(
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.UndefOr[scala.Nothing],
+    options: PlusOauthAuthOptions
+  ): Unit = js.native
+  def login(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def login(
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    options: PlusOauthAuthOptions
+  ): Unit = js.native
   def login(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def login(
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.UndefOr[scala.Nothing],
+    options: PlusOauthAuthOptions
+  ): Unit = js.native
   def login(
     successCallback: js.Function1[/* result */ js.Any, Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
@@ -127,6 +161,7 @@ trait PlusOauthAuthService extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def logout(): Unit = js.native
+  def logout(successCallback: js.UndefOr[scala.Nothing], errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def logout(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def logout(
     successCallback: js.Function1[/* result */ js.Any, Unit],

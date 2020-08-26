@@ -26,18 +26,38 @@ trait Credentials extends js.Object {
 
 object Credentials {
   @scala.inline
-  def apply(
-    AccessToken: SecurityToken = null,
-    AccessTokenExpiration: timestamp = null,
-    RefreshToken: SecurityToken = null,
-    RefreshTokenExpiration: timestamp = null
-  ): Credentials = {
+  def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (AccessToken != null) __obj.updateDynamic("AccessToken")(AccessToken.asInstanceOf[js.Any])
-    if (AccessTokenExpiration != null) __obj.updateDynamic("AccessTokenExpiration")(AccessTokenExpiration.asInstanceOf[js.Any])
-    if (RefreshToken != null) __obj.updateDynamic("RefreshToken")(RefreshToken.asInstanceOf[js.Any])
-    if (RefreshTokenExpiration != null) __obj.updateDynamic("RefreshTokenExpiration")(RefreshTokenExpiration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
+  @scala.inline
+  implicit class CredentialsOps[Self <: Credentials] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessToken(value: SecurityToken): Self = this.set("AccessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessToken: Self = this.set("AccessToken", js.undefined)
+    @scala.inline
+    def setAccessTokenExpiration(value: timestamp): Self = this.set("AccessTokenExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessTokenExpiration: Self = this.set("AccessTokenExpiration", js.undefined)
+    @scala.inline
+    def setRefreshToken(value: SecurityToken): Self = this.set("RefreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshToken: Self = this.set("RefreshToken", js.undefined)
+    @scala.inline
+    def setRefreshTokenExpiration(value: timestamp): Self = this.set("RefreshTokenExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshTokenExpiration: Self = this.set("RefreshTokenExpiration", js.undefined)
+  }
+  
 }
 

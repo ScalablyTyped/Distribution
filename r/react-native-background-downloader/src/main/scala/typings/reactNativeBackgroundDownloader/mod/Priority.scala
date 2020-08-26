@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Priority extends js.Object {
-  var HIGH: String
-  var LOW: String
-  var MEDIUM: String
+  var HIGH: String = js.native
+  var LOW: String = js.native
+  var MEDIUM: String = js.native
 }
 
 @JSImport("react-native-background-downloader", "Priority")

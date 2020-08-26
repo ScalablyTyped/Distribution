@@ -22,9 +22,145 @@ trait IAuth0Service extends js.Object {
     * @param refreshToken Flag to indicate refreshing the token
     */
   def authenticate(): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.UndefOr[scala.Nothing], idToken: js.UndefOr[scala.Nothing], accessToken: String): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: String,
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: String,
+    state: js.Any
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: String,
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.UndefOr[scala.Nothing], idToken: String): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: String,
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: String,
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: String,
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.UndefOr[scala.Nothing], idToken: String, accessToken: String): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: String,
+    accessToken: String,
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.UndefOr[scala.Nothing], idToken: String, accessToken: String, state: js.Any): IPromise[_] = js.native
+  def authenticate(
+    profile: js.UndefOr[scala.Nothing],
+    idToken: String,
+    accessToken: String,
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
   def authenticate(profile: js.Any): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any
+  ): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.Any, idToken: js.UndefOr[scala.Nothing], accessToken: String): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: String,
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.Any, idToken: js.UndefOr[scala.Nothing], accessToken: String, state: js.Any): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: js.UndefOr[scala.Nothing],
+    accessToken: String,
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
   def authenticate(profile: js.Any, idToken: String): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: String,
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
+  def authenticate(profile: js.Any, idToken: String, accessToken: js.UndefOr[scala.Nothing], state: js.Any): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: String,
+    accessToken: js.UndefOr[scala.Nothing],
+    state: js.Any,
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
   def authenticate(profile: js.Any, idToken: String, accessToken: String): IPromise[_] = js.native
+  def authenticate(
+    profile: js.Any,
+    idToken: String,
+    accessToken: String,
+    state: js.UndefOr[scala.Nothing],
+    refreshToken: Boolean
+  ): IPromise[_] = js.native
   def authenticate(profile: js.Any, idToken: String, accessToken: String, state: js.Any): IPromise[_] = js.native
   def authenticate(profile: js.Any, idToken: String, accessToken: String, state: js.Any, refreshToken: Boolean): IPromise[_] = js.native
   /**
@@ -60,7 +196,19 @@ trait IAuth0Service extends js.Object {
     * @param errorCallback Callback on failed reset
     */
   def reset(): Unit = js.native
+  def reset(
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: IErrorCallback
+  ): Unit = js.native
+  def reset(options: js.UndefOr[scala.Nothing], successCallback: ISuccessCallback): Unit = js.native
+  def reset(
+    options: js.UndefOr[scala.Nothing],
+    successCallback: ISuccessCallback,
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   def reset(options: IAuth0Options): Unit = js.native
+  def reset(options: IAuth0Options, successCallback: js.UndefOr[scala.Nothing], errorCallback: IErrorCallback): Unit = js.native
   def reset(options: IAuth0Options, successCallback: ISuccessCallback): Unit = js.native
   def reset(options: IAuth0Options, successCallback: ISuccessCallback, errorCallback: IErrorCallback): Unit = js.native
   /**
@@ -70,7 +218,19 @@ trait IAuth0Service extends js.Object {
     * @param errorCallback Callback on failed login
     */
   def signin(): Unit = js.native
+  def signin(
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: IErrorCallback
+  ): Unit = js.native
+  def signin(options: js.UndefOr[scala.Nothing], successCallback: ISuccessCallback): Unit = js.native
+  def signin(
+    options: js.UndefOr[scala.Nothing],
+    successCallback: ISuccessCallback,
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   def signin(options: IAuth0Options): Unit = js.native
+  def signin(options: IAuth0Options, successCallback: js.UndefOr[scala.Nothing], errorCallback: IErrorCallback): Unit = js.native
   def signin(options: IAuth0Options, successCallback: ISuccessCallback): Unit = js.native
   def signin(options: IAuth0Options, successCallback: ISuccessCallback, errorCallback: IErrorCallback): Unit = js.native
   /**
@@ -84,7 +244,19 @@ trait IAuth0Service extends js.Object {
     * @param errorCallback Callback on failed signup
     */
   def signup(): Unit = js.native
+  def signup(
+    options: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: IErrorCallback
+  ): Unit = js.native
+  def signup(options: js.UndefOr[scala.Nothing], successCallback: ISuccessCallback): Unit = js.native
+  def signup(
+    options: js.UndefOr[scala.Nothing],
+    successCallback: ISuccessCallback,
+    errorCallback: IErrorCallback
+  ): Unit = js.native
   def signup(options: IAuth0Options): Unit = js.native
+  def signup(options: IAuth0Options, successCallback: js.UndefOr[scala.Nothing], errorCallback: IErrorCallback): Unit = js.native
   def signup(options: IAuth0Options, successCallback: ISuccessCallback): Unit = js.native
   def signup(options: IAuth0Options, successCallback: ISuccessCallback, errorCallback: IErrorCallback): Unit = js.native
   /**
@@ -94,6 +266,7 @@ trait IAuth0Service extends js.Object {
     * @param errorCallback Callback on failed validation
     */
   def validateUser(options: IAuth0Options): Unit = js.native
+  def validateUser(options: IAuth0Options, successCallback: js.UndefOr[scala.Nothing], errorCallback: IErrorCallback): Unit = js.native
   def validateUser(options: IAuth0Options, successCallback: ISuccessCallback): Unit = js.native
   def validateUser(options: IAuth0Options, successCallback: ISuccessCallback, errorCallback: IErrorCallback): Unit = js.native
 }

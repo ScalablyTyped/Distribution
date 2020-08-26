@@ -68,28 +68,58 @@ trait SchemaInstanceGroupManagerActionsSummary extends js.Object {
 
 object SchemaInstanceGroupManagerActionsSummary {
   @scala.inline
-  def apply(
-    abandoning: js.UndefOr[Double] = js.undefined,
-    creating: js.UndefOr[Double] = js.undefined,
-    creatingWithoutRetries: js.UndefOr[Double] = js.undefined,
-    deleting: js.UndefOr[Double] = js.undefined,
-    none: js.UndefOr[Double] = js.undefined,
-    recreating: js.UndefOr[Double] = js.undefined,
-    refreshing: js.UndefOr[Double] = js.undefined,
-    restarting: js.UndefOr[Double] = js.undefined,
-    verifying: js.UndefOr[Double] = js.undefined
-  ): SchemaInstanceGroupManagerActionsSummary = {
+  def apply(): SchemaInstanceGroupManagerActionsSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abandoning)) __obj.updateDynamic("abandoning")(abandoning.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(creating)) __obj.updateDynamic("creating")(creating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(creatingWithoutRetries)) __obj.updateDynamic("creatingWithoutRetries")(creatingWithoutRetries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleting)) __obj.updateDynamic("deleting")(deleting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(none)) __obj.updateDynamic("none")(none.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(recreating)) __obj.updateDynamic("recreating")(recreating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(restarting)) __obj.updateDynamic("restarting")(restarting.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifying)) __obj.updateDynamic("verifying")(verifying.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerActionsSummary]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupManagerActionsSummaryOps[Self <: SchemaInstanceGroupManagerActionsSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbandoning(value: Double): Self = this.set("abandoning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbandoning: Self = this.set("abandoning", js.undefined)
+    @scala.inline
+    def setCreating(value: Double): Self = this.set("creating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreating: Self = this.set("creating", js.undefined)
+    @scala.inline
+    def setCreatingWithoutRetries(value: Double): Self = this.set("creatingWithoutRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatingWithoutRetries: Self = this.set("creatingWithoutRetries", js.undefined)
+    @scala.inline
+    def setDeleting(value: Double): Self = this.set("deleting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleting: Self = this.set("deleting", js.undefined)
+    @scala.inline
+    def setNone(value: Double): Self = this.set("none", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNone: Self = this.set("none", js.undefined)
+    @scala.inline
+    def setRecreating(value: Double): Self = this.set("recreating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecreating: Self = this.set("recreating", js.undefined)
+    @scala.inline
+    def setRefreshing(value: Double): Self = this.set("refreshing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshing: Self = this.set("refreshing", js.undefined)
+    @scala.inline
+    def setRestarting(value: Double): Self = this.set("restarting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestarting: Self = this.set("restarting", js.undefined)
+    @scala.inline
+    def setVerifying(value: Double): Self = this.set("verifying", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifying: Self = this.set("verifying", js.undefined)
+  }
+  
 }
 

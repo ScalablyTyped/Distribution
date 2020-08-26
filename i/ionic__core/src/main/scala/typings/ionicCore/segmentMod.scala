@@ -25,7 +25,7 @@ object segmentMod extends js.Object {
       */
     var addRipple: js.Any = js.native
     var checkButton: js.Any = js.native
-    var checked: js.UndefOr[js.Any] = js.native
+    var checked: js.Any = js.native
     /**
       * The color to use from your application's color palette.
       * Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`.
@@ -39,7 +39,7 @@ object segmentMod extends js.Object {
     var disabled: Boolean = js.native
     var el: HTMLIonSegmentElement = js.native
     var emitStyle: js.Any = js.native
-    var gesture: js.UndefOr[js.Any] = js.native
+    var gesture: js.Any = js.native
     var gestureChanged: js.Any = js.native
     var getButtons: js.Any = js.native
     var getIndicator: js.Any = js.native
@@ -72,7 +72,7 @@ object segmentMod extends js.Object {
       * the value of the segment.
       */
     var value: js.UndefOr[String | Null] = js.native
-    var valueAfterGesture: js.UndefOr[js.Any] = js.native
+    var valueAfterGesture: js.Any = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MSegment(): js.Promise[Unit] = js.native
     @JSName("componentWillLoad")
@@ -86,6 +86,7 @@ object segmentMod extends js.Object {
     @JSName("render")
     def render_MSegment(): js.Any = js.native
     /* protected */ def valueChanged(): Unit = js.native
+    /* protected */ def valueChanged(value: js.UndefOr[scala.Nothing], oldValue: String): Unit = js.native
     /* protected */ def valueChanged(value: String): Unit = js.native
     /* protected */ def valueChanged(value: String, oldValue: String): Unit = js.native
   }

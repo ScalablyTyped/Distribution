@@ -51,39 +51,42 @@ trait JQuery extends js.Object {
   @JSName("shape")
   var shape_Original: Shape = js.native
   def shape(): JQuery = js.native
-  def shape(behavior: setting, name: beforeChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def shape(behavior: setting, name: beforeChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def shape(behavior: setting, name: beforeChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def shape(behavior: setting, name: className): ClassNameSettings = js.native
   def shape(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def shape(behavior: setting, name: debug): Boolean = js.native
+  def shape(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def shape(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: duration): Double = js.native
+  def shape(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def shape(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def shape(behavior: setting, name: error): ErrorSettings = js.native
-  def shape(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def shape(behavior: setting, name: height): next | initial | Double = js.native
+  def shape(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  def shape(behavior: setting, name: height, value: js.UndefOr[scala.Nothing]): next | initial | Double = js.native
   def shape(behavior: setting, name: height, value: Double): JQuery = js.native
   def shape(behavior: setting, name: height, value: initial): JQuery = js.native
   def shape(behavior: setting, name: height, value: next): JQuery = js.native
-  def shape(behavior: setting, name: name): String = js.native
-  def shape(behavior: setting, name: namespace): String = js.native
+  def shape(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def shape(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def shape(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def shape(behavior: setting, name: name, value: String): JQuery = js.native
-  def shape(behavior: setting, name: onChange): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+  def shape(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
   def shape(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def shape(behavior: setting, name: performance): Boolean = js.native
+  def shape(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def shape(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: selector): SelectorSettings = js.native
-  def shape(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def shape(behavior: setting, name: silent): Boolean = js.native
+  def shape(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def shape(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def shape(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: verbose): Boolean = js.native
+  def shape(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def shape(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def shape(behavior: setting, name: width): next | initial | Double = js.native
+  def shape(behavior: setting, name: width, value: js.UndefOr[scala.Nothing]): next | initial | Double = js.native
   def shape(behavior: setting, name: width, value: Double): JQuery = js.native
   def shape(behavior: setting, name: width, value: initial): JQuery = js.native
   def shape(behavior: setting, name: width, value: next): JQuery = js.native
   def shape(settings: ShapeSettings): JQuery = js.native
+  @JSName("shape")
+  def shape_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  @JSName("shape")
+  def shape_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  @JSName("shape")
+  def shape_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
   @JSName("shape")
   def shape_destroy(behavior: destroy): JQuery = js.native
   /**

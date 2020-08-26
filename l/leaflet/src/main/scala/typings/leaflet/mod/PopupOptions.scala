@@ -4,59 +4,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PopupOptions extends DivOverlayOptions {
-  var autoClose: js.UndefOr[Boolean] = js.undefined
-  var autoPan: js.UndefOr[Boolean] = js.undefined
-  var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
-  var autoPanPaddingBottomRight: js.UndefOr[PointExpression] = js.undefined
-  var autoPanPaddingTopLeft: js.UndefOr[PointExpression] = js.undefined
-  var closeButton: js.UndefOr[Boolean] = js.undefined
-  var closeOnClick: js.UndefOr[Boolean] = js.undefined
-  var closeOnEscapeKey: js.UndefOr[Boolean] = js.undefined
-  var keepInView: js.UndefOr[Boolean] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
+  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoPan: js.UndefOr[Boolean] = js.native
+  var autoPanPadding: js.UndefOr[PointExpression] = js.native
+  var autoPanPaddingBottomRight: js.UndefOr[PointExpression] = js.native
+  var autoPanPaddingTopLeft: js.UndefOr[PointExpression] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnEscapeKey: js.UndefOr[Boolean] = js.native
+  var keepInView: js.UndefOr[Boolean] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
 }
 
 object PopupOptions {
   @scala.inline
-  def apply(
-    autoClose: js.UndefOr[Boolean] = js.undefined,
-    autoPan: js.UndefOr[Boolean] = js.undefined,
-    autoPanPadding: PointExpression = null,
-    autoPanPaddingBottomRight: PointExpression = null,
-    autoPanPaddingTopLeft: PointExpression = null,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnEscapeKey: js.UndefOr[Boolean] = js.undefined,
-    keepInView: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    offset: PointExpression = null,
-    pane: String = null,
-    zoomAnimation: js.UndefOr[Boolean] = js.undefined
-  ): PopupOptions = {
+  def apply(): PopupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.get.asInstanceOf[js.Any])
-    if (autoPanPadding != null) __obj.updateDynamic("autoPanPadding")(autoPanPadding.asInstanceOf[js.Any])
-    if (autoPanPaddingBottomRight != null) __obj.updateDynamic("autoPanPaddingBottomRight")(autoPanPaddingBottomRight.asInstanceOf[js.Any])
-    if (autoPanPaddingTopLeft != null) __obj.updateDynamic("autoPanPaddingTopLeft")(autoPanPaddingTopLeft.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscapeKey)) __obj.updateDynamic("closeOnEscapeKey")(closeOnEscapeKey.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInView)) __obj.updateDynamic("keepInView")(keepInView.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]
   }
+  @scala.inline
+  implicit class PopupOptionsOps[Self <: PopupOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoClose(value: Boolean): Self = this.set("autoClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoClose: Self = this.set("autoClose", js.undefined)
+    @scala.inline
+    def setAutoPan(value: Boolean): Self = this.set("autoPan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPan: Self = this.set("autoPan", js.undefined)
+    @scala.inline
+    def setAutoPanPadding(value: PointExpression): Self = this.set("autoPanPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanPadding: Self = this.set("autoPanPadding", js.undefined)
+    @scala.inline
+    def setAutoPanPaddingBottomRight(value: PointExpression): Self = this.set("autoPanPaddingBottomRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanPaddingBottomRight: Self = this.set("autoPanPaddingBottomRight", js.undefined)
+    @scala.inline
+    def setAutoPanPaddingTopLeft(value: PointExpression): Self = this.set("autoPanPaddingTopLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoPanPaddingTopLeft: Self = this.set("autoPanPaddingTopLeft", js.undefined)
+    @scala.inline
+    def setCloseButton(value: Boolean): Self = this.set("closeButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseButton: Self = this.set("closeButton", js.undefined)
+    @scala.inline
+    def setCloseOnClick(value: Boolean): Self = this.set("closeOnClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnClick: Self = this.set("closeOnClick", js.undefined)
+    @scala.inline
+    def setCloseOnEscapeKey(value: Boolean): Self = this.set("closeOnEscapeKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnEscapeKey: Self = this.set("closeOnEscapeKey", js.undefined)
+    @scala.inline
+    def setKeepInView(value: Boolean): Self = this.set("keepInView", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepInView: Self = this.set("keepInView", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+  }
+  
 }
 

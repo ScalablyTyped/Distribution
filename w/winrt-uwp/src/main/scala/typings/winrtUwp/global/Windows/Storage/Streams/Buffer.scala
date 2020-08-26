@@ -17,14 +17,6 @@ class Buffer protected ()
     * @param capacity The maximum number of bytes that the buffer can hold.
     */
   def this(capacity: Double) = this()
-  /* CompleteClass */
-  override var byteLength: js.Any = js.native
-   /* unmapped type */ /** Gets the maximum number of bytes that the buffer can hold. */
-  /* CompleteClass */
-  override var capacity: Double = js.native
-  /** Gets the number of bytes currently in use in the buffer. */
-  /* CompleteClass */
-  override var length: Double = js.native
 }
 
 /* static members */

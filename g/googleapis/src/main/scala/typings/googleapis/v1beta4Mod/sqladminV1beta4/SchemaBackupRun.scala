@@ -68,34 +68,70 @@ trait SchemaBackupRun extends js.Object {
 
 object SchemaBackupRun {
   @scala.inline
-  def apply(
-    description: String = null,
-    endTime: String = null,
-    enqueuedTime: String = null,
-    error: SchemaOperationError = null,
-    id: String = null,
-    instance: String = null,
-    kind: String = null,
-    selfLink: String = null,
-    startTime: String = null,
-    status: String = null,
-    `type`: String = null,
-    windowStartTime: String = null
-  ): SchemaBackupRun = {
+  def apply(): SchemaBackupRun = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (enqueuedTime != null) __obj.updateDynamic("enqueuedTime")(enqueuedTime.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (windowStartTime != null) __obj.updateDynamic("windowStartTime")(windowStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackupRun]
   }
+  @scala.inline
+  implicit class SchemaBackupRunOps[Self <: SchemaBackupRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setEnqueuedTime(value: String): Self = this.set("enqueuedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnqueuedTime: Self = this.set("enqueuedTime", js.undefined)
+    @scala.inline
+    def setError(value: SchemaOperationError): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInstance(value: String): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWindowStartTime(value: String): Self = this.set("windowStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWindowStartTime: Self = this.set("windowStartTime", js.undefined)
+  }
+  
 }
 

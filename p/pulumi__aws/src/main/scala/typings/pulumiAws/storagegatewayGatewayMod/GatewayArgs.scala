@@ -33,6 +33,10 @@ trait GatewayArgs extends js.Object {
     * Type of the gateway. The default value is `STORED`. Valid values: `CACHED`, `FILE_S3`, `STORED`, `VTL`.
     */
   val gatewayType: js.UndefOr[Input[String]] = js.native
+  /**
+    * VPC endpoint address to be used when activating your gateway. This should be used when your instance is in a private subnet. Requires HTTP access from client computer running Pulumi. More info on what ports are required by your VPC Endpoint Security group in [Activating a Gateway in a Virtual Private Cloud](https://docs.aws.amazon.com/storagegateway/latest/userguide/gateway-private-link.html).
+    */
+  val gatewayVpcEndpoint: js.UndefOr[Input[String]] = js.native
   val mediumChangerType: js.UndefOr[Input[String]] = js.native
   /**
     * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
@@ -45,7 +49,7 @@ trait GatewayArgs extends js.Object {
   /**
     * Key-value mapping of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Type of tape drive to use for tape gateway. This provider cannot detect drift of this argument. Valid values: `IBM-ULT3580-TD5`.
     */
@@ -54,30 +58,66 @@ trait GatewayArgs extends js.Object {
 
 object GatewayArgs {
   @scala.inline
-  def apply(
-    gatewayName: Input[String],
-    gatewayTimezone: Input[String],
-    activationKey: Input[String] = null,
-    cloudwatchLogGroupArn: Input[String] = null,
-    gatewayIpAddress: Input[String] = null,
-    gatewayType: Input[String] = null,
-    mediumChangerType: Input[String] = null,
-    smbActiveDirectorySettings: Input[GatewaySmbActiveDirectorySettings] = null,
-    smbGuestPassword: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    tapeDriveType: Input[String] = null
-  ): GatewayArgs = {
+  def apply(gatewayName: Input[String], gatewayTimezone: Input[String]): GatewayArgs = {
     val __obj = js.Dynamic.literal(gatewayName = gatewayName.asInstanceOf[js.Any], gatewayTimezone = gatewayTimezone.asInstanceOf[js.Any])
-    if (activationKey != null) __obj.updateDynamic("activationKey")(activationKey.asInstanceOf[js.Any])
-    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
-    if (gatewayIpAddress != null) __obj.updateDynamic("gatewayIpAddress")(gatewayIpAddress.asInstanceOf[js.Any])
-    if (gatewayType != null) __obj.updateDynamic("gatewayType")(gatewayType.asInstanceOf[js.Any])
-    if (mediumChangerType != null) __obj.updateDynamic("mediumChangerType")(mediumChangerType.asInstanceOf[js.Any])
-    if (smbActiveDirectorySettings != null) __obj.updateDynamic("smbActiveDirectorySettings")(smbActiveDirectorySettings.asInstanceOf[js.Any])
-    if (smbGuestPassword != null) __obj.updateDynamic("smbGuestPassword")(smbGuestPassword.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (tapeDriveType != null) __obj.updateDynamic("tapeDriveType")(tapeDriveType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayArgs]
   }
+  @scala.inline
+  implicit class GatewayArgsOps[Self <: GatewayArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGatewayName(value: Input[String]): Self = this.set("gatewayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGatewayTimezone(value: Input[String]): Self = this.set("gatewayTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivationKey(value: Input[String]): Self = this.set("activationKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivationKey: Self = this.set("activationKey", js.undefined)
+    @scala.inline
+    def setCloudwatchLogGroupArn(value: Input[String]): Self = this.set("cloudwatchLogGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogGroupArn: Self = this.set("cloudwatchLogGroupArn", js.undefined)
+    @scala.inline
+    def setGatewayIpAddress(value: Input[String]): Self = this.set("gatewayIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayIpAddress: Self = this.set("gatewayIpAddress", js.undefined)
+    @scala.inline
+    def setGatewayType(value: Input[String]): Self = this.set("gatewayType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayType: Self = this.set("gatewayType", js.undefined)
+    @scala.inline
+    def setGatewayVpcEndpoint(value: Input[String]): Self = this.set("gatewayVpcEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayVpcEndpoint: Self = this.set("gatewayVpcEndpoint", js.undefined)
+    @scala.inline
+    def setMediumChangerType(value: Input[String]): Self = this.set("mediumChangerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediumChangerType: Self = this.set("mediumChangerType", js.undefined)
+    @scala.inline
+    def setSmbActiveDirectorySettings(value: Input[GatewaySmbActiveDirectorySettings]): Self = this.set("smbActiveDirectorySettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmbActiveDirectorySettings: Self = this.set("smbActiveDirectorySettings", js.undefined)
+    @scala.inline
+    def setSmbGuestPassword(value: Input[String]): Self = this.set("smbGuestPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmbGuestPassword: Self = this.set("smbGuestPassword", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTapeDriveType(value: Input[String]): Self = this.set("tapeDriveType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTapeDriveType: Self = this.set("tapeDriveType", js.undefined)
+  }
+  
 }
 

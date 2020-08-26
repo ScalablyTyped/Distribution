@@ -41,20 +41,42 @@ trait SchemaMutation extends js.Object {
 
 object SchemaMutation {
   @scala.inline
-  def apply(
-    delete: SchemaDelete = null,
-    insert: SchemaWrite = null,
-    insertOrUpdate: SchemaWrite = null,
-    replace: SchemaWrite = null,
-    update: SchemaWrite = null
-  ): SchemaMutation = {
+  def apply(): SchemaMutation = {
     val __obj = js.Dynamic.literal()
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
-    if (insertOrUpdate != null) __obj.updateDynamic("insertOrUpdate")(insertOrUpdate.asInstanceOf[js.Any])
-    if (replace != null) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMutation]
   }
+  @scala.inline
+  implicit class SchemaMutationOps[Self <: SchemaMutation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDelete(value: SchemaDelete): Self = this.set("delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelete: Self = this.set("delete", js.undefined)
+    @scala.inline
+    def setInsert(value: SchemaWrite): Self = this.set("insert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsert: Self = this.set("insert", js.undefined)
+    @scala.inline
+    def setInsertOrUpdate(value: SchemaWrite): Self = this.set("insertOrUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertOrUpdate: Self = this.set("insertOrUpdate", js.undefined)
+    @scala.inline
+    def setReplace(value: SchemaWrite): Self = this.set("replace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplace: Self = this.set("replace", js.undefined)
+    @scala.inline
+    def setUpdate(value: SchemaWrite): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+  }
+  
 }
 

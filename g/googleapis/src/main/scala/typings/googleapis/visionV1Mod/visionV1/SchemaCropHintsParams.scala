@@ -22,10 +22,28 @@ trait SchemaCropHintsParams extends js.Object {
 
 object SchemaCropHintsParams {
   @scala.inline
-  def apply(aspectRatios: js.Array[Double] = null): SchemaCropHintsParams = {
+  def apply(): SchemaCropHintsParams = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatios != null) __obj.updateDynamic("aspectRatios")(aspectRatios.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCropHintsParams]
   }
+  @scala.inline
+  implicit class SchemaCropHintsParamsOps[Self <: SchemaCropHintsParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAspectRatiosVarargs(value: Double*): Self = this.set("aspectRatios", js.Array(value :_*))
+    @scala.inline
+    def setAspectRatios(value: js.Array[Double]): Self = this.set("aspectRatios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAspectRatios: Self = this.set("aspectRatios", js.undefined)
+  }
+  
 }
 

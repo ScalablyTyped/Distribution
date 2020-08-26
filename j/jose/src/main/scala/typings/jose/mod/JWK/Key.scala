@@ -44,6 +44,7 @@ trait Key extends _ProduceKeyInput {
   def algorithms(): Set[String] = js.native
   def algorithms(operation: keyOperation): Set[String] = js.native
   def toPEM(): String = js.native
+  def toPEM(`private`: js.UndefOr[scala.Nothing], encoding: pemEncodingOptions): String = js.native
   def toPEM(`private`: Boolean): String = js.native
   def toPEM(`private`: Boolean, encoding: pemEncodingOptions): String = js.native
 }

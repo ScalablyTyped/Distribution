@@ -19,16 +19,36 @@ trait ListWorkerBlocksResponse extends js.Object {
 
 object ListWorkerBlocksResponse {
   @scala.inline
-  def apply(
-    NextToken: PaginationToken = null,
-    NumResults: js.UndefOr[Integer] = js.undefined,
-    WorkerBlocks: WorkerBlockList = null
-  ): ListWorkerBlocksResponse = {
+  def apply(): ListWorkerBlocksResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumResults)) __obj.updateDynamic("NumResults")(NumResults.get.asInstanceOf[js.Any])
-    if (WorkerBlocks != null) __obj.updateDynamic("WorkerBlocks")(WorkerBlocks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListWorkerBlocksResponse]
   }
+  @scala.inline
+  implicit class ListWorkerBlocksResponseOps[Self <: ListWorkerBlocksResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setNumResults(value: Integer): Self = this.set("NumResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumResults: Self = this.set("NumResults", js.undefined)
+    @scala.inline
+    def setWorkerBlocksVarargs(value: WorkerBlock*): Self = this.set("WorkerBlocks", js.Array(value :_*))
+    @scala.inline
+    def setWorkerBlocks(value: WorkerBlockList): Self = this.set("WorkerBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerBlocks: Self = this.set("WorkerBlocks", js.undefined)
+  }
+  
 }
 

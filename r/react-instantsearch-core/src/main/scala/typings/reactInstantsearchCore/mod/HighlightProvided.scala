@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HighlightProvided[TDoc] extends js.Object {
   /**
     * function to retrieve and parse an attribute from a hit. It takes a configuration object with 3 attributes:
@@ -23,7 +24,7 @@ trait HighlightProvided[TDoc] extends js.Object {
     * }) as Array<Array<{value: string, isHighlighted: boolean}>>
     * ```
     */
-  def highlight(configuration: HighlightProperty[TDoc]): js.Array[IsHighlighted]
+  def highlight(configuration: HighlightProperty[TDoc]): js.Array[IsHighlighted] = js.native
 }
 
 object HighlightProvided {
@@ -32,5 +33,20 @@ object HighlightProvided {
     val __obj = js.Dynamic.literal(highlight = js.Any.fromFunction1(highlight))
     __obj.asInstanceOf[HighlightProvided[TDoc]]
   }
+  @scala.inline
+  implicit class HighlightProvidedOps[Self <: HighlightProvided[_], TDoc] (val x: Self with HighlightProvided[TDoc]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHighlight(value: HighlightProperty[TDoc] => js.Array[IsHighlighted]): Self = this.set("highlight", js.Any.fromFunction1(value))
+  }
+  
 }
 

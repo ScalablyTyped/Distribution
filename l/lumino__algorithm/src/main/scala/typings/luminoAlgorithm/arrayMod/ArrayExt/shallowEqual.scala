@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.shallowEqual")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.shallowEqual")
 @js.native
 object shallowEqual extends js.Object {
   /**

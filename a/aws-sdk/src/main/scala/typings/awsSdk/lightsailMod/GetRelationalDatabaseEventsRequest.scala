@@ -22,15 +22,32 @@ trait GetRelationalDatabaseEventsRequest extends js.Object {
 
 object GetRelationalDatabaseEventsRequest {
   @scala.inline
-  def apply(
-    relationalDatabaseName: ResourceName,
-    durationInMinutes: js.UndefOr[integer] = js.undefined,
-    pageToken: String = null
-  ): GetRelationalDatabaseEventsRequest = {
+  def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseEventsRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
-    if (!js.isUndefined(durationInMinutes)) __obj.updateDynamic("durationInMinutes")(durationInMinutes.get.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseEventsRequest]
   }
+  @scala.inline
+  implicit class GetRelationalDatabaseEventsRequestOps[Self <: GetRelationalDatabaseEventsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelationalDatabaseName(value: ResourceName): Self = this.set("relationalDatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDurationInMinutes(value: integer): Self = this.set("durationInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationInMinutes: Self = this.set("durationInMinutes", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+  }
+  
 }
 

@@ -43,22 +43,46 @@ trait SchemaGooglePrivacyDlpV2Finding extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Finding {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    infoType: SchemaGooglePrivacyDlpV2InfoType = null,
-    likelihood: String = null,
-    location: SchemaGooglePrivacyDlpV2Location = null,
-    quote: String = null,
-    quoteInfo: SchemaGooglePrivacyDlpV2QuoteInfo = null
-  ): SchemaGooglePrivacyDlpV2Finding = {
+  def apply(): SchemaGooglePrivacyDlpV2Finding = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (infoType != null) __obj.updateDynamic("infoType")(infoType.asInstanceOf[js.Any])
-    if (likelihood != null) __obj.updateDynamic("likelihood")(likelihood.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (quoteInfo != null) __obj.updateDynamic("quoteInfo")(quoteInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Finding]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2FindingOps[Self <: SchemaGooglePrivacyDlpV2Finding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = this.set("infoType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoType: Self = this.set("infoType", js.undefined)
+    @scala.inline
+    def setLikelihood(value: String): Self = this.set("likelihood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLikelihood: Self = this.set("likelihood", js.undefined)
+    @scala.inline
+    def setLocation(value: SchemaGooglePrivacyDlpV2Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote: Self = this.set("quote", js.undefined)
+    @scala.inline
+    def setQuoteInfo(value: SchemaGooglePrivacyDlpV2QuoteInfo): Self = this.set("quoteInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuoteInfo: Self = this.set("quoteInfo", js.undefined)
+  }
+  
 }
 

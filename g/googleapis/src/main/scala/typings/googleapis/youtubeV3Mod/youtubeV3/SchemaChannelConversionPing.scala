@@ -30,11 +30,30 @@ trait SchemaChannelConversionPing extends js.Object {
 
 object SchemaChannelConversionPing {
   @scala.inline
-  def apply(context: String = null, conversionUrl: String = null): SchemaChannelConversionPing = {
+  def apply(): SchemaChannelConversionPing = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (conversionUrl != null) __obj.updateDynamic("conversionUrl")(conversionUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaChannelConversionPing]
   }
+  @scala.inline
+  implicit class SchemaChannelConversionPingOps[Self <: SchemaChannelConversionPing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setConversionUrl(value: String): Self = this.set("conversionUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversionUrl: Self = this.set("conversionUrl", js.undefined)
+  }
+  
 }
 

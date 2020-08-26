@@ -9,42 +9,75 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContainerProps extends js.Object {
-  var actions: js.UndefOr[StringDictionary[js.Object]] = js.undefined
-  var component: js.UndefOr[Component[_, js.Object, _]] = js.undefined
-  var flux: js.UndefOr[Alt] = js.undefined
-  var inject: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  var render: js.UndefOr[js.Function1[/* repeated */ js.Any, ReactElement]] = js.undefined
-  var shouldComponentUpdate: js.UndefOr[js.Function1[/* props */ js.Any, Boolean]] = js.undefined
-  var store: js.UndefOr[AltStore[_]] = js.undefined
-  var stores: js.UndefOr[js.Array[AltStore[_]]] = js.undefined
-  var transform: js.UndefOr[js.Function2[/* store */ AltStore[_], /* actions */ js.Any, _]] = js.undefined
+  var actions: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var component: js.UndefOr[Component[_, js.Object, _]] = js.native
+  var flux: js.UndefOr[Alt] = js.native
+  var inject: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var render: js.UndefOr[js.Function1[/* repeated */ js.Any, ReactElement]] = js.native
+  var shouldComponentUpdate: js.UndefOr[js.Function1[/* props */ js.Any, Boolean]] = js.native
+  var store: js.UndefOr[AltStore[_]] = js.native
+  var stores: js.UndefOr[js.Array[AltStore[_]]] = js.native
+  var transform: js.UndefOr[js.Function2[/* store */ AltStore[_], /* actions */ js.Any, _]] = js.native
 }
 
 object ContainerProps {
   @scala.inline
-  def apply(
-    actions: StringDictionary[js.Object] = null,
-    component: Component[_, js.Object, _] = null,
-    flux: Alt = null,
-    inject: StringDictionary[js.Any] = null,
-    render: /* repeated */ js.Any => ReactElement = null,
-    shouldComponentUpdate: /* props */ js.Any => Boolean = null,
-    store: AltStore[_] = null,
-    stores: js.Array[AltStore[_]] = null,
-    transform: (/* store */ AltStore[_], /* actions */ js.Any) => _ = null
-  ): ContainerProps = {
+  def apply(): ContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (flux != null) __obj.updateDynamic("flux")(flux.asInstanceOf[js.Any])
-    if (inject != null) __obj.updateDynamic("inject")(inject.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1(render))
-    if (shouldComponentUpdate != null) __obj.updateDynamic("shouldComponentUpdate")(js.Any.fromFunction1(shouldComponentUpdate))
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (stores != null) __obj.updateDynamic("stores")(stores.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction2(transform))
     __obj.asInstanceOf[ContainerProps]
   }
+  @scala.inline
+  implicit class ContainerPropsOps[Self <: ContainerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActions(value: StringDictionary[js.Object]): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setComponent(value: Component[_, js.Object, _]): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponent: Self = this.set("component", js.undefined)
+    @scala.inline
+    def setFlux(value: Alt): Self = this.set("flux", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlux: Self = this.set("flux", js.undefined)
+    @scala.inline
+    def setInject(value: StringDictionary[js.Any]): Self = this.set("inject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInject: Self = this.set("inject", js.undefined)
+    @scala.inline
+    def setRender(value: /* repeated */ js.Any => ReactElement): Self = this.set("render", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRender: Self = this.set("render", js.undefined)
+    @scala.inline
+    def setShouldComponentUpdate(value: /* props */ js.Any => Boolean): Self = this.set("shouldComponentUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShouldComponentUpdate: Self = this.set("shouldComponentUpdate", js.undefined)
+    @scala.inline
+    def setStore(value: AltStore[_]): Self = this.set("store", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStore: Self = this.set("store", js.undefined)
+    @scala.inline
+    def setStoresVarargs(value: AltStore[js.Any]*): Self = this.set("stores", js.Array(value :_*))
+    @scala.inline
+    def setStores(value: js.Array[AltStore[_]]): Self = this.set("stores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStores: Self = this.set("stores", js.undefined)
+    @scala.inline
+    def setTransform(value: (/* store */ AltStore[_], /* actions */ js.Any) => _): Self = this.set("transform", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

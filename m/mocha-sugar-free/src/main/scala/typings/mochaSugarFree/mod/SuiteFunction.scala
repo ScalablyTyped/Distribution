@@ -1,7 +1,7 @@
 package typings.mochaSugarFree.mod
 
 import typings.mocha.mod.Suite_
-import typings.mochaSugarFree.anon.OptionsfnSuiteFunc
+import typings.mochaSugarFree.anon.OptionsfnSuiteFuncundefin
 import typings.mochaSugarFree.anon.OptionstitlestringfnSuite
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,8 +33,9 @@ trait SuiteFunction extends js.Object {
   def apply(options: OptionstitlestringfnSuite, fn: SuiteFunc): Suite_ = js.native
   def apply(title: String): Suite_ = js.native
   def apply(title: String, fn: SuiteFunc): Suite_ = js.native
-  def apply(title: String, options: OptionsfnSuiteFunc): Suite_ = js.native
-  def apply(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ = js.native
+  def apply(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+  def apply(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
+  def apply(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd, tdd, qunit]
@@ -50,8 +51,9 @@ trait SuiteFunction extends js.Object {
     */
   def only(title: String): Suite_ = js.native
   def only(title: String, fn: SuiteFunc): Suite_ = js.native
-  def only(title: String, options: OptionsfnSuiteFunc): Suite_ = js.native
-  def only(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ = js.native
+  def only(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ = js.native
+  def only(title: String, options: OptionsfnSuiteFuncundefin): Suite_ = js.native
+  def only(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ = js.native
   // tslint:disable-next-line: unified-signatures
   /**
     * [bdd, tdd]
@@ -67,7 +69,8 @@ trait SuiteFunction extends js.Object {
     */
   def skip(title: String): Suite_ | Unit = js.native
   def skip(title: String, fn: SuiteFunc): Suite_ | Unit = js.native
-  def skip(title: String, options: OptionsfnSuiteFunc): Suite_ | Unit = js.native
-  def skip(title: String, options: OptionsfnSuiteFunc, fn: SuiteFunc): Suite_ | Unit = js.native
+  def skip(title: String, options: js.UndefOr[scala.Nothing], fn: SuiteFunc): Suite_ | Unit = js.native
+  def skip(title: String, options: OptionsfnSuiteFuncundefin): Suite_ | Unit = js.native
+  def skip(title: String, options: OptionsfnSuiteFuncundefin, fn: SuiteFunc): Suite_ | Unit = js.native
 }
 

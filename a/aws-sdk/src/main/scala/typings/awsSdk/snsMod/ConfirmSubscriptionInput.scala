@@ -22,10 +22,30 @@ trait ConfirmSubscriptionInput extends js.Object {
 
 object ConfirmSubscriptionInput {
   @scala.inline
-  def apply(Token: token, TopicArn: topicARN, AuthenticateOnUnsubscribe: authenticateOnUnsubscribe = null): ConfirmSubscriptionInput = {
+  def apply(Token: token, TopicArn: topicARN): ConfirmSubscriptionInput = {
     val __obj = js.Dynamic.literal(Token = Token.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
-    if (AuthenticateOnUnsubscribe != null) __obj.updateDynamic("AuthenticateOnUnsubscribe")(AuthenticateOnUnsubscribe.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmSubscriptionInput]
   }
+  @scala.inline
+  implicit class ConfirmSubscriptionInputOps[Self <: ConfirmSubscriptionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setToken(value: token): Self = this.set("Token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTopicArn(value: topicARN): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticateOnUnsubscribe(value: authenticateOnUnsubscribe): Self = this.set("AuthenticateOnUnsubscribe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticateOnUnsubscribe: Self = this.set("AuthenticateOnUnsubscribe", js.undefined)
+  }
+  
 }
 

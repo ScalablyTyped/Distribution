@@ -94,7 +94,7 @@ abstract class DB () extends js.Object {
   ): Unit = js.native
   def getSnapshotBulk(
     collection: String,
-    ids: String,
+    ids: js.Array[String],
     fields: js.Any,
     options: js.Any,
     callback: js.Function1[/* repeated */ js.Any, _]
@@ -102,7 +102,14 @@ abstract class DB () extends js.Object {
   def query(
     collection: String,
     query: js.Any,
-    fields: js.UndefOr[ProjectionFields],
+    fields: js.UndefOr[scala.Nothing],
+    options: js.Any,
+    callback: DBQueryCallback
+  ): Unit = js.native
+  def query(
+    collection: String,
+    query: js.Any,
+    fields: ProjectionFields,
     options: js.Any,
     callback: DBQueryCallback
   ): Unit = js.native

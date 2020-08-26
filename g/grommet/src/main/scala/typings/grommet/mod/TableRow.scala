@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "TableRow")
+@JSImport("grommet/es6", "TableRow")
 @js.native
 object TableRow extends TopLevel[
       FC[

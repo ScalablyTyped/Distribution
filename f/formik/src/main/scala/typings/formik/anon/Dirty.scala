@@ -8,6 +8,7 @@ import typings.formik.typesMod.FormikState
 import typings.formik.typesMod.FormikTouched
 import typings.formik.typesMod.FormikValues
 import typings.react.mod.ChangeEvent
+import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.std.HTMLFormElement
 import typings.std.Partial
@@ -36,9 +37,10 @@ trait Dirty[Values /* <: FormikValues */] extends js.Object {
   def getFieldHelpers(name: String): FieldHelperProps[_] = js.native
   def getFieldMeta(name: String): FieldMetaProps[_] = js.native
   def getFieldProps(nameOrOptions: js.Any): FieldInputProps[_] = js.native
-  def handleBlur(eventOrString: js.Any): Unit | (js.Function1[/* e */ js.Any, Unit]) = js.native
-  def handleChange(eventOrPath: String): Unit | (js.Function1[/* eventOrTextValue */ String | ChangeEvent[_], Unit]) = js.native
-  def handleChange(eventOrPath: ChangeEvent[_]): Unit | (js.Function1[/* eventOrTextValue */ String | ChangeEvent[_], Unit]) = js.native
+  def handleBlur(e: FocusEvent[_]): Unit = js.native
+  def handleBlur[T](fieldOrEvent: T): Unit | (js.Function1[/* e */ js.Any, Unit]) = js.native
+  def handleChange(e: ChangeEvent[_]): Unit = js.native
+  def handleChange[T_1](field: T_1): (js.Function1[/* e */ String | ChangeEvent[_], Unit]) | Unit = js.native
   def handleReset(e: js.Any): Unit = js.native
   def handleSubmit(): Unit = js.native
   def handleSubmit(e: FormEvent[HTMLFormElement]): Unit = js.native
@@ -49,6 +51,7 @@ trait Dirty[Values /* <: FormikValues */] extends js.Object {
   def setFieldError(field: String): Unit = js.native
   def setFieldError(field: String, value: String): Unit = js.native
   def setFieldTouched(field: String): js.Any = js.native
+  def setFieldTouched(field: String, touched: js.UndefOr[scala.Nothing], shouldValidate: Boolean): js.Any = js.native
   def setFieldTouched(field: String, touched: Boolean): js.Any = js.native
   def setFieldTouched(field: String, touched: Boolean, shouldValidate: Boolean): js.Any = js.native
   def setFieldValue(field: String, value: js.Any): js.Any = js.native
@@ -61,7 +64,7 @@ trait Dirty[Values /* <: FormikValues */] extends js.Object {
   def setTouched(touched: FormikTouched[Values], shouldValidate: Boolean): js.Any = js.native
   def setValues(values: Values): js.Any = js.native
   def setValues(values: Values, shouldValidate: Boolean): js.Any = js.native
-  def submitForm(): js.Promise[js.UndefOr[Unit]] = js.native
+  def submitForm(): js.Promise[_] = js.native
   def unregisterField(name: String): Unit = js.native
   def validateField(name: String): js.Promise[js.UndefOr[String | Unit]] = js.native
   def validateForm(): js.Promise[FormikErrors[Values]] = js.native

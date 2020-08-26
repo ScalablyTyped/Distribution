@@ -7,108 +7,189 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait googleMapConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
-  var borderless: js.UndefOr[Boolean] = js.undefined
-  var center: js.UndefOr[js.Array[_]] = js.undefined
-  var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
-  var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
-  var datathrottle: js.UndefOr[Double] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var gravity: js.UndefOr[Double] = js.undefined
-  var heatmapConfig: js.UndefOr[js.Any] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var id: js.UndefOr[String | Double] = js.undefined
-  var keyPressTimeout: js.UndefOr[Double] = js.undefined
-  var layerType: js.UndefOr[String] = js.undefined
-  var mapType: js.UndefOr[String] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minHeight: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var on: js.UndefOr[EventHash] = js.undefined
-  var ready: js.UndefOr[WebixCallback] = js.undefined
-  var removeMissed: js.UndefOr[Boolean] = js.undefined
-  var save: js.UndefOr[js.Any] = js.undefined
-  var scheme: js.UndefOr[js.Any] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
-  var view: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var zoom: js.UndefOr[Double] = js.undefined
+  var animate: js.UndefOr[js.Any] = js.native
+  var borderless: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[js.Array[_]] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.native
+  var css: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var dataFeed: js.UndefOr[String | WebixCallback] = js.native
+  var datathrottle: js.UndefOr[Double] = js.native
+  var datatype: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var gravity: js.UndefOr[Double] = js.native
+  var heatmapConfig: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[String | Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var layerType: js.UndefOr[String] = js.native
+  var mapType: js.UndefOr[String] = js.native
+  var maxHeight: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var on: js.UndefOr[EventHash] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.native
+  var save: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.native
+  var view: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.native
 }
 
 object googleMapConfig {
   @scala.inline
-  def apply(
-    animate: js.Any = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    center: js.Array[_] = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    data: String | js.Array[_] = null,
-    dataFeed: String | WebixCallback = null,
-    datathrottle: js.UndefOr[Double] = js.undefined,
-    datatype: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    gravity: js.UndefOr[Double] = js.undefined,
-    heatmapConfig: js.Any = null,
-    height: js.UndefOr[Double] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    keyPressTimeout: js.UndefOr[Double] = js.undefined,
-    layerType: String = null,
-    mapType: String = null,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    on: EventHash = null,
-    ready: /* repeated */ js.Any => js.Any = null,
-    removeMissed: js.UndefOr[Boolean] = js.undefined,
-    save: js.Any = null,
-    scheme: js.Any = null,
-    url: js.Any = null,
-    view: String = null,
-    width: js.UndefOr[Double] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): googleMapConfig = {
+  def apply(): googleMapConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(datathrottle)) __obj.updateDynamic("datathrottle")(datathrottle.get.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gravity)) __obj.updateDynamic("gravity")(gravity.get.asInstanceOf[js.Any])
-    if (heatmapConfig != null) __obj.updateDynamic("heatmapConfig")(heatmapConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyPressTimeout)) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.get.asInstanceOf[js.Any])
-    if (layerType != null) __obj.updateDynamic("layerType")(layerType.asInstanceOf[js.Any])
-    if (mapType != null) __obj.updateDynamic("mapType")(mapType.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1(ready))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.get.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[googleMapConfig]
   }
+  @scala.inline
+  implicit class googleMapConfigOps[Self <: googleMapConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimate(value: js.Any): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimate: Self = this.set("animate", js.undefined)
+    @scala.inline
+    def setBorderless(value: Boolean): Self = this.set("borderless", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderless: Self = this.set("borderless", js.undefined)
+    @scala.inline
+    def setCenterVarargs(value: js.Any*): Self = this.set("center", js.Array(value :_*))
+    @scala.inline
+    def setCenter(value: js.Array[_]): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setContainer(value: String | HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setCss(value: js.Any): Self = this.set("css", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCss: Self = this.set("css", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: String | js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataFeedFunction1(value: /* repeated */ js.Any => js.Any): Self = this.set("dataFeed", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDataFeed(value: String | WebixCallback): Self = this.set("dataFeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFeed: Self = this.set("dataFeed", js.undefined)
+    @scala.inline
+    def setDatathrottle(value: Double): Self = this.set("datathrottle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatathrottle: Self = this.set("datathrottle", js.undefined)
+    @scala.inline
+    def setDatatype(value: String): Self = this.set("datatype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatatype: Self = this.set("datatype", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setGravity(value: Double): Self = this.set("gravity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGravity: Self = this.set("gravity", js.undefined)
+    @scala.inline
+    def setHeatmapConfig(value: js.Any): Self = this.set("heatmapConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeatmapConfig: Self = this.set("heatmapConfig", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setId(value: String | Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKeyPressTimeout(value: Double): Self = this.set("keyPressTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPressTimeout: Self = this.set("keyPressTimeout", js.undefined)
+    @scala.inline
+    def setLayerType(value: String): Self = this.set("layerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayerType: Self = this.set("layerType", js.undefined)
+    @scala.inline
+    def setMapType(value: String): Self = this.set("mapType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapType: Self = this.set("mapType", js.undefined)
+    @scala.inline
+    def setMaxHeight(value: Double): Self = this.set("maxHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHeight: Self = this.set("maxHeight", js.undefined)
+    @scala.inline
+    def setMaxWidth(value: Double): Self = this.set("maxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWidth: Self = this.set("maxWidth", js.undefined)
+    @scala.inline
+    def setMinHeight(value: Double): Self = this.set("minHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinHeight: Self = this.set("minHeight", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setOn(value: EventHash): Self = this.set("on", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOn: Self = this.set("on", js.undefined)
+    @scala.inline
+    def setReady(value: /* repeated */ js.Any => js.Any): Self = this.set("ready", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteReady: Self = this.set("ready", js.undefined)
+    @scala.inline
+    def setRemoveMissed(value: Boolean): Self = this.set("removeMissed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveMissed: Self = this.set("removeMissed", js.undefined)
+    @scala.inline
+    def setSave(value: js.Any): Self = this.set("save", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setScheme(value: js.Any): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+    @scala.inline
+    def setUrl(value: js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setView(value: String): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZoom(value: Double): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoom: Self = this.set("zoom", js.undefined)
+  }
+  
 }
 

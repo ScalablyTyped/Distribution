@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nanoscroller"
-version := "0.8-dt-20200515Z-992fa3"
-scalaVersion := "2.13.2"
+version := "0.8-dt-20200515Z-80b326"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

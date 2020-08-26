@@ -12,11 +12,30 @@ trait Enabled extends js.Object {
 
 object Enabled {
   @scala.inline
-  def apply(enabled: js.UndefOr[Boolean] = js.undefined, lockedTime: String = null): Enabled = {
+  def apply(): Enabled = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (lockedTime != null) __obj.updateDynamic("lockedTime")(lockedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
+  @scala.inline
+  implicit class EnabledOps[Self <: Enabled] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setLockedTime(value: String): Self = this.set("lockedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockedTime: Self = this.set("lockedTime", js.undefined)
+  }
+  
 }
 

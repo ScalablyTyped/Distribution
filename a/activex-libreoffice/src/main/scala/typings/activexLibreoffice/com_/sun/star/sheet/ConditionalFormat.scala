@@ -10,12 +10,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** represents a conditional format */
+@js.native
 trait ConditionalFormat
   extends XConditionalFormat
      with XPropertySet {
-  var ID: Double
+  var ID: Double = js.native
   /** represents the range for the conditional format All ranges have to be in the same sheet. */
-  var Range: XSheetCellRanges
+  var Range: XSheetCellRanges = js.native
 }
 
 object ConditionalFormat {
@@ -46,5 +47,22 @@ object ConditionalFormat {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createEntry = js.Any.fromFunction2(createEntry), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[ConditionalFormat]
   }
+  @scala.inline
+  implicit class ConditionalFormatOps[Self <: ConditionalFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setID(value: Double): Self = this.set("ID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRange(value: XSheetCellRanges): Self = this.set("Range", value.asInstanceOf[js.Any])
+  }
+  
 }
 

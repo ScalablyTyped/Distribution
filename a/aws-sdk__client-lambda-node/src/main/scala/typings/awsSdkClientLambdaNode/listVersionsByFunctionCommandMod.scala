@@ -26,16 +26,9 @@ object listVersionsByFunctionCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListVersionsByFunctionInput) = this()
-    /* CompleteClass */
-    override val input: ListVersionsByFunctionInput = js.native
     val middlewareStack: MiddlewareStack[ListVersionsByFunctionInput, ListVersionsByFunctionOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: LambdaResolvedConfiguration
-    ): Handler[ListVersionsByFunctionInput, ListVersionsByFunctionOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: LambdaResolvedConfiguration
     ): Handler[ListVersionsByFunctionInput, ListVersionsByFunctionOutput] = js.native
   }

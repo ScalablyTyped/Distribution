@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "cli-spinners"
-version := "1.3-dt-20190118Z-8e6a64"
-scalaVersion := "2.13.2"
+version := "2.4.0-6c0cad"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

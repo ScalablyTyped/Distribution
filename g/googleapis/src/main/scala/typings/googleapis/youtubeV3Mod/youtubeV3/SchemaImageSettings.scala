@@ -108,54 +108,110 @@ trait SchemaImageSettings extends js.Object {
 
 object SchemaImageSettings {
   @scala.inline
-  def apply(
-    backgroundImageUrl: SchemaLocalizedProperty = null,
-    bannerExternalUrl: String = null,
-    bannerImageUrl: String = null,
-    bannerMobileExtraHdImageUrl: String = null,
-    bannerMobileHdImageUrl: String = null,
-    bannerMobileImageUrl: String = null,
-    bannerMobileLowImageUrl: String = null,
-    bannerMobileMediumHdImageUrl: String = null,
-    bannerTabletExtraHdImageUrl: String = null,
-    bannerTabletHdImageUrl: String = null,
-    bannerTabletImageUrl: String = null,
-    bannerTabletLowImageUrl: String = null,
-    bannerTvHighImageUrl: String = null,
-    bannerTvImageUrl: String = null,
-    bannerTvLowImageUrl: String = null,
-    bannerTvMediumImageUrl: String = null,
-    largeBrandedBannerImageImapScript: SchemaLocalizedProperty = null,
-    largeBrandedBannerImageUrl: SchemaLocalizedProperty = null,
-    smallBrandedBannerImageImapScript: SchemaLocalizedProperty = null,
-    smallBrandedBannerImageUrl: SchemaLocalizedProperty = null,
-    trackingImageUrl: String = null,
-    watchIconImageUrl: String = null
-  ): SchemaImageSettings = {
+  def apply(): SchemaImageSettings = {
     val __obj = js.Dynamic.literal()
-    if (backgroundImageUrl != null) __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl.asInstanceOf[js.Any])
-    if (bannerExternalUrl != null) __obj.updateDynamic("bannerExternalUrl")(bannerExternalUrl.asInstanceOf[js.Any])
-    if (bannerImageUrl != null) __obj.updateDynamic("bannerImageUrl")(bannerImageUrl.asInstanceOf[js.Any])
-    if (bannerMobileExtraHdImageUrl != null) __obj.updateDynamic("bannerMobileExtraHdImageUrl")(bannerMobileExtraHdImageUrl.asInstanceOf[js.Any])
-    if (bannerMobileHdImageUrl != null) __obj.updateDynamic("bannerMobileHdImageUrl")(bannerMobileHdImageUrl.asInstanceOf[js.Any])
-    if (bannerMobileImageUrl != null) __obj.updateDynamic("bannerMobileImageUrl")(bannerMobileImageUrl.asInstanceOf[js.Any])
-    if (bannerMobileLowImageUrl != null) __obj.updateDynamic("bannerMobileLowImageUrl")(bannerMobileLowImageUrl.asInstanceOf[js.Any])
-    if (bannerMobileMediumHdImageUrl != null) __obj.updateDynamic("bannerMobileMediumHdImageUrl")(bannerMobileMediumHdImageUrl.asInstanceOf[js.Any])
-    if (bannerTabletExtraHdImageUrl != null) __obj.updateDynamic("bannerTabletExtraHdImageUrl")(bannerTabletExtraHdImageUrl.asInstanceOf[js.Any])
-    if (bannerTabletHdImageUrl != null) __obj.updateDynamic("bannerTabletHdImageUrl")(bannerTabletHdImageUrl.asInstanceOf[js.Any])
-    if (bannerTabletImageUrl != null) __obj.updateDynamic("bannerTabletImageUrl")(bannerTabletImageUrl.asInstanceOf[js.Any])
-    if (bannerTabletLowImageUrl != null) __obj.updateDynamic("bannerTabletLowImageUrl")(bannerTabletLowImageUrl.asInstanceOf[js.Any])
-    if (bannerTvHighImageUrl != null) __obj.updateDynamic("bannerTvHighImageUrl")(bannerTvHighImageUrl.asInstanceOf[js.Any])
-    if (bannerTvImageUrl != null) __obj.updateDynamic("bannerTvImageUrl")(bannerTvImageUrl.asInstanceOf[js.Any])
-    if (bannerTvLowImageUrl != null) __obj.updateDynamic("bannerTvLowImageUrl")(bannerTvLowImageUrl.asInstanceOf[js.Any])
-    if (bannerTvMediumImageUrl != null) __obj.updateDynamic("bannerTvMediumImageUrl")(bannerTvMediumImageUrl.asInstanceOf[js.Any])
-    if (largeBrandedBannerImageImapScript != null) __obj.updateDynamic("largeBrandedBannerImageImapScript")(largeBrandedBannerImageImapScript.asInstanceOf[js.Any])
-    if (largeBrandedBannerImageUrl != null) __obj.updateDynamic("largeBrandedBannerImageUrl")(largeBrandedBannerImageUrl.asInstanceOf[js.Any])
-    if (smallBrandedBannerImageImapScript != null) __obj.updateDynamic("smallBrandedBannerImageImapScript")(smallBrandedBannerImageImapScript.asInstanceOf[js.Any])
-    if (smallBrandedBannerImageUrl != null) __obj.updateDynamic("smallBrandedBannerImageUrl")(smallBrandedBannerImageUrl.asInstanceOf[js.Any])
-    if (trackingImageUrl != null) __obj.updateDynamic("trackingImageUrl")(trackingImageUrl.asInstanceOf[js.Any])
-    if (watchIconImageUrl != null) __obj.updateDynamic("watchIconImageUrl")(watchIconImageUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageSettings]
   }
+  @scala.inline
+  implicit class SchemaImageSettingsOps[Self <: SchemaImageSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackgroundImageUrl(value: SchemaLocalizedProperty): Self = this.set("backgroundImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundImageUrl: Self = this.set("backgroundImageUrl", js.undefined)
+    @scala.inline
+    def setBannerExternalUrl(value: String): Self = this.set("bannerExternalUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerExternalUrl: Self = this.set("bannerExternalUrl", js.undefined)
+    @scala.inline
+    def setBannerImageUrl(value: String): Self = this.set("bannerImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerImageUrl: Self = this.set("bannerImageUrl", js.undefined)
+    @scala.inline
+    def setBannerMobileExtraHdImageUrl(value: String): Self = this.set("bannerMobileExtraHdImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerMobileExtraHdImageUrl: Self = this.set("bannerMobileExtraHdImageUrl", js.undefined)
+    @scala.inline
+    def setBannerMobileHdImageUrl(value: String): Self = this.set("bannerMobileHdImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerMobileHdImageUrl: Self = this.set("bannerMobileHdImageUrl", js.undefined)
+    @scala.inline
+    def setBannerMobileImageUrl(value: String): Self = this.set("bannerMobileImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerMobileImageUrl: Self = this.set("bannerMobileImageUrl", js.undefined)
+    @scala.inline
+    def setBannerMobileLowImageUrl(value: String): Self = this.set("bannerMobileLowImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerMobileLowImageUrl: Self = this.set("bannerMobileLowImageUrl", js.undefined)
+    @scala.inline
+    def setBannerMobileMediumHdImageUrl(value: String): Self = this.set("bannerMobileMediumHdImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerMobileMediumHdImageUrl: Self = this.set("bannerMobileMediumHdImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTabletExtraHdImageUrl(value: String): Self = this.set("bannerTabletExtraHdImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTabletExtraHdImageUrl: Self = this.set("bannerTabletExtraHdImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTabletHdImageUrl(value: String): Self = this.set("bannerTabletHdImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTabletHdImageUrl: Self = this.set("bannerTabletHdImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTabletImageUrl(value: String): Self = this.set("bannerTabletImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTabletImageUrl: Self = this.set("bannerTabletImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTabletLowImageUrl(value: String): Self = this.set("bannerTabletLowImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTabletLowImageUrl: Self = this.set("bannerTabletLowImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTvHighImageUrl(value: String): Self = this.set("bannerTvHighImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTvHighImageUrl: Self = this.set("bannerTvHighImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTvImageUrl(value: String): Self = this.set("bannerTvImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTvImageUrl: Self = this.set("bannerTvImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTvLowImageUrl(value: String): Self = this.set("bannerTvLowImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTvLowImageUrl: Self = this.set("bannerTvLowImageUrl", js.undefined)
+    @scala.inline
+    def setBannerTvMediumImageUrl(value: String): Self = this.set("bannerTvMediumImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannerTvMediumImageUrl: Self = this.set("bannerTvMediumImageUrl", js.undefined)
+    @scala.inline
+    def setLargeBrandedBannerImageImapScript(value: SchemaLocalizedProperty): Self = this.set("largeBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLargeBrandedBannerImageImapScript: Self = this.set("largeBrandedBannerImageImapScript", js.undefined)
+    @scala.inline
+    def setLargeBrandedBannerImageUrl(value: SchemaLocalizedProperty): Self = this.set("largeBrandedBannerImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLargeBrandedBannerImageUrl: Self = this.set("largeBrandedBannerImageUrl", js.undefined)
+    @scala.inline
+    def setSmallBrandedBannerImageImapScript(value: SchemaLocalizedProperty): Self = this.set("smallBrandedBannerImageImapScript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmallBrandedBannerImageImapScript: Self = this.set("smallBrandedBannerImageImapScript", js.undefined)
+    @scala.inline
+    def setSmallBrandedBannerImageUrl(value: SchemaLocalizedProperty): Self = this.set("smallBrandedBannerImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmallBrandedBannerImageUrl: Self = this.set("smallBrandedBannerImageUrl", js.undefined)
+    @scala.inline
+    def setTrackingImageUrl(value: String): Self = this.set("trackingImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackingImageUrl: Self = this.set("trackingImageUrl", js.undefined)
+    @scala.inline
+    def setWatchIconImageUrl(value: String): Self = this.set("watchIconImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchIconImageUrl: Self = this.set("watchIconImageUrl", js.undefined)
+  }
+  
 }
 

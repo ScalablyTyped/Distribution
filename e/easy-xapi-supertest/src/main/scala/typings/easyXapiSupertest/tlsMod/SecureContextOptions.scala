@@ -4,44 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SecureContextOptions extends js.Object {
     // string | buffer
-  var ca: js.UndefOr[js.Any] = js.undefined
-  var cert: js.UndefOr[js.Any] = js.undefined
+  var ca: js.UndefOr[js.Any] = js.native
+  var cert: js.UndefOr[js.Any] = js.native
      // string | string[]
-  var ciphers: js.UndefOr[String] = js.undefined
+  var ciphers: js.UndefOr[String] = js.native
       // string | buffer
-  var crl: js.UndefOr[js.Any] = js.undefined
-  var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
+  var crl: js.UndefOr[js.Any] = js.native
+  var honorCipherOrder: js.UndefOr[Boolean] = js.native
      //string | buffer
-  var key: js.UndefOr[js.Any] = js.undefined
+  var key: js.UndefOr[js.Any] = js.native
      //string | buffer
-  var passphrase: js.UndefOr[String] = js.undefined
-  var pfx: js.UndefOr[js.Any] = js.undefined
+  var passphrase: js.UndefOr[String] = js.native
+  var pfx: js.UndefOr[js.Any] = js.native
 }
 
 object SecureContextOptions {
   @scala.inline
-  def apply(
-    ca: js.Any = null,
-    cert: js.Any = null,
-    ciphers: String = null,
-    crl: js.Any = null,
-    honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    key: js.Any = null,
-    passphrase: String = null,
-    pfx: js.Any = null
-  ): SecureContextOptions = {
+  def apply(): SecureContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureContextOptions]
   }
+  @scala.inline
+  implicit class SecureContextOptionsOps[Self <: SecureContextOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCa(value: js.Any): Self = this.set("ca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCa: Self = this.set("ca", js.undefined)
+    @scala.inline
+    def setCert(value: js.Any): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setCiphers(value: String): Self = this.set("ciphers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCiphers: Self = this.set("ciphers", js.undefined)
+    @scala.inline
+    def setCrl(value: js.Any): Self = this.set("crl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrl: Self = this.set("crl", js.undefined)
+    @scala.inline
+    def setHonorCipherOrder(value: Boolean): Self = this.set("honorCipherOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorCipherOrder: Self = this.set("honorCipherOrder", js.undefined)
+    @scala.inline
+    def setKey(value: js.Any): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    @scala.inline
+    def setPfx(value: js.Any): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfx: Self = this.set("pfx", js.undefined)
+  }
+  
 }
 

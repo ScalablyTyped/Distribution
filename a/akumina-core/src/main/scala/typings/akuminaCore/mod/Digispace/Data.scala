@@ -93,10 +93,16 @@ object Data extends js.Object {
     def GetWidgetsForPage(pageId: String): JQueryDeferred[_] = js.native
     def GetWidgetsForPage(pageId: String, legacy: Boolean): JQueryDeferred[_] = js.native
     def LoadTermSet(): JQueryDeferred[_] = js.native
+    def LoadTermSet(termSetName: js.UndefOr[scala.Nothing], columnName: js.UndefOr[scala.Nothing], columnValue: String): JQueryDeferred[_] = js.native
+    def LoadTermSet(termSetName: js.UndefOr[scala.Nothing], columnName: String): JQueryDeferred[_] = js.native
+    def LoadTermSet(termSetName: js.UndefOr[scala.Nothing], columnName: String, columnValue: String): JQueryDeferred[_] = js.native
+    def LoadTermSet(termSetName: js.UndefOr[scala.Nothing], columnName: Null, columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: String): JQueryDeferred[_] = js.native
+    def LoadTermSet(termSetName: String, columnName: js.UndefOr[scala.Nothing], columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: String, columnName: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: String, columnName: String, columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: String, columnName: Null, columnValue: String): JQueryDeferred[_] = js.native
+    def LoadTermSet(termSetName: Null, columnName: js.UndefOr[scala.Nothing], columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: Null, columnName: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: Null, columnName: String, columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: Null, columnName: Null, columnValue: String): JQueryDeferred[_] = js.native
@@ -676,9 +682,9 @@ object Data extends js.Object {
       * @returns Resolves with array of {id, displayName, type, description}
       */
     def GetSiteSPGroups(): JQueryDeferred[_] = js.native
+    /* Added */
     def LoadTermSet(termSetName: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: String, columnName: String): JQueryDeferred[_] = js.native
-    /* Added */
     def LoadTermSet(termSetName: String, columnName: String, columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSet(termSetName: String, columnName: Null, columnValue: String): JQueryDeferred[_] = js.native
     def LoadTermSetById(termSetId: String, columnName: String): JQueryDeferred[_] = js.native
@@ -750,11 +756,11 @@ object Data extends js.Object {
       * @param widgets
       */
     def GetWidgetObjsOnPage(widgets: js.Array[_]): js.Array[_] = js.native
-    def GetWidgetPropertiesForInstances(): JQueryDeferred[_] = js.native
     /**
       * #MARK - dataType correction
       * @param widgetInstanceIds Array of widget Instance Ids
       */
+    def GetWidgetPropertiesForInstances(): JQueryDeferred[_] = js.native
     def GetWidgetPropertiesForInstances(widgetInstanceIds: js.Array[String]): JQueryDeferred[_] = js.native
     /**
       * @param widgetType WidgetType

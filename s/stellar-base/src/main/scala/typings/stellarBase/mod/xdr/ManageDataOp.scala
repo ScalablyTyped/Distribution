@@ -1,0 +1,35 @@
+package typings.stellarBase.mod.xdr
+
+import typings.node.Buffer
+import typings.stellarBase.anon.DataName
+import typings.stellarBase.stellarBaseStrings.base64
+import typings.stellarBase.stellarBaseStrings.hex
+import typings.stellarBase.stellarBaseStrings.raw
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("stellar-base", "xdr.ManageDataOp")
+@js.native
+class ManageDataOp protected ()
+  extends typings.stellarBase.xdrMod.default.ManageDataOp {
+  def this(attributes: DataName) = this()
+}
+
+/* static members */
+@JSImport("stellar-base", "xdr.ManageDataOp")
+@js.native
+object ManageDataOp extends js.Object {
+  def fromXDR(input: Buffer): typings.stellarBase.xdrMod.xdr.ManageDataOp = js.native
+  @JSName("fromXDR")
+  def fromXDR_base64(input: String, format: base64): typings.stellarBase.xdrMod.xdr.ManageDataOp = js.native
+  @JSName("fromXDR")
+  def fromXDR_hex(input: String, format: hex): typings.stellarBase.xdrMod.xdr.ManageDataOp = js.native
+  @JSName("fromXDR")
+  def fromXDR_raw(input: Buffer, format: raw): typings.stellarBase.xdrMod.xdr.ManageDataOp = js.native
+  def isValid(value: typings.stellarBase.xdrMod.xdr.ManageDataOp): Boolean = js.native
+  def read(io: Buffer): typings.stellarBase.xdrMod.xdr.ManageDataOp = js.native
+  def toXDR(value: typings.stellarBase.xdrMod.xdr.ManageDataOp): Buffer = js.native
+  def write(value: typings.stellarBase.xdrMod.xdr.ManageDataOp, io: Buffer): Unit = js.native
+}
+

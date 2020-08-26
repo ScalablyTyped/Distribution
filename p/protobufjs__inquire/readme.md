@@ -12,7 +12,7 @@ Requires a module only if available and hides the require call from bundlers.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 30 |
-| # downloads        | 53326420 |
+| # downloads        | 56286654 |
 | # stars            | 0 |
 
 ## Links

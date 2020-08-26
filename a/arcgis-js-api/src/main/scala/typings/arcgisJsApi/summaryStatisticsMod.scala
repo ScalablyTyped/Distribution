@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("esri/renderers/smartMapping/statistics/summaryStatistics", JSImport.Namespace)
+@JSImport("esri/smartMapping/statistics/summaryStatistics", JSImport.Namespace)
 @js.native
 object summaryStatisticsMod
   extends TopLevel[

@@ -12,7 +12,7 @@ node bindings to the Gamepad library
 | Keywords           | gamepad, joystick |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 8414 |
+| # downloads        | 8426 |
 | # stars            | 1 |
 
 ## Links

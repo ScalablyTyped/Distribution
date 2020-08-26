@@ -24,6 +24,7 @@ abstract class Resource protected ()
     */
   def this(t: String, name: String, custom: Boolean) = this()
   def this(t: String, name: String, custom: Boolean, props: Inputs) = this()
+  def this(t: String, name: String, custom: Boolean, props: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
   def this(t: String, name: String, custom: Boolean, props: Inputs, opts: ResourceOptions) = this()
 }
 

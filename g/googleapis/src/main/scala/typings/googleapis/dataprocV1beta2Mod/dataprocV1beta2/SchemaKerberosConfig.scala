@@ -85,38 +85,78 @@ trait SchemaKerberosConfig extends js.Object {
 
 object SchemaKerberosConfig {
   @scala.inline
-  def apply(
-    crossRealmTrustAdminServer: String = null,
-    crossRealmTrustKdc: String = null,
-    crossRealmTrustRealm: String = null,
-    crossRealmTrustSharedPasswordUri: String = null,
-    enableKerberos: js.UndefOr[Boolean] = js.undefined,
-    kdcDbKeyUri: String = null,
-    keyPasswordUri: String = null,
-    keystorePasswordUri: String = null,
-    keystoreUri: String = null,
-    kmsKeyUri: String = null,
-    rootPrincipalPasswordUri: String = null,
-    tgtLifetimeHours: js.UndefOr[Double] = js.undefined,
-    truststorePasswordUri: String = null,
-    truststoreUri: String = null
-  ): SchemaKerberosConfig = {
+  def apply(): SchemaKerberosConfig = {
     val __obj = js.Dynamic.literal()
-    if (crossRealmTrustAdminServer != null) __obj.updateDynamic("crossRealmTrustAdminServer")(crossRealmTrustAdminServer.asInstanceOf[js.Any])
-    if (crossRealmTrustKdc != null) __obj.updateDynamic("crossRealmTrustKdc")(crossRealmTrustKdc.asInstanceOf[js.Any])
-    if (crossRealmTrustRealm != null) __obj.updateDynamic("crossRealmTrustRealm")(crossRealmTrustRealm.asInstanceOf[js.Any])
-    if (crossRealmTrustSharedPasswordUri != null) __obj.updateDynamic("crossRealmTrustSharedPasswordUri")(crossRealmTrustSharedPasswordUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableKerberos)) __obj.updateDynamic("enableKerberos")(enableKerberos.get.asInstanceOf[js.Any])
-    if (kdcDbKeyUri != null) __obj.updateDynamic("kdcDbKeyUri")(kdcDbKeyUri.asInstanceOf[js.Any])
-    if (keyPasswordUri != null) __obj.updateDynamic("keyPasswordUri")(keyPasswordUri.asInstanceOf[js.Any])
-    if (keystorePasswordUri != null) __obj.updateDynamic("keystorePasswordUri")(keystorePasswordUri.asInstanceOf[js.Any])
-    if (keystoreUri != null) __obj.updateDynamic("keystoreUri")(keystoreUri.asInstanceOf[js.Any])
-    if (kmsKeyUri != null) __obj.updateDynamic("kmsKeyUri")(kmsKeyUri.asInstanceOf[js.Any])
-    if (rootPrincipalPasswordUri != null) __obj.updateDynamic("rootPrincipalPasswordUri")(rootPrincipalPasswordUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(tgtLifetimeHours)) __obj.updateDynamic("tgtLifetimeHours")(tgtLifetimeHours.get.asInstanceOf[js.Any])
-    if (truststorePasswordUri != null) __obj.updateDynamic("truststorePasswordUri")(truststorePasswordUri.asInstanceOf[js.Any])
-    if (truststoreUri != null) __obj.updateDynamic("truststoreUri")(truststoreUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaKerberosConfig]
   }
+  @scala.inline
+  implicit class SchemaKerberosConfigOps[Self <: SchemaKerberosConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrossRealmTrustAdminServer(value: String): Self = this.set("crossRealmTrustAdminServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossRealmTrustAdminServer: Self = this.set("crossRealmTrustAdminServer", js.undefined)
+    @scala.inline
+    def setCrossRealmTrustKdc(value: String): Self = this.set("crossRealmTrustKdc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossRealmTrustKdc: Self = this.set("crossRealmTrustKdc", js.undefined)
+    @scala.inline
+    def setCrossRealmTrustRealm(value: String): Self = this.set("crossRealmTrustRealm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossRealmTrustRealm: Self = this.set("crossRealmTrustRealm", js.undefined)
+    @scala.inline
+    def setCrossRealmTrustSharedPasswordUri(value: String): Self = this.set("crossRealmTrustSharedPasswordUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossRealmTrustSharedPasswordUri: Self = this.set("crossRealmTrustSharedPasswordUri", js.undefined)
+    @scala.inline
+    def setEnableKerberos(value: Boolean): Self = this.set("enableKerberos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableKerberos: Self = this.set("enableKerberos", js.undefined)
+    @scala.inline
+    def setKdcDbKeyUri(value: String): Self = this.set("kdcDbKeyUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKdcDbKeyUri: Self = this.set("kdcDbKeyUri", js.undefined)
+    @scala.inline
+    def setKeyPasswordUri(value: String): Self = this.set("keyPasswordUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPasswordUri: Self = this.set("keyPasswordUri", js.undefined)
+    @scala.inline
+    def setKeystorePasswordUri(value: String): Self = this.set("keystorePasswordUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeystorePasswordUri: Self = this.set("keystorePasswordUri", js.undefined)
+    @scala.inline
+    def setKeystoreUri(value: String): Self = this.set("keystoreUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeystoreUri: Self = this.set("keystoreUri", js.undefined)
+    @scala.inline
+    def setKmsKeyUri(value: String): Self = this.set("kmsKeyUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyUri: Self = this.set("kmsKeyUri", js.undefined)
+    @scala.inline
+    def setRootPrincipalPasswordUri(value: String): Self = this.set("rootPrincipalPasswordUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootPrincipalPasswordUri: Self = this.set("rootPrincipalPasswordUri", js.undefined)
+    @scala.inline
+    def setTgtLifetimeHours(value: Double): Self = this.set("tgtLifetimeHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTgtLifetimeHours: Self = this.set("tgtLifetimeHours", js.undefined)
+    @scala.inline
+    def setTruststorePasswordUri(value: String): Self = this.set("truststorePasswordUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruststorePasswordUri: Self = this.set("truststorePasswordUri", js.undefined)
+    @scala.inline
+    def setTruststoreUri(value: String): Self = this.set("truststoreUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruststoreUri: Self = this.set("truststoreUri", js.undefined)
+  }
+  
 }
 

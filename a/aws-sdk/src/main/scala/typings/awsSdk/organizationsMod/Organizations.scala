@@ -26,12 +26,12 @@ trait Organizations extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AcceptHandshakeResponse, Unit]
   ): Request[AcceptHandshakeResponse, AWSError] = js.native
   /**
-    * Attaches a policy to a root, an organizational unit (OU), or an individual account. How the policy affects accounts depends on the type of policy. Refer to the AWS Organizations User Guide for information about each policy type:    BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY    This operation can be called only from the organization's master account.
+    * Attaches a policy to a root, an organizational unit (OU), or an individual account. How the policy affects accounts depends on the type of policy. Refer to the AWS Organizations User Guide for information about each policy type:    AISERVICES_OPT_OUT_POLICY     BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY    This operation can be called only from the organization's master account.
     */
   def attachPolicy(): Request[js.Object, AWSError] = js.native
   def attachPolicy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Attaches a policy to a root, an organizational unit (OU), or an individual account. How the policy affects accounts depends on the type of policy. Refer to the AWS Organizations User Guide for information about each policy type:    BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY    This operation can be called only from the organization's master account.
+    * Attaches a policy to a root, an organizational unit (OU), or an individual account. How the policy affects accounts depends on the type of policy. Refer to the AWS Organizations User Guide for information about each policy type:    AISERVICES_OPT_OUT_POLICY     BACKUP_POLICY     SERVICE_CONTROL_POLICY     TAG_POLICY    This operation can be called only from the organization's master account.
     */
   def attachPolicy(params: AttachPolicyRequest): Request[js.Object, AWSError] = js.native
   def attachPolicy(
@@ -161,12 +161,12 @@ trait Organizations extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
-    * Removes the specified member AWS account as a delegated administrator for the specified AWS service. You can run this action only for AWS services that support this feature. For a current list of services that support it, see the column Supports Delegated Administrator in the table at AWS Services that you can use with AWS Organizations in the AWS Organizations User Guide.  This operation can be called only from the organization's master account.
+    * Removes the specified member AWS account as a delegated administrator for the specified AWS service.  Deregistering a delegated administrator can have unintended impacts on the functionality of the enabled AWS service. See the documentation for the enabled service before you deregister a delegated administrator so that you understand any potential impacts.  You can run this action only for AWS services that support this feature. For a current list of services that support it, see the column Supports Delegated Administrator in the table at AWS Services that you can use with AWS Organizations in the AWS Organizations User Guide.  This operation can be called only from the organization's master account.
     */
   def deregisterDelegatedAdministrator(): Request[js.Object, AWSError] = js.native
   def deregisterDelegatedAdministrator(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes the specified member AWS account as a delegated administrator for the specified AWS service. You can run this action only for AWS services that support this feature. For a current list of services that support it, see the column Supports Delegated Administrator in the table at AWS Services that you can use with AWS Organizations in the AWS Organizations User Guide.  This operation can be called only from the organization's master account.
+    * Removes the specified member AWS account as a delegated administrator for the specified AWS service.  Deregistering a delegated administrator can have unintended impacts on the functionality of the enabled AWS service. See the documentation for the enabled service before you deregister a delegated administrator so that you understand any potential impacts.  You can run this action only for AWS services that support this feature. For a current list of services that support it, see the column Supports Delegated Administrator in the table at AWS Services that you can use with AWS Organizations in the AWS Organizations User Guide.  This operation can be called only from the organization's master account.
     */
   def deregisterDelegatedAdministrator(params: DeregisterDelegatedAdministratorRequest): Request[js.Object, AWSError] = js.native
   def deregisterDelegatedAdministrator(

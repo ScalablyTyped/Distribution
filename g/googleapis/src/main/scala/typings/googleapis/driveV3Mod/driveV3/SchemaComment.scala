@@ -69,34 +69,72 @@ trait SchemaComment extends js.Object {
 
 object SchemaComment {
   @scala.inline
-  def apply(
-    anchor: String = null,
-    author: SchemaUser = null,
-    content: String = null,
-    createdTime: String = null,
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    htmlContent: String = null,
-    id: String = null,
-    kind: String = null,
-    modifiedTime: String = null,
-    quotedFileContent: MimeTypeValue = null,
-    replies: js.Array[SchemaReply] = null,
-    resolved: js.UndefOr[Boolean] = js.undefined
-  ): SchemaComment = {
+  def apply(): SchemaComment = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (htmlContent != null) __obj.updateDynamic("htmlContent")(htmlContent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime.asInstanceOf[js.Any])
-    if (quotedFileContent != null) __obj.updateDynamic("quotedFileContent")(quotedFileContent.asInstanceOf[js.Any])
-    if (replies != null) __obj.updateDynamic("replies")(replies.asInstanceOf[js.Any])
-    if (!js.isUndefined(resolved)) __obj.updateDynamic("resolved")(resolved.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaComment]
   }
+  @scala.inline
+  implicit class SchemaCommentOps[Self <: SchemaComment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchor(value: String): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnchor: Self = this.set("anchor", js.undefined)
+    @scala.inline
+    def setAuthor(value: SchemaUser): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: String): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setHtmlContent(value: String): Self = this.set("htmlContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlContent: Self = this.set("htmlContent", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setModifiedTime(value: String): Self = this.set("modifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTime: Self = this.set("modifiedTime", js.undefined)
+    @scala.inline
+    def setQuotedFileContent(value: MimeTypeValue): Self = this.set("quotedFileContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotedFileContent: Self = this.set("quotedFileContent", js.undefined)
+    @scala.inline
+    def setRepliesVarargs(value: SchemaReply*): Self = this.set("replies", js.Array(value :_*))
+    @scala.inline
+    def setReplies(value: js.Array[SchemaReply]): Self = this.set("replies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplies: Self = this.set("replies", js.undefined)
+    @scala.inline
+    def setResolved(value: Boolean): Self = this.set("resolved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolved: Self = this.set("resolved", js.undefined)
+  }
+  
 }
 

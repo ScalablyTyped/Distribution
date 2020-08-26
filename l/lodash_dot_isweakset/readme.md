@@ -12,7 +12,7 @@ The lodash method `_.isWeakSet` exported as a module.
 | Keywords           | lodash-modularized, isweakset |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 807 |
+| # downloads        | 868 |
 | # stars            | 0 |
 
 ## Links

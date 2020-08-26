@@ -32,6 +32,7 @@ object mod extends js.Object {
   class JID protected () extends js.Object {
     def this(local: String) = this()
     def this(local: String, domain: String) = this()
+    def this(local: String, domain: js.UndefOr[scala.Nothing], resource: String) = this()
     def this(local: String, domain: String, resource: String) = this()
     var domain: String = js.native
     var local: String = js.native
@@ -86,7 +87,7 @@ object mod extends js.Object {
     var `type`: String = js.native
   }
   
-  def createElement(name: String): typings.ltx.elementMod.Element = js.native
+  def createElement(name: String, attrs: js.UndefOr[scala.Nothing], children: Node*): typings.ltx.elementMod.Element = js.native
   def createElement(name: String, attrs: String, children: Node*): typings.ltx.elementMod.Element = js.native
   def createElement(name: String, attrs: StringDictionary[js.Any], children: Node*): typings.ltx.elementMod.Element = js.native
   def createStanza(name: String): typings.ltx.mod.Element = js.native

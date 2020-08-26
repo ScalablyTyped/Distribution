@@ -1,8 +1,8 @@
 package typings.phaser.Phaser.Physics.Arcade
 
 import typings.phaser.ArcadePhysicsCallback
-import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeColliderType
+import typings.phaser.Phaser.Types.Physics.Arcade.GameObjectWithBody
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -54,7 +54,7 @@ trait Collider extends js.Object {
   /**
     * The callback to invoke when the two objects collide.
     */
-  def collideCallback(object1: GameObject, object2: GameObject): Unit = js.native
+  def collideCallback(object1: GameObjectWithBody, object2: GameObjectWithBody): Unit = js.native
   /**
     * Removes Collider from World and disposes of its resources.
     */
@@ -62,7 +62,7 @@ trait Collider extends js.Object {
   /**
     * If a processCallback exists it must return true or collision checking will be skipped.
     */
-  def processCallback(object1: GameObject, object2: GameObject): Unit = js.native
+  def processCallback(object1: GameObjectWithBody, object2: GameObjectWithBody): Unit = js.native
   /**
     * A name for the Collider.
     * 

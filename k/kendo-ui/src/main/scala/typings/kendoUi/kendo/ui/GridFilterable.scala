@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridFilterable extends js.Object {
-  var extra: js.UndefOr[Boolean] = js.undefined
-  var messages: js.UndefOr[GridFilterableMessages] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var operators: js.UndefOr[GridFilterableOperators] = js.undefined
+  var extra: js.UndefOr[Boolean] = js.native
+  var messages: js.UndefOr[GridFilterableMessages] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var operators: js.UndefOr[GridFilterableOperators] = js.native
 }
 
 object GridFilterable {
   @scala.inline
-  def apply(
-    extra: js.UndefOr[Boolean] = js.undefined,
-    messages: GridFilterableMessages = null,
-    mode: String = null,
-    operators: GridFilterableOperators = null
-  ): GridFilterable = {
+  def apply(): GridFilterable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFilterable]
   }
+  @scala.inline
+  implicit class GridFilterableOps[Self <: GridFilterable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtra(value: Boolean): Self = this.set("extra", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtra: Self = this.set("extra", js.undefined)
+    @scala.inline
+    def setMessages(value: GridFilterableMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOperators(value: GridFilterableOperators): Self = this.set("operators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperators: Self = this.set("operators", js.undefined)
+  }
+  
 }
 

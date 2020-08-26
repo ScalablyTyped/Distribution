@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * The ScriptComponent allows you to extend the functionality of an Entity by attaching your own Script Types defined in JavaScript files
-  to be executed with access to the Entity. For more details on scripting see <a href="//developer.playcanvas.com/user-manual/scripting/">Scripting</a>.
+  * to be executed with access to the Entity. For more details on scripting see <a href="//developer.playcanvas.com/user-manual/scripting/">Scripting</a>.
   * @property scripts - An array of all script instances attached to an entity. This Array shall not be modified by developer.
   * @param system - The ComponentSystem that created this Component.
   * @param entity - The Entity that this Component is attached to.
@@ -23,10 +23,10 @@ trait ScriptComponent extends Component {
     * Create a script instance and attach to an entity script component.
     * @example
     * entity.script.create('playerController', {
-    attributes: {
-    speed: 4
-    }
-    });
+    *     attributes: {
+    *         speed: 4
+    *     }
+    * });
     * @param nameOrType - The name or type of {@link pc.ScriptType}.
     * @param [args] - Object with arguments for a script.
     * @param [args.enabled] - If script instance is enabled after creation. Defaults to true.
@@ -34,8 +34,8 @@ trait ScriptComponent extends Component {
     * @param [args.preloading] - If script instance is created during preload. If true, script and attributes must be initialized manually. Defaults to false.
     * @param [args.ind] - The index where to insert the script instance at. Defaults to -1, which means append it at the end.
     * @returns Returns an instance of a {@link pc.ScriptType} if successfully attached to an entity,
-    or null if it failed because a script with a same name has already been added
-    or if the {@link pc.ScriptType} cannot be found by name in the {@link pc.ScriptRegistry}.
+    * or null if it failed because a script with a same name has already been added
+    * or if the {@link pc.ScriptType} cannot be found by name in the {@link pc.ScriptRegistry}.
     */
   def create(nameOrType: String): ScriptType = js.native
   def create(nameOrType: String, args: Enabled): ScriptType = js.native
@@ -63,8 +63,8 @@ trait ScriptComponent extends Component {
     * Detect if script is attached to an entity.
     * @example
     * if (entity.script.has('playerController')) {
-    // entity has script
-    }
+    *     // entity has script
+    * }
     * @param nameOrType - The name or type of {@link pc.ScriptType}.
     * @returns If script is attached to an entity.
     */

@@ -7,15 +7,16 @@ import scala.scalajs.js.annotation._
 /**
   * Size...
   */
+@js.native
 trait ISize extends js.Object {
   /**
     * Number of pixels on the x axis.
     */
-  var qcx: Double
+  var qcx: Double = js.native
   /**
     * Number of pixels on the y axis.
     */
-  var qcy: Double
+  var qcy: Double = js.native
 }
 
 object ISize {
@@ -24,5 +25,22 @@ object ISize {
     val __obj = js.Dynamic.literal(qcx = qcx.asInstanceOf[js.Any], qcy = qcy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISize]
   }
+  @scala.inline
+  implicit class ISizeOps[Self <: ISize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setQcx(value: Double): Self = this.set("qcx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQcy(value: Double): Self = this.set("qcy", value.asInstanceOf[js.Any])
+  }
+  
 }
 

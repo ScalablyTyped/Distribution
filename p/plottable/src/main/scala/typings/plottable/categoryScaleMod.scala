@@ -49,18 +49,6 @@ object categoryScaleMod extends js.Object {
       */
     def cloneWithoutProviders(): Category = js.native
     /**
-      * Returns the current transformed domain of the scale. This must be a
-      * numerical range in the same coordinate space used for
-      * `scaleTransformation`.
-      */
-    /* CompleteClass */
-    override def getTransformationDomain(): js.Tuple2[Double, Double] = js.native
-    /**
-      * Gets the full extent of the transformation domain.
-      */
-    /* CompleteClass */
-    override def getTransformationExtent(): js.Tuple2[Double, Double] = js.native
-    /**
       * Gets the inner padding.
       *
       * The inner padding is defined as the padding in between bands on the scale,
@@ -86,11 +74,6 @@ object categoryScaleMod extends js.Object {
     def invertRange(): js.Array[String] = js.native
     def invertRange(range: js.Tuple2[Double, Double]): js.Array[String] = js.native
     /**
-      * Returns value in *Transformation Space* for the provided *screen space*.
-      */
-    /* CompleteClass */
-    override def invertedTransformation(value: Double): Double = js.native
-    /**
       * Gets the outer padding.
       *
       * The outer padding is the padding in between the outer bands and the edges of the range,
@@ -108,13 +91,6 @@ object categoryScaleMod extends js.Object {
       * @returns {Category} The calling Category Scale.
       */
     def outerPadding(outerPadding: Double): this.type = js.native
-    /**
-      * Translates the scale by a number of pixels.
-      *
-      * @param {number} [translateAmount] The translation amount in screen space
-      */
-    /* CompleteClass */
-    override def pan(translateAmount: Double): Unit = js.native
     def range(values: js.Tuple2[Double, Double]): this.type = js.native
     /**
       * Returns the width of the range band.
@@ -123,18 +99,6 @@ object categoryScaleMod extends js.Object {
       */
     def rangeBand(): Double = js.native
     /**
-      * Returns value in *screen space* for the given domain value.
-      */
-    /* CompleteClass */
-    override def scaleTransformation(value: Double): Double = js.native
-    /**
-      * Directly set the transformation domain. Instead of calling `.zoom` or
-      * `.pan` perform calculations relative to the current domain, this can but
-      * used to pan/zoom to an exact domain interval (in transformation space).
-      */
-    /* CompleteClass */
-    override def setTransformationDomain(domain: js.Tuple2[Double, Double]): Unit = js.native
-    /**
       * Returns the step width of the scale.
       *
       * The step width is the pixel distance between adjacent values in the domain.
@@ -142,17 +106,6 @@ object categoryScaleMod extends js.Object {
       * @returns {number}
       */
     def stepWidth(): Double = js.native
-    /**
-      * Apply the magnification with the floating point `magnifyAmount` centered
-      * at the `centerValue` coordinate.
-      *
-      * @param {number} [magnifyAmount] The floating point zoom amount. `1.0` is
-      * no zoom change.
-      * @param {number} [centerValue] The coordinate of the mouse in screen
-      * space.
-      */
-    /* CompleteClass */
-    override def zoom(magnifyAmount: Double, centerValue: Double): Unit = js.native
   }
   
   /* static members */

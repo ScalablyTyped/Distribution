@@ -24,11 +24,30 @@ trait SchemaCreateServiceAccountKeyRequest extends js.Object {
 
 object SchemaCreateServiceAccountKeyRequest {
   @scala.inline
-  def apply(keyAlgorithm: String = null, privateKeyType: String = null): SchemaCreateServiceAccountKeyRequest = {
+  def apply(): SchemaCreateServiceAccountKeyRequest = {
     val __obj = js.Dynamic.literal()
-    if (keyAlgorithm != null) __obj.updateDynamic("keyAlgorithm")(keyAlgorithm.asInstanceOf[js.Any])
-    if (privateKeyType != null) __obj.updateDynamic("privateKeyType")(privateKeyType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateServiceAccountKeyRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateServiceAccountKeyRequestOps[Self <: SchemaCreateServiceAccountKeyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyAlgorithm(value: String): Self = this.set("keyAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyAlgorithm: Self = this.set("keyAlgorithm", js.undefined)
+    @scala.inline
+    def setPrivateKeyType(value: String): Self = this.set("privateKeyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeyType: Self = this.set("privateKeyType", js.undefined)
+  }
+  
 }
 

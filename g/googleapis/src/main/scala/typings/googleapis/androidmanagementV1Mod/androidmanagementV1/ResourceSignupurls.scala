@@ -28,6 +28,7 @@ class ResourceSignupurls protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaSignupUrl] = js.native
   def create(callback: BodyResponseCallback[SchemaSignupUrl]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignupUrl] = js.native
   def create(params: ParamsResourceSignupurlsCreate): GaxiosPromise[SchemaSignupUrl] = js.native
   def create(params: ParamsResourceSignupurlsCreate, callback: BodyResponseCallback[SchemaSignupUrl]): Unit = js.native
   def create(

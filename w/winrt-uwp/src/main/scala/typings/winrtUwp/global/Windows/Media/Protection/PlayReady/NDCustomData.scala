@@ -15,11 +15,5 @@ class NDCustomData protected ()
     * @param customDataBytes The custom data.
     */
   def this(customDataTypeIDBytes: js.Array[Double], customDataBytes: js.Array[Double]) = this()
-  /** Gets the custom data. */
-  /* CompleteClass */
-  override var customData: Double = js.native
-  /** Gets the 16-byte type identifier for the custom data. */
-  /* CompleteClass */
-  override var customDataTypeID: Double = js.native
 }
 

@@ -26,18 +26,40 @@ trait GetHostReservationPurchasePreviewResult extends js.Object {
 
 object GetHostReservationPurchasePreviewResult {
   @scala.inline
-  def apply(
-    CurrencyCode: CurrencyCodeValues = null,
-    Purchase: PurchaseSet = null,
-    TotalHourlyPrice: String = null,
-    TotalUpfrontPrice: String = null
-  ): GetHostReservationPurchasePreviewResult = {
+  def apply(): GetHostReservationPurchasePreviewResult = {
     val __obj = js.Dynamic.literal()
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (Purchase != null) __obj.updateDynamic("Purchase")(Purchase.asInstanceOf[js.Any])
-    if (TotalHourlyPrice != null) __obj.updateDynamic("TotalHourlyPrice")(TotalHourlyPrice.asInstanceOf[js.Any])
-    if (TotalUpfrontPrice != null) __obj.updateDynamic("TotalUpfrontPrice")(TotalUpfrontPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostReservationPurchasePreviewResult]
   }
+  @scala.inline
+  implicit class GetHostReservationPurchasePreviewResultOps[Self <: GetHostReservationPurchasePreviewResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setPurchaseVarargs(value: Purchase*): Self = this.set("Purchase", js.Array(value :_*))
+    @scala.inline
+    def setPurchase(value: PurchaseSet): Self = this.set("Purchase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePurchase: Self = this.set("Purchase", js.undefined)
+    @scala.inline
+    def setTotalHourlyPrice(value: String): Self = this.set("TotalHourlyPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalHourlyPrice: Self = this.set("TotalHourlyPrice", js.undefined)
+    @scala.inline
+    def setTotalUpfrontPrice(value: String): Self = this.set("TotalUpfrontPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalUpfrontPrice: Self = this.set("TotalUpfrontPrice", js.undefined)
+  }
+  
 }
 

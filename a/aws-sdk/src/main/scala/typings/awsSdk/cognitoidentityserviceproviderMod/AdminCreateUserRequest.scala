@@ -46,26 +46,60 @@ trait AdminCreateUserRequest extends js.Object {
 
 object AdminCreateUserRequest {
   @scala.inline
-  def apply(
-    UserPoolId: UserPoolIdType,
-    Username: UsernameType,
-    ClientMetadata: ClientMetadataType = null,
-    DesiredDeliveryMediums: DeliveryMediumListType = null,
-    ForceAliasCreation: js.UndefOr[ForceAliasCreation] = js.undefined,
-    MessageAction: MessageActionType = null,
-    TemporaryPassword: PasswordType = null,
-    UserAttributes: AttributeListType = null,
-    ValidationData: AttributeListType = null
-  ): AdminCreateUserRequest = {
+  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminCreateUserRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (ClientMetadata != null) __obj.updateDynamic("ClientMetadata")(ClientMetadata.asInstanceOf[js.Any])
-    if (DesiredDeliveryMediums != null) __obj.updateDynamic("DesiredDeliveryMediums")(DesiredDeliveryMediums.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForceAliasCreation)) __obj.updateDynamic("ForceAliasCreation")(ForceAliasCreation.get.asInstanceOf[js.Any])
-    if (MessageAction != null) __obj.updateDynamic("MessageAction")(MessageAction.asInstanceOf[js.Any])
-    if (TemporaryPassword != null) __obj.updateDynamic("TemporaryPassword")(TemporaryPassword.asInstanceOf[js.Any])
-    if (UserAttributes != null) __obj.updateDynamic("UserAttributes")(UserAttributes.asInstanceOf[js.Any])
-    if (ValidationData != null) __obj.updateDynamic("ValidationData")(ValidationData.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminCreateUserRequest]
   }
+  @scala.inline
+  implicit class AdminCreateUserRequestOps[Self <: AdminCreateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientMetadata(value: ClientMetadataType): Self = this.set("ClientMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientMetadata: Self = this.set("ClientMetadata", js.undefined)
+    @scala.inline
+    def setDesiredDeliveryMediumsVarargs(value: DeliveryMediumType*): Self = this.set("DesiredDeliveryMediums", js.Array(value :_*))
+    @scala.inline
+    def setDesiredDeliveryMediums(value: DeliveryMediumListType): Self = this.set("DesiredDeliveryMediums", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredDeliveryMediums: Self = this.set("DesiredDeliveryMediums", js.undefined)
+    @scala.inline
+    def setForceAliasCreation(value: ForceAliasCreation): Self = this.set("ForceAliasCreation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceAliasCreation: Self = this.set("ForceAliasCreation", js.undefined)
+    @scala.inline
+    def setMessageAction(value: MessageActionType): Self = this.set("MessageAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAction: Self = this.set("MessageAction", js.undefined)
+    @scala.inline
+    def setTemporaryPassword(value: PasswordType): Self = this.set("TemporaryPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemporaryPassword: Self = this.set("TemporaryPassword", js.undefined)
+    @scala.inline
+    def setUserAttributesVarargs(value: AttributeType*): Self = this.set("UserAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributes(value: AttributeListType): Self = this.set("UserAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAttributes: Self = this.set("UserAttributes", js.undefined)
+    @scala.inline
+    def setValidationDataVarargs(value: AttributeType*): Self = this.set("ValidationData", js.Array(value :_*))
+    @scala.inline
+    def setValidationData(value: AttributeListType): Self = this.set("ValidationData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationData: Self = this.set("ValidationData", js.undefined)
+  }
+  
 }
 

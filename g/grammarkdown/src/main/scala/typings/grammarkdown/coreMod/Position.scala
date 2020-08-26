@@ -7,9 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Position extends js.Object {
-  var character: Double
-  var line: Double
+  var character: Double = js.native
+  var line: Double = js.native
 }
 
 @JSImport("grammarkdown/dist/core", "Position")

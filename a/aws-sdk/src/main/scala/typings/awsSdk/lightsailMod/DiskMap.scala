@@ -18,11 +18,30 @@ trait DiskMap extends js.Object {
 
 object DiskMap {
   @scala.inline
-  def apply(newDiskName: ResourceName = null, originalDiskPath: NonEmptyString = null): DiskMap = {
+  def apply(): DiskMap = {
     val __obj = js.Dynamic.literal()
-    if (newDiskName != null) __obj.updateDynamic("newDiskName")(newDiskName.asInstanceOf[js.Any])
-    if (originalDiskPath != null) __obj.updateDynamic("originalDiskPath")(originalDiskPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiskMap]
   }
+  @scala.inline
+  implicit class DiskMapOps[Self <: DiskMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNewDiskName(value: ResourceName): Self = this.set("newDiskName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewDiskName: Self = this.set("newDiskName", js.undefined)
+    @scala.inline
+    def setOriginalDiskPath(value: NonEmptyString): Self = this.set("originalDiskPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalDiskPath: Self = this.set("originalDiskPath", js.undefined)
+  }
+  
 }
 

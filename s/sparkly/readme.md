@@ -12,7 +12,7 @@ Generate sparklines `▁▂▃▅▂▇`
 | Keywords           | spark, sparkly, line, sparkline, sparklines, unicode, data, graph, plot, ascii |
 | # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 6450 |
+| # downloads        | 5649 |
 | # stars            | 13 |
 
 ## Links

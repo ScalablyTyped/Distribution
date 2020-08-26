@@ -26,14 +26,30 @@ trait SchemaExportResourcesRequest extends js.Object {
 
 object SchemaExportResourcesRequest {
   @scala.inline
-  def apply(
-    bigqueryDestinationLocation: SchemaBigQueryLocation = null,
-    gcsDestinationLocation: SchemaGcsDataLocation = null
-  ): SchemaExportResourcesRequest = {
+  def apply(): SchemaExportResourcesRequest = {
     val __obj = js.Dynamic.literal()
-    if (bigqueryDestinationLocation != null) __obj.updateDynamic("bigqueryDestinationLocation")(bigqueryDestinationLocation.asInstanceOf[js.Any])
-    if (gcsDestinationLocation != null) __obj.updateDynamic("gcsDestinationLocation")(gcsDestinationLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExportResourcesRequest]
   }
+  @scala.inline
+  implicit class SchemaExportResourcesRequestOps[Self <: SchemaExportResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBigqueryDestinationLocation(value: SchemaBigQueryLocation): Self = this.set("bigqueryDestinationLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBigqueryDestinationLocation: Self = this.set("bigqueryDestinationLocation", js.undefined)
+    @scala.inline
+    def setGcsDestinationLocation(value: SchemaGcsDataLocation): Self = this.set("gcsDestinationLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcsDestinationLocation: Self = this.set("gcsDestinationLocation", js.undefined)
+  }
+  
 }
 

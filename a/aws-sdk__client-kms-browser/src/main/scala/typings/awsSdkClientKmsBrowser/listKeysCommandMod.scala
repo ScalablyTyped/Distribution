@@ -26,16 +26,9 @@ object listKeysCommandMod extends js.Object {
           Blob
         ] {
     def this(input: ListKeysInput) = this()
-    /* CompleteClass */
-    override val input: ListKeysInput = js.native
     val middlewareStack: MiddlewareStack[ListKeysInput, ListKeysOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[ListKeysInput, ListKeysOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[ListKeysInput, ListKeysOutput] = js.native
   }

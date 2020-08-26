@@ -84,7 +84,11 @@ trait Query
     * @since 3.0.0
     */
   def between(): this.type = js.native
+  def between(leftKeys: js.UndefOr[scala.Nothing], rightKeys: js.UndefOr[scala.Nothing], opts: js.Any): this.type = js.native
+  def between(leftKeys: js.UndefOr[scala.Nothing], rightKeys: js.Any): this.type = js.native
+  def between(leftKeys: js.UndefOr[scala.Nothing], rightKeys: js.Any, opts: js.Any): this.type = js.native
   def between(leftKeys: js.Any): this.type = js.native
+  def between(leftKeys: js.Any, rightKeys: js.UndefOr[scala.Nothing], opts: js.Any): this.type = js.native
   def between(leftKeys: js.Any, rightKeys: js.Any): this.type = js.native
   def between(leftKeys: js.Any, rightKeys: js.Any, opts: js.Any): this.type = js.native
   /**
@@ -166,6 +170,7 @@ trait Query
     * @since 3.0.0
     */
   def filter(): Query = js.native
+  def filter(query: js.UndefOr[scala.Nothing], thisArg: js.Function): Query = js.native
   def filter(query: QueryDefinition): Query = js.native
   def filter(query: QueryDefinition, thisArg: js.Function): Query = js.native
   /**
@@ -209,6 +214,7 @@ trait Query
     * @since 3.0.0
     */
   def get(): this.type = js.native
+  def get(keyList: js.UndefOr[scala.Nothing], opts: js.Any): this.type = js.native
   def get(keyList: js.Array[_]): this.type = js.native
   def get(keyList: js.Array[_], opts: js.Any): this.type = js.native
   /**
@@ -231,6 +237,7 @@ trait Query
     * @since 3.0.0
     */
   def getAll(): js.Any = js.native
+  def getAll(keyList: js.UndefOr[scala.Nothing], opts: js.Any): js.Any = js.native
   def getAll(keyList: js.Array[js.Any]): js.Any = js.native
   def getAll(keyList: js.Array[js.Any], opts: js.Any): js.Any = js.native
   /**

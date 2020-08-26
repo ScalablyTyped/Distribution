@@ -31,6 +31,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def addHealthCheck(): GaxiosPromise[SchemaOperation] = js.native
   def addHealthCheck(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addHealthCheck(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addHealthCheck(params: ParamsResourceTargetpoolsAddhealthcheck): GaxiosPromise[SchemaOperation] = js.native
   def addHealthCheck(params: ParamsResourceTargetpoolsAddhealthcheck, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addHealthCheck(
@@ -62,6 +63,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def addInstance(): GaxiosPromise[SchemaOperation] = js.native
   def addInstance(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addInstance(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addInstance(params: ParamsResourceTargetpoolsAddinstance): GaxiosPromise[SchemaOperation] = js.native
   def addInstance(params: ParamsResourceTargetpoolsAddinstance, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addInstance(
@@ -93,6 +95,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def aggregatedList(): GaxiosPromise[SchemaTargetPoolAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaTargetPoolAggregatedList]): Unit = js.native
+  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetPoolAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceTargetpoolsAggregatedlist): GaxiosPromise[SchemaTargetPoolAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceTargetpoolsAggregatedlist,
@@ -126,6 +129,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetpoolsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceTargetpoolsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -156,6 +160,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTargetPool] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetPool]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetPool] = js.native
   def get(params: ParamsResourceTargetpoolsGet): GaxiosPromise[SchemaTargetPool] = js.native
   def get(params: ParamsResourceTargetpoolsGet, callback: BodyResponseCallback[SchemaTargetPool]): Unit = js.native
   def get(
@@ -187,6 +192,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def getHealth(): GaxiosPromise[SchemaTargetPoolInstanceHealth] = js.native
   def getHealth(callback: BodyResponseCallback[SchemaTargetPoolInstanceHealth]): Unit = js.native
+  def getHealth(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetPoolInstanceHealth] = js.native
   def getHealth(params: ParamsResourceTargetpoolsGethealth): GaxiosPromise[SchemaTargetPoolInstanceHealth] = js.native
   def getHealth(
     params: ParamsResourceTargetpoolsGethealth,
@@ -221,6 +227,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetpoolsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceTargetpoolsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -254,6 +261,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTargetPoolList] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetPoolList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetPoolList] = js.native
   def list(params: ParamsResourceTargetpoolsList): GaxiosPromise[SchemaTargetPoolList] = js.native
   def list(params: ParamsResourceTargetpoolsList, callback: BodyResponseCallback[SchemaTargetPoolList]): Unit = js.native
   def list(
@@ -285,6 +293,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def removeHealthCheck(): GaxiosPromise[SchemaOperation] = js.native
   def removeHealthCheck(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def removeHealthCheck(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeHealthCheck(params: ParamsResourceTargetpoolsRemovehealthcheck): GaxiosPromise[SchemaOperation] = js.native
   def removeHealthCheck(
     params: ParamsResourceTargetpoolsRemovehealthcheck,
@@ -319,6 +328,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def removeInstance(): GaxiosPromise[SchemaOperation] = js.native
   def removeInstance(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def removeInstance(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeInstance(params: ParamsResourceTargetpoolsRemoveinstance): GaxiosPromise[SchemaOperation] = js.native
   def removeInstance(params: ParamsResourceTargetpoolsRemoveinstance, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def removeInstance(
@@ -351,6 +361,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def setBackup(): GaxiosPromise[SchemaOperation] = js.native
   def setBackup(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def setBackup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setBackup(params: ParamsResourceTargetpoolsSetbackup): GaxiosPromise[SchemaOperation] = js.native
   def setBackup(params: ParamsResourceTargetpoolsSetbackup, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setBackup(
@@ -381,6 +392,7 @@ class ResourceTargetpools protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceTargetpoolsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceTargetpoolsTestiampermissions,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss
 
-Typings are for version 7.0.27
+Typings are for version 7.0.32
 
 ## Library description:
 Tool for transforming styles with JS plugins

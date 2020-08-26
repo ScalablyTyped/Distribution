@@ -18,11 +18,32 @@ trait DetectTextResponse extends js.Object {
 
 object DetectTextResponse {
   @scala.inline
-  def apply(TextDetections: TextDetectionList = null, TextModelVersion: String = null): DetectTextResponse = {
+  def apply(): DetectTextResponse = {
     val __obj = js.Dynamic.literal()
-    if (TextDetections != null) __obj.updateDynamic("TextDetections")(TextDetections.asInstanceOf[js.Any])
-    if (TextModelVersion != null) __obj.updateDynamic("TextModelVersion")(TextModelVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectTextResponse]
   }
+  @scala.inline
+  implicit class DetectTextResponseOps[Self <: DetectTextResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTextDetectionsVarargs(value: TextDetection*): Self = this.set("TextDetections", js.Array(value :_*))
+    @scala.inline
+    def setTextDetections(value: TextDetectionList): Self = this.set("TextDetections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDetections: Self = this.set("TextDetections", js.undefined)
+    @scala.inline
+    def setTextModelVersion(value: String): Self = this.set("TextModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextModelVersion: Self = this.set("TextModelVersion", js.undefined)
+  }
+  
 }
 

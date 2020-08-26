@@ -5,31 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadOptions extends js.Object {
-  var async: js.UndefOr[Boolean] = js.undefined
-  var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.undefined
+  var async: js.UndefOr[Boolean] = js.native
+  var before: js.UndefOr[js.Function2[/* path */ String, /* scriptEl */ HTMLElement, Unit]] = js.native
    // Arguments provided are different in case of returnPromise: true / false
-  var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.undefined
-  var numRetries: js.UndefOr[Double] = js.undefined
-  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* depsNotFound */ js.Array[String], Unit]] = js.native
+  var numRetries: js.UndefOr[Double] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object LoadOptions {
   @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    before: (/* path */ String, /* scriptEl */ HTMLElement) => Unit = null,
-    error: /* depsNotFound */ js.Array[String] => Unit = null,
-    numRetries: js.UndefOr[Double] = js.undefined,
-    success: () => Unit = null
-  ): LoadOptions = {
+  def apply(): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.get.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
-    if (!js.isUndefined(numRetries)) __obj.updateDynamic("numRetries")(numRetries.get.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction0(success))
     __obj.asInstanceOf[LoadOptions]
   }
+  @scala.inline
+  implicit class LoadOptionsOps[Self <: LoadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsync(value: Boolean): Self = this.set("async", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsync: Self = this.set("async", js.undefined)
+    @scala.inline
+    def setBefore(value: (/* path */ String, /* scriptEl */ HTMLElement) => Unit): Self = this.set("before", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBefore: Self = this.set("before", js.undefined)
+    @scala.inline
+    def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = this.set("error", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setNumRetries(value: Double): Self = this.set("numRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumRetries: Self = this.set("numRetries", js.undefined)
+    @scala.inline
+    def setSuccess(value: () => Unit): Self = this.set("success", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

@@ -15,45 +15,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StatefulContainerProps extends js.Object {
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var initialState: js.UndefOr[CheckboxState] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
-  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
-  var overrides: js.UndefOr[CheckboxOverrides] = js.undefined
-  var stateReducer: js.UndefOr[StateReducer] = js.undefined
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var initialState: js.UndefOr[CheckboxState] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.native
+  var overrides: js.UndefOr[CheckboxOverrides] = js.native
+  var stateReducer: js.UndefOr[StateReducer] = js.native
 }
 
 object StatefulContainerProps {
   @scala.inline
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    initialState: CheckboxState = null,
-    onBlur: FocusEvent[HTMLInputElement] => Unit = null,
-    onChange: FormEvent[HTMLInputElement] => Unit = null,
-    onFocus: FocusEvent[HTMLInputElement] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit = null,
-    overrides: CheckboxOverrides = null,
-    stateReducer: (/* stateType */ String, /* nextState */ CheckboxState, /* currentState */ CheckboxState, /* event */ SyntheticEvent[HTMLInputElement, Event]) => CheckboxState = null
-  ): StatefulContainerProps = {
+  def apply(): StatefulContainerProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction4(stateReducer))
     __obj.asInstanceOf[StatefulContainerProps]
   }
+  @scala.inline
+  implicit class StatefulContainerPropsOps[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setInitialState(value: CheckboxState): Self = this.set("initialState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialState: Self = this.set("initialState", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: FormEvent[HTMLInputElement] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLInputElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOverrides(value: CheckboxOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setStateReducer(
+      value: (/* stateType */ String, /* nextState */ CheckboxState, /* currentState */ CheckboxState, /* event */ SyntheticEvent[HTMLInputElement, Event]) => CheckboxState
+    ): Self = this.set("stateReducer", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteStateReducer: Self = this.set("stateReducer", js.undefined)
+  }
+  
 }
 

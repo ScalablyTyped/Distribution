@@ -22,16 +22,36 @@ trait SearchFilter extends js.Object {
 
 object SearchFilter {
   @scala.inline
-  def apply(
-    Attribute: SearchFilterAttribute = null,
-    Operator: SearchFilterOperator = null,
-    Values: SearchFilterValues = null
-  ): SearchFilter = {
+  def apply(): SearchFilter = {
     val __obj = js.Dynamic.literal()
-    if (Attribute != null) __obj.updateDynamic("Attribute")(Attribute.asInstanceOf[js.Any])
-    if (Operator != null) __obj.updateDynamic("Operator")(Operator.asInstanceOf[js.Any])
-    if (Values != null) __obj.updateDynamic("Values")(Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchFilter]
   }
+  @scala.inline
+  implicit class SearchFilterOps[Self <: SearchFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttribute(value: SearchFilterAttribute): Self = this.set("Attribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttribute: Self = this.set("Attribute", js.undefined)
+    @scala.inline
+    def setOperator(value: SearchFilterOperator): Self = this.set("Operator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperator: Self = this.set("Operator", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: SearchFilterValue*): Self = this.set("Values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: SearchFilterValues): Self = this.set("Values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("Values", js.undefined)
+  }
+  
 }
 

@@ -4,14 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.ScaleGestureDetector.SimpleOnScaleGestureListener")
 @js.native
-class SimpleOnScaleGestureListener () extends OnScaleGestureListener {
-  /* CompleteClass */
-  override def onScale(detector: typings.androiduix.android.view.ScaleGestureDetector): Boolean = js.native
-  /* CompleteClass */
-  override def onScaleBegin(detector: typings.androiduix.android.view.ScaleGestureDetector): Boolean = js.native
-  /* CompleteClass */
-  override def onScaleEnd(detector: typings.androiduix.android.view.ScaleGestureDetector): Unit = js.native
+trait SimpleOnScaleGestureListener extends OnScaleGestureListener
+
+object SimpleOnScaleGestureListener {
+  @scala.inline
+  def apply(
+    onScale: typings.androiduix.android.view.ScaleGestureDetector => Boolean,
+    onScaleBegin: typings.androiduix.android.view.ScaleGestureDetector => Boolean,
+    onScaleEnd: typings.androiduix.android.view.ScaleGestureDetector => Unit
+  ): SimpleOnScaleGestureListener = {
+    val __obj = js.Dynamic.literal(onScale = js.Any.fromFunction1(onScale), onScaleBegin = js.Any.fromFunction1(onScaleBegin), onScaleEnd = js.Any.fromFunction1(onScaleEnd))
+    __obj.asInstanceOf[SimpleOnScaleGestureListener]
+  }
 }
 

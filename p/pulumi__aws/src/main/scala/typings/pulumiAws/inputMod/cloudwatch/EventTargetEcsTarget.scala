@@ -35,21 +35,44 @@ trait EventTargetEcsTarget extends js.Object {
 
 object EventTargetEcsTarget {
   @scala.inline
-  def apply(
-    taskDefinitionArn: Input[String],
-    group: Input[String] = null,
-    launchType: Input[String] = null,
-    networkConfiguration: Input[EventTargetEcsTargetNetworkConfiguration] = null,
-    platformVersion: Input[String] = null,
-    taskCount: Input[Double] = null
-  ): EventTargetEcsTarget = {
+  def apply(taskDefinitionArn: Input[String]): EventTargetEcsTarget = {
     val __obj = js.Dynamic.literal(taskDefinitionArn = taskDefinitionArn.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (taskCount != null) __obj.updateDynamic("taskCount")(taskCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventTargetEcsTarget]
   }
+  @scala.inline
+  implicit class EventTargetEcsTargetOps[Self <: EventTargetEcsTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTaskDefinitionArn(value: Input[String]): Self = this.set("taskDefinitionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroup(value: Input[String]): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setLaunchType(value: Input[String]): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setNetworkConfiguration(value: Input[EventTargetEcsTargetNetworkConfiguration]): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: Input[String]): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setTaskCount(value: Input[Double]): Self = this.set("taskCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskCount: Self = this.set("taskCount", js.undefined)
+  }
+  
 }
 

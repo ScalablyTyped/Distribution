@@ -10,9 +10,9 @@ This package is no longer supported and has been deprecated. To avoid malicious 
 | ------------------ | :-------------: |
 | Full name          | date.format.js |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 376 |
+| # downloads        | 382 |
 | # stars            | 0 |
 
 ## Links

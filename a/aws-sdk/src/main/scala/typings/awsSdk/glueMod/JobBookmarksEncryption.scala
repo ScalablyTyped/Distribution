@@ -18,11 +18,30 @@ trait JobBookmarksEncryption extends js.Object {
 
 object JobBookmarksEncryption {
   @scala.inline
-  def apply(JobBookmarksEncryptionMode: JobBookmarksEncryptionMode = null, KmsKeyArn: KmsKeyArn = null): JobBookmarksEncryption = {
+  def apply(): JobBookmarksEncryption = {
     val __obj = js.Dynamic.literal()
-    if (JobBookmarksEncryptionMode != null) __obj.updateDynamic("JobBookmarksEncryptionMode")(JobBookmarksEncryptionMode.asInstanceOf[js.Any])
-    if (KmsKeyArn != null) __obj.updateDynamic("KmsKeyArn")(KmsKeyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobBookmarksEncryption]
   }
+  @scala.inline
+  implicit class JobBookmarksEncryptionOps[Self <: JobBookmarksEncryption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobBookmarksEncryptionMode(value: JobBookmarksEncryptionMode): Self = this.set("JobBookmarksEncryptionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobBookmarksEncryptionMode: Self = this.set("JobBookmarksEncryptionMode", js.undefined)
+    @scala.inline
+    def setKmsKeyArn(value: KmsKeyArn): Self = this.set("KmsKeyArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyArn: Self = this.set("KmsKeyArn", js.undefined)
+  }
+  
 }
 

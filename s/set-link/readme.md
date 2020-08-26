@@ -12,7 +12,7 @@ Link header middleware for express with multiple value and attribute support
 | Keywords           | http, header, link |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 2911 |
+| # downloads        | 3113 |
 | # stars            | 0 |
 
 ## Links

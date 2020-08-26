@@ -22,32 +22,66 @@ trait PartialClassNameMapStepLa extends js.Object {
 
 object PartialClassNameMapStepLa {
   @scala.inline
-  def apply(
-    active: String = null,
-    alternativeLabel: String = null,
-    completed: String = null,
-    disabled: String = null,
-    error: String = null,
-    horizontal: String = null,
-    iconContainer: String = null,
-    label: String = null,
-    labelContainer: String = null,
-    root: String = null,
-    vertical: String = null
-  ): PartialClassNameMapStepLa = {
+  def apply(): PartialClassNameMapStepLa = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (alternativeLabel != null) __obj.updateDynamic("alternativeLabel")(alternativeLabel.asInstanceOf[js.Any])
-    if (completed != null) __obj.updateDynamic("completed")(completed.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (iconContainer != null) __obj.updateDynamic("iconContainer")(iconContainer.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelContainer != null) __obj.updateDynamic("labelContainer")(labelContainer.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapStepLa]
   }
+  @scala.inline
+  implicit class PartialClassNameMapStepLaOps[Self <: PartialClassNameMapStepLa] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAlternativeLabel(value: String): Self = this.set("alternativeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternativeLabel: Self = this.set("alternativeLabel", js.undefined)
+    @scala.inline
+    def setCompleted(value: String): Self = this.set("completed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleted: Self = this.set("completed", js.undefined)
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHorizontal(value: String): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setIconContainer(value: String): Self = this.set("iconContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconContainer: Self = this.set("iconContainer", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelContainer(value: String): Self = this.set("labelContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelContainer: Self = this.set("labelContainer", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setVertical(value: String): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+  }
+  
 }
 

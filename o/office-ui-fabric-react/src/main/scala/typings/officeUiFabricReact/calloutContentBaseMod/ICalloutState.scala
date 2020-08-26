@@ -6,27 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICalloutState extends js.Object {
-  var calloutElementRect: js.UndefOr[ClientRect] = js.undefined
-  var heightOffset: js.UndefOr[Double] = js.undefined
-  var positions: js.UndefOr[ICalloutPositionedInfo] = js.undefined
-  var slideDirectionalClassName: js.UndefOr[String] = js.undefined
+  var calloutElementRect: js.UndefOr[ClientRect] = js.native
+  var heightOffset: js.UndefOr[Double] = js.native
+  var positions: js.UndefOr[ICalloutPositionedInfo] = js.native
+  var slideDirectionalClassName: js.UndefOr[String] = js.native
 }
 
 object ICalloutState {
   @scala.inline
-  def apply(
-    calloutElementRect: ClientRect = null,
-    heightOffset: js.UndefOr[Double] = js.undefined,
-    positions: ICalloutPositionedInfo = null,
-    slideDirectionalClassName: String = null
-  ): ICalloutState = {
+  def apply(): ICalloutState = {
     val __obj = js.Dynamic.literal()
-    if (calloutElementRect != null) __obj.updateDynamic("calloutElementRect")(calloutElementRect.asInstanceOf[js.Any])
-    if (!js.isUndefined(heightOffset)) __obj.updateDynamic("heightOffset")(heightOffset.get.asInstanceOf[js.Any])
-    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
-    if (slideDirectionalClassName != null) __obj.updateDynamic("slideDirectionalClassName")(slideDirectionalClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICalloutState]
   }
+  @scala.inline
+  implicit class ICalloutStateOps[Self <: ICalloutState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCalloutElementRect(value: ClientRect): Self = this.set("calloutElementRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalloutElementRect: Self = this.set("calloutElementRect", js.undefined)
+    @scala.inline
+    def setHeightOffset(value: Double): Self = this.set("heightOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightOffset: Self = this.set("heightOffset", js.undefined)
+    @scala.inline
+    def setPositions(value: ICalloutPositionedInfo): Self = this.set("positions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositions: Self = this.set("positions", js.undefined)
+    @scala.inline
+    def setSlideDirectionalClassName(value: String): Self = this.set("slideDirectionalClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlideDirectionalClassName: Self = this.set("slideDirectionalClassName", js.undefined)
+  }
+  
 }
 

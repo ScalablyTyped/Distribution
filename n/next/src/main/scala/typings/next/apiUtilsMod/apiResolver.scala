@@ -13,16 +13,18 @@ object apiResolver extends js.Object {
   def apply(
     req: IncomingMessage,
     res: ServerResponse,
-    params: js.Any,
+    query: js.Any,
     resolverModule: js.Any,
-    apiContext: ApiPreviewProps
+    apiContext: ApiPreviewProps,
+    propagateError: Boolean
   ): js.Promise[Unit] = js.native
   def apply(
     req: IncomingMessage,
     res: ServerResponse,
-    params: js.Any,
+    query: js.Any,
     resolverModule: js.Any,
     apiContext: ApiPreviewProps,
+    propagateError: Boolean,
     onError: js.Function1[/* hasErr */ Err, js.Promise[Unit]]
   ): js.Promise[Unit] = js.native
 }

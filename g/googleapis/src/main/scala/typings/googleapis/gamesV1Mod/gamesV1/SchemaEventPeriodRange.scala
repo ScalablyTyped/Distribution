@@ -28,12 +28,34 @@ trait SchemaEventPeriodRange extends js.Object {
 
 object SchemaEventPeriodRange {
   @scala.inline
-  def apply(kind: String = null, periodEndMillis: String = null, periodStartMillis: String = null): SchemaEventPeriodRange = {
+  def apply(): SchemaEventPeriodRange = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (periodEndMillis != null) __obj.updateDynamic("periodEndMillis")(periodEndMillis.asInstanceOf[js.Any])
-    if (periodStartMillis != null) __obj.updateDynamic("periodStartMillis")(periodStartMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventPeriodRange]
   }
+  @scala.inline
+  implicit class SchemaEventPeriodRangeOps[Self <: SchemaEventPeriodRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPeriodEndMillis(value: String): Self = this.set("periodEndMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodEndMillis: Self = this.set("periodEndMillis", js.undefined)
+    @scala.inline
+    def setPeriodStartMillis(value: String): Self = this.set("periodStartMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriodStartMillis: Self = this.set("periodStartMillis", js.undefined)
+  }
+  
 }
 

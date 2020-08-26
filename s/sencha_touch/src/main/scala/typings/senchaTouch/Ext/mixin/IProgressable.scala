@@ -1,151 +1,164 @@
 package typings.senchaTouch.Ext.mixin
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IProgressable extends IBase {
   /** [Config Option] (Boolean) */
-  var dynamic: js.UndefOr[Boolean] = js.undefined
+  var dynamic: js.UndefOr[Boolean] = js.native
   /** [Method] Returns the value of dynamic
     * @returns Boolean
     */
-  var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getDynamic: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of maxProgressInput
     * @returns Number
     */
-  var getMaxProgressInput: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMaxProgressInput: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of maxProgressOutput
     * @returns Number
     */
-  var getMaxProgressOutput: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMaxProgressOutput: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minProgressInput
     * @returns Number
     */
-  var getMinProgressInput: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinProgressInput: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minProgressOutput
     * @returns Number
     */
-  var getMinProgressOutput: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinProgressOutput: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of state
     * @returns String
     */
-  var getState: js.UndefOr[js.Function0[String]] = js.undefined
+  var getState: js.UndefOr[js.Function0[String]] = js.native
   /** [Config Option] (Number) */
-  var maxProgressInput: js.UndefOr[Double] = js.undefined
+  var maxProgressInput: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var maxProgressOutput: js.UndefOr[Double] = js.undefined
+  var maxProgressOutput: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minProgressInput: js.UndefOr[Double] = js.undefined
+  var minProgressInput: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var minProgressOutput: js.UndefOr[Double] = js.undefined
+  var minProgressOutput: js.UndefOr[Double] = js.native
   /** [Method] Sets the value of dynamic
     * @param dynamic Boolean The new value.
     */
-  var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of maxProgressInput
     * @param maxProgressInput Number The new value.
     */
-  var setMaxProgressInput: js.UndefOr[js.Function1[/* maxProgressInput */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMaxProgressInput: js.UndefOr[js.Function1[/* maxProgressInput */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of maxProgressOutput
     * @param maxProgressOutput Number The new value.
     */
-  var setMaxProgressOutput: js.UndefOr[js.Function1[/* maxProgressOutput */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMaxProgressOutput: js.UndefOr[js.Function1[/* maxProgressOutput */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minProgressInput
     * @param minProgressInput Number The new value.
     */
-  var setMinProgressInput: js.UndefOr[js.Function1[/* minProgressInput */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinProgressInput: js.UndefOr[js.Function1[/* minProgressInput */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minProgressOutput
     * @param minProgressOutput Number The new value.
     */
-  var setMinProgressOutput: js.UndefOr[js.Function1[/* minProgressOutput */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinProgressOutput: js.UndefOr[js.Function1[/* minProgressOutput */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of state
     * @param state String The new value.
     */
-  var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[String], Unit]] = js.undefined
+  var setState: js.UndefOr[js.Function1[/* state */ js.UndefOr[String], Unit]] = js.native
   /** [Config Option] (String) */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String] = js.native
 }
 
 object IProgressable {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    dynamic: js.UndefOr[Boolean] = js.undefined,
-    extend: String = null,
-    getDynamic: () => Boolean = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getMaxProgressInput: () => Double = null,
-    getMaxProgressOutput: () => Double = null,
-    getMinProgressInput: () => Double = null,
-    getMinProgressOutput: () => Double = null,
-    getState: () => String = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    maxProgressInput: js.UndefOr[Double] = js.undefined,
-    maxProgressOutput: js.UndefOr[Double] = js.undefined,
-    minProgressInput: js.UndefOr[Double] = js.undefined,
-    minProgressOutput: js.UndefOr[Double] = js.undefined,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    setDynamic: /* dynamic */ js.UndefOr[Boolean] => Unit = null,
-    setMaxProgressInput: /* maxProgressInput */ js.UndefOr[Double] => Unit = null,
-    setMaxProgressOutput: /* maxProgressOutput */ js.UndefOr[Double] => Unit = null,
-    setMinProgressInput: /* minProgressInput */ js.UndefOr[Double] => Unit = null,
-    setMinProgressOutput: /* minProgressOutput */ js.UndefOr[Double] => Unit = null,
-    setState: /* state */ js.UndefOr[String] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    state: String = null,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IProgressable = {
+  def apply(): IProgressable = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic.get.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getDynamic != null) __obj.updateDynamic("getDynamic")(js.Any.fromFunction0(getDynamic))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getMaxProgressInput != null) __obj.updateDynamic("getMaxProgressInput")(js.Any.fromFunction0(getMaxProgressInput))
-    if (getMaxProgressOutput != null) __obj.updateDynamic("getMaxProgressOutput")(js.Any.fromFunction0(getMaxProgressOutput))
-    if (getMinProgressInput != null) __obj.updateDynamic("getMinProgressInput")(js.Any.fromFunction0(getMinProgressInput))
-    if (getMinProgressOutput != null) __obj.updateDynamic("getMinProgressOutput")(js.Any.fromFunction0(getMinProgressOutput))
-    if (getState != null) __obj.updateDynamic("getState")(js.Any.fromFunction0(getState))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(maxProgressInput)) __obj.updateDynamic("maxProgressInput")(maxProgressInput.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxProgressOutput)) __obj.updateDynamic("maxProgressOutput")(maxProgressOutput.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minProgressInput)) __obj.updateDynamic("minProgressInput")(minProgressInput.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minProgressOutput)) __obj.updateDynamic("minProgressOutput")(minProgressOutput.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setDynamic != null) __obj.updateDynamic("setDynamic")(js.Any.fromFunction1(setDynamic))
-    if (setMaxProgressInput != null) __obj.updateDynamic("setMaxProgressInput")(js.Any.fromFunction1(setMaxProgressInput))
-    if (setMaxProgressOutput != null) __obj.updateDynamic("setMaxProgressOutput")(js.Any.fromFunction1(setMaxProgressOutput))
-    if (setMinProgressInput != null) __obj.updateDynamic("setMinProgressInput")(js.Any.fromFunction1(setMinProgressInput))
-    if (setMinProgressOutput != null) __obj.updateDynamic("setMinProgressOutput")(js.Any.fromFunction1(setMinProgressOutput))
-    if (setState != null) __obj.updateDynamic("setState")(js.Any.fromFunction1(setState))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressable]
   }
+  @scala.inline
+  implicit class IProgressableOps[Self <: IProgressable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDynamic(value: Boolean): Self = this.set("dynamic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDynamic: Self = this.set("dynamic", js.undefined)
+    @scala.inline
+    def setGetDynamic(value: () => Boolean): Self = this.set("getDynamic", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetDynamic: Self = this.set("getDynamic", js.undefined)
+    @scala.inline
+    def setGetMaxProgressInput(value: () => Double): Self = this.set("getMaxProgressInput", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaxProgressInput: Self = this.set("getMaxProgressInput", js.undefined)
+    @scala.inline
+    def setGetMaxProgressOutput(value: () => Double): Self = this.set("getMaxProgressOutput", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaxProgressOutput: Self = this.set("getMaxProgressOutput", js.undefined)
+    @scala.inline
+    def setGetMinProgressInput(value: () => Double): Self = this.set("getMinProgressInput", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinProgressInput: Self = this.set("getMinProgressInput", js.undefined)
+    @scala.inline
+    def setGetMinProgressOutput(value: () => Double): Self = this.set("getMinProgressOutput", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinProgressOutput: Self = this.set("getMinProgressOutput", js.undefined)
+    @scala.inline
+    def setGetState(value: () => String): Self = this.set("getState", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetState: Self = this.set("getState", js.undefined)
+    @scala.inline
+    def setMaxProgressInput(value: Double): Self = this.set("maxProgressInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxProgressInput: Self = this.set("maxProgressInput", js.undefined)
+    @scala.inline
+    def setMaxProgressOutput(value: Double): Self = this.set("maxProgressOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxProgressOutput: Self = this.set("maxProgressOutput", js.undefined)
+    @scala.inline
+    def setMinProgressInput(value: Double): Self = this.set("minProgressInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinProgressInput: Self = this.set("minProgressInput", js.undefined)
+    @scala.inline
+    def setMinProgressOutput(value: Double): Self = this.set("minProgressOutput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinProgressOutput: Self = this.set("minProgressOutput", js.undefined)
+    @scala.inline
+    def setSetDynamic(value: /* dynamic */ js.UndefOr[Boolean] => Unit): Self = this.set("setDynamic", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDynamic: Self = this.set("setDynamic", js.undefined)
+    @scala.inline
+    def setSetMaxProgressInput(value: /* maxProgressInput */ js.UndefOr[Double] => Unit): Self = this.set("setMaxProgressInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxProgressInput: Self = this.set("setMaxProgressInput", js.undefined)
+    @scala.inline
+    def setSetMaxProgressOutput(value: /* maxProgressOutput */ js.UndefOr[Double] => Unit): Self = this.set("setMaxProgressOutput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxProgressOutput: Self = this.set("setMaxProgressOutput", js.undefined)
+    @scala.inline
+    def setSetMinProgressInput(value: /* minProgressInput */ js.UndefOr[Double] => Unit): Self = this.set("setMinProgressInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinProgressInput: Self = this.set("setMinProgressInput", js.undefined)
+    @scala.inline
+    def setSetMinProgressOutput(value: /* minProgressOutput */ js.UndefOr[Double] => Unit): Self = this.set("setMinProgressOutput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinProgressOutput: Self = this.set("setMinProgressOutput", js.undefined)
+    @scala.inline
+    def setSetState(value: /* state */ js.UndefOr[String] => Unit): Self = this.set("setState", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetState: Self = this.set("setState", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait DescribeDocumentVersionsResponse extends js.Object {
 
 object DescribeDocumentVersionsResponse {
   @scala.inline
-  def apply(DocumentVersions: DocumentVersionMetadataList = null, Marker: PageMarkerType = null): DescribeDocumentVersionsResponse = {
+  def apply(): DescribeDocumentVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DocumentVersions != null) __obj.updateDynamic("DocumentVersions")(DocumentVersions.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentVersionsResponse]
   }
+  @scala.inline
+  implicit class DescribeDocumentVersionsResponseOps[Self <: DescribeDocumentVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = this.set("DocumentVersions", js.Array(value :_*))
+    @scala.inline
+    def setDocumentVersions(value: DocumentVersionMetadataList): Self = this.set("DocumentVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersions: Self = this.set("DocumentVersions", js.undefined)
+    @scala.inline
+    def setMarker(value: PageMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

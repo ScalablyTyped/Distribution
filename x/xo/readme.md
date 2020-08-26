@@ -10,9 +10,9 @@ JavaScript/TypeScript linter with great defaults
 | ------------------ | :-------------: |
 | Full name          | xo |
 | Keywords           | cli-app, cli, xo, xoxo, happy, happiness, code, quality, style, lint, linter, jshint, jslint, eslint, validate, code style, standard, strict, check, checker, verify, enforce, hint, simple, javascript, typescript |
-| # releases         | 15 |
-| # dependents       | 52 |
-| # downloads        | 1042994 |
+| # releases         | 14 |
+| # dependents       | 51 |
+| # downloads        | 1021367 |
 | # stars            | 34 |
 
 ## Links

@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-tree-select/lib/hooks/useTreeData", JSImport.Namespace)
+@JSImport("rc-tree-select/es/hooks/useTreeData", JSImport.Namespace)
 @js.native
 object useTreeDataMod extends js.Object {
   def default(treeData: js.Array[DataNode], children: ReactNode, hasGetLabelPropSimpleMode: GetLabelProp): js.Array[InnerDataNode] = js.native

@@ -46,28 +46,58 @@ trait StreamInfo extends js.Object {
 
 object StreamInfo {
   @scala.inline
-  def apply(
-    CreationTime: Timestamp = null,
-    DataRetentionInHours: js.UndefOr[DataRetentionInHours] = js.undefined,
-    DeviceName: DeviceName = null,
-    KmsKeyId: KmsKeyId = null,
-    MediaType: MediaType = null,
-    Status: Status = null,
-    StreamARN: ResourceARN = null,
-    StreamName: StreamName = null,
-    Version: Version = null
-  ): StreamInfo = {
+  def apply(): StreamInfo = {
     val __obj = js.Dynamic.literal()
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataRetentionInHours)) __obj.updateDynamic("DataRetentionInHours")(DataRetentionInHours.get.asInstanceOf[js.Any])
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (MediaType != null) __obj.updateDynamic("MediaType")(MediaType.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamInfo]
   }
+  @scala.inline
+  implicit class StreamInfoOps[Self <: StreamInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDataRetentionInHours(value: DataRetentionInHours): Self = this.set("DataRetentionInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRetentionInHours: Self = this.set("DataRetentionInHours", js.undefined)
+    @scala.inline
+    def setDeviceName(value: DeviceName): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setMediaType(value: MediaType): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaType: Self = this.set("MediaType", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

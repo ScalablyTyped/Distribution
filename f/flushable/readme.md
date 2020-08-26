@@ -11,8 +11,8 @@ A flushable timeout function
 | Full name          | flushable |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 1391257 |
+| # dependents       | 7 |
+| # downloads        | 1470250 |
 | # stars            | 0 |
 
 ## Links

@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ICloudConfig extends js.Object {
-  var env: js.UndefOr[java.lang.String] = js.undefined
-  var traceUser: js.UndefOr[scala.Boolean] = js.undefined
+  var env: js.UndefOr[java.lang.String] = js.native
+  var traceUser: js.UndefOr[scala.Boolean] = js.native
 }
 
 object ICloudConfig {
   @scala.inline
-  def apply(env: java.lang.String = null, traceUser: js.UndefOr[scala.Boolean] = js.undefined): ICloudConfig = {
+  def apply(): ICloudConfig = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceUser)) __obj.updateDynamic("traceUser")(traceUser.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICloudConfig]
   }
+  @scala.inline
+  implicit class ICloudConfigOps[Self <: ICloudConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnv(value: java.lang.String): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setTraceUser(value: scala.Boolean): Self = this.set("traceUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceUser: Self = this.set("traceUser", js.undefined)
+  }
+  
 }
 

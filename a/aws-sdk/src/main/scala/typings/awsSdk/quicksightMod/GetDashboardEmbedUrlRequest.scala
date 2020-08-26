@@ -38,21 +38,44 @@ trait GetDashboardEmbedUrlRequest extends js.Object {
 
 object GetDashboardEmbedUrlRequest {
   @scala.inline
-  def apply(
-    AwsAccountId: AwsAccountId,
-    DashboardId: RestrictiveResourceId,
-    IdentityType: IdentityType,
-    ResetDisabled: js.UndefOr[scala.Boolean] = js.undefined,
-    SessionLifetimeInMinutes: js.UndefOr[SessionLifetimeInMinutes] = js.undefined,
-    UndoRedoDisabled: js.UndefOr[scala.Boolean] = js.undefined,
-    UserArn: Arn = null
-  ): GetDashboardEmbedUrlRequest = {
+  def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, IdentityType: IdentityType): GetDashboardEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ResetDisabled)) __obj.updateDynamic("ResetDisabled")(ResetDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SessionLifetimeInMinutes)) __obj.updateDynamic("SessionLifetimeInMinutes")(SessionLifetimeInMinutes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(UndoRedoDisabled)) __obj.updateDynamic("UndoRedoDisabled")(UndoRedoDisabled.get.asInstanceOf[js.Any])
-    if (UserArn != null) __obj.updateDynamic("UserArn")(UserArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDashboardEmbedUrlRequest]
   }
+  @scala.inline
+  implicit class GetDashboardEmbedUrlRequestOps[Self <: GetDashboardEmbedUrlRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountId(value: AwsAccountId): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDashboardId(value: RestrictiveResourceId): Self = this.set("DashboardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentityType(value: IdentityType): Self = this.set("IdentityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResetDisabled(value: scala.Boolean): Self = this.set("ResetDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetDisabled: Self = this.set("ResetDisabled", js.undefined)
+    @scala.inline
+    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = this.set("SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionLifetimeInMinutes: Self = this.set("SessionLifetimeInMinutes", js.undefined)
+    @scala.inline
+    def setUndoRedoDisabled(value: scala.Boolean): Self = this.set("UndoRedoDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndoRedoDisabled: Self = this.set("UndoRedoDisabled", js.undefined)
+    @scala.inline
+    def setUserArn(value: Arn): Self = this.set("UserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserArn: Self = this.set("UserArn", js.undefined)
+  }
+  
 }
 

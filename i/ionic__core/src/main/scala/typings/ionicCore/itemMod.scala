@@ -5,12 +5,9 @@ import typings.ionicCore.componentsMod.global.HTMLIonItemElement
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
-import typings.ionicCore.ionicCoreStrings.button
 import typings.ionicCore.ionicCoreStrings.full
 import typings.ionicCore.ionicCoreStrings.inset
 import typings.ionicCore.ionicCoreStrings.none
-import typings.ionicCore.ionicCoreStrings.reset
-import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.mod.StyleEventDetail
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
@@ -47,8 +44,6 @@ object itemMod extends js.Object {
       * The icon to use when `detail` is set to `true`.
       */
     var detailIcon: String = js.native
-    /* CompleteClass */
-    override var disabled: Boolean = js.native
     var el: HTMLIonItemElement = js.native
     var hasCover: js.Any = js.native
     var isClickable: js.Any = js.native
@@ -68,8 +63,6 @@ object itemMod extends js.Object {
       * another page using `href`.
       */
     var routerDirection: RouterDirection = js.native
-    /* CompleteClass */
-    override var `type`: submit | reset | button = js.native
     @JSName("componentDidLoad")
     def componentDidLoad_MItem(): Unit = js.native
     def itemStyle(ev: CustomEvent[StyleEventDetail]): Unit = js.native

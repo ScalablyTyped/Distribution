@@ -30,20 +30,42 @@ trait GetAccountResponse extends js.Object {
 
 object GetAccountResponse {
   @scala.inline
-  def apply(
-    DedicatedIpAutoWarmupEnabled: js.UndefOr[Enabled] = js.undefined,
-    EnforcementStatus: GeneralEnforcementStatus = null,
-    ProductionAccessEnabled: js.UndefOr[Enabled] = js.undefined,
-    SendQuota: SendQuota = null,
-    SendingEnabled: js.UndefOr[Enabled] = js.undefined
-  ): GetAccountResponse = {
+  def apply(): GetAccountResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DedicatedIpAutoWarmupEnabled)) __obj.updateDynamic("DedicatedIpAutoWarmupEnabled")(DedicatedIpAutoWarmupEnabled.get.asInstanceOf[js.Any])
-    if (EnforcementStatus != null) __obj.updateDynamic("EnforcementStatus")(EnforcementStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProductionAccessEnabled)) __obj.updateDynamic("ProductionAccessEnabled")(ProductionAccessEnabled.get.asInstanceOf[js.Any])
-    if (SendQuota != null) __obj.updateDynamic("SendQuota")(SendQuota.asInstanceOf[js.Any])
-    if (!js.isUndefined(SendingEnabled)) __obj.updateDynamic("SendingEnabled")(SendingEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountResponse]
   }
+  @scala.inline
+  implicit class GetAccountResponseOps[Self <: GetAccountResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDedicatedIpAutoWarmupEnabled(value: Enabled): Self = this.set("DedicatedIpAutoWarmupEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedIpAutoWarmupEnabled: Self = this.set("DedicatedIpAutoWarmupEnabled", js.undefined)
+    @scala.inline
+    def setEnforcementStatus(value: GeneralEnforcementStatus): Self = this.set("EnforcementStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforcementStatus: Self = this.set("EnforcementStatus", js.undefined)
+    @scala.inline
+    def setProductionAccessEnabled(value: Enabled): Self = this.set("ProductionAccessEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductionAccessEnabled: Self = this.set("ProductionAccessEnabled", js.undefined)
+    @scala.inline
+    def setSendQuota(value: SendQuota): Self = this.set("SendQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendQuota: Self = this.set("SendQuota", js.undefined)
+    @scala.inline
+    def setSendingEnabled(value: Enabled): Self = this.set("SendingEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSendingEnabled: Self = this.set("SendingEnabled", js.undefined)
+  }
+  
 }
 

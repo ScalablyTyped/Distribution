@@ -24,11 +24,30 @@ trait SchemaDeviceInfo extends js.Object {
 
 object SchemaDeviceInfo {
   @scala.inline
-  def apply(deviceType: String = null, id: String = null): SchemaDeviceInfo = {
+  def apply(): SchemaDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeviceInfo]
   }
+  @scala.inline
+  implicit class SchemaDeviceInfoOps[Self <: SchemaDeviceInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+  }
+  
 }
 

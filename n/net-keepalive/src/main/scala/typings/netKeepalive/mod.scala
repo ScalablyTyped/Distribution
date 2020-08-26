@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 object mod extends js.Object {
   def getKeepAliveInterval(socket: NodeJSSocketWithFileDescriptor): Double = js.native
   def getKeepAliveProbes(socket: NodeJSSocketWithFileDescriptor): Double = js.native
-  def setKeepAliveInterval(socket: NodeJSSocketWithFileDescriptor, intvl: Double): Double = js.native
-  def setKeepAliveProbes(socket: NodeJSSocketWithFileDescriptor, cnt: Double): Double = js.native
+  def setKeepAliveInterval(socket: NodeJSSocketWithFileDescriptor, intvl: Double): Boolean = js.native
+  def setKeepAliveProbes(socket: NodeJSSocketWithFileDescriptor, cnt: Double): Boolean = js.native
   type NodeJSSocketWithFileDescriptor = Socket | Handle
 }
 

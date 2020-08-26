@@ -333,6 +333,7 @@ trait Swiper extends js.Object {
     *  not produce transition events.
     */
   def slideNext(): Unit = js.native
+  def slideNext(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideNext(speed: Double): Unit = js.native
   def slideNext(speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
@@ -343,6 +344,7 @@ trait Swiper extends js.Object {
     *  not produce transition events.
     */
   def slidePrev(): Unit = js.native
+  def slidePrev(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slidePrev(speed: Double): Unit = js.native
   def slidePrev(speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
@@ -354,6 +356,7 @@ trait Swiper extends js.Object {
     *  not produce transition events.
     */
   def slideReset(): Unit = js.native
+  def slideReset(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideReset(speed: Double): Unit = js.native
   def slideReset(speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
@@ -366,6 +369,7 @@ trait Swiper extends js.Object {
     *  not produce transition events.
     */
   def slideTo(index: Double): Unit = js.native
+  def slideTo(index: Double, speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideTo(index: Double, speed: Double): Unit = js.native
   def slideTo(index: Double, speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
@@ -376,6 +380,7 @@ trait Swiper extends js.Object {
     *  not produce transition events.
     */
   def slideToClosest(): Unit = js.native
+  def slideToClosest(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideToClosest(speed: Double): Unit = js.native
   def slideToClosest(speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
@@ -388,12 +393,19 @@ trait Swiper extends js.Object {
     *  not produce transition events.
     */
   def slideToLoop(index: Double): Unit = js.native
+  def slideToLoop(index: Double, speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideToLoop(index: Double, speed: Double): Unit = js.native
   def slideToLoop(index: Double, speed: Double, runCallbacks: Boolean): Unit = js.native
   /**
     * Animate custom css3 transform's translate value for swiper wrapper
     */
   def translateTo(translate: Double, speed: Double): js.Any = js.native
+  def translateTo(
+    translate: Double,
+    speed: Double,
+    runCallbacks: js.UndefOr[scala.Nothing],
+    translateBounds: Boolean
+  ): js.Any = js.native
   def translateTo(translate: Double, speed: Double, runCallbacks: Boolean): js.Any = js.native
   def translateTo(translate: Double, speed: Double, runCallbacks: Boolean, translateBounds: Boolean): js.Any = js.native
   /**

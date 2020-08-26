@@ -10,9 +10,9 @@ Test utilities for Yeoman generators
 | ------------------ | :-------------: |
 | Full name          | yeoman-test |
 | Keywords           | yeoman, unit test |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 81 |
-| # downloads        | 1750125 |
+| # downloads        | 1776340 |
 | # stars            | 0 |
 
 ## Links

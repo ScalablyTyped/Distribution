@@ -3,7 +3,7 @@ package typings.oracleOraclejet.ojtagcloudMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.oracleOraclejet.anon.HoverBehaviorDelay
 import typings.oracleOraclejet.anon.LabelAndValue
-import typings.oracleOraclejet.anon.`24`
+import typings.oracleOraclejet.anon.`26`
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.any
@@ -22,66 +22,117 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtagcloud.ojTagCloudSettableProperties<K, D>> */
+@js.native
 trait ojTagCloudSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
-  var animationOnDisplay: js.UndefOr[auto | none] = js.undefined
-  var as: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var hiddenCategories: js.UndefOr[js.Array[String]] = js.undefined
-  var highlightMatch: js.UndefOr[any | all] = js.undefined
-  var highlightedCategories: js.UndefOr[js.Array[String]] = js.undefined
-  var hoverBehavior: js.UndefOr[dim | none] = js.undefined
-  var layout: js.UndefOr[cloud | rectangular] = js.undefined
-  var selection: js.UndefOr[js.Array[K]] = js.undefined
-  var selectionMode: js.UndefOr[single | multiple | none] = js.undefined
-  var styleDefaults: js.UndefOr[HoverBehaviorDelay] = js.undefined
-  var tooltip: js.UndefOr[`24`[K]] = js.undefined
-  var touchResponse: js.UndefOr[touchStart | auto] = js.undefined
-  var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[LabelAndValue] = js.undefined
+  var animationOnDataChange: js.UndefOr[auto | none] = js.native
+  var animationOnDisplay: js.UndefOr[auto | none] = js.native
+  var as: js.UndefOr[String] = js.native
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+  var hiddenCategories: js.UndefOr[js.Array[String]] = js.native
+  var highlightMatch: js.UndefOr[any | all] = js.native
+  var highlightedCategories: js.UndefOr[js.Array[String]] = js.native
+  var hoverBehavior: js.UndefOr[dim | none] = js.native
+  var layout: js.UndefOr[cloud | rectangular] = js.native
+  var selection: js.UndefOr[js.Array[K]] = js.native
+  var selectionMode: js.UndefOr[single | multiple | none] = js.native
+  var styleDefaults: js.UndefOr[HoverBehaviorDelay] = js.native
+  var tooltip: js.UndefOr[`26`[K]] = js.native
+  var touchResponse: js.UndefOr[touchStart | auto] = js.native
+  var trackResize: js.UndefOr[on | off] = js.native
+  var translations: js.UndefOr[LabelAndValue] = js.native
 }
 
 object ojTagCloudSettablePropertiesLenient {
   @scala.inline
-  def apply[K, D](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    animationOnDataChange: auto | none = null,
-    animationOnDisplay: auto | none = null,
-    as: String = null,
-    data: DataProvider[K, D] = null,
-    hiddenCategories: js.Array[String] = null,
-    highlightMatch: any | all = null,
-    highlightedCategories: js.Array[String] = null,
-    hoverBehavior: dim | none = null,
-    layout: cloud | rectangular = null,
-    selection: js.Array[K] = null,
-    selectionMode: single | multiple | none = null,
-    styleDefaults: HoverBehaviorDelay = null,
-    tooltip: `24`[K] = null,
-    touchResponse: touchStart | auto = null,
-    trackResize: on | off = null,
-    translations: LabelAndValue = null
-  ): ojTagCloudSettablePropertiesLenient[K, D] = {
+  def apply[K, D](): ojTagCloudSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (hiddenCategories != null) __obj.updateDynamic("hiddenCategories")(hiddenCategories.asInstanceOf[js.Any])
-    if (highlightMatch != null) __obj.updateDynamic("highlightMatch")(highlightMatch.asInstanceOf[js.Any])
-    if (highlightedCategories != null) __obj.updateDynamic("highlightedCategories")(highlightedCategories.asInstanceOf[js.Any])
-    if (hoverBehavior != null) __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (styleDefaults != null) __obj.updateDynamic("styleDefaults")(styleDefaults.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (touchResponse != null) __obj.updateDynamic("touchResponse")(touchResponse.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTagCloudSettablePropertiesLenient[K, D]]
   }
+  @scala.inline
+  implicit class ojTagCloudSettablePropertiesLenientOps[Self <: ojTagCloudSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojTagCloudSettablePropertiesLenient[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimationOnDataChange(value: auto | none): Self = this.set("animationOnDataChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOnDataChange: Self = this.set("animationOnDataChange", js.undefined)
+    @scala.inline
+    def setAnimationOnDisplay(value: auto | none): Self = this.set("animationOnDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOnDisplay: Self = this.set("animationOnDisplay", js.undefined)
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataNull: Self = this.set("data", null)
+    @scala.inline
+    def setHiddenCategoriesVarargs(value: String*): Self = this.set("hiddenCategories", js.Array(value :_*))
+    @scala.inline
+    def setHiddenCategories(value: js.Array[String]): Self = this.set("hiddenCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenCategories: Self = this.set("hiddenCategories", js.undefined)
+    @scala.inline
+    def setHighlightMatch(value: any | all): Self = this.set("highlightMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightMatch: Self = this.set("highlightMatch", js.undefined)
+    @scala.inline
+    def setHighlightedCategoriesVarargs(value: String*): Self = this.set("highlightedCategories", js.Array(value :_*))
+    @scala.inline
+    def setHighlightedCategories(value: js.Array[String]): Self = this.set("highlightedCategories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightedCategories: Self = this.set("highlightedCategories", js.undefined)
+    @scala.inline
+    def setHoverBehavior(value: dim | none): Self = this.set("hoverBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverBehavior: Self = this.set("hoverBehavior", js.undefined)
+    @scala.inline
+    def setLayout(value: cloud | rectangular): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setSelectionVarargs(value: K*): Self = this.set("selection", js.Array(value :_*))
+    @scala.inline
+    def setSelection(value: js.Array[K]): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setSelectionMode(value: single | multiple | none): Self = this.set("selectionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMode: Self = this.set("selectionMode", js.undefined)
+    @scala.inline
+    def setStyleDefaults(value: HoverBehaviorDelay): Self = this.set("styleDefaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyleDefaults: Self = this.set("styleDefaults", js.undefined)
+    @scala.inline
+    def setTooltip(value: `26`[K]): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTouchResponse(value: touchStart | auto): Self = this.set("touchResponse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchResponse: Self = this.set("touchResponse", js.undefined)
+    @scala.inline
+    def setTrackResize(value: on | off): Self = this.set("trackResize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackResize: Self = this.set("trackResize", js.undefined)
+    @scala.inline
+    def setTranslations(value: LabelAndValue): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+  }
+  
 }
 

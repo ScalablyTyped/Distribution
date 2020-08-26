@@ -33,11 +33,30 @@ trait SchemaSecurityMarks extends js.Object {
 
 object SchemaSecurityMarks {
   @scala.inline
-  def apply(marks: StringDictionary[String] = null, name: String = null): SchemaSecurityMarks = {
+  def apply(): SchemaSecurityMarks = {
     val __obj = js.Dynamic.literal()
-    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityMarks]
   }
+  @scala.inline
+  implicit class SchemaSecurityMarksOps[Self <: SchemaSecurityMarks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarks(value: StringDictionary[String]): Self = this.set("marks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarks: Self = this.set("marks", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

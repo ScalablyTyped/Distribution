@@ -30,20 +30,48 @@ trait VpcConfigRequest extends js.Object {
 
 object VpcConfigRequest {
   @scala.inline
-  def apply(
-    endpointPrivateAccess: js.UndefOr[BoxedBoolean] = js.undefined,
-    endpointPublicAccess: js.UndefOr[BoxedBoolean] = js.undefined,
-    publicAccessCidrs: StringList = null,
-    securityGroupIds: StringList = null,
-    subnetIds: StringList = null
-  ): VpcConfigRequest = {
+  def apply(): VpcConfigRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endpointPrivateAccess)) __obj.updateDynamic("endpointPrivateAccess")(endpointPrivateAccess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(endpointPublicAccess)) __obj.updateDynamic("endpointPublicAccess")(endpointPublicAccess.get.asInstanceOf[js.Any])
-    if (publicAccessCidrs != null) __obj.updateDynamic("publicAccessCidrs")(publicAccessCidrs.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcConfigRequest]
   }
+  @scala.inline
+  implicit class VpcConfigRequestOps[Self <: VpcConfigRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndpointPrivateAccess(value: BoxedBoolean): Self = this.set("endpointPrivateAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointPrivateAccess: Self = this.set("endpointPrivateAccess", js.undefined)
+    @scala.inline
+    def setEndpointPublicAccess(value: BoxedBoolean): Self = this.set("endpointPublicAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointPublicAccess: Self = this.set("endpointPublicAccess", js.undefined)
+    @scala.inline
+    def setPublicAccessCidrsVarargs(value: String*): Self = this.set("publicAccessCidrs", js.Array(value :_*))
+    @scala.inline
+    def setPublicAccessCidrs(value: StringList): Self = this.set("publicAccessCidrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicAccessCidrs: Self = this.set("publicAccessCidrs", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: StringList): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("subnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: StringList): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+  }
+  
 }
 

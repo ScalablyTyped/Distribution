@@ -60,6 +60,8 @@ package object groundstationMod {
   type DataflowEdgeList = js.Array[typings.awsSdk.groundstationMod.DataflowEdge]
   type DataflowEndpointGroupArn = java.lang.String
   type DataflowEndpointGroupList = js.Array[typings.awsSdk.groundstationMod.DataflowEndpointListItem]
+  type DataflowEndpointmtuInteger = scala.Double
+  type DataflowList = js.Array[typings.awsSdk.groundstationMod.DataflowDetail]
   type Double = scala.Double
   type DurationInSeconds = scala.Double
   type EirpUnits = typings.awsSdk.awsSdkStrings.dBW | java.lang.String

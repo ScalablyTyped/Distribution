@@ -64,17 +64,17 @@ object mod extends js.Object {
     def fromString(value: String, format: String): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
     def fromString(value: String, format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
     def fromValue(value: typings.ethersprojectBignumber.bignumberMod.BigNumber): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
-    def fromValue(value: typings.ethersprojectBignumber.bignumberMod.BigNumber, decimals: BigNumberish): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
     def fromValue(
       value: typings.ethersprojectBignumber.bignumberMod.BigNumber,
-      decimals: BigNumberish,
+      decimals: js.UndefOr[BigNumberish],
       format: String
     ): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
     def fromValue(
       value: typings.ethersprojectBignumber.bignumberMod.BigNumber,
-      decimals: BigNumberish,
+      decimals: js.UndefOr[BigNumberish],
       format: typings.ethersprojectBignumber.fixednumberMod.FixedFormat
     ): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
+    def fromValue(value: typings.ethersprojectBignumber.bignumberMod.BigNumber, decimals: BigNumberish): typings.ethersprojectBignumber.fixednumberMod.FixedNumber = js.native
     def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = js.native
   }
   

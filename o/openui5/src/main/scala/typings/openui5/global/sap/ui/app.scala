@@ -40,6 +40,7 @@ object app extends js.Object {
       */
     def this(sId: String) = this()
     def this(sId: String, mSettings: js.Any) = this()
+    def this(sId: String, mSettings: js.UndefOr[scala.Nothing], oScope: js.Any) = this()
     def this(sId: String, mSettings: js.Any, oScope: js.Any) = this()
   }
   

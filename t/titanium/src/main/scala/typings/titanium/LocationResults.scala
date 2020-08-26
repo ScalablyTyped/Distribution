@@ -7,33 +7,44 @@ import scala.scalajs.js.annotation._
 /**
   * Argument passed to the [getCurrentPosition](Titanium.Geolocation.getCurrentPosition) callback.
   */
+@js.native
 trait LocationResults extends ErrorResponse {
   /**
     * If `success` is true, actual location data for this update.
     */
-  var coords: js.UndefOr[LocationCoordinates] = js.undefined
+  var coords: js.UndefOr[LocationCoordinates] = js.native
   /**
     * If `success` is true, object describing the location provider generating this update.
     */
-  var provider: js.UndefOr[LocationProviderDict] = js.undefined
+  var provider: js.UndefOr[LocationProviderDict] = js.native
 }
 
 object LocationResults {
   @scala.inline
-  def apply(
-    code: js.UndefOr[Double] = js.undefined,
-    coords: LocationCoordinates = null,
-    error: java.lang.String = null,
-    provider: LocationProviderDict = null,
-    success: js.UndefOr[Boolean] = js.undefined
-  ): LocationResults = {
+  def apply(): LocationResults = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.get.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationResults]
   }
+  @scala.inline
+  implicit class LocationResultsOps[Self <: LocationResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoords(value: LocationCoordinates): Self = this.set("coords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoords: Self = this.set("coords", js.undefined)
+    @scala.inline
+    def setProvider(value: LocationProviderDict): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvider: Self = this.set("provider", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait NumberFilter extends js.Object {
 
 object NumberFilter {
   @scala.inline
-  def apply(
-    Eq: js.UndefOr[Double] = js.undefined,
-    Gte: js.UndefOr[Double] = js.undefined,
-    Lte: js.UndefOr[Double] = js.undefined
-  ): NumberFilter = {
+  def apply(): NumberFilter = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Eq)) __obj.updateDynamic("Eq")(Eq.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Gte)) __obj.updateDynamic("Gte")(Gte.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Lte)) __obj.updateDynamic("Lte")(Lte.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberFilter]
   }
+  @scala.inline
+  implicit class NumberFilterOps[Self <: NumberFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEq(value: Double): Self = this.set("Eq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEq: Self = this.set("Eq", js.undefined)
+    @scala.inline
+    def setGte(value: Double): Self = this.set("Gte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGte: Self = this.set("Gte", js.undefined)
+    @scala.inline
+    def setLte(value: Double): Self = this.set("Lte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLte: Self = this.set("Lte", js.undefined)
+  }
+  
 }
 

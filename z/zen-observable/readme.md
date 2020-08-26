@@ -10,9 +10,9 @@ An Implementation of ES Observables
 | ------------------ | :-------------: |
 | Full name          | zen-observable |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 159 |
-| # downloads        | 56016869 |
+| # releases         | 17 |
+| # dependents       | 165 |
+| # downloads        | 57978850 |
 | # stars            | 5 |
 
 ## Links

@@ -14,10 +14,26 @@ trait DeleteDataSourceOutput extends js.Object {
 
 object DeleteDataSourceOutput {
   @scala.inline
-  def apply(DataSourceId: EntityId = null): DeleteDataSourceOutput = {
+  def apply(): DeleteDataSourceOutput = {
     val __obj = js.Dynamic.literal()
-    if (DataSourceId != null) __obj.updateDynamic("DataSourceId")(DataSourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDataSourceOutput]
   }
+  @scala.inline
+  implicit class DeleteDataSourceOutputOps[Self <: DeleteDataSourceOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceId(value: EntityId): Self = this.set("DataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("DataSourceId", js.undefined)
+  }
+  
 }
 

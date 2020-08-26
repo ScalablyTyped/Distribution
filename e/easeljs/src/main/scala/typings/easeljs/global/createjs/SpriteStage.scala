@@ -13,7 +13,9 @@ class SpriteStage protected ()
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: String, preserveDrawingBuffer: Boolean) = this()
   def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: Boolean) = this()
+  def this(canvas: String, preserveDrawingBuffer: js.UndefOr[scala.Nothing], antialias: Boolean) = this()
   def this(canvas: String, preserveDrawingBuffer: Boolean, antialias: Boolean) = this()
+  def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: js.UndefOr[scala.Nothing], antialias: Boolean) = this()
   def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: Boolean, antialias: Boolean) = this()
 }
 

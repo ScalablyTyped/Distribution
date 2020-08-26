@@ -15,6 +15,7 @@ trait IStoreService extends INamespacedStoreService {
     * @returns {INamespacedStoreService}
     */
   def getNamespacedStore(namespace: String): INamespacedStoreService = js.native
+  def getNamespacedStore(namespace: String, storage: js.UndefOr[scala.Nothing], delimiter: String): INamespacedStoreService = js.native
   def getNamespacedStore(namespace: String, storage: String): INamespacedStoreService = js.native
   def getNamespacedStore(namespace: String, storage: String, delimiter: String): INamespacedStoreService = js.native
 }

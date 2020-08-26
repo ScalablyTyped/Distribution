@@ -40,6 +40,7 @@ class Element protected () extends js.Object {
   def getChild(name: String): js.UndefOr[Element] = js.native
   def getChild(name: String, xmlns: String): js.UndefOr[Element] = js.native
   def getChildByAttr(attr: String, `val`: js.Any): js.UndefOr[Element] = js.native
+  def getChildByAttr(attr: String, `val`: js.Any, xmlns: js.UndefOr[scala.Nothing], recursive: Boolean): js.UndefOr[Element] = js.native
   def getChildByAttr(attr: String, `val`: js.Any, xmlns: String): js.UndefOr[Element] = js.native
   def getChildByAttr(attr: String, `val`: js.Any, xmlns: String, recursive: Boolean): js.UndefOr[Element] = js.native
   /**
@@ -53,6 +54,7 @@ class Element protected () extends js.Object {
   def getChildren(name: String): js.Array[Element] = js.native
   def getChildren(name: String, xmlns: String): js.Array[Element] = js.native
   def getChildrenByAttr(attr: String, `val`: js.Any): js.Array[Element] = js.native
+  def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: js.UndefOr[scala.Nothing], recursive: Boolean): js.Array[Element] = js.native
   def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: String): js.Array[Element] = js.native
   def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: String, recursive: Boolean): js.Array[Element] = js.native
   def getChildrenByFilter(filter: js.Function1[/* child */ Node, Boolean]): js.Array[Element] = js.native

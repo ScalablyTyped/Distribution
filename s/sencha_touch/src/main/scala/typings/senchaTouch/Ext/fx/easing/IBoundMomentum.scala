@@ -1,150 +1,151 @@
 package typings.senchaTouch.Ext.fx.easing
 
-import typings.senchaTouch.Ext.Array
-import typings.senchaTouch.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBoundMomentum extends IAbstract {
   /** [Config Option] (Object) */
-  var bounce: js.UndefOr[js.Any] = js.undefined
+  var bounce: js.UndefOr[js.Any] = js.native
   /** [Method] Returns the value of bounce
     * @returns Object
     */
-  var getBounce: js.UndefOr[js.Function0[_]] = js.undefined
+  var getBounce: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of maxMomentumValue
     * @returns Number
     */
-  var getMaxMomentumValue: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMaxMomentumValue: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minMomentumValue
     * @returns Number
     */
-  var getMinMomentumValue: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinMomentumValue: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of minVelocity
     * @returns Number
     */
-  var getMinVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getMinVelocity: js.UndefOr[js.Function0[Double]] = js.native
   /** [Method] Returns the value of momentum
     * @returns Object
     */
-  var getMomentum: js.UndefOr[js.Function0[_]] = js.undefined
+  var getMomentum: js.UndefOr[js.Function0[_]] = js.native
   /** [Method] Returns the value of startVelocity
     * @returns Number
     */
-  var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
+  var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.native
   /** [Config Option] (Number) */
-  var minVelocity: js.UndefOr[Double] = js.undefined
+  var minVelocity: js.UndefOr[Double] = js.native
   /** [Config Option] (Object) */
-  var momentum: js.UndefOr[js.Any] = js.undefined
+  var momentum: js.UndefOr[js.Any] = js.native
   /** [Method] Sets the value of bounce
     * @param bounce Object The new value.
     */
-  var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of maxMomentumValue
     * @param maxMomentumValue Number The new value.
     */
-  var setMaxMomentumValue: js.UndefOr[js.Function1[/* maxMomentumValue */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMaxMomentumValue: js.UndefOr[js.Function1[/* maxMomentumValue */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minMomentumValue
     * @param minMomentumValue Number The new value.
     */
-  var setMinMomentumValue: js.UndefOr[js.Function1[/* minMomentumValue */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinMomentumValue: js.UndefOr[js.Function1[/* minMomentumValue */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of minVelocity
     * @param minVelocity Number The new value.
     */
-  var setMinVelocity: js.UndefOr[js.Function1[/* minVelocity */ js.UndefOr[Double], Unit]] = js.undefined
+  var setMinVelocity: js.UndefOr[js.Function1[/* minVelocity */ js.UndefOr[Double], Unit]] = js.native
   /** [Method] Sets the value of momentum
     * @param momentum Object The new value.
     */
-  var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Sets the value of startVelocity
     * @param startVelocity Number The new value.
     */
-  var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.undefined
+  var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.native
   /** [Config Option] (Number) */
-  var startVelocity: js.UndefOr[Double] = js.undefined
+  var startVelocity: js.UndefOr[Double] = js.native
 }
 
 object IBoundMomentum {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    bounce: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    extend: String = null,
-    getBounce: () => _ = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getMaxMomentumValue: () => Double = null,
-    getMinMomentumValue: () => Double = null,
-    getMinVelocity: () => Double = null,
-    getMomentum: () => _ = null,
-    getStartTime: () => Double = null,
-    getStartValue: () => Double = null,
-    getStartVelocity: () => Double = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    minVelocity: js.UndefOr[Double] = js.undefined,
-    mixins: js.Any = null,
-    momentum: js.Any = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    setBounce: /* bounce */ js.UndefOr[js.Any] => Unit = null,
-    setMaxMomentumValue: /* maxMomentumValue */ js.UndefOr[Double] => Unit = null,
-    setMinMomentumValue: /* minMomentumValue */ js.UndefOr[Double] => Unit = null,
-    setMinVelocity: /* minVelocity */ js.UndefOr[Double] => Unit = null,
-    setMomentum: /* momentum */ js.UndefOr[js.Any] => Unit = null,
-    setStartTime: /* startTime */ js.UndefOr[Double] => Unit = null,
-    setStartValue: /* startValue */ js.UndefOr[Double] => Unit = null,
-    setStartVelocity: /* startVelocity */ js.UndefOr[Double] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    startVelocity: js.UndefOr[Double] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IBoundMomentum = {
+  def apply(): IBoundMomentum = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (bounce != null) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getBounce != null) __obj.updateDynamic("getBounce")(js.Any.fromFunction0(getBounce))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getMaxMomentumValue != null) __obj.updateDynamic("getMaxMomentumValue")(js.Any.fromFunction0(getMaxMomentumValue))
-    if (getMinMomentumValue != null) __obj.updateDynamic("getMinMomentumValue")(js.Any.fromFunction0(getMinMomentumValue))
-    if (getMinVelocity != null) __obj.updateDynamic("getMinVelocity")(js.Any.fromFunction0(getMinVelocity))
-    if (getMomentum != null) __obj.updateDynamic("getMomentum")(js.Any.fromFunction0(getMomentum))
-    if (getStartTime != null) __obj.updateDynamic("getStartTime")(js.Any.fromFunction0(getStartTime))
-    if (getStartValue != null) __obj.updateDynamic("getStartValue")(js.Any.fromFunction0(getStartValue))
-    if (getStartVelocity != null) __obj.updateDynamic("getStartVelocity")(js.Any.fromFunction0(getStartVelocity))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(minVelocity)) __obj.updateDynamic("minVelocity")(minVelocity.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (momentum != null) __obj.updateDynamic("momentum")(momentum.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setBounce != null) __obj.updateDynamic("setBounce")(js.Any.fromFunction1(setBounce))
-    if (setMaxMomentumValue != null) __obj.updateDynamic("setMaxMomentumValue")(js.Any.fromFunction1(setMaxMomentumValue))
-    if (setMinMomentumValue != null) __obj.updateDynamic("setMinMomentumValue")(js.Any.fromFunction1(setMinMomentumValue))
-    if (setMinVelocity != null) __obj.updateDynamic("setMinVelocity")(js.Any.fromFunction1(setMinVelocity))
-    if (setMomentum != null) __obj.updateDynamic("setMomentum")(js.Any.fromFunction1(setMomentum))
-    if (setStartTime != null) __obj.updateDynamic("setStartTime")(js.Any.fromFunction1(setStartTime))
-    if (setStartValue != null) __obj.updateDynamic("setStartValue")(js.Any.fromFunction1(setStartValue))
-    if (setStartVelocity != null) __obj.updateDynamic("setStartVelocity")(js.Any.fromFunction1(setStartVelocity))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startVelocity)) __obj.updateDynamic("startVelocity")(startVelocity.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoundMomentum]
   }
+  @scala.inline
+  implicit class IBoundMomentumOps[Self <: IBoundMomentum] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBounce(value: js.Any): Self = this.set("bounce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounce: Self = this.set("bounce", js.undefined)
+    @scala.inline
+    def setGetBounce(value: () => _): Self = this.set("getBounce", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetBounce: Self = this.set("getBounce", js.undefined)
+    @scala.inline
+    def setGetMaxMomentumValue(value: () => Double): Self = this.set("getMaxMomentumValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMaxMomentumValue: Self = this.set("getMaxMomentumValue", js.undefined)
+    @scala.inline
+    def setGetMinMomentumValue(value: () => Double): Self = this.set("getMinMomentumValue", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinMomentumValue: Self = this.set("getMinMomentumValue", js.undefined)
+    @scala.inline
+    def setGetMinVelocity(value: () => Double): Self = this.set("getMinVelocity", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMinVelocity: Self = this.set("getMinVelocity", js.undefined)
+    @scala.inline
+    def setGetMomentum(value: () => _): Self = this.set("getMomentum", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetMomentum: Self = this.set("getMomentum", js.undefined)
+    @scala.inline
+    def setGetStartVelocity(value: () => Double): Self = this.set("getStartVelocity", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetStartVelocity: Self = this.set("getStartVelocity", js.undefined)
+    @scala.inline
+    def setMinVelocity(value: Double): Self = this.set("minVelocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinVelocity: Self = this.set("minVelocity", js.undefined)
+    @scala.inline
+    def setMomentum(value: js.Any): Self = this.set("momentum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMomentum: Self = this.set("momentum", js.undefined)
+    @scala.inline
+    def setSetBounce(value: /* bounce */ js.UndefOr[js.Any] => Unit): Self = this.set("setBounce", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetBounce: Self = this.set("setBounce", js.undefined)
+    @scala.inline
+    def setSetMaxMomentumValue(value: /* maxMomentumValue */ js.UndefOr[Double] => Unit): Self = this.set("setMaxMomentumValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMaxMomentumValue: Self = this.set("setMaxMomentumValue", js.undefined)
+    @scala.inline
+    def setSetMinMomentumValue(value: /* minMomentumValue */ js.UndefOr[Double] => Unit): Self = this.set("setMinMomentumValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinMomentumValue: Self = this.set("setMinMomentumValue", js.undefined)
+    @scala.inline
+    def setSetMinVelocity(value: /* minVelocity */ js.UndefOr[Double] => Unit): Self = this.set("setMinVelocity", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMinVelocity: Self = this.set("setMinVelocity", js.undefined)
+    @scala.inline
+    def setSetMomentum(value: /* momentum */ js.UndefOr[js.Any] => Unit): Self = this.set("setMomentum", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetMomentum: Self = this.set("setMomentum", js.undefined)
+    @scala.inline
+    def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = this.set("setStartVelocity", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetStartVelocity: Self = this.set("setStartVelocity", js.undefined)
+    @scala.inline
+    def setStartVelocity(value: Double): Self = this.set("startVelocity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartVelocity: Self = this.set("startVelocity", js.undefined)
+  }
+  
 }
 

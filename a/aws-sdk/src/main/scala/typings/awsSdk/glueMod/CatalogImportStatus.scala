@@ -22,16 +22,34 @@ trait CatalogImportStatus extends js.Object {
 
 object CatalogImportStatus {
   @scala.inline
-  def apply(
-    ImportCompleted: js.UndefOr[Boolean] = js.undefined,
-    ImportTime: Timestamp = null,
-    ImportedBy: NameString = null
-  ): CatalogImportStatus = {
+  def apply(): CatalogImportStatus = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ImportCompleted)) __obj.updateDynamic("ImportCompleted")(ImportCompleted.get.asInstanceOf[js.Any])
-    if (ImportTime != null) __obj.updateDynamic("ImportTime")(ImportTime.asInstanceOf[js.Any])
-    if (ImportedBy != null) __obj.updateDynamic("ImportedBy")(ImportedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogImportStatus]
   }
+  @scala.inline
+  implicit class CatalogImportStatusOps[Self <: CatalogImportStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImportCompleted(value: Boolean): Self = this.set("ImportCompleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportCompleted: Self = this.set("ImportCompleted", js.undefined)
+    @scala.inline
+    def setImportTime(value: Timestamp): Self = this.set("ImportTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTime: Self = this.set("ImportTime", js.undefined)
+    @scala.inline
+    def setImportedBy(value: NameString): Self = this.set("ImportedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportedBy: Self = this.set("ImportedBy", js.undefined)
+  }
+  
 }
 

@@ -41,24 +41,50 @@ trait SchemaSimpleAddressType extends js.Object {
 
 object SchemaSimpleAddressType {
   @scala.inline
-  def apply(
-    city: String = null,
-    line1: String = null,
-    line2: String = null,
-    line3: String = null,
-    locationName: String = null,
-    state: String = null,
-    zip: String = null
-  ): SchemaSimpleAddressType = {
+  def apply(): SchemaSimpleAddressType = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (line1 != null) __obj.updateDynamic("line1")(line1.asInstanceOf[js.Any])
-    if (line2 != null) __obj.updateDynamic("line2")(line2.asInstanceOf[js.Any])
-    if (line3 != null) __obj.updateDynamic("line3")(line3.asInstanceOf[js.Any])
-    if (locationName != null) __obj.updateDynamic("locationName")(locationName.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (zip != null) __obj.updateDynamic("zip")(zip.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSimpleAddressType]
   }
+  @scala.inline
+  implicit class SchemaSimpleAddressTypeOps[Self <: SchemaSimpleAddressType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setLine1(value: String): Self = this.set("line1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine1: Self = this.set("line1", js.undefined)
+    @scala.inline
+    def setLine2(value: String): Self = this.set("line2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine2: Self = this.set("line2", js.undefined)
+    @scala.inline
+    def setLine3(value: String): Self = this.set("line3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLine3: Self = this.set("line3", js.undefined)
+    @scala.inline
+    def setLocationName(value: String): Self = this.set("locationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationName: Self = this.set("locationName", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setZip(value: String): Self = this.set("zip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZip: Self = this.set("zip", js.undefined)
+  }
+  
 }
 

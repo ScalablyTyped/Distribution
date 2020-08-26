@@ -38,24 +38,54 @@ trait VpcPeeringConnectionVpcInfo extends js.Object {
 
 object VpcPeeringConnectionVpcInfo {
   @scala.inline
-  def apply(
-    CidrBlock: String = null,
-    CidrBlockSet: CidrBlockSet = null,
-    Ipv6CidrBlockSet: Ipv6CidrBlockSet = null,
-    OwnerId: String = null,
-    PeeringOptions: VpcPeeringConnectionOptionsDescription = null,
-    Region: String = null,
-    VpcId: String = null
-  ): VpcPeeringConnectionVpcInfo = {
+  def apply(): VpcPeeringConnectionVpcInfo = {
     val __obj = js.Dynamic.literal()
-    if (CidrBlock != null) __obj.updateDynamic("CidrBlock")(CidrBlock.asInstanceOf[js.Any])
-    if (CidrBlockSet != null) __obj.updateDynamic("CidrBlockSet")(CidrBlockSet.asInstanceOf[js.Any])
-    if (Ipv6CidrBlockSet != null) __obj.updateDynamic("Ipv6CidrBlockSet")(Ipv6CidrBlockSet.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (PeeringOptions != null) __obj.updateDynamic("PeeringOptions")(PeeringOptions.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcPeeringConnectionVpcInfo]
   }
+  @scala.inline
+  implicit class VpcPeeringConnectionVpcInfoOps[Self <: VpcPeeringConnectionVpcInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("CidrBlock", js.undefined)
+    @scala.inline
+    def setCidrBlockSetVarargs(value: CidrBlock*): Self = this.set("CidrBlockSet", js.Array(value :_*))
+    @scala.inline
+    def setCidrBlockSet(value: CidrBlockSet): Self = this.set("CidrBlockSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlockSet: Self = this.set("CidrBlockSet", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlockSetVarargs(value: Ipv6CidrBlock*): Self = this.set("Ipv6CidrBlockSet", js.Array(value :_*))
+    @scala.inline
+    def setIpv6CidrBlockSet(value: Ipv6CidrBlockSet): Self = this.set("Ipv6CidrBlockSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlockSet: Self = this.set("Ipv6CidrBlockSet", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setPeeringOptions(value: VpcPeeringConnectionOptionsDescription): Self = this.set("PeeringOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeeringOptions: Self = this.set("PeeringOptions", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

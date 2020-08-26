@@ -7,30 +7,53 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<materialize-css.M.AutocompleteOptions> */
+@js.native
 trait PartialAutocompleteOptionData extends js.Object {
-  var data: js.UndefOr[AutocompleteData] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var onAutocomplete: js.UndefOr[js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]] = js.undefined
-  var sortFunction: js.UndefOr[js.Function3[/* a */ String, /* b */ String, /* inputText */ String, Double]] = js.undefined
+  var data: js.UndefOr[AutocompleteData] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var onAutocomplete: js.UndefOr[js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]] = js.native
+  var sortFunction: js.UndefOr[js.Function3[/* a */ String, /* b */ String, /* inputText */ String, Double]] = js.native
 }
 
 object PartialAutocompleteOptionData {
   @scala.inline
-  def apply(
-    data: AutocompleteData = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    minLength: js.UndefOr[Double] = js.undefined,
-    onAutocomplete: js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit] = null,
-    sortFunction: (/* a */ String, /* b */ String, /* inputText */ String) => Double = null
-  ): PartialAutocompleteOptionData = {
+  def apply(): PartialAutocompleteOptionData = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (onAutocomplete != null) __obj.updateDynamic("onAutocomplete")(onAutocomplete.asInstanceOf[js.Any])
-    if (sortFunction != null) __obj.updateDynamic("sortFunction")(js.Any.fromFunction3(sortFunction))
     __obj.asInstanceOf[PartialAutocompleteOptionData]
   }
+  @scala.inline
+  implicit class PartialAutocompleteOptionDataOps[Self <: PartialAutocompleteOptionData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: AutocompleteData): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setOnAutocomplete(value: js.ThisFunction1[/* this */ Autocomplete, /* text */ String, Unit]): Self = this.set("onAutocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnAutocomplete: Self = this.set("onAutocomplete", js.undefined)
+    @scala.inline
+    def setSortFunction(value: (/* a */ String, /* b */ String, /* inputText */ String) => Double): Self = this.set("sortFunction", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteSortFunction: Self = this.set("sortFunction", js.undefined)
+  }
+  
 }
 

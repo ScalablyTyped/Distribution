@@ -19,6 +19,19 @@ trait CloudFront extends CloudFrontCustomizations {
   @JSName("config")
   var config_CloudFront: ConfigBase with ClientConfiguration = js.native
   /**
+    * Creates a cache policy. After you create a cache policy, you can attach it to one or more cache behaviors. When it’s attached to a cache behavior, the cache policy determines the following:   The values that CloudFront includes in the cache key. These values can include HTTP headers, cookies, and URL query strings. CloudFront uses the cache key to find an object in its cache that it can return to the viewer.   The default, minimum, and maximum time to live (TTL) values that you want objects to stay in the CloudFront cache.   The headers, cookies, and query strings that are included in the cache key are automatically included in requests that CloudFront sends to the origin. CloudFront sends a request when it can’t find an object in its cache that matches the request’s cache key. If you want to send values to the origin but not include them in the cache key, use CreateOriginRequestPolicy. For more information about cache policies, see Controlling the cache key in the Amazon CloudFront Developer Guide.
+    */
+  def createCachePolicy(): Request[CreateCachePolicyResult, AWSError] = js.native
+  def createCachePolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateCachePolicyResult, Unit]): Request[CreateCachePolicyResult, AWSError] = js.native
+  /**
+    * Creates a cache policy. After you create a cache policy, you can attach it to one or more cache behaviors. When it’s attached to a cache behavior, the cache policy determines the following:   The values that CloudFront includes in the cache key. These values can include HTTP headers, cookies, and URL query strings. CloudFront uses the cache key to find an object in its cache that it can return to the viewer.   The default, minimum, and maximum time to live (TTL) values that you want objects to stay in the CloudFront cache.   The headers, cookies, and query strings that are included in the cache key are automatically included in requests that CloudFront sends to the origin. CloudFront sends a request when it can’t find an object in its cache that matches the request’s cache key. If you want to send values to the origin but not include them in the cache key, use CreateOriginRequestPolicy. For more information about cache policies, see Controlling the cache key in the Amazon CloudFront Developer Guide.
+    */
+  def createCachePolicy(params: CreateCachePolicyRequest): Request[CreateCachePolicyResult, AWSError] = js.native
+  def createCachePolicy(
+    params: CreateCachePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCachePolicyResult, Unit]
+  ): Request[CreateCachePolicyResult, AWSError] = js.native
+  /**
     * Creates a new origin access identity. If you're using Amazon S3 for your origin, you can use an origin access identity to require users to access your content using a CloudFront URL instead of the Amazon S3 URL. For more information about how to use origin access identities, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide.
     */
   def createCloudFrontOriginAccessIdentity(): Request[CreateCloudFrontOriginAccessIdentityResult, AWSError] = js.native
@@ -103,6 +116,19 @@ trait CloudFront extends CloudFrontCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateInvalidationResult, Unit]
   ): Request[CreateInvalidationResult, AWSError] = js.native
   /**
+    * Creates an origin request policy. After you create an origin request policy, you can attach it to one or more cache behaviors. When it’s attached to a cache behavior, the origin request policy determines the values that CloudFront includes in requests that it sends to the origin. Each request that CloudFront sends to the origin includes the following:   The request body and the URL path (without the domain name) from the viewer request.   The headers that CloudFront automatically includes in every origin request, including Host, User-Agent, and X-Amz-Cf-Id.   All HTTP headers, cookies, and URL query strings that are specified in the cache policy or the origin request policy. These can include items from the viewer request and, in the case of headers, additional ones that are added by CloudFront.   CloudFront sends a request when it can’t find a valid object in its cache that matches the request. If you want to send values to the origin and also include them in the cache key, use CreateCachePolicy. For more information about origin request policies, see Controlling origin requests in the Amazon CloudFront Developer Guide.
+    */
+  def createOriginRequestPolicy(): Request[CreateOriginRequestPolicyResult, AWSError] = js.native
+  def createOriginRequestPolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateOriginRequestPolicyResult, Unit]): Request[CreateOriginRequestPolicyResult, AWSError] = js.native
+  /**
+    * Creates an origin request policy. After you create an origin request policy, you can attach it to one or more cache behaviors. When it’s attached to a cache behavior, the origin request policy determines the values that CloudFront includes in requests that it sends to the origin. Each request that CloudFront sends to the origin includes the following:   The request body and the URL path (without the domain name) from the viewer request.   The headers that CloudFront automatically includes in every origin request, including Host, User-Agent, and X-Amz-Cf-Id.   All HTTP headers, cookies, and URL query strings that are specified in the cache policy or the origin request policy. These can include items from the viewer request and, in the case of headers, additional ones that are added by CloudFront.   CloudFront sends a request when it can’t find a valid object in its cache that matches the request. If you want to send values to the origin and also include them in the cache key, use CreateCachePolicy. For more information about origin request policies, see Controlling origin requests in the Amazon CloudFront Developer Guide.
+    */
+  def createOriginRequestPolicy(params: CreateOriginRequestPolicyRequest): Request[CreateOriginRequestPolicyResult, AWSError] = js.native
+  def createOriginRequestPolicy(
+    params: CreateOriginRequestPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateOriginRequestPolicyResult, Unit]
+  ): Request[CreateOriginRequestPolicyResult, AWSError] = js.native
+  /**
     * Add a new public key to CloudFront to use, for example, for field-level encryption. You can add a maximum of 10 public keys with one AWS account.
     */
   def createPublicKey(): Request[CreatePublicKeyResult, AWSError] = js.native
@@ -143,6 +169,19 @@ trait CloudFront extends CloudFrontCustomizations {
     params: CreateStreamingDistributionWithTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamingDistributionWithTagsResult, Unit]
   ): Request[CreateStreamingDistributionWithTagsResult, AWSError] = js.native
+  /**
+    * Deletes a cache policy. You cannot delete a cache policy if it’s attached to a cache behavior. First update your distributions to remove the cache policy from all cache behaviors, then delete the cache policy. To delete a cache policy, you must provide the policy’s identifier and version. To get these values, you can use ListCachePolicies or GetCachePolicy.
+    */
+  def deleteCachePolicy(): Request[js.Object, AWSError] = js.native
+  def deleteCachePolicy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a cache policy. You cannot delete a cache policy if it’s attached to a cache behavior. First update your distributions to remove the cache policy from all cache behaviors, then delete the cache policy. To delete a cache policy, you must provide the policy’s identifier and version. To get these values, you can use ListCachePolicies or GetCachePolicy.
+    */
+  def deleteCachePolicy(params: DeleteCachePolicyRequest): Request[js.Object, AWSError] = js.native
+  def deleteCachePolicy(
+    params: DeleteCachePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   /**
     * Delete an origin access identity. 
     */
@@ -196,6 +235,19 @@ trait CloudFront extends CloudFrontCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Deletes an origin request policy. You cannot delete an origin request policy if it’s attached to any cache behaviors. First update your distributions to remove the origin request policy from all cache behaviors, then delete the origin request policy. To delete an origin request policy, you must provide the policy’s identifier and version. To get the identifier, you can use ListOriginRequestPolicies or GetOriginRequestPolicy.
+    */
+  def deleteOriginRequestPolicy(): Request[js.Object, AWSError] = js.native
+  def deleteOriginRequestPolicy(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an origin request policy. You cannot delete an origin request policy if it’s attached to any cache behaviors. First update your distributions to remove the origin request policy from all cache behaviors, then delete the origin request policy. To delete an origin request policy, you must provide the policy’s identifier and version. To get the identifier, you can use ListOriginRequestPolicies or GetOriginRequestPolicy.
+    */
+  def deleteOriginRequestPolicy(params: DeleteOriginRequestPolicyRequest): Request[js.Object, AWSError] = js.native
+  def deleteOriginRequestPolicy(
+    params: DeleteOriginRequestPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  /**
     * Remove a public key you previously added to CloudFront.
     */
   def deletePublicKey(): Request[js.Object, AWSError] = js.native
@@ -221,6 +273,32 @@ trait CloudFront extends CloudFrontCustomizations {
     params: DeleteStreamingDistributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  /**
+    * Gets a cache policy, including the following metadata:   The policy’s identifier.   The date and time when the policy was last modified.   To get a cache policy, you must provide the policy’s identifier. If the cache policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the cache policy is not attached to a cache behavior, you can get the identifier using ListCachePolicies.
+    */
+  def getCachePolicy(): Request[GetCachePolicyResult, AWSError] = js.native
+  def getCachePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetCachePolicyResult, Unit]): Request[GetCachePolicyResult, AWSError] = js.native
+  /**
+    * Gets a cache policy, including the following metadata:   The policy’s identifier.   The date and time when the policy was last modified.   To get a cache policy, you must provide the policy’s identifier. If the cache policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the cache policy is not attached to a cache behavior, you can get the identifier using ListCachePolicies.
+    */
+  def getCachePolicy(params: GetCachePolicyRequest): Request[GetCachePolicyResult, AWSError] = js.native
+  def getCachePolicy(
+    params: GetCachePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCachePolicyResult, Unit]
+  ): Request[GetCachePolicyResult, AWSError] = js.native
+  /**
+    * Gets a cache policy configuration. To get a cache policy configuration, you must provide the policy’s identifier. If the cache policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the cache policy is not attached to a cache behavior, you can get the identifier using ListCachePolicies.
+    */
+  def getCachePolicyConfig(): Request[GetCachePolicyConfigResult, AWSError] = js.native
+  def getCachePolicyConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetCachePolicyConfigResult, Unit]): Request[GetCachePolicyConfigResult, AWSError] = js.native
+  /**
+    * Gets a cache policy configuration. To get a cache policy configuration, you must provide the policy’s identifier. If the cache policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the cache policy is not attached to a cache behavior, you can get the identifier using ListCachePolicies.
+    */
+  def getCachePolicyConfig(params: GetCachePolicyConfigRequest): Request[GetCachePolicyConfigResult, AWSError] = js.native
+  def getCachePolicyConfig(
+    params: GetCachePolicyConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCachePolicyConfigResult, Unit]
+  ): Request[GetCachePolicyConfigResult, AWSError] = js.native
   /**
     * Get the information about an origin access identity. 
     */
@@ -345,6 +423,32 @@ trait CloudFront extends CloudFrontCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ GetInvalidationResult, Unit]
   ): Request[GetInvalidationResult, AWSError] = js.native
   /**
+    * Gets an origin request policy, including the following metadata:   The policy’s identifier.   The date and time when the policy was last modified.   To get an origin request policy, you must provide the policy’s identifier. If the origin request policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the origin request policy is not attached to a cache behavior, you can get the identifier using ListOriginRequestPolicies.
+    */
+  def getOriginRequestPolicy(): Request[GetOriginRequestPolicyResult, AWSError] = js.native
+  def getOriginRequestPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetOriginRequestPolicyResult, Unit]): Request[GetOriginRequestPolicyResult, AWSError] = js.native
+  /**
+    * Gets an origin request policy, including the following metadata:   The policy’s identifier.   The date and time when the policy was last modified.   To get an origin request policy, you must provide the policy’s identifier. If the origin request policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the origin request policy is not attached to a cache behavior, you can get the identifier using ListOriginRequestPolicies.
+    */
+  def getOriginRequestPolicy(params: GetOriginRequestPolicyRequest): Request[GetOriginRequestPolicyResult, AWSError] = js.native
+  def getOriginRequestPolicy(
+    params: GetOriginRequestPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetOriginRequestPolicyResult, Unit]
+  ): Request[GetOriginRequestPolicyResult, AWSError] = js.native
+  /**
+    * Gets an origin request policy configuration. To get an origin request policy configuration, you must provide the policy’s identifier. If the origin request policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the origin request policy is not attached to a cache behavior, you can get the identifier using ListOriginRequestPolicies.
+    */
+  def getOriginRequestPolicyConfig(): Request[GetOriginRequestPolicyConfigResult, AWSError] = js.native
+  def getOriginRequestPolicyConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetOriginRequestPolicyConfigResult, Unit]): Request[GetOriginRequestPolicyConfigResult, AWSError] = js.native
+  /**
+    * Gets an origin request policy configuration. To get an origin request policy configuration, you must provide the policy’s identifier. If the origin request policy is attached to a distribution’s cache behavior, you can get the policy’s identifier using ListDistributions or GetDistribution. If the origin request policy is not attached to a cache behavior, you can get the identifier using ListOriginRequestPolicies.
+    */
+  def getOriginRequestPolicyConfig(params: GetOriginRequestPolicyConfigRequest): Request[GetOriginRequestPolicyConfigResult, AWSError] = js.native
+  def getOriginRequestPolicyConfig(
+    params: GetOriginRequestPolicyConfigRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetOriginRequestPolicyConfigResult, Unit]
+  ): Request[GetOriginRequestPolicyConfigResult, AWSError] = js.native
+  /**
     * Get the public key information.
     */
   def getPublicKey(): Request[GetPublicKeyResult, AWSError] = js.native
@@ -397,6 +501,19 @@ trait CloudFront extends CloudFrontCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingDistributionConfigResult, Unit]
   ): Request[GetStreamingDistributionConfigResult, AWSError] = js.native
   /**
+    * Gets a list of cache policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listCachePolicies(): Request[ListCachePoliciesResult, AWSError] = js.native
+  def listCachePolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListCachePoliciesResult, Unit]): Request[ListCachePoliciesResult, AWSError] = js.native
+  /**
+    * Gets a list of cache policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listCachePolicies(params: ListCachePoliciesRequest): Request[ListCachePoliciesResult, AWSError] = js.native
+  def listCachePolicies(
+    params: ListCachePoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListCachePoliciesResult, Unit]
+  ): Request[ListCachePoliciesResult, AWSError] = js.native
+  /**
     * Lists origin access identities.
     */
   def listCloudFrontOriginAccessIdentities(): Request[ListCloudFrontOriginAccessIdentitiesResult, AWSError] = js.native
@@ -424,6 +541,36 @@ trait CloudFront extends CloudFrontCustomizations {
     params: ListDistributionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionsResult, Unit]
   ): Request[ListDistributionsResult, AWSError] = js.native
+  /**
+    * Gets a list of distribution IDs for distributions that have a cache behavior that’s associated with the specified cache policy. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listDistributionsByCachePolicyId(): Request[ListDistributionsByCachePolicyIdResult, AWSError] = js.native
+  def listDistributionsByCachePolicyId(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionsByCachePolicyIdResult, Unit]
+  ): Request[ListDistributionsByCachePolicyIdResult, AWSError] = js.native
+  /**
+    * Gets a list of distribution IDs for distributions that have a cache behavior that’s associated with the specified cache policy. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listDistributionsByCachePolicyId(params: ListDistributionsByCachePolicyIdRequest): Request[ListDistributionsByCachePolicyIdResult, AWSError] = js.native
+  def listDistributionsByCachePolicyId(
+    params: ListDistributionsByCachePolicyIdRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionsByCachePolicyIdResult, Unit]
+  ): Request[ListDistributionsByCachePolicyIdResult, AWSError] = js.native
+  /**
+    * Gets a list of distribution IDs for distributions that have a cache behavior that’s associated with the specified origin request policy. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listDistributionsByOriginRequestPolicyId(): Request[ListDistributionsByOriginRequestPolicyIdResult, AWSError] = js.native
+  def listDistributionsByOriginRequestPolicyId(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionsByOriginRequestPolicyIdResult, Unit]
+  ): Request[ListDistributionsByOriginRequestPolicyIdResult, AWSError] = js.native
+  /**
+    * Gets a list of distribution IDs for distributions that have a cache behavior that’s associated with the specified origin request policy. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listDistributionsByOriginRequestPolicyId(params: ListDistributionsByOriginRequestPolicyIdRequest): Request[ListDistributionsByOriginRequestPolicyIdResult, AWSError] = js.native
+  def listDistributionsByOriginRequestPolicyId(
+    params: ListDistributionsByOriginRequestPolicyIdRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDistributionsByOriginRequestPolicyIdResult, Unit]
+  ): Request[ListDistributionsByOriginRequestPolicyIdResult, AWSError] = js.native
   /**
     * List the distributions that are associated with a specified AWS WAF web ACL. 
     */
@@ -478,6 +625,19 @@ trait CloudFront extends CloudFrontCustomizations {
     params: ListInvalidationsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListInvalidationsResult, Unit]
   ): Request[ListInvalidationsResult, AWSError] = js.native
+  /**
+    * Gets a list of origin request policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listOriginRequestPolicies(): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
+  def listOriginRequestPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListOriginRequestPoliciesResult, Unit]): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
+  /**
+    * Gets a list of origin request policies. You can optionally apply a filter to return only the managed policies created by AWS, or only the custom policies created in your AWS account. You can optionally specify the maximum number of items to receive in the response. If the total number of items in the list exceeds the maximum that you specify, or the default maximum, the response is paginated. To get the next page of items, send a subsequent request that specifies the NextMarker value from the current response as the Marker value in the subsequent request.
+    */
+  def listOriginRequestPolicies(params: ListOriginRequestPoliciesRequest): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
+  def listOriginRequestPolicies(
+    params: ListOriginRequestPoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListOriginRequestPoliciesResult, Unit]
+  ): Request[ListOriginRequestPoliciesResult, AWSError] = js.native
   /**
     * List all public keys that have been added to CloudFront for this account.
     */
@@ -541,6 +701,19 @@ trait CloudFront extends CloudFrontCustomizations {
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   /**
+    * Updates a cache policy configuration. When you update a cache policy configuration, all the fields are updated with the values provided in the request. You cannot update some fields independent of others. To update a cache policy configuration:   Use GetCachePolicyConfig to get the current configuration.   Locally modify the fields in the cache policy configuration that you want to update.   Call UpdateCachePolicy by providing the entire cache policy configuration, including the fields that you modified and those that you didn’t.  
+    */
+  def updateCachePolicy(): Request[UpdateCachePolicyResult, AWSError] = js.native
+  def updateCachePolicy(callback: js.Function2[/* err */ AWSError, /* data */ UpdateCachePolicyResult, Unit]): Request[UpdateCachePolicyResult, AWSError] = js.native
+  /**
+    * Updates a cache policy configuration. When you update a cache policy configuration, all the fields are updated with the values provided in the request. You cannot update some fields independent of others. To update a cache policy configuration:   Use GetCachePolicyConfig to get the current configuration.   Locally modify the fields in the cache policy configuration that you want to update.   Call UpdateCachePolicy by providing the entire cache policy configuration, including the fields that you modified and those that you didn’t.  
+    */
+  def updateCachePolicy(params: UpdateCachePolicyRequest): Request[UpdateCachePolicyResult, AWSError] = js.native
+  def updateCachePolicy(
+    params: UpdateCachePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateCachePolicyResult, Unit]
+  ): Request[UpdateCachePolicyResult, AWSError] = js.native
+  /**
     * Update an origin access identity. 
     */
   def updateCloudFrontOriginAccessIdentity(): Request[UpdateCloudFrontOriginAccessIdentityResult, AWSError] = js.native
@@ -598,6 +771,19 @@ trait CloudFront extends CloudFrontCustomizations {
     params: UpdateFieldLevelEncryptionProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateFieldLevelEncryptionProfileResult, Unit]
   ): Request[UpdateFieldLevelEncryptionProfileResult, AWSError] = js.native
+  /**
+    * Updates an origin request policy configuration. When you update an origin request policy configuration, all the fields are updated with the values provided in the request. You cannot update some fields independent of others. To update an origin request policy configuration:   Use GetOriginRequestPolicyConfig to get the current configuration.   Locally modify the fields in the origin request policy configuration that you want to update.   Call UpdateOriginRequestPolicy by providing the entire origin request policy configuration, including the fields that you modified and those that you didn’t.  
+    */
+  def updateOriginRequestPolicy(): Request[UpdateOriginRequestPolicyResult, AWSError] = js.native
+  def updateOriginRequestPolicy(callback: js.Function2[/* err */ AWSError, /* data */ UpdateOriginRequestPolicyResult, Unit]): Request[UpdateOriginRequestPolicyResult, AWSError] = js.native
+  /**
+    * Updates an origin request policy configuration. When you update an origin request policy configuration, all the fields are updated with the values provided in the request. You cannot update some fields independent of others. To update an origin request policy configuration:   Use GetOriginRequestPolicyConfig to get the current configuration.   Locally modify the fields in the origin request policy configuration that you want to update.   Call UpdateOriginRequestPolicy by providing the entire origin request policy configuration, including the fields that you modified and those that you didn’t.  
+    */
+  def updateOriginRequestPolicy(params: UpdateOriginRequestPolicyRequest): Request[UpdateOriginRequestPolicyResult, AWSError] = js.native
+  def updateOriginRequestPolicy(
+    params: UpdateOriginRequestPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateOriginRequestPolicyResult, Unit]
+  ): Request[UpdateOriginRequestPolicyResult, AWSError] = js.native
   /**
     * Update public key information. Note that the only value you can change is the comment.
     */

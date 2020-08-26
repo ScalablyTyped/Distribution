@@ -16,10 +16,5 @@ class ASPxClientRatingControlItemMouseEventArgs protected ()
     * @param index An integer value that represents the index of the item being processed. This value is assigned to the ASPxClientRatingControlItemMouseEventArgs.index property.
     */
   def this(index: Double) = this()
-  /**
-    * Gets the index of the item related to the event.
-    */
-  /* CompleteClass */
-  override var index: Double = js.native
 }
 

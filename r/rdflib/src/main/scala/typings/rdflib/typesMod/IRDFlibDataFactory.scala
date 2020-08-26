@@ -23,9 +23,11 @@ trait IRDFlibDataFactory
     ] {
   def fetcher(store: typings.rdflib.storeMod.default, options: js.Any): typings.rdflib.fetcherMod.default = js.native
   def graph(): typings.rdflib.storeMod.default = js.native
+  def graph(features: js.UndefOr[scala.Nothing], opts: js.Any): typings.rdflib.storeMod.default = js.native
   def graph(features: js.Any): typings.rdflib.storeMod.default = js.native
   def graph(features: js.Any, opts: js.Any): typings.rdflib.storeMod.default = js.native
   def lit(`val`: String): typings.rdflib.literalMod.default = js.native
+  def lit(`val`: String, lang: js.UndefOr[scala.Nothing], dt: NamedNode): typings.rdflib.literalMod.default = js.native
   def lit(`val`: String, lang: String): typings.rdflib.literalMod.default = js.native
   def lit(`val`: String, lang: String, dt: NamedNode): typings.rdflib.literalMod.default = js.native
   def st(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject): typings.rdflib.statementMod.default[SubjectType, PredicateType, ObjectType, GraphType] = js.native

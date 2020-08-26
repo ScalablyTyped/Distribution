@@ -11,7 +11,7 @@ trait AvailabilityZone extends js.Object {
     */
   var GroupName: js.UndefOr[String] = js.native
   /**
-    * Any messages about the Availability Zone or Local Zone.
+    * Any messages about the Zone.
     */
   var Messages: js.UndefOr[AvailabilityZoneMessageList] = js.native
   /**
@@ -23,45 +23,99 @@ trait AvailabilityZone extends js.Object {
     */
   var OptInStatus: js.UndefOr[AvailabilityZoneOptInStatus] = js.native
   /**
+    * The ID of the zone that handles some of the Local Zone control plane operations, such as API calls.
+    */
+  var ParentZoneId: js.UndefOr[String] = js.native
+  /**
+    * The name of the zone that handles some of the Local Zone control plane operations, such as API calls.
+    */
+  var ParentZoneName: js.UndefOr[String] = js.native
+  /**
     * The name of the Region.
     */
   var RegionName: js.UndefOr[String] = js.native
   /**
-    * The state of the Availability Zone or Local Zone.
+    * The state of the Zone.
     */
   var State: js.UndefOr[AvailabilityZoneState] = js.native
   /**
-    * The ID of the Availability Zone or Local Zone.
+    * The ID of the Zone.
     */
   var ZoneId: js.UndefOr[String] = js.native
   /**
-    * The name of the Availability Zone or Local Zone.
+    * The name of the Zone.
     */
   var ZoneName: js.UndefOr[String] = js.native
+  /**
+    * The type of zone. The valid values are availability-zone and local-zone.
+    */
+  var ZoneType: js.UndefOr[String] = js.native
 }
 
 object AvailabilityZone {
   @scala.inline
-  def apply(
-    GroupName: String = null,
-    Messages: AvailabilityZoneMessageList = null,
-    NetworkBorderGroup: String = null,
-    OptInStatus: AvailabilityZoneOptInStatus = null,
-    RegionName: String = null,
-    State: AvailabilityZoneState = null,
-    ZoneId: String = null,
-    ZoneName: String = null
-  ): AvailabilityZone = {
+  def apply(): AvailabilityZone = {
     val __obj = js.Dynamic.literal()
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (Messages != null) __obj.updateDynamic("Messages")(Messages.asInstanceOf[js.Any])
-    if (NetworkBorderGroup != null) __obj.updateDynamic("NetworkBorderGroup")(NetworkBorderGroup.asInstanceOf[js.Any])
-    if (OptInStatus != null) __obj.updateDynamic("OptInStatus")(OptInStatus.asInstanceOf[js.Any])
-    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (ZoneId != null) __obj.updateDynamic("ZoneId")(ZoneId.asInstanceOf[js.Any])
-    if (ZoneName != null) __obj.updateDynamic("ZoneName")(ZoneName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvailabilityZone]
   }
+  @scala.inline
+  implicit class AvailabilityZoneOps[Self <: AvailabilityZone] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupName(value: String): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setMessagesVarargs(value: AvailabilityZoneMessage*): Self = this.set("Messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: AvailabilityZoneMessageList): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("Messages", js.undefined)
+    @scala.inline
+    def setNetworkBorderGroup(value: String): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
+    @scala.inline
+    def setOptInStatus(value: AvailabilityZoneOptInStatus): Self = this.set("OptInStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptInStatus: Self = this.set("OptInStatus", js.undefined)
+    @scala.inline
+    def setParentZoneId(value: String): Self = this.set("ParentZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentZoneId: Self = this.set("ParentZoneId", js.undefined)
+    @scala.inline
+    def setParentZoneName(value: String): Self = this.set("ParentZoneName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentZoneName: Self = this.set("ParentZoneName", js.undefined)
+    @scala.inline
+    def setRegionName(value: String): Self = this.set("RegionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionName: Self = this.set("RegionName", js.undefined)
+    @scala.inline
+    def setState(value: AvailabilityZoneState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setZoneId(value: String): Self = this.set("ZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneId: Self = this.set("ZoneId", js.undefined)
+    @scala.inline
+    def setZoneName(value: String): Self = this.set("ZoneName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneName: Self = this.set("ZoneName", js.undefined)
+    @scala.inline
+    def setZoneType(value: String): Self = this.set("ZoneType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneType: Self = this.set("ZoneType", js.undefined)
+  }
+  
 }
 

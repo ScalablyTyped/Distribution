@@ -34,20 +34,42 @@ trait SchemaLeaderboardScoreRank extends js.Object {
 
 object SchemaLeaderboardScoreRank {
   @scala.inline
-  def apply(
-    formattedNumScores: String = null,
-    formattedRank: String = null,
-    kind: String = null,
-    numScores: String = null,
-    rank: String = null
-  ): SchemaLeaderboardScoreRank = {
+  def apply(): SchemaLeaderboardScoreRank = {
     val __obj = js.Dynamic.literal()
-    if (formattedNumScores != null) __obj.updateDynamic("formattedNumScores")(formattedNumScores.asInstanceOf[js.Any])
-    if (formattedRank != null) __obj.updateDynamic("formattedRank")(formattedRank.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (numScores != null) __obj.updateDynamic("numScores")(numScores.asInstanceOf[js.Any])
-    if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLeaderboardScoreRank]
   }
+  @scala.inline
+  implicit class SchemaLeaderboardScoreRankOps[Self <: SchemaLeaderboardScoreRank] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormattedNumScores(value: String): Self = this.set("formattedNumScores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedNumScores: Self = this.set("formattedNumScores", js.undefined)
+    @scala.inline
+    def setFormattedRank(value: String): Self = this.set("formattedRank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedRank: Self = this.set("formattedRank", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNumScores(value: String): Self = this.set("numScores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumScores: Self = this.set("numScores", js.undefined)
+    @scala.inline
+    def setRank(value: String): Self = this.set("rank", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRank: Self = this.set("rank", js.undefined)
+  }
+  
 }
 

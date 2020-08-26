@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "toobusy-js"
-version := "0.5-dt-20181205Z-c02904"
-scalaVersion := "2.13.2"
+version := "0.5-dt-20181205Z-c678ab"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

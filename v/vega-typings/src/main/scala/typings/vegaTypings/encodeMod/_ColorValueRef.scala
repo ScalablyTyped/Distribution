@@ -13,16 +13,8 @@ object _ColorValueRef {
     __obj.asInstanceOf[_ColorValueRef]
   }
   @scala.inline
-  def Count(
-    gradient: Field,
-    count: js.UndefOr[Double] = js.undefined,
-    start: js.Array[Double] = null,
-    stop: js.Array[Double] = null
-  ): _ColorValueRef = {
+  def Count(gradient: Field): _ColorValueRef = {
     val __obj = js.Dynamic.literal(gradient = gradient.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (stop != null) __obj.updateDynamic("stop")(stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ColorValueRef]
   }
   @scala.inline

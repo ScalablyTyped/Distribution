@@ -30,18 +30,40 @@ trait SchemaTurnBasedMatchResults extends js.Object {
 
 object SchemaTurnBasedMatchResults {
   @scala.inline
-  def apply(
-    data: SchemaTurnBasedMatchDataRequest = null,
-    kind: String = null,
-    matchVersion: js.UndefOr[Double] = js.undefined,
-    results: js.Array[SchemaParticipantResult] = null
-  ): SchemaTurnBasedMatchResults = {
+  def apply(): SchemaTurnBasedMatchResults = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchVersion)) __obj.updateDynamic("matchVersion")(matchVersion.get.asInstanceOf[js.Any])
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTurnBasedMatchResults]
   }
+  @scala.inline
+  implicit class SchemaTurnBasedMatchResultsOps[Self <: SchemaTurnBasedMatchResults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: SchemaTurnBasedMatchDataRequest): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMatchVersion(value: Double): Self = this.set("matchVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchVersion: Self = this.set("matchVersion", js.undefined)
+    @scala.inline
+    def setResultsVarargs(value: SchemaParticipantResult*): Self = this.set("results", js.Array(value :_*))
+    @scala.inline
+    def setResults(value: js.Array[SchemaParticipantResult]): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+  }
+  
 }
 

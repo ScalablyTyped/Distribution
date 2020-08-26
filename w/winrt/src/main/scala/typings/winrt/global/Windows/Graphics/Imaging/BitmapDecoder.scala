@@ -10,18 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")
 @js.native
 class BitmapDecoder ()
-  extends typings.winrt.Windows.Graphics.Imaging.BitmapDecoder {
-  /* CompleteClass */
-  override var bitmapContainerProperties: typings.winrt.Windows.Graphics.Imaging.BitmapPropertiesView = js.native
-  /* CompleteClass */
-  override var decoderInformation: typings.winrt.Windows.Graphics.Imaging.BitmapCodecInformation = js.native
-  /* CompleteClass */
-  override var frameCount: Double = js.native
-  /* CompleteClass */
-  override def getFrameAsync(frameIndex: Double): IAsyncOperation[typings.winrt.Windows.Graphics.Imaging.BitmapFrame] = js.native
-  /* CompleteClass */
-  override def getPreviewAsync(): IAsyncOperation[typings.winrt.Windows.Graphics.Imaging.ImageStream] = js.native
-}
+  extends typings.winrt.Windows.Graphics.Imaging.BitmapDecoder
 
 /* static members */
 @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")

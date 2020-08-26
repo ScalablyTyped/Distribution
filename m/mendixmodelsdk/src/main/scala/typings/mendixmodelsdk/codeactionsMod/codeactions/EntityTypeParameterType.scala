@@ -35,10 +35,8 @@ class EntityTypeParameterType protected () extends ParameterType {
   val typeParameter_FEntityTypeParameterType: ITypeParameter | Null = js.native
   @JSName("containerAsCodeActionParameter")
   def containerAsCodeActionParameter_MEntityTypeParameterType: CodeActionParameter = js.native
-  def typeParameter(): js.Any = js.native
-  def typeParameter(newValue: TypeParameter): js.Any = js.native
-  @JSName("typeParameter")
-  def typeParameter_Union: TypeParameter | Null = js.native
+  def typeParameter: TypeParameter | Null = js.native
+  def typeParameter_=(newValue: TypeParameter | Null): Unit = js.native
 }
 
 /* static members */

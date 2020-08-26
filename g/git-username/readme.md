@@ -12,7 +12,7 @@ Get the username (or 'owner' name) from a git/GitHub remote origin URL.
 | Keywords           | git, name, origin, parse, remote, remote origin, remote origin url, url, user, username |
 | # releases         | 3 |
 | # dependents       | 40 |
-| # downloads        | 372632 |
+| # downloads        | 391956 |
 | # stars            | 0 |
 
 ## Links

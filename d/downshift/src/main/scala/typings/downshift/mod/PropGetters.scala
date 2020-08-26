@@ -12,9 +12,11 @@ trait PropGetters[Item] extends js.Object {
   def getLabelProps(): js.Any = js.native
   def getLabelProps(options: GetLabelPropsOptions): js.Any = js.native
   def getMenuProps(): js.Any = js.native
+  def getMenuProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getMenuProps(options: GetMenuPropsOptions): js.Any = js.native
   def getMenuProps(options: GetMenuPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getRootProps(): js.Any = js.native
+  def getRootProps(options: js.UndefOr[scala.Nothing], otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getRootProps(options: GetRootPropsOptions): js.Any = js.native
   def getRootProps(options: GetRootPropsOptions, otherOptions: GetPropsCommonOptions): js.Any = js.native
   def getToggleButtonProps(): js.Any = js.native

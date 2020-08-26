@@ -37,8 +37,39 @@ object Direct_ extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def addListener(): js.Any = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addListener(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addListener(eventName: js.Any): js.Any = js.native
+  def addListener(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addListener(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def addListener(eventName: js.Any, fn: js.Any): js.Any = js.native
+  def addListener(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def addListener(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Adds listeners to any Observable object or Ext Element which are automatically removed when this Component is destr
@@ -50,9 +81,106 @@ object Direct_ extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def addManagedListener(): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any): js.Any = js.native
+  def addManagedListener(
+    item: js.Any,
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+  def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def addManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Adds an Ext Direct Provider and creates the proxy or stub methods to execute server side methods
@@ -99,6 +227,7 @@ object Direct_ extends js.Object {
     * @returns Boolean returns false if any of the handlers return false otherwise it returns true.
     */
   def fireEventArgs(): Boolean = js.native
+  def fireEventArgs(eventName: js.UndefOr[scala.Nothing], args: typings.extjs.Ext.Array): Boolean = js.native
   def fireEventArgs(eventName: java.lang.String): Boolean = js.native
   def fireEventArgs(eventName: java.lang.String, args: typings.extjs.Ext.Array): Boolean = js.native
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
@@ -133,9 +262,106 @@ object Direct_ extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.mon({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def mon(): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.Any,
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any): js.Any = js.native
+  def mon(
+    item: js.Any,
+    ename: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any): js.Any = js.native
+  def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def mon(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Shorthand for removeManagedListener
@@ -145,8 +371,24 @@ object Direct_ extends js.Object {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   def mun(): Unit = js.native
+  def mun(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+  def mun(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def mun(item: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any): Unit = js.native
+  def mun(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
   def mun(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Shorthand for addListener
@@ -157,8 +399,39 @@ object Direct_ extends js.Object {
     * @returns Object Only when the destroyable option is specified.  A Destroyable object. An object which implements the destroy method which removes all listeners added in this call. For example:  this.btnListeners = = myButton.on({  destroyable: true  mouseover:  function() { console.log('mouseover'); },  mouseout: function() { console.log('mouseout'); },  click:  function() { console.log('click'); } }); And when those listeners need to be removed:  Ext.destroy(this.btnListeners); or  this.btnListeners.destroy();
     */
   def on(): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any): js.Any = js.native
+  def on(
+    eventName: js.UndefOr[scala.Nothing],
+    fn: js.Any,
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): js.Any = js.native
+  def on(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   def on(eventName: js.Any): js.Any = js.native
+  def on(
+    eventName: js.Any,
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    options: js.Any
+  ): js.Any = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): js.Any = js.native
+  def on(eventName: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any, options: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any): js.Any = js.native
+  def on(eventName: js.Any, fn: js.Any, scope: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any): js.Any = js.native
   def on(eventName: js.Any, fn: js.Any, scope: js.Any, options: js.Any): js.Any = js.native
   /** [Method] Parses a direct function
@@ -174,7 +447,11 @@ object Direct_ extends js.Object {
     * @returns Object A Destroyable object. An object which implements the destroy method which, when destroyed, removes all relayers. For example: this.storeRelayers = this.relayEvents(this.getStore(), ['load', 'clear'], 'store');  Can be undone by calling Ext.destroy(this.storeRelayers);  or this.store.relayers.destroy();
     */
   def relayEvents(): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array): js.Any = js.native
+  def relayEvents(origin: js.UndefOr[scala.Nothing], events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
   def relayEvents(origin: js.Any): js.Any = js.native
+  def relayEvents(origin: js.Any, events: js.UndefOr[scala.Nothing], prefix: java.lang.String): js.Any = js.native
   def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array): js.Any = js.native
   def relayEvents(origin: js.Any, events: typings.extjs.Ext.Array, prefix: java.lang.String): js.Any = js.native
   /** [Method] Removes an event handler
@@ -183,7 +460,11 @@ object Direct_ extends js.Object {
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   def removeListener(): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeListener(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeListener(eventName: java.lang.String): Unit = js.native
+  def removeListener(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeListener(eventName: java.lang.String, fn: js.Any): Unit = js.native
   def removeListener(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes listeners that were added by the mon method
@@ -193,8 +474,24 @@ object Direct_ extends js.Object {
     * @param scope Object If the ename parameter was an event name, this is the scope (this reference) in which the handler function is executed.
     */
   def removeManagedListener(): Unit = js.native
+  def removeManagedListener(
+    item: js.UndefOr[scala.Nothing],
+    ename: js.UndefOr[scala.Nothing],
+    fn: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.UndefOr[scala.Nothing], ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any): Unit = js.native
+  def removeManagedListener(item: js.Any, ename: js.Any, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any): Unit = js.native
   def removeManagedListener(item: js.Any, ename: js.Any, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Removes the provider
@@ -228,7 +525,11 @@ object Direct_ extends js.Object {
     * @param scope Object The scope originally specified for the handler. It must be the same as the scope argument specified in the original call to Ext.util.Observable.addListener or the listener will not be removed.
     */
   def un(): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def un(eventName: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def un(eventName: java.lang.String): Unit = js.native
+  def un(eventName: java.lang.String, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def un(eventName: java.lang.String, fn: js.Any): Unit = js.native
   def un(eventName: java.lang.String, fn: js.Any, scope: js.Any): Unit = js.native
 }

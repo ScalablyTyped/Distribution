@@ -36,8 +36,8 @@ object routerLinkDelegateMod extends js.Object {
     var router: js.Any = js.native
     var routerAnimation: js.UndefOr[AnimationBuilder] = js.native
     var routerDirection: RouterDirection = js.native
-    var routerLink: js.UndefOr[js.Any] = js.native
-    var subscription: js.UndefOr[js.Any] = js.native
+    var routerLink: js.Any = js.native
+    var subscription: js.Any = js.native
     var updateTargetUrlAndHref: js.Any = js.native
     def ngOnChanges(): js.Any = js.native
     def ngOnDestroy(): js.Any = js.native

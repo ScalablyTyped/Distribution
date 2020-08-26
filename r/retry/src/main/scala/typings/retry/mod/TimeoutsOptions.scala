@@ -4,30 +4,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TimeoutsOptions extends CreateTimeoutOptions {
   /**
     * The maximum amount of times to retry the operation.
     * @default 10
     */
-  var retries: js.UndefOr[Double] = js.undefined
+  var retries: js.UndefOr[Double] = js.native
 }
 
 object TimeoutsOptions {
   @scala.inline
-  def apply(
-    factor: js.UndefOr[Double] = js.undefined,
-    maxTimeout: js.UndefOr[Double] = js.undefined,
-    minTimeout: js.UndefOr[Double] = js.undefined,
-    randomize: js.UndefOr[Boolean] = js.undefined,
-    retries: js.UndefOr[Double] = js.undefined
-  ): TimeoutsOptions = {
+  def apply(): TimeoutsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTimeout)) __obj.updateDynamic("maxTimeout")(maxTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minTimeout)) __obj.updateDynamic("minTimeout")(minTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomize)) __obj.updateDynamic("randomize")(randomize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retries)) __obj.updateDynamic("retries")(retries.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeoutsOptions]
   }
+  @scala.inline
+  implicit class TimeoutsOptionsOps[Self <: TimeoutsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRetries(value: Double): Self = this.set("retries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetries: Self = this.set("retries", js.undefined)
+  }
+  
 }
 

@@ -15,7 +15,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/drop-down-widget relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/drop-down relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDown")
 @js.native
@@ -34,7 +34,7 @@ class DropDown protected () extends AttributeWidget {
     * In version 7.2.0: introduced
     */
   def emptyOptionCaption: Text = js.native
-  def emptyOptionCaption(newValue: Text): js.Any = js.native
+  def emptyOptionCaption_=(newValue: Text): Unit = js.native
 }
 
 /* static members */

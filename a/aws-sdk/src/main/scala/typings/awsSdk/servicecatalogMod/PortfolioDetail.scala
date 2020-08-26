@@ -34,22 +34,46 @@ trait PortfolioDetail extends js.Object {
 
 object PortfolioDetail {
   @scala.inline
-  def apply(
-    ARN: ResourceARN = null,
-    CreatedTime: CreationTime = null,
-    Description: PortfolioDescription = null,
-    DisplayName: PortfolioDisplayName = null,
-    Id: Id = null,
-    ProviderName: ProviderName = null
-  ): PortfolioDetail = {
+  def apply(): PortfolioDetail = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortfolioDetail]
   }
+  @scala.inline
+  implicit class PortfolioDetailOps[Self <: PortfolioDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: ResourceARN): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: CreationTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDescription(value: PortfolioDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: PortfolioDisplayName): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderName): Self = this.set("ProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("ProviderName", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,11 @@
 organization := "org.scalablytyped"
 name := "formatjs__intl-listformat"
-version := "1.4.2-941210"
-scalaVersion := "2.13.2"
+version := "4.0.0-b108fe"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "formatjs__intl-utils" % "2.2.0-d8d037",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

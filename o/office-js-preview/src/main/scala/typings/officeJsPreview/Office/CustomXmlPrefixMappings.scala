@@ -29,6 +29,12 @@ trait CustomXmlPrefixMappings extends js.Object {
     */
   def addNamespaceAsync(prefix: String, ns: String): Unit = js.native
   def addNamespaceAsync(prefix: String, ns: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def addNamespaceAsync(
+    prefix: String,
+    ns: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addNamespaceAsync(prefix: String, ns: String, options: AsyncContextOptions): Unit = js.native
   def addNamespaceAsync(
     prefix: String,
@@ -53,6 +59,11 @@ trait CustomXmlPrefixMappings extends js.Object {
     */
   def getNamespaceAsync(prefix: String): Unit = js.native
   def getNamespaceAsync(prefix: String, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getNamespaceAsync(
+    prefix: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getNamespaceAsync(prefix: String, options: AsyncContextOptions): Unit = js.native
   def getNamespaceAsync(
     prefix: String,
@@ -76,6 +87,11 @@ trait CustomXmlPrefixMappings extends js.Object {
     */
   def getPrefixAsync(ns: String): Unit = js.native
   def getPrefixAsync(ns: String, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getPrefixAsync(
+    ns: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* result */ AsyncResult[String], Unit]
+  ): Unit = js.native
   def getPrefixAsync(ns: String, options: AsyncContextOptions): Unit = js.native
   def getPrefixAsync(
     ns: String,

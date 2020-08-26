@@ -26,11 +26,11 @@ class CommitAction protected () extends MicroflowAction {
   @JSName("model")
   var model_FCommitAction: IModel = js.native
   def commitVariableName: String = js.native
-  def commitVariableName(newValue: String): js.Any = js.native
+  def commitVariableName_=(newValue: String): Unit = js.native
   def refreshInClient: Boolean = js.native
-  def refreshInClient(newValue: Boolean): js.Any = js.native
+  def refreshInClient_=(newValue: Boolean): Unit = js.native
   def withEvents: Boolean = js.native
-  def withEvents(newValue: Boolean): js.Any = js.native
+  def withEvents_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

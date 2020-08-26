@@ -12,7 +12,7 @@ Regex for matching dot-directories, like `.git/`
 | Keywords           | detect, directory, dot, dotdir, dotfile, exec, expression, file, find, match, regex, regexp, regular, test |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 544463 |
+| # downloads        | 530450 |
 | # stars            | 0 |
 
 ## Links

@@ -13,6 +13,7 @@ trait QFieldValue extends js.Object {
   var qState: js.Any = js.native
   var qText: String = js.native
   def select(): js.Promise[_] = js.native
+  def select(toggle: js.UndefOr[scala.Nothing], softlock: Boolean): js.Promise[_] = js.native
   def select(toggle: Boolean): js.Promise[_] = js.native
   def select(toggle: Boolean, softlock: Boolean): js.Promise[_] = js.native
 }

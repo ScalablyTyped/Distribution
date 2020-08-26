@@ -30,6 +30,7 @@ import typings.jwplayer.jwplayerStrings.meta
 import typings.jwplayer.jwplayerStrings.mute
 import typings.jwplayer.jwplayerStrings.pause
 import typings.jwplayer.jwplayerStrings.play
+import typings.jwplayer.jwplayerStrings.playbackRateChanged
 import typings.jwplayer.jwplayerStrings.playlist
 import typings.jwplayer.jwplayerStrings.playlistItem
 import typings.jwplayer.jwplayerStrings.ready
@@ -60,6 +61,7 @@ trait JWPlayer extends js.Object {
   def getFullscreen(): Boolean = js.native
   def getHeight(): Double = js.native
   def getMute(): Boolean = js.native
+  def getPlaybackRate(): Double = js.native
   def getPlaylist(): js.Array[_] = js.native
   def getPlaylistIndex(): Double = js.native
   def getPlaylistItem(): js.Any = js.native
@@ -75,7 +77,7 @@ trait JWPlayer extends js.Object {
   def load(playlist: String): Unit = js.native
   def load(playlist: js.Array[_]): Unit = js.native
   def off(
-    event: adClick | adCompanions | adComplete | adSkipped | adError | adRequest | adSchedule | adStarted | adImpression | adPlay | adPause | adTime | cast | meta | audioTracks | audioTrackChanged | firstFrame | buffer | bufferChange | captionsChanged | captionsList | controls | error | fullscreen | idle | levelsChanged | mute | volume | pause | play | playlist | playlistItem | ready | resize | visualQuality | levels | seek | setupError | time
+    event: adClick | adCompanions | adComplete | adSkipped | adError | adRequest | adSchedule | adStarted | adImpression | adPlay | adPause | adTime | cast | meta | audioTracks | audioTrackChanged | firstFrame | buffer | bufferChange | captionsChanged | captionsList | controls | error | fullscreen | idle | levelsChanged | mute | volume | pause | play | playlist | playlistItem | ready | resize | visualQuality | playbackRateChanged | levels | seek | setupError | time
   ): Unit = js.native
   def off(event: NoParamEvent): Unit = js.native
   def off(event: NoParamEvent, callback: js.Function0[Unit]): Unit = js.native
@@ -139,6 +141,8 @@ trait JWPlayer extends js.Object {
   def off_pause(event: pause, callback: EventCallback[PlayParam]): Unit = js.native
   @JSName("off")
   def off_play(event: play, callback: EventCallback[PlayParam]): Unit = js.native
+  @JSName("off")
+  def off_playbackRateChanged(event: playbackRateChanged, callback: EventCallback[PlaybackRateChangedParam]): Unit = js.native
   @JSName("off")
   def off_playlist(event: playlist, callback: EventCallback[PlaylistParam]): Unit = js.native
   @JSName("off")
@@ -219,6 +223,8 @@ trait JWPlayer extends js.Object {
   @JSName("on")
   def on_play(event: play, callback: EventCallback[PlayParam]): Unit = js.native
   @JSName("on")
+  def on_playbackRateChanged(event: playbackRateChanged, callback: EventCallback[PlaybackRateChangedParam]): Unit = js.native
+  @JSName("on")
   def on_playlist(event: playlist, callback: EventCallback[PlaylistParam]): Unit = js.native
   @JSName("on")
   def on_playlistItem(event: playlistItem, callback: EventCallback[PlaylistItemParam]): Unit = js.native
@@ -298,6 +304,8 @@ trait JWPlayer extends js.Object {
   @JSName("once")
   def once_play(event: play, callback: EventCallback[PlayParam]): Unit = js.native
   @JSName("once")
+  def once_playbackRateChanged(event: playbackRateChanged, callback: EventCallback[PlaybackRateChangedParam]): Unit = js.native
+  @JSName("once")
   def once_playlist(event: playlist, callback: EventCallback[PlaylistParam]): Unit = js.native
   @JSName("once")
   def once_playlistItem(event: playlistItem, callback: EventCallback[PlaylistItemParam]): Unit = js.native
@@ -335,6 +343,7 @@ trait JWPlayer extends js.Object {
   def setFullscreen(state: Boolean): Unit = js.native
   def setMute(): Unit = js.native
   def setMute(state: Boolean): Unit = js.native
+  def setPlaybackRate(rate: Double): Unit = js.native
   def setVolume(volume: Double): Unit = js.native
   def setup(options: js.Any): JWPlayer = js.native
   def stop(): Unit = js.native
@@ -399,6 +408,8 @@ trait JWPlayer extends js.Object {
   def trigger_pause(event: pause, args: PlayParam): Unit = js.native
   @JSName("trigger")
   def trigger_play(event: play, args: PlayParam): Unit = js.native
+  @JSName("trigger")
+  def trigger_playbackRateChanged(event: playbackRateChanged, args: PlaybackRateChangedParam): Unit = js.native
   @JSName("trigger")
   def trigger_playlist(event: playlist, args: PlaylistParam): Unit = js.native
   @JSName("trigger")

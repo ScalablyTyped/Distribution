@@ -38,7 +38,11 @@ trait Bounce extends js.Object {
     * @param bounceY If given this will be replace the `worldBounce.y` value.
     */
   def setCollideWorldBounds(): this.type = js.native
+  def setCollideWorldBounds(value: js.UndefOr[scala.Nothing], bounceX: js.UndefOr[scala.Nothing], bounceY: Double): this.type = js.native
+  def setCollideWorldBounds(value: js.UndefOr[scala.Nothing], bounceX: Double): this.type = js.native
+  def setCollideWorldBounds(value: js.UndefOr[scala.Nothing], bounceX: Double, bounceY: Double): this.type = js.native
   def setCollideWorldBounds(value: Boolean): this.type = js.native
+  def setCollideWorldBounds(value: Boolean, bounceX: js.UndefOr[scala.Nothing], bounceY: Double): this.type = js.native
   def setCollideWorldBounds(value: Boolean, bounceX: Double): this.type = js.native
   def setCollideWorldBounds(value: Boolean, bounceX: Double, bounceY: Double): this.type = js.native
 }

@@ -22,7 +22,7 @@ object mockXMLHttpRequestMod extends js.Object {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.std.EventTarget because Already inherited
   - typings.std.XMLHttpRequestEventTarget because Already inherited
-  - typings.std.XMLHttpRequest because var conflicts: onabort, onerror, onload, onloadend, onloadstart, onprogress, ontimeout. Inlined DONE, HEADERS_RECEIVED, LOADING, OPENED, UNSENT, onreadystatechange, readyState, response, responseText, responseType, responseURL, responseXML, status, statusText, timeout, upload, withCredentials, abort, addEventListener_readystatechange, addEventListener_readystatechange, addEventListener_readystatechange, getAllResponseHeaders, getResponseHeader, open, open, open, open, open, overrideMimeType, removeEventListener_readystatechange, removeEventListener_readystatechange, removeEventListener_readystatechange, send, send, send, setRequestHeader */ @js.native
+  - typings.std.XMLHttpRequest because var conflicts: onabort, onerror, onload, onloadend, onloadstart, onprogress, ontimeout. Inlined DONE, HEADERS_RECEIVED, LOADING, OPENED, UNSENT, onreadystatechange, readyState, response, responseText, responseType, responseURL, responseXML, status, statusText, timeout, upload, withCredentials, abort, addEventListener_readystatechange, addEventListener_readystatechange, addEventListener_readystatechange, getAllResponseHeaders, getResponseHeader, open, open, open, open, open, open, overrideMimeType, removeEventListener_readystatechange, removeEventListener_readystatechange, removeEventListener_readystatechange, send, send, send, setRequestHeader */ @js.native
   trait MockXMLHttpRequest extends MockXMLHttpRequestEventTarget {
     val DONE: Double | ReadyState = js.native
     val HEADERS_RECEIVED: Double | ReadyState = js.native
@@ -71,7 +71,6 @@ object mockXMLHttpRequestMod extends js.Object {
     /* private */ def applyNetworkError(): js.Any = js.native
     def getAllResponseHeaders(): String = js.native
     def getResponseHeader(name: String): Null | String = js.native
-    /* private */ def handleError(): js.Any = js.native
     /* private */ def handleError(error: js.Any): js.Any = js.native
     /* private */ def handleResponseBody(res: js.Any): js.Any = js.native
     def msCachingEnabled(): Boolean = js.native
@@ -86,7 +85,18 @@ object mockXMLHttpRequestMod extends js.Object {
       * Throws an "InvalidAccessError" DOMException if async is false, current global object is a Window object, and the timeout attribute is not zero or the responseType attribute is not the empty string.
       */
     def open(method: String, url: String): Unit = js.native
+    def open(
+      method: String,
+      url: String,
+      async: js.UndefOr[scala.Nothing],
+      username: js.UndefOr[scala.Nothing],
+      password: String
+    ): Unit = js.native
+    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], username: String): Unit = js.native
+    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], username: String, password: String): Unit = js.native
+    def open(method: String, url: String, async: js.UndefOr[scala.Nothing], username: Null, password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean): Unit = js.native
+    def open(method: String, url: String, async: Boolean, username: js.UndefOr[scala.Nothing], password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: String, password: String): Unit = js.native
     def open(method: String, url: String, async: Boolean, username: Null, password: String): Unit = js.native

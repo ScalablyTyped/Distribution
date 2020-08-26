@@ -1,9 +1,9 @@
 package typings.apolloServerExpress.mod
 
 import typings.graphql.mod.GraphQLSchema
-import typings.graphqlTools.interfacesMod.IMockServer
-import typings.graphqlTools.interfacesMod.IMocks
-import typings.graphqlTools.interfacesMod.ITypeDefinitions
+import typings.graphqlToolsMock.typesMod.IMockServer
+import typings.graphqlToolsMock.typesMod.IMocks
+import typings.graphqlToolsUtils.interfacesMod.ITypeDefinitions
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._

@@ -11,8 +11,8 @@ Thrift is a software framework for scalable cross-language services development.
 | Full name          | thrift |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 150 |
-| # downloads        | 2647335 |
+| # dependents       | 152 |
+| # downloads        | 2673638 |
 | # stars            | 24 |
 
 ## Links

@@ -15,24 +15,24 @@ import scala.scalajs.js.annotation._
   */
 /* Inlined loglevel.loglevel.LogLevelNumbers | 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'silent' | keyof loglevel.loglevel.LogLevel */
 /* Rewritten from type alias, can be one of: 
-  - typings.loglevel.loglevelNumbers.`4`
   - typings.loglevel.loglevelNumbers.`3`
+  - typings.loglevel.loglevelNumbers.`2`
+  - typings.loglevel.loglevelNumbers.`4`
   - typings.loglevel.loglevelNumbers.`0`
   - typings.loglevel.loglevelNumbers.`5`
   - typings.loglevel.loglevelNumbers.`1`
-  - typings.loglevel.loglevelNumbers.`2`
   - typings.loglevel.loglevelStrings.DEBUG
-  - typings.loglevel.loglevelStrings.error_
-  - typings.loglevel.loglevelStrings.INFO
-  - typings.loglevel.loglevelStrings.TRACE
   - typings.loglevel.loglevelStrings.info_
+  - typings.loglevel.loglevelStrings.INFO
   - typings.loglevel.loglevelStrings.warn_
-  - typings.loglevel.loglevelStrings.trace_
+  - typings.loglevel.loglevelStrings.TRACE
+  - typings.loglevel.loglevelStrings.SILENT
+  - typings.loglevel.loglevelStrings.silent_
+  - typings.loglevel.loglevelStrings.WARN
   - typings.loglevel.loglevelStrings.debug_
   - typings.loglevel.loglevelStrings.ERROR
-  - typings.loglevel.loglevelStrings.SILENT
-  - typings.loglevel.loglevelStrings.WARN
-  - typings.loglevel.loglevelStrings.silent_
+  - typings.loglevel.loglevelStrings.error_
+  - typings.loglevel.loglevelStrings.trace_
 */
 trait LogLevelDesc extends js.Object
 

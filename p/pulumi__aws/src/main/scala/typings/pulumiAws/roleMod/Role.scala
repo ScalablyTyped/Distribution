@@ -64,9 +64,9 @@ class Role protected () extends CustomResource {
     */
   val permissionsBoundary: Output_[js.UndefOr[String]] = js.native
   /**
-    * Key-value mapping of tags for the IAM role
+    * Key-value map of tags for the IAM role
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The stable and unique string identifying the role.
     */
@@ -84,8 +84,10 @@ object Role extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Role = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Role = js.native
   def get(name: String, id: Input[ID], state: RoleState): Role = js.native
   def get(name: String, id: Input[ID], state: RoleState, opts: CustomResourceOptions): Role = js.native
   /**

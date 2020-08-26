@@ -4,44 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CatAllocationParams extends CatCommonParams {
-  var bytes: js.UndefOr[CatBytes] = js.undefined
-  var nodeId: js.UndefOr[NameList] = js.undefined
+  var bytes: js.UndefOr[CatBytes] = js.native
+  var nodeId: js.UndefOr[NameList] = js.native
 }
 
 object CatAllocationParams {
   @scala.inline
-  def apply(
-    format: String,
-    body: js.Any = null,
-    bytes: CatBytes = null,
-    filterPath: String | js.Array[String] = null,
-    h: NameList = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    nodeId: NameList = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    v: js.UndefOr[Boolean] = js.undefined
-  ): CatAllocationParams = {
+  def apply(format: String): CatAllocationParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (bytes != null) __obj.updateDynamic("bytes")(bytes.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.get.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatAllocationParams]
   }
+  @scala.inline
+  implicit class CatAllocationParamsOps[Self <: CatAllocationParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytes(value: CatBytes): Self = this.set("bytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytes: Self = this.set("bytes", js.undefined)
+    @scala.inline
+    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    @scala.inline
+    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeId: Self = this.set("nodeId", js.undefined)
+  }
+  
 }
 

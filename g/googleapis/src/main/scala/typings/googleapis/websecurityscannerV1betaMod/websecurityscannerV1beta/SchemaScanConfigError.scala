@@ -27,11 +27,30 @@ trait SchemaScanConfigError extends js.Object {
 
 object SchemaScanConfigError {
   @scala.inline
-  def apply(code: String = null, fieldName: String = null): SchemaScanConfigError = {
+  def apply(): SchemaScanConfigError = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScanConfigError]
   }
+  @scala.inline
+  implicit class SchemaScanConfigErrorOps[Self <: SchemaScanConfigError] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setFieldName(value: String): Self = this.set("fieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("fieldName", js.undefined)
+  }
+  
 }
 

@@ -42,26 +42,54 @@ trait CreateAccountStatus extends js.Object {
 
 object CreateAccountStatus {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    AccountName: AccountName = null,
-    CompletedTimestamp: Timestamp = null,
-    FailureReason: CreateAccountFailureReason = null,
-    GovCloudAccountId: AccountId = null,
-    Id: CreateAccountRequestId = null,
-    RequestedTimestamp: Timestamp = null,
-    State: CreateAccountState = null
-  ): CreateAccountStatus = {
+  def apply(): CreateAccountStatus = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (AccountName != null) __obj.updateDynamic("AccountName")(AccountName.asInstanceOf[js.Any])
-    if (CompletedTimestamp != null) __obj.updateDynamic("CompletedTimestamp")(CompletedTimestamp.asInstanceOf[js.Any])
-    if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason.asInstanceOf[js.Any])
-    if (GovCloudAccountId != null) __obj.updateDynamic("GovCloudAccountId")(GovCloudAccountId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (RequestedTimestamp != null) __obj.updateDynamic("RequestedTimestamp")(RequestedTimestamp.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountStatus]
   }
+  @scala.inline
+  implicit class CreateAccountStatusOps[Self <: CreateAccountStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setAccountName(value: AccountName): Self = this.set("AccountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountName: Self = this.set("AccountName", js.undefined)
+    @scala.inline
+    def setCompletedTimestamp(value: Timestamp): Self = this.set("CompletedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedTimestamp: Self = this.set("CompletedTimestamp", js.undefined)
+    @scala.inline
+    def setFailureReason(value: CreateAccountFailureReason): Self = this.set("FailureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("FailureReason", js.undefined)
+    @scala.inline
+    def setGovCloudAccountId(value: AccountId): Self = this.set("GovCloudAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGovCloudAccountId: Self = this.set("GovCloudAccountId", js.undefined)
+    @scala.inline
+    def setId(value: CreateAccountRequestId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setRequestedTimestamp(value: Timestamp): Self = this.set("RequestedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestedTimestamp: Self = this.set("RequestedTimestamp", js.undefined)
+    @scala.inline
+    def setState(value: CreateAccountState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

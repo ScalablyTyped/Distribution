@@ -18,14 +18,30 @@ trait EmbeddedDestinationSettings extends js.Object {
 
 object EmbeddedDestinationSettings {
   @scala.inline
-  def apply(
-    Destination608ChannelNumber: js.UndefOr[integerMin1Max4] = js.undefined,
-    Destination708ServiceNumber: js.UndefOr[integerMin1Max6] = js.undefined
-  ): EmbeddedDestinationSettings = {
+  def apply(): EmbeddedDestinationSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Destination608ChannelNumber)) __obj.updateDynamic("Destination608ChannelNumber")(Destination608ChannelNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Destination708ServiceNumber)) __obj.updateDynamic("Destination708ServiceNumber")(Destination708ServiceNumber.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedDestinationSettings]
   }
+  @scala.inline
+  implicit class EmbeddedDestinationSettingsOps[Self <: EmbeddedDestinationSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination608ChannelNumber(value: integerMin1Max4): Self = this.set("Destination608ChannelNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination608ChannelNumber: Self = this.set("Destination608ChannelNumber", js.undefined)
+    @scala.inline
+    def setDestination708ServiceNumber(value: integerMin1Max6): Self = this.set("Destination708ServiceNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination708ServiceNumber: Self = this.set("Destination708ServiceNumber", js.undefined)
+  }
+  
 }
 

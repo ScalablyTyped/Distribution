@@ -66,9 +66,9 @@ trait WindowsFileSystemState extends js.Object {
     */
   val subnetIds: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the file system.
+    * A map of tags to assign to the file system.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Throughput (megabytes per second) of the file system in power of 2 increments. Minimum of `8` and maximum of `2048`.
     */
@@ -85,46 +85,98 @@ trait WindowsFileSystemState extends js.Object {
 
 object WindowsFileSystemState {
   @scala.inline
-  def apply(
-    activeDirectoryId: Input[String] = null,
-    arn: Input[String] = null,
-    automaticBackupRetentionDays: Input[Double] = null,
-    copyTagsToBackups: Input[Boolean] = null,
-    dailyAutomaticBackupStartTime: Input[String] = null,
-    dnsName: Input[String] = null,
-    kmsKeyId: Input[String] = null,
-    networkInterfaceIds: Input[js.Array[Input[String]]] = null,
-    ownerId: Input[String] = null,
-    securityGroupIds: Input[js.Array[Input[String]]] = null,
-    selfManagedActiveDirectory: Input[WindowsFileSystemSelfManagedActiveDirectory] = null,
-    skipFinalBackup: Input[Boolean] = null,
-    storageCapacity: Input[Double] = null,
-    subnetIds: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    throughputCapacity: Input[Double] = null,
-    vpcId: Input[String] = null,
-    weeklyMaintenanceStartTime: Input[String] = null
-  ): WindowsFileSystemState = {
+  def apply(): WindowsFileSystemState = {
     val __obj = js.Dynamic.literal()
-    if (activeDirectoryId != null) __obj.updateDynamic("activeDirectoryId")(activeDirectoryId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (automaticBackupRetentionDays != null) __obj.updateDynamic("automaticBackupRetentionDays")(automaticBackupRetentionDays.asInstanceOf[js.Any])
-    if (copyTagsToBackups != null) __obj.updateDynamic("copyTagsToBackups")(copyTagsToBackups.asInstanceOf[js.Any])
-    if (dailyAutomaticBackupStartTime != null) __obj.updateDynamic("dailyAutomaticBackupStartTime")(dailyAutomaticBackupStartTime.asInstanceOf[js.Any])
-    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (networkInterfaceIds != null) __obj.updateDynamic("networkInterfaceIds")(networkInterfaceIds.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (selfManagedActiveDirectory != null) __obj.updateDynamic("selfManagedActiveDirectory")(selfManagedActiveDirectory.asInstanceOf[js.Any])
-    if (skipFinalBackup != null) __obj.updateDynamic("skipFinalBackup")(skipFinalBackup.asInstanceOf[js.Any])
-    if (storageCapacity != null) __obj.updateDynamic("storageCapacity")(storageCapacity.asInstanceOf[js.Any])
-    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (throughputCapacity != null) __obj.updateDynamic("throughputCapacity")(throughputCapacity.asInstanceOf[js.Any])
-    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
-    if (weeklyMaintenanceStartTime != null) __obj.updateDynamic("weeklyMaintenanceStartTime")(weeklyMaintenanceStartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsFileSystemState]
   }
+  @scala.inline
+  implicit class WindowsFileSystemStateOps[Self <: WindowsFileSystemState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveDirectoryId(value: Input[String]): Self = this.set("activeDirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDirectoryId: Self = this.set("activeDirectoryId", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAutomaticBackupRetentionDays(value: Input[Double]): Self = this.set("automaticBackupRetentionDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticBackupRetentionDays: Self = this.set("automaticBackupRetentionDays", js.undefined)
+    @scala.inline
+    def setCopyTagsToBackups(value: Input[Boolean]): Self = this.set("copyTagsToBackups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToBackups: Self = this.set("copyTagsToBackups", js.undefined)
+    @scala.inline
+    def setDailyAutomaticBackupStartTime(value: Input[String]): Self = this.set("dailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDailyAutomaticBackupStartTime: Self = this.set("dailyAutomaticBackupStartTime", js.undefined)
+    @scala.inline
+    def setDnsName(value: Input[String]): Self = this.set("dnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsName: Self = this.set("dnsName", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceIdsVarargs(value: Input[String]*): Self = this.set("networkInterfaceIds", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaceIds(value: Input[js.Array[Input[String]]]): Self = this.set("networkInterfaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceIds: Self = this.set("networkInterfaceIds", js.undefined)
+    @scala.inline
+    def setOwnerId(value: Input[String]): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSelfManagedActiveDirectory(value: Input[WindowsFileSystemSelfManagedActiveDirectory]): Self = this.set("selfManagedActiveDirectory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfManagedActiveDirectory: Self = this.set("selfManagedActiveDirectory", js.undefined)
+    @scala.inline
+    def setSkipFinalBackup(value: Input[Boolean]): Self = this.set("skipFinalBackup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalBackup: Self = this.set("skipFinalBackup", js.undefined)
+    @scala.inline
+    def setStorageCapacity(value: Input[Double]): Self = this.set("storageCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageCapacity: Self = this.set("storageCapacity", js.undefined)
+    @scala.inline
+    def setSubnetIds(value: Input[String]): Self = this.set("subnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("subnetIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setThroughputCapacity(value: Input[Double]): Self = this.set("throughputCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThroughputCapacity: Self = this.set("throughputCapacity", js.undefined)
+    @scala.inline
+    def setVpcId(value: Input[String]): Self = this.set("vpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("vpcId", js.undefined)
+    @scala.inline
+    def setWeeklyMaintenanceStartTime(value: Input[String]): Self = this.set("weeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeeklyMaintenanceStartTime: Self = this.set("weeklyMaintenanceStartTime", js.undefined)
+  }
+  
 }
 

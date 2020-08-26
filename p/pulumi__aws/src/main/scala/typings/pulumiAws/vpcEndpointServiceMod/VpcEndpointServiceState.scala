@@ -17,6 +17,10 @@ trait VpcEndpointServiceState extends js.Object {
     */
   val allowedPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the VPC endpoint service.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
+  /**
     * The Availability Zones in which the service is available.
     */
   val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
@@ -49,39 +53,85 @@ trait VpcEndpointServiceState extends js.Object {
     */
   val state: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object VpcEndpointServiceState {
   @scala.inline
-  def apply(
-    acceptanceRequired: Input[Boolean] = null,
-    allowedPrincipals: Input[js.Array[Input[String]]] = null,
-    availabilityZones: Input[js.Array[Input[String]]] = null,
-    baseEndpointDnsNames: Input[js.Array[Input[String]]] = null,
-    managesVpcEndpoints: Input[Boolean] = null,
-    networkLoadBalancerArns: Input[js.Array[Input[String]]] = null,
-    privateDnsName: Input[String] = null,
-    serviceName: Input[String] = null,
-    serviceType: Input[String] = null,
-    state: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): VpcEndpointServiceState = {
+  def apply(): VpcEndpointServiceState = {
     val __obj = js.Dynamic.literal()
-    if (acceptanceRequired != null) __obj.updateDynamic("acceptanceRequired")(acceptanceRequired.asInstanceOf[js.Any])
-    if (allowedPrincipals != null) __obj.updateDynamic("allowedPrincipals")(allowedPrincipals.asInstanceOf[js.Any])
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
-    if (baseEndpointDnsNames != null) __obj.updateDynamic("baseEndpointDnsNames")(baseEndpointDnsNames.asInstanceOf[js.Any])
-    if (managesVpcEndpoints != null) __obj.updateDynamic("managesVpcEndpoints")(managesVpcEndpoints.asInstanceOf[js.Any])
-    if (networkLoadBalancerArns != null) __obj.updateDynamic("networkLoadBalancerArns")(networkLoadBalancerArns.asInstanceOf[js.Any])
-    if (privateDnsName != null) __obj.updateDynamic("privateDnsName")(privateDnsName.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpointServiceState]
   }
+  @scala.inline
+  implicit class VpcEndpointServiceStateOps[Self <: VpcEndpointServiceState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptanceRequired(value: Input[Boolean]): Self = this.set("acceptanceRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptanceRequired: Self = this.set("acceptanceRequired", js.undefined)
+    @scala.inline
+    def setAllowedPrincipalsVarargs(value: Input[String]*): Self = this.set("allowedPrincipals", js.Array(value :_*))
+    @scala.inline
+    def setAllowedPrincipals(value: Input[js.Array[Input[String]]]): Self = this.set("allowedPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedPrincipals: Self = this.set("allowedPrincipals", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: Input[String]*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("availabilityZones", js.undefined)
+    @scala.inline
+    def setBaseEndpointDnsNamesVarargs(value: Input[String]*): Self = this.set("baseEndpointDnsNames", js.Array(value :_*))
+    @scala.inline
+    def setBaseEndpointDnsNames(value: Input[js.Array[Input[String]]]): Self = this.set("baseEndpointDnsNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseEndpointDnsNames: Self = this.set("baseEndpointDnsNames", js.undefined)
+    @scala.inline
+    def setManagesVpcEndpoints(value: Input[Boolean]): Self = this.set("managesVpcEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagesVpcEndpoints: Self = this.set("managesVpcEndpoints", js.undefined)
+    @scala.inline
+    def setNetworkLoadBalancerArnsVarargs(value: Input[String]*): Self = this.set("networkLoadBalancerArns", js.Array(value :_*))
+    @scala.inline
+    def setNetworkLoadBalancerArns(value: Input[js.Array[Input[String]]]): Self = this.set("networkLoadBalancerArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkLoadBalancerArns: Self = this.set("networkLoadBalancerArns", js.undefined)
+    @scala.inline
+    def setPrivateDnsName(value: Input[String]): Self = this.set("privateDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsName: Self = this.set("privateDnsName", js.undefined)
+    @scala.inline
+    def setServiceName(value: Input[String]): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("serviceName", js.undefined)
+    @scala.inline
+    def setServiceType(value: Input[String]): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

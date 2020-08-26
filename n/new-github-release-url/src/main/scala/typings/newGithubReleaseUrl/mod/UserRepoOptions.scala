@@ -4,35 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserRepoOptions extends BaseOptions {
   /**
   		GitHub repo.
   		*/
-  val repo: String
+  val repo: String = js.native
   /**
   		GitHub username or organization.
   		*/
-  val user: String
+  val user: String = js.native
 }
 
 object UserRepoOptions {
   @scala.inline
-  def apply(
-    repo: String,
-    user: String,
-    body: String = null,
-    isPrerelease: js.UndefOr[Boolean] = js.undefined,
-    tag: String = null,
-    target: String = null,
-    title: String = null
-  ): UserRepoOptions = {
+  def apply(repo: String, user: String): UserRepoOptions = {
     val __obj = js.Dynamic.literal(repo = repo.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrerelease)) __obj.updateDynamic("isPrerelease")(isPrerelease.get.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRepoOptions]
   }
+  @scala.inline
+  implicit class UserRepoOptionsOps[Self <: UserRepoOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepo(value: String): Self = this.set("repo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+  }
+  
 }
 

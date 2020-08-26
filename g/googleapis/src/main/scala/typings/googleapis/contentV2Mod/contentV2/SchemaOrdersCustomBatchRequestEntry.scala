@@ -81,44 +81,90 @@ trait SchemaOrdersCustomBatchRequestEntry extends js.Object {
 
 object SchemaOrdersCustomBatchRequestEntry {
   @scala.inline
-  def apply(
-    batchId: js.UndefOr[Double] = js.undefined,
-    cancel: SchemaOrdersCustomBatchRequestEntryCancel = null,
-    cancelLineItem: SchemaOrdersCustomBatchRequestEntryCancelLineItem = null,
-    inStoreRefundLineItem: SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem = null,
-    merchantId: String = null,
-    merchantOrderId: String = null,
-    method: String = null,
-    operationId: String = null,
-    orderId: String = null,
-    refund: SchemaOrdersCustomBatchRequestEntryRefund = null,
-    rejectReturnLineItem: SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem = null,
-    returnLineItem: SchemaOrdersCustomBatchRequestEntryReturnLineItem = null,
-    returnRefundLineItem: SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem = null,
-    setLineItemMetadata: SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata = null,
-    shipLineItems: SchemaOrdersCustomBatchRequestEntryShipLineItems = null,
-    updateLineItemShippingDetails: SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails = null,
-    updateShipment: SchemaOrdersCustomBatchRequestEntryUpdateShipment = null
-  ): SchemaOrdersCustomBatchRequestEntry = {
+  def apply(): SchemaOrdersCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(batchId)) __obj.updateDynamic("batchId")(batchId.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (cancelLineItem != null) __obj.updateDynamic("cancelLineItem")(cancelLineItem.asInstanceOf[js.Any])
-    if (inStoreRefundLineItem != null) __obj.updateDynamic("inStoreRefundLineItem")(inStoreRefundLineItem.asInstanceOf[js.Any])
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
-    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (orderId != null) __obj.updateDynamic("orderId")(orderId.asInstanceOf[js.Any])
-    if (refund != null) __obj.updateDynamic("refund")(refund.asInstanceOf[js.Any])
-    if (rejectReturnLineItem != null) __obj.updateDynamic("rejectReturnLineItem")(rejectReturnLineItem.asInstanceOf[js.Any])
-    if (returnLineItem != null) __obj.updateDynamic("returnLineItem")(returnLineItem.asInstanceOf[js.Any])
-    if (returnRefundLineItem != null) __obj.updateDynamic("returnRefundLineItem")(returnRefundLineItem.asInstanceOf[js.Any])
-    if (setLineItemMetadata != null) __obj.updateDynamic("setLineItemMetadata")(setLineItemMetadata.asInstanceOf[js.Any])
-    if (shipLineItems != null) __obj.updateDynamic("shipLineItems")(shipLineItems.asInstanceOf[js.Any])
-    if (updateLineItemShippingDetails != null) __obj.updateDynamic("updateLineItemShippingDetails")(updateLineItemShippingDetails.asInstanceOf[js.Any])
-    if (updateShipment != null) __obj.updateDynamic("updateShipment")(updateShipment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrdersCustomBatchRequestEntry]
   }
+  @scala.inline
+  implicit class SchemaOrdersCustomBatchRequestEntryOps[Self <: SchemaOrdersCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchId(value: Double): Self = this.set("batchId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchId: Self = this.set("batchId", js.undefined)
+    @scala.inline
+    def setCancel(value: SchemaOrdersCustomBatchRequestEntryCancel): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCancelLineItem(value: SchemaOrdersCustomBatchRequestEntryCancelLineItem): Self = this.set("cancelLineItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelLineItem: Self = this.set("cancelLineItem", js.undefined)
+    @scala.inline
+    def setInStoreRefundLineItem(value: SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem): Self = this.set("inStoreRefundLineItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInStoreRefundLineItem: Self = this.set("inStoreRefundLineItem", js.undefined)
+    @scala.inline
+    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    @scala.inline
+    def setMerchantOrderId(value: String): Self = this.set("merchantOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantOrderId: Self = this.set("merchantOrderId", js.undefined)
+    @scala.inline
+    def setMethod(value: String): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setOrderId(value: String): Self = this.set("orderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderId: Self = this.set("orderId", js.undefined)
+    @scala.inline
+    def setRefund(value: SchemaOrdersCustomBatchRequestEntryRefund): Self = this.set("refund", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefund: Self = this.set("refund", js.undefined)
+    @scala.inline
+    def setRejectReturnLineItem(value: SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem): Self = this.set("rejectReturnLineItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectReturnLineItem: Self = this.set("rejectReturnLineItem", js.undefined)
+    @scala.inline
+    def setReturnLineItem(value: SchemaOrdersCustomBatchRequestEntryReturnLineItem): Self = this.set("returnLineItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnLineItem: Self = this.set("returnLineItem", js.undefined)
+    @scala.inline
+    def setReturnRefundLineItem(value: SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem): Self = this.set("returnRefundLineItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnRefundLineItem: Self = this.set("returnRefundLineItem", js.undefined)
+    @scala.inline
+    def setSetLineItemMetadata(value: SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata): Self = this.set("setLineItemMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetLineItemMetadata: Self = this.set("setLineItemMetadata", js.undefined)
+    @scala.inline
+    def setShipLineItems(value: SchemaOrdersCustomBatchRequestEntryShipLineItems): Self = this.set("shipLineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipLineItems: Self = this.set("shipLineItems", js.undefined)
+    @scala.inline
+    def setUpdateLineItemShippingDetails(value: SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails): Self = this.set("updateLineItemShippingDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateLineItemShippingDetails: Self = this.set("updateLineItemShippingDetails", js.undefined)
+    @scala.inline
+    def setUpdateShipment(value: SchemaOrdersCustomBatchRequestEntryUpdateShipment): Self = this.set("updateShipment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateShipment: Self = this.set("updateShipment", js.undefined)
+  }
+  
 }
 

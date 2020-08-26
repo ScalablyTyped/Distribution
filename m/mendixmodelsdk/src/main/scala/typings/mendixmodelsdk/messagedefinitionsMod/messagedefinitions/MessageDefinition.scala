@@ -38,19 +38,11 @@ abstract class MessageDefinition protected ()
   var model_FMessageDefinition: IModel = js.native
   @JSName("name")
   val name_FMessageDefinition: String = js.native
-  /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
   def containerAsMessageDefinitionCollection: MessageDefinitionCollection = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MMessageDefinition: String | Null = js.native
 }

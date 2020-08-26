@@ -5,39 +5,68 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<facebook-js-sdk.facebook.InitParams> */
+@js.native
 trait PartialInitParams extends js.Object {
-  var appId: js.UndefOr[String] = js.undefined
-  var autoLogAppEvents: js.UndefOr[Boolean] = js.undefined
-  var cookie: js.UndefOr[Boolean] = js.undefined
-  var frictionlessRequests: js.UndefOr[Boolean] = js.undefined
-  var hideFlashCallback: js.UndefOr[Boolean] = js.undefined
-  var status: js.UndefOr[Boolean] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
-  var xfbml: js.UndefOr[Boolean] = js.undefined
+  var appId: js.UndefOr[String] = js.native
+  var autoLogAppEvents: js.UndefOr[Boolean] = js.native
+  var cookie: js.UndefOr[Boolean] = js.native
+  var frictionlessRequests: js.UndefOr[Boolean] = js.native
+  var hideFlashCallback: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[String] = js.native
+  var xfbml: js.UndefOr[Boolean] = js.native
 }
 
 object PartialInitParams {
   @scala.inline
-  def apply(
-    appId: String = null,
-    autoLogAppEvents: js.UndefOr[Boolean] = js.undefined,
-    cookie: js.UndefOr[Boolean] = js.undefined,
-    frictionlessRequests: js.UndefOr[Boolean] = js.undefined,
-    hideFlashCallback: js.UndefOr[Boolean] = js.undefined,
-    status: js.UndefOr[Boolean] = js.undefined,
-    version: String = null,
-    xfbml: js.UndefOr[Boolean] = js.undefined
-  ): PartialInitParams = {
+  def apply(): PartialInitParams = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLogAppEvents)) __obj.updateDynamic("autoLogAppEvents")(autoLogAppEvents.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(frictionlessRequests)) __obj.updateDynamic("frictionlessRequests")(frictionlessRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFlashCallback)) __obj.updateDynamic("hideFlashCallback")(hideFlashCallback.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialInitParams]
   }
+  @scala.inline
+  implicit class PartialInitParamsOps[Self <: PartialInitParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setAutoLogAppEvents(value: Boolean): Self = this.set("autoLogAppEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoLogAppEvents: Self = this.set("autoLogAppEvents", js.undefined)
+    @scala.inline
+    def setCookie(value: Boolean): Self = this.set("cookie", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookie: Self = this.set("cookie", js.undefined)
+    @scala.inline
+    def setFrictionlessRequests(value: Boolean): Self = this.set("frictionlessRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrictionlessRequests: Self = this.set("frictionlessRequests", js.undefined)
+    @scala.inline
+    def setHideFlashCallback(value: Boolean): Self = this.set("hideFlashCallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideFlashCallback: Self = this.set("hideFlashCallback", js.undefined)
+    @scala.inline
+    def setStatus(value: Boolean): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setXfbml(value: Boolean): Self = this.set("xfbml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXfbml: Self = this.set("xfbml", js.undefined)
+  }
+  
 }
 

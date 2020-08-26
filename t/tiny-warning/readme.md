@@ -11,8 +11,8 @@ A tiny warning function
 | Full name          | tiny-warning |
 | Keywords           | warning, warn |
 | # releases         | 9 |
-| # dependents       | 114 |
-| # downloads        | 66753606 |
+| # dependents       | 120 |
+| # downloads        | 73144267 |
 | # stars            | 1 |
 
 ## Links

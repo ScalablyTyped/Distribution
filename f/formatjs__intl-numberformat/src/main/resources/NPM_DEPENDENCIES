@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@formatjs/intl-numberformat" : "5.3.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@formatjs/intl-numberformat" : "5.3.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

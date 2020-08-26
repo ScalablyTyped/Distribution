@@ -12,7 +12,7 @@ base element for react-icons
 | Keywords           | react, icon, base |
 | # releases         | 1 |
 | # dependents       | 28 |
-| # downloads        | 13634136 |
+| # downloads        | 13338487 |
 | # stars            | 3 |
 
 ## Links

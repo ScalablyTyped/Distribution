@@ -10,7 +10,38 @@ import scala.scalajs.js.annotation._
 @js.native
 object batchNormalization extends js.Object {
   def apply(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank]): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    mean: Tensor[Rank],
+    variance: Tensor[Rank],
+    beta: js.UndefOr[scala.Nothing],
+    gamma: js.UndefOr[scala.Nothing],
+    epsilon: Double
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    mean: Tensor[Rank],
+    variance: Tensor[Rank],
+    beta: js.UndefOr[scala.Nothing],
+    gamma: Tensor[Rank]
+  ): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    mean: Tensor[Rank],
+    variance: Tensor[Rank],
+    beta: js.UndefOr[scala.Nothing],
+    gamma: Tensor[Rank],
+    epsilon: Double
+  ): Tensor[Rank] = js.native
   def apply(x: Tensor[Rank], mean: Tensor[Rank], variance: Tensor[Rank], beta: Tensor[Rank]): Tensor[Rank] = js.native
+  def apply(
+    x: Tensor[Rank],
+    mean: Tensor[Rank],
+    variance: Tensor[Rank],
+    beta: Tensor[Rank],
+    gamma: js.UndefOr[scala.Nothing],
+    epsilon: Double
+  ): Tensor[Rank] = js.native
   def apply(
     x: Tensor[Rank],
     mean: Tensor[Rank],

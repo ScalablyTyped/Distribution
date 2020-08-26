@@ -38,23 +38,52 @@ trait TableMetadata extends js.Object {
 
 object TableMetadata {
   @scala.inline
-  def apply(
-    Name: NameString,
-    Columns: ColumnList = null,
-    CreateTime: Timestamp = null,
-    LastAccessTime: Timestamp = null,
-    Parameters: ParametersMap = null,
-    PartitionKeys: ColumnList = null,
-    TableType: TableTypeString = null
-  ): TableMetadata = {
+  def apply(Name: NameString): TableMetadata = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (Columns != null) __obj.updateDynamic("Columns")(Columns.asInstanceOf[js.Any])
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (LastAccessTime != null) __obj.updateDynamic("LastAccessTime")(LastAccessTime.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (PartitionKeys != null) __obj.updateDynamic("PartitionKeys")(PartitionKeys.asInstanceOf[js.Any])
-    if (TableType != null) __obj.updateDynamic("TableType")(TableType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableMetadata]
   }
+  @scala.inline
+  implicit class TableMetadataOps[Self <: TableMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnsVarargs(value: Column*): Self = this.set("Columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: ColumnList): Self = this.set("Columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("Columns", js.undefined)
+    @scala.inline
+    def setCreateTime(value: Timestamp): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setLastAccessTime(value: Timestamp): Self = this.set("LastAccessTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessTime: Self = this.set("LastAccessTime", js.undefined)
+    @scala.inline
+    def setParameters(value: ParametersMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setPartitionKeysVarargs(value: Column*): Self = this.set("PartitionKeys", js.Array(value :_*))
+    @scala.inline
+    def setPartitionKeys(value: ColumnList): Self = this.set("PartitionKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartitionKeys: Self = this.set("PartitionKeys", js.undefined)
+    @scala.inline
+    def setTableType(value: TableTypeString): Self = this.set("TableType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableType: Self = this.set("TableType", js.undefined)
+  }
+  
 }
 

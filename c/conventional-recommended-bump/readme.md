@@ -10,9 +10,9 @@ Get a recommended version bump based on conventional commits
 | ------------------ | :-------------: |
 | Full name          | conventional-recommended-bump |
 | Keywords           | conventional-recommended-bump, recommend, conventional, bump |
-| # releases         | 25 |
-| # dependents       | 80 |
-| # downloads        | 28470699 |
+| # releases         | 24 |
+| # dependents       | 81 |
+| # downloads        | 30147759 |
 | # stars            | 1 |
 
 ## Links

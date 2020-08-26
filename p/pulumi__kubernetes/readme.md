@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__kubernetes
 
-Typings are for version 1.6.0
+Typings are for version 2.4.1
 
 ## Library description:
 A Pulumi package for creating and managing Kubernetes resources.
@@ -10,9 +10,9 @@ A Pulumi package for creating and managing Kubernetes resources.
 | ------------------ | :-------------: |
 | Full name          | @pulumi/kubernetes |
 | Keywords           | pulumi, kubernetes |
-| # releases         | 420 |
+| # releases         | 431 |
 | # dependents       | 13 |
-| # downloads        | 125101 |
+| # downloads        | 139126 |
 | # stars            | 0 |
 
 ## Links

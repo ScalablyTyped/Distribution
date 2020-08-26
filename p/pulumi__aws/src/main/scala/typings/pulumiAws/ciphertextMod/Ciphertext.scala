@@ -51,8 +51,10 @@ object Ciphertext extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Ciphertext = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Ciphertext = js.native
   def get(name: String, id: Input[ID], state: CiphertextState): Ciphertext = js.native
   def get(name: String, id: Input[ID], state: CiphertextState, opts: CustomResourceOptions): Ciphertext = js.native
   /**

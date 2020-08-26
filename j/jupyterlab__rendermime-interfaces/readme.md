@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__rendermime-interfaces
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 JupyterLab - Interfaces for Mime Renderers
@@ -12,7 +12,7 @@ JupyterLab - Interfaces for Mime Renderers
 | Keywords           | - |
 | # releases         | 56 |
 | # dependents       | 62 |
-| # downloads        | 989034 |
+| # downloads        | 999083 |
 | # stars            | 0 |
 
 ## Links

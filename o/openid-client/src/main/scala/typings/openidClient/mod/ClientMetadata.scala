@@ -5,97 +5,165 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientMetadata
   extends /* key */ StringDictionary[js.Any] {
-  var authorization_encrypted_response_alg: js.UndefOr[String] = js.undefined
-  var authorization_encrypted_response_enc: js.UndefOr[String] = js.undefined
-  var authorization_signed_response_alg: js.UndefOr[String] = js.undefined
+  var authorization_encrypted_response_alg: js.UndefOr[String] = js.native
+  var authorization_encrypted_response_enc: js.UndefOr[String] = js.native
+  var authorization_signed_response_alg: js.UndefOr[String] = js.native
   // important
-  var client_id: String
-  var client_secret: js.UndefOr[String] = js.undefined
-  var default_max_age: js.UndefOr[Double] = js.undefined
+  var client_id: String = js.native
+  var client_secret: js.UndefOr[String] = js.native
+  var default_max_age: js.UndefOr[Double] = js.native
   // less important
-  var id_token_encrypted_response_alg: js.UndefOr[String] = js.undefined
-  var id_token_encrypted_response_enc: js.UndefOr[String] = js.undefined
-  var id_token_signed_response_alg: js.UndefOr[String] = js.undefined
-  var introspection_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.undefined
-  var introspection_endpoint_auth_signing_alg: js.UndefOr[String] = js.undefined
-  var post_logout_redirect_uris: js.UndefOr[js.Array[String]] = js.undefined
-  var redirect_uris: js.UndefOr[js.Array[String]] = js.undefined
-  var request_object_encryption_alg: js.UndefOr[String] = js.undefined
-  var request_object_encryption_enc: js.UndefOr[String] = js.undefined
-  var request_object_signing_alg: js.UndefOr[String] = js.undefined
-  var require_auth_time: js.UndefOr[Boolean] = js.undefined
-  var response_types: js.UndefOr[js.Array[ResponseType]] = js.undefined
-  var revocation_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.undefined
-  var revocation_endpoint_auth_signing_alg: js.UndefOr[String] = js.undefined
-  var tls_client_certificate_bound_access_tokens: js.UndefOr[Boolean] = js.undefined
-  var token_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.undefined
-  var token_endpoint_auth_signing_alg: js.UndefOr[String] = js.undefined
-  var userinfo_encrypted_response_alg: js.UndefOr[String] = js.undefined
-  var userinfo_encrypted_response_enc: js.UndefOr[String] = js.undefined
-  var userinfo_signed_response_alg: js.UndefOr[String] = js.undefined
+  var id_token_encrypted_response_alg: js.UndefOr[String] = js.native
+  var id_token_encrypted_response_enc: js.UndefOr[String] = js.native
+  var id_token_signed_response_alg: js.UndefOr[String] = js.native
+  var introspection_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.native
+  var introspection_endpoint_auth_signing_alg: js.UndefOr[String] = js.native
+  var post_logout_redirect_uris: js.UndefOr[js.Array[String]] = js.native
+  var redirect_uris: js.UndefOr[js.Array[String]] = js.native
+  var request_object_encryption_alg: js.UndefOr[String] = js.native
+  var request_object_encryption_enc: js.UndefOr[String] = js.native
+  var request_object_signing_alg: js.UndefOr[String] = js.native
+  var require_auth_time: js.UndefOr[Boolean] = js.native
+  var response_types: js.UndefOr[js.Array[ResponseType]] = js.native
+  var revocation_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.native
+  var revocation_endpoint_auth_signing_alg: js.UndefOr[String] = js.native
+  var tls_client_certificate_bound_access_tokens: js.UndefOr[Boolean] = js.native
+  var token_endpoint_auth_method: js.UndefOr[ClientAuthMethod] = js.native
+  var token_endpoint_auth_signing_alg: js.UndefOr[String] = js.native
+  var userinfo_encrypted_response_alg: js.UndefOr[String] = js.native
+  var userinfo_encrypted_response_enc: js.UndefOr[String] = js.native
+  var userinfo_signed_response_alg: js.UndefOr[String] = js.native
 }
 
 object ClientMetadata {
   @scala.inline
-  def apply(
-    client_id: String,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    authorization_encrypted_response_alg: String = null,
-    authorization_encrypted_response_enc: String = null,
-    authorization_signed_response_alg: String = null,
-    client_secret: String = null,
-    default_max_age: js.UndefOr[Double] = js.undefined,
-    id_token_encrypted_response_alg: String = null,
-    id_token_encrypted_response_enc: String = null,
-    id_token_signed_response_alg: String = null,
-    introspection_endpoint_auth_method: ClientAuthMethod = null,
-    introspection_endpoint_auth_signing_alg: String = null,
-    post_logout_redirect_uris: js.Array[String] = null,
-    redirect_uris: js.Array[String] = null,
-    request_object_encryption_alg: String = null,
-    request_object_encryption_enc: String = null,
-    request_object_signing_alg: String = null,
-    require_auth_time: js.UndefOr[Boolean] = js.undefined,
-    response_types: js.Array[ResponseType] = null,
-    revocation_endpoint_auth_method: ClientAuthMethod = null,
-    revocation_endpoint_auth_signing_alg: String = null,
-    tls_client_certificate_bound_access_tokens: js.UndefOr[Boolean] = js.undefined,
-    token_endpoint_auth_method: ClientAuthMethod = null,
-    token_endpoint_auth_signing_alg: String = null,
-    userinfo_encrypted_response_alg: String = null,
-    userinfo_encrypted_response_enc: String = null,
-    userinfo_signed_response_alg: String = null
-  ): ClientMetadata = {
+  def apply(client_id: String): ClientMetadata = {
     val __obj = js.Dynamic.literal(client_id = client_id.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (authorization_encrypted_response_alg != null) __obj.updateDynamic("authorization_encrypted_response_alg")(authorization_encrypted_response_alg.asInstanceOf[js.Any])
-    if (authorization_encrypted_response_enc != null) __obj.updateDynamic("authorization_encrypted_response_enc")(authorization_encrypted_response_enc.asInstanceOf[js.Any])
-    if (authorization_signed_response_alg != null) __obj.updateDynamic("authorization_signed_response_alg")(authorization_signed_response_alg.asInstanceOf[js.Any])
-    if (client_secret != null) __obj.updateDynamic("client_secret")(client_secret.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_max_age)) __obj.updateDynamic("default_max_age")(default_max_age.get.asInstanceOf[js.Any])
-    if (id_token_encrypted_response_alg != null) __obj.updateDynamic("id_token_encrypted_response_alg")(id_token_encrypted_response_alg.asInstanceOf[js.Any])
-    if (id_token_encrypted_response_enc != null) __obj.updateDynamic("id_token_encrypted_response_enc")(id_token_encrypted_response_enc.asInstanceOf[js.Any])
-    if (id_token_signed_response_alg != null) __obj.updateDynamic("id_token_signed_response_alg")(id_token_signed_response_alg.asInstanceOf[js.Any])
-    if (introspection_endpoint_auth_method != null) __obj.updateDynamic("introspection_endpoint_auth_method")(introspection_endpoint_auth_method.asInstanceOf[js.Any])
-    if (introspection_endpoint_auth_signing_alg != null) __obj.updateDynamic("introspection_endpoint_auth_signing_alg")(introspection_endpoint_auth_signing_alg.asInstanceOf[js.Any])
-    if (post_logout_redirect_uris != null) __obj.updateDynamic("post_logout_redirect_uris")(post_logout_redirect_uris.asInstanceOf[js.Any])
-    if (redirect_uris != null) __obj.updateDynamic("redirect_uris")(redirect_uris.asInstanceOf[js.Any])
-    if (request_object_encryption_alg != null) __obj.updateDynamic("request_object_encryption_alg")(request_object_encryption_alg.asInstanceOf[js.Any])
-    if (request_object_encryption_enc != null) __obj.updateDynamic("request_object_encryption_enc")(request_object_encryption_enc.asInstanceOf[js.Any])
-    if (request_object_signing_alg != null) __obj.updateDynamic("request_object_signing_alg")(request_object_signing_alg.asInstanceOf[js.Any])
-    if (!js.isUndefined(require_auth_time)) __obj.updateDynamic("require_auth_time")(require_auth_time.get.asInstanceOf[js.Any])
-    if (response_types != null) __obj.updateDynamic("response_types")(response_types.asInstanceOf[js.Any])
-    if (revocation_endpoint_auth_method != null) __obj.updateDynamic("revocation_endpoint_auth_method")(revocation_endpoint_auth_method.asInstanceOf[js.Any])
-    if (revocation_endpoint_auth_signing_alg != null) __obj.updateDynamic("revocation_endpoint_auth_signing_alg")(revocation_endpoint_auth_signing_alg.asInstanceOf[js.Any])
-    if (!js.isUndefined(tls_client_certificate_bound_access_tokens)) __obj.updateDynamic("tls_client_certificate_bound_access_tokens")(tls_client_certificate_bound_access_tokens.get.asInstanceOf[js.Any])
-    if (token_endpoint_auth_method != null) __obj.updateDynamic("token_endpoint_auth_method")(token_endpoint_auth_method.asInstanceOf[js.Any])
-    if (token_endpoint_auth_signing_alg != null) __obj.updateDynamic("token_endpoint_auth_signing_alg")(token_endpoint_auth_signing_alg.asInstanceOf[js.Any])
-    if (userinfo_encrypted_response_alg != null) __obj.updateDynamic("userinfo_encrypted_response_alg")(userinfo_encrypted_response_alg.asInstanceOf[js.Any])
-    if (userinfo_encrypted_response_enc != null) __obj.updateDynamic("userinfo_encrypted_response_enc")(userinfo_encrypted_response_enc.asInstanceOf[js.Any])
-    if (userinfo_signed_response_alg != null) __obj.updateDynamic("userinfo_signed_response_alg")(userinfo_signed_response_alg.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientMetadata]
   }
+  @scala.inline
+  implicit class ClientMetadataOps[Self <: ClientMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient_id(value: String): Self = this.set("client_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorization_encrypted_response_alg(value: String): Self = this.set("authorization_encrypted_response_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization_encrypted_response_alg: Self = this.set("authorization_encrypted_response_alg", js.undefined)
+    @scala.inline
+    def setAuthorization_encrypted_response_enc(value: String): Self = this.set("authorization_encrypted_response_enc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization_encrypted_response_enc: Self = this.set("authorization_encrypted_response_enc", js.undefined)
+    @scala.inline
+    def setAuthorization_signed_response_alg(value: String): Self = this.set("authorization_signed_response_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization_signed_response_alg: Self = this.set("authorization_signed_response_alg", js.undefined)
+    @scala.inline
+    def setClient_secret(value: String): Self = this.set("client_secret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient_secret: Self = this.set("client_secret", js.undefined)
+    @scala.inline
+    def setDefault_max_age(value: Double): Self = this.set("default_max_age", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefault_max_age: Self = this.set("default_max_age", js.undefined)
+    @scala.inline
+    def setId_token_encrypted_response_alg(value: String): Self = this.set("id_token_encrypted_response_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId_token_encrypted_response_alg: Self = this.set("id_token_encrypted_response_alg", js.undefined)
+    @scala.inline
+    def setId_token_encrypted_response_enc(value: String): Self = this.set("id_token_encrypted_response_enc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId_token_encrypted_response_enc: Self = this.set("id_token_encrypted_response_enc", js.undefined)
+    @scala.inline
+    def setId_token_signed_response_alg(value: String): Self = this.set("id_token_signed_response_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId_token_signed_response_alg: Self = this.set("id_token_signed_response_alg", js.undefined)
+    @scala.inline
+    def setIntrospection_endpoint_auth_method(value: ClientAuthMethod): Self = this.set("introspection_endpoint_auth_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntrospection_endpoint_auth_method: Self = this.set("introspection_endpoint_auth_method", js.undefined)
+    @scala.inline
+    def setIntrospection_endpoint_auth_signing_alg(value: String): Self = this.set("introspection_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntrospection_endpoint_auth_signing_alg: Self = this.set("introspection_endpoint_auth_signing_alg", js.undefined)
+    @scala.inline
+    def setPost_logout_redirect_urisVarargs(value: String*): Self = this.set("post_logout_redirect_uris", js.Array(value :_*))
+    @scala.inline
+    def setPost_logout_redirect_uris(value: js.Array[String]): Self = this.set("post_logout_redirect_uris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePost_logout_redirect_uris: Self = this.set("post_logout_redirect_uris", js.undefined)
+    @scala.inline
+    def setRedirect_urisVarargs(value: String*): Self = this.set("redirect_uris", js.Array(value :_*))
+    @scala.inline
+    def setRedirect_uris(value: js.Array[String]): Self = this.set("redirect_uris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect_uris: Self = this.set("redirect_uris", js.undefined)
+    @scala.inline
+    def setRequest_object_encryption_alg(value: String): Self = this.set("request_object_encryption_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest_object_encryption_alg: Self = this.set("request_object_encryption_alg", js.undefined)
+    @scala.inline
+    def setRequest_object_encryption_enc(value: String): Self = this.set("request_object_encryption_enc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest_object_encryption_enc: Self = this.set("request_object_encryption_enc", js.undefined)
+    @scala.inline
+    def setRequest_object_signing_alg(value: String): Self = this.set("request_object_signing_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest_object_signing_alg: Self = this.set("request_object_signing_alg", js.undefined)
+    @scala.inline
+    def setRequire_auth_time(value: Boolean): Self = this.set("require_auth_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequire_auth_time: Self = this.set("require_auth_time", js.undefined)
+    @scala.inline
+    def setResponse_typesVarargs(value: ResponseType*): Self = this.set("response_types", js.Array(value :_*))
+    @scala.inline
+    def setResponse_types(value: js.Array[ResponseType]): Self = this.set("response_types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse_types: Self = this.set("response_types", js.undefined)
+    @scala.inline
+    def setRevocation_endpoint_auth_method(value: ClientAuthMethod): Self = this.set("revocation_endpoint_auth_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocation_endpoint_auth_method: Self = this.set("revocation_endpoint_auth_method", js.undefined)
+    @scala.inline
+    def setRevocation_endpoint_auth_signing_alg(value: String): Self = this.set("revocation_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocation_endpoint_auth_signing_alg: Self = this.set("revocation_endpoint_auth_signing_alg", js.undefined)
+    @scala.inline
+    def setTls_client_certificate_bound_access_tokens(value: Boolean): Self = this.set("tls_client_certificate_bound_access_tokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTls_client_certificate_bound_access_tokens: Self = this.set("tls_client_certificate_bound_access_tokens", js.undefined)
+    @scala.inline
+    def setToken_endpoint_auth_method(value: ClientAuthMethod): Self = this.set("token_endpoint_auth_method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_endpoint_auth_method: Self = this.set("token_endpoint_auth_method", js.undefined)
+    @scala.inline
+    def setToken_endpoint_auth_signing_alg(value: String): Self = this.set("token_endpoint_auth_signing_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_endpoint_auth_signing_alg: Self = this.set("token_endpoint_auth_signing_alg", js.undefined)
+    @scala.inline
+    def setUserinfo_encrypted_response_alg(value: String): Self = this.set("userinfo_encrypted_response_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserinfo_encrypted_response_alg: Self = this.set("userinfo_encrypted_response_alg", js.undefined)
+    @scala.inline
+    def setUserinfo_encrypted_response_enc(value: String): Self = this.set("userinfo_encrypted_response_enc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserinfo_encrypted_response_enc: Self = this.set("userinfo_encrypted_response_enc", js.undefined)
+    @scala.inline
+    def setUserinfo_signed_response_alg(value: String): Self = this.set("userinfo_signed_response_alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserinfo_signed_response_alg: Self = this.set("userinfo_signed_response_alg", js.undefined)
+  }
+  
 }
 

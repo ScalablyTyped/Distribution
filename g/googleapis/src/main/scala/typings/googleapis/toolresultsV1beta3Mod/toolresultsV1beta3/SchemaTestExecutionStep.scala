@@ -44,18 +44,42 @@ trait SchemaTestExecutionStep extends js.Object {
 
 object SchemaTestExecutionStep {
   @scala.inline
-  def apply(
-    testIssues: js.Array[SchemaTestIssue] = null,
-    testSuiteOverviews: js.Array[SchemaTestSuiteOverview] = null,
-    testTiming: SchemaTestTiming = null,
-    toolExecution: SchemaToolExecution = null
-  ): SchemaTestExecutionStep = {
+  def apply(): SchemaTestExecutionStep = {
     val __obj = js.Dynamic.literal()
-    if (testIssues != null) __obj.updateDynamic("testIssues")(testIssues.asInstanceOf[js.Any])
-    if (testSuiteOverviews != null) __obj.updateDynamic("testSuiteOverviews")(testSuiteOverviews.asInstanceOf[js.Any])
-    if (testTiming != null) __obj.updateDynamic("testTiming")(testTiming.asInstanceOf[js.Any])
-    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTestExecutionStep]
   }
+  @scala.inline
+  implicit class SchemaTestExecutionStepOps[Self <: SchemaTestExecutionStep] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTestIssuesVarargs(value: SchemaTestIssue*): Self = this.set("testIssues", js.Array(value :_*))
+    @scala.inline
+    def setTestIssues(value: js.Array[SchemaTestIssue]): Self = this.set("testIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestIssues: Self = this.set("testIssues", js.undefined)
+    @scala.inline
+    def setTestSuiteOverviewsVarargs(value: SchemaTestSuiteOverview*): Self = this.set("testSuiteOverviews", js.Array(value :_*))
+    @scala.inline
+    def setTestSuiteOverviews(value: js.Array[SchemaTestSuiteOverview]): Self = this.set("testSuiteOverviews", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestSuiteOverviews: Self = this.set("testSuiteOverviews", js.undefined)
+    @scala.inline
+    def setTestTiming(value: SchemaTestTiming): Self = this.set("testTiming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestTiming: Self = this.set("testTiming", js.undefined)
+    @scala.inline
+    def setToolExecution(value: SchemaToolExecution): Self = this.set("toolExecution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolExecution: Self = this.set("toolExecution", js.undefined)
+  }
+  
 }
 

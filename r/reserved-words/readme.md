@@ -11,8 +11,8 @@ ECMAScript reserved words checker
 | Full name          | reserved-words |
 | Keywords           | ES3, ES5, ES6, ReservedWord, Keyword, checker |
 | # releases         | 0 |
-| # dependents       | 60 |
-| # downloads        | 13224963 |
+| # dependents       | 65 |
+| # downloads        | 14136155 |
 | # stars            | 0 |
 
 ## Links

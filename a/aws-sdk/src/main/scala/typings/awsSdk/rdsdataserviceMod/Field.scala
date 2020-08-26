@@ -38,24 +38,50 @@ trait Field extends js.Object {
 
 object Field {
   @scala.inline
-  def apply(
-    arrayValue: ArrayValue = null,
-    blobValue: _Blob = null,
-    booleanValue: js.UndefOr[BoxedBoolean] = js.undefined,
-    doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
-    isNull: js.UndefOr[BoxedBoolean] = js.undefined,
-    longValue: js.UndefOr[BoxedLong] = js.undefined,
-    stringValue: String = null
-  ): Field = {
+  def apply(): Field = {
     val __obj = js.Dynamic.literal()
-    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
-    if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNull)) __obj.updateDynamic("isNull")(isNull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(longValue)) __obj.updateDynamic("longValue")(longValue.get.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
+  @scala.inline
+  implicit class FieldOps[Self <: Field] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayValue(value: ArrayValue): Self = this.set("arrayValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayValue: Self = this.set("arrayValue", js.undefined)
+    @scala.inline
+    def setBlobValue(value: _Blob): Self = this.set("blobValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobValue: Self = this.set("blobValue", js.undefined)
+    @scala.inline
+    def setBooleanValue(value: BoxedBoolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    @scala.inline
+    def setDoubleValue(value: BoxedDouble): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    @scala.inline
+    def setIsNull(value: BoxedBoolean): Self = this.set("isNull", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsNull: Self = this.set("isNull", js.undefined)
+    @scala.inline
+    def setLongValue(value: BoxedLong): Self = this.set("longValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongValue: Self = this.set("longValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+  }
+  
 }
 

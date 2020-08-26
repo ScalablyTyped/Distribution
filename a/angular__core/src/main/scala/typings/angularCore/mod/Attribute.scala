@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Attribute extends js.Object {
   /**
     * The name of the attribute whose value can be injected.
     */
-  var attributeName: js.UndefOr[String] = js.undefined
+  var attributeName: String = js.native
 }
 
 @JSImport("@angular/core", "Attribute")

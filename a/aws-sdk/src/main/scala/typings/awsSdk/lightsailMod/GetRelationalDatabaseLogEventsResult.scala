@@ -22,16 +22,36 @@ trait GetRelationalDatabaseLogEventsResult extends js.Object {
 
 object GetRelationalDatabaseLogEventsResult {
   @scala.inline
-  def apply(
-    nextBackwardToken: String = null,
-    nextForwardToken: String = null,
-    resourceLogEvents: LogEventList = null
-  ): GetRelationalDatabaseLogEventsResult = {
+  def apply(): GetRelationalDatabaseLogEventsResult = {
     val __obj = js.Dynamic.literal()
-    if (nextBackwardToken != null) __obj.updateDynamic("nextBackwardToken")(nextBackwardToken.asInstanceOf[js.Any])
-    if (nextForwardToken != null) __obj.updateDynamic("nextForwardToken")(nextForwardToken.asInstanceOf[js.Any])
-    if (resourceLogEvents != null) __obj.updateDynamic("resourceLogEvents")(resourceLogEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseLogEventsResult]
   }
+  @scala.inline
+  implicit class GetRelationalDatabaseLogEventsResultOps[Self <: GetRelationalDatabaseLogEventsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextBackwardToken(value: String): Self = this.set("nextBackwardToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextBackwardToken: Self = this.set("nextBackwardToken", js.undefined)
+    @scala.inline
+    def setNextForwardToken(value: String): Self = this.set("nextForwardToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextForwardToken: Self = this.set("nextForwardToken", js.undefined)
+    @scala.inline
+    def setResourceLogEventsVarargs(value: LogEvent*): Self = this.set("resourceLogEvents", js.Array(value :_*))
+    @scala.inline
+    def setResourceLogEvents(value: LogEventList): Self = this.set("resourceLogEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceLogEvents: Self = this.set("resourceLogEvents", js.undefined)
+  }
+  
 }
 

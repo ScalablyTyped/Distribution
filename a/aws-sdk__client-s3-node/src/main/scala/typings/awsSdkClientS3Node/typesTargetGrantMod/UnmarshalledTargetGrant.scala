@@ -1,28 +1,41 @@
 package typings.awsSdkClientS3Node.typesTargetGrantMod
 
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.FULL_CONTROL
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.READ
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.WRITE
 import typings.awsSdkClientS3Node.typesGranteeMod.UnmarshalledGrantee
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledTargetGrant extends TargetGrant {
   /**
     * _Grantee shape
     */
   @JSName("Grantee")
-  var Grantee_UnmarshalledTargetGrant: js.UndefOr[UnmarshalledGrantee] = js.undefined
+  var Grantee_UnmarshalledTargetGrant: js.UndefOr[UnmarshalledGrantee] = js.native
 }
 
 object UnmarshalledTargetGrant {
   @scala.inline
-  def apply(Grantee: UnmarshalledGrantee = null, Permission: FULL_CONTROL | READ | WRITE | String = null): UnmarshalledTargetGrant = {
+  def apply(): UnmarshalledTargetGrant = {
     val __obj = js.Dynamic.literal()
-    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee.asInstanceOf[js.Any])
-    if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledTargetGrant]
   }
+  @scala.inline
+  implicit class UnmarshalledTargetGrantOps[Self <: UnmarshalledTargetGrant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrantee(value: UnmarshalledGrantee): Self = this.set("Grantee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantee: Self = this.set("Grantee", js.undefined)
+  }
+  
 }
 

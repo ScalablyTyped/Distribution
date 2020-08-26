@@ -1,6 +1,5 @@
 package typings.graphqlCompose.unionTypeComposerMod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.graphql.definitionMod.GraphQLList
 import typings.graphql.definitionMod.GraphQLNonNull
 import typings.graphql.definitionMod.GraphQLTypeResolver
@@ -24,10 +23,7 @@ class UnionTypeComposer[TSource, TContext] protected () extends _ComposeOutputTy
   var gqType: GraphQLUnionTypeExtended[TSource, TContext] = js.native
   var schemaComposer: SchemaComposer[TContext] = js.native
   def addType(`type`: ComposeObjectType): this.type = js.native
-  def addTypeResolver(
-    `type`: GraphQLObjectType[_, _, StringDictionary[_]],
-    checkFn: UnionTypeResolverCheckFn[TSource, TContext]
-  ): this.type = js.native
+  def addTypeResolver(`type`: GraphQLObjectType[_, _], checkFn: UnionTypeResolverCheckFn[TSource, TContext]): this.type = js.native
   def addTypeResolver(`type`: ObjectTypeComposer[_, TContext], checkFn: UnionTypeResolverCheckFn[TSource, TContext]): this.type = js.native
   def clearExtensions(): this.type = js.native
   def clearTypes(): UnionTypeComposer[TSource, TContext] = js.native
@@ -55,7 +51,7 @@ class UnionTypeComposer[TSource, TContext] protected () extends _ComposeOutputTy
     * ResolveType methods
     * -----------------------------------------------
     */
-  def getResolveType(): (GraphQLTypeResolver[TSource, TContext, StringDictionary[_]]) | Null | Unit = js.native
+  def getResolveType(): (GraphQLTypeResolver[TSource, TContext]) | Null | Unit = js.native
   /**
     * -----------------------------------------------
     * Type methods
@@ -66,10 +62,10 @@ class UnionTypeComposer[TSource, TContext] protected () extends _ComposeOutputTy
   def getTypeNames(): js.Array[String] = js.native
   def getTypeNonNull(): GraphQLNonNull[GraphQLUnionType] = js.native
   def getTypePlural(): GraphQLList[GraphQLUnionType] = js.native
-  def getTypeResolverCheckFn(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): UnionTypeResolverCheckFn[_, TContext] = js.native
+  def getTypeResolverCheckFn(`type`: GraphQLObjectType[_, _]): UnionTypeResolverCheckFn[_, TContext] = js.native
   def getTypeResolverCheckFn(`type`: ObjectTypeComposer[_, TContext]): UnionTypeResolverCheckFn[_, TContext] = js.native
   def getTypeResolverNames(): js.Array[String] = js.native
-  def getTypeResolverTypes(): js.Array[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native
+  def getTypeResolverTypes(): js.Array[GraphQLObjectType[_, _]] = js.native
   def getTypeResolvers(): UnionTypeResolversMap[TSource, TContext] = js.native
   def getTypes(): js.Array[ComposeObjectType] = js.native
   def hasExtension(extensionName: String): Boolean = js.native
@@ -79,9 +75,9 @@ class UnionTypeComposer[TSource, TContext] protected () extends _ComposeOutputTy
     * -----------------------------------------------
     */
   def hasType(name: String): Boolean = js.native
-  def hasType(name: GraphQLObjectType[_, _, StringDictionary[_]]): Boolean = js.native
+  def hasType(name: GraphQLObjectType[_, _]): Boolean = js.native
   def hasType(name: ObjectTypeComposer[_, TContext]): Boolean = js.native
-  def hasTypeResolver(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): Boolean = js.native
+  def hasTypeResolver(`type`: GraphQLObjectType[_, _]): Boolean = js.native
   def hasTypeResolver(`type`: ObjectTypeComposer[_, TContext]): Boolean = js.native
   def merge(`type`: GraphQLUnionType): this.type = js.native
   def merge(`type`: UnionTypeComposer[_, _]): this.type = js.native
@@ -90,14 +86,14 @@ class UnionTypeComposer[TSource, TContext] protected () extends _ComposeOutputTy
   def removeOtherTypes(nameOrArray: js.Array[String]): this.type = js.native
   def removeType(nameOrArray: String): this.type = js.native
   def removeType(nameOrArray: js.Array[String]): this.type = js.native
-  def removeTypeResolver(`type`: GraphQLObjectType[_, _, StringDictionary[_]]): this.type = js.native
+  def removeTypeResolver(`type`: GraphQLObjectType[_, _]): this.type = js.native
   def removeTypeResolver(`type`: ObjectTypeComposer[_, TContext]): this.type = js.native
   def setDescription(description: String): this.type = js.native
   def setExtension(extensionName: String, value: js.Any): this.type = js.native
   def setExtensions(extensions: Extensions): this.type = js.native
   def setResolveType(): this.type = js.native
   def setResolveType(fn: Unit): this.type = js.native
-  def setResolveType(fn: GraphQLTypeResolver[TSource, TContext, StringDictionary[_]]): this.type = js.native
+  def setResolveType(fn: GraphQLTypeResolver[TSource, TContext]): this.type = js.native
   def setTypeName(name: String): this.type = js.native
   def setTypeResolvers(typeResolversMap: UnionTypeResolversMap[TSource, TContext]): this.type = js.native
   def setTypes(types: js.Array[ComposeObjectType]): this.type = js.native

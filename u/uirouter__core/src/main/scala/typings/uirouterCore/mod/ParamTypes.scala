@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@uirouter/core", "ParamTypes")
 @js.native
-/** @internalapi */
 class ParamTypes ()
   extends typings.uirouterCore.paramsMod.ParamTypes
 

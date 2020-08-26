@@ -12,7 +12,7 @@ promise-based wav encoder
 | Keywords           | encode, universal, wav |
 | # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 33563 |
+| # downloads        | 34098 |
 | # stars            | 0 |
 
 ## Links

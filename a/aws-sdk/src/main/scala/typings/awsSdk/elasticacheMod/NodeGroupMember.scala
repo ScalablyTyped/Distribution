@@ -30,20 +30,42 @@ trait NodeGroupMember extends js.Object {
 
 object NodeGroupMember {
   @scala.inline
-  def apply(
-    CacheClusterId: String = null,
-    CacheNodeId: String = null,
-    CurrentRole: String = null,
-    PreferredAvailabilityZone: String = null,
-    ReadEndpoint: Endpoint = null
-  ): NodeGroupMember = {
+  def apply(): NodeGroupMember = {
     val __obj = js.Dynamic.literal()
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (CacheNodeId != null) __obj.updateDynamic("CacheNodeId")(CacheNodeId.asInstanceOf[js.Any])
-    if (CurrentRole != null) __obj.updateDynamic("CurrentRole")(CurrentRole.asInstanceOf[js.Any])
-    if (PreferredAvailabilityZone != null) __obj.updateDynamic("PreferredAvailabilityZone")(PreferredAvailabilityZone.asInstanceOf[js.Any])
-    if (ReadEndpoint != null) __obj.updateDynamic("ReadEndpoint")(ReadEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeGroupMember]
   }
+  @scala.inline
+  implicit class NodeGroupMemberOps[Self <: NodeGroupMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setCacheNodeId(value: String): Self = this.set("CacheNodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeId: Self = this.set("CacheNodeId", js.undefined)
+    @scala.inline
+    def setCurrentRole(value: String): Self = this.set("CurrentRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentRole: Self = this.set("CurrentRole", js.undefined)
+    @scala.inline
+    def setPreferredAvailabilityZone(value: String): Self = this.set("PreferredAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredAvailabilityZone: Self = this.set("PreferredAvailabilityZone", js.undefined)
+    @scala.inline
+    def setReadEndpoint(value: Endpoint): Self = this.set("ReadEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadEndpoint: Self = this.set("ReadEndpoint", js.undefined)
+  }
+  
 }
 

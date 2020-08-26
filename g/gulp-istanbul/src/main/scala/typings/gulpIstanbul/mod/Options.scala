@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var codeGenerationOptions: js.UndefOr[js.Object] = js.undefined
-  var coverageVariable: js.UndefOr[String] = js.undefined
-  var debug: js.UndefOr[Boolean] = js.undefined
-  var embedSource: js.UndefOr[Boolean] = js.undefined
-  var includeUntested: js.UndefOr[Boolean] = js.undefined
-  var noAutoWrap: js.UndefOr[Boolean] = js.undefined
-  var noCompact: js.UndefOr[Boolean] = js.undefined
-  var preserveComments: js.UndefOr[Boolean] = js.undefined
-  var walkDebug: js.UndefOr[Boolean] = js.undefined
+  var codeGenerationOptions: js.UndefOr[js.Object] = js.native
+  var coverageVariable: js.UndefOr[String] = js.native
+  var debug: js.UndefOr[Boolean] = js.native
+  var embedSource: js.UndefOr[Boolean] = js.native
+  var includeUntested: js.UndefOr[Boolean] = js.native
+  var noAutoWrap: js.UndefOr[Boolean] = js.native
+  var noCompact: js.UndefOr[Boolean] = js.native
+  var preserveComments: js.UndefOr[Boolean] = js.native
+  var walkDebug: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    codeGenerationOptions: js.Object = null,
-    coverageVariable: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    embedSource: js.UndefOr[Boolean] = js.undefined,
-    includeUntested: js.UndefOr[Boolean] = js.undefined,
-    noAutoWrap: js.UndefOr[Boolean] = js.undefined,
-    noCompact: js.UndefOr[Boolean] = js.undefined,
-    preserveComments: js.UndefOr[Boolean] = js.undefined,
-    walkDebug: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (codeGenerationOptions != null) __obj.updateDynamic("codeGenerationOptions")(codeGenerationOptions.asInstanceOf[js.Any])
-    if (coverageVariable != null) __obj.updateDynamic("coverageVariable")(coverageVariable.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(embedSource)) __obj.updateDynamic("embedSource")(embedSource.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeUntested)) __obj.updateDynamic("includeUntested")(includeUntested.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAutoWrap)) __obj.updateDynamic("noAutoWrap")(noAutoWrap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCompact)) __obj.updateDynamic("noCompact")(noCompact.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveComments)) __obj.updateDynamic("preserveComments")(preserveComments.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(walkDebug)) __obj.updateDynamic("walkDebug")(walkDebug.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodeGenerationOptions(value: js.Object): Self = this.set("codeGenerationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeGenerationOptions: Self = this.set("codeGenerationOptions", js.undefined)
+    @scala.inline
+    def setCoverageVariable(value: String): Self = this.set("coverageVariable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageVariable: Self = this.set("coverageVariable", js.undefined)
+    @scala.inline
+    def setDebug(value: Boolean): Self = this.set("debug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setEmbedSource(value: Boolean): Self = this.set("embedSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmbedSource: Self = this.set("embedSource", js.undefined)
+    @scala.inline
+    def setIncludeUntested(value: Boolean): Self = this.set("includeUntested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeUntested: Self = this.set("includeUntested", js.undefined)
+    @scala.inline
+    def setNoAutoWrap(value: Boolean): Self = this.set("noAutoWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoAutoWrap: Self = this.set("noAutoWrap", js.undefined)
+    @scala.inline
+    def setNoCompact(value: Boolean): Self = this.set("noCompact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoCompact: Self = this.set("noCompact", js.undefined)
+    @scala.inline
+    def setPreserveComments(value: Boolean): Self = this.set("preserveComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveComments: Self = this.set("preserveComments", js.undefined)
+    @scala.inline
+    def setWalkDebug(value: Boolean): Self = this.set("walkDebug", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWalkDebug: Self = this.set("walkDebug", js.undefined)
+  }
+  
 }
 

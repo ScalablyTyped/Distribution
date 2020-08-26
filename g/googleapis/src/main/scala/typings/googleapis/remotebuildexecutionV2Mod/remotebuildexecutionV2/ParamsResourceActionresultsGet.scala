@@ -35,40 +35,38 @@ trait ParamsResourceActionresultsGet extends StandardParameters {
 
 object ParamsResourceActionresultsGet {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    fields: String = null,
-    hash: String = null,
-    instanceName: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    sizeBytes: String = null,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceActionresultsGet = {
+  def apply(): ParamsResourceActionresultsGet = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceActionresultsGet]
   }
+  @scala.inline
+  implicit class ParamsResourceActionresultsGetOps[Self <: ParamsResourceActionresultsGet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setInstanceName(value: String): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceName: Self = this.set("instanceName", js.undefined)
+    @scala.inline
+    def setSizeBytes(value: String): Self = this.set("sizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeBytes: Self = this.set("sizeBytes", js.undefined)
+  }
+  
 }
 

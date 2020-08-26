@@ -16,28 +16,28 @@ trait ChartistSvgStatic
   extends Instantiable0[IChartistSvg]
      with Instantiable1[(/* name */ HTMLElement) | (/* name */ String), IChartistSvg]
      with Instantiable2[
-      (/* name */ HTMLElement) | (/* name */ String), 
+      js.UndefOr[(/* name */ HTMLElement) | (/* name */ String)], 
       /* attributes */ js.Object, 
       IChartistSvg
     ]
      with Instantiable3[
-      (/* name */ HTMLElement) | (/* name */ String), 
-      /* attributes */ js.Object, 
+      js.UndefOr[(/* name */ HTMLElement) | (/* name */ String)], 
+      js.UndefOr[/* attributes */ js.Object], 
       /* className */ String, 
       IChartistSvg
     ]
      with Instantiable4[
-      (/* name */ HTMLElement) | (/* name */ String), 
-      /* attributes */ js.Object, 
-      /* className */ String, 
+      js.UndefOr[(/* name */ HTMLElement) | (/* name */ String)], 
+      js.UndefOr[/* attributes */ js.Object], 
+      js.UndefOr[/* className */ String], 
       /* parent */ js.Object, 
       IChartistSvg
     ]
      with Instantiable5[
-      (/* name */ HTMLElement) | (/* name */ String), 
-      /* attributes */ js.Object, 
-      /* className */ String, 
-      /* parent */ js.Object, 
+      js.UndefOr[(/* name */ HTMLElement) | (/* name */ String)], 
+      js.UndefOr[/* attributes */ js.Object], 
+      js.UndefOr[/* className */ String], 
+      js.UndefOr[/* parent */ js.Object], 
       /* insertFirst */ Boolean, 
       IChartistSvg
     ] {

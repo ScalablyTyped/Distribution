@@ -34,16 +34,36 @@ trait SchemaBigtableOptions extends js.Object {
 
 object SchemaBigtableOptions {
   @scala.inline
-  def apply(
-    columnFamilies: js.Array[SchemaBigtableColumnFamily] = null,
-    ignoreUnspecifiedColumnFamilies: js.UndefOr[Boolean] = js.undefined,
-    readRowkeyAsString: js.UndefOr[Boolean] = js.undefined
-  ): SchemaBigtableOptions = {
+  def apply(): SchemaBigtableOptions = {
     val __obj = js.Dynamic.literal()
-    if (columnFamilies != null) __obj.updateDynamic("columnFamilies")(columnFamilies.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnspecifiedColumnFamilies)) __obj.updateDynamic("ignoreUnspecifiedColumnFamilies")(ignoreUnspecifiedColumnFamilies.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readRowkeyAsString)) __obj.updateDynamic("readRowkeyAsString")(readRowkeyAsString.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBigtableOptions]
   }
+  @scala.inline
+  implicit class SchemaBigtableOptionsOps[Self <: SchemaBigtableOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnFamiliesVarargs(value: SchemaBigtableColumnFamily*): Self = this.set("columnFamilies", js.Array(value :_*))
+    @scala.inline
+    def setColumnFamilies(value: js.Array[SchemaBigtableColumnFamily]): Self = this.set("columnFamilies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnFamilies: Self = this.set("columnFamilies", js.undefined)
+    @scala.inline
+    def setIgnoreUnspecifiedColumnFamilies(value: Boolean): Self = this.set("ignoreUnspecifiedColumnFamilies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnspecifiedColumnFamilies: Self = this.set("ignoreUnspecifiedColumnFamilies", js.undefined)
+    @scala.inline
+    def setReadRowkeyAsString(value: Boolean): Self = this.set("readRowkeyAsString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadRowkeyAsString: Self = this.set("readRowkeyAsString", js.undefined)
+  }
+  
 }
 

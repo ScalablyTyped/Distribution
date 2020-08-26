@@ -13,18 +13,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Context
-  extends /* index */ StringDictionary[js.Any] {
+  extends /* key */ StringDictionary[js.Any] {
   var _runnable: js.Any = js.native
   var currentTest: js.UndefOr[Test] = js.native
   var test: js.UndefOr[Runnable] = js.native
-  /**
-    * Get whether timeouts are enabled.
-    */
-  def enableTimeouts(): Boolean = js.native
-  /**
-    * Set whether timeouts are enabled.
-    */
-  def enableTimeouts(enabled: Boolean): this.type = js.native
   /**
     * Get the number of allowed retries on failed tests.
     */
@@ -37,8 +29,6 @@ trait Context
     * Get the context `Runnable`.
     */
   def runnable(): Runnable = js.native
-  /** @deprecated Use the overload that accepts `Mocha.Runnable` instead. */
-  def runnable(runnable: IRunnable): this.type = js.native
   /**
     * Set the context `Runnable`.
     */

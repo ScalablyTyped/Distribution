@@ -12,7 +12,7 @@ A fast, lightweight carousel alternative
 | Keywords           | carousel, scrolling, list, paging |
 | # releases         | 14 |
 | # dependents       | 4 |
-| # downloads        | 151597 |
+| # downloads        | 188808 |
 | # stars            | 0 |
 
 ## Links

@@ -26,18 +26,38 @@ trait CreateKeysAndCertificateResponse extends js.Object {
 
 object CreateKeysAndCertificateResponse {
   @scala.inline
-  def apply(
-    certificateArn: CertificateArn = null,
-    certificateId: CertificateId = null,
-    certificatePem: CertificatePem = null,
-    keyPair: KeyPair = null
-  ): CreateKeysAndCertificateResponse = {
+  def apply(): CreateKeysAndCertificateResponse = {
     val __obj = js.Dynamic.literal()
-    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (certificateId != null) __obj.updateDynamic("certificateId")(certificateId.asInstanceOf[js.Any])
-    if (certificatePem != null) __obj.updateDynamic("certificatePem")(certificatePem.asInstanceOf[js.Any])
-    if (keyPair != null) __obj.updateDynamic("keyPair")(keyPair.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeysAndCertificateResponse]
   }
+  @scala.inline
+  implicit class CreateKeysAndCertificateResponseOps[Self <: CreateKeysAndCertificateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateArn(value: CertificateArn): Self = this.set("certificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("certificateArn", js.undefined)
+    @scala.inline
+    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateId: Self = this.set("certificateId", js.undefined)
+    @scala.inline
+    def setCertificatePem(value: CertificatePem): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePem: Self = this.set("certificatePem", js.undefined)
+    @scala.inline
+    def setKeyPair(value: KeyPair): Self = this.set("keyPair", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyPair: Self = this.set("keyPair", js.undefined)
+  }
+  
 }
 

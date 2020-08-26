@@ -90,6 +90,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaChange] = js.native
   def create(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def create(params: ParamsResourceChangesCreate): GaxiosPromise[SchemaChange] = js.native
   def create(params: ParamsResourceChangesCreate, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def create(
@@ -180,6 +181,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaChange] = js.native
   def get(callback: BodyResponseCallback[SchemaChange]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChange] = js.native
   def get(params: ParamsResourceChangesGet): GaxiosPromise[SchemaChange] = js.native
   def get(params: ParamsResourceChangesGet, callback: BodyResponseCallback[SchemaChange]): Unit = js.native
   def get(
@@ -281,6 +283,7 @@ class ResourceChanges protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaChangesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(params: ParamsResourceChangesList): GaxiosPromise[SchemaChangesListResponse] = js.native
   def list(params: ParamsResourceChangesList, callback: BodyResponseCallback[SchemaChangesListResponse]): Unit = js.native
   def list(

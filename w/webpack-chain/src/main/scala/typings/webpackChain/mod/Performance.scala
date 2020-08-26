@@ -11,8 +11,6 @@ import scala.scalajs.js.annotation._
 class Performance ()
   extends typings.webpackChain.mod._Config.TypedChainedMap[Config, js.Any] {
   def assetFilter(value: js.Function1[/* assetFilename */ String, Boolean]): this.type = js.native
-  /* CompleteClass */
-  override def end(): Config = js.native
   def hints(value: Boolean): this.type = js.native
   @JSName("hints")
   def hints_error(value: error): this.type = js.native

@@ -22,14 +22,30 @@ trait AutoMLChannel extends js.Object {
 
 object AutoMLChannel {
   @scala.inline
-  def apply(
-    DataSource: AutoMLDataSource,
-    TargetAttributeName: TargetAttributeName,
-    CompressionType: CompressionType = null
-  ): AutoMLChannel = {
+  def apply(DataSource: AutoMLDataSource, TargetAttributeName: TargetAttributeName): AutoMLChannel = {
     val __obj = js.Dynamic.literal(DataSource = DataSource.asInstanceOf[js.Any], TargetAttributeName = TargetAttributeName.asInstanceOf[js.Any])
-    if (CompressionType != null) __obj.updateDynamic("CompressionType")(CompressionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLChannel]
   }
+  @scala.inline
+  implicit class AutoMLChannelOps[Self <: AutoMLChannel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSource(value: AutoMLDataSource): Self = this.set("DataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetAttributeName(value: TargetAttributeName): Self = this.set("TargetAttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompressionType(value: CompressionType): Self = this.set("CompressionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressionType: Self = this.set("CompressionType", js.undefined)
+  }
+  
 }
 

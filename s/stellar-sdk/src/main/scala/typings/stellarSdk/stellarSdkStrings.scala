@@ -30,6 +30,9 @@ object stellarSdkStrings {
   sealed trait auth_revocable_flag extends js.Object
   
   @js.native
+  sealed trait base64 extends js.Object
+  
+  @js.native
   sealed trait data extends js.Object
   
   @js.native
@@ -40,6 +43,9 @@ object stellarSdkStrings {
   
   @js.native
   sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait hex extends js.Object
   
   @js.native
   sealed trait ledger extends js.Object
@@ -61,6 +67,9 @@ object stellarSdkStrings {
   
   @js.native
   sealed trait precedes extends js.Object
+  
+  @js.native
+  sealed trait raw extends js.Object
   
   @js.native
   sealed trait succeeds extends js.Object
@@ -91,6 +100,8 @@ object stellarSdkStrings {
   @scala.inline
   def auth_revocable_flag: auth_revocable_flag = "auth_revocable_flag".asInstanceOf[auth_revocable_flag]
   @scala.inline
+  def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
@@ -98,6 +109,8 @@ object stellarSdkStrings {
   def effects: effects = "effects".asInstanceOf[effects]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
   def ledger: ledger = "ledger".asInstanceOf[ledger]
   @scala.inline
@@ -112,6 +125,8 @@ object stellarSdkStrings {
   def payments: payments = "payments".asInstanceOf[payments]
   @scala.inline
   def precedes: precedes = "precedes".asInstanceOf[precedes]
+  @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
   def succeeds: succeeds = "succeeds".asInstanceOf[succeeds]
   @scala.inline

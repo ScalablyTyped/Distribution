@@ -22,16 +22,34 @@ trait JobDetails extends js.Object {
 
 object JobDetails {
   @scala.inline
-  def apply(
-    DocumentsWithErrorsCount: js.UndefOr[Integer] = js.undefined,
-    InputDocumentsCount: js.UndefOr[Integer] = js.undefined,
-    TranslatedDocumentsCount: js.UndefOr[Integer] = js.undefined
-  ): JobDetails = {
+  def apply(): JobDetails = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DocumentsWithErrorsCount)) __obj.updateDynamic("DocumentsWithErrorsCount")(DocumentsWithErrorsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InputDocumentsCount)) __obj.updateDynamic("InputDocumentsCount")(InputDocumentsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TranslatedDocumentsCount)) __obj.updateDynamic("TranslatedDocumentsCount")(TranslatedDocumentsCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDetails]
   }
+  @scala.inline
+  implicit class JobDetailsOps[Self <: JobDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentsWithErrorsCount(value: Integer): Self = this.set("DocumentsWithErrorsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentsWithErrorsCount: Self = this.set("DocumentsWithErrorsCount", js.undefined)
+    @scala.inline
+    def setInputDocumentsCount(value: Integer): Self = this.set("InputDocumentsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDocumentsCount: Self = this.set("InputDocumentsCount", js.undefined)
+    @scala.inline
+    def setTranslatedDocumentsCount(value: Integer): Self = this.set("TranslatedDocumentsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslatedDocumentsCount: Self = this.set("TranslatedDocumentsCount", js.undefined)
+  }
+  
 }
 

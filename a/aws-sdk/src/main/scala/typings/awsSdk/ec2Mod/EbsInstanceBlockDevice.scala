@@ -26,18 +26,38 @@ trait EbsInstanceBlockDevice extends js.Object {
 
 object EbsInstanceBlockDevice {
   @scala.inline
-  def apply(
-    AttachTime: DateTime = null,
-    DeleteOnTermination: js.UndefOr[Boolean] = js.undefined,
-    Status: AttachmentStatus = null,
-    VolumeId: String = null
-  ): EbsInstanceBlockDevice = {
+  def apply(): EbsInstanceBlockDevice = {
     val __obj = js.Dynamic.literal()
-    if (AttachTime != null) __obj.updateDynamic("AttachTime")(AttachTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteOnTermination)) __obj.updateDynamic("DeleteOnTermination")(DeleteOnTermination.get.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (VolumeId != null) __obj.updateDynamic("VolumeId")(VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsInstanceBlockDevice]
   }
+  @scala.inline
+  implicit class EbsInstanceBlockDeviceOps[Self <: EbsInstanceBlockDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachTime(value: DateTime): Self = this.set("AttachTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachTime: Self = this.set("AttachTime", js.undefined)
+    @scala.inline
+    def setDeleteOnTermination(value: Boolean): Self = this.set("DeleteOnTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteOnTermination: Self = this.set("DeleteOnTermination", js.undefined)
+    @scala.inline
+    def setStatus(value: AttachmentStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("VolumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("VolumeId", js.undefined)
+  }
+  
 }
 

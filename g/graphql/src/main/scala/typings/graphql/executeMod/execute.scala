@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql/execution/execute", "execute")
 @js.native
 object execute extends js.Object {
-  def apply[TData](args: ExecutionArgs): PromiseOrValue[ExecutionResult[TData]] = js.native
-  def apply[TData](
+  def apply(args: ExecutionArgs): PromiseOrValue[ExecutionResult[StringDictionary[_], StringDictionary[_]]] = js.native
+  def apply(
     schema: GraphQLSchema,
     document: DocumentNode,
     rootValue: js.UndefOr[js.Any],
@@ -23,7 +23,7 @@ object execute extends js.Object {
     variableValues: js.UndefOr[Maybe[StringDictionary[_]]],
     operationName: js.UndefOr[Maybe[String]],
     fieldResolver: js.UndefOr[Maybe[GraphQLFieldResolver[_, _, StringDictionary[_]]]],
-    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _, StringDictionary[_]]]]
-  ): PromiseOrValue[ExecutionResult[TData]] = js.native
+    typeResolver: js.UndefOr[Maybe[GraphQLTypeResolver[_, _]]]
+  ): PromiseOrValue[ExecutionResult[StringDictionary[_], StringDictionary[_]]] = js.native
 }
 

@@ -18,6 +18,12 @@ object GeoJson extends js.Object {
   def readFromUrl(
     url: String,
     callback: js.Function1[/* data */ IPrimitive | js.Array[IPrimitive], Unit],
+    jsonpQueryParam: js.UndefOr[scala.Nothing],
+    styles: IStylesOptions
+  ): Unit = js.native
+  def readFromUrl(
+    url: String,
+    callback: js.Function1[/* data */ IPrimitive | js.Array[IPrimitive], Unit],
     jsonpQueryParam: String
   ): Unit = js.native
   def readFromUrl(

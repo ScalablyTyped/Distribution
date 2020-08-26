@@ -1,6 +1,6 @@
 package typings.nock.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.node.urlMod.Url
 import typings.std.RegExp
 import scala.scalajs.js

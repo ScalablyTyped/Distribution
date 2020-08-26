@@ -43,20 +43,42 @@ trait SchemaUpdateTableBorderPropertiesRequest extends js.Object {
 
 object SchemaUpdateTableBorderPropertiesRequest {
   @scala.inline
-  def apply(
-    borderPosition: String = null,
-    fields: String = null,
-    objectId: String = null,
-    tableBorderProperties: SchemaTableBorderProperties = null,
-    tableRange: SchemaTableRange = null
-  ): SchemaUpdateTableBorderPropertiesRequest = {
+  def apply(): SchemaUpdateTableBorderPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (borderPosition != null) __obj.updateDynamic("borderPosition")(borderPosition.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (tableBorderProperties != null) __obj.updateDynamic("tableBorderProperties")(tableBorderProperties.asInstanceOf[js.Any])
-    if (tableRange != null) __obj.updateDynamic("tableRange")(tableRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateTableBorderPropertiesRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateTableBorderPropertiesRequestOps[Self <: SchemaUpdateTableBorderPropertiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderPosition(value: String): Self = this.set("borderPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderPosition: Self = this.set("borderPosition", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setTableBorderProperties(value: SchemaTableBorderProperties): Self = this.set("tableBorderProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBorderProperties: Self = this.set("tableBorderProperties", js.undefined)
+    @scala.inline
+    def setTableRange(value: SchemaTableRange): Self = this.set("tableRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableRange: Self = this.set("tableRange", js.undefined)
+  }
+  
 }
 

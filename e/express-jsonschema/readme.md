@@ -12,7 +12,7 @@ Express middleware for jsonschema validation.
 | Keywords           | express, jsonschema, validation, validate |
 | # releases         | 1 |
 | # dependents       | 12 |
-| # downloads        | 120677 |
+| # downloads        | 127018 |
 | # stars            | 11 |
 
 ## Links

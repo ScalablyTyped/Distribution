@@ -28,6 +28,7 @@ class ResourceProjectsTemplates protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaJob] = js.native
   def create(callback: BodyResponseCallback[SchemaJob]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceProjectsTemplatesCreate): GaxiosPromise[SchemaJob] = js.native
   def create(params: ParamsResourceProjectsTemplatesCreate, callback: BodyResponseCallback[SchemaJob]): Unit = js.native
   def create(
@@ -58,6 +59,7 @@ class ResourceProjectsTemplates protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGetTemplateResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaGetTemplateResponse]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetTemplateResponse] = js.native
   def get(params: ParamsResourceProjectsTemplatesGet): GaxiosPromise[SchemaGetTemplateResponse] = js.native
   def get(
     params: ParamsResourceProjectsTemplatesGet,
@@ -94,6 +96,7 @@ class ResourceProjectsTemplates protected () extends js.Object {
     */
   def launch(): GaxiosPromise[SchemaLaunchTemplateResponse] = js.native
   def launch(callback: BodyResponseCallback[SchemaLaunchTemplateResponse]): Unit = js.native
+  def launch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLaunchTemplateResponse] = js.native
   def launch(params: ParamsResourceProjectsTemplatesLaunch): GaxiosPromise[SchemaLaunchTemplateResponse] = js.native
   def launch(
     params: ParamsResourceProjectsTemplatesLaunch,

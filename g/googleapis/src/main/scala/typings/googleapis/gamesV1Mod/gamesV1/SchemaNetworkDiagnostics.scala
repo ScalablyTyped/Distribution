@@ -50,24 +50,50 @@ trait SchemaNetworkDiagnostics extends js.Object {
 
 object SchemaNetworkDiagnostics {
   @scala.inline
-  def apply(
-    androidNetworkSubtype: js.UndefOr[Double] = js.undefined,
-    androidNetworkType: js.UndefOr[Double] = js.undefined,
-    iosNetworkType: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    networkOperatorCode: String = null,
-    networkOperatorName: String = null,
-    registrationLatencyMillis: js.UndefOr[Double] = js.undefined
-  ): SchemaNetworkDiagnostics = {
+  def apply(): SchemaNetworkDiagnostics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(androidNetworkSubtype)) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(androidNetworkType)) __obj.updateDynamic("androidNetworkType")(androidNetworkType.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(iosNetworkType)) __obj.updateDynamic("iosNetworkType")(iosNetworkType.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode.asInstanceOf[js.Any])
-    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName.asInstanceOf[js.Any])
-    if (!js.isUndefined(registrationLatencyMillis)) __obj.updateDynamic("registrationLatencyMillis")(registrationLatencyMillis.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkDiagnostics]
   }
+  @scala.inline
+  implicit class SchemaNetworkDiagnosticsOps[Self <: SchemaNetworkDiagnostics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidNetworkSubtype(value: Double): Self = this.set("androidNetworkSubtype", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidNetworkSubtype: Self = this.set("androidNetworkSubtype", js.undefined)
+    @scala.inline
+    def setAndroidNetworkType(value: Double): Self = this.set("androidNetworkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidNetworkType: Self = this.set("androidNetworkType", js.undefined)
+    @scala.inline
+    def setIosNetworkType(value: Double): Self = this.set("iosNetworkType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIosNetworkType: Self = this.set("iosNetworkType", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNetworkOperatorCode(value: String): Self = this.set("networkOperatorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkOperatorCode: Self = this.set("networkOperatorCode", js.undefined)
+    @scala.inline
+    def setNetworkOperatorName(value: String): Self = this.set("networkOperatorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkOperatorName: Self = this.set("networkOperatorName", js.undefined)
+    @scala.inline
+    def setRegistrationLatencyMillis(value: Double): Self = this.set("registrationLatencyMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationLatencyMillis: Self = this.set("registrationLatencyMillis", js.undefined)
+  }
+  
 }
 

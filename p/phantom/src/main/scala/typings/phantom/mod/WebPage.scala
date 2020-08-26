@@ -97,9 +97,42 @@ trait WebPage extends js.Object {
   ): js.Promise[R] = js.native
   def includeJs(url: String): js.Promise[Unit] = js.native
   def injectJs(filename: String): js.Promise[Boolean] = js.native
-  def off(
-    event: onResourceRequested | onLoadFinished | onAlert | onCallback | onClosing | onConfirm | onConsoleMessage | onError | onFilePicker | onInitialized | onLoadStarted | onNavigationRequested | onPageCreated | onPrompt | onResourceError | onResourceReceived | onResourceTimeout | onUrlChanged
-  ): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onAlert(event: onAlert): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onCallback(event: onCallback): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onClosing(event: onClosing): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onConfirm(event: onConfirm): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onConsoleMessage(event: onConsoleMessage): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onError(event: onError): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onFilePicker(event: onFilePicker): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onInitialized(event: onInitialized): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onLoadFinished(event: onLoadFinished): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onLoadStarted(event: onLoadStarted): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onNavigationRequested(event: onNavigationRequested): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onPageCreated(event: onPageCreated): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onPrompt(event: onPrompt): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onResourceError(event: onResourceError): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onResourceReceived(event: onResourceReceived): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onResourceRequested(event: onResourceRequested): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onResourceTimeout(event: onResourceTimeout): js.Promise[PageId] = js.native
+  @JSName("off")
+  def off_onUrlChanged(event: onUrlChanged): js.Promise[PageId] = js.native
   def on(event: onAlert, runOnPhantom: `false`, listener: js.Function1[/* msg */ String, Unit]): js.Promise[PageId] = js.native
   def on(event: onCallback, runOnPhantom: `false`, listener: js.Function1[/* data */ js.Any, Unit]): js.Promise[PageId] = js.native
   def on(event: onClosing, runOnPhantom: `false`, listener: js.Function1[/* closingPage */ js.Any, Unit]): js.Promise[PageId] = js.native
@@ -211,9 +244,6 @@ trait WebPage extends js.Object {
   def on_onUrlChanged(event: onUrlChanged, listener: js.Function1[/* targetUrl */ String, Unit]): js.Promise[PageId] = js.native
   def open(url: String): js.Promise[String] = js.native
   def open(url: String, settings: IOpenWebPageSettings): js.Promise[String] = js.native
-  def property(
-    key: content | plainText | focusedFrameName | frameContent | frameName | framePlainText | frameTitle | libraryPath | offlineStoragePath | title | url | windowName
-  ): js.Promise[String] = js.native
   def property[T](key: String): js.Promise[T] = js.native
   def property[T](key: String, value: T): js.Promise[Unit] = js.native
   @JSName("property")
@@ -223,15 +253,31 @@ trait WebPage extends js.Object {
   @JSName("property")
   def property_clipRect(key: clipRect): js.Promise[Height] = js.native
   @JSName("property")
+  def property_content(key: content): js.Promise[String] = js.native
+  @JSName("property")
   def property_cookies(key: cookies): js.Promise[js.Array[ICookie]] = js.native
   @JSName("property")
   def property_customHeaders(key: customHeaders): js.Promise[StringDictionary[String]] = js.native
+  @JSName("property")
+  def property_focusedFrameName(key: focusedFrameName): js.Promise[String] = js.native
+  @JSName("property")
+  def property_frameContent(key: frameContent): js.Promise[String] = js.native
+  @JSName("property")
+  def property_frameName(key: frameName): js.Promise[String] = js.native
+  @JSName("property")
+  def property_framePlainText(key: framePlainText): js.Promise[String] = js.native
+  @JSName("property")
+  def property_frameTitle(key: frameTitle): js.Promise[String] = js.native
   @JSName("property")
   def property_framesCount(key: framesCount): js.Promise[Double] = js.native
   @JSName("property")
   def property_framesName(key: framesName): js.Promise[js.Array[String]] = js.native
   @JSName("property")
+  def property_libraryPath(key: libraryPath): js.Promise[String] = js.native
+  @JSName("property")
   def property_navigationLocked(key: navigationLocked): js.Promise[Boolean] = js.native
+  @JSName("property")
+  def property_offlineStoragePath(key: offlineStoragePath): js.Promise[String] = js.native
   @JSName("property")
   def property_offlineStorageQuota(key: offlineStorageQuota): js.Promise[Double] = js.native
   @JSName("property")
@@ -243,20 +289,59 @@ trait WebPage extends js.Object {
   @JSName("property")
   def property_paperSize(key: paperSize): js.Promise[IPaperSizeOptions] = js.native
   @JSName("property")
+  def property_plainText(key: plainText): js.Promise[String] = js.native
+  @JSName("property")
   def property_scrollPosition(key: scrollPosition): js.Promise[Left] = js.native
   @JSName("property")
+  def property_title(key: title): js.Promise[String] = js.native
+  @JSName("property")
+  def property_url(key: url): js.Promise[String] = js.native
+  @JSName("property")
   def property_viewportSize(key: viewportSize): js.Promise[Width] = js.native
+  @JSName("property")
+  def property_windowName(key: windowName): js.Promise[String] = js.native
   @JSName("property")
   def property_zoomFactor(key: zoomFactor): js.Promise[Double] = js.native
   def render(filename: String): js.Promise[Unit] = js.native
   def render(filename: String, options: Format): js.Promise[Unit] = js.native
   def renderBase64(`type`: String): js.Promise[String] = js.native
   def sendEvent(keyboardEventType: String, key: String): js.Promise[Unit] = js.native
+  def sendEvent(
+    keyboardEventType: String,
+    key: String,
+    null1: js.UndefOr[scala.Nothing],
+    null2: js.UndefOr[scala.Nothing],
+    modifier: Double
+  ): js.Promise[Unit] = js.native
+  def sendEvent(keyboardEventType: String, key: String, null1: js.UndefOr[scala.Nothing], null2: Unit): js.Promise[Unit] = js.native
+  def sendEvent(
+    keyboardEventType: String,
+    key: String,
+    null1: js.UndefOr[scala.Nothing],
+    null2: Unit,
+    modifier: Double
+  ): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Unit): js.Promise[Unit] = js.native
+  def sendEvent(
+    keyboardEventType: String,
+    key: String,
+    null1: Unit,
+    null2: js.UndefOr[scala.Nothing],
+    modifier: Double
+  ): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Unit, null2: Unit): js.Promise[Unit] = js.native
   def sendEvent(keyboardEventType: String, key: String, null1: Unit, null2: Unit, modifier: Double): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String): js.Promise[Unit] = js.native
+  def sendEvent(
+    mouseEventType: String,
+    mouseX: js.UndefOr[scala.Nothing],
+    mouseY: js.UndefOr[scala.Nothing],
+    button: String
+  ): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String, mouseX: js.UndefOr[scala.Nothing], mouseY: Double, button: String): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String, mouseX: Double): js.Promise[Unit] = js.native
+  def sendEvent(mouseEventType: String, mouseX: Double, mouseY: js.UndefOr[scala.Nothing], button: String): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double): js.Promise[Unit] = js.native
   def sendEvent(mouseEventType: String, mouseX: Double, mouseY: Double, button: String): js.Promise[Unit] = js.native
   def setContent(html: String, url: String): js.Promise[String] = js.native

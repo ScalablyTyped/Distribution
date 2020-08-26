@@ -27,6 +27,11 @@ object mod extends js.Object {
   def addErrorLoggingToSchema(schema: GraphQLSchema): GraphQLSchema = js.native
   def addErrorLoggingToSchema(schema: GraphQLSchema, logger: ILogger): GraphQLSchema = js.native
   def addResolversToSchema(schemaOrOptions: GraphQLSchema): GraphQLSchema = js.native
+  def addResolversToSchema(
+    schemaOrOptions: GraphQLSchema,
+    legacyInputResolvers: js.UndefOr[scala.Nothing],
+    legacyInputValidationOptions: IResolverValidationOptions
+  ): GraphQLSchema = js.native
   def addResolversToSchema(schemaOrOptions: GraphQLSchema, legacyInputResolvers: IResolvers[_, _, Record[String, _], _]): GraphQLSchema = js.native
   def addResolversToSchema(
     schemaOrOptions: GraphQLSchema,
@@ -34,6 +39,11 @@ object mod extends js.Object {
     legacyInputValidationOptions: IResolverValidationOptions
   ): GraphQLSchema = js.native
   def addResolversToSchema(schemaOrOptions: IAddResolversToSchemaOptions): GraphQLSchema = js.native
+  def addResolversToSchema(
+    schemaOrOptions: IAddResolversToSchemaOptions,
+    legacyInputResolvers: js.UndefOr[scala.Nothing],
+    legacyInputValidationOptions: IResolverValidationOptions
+  ): GraphQLSchema = js.native
   def addResolversToSchema(
     schemaOrOptions: IAddResolversToSchemaOptions,
     legacyInputResolvers: IResolvers[_, _, Record[String, _], _]

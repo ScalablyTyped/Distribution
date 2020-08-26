@@ -26,18 +26,42 @@ trait ConformancePackEvaluationFilters extends js.Object {
 
 object ConformancePackEvaluationFilters {
   @scala.inline
-  def apply(
-    ComplianceType: ConformancePackComplianceType = null,
-    ConfigRuleNames: ConformancePackConfigRuleNames = null,
-    ResourceIds: ConformancePackComplianceResourceIds = null,
-    ResourceType: StringWithCharLimit256 = null
-  ): ConformancePackEvaluationFilters = {
+  def apply(): ConformancePackEvaluationFilters = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceType != null) __obj.updateDynamic("ComplianceType")(ComplianceType.asInstanceOf[js.Any])
-    if (ConfigRuleNames != null) __obj.updateDynamic("ConfigRuleNames")(ConfigRuleNames.asInstanceOf[js.Any])
-    if (ResourceIds != null) __obj.updateDynamic("ResourceIds")(ResourceIds.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConformancePackEvaluationFilters]
   }
+  @scala.inline
+  implicit class ConformancePackEvaluationFiltersOps[Self <: ConformancePackEvaluationFilters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceType(value: ConformancePackComplianceType): Self = this.set("ComplianceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceType: Self = this.set("ComplianceType", js.undefined)
+    @scala.inline
+    def setConfigRuleNamesVarargs(value: StringWithCharLimit64*): Self = this.set("ConfigRuleNames", js.Array(value :_*))
+    @scala.inline
+    def setConfigRuleNames(value: ConformancePackConfigRuleNames): Self = this.set("ConfigRuleNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigRuleNames: Self = this.set("ConfigRuleNames", js.undefined)
+    @scala.inline
+    def setResourceIdsVarargs(value: StringWithCharLimit256*): Self = this.set("ResourceIds", js.Array(value :_*))
+    @scala.inline
+    def setResourceIds(value: ConformancePackComplianceResourceIds): Self = this.set("ResourceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIds: Self = this.set("ResourceIds", js.undefined)
+    @scala.inline
+    def setResourceType(value: StringWithCharLimit256): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

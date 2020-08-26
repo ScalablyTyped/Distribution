@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object kill extends js.Object {
   def apply(pid: Double): Unit = js.native
+  def apply(pid: Double, force: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def apply(pid: Double, force: Boolean): Unit = js.native
   def apply(pid: Double, force: Boolean, callback: js.Function0[Unit]): Unit = js.native
 }

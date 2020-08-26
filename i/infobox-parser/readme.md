@@ -12,7 +12,7 @@ Parse Wikipedia Infobox Source
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 99499 |
+| # downloads        | 104515 |
 | # stars            | 0 |
 
 ## Links

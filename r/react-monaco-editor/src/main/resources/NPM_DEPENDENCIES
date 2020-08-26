@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-monaco-editor" : "0.34.0"
+      "react-monaco-editor" : "0.39.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-monaco-editor" : "0.34.0"
+      "react-monaco-editor" : "0.39.1"
     }
   ],
   "compile-devDependencies" : [

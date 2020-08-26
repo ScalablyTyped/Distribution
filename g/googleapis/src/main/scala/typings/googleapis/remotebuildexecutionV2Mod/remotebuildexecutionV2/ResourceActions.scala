@@ -69,6 +69,7 @@ class ResourceActions protected () extends js.Object {
     */
   def execute(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def execute(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def execute(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def execute(params: ParamsResourceActionsExecute): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def execute(
     params: ParamsResourceActionsExecute,

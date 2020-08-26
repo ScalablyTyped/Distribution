@@ -52,7 +52,7 @@ object jobsMod extends js.Object {
     @js.native
     object v2
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Jobs]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Jobs]
             ]
     
     @js.native
@@ -60,7 +60,7 @@ object jobsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.jobsV3Mod.jobsV3.Jobs
               ]
             ]
@@ -70,7 +70,7 @@ object jobsMod extends js.Object {
       extends TopLevel[
               Instantiable2[
                 /* options */ GlobalOptions, 
-                js.UndefOr[/* google */ GoogleConfigurable], 
+                /* google */ js.UndefOr[GoogleConfigurable], 
                 typings.googleapis.v3p1beta1Mod.jobsV3p1beta1.Jobs
               ]
             ]

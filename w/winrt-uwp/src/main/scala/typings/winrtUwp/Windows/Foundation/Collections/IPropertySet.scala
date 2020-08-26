@@ -5,6 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a collection of key-value pairs, correlating several other collection interfaces. */
+@js.native
 trait IPropertySet
   extends IMap[String, js.Any]
 

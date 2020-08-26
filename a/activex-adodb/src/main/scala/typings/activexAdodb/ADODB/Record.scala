@@ -44,6 +44,7 @@ trait Record extends js.Object {
     * @param Async [Async=false]
     */
   def DeleteRecord(): Unit = js.native
+  def DeleteRecord(Source: js.UndefOr[scala.Nothing], Async: Boolean): Unit = js.native
   def DeleteRecord(Source: String): Unit = js.native
   def DeleteRecord(Source: String, Async: Boolean): Unit = js.native
   def Fields(Index: String): Field = js.native
@@ -80,8 +81,8 @@ trait Record extends js.Object {
     * @param Password [Password='']
     */
   def Open(
-    Source: js.UndefOr[Command | Record | Recordset | String],
-    ActiveConnection: js.UndefOr[Connection | String],
+    Source: js.UndefOr[String | Record | Recordset | Command],
+    ActiveConnection: js.UndefOr[String | Connection],
     Mode: js.UndefOr[ConnectModeEnum],
     CreateOptions: js.UndefOr[RecordCreateOptionsEnum],
     Options: js.UndefOr[RecordOpenOptionsEnum],

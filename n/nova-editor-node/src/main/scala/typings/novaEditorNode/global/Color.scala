@@ -11,9 +11,5 @@ import scala.scalajs.js.annotation._
 class Color protected ()
   extends typings.novaEditorNode.Color {
   def this(format: ColorFormat, components: ColorComponents) = this()
-  /* CompleteClass */
-  override var components: ColorComponents = js.native
-  /* CompleteClass */
-  override var format: ColorFormat = js.native
 }
 

@@ -102,56 +102,122 @@ trait TaskSet extends js.Object {
 
 object TaskSet {
   @scala.inline
-  def apply(
-    capacityProviderStrategy: CapacityProviderStrategy = null,
-    clusterArn: String = null,
-    computedDesiredCount: js.UndefOr[Integer] = js.undefined,
-    createdAt: Timestamp = null,
-    externalId: String = null,
-    id: String = null,
-    launchType: LaunchType = null,
-    loadBalancers: LoadBalancers = null,
-    networkConfiguration: NetworkConfiguration = null,
-    pendingCount: js.UndefOr[Integer] = js.undefined,
-    platformVersion: String = null,
-    runningCount: js.UndefOr[Integer] = js.undefined,
-    scale: Scale = null,
-    serviceArn: String = null,
-    serviceRegistries: ServiceRegistries = null,
-    stabilityStatus: StabilityStatus = null,
-    stabilityStatusAt: Timestamp = null,
-    startedBy: String = null,
-    status: String = null,
-    tags: Tags = null,
-    taskDefinition: String = null,
-    taskSetArn: String = null,
-    updatedAt: Timestamp = null
-  ): TaskSet = {
+  def apply(): TaskSet = {
     val __obj = js.Dynamic.literal()
-    if (capacityProviderStrategy != null) __obj.updateDynamic("capacityProviderStrategy")(capacityProviderStrategy.asInstanceOf[js.Any])
-    if (clusterArn != null) __obj.updateDynamic("clusterArn")(clusterArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(computedDesiredCount)) __obj.updateDynamic("computedDesiredCount")(computedDesiredCount.get.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
-    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
-    if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingCount)) __obj.updateDynamic("pendingCount")(pendingCount.get.asInstanceOf[js.Any])
-    if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(runningCount)) __obj.updateDynamic("runningCount")(runningCount.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (serviceArn != null) __obj.updateDynamic("serviceArn")(serviceArn.asInstanceOf[js.Any])
-    if (serviceRegistries != null) __obj.updateDynamic("serviceRegistries")(serviceRegistries.asInstanceOf[js.Any])
-    if (stabilityStatus != null) __obj.updateDynamic("stabilityStatus")(stabilityStatus.asInstanceOf[js.Any])
-    if (stabilityStatusAt != null) __obj.updateDynamic("stabilityStatusAt")(stabilityStatusAt.asInstanceOf[js.Any])
-    if (startedBy != null) __obj.updateDynamic("startedBy")(startedBy.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (taskDefinition != null) __obj.updateDynamic("taskDefinition")(taskDefinition.asInstanceOf[js.Any])
-    if (taskSetArn != null) __obj.updateDynamic("taskSetArn")(taskSetArn.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskSet]
   }
+  @scala.inline
+  implicit class TaskSetOps[Self <: TaskSet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = this.set("capacityProviderStrategy", js.Array(value :_*))
+    @scala.inline
+    def setCapacityProviderStrategy(value: CapacityProviderStrategy): Self = this.set("capacityProviderStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderStrategy: Self = this.set("capacityProviderStrategy", js.undefined)
+    @scala.inline
+    def setClusterArn(value: String): Self = this.set("clusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterArn: Self = this.set("clusterArn", js.undefined)
+    @scala.inline
+    def setComputedDesiredCount(value: Integer): Self = this.set("computedDesiredCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputedDesiredCount: Self = this.set("computedDesiredCount", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setExternalId(value: String): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLaunchType(value: LaunchType): Self = this.set("launchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchType: Self = this.set("launchType", js.undefined)
+    @scala.inline
+    def setLoadBalancersVarargs(value: LoadBalancer*): Self = this.set("loadBalancers", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancers(value: LoadBalancers): Self = this.set("loadBalancers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancers: Self = this.set("loadBalancers", js.undefined)
+    @scala.inline
+    def setNetworkConfiguration(value: NetworkConfiguration): Self = this.set("networkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkConfiguration: Self = this.set("networkConfiguration", js.undefined)
+    @scala.inline
+    def setPendingCount(value: Integer): Self = this.set("pendingCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingCount: Self = this.set("pendingCount", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: String): Self = this.set("platformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("platformVersion", js.undefined)
+    @scala.inline
+    def setRunningCount(value: Integer): Self = this.set("runningCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningCount: Self = this.set("runningCount", js.undefined)
+    @scala.inline
+    def setScale(value: Scale): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setServiceArn(value: String): Self = this.set("serviceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceArn: Self = this.set("serviceArn", js.undefined)
+    @scala.inline
+    def setServiceRegistriesVarargs(value: ServiceRegistry*): Self = this.set("serviceRegistries", js.Array(value :_*))
+    @scala.inline
+    def setServiceRegistries(value: ServiceRegistries): Self = this.set("serviceRegistries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRegistries: Self = this.set("serviceRegistries", js.undefined)
+    @scala.inline
+    def setStabilityStatus(value: StabilityStatus): Self = this.set("stabilityStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStabilityStatus: Self = this.set("stabilityStatus", js.undefined)
+    @scala.inline
+    def setStabilityStatusAt(value: Timestamp): Self = this.set("stabilityStatusAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStabilityStatusAt: Self = this.set("stabilityStatusAt", js.undefined)
+    @scala.inline
+    def setStartedBy(value: String): Self = this.set("startedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedBy: Self = this.set("startedBy", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTaskDefinition(value: String): Self = this.set("taskDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskDefinition: Self = this.set("taskDefinition", js.undefined)
+    @scala.inline
+    def setTaskSetArn(value: String): Self = this.set("taskSetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskSetArn: Self = this.set("taskSetArn", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: Timestamp): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

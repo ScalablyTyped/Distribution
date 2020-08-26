@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/opacity", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/opacity", JSImport.Namespace)
 @js.native
 object opacityMod extends js.Object {
   val propAliases: PropAliases = js.native

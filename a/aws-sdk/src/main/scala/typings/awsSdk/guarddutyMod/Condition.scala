@@ -58,34 +58,78 @@ trait Condition extends js.Object {
 
 object Condition {
   @scala.inline
-  def apply(
-    Eq: Eq = null,
-    Equals: Equals = null,
-    GreaterThan: js.UndefOr[Long] = js.undefined,
-    GreaterThanOrEqual: js.UndefOr[Long] = js.undefined,
-    Gt: js.UndefOr[Integer] = js.undefined,
-    Gte: js.UndefOr[Integer] = js.undefined,
-    LessThan: js.UndefOr[Long] = js.undefined,
-    LessThanOrEqual: js.UndefOr[Long] = js.undefined,
-    Lt: js.UndefOr[Integer] = js.undefined,
-    Lte: js.UndefOr[Integer] = js.undefined,
-    Neq: Neq = null,
-    NotEquals: NotEquals = null
-  ): Condition = {
+  def apply(): Condition = {
     val __obj = js.Dynamic.literal()
-    if (Eq != null) __obj.updateDynamic("Eq")(Eq.asInstanceOf[js.Any])
-    if (Equals != null) __obj.updateDynamic("Equals")(Equals.asInstanceOf[js.Any])
-    if (!js.isUndefined(GreaterThan)) __obj.updateDynamic("GreaterThan")(GreaterThan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GreaterThanOrEqual)) __obj.updateDynamic("GreaterThanOrEqual")(GreaterThanOrEqual.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Gt)) __obj.updateDynamic("Gt")(Gt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Gte)) __obj.updateDynamic("Gte")(Gte.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LessThan)) __obj.updateDynamic("LessThan")(LessThan.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(LessThanOrEqual)) __obj.updateDynamic("LessThanOrEqual")(LessThanOrEqual.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Lt)) __obj.updateDynamic("Lt")(Lt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Lte)) __obj.updateDynamic("Lte")(Lte.get.asInstanceOf[js.Any])
-    if (Neq != null) __obj.updateDynamic("Neq")(Neq.asInstanceOf[js.Any])
-    if (NotEquals != null) __obj.updateDynamic("NotEquals")(NotEquals.asInstanceOf[js.Any])
     __obj.asInstanceOf[Condition]
   }
+  @scala.inline
+  implicit class ConditionOps[Self <: Condition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEqVarargs(value: String*): Self = this.set("Eq", js.Array(value :_*))
+    @scala.inline
+    def setEq(value: Eq): Self = this.set("Eq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEq: Self = this.set("Eq", js.undefined)
+    @scala.inline
+    def setEqualsVarargs(value: String*): Self = this.set("Equals", js.Array(value :_*))
+    @scala.inline
+    def setEquals(value: Equals): Self = this.set("Equals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEquals: Self = this.set("Equals", js.undefined)
+    @scala.inline
+    def setGreaterThan(value: Long): Self = this.set("GreaterThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThan: Self = this.set("GreaterThan", js.undefined)
+    @scala.inline
+    def setGreaterThanOrEqual(value: Long): Self = this.set("GreaterThanOrEqual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGreaterThanOrEqual: Self = this.set("GreaterThanOrEqual", js.undefined)
+    @scala.inline
+    def setGt(value: Integer): Self = this.set("Gt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGt: Self = this.set("Gt", js.undefined)
+    @scala.inline
+    def setGte(value: Integer): Self = this.set("Gte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGte: Self = this.set("Gte", js.undefined)
+    @scala.inline
+    def setLessThan(value: Long): Self = this.set("LessThan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThan: Self = this.set("LessThan", js.undefined)
+    @scala.inline
+    def setLessThanOrEqual(value: Long): Self = this.set("LessThanOrEqual", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLessThanOrEqual: Self = this.set("LessThanOrEqual", js.undefined)
+    @scala.inline
+    def setLt(value: Integer): Self = this.set("Lt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLt: Self = this.set("Lt", js.undefined)
+    @scala.inline
+    def setLte(value: Integer): Self = this.set("Lte", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLte: Self = this.set("Lte", js.undefined)
+    @scala.inline
+    def setNeqVarargs(value: String*): Self = this.set("Neq", js.Array(value :_*))
+    @scala.inline
+    def setNeq(value: Neq): Self = this.set("Neq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeq: Self = this.set("Neq", js.undefined)
+    @scala.inline
+    def setNotEqualsVarargs(value: String*): Self = this.set("NotEquals", js.Array(value :_*))
+    @scala.inline
+    def setNotEquals(value: NotEquals): Self = this.set("NotEquals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotEquals: Self = this.set("NotEquals", js.undefined)
+  }
+  
 }
 

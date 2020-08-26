@@ -26,16 +26,36 @@ trait SchemaListVendorCustomersResponse extends js.Object {
 
 object SchemaListVendorCustomersResponse {
   @scala.inline
-  def apply(
-    customers: js.Array[SchemaCompany] = null,
-    nextPageToken: String = null,
-    totalSize: js.UndefOr[Double] = js.undefined
-  ): SchemaListVendorCustomersResponse = {
+  def apply(): SchemaListVendorCustomersResponse = {
     val __obj = js.Dynamic.literal()
-    if (customers != null) __obj.updateDynamic("customers")(customers.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(totalSize)) __obj.updateDynamic("totalSize")(totalSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListVendorCustomersResponse]
   }
+  @scala.inline
+  implicit class SchemaListVendorCustomersResponseOps[Self <: SchemaListVendorCustomersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomersVarargs(value: SchemaCompany*): Self = this.set("customers", js.Array(value :_*))
+    @scala.inline
+    def setCustomers(value: js.Array[SchemaCompany]): Self = this.set("customers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomers: Self = this.set("customers", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setTotalSize(value: Double): Self = this.set("totalSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalSize: Self = this.set("totalSize", js.undefined)
+  }
+  
 }
 

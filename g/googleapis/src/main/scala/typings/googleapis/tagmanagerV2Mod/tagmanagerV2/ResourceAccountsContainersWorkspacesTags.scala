@@ -28,6 +28,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTag] = js.native
   def create(callback: BodyResponseCallback[SchemaTag]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTag] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesTagsCreate): GaxiosPromise[SchemaTag] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesTagsCreate,
@@ -58,6 +59,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesTagsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesTagsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -85,6 +87,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTag] = js.native
   def get(callback: BodyResponseCallback[SchemaTag]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTag] = js.native
   def get(params: ParamsResourceAccountsContainersWorkspacesTagsGet): GaxiosPromise[SchemaTag] = js.native
   def get(
     params: ParamsResourceAccountsContainersWorkspacesTagsGet,
@@ -116,6 +119,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTagsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTagsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTagsResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesTagsList): GaxiosPromise[SchemaListTagsResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesTagsList,
@@ -147,6 +151,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     */
   def revert(): GaxiosPromise[SchemaRevertTagResponse] = js.native
   def revert(callback: BodyResponseCallback[SchemaRevertTagResponse]): Unit = js.native
+  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevertTagResponse] = js.native
   def revert(params: ParamsResourceAccountsContainersWorkspacesTagsRevert): GaxiosPromise[SchemaRevertTagResponse] = js.native
   def revert(
     params: ParamsResourceAccountsContainersWorkspacesTagsRevert,
@@ -179,6 +184,7 @@ class ResourceAccountsContainersWorkspacesTags protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaTag] = js.native
   def update(callback: BodyResponseCallback[SchemaTag]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTag] = js.native
   def update(params: ParamsResourceAccountsContainersWorkspacesTagsUpdate): GaxiosPromise[SchemaTag] = js.native
   def update(
     params: ParamsResourceAccountsContainersWorkspacesTagsUpdate,

@@ -14,10 +14,26 @@ trait RemoveNotificationChannelResponse extends js.Object {
 
 object RemoveNotificationChannelResponse {
   @scala.inline
-  def apply(notificationConfiguration: NotificationConfiguration = null): RemoveNotificationChannelResponse = {
+  def apply(): RemoveNotificationChannelResponse = {
     val __obj = js.Dynamic.literal()
-    if (notificationConfiguration != null) __obj.updateDynamic("notificationConfiguration")(notificationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveNotificationChannelResponse]
   }
+  @scala.inline
+  implicit class RemoveNotificationChannelResponseOps[Self <: RemoveNotificationChannelResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotificationConfiguration(value: NotificationConfiguration): Self = this.set("notificationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfiguration: Self = this.set("notificationConfiguration", js.undefined)
+  }
+  
 }
 

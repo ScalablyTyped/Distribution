@@ -18,11 +18,32 @@ trait ListProvisioningArtifactsOutput extends js.Object {
 
 object ListProvisioningArtifactsOutput {
   @scala.inline
-  def apply(NextPageToken: PageToken = null, ProvisioningArtifactDetails: ProvisioningArtifactDetails = null): ListProvisioningArtifactsOutput = {
+  def apply(): ListProvisioningArtifactsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextPageToken != null) __obj.updateDynamic("NextPageToken")(NextPageToken.asInstanceOf[js.Any])
-    if (ProvisioningArtifactDetails != null) __obj.updateDynamic("ProvisioningArtifactDetails")(ProvisioningArtifactDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProvisioningArtifactsOutput]
   }
+  @scala.inline
+  implicit class ListProvisioningArtifactsOutputOps[Self <: ListProvisioningArtifactsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: PageToken): Self = this.set("NextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("NextPageToken", js.undefined)
+    @scala.inline
+    def setProvisioningArtifactDetailsVarargs(value: ProvisioningArtifactDetail*): Self = this.set("ProvisioningArtifactDetails", js.Array(value :_*))
+    @scala.inline
+    def setProvisioningArtifactDetails(value: ProvisioningArtifactDetails): Self = this.set("ProvisioningArtifactDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningArtifactDetails: Self = this.set("ProvisioningArtifactDetails", js.undefined)
+  }
+  
 }
 

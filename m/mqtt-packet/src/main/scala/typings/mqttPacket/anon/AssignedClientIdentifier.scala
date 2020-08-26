@@ -5,66 +5,113 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AssignedClientIdentifier extends js.Object {
-  var assignedClientIdentifier: js.UndefOr[String] = js.undefined
-  var authenticationData: js.UndefOr[Buffer] = js.undefined
-  var authenticationMethod: js.UndefOr[String] = js.undefined
-  var maximumPacketSize: js.UndefOr[Double] = js.undefined
-  var maximumQoS: js.UndefOr[Double] = js.undefined
-  var reasonString: js.UndefOr[String] = js.undefined
-  var receiveMaximum: js.UndefOr[Double] = js.undefined
-  var responseInformation: js.UndefOr[String] = js.undefined
-  var retainAvailable: js.UndefOr[Boolean] = js.undefined
-  var serverKeepAlive: js.UndefOr[Double] = js.undefined
-  var serverReference: js.UndefOr[String] = js.undefined
-  var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
-  var sharedSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined
-  var subscriptionIdentifiersAvailable: js.UndefOr[Boolean] = js.undefined
-  var topicAliasMaximum: js.UndefOr[Double] = js.undefined
-  var userProperties: js.UndefOr[js.Object] = js.undefined
-  var wildcardSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined
+  var assignedClientIdentifier: js.UndefOr[String] = js.native
+  var authenticationData: js.UndefOr[Buffer] = js.native
+  var authenticationMethod: js.UndefOr[String] = js.native
+  var maximumPacketSize: js.UndefOr[Double] = js.native
+  var maximumQoS: js.UndefOr[Double] = js.native
+  var reasonString: js.UndefOr[String] = js.native
+  var receiveMaximum: js.UndefOr[Double] = js.native
+  var responseInformation: js.UndefOr[String] = js.native
+  var retainAvailable: js.UndefOr[Boolean] = js.native
+  var serverKeepAlive: js.UndefOr[Double] = js.native
+  var serverReference: js.UndefOr[String] = js.native
+  var sessionExpiryInterval: js.UndefOr[Double] = js.native
+  var sharedSubscriptionAvailable: js.UndefOr[Boolean] = js.native
+  var subscriptionIdentifiersAvailable: js.UndefOr[Boolean] = js.native
+  var topicAliasMaximum: js.UndefOr[Double] = js.native
+  var userProperties: js.UndefOr[js.Object] = js.native
+  var wildcardSubscriptionAvailable: js.UndefOr[Boolean] = js.native
 }
 
 object AssignedClientIdentifier {
   @scala.inline
-  def apply(
-    assignedClientIdentifier: String = null,
-    authenticationData: Buffer = null,
-    authenticationMethod: String = null,
-    maximumPacketSize: js.UndefOr[Double] = js.undefined,
-    maximumQoS: js.UndefOr[Double] = js.undefined,
-    reasonString: String = null,
-    receiveMaximum: js.UndefOr[Double] = js.undefined,
-    responseInformation: String = null,
-    retainAvailable: js.UndefOr[Boolean] = js.undefined,
-    serverKeepAlive: js.UndefOr[Double] = js.undefined,
-    serverReference: String = null,
-    sessionExpiryInterval: js.UndefOr[Double] = js.undefined,
-    sharedSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined,
-    subscriptionIdentifiersAvailable: js.UndefOr[Boolean] = js.undefined,
-    topicAliasMaximum: js.UndefOr[Double] = js.undefined,
-    userProperties: js.Object = null,
-    wildcardSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined
-  ): AssignedClientIdentifier = {
+  def apply(): AssignedClientIdentifier = {
     val __obj = js.Dynamic.literal()
-    if (assignedClientIdentifier != null) __obj.updateDynamic("assignedClientIdentifier")(assignedClientIdentifier.asInstanceOf[js.Any])
-    if (authenticationData != null) __obj.updateDynamic("authenticationData")(authenticationData.asInstanceOf[js.Any])
-    if (authenticationMethod != null) __obj.updateDynamic("authenticationMethod")(authenticationMethod.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumPacketSize)) __obj.updateDynamic("maximumPacketSize")(maximumPacketSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumQoS)) __obj.updateDynamic("maximumQoS")(maximumQoS.get.asInstanceOf[js.Any])
-    if (reasonString != null) __obj.updateDynamic("reasonString")(reasonString.asInstanceOf[js.Any])
-    if (!js.isUndefined(receiveMaximum)) __obj.updateDynamic("receiveMaximum")(receiveMaximum.get.asInstanceOf[js.Any])
-    if (responseInformation != null) __obj.updateDynamic("responseInformation")(responseInformation.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainAvailable)) __obj.updateDynamic("retainAvailable")(retainAvailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverKeepAlive)) __obj.updateDynamic("serverKeepAlive")(serverKeepAlive.get.asInstanceOf[js.Any])
-    if (serverReference != null) __obj.updateDynamic("serverReference")(serverReference.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionExpiryInterval)) __obj.updateDynamic("sessionExpiryInterval")(sessionExpiryInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedSubscriptionAvailable)) __obj.updateDynamic("sharedSubscriptionAvailable")(sharedSubscriptionAvailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(subscriptionIdentifiersAvailable)) __obj.updateDynamic("subscriptionIdentifiersAvailable")(subscriptionIdentifiersAvailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(topicAliasMaximum)) __obj.updateDynamic("topicAliasMaximum")(topicAliasMaximum.get.asInstanceOf[js.Any])
-    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(wildcardSubscriptionAvailable)) __obj.updateDynamic("wildcardSubscriptionAvailable")(wildcardSubscriptionAvailable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignedClientIdentifier]
   }
+  @scala.inline
+  implicit class AssignedClientIdentifierOps[Self <: AssignedClientIdentifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignedClientIdentifier(value: String): Self = this.set("assignedClientIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignedClientIdentifier: Self = this.set("assignedClientIdentifier", js.undefined)
+    @scala.inline
+    def setAuthenticationData(value: Buffer): Self = this.set("authenticationData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationData: Self = this.set("authenticationData", js.undefined)
+    @scala.inline
+    def setAuthenticationMethod(value: String): Self = this.set("authenticationMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationMethod: Self = this.set("authenticationMethod", js.undefined)
+    @scala.inline
+    def setMaximumPacketSize(value: Double): Self = this.set("maximumPacketSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumPacketSize: Self = this.set("maximumPacketSize", js.undefined)
+    @scala.inline
+    def setMaximumQoS(value: Double): Self = this.set("maximumQoS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumQoS: Self = this.set("maximumQoS", js.undefined)
+    @scala.inline
+    def setReasonString(value: String): Self = this.set("reasonString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReasonString: Self = this.set("reasonString", js.undefined)
+    @scala.inline
+    def setReceiveMaximum(value: Double): Self = this.set("receiveMaximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReceiveMaximum: Self = this.set("receiveMaximum", js.undefined)
+    @scala.inline
+    def setResponseInformation(value: String): Self = this.set("responseInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseInformation: Self = this.set("responseInformation", js.undefined)
+    @scala.inline
+    def setRetainAvailable(value: Boolean): Self = this.set("retainAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetainAvailable: Self = this.set("retainAvailable", js.undefined)
+    @scala.inline
+    def setServerKeepAlive(value: Double): Self = this.set("serverKeepAlive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerKeepAlive: Self = this.set("serverKeepAlive", js.undefined)
+    @scala.inline
+    def setServerReference(value: String): Self = this.set("serverReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerReference: Self = this.set("serverReference", js.undefined)
+    @scala.inline
+    def setSessionExpiryInterval(value: Double): Self = this.set("sessionExpiryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionExpiryInterval: Self = this.set("sessionExpiryInterval", js.undefined)
+    @scala.inline
+    def setSharedSubscriptionAvailable(value: Boolean): Self = this.set("sharedSubscriptionAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedSubscriptionAvailable: Self = this.set("sharedSubscriptionAvailable", js.undefined)
+    @scala.inline
+    def setSubscriptionIdentifiersAvailable(value: Boolean): Self = this.set("subscriptionIdentifiersAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionIdentifiersAvailable: Self = this.set("subscriptionIdentifiersAvailable", js.undefined)
+    @scala.inline
+    def setTopicAliasMaximum(value: Double): Self = this.set("topicAliasMaximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicAliasMaximum: Self = this.set("topicAliasMaximum", js.undefined)
+    @scala.inline
+    def setUserProperties(value: js.Object): Self = this.set("userProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProperties: Self = this.set("userProperties", js.undefined)
+    @scala.inline
+    def setWildcardSubscriptionAvailable(value: Boolean): Self = this.set("wildcardSubscriptionAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWildcardSubscriptionAvailable: Self = this.set("wildcardSubscriptionAvailable", js.undefined)
+  }
+  
 }
 

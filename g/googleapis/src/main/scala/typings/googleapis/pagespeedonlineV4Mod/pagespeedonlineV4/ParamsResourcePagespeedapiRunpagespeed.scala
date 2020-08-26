@@ -56,44 +56,64 @@ trait ParamsResourcePagespeedapiRunpagespeed extends StandardParameters {
 
 object ParamsResourcePagespeedapiRunpagespeed {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    fields: String = null,
-    filter_third_party_resources: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    locale: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    rule: js.Array[String] = null,
-    screenshot: js.UndefOr[Boolean] = js.undefined,
-    snapshots: js.UndefOr[Boolean] = js.undefined,
-    strategy: String = null,
-    url: String = null,
-    userIp: String = null,
-    utm_campaign: String = null,
-    utm_source: String = null
-  ): ParamsResourcePagespeedapiRunpagespeed = {
+  def apply(): ParamsResourcePagespeedapiRunpagespeed = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(filter_third_party_resources)) __obj.updateDynamic("filter_third_party_resources")(filter_third_party_resources.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapshots)) __obj.updateDynamic("snapshots")(snapshots.get.asInstanceOf[js.Any])
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (utm_campaign != null) __obj.updateDynamic("utm_campaign")(utm_campaign.asInstanceOf[js.Any])
-    if (utm_source != null) __obj.updateDynamic("utm_source")(utm_source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourcePagespeedapiRunpagespeed]
   }
+  @scala.inline
+  implicit class ParamsResourcePagespeedapiRunpagespeedOps[Self <: ParamsResourcePagespeedapiRunpagespeed] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setFilter_third_party_resources(value: Boolean): Self = this.set("filter_third_party_resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter_third_party_resources: Self = this.set("filter_third_party_resources", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setRuleVarargs(value: String*): Self = this.set("rule", js.Array(value :_*))
+    @scala.inline
+    def setRule(value: js.Array[String]): Self = this.set("rule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRule: Self = this.set("rule", js.undefined)
+    @scala.inline
+    def setScreenshot(value: Boolean): Self = this.set("screenshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenshot: Self = this.set("screenshot", js.undefined)
+    @scala.inline
+    def setSnapshots(value: Boolean): Self = this.set("snapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshots: Self = this.set("snapshots", js.undefined)
+    @scala.inline
+    def setStrategy(value: String): Self = this.set("strategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrategy: Self = this.set("strategy", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setUtm_campaign(value: String): Self = this.set("utm_campaign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_campaign: Self = this.set("utm_campaign", js.undefined)
+    @scala.inline
+    def setUtm_source(value: String): Self = this.set("utm_source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtm_source: Self = this.set("utm_source", js.undefined)
+  }
+  
 }
 

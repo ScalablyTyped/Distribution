@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * An updatable layer can be read or replaced with another layer.
   * @since OOo 1.1.2
   */
+@js.native
 trait UpdatableLayer
   extends Layer
      with XUpdatableLayer

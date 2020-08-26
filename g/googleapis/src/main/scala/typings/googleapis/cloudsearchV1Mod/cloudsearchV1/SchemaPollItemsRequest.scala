@@ -33,20 +33,44 @@ trait SchemaPollItemsRequest extends js.Object {
 
 object SchemaPollItemsRequest {
   @scala.inline
-  def apply(
-    connectorName: String = null,
-    debugOptions: SchemaDebugOptions = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    queue: String = null,
-    statusCodes: js.Array[String] = null
-  ): SchemaPollItemsRequest = {
+  def apply(): SchemaPollItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (connectorName != null) __obj.updateDynamic("connectorName")(connectorName.asInstanceOf[js.Any])
-    if (debugOptions != null) __obj.updateDynamic("debugOptions")(debugOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPollItemsRequest]
   }
+  @scala.inline
+  implicit class SchemaPollItemsRequestOps[Self <: SchemaPollItemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectorName(value: String): Self = this.set("connectorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectorName: Self = this.set("connectorName", js.undefined)
+    @scala.inline
+    def setDebugOptions(value: SchemaDebugOptions): Self = this.set("debugOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugOptions: Self = this.set("debugOptions", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setQueue(value: String): Self = this.set("queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("queue", js.undefined)
+    @scala.inline
+    def setStatusCodesVarargs(value: String*): Self = this.set("statusCodes", js.Array(value :_*))
+    @scala.inline
+    def setStatusCodes(value: js.Array[String]): Self = this.set("statusCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCodes: Self = this.set("statusCodes", js.undefined)
+  }
+  
 }
 

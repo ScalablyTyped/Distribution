@@ -5,31 +5,52 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Document counts. */
+@js.native
 trait DocCounts extends js.Object {
   /** Number of documents not successfully processed. */
-  var failed: js.UndefOr[Double] = js.undefined
+  var failed: js.UndefOr[Double] = js.native
   /** Number of pending documents. */
-  var pending: js.UndefOr[Double] = js.undefined
+  var pending: js.UndefOr[Double] = js.native
   /** Number of documents successfully processed. */
-  var successful: js.UndefOr[Double] = js.undefined
+  var successful: js.UndefOr[Double] = js.native
   /** Total number of documents. */
-  var total: js.UndefOr[Double] = js.undefined
+  var total: js.UndefOr[Double] = js.native
 }
 
 object DocCounts {
   @scala.inline
-  def apply(
-    failed: js.UndefOr[Double] = js.undefined,
-    pending: js.UndefOr[Double] = js.undefined,
-    successful: js.UndefOr[Double] = js.undefined,
-    total: js.UndefOr[Double] = js.undefined
-  ): DocCounts = {
+  def apply(): DocCounts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(failed)) __obj.updateDynamic("failed")(failed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pending)) __obj.updateDynamic("pending")(pending.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(successful)) __obj.updateDynamic("successful")(successful.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(total)) __obj.updateDynamic("total")(total.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocCounts]
   }
+  @scala.inline
+  implicit class DocCountsOps[Self <: DocCounts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFailed(value: Double): Self = this.set("failed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailed: Self = this.set("failed", js.undefined)
+    @scala.inline
+    def setPending(value: Double): Self = this.set("pending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePending: Self = this.set("pending", js.undefined)
+    @scala.inline
+    def setSuccessful(value: Double): Self = this.set("successful", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessful: Self = this.set("successful", js.undefined)
+    @scala.inline
+    def setTotal(value: Double): Self = this.set("total", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotal: Self = this.set("total", js.undefined)
+  }
+  
 }
 

@@ -17,10 +17,26 @@ trait SchemaDeleteEmbeddedObjectRequest extends js.Object {
 
 object SchemaDeleteEmbeddedObjectRequest {
   @scala.inline
-  def apply(objectId: js.UndefOr[Double] = js.undefined): SchemaDeleteEmbeddedObjectRequest = {
+  def apply(): SchemaDeleteEmbeddedObjectRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(objectId)) __obj.updateDynamic("objectId")(objectId.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDeleteEmbeddedObjectRequest]
   }
+  @scala.inline
+  implicit class SchemaDeleteEmbeddedObjectRequestOps[Self <: SchemaDeleteEmbeddedObjectRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setObjectId(value: Double): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+  }
+  
 }
 

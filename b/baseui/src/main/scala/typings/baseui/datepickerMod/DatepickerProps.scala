@@ -15,142 +15,249 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined baseui.baseui/datepicker.CalendarProps & {  aria-label ? :string,   aria-labelledby ? :string,   aria-describedby ? :string,   disabled ? :boolean,   clearable ? :boolean,   size ? :baseui.baseui/input.SIZE[keyof baseui.baseui/input.SIZE],   error ? :boolean,   positive ? :boolean,   placeholder ? :string,   required ? :boolean,   displayValueAtRangeIndex ? :number, formatDisplayValue ? (date : std.Date | std.Array<std.Date>, formatString : string): string,   formatString ? :string,   mask ? :string | null,   mountNode ? :std.HTMLElement, onClose ? (): any} */
+/* Inlined baseui.baseui/datepicker.CalendarProps & {  aria-label :string | undefined,   aria-labelledby :string | undefined,   aria-describedby :string | undefined,   disabled :boolean | undefined,   clearable :boolean | undefined,   size :baseui.baseui/input.SIZE[keyof baseui.baseui/input.SIZE] | undefined,   error :boolean | undefined,   positive :boolean | undefined,   placeholder :string | undefined,   required :boolean | undefined,   displayValueAtRangeIndex :number | undefined,   formatDisplayValue :(date : std.Date | std.Array<std.Date>, formatString : string): string | undefined,   formatString :string | undefined,   mask :string | null | undefined,   mountNode :std.HTMLElement | undefined,   onClose :(): any | undefined} */
+@js.native
 trait DatepickerProps extends js.Object {
-  var `aria-describedby`: js.UndefOr[String] = js.undefined
-  var `aria-label`: js.UndefOr[String] = js.undefined
-  var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  var autoFocusCalendar: js.UndefOr[Boolean] = js.undefined
-  var clearable: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined
-  var error: js.UndefOr[Boolean] = js.undefined
-  var excludeDates: js.UndefOr[js.Array[Date]] = js.undefined
-  var filterDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.undefined
+  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var autoFocusCalendar: js.UndefOr[Boolean] = js.native
+  var clearable: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var displayValueAtRangeIndex: js.UndefOr[Double] = js.native
+  var error: js.UndefOr[Boolean] = js.native
+  var excludeDates: js.UndefOr[js.Array[Date]] = js.native
+  var filterDate: js.UndefOr[js.Function1[/* day */ Date, Boolean]] = js.native
   var formatDisplayValue: js.UndefOr[
     js.Function2[/* date */ Date | js.Array[Date], /* formatString */ String, String]
-  ] = js.undefined
-  var formatString: js.UndefOr[String] = js.undefined
-  var highlightedDate: js.UndefOr[Date] = js.undefined
-  var includeDates: js.UndefOr[js.Array[Date]] = js.undefined
+  ] = js.native
+  var formatString: js.UndefOr[String] = js.native
+  var highlightedDate: js.UndefOr[Date] = js.native
+  var includeDates: js.UndefOr[js.Array[Date]] = js.native
   // see https://github.com/date-fns/date-fns/blob/master/src/locale/index.js.flow
-  var locale: js.UndefOr[js.Any] = js.undefined
-  var mask: js.UndefOr[String | Null] = js.undefined
-  var maxDate: js.UndefOr[Date] = js.undefined
-  var minDate: js.UndefOr[Date] = js.undefined
-  var monthsShown: js.UndefOr[Double] = js.undefined
-  var mountNode: js.UndefOr[HTMLElement] = js.undefined
-  var onChange: js.UndefOr[typings.baseui.datepickerMod.onChange] = js.undefined
-  var onClose: js.UndefOr[js.Function0[_]] = js.undefined
-  var onDayClick: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.undefined
-  var onDayMouseLeave: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.undefined
-  var onDayMouseOver: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.undefined
-  var onMonthChange: js.UndefOr[js.Function1[/* args */ DateDate, _]] = js.undefined
-  var onYearChange: js.UndefOr[js.Function1[/* args */ DateDate, _]] = js.undefined
-  var orientation: js.UndefOr[horizontal | vertical] = js.undefined
-  var overrides: js.UndefOr[DatepickerOverrides[SharedStylePropsT]] = js.undefined
-  var peekNextMonth: js.UndefOr[Boolean] = js.undefined
-  var placeholder: js.UndefOr[String] = js.undefined
-  var positive: js.UndefOr[Boolean] = js.undefined
-  var quickSelect: js.UndefOr[Boolean] = js.undefined
-  var quickSelectOptions: js.UndefOr[js.Array[BeginDate]] = js.undefined
-  var range: js.UndefOr[Boolean] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
-  var timeSelectEnd: js.UndefOr[Boolean] = js.undefined
-  var timeSelectStart: js.UndefOr[Boolean] = js.undefined
-  var trapTabbing: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[Date | js.Array[Date] | Null] = js.undefined
+  var locale: js.UndefOr[js.Any] = js.native
+  var mask: js.UndefOr[String | Null] = js.native
+  var maxDate: js.UndefOr[Date] = js.native
+  var minDate: js.UndefOr[Date] = js.native
+  var monthsShown: js.UndefOr[Double] = js.native
+  var mountNode: js.UndefOr[HTMLElement] = js.native
+  var onChange: js.UndefOr[typings.baseui.datepickerMod.onChange] = js.native
+  var onClose: js.UndefOr[js.Function0[_]] = js.native
+  var onDayClick: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.native
+  var onDayMouseLeave: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.native
+  var onDayMouseOver: js.UndefOr[js.Function1[/* args */ DateEvent, _]] = js.native
+  var onMonthChange: js.UndefOr[js.Function1[/* args */ DateDate, _]] = js.native
+  var onYearChange: js.UndefOr[js.Function1[/* args */ DateDate, _]] = js.native
+  var orientation: js.UndefOr[horizontal | vertical] = js.native
+  var overrides: js.UndefOr[DatepickerOverrides[SharedStylePropsT]] = js.native
+  var peekNextMonth: js.UndefOr[Boolean] = js.native
+  var placeholder: js.UndefOr[String] = js.native
+  var positive: js.UndefOr[Boolean] = js.native
+  var quickSelect: js.UndefOr[Boolean] = js.native
+  var quickSelectOptions: js.UndefOr[js.Array[BeginDate]] = js.native
+  var range: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var timeSelectEnd: js.UndefOr[Boolean] = js.native
+  var timeSelectStart: js.UndefOr[Boolean] = js.native
+  var trapTabbing: js.UndefOr[Boolean] = js.native
+  var value: js.UndefOr[Date | js.Array[Date] | Null] = js.native
 }
 
 object DatepickerProps {
   @scala.inline
-  def apply(
-    `aria-describedby`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    autoFocusCalendar: js.UndefOr[Boolean] = js.undefined,
-    clearable: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    displayValueAtRangeIndex: js.UndefOr[Double] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    excludeDates: js.Array[Date] = null,
-    filterDate: /* day */ Date => Boolean = null,
-    formatDisplayValue: (/* date */ Date | js.Array[Date], /* formatString */ String) => String = null,
-    formatString: String = null,
-    highlightedDate: Date = null,
-    includeDates: js.Array[Date] = null,
-    locale: js.Any = null,
-    mask: js.UndefOr[Null | String] = js.undefined,
-    maxDate: Date = null,
-    minDate: Date = null,
-    monthsShown: js.UndefOr[Double] = js.undefined,
-    mountNode: HTMLElement = null,
-    onChange: /* args */ typings.baseui.anon.Date => js.Any = null,
-    onClose: () => _ = null,
-    onDayClick: /* args */ DateEvent => _ = null,
-    onDayMouseLeave: /* args */ DateEvent => _ = null,
-    onDayMouseOver: /* args */ DateEvent => _ = null,
-    onMonthChange: /* args */ DateDate => _ = null,
-    onYearChange: /* args */ DateDate => _ = null,
-    orientation: horizontal | vertical = null,
-    overrides: DatepickerOverrides[SharedStylePropsT] = null,
-    peekNextMonth: js.UndefOr[Boolean] = js.undefined,
-    placeholder: String = null,
-    positive: js.UndefOr[Boolean] = js.undefined,
-    quickSelect: js.UndefOr[Boolean] = js.undefined,
-    quickSelectOptions: js.Array[BeginDate] = null,
-    range: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    size: mini | default_ | compact | large_ = null,
-    timeSelectEnd: js.UndefOr[Boolean] = js.undefined,
-    timeSelectStart: js.UndefOr[Boolean] = js.undefined,
-    trapTabbing: js.UndefOr[Boolean] = js.undefined,
-    value: js.UndefOr[Null | Date | js.Array[Date]] = js.undefined
-  ): DatepickerProps = {
+  def apply(): DatepickerProps = {
     val __obj = js.Dynamic.literal()
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocusCalendar)) __obj.updateDynamic("autoFocusCalendar")(autoFocusCalendar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayValueAtRangeIndex)) __obj.updateDynamic("displayValueAtRangeIndex")(displayValueAtRangeIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.get.asInstanceOf[js.Any])
-    if (excludeDates != null) __obj.updateDynamic("excludeDates")(excludeDates.asInstanceOf[js.Any])
-    if (filterDate != null) __obj.updateDynamic("filterDate")(js.Any.fromFunction1(filterDate))
-    if (formatDisplayValue != null) __obj.updateDynamic("formatDisplayValue")(js.Any.fromFunction2(formatDisplayValue))
-    if (formatString != null) __obj.updateDynamic("formatString")(formatString.asInstanceOf[js.Any])
-    if (highlightedDate != null) __obj.updateDynamic("highlightedDate")(highlightedDate.asInstanceOf[js.Any])
-    if (includeDates != null) __obj.updateDynamic("includeDates")(includeDates.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(monthsShown)) __obj.updateDynamic("monthsShown")(monthsShown.get.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction0(onClose))
-    if (onDayClick != null) __obj.updateDynamic("onDayClick")(js.Any.fromFunction1(onDayClick))
-    if (onDayMouseLeave != null) __obj.updateDynamic("onDayMouseLeave")(js.Any.fromFunction1(onDayMouseLeave))
-    if (onDayMouseOver != null) __obj.updateDynamic("onDayMouseOver")(js.Any.fromFunction1(onDayMouseOver))
-    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(js.Any.fromFunction1(onMonthChange))
-    if (onYearChange != null) __obj.updateDynamic("onYearChange")(js.Any.fromFunction1(onYearChange))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(peekNextMonth)) __obj.updateDynamic("peekNextMonth")(peekNextMonth.get.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(quickSelect)) __obj.updateDynamic("quickSelect")(quickSelect.get.asInstanceOf[js.Any])
-    if (quickSelectOptions != null) __obj.updateDynamic("quickSelectOptions")(quickSelectOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeSelectEnd)) __obj.updateDynamic("timeSelectEnd")(timeSelectEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeSelectStart)) __obj.updateDynamic("timeSelectStart")(timeSelectStart.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trapTabbing)) __obj.updateDynamic("trapTabbing")(trapTabbing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerProps]
   }
+  @scala.inline
+  implicit class DatepickerPropsOps[Self <: DatepickerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAria-describedby`(value: String): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: String): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def setAutoFocusCalendar(value: Boolean): Self = this.set("autoFocusCalendar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocusCalendar: Self = this.set("autoFocusCalendar", js.undefined)
+    @scala.inline
+    def setClearable(value: Boolean): Self = this.set("clearable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearable: Self = this.set("clearable", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisplayValueAtRangeIndex(value: Double): Self = this.set("displayValueAtRangeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayValueAtRangeIndex: Self = this.set("displayValueAtRangeIndex", js.undefined)
+    @scala.inline
+    def setError(value: Boolean): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExcludeDatesVarargs(value: Date*): Self = this.set("excludeDates", js.Array(value :_*))
+    @scala.inline
+    def setExcludeDates(value: js.Array[Date]): Self = this.set("excludeDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeDates: Self = this.set("excludeDates", js.undefined)
+    @scala.inline
+    def setFilterDate(value: /* day */ Date => Boolean): Self = this.set("filterDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterDate: Self = this.set("filterDate", js.undefined)
+    @scala.inline
+    def setFormatDisplayValue(value: (/* date */ Date | js.Array[Date], /* formatString */ String) => String): Self = this.set("formatDisplayValue", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFormatDisplayValue: Self = this.set("formatDisplayValue", js.undefined)
+    @scala.inline
+    def setFormatString(value: String): Self = this.set("formatString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatString: Self = this.set("formatString", js.undefined)
+    @scala.inline
+    def setHighlightedDate(value: Date): Self = this.set("highlightedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightedDate: Self = this.set("highlightedDate", js.undefined)
+    @scala.inline
+    def setIncludeDatesVarargs(value: Date*): Self = this.set("includeDates", js.Array(value :_*))
+    @scala.inline
+    def setIncludeDates(value: js.Array[Date]): Self = this.set("includeDates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDates: Self = this.set("includeDates", js.undefined)
+    @scala.inline
+    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskNull: Self = this.set("mask", null)
+    @scala.inline
+    def setMaxDate(value: Date): Self = this.set("maxDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDate: Self = this.set("maxDate", js.undefined)
+    @scala.inline
+    def setMinDate(value: Date): Self = this.set("minDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinDate: Self = this.set("minDate", js.undefined)
+    @scala.inline
+    def setMonthsShown(value: Double): Self = this.set("monthsShown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonthsShown: Self = this.set("monthsShown", js.undefined)
+    @scala.inline
+    def setMountNode(value: HTMLElement): Self = this.set("mountNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountNode: Self = this.set("mountNode", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* args */ typings.baseui.anon.Date => js.Any): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClose(value: () => _): Self = this.set("onClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnDayClick(value: /* args */ DateEvent => _): Self = this.set("onDayClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDayClick: Self = this.set("onDayClick", js.undefined)
+    @scala.inline
+    def setOnDayMouseLeave(value: /* args */ DateEvent => _): Self = this.set("onDayMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDayMouseLeave: Self = this.set("onDayMouseLeave", js.undefined)
+    @scala.inline
+    def setOnDayMouseOver(value: /* args */ DateEvent => _): Self = this.set("onDayMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDayMouseOver: Self = this.set("onDayMouseOver", js.undefined)
+    @scala.inline
+    def setOnMonthChange(value: /* args */ DateDate => _): Self = this.set("onMonthChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMonthChange: Self = this.set("onMonthChange", js.undefined)
+    @scala.inline
+    def setOnYearChange(value: /* args */ DateDate => _): Self = this.set("onYearChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnYearChange: Self = this.set("onYearChange", js.undefined)
+    @scala.inline
+    def setOrientation(value: horizontal | vertical): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setOverrides(value: DatepickerOverrides[SharedStylePropsT]): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPeekNextMonth(value: Boolean): Self = this.set("peekNextMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeekNextMonth: Self = this.set("peekNextMonth", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPositive(value: Boolean): Self = this.set("positive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositive: Self = this.set("positive", js.undefined)
+    @scala.inline
+    def setQuickSelect(value: Boolean): Self = this.set("quickSelect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuickSelect: Self = this.set("quickSelect", js.undefined)
+    @scala.inline
+    def setQuickSelectOptionsVarargs(value: BeginDate*): Self = this.set("quickSelectOptions", js.Array(value :_*))
+    @scala.inline
+    def setQuickSelectOptions(value: js.Array[BeginDate]): Self = this.set("quickSelectOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuickSelectOptions: Self = this.set("quickSelectOptions", js.undefined)
+    @scala.inline
+    def setRange(value: Boolean): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSize(value: mini | default_ | compact | large_): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTimeSelectEnd(value: Boolean): Self = this.set("timeSelectEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeSelectEnd: Self = this.set("timeSelectEnd", js.undefined)
+    @scala.inline
+    def setTimeSelectStart(value: Boolean): Self = this.set("timeSelectStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeSelectStart: Self = this.set("timeSelectStart", js.undefined)
+    @scala.inline
+    def setTrapTabbing(value: Boolean): Self = this.set("trapTabbing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrapTabbing: Self = this.set("trapTabbing", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: Date*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: Date | js.Array[Date]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+  }
+  
 }
 

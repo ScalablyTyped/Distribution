@@ -29,6 +29,7 @@ class ResourceBloguserinfos protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaBlogUserInfo] = js.native
   def get(callback: BodyResponseCallback[SchemaBlogUserInfo]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBlogUserInfo] = js.native
   def get(params: ParamsResourceBloguserinfosGet): GaxiosPromise[SchemaBlogUserInfo] = js.native
   def get(params: ParamsResourceBloguserinfosGet, callback: BodyResponseCallback[SchemaBlogUserInfo]): Unit = js.native
   def get(

@@ -17,6 +17,7 @@ class SvgContext protected ()
      with IRulerFactoryContext {
   def this(element: SVGElement) = this()
   def this(element: SVGElement, className: String) = this()
+  def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
   def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
   var addTitleElement: js.Any = js.native
   var className: js.Any = js.native

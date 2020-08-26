@@ -35,21 +35,43 @@ trait StackCustomCookbooksSource extends js.Object {
 
 object StackCustomCookbooksSource {
   @scala.inline
-  def apply(
-    `type`: Input[String],
-    url: Input[String],
-    password: Input[String] = null,
-    revision: Input[String] = null,
-    sshKey: Input[String] = null,
-    username: Input[String] = null
-  ): StackCustomCookbooksSource = {
+  def apply(`type`: Input[String], url: Input[String]): StackCustomCookbooksSource = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (sshKey != null) __obj.updateDynamic("sshKey")(sshKey.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackCustomCookbooksSource]
   }
+  @scala.inline
+  implicit class StackCustomCookbooksSourceOps[Self <: StackCustomCookbooksSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: Input[String]): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: Input[String]): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setRevision(value: Input[String]): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+    @scala.inline
+    def setSshKey(value: Input[String]): Self = this.set("sshKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshKey: Self = this.set("sshKey", js.undefined)
+    @scala.inline
+    def setUsername(value: Input[String]): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

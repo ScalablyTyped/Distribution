@@ -15,6 +15,12 @@ object Codec extends js.Object {
   @js.native
   sealed trait CELT_MONO extends Codec
   
+  @js.native
+  sealed trait OPUS_MUSIC extends Codec
+  
+  @js.native
+  sealed trait OPUS_VOICE extends Codec
+  
   /** speex narrowband (mono, 16bit, 8kHz) */
   @js.native
   sealed trait SPEEX_NARROWBAND extends Codec
@@ -31,6 +37,12 @@ object Codec extends js.Object {
   def apply(value: Double): js.UndefOr[Codec with Double] = js.native
   /* 3 */ @js.native
   object CELT_MONO extends TopLevel[CELT_MONO with Double]
+  
+  /* 5 */ @js.native
+  object OPUS_MUSIC extends TopLevel[OPUS_MUSIC with Double]
+  
+  /* 4 */ @js.native
+  object OPUS_VOICE extends TopLevel[OPUS_VOICE with Double]
   
   /* 0 */ @js.native
   object SPEEX_NARROWBAND extends TopLevel[SPEEX_NARROWBAND with Double]

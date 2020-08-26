@@ -16,13 +16,16 @@ object poiStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait blocking extends js.Object
+  
+  @js.native
   sealed trait body extends js.Object
   
   @js.native
   sealed trait cjs extends js.Object
   
   @js.native
-  sealed trait dependency extends js.Object
+  sealed trait defer extends js.Object
   
   @js.native
   sealed trait development extends Mode
@@ -52,9 +55,6 @@ object poiStrings {
   sealed trait `node-webkit` extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
-  
-  @js.native
   sealed trait production extends Mode
   
   @js.native
@@ -76,11 +76,13 @@ object poiStrings {
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
+  def blocking: blocking = "blocking".asInstanceOf[blocking]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def cjs: cjs = "cjs".asInstanceOf[cjs]
   @scala.inline
-  def dependency: dependency = "dependency".asInstanceOf[dependency]
+  def defer: defer = "defer".asInstanceOf[defer]
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   @scala.inline
@@ -99,8 +101,6 @@ object poiStrings {
   def node: node = "node".asInstanceOf[node]
   @scala.inline
   def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def production: production = "production".asInstanceOf[production]
   @scala.inline

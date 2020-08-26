@@ -6,274 +6,449 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DOMAttributes[T] extends js.Object {
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   // Media Events
-  var onAbort: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onAnimationEnd: js.UndefOr[AnimationEventHandler[T]] = js.undefined
-  var onAnimationIteration: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  var onAbort: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onAnimationEnd: js.UndefOr[AnimationEventHandler[T]] = js.native
+  var onAnimationIteration: js.UndefOr[AnimationEventHandler[T]] = js.native
   // Animation Events
-  var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.native
   // MouseEvents
-  var onAuxClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[T]] = js.undefined
-  var onCanPlay: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onCanPlayThrough: js.UndefOr[ReactEventHandler[T]] = js.undefined
+  var onAuxClick: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[T]] = js.native
+  var onCanPlay: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onCanPlayThrough: js.UndefOr[ReactEventHandler[T]] = js.native
   // Form Events
-  var onChange: js.UndefOr[FormEventHandler[T]] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  var onChange: js.UndefOr[FormEventHandler[T]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[T]] = js.native
   // Composition Events
-  var onCompositionEnd: js.UndefOr[CompositionEventHandler[T]] = js.undefined
-  var onCompositionStart: js.UndefOr[CompositionEventHandler[T]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[T]] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  var onCompositionEnd: js.UndefOr[CompositionEventHandler[T]] = js.native
+  var onCompositionStart: js.UndefOr[CompositionEventHandler[T]] = js.native
+  var onCompositionUpdate: js.UndefOr[CompositionEventHandler[T]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[T]] = js.native
   // Clipboard Events
-  var onCopy: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
-  var onCut: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
-  var onDoubleClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onDrag: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDragEnd: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDragEnter: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDragExit: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDragLeave: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDragOver: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDragStart: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDrop: js.UndefOr[DragEventHandler[T]] = js.undefined
-  var onDurationChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onEmptied: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onEncrypted: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onEnded: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onError: js.UndefOr[ReactEventHandler[T]] = js.undefined
+  var onCopy: js.UndefOr[ClipboardEventHandler[T]] = js.native
+  var onCut: js.UndefOr[ClipboardEventHandler[T]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onDrag: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDragEnd: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDragEnter: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDragExit: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDragLeave: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDragOver: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDragStart: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDrop: js.UndefOr[DragEventHandler[T]] = js.native
+  var onDurationChange: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onEmptied: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onEncrypted: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onEnded: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onError: js.UndefOr[ReactEventHandler[T]] = js.native
   // Focus Events
-  var onFocus: js.UndefOr[FocusEventHandler[T]] = js.undefined
-  var onInput: js.UndefOr[FormEventHandler[T]] = js.undefined
-  var onInvalid: js.UndefOr[FormEventHandler[T]] = js.undefined
+  var onFocus: js.UndefOr[FocusEventHandler[T]] = js.native
+  var onInput: js.UndefOr[FormEventHandler[T]] = js.native
+  var onInvalid: js.UndefOr[FormEventHandler[T]] = js.native
    // also a Media Event
   // Keyboard Events
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
-  var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
-  var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.undefined
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[T]] = js.native
+  var onKeyPress: js.UndefOr[KeyboardEventHandler[T]] = js.native
+  var onKeyUp: js.UndefOr[KeyboardEventHandler[T]] = js.native
   // Image Events
-  var onLoad: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onLoadStart: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onLoadedData: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onLoadedMetadata: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onMouseMove: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onMouseOut: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onMouseOver: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[T]] = js.undefined
-  var onPaste: js.UndefOr[ClipboardEventHandler[T]] = js.undefined
-  var onPause: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onPlay: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onPlaying: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onPointerCancel: js.UndefOr[PointerEventHandler[T]] = js.undefined
+  var onLoad: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onLoadStart: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onLoadedData: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onLoadedMetadata: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onMouseMove: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onMouseOut: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onMouseOver: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[T]] = js.native
+  var onPaste: js.UndefOr[ClipboardEventHandler[T]] = js.native
+  var onPause: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onPlay: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onPlaying: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onPointerCancel: js.UndefOr[PointerEventHandler[T]] = js.native
   // Pointer Events
-  var onPointerDown: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onPointerEnter: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onPointerLeave: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onPointerMove: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onPointerOut: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onPointerOver: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onPointerUp: js.UndefOr[PointerEventHandler[T]] = js.undefined
-  var onProgress: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onReset: js.UndefOr[FormEventHandler[T]] = js.undefined
+  var onPointerDown: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onPointerEnter: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onPointerLeave: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onPointerMove: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onPointerOut: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onPointerOver: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onPointerUp: js.UndefOr[PointerEventHandler[T]] = js.native
+  var onProgress: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onRateChange: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onReset: js.UndefOr[FormEventHandler[T]] = js.native
   // UI Events
-  var onScroll: js.UndefOr[UIEventHandler[T]] = js.undefined
-  var onSeeked: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onSeeking: js.UndefOr[ReactEventHandler[T]] = js.undefined
+  var onScroll: js.UndefOr[UIEventHandler[T]] = js.native
+  var onSeeked: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onSeeking: js.UndefOr[ReactEventHandler[T]] = js.native
   // Selection Events
-  var onSelect: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onStalled: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onSubmit: js.UndefOr[FormEventHandler[T]] = js.undefined
-  var onSuspend: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onTimeUpdate: js.UndefOr[ReactEventHandler[T]] = js.undefined
+  var onSelect: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onStalled: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onSubmit: js.UndefOr[FormEventHandler[T]] = js.native
+  var onSuspend: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onTimeUpdate: js.UndefOr[ReactEventHandler[T]] = js.native
   // Touch Events
-  var onTouchCancel: js.UndefOr[TouchEventHandler[T]] = js.undefined
-  var onTouchEnd: js.UndefOr[TouchEventHandler[T]] = js.undefined
-  var onTouchMove: js.UndefOr[TouchEventHandler[T]] = js.undefined
-  var onTouchStart: js.UndefOr[TouchEventHandler[T]] = js.undefined
+  var onTouchCancel: js.UndefOr[TouchEventHandler[T]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[T]] = js.native
+  var onTouchMove: js.UndefOr[TouchEventHandler[T]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[T]] = js.native
   // Transition Events
-  var onTransitionEnd: js.UndefOr[TransitionEventHandler[T]] = js.undefined
-  var onVolumeChange: js.UndefOr[ReactEventHandler[T]] = js.undefined
-  var onWaiting: js.UndefOr[ReactEventHandler[T]] = js.undefined
+  var onTransitionEnd: js.UndefOr[TransitionEventHandler[T]] = js.native
+  var onVolumeChange: js.UndefOr[ReactEventHandler[T]] = js.native
+  var onWaiting: js.UndefOr[ReactEventHandler[T]] = js.native
   // Wheel Events
-  var onWheel: js.UndefOr[WheelEventHandler[T]] = js.undefined
+  var onWheel: js.UndefOr[WheelEventHandler[T]] = js.native
 }
 
 object DOMAttributes {
   @scala.inline
-  def apply[T](
-    children: ReactNode = null,
-    dangerouslySetInnerHTML: Html = null,
-    onAbort: SyntheticEvent[T, Event] => Unit = null,
-    onAnimationEnd: AnimationEvent[T] => Unit = null,
-    onAnimationIteration: AnimationEvent[T] => Unit = null,
-    onAnimationStart: AnimationEvent[T] => Unit = null,
-    onAuxClick: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onBeforeInput: FormEvent[T] => Unit = null,
-    onBlur: FocusEvent[T] => Unit = null,
-    onCanPlay: SyntheticEvent[T, Event] => Unit = null,
-    onCanPlayThrough: SyntheticEvent[T, Event] => Unit = null,
-    onChange: FormEvent[T] => Unit = null,
-    onClick: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onCompositionEnd: CompositionEvent[T] => Unit = null,
-    onCompositionStart: CompositionEvent[T] => Unit = null,
-    onCompositionUpdate: CompositionEvent[T] => Unit = null,
-    onContextMenu: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onCopy: ClipboardEvent[T] => Unit = null,
-    onCut: ClipboardEvent[T] => Unit = null,
-    onDoubleClick: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onDrag: DragEvent[T] => Unit = null,
-    onDragEnd: DragEvent[T] => Unit = null,
-    onDragEnter: DragEvent[T] => Unit = null,
-    onDragExit: DragEvent[T] => Unit = null,
-    onDragLeave: DragEvent[T] => Unit = null,
-    onDragOver: DragEvent[T] => Unit = null,
-    onDragStart: DragEvent[T] => Unit = null,
-    onDrop: DragEvent[T] => Unit = null,
-    onDurationChange: SyntheticEvent[T, Event] => Unit = null,
-    onEmptied: SyntheticEvent[T, Event] => Unit = null,
-    onEncrypted: SyntheticEvent[T, Event] => Unit = null,
-    onEnded: SyntheticEvent[T, Event] => Unit = null,
-    onError: SyntheticEvent[T, Event] => Unit = null,
-    onFocus: FocusEvent[T] => Unit = null,
-    onInput: FormEvent[T] => Unit = null,
-    onInvalid: FormEvent[T] => Unit = null,
-    onKeyDown: KeyboardEvent[T] => Unit = null,
-    onKeyPress: KeyboardEvent[T] => Unit = null,
-    onKeyUp: KeyboardEvent[T] => Unit = null,
-    onLoad: SyntheticEvent[T, Event] => Unit = null,
-    onLoadStart: SyntheticEvent[T, Event] => Unit = null,
-    onLoadedData: SyntheticEvent[T, Event] => Unit = null,
-    onLoadedMetadata: SyntheticEvent[T, Event] => Unit = null,
-    onMouseDown: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onMouseMove: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onMouseOut: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onMouseOver: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[T, NativeMouseEvent] => Unit = null,
-    onPaste: ClipboardEvent[T] => Unit = null,
-    onPause: SyntheticEvent[T, Event] => Unit = null,
-    onPlay: SyntheticEvent[T, Event] => Unit = null,
-    onPlaying: SyntheticEvent[T, Event] => Unit = null,
-    onPointerCancel: PointerEvent[T] => Unit = null,
-    onPointerDown: PointerEvent[T] => Unit = null,
-    onPointerEnter: PointerEvent[T] => Unit = null,
-    onPointerLeave: PointerEvent[T] => Unit = null,
-    onPointerMove: PointerEvent[T] => Unit = null,
-    onPointerOut: PointerEvent[T] => Unit = null,
-    onPointerOver: PointerEvent[T] => Unit = null,
-    onPointerUp: PointerEvent[T] => Unit = null,
-    onProgress: SyntheticEvent[T, Event] => Unit = null,
-    onRateChange: SyntheticEvent[T, Event] => Unit = null,
-    onReset: FormEvent[T] => Unit = null,
-    onScroll: UIEvent[T, NativeUIEvent] => Unit = null,
-    onSeeked: SyntheticEvent[T, Event] => Unit = null,
-    onSeeking: SyntheticEvent[T, Event] => Unit = null,
-    onSelect: SyntheticEvent[T, Event] => Unit = null,
-    onStalled: SyntheticEvent[T, Event] => Unit = null,
-    onSubmit: FormEvent[T] => Unit = null,
-    onSuspend: SyntheticEvent[T, Event] => Unit = null,
-    onTimeUpdate: SyntheticEvent[T, Event] => Unit = null,
-    onTouchCancel: TouchEvent[T] => Unit = null,
-    onTouchEnd: TouchEvent[T] => Unit = null,
-    onTouchMove: TouchEvent[T] => Unit = null,
-    onTouchStart: TouchEvent[T] => Unit = null,
-    onTransitionEnd: TransitionEvent[T] => Unit = null,
-    onVolumeChange: SyntheticEvent[T, Event] => Unit = null,
-    onWaiting: SyntheticEvent[T, Event] => Unit = null,
-    onWheel: WheelEvent[T] => Unit = null
-  ): DOMAttributes[T] = {
+  def apply[T](): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1(onAbort))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1(onBeforeInput))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1(onCanPlay))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1(onCanPlayThrough))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1(onDoubleClick))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1(onDurationChange))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1(onEmptied))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1(onEncrypted))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1(onEnded))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1(onLoadStart))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1(onLoadedData))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1(onLoadedMetadata))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1(onPause))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1(onPlay))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1(onPlaying))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1(onRateChange))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1(onSeeked))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1(onSeeking))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1(onStalled))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1(onSuspend))
-    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(js.Any.fromFunction1(onTimeUpdate))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(js.Any.fromFunction1(onVolumeChange))
-    if (onWaiting != null) __obj.updateDynamic("onWaiting")(js.Any.fromFunction1(onWaiting))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
     __obj.asInstanceOf[DOMAttributes[T]]
   }
+  @scala.inline
+  implicit class DOMAttributesOps[Self <: DOMAttributes[_], T] (val x: Self with DOMAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setDangerouslySetInnerHTML(value: Html): Self = this.set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerouslySetInnerHTML: Self = this.set("dangerouslySetInnerHTML", js.undefined)
+    @scala.inline
+    def setOnAbort(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onAbort", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAbort: Self = this.set("onAbort", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: AnimationEvent[T] => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: AnimationEvent[T] => Unit): Self = this.set("onAnimationIteration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: AnimationEvent[T] => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAuxClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onAuxClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    @scala.inline
+    def setOnBeforeInput(value: FormEvent[T] => Unit): Self = this.set("onBeforeInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBeforeInput: Self = this.set("onBeforeInput", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[T] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnCanPlay(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onCanPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlay: Self = this.set("onCanPlay", js.undefined)
+    @scala.inline
+    def setOnCanPlayThrough(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onCanPlayThrough", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCanPlayThrough: Self = this.set("onCanPlayThrough", js.undefined)
+    @scala.inline
+    def setOnChange(value: FormEvent[T] => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: CompositionEvent[T] => Unit): Self = this.set("onCompositionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: CompositionEvent[T] => Unit): Self = this.set("onCompositionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: CompositionEvent[T] => Unit): Self = this.set("onCompositionUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnCopy(value: ClipboardEvent[T] => Unit): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCut(value: ClipboardEvent[T] => Unit): Self = this.set("onCut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnDoubleClick(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onDoubleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDoubleClick: Self = this.set("onDoubleClick", js.undefined)
+    @scala.inline
+    def setOnDrag(value: DragEvent[T] => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: DragEvent[T] => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: DragEvent[T] => Unit): Self = this.set("onDragEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: DragEvent[T] => Unit): Self = this.set("onDragExit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: DragEvent[T] => Unit): Self = this.set("onDragLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: DragEvent[T] => Unit): Self = this.set("onDragOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: DragEvent[T] => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDrop(value: DragEvent[T] => Unit): Self = this.set("onDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDurationChange(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onDurationChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDurationChange: Self = this.set("onDurationChange", js.undefined)
+    @scala.inline
+    def setOnEmptied(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onEmptied", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEmptied: Self = this.set("onEmptied", js.undefined)
+    @scala.inline
+    def setOnEncrypted(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onEncrypted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEncrypted: Self = this.set("onEncrypted", js.undefined)
+    @scala.inline
+    def setOnEnded(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onEnded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnEnded: Self = this.set("onEnded", js.undefined)
+    @scala.inline
+    def setOnError(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[T] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnInput(value: FormEvent[T] => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: FormEvent[T] => Unit): Self = this.set("onInvalid", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: KeyboardEvent[T] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: KeyboardEvent[T] => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: KeyboardEvent[T] => Unit): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnLoad(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadStart(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoadStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadStart: Self = this.set("onLoadStart", js.undefined)
+    @scala.inline
+    def setOnLoadedData(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoadedData", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedData: Self = this.set("onLoadedData", js.undefined)
+    @scala.inline
+    def setOnLoadedMetadata(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onLoadedMetadata", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadedMetadata: Self = this.set("onLoadedMetadata", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnPaste(value: ClipboardEvent[T] => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPause(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onPause", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPause: Self = this.set("onPause", js.undefined)
+    @scala.inline
+    def setOnPlay(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onPlay", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlay: Self = this.set("onPlay", js.undefined)
+    @scala.inline
+    def setOnPlaying(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onPlaying", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPlaying: Self = this.set("onPlaying", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: PointerEvent[T] => Unit): Self = this.set("onPointerCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: PointerEvent[T] => Unit): Self = this.set("onPointerDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: PointerEvent[T] => Unit): Self = this.set("onPointerEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: PointerEvent[T] => Unit): Self = this.set("onPointerLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: PointerEvent[T] => Unit): Self = this.set("onPointerMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: PointerEvent[T] => Unit): Self = this.set("onPointerOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: PointerEvent[T] => Unit): Self = this.set("onPointerOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: PointerEvent[T] => Unit): Self = this.set("onPointerUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnProgress(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnRateChange(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onRateChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRateChange: Self = this.set("onRateChange", js.undefined)
+    @scala.inline
+    def setOnReset(value: FormEvent[T] => Unit): Self = this.set("onReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnScroll(value: UIEvent[T, NativeUIEvent] => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnSeeked(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSeeked", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeked: Self = this.set("onSeeked", js.undefined)
+    @scala.inline
+    def setOnSeeking(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSeeking", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSeeking: Self = this.set("onSeeking", js.undefined)
+    @scala.inline
+    def setOnSelect(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setOnStalled(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onStalled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnStalled: Self = this.set("onStalled", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: FormEvent[T] => Unit): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSuspend(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onSuspend", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSuspend: Self = this.set("onSuspend", js.undefined)
+    @scala.inline
+    def setOnTimeUpdate(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onTimeUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTimeUpdate: Self = this.set("onTimeUpdate", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: TouchEvent[T] => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: TouchEvent[T] => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: TouchEvent[T] => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: TouchEvent[T] => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: TransitionEvent[T] => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnVolumeChange(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onVolumeChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnVolumeChange: Self = this.set("onVolumeChange", js.undefined)
+    @scala.inline
+    def setOnWaiting(value: SyntheticEvent[T, Event] => Unit): Self = this.set("onWaiting", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWaiting: Self = this.set("onWaiting", js.undefined)
+    @scala.inline
+    def setOnWheel(value: WheelEvent[T] => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+  }
+  
 }
 

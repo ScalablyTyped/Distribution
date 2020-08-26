@@ -18,10 +18,26 @@ trait SchemaFailurePolicy extends js.Object {
 
 object SchemaFailurePolicy {
   @scala.inline
-  def apply(retry: SchemaRetry = null): SchemaFailurePolicy = {
+  def apply(): SchemaFailurePolicy = {
     val __obj = js.Dynamic.literal()
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFailurePolicy]
   }
+  @scala.inline
+  implicit class SchemaFailurePolicyOps[Self <: SchemaFailurePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRetry(value: SchemaRetry): Self = this.set("retry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetry: Self = this.set("retry", js.undefined)
+  }
+  
 }
 

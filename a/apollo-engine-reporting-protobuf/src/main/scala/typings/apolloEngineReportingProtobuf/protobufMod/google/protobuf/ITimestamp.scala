@@ -5,20 +5,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Properties of a Timestamp. */
+@js.native
 trait ITimestamp extends js.Object {
   /** Timestamp nanos */
-  var nanos: js.UndefOr[Double | Null] = js.undefined
+  var nanos: js.UndefOr[Double | Null] = js.native
   /** Timestamp seconds */
-  var seconds: js.UndefOr[Double | Null] = js.undefined
+  var seconds: js.UndefOr[Double | Null] = js.native
 }
 
 object ITimestamp {
   @scala.inline
-  def apply(nanos: js.UndefOr[Null | Double] = js.undefined, seconds: js.UndefOr[Null | Double] = js.undefined): ITimestamp = {
+  def apply(): ITimestamp = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
-    if (!js.isUndefined(seconds)) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITimestamp]
   }
+  @scala.inline
+  implicit class ITimestampOps[Self <: ITimestamp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNanos(value: Double): Self = this.set("nanos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNanos: Self = this.set("nanos", js.undefined)
+    @scala.inline
+    def setNanosNull: Self = this.set("nanos", null)
+    @scala.inline
+    def setSeconds(value: Double): Self = this.set("seconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeconds: Self = this.set("seconds", js.undefined)
+    @scala.inline
+    def setSecondsNull: Self = this.set("seconds", null)
+  }
+  
 }
 

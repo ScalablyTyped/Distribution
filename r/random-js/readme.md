@@ -11,8 +11,8 @@ A mathematically correct random number generator library for JavaScript.
 | Full name          | random-js |
 | Keywords           | random |
 | # releases         | 8 |
-| # dependents       | 184 |
-| # downloads        | 1671261 |
+| # dependents       | 187 |
+| # downloads        | 1983066 |
 | # stars            | 23 |
 
 ## Links

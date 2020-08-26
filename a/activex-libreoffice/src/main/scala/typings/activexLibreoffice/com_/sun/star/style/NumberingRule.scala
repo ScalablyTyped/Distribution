@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * It is normally represented by a sequence of {@link com.sun.star.beans.PropertyValues} .
   */
+@js.native
 trait NumberingRule
   extends NumberingAlignment
      with NumberingLevel

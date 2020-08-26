@@ -46,28 +46,58 @@ trait DirectoryLimits extends js.Object {
 
 object DirectoryLimits {
   @scala.inline
-  def apply(
-    CloudOnlyDirectoriesCurrentCount: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyDirectoriesLimit: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyDirectoriesLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.undefined,
-    CloudOnlyMicrosoftADCurrentCount: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyMicrosoftADLimit: js.UndefOr[Limit] = js.undefined,
-    CloudOnlyMicrosoftADLimitReached: js.UndefOr[CloudOnlyDirectoriesLimitReached] = js.undefined,
-    ConnectedDirectoriesCurrentCount: js.UndefOr[Limit] = js.undefined,
-    ConnectedDirectoriesLimit: js.UndefOr[Limit] = js.undefined,
-    ConnectedDirectoriesLimitReached: js.UndefOr[ConnectedDirectoriesLimitReached] = js.undefined
-  ): DirectoryLimits = {
+  def apply(): DirectoryLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CloudOnlyDirectoriesCurrentCount)) __obj.updateDynamic("CloudOnlyDirectoriesCurrentCount")(CloudOnlyDirectoriesCurrentCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudOnlyDirectoriesLimit)) __obj.updateDynamic("CloudOnlyDirectoriesLimit")(CloudOnlyDirectoriesLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudOnlyDirectoriesLimitReached)) __obj.updateDynamic("CloudOnlyDirectoriesLimitReached")(CloudOnlyDirectoriesLimitReached.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudOnlyMicrosoftADCurrentCount)) __obj.updateDynamic("CloudOnlyMicrosoftADCurrentCount")(CloudOnlyMicrosoftADCurrentCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudOnlyMicrosoftADLimit)) __obj.updateDynamic("CloudOnlyMicrosoftADLimit")(CloudOnlyMicrosoftADLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CloudOnlyMicrosoftADLimitReached)) __obj.updateDynamic("CloudOnlyMicrosoftADLimitReached")(CloudOnlyMicrosoftADLimitReached.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectedDirectoriesCurrentCount)) __obj.updateDynamic("ConnectedDirectoriesCurrentCount")(ConnectedDirectoriesCurrentCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectedDirectoriesLimit)) __obj.updateDynamic("ConnectedDirectoriesLimit")(ConnectedDirectoriesLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConnectedDirectoriesLimitReached)) __obj.updateDynamic("ConnectedDirectoriesLimitReached")(ConnectedDirectoriesLimitReached.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryLimits]
   }
+  @scala.inline
+  implicit class DirectoryLimitsOps[Self <: DirectoryLimits] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudOnlyDirectoriesCurrentCount(value: Limit): Self = this.set("CloudOnlyDirectoriesCurrentCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudOnlyDirectoriesCurrentCount: Self = this.set("CloudOnlyDirectoriesCurrentCount", js.undefined)
+    @scala.inline
+    def setCloudOnlyDirectoriesLimit(value: Limit): Self = this.set("CloudOnlyDirectoriesLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudOnlyDirectoriesLimit: Self = this.set("CloudOnlyDirectoriesLimit", js.undefined)
+    @scala.inline
+    def setCloudOnlyDirectoriesLimitReached(value: CloudOnlyDirectoriesLimitReached): Self = this.set("CloudOnlyDirectoriesLimitReached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudOnlyDirectoriesLimitReached: Self = this.set("CloudOnlyDirectoriesLimitReached", js.undefined)
+    @scala.inline
+    def setCloudOnlyMicrosoftADCurrentCount(value: Limit): Self = this.set("CloudOnlyMicrosoftADCurrentCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudOnlyMicrosoftADCurrentCount: Self = this.set("CloudOnlyMicrosoftADCurrentCount", js.undefined)
+    @scala.inline
+    def setCloudOnlyMicrosoftADLimit(value: Limit): Self = this.set("CloudOnlyMicrosoftADLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudOnlyMicrosoftADLimit: Self = this.set("CloudOnlyMicrosoftADLimit", js.undefined)
+    @scala.inline
+    def setCloudOnlyMicrosoftADLimitReached(value: CloudOnlyDirectoriesLimitReached): Self = this.set("CloudOnlyMicrosoftADLimitReached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudOnlyMicrosoftADLimitReached: Self = this.set("CloudOnlyMicrosoftADLimitReached", js.undefined)
+    @scala.inline
+    def setConnectedDirectoriesCurrentCount(value: Limit): Self = this.set("ConnectedDirectoriesCurrentCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectedDirectoriesCurrentCount: Self = this.set("ConnectedDirectoriesCurrentCount", js.undefined)
+    @scala.inline
+    def setConnectedDirectoriesLimit(value: Limit): Self = this.set("ConnectedDirectoriesLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectedDirectoriesLimit: Self = this.set("ConnectedDirectoriesLimit", js.undefined)
+    @scala.inline
+    def setConnectedDirectoriesLimitReached(value: ConnectedDirectoriesLimitReached): Self = this.set("ConnectedDirectoriesLimitReached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectedDirectoriesLimitReached: Self = this.set("ConnectedDirectoriesLimitReached", js.undefined)
+  }
+  
 }
 

@@ -17,15 +17,5 @@ class ASPxClientRatingControlItemClickEventArgs protected ()
     * @param index An integer value that represents the index of the clicked item.
     */
   def this(processOnServer: Boolean, index: Double) = this()
-  /**
-    * Gets the index of the item related to the event.
-    */
-  /* CompleteClass */
-  override var index: Double = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

@@ -298,7 +298,29 @@ trait IgGridMethods extends js.Object {
     * @param callback Specifies a custom function to be called when the column is moved.
     */
   def moveColumn(column: js.Object, target: js.Object): Unit = js.native
+  def moveColumn(
+    column: js.Object,
+    target: js.Object,
+    after: js.UndefOr[scala.Nothing],
+    inDom: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: js.UndefOr[scala.Nothing], inDom: Boolean): Unit = js.native
+  def moveColumn(
+    column: js.Object,
+    target: js.Object,
+    after: js.UndefOr[scala.Nothing],
+    inDom: Boolean,
+    callback: js.Function
+  ): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean): Unit = js.native
+  def moveColumn(
+    column: js.Object,
+    target: js.Object,
+    after: Boolean,
+    inDom: js.UndefOr[scala.Nothing],
+    callback: js.Function
+  ): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Boolean, callback: js.Function): Unit = js.native
   /**
@@ -330,6 +352,7 @@ trait IgGridMethods extends js.Object {
     * @param updateUI Whether to update the UI or not.
     */
   def rollback(): js.Array[_] = js.native
+  def rollback(rowId: js.UndefOr[scala.Nothing], updateUI: Boolean): js.Array[_] = js.native
   def rollback(rowId: js.Object): js.Array[_] = js.native
   def rollback(rowId: js.Object, updateUI: Boolean): js.Array[_] = js.native
   /**

@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AnyEventObject
   extends EventObject
      with /* key */ StringDictionary[js.Any]
 
 object AnyEventObject {
   @scala.inline
-  def apply(`type`: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): AnyEventObject = {
+  def apply(`type`: String): AnyEventObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[AnyEventObject]
   }
 }

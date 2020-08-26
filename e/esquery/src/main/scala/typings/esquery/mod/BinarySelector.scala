@@ -18,51 +18,27 @@ trait BinarySelector extends SubjectSelector
 
 object BinarySelector {
   @scala.inline
-  def Descendant(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: descendant,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  def Descendant(left: SubjectSelector, right: SubjectSelector, `type`: descendant): BinarySelector = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySelector]
   }
   @scala.inline
-  def Child(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: child,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  def Child(left: SubjectSelector, right: SubjectSelector, `type`: child): BinarySelector = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySelector]
   }
   @scala.inline
-  def Sibling(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: sibling,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  def Sibling(left: SubjectSelector, right: SubjectSelector, `type`: sibling): BinarySelector = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySelector]
   }
   @scala.inline
-  def Adjacent(
-    left: SubjectSelector,
-    right: SubjectSelector,
-    `type`: adjacent,
-    subject: js.UndefOr[Boolean] = js.undefined
-  ): BinarySelector = {
+  def Adjacent(left: SubjectSelector, right: SubjectSelector, `type`: adjacent): BinarySelector = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinarySelector]
   }
 }

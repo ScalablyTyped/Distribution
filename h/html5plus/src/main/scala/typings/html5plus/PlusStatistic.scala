@@ -18,7 +18,11 @@ trait PlusStatistic extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventDuration(): Unit = js.native
+  def eventDuration(id: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
+  def eventDuration(id: js.UndefOr[scala.Nothing], duration: Double): Unit = js.native
+  def eventDuration(id: js.UndefOr[scala.Nothing], duration: Double, value: js.Any): Unit = js.native
   def eventDuration(id: String): Unit = js.native
+  def eventDuration(id: String, duration: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def eventDuration(id: String, duration: Double): Unit = js.native
   def eventDuration(id: String, duration: Double, value: js.Any): Unit = js.native
   /**
@@ -28,6 +32,7 @@ trait PlusStatistic extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventEnd(): Unit = js.native
+  def eventEnd(id: js.UndefOr[scala.Nothing], label: String): Unit = js.native
   def eventEnd(id: String): Unit = js.native
   def eventEnd(id: String, label: String): Unit = js.native
   /**
@@ -37,6 +42,7 @@ trait PlusStatistic extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventStart(): Unit = js.native
+  def eventStart(id: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def eventStart(id: String): Unit = js.native
   def eventStart(id: String, value: String): Unit = js.native
   /**
@@ -46,6 +52,7 @@ trait PlusStatistic extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/statistic.html](http://www.html5plus.org/doc/zh_cn/statistic.html)
     */
   def eventTrig(): Unit = js.native
+  def eventTrig(id: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def eventTrig(id: String): Unit = js.native
   def eventTrig(id: String, value: js.Any): Unit = js.native
 }

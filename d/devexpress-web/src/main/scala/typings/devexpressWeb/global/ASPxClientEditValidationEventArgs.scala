@@ -18,20 +18,5 @@ class ASPxClientEditValidationEventArgs protected ()
     * @param isValid true if the validated value is valid; otherwise, false.
     */
   def this(value: String, errorText: String, isValid: Boolean) = this()
-  /**
-    * Gets or sets the error description.
-    */
-  /* CompleteClass */
-  override var errorText: String = js.native
-  /**
-    * Gets or sets a value specifying whether the validated value is valid.
-    */
-  /* CompleteClass */
-  override var isValid: Boolean = js.native
-  /**
-    * Gets or sets the editor's value being validated.
-    */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 

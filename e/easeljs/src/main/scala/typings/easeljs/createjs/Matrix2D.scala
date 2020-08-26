@@ -34,6 +34,17 @@ trait Matrix2D extends js.Object {
     rotation: Double,
     skewX: Double,
     skewY: Double,
+    regX: js.UndefOr[scala.Nothing],
+    regY: Double
+  ): Matrix2D = js.native
+  def appendTransform(
+    x: Double,
+    y: Double,
+    scaleX: Double,
+    scaleY: Double,
+    rotation: Double,
+    skewX: Double,
+    skewY: Double,
     regX: Double
   ): Matrix2D = js.native
   def appendTransform(
@@ -64,6 +75,17 @@ trait Matrix2D extends js.Object {
     rotation: Double,
     skewX: Double,
     skewY: Double
+  ): Matrix2D = js.native
+  def prependTransform(
+    x: Double,
+    y: Double,
+    scaleX: Double,
+    scaleY: Double,
+    rotation: Double,
+    skewX: Double,
+    skewY: Double,
+    regX: js.UndefOr[scala.Nothing],
+    regY: Double
   ): Matrix2D = js.native
   def prependTransform(
     x: Double,

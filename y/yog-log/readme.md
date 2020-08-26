@@ -12,7 +12,7 @@ yog logger
 | Keywords           | fis, yog, express, kraken-js |
 | # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 8767 |
+| # downloads        | 8773 |
 | # stars            | 0 |
 
 ## Links

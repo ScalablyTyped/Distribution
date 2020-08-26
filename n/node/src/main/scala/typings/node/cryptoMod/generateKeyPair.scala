@@ -5,6 +5,7 @@ import typings.node.anon.PrivateKey
 import typings.node.nodeStrings.der
 import typings.node.nodeStrings.dsa
 import typings.node.nodeStrings.ec
+import typings.node.nodeStrings.ed25519
 import typings.node.nodeStrings.pem
 import typings.node.nodeStrings.rsa
 import typings.std.Error
@@ -46,6 +47,21 @@ object generateKeyPair extends js.Object {
     ]
   ): Unit = js.native
   def apply(
+    `type`: ed25519,
+    options: ED25519KeyPairKeyObjectOptions,
+    callback: js.Function3[/* err */ Error | Null, /* publicKey */ KeyObject, /* privateKey */ KeyObject, Unit]
+  ): Unit = js.native
+  def apply(
+    `type`: ed25519,
+    options: ED25519KeyPairOptions[der | pem, der | pem],
+    callback: js.Function3[
+      Error | Null, 
+      (/* publicKey */ Buffer) | (/* publicKey */ String), 
+      (/* privateKey */ Buffer) | (/* privateKey */ String), 
+      Unit
+    ]
+  ): Unit = js.native
+  def apply(
     `type`: rsa,
     options: RSAKeyPairKeyObjectOptions,
     callback: js.Function3[/* err */ Error | Null, /* publicKey */ KeyObject, /* privateKey */ KeyObject, Unit]
@@ -65,11 +81,15 @@ object generateKeyPair extends js.Object {
   @JSName("__promisify__")
   def promisify(`type`: ec, options: ECKeyPairOptions[der | pem, der | pem]): js.Promise[PrivateKey] = js.native
   @JSName("__promisify__")
+  def promisify(`type`: ed25519, options: ED25519KeyPairOptions[der | pem, der | pem]): js.Promise[PrivateKey] = js.native
+  @JSName("__promisify__")
   def promisify(`type`: rsa, options: RSAKeyPairOptions[der | pem, der | pem]): js.Promise[PrivateKey] = js.native
   @JSName("__promisify__")
   def promisify_dsa(`type`: dsa, options: DSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
   @JSName("__promisify__")
   def promisify_ec(`type`: ec, options: ECKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
+  @JSName("__promisify__")
+  def promisify_ed25519(`type`: ed25519, options: ED25519KeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
   @JSName("__promisify__")
   def promisify_rsa(`type`: rsa, options: RSAKeyPairKeyObjectOptions): js.Promise[KeyPairKeyObjectResult] = js.native
 }

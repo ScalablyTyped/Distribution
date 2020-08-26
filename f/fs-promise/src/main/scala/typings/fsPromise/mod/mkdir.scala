@@ -22,13 +22,13 @@ object mkdir extends js.Object {
   def apply(path: Buffer, mode: Double, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
   def apply(path: PathLike): js.Promise[Unit] = js.native
   def apply(path: PathLike, callback: NoParamCallback): Unit = js.native
-  def apply(
-    path: PathLike,
-    options: js.UndefOr[Double | MakeDirectoryOptions | Null | String],
-    callback: NoParamCallback
-  ): Unit = js.native
+  def apply(path: PathLike, options: js.UndefOr[scala.Nothing], callback: NoParamCallback): Unit = js.native
   def apply(path: PathLike, options: String): js.Promise[Unit] = js.native
+  def apply(path: PathLike, options: String, callback: NoParamCallback): Unit = js.native
   def apply(path: PathLike, options: Double): js.Promise[Unit] = js.native
+  def apply(path: PathLike, options: Double, callback: NoParamCallback): Unit = js.native
+  def apply(path: PathLike, options: Null, callback: NoParamCallback): Unit = js.native
   def apply(path: PathLike, options: MakeDirectoryOptions): js.Promise[Unit] = js.native
+  def apply(path: PathLike, options: MakeDirectoryOptions, callback: NoParamCallback): Unit = js.native
 }
 

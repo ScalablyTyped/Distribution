@@ -31,18 +31,40 @@ trait Params extends js.Object {
 
 object Params {
   @scala.inline
-  def apply(
-    Bucket: String = null,
-    Conditions: js.Array[StringDictionary[_] | (js.Tuple3[String, _, _])] = null,
-    Expires: js.UndefOr[Double] = js.undefined,
-    Fields: StringDictionary[js.Any] = null
-  ): Params = {
+  def apply(): Params = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (Conditions != null) __obj.updateDynamic("Conditions")(Conditions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Expires)) __obj.updateDynamic("Expires")(Expires.get.asInstanceOf[js.Any])
-    if (Fields != null) __obj.updateDynamic("Fields")(Fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
+  @scala.inline
+  implicit class ParamsOps[Self <: Params] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: String): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: (StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any]))*): Self = this.set("Conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[StringDictionary[_] | (js.Tuple3[String, _, _])]): Self = this.set("Conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("Conditions", js.undefined)
+    @scala.inline
+    def setExpires(value: Double): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("Expires", js.undefined)
+    @scala.inline
+    def setFields(value: StringDictionary[js.Any]): Self = this.set("Fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("Fields", js.undefined)
+  }
+  
 }
 

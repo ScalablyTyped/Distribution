@@ -53,18 +53,51 @@ object StartMedicalTranscriptionJobRequest {
     MedicalTranscriptionJobName: TranscriptionJobName,
     OutputBucketName: OutputBucketName,
     Specialty: Specialty,
-    Type: Type,
-    MediaFormat: MediaFormat = null,
-    MediaSampleRateHertz: js.UndefOr[MediaSampleRateHertz] = js.undefined,
-    OutputEncryptionKMSKeyId: KMSKeyId = null,
-    Settings: MedicalTranscriptionSetting = null
+    Type: Type
   ): StartMedicalTranscriptionJobRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Media = Media.asInstanceOf[js.Any], MedicalTranscriptionJobName = MedicalTranscriptionJobName.asInstanceOf[js.Any], OutputBucketName = OutputBucketName.asInstanceOf[js.Any], Specialty = Specialty.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (MediaFormat != null) __obj.updateDynamic("MediaFormat")(MediaFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(MediaSampleRateHertz)) __obj.updateDynamic("MediaSampleRateHertz")(MediaSampleRateHertz.get.asInstanceOf[js.Any])
-    if (OutputEncryptionKMSKeyId != null) __obj.updateDynamic("OutputEncryptionKMSKeyId")(OutputEncryptionKMSKeyId.asInstanceOf[js.Any])
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMedicalTranscriptionJobRequest]
   }
+  @scala.inline
+  implicit class StartMedicalTranscriptionJobRequestOps[Self <: StartMedicalTranscriptionJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMedia(value: Media): Self = this.set("Media", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMedicalTranscriptionJobName(value: TranscriptionJobName): Self = this.set("MedicalTranscriptionJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputBucketName(value: OutputBucketName): Self = this.set("OutputBucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpecialty(value: Specialty): Self = this.set("Specialty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Type): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMediaFormat(value: MediaFormat): Self = this.set("MediaFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaFormat: Self = this.set("MediaFormat", js.undefined)
+    @scala.inline
+    def setMediaSampleRateHertz(value: MediaSampleRateHertz): Self = this.set("MediaSampleRateHertz", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaSampleRateHertz: Self = this.set("MediaSampleRateHertz", js.undefined)
+    @scala.inline
+    def setOutputEncryptionKMSKeyId(value: KMSKeyId): Self = this.set("OutputEncryptionKMSKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputEncryptionKMSKeyId: Self = this.set("OutputEncryptionKMSKeyId", js.undefined)
+    @scala.inline
+    def setSettings(value: MedicalTranscriptionSetting): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("Settings", js.undefined)
+  }
+  
 }
 

@@ -29,17 +29,17 @@ package object interfacesMod {
     ]
   ]
   type CompositeTypeMapper = js.Function2[
-    /* type */ (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType, 
+    /* type */ (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType, 
     /* schema */ typings.graphql.mod.GraphQLSchema, 
     js.UndefOr[
-      (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType | scala.Null
+      (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType | scala.Null
     ]
   ]
   type CompositeTypeVisitor = js.Function2[
-    /* type */ (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType, 
+    /* type */ (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType, 
     /* schema */ typings.graphql.mod.GraphQLSchema, 
     js.UndefOr[
-      (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType | scala.Null
+      (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLUnionType | scala.Null
     ]
   ]
   type DirectiveMapper = js.Function2[
@@ -65,10 +65,11 @@ package object interfacesMod {
     /* schema */ typings.graphql.mod.GraphQLSchema, 
     js.UndefOr[typings.graphql.mod.GraphQLEnumType | scala.Null]
   ]
-  type EnumValueMapper = js.Function3[
-    /* value */ typings.graphql.definitionMod.GraphQLEnumValueConfig, 
+  type EnumValueMapper = js.Function4[
+    /* valueConfig */ typings.graphql.definitionMod.GraphQLEnumValueConfig, 
     /* typeName */ java.lang.String, 
     /* schema */ typings.graphql.mod.GraphQLSchema, 
+    /* externalValue */ java.lang.String, 
     js.UndefOr[
       typings.graphql.definitionMod.GraphQLEnumValueConfig | (js.Tuple2[java.lang.String, typings.graphql.definitionMod.GraphQLEnumValueConfig]) | scala.Null
     ]
@@ -84,9 +85,10 @@ package object interfacesMod {
   type FieldMapper = typings.graphqlToolsUtils.interfacesMod.GenericFieldMapper[
     typings.graphql.definitionMod.GraphQLFieldConfig[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
   ]
-  type FieldNodeMapper = js.Function2[
+  type FieldNodeMapper = js.Function3[
     /* fieldNode */ typings.graphql.astMod.FieldNode, 
     /* fragments */ typings.std.Record[java.lang.String, typings.graphql.astMod.FragmentDefinitionNode], 
+    /* transformationContext */ typings.std.Record[java.lang.String, js.Any], 
     typings.graphql.astMod.SelectionNode | js.Array[typings.graphql.astMod.SelectionNode]
   ]
   type FieldNodeMappers = typings.std.Record[
@@ -170,30 +172,26 @@ package object interfacesMod {
   ]
   type NextResolverFn = js.Function0[js.Promise[js.Any]]
   type ObjectTypeMapper = js.Function2[
-    /* type */ typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
+    /* type */ typings.graphql.mod.GraphQLObjectType[js.Any, js.Any], 
     /* schema */ typings.graphql.mod.GraphQLSchema, 
-    js.UndefOr[
-      (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | scala.Null
-    ]
+    js.UndefOr[(typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | scala.Null]
   ]
   type ObjectTypeVisitor = js.Function2[
-    /* type */ typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
+    /* type */ typings.graphql.mod.GraphQLObjectType[js.Any, js.Any], 
     /* schema */ typings.graphql.mod.GraphQLSchema, 
-    js.UndefOr[
-      (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | scala.Null
-    ]
+    js.UndefOr[(typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | scala.Null]
   ]
-  type RequestTransform = js.Function3[
+  type RequestTransform[T] = js.Function3[
     /* originalRequest */ typings.graphqlToolsUtils.interfacesMod.Request, 
     /* delegationContext */ js.UndefOr[typings.std.Record[java.lang.String, js.Any]], 
-    /* transformationContext */ js.UndefOr[typings.std.Record[java.lang.String, js.Any]], 
+    /* transformationContext */ js.UndefOr[T], 
     typings.graphqlToolsUtils.interfacesMod.Request
   ]
   type Result = typings.graphqlToolsUtils.interfacesMod.ExecutionResult[typings.std.Record[java.lang.String, js.Any]]
-  type ResultTransform = js.Function3[
+  type ResultTransform[T] = js.Function3[
     /* originalResult */ typings.graphqlToolsUtils.interfacesMod.ExecutionResult[typings.std.Record[java.lang.String, js.Any]], 
     /* delegationContext */ js.UndefOr[typings.std.Record[java.lang.String, js.Any]], 
-    /* transformationContext */ js.UndefOr[typings.std.Record[java.lang.String, js.Any]], 
+    /* transformationContext */ js.UndefOr[T], 
     typings.graphqlToolsUtils.interfacesMod.ExecutionResult[typings.std.Record[java.lang.String, js.Any]]
   ]
   type RootFieldFilter = js.Function3[
@@ -231,7 +229,7 @@ package object interfacesMod {
     /* schema */ typings.graphql.mod.GraphQLSchema, 
     js.UndefOr[typings.graphql.mod.GraphQLUnionType | scala.Null]
   ]
-  type VisitableSchemaType = typings.graphql.mod.GraphQLSchema | (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLInputObjectType | typings.graphql.definitionMod.GraphQLNamedType | typings.graphql.mod.GraphQLScalarType | (typings.graphql.definitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.definitionMod.GraphQLInputField | typings.graphql.definitionMod.GraphQLArgument | typings.graphql.mod.GraphQLUnionType | typings.graphql.mod.GraphQLEnumType | typings.graphql.definitionMod.GraphQLEnumValue
+  type VisitableSchemaType = typings.graphql.mod.GraphQLSchema | (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]) | typings.graphql.mod.GraphQLInterfaceType | typings.graphql.mod.GraphQLInputObjectType | typings.graphql.definitionMod.GraphQLNamedType | typings.graphql.mod.GraphQLScalarType | (typings.graphql.definitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | typings.graphql.definitionMod.GraphQLInputField | typings.graphql.definitionMod.GraphQLArgument | typings.graphql.mod.GraphQLUnionType | typings.graphql.mod.GraphQLEnumType | typings.graphql.definitionMod.GraphQLEnumValue
   type VisitorSelector = js.Function2[
     /* type */ typings.graphqlToolsUtils.interfacesMod.VisitableSchemaType, 
     /* methodName */ java.lang.String, 

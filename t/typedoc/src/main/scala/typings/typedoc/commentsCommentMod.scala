@@ -11,6 +11,7 @@ object commentsCommentMod extends js.Object {
   @js.native
   class Comment () extends js.Object {
     def this(shortText: String) = this()
+    def this(shortText: js.UndefOr[scala.Nothing], text: String) = this()
     def this(shortText: String, text: String) = this()
     var returns: js.UndefOr[String] = js.native
     var shortText: String = js.native

@@ -59,18 +59,38 @@ trait SchemaBuildBazelRemoteExecutionV2Action extends js.Object {
 
 object SchemaBuildBazelRemoteExecutionV2Action {
   @scala.inline
-  def apply(
-    commandDigest: SchemaBuildBazelRemoteExecutionV2Digest = null,
-    doNotCache: js.UndefOr[Boolean] = js.undefined,
-    inputRootDigest: SchemaBuildBazelRemoteExecutionV2Digest = null,
-    timeout: String = null
-  ): SchemaBuildBazelRemoteExecutionV2Action = {
+  def apply(): SchemaBuildBazelRemoteExecutionV2Action = {
     val __obj = js.Dynamic.literal()
-    if (commandDigest != null) __obj.updateDynamic("commandDigest")(commandDigest.asInstanceOf[js.Any])
-    if (!js.isUndefined(doNotCache)) __obj.updateDynamic("doNotCache")(doNotCache.get.asInstanceOf[js.Any])
-    if (inputRootDigest != null) __obj.updateDynamic("inputRootDigest")(inputRootDigest.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2Action]
   }
+  @scala.inline
+  implicit class SchemaBuildBazelRemoteExecutionV2ActionOps[Self <: SchemaBuildBazelRemoteExecutionV2Action] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommandDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("commandDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommandDigest: Self = this.set("commandDigest", js.undefined)
+    @scala.inline
+    def setDoNotCache(value: Boolean): Self = this.set("doNotCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoNotCache: Self = this.set("doNotCache", js.undefined)
+    @scala.inline
+    def setInputRootDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = this.set("inputRootDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputRootDigest: Self = this.set("inputRootDigest", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

@@ -5,1016 +5,2493 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference
+@js.native
 trait FieldsObject extends js.Object {
-  var affiliation: js.UndefOr[String] = js.undefined
-  var allowAnchor: js.UndefOr[Boolean] = js.undefined
-  var allowLinker: js.UndefOr[Boolean] = js.undefined
-  var alwaysSendReferrer: js.UndefOr[Boolean] = js.undefined
-  var anonymizeIp: js.UndefOr[Boolean] = js.undefined
-  var appId: js.UndefOr[String] = js.undefined
-  var appInstallerId: js.UndefOr[String] = js.undefined
-  var appName: js.UndefOr[String] = js.undefined
-  var appVersion: js.UndefOr[String] = js.undefined
-  var brand: js.UndefOr[String] = js.undefined
-  var campaignContent: js.UndefOr[String] = js.undefined
-  var campaignId: js.UndefOr[String] = js.undefined
-  var campaignKeyword: js.UndefOr[String] = js.undefined
-  var campaignMedium: js.UndefOr[String] = js.undefined
-  var campaignName: js.UndefOr[String] = js.undefined
-  var campaignSource: js.UndefOr[String] = js.undefined
-  var category: js.UndefOr[String] = js.undefined
-  var clientId: js.UndefOr[String] = js.undefined
-  var contentGroup1: js.UndefOr[String] = js.undefined
-  var contentGroup10: js.UndefOr[String] = js.undefined
-  var contentGroup2: js.UndefOr[String] = js.undefined
-  var contentGroup3: js.UndefOr[String] = js.undefined
-  var contentGroup4: js.UndefOr[String] = js.undefined
-  var contentGroup5: js.UndefOr[String] = js.undefined
-  var contentGroup6: js.UndefOr[String] = js.undefined
-  var contentGroup7: js.UndefOr[String] = js.undefined
-  var contentGroup8: js.UndefOr[String] = js.undefined
-  var contentGroup9: js.UndefOr[String] = js.undefined
-  var cookieDomain: js.UndefOr[String] = js.undefined
-  var cookieExpires: js.UndefOr[Double] = js.undefined
-  var cookieName: js.UndefOr[String] = js.undefined
-  var cookiePath: js.UndefOr[String] = js.undefined
-  var coupon: js.UndefOr[String] = js.undefined
-  var creative: js.UndefOr[String] = js.undefined
-  var currencyCode: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[String] = js.undefined
-  var dimension1: js.UndefOr[String] = js.undefined
-  var dimension10: js.UndefOr[String] = js.undefined
-  var dimension100: js.UndefOr[String] = js.undefined
-  var dimension101: js.UndefOr[String] = js.undefined
-  var dimension102: js.UndefOr[String] = js.undefined
-  var dimension103: js.UndefOr[String] = js.undefined
-  var dimension104: js.UndefOr[String] = js.undefined
-  var dimension105: js.UndefOr[String] = js.undefined
-  var dimension106: js.UndefOr[String] = js.undefined
-  var dimension107: js.UndefOr[String] = js.undefined
-  var dimension108: js.UndefOr[String] = js.undefined
-  var dimension109: js.UndefOr[String] = js.undefined
-  var dimension11: js.UndefOr[String] = js.undefined
-  var dimension110: js.UndefOr[String] = js.undefined
-  var dimension111: js.UndefOr[String] = js.undefined
-  var dimension112: js.UndefOr[String] = js.undefined
-  var dimension113: js.UndefOr[String] = js.undefined
-  var dimension114: js.UndefOr[String] = js.undefined
-  var dimension115: js.UndefOr[String] = js.undefined
-  var dimension116: js.UndefOr[String] = js.undefined
-  var dimension117: js.UndefOr[String] = js.undefined
-  var dimension118: js.UndefOr[String] = js.undefined
-  var dimension119: js.UndefOr[String] = js.undefined
-  var dimension12: js.UndefOr[String] = js.undefined
-  var dimension120: js.UndefOr[String] = js.undefined
-  var dimension121: js.UndefOr[String] = js.undefined
-  var dimension122: js.UndefOr[String] = js.undefined
-  var dimension123: js.UndefOr[String] = js.undefined
-  var dimension124: js.UndefOr[String] = js.undefined
-  var dimension125: js.UndefOr[String] = js.undefined
-  var dimension126: js.UndefOr[String] = js.undefined
-  var dimension127: js.UndefOr[String] = js.undefined
-  var dimension128: js.UndefOr[String] = js.undefined
-  var dimension129: js.UndefOr[String] = js.undefined
-  var dimension13: js.UndefOr[String] = js.undefined
-  var dimension130: js.UndefOr[String] = js.undefined
-  var dimension131: js.UndefOr[String] = js.undefined
-  var dimension132: js.UndefOr[String] = js.undefined
-  var dimension133: js.UndefOr[String] = js.undefined
-  var dimension134: js.UndefOr[String] = js.undefined
-  var dimension135: js.UndefOr[String] = js.undefined
-  var dimension136: js.UndefOr[String] = js.undefined
-  var dimension137: js.UndefOr[String] = js.undefined
-  var dimension138: js.UndefOr[String] = js.undefined
-  var dimension139: js.UndefOr[String] = js.undefined
-  var dimension14: js.UndefOr[String] = js.undefined
-  var dimension140: js.UndefOr[String] = js.undefined
-  var dimension141: js.UndefOr[String] = js.undefined
-  var dimension142: js.UndefOr[String] = js.undefined
-  var dimension143: js.UndefOr[String] = js.undefined
-  var dimension144: js.UndefOr[String] = js.undefined
-  var dimension145: js.UndefOr[String] = js.undefined
-  var dimension146: js.UndefOr[String] = js.undefined
-  var dimension147: js.UndefOr[String] = js.undefined
-  var dimension148: js.UndefOr[String] = js.undefined
-  var dimension149: js.UndefOr[String] = js.undefined
-  var dimension15: js.UndefOr[String] = js.undefined
-  var dimension150: js.UndefOr[String] = js.undefined
-  var dimension151: js.UndefOr[String] = js.undefined
-  var dimension152: js.UndefOr[String] = js.undefined
-  var dimension153: js.UndefOr[String] = js.undefined
-  var dimension154: js.UndefOr[String] = js.undefined
-  var dimension155: js.UndefOr[String] = js.undefined
-  var dimension156: js.UndefOr[String] = js.undefined
-  var dimension157: js.UndefOr[String] = js.undefined
-  var dimension158: js.UndefOr[String] = js.undefined
-  var dimension159: js.UndefOr[String] = js.undefined
-  var dimension16: js.UndefOr[String] = js.undefined
-  var dimension160: js.UndefOr[String] = js.undefined
-  var dimension161: js.UndefOr[String] = js.undefined
-  var dimension162: js.UndefOr[String] = js.undefined
-  var dimension163: js.UndefOr[String] = js.undefined
-  var dimension164: js.UndefOr[String] = js.undefined
-  var dimension165: js.UndefOr[String] = js.undefined
-  var dimension166: js.UndefOr[String] = js.undefined
-  var dimension167: js.UndefOr[String] = js.undefined
-  var dimension168: js.UndefOr[String] = js.undefined
-  var dimension169: js.UndefOr[String] = js.undefined
-  var dimension17: js.UndefOr[String] = js.undefined
-  var dimension170: js.UndefOr[String] = js.undefined
-  var dimension171: js.UndefOr[String] = js.undefined
-  var dimension172: js.UndefOr[String] = js.undefined
-  var dimension173: js.UndefOr[String] = js.undefined
-  var dimension174: js.UndefOr[String] = js.undefined
-  var dimension175: js.UndefOr[String] = js.undefined
-  var dimension176: js.UndefOr[String] = js.undefined
-  var dimension177: js.UndefOr[String] = js.undefined
-  var dimension178: js.UndefOr[String] = js.undefined
-  var dimension179: js.UndefOr[String] = js.undefined
-  var dimension18: js.UndefOr[String] = js.undefined
-  var dimension180: js.UndefOr[String] = js.undefined
-  var dimension181: js.UndefOr[String] = js.undefined
-  var dimension182: js.UndefOr[String] = js.undefined
-  var dimension183: js.UndefOr[String] = js.undefined
-  var dimension184: js.UndefOr[String] = js.undefined
-  var dimension185: js.UndefOr[String] = js.undefined
-  var dimension186: js.UndefOr[String] = js.undefined
-  var dimension187: js.UndefOr[String] = js.undefined
-  var dimension188: js.UndefOr[String] = js.undefined
-  var dimension189: js.UndefOr[String] = js.undefined
-  var dimension19: js.UndefOr[String] = js.undefined
-  var dimension190: js.UndefOr[String] = js.undefined
-  var dimension191: js.UndefOr[String] = js.undefined
-  var dimension192: js.UndefOr[String] = js.undefined
-  var dimension193: js.UndefOr[String] = js.undefined
-  var dimension194: js.UndefOr[String] = js.undefined
-  var dimension195: js.UndefOr[String] = js.undefined
-  var dimension196: js.UndefOr[String] = js.undefined
-  var dimension197: js.UndefOr[String] = js.undefined
-  var dimension198: js.UndefOr[String] = js.undefined
-  var dimension199: js.UndefOr[String] = js.undefined
-  var dimension2: js.UndefOr[String] = js.undefined
-  var dimension20: js.UndefOr[String] = js.undefined
-  var dimension200: js.UndefOr[String] = js.undefined
-  var dimension21: js.UndefOr[String] = js.undefined
-  var dimension22: js.UndefOr[String] = js.undefined
-  var dimension23: js.UndefOr[String] = js.undefined
-  var dimension24: js.UndefOr[String] = js.undefined
-  var dimension25: js.UndefOr[String] = js.undefined
-  var dimension26: js.UndefOr[String] = js.undefined
-  var dimension27: js.UndefOr[String] = js.undefined
-  var dimension28: js.UndefOr[String] = js.undefined
-  var dimension29: js.UndefOr[String] = js.undefined
-  var dimension3: js.UndefOr[String] = js.undefined
-  var dimension30: js.UndefOr[String] = js.undefined
-  var dimension31: js.UndefOr[String] = js.undefined
-  var dimension32: js.UndefOr[String] = js.undefined
-  var dimension33: js.UndefOr[String] = js.undefined
-  var dimension34: js.UndefOr[String] = js.undefined
-  var dimension35: js.UndefOr[String] = js.undefined
-  var dimension36: js.UndefOr[String] = js.undefined
-  var dimension37: js.UndefOr[String] = js.undefined
-  var dimension38: js.UndefOr[String] = js.undefined
-  var dimension39: js.UndefOr[String] = js.undefined
-  var dimension4: js.UndefOr[String] = js.undefined
-  var dimension40: js.UndefOr[String] = js.undefined
-  var dimension41: js.UndefOr[String] = js.undefined
-  var dimension42: js.UndefOr[String] = js.undefined
-  var dimension43: js.UndefOr[String] = js.undefined
-  var dimension44: js.UndefOr[String] = js.undefined
-  var dimension45: js.UndefOr[String] = js.undefined
-  var dimension46: js.UndefOr[String] = js.undefined
-  var dimension47: js.UndefOr[String] = js.undefined
-  var dimension48: js.UndefOr[String] = js.undefined
-  var dimension49: js.UndefOr[String] = js.undefined
-  var dimension5: js.UndefOr[String] = js.undefined
-  var dimension50: js.UndefOr[String] = js.undefined
-  var dimension51: js.UndefOr[String] = js.undefined
-  var dimension52: js.UndefOr[String] = js.undefined
-  var dimension53: js.UndefOr[String] = js.undefined
-  var dimension54: js.UndefOr[String] = js.undefined
-  var dimension55: js.UndefOr[String] = js.undefined
-  var dimension56: js.UndefOr[String] = js.undefined
-  var dimension57: js.UndefOr[String] = js.undefined
-  var dimension58: js.UndefOr[String] = js.undefined
-  var dimension59: js.UndefOr[String] = js.undefined
-  var dimension6: js.UndefOr[String] = js.undefined
-  var dimension60: js.UndefOr[String] = js.undefined
-  var dimension61: js.UndefOr[String] = js.undefined
-  var dimension62: js.UndefOr[String] = js.undefined
-  var dimension63: js.UndefOr[String] = js.undefined
-  var dimension64: js.UndefOr[String] = js.undefined
-  var dimension65: js.UndefOr[String] = js.undefined
-  var dimension66: js.UndefOr[String] = js.undefined
-  var dimension67: js.UndefOr[String] = js.undefined
-  var dimension68: js.UndefOr[String] = js.undefined
-  var dimension69: js.UndefOr[String] = js.undefined
-  var dimension7: js.UndefOr[String] = js.undefined
-  var dimension70: js.UndefOr[String] = js.undefined
-  var dimension71: js.UndefOr[String] = js.undefined
-  var dimension72: js.UndefOr[String] = js.undefined
-  var dimension73: js.UndefOr[String] = js.undefined
-  var dimension74: js.UndefOr[String] = js.undefined
-  var dimension75: js.UndefOr[String] = js.undefined
-  var dimension76: js.UndefOr[String] = js.undefined
-  var dimension77: js.UndefOr[String] = js.undefined
-  var dimension78: js.UndefOr[String] = js.undefined
-  var dimension79: js.UndefOr[String] = js.undefined
-  var dimension8: js.UndefOr[String] = js.undefined
-  var dimension80: js.UndefOr[String] = js.undefined
-  var dimension81: js.UndefOr[String] = js.undefined
-  var dimension82: js.UndefOr[String] = js.undefined
-  var dimension83: js.UndefOr[String] = js.undefined
-  var dimension84: js.UndefOr[String] = js.undefined
-  var dimension85: js.UndefOr[String] = js.undefined
-  var dimension86: js.UndefOr[String] = js.undefined
-  var dimension87: js.UndefOr[String] = js.undefined
-  var dimension88: js.UndefOr[String] = js.undefined
-  var dimension89: js.UndefOr[String] = js.undefined
-  var dimension9: js.UndefOr[String] = js.undefined
-  var dimension90: js.UndefOr[String] = js.undefined
-  var dimension91: js.UndefOr[String] = js.undefined
-  var dimension92: js.UndefOr[String] = js.undefined
-  var dimension93: js.UndefOr[String] = js.undefined
-  var dimension94: js.UndefOr[String] = js.undefined
-  var dimension95: js.UndefOr[String] = js.undefined
-  var dimension96: js.UndefOr[String] = js.undefined
-  var dimension97: js.UndefOr[String] = js.undefined
-  var dimension98: js.UndefOr[String] = js.undefined
-  var dimension99: js.UndefOr[String] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
-  var eventAction: js.UndefOr[String] = js.undefined
-  var eventCategory: js.UndefOr[String] = js.undefined
-  var eventLabel: js.UndefOr[String] = js.undefined
-  var eventValue: js.UndefOr[Double] = js.undefined
-  var exDescription: js.UndefOr[String] = js.undefined
-  var exFatal: js.UndefOr[Boolean] = js.undefined
-  var expId: js.UndefOr[String] = js.undefined
-  var expVar: js.UndefOr[String] = js.undefined
-  var flashVersion: js.UndefOr[String] = js.undefined
-  var forceSSL: js.UndefOr[Boolean] = js.undefined
-  var hitCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var hitType: js.UndefOr[HitType] = js.undefined
-  var hostname: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var javaEnabled: js.UndefOr[Boolean] = js.undefined
-  var language: js.UndefOr[String] = js.undefined
-  var legacyCookieDomain: js.UndefOr[String] = js.undefined
-  var legacyHistoryImport: js.UndefOr[Boolean] = js.undefined
-  var linkid: js.UndefOr[String] = js.undefined
-  var list: js.UndefOr[String] = js.undefined
-  var location: js.UndefOr[String] = js.undefined
-  var metric1: js.UndefOr[String | Double] = js.undefined
-  var metric10: js.UndefOr[String | Double] = js.undefined
-  var metric100: js.UndefOr[String | Double] = js.undefined
-  var metric101: js.UndefOr[String | Double] = js.undefined
-  var metric102: js.UndefOr[String | Double] = js.undefined
-  var metric103: js.UndefOr[String | Double] = js.undefined
-  var metric104: js.UndefOr[String | Double] = js.undefined
-  var metric105: js.UndefOr[String | Double] = js.undefined
-  var metric106: js.UndefOr[String | Double] = js.undefined
-  var metric107: js.UndefOr[String | Double] = js.undefined
-  var metric108: js.UndefOr[String | Double] = js.undefined
-  var metric109: js.UndefOr[String | Double] = js.undefined
-  var metric11: js.UndefOr[String | Double] = js.undefined
-  var metric110: js.UndefOr[String | Double] = js.undefined
-  var metric111: js.UndefOr[String | Double] = js.undefined
-  var metric112: js.UndefOr[String | Double] = js.undefined
-  var metric113: js.UndefOr[String | Double] = js.undefined
-  var metric114: js.UndefOr[String | Double] = js.undefined
-  var metric115: js.UndefOr[String | Double] = js.undefined
-  var metric116: js.UndefOr[String | Double] = js.undefined
-  var metric117: js.UndefOr[String | Double] = js.undefined
-  var metric118: js.UndefOr[String | Double] = js.undefined
-  var metric119: js.UndefOr[String | Double] = js.undefined
-  var metric12: js.UndefOr[String | Double] = js.undefined
-  var metric120: js.UndefOr[String | Double] = js.undefined
-  var metric121: js.UndefOr[String | Double] = js.undefined
-  var metric122: js.UndefOr[String | Double] = js.undefined
-  var metric123: js.UndefOr[String | Double] = js.undefined
-  var metric124: js.UndefOr[String | Double] = js.undefined
-  var metric125: js.UndefOr[String | Double] = js.undefined
-  var metric126: js.UndefOr[String | Double] = js.undefined
-  var metric127: js.UndefOr[String | Double] = js.undefined
-  var metric128: js.UndefOr[String | Double] = js.undefined
-  var metric129: js.UndefOr[String | Double] = js.undefined
-  var metric13: js.UndefOr[String | Double] = js.undefined
-  var metric130: js.UndefOr[String | Double] = js.undefined
-  var metric131: js.UndefOr[String | Double] = js.undefined
-  var metric132: js.UndefOr[String | Double] = js.undefined
-  var metric133: js.UndefOr[String | Double] = js.undefined
-  var metric134: js.UndefOr[String | Double] = js.undefined
-  var metric135: js.UndefOr[String | Double] = js.undefined
-  var metric136: js.UndefOr[String | Double] = js.undefined
-  var metric137: js.UndefOr[String | Double] = js.undefined
-  var metric138: js.UndefOr[String | Double] = js.undefined
-  var metric139: js.UndefOr[String | Double] = js.undefined
-  var metric14: js.UndefOr[String | Double] = js.undefined
-  var metric140: js.UndefOr[String | Double] = js.undefined
-  var metric141: js.UndefOr[String | Double] = js.undefined
-  var metric142: js.UndefOr[String | Double] = js.undefined
-  var metric143: js.UndefOr[String | Double] = js.undefined
-  var metric144: js.UndefOr[String | Double] = js.undefined
-  var metric145: js.UndefOr[String | Double] = js.undefined
-  var metric146: js.UndefOr[String | Double] = js.undefined
-  var metric147: js.UndefOr[String | Double] = js.undefined
-  var metric148: js.UndefOr[String | Double] = js.undefined
-  var metric149: js.UndefOr[String | Double] = js.undefined
-  var metric15: js.UndefOr[String | Double] = js.undefined
-  var metric150: js.UndefOr[String | Double] = js.undefined
-  var metric151: js.UndefOr[String | Double] = js.undefined
-  var metric152: js.UndefOr[String | Double] = js.undefined
-  var metric153: js.UndefOr[String | Double] = js.undefined
-  var metric154: js.UndefOr[String | Double] = js.undefined
-  var metric155: js.UndefOr[String | Double] = js.undefined
-  var metric156: js.UndefOr[String | Double] = js.undefined
-  var metric157: js.UndefOr[String | Double] = js.undefined
-  var metric158: js.UndefOr[String | Double] = js.undefined
-  var metric159: js.UndefOr[String | Double] = js.undefined
-  var metric16: js.UndefOr[String | Double] = js.undefined
-  var metric160: js.UndefOr[String | Double] = js.undefined
-  var metric161: js.UndefOr[String | Double] = js.undefined
-  var metric162: js.UndefOr[String | Double] = js.undefined
-  var metric163: js.UndefOr[String | Double] = js.undefined
-  var metric164: js.UndefOr[String | Double] = js.undefined
-  var metric165: js.UndefOr[String | Double] = js.undefined
-  var metric166: js.UndefOr[String | Double] = js.undefined
-  var metric167: js.UndefOr[String | Double] = js.undefined
-  var metric168: js.UndefOr[String | Double] = js.undefined
-  var metric169: js.UndefOr[String | Double] = js.undefined
-  var metric17: js.UndefOr[String | Double] = js.undefined
-  var metric170: js.UndefOr[String | Double] = js.undefined
-  var metric171: js.UndefOr[String | Double] = js.undefined
-  var metric172: js.UndefOr[String | Double] = js.undefined
-  var metric173: js.UndefOr[String | Double] = js.undefined
-  var metric174: js.UndefOr[String | Double] = js.undefined
-  var metric175: js.UndefOr[String | Double] = js.undefined
-  var metric176: js.UndefOr[String | Double] = js.undefined
-  var metric177: js.UndefOr[String | Double] = js.undefined
-  var metric178: js.UndefOr[String | Double] = js.undefined
-  var metric179: js.UndefOr[String | Double] = js.undefined
-  var metric18: js.UndefOr[String | Double] = js.undefined
-  var metric180: js.UndefOr[String | Double] = js.undefined
-  var metric181: js.UndefOr[String | Double] = js.undefined
-  var metric182: js.UndefOr[String | Double] = js.undefined
-  var metric183: js.UndefOr[String | Double] = js.undefined
-  var metric184: js.UndefOr[String | Double] = js.undefined
-  var metric185: js.UndefOr[String | Double] = js.undefined
-  var metric186: js.UndefOr[String | Double] = js.undefined
-  var metric187: js.UndefOr[String | Double] = js.undefined
-  var metric188: js.UndefOr[String | Double] = js.undefined
-  var metric189: js.UndefOr[String | Double] = js.undefined
-  var metric19: js.UndefOr[String | Double] = js.undefined
-  var metric190: js.UndefOr[String | Double] = js.undefined
-  var metric191: js.UndefOr[String | Double] = js.undefined
-  var metric192: js.UndefOr[String | Double] = js.undefined
-  var metric193: js.UndefOr[String | Double] = js.undefined
-  var metric194: js.UndefOr[String | Double] = js.undefined
-  var metric195: js.UndefOr[String | Double] = js.undefined
-  var metric196: js.UndefOr[String | Double] = js.undefined
-  var metric197: js.UndefOr[String | Double] = js.undefined
-  var metric198: js.UndefOr[String | Double] = js.undefined
-  var metric199: js.UndefOr[String | Double] = js.undefined
-  var metric2: js.UndefOr[String | Double] = js.undefined
-  var metric20: js.UndefOr[String | Double] = js.undefined
-  var metric200: js.UndefOr[String | Double] = js.undefined
-  var metric21: js.UndefOr[String | Double] = js.undefined
-  var metric22: js.UndefOr[String | Double] = js.undefined
-  var metric23: js.UndefOr[String | Double] = js.undefined
-  var metric24: js.UndefOr[String | Double] = js.undefined
-  var metric25: js.UndefOr[String | Double] = js.undefined
-  var metric26: js.UndefOr[String | Double] = js.undefined
-  var metric27: js.UndefOr[String | Double] = js.undefined
-  var metric28: js.UndefOr[String | Double] = js.undefined
-  var metric29: js.UndefOr[String | Double] = js.undefined
-  var metric3: js.UndefOr[String | Double] = js.undefined
-  var metric30: js.UndefOr[String | Double] = js.undefined
-  var metric31: js.UndefOr[String | Double] = js.undefined
-  var metric32: js.UndefOr[String | Double] = js.undefined
-  var metric33: js.UndefOr[String | Double] = js.undefined
-  var metric34: js.UndefOr[String | Double] = js.undefined
-  var metric35: js.UndefOr[String | Double] = js.undefined
-  var metric36: js.UndefOr[String | Double] = js.undefined
-  var metric37: js.UndefOr[String | Double] = js.undefined
-  var metric38: js.UndefOr[String | Double] = js.undefined
-  var metric39: js.UndefOr[String | Double] = js.undefined
-  var metric4: js.UndefOr[String | Double] = js.undefined
-  var metric40: js.UndefOr[String | Double] = js.undefined
-  var metric41: js.UndefOr[String | Double] = js.undefined
-  var metric42: js.UndefOr[String | Double] = js.undefined
-  var metric43: js.UndefOr[String | Double] = js.undefined
-  var metric44: js.UndefOr[String | Double] = js.undefined
-  var metric45: js.UndefOr[String | Double] = js.undefined
-  var metric46: js.UndefOr[String | Double] = js.undefined
-  var metric47: js.UndefOr[String | Double] = js.undefined
-  var metric48: js.UndefOr[String | Double] = js.undefined
-  var metric49: js.UndefOr[String | Double] = js.undefined
-  var metric5: js.UndefOr[String | Double] = js.undefined
-  var metric50: js.UndefOr[String | Double] = js.undefined
-  var metric51: js.UndefOr[String | Double] = js.undefined
-  var metric52: js.UndefOr[String | Double] = js.undefined
-  var metric53: js.UndefOr[String | Double] = js.undefined
-  var metric54: js.UndefOr[String | Double] = js.undefined
-  var metric55: js.UndefOr[String | Double] = js.undefined
-  var metric56: js.UndefOr[String | Double] = js.undefined
-  var metric57: js.UndefOr[String | Double] = js.undefined
-  var metric58: js.UndefOr[String | Double] = js.undefined
-  var metric59: js.UndefOr[String | Double] = js.undefined
-  var metric6: js.UndefOr[String | Double] = js.undefined
-  var metric60: js.UndefOr[String | Double] = js.undefined
-  var metric61: js.UndefOr[String | Double] = js.undefined
-  var metric62: js.UndefOr[String | Double] = js.undefined
-  var metric63: js.UndefOr[String | Double] = js.undefined
-  var metric64: js.UndefOr[String | Double] = js.undefined
-  var metric65: js.UndefOr[String | Double] = js.undefined
-  var metric66: js.UndefOr[String | Double] = js.undefined
-  var metric67: js.UndefOr[String | Double] = js.undefined
-  var metric68: js.UndefOr[String | Double] = js.undefined
-  var metric69: js.UndefOr[String | Double] = js.undefined
-  var metric7: js.UndefOr[String | Double] = js.undefined
-  var metric70: js.UndefOr[String | Double] = js.undefined
-  var metric71: js.UndefOr[String | Double] = js.undefined
-  var metric72: js.UndefOr[String | Double] = js.undefined
-  var metric73: js.UndefOr[String | Double] = js.undefined
-  var metric74: js.UndefOr[String | Double] = js.undefined
-  var metric75: js.UndefOr[String | Double] = js.undefined
-  var metric76: js.UndefOr[String | Double] = js.undefined
-  var metric77: js.UndefOr[String | Double] = js.undefined
-  var metric78: js.UndefOr[String | Double] = js.undefined
-  var metric79: js.UndefOr[String | Double] = js.undefined
-  var metric8: js.UndefOr[String | Double] = js.undefined
-  var metric80: js.UndefOr[String | Double] = js.undefined
-  var metric81: js.UndefOr[String | Double] = js.undefined
-  var metric82: js.UndefOr[String | Double] = js.undefined
-  var metric83: js.UndefOr[String | Double] = js.undefined
-  var metric84: js.UndefOr[String | Double] = js.undefined
-  var metric85: js.UndefOr[String | Double] = js.undefined
-  var metric86: js.UndefOr[String | Double] = js.undefined
-  var metric87: js.UndefOr[String | Double] = js.undefined
-  var metric88: js.UndefOr[String | Double] = js.undefined
-  var metric89: js.UndefOr[String | Double] = js.undefined
-  var metric9: js.UndefOr[String | Double] = js.undefined
-  var metric90: js.UndefOr[String | Double] = js.undefined
-  var metric91: js.UndefOr[String | Double] = js.undefined
-  var metric92: js.UndefOr[String | Double] = js.undefined
-  var metric93: js.UndefOr[String | Double] = js.undefined
-  var metric94: js.UndefOr[String | Double] = js.undefined
-  var metric95: js.UndefOr[String | Double] = js.undefined
-  var metric96: js.UndefOr[String | Double] = js.undefined
-  var metric97: js.UndefOr[String | Double] = js.undefined
-  var metric98: js.UndefOr[String | Double] = js.undefined
-  var metric99: js.UndefOr[String | Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var nonInteraction: js.UndefOr[Boolean] = js.undefined
-  var option: js.UndefOr[String] = js.undefined
-  var page: js.UndefOr[String] = js.undefined
-  var position: js.UndefOr[Double | String] = js.undefined
-  var price: js.UndefOr[String] = js.undefined
-  var quantity: js.UndefOr[Double] = js.undefined
-  var queueTime: js.UndefOr[Double] = js.undefined
-  var referrer: js.UndefOr[String] = js.undefined
-  var revenue: js.UndefOr[String] = js.undefined
-  var sampleRate: js.UndefOr[Double] = js.undefined
-  var screenColors: js.UndefOr[String] = js.undefined
-  var screenName: js.UndefOr[String] = js.undefined
-  var screenResolution: js.UndefOr[String] = js.undefined
-  var sessionControl: js.UndefOr[String] = js.undefined
-  var shipping: js.UndefOr[String] = js.undefined
-  var siteSpeedSampleRate: js.UndefOr[Double] = js.undefined
-  var socialAction: js.UndefOr[String] = js.undefined
-  var socialNetwork: js.UndefOr[String] = js.undefined
-  var socialTarget: js.UndefOr[String] = js.undefined
-  var some: js.UndefOr[String] = js.undefined
-  var step: js.UndefOr[Boolean | Double] = js.undefined
-  var storage: js.UndefOr[String] = js.undefined
-  var storeGac: js.UndefOr[Boolean] = js.undefined
-  var tax: js.UndefOr[String] = js.undefined
-  var timingCategory: js.UndefOr[String] = js.undefined
-  var timingLabel: js.UndefOr[String] = js.undefined
-  var timingValue: js.UndefOr[Double] = js.undefined
-  var timingVar: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var transport: js.UndefOr[String] = js.undefined
-  var useBeacon: js.UndefOr[Boolean] = js.undefined
-  var userId: js.UndefOr[String] = js.undefined
-  var variant: js.UndefOr[String] = js.undefined
-  var viewportSize: js.UndefOr[String] = js.undefined
+  var affiliation: js.UndefOr[String] = js.native
+  var allowAnchor: js.UndefOr[Boolean] = js.native
+  var allowLinker: js.UndefOr[Boolean] = js.native
+  var alwaysSendReferrer: js.UndefOr[Boolean] = js.native
+  var anonymizeIp: js.UndefOr[Boolean] = js.native
+  var appId: js.UndefOr[String] = js.native
+  var appInstallerId: js.UndefOr[String] = js.native
+  var appName: js.UndefOr[String] = js.native
+  var appVersion: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.native
+  var campaignContent: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.native
+  var campaignKeyword: js.UndefOr[String] = js.native
+  var campaignMedium: js.UndefOr[String] = js.native
+  var campaignName: js.UndefOr[String] = js.native
+  var campaignSource: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.native
+  var contentGroup1: js.UndefOr[String] = js.native
+  var contentGroup10: js.UndefOr[String] = js.native
+  var contentGroup2: js.UndefOr[String] = js.native
+  var contentGroup3: js.UndefOr[String] = js.native
+  var contentGroup4: js.UndefOr[String] = js.native
+  var contentGroup5: js.UndefOr[String] = js.native
+  var contentGroup6: js.UndefOr[String] = js.native
+  var contentGroup7: js.UndefOr[String] = js.native
+  var contentGroup8: js.UndefOr[String] = js.native
+  var contentGroup9: js.UndefOr[String] = js.native
+  var cookieDomain: js.UndefOr[String] = js.native
+  var cookieExpires: js.UndefOr[Double] = js.native
+  var cookieName: js.UndefOr[String] = js.native
+  var cookiePath: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.native
+  var creative: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[String] = js.native
+  var dimension1: js.UndefOr[String] = js.native
+  var dimension10: js.UndefOr[String] = js.native
+  var dimension100: js.UndefOr[String] = js.native
+  var dimension101: js.UndefOr[String] = js.native
+  var dimension102: js.UndefOr[String] = js.native
+  var dimension103: js.UndefOr[String] = js.native
+  var dimension104: js.UndefOr[String] = js.native
+  var dimension105: js.UndefOr[String] = js.native
+  var dimension106: js.UndefOr[String] = js.native
+  var dimension107: js.UndefOr[String] = js.native
+  var dimension108: js.UndefOr[String] = js.native
+  var dimension109: js.UndefOr[String] = js.native
+  var dimension11: js.UndefOr[String] = js.native
+  var dimension110: js.UndefOr[String] = js.native
+  var dimension111: js.UndefOr[String] = js.native
+  var dimension112: js.UndefOr[String] = js.native
+  var dimension113: js.UndefOr[String] = js.native
+  var dimension114: js.UndefOr[String] = js.native
+  var dimension115: js.UndefOr[String] = js.native
+  var dimension116: js.UndefOr[String] = js.native
+  var dimension117: js.UndefOr[String] = js.native
+  var dimension118: js.UndefOr[String] = js.native
+  var dimension119: js.UndefOr[String] = js.native
+  var dimension12: js.UndefOr[String] = js.native
+  var dimension120: js.UndefOr[String] = js.native
+  var dimension121: js.UndefOr[String] = js.native
+  var dimension122: js.UndefOr[String] = js.native
+  var dimension123: js.UndefOr[String] = js.native
+  var dimension124: js.UndefOr[String] = js.native
+  var dimension125: js.UndefOr[String] = js.native
+  var dimension126: js.UndefOr[String] = js.native
+  var dimension127: js.UndefOr[String] = js.native
+  var dimension128: js.UndefOr[String] = js.native
+  var dimension129: js.UndefOr[String] = js.native
+  var dimension13: js.UndefOr[String] = js.native
+  var dimension130: js.UndefOr[String] = js.native
+  var dimension131: js.UndefOr[String] = js.native
+  var dimension132: js.UndefOr[String] = js.native
+  var dimension133: js.UndefOr[String] = js.native
+  var dimension134: js.UndefOr[String] = js.native
+  var dimension135: js.UndefOr[String] = js.native
+  var dimension136: js.UndefOr[String] = js.native
+  var dimension137: js.UndefOr[String] = js.native
+  var dimension138: js.UndefOr[String] = js.native
+  var dimension139: js.UndefOr[String] = js.native
+  var dimension14: js.UndefOr[String] = js.native
+  var dimension140: js.UndefOr[String] = js.native
+  var dimension141: js.UndefOr[String] = js.native
+  var dimension142: js.UndefOr[String] = js.native
+  var dimension143: js.UndefOr[String] = js.native
+  var dimension144: js.UndefOr[String] = js.native
+  var dimension145: js.UndefOr[String] = js.native
+  var dimension146: js.UndefOr[String] = js.native
+  var dimension147: js.UndefOr[String] = js.native
+  var dimension148: js.UndefOr[String] = js.native
+  var dimension149: js.UndefOr[String] = js.native
+  var dimension15: js.UndefOr[String] = js.native
+  var dimension150: js.UndefOr[String] = js.native
+  var dimension151: js.UndefOr[String] = js.native
+  var dimension152: js.UndefOr[String] = js.native
+  var dimension153: js.UndefOr[String] = js.native
+  var dimension154: js.UndefOr[String] = js.native
+  var dimension155: js.UndefOr[String] = js.native
+  var dimension156: js.UndefOr[String] = js.native
+  var dimension157: js.UndefOr[String] = js.native
+  var dimension158: js.UndefOr[String] = js.native
+  var dimension159: js.UndefOr[String] = js.native
+  var dimension16: js.UndefOr[String] = js.native
+  var dimension160: js.UndefOr[String] = js.native
+  var dimension161: js.UndefOr[String] = js.native
+  var dimension162: js.UndefOr[String] = js.native
+  var dimension163: js.UndefOr[String] = js.native
+  var dimension164: js.UndefOr[String] = js.native
+  var dimension165: js.UndefOr[String] = js.native
+  var dimension166: js.UndefOr[String] = js.native
+  var dimension167: js.UndefOr[String] = js.native
+  var dimension168: js.UndefOr[String] = js.native
+  var dimension169: js.UndefOr[String] = js.native
+  var dimension17: js.UndefOr[String] = js.native
+  var dimension170: js.UndefOr[String] = js.native
+  var dimension171: js.UndefOr[String] = js.native
+  var dimension172: js.UndefOr[String] = js.native
+  var dimension173: js.UndefOr[String] = js.native
+  var dimension174: js.UndefOr[String] = js.native
+  var dimension175: js.UndefOr[String] = js.native
+  var dimension176: js.UndefOr[String] = js.native
+  var dimension177: js.UndefOr[String] = js.native
+  var dimension178: js.UndefOr[String] = js.native
+  var dimension179: js.UndefOr[String] = js.native
+  var dimension18: js.UndefOr[String] = js.native
+  var dimension180: js.UndefOr[String] = js.native
+  var dimension181: js.UndefOr[String] = js.native
+  var dimension182: js.UndefOr[String] = js.native
+  var dimension183: js.UndefOr[String] = js.native
+  var dimension184: js.UndefOr[String] = js.native
+  var dimension185: js.UndefOr[String] = js.native
+  var dimension186: js.UndefOr[String] = js.native
+  var dimension187: js.UndefOr[String] = js.native
+  var dimension188: js.UndefOr[String] = js.native
+  var dimension189: js.UndefOr[String] = js.native
+  var dimension19: js.UndefOr[String] = js.native
+  var dimension190: js.UndefOr[String] = js.native
+  var dimension191: js.UndefOr[String] = js.native
+  var dimension192: js.UndefOr[String] = js.native
+  var dimension193: js.UndefOr[String] = js.native
+  var dimension194: js.UndefOr[String] = js.native
+  var dimension195: js.UndefOr[String] = js.native
+  var dimension196: js.UndefOr[String] = js.native
+  var dimension197: js.UndefOr[String] = js.native
+  var dimension198: js.UndefOr[String] = js.native
+  var dimension199: js.UndefOr[String] = js.native
+  var dimension2: js.UndefOr[String] = js.native
+  var dimension20: js.UndefOr[String] = js.native
+  var dimension200: js.UndefOr[String] = js.native
+  var dimension21: js.UndefOr[String] = js.native
+  var dimension22: js.UndefOr[String] = js.native
+  var dimension23: js.UndefOr[String] = js.native
+  var dimension24: js.UndefOr[String] = js.native
+  var dimension25: js.UndefOr[String] = js.native
+  var dimension26: js.UndefOr[String] = js.native
+  var dimension27: js.UndefOr[String] = js.native
+  var dimension28: js.UndefOr[String] = js.native
+  var dimension29: js.UndefOr[String] = js.native
+  var dimension3: js.UndefOr[String] = js.native
+  var dimension30: js.UndefOr[String] = js.native
+  var dimension31: js.UndefOr[String] = js.native
+  var dimension32: js.UndefOr[String] = js.native
+  var dimension33: js.UndefOr[String] = js.native
+  var dimension34: js.UndefOr[String] = js.native
+  var dimension35: js.UndefOr[String] = js.native
+  var dimension36: js.UndefOr[String] = js.native
+  var dimension37: js.UndefOr[String] = js.native
+  var dimension38: js.UndefOr[String] = js.native
+  var dimension39: js.UndefOr[String] = js.native
+  var dimension4: js.UndefOr[String] = js.native
+  var dimension40: js.UndefOr[String] = js.native
+  var dimension41: js.UndefOr[String] = js.native
+  var dimension42: js.UndefOr[String] = js.native
+  var dimension43: js.UndefOr[String] = js.native
+  var dimension44: js.UndefOr[String] = js.native
+  var dimension45: js.UndefOr[String] = js.native
+  var dimension46: js.UndefOr[String] = js.native
+  var dimension47: js.UndefOr[String] = js.native
+  var dimension48: js.UndefOr[String] = js.native
+  var dimension49: js.UndefOr[String] = js.native
+  var dimension5: js.UndefOr[String] = js.native
+  var dimension50: js.UndefOr[String] = js.native
+  var dimension51: js.UndefOr[String] = js.native
+  var dimension52: js.UndefOr[String] = js.native
+  var dimension53: js.UndefOr[String] = js.native
+  var dimension54: js.UndefOr[String] = js.native
+  var dimension55: js.UndefOr[String] = js.native
+  var dimension56: js.UndefOr[String] = js.native
+  var dimension57: js.UndefOr[String] = js.native
+  var dimension58: js.UndefOr[String] = js.native
+  var dimension59: js.UndefOr[String] = js.native
+  var dimension6: js.UndefOr[String] = js.native
+  var dimension60: js.UndefOr[String] = js.native
+  var dimension61: js.UndefOr[String] = js.native
+  var dimension62: js.UndefOr[String] = js.native
+  var dimension63: js.UndefOr[String] = js.native
+  var dimension64: js.UndefOr[String] = js.native
+  var dimension65: js.UndefOr[String] = js.native
+  var dimension66: js.UndefOr[String] = js.native
+  var dimension67: js.UndefOr[String] = js.native
+  var dimension68: js.UndefOr[String] = js.native
+  var dimension69: js.UndefOr[String] = js.native
+  var dimension7: js.UndefOr[String] = js.native
+  var dimension70: js.UndefOr[String] = js.native
+  var dimension71: js.UndefOr[String] = js.native
+  var dimension72: js.UndefOr[String] = js.native
+  var dimension73: js.UndefOr[String] = js.native
+  var dimension74: js.UndefOr[String] = js.native
+  var dimension75: js.UndefOr[String] = js.native
+  var dimension76: js.UndefOr[String] = js.native
+  var dimension77: js.UndefOr[String] = js.native
+  var dimension78: js.UndefOr[String] = js.native
+  var dimension79: js.UndefOr[String] = js.native
+  var dimension8: js.UndefOr[String] = js.native
+  var dimension80: js.UndefOr[String] = js.native
+  var dimension81: js.UndefOr[String] = js.native
+  var dimension82: js.UndefOr[String] = js.native
+  var dimension83: js.UndefOr[String] = js.native
+  var dimension84: js.UndefOr[String] = js.native
+  var dimension85: js.UndefOr[String] = js.native
+  var dimension86: js.UndefOr[String] = js.native
+  var dimension87: js.UndefOr[String] = js.native
+  var dimension88: js.UndefOr[String] = js.native
+  var dimension89: js.UndefOr[String] = js.native
+  var dimension9: js.UndefOr[String] = js.native
+  var dimension90: js.UndefOr[String] = js.native
+  var dimension91: js.UndefOr[String] = js.native
+  var dimension92: js.UndefOr[String] = js.native
+  var dimension93: js.UndefOr[String] = js.native
+  var dimension94: js.UndefOr[String] = js.native
+  var dimension95: js.UndefOr[String] = js.native
+  var dimension96: js.UndefOr[String] = js.native
+  var dimension97: js.UndefOr[String] = js.native
+  var dimension98: js.UndefOr[String] = js.native
+  var dimension99: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.native
+  var eventAction: js.UndefOr[String] = js.native
+  var eventCategory: js.UndefOr[String] = js.native
+  var eventLabel: js.UndefOr[String] = js.native
+  var eventValue: js.UndefOr[Double] = js.native
+  var exDescription: js.UndefOr[String] = js.native
+  var exFatal: js.UndefOr[Boolean] = js.native
+  var expId: js.UndefOr[String] = js.native
+  var expVar: js.UndefOr[String] = js.native
+  var flashVersion: js.UndefOr[String] = js.native
+  var forceSSL: js.UndefOr[Boolean] = js.native
+  var hitCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var hitType: js.UndefOr[HitType] = js.native
+  var hostname: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var javaEnabled: js.UndefOr[Boolean] = js.native
+  var language: js.UndefOr[String] = js.native
+  var legacyCookieDomain: js.UndefOr[String] = js.native
+  var legacyHistoryImport: js.UndefOr[Boolean] = js.native
+  var linkid: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.native
+  var metric1: js.UndefOr[String | Double] = js.native
+  var metric10: js.UndefOr[String | Double] = js.native
+  var metric100: js.UndefOr[String | Double] = js.native
+  var metric101: js.UndefOr[String | Double] = js.native
+  var metric102: js.UndefOr[String | Double] = js.native
+  var metric103: js.UndefOr[String | Double] = js.native
+  var metric104: js.UndefOr[String | Double] = js.native
+  var metric105: js.UndefOr[String | Double] = js.native
+  var metric106: js.UndefOr[String | Double] = js.native
+  var metric107: js.UndefOr[String | Double] = js.native
+  var metric108: js.UndefOr[String | Double] = js.native
+  var metric109: js.UndefOr[String | Double] = js.native
+  var metric11: js.UndefOr[String | Double] = js.native
+  var metric110: js.UndefOr[String | Double] = js.native
+  var metric111: js.UndefOr[String | Double] = js.native
+  var metric112: js.UndefOr[String | Double] = js.native
+  var metric113: js.UndefOr[String | Double] = js.native
+  var metric114: js.UndefOr[String | Double] = js.native
+  var metric115: js.UndefOr[String | Double] = js.native
+  var metric116: js.UndefOr[String | Double] = js.native
+  var metric117: js.UndefOr[String | Double] = js.native
+  var metric118: js.UndefOr[String | Double] = js.native
+  var metric119: js.UndefOr[String | Double] = js.native
+  var metric12: js.UndefOr[String | Double] = js.native
+  var metric120: js.UndefOr[String | Double] = js.native
+  var metric121: js.UndefOr[String | Double] = js.native
+  var metric122: js.UndefOr[String | Double] = js.native
+  var metric123: js.UndefOr[String | Double] = js.native
+  var metric124: js.UndefOr[String | Double] = js.native
+  var metric125: js.UndefOr[String | Double] = js.native
+  var metric126: js.UndefOr[String | Double] = js.native
+  var metric127: js.UndefOr[String | Double] = js.native
+  var metric128: js.UndefOr[String | Double] = js.native
+  var metric129: js.UndefOr[String | Double] = js.native
+  var metric13: js.UndefOr[String | Double] = js.native
+  var metric130: js.UndefOr[String | Double] = js.native
+  var metric131: js.UndefOr[String | Double] = js.native
+  var metric132: js.UndefOr[String | Double] = js.native
+  var metric133: js.UndefOr[String | Double] = js.native
+  var metric134: js.UndefOr[String | Double] = js.native
+  var metric135: js.UndefOr[String | Double] = js.native
+  var metric136: js.UndefOr[String | Double] = js.native
+  var metric137: js.UndefOr[String | Double] = js.native
+  var metric138: js.UndefOr[String | Double] = js.native
+  var metric139: js.UndefOr[String | Double] = js.native
+  var metric14: js.UndefOr[String | Double] = js.native
+  var metric140: js.UndefOr[String | Double] = js.native
+  var metric141: js.UndefOr[String | Double] = js.native
+  var metric142: js.UndefOr[String | Double] = js.native
+  var metric143: js.UndefOr[String | Double] = js.native
+  var metric144: js.UndefOr[String | Double] = js.native
+  var metric145: js.UndefOr[String | Double] = js.native
+  var metric146: js.UndefOr[String | Double] = js.native
+  var metric147: js.UndefOr[String | Double] = js.native
+  var metric148: js.UndefOr[String | Double] = js.native
+  var metric149: js.UndefOr[String | Double] = js.native
+  var metric15: js.UndefOr[String | Double] = js.native
+  var metric150: js.UndefOr[String | Double] = js.native
+  var metric151: js.UndefOr[String | Double] = js.native
+  var metric152: js.UndefOr[String | Double] = js.native
+  var metric153: js.UndefOr[String | Double] = js.native
+  var metric154: js.UndefOr[String | Double] = js.native
+  var metric155: js.UndefOr[String | Double] = js.native
+  var metric156: js.UndefOr[String | Double] = js.native
+  var metric157: js.UndefOr[String | Double] = js.native
+  var metric158: js.UndefOr[String | Double] = js.native
+  var metric159: js.UndefOr[String | Double] = js.native
+  var metric16: js.UndefOr[String | Double] = js.native
+  var metric160: js.UndefOr[String | Double] = js.native
+  var metric161: js.UndefOr[String | Double] = js.native
+  var metric162: js.UndefOr[String | Double] = js.native
+  var metric163: js.UndefOr[String | Double] = js.native
+  var metric164: js.UndefOr[String | Double] = js.native
+  var metric165: js.UndefOr[String | Double] = js.native
+  var metric166: js.UndefOr[String | Double] = js.native
+  var metric167: js.UndefOr[String | Double] = js.native
+  var metric168: js.UndefOr[String | Double] = js.native
+  var metric169: js.UndefOr[String | Double] = js.native
+  var metric17: js.UndefOr[String | Double] = js.native
+  var metric170: js.UndefOr[String | Double] = js.native
+  var metric171: js.UndefOr[String | Double] = js.native
+  var metric172: js.UndefOr[String | Double] = js.native
+  var metric173: js.UndefOr[String | Double] = js.native
+  var metric174: js.UndefOr[String | Double] = js.native
+  var metric175: js.UndefOr[String | Double] = js.native
+  var metric176: js.UndefOr[String | Double] = js.native
+  var metric177: js.UndefOr[String | Double] = js.native
+  var metric178: js.UndefOr[String | Double] = js.native
+  var metric179: js.UndefOr[String | Double] = js.native
+  var metric18: js.UndefOr[String | Double] = js.native
+  var metric180: js.UndefOr[String | Double] = js.native
+  var metric181: js.UndefOr[String | Double] = js.native
+  var metric182: js.UndefOr[String | Double] = js.native
+  var metric183: js.UndefOr[String | Double] = js.native
+  var metric184: js.UndefOr[String | Double] = js.native
+  var metric185: js.UndefOr[String | Double] = js.native
+  var metric186: js.UndefOr[String | Double] = js.native
+  var metric187: js.UndefOr[String | Double] = js.native
+  var metric188: js.UndefOr[String | Double] = js.native
+  var metric189: js.UndefOr[String | Double] = js.native
+  var metric19: js.UndefOr[String | Double] = js.native
+  var metric190: js.UndefOr[String | Double] = js.native
+  var metric191: js.UndefOr[String | Double] = js.native
+  var metric192: js.UndefOr[String | Double] = js.native
+  var metric193: js.UndefOr[String | Double] = js.native
+  var metric194: js.UndefOr[String | Double] = js.native
+  var metric195: js.UndefOr[String | Double] = js.native
+  var metric196: js.UndefOr[String | Double] = js.native
+  var metric197: js.UndefOr[String | Double] = js.native
+  var metric198: js.UndefOr[String | Double] = js.native
+  var metric199: js.UndefOr[String | Double] = js.native
+  var metric2: js.UndefOr[String | Double] = js.native
+  var metric20: js.UndefOr[String | Double] = js.native
+  var metric200: js.UndefOr[String | Double] = js.native
+  var metric21: js.UndefOr[String | Double] = js.native
+  var metric22: js.UndefOr[String | Double] = js.native
+  var metric23: js.UndefOr[String | Double] = js.native
+  var metric24: js.UndefOr[String | Double] = js.native
+  var metric25: js.UndefOr[String | Double] = js.native
+  var metric26: js.UndefOr[String | Double] = js.native
+  var metric27: js.UndefOr[String | Double] = js.native
+  var metric28: js.UndefOr[String | Double] = js.native
+  var metric29: js.UndefOr[String | Double] = js.native
+  var metric3: js.UndefOr[String | Double] = js.native
+  var metric30: js.UndefOr[String | Double] = js.native
+  var metric31: js.UndefOr[String | Double] = js.native
+  var metric32: js.UndefOr[String | Double] = js.native
+  var metric33: js.UndefOr[String | Double] = js.native
+  var metric34: js.UndefOr[String | Double] = js.native
+  var metric35: js.UndefOr[String | Double] = js.native
+  var metric36: js.UndefOr[String | Double] = js.native
+  var metric37: js.UndefOr[String | Double] = js.native
+  var metric38: js.UndefOr[String | Double] = js.native
+  var metric39: js.UndefOr[String | Double] = js.native
+  var metric4: js.UndefOr[String | Double] = js.native
+  var metric40: js.UndefOr[String | Double] = js.native
+  var metric41: js.UndefOr[String | Double] = js.native
+  var metric42: js.UndefOr[String | Double] = js.native
+  var metric43: js.UndefOr[String | Double] = js.native
+  var metric44: js.UndefOr[String | Double] = js.native
+  var metric45: js.UndefOr[String | Double] = js.native
+  var metric46: js.UndefOr[String | Double] = js.native
+  var metric47: js.UndefOr[String | Double] = js.native
+  var metric48: js.UndefOr[String | Double] = js.native
+  var metric49: js.UndefOr[String | Double] = js.native
+  var metric5: js.UndefOr[String | Double] = js.native
+  var metric50: js.UndefOr[String | Double] = js.native
+  var metric51: js.UndefOr[String | Double] = js.native
+  var metric52: js.UndefOr[String | Double] = js.native
+  var metric53: js.UndefOr[String | Double] = js.native
+  var metric54: js.UndefOr[String | Double] = js.native
+  var metric55: js.UndefOr[String | Double] = js.native
+  var metric56: js.UndefOr[String | Double] = js.native
+  var metric57: js.UndefOr[String | Double] = js.native
+  var metric58: js.UndefOr[String | Double] = js.native
+  var metric59: js.UndefOr[String | Double] = js.native
+  var metric6: js.UndefOr[String | Double] = js.native
+  var metric60: js.UndefOr[String | Double] = js.native
+  var metric61: js.UndefOr[String | Double] = js.native
+  var metric62: js.UndefOr[String | Double] = js.native
+  var metric63: js.UndefOr[String | Double] = js.native
+  var metric64: js.UndefOr[String | Double] = js.native
+  var metric65: js.UndefOr[String | Double] = js.native
+  var metric66: js.UndefOr[String | Double] = js.native
+  var metric67: js.UndefOr[String | Double] = js.native
+  var metric68: js.UndefOr[String | Double] = js.native
+  var metric69: js.UndefOr[String | Double] = js.native
+  var metric7: js.UndefOr[String | Double] = js.native
+  var metric70: js.UndefOr[String | Double] = js.native
+  var metric71: js.UndefOr[String | Double] = js.native
+  var metric72: js.UndefOr[String | Double] = js.native
+  var metric73: js.UndefOr[String | Double] = js.native
+  var metric74: js.UndefOr[String | Double] = js.native
+  var metric75: js.UndefOr[String | Double] = js.native
+  var metric76: js.UndefOr[String | Double] = js.native
+  var metric77: js.UndefOr[String | Double] = js.native
+  var metric78: js.UndefOr[String | Double] = js.native
+  var metric79: js.UndefOr[String | Double] = js.native
+  var metric8: js.UndefOr[String | Double] = js.native
+  var metric80: js.UndefOr[String | Double] = js.native
+  var metric81: js.UndefOr[String | Double] = js.native
+  var metric82: js.UndefOr[String | Double] = js.native
+  var metric83: js.UndefOr[String | Double] = js.native
+  var metric84: js.UndefOr[String | Double] = js.native
+  var metric85: js.UndefOr[String | Double] = js.native
+  var metric86: js.UndefOr[String | Double] = js.native
+  var metric87: js.UndefOr[String | Double] = js.native
+  var metric88: js.UndefOr[String | Double] = js.native
+  var metric89: js.UndefOr[String | Double] = js.native
+  var metric9: js.UndefOr[String | Double] = js.native
+  var metric90: js.UndefOr[String | Double] = js.native
+  var metric91: js.UndefOr[String | Double] = js.native
+  var metric92: js.UndefOr[String | Double] = js.native
+  var metric93: js.UndefOr[String | Double] = js.native
+  var metric94: js.UndefOr[String | Double] = js.native
+  var metric95: js.UndefOr[String | Double] = js.native
+  var metric96: js.UndefOr[String | Double] = js.native
+  var metric97: js.UndefOr[String | Double] = js.native
+  var metric98: js.UndefOr[String | Double] = js.native
+  var metric99: js.UndefOr[String | Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var nonInteraction: js.UndefOr[Boolean] = js.native
+  var option: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.native
+  var position: js.UndefOr[Double | String] = js.native
+  var price: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[Double] = js.native
+  var queueTime: js.UndefOr[Double] = js.native
+  var referrer: js.UndefOr[String] = js.native
+  var revenue: js.UndefOr[String] = js.native
+  var sampleRate: js.UndefOr[Double] = js.native
+  var screenColors: js.UndefOr[String] = js.native
+  var screenName: js.UndefOr[String] = js.native
+  var screenResolution: js.UndefOr[String] = js.native
+  var sessionControl: js.UndefOr[String] = js.native
+  var shipping: js.UndefOr[String] = js.native
+  var siteSpeedSampleRate: js.UndefOr[Double] = js.native
+  var socialAction: js.UndefOr[String] = js.native
+  var socialNetwork: js.UndefOr[String] = js.native
+  var socialTarget: js.UndefOr[String] = js.native
+  var some: js.UndefOr[String] = js.native
+  var step: js.UndefOr[Boolean | Double] = js.native
+  var storage: js.UndefOr[String] = js.native
+  var storeGac: js.UndefOr[Boolean] = js.native
+  var tax: js.UndefOr[String] = js.native
+  var timingCategory: js.UndefOr[String] = js.native
+  var timingLabel: js.UndefOr[String] = js.native
+  var timingValue: js.UndefOr[Double] = js.native
+  var timingVar: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var transport: js.UndefOr[String] = js.native
+  var useBeacon: js.UndefOr[Boolean] = js.native
+  var userId: js.UndefOr[String] = js.native
+  var variant: js.UndefOr[String] = js.native
+  var viewportSize: js.UndefOr[String] = js.native
 }
 
 object FieldsObject {
   @scala.inline
-  def apply(
-    affiliation: String = null,
-    allowAnchor: js.UndefOr[Boolean] = js.undefined,
-    allowLinker: js.UndefOr[Boolean] = js.undefined,
-    alwaysSendReferrer: js.UndefOr[Boolean] = js.undefined,
-    anonymizeIp: js.UndefOr[Boolean] = js.undefined,
-    appId: String = null,
-    appInstallerId: String = null,
-    appName: String = null,
-    appVersion: String = null,
-    brand: String = null,
-    campaignContent: String = null,
-    campaignId: String = null,
-    campaignKeyword: String = null,
-    campaignMedium: String = null,
-    campaignName: String = null,
-    campaignSource: String = null,
-    category: String = null,
-    clientId: String = null,
-    contentGroup1: String = null,
-    contentGroup10: String = null,
-    contentGroup2: String = null,
-    contentGroup3: String = null,
-    contentGroup4: String = null,
-    contentGroup5: String = null,
-    contentGroup6: String = null,
-    contentGroup7: String = null,
-    contentGroup8: String = null,
-    contentGroup9: String = null,
-    cookieDomain: String = null,
-    cookieExpires: js.UndefOr[Double] = js.undefined,
-    cookieName: String = null,
-    cookiePath: String = null,
-    coupon: String = null,
-    creative: String = null,
-    currencyCode: String = null,
-    dataSource: String = null,
-    dimension1: String = null,
-    dimension10: String = null,
-    dimension100: String = null,
-    dimension101: String = null,
-    dimension102: String = null,
-    dimension103: String = null,
-    dimension104: String = null,
-    dimension105: String = null,
-    dimension106: String = null,
-    dimension107: String = null,
-    dimension108: String = null,
-    dimension109: String = null,
-    dimension11: String = null,
-    dimension110: String = null,
-    dimension111: String = null,
-    dimension112: String = null,
-    dimension113: String = null,
-    dimension114: String = null,
-    dimension115: String = null,
-    dimension116: String = null,
-    dimension117: String = null,
-    dimension118: String = null,
-    dimension119: String = null,
-    dimension12: String = null,
-    dimension120: String = null,
-    dimension121: String = null,
-    dimension122: String = null,
-    dimension123: String = null,
-    dimension124: String = null,
-    dimension125: String = null,
-    dimension126: String = null,
-    dimension127: String = null,
-    dimension128: String = null,
-    dimension129: String = null,
-    dimension13: String = null,
-    dimension130: String = null,
-    dimension131: String = null,
-    dimension132: String = null,
-    dimension133: String = null,
-    dimension134: String = null,
-    dimension135: String = null,
-    dimension136: String = null,
-    dimension137: String = null,
-    dimension138: String = null,
-    dimension139: String = null,
-    dimension14: String = null,
-    dimension140: String = null,
-    dimension141: String = null,
-    dimension142: String = null,
-    dimension143: String = null,
-    dimension144: String = null,
-    dimension145: String = null,
-    dimension146: String = null,
-    dimension147: String = null,
-    dimension148: String = null,
-    dimension149: String = null,
-    dimension15: String = null,
-    dimension150: String = null,
-    dimension151: String = null,
-    dimension152: String = null,
-    dimension153: String = null,
-    dimension154: String = null,
-    dimension155: String = null,
-    dimension156: String = null,
-    dimension157: String = null,
-    dimension158: String = null,
-    dimension159: String = null,
-    dimension16: String = null,
-    dimension160: String = null,
-    dimension161: String = null,
-    dimension162: String = null,
-    dimension163: String = null,
-    dimension164: String = null,
-    dimension165: String = null,
-    dimension166: String = null,
-    dimension167: String = null,
-    dimension168: String = null,
-    dimension169: String = null,
-    dimension17: String = null,
-    dimension170: String = null,
-    dimension171: String = null,
-    dimension172: String = null,
-    dimension173: String = null,
-    dimension174: String = null,
-    dimension175: String = null,
-    dimension176: String = null,
-    dimension177: String = null,
-    dimension178: String = null,
-    dimension179: String = null,
-    dimension18: String = null,
-    dimension180: String = null,
-    dimension181: String = null,
-    dimension182: String = null,
-    dimension183: String = null,
-    dimension184: String = null,
-    dimension185: String = null,
-    dimension186: String = null,
-    dimension187: String = null,
-    dimension188: String = null,
-    dimension189: String = null,
-    dimension19: String = null,
-    dimension190: String = null,
-    dimension191: String = null,
-    dimension192: String = null,
-    dimension193: String = null,
-    dimension194: String = null,
-    dimension195: String = null,
-    dimension196: String = null,
-    dimension197: String = null,
-    dimension198: String = null,
-    dimension199: String = null,
-    dimension2: String = null,
-    dimension20: String = null,
-    dimension200: String = null,
-    dimension21: String = null,
-    dimension22: String = null,
-    dimension23: String = null,
-    dimension24: String = null,
-    dimension25: String = null,
-    dimension26: String = null,
-    dimension27: String = null,
-    dimension28: String = null,
-    dimension29: String = null,
-    dimension3: String = null,
-    dimension30: String = null,
-    dimension31: String = null,
-    dimension32: String = null,
-    dimension33: String = null,
-    dimension34: String = null,
-    dimension35: String = null,
-    dimension36: String = null,
-    dimension37: String = null,
-    dimension38: String = null,
-    dimension39: String = null,
-    dimension4: String = null,
-    dimension40: String = null,
-    dimension41: String = null,
-    dimension42: String = null,
-    dimension43: String = null,
-    dimension44: String = null,
-    dimension45: String = null,
-    dimension46: String = null,
-    dimension47: String = null,
-    dimension48: String = null,
-    dimension49: String = null,
-    dimension5: String = null,
-    dimension50: String = null,
-    dimension51: String = null,
-    dimension52: String = null,
-    dimension53: String = null,
-    dimension54: String = null,
-    dimension55: String = null,
-    dimension56: String = null,
-    dimension57: String = null,
-    dimension58: String = null,
-    dimension59: String = null,
-    dimension6: String = null,
-    dimension60: String = null,
-    dimension61: String = null,
-    dimension62: String = null,
-    dimension63: String = null,
-    dimension64: String = null,
-    dimension65: String = null,
-    dimension66: String = null,
-    dimension67: String = null,
-    dimension68: String = null,
-    dimension69: String = null,
-    dimension7: String = null,
-    dimension70: String = null,
-    dimension71: String = null,
-    dimension72: String = null,
-    dimension73: String = null,
-    dimension74: String = null,
-    dimension75: String = null,
-    dimension76: String = null,
-    dimension77: String = null,
-    dimension78: String = null,
-    dimension79: String = null,
-    dimension8: String = null,
-    dimension80: String = null,
-    dimension81: String = null,
-    dimension82: String = null,
-    dimension83: String = null,
-    dimension84: String = null,
-    dimension85: String = null,
-    dimension86: String = null,
-    dimension87: String = null,
-    dimension88: String = null,
-    dimension89: String = null,
-    dimension9: String = null,
-    dimension90: String = null,
-    dimension91: String = null,
-    dimension92: String = null,
-    dimension93: String = null,
-    dimension94: String = null,
-    dimension95: String = null,
-    dimension96: String = null,
-    dimension97: String = null,
-    dimension98: String = null,
-    dimension99: String = null,
-    encoding: String = null,
-    eventAction: String = null,
-    eventCategory: String = null,
-    eventLabel: String = null,
-    eventValue: js.UndefOr[Double] = js.undefined,
-    exDescription: String = null,
-    exFatal: js.UndefOr[Boolean] = js.undefined,
-    expId: String = null,
-    expVar: String = null,
-    flashVersion: String = null,
-    forceSSL: js.UndefOr[Boolean] = js.undefined,
-    hitCallback: () => Unit = null,
-    hitType: HitType = null,
-    hostname: String = null,
-    id: String = null,
-    javaEnabled: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    legacyCookieDomain: String = null
-  ): FieldsObject = {
+  def apply(): FieldsObject = {
     val __obj = js.Dynamic.literal()
-    if (affiliation != null) __obj.updateDynamic("affiliation")(affiliation.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowAnchor)) __obj.updateDynamic("allowAnchor")(allowAnchor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowLinker)) __obj.updateDynamic("allowLinker")(allowLinker.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysSendReferrer)) __obj.updateDynamic("alwaysSendReferrer")(alwaysSendReferrer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(anonymizeIp)) __obj.updateDynamic("anonymizeIp")(anonymizeIp.get.asInstanceOf[js.Any])
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (appInstallerId != null) __obj.updateDynamic("appInstallerId")(appInstallerId.asInstanceOf[js.Any])
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (appVersion != null) __obj.updateDynamic("appVersion")(appVersion.asInstanceOf[js.Any])
-    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
-    if (campaignContent != null) __obj.updateDynamic("campaignContent")(campaignContent.asInstanceOf[js.Any])
-    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId.asInstanceOf[js.Any])
-    if (campaignKeyword != null) __obj.updateDynamic("campaignKeyword")(campaignKeyword.asInstanceOf[js.Any])
-    if (campaignMedium != null) __obj.updateDynamic("campaignMedium")(campaignMedium.asInstanceOf[js.Any])
-    if (campaignName != null) __obj.updateDynamic("campaignName")(campaignName.asInstanceOf[js.Any])
-    if (campaignSource != null) __obj.updateDynamic("campaignSource")(campaignSource.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (contentGroup1 != null) __obj.updateDynamic("contentGroup1")(contentGroup1.asInstanceOf[js.Any])
-    if (contentGroup10 != null) __obj.updateDynamic("contentGroup10")(contentGroup10.asInstanceOf[js.Any])
-    if (contentGroup2 != null) __obj.updateDynamic("contentGroup2")(contentGroup2.asInstanceOf[js.Any])
-    if (contentGroup3 != null) __obj.updateDynamic("contentGroup3")(contentGroup3.asInstanceOf[js.Any])
-    if (contentGroup4 != null) __obj.updateDynamic("contentGroup4")(contentGroup4.asInstanceOf[js.Any])
-    if (contentGroup5 != null) __obj.updateDynamic("contentGroup5")(contentGroup5.asInstanceOf[js.Any])
-    if (contentGroup6 != null) __obj.updateDynamic("contentGroup6")(contentGroup6.asInstanceOf[js.Any])
-    if (contentGroup7 != null) __obj.updateDynamic("contentGroup7")(contentGroup7.asInstanceOf[js.Any])
-    if (contentGroup8 != null) __obj.updateDynamic("contentGroup8")(contentGroup8.asInstanceOf[js.Any])
-    if (contentGroup9 != null) __obj.updateDynamic("contentGroup9")(contentGroup9.asInstanceOf[js.Any])
-    if (cookieDomain != null) __obj.updateDynamic("cookieDomain")(cookieDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookieExpires)) __obj.updateDynamic("cookieExpires")(cookieExpires.get.asInstanceOf[js.Any])
-    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName.asInstanceOf[js.Any])
-    if (cookiePath != null) __obj.updateDynamic("cookiePath")(cookiePath.asInstanceOf[js.Any])
-    if (coupon != null) __obj.updateDynamic("coupon")(coupon.asInstanceOf[js.Any])
-    if (creative != null) __obj.updateDynamic("creative")(creative.asInstanceOf[js.Any])
-    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dimension1 != null) __obj.updateDynamic("dimension1")(dimension1.asInstanceOf[js.Any])
-    if (dimension10 != null) __obj.updateDynamic("dimension10")(dimension10.asInstanceOf[js.Any])
-    if (dimension100 != null) __obj.updateDynamic("dimension100")(dimension100.asInstanceOf[js.Any])
-    if (dimension101 != null) __obj.updateDynamic("dimension101")(dimension101.asInstanceOf[js.Any])
-    if (dimension102 != null) __obj.updateDynamic("dimension102")(dimension102.asInstanceOf[js.Any])
-    if (dimension103 != null) __obj.updateDynamic("dimension103")(dimension103.asInstanceOf[js.Any])
-    if (dimension104 != null) __obj.updateDynamic("dimension104")(dimension104.asInstanceOf[js.Any])
-    if (dimension105 != null) __obj.updateDynamic("dimension105")(dimension105.asInstanceOf[js.Any])
-    if (dimension106 != null) __obj.updateDynamic("dimension106")(dimension106.asInstanceOf[js.Any])
-    if (dimension107 != null) __obj.updateDynamic("dimension107")(dimension107.asInstanceOf[js.Any])
-    if (dimension108 != null) __obj.updateDynamic("dimension108")(dimension108.asInstanceOf[js.Any])
-    if (dimension109 != null) __obj.updateDynamic("dimension109")(dimension109.asInstanceOf[js.Any])
-    if (dimension11 != null) __obj.updateDynamic("dimension11")(dimension11.asInstanceOf[js.Any])
-    if (dimension110 != null) __obj.updateDynamic("dimension110")(dimension110.asInstanceOf[js.Any])
-    if (dimension111 != null) __obj.updateDynamic("dimension111")(dimension111.asInstanceOf[js.Any])
-    if (dimension112 != null) __obj.updateDynamic("dimension112")(dimension112.asInstanceOf[js.Any])
-    if (dimension113 != null) __obj.updateDynamic("dimension113")(dimension113.asInstanceOf[js.Any])
-    if (dimension114 != null) __obj.updateDynamic("dimension114")(dimension114.asInstanceOf[js.Any])
-    if (dimension115 != null) __obj.updateDynamic("dimension115")(dimension115.asInstanceOf[js.Any])
-    if (dimension116 != null) __obj.updateDynamic("dimension116")(dimension116.asInstanceOf[js.Any])
-    if (dimension117 != null) __obj.updateDynamic("dimension117")(dimension117.asInstanceOf[js.Any])
-    if (dimension118 != null) __obj.updateDynamic("dimension118")(dimension118.asInstanceOf[js.Any])
-    if (dimension119 != null) __obj.updateDynamic("dimension119")(dimension119.asInstanceOf[js.Any])
-    if (dimension12 != null) __obj.updateDynamic("dimension12")(dimension12.asInstanceOf[js.Any])
-    if (dimension120 != null) __obj.updateDynamic("dimension120")(dimension120.asInstanceOf[js.Any])
-    if (dimension121 != null) __obj.updateDynamic("dimension121")(dimension121.asInstanceOf[js.Any])
-    if (dimension122 != null) __obj.updateDynamic("dimension122")(dimension122.asInstanceOf[js.Any])
-    if (dimension123 != null) __obj.updateDynamic("dimension123")(dimension123.asInstanceOf[js.Any])
-    if (dimension124 != null) __obj.updateDynamic("dimension124")(dimension124.asInstanceOf[js.Any])
-    if (dimension125 != null) __obj.updateDynamic("dimension125")(dimension125.asInstanceOf[js.Any])
-    if (dimension126 != null) __obj.updateDynamic("dimension126")(dimension126.asInstanceOf[js.Any])
-    if (dimension127 != null) __obj.updateDynamic("dimension127")(dimension127.asInstanceOf[js.Any])
-    if (dimension128 != null) __obj.updateDynamic("dimension128")(dimension128.asInstanceOf[js.Any])
-    if (dimension129 != null) __obj.updateDynamic("dimension129")(dimension129.asInstanceOf[js.Any])
-    if (dimension13 != null) __obj.updateDynamic("dimension13")(dimension13.asInstanceOf[js.Any])
-    if (dimension130 != null) __obj.updateDynamic("dimension130")(dimension130.asInstanceOf[js.Any])
-    if (dimension131 != null) __obj.updateDynamic("dimension131")(dimension131.asInstanceOf[js.Any])
-    if (dimension132 != null) __obj.updateDynamic("dimension132")(dimension132.asInstanceOf[js.Any])
-    if (dimension133 != null) __obj.updateDynamic("dimension133")(dimension133.asInstanceOf[js.Any])
-    if (dimension134 != null) __obj.updateDynamic("dimension134")(dimension134.asInstanceOf[js.Any])
-    if (dimension135 != null) __obj.updateDynamic("dimension135")(dimension135.asInstanceOf[js.Any])
-    if (dimension136 != null) __obj.updateDynamic("dimension136")(dimension136.asInstanceOf[js.Any])
-    if (dimension137 != null) __obj.updateDynamic("dimension137")(dimension137.asInstanceOf[js.Any])
-    if (dimension138 != null) __obj.updateDynamic("dimension138")(dimension138.asInstanceOf[js.Any])
-    if (dimension139 != null) __obj.updateDynamic("dimension139")(dimension139.asInstanceOf[js.Any])
-    if (dimension14 != null) __obj.updateDynamic("dimension14")(dimension14.asInstanceOf[js.Any])
-    if (dimension140 != null) __obj.updateDynamic("dimension140")(dimension140.asInstanceOf[js.Any])
-    if (dimension141 != null) __obj.updateDynamic("dimension141")(dimension141.asInstanceOf[js.Any])
-    if (dimension142 != null) __obj.updateDynamic("dimension142")(dimension142.asInstanceOf[js.Any])
-    if (dimension143 != null) __obj.updateDynamic("dimension143")(dimension143.asInstanceOf[js.Any])
-    if (dimension144 != null) __obj.updateDynamic("dimension144")(dimension144.asInstanceOf[js.Any])
-    if (dimension145 != null) __obj.updateDynamic("dimension145")(dimension145.asInstanceOf[js.Any])
-    if (dimension146 != null) __obj.updateDynamic("dimension146")(dimension146.asInstanceOf[js.Any])
-    if (dimension147 != null) __obj.updateDynamic("dimension147")(dimension147.asInstanceOf[js.Any])
-    if (dimension148 != null) __obj.updateDynamic("dimension148")(dimension148.asInstanceOf[js.Any])
-    if (dimension149 != null) __obj.updateDynamic("dimension149")(dimension149.asInstanceOf[js.Any])
-    if (dimension15 != null) __obj.updateDynamic("dimension15")(dimension15.asInstanceOf[js.Any])
-    if (dimension150 != null) __obj.updateDynamic("dimension150")(dimension150.asInstanceOf[js.Any])
-    if (dimension151 != null) __obj.updateDynamic("dimension151")(dimension151.asInstanceOf[js.Any])
-    if (dimension152 != null) __obj.updateDynamic("dimension152")(dimension152.asInstanceOf[js.Any])
-    if (dimension153 != null) __obj.updateDynamic("dimension153")(dimension153.asInstanceOf[js.Any])
-    if (dimension154 != null) __obj.updateDynamic("dimension154")(dimension154.asInstanceOf[js.Any])
-    if (dimension155 != null) __obj.updateDynamic("dimension155")(dimension155.asInstanceOf[js.Any])
-    if (dimension156 != null) __obj.updateDynamic("dimension156")(dimension156.asInstanceOf[js.Any])
-    if (dimension157 != null) __obj.updateDynamic("dimension157")(dimension157.asInstanceOf[js.Any])
-    if (dimension158 != null) __obj.updateDynamic("dimension158")(dimension158.asInstanceOf[js.Any])
-    if (dimension159 != null) __obj.updateDynamic("dimension159")(dimension159.asInstanceOf[js.Any])
-    if (dimension16 != null) __obj.updateDynamic("dimension16")(dimension16.asInstanceOf[js.Any])
-    if (dimension160 != null) __obj.updateDynamic("dimension160")(dimension160.asInstanceOf[js.Any])
-    if (dimension161 != null) __obj.updateDynamic("dimension161")(dimension161.asInstanceOf[js.Any])
-    if (dimension162 != null) __obj.updateDynamic("dimension162")(dimension162.asInstanceOf[js.Any])
-    if (dimension163 != null) __obj.updateDynamic("dimension163")(dimension163.asInstanceOf[js.Any])
-    if (dimension164 != null) __obj.updateDynamic("dimension164")(dimension164.asInstanceOf[js.Any])
-    if (dimension165 != null) __obj.updateDynamic("dimension165")(dimension165.asInstanceOf[js.Any])
-    if (dimension166 != null) __obj.updateDynamic("dimension166")(dimension166.asInstanceOf[js.Any])
-    if (dimension167 != null) __obj.updateDynamic("dimension167")(dimension167.asInstanceOf[js.Any])
-    if (dimension168 != null) __obj.updateDynamic("dimension168")(dimension168.asInstanceOf[js.Any])
-    if (dimension169 != null) __obj.updateDynamic("dimension169")(dimension169.asInstanceOf[js.Any])
-    if (dimension17 != null) __obj.updateDynamic("dimension17")(dimension17.asInstanceOf[js.Any])
-    if (dimension170 != null) __obj.updateDynamic("dimension170")(dimension170.asInstanceOf[js.Any])
-    if (dimension171 != null) __obj.updateDynamic("dimension171")(dimension171.asInstanceOf[js.Any])
-    if (dimension172 != null) __obj.updateDynamic("dimension172")(dimension172.asInstanceOf[js.Any])
-    if (dimension173 != null) __obj.updateDynamic("dimension173")(dimension173.asInstanceOf[js.Any])
-    if (dimension174 != null) __obj.updateDynamic("dimension174")(dimension174.asInstanceOf[js.Any])
-    if (dimension175 != null) __obj.updateDynamic("dimension175")(dimension175.asInstanceOf[js.Any])
-    if (dimension176 != null) __obj.updateDynamic("dimension176")(dimension176.asInstanceOf[js.Any])
-    if (dimension177 != null) __obj.updateDynamic("dimension177")(dimension177.asInstanceOf[js.Any])
-    if (dimension178 != null) __obj.updateDynamic("dimension178")(dimension178.asInstanceOf[js.Any])
-    if (dimension179 != null) __obj.updateDynamic("dimension179")(dimension179.asInstanceOf[js.Any])
-    if (dimension18 != null) __obj.updateDynamic("dimension18")(dimension18.asInstanceOf[js.Any])
-    if (dimension180 != null) __obj.updateDynamic("dimension180")(dimension180.asInstanceOf[js.Any])
-    if (dimension181 != null) __obj.updateDynamic("dimension181")(dimension181.asInstanceOf[js.Any])
-    if (dimension182 != null) __obj.updateDynamic("dimension182")(dimension182.asInstanceOf[js.Any])
-    if (dimension183 != null) __obj.updateDynamic("dimension183")(dimension183.asInstanceOf[js.Any])
-    if (dimension184 != null) __obj.updateDynamic("dimension184")(dimension184.asInstanceOf[js.Any])
-    if (dimension185 != null) __obj.updateDynamic("dimension185")(dimension185.asInstanceOf[js.Any])
-    if (dimension186 != null) __obj.updateDynamic("dimension186")(dimension186.asInstanceOf[js.Any])
-    if (dimension187 != null) __obj.updateDynamic("dimension187")(dimension187.asInstanceOf[js.Any])
-    if (dimension188 != null) __obj.updateDynamic("dimension188")(dimension188.asInstanceOf[js.Any])
-    if (dimension189 != null) __obj.updateDynamic("dimension189")(dimension189.asInstanceOf[js.Any])
-    if (dimension19 != null) __obj.updateDynamic("dimension19")(dimension19.asInstanceOf[js.Any])
-    if (dimension190 != null) __obj.updateDynamic("dimension190")(dimension190.asInstanceOf[js.Any])
-    if (dimension191 != null) __obj.updateDynamic("dimension191")(dimension191.asInstanceOf[js.Any])
-    if (dimension192 != null) __obj.updateDynamic("dimension192")(dimension192.asInstanceOf[js.Any])
-    if (dimension193 != null) __obj.updateDynamic("dimension193")(dimension193.asInstanceOf[js.Any])
-    if (dimension194 != null) __obj.updateDynamic("dimension194")(dimension194.asInstanceOf[js.Any])
-    if (dimension195 != null) __obj.updateDynamic("dimension195")(dimension195.asInstanceOf[js.Any])
-    if (dimension196 != null) __obj.updateDynamic("dimension196")(dimension196.asInstanceOf[js.Any])
-    if (dimension197 != null) __obj.updateDynamic("dimension197")(dimension197.asInstanceOf[js.Any])
-    if (dimension198 != null) __obj.updateDynamic("dimension198")(dimension198.asInstanceOf[js.Any])
-    if (dimension199 != null) __obj.updateDynamic("dimension199")(dimension199.asInstanceOf[js.Any])
-    if (dimension2 != null) __obj.updateDynamic("dimension2")(dimension2.asInstanceOf[js.Any])
-    if (dimension20 != null) __obj.updateDynamic("dimension20")(dimension20.asInstanceOf[js.Any])
-    if (dimension200 != null) __obj.updateDynamic("dimension200")(dimension200.asInstanceOf[js.Any])
-    if (dimension21 != null) __obj.updateDynamic("dimension21")(dimension21.asInstanceOf[js.Any])
-    if (dimension22 != null) __obj.updateDynamic("dimension22")(dimension22.asInstanceOf[js.Any])
-    if (dimension23 != null) __obj.updateDynamic("dimension23")(dimension23.asInstanceOf[js.Any])
-    if (dimension24 != null) __obj.updateDynamic("dimension24")(dimension24.asInstanceOf[js.Any])
-    if (dimension25 != null) __obj.updateDynamic("dimension25")(dimension25.asInstanceOf[js.Any])
-    if (dimension26 != null) __obj.updateDynamic("dimension26")(dimension26.asInstanceOf[js.Any])
-    if (dimension27 != null) __obj.updateDynamic("dimension27")(dimension27.asInstanceOf[js.Any])
-    if (dimension28 != null) __obj.updateDynamic("dimension28")(dimension28.asInstanceOf[js.Any])
-    if (dimension29 != null) __obj.updateDynamic("dimension29")(dimension29.asInstanceOf[js.Any])
-    if (dimension3 != null) __obj.updateDynamic("dimension3")(dimension3.asInstanceOf[js.Any])
-    if (dimension30 != null) __obj.updateDynamic("dimension30")(dimension30.asInstanceOf[js.Any])
-    if (dimension31 != null) __obj.updateDynamic("dimension31")(dimension31.asInstanceOf[js.Any])
-    if (dimension32 != null) __obj.updateDynamic("dimension32")(dimension32.asInstanceOf[js.Any])
-    if (dimension33 != null) __obj.updateDynamic("dimension33")(dimension33.asInstanceOf[js.Any])
-    if (dimension34 != null) __obj.updateDynamic("dimension34")(dimension34.asInstanceOf[js.Any])
-    if (dimension35 != null) __obj.updateDynamic("dimension35")(dimension35.asInstanceOf[js.Any])
-    if (dimension36 != null) __obj.updateDynamic("dimension36")(dimension36.asInstanceOf[js.Any])
-    if (dimension37 != null) __obj.updateDynamic("dimension37")(dimension37.asInstanceOf[js.Any])
-    if (dimension38 != null) __obj.updateDynamic("dimension38")(dimension38.asInstanceOf[js.Any])
-    if (dimension39 != null) __obj.updateDynamic("dimension39")(dimension39.asInstanceOf[js.Any])
-    if (dimension4 != null) __obj.updateDynamic("dimension4")(dimension4.asInstanceOf[js.Any])
-    if (dimension40 != null) __obj.updateDynamic("dimension40")(dimension40.asInstanceOf[js.Any])
-    if (dimension41 != null) __obj.updateDynamic("dimension41")(dimension41.asInstanceOf[js.Any])
-    if (dimension42 != null) __obj.updateDynamic("dimension42")(dimension42.asInstanceOf[js.Any])
-    if (dimension43 != null) __obj.updateDynamic("dimension43")(dimension43.asInstanceOf[js.Any])
-    if (dimension44 != null) __obj.updateDynamic("dimension44")(dimension44.asInstanceOf[js.Any])
-    if (dimension45 != null) __obj.updateDynamic("dimension45")(dimension45.asInstanceOf[js.Any])
-    if (dimension46 != null) __obj.updateDynamic("dimension46")(dimension46.asInstanceOf[js.Any])
-    if (dimension47 != null) __obj.updateDynamic("dimension47")(dimension47.asInstanceOf[js.Any])
-    if (dimension48 != null) __obj.updateDynamic("dimension48")(dimension48.asInstanceOf[js.Any])
-    if (dimension49 != null) __obj.updateDynamic("dimension49")(dimension49.asInstanceOf[js.Any])
-    if (dimension5 != null) __obj.updateDynamic("dimension5")(dimension5.asInstanceOf[js.Any])
-    if (dimension50 != null) __obj.updateDynamic("dimension50")(dimension50.asInstanceOf[js.Any])
-    if (dimension51 != null) __obj.updateDynamic("dimension51")(dimension51.asInstanceOf[js.Any])
-    if (dimension52 != null) __obj.updateDynamic("dimension52")(dimension52.asInstanceOf[js.Any])
-    if (dimension53 != null) __obj.updateDynamic("dimension53")(dimension53.asInstanceOf[js.Any])
-    if (dimension54 != null) __obj.updateDynamic("dimension54")(dimension54.asInstanceOf[js.Any])
-    if (dimension55 != null) __obj.updateDynamic("dimension55")(dimension55.asInstanceOf[js.Any])
-    if (dimension56 != null) __obj.updateDynamic("dimension56")(dimension56.asInstanceOf[js.Any])
-    if (dimension57 != null) __obj.updateDynamic("dimension57")(dimension57.asInstanceOf[js.Any])
-    if (dimension58 != null) __obj.updateDynamic("dimension58")(dimension58.asInstanceOf[js.Any])
-    if (dimension59 != null) __obj.updateDynamic("dimension59")(dimension59.asInstanceOf[js.Any])
-    if (dimension6 != null) __obj.updateDynamic("dimension6")(dimension6.asInstanceOf[js.Any])
-    if (dimension60 != null) __obj.updateDynamic("dimension60")(dimension60.asInstanceOf[js.Any])
-    if (dimension61 != null) __obj.updateDynamic("dimension61")(dimension61.asInstanceOf[js.Any])
-    if (dimension62 != null) __obj.updateDynamic("dimension62")(dimension62.asInstanceOf[js.Any])
-    if (dimension63 != null) __obj.updateDynamic("dimension63")(dimension63.asInstanceOf[js.Any])
-    if (dimension64 != null) __obj.updateDynamic("dimension64")(dimension64.asInstanceOf[js.Any])
-    if (dimension65 != null) __obj.updateDynamic("dimension65")(dimension65.asInstanceOf[js.Any])
-    if (dimension66 != null) __obj.updateDynamic("dimension66")(dimension66.asInstanceOf[js.Any])
-    if (dimension67 != null) __obj.updateDynamic("dimension67")(dimension67.asInstanceOf[js.Any])
-    if (dimension68 != null) __obj.updateDynamic("dimension68")(dimension68.asInstanceOf[js.Any])
-    if (dimension69 != null) __obj.updateDynamic("dimension69")(dimension69.asInstanceOf[js.Any])
-    if (dimension7 != null) __obj.updateDynamic("dimension7")(dimension7.asInstanceOf[js.Any])
-    if (dimension70 != null) __obj.updateDynamic("dimension70")(dimension70.asInstanceOf[js.Any])
-    if (dimension71 != null) __obj.updateDynamic("dimension71")(dimension71.asInstanceOf[js.Any])
-    if (dimension72 != null) __obj.updateDynamic("dimension72")(dimension72.asInstanceOf[js.Any])
-    if (dimension73 != null) __obj.updateDynamic("dimension73")(dimension73.asInstanceOf[js.Any])
-    if (dimension74 != null) __obj.updateDynamic("dimension74")(dimension74.asInstanceOf[js.Any])
-    if (dimension75 != null) __obj.updateDynamic("dimension75")(dimension75.asInstanceOf[js.Any])
-    if (dimension76 != null) __obj.updateDynamic("dimension76")(dimension76.asInstanceOf[js.Any])
-    if (dimension77 != null) __obj.updateDynamic("dimension77")(dimension77.asInstanceOf[js.Any])
-    if (dimension78 != null) __obj.updateDynamic("dimension78")(dimension78.asInstanceOf[js.Any])
-    if (dimension79 != null) __obj.updateDynamic("dimension79")(dimension79.asInstanceOf[js.Any])
-    if (dimension8 != null) __obj.updateDynamic("dimension8")(dimension8.asInstanceOf[js.Any])
-    if (dimension80 != null) __obj.updateDynamic("dimension80")(dimension80.asInstanceOf[js.Any])
-    if (dimension81 != null) __obj.updateDynamic("dimension81")(dimension81.asInstanceOf[js.Any])
-    if (dimension82 != null) __obj.updateDynamic("dimension82")(dimension82.asInstanceOf[js.Any])
-    if (dimension83 != null) __obj.updateDynamic("dimension83")(dimension83.asInstanceOf[js.Any])
-    if (dimension84 != null) __obj.updateDynamic("dimension84")(dimension84.asInstanceOf[js.Any])
-    if (dimension85 != null) __obj.updateDynamic("dimension85")(dimension85.asInstanceOf[js.Any])
-    if (dimension86 != null) __obj.updateDynamic("dimension86")(dimension86.asInstanceOf[js.Any])
-    if (dimension87 != null) __obj.updateDynamic("dimension87")(dimension87.asInstanceOf[js.Any])
-    if (dimension88 != null) __obj.updateDynamic("dimension88")(dimension88.asInstanceOf[js.Any])
-    if (dimension89 != null) __obj.updateDynamic("dimension89")(dimension89.asInstanceOf[js.Any])
-    if (dimension9 != null) __obj.updateDynamic("dimension9")(dimension9.asInstanceOf[js.Any])
-    if (dimension90 != null) __obj.updateDynamic("dimension90")(dimension90.asInstanceOf[js.Any])
-    if (dimension91 != null) __obj.updateDynamic("dimension91")(dimension91.asInstanceOf[js.Any])
-    if (dimension92 != null) __obj.updateDynamic("dimension92")(dimension92.asInstanceOf[js.Any])
-    if (dimension93 != null) __obj.updateDynamic("dimension93")(dimension93.asInstanceOf[js.Any])
-    if (dimension94 != null) __obj.updateDynamic("dimension94")(dimension94.asInstanceOf[js.Any])
-    if (dimension95 != null) __obj.updateDynamic("dimension95")(dimension95.asInstanceOf[js.Any])
-    if (dimension96 != null) __obj.updateDynamic("dimension96")(dimension96.asInstanceOf[js.Any])
-    if (dimension97 != null) __obj.updateDynamic("dimension97")(dimension97.asInstanceOf[js.Any])
-    if (dimension98 != null) __obj.updateDynamic("dimension98")(dimension98.asInstanceOf[js.Any])
-    if (dimension99 != null) __obj.updateDynamic("dimension99")(dimension99.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (eventAction != null) __obj.updateDynamic("eventAction")(eventAction.asInstanceOf[js.Any])
-    if (eventCategory != null) __obj.updateDynamic("eventCategory")(eventCategory.asInstanceOf[js.Any])
-    if (eventLabel != null) __obj.updateDynamic("eventLabel")(eventLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventValue)) __obj.updateDynamic("eventValue")(eventValue.get.asInstanceOf[js.Any])
-    if (exDescription != null) __obj.updateDynamic("exDescription")(exDescription.asInstanceOf[js.Any])
-    if (!js.isUndefined(exFatal)) __obj.updateDynamic("exFatal")(exFatal.get.asInstanceOf[js.Any])
-    if (expId != null) __obj.updateDynamic("expId")(expId.asInstanceOf[js.Any])
-    if (expVar != null) __obj.updateDynamic("expVar")(expVar.asInstanceOf[js.Any])
-    if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSSL)) __obj.updateDynamic("forceSSL")(forceSSL.get.asInstanceOf[js.Any])
-    if (hitCallback != null) __obj.updateDynamic("hitCallback")(js.Any.fromFunction0(hitCallback))
-    if (hitType != null) __obj.updateDynamic("hitType")(hitType.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(javaEnabled)) __obj.updateDynamic("javaEnabled")(javaEnabled.get.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (legacyCookieDomain != null) __obj.updateDynamic("legacyCookieDomain")(legacyCookieDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldsObject]
   }
+  @scala.inline
+  implicit class FieldsObjectOps[Self <: FieldsObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffiliation(value: String): Self = this.set("affiliation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffiliation: Self = this.set("affiliation", js.undefined)
+    @scala.inline
+    def setAllowAnchor(value: Boolean): Self = this.set("allowAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAnchor: Self = this.set("allowAnchor", js.undefined)
+    @scala.inline
+    def setAllowLinker(value: Boolean): Self = this.set("allowLinker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowLinker: Self = this.set("allowLinker", js.undefined)
+    @scala.inline
+    def setAlwaysSendReferrer(value: Boolean): Self = this.set("alwaysSendReferrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysSendReferrer: Self = this.set("alwaysSendReferrer", js.undefined)
+    @scala.inline
+    def setAnonymizeIp(value: Boolean): Self = this.set("anonymizeIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnonymizeIp: Self = this.set("anonymizeIp", js.undefined)
+    @scala.inline
+    def setAppId(value: String): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("appId", js.undefined)
+    @scala.inline
+    def setAppInstallerId(value: String): Self = this.set("appInstallerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppInstallerId: Self = this.set("appInstallerId", js.undefined)
+    @scala.inline
+    def setAppName(value: String): Self = this.set("appName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppName: Self = this.set("appName", js.undefined)
+    @scala.inline
+    def setAppVersion(value: String): Self = this.set("appVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersion: Self = this.set("appVersion", js.undefined)
+    @scala.inline
+    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrand: Self = this.set("brand", js.undefined)
+    @scala.inline
+    def setCampaignContent(value: String): Self = this.set("campaignContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignContent: Self = this.set("campaignContent", js.undefined)
+    @scala.inline
+    def setCampaignId(value: String): Self = this.set("campaignId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignId: Self = this.set("campaignId", js.undefined)
+    @scala.inline
+    def setCampaignKeyword(value: String): Self = this.set("campaignKeyword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignKeyword: Self = this.set("campaignKeyword", js.undefined)
+    @scala.inline
+    def setCampaignMedium(value: String): Self = this.set("campaignMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignMedium: Self = this.set("campaignMedium", js.undefined)
+    @scala.inline
+    def setCampaignName(value: String): Self = this.set("campaignName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignName: Self = this.set("campaignName", js.undefined)
+    @scala.inline
+    def setCampaignSource(value: String): Self = this.set("campaignSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignSource: Self = this.set("campaignSource", js.undefined)
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setContentGroup1(value: String): Self = this.set("contentGroup1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup1: Self = this.set("contentGroup1", js.undefined)
+    @scala.inline
+    def setContentGroup10(value: String): Self = this.set("contentGroup10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup10: Self = this.set("contentGroup10", js.undefined)
+    @scala.inline
+    def setContentGroup2(value: String): Self = this.set("contentGroup2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup2: Self = this.set("contentGroup2", js.undefined)
+    @scala.inline
+    def setContentGroup3(value: String): Self = this.set("contentGroup3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup3: Self = this.set("contentGroup3", js.undefined)
+    @scala.inline
+    def setContentGroup4(value: String): Self = this.set("contentGroup4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup4: Self = this.set("contentGroup4", js.undefined)
+    @scala.inline
+    def setContentGroup5(value: String): Self = this.set("contentGroup5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup5: Self = this.set("contentGroup5", js.undefined)
+    @scala.inline
+    def setContentGroup6(value: String): Self = this.set("contentGroup6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup6: Self = this.set("contentGroup6", js.undefined)
+    @scala.inline
+    def setContentGroup7(value: String): Self = this.set("contentGroup7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup7: Self = this.set("contentGroup7", js.undefined)
+    @scala.inline
+    def setContentGroup8(value: String): Self = this.set("contentGroup8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup8: Self = this.set("contentGroup8", js.undefined)
+    @scala.inline
+    def setContentGroup9(value: String): Self = this.set("contentGroup9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentGroup9: Self = this.set("contentGroup9", js.undefined)
+    @scala.inline
+    def setCookieDomain(value: String): Self = this.set("cookieDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieDomain: Self = this.set("cookieDomain", js.undefined)
+    @scala.inline
+    def setCookieExpires(value: Double): Self = this.set("cookieExpires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieExpires: Self = this.set("cookieExpires", js.undefined)
+    @scala.inline
+    def setCookieName(value: String): Self = this.set("cookieName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookieName: Self = this.set("cookieName", js.undefined)
+    @scala.inline
+    def setCookiePath(value: String): Self = this.set("cookiePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCookiePath: Self = this.set("cookiePath", js.undefined)
+    @scala.inline
+    def setCoupon(value: String): Self = this.set("coupon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoupon: Self = this.set("coupon", js.undefined)
+    @scala.inline
+    def setCreative(value: String): Self = this.set("creative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreative: Self = this.set("creative", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: String): Self = this.set("currencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("currencyCode", js.undefined)
+    @scala.inline
+    def setDataSource(value: String): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDimension1(value: String): Self = this.set("dimension1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension1: Self = this.set("dimension1", js.undefined)
+    @scala.inline
+    def setDimension10(value: String): Self = this.set("dimension10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension10: Self = this.set("dimension10", js.undefined)
+    @scala.inline
+    def setDimension100(value: String): Self = this.set("dimension100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension100: Self = this.set("dimension100", js.undefined)
+    @scala.inline
+    def setDimension101(value: String): Self = this.set("dimension101", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension101: Self = this.set("dimension101", js.undefined)
+    @scala.inline
+    def setDimension102(value: String): Self = this.set("dimension102", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension102: Self = this.set("dimension102", js.undefined)
+    @scala.inline
+    def setDimension103(value: String): Self = this.set("dimension103", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension103: Self = this.set("dimension103", js.undefined)
+    @scala.inline
+    def setDimension104(value: String): Self = this.set("dimension104", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension104: Self = this.set("dimension104", js.undefined)
+    @scala.inline
+    def setDimension105(value: String): Self = this.set("dimension105", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension105: Self = this.set("dimension105", js.undefined)
+    @scala.inline
+    def setDimension106(value: String): Self = this.set("dimension106", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension106: Self = this.set("dimension106", js.undefined)
+    @scala.inline
+    def setDimension107(value: String): Self = this.set("dimension107", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension107: Self = this.set("dimension107", js.undefined)
+    @scala.inline
+    def setDimension108(value: String): Self = this.set("dimension108", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension108: Self = this.set("dimension108", js.undefined)
+    @scala.inline
+    def setDimension109(value: String): Self = this.set("dimension109", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension109: Self = this.set("dimension109", js.undefined)
+    @scala.inline
+    def setDimension11(value: String): Self = this.set("dimension11", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension11: Self = this.set("dimension11", js.undefined)
+    @scala.inline
+    def setDimension110(value: String): Self = this.set("dimension110", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension110: Self = this.set("dimension110", js.undefined)
+    @scala.inline
+    def setDimension111(value: String): Self = this.set("dimension111", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension111: Self = this.set("dimension111", js.undefined)
+    @scala.inline
+    def setDimension112(value: String): Self = this.set("dimension112", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension112: Self = this.set("dimension112", js.undefined)
+    @scala.inline
+    def setDimension113(value: String): Self = this.set("dimension113", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension113: Self = this.set("dimension113", js.undefined)
+    @scala.inline
+    def setDimension114(value: String): Self = this.set("dimension114", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension114: Self = this.set("dimension114", js.undefined)
+    @scala.inline
+    def setDimension115(value: String): Self = this.set("dimension115", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension115: Self = this.set("dimension115", js.undefined)
+    @scala.inline
+    def setDimension116(value: String): Self = this.set("dimension116", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension116: Self = this.set("dimension116", js.undefined)
+    @scala.inline
+    def setDimension117(value: String): Self = this.set("dimension117", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension117: Self = this.set("dimension117", js.undefined)
+    @scala.inline
+    def setDimension118(value: String): Self = this.set("dimension118", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension118: Self = this.set("dimension118", js.undefined)
+    @scala.inline
+    def setDimension119(value: String): Self = this.set("dimension119", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension119: Self = this.set("dimension119", js.undefined)
+    @scala.inline
+    def setDimension12(value: String): Self = this.set("dimension12", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension12: Self = this.set("dimension12", js.undefined)
+    @scala.inline
+    def setDimension120(value: String): Self = this.set("dimension120", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension120: Self = this.set("dimension120", js.undefined)
+    @scala.inline
+    def setDimension121(value: String): Self = this.set("dimension121", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension121: Self = this.set("dimension121", js.undefined)
+    @scala.inline
+    def setDimension122(value: String): Self = this.set("dimension122", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension122: Self = this.set("dimension122", js.undefined)
+    @scala.inline
+    def setDimension123(value: String): Self = this.set("dimension123", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension123: Self = this.set("dimension123", js.undefined)
+    @scala.inline
+    def setDimension124(value: String): Self = this.set("dimension124", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension124: Self = this.set("dimension124", js.undefined)
+    @scala.inline
+    def setDimension125(value: String): Self = this.set("dimension125", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension125: Self = this.set("dimension125", js.undefined)
+    @scala.inline
+    def setDimension126(value: String): Self = this.set("dimension126", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension126: Self = this.set("dimension126", js.undefined)
+    @scala.inline
+    def setDimension127(value: String): Self = this.set("dimension127", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension127: Self = this.set("dimension127", js.undefined)
+    @scala.inline
+    def setDimension128(value: String): Self = this.set("dimension128", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension128: Self = this.set("dimension128", js.undefined)
+    @scala.inline
+    def setDimension129(value: String): Self = this.set("dimension129", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension129: Self = this.set("dimension129", js.undefined)
+    @scala.inline
+    def setDimension13(value: String): Self = this.set("dimension13", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension13: Self = this.set("dimension13", js.undefined)
+    @scala.inline
+    def setDimension130(value: String): Self = this.set("dimension130", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension130: Self = this.set("dimension130", js.undefined)
+    @scala.inline
+    def setDimension131(value: String): Self = this.set("dimension131", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension131: Self = this.set("dimension131", js.undefined)
+    @scala.inline
+    def setDimension132(value: String): Self = this.set("dimension132", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension132: Self = this.set("dimension132", js.undefined)
+    @scala.inline
+    def setDimension133(value: String): Self = this.set("dimension133", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension133: Self = this.set("dimension133", js.undefined)
+    @scala.inline
+    def setDimension134(value: String): Self = this.set("dimension134", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension134: Self = this.set("dimension134", js.undefined)
+    @scala.inline
+    def setDimension135(value: String): Self = this.set("dimension135", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension135: Self = this.set("dimension135", js.undefined)
+    @scala.inline
+    def setDimension136(value: String): Self = this.set("dimension136", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension136: Self = this.set("dimension136", js.undefined)
+    @scala.inline
+    def setDimension137(value: String): Self = this.set("dimension137", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension137: Self = this.set("dimension137", js.undefined)
+    @scala.inline
+    def setDimension138(value: String): Self = this.set("dimension138", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension138: Self = this.set("dimension138", js.undefined)
+    @scala.inline
+    def setDimension139(value: String): Self = this.set("dimension139", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension139: Self = this.set("dimension139", js.undefined)
+    @scala.inline
+    def setDimension14(value: String): Self = this.set("dimension14", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension14: Self = this.set("dimension14", js.undefined)
+    @scala.inline
+    def setDimension140(value: String): Self = this.set("dimension140", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension140: Self = this.set("dimension140", js.undefined)
+    @scala.inline
+    def setDimension141(value: String): Self = this.set("dimension141", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension141: Self = this.set("dimension141", js.undefined)
+    @scala.inline
+    def setDimension142(value: String): Self = this.set("dimension142", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension142: Self = this.set("dimension142", js.undefined)
+    @scala.inline
+    def setDimension143(value: String): Self = this.set("dimension143", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension143: Self = this.set("dimension143", js.undefined)
+    @scala.inline
+    def setDimension144(value: String): Self = this.set("dimension144", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension144: Self = this.set("dimension144", js.undefined)
+    @scala.inline
+    def setDimension145(value: String): Self = this.set("dimension145", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension145: Self = this.set("dimension145", js.undefined)
+    @scala.inline
+    def setDimension146(value: String): Self = this.set("dimension146", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension146: Self = this.set("dimension146", js.undefined)
+    @scala.inline
+    def setDimension147(value: String): Self = this.set("dimension147", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension147: Self = this.set("dimension147", js.undefined)
+    @scala.inline
+    def setDimension148(value: String): Self = this.set("dimension148", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension148: Self = this.set("dimension148", js.undefined)
+    @scala.inline
+    def setDimension149(value: String): Self = this.set("dimension149", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension149: Self = this.set("dimension149", js.undefined)
+    @scala.inline
+    def setDimension15(value: String): Self = this.set("dimension15", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension15: Self = this.set("dimension15", js.undefined)
+    @scala.inline
+    def setDimension150(value: String): Self = this.set("dimension150", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension150: Self = this.set("dimension150", js.undefined)
+    @scala.inline
+    def setDimension151(value: String): Self = this.set("dimension151", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension151: Self = this.set("dimension151", js.undefined)
+    @scala.inline
+    def setDimension152(value: String): Self = this.set("dimension152", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension152: Self = this.set("dimension152", js.undefined)
+    @scala.inline
+    def setDimension153(value: String): Self = this.set("dimension153", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension153: Self = this.set("dimension153", js.undefined)
+    @scala.inline
+    def setDimension154(value: String): Self = this.set("dimension154", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension154: Self = this.set("dimension154", js.undefined)
+    @scala.inline
+    def setDimension155(value: String): Self = this.set("dimension155", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension155: Self = this.set("dimension155", js.undefined)
+    @scala.inline
+    def setDimension156(value: String): Self = this.set("dimension156", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension156: Self = this.set("dimension156", js.undefined)
+    @scala.inline
+    def setDimension157(value: String): Self = this.set("dimension157", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension157: Self = this.set("dimension157", js.undefined)
+    @scala.inline
+    def setDimension158(value: String): Self = this.set("dimension158", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension158: Self = this.set("dimension158", js.undefined)
+    @scala.inline
+    def setDimension159(value: String): Self = this.set("dimension159", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension159: Self = this.set("dimension159", js.undefined)
+    @scala.inline
+    def setDimension16(value: String): Self = this.set("dimension16", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension16: Self = this.set("dimension16", js.undefined)
+    @scala.inline
+    def setDimension160(value: String): Self = this.set("dimension160", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension160: Self = this.set("dimension160", js.undefined)
+    @scala.inline
+    def setDimension161(value: String): Self = this.set("dimension161", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension161: Self = this.set("dimension161", js.undefined)
+    @scala.inline
+    def setDimension162(value: String): Self = this.set("dimension162", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension162: Self = this.set("dimension162", js.undefined)
+    @scala.inline
+    def setDimension163(value: String): Self = this.set("dimension163", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension163: Self = this.set("dimension163", js.undefined)
+    @scala.inline
+    def setDimension164(value: String): Self = this.set("dimension164", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension164: Self = this.set("dimension164", js.undefined)
+    @scala.inline
+    def setDimension165(value: String): Self = this.set("dimension165", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension165: Self = this.set("dimension165", js.undefined)
+    @scala.inline
+    def setDimension166(value: String): Self = this.set("dimension166", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension166: Self = this.set("dimension166", js.undefined)
+    @scala.inline
+    def setDimension167(value: String): Self = this.set("dimension167", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension167: Self = this.set("dimension167", js.undefined)
+    @scala.inline
+    def setDimension168(value: String): Self = this.set("dimension168", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension168: Self = this.set("dimension168", js.undefined)
+    @scala.inline
+    def setDimension169(value: String): Self = this.set("dimension169", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension169: Self = this.set("dimension169", js.undefined)
+    @scala.inline
+    def setDimension17(value: String): Self = this.set("dimension17", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension17: Self = this.set("dimension17", js.undefined)
+    @scala.inline
+    def setDimension170(value: String): Self = this.set("dimension170", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension170: Self = this.set("dimension170", js.undefined)
+    @scala.inline
+    def setDimension171(value: String): Self = this.set("dimension171", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension171: Self = this.set("dimension171", js.undefined)
+    @scala.inline
+    def setDimension172(value: String): Self = this.set("dimension172", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension172: Self = this.set("dimension172", js.undefined)
+    @scala.inline
+    def setDimension173(value: String): Self = this.set("dimension173", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension173: Self = this.set("dimension173", js.undefined)
+    @scala.inline
+    def setDimension174(value: String): Self = this.set("dimension174", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension174: Self = this.set("dimension174", js.undefined)
+    @scala.inline
+    def setDimension175(value: String): Self = this.set("dimension175", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension175: Self = this.set("dimension175", js.undefined)
+    @scala.inline
+    def setDimension176(value: String): Self = this.set("dimension176", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension176: Self = this.set("dimension176", js.undefined)
+    @scala.inline
+    def setDimension177(value: String): Self = this.set("dimension177", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension177: Self = this.set("dimension177", js.undefined)
+    @scala.inline
+    def setDimension178(value: String): Self = this.set("dimension178", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension178: Self = this.set("dimension178", js.undefined)
+    @scala.inline
+    def setDimension179(value: String): Self = this.set("dimension179", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension179: Self = this.set("dimension179", js.undefined)
+    @scala.inline
+    def setDimension18(value: String): Self = this.set("dimension18", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension18: Self = this.set("dimension18", js.undefined)
+    @scala.inline
+    def setDimension180(value: String): Self = this.set("dimension180", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension180: Self = this.set("dimension180", js.undefined)
+    @scala.inline
+    def setDimension181(value: String): Self = this.set("dimension181", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension181: Self = this.set("dimension181", js.undefined)
+    @scala.inline
+    def setDimension182(value: String): Self = this.set("dimension182", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension182: Self = this.set("dimension182", js.undefined)
+    @scala.inline
+    def setDimension183(value: String): Self = this.set("dimension183", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension183: Self = this.set("dimension183", js.undefined)
+    @scala.inline
+    def setDimension184(value: String): Self = this.set("dimension184", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension184: Self = this.set("dimension184", js.undefined)
+    @scala.inline
+    def setDimension185(value: String): Self = this.set("dimension185", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension185: Self = this.set("dimension185", js.undefined)
+    @scala.inline
+    def setDimension186(value: String): Self = this.set("dimension186", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension186: Self = this.set("dimension186", js.undefined)
+    @scala.inline
+    def setDimension187(value: String): Self = this.set("dimension187", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension187: Self = this.set("dimension187", js.undefined)
+    @scala.inline
+    def setDimension188(value: String): Self = this.set("dimension188", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension188: Self = this.set("dimension188", js.undefined)
+    @scala.inline
+    def setDimension189(value: String): Self = this.set("dimension189", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension189: Self = this.set("dimension189", js.undefined)
+    @scala.inline
+    def setDimension19(value: String): Self = this.set("dimension19", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension19: Self = this.set("dimension19", js.undefined)
+    @scala.inline
+    def setDimension190(value: String): Self = this.set("dimension190", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension190: Self = this.set("dimension190", js.undefined)
+    @scala.inline
+    def setDimension191(value: String): Self = this.set("dimension191", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension191: Self = this.set("dimension191", js.undefined)
+    @scala.inline
+    def setDimension192(value: String): Self = this.set("dimension192", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension192: Self = this.set("dimension192", js.undefined)
+    @scala.inline
+    def setDimension193(value: String): Self = this.set("dimension193", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension193: Self = this.set("dimension193", js.undefined)
+    @scala.inline
+    def setDimension194(value: String): Self = this.set("dimension194", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension194: Self = this.set("dimension194", js.undefined)
+    @scala.inline
+    def setDimension195(value: String): Self = this.set("dimension195", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension195: Self = this.set("dimension195", js.undefined)
+    @scala.inline
+    def setDimension196(value: String): Self = this.set("dimension196", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension196: Self = this.set("dimension196", js.undefined)
+    @scala.inline
+    def setDimension197(value: String): Self = this.set("dimension197", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension197: Self = this.set("dimension197", js.undefined)
+    @scala.inline
+    def setDimension198(value: String): Self = this.set("dimension198", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension198: Self = this.set("dimension198", js.undefined)
+    @scala.inline
+    def setDimension199(value: String): Self = this.set("dimension199", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension199: Self = this.set("dimension199", js.undefined)
+    @scala.inline
+    def setDimension2(value: String): Self = this.set("dimension2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension2: Self = this.set("dimension2", js.undefined)
+    @scala.inline
+    def setDimension20(value: String): Self = this.set("dimension20", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension20: Self = this.set("dimension20", js.undefined)
+    @scala.inline
+    def setDimension200(value: String): Self = this.set("dimension200", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension200: Self = this.set("dimension200", js.undefined)
+    @scala.inline
+    def setDimension21(value: String): Self = this.set("dimension21", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension21: Self = this.set("dimension21", js.undefined)
+    @scala.inline
+    def setDimension22(value: String): Self = this.set("dimension22", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension22: Self = this.set("dimension22", js.undefined)
+    @scala.inline
+    def setDimension23(value: String): Self = this.set("dimension23", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension23: Self = this.set("dimension23", js.undefined)
+    @scala.inline
+    def setDimension24(value: String): Self = this.set("dimension24", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension24: Self = this.set("dimension24", js.undefined)
+    @scala.inline
+    def setDimension25(value: String): Self = this.set("dimension25", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension25: Self = this.set("dimension25", js.undefined)
+    @scala.inline
+    def setDimension26(value: String): Self = this.set("dimension26", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension26: Self = this.set("dimension26", js.undefined)
+    @scala.inline
+    def setDimension27(value: String): Self = this.set("dimension27", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension27: Self = this.set("dimension27", js.undefined)
+    @scala.inline
+    def setDimension28(value: String): Self = this.set("dimension28", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension28: Self = this.set("dimension28", js.undefined)
+    @scala.inline
+    def setDimension29(value: String): Self = this.set("dimension29", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension29: Self = this.set("dimension29", js.undefined)
+    @scala.inline
+    def setDimension3(value: String): Self = this.set("dimension3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension3: Self = this.set("dimension3", js.undefined)
+    @scala.inline
+    def setDimension30(value: String): Self = this.set("dimension30", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension30: Self = this.set("dimension30", js.undefined)
+    @scala.inline
+    def setDimension31(value: String): Self = this.set("dimension31", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension31: Self = this.set("dimension31", js.undefined)
+    @scala.inline
+    def setDimension32(value: String): Self = this.set("dimension32", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension32: Self = this.set("dimension32", js.undefined)
+    @scala.inline
+    def setDimension33(value: String): Self = this.set("dimension33", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension33: Self = this.set("dimension33", js.undefined)
+    @scala.inline
+    def setDimension34(value: String): Self = this.set("dimension34", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension34: Self = this.set("dimension34", js.undefined)
+    @scala.inline
+    def setDimension35(value: String): Self = this.set("dimension35", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension35: Self = this.set("dimension35", js.undefined)
+    @scala.inline
+    def setDimension36(value: String): Self = this.set("dimension36", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension36: Self = this.set("dimension36", js.undefined)
+    @scala.inline
+    def setDimension37(value: String): Self = this.set("dimension37", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension37: Self = this.set("dimension37", js.undefined)
+    @scala.inline
+    def setDimension38(value: String): Self = this.set("dimension38", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension38: Self = this.set("dimension38", js.undefined)
+    @scala.inline
+    def setDimension39(value: String): Self = this.set("dimension39", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension39: Self = this.set("dimension39", js.undefined)
+    @scala.inline
+    def setDimension4(value: String): Self = this.set("dimension4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension4: Self = this.set("dimension4", js.undefined)
+    @scala.inline
+    def setDimension40(value: String): Self = this.set("dimension40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension40: Self = this.set("dimension40", js.undefined)
+    @scala.inline
+    def setDimension41(value: String): Self = this.set("dimension41", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension41: Self = this.set("dimension41", js.undefined)
+    @scala.inline
+    def setDimension42(value: String): Self = this.set("dimension42", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension42: Self = this.set("dimension42", js.undefined)
+    @scala.inline
+    def setDimension43(value: String): Self = this.set("dimension43", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension43: Self = this.set("dimension43", js.undefined)
+    @scala.inline
+    def setDimension44(value: String): Self = this.set("dimension44", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension44: Self = this.set("dimension44", js.undefined)
+    @scala.inline
+    def setDimension45(value: String): Self = this.set("dimension45", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension45: Self = this.set("dimension45", js.undefined)
+    @scala.inline
+    def setDimension46(value: String): Self = this.set("dimension46", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension46: Self = this.set("dimension46", js.undefined)
+    @scala.inline
+    def setDimension47(value: String): Self = this.set("dimension47", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension47: Self = this.set("dimension47", js.undefined)
+    @scala.inline
+    def setDimension48(value: String): Self = this.set("dimension48", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension48: Self = this.set("dimension48", js.undefined)
+    @scala.inline
+    def setDimension49(value: String): Self = this.set("dimension49", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension49: Self = this.set("dimension49", js.undefined)
+    @scala.inline
+    def setDimension5(value: String): Self = this.set("dimension5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension5: Self = this.set("dimension5", js.undefined)
+    @scala.inline
+    def setDimension50(value: String): Self = this.set("dimension50", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension50: Self = this.set("dimension50", js.undefined)
+    @scala.inline
+    def setDimension51(value: String): Self = this.set("dimension51", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension51: Self = this.set("dimension51", js.undefined)
+    @scala.inline
+    def setDimension52(value: String): Self = this.set("dimension52", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension52: Self = this.set("dimension52", js.undefined)
+    @scala.inline
+    def setDimension53(value: String): Self = this.set("dimension53", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension53: Self = this.set("dimension53", js.undefined)
+    @scala.inline
+    def setDimension54(value: String): Self = this.set("dimension54", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension54: Self = this.set("dimension54", js.undefined)
+    @scala.inline
+    def setDimension55(value: String): Self = this.set("dimension55", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension55: Self = this.set("dimension55", js.undefined)
+    @scala.inline
+    def setDimension56(value: String): Self = this.set("dimension56", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension56: Self = this.set("dimension56", js.undefined)
+    @scala.inline
+    def setDimension57(value: String): Self = this.set("dimension57", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension57: Self = this.set("dimension57", js.undefined)
+    @scala.inline
+    def setDimension58(value: String): Self = this.set("dimension58", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension58: Self = this.set("dimension58", js.undefined)
+    @scala.inline
+    def setDimension59(value: String): Self = this.set("dimension59", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension59: Self = this.set("dimension59", js.undefined)
+    @scala.inline
+    def setDimension6(value: String): Self = this.set("dimension6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension6: Self = this.set("dimension6", js.undefined)
+    @scala.inline
+    def setDimension60(value: String): Self = this.set("dimension60", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension60: Self = this.set("dimension60", js.undefined)
+    @scala.inline
+    def setDimension61(value: String): Self = this.set("dimension61", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension61: Self = this.set("dimension61", js.undefined)
+    @scala.inline
+    def setDimension62(value: String): Self = this.set("dimension62", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension62: Self = this.set("dimension62", js.undefined)
+    @scala.inline
+    def setDimension63(value: String): Self = this.set("dimension63", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension63: Self = this.set("dimension63", js.undefined)
+    @scala.inline
+    def setDimension64(value: String): Self = this.set("dimension64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension64: Self = this.set("dimension64", js.undefined)
+    @scala.inline
+    def setDimension65(value: String): Self = this.set("dimension65", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension65: Self = this.set("dimension65", js.undefined)
+    @scala.inline
+    def setDimension66(value: String): Self = this.set("dimension66", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension66: Self = this.set("dimension66", js.undefined)
+    @scala.inline
+    def setDimension67(value: String): Self = this.set("dimension67", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension67: Self = this.set("dimension67", js.undefined)
+    @scala.inline
+    def setDimension68(value: String): Self = this.set("dimension68", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension68: Self = this.set("dimension68", js.undefined)
+    @scala.inline
+    def setDimension69(value: String): Self = this.set("dimension69", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension69: Self = this.set("dimension69", js.undefined)
+    @scala.inline
+    def setDimension7(value: String): Self = this.set("dimension7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension7: Self = this.set("dimension7", js.undefined)
+    @scala.inline
+    def setDimension70(value: String): Self = this.set("dimension70", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension70: Self = this.set("dimension70", js.undefined)
+    @scala.inline
+    def setDimension71(value: String): Self = this.set("dimension71", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension71: Self = this.set("dimension71", js.undefined)
+    @scala.inline
+    def setDimension72(value: String): Self = this.set("dimension72", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension72: Self = this.set("dimension72", js.undefined)
+    @scala.inline
+    def setDimension73(value: String): Self = this.set("dimension73", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension73: Self = this.set("dimension73", js.undefined)
+    @scala.inline
+    def setDimension74(value: String): Self = this.set("dimension74", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension74: Self = this.set("dimension74", js.undefined)
+    @scala.inline
+    def setDimension75(value: String): Self = this.set("dimension75", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension75: Self = this.set("dimension75", js.undefined)
+    @scala.inline
+    def setDimension76(value: String): Self = this.set("dimension76", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension76: Self = this.set("dimension76", js.undefined)
+    @scala.inline
+    def setDimension77(value: String): Self = this.set("dimension77", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension77: Self = this.set("dimension77", js.undefined)
+    @scala.inline
+    def setDimension78(value: String): Self = this.set("dimension78", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension78: Self = this.set("dimension78", js.undefined)
+    @scala.inline
+    def setDimension79(value: String): Self = this.set("dimension79", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension79: Self = this.set("dimension79", js.undefined)
+    @scala.inline
+    def setDimension8(value: String): Self = this.set("dimension8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension8: Self = this.set("dimension8", js.undefined)
+    @scala.inline
+    def setDimension80(value: String): Self = this.set("dimension80", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension80: Self = this.set("dimension80", js.undefined)
+    @scala.inline
+    def setDimension81(value: String): Self = this.set("dimension81", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension81: Self = this.set("dimension81", js.undefined)
+    @scala.inline
+    def setDimension82(value: String): Self = this.set("dimension82", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension82: Self = this.set("dimension82", js.undefined)
+    @scala.inline
+    def setDimension83(value: String): Self = this.set("dimension83", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension83: Self = this.set("dimension83", js.undefined)
+    @scala.inline
+    def setDimension84(value: String): Self = this.set("dimension84", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension84: Self = this.set("dimension84", js.undefined)
+    @scala.inline
+    def setDimension85(value: String): Self = this.set("dimension85", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension85: Self = this.set("dimension85", js.undefined)
+    @scala.inline
+    def setDimension86(value: String): Self = this.set("dimension86", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension86: Self = this.set("dimension86", js.undefined)
+    @scala.inline
+    def setDimension87(value: String): Self = this.set("dimension87", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension87: Self = this.set("dimension87", js.undefined)
+    @scala.inline
+    def setDimension88(value: String): Self = this.set("dimension88", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension88: Self = this.set("dimension88", js.undefined)
+    @scala.inline
+    def setDimension89(value: String): Self = this.set("dimension89", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension89: Self = this.set("dimension89", js.undefined)
+    @scala.inline
+    def setDimension9(value: String): Self = this.set("dimension9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension9: Self = this.set("dimension9", js.undefined)
+    @scala.inline
+    def setDimension90(value: String): Self = this.set("dimension90", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension90: Self = this.set("dimension90", js.undefined)
+    @scala.inline
+    def setDimension91(value: String): Self = this.set("dimension91", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension91: Self = this.set("dimension91", js.undefined)
+    @scala.inline
+    def setDimension92(value: String): Self = this.set("dimension92", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension92: Self = this.set("dimension92", js.undefined)
+    @scala.inline
+    def setDimension93(value: String): Self = this.set("dimension93", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension93: Self = this.set("dimension93", js.undefined)
+    @scala.inline
+    def setDimension94(value: String): Self = this.set("dimension94", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension94: Self = this.set("dimension94", js.undefined)
+    @scala.inline
+    def setDimension95(value: String): Self = this.set("dimension95", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension95: Self = this.set("dimension95", js.undefined)
+    @scala.inline
+    def setDimension96(value: String): Self = this.set("dimension96", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension96: Self = this.set("dimension96", js.undefined)
+    @scala.inline
+    def setDimension97(value: String): Self = this.set("dimension97", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension97: Self = this.set("dimension97", js.undefined)
+    @scala.inline
+    def setDimension98(value: String): Self = this.set("dimension98", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension98: Self = this.set("dimension98", js.undefined)
+    @scala.inline
+    def setDimension99(value: String): Self = this.set("dimension99", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimension99: Self = this.set("dimension99", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setEventAction(value: String): Self = this.set("eventAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventAction: Self = this.set("eventAction", js.undefined)
+    @scala.inline
+    def setEventCategory(value: String): Self = this.set("eventCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventCategory: Self = this.set("eventCategory", js.undefined)
+    @scala.inline
+    def setEventLabel(value: String): Self = this.set("eventLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventLabel: Self = this.set("eventLabel", js.undefined)
+    @scala.inline
+    def setEventValue(value: Double): Self = this.set("eventValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventValue: Self = this.set("eventValue", js.undefined)
+    @scala.inline
+    def setExDescription(value: String): Self = this.set("exDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExDescription: Self = this.set("exDescription", js.undefined)
+    @scala.inline
+    def setExFatal(value: Boolean): Self = this.set("exFatal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExFatal: Self = this.set("exFatal", js.undefined)
+    @scala.inline
+    def setExpId(value: String): Self = this.set("expId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpId: Self = this.set("expId", js.undefined)
+    @scala.inline
+    def setExpVar(value: String): Self = this.set("expVar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpVar: Self = this.set("expVar", js.undefined)
+    @scala.inline
+    def setFlashVersion(value: String): Self = this.set("flashVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlashVersion: Self = this.set("flashVersion", js.undefined)
+    @scala.inline
+    def setForceSSL(value: Boolean): Self = this.set("forceSSL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceSSL: Self = this.set("forceSSL", js.undefined)
+    @scala.inline
+    def setHitCallback(value: () => Unit): Self = this.set("hitCallback", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHitCallback: Self = this.set("hitCallback", js.undefined)
+    @scala.inline
+    def setHitType(value: HitType): Self = this.set("hitType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHitType: Self = this.set("hitType", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setJavaEnabled(value: Boolean): Self = this.set("javaEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJavaEnabled: Self = this.set("javaEnabled", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLegacyCookieDomain(value: String): Self = this.set("legacyCookieDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegacyCookieDomain: Self = this.set("legacyCookieDomain", js.undefined)
+    @scala.inline
+    def setLegacyHistoryImport(value: Boolean): Self = this.set("legacyHistoryImport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegacyHistoryImport: Self = this.set("legacyHistoryImport", js.undefined)
+    @scala.inline
+    def setLinkid(value: String): Self = this.set("linkid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkid: Self = this.set("linkid", js.undefined)
+    @scala.inline
+    def setList(value: String): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setMetric1(value: String | Double): Self = this.set("metric1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric1: Self = this.set("metric1", js.undefined)
+    @scala.inline
+    def setMetric10(value: String | Double): Self = this.set("metric10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric10: Self = this.set("metric10", js.undefined)
+    @scala.inline
+    def setMetric100(value: String | Double): Self = this.set("metric100", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric100: Self = this.set("metric100", js.undefined)
+    @scala.inline
+    def setMetric101(value: String | Double): Self = this.set("metric101", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric101: Self = this.set("metric101", js.undefined)
+    @scala.inline
+    def setMetric102(value: String | Double): Self = this.set("metric102", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric102: Self = this.set("metric102", js.undefined)
+    @scala.inline
+    def setMetric103(value: String | Double): Self = this.set("metric103", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric103: Self = this.set("metric103", js.undefined)
+    @scala.inline
+    def setMetric104(value: String | Double): Self = this.set("metric104", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric104: Self = this.set("metric104", js.undefined)
+    @scala.inline
+    def setMetric105(value: String | Double): Self = this.set("metric105", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric105: Self = this.set("metric105", js.undefined)
+    @scala.inline
+    def setMetric106(value: String | Double): Self = this.set("metric106", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric106: Self = this.set("metric106", js.undefined)
+    @scala.inline
+    def setMetric107(value: String | Double): Self = this.set("metric107", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric107: Self = this.set("metric107", js.undefined)
+    @scala.inline
+    def setMetric108(value: String | Double): Self = this.set("metric108", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric108: Self = this.set("metric108", js.undefined)
+    @scala.inline
+    def setMetric109(value: String | Double): Self = this.set("metric109", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric109: Self = this.set("metric109", js.undefined)
+    @scala.inline
+    def setMetric11(value: String | Double): Self = this.set("metric11", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric11: Self = this.set("metric11", js.undefined)
+    @scala.inline
+    def setMetric110(value: String | Double): Self = this.set("metric110", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric110: Self = this.set("metric110", js.undefined)
+    @scala.inline
+    def setMetric111(value: String | Double): Self = this.set("metric111", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric111: Self = this.set("metric111", js.undefined)
+    @scala.inline
+    def setMetric112(value: String | Double): Self = this.set("metric112", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric112: Self = this.set("metric112", js.undefined)
+    @scala.inline
+    def setMetric113(value: String | Double): Self = this.set("metric113", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric113: Self = this.set("metric113", js.undefined)
+    @scala.inline
+    def setMetric114(value: String | Double): Self = this.set("metric114", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric114: Self = this.set("metric114", js.undefined)
+    @scala.inline
+    def setMetric115(value: String | Double): Self = this.set("metric115", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric115: Self = this.set("metric115", js.undefined)
+    @scala.inline
+    def setMetric116(value: String | Double): Self = this.set("metric116", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric116: Self = this.set("metric116", js.undefined)
+    @scala.inline
+    def setMetric117(value: String | Double): Self = this.set("metric117", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric117: Self = this.set("metric117", js.undefined)
+    @scala.inline
+    def setMetric118(value: String | Double): Self = this.set("metric118", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric118: Self = this.set("metric118", js.undefined)
+    @scala.inline
+    def setMetric119(value: String | Double): Self = this.set("metric119", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric119: Self = this.set("metric119", js.undefined)
+    @scala.inline
+    def setMetric12(value: String | Double): Self = this.set("metric12", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric12: Self = this.set("metric12", js.undefined)
+    @scala.inline
+    def setMetric120(value: String | Double): Self = this.set("metric120", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric120: Self = this.set("metric120", js.undefined)
+    @scala.inline
+    def setMetric121(value: String | Double): Self = this.set("metric121", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric121: Self = this.set("metric121", js.undefined)
+    @scala.inline
+    def setMetric122(value: String | Double): Self = this.set("metric122", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric122: Self = this.set("metric122", js.undefined)
+    @scala.inline
+    def setMetric123(value: String | Double): Self = this.set("metric123", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric123: Self = this.set("metric123", js.undefined)
+    @scala.inline
+    def setMetric124(value: String | Double): Self = this.set("metric124", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric124: Self = this.set("metric124", js.undefined)
+    @scala.inline
+    def setMetric125(value: String | Double): Self = this.set("metric125", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric125: Self = this.set("metric125", js.undefined)
+    @scala.inline
+    def setMetric126(value: String | Double): Self = this.set("metric126", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric126: Self = this.set("metric126", js.undefined)
+    @scala.inline
+    def setMetric127(value: String | Double): Self = this.set("metric127", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric127: Self = this.set("metric127", js.undefined)
+    @scala.inline
+    def setMetric128(value: String | Double): Self = this.set("metric128", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric128: Self = this.set("metric128", js.undefined)
+    @scala.inline
+    def setMetric129(value: String | Double): Self = this.set("metric129", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric129: Self = this.set("metric129", js.undefined)
+    @scala.inline
+    def setMetric13(value: String | Double): Self = this.set("metric13", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric13: Self = this.set("metric13", js.undefined)
+    @scala.inline
+    def setMetric130(value: String | Double): Self = this.set("metric130", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric130: Self = this.set("metric130", js.undefined)
+    @scala.inline
+    def setMetric131(value: String | Double): Self = this.set("metric131", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric131: Self = this.set("metric131", js.undefined)
+    @scala.inline
+    def setMetric132(value: String | Double): Self = this.set("metric132", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric132: Self = this.set("metric132", js.undefined)
+    @scala.inline
+    def setMetric133(value: String | Double): Self = this.set("metric133", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric133: Self = this.set("metric133", js.undefined)
+    @scala.inline
+    def setMetric134(value: String | Double): Self = this.set("metric134", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric134: Self = this.set("metric134", js.undefined)
+    @scala.inline
+    def setMetric135(value: String | Double): Self = this.set("metric135", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric135: Self = this.set("metric135", js.undefined)
+    @scala.inline
+    def setMetric136(value: String | Double): Self = this.set("metric136", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric136: Self = this.set("metric136", js.undefined)
+    @scala.inline
+    def setMetric137(value: String | Double): Self = this.set("metric137", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric137: Self = this.set("metric137", js.undefined)
+    @scala.inline
+    def setMetric138(value: String | Double): Self = this.set("metric138", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric138: Self = this.set("metric138", js.undefined)
+    @scala.inline
+    def setMetric139(value: String | Double): Self = this.set("metric139", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric139: Self = this.set("metric139", js.undefined)
+    @scala.inline
+    def setMetric14(value: String | Double): Self = this.set("metric14", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric14: Self = this.set("metric14", js.undefined)
+    @scala.inline
+    def setMetric140(value: String | Double): Self = this.set("metric140", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric140: Self = this.set("metric140", js.undefined)
+    @scala.inline
+    def setMetric141(value: String | Double): Self = this.set("metric141", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric141: Self = this.set("metric141", js.undefined)
+    @scala.inline
+    def setMetric142(value: String | Double): Self = this.set("metric142", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric142: Self = this.set("metric142", js.undefined)
+    @scala.inline
+    def setMetric143(value: String | Double): Self = this.set("metric143", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric143: Self = this.set("metric143", js.undefined)
+    @scala.inline
+    def setMetric144(value: String | Double): Self = this.set("metric144", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric144: Self = this.set("metric144", js.undefined)
+    @scala.inline
+    def setMetric145(value: String | Double): Self = this.set("metric145", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric145: Self = this.set("metric145", js.undefined)
+    @scala.inline
+    def setMetric146(value: String | Double): Self = this.set("metric146", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric146: Self = this.set("metric146", js.undefined)
+    @scala.inline
+    def setMetric147(value: String | Double): Self = this.set("metric147", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric147: Self = this.set("metric147", js.undefined)
+    @scala.inline
+    def setMetric148(value: String | Double): Self = this.set("metric148", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric148: Self = this.set("metric148", js.undefined)
+    @scala.inline
+    def setMetric149(value: String | Double): Self = this.set("metric149", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric149: Self = this.set("metric149", js.undefined)
+    @scala.inline
+    def setMetric15(value: String | Double): Self = this.set("metric15", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric15: Self = this.set("metric15", js.undefined)
+    @scala.inline
+    def setMetric150(value: String | Double): Self = this.set("metric150", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric150: Self = this.set("metric150", js.undefined)
+    @scala.inline
+    def setMetric151(value: String | Double): Self = this.set("metric151", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric151: Self = this.set("metric151", js.undefined)
+    @scala.inline
+    def setMetric152(value: String | Double): Self = this.set("metric152", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric152: Self = this.set("metric152", js.undefined)
+    @scala.inline
+    def setMetric153(value: String | Double): Self = this.set("metric153", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric153: Self = this.set("metric153", js.undefined)
+    @scala.inline
+    def setMetric154(value: String | Double): Self = this.set("metric154", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric154: Self = this.set("metric154", js.undefined)
+    @scala.inline
+    def setMetric155(value: String | Double): Self = this.set("metric155", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric155: Self = this.set("metric155", js.undefined)
+    @scala.inline
+    def setMetric156(value: String | Double): Self = this.set("metric156", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric156: Self = this.set("metric156", js.undefined)
+    @scala.inline
+    def setMetric157(value: String | Double): Self = this.set("metric157", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric157: Self = this.set("metric157", js.undefined)
+    @scala.inline
+    def setMetric158(value: String | Double): Self = this.set("metric158", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric158: Self = this.set("metric158", js.undefined)
+    @scala.inline
+    def setMetric159(value: String | Double): Self = this.set("metric159", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric159: Self = this.set("metric159", js.undefined)
+    @scala.inline
+    def setMetric16(value: String | Double): Self = this.set("metric16", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric16: Self = this.set("metric16", js.undefined)
+    @scala.inline
+    def setMetric160(value: String | Double): Self = this.set("metric160", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric160: Self = this.set("metric160", js.undefined)
+    @scala.inline
+    def setMetric161(value: String | Double): Self = this.set("metric161", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric161: Self = this.set("metric161", js.undefined)
+    @scala.inline
+    def setMetric162(value: String | Double): Self = this.set("metric162", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric162: Self = this.set("metric162", js.undefined)
+    @scala.inline
+    def setMetric163(value: String | Double): Self = this.set("metric163", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric163: Self = this.set("metric163", js.undefined)
+    @scala.inline
+    def setMetric164(value: String | Double): Self = this.set("metric164", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric164: Self = this.set("metric164", js.undefined)
+    @scala.inline
+    def setMetric165(value: String | Double): Self = this.set("metric165", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric165: Self = this.set("metric165", js.undefined)
+    @scala.inline
+    def setMetric166(value: String | Double): Self = this.set("metric166", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric166: Self = this.set("metric166", js.undefined)
+    @scala.inline
+    def setMetric167(value: String | Double): Self = this.set("metric167", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric167: Self = this.set("metric167", js.undefined)
+    @scala.inline
+    def setMetric168(value: String | Double): Self = this.set("metric168", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric168: Self = this.set("metric168", js.undefined)
+    @scala.inline
+    def setMetric169(value: String | Double): Self = this.set("metric169", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric169: Self = this.set("metric169", js.undefined)
+    @scala.inline
+    def setMetric17(value: String | Double): Self = this.set("metric17", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric17: Self = this.set("metric17", js.undefined)
+    @scala.inline
+    def setMetric170(value: String | Double): Self = this.set("metric170", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric170: Self = this.set("metric170", js.undefined)
+    @scala.inline
+    def setMetric171(value: String | Double): Self = this.set("metric171", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric171: Self = this.set("metric171", js.undefined)
+    @scala.inline
+    def setMetric172(value: String | Double): Self = this.set("metric172", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric172: Self = this.set("metric172", js.undefined)
+    @scala.inline
+    def setMetric173(value: String | Double): Self = this.set("metric173", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric173: Self = this.set("metric173", js.undefined)
+    @scala.inline
+    def setMetric174(value: String | Double): Self = this.set("metric174", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric174: Self = this.set("metric174", js.undefined)
+    @scala.inline
+    def setMetric175(value: String | Double): Self = this.set("metric175", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric175: Self = this.set("metric175", js.undefined)
+    @scala.inline
+    def setMetric176(value: String | Double): Self = this.set("metric176", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric176: Self = this.set("metric176", js.undefined)
+    @scala.inline
+    def setMetric177(value: String | Double): Self = this.set("metric177", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric177: Self = this.set("metric177", js.undefined)
+    @scala.inline
+    def setMetric178(value: String | Double): Self = this.set("metric178", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric178: Self = this.set("metric178", js.undefined)
+    @scala.inline
+    def setMetric179(value: String | Double): Self = this.set("metric179", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric179: Self = this.set("metric179", js.undefined)
+    @scala.inline
+    def setMetric18(value: String | Double): Self = this.set("metric18", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric18: Self = this.set("metric18", js.undefined)
+    @scala.inline
+    def setMetric180(value: String | Double): Self = this.set("metric180", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric180: Self = this.set("metric180", js.undefined)
+    @scala.inline
+    def setMetric181(value: String | Double): Self = this.set("metric181", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric181: Self = this.set("metric181", js.undefined)
+    @scala.inline
+    def setMetric182(value: String | Double): Self = this.set("metric182", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric182: Self = this.set("metric182", js.undefined)
+    @scala.inline
+    def setMetric183(value: String | Double): Self = this.set("metric183", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric183: Self = this.set("metric183", js.undefined)
+    @scala.inline
+    def setMetric184(value: String | Double): Self = this.set("metric184", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric184: Self = this.set("metric184", js.undefined)
+    @scala.inline
+    def setMetric185(value: String | Double): Self = this.set("metric185", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric185: Self = this.set("metric185", js.undefined)
+    @scala.inline
+    def setMetric186(value: String | Double): Self = this.set("metric186", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric186: Self = this.set("metric186", js.undefined)
+    @scala.inline
+    def setMetric187(value: String | Double): Self = this.set("metric187", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric187: Self = this.set("metric187", js.undefined)
+    @scala.inline
+    def setMetric188(value: String | Double): Self = this.set("metric188", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric188: Self = this.set("metric188", js.undefined)
+    @scala.inline
+    def setMetric189(value: String | Double): Self = this.set("metric189", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric189: Self = this.set("metric189", js.undefined)
+    @scala.inline
+    def setMetric19(value: String | Double): Self = this.set("metric19", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric19: Self = this.set("metric19", js.undefined)
+    @scala.inline
+    def setMetric190(value: String | Double): Self = this.set("metric190", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric190: Self = this.set("metric190", js.undefined)
+    @scala.inline
+    def setMetric191(value: String | Double): Self = this.set("metric191", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric191: Self = this.set("metric191", js.undefined)
+    @scala.inline
+    def setMetric192(value: String | Double): Self = this.set("metric192", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric192: Self = this.set("metric192", js.undefined)
+    @scala.inline
+    def setMetric193(value: String | Double): Self = this.set("metric193", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric193: Self = this.set("metric193", js.undefined)
+    @scala.inline
+    def setMetric194(value: String | Double): Self = this.set("metric194", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric194: Self = this.set("metric194", js.undefined)
+    @scala.inline
+    def setMetric195(value: String | Double): Self = this.set("metric195", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric195: Self = this.set("metric195", js.undefined)
+    @scala.inline
+    def setMetric196(value: String | Double): Self = this.set("metric196", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric196: Self = this.set("metric196", js.undefined)
+    @scala.inline
+    def setMetric197(value: String | Double): Self = this.set("metric197", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric197: Self = this.set("metric197", js.undefined)
+    @scala.inline
+    def setMetric198(value: String | Double): Self = this.set("metric198", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric198: Self = this.set("metric198", js.undefined)
+    @scala.inline
+    def setMetric199(value: String | Double): Self = this.set("metric199", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric199: Self = this.set("metric199", js.undefined)
+    @scala.inline
+    def setMetric2(value: String | Double): Self = this.set("metric2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric2: Self = this.set("metric2", js.undefined)
+    @scala.inline
+    def setMetric20(value: String | Double): Self = this.set("metric20", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric20: Self = this.set("metric20", js.undefined)
+    @scala.inline
+    def setMetric200(value: String | Double): Self = this.set("metric200", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric200: Self = this.set("metric200", js.undefined)
+    @scala.inline
+    def setMetric21(value: String | Double): Self = this.set("metric21", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric21: Self = this.set("metric21", js.undefined)
+    @scala.inline
+    def setMetric22(value: String | Double): Self = this.set("metric22", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric22: Self = this.set("metric22", js.undefined)
+    @scala.inline
+    def setMetric23(value: String | Double): Self = this.set("metric23", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric23: Self = this.set("metric23", js.undefined)
+    @scala.inline
+    def setMetric24(value: String | Double): Self = this.set("metric24", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric24: Self = this.set("metric24", js.undefined)
+    @scala.inline
+    def setMetric25(value: String | Double): Self = this.set("metric25", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric25: Self = this.set("metric25", js.undefined)
+    @scala.inline
+    def setMetric26(value: String | Double): Self = this.set("metric26", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric26: Self = this.set("metric26", js.undefined)
+    @scala.inline
+    def setMetric27(value: String | Double): Self = this.set("metric27", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric27: Self = this.set("metric27", js.undefined)
+    @scala.inline
+    def setMetric28(value: String | Double): Self = this.set("metric28", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric28: Self = this.set("metric28", js.undefined)
+    @scala.inline
+    def setMetric29(value: String | Double): Self = this.set("metric29", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric29: Self = this.set("metric29", js.undefined)
+    @scala.inline
+    def setMetric3(value: String | Double): Self = this.set("metric3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric3: Self = this.set("metric3", js.undefined)
+    @scala.inline
+    def setMetric30(value: String | Double): Self = this.set("metric30", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric30: Self = this.set("metric30", js.undefined)
+    @scala.inline
+    def setMetric31(value: String | Double): Self = this.set("metric31", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric31: Self = this.set("metric31", js.undefined)
+    @scala.inline
+    def setMetric32(value: String | Double): Self = this.set("metric32", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric32: Self = this.set("metric32", js.undefined)
+    @scala.inline
+    def setMetric33(value: String | Double): Self = this.set("metric33", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric33: Self = this.set("metric33", js.undefined)
+    @scala.inline
+    def setMetric34(value: String | Double): Self = this.set("metric34", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric34: Self = this.set("metric34", js.undefined)
+    @scala.inline
+    def setMetric35(value: String | Double): Self = this.set("metric35", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric35: Self = this.set("metric35", js.undefined)
+    @scala.inline
+    def setMetric36(value: String | Double): Self = this.set("metric36", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric36: Self = this.set("metric36", js.undefined)
+    @scala.inline
+    def setMetric37(value: String | Double): Self = this.set("metric37", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric37: Self = this.set("metric37", js.undefined)
+    @scala.inline
+    def setMetric38(value: String | Double): Self = this.set("metric38", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric38: Self = this.set("metric38", js.undefined)
+    @scala.inline
+    def setMetric39(value: String | Double): Self = this.set("metric39", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric39: Self = this.set("metric39", js.undefined)
+    @scala.inline
+    def setMetric4(value: String | Double): Self = this.set("metric4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric4: Self = this.set("metric4", js.undefined)
+    @scala.inline
+    def setMetric40(value: String | Double): Self = this.set("metric40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric40: Self = this.set("metric40", js.undefined)
+    @scala.inline
+    def setMetric41(value: String | Double): Self = this.set("metric41", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric41: Self = this.set("metric41", js.undefined)
+    @scala.inline
+    def setMetric42(value: String | Double): Self = this.set("metric42", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric42: Self = this.set("metric42", js.undefined)
+    @scala.inline
+    def setMetric43(value: String | Double): Self = this.set("metric43", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric43: Self = this.set("metric43", js.undefined)
+    @scala.inline
+    def setMetric44(value: String | Double): Self = this.set("metric44", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric44: Self = this.set("metric44", js.undefined)
+    @scala.inline
+    def setMetric45(value: String | Double): Self = this.set("metric45", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric45: Self = this.set("metric45", js.undefined)
+    @scala.inline
+    def setMetric46(value: String | Double): Self = this.set("metric46", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric46: Self = this.set("metric46", js.undefined)
+    @scala.inline
+    def setMetric47(value: String | Double): Self = this.set("metric47", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric47: Self = this.set("metric47", js.undefined)
+    @scala.inline
+    def setMetric48(value: String | Double): Self = this.set("metric48", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric48: Self = this.set("metric48", js.undefined)
+    @scala.inline
+    def setMetric49(value: String | Double): Self = this.set("metric49", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric49: Self = this.set("metric49", js.undefined)
+    @scala.inline
+    def setMetric5(value: String | Double): Self = this.set("metric5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric5: Self = this.set("metric5", js.undefined)
+    @scala.inline
+    def setMetric50(value: String | Double): Self = this.set("metric50", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric50: Self = this.set("metric50", js.undefined)
+    @scala.inline
+    def setMetric51(value: String | Double): Self = this.set("metric51", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric51: Self = this.set("metric51", js.undefined)
+    @scala.inline
+    def setMetric52(value: String | Double): Self = this.set("metric52", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric52: Self = this.set("metric52", js.undefined)
+    @scala.inline
+    def setMetric53(value: String | Double): Self = this.set("metric53", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric53: Self = this.set("metric53", js.undefined)
+    @scala.inline
+    def setMetric54(value: String | Double): Self = this.set("metric54", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric54: Self = this.set("metric54", js.undefined)
+    @scala.inline
+    def setMetric55(value: String | Double): Self = this.set("metric55", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric55: Self = this.set("metric55", js.undefined)
+    @scala.inline
+    def setMetric56(value: String | Double): Self = this.set("metric56", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric56: Self = this.set("metric56", js.undefined)
+    @scala.inline
+    def setMetric57(value: String | Double): Self = this.set("metric57", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric57: Self = this.set("metric57", js.undefined)
+    @scala.inline
+    def setMetric58(value: String | Double): Self = this.set("metric58", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric58: Self = this.set("metric58", js.undefined)
+    @scala.inline
+    def setMetric59(value: String | Double): Self = this.set("metric59", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric59: Self = this.set("metric59", js.undefined)
+    @scala.inline
+    def setMetric6(value: String | Double): Self = this.set("metric6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric6: Self = this.set("metric6", js.undefined)
+    @scala.inline
+    def setMetric60(value: String | Double): Self = this.set("metric60", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric60: Self = this.set("metric60", js.undefined)
+    @scala.inline
+    def setMetric61(value: String | Double): Self = this.set("metric61", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric61: Self = this.set("metric61", js.undefined)
+    @scala.inline
+    def setMetric62(value: String | Double): Self = this.set("metric62", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric62: Self = this.set("metric62", js.undefined)
+    @scala.inline
+    def setMetric63(value: String | Double): Self = this.set("metric63", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric63: Self = this.set("metric63", js.undefined)
+    @scala.inline
+    def setMetric64(value: String | Double): Self = this.set("metric64", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric64: Self = this.set("metric64", js.undefined)
+    @scala.inline
+    def setMetric65(value: String | Double): Self = this.set("metric65", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric65: Self = this.set("metric65", js.undefined)
+    @scala.inline
+    def setMetric66(value: String | Double): Self = this.set("metric66", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric66: Self = this.set("metric66", js.undefined)
+    @scala.inline
+    def setMetric67(value: String | Double): Self = this.set("metric67", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric67: Self = this.set("metric67", js.undefined)
+    @scala.inline
+    def setMetric68(value: String | Double): Self = this.set("metric68", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric68: Self = this.set("metric68", js.undefined)
+    @scala.inline
+    def setMetric69(value: String | Double): Self = this.set("metric69", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric69: Self = this.set("metric69", js.undefined)
+    @scala.inline
+    def setMetric7(value: String | Double): Self = this.set("metric7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric7: Self = this.set("metric7", js.undefined)
+    @scala.inline
+    def setMetric70(value: String | Double): Self = this.set("metric70", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric70: Self = this.set("metric70", js.undefined)
+    @scala.inline
+    def setMetric71(value: String | Double): Self = this.set("metric71", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric71: Self = this.set("metric71", js.undefined)
+    @scala.inline
+    def setMetric72(value: String | Double): Self = this.set("metric72", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric72: Self = this.set("metric72", js.undefined)
+    @scala.inline
+    def setMetric73(value: String | Double): Self = this.set("metric73", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric73: Self = this.set("metric73", js.undefined)
+    @scala.inline
+    def setMetric74(value: String | Double): Self = this.set("metric74", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric74: Self = this.set("metric74", js.undefined)
+    @scala.inline
+    def setMetric75(value: String | Double): Self = this.set("metric75", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric75: Self = this.set("metric75", js.undefined)
+    @scala.inline
+    def setMetric76(value: String | Double): Self = this.set("metric76", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric76: Self = this.set("metric76", js.undefined)
+    @scala.inline
+    def setMetric77(value: String | Double): Self = this.set("metric77", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric77: Self = this.set("metric77", js.undefined)
+    @scala.inline
+    def setMetric78(value: String | Double): Self = this.set("metric78", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric78: Self = this.set("metric78", js.undefined)
+    @scala.inline
+    def setMetric79(value: String | Double): Self = this.set("metric79", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric79: Self = this.set("metric79", js.undefined)
+    @scala.inline
+    def setMetric8(value: String | Double): Self = this.set("metric8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric8: Self = this.set("metric8", js.undefined)
+    @scala.inline
+    def setMetric80(value: String | Double): Self = this.set("metric80", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric80: Self = this.set("metric80", js.undefined)
+    @scala.inline
+    def setMetric81(value: String | Double): Self = this.set("metric81", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric81: Self = this.set("metric81", js.undefined)
+    @scala.inline
+    def setMetric82(value: String | Double): Self = this.set("metric82", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric82: Self = this.set("metric82", js.undefined)
+    @scala.inline
+    def setMetric83(value: String | Double): Self = this.set("metric83", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric83: Self = this.set("metric83", js.undefined)
+    @scala.inline
+    def setMetric84(value: String | Double): Self = this.set("metric84", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric84: Self = this.set("metric84", js.undefined)
+    @scala.inline
+    def setMetric85(value: String | Double): Self = this.set("metric85", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric85: Self = this.set("metric85", js.undefined)
+    @scala.inline
+    def setMetric86(value: String | Double): Self = this.set("metric86", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric86: Self = this.set("metric86", js.undefined)
+    @scala.inline
+    def setMetric87(value: String | Double): Self = this.set("metric87", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric87: Self = this.set("metric87", js.undefined)
+    @scala.inline
+    def setMetric88(value: String | Double): Self = this.set("metric88", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric88: Self = this.set("metric88", js.undefined)
+    @scala.inline
+    def setMetric89(value: String | Double): Self = this.set("metric89", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric89: Self = this.set("metric89", js.undefined)
+    @scala.inline
+    def setMetric9(value: String | Double): Self = this.set("metric9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric9: Self = this.set("metric9", js.undefined)
+    @scala.inline
+    def setMetric90(value: String | Double): Self = this.set("metric90", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric90: Self = this.set("metric90", js.undefined)
+    @scala.inline
+    def setMetric91(value: String | Double): Self = this.set("metric91", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric91: Self = this.set("metric91", js.undefined)
+    @scala.inline
+    def setMetric92(value: String | Double): Self = this.set("metric92", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric92: Self = this.set("metric92", js.undefined)
+    @scala.inline
+    def setMetric93(value: String | Double): Self = this.set("metric93", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric93: Self = this.set("metric93", js.undefined)
+    @scala.inline
+    def setMetric94(value: String | Double): Self = this.set("metric94", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric94: Self = this.set("metric94", js.undefined)
+    @scala.inline
+    def setMetric95(value: String | Double): Self = this.set("metric95", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric95: Self = this.set("metric95", js.undefined)
+    @scala.inline
+    def setMetric96(value: String | Double): Self = this.set("metric96", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric96: Self = this.set("metric96", js.undefined)
+    @scala.inline
+    def setMetric97(value: String | Double): Self = this.set("metric97", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric97: Self = this.set("metric97", js.undefined)
+    @scala.inline
+    def setMetric98(value: String | Double): Self = this.set("metric98", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric98: Self = this.set("metric98", js.undefined)
+    @scala.inline
+    def setMetric99(value: String | Double): Self = this.set("metric99", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric99: Self = this.set("metric99", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNonInteraction(value: Boolean): Self = this.set("nonInteraction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNonInteraction: Self = this.set("nonInteraction", js.undefined)
+    @scala.inline
+    def setOption(value: String): Self = this.set("option", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOption: Self = this.set("option", js.undefined)
+    @scala.inline
+    def setPage(value: String): Self = this.set("page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePage: Self = this.set("page", js.undefined)
+    @scala.inline
+    def setPosition(value: Double | String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setPrice(value: String): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setQuantity(value: Double): Self = this.set("quantity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuantity: Self = this.set("quantity", js.undefined)
+    @scala.inline
+    def setQueueTime(value: Double): Self = this.set("queueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueueTime: Self = this.set("queueTime", js.undefined)
+    @scala.inline
+    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrer: Self = this.set("referrer", js.undefined)
+    @scala.inline
+    def setRevenue(value: String): Self = this.set("revenue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevenue: Self = this.set("revenue", js.undefined)
+    @scala.inline
+    def setSampleRate(value: Double): Self = this.set("sampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("sampleRate", js.undefined)
+    @scala.inline
+    def setScreenColors(value: String): Self = this.set("screenColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenColors: Self = this.set("screenColors", js.undefined)
+    @scala.inline
+    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenName: Self = this.set("screenName", js.undefined)
+    @scala.inline
+    def setScreenResolution(value: String): Self = this.set("screenResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenResolution: Self = this.set("screenResolution", js.undefined)
+    @scala.inline
+    def setSessionControl(value: String): Self = this.set("sessionControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionControl: Self = this.set("sessionControl", js.undefined)
+    @scala.inline
+    def setShipping(value: String): Self = this.set("shipping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipping: Self = this.set("shipping", js.undefined)
+    @scala.inline
+    def setSiteSpeedSampleRate(value: Double): Self = this.set("siteSpeedSampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteSpeedSampleRate: Self = this.set("siteSpeedSampleRate", js.undefined)
+    @scala.inline
+    def setSocialAction(value: String): Self = this.set("socialAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialAction: Self = this.set("socialAction", js.undefined)
+    @scala.inline
+    def setSocialNetwork(value: String): Self = this.set("socialNetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialNetwork: Self = this.set("socialNetwork", js.undefined)
+    @scala.inline
+    def setSocialTarget(value: String): Self = this.set("socialTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocialTarget: Self = this.set("socialTarget", js.undefined)
+    @scala.inline
+    def setSome(value: String): Self = this.set("some", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSome: Self = this.set("some", js.undefined)
+    @scala.inline
+    def setStep(value: Boolean | Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setStorage(value: String): Self = this.set("storage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorage: Self = this.set("storage", js.undefined)
+    @scala.inline
+    def setStoreGac(value: Boolean): Self = this.set("storeGac", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoreGac: Self = this.set("storeGac", js.undefined)
+    @scala.inline
+    def setTax(value: String): Self = this.set("tax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTax: Self = this.set("tax", js.undefined)
+    @scala.inline
+    def setTimingCategory(value: String): Self = this.set("timingCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimingCategory: Self = this.set("timingCategory", js.undefined)
+    @scala.inline
+    def setTimingLabel(value: String): Self = this.set("timingLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimingLabel: Self = this.set("timingLabel", js.undefined)
+    @scala.inline
+    def setTimingValue(value: Double): Self = this.set("timingValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimingValue: Self = this.set("timingValue", js.undefined)
+    @scala.inline
+    def setTimingVar(value: String): Self = this.set("timingVar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimingVar: Self = this.set("timingVar", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransport(value: String): Self = this.set("transport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransport: Self = this.set("transport", js.undefined)
+    @scala.inline
+    def setUseBeacon(value: Boolean): Self = this.set("useBeacon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseBeacon: Self = this.set("useBeacon", js.undefined)
+    @scala.inline
+    def setUserId(value: String): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+    @scala.inline
+    def setVariant(value: String): Self = this.set("variant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariant: Self = this.set("variant", js.undefined)
+    @scala.inline
+    def setViewportSize(value: String): Self = this.set("viewportSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewportSize: Self = this.set("viewportSize", js.undefined)
+  }
+  
 }
 

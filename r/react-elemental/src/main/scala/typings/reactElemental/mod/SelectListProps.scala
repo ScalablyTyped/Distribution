@@ -5,36 +5,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectListProps extends js.Object {
-  val error: js.UndefOr[String] = js.undefined
-  val height: js.UndefOr[Double] = js.undefined
-  val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
-  val options: js.UndefOr[js.Array[typings.reactElemental.anon.Label]] = js.undefined
-  val placeholder: js.UndefOr[String] = js.undefined
-  val style: js.UndefOr[CSSProperties] = js.undefined
-  val width: js.UndefOr[Double | String] = js.undefined
+  val error: js.UndefOr[String] = js.native
+  val height: js.UndefOr[Double] = js.native
+  val onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  val options: js.UndefOr[js.Array[typings.reactElemental.anon.Label]] = js.native
+  val placeholder: js.UndefOr[String] = js.native
+  val style: js.UndefOr[CSSProperties] = js.native
+  val width: js.UndefOr[Double | String] = js.native
 }
 
 object SelectListProps {
   @scala.inline
-  def apply(
-    error: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    onChange: /* value */ String => Unit = null,
-    options: js.Array[typings.reactElemental.anon.Label] = null,
-    placeholder: String = null,
-    style: CSSProperties = null,
-    width: Double | String = null
-  ): SelectListProps = {
+  def apply(): SelectListProps = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectListProps]
   }
+  @scala.inline
+  implicit class SelectListPropsOps[Self <: SelectListProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ String => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: typings.reactElemental.anon.Label*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[typings.reactElemental.anon.Label]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: String): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

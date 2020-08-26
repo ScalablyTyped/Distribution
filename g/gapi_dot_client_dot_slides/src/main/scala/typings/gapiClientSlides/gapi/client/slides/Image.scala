@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Image extends js.Object {
   /**
     * An URL to an image with a default lifetime of 30 minutes.
@@ -11,18 +12,37 @@ trait Image extends js.Object {
     * effectively accesses the image as the original requester. Access to the
     * image may be lost if the presentation's sharing settings change.
     */
-  var contentUrl: js.UndefOr[String] = js.undefined
+  var contentUrl: js.UndefOr[String] = js.native
   /** The properties of the image. */
-  var imageProperties: js.UndefOr[ImageProperties] = js.undefined
+  var imageProperties: js.UndefOr[ImageProperties] = js.native
 }
 
 object Image {
   @scala.inline
-  def apply(contentUrl: String = null, imageProperties: ImageProperties = null): Image = {
+  def apply(): Image = {
     val __obj = js.Dynamic.literal()
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (imageProperties != null) __obj.updateDynamic("imageProperties")(imageProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
+  @scala.inline
+  implicit class ImageOps[Self <: Image] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentUrl(value: String): Self = this.set("contentUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentUrl: Self = this.set("contentUrl", js.undefined)
+    @scala.inline
+    def setImageProperties(value: ImageProperties): Self = this.set("imageProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageProperties: Self = this.set("imageProperties", js.undefined)
+  }
+  
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides access to all tables in a document. */
+@js.native
 trait TextTables
   extends XIndexAccess
      with XNameAccess

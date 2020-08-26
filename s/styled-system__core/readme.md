@@ -10,8 +10,8 @@ Typings are for version 5.1
 | Full name          | @styled-system/core |
 | Keywords           | - |
 | # releases         | 27 |
-| # dependents       | 24 |
-| # downloads        | 6530674 |
+| # dependents       | 26 |
+| # downloads        | 9038657 |
 | # stars            | 0 |
 
 ## Links

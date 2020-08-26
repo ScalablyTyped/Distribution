@@ -12,7 +12,7 @@ Get all email addresses in a string
 | Keywords           | get, extract, find, scrape, text, string, email, address, emails |
 | # releases         | 2 |
 | # dependents       | 7 |
-| # downloads        | 49185 |
+| # downloads        | 95542 |
 | # stars            | 4 |
 
 ## Links

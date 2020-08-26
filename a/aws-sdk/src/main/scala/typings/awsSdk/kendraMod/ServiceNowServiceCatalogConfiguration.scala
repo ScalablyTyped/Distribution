@@ -34,21 +34,50 @@ trait ServiceNowServiceCatalogConfiguration extends js.Object {
 
 object ServiceNowServiceCatalogConfiguration {
   @scala.inline
-  def apply(
-    DocumentDataFieldName: DataSourceFieldName,
-    CrawlAttachments: js.UndefOr[Boolean] = js.undefined,
-    DocumentTitleFieldName: DataSourceFieldName = null,
-    ExcludeAttachmentFilePatterns: DataSourceInclusionsExclusionsStrings = null,
-    FieldMappings: DataSourceToIndexFieldMappingList = null,
-    IncludeAttachmentFilePatterns: DataSourceInclusionsExclusionsStrings = null
-  ): ServiceNowServiceCatalogConfiguration = {
+  def apply(DocumentDataFieldName: DataSourceFieldName): ServiceNowServiceCatalogConfiguration = {
     val __obj = js.Dynamic.literal(DocumentDataFieldName = DocumentDataFieldName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CrawlAttachments)) __obj.updateDynamic("CrawlAttachments")(CrawlAttachments.get.asInstanceOf[js.Any])
-    if (DocumentTitleFieldName != null) __obj.updateDynamic("DocumentTitleFieldName")(DocumentTitleFieldName.asInstanceOf[js.Any])
-    if (ExcludeAttachmentFilePatterns != null) __obj.updateDynamic("ExcludeAttachmentFilePatterns")(ExcludeAttachmentFilePatterns.asInstanceOf[js.Any])
-    if (FieldMappings != null) __obj.updateDynamic("FieldMappings")(FieldMappings.asInstanceOf[js.Any])
-    if (IncludeAttachmentFilePatterns != null) __obj.updateDynamic("IncludeAttachmentFilePatterns")(IncludeAttachmentFilePatterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceNowServiceCatalogConfiguration]
   }
+  @scala.inline
+  implicit class ServiceNowServiceCatalogConfigurationOps[Self <: ServiceNowServiceCatalogConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentDataFieldName(value: DataSourceFieldName): Self = this.set("DocumentDataFieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCrawlAttachments(value: Boolean): Self = this.set("CrawlAttachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlAttachments: Self = this.set("CrawlAttachments", js.undefined)
+    @scala.inline
+    def setDocumentTitleFieldName(value: DataSourceFieldName): Self = this.set("DocumentTitleFieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentTitleFieldName: Self = this.set("DocumentTitleFieldName", js.undefined)
+    @scala.inline
+    def setExcludeAttachmentFilePatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("ExcludeAttachmentFilePatterns", js.Array(value :_*))
+    @scala.inline
+    def setExcludeAttachmentFilePatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("ExcludeAttachmentFilePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeAttachmentFilePatterns: Self = this.set("ExcludeAttachmentFilePatterns", js.undefined)
+    @scala.inline
+    def setFieldMappingsVarargs(value: DataSourceToIndexFieldMapping*): Self = this.set("FieldMappings", js.Array(value :_*))
+    @scala.inline
+    def setFieldMappings(value: DataSourceToIndexFieldMappingList): Self = this.set("FieldMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldMappings: Self = this.set("FieldMappings", js.undefined)
+    @scala.inline
+    def setIncludeAttachmentFilePatternsVarargs(value: DataSourceInclusionsExclusionsStringsMember*): Self = this.set("IncludeAttachmentFilePatterns", js.Array(value :_*))
+    @scala.inline
+    def setIncludeAttachmentFilePatterns(value: DataSourceInclusionsExclusionsStrings): Self = this.set("IncludeAttachmentFilePatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeAttachmentFilePatterns: Self = this.set("IncludeAttachmentFilePatterns", js.undefined)
+  }
+  
 }
 

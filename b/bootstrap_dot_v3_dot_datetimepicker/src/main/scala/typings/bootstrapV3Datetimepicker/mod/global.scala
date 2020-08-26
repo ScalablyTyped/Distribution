@@ -23,12 +23,23 @@ object global extends js.Object {
     def datetimepicker(options: DatetimepickerOptions): JQuery = js.native
     def off(events: EventName): JQuery = js.native
     def off(events: EventName, handler: js.Function1[/* eventobject */ Event, _]): JQuery = js.native
+    def off(
+      events: EventName,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ Event, _]
+    ): JQuery = js.native
     def off(events: EventName, selector: String): JQuery = js.native
     def off(events: EventName, selector: String, handler: js.Function1[/* eventobject */ Event, _]): JQuery = js.native
     @JSName("off")
     def off_dpchange(events: dpDotchange): JQuery = js.native
     @JSName("off")
     def off_dpchange(events: dpDotchange, handler: js.Function1[/* eventobject */ ChangeEvent, _]): JQuery = js.native
+    @JSName("off")
+    def off_dpchange(
+      events: dpDotchange,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ ChangeEvent, _]
+    ): JQuery = js.native
     @JSName("off")
     def off_dpchange(events: dpDotchange, selector: String): JQuery = js.native
     @JSName("off")
@@ -37,6 +48,12 @@ object global extends js.Object {
     def off_dpupdate(events: dpDotupdate): JQuery = js.native
     @JSName("off")
     def off_dpupdate(events: dpDotupdate, handler: js.Function1[/* eventobject */ UpdateEvent, _]): JQuery = js.native
+    @JSName("off")
+    def off_dpupdate(
+      events: dpDotupdate,
+      selector: js.UndefOr[scala.Nothing],
+      handler: js.Function1[/* eventobject */ UpdateEvent, _]
+    ): JQuery = js.native
     @JSName("off")
     def off_dpupdate(events: dpDotupdate, selector: String): JQuery = js.native
     @JSName("off")

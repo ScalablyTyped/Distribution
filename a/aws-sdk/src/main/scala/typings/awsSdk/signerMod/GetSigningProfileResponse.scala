@@ -42,26 +42,54 @@ trait GetSigningProfileResponse extends js.Object {
 
 object GetSigningProfileResponse {
   @scala.inline
-  def apply(
-    arn: java.lang.String = null,
-    overrides: SigningPlatformOverrides = null,
-    platformId: PlatformId = null,
-    profileName: ProfileName = null,
-    signingMaterial: SigningMaterial = null,
-    signingParameters: SigningParameters = null,
-    status: SigningProfileStatus = null,
-    tags: TagMap = null
-  ): GetSigningProfileResponse = {
+  def apply(): GetSigningProfileResponse = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (platformId != null) __obj.updateDynamic("platformId")(platformId.asInstanceOf[js.Any])
-    if (profileName != null) __obj.updateDynamic("profileName")(profileName.asInstanceOf[js.Any])
-    if (signingMaterial != null) __obj.updateDynamic("signingMaterial")(signingMaterial.asInstanceOf[js.Any])
-    if (signingParameters != null) __obj.updateDynamic("signingParameters")(signingParameters.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSigningProfileResponse]
   }
+  @scala.inline
+  implicit class GetSigningProfileResponseOps[Self <: GetSigningProfileResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: java.lang.String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setOverrides(value: SigningPlatformOverrides): Self = this.set("overrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrides: Self = this.set("overrides", js.undefined)
+    @scala.inline
+    def setPlatformId(value: PlatformId): Self = this.set("platformId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformId: Self = this.set("platformId", js.undefined)
+    @scala.inline
+    def setProfileName(value: ProfileName): Self = this.set("profileName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfileName: Self = this.set("profileName", js.undefined)
+    @scala.inline
+    def setSigningMaterial(value: SigningMaterial): Self = this.set("signingMaterial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningMaterial: Self = this.set("signingMaterial", js.undefined)
+    @scala.inline
+    def setSigningParameters(value: SigningParameters): Self = this.set("signingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningParameters: Self = this.set("signingParameters", js.undefined)
+    @scala.inline
+    def setStatus(value: SigningProfileStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

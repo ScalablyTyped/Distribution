@@ -2,6 +2,7 @@ package typings.pulumiAws.spotFleetRequestMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchSpecification
+import typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchTemplateConfig
 import typings.pulumiPulumi.outputMod.Input
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -40,7 +41,6 @@ trait SpotFleetRequestArgs extends js.Object {
     */
   val instanceInterruptionBehaviour: js.UndefOr[Input[String]] = js.native
   /**
-    *
     * The number of Spot pools across which to allocate your target Spot capacity.
     * Valid only when `allocationStrategy` is set to `lowestPrice`. Spot Fleet selects
     * the cheapest Spot pools and evenly allocates your target Spot capacity across
@@ -50,9 +50,13 @@ trait SpotFleetRequestArgs extends js.Object {
   /**
     * Used to define the launch configuration of the
     * spot-fleet request. Can be specified multiple times to define different bids
-    * across different markets and instance types.
+    * across different markets and instance types. Conflicts with `launchTemplateConfig`. At least one of `launchSpecification` or `launchTemplateConfig` is required.
     */
-  val launchSpecifications: Input[js.Array[Input[SpotFleetRequestLaunchSpecification]]] = js.native
+  val launchSpecifications: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchSpecification]]]] = js.native
+  /**
+    * Launch template configuration block. See Launch Template Configs below for more details. Conflicts with `launchSpecification`. At least one of `launchSpecification` or `launchTemplateConfig` is required.
+    */
+  val launchTemplateConfigs: js.UndefOr[Input[js.Array[Input[SpotFleetRequestLaunchTemplateConfig]]]] = js.native
   /**
     * A list of elastic load balancer names to add to the Spot fleet.
     */
@@ -62,13 +66,13 @@ trait SpotFleetRequestArgs extends js.Object {
     */
   val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * The maximum bid price per unit hour.
+    * The maximum spot bid for this override request.
     */
   val spotPrice: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * The number of units to request. You can choose to set the
     * target capacity in terms of instances or a performance characteristic that is
@@ -102,41 +106,98 @@ trait SpotFleetRequestArgs extends js.Object {
 
 object SpotFleetRequestArgs {
   @scala.inline
-  def apply(
-    iamFleetRole: Input[String],
-    launchSpecifications: Input[js.Array[Input[SpotFleetRequestLaunchSpecification]]],
-    targetCapacity: Input[Double],
-    allocationStrategy: Input[String] = null,
-    excessCapacityTerminationPolicy: Input[String] = null,
-    fleetType: Input[String] = null,
-    instanceInterruptionBehaviour: Input[String] = null,
-    instancePoolsToUseCount: Input[Double] = null,
-    loadBalancers: Input[js.Array[Input[String]]] = null,
-    replaceUnhealthyInstances: Input[Boolean] = null,
-    spotPrice: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    targetGroupArns: Input[js.Array[Input[String]]] = null,
-    terminateInstancesWithExpiration: Input[Boolean] = null,
-    validFrom: Input[String] = null,
-    validUntil: Input[String] = null,
-    waitForFulfillment: Input[Boolean] = null
-  ): SpotFleetRequestArgs = {
-    val __obj = js.Dynamic.literal(iamFleetRole = iamFleetRole.asInstanceOf[js.Any], launchSpecifications = launchSpecifications.asInstanceOf[js.Any], targetCapacity = targetCapacity.asInstanceOf[js.Any])
-    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
-    if (excessCapacityTerminationPolicy != null) __obj.updateDynamic("excessCapacityTerminationPolicy")(excessCapacityTerminationPolicy.asInstanceOf[js.Any])
-    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
-    if (instanceInterruptionBehaviour != null) __obj.updateDynamic("instanceInterruptionBehaviour")(instanceInterruptionBehaviour.asInstanceOf[js.Any])
-    if (instancePoolsToUseCount != null) __obj.updateDynamic("instancePoolsToUseCount")(instancePoolsToUseCount.asInstanceOf[js.Any])
-    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
-    if (replaceUnhealthyInstances != null) __obj.updateDynamic("replaceUnhealthyInstances")(replaceUnhealthyInstances.asInstanceOf[js.Any])
-    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (targetGroupArns != null) __obj.updateDynamic("targetGroupArns")(targetGroupArns.asInstanceOf[js.Any])
-    if (terminateInstancesWithExpiration != null) __obj.updateDynamic("terminateInstancesWithExpiration")(terminateInstancesWithExpiration.asInstanceOf[js.Any])
-    if (validFrom != null) __obj.updateDynamic("validFrom")(validFrom.asInstanceOf[js.Any])
-    if (validUntil != null) __obj.updateDynamic("validUntil")(validUntil.asInstanceOf[js.Any])
-    if (waitForFulfillment != null) __obj.updateDynamic("waitForFulfillment")(waitForFulfillment.asInstanceOf[js.Any])
+  def apply(iamFleetRole: Input[String], targetCapacity: Input[Double]): SpotFleetRequestArgs = {
+    val __obj = js.Dynamic.literal(iamFleetRole = iamFleetRole.asInstanceOf[js.Any], targetCapacity = targetCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestArgs]
   }
+  @scala.inline
+  implicit class SpotFleetRequestArgsOps[Self <: SpotFleetRequestArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIamFleetRole(value: Input[String]): Self = this.set("iamFleetRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetCapacity(value: Input[Double]): Self = this.set("targetCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllocationStrategy(value: Input[String]): Self = this.set("allocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationStrategy: Self = this.set("allocationStrategy", js.undefined)
+    @scala.inline
+    def setExcessCapacityTerminationPolicy(value: Input[String]): Self = this.set("excessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcessCapacityTerminationPolicy: Self = this.set("excessCapacityTerminationPolicy", js.undefined)
+    @scala.inline
+    def setFleetType(value: Input[String]): Self = this.set("fleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetType: Self = this.set("fleetType", js.undefined)
+    @scala.inline
+    def setInstanceInterruptionBehaviour(value: Input[String]): Self = this.set("instanceInterruptionBehaviour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInterruptionBehaviour: Self = this.set("instanceInterruptionBehaviour", js.undefined)
+    @scala.inline
+    def setInstancePoolsToUseCount(value: Input[Double]): Self = this.set("instancePoolsToUseCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancePoolsToUseCount: Self = this.set("instancePoolsToUseCount", js.undefined)
+    @scala.inline
+    def setLaunchSpecificationsVarargs(value: Input[SpotFleetRequestLaunchSpecification]*): Self = this.set("launchSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setLaunchSpecifications(value: Input[js.Array[Input[SpotFleetRequestLaunchSpecification]]]): Self = this.set("launchSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchSpecifications: Self = this.set("launchSpecifications", js.undefined)
+    @scala.inline
+    def setLaunchTemplateConfigsVarargs(value: Input[SpotFleetRequestLaunchTemplateConfig]*): Self = this.set("launchTemplateConfigs", js.Array(value :_*))
+    @scala.inline
+    def setLaunchTemplateConfigs(value: Input[js.Array[Input[SpotFleetRequestLaunchTemplateConfig]]]): Self = this.set("launchTemplateConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateConfigs: Self = this.set("launchTemplateConfigs", js.undefined)
+    @scala.inline
+    def setLoadBalancersVarargs(value: Input[String]*): Self = this.set("loadBalancers", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancers(value: Input[js.Array[Input[String]]]): Self = this.set("loadBalancers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancers: Self = this.set("loadBalancers", js.undefined)
+    @scala.inline
+    def setReplaceUnhealthyInstances(value: Input[Boolean]): Self = this.set("replaceUnhealthyInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceUnhealthyInstances: Self = this.set("replaceUnhealthyInstances", js.undefined)
+    @scala.inline
+    def setSpotPrice(value: Input[String]): Self = this.set("spotPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotPrice: Self = this.set("spotPrice", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTargetGroupArnsVarargs(value: Input[String]*): Self = this.set("targetGroupArns", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupArns(value: Input[js.Array[Input[String]]]): Self = this.set("targetGroupArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupArns: Self = this.set("targetGroupArns", js.undefined)
+    @scala.inline
+    def setTerminateInstancesWithExpiration(value: Input[Boolean]): Self = this.set("terminateInstancesWithExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateInstancesWithExpiration: Self = this.set("terminateInstancesWithExpiration", js.undefined)
+    @scala.inline
+    def setValidFrom(value: Input[String]): Self = this.set("validFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidFrom: Self = this.set("validFrom", js.undefined)
+    @scala.inline
+    def setValidUntil(value: Input[String]): Self = this.set("validUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUntil: Self = this.set("validUntil", js.undefined)
+    @scala.inline
+    def setWaitForFulfillment(value: Input[Boolean]): Self = this.set("waitForFulfillment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForFulfillment: Self = this.set("waitForFulfillment", js.undefined)
+  }
+  
 }
 

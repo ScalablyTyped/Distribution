@@ -51,10 +51,84 @@ trait IndoorMap_ extends Layer {
     indoorId: String,
     callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
   ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: js.UndefOr[scala.Nothing],
+    noMove: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: js.UndefOr[scala.Nothing],
+    noMove: Boolean
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: js.UndefOr[scala.Nothing],
+    noMove: Boolean,
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(indoorId: String, floor: js.UndefOr[scala.Nothing], shopId: String): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: String,
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: String,
+    noMove: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(indoorId: String, floor: js.UndefOr[scala.Nothing], shopId: String, noMove: Boolean): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: js.UndefOr[scala.Nothing],
+    shopId: String,
+    noMove: Boolean,
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
   def showIndoorMap(indoorId: String, floor: Double): Unit = js.native
   def showIndoorMap(
     indoorId: String,
     floor: Double,
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: Double,
+    shopId: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: Double,
+    shopId: js.UndefOr[scala.Nothing],
+    noMove: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(indoorId: String, floor: Double, shopId: js.UndefOr[scala.Nothing], noMove: Boolean): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: Double,
+    shopId: js.UndefOr[scala.Nothing],
+    noMove: Boolean,
     callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
   ): Unit = js.native
   def showIndoorMap(indoorId: String, floor: Double, shopId: String): Unit = js.native
@@ -62,6 +136,13 @@ trait IndoorMap_ extends Layer {
     indoorId: String,
     floor: Double,
     shopId: String,
+    callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
+  ): Unit = js.native
+  def showIndoorMap(
+    indoorId: String,
+    floor: Double,
+    shopId: String,
+    noMove: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* error */ Null | Error, /* result */ SearchResult, Unit]
   ): Unit = js.native
   def showIndoorMap(indoorId: String, floor: Double, shopId: String, noMove: Boolean): Unit = js.native

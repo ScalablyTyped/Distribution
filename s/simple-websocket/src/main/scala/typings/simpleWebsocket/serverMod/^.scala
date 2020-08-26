@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ^ () extends SocketServer {
   def this(options: Options) = this()
+  def this(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]) = this()
   def this(options: Options, callback: js.Function0[Unit]) = this()
 }
 

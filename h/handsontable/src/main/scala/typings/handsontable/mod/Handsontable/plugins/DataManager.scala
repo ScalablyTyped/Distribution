@@ -16,6 +16,7 @@ trait DataManager extends js.Object {
   def addChild(parent: js.Object): Unit = js.native
   def addChild(parent: js.Object, element: js.Object): Unit = js.native
   def addChildAtIndex(parent: js.Object, index: Double): Unit = js.native
+  def addChildAtIndex(parent: js.Object, index: Double, element: js.UndefOr[scala.Nothing], globalIndex: Double): Unit = js.native
   def addChildAtIndex(parent: js.Object, index: Double, element: js.Object): Unit = js.native
   def addChildAtIndex(parent: js.Object, index: Double, element: js.Object, globalIndex: Double): Unit = js.native
   def addSibling(index: Double): Unit = js.native

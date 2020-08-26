@@ -5,37 +5,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a collection properties that are specific to the Digital Rights Management (DRM) protection of the MediaStreamSample . */
+@js.native
 trait MediaStreamSampleProtectionProperties extends js.Object {
   /**
     * Gets the Digital Rights Management (DRM) initialization vector from the MediaStreamSample .
     * @return The initialization vector.
     */
-  def getInitializationVector(): js.Array[Double]
+  def getInitializationVector(): js.Array[Double] = js.native
   /**
     * Gets the Digital Rights Management (DRM) key identifier from the MediaStreamSample .
     * @return Receives the key identifier used to decrypt the data.
     */
-  def getKeyIdentifier(): js.Array[Double]
+  def getKeyIdentifier(): js.Array[Double] = js.native
   /**
     * Gets the Digital Rights Management (DRM) sub-sample mapping from the MediaStreamSample .
     * @return Receives the sub-sample mapping.
     */
-  def getSubSampleMapping(): js.Array[Double]
+  def getSubSampleMapping(): js.Array[Double] = js.native
   /**
     * Sets the Digital Rights Management (DRM) initialization vector for the MediaStreamSample .
     * @param value The value to set the DRM initialization vector to.
     */
-  def setInitializationVector(value: js.Array[Double]): Unit
+  def setInitializationVector(value: js.Array[Double]): Unit = js.native
   /**
     * Sets the Digital Rights Management (DRM) key identifier for the MediaStreamSample .
     * @param value The value to set the DRM key identifier to.
     */
-  def setKeyIdentifier(value: js.Array[Double]): Unit
+  def setKeyIdentifier(value: js.Array[Double]): Unit = js.native
   /**
     * Sets the Digital Rights Management (DRM) sub-sample mapping for the MediaStreamSample .
     * @param value The value to set the DRM sub-sample mapping to.
     */
-  def setSubSampleMapping(value: js.Array[Double]): Unit
+  def setSubSampleMapping(value: js.Array[Double]): Unit = js.native
 }
 
 object MediaStreamSampleProtectionProperties {
@@ -51,5 +52,30 @@ object MediaStreamSampleProtectionProperties {
     val __obj = js.Dynamic.literal(getInitializationVector = js.Any.fromFunction0(getInitializationVector), getKeyIdentifier = js.Any.fromFunction0(getKeyIdentifier), getSubSampleMapping = js.Any.fromFunction0(getSubSampleMapping), setInitializationVector = js.Any.fromFunction1(setInitializationVector), setKeyIdentifier = js.Any.fromFunction1(setKeyIdentifier), setSubSampleMapping = js.Any.fromFunction1(setSubSampleMapping))
     __obj.asInstanceOf[MediaStreamSampleProtectionProperties]
   }
+  @scala.inline
+  implicit class MediaStreamSampleProtectionPropertiesOps[Self <: MediaStreamSampleProtectionProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetInitializationVector(value: () => js.Array[Double]): Self = this.set("getInitializationVector", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetKeyIdentifier(value: () => js.Array[Double]): Self = this.set("getKeyIdentifier", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSubSampleMapping(value: () => js.Array[Double]): Self = this.set("getSubSampleMapping", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSetInitializationVector(value: js.Array[Double] => Unit): Self = this.set("setInitializationVector", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetKeyIdentifier(value: js.Array[Double] => Unit): Self = this.set("setKeyIdentifier", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSetSubSampleMapping(value: js.Array[Double] => Unit): Self = this.set("setSubSampleMapping", js.Any.fromFunction1(value))
+  }
+  
 }
 

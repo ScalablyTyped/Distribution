@@ -38,24 +38,52 @@ trait ApplicationConfigurationDescription extends js.Object {
 
 object ApplicationConfigurationDescription {
   @scala.inline
-  def apply(
-    ApplicationCodeConfigurationDescription: ApplicationCodeConfigurationDescription = null,
-    ApplicationSnapshotConfigurationDescription: ApplicationSnapshotConfigurationDescription = null,
-    EnvironmentPropertyDescriptions: EnvironmentPropertyDescriptions = null,
-    FlinkApplicationConfigurationDescription: FlinkApplicationConfigurationDescription = null,
-    RunConfigurationDescription: RunConfigurationDescription = null,
-    SqlApplicationConfigurationDescription: SqlApplicationConfigurationDescription = null,
-    VpcConfigurationDescriptions: VpcConfigurationDescriptions = null
-  ): ApplicationConfigurationDescription = {
+  def apply(): ApplicationConfigurationDescription = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationCodeConfigurationDescription != null) __obj.updateDynamic("ApplicationCodeConfigurationDescription")(ApplicationCodeConfigurationDescription.asInstanceOf[js.Any])
-    if (ApplicationSnapshotConfigurationDescription != null) __obj.updateDynamic("ApplicationSnapshotConfigurationDescription")(ApplicationSnapshotConfigurationDescription.asInstanceOf[js.Any])
-    if (EnvironmentPropertyDescriptions != null) __obj.updateDynamic("EnvironmentPropertyDescriptions")(EnvironmentPropertyDescriptions.asInstanceOf[js.Any])
-    if (FlinkApplicationConfigurationDescription != null) __obj.updateDynamic("FlinkApplicationConfigurationDescription")(FlinkApplicationConfigurationDescription.asInstanceOf[js.Any])
-    if (RunConfigurationDescription != null) __obj.updateDynamic("RunConfigurationDescription")(RunConfigurationDescription.asInstanceOf[js.Any])
-    if (SqlApplicationConfigurationDescription != null) __obj.updateDynamic("SqlApplicationConfigurationDescription")(SqlApplicationConfigurationDescription.asInstanceOf[js.Any])
-    if (VpcConfigurationDescriptions != null) __obj.updateDynamic("VpcConfigurationDescriptions")(VpcConfigurationDescriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationConfigurationDescription]
   }
+  @scala.inline
+  implicit class ApplicationConfigurationDescriptionOps[Self <: ApplicationConfigurationDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationCodeConfigurationDescription(value: ApplicationCodeConfigurationDescription): Self = this.set("ApplicationCodeConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationCodeConfigurationDescription: Self = this.set("ApplicationCodeConfigurationDescription", js.undefined)
+    @scala.inline
+    def setApplicationSnapshotConfigurationDescription(value: ApplicationSnapshotConfigurationDescription): Self = this.set("ApplicationSnapshotConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationSnapshotConfigurationDescription: Self = this.set("ApplicationSnapshotConfigurationDescription", js.undefined)
+    @scala.inline
+    def setEnvironmentPropertyDescriptions(value: EnvironmentPropertyDescriptions): Self = this.set("EnvironmentPropertyDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentPropertyDescriptions: Self = this.set("EnvironmentPropertyDescriptions", js.undefined)
+    @scala.inline
+    def setFlinkApplicationConfigurationDescription(value: FlinkApplicationConfigurationDescription): Self = this.set("FlinkApplicationConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlinkApplicationConfigurationDescription: Self = this.set("FlinkApplicationConfigurationDescription", js.undefined)
+    @scala.inline
+    def setRunConfigurationDescription(value: RunConfigurationDescription): Self = this.set("RunConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunConfigurationDescription: Self = this.set("RunConfigurationDescription", js.undefined)
+    @scala.inline
+    def setSqlApplicationConfigurationDescription(value: SqlApplicationConfigurationDescription): Self = this.set("SqlApplicationConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlApplicationConfigurationDescription: Self = this.set("SqlApplicationConfigurationDescription", js.undefined)
+    @scala.inline
+    def setVpcConfigurationDescriptionsVarargs(value: VpcConfigurationDescription*): Self = this.set("VpcConfigurationDescriptions", js.Array(value :_*))
+    @scala.inline
+    def setVpcConfigurationDescriptions(value: VpcConfigurationDescriptions): Self = this.set("VpcConfigurationDescriptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfigurationDescriptions: Self = this.set("VpcConfigurationDescriptions", js.undefined)
+  }
+  
 }
 

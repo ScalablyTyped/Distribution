@@ -18,14 +18,32 @@ trait AnomalyDetectorConfiguration extends js.Object {
 
 object AnomalyDetectorConfiguration {
   @scala.inline
-  def apply(
-    ExcludedTimeRanges: AnomalyDetectorExcludedTimeRanges = null,
-    MetricTimezone: AnomalyDetectorMetricTimezone = null
-  ): AnomalyDetectorConfiguration = {
+  def apply(): AnomalyDetectorConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (ExcludedTimeRanges != null) __obj.updateDynamic("ExcludedTimeRanges")(ExcludedTimeRanges.asInstanceOf[js.Any])
-    if (MetricTimezone != null) __obj.updateDynamic("MetricTimezone")(MetricTimezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnomalyDetectorConfiguration]
   }
+  @scala.inline
+  implicit class AnomalyDetectorConfigurationOps[Self <: AnomalyDetectorConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExcludedTimeRangesVarargs(value: Range*): Self = this.set("ExcludedTimeRanges", js.Array(value :_*))
+    @scala.inline
+    def setExcludedTimeRanges(value: AnomalyDetectorExcludedTimeRanges): Self = this.set("ExcludedTimeRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludedTimeRanges: Self = this.set("ExcludedTimeRanges", js.undefined)
+    @scala.inline
+    def setMetricTimezone(value: AnomalyDetectorMetricTimezone): Self = this.set("MetricTimezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricTimezone: Self = this.set("MetricTimezone", js.undefined)
+  }
+  
 }
 

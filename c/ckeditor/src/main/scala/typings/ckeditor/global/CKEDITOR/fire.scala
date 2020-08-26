@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fire extends js.Object {
   def apply(eventName: String): js.Any = js.native
+  def apply(eventName: String, data: js.UndefOr[scala.Nothing], editor: typings.ckeditor.CKEDITOR.editor): js.Any = js.native
   def apply(eventName: String, data: StringDictionary[js.Any]): js.Any = js.native
   def apply(eventName: String, data: StringDictionary[js.Any], editor: typings.ckeditor.CKEDITOR.editor): js.Any = js.native
 }

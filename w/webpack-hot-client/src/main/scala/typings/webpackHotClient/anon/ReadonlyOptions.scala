@@ -1,7 +1,6 @@
 package typings.webpackHotClient.anon
 
 import typings.node.netMod.Server
-import typings.webpack.mod.Options.Stats
 import typings.webpackHotClient.mod.WebpackHotHost
 import typings.webpackHotClient.webpackHotClientStrings.debug
 import typings.webpackHotClient.webpackHotClientStrings.error
@@ -14,51 +13,94 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Readonly<webpack-hot-client.webpack-hot-client.Options> */
+@js.native
 trait ReadonlyOptions extends js.Object {
-  val allEntries: js.UndefOr[Boolean] = js.undefined
-  val autoConfigure: js.UndefOr[Boolean] = js.undefined
-  val hmr: js.UndefOr[Boolean] = js.undefined
-  val host: js.UndefOr[WebpackHotHost | String] = js.undefined
-  val https: js.UndefOr[Boolean] = js.undefined
-  val logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.undefined
-  val logTime: js.UndefOr[Boolean] = js.undefined
-  val port: js.UndefOr[Double] = js.undefined
-  val reload: js.UndefOr[Boolean] = js.undefined
-  val server: js.UndefOr[Server] = js.undefined
-  val stats: js.UndefOr[Stats] = js.undefined
-  val validTargets: js.UndefOr[js.Array[String]] = js.undefined
+  val allEntries: js.UndefOr[Boolean] = js.native
+  val autoConfigure: js.UndefOr[Boolean] = js.native
+  val hmr: js.UndefOr[Boolean] = js.native
+  val host: js.UndefOr[WebpackHotHost | String] = js.native
+  val https: js.UndefOr[Boolean] = js.native
+  val logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.native
+  val logTime: js.UndefOr[Boolean] = js.native
+  val port: js.UndefOr[Double] = js.native
+  val reload: js.UndefOr[Boolean] = js.native
+  val server: js.UndefOr[Server] = js.native
+  val stats: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+  ] = js.native
+  val validTargets: js.UndefOr[js.Array[String]] = js.native
 }
 
 object ReadonlyOptions {
   @scala.inline
-  def apply(
-    allEntries: js.UndefOr[Boolean] = js.undefined,
-    autoConfigure: js.UndefOr[Boolean] = js.undefined,
-    hmr: js.UndefOr[Boolean] = js.undefined,
-    host: WebpackHotHost | String = null,
-    https: js.UndefOr[Boolean] = js.undefined,
-    logLevel: trace | debug | info | warn | error | silent = null,
-    logTime: js.UndefOr[Boolean] = js.undefined,
-    port: js.UndefOr[Double] = js.undefined,
-    reload: js.UndefOr[Boolean] = js.undefined,
-    server: Server = null,
-    stats: Stats = null,
-    validTargets: js.Array[String] = null
-  ): ReadonlyOptions = {
+  def apply(): ReadonlyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allEntries)) __obj.updateDynamic("allEntries")(allEntries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoConfigure)) __obj.updateDynamic("autoConfigure")(autoConfigure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hmr)) __obj.updateDynamic("hmr")(hmr.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.get.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(logTime)) __obj.updateDynamic("logTime")(logTime.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload.get.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (validTargets != null) __obj.updateDynamic("validTargets")(validTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyOptions]
   }
+  @scala.inline
+  implicit class ReadonlyOptionsOps[Self <: ReadonlyOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllEntries(value: Boolean): Self = this.set("allEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllEntries: Self = this.set("allEntries", js.undefined)
+    @scala.inline
+    def setAutoConfigure(value: Boolean): Self = this.set("autoConfigure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoConfigure: Self = this.set("autoConfigure", js.undefined)
+    @scala.inline
+    def setHmr(value: Boolean): Self = this.set("hmr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHmr: Self = this.set("hmr", js.undefined)
+    @scala.inline
+    def setHost(value: WebpackHotHost | String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHttps(value: Boolean): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+    @scala.inline
+    def setLogLevel(value: trace | debug | info | warn | error | silent): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setLogTime(value: Boolean): Self = this.set("logTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogTime: Self = this.set("logTime", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setReload(value: Boolean): Self = this.set("reload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReload: Self = this.set("reload", js.undefined)
+    @scala.inline
+    def setServer(value: Server): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServer: Self = this.set("server", js.undefined)
+    @scala.inline
+    def setStats(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
+    ): Self = this.set("stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("stats", js.undefined)
+    @scala.inline
+    def setValidTargetsVarargs(value: String*): Self = this.set("validTargets", js.Array(value :_*))
+    @scala.inline
+    def setValidTargets(value: js.Array[String]): Self = this.set("validTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidTargets: Self = this.set("validTargets", js.undefined)
+  }
+  
 }
 

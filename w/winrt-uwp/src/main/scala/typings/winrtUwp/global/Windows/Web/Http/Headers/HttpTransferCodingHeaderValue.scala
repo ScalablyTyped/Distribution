@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web.Http.Headers
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.anon.TransferCodingHeaderValue
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -16,12 +15,6 @@ class HttpTransferCodingHeaderValue protected ()
     * @param input The transfer-coding information to initialize the HttpProductInfoHeaderValue object.
     */
   def this(input: String) = this()
-  /** Gets a set of parameters used in the Transfer-Encoding HTTP header. */
-  /* CompleteClass */
-  override var parameters: IVector[typings.winrtUwp.Windows.Web.Http.Headers.HttpNameValueHeaderValue] = js.native
-  /** Gets the transfer-coding value used in the Transfer-Encoding HTTP header. */
-  /* CompleteClass */
-  override var value: String = js.native
 }
 
 /* static members */

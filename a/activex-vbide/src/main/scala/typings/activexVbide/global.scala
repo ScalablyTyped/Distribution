@@ -15,13 +15,7 @@ object global extends js.Object {
     
     @js.native
     class Application protected ()
-      extends typings.activexVbide.VBIDE.Application {
-      /* CompleteClass */
-      @JSName("VBIDE.Application_typekey")
-      override var VBIDEDotApplication_typekey: typings.activexVbide.VBIDE.Application = js.native
-      /* CompleteClass */
-      override val Version: String = js.native
-    }
+      extends typings.activexVbide.VBIDE.Application
     
     @js.native
     class CodeModule protected ()
@@ -33,11 +27,7 @@ object global extends js.Object {
     
     @js.native
     class CommandBarEvents protected ()
-      extends typings.activexVbide.VBIDE.CommandBarEvents {
-      /* CompleteClass */
-      @JSName("VBIDE.CommandBarEvents_typekey")
-      override var VBIDEDotCommandBarEvents_typekey: typings.activexVbide.VBIDE.CommandBarEvents = js.native
-    }
+      extends typings.activexVbide.VBIDE.CommandBarEvents
     
     @js.native
     class Component protected ()
@@ -45,27 +35,11 @@ object global extends js.Object {
     
     @js.native
     class Events protected ()
-      extends typings.activexVbide.VBIDE.Events {
-      /* CompleteClass */
-      @JSName("VBIDE.Events_typekey")
-      override var VBIDEDotEvents_typekey: typings.activexVbide.VBIDE.Events = js.native
-      /* CompleteClass */
-      override def CommandBarEvents(CommandBarControl: js.Any): typings.activexVbide.VBIDE.CommandBarEvents = js.native
-      /* CompleteClass */
-      override def ReferencesEvents(VBProject: typings.activexVbide.VBIDE.VBProject): typings.activexVbide.VBIDE.ReferencesEvents = js.native
-    }
+      extends typings.activexVbide.VBIDE.Events
     
     @js.native
     class ProjectTemplate protected ()
-      extends typings.activexVbide.VBIDE.ProjectTemplate {
-      /* CompleteClass */
-      override val Application: typings.activexVbide.VBIDE.Application = js.native
-      /* CompleteClass */
-      override val Parent: typings.activexVbide.VBIDE.Application = js.native
-      /* CompleteClass */
-      @JSName("VBIDE.ProjectTemplate_typekey")
-      override var VBIDEDotProjectTemplate_typekey: typings.activexVbide.VBIDE.ProjectTemplate = js.native
-    }
+      extends typings.activexVbide.VBIDE.ProjectTemplate
     
     @js.native
     class Property protected ()
@@ -77,11 +51,7 @@ object global extends js.Object {
     
     @js.native
     class ReferencesEvents protected ()
-      extends typings.activexVbide.VBIDE.ReferencesEvents {
-      /* CompleteClass */
-      @JSName("VBIDE.ReferencesEvents_typekey")
-      override var VBIDEDotReferencesEvents_typekey: typings.activexVbide.VBIDE.ReferencesEvents = js.native
-    }
+      extends typings.activexVbide.VBIDE.ReferencesEvents
     
     @js.native
     class VBComponent protected ()

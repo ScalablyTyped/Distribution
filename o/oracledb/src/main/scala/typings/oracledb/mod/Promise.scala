@@ -6,16 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Node-oracledb supports Promises on all methods. The standard Promise library is used.
-  *
-  * This property can be set to override or disable the Promise implementation.
-  *
-  * Promises can be disabled by setting this property to null.
-  *
-  * Example:
-  *
-  *      const myLib = require('myFavouritePromiseImplementation');
-  *      oracledb.Promise = myLib;
+  * The oracledb.Promise property is no longer used in node-oracledb 5 and has no effect.
+  * 
+  * Node-oracledb supports Promises on all methods. The native Promise library is used.
+  * 
+  * @deprecated 5.0
   */
 @JSImport("oracledb", "Promise")
 @js.native

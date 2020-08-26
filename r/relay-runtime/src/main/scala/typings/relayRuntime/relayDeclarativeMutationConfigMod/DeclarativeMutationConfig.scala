@@ -1,7 +1,5 @@
 package typings.relayRuntime.relayDeclarativeMutationConfigMod
 
-import typings.relayRuntime.anon.Filters
-import typings.relayRuntime.anon.Key
 import typings.relayRuntime.relayRuntimeStrings.NODE_DELETE
 import typings.relayRuntime.relayRuntimeStrings.RANGE_ADD
 import typings.relayRuntime.relayRuntimeStrings.RANGE_DELETE
@@ -18,55 +16,25 @@ trait DeclarativeMutationConfig extends js.Object
 
 object DeclarativeMutationConfig {
   @scala.inline
-  def RangeAddConfig(
-    edgeName: String,
-    `type`: RANGE_ADD,
-    connectionInfo: js.Array[Filters] = null,
-    connectionName: String = null,
-    parentID: String = null,
-    parentName: String = null,
-    rangeBehaviors: RangeBehaviors = null
-  ): DeclarativeMutationConfig = {
+  def RangeAddConfig(edgeName: String, `type`: RANGE_ADD): DeclarativeMutationConfig = {
     val __obj = js.Dynamic.literal(edgeName = edgeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connectionInfo != null) __obj.updateDynamic("connectionInfo")(connectionInfo.asInstanceOf[js.Any])
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
-    if (parentID != null) __obj.updateDynamic("parentID")(parentID.asInstanceOf[js.Any])
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
-    if (rangeBehaviors != null) __obj.updateDynamic("rangeBehaviors")(rangeBehaviors.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarativeMutationConfig]
   }
   @scala.inline
   def RangeDeleteConfig(
     deletedIDFieldName: String | js.Array[String],
     pathToConnection: js.Array[String],
-    `type`: RANGE_DELETE,
-    connectionKeys: js.Array[Key] = null,
-    connectionName: String = null,
-    parentID: String = null,
-    parentName: String = null
+    `type`: RANGE_DELETE
   ): DeclarativeMutationConfig = {
     val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any], pathToConnection = pathToConnection.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connectionKeys != null) __obj.updateDynamic("connectionKeys")(connectionKeys.asInstanceOf[js.Any])
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
-    if (parentID != null) __obj.updateDynamic("parentID")(parentID.asInstanceOf[js.Any])
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarativeMutationConfig]
   }
   @scala.inline
-  def NodeDeleteConfig(
-    deletedIDFieldName: String,
-    `type`: NODE_DELETE,
-    connectionName: String = null,
-    parentID: String = null,
-    parentName: String = null
-  ): DeclarativeMutationConfig = {
+  def NodeDeleteConfig(deletedIDFieldName: String, `type`: NODE_DELETE): DeclarativeMutationConfig = {
     val __obj = js.Dynamic.literal(deletedIDFieldName = deletedIDFieldName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (connectionName != null) __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
-    if (parentID != null) __obj.updateDynamic("parentID")(parentID.asInstanceOf[js.Any])
-    if (parentName != null) __obj.updateDynamic("parentName")(parentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarativeMutationConfig]
   }
 }

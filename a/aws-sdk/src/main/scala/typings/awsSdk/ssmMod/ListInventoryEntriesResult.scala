@@ -34,22 +34,48 @@ trait ListInventoryEntriesResult extends js.Object {
 
 object ListInventoryEntriesResult {
   @scala.inline
-  def apply(
-    CaptureTime: InventoryItemCaptureTime = null,
-    Entries: InventoryItemEntryList = null,
-    InstanceId: InstanceId = null,
-    NextToken: NextToken = null,
-    SchemaVersion: InventoryItemSchemaVersion = null,
-    TypeName: InventoryItemTypeName = null
-  ): ListInventoryEntriesResult = {
+  def apply(): ListInventoryEntriesResult = {
     val __obj = js.Dynamic.literal()
-    if (CaptureTime != null) __obj.updateDynamic("CaptureTime")(CaptureTime.asInstanceOf[js.Any])
-    if (Entries != null) __obj.updateDynamic("Entries")(Entries.asInstanceOf[js.Any])
-    if (InstanceId != null) __obj.updateDynamic("InstanceId")(InstanceId.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SchemaVersion != null) __obj.updateDynamic("SchemaVersion")(SchemaVersion.asInstanceOf[js.Any])
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListInventoryEntriesResult]
   }
+  @scala.inline
+  implicit class ListInventoryEntriesResultOps[Self <: ListInventoryEntriesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptureTime(value: InventoryItemCaptureTime): Self = this.set("CaptureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptureTime: Self = this.set("CaptureTime", js.undefined)
+    @scala.inline
+    def setEntriesVarargs(value: InventoryItemEntry*): Self = this.set("Entries", js.Array(value :_*))
+    @scala.inline
+    def setEntries(value: InventoryItemEntryList): Self = this.set("Entries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntries: Self = this.set("Entries", js.undefined)
+    @scala.inline
+    def setInstanceId(value: InstanceId): Self = this.set("InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("InstanceId", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: InventoryItemSchemaVersion): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
+    @scala.inline
+    def setTypeName(value: InventoryItemTypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+  }
+  
 }
 

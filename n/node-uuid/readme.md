@@ -11,7 +11,7 @@ Rigorous implementation of RFC4122 (v1 and v4) UUIDs.
 | Keywords           | guid, rfc4122, uuid |
 | # releases         | 1 |
 | # dependents       | 3182 |
-| # downloads        | 67590734 |
+| # downloads        | 66592528 |
 | # stars            | 197 |
 
 ## Links

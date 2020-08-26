@@ -4,9 +4,7 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.PropsWithChildren
 import typings.std.Required
 import typings.std.ReturnType
-import typings.uifabricFoundation.libIcomponentMod.IFactoryOptions
-import typings.uifabricFoundation.libIcomponentMod.IStylesFunctionOrObject
-import typings.uifabricFoundation.libIcomponentMod.ITokenFunctionOrObject
+import typings.uifabricFoundation.libIslotsMod.ISlotDefinition
 import typings.uifabricFoundation.libIslotsMod.ISlots
 import typings.uifabricFoundation.libIslotsMod.ISlottableProps
 import typings.uifabricMergeStyles.istylesetMod.IStyleSet
@@ -14,42 +12,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IComponentOptions[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TTokens, TStyleSet /* <: IStyleSet[TStyleSet] */, TViewProps, TComponentSlots, TStatics]
   extends typings.uifabricFoundation.libIcomponentMod.IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TStatics] {
   /**
     * Slot definition object defining the slot component for each slot.
     */
-  var slots: js.UndefOr[ISlotComponent[TComponentProps, TComponentSlots]] = js.undefined
+  var slots: js.UndefOr[ISlotComponent[TComponentProps, TComponentSlots]] = js.native
   /**
     * Stateless pure function that receives props to render the output of the component.
     */
-  var view: js.UndefOr[IViewComponent[TViewProps, TComponentSlots]] = js.undefined
+  var view: js.UndefOr[IViewComponent[TViewProps, TComponentSlots]] = js.native
 }
 
 object IComponentOptions {
   @scala.inline
-  def apply[/* <: typings.uifabricFoundation.libIslotsMod.ISlottableProps[TComponentSlots] */ TComponentProps, TTokens, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet, TViewProps, TComponentSlots, TStatics](
-    displayName: String = null,
-    factoryOptions: IFactoryOptions[TComponentProps] = null,
-    fields: js.Array[String] = null,
-    slots: ISlotComponent[TComponentProps, TComponentSlots] = null,
-    state: TComponentProps => TViewProps = null,
-    statics: TStatics = null,
-    styles: IStylesFunctionOrObject[TViewProps, TTokens, TStyleSet] = null,
-    tokens: ITokenFunctionOrObject[TViewProps, TTokens] = null,
-    view: (/* props */ PropsWithChildren[TViewProps], /* slots */ ISlots[Required[TComponentSlots]]) => ReturnType[FunctionComponent[js.Object]] = null
-  ): IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics] = {
+  def apply[/* <: typings.uifabricFoundation.libIslotsMod.ISlottableProps[TComponentSlots] */ TComponentProps, TTokens, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet, TViewProps, TComponentSlots, TStatics](): IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics] = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (factoryOptions != null) __obj.updateDynamic("factoryOptions")(factoryOptions.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (slots != null) __obj.updateDynamic("slots")(slots.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(js.Any.fromFunction1(state))
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(js.Any.fromFunction2(view))
     __obj.asInstanceOf[IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics]]
   }
+  @scala.inline
+  implicit class IComponentOptionsOps[Self <: IComponentOptions[_, _, _, _, _, _], /* <: typings.uifabricFoundation.libIslotsMod.ISlottableProps[TComponentSlots] */ TComponentProps, TTokens, /* <: typings.uifabricMergeStyles.istylesetMod.IStyleSet[TStyleSet] */ TStyleSet, TViewProps, TComponentSlots, TStatics] (val x: Self with (IComponentOptions[TComponentProps, TTokens, TStyleSet, TViewProps, TComponentSlots, TStatics])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSlotsFunction1(value: TComponentProps => ISlotDefinition[Required[TComponentSlots]]): Self = this.set("slots", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSlots(value: ISlotComponent[TComponentProps, TComponentSlots]): Self = this.set("slots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlots: Self = this.set("slots", js.undefined)
+    @scala.inline
+    def setView(
+      value: (/* props */ PropsWithChildren[TViewProps], /* slots */ ISlots[Required[TComponentSlots]]) => ReturnType[FunctionComponent[js.Object]]
+    ): Self = this.set("view", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+  }
+  
 }
 

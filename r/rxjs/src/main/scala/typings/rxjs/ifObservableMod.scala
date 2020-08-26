@@ -18,6 +18,12 @@ object ifObservableMod extends js.Object {
     def create[T, R](condition: js.Function0[Boolean | Unit]): js.Any = js.native
     def create[T, R](
       condition: js.Function0[Boolean | Unit],
+      thenSource: js.UndefOr[scala.Nothing],
+      elseSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<R> */ js.Any
+    ): js.Any = js.native
+    def create[T, R](condition: js.Function0[Boolean | Unit], thenSource: js.UndefOr[scala.Nothing], elseSource: Unit): js.Any = js.native
+    def create[T, R](
+      condition: js.Function0[Boolean | Unit],
       thenSource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<T> */ js.Any
     ): js.Any = js.native
     def create[T, R](

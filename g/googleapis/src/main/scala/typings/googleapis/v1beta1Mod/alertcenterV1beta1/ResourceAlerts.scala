@@ -33,6 +33,7 @@ class ResourceAlerts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAlertsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAlertsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -62,6 +63,7 @@ class ResourceAlerts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAlert] = js.native
   def get(callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlert] = js.native
   def get(params: ParamsResourceAlertsGet): GaxiosPromise[SchemaAlert] = js.native
   def get(params: ParamsResourceAlertsGet, callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
   def get(
@@ -93,6 +95,7 @@ class ResourceAlerts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListAlertsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAlertsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAlertsResponse] = js.native
   def list(params: ParamsResourceAlertsList): GaxiosPromise[SchemaListAlertsResponse] = js.native
   def list(params: ParamsResourceAlertsList, callback: BodyResponseCallback[SchemaListAlertsResponse]): Unit = js.native
   def list(
@@ -126,6 +129,7 @@ class ResourceAlerts protected () extends js.Object {
     */
   def undelete(): GaxiosPromise[SchemaAlert] = js.native
   def undelete(callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
+  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlert] = js.native
   def undelete(params: ParamsResourceAlertsUndelete): GaxiosPromise[SchemaAlert] = js.native
   def undelete(params: ParamsResourceAlertsUndelete, callback: BodyResponseCallback[SchemaAlert]): Unit = js.native
   def undelete(

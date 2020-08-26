@@ -114,62 +114,142 @@ trait ResponseLaunchTemplateData extends js.Object {
 
 object ResponseLaunchTemplateData {
   @scala.inline
-  def apply(
-    BlockDeviceMappings: LaunchTemplateBlockDeviceMappingList = null,
-    CapacityReservationSpecification: LaunchTemplateCapacityReservationSpecificationResponse = null,
-    CpuOptions: LaunchTemplateCpuOptions = null,
-    CreditSpecification: CreditSpecification = null,
-    DisableApiTermination: js.UndefOr[Boolean] = js.undefined,
-    EbsOptimized: js.UndefOr[Boolean] = js.undefined,
-    ElasticGpuSpecifications: ElasticGpuSpecificationResponseList = null,
-    ElasticInferenceAccelerators: LaunchTemplateElasticInferenceAcceleratorResponseList = null,
-    HibernationOptions: LaunchTemplateHibernationOptions = null,
-    IamInstanceProfile: LaunchTemplateIamInstanceProfileSpecification = null,
-    ImageId: String = null,
-    InstanceInitiatedShutdownBehavior: ShutdownBehavior = null,
-    InstanceMarketOptions: LaunchTemplateInstanceMarketOptions = null,
-    InstanceType: InstanceType = null,
-    KernelId: String = null,
-    KeyName: String = null,
-    LicenseSpecifications: LaunchTemplateLicenseList = null,
-    MetadataOptions: LaunchTemplateInstanceMetadataOptions = null,
-    Monitoring: LaunchTemplatesMonitoring = null,
-    NetworkInterfaces: LaunchTemplateInstanceNetworkInterfaceSpecificationList = null,
-    Placement: LaunchTemplatePlacement = null,
-    RamDiskId: String = null,
-    SecurityGroupIds: ValueStringList = null,
-    SecurityGroups: ValueStringList = null,
-    TagSpecifications: LaunchTemplateTagSpecificationList = null,
-    UserData: String = null
-  ): ResponseLaunchTemplateData = {
+  def apply(): ResponseLaunchTemplateData = {
     val __obj = js.Dynamic.literal()
-    if (BlockDeviceMappings != null) __obj.updateDynamic("BlockDeviceMappings")(BlockDeviceMappings.asInstanceOf[js.Any])
-    if (CapacityReservationSpecification != null) __obj.updateDynamic("CapacityReservationSpecification")(CapacityReservationSpecification.asInstanceOf[js.Any])
-    if (CpuOptions != null) __obj.updateDynamic("CpuOptions")(CpuOptions.asInstanceOf[js.Any])
-    if (CreditSpecification != null) __obj.updateDynamic("CreditSpecification")(CreditSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableApiTermination)) __obj.updateDynamic("DisableApiTermination")(DisableApiTermination.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EbsOptimized)) __obj.updateDynamic("EbsOptimized")(EbsOptimized.get.asInstanceOf[js.Any])
-    if (ElasticGpuSpecifications != null) __obj.updateDynamic("ElasticGpuSpecifications")(ElasticGpuSpecifications.asInstanceOf[js.Any])
-    if (ElasticInferenceAccelerators != null) __obj.updateDynamic("ElasticInferenceAccelerators")(ElasticInferenceAccelerators.asInstanceOf[js.Any])
-    if (HibernationOptions != null) __obj.updateDynamic("HibernationOptions")(HibernationOptions.asInstanceOf[js.Any])
-    if (IamInstanceProfile != null) __obj.updateDynamic("IamInstanceProfile")(IamInstanceProfile.asInstanceOf[js.Any])
-    if (ImageId != null) __obj.updateDynamic("ImageId")(ImageId.asInstanceOf[js.Any])
-    if (InstanceInitiatedShutdownBehavior != null) __obj.updateDynamic("InstanceInitiatedShutdownBehavior")(InstanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
-    if (InstanceMarketOptions != null) __obj.updateDynamic("InstanceMarketOptions")(InstanceMarketOptions.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (KernelId != null) __obj.updateDynamic("KernelId")(KernelId.asInstanceOf[js.Any])
-    if (KeyName != null) __obj.updateDynamic("KeyName")(KeyName.asInstanceOf[js.Any])
-    if (LicenseSpecifications != null) __obj.updateDynamic("LicenseSpecifications")(LicenseSpecifications.asInstanceOf[js.Any])
-    if (MetadataOptions != null) __obj.updateDynamic("MetadataOptions")(MetadataOptions.asInstanceOf[js.Any])
-    if (Monitoring != null) __obj.updateDynamic("Monitoring")(Monitoring.asInstanceOf[js.Any])
-    if (NetworkInterfaces != null) __obj.updateDynamic("NetworkInterfaces")(NetworkInterfaces.asInstanceOf[js.Any])
-    if (Placement != null) __obj.updateDynamic("Placement")(Placement.asInstanceOf[js.Any])
-    if (RamDiskId != null) __obj.updateDynamic("RamDiskId")(RamDiskId.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (TagSpecifications != null) __obj.updateDynamic("TagSpecifications")(TagSpecifications.asInstanceOf[js.Any])
-    if (UserData != null) __obj.updateDynamic("UserData")(UserData.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseLaunchTemplateData]
   }
+  @scala.inline
+  implicit class ResponseLaunchTemplateDataOps[Self <: ResponseLaunchTemplateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockDeviceMappingsVarargs(value: LaunchTemplateBlockDeviceMapping*): Self = this.set("BlockDeviceMappings", js.Array(value :_*))
+    @scala.inline
+    def setBlockDeviceMappings(value: LaunchTemplateBlockDeviceMappingList): Self = this.set("BlockDeviceMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDeviceMappings: Self = this.set("BlockDeviceMappings", js.undefined)
+    @scala.inline
+    def setCapacityReservationSpecification(value: LaunchTemplateCapacityReservationSpecificationResponse): Self = this.set("CapacityReservationSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationSpecification: Self = this.set("CapacityReservationSpecification", js.undefined)
+    @scala.inline
+    def setCpuOptions(value: LaunchTemplateCpuOptions): Self = this.set("CpuOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuOptions: Self = this.set("CpuOptions", js.undefined)
+    @scala.inline
+    def setCreditSpecification(value: CreditSpecification): Self = this.set("CreditSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreditSpecification: Self = this.set("CreditSpecification", js.undefined)
+    @scala.inline
+    def setDisableApiTermination(value: Boolean): Self = this.set("DisableApiTermination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableApiTermination: Self = this.set("DisableApiTermination", js.undefined)
+    @scala.inline
+    def setEbsOptimized(value: Boolean): Self = this.set("EbsOptimized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbsOptimized: Self = this.set("EbsOptimized", js.undefined)
+    @scala.inline
+    def setElasticGpuSpecificationsVarargs(value: ElasticGpuSpecificationResponse*): Self = this.set("ElasticGpuSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setElasticGpuSpecifications(value: ElasticGpuSpecificationResponseList): Self = this.set("ElasticGpuSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticGpuSpecifications: Self = this.set("ElasticGpuSpecifications", js.undefined)
+    @scala.inline
+    def setElasticInferenceAcceleratorsVarargs(value: LaunchTemplateElasticInferenceAcceleratorResponse*): Self = this.set("ElasticInferenceAccelerators", js.Array(value :_*))
+    @scala.inline
+    def setElasticInferenceAccelerators(value: LaunchTemplateElasticInferenceAcceleratorResponseList): Self = this.set("ElasticInferenceAccelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticInferenceAccelerators: Self = this.set("ElasticInferenceAccelerators", js.undefined)
+    @scala.inline
+    def setHibernationOptions(value: LaunchTemplateHibernationOptions): Self = this.set("HibernationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHibernationOptions: Self = this.set("HibernationOptions", js.undefined)
+    @scala.inline
+    def setIamInstanceProfile(value: LaunchTemplateIamInstanceProfileSpecification): Self = this.set("IamInstanceProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamInstanceProfile: Self = this.set("IamInstanceProfile", js.undefined)
+    @scala.inline
+    def setImageId(value: String): Self = this.set("ImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageId: Self = this.set("ImageId", js.undefined)
+    @scala.inline
+    def setInstanceInitiatedShutdownBehavior(value: ShutdownBehavior): Self = this.set("InstanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceInitiatedShutdownBehavior: Self = this.set("InstanceInitiatedShutdownBehavior", js.undefined)
+    @scala.inline
+    def setInstanceMarketOptions(value: LaunchTemplateInstanceMarketOptions): Self = this.set("InstanceMarketOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceMarketOptions: Self = this.set("InstanceMarketOptions", js.undefined)
+    @scala.inline
+    def setInstanceType(value: InstanceType): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setKernelId(value: String): Self = this.set("KernelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKernelId: Self = this.set("KernelId", js.undefined)
+    @scala.inline
+    def setKeyName(value: String): Self = this.set("KeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyName: Self = this.set("KeyName", js.undefined)
+    @scala.inline
+    def setLicenseSpecificationsVarargs(value: LaunchTemplateLicenseConfiguration*): Self = this.set("LicenseSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setLicenseSpecifications(value: LaunchTemplateLicenseList): Self = this.set("LicenseSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseSpecifications: Self = this.set("LicenseSpecifications", js.undefined)
+    @scala.inline
+    def setMetadataOptions(value: LaunchTemplateInstanceMetadataOptions): Self = this.set("MetadataOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadataOptions: Self = this.set("MetadataOptions", js.undefined)
+    @scala.inline
+    def setMonitoring(value: LaunchTemplatesMonitoring): Self = this.set("Monitoring", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoring: Self = this.set("Monitoring", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: LaunchTemplateInstanceNetworkInterfaceSpecification*): Self = this.set("NetworkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: LaunchTemplateInstanceNetworkInterfaceSpecificationList): Self = this.set("NetworkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("NetworkInterfaces", js.undefined)
+    @scala.inline
+    def setPlacement(value: LaunchTemplatePlacement): Self = this.set("Placement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacement: Self = this.set("Placement", js.undefined)
+    @scala.inline
+    def setRamDiskId(value: String): Self = this.set("RamDiskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamDiskId: Self = this.set("RamDiskId", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: ValueStringList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: String*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: ValueStringList): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: LaunchTemplateTagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: LaunchTemplateTagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+    @scala.inline
+    def setUserData(value: String): Self = this.set("UserData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserData: Self = this.set("UserData", js.undefined)
+  }
+  
 }
 

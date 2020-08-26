@@ -4,40 +4,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AsyncSearchGet extends Generic {
-  var id: String
-  var keep_alive: js.UndefOr[String] = js.undefined
-  var typed_keys: js.UndefOr[Boolean] = js.undefined
-  var wait_for_completion_timeout: js.UndefOr[String] = js.undefined
+  var id: String = js.native
+  var keep_alive: js.UndefOr[String] = js.native
+  var typed_keys: js.UndefOr[Boolean] = js.native
+  var wait_for_completion_timeout: js.UndefOr[String] = js.native
 }
 
 object AsyncSearchGet {
   @scala.inline
-  def apply(
-    id: String,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    keep_alive: String = null,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    typed_keys: js.UndefOr[Boolean] = js.undefined,
-    wait_for_completion_timeout: String = null
-  ): AsyncSearchGet = {
+  def apply(id: String): AsyncSearchGet = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (keep_alive != null) __obj.updateDynamic("keep_alive")(keep_alive.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(typed_keys)) __obj.updateDynamic("typed_keys")(typed_keys.get.asInstanceOf[js.Any])
-    if (wait_for_completion_timeout != null) __obj.updateDynamic("wait_for_completion_timeout")(wait_for_completion_timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncSearchGet]
   }
+  @scala.inline
+  implicit class AsyncSearchGetOps[Self <: AsyncSearchGet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeep_alive(value: String): Self = this.set("keep_alive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeep_alive: Self = this.set("keep_alive", js.undefined)
+    @scala.inline
+    def setTyped_keys(value: Boolean): Self = this.set("typed_keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTyped_keys: Self = this.set("typed_keys", js.undefined)
+    @scala.inline
+    def setWait_for_completion_timeout(value: String): Self = this.set("wait_for_completion_timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWait_for_completion_timeout: Self = this.set("wait_for_completion_timeout", js.undefined)
+  }
+  
 }
 

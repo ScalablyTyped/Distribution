@@ -20,18 +20,40 @@ trait TimeSeriesServiceStatistics extends js.Object {
 
 object TimeSeriesServiceStatistics {
   @scala.inline
-  def apply(
-    EdgeSummaryStatistics: EdgeStatistics = null,
-    ResponseTimeHistogram: Histogram = null,
-    ServiceSummaryStatistics: ServiceStatistics = null,
-    Timestamp: Timestamp = null
-  ): TimeSeriesServiceStatistics = {
+  def apply(): TimeSeriesServiceStatistics = {
     val __obj = js.Dynamic.literal()
-    if (EdgeSummaryStatistics != null) __obj.updateDynamic("EdgeSummaryStatistics")(EdgeSummaryStatistics.asInstanceOf[js.Any])
-    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
-    if (ServiceSummaryStatistics != null) __obj.updateDynamic("ServiceSummaryStatistics")(ServiceSummaryStatistics.asInstanceOf[js.Any])
-    if (Timestamp != null) __obj.updateDynamic("Timestamp")(Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSeriesServiceStatistics]
   }
+  @scala.inline
+  implicit class TimeSeriesServiceStatisticsOps[Self <: TimeSeriesServiceStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEdgeSummaryStatistics(value: EdgeStatistics): Self = this.set("EdgeSummaryStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeSummaryStatistics: Self = this.set("EdgeSummaryStatistics", js.undefined)
+    @scala.inline
+    def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = this.set("ResponseTimeHistogram", js.Array(value :_*))
+    @scala.inline
+    def setResponseTimeHistogram(value: Histogram): Self = this.set("ResponseTimeHistogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTimeHistogram: Self = this.set("ResponseTimeHistogram", js.undefined)
+    @scala.inline
+    def setServiceSummaryStatistics(value: ServiceStatistics): Self = this.set("ServiceSummaryStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceSummaryStatistics: Self = this.set("ServiceSummaryStatistics", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("Timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("Timestamp", js.undefined)
+  }
+  
 }
 

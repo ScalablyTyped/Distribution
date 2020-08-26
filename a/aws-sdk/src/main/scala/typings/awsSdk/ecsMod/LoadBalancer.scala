@@ -26,18 +26,38 @@ trait LoadBalancer extends js.Object {
 
 object LoadBalancer {
   @scala.inline
-  def apply(
-    containerName: String = null,
-    containerPort: js.UndefOr[BoxedInteger] = js.undefined,
-    loadBalancerName: String = null,
-    targetGroupArn: String = null
-  ): LoadBalancer = {
+  def apply(): LoadBalancer = {
     val __obj = js.Dynamic.literal()
-    if (containerName != null) __obj.updateDynamic("containerName")(containerName.asInstanceOf[js.Any])
-    if (!js.isUndefined(containerPort)) __obj.updateDynamic("containerPort")(containerPort.get.asInstanceOf[js.Any])
-    if (loadBalancerName != null) __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
-    if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancer]
   }
+  @scala.inline
+  implicit class LoadBalancerOps[Self <: LoadBalancer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerName(value: String): Self = this.set("containerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerName: Self = this.set("containerName", js.undefined)
+    @scala.inline
+    def setContainerPort(value: BoxedInteger): Self = this.set("containerPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerPort: Self = this.set("containerPort", js.undefined)
+    @scala.inline
+    def setLoadBalancerName(value: String): Self = this.set("loadBalancerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerName: Self = this.set("loadBalancerName", js.undefined)
+    @scala.inline
+    def setTargetGroupArn(value: String): Self = this.set("targetGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupArn: Self = this.set("targetGroupArn", js.undefined)
+  }
+  
 }
 

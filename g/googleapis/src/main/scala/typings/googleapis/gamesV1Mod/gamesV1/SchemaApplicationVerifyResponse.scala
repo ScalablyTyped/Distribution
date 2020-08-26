@@ -28,12 +28,34 @@ trait SchemaApplicationVerifyResponse extends js.Object {
 
 object SchemaApplicationVerifyResponse {
   @scala.inline
-  def apply(alternate_player_id: String = null, kind: String = null, player_id: String = null): SchemaApplicationVerifyResponse = {
+  def apply(): SchemaApplicationVerifyResponse = {
     val __obj = js.Dynamic.literal()
-    if (alternate_player_id != null) __obj.updateDynamic("alternate_player_id")(alternate_player_id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (player_id != null) __obj.updateDynamic("player_id")(player_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApplicationVerifyResponse]
   }
+  @scala.inline
+  implicit class SchemaApplicationVerifyResponseOps[Self <: SchemaApplicationVerifyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlternate_player_id(value: String): Self = this.set("alternate_player_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlternate_player_id: Self = this.set("alternate_player_id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlayer_id(value: String): Self = this.set("player_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayer_id: Self = this.set("player_id", js.undefined)
+  }
+  
 }
 

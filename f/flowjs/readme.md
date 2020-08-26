@@ -10,9 +10,9 @@ asynchronous flow-control micro library
 | ------------------ | :-------------: |
 | Full name          | flowjs |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 786 |
+| # downloads        | 764 |
 | # stars            | 1 |
 
 ## Links

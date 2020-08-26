@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/utils", "normalizeColor")
+@JSImport("grommet/es6/utils", "normalizeColor")
 @js.native
 object normalizeColor extends js.Object {
   def apply(color: String, theme: js.Object): String = js.native

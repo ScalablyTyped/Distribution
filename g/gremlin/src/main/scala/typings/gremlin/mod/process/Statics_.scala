@@ -4,97 +4,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Statics_[T /* <: GraphTraversal */] extends js.Object {
-  def V(args: js.Any*): T
-  def addE(args: js.Any*): T
-  def addV(args: js.Any*): T
-  def aggregate(args: js.Any*): T
-  def and(args: js.Any*): T
-  def as(args: js.Any*): T
-  def barrier(args: js.Any*): T
-  def both(args: js.Any*): T
-  def bothE(args: js.Any*): T
-  def bothV(args: js.Any*): T
-  def branch(args: js.Any*): T
-  def cap(args: js.Any*): T
-  def choose(args: js.Any*): T
-  def coalesce(args: js.Any*): T
-  def coin(args: js.Any*): T
-  def constant(args: js.Any*): T
-  def count(args: js.Any*): T
-  def cyclicPath(args: js.Any*): T
-  def dedup(args: js.Any*): T
-  def drop(args: js.Any*): T
-  def elementMap(args: js.Any*): T
-  def emit(args: js.Any*): T
-  def filter(args: js.Any*): T
-  def flatMap(args: js.Any*): T
-  def fold(args: js.Any*): T
-  def group(args: js.Any*): T
-  def groupCount(args: js.Any*): T
-  def has(args: js.Any*): T
-  def hasId(args: js.Any*): T
-  def hasKey(args: js.Any*): T
-  def hasLabel(args: js.Any*): T
-  def hasNot(args: js.Any*): T
-  def hasValue(args: js.Any*): T
-  def id(args: js.Any*): T
-  def identity(args: js.Any*): T
-  def inE(args: js.Any*): T
-  def inV(args: js.Any*): T
-  def in_(args: js.Any*): T
-  def index(args: js.Any*): T
-  def inject(args: js.Any*): T
-  def is(args: js.Any*): T
-  def key(args: js.Any*): T
-  def label(args: js.Any*): T
-  def limit(args: js.Any*): T
-  def local(args: js.Any*): T
-  def loops(args: js.Any*): T
-  def map(args: js.Any*): T
-  def `match`(args: js.Any*): T
-  def math(args: js.Any*): T
-  def max(args: js.Any*): T
-  def mean(args: js.Any*): T
-  def min(args: js.Any*): T
-  def not(args: js.Any*): T
-  def optional(args: js.Any*): T
-  def or(args: js.Any*): T
-  def order(args: js.Any*): T
-  def otherV(args: js.Any*): T
-  def out(args: js.Any*): T
-  def outE(args: js.Any*): T
-  def outV(args: js.Any*): T
-  def path(args: js.Any*): T
-  def project(args: js.Any*): T
-  def properties(args: js.Any*): T
-  def property(args: js.Any*): T
-  def propertyMap(args: js.Any*): T
-  def range(args: js.Any*): T
-  def repeat(args: js.Any*): T
-  def sack(args: js.Any*): T
-  def sample(args: js.Any*): T
-  def select(args: js.Any*): T
-  def sideEffect(args: js.Any*): T
-  def simplePath(args: js.Any*): T
-  def skip(args: js.Any*): T
-  def store(args: js.Any*): T
-  def subgraph(args: js.Any*): T
-  def sum(args: js.Any*): T
-  def tail(args: js.Any*): T
-  def timeLimit(args: js.Any*): T
-  def times(args: js.Any*): T
-  def to(args: js.Any*): T
-  def toE(args: js.Any*): T
-  def toV(args: js.Any*): T
-  def tree(args: js.Any*): T
-  def unfold(args: js.Any*): T
-  def union(args: js.Any*): T
-  def until(args: js.Any*): T
-  def value(args: js.Any*): T
-  def valueMap(args: js.Any*): T
-  def values(args: js.Any*): T
-  def where(args: js.Any*): T
+  def V(args: js.Any*): T = js.native
+  def addE(args: js.Any*): T = js.native
+  def addV(args: js.Any*): T = js.native
+  def aggregate(args: js.Any*): T = js.native
+  def and(args: js.Any*): T = js.native
+  def as(args: js.Any*): T = js.native
+  def barrier(args: js.Any*): T = js.native
+  def both(args: js.Any*): T = js.native
+  def bothE(args: js.Any*): T = js.native
+  def bothV(args: js.Any*): T = js.native
+  def branch(args: js.Any*): T = js.native
+  def cap(args: js.Any*): T = js.native
+  def choose(args: js.Any*): T = js.native
+  def coalesce(args: js.Any*): T = js.native
+  def coin(args: js.Any*): T = js.native
+  def constant(args: js.Any*): T = js.native
+  def count(args: js.Any*): T = js.native
+  def cyclicPath(args: js.Any*): T = js.native
+  def dedup(args: js.Any*): T = js.native
+  def drop(args: js.Any*): T = js.native
+  def elementMap(args: js.Any*): T = js.native
+  def emit(args: js.Any*): T = js.native
+  def filter(args: js.Any*): T = js.native
+  def flatMap(args: js.Any*): T = js.native
+  def fold(args: js.Any*): T = js.native
+  def group(args: js.Any*): T = js.native
+  def groupCount(args: js.Any*): T = js.native
+  def has(args: js.Any*): T = js.native
+  def hasId(args: js.Any*): T = js.native
+  def hasKey(args: js.Any*): T = js.native
+  def hasLabel(args: js.Any*): T = js.native
+  def hasNot(args: js.Any*): T = js.native
+  def hasValue(args: js.Any*): T = js.native
+  def id(args: js.Any*): T = js.native
+  def identity(args: js.Any*): T = js.native
+  def inE(args: js.Any*): T = js.native
+  def inV(args: js.Any*): T = js.native
+  def in_(args: js.Any*): T = js.native
+  def index(args: js.Any*): T = js.native
+  def inject(args: js.Any*): T = js.native
+  def is(args: js.Any*): T = js.native
+  def key(args: js.Any*): T = js.native
+  def label(args: js.Any*): T = js.native
+  def limit(args: js.Any*): T = js.native
+  def local(args: js.Any*): T = js.native
+  def loops(args: js.Any*): T = js.native
+  def map(args: js.Any*): T = js.native
+  def `match`(args: js.Any*): T = js.native
+  def math(args: js.Any*): T = js.native
+  def max(args: js.Any*): T = js.native
+  def mean(args: js.Any*): T = js.native
+  def min(args: js.Any*): T = js.native
+  def not(args: js.Any*): T = js.native
+  def optional(args: js.Any*): T = js.native
+  def or(args: js.Any*): T = js.native
+  def order(args: js.Any*): T = js.native
+  def otherV(args: js.Any*): T = js.native
+  def out(args: js.Any*): T = js.native
+  def outE(args: js.Any*): T = js.native
+  def outV(args: js.Any*): T = js.native
+  def path(args: js.Any*): T = js.native
+  def project(args: js.Any*): T = js.native
+  def properties(args: js.Any*): T = js.native
+  def property(args: js.Any*): T = js.native
+  def propertyMap(args: js.Any*): T = js.native
+  def range(args: js.Any*): T = js.native
+  def repeat(args: js.Any*): T = js.native
+  def sack(args: js.Any*): T = js.native
+  def sample(args: js.Any*): T = js.native
+  def select(args: js.Any*): T = js.native
+  def sideEffect(args: js.Any*): T = js.native
+  def simplePath(args: js.Any*): T = js.native
+  def skip(args: js.Any*): T = js.native
+  def store(args: js.Any*): T = js.native
+  def subgraph(args: js.Any*): T = js.native
+  def sum(args: js.Any*): T = js.native
+  def tail(args: js.Any*): T = js.native
+  def timeLimit(args: js.Any*): T = js.native
+  def times(args: js.Any*): T = js.native
+  def to(args: js.Any*): T = js.native
+  def toE(args: js.Any*): T = js.native
+  def toV(args: js.Any*): T = js.native
+  def tree(args: js.Any*): T = js.native
+  def unfold(args: js.Any*): T = js.native
+  def union(args: js.Any*): T = js.native
+  def until(args: js.Any*): T = js.native
+  def value(args: js.Any*): T = js.native
+  def valueMap(args: js.Any*): T = js.native
+  def values(args: js.Any*): T = js.native
+  def where(args: js.Any*): T = js.native
 }
 
 object Statics_ {
@@ -195,5 +196,198 @@ object Statics_ {
     __obj.updateDynamic("match")(js.Any.fromFunction1(`match`))
     __obj.asInstanceOf[Statics_[T]]
   }
+  @scala.inline
+  implicit class Statics_Ops[Self <: Statics_[_], /* <: typings.gremlin.mod.process.GraphTraversal */ T] (val x: Self with Statics_[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setV(value: /* repeated */ js.Any => T): Self = this.set("V", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAddE(value: /* repeated */ js.Any => T): Self = this.set("addE", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAddV(value: /* repeated */ js.Any => T): Self = this.set("addV", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAggregate(value: /* repeated */ js.Any => T): Self = this.set("aggregate", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAnd(value: /* repeated */ js.Any => T): Self = this.set("and", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAs(value: /* repeated */ js.Any => T): Self = this.set("as", js.Any.fromFunction1(value))
+    @scala.inline
+    def setBarrier(value: /* repeated */ js.Any => T): Self = this.set("barrier", js.Any.fromFunction1(value))
+    @scala.inline
+    def setBoth(value: /* repeated */ js.Any => T): Self = this.set("both", js.Any.fromFunction1(value))
+    @scala.inline
+    def setBothE(value: /* repeated */ js.Any => T): Self = this.set("bothE", js.Any.fromFunction1(value))
+    @scala.inline
+    def setBothV(value: /* repeated */ js.Any => T): Self = this.set("bothV", js.Any.fromFunction1(value))
+    @scala.inline
+    def setBranch(value: /* repeated */ js.Any => T): Self = this.set("branch", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCap(value: /* repeated */ js.Any => T): Self = this.set("cap", js.Any.fromFunction1(value))
+    @scala.inline
+    def setChoose(value: /* repeated */ js.Any => T): Self = this.set("choose", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCoalesce(value: /* repeated */ js.Any => T): Self = this.set("coalesce", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCoin(value: /* repeated */ js.Any => T): Self = this.set("coin", js.Any.fromFunction1(value))
+    @scala.inline
+    def setConstant(value: /* repeated */ js.Any => T): Self = this.set("constant", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCount(value: /* repeated */ js.Any => T): Self = this.set("count", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCyclicPath(value: /* repeated */ js.Any => T): Self = this.set("cyclicPath", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDedup(value: /* repeated */ js.Any => T): Self = this.set("dedup", js.Any.fromFunction1(value))
+    @scala.inline
+    def setDrop(value: /* repeated */ js.Any => T): Self = this.set("drop", js.Any.fromFunction1(value))
+    @scala.inline
+    def setElementMap(value: /* repeated */ js.Any => T): Self = this.set("elementMap", js.Any.fromFunction1(value))
+    @scala.inline
+    def setEmit(value: /* repeated */ js.Any => T): Self = this.set("emit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFilter(value: /* repeated */ js.Any => T): Self = this.set("filter", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFlatMap(value: /* repeated */ js.Any => T): Self = this.set("flatMap", js.Any.fromFunction1(value))
+    @scala.inline
+    def setFold(value: /* repeated */ js.Any => T): Self = this.set("fold", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGroup(value: /* repeated */ js.Any => T): Self = this.set("group", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGroupCount(value: /* repeated */ js.Any => T): Self = this.set("groupCount", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHas(value: /* repeated */ js.Any => T): Self = this.set("has", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasId(value: /* repeated */ js.Any => T): Self = this.set("hasId", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasKey(value: /* repeated */ js.Any => T): Self = this.set("hasKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasLabel(value: /* repeated */ js.Any => T): Self = this.set("hasLabel", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasNot(value: /* repeated */ js.Any => T): Self = this.set("hasNot", js.Any.fromFunction1(value))
+    @scala.inline
+    def setHasValue(value: /* repeated */ js.Any => T): Self = this.set("hasValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setId(value: /* repeated */ js.Any => T): Self = this.set("id", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIdentity(value: /* repeated */ js.Any => T): Self = this.set("identity", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInE(value: /* repeated */ js.Any => T): Self = this.set("inE", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInV(value: /* repeated */ js.Any => T): Self = this.set("inV", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIn_(value: /* repeated */ js.Any => T): Self = this.set("in_", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIndex(value: /* repeated */ js.Any => T): Self = this.set("index", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInject(value: /* repeated */ js.Any => T): Self = this.set("inject", js.Any.fromFunction1(value))
+    @scala.inline
+    def setIs(value: /* repeated */ js.Any => T): Self = this.set("is", js.Any.fromFunction1(value))
+    @scala.inline
+    def setKey(value: /* repeated */ js.Any => T): Self = this.set("key", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLabel(value: /* repeated */ js.Any => T): Self = this.set("label", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLimit(value: /* repeated */ js.Any => T): Self = this.set("limit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLocal(value: /* repeated */ js.Any => T): Self = this.set("local", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLoops(value: /* repeated */ js.Any => T): Self = this.set("loops", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMap(value: /* repeated */ js.Any => T): Self = this.set("map", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMatch(value: /* repeated */ js.Any => T): Self = this.set("match", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMath(value: /* repeated */ js.Any => T): Self = this.set("math", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMax(value: /* repeated */ js.Any => T): Self = this.set("max", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMean(value: /* repeated */ js.Any => T): Self = this.set("mean", js.Any.fromFunction1(value))
+    @scala.inline
+    def setMin(value: /* repeated */ js.Any => T): Self = this.set("min", js.Any.fromFunction1(value))
+    @scala.inline
+    def setNot(value: /* repeated */ js.Any => T): Self = this.set("not", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOptional(value: /* repeated */ js.Any => T): Self = this.set("optional", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOr(value: /* repeated */ js.Any => T): Self = this.set("or", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOrder(value: /* repeated */ js.Any => T): Self = this.set("order", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOtherV(value: /* repeated */ js.Any => T): Self = this.set("otherV", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOut(value: /* repeated */ js.Any => T): Self = this.set("out", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOutE(value: /* repeated */ js.Any => T): Self = this.set("outE", js.Any.fromFunction1(value))
+    @scala.inline
+    def setOutV(value: /* repeated */ js.Any => T): Self = this.set("outV", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPath(value: /* repeated */ js.Any => T): Self = this.set("path", js.Any.fromFunction1(value))
+    @scala.inline
+    def setProject(value: /* repeated */ js.Any => T): Self = this.set("project", js.Any.fromFunction1(value))
+    @scala.inline
+    def setProperties(value: /* repeated */ js.Any => T): Self = this.set("properties", js.Any.fromFunction1(value))
+    @scala.inline
+    def setProperty(value: /* repeated */ js.Any => T): Self = this.set("property", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPropertyMap(value: /* repeated */ js.Any => T): Self = this.set("propertyMap", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRange(value: /* repeated */ js.Any => T): Self = this.set("range", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRepeat(value: /* repeated */ js.Any => T): Self = this.set("repeat", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSack(value: /* repeated */ js.Any => T): Self = this.set("sack", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSample(value: /* repeated */ js.Any => T): Self = this.set("sample", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSelect(value: /* repeated */ js.Any => T): Self = this.set("select", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSideEffect(value: /* repeated */ js.Any => T): Self = this.set("sideEffect", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSimplePath(value: /* repeated */ js.Any => T): Self = this.set("simplePath", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSkip(value: /* repeated */ js.Any => T): Self = this.set("skip", js.Any.fromFunction1(value))
+    @scala.inline
+    def setStore(value: /* repeated */ js.Any => T): Self = this.set("store", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSubgraph(value: /* repeated */ js.Any => T): Self = this.set("subgraph", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSum(value: /* repeated */ js.Any => T): Self = this.set("sum", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTail(value: /* repeated */ js.Any => T): Self = this.set("tail", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTimeLimit(value: /* repeated */ js.Any => T): Self = this.set("timeLimit", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTimes(value: /* repeated */ js.Any => T): Self = this.set("times", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTo(value: /* repeated */ js.Any => T): Self = this.set("to", js.Any.fromFunction1(value))
+    @scala.inline
+    def setToE(value: /* repeated */ js.Any => T): Self = this.set("toE", js.Any.fromFunction1(value))
+    @scala.inline
+    def setToV(value: /* repeated */ js.Any => T): Self = this.set("toV", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTree(value: /* repeated */ js.Any => T): Self = this.set("tree", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUnfold(value: /* repeated */ js.Any => T): Self = this.set("unfold", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUnion(value: /* repeated */ js.Any => T): Self = this.set("union", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUntil(value: /* repeated */ js.Any => T): Self = this.set("until", js.Any.fromFunction1(value))
+    @scala.inline
+    def setValue(value: /* repeated */ js.Any => T): Self = this.set("value", js.Any.fromFunction1(value))
+    @scala.inline
+    def setValueMap(value: /* repeated */ js.Any => T): Self = this.set("valueMap", js.Any.fromFunction1(value))
+    @scala.inline
+    def setValues(value: /* repeated */ js.Any => T): Self = this.set("values", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWhere(value: /* repeated */ js.Any => T): Self = this.set("where", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -10,55 +10,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Omit<@ionic/core.@ionic/core.ModalOptions<@ionic/core.@ionic/core.ComponentRef>, 'component' | 'componentProps'> & {  children  :react.react.ReactNode} */
+/* Inlined std.Omit<@ionic/core.@ionic/core.ModalOptions<@ionic/core.@ionic/core.ComponentRef>, 'component' | 'componentProps'> & {  children :react.react.ReactNode} */
+@js.native
 trait ReactModalOptions extends js.Object {
-  var animated: js.UndefOr[Boolean] = js.undefined
-  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
-  var children: ReactNode
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
-  var delegate: js.UndefOr[FrameworkDelegate] = js.undefined
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var keyboardClose: js.UndefOr[Boolean] = js.undefined
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
-  var mode: js.UndefOr[Mode] = js.undefined
-  var presentingElement: js.UndefOr[HTMLElement] = js.undefined
-  var showBackdrop: js.UndefOr[Boolean] = js.undefined
-  var swipeToClose: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var children: ReactNode = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var delegate: js.UndefOr[FrameworkDelegate] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var id: js.UndefOr[String] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var mode: js.UndefOr[Mode] = js.native
+  var presentingElement: js.UndefOr[HTMLElement] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.native
+  var swipeToClose: js.UndefOr[Boolean] = js.native
 }
 
 object ReactModalOptions {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    backdropDismiss: js.UndefOr[Boolean] = js.undefined,
-    children: ReactNode = null,
-    cssClass: String | js.Array[String] = null,
-    delegate: FrameworkDelegate = null,
-    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    id: String = null,
-    keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    mode: Mode = null,
-    presentingElement: HTMLElement = null,
-    showBackdrop: js.UndefOr[Boolean] = js.undefined,
-    swipeToClose: js.UndefOr[Boolean] = js.undefined
-  ): ReactModalOptions = {
+  def apply(): ReactModalOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.get.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (delegate != null) __obj.updateDynamic("delegate")(delegate.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.get.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (presentingElement != null) __obj.updateDynamic("presentingElement")(presentingElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeToClose)) __obj.updateDynamic("swipeToClose")(swipeToClose.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactModalOptions]
   }
+  @scala.inline
+  implicit class ReactModalOptionsOps[Self <: ReactModalOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setBackdropDismiss(value: Boolean): Self = this.set("backdropDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropDismiss: Self = this.set("backdropDismiss", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setCssClassVarargs(value: String*): Self = this.set("cssClass", js.Array(value :_*))
+    @scala.inline
+    def setCssClass(value: String | js.Array[String]): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDelegate(value: FrameworkDelegate): Self = this.set("delegate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegate: Self = this.set("delegate", js.undefined)
+    @scala.inline
+    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("enterAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKeyboardClose(value: Boolean): Self = this.set("keyboardClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardClose: Self = this.set("keyboardClose", js.undefined)
+    @scala.inline
+    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("leaveAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLeaveAnimation: Self = this.set("leaveAnimation", js.undefined)
+    @scala.inline
+    def setMode(value: Mode): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setPresentingElement(value: HTMLElement): Self = this.set("presentingElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentingElement: Self = this.set("presentingElement", js.undefined)
+    @scala.inline
+    def setShowBackdrop(value: Boolean): Self = this.set("showBackdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBackdrop: Self = this.set("showBackdrop", js.undefined)
+    @scala.inline
+    def setSwipeToClose(value: Boolean): Self = this.set("swipeToClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwipeToClose: Self = this.set("swipeToClose", js.undefined)
+  }
+  
 }
 

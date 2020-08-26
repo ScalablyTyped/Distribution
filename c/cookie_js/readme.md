@@ -12,7 +12,7 @@ A tiny JavaScript library that simplifies cookies.
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 6 |
-| # downloads        | 91914 |
+| # downloads        | 90544 |
 | # stars            | 0 |
 
 ## Links

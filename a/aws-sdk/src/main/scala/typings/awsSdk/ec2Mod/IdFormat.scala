@@ -22,12 +22,34 @@ trait IdFormat extends js.Object {
 
 object IdFormat {
   @scala.inline
-  def apply(Deadline: DateTime = null, Resource: String = null, UseLongIds: js.UndefOr[Boolean] = js.undefined): IdFormat = {
+  def apply(): IdFormat = {
     val __obj = js.Dynamic.literal()
-    if (Deadline != null) __obj.updateDynamic("Deadline")(Deadline.asInstanceOf[js.Any])
-    if (Resource != null) __obj.updateDynamic("Resource")(Resource.asInstanceOf[js.Any])
-    if (!js.isUndefined(UseLongIds)) __obj.updateDynamic("UseLongIds")(UseLongIds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdFormat]
   }
+  @scala.inline
+  implicit class IdFormatOps[Self <: IdFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeadline(value: DateTime): Self = this.set("Deadline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadline: Self = this.set("Deadline", js.undefined)
+    @scala.inline
+    def setResource(value: String): Self = this.set("Resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("Resource", js.undefined)
+    @scala.inline
+    def setUseLongIds(value: Boolean): Self = this.set("UseLongIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseLongIds: Self = this.set("UseLongIds", js.undefined)
+  }
+  
 }
 

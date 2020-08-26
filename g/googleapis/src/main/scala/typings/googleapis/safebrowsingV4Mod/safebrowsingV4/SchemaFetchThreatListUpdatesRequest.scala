@@ -23,11 +23,32 @@ trait SchemaFetchThreatListUpdatesRequest extends js.Object {
 
 object SchemaFetchThreatListUpdatesRequest {
   @scala.inline
-  def apply(client: SchemaClientInfo = null, listUpdateRequests: js.Array[SchemaListUpdateRequest] = null): SchemaFetchThreatListUpdatesRequest = {
+  def apply(): SchemaFetchThreatListUpdatesRequest = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (listUpdateRequests != null) __obj.updateDynamic("listUpdateRequests")(listUpdateRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFetchThreatListUpdatesRequest]
   }
+  @scala.inline
+  implicit class SchemaFetchThreatListUpdatesRequestOps[Self <: SchemaFetchThreatListUpdatesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient(value: SchemaClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("client", js.undefined)
+    @scala.inline
+    def setListUpdateRequestsVarargs(value: SchemaListUpdateRequest*): Self = this.set("listUpdateRequests", js.Array(value :_*))
+    @scala.inline
+    def setListUpdateRequests(value: js.Array[SchemaListUpdateRequest]): Self = this.set("listUpdateRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListUpdateRequests: Self = this.set("listUpdateRequests", js.undefined)
+  }
+  
 }
 

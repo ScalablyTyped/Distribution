@@ -30,20 +30,42 @@ trait ListSkillsRequest extends js.Object {
 
 object ListSkillsRequest {
   @scala.inline
-  def apply(
-    EnablementType: EnablementTypeFilter = null,
-    MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined,
-    NextToken: NextToken = null,
-    SkillGroupArn: Arn = null,
-    SkillType: SkillTypeFilter = null
-  ): ListSkillsRequest = {
+  def apply(): ListSkillsRequest = {
     val __obj = js.Dynamic.literal()
-    if (EnablementType != null) __obj.updateDynamic("EnablementType")(EnablementType.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (SkillGroupArn != null) __obj.updateDynamic("SkillGroupArn")(SkillGroupArn.asInstanceOf[js.Any])
-    if (SkillType != null) __obj.updateDynamic("SkillType")(SkillType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSkillsRequest]
   }
+  @scala.inline
+  implicit class ListSkillsRequestOps[Self <: ListSkillsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnablementType(value: EnablementTypeFilter): Self = this.set("EnablementType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablementType: Self = this.set("EnablementType", js.undefined)
+    @scala.inline
+    def setMaxResults(value: SkillListMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setSkillGroupArn(value: Arn): Self = this.set("SkillGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkillGroupArn: Self = this.set("SkillGroupArn", js.undefined)
+    @scala.inline
+    def setSkillType(value: SkillTypeFilter): Self = this.set("SkillType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkillType: Self = this.set("SkillType", js.undefined)
+  }
+  
 }
 

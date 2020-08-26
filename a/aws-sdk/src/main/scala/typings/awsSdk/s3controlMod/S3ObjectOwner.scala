@@ -18,11 +18,30 @@ trait S3ObjectOwner extends js.Object {
 
 object S3ObjectOwner {
   @scala.inline
-  def apply(DisplayName: NonEmptyMaxLength1024String = null, ID: NonEmptyMaxLength1024String = null): S3ObjectOwner = {
+  def apply(): S3ObjectOwner = {
     val __obj = js.Dynamic.literal()
-    if (DisplayName != null) __obj.updateDynamic("DisplayName")(DisplayName.asInstanceOf[js.Any])
-    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ObjectOwner]
   }
+  @scala.inline
+  implicit class S3ObjectOwnerOps[Self <: S3ObjectOwner] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: NonEmptyMaxLength1024String): Self = this.set("DisplayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("DisplayName", js.undefined)
+    @scala.inline
+    def setID(value: NonEmptyMaxLength1024String): Self = this.set("ID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteID: Self = this.set("ID", js.undefined)
+  }
+  
 }
 

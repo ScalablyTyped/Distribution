@@ -12,7 +12,7 @@ Decodes every html entity possible
 | Keywords           | html |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 3366 |
+| # downloads        | 2842 |
 | # stars            | 0 |
 
 ## Links

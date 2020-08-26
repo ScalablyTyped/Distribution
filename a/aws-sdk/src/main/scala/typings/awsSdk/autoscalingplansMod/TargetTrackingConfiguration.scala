@@ -38,23 +38,48 @@ trait TargetTrackingConfiguration extends js.Object {
 
 object TargetTrackingConfiguration {
   @scala.inline
-  def apply(
-    TargetValue: MetricScale,
-    CustomizedScalingMetricSpecification: CustomizedScalingMetricSpecification = null,
-    DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined,
-    EstimatedInstanceWarmup: js.UndefOr[Cooldown] = js.undefined,
-    PredefinedScalingMetricSpecification: PredefinedScalingMetricSpecification = null,
-    ScaleInCooldown: js.UndefOr[Cooldown] = js.undefined,
-    ScaleOutCooldown: js.UndefOr[Cooldown] = js.undefined
-  ): TargetTrackingConfiguration = {
+  def apply(TargetValue: MetricScale): TargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
-    if (CustomizedScalingMetricSpecification != null) __obj.updateDynamic("CustomizedScalingMetricSpecification")(CustomizedScalingMetricSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedInstanceWarmup)) __obj.updateDynamic("EstimatedInstanceWarmup")(EstimatedInstanceWarmup.get.asInstanceOf[js.Any])
-    if (PredefinedScalingMetricSpecification != null) __obj.updateDynamic("PredefinedScalingMetricSpecification")(PredefinedScalingMetricSpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScaleInCooldown)) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScaleOutCooldown)) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTrackingConfiguration]
   }
+  @scala.inline
+  implicit class TargetTrackingConfigurationOps[Self <: TargetTrackingConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetValue(value: MetricScale): Self = this.set("TargetValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomizedScalingMetricSpecification(value: CustomizedScalingMetricSpecification): Self = this.set("CustomizedScalingMetricSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomizedScalingMetricSpecification: Self = this.set("CustomizedScalingMetricSpecification", js.undefined)
+    @scala.inline
+    def setDisableScaleIn(value: DisableScaleIn): Self = this.set("DisableScaleIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableScaleIn: Self = this.set("DisableScaleIn", js.undefined)
+    @scala.inline
+    def setEstimatedInstanceWarmup(value: Cooldown): Self = this.set("EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedInstanceWarmup: Self = this.set("EstimatedInstanceWarmup", js.undefined)
+    @scala.inline
+    def setPredefinedScalingMetricSpecification(value: PredefinedScalingMetricSpecification): Self = this.set("PredefinedScalingMetricSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredefinedScalingMetricSpecification: Self = this.set("PredefinedScalingMetricSpecification", js.undefined)
+    @scala.inline
+    def setScaleInCooldown(value: Cooldown): Self = this.set("ScaleInCooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleInCooldown: Self = this.set("ScaleInCooldown", js.undefined)
+    @scala.inline
+    def setScaleOutCooldown(value: Cooldown): Self = this.set("ScaleOutCooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleOutCooldown: Self = this.set("ScaleOutCooldown", js.undefined)
+  }
+  
 }
 

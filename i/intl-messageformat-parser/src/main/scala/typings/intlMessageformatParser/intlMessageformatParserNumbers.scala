@@ -9,11 +9,13 @@ object intlMessageformatParserNumbers {
   @js.native
   sealed trait `0`
     extends SKELETON_TYPE
+       with typings.intlMessageformatParser.srcTypesMod.SKELETON_TYPE
        with typings.intlMessageformatParser.typesMod.SKELETON_TYPE
   
   @js.native
   sealed trait `1`
     extends SKELETON_TYPE
+       with typings.intlMessageformatParser.srcTypesMod.SKELETON_TYPE
        with typings.intlMessageformatParser.typesMod.SKELETON_TYPE
   
   @scala.inline

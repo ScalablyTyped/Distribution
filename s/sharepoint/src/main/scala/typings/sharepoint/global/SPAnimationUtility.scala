@@ -26,9 +26,11 @@ object SPAnimationUtility extends js.Object {
       animationId: ID
     ): Unit = js.native
     def FadeIn(element: HTMLElement): Unit = js.native
+    def FadeIn(element: HTMLElement, finishFunc: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
     def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
     def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = js.native
     def FadeOut(element: HTMLElement): Unit = js.native
+    def FadeOut(element: HTMLElement, finishFunc: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
     def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
     def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = js.native
     def GetLeftOffset(element: HTMLElement): Double = js.native
@@ -37,6 +39,13 @@ object SPAnimationUtility extends js.Object {
     def GetWindowScrollPosition(): X = js.native
     def IsPositioned(element: HTMLElement): Boolean = js.native
     def Move(element: HTMLElement, posX: Double, posY: Double): Unit = js.native
+    def Move(
+      element: HTMLElement,
+      posX: Double,
+      posY: Double,
+      finishFunc: js.UndefOr[scala.Nothing],
+      data: js.Any
+    ): Unit = js.native
     def Move(
       element: HTMLElement,
       posX: Double,
@@ -60,6 +69,13 @@ object SPAnimationUtility extends js.Object {
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
+      finishFunc: js.UndefOr[scala.Nothing],
+      data: js.Any
+    ): Unit = js.native
+    def QuickResize(
+      element: HTMLElement,
+      newHeight: Double,
+      newWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit]
     ): Unit = js.native
     def QuickResize(
@@ -70,6 +86,13 @@ object SPAnimationUtility extends js.Object {
       data: js.Any
     ): Unit = js.native
     def Resize(element: HTMLElement, newHeight: Double, newWidth: Double): Unit = js.native
+    def Resize(
+      element: HTMLElement,
+      newHeight: Double,
+      newWidth: Double,
+      finishFunc: js.UndefOr[scala.Nothing],
+      data: js.Any
+    ): Unit = js.native
     def Resize(
       element: HTMLElement,
       newHeight: Double,
@@ -91,6 +114,12 @@ object SPAnimationUtility extends js.Object {
       fAddToEnd: Boolean
     ): Unit = js.native
     def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double): Unit = js.native
+    def StrikeThrough(
+      element: HTMLElement,
+      strikeThroughWidth: Double,
+      finishFunc: js.UndefOr[scala.Nothing],
+      data: js.Any
+    ): Unit = js.native
     def StrikeThrough(
       element: HTMLElement,
       strikeThroughWidth: Double,

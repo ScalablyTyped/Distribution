@@ -18,9 +18,5 @@ class default protected () extends ValidationError {
     schema: Schema,
     configuration: ValidationErrorConfiguration
   ) = this()
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

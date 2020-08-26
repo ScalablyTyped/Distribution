@@ -56,32 +56,66 @@ trait ProresSettings extends js.Object {
 
 object ProresSettings {
   @scala.inline
-  def apply(
-    CodecProfile: ProresCodecProfile = null,
-    FramerateControl: ProresFramerateControl = null,
-    FramerateConversionAlgorithm: ProresFramerateConversionAlgorithm = null,
-    FramerateDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    FramerateNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    InterlaceMode: ProresInterlaceMode = null,
-    ParControl: ProresParControl = null,
-    ParDenominator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    ParNumerator: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    SlowPal: ProresSlowPal = null,
-    Telecine: ProresTelecine = null
-  ): ProresSettings = {
+  def apply(): ProresSettings = {
     val __obj = js.Dynamic.literal()
-    if (CodecProfile != null) __obj.updateDynamic("CodecProfile")(CodecProfile.asInstanceOf[js.Any])
-    if (FramerateControl != null) __obj.updateDynamic("FramerateControl")(FramerateControl.asInstanceOf[js.Any])
-    if (FramerateConversionAlgorithm != null) __obj.updateDynamic("FramerateConversionAlgorithm")(FramerateConversionAlgorithm.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateDenominator)) __obj.updateDynamic("FramerateDenominator")(FramerateDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FramerateNumerator)) __obj.updateDynamic("FramerateNumerator")(FramerateNumerator.get.asInstanceOf[js.Any])
-    if (InterlaceMode != null) __obj.updateDynamic("InterlaceMode")(InterlaceMode.asInstanceOf[js.Any])
-    if (ParControl != null) __obj.updateDynamic("ParControl")(ParControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParDenominator)) __obj.updateDynamic("ParDenominator")(ParDenominator.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParNumerator)) __obj.updateDynamic("ParNumerator")(ParNumerator.get.asInstanceOf[js.Any])
-    if (SlowPal != null) __obj.updateDynamic("SlowPal")(SlowPal.asInstanceOf[js.Any])
-    if (Telecine != null) __obj.updateDynamic("Telecine")(Telecine.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProresSettings]
   }
+  @scala.inline
+  implicit class ProresSettingsOps[Self <: ProresSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCodecProfile(value: ProresCodecProfile): Self = this.set("CodecProfile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodecProfile: Self = this.set("CodecProfile", js.undefined)
+    @scala.inline
+    def setFramerateControl(value: ProresFramerateControl): Self = this.set("FramerateControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateControl: Self = this.set("FramerateControl", js.undefined)
+    @scala.inline
+    def setFramerateConversionAlgorithm(value: ProresFramerateConversionAlgorithm): Self = this.set("FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateConversionAlgorithm: Self = this.set("FramerateConversionAlgorithm", js.undefined)
+    @scala.inline
+    def setFramerateDenominator(value: integerMin1Max2147483647): Self = this.set("FramerateDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateDenominator: Self = this.set("FramerateDenominator", js.undefined)
+    @scala.inline
+    def setFramerateNumerator(value: integerMin1Max2147483647): Self = this.set("FramerateNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerateNumerator: Self = this.set("FramerateNumerator", js.undefined)
+    @scala.inline
+    def setInterlaceMode(value: ProresInterlaceMode): Self = this.set("InterlaceMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterlaceMode: Self = this.set("InterlaceMode", js.undefined)
+    @scala.inline
+    def setParControl(value: ProresParControl): Self = this.set("ParControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParControl: Self = this.set("ParControl", js.undefined)
+    @scala.inline
+    def setParDenominator(value: integerMin1Max2147483647): Self = this.set("ParDenominator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParDenominator: Self = this.set("ParDenominator", js.undefined)
+    @scala.inline
+    def setParNumerator(value: integerMin1Max2147483647): Self = this.set("ParNumerator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParNumerator: Self = this.set("ParNumerator", js.undefined)
+    @scala.inline
+    def setSlowPal(value: ProresSlowPal): Self = this.set("SlowPal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlowPal: Self = this.set("SlowPal", js.undefined)
+    @scala.inline
+    def setTelecine(value: ProresTelecine): Self = this.set("Telecine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelecine: Self = this.set("Telecine", js.undefined)
+  }
+  
 }
 

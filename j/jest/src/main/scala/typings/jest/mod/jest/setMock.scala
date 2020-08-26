@@ -12,6 +12,7 @@ object setMock extends js.Object {
     * Explicitly supplies the mock object that the module system should return
     * for the specified module.
     */
+  // tslint:disable-next-line: no-unnecessary-generics
   def apply[T](moduleName: String, moduleExports: T): Typeofjest = js.native
 }
 

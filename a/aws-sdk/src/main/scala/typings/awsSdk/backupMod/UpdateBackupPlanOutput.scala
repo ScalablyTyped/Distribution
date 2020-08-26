@@ -26,18 +26,38 @@ trait UpdateBackupPlanOutput extends js.Object {
 
 object UpdateBackupPlanOutput {
   @scala.inline
-  def apply(
-    BackupPlanArn: ARN = null,
-    BackupPlanId: String = null,
-    CreationDate: timestamp = null,
-    VersionId: String = null
-  ): UpdateBackupPlanOutput = {
+  def apply(): UpdateBackupPlanOutput = {
     val __obj = js.Dynamic.literal()
-    if (BackupPlanArn != null) __obj.updateDynamic("BackupPlanArn")(BackupPlanArn.asInstanceOf[js.Any])
-    if (BackupPlanId != null) __obj.updateDynamic("BackupPlanId")(BackupPlanId.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBackupPlanOutput]
   }
+  @scala.inline
+  implicit class UpdateBackupPlanOutputOps[Self <: UpdateBackupPlanOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupPlanArn(value: ARN): Self = this.set("BackupPlanArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanArn: Self = this.set("BackupPlanArn", js.undefined)
+    @scala.inline
+    def setBackupPlanId(value: String): Self = this.set("BackupPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupPlanId: Self = this.set("BackupPlanId", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setVersionId(value: String): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+  }
+  
 }
 

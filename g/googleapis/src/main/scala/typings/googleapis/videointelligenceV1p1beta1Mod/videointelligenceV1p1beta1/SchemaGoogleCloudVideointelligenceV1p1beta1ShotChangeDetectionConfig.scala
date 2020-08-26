@@ -19,10 +19,26 @@ trait SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfig exten
 
 object SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfig {
   @scala.inline
-  def apply(model: String = null): SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfig = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfigOps[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1ShotChangeDetectionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModel(value: String): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+  }
+  
 }
 

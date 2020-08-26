@@ -29,6 +29,7 @@ class ResourceProjectsOperations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def get(params: ParamsResourceProjectsOperationsGet): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def get(
     params: ParamsResourceProjectsOperationsGet,

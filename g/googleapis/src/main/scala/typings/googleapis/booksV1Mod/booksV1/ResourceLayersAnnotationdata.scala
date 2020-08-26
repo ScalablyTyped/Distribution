@@ -36,6 +36,7 @@ class ResourceLayersAnnotationdata protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaAnnotationdata] = js.native
   def get(callback: BodyResponseCallback[SchemaAnnotationdata]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotationdata] = js.native
   def get(params: ParamsResourceLayersAnnotationdataGet): GaxiosPromise[SchemaAnnotationdata] = js.native
   def get(
     params: ParamsResourceLayersAnnotationdataGet,
@@ -78,6 +79,7 @@ class ResourceLayersAnnotationdata protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaAnnotationsdata] = js.native
   def list(callback: BodyResponseCallback[SchemaAnnotationsdata]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAnnotationsdata] = js.native
   def list(params: ParamsResourceLayersAnnotationdataList): GaxiosPromise[SchemaAnnotationsdata] = js.native
   def list(
     params: ParamsResourceLayersAnnotationdataList,

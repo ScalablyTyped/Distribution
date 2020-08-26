@@ -13,15 +13,8 @@ trait Options extends js.Object
 
 object Options {
   @scala.inline
-  def ReplaceEntry(
-    replace: String | ReplaceCallback,
-    search: String | RegExp,
-    flags: String = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def ReplaceEntry(replace: String | ReplaceCallback, search: String | RegExp): Options = {
     val __obj = js.Dynamic.literal(replace = replace.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   @scala.inline

@@ -184,88 +184,180 @@ trait SchemaVerifyAssertionResponse extends js.Object {
 
 object SchemaVerifyAssertionResponse {
   @scala.inline
-  def apply(
-    action: String = null,
-    appInstallationUrl: String = null,
-    appScheme: String = null,
-    context: String = null,
-    dateOfBirth: String = null,
-    displayName: String = null,
-    email: String = null,
-    emailRecycled: js.UndefOr[Boolean] = js.undefined,
-    emailVerified: js.UndefOr[Boolean] = js.undefined,
-    errorMessage: String = null,
-    expiresIn: String = null,
-    federatedId: String = null,
-    firstName: String = null,
-    fullName: String = null,
-    idToken: String = null,
-    inputEmail: String = null,
-    isNewUser: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    language: String = null,
-    lastName: String = null,
-    localId: String = null,
-    needConfirmation: js.UndefOr[Boolean] = js.undefined,
-    needEmail: js.UndefOr[Boolean] = js.undefined,
-    nickName: String = null,
-    oauthAccessToken: String = null,
-    oauthAuthorizationCode: String = null,
-    oauthExpireIn: js.UndefOr[Double] = js.undefined,
-    oauthIdToken: String = null,
-    oauthRequestToken: String = null,
-    oauthScope: String = null,
-    oauthTokenSecret: String = null,
-    originalEmail: String = null,
-    photoUrl: String = null,
-    providerId: String = null,
-    rawUserInfo: String = null,
-    refreshToken: String = null,
-    screenName: String = null,
-    timeZone: String = null,
-    verifiedProvider: js.Array[String] = null
-  ): SchemaVerifyAssertionResponse = {
+  def apply(): SchemaVerifyAssertionResponse = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (appInstallationUrl != null) __obj.updateDynamic("appInstallationUrl")(appInstallationUrl.asInstanceOf[js.Any])
-    if (appScheme != null) __obj.updateDynamic("appScheme")(appScheme.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (dateOfBirth != null) __obj.updateDynamic("dateOfBirth")(dateOfBirth.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailRecycled)) __obj.updateDynamic("emailRecycled")(emailRecycled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
-    if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (fullName != null) __obj.updateDynamic("fullName")(fullName.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (inputEmail != null) __obj.updateDynamic("inputEmail")(inputEmail.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (localId != null) __obj.updateDynamic("localId")(localId.asInstanceOf[js.Any])
-    if (!js.isUndefined(needConfirmation)) __obj.updateDynamic("needConfirmation")(needConfirmation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(needEmail)) __obj.updateDynamic("needEmail")(needEmail.get.asInstanceOf[js.Any])
-    if (nickName != null) __obj.updateDynamic("nickName")(nickName.asInstanceOf[js.Any])
-    if (oauthAccessToken != null) __obj.updateDynamic("oauthAccessToken")(oauthAccessToken.asInstanceOf[js.Any])
-    if (oauthAuthorizationCode != null) __obj.updateDynamic("oauthAuthorizationCode")(oauthAuthorizationCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(oauthExpireIn)) __obj.updateDynamic("oauthExpireIn")(oauthExpireIn.get.asInstanceOf[js.Any])
-    if (oauthIdToken != null) __obj.updateDynamic("oauthIdToken")(oauthIdToken.asInstanceOf[js.Any])
-    if (oauthRequestToken != null) __obj.updateDynamic("oauthRequestToken")(oauthRequestToken.asInstanceOf[js.Any])
-    if (oauthScope != null) __obj.updateDynamic("oauthScope")(oauthScope.asInstanceOf[js.Any])
-    if (oauthTokenSecret != null) __obj.updateDynamic("oauthTokenSecret")(oauthTokenSecret.asInstanceOf[js.Any])
-    if (originalEmail != null) __obj.updateDynamic("originalEmail")(originalEmail.asInstanceOf[js.Any])
-    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl.asInstanceOf[js.Any])
-    if (providerId != null) __obj.updateDynamic("providerId")(providerId.asInstanceOf[js.Any])
-    if (rawUserInfo != null) __obj.updateDynamic("rawUserInfo")(rawUserInfo.asInstanceOf[js.Any])
-    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken.asInstanceOf[js.Any])
-    if (screenName != null) __obj.updateDynamic("screenName")(screenName.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (verifiedProvider != null) __obj.updateDynamic("verifiedProvider")(verifiedProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVerifyAssertionResponse]
   }
+  @scala.inline
+  implicit class SchemaVerifyAssertionResponseOps[Self <: SchemaVerifyAssertionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAppInstallationUrl(value: String): Self = this.set("appInstallationUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppInstallationUrl: Self = this.set("appInstallationUrl", js.undefined)
+    @scala.inline
+    def setAppScheme(value: String): Self = this.set("appScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppScheme: Self = this.set("appScheme", js.undefined)
+    @scala.inline
+    def setContext(value: String): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setDateOfBirth(value: String): Self = this.set("dateOfBirth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateOfBirth: Self = this.set("dateOfBirth", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEmailRecycled(value: Boolean): Self = this.set("emailRecycled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailRecycled: Self = this.set("emailRecycled", js.undefined)
+    @scala.inline
+    def setEmailVerified(value: Boolean): Self = this.set("emailVerified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailVerified: Self = this.set("emailVerified", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setExpiresIn(value: String): Self = this.set("expiresIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiresIn: Self = this.set("expiresIn", js.undefined)
+    @scala.inline
+    def setFederatedId(value: String): Self = this.set("federatedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFederatedId: Self = this.set("federatedId", js.undefined)
+    @scala.inline
+    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("firstName", js.undefined)
+    @scala.inline
+    def setFullName(value: String): Self = this.set("fullName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullName: Self = this.set("fullName", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setInputEmail(value: String): Self = this.set("inputEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputEmail: Self = this.set("inputEmail", js.undefined)
+    @scala.inline
+    def setIsNewUser(value: Boolean): Self = this.set("isNewUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsNewUser: Self = this.set("isNewUser", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("lastName", js.undefined)
+    @scala.inline
+    def setLocalId(value: String): Self = this.set("localId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalId: Self = this.set("localId", js.undefined)
+    @scala.inline
+    def setNeedConfirmation(value: Boolean): Self = this.set("needConfirmation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedConfirmation: Self = this.set("needConfirmation", js.undefined)
+    @scala.inline
+    def setNeedEmail(value: Boolean): Self = this.set("needEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNeedEmail: Self = this.set("needEmail", js.undefined)
+    @scala.inline
+    def setNickName(value: String): Self = this.set("nickName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNickName: Self = this.set("nickName", js.undefined)
+    @scala.inline
+    def setOauthAccessToken(value: String): Self = this.set("oauthAccessToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthAccessToken: Self = this.set("oauthAccessToken", js.undefined)
+    @scala.inline
+    def setOauthAuthorizationCode(value: String): Self = this.set("oauthAuthorizationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthAuthorizationCode: Self = this.set("oauthAuthorizationCode", js.undefined)
+    @scala.inline
+    def setOauthExpireIn(value: Double): Self = this.set("oauthExpireIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthExpireIn: Self = this.set("oauthExpireIn", js.undefined)
+    @scala.inline
+    def setOauthIdToken(value: String): Self = this.set("oauthIdToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthIdToken: Self = this.set("oauthIdToken", js.undefined)
+    @scala.inline
+    def setOauthRequestToken(value: String): Self = this.set("oauthRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthRequestToken: Self = this.set("oauthRequestToken", js.undefined)
+    @scala.inline
+    def setOauthScope(value: String): Self = this.set("oauthScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthScope: Self = this.set("oauthScope", js.undefined)
+    @scala.inline
+    def setOauthTokenSecret(value: String): Self = this.set("oauthTokenSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauthTokenSecret: Self = this.set("oauthTokenSecret", js.undefined)
+    @scala.inline
+    def setOriginalEmail(value: String): Self = this.set("originalEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalEmail: Self = this.set("originalEmail", js.undefined)
+    @scala.inline
+    def setPhotoUrl(value: String): Self = this.set("photoUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhotoUrl: Self = this.set("photoUrl", js.undefined)
+    @scala.inline
+    def setProviderId(value: String): Self = this.set("providerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderId: Self = this.set("providerId", js.undefined)
+    @scala.inline
+    def setRawUserInfo(value: String): Self = this.set("rawUserInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRawUserInfo: Self = this.set("rawUserInfo", js.undefined)
+    @scala.inline
+    def setRefreshToken(value: String): Self = this.set("refreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshToken: Self = this.set("refreshToken", js.undefined)
+    @scala.inline
+    def setScreenName(value: String): Self = this.set("screenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenName: Self = this.set("screenName", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+    @scala.inline
+    def setVerifiedProviderVarargs(value: String*): Self = this.set("verifiedProvider", js.Array(value :_*))
+    @scala.inline
+    def setVerifiedProvider(value: js.Array[String]): Self = this.set("verifiedProvider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifiedProvider: Self = this.set("verifiedProvider", js.undefined)
+  }
+  
 }
 

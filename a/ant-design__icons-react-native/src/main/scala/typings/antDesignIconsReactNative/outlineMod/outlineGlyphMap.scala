@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap")
+@JSImport("@ant-design/icons-react-native/es/outline", "outlineGlyphMap")
 @js.native
 object outlineGlyphMap extends js.Object {
   var `account-book`: Double = js.native

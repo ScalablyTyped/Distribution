@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ltx/lib/createElement", JSImport.Namespace)
 @js.native
 object createElementMod extends js.Object {
-  def createElement(name: String): Element = js.native
+  def createElement(name: String, attrs: js.UndefOr[scala.Nothing], children: Node*): Element = js.native
   def createElement(name: String, attrs: String, children: Node*): Element = js.native
   def createElement(name: String, attrs: StringDictionary[js.Any], children: Node*): Element = js.native
 }

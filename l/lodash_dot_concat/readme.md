@@ -12,7 +12,7 @@ The lodash method `_.concat` exported as a module.
 | Keywords           | lodash-modularized, concat |
 | # releases         | 0 |
 | # dependents       | 33 |
-| # downloads        | 1007231 |
+| # downloads        | 1021545 |
 | # stars            | 0 |
 
 ## Links

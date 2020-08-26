@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 object collectFields extends js.Object {
   def apply(
     exeContext: ExecutionContext,
-    runtimeType: GraphQLObjectType[_, _, StringDictionary[_]],
+    runtimeType: GraphQLObjectType[_, _],
     selectionSet: SelectionSetNode,
     fields: StringDictionary[js.Array[FieldNode]],
     visitedFragmentNames: StringDictionary[Boolean]

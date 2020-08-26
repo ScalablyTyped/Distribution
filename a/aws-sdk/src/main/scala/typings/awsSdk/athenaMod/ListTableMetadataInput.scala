@@ -30,18 +30,38 @@ trait ListTableMetadataInput extends js.Object {
 
 object ListTableMetadataInput {
   @scala.inline
-  def apply(
-    CatalogName: CatalogNameString,
-    DatabaseName: NameString,
-    Expression: ExpressionString = null,
-    MaxResults: js.UndefOr[MaxTableMetadataCount] = js.undefined,
-    NextToken: Token = null
-  ): ListTableMetadataInput = {
+  def apply(CatalogName: CatalogNameString, DatabaseName: NameString): ListTableMetadataInput = {
     val __obj = js.Dynamic.literal(CatalogName = CatalogName.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any])
-    if (Expression != null) __obj.updateDynamic("Expression")(Expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTableMetadataInput]
   }
+  @scala.inline
+  implicit class ListTableMetadataInputOps[Self <: ListTableMetadataInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCatalogName(value: CatalogNameString): Self = this.set("CatalogName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatabaseName(value: NameString): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpression(value: ExpressionString): Self = this.set("Expression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpression: Self = this.set("Expression", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxTableMetadataCount): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,6 @@
 package typings.phaser.mod
 
 import typings.phaser.MatterJS.IEngineDefinition
-import typings.phaser.MatterJS.IEngineTimingOptions
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -19,85 +18,7 @@ import scala.scalajs.js.annotation._
 @JSImport("matter", "Engine")
 @js.native
 class Engine ()
-  extends typings.phaser.MatterJS.Engine {
-  /**
-    * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
-    *
-    * @property broadphase
-    * @type grid
-    * @default a Matter.Grid instance
-    */
-  /* CompleteClass */
-  override var broadphase: typings.phaser.MatterJS.Grid = js.native
-  /**
-    * An integer `Number` that specifies the number of constraint iterations to perform each update.
-    * The higher the value, the higher quality the simulation will be at the expense of performance.
-    * The default value of `2` is usually very adequate.
-    *
-    * @property constraintIterations
-    * @type number
-    * @default 2
-    */
-  /* CompleteClass */
-  override var constraintIterations: Double = js.native
-  /**
-    * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
-    * Sleeping can improve stability and performance, but often at the expense of accuracy.
-    *
-    * @property enableSleeping
-    * @type boolean
-    * @default false
-    */
-  /* CompleteClass */
-  override var enableSleeping: Boolean = js.native
-  /**
-    * A flag that specifies whether the engine is running or not.
-    */
-  /* CompleteClass */
-  override var enabled: Boolean = js.native
-  /**
-    * Collision pair set for this `Engine`.
-    */
-  /* CompleteClass */
-  override var pairs: js.Any = js.native
-  /**
-    * An integer `Number` that specifies the number of position iterations to perform each update.
-    * The higher the value, the higher quality the simulation will be at the expense of performance.
-    *
-    * @property positionIterations
-    * @type number
-    * @default 6
-    */
-  /* CompleteClass */
-  override var positionIterations: Double = js.native
-  /**
-    * An `Object` containing properties regarding the timing systems of the engine.
-    *
-    * @property timing
-    * @type object
-    */
-  /* CompleteClass */
-  override var timing: IEngineTimingOptions = js.native
-  /**
-    * An integer `Number` that specifies the number of velocity iterations to perform each update.
-    * The higher the value, the higher quality the simulation will be at the expense of performance.
-    *
-    * @property velocityIterations
-    * @type number
-    * @default 4
-    */
-  /* CompleteClass */
-  override var velocityIterations: Double = js.native
-  /**
-    * A `World` composite object that will contain all simulated bodies and constraints.
-    *
-    * @property world
-    * @type world
-    * @default a Matter.World instance
-    */
-  /* CompleteClass */
-  override var world: typings.phaser.MatterJS.World = js.native
-}
+  extends typings.phaser.MatterJS.Engine
 
 /* static members */
 @JSImport("matter", "Engine")
@@ -129,6 +50,7 @@ object Engine extends js.Object {
     * @deprecated
     */
   def create(): typings.phaser.MatterJS.Engine = js.native
+  def create(element: js.UndefOr[scala.Nothing], options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
   def create(element: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
   def create(element: IEngineDefinition, options: IEngineDefinition): typings.phaser.MatterJS.Engine = js.native
   def create(element: HTMLElement): typings.phaser.MatterJS.Engine = js.native
@@ -162,6 +84,7 @@ object Engine extends js.Object {
     * @param {number} [correction=1]
     */
   def update(engine: typings.phaser.MatterJS.Engine): typings.phaser.MatterJS.Engine = js.native
+  def update(engine: typings.phaser.MatterJS.Engine, delta: js.UndefOr[scala.Nothing], correction: Double): typings.phaser.MatterJS.Engine = js.native
   def update(engine: typings.phaser.MatterJS.Engine, delta: Double): typings.phaser.MatterJS.Engine = js.native
   def update(engine: typings.phaser.MatterJS.Engine, delta: Double, correction: Double): typings.phaser.MatterJS.Engine = js.native
 }

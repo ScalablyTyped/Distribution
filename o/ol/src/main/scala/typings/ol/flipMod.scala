@@ -13,6 +13,14 @@ object flipMod extends js.Object {
     offset: Double,
     end: Double,
     stride: Double,
+    opt_dest: js.UndefOr[scala.Nothing],
+    opt_destOffset: Double
+  ): js.Array[Double] = js.native
+  def flipXY(
+    flatCoordinates: js.Array[Double],
+    offset: Double,
+    end: Double,
+    stride: Double,
     opt_dest: js.Array[Double]
   ): js.Array[Double] = js.native
   def flipXY(

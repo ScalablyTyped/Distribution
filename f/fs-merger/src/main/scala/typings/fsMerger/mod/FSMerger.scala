@@ -24,6 +24,7 @@ trait FSMerger extends js.Object {
   def _generateMap(): Unit = js.native
   def at(index: Double): FSMerger = js.native
   def entries(): js.Array[Entry] = js.native
+  def entries(dirPath: js.UndefOr[scala.Nothing], options: Options): js.Array[Entry] = js.native
   def entries(dirPath: String): js.Array[Entry] = js.native
   def entries(dirPath: String, options: Options): js.Array[Entry] = js.native
   def readFileMeta(filePath: String): js.UndefOr[FileMeta] = js.native
@@ -33,8 +34,39 @@ trait FSMerger extends js.Object {
   def readFileSync(filePath: String, options: Encoding): js.UndefOr[FileContent] = js.native
   def readdir(
     dirPath: String,
-    options: js.UndefOr[Null | String | WithFileTypes],
-    callback: js.Function2[ErrnoException | Null, js.UndefOr[js.Array[Buffer | String]], Unit]
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* files */ js.UndefOr[js.Array[Buffer | String]], 
+      Unit
+    ]
+  ): Unit = js.native
+  def readdir(
+    dirPath: String,
+    options: String,
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* files */ js.UndefOr[js.Array[Buffer | String]], 
+      Unit
+    ]
+  ): Unit = js.native
+  def readdir(
+    dirPath: String,
+    options: Null,
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* files */ js.UndefOr[js.Array[Buffer | String]], 
+      Unit
+    ]
+  ): Unit = js.native
+  def readdir(
+    dirPath: String,
+    options: WithFileTypes,
+    callback: js.Function2[
+      /* err */ ErrnoException | Null, 
+      /* files */ js.UndefOr[js.Array[Buffer | String]], 
+      Unit
+    ]
   ): Unit = js.native
   def readdirSync(dirPath: String): js.Array[Buffer | String] = js.native
   def readdirSync(dirPath: String, options: String): js.Array[Buffer | String] = js.native

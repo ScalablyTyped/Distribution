@@ -25,16 +25,40 @@ trait GetSnapshotIdsArgs extends js.Object {
 
 object GetSnapshotIdsArgs {
   @scala.inline
-  def apply(
-    filters: js.Array[GetSnapshotIdsFilter] = null,
-    owners: js.Array[String] = null,
-    restorableByUserIds: js.Array[String] = null
-  ): GetSnapshotIdsArgs = {
+  def apply(): GetSnapshotIdsArgs = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (owners != null) __obj.updateDynamic("owners")(owners.asInstanceOf[js.Any])
-    if (restorableByUserIds != null) __obj.updateDynamic("restorableByUserIds")(restorableByUserIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSnapshotIdsArgs]
   }
+  @scala.inline
+  implicit class GetSnapshotIdsArgsOps[Self <: GetSnapshotIdsArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: GetSnapshotIdsFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetSnapshotIdsFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setOwnersVarargs(value: String*): Self = this.set("owners", js.Array(value :_*))
+    @scala.inline
+    def setOwners(value: js.Array[String]): Self = this.set("owners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwners: Self = this.set("owners", js.undefined)
+    @scala.inline
+    def setRestorableByUserIdsVarargs(value: String*): Self = this.set("restorableByUserIds", js.Array(value :_*))
+    @scala.inline
+    def setRestorableByUserIds(value: js.Array[String]): Self = this.set("restorableByUserIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestorableByUserIds: Self = this.set("restorableByUserIds", js.undefined)
+  }
+  
 }
 

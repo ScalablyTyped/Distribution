@@ -4,31 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  padding-left  :number,   padding-right  :number,   head  :std.Array<string>,   border  :std.Array<string>,   compact  :boolean}> */
+/* Inlined std.Partial<{  padding-left :number,   padding-right :number,   head :std.Array<string>,   border :std.Array<string>,   compact :boolean}> */
+@js.native
 trait Partialpaddingleftnumberp extends js.Object {
-  var border: js.UndefOr[js.Array[String]] = js.undefined
-  var compact: js.UndefOr[Boolean] = js.undefined
-  var head: js.UndefOr[js.Array[String]] = js.undefined
-  var `padding-left`: js.UndefOr[Double] = js.undefined
-  var `padding-right`: js.UndefOr[Double] = js.undefined
+  var border: js.UndefOr[js.Array[String]] = js.native
+  var compact: js.UndefOr[Boolean] = js.native
+  var head: js.UndefOr[js.Array[String]] = js.native
+  var `padding-left`: js.UndefOr[Double] = js.native
+  var `padding-right`: js.UndefOr[Double] = js.native
 }
 
 object Partialpaddingleftnumberp {
   @scala.inline
-  def apply(
-    border: js.Array[String] = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    head: js.Array[String] = null,
-    `padding-left`: js.UndefOr[Double] = js.undefined,
-    `padding-right`: js.UndefOr[Double] = js.undefined
-  ): Partialpaddingleftnumberp = {
+  def apply(): Partialpaddingleftnumberp = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.get.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
-    if (!js.isUndefined(`padding-left`)) __obj.updateDynamic("padding-left")(`padding-left`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`padding-right`)) __obj.updateDynamic("padding-right")(`padding-right`.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Partialpaddingleftnumberp]
   }
+  @scala.inline
+  implicit class PartialpaddingleftnumberpOps[Self <: Partialpaddingleftnumberp] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderVarargs(value: String*): Self = this.set("border", js.Array(value :_*))
+    @scala.inline
+    def setBorder(value: js.Array[String]): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setHeadVarargs(value: String*): Self = this.set("head", js.Array(value :_*))
+    @scala.inline
+    def setHead(value: js.Array[String]): Self = this.set("head", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHead: Self = this.set("head", js.undefined)
+    @scala.inline
+    def `setPadding-left`(value: Double): Self = this.set("padding-left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deletePadding-left`: Self = this.set("padding-left", js.undefined)
+    @scala.inline
+    def `setPadding-right`(value: Double): Self = this.set("padding-right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deletePadding-right`: Self = this.set("padding-right", js.undefined)
+  }
+  
 }
 

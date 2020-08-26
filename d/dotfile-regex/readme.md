@@ -12,7 +12,7 @@ Regular expresson for matching dotfiles.
 | Keywords           | detect, dotfile, expression, find, match, regex, regexp, regular |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 13128 |
+| # downloads        | 12386 |
 | # stars            | 0 |
 
 ## Links

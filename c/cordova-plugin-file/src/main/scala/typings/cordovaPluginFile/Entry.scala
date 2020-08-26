@@ -37,7 +37,30 @@ trait Entry extends js.Object {
     * @param errorCallback A callback that is called when errors happen.
     */
   def copyTo(parent: DirectoryEntry): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ this.type, Unit]
+  ): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def copyTo(parent: DirectoryEntry, newName: String): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def copyTo(
     parent: DirectoryEntry,
     newName: String,
@@ -83,7 +106,30 @@ trait Entry extends js.Object {
     * @param errorCallback   A callback that is called when errors happen.
     */
   def moveTo(parent: DirectoryEntry): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ this.type, Unit]
+  ): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: js.UndefOr[scala.Nothing],
+    successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def moveTo(parent: DirectoryEntry, newName: String): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: String,
+    successCallback: js.UndefOr[scala.Nothing],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def moveTo(
     parent: DirectoryEntry,
     newName: String,

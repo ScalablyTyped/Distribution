@@ -26,17 +26,36 @@ trait Behavior extends js.Object {
 
 object Behavior {
   @scala.inline
-  def apply(
-    name: BehaviorName,
-    criteria: BehaviorCriteria = null,
-    metric: BehaviorMetric = null,
-    metricDimension: MetricDimension = null
-  ): Behavior = {
+  def apply(name: BehaviorName): Behavior = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (metricDimension != null) __obj.updateDynamic("metricDimension")(metricDimension.asInstanceOf[js.Any])
     __obj.asInstanceOf[Behavior]
   }
+  @scala.inline
+  implicit class BehaviorOps[Self <: Behavior] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: BehaviorName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCriteria(value: BehaviorCriteria): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    @scala.inline
+    def setMetric(value: BehaviorMetric): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setMetricDimension(value: MetricDimension): Self = this.set("metricDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDimension: Self = this.set("metricDimension", js.undefined)
+  }
+  
 }
 

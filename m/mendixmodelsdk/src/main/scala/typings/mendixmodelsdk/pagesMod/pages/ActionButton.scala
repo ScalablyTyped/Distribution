@@ -14,7 +14,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/action-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/button-widgets relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ActionButton")
 @js.native
@@ -30,9 +30,12 @@ class ActionButton protected () extends Button {
   @JSName("model")
   var model_FActionButton: IModel = js.native
   def action: ClientAction = js.native
-  def action(newValue: ClientAction): js.Any = js.native
+  def action_=(newValue: ClientAction): Unit = js.native
+  /**
+    * In version 8.12.0: deleted
+    */
   def disabledDuringAction: Boolean = js.native
-  def disabledDuringAction(newValue: Boolean): js.Any = js.native
+  def disabledDuringAction_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

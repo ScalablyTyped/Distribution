@@ -14,6 +14,7 @@ class Socket_ () extends EventEmitter {
   def addSocket(sock: Socket_): Unit = js.native
   def address(): js.UndefOr[Address] = js.native
   def bind(port: ConnectionPort): Socket_ = js.native
+  def bind(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
   def bind(port: ConnectionPort, host: String): Socket_ = js.native
   def bind(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
   def bind(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
@@ -22,6 +23,7 @@ class Socket_ () extends EventEmitter {
   def closeServer(fn: js.Function0[_]): Unit = js.native
   def closeSockets(): Unit = js.native
   def connect(port: ConnectionPort): Socket_ = js.native
+  def connect(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
   def connect(port: ConnectionPort, host: String): Socket_ = js.native
   def connect(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
   def connect(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native

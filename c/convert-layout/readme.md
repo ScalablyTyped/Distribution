@@ -12,7 +12,7 @@ Converts text from one keyboard layout to other
 | Keywords           | keyboard, keyboard layout, russian, english, change, qwerty, belarusian, german, kazakh, spanish, ukrainian, hebrew, persian, farsi |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 39537 |
+| # downloads        | 40613 |
 | # stars            | 2 |
 
 ## Links

@@ -42,26 +42,56 @@ trait OptionGroupOptionSetting extends js.Object {
 
 object OptionGroupOptionSetting {
   @scala.inline
-  def apply(
-    AllowedValues: String = null,
-    ApplyType: String = null,
-    DefaultValue: String = null,
-    IsModifiable: js.UndefOr[Boolean] = js.undefined,
-    IsRequired: js.UndefOr[Boolean] = js.undefined,
-    MinimumEngineVersionPerAllowedValue: MinimumEngineVersionPerAllowedValueList = null,
-    SettingDescription: String = null,
-    SettingName: String = null
-  ): OptionGroupOptionSetting = {
+  def apply(): OptionGroupOptionSetting = {
     val __obj = js.Dynamic.literal()
-    if (AllowedValues != null) __obj.updateDynamic("AllowedValues")(AllowedValues.asInstanceOf[js.Any])
-    if (ApplyType != null) __obj.updateDynamic("ApplyType")(ApplyType.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsModifiable)) __obj.updateDynamic("IsModifiable")(IsModifiable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsRequired)) __obj.updateDynamic("IsRequired")(IsRequired.get.asInstanceOf[js.Any])
-    if (MinimumEngineVersionPerAllowedValue != null) __obj.updateDynamic("MinimumEngineVersionPerAllowedValue")(MinimumEngineVersionPerAllowedValue.asInstanceOf[js.Any])
-    if (SettingDescription != null) __obj.updateDynamic("SettingDescription")(SettingDescription.asInstanceOf[js.Any])
-    if (SettingName != null) __obj.updateDynamic("SettingName")(SettingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionGroupOptionSetting]
   }
+  @scala.inline
+  implicit class OptionGroupOptionSettingOps[Self <: OptionGroupOptionSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedValues(value: String): Self = this.set("AllowedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedValues: Self = this.set("AllowedValues", js.undefined)
+    @scala.inline
+    def setApplyType(value: String): Self = this.set("ApplyType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyType: Self = this.set("ApplyType", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: String): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setIsModifiable(value: Boolean): Self = this.set("IsModifiable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsModifiable: Self = this.set("IsModifiable", js.undefined)
+    @scala.inline
+    def setIsRequired(value: Boolean): Self = this.set("IsRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRequired: Self = this.set("IsRequired", js.undefined)
+    @scala.inline
+    def setMinimumEngineVersionPerAllowedValueVarargs(value: MinimumEngineVersionPerAllowedValue*): Self = this.set("MinimumEngineVersionPerAllowedValue", js.Array(value :_*))
+    @scala.inline
+    def setMinimumEngineVersionPerAllowedValue(value: MinimumEngineVersionPerAllowedValueList): Self = this.set("MinimumEngineVersionPerAllowedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumEngineVersionPerAllowedValue: Self = this.set("MinimumEngineVersionPerAllowedValue", js.undefined)
+    @scala.inline
+    def setSettingDescription(value: String): Self = this.set("SettingDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingDescription: Self = this.set("SettingDescription", js.undefined)
+    @scala.inline
+    def setSettingName(value: String): Self = this.set("SettingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingName: Self = this.set("SettingName", js.undefined)
+  }
+  
 }
 

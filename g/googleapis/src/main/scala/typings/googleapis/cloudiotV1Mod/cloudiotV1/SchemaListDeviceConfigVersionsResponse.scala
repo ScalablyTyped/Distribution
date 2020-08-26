@@ -18,10 +18,28 @@ trait SchemaListDeviceConfigVersionsResponse extends js.Object {
 
 object SchemaListDeviceConfigVersionsResponse {
   @scala.inline
-  def apply(deviceConfigs: js.Array[SchemaDeviceConfig] = null): SchemaListDeviceConfigVersionsResponse = {
+  def apply(): SchemaListDeviceConfigVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (deviceConfigs != null) __obj.updateDynamic("deviceConfigs")(deviceConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListDeviceConfigVersionsResponse]
   }
+  @scala.inline
+  implicit class SchemaListDeviceConfigVersionsResponseOps[Self <: SchemaListDeviceConfigVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceConfigsVarargs(value: SchemaDeviceConfig*): Self = this.set("deviceConfigs", js.Array(value :_*))
+    @scala.inline
+    def setDeviceConfigs(value: js.Array[SchemaDeviceConfig]): Self = this.set("deviceConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceConfigs: Self = this.set("deviceConfigs", js.undefined)
+  }
+  
 }
 

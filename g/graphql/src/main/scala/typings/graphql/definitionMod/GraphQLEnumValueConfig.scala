@@ -2,35 +2,65 @@ package typings.graphql.definitionMod
 
 import typings.graphql.astMod.EnumValueDefinitionNode
 import typings.graphql.maybeMod.Maybe
-import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphQLEnumValueConfig extends js.Object {
-  var astNode: js.UndefOr[Maybe[EnumValueDefinitionNode]] = js.undefined
-  var deprecationReason: js.UndefOr[Maybe[String]] = js.undefined
-  var description: js.UndefOr[Maybe[String]] = js.undefined
-  var extensions: js.UndefOr[Maybe[Record[String, _]]] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var astNode: js.UndefOr[Maybe[EnumValueDefinitionNode]] = js.native
+  var deprecationReason: js.UndefOr[Maybe[String]] = js.native
+  var description: js.UndefOr[Maybe[String]] = js.native
+  var extensions: js.UndefOr[Maybe[js.Object]] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object GraphQLEnumValueConfig {
   @scala.inline
-  def apply(
-    astNode: js.UndefOr[Null | Maybe[EnumValueDefinitionNode]] = js.undefined,
-    deprecationReason: js.UndefOr[Null | Maybe[String]] = js.undefined,
-    description: js.UndefOr[Null | Maybe[String]] = js.undefined,
-    extensions: js.UndefOr[Null | (Maybe[Record[String, _]])] = js.undefined,
-    value: js.Any = null
-  ): GraphQLEnumValueConfig = {
+  def apply(): GraphQLEnumValueConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(astNode)) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecationReason)) __obj.updateDynamic("deprecationReason")(deprecationReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(extensions)) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLEnumValueConfig]
   }
+  @scala.inline
+  implicit class GraphQLEnumValueConfigOps[Self <: GraphQLEnumValueConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAstNode(value: Maybe[EnumValueDefinitionNode]): Self = this.set("astNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAstNode: Self = this.set("astNode", js.undefined)
+    @scala.inline
+    def setAstNodeNull: Self = this.set("astNode", null)
+    @scala.inline
+    def setDeprecationReason(value: Maybe[String]): Self = this.set("deprecationReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecationReason: Self = this.set("deprecationReason", js.undefined)
+    @scala.inline
+    def setDeprecationReasonNull: Self = this.set("deprecationReason", null)
+    @scala.inline
+    def setDescription(value: Maybe[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDescriptionNull: Self = this.set("description", null)
+    @scala.inline
+    def setExtensions(value: Maybe[js.Object]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    @scala.inline
+    def setExtensionsNull: Self = this.set("extensions", null)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

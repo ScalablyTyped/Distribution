@@ -41,20 +41,42 @@ trait SchemaSecurityPolicyRuleRateLimitOptions extends js.Object {
 
 object SchemaSecurityPolicyRuleRateLimitOptions {
   @scala.inline
-  def apply(
-    blockDuration: js.UndefOr[Double] = js.undefined,
-    conformAction: String = null,
-    enforceOnKey: String = null,
-    exceedAction: String = null,
-    thresholdRps: js.UndefOr[Double] = js.undefined
-  ): SchemaSecurityPolicyRuleRateLimitOptions = {
+  def apply(): SchemaSecurityPolicyRuleRateLimitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blockDuration)) __obj.updateDynamic("blockDuration")(blockDuration.get.asInstanceOf[js.Any])
-    if (conformAction != null) __obj.updateDynamic("conformAction")(conformAction.asInstanceOf[js.Any])
-    if (enforceOnKey != null) __obj.updateDynamic("enforceOnKey")(enforceOnKey.asInstanceOf[js.Any])
-    if (exceedAction != null) __obj.updateDynamic("exceedAction")(exceedAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(thresholdRps)) __obj.updateDynamic("thresholdRps")(thresholdRps.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyRuleRateLimitOptions]
   }
+  @scala.inline
+  implicit class SchemaSecurityPolicyRuleRateLimitOptionsOps[Self <: SchemaSecurityPolicyRuleRateLimitOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockDuration(value: Double): Self = this.set("blockDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockDuration: Self = this.set("blockDuration", js.undefined)
+    @scala.inline
+    def setConformAction(value: String): Self = this.set("conformAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConformAction: Self = this.set("conformAction", js.undefined)
+    @scala.inline
+    def setEnforceOnKey(value: String): Self = this.set("enforceOnKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnforceOnKey: Self = this.set("enforceOnKey", js.undefined)
+    @scala.inline
+    def setExceedAction(value: String): Self = this.set("exceedAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExceedAction: Self = this.set("exceedAction", js.undefined)
+    @scala.inline
+    def setThresholdRps(value: Double): Self = this.set("thresholdRps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThresholdRps: Self = this.set("thresholdRps", js.undefined)
+  }
+  
 }
 

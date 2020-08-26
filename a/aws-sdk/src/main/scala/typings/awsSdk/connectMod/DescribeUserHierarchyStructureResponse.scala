@@ -14,10 +14,26 @@ trait DescribeUserHierarchyStructureResponse extends js.Object {
 
 object DescribeUserHierarchyStructureResponse {
   @scala.inline
-  def apply(HierarchyStructure: HierarchyStructure = null): DescribeUserHierarchyStructureResponse = {
+  def apply(): DescribeUserHierarchyStructureResponse = {
     val __obj = js.Dynamic.literal()
-    if (HierarchyStructure != null) __obj.updateDynamic("HierarchyStructure")(HierarchyStructure.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserHierarchyStructureResponse]
   }
+  @scala.inline
+  implicit class DescribeUserHierarchyStructureResponseOps[Self <: DescribeUserHierarchyStructureResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHierarchyStructure(value: HierarchyStructure): Self = this.set("HierarchyStructure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHierarchyStructure: Self = this.set("HierarchyStructure", js.undefined)
+  }
+  
 }
 

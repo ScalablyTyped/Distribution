@@ -18,6 +18,10 @@ object mod extends js.Object {
     /* next */ FinalizeHandler[_, MetadataBearer, _], 
     FinalizeHandler[_, MetadataBearer, _]
   ] = js.native
+  def retryMiddleware(maxRetries: Double, retryDecider: js.UndefOr[scala.Nothing], delayDecider: DelayDecider): js.Function1[
+    /* next */ FinalizeHandler[_, MetadataBearer, _], 
+    FinalizeHandler[_, MetadataBearer, _]
+  ] = js.native
   def retryMiddleware(maxRetries: Double, retryDecider: RetryDecider): js.Function1[
     /* next */ FinalizeHandler[_, MetadataBearer, _], 
     FinalizeHandler[_, MetadataBearer, _]

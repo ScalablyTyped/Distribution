@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FieldColumnConfigConstructor
-  extends Instantiable0[FieldColumnConfig]
+  extends /**
+  * The configuration options for displaying an individual field within the [FeatureTable](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-FieldColumnConfig.html)
+  */
+Instantiable0[FieldColumnConfig]
      with Instantiable1[/* properties */ FieldColumnConfigProperties, FieldColumnConfig]
 

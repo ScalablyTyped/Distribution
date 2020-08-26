@@ -22,16 +22,34 @@ trait VoteSummary extends js.Object {
 
 object VoteSummary {
   @scala.inline
-  def apply(
-    MemberId: ResourceIdString = null,
-    MemberName: NetworkMemberNameString = null,
-    Vote: VoteValue = null
-  ): VoteSummary = {
+  def apply(): VoteSummary = {
     val __obj = js.Dynamic.literal()
-    if (MemberId != null) __obj.updateDynamic("MemberId")(MemberId.asInstanceOf[js.Any])
-    if (MemberName != null) __obj.updateDynamic("MemberName")(MemberName.asInstanceOf[js.Any])
-    if (Vote != null) __obj.updateDynamic("Vote")(Vote.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoteSummary]
   }
+  @scala.inline
+  implicit class VoteSummaryOps[Self <: VoteSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMemberId(value: ResourceIdString): Self = this.set("MemberId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberId: Self = this.set("MemberId", js.undefined)
+    @scala.inline
+    def setMemberName(value: NetworkMemberNameString): Self = this.set("MemberName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberName: Self = this.set("MemberName", js.undefined)
+    @scala.inline
+    def setVote(value: VoteValue): Self = this.set("Vote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVote: Self = this.set("Vote", js.undefined)
+  }
+  
 }
 

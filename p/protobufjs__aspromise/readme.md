@@ -12,7 +12,7 @@ Returns a promise from a node-style callback function.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 30 |
-| # downloads        | 52816140 |
+| # downloads        | 55661655 |
 | # stars            | 0 |
 
 ## Links

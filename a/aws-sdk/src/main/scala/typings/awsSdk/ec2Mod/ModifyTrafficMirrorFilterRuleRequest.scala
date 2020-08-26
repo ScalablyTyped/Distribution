@@ -58,33 +58,70 @@ trait ModifyTrafficMirrorFilterRuleRequest extends js.Object {
 
 object ModifyTrafficMirrorFilterRuleRequest {
   @scala.inline
-  def apply(
-    TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleId,
-    Description: String = null,
-    DestinationCidrBlock: String = null,
-    DestinationPortRange: TrafficMirrorPortRangeRequest = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Protocol: js.UndefOr[Integer] = js.undefined,
-    RemoveFields: TrafficMirrorFilterRuleFieldList = null,
-    RuleAction: TrafficMirrorRuleAction = null,
-    RuleNumber: js.UndefOr[Integer] = js.undefined,
-    SourceCidrBlock: String = null,
-    SourcePortRange: TrafficMirrorPortRangeRequest = null,
-    TrafficDirection: TrafficDirection = null
-  ): ModifyTrafficMirrorFilterRuleRequest = {
+  def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleId): ModifyTrafficMirrorFilterRuleRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterRuleId = TrafficMirrorFilterRuleId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DestinationCidrBlock != null) __obj.updateDynamic("DestinationCidrBlock")(DestinationCidrBlock.asInstanceOf[js.Any])
-    if (DestinationPortRange != null) __obj.updateDynamic("DestinationPortRange")(DestinationPortRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Protocol)) __obj.updateDynamic("Protocol")(Protocol.get.asInstanceOf[js.Any])
-    if (RemoveFields != null) __obj.updateDynamic("RemoveFields")(RemoveFields.asInstanceOf[js.Any])
-    if (RuleAction != null) __obj.updateDynamic("RuleAction")(RuleAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(RuleNumber)) __obj.updateDynamic("RuleNumber")(RuleNumber.get.asInstanceOf[js.Any])
-    if (SourceCidrBlock != null) __obj.updateDynamic("SourceCidrBlock")(SourceCidrBlock.asInstanceOf[js.Any])
-    if (SourcePortRange != null) __obj.updateDynamic("SourcePortRange")(SourcePortRange.asInstanceOf[js.Any])
-    if (TrafficDirection != null) __obj.updateDynamic("TrafficDirection")(TrafficDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorFilterRuleRequest]
   }
+  @scala.inline
+  implicit class ModifyTrafficMirrorFilterRuleRequestOps[Self <: ModifyTrafficMirrorFilterRuleRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleId): Self = this.set("TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDestinationCidrBlock(value: String): Self = this.set("DestinationCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationCidrBlock: Self = this.set("DestinationCidrBlock", js.undefined)
+    @scala.inline
+    def setDestinationPortRange(value: TrafficMirrorPortRangeRequest): Self = this.set("DestinationPortRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPortRange: Self = this.set("DestinationPortRange", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setProtocol(value: Integer): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setRemoveFieldsVarargs(value: TrafficMirrorFilterRuleField*): Self = this.set("RemoveFields", js.Array(value :_*))
+    @scala.inline
+    def setRemoveFields(value: TrafficMirrorFilterRuleFieldList): Self = this.set("RemoveFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveFields: Self = this.set("RemoveFields", js.undefined)
+    @scala.inline
+    def setRuleAction(value: TrafficMirrorRuleAction): Self = this.set("RuleAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleAction: Self = this.set("RuleAction", js.undefined)
+    @scala.inline
+    def setRuleNumber(value: Integer): Self = this.set("RuleNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleNumber: Self = this.set("RuleNumber", js.undefined)
+    @scala.inline
+    def setSourceCidrBlock(value: String): Self = this.set("SourceCidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCidrBlock: Self = this.set("SourceCidrBlock", js.undefined)
+    @scala.inline
+    def setSourcePortRange(value: TrafficMirrorPortRangeRequest): Self = this.set("SourcePortRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePortRange: Self = this.set("SourcePortRange", js.undefined)
+    @scala.inline
+    def setTrafficDirection(value: TrafficDirection): Self = this.set("TrafficDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficDirection: Self = this.set("TrafficDirection", js.undefined)
+  }
+  
 }
 

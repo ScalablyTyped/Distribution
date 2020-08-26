@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class Manager protected () extends js.Object {
   def this(map: Map_) = this()
   def this(map: Map_, controls: js.Array[String | IControl]) = this()
+  def this(map: Map_, controls: js.UndefOr[scala.Nothing], options: IManagerOptions) = this()
   def this(map: Map_, controls: js.Array[String | IControl], options: IManagerOptions) = this()
   var events: typings.yandexMaps.mod.event.Manager = js.native
   var options: typings.yandexMaps.mod.option.Manager = js.native

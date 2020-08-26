@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-radar
   */
+@js.native
 trait SeriesRadar_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -34,7 +35,7 @@ trait SeriesRadar_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-radar.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -50,7 +51,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -66,7 +67,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -78,7 +79,7 @@ trait SeriesRadar_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-radar.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -90,7 +91,7 @@ trait SeriesRadar_ extends js.Object {
     * 300
     * @see https://echarts.apache.org/en/option.html#series-radar.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -102,7 +103,7 @@ trait SeriesRadar_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-radar.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -111,7 +112,7 @@ trait SeriesRadar_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-radar.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  var animationEasingUpdate: js.UndefOr[String] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -122,14 +123,14 @@ trait SeriesRadar_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-radar.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * Area filling style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.areaStyle
     */
-  var areaStyle: js.UndefOr[Opacity] = js.undefined
+  var areaStyle: js.UndefOr[Opacity] = js.native
   /**
     * The data in radar chart is multi-variable (dimension).
     * Here is an example:
@@ -144,11 +145,11 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.data
     */
-  var data: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.emphasis
     */
-  var emphasis: js.UndefOr[AreaStyle] = js.undefined
+  var emphasis: js.UndefOr[AreaStyle] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -157,14 +158,14 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Item style of the inflection point of the lines.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.itemStyle
     */
-  var itemStyle: js.UndefOr[ShadowOffsetY] = js.undefined
+  var itemStyle: js.UndefOr[ShadowOffsetY] = js.native
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -176,14 +177,14 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.native
   /**
     * Line style.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
+  var lineStyle: js.UndefOr[ShadowBlur] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -194,7 +195,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Index of
     * [radar](https://echarts.apache.org/en/option.html#radar)
@@ -203,7 +204,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.radarIndex
     */
-  var radarIndex: js.UndefOr[Double] = js.undefined
+  var radarIndex: js.UndefOr[Double] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -212,7 +213,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * Symbol of .
     *
@@ -253,14 +254,14 @@ trait SeriesRadar_ extends js.Object {
     * "circle"
     * @see https://echarts.apache.org/en/option.html#series-radar.symbol
     */
-  var symbol: js.UndefOr[String] = js.undefined
+  var symbol: js.UndefOr[String] = js.native
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.native
   /**
     * Offset of symbol relative to original position.
     * By default, symbol will be put in the center position of data.
@@ -281,7 +282,7 @@ trait SeriesRadar_ extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-radar.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
   /**
     * Rotate degree of symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
@@ -291,7 +292,7 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.symbolRotate
     */
-  var symbolRotate: js.UndefOr[Double] = js.undefined
+  var symbolRotate: js.UndefOr[Double] = js.native
   /**
     * symbol size.
     * It can be set to single numbers like `10`, or use an array to
@@ -317,20 +318,20 @@ trait SeriesRadar_ extends js.Object {
     * 4
     * @see https://echarts.apache.org/en/option.html#series-radar.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * @default
     * "radar"
     * @see https://echarts.apache.org/en/option.html#series-radar.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * `z` value of all graghical elements in radar chart, which controls
     * order of drawing graphical components.
@@ -345,7 +346,7 @@ trait SeriesRadar_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-radar.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in radar chart.
     *
@@ -363,69 +364,141 @@ trait SeriesRadar_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-radar.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesRadar_ {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: js.Function | Double = null,
-    animationDelayUpdate: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    areaStyle: Opacity = null,
-    data: js.Array[DataObject] = null,
-    emphasis: AreaStyle = null,
-    id: String = null,
-    itemStyle: ShadowOffsetY = null,
-    label: BorderRadius = null,
-    lineStyle: ShadowBlur = null,
-    name: String = null,
-    radarIndex: js.UndefOr[Double] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    symbol: String = null,
-    symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
-    symbolOffset: js.Array[_] = null,
-    symbolRotate: js.UndefOr[Double] = js.undefined,
-    symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: BaseTooltip = null,
-    `type`: String = null,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesRadar_ = {
+  def apply(): SeriesRadar_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(radarIndex)) __obj.updateDynamic("radarIndex")(radarIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
-    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesRadar_]
   }
+  @scala.inline
+  implicit class SeriesRadar_Ops[Self <: SeriesRadar_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setAreaStyle(value: Opacity): Self = this.set("areaStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreaStyle: Self = this.set("areaStyle", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataObject*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEmphasis(value: AreaStyle): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: ShadowOffsetY): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: BorderRadius): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRadarIndex(value: Double): Self = this.set("radarIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadarIndex: Self = this.set("radarIndex", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    @scala.inline
+    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    @scala.inline
+    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    @scala.inline
+    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | js.Function | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

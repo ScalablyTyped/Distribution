@@ -12,7 +12,7 @@ jQuery collection plugin that will assign the next ID in sequence if an ID prope
 | Keywords           | jquery-plugin, ecosystem:jquery, ebay, accessibility, a11y |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1438 |
+| # downloads        | 1416 |
 | # stars            | 0 |
 
 ## Links

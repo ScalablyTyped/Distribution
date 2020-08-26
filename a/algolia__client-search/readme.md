@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-search
 
-Typings are for version 4.3.0
+Typings are for version 4.3.1
 
 
 
@@ -9,9 +9,9 @@ Typings are for version 4.3.0
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-search |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 5 |
-| # downloads        | 65469 |
+| # releases         | 28 |
+| # dependents       | 7 |
+| # downloads        | 1742433 |
 | # stars            | 0 |
 
 ## Links

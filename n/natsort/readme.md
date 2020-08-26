@@ -12,7 +12,7 @@ Javascript natural sort algorithm with unicode support.
 | Keywords           | natural, natsort, sort, sorter, numeric, unicode, algorithm, date, datetime, desc, case-insensitive |
 | # releases         | 3 |
 | # dependents       | 4 |
-| # downloads        | 189381 |
+| # downloads        | 198881 |
 | # stars            | 1 |
 
 ## Links

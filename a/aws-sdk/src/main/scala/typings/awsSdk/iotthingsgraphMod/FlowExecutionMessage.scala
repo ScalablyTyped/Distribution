@@ -26,18 +26,38 @@ trait FlowExecutionMessage extends js.Object {
 
 object FlowExecutionMessage {
   @scala.inline
-  def apply(
-    eventType: FlowExecutionEventType = null,
-    messageId: FlowExecutionMessageId = null,
-    payload: FlowExecutionMessagePayload = null,
-    timestamp: Timestamp = null
-  ): FlowExecutionMessage = {
+  def apply(): FlowExecutionMessage = {
     val __obj = js.Dynamic.literal()
-    if (eventType != null) __obj.updateDynamic("eventType")(eventType.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowExecutionMessage]
   }
+  @scala.inline
+  implicit class FlowExecutionMessageOps[Self <: FlowExecutionMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventType(value: FlowExecutionEventType): Self = this.set("eventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventType: Self = this.set("eventType", js.undefined)
+    @scala.inline
+    def setMessageId(value: FlowExecutionMessageId): Self = this.set("messageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageId: Self = this.set("messageId", js.undefined)
+    @scala.inline
+    def setPayload(value: FlowExecutionMessagePayload): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setTimestamp(value: Timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+  }
+  
 }
 

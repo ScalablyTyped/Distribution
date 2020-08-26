@@ -17,6 +17,12 @@ object ^ extends js.Object {
   def apply(globs: String): FSWatcher = js.native
   def apply(globs: String, cb: js.Function0[AsyncType]): FSWatcher = js.native
   def apply(globs: String, cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]): FSWatcher = js.native
+  def apply(globs: String, opt: js.UndefOr[scala.Nothing], cb: js.Function0[AsyncType]): FSWatcher = js.native
+  def apply(
+    globs: String,
+    opt: js.UndefOr[scala.Nothing],
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+  ): FSWatcher = js.native
   def apply(globs: String, opt: WatchOptions): FSWatcher = js.native
   def apply(globs: String, opt: WatchOptions, cb: js.Function0[AsyncType]): FSWatcher = js.native
   def apply(
@@ -28,6 +34,12 @@ object ^ extends js.Object {
   def apply(globs: js.Array[String], cb: js.Function0[AsyncType]): FSWatcher = js.native
   def apply(
     globs: js.Array[String],
+    cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
+  ): FSWatcher = js.native
+  def apply(globs: js.Array[String], opt: js.UndefOr[scala.Nothing], cb: js.Function0[AsyncType]): FSWatcher = js.native
+  def apply(
+    globs: js.Array[String],
+    opt: js.UndefOr[scala.Nothing],
     cb: js.Function1[/* done */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], Unit]
   ): FSWatcher = js.native
   def apply(globs: js.Array[String], opt: WatchOptions): FSWatcher = js.native

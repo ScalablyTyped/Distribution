@@ -6,22 +6,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Hyperlink extends js.Object {
-  var Address: String
-  val Application: typings.activexPowerpoint.PowerPoint.Application
-  var EmailSubject: String
-  val Parent: js.Any
+  var Address: String = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  var EmailSubject: String = js.native
+  val Parent: js.Any = js.native
   @JSName("PowerPoint.Hyperlink_typekey")
-  var PowerPointDotHyperlink_typekey: Hyperlink
-  var ScreenTip: String
-  var ShowAndReturn: MsoTriState
-  var SubAddress: String
-  var TextToDisplay: String
-  val Type: MsoHyperlinkType
-  def AddToFavorites(): Unit
-  def CreateNewDocument(FileName: String, EditNow: MsoTriState, Overwrite: MsoTriState): Unit
-  def Delete(): Unit
-  def Follow(): Unit
+  var PowerPointDotHyperlink_typekey: Hyperlink = js.native
+  var ScreenTip: String = js.native
+  var ShowAndReturn: MsoTriState = js.native
+  var SubAddress: String = js.native
+  var TextToDisplay: String = js.native
+  val Type: MsoHyperlinkType = js.native
+  def AddToFavorites(): Unit = js.native
+  def CreateNewDocument(FileName: String, EditNow: MsoTriState, Overwrite: MsoTriState): Unit = js.native
+  def Delete(): Unit = js.native
+  def Follow(): Unit = js.native
 }
 
 object Hyperlink {
@@ -46,5 +47,46 @@ object Hyperlink {
     __obj.updateDynamic("PowerPoint.Hyperlink_typekey")(PowerPointDotHyperlink_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hyperlink]
   }
+  @scala.inline
+  implicit class HyperlinkOps[Self <: Hyperlink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddToFavorites(value: () => Unit): Self = this.set("AddToFavorites", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAddress(value: String): Self = this.set("Address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateNewDocument(value: (String, MsoTriState, MsoTriState) => Unit): Self = this.set("CreateNewDocument", js.Any.fromFunction3(value))
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEmailSubject(value: String): Self = this.set("EmailSubject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFollow(value: () => Unit): Self = this.set("Follow", js.Any.fromFunction0(value))
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPowerPointDotHyperlink_typekey(value: Hyperlink): Self = this.set("PowerPoint.Hyperlink_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScreenTip(value: String): Self = this.set("ScreenTip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShowAndReturn(value: MsoTriState): Self = this.set("ShowAndReturn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubAddress(value: String): Self = this.set("SubAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextToDisplay(value: String): Self = this.set("TextToDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: MsoHyperlinkType): Self = this.set("Type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

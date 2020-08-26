@@ -12,7 +12,7 @@ evaluate statically-analyzable expressions
 | Keywords           | static, eval, expression, esprima, ast, abstract, syntax, tree, analysis |
 | # releases         | 4 |
 | # dependents       | 47 |
-| # downloads        | 37079343 |
+| # downloads        | 38375614 |
 | # stars            | 6 |
 
 ## Links

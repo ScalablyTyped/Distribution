@@ -27,7 +27,7 @@ class DataSetParameterAccess protected () extends Element {
   def constraintAccessList: IList[DataSetConstraintAccess] = js.native
   def containerAsDataSetModuleRoleAccess: DataSetModuleRoleAccess = js.native
   def parameterName: String = js.native
-  def parameterName(newValue: String): js.Any = js.native
+  def parameterName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

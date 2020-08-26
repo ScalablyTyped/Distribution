@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "broccoli-output-wrapper" : "3.2.1"
+      "broccoli-output-wrapper" : "3.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "broccoli-output-wrapper" : "3.2.1"
+      "broccoli-output-wrapper" : "3.2.3"
     }
   ],
   "compile-devDependencies" : [

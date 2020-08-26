@@ -13,12 +13,34 @@ trait ListJobsInput extends js.Object {
 
 object ListJobsInput {
   @scala.inline
-  def apply(APIVersion: APIVersion_ = null, Marker: Marker = null, MaxJobs: js.UndefOr[MaxJobs] = js.undefined): ListJobsInput = {
+  def apply(): ListJobsInput = {
     val __obj = js.Dynamic.literal()
-    if (APIVersion != null) __obj.updateDynamic("APIVersion")(APIVersion.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxJobs)) __obj.updateDynamic("MaxJobs")(MaxJobs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJobsInput]
   }
+  @scala.inline
+  implicit class ListJobsInputOps[Self <: ListJobsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAPIVersion(value: APIVersion_): Self = this.set("APIVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAPIVersion: Self = this.set("APIVersion", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxJobs(value: MaxJobs): Self = this.set("MaxJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxJobs: Self = this.set("MaxJobs", js.undefined)
+  }
+  
 }
 

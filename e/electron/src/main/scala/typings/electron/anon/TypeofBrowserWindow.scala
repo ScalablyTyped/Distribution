@@ -29,6 +29,10 @@ trait TypeofBrowserWindow
     *
     * **Note:** This API cannot be called before the `ready` event of the `app` module
     * is emitted.
+    * 
+  **Note:** This method is deprecated. Instead, use `ses.loadExtension(path)`.
+    *
+    * @deprecated
     */
   def addDevToolsExtension(path: String): Unit = js.native
   /**
@@ -39,6 +43,10 @@ trait TypeofBrowserWindow
     *
     * **Note:** This API cannot be called before the `ready` event of the `app` module
     * is emitted.
+    * 
+  **Note:** This method is deprecated. Instead, use `ses.loadExtension(path)`.
+    *
+    * @deprecated
     */
   def addExtension(path: String): Unit = js.native
   /**
@@ -67,6 +75,10 @@ trait TypeofBrowserWindow
     *
     * **Note:** This API cannot be called before the `ready` event of the `app` module
     * is emitted.
+    * 
+  **Note:** This method is deprecated. Instead, use `ses.getAllExtensions()`.
+    *
+    * @deprecated
     */
   def getDevToolsExtensions(): Record[String, ExtensionInfo] = js.native
   /**
@@ -75,6 +87,10 @@ trait TypeofBrowserWindow
     *
     * **Note:** This API cannot be called before the `ready` event of the `app` module
     * is emitted.
+    * 
+  **Note:** This method is deprecated. Instead, use `ses.getAllExtensions()`.
+    *
+    * @deprecated
     */
   def getExtensions(): Record[String, ExtensionInfo] = js.native
   /**
@@ -86,6 +102,11 @@ trait TypeofBrowserWindow
     *
     * **Note:** This API cannot be called before the `ready` event of the `app` module
     * is emitted.
+    *
+    * **Note:** This method is deprecated. Instead, use
+    * `ses.removeExtension(extension_id)`.
+    *
+    * @deprecated
     */
   def removeDevToolsExtension(name: String): Unit = js.native
   /**
@@ -93,6 +114,11 @@ trait TypeofBrowserWindow
     *
     * **Note:** This API cannot be called before the `ready` event of the `app` module
     * is emitted.
+    *
+    * **Note:** This method is deprecated. Instead, use
+    * `ses.removeExtension(extension_id)`.
+    *
+    * @deprecated
     */
   def removeExtension(name: String): Unit = js.native
 }

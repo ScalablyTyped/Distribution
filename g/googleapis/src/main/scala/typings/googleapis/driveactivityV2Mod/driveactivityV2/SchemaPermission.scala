@@ -41,22 +41,46 @@ trait SchemaPermission extends js.Object {
 
 object SchemaPermission {
   @scala.inline
-  def apply(
-    allowDiscovery: js.UndefOr[Boolean] = js.undefined,
-    anyone: SchemaAnyone = null,
-    domain: SchemaDomain = null,
-    group: SchemaGroup = null,
-    role: String = null,
-    user: SchemaUser = null
-  ): SchemaPermission = {
+  def apply(): SchemaPermission = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDiscovery)) __obj.updateDynamic("allowDiscovery")(allowDiscovery.get.asInstanceOf[js.Any])
-    if (anyone != null) __obj.updateDynamic("anyone")(anyone.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPermission]
   }
+  @scala.inline
+  implicit class SchemaPermissionOps[Self <: SchemaPermission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowDiscovery(value: Boolean): Self = this.set("allowDiscovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDiscovery: Self = this.set("allowDiscovery", js.undefined)
+    @scala.inline
+    def setAnyone(value: SchemaAnyone): Self = this.set("anyone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnyone: Self = this.set("anyone", js.undefined)
+    @scala.inline
+    def setDomain(value: SchemaDomain): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("domain", js.undefined)
+    @scala.inline
+    def setGroup(value: SchemaGroup): Self = this.set("group", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroup: Self = this.set("group", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setUser(value: SchemaUser): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser: Self = this.set("user", js.undefined)
+  }
+  
 }
 

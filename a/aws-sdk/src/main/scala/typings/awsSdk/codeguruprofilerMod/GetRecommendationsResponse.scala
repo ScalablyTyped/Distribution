@@ -40,5 +40,32 @@ object GetRecommendationsResponse {
     val __obj = js.Dynamic.literal(anomalies = anomalies.asInstanceOf[js.Any], profileEndTime = profileEndTime.asInstanceOf[js.Any], profileStartTime = profileStartTime.asInstanceOf[js.Any], profilingGroupName = profilingGroupName.asInstanceOf[js.Any], recommendations = recommendations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecommendationsResponse]
   }
+  @scala.inline
+  implicit class GetRecommendationsResponseOps[Self <: GetRecommendationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnomaliesVarargs(value: Anomaly*): Self = this.set("anomalies", js.Array(value :_*))
+    @scala.inline
+    def setAnomalies(value: Anomalies): Self = this.set("anomalies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfileEndTime(value: Timestamp): Self = this.set("profileEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfileStartTime(value: Timestamp): Self = this.set("profileStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfilingGroupName(value: ProfilingGroupName): Self = this.set("profilingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecommendationsVarargs(value: Recommendation*): Self = this.set("recommendations", js.Array(value :_*))
+    @scala.inline
+    def setRecommendations(value: Recommendations): Self = this.set("recommendations", value.asInstanceOf[js.Any])
+  }
+  
 }
 

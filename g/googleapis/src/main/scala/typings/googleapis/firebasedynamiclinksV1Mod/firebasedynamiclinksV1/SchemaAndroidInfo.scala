@@ -30,18 +30,38 @@ trait SchemaAndroidInfo extends js.Object {
 
 object SchemaAndroidInfo {
   @scala.inline
-  def apply(
-    androidFallbackLink: String = null,
-    androidLink: String = null,
-    androidMinPackageVersionCode: String = null,
-    androidPackageName: String = null
-  ): SchemaAndroidInfo = {
+  def apply(): SchemaAndroidInfo = {
     val __obj = js.Dynamic.literal()
-    if (androidFallbackLink != null) __obj.updateDynamic("androidFallbackLink")(androidFallbackLink.asInstanceOf[js.Any])
-    if (androidLink != null) __obj.updateDynamic("androidLink")(androidLink.asInstanceOf[js.Any])
-    if (androidMinPackageVersionCode != null) __obj.updateDynamic("androidMinPackageVersionCode")(androidMinPackageVersionCode.asInstanceOf[js.Any])
-    if (androidPackageName != null) __obj.updateDynamic("androidPackageName")(androidPackageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidInfo]
   }
+  @scala.inline
+  implicit class SchemaAndroidInfoOps[Self <: SchemaAndroidInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidFallbackLink(value: String): Self = this.set("androidFallbackLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidFallbackLink: Self = this.set("androidFallbackLink", js.undefined)
+    @scala.inline
+    def setAndroidLink(value: String): Self = this.set("androidLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidLink: Self = this.set("androidLink", js.undefined)
+    @scala.inline
+    def setAndroidMinPackageVersionCode(value: String): Self = this.set("androidMinPackageVersionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidMinPackageVersionCode: Self = this.set("androidMinPackageVersionCode", js.undefined)
+    @scala.inline
+    def setAndroidPackageName(value: String): Self = this.set("androidPackageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidPackageName: Self = this.set("androidPackageName", js.undefined)
+  }
+  
 }
 

@@ -5,29 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoadingMessageDescriptorHtmlElement
   extends LoadingMessageDescriptorBase
      with LoadingMessageDescriptor {
-  var el: HTMLElement
+  var el: HTMLElement = js.native
 }
 
 object LoadingMessageDescriptorHtmlElement {
   @scala.inline
-  def apply(
-    el: HTMLElement,
-    className: String = null,
-    hideOnViewChanged: js.UndefOr[Boolean] = js.undefined,
-    messageKey: js.Object | String = null,
-    persistent: js.UndefOr[Boolean] = js.undefined,
-    priority: js.UndefOr[Double] = js.undefined
-  ): LoadingMessageDescriptorHtmlElement = {
+  def apply(el: HTMLElement): LoadingMessageDescriptorHtmlElement = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged.get.asInstanceOf[js.Any])
-    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingMessageDescriptorHtmlElement]
   }
+  @scala.inline
+  implicit class LoadingMessageDescriptorHtmlElementOps[Self <: LoadingMessageDescriptorHtmlElement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEl(value: HTMLElement): Self = this.set("el", value.asInstanceOf[js.Any])
+  }
+  
 }
 

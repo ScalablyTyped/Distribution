@@ -18,11 +18,32 @@ trait ListNamespacesResponse extends js.Object {
 
 object ListNamespacesResponse {
   @scala.inline
-  def apply(Namespaces: NamespaceSummariesList = null, NextToken: NextToken = null): ListNamespacesResponse = {
+  def apply(): ListNamespacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (Namespaces != null) __obj.updateDynamic("Namespaces")(Namespaces.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListNamespacesResponse]
   }
+  @scala.inline
+  implicit class ListNamespacesResponseOps[Self <: ListNamespacesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNamespacesVarargs(value: NamespaceSummary*): Self = this.set("Namespaces", js.Array(value :_*))
+    @scala.inline
+    def setNamespaces(value: NamespaceSummariesList): Self = this.set("Namespaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaces: Self = this.set("Namespaces", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

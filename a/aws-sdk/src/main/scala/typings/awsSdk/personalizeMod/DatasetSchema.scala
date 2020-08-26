@@ -30,20 +30,42 @@ trait DatasetSchema extends js.Object {
 
 object DatasetSchema {
   @scala.inline
-  def apply(
-    creationDateTime: Date = null,
-    lastUpdatedDateTime: Date = null,
-    name: Name = null,
-    schema: AvroSchema = null,
-    schemaArn: Arn = null
-  ): DatasetSchema = {
+  def apply(): DatasetSchema = {
     val __obj = js.Dynamic.literal()
-    if (creationDateTime != null) __obj.updateDynamic("creationDateTime")(creationDateTime.asInstanceOf[js.Any])
-    if (lastUpdatedDateTime != null) __obj.updateDynamic("lastUpdatedDateTime")(lastUpdatedDateTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (schemaArn != null) __obj.updateDynamic("schemaArn")(schemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetSchema]
   }
+  @scala.inline
+  implicit class DatasetSchemaOps[Self <: DatasetSchema] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDateTime(value: Date): Self = this.set("creationDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDateTime: Self = this.set("creationDateTime", js.undefined)
+    @scala.inline
+    def setLastUpdatedDateTime(value: Date): Self = this.set("lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDateTime: Self = this.set("lastUpdatedDateTime", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSchema(value: AvroSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setSchemaArn(value: Arn): Self = this.set("schemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaArn: Self = this.set("schemaArn", js.undefined)
+  }
+  
 }
 

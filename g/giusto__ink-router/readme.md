@@ -12,7 +12,7 @@ Implementation of react-router for ink
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 175 |
+| # downloads        | 486 |
 | # stars            | 0 |
 
 ## Links

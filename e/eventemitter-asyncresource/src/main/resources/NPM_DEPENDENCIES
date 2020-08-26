@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "eventemitter-asyncresource" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "eventemitter-asyncresource" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

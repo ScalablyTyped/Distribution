@@ -24,9 +24,8 @@ class LatLngBounds_ protected () extends js.Object {
   def getWest(): Double = js.native
   def intersects(otherBounds: LatLngBoundsExpression): Boolean = js.native
   def isValid(): Boolean = js.native
-  def overlaps(otherBounds: BoundsExpression): Boolean = js.native
+  def overlaps(otherBounds: LatLngBoundsExpression): Boolean = js.native
   def pad(bufferRatio: Double): LatLngBounds_ = js.native
-   // investigate if this is really bounds and not latlngbounds
   def toBBoxString(): String = js.native
 }
 

@@ -8,53 +8,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SearchTemplateParams extends GenericParams {
-  var allowNoIndices: js.UndefOr[Boolean] = js.undefined
-  var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
-  var index: NameList
-  var preference: js.UndefOr[String] = js.undefined
-  var routing: js.UndefOr[NameList] = js.undefined
-  var scroll: js.UndefOr[TimeSpan] = js.undefined
-  var searchType: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
-  var `type`: NameList
+  var allowNoIndices: js.UndefOr[Boolean] = js.native
+  var expandWildcards: js.UndefOr[ExpandWildcards] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var index: NameList = js.native
+  var preference: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[NameList] = js.native
+  var scroll: js.UndefOr[TimeSpan] = js.native
+  var searchType: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+  var `type`: NameList = js.native
 }
 
 object SearchTemplateParams {
   @scala.inline
-  def apply(
-    index: NameList,
-    `type`: NameList,
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    expandWildcards: ExpandWildcards = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    preference: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    routing: NameList = null,
-    scroll: TimeSpan = null,
-    searchType: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch = null
-  ): SearchTemplateParams = {
+  def apply(index: NameList, `type`: NameList): SearchTemplateParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.get.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (searchType != null) __obj.updateDynamic("searchType")(searchType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTemplateParams]
   }
+  @scala.inline
+  implicit class SearchTemplateParamsOps[Self <: SearchTemplateParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexVarargs(value: String*): Self = this.set("index", js.Array(value :_*))
+    @scala.inline
+    def setIndex(value: NameList): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeVarargs(value: String*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: NameList): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowNoIndices(value: Boolean): Self = this.set("allowNoIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowNoIndices: Self = this.set("allowNoIndices", js.undefined)
+    @scala.inline
+    def setExpandWildcards(value: ExpandWildcards): Self = this.set("expandWildcards", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandWildcards: Self = this.set("expandWildcards", js.undefined)
+    @scala.inline
+    def setIgnoreUnavailable(value: Boolean): Self = this.set("ignoreUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnavailable: Self = this.set("ignoreUnavailable", js.undefined)
+    @scala.inline
+    def setPreference(value: String): Self = this.set("preference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreference: Self = this.set("preference", js.undefined)
+    @scala.inline
+    def setRoutingVarargs(value: String*): Self = this.set("routing", js.Array(value :_*))
+    @scala.inline
+    def setRouting(value: NameList): Self = this.set("routing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouting: Self = this.set("routing", js.undefined)
+    @scala.inline
+    def setScroll(value: TimeSpan): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setSearchType(value: query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch): Self = this.set("searchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchType: Self = this.set("searchType", js.undefined)
+  }
+  
 }
 

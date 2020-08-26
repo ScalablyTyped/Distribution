@@ -35,6 +35,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sdb.InteractionHandler
   * @since OOo 2.4
   */
+@js.native
 trait CopyTableWizard extends XCopyTableWizard {
   /**
     * creates an executable wizard dialog, which is to guide the user through copying a table from one database to another.
@@ -50,7 +51,7 @@ trait CopyTableWizard extends XCopyTableWizard {
     * @throws com::sun::star::sdbc::SQLException if an error occurs during obtaining the source or destination connection. Those errors are passed unchanged to
     * @throws com::sun::star::lang::WrappedTargetException if an error other than the ones mentioned above occurs while extracting the necessary information fr
     */
-  def create(Source: XPropertySet, Destination: XPropertySet): Unit
+  def create(Source: XPropertySet, Destination: XPropertySet): Unit = js.native
   /**
     * creates an executable wizard dialog, which is to guide the user through copying a table from one database to another.
     *
@@ -61,7 +62,7 @@ trait CopyTableWizard extends XCopyTableWizard {
     * @param InteractionHandler specifies an interaction handler to use when user input is required.  When specifying this parameter, you should use an implem
     * @see com.sun.star.sdb.InteractionHandler
     */
-  def createWithInteractionHandler(Source: XPropertySet, Destination: XPropertySet, InteractionHandler: XInteractionHandler): Unit
+  def createWithInteractionHandler(Source: XPropertySet, Destination: XPropertySet, InteractionHandler: XInteractionHandler): Unit = js.native
 }
 
 object CopyTableWizard {
@@ -84,5 +85,22 @@ object CopyTableWizard {
     val __obj = js.Dynamic.literal(CreatePrimaryKey = CreatePrimaryKey.asInstanceOf[js.Any], DestinationTableName = DestinationTableName.asInstanceOf[js.Any], Operation = Operation.asInstanceOf[js.Any], UseHeaderLineAsColumnNames = UseHeaderLineAsColumnNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addCopyTableListener = js.Any.fromFunction1(addCopyTableListener), create = js.Any.fromFunction2(create), createWithInteractionHandler = js.Any.fromFunction3(createWithInteractionHandler), execute = js.Any.fromFunction0(execute), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeCopyTableListener = js.Any.fromFunction1(removeCopyTableListener), setTitle = js.Any.fromFunction1(setTitle))
     __obj.asInstanceOf[CopyTableWizard]
   }
+  @scala.inline
+  implicit class CopyTableWizardOps[Self <: CopyTableWizard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate(value: (XPropertySet, XPropertySet) => Unit): Self = this.set("create", js.Any.fromFunction2(value))
+    @scala.inline
+    def setCreateWithInteractionHandler(value: (XPropertySet, XPropertySet, XInteractionHandler) => Unit): Self = this.set("createWithInteractionHandler", js.Any.fromFunction3(value))
+  }
+  
 }
 

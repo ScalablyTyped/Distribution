@@ -18,11 +18,32 @@ trait ListTargetsForPolicyResponse extends js.Object {
 
 object ListTargetsForPolicyResponse {
   @scala.inline
-  def apply(nextMarker: Marker = null, targets: PolicyTargets = null): ListTargetsForPolicyResponse = {
+  def apply(): ListTargetsForPolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextMarker != null) __obj.updateDynamic("nextMarker")(nextMarker.asInstanceOf[js.Any])
-    if (targets != null) __obj.updateDynamic("targets")(targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTargetsForPolicyResponse]
   }
+  @scala.inline
+  implicit class ListTargetsForPolicyResponseOps[Self <: ListTargetsForPolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextMarker(value: Marker): Self = this.set("nextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("nextMarker", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: PolicyTarget*): Self = this.set("targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: PolicyTargets): Self = this.set("targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("targets", js.undefined)
+  }
+  
 }
 

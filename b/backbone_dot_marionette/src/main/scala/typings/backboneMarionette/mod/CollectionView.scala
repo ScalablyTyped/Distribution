@@ -102,8 +102,12 @@ class CollectionView[TModel /* <: Model[_, ModelSetOptions] */, TView /* <: View
     */
   def filter(): Boolean = js.native
   def filter(child: TModel): Boolean = js.native
+  def filter(child: TModel, index: js.UndefOr[scala.Nothing], collection: TCollection): Boolean = js.native
   def filter(child: TModel, index: Double): Boolean = js.native
   def filter(child: TModel, index: Double, collection: TCollection): Boolean = js.native
+  def filter(child: js.UndefOr[scala.Nothing], index: js.UndefOr[scala.Nothing], collection: TCollection): Boolean = js.native
+  def filter(child: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
+  def filter(child: js.UndefOr[scala.Nothing], index: Double, collection: TCollection): Boolean = js.native
    // Mirrors Backbone.Collection.comparator
   /**
     * Override this method to determine which viewComparator to use.

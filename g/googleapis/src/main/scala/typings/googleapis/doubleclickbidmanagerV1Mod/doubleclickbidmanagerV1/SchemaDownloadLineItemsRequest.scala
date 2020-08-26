@@ -31,18 +31,40 @@ trait SchemaDownloadLineItemsRequest extends js.Object {
 
 object SchemaDownloadLineItemsRequest {
   @scala.inline
-  def apply(
-    fileSpec: String = null,
-    filterIds: js.Array[String] = null,
-    filterType: String = null,
-    format: String = null
-  ): SchemaDownloadLineItemsRequest = {
+  def apply(): SchemaDownloadLineItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (fileSpec != null) __obj.updateDynamic("fileSpec")(fileSpec.asInstanceOf[js.Any])
-    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds.asInstanceOf[js.Any])
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDownloadLineItemsRequest]
   }
+  @scala.inline
+  implicit class SchemaDownloadLineItemsRequestOps[Self <: SchemaDownloadLineItemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSpec(value: String): Self = this.set("fileSpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSpec: Self = this.set("fileSpec", js.undefined)
+    @scala.inline
+    def setFilterIdsVarargs(value: String*): Self = this.set("filterIds", js.Array(value :_*))
+    @scala.inline
+    def setFilterIds(value: js.Array[String]): Self = this.set("filterIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterIds: Self = this.set("filterIds", js.undefined)
+    @scala.inline
+    def setFilterType(value: String): Self = this.set("filterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterType: Self = this.set("filterType", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+  }
+  
 }
 

@@ -18,18 +18,40 @@ trait SchemaInappproductsListResponse extends js.Object {
 
 object SchemaInappproductsListResponse {
   @scala.inline
-  def apply(
-    inappproduct: js.Array[SchemaInAppProduct] = null,
-    kind: String = null,
-    pageInfo: SchemaPageInfo = null,
-    tokenPagination: SchemaTokenPagination = null
-  ): SchemaInappproductsListResponse = {
+  def apply(): SchemaInappproductsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (inappproduct != null) __obj.updateDynamic("inappproduct")(inappproduct.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo.asInstanceOf[js.Any])
-    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInappproductsListResponse]
   }
+  @scala.inline
+  implicit class SchemaInappproductsListResponseOps[Self <: SchemaInappproductsListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInappproductVarargs(value: SchemaInAppProduct*): Self = this.set("inappproduct", js.Array(value :_*))
+    @scala.inline
+    def setInappproduct(value: js.Array[SchemaInAppProduct]): Self = this.set("inappproduct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInappproduct: Self = this.set("inappproduct", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPageInfo(value: SchemaPageInfo): Self = this.set("pageInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageInfo: Self = this.set("pageInfo", js.undefined)
+    @scala.inline
+    def setTokenPagination(value: SchemaTokenPagination): Self = this.set("tokenPagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTokenPagination: Self = this.set("tokenPagination", js.undefined)
+  }
+  
 }
 

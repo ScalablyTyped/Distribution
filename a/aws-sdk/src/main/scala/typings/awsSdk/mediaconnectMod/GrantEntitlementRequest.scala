@@ -19,6 +19,10 @@ trait GrantEntitlementRequest extends js.Object {
     */
   var Encryption: js.UndefOr[typings.awsSdk.mediaconnectMod.Encryption] = js.native
   /**
+    * An indication of whether the new entitlement should be enabled or disabled as soon as it is created. If you don’t specify the entitlementStatus field in your request, MediaConnect sets it to ENABLED.
+    */
+  var EntitlementStatus: js.UndefOr[typings.awsSdk.mediaconnectMod.EntitlementStatus] = js.native
+  /**
     * The name of the entitlement. This value must be unique within the current flow.
     */
   var Name: js.UndefOr[string] = js.native
@@ -30,19 +34,46 @@ trait GrantEntitlementRequest extends js.Object {
 
 object GrantEntitlementRequest {
   @scala.inline
-  def apply(
-    Subscribers: listOfString,
-    DataTransferSubscriberFeePercent: js.UndefOr[integer] = js.undefined,
-    Description: string = null,
-    Encryption: Encryption = null,
-    Name: string = null
-  ): GrantEntitlementRequest = {
+  def apply(Subscribers: listOfString): GrantEntitlementRequest = {
     val __obj = js.Dynamic.literal(Subscribers = Subscribers.asInstanceOf[js.Any])
-    if (!js.isUndefined(DataTransferSubscriberFeePercent)) __obj.updateDynamic("DataTransferSubscriberFeePercent")(DataTransferSubscriberFeePercent.get.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrantEntitlementRequest]
   }
+  @scala.inline
+  implicit class GrantEntitlementRequestOps[Self <: GrantEntitlementRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubscribersVarargs(value: string*): Self = this.set("Subscribers", js.Array(value :_*))
+    @scala.inline
+    def setSubscribers(value: listOfString): Self = this.set("Subscribers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataTransferSubscriberFeePercent(value: integer): Self = this.set("DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTransferSubscriberFeePercent: Self = this.set("DataTransferSubscriberFeePercent", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setEntitlementStatus(value: EntitlementStatus): Self = this.set("EntitlementStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntitlementStatus: Self = this.set("EntitlementStatus", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

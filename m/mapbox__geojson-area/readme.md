@@ -12,7 +12,7 @@ calculate the physical area of a geojson geometry
 | Keywords           | geojson, area, geodesy |
 | # releases         | 1 |
 | # dependents       | 21 |
-| # downloads        | 7028066 |
+| # downloads        | 7282950 |
 | # stars            | 0 |
 
 ## Links

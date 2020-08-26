@@ -18,10 +18,28 @@ trait ApplicationRestoreConfiguration extends js.Object {
 
 object ApplicationRestoreConfiguration {
   @scala.inline
-  def apply(ApplicationRestoreType: ApplicationRestoreType, SnapshotName: SnapshotName = null): ApplicationRestoreConfiguration = {
+  def apply(ApplicationRestoreType: ApplicationRestoreType): ApplicationRestoreConfiguration = {
     val __obj = js.Dynamic.literal(ApplicationRestoreType = ApplicationRestoreType.asInstanceOf[js.Any])
-    if (SnapshotName != null) __obj.updateDynamic("SnapshotName")(SnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationRestoreConfiguration]
   }
+  @scala.inline
+  implicit class ApplicationRestoreConfigurationOps[Self <: ApplicationRestoreConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationRestoreType(value: ApplicationRestoreType): Self = this.set("ApplicationRestoreType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSnapshotName(value: SnapshotName): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotName: Self = this.set("SnapshotName", js.undefined)
+  }
+  
 }
 

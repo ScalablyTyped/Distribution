@@ -1,7 +1,7 @@
 
 # Scala.js typings for stat-mode
 
-Typings are for version 0.2
+Typings are for version 1.0.0
 
 ## Library description:
 Offers convenient getters and setters for the stat `mode`
@@ -24,7 +24,7 @@ Offers convenient getters and setters for the stat `mode`
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

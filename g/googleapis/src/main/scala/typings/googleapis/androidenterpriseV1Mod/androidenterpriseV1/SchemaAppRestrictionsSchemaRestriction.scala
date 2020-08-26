@@ -55,26 +55,60 @@ trait SchemaAppRestrictionsSchemaRestriction extends js.Object {
 
 object SchemaAppRestrictionsSchemaRestriction {
   @scala.inline
-  def apply(
-    defaultValue: SchemaAppRestrictionsSchemaRestrictionRestrictionValue = null,
-    description: String = null,
-    entry: js.Array[String] = null,
-    entryValue: js.Array[String] = null,
-    key: String = null,
-    nestedRestriction: js.Array[SchemaAppRestrictionsSchemaRestriction] = null,
-    restrictionType: String = null,
-    title: String = null
-  ): SchemaAppRestrictionsSchemaRestriction = {
+  def apply(): SchemaAppRestrictionsSchemaRestriction = {
     val __obj = js.Dynamic.literal()
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
-    if (entryValue != null) __obj.updateDynamic("entryValue")(entryValue.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (nestedRestriction != null) __obj.updateDynamic("nestedRestriction")(nestedRestriction.asInstanceOf[js.Any])
-    if (restrictionType != null) __obj.updateDynamic("restrictionType")(restrictionType.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppRestrictionsSchemaRestriction]
   }
+  @scala.inline
+  implicit class SchemaAppRestrictionsSchemaRestrictionOps[Self <: SchemaAppRestrictionsSchemaRestriction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: SchemaAppRestrictionsSchemaRestrictionRestrictionValue): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEntryVarargs(value: String*): Self = this.set("entry", js.Array(value :_*))
+    @scala.inline
+    def setEntry(value: js.Array[String]): Self = this.set("entry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntry: Self = this.set("entry", js.undefined)
+    @scala.inline
+    def setEntryValueVarargs(value: String*): Self = this.set("entryValue", js.Array(value :_*))
+    @scala.inline
+    def setEntryValue(value: js.Array[String]): Self = this.set("entryValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryValue: Self = this.set("entryValue", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setNestedRestrictionVarargs(value: SchemaAppRestrictionsSchemaRestriction*): Self = this.set("nestedRestriction", js.Array(value :_*))
+    @scala.inline
+    def setNestedRestriction(value: js.Array[SchemaAppRestrictionsSchemaRestriction]): Self = this.set("nestedRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNestedRestriction: Self = this.set("nestedRestriction", js.undefined)
+    @scala.inline
+    def setRestrictionType(value: String): Self = this.set("restrictionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestrictionType: Self = this.set("restrictionType", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

@@ -58,26 +58,60 @@ trait SchemaGoogleCloudDialogflowV2beta1QueryParameters extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1QueryParameters {
   @scala.inline
-  def apply(
-    contexts: js.Array[SchemaGoogleCloudDialogflowV2beta1Context] = null,
-    geoLocation: SchemaGoogleTypeLatLng = null,
-    knowledgeBaseNames: js.Array[String] = null,
-    payload: StringDictionary[js.Any] = null,
-    resetContexts: js.UndefOr[Boolean] = js.undefined,
-    sentimentAnalysisRequestConfig: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig = null,
-    sessionEntityTypes: js.Array[SchemaGoogleCloudDialogflowV2beta1SessionEntityType] = null,
-    timeZone: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1QueryParameters = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1QueryParameters = {
     val __obj = js.Dynamic.literal()
-    if (contexts != null) __obj.updateDynamic("contexts")(contexts.asInstanceOf[js.Any])
-    if (geoLocation != null) __obj.updateDynamic("geoLocation")(geoLocation.asInstanceOf[js.Any])
-    if (knowledgeBaseNames != null) __obj.updateDynamic("knowledgeBaseNames")(knowledgeBaseNames.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetContexts)) __obj.updateDynamic("resetContexts")(resetContexts.get.asInstanceOf[js.Any])
-    if (sentimentAnalysisRequestConfig != null) __obj.updateDynamic("sentimentAnalysisRequestConfig")(sentimentAnalysisRequestConfig.asInstanceOf[js.Any])
-    if (sessionEntityTypes != null) __obj.updateDynamic("sessionEntityTypes")(sessionEntityTypes.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1QueryParameters]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1QueryParametersOps[Self <: SchemaGoogleCloudDialogflowV2beta1QueryParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContextsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Context*): Self = this.set("contexts", js.Array(value :_*))
+    @scala.inline
+    def setContexts(value: js.Array[SchemaGoogleCloudDialogflowV2beta1Context]): Self = this.set("contexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContexts: Self = this.set("contexts", js.undefined)
+    @scala.inline
+    def setGeoLocation(value: SchemaGoogleTypeLatLng): Self = this.set("geoLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoLocation: Self = this.set("geoLocation", js.undefined)
+    @scala.inline
+    def setKnowledgeBaseNamesVarargs(value: String*): Self = this.set("knowledgeBaseNames", js.Array(value :_*))
+    @scala.inline
+    def setKnowledgeBaseNames(value: js.Array[String]): Self = this.set("knowledgeBaseNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKnowledgeBaseNames: Self = this.set("knowledgeBaseNames", js.undefined)
+    @scala.inline
+    def setPayload(value: StringDictionary[js.Any]): Self = this.set("payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("payload", js.undefined)
+    @scala.inline
+    def setResetContexts(value: Boolean): Self = this.set("resetContexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetContexts: Self = this.set("resetContexts", js.undefined)
+    @scala.inline
+    def setSentimentAnalysisRequestConfig(value: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisRequestConfig): Self = this.set("sentimentAnalysisRequestConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentimentAnalysisRequestConfig: Self = this.set("sentimentAnalysisRequestConfig", js.undefined)
+    @scala.inline
+    def setSessionEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1SessionEntityType*): Self = this.set("sessionEntityTypes", js.Array(value :_*))
+    @scala.inline
+    def setSessionEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1SessionEntityType]): Self = this.set("sessionEntityTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionEntityTypes: Self = this.set("sessionEntityTypes", js.undefined)
+    @scala.inline
+    def setTimeZone(value: String): Self = this.set("timeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("timeZone", js.undefined)
+  }
+  
 }
 

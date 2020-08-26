@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "split.js" : "1.6.1"
+      "split.js" : "1.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "split.js" : "1.6.1"
+      "split.js" : "1.6.2"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ Orchestrating complex page layout animations with a flick of the wrist.
 | Keywords           | conductor, conductor-animate, react-transition-group, spring, animate, animations, react |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 700 |
+| # downloads        | 733 |
 | # stars            | 0 |
 
 ## Links

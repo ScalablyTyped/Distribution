@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ParserOptions extends js.Object {
-  var keepHistory: js.UndefOr[Boolean] = js.undefined
-  var lexer: js.UndefOr[Lexer] = js.undefined
+  var keepHistory: js.UndefOr[Boolean] = js.native
+  var lexer: js.UndefOr[Lexer] = js.native
 }
 
 object ParserOptions {
   @scala.inline
-  def apply(keepHistory: js.UndefOr[Boolean] = js.undefined, lexer: Lexer = null): ParserOptions = {
+  def apply(): ParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepHistory)) __obj.updateDynamic("keepHistory")(keepHistory.get.asInstanceOf[js.Any])
-    if (lexer != null) __obj.updateDynamic("lexer")(lexer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParserOptions]
   }
+  @scala.inline
+  implicit class ParserOptionsOps[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeepHistory(value: Boolean): Self = this.set("keepHistory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepHistory: Self = this.set("keepHistory", js.undefined)
+    @scala.inline
+    def setLexer(value: Lexer): Self = this.set("lexer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLexer: Self = this.set("lexer", js.undefined)
+  }
+  
 }
 

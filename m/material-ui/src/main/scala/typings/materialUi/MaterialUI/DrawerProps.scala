@@ -5,57 +5,98 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawerProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var containerClassName: js.UndefOr[String] = js.undefined
-  var containerStyle: js.UndefOr[CSSProperties] = js.undefined
-  var disableSwipeToOpen: js.UndefOr[Boolean] = js.undefined
-  var docked: js.UndefOr[Boolean] = js.undefined
-  var onRequestChange: js.UndefOr[js.Function2[/* opening */ Boolean, /* reason */ String, Unit]] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var openSecondary: js.UndefOr[Boolean] = js.undefined
-  var overlayClassName: js.UndefOr[String] = js.undefined
-  var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var swipeAreaWidth: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
-  var zDepth: js.UndefOr[Double] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var containerClassName: js.UndefOr[String] = js.native
+  var containerStyle: js.UndefOr[CSSProperties] = js.native
+  var disableSwipeToOpen: js.UndefOr[Boolean] = js.native
+  var docked: js.UndefOr[Boolean] = js.native
+  var onRequestChange: js.UndefOr[js.Function2[/* opening */ Boolean, /* reason */ String, Unit]] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var openSecondary: js.UndefOr[Boolean] = js.native
+  var overlayClassName: js.UndefOr[String] = js.native
+  var overlayStyle: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var swipeAreaWidth: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double | String] = js.native
+  var zDepth: js.UndefOr[Double] = js.native
 }
 
 object DrawerProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    containerClassName: String = null,
-    containerStyle: CSSProperties = null,
-    disableSwipeToOpen: js.UndefOr[Boolean] = js.undefined,
-    docked: js.UndefOr[Boolean] = js.undefined,
-    onRequestChange: (/* opening */ Boolean, /* reason */ String) => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    openSecondary: js.UndefOr[Boolean] = js.undefined,
-    overlayClassName: String = null,
-    overlayStyle: CSSProperties = null,
-    style: CSSProperties = null,
-    swipeAreaWidth: js.UndefOr[Double] = js.undefined,
-    width: Double | String = null,
-    zDepth: js.UndefOr[Double] = js.undefined
-  ): DrawerProps = {
+  def apply(): DrawerProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableSwipeToOpen)) __obj.updateDynamic("disableSwipeToOpen")(disableSwipeToOpen.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked.get.asInstanceOf[js.Any])
-    if (onRequestChange != null) __obj.updateDynamic("onRequestChange")(js.Any.fromFunction2(onRequestChange))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(openSecondary)) __obj.updateDynamic("openSecondary")(openSecondary.get.asInstanceOf[js.Any])
-    if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipeAreaWidth)) __obj.updateDynamic("swipeAreaWidth")(swipeAreaWidth.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(zDepth)) __obj.updateDynamic("zDepth")(zDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]
   }
+  @scala.inline
+  implicit class DrawerPropsOps[Self <: DrawerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContainerClassName(value: String): Self = this.set("containerClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerClassName: Self = this.set("containerClassName", js.undefined)
+    @scala.inline
+    def setContainerStyle(value: CSSProperties): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setDisableSwipeToOpen(value: Boolean): Self = this.set("disableSwipeToOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableSwipeToOpen: Self = this.set("disableSwipeToOpen", js.undefined)
+    @scala.inline
+    def setDocked(value: Boolean): Self = this.set("docked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocked: Self = this.set("docked", js.undefined)
+    @scala.inline
+    def setOnRequestChange(value: (/* opening */ Boolean, /* reason */ String) => Unit): Self = this.set("onRequestChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRequestChange: Self = this.set("onRequestChange", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setOpenSecondary(value: Boolean): Self = this.set("openSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenSecondary: Self = this.set("openSecondary", js.undefined)
+    @scala.inline
+    def setOverlayClassName(value: String): Self = this.set("overlayClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayClassName: Self = this.set("overlayClassName", js.undefined)
+    @scala.inline
+    def setOverlayStyle(value: CSSProperties): Self = this.set("overlayStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlayStyle: Self = this.set("overlayStyle", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSwipeAreaWidth(value: Double): Self = this.set("swipeAreaWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwipeAreaWidth: Self = this.set("swipeAreaWidth", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setZDepth(value: Double): Self = this.set("zDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZDepth: Self = this.set("zDepth", js.undefined)
+  }
+  
 }
 

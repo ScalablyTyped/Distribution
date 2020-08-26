@@ -28,6 +28,7 @@ class ResourceProjectsLocationsOperations protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(params: ParamsResourceProjectsLocationsOperationsCancel): GaxiosPromise[SchemaEmpty] = js.native
   def cancel(
     params: ParamsResourceProjectsLocationsOperationsCancel,
@@ -61,6 +62,7 @@ class ResourceProjectsLocationsOperations protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceProjectsLocationsOperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(
     params: ParamsResourceProjectsLocationsOperationsGet,
@@ -93,6 +95,7 @@ class ResourceProjectsLocationsOperations protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListOperationsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsOperationsList): GaxiosPromise[SchemaListOperationsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsOperationsList,

@@ -10,9 +10,9 @@ Isomorphic, load-anywhere function to sort an array by scalar, deep or computed 
 | ------------------ | :-------------: |
 | Full name          | sort-array |
 | Keywords           | sort, by, array, recordset, objects, sorted, asc, desc |
-| # releases         | 11 |
+| # releases         | 14 |
 | # dependents       | 7 |
-| # downloads        | 1469172 |
+| # downloads        | 1498996 |
 | # stars            | 3 |
 
 ## Links

@@ -145,6 +145,7 @@ object mod extends js.Object {
   def abs[T](x: NjParam[T]): NdArray[T] = js.native
   def add[T](a: NjParam[T], b: NjParam[T]): NdArray[T] = js.native
   def arange[T](start: Double): NdArray[T] = js.native
+  def arange[T](start: Double, stop: js.UndefOr[scala.Nothing], dtype: NdType[T]): NdArray[T] = js.native
   def arange[T](start: Double, stop: Double): NdArray[T] = js.native
   def arange[T](start: Double, stop: Double, dtype: NdType[T]): NdArray[T] = js.native
   def arange[T](start: Double, stop: Double, step: Double): NdArray[T] = js.native
@@ -157,6 +158,7 @@ object mod extends js.Object {
   def array[T](arr: NjArray[T], dtype: DataType): NdArray[T] = js.native
   def broadcast[T, U](shape1: js.Array[T], shape2: js.Array[U]): js.Array[T | U] = js.native
   def clip[T](x: NjParam[T]): NdArray[T] = js.native
+  def clip[T](x: NjParam[T], min: js.UndefOr[scala.Nothing], max: Double): NdArray[T] = js.native
   def clip[T](x: NjParam[T], min: Double): NdArray[T] = js.native
   def clip[T](x: NjParam[T], min: Double, max: Double): NdArray[T] = js.native
   def concatenate[T](arrays: NjArray[T]*): NdArray[T] = js.native

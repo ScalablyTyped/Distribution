@@ -46,40 +46,54 @@ trait ParamsResourceTimelineList extends StandardParameters {
 
 object ParamsResourceTimelineList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    bundleId: String = null,
-    fields: String = null,
-    includeDeleted: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    orderBy: String = null,
-    pageToken: String = null,
-    pinnedOnly: js.UndefOr[Boolean] = js.undefined,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    sourceItemId: String = null,
-    userIp: String = null
-  ): ParamsResourceTimelineList = {
+  def apply(): ParamsResourceTimelineList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinnedOnly)) __obj.updateDynamic("pinnedOnly")(pinnedOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (sourceItemId != null) __obj.updateDynamic("sourceItemId")(sourceItemId.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceTimelineList]
   }
+  @scala.inline
+  implicit class ParamsResourceTimelineListOps[Self <: ParamsResourceTimelineList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setBundleId(value: String): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setIncludeDeleted(value: Boolean): Self = this.set("includeDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDeleted: Self = this.set("includeDeleted", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPageToken(value: String): Self = this.set("pageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageToken: Self = this.set("pageToken", js.undefined)
+    @scala.inline
+    def setPinnedOnly(value: Boolean): Self = this.set("pinnedOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinnedOnly: Self = this.set("pinnedOnly", js.undefined)
+    @scala.inline
+    def setSourceItemId(value: String): Self = this.set("sourceItemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceItemId: Self = this.set("sourceItemId", js.undefined)
+  }
+  
 }
 

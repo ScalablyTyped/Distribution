@@ -22,15 +22,34 @@ trait ModifyInstanceCreditSpecificationRequest extends js.Object {
 
 object ModifyInstanceCreditSpecificationRequest {
   @scala.inline
-  def apply(
-    InstanceCreditSpecifications: InstanceCreditSpecificationListRequest,
-    ClientToken: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined
-  ): ModifyInstanceCreditSpecificationRequest = {
+  def apply(InstanceCreditSpecifications: InstanceCreditSpecificationListRequest): ModifyInstanceCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal(InstanceCreditSpecifications = InstanceCreditSpecifications.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceCreditSpecificationRequest]
   }
+  @scala.inline
+  implicit class ModifyInstanceCreditSpecificationRequestOps[Self <: ModifyInstanceCreditSpecificationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecificationRequest*): Self = this.set("InstanceCreditSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setInstanceCreditSpecifications(value: InstanceCreditSpecificationListRequest): Self = this.set("InstanceCreditSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+  }
+  
 }
 

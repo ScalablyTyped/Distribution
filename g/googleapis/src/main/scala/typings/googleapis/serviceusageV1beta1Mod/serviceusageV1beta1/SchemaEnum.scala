@@ -33,20 +33,46 @@ trait SchemaEnum extends js.Object {
 
 object SchemaEnum {
   @scala.inline
-  def apply(
-    enumvalue: js.Array[SchemaEnumValue] = null,
-    name: String = null,
-    options: js.Array[SchemaOption] = null,
-    sourceContext: SchemaSourceContext = null,
-    syntax: String = null
-  ): SchemaEnum = {
+  def apply(): SchemaEnum = {
     val __obj = js.Dynamic.literal()
-    if (enumvalue != null) __obj.updateDynamic("enumvalue")(enumvalue.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEnum]
   }
+  @scala.inline
+  implicit class SchemaEnumOps[Self <: SchemaEnum] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnumvalueVarargs(value: SchemaEnumValue*): Self = this.set("enumvalue", js.Array(value :_*))
+    @scala.inline
+    def setEnumvalue(value: js.Array[SchemaEnumValue]): Self = this.set("enumvalue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnumvalue: Self = this.set("enumvalue", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: SchemaOption*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[SchemaOption]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSourceContext(value: SchemaSourceContext): Self = this.set("sourceContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceContext: Self = this.set("sourceContext", js.undefined)
+    @scala.inline
+    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyntax: Self = this.set("syntax", js.undefined)
+  }
+  
 }
 

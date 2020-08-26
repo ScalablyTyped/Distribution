@@ -78,44 +78,102 @@ trait VpcEndpoint extends js.Object {
 
 object VpcEndpoint {
   @scala.inline
-  def apply(
-    CreationTimestamp: MillisecondDateTime = null,
-    DnsEntries: DnsEntrySet = null,
-    Groups: GroupIdentifierSet = null,
-    LastError: LastError = null,
-    NetworkInterfaceIds: ValueStringList = null,
-    OwnerId: String = null,
-    PolicyDocument: String = null,
-    PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined,
-    RequesterManaged: js.UndefOr[Boolean] = js.undefined,
-    RouteTableIds: ValueStringList = null,
-    ServiceName: String = null,
-    State: State = null,
-    SubnetIds: ValueStringList = null,
-    Tags: TagList = null,
-    VpcEndpointId: String = null,
-    VpcEndpointType: VpcEndpointType = null,
-    VpcId: String = null
-  ): VpcEndpoint = {
+  def apply(): VpcEndpoint = {
     val __obj = js.Dynamic.literal()
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (DnsEntries != null) __obj.updateDynamic("DnsEntries")(DnsEntries.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (LastError != null) __obj.updateDynamic("LastError")(LastError.asInstanceOf[js.Any])
-    if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (PolicyDocument != null) __obj.updateDynamic("PolicyDocument")(PolicyDocument.asInstanceOf[js.Any])
-    if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged.get.asInstanceOf[js.Any])
-    if (RouteTableIds != null) __obj.updateDynamic("RouteTableIds")(RouteTableIds.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId.asInstanceOf[js.Any])
-    if (VpcEndpointType != null) __obj.updateDynamic("VpcEndpointType")(VpcEndpointType.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcEndpoint]
   }
+  @scala.inline
+  implicit class VpcEndpointOps[Self <: VpcEndpoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimestamp(value: MillisecondDateTime): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setDnsEntriesVarargs(value: DnsEntry*): Self = this.set("DnsEntries", js.Array(value :_*))
+    @scala.inline
+    def setDnsEntries(value: DnsEntrySet): Self = this.set("DnsEntries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsEntries: Self = this.set("DnsEntries", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: SecurityGroupIdentifier*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: GroupIdentifierSet): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setLastError(value: LastError): Self = this.set("LastError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastError: Self = this.set("LastError", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceIdsVarargs(value: String*): Self = this.set("NetworkInterfaceIds", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaceIds(value: ValueStringList): Self = this.set("NetworkInterfaceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceIds: Self = this.set("NetworkInterfaceIds", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setPolicyDocument(value: String): Self = this.set("PolicyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyDocument: Self = this.set("PolicyDocument", js.undefined)
+    @scala.inline
+    def setPrivateDnsEnabled(value: Boolean): Self = this.set("PrivateDnsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsEnabled: Self = this.set("PrivateDnsEnabled", js.undefined)
+    @scala.inline
+    def setRequesterManaged(value: Boolean): Self = this.set("RequesterManaged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterManaged: Self = this.set("RequesterManaged", js.undefined)
+    @scala.inline
+    def setRouteTableIdsVarargs(value: String*): Self = this.set("RouteTableIds", js.Array(value :_*))
+    @scala.inline
+    def setRouteTableIds(value: ValueStringList): Self = this.set("RouteTableIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteTableIds: Self = this.set("RouteTableIds", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    @scala.inline
+    def setState(value: State): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: String*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: ValueStringList): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcEndpointId(value: String): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+    @scala.inline
+    def setVpcEndpointType(value: VpcEndpointType): Self = this.set("VpcEndpointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointType: Self = this.set("VpcEndpointType", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

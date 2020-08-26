@@ -13,45 +13,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavbarItemContainerModifierProps extends js.Object {
-  var active: js.UndefOr[Boolean] = js.undefined
-  var as: js.UndefOr[ReactType[_]] = js.undefined
-  var dropdown: js.UndefOr[Boolean] = js.undefined
-  var expanded: js.UndefOr[Boolean] = js.undefined
-  var hoverable: js.UndefOr[Boolean] = js.undefined
-  var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.undefined
-  var managed: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
-  var tab: js.UndefOr[Boolean] = js.undefined
-  var up: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
+  var as: js.UndefOr[ReactType[_]] = js.native
+  var dropdown: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.native
+  var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.native
+  var managed: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var tab: js.UndefOr[Boolean] = js.native
+  var up: js.UndefOr[Boolean] = js.native
 }
 
 object NavbarItemContainerModifierProps {
   @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    as: ReactType[_] = null,
-    dropdown: js.UndefOr[Boolean] = js.undefined,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    innerRef: js.UndefOr[Null | (Ref[HTMLElement | SVGElement | ComponentType[js.Object]])] = js.undefined,
-    managed: js.UndefOr[Boolean] = js.undefined,
-    onClick: MouseEvent[Element, NativeMouseEvent] => Unit = null,
-    tab: js.UndefOr[Boolean] = js.undefined,
-    up: js.UndefOr[Boolean] = js.undefined
-  ): NavbarItemContainerModifierProps = {
+  def apply(): NavbarItemContainerModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropdown)) __obj.updateDynamic("dropdown")(dropdown.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(managed)) __obj.updateDynamic("managed")(managed.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (!js.isUndefined(tab)) __obj.updateDynamic("tab")(tab.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(up)) __obj.updateDynamic("up")(up.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavbarItemContainerModifierProps]
   }
+  @scala.inline
+  implicit class NavbarItemContainerModifierPropsOps[Self <: NavbarItemContainerModifierProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAs(value: ReactType[_]): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setDropdown(value: Boolean): Self = this.set("dropdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdown: Self = this.set("dropdown", js.undefined)
+    @scala.inline
+    def setExpanded(value: Boolean): Self = this.set("expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpanded: Self = this.set("expanded", js.undefined)
+    @scala.inline
+    def setHoverable(value: Boolean): Self = this.set("hoverable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverable: Self = this.set("hoverable", js.undefined)
+    @scala.inline
+    def setInnerRefFunction1(value: /* instance */ (HTMLElement | SVGElement | ComponentType[js.Object]) | Null => Unit): Self = this.set("innerRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInnerRef(value: Ref[HTMLElement | SVGElement | ComponentType[js.Object]]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerRef: Self = this.set("innerRef", js.undefined)
+    @scala.inline
+    def setInnerRefNull: Self = this.set("innerRef", null)
+    @scala.inline
+    def setManaged(value: Boolean): Self = this.set("managed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManaged: Self = this.set("managed", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setTab(value: Boolean): Self = this.set("tab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTab: Self = this.set("tab", js.undefined)
+    @scala.inline
+    def setUp(value: Boolean): Self = this.set("up", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUp: Self = this.set("up", js.undefined)
+  }
+  
 }
 

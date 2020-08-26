@@ -53,22 +53,46 @@ trait SchemaBrowser extends js.Object {
 
 object SchemaBrowser {
   @scala.inline
-  def apply(
-    browserVersionId: String = null,
-    dartId: String = null,
-    kind: String = null,
-    majorVersion: String = null,
-    minorVersion: String = null,
-    name: String = null
-  ): SchemaBrowser = {
+  def apply(): SchemaBrowser = {
     val __obj = js.Dynamic.literal()
-    if (browserVersionId != null) __obj.updateDynamic("browserVersionId")(browserVersionId.asInstanceOf[js.Any])
-    if (dartId != null) __obj.updateDynamic("dartId")(dartId.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (majorVersion != null) __obj.updateDynamic("majorVersion")(majorVersion.asInstanceOf[js.Any])
-    if (minorVersion != null) __obj.updateDynamic("minorVersion")(minorVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBrowser]
   }
+  @scala.inline
+  implicit class SchemaBrowserOps[Self <: SchemaBrowser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrowserVersionId(value: String): Self = this.set("browserVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrowserVersionId: Self = this.set("browserVersionId", js.undefined)
+    @scala.inline
+    def setDartId(value: String): Self = this.set("dartId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDartId: Self = this.set("dartId", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMajorVersion(value: String): Self = this.set("majorVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorVersion: Self = this.set("majorVersion", js.undefined)
+    @scala.inline
+    def setMinorVersion(value: String): Self = this.set("minorVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorVersion: Self = this.set("minorVersion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

@@ -4,24 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Sentence extends js.Object {
   /**
     * For calls to AnalyzeSentiment or if
     * AnnotateTextRequest.Features.extract_document_sentiment is set to
     * true, this field will contain the sentiment for the sentence.
     */
-  var sentiment: js.UndefOr[Sentiment] = js.undefined
+  var sentiment: js.UndefOr[Sentiment] = js.native
   /** The sentence text. */
-  var text: js.UndefOr[TextSpan] = js.undefined
+  var text: js.UndefOr[TextSpan] = js.native
 }
 
 object Sentence {
   @scala.inline
-  def apply(sentiment: Sentiment = null, text: TextSpan = null): Sentence = {
+  def apply(): Sentence = {
     val __obj = js.Dynamic.literal()
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sentence]
   }
+  @scala.inline
+  implicit class SentenceOps[Self <: Sentence] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSentiment(value: Sentiment): Self = this.set("sentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    @scala.inline
+    def setText(value: TextSpan): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

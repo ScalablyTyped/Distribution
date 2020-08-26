@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "_ParseAST")
 @js.native
 class ParseAST protected ()
-  extends typings.angularCompiler.publicApiMod.ParseAST {
+  extends typings.angularCompiler.compilerMod.ParseAST {
   def this(
     input: String,
     location: js.Any,

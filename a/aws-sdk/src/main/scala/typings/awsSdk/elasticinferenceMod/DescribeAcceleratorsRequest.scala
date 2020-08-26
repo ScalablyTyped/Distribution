@@ -26,18 +26,42 @@ trait DescribeAcceleratorsRequest extends js.Object {
 
 object DescribeAcceleratorsRequest {
   @scala.inline
-  def apply(
-    acceleratorIds: AcceleratorIdList = null,
-    filters: FilterList = null,
-    maxResults: js.UndefOr[MaxResults] = js.undefined,
-    nextToken: NextToken = null
-  ): DescribeAcceleratorsRequest = {
+  def apply(): DescribeAcceleratorsRequest = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorIds != null) __obj.updateDynamic("acceleratorIds")(acceleratorIds.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAcceleratorsRequest]
   }
+  @scala.inline
+  implicit class DescribeAcceleratorsRequestOps[Self <: DescribeAcceleratorsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorIdsVarargs(value: AcceleratorId*): Self = this.set("acceleratorIds", js.Array(value :_*))
+    @scala.inline
+    def setAcceleratorIds(value: AcceleratorIdList): Self = this.set("acceleratorIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorIds: Self = this.set("acceleratorIds", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

@@ -2,14 +2,13 @@ package typings.stylelintWebpackPlugin.lintDirtyModulesPluginMod
 
 import typings.std.Map
 import typings.stylelintWebpackPlugin.linterMod.LinterResult
-import typings.webpack.mod.Compiler_
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
 trait LintDirtyModulesPlugin extends js.Object {
-  var compiler: Compiler_ = js.native
+  var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any = js.native
   var isFirstRun: Boolean = js.native
   @JSName("lint")
   var lint_Original: typings.stylelintWebpackPlugin.linterMod.Lint = js.native

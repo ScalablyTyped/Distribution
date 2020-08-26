@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TApplicationException () extends TException {
   def this(`type`: TApplicationExceptionType) = this()
+  def this(`type`: js.UndefOr[scala.Nothing], message: String) = this()
   def this(`type`: TApplicationExceptionType, message: String) = this()
   var code: Double = js.native
   def getCode(): Double = js.native

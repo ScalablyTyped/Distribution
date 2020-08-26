@@ -36,6 +36,7 @@ class ResourcePeopleConnections protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListConnectionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListConnectionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListConnectionsResponse] = js.native
   def list(params: ParamsResourcePeopleConnectionsList): GaxiosPromise[SchemaListConnectionsResponse] = js.native
   def list(
     params: ParamsResourcePeopleConnectionsList,

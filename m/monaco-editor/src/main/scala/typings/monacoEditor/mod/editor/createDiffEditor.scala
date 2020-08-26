@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createDiffEditor extends js.Object {
   def apply(domElement: HTMLElement): IStandaloneDiffEditor = js.native
+  def apply(domElement: HTMLElement, options: js.UndefOr[scala.Nothing], `override`: IEditorOverrideServices): IStandaloneDiffEditor = js.native
   def apply(domElement: HTMLElement, options: IDiffEditorConstructionOptions): IStandaloneDiffEditor = js.native
   def apply(
     domElement: HTMLElement,

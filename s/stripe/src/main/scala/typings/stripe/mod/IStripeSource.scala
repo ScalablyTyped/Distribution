@@ -1,14 +1,7 @@
 package typings.stripe.mod
 
-import typings.stripe.anon.Amountcharged
-import typings.stripe.anon.Attemptsremaining
-import typings.stripe.anon.Bankname
-import typings.stripe.anon.Failurereason
 import typings.stripe.anon.Phone
-import typings.stripe.mod.accounts.IAccount
 import typings.stripe.mod.bitcoinReceivers.IBitcoinTransaction
-import typings.stripe.mod.customers.ICustomer
-import typings.stripe.mod.recipients.IRecipient
 import typings.stripe.stripeStrings.Discover
 import typings.stripe.stripeStrings.JCB
 import typings.stripe.stripeStrings.MasterCard
@@ -20,8 +13,6 @@ import typings.stripe.stripeStrings.`new`
 import typings.stripe.stripeStrings.ach_credit_transfer
 import typings.stripe.stripeStrings.ach_debit
 import typings.stripe.stripeStrings.alipay
-import typings.stripe.stripeStrings.android_pay
-import typings.stripe.stripeStrings.apple_pay
 import typings.stripe.stripeStrings.bancontact
 import typings.stripe.stripeStrings.bank_account
 import typings.stripe.stripeStrings.bitcoin_receiver
@@ -30,7 +21,6 @@ import typings.stripe.stripeStrings.card
 import typings.stripe.stripeStrings.card_present
 import typings.stripe.stripeStrings.chargeable
 import typings.stripe.stripeStrings.code_verification
-import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.consumed
 import typings.stripe.stripeStrings.credit
 import typings.stripe.stripeStrings.debit
@@ -40,7 +30,6 @@ import typings.stripe.stripeStrings.fail
 import typings.stripe.stripeStrings.failed
 import typings.stripe.stripeStrings.giropay
 import typings.stripe.stripeStrings.ideal
-import typings.stripe.stripeStrings.individual
 import typings.stripe.stripeStrings.multibanco
 import typings.stripe.stripeStrings.none
 import typings.stripe.stripeStrings.p24
@@ -87,35 +76,10 @@ object IStripeSource {
     funding: credit | debit | prepaid | unknown_,
     id: String,
     last4: String,
-    `object`: card,
-    account: String | IAccount = null,
-    address_city: String = null,
-    address_country: String = null,
-    address_line1: String = null,
-    address_line1_check: pass | fail | unavailable | unchecked = null,
-    address_line2: String = null,
-    address_state: String = null,
-    address_zip: String = null,
-    address_zip_check: pass | fail | unavailable | unchecked = null,
-    currency: String = null,
-    customer: js.UndefOr[Null | String | ICustomer] = js.undefined,
-    default_for_currency: js.UndefOr[Boolean] = js.undefined,
-    dynamic_last4: String = null,
-    metadata: IMetadata = null,
-    name: String = null,
-    number: String = null,
-    recipient: String | IRecipient = null,
-    tokenization_method: apple_pay | android_pay = null
+    `object`: card
   ): IStripeSource = {
-    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], address_city = address_city.asInstanceOf[js.Any], address_country = address_country.asInstanceOf[js.Any], address_line1 = address_line1.asInstanceOf[js.Any], address_line1_check = address_line1_check.asInstanceOf[js.Any], address_line2 = address_line2.asInstanceOf[js.Any], address_state = address_state.asInstanceOf[js.Any], address_zip = address_zip.asInstanceOf[js.Any], address_zip_check = address_zip_check.asInstanceOf[js.Any], dynamic_last4 = dynamic_last4.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tokenization_method = tokenization_method.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(customer)) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (recipient != null) __obj.updateDynamic("recipient")(recipient.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeSource]
   }
   @scala.inline
@@ -158,18 +122,10 @@ object IStripeSource {
     metadata: IMetadata,
     `object`: bank_account,
     routing_number: String,
-    status: `new` | validated | verified | verification_failed | errored,
-    account: String = null,
-    account_holder_name: String = null,
-    account_holder_type: individual | company = null,
-    customer: String = null,
-    default_for_currency: js.UndefOr[Boolean] = js.undefined
+    status: `new` | validated | verified | verification_failed | errored
   ): IStripeSource = {
-    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], account_holder_name = account_holder_name.asInstanceOf[js.Any], account_holder_type = account_holder_type.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (!js.isUndefined(default_for_currency)) __obj.updateDynamic("default_for_currency")(default_for_currency.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeSource]
   }
   @scala.inline
@@ -184,29 +140,11 @@ object IStripeSource {
     owner: Phone,
     status: canceled | chargeable | consumed | failed | pending,
     `type`: ach_credit_transfer | ach_debit | alipay | bancontact | card | card_present | eps | giropay | ideal | multibanco | p24 | sepa_debit | sofort | three_d_secure | wechat,
-    usage: reusable | single_use,
-    ach_credit_transfer: Bankname = null,
-    amount: js.UndefOr[Null | Double] = js.undefined,
-    card: ICardHashInfo = null,
-    code_verification: Attemptsremaining = null,
-    currency: String = null,
-    customer: String = null,
-    receiver: Amountcharged = null,
-    redirect: Failurereason = null,
-    statement_descriptor: js.UndefOr[Null | String] = js.undefined
+    usage: reusable | single_use
   ): IStripeSource = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (ach_credit_transfer != null) __obj.updateDynamic("ach_credit_transfer")(ach_credit_transfer.asInstanceOf[js.Any])
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (code_verification != null) __obj.updateDynamic("code_verification")(code_verification.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (receiver != null) __obj.updateDynamic("receiver")(receiver.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (!js.isUndefined(statement_descriptor)) __obj.updateDynamic("statement_descriptor")(statement_descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStripeSource]
   }
 }

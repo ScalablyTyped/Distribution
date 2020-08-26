@@ -12,7 +12,7 @@ Returns true if the value is an object and not an array or null.
 | Keywords           | check, is, is-object, isobject, kind, kind-of, kindof, native, object, type, typeof, value |
 | # releases         | 2 |
 | # dependents       | 367 |
-| # downloads        | 994679374 |
+| # downloads        | 1024977024 |
 | # stars            | 3 |
 
 ## Links

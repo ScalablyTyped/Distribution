@@ -39,12 +39,36 @@ trait SchemaCreateTableRequest extends js.Object {
 
 object SchemaCreateTableRequest {
   @scala.inline
-  def apply(initialSplits: js.Array[SchemaSplit] = null, table: SchemaTable = null, tableId: String = null): SchemaCreateTableRequest = {
+  def apply(): SchemaCreateTableRequest = {
     val __obj = js.Dynamic.literal()
-    if (initialSplits != null) __obj.updateDynamic("initialSplits")(initialSplits.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (tableId != null) __obj.updateDynamic("tableId")(tableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateTableRequest]
   }
+  @scala.inline
+  implicit class SchemaCreateTableRequestOps[Self <: SchemaCreateTableRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInitialSplitsVarargs(value: SchemaSplit*): Self = this.set("initialSplits", js.Array(value :_*))
+    @scala.inline
+    def setInitialSplits(value: js.Array[SchemaSplit]): Self = this.set("initialSplits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialSplits: Self = this.set("initialSplits", js.undefined)
+    @scala.inline
+    def setTable(value: SchemaTable): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTableId(value: String): Self = this.set("tableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableId: Self = this.set("tableId", js.undefined)
+  }
+  
 }
 

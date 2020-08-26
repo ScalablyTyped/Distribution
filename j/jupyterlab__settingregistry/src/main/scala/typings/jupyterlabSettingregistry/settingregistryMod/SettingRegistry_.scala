@@ -1,16 +1,9 @@
 package typings.jupyterlabSettingregistry.settingregistryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.jupyterlabSettingregistry.anon.Composite
-import typings.jupyterlabSettingregistry.anon.phaseinPhaseTransform
 import typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISchema
-import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
-import typings.jupyterlabStatedb.interfacesMod.IDataConnector
-import typings.luminoCoreutils.jsonMod.PartialJSONValue
-import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -48,126 +41,14 @@ class SettingRegistry_ protected () extends ISettingRegistry {
     */
   var _validate: js.Any = js.native
   /**
-    * The data connector used by the setting registry.
-    */
-  /* CompleteClass */
-  override val connector: IDataConnector[IPlugin, String, String, String] = js.native
-  /**
-    * A signal that emits the name of a plugin when its settings change.
-    */
-  /* CompleteClass */
-  override val pluginChanged: ISignal[this.type, String] = js.native
-  /**
-    * The collection of setting registry plugins.
-    */
-  /* CompleteClass */
-  override val plugins: StringDictionary[js.UndefOr[IPlugin]] = js.native
-  /**
     * The collection of setting registry plugins.
     */
   @JSName("plugins")
   val plugins_SettingRegistry_ : StringDictionary[IPlugin] = js.native
   /**
-    * The schema of the setting registry.
-    */
-  /* CompleteClass */
-  override val schema: ISchema = js.native
-  /**
-    * The schema validator used by the setting registry.
-    */
-  /* CompleteClass */
-  override val validator: ISchemaValidator = js.native
-  /**
-    * Get an individual setting.
-    *
-    * @param plugin - The name of the plugin whose settings are being retrieved.
-    *
-    * @param key - The name of the setting being retrieved.
-    *
-    * @returns A promise that resolves when the setting is retrieved.
-    */
-  /* CompleteClass */
-  override def get(plugin: String, key: String): js.Promise[Composite] = js.native
-  /**
-    * Load a plugin's settings into the setting registry.
-    *
-    * @param plugin - The name of the plugin whose settings are being loaded.
-    *
-    * @returns A promise that resolves with a plugin settings object or rejects
-    * if the plugin is not found.
-    */
-  /* CompleteClass */
-  override def load(plugin: String): js.Promise[ISettings] = js.native
-  /**
     * A signal that emits the name of a plugin when its settings change.
     */
   @JSName("pluginChanged")
   def pluginChanged_MSettingRegistry_ : ISignal[this.type, String] = js.native
-  /**
-    * Reload a plugin's settings into the registry even if they already exist.
-    *
-    * @param plugin - The name of the plugin whose settings are being reloaded.
-    *
-    * @returns A promise that resolves with a plugin settings object or rejects
-    * with a list of `ISchemaValidator.IError` objects if it fails.
-    */
-  /* CompleteClass */
-  override def reload(plugin: String): js.Promise[ISettings] = js.native
-  /**
-    * Remove a single setting in the registry.
-    *
-    * @param plugin - The name of the plugin whose setting is being removed.
-    *
-    * @param key - The name of the setting being removed.
-    *
-    * @returns A promise that resolves when the setting is removed.
-    */
-  /* CompleteClass */
-  override def remove(plugin: String, key: String): js.Promise[Unit] = js.native
-  /**
-    * Set a single setting in the registry.
-    *
-    * @param plugin - The name of the plugin whose setting is being set.
-    *
-    * @param key - The name of the setting being set.
-    *
-    * @param value - The value of the setting being set.
-    *
-    * @returns A promise that resolves when the setting has been saved.
-    *
-    */
-  /* CompleteClass */
-  override def set(plugin: String, key: String, value: PartialJSONValue): js.Promise[Unit] = js.native
-  /**
-    * Register a plugin transform function to act on a specific plugin.
-    *
-    * @param plugin - The name of the plugin whose settings are transformed.
-    *
-    * @param transforms - The transform functions applied to the plugin.
-    *
-    * @returns A disposable that removes the transforms from the registry.
-    *
-    * #### Notes
-    * - `compose` transformations: The registry automatically overwrites a
-    * plugin's default values with user overrides, but a plugin may instead wish
-    * to merge values. This behavior can be accomplished in a `compose`
-    * transformation.
-    * - `fetch` transformations: The registry uses the plugin data that is
-    * fetched from its connector. If a plugin wants to override, e.g. to update
-    * its schema with dynamic defaults, a `fetch` transformation can be applied.
-    */
-  /* CompleteClass */
-  override def transform(plugin: String, transforms: phaseinPhaseTransform): IDisposable = js.native
-  /**
-    * Upload a plugin's settings.
-    *
-    * @param plugin - The name of the plugin whose settings are being set.
-    *
-    * @param raw - The raw plugin settings being uploaded.
-    *
-    * @returns A promise that resolves when the settings have been saved.
-    */
-  /* CompleteClass */
-  override def upload(plugin: String, raw: String): js.Promise[Unit] = js.native
 }
 

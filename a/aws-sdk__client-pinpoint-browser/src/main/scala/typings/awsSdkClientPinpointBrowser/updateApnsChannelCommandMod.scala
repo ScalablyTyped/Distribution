@@ -26,16 +26,9 @@ object updateApnsChannelCommandMod extends js.Object {
           Blob
         ] {
     def this(input: UpdateApnsChannelInput) = this()
-    /* CompleteClass */
-    override val input: UpdateApnsChannelInput = js.native
     val middlewareStack: MiddlewareStack[UpdateApnsChannelInput, UpdateApnsChannelOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: PinpointResolvedConfiguration
-    ): Handler[UpdateApnsChannelInput, UpdateApnsChannelOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: PinpointResolvedConfiguration
     ): Handler[UpdateApnsChannelInput, UpdateApnsChannelOutput] = js.native
   }

@@ -26,16 +26,38 @@ trait SchemaPivotHeaderEntry extends js.Object {
 
 object SchemaPivotHeaderEntry {
   @scala.inline
-  def apply(
-    dimensionNames: js.Array[String] = null,
-    dimensionValues: js.Array[String] = null,
-    metric: SchemaMetricHeaderEntry = null
-  ): SchemaPivotHeaderEntry = {
+  def apply(): SchemaPivotHeaderEntry = {
     val __obj = js.Dynamic.literal()
-    if (dimensionNames != null) __obj.updateDynamic("dimensionNames")(dimensionNames.asInstanceOf[js.Any])
-    if (dimensionValues != null) __obj.updateDynamic("dimensionValues")(dimensionValues.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivotHeaderEntry]
   }
+  @scala.inline
+  implicit class SchemaPivotHeaderEntryOps[Self <: SchemaPivotHeaderEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionNamesVarargs(value: String*): Self = this.set("dimensionNames", js.Array(value :_*))
+    @scala.inline
+    def setDimensionNames(value: js.Array[String]): Self = this.set("dimensionNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionNames: Self = this.set("dimensionNames", js.undefined)
+    @scala.inline
+    def setDimensionValuesVarargs(value: String*): Self = this.set("dimensionValues", js.Array(value :_*))
+    @scala.inline
+    def setDimensionValues(value: js.Array[String]): Self = this.set("dimensionValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionValues: Self = this.set("dimensionValues", js.undefined)
+    @scala.inline
+    def setMetric(value: SchemaMetricHeaderEntry): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+  }
+  
 }
 

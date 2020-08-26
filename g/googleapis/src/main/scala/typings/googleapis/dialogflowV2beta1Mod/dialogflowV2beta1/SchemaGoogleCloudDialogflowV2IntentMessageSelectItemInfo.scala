@@ -23,11 +23,32 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo extends js.Object
 
 object SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo {
   @scala.inline
-  def apply(key: String = null, synonyms: js.Array[String] = null): SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo = {
+  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (synonyms != null) __obj.updateDynamic("synonyms")(synonyms.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfoOps[Self <: SchemaGoogleCloudDialogflowV2IntentMessageSelectItemInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setSynonymsVarargs(value: String*): Self = this.set("synonyms", js.Array(value :_*))
+    @scala.inline
+    def setSynonyms(value: js.Array[String]): Self = this.set("synonyms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSynonyms: Self = this.set("synonyms", js.undefined)
+  }
+  
 }
 

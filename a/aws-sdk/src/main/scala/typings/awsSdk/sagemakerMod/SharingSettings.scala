@@ -22,16 +22,34 @@ trait SharingSettings extends js.Object {
 
 object SharingSettings {
   @scala.inline
-  def apply(
-    NotebookOutputOption: NotebookOutputOption = null,
-    S3KmsKeyId: KmsKeyId = null,
-    S3OutputPath: S3Uri = null
-  ): SharingSettings = {
+  def apply(): SharingSettings = {
     val __obj = js.Dynamic.literal()
-    if (NotebookOutputOption != null) __obj.updateDynamic("NotebookOutputOption")(NotebookOutputOption.asInstanceOf[js.Any])
-    if (S3KmsKeyId != null) __obj.updateDynamic("S3KmsKeyId")(S3KmsKeyId.asInstanceOf[js.Any])
-    if (S3OutputPath != null) __obj.updateDynamic("S3OutputPath")(S3OutputPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharingSettings]
   }
+  @scala.inline
+  implicit class SharingSettingsOps[Self <: SharingSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotebookOutputOption(value: NotebookOutputOption): Self = this.set("NotebookOutputOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotebookOutputOption: Self = this.set("NotebookOutputOption", js.undefined)
+    @scala.inline
+    def setS3KmsKeyId(value: KmsKeyId): Self = this.set("S3KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3KmsKeyId: Self = this.set("S3KmsKeyId", js.undefined)
+    @scala.inline
+    def setS3OutputPath(value: S3Uri): Self = this.set("S3OutputPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3OutputPath: Self = this.set("S3OutputPath", js.undefined)
+  }
+  
 }
 

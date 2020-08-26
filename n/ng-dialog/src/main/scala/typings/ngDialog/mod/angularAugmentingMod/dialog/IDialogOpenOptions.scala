@@ -9,93 +9,77 @@ import scala.scalajs.js.annotation._
 /**
   * Options which are provided to open a dialog.
   */
+@js.native
 trait IDialogOpenOptions extends IDialogOptions {
-  var bindToController: js.UndefOr[Boolean] = js.undefined
-  var controller: js.UndefOr[String | js.Array[_] | js.Any] = js.undefined
-  var controllerAs: js.UndefOr[String] = js.undefined
+  var bindToController: js.UndefOr[Boolean] = js.native
+  var controller: js.UndefOr[String | js.Array[_] | js.Any] = js.native
+  var controllerAs: js.UndefOr[String] = js.native
   /**
     * Any serializable data that you want to be stored in the controller's dialog scope. ($scope.ngDialogData).
     * From version 0.3.6 $scope.ngDialogData keeps references to the objects instead of copying them.
     */
-  var data: js.UndefOr[String | js.Object | js.Array[_]] = js.undefined
+  var data: js.UndefOr[String | js.Object | js.Array[_]] = js.native
   /**
     * An optional map of dependencies which should be injected into the controller. If any of these dependencies
     * are promises, ngDialog will wait for them all to be resolved or one to be rejected before the controller
     * is instantiated.
     */
-  var resolve: js.UndefOr[StringDictionary[String | Function]] = js.undefined
+  var resolve: js.UndefOr[StringDictionary[String | Function]] = js.native
   /**
     * Scope object that will be passed to dialog. If you use controller with separate $scope service this object will be passed to $scope.$parent param.
     */
-  var scope: js.UndefOr[IDialogScope] = js.undefined
-  var template: String
+  var scope: js.UndefOr[IDialogScope] = js.native
+  var template: String = js.native
 }
 
 object IDialogOpenOptions {
   @scala.inline
-  def apply(
-    template: String,
-    appendClassName: String = null,
-    appendTo: String = null,
-    ariaAuto: js.UndefOr[Boolean] = js.undefined,
-    ariaDescribedById: String = null,
-    ariaDescribedBySelector: String = null,
-    ariaLabelledById: String = null,
-    ariaLabelledBySelector: String = null,
-    ariaRole: String = null,
-    bindToController: js.UndefOr[Boolean] = js.undefined,
-    cache: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    closeByDocument: js.UndefOr[Boolean] = js.undefined,
-    closeByEscape: js.UndefOr[Boolean] = js.undefined,
-    closeByNavigation: js.UndefOr[Boolean] = js.undefined,
-    controller: String | js.Array[_] | js.Any = null,
-    controllerAs: String = null,
-    data: String | js.Object | js.Array[_] = null,
-    disableAnimation: js.UndefOr[Boolean] = js.undefined,
-    height: String | Double = null,
-    name: String | Double = null,
-    overlay: js.UndefOr[Boolean] = js.undefined,
-    plain: js.UndefOr[Boolean] = js.undefined,
-    preCloseCallback: String | Function = null,
-    preserveFocus: js.UndefOr[Boolean] = js.undefined,
-    resolve: StringDictionary[String | Function] = null,
-    scope: IDialogScope = null,
-    showClose: js.UndefOr[Boolean] = js.undefined,
-    trapFocus: js.UndefOr[Boolean] = js.undefined,
-    width: String | Double = null
-  ): IDialogOpenOptions = {
+  def apply(template: String): IDialogOpenOptions = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
-    if (appendClassName != null) __obj.updateDynamic("appendClassName")(appendClassName.asInstanceOf[js.Any])
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(ariaAuto)) __obj.updateDynamic("ariaAuto")(ariaAuto.get.asInstanceOf[js.Any])
-    if (ariaDescribedById != null) __obj.updateDynamic("ariaDescribedById")(ariaDescribedById.asInstanceOf[js.Any])
-    if (ariaDescribedBySelector != null) __obj.updateDynamic("ariaDescribedBySelector")(ariaDescribedBySelector.asInstanceOf[js.Any])
-    if (ariaLabelledById != null) __obj.updateDynamic("ariaLabelledById")(ariaLabelledById.asInstanceOf[js.Any])
-    if (ariaLabelledBySelector != null) __obj.updateDynamic("ariaLabelledBySelector")(ariaLabelledBySelector.asInstanceOf[js.Any])
-    if (ariaRole != null) __obj.updateDynamic("ariaRole")(ariaRole.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeByDocument)) __obj.updateDynamic("closeByDocument")(closeByDocument.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeByEscape)) __obj.updateDynamic("closeByEscape")(closeByEscape.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeByNavigation)) __obj.updateDynamic("closeByNavigation")(closeByNavigation.get.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnimation)) __obj.updateDynamic("disableAnimation")(disableAnimation.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.get.asInstanceOf[js.Any])
-    if (preCloseCallback != null) __obj.updateDynamic("preCloseCallback")(preCloseCallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveFocus)) __obj.updateDynamic("preserveFocus")(preserveFocus.get.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trapFocus)) __obj.updateDynamic("trapFocus")(trapFocus.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogOpenOptions]
   }
+  @scala.inline
+  implicit class IDialogOpenOptionsOps[Self <: IDialogOpenOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBindToController(value: Boolean): Self = this.set("bindToController", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindToController: Self = this.set("bindToController", js.undefined)
+    @scala.inline
+    def setControllerVarargs(value: js.Any*): Self = this.set("controller", js.Array(value :_*))
+    @scala.inline
+    def setController(value: String | js.Array[_] | js.Any): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteController: Self = this.set("controller", js.undefined)
+    @scala.inline
+    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: js.Any*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: String | js.Object | js.Array[_]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setResolve(value: StringDictionary[String | Function]): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolve: Self = this.set("resolve", js.undefined)
+    @scala.inline
+    def setScope(value: IDialogScope): Self = this.set("scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScope: Self = this.set("scope", js.undefined)
+  }
+  
 }
 

@@ -54,32 +54,68 @@ trait Bundle extends js.Object {
 
 object Bundle {
   @scala.inline
-  def apply(
-    bundleId: NonEmptyString = null,
-    cpuCount: js.UndefOr[integer] = js.undefined,
-    diskSizeInGb: js.UndefOr[integer] = js.undefined,
-    instanceType: String = null,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    power: js.UndefOr[integer] = js.undefined,
-    price: js.UndefOr[float] = js.undefined,
-    ramSizeInGb: js.UndefOr[float] = js.undefined,
-    supportedPlatforms: InstancePlatformList = null,
-    transferPerMonthInGb: js.UndefOr[integer] = js.undefined
-  ): Bundle = {
+  def apply(): Bundle = {
     val __obj = js.Dynamic.literal()
-    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cpuCount)) __obj.updateDynamic("cpuCount")(cpuCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(diskSizeInGb)) __obj.updateDynamic("diskSizeInGb")(diskSizeInGb.get.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(power)) __obj.updateDynamic("power")(power.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(price)) __obj.updateDynamic("price")(price.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ramSizeInGb)) __obj.updateDynamic("ramSizeInGb")(ramSizeInGb.get.asInstanceOf[js.Any])
-    if (supportedPlatforms != null) __obj.updateDynamic("supportedPlatforms")(supportedPlatforms.asInstanceOf[js.Any])
-    if (!js.isUndefined(transferPerMonthInGb)) __obj.updateDynamic("transferPerMonthInGb")(transferPerMonthInGb.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bundle]
   }
+  @scala.inline
+  implicit class BundleOps[Self <: Bundle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBundleId(value: NonEmptyString): Self = this.set("bundleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBundleId: Self = this.set("bundleId", js.undefined)
+    @scala.inline
+    def setCpuCount(value: integer): Self = this.set("cpuCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuCount: Self = this.set("cpuCount", js.undefined)
+    @scala.inline
+    def setDiskSizeInGb(value: integer): Self = this.set("diskSizeInGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeInGb: Self = this.set("diskSizeInGb", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setIsActive(value: Boolean): Self = this.set("isActive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsActive: Self = this.set("isActive", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPower(value: integer): Self = this.set("power", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePower: Self = this.set("power", js.undefined)
+    @scala.inline
+    def setPrice(value: float): Self = this.set("price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("price", js.undefined)
+    @scala.inline
+    def setRamSizeInGb(value: float): Self = this.set("ramSizeInGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRamSizeInGb: Self = this.set("ramSizeInGb", js.undefined)
+    @scala.inline
+    def setSupportedPlatformsVarargs(value: InstancePlatform*): Self = this.set("supportedPlatforms", js.Array(value :_*))
+    @scala.inline
+    def setSupportedPlatforms(value: InstancePlatformList): Self = this.set("supportedPlatforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedPlatforms: Self = this.set("supportedPlatforms", js.undefined)
+    @scala.inline
+    def setTransferPerMonthInGb(value: integer): Self = this.set("transferPerMonthInGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferPerMonthInGb: Self = this.set("transferPerMonthInGb", js.undefined)
+  }
+  
 }
 

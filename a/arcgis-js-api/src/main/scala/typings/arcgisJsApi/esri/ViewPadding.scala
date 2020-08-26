@@ -6,31 +6,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ViewPadding extends Object {
   /**
     * The bottom padding (in pixels).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
-  var bottom: js.UndefOr[Double] = js.undefined
+  var bottom: js.UndefOr[Double] = js.native
   /**
     * The left padding (in pixels).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
-  var left: js.UndefOr[Double] = js.undefined
+  var left: js.UndefOr[Double] = js.native
   /**
     * The right padding (in pixels).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
-  var right: js.UndefOr[Double] = js.undefined
+  var right: js.UndefOr[Double] = js.native
   /**
     * The top padding (in pixels).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#padding)
     */
-  var top: js.UndefOr[Double] = js.undefined
+  var top: js.UndefOr[Double] = js.native
 }
 
 object ViewPadding {
@@ -38,18 +39,39 @@ object ViewPadding {
   def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    propertyIsEnumerable: PropertyKey => Boolean,
-    bottom: js.UndefOr[Double] = js.undefined,
-    left: js.UndefOr[Double] = js.undefined,
-    right: js.UndefOr[Double] = js.undefined,
-    top: js.UndefOr[Double] = js.undefined
+    propertyIsEnumerable: PropertyKey => Boolean
   ): ViewPadding = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPadding]
   }
+  @scala.inline
+  implicit class ViewPaddingOps[Self <: ViewPadding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBottom(value: Double): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setRight(value: Double): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+  }
+  
 }
 

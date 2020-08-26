@@ -12,7 +12,7 @@ Create SAML assertions.
 | Keywords           | saml, authentication |
 | # releases         | 3 |
 | # dependents       | 7 |
-| # downloads        | 477339 |
+| # downloads        | 488965 |
 | # stars            | 1 |
 
 ## Links

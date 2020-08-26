@@ -1,8 +1,8 @@
 package typings.firebaseMessaging
 
-import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.firebaseAppTypes.privateMod.FirebaseService
 import typings.firebaseMessaging.internalDependenciesMod.FirebaseInternalDependencies
+import typings.firebaseMessaging.mod.FirebaseApp
 import typings.firebaseMessagingTypes.mod.FirebaseMessaging
 import typings.firebaseUtil.subscribeMod.Unsubscribe
 import scala.scalajs.js
@@ -17,8 +17,6 @@ object windowControllerMod extends js.Object {
     extends FirebaseMessaging
        with FirebaseService {
     def this(firebaseDependencies: FirebaseInternalDependencies) = this()
-    /* CompleteClass */
-    override var app: FirebaseApp = js.native
     val firebaseDependencies: js.Any = js.native
     /**
       * Creates or updates the default service worker registration.
@@ -28,10 +26,10 @@ object windowControllerMod extends js.Object {
     var logEvent: js.Any = js.native
     var messageEventListener: js.Any = js.native
     var onMessageCallback: js.Any = js.native
-    var swRegistration: js.UndefOr[js.Any] = js.native
+    var swRegistration: js.Any = js.native
     var vapidKey: js.Any = js.native
     @JSName("app")
-    def app_MWindowController: typings.firebaseMessaging.mod.FirebaseApp = js.native
+    def app_MWindowController: FirebaseApp = js.native
     def deleteToken(): js.Promise[Boolean] = js.native
     def onTokenRefresh(): Unsubscribe = js.native
     def setBackgroundMessageHandler(): Unit = js.native

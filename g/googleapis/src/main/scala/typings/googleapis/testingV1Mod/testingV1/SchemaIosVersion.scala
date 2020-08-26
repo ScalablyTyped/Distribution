@@ -37,20 +37,46 @@ trait SchemaIosVersion extends js.Object {
 
 object SchemaIosVersion {
   @scala.inline
-  def apply(
-    id: String = null,
-    majorVersion: js.UndefOr[Double] = js.undefined,
-    minorVersion: js.UndefOr[Double] = js.undefined,
-    supportedXcodeVersionIds: js.Array[String] = null,
-    tags: js.Array[String] = null
-  ): SchemaIosVersion = {
+  def apply(): SchemaIosVersion = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(majorVersion)) __obj.updateDynamic("majorVersion")(majorVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorVersion)) __obj.updateDynamic("minorVersion")(minorVersion.get.asInstanceOf[js.Any])
-    if (supportedXcodeVersionIds != null) __obj.updateDynamic("supportedXcodeVersionIds")(supportedXcodeVersionIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIosVersion]
   }
+  @scala.inline
+  implicit class SchemaIosVersionOps[Self <: SchemaIosVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setMajorVersion(value: Double): Self = this.set("majorVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMajorVersion: Self = this.set("majorVersion", js.undefined)
+    @scala.inline
+    def setMinorVersion(value: Double): Self = this.set("minorVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorVersion: Self = this.set("minorVersion", js.undefined)
+    @scala.inline
+    def setSupportedXcodeVersionIdsVarargs(value: String*): Self = this.set("supportedXcodeVersionIds", js.Array(value :_*))
+    @scala.inline
+    def setSupportedXcodeVersionIds(value: js.Array[String]): Self = this.set("supportedXcodeVersionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedXcodeVersionIds: Self = this.set("supportedXcodeVersionIds", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -42,26 +42,54 @@ trait ServiceQuotaIncreaseRequestInTemplate extends js.Object {
 
 object ServiceQuotaIncreaseRequestInTemplate {
   @scala.inline
-  def apply(
-    AwsRegion: AwsRegion = null,
-    DesiredValue: js.UndefOr[QuotaValue] = js.undefined,
-    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
-    QuotaCode: QuotaCode = null,
-    QuotaName: QuotaName = null,
-    ServiceCode: ServiceCode = null,
-    ServiceName: ServiceName = null,
-    Unit: QuotaUnit = null
-  ): ServiceQuotaIncreaseRequestInTemplate = {
+  def apply(): ServiceQuotaIncreaseRequestInTemplate = {
     val __obj = js.Dynamic.literal()
-    if (AwsRegion != null) __obj.updateDynamic("AwsRegion")(AwsRegion.asInstanceOf[js.Any])
-    if (!js.isUndefined(DesiredValue)) __obj.updateDynamic("DesiredValue")(DesiredValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.get.asInstanceOf[js.Any])
-    if (QuotaCode != null) __obj.updateDynamic("QuotaCode")(QuotaCode.asInstanceOf[js.Any])
-    if (QuotaName != null) __obj.updateDynamic("QuotaName")(QuotaName.asInstanceOf[js.Any])
-    if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceQuotaIncreaseRequestInTemplate]
   }
+  @scala.inline
+  implicit class ServiceQuotaIncreaseRequestInTemplateOps[Self <: ServiceQuotaIncreaseRequestInTemplate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsRegion(value: AwsRegion): Self = this.set("AwsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRegion: Self = this.set("AwsRegion", js.undefined)
+    @scala.inline
+    def setDesiredValue(value: QuotaValue): Self = this.set("DesiredValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesiredValue: Self = this.set("DesiredValue", js.undefined)
+    @scala.inline
+    def setGlobalQuota(value: GlobalQuota): Self = this.set("GlobalQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalQuota: Self = this.set("GlobalQuota", js.undefined)
+    @scala.inline
+    def setQuotaCode(value: QuotaCode): Self = this.set("QuotaCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaCode: Self = this.set("QuotaCode", js.undefined)
+    @scala.inline
+    def setQuotaName(value: QuotaName): Self = this.set("QuotaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaName: Self = this.set("QuotaName", js.undefined)
+    @scala.inline
+    def setServiceCode(value: ServiceCode): Self = this.set("ServiceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("ServiceCode", js.undefined)
+    @scala.inline
+    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    @scala.inline
+    def setUnit(value: QuotaUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

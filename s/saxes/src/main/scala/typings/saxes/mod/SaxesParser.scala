@@ -19,7 +19,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
   var ENTITIES: Record[String, String] = js.native
   var _closed: js.Any = js.native
   var attribList: js.Any = js.native
-  var attributeHandler: js.UndefOr[js.Any] = js.native
+  var attributeHandler: js.Any = js.native
   /**
     * Capture characters that satisfy ``isNameChar`` into the ``name`` field of
     * this parser.
@@ -51,8 +51,8 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * end of the current chunk.
     */
   var captureToChar: js.Any = js.native
-  var carriedFromPrevious: js.UndefOr[js.Any] = js.native
-  var cdataHandler: js.UndefOr[js.Any] = js.native
+  var carriedFromPrevious: js.Any = js.native
+  var cdataHandler: js.Any = js.native
   var chunk: js.Any = js.native
   var chunkPosition: js.Any = js.native
   /**
@@ -61,7 +61,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * ``onclosetag``.
     */
   var closeTag: js.Any = js.native
-  var closeTagHandler: js.UndefOr[js.Any] = js.native
+  var closeTagHandler: js.Any = js.native
   var closedRoot: js.Any = js.native
   /**
     * The column number of the next character to be read by the parser.  *
@@ -74,10 +74,10 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * See [[columnIndex]] for a number that corresponds to the JavaScript index.
     */
   var column: Double = js.native
-  var commentHandler: js.UndefOr[js.Any] = js.native
+  var commentHandler: js.Any = js.native
   var currentXMLVersion: js.Any = js.native
   var doctype: js.Any = js.native
-  var doctypeHandler: js.UndefOr[js.Any] = js.native
+  var doctypeHandler: js.Any = js.native
   /**
     * End parsing. This performs final well-formedness checks and resets the
     * parser to a clean state.
@@ -85,11 +85,11 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * @returns this
     */
   var end: js.Any = js.native
-  var endHandler: js.UndefOr[js.Any] = js.native
+  var endHandler: js.Any = js.native
   var entity: js.Any = js.native
-  var entityReturnState: js.UndefOr[js.Any] = js.native
-  var errorHandler: js.UndefOr[js.Any] = js.native
-  val fileName: js.UndefOr[js.Any] = js.native
+  var entityReturnState: js.Any = js.native
+  var errorHandler: js.Any = js.native
+  val fileName: js.Any = js.native
   var forbiddenState: js.Any = js.native
   val fragmentOpt: js.Any = js.native
   var getCode: js.Any = js.native
@@ -142,8 +142,8 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * ``onopentag``.
     */
   var openTag: js.Any = js.native
-  var openTagHandler: js.UndefOr[js.Any] = js.native
-  var openTagStartHandler: js.UndefOr[js.Any] = js.native
+  var openTagHandler: js.Any = js.native
+  var openTagStartHandler: js.Any = js.native
   var openWakaBang: js.Any = js.native
   val opt: SaxesOptions = js.native
   /**
@@ -154,7 +154,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * @returns The parsed entity.
     */
   var parseEntity: js.Any = js.native
-  var piHandler: js.UndefOr[js.Any] = js.native
+  var piHandler: js.Any = js.native
   var piTarget: js.Any = js.native
   var positionAtNewLine: js.Any = js.native
   var prevI: js.Any = js.native
@@ -173,7 +173,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * @returns
     */
   var qname: js.Any = js.native
-  var readyHandler: js.UndefOr[js.Any] = js.native
+  var readyHandler: js.Any = js.native
   var reportedTextAfterRoot: js.Any = js.native
   var reportedTextBeforeRoot: js.Any = js.native
   var sAttrib: js.Any = js.native
@@ -236,7 +236,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
   var tag: js.Any = js.native
   var tags: js.Any = js.native
   var text: js.Any = js.native
-  var textHandler: js.UndefOr[js.Any] = js.native
+  var textHandler: js.Any = js.native
   var topNS: js.Any = js.native
   val trackPosition: js.Any = js.native
   var unget: js.Any = js.native
@@ -246,7 +246,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
   var xmlDecl: XMLDecl = js.native
   var xmlDeclExpects: js.Any = js.native
   var xmlDeclPossible: js.Any = js.native
-  var xmldeclHandler: js.UndefOr[js.Any] = js.native
+  var xmldeclHandler: js.Any = js.native
   val xmlnsOpt: js.Any = js.native
   def _init(): Unit = js.native
   /**
@@ -327,7 +327,6 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     * @returns The namespace URI or ``undefined`` if the prefix is not defined.
     */
   def resolve(prefix: String): js.UndefOr[String] = js.native
-  def write(): this.type = js.native
   /**
     * Write a XML data to the parser.
     *
@@ -335,6 +334,7 @@ class SaxesParser[O /* <: SaxesOptions */] () extends js.Object {
     *
     * @returns this
     */
+  def write(): this.type = js.native
   def write(chunk: String): this.type = js.native
   def write(chunk: js.Object): this.type = js.native
 }

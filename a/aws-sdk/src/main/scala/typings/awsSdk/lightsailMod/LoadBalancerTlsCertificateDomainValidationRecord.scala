@@ -30,20 +30,42 @@ trait LoadBalancerTlsCertificateDomainValidationRecord extends js.Object {
 
 object LoadBalancerTlsCertificateDomainValidationRecord {
   @scala.inline
-  def apply(
-    domainName: DomainName = null,
-    name: NonEmptyString = null,
-    `type`: NonEmptyString = null,
-    validationStatus: LoadBalancerTlsCertificateDomainStatus = null,
-    value: NonEmptyString = null
-  ): LoadBalancerTlsCertificateDomainValidationRecord = {
+  def apply(): LoadBalancerTlsCertificateDomainValidationRecord = {
     val __obj = js.Dynamic.literal()
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadBalancerTlsCertificateDomainValidationRecord]
   }
+  @scala.inline
+  implicit class LoadBalancerTlsCertificateDomainValidationRecordOps[Self <: LoadBalancerTlsCertificateDomainValidationRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("domainName", js.undefined)
+    @scala.inline
+    def setName(value: NonEmptyString): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setType(value: NonEmptyString): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setValidationStatus(value: LoadBalancerTlsCertificateDomainStatus): Self = this.set("validationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationStatus: Self = this.set("validationStatus", js.undefined)
+    @scala.inline
+    def setValue(value: NonEmptyString): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

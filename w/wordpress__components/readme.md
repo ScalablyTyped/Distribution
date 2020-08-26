@@ -12,13 +12,12 @@ UI components for WordPress.
 | Keywords           | wordpress, components |
 | # releases         | 48 |
 | # dependents       | 20 |
-| # downloads        | 232717 |
+| # downloads        | 237913 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/components/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
-- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fcomponents)
     
 

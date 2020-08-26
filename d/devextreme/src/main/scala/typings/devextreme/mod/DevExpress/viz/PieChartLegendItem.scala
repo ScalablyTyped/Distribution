@@ -1,41 +1,59 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.Fill
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PieChartLegendItem extends BaseLegendItem {
   /** @name PieChartLegendItem.argument */
-  var argument: js.UndefOr[String | Date | Double] = js.undefined
+  var argument: js.UndefOr[String | Date | Double] = js.native
   /** @name PieChartLegendItem.argumentIndex */
-  var argumentIndex: js.UndefOr[Double] = js.undefined
+  var argumentIndex: js.UndefOr[Double] = js.native
   /** @name PieChartLegendItem.points */
-  var points: js.UndefOr[js.Array[piePointObject]] = js.undefined
+  var points: js.UndefOr[js.Array[piePointObject]] = js.native
   /** @name PieChartLegendItem.text */
   @JSName("text")
-  var text_PieChartLegendItem: js.UndefOr[js.Any] = js.undefined
+  var text_PieChartLegendItem: js.UndefOr[js.Any] = js.native
 }
 
 object PieChartLegendItem {
   @scala.inline
-  def apply(
-    argument: String | Date | Double = null,
-    argumentIndex: js.UndefOr[Double] = js.undefined,
-    marker: Fill = null,
-    points: js.Array[piePointObject] = null,
-    text: js.Any = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): PieChartLegendItem = {
+  def apply(): PieChartLegendItem = {
     val __obj = js.Dynamic.literal()
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (!js.isUndefined(argumentIndex)) __obj.updateDynamic("argumentIndex")(argumentIndex.get.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieChartLegendItem]
   }
+  @scala.inline
+  implicit class PieChartLegendItemOps[Self <: PieChartLegendItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgument(value: String | Date | Double): Self = this.set("argument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgument: Self = this.set("argument", js.undefined)
+    @scala.inline
+    def setArgumentIndex(value: Double): Self = this.set("argumentIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgumentIndex: Self = this.set("argumentIndex", js.undefined)
+    @scala.inline
+    def setPointsVarargs(value: piePointObject*): Self = this.set("points", js.Array(value :_*))
+    @scala.inline
+    def setPoints(value: js.Array[piePointObject]): Self = this.set("points", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoints: Self = this.set("points", js.undefined)
+    @scala.inline
+    def setText(value: js.Any): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

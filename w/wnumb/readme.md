@@ -12,7 +12,7 @@ wNumb - JavaScript Number & Money formatting
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 473955 |
+| # downloads        | 481374 |
 | # stars            | 1 |
 
 ## Links

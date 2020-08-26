@@ -26,17 +26,36 @@ trait UpdateWorkGroupInput extends js.Object {
 
 object UpdateWorkGroupInput {
   @scala.inline
-  def apply(
-    WorkGroup: WorkGroupName,
-    ConfigurationUpdates: WorkGroupConfigurationUpdates = null,
-    Description: WorkGroupDescriptionString = null,
-    State: WorkGroupState = null
-  ): UpdateWorkGroupInput = {
+  def apply(WorkGroup: WorkGroupName): UpdateWorkGroupInput = {
     val __obj = js.Dynamic.literal(WorkGroup = WorkGroup.asInstanceOf[js.Any])
-    if (ConfigurationUpdates != null) __obj.updateDynamic("ConfigurationUpdates")(ConfigurationUpdates.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkGroupInput]
   }
+  @scala.inline
+  implicit class UpdateWorkGroupInputOps[Self <: UpdateWorkGroupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkGroup(value: WorkGroupName): Self = this.set("WorkGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConfigurationUpdates(value: WorkGroupConfigurationUpdates): Self = this.set("ConfigurationUpdates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationUpdates: Self = this.set("ConfigurationUpdates", js.undefined)
+    @scala.inline
+    def setDescription(value: WorkGroupDescriptionString): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setState(value: WorkGroupState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ The lodash method `_.isArrayBuffer` exported as a module.
 | Keywords           | lodash-modularized, isarraybuffer |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 1875 |
+| # downloads        | 1936 |
 | # stars            | 0 |
 
 ## Links

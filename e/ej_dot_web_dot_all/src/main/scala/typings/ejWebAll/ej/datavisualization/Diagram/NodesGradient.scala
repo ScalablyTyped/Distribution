@@ -4,30 +4,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesGradient extends js.Object {
   /** Paints the node with linear color transitions
     */
-  var LinearGradient: js.UndefOr[NodesGradientLinearGradient] = js.undefined
+  var LinearGradient: js.UndefOr[NodesGradientLinearGradient] = js.native
   /** Paints the node with radial color transitions. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.
     */
-  var RadialGradient: js.UndefOr[NodesGradientRadialGradient] = js.undefined
+  var RadialGradient: js.UndefOr[NodesGradientRadialGradient] = js.native
   /** Defines the color and a position where the previous color transition ends and a new color transition starts
     */
-  var Stop: js.UndefOr[NodesGradientStop] = js.undefined
+  var Stop: js.UndefOr[NodesGradientStop] = js.native
 }
 
 object NodesGradient {
   @scala.inline
-  def apply(
-    LinearGradient: NodesGradientLinearGradient = null,
-    RadialGradient: NodesGradientRadialGradient = null,
-    Stop: NodesGradientStop = null
-  ): NodesGradient = {
+  def apply(): NodesGradient = {
     val __obj = js.Dynamic.literal()
-    if (LinearGradient != null) __obj.updateDynamic("LinearGradient")(LinearGradient.asInstanceOf[js.Any])
-    if (RadialGradient != null) __obj.updateDynamic("RadialGradient")(RadialGradient.asInstanceOf[js.Any])
-    if (Stop != null) __obj.updateDynamic("Stop")(Stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesGradient]
   }
+  @scala.inline
+  implicit class NodesGradientOps[Self <: NodesGradient] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLinearGradient(value: NodesGradientLinearGradient): Self = this.set("LinearGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinearGradient: Self = this.set("LinearGradient", js.undefined)
+    @scala.inline
+    def setRadialGradient(value: NodesGradientRadialGradient): Self = this.set("RadialGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadialGradient: Self = this.set("RadialGradient", js.undefined)
+    @scala.inline
+    def setStop(value: NodesGradientStop): Self = this.set("Stop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStop: Self = this.set("Stop", js.undefined)
+  }
+  
 }
 

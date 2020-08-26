@@ -14,10 +14,26 @@ trait UpdateProvisionedProductOutput extends js.Object {
 
 object UpdateProvisionedProductOutput {
   @scala.inline
-  def apply(RecordDetail: RecordDetail = null): UpdateProvisionedProductOutput = {
+  def apply(): UpdateProvisionedProductOutput = {
     val __obj = js.Dynamic.literal()
-    if (RecordDetail != null) __obj.updateDynamic("RecordDetail")(RecordDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProvisionedProductOutput]
   }
+  @scala.inline
+  implicit class UpdateProvisionedProductOutputOps[Self <: UpdateProvisionedProductOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecordDetail(value: RecordDetail): Self = this.set("RecordDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordDetail: Self = this.set("RecordDetail", js.undefined)
+  }
+  
 }
 

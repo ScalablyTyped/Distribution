@@ -36,6 +36,11 @@ class FineUploaderBasic () extends js.Object {
     * @param string endpoint : The endpoint to send this file to
     */
   def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement]): Unit = js.native
+  def addFiles(
+    files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
+    params: js.UndefOr[scala.Nothing],
+    endpoint: String
+  ): Unit = js.native
   def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement], params: js.Any): Unit = js.native
   def addFiles(
     files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
@@ -43,12 +48,15 @@ class FineUploaderBasic () extends js.Object {
     endpoint: String
   ): Unit = js.native
   def addFiles(files: BlobWrapper): Unit = js.native
+  def addFiles(files: BlobWrapper, params: js.UndefOr[scala.Nothing], endpoint: String): Unit = js.native
   def addFiles(files: BlobWrapper, params: js.Any): Unit = js.native
   def addFiles(files: BlobWrapper, params: js.Any, endpoint: String): Unit = js.native
   def addFiles(files: CanvasWrapper): Unit = js.native
+  def addFiles(files: CanvasWrapper, params: js.UndefOr[scala.Nothing], endpoint: String): Unit = js.native
   def addFiles(files: CanvasWrapper, params: js.Any): Unit = js.native
   def addFiles(files: CanvasWrapper, params: js.Any, endpoint: String): Unit = js.native
   def addFiles(files: FileList): Unit = js.native
+  def addFiles(files: FileList, params: js.UndefOr[scala.Nothing], endpoint: String): Unit = js.native
   def addFiles(files: FileList, params: js.Any): Unit = js.native
   def addFiles(files: FileList, params: js.Any, endpoint: String): Unit = js.native
   /**
@@ -153,7 +161,29 @@ class FineUploaderBasic () extends js.Object {
     *                   If the thumbnail cannot be rendered, failure callbacks will be invoked instead, passing an object with `container` and `error` properties.
     */
   def drawThumbnail(id: Double, targetContainer: HTMLElement): PromiseOptions = js.native
+  def drawThumbnail(
+    id: Double,
+    targetContainer: HTMLElement,
+    maxSize: js.UndefOr[scala.Nothing],
+    fromServer: js.UndefOr[scala.Nothing],
+    customResizer: CustomResizerCallBack
+  ): PromiseOptions = js.native
+  def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: js.UndefOr[scala.Nothing], fromServer: Boolean): PromiseOptions = js.native
+  def drawThumbnail(
+    id: Double,
+    targetContainer: HTMLElement,
+    maxSize: js.UndefOr[scala.Nothing],
+    fromServer: Boolean,
+    customResizer: CustomResizerCallBack
+  ): PromiseOptions = js.native
   def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: Double): PromiseOptions = js.native
+  def drawThumbnail(
+    id: Double,
+    targetContainer: HTMLElement,
+    maxSize: Double,
+    fromServer: js.UndefOr[scala.Nothing],
+    customResizer: CustomResizerCallBack
+  ): PromiseOptions = js.native
   def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: Double, fromServer: Boolean): PromiseOptions = js.native
   def drawThumbnail(
     id: Double,

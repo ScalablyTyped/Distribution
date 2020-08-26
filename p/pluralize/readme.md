@@ -10,8 +10,8 @@ Pluralize and singularize any word
 | Full name          | pluralize |
 | Keywords           | plural, plurals, pluralize, singular, singularize, inflection |
 | # releases         | 2 |
-| # dependents       | 1961 |
-| # downloads        | 208424434 |
+| # dependents       | 1985 |
+| # downloads        | 206695344 |
 | # stars            | 33 |
 
 ## Links

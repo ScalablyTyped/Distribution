@@ -38,22 +38,50 @@ trait CreateModelInput extends js.Object {
 
 object CreateModelInput {
   @scala.inline
-  def apply(
-    ExecutionRoleArn: RoleArn,
-    ModelName: ModelName,
-    Containers: ContainerDefinitionList = null,
-    EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined,
-    PrimaryContainer: ContainerDefinition = null,
-    Tags: TagList = null,
-    VpcConfig: VpcConfig = null
-  ): CreateModelInput = {
+  def apply(ExecutionRoleArn: RoleArn, ModelName: ModelName): CreateModelInput = {
     val __obj = js.Dynamic.literal(ExecutionRoleArn = ExecutionRoleArn.asInstanceOf[js.Any], ModelName = ModelName.asInstanceOf[js.Any])
-    if (Containers != null) __obj.updateDynamic("Containers")(Containers.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableNetworkIsolation)) __obj.updateDynamic("EnableNetworkIsolation")(EnableNetworkIsolation.get.asInstanceOf[js.Any])
-    if (PrimaryContainer != null) __obj.updateDynamic("PrimaryContainer")(PrimaryContainer.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateModelInput]
   }
+  @scala.inline
+  implicit class CreateModelInputOps[Self <: CreateModelInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModelName(value: ModelName): Self = this.set("ModelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainersVarargs(value: ContainerDefinition*): Self = this.set("Containers", js.Array(value :_*))
+    @scala.inline
+    def setContainers(value: ContainerDefinitionList): Self = this.set("Containers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainers: Self = this.set("Containers", js.undefined)
+    @scala.inline
+    def setEnableNetworkIsolation(value: Boolean): Self = this.set("EnableNetworkIsolation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableNetworkIsolation: Self = this.set("EnableNetworkIsolation", js.undefined)
+    @scala.inline
+    def setPrimaryContainer(value: ContainerDefinition): Self = this.set("PrimaryContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryContainer: Self = this.set("PrimaryContainer", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

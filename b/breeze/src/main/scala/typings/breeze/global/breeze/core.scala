@@ -1,7 +1,6 @@
 package typings.breeze.global.breeze
 
 import typings.breeze.breeze.core.ErrorCallback
-import typings.breeze.breeze.core.IEnum
 import typings.std.PropertyDescriptor
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,24 +14,11 @@ object core extends js.Object {
     extends typings.breeze.breeze.core.Enum {
     def this(name: String) = this()
     def this(name: String, methodObj: js.Any) = this()
-    /* CompleteClass */
-    override def contains(`object`: js.Any): Boolean = js.native
-    /* CompleteClass */
-    override def fromName(name: String): typings.breeze.breeze.core.EnumSymbol = js.native
-    /* CompleteClass */
-    override def getNames(): js.Array[String] = js.native
-    /* CompleteClass */
-    override def getSymbols(): js.Array[typings.breeze.breeze.core.EnumSymbol] = js.native
   }
   
   @js.native
   class EnumSymbol ()
-    extends typings.breeze.breeze.core.EnumSymbol {
-    /* CompleteClass */
-    override var parentEnum: IEnum = js.native
-    /* CompleteClass */
-    override def getName(): String = js.native
-  }
+    extends typings.breeze.breeze.core.EnumSymbol
   
   @js.native
   class Event protected ()

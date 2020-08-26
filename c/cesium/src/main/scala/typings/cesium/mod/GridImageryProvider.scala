@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GridImageryProvider () extends ImageryProvider {
   def this(options: CanvasSize) = this()
+  def this(options: js.UndefOr[scala.Nothing], backgroundColor: Color) = this()
   def this(options: CanvasSize, backgroundColor: Color) = this()
 }
 

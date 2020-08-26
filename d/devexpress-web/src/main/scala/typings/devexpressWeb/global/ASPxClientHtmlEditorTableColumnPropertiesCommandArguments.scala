@@ -17,15 +17,5 @@ class ASPxClientHtmlEditorTableColumnPropertiesCommandArguments protected ()
     * @param selectedElement An object containing the currently selected element in the HTML editor.
     */
   def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
-  /**
-    * Gets the currently selected element in the ASPxHtmlEditor.
-    */
-  /* CompleteClass */
-  override var selectedElement: js.Any = js.native
-  /**
-    * Contains the style settings defining the appearance of the target column element.
-    */
-  /* CompleteClass */
-  override var styleSettings: typings.devexpressWeb.ASPxClientHtmlEditorCommandStyleSettings = js.native
 }
 

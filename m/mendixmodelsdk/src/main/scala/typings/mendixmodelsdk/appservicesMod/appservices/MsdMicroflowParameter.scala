@@ -25,20 +25,20 @@ class MsdMicroflowParameter protected () extends Element {
   @JSName("model")
   var model_FMsdMicroflowParameter: IModel = js.native
   def canBeEmpty: Boolean = js.native
-  def canBeEmpty(newValue: Boolean): js.Any = js.native
+  def canBeEmpty_=(newValue: Boolean): Unit = js.native
   def containerAsMsdMicroflow: MsdMicroflow = js.native
   def containerAsPublishedParameter: PublishedParameter = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   /**
     * In version 6.1.0: deleted
     */
   def systemEntityType: String = js.native
-  def systemEntityType(newValue: String): js.Any = js.native
+  def systemEntityType_=(newValue: String): Unit = js.native
   def `type`: String = js.native
-  def `type`(newValue: String): js.Any = js.native
   def typeSpecification: String = js.native
-  def typeSpecification(newValue: String): js.Any = js.native
+  def typeSpecification_=(newValue: String): Unit = js.native
+  def type_=(newValue: String): Unit = js.native
 }
 
 /* static members */

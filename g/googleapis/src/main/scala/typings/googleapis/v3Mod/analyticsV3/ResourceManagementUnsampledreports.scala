@@ -30,6 +30,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementUnsampledreportsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementUnsampledreportsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,6 +61,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUnsampledReport] = js.native
   def get(callback: BodyResponseCallback[SchemaUnsampledReport]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUnsampledReport] = js.native
   def get(params: ParamsResourceManagementUnsampledreportsGet): GaxiosPromise[SchemaUnsampledReport] = js.native
   def get(
     params: ParamsResourceManagementUnsampledreportsGet,
@@ -93,6 +95,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaUnsampledReport] = js.native
   def insert(callback: BodyResponseCallback[SchemaUnsampledReport]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUnsampledReport] = js.native
   def insert(params: ParamsResourceManagementUnsampledreportsInsert): GaxiosPromise[SchemaUnsampledReport] = js.native
   def insert(
     params: ParamsResourceManagementUnsampledreportsInsert,
@@ -127,6 +130,7 @@ class ResourceManagementUnsampledreports protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaUnsampledReports] = js.native
   def list(callback: BodyResponseCallback[SchemaUnsampledReports]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUnsampledReports] = js.native
   def list(params: ParamsResourceManagementUnsampledreportsList): GaxiosPromise[SchemaUnsampledReports] = js.native
   def list(
     params: ParamsResourceManagementUnsampledreportsList,

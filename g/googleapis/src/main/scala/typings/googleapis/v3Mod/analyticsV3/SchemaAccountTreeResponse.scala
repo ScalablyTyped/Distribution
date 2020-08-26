@@ -31,18 +31,38 @@ trait SchemaAccountTreeResponse extends js.Object {
 
 object SchemaAccountTreeResponse {
   @scala.inline
-  def apply(
-    account: SchemaAccount = null,
-    kind: String = null,
-    profile: SchemaProfile = null,
-    webproperty: SchemaWebproperty = null
-  ): SchemaAccountTreeResponse = {
+  def apply(): SchemaAccountTreeResponse = {
     val __obj = js.Dynamic.literal()
-    if (account != null) __obj.updateDynamic("account")(account.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (webproperty != null) __obj.updateDynamic("webproperty")(webproperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountTreeResponse]
   }
+  @scala.inline
+  implicit class SchemaAccountTreeResponseOps[Self <: SchemaAccountTreeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: SchemaAccount): Self = this.set("account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccount: Self = this.set("account", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setProfile(value: SchemaProfile): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setWebproperty(value: SchemaWebproperty): Self = this.set("webproperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebproperty: Self = this.set("webproperty", js.undefined)
+  }
+  
 }
 

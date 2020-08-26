@@ -51,6 +51,7 @@ class RangeAggregation protected () extends Aggregation {
     Adds a range to the list of exsiting range expressions.
     */
   def range(from: Double): RangeAggregation = js.native
+  def range(from: Double, to: js.UndefOr[scala.Nothing], key: String): RangeAggregation = js.native
   def range(from: Double, to: Double): RangeAggregation = js.native
   def range(from: Double, to: Double, key: String): RangeAggregation = js.native
   /*

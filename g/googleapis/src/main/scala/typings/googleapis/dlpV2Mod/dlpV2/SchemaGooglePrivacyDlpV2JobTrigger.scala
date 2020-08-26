@@ -58,30 +58,66 @@ trait SchemaGooglePrivacyDlpV2JobTrigger extends js.Object {
 
 object SchemaGooglePrivacyDlpV2JobTrigger {
   @scala.inline
-  def apply(
-    createTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    errors: js.Array[SchemaGooglePrivacyDlpV2Error] = null,
-    inspectJob: SchemaGooglePrivacyDlpV2InspectJobConfig = null,
-    lastRunTime: String = null,
-    name: String = null,
-    status: String = null,
-    triggers: js.Array[SchemaGooglePrivacyDlpV2Trigger] = null,
-    updateTime: String = null
-  ): SchemaGooglePrivacyDlpV2JobTrigger = {
+  def apply(): SchemaGooglePrivacyDlpV2JobTrigger = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (inspectJob != null) __obj.updateDynamic("inspectJob")(inspectJob.asInstanceOf[js.Any])
-    if (lastRunTime != null) __obj.updateDynamic("lastRunTime")(lastRunTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (triggers != null) __obj.updateDynamic("triggers")(triggers.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2JobTrigger]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2JobTriggerOps[Self <: SchemaGooglePrivacyDlpV2JobTrigger] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: SchemaGooglePrivacyDlpV2Error*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: js.Array[SchemaGooglePrivacyDlpV2Error]): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setInspectJob(value: SchemaGooglePrivacyDlpV2InspectJobConfig): Self = this.set("inspectJob", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInspectJob: Self = this.set("inspectJob", js.undefined)
+    @scala.inline
+    def setLastRunTime(value: String): Self = this.set("lastRunTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRunTime: Self = this.set("lastRunTime", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTriggersVarargs(value: SchemaGooglePrivacyDlpV2Trigger*): Self = this.set("triggers", js.Array(value :_*))
+    @scala.inline
+    def setTriggers(value: js.Array[SchemaGooglePrivacyDlpV2Trigger]): Self = this.set("triggers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggers: Self = this.set("triggers", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

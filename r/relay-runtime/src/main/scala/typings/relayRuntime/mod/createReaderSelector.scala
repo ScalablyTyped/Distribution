@@ -13,5 +13,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object createReaderSelector extends js.Object {
   def apply(fragment: ReaderFragment, dataID: DataID, variables: Variables, request: RequestDescriptor): SingularReaderSelector = js.native
+  def apply(
+    fragment: ReaderFragment,
+    dataID: DataID,
+    variables: Variables,
+    request: RequestDescriptor,
+     // default: `false`
+  isWithinUnmatchedTypeRefinement: Boolean
+  ): SingularReaderSelector = js.native
 }
 

@@ -50,6 +50,7 @@ trait PlusIoFile extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def slice(): PlusIoFile = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): PlusIoFile = js.native
   def slice(start: Double): PlusIoFile = js.native
   def slice(start: Double, end: Double): PlusIoFile = js.native
 }

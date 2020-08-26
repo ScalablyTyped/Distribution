@@ -63,9 +63,168 @@ trait PageRequestManager extends js.Object {
     *                   (Optional) A string that contains the name of the validation group.
     */
   def beginAsyncPostBack(): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String,
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String,
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String,
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(updatePanelsToUpdate: js.UndefOr[scala.Nothing], eventTarget: String): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: String,
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: String,
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: String,
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(updatePanelsToUpdate: js.UndefOr[scala.Nothing], eventTarget: String, eventArgument: String): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: String,
+    eventArgument: String,
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: String,
+    eventArgument: String,
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.UndefOr[scala.Nothing],
+    eventTarget: String,
+    eventArgument: String,
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
   def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String]): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String,
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String,
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: js.UndefOr[scala.Nothing],
+    eventArgument: String,
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
   def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String], eventTarget: String): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: String,
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: String,
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean
+  ): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: String,
+    eventArgument: js.UndefOr[scala.Nothing],
+    causesValidation: Boolean,
+    validationGroup: String
+  ): Unit = js.native
   def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String], eventTarget: String, eventArgument: String): Unit = js.native
+  def beginAsyncPostBack(
+    updatePanelsToUpdate: js.Array[String],
+    eventTarget: String,
+    eventArgument: String,
+    causesValidation: js.UndefOr[scala.Nothing],
+    validationGroup: String
+  ): Unit = js.native
   def beginAsyncPostBack(
     updatePanelsToUpdate: js.Array[String],
     eventTarget: String,

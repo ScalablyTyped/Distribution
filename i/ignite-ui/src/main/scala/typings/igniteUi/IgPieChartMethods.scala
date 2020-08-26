@@ -38,6 +38,7 @@ trait IgPieChartMethods extends js.Object {
     * @param height The height of the image.
     */
   def exportImage(): js.Object = js.native
+  def exportImage(width: js.UndefOr[scala.Nothing], height: js.Object): js.Object = js.native
   def exportImage(width: js.Object): js.Object = js.native
   def exportImage(width: js.Object, height: js.Object): js.Object = js.native
   /**

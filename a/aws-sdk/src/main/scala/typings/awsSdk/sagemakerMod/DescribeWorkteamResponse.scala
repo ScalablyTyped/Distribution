@@ -18,5 +18,20 @@ object DescribeWorkteamResponse {
     val __obj = js.Dynamic.literal(Workteam = Workteam.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkteamResponse]
   }
+  @scala.inline
+  implicit class DescribeWorkteamResponseOps[Self <: DescribeWorkteamResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkteam(value: Workteam): Self = this.set("Workteam", value.asInstanceOf[js.Any])
+  }
+  
 }
 

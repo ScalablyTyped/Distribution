@@ -55,34 +55,74 @@ trait DescribeTaskExecutionResponse extends js.Object {
 
 object DescribeTaskExecutionResponse {
   @scala.inline
-  def apply(
-    BytesTransferred: js.UndefOr[long] = js.undefined,
-    BytesWritten: js.UndefOr[long] = js.undefined,
-    EstimatedBytesToTransfer: js.UndefOr[long] = js.undefined,
-    EstimatedFilesToTransfer: js.UndefOr[long] = js.undefined,
-    Excludes: FilterList = null,
-    FilesTransferred: js.UndefOr[long] = js.undefined,
-    Includes: FilterList = null,
-    Options: Options = null,
-    Result: TaskExecutionResultDetail = null,
-    StartTime: Time = null,
-    Status: TaskExecutionStatus = null,
-    TaskExecutionArn: TaskExecutionArn = null
-  ): DescribeTaskExecutionResponse = {
+  def apply(): DescribeTaskExecutionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BytesTransferred)) __obj.updateDynamic("BytesTransferred")(BytesTransferred.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BytesWritten)) __obj.updateDynamic("BytesWritten")(BytesWritten.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedBytesToTransfer)) __obj.updateDynamic("EstimatedBytesToTransfer")(EstimatedBytesToTransfer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EstimatedFilesToTransfer)) __obj.updateDynamic("EstimatedFilesToTransfer")(EstimatedFilesToTransfer.get.asInstanceOf[js.Any])
-    if (Excludes != null) __obj.updateDynamic("Excludes")(Excludes.asInstanceOf[js.Any])
-    if (!js.isUndefined(FilesTransferred)) __obj.updateDynamic("FilesTransferred")(FilesTransferred.get.asInstanceOf[js.Any])
-    if (Includes != null) __obj.updateDynamic("Includes")(Includes.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (Result != null) __obj.updateDynamic("Result")(Result.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TaskExecutionArn != null) __obj.updateDynamic("TaskExecutionArn")(TaskExecutionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTaskExecutionResponse]
   }
+  @scala.inline
+  implicit class DescribeTaskExecutionResponseOps[Self <: DescribeTaskExecutionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesTransferred(value: long): Self = this.set("BytesTransferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesTransferred: Self = this.set("BytesTransferred", js.undefined)
+    @scala.inline
+    def setBytesWritten(value: long): Self = this.set("BytesWritten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesWritten: Self = this.set("BytesWritten", js.undefined)
+    @scala.inline
+    def setEstimatedBytesToTransfer(value: long): Self = this.set("EstimatedBytesToTransfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedBytesToTransfer: Self = this.set("EstimatedBytesToTransfer", js.undefined)
+    @scala.inline
+    def setEstimatedFilesToTransfer(value: long): Self = this.set("EstimatedFilesToTransfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEstimatedFilesToTransfer: Self = this.set("EstimatedFilesToTransfer", js.undefined)
+    @scala.inline
+    def setExcludesVarargs(value: FilterRule*): Self = this.set("Excludes", js.Array(value :_*))
+    @scala.inline
+    def setExcludes(value: FilterList): Self = this.set("Excludes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludes: Self = this.set("Excludes", js.undefined)
+    @scala.inline
+    def setFilesTransferred(value: long): Self = this.set("FilesTransferred", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilesTransferred: Self = this.set("FilesTransferred", js.undefined)
+    @scala.inline
+    def setIncludesVarargs(value: FilterRule*): Self = this.set("Includes", js.Array(value :_*))
+    @scala.inline
+    def setIncludes(value: FilterList): Self = this.set("Includes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludes: Self = this.set("Includes", js.undefined)
+    @scala.inline
+    def setOptions(value: Options): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setResult(value: TaskExecutionResultDetail): Self = this.set("Result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("Result", js.undefined)
+    @scala.inline
+    def setStartTime(value: Time): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: TaskExecutionStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTaskExecutionArn(value: TaskExecutionArn): Self = this.set("TaskExecutionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskExecutionArn: Self = this.set("TaskExecutionArn", js.undefined)
+  }
+  
 }
 

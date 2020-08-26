@@ -7,108 +7,187 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MultiSliderProps extends js.Object {
-  var allowOverlap: js.UndefOr[Boolean] = js.undefined
-  var containerStyle: js.UndefOr[ViewStyle] = js.undefined
-  var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
-  var customMarkerLeft: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
-  var customMarkerRight: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
-  var enabledOne: js.UndefOr[Boolean] = js.undefined
-  var enabledTwo: js.UndefOr[Boolean] = js.undefined
-  var isMarkersSeparated: js.UndefOr[Boolean] = js.undefined
-  var markerContainerStyle: js.UndefOr[ViewStyle] = js.undefined
-  var markerOffsetX: js.UndefOr[Double] = js.undefined
-  var markerOffsetY: js.UndefOr[Double] = js.undefined
-  var markerStyle: js.UndefOr[ViewStyle] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var onToggleOne: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onToggleTwo: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onValuesChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
-  var onValuesChangeFinish: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
-  var onValuesChangeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var optionsArray: js.UndefOr[js.Array[Double]] = js.undefined
-  var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.undefined
-  var selectedStyle: js.UndefOr[ViewStyle] = js.undefined
-  var sliderLength: js.UndefOr[Double] = js.undefined
-  var snapped: js.UndefOr[Boolean] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
-  var touchDimensions: js.UndefOr[BorderRadius] = js.undefined
-  var trackStyle: js.UndefOr[ViewStyle] = js.undefined
-  var unselectedStyle: js.UndefOr[ViewStyle] = js.undefined
-  var valuePrefix: js.UndefOr[String] = js.undefined
-  var valueSuffix: js.UndefOr[String] = js.undefined
-  var values: js.UndefOr[js.Array[Double]] = js.undefined
+  var allowOverlap: js.UndefOr[Boolean] = js.native
+  var containerStyle: js.UndefOr[ViewStyle] = js.native
+  var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.native
+  var customMarkerLeft: js.UndefOr[ComponentType[MarkerProps]] = js.native
+  var customMarkerRight: js.UndefOr[ComponentType[MarkerProps]] = js.native
+  var enabledOne: js.UndefOr[Boolean] = js.native
+  var enabledTwo: js.UndefOr[Boolean] = js.native
+  var isMarkersSeparated: js.UndefOr[Boolean] = js.native
+  var markerContainerStyle: js.UndefOr[ViewStyle] = js.native
+  var markerOffsetX: js.UndefOr[Double] = js.native
+  var markerOffsetY: js.UndefOr[Double] = js.native
+  var markerStyle: js.UndefOr[ViewStyle] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var onToggleOne: js.UndefOr[js.Function0[Unit]] = js.native
+  var onToggleTwo: js.UndefOr[js.Function0[Unit]] = js.native
+  var onValuesChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+  var onValuesChangeFinish: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+  var onValuesChangeStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var optionsArray: js.UndefOr[js.Array[Double]] = js.native
+  var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.native
+  var selectedStyle: js.UndefOr[ViewStyle] = js.native
+  var sliderLength: js.UndefOr[Double] = js.native
+  var snapped: js.UndefOr[Boolean] = js.native
+  var step: js.UndefOr[Double] = js.native
+  var touchDimensions: js.UndefOr[BorderRadius] = js.native
+  var trackStyle: js.UndefOr[ViewStyle] = js.native
+  var unselectedStyle: js.UndefOr[ViewStyle] = js.native
+  var valuePrefix: js.UndefOr[String] = js.native
+  var valueSuffix: js.UndefOr[String] = js.native
+  var values: js.UndefOr[js.Array[Double]] = js.native
 }
 
 object MultiSliderProps {
   @scala.inline
-  def apply(
-    allowOverlap: js.UndefOr[Boolean] = js.undefined,
-    containerStyle: ViewStyle = null,
-    customMarker: ComponentType[MarkerProps] = null,
-    customMarkerLeft: ComponentType[MarkerProps] = null,
-    customMarkerRight: ComponentType[MarkerProps] = null,
-    enabledOne: js.UndefOr[Boolean] = js.undefined,
-    enabledTwo: js.UndefOr[Boolean] = js.undefined,
-    isMarkersSeparated: js.UndefOr[Boolean] = js.undefined,
-    markerContainerStyle: ViewStyle = null,
-    markerOffsetX: js.UndefOr[Double] = js.undefined,
-    markerOffsetY: js.UndefOr[Double] = js.undefined,
-    markerStyle: ViewStyle = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    onToggleOne: () => Unit = null,
-    onToggleTwo: () => Unit = null,
-    onValuesChange: /* values */ js.Array[Double] => Unit = null,
-    onValuesChangeFinish: /* values */ js.Array[Double] => Unit = null,
-    onValuesChangeStart: () => Unit = null,
-    optionsArray: js.Array[Double] = null,
-    pressedMarkerStyle: ViewStyle = null,
-    selectedStyle: ViewStyle = null,
-    sliderLength: js.UndefOr[Double] = js.undefined,
-    snapped: js.UndefOr[Boolean] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined,
-    touchDimensions: BorderRadius = null,
-    trackStyle: ViewStyle = null,
-    unselectedStyle: ViewStyle = null,
-    valuePrefix: String = null,
-    valueSuffix: String = null,
-    values: js.Array[Double] = null
-  ): MultiSliderProps = {
+  def apply(): MultiSliderProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap.get.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (customMarker != null) __obj.updateDynamic("customMarker")(customMarker.asInstanceOf[js.Any])
-    if (customMarkerLeft != null) __obj.updateDynamic("customMarkerLeft")(customMarkerLeft.asInstanceOf[js.Any])
-    if (customMarkerRight != null) __obj.updateDynamic("customMarkerRight")(customMarkerRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabledOne)) __obj.updateDynamic("enabledOne")(enabledOne.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabledTwo)) __obj.updateDynamic("enabledTwo")(enabledTwo.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMarkersSeparated)) __obj.updateDynamic("isMarkersSeparated")(isMarkersSeparated.get.asInstanceOf[js.Any])
-    if (markerContainerStyle != null) __obj.updateDynamic("markerContainerStyle")(markerContainerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerOffsetX)) __obj.updateDynamic("markerOffsetX")(markerOffsetX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(markerOffsetY)) __obj.updateDynamic("markerOffsetY")(markerOffsetY.get.asInstanceOf[js.Any])
-    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (onToggleOne != null) __obj.updateDynamic("onToggleOne")(js.Any.fromFunction0(onToggleOne))
-    if (onToggleTwo != null) __obj.updateDynamic("onToggleTwo")(js.Any.fromFunction0(onToggleTwo))
-    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction1(onValuesChange))
-    if (onValuesChangeFinish != null) __obj.updateDynamic("onValuesChangeFinish")(js.Any.fromFunction1(onValuesChangeFinish))
-    if (onValuesChangeStart != null) __obj.updateDynamic("onValuesChangeStart")(js.Any.fromFunction0(onValuesChangeStart))
-    if (optionsArray != null) __obj.updateDynamic("optionsArray")(optionsArray.asInstanceOf[js.Any])
-    if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle.asInstanceOf[js.Any])
-    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(sliderLength)) __obj.updateDynamic("sliderLength")(sliderLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapped)) __obj.updateDynamic("snapped")(snapped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (touchDimensions != null) __obj.updateDynamic("touchDimensions")(touchDimensions.asInstanceOf[js.Any])
-    if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
-    if (unselectedStyle != null) __obj.updateDynamic("unselectedStyle")(unselectedStyle.asInstanceOf[js.Any])
-    if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix.asInstanceOf[js.Any])
-    if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiSliderProps]
   }
+  @scala.inline
+  implicit class MultiSliderPropsOps[Self <: MultiSliderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowOverlap(value: Boolean): Self = this.set("allowOverlap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowOverlap: Self = this.set("allowOverlap", js.undefined)
+    @scala.inline
+    def setContainerStyle(value: ViewStyle): Self = this.set("containerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerStyle: Self = this.set("containerStyle", js.undefined)
+    @scala.inline
+    def setCustomMarker(value: ComponentType[MarkerProps]): Self = this.set("customMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMarker: Self = this.set("customMarker", js.undefined)
+    @scala.inline
+    def setCustomMarkerLeft(value: ComponentType[MarkerProps]): Self = this.set("customMarkerLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMarkerLeft: Self = this.set("customMarkerLeft", js.undefined)
+    @scala.inline
+    def setCustomMarkerRight(value: ComponentType[MarkerProps]): Self = this.set("customMarkerRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMarkerRight: Self = this.set("customMarkerRight", js.undefined)
+    @scala.inline
+    def setEnabledOne(value: Boolean): Self = this.set("enabledOne", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledOne: Self = this.set("enabledOne", js.undefined)
+    @scala.inline
+    def setEnabledTwo(value: Boolean): Self = this.set("enabledTwo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledTwo: Self = this.set("enabledTwo", js.undefined)
+    @scala.inline
+    def setIsMarkersSeparated(value: Boolean): Self = this.set("isMarkersSeparated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsMarkersSeparated: Self = this.set("isMarkersSeparated", js.undefined)
+    @scala.inline
+    def setMarkerContainerStyle(value: ViewStyle): Self = this.set("markerContainerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerContainerStyle: Self = this.set("markerContainerStyle", js.undefined)
+    @scala.inline
+    def setMarkerOffsetX(value: Double): Self = this.set("markerOffsetX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerOffsetX: Self = this.set("markerOffsetX", js.undefined)
+    @scala.inline
+    def setMarkerOffsetY(value: Double): Self = this.set("markerOffsetY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerOffsetY: Self = this.set("markerOffsetY", js.undefined)
+    @scala.inline
+    def setMarkerStyle(value: ViewStyle): Self = this.set("markerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerStyle: Self = this.set("markerStyle", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOnToggleOne(value: () => Unit): Self = this.set("onToggleOne", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnToggleOne: Self = this.set("onToggleOne", js.undefined)
+    @scala.inline
+    def setOnToggleTwo(value: () => Unit): Self = this.set("onToggleTwo", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnToggleTwo: Self = this.set("onToggleTwo", js.undefined)
+    @scala.inline
+    def setOnValuesChange(value: /* values */ js.Array[Double] => Unit): Self = this.set("onValuesChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnValuesChange: Self = this.set("onValuesChange", js.undefined)
+    @scala.inline
+    def setOnValuesChangeFinish(value: /* values */ js.Array[Double] => Unit): Self = this.set("onValuesChangeFinish", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnValuesChangeFinish: Self = this.set("onValuesChangeFinish", js.undefined)
+    @scala.inline
+    def setOnValuesChangeStart(value: () => Unit): Self = this.set("onValuesChangeStart", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnValuesChangeStart: Self = this.set("onValuesChangeStart", js.undefined)
+    @scala.inline
+    def setOptionsArrayVarargs(value: Double*): Self = this.set("optionsArray", js.Array(value :_*))
+    @scala.inline
+    def setOptionsArray(value: js.Array[Double]): Self = this.set("optionsArray", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsArray: Self = this.set("optionsArray", js.undefined)
+    @scala.inline
+    def setPressedMarkerStyle(value: ViewStyle): Self = this.set("pressedMarkerStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePressedMarkerStyle: Self = this.set("pressedMarkerStyle", js.undefined)
+    @scala.inline
+    def setSelectedStyle(value: ViewStyle): Self = this.set("selectedStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedStyle: Self = this.set("selectedStyle", js.undefined)
+    @scala.inline
+    def setSliderLength(value: Double): Self = this.set("sliderLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSliderLength: Self = this.set("sliderLength", js.undefined)
+    @scala.inline
+    def setSnapped(value: Boolean): Self = this.set("snapped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapped: Self = this.set("snapped", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+    @scala.inline
+    def setTouchDimensions(value: BorderRadius): Self = this.set("touchDimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchDimensions: Self = this.set("touchDimensions", js.undefined)
+    @scala.inline
+    def setTrackStyle(value: ViewStyle): Self = this.set("trackStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrackStyle: Self = this.set("trackStyle", js.undefined)
+    @scala.inline
+    def setUnselectedStyle(value: ViewStyle): Self = this.set("unselectedStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnselectedStyle: Self = this.set("unselectedStyle", js.undefined)
+    @scala.inline
+    def setValuePrefix(value: String): Self = this.set("valuePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValuePrefix: Self = this.set("valuePrefix", js.undefined)
+    @scala.inline
+    def setValueSuffix(value: String): Self = this.set("valueSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValueSuffix: Self = this.set("valueSuffix", js.undefined)
+    @scala.inline
+    def setValuesVarargs(value: Double*): Self = this.set("values", js.Array(value :_*))
+    @scala.inline
+    def setValues(value: js.Array[Double]): Self = this.set("values", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValues: Self = this.set("values", js.undefined)
+  }
+  
 }
 

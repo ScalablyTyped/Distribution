@@ -9,7 +9,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/image-property relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/image relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "pages.Icon")
 @js.native

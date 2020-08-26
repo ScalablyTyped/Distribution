@@ -20,28 +20,58 @@ trait PartialClassNameMapAppBar extends js.Object {
 
 object PartialClassNameMapAppBar {
   @scala.inline
-  def apply(
-    colorDefault: String = null,
-    colorPrimary: String = null,
-    colorSecondary: String = null,
-    positionAbsolute: String = null,
-    positionFixed: String = null,
-    positionRelative: String = null,
-    positionStatic: String = null,
-    positionSticky: String = null,
-    root: String = null
-  ): PartialClassNameMapAppBar = {
+  def apply(): PartialClassNameMapAppBar = {
     val __obj = js.Dynamic.literal()
-    if (colorDefault != null) __obj.updateDynamic("colorDefault")(colorDefault.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (positionAbsolute != null) __obj.updateDynamic("positionAbsolute")(positionAbsolute.asInstanceOf[js.Any])
-    if (positionFixed != null) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
-    if (positionRelative != null) __obj.updateDynamic("positionRelative")(positionRelative.asInstanceOf[js.Any])
-    if (positionStatic != null) __obj.updateDynamic("positionStatic")(positionStatic.asInstanceOf[js.Any])
-    if (positionSticky != null) __obj.updateDynamic("positionSticky")(positionSticky.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapAppBar]
   }
+  @scala.inline
+  implicit class PartialClassNameMapAppBarOps[Self <: PartialClassNameMapAppBar] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorDefault(value: String): Self = this.set("colorDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorDefault: Self = this.set("colorDefault", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setPositionAbsolute(value: String): Self = this.set("positionAbsolute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionAbsolute: Self = this.set("positionAbsolute", js.undefined)
+    @scala.inline
+    def setPositionFixed(value: String): Self = this.set("positionFixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionFixed: Self = this.set("positionFixed", js.undefined)
+    @scala.inline
+    def setPositionRelative(value: String): Self = this.set("positionRelative", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionRelative: Self = this.set("positionRelative", js.undefined)
+    @scala.inline
+    def setPositionStatic(value: String): Self = this.set("positionStatic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionStatic: Self = this.set("positionStatic", js.undefined)
+    @scala.inline
+    def setPositionSticky(value: String): Self = this.set("positionSticky", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionSticky: Self = this.set("positionSticky", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

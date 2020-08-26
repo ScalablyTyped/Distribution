@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_dropotron"
-version := "1.4.3-dt-20200515Z-242f75"
-scalaVersion := "2.13.2"
+version := "1.4.3-dt-20200515Z-10e737"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

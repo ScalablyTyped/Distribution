@@ -28,6 +28,7 @@ class ResourceApis protected () extends js.Object {
     */
   def getRest(): GaxiosPromise[SchemaRestDescription] = js.native
   def getRest(callback: BodyResponseCallback[SchemaRestDescription]): Unit = js.native
+  def getRest(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRestDescription] = js.native
   def getRest(params: ParamsResourceApisGetrest): GaxiosPromise[SchemaRestDescription] = js.native
   def getRest(params: ParamsResourceApisGetrest, callback: BodyResponseCallback[SchemaRestDescription]): Unit = js.native
   def getRest(
@@ -56,6 +57,7 @@ class ResourceApis protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaDirectoryList] = js.native
   def list(callback: BodyResponseCallback[SchemaDirectoryList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDirectoryList] = js.native
   def list(params: ParamsResourceApisList): GaxiosPromise[SchemaDirectoryList] = js.native
   def list(params: ParamsResourceApisList, callback: BodyResponseCallback[SchemaDirectoryList]): Unit = js.native
   def list(

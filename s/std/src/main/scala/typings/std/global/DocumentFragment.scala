@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("DocumentFragment")
 @js.native
 class DocumentFragment ()
-  extends typings.std.DocumentFragment {
-  /**
-    * Returns the first element within node's descendants whose ID is elementId.
-    */
-  /* CompleteClass */
-  override def getElementById(elementId: java.lang.String): typings.std.Element | Null = js.native
-}
+  extends typings.std.DocumentFragment
 
 @JSGlobal("DocumentFragment")
 @js.native

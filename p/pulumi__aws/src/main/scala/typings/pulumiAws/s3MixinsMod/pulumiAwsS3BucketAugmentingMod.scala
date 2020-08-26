@@ -30,6 +30,12 @@ object pulumiAwsS3BucketAugmentingMod extends js.Object {
       * called whenever a matching [s3.Object] is created.
       */
     def onObjectCreated(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
+    def onObjectCreated(
+      name: String,
+      handler: BucketEventHandler,
+      args: js.UndefOr[scala.Nothing],
+      opts: ComponentResourceOptions
+    ): BucketEventSubscription = js.native
     def onObjectCreated(name: String, handler: BucketEventHandler, args: ObjectCreatedSubscriptionArgs): BucketEventSubscription = js.native
     def onObjectCreated(
       name: String,
@@ -43,6 +49,12 @@ object pulumiAwsS3BucketAugmentingMod extends js.Object {
       * called whenever an matching [s3.Object] is removed.
       */
     def onObjectRemoved(name: String, handler: BucketEventHandler): BucketEventSubscription = js.native
+    def onObjectRemoved(
+      name: String,
+      handler: BucketEventHandler,
+      args: js.UndefOr[scala.Nothing],
+      opts: ComponentResourceOptions
+    ): BucketEventSubscription = js.native
     def onObjectRemoved(name: String, handler: BucketEventHandler, args: ObjectRemovedSubscriptionArgs): BucketEventSubscription = js.native
     def onObjectRemoved(
       name: String,

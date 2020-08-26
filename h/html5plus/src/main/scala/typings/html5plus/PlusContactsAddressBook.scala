@@ -26,8 +26,69 @@ trait PlusContactsAddressBook extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   def find(): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ PlusContactsContact, Unit]
+  ): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ PlusContactsContact, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ PlusContactsContact, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def find(
+    contactFields: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ PlusContactsContact, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
   def find(contactFields: js.Array[String]): Unit = js.native
+  def find(
+    contactFields: js.Array[String],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.UndefOr[scala.Nothing],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
+  def find(
+    contactFields: js.Array[String],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def find(
+    contactFields: js.Array[String],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
   def find(contactFields: js.Array[String], successCB: js.Function1[/* result */ PlusContactsContact, Unit]): Unit = js.native
+  def find(
+    contactFields: js.Array[String],
+    successCB: js.Function1[/* result */ PlusContactsContact, Unit],
+    errorCB: js.UndefOr[scala.Nothing],
+    findOptions: PlusContactsContactFindOption
+  ): Unit = js.native
   def find(
     contactFields: js.Array[String],
     successCB: js.Function1[/* result */ PlusContactsContact, Unit],

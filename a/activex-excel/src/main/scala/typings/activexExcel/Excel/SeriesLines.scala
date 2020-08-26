@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SeriesLines extends js.Object {
-  val Application: typings.activexExcel.Excel.Application
-  val Border: typings.activexExcel.Excel.Border
-  val Creator: XlCreator
+  val Application: typings.activexExcel.Excel.Application = js.native
+  val Border: typings.activexExcel.Excel.Border = js.native
+  val Creator: XlCreator = js.native
   @JSName("Excel.SeriesLines_typekey")
-  var ExcelDotSeriesLines_typekey: SeriesLines
-  val Format: ChartFormat
-  val Name: String
-  val Parent: js.Any
-  def Delete(): js.Any
-  def Select(): js.Any
+  var ExcelDotSeriesLines_typekey: SeriesLines = js.native
+  val Format: ChartFormat = js.native
+  val Name: String = js.native
+  val Parent: js.Any = js.native
+  def Delete(): js.Any = js.native
+  def Select(): js.Any = js.native
 }
 
 object SeriesLines {
@@ -34,5 +35,36 @@ object SeriesLines {
     __obj.updateDynamic("Excel.SeriesLines_typekey")(ExcelDotSeriesLines_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesLines]
   }
+  @scala.inline
+  implicit class SeriesLinesOps[Self <: SeriesLines] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorder(value: Border): Self = this.set("Border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: XlCreator): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: () => js.Any): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setExcelDotSeriesLines_typekey(value: SeriesLines): Self = this.set("Excel.SeriesLines_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ChartFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelect(value: () => js.Any): Self = this.set("Select", js.Any.fromFunction0(value))
+  }
+  
 }
 

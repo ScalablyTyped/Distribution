@@ -100,38 +100,84 @@ trait SchemaReportRequest extends js.Object {
 
 object SchemaReportRequest {
   @scala.inline
-  def apply(
-    columns: js.Array[SchemaReportApiColumnSpec] = null,
-    downloadFormat: String = null,
-    filters: js.Array[Column] = null,
-    includeDeletedEntities: js.UndefOr[Boolean] = js.undefined,
-    includeRemovedEntities: js.UndefOr[Boolean] = js.undefined,
-    maxRowsPerFile: js.UndefOr[Double] = js.undefined,
-    orderBy: js.Array[SortOrder] = null,
-    reportScope: AdGroupId = null,
-    reportType: String = null,
-    rowCount: js.UndefOr[Double] = js.undefined,
-    startRow: js.UndefOr[Double] = js.undefined,
-    statisticsCurrency: String = null,
-    timeRange: ChangedAttributesSinceTimestamp = null,
-    verifySingleTimeZone: js.UndefOr[Boolean] = js.undefined
-  ): SchemaReportRequest = {
+  def apply(): SchemaReportRequest = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (downloadFormat != null) __obj.updateDynamic("downloadFormat")(downloadFormat.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeDeletedEntities)) __obj.updateDynamic("includeDeletedEntities")(includeDeletedEntities.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeRemovedEntities)) __obj.updateDynamic("includeRemovedEntities")(includeRemovedEntities.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRowsPerFile)) __obj.updateDynamic("maxRowsPerFile")(maxRowsPerFile.get.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (reportScope != null) __obj.updateDynamic("reportScope")(reportScope.asInstanceOf[js.Any])
-    if (reportType != null) __obj.updateDynamic("reportType")(reportType.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRow)) __obj.updateDynamic("startRow")(startRow.get.asInstanceOf[js.Any])
-    if (statisticsCurrency != null) __obj.updateDynamic("statisticsCurrency")(statisticsCurrency.asInstanceOf[js.Any])
-    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(verifySingleTimeZone)) __obj.updateDynamic("verifySingleTimeZone")(verifySingleTimeZone.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReportRequest]
   }
+  @scala.inline
+  implicit class SchemaReportRequestOps[Self <: SchemaReportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnsVarargs(value: SchemaReportApiColumnSpec*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[SchemaReportApiColumnSpec]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setDownloadFormat(value: String): Self = this.set("downloadFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownloadFormat: Self = this.set("downloadFormat", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Column*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[Column]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setIncludeDeletedEntities(value: Boolean): Self = this.set("includeDeletedEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeDeletedEntities: Self = this.set("includeDeletedEntities", js.undefined)
+    @scala.inline
+    def setIncludeRemovedEntities(value: Boolean): Self = this.set("includeRemovedEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeRemovedEntities: Self = this.set("includeRemovedEntities", js.undefined)
+    @scala.inline
+    def setMaxRowsPerFile(value: Double): Self = this.set("maxRowsPerFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRowsPerFile: Self = this.set("maxRowsPerFile", js.undefined)
+    @scala.inline
+    def setOrderByVarargs(value: SortOrder*): Self = this.set("orderBy", js.Array(value :_*))
+    @scala.inline
+    def setOrderBy(value: js.Array[SortOrder]): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setReportScope(value: AdGroupId): Self = this.set("reportScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportScope: Self = this.set("reportScope", js.undefined)
+    @scala.inline
+    def setReportType(value: String): Self = this.set("reportType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportType: Self = this.set("reportType", js.undefined)
+    @scala.inline
+    def setRowCount(value: Double): Self = this.set("rowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowCount: Self = this.set("rowCount", js.undefined)
+    @scala.inline
+    def setStartRow(value: Double): Self = this.set("startRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRow: Self = this.set("startRow", js.undefined)
+    @scala.inline
+    def setStatisticsCurrency(value: String): Self = this.set("statisticsCurrency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatisticsCurrency: Self = this.set("statisticsCurrency", js.undefined)
+    @scala.inline
+    def setTimeRange(value: ChangedAttributesSinceTimestamp): Self = this.set("timeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeRange: Self = this.set("timeRange", js.undefined)
+    @scala.inline
+    def setVerifySingleTimeZone(value: Boolean): Self = this.set("verifySingleTimeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifySingleTimeZone: Self = this.set("verifySingleTimeZone", js.undefined)
+  }
+  
 }
 

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A {@link RemoteAccessContentProvider} is a {@link ContentProvider} that provides access to contents available at other (remote) UCBs. */
+@js.native
 trait RemoteAccessContentProvider
   extends XContentProvider
      with XContentIdentifierFactory

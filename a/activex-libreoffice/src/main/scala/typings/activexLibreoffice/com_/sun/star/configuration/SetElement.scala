@@ -47,6 +47,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.configuration.GroupElement A complementary service for elements of a static heterogeneous collection.
   * @see com.sun.star.configuration.AccessRootElement A complementary service for the root element of a hierarchy.
   */
+@js.native
 trait SetElement
   extends XHierarchicalName
      with XNamed

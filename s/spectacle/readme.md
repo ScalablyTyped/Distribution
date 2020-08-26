@@ -1,7 +1,7 @@
 
 # Scala.js typings for spectacle
 
-Typings are for version 5.8.0
+Typings are for version 6.2.0
 
 ## Library description:
 ReactJS Powered Presentation Framework
@@ -12,7 +12,7 @@ ReactJS Powered Presentation Framework
 | Keywords           | - |
 | # releases         | 24 |
 | # dependents       | 15 |
-| # downloads        | 71445 |
+| # downloads        | 67659 |
 | # stars            | 6 |
 
 ## Links

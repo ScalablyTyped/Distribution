@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "combine-reducers"
-version := "1.0-dt-20200522Z-2b1fe4"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200522Z-cb5010"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

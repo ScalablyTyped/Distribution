@@ -18,10 +18,28 @@ trait GetClusterArgs extends js.Object {
 
 object GetClusterArgs {
   @scala.inline
-  def apply(clusterId: String, clusterState: String = null): GetClusterArgs = {
+  def apply(clusterId: String): GetClusterArgs = {
     val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any])
-    if (clusterState != null) __obj.updateDynamic("clusterState")(clusterState.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClusterArgs]
   }
+  @scala.inline
+  implicit class GetClusterArgsOps[Self <: GetClusterArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterId(value: String): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterState(value: String): Self = this.set("clusterState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterState: Self = this.set("clusterState", js.undefined)
+  }
+  
 }
 

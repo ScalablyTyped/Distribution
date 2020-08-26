@@ -7,87 +7,112 @@ import scala.scalajs.js.annotation._
 /**
   * Concept in target system for element
   */
+@js.native
 trait ConceptMapGroupElementTarget extends BackboneElement {
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.undefined
+  var _code: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.undefined
+  var _comment: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.undefined
+  var _display: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'equivalence'.
     */
-  var _equivalence: js.UndefOr[Element] = js.undefined
+  var _equivalence: js.UndefOr[Element] = js.native
   /**
     * Code that identifies the target element
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
   /**
     * Description of status/issues in mapping
     */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /**
     * Other elements required for this mapping (from context)
     */
-  var dependsOn: js.UndefOr[js.Array[ConceptMapGroupElementTargetDependsOn]] = js.undefined
+  var dependsOn: js.UndefOr[js.Array[ConceptMapGroupElementTargetDependsOn]] = js.native
   /**
     * Display for the code
     */
-  var display: js.UndefOr[String] = js.undefined
+  var display: js.UndefOr[String] = js.native
   /**
     * relatedto | equivalent | equal | wider | subsumes | narrower | specializes | inexact | unmatched | disjoint
     */
-  var equivalence: js.UndefOr[code] = js.undefined
+  var equivalence: js.UndefOr[code] = js.native
   /**
     * Other concepts that this mapping also produces
     */
-  var product: js.UndefOr[js.Array[ConceptMapGroupElementTargetDependsOn]] = js.undefined
+  var product: js.UndefOr[js.Array[ConceptMapGroupElementTargetDependsOn]] = js.native
 }
 
 object ConceptMapGroupElementTarget {
   @scala.inline
-  def apply(
-    _code: Element = null,
-    _comment: Element = null,
-    _display: Element = null,
-    _equivalence: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    code: code = null,
-    comment: String = null,
-    dependsOn: js.Array[ConceptMapGroupElementTargetDependsOn] = null,
-    display: String = null,
-    equivalence: code = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    modifierExtension: js.Array[Extension] = null,
-    product: js.Array[ConceptMapGroupElementTargetDependsOn] = null
-  ): ConceptMapGroupElementTarget = {
+  def apply(): ConceptMapGroupElementTarget = {
     val __obj = js.Dynamic.literal()
-    if (_code != null) __obj.updateDynamic("_code")(_code.asInstanceOf[js.Any])
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_display != null) __obj.updateDynamic("_display")(_display.asInstanceOf[js.Any])
-    if (_equivalence != null) __obj.updateDynamic("_equivalence")(_equivalence.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (equivalence != null) __obj.updateDynamic("equivalence")(equivalence.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (product != null) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConceptMapGroupElementTarget]
   }
+  @scala.inline
+  implicit class ConceptMapGroupElementTargetOps[Self <: ConceptMapGroupElementTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_code(value: Element): Self = this.set("_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_code: Self = this.set("_code", js.undefined)
+    @scala.inline
+    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_display(value: Element): Self = this.set("_display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_display: Self = this.set("_display", js.undefined)
+    @scala.inline
+    def set_equivalence(value: Element): Self = this.set("_equivalence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_equivalence: Self = this.set("_equivalence", js.undefined)
+    @scala.inline
+    def setCode(value: code): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setDependsOnVarargs(value: ConceptMapGroupElementTargetDependsOn*): Self = this.set("dependsOn", js.Array(value :_*))
+    @scala.inline
+    def setDependsOn(value: js.Array[ConceptMapGroupElementTargetDependsOn]): Self = this.set("dependsOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependsOn: Self = this.set("dependsOn", js.undefined)
+    @scala.inline
+    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setEquivalence(value: code): Self = this.set("equivalence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEquivalence: Self = this.set("equivalence", js.undefined)
+    @scala.inline
+    def setProductVarargs(value: ConceptMapGroupElementTargetDependsOn*): Self = this.set("product", js.Array(value :_*))
+    @scala.inline
+    def setProduct(value: js.Array[ConceptMapGroupElementTargetDependsOn]): Self = this.set("product", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduct: Self = this.set("product", js.undefined)
+  }
+  
 }
 

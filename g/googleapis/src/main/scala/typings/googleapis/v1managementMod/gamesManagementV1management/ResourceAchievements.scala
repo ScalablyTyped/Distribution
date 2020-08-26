@@ -29,6 +29,7 @@ class ResourceAchievements protected () extends js.Object {
     */
   def reset(): GaxiosPromise[SchemaAchievementResetResponse] = js.native
   def reset(callback: BodyResponseCallback[SchemaAchievementResetResponse]): Unit = js.native
+  def reset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementResetResponse] = js.native
   def reset(params: ParamsResourceAchievementsReset): GaxiosPromise[SchemaAchievementResetResponse] = js.native
   def reset(
     params: ParamsResourceAchievementsReset,
@@ -60,6 +61,7 @@ class ResourceAchievements protected () extends js.Object {
     */
   def resetAll(): GaxiosPromise[SchemaAchievementResetAllResponse] = js.native
   def resetAll(callback: BodyResponseCallback[SchemaAchievementResetAllResponse]): Unit = js.native
+  def resetAll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementResetAllResponse] = js.native
   def resetAll(params: ParamsResourceAchievementsResetall): GaxiosPromise[SchemaAchievementResetAllResponse] = js.native
   def resetAll(
     params: ParamsResourceAchievementsResetall,
@@ -90,6 +92,7 @@ class ResourceAchievements protected () extends js.Object {
     */
   def resetAllForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetAllForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def resetAllForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetAllForAllPlayers(params: ParamsResourceAchievementsResetallforallplayers): GaxiosPromise[Unit] = js.native
   def resetAllForAllPlayers(params: ParamsResourceAchievementsResetallforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetAllForAllPlayers(
@@ -119,6 +122,7 @@ class ResourceAchievements protected () extends js.Object {
     */
   def resetForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def resetForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceAchievementsResetforallplayers): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceAchievementsResetforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetForAllPlayers(
@@ -148,6 +152,7 @@ class ResourceAchievements protected () extends js.Object {
     */
   def resetMultipleForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetMultipleForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def resetMultipleForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetMultipleForAllPlayers(params: ParamsResourceAchievementsResetmultipleforallplayers): GaxiosPromise[Unit] = js.native
   def resetMultipleForAllPlayers(params: ParamsResourceAchievementsResetmultipleforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetMultipleForAllPlayers(

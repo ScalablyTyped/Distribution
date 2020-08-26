@@ -38,24 +38,50 @@ trait NetworkConnectionAction extends js.Object {
 
 object NetworkConnectionAction {
   @scala.inline
-  def apply(
-    Blocked: js.UndefOr[Boolean] = js.undefined,
-    ConnectionDirection: String = null,
-    LocalIpDetails: LocalIpDetails = null,
-    LocalPortDetails: LocalPortDetails = null,
-    Protocol: String = null,
-    RemoteIpDetails: RemoteIpDetails = null,
-    RemotePortDetails: RemotePortDetails = null
-  ): NetworkConnectionAction = {
+  def apply(): NetworkConnectionAction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Blocked)) __obj.updateDynamic("Blocked")(Blocked.get.asInstanceOf[js.Any])
-    if (ConnectionDirection != null) __obj.updateDynamic("ConnectionDirection")(ConnectionDirection.asInstanceOf[js.Any])
-    if (LocalIpDetails != null) __obj.updateDynamic("LocalIpDetails")(LocalIpDetails.asInstanceOf[js.Any])
-    if (LocalPortDetails != null) __obj.updateDynamic("LocalPortDetails")(LocalPortDetails.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (RemoteIpDetails != null) __obj.updateDynamic("RemoteIpDetails")(RemoteIpDetails.asInstanceOf[js.Any])
-    if (RemotePortDetails != null) __obj.updateDynamic("RemotePortDetails")(RemotePortDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkConnectionAction]
   }
+  @scala.inline
+  implicit class NetworkConnectionActionOps[Self <: NetworkConnectionAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlocked(value: Boolean): Self = this.set("Blocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlocked: Self = this.set("Blocked", js.undefined)
+    @scala.inline
+    def setConnectionDirection(value: String): Self = this.set("ConnectionDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionDirection: Self = this.set("ConnectionDirection", js.undefined)
+    @scala.inline
+    def setLocalIpDetails(value: LocalIpDetails): Self = this.set("LocalIpDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalIpDetails: Self = this.set("LocalIpDetails", js.undefined)
+    @scala.inline
+    def setLocalPortDetails(value: LocalPortDetails): Self = this.set("LocalPortDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalPortDetails: Self = this.set("LocalPortDetails", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setRemoteIpDetails(value: RemoteIpDetails): Self = this.set("RemoteIpDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteIpDetails: Self = this.set("RemoteIpDetails", js.undefined)
+    @scala.inline
+    def setRemotePortDetails(value: RemotePortDetails): Self = this.set("RemotePortDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemotePortDetails: Self = this.set("RemotePortDetails", js.undefined)
+  }
+  
 }
 

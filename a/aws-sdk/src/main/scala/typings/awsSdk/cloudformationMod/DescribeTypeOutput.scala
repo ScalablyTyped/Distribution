@@ -74,42 +74,86 @@ trait DescribeTypeOutput extends js.Object {
 
 object DescribeTypeOutput {
   @scala.inline
-  def apply(
-    Arn: TypeArn = null,
-    DefaultVersionId: TypeVersionId = null,
-    DeprecatedStatus: DeprecatedStatus = null,
-    Description: Description = null,
-    DocumentationUrl: OptionalSecureUrl = null,
-    ExecutionRoleArn: RoleArn = null,
-    IsDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined,
-    LastUpdated: Timestamp = null,
-    LoggingConfig: LoggingConfig = null,
-    ProvisioningType: ProvisioningType = null,
-    Schema: TypeSchema = null,
-    SourceUrl: OptionalSecureUrl = null,
-    TimeCreated: Timestamp = null,
-    Type: RegistryType = null,
-    TypeName: TypeName = null,
-    Visibility: Visibility = null
-  ): DescribeTypeOutput = {
+  def apply(): DescribeTypeOutput = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (DefaultVersionId != null) __obj.updateDynamic("DefaultVersionId")(DefaultVersionId.asInstanceOf[js.Any])
-    if (DeprecatedStatus != null) __obj.updateDynamic("DeprecatedStatus")(DeprecatedStatus.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DocumentationUrl != null) __obj.updateDynamic("DocumentationUrl")(DocumentationUrl.asInstanceOf[js.Any])
-    if (ExecutionRoleArn != null) __obj.updateDynamic("ExecutionRoleArn")(ExecutionRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsDefaultVersion)) __obj.updateDynamic("IsDefaultVersion")(IsDefaultVersion.get.asInstanceOf[js.Any])
-    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (LoggingConfig != null) __obj.updateDynamic("LoggingConfig")(LoggingConfig.asInstanceOf[js.Any])
-    if (ProvisioningType != null) __obj.updateDynamic("ProvisioningType")(ProvisioningType.asInstanceOf[js.Any])
-    if (Schema != null) __obj.updateDynamic("Schema")(Schema.asInstanceOf[js.Any])
-    if (SourceUrl != null) __obj.updateDynamic("SourceUrl")(SourceUrl.asInstanceOf[js.Any])
-    if (TimeCreated != null) __obj.updateDynamic("TimeCreated")(TimeCreated.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (TypeName != null) __obj.updateDynamic("TypeName")(TypeName.asInstanceOf[js.Any])
-    if (Visibility != null) __obj.updateDynamic("Visibility")(Visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTypeOutput]
   }
+  @scala.inline
+  implicit class DescribeTypeOutputOps[Self <: DescribeTypeOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: TypeArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setDefaultVersionId(value: TypeVersionId): Self = this.set("DefaultVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultVersionId: Self = this.set("DefaultVersionId", js.undefined)
+    @scala.inline
+    def setDeprecatedStatus(value: DeprecatedStatus): Self = this.set("DeprecatedStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeprecatedStatus: Self = this.set("DeprecatedStatus", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDocumentationUrl(value: OptionalSecureUrl): Self = this.set("DocumentationUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentationUrl: Self = this.set("DocumentationUrl", js.undefined)
+    @scala.inline
+    def setExecutionRoleArn(value: RoleArn): Self = this.set("ExecutionRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionRoleArn: Self = this.set("ExecutionRoleArn", js.undefined)
+    @scala.inline
+    def setIsDefaultVersion(value: IsDefaultVersion): Self = this.set("IsDefaultVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultVersion: Self = this.set("IsDefaultVersion", js.undefined)
+    @scala.inline
+    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    @scala.inline
+    def setLoggingConfig(value: LoggingConfig): Self = this.set("LoggingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfig: Self = this.set("LoggingConfig", js.undefined)
+    @scala.inline
+    def setProvisioningType(value: ProvisioningType): Self = this.set("ProvisioningType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvisioningType: Self = this.set("ProvisioningType", js.undefined)
+    @scala.inline
+    def setSchema(value: TypeSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("Schema", js.undefined)
+    @scala.inline
+    def setSourceUrl(value: OptionalSecureUrl): Self = this.set("SourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUrl: Self = this.set("SourceUrl", js.undefined)
+    @scala.inline
+    def setTimeCreated(value: Timestamp): Self = this.set("TimeCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeCreated: Self = this.set("TimeCreated", js.undefined)
+    @scala.inline
+    def setType(value: RegistryType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setTypeName(value: TypeName): Self = this.set("TypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeName: Self = this.set("TypeName", js.undefined)
+    @scala.inline
+    def setVisibility(value: Visibility): Self = this.set("Visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("Visibility", js.undefined)
+  }
+  
 }
 

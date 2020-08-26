@@ -57,6 +57,9 @@ object uirouterCoreStrings {
   sealed trait registered extends js.Object
   
   @js.native
+  sealed trait replace extends js.Object
+  
+  @js.native
   sealed trait sref extends js.Object
   
   @js.native
@@ -97,6 +100,8 @@ object uirouterCoreStrings {
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
   def registered: registered = "registered".asInstanceOf[registered]
+  @scala.inline
+  def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def sref: sref = "sref".asInstanceOf[sref]
   @scala.inline

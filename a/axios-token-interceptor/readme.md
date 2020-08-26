@@ -12,7 +12,7 @@ An interceptor which makes it easier to work with tokens in [axios](https://gith
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 65903 |
+| # downloads        | 68243 |
 | # stars            | 0 |
 
 ## Links

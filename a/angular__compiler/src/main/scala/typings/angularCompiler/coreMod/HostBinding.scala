@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HostBinding extends js.Object {
-  var hostPropertyName: js.UndefOr[String] = js.undefined
+  var hostPropertyName: js.UndefOr[String] = js.native
 }
 
 object HostBinding {
   @scala.inline
-  def apply(hostPropertyName: String = null): HostBinding = {
+  def apply(): HostBinding = {
     val __obj = js.Dynamic.literal()
-    if (hostPropertyName != null) __obj.updateDynamic("hostPropertyName")(hostPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostBinding]
   }
+  @scala.inline
+  implicit class HostBindingOps[Self <: HostBinding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostPropertyName(value: String): Self = this.set("hostPropertyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostPropertyName: Self = this.set("hostPropertyName", js.undefined)
+  }
+  
 }
 

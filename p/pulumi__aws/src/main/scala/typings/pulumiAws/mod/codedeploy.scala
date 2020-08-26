@@ -28,6 +28,7 @@ object codedeploy extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: ApplicationArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: ApplicationArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -69,8 +70,10 @@ object codedeploy extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.applicationMod.Application = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.applicationMod.Application = js.native
     def get(name: String, id: Input[ID], state: ApplicationState): typings.pulumiAws.applicationMod.Application = js.native
     def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): typings.pulumiAws.applicationMod.Application = js.native
     /**
@@ -90,8 +93,10 @@ object codedeploy extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.deploymentConfigMod.DeploymentConfig = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.deploymentConfigMod.DeploymentConfig = js.native
     def get(name: String, id: Input[ID], state: DeploymentConfigState): typings.pulumiAws.deploymentConfigMod.DeploymentConfig = js.native
     def get(name: String, id: Input[ID], state: DeploymentConfigState, opts: CustomResourceOptions): typings.pulumiAws.deploymentConfigMod.DeploymentConfig = js.native
     /**
@@ -111,8 +116,10 @@ object codedeploy extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.deploymentGroupMod.DeploymentGroup = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.deploymentGroupMod.DeploymentGroup = js.native
     def get(name: String, id: Input[ID], state: DeploymentGroupState): typings.pulumiAws.deploymentGroupMod.DeploymentGroup = js.native
     def get(name: String, id: Input[ID], state: DeploymentGroupState, opts: CustomResourceOptions): typings.pulumiAws.deploymentGroupMod.DeploymentGroup = js.native
     /**

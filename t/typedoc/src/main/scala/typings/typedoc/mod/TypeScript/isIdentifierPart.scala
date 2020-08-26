@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object isIdentifierPart extends js.Object {
   def apply(ch: Double): Boolean = js.native
+  def apply(
+    ch: Double,
+    languageVersion: js.UndefOr[scala.Nothing],
+    identifierVariant: typings.typescript.mod.LanguageVariant
+  ): Boolean = js.native
   def apply(ch: Double, languageVersion: typings.typescript.mod.ScriptTarget): Boolean = js.native
   def apply(
     ch: Double,

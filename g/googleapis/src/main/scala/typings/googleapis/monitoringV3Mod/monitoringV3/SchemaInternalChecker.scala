@@ -46,22 +46,46 @@ trait SchemaInternalChecker extends js.Object {
 
 object SchemaInternalChecker {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    gcpZone: String = null,
-    name: String = null,
-    network: String = null,
-    peerProjectId: String = null,
-    state: String = null
-  ): SchemaInternalChecker = {
+  def apply(): SchemaInternalChecker = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (gcpZone != null) __obj.updateDynamic("gcpZone")(gcpZone.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (peerProjectId != null) __obj.updateDynamic("peerProjectId")(peerProjectId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInternalChecker]
   }
+  @scala.inline
+  implicit class SchemaInternalCheckerOps[Self <: SchemaInternalChecker] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setGcpZone(value: String): Self = this.set("gcpZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGcpZone: Self = this.set("gcpZone", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setPeerProjectId(value: String): Self = this.set("peerProjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerProjectId: Self = this.set("peerProjectId", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

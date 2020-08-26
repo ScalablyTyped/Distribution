@@ -43,7 +43,7 @@ trait JobRun extends js.Object {
     */
   var JobName: js.UndefOr[NameString] = js.native
   /**
-    * The current state of the job run. For more information about the statuses of jobs that have terminated abnormally, see AWS Glue Job Run Statuses.
+    * The current state of the job run.
     */
   var JobRunState: js.UndefOr[typings.awsSdk.glueMod.JobRunState] = js.native
   /**
@@ -98,54 +98,112 @@ trait JobRun extends js.Object {
 
 object JobRun {
   @scala.inline
-  def apply(
-    AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined,
-    Arguments: GenericMap = null,
-    Attempt: js.UndefOr[AttemptCount] = js.undefined,
-    CompletedOn: TimestampValue = null,
-    ErrorMessage: ErrorString = null,
-    ExecutionTime: js.UndefOr[ExecutionTime] = js.undefined,
-    GlueVersion: GlueVersionString = null,
-    Id: IdString = null,
-    JobName: NameString = null,
-    JobRunState: JobRunState = null,
-    LastModifiedOn: TimestampValue = null,
-    LogGroupName: GenericString = null,
-    MaxCapacity: js.UndefOr[NullableDouble] = js.undefined,
-    NotificationProperty: NotificationProperty = null,
-    NumberOfWorkers: js.UndefOr[NullableInteger] = js.undefined,
-    PredecessorRuns: PredecessorList = null,
-    PreviousRunId: IdString = null,
-    SecurityConfiguration: NameString = null,
-    StartedOn: TimestampValue = null,
-    Timeout: js.UndefOr[Timeout] = js.undefined,
-    TriggerName: NameString = null,
-    WorkerType: WorkerType = null
-  ): JobRun = {
+  def apply(): JobRun = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedCapacity)) __obj.updateDynamic("AllocatedCapacity")(AllocatedCapacity.get.asInstanceOf[js.Any])
-    if (Arguments != null) __obj.updateDynamic("Arguments")(Arguments.asInstanceOf[js.Any])
-    if (!js.isUndefined(Attempt)) __obj.updateDynamic("Attempt")(Attempt.get.asInstanceOf[js.Any])
-    if (CompletedOn != null) __obj.updateDynamic("CompletedOn")(CompletedOn.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(ExecutionTime)) __obj.updateDynamic("ExecutionTime")(ExecutionTime.get.asInstanceOf[js.Any])
-    if (GlueVersion != null) __obj.updateDynamic("GlueVersion")(GlueVersion.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (JobName != null) __obj.updateDynamic("JobName")(JobName.asInstanceOf[js.Any])
-    if (JobRunState != null) __obj.updateDynamic("JobRunState")(JobRunState.asInstanceOf[js.Any])
-    if (LastModifiedOn != null) __obj.updateDynamic("LastModifiedOn")(LastModifiedOn.asInstanceOf[js.Any])
-    if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxCapacity)) __obj.updateDynamic("MaxCapacity")(MaxCapacity.get.asInstanceOf[js.Any])
-    if (NotificationProperty != null) __obj.updateDynamic("NotificationProperty")(NotificationProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(NumberOfWorkers)) __obj.updateDynamic("NumberOfWorkers")(NumberOfWorkers.get.asInstanceOf[js.Any])
-    if (PredecessorRuns != null) __obj.updateDynamic("PredecessorRuns")(PredecessorRuns.asInstanceOf[js.Any])
-    if (PreviousRunId != null) __obj.updateDynamic("PreviousRunId")(PreviousRunId.asInstanceOf[js.Any])
-    if (SecurityConfiguration != null) __obj.updateDynamic("SecurityConfiguration")(SecurityConfiguration.asInstanceOf[js.Any])
-    if (StartedOn != null) __obj.updateDynamic("StartedOn")(StartedOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(Timeout)) __obj.updateDynamic("Timeout")(Timeout.get.asInstanceOf[js.Any])
-    if (TriggerName != null) __obj.updateDynamic("TriggerName")(TriggerName.asInstanceOf[js.Any])
-    if (WorkerType != null) __obj.updateDynamic("WorkerType")(WorkerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobRun]
   }
+  @scala.inline
+  implicit class JobRunOps[Self <: JobRun] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedCapacity(value: IntegerValue): Self = this.set("AllocatedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedCapacity: Self = this.set("AllocatedCapacity", js.undefined)
+    @scala.inline
+    def setArguments(value: GenericMap): Self = this.set("Arguments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArguments: Self = this.set("Arguments", js.undefined)
+    @scala.inline
+    def setAttempt(value: AttemptCount): Self = this.set("Attempt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttempt: Self = this.set("Attempt", js.undefined)
+    @scala.inline
+    def setCompletedOn(value: TimestampValue): Self = this.set("CompletedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletedOn: Self = this.set("CompletedOn", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: ErrorString): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setExecutionTime(value: ExecutionTime): Self = this.set("ExecutionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionTime: Self = this.set("ExecutionTime", js.undefined)
+    @scala.inline
+    def setGlueVersion(value: GlueVersionString): Self = this.set("GlueVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlueVersion: Self = this.set("GlueVersion", js.undefined)
+    @scala.inline
+    def setId(value: IdString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setJobName(value: NameString): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("JobName", js.undefined)
+    @scala.inline
+    def setJobRunState(value: JobRunState): Self = this.set("JobRunState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobRunState: Self = this.set("JobRunState", js.undefined)
+    @scala.inline
+    def setLastModifiedOn(value: TimestampValue): Self = this.set("LastModifiedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedOn: Self = this.set("LastModifiedOn", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: GenericString): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    @scala.inline
+    def setMaxCapacity(value: NullableDouble): Self = this.set("MaxCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxCapacity: Self = this.set("MaxCapacity", js.undefined)
+    @scala.inline
+    def setNotificationProperty(value: NotificationProperty): Self = this.set("NotificationProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationProperty: Self = this.set("NotificationProperty", js.undefined)
+    @scala.inline
+    def setNumberOfWorkers(value: NullableInteger): Self = this.set("NumberOfWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfWorkers: Self = this.set("NumberOfWorkers", js.undefined)
+    @scala.inline
+    def setPredecessorRunsVarargs(value: Predecessor*): Self = this.set("PredecessorRuns", js.Array(value :_*))
+    @scala.inline
+    def setPredecessorRuns(value: PredecessorList): Self = this.set("PredecessorRuns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredecessorRuns: Self = this.set("PredecessorRuns", js.undefined)
+    @scala.inline
+    def setPreviousRunId(value: IdString): Self = this.set("PreviousRunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousRunId: Self = this.set("PreviousRunId", js.undefined)
+    @scala.inline
+    def setSecurityConfiguration(value: NameString): Self = this.set("SecurityConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityConfiguration: Self = this.set("SecurityConfiguration", js.undefined)
+    @scala.inline
+    def setStartedOn(value: TimestampValue): Self = this.set("StartedOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartedOn: Self = this.set("StartedOn", js.undefined)
+    @scala.inline
+    def setTimeout(value: Timeout): Self = this.set("Timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("Timeout", js.undefined)
+    @scala.inline
+    def setTriggerName(value: NameString): Self = this.set("TriggerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerName: Self = this.set("TriggerName", js.undefined)
+    @scala.inline
+    def setWorkerType(value: WorkerType): Self = this.set("WorkerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("WorkerType", js.undefined)
+  }
+  
 }
 

@@ -42,11 +42,15 @@ class NodeGroup protected () extends CustomResource {
     */
   val diskSize: Output_[Double] = js.native
   /**
+    * Force version update if existing pods are unable to be drained due to a pod disruption budget issue.
+    */
+  val forceUpdateVersion: Output_[js.UndefOr[Boolean]] = js.native
+  /**
     * Set of instance types associated with the EKS Node Group. Defaults to `["t3.medium"]`. This provider will only perform drift detection if a configuration value is provided. Currently, the EKS API only accepts a single value in the set.
     */
   val instanceTypes: Output_[String] = js.native
   /**
-    * Key-value mapping of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
+    * Key-value map of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
     */
   val labels: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
@@ -84,7 +88,7 @@ class NodeGroup protected () extends CustomResource {
   /**
     * Key-value mapping of resource tags.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Kubernetes version. Defaults to EKS Cluster Kubernetes version. This provider will only perform drift detection if a configuration value is provided.
     */
@@ -102,8 +106,10 @@ object NodeGroup extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): NodeGroup = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NodeGroup = js.native
   def get(name: String, id: Input[ID], state: NodeGroupState): NodeGroup = js.native
   def get(name: String, id: Input[ID], state: NodeGroupState, opts: CustomResourceOptions): NodeGroup = js.native
   /**

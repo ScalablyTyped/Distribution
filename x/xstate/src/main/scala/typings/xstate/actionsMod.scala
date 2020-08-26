@@ -82,6 +82,7 @@ object actionsMod extends js.Object {
   def getActionFunction[TContext, TEvent /* <: EventObject */](actionType: ActionType, actionFunctionMap: ActionFunctionMap[TContext, TEvent]): js.UndefOr[(ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent])] = js.native
   def isActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent]): /* is xstate.xstate/lib/types.ActionObject<TContext, TEvent> */ Boolean = js.native
   def log[TContext, TEvent /* <: EventObject */](): LogAction[TContext, TEvent] = js.native
+  def log[TContext, TEvent /* <: EventObject */](expr: js.UndefOr[scala.Nothing], label: String): LogAction[TContext, TEvent] = js.native
   def log[TContext, TEvent /* <: EventObject */](expr: String): LogAction[TContext, TEvent] = js.native
   def log[TContext, TEvent /* <: EventObject */](expr: String, label: String): LogAction[TContext, TEvent] = js.native
   def log[TContext, TEvent /* <: EventObject */](expr: LogExpr[TContext, TEvent]): LogAction[TContext, TEvent] = js.native
@@ -96,7 +97,14 @@ object actionsMod extends js.Object {
   def raise[TContext, TEvent /* <: EventObject */](event: typings.xstate.typesMod.Event[TEvent]): RaiseAction[TEvent] | (SendAction[TContext, TEvent, TEvent]) = js.native
   def resolveActions[TContext, TEvent /* <: EventObject */](
     machine: StateNode[TContext, _, TEvent, _],
-    currentState: js.UndefOr[State[TContext, TEvent, _, Context[TContext]]],
+    currentState: js.UndefOr[scala.Nothing],
+    currentContext: TContext,
+    _event: Event[TEvent],
+    actions: js.Array[ActionObject[TContext, TEvent]]
+  ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = js.native
+  def resolveActions[TContext, TEvent /* <: EventObject */](
+    machine: StateNode[TContext, _, TEvent, _],
+    currentState: State[TContext, TEvent, _, Context[TContext]],
     currentContext: TContext,
     _event: Event[TEvent],
     actions: js.Array[ActionObject[TContext, TEvent]]
@@ -130,6 +138,10 @@ object actionsMod extends js.Object {
   def toActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent]): ActionObject[TContext, TEvent] = js.native
   def toActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent], actionFunctionMap: ActionFunctionMap[TContext, TEvent]): ActionObject[TContext, TEvent] = js.native
   def toActionObjects[TContext, TEvent /* <: EventObject */](): js.Array[ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: EventObject */](
+    action: js.UndefOr[scala.Nothing],
+    actionFunctionMap: Record[String, (ActionFunction[TContext, TEvent]) | (ActionObject[TContext, TEvent])]
+  ): js.Array[ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: EventObject */](action: String): js.Array[ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: EventObject */](
     action: String,

@@ -78,14 +78,30 @@ trait FlashDocument extends js.Object {
   def addNewLine(startPoint: FlashPoint, endpoint: FlashPoint): Unit = js.native
    // Adds a new path between two points.
   def addNewOval(boundingRectangle: FlashRectangle): Unit = js.native
+  def addNewOval(
+    boundingRectangle: FlashRectangle,
+    bSuppressFill: js.UndefOr[scala.Nothing],
+    bSuppressStroke: Boolean
+  ): Unit = js.native
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Boolean): Unit = js.native
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: Boolean, bSuppressStroke: Boolean): Unit = js.native
    // Adds a new Oval object in the specified
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle): Unit = js.native
+  def addNewPrimitiveOval(
+    boundingRectangle: FlashRectangle,
+    bSpupressFill: js.UndefOr[scala.Nothing],
+    bSuppressStroke: Boolean
+  ): Unit = js.native
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Boolean): Unit = js.native
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: Boolean, bSuppressStroke: Boolean): Unit = js.native
    // Adds a new rectangle or rounded rectangle,
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
+  def addNewPrimitiveRectangle(
+    boundingRectangle: FlashRectangle,
+    roundness: Double,
+    bSuppressFill: js.UndefOr[scala.Nothing],
+    bSuppressStroke: Boolean
+  ): js.Any = js.native
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): js.Any = js.native
   def addNewPrimitiveRectangle(
     boundingRectangle: FlashRectangle,
@@ -97,6 +113,12 @@ trait FlashDocument extends js.Object {
   def addNewPublishProfile(): Unit = js.native
   def addNewPublishProfile(profileName: String): Unit = js.native
   def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double): js.Any = js.native
+  def addNewRectangle(
+    boundingRectangle: FlashRectangle,
+    roundness: Double,
+    bSuppressFill: js.UndefOr[scala.Nothing],
+    bSuppressStroke: Boolean
+  ): js.Any = js.native
   def addNewRectangle(boundingRectangle: FlashRectangle, roundness: Double, bSuppressFill: Boolean): js.Any = js.native
   def addNewRectangle(
     boundingRectangle: FlashRectangle,
@@ -190,6 +212,7 @@ trait FlashDocument extends js.Object {
   def exitEditMode(): Unit = js.native
   /** Exports the document as one or more PNG files. */
   def exportPNG(fileURI: String): Boolean = js.native
+  def exportPNG(fileURI: String, bCurrentPNGSettings: js.UndefOr[scala.Nothing], bCurrentFrame: Boolean): Boolean = js.native
   def exportPNG(fileURI: String, bCurrentPNGSettings: Boolean): Boolean = js.native
   def exportPNG(fileURI: String, bCurrentPNGSettings: Boolean, bCurrentFrame: Boolean): Boolean = js.native
   /** Exports the currently active profile to an XML */
@@ -216,6 +239,7 @@ trait FlashDocument extends js.Object {
   def getElementProperty(propertyName: String): js.Any = js.native
   /** Gets a specified TextAttrs property of the*/
   def getElementTextAttr(attrName: String): FlashTextAttrs = js.native
+  def getElementTextAttr(attrName: String, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): FlashTextAttrs = js.native
   def getElementTextAttr(attrName: String, startIndex: Double): FlashTextAttrs = js.native
   def getElementTextAttr(attrName: String, startIndex: Double, endIndex: Double): FlashTextAttrs = js.native
   /** Returns an array that contains the list of filters*/
@@ -230,6 +254,7 @@ trait FlashDocument extends js.Object {
   def getSelectionRect(): FlashRectangle = js.native
   /** Gets the currently selected text. */
   def getTextString(): String = js.native
+  def getTextString(startIndex: js.UndefOr[scala.Nothing], endIndex: Double): String = js.native
   def getTextString(startIndex: Double): String = js.native
   def getTextString(startIndex: Double, endIndex: Double): String = js.native
   /** Retrieves the current Timeline object in the */
@@ -325,6 +350,12 @@ trait FlashDocument extends js.Object {
   def setElementProperty(property: String, value: Double): Unit = js.native
   /** Sets the specified TextAttrs property of the */
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs): Boolean = js.native
+  def setElementTextAttr(
+    attrName: String,
+    attrValue: FlashTextAttrs,
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: Double
+  ): Boolean = js.native
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs, startIndex: Double): Boolean = js.native
   def setElementTextAttr(attrName: String, attrValue: FlashTextAttrs, startIndex: Double, endIndex: Double): Boolean = js.native
   /** Changes the fill color of the selection to the */
@@ -354,6 +385,11 @@ trait FlashDocument extends js.Object {
   def setSelectionBounds(boundingRectangle: FlashRectangle, bContactSensitiveSelection: Boolean): Unit = js.native
   /** Draws a rectangular selection marquee relative */
   def setSelectionRect(rect: FlashRectangle): Unit = js.native
+  def setSelectionRect(
+    rect: FlashRectangle,
+    bReplaceCurrentSelection: js.UndefOr[scala.Nothing],
+    bContactSensitiveSelection: Boolean
+  ): Unit = js.native
   def setSelectionRect(rect: FlashRectangle, bReplaceCurrentSelection: Boolean): Unit = js.native
   def setSelectionRect(rect: FlashRectangle, bReplaceCurrentSelection: Boolean, bContactSensitiveSelection: Boolean): Unit = js.native
   /** Specifies the vanishing point for viewing 3D objects. */
@@ -373,6 +409,7 @@ trait FlashDocument extends js.Object {
   def setTextSelection(startIndex: Double, endIndex: Double): Boolean = js.native
   /** Inserts a string of text. */
   def setTextString(text: String): Boolean = js.native
+  def setTextString(text: String, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Boolean = js.native
   def setTextString(text: String, startIndex: Double): Boolean = js.native
   def setTextString(text: String, startIndex: Double, endIndex: Double): Boolean = js.native
   /** Moves the transformation point of the current */

@@ -1,28 +1,37 @@
 package typings.loadableComponent.mod
 
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.ComponentType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options[T] extends js.Object {
-  var cacheKey: js.UndefOr[js.Function1[/* props */ T, _]] = js.undefined
-  var fallback: js.UndefOr[Element] = js.undefined
-  var ssr: js.UndefOr[Boolean] = js.undefined
+@js.native
+trait Options[Props, Module] extends OptionsWithoutResolver[Props] {
+  var resolveComponent: js.UndefOr[ComponentResolver[Props, Module]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply[T](
-    cacheKey: /* props */ T => _ = null,
-    fallback: Element = null,
-    ssr: js.UndefOr[Boolean] = js.undefined
-  ): Options[T] = {
+  def apply[Props, Module](): Options[Props, Module] = {
     val __obj = js.Dynamic.literal()
-    if (cacheKey != null) __obj.updateDynamic("cacheKey")(js.Any.fromFunction1(cacheKey))
-    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr.get.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Options[T]]
+    __obj.asInstanceOf[Options[Props, Module]]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options[_, _], Props, Module] (val x: Self with (Options[Props, Module])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResolveComponent(value: (Module, Props) => ComponentType[Props]): Self = this.set("resolveComponent", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteResolveComponent: Self = this.set("resolveComponent", js.undefined)
+  }
+  
 }
 

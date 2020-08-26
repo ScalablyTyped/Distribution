@@ -18,6 +18,16 @@ object native extends js.Object {
     cwd: String,
     cols: Double,
     rows: Double,
+    uid: js.UndefOr[scala.Nothing],
+    gid: Double
+  ): Fd = js.native
+  def fork(
+    file: String,
+    args: js.Array[String],
+    env: js.Any,
+    cwd: String,
+    cols: Double,
+    rows: Double,
     uid: Double
   ): Fd = js.native
   def fork(

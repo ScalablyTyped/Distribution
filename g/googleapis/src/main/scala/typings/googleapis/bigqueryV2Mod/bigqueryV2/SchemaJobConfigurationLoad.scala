@@ -213,64 +213,136 @@ trait SchemaJobConfigurationLoad extends js.Object {
 
 object SchemaJobConfigurationLoad {
   @scala.inline
-  def apply(
-    allowJaggedRows: js.UndefOr[Boolean] = js.undefined,
-    allowQuotedNewlines: js.UndefOr[Boolean] = js.undefined,
-    autodetect: js.UndefOr[Boolean] = js.undefined,
-    clustering: SchemaClustering = null,
-    createDisposition: String = null,
-    destinationEncryptionConfiguration: SchemaEncryptionConfiguration = null,
-    destinationTable: SchemaTableReference = null,
-    destinationTableProperties: SchemaDestinationTableProperties = null,
-    encoding: String = null,
-    fieldDelimiter: String = null,
-    hivePartitioningMode: String = null,
-    ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined,
-    maxBadRecords: js.UndefOr[Double] = js.undefined,
-    nullMarker: String = null,
-    projectionFields: js.Array[String] = null,
-    quote: String = null,
-    rangePartitioning: SchemaRangePartitioning = null,
-    schema: SchemaTableSchema = null,
-    schemaInline: String = null,
-    schemaInlineFormat: String = null,
-    schemaUpdateOptions: js.Array[String] = null,
-    skipLeadingRows: js.UndefOr[Double] = js.undefined,
-    sourceFormat: String = null,
-    sourceUris: js.Array[String] = null,
-    timePartitioning: SchemaTimePartitioning = null,
-    useAvroLogicalTypes: js.UndefOr[Boolean] = js.undefined,
-    writeDisposition: String = null
-  ): SchemaJobConfigurationLoad = {
+  def apply(): SchemaJobConfigurationLoad = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowJaggedRows)) __obj.updateDynamic("allowJaggedRows")(allowJaggedRows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowQuotedNewlines)) __obj.updateDynamic("allowQuotedNewlines")(allowQuotedNewlines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autodetect)) __obj.updateDynamic("autodetect")(autodetect.get.asInstanceOf[js.Any])
-    if (clustering != null) __obj.updateDynamic("clustering")(clustering.asInstanceOf[js.Any])
-    if (createDisposition != null) __obj.updateDynamic("createDisposition")(createDisposition.asInstanceOf[js.Any])
-    if (destinationEncryptionConfiguration != null) __obj.updateDynamic("destinationEncryptionConfiguration")(destinationEncryptionConfiguration.asInstanceOf[js.Any])
-    if (destinationTable != null) __obj.updateDynamic("destinationTable")(destinationTable.asInstanceOf[js.Any])
-    if (destinationTableProperties != null) __obj.updateDynamic("destinationTableProperties")(destinationTableProperties.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (fieldDelimiter != null) __obj.updateDynamic("fieldDelimiter")(fieldDelimiter.asInstanceOf[js.Any])
-    if (hivePartitioningMode != null) __obj.updateDynamic("hivePartitioningMode")(hivePartitioningMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnknownValues)) __obj.updateDynamic("ignoreUnknownValues")(ignoreUnknownValues.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxBadRecords)) __obj.updateDynamic("maxBadRecords")(maxBadRecords.get.asInstanceOf[js.Any])
-    if (nullMarker != null) __obj.updateDynamic("nullMarker")(nullMarker.asInstanceOf[js.Any])
-    if (projectionFields != null) __obj.updateDynamic("projectionFields")(projectionFields.asInstanceOf[js.Any])
-    if (quote != null) __obj.updateDynamic("quote")(quote.asInstanceOf[js.Any])
-    if (rangePartitioning != null) __obj.updateDynamic("rangePartitioning")(rangePartitioning.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (schemaInline != null) __obj.updateDynamic("schemaInline")(schemaInline.asInstanceOf[js.Any])
-    if (schemaInlineFormat != null) __obj.updateDynamic("schemaInlineFormat")(schemaInlineFormat.asInstanceOf[js.Any])
-    if (schemaUpdateOptions != null) __obj.updateDynamic("schemaUpdateOptions")(schemaUpdateOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipLeadingRows)) __obj.updateDynamic("skipLeadingRows")(skipLeadingRows.get.asInstanceOf[js.Any])
-    if (sourceFormat != null) __obj.updateDynamic("sourceFormat")(sourceFormat.asInstanceOf[js.Any])
-    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris.asInstanceOf[js.Any])
-    if (timePartitioning != null) __obj.updateDynamic("timePartitioning")(timePartitioning.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAvroLogicalTypes)) __obj.updateDynamic("useAvroLogicalTypes")(useAvroLogicalTypes.get.asInstanceOf[js.Any])
-    if (writeDisposition != null) __obj.updateDynamic("writeDisposition")(writeDisposition.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaJobConfigurationLoad]
   }
+  @scala.inline
+  implicit class SchemaJobConfigurationLoadOps[Self <: SchemaJobConfigurationLoad] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowJaggedRows(value: Boolean): Self = this.set("allowJaggedRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowJaggedRows: Self = this.set("allowJaggedRows", js.undefined)
+    @scala.inline
+    def setAllowQuotedNewlines(value: Boolean): Self = this.set("allowQuotedNewlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowQuotedNewlines: Self = this.set("allowQuotedNewlines", js.undefined)
+    @scala.inline
+    def setAutodetect(value: Boolean): Self = this.set("autodetect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutodetect: Self = this.set("autodetect", js.undefined)
+    @scala.inline
+    def setClustering(value: SchemaClustering): Self = this.set("clustering", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClustering: Self = this.set("clustering", js.undefined)
+    @scala.inline
+    def setCreateDisposition(value: String): Self = this.set("createDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDisposition: Self = this.set("createDisposition", js.undefined)
+    @scala.inline
+    def setDestinationEncryptionConfiguration(value: SchemaEncryptionConfiguration): Self = this.set("destinationEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationEncryptionConfiguration: Self = this.set("destinationEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setDestinationTable(value: SchemaTableReference): Self = this.set("destinationTable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationTable: Self = this.set("destinationTable", js.undefined)
+    @scala.inline
+    def setDestinationTableProperties(value: SchemaDestinationTableProperties): Self = this.set("destinationTableProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationTableProperties: Self = this.set("destinationTableProperties", js.undefined)
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFieldDelimiter(value: String): Self = this.set("fieldDelimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldDelimiter: Self = this.set("fieldDelimiter", js.undefined)
+    @scala.inline
+    def setHivePartitioningMode(value: String): Self = this.set("hivePartitioningMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHivePartitioningMode: Self = this.set("hivePartitioningMode", js.undefined)
+    @scala.inline
+    def setIgnoreUnknownValues(value: Boolean): Self = this.set("ignoreUnknownValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUnknownValues: Self = this.set("ignoreUnknownValues", js.undefined)
+    @scala.inline
+    def setMaxBadRecords(value: Double): Self = this.set("maxBadRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxBadRecords: Self = this.set("maxBadRecords", js.undefined)
+    @scala.inline
+    def setNullMarker(value: String): Self = this.set("nullMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullMarker: Self = this.set("nullMarker", js.undefined)
+    @scala.inline
+    def setProjectionFieldsVarargs(value: String*): Self = this.set("projectionFields", js.Array(value :_*))
+    @scala.inline
+    def setProjectionFields(value: js.Array[String]): Self = this.set("projectionFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectionFields: Self = this.set("projectionFields", js.undefined)
+    @scala.inline
+    def setQuote(value: String): Self = this.set("quote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuote: Self = this.set("quote", js.undefined)
+    @scala.inline
+    def setRangePartitioning(value: SchemaRangePartitioning): Self = this.set("rangePartitioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRangePartitioning: Self = this.set("rangePartitioning", js.undefined)
+    @scala.inline
+    def setSchema(value: SchemaTableSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setSchemaInline(value: String): Self = this.set("schemaInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaInline: Self = this.set("schemaInline", js.undefined)
+    @scala.inline
+    def setSchemaInlineFormat(value: String): Self = this.set("schemaInlineFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaInlineFormat: Self = this.set("schemaInlineFormat", js.undefined)
+    @scala.inline
+    def setSchemaUpdateOptionsVarargs(value: String*): Self = this.set("schemaUpdateOptions", js.Array(value :_*))
+    @scala.inline
+    def setSchemaUpdateOptions(value: js.Array[String]): Self = this.set("schemaUpdateOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaUpdateOptions: Self = this.set("schemaUpdateOptions", js.undefined)
+    @scala.inline
+    def setSkipLeadingRows(value: Double): Self = this.set("skipLeadingRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipLeadingRows: Self = this.set("skipLeadingRows", js.undefined)
+    @scala.inline
+    def setSourceFormat(value: String): Self = this.set("sourceFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceFormat: Self = this.set("sourceFormat", js.undefined)
+    @scala.inline
+    def setSourceUrisVarargs(value: String*): Self = this.set("sourceUris", js.Array(value :_*))
+    @scala.inline
+    def setSourceUris(value: js.Array[String]): Self = this.set("sourceUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUris: Self = this.set("sourceUris", js.undefined)
+    @scala.inline
+    def setTimePartitioning(value: SchemaTimePartitioning): Self = this.set("timePartitioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimePartitioning: Self = this.set("timePartitioning", js.undefined)
+    @scala.inline
+    def setUseAvroLogicalTypes(value: Boolean): Self = this.set("useAvroLogicalTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseAvroLogicalTypes: Self = this.set("useAvroLogicalTypes", js.undefined)
+    @scala.inline
+    def setWriteDisposition(value: String): Self = this.set("writeDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteDisposition: Self = this.set("writeDisposition", js.undefined)
+  }
+  
 }
 

@@ -15,13 +15,8 @@ import scala.scalajs.js.annotation._
   */
 class Point () extends IPointLike {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
-  /** x coordinate */
-  /* CompleteClass */
-  override var x: Double = js.native
-  /** y coordinate */
-  /* CompleteClass */
-  override var y: Double = js.native
   /**
     * Add another Point object to this instance. (component-wise)
     * @param n - Point object.

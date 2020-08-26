@@ -1,6 +1,6 @@
 package typings.mongoose.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -53,6 +53,10 @@ trait Document
     */
   def save(): js.Promise[this.type] = js.native
   def save(fn: js.Function2[/* err */ js.Any, /* product */ this.type, Unit]): js.Promise[this.type] = js.native
+  def save(
+    options: js.UndefOr[scala.Nothing],
+    fn: js.Function2[/* err */ js.Any, /* product */ this.type, Unit]
+  ): js.Promise[this.type] = js.native
   def save(options: SaveOptions): js.Promise[this.type] = js.native
   def save(options: SaveOptions, fn: js.Function2[/* err */ js.Any, /* product */ this.type, Unit]): js.Promise[this.type] = js.native
 }

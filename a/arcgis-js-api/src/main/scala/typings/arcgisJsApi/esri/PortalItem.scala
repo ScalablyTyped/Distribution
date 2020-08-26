@@ -2,13 +2,18 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`array-buffer`
 import typings.arcgisJsApi.arcgisJsApiStrings.`null`
+import typings.arcgisJsApi.arcgisJsApiStrings.`private`
 import typings.arcgisJsApi.arcgisJsApiStrings.admin
 import typings.arcgisJsApi.arcgisJsApiStrings.blob
 import typings.arcgisJsApi.arcgisJsApiStrings.document
 import typings.arcgisJsApi.arcgisJsApiStrings.json
+import typings.arcgisJsApi.arcgisJsApiStrings.org_
+import typings.arcgisJsApi.arcgisJsApiStrings.public
+import typings.arcgisJsApi.arcgisJsApiStrings.shared
 import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.update
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
+import typings.std.Blob
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -24,7 +29,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#access)
     */
-  var access: String = js.native
+  var access: `private` | shared | org_ | public = js.native
   /**
     * Information on the source of the item and its copyright status.
     *
@@ -260,6 +265,20 @@ trait PortalItem
   def addRating(rating: Double): js.Promise[PortalRating] = js.native
   def addRating(rating: PortalRating): js.Promise[PortalRating] = js.native
   /**
+    * Adds a new [resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html) to the portal item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
+    *
+    * @param resource The resource to add to the portal item.
+    * @param content The resource content.
+    * @param options An object wih the following properties.
+    * @param options.access Indicates the level of access to the resource. The default is "inherit" which causes the resource to have the same access level as the owning item.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def addResource(resource: PortalItemResource, content: Blob): js.Promise[_] = js.native
+  def addResource(resource: PortalItemResource, content: Blob, options: PortalItemAddResourceOptions): js.Promise[_] = js.native
+  /**
     * Deletes a rating for the specified item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#deleteRating)
@@ -278,6 +297,7 @@ trait PortalItem
     *
     */
   def fetchData(): js.Promise[_] = js.native
+  def fetchData(responseType: js.UndefOr[scala.Nothing], options: PortalItemFetchDataOptions): js.Promise[_] = js.native
   @JSName("fetchData")
   def fetchData_arraybuffer(responseType: `array-buffer`): js.Promise[_] = js.native
   @JSName("fetchData")
@@ -328,6 +348,20 @@ trait PortalItem
   def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams): js.Promise[js.Array[PortalItem]] = js.native
   def fetchRelatedItems(params: PortalItemFetchRelatedItemsParams, options: PortalItemFetchRelatedItemsOptions): js.Promise[js.Array[PortalItem]] = js.native
   /**
+    * Retrieves references to all the [portal item resources](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchResources)
+    *
+    * @param params The fetch parameters used to retrieve [portal item resources](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html).
+    * @param options Additional options with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def fetchResources(): FetchResourcesResult = js.native
+  def fetchResources(params: js.UndefOr[scala.Nothing], options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
+  def fetchResources(params: FetchResourcesParams): FetchResourcesResult = js.native
+  def fetchResources(params: FetchResourcesParams, options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
+  /**
     * Get the URL to the thumbnail image for the item.  Available width sizes: 200, 400, 800 and 2400.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#getThumbnailUrl)
@@ -337,6 +371,29 @@ trait PortalItem
     */
   def getThumbnailUrl(): String = js.native
   def getThumbnailUrl(width: Double): String = js.native
+  /**
+    * Removes all the [resources](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html) from the portal item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#removeAllResources)
+    *
+    * @param options An object with the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def removeAllResources(): js.Promise[_] = js.native
+  def removeAllResources(options: PortalItemRemoveAllResourcesOptions): js.Promise[_] = js.native
+  /**
+    * Removes a [resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html) from the portal item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#removeResource)
+    *
+    * @param resource The resource to remove from the portal item.
+    * @param options An object wih the following properties.
+    * @param options.signal Signal object that can be used to abort the asynchronous task. The returned promise will be rejected with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) named `AbortError` when an abort is signaled. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) for more information on how to construct a controller that can be used to deliver abort signals.
+    *
+    */
+  def removeResource(resource: PortalItemResource): js.Promise[_] = js.native
+  def removeResource(resource: PortalItemResource, options: PortalItemRemoveResourceOptions): js.Promise[_] = js.native
   /**
     * Updates the item's properties to the portal, and optionally its data.
     *

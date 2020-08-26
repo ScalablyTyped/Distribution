@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-spinners
 
-Typings are for version 1.3
+Typings are for version 2.4.0
 
 ## Library description:
 Spinners for use in the terminal
@@ -24,7 +24,7 @@ Spinners for use in the terminal
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

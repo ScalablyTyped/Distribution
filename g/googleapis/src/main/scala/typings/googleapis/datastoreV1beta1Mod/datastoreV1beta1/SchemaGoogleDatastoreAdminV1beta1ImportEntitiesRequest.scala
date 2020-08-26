@@ -40,16 +40,34 @@ trait SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest extends js.Object {
 
 object SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest {
   @scala.inline
-  def apply(
-    entityFilter: SchemaGoogleDatastoreAdminV1beta1EntityFilter = null,
-    inputUrl: String = null,
-    labels: StringDictionary[String] = null
-  ): SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest = {
+  def apply(): SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (entityFilter != null) __obj.updateDynamic("entityFilter")(entityFilter.asInstanceOf[js.Any])
-    if (inputUrl != null) __obj.updateDynamic("inputUrl")(inputUrl.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequestOps[Self <: SchemaGoogleDatastoreAdminV1beta1ImportEntitiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityFilter(value: SchemaGoogleDatastoreAdminV1beta1EntityFilter): Self = this.set("entityFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityFilter: Self = this.set("entityFilter", js.undefined)
+    @scala.inline
+    def setInputUrl(value: String): Self = this.set("inputUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputUrl: Self = this.set("inputUrl", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+  }
+  
 }
 

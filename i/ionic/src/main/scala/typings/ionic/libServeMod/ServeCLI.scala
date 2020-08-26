@@ -2,9 +2,9 @@ package typings.ionic.libServeMod
 
 import typings.ionic.ionicStrings.compile
 import typings.ionic.ionicStrings.ready
-import typings.node.NodeJS.ProcessEnv
 import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
+import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.streamMod.Transform
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ServeCLI[T /* <: ServeCLIOptions */] protected () extends EventEmitter {
   def this(e: ServeRunnerDeps) = this()
-  var _resolvedProgram: js.UndefOr[js.Any] = js.native
+  var _resolvedProgram: js.Any = js.native
   val e: ServeRunnerDeps = js.native
   /**
     * If true, the Serve CLI will not prompt to be installed.

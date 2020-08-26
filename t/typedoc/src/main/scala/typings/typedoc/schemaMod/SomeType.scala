@@ -41,13 +41,9 @@ object SomeType {
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
-  def TupleType(
-    `type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String),
-    elements: ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]] = null
-  ): SomeType = {
+  def TupleType(`type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)): SomeType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (elements != null) __obj.updateDynamic("elements")(elements.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
@@ -62,14 +58,10 @@ object SomeType {
   @scala.inline
   def ReferenceType(
     name: ModelToObject[String] | String,
-    `type`: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String),
-    id: js.UndefOr[Double] = js.undefined,
-    typeArguments: ModelToObject[js.UndefOr[js.Array[typings.typedoc.typesAbstractMod.Type]]] | js.Array[typings.typedoc.typesAbstractMod.Type] = null
+    `type`: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)
   ): SomeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (typeArguments != null) __obj.updateDynamic("typeArguments")(typeArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
@@ -122,13 +114,9 @@ object SomeType {
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
-  def ReflectionType(
-    `type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String),
-    declaration: ModelToObject[typings.typedoc.reflectionsDeclarationMod.DeclarationReflection] = null
-  ): SomeType = {
+  def ReflectionType(`type`: (ModelToObject[/* "reflection" */ String]) | (/* "reflection" */ String)): SomeType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
@@ -142,14 +130,9 @@ object SomeType {
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
-  def TypeParameterType(
-    name: ModelToObject[String] | String,
-    `type`: ModelToObject[String] | String,
-    constraint: ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type = null
-  ): SomeType = {
+  def TypeParameterType(name: ModelToObject[String] | String, `type`: ModelToObject[String] | String): SomeType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (constraint != null) __obj.updateDynamic("constraint")(constraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
   @scala.inline
@@ -165,12 +148,10 @@ object SomeType {
   def PredicateType(
     asserts: ModelToObject[Boolean] | Boolean,
     name: ModelToObject[String] | String,
-    `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String),
-    targetType: ModelToObject[js.UndefOr[typings.typedoc.typesAbstractMod.Type]] | typings.typedoc.typesAbstractMod.Type = null
+    `type`: (ModelToObject[/* "predicate" */ String]) | (/* "predicate" */ String)
   ): SomeType = {
     val __obj = js.Dynamic.literal(asserts = asserts.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (targetType != null) __obj.updateDynamic("targetType")(targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SomeType]
   }
 }

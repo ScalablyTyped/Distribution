@@ -26,6 +26,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ AllocateStaticIpResult, Unit]
   ): Request[AllocateStaticIpResult, AWSError] = js.native
   /**
+    * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    */
+  def attachCertificateToDistribution(): Request[AttachCertificateToDistributionResult, AWSError] = js.native
+  def attachCertificateToDistribution(callback: js.Function2[/* err */ AWSError, /* data */ AttachCertificateToDistributionResult, Unit]): Request[AttachCertificateToDistributionResult, AWSError] = js.native
+  /**
+    * Attaches an SSL/TLS certificate to your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is attached, your distribution accepts HTTPS traffic for all of the domains that are associated with the certificate. Use the CreateCertificate action to create a certificate that you can attach to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    */
+  def attachCertificateToDistribution(params: AttachCertificateToDistributionRequest): Request[AttachCertificateToDistributionResult, AWSError] = js.native
+  def attachCertificateToDistribution(
+    params: AttachCertificateToDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AttachCertificateToDistributionResult, Unit]
+  ): Request[AttachCertificateToDistributionResult, AWSError] = js.native
+  /**
     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
     */
   def attachDisk(): Request[AttachDiskResult, AWSError] = js.native
@@ -106,6 +119,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CopySnapshotResult, Unit]
   ): Request[CopySnapshotResult, AWSError] = js.native
   /**
+    * Creates an SSL/TLS certificate for a Amazon Lightsail content delivery network (CDN) distribution. After the certificate is created, use the AttachCertificateToDistribution action to attach the certificate to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    */
+  def createCertificate(): Request[CreateCertificateResult, AWSError] = js.native
+  def createCertificate(callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateResult, Unit]): Request[CreateCertificateResult, AWSError] = js.native
+  /**
+    * Creates an SSL/TLS certificate for a Amazon Lightsail content delivery network (CDN) distribution. After the certificate is created, use the AttachCertificateToDistribution action to attach the certificate to your distribution.  Only certificates created in the us-east-1 AWS Region can be attached to Lightsail distributions. Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    */
+  def createCertificate(params: CreateCertificateRequest): Request[CreateCertificateResult, AWSError] = js.native
+  def createCertificate(
+    params: CreateCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateCertificateResult, Unit]
+  ): Request[CreateCertificateResult, AWSError] = js.native
+  /**
     * Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the get cloud formation stack records operation to get a list of the CloudFormation stacks created.  Wait until after your new Amazon EC2 instance is created before running the create cloud formation stack operation again with the same export snapshot record. 
     */
   def createCloudFormationStack(): Request[CreateCloudFormationStackResult, AWSError] = js.native
@@ -170,6 +196,19 @@ trait Lightsail extends Service {
     params: CreateDiskSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDiskSnapshotResult, Unit]
   ): Request[CreateDiskSnapshotResult, AWSError] = js.native
+  /**
+    * Creates an Amazon Lightsail content delivery network (CDN) distribution. A distribution is a globally distributed network of caching servers that improve the performance of your website or web application hosted on a Lightsail instance. For more information, see Content delivery networks in Amazon Lightsail.
+    */
+  def createDistribution(): Request[CreateDistributionResult, AWSError] = js.native
+  def createDistribution(callback: js.Function2[/* err */ AWSError, /* data */ CreateDistributionResult, Unit]): Request[CreateDistributionResult, AWSError] = js.native
+  /**
+    * Creates an Amazon Lightsail content delivery network (CDN) distribution. A distribution is a globally distributed network of caching servers that improve the performance of your website or web application hosted on a Lightsail instance. For more information, see Content delivery networks in Amazon Lightsail.
+    */
+  def createDistribution(params: CreateDistributionRequest): Request[CreateDistributionResult, AWSError] = js.native
+  def createDistribution(
+    params: CreateDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateDistributionResult, Unit]
+  ): Request[CreateDistributionResult, AWSError] = js.native
   /**
     * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
     */
@@ -346,6 +385,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAutoSnapshotResult, Unit]
   ): Request[DeleteAutoSnapshotResult, AWSError] = js.native
   /**
+    * Deletes an SSL/TLS certificate for your Amazon Lightsail content delivery network (CDN) distribution. Certificates that are currently attached to a distribution cannot be deleted. Use the DetachCertificateFromDistribution action to detach a certificate from a distribution.
+    */
+  def deleteCertificate(): Request[DeleteCertificateResult, AWSError] = js.native
+  def deleteCertificate(callback: js.Function2[/* err */ AWSError, /* data */ DeleteCertificateResult, Unit]): Request[DeleteCertificateResult, AWSError] = js.native
+  /**
+    * Deletes an SSL/TLS certificate for your Amazon Lightsail content delivery network (CDN) distribution. Certificates that are currently attached to a distribution cannot be deleted. Use the DetachCertificateFromDistribution action to detach a certificate from a distribution.
+    */
+  def deleteCertificate(params: DeleteCertificateRequest): Request[DeleteCertificateResult, AWSError] = js.native
+  def deleteCertificate(
+    params: DeleteCertificateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteCertificateResult, Unit]
+  ): Request[DeleteCertificateResult, AWSError] = js.native
+  /**
     * Deletes a contact method. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail.
     */
   def deleteContactMethod(): Request[DeleteContactMethodResult, AWSError] = js.native
@@ -384,6 +436,19 @@ trait Lightsail extends Service {
     params: DeleteDiskSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDiskSnapshotResult, Unit]
   ): Request[DeleteDiskSnapshotResult, AWSError] = js.native
+  /**
+    * Deletes your Amazon Lightsail content delivery network (CDN) distribution.
+    */
+  def deleteDistribution(): Request[DeleteDistributionResult, AWSError] = js.native
+  def deleteDistribution(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDistributionResult, Unit]): Request[DeleteDistributionResult, AWSError] = js.native
+  /**
+    * Deletes your Amazon Lightsail content delivery network (CDN) distribution.
+    */
+  def deleteDistribution(params: DeleteDistributionRequest): Request[DeleteDistributionResult, AWSError] = js.native
+  def deleteDistribution(
+    params: DeleteDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDistributionResult, Unit]
+  ): Request[DeleteDistributionResult, AWSError] = js.native
   /**
     * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */
@@ -518,6 +583,21 @@ trait Lightsail extends Service {
     params: DeleteRelationalDatabaseSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRelationalDatabaseSnapshotResult, Unit]
   ): Request[DeleteRelationalDatabaseSnapshotResult, AWSError] = js.native
+  /**
+    * Detaches an SSL/TLS certificate from your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is detached, your distribution stops accepting traffic for all of the domains that are associated with the certificate.
+    */
+  def detachCertificateFromDistribution(): Request[DetachCertificateFromDistributionResult, AWSError] = js.native
+  def detachCertificateFromDistribution(
+    callback: js.Function2[/* err */ AWSError, /* data */ DetachCertificateFromDistributionResult, Unit]
+  ): Request[DetachCertificateFromDistributionResult, AWSError] = js.native
+  /**
+    * Detaches an SSL/TLS certificate from your Amazon Lightsail content delivery network (CDN) distribution. After the certificate is detached, your distribution stops accepting traffic for all of the domains that are associated with the certificate.
+    */
+  def detachCertificateFromDistribution(params: DetachCertificateFromDistributionRequest): Request[DetachCertificateFromDistributionResult, AWSError] = js.native
+  def detachCertificateFromDistribution(
+    params: DetachCertificateFromDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DetachCertificateFromDistributionResult, Unit]
+  ): Request[DetachCertificateFromDistributionResult, AWSError] = js.native
   /**
     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by disk name. For more information, see the Lightsail Dev Guide.
     */
@@ -675,6 +755,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ GetBundlesResult, Unit]
   ): Request[GetBundlesResult, AWSError] = js.native
   /**
+    * Returns information about one or more Amazon Lightsail SSL/TLS certificates.  To get a summary of a certificate, ommit includeCertificateDetails from your request. The response will include only the certificate Amazon Resource Name (ARN), certificate name, domain name, and tags. 
+    */
+  def getCertificates(): Request[GetCertificatesResult, AWSError] = js.native
+  def getCertificates(callback: js.Function2[/* err */ AWSError, /* data */ GetCertificatesResult, Unit]): Request[GetCertificatesResult, AWSError] = js.native
+  /**
+    * Returns information about one or more Amazon Lightsail SSL/TLS certificates.  To get a summary of a certificate, ommit includeCertificateDetails from your request. The response will include only the certificate Amazon Resource Name (ARN), certificate name, domain name, and tags. 
+    */
+  def getCertificates(params: GetCertificatesRequest): Request[GetCertificatesResult, AWSError] = js.native
+  def getCertificates(
+    params: GetCertificatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetCertificatesResult, Unit]
+  ): Request[GetCertificatesResult, AWSError] = js.native
+  /**
     * Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.
     */
   def getCloudFormationStackRecords(): Request[GetCloudFormationStackRecordsResult, AWSError] = js.native
@@ -749,6 +842,58 @@ trait Lightsail extends Service {
     params: GetDisksRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDisksResult, Unit]
   ): Request[GetDisksResult, AWSError] = js.native
+  /**
+    * Returns the list bundles that can be applied to you Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution.
+    */
+  def getDistributionBundles(): Request[GetDistributionBundlesResult, AWSError] = js.native
+  def getDistributionBundles(callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionBundlesResult, Unit]): Request[GetDistributionBundlesResult, AWSError] = js.native
+  /**
+    * Returns the list bundles that can be applied to you Amazon Lightsail content delivery network (CDN) distributions. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution.
+    */
+  def getDistributionBundles(params: GetDistributionBundlesRequest): Request[GetDistributionBundlesResult, AWSError] = js.native
+  def getDistributionBundles(
+    params: GetDistributionBundlesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionBundlesResult, Unit]
+  ): Request[GetDistributionBundlesResult, AWSError] = js.native
+  /**
+    * Returns the timestamp and status of the last cache reset of a specific Amazon Lightsail content delivery network (CDN) distribution.
+    */
+  def getDistributionLatestCacheReset(): Request[GetDistributionLatestCacheResetResult, AWSError] = js.native
+  def getDistributionLatestCacheReset(callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionLatestCacheResetResult, Unit]): Request[GetDistributionLatestCacheResetResult, AWSError] = js.native
+  /**
+    * Returns the timestamp and status of the last cache reset of a specific Amazon Lightsail content delivery network (CDN) distribution.
+    */
+  def getDistributionLatestCacheReset(params: GetDistributionLatestCacheResetRequest): Request[GetDistributionLatestCacheResetResult, AWSError] = js.native
+  def getDistributionLatestCacheReset(
+    params: GetDistributionLatestCacheResetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionLatestCacheResetResult, Unit]
+  ): Request[GetDistributionLatestCacheResetResult, AWSError] = js.native
+  /**
+    * Returns the data points of a specific metric for an Amazon Lightsail content delivery network (CDN) distribution. Metrics report the utilization of your resources, and the error counts generated by them. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
+    */
+  def getDistributionMetricData(): Request[GetDistributionMetricDataResult, AWSError] = js.native
+  def getDistributionMetricData(callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionMetricDataResult, Unit]): Request[GetDistributionMetricDataResult, AWSError] = js.native
+  /**
+    * Returns the data points of a specific metric for an Amazon Lightsail content delivery network (CDN) distribution. Metrics report the utilization of your resources, and the error counts generated by them. Monitor and collect metric data regularly to maintain the reliability, availability, and performance of your resources.
+    */
+  def getDistributionMetricData(params: GetDistributionMetricDataRequest): Request[GetDistributionMetricDataResult, AWSError] = js.native
+  def getDistributionMetricData(
+    params: GetDistributionMetricDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionMetricDataResult, Unit]
+  ): Request[GetDistributionMetricDataResult, AWSError] = js.native
+  /**
+    * Returns information about one or more of your Amazon Lightsail content delivery network (CDN) distributions.
+    */
+  def getDistributions(): Request[GetDistributionsResult, AWSError] = js.native
+  def getDistributions(callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionsResult, Unit]): Request[GetDistributionsResult, AWSError] = js.native
+  /**
+    * Returns information about one or more of your Amazon Lightsail content delivery network (CDN) distributions.
+    */
+  def getDistributions(params: GetDistributionsRequest): Request[GetDistributionsResult, AWSError] = js.native
+  def getDistributions(
+    params: GetDistributionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDistributionsResult, Unit]
+  ): Request[GetDistributionsResult, AWSError] = js.native
   /**
     * Returns information about a specific domain recordset.
     */
@@ -1321,6 +1466,19 @@ trait Lightsail extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ReleaseStaticIpResult, Unit]
   ): Request[ReleaseStaticIpResult, AWSError] = js.native
   /**
+    * Deletes currently cached content from your Amazon Lightsail content delivery network (CDN) distribution. After resetting the cache, the next time a content request is made, your distribution pulls, serves, and caches it from the origin.
+    */
+  def resetDistributionCache(): Request[ResetDistributionCacheResult, AWSError] = js.native
+  def resetDistributionCache(callback: js.Function2[/* err */ AWSError, /* data */ ResetDistributionCacheResult, Unit]): Request[ResetDistributionCacheResult, AWSError] = js.native
+  /**
+    * Deletes currently cached content from your Amazon Lightsail content delivery network (CDN) distribution. After resetting the cache, the next time a content request is made, your distribution pulls, serves, and caches it from the origin.
+    */
+  def resetDistributionCache(params: ResetDistributionCacheRequest): Request[ResetDistributionCacheResult, AWSError] = js.native
+  def resetDistributionCache(
+    params: ResetDistributionCacheRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResetDistributionCacheResult, Unit]
+  ): Request[ResetDistributionCacheResult, AWSError] = js.native
+  /**
     * Sends a verification request to an email contact method to ensure it's owned by the requester. SMS contact methods don't need to be verified. A contact method is used to send you notifications about your Amazon Lightsail resources. You can add one email address and one mobile phone number contact method in each AWS Region. However, SMS text messaging is not supported in some AWS Regions, and SMS text messages cannot be sent to some countries/regions. For more information, see Notifications in Amazon Lightsail. A verification request is sent to the contact method when you initially create it. Use this action to send another verification request if a previous verification request was deleted, or has expired.  Notifications are not sent to an email contact method until after it is verified, and confirmed as valid. 
     */
   def sendContactMethodVerification(): Request[SendContactMethodVerificationResult, AWSError] = js.native
@@ -1437,6 +1595,32 @@ trait Lightsail extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]
   ): Request[UntagResourceResult, AWSError] = js.native
+  /**
+    * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution
+    */
+  def updateDistribution(): Request[UpdateDistributionResult, AWSError] = js.native
+  def updateDistribution(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionResult, Unit]): Request[UpdateDistributionResult, AWSError] = js.native
+  /**
+    * Updates an existing Amazon Lightsail content delivery network (CDN) distribution. Use this action to update the configuration of your existing distribution
+    */
+  def updateDistribution(params: UpdateDistributionRequest): Request[UpdateDistributionResult, AWSError] = js.native
+  def updateDistribution(
+    params: UpdateDistributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionResult, Unit]
+  ): Request[UpdateDistributionResult, AWSError] = js.native
+  /**
+    * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
+    */
+  def updateDistributionBundle(): Request[UpdateDistributionBundleResult, AWSError] = js.native
+  def updateDistributionBundle(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionBundleResult, Unit]): Request[UpdateDistributionBundleResult, AWSError] = js.native
+  /**
+    * Updates the bundle of your Amazon Lightsail content delivery network (CDN) distribution. A distribution bundle specifies the monthly network transfer quota and monthly cost of your dsitribution. Update your distribution's bundle if your distribution is going over its monthly network transfer quota and is incurring an overage fee. You can update your distribution's bundle only one time within your monthly AWS billing cycle. To determine if you can update your distribution's bundle, use the GetDistributions action. The ableToUpdateBundle parameter in the result will indicate whether you can currently update your distribution's bundle.
+    */
+  def updateDistributionBundle(params: UpdateDistributionBundleRequest): Request[UpdateDistributionBundleResult, AWSError] = js.native
+  def updateDistributionBundle(
+    params: UpdateDistributionBundleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDistributionBundleResult, Unit]
+  ): Request[UpdateDistributionBundleResult, AWSError] = js.native
   /**
     * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domain name. For more information, see the Lightsail Dev Guide.
     */

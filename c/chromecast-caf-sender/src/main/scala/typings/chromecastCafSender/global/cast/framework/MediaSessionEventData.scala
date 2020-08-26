@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class MediaSessionEventData protected ()
   extends typings.chromecastCafSender.cast.framework.MediaSessionEventData {
   def this(mediaSession: Media) = this()
-  /* CompleteClass */
-  override var mediaSession: Media = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
 }
 

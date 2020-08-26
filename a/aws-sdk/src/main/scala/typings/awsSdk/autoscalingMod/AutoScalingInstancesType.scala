@@ -18,11 +18,32 @@ trait AutoScalingInstancesType extends js.Object {
 
 object AutoScalingInstancesType {
   @scala.inline
-  def apply(AutoScalingInstances: AutoScalingInstances = null, NextToken: XmlString = null): AutoScalingInstancesType = {
+  def apply(): AutoScalingInstancesType = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingInstances != null) __obj.updateDynamic("AutoScalingInstances")(AutoScalingInstances.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingInstancesType]
   }
+  @scala.inline
+  implicit class AutoScalingInstancesTypeOps[Self <: AutoScalingInstancesType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingInstancesVarargs(value: AutoScalingInstanceDetails*): Self = this.set("AutoScalingInstances", js.Array(value :_*))
+    @scala.inline
+    def setAutoScalingInstances(value: AutoScalingInstances): Self = this.set("AutoScalingInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingInstances: Self = this.set("AutoScalingInstances", js.undefined)
+    @scala.inline
+    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

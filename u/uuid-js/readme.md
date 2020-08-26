@@ -12,7 +12,7 @@ A js library to generate and parse UUIDs,TimeUUIDs and generate TimeUUID based o
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 64 |
-| # downloads        | 4494989 |
+| # downloads        | 4622615 |
 | # stars            | 0 |
 
 ## Links

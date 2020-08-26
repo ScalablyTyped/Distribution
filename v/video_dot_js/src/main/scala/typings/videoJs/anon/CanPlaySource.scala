@@ -25,7 +25,7 @@ trait CanPlaySource
   */
 Instantiable0[Tech]
      with Instantiable1[/* options */ js.Any, Tech]
-     with Instantiable2[/* options */ js.Any, /* ready */ ReadyCallback, Tech] {
+     with Instantiable2[js.UndefOr[/* options */ js.Any], /* ready */ ReadyCallback, Tech] {
   /**
     * Check if the tech can support the given source
     * @param srcObj

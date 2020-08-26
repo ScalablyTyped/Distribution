@@ -28,7 +28,7 @@ object linterMod extends js.Object {
     var getEnabledRules: js.Any = js.native
     var getSourceFile: js.Any = js.native
     val options: js.Any = js.native
-    var program: js.UndefOr[js.Any] = js.native
+    var program: js.Any = js.native
     var updateProgram: js.Any = js.native
     /* protected */ def applyFixes(sourceFilePath: String, source: String, fixableFailures: js.Array[RuleFailure]): String = js.native
     def getResult(): LintResult = js.native
@@ -74,11 +74,13 @@ object linterMod extends js.Object {
       */
     def getFileNames(program: Program): js.Array[String] = js.native
     def getRulesDirectories(): js.Array[String] = js.native
+    def getRulesDirectories(directories: js.UndefOr[scala.Nothing], relativeTo: String): js.Array[String] = js.native
     def getRulesDirectories(directories: String): js.Array[String] = js.native
     def getRulesDirectories(directories: String, relativeTo: String): js.Array[String] = js.native
     def getRulesDirectories(directories: js.Array[String]): js.Array[String] = js.native
     def getRulesDirectories(directories: js.Array[String], relativeTo: String): js.Array[String] = js.native
     def loadConfigurationFromPath(): IConfigurationFile = js.native
+    def loadConfigurationFromPath(configFilePath: js.UndefOr[scala.Nothing], _originalFilePath: String): IConfigurationFile = js.native
     def loadConfigurationFromPath(configFilePath: String): IConfigurationFile = js.native
     def loadConfigurationFromPath(configFilePath: String, _originalFilePath: String): IConfigurationFile = js.native
   }

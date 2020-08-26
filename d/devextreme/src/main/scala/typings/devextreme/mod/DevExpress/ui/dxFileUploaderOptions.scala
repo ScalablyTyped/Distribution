@@ -1,23 +1,15 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.BytesLoaded
-import typings.devextreme.anon.BytesUploaded
-import typings.devextreme.anon.ComponentElement
-import typings.devextreme.anon.Element
+import typings.devextreme.anon.ElementError
 import typings.devextreme.anon.JQueryEventModel
-import typings.devextreme.anon.Model
-import typings.devextreme.anon.Name
 import typings.devextreme.anon.Request
 import typings.devextreme.devextremeStrings.POST
 import typings.devextreme.devextremeStrings.PUT
-import typings.devextreme.devextremeStrings.always
-import typings.devextreme.devextremeStrings.auto
 import typings.devextreme.devextremeStrings.instantly
-import typings.devextreme.devextremeStrings.invalid
-import typings.devextreme.devextremeStrings.pending
 import typings.devextreme.devextremeStrings.useButtons
 import typings.devextreme.devextremeStrings.useForm
-import typings.devextreme.devextremeStrings.valid
+import typings.devextreme.mod.DevExpress.fileManagement.UploadInfo
 import typings.devextreme.mod.global.JQueryPromise
 import typings.devextreme.mod.global.Promise
 import typings.std.File
@@ -25,66 +17,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
   /** @name dxFileUploader.Options.abortUpload */
   var abortUpload: js.UndefOr[
-    js.Function2[/* file */ File, /* uploadInfo */ BytesUploaded, Promise[_] | JQueryPromise[_] | _]
-  ] = js.undefined
+    js.Function2[
+      /* file */ File, 
+      /* uploadInfo */ js.UndefOr[UploadInfo], 
+      Promise[_] | JQueryPromise[_] | _
+    ]
+  ] = js.native
   /** @name dxFileUploader.Options.accept */
-  var accept: js.UndefOr[String] = js.undefined
+  var accept: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.allowCanceling */
-  var allowCanceling: js.UndefOr[Boolean] = js.undefined
+  var allowCanceling: js.UndefOr[Boolean] = js.native
   /** @name dxFileUploader.Options.allowedFileExtensions */
-  var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
+  var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
   /** @name dxFileUploader.Options.chunkSize */
-  var chunkSize: js.UndefOr[Double] = js.undefined
+  var chunkSize: js.UndefOr[Double] = js.native
   /** @name dxFileUploader.Options.inputAttr */
-  var inputAttr: js.UndefOr[js.Any] = js.undefined
+  var inputAttr: js.UndefOr[js.Any] = js.native
   /** @name dxFileUploader.Options.invalidFileExtensionMessage */
-  var invalidFileExtensionMessage: js.UndefOr[String] = js.undefined
+  var invalidFileExtensionMessage: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.invalidMaxFileSizeMessage */
-  var invalidMaxFileSizeMessage: js.UndefOr[String] = js.undefined
+  var invalidMaxFileSizeMessage: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.invalidMinFileSizeMessage */
-  var invalidMinFileSizeMessage: js.UndefOr[String] = js.undefined
+  var invalidMinFileSizeMessage: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.labelText */
-  var labelText: js.UndefOr[String] = js.undefined
+  var labelText: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.maxFileSize */
-  var maxFileSize: js.UndefOr[Double] = js.undefined
+  var maxFileSize: js.UndefOr[Double] = js.native
   /** @name dxFileUploader.Options.minFileSize */
-  var minFileSize: js.UndefOr[Double] = js.undefined
+  var minFileSize: js.UndefOr[Double] = js.native
   /** @name dxFileUploader.Options.multiple */
-  var multiple: js.UndefOr[Boolean] = js.undefined
+  var multiple: js.UndefOr[Boolean] = js.native
   /** @name dxFileUploader.Options.name */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.onProgress */
-  var onProgress: js.UndefOr[js.Function1[/* e */ BytesLoaded, _]] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[/* e */ BytesLoaded, _]] = js.native
   /** @name dxFileUploader.Options.onUploadAborted */
-  var onUploadAborted: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.File, _]] = js.undefined
+  var onUploadAborted: js.UndefOr[js.Function1[/* e */ Request, _]] = js.native
   /** @name dxFileUploader.Options.onUploadError */
-  var onUploadError: js.UndefOr[js.Function1[/* e */ Request, _]] = js.undefined
+  var onUploadError: js.UndefOr[js.Function1[/* e */ ElementError, _]] = js.native
   /** @name dxFileUploader.Options.onUploadStarted */
-  var onUploadStarted: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.File, _]] = js.undefined
+  var onUploadStarted: js.UndefOr[js.Function1[/* e */ Request, _]] = js.native
   /** @name dxFileUploader.Options.onUploaded */
-  var onUploaded: js.UndefOr[js.Function1[/* e */ typings.devextreme.anon.File, _]] = js.undefined
+  var onUploaded: js.UndefOr[js.Function1[/* e */ Request, _]] = js.native
   /** @name dxFileUploader.Options.onValueChanged */
   @JSName("onValueChanged")
-  var onValueChanged_dxFileUploaderOptions: js.UndefOr[js.Function1[/* e */ JQueryEventModel, _]] = js.undefined
+  var onValueChanged_dxFileUploaderOptions: js.UndefOr[js.Function1[/* e */ JQueryEventModel, _]] = js.native
   /** @name dxFileUploader.Options.progress */
-  var progress: js.UndefOr[Double] = js.undefined
+  var progress: js.UndefOr[Double] = js.native
   /** @name dxFileUploader.Options.readyToUploadMessage */
-  var readyToUploadMessage: js.UndefOr[String] = js.undefined
+  var readyToUploadMessage: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.selectButtonText */
-  var selectButtonText: js.UndefOr[String] = js.undefined
+  var selectButtonText: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.showFileList */
-  var showFileList: js.UndefOr[Boolean] = js.undefined
+  var showFileList: js.UndefOr[Boolean] = js.native
   /** @name dxFileUploader.Options.uploadButtonText */
-  var uploadButtonText: js.UndefOr[String] = js.undefined
+  var uploadButtonText: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.uploadChunk */
   var uploadChunk: js.UndefOr[
-    js.Function2[/* file */ File, /* uploadInfo */ BytesUploaded, Promise[_] | JQueryPromise[_] | _]
-  ] = js.undefined
+    js.Function2[/* file */ File, /* uploadInfo */ UploadInfo, Promise[_] | JQueryPromise[_] | _]
+  ] = js.native
   /** @name dxFileUploader.Options.uploadFailedMessage */
-  var uploadFailedMessage: js.UndefOr[String] = js.undefined
+  var uploadFailedMessage: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.uploadFile */
   var uploadFile: js.UndefOr[
     js.Function2[
@@ -92,142 +89,182 @@ trait dxFileUploaderOptions extends EditorOptions[dxFileUploader] {
       /* progressCallback */ js.Function, 
       Promise[_] | JQueryPromise[_] | _
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name dxFileUploader.Options.uploadHeaders */
-  var uploadHeaders: js.UndefOr[js.Any] = js.undefined
+  var uploadHeaders: js.UndefOr[js.Any] = js.native
   /** @name dxFileUploader.Options.uploadMethod */
-  var uploadMethod: js.UndefOr[POST | PUT] = js.undefined
+  var uploadMethod: js.UndefOr[POST | PUT] = js.native
   /** @name dxFileUploader.Options.uploadMode */
-  var uploadMode: js.UndefOr[instantly | useButtons | useForm] = js.undefined
+  var uploadMode: js.UndefOr[instantly | useButtons | useForm] = js.native
   /** @name dxFileUploader.Options.uploadUrl */
-  var uploadUrl: js.UndefOr[String] = js.undefined
+  var uploadUrl: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.uploadedMessage */
-  var uploadedMessage: js.UndefOr[String] = js.undefined
+  var uploadedMessage: js.UndefOr[String] = js.native
   /** @name dxFileUploader.Options.value */
   @JSName("value")
-  var value_dxFileUploaderOptions: js.UndefOr[js.Array[File]] = js.undefined
+  var value_dxFileUploaderOptions: js.UndefOr[js.Array[File]] = js.native
 }
 
 object dxFileUploaderOptions {
   @scala.inline
-  def apply(
-    abortUpload: (/* file */ File, /* uploadInfo */ BytesUploaded) => Promise[_] | JQueryPromise[_] | _ = null,
-    accept: String = null,
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    allowCanceling: js.UndefOr[Boolean] = js.undefined,
-    allowedFileExtensions: js.Array[String] = null,
-    bindingOptions: js.Any = null,
-    chunkSize: js.UndefOr[Double] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    inputAttr: js.Any = null,
-    invalidFileExtensionMessage: String = null,
-    invalidMaxFileSizeMessage: String = null,
-    invalidMinFileSizeMessage: String = null,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    labelText: String = null,
-    maxFileSize: js.UndefOr[Double] = js.undefined,
-    minFileSize: js.UndefOr[Double] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onContentReady: /* e */ ComponentElement[dxFileUploader] => _ = null,
-    onDisposing: /* e */ Model[dxFileUploader] => _ = null,
-    onInitialized: /* e */ Element[dxFileUploader] => _ = null,
-    onOptionChanged: /* e */ Name[dxFileUploader] => _ = null,
-    onProgress: /* e */ BytesLoaded => _ = null,
-    onUploadAborted: /* e */ typings.devextreme.anon.File => _ = null,
-    onUploadError: /* e */ Request => _ = null,
-    onUploadStarted: /* e */ typings.devextreme.anon.File => _ = null,
-    onUploaded: /* e */ typings.devextreme.anon.File => _ = null,
-    onValueChanged: /* e */ JQueryEventModel => _ = null,
-    progress: js.UndefOr[Double] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    readyToUploadMessage: String = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    selectButtonText: String = null,
-    showFileList: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    uploadButtonText: String = null,
-    uploadChunk: (/* file */ File, /* uploadInfo */ BytesUploaded) => Promise[_] | JQueryPromise[_] | _ = null,
-    uploadFailedMessage: String = null,
-    uploadFile: (/* file */ File, /* progressCallback */ js.Function) => Promise[_] | JQueryPromise[_] | _ = null,
-    uploadHeaders: js.Any = null,
-    uploadMethod: POST | PUT = null,
-    uploadMode: instantly | useButtons | useForm = null,
-    uploadUrl: String = null,
-    uploadedMessage: String = null,
-    validationError: js.Any = null,
-    validationErrors: js.Array[_] = null,
-    validationMessageMode: always | auto = null,
-    validationStatus: valid | invalid | pending = null,
-    value: js.Array[File] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxFileUploaderOptions = {
+  def apply(): dxFileUploaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (abortUpload != null) __obj.updateDynamic("abortUpload")(js.Any.fromFunction2(abortUpload))
-    if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCanceling)) __obj.updateDynamic("allowCanceling")(allowCanceling.get.asInstanceOf[js.Any])
-    if (allowedFileExtensions != null) __obj.updateDynamic("allowedFileExtensions")(allowedFileExtensions.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(chunkSize)) __obj.updateDynamic("chunkSize")(chunkSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.get.asInstanceOf[js.Any])
-    if (inputAttr != null) __obj.updateDynamic("inputAttr")(inputAttr.asInstanceOf[js.Any])
-    if (invalidFileExtensionMessage != null) __obj.updateDynamic("invalidFileExtensionMessage")(invalidFileExtensionMessage.asInstanceOf[js.Any])
-    if (invalidMaxFileSizeMessage != null) __obj.updateDynamic("invalidMaxFileSizeMessage")(invalidMaxFileSizeMessage.asInstanceOf[js.Any])
-    if (invalidMinFileSizeMessage != null) __obj.updateDynamic("invalidMinFileSizeMessage")(invalidMinFileSizeMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
-    if (labelText != null) __obj.updateDynamic("labelText")(labelText.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFileSize)) __obj.updateDynamic("maxFileSize")(maxFileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minFileSize)) __obj.updateDynamic("minFileSize")(minFileSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1(onContentReady))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1(onDisposing))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1(onInitialized))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1(onOptionChanged))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
-    if (onUploadAborted != null) __obj.updateDynamic("onUploadAborted")(js.Any.fromFunction1(onUploadAborted))
-    if (onUploadError != null) __obj.updateDynamic("onUploadError")(js.Any.fromFunction1(onUploadError))
-    if (onUploadStarted != null) __obj.updateDynamic("onUploadStarted")(js.Any.fromFunction1(onUploadStarted))
-    if (onUploaded != null) __obj.updateDynamic("onUploaded")(js.Any.fromFunction1(onUploaded))
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1(onValueChanged))
-    if (!js.isUndefined(progress)) __obj.updateDynamic("progress")(progress.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (readyToUploadMessage != null) __obj.updateDynamic("readyToUploadMessage")(readyToUploadMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.get.asInstanceOf[js.Any])
-    if (selectButtonText != null) __obj.updateDynamic("selectButtonText")(selectButtonText.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFileList)) __obj.updateDynamic("showFileList")(showFileList.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (uploadButtonText != null) __obj.updateDynamic("uploadButtonText")(uploadButtonText.asInstanceOf[js.Any])
-    if (uploadChunk != null) __obj.updateDynamic("uploadChunk")(js.Any.fromFunction2(uploadChunk))
-    if (uploadFailedMessage != null) __obj.updateDynamic("uploadFailedMessage")(uploadFailedMessage.asInstanceOf[js.Any])
-    if (uploadFile != null) __obj.updateDynamic("uploadFile")(js.Any.fromFunction2(uploadFile))
-    if (uploadHeaders != null) __obj.updateDynamic("uploadHeaders")(uploadHeaders.asInstanceOf[js.Any])
-    if (uploadMethod != null) __obj.updateDynamic("uploadMethod")(uploadMethod.asInstanceOf[js.Any])
-    if (uploadMode != null) __obj.updateDynamic("uploadMode")(uploadMode.asInstanceOf[js.Any])
-    if (uploadUrl != null) __obj.updateDynamic("uploadUrl")(uploadUrl.asInstanceOf[js.Any])
-    if (uploadedMessage != null) __obj.updateDynamic("uploadedMessage")(uploadedMessage.asInstanceOf[js.Any])
-    if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
-    if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
-    if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
-    if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFileUploaderOptions]
   }
+  @scala.inline
+  implicit class dxFileUploaderOptionsOps[Self <: dxFileUploaderOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAbortUpload(
+      value: (/* file */ File, /* uploadInfo */ js.UndefOr[UploadInfo]) => Promise[_] | JQueryPromise[_] | _
+    ): Self = this.set("abortUpload", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAbortUpload: Self = this.set("abortUpload", js.undefined)
+    @scala.inline
+    def setAccept(value: String): Self = this.set("accept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccept: Self = this.set("accept", js.undefined)
+    @scala.inline
+    def setAllowCanceling(value: Boolean): Self = this.set("allowCanceling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCanceling: Self = this.set("allowCanceling", js.undefined)
+    @scala.inline
+    def setAllowedFileExtensionsVarargs(value: String*): Self = this.set("allowedFileExtensions", js.Array(value :_*))
+    @scala.inline
+    def setAllowedFileExtensions(value: js.Array[String]): Self = this.set("allowedFileExtensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedFileExtensions: Self = this.set("allowedFileExtensions", js.undefined)
+    @scala.inline
+    def setChunkSize(value: Double): Self = this.set("chunkSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChunkSize: Self = this.set("chunkSize", js.undefined)
+    @scala.inline
+    def setInputAttr(value: js.Any): Self = this.set("inputAttr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAttr: Self = this.set("inputAttr", js.undefined)
+    @scala.inline
+    def setInvalidFileExtensionMessage(value: String): Self = this.set("invalidFileExtensionMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidFileExtensionMessage: Self = this.set("invalidFileExtensionMessage", js.undefined)
+    @scala.inline
+    def setInvalidMaxFileSizeMessage(value: String): Self = this.set("invalidMaxFileSizeMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidMaxFileSizeMessage: Self = this.set("invalidMaxFileSizeMessage", js.undefined)
+    @scala.inline
+    def setInvalidMinFileSizeMessage(value: String): Self = this.set("invalidMinFileSizeMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvalidMinFileSizeMessage: Self = this.set("invalidMinFileSizeMessage", js.undefined)
+    @scala.inline
+    def setLabelText(value: String): Self = this.set("labelText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelText: Self = this.set("labelText", js.undefined)
+    @scala.inline
+    def setMaxFileSize(value: Double): Self = this.set("maxFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFileSize: Self = this.set("maxFileSize", js.undefined)
+    @scala.inline
+    def setMinFileSize(value: Double): Self = this.set("minFileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinFileSize: Self = this.set("minFileSize", js.undefined)
+    @scala.inline
+    def setMultiple(value: Boolean): Self = this.set("multiple", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiple: Self = this.set("multiple", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnProgress(value: /* e */ BytesLoaded => _): Self = this.set("onProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnProgress: Self = this.set("onProgress", js.undefined)
+    @scala.inline
+    def setOnUploadAborted(value: /* e */ Request => _): Self = this.set("onUploadAborted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUploadAborted: Self = this.set("onUploadAborted", js.undefined)
+    @scala.inline
+    def setOnUploadError(value: /* e */ ElementError => _): Self = this.set("onUploadError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUploadError: Self = this.set("onUploadError", js.undefined)
+    @scala.inline
+    def setOnUploadStarted(value: /* e */ Request => _): Self = this.set("onUploadStarted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUploadStarted: Self = this.set("onUploadStarted", js.undefined)
+    @scala.inline
+    def setOnUploaded(value: /* e */ Request => _): Self = this.set("onUploaded", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUploaded: Self = this.set("onUploaded", js.undefined)
+    @scala.inline
+    def setOnValueChanged(value: /* e */ JQueryEventModel => _): Self = this.set("onValueChanged", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnValueChanged: Self = this.set("onValueChanged", js.undefined)
+    @scala.inline
+    def setProgress(value: Double): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgress: Self = this.set("progress", js.undefined)
+    @scala.inline
+    def setReadyToUploadMessage(value: String): Self = this.set("readyToUploadMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadyToUploadMessage: Self = this.set("readyToUploadMessage", js.undefined)
+    @scala.inline
+    def setSelectButtonText(value: String): Self = this.set("selectButtonText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectButtonText: Self = this.set("selectButtonText", js.undefined)
+    @scala.inline
+    def setShowFileList(value: Boolean): Self = this.set("showFileList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFileList: Self = this.set("showFileList", js.undefined)
+    @scala.inline
+    def setUploadButtonText(value: String): Self = this.set("uploadButtonText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadButtonText: Self = this.set("uploadButtonText", js.undefined)
+    @scala.inline
+    def setUploadChunk(value: (/* file */ File, /* uploadInfo */ UploadInfo) => Promise[_] | JQueryPromise[_] | _): Self = this.set("uploadChunk", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUploadChunk: Self = this.set("uploadChunk", js.undefined)
+    @scala.inline
+    def setUploadFailedMessage(value: String): Self = this.set("uploadFailedMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadFailedMessage: Self = this.set("uploadFailedMessage", js.undefined)
+    @scala.inline
+    def setUploadFile(value: (/* file */ File, /* progressCallback */ js.Function) => Promise[_] | JQueryPromise[_] | _): Self = this.set("uploadFile", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUploadFile: Self = this.set("uploadFile", js.undefined)
+    @scala.inline
+    def setUploadHeaders(value: js.Any): Self = this.set("uploadHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadHeaders: Self = this.set("uploadHeaders", js.undefined)
+    @scala.inline
+    def setUploadMethod(value: POST | PUT): Self = this.set("uploadMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadMethod: Self = this.set("uploadMethod", js.undefined)
+    @scala.inline
+    def setUploadMode(value: instantly | useButtons | useForm): Self = this.set("uploadMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadMode: Self = this.set("uploadMode", js.undefined)
+    @scala.inline
+    def setUploadUrl(value: String): Self = this.set("uploadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadUrl: Self = this.set("uploadUrl", js.undefined)
+    @scala.inline
+    def setUploadedMessage(value: String): Self = this.set("uploadedMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadedMessage: Self = this.set("uploadedMessage", js.undefined)
+    @scala.inline
+    def setValueVarargs(value: File*): Self = this.set("value", js.Array(value :_*))
+    @scala.inline
+    def setValue(value: js.Array[File]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

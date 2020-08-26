@@ -7,135 +7,188 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IonSlides extends js.Object {
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.undefined
+  var mode: js.UndefOr[ios | md] = js.native
   /**
     * Emitted after the active slide has changed.
     */
-  var onIonSlideDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the user double taps on the slide's container.
     */
-  var onIonSlideDoubleTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideDoubleTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the slider is actively being moved.
     */
-  var onIonSlideDrag: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideDrag: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the next slide has ended.
     */
-  var onIonSlideNextEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideNextEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the next slide has started.
     */
-  var onIonSlideNextStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideNextStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the previous slide has ended.
     */
-  var onIonSlidePrevEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlidePrevEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the previous slide has started.
     */
-  var onIonSlidePrevStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlidePrevStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the slider is at the last slide.
     */
-  var onIonSlideReachEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideReachEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the slider is at its initial position.
     */
-  var onIonSlideReachStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideReachStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the user taps/clicks on the slide's container.
     */
-  var onIonSlideTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the user releases the touch.
     */
-  var onIonSlideTouchEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideTouchEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the user first touches the slider.
     */
-  var onIonSlideTouchStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideTouchStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the slide transition has ended.
     */
-  var onIonSlideTransitionEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideTransitionEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted when the slide transition has started.
     */
-  var onIonSlideTransitionStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideTransitionStart: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted before the active slide has changed.
     */
-  var onIonSlideWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlideWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted after Swiper initialization
     */
-  var onIonSlidesDidLoad: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonSlidesDidLoad: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Options to pass to the swiper instance. See http://idangero.us/swiper/api/ for valid options
     */
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[js.Any] = js.native
   /**
     * If `true`, show the pagination.
     */
-  var pager: js.UndefOr[Boolean] = js.undefined
+  var pager: js.UndefOr[Boolean] = js.native
   /**
     * If `true`, show the scrollbar.
     */
-  var scrollbar: js.UndefOr[Boolean] = js.undefined
+  var scrollbar: js.UndefOr[Boolean] = js.native
 }
 
 object IonSlides {
   @scala.inline
-  def apply(
-    mode: ios | md = null,
-    onIonSlideDidChange: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideDoubleTap: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideDrag: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideNextEnd: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideNextStart: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlidePrevEnd: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlidePrevStart: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideReachEnd: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideReachStart: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideTap: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideTouchEnd: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideTouchStart: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideTransitionEnd: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideTransitionStart: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlideWillChange: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonSlidesDidLoad: /* event */ CustomEvent[Unit] => Unit = null,
-    options: js.Any = null,
-    pager: js.UndefOr[Boolean] = js.undefined,
-    scrollbar: js.UndefOr[Boolean] = js.undefined
-  ): IonSlides = {
+  def apply(): IonSlides = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onIonSlideDidChange != null) __obj.updateDynamic("onIonSlideDidChange")(js.Any.fromFunction1(onIonSlideDidChange))
-    if (onIonSlideDoubleTap != null) __obj.updateDynamic("onIonSlideDoubleTap")(js.Any.fromFunction1(onIonSlideDoubleTap))
-    if (onIonSlideDrag != null) __obj.updateDynamic("onIonSlideDrag")(js.Any.fromFunction1(onIonSlideDrag))
-    if (onIonSlideNextEnd != null) __obj.updateDynamic("onIonSlideNextEnd")(js.Any.fromFunction1(onIonSlideNextEnd))
-    if (onIonSlideNextStart != null) __obj.updateDynamic("onIonSlideNextStart")(js.Any.fromFunction1(onIonSlideNextStart))
-    if (onIonSlidePrevEnd != null) __obj.updateDynamic("onIonSlidePrevEnd")(js.Any.fromFunction1(onIonSlidePrevEnd))
-    if (onIonSlidePrevStart != null) __obj.updateDynamic("onIonSlidePrevStart")(js.Any.fromFunction1(onIonSlidePrevStart))
-    if (onIonSlideReachEnd != null) __obj.updateDynamic("onIonSlideReachEnd")(js.Any.fromFunction1(onIonSlideReachEnd))
-    if (onIonSlideReachStart != null) __obj.updateDynamic("onIonSlideReachStart")(js.Any.fromFunction1(onIonSlideReachStart))
-    if (onIonSlideTap != null) __obj.updateDynamic("onIonSlideTap")(js.Any.fromFunction1(onIonSlideTap))
-    if (onIonSlideTouchEnd != null) __obj.updateDynamic("onIonSlideTouchEnd")(js.Any.fromFunction1(onIonSlideTouchEnd))
-    if (onIonSlideTouchStart != null) __obj.updateDynamic("onIonSlideTouchStart")(js.Any.fromFunction1(onIonSlideTouchStart))
-    if (onIonSlideTransitionEnd != null) __obj.updateDynamic("onIonSlideTransitionEnd")(js.Any.fromFunction1(onIonSlideTransitionEnd))
-    if (onIonSlideTransitionStart != null) __obj.updateDynamic("onIonSlideTransitionStart")(js.Any.fromFunction1(onIonSlideTransitionStart))
-    if (onIonSlideWillChange != null) __obj.updateDynamic("onIonSlideWillChange")(js.Any.fromFunction1(onIonSlideWillChange))
-    if (onIonSlidesDidLoad != null) __obj.updateDynamic("onIonSlidesDidLoad")(js.Any.fromFunction1(onIonSlidesDidLoad))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollbar)) __obj.updateDynamic("scrollbar")(scrollbar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSlides]
   }
+  @scala.inline
+  implicit class IonSlidesOps[Self <: IonSlides] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOnIonSlideDidChange(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideDidChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideDidChange: Self = this.set("onIonSlideDidChange", js.undefined)
+    @scala.inline
+    def setOnIonSlideDoubleTap(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideDoubleTap", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideDoubleTap: Self = this.set("onIonSlideDoubleTap", js.undefined)
+    @scala.inline
+    def setOnIonSlideDrag(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideDrag: Self = this.set("onIonSlideDrag", js.undefined)
+    @scala.inline
+    def setOnIonSlideNextEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideNextEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideNextEnd: Self = this.set("onIonSlideNextEnd", js.undefined)
+    @scala.inline
+    def setOnIonSlideNextStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideNextStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideNextStart: Self = this.set("onIonSlideNextStart", js.undefined)
+    @scala.inline
+    def setOnIonSlidePrevEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlidePrevEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlidePrevEnd: Self = this.set("onIonSlidePrevEnd", js.undefined)
+    @scala.inline
+    def setOnIonSlidePrevStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlidePrevStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlidePrevStart: Self = this.set("onIonSlidePrevStart", js.undefined)
+    @scala.inline
+    def setOnIonSlideReachEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideReachEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideReachEnd: Self = this.set("onIonSlideReachEnd", js.undefined)
+    @scala.inline
+    def setOnIonSlideReachStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideReachStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideReachStart: Self = this.set("onIonSlideReachStart", js.undefined)
+    @scala.inline
+    def setOnIonSlideTap(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTap", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideTap: Self = this.set("onIonSlideTap", js.undefined)
+    @scala.inline
+    def setOnIonSlideTouchEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideTouchEnd: Self = this.set("onIonSlideTouchEnd", js.undefined)
+    @scala.inline
+    def setOnIonSlideTouchStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideTouchStart: Self = this.set("onIonSlideTouchStart", js.undefined)
+    @scala.inline
+    def setOnIonSlideTransitionEnd(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideTransitionEnd: Self = this.set("onIonSlideTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnIonSlideTransitionStart(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideTransitionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideTransitionStart: Self = this.set("onIonSlideTransitionStart", js.undefined)
+    @scala.inline
+    def setOnIonSlideWillChange(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlideWillChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlideWillChange: Self = this.set("onIonSlideWillChange", js.undefined)
+    @scala.inline
+    def setOnIonSlidesDidLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonSlidesDidLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonSlidesDidLoad: Self = this.set("onIonSlidesDidLoad", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setPager(value: Boolean): Self = this.set("pager", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePager: Self = this.set("pager", js.undefined)
+    @scala.inline
+    def setScrollbar(value: Boolean): Self = this.set("scrollbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollbar: Self = this.set("scrollbar", js.undefined)
+  }
+  
 }
 

@@ -15,48 +15,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabsProps extends js.Object {
-  var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
-  var activeIndex: js.UndefOr[Double] = js.undefined
-  var alignControls: js.UndefOr[AlignSelfType] = js.undefined
-  var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
-  var children: ReactNode
-  var flex: js.UndefOr[grow | shrink | Boolean] = js.undefined
-  var gridArea: js.UndefOr[GridAreaType] = js.undefined
-  var justify: js.UndefOr[start | center | end] = js.undefined
-  var margin: js.UndefOr[MarginType] = js.undefined
-  var messages: js.UndefOr[TabContents] = js.undefined
-  var onActive: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
+  var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+  var activeIndex: js.UndefOr[Double] = js.native
+  var alignControls: js.UndefOr[AlignSelfType] = js.native
+  var alignSelf: js.UndefOr[AlignSelfType] = js.native
+  var children: ReactNode = js.native
+  var flex: js.UndefOr[grow | shrink | Boolean] = js.native
+  var gridArea: js.UndefOr[GridAreaType] = js.native
+  var justify: js.UndefOr[start | center | end] = js.native
+  var margin: js.UndefOr[MarginType] = js.native
+  var messages: js.UndefOr[TabContents] = js.native
+  var onActive: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
 }
 
 object TabsProps {
   @scala.inline
-  def apply(
-    a11yTitle: A11yTitleType = null,
-    activeIndex: js.UndefOr[Double] = js.undefined,
-    alignControls: AlignSelfType = null,
-    alignSelf: AlignSelfType = null,
-    children: ReactNode = null,
-    flex: grow | shrink | Boolean = null,
-    gridArea: GridAreaType = null,
-    justify: start | center | end = null,
-    margin: MarginType = null,
-    messages: TabContents = null,
-    onActive: /* index */ Double => Unit = null
-  ): TabsProps = {
+  def apply(): TabsProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
-    if (alignControls != null) __obj.updateDynamic("alignControls")(alignControls.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (onActive != null) __obj.updateDynamic("onActive")(js.Any.fromFunction1(onActive))
     __obj.asInstanceOf[TabsProps]
   }
+  @scala.inline
+  implicit class TabsPropsOps[Self <: TabsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA11yTitle(value: A11yTitleType): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setAlignControls(value: AlignSelfType): Self = this.set("alignControls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignControls: Self = this.set("alignControls", js.undefined)
+    @scala.inline
+    def setAlignSelf(value: AlignSelfType): Self = this.set("alignSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignSelf: Self = this.set("alignSelf", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setFlex(value: grow | shrink | Boolean): Self = this.set("flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlex: Self = this.set("flex", js.undefined)
+    @scala.inline
+    def setGridArea(value: GridAreaType): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setJustify(value: start | center | end): Self = this.set("justify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustify: Self = this.set("justify", js.undefined)
+    @scala.inline
+    def setMargin(value: MarginType): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMessages(value: TabContents): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setOnActive(value: /* index */ Double => Unit): Self = this.set("onActive", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnActive: Self = this.set("onActive", js.undefined)
+  }
+  
 }
 

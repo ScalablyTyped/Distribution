@@ -14,10 +14,26 @@ trait DvbSubSourceSettings extends js.Object {
 
 object DvbSubSourceSettings {
   @scala.inline
-  def apply(Pid: js.UndefOr[integerMin1Max2147483647] = js.undefined): DvbSubSourceSettings = {
+  def apply(): DvbSubSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DvbSubSourceSettings]
   }
+  @scala.inline
+  implicit class DvbSubSourceSettingsOps[Self <: DvbSubSourceSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPid(value: integerMin1Max2147483647): Self = this.set("Pid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePid: Self = this.set("Pid", js.undefined)
+  }
+  
 }
 

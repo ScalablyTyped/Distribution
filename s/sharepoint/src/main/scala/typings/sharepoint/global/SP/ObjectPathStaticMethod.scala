@@ -14,7 +14,5 @@ class ObjectPathStaticMethod protected ()
     methodName: String,
     parameters: js.Array[_]
   ) = this()
-  /* CompleteClass */
-  override def setPendingReplace(): Unit = js.native
 }
 

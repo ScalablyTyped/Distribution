@@ -16,6 +16,7 @@ trait StageGL extends Stage {
   var vocalDebug: Boolean = js.native
   def cacheDraw(target: DisplayObject, filters: js.Array[Filter], manager: BitmapCache): Boolean = js.native
   def getBaseTexture(): WebGLTexture | Null = js.native
+  def getBaseTexture(w: js.UndefOr[scala.Nothing], h: Double): WebGLTexture | Null = js.native
   def getBaseTexture(w: Double): WebGLTexture | Null = js.native
   def getBaseTexture(w: Double, h: Double): WebGLTexture | Null = js.native
   def getFilterShader(filter: js.Object): WebGLProgram = js.native

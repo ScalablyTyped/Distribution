@@ -1,7 +1,5 @@
 package typings.lowlight.lowlight.AST
 
-import typings.lowlight.lowlight.AST.Unist.Data
-import typings.lowlight.lowlight.AST.Unist.Location
 import typings.lowlight.lowlight.AST.Unist.Node
 import typings.lowlight.lowlight.HastNode
 import typings.lowlight.lowlightStrings.doctype
@@ -9,33 +7,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Doctype
   extends Node
      with HastNode {
-  var name: String
-  var public: js.UndefOr[String] = js.undefined
-  var system: js.UndefOr[String] = js.undefined
+  var name: String = js.native
+  var public: js.UndefOr[String] = js.native
+  var system: js.UndefOr[String] = js.native
   @JSName("type")
-  var type_Doctype: doctype
+  var type_Doctype: doctype = js.native
 }
 
 object Doctype {
   @scala.inline
-  def apply(
-    name: String,
-    `type`: doctype,
-    data: Data = null,
-    position: Location = null,
-    public: String = null,
-    system: String = null
-  ): Doctype = {
+  def apply(name: String, `type`: doctype): Doctype = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
     __obj.asInstanceOf[Doctype]
   }
+  @scala.inline
+  implicit class DoctypeOps[Self <: Doctype] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: doctype): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublic(value: String): Self = this.set("public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("public", js.undefined)
+    @scala.inline
+    def setSystem(value: String): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem: Self = this.set("system", js.undefined)
+  }
+  
 }
 

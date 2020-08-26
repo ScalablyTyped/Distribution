@@ -12,7 +12,7 @@ Number input component that can replace the native number input which is not yet
 | Keywords           | react, input, number, numeric, widget, component |
 | # releases         | 4 |
 | # dependents       | 41 |
-| # downloads        | 1525438 |
+| # downloads        | 1587482 |
 | # stars            | 1 |
 
 ## Links

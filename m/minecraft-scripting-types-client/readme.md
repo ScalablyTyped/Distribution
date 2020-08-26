@@ -12,7 +12,7 @@ Client-side TypeScript definitions for Minecraft Bedrock Edition's scripting eng
 | Keywords           | - |
 | # releases         | 11 |
 | # dependents       | 3 |
-| # downloads        | 1164 |
+| # downloads        | 1142 |
 | # stars            | 0 |
 
 ## Links

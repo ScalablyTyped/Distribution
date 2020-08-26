@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(word: String): String = js.native
+  def apply(word: String, count: js.UndefOr[scala.Nothing], inclusive: Boolean): String = js.native
   def apply(word: String, count: Double): String = js.native
   def apply(word: String, count: Double, inclusive: Boolean): String = js.native
   /**

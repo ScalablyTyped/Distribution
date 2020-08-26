@@ -18,7 +18,7 @@ object ɵangularPackagesCommonCommonF
         (Instantiable1[
           (/* _ref */ ChangeDetectorRef) | (/* differs */ KeyValueDiffers) | (/* _localization */ NgLocalization) | (/* _locale */ String), 
           AsyncPipe | DatePipe | DecimalPipe | I18nPluralPipe | KeyValuePipe | PercentPipe
-        ]) | (Instantiable0[I18nSelectPipe | SlicePipe]) | (Instantiable2[/* _locale */ String, js.UndefOr[/* _defaultCurrencyCode */ String], CurrencyPipe])
+        ]) | (Instantiable0[I18nSelectPipe | SlicePipe]) | (Instantiable2[/* _locale */ String, /* _defaultCurrencyCode */ js.UndefOr[String], CurrencyPipe])
       ]
     ]
 

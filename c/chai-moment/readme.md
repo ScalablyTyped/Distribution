@@ -12,7 +12,7 @@ date assertions for chai, powered by moment
 | Keywords           | chai, moment, test, assertions |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 386802 |
+| # downloads        | 384143 |
 | # stars            | 0 |
 
 ## Links

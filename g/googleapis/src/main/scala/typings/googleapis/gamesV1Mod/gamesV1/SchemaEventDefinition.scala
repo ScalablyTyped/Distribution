@@ -50,26 +50,56 @@ trait SchemaEventDefinition extends js.Object {
 
 object SchemaEventDefinition {
   @scala.inline
-  def apply(
-    childEvents: js.Array[SchemaEventChild] = null,
-    description: String = null,
-    displayName: String = null,
-    id: String = null,
-    imageUrl: String = null,
-    isDefaultImageUrl: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    visibility: String = null
-  ): SchemaEventDefinition = {
+  def apply(): SchemaEventDefinition = {
     val __obj = js.Dynamic.literal()
-    if (childEvents != null) __obj.updateDynamic("childEvents")(childEvents.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultImageUrl)) __obj.updateDynamic("isDefaultImageUrl")(isDefaultImageUrl.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEventDefinition]
   }
+  @scala.inline
+  implicit class SchemaEventDefinitionOps[Self <: SchemaEventDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildEventsVarargs(value: SchemaEventChild*): Self = this.set("childEvents", js.Array(value :_*))
+    @scala.inline
+    def setChildEvents(value: js.Array[SchemaEventChild]): Self = this.set("childEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildEvents: Self = this.set("childEvents", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setIsDefaultImageUrl(value: Boolean): Self = this.set("isDefaultImageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultImageUrl: Self = this.set("isDefaultImageUrl", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,5 @@ import scala.scalajs.js.annotation._
 class Icon ()
   extends typings.amapJsSdk.AMap.Icon {
   def this(options: Image) = this()
-  /* CompleteClass */
-  override def getImageSize(): typings.amapJsSdk.AMap.Size = js.native
-  /* CompleteClass */
-  override def setImageSize(size: typings.amapJsSdk.AMap.Size): Unit = js.native
 }
 

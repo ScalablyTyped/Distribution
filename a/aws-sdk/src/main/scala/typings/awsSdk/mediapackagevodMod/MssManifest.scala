@@ -15,11 +15,30 @@ trait MssManifest extends js.Object {
 
 object MssManifest {
   @scala.inline
-  def apply(ManifestName: string = null, StreamSelection: StreamSelection = null): MssManifest = {
+  def apply(): MssManifest = {
     val __obj = js.Dynamic.literal()
-    if (ManifestName != null) __obj.updateDynamic("ManifestName")(ManifestName.asInstanceOf[js.Any])
-    if (StreamSelection != null) __obj.updateDynamic("StreamSelection")(StreamSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[MssManifest]
   }
+  @scala.inline
+  implicit class MssManifestOps[Self <: MssManifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setManifestName(value: string): Self = this.set("ManifestName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifestName: Self = this.set("ManifestName", js.undefined)
+    @scala.inline
+    def setStreamSelection(value: StreamSelection): Self = this.set("StreamSelection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamSelection: Self = this.set("StreamSelection", js.undefined)
+  }
+  
 }
 

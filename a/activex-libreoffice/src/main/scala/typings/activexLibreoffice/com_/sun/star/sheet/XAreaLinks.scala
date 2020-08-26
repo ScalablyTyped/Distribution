@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.CellAreaLinks
   * @see com.sun.star.sheet.CellAreaLink
   */
+@js.native
 trait XAreaLinks extends XIndexAccess {
   /**
     * creates an area link and adds it to the collection.
@@ -27,9 +28,9 @@ trait XAreaLinks extends XIndexAccess {
     aSourceArea: String,
     aFilter: String,
     aFilterOptions: String
-  ): Unit
+  ): Unit = js.native
   /** removes an area link from the collection. */
-  def removeByIndex(nIndex: Double): Unit
+  def removeByIndex(nIndex: Double): Unit = js.native
 }
 
 object XAreaLinks {
@@ -50,5 +51,22 @@ object XAreaLinks {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), insertAtPosition = js.Any.fromFunction5(insertAtPosition), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex))
     __obj.asInstanceOf[XAreaLinks]
   }
+  @scala.inline
+  implicit class XAreaLinksOps[Self <: XAreaLinks] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInsertAtPosition(value: (CellAddress, String, String, String, String) => Unit): Self = this.set("insertAtPosition", js.Any.fromFunction5(value))
+    @scala.inline
+    def setRemoveByIndex(value: Double => Unit): Self = this.set("removeByIndex", js.Any.fromFunction1(value))
+  }
+  
 }
 

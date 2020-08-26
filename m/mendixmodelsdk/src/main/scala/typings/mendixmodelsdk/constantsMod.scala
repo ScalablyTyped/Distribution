@@ -55,19 +55,19 @@ object constantsMod extends js.Object {
         * In version 7.9.0: deleted
         */
       def dataType: String = js.native
-      def dataType(newValue: String): js.Any = js.native
+      def dataType_=(newValue: String): Unit = js.native
       def defaultValue: String = js.native
-      def defaultValue(newValue: String): js.Any = js.native
+      def defaultValue_=(newValue: String): Unit = js.native
       /**
         * In version 8.2.0: introduced
         */
       def exposedToClient: Boolean = js.native
-      def exposedToClient(newValue: Boolean): js.Any = js.native
+      def exposedToClient_=(newValue: Boolean): Unit = js.native
       /**
         * In version 7.9.0: introduced
         */
       def `type`: DataType = js.native
-      def `type`(newValue: DataType): js.Any = js.native
+      def type_=(newValue: DataType): Unit = js.native
     }
     
     /**

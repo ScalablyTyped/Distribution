@@ -12,8 +12,9 @@ import scala.scalajs.js.annotation._
   * @param items The completion items.
   * @param isIncomplete The list is not complete.
   */
-class CompletionList[T] () extends js.Object {
+class CompletionList[T /* <: CompletionItem */] () extends js.Object {
   def this(items: js.Array[T]) = this()
+  def this(items: js.UndefOr[scala.Nothing], isIncomplete: Boolean) = this()
   def this(items: js.Array[T], isIncomplete: Boolean) = this()
   /**
     * This list is not complete. Further typing should result in recomputing

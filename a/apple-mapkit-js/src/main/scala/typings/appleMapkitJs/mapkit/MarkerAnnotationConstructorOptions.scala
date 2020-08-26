@@ -1,8 +1,6 @@
 package typings.appleMapkitJs.mapkit
 
-import typings.appleMapkitJs.anon.Height
 import typings.appleMapkitJs.anon.`1`
-import typings.std.DOMPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,93 +8,84 @@ import scala.scalajs.js.annotation._
 /**
   * An object containing the options that initialize a marker annotation.
   */
+@js.native
 trait MarkerAnnotationConstructorOptions extends AnnotationConstructorOptions {
   /**
     * The background color of the balloon.
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * The fill color of the glyph.
     */
-  var glyphColor: js.UndefOr[String] = js.undefined
+  var glyphColor: js.UndefOr[String] = js.native
   /**
     * The image to display in the marker balloon.
     */
-  var glyphImage: js.UndefOr[`1`] = js.undefined
+  var glyphImage: js.UndefOr[`1`] = js.native
   /**
     * The text to display in the marker balloon.
     */
-  var glyphText: js.UndefOr[String] = js.undefined
+  var glyphText: js.UndefOr[String] = js.native
   /**
     * The image to display in the balloon when the marker is selected.
     */
-  var selectedGlyphImage: js.UndefOr[js.Object] = js.undefined
+  var selectedGlyphImage: js.UndefOr[js.Object] = js.native
   /**
     * A value that determines the behavior of the subtitle's visibility.
     */
-  var subtitleVisibility: js.UndefOr[String] = js.undefined
+  var subtitleVisibility: js.UndefOr[String] = js.native
   /**
     * A value that determines the behavior of the title's visibility.
     */
-  var titleVisibility: js.UndefOr[String] = js.undefined
+  var titleVisibility: js.UndefOr[String] = js.native
 }
 
 object MarkerAnnotationConstructorOptions {
   @scala.inline
-  def apply(
-    accessibilityLabel: String = null,
-    anchorOffset: DOMPoint = null,
-    animates: js.UndefOr[Boolean] = js.undefined,
-    appearanceAnimation: String = null,
-    callout: AnnotationCalloutDelegate = null,
-    calloutEnabled: js.UndefOr[Boolean] = js.undefined,
-    calloutOffset: DOMPoint = null,
-    clusteringIdentifier: String = null,
-    collisionMode: String = null,
-    color: String = null,
-    data: js.Any = null,
-    displayPriority: js.UndefOr[Double] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    glyphColor: String = null,
-    glyphImage: `1` = null,
-    glyphText: String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    selectedGlyphImage: js.Object = null,
-    size: Height = null,
-    subtitle: String = null,
-    subtitleVisibility: String = null,
-    title: String = null,
-    titleVisibility: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): MarkerAnnotationConstructorOptions = {
+  def apply(): MarkerAnnotationConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (anchorOffset != null) __obj.updateDynamic("anchorOffset")(anchorOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(animates)) __obj.updateDynamic("animates")(animates.get.asInstanceOf[js.Any])
-    if (appearanceAnimation != null) __obj.updateDynamic("appearanceAnimation")(appearanceAnimation.asInstanceOf[js.Any])
-    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
-    if (!js.isUndefined(calloutEnabled)) __obj.updateDynamic("calloutEnabled")(calloutEnabled.get.asInstanceOf[js.Any])
-    if (calloutOffset != null) __obj.updateDynamic("calloutOffset")(calloutOffset.asInstanceOf[js.Any])
-    if (clusteringIdentifier != null) __obj.updateDynamic("clusteringIdentifier")(clusteringIdentifier.asInstanceOf[js.Any])
-    if (collisionMode != null) __obj.updateDynamic("collisionMode")(collisionMode.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayPriority)) __obj.updateDynamic("displayPriority")(displayPriority.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (glyphColor != null) __obj.updateDynamic("glyphColor")(glyphColor.asInstanceOf[js.Any])
-    if (glyphImage != null) __obj.updateDynamic("glyphImage")(glyphImage.asInstanceOf[js.Any])
-    if (glyphText != null) __obj.updateDynamic("glyphText")(glyphText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (selectedGlyphImage != null) __obj.updateDynamic("selectedGlyphImage")(selectedGlyphImage.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (subtitleVisibility != null) __obj.updateDynamic("subtitleVisibility")(subtitleVisibility.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleVisibility != null) __obj.updateDynamic("titleVisibility")(titleVisibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerAnnotationConstructorOptions]
   }
+  @scala.inline
+  implicit class MarkerAnnotationConstructorOptionsOps[Self <: MarkerAnnotationConstructorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setGlyphColor(value: String): Self = this.set("glyphColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphColor: Self = this.set("glyphColor", js.undefined)
+    @scala.inline
+    def setGlyphImage(value: `1`): Self = this.set("glyphImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphImage: Self = this.set("glyphImage", js.undefined)
+    @scala.inline
+    def setGlyphText(value: String): Self = this.set("glyphText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphText: Self = this.set("glyphText", js.undefined)
+    @scala.inline
+    def setSelectedGlyphImage(value: js.Object): Self = this.set("selectedGlyphImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedGlyphImage: Self = this.set("selectedGlyphImage", js.undefined)
+    @scala.inline
+    def setSubtitleVisibility(value: String): Self = this.set("subtitleVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitleVisibility: Self = this.set("subtitleVisibility", js.undefined)
+    @scala.inline
+    def setTitleVisibility(value: String): Self = this.set("titleVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleVisibility: Self = this.set("titleVisibility", js.undefined)
+  }
+  
 }
 

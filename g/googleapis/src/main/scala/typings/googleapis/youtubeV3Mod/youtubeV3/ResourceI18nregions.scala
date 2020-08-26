@@ -29,6 +29,7 @@ class ResourceI18nregions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaI18nRegionListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaI18nRegionListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaI18nRegionListResponse] = js.native
   def list(params: ParamsResourceI18nregionsList): GaxiosPromise[SchemaI18nRegionListResponse] = js.native
   def list(
     params: ParamsResourceI18nregionsList,

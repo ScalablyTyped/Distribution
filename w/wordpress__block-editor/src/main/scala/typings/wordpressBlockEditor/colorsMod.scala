@@ -16,11 +16,13 @@ object colorsMod extends js.Object {
     js.Function1[/* component */ ComponentType[_], ComponentType[_]]
   ] = js.native
   def getColorClassName(): js.UndefOr[String] = js.native
+  def getColorClassName(colorContextName: js.UndefOr[scala.Nothing], colorSlug: String): js.UndefOr[String] = js.native
   def getColorClassName(colorContextName: String): js.UndefOr[String] = js.native
   def getColorClassName(colorContextName: String, colorSlug: String): String = js.native
   @JSName("getColorClassName")
   def getColorClassName_Union(colorContextName: String, colorSlug: String): js.UndefOr[String] = js.native
-  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: js.UndefOr[String], customColor: String): EditorColor | PickEditorColorcolor = js.native
+  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: js.UndefOr[scala.Nothing], customColor: String): EditorColor | PickEditorColorcolor = js.native
+  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: String, customColor: String): EditorColor | PickEditorColorcolor = js.native
   def getColorObjectByColorValue(colors: js.Array[EditorColor]): js.UndefOr[EditorColor] = js.native
   def getColorObjectByColorValue(colors: js.Array[EditorColor], colorValue: String): js.UndefOr[EditorColor] = js.native
   def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native

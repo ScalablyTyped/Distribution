@@ -12,7 +12,7 @@ Node SDK for Amazon DynamoDB
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 1857 |
+| # downloads        | 2162 |
 | # stars            | 0 |
 
 ## Links

@@ -10,18 +10,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("KiiCloud.KiiGeoPoint")
 @js.native
 class KiiGeoPoint ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiGeoPoint {
-  /**
-    * Return the latitide of this point.
-    */
-  /* CompleteClass */
-  override def getLatitude(): Double = js.native
-  /**
-    * Return the longitude of this point.
-    */
-  /* CompleteClass */
-  override def getLongitude(): Double = js.native
-}
+  extends typings.kiiCloudSdk.KiiCloud.KiiGeoPoint
 
 /* static members */
 @JSGlobal("KiiCloud.KiiGeoPoint")

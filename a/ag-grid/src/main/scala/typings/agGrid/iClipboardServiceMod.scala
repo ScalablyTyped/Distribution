@@ -14,6 +14,7 @@ object iClipboardServiceMod extends js.Object {
     def copySelectedRangeToClipboard(): Unit = js.native
     def copySelectedRangeToClipboard(includeHeader: Boolean): Unit = js.native
     def copySelectedRowsToClipboard(): Unit = js.native
+    def copySelectedRowsToClipboard(includeHeader: js.UndefOr[scala.Nothing], columnKeys: js.Array[String | Column]): Unit = js.native
     def copySelectedRowsToClipboard(includeHeader: Boolean): Unit = js.native
     def copySelectedRowsToClipboard(includeHeader: Boolean, columnKeys: js.Array[String | Column]): Unit = js.native
     def copyToClipboard(): Unit = js.native

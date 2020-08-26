@@ -47,6 +47,7 @@ trait Anser extends js.Object {
     */
   def linkify(txt: String): String = js.native
   def process(txt: String): String = js.native
+  def process(txt: String, options: js.UndefOr[scala.Nothing], markup: Boolean): String = js.native
   def process(txt: String, options: AnserOptions): String = js.native
   def process(txt: String, options: AnserOptions, markup: Boolean): String = js.native
   /**
@@ -59,6 +60,7 @@ trait Anser extends js.Object {
   def process(txt: String, options: OptionsWithJson): js.Array[AnserJsonEntry] = js.native
   def process(txt: String, options: OptionsWithJson, markup: Boolean): js.Array[AnserJsonEntry] = js.native
   def processChunk(text: String): String = js.native
+  def processChunk(text: String, options: js.UndefOr[scala.Nothing], markup: Boolean): String = js.native
   def processChunk(text: String, options: AnserOptions): String = js.native
   def processChunk(text: String, options: AnserOptions, markup: Boolean): String = js.native
   /**
@@ -80,6 +82,7 @@ trait Anser extends js.Object {
     * @return The JSON output.
     */
   def processChunkJson(text: String): AnserJsonEntry = js.native
+  def processChunkJson(text: String, options: js.UndefOr[scala.Nothing], markup: Boolean): AnserJsonEntry = js.native
   def processChunkJson(text: String, options: AnserOptions): AnserJsonEntry = js.native
   def processChunkJson(text: String, options: AnserOptions, markup: Boolean): AnserJsonEntry = js.native
   /**

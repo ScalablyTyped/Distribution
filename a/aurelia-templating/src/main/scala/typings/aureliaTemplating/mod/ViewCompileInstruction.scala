@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   */
 class ViewCompileInstruction () extends js.Object {
   def this(targetShadowDOM: Boolean) = this()
+  def this(targetShadowDOM: js.UndefOr[scala.Nothing], compileSurrogate: Boolean) = this()
   def this(targetShadowDOM: Boolean, compileSurrogate: Boolean) = this()
   var associatedModuleId: js.Any = js.native
   var compileSurrogate: Boolean = js.native

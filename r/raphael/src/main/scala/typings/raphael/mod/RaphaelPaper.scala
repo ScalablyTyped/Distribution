@@ -214,10 +214,20 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     * @return The font object with the given options, or `undefined` if no such font exists.
     */
   def getFont(family: String): js.UndefOr[RaphaelFont] = js.native
+  def getFont(
+    family: String,
+    weight: js.UndefOr[scala.Nothing],
+    style: js.UndefOr[scala.Nothing],
+    stretch: String
+  ): js.UndefOr[RaphaelFont] = js.native
+  def getFont(family: String, weight: js.UndefOr[scala.Nothing], style: String): js.UndefOr[RaphaelFont] = js.native
+  def getFont(family: String, weight: js.UndefOr[scala.Nothing], style: String, stretch: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: String): js.UndefOr[RaphaelFont] = js.native
+  def getFont(family: String, weight: String, style: js.UndefOr[scala.Nothing], stretch: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: String, style: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: String, style: String, stretch: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: Double): js.UndefOr[RaphaelFont] = js.native
+  def getFont(family: String, weight: Double, style: js.UndefOr[scala.Nothing], stretch: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: Double, style: String): js.UndefOr[RaphaelFont] = js.native
   def getFont(family: String, weight: Double, style: String, stretch: String): js.UndefOr[RaphaelFont] = js.native
   /**
@@ -282,7 +292,42 @@ trait RaphaelPaper[TTechnology /* <: RaphaelTechnology */] extends js.Object {
     * @return Each letter as separate {@link RaphaelPath|path object}.
     */
   def print(x: Double, y: Double, str: String, font: RaphaelFont): RaphaelSet[TTechnology] = js.native
+  def print(
+    x: Double,
+    y: Double,
+    str: String,
+    font: RaphaelFont,
+    size: js.UndefOr[scala.Nothing],
+    origin: js.UndefOr[scala.Nothing],
+    letterSpacing: Double
+  ): RaphaelSet[TTechnology] = js.native
+  def print(
+    x: Double,
+    y: Double,
+    str: String,
+    font: RaphaelFont,
+    size: js.UndefOr[scala.Nothing],
+    origin: RaphaelFontOrigin
+  ): RaphaelSet[TTechnology] = js.native
+  def print(
+    x: Double,
+    y: Double,
+    str: String,
+    font: RaphaelFont,
+    size: js.UndefOr[scala.Nothing],
+    origin: RaphaelFontOrigin,
+    letterSpacing: Double
+  ): RaphaelSet[TTechnology] = js.native
   def print(x: Double, y: Double, str: String, font: RaphaelFont, size: Double): RaphaelSet[TTechnology] = js.native
+  def print(
+    x: Double,
+    y: Double,
+    str: String,
+    font: RaphaelFont,
+    size: Double,
+    origin: js.UndefOr[scala.Nothing],
+    letterSpacing: Double
+  ): RaphaelSet[TTechnology] = js.native
   def print(x: Double, y: Double, str: String, font: RaphaelFont, size: Double, origin: RaphaelFontOrigin): RaphaelSet[TTechnology] = js.native
   def print(
     x: Double,

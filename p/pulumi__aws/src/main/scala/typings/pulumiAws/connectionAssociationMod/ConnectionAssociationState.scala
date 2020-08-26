@@ -19,11 +19,30 @@ trait ConnectionAssociationState extends js.Object {
 
 object ConnectionAssociationState {
   @scala.inline
-  def apply(connectionId: Input[String] = null, lagId: Input[String] = null): ConnectionAssociationState = {
+  def apply(): ConnectionAssociationState = {
     val __obj = js.Dynamic.literal()
-    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
-    if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionAssociationState]
   }
+  @scala.inline
+  implicit class ConnectionAssociationStateOps[Self <: ConnectionAssociationState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConnectionId(value: Input[String]): Self = this.set("connectionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionId: Self = this.set("connectionId", js.undefined)
+    @scala.inline
+    def setLagId(value: Input[String]): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLagId: Self = this.set("lagId", js.undefined)
+  }
+  
 }
 

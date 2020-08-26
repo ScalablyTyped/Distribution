@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * Provides unified interface for {@link FilePicker} service.
   * @since LibreOffice 4.1
   */
+@js.native
 trait XFilePicker3
   extends XFilePicker2
      with XFilePickerNotifier

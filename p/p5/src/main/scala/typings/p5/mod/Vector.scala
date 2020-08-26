@@ -45,6 +45,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def add(x: Double): Vector = js.native
+  def add(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def add(x: Double, y: Double): Vector = js.native
   def add(x: Double, y: Double, z: Double): Vector = js.native
   /**
@@ -116,6 +117,7 @@ trait Vector extends js.Object {
     *   @return the dot product
     */
   def dot(x: Double): Double = js.native
+  def dot(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
   def dot(x: Double, y: Double): Double = js.native
   def dot(x: Double, y: Double, z: Double): Double = js.native
   /**
@@ -132,7 +134,11 @@ trait Vector extends js.Object {
     *   @param value the vector to compare
     */
   def equals(value: Vector): Boolean = js.native
+  def equals(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Boolean = js.native
+  def equals(x: js.UndefOr[scala.Nothing], y: Double): Boolean = js.native
+  def equals(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Boolean = js.native
   def equals(x: Double): Boolean = js.native
+  def equals(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Boolean = js.native
   def equals(x: Double, y: Double): Boolean = js.native
   def equals(x: Double, y: Double, z: Double): Boolean = js.native
   /**
@@ -227,7 +233,11 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def set(value: Vector): Vector = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
+  def set(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vector = js.native
   def set(x: Double): Vector = js.native
+  def set(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def set(x: Double, y: Double): Vector = js.native
   def set(x: Double, y: Double, z: Double): Vector = js.native
   /**
@@ -264,6 +274,7 @@ trait Vector extends js.Object {
     *   @chainable
     */
   def sub(x: Double): Vector = js.native
+  def sub(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
   def sub(x: Double, y: Double): Vector = js.native
   def sub(x: Double, y: Double, z: Double): Vector = js.native
 }

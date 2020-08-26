@@ -12,6 +12,7 @@ class ObservableMap[V] ()
   extends typings.mobservable.observablemapMod.ObservableMap[V] {
   def this(initialData: Entries[V]) = this()
   def this(initialData: KeyValueMap[V]) = this()
+  def this(initialData: js.UndefOr[scala.Nothing], valueModeFunc: js.Function) = this()
   def this(initialData: Entries[V], valueModeFunc: js.Function) = this()
   def this(initialData: KeyValueMap[V], valueModeFunc: js.Function) = this()
 }

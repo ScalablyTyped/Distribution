@@ -5,59 +5,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestPaymentOptions
   extends /* key */ StringDictionary[js.Any] {
-  var amount: js.UndefOr[Double] = js.undefined
-  var amount_due: js.UndefOr[Double] = js.undefined
-  var codepro: js.UndefOr[Boolean] = js.undefined
-  var comment: js.UndefOr[String] = js.undefined
-  var expire_period: js.UndefOr[Double] = js.undefined
-  var hold_for_pickup: js.UndefOr[Boolean] = js.undefined
-  var label: js.UndefOr[String] = js.undefined
-  var message: js.UndefOr[String] = js.undefined
-  var pattern_id: String
-  var `phone-number`: js.UndefOr[String] = js.undefined
-  var test_card: js.UndefOr[String] = js.undefined
-  var test_payment: js.UndefOr[Boolean] = js.undefined
-  var test_result: js.UndefOr[String] = js.undefined
-  var to: js.UndefOr[String] = js.undefined
+  var amount: js.UndefOr[Double] = js.native
+  var amount_due: js.UndefOr[Double] = js.native
+  var codepro: js.UndefOr[Boolean] = js.native
+  var comment: js.UndefOr[String] = js.native
+  var expire_period: js.UndefOr[Double] = js.native
+  var hold_for_pickup: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.native
+  var pattern_id: String = js.native
+  var `phone-number`: js.UndefOr[String] = js.native
+  var test_card: js.UndefOr[String] = js.native
+  var test_payment: js.UndefOr[Boolean] = js.native
+  var test_result: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.native
 }
 
 object RequestPaymentOptions {
   @scala.inline
-  def apply(
-    pattern_id: String,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    amount: js.UndefOr[Double] = js.undefined,
-    amount_due: js.UndefOr[Double] = js.undefined,
-    codepro: js.UndefOr[Boolean] = js.undefined,
-    comment: String = null,
-    expire_period: js.UndefOr[Double] = js.undefined,
-    hold_for_pickup: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    message: String = null,
-    `phone-number`: String = null,
-    test_card: String = null,
-    test_payment: js.UndefOr[Boolean] = js.undefined,
-    test_result: String = null,
-    to: String = null
-  ): RequestPaymentOptions = {
+  def apply(pattern_id: String): RequestPaymentOptions = {
     val __obj = js.Dynamic.literal(pattern_id = pattern_id.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(amount)) __obj.updateDynamic("amount")(amount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(amount_due)) __obj.updateDynamic("amount_due")(amount_due.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(codepro)) __obj.updateDynamic("codepro")(codepro.get.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (!js.isUndefined(expire_period)) __obj.updateDynamic("expire_period")(expire_period.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hold_for_pickup)) __obj.updateDynamic("hold_for_pickup")(hold_for_pickup.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (`phone-number` != null) __obj.updateDynamic("phone-number")(`phone-number`.asInstanceOf[js.Any])
-    if (test_card != null) __obj.updateDynamic("test_card")(test_card.asInstanceOf[js.Any])
-    if (!js.isUndefined(test_payment)) __obj.updateDynamic("test_payment")(test_payment.get.asInstanceOf[js.Any])
-    if (test_result != null) __obj.updateDynamic("test_result")(test_result.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestPaymentOptions]
   }
+  @scala.inline
+  implicit class RequestPaymentOptionsOps[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPattern_id(value: String): Self = this.set("pattern_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("amount", js.undefined)
+    @scala.inline
+    def setAmount_due(value: Double): Self = this.set("amount_due", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount_due: Self = this.set("amount_due", js.undefined)
+    @scala.inline
+    def setCodepro(value: Boolean): Self = this.set("codepro", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodepro: Self = this.set("codepro", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setExpire_period(value: Double): Self = this.set("expire_period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpire_period: Self = this.set("expire_period", js.undefined)
+    @scala.inline
+    def setHold_for_pickup(value: Boolean): Self = this.set("hold_for_pickup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHold_for_pickup: Self = this.set("hold_for_pickup", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def `setPhone-number`(value: String): Self = this.set("phone-number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deletePhone-number`: Self = this.set("phone-number", js.undefined)
+    @scala.inline
+    def setTest_card(value: String): Self = this.set("test_card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest_card: Self = this.set("test_card", js.undefined)
+    @scala.inline
+    def setTest_payment(value: Boolean): Self = this.set("test_payment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest_payment: Self = this.set("test_payment", js.undefined)
+    @scala.inline
+    def setTest_result(value: String): Self = this.set("test_result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest_result: Self = this.set("test_result", js.undefined)
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

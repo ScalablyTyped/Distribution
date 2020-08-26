@@ -119,6 +119,7 @@ trait Big extends js.Object {
     * @throws `!Big.RM!` if rm is invalid.
     */
   def round(): Big = js.native
+  def round(dp: js.UndefOr[scala.Nothing], rm: RoundingMode): Big = js.native
   def round(dp: Double): Big = js.native
   def round(dp: Double, rm: RoundingMode): Big = js.native
   /**

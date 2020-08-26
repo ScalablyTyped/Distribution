@@ -42,26 +42,54 @@ trait Member extends js.Object {
 
 object Member {
   @scala.inline
-  def apply(
-    accountId: string = null,
-    arn: string = null,
-    email: string = null,
-    invitedAt: timestampIso8601 = null,
-    masterAccountId: string = null,
-    relationshipStatus: RelationshipStatus = null,
-    tags: TagMap = null,
-    updatedAt: timestampIso8601 = null
-  ): Member = {
+  def apply(): Member = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (invitedAt != null) __obj.updateDynamic("invitedAt")(invitedAt.asInstanceOf[js.Any])
-    if (masterAccountId != null) __obj.updateDynamic("masterAccountId")(masterAccountId.asInstanceOf[js.Any])
-    if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Member]
   }
+  @scala.inline
+  implicit class MemberOps[Self <: Member] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setEmail(value: string): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setInvitedAt(value: timestampIso8601): Self = this.set("invitedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedAt: Self = this.set("invitedAt", js.undefined)
+    @scala.inline
+    def setMasterAccountId(value: string): Self = this.set("masterAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterAccountId: Self = this.set("masterAccountId", js.undefined)
+    @scala.inline
+    def setRelationshipStatus(value: RelationshipStatus): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUpdatedAt(value: timestampIso8601): Self = this.set("updatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("updatedAt", js.undefined)
+  }
+  
 }
 

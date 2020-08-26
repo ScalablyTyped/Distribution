@@ -18,14 +18,30 @@ trait LabelingJobStoppingConditions extends js.Object {
 
 object LabelingJobStoppingConditions {
   @scala.inline
-  def apply(
-    MaxHumanLabeledObjectCount: js.UndefOr[MaxHumanLabeledObjectCount] = js.undefined,
-    MaxPercentageOfInputDatasetLabeled: js.UndefOr[MaxPercentageOfInputDatasetLabeled] = js.undefined
-  ): LabelingJobStoppingConditions = {
+  def apply(): LabelingJobStoppingConditions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(MaxHumanLabeledObjectCount)) __obj.updateDynamic("MaxHumanLabeledObjectCount")(MaxHumanLabeledObjectCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxPercentageOfInputDatasetLabeled)) __obj.updateDynamic("MaxPercentageOfInputDatasetLabeled")(MaxPercentageOfInputDatasetLabeled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelingJobStoppingConditions]
   }
+  @scala.inline
+  implicit class LabelingJobStoppingConditionsOps[Self <: LabelingJobStoppingConditions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMaxHumanLabeledObjectCount(value: MaxHumanLabeledObjectCount): Self = this.set("MaxHumanLabeledObjectCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxHumanLabeledObjectCount: Self = this.set("MaxHumanLabeledObjectCount", js.undefined)
+    @scala.inline
+    def setMaxPercentageOfInputDatasetLabeled(value: MaxPercentageOfInputDatasetLabeled): Self = this.set("MaxPercentageOfInputDatasetLabeled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxPercentageOfInputDatasetLabeled: Self = this.set("MaxPercentageOfInputDatasetLabeled", js.undefined)
+  }
+  
 }
 

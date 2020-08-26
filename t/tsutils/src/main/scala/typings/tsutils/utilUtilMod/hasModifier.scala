@@ -19,7 +19,10 @@ import scala.scalajs.js.annotation._
 @JSImport("tsutils/util/util", "hasModifier")
 @js.native
 object hasModifier extends js.Object {
-  def apply(): Boolean = js.native
+  def apply(
+    modifiers: js.UndefOr[scala.Nothing],
+    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*
+  ): Boolean = js.native
   def apply(
     modifiers: ModifiersArray,
     kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | PublicKeyword | PrivateKeyword | ProtectedKeyword | ReadonlyKeyword | StaticKeyword)*

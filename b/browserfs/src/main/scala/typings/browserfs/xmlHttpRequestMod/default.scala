@@ -29,7 +29,9 @@ class default protected () extends XmlHttpRequest {
   def this(listingUrlOrObj: js.Object) = this()
   def this(listingUrlOrObj: String, prefixUrl: String) = this()
   def this(listingUrlOrObj: js.Object, prefixUrl: String) = this()
+  def this(listingUrlOrObj: String, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(listingUrlOrObj: String, prefixUrl: String, deprecateMsg: Boolean) = this()
+  def this(listingUrlOrObj: js.Object, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
   def this(listingUrlOrObj: js.Object, prefixUrl: String, deprecateMsg: Boolean) = this()
 }
 
@@ -51,6 +53,12 @@ object default extends js.Object {
     * @param cb Called when the file system has been instantiated, or if an error occurs.
     */
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = js.native
+  def FromURL(
+    url: String,
+    cb: BFSCallback[XmlHttpRequest],
+    baseUrl: js.UndefOr[scala.Nothing],
+    deprecateMsg: Boolean
+  ): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = js.native
   def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = js.native
   def isAvailable(): Boolean = js.native

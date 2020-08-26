@@ -49,8 +49,24 @@ object mod extends js.Object {
   @js.native
   class Quaternion () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      z: js.UndefOr[scala.Nothing],
+      w: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
     var angleAxis: Angle = js.native
     var eulerAngles: X = js.native
@@ -71,6 +87,7 @@ object mod extends js.Object {
   @js.native
   class Transform () extends js.Object {
     def this(position: Vector3) = this()
+    def this(position: js.UndefOr[scala.Nothing], rotation: Quaternion) = this()
     def this(position: Vector3, rotation: Quaternion) = this()
     var forward: Vector3 = js.native
     var localPosition: Vector3 = js.native
@@ -97,7 +114,11 @@ object mod extends js.Object {
   @js.native
   class Vector3 () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
     var homogeneous: Vector4 = js.native
     var magnitude: Double = js.native
@@ -122,8 +143,24 @@ object mod extends js.Object {
   @js.native
   class Vector4 () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      z: js.UndefOr[scala.Nothing],
+      w: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
     var magnitude: Double = js.native
     var values: js.Array[Double] = js.native
@@ -166,7 +203,11 @@ object mod extends js.Object {
     var zero: Quaternion = js.native
     def AngleAxis(axis: Vector3, angle: Double): Quaternion = js.native
     def Euler(): Quaternion = js.native
+    def Euler(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
+    def Euler(x: js.UndefOr[scala.Nothing], y: Double): Quaternion = js.native
+    def Euler(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Quaternion = js.native
     def Euler(x: Double): Quaternion = js.native
+    def Euler(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
     def Euler(x: Double, y: Double): Quaternion = js.native
     def Euler(x: Double, y: Double, z: Double): Quaternion = js.native
   }

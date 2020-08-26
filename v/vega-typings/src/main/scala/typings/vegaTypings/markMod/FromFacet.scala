@@ -12,15 +12,13 @@ trait FromFacet extends js.Object
 
 object FromFacet {
   @scala.inline
-  def From(data: String = null): FromFacet = {
+  def From(): FromFacet = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromFacet]
   }
   @scala.inline
-  def FromfacetFacet(facet: Facet, data: String = null): FromFacet = {
+  def FromfacetFacet(facet: Facet): FromFacet = {
     val __obj = js.Dynamic.literal(facet = facet.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromFacet]
   }
 }

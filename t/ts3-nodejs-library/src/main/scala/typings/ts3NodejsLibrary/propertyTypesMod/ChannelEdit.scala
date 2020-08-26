@@ -1,79 +1,133 @@
 package typings.ts3NodejsLibrary.propertyTypesMod
 
 import typings.ts3NodejsLibrary.enumMod.Codec
+import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChannelEdit extends js.Object {
-  var channel_codec: js.UndefOr[Codec] = js.undefined
-  var channel_codec_is_unencrypted: js.UndefOr[Double] = js.undefined
-  var channel_codec_quality: js.UndefOr[Double] = js.undefined
-  var channel_description: js.UndefOr[String] = js.undefined
-  var channel_flag_default: js.UndefOr[Double] = js.undefined
-  var channel_flag_maxclients_unlimited: js.UndefOr[Double] = js.undefined
-  var channel_flag_maxfamilyclients_inherited: js.UndefOr[Double] = js.undefined
-  var channel_flag_permanent: js.UndefOr[Double] = js.undefined
-  var channel_flag_semi_permanent: js.UndefOr[Double] = js.undefined
-  var channel_flag_temporary: js.UndefOr[Double] = js.undefined
-  var channel_maxclients: js.UndefOr[Double] = js.undefined
-  var channel_maxfamilyclients: js.UndefOr[Double] = js.undefined
-  var channel_name: js.UndefOr[String] = js.undefined
-  var channel_name_phonetic: js.UndefOr[String] = js.undefined
-  var channel_needed_talk_power: js.UndefOr[Double] = js.undefined
-  var channel_order: js.UndefOr[Double] = js.undefined
-  var channel_password: js.UndefOr[String] = js.undefined
-  var channel_topic: js.UndefOr[String] = js.undefined
-  var cid: js.UndefOr[Double] = js.undefined
-  var cpid: js.UndefOr[Double] = js.undefined
+@js.native
+trait ChannelEdit extends ResponseEntry {
+  var channelCodec: js.UndefOr[Codec] = js.native
+  var channelCodecIsUnencrypted: js.UndefOr[Boolean] = js.native
+  var channelCodecQuality: js.UndefOr[Double] = js.native
+  var channelDescription: js.UndefOr[String] = js.native
+  var channelFlagDefault: js.UndefOr[Boolean] = js.native
+  var channelFlagMaxclientsUnlimited: js.UndefOr[Boolean] = js.native
+  var channelFlagMaxfamilyclientsInherited: js.UndefOr[Boolean] = js.native
+  var channelFlagPermanent: js.UndefOr[Boolean] = js.native
+  var channelFlagSemiPermanent: js.UndefOr[Boolean] = js.native
+  var channelFlagTemporary: js.UndefOr[Boolean] = js.native
+  var channelMaxclients: js.UndefOr[Double] = js.native
+  var channelMaxfamilyclients: js.UndefOr[Double] = js.native
+  var channelName: js.UndefOr[String] = js.native
+  var channelNamePhonetic: js.UndefOr[String] = js.native
+  var channelNeededTalkPower: js.UndefOr[Double] = js.native
+  var channelOrder: js.UndefOr[Double] = js.native
+  var channelPassword: js.UndefOr[String] = js.native
+  var channelTopic: js.UndefOr[String] = js.native
+  var cid: js.UndefOr[String] = js.native
+  var cpid: js.UndefOr[String] = js.native
 }
 
 object ChannelEdit {
   @scala.inline
-  def apply(
-    channel_codec: Codec = null,
-    channel_codec_is_unencrypted: js.UndefOr[Double] = js.undefined,
-    channel_codec_quality: js.UndefOr[Double] = js.undefined,
-    channel_description: String = null,
-    channel_flag_default: js.UndefOr[Double] = js.undefined,
-    channel_flag_maxclients_unlimited: js.UndefOr[Double] = js.undefined,
-    channel_flag_maxfamilyclients_inherited: js.UndefOr[Double] = js.undefined,
-    channel_flag_permanent: js.UndefOr[Double] = js.undefined,
-    channel_flag_semi_permanent: js.UndefOr[Double] = js.undefined,
-    channel_flag_temporary: js.UndefOr[Double] = js.undefined,
-    channel_maxclients: js.UndefOr[Double] = js.undefined,
-    channel_maxfamilyclients: js.UndefOr[Double] = js.undefined,
-    channel_name: String = null,
-    channel_name_phonetic: String = null,
-    channel_needed_talk_power: js.UndefOr[Double] = js.undefined,
-    channel_order: js.UndefOr[Double] = js.undefined,
-    channel_password: String = null,
-    channel_topic: String = null,
-    cid: js.UndefOr[Double] = js.undefined,
-    cpid: js.UndefOr[Double] = js.undefined
-  ): ChannelEdit = {
+  def apply(): ChannelEdit = {
     val __obj = js.Dynamic.literal()
-    if (channel_codec != null) __obj.updateDynamic("channel_codec")(channel_codec.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_codec_is_unencrypted)) __obj.updateDynamic("channel_codec_is_unencrypted")(channel_codec_is_unencrypted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_codec_quality)) __obj.updateDynamic("channel_codec_quality")(channel_codec_quality.get.asInstanceOf[js.Any])
-    if (channel_description != null) __obj.updateDynamic("channel_description")(channel_description.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_flag_default)) __obj.updateDynamic("channel_flag_default")(channel_flag_default.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_flag_maxclients_unlimited)) __obj.updateDynamic("channel_flag_maxclients_unlimited")(channel_flag_maxclients_unlimited.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_flag_maxfamilyclients_inherited)) __obj.updateDynamic("channel_flag_maxfamilyclients_inherited")(channel_flag_maxfamilyclients_inherited.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_flag_permanent)) __obj.updateDynamic("channel_flag_permanent")(channel_flag_permanent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_flag_semi_permanent)) __obj.updateDynamic("channel_flag_semi_permanent")(channel_flag_semi_permanent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_flag_temporary)) __obj.updateDynamic("channel_flag_temporary")(channel_flag_temporary.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_maxclients)) __obj.updateDynamic("channel_maxclients")(channel_maxclients.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_maxfamilyclients)) __obj.updateDynamic("channel_maxfamilyclients")(channel_maxfamilyclients.get.asInstanceOf[js.Any])
-    if (channel_name != null) __obj.updateDynamic("channel_name")(channel_name.asInstanceOf[js.Any])
-    if (channel_name_phonetic != null) __obj.updateDynamic("channel_name_phonetic")(channel_name_phonetic.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_needed_talk_power)) __obj.updateDynamic("channel_needed_talk_power")(channel_needed_talk_power.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_order)) __obj.updateDynamic("channel_order")(channel_order.get.asInstanceOf[js.Any])
-    if (channel_password != null) __obj.updateDynamic("channel_password")(channel_password.asInstanceOf[js.Any])
-    if (channel_topic != null) __obj.updateDynamic("channel_topic")(channel_topic.asInstanceOf[js.Any])
-    if (!js.isUndefined(cid)) __obj.updateDynamic("cid")(cid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cpid)) __obj.updateDynamic("cpid")(cpid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelEdit]
   }
+  @scala.inline
+  implicit class ChannelEditOps[Self <: ChannelEdit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelCodec(value: Codec): Self = this.set("channelCodec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelCodec: Self = this.set("channelCodec", js.undefined)
+    @scala.inline
+    def setChannelCodecIsUnencrypted(value: Boolean): Self = this.set("channelCodecIsUnencrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelCodecIsUnencrypted: Self = this.set("channelCodecIsUnencrypted", js.undefined)
+    @scala.inline
+    def setChannelCodecQuality(value: Double): Self = this.set("channelCodecQuality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelCodecQuality: Self = this.set("channelCodecQuality", js.undefined)
+    @scala.inline
+    def setChannelDescription(value: String): Self = this.set("channelDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelDescription: Self = this.set("channelDescription", js.undefined)
+    @scala.inline
+    def setChannelFlagDefault(value: Boolean): Self = this.set("channelFlagDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelFlagDefault: Self = this.set("channelFlagDefault", js.undefined)
+    @scala.inline
+    def setChannelFlagMaxclientsUnlimited(value: Boolean): Self = this.set("channelFlagMaxclientsUnlimited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelFlagMaxclientsUnlimited: Self = this.set("channelFlagMaxclientsUnlimited", js.undefined)
+    @scala.inline
+    def setChannelFlagMaxfamilyclientsInherited(value: Boolean): Self = this.set("channelFlagMaxfamilyclientsInherited", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelFlagMaxfamilyclientsInherited: Self = this.set("channelFlagMaxfamilyclientsInherited", js.undefined)
+    @scala.inline
+    def setChannelFlagPermanent(value: Boolean): Self = this.set("channelFlagPermanent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelFlagPermanent: Self = this.set("channelFlagPermanent", js.undefined)
+    @scala.inline
+    def setChannelFlagSemiPermanent(value: Boolean): Self = this.set("channelFlagSemiPermanent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelFlagSemiPermanent: Self = this.set("channelFlagSemiPermanent", js.undefined)
+    @scala.inline
+    def setChannelFlagTemporary(value: Boolean): Self = this.set("channelFlagTemporary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelFlagTemporary: Self = this.set("channelFlagTemporary", js.undefined)
+    @scala.inline
+    def setChannelMaxclients(value: Double): Self = this.set("channelMaxclients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelMaxclients: Self = this.set("channelMaxclients", js.undefined)
+    @scala.inline
+    def setChannelMaxfamilyclients(value: Double): Self = this.set("channelMaxfamilyclients", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelMaxfamilyclients: Self = this.set("channelMaxfamilyclients", js.undefined)
+    @scala.inline
+    def setChannelName(value: String): Self = this.set("channelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelName: Self = this.set("channelName", js.undefined)
+    @scala.inline
+    def setChannelNamePhonetic(value: String): Self = this.set("channelNamePhonetic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelNamePhonetic: Self = this.set("channelNamePhonetic", js.undefined)
+    @scala.inline
+    def setChannelNeededTalkPower(value: Double): Self = this.set("channelNeededTalkPower", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelNeededTalkPower: Self = this.set("channelNeededTalkPower", js.undefined)
+    @scala.inline
+    def setChannelOrder(value: Double): Self = this.set("channelOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelOrder: Self = this.set("channelOrder", js.undefined)
+    @scala.inline
+    def setChannelPassword(value: String): Self = this.set("channelPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelPassword: Self = this.set("channelPassword", js.undefined)
+    @scala.inline
+    def setChannelTopic(value: String): Self = this.set("channelTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelTopic: Self = this.set("channelTopic", js.undefined)
+    @scala.inline
+    def setCid(value: String): Self = this.set("cid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCid: Self = this.set("cid", js.undefined)
+    @scala.inline
+    def setCpid(value: String): Self = this.set("cpid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpid: Self = this.set("cpid", js.undefined)
+  }
+  
 }
 

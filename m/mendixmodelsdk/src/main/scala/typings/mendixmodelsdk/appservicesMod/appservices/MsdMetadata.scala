@@ -25,30 +25,30 @@ class MsdMetadata protected () extends Element {
   @JSName("model")
   var model_FMsdMetadata: IModel = js.native
   def caption: String = js.native
-  def caption(newValue: String): js.Any = js.native
+  def caption_=(newValue: String): Unit = js.native
   def containerAsMsd: Msd = js.native
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def headerAuthentication: String = js.native
-  def headerAuthentication(newValue: String): js.Any = js.native
+  def headerAuthentication_=(newValue: String): Unit = js.native
   def image: String = js.native
-  def image(newValue: String): js.Any = js.native
+  def image_=(newValue: String): Unit = js.native
   def instanceGuid: String = js.native
-  def instanceGuid(newValue: String): js.Any = js.native
+  def instanceGuid_=(newValue: String): Unit = js.native
   def microflows: IList[MsdMicroflow] = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def publishDateTime: String = js.native
-  def publishDateTime(newValue: String): js.Any = js.native
+  def publishDateTime_=(newValue: String): Unit = js.native
   def serviceGuid: String = js.native
-  def serviceGuid(newValue: String): js.Any = js.native
+  def serviceGuid_=(newValue: String): Unit = js.native
   def supportedProtocols: IList[String] = js.native
   def version: Double = js.native
-  def version(newValue: Double): js.Any = js.native
   def versionGuid: String = js.native
-  def versionGuid(newValue: String): js.Any = js.native
+  def versionGuid_=(newValue: String): Unit = js.native
+  def version_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

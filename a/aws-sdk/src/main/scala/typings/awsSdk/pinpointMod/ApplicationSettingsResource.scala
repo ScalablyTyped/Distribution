@@ -30,19 +30,40 @@ trait ApplicationSettingsResource extends js.Object {
 
 object ApplicationSettingsResource {
   @scala.inline
-  def apply(
-    ApplicationId: string,
-    CampaignHook: CampaignHook = null,
-    LastModifiedDate: string = null,
-    Limits: CampaignLimits = null,
-    QuietTime: QuietTime = null
-  ): ApplicationSettingsResource = {
+  def apply(ApplicationId: string): ApplicationSettingsResource = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
-    if (CampaignHook != null) __obj.updateDynamic("CampaignHook")(CampaignHook.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (Limits != null) __obj.updateDynamic("Limits")(Limits.asInstanceOf[js.Any])
-    if (QuietTime != null) __obj.updateDynamic("QuietTime")(QuietTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationSettingsResource]
   }
+  @scala.inline
+  implicit class ApplicationSettingsResourceOps[Self <: ApplicationSettingsResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: string): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCampaignHook(value: CampaignHook): Self = this.set("CampaignHook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignHook: Self = this.set("CampaignHook", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: string): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setLimits(value: CampaignLimits): Self = this.set("Limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("Limits", js.undefined)
+    @scala.inline
+    def setQuietTime(value: QuietTime): Self = this.set("QuietTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuietTime: Self = this.set("QuietTime", js.undefined)
+  }
+  
 }
 

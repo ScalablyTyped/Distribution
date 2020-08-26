@@ -5,33 +5,60 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.ErrorOptions> */
+@js.native
 trait PartialErrorOptions extends js.Object {
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var symmetric: js.UndefOr[Boolean] = js.undefined
-  var thickness: js.UndefOr[Double] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var symmetric: js.UndefOr[Boolean] = js.native
+  var thickness: js.UndefOr[Double] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object PartialErrorOptions {
   @scala.inline
-  def apply(
-    color: typings.plotlyJs.mod.Color = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    symmetric: js.UndefOr[Boolean] = js.undefined,
-    thickness: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): PartialErrorOptions = {
+  def apply(): PartialErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(symmetric)) __obj.updateDynamic("symmetric")(symmetric.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(thickness)) __obj.updateDynamic("thickness")(thickness.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialErrorOptions]
   }
+  @scala.inline
+  implicit class PartialErrorOptionsOps[Self <: PartialErrorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = this.set("color", js.Array(value :_*))
+    @scala.inline
+    def setColor(value: typings.plotlyJs.mod.Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setSymmetric(value: Boolean): Self = this.set("symmetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymmetric: Self = this.set("symmetric", js.undefined)
+    @scala.inline
+    def setThickness(value: Double): Self = this.set("thickness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThickness: Self = this.set("thickness", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

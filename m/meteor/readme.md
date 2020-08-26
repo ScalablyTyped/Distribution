@@ -12,7 +12,7 @@ Meteor, the JavaScript App Platform
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 16895 |
+| # downloads        | 12379 |
 | # stars            | 51 |
 
 ## Links

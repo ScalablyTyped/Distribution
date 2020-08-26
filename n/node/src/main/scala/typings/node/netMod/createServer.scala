@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object createServer extends js.Object {
   def apply(): Server = js.native
   def apply(connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
+  def apply(options: js.UndefOr[scala.Nothing], connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
   def apply(options: AllowHalfOpen): Server = js.native
   def apply(options: AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
 }

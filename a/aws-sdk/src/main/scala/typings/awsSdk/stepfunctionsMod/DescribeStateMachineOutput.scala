@@ -45,15 +45,44 @@ object DescribeStateMachineOutput {
     name: Name,
     roleArn: Arn,
     stateMachineArn: Arn,
-    `type`: StateMachineType,
-    loggingConfiguration: LoggingConfiguration = null,
-    status: StateMachineStatus = null
+    `type`: StateMachineType
   ): DescribeStateMachineOutput = {
     val __obj = js.Dynamic.literal(creationDate = creationDate.asInstanceOf[js.Any], definition = definition.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loggingConfiguration != null) __obj.updateDynamic("loggingConfiguration")(loggingConfiguration.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStateMachineOutput]
   }
+  @scala.inline
+  implicit class DescribeStateMachineOutputOps[Self <: DescribeStateMachineOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: Timestamp): Self = this.set("creationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefinition(value: Definition): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: Arn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStateMachineArn(value: Arn): Self = this.set("stateMachineArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: StateMachineType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoggingConfiguration(value: LoggingConfiguration): Self = this.set("loggingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggingConfiguration: Self = this.set("loggingConfiguration", js.undefined)
+    @scala.inline
+    def setStatus(value: StateMachineStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

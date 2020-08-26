@@ -12,7 +12,7 @@ Promise/async support for tape.
 | Keywords           | tape, promise, async, test, testing, tdd, unit |
 | # releases         | 3 |
 | # dependents       | 11 |
-| # downloads        | 146888 |
+| # downloads        | 149910 |
 | # stars            | 1 |
 
 ## Links

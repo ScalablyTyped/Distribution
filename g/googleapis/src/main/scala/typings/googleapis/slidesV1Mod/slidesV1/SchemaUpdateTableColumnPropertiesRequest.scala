@@ -38,18 +38,40 @@ trait SchemaUpdateTableColumnPropertiesRequest extends js.Object {
 
 object SchemaUpdateTableColumnPropertiesRequest {
   @scala.inline
-  def apply(
-    columnIndices: js.Array[Double] = null,
-    fields: String = null,
-    objectId: String = null,
-    tableColumnProperties: SchemaTableColumnProperties = null
-  ): SchemaUpdateTableColumnPropertiesRequest = {
+  def apply(): SchemaUpdateTableColumnPropertiesRequest = {
     val __obj = js.Dynamic.literal()
-    if (columnIndices != null) __obj.updateDynamic("columnIndices")(columnIndices.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
-    if (tableColumnProperties != null) __obj.updateDynamic("tableColumnProperties")(tableColumnProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUpdateTableColumnPropertiesRequest]
   }
+  @scala.inline
+  implicit class SchemaUpdateTableColumnPropertiesRequestOps[Self <: SchemaUpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnIndicesVarargs(value: Double*): Self = this.set("columnIndices", js.Array(value :_*))
+    @scala.inline
+    def setColumnIndices(value: js.Array[Double]): Self = this.set("columnIndices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIndices: Self = this.set("columnIndices", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setObjectId(value: String): Self = this.set("objectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectId: Self = this.set("objectId", js.undefined)
+    @scala.inline
+    def setTableColumnProperties(value: SchemaTableColumnProperties): Self = this.set("tableColumnProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableColumnProperties: Self = this.set("tableColumnProperties", js.undefined)
+  }
+  
 }
 

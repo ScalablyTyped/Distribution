@@ -6,30 +6,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IdenticonOptions extends js.Object {
-  var background: js.UndefOr[Color] = js.undefined
-  var foreground: js.UndefOr[Color] = js.undefined
-  var format: js.UndefOr[svg | png] = js.undefined
-  var margin: js.UndefOr[Double] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
+  var background: js.UndefOr[Color] = js.native
+  var foreground: js.UndefOr[Color] = js.native
+  var format: js.UndefOr[svg | png] = js.native
+  var margin: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.native
 }
 
 object IdenticonOptions {
   @scala.inline
-  def apply(
-    background: Color = null,
-    foreground: Color = null,
-    format: svg | png = null,
-    margin: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined
-  ): IdenticonOptions = {
+  def apply(): IdenticonOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (foreground != null) __obj.updateDynamic("foreground")(foreground.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(margin)) __obj.updateDynamic("margin")(margin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdenticonOptions]
   }
+  @scala.inline
+  implicit class IdenticonOptionsOps[Self <: IdenticonOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: Color): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setForeground(value: Color): Self = this.set("foreground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForeground: Self = this.set("foreground", js.undefined)
+    @scala.inline
+    def setFormat(value: svg | png): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setMargin(value: Double): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

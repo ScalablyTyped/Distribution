@@ -19,6 +19,11 @@ trait Database extends js.Object {
   def readTransaction(callback: js.Function1[/* transaction */ SqlTransaction, Unit]): Unit = js.native
   def readTransaction(
     callback: js.Function1[/* transaction */ SqlTransaction, Unit],
+    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def readTransaction(
+    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
     errorCallback: js.Function1[/* error */ SqlError, Unit]
   ): Unit = js.native
   def readTransaction(
@@ -33,6 +38,11 @@ trait Database extends js.Object {
     * @param successCallback Called, when transaction committed.
     */
   def transaction(callback: js.Function1[/* transaction */ SqlTransaction, Unit]): Unit = js.native
+  def transaction(
+    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
+    errorCallback: js.UndefOr[scala.Nothing],
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
   def transaction(
     callback: js.Function1[/* transaction */ SqlTransaction, Unit],
     errorCallback: js.Function1[/* error */ SqlError, Unit]

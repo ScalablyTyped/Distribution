@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 object createCylinder extends js.Object {
   /**
     * Creates a procedural cylinder-shaped mesh.
-    
-    The size, shape and tesselation properties of the cylinder can be controlled via function parameters.
-    By default, the function will create a cylinder standing vertically centred on the XZ-plane with a radius
-    of 0.5, a height of 1.0, 1 height segment and 20 cap segments.
-    
-    Note that the cylinder is created with UVs in the range of 0 to 1. Additionally, tangent information
-    is generated into the vertex buffer of the cylinder's mesh.
+    *
+    * The size, shape and tesselation properties of the cylinder can be controlled via function parameters.
+    * By default, the function will create a cylinder standing vertically centred on the XZ-plane with a radius
+    * of 0.5, a height of 1.0, 1 height segment and 20 cap segments.
+    *
+    * Note that the cylinder is created with UVs in the range of 0 to 1. Additionally, tangent information
+    * is generated into the vertex buffer of the cylinder's mesh.
     * @param device - The graphics device used to manage the mesh.
     * @param [opts] - An object that specifies optional inputs for the function as follows:
     * @param [opts.radius] - The radius of the tube forming the body of the cylinder (defaults to 0.5).

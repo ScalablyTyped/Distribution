@@ -16,4 +16,5 @@ package object mod {
   type Signer = typings.stellarBase.mod.Signer.Ed25519PublicKey | typings.stellarBase.mod.Signer.Sha256Hash | typings.stellarBase.mod.Signer.PreAuthTx
   type SignerOptions = typings.stellarBase.mod.SignerOptions.Ed25519PublicKey | typings.stellarBase.mod.SignerOptions.Sha256Hash | typings.stellarBase.mod.SignerOptions.PreAuthTx
   type TransactionBuilder = typings.stellarBase.mod.TransactionBuilder_
+  type TrustLineFlag = typings.stellarBase.mod.TrustLineFlag.deauthorize | typings.stellarBase.mod.TrustLineFlag.authorize | typings.stellarBase.mod.TrustLineFlag.authorizeToMaintainLiabilities
 }

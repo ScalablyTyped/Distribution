@@ -95,50 +95,110 @@ trait SchemaOrder extends js.Object {
 
 object SchemaOrder {
   @scala.inline
-  def apply(
-    acknowledged: js.UndefOr[Boolean] = js.undefined,
-    billingAddress: SchemaOrderAddress = null,
-    customer: SchemaOrderCustomer = null,
-    deliveryDetails: SchemaOrderDeliveryDetails = null,
-    id: String = null,
-    kind: String = null,
-    lineItems: js.Array[SchemaOrderLineItem] = null,
-    merchantId: String = null,
-    merchantOrderId: String = null,
-    netPriceAmount: SchemaPrice = null,
-    netTaxAmount: SchemaPrice = null,
-    paymentStatus: String = null,
-    placedDate: String = null,
-    promotions: js.Array[SchemaOrderPromotion] = null,
-    refunds: js.Array[SchemaOrderRefund] = null,
-    shipments: js.Array[SchemaOrderShipment] = null,
-    shippingCost: SchemaPrice = null,
-    shippingCostTax: SchemaPrice = null,
-    status: String = null,
-    taxCollector: String = null
-  ): SchemaOrder = {
+  def apply(): SchemaOrder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(acknowledged)) __obj.updateDynamic("acknowledged")(acknowledged.get.asInstanceOf[js.Any])
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (deliveryDetails != null) __obj.updateDynamic("deliveryDetails")(deliveryDetails.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
-    if (merchantId != null) __obj.updateDynamic("merchantId")(merchantId.asInstanceOf[js.Any])
-    if (merchantOrderId != null) __obj.updateDynamic("merchantOrderId")(merchantOrderId.asInstanceOf[js.Any])
-    if (netPriceAmount != null) __obj.updateDynamic("netPriceAmount")(netPriceAmount.asInstanceOf[js.Any])
-    if (netTaxAmount != null) __obj.updateDynamic("netTaxAmount")(netTaxAmount.asInstanceOf[js.Any])
-    if (paymentStatus != null) __obj.updateDynamic("paymentStatus")(paymentStatus.asInstanceOf[js.Any])
-    if (placedDate != null) __obj.updateDynamic("placedDate")(placedDate.asInstanceOf[js.Any])
-    if (promotions != null) __obj.updateDynamic("promotions")(promotions.asInstanceOf[js.Any])
-    if (refunds != null) __obj.updateDynamic("refunds")(refunds.asInstanceOf[js.Any])
-    if (shipments != null) __obj.updateDynamic("shipments")(shipments.asInstanceOf[js.Any])
-    if (shippingCost != null) __obj.updateDynamic("shippingCost")(shippingCost.asInstanceOf[js.Any])
-    if (shippingCostTax != null) __obj.updateDynamic("shippingCostTax")(shippingCostTax.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (taxCollector != null) __obj.updateDynamic("taxCollector")(taxCollector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrder]
   }
+  @scala.inline
+  implicit class SchemaOrderOps[Self <: SchemaOrder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcknowledged(value: Boolean): Self = this.set("acknowledged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcknowledged: Self = this.set("acknowledged", js.undefined)
+    @scala.inline
+    def setBillingAddress(value: SchemaOrderAddress): Self = this.set("billingAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingAddress: Self = this.set("billingAddress", js.undefined)
+    @scala.inline
+    def setCustomer(value: SchemaOrderCustomer): Self = this.set("customer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomer: Self = this.set("customer", js.undefined)
+    @scala.inline
+    def setDeliveryDetails(value: SchemaOrderDeliveryDetails): Self = this.set("deliveryDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryDetails: Self = this.set("deliveryDetails", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLineItemsVarargs(value: SchemaOrderLineItem*): Self = this.set("lineItems", js.Array(value :_*))
+    @scala.inline
+    def setLineItems(value: js.Array[SchemaOrderLineItem]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    @scala.inline
+    def setMerchantId(value: String): Self = this.set("merchantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantId: Self = this.set("merchantId", js.undefined)
+    @scala.inline
+    def setMerchantOrderId(value: String): Self = this.set("merchantOrderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantOrderId: Self = this.set("merchantOrderId", js.undefined)
+    @scala.inline
+    def setNetPriceAmount(value: SchemaPrice): Self = this.set("netPriceAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetPriceAmount: Self = this.set("netPriceAmount", js.undefined)
+    @scala.inline
+    def setNetTaxAmount(value: SchemaPrice): Self = this.set("netTaxAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetTaxAmount: Self = this.set("netTaxAmount", js.undefined)
+    @scala.inline
+    def setPaymentStatus(value: String): Self = this.set("paymentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentStatus: Self = this.set("paymentStatus", js.undefined)
+    @scala.inline
+    def setPlacedDate(value: String): Self = this.set("placedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacedDate: Self = this.set("placedDate", js.undefined)
+    @scala.inline
+    def setPromotionsVarargs(value: SchemaOrderPromotion*): Self = this.set("promotions", js.Array(value :_*))
+    @scala.inline
+    def setPromotions(value: js.Array[SchemaOrderPromotion]): Self = this.set("promotions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotions: Self = this.set("promotions", js.undefined)
+    @scala.inline
+    def setRefundsVarargs(value: SchemaOrderRefund*): Self = this.set("refunds", js.Array(value :_*))
+    @scala.inline
+    def setRefunds(value: js.Array[SchemaOrderRefund]): Self = this.set("refunds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefunds: Self = this.set("refunds", js.undefined)
+    @scala.inline
+    def setShipmentsVarargs(value: SchemaOrderShipment*): Self = this.set("shipments", js.Array(value :_*))
+    @scala.inline
+    def setShipments(value: js.Array[SchemaOrderShipment]): Self = this.set("shipments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipments: Self = this.set("shipments", js.undefined)
+    @scala.inline
+    def setShippingCost(value: SchemaPrice): Self = this.set("shippingCost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingCost: Self = this.set("shippingCost", js.undefined)
+    @scala.inline
+    def setShippingCostTax(value: SchemaPrice): Self = this.set("shippingCostTax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingCostTax: Self = this.set("shippingCostTax", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTaxCollector(value: String): Self = this.set("taxCollector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaxCollector: Self = this.set("taxCollector", js.undefined)
+  }
+  
 }
 

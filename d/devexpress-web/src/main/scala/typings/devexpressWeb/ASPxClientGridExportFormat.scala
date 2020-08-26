@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Lists values that specify the document formats available for export from the grid.
   */
+@js.native
 trait ASPxClientGridExportFormat extends js.Object
 

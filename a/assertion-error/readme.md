@@ -10,9 +10,9 @@ Error constructor for test and validation frameworks that implements standardize
 | ------------------ | :-------------: |
 | Full name          | assertion-error |
 | Keywords           | test, assertion, assertion-error |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 59 |
-| # downloads        | 128362926 |
+| # downloads        | 130967948 |
 | # stars            | 0 |
 
 ## Links

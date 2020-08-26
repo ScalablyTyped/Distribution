@@ -32,6 +32,7 @@ class App protected () extends js.Object {
   def database(): Database = js.native
   def firestore(): Firestore = js.native
   def functions(): Functions = js.native
+  def functions(appOrRegion: js.UndefOr[scala.Nothing], region: String): Functions = js.native
   def functions(appOrRegion: String): Functions = js.native
   def functions(appOrRegion: String, region: String): Functions = js.native
   def functions(appOrRegion: App): Functions = js.native

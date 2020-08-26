@@ -14,10 +14,26 @@ trait DescribeSignalingChannelOutput extends js.Object {
 
 object DescribeSignalingChannelOutput {
   @scala.inline
-  def apply(ChannelInfo: ChannelInfo = null): DescribeSignalingChannelOutput = {
+  def apply(): DescribeSignalingChannelOutput = {
     val __obj = js.Dynamic.literal()
-    if (ChannelInfo != null) __obj.updateDynamic("ChannelInfo")(ChannelInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSignalingChannelOutput]
   }
+  @scala.inline
+  implicit class DescribeSignalingChannelOutputOps[Self <: DescribeSignalingChannelOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelInfo(value: ChannelInfo): Self = this.set("ChannelInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelInfo: Self = this.set("ChannelInfo", js.undefined)
+  }
+  
 }
 

@@ -78,44 +78,100 @@ trait ContainerInstance extends js.Object {
 
 object ContainerInstance {
   @scala.inline
-  def apply(
-    agentConnected: js.UndefOr[Boolean] = js.undefined,
-    agentUpdateStatus: AgentUpdateStatus = null,
-    attachments: Attachments = null,
-    attributes: Attributes = null,
-    capacityProviderName: String = null,
-    containerInstanceArn: String = null,
-    ec2InstanceId: String = null,
-    pendingTasksCount: js.UndefOr[Integer] = js.undefined,
-    registeredAt: Timestamp = null,
-    registeredResources: Resources = null,
-    remainingResources: Resources = null,
-    runningTasksCount: js.UndefOr[Integer] = js.undefined,
-    status: String = null,
-    statusReason: String = null,
-    tags: Tags = null,
-    version: js.UndefOr[Long] = js.undefined,
-    versionInfo: VersionInfo = null
-  ): ContainerInstance = {
+  def apply(): ContainerInstance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(agentConnected)) __obj.updateDynamic("agentConnected")(agentConnected.get.asInstanceOf[js.Any])
-    if (agentUpdateStatus != null) __obj.updateDynamic("agentUpdateStatus")(agentUpdateStatus.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (capacityProviderName != null) __obj.updateDynamic("capacityProviderName")(capacityProviderName.asInstanceOf[js.Any])
-    if (containerInstanceArn != null) __obj.updateDynamic("containerInstanceArn")(containerInstanceArn.asInstanceOf[js.Any])
-    if (ec2InstanceId != null) __obj.updateDynamic("ec2InstanceId")(ec2InstanceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pendingTasksCount)) __obj.updateDynamic("pendingTasksCount")(pendingTasksCount.get.asInstanceOf[js.Any])
-    if (registeredAt != null) __obj.updateDynamic("registeredAt")(registeredAt.asInstanceOf[js.Any])
-    if (registeredResources != null) __obj.updateDynamic("registeredResources")(registeredResources.asInstanceOf[js.Any])
-    if (remainingResources != null) __obj.updateDynamic("remainingResources")(remainingResources.asInstanceOf[js.Any])
-    if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
-    if (versionInfo != null) __obj.updateDynamic("versionInfo")(versionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerInstance]
   }
+  @scala.inline
+  implicit class ContainerInstanceOps[Self <: ContainerInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentConnected(value: Boolean): Self = this.set("agentConnected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentConnected: Self = this.set("agentConnected", js.undefined)
+    @scala.inline
+    def setAgentUpdateStatus(value: AgentUpdateStatus): Self = this.set("agentUpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentUpdateStatus: Self = this.set("agentUpdateStatus", js.undefined)
+    @scala.inline
+    def setAttachmentsVarargs(value: Attachment*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: Attachments): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setAttributesVarargs(value: Attribute*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setCapacityProviderName(value: String): Self = this.set("capacityProviderName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityProviderName: Self = this.set("capacityProviderName", js.undefined)
+    @scala.inline
+    def setContainerInstanceArn(value: String): Self = this.set("containerInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerInstanceArn: Self = this.set("containerInstanceArn", js.undefined)
+    @scala.inline
+    def setEc2InstanceId(value: String): Self = this.set("ec2InstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceId: Self = this.set("ec2InstanceId", js.undefined)
+    @scala.inline
+    def setPendingTasksCount(value: Integer): Self = this.set("pendingTasksCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingTasksCount: Self = this.set("pendingTasksCount", js.undefined)
+    @scala.inline
+    def setRegisteredAt(value: Timestamp): Self = this.set("registeredAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredAt: Self = this.set("registeredAt", js.undefined)
+    @scala.inline
+    def setRegisteredResourcesVarargs(value: Resource*): Self = this.set("registeredResources", js.Array(value :_*))
+    @scala.inline
+    def setRegisteredResources(value: Resources): Self = this.set("registeredResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredResources: Self = this.set("registeredResources", js.undefined)
+    @scala.inline
+    def setRemainingResourcesVarargs(value: Resource*): Self = this.set("remainingResources", js.Array(value :_*))
+    @scala.inline
+    def setRemainingResources(value: Resources): Self = this.set("remainingResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemainingResources: Self = this.set("remainingResources", js.undefined)
+    @scala.inline
+    def setRunningTasksCount(value: Integer): Self = this.set("runningTasksCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunningTasksCount: Self = this.set("runningTasksCount", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: String): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: Long): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersionInfo(value: VersionInfo): Self = this.set("versionInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionInfo: Self = this.set("versionInfo", js.undefined)
+  }
+  
 }
 

@@ -55,7 +55,7 @@ trait GetVpcResult extends js.Object {
     * The State of the association.
     */
   val state: String = js.native
-  val tags: StringDictionary[js.Any] = js.native
+  val tags: StringDictionary[String] = js.native
 }
 
 object GetVpcResult {
@@ -75,12 +75,61 @@ object GetVpcResult {
     mainRouteTableId: String,
     ownerId: String,
     state: String,
-    tags: StringDictionary[js.Any],
-    filters: js.Array[GetVpcFilter] = null
+    tags: StringDictionary[String]
   ): GetVpcResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], cidrBlock = cidrBlock.asInstanceOf[js.Any], cidrBlockAssociations = cidrBlockAssociations.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], dhcpOptionsId = dhcpOptionsId.asInstanceOf[js.Any], enableDnsHostnames = enableDnsHostnames.asInstanceOf[js.Any], enableDnsSupport = enableDnsSupport.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], instanceTenancy = instanceTenancy.asInstanceOf[js.Any], ipv6AssociationId = ipv6AssociationId.asInstanceOf[js.Any], ipv6CidrBlock = ipv6CidrBlock.asInstanceOf[js.Any], mainRouteTableId = mainRouteTableId.asInstanceOf[js.Any], ownerId = ownerId.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVpcResult]
   }
+  @scala.inline
+  implicit class GetVpcResultOps[Self <: GetVpcResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCidrBlock(value: String): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCidrBlockAssociationsVarargs(value: GetVpcCidrBlockAssociation*): Self = this.set("cidrBlockAssociations", js.Array(value :_*))
+    @scala.inline
+    def setCidrBlockAssociations(value: js.Array[GetVpcCidrBlockAssociation]): Self = this.set("cidrBlockAssociations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefault(value: Boolean): Self = this.set("default", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDhcpOptionsId(value: String): Self = this.set("dhcpOptionsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableDnsHostnames(value: Boolean): Self = this.set("enableDnsHostnames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableDnsSupport(value: Boolean): Self = this.set("enableDnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInstanceTenancy(value: String): Self = this.set("instanceTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpv6AssociationId(value: String): Self = this.set("ipv6AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpv6CidrBlock(value: String): Self = this.set("ipv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMainRouteTableId(value: String): Self = this.set("mainRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFiltersVarargs(value: GetVpcFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetVpcFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+  }
+  
 }
 

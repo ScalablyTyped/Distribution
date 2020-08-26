@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webrtc-adapter" : "7.5.0"
+      "webrtc-adapter" : "7.6.4"
     }
   ],
   "test-dependencies" : [
     {
-      "webrtc-adapter" : "7.5.0"
+      "webrtc-adapter" : "7.6.4"
     }
   ],
   "compile-devDependencies" : [

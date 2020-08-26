@@ -13,14 +13,33 @@ trait BatchDetectEntitiesRequest extends js.Object {
   /**
     * A list containing the text of the input documents. The list can contain a maximum of 25 documents. Each document must contain fewer than 5,000 bytes of UTF-8 encoded characters.
     */
-  var TextList: StringList = js.native
+  var TextList: CustomerInputStringList = js.native
 }
 
 object BatchDetectEntitiesRequest {
   @scala.inline
-  def apply(LanguageCode: LanguageCode, TextList: StringList): BatchDetectEntitiesRequest = {
+  def apply(LanguageCode: LanguageCode, TextList: CustomerInputStringList): BatchDetectEntitiesRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], TextList = TextList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetectEntitiesRequest]
   }
+  @scala.inline
+  implicit class BatchDetectEntitiesRequestOps[Self <: BatchDetectEntitiesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextListVarargs(value: CustomerInputString*): Self = this.set("TextList", js.Array(value :_*))
+    @scala.inline
+    def setTextList(value: CustomerInputStringList): Self = this.set("TextList", value.asInstanceOf[js.Any])
+  }
+  
 }
 

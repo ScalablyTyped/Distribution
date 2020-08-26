@@ -7,31 +7,49 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BucketCountBySharedAccessType extends js.Object {
   /**
-    * Reserved for future use.
+    * The total number of buckets that are shared with an AWS account that isn't part of the same Amazon Macie organization.
     */
   var external: js.UndefOr[long] = js.native
   /**
-    * Reserved for future use.
+    * The total number of buckets that are shared with an AWS account that's part of the same Amazon Macie organization.
     */
   var internal: js.UndefOr[long] = js.native
   /**
-    * Reserved for future use.
+    * The total number of buckets that aren't shared with any other AWS accounts.
     */
   var notShared: js.UndefOr[long] = js.native
 }
 
 object BucketCountBySharedAccessType {
   @scala.inline
-  def apply(
-    external: js.UndefOr[long] = js.undefined,
-    internal: js.UndefOr[long] = js.undefined,
-    notShared: js.UndefOr[long] = js.undefined
-  ): BucketCountBySharedAccessType = {
+  def apply(): BucketCountBySharedAccessType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(notShared)) __obj.updateDynamic("notShared")(notShared.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketCountBySharedAccessType]
   }
+  @scala.inline
+  implicit class BucketCountBySharedAccessTypeOps[Self <: BucketCountBySharedAccessType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExternal(value: long): Self = this.set("external", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternal: Self = this.set("external", js.undefined)
+    @scala.inline
+    def setInternal(value: long): Self = this.set("internal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternal: Self = this.set("internal", js.undefined)
+    @scala.inline
+    def setNotShared(value: long): Self = this.set("notShared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotShared: Self = this.set("notShared", js.undefined)
+  }
+  
 }
 

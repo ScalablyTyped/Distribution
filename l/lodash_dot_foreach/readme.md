@@ -12,7 +12,7 @@ The lodash method `_.forEach` exported as a module.
 | Keywords           | lodash-modularized, foreach |
 | # releases         | 0 |
 | # dependents       | 434 |
-| # downloads        | 74203562 |
+| # downloads        | 75214726 |
 | # stars            | 0 |
 
 ## Links

@@ -24,14 +24,30 @@ trait SchemaGooglePrivacyDlpV2DeidentifyConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2DeidentifyConfig {
   @scala.inline
-  def apply(
-    infoTypeTransformations: SchemaGooglePrivacyDlpV2InfoTypeTransformations = null,
-    recordTransformations: SchemaGooglePrivacyDlpV2RecordTransformations = null
-  ): SchemaGooglePrivacyDlpV2DeidentifyConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2DeidentifyConfig = {
     val __obj = js.Dynamic.literal()
-    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations.asInstanceOf[js.Any])
-    if (recordTransformations != null) __obj.updateDynamic("recordTransformations")(recordTransformations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeidentifyConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DeidentifyConfigOps[Self <: SchemaGooglePrivacyDlpV2DeidentifyConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInfoTypeTransformations(value: SchemaGooglePrivacyDlpV2InfoTypeTransformations): Self = this.set("infoTypeTransformations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInfoTypeTransformations: Self = this.set("infoTypeTransformations", js.undefined)
+    @scala.inline
+    def setRecordTransformations(value: SchemaGooglePrivacyDlpV2RecordTransformations): Self = this.set("recordTransformations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordTransformations: Self = this.set("recordTransformations", js.undefined)
+  }
+  
 }
 

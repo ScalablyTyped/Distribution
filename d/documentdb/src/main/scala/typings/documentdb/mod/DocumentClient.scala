@@ -21,6 +21,12 @@ class DocumentClient protected () extends js.Object {
   def this(
     urlConnection: String,
     auth: AuthOptions,
+    connectionPolicy: js.UndefOr[scala.Nothing],
+    consistencyLevel: ConsistencyLevel
+  ) = this()
+  def this(
+    urlConnection: String,
+    auth: AuthOptions,
     connectionPolicy: ConnectionPolicy,
     consistencyLevel: ConsistencyLevel
   ) = this()

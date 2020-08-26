@@ -22,12 +22,34 @@ trait SchemaSecurityPolicyAssociation extends js.Object {
 
 object SchemaSecurityPolicyAssociation {
   @scala.inline
-  def apply(attachmentId: String = null, name: String = null, securityPolicyId: String = null): SchemaSecurityPolicyAssociation = {
+  def apply(): SchemaSecurityPolicyAssociation = {
     val __obj = js.Dynamic.literal()
-    if (attachmentId != null) __obj.updateDynamic("attachmentId")(attachmentId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (securityPolicyId != null) __obj.updateDynamic("securityPolicyId")(securityPolicyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityPolicyAssociation]
   }
+  @scala.inline
+  implicit class SchemaSecurityPolicyAssociationOps[Self <: SchemaSecurityPolicyAssociation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentId(value: String): Self = this.set("attachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachmentId: Self = this.set("attachmentId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSecurityPolicyId(value: String): Self = this.set("securityPolicyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPolicyId: Self = this.set("securityPolicyId", js.undefined)
+  }
+  
 }
 

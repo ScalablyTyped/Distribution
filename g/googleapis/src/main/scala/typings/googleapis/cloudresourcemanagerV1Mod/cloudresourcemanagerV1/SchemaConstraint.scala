@@ -56,24 +56,50 @@ trait SchemaConstraint extends js.Object {
 
 object SchemaConstraint {
   @scala.inline
-  def apply(
-    booleanConstraint: SchemaBooleanConstraint = null,
-    constraintDefault: String = null,
-    description: String = null,
-    displayName: String = null,
-    listConstraint: SchemaListConstraint = null,
-    name: String = null,
-    version: js.UndefOr[Double] = js.undefined
-  ): SchemaConstraint = {
+  def apply(): SchemaConstraint = {
     val __obj = js.Dynamic.literal()
-    if (booleanConstraint != null) __obj.updateDynamic("booleanConstraint")(booleanConstraint.asInstanceOf[js.Any])
-    if (constraintDefault != null) __obj.updateDynamic("constraintDefault")(constraintDefault.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (listConstraint != null) __obj.updateDynamic("listConstraint")(listConstraint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConstraint]
   }
+  @scala.inline
+  implicit class SchemaConstraintOps[Self <: SchemaConstraint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBooleanConstraint(value: SchemaBooleanConstraint): Self = this.set("booleanConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanConstraint: Self = this.set("booleanConstraint", js.undefined)
+    @scala.inline
+    def setConstraintDefault(value: String): Self = this.set("constraintDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintDefault: Self = this.set("constraintDefault", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setListConstraint(value: SchemaListConstraint): Self = this.set("listConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListConstraint: Self = this.set("listConstraint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setVersion(value: Double): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

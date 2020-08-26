@@ -12,7 +12,7 @@ Analyzes license information for multiple node.js modules (package.json files) a
 | Keywords           | license, npm, checker, crawler |
 | # releases         | 7 |
 | # dependents       | 8 |
-| # downloads        | 286021 |
+| # downloads        | 315121 |
 | # stars            | 2 |
 
 ## Links

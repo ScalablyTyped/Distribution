@@ -10,63 +10,88 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
   */
+@js.native
 trait PlusContactsContactName extends js.Object {
   /**
     * 联系人的姓
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var familyName: js.UndefOr[String] = js.undefined
+  var familyName: js.UndefOr[String] = js.native
   /**
     * 联系人的完整名称，由其它字段组合生成
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var formatted: js.UndefOr[String] = js.undefined
+  var formatted: js.UndefOr[String] = js.native
   /**
     * 联系人的名
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var givenName: js.UndefOr[String] = js.undefined
+  var givenName: js.UndefOr[String] = js.native
   /**
     * 联系人的前缀（如Mr.或Dr.）
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var honorificPrefix: js.UndefOr[String] = js.undefined
+  var honorificPrefix: js.UndefOr[String] = js.native
   /**
     * 联系人的后缀
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var honorificSuffix: js.UndefOr[String] = js.undefined
+  var honorificSuffix: js.UndefOr[String] = js.native
   /**
     * 联系人的中间名
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var middleName: js.UndefOr[String] = js.undefined
+  var middleName: js.UndefOr[String] = js.native
 }
 
 object PlusContactsContactName {
   @scala.inline
-  def apply(
-    familyName: String = null,
-    formatted: String = null,
-    givenName: String = null,
-    honorificPrefix: String = null,
-    honorificSuffix: String = null,
-    middleName: String = null
-  ): PlusContactsContactName = {
+  def apply(): PlusContactsContactName = {
     val __obj = js.Dynamic.literal()
-    if (familyName != null) __obj.updateDynamic("familyName")(familyName.asInstanceOf[js.Any])
-    if (formatted != null) __obj.updateDynamic("formatted")(formatted.asInstanceOf[js.Any])
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
-    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix.asInstanceOf[js.Any])
-    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix.asInstanceOf[js.Any])
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusContactsContactName]
   }
+  @scala.inline
+  implicit class PlusContactsContactNameOps[Self <: PlusContactsContactName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFamilyName(value: String): Self = this.set("familyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFamilyName: Self = this.set("familyName", js.undefined)
+    @scala.inline
+    def setFormatted(value: String): Self = this.set("formatted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatted: Self = this.set("formatted", js.undefined)
+    @scala.inline
+    def setGivenName(value: String): Self = this.set("givenName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGivenName: Self = this.set("givenName", js.undefined)
+    @scala.inline
+    def setHonorificPrefix(value: String): Self = this.set("honorificPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorificPrefix: Self = this.set("honorificPrefix", js.undefined)
+    @scala.inline
+    def setHonorificSuffix(value: String): Self = this.set("honorificSuffix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHonorificSuffix: Self = this.set("honorificSuffix", js.undefined)
+    @scala.inline
+    def setMiddleName(value: String): Self = this.set("middleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMiddleName: Self = this.set("middleName", js.undefined)
+  }
+  
 }
 

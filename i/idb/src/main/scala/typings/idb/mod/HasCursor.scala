@@ -113,29 +113,29 @@ trait HasCursor[TValue, TKey] extends js.Object {
   def openCursor(range: IDBKeyRange): js.Promise[Cursor[TValue, TKey]] = js.native
   def openCursor(range: IDBValidKey): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
+  def openCursor_next(range: js.UndefOr[IDBValidKey], direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
+  @JSName("openCursor")
   def openCursor_next(range: Null, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_next(range: IDBKeyRange, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
-  def openCursor_next(range: IDBValidKey, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
+  def openCursor_nextunique(range: js.UndefOr[IDBValidKey], direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_nextunique(range: Null, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_nextunique(range: IDBKeyRange, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
-  def openCursor_nextunique(range: IDBValidKey, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
+  def openCursor_prev(range: js.UndefOr[IDBValidKey], direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_prev(range: Null, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_prev(range: IDBKeyRange, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
-  def openCursor_prev(range: IDBValidKey, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
+  def openCursor_prevunique(range: js.UndefOr[IDBValidKey], direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_prevunique(range: Null, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openCursor")
   def openCursor_prevunique(range: IDBKeyRange, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
-  @JSName("openCursor")
-  def openCursor_prevunique(range: IDBValidKey, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves a new cursor object.
     * Used for iterating through an object store with a key.
     * @param range Optional. A key or IDBKeyRange to be queried. If a single valid key is passed, this will default to a range containing only that key. If nothing is passed, this will default to a key range that selects all the records in this object store.
@@ -145,28 +145,28 @@ trait HasCursor[TValue, TKey] extends js.Object {
   def openKeyCursor(range: IDBKeyRange): js.Promise[Cursor[TValue, TKey]] = js.native
   def openKeyCursor(range: IDBValidKey): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
+  def openKeyCursor_next(range: js.UndefOr[IDBValidKey], direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
+  @JSName("openKeyCursor")
   def openKeyCursor_next(range: Null, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_next(range: IDBKeyRange, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
-  def openKeyCursor_next(range: IDBValidKey, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
+  def openKeyCursor_nextunique(range: js.UndefOr[IDBValidKey], direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_nextunique(range: Null, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_nextunique(range: IDBKeyRange, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
-  def openKeyCursor_nextunique(range: IDBValidKey, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
+  def openKeyCursor_prev(range: js.UndefOr[IDBValidKey], direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_prev(range: Null, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_prev(range: IDBKeyRange, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
-  def openKeyCursor_prev(range: IDBValidKey, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
+  def openKeyCursor_prevunique(range: js.UndefOr[IDBValidKey], direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_prevunique(range: Null, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   @JSName("openKeyCursor")
   def openKeyCursor_prevunique(range: IDBKeyRange, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
-  @JSName("openKeyCursor")
-  def openKeyCursor_prevunique(range: IDBValidKey, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
 }
 

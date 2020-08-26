@@ -44,22 +44,46 @@ trait EipAssociationArgs extends js.Object {
 
 object EipAssociationArgs {
   @scala.inline
-  def apply(
-    allocationId: Input[String] = null,
-    allowReassociation: Input[Boolean] = null,
-    instanceId: Input[String] = null,
-    networkInterfaceId: Input[String] = null,
-    privateIpAddress: Input[String] = null,
-    publicIp: Input[String] = null
-  ): EipAssociationArgs = {
+  def apply(): EipAssociationArgs = {
     val __obj = js.Dynamic.literal()
-    if (allocationId != null) __obj.updateDynamic("allocationId")(allocationId.asInstanceOf[js.Any])
-    if (allowReassociation != null) __obj.updateDynamic("allowReassociation")(allowReassociation.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
-    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
-    if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[EipAssociationArgs]
   }
+  @scala.inline
+  implicit class EipAssociationArgsOps[Self <: EipAssociationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: Input[String]): Self = this.set("allocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationId: Self = this.set("allocationId", js.undefined)
+    @scala.inline
+    def setAllowReassociation(value: Input[Boolean]): Self = this.set("allowReassociation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowReassociation: Self = this.set("allowReassociation", js.undefined)
+    @scala.inline
+    def setInstanceId(value: Input[String]): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: Input[String]): Self = this.set("networkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("networkInterfaceId", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: Input[String]): Self = this.set("privateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("privateIpAddress", js.undefined)
+    @scala.inline
+    def setPublicIp(value: Input[String]): Self = this.set("publicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("publicIp", js.undefined)
+  }
+  
 }
 

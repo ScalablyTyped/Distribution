@@ -6,14 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CreateAccountOperationResponse
   extends BaseOperationResponse[
       createAccount, 
       typings.stellarSdk.horizonApiMod.Horizon.OperationResponseTypeI.createAccount
     ] {
-  var account: String
-  var funder: String
-  var starting_balance: String
+  var account: String = js.native
+  var funder: String = js.native
+  var starting_balance: String = js.native
 }
 
 object CreateAccountOperationResponse {
@@ -37,5 +38,24 @@ object CreateAccountOperationResponse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountOperationResponse]
   }
+  @scala.inline
+  implicit class CreateAccountOperationResponseOps[Self <: CreateAccountOperationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccount(value: String): Self = this.set("account", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunder(value: String): Self = this.set("funder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStarting_balance(value: String): Self = this.set("starting_balance", value.asInstanceOf[js.Any])
+  }
+  
 }
 

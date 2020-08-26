@@ -12,7 +12,7 @@ Test if a path (string) is absolute
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 1845746 |
+| # downloads        | 1844025 |
 | # stars            | 0 |
 
 ## Links

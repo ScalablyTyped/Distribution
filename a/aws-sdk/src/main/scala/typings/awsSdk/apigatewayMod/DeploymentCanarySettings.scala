@@ -22,16 +22,34 @@ trait DeploymentCanarySettings extends js.Object {
 
 object DeploymentCanarySettings {
   @scala.inline
-  def apply(
-    percentTraffic: js.UndefOr[Double] = js.undefined,
-    stageVariableOverrides: MapOfStringToString = null,
-    useStageCache: js.UndefOr[Boolean] = js.undefined
-  ): DeploymentCanarySettings = {
+  def apply(): DeploymentCanarySettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(percentTraffic)) __obj.updateDynamic("percentTraffic")(percentTraffic.get.asInstanceOf[js.Any])
-    if (stageVariableOverrides != null) __obj.updateDynamic("stageVariableOverrides")(stageVariableOverrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStageCache)) __obj.updateDynamic("useStageCache")(useStageCache.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentCanarySettings]
   }
+  @scala.inline
+  implicit class DeploymentCanarySettingsOps[Self <: DeploymentCanarySettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPercentTraffic(value: Double): Self = this.set("percentTraffic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentTraffic: Self = this.set("percentTraffic", js.undefined)
+    @scala.inline
+    def setStageVariableOverrides(value: MapOfStringToString): Self = this.set("stageVariableOverrides", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageVariableOverrides: Self = this.set("stageVariableOverrides", js.undefined)
+    @scala.inline
+    def setUseStageCache(value: Boolean): Self = this.set("useStageCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseStageCache: Self = this.set("useStageCache", js.undefined)
+  }
+  
 }
 

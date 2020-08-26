@@ -145,56 +145,120 @@ trait SchemaBackendService extends js.Object {
 
 object SchemaBackendService {
   @scala.inline
-  def apply(
-    affinityCookieTtlSec: js.UndefOr[Double] = js.undefined,
-    backends: js.Array[SchemaBackend] = null,
-    cdnPolicy: SchemaBackendServiceCdnPolicy = null,
-    connectionDraining: SchemaConnectionDraining = null,
-    creationTimestamp: String = null,
-    customRequestHeaders: js.Array[String] = null,
-    description: String = null,
-    enableCDN: js.UndefOr[Boolean] = js.undefined,
-    fingerprint: String = null,
-    healthChecks: js.Array[String] = null,
-    iap: SchemaBackendServiceIAP = null,
-    id: String = null,
-    kind: String = null,
-    loadBalancingScheme: String = null,
-    name: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    portName: String = null,
-    protocol: String = null,
-    region: String = null,
-    securityPolicy: String = null,
-    selfLink: String = null,
-    sessionAffinity: String = null,
-    timeoutSec: js.UndefOr[Double] = js.undefined
-  ): SchemaBackendService = {
+  def apply(): SchemaBackendService = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(affinityCookieTtlSec)) __obj.updateDynamic("affinityCookieTtlSec")(affinityCookieTtlSec.get.asInstanceOf[js.Any])
-    if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])
-    if (cdnPolicy != null) __obj.updateDynamic("cdnPolicy")(cdnPolicy.asInstanceOf[js.Any])
-    if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (customRequestHeaders != null) __obj.updateDynamic("customRequestHeaders")(customRequestHeaders.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCDN)) __obj.updateDynamic("enableCDN")(enableCDN.get.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
-    if (iap != null) __obj.updateDynamic("iap")(iap.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (loadBalancingScheme != null) __obj.updateDynamic("loadBalancingScheme")(loadBalancingScheme.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (securityPolicy != null) __obj.updateDynamic("securityPolicy")(securityPolicy.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutSec)) __obj.updateDynamic("timeoutSec")(timeoutSec.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBackendService]
   }
+  @scala.inline
+  implicit class SchemaBackendServiceOps[Self <: SchemaBackendService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffinityCookieTtlSec(value: Double): Self = this.set("affinityCookieTtlSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffinityCookieTtlSec: Self = this.set("affinityCookieTtlSec", js.undefined)
+    @scala.inline
+    def setBackendsVarargs(value: SchemaBackend*): Self = this.set("backends", js.Array(value :_*))
+    @scala.inline
+    def setBackends(value: js.Array[SchemaBackend]): Self = this.set("backends", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackends: Self = this.set("backends", js.undefined)
+    @scala.inline
+    def setCdnPolicy(value: SchemaBackendServiceCdnPolicy): Self = this.set("cdnPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCdnPolicy: Self = this.set("cdnPolicy", js.undefined)
+    @scala.inline
+    def setConnectionDraining(value: SchemaConnectionDraining): Self = this.set("connectionDraining", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectionDraining: Self = this.set("connectionDraining", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setCustomRequestHeadersVarargs(value: String*): Self = this.set("customRequestHeaders", js.Array(value :_*))
+    @scala.inline
+    def setCustomRequestHeaders(value: js.Array[String]): Self = this.set("customRequestHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomRequestHeaders: Self = this.set("customRequestHeaders", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEnableCDN(value: Boolean): Self = this.set("enableCDN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableCDN: Self = this.set("enableCDN", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setHealthChecksVarargs(value: String*): Self = this.set("healthChecks", js.Array(value :_*))
+    @scala.inline
+    def setHealthChecks(value: js.Array[String]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    @scala.inline
+    def setIap(value: SchemaBackendServiceIAP): Self = this.set("iap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIap: Self = this.set("iap", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLoadBalancingScheme(value: String): Self = this.set("loadBalancingScheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancingScheme: Self = this.set("loadBalancingScheme", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPortName(value: String): Self = this.set("portName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortName: Self = this.set("portName", js.undefined)
+    @scala.inline
+    def setProtocol(value: String): Self = this.set("protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("protocol", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSecurityPolicy(value: String): Self = this.set("securityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityPolicy: Self = this.set("securityPolicy", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSessionAffinity(value: String): Self = this.set("sessionAffinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionAffinity: Self = this.set("sessionAffinity", js.undefined)
+    @scala.inline
+    def setTimeoutSec(value: Double): Self = this.set("timeoutSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutSec: Self = this.set("timeoutSec", js.undefined)
+  }
+  
 }
 

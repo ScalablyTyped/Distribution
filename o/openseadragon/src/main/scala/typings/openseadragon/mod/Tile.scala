@@ -55,6 +55,12 @@ class Tile protected () extends js.Object {
   def drawCanvas(
     context: CanvasRenderingContext2D,
     drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
+    scale: js.UndefOr[scala.Nothing],
+    translate: Point
+  ): Unit = js.native
+  def drawCanvas(
+    context: CanvasRenderingContext2D,
+    drawingHandler: js.Function3[/* context */ CanvasRenderingContext2D, /* tile */ js.Any, /* rendered */ js.Any, Unit],
     scale: Double
   ): Unit = js.native
   def drawCanvas(

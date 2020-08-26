@@ -32,6 +32,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.accessibility.XAccessibleValue
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleToolBoxItem
   extends XAccessibleExtendedComponent
      with XAccessibleContext

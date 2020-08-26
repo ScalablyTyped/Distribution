@@ -1,7 +1,7 @@
 
 # Scala.js typings for vfile
 
-Typings are for version 4.1.1
+Typings are for version 4.2.0
 
 ## Library description:
 Virtual file format for text processing

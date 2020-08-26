@@ -14,6 +14,10 @@ trait BootstrapProgressBar extends Control {
   def getPercent(): Double = js.native
   def getPosition(): Double = js.native
   def getValue(): js.Any = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
+  ): this.type = js.native
   def setCaption(caption: String): Unit = js.native
   def setCustomDisplayFormat(text: String): Unit = js.native
   def setEnabled(value: Boolean): Unit = js.native

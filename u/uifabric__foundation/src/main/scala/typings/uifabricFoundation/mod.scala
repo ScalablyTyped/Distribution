@@ -5,8 +5,11 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import typings.react.mod.Dispatch
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.FunctionComponent
+import typings.react.mod.PropsWithoutRef
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.SetStateAction
 import typings.std.Partial
 import typings.std.Required
@@ -55,7 +58,34 @@ object mod extends js.Object {
   def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
   def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: ComponentClass[TComponentProps, ComponentState],
@@ -77,7 +107,34 @@ object mod extends js.Object {
   def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: FunctionComponent[TComponentProps],
     baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
     getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): FunctionComponent[TComponentProps] = js.native
+  def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
   def legacyStyled[TComponentProps /* <: IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](
     Component: FunctionComponent[TComponentProps],
@@ -92,6 +149,120 @@ object mod extends js.Object {
     customizable: ICustomizableProps,
     pure: Boolean
   ): FunctionComponent[TComponentProps] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: ComponentClass[TComponentProps, ComponentState],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.UndefOr[scala.Nothing],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]]
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: js.UndefOr[scala.Nothing],
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
+  @JSName("legacyStyled")
+  def legacyStyled_TComponentProps_IntersectionIPropsWithStylesTStylePropsTStyleSetRefAttributesTRefTStylePropsTStyleSet_IStyleSetTStyleSetTRef_ForwardRefExoticComponent[TComponentProps /* <: (IPropsWithStyles[TStyleProps, TStyleSet]) with RefAttributes[TRef] */, TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */, TRef](
+    Component: FunctionComponent[TComponentProps],
+    baseStyles: IStyleFunctionOrObject[TStyleProps, TStyleSet],
+    getProps: js.Function1[/* props */ TComponentProps, Partial[TComponentProps]],
+    customizable: ICustomizableProps,
+    pure: Boolean
+  ): ForwardRefExoticComponent[PropsWithoutRef[TComponentProps] with RefAttributes[TRef]] = js.native
   def useControlledState[TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](props: TProps, propName: TProp): js.Tuple2[
     js.UndefOr[
       /* import warning: importer.ImportType#apply Failed type conversion: TProps[TProp] */ js.Any
@@ -112,14 +283,14 @@ object mod extends js.Object {
       ]
     ]
   ] = js.native
-  def withSlots[P](`type`: String): ReturnType[FunctionComponent[P]] = js.native
-  def withSlots[P](`type`: String, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
   def withSlots[P](`type`: String, props: Attributes with P, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  def withSlots[P](`type`: FunctionComponent[P]): ReturnType[FunctionComponent[P]] = js.native
-  def withSlots[P](`type`: FunctionComponent[P], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  def withSlots[P](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  def withSlots[P](`type`: String, props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
   def withSlots[P](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  def withSlots[P](`type`: ISlot[P]): ReturnType[FunctionComponent[P]] = js.native
-  def withSlots[P](`type`: ISlot[P], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  def withSlots[P](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  def withSlots[P](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
   def withSlots[P](`type`: ISlot[P], props: Attributes with P, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  def withSlots[P](`type`: ISlot[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  def withSlots[P](`type`: ISlot[P], props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
 }
 

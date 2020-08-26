@@ -24,7 +24,11 @@ trait window extends baseview {
   def mapEvent(map: js.Any): Unit = js.native
   def resizeChildren(): Unit = js.native
   def setPosition(x: Double, y: Double): Unit = js.native
+  def show(node: js.UndefOr[scala.Nothing], position: js.UndefOr[scala.Nothing], point: String): Unit = js.native
+  def show(node: js.UndefOr[scala.Nothing], position: js.Any): Unit = js.native
+  def show(node: js.UndefOr[scala.Nothing], position: js.Any, point: String): Unit = js.native
   def show(node: HTMLElement): Unit = js.native
+  def show(node: HTMLElement, position: js.UndefOr[scala.Nothing], point: String): Unit = js.native
   def show(node: HTMLElement, position: js.Any): Unit = js.native
   def show(node: HTMLElement, position: js.Any, point: String): Unit = js.native
   def unblockEvent(): Unit = js.native

@@ -51,32 +51,66 @@ trait MaintenanceWindowRunCommandParameters extends js.Object {
 
 object MaintenanceWindowRunCommandParameters {
   @scala.inline
-  def apply(
-    CloudWatchOutputConfig: CloudWatchOutputConfig = null,
-    Comment: Comment = null,
-    DocumentHash: DocumentHash = null,
-    DocumentHashType: DocumentHashType = null,
-    DocumentVersion: DocumentVersion = null,
-    NotificationConfig: NotificationConfig = null,
-    OutputS3BucketName: S3BucketName = null,
-    OutputS3KeyPrefix: S3KeyPrefix = null,
-    Parameters: Parameters = null,
-    ServiceRoleArn: ServiceRole = null,
-    TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
-  ): MaintenanceWindowRunCommandParameters = {
+  def apply(): MaintenanceWindowRunCommandParameters = {
     val __obj = js.Dynamic.literal()
-    if (CloudWatchOutputConfig != null) __obj.updateDynamic("CloudWatchOutputConfig")(CloudWatchOutputConfig.asInstanceOf[js.Any])
-    if (Comment != null) __obj.updateDynamic("Comment")(Comment.asInstanceOf[js.Any])
-    if (DocumentHash != null) __obj.updateDynamic("DocumentHash")(DocumentHash.asInstanceOf[js.Any])
-    if (DocumentHashType != null) __obj.updateDynamic("DocumentHashType")(DocumentHashType.asInstanceOf[js.Any])
-    if (DocumentVersion != null) __obj.updateDynamic("DocumentVersion")(DocumentVersion.asInstanceOf[js.Any])
-    if (NotificationConfig != null) __obj.updateDynamic("NotificationConfig")(NotificationConfig.asInstanceOf[js.Any])
-    if (OutputS3BucketName != null) __obj.updateDynamic("OutputS3BucketName")(OutputS3BucketName.asInstanceOf[js.Any])
-    if (OutputS3KeyPrefix != null) __obj.updateDynamic("OutputS3KeyPrefix")(OutputS3KeyPrefix.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (ServiceRoleArn != null) __obj.updateDynamic("ServiceRoleArn")(ServiceRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowRunCommandParameters]
   }
+  @scala.inline
+  implicit class MaintenanceWindowRunCommandParametersOps[Self <: MaintenanceWindowRunCommandParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = this.set("CloudWatchOutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudWatchOutputConfig: Self = this.set("CloudWatchOutputConfig", js.undefined)
+    @scala.inline
+    def setComment(value: Comment): Self = this.set("Comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("Comment", js.undefined)
+    @scala.inline
+    def setDocumentHash(value: DocumentHash): Self = this.set("DocumentHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentHash: Self = this.set("DocumentHash", js.undefined)
+    @scala.inline
+    def setDocumentHashType(value: DocumentHashType): Self = this.set("DocumentHashType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentHashType: Self = this.set("DocumentHashType", js.undefined)
+    @scala.inline
+    def setDocumentVersion(value: DocumentVersion): Self = this.set("DocumentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersion: Self = this.set("DocumentVersion", js.undefined)
+    @scala.inline
+    def setNotificationConfig(value: NotificationConfig): Self = this.set("NotificationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfig: Self = this.set("NotificationConfig", js.undefined)
+    @scala.inline
+    def setOutputS3BucketName(value: S3BucketName): Self = this.set("OutputS3BucketName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputS3BucketName: Self = this.set("OutputS3BucketName", js.undefined)
+    @scala.inline
+    def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = this.set("OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputS3KeyPrefix: Self = this.set("OutputS3KeyPrefix", js.undefined)
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setServiceRoleArn(value: ServiceRole): Self = this.set("ServiceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRoleArn: Self = this.set("ServiceRoleArn", js.undefined)
+    @scala.inline
+    def setTimeoutSeconds(value: TimeoutSeconds): Self = this.set("TimeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutSeconds: Self = this.set("TimeoutSeconds", js.undefined)
+  }
+  
 }
 

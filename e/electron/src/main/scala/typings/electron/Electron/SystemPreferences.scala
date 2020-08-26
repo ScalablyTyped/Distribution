@@ -31,7 +31,7 @@ import typings.electron.electronStrings.string
 import typings.electron.electronStrings.unknown_
 import typings.electron.electronStrings.url
 import typings.electron.electronStrings.yellow
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Record
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -146,7 +146,7 @@ trait SystemPreferences extends EventEmitter {
   def getAppLevelAppearance(): dark | light | unknown_ = js.native
   /**
     * The system color setting in RGB hexadecimal form (`#ABCDEF`). See the Windows
-    * docs and the MacOS docs for more details.
+    * docs and the macOS docs for more details.
     *
     * The following colors are only available on macOS 10.14: `find-highlight`,
     * `selected-content-background`, `separator`,
@@ -175,7 +175,11 @@ trait SystemPreferences extends EventEmitter {
     * consent for `microphone` and `camera` access. macOS 10.15 Catalina or higher
     * requires consent for `screen` access.
     *
-    * @platform darwin
+    * Windows 10 has a global setting controlling `microphone` and `camera` access for
+    * all win32 applications. It will always return `granted` for `screen` and for all
+    * media types on older versions of Windows.
+    *
+    * @platform win32,darwin
     */
   @JSName("getMediaAccessStatus")
   def getMediaAccessStatus_microphone(mediaType: microphone): `not-determined` | granted | denied | restricted | unknown_ = js.native
@@ -411,7 +415,6 @@ trait SystemPreferences extends EventEmitter {
     * @platform darwin
     */
   def removeUserDefault(key: String): Unit = js.native
-  def setAppLevelAppearance(): Unit = js.native
   /**
     * Sets the appearance setting for your application, this should override the
     * system default and override the value of `getEffectiveAppearance`.
@@ -419,6 +422,7 @@ trait SystemPreferences extends EventEmitter {
     * @deprecated
     * @platform darwin
     */
+  def setAppLevelAppearance(): Unit = js.native
   @JSName("setAppLevelAppearance")
   def setAppLevelAppearance_dark(appearance: dark): Unit = js.native
   @JSName("setAppLevelAppearance")

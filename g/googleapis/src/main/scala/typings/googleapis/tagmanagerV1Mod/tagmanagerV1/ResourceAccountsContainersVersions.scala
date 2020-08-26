@@ -29,6 +29,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateContainerVersionResponse]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
   def create(params: ParamsResourceAccountsContainersVersionsCreate): GaxiosPromise[SchemaCreateContainerVersionResponse] = js.native
   def create(
     params: ParamsResourceAccountsContainersVersionsCreate,
@@ -61,6 +62,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersVersionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersVersionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -90,6 +92,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaContainerVersion] = js.native
   def get(callback: BodyResponseCallback[SchemaContainerVersion]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContainerVersion] = js.native
   def get(params: ParamsResourceAccountsContainersVersionsGet): GaxiosPromise[SchemaContainerVersion] = js.native
   def get(
     params: ParamsResourceAccountsContainersVersionsGet,
@@ -123,6 +126,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListContainerVersionsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(params: ParamsResourceAccountsContainersVersionsList): GaxiosPromise[SchemaListContainerVersionsResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersVersionsList,
@@ -156,6 +160,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def publish(): GaxiosPromise[SchemaPublishContainerVersionResponse] = js.native
   def publish(callback: BodyResponseCallback[SchemaPublishContainerVersionResponse]): Unit = js.native
+  def publish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublishContainerVersionResponse] = js.native
   def publish(params: ParamsResourceAccountsContainersVersionsPublish): GaxiosPromise[SchemaPublishContainerVersionResponse] = js.native
   def publish(
     params: ParamsResourceAccountsContainersVersionsPublish,
@@ -191,6 +196,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def restore(): GaxiosPromise[SchemaContainerVersion] = js.native
   def restore(callback: BodyResponseCallback[SchemaContainerVersion]): Unit = js.native
+  def restore(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContainerVersion] = js.native
   def restore(params: ParamsResourceAccountsContainersVersionsRestore): GaxiosPromise[SchemaContainerVersion] = js.native
   def restore(
     params: ParamsResourceAccountsContainersVersionsRestore,
@@ -223,6 +229,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def undelete(): GaxiosPromise[SchemaContainerVersion] = js.native
   def undelete(callback: BodyResponseCallback[SchemaContainerVersion]): Unit = js.native
+  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContainerVersion] = js.native
   def undelete(params: ParamsResourceAccountsContainersVersionsUndelete): GaxiosPromise[SchemaContainerVersion] = js.native
   def undelete(
     params: ParamsResourceAccountsContainersVersionsUndelete,
@@ -257,6 +264,7 @@ class ResourceAccountsContainersVersions protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaContainerVersion] = js.native
   def update(callback: BodyResponseCallback[SchemaContainerVersion]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaContainerVersion] = js.native
   def update(params: ParamsResourceAccountsContainersVersionsUpdate): GaxiosPromise[SchemaContainerVersion] = js.native
   def update(
     params: ParamsResourceAccountsContainersVersionsUpdate,

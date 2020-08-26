@@ -10,9 +10,9 @@ Generate random numbers with a seed, useful for reproducible tests
 | ------------------ | :-------------: |
 | Full name          | seed-random |
 | Keywords           | - |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 37 |
-| # downloads        | 13151669 |
+| # downloads        | 13631911 |
 | # stars            | 5 |
 
 ## Links

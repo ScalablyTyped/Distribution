@@ -226,8 +226,10 @@ trait Container
     * @param endIndex An optional end index to search up to (but not included) Default Container.length.
     */
   def count(property: String, value: js.Any): integer = js.native
+  def count(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): integer = js.native
   def count(property: String, value: js.Any, startIndex: integer): integer = js.native
   def count(property: String, value: js.Any, startIndex: integer, endIndex: integer): integer = js.native
+  def each(callback: js.Function, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
   /**
     * Passes all Game Objects in this Container to the given callback.
     * 
@@ -240,7 +242,6 @@ trait Container
     * @param context Value to use as `this` when executing callback.
     * @param args Additional arguments that will be passed to the callback, after the child.
     */
-  def each(callback: js.Function): this.type = js.native
   def each(callback: js.Function, context: js.Object, args: js.Any*): this.type = js.native
   /**
     * Returns `true` if the given Game Object is a direct child of this Container.
@@ -269,8 +270,39 @@ trait Container
     * @param endIndex An optional end index to search up to (but not included) Default Container.length.
     */
   def getAll(): js.Array[GameObject] = js.native
+  def getAll(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: integer
+  ): js.Array[GameObject] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[GameObject] = js.native
+  def getAll(
+    property: js.UndefOr[scala.Nothing],
+    value: js.UndefOr[scala.Nothing],
+    startIndex: integer,
+    endIndex: integer
+  ): js.Array[GameObject] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: js.Any): js.Array[GameObject] = js.native
+  def getAll(
+    property: js.UndefOr[scala.Nothing],
+    value: js.Any,
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: integer
+  ): js.Array[GameObject] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: js.Any, startIndex: integer): js.Array[GameObject] = js.native
+  def getAll(property: js.UndefOr[scala.Nothing], value: js.Any, startIndex: integer, endIndex: integer): js.Array[GameObject] = js.native
   def getAll(property: String): js.Array[GameObject] = js.native
+  def getAll(
+    property: String,
+    value: js.UndefOr[scala.Nothing],
+    startIndex: js.UndefOr[scala.Nothing],
+    endIndex: integer
+  ): js.Array[GameObject] = js.native
+  def getAll(property: String, value: js.UndefOr[scala.Nothing], startIndex: integer): js.Array[GameObject] = js.native
+  def getAll(property: String, value: js.UndefOr[scala.Nothing], startIndex: integer, endIndex: integer): js.Array[GameObject] = js.native
   def getAll(property: String, value: js.Any): js.Array[GameObject] = js.native
+  def getAll(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): js.Array[GameObject] = js.native
   def getAll(property: String, value: js.Any, startIndex: integer): js.Array[GameObject] = js.native
   def getAll(property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[GameObject] = js.native
   /**
@@ -321,6 +353,7 @@ trait Container
     * @param endIndex An optional end index to search up to (but not included) Default Container.length.
     */
   def getFirst(property: String, value: js.Any): GameObject = js.native
+  def getFirst(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): GameObject = js.native
   def getFirst(property: String, value: js.Any, startIndex: integer): GameObject = js.native
   def getFirst(property: String, value: js.Any, startIndex: integer, endIndex: integer): GameObject = js.native
   /**
@@ -334,8 +367,10 @@ trait Container
     * @param length An optional length, the total number of elements (from the startIndex) to choose from.
     */
   def getRandom(): GameObject = js.native
+  def getRandom(startIndex: js.UndefOr[scala.Nothing], length: integer): GameObject = js.native
   def getRandom(startIndex: integer): GameObject = js.native
   def getRandom(startIndex: integer, length: integer): GameObject = js.native
+  def iterate(callback: js.Function, context: js.UndefOr[scala.Nothing], args: js.Any*): this.type = js.native
   /**
     * Passes all Game Objects in this Container to the given callback.
     * 
@@ -345,7 +380,6 @@ trait Container
     * @param context Value to use as `this` when executing callback.
     * @param args Additional arguments that will be passed to the callback, after the child.
     */
-  def iterate(callback: js.Function): this.type = js.native
   def iterate(callback: js.Function, context: js.Object, args: js.Any*): this.type = js.native
   /**
     * Moves the given Game Object down one place in this Container, unless it's already at the bottom.
@@ -429,7 +463,11 @@ trait Container
     * @param destroyChild Optionally call `destroy` on each Game Object successfully removed from this Container. Default false.
     */
   def removeBetween(): this.type = js.native
+  def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: js.UndefOr[scala.Nothing], destroyChild: Boolean): this.type = js.native
+  def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: integer): this.type = js.native
+  def removeBetween(startIndex: js.UndefOr[scala.Nothing], endIndex: integer, destroyChild: Boolean): this.type = js.native
   def removeBetween(startIndex: integer): this.type = js.native
+  def removeBetween(startIndex: integer, endIndex: js.UndefOr[scala.Nothing], destroyChild: Boolean): this.type = js.native
   def removeBetween(startIndex: integer, endIndex: integer): this.type = js.native
   def removeBetween(startIndex: integer, endIndex: integer, destroyChild: Boolean): this.type = js.native
   /**
@@ -463,6 +501,7 @@ trait Container
     * @param endIndex An optional end index to search up to (but not included) Default Container.length.
     */
   def setAll(property: String, value: js.Any): this.type = js.native
+  def setAll(property: String, value: js.Any, startIndex: js.UndefOr[scala.Nothing], endIndex: integer): this.type = js.native
   def setAll(property: String, value: js.Any, startIndex: integer): this.type = js.native
   def setAll(property: String, value: js.Any, startIndex: integer, endIndex: integer): this.type = js.native
   /**
@@ -502,6 +541,7 @@ trait Container
     * @param updateChildren Apply this scrollFactor to all Container children as well? Default false.
     */
   def setScrollFactor(x: Double): this.type = js.native
+  def setScrollFactor(x: Double, y: js.UndefOr[scala.Nothing], updateChildren: Boolean): this.type = js.native
   def setScrollFactor(x: Double, y: Double): this.type = js.native
   def setScrollFactor(x: Double, y: Double, updateChildren: Boolean): this.type = js.native
   /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bizcharts
 
-Typings are for version 3.5.7
+Typings are for version 3.5.9
 
 ## Library description:
 A powerful React chart library based G2 for browser
@@ -10,9 +10,9 @@ A powerful React chart library based G2 for browser
 | ------------------ | :-------------: |
 | Full name          | bizcharts |
 | Keywords           | visualization, canvas, react, reactjs, chart, react-component, g2, BizCharts |
-| # releases         | 83 |
-| # dependents       | 457 |
-| # downloads        | 742914 |
+| # releases         | 78 |
+| # dependents       | 463 |
+| # downloads        | 760448 |
 | # stars            | 2 |
 
 ## Links

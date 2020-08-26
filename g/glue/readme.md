@@ -12,7 +12,7 @@ Server composer for hapi.js
 | Keywords           | server, pack, composer, manifest, hapi |
 | # releases         | 2 |
 | # dependents       | 45 |
-| # downloads        | 493612 |
+| # downloads        | 485134 |
 | # stars            | 8 |
 
 ## Links

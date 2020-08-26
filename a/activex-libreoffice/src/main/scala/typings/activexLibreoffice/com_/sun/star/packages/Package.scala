@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   * created without arguments, it must be initialized with the {@link com.sun.star.lang.XInitialization} service methods before it is a valid instance of
   * the service.
   */
+@js.native
 trait Package
   extends XInitialization
      with XHierarchicalNameAccess

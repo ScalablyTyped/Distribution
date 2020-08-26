@@ -20,10 +20,28 @@ trait SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfig extends js.
 
 object SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfig {
   @scala.inline
-  def apply(languageHints: js.Array[String] = null): SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfig = {
+  def apply(): SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (languageHints != null) __obj.updateDynamic("languageHints")(languageHints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfig]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfigOps[Self <: SchemaGoogleCloudVideointelligenceV1p2beta1TextDetectionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageHintsVarargs(value: String*): Self = this.set("languageHints", js.Array(value :_*))
+    @scala.inline
+    def setLanguageHints(value: js.Array[String]): Self = this.set("languageHints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageHints: Self = this.set("languageHints", js.undefined)
+  }
+  
 }
 

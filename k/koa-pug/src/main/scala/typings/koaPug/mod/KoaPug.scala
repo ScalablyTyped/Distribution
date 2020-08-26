@@ -38,6 +38,7 @@ class KoaPug () extends js.Object {
     * @param options
     */
   def render(tpl: String): js.Promise[String] = js.native
+  def render(tpl: String, locals: js.UndefOr[scala.Nothing], options: RenderOptions): js.Promise[String] = js.native
   def render(tpl: String, locals: js.Any): js.Promise[String] = js.native
   def render(tpl: String, locals: js.Any, options: RenderOptions): js.Promise[String] = js.native
   /**

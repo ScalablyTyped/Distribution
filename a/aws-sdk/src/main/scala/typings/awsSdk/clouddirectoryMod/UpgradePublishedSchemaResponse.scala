@@ -14,10 +14,26 @@ trait UpgradePublishedSchemaResponse extends js.Object {
 
 object UpgradePublishedSchemaResponse {
   @scala.inline
-  def apply(UpgradedSchemaArn: Arn = null): UpgradePublishedSchemaResponse = {
+  def apply(): UpgradePublishedSchemaResponse = {
     val __obj = js.Dynamic.literal()
-    if (UpgradedSchemaArn != null) __obj.updateDynamic("UpgradedSchemaArn")(UpgradedSchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradePublishedSchemaResponse]
   }
+  @scala.inline
+  implicit class UpgradePublishedSchemaResponseOps[Self <: UpgradePublishedSchemaResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUpgradedSchemaArn(value: Arn): Self = this.set("UpgradedSchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgradedSchemaArn: Self = this.set("UpgradedSchemaArn", js.undefined)
+  }
+  
 }
 

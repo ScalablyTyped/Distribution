@@ -4,9 +4,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Block extends js.Object {
   /** Detected block type (text, image etc) for this block. */
-  var blockType: js.UndefOr[String] = js.undefined
+  var blockType: js.UndefOr[String] = js.native
   /**
     * The bounding box for the block.
     * The vertices are in the order of top-left, top-right, bottom-right,
@@ -24,27 +25,49 @@ trait Block extends js.Object {
     * 1----0
     * and the vertice order will still be (0, 1, 2, 3).
     */
-  var boundingBox: js.UndefOr[BoundingPoly] = js.undefined
+  var boundingBox: js.UndefOr[BoundingPoly] = js.native
   /** List of paragraphs in this block (if this blocks is of type text). */
-  var paragraphs: js.UndefOr[js.Array[Paragraph]] = js.undefined
+  var paragraphs: js.UndefOr[js.Array[Paragraph]] = js.native
   /** Additional information detected for the block. */
-  var property: js.UndefOr[TextProperty] = js.undefined
+  var property: js.UndefOr[TextProperty] = js.native
 }
 
 object Block {
   @scala.inline
-  def apply(
-    blockType: String = null,
-    boundingBox: BoundingPoly = null,
-    paragraphs: js.Array[Paragraph] = null,
-    property: TextProperty = null
-  ): Block = {
+  def apply(): Block = {
     val __obj = js.Dynamic.literal()
-    if (blockType != null) __obj.updateDynamic("blockType")(blockType.asInstanceOf[js.Any])
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
     __obj.asInstanceOf[Block]
   }
+  @scala.inline
+  implicit class BlockOps[Self <: Block] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockType(value: String): Self = this.set("blockType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockType: Self = this.set("blockType", js.undefined)
+    @scala.inline
+    def setBoundingBox(value: BoundingPoly): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    @scala.inline
+    def setParagraphsVarargs(value: Paragraph*): Self = this.set("paragraphs", js.Array(value :_*))
+    @scala.inline
+    def setParagraphs(value: js.Array[Paragraph]): Self = this.set("paragraphs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParagraphs: Self = this.set("paragraphs", js.undefined)
+    @scala.inline
+    def setProperty(value: TextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+  }
+  
 }
 

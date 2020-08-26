@@ -15,11 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object instancedMeshMod extends js.Object {
   @js.native
-  class InstancedMesh protected () extends Mesh {
-    def this(geometry: BufferGeometry, material: js.Array[Material], count: Double) = this()
-    def this(geometry: BufferGeometry, material: Material, count: Double) = this()
-    def this(geometry: Geometry, material: js.Array[Material], count: Double) = this()
-    def this(geometry: Geometry, material: Material, count: Double) = this()
+  class InstancedMesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] protected ()
+    extends Mesh[Geometry | BufferGeometry, Material | js.Array[Material]] {
+    def this(geometry: TGeometry, material: TMaterial, count: Double) = this()
     var count: Double = js.native
     var instanceMatrix: BufferAttribute = js.native
     val isInstancedMesh: `true` = js.native

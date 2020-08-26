@@ -32,6 +32,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def accept(): GaxiosPromise[SchemaProposal] = js.native
   def accept(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def accept(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def accept(params: ParamsResourceAccountsProposalsAccept): GaxiosPromise[SchemaProposal] = js.native
   def accept(params: ParamsResourceAccountsProposalsAccept, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def accept(
@@ -63,6 +64,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def addNote(): GaxiosPromise[SchemaNote] = js.native
   def addNote(callback: BodyResponseCallback[SchemaNote]): Unit = js.native
+  def addNote(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNote] = js.native
   def addNote(params: ParamsResourceAccountsProposalsAddnote): GaxiosPromise[SchemaNote] = js.native
   def addNote(params: ParamsResourceAccountsProposalsAddnote, callback: BodyResponseCallback[SchemaNote]): Unit = js.native
   def addNote(
@@ -94,6 +96,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def cancelNegotiation(): GaxiosPromise[SchemaProposal] = js.native
   def cancelNegotiation(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def cancelNegotiation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def cancelNegotiation(params: ParamsResourceAccountsProposalsCancelnegotiation): GaxiosPromise[SchemaProposal] = js.native
   def cancelNegotiation(
     params: ParamsResourceAccountsProposalsCancelnegotiation,
@@ -132,6 +135,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def completeSetup(): GaxiosPromise[SchemaProposal] = js.native
   def completeSetup(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def completeSetup(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def completeSetup(params: ParamsResourceAccountsProposalsCompletesetup): GaxiosPromise[SchemaProposal] = js.native
   def completeSetup(
     params: ParamsResourceAccountsProposalsCompletesetup,
@@ -164,6 +168,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaProposal] = js.native
   def create(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def create(params: ParamsResourceAccountsProposalsCreate): GaxiosPromise[SchemaProposal] = js.native
   def create(params: ParamsResourceAccountsProposalsCreate, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def create(
@@ -193,6 +198,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaProposal] = js.native
   def get(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def get(params: ParamsResourceAccountsProposalsGet): GaxiosPromise[SchemaProposal] = js.native
   def get(params: ParamsResourceAccountsProposalsGet, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def get(
@@ -229,6 +235,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListProposalsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListProposalsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListProposalsResponse] = js.native
   def list(params: ParamsResourceAccountsProposalsList): GaxiosPromise[SchemaListProposalsResponse] = js.native
   def list(
     params: ParamsResourceAccountsProposalsList,
@@ -265,6 +272,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def pause(): GaxiosPromise[SchemaProposal] = js.native
   def pause(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def pause(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def pause(params: ParamsResourceAccountsProposalsPause): GaxiosPromise[SchemaProposal] = js.native
   def pause(params: ParamsResourceAccountsProposalsPause, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def pause(
@@ -299,6 +307,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def resume(): GaxiosPromise[SchemaProposal] = js.native
   def resume(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def resume(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def resume(params: ParamsResourceAccountsProposalsResume): GaxiosPromise[SchemaProposal] = js.native
   def resume(params: ParamsResourceAccountsProposalsResume, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def resume(
@@ -337,6 +346,7 @@ class ResourceAccountsProposals protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaProposal] = js.native
   def update(callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProposal] = js.native
   def update(params: ParamsResourceAccountsProposalsUpdate): GaxiosPromise[SchemaProposal] = js.native
   def update(params: ParamsResourceAccountsProposalsUpdate, callback: BodyResponseCallback[SchemaProposal]): Unit = js.native
   def update(

@@ -34,21 +34,44 @@ trait ListAttributesRequest extends js.Object {
 
 object ListAttributesRequest {
   @scala.inline
-  def apply(
-    targetType: TargetType,
-    attributeName: String = null,
-    attributeValue: String = null,
-    cluster: String = null,
-    maxResults: js.UndefOr[BoxedInteger] = js.undefined,
-    nextToken: String = null
-  ): ListAttributesRequest = {
+  def apply(targetType: TargetType): ListAttributesRequest = {
     val __obj = js.Dynamic.literal(targetType = targetType.asInstanceOf[js.Any])
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
-    if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttributesRequest]
   }
+  @scala.inline
+  implicit class ListAttributesRequestOps[Self <: ListAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetType(value: TargetType): Self = this.set("targetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributeName(value: String): Self = this.set("attributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("attributeName", js.undefined)
+    @scala.inline
+    def setAttributeValue(value: String): Self = this.set("attributeValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeValue: Self = this.set("attributeValue", js.undefined)
+    @scala.inline
+    def setCluster(value: String): Self = this.set("cluster", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCluster: Self = this.set("cluster", js.undefined)
+    @scala.inline
+    def setMaxResults(value: BoxedInteger): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

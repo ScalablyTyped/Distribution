@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A client-side equivalent of the file manager's FileManagerToolbarItemBase object.
   */
+@js.native
 trait ASPxClientFileManagerToolbarItem extends ASPxClientMenuItem
 
 object ASPxClientFileManagerToolbarItem {

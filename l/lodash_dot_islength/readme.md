@@ -12,7 +12,7 @@ The lodash method `_.isLength` exported as a module.
 | Keywords           | lodash-modularized, islength |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 3731923 |
+| # downloads        | 3975971 |
 | # stars            | 0 |
 
 ## Links

@@ -99,7 +99,21 @@ trait Utility_ extends js.Object {
     * @param windowOptions (Optional) Options for controlling the window.
     */
   def openEntityForm(name: String): Unit = js.native
+  def openEntityForm(
+    name: String,
+    id: js.UndefOr[scala.Nothing],
+    parameters: js.UndefOr[scala.Nothing],
+    windowOptions: WindowOptions
+  ): Unit = js.native
+  def openEntityForm(name: String, id: js.UndefOr[scala.Nothing], parameters: FormOpenParameters): Unit = js.native
+  def openEntityForm(
+    name: String,
+    id: js.UndefOr[scala.Nothing],
+    parameters: FormOpenParameters,
+    windowOptions: WindowOptions
+  ): Unit = js.native
   def openEntityForm(name: String, id: String): Unit = js.native
+  def openEntityForm(name: String, id: String, parameters: js.UndefOr[scala.Nothing], windowOptions: WindowOptions): Unit = js.native
   def openEntityForm(name: String, id: String, parameters: FormOpenParameters): Unit = js.native
   def openEntityForm(name: String, id: String, parameters: FormOpenParameters, windowOptions: WindowOptions): Unit = js.native
   /**
@@ -112,6 +126,7 @@ trait Utility_ extends js.Object {
     * @returns Returns an asynchronous promise.
     */
   def openQuickCreate(entityLogicalName: String): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  def openQuickCreate(entityLogicalName: String, createFromEntity: js.UndefOr[scala.Nothing], parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue, parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   /**
@@ -134,7 +149,16 @@ trait Utility_ extends js.Object {
     * * formid
     */
   def openWebResource(webResourceName: String): Window = js.native
+  def openWebResource(
+    webResourceName: String,
+    webResourceData: js.UndefOr[scala.Nothing],
+    width: js.UndefOr[scala.Nothing],
+    height: Double
+  ): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: js.UndefOr[scala.Nothing], width: Double): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: js.UndefOr[scala.Nothing], width: Double, height: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: String, width: js.UndefOr[scala.Nothing], height: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String, width: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String, width: Double, height: Double): Window = js.native
   /**

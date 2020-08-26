@@ -17,15 +17,5 @@ class ASPxClientImageGalleryFullscreenViewerEventArgs protected ()
     * @param name A String value that specifies the processed item's unique identifier name.
     */
   def this(index: Double, name: String) = this()
-  /**
-    * Gets the index of the item related to the event.
-    */
-  /* CompleteClass */
-  override var index: Double = js.native
-  /**
-    * Gets the unique identifier name of the item related to the event.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

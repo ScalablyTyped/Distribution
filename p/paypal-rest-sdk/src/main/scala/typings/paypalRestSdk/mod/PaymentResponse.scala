@@ -1,50 +1,40 @@
 package typings.paypalRestSdk.mod
 
-import typings.paypalRestSdk.anon.Cancelurl
 import typings.paypalRestSdk.anon.Paymentmethod
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PaymentResponse
   extends Payment_
      with Response {
   /* InferMemberOverrides */
-  override val create_time: js.UndefOr[String] = js.undefined
+  override val create_time: js.UndefOr[String] = js.native
 }
 
 object PaymentResponse {
   @scala.inline
-  def apply(
-    httpStatusCode: Double,
-    intent: String,
-    payer: Paymentmethod,
-    transactions: js.Array[Transaction],
-    count: js.UndefOr[Double] = js.undefined,
-    create_time: String = null,
-    experience_profile_id: String = null,
-    failure_reason: String = null,
-    id: String = null,
-    links: js.Array[Link] = null,
-    note_to_payer: String = null,
-    redirect_urls: Cancelurl = null,
-    state: String = null,
-    total_count: js.UndefOr[Double] = js.undefined,
-    update_time: String = null
-  ): PaymentResponse = {
+  def apply(httpStatusCode: Double, intent: String, payer: Paymentmethod, transactions: js.Array[Transaction]): PaymentResponse = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any], intent = intent.asInstanceOf[js.Any], payer = payer.asInstanceOf[js.Any], transactions = transactions.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
-    if (experience_profile_id != null) __obj.updateDynamic("experience_profile_id")(experience_profile_id.asInstanceOf[js.Any])
-    if (failure_reason != null) __obj.updateDynamic("failure_reason")(failure_reason.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (note_to_payer != null) __obj.updateDynamic("note_to_payer")(note_to_payer.asInstanceOf[js.Any])
-    if (redirect_urls != null) __obj.updateDynamic("redirect_urls")(redirect_urls.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(total_count)) __obj.updateDynamic("total_count")(total_count.get.asInstanceOf[js.Any])
-    if (update_time != null) __obj.updateDynamic("update_time")(update_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentResponse]
   }
+  @scala.inline
+  implicit class PaymentResponseOps[Self <: PaymentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreate_time(value: String): Self = this.set("create_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreate_time: Self = this.set("create_time", js.undefined)
+  }
+  
 }
 

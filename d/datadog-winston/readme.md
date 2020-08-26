@@ -12,7 +12,7 @@ Ship winston logs to datadog without breaking a sweat
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 9482 |
+| # downloads        | 12878 |
 | # stars            | 0 |
 
 ## Links

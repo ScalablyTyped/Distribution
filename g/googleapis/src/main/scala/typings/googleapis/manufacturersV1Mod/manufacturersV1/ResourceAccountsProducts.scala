@@ -28,6 +28,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAccountsProductsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceAccountsProductsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -61,6 +62,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaProduct] = js.native
   def get(callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceAccountsProductsGet): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceAccountsProductsGet, callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
   def get(
@@ -91,6 +93,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListProductsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListProductsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListProductsResponse] = js.native
   def list(params: ParamsResourceAccountsProductsList): GaxiosPromise[SchemaListProductsResponse] = js.native
   def list(
     params: ParamsResourceAccountsProductsList,
@@ -134,6 +137,7 @@ class ResourceAccountsProducts protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaEmpty] = js.native
   def update(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def update(params: ParamsResourceAccountsProductsUpdate): GaxiosPromise[SchemaEmpty] = js.native
   def update(params: ParamsResourceAccountsProductsUpdate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def update(

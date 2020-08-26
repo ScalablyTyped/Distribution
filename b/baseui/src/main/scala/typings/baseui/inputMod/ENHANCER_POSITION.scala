@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ENHANCER_POSITION extends js.Object {
-  var end: typings.baseui.baseuiStrings.end
-  var start: typings.baseui.baseuiStrings.start
+  var end: typings.baseui.baseuiStrings.end = js.native
+  var start: typings.baseui.baseuiStrings.start = js.native
 }
 
 @JSImport("baseui/input", "ENHANCER_POSITION")

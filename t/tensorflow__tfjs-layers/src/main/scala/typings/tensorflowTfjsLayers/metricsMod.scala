@@ -27,7 +27,12 @@ object metricsMod extends js.Object {
   val mae: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   val mape: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
   val mse: js.Function2[/* yTrue */ Tensor[Rank], /* yPred */ Tensor[Rank], Tensor[Rank]] = js.native
-  val sparseCategoricalCrossentropy: js.Function2[/* target */ Tensor[Rank], /* output */ Tensor[Rank], Tensor[Rank]] = js.native
+  val sparseCategoricalCrossentropy: js.Function3[
+    /* target */ Tensor[Rank], 
+    /* output */ Tensor[Rank], 
+    /* fromLogits */ js.UndefOr[Boolean], 
+    Tensor[Rank]
+  ] = js.native
   def binaryAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
   def binaryCrossentropy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native
   def categoricalAccuracy(yTrue: Tensor[Rank], yPred: Tensor[Rank]): Tensor[Rank] = js.native

@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-expect-continue |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 3526 |
+| # releases         | 12 |
+| # dependents       | 2 |
+| # downloads        | 4989 |
 | # stars            | 0 |
 
 ## Links

@@ -27,6 +27,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def cancel(): GaxiosPromise[Unit] = js.native
   def cancel(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def cancel(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def cancel(params: ParamsResourceTurnbasedmatchesCancel): GaxiosPromise[Unit] = js.native
   def cancel(params: ParamsResourceTurnbasedmatchesCancel, callback: BodyResponseCallback[Unit]): Unit = js.native
   def cancel(
@@ -55,6 +56,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def create(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def create(params: ParamsResourceTurnbasedmatchesCreate): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def create(params: ParamsResourceTurnbasedmatchesCreate, callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
   def create(
@@ -83,6 +85,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def decline(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def decline(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def decline(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def decline(params: ParamsResourceTurnbasedmatchesDecline): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def decline(
     params: ParamsResourceTurnbasedmatchesDecline,
@@ -114,6 +117,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def dismiss(): GaxiosPromise[Unit] = js.native
   def dismiss(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def dismiss(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourceTurnbasedmatchesDismiss): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourceTurnbasedmatchesDismiss, callback: BodyResponseCallback[Unit]): Unit = js.native
   def dismiss(
@@ -145,6 +149,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def finish(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def finish(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def finish(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def finish(params: ParamsResourceTurnbasedmatchesFinish): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def finish(params: ParamsResourceTurnbasedmatchesFinish, callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
   def finish(
@@ -174,6 +179,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def get(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def get(params: ParamsResourceTurnbasedmatchesGet): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def get(params: ParamsResourceTurnbasedmatchesGet, callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
   def get(
@@ -202,6 +208,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def join(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def join(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def join(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def join(params: ParamsResourceTurnbasedmatchesJoin): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def join(params: ParamsResourceTurnbasedmatchesJoin, callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
   def join(
@@ -231,6 +238,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def leave(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def leave(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def leave(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def leave(params: ParamsResourceTurnbasedmatchesLeave): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def leave(params: ParamsResourceTurnbasedmatchesLeave, callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
   def leave(
@@ -262,6 +270,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def leaveTurn(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def leaveTurn(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def leaveTurn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def leaveTurn(params: ParamsResourceTurnbasedmatchesLeaveturn): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def leaveTurn(
     params: ParamsResourceTurnbasedmatchesLeaveturn,
@@ -296,6 +305,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTurnBasedMatchList] = js.native
   def list(callback: BodyResponseCallback[SchemaTurnBasedMatchList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatchList] = js.native
   def list(params: ParamsResourceTurnbasedmatchesList): GaxiosPromise[SchemaTurnBasedMatchList] = js.native
   def list(
     params: ParamsResourceTurnbasedmatchesList,
@@ -331,6 +341,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def rematch(): GaxiosPromise[SchemaTurnBasedMatchRematch] = js.native
   def rematch(callback: BodyResponseCallback[SchemaTurnBasedMatchRematch]): Unit = js.native
+  def rematch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatchRematch] = js.native
   def rematch(params: ParamsResourceTurnbasedmatchesRematch): GaxiosPromise[SchemaTurnBasedMatchRematch] = js.native
   def rematch(
     params: ParamsResourceTurnbasedmatchesRematch,
@@ -368,6 +379,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def sync(): GaxiosPromise[SchemaTurnBasedMatchSync] = js.native
   def sync(callback: BodyResponseCallback[SchemaTurnBasedMatchSync]): Unit = js.native
+  def sync(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatchSync] = js.native
   def sync(params: ParamsResourceTurnbasedmatchesSync): GaxiosPromise[SchemaTurnBasedMatchSync] = js.native
   def sync(
     params: ParamsResourceTurnbasedmatchesSync,
@@ -400,6 +412,7 @@ class ResourceTurnbasedmatches protected () extends js.Object {
     */
   def takeTurn(): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def takeTurn(callback: BodyResponseCallback[SchemaTurnBasedMatch]): Unit = js.native
+  def takeTurn(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def takeTurn(params: ParamsResourceTurnbasedmatchesTaketurn): GaxiosPromise[SchemaTurnBasedMatch] = js.native
   def takeTurn(
     params: ParamsResourceTurnbasedmatchesTaketurn,

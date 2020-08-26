@@ -27,11 +27,30 @@ trait SchemaSchemaConfig extends js.Object {
 
 object SchemaSchemaConfig {
   @scala.inline
-  def apply(recursiveStructureDepth: String = null, schemaType: String = null): SchemaSchemaConfig = {
+  def apply(): SchemaSchemaConfig = {
     val __obj = js.Dynamic.literal()
-    if (recursiveStructureDepth != null) __obj.updateDynamic("recursiveStructureDepth")(recursiveStructureDepth.asInstanceOf[js.Any])
-    if (schemaType != null) __obj.updateDynamic("schemaType")(schemaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchemaConfig]
   }
+  @scala.inline
+  implicit class SchemaSchemaConfigOps[Self <: SchemaSchemaConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRecursiveStructureDepth(value: String): Self = this.set("recursiveStructureDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecursiveStructureDepth: Self = this.set("recursiveStructureDepth", js.undefined)
+    @scala.inline
+    def setSchemaType(value: String): Self = this.set("schemaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaType: Self = this.set("schemaType", js.undefined)
+  }
+  
 }
 

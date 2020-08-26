@@ -74,40 +74,98 @@ trait CreateUserPoolClientRequest extends js.Object {
 
 object CreateUserPoolClientRequest {
   @scala.inline
-  def apply(
-    ClientName: ClientNameType,
-    UserPoolId: UserPoolIdType,
-    AllowedOAuthFlows: OAuthFlowsType = null,
-    AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.undefined,
-    AllowedOAuthScopes: ScopeListType = null,
-    AnalyticsConfiguration: AnalyticsConfigurationType = null,
-    CallbackURLs: CallbackURLsListType = null,
-    DefaultRedirectURI: RedirectUrlType = null,
-    ExplicitAuthFlows: ExplicitAuthFlowsListType = null,
-    GenerateSecret: js.UndefOr[GenerateSecret] = js.undefined,
-    LogoutURLs: LogoutURLsListType = null,
-    PreventUserExistenceErrors: PreventUserExistenceErrorTypes = null,
-    ReadAttributes: ClientPermissionListType = null,
-    RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.undefined,
-    SupportedIdentityProviders: SupportedIdentityProvidersListType = null,
-    WriteAttributes: ClientPermissionListType = null
-  ): CreateUserPoolClientRequest = {
+  def apply(ClientName: ClientNameType, UserPoolId: UserPoolIdType): CreateUserPoolClientRequest = {
     val __obj = js.Dynamic.literal(ClientName = ClientName.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
-    if (AllowedOAuthFlows != null) __obj.updateDynamic("AllowedOAuthFlows")(AllowedOAuthFlows.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowedOAuthFlowsUserPoolClient)) __obj.updateDynamic("AllowedOAuthFlowsUserPoolClient")(AllowedOAuthFlowsUserPoolClient.get.asInstanceOf[js.Any])
-    if (AllowedOAuthScopes != null) __obj.updateDynamic("AllowedOAuthScopes")(AllowedOAuthScopes.asInstanceOf[js.Any])
-    if (AnalyticsConfiguration != null) __obj.updateDynamic("AnalyticsConfiguration")(AnalyticsConfiguration.asInstanceOf[js.Any])
-    if (CallbackURLs != null) __obj.updateDynamic("CallbackURLs")(CallbackURLs.asInstanceOf[js.Any])
-    if (DefaultRedirectURI != null) __obj.updateDynamic("DefaultRedirectURI")(DefaultRedirectURI.asInstanceOf[js.Any])
-    if (ExplicitAuthFlows != null) __obj.updateDynamic("ExplicitAuthFlows")(ExplicitAuthFlows.asInstanceOf[js.Any])
-    if (!js.isUndefined(GenerateSecret)) __obj.updateDynamic("GenerateSecret")(GenerateSecret.get.asInstanceOf[js.Any])
-    if (LogoutURLs != null) __obj.updateDynamic("LogoutURLs")(LogoutURLs.asInstanceOf[js.Any])
-    if (PreventUserExistenceErrors != null) __obj.updateDynamic("PreventUserExistenceErrors")(PreventUserExistenceErrors.asInstanceOf[js.Any])
-    if (ReadAttributes != null) __obj.updateDynamic("ReadAttributes")(ReadAttributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(RefreshTokenValidity)) __obj.updateDynamic("RefreshTokenValidity")(RefreshTokenValidity.get.asInstanceOf[js.Any])
-    if (SupportedIdentityProviders != null) __obj.updateDynamic("SupportedIdentityProviders")(SupportedIdentityProviders.asInstanceOf[js.Any])
-    if (WriteAttributes != null) __obj.updateDynamic("WriteAttributes")(WriteAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserPoolClientRequest]
   }
+  @scala.inline
+  implicit class CreateUserPoolClientRequestOps[Self <: CreateUserPoolClientRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientName(value: ClientNameType): Self = this.set("ClientName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedOAuthFlowsVarargs(value: OAuthFlowType*): Self = this.set("AllowedOAuthFlows", js.Array(value :_*))
+    @scala.inline
+    def setAllowedOAuthFlows(value: OAuthFlowsType): Self = this.set("AllowedOAuthFlows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedOAuthFlows: Self = this.set("AllowedOAuthFlows", js.undefined)
+    @scala.inline
+    def setAllowedOAuthFlowsUserPoolClient(value: BooleanType): Self = this.set("AllowedOAuthFlowsUserPoolClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedOAuthFlowsUserPoolClient: Self = this.set("AllowedOAuthFlowsUserPoolClient", js.undefined)
+    @scala.inline
+    def setAllowedOAuthScopesVarargs(value: ScopeType*): Self = this.set("AllowedOAuthScopes", js.Array(value :_*))
+    @scala.inline
+    def setAllowedOAuthScopes(value: ScopeListType): Self = this.set("AllowedOAuthScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedOAuthScopes: Self = this.set("AllowedOAuthScopes", js.undefined)
+    @scala.inline
+    def setAnalyticsConfiguration(value: AnalyticsConfigurationType): Self = this.set("AnalyticsConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnalyticsConfiguration: Self = this.set("AnalyticsConfiguration", js.undefined)
+    @scala.inline
+    def setCallbackURLsVarargs(value: RedirectUrlType*): Self = this.set("CallbackURLs", js.Array(value :_*))
+    @scala.inline
+    def setCallbackURLs(value: CallbackURLsListType): Self = this.set("CallbackURLs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbackURLs: Self = this.set("CallbackURLs", js.undefined)
+    @scala.inline
+    def setDefaultRedirectURI(value: RedirectUrlType): Self = this.set("DefaultRedirectURI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRedirectURI: Self = this.set("DefaultRedirectURI", js.undefined)
+    @scala.inline
+    def setExplicitAuthFlowsVarargs(value: ExplicitAuthFlowsType*): Self = this.set("ExplicitAuthFlows", js.Array(value :_*))
+    @scala.inline
+    def setExplicitAuthFlows(value: ExplicitAuthFlowsListType): Self = this.set("ExplicitAuthFlows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitAuthFlows: Self = this.set("ExplicitAuthFlows", js.undefined)
+    @scala.inline
+    def setGenerateSecret(value: GenerateSecret): Self = this.set("GenerateSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGenerateSecret: Self = this.set("GenerateSecret", js.undefined)
+    @scala.inline
+    def setLogoutURLsVarargs(value: RedirectUrlType*): Self = this.set("LogoutURLs", js.Array(value :_*))
+    @scala.inline
+    def setLogoutURLs(value: LogoutURLsListType): Self = this.set("LogoutURLs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogoutURLs: Self = this.set("LogoutURLs", js.undefined)
+    @scala.inline
+    def setPreventUserExistenceErrors(value: PreventUserExistenceErrorTypes): Self = this.set("PreventUserExistenceErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreventUserExistenceErrors: Self = this.set("PreventUserExistenceErrors", js.undefined)
+    @scala.inline
+    def setReadAttributesVarargs(value: ClientPermissionType*): Self = this.set("ReadAttributes", js.Array(value :_*))
+    @scala.inline
+    def setReadAttributes(value: ClientPermissionListType): Self = this.set("ReadAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadAttributes: Self = this.set("ReadAttributes", js.undefined)
+    @scala.inline
+    def setRefreshTokenValidity(value: RefreshTokenValidityType): Self = this.set("RefreshTokenValidity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRefreshTokenValidity: Self = this.set("RefreshTokenValidity", js.undefined)
+    @scala.inline
+    def setSupportedIdentityProvidersVarargs(value: ProviderNameType*): Self = this.set("SupportedIdentityProviders", js.Array(value :_*))
+    @scala.inline
+    def setSupportedIdentityProviders(value: SupportedIdentityProvidersListType): Self = this.set("SupportedIdentityProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedIdentityProviders: Self = this.set("SupportedIdentityProviders", js.undefined)
+    @scala.inline
+    def setWriteAttributesVarargs(value: ClientPermissionType*): Self = this.set("WriteAttributes", js.Array(value :_*))
+    @scala.inline
+    def setWriteAttributes(value: ClientPermissionListType): Self = this.set("WriteAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteAttributes: Self = this.set("WriteAttributes", js.undefined)
+  }
+  
 }
 

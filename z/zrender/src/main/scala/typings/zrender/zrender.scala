@@ -16,12 +16,12 @@ object zrender extends js.Object {
   @js.native
   trait LinearGradient
     extends Instantiable6[
-          js.UndefOr[/* x */ X], 
-          js.UndefOr[/* y */ Y], 
-          js.UndefOr[/* x2 */ X2], 
-          js.UndefOr[/* y2 */ Y2], 
-          js.UndefOr[/* colorStops */ ColorStops], 
-          js.UndefOr[/* globalCoord */ GlobalCoords], 
+          /* x */ js.UndefOr[X], 
+          /* y */ js.UndefOr[Y], 
+          /* x2 */ js.UndefOr[X2], 
+          /* y2 */ js.UndefOr[Y2], 
+          /* colorStops */ js.UndefOr[ColorStops], 
+          /* globalCoord */ js.UndefOr[GlobalCoords], 
           AddColorStop
         ]
   

@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AreaBase extends js.Object {
-  var areaBase: js.UndefOr[Double] = js.undefined
-  var lineSmooth: js.UndefOr[js.Function | Boolean] = js.undefined
-  var showArea: js.UndefOr[Boolean] = js.undefined
-  var showLine: js.UndefOr[Boolean] = js.undefined
-  var showPoint: js.UndefOr[Boolean] = js.undefined
+  var areaBase: js.UndefOr[Double] = js.native
+  var lineSmooth: js.UndefOr[js.Function | Boolean] = js.native
+  var showArea: js.UndefOr[Boolean] = js.native
+  var showLine: js.UndefOr[Boolean] = js.native
+  var showPoint: js.UndefOr[Boolean] = js.native
 }
 
 object AreaBase {
   @scala.inline
-  def apply(
-    areaBase: js.UndefOr[Double] = js.undefined,
-    lineSmooth: js.Function | Boolean = null,
-    showArea: js.UndefOr[Boolean] = js.undefined,
-    showLine: js.UndefOr[Boolean] = js.undefined,
-    showPoint: js.UndefOr[Boolean] = js.undefined
-  ): AreaBase = {
+  def apply(): AreaBase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(areaBase)) __obj.updateDynamic("areaBase")(areaBase.get.asInstanceOf[js.Any])
-    if (lineSmooth != null) __obj.updateDynamic("lineSmooth")(lineSmooth.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArea)) __obj.updateDynamic("showArea")(showArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPoint)) __obj.updateDynamic("showPoint")(showPoint.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaBase]
   }
+  @scala.inline
+  implicit class AreaBaseOps[Self <: AreaBase] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAreaBase(value: Double): Self = this.set("areaBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreaBase: Self = this.set("areaBase", js.undefined)
+    @scala.inline
+    def setLineSmooth(value: js.Function | Boolean): Self = this.set("lineSmooth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineSmooth: Self = this.set("lineSmooth", js.undefined)
+    @scala.inline
+    def setShowArea(value: Boolean): Self = this.set("showArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowArea: Self = this.set("showArea", js.undefined)
+    @scala.inline
+    def setShowLine(value: Boolean): Self = this.set("showLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowLine: Self = this.set("showLine", js.undefined)
+    @scala.inline
+    def setShowPoint(value: Boolean): Self = this.set("showPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPoint: Self = this.set("showPoint", js.undefined)
+  }
+  
 }
 

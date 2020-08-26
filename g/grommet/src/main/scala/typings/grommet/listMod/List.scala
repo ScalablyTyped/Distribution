@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/List", "List")
+@JSImport("grommet/es6/components/List", "List")
 @js.native
 class List protected ()
   extends Component[
@@ -26,7 +26,7 @@ class List protected ()
   ) = this()
 }
 
-@JSImport("grommet/components/List", "List")
+@JSImport("grommet/es6/components/List", "List")
 @js.native
 object List extends TopLevel[
       ComponentClass[

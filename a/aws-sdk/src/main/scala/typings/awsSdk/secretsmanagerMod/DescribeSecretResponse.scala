@@ -11,6 +11,10 @@ trait DescribeSecretResponse extends js.Object {
     */
   var ARN: js.UndefOr[SecretARNType] = js.native
   /**
+    * The date that the secret was created.
+    */
+  var CreatedDate: js.UndefOr[TimestampType] = js.native
+  /**
     * This value exists if the secret is scheduled for deletion. Some time after the specified date and time, Secrets Manager deletes the secret and all of its versions. If a secret is scheduled for deletion, then its details, including the encrypted secret information, is not accessible. To cancel a scheduled deletion and restore access, use RestoreSecret.
     */
   var DeletedDate: js.UndefOr[DeletedDateType] = js.native
@@ -66,38 +70,84 @@ trait DescribeSecretResponse extends js.Object {
 
 object DescribeSecretResponse {
   @scala.inline
-  def apply(
-    ARN: SecretARNType = null,
-    DeletedDate: DeletedDateType = null,
-    Description: DescriptionType = null,
-    KmsKeyId: KmsKeyIdType = null,
-    LastAccessedDate: LastAccessedDateType = null,
-    LastChangedDate: LastChangedDateType = null,
-    LastRotatedDate: LastRotatedDateType = null,
-    Name: SecretNameType = null,
-    OwningService: OwningServiceType = null,
-    RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
-    RotationLambdaARN: RotationLambdaARNType = null,
-    RotationRules: RotationRulesType = null,
-    Tags: TagListType = null,
-    VersionIdsToStages: SecretVersionsToStagesMapType = null
-  ): DescribeSecretResponse = {
+  def apply(): DescribeSecretResponse = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (DeletedDate != null) __obj.updateDynamic("DeletedDate")(DeletedDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LastAccessedDate != null) __obj.updateDynamic("LastAccessedDate")(LastAccessedDate.asInstanceOf[js.Any])
-    if (LastChangedDate != null) __obj.updateDynamic("LastChangedDate")(LastChangedDate.asInstanceOf[js.Any])
-    if (LastRotatedDate != null) __obj.updateDynamic("LastRotatedDate")(LastRotatedDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OwningService != null) __obj.updateDynamic("OwningService")(OwningService.asInstanceOf[js.Any])
-    if (!js.isUndefined(RotationEnabled)) __obj.updateDynamic("RotationEnabled")(RotationEnabled.get.asInstanceOf[js.Any])
-    if (RotationLambdaARN != null) __obj.updateDynamic("RotationLambdaARN")(RotationLambdaARN.asInstanceOf[js.Any])
-    if (RotationRules != null) __obj.updateDynamic("RotationRules")(RotationRules.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (VersionIdsToStages != null) __obj.updateDynamic("VersionIdsToStages")(VersionIdsToStages.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSecretResponse]
   }
+  @scala.inline
+  implicit class DescribeSecretResponseOps[Self <: DescribeSecretResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: SecretARNType): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: TimestampType): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDeletedDate(value: DeletedDateType): Self = this.set("DeletedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletedDate: Self = this.set("DeletedDate", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyIdType): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLastAccessedDate(value: LastAccessedDateType): Self = this.set("LastAccessedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessedDate: Self = this.set("LastAccessedDate", js.undefined)
+    @scala.inline
+    def setLastChangedDate(value: LastChangedDateType): Self = this.set("LastChangedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastChangedDate: Self = this.set("LastChangedDate", js.undefined)
+    @scala.inline
+    def setLastRotatedDate(value: LastRotatedDateType): Self = this.set("LastRotatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRotatedDate: Self = this.set("LastRotatedDate", js.undefined)
+    @scala.inline
+    def setName(value: SecretNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwningService(value: OwningServiceType): Self = this.set("OwningService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwningService: Self = this.set("OwningService", js.undefined)
+    @scala.inline
+    def setRotationEnabled(value: RotationEnabledType): Self = this.set("RotationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationEnabled: Self = this.set("RotationEnabled", js.undefined)
+    @scala.inline
+    def setRotationLambdaARN(value: RotationLambdaARNType): Self = this.set("RotationLambdaARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationLambdaARN: Self = this.set("RotationLambdaARN", js.undefined)
+    @scala.inline
+    def setRotationRules(value: RotationRulesType): Self = this.set("RotationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationRules: Self = this.set("RotationRules", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setVersionIdsToStages(value: SecretVersionsToStagesMapType): Self = this.set("VersionIdsToStages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionIdsToStages: Self = this.set("VersionIdsToStages", js.undefined)
+  }
+  
 }
 

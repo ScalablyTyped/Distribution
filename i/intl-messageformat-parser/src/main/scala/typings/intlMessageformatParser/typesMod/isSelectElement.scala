@@ -4,9 +4,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("intl-messageformat-parser/lib/types", "isSelectElement")
+@JSImport("intl-messageformat-parser/lib/src/types", "isSelectElement")
 @js.native
 object isSelectElement extends js.Object {
-  def apply(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.SelectElement */ Boolean = js.native
+  def apply(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.SelectElement */ Boolean = js.native
 }
 

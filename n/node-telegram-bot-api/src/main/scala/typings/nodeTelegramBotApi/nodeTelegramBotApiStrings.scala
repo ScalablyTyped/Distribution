@@ -7,6 +7,7 @@ import typings.nodeTelegramBotApi.mod.DocumentMimeType
 import typings.nodeTelegramBotApi.mod.MessageEntityType
 import typings.nodeTelegramBotApi.mod.MessageType
 import typings.nodeTelegramBotApi.mod.ParseMode
+import typings.nodeTelegramBotApi.mod.PollType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -175,6 +176,9 @@ object nodeTelegramBotApiStrings {
   sealed trait pinned_message extends MessageType
   
   @js.native
+  sealed trait poll_answer extends js.Object
+  
+  @js.native
   sealed trait polling_error extends js.Object
   
   @js.native
@@ -187,6 +191,9 @@ object nodeTelegramBotApiStrings {
   sealed trait `private` extends ChatType
   
   @js.native
+  sealed trait quiz extends PollType
+  
+  @js.native
   sealed trait record_audio extends ChatAction
   
   @js.native
@@ -194,6 +201,9 @@ object nodeTelegramBotApiStrings {
   
   @js.native
   sealed trait record_video_note extends ChatAction
+  
+  @js.native
+  sealed trait regular extends PollType
   
   @js.native
   sealed trait restricted extends ChatMemberStatus
@@ -367,6 +377,8 @@ object nodeTelegramBotApiStrings {
   @scala.inline
   def pinned_message: pinned_message = "pinned_message".asInstanceOf[pinned_message]
   @scala.inline
+  def poll_answer: poll_answer = "poll_answer".asInstanceOf[poll_answer]
+  @scala.inline
   def polling_error: polling_error = "polling_error".asInstanceOf[polling_error]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
@@ -375,11 +387,15 @@ object nodeTelegramBotApiStrings {
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline
+  def quiz: quiz = "quiz".asInstanceOf[quiz]
+  @scala.inline
   def record_audio: record_audio = "record_audio".asInstanceOf[record_audio]
   @scala.inline
   def record_video: record_video = "record_video".asInstanceOf[record_video]
   @scala.inline
   def record_video_note: record_video_note = "record_video_note".asInstanceOf[record_video_note]
+  @scala.inline
+  def regular: regular = "regular".asInstanceOf[regular]
   @scala.inline
   def restricted: restricted = "restricted".asInstanceOf[restricted]
   @scala.inline

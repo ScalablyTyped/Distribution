@@ -11,8 +11,8 @@ an opinionated implementation of resque in node
 | Full name          | node-resque |
 | Keywords           | delayed, queue, resque, redis, work, worker, background, job, task |
 | # releases         | 20 |
-| # dependents       | 19 |
-| # downloads        | 264252 |
+| # dependents       | 18 |
+| # downloads        | 276381 |
 | # stars            | 11 |
 
 ## Links

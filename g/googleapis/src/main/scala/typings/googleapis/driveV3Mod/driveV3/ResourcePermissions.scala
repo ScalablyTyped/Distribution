@@ -33,6 +33,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaPermission] = js.native
   def create(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def create(params: ParamsResourcePermissionsCreate): GaxiosPromise[SchemaPermission] = js.native
   def create(params: ParamsResourcePermissionsCreate, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def create(
@@ -63,6 +64,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePermissionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePermissionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -93,6 +95,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaPermission] = js.native
   def get(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def get(params: ParamsResourcePermissionsGet): GaxiosPromise[SchemaPermission] = js.native
   def get(params: ParamsResourcePermissionsGet, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def get(
@@ -124,6 +127,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaPermissionList] = js.native
   def list(callback: BodyResponseCallback[SchemaPermissionList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermissionList] = js.native
   def list(params: ParamsResourcePermissionsList): GaxiosPromise[SchemaPermissionList] = js.native
   def list(params: ParamsResourcePermissionsList, callback: BodyResponseCallback[SchemaPermissionList]): Unit = js.native
   def list(
@@ -157,6 +161,7 @@ class ResourcePermissions protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaPermission] = js.native
   def update(callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPermission] = js.native
   def update(params: ParamsResourcePermissionsUpdate): GaxiosPromise[SchemaPermission] = js.native
   def update(params: ParamsResourcePermissionsUpdate, callback: BodyResponseCallback[SchemaPermission]): Unit = js.native
   def update(

@@ -4,14 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IColumn
   extends typings.extjs.Ext.grid.column.IColumn
 
 object IColumn {
   @scala.inline
-  def apply(IColumn: typings.extjs.Ext.grid.column.IColumn = null): IColumn = {
+  def apply(): IColumn = {
     val __obj = js.Dynamic.literal()
-    if (IColumn != null) js.Dynamic.global.Object.assign(__obj, IColumn)
     __obj.asInstanceOf[IColumn]
   }
 }

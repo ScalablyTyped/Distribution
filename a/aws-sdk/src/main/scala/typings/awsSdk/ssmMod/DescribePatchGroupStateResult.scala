@@ -46,28 +46,58 @@ trait DescribePatchGroupStateResult extends js.Object {
 
 object DescribePatchGroupStateResult {
   @scala.inline
-  def apply(
-    Instances: js.UndefOr[Integer] = js.undefined,
-    InstancesWithFailedPatches: js.UndefOr[Integer] = js.undefined,
-    InstancesWithInstalledOtherPatches: js.UndefOr[Integer] = js.undefined,
-    InstancesWithInstalledPatches: js.UndefOr[Integer] = js.undefined,
-    InstancesWithInstalledPendingRebootPatches: js.UndefOr[InstancesCount] = js.undefined,
-    InstancesWithInstalledRejectedPatches: js.UndefOr[InstancesCount] = js.undefined,
-    InstancesWithMissingPatches: js.UndefOr[Integer] = js.undefined,
-    InstancesWithNotApplicablePatches: js.UndefOr[Integer] = js.undefined,
-    InstancesWithUnreportedNotApplicablePatches: js.UndefOr[Integer] = js.undefined
-  ): DescribePatchGroupStateResult = {
+  def apply(): DescribePatchGroupStateResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Instances)) __obj.updateDynamic("Instances")(Instances.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithFailedPatches)) __obj.updateDynamic("InstancesWithFailedPatches")(InstancesWithFailedPatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithInstalledOtherPatches)) __obj.updateDynamic("InstancesWithInstalledOtherPatches")(InstancesWithInstalledOtherPatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithInstalledPatches)) __obj.updateDynamic("InstancesWithInstalledPatches")(InstancesWithInstalledPatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithInstalledPendingRebootPatches)) __obj.updateDynamic("InstancesWithInstalledPendingRebootPatches")(InstancesWithInstalledPendingRebootPatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithInstalledRejectedPatches)) __obj.updateDynamic("InstancesWithInstalledRejectedPatches")(InstancesWithInstalledRejectedPatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithMissingPatches)) __obj.updateDynamic("InstancesWithMissingPatches")(InstancesWithMissingPatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithNotApplicablePatches)) __obj.updateDynamic("InstancesWithNotApplicablePatches")(InstancesWithNotApplicablePatches.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstancesWithUnreportedNotApplicablePatches)) __obj.updateDynamic("InstancesWithUnreportedNotApplicablePatches")(InstancesWithUnreportedNotApplicablePatches.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePatchGroupStateResult]
   }
+  @scala.inline
+  implicit class DescribePatchGroupStateResultOps[Self <: DescribePatchGroupStateResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstances(value: Integer): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+    @scala.inline
+    def setInstancesWithFailedPatches(value: Integer): Self = this.set("InstancesWithFailedPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithFailedPatches: Self = this.set("InstancesWithFailedPatches", js.undefined)
+    @scala.inline
+    def setInstancesWithInstalledOtherPatches(value: Integer): Self = this.set("InstancesWithInstalledOtherPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithInstalledOtherPatches: Self = this.set("InstancesWithInstalledOtherPatches", js.undefined)
+    @scala.inline
+    def setInstancesWithInstalledPatches(value: Integer): Self = this.set("InstancesWithInstalledPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithInstalledPatches: Self = this.set("InstancesWithInstalledPatches", js.undefined)
+    @scala.inline
+    def setInstancesWithInstalledPendingRebootPatches(value: InstancesCount): Self = this.set("InstancesWithInstalledPendingRebootPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithInstalledPendingRebootPatches: Self = this.set("InstancesWithInstalledPendingRebootPatches", js.undefined)
+    @scala.inline
+    def setInstancesWithInstalledRejectedPatches(value: InstancesCount): Self = this.set("InstancesWithInstalledRejectedPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithInstalledRejectedPatches: Self = this.set("InstancesWithInstalledRejectedPatches", js.undefined)
+    @scala.inline
+    def setInstancesWithMissingPatches(value: Integer): Self = this.set("InstancesWithMissingPatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithMissingPatches: Self = this.set("InstancesWithMissingPatches", js.undefined)
+    @scala.inline
+    def setInstancesWithNotApplicablePatches(value: Integer): Self = this.set("InstancesWithNotApplicablePatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithNotApplicablePatches: Self = this.set("InstancesWithNotApplicablePatches", js.undefined)
+    @scala.inline
+    def setInstancesWithUnreportedNotApplicablePatches(value: Integer): Self = this.set("InstancesWithUnreportedNotApplicablePatches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstancesWithUnreportedNotApplicablePatches: Self = this.set("InstancesWithUnreportedNotApplicablePatches", js.undefined)
+  }
+  
 }
 

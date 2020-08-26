@@ -12,19 +12,19 @@ import scala.scalajs.js.annotation._
 trait ResourceHandler extends js.Object {
   /**
     * Optional function to perform any operations on a resource, that requires a dependency on its asset data
-    or any other asset data.
+    * or any other asset data.
     * @param asset - The asset to patch.
     * @param assets - The asset registry.
     */
   var patch: js.UndefOr[js.Function2[/* asset */ Asset, /* assets */ AssetRegistry, Unit]] = js.native
   /**
     * Load a resource from a remote URL. When loaded (or failed),
-    use the callback to return an the raw resource data (or error).
+    * use the callback to return an the raw resource data (or error).
     * @param url - Either the URL of the resource to load or a structure containing the
-    load and original URL.
+    * load and original URL.
     * @param [url.load] - The URL to be used for loading the resource.
     * @param [url.original] - The original URL to be used for identifying the resource
-    format. This is necessary when loading, for example from blob.
+    * format. This is necessary when loading, for example from blob.
     * @param callback - The callback used when the resource is loaded or an error occurs.
     * @param [asset] - Optional asset that is passed by ResourceLoader.
     */

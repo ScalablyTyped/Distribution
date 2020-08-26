@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 object activationOptions
   extends TopLevel[
       js.Array[
-        elu_ | hard_sigmoid | linear | relu_ | relu6 | selu | sigmoid | softmax_ | softplus | softsign | tanh
+        linear | relu_ | elu_ | relu6 | sigmoid | softplus | tanh | softmax_ | selu | hard_sigmoid | softsign
       ]
     ]
 

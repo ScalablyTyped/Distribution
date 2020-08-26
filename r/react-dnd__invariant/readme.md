@@ -11,8 +11,8 @@ invariantx
 | Full name          | @react-dnd/invariant |
 | Keywords           | test, invariant |
 | # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 290931 |
+| # dependents       | 4 |
+| # downloads        | 2455303 |
 | # stars            | 0 |
 
 ## Links

@@ -17,7 +17,7 @@ trait Modal_ extends js.Object {
   def confirm(message: String, options: UIkitModalOptions): js.Promise[Unit] = js.native
   def dialog(content: String): js.Promise[Unit] = js.native
   def dialog(content: String, options: UIkitModalOptions): js.Promise[Unit] = js.native
-  def prompt(content: String, value: String): js.Promise[Unit] = js.native
-  def prompt(content: String, value: String, options: UIkitModalOptions): js.Promise[Unit] = js.native
+  def prompt(content: String, value: String): js.Promise[String | Null] = js.native
+  def prompt(content: String, value: String, options: UIkitModalOptions): js.Promise[String | Null] = js.native
 }
 

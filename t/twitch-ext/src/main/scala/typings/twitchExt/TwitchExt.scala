@@ -94,7 +94,7 @@ trait TwitchExt extends js.Object {
     contextCallback: js.Function2[
       /* context */ PartialTwitchExtContext, 
       /* changed */ js.Array[
-        /* keyof twitch-ext.anon.PartialTwitchExtContext */ isPaused | bufferSize | isTheatreMode | isMuted | isFullScreen | hlsLatencyBroadcaster | volume | videoResolution | displayResolution | playbackMode | mode | arePlayerControlsVisible | hostingInfo | bitrate | game | language | theme
+        /* keyof twitch-ext.anon.PartialTwitchExtContext */ playbackMode | videoResolution | hostingInfo | isFullScreen | volume | isTheatreMode | theme | hlsLatencyBroadcaster | arePlayerControlsVisible | language | bitrate | isPaused | bufferSize | displayResolution | mode | game | isMuted
       ], 
       Unit
     ]

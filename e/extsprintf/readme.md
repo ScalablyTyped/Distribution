@@ -10,9 +10,9 @@ extended POSIX-style sprintf
 | ------------------ | :-------------: |
 | Full name          | extsprintf |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 103 |
-| # downloads        | 740460503 |
+| # releases         | 1 |
+| # dependents       | 102 |
+| # downloads        | 768367516 |
 | # stars            | 2 |
 
 ## Links

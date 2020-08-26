@@ -12,7 +12,7 @@ This is the Kii Cloud SDK
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 1193 |
+| # downloads        | 1230 |
 | # stars            | 1 |
 
 ## Links

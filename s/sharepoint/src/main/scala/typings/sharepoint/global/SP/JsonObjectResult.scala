@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SP.JsonObjectResult")
 @js.native
 class JsonObjectResult ()
-  extends typings.sharepoint.SP.JsonObjectResult {
-  /* CompleteClass */
-  override def get_value(): js.Any = js.native
-}
+  extends typings.sharepoint.SP.JsonObjectResult
 

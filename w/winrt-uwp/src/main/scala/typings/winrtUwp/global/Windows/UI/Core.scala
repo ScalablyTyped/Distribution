@@ -1,11 +1,7 @@
 package typings.winrtUwp.global.Windows.UI
 
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
-import typings.winrtUwp.Windows.Foundation.Point
 import typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationEffect
 import typings.winrtUwp.Windows.UI.Core.AnimationMetrics.AnimationEffectTarget
-import typings.winrtUwp.Windows.UI.Core.AnimationMetrics.IPropertyAnimation
-import typings.winrtUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimationType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -16,11 +12,7 @@ object Core extends js.Object {
   /** Provides event data for the SystemNavigationManager.BackRequested event. */
   @js.native
   abstract class BackRequestedEventArgs ()
-    extends typings.winrtUwp.Windows.UI.Core.BackRequestedEventArgs {
-    /** Gets or sets a value that indicates whether the app performed the requested back-navigation. */
-    /* CompleteClass */
-    override var handled: Boolean = js.native
-  }
+    extends typings.winrtUwp.Windows.UI.Core.BackRequestedEventArgs
   
   /** Provides a way for an app to respond to system provided back-navigation events. */
   @js.native
@@ -40,127 +32,27 @@ object Core extends js.Object {
         * @param target The target of the animation effect.
         */
       def this(effect: AnimationEffect, target: AnimationEffectTarget) = this()
-      /** Gets the collection of animations that are associated with the AnimationDescription object. */
-      /* CompleteClass */
-      override var animations: IVectorView[IPropertyAnimation] = js.native
-      /** Gets the maximum cumulative delay time for the animation to be applied to the collection of objects in a target. */
-      /* CompleteClass */
-      override var delayLimit: Double = js.native
-      /** Gets the amount of time between the application of the animation effect to each object in a target that contains multiple objects. The StaggerDelay, together with the StaggerDelayFactor and DelayLimit, is one of the three elements used to control the relative timing of the animation effects. */
-      /* CompleteClass */
-      override var staggerDelay: Double = js.native
-      /** Gets a multiplier that is applied to each occurrence of the stagger delay, increasing or decreasing the previous delay instance by that amount. */
-      /* CompleteClass */
-      override var staggerDelayFactor: Double = js.native
-      /** Gets the z-order position of an AnimationDescription object relative to other AnimationDescription objects in the same animation effect. AnimationDescription objects with a higher z-order cover transitions with a lower z-order. */
-      /* CompleteClass */
-      override var zorder: Double = js.native
     }
     
     /** Provides methods that enable you to retrieve the parameters of an opacity (fade in or fade out) animation. */
     @js.native
     abstract class OpacityAnimation ()
-      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.OpacityAnimation {
-      /** Gets the location of the first control point for the cubic Bézier curve that describes how the opacity should animate over time. */
-      /* CompleteClass */
-      override var control1: Point = js.native
-      /** Gets the location of the second control point for the cubic Bézier curve that describes how the opacity should animate over time. */
-      /* CompleteClass */
-      override var control2: Point = js.native
-      /** Gets the amount of time between when the opacity animation is instructed to begin and when that animation actually begins to draw. */
-      /* CompleteClass */
-      override var delay: Double = js.native
-      /** Gets the amount of time over which the opacity animation should be performed. This does not include the delay. */
-      /* CompleteClass */
-      override var duration: Double = js.native
-      /** Gets the object's final opacity. */
-      /* CompleteClass */
-      override var finalOpacity: Double = js.native
-      /** Gets the object's initial opacity. */
-      /* CompleteClass */
-      override var initialOpacity: Double = js.native
-      /** Gets the type of animation represented by this object. */
-      /* CompleteClass */
-      override var `type`: PropertyAnimationType = js.native
-    }
+      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.OpacityAnimation
     
     /** Provides methods that enable you to retrieve animation property values that are common to all property animation types . */
     @js.native
     abstract class PropertyAnimation ()
-      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimation {
-      /** Gets the location of the first control point for the cubic Bézier curve that describes how this property of this object should animate over time. */
-      /* CompleteClass */
-      override var control1: Point = js.native
-      /** Gets the location of the second control point for the cubic Bézier curve that describes how this property of this object should animate over time. */
-      /* CompleteClass */
-      override var control2: Point = js.native
-      /** Gets the amount of time between when the animation is instructed to begin and when that animation actually begins to draw. */
-      /* CompleteClass */
-      override var delay: Double = js.native
-      /** Gets the amount of time over which the animation should be performed. This does not include the delay. */
-      /* CompleteClass */
-      override var duration: Double = js.native
-      /** Gets the type of animation represented by this object. */
-      /* CompleteClass */
-      override var `type`: PropertyAnimationType = js.native
-    }
+      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.PropertyAnimation
     
     /** Provides methods that enable you to retrieve the parameters for a scaling (growing or shrinking) animation. */
     @js.native
     abstract class ScaleAnimation ()
-      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.ScaleAnimation {
-      /** Gets the location of the first control point for the cubic Bézier curve that describes how the scale should animate over time. */
-      /* CompleteClass */
-      override var control1: Point = js.native
-      /** Gets the location of the second control point for the cubic Bézier curve that describes how the scale should animate over time. */
-      /* CompleteClass */
-      override var control2: Point = js.native
-      /** Gets the amount of time between when the scale animation is instructed to begin and when that animation actually begins to draw. */
-      /* CompleteClass */
-      override var delay: Double = js.native
-      /** Gets the amount of time over which the scale animation should be performed. This does not include the delay. */
-      /* CompleteClass */
-      override var duration: Double = js.native
-      /** Gets the final horizontal scale factor for the object. */
-      /* CompleteClass */
-      override var finalScaleX: Double = js.native
-      /** Gets the final vertical scale factor for the object. */
-      /* CompleteClass */
-      override var finalScaleY: Double = js.native
-      /** Gets the initial horizontal scale factor for the object. */
-      /* CompleteClass */
-      override var initialScaleX: Double = js.native
-      /** Gets the initial vertical scale factor for the object. */
-      /* CompleteClass */
-      override var initialScaleY: Double = js.native
-      /** Gets the center point for the scaling animation, expressed as a point relative to the object's normal size. */
-      /* CompleteClass */
-      override var normalizedOrigin: Point = js.native
-      /** Gets the type of animation represented by this object. */
-      /* CompleteClass */
-      override var `type`: PropertyAnimationType = js.native
-    }
+      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.ScaleAnimation
     
     /** Provides methods that enable you to retrieve the parameters for a translation (move to a new location) animation. */
     @js.native
     abstract class TranslationAnimation ()
-      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.TranslationAnimation {
-      /** Gets the location of the first control point for the cubic Bézier curve that describes how the translation should animate over time. */
-      /* CompleteClass */
-      override var control1: Point = js.native
-      /** Gets the location of the second control point for the cubic Bézier curve that describes how the translation should animate over time. */
-      /* CompleteClass */
-      override var control2: Point = js.native
-      /** Gets the amount of time between when the translation animation is instructed to begin and when that animation actually begins to draw. */
-      /* CompleteClass */
-      override var delay: Double = js.native
-      /** Gets the amount of time over which the translation animation should be performed. This does not include the delay. */
-      /* CompleteClass */
-      override var duration: Double = js.native
-      /** Gets the type of animation represented by this object. */
-      /* CompleteClass */
-      override var `type`: PropertyAnimationType = js.native
-    }
+      extends typings.winrtUwp.Windows.UI.Core.AnimationMetrics.TranslationAnimation
     
     /** Specifies an animation. */
     @js.native

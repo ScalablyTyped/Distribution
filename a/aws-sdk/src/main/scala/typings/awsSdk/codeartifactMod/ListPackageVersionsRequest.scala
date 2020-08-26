@@ -51,27 +51,55 @@ trait ListPackageVersionsRequest extends js.Object {
 
 object ListPackageVersionsRequest {
   @scala.inline
-  def apply(
-    _package: PackageName,
-    domain: DomainName,
-    format: PackageFormat,
-    repository: RepositoryName,
-    domainOwner: AccountId = null,
-    maxResults: js.UndefOr[ListPackageVersionsMaxResults] = js.undefined,
-    namespace: PackageNamespace = null,
-    nextToken: PaginationToken = null,
-    sortBy: PackageVersionSortType = null,
-    status: PackageVersionStatus = null
-  ): ListPackageVersionsRequest = {
+  def apply(_package: PackageName, domain: DomainName, format: PackageFormat, repository: RepositoryName): ListPackageVersionsRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (domainOwner != null) __obj.updateDynamic("domainOwner")(domainOwner.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPackageVersionsRequest]
   }
+  @scala.inline
+  implicit class ListPackageVersionsRequestOps[Self <: ListPackageVersionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: PackageName): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomain(value: DomainName): Self = this.set("domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: PackageFormat): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepository(value: RepositoryName): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainOwner(value: AccountId): Self = this.set("domainOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainOwner: Self = this.set("domainOwner", js.undefined)
+    @scala.inline
+    def setMaxResults(value: ListPackageVersionsMaxResults): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNamespace(value: PackageNamespace): Self = this.set("namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespace: Self = this.set("namespace", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setSortBy(value: PackageVersionSortType): Self = this.set("sortBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortBy: Self = this.set("sortBy", js.undefined)
+    @scala.inline
+    def setStatus(value: PackageVersionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

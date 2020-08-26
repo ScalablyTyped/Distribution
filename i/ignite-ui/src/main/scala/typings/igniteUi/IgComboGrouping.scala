@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgComboGrouping
   extends /**
   * Option for JSONPDataSourceSettings
@@ -18,26 +19,40 @@ trait IgComboGrouping
     * "asc"
     * "desc"
     */
-  var dir: js.UndefOr[String] = js.undefined
+  var dir: js.UndefOr[String] = js.native
   /**
     * Gets/Sets name of column by which the records will be grouped. Setting this option enables the grouping.
     *
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
 }
 
 object IgComboGrouping {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    dir: String = null,
-    key: String = null
-  ): IgComboGrouping = {
+  def apply(): IgComboGrouping = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboGrouping]
   }
+  @scala.inline
+  implicit class IgComboGroupingOps[Self <: IgComboGrouping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+  }
+  
 }
 

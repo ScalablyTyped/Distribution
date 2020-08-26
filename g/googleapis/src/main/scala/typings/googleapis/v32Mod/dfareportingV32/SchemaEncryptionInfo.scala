@@ -33,18 +33,38 @@ trait SchemaEncryptionInfo extends js.Object {
 
 object SchemaEncryptionInfo {
   @scala.inline
-  def apply(
-    encryptionEntityId: String = null,
-    encryptionEntityType: String = null,
-    encryptionSource: String = null,
-    kind: String = null
-  ): SchemaEncryptionInfo = {
+  def apply(): SchemaEncryptionInfo = {
     val __obj = js.Dynamic.literal()
-    if (encryptionEntityId != null) __obj.updateDynamic("encryptionEntityId")(encryptionEntityId.asInstanceOf[js.Any])
-    if (encryptionEntityType != null) __obj.updateDynamic("encryptionEntityType")(encryptionEntityType.asInstanceOf[js.Any])
-    if (encryptionSource != null) __obj.updateDynamic("encryptionSource")(encryptionSource.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEncryptionInfo]
   }
+  @scala.inline
+  implicit class SchemaEncryptionInfoOps[Self <: SchemaEncryptionInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionEntityId(value: String): Self = this.set("encryptionEntityId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionEntityId: Self = this.set("encryptionEntityId", js.undefined)
+    @scala.inline
+    def setEncryptionEntityType(value: String): Self = this.set("encryptionEntityType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionEntityType: Self = this.set("encryptionEntityType", js.undefined)
+    @scala.inline
+    def setEncryptionSource(value: String): Self = this.set("encryptionSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionSource: Self = this.set("encryptionSource", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+  }
+  
 }
 

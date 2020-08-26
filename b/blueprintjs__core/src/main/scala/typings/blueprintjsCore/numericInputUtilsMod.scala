@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object numericInputUtilsMod extends js.Object {
   def clampValue(value: Double): Double = js.native
+  def clampValue(value: Double, min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def clampValue(value: Double, min: Double): Double = js.native
   def clampValue(value: Double, min: Double, max: Double): Double = js.native
   def getValueOrEmptyValue(): String = js.native

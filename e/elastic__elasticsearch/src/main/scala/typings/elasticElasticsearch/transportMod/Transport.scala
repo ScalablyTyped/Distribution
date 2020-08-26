@@ -28,6 +28,11 @@ trait Transport extends js.Object {
   def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
   def getConnection(opts: TransportGetConnectionOptions): typings.elasticElasticsearch.connectionMod.default | Null = js.native
   def request(params: TransportRequestParams): js.Promise[ApiResponse[Record[String, _], _]] = js.native
+  def request(
+    params: TransportRequestParams,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ ApiError, /* result */ ApiResponse[Record[String, _], _], Unit]
+  ): TransportRequestCallback = js.native
   def request(params: TransportRequestParams, options: TransportRequestOptions): js.Promise[ApiResponse[Record[String, _], _]] = js.native
   def request(
     params: TransportRequestParams,
@@ -39,6 +44,7 @@ trait Transport extends js.Object {
   @JSName("request")
   def request_TransportRequestCallback(params: TransportRequestParams, options: TransportRequestOptions): TransportRequestCallback = js.native
   def sniff(): Unit = js.native
+  def sniff(opts: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def sniff(opts: TransportSniffOptions): Unit = js.native
   def sniff(opts: TransportSniffOptions, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
 }

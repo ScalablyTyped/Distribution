@@ -41,9 +41,9 @@ trait GraphQLApiState extends js.Object {
     */
   val schema: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * Map of URIs associated with the API. e.g. `uris["GRAPHQL"] = https://ID.appsync-api.REGION.amazonaws.com/graphql`
     */
@@ -60,32 +60,68 @@ trait GraphQLApiState extends js.Object {
 
 object GraphQLApiState {
   @scala.inline
-  def apply(
-    additionalAuthenticationProviders: Input[js.Array[Input[GraphQLApiAdditionalAuthenticationProvider]]] = null,
-    arn: Input[String] = null,
-    authenticationType: Input[String] = null,
-    logConfig: Input[GraphQLApiLogConfig] = null,
-    name: Input[String] = null,
-    openidConnectConfig: Input[GraphQLApiOpenidConnectConfig] = null,
-    schema: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    uris: Input[StringDictionary[Input[String]]] = null,
-    userPoolConfig: Input[GraphQLApiUserPoolConfig] = null,
-    xrayEnabled: Input[Boolean] = null
-  ): GraphQLApiState = {
+  def apply(): GraphQLApiState = {
     val __obj = js.Dynamic.literal()
-    if (additionalAuthenticationProviders != null) __obj.updateDynamic("additionalAuthenticationProviders")(additionalAuthenticationProviders.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
-    if (logConfig != null) __obj.updateDynamic("logConfig")(logConfig.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (openidConnectConfig != null) __obj.updateDynamic("openidConnectConfig")(openidConnectConfig.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
-    if (userPoolConfig != null) __obj.updateDynamic("userPoolConfig")(userPoolConfig.asInstanceOf[js.Any])
-    if (xrayEnabled != null) __obj.updateDynamic("xrayEnabled")(xrayEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLApiState]
   }
+  @scala.inline
+  implicit class GraphQLApiStateOps[Self <: GraphQLApiState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalAuthenticationProvidersVarargs(value: Input[GraphQLApiAdditionalAuthenticationProvider]*): Self = this.set("additionalAuthenticationProviders", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalAuthenticationProviders(value: Input[js.Array[Input[GraphQLApiAdditionalAuthenticationProvider]]]): Self = this.set("additionalAuthenticationProviders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalAuthenticationProviders: Self = this.set("additionalAuthenticationProviders", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAuthenticationType(value: Input[String]): Self = this.set("authenticationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationType: Self = this.set("authenticationType", js.undefined)
+    @scala.inline
+    def setLogConfig(value: Input[GraphQLApiLogConfig]): Self = this.set("logConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogConfig: Self = this.set("logConfig", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOpenidConnectConfig(value: Input[GraphQLApiOpenidConnectConfig]): Self = this.set("openidConnectConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenidConnectConfig: Self = this.set("openidConnectConfig", js.undefined)
+    @scala.inline
+    def setSchema(value: Input[String]): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setUris(value: Input[StringDictionary[Input[String]]]): Self = this.set("uris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUris: Self = this.set("uris", js.undefined)
+    @scala.inline
+    def setUserPoolConfig(value: Input[GraphQLApiUserPoolConfig]): Self = this.set("userPoolConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolConfig: Self = this.set("userPoolConfig", js.undefined)
+    @scala.inline
+    def setXrayEnabled(value: Input[Boolean]): Self = this.set("xrayEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXrayEnabled: Self = this.set("xrayEnabled", js.undefined)
+  }
+  
 }
 

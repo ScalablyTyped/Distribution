@@ -1,5 +1,6 @@
 package typings.jestConfig.utilsMod
 
+import typings.jestTypes.configMod.Path
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -7,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jest-config/build/utils", "replaceRootDirInPath")
 @js.native
 object replaceRootDirInPath extends js.Object {
-  def apply(rootDir: String, filePath: String): String = js.native
+  def apply(rootDir: Path, filePath: Path): String = js.native
 }
 

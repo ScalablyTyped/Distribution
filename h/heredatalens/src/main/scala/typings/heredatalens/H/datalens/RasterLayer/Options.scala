@@ -15,12 +15,13 @@ import scala.scalajs.js.annotation._
   * To collect the rows for a tile including buffer, the rows must be translated to RasterLayer.TilePoint.
   * This translation must be specified with the rowToTilePoint callback. The final rendering on the tile canvas must be defined in renderTile.
   */
+@js.native
 trait Options extends js.Object {
   /**
     * The buffer is a value (in pixels) that defines an extra area around each tile to capture data points from.
     * This is done to avoid drawing edges between tiles. For example, if data points represented with circles with a maximum radius of 10 pixels, then the buffer must be 10 pixels.
     */
-  var buffer: js.UndefOr[js.Function1[/* zoom */ Zoom, Double]] = js.undefined
+  var buffer: js.UndefOr[js.Function1[/* zoom */ Zoom, Double]] = js.native
   /** Defines how the input tile data is split by rows. You can specify this callback to define client-side aggregation and filtering. This callback is called for each tile. */
   var dataToRows: js.UndefOr[
     js.Function4[
@@ -30,7 +31,7 @@ trait Options extends js.Object {
       /* zoom */ Zoom, 
       js.Array[Row]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * Defines how tile data is represented on a canvas. Input points for each tile are collected with respect to the buffer.
     * For progressive rendering this callback may be called more than once for the tile.
@@ -42,25 +43,47 @@ trait Options extends js.Object {
       /* zoom */ Zoom, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** Defines how the row is translated to the RasterLayer.TilePoint. This callback is called for each row that is returned from dataToRows. */
-  var rowToTilePoint: js.UndefOr[js.Function3[/* row */ Row, /* x */ X, /* y */ Y, TilePoint]] = js.undefined
+  var rowToTilePoint: js.UndefOr[js.Function3[/* row */ Row, /* x */ X, /* y */ Y, TilePoint]] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    buffer: /* zoom */ Zoom => Double = null,
-    dataToRows: (/* data */ Data, /* x */ typings.heredatalens.H.datalens.QueryTileProvider.X, /* y */ typings.heredatalens.H.datalens.QueryTileProvider.Y, /* zoom */ Zoom) => js.Array[Row] = null,
-    renderTile: (/* points */ js.Array[TilePoint], /* canvas */ HTMLCanvasElement, /* zoom */ Zoom) => Unit = null,
-    rowToTilePoint: (/* row */ Row, /* x */ X, /* y */ Y) => TilePoint = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (buffer != null) __obj.updateDynamic("buffer")(js.Any.fromFunction1(buffer))
-    if (dataToRows != null) __obj.updateDynamic("dataToRows")(js.Any.fromFunction4(dataToRows))
-    if (renderTile != null) __obj.updateDynamic("renderTile")(js.Any.fromFunction3(renderTile))
-    if (rowToTilePoint != null) __obj.updateDynamic("rowToTilePoint")(js.Any.fromFunction3(rowToTilePoint))
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuffer(value: /* zoom */ Zoom => Double): Self = this.set("buffer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBuffer: Self = this.set("buffer", js.undefined)
+    @scala.inline
+    def setDataToRows(
+      value: (/* data */ Data, /* x */ typings.heredatalens.H.datalens.QueryTileProvider.X, /* y */ typings.heredatalens.H.datalens.QueryTileProvider.Y, /* zoom */ Zoom) => js.Array[Row]
+    ): Self = this.set("dataToRows", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteDataToRows: Self = this.set("dataToRows", js.undefined)
+    @scala.inline
+    def setRenderTile(value: (/* points */ js.Array[TilePoint], /* canvas */ HTMLCanvasElement, /* zoom */ Zoom) => Unit): Self = this.set("renderTile", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRenderTile: Self = this.set("renderTile", js.undefined)
+    @scala.inline
+    def setRowToTilePoint(value: (/* row */ Row, /* x */ X, /* y */ Y) => TilePoint): Self = this.set("rowToTilePoint", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRowToTilePoint: Self = this.set("rowToTilePoint", js.undefined)
+  }
+  
 }
 

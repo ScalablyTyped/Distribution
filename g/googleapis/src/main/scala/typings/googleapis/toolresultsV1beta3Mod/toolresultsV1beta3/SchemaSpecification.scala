@@ -17,10 +17,26 @@ trait SchemaSpecification extends js.Object {
 
 object SchemaSpecification {
   @scala.inline
-  def apply(androidTest: SchemaAndroidTest = null): SchemaSpecification = {
+  def apply(): SchemaSpecification = {
     val __obj = js.Dynamic.literal()
-    if (androidTest != null) __obj.updateDynamic("androidTest")(androidTest.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpecification]
   }
+  @scala.inline
+  implicit class SchemaSpecificationOps[Self <: SchemaSpecification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidTest(value: SchemaAndroidTest): Self = this.set("androidTest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidTest: Self = this.set("androidTest", js.undefined)
+  }
+  
 }
 

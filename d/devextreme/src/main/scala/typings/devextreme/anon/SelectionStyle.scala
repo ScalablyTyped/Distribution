@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SelectionStyle extends js.Object {
-  var border: js.UndefOr[ColorWidth] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var hoverStyle: js.UndefOr[BorderColorWidth] = js.undefined
-  var label: js.UndefOr[WordWrap] = js.undefined
-  var selectionStyle: js.UndefOr[BorderColorWidth] = js.undefined
+  var border: js.UndefOr[ColorWidth] = js.native
+  var color: js.UndefOr[String] = js.native
+  var hoverStyle: js.UndefOr[`26`] = js.native
+  var label: js.UndefOr[WordWrap] = js.native
+  var selectionStyle: js.UndefOr[`26`] = js.native
 }
 
 object SelectionStyle {
   @scala.inline
-  def apply(
-    border: ColorWidth = null,
-    color: String = null,
-    hoverStyle: BorderColorWidth = null,
-    label: WordWrap = null,
-    selectionStyle: BorderColorWidth = null
-  ): SelectionStyle = {
+  def apply(): SelectionStyle = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionStyle]
   }
+  @scala.inline
+  implicit class SelectionStyleOps[Self <: SelectionStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorder(value: ColorWidth): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setHoverStyle(value: `26`): Self = this.set("hoverStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverStyle: Self = this.set("hoverStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: WordWrap): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setSelectionStyle(value: `26`): Self = this.set("selectionStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionStyle: Self = this.set("selectionStyle", js.undefined)
+  }
+  
 }
 

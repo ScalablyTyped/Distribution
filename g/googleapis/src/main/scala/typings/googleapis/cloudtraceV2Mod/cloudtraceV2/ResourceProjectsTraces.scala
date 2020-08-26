@@ -30,6 +30,7 @@ class ResourceProjectsTraces protected () extends js.Object {
     */
   def batchWrite(): GaxiosPromise[SchemaEmpty] = js.native
   def batchWrite(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def batchWrite(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def batchWrite(params: ParamsResourceProjectsTracesBatchwrite): GaxiosPromise[SchemaEmpty] = js.native
   def batchWrite(params: ParamsResourceProjectsTracesBatchwrite, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def batchWrite(

@@ -10,9 +10,9 @@ A simple yet functional GraphQL client.
 | ------------------ | :-------------: |
 | Full name          | apollo-client |
 | Keywords           | ecmascript, es2015, jsnext, javascript, relay, npm, react |
-| # releases         | 100 |
-| # dependents       | 671 |
-| # downloads        | 39459585 |
+| # releases         | 103 |
+| # dependents       | 693 |
+| # downloads        | 40769196 |
 | # stars            | 14 |
 
 ## Links

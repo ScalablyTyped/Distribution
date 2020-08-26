@@ -29,8 +29,8 @@ class ExposedAttribute protected () extends ExposedMember {
   @JSName("model")
   var model_FExposedAttribute: IModel = js.native
   def attribute: IAttribute = js.native
-  def attribute(newValue: IAttribute): js.Any = js.native
   def attributeQualifiedName: String = js.native
+  def attribute_=(newValue: IAttribute): Unit = js.native
 }
 
 /* static members */

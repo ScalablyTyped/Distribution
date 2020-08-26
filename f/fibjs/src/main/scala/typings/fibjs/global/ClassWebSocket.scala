@@ -20,6 +20,7 @@ class ClassWebSocket protected ()
     */
   def this(url: String) = this()
   def this(url: String, protocol: String) = this()
+  def this(url: String, protocol: js.UndefOr[scala.Nothing], origin: String) = this()
   def this(url: String, protocol: String, origin: String) = this()
 }
 

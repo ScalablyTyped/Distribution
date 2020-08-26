@@ -12,7 +12,7 @@ Debounce middleware for Redux
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 15 |
-| # downloads        | 581175 |
+| # downloads        | 582002 |
 | # stars            | 1 |
 
 ## Links

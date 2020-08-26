@@ -105,8 +105,39 @@ object Structs extends js.Object {
   class Size ()
     extends typings.phaser.Phaser.Structs.Size {
     def this(width: Double) = this()
+    def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(width: Double, height: Double) = this()
+    def this(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], aspectMode: integer) = this()
+    def this(width: js.UndefOr[scala.Nothing], height: Double, aspectMode: integer) = this()
+    def this(width: Double, height: js.UndefOr[scala.Nothing], aspectMode: integer) = this()
     def this(width: Double, height: Double, aspectMode: integer) = this()
+    def this(
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      aspectMode: js.UndefOr[scala.Nothing],
+      parent: js.Any
+    ) = this()
+    def this(
+      width: js.UndefOr[scala.Nothing],
+      height: js.UndefOr[scala.Nothing],
+      aspectMode: integer,
+      parent: js.Any
+    ) = this()
+    def this(
+      width: js.UndefOr[scala.Nothing],
+      height: Double,
+      aspectMode: js.UndefOr[scala.Nothing],
+      parent: js.Any
+    ) = this()
+    def this(width: js.UndefOr[scala.Nothing], height: Double, aspectMode: integer, parent: js.Any) = this()
+    def this(
+      width: Double,
+      height: js.UndefOr[scala.Nothing],
+      aspectMode: js.UndefOr[scala.Nothing],
+      parent: js.Any
+    ) = this()
+    def this(width: Double, height: js.UndefOr[scala.Nothing], aspectMode: integer, parent: js.Any) = this()
+    def this(width: Double, height: Double, aspectMode: js.UndefOr[scala.Nothing], parent: js.Any) = this()
     def this(width: Double, height: Double, aspectMode: integer, parent: js.Any) = this()
   }
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stellar-base" : "2.1.9"
+      "stellar-base" : "3.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "stellar-base" : "2.1.9"
+      "stellar-base" : "3.0.4"
     }
   ],
   "compile-devDependencies" : [

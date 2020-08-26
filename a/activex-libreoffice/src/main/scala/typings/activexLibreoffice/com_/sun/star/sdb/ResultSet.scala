@@ -24,6 +24,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** extends the {@link com.sun.star.sdbcx.ResultSet} by a more sophisticated access to the result sets data. */
+@js.native
 trait ResultSet
   extends typings.activexLibreoffice.com_.sun.star.sdbcx.ResultSet
      with XColumnsSupplier

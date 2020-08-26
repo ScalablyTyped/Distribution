@@ -45,22 +45,50 @@ trait SchemaPlayerScoreResponse extends js.Object {
 
 object SchemaPlayerScoreResponse {
   @scala.inline
-  def apply(
-    beatenScoreTimeSpans: js.Array[String] = null,
-    formattedScore: String = null,
-    kind: String = null,
-    leaderboardId: String = null,
-    scoreTag: String = null,
-    unbeatenScores: js.Array[SchemaPlayerScore] = null
-  ): SchemaPlayerScoreResponse = {
+  def apply(): SchemaPlayerScoreResponse = {
     val __obj = js.Dynamic.literal()
-    if (beatenScoreTimeSpans != null) __obj.updateDynamic("beatenScoreTimeSpans")(beatenScoreTimeSpans.asInstanceOf[js.Any])
-    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (leaderboardId != null) __obj.updateDynamic("leaderboardId")(leaderboardId.asInstanceOf[js.Any])
-    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag.asInstanceOf[js.Any])
-    if (unbeatenScores != null) __obj.updateDynamic("unbeatenScores")(unbeatenScores.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlayerScoreResponse]
   }
+  @scala.inline
+  implicit class SchemaPlayerScoreResponseOps[Self <: SchemaPlayerScoreResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBeatenScoreTimeSpansVarargs(value: String*): Self = this.set("beatenScoreTimeSpans", js.Array(value :_*))
+    @scala.inline
+    def setBeatenScoreTimeSpans(value: js.Array[String]): Self = this.set("beatenScoreTimeSpans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeatenScoreTimeSpans: Self = this.set("beatenScoreTimeSpans", js.undefined)
+    @scala.inline
+    def setFormattedScore(value: String): Self = this.set("formattedScore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormattedScore: Self = this.set("formattedScore", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLeaderboardId(value: String): Self = this.set("leaderboardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaderboardId: Self = this.set("leaderboardId", js.undefined)
+    @scala.inline
+    def setScoreTag(value: String): Self = this.set("scoreTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScoreTag: Self = this.set("scoreTag", js.undefined)
+    @scala.inline
+    def setUnbeatenScoresVarargs(value: SchemaPlayerScore*): Self = this.set("unbeatenScores", js.Array(value :_*))
+    @scala.inline
+    def setUnbeatenScores(value: js.Array[SchemaPlayerScore]): Self = this.set("unbeatenScores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnbeatenScores: Self = this.set("unbeatenScores", js.undefined)
+  }
+  
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "StylesCompileDependency")
 @js.native
 class StylesCompileDependency protected ()
-  extends typings.angularCompiler.publicApiMod.StylesCompileDependency {
+  extends typings.angularCompiler.compilerMod.StylesCompileDependency {
   def this(name: String, moduleUrl: String, setValue: js.Function1[/* value */ js.Any, Unit]) = this()
 }
 

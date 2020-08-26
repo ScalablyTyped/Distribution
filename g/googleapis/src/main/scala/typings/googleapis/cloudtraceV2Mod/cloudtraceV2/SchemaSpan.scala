@@ -91,36 +91,74 @@ trait SchemaSpan extends js.Object {
 
 object SchemaSpan {
   @scala.inline
-  def apply(
-    attributes: SchemaAttributes = null,
-    childSpanCount: js.UndefOr[Double] = js.undefined,
-    displayName: SchemaTruncatableString = null,
-    endTime: String = null,
-    links: SchemaLinks = null,
-    name: String = null,
-    parentSpanId: String = null,
-    sameProcessAsParentSpan: js.UndefOr[Boolean] = js.undefined,
-    spanId: String = null,
-    stackTrace: SchemaStackTrace = null,
-    startTime: String = null,
-    status: SchemaStatus = null,
-    timeEvents: SchemaTimeEvents = null
-  ): SchemaSpan = {
+  def apply(): SchemaSpan = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(childSpanCount)) __obj.updateDynamic("childSpanCount")(childSpanCount.get.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentSpanId != null) __obj.updateDynamic("parentSpanId")(parentSpanId.asInstanceOf[js.Any])
-    if (!js.isUndefined(sameProcessAsParentSpan)) __obj.updateDynamic("sameProcessAsParentSpan")(sameProcessAsParentSpan.get.asInstanceOf[js.Any])
-    if (spanId != null) __obj.updateDynamic("spanId")(spanId.asInstanceOf[js.Any])
-    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (timeEvents != null) __obj.updateDynamic("timeEvents")(timeEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpan]
   }
+  @scala.inline
+  implicit class SchemaSpanOps[Self <: SchemaSpan] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: SchemaAttributes): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setChildSpanCount(value: Double): Self = this.set("childSpanCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildSpanCount: Self = this.set("childSpanCount", js.undefined)
+    @scala.inline
+    def setDisplayName(value: SchemaTruncatableString): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setLinks(value: SchemaLinks): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParentSpanId(value: String): Self = this.set("parentSpanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentSpanId: Self = this.set("parentSpanId", js.undefined)
+    @scala.inline
+    def setSameProcessAsParentSpan(value: Boolean): Self = this.set("sameProcessAsParentSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSameProcessAsParentSpan: Self = this.set("sameProcessAsParentSpan", js.undefined)
+    @scala.inline
+    def setSpanId(value: String): Self = this.set("spanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpanId: Self = this.set("spanId", js.undefined)
+    @scala.inline
+    def setStackTrace(value: SchemaStackTrace): Self = this.set("stackTrace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackTrace: Self = this.set("stackTrace", js.undefined)
+    @scala.inline
+    def setStartTime(value: String): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTimeEvents(value: SchemaTimeEvents): Self = this.set("timeEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeEvents: Self = this.set("timeEvents", js.undefined)
+  }
+  
 }
 

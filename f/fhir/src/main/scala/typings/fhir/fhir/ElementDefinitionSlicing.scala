@@ -7,66 +7,84 @@ import scala.scalajs.js.annotation._
 /**
   * This element is sliced - slices follow
   */
+@js.native
 trait ElementDefinitionSlicing extends Element {
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'ordered'.
     */
-  var _ordered: js.UndefOr[Element] = js.undefined
+  var _ordered: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'rules'.
     */
-  var _rules: js.UndefOr[Element] = js.undefined
+  var _rules: js.UndefOr[Element] = js.native
   /**
     * Text description of how slicing works (or not)
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * Element values that are used to distinguish the slices
     */
-  var discriminator: js.UndefOr[js.Array[ElementDefinitionSlicingDiscriminator]] = js.undefined
+  var discriminator: js.UndefOr[js.Array[ElementDefinitionSlicingDiscriminator]] = js.native
   /**
     * If elements must be in same order as slices
     */
-  var ordered: js.UndefOr[Boolean] = js.undefined
+  var ordered: js.UndefOr[Boolean] = js.native
   /**
     * closed | open | openAtEnd
     */
-  var rules: code
+  var rules: code = js.native
 }
 
 object ElementDefinitionSlicing {
   @scala.inline
-  def apply(
-    rules: code,
-    _description: Element = null,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _ordered: Element = null,
-    _rules: Element = null,
-    description: String = null,
-    discriminator: js.Array[ElementDefinitionSlicingDiscriminator] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    ordered: js.UndefOr[Boolean] = js.undefined
-  ): ElementDefinitionSlicing = {
+  def apply(rules: code): ElementDefinitionSlicing = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_ordered != null) __obj.updateDynamic("_ordered")(_ordered.asInstanceOf[js.Any])
-    if (_rules != null) __obj.updateDynamic("_rules")(_rules.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ordered)) __obj.updateDynamic("ordered")(ordered.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionSlicing]
   }
+  @scala.inline
+  implicit class ElementDefinitionSlicingOps[Self <: ElementDefinitionSlicing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRules(value: code): Self = this.set("rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_ordered(value: Element): Self = this.set("_ordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_ordered: Self = this.set("_ordered", js.undefined)
+    @scala.inline
+    def set_rules(value: Element): Self = this.set("_rules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_rules: Self = this.set("_rules", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDiscriminatorVarargs(value: ElementDefinitionSlicingDiscriminator*): Self = this.set("discriminator", js.Array(value :_*))
+    @scala.inline
+    def setDiscriminator(value: js.Array[ElementDefinitionSlicingDiscriminator]): Self = this.set("discriminator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscriminator: Self = this.set("discriminator", js.undefined)
+    @scala.inline
+    def setOrdered(value: Boolean): Self = this.set("ordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrdered: Self = this.set("ordered", js.undefined)
+  }
+  
 }
 

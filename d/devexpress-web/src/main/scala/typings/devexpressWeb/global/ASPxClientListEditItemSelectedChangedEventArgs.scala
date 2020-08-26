@@ -17,20 +17,5 @@ class ASPxClientListEditItemSelectedChangedEventArgs protected ()
     * @param isSelected true if an item is selected; otherwise, false.
     */
   def this(index: Double, isSelected: Boolean) = this()
-  /**
-    * Gets the index of the item related to the event.
-    */
-  /* CompleteClass */
-  override var index: Double = js.native
-  /**
-    * Gets whether the item has been selected.
-    */
-  /* CompleteClass */
-  override var isSelected: Boolean = js.native
-  /**
-    * Gets or sets a value that specifies whether the event should be finally processed on the server side.
-    */
-  /* CompleteClass */
-  override var processOnServer: Boolean = js.native
 }
 

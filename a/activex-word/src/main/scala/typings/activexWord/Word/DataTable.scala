@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataTable extends js.Object {
-  val Application: js.Any
-  var AutoScaleFont: js.Any
-  val Border: ChartBorder
-  val Creator: Double
-  val Font: ChartFont
-  val Format: ChartFormat
-  var HasBorderHorizontal: Boolean
-  var HasBorderOutline: Boolean
-  var HasBorderVertical: Boolean
-  val Parent: js.Any
-  var ShowLegendKey: Boolean
+  val Application: js.Any = js.native
+  var AutoScaleFont: js.Any = js.native
+  val Border: ChartBorder = js.native
+  val Creator: Double = js.native
+  val Font: ChartFont = js.native
+  val Format: ChartFormat = js.native
+  var HasBorderHorizontal: Boolean = js.native
+  var HasBorderOutline: Boolean = js.native
+  var HasBorderVertical: Boolean = js.native
+  val Parent: js.Any = js.native
+  var ShowLegendKey: Boolean = js.native
   @JSName("Word.DataTable_typekey")
-  var WordDotDataTable_typekey: DataTable
-  def Delete(): Unit
-  def Select(): Unit
+  var WordDotDataTable_typekey: DataTable = js.native
+  def Delete(): Unit = js.native
+  def Select(): Unit = js.native
 }
 
 object DataTable {
@@ -44,5 +45,46 @@ object DataTable {
     __obj.updateDynamic("Word.DataTable_typekey")(WordDotDataTable_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTable]
   }
+  @scala.inline
+  implicit class DataTableOps[Self <: DataTable] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: js.Any): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScaleFont(value: js.Any): Self = this.set("AutoScaleFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBorder(value: ChartBorder): Self = this.set("Border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreator(value: Double): Self = this.set("Creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: () => Unit): Self = this.set("Delete", js.Any.fromFunction0(value))
+    @scala.inline
+    def setFont(value: ChartFont): Self = this.set("Font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ChartFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasBorderHorizontal(value: Boolean): Self = this.set("HasBorderHorizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasBorderOutline(value: Boolean): Self = this.set("HasBorderOutline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasBorderVertical(value: Boolean): Self = this.set("HasBorderVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelect(value: () => Unit): Self = this.set("Select", js.Any.fromFunction0(value))
+    @scala.inline
+    def setShowLegendKey(value: Boolean): Self = this.set("ShowLegendKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWordDotDataTable_typekey(value: DataTable): Self = this.set("Word.DataTable_typekey", value.asInstanceOf[js.Any])
+  }
+  
 }
 

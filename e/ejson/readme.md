@@ -11,8 +11,8 @@ EJSON - Extended and Extensible JSON library from Meteor made compatible for Nod
 | Full name          | ejson |
 | Keywords           | EJSON, Extended, Extensible, JSON, Meteor, ejson, primus |
 | # releases         | 2 |
-| # dependents       | 75 |
-| # downloads        | 437894 |
+| # dependents       | 79 |
+| # downloads        | 394664 |
 | # stars            | 0 |
 
 ## Links

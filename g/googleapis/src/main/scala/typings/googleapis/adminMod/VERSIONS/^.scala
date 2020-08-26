@@ -11,15 +11,15 @@ import scala.scalajs.js.annotation._
 @JSImport("googleapis/build/src/apis/admin", "VERSIONS")
 @js.native
 object ^ extends js.Object {
-  var datatransfer_v1: Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Admin] = js.native
+  var datatransfer_v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Admin] = js.native
   var directory_v1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.directoryV1Mod.adminDirectoryV1.Admin
   ] = js.native
   var reports_v1: Instantiable2[
     /* options */ GlobalOptions, 
-    js.UndefOr[/* google */ GoogleConfigurable], 
+    /* google */ js.UndefOr[GoogleConfigurable], 
     typings.googleapis.reportsV1Mod.adminReportsV1.Admin
   ] = js.native
 }

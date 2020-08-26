@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DivOverlay () extends Layer {
   def this(options: DivOverlayOptions) = this()
+  def this(options: js.UndefOr[scala.Nothing], source: Layer) = this()
   def this(options: DivOverlayOptions, source: Layer) = this()
   var options: DivOverlayOptions = js.native
   def bringToBack(): this.type = js.native

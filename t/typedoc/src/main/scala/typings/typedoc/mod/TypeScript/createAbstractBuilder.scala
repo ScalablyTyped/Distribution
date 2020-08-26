@@ -18,6 +18,12 @@ object createAbstractBuilder extends js.Object {
     * Creates a builder thats just abstraction over program and can be used with watch
     */
   def apply(newProgram: Program, host: BuilderProgramHost): BuilderProgram = js.native
+  def apply(
+    newProgram: Program,
+    host: BuilderProgramHost,
+    oldProgram: js.UndefOr[scala.Nothing],
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): BuilderProgram = js.native
   def apply(newProgram: Program, host: BuilderProgramHost, oldProgram: BuilderProgram): BuilderProgram = js.native
   def apply(
     newProgram: Program,

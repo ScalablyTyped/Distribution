@@ -27,20 +27,42 @@ trait DescribeSMBSettingsOutput extends js.Object {
 
 object DescribeSMBSettingsOutput {
   @scala.inline
-  def apply(
-    ActiveDirectoryStatus: ActiveDirectoryStatus = null,
-    DomainName: DomainName = null,
-    GatewayARN: GatewayARN = null,
-    SMBGuestPasswordSet: js.UndefOr[Boolean] = js.undefined,
-    SMBSecurityStrategy: SMBSecurityStrategy = null
-  ): DescribeSMBSettingsOutput = {
+  def apply(): DescribeSMBSettingsOutput = {
     val __obj = js.Dynamic.literal()
-    if (ActiveDirectoryStatus != null) __obj.updateDynamic("ActiveDirectoryStatus")(ActiveDirectoryStatus.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (GatewayARN != null) __obj.updateDynamic("GatewayARN")(GatewayARN.asInstanceOf[js.Any])
-    if (!js.isUndefined(SMBGuestPasswordSet)) __obj.updateDynamic("SMBGuestPasswordSet")(SMBGuestPasswordSet.get.asInstanceOf[js.Any])
-    if (SMBSecurityStrategy != null) __obj.updateDynamic("SMBSecurityStrategy")(SMBSecurityStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSMBSettingsOutput]
   }
+  @scala.inline
+  implicit class DescribeSMBSettingsOutputOps[Self <: DescribeSMBSettingsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = this.set("ActiveDirectoryStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveDirectoryStatus: Self = this.set("ActiveDirectoryStatus", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayARN: Self = this.set("GatewayARN", js.undefined)
+    @scala.inline
+    def setSMBGuestPasswordSet(value: Boolean): Self = this.set("SMBGuestPasswordSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMBGuestPasswordSet: Self = this.set("SMBGuestPasswordSet", js.undefined)
+    @scala.inline
+    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = this.set("SMBSecurityStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSMBSecurityStrategy: Self = this.set("SMBSecurityStrategy", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ConstantPositionProperty () extends js.Object {
   def this(value: Cartesian3) = this()
+  def this(value: js.UndefOr[scala.Nothing], referenceFrame: ReferenceFrame) = this()
   def this(value: Cartesian3, referenceFrame: ReferenceFrame) = this()
   var definitionChanged: Event[js.Array[_]] = js.native
   var isConstant: Boolean = js.native

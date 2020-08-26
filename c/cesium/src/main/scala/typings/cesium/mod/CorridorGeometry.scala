@@ -16,6 +16,7 @@ class CorridorGeometry protected () extends Packable {
 object CorridorGeometry extends js.Object {
   def createGeometry(corridorGeometry: CorridorGeometry): Geometry = js.native
   def unpack(array: js.Array[Double]): CorridorGeometry = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: CorridorGeometry): CorridorGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): CorridorGeometry = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorGeometry): CorridorGeometry = js.native
 }

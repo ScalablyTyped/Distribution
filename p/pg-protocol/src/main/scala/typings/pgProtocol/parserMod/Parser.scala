@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser () extends js.Object {
   def this(opts: StreamOptions) = this()
+  var buffer: js.Any = js.native
+  var bufferLength: js.Any = js.native
+  var bufferOffset: js.Any = js.native
   var handlePacket: js.Any = js.native
+  var mergeBuffer: js.Any = js.native
   var mode: js.Any = js.native
   var parseBackendKeyData: js.Any = js.native
   var parseCommandCompleteMessage: js.Any = js.native
@@ -25,7 +29,6 @@ class Parser () extends js.Object {
   var parseReadyForQueryMessage: js.Any = js.native
   var parseRowDescriptionMessage: js.Any = js.native
   var reader: js.Any = js.native
-  var remainingBuffer: js.Any = js.native
   def parse(buffer: Buffer, callback: MessageCallback): Unit = js.native
   def parseAuthenticationResponse(offset: Double, length: Double, bytes: Buffer): js.Any = js.native
 }

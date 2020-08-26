@@ -29,7 +29,11 @@ trait LocationServices extends Disposable {
   /** See: [[UrlService.path]] */ def path(): String = js.native
   /** See: [[UrlService.search]] */ def search(): StringDictionary[js.Any] = js.native
   /** See: [[UrlService.url]] */ def url(): String = js.native
+  def url(newurl: js.UndefOr[scala.Nothing], replace: js.UndefOr[scala.Nothing], state: js.Any): String = js.native
+  def url(newurl: js.UndefOr[scala.Nothing], replace: Boolean): String = js.native
+  def url(newurl: js.UndefOr[scala.Nothing], replace: Boolean, state: js.Any): String = js.native
   def url(newurl: String): String = js.native
+  def url(newurl: String, replace: js.UndefOr[scala.Nothing], state: js.Any): String = js.native
   def url(newurl: String, replace: Boolean): String = js.native
   def url(newurl: String, replace: Boolean, state: js.Any): String = js.native
 }

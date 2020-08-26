@@ -50,6 +50,7 @@ trait DateConstructor extends js.Object {
   def getTimezoneAbbreviation(timezoneOffset: Double, isDayLightSavingsTime: Boolean): String = js.native
   /** Gets the timezone offset if given a culture-specific string which is a valid full or abbreviated timezone name and a boolean indicating whether daylight savings time is in effect. */
   def getTimezoneOffset(): Double = js.native
+  def getTimezoneOffset(timezoneAbbreviation: js.UndefOr[scala.Nothing], isDayLightSavingsTime: Boolean): Double = js.native
   def getTimezoneOffset(timezoneAbbreviation: String): Double = js.native
   def getTimezoneOffset(timezoneAbbreviation: String, isDayLightSavingsTime: Boolean): Double = js.native
   /** Returns true if the given year is a leap year, false otherwise. */

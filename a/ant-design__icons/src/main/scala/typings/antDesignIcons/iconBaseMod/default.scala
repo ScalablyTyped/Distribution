@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@ant-design/icons/dist/components/IconBase", JSImport.Default)
+@JSImport("@ant-design/icons/es/components/IconBase", JSImport.Default)
 @js.native
 object default extends TopLevel[IconBaseComponent[IconProps]]
 

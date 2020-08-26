@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "copy-to-clipboard"
-version := "3.3.1-62e570"
-scalaVersion := "2.13.2"
+version := "3.3.1-e08ced"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

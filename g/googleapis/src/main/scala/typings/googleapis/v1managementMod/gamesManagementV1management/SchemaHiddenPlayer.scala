@@ -26,12 +26,34 @@ trait SchemaHiddenPlayer extends js.Object {
 
 object SchemaHiddenPlayer {
   @scala.inline
-  def apply(hiddenTimeMillis: String = null, kind: String = null, player: SchemaPlayer = null): SchemaHiddenPlayer = {
+  def apply(): SchemaHiddenPlayer = {
     val __obj = js.Dynamic.literal()
-    if (hiddenTimeMillis != null) __obj.updateDynamic("hiddenTimeMillis")(hiddenTimeMillis.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (player != null) __obj.updateDynamic("player")(player.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHiddenPlayer]
   }
+  @scala.inline
+  implicit class SchemaHiddenPlayerOps[Self <: SchemaHiddenPlayer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHiddenTimeMillis(value: String): Self = this.set("hiddenTimeMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHiddenTimeMillis: Self = this.set("hiddenTimeMillis", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setPlayer(value: SchemaPlayer): Self = this.set("player", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayer: Self = this.set("player", js.undefined)
+  }
+  
 }
 

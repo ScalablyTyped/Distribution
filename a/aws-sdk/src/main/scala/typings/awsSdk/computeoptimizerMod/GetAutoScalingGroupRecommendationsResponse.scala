@@ -22,16 +22,38 @@ trait GetAutoScalingGroupRecommendationsResponse extends js.Object {
 
 object GetAutoScalingGroupRecommendationsResponse {
   @scala.inline
-  def apply(
-    autoScalingGroupRecommendations: AutoScalingGroupRecommendations = null,
-    errors: GetRecommendationErrors = null,
-    nextToken: NextToken = null
-  ): GetAutoScalingGroupRecommendationsResponse = {
+  def apply(): GetAutoScalingGroupRecommendationsResponse = {
     val __obj = js.Dynamic.literal()
-    if (autoScalingGroupRecommendations != null) __obj.updateDynamic("autoScalingGroupRecommendations")(autoScalingGroupRecommendations.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAutoScalingGroupRecommendationsResponse]
   }
+  @scala.inline
+  implicit class GetAutoScalingGroupRecommendationsResponseOps[Self <: GetAutoScalingGroupRecommendationsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupRecommendationsVarargs(value: AutoScalingGroupRecommendation*): Self = this.set("autoScalingGroupRecommendations", js.Array(value :_*))
+    @scala.inline
+    def setAutoScalingGroupRecommendations(value: AutoScalingGroupRecommendations): Self = this.set("autoScalingGroupRecommendations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupRecommendations: Self = this.set("autoScalingGroupRecommendations", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: GetRecommendationError*): Self = this.set("errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: GetRecommendationErrors): Self = this.set("errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("errors", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

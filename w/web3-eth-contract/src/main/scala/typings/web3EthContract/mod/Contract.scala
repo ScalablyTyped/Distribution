@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Contract protected () extends js.Object {
   def this(jsonInterface: js.Array[AbiItem]) = this()
   def this(jsonInterface: js.Array[AbiItem], address: String) = this()
+  def this(jsonInterface: js.Array[AbiItem], address: js.UndefOr[scala.Nothing], options: ContractOptions) = this()
   def this(jsonInterface: js.Array[AbiItem], address: String, options: ContractOptions) = this()
   var _address: String = js.native
   var _jsonInterface: js.Array[AbiItem] = js.native

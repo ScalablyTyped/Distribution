@@ -1,28 +1,8 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.EndValue
 import typings.devextreme.anon.Start
-import typings.devextreme.devextremeStrings.Bright
-import typings.devextreme.devextremeStrings.Carmine
-import typings.devextreme.devextremeStrings.Default
-import typings.devextreme.devextremeStrings.Material
-import typings.devextreme.devextremeStrings.Ocean
-import typings.devextreme.devextremeStrings.Office
-import typings.devextreme.devextremeStrings.Pastel
-import typings.devextreme.devextremeStrings.Soft
-import typings.devextreme.devextremeStrings.Vintage
-import typings.devextreme.devextremeStrings.Violet
-import typings.devextreme.devextremeStrings.`Dark Moon`
-import typings.devextreme.devextremeStrings.`Dark Violet`
-import typings.devextreme.devextremeStrings.`Green Mist`
-import typings.devextreme.devextremeStrings.`Harmony Light`
-import typings.devextreme.devextremeStrings.`Soft Blue`
-import typings.devextreme.devextremeStrings.`Soft Pastel`
-import typings.devextreme.devextremeStrings.alternate
-import typings.devextreme.devextremeStrings.blend
 import typings.devextreme.devextremeStrings.bottom
 import typings.devextreme.devextremeStrings.center
-import typings.devextreme.devextremeStrings.extrapolate
 import typings.devextreme.devextremeStrings.left
 import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
@@ -30,37 +10,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxLinearGaugeRangeContainer extends BaseGaugeRangeContainer {
   /** @name dxLinearGauge.Options.rangeContainer.horizontalOrientation */
-  var horizontalOrientation: js.UndefOr[center | left | right] = js.undefined
+  var horizontalOrientation: js.UndefOr[center | left | right] = js.native
   /** @name dxLinearGauge.Options.rangeContainer.verticalOrientation */
-  var verticalOrientation: js.UndefOr[bottom | center | top] = js.undefined
+  var verticalOrientation: js.UndefOr[bottom | center | top] = js.native
   /** @name dxLinearGauge.Options.rangeContainer.width */
-  var width: js.UndefOr[Start | Double] = js.undefined
+  var width: js.UndefOr[Start | Double] = js.native
 }
 
 object dxLinearGaugeRangeContainer {
   @scala.inline
-  def apply(
-    backgroundColor: String = null,
-    horizontalOrientation: center | left | right = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
-    paletteExtensionMode: alternate | blend | extrapolate = null,
-    ranges: js.Array[EndValue] = null,
-    verticalOrientation: bottom | center | top = null,
-    width: Start | Double = null
-  ): dxLinearGaugeRangeContainer = {
+  def apply(): dxLinearGaugeRangeContainer = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (horizontalOrientation != null) __obj.updateDynamic("horizontalOrientation")(horizontalOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (paletteExtensionMode != null) __obj.updateDynamic("paletteExtensionMode")(paletteExtensionMode.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (verticalOrientation != null) __obj.updateDynamic("verticalOrientation")(verticalOrientation.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLinearGaugeRangeContainer]
   }
+  @scala.inline
+  implicit class dxLinearGaugeRangeContainerOps[Self <: dxLinearGaugeRangeContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHorizontalOrientation(value: center | left | right): Self = this.set("horizontalOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOrientation: Self = this.set("horizontalOrientation", js.undefined)
+    @scala.inline
+    def setVerticalOrientation(value: bottom | center | top): Self = this.set("verticalOrientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalOrientation: Self = this.set("verticalOrientation", js.undefined)
+    @scala.inline
+    def setWidth(value: Start | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

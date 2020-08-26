@@ -30,17 +30,36 @@ trait BounceAction extends js.Object {
 
 object BounceAction {
   @scala.inline
-  def apply(
-    Message: BounceMessage,
-    Sender: Address,
-    SmtpReplyCode: BounceSmtpReplyCode,
-    StatusCode: BounceStatusCode = null,
-    TopicArn: AmazonResourceName = null
-  ): BounceAction = {
+  def apply(Message: BounceMessage, Sender: Address, SmtpReplyCode: BounceSmtpReplyCode): BounceAction = {
     val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], Sender = Sender.asInstanceOf[js.Any], SmtpReplyCode = SmtpReplyCode.asInstanceOf[js.Any])
-    if (StatusCode != null) __obj.updateDynamic("StatusCode")(StatusCode.asInstanceOf[js.Any])
-    if (TopicArn != null) __obj.updateDynamic("TopicArn")(TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceAction]
   }
+  @scala.inline
+  implicit class BounceActionOps[Self <: BounceAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessage(value: BounceMessage): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSender(value: Address): Self = this.set("Sender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSmtpReplyCode(value: BounceSmtpReplyCode): Self = this.set("SmtpReplyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatusCode(value: BounceStatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+    @scala.inline
+    def setTopicArn(value: AmazonResourceName): Self = this.set("TopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicArn: Self = this.set("TopicArn", js.undefined)
+  }
+  
 }
 

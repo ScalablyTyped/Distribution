@@ -10,9 +10,9 @@ Storybook for HTML: View HTML snippets in isolation with Hot Reloading.
 | ------------------ | :-------------: |
 | Full name          | @storybook/html |
 | Keywords           | storybook |
-| # releases         | 368 |
+| # releases         | 380 |
 | # dependents       | 8 |
-| # downloads        | 678589 |
+| # downloads        | 752103 |
 | # stars            | 0 |
 
 ## Links

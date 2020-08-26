@@ -35,5 +35,26 @@ object InsightRule {
     val __obj = js.Dynamic.literal(Definition = Definition.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Schema = Schema.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightRule]
   }
+  @scala.inline
+  implicit class InsightRuleOps[Self <: InsightRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinition(value: InsightRuleDefinition): Self = this.set("Definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: InsightRuleName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: InsightRuleSchema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: InsightRuleState): Self = this.set("State", value.asInstanceOf[js.Any])
+  }
+  
 }
 

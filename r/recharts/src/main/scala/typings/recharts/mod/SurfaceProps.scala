@@ -5,33 +5,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SurfaceProps extends js.Object {
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[js.Object] = js.undefined
-  var viewBox: js.UndefOr[ViewBox] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[js.Object] = js.native
+  var viewBox: js.UndefOr[ViewBox] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object SurfaceProps {
   @scala.inline
-  def apply(
-    children: js.Array[ReactNode] | ReactNode = null,
-    className: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    style: js.Object = null,
-    viewBox: ViewBox = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): SurfaceProps = {
+  def apply(): SurfaceProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceProps]
   }
+  @scala.inline
+  implicit class SurfacePropsOps[Self <: SurfaceProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildrenVarargs(value: ReactNode*): Self = this.set("children", js.Array(value :_*))
+    @scala.inline
+    def setChildren(value: js.Array[ReactNode] | ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setStyle(value: js.Object): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setViewBox(value: ViewBox): Self = this.set("viewBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewBox: Self = this.set("viewBox", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

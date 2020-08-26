@@ -1,7 +1,7 @@
 package typings.ariClient.mod
 
-import typings.ariClient.anon.FilterIndexableObject
 import typings.ariClient.anon.`0`
+import typings.ariClient.anon.`1`
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -65,7 +65,7 @@ trait Application extends Resource {
     * is specified in both lists.
     */
   def filter(callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
-  def filter(params: FilterIndexableObject): js.Promise[Application] = js.native
+  def filter(params: `1`): js.Promise[Application] = js.native
   /**
     * Filter application events types.
     * Allowed and/or disallowed event type filtering can be done. The body (parameter) should specify a JSON key/value object that describes the type of event filtering needed. One, or
@@ -80,10 +80,7 @@ trait Application extends Resource {
     *
     * @param [params.filter] - Specify which event types to allow/disallow.
     */
-  def filter(
-    params: FilterIndexableObject,
-    callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]
-  ): Unit = js.native
+  def filter(params: `1`, callback: js.Function2[/* err */ Error, /* application */ this.type, Unit]): Unit = js.native
   /**
     * Get details of an application.
     */

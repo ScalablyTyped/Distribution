@@ -68,6 +68,8 @@ object toastMod extends js.Object {
       * [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
       */
     var translucent: Boolean = js.native
+    @JSName("connectedCallback")
+    def connectedCallback_MToast(): Unit = js.native
     /**
       * Returns a promise that resolves when the toast did dismiss.
       */

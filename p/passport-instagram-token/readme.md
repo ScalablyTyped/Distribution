@@ -12,7 +12,7 @@ Passport strategy for authenticating with Instagram via OAuth2 access tokens
 | Keywords           | passport, instagram, token, auth, authentication |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9400 |
+| # downloads        | 9937 |
 | # stars            | 1 |
 
 ## Links

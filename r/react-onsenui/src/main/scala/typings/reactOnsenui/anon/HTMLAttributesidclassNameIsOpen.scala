@@ -9,49 +9,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  animation ? :'fade' | 'lift' | 'none',   animationOptions ? :react-onsenui.react-onsenui.AnimationOptions,   onPreShow ? :(): void,   onPostShow ? :(): void,   onPreHide ? :(): void,   onPostHide ? :(): void,   isOpen ? :boolean,   onDeviceBackButton ? :(): void} */
+/* Inlined react-onsenui.react-onsenui.HTMLAttributes<'id' | 'className' | 'style'> & {  animation :'fade' | 'lift' | 'none' | undefined,   animationOptions :react-onsenui.react-onsenui.AnimationOptions | undefined,   onPreShow :(): void | undefined,   onPostShow :(): void | undefined,   onPreHide :(): void | undefined,   onPostHide :(): void | undefined,   isOpen :boolean | undefined,   onDeviceBackButton :(): void | undefined} */
+@js.native
 trait HTMLAttributesidclassNameIsOpen extends js.Object {
-  var animation: js.UndefOr[fade | lift | none] = js.undefined
-  var animationOptions: js.UndefOr[AnimationOptions] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isOpen: js.UndefOr[Boolean] = js.undefined
-  var onDeviceBackButton: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var animation: js.UndefOr[fade | lift | none] = js.native
+  var animationOptions: js.UndefOr[AnimationOptions] = js.native
+  var className: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.native
+  var onDeviceBackButton: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPostShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPreShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object HTMLAttributesidclassNameIsOpen {
   @scala.inline
-  def apply(
-    animation: fade | lift | none = null,
-    animationOptions: AnimationOptions = null,
-    className: String = null,
-    id: String = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    onDeviceBackButton: () => Unit = null,
-    onPostHide: () => Unit = null,
-    onPostShow: () => Unit = null,
-    onPreHide: () => Unit = null,
-    onPreShow: () => Unit = null,
-    style: CSSProperties = null
-  ): HTMLAttributesidclassNameIsOpen = {
+  def apply(): HTMLAttributesidclassNameIsOpen = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.get.asInstanceOf[js.Any])
-    if (onDeviceBackButton != null) __obj.updateDynamic("onDeviceBackButton")(js.Any.fromFunction0(onDeviceBackButton))
-    if (onPostHide != null) __obj.updateDynamic("onPostHide")(js.Any.fromFunction0(onPostHide))
-    if (onPostShow != null) __obj.updateDynamic("onPostShow")(js.Any.fromFunction0(onPostShow))
-    if (onPreHide != null) __obj.updateDynamic("onPreHide")(js.Any.fromFunction0(onPreHide))
-    if (onPreShow != null) __obj.updateDynamic("onPreShow")(js.Any.fromFunction0(onPreShow))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLAttributesidclassNameIsOpen]
   }
+  @scala.inline
+  implicit class HTMLAttributesidclassNameIsOpenOps[Self <: HTMLAttributesidclassNameIsOpen] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: fade | lift | none): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationOptions(value: AnimationOptions): Self = this.set("animationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationOptions: Self = this.set("animationOptions", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIsOpen(value: Boolean): Self = this.set("isOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsOpen: Self = this.set("isOpen", js.undefined)
+    @scala.inline
+    def setOnDeviceBackButton(value: () => Unit): Self = this.set("onDeviceBackButton", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnDeviceBackButton: Self = this.set("onDeviceBackButton", js.undefined)
+    @scala.inline
+    def setOnPostHide(value: () => Unit): Self = this.set("onPostHide", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPostHide: Self = this.set("onPostHide", js.undefined)
+    @scala.inline
+    def setOnPostShow(value: () => Unit): Self = this.set("onPostShow", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPostShow: Self = this.set("onPostShow", js.undefined)
+    @scala.inline
+    def setOnPreHide(value: () => Unit): Self = this.set("onPreHide", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPreHide: Self = this.set("onPreHide", js.undefined)
+    @scala.inline
+    def setOnPreShow(value: () => Unit): Self = this.set("onPreShow", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnPreShow: Self = this.set("onPreShow", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

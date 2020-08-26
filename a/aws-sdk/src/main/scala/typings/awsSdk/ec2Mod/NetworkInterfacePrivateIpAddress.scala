@@ -26,18 +26,38 @@ trait NetworkInterfacePrivateIpAddress extends js.Object {
 
 object NetworkInterfacePrivateIpAddress {
   @scala.inline
-  def apply(
-    Association: NetworkInterfaceAssociation = null,
-    Primary: js.UndefOr[Boolean] = js.undefined,
-    PrivateDnsName: String = null,
-    PrivateIpAddress: String = null
-  ): NetworkInterfacePrivateIpAddress = {
+  def apply(): NetworkInterfacePrivateIpAddress = {
     val __obj = js.Dynamic.literal()
-    if (Association != null) __obj.updateDynamic("Association")(Association.asInstanceOf[js.Any])
-    if (!js.isUndefined(Primary)) __obj.updateDynamic("Primary")(Primary.get.asInstanceOf[js.Any])
-    if (PrivateDnsName != null) __obj.updateDynamic("PrivateDnsName")(PrivateDnsName.asInstanceOf[js.Any])
-    if (PrivateIpAddress != null) __obj.updateDynamic("PrivateIpAddress")(PrivateIpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfacePrivateIpAddress]
   }
+  @scala.inline
+  implicit class NetworkInterfacePrivateIpAddressOps[Self <: NetworkInterfacePrivateIpAddress] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociation(value: NetworkInterfaceAssociation): Self = this.set("Association", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociation: Self = this.set("Association", js.undefined)
+    @scala.inline
+    def setPrimary(value: Boolean): Self = this.set("Primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("Primary", js.undefined)
+    @scala.inline
+    def setPrivateDnsName(value: String): Self = this.set("PrivateDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateDnsName: Self = this.set("PrivateDnsName", js.undefined)
+    @scala.inline
+    def setPrivateIpAddress(value: String): Self = this.set("PrivateIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpAddress: Self = this.set("PrivateIpAddress", js.undefined)
+  }
+  
 }
 

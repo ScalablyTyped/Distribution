@@ -7,26 +7,33 @@ import scala.scalajs.js.annotation._
 /**
   * An observable set of style attributes for an overlay.
   */
+@js.native
 trait StylesOverlayOptions extends OverlayOptions {
-  var style: js.UndefOr[Style] = js.undefined
+  var style: js.UndefOr[Style] = js.native
 }
 
 object StylesOverlayOptions {
   @scala.inline
-  def apply(
-    data: js.Object = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    style: Style = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): StylesOverlayOptions = {
+  def apply(): StylesOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesOverlayOptions]
   }
+  @scala.inline
+  implicit class StylesOverlayOptionsOps[Self <: StylesOverlayOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyle(value: Style): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

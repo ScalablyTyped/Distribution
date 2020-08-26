@@ -4,32 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PatchCustomFieldWithListParams extends PatchCustomFieldParams {
-  var allowAddItem: js.UndefOr[Boolean] = js.undefined
-  var allowInput: js.UndefOr[Boolean] = js.undefined
-  var items: js.UndefOr[js.Array[String]] = js.undefined
+  var allowAddItem: js.UndefOr[Boolean] = js.native
+  var allowInput: js.UndefOr[Boolean] = js.native
+  var items: js.UndefOr[js.Array[String]] = js.native
 }
 
 object PatchCustomFieldWithListParams {
   @scala.inline
-  def apply(
-    allowAddItem: js.UndefOr[Boolean] = js.undefined,
-    allowInput: js.UndefOr[Boolean] = js.undefined,
-    applicableIssueTypes: js.Array[Double] = null,
-    description: String = null,
-    items: js.Array[String] = null,
-    name: String = null,
-    required: js.UndefOr[Boolean] = js.undefined
-  ): PatchCustomFieldWithListParams = {
+  def apply(): PatchCustomFieldWithListParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAddItem)) __obj.updateDynamic("allowAddItem")(allowAddItem.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInput)) __obj.updateDynamic("allowInput")(allowInput.get.asInstanceOf[js.Any])
-    if (applicableIssueTypes != null) __obj.updateDynamic("applicableIssueTypes")(applicableIssueTypes.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchCustomFieldWithListParams]
   }
+  @scala.inline
+  implicit class PatchCustomFieldWithListParamsOps[Self <: PatchCustomFieldWithListParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAddItem(value: Boolean): Self = this.set("allowAddItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAddItem: Self = this.set("allowAddItem", js.undefined)
+    @scala.inline
+    def setAllowInput(value: Boolean): Self = this.set("allowInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowInput: Self = this.set("allowInput", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: String*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[String]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+  }
+  
 }
 

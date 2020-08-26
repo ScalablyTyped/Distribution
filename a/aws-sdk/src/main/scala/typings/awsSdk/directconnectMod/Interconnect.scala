@@ -66,38 +66,80 @@ trait Interconnect extends js.Object {
 
 object Interconnect {
   @scala.inline
-  def apply(
-    awsDevice: AwsDevice = null,
-    awsDeviceV2: AwsDeviceV2 = null,
-    bandwidth: Bandwidth = null,
-    hasLogicalRedundancy: HasLogicalRedundancy = null,
-    interconnectId: InterconnectId = null,
-    interconnectName: InterconnectName = null,
-    interconnectState: InterconnectState = null,
-    jumboFrameCapable: js.UndefOr[JumboFrameCapable] = js.undefined,
-    lagId: LagId = null,
-    loaIssueTime: LoaIssueTime = null,
-    location: LocationCode = null,
-    providerName: ProviderName = null,
-    region: Region = null,
-    tags: TagList = null
-  ): Interconnect = {
+  def apply(): Interconnect = {
     val __obj = js.Dynamic.literal()
-    if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
-    if (awsDeviceV2 != null) __obj.updateDynamic("awsDeviceV2")(awsDeviceV2.asInstanceOf[js.Any])
-    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
-    if (hasLogicalRedundancy != null) __obj.updateDynamic("hasLogicalRedundancy")(hasLogicalRedundancy.asInstanceOf[js.Any])
-    if (interconnectId != null) __obj.updateDynamic("interconnectId")(interconnectId.asInstanceOf[js.Any])
-    if (interconnectName != null) __obj.updateDynamic("interconnectName")(interconnectName.asInstanceOf[js.Any])
-    if (interconnectState != null) __obj.updateDynamic("interconnectState")(interconnectState.asInstanceOf[js.Any])
-    if (!js.isUndefined(jumboFrameCapable)) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.get.asInstanceOf[js.Any])
-    if (lagId != null) __obj.updateDynamic("lagId")(lagId.asInstanceOf[js.Any])
-    if (loaIssueTime != null) __obj.updateDynamic("loaIssueTime")(loaIssueTime.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (providerName != null) __obj.updateDynamic("providerName")(providerName.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Interconnect]
   }
+  @scala.inline
+  implicit class InterconnectOps[Self <: Interconnect] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsDevice(value: AwsDevice): Self = this.set("awsDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsDevice: Self = this.set("awsDevice", js.undefined)
+    @scala.inline
+    def setAwsDeviceV2(value: AwsDeviceV2): Self = this.set("awsDeviceV2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsDeviceV2: Self = this.set("awsDeviceV2", js.undefined)
+    @scala.inline
+    def setBandwidth(value: Bandwidth): Self = this.set("bandwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBandwidth: Self = this.set("bandwidth", js.undefined)
+    @scala.inline
+    def setHasLogicalRedundancy(value: HasLogicalRedundancy): Self = this.set("hasLogicalRedundancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasLogicalRedundancy: Self = this.set("hasLogicalRedundancy", js.undefined)
+    @scala.inline
+    def setInterconnectId(value: InterconnectId): Self = this.set("interconnectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectId: Self = this.set("interconnectId", js.undefined)
+    @scala.inline
+    def setInterconnectName(value: InterconnectName): Self = this.set("interconnectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectName: Self = this.set("interconnectName", js.undefined)
+    @scala.inline
+    def setInterconnectState(value: InterconnectState): Self = this.set("interconnectState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterconnectState: Self = this.set("interconnectState", js.undefined)
+    @scala.inline
+    def setJumboFrameCapable(value: JumboFrameCapable): Self = this.set("jumboFrameCapable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJumboFrameCapable: Self = this.set("jumboFrameCapable", js.undefined)
+    @scala.inline
+    def setLagId(value: LagId): Self = this.set("lagId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLagId: Self = this.set("lagId", js.undefined)
+    @scala.inline
+    def setLoaIssueTime(value: LoaIssueTime): Self = this.set("loaIssueTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoaIssueTime: Self = this.set("loaIssueTime", js.undefined)
+    @scala.inline
+    def setLocation(value: LocationCode): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setProviderName(value: ProviderName): Self = this.set("providerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProviderName: Self = this.set("providerName", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

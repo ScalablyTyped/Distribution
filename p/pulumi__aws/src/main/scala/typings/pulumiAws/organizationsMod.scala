@@ -50,6 +50,7 @@ object organizationsMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: OrganizationArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: OrganizationArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -95,10 +96,10 @@ object organizationsMod extends js.Object {
     def this(name: String, args: PolicyAttachmentArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getOrganization(): js.Promise[GetOrganizationResult] with GetOrganizationResult = js.native
-  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] with GetOrganizationResult = js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] with GetOrganizationalUnitsResult = js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] with GetOrganizationalUnitsResult = js.native
+  def getOrganization(): js.Promise[GetOrganizationResult] = js.native
+  def getOrganization(opts: InvokeOptions): js.Promise[GetOrganizationResult] = js.native
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = js.native
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = js.native
   /* static members */
   @js.native
   object Account extends js.Object {
@@ -109,8 +110,10 @@ object organizationsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsAccountMod.Account = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = js.native
     def get(name: String, id: Input[ID], state: AccountState): typings.pulumiAws.organizationsAccountMod.Account = js.native
     def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): typings.pulumiAws.organizationsAccountMod.Account = js.native
     /**
@@ -130,8 +133,10 @@ object organizationsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationMod.Organization = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = js.native
     def get(name: String, id: Input[ID], state: OrganizationState): typings.pulumiAws.organizationMod.Organization = js.native
     def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): typings.pulumiAws.organizationMod.Organization = js.native
     /**
@@ -151,8 +156,10 @@ object organizationsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
     def get(name: String, id: Input[ID], state: OrganizationalUnitState): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
     def get(name: String, id: Input[ID], state: OrganizationalUnitState, opts: CustomResourceOptions): typings.pulumiAws.organizationalUnitMod.OrganizationalUnit = js.native
     /**
@@ -172,8 +179,10 @@ object organizationsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
     def get(name: String, id: Input[ID], state: PolicyState): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
     def get(name: String, id: Input[ID], state: PolicyState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyMod.Policy = js.native
     /**
@@ -193,8 +202,10 @@ object organizationsMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
     def get(name: String, id: Input[ID], state: PolicyAttachmentState): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
     def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): typings.pulumiAws.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
     /**

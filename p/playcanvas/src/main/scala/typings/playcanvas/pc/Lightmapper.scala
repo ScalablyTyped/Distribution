@@ -17,13 +17,13 @@ trait Lightmapper extends js.Object {
   /**
     * Generates and applies the lightmaps.
     * @param nodes - An array of entities (with model components) to render
-    lightmaps for. If not supplied, the entire scene will be baked.
+    * lightmaps for. If not supplied, the entire scene will be baked.
     * @param [mode] - Baking mode. Can be:
-    
-    * {@link pc.BAKE_COLOR}: single color lightmap
-    * {@link pc.BAKE_COLORDIR}: single color lightmap + dominant light direction (used for bump/specular)
-    
-    Only lights with bakeDir=true will be used for generating the dominant light direction.
+    *
+    * * {@link pc.BAKE_COLOR}: single color lightmap
+    * * {@link pc.BAKE_COLORDIR}: single color lightmap + dominant light direction (used for bump/specular)
+    *
+    * Only lights with bakeDir=true will be used for generating the dominant light direction.
     */
   def bake(nodes: js.Array[Entity]): Unit = js.native
   def bake(nodes: js.Array[Entity], mode: Double): Unit = js.native

@@ -18,14 +18,30 @@ trait MetricsSummary extends js.Object {
 
 object MetricsSummary {
   @scala.inline
-  def apply(
-    FindingsCount: js.UndefOr[FindingsCount] = js.undefined,
-    MeteredLinesOfCodeCount: js.UndefOr[MeteredLinesOfCodeCount] = js.undefined
-  ): MetricsSummary = {
+  def apply(): MetricsSummary = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FindingsCount)) __obj.updateDynamic("FindingsCount")(FindingsCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MeteredLinesOfCodeCount)) __obj.updateDynamic("MeteredLinesOfCodeCount")(MeteredLinesOfCodeCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricsSummary]
   }
+  @scala.inline
+  implicit class MetricsSummaryOps[Self <: MetricsSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFindingsCount(value: FindingsCount): Self = this.set("FindingsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingsCount: Self = this.set("FindingsCount", js.undefined)
+    @scala.inline
+    def setMeteredLinesOfCodeCount(value: MeteredLinesOfCodeCount): Self = this.set("MeteredLinesOfCodeCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeteredLinesOfCodeCount: Self = this.set("MeteredLinesOfCodeCount", js.undefined)
+  }
+  
 }
 

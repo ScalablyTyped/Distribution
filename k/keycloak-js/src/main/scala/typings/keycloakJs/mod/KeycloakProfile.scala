@@ -4,42 +4,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait KeycloakProfile extends js.Object {
-  var createdTimestamp: js.UndefOr[Double] = js.undefined
-  var email: js.UndefOr[String] = js.undefined
-  var emailVerified: js.UndefOr[Boolean] = js.undefined
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  var firstName: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var lastName: js.UndefOr[String] = js.undefined
-  var totp: js.UndefOr[Boolean] = js.undefined
-  var username: js.UndefOr[String] = js.undefined
+  var createdTimestamp: js.UndefOr[Double] = js.native
+  var email: js.UndefOr[String] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.native
+  var firstName: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.native
+  var totp: js.UndefOr[Boolean] = js.native
+  var username: js.UndefOr[String] = js.native
 }
 
 object KeycloakProfile {
   @scala.inline
-  def apply(
-    createdTimestamp: js.UndefOr[Double] = js.undefined,
-    email: String = null,
-    emailVerified: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    firstName: String = null,
-    id: String = null,
-    lastName: String = null,
-    totp: js.UndefOr[Boolean] = js.undefined,
-    username: String = null
-  ): KeycloakProfile = {
+  def apply(): KeycloakProfile = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(createdTimestamp)) __obj.updateDynamic("createdTimestamp")(createdTimestamp.get.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (!js.isUndefined(totp)) __obj.updateDynamic("totp")(totp.get.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeycloakProfile]
   }
+  @scala.inline
+  implicit class KeycloakProfileOps[Self <: KeycloakProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedTimestamp(value: Double): Self = this.set("createdTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("createdTimestamp", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setEmailVerified(value: Boolean): Self = this.set("emailVerified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmailVerified: Self = this.set("emailVerified", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setFirstName(value: String): Self = this.set("firstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("firstName", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLastName(value: String): Self = this.set("lastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("lastName", js.undefined)
+    @scala.inline
+    def setTotp(value: Boolean): Self = this.set("totp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotp: Self = this.set("totp", js.undefined)
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("username", js.undefined)
+  }
+  
 }
 

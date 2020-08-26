@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "TmplAstBoundText")
 @js.native
 class TmplAstBoundText protected ()
-  extends typings.angularCompiler.publicApiMod.TmplAstBoundText {
+  extends typings.angularCompiler.compilerMod.TmplAstBoundText {
   def this(
     value: typings.angularCompiler.astMod.AST,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan

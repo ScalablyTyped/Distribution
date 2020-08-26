@@ -12,7 +12,7 @@ a simple collection of 2d collision/intersects functions, supporting points, cir
 | Keywords           | - |
 | # releases         | 21 |
 | # dependents       | 2 |
-| # downloads        | 220502 |
+| # downloads        | 223428 |
 | # stars            | 0 |
 
 ## Links

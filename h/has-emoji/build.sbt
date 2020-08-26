@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "has-emoji"
-version := "1.1.0-c0e576"
-scalaVersion := "2.13.2"
+version := "1.1.0-4f0bea"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

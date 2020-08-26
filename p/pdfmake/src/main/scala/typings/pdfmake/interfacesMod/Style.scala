@@ -5,97 +5,156 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Style extends js.Object {
   /** the alignment of the text */
-  var alignment: js.UndefOr[Alignment] = js.undefined
+  var alignment: js.UndefOr[Alignment] = js.native
   /** the background color of the text */
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.native
   /** whether to use bold text (default: false) */
-  var bold: js.UndefOr[Boolean] = js.undefined
-  var characterSpacing: js.UndefOr[Double] = js.undefined
+  var bold: js.UndefOr[Boolean] = js.native
+  var characterSpacing: js.UndefOr[Double] = js.native
   /** the color of the text (color name e.g., ‘blue’ or hexadecimal color e.g., ‘#ff5500’) */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /** optional space between columns */
-  var columnGap: js.UndefOr[Size] = js.undefined
+  var columnGap: js.UndefOr[Size] = js.native
   /** the text decoration to applu (‘underline’ or ‘lineThrough’ or ‘overline’) */
-  var decoration: js.UndefOr[Decoration] = js.undefined
+  var decoration: js.UndefOr[Decoration] = js.native
   /** the color of the text decoration, see color */
-  var decorationColor: js.UndefOr[String] = js.undefined
+  var decorationColor: js.UndefOr[String] = js.native
   /** (‘dashed’ or ‘dotted’ or ‘double’ or ‘wavy’) */
-  var decorationStyle: js.UndefOr[DecorationStyle] = js.undefined
+  var decorationStyle: js.UndefOr[DecorationStyle] = js.native
   /** the background color of a table cell */
-  var fillColor: js.UndefOr[String] = js.undefined
+  var fillColor: js.UndefOr[String] = js.native
   /** the background opacity of a table cell */
-  var fillOpacity: js.UndefOr[Double] = js.undefined
+  var fillOpacity: js.UndefOr[Double] = js.native
   /** name of the font */
-  var font: js.UndefOr[String] = js.undefined
-  var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
+  var font: js.UndefOr[String] = js.native
+  var fontFeatures: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
   /** size of the font in pt */
-  var fontSize: js.UndefOr[Double] = js.undefined
+  var fontSize: js.UndefOr[Double] = js.native
   /** whether to use italic text (default: false) */
-  var italics: js.UndefOr[Boolean] = js.undefined
-  var leadingIndent: js.UndefOr[Double] = js.undefined
+  var italics: js.UndefOr[Boolean] = js.native
+  var leadingIndent: js.UndefOr[Double] = js.native
   /** the line height (default: 1) */
-  var lineHeight: js.UndefOr[Double] = js.undefined
-  var margin: js.UndefOr[Margins] = js.undefined
+  var lineHeight: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Margins] = js.native
   /** the color of the bullets in a buletted list */
-  var markerColor: js.UndefOr[String] = js.undefined
+  var markerColor: js.UndefOr[String] = js.native
   // Table-cell properties:
-  var noWrap: js.UndefOr[Boolean] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
+  var noWrap: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var preserveLeadingSpaces: js.UndefOr[Boolean] = js.native
 }
 
 object Style {
   @scala.inline
-  def apply(
-    alignment: Alignment = null,
-    background: String = null,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    characterSpacing: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    columnGap: Size = null,
-    decoration: Decoration = null,
-    decorationColor: String = null,
-    decorationStyle: DecorationStyle = null,
-    fillColor: String = null,
-    fillOpacity: js.UndefOr[Double] = js.undefined,
-    font: String = null,
-    fontFeatures: js.Array[OpenTypeFeatures] = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    italics: js.UndefOr[Boolean] = js.undefined,
-    leadingIndent: js.UndefOr[Double] = js.undefined,
-    lineHeight: js.UndefOr[Double] = js.undefined,
-    margin: Margins = null,
-    markerColor: String = null,
-    noWrap: js.UndefOr[Boolean] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    preserveLeadingSpaces: js.UndefOr[Boolean] = js.undefined
-  ): Style = {
+  def apply(): Style = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(characterSpacing)) __obj.updateDynamic("characterSpacing")(characterSpacing.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (columnGap != null) __obj.updateDynamic("columnGap")(columnGap.asInstanceOf[js.Any])
-    if (decoration != null) __obj.updateDynamic("decoration")(decoration.asInstanceOf[js.Any])
-    if (decorationColor != null) __obj.updateDynamic("decorationColor")(decorationColor.asInstanceOf[js.Any])
-    if (decorationStyle != null) __obj.updateDynamic("decorationStyle")(decorationStyle.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontFeatures != null) __obj.updateDynamic("fontFeatures")(fontFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(italics)) __obj.updateDynamic("italics")(italics.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(leadingIndent)) __obj.updateDynamic("leadingIndent")(leadingIndent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(noWrap)) __obj.updateDynamic("noWrap")(noWrap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveLeadingSpaces)) __obj.updateDynamic("preserveLeadingSpaces")(preserveLeadingSpaces.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Style]
   }
+  @scala.inline
+  implicit class StyleOps[Self <: Style] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignment(value: Alignment): Self = this.set("alignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignment: Self = this.set("alignment", js.undefined)
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setCharacterSpacing(value: Double): Self = this.set("characterSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacterSpacing: Self = this.set("characterSpacing", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColumnGap(value: Size): Self = this.set("columnGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnGap: Self = this.set("columnGap", js.undefined)
+    @scala.inline
+    def setDecoration(value: Decoration): Self = this.set("decoration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecoration: Self = this.set("decoration", js.undefined)
+    @scala.inline
+    def setDecorationColor(value: String): Self = this.set("decorationColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecorationColor: Self = this.set("decorationColor", js.undefined)
+    @scala.inline
+    def setDecorationStyle(value: DecorationStyle): Self = this.set("decorationStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecorationStyle: Self = this.set("decorationStyle", js.undefined)
+    @scala.inline
+    def setFillColor(value: String): Self = this.set("fillColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillColor: Self = this.set("fillColor", js.undefined)
+    @scala.inline
+    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    @scala.inline
+    def setFont(value: String): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFontFeaturesVarargs(value: OpenTypeFeatures*): Self = this.set("fontFeatures", js.Array(value :_*))
+    @scala.inline
+    def setFontFeatures(value: js.Array[OpenTypeFeatures]): Self = this.set("fontFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFeatures: Self = this.set("fontFeatures", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setItalics(value: Boolean): Self = this.set("italics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItalics: Self = this.set("italics", js.undefined)
+    @scala.inline
+    def setLeadingIndent(value: Double): Self = this.set("leadingIndent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeadingIndent: Self = this.set("leadingIndent", js.undefined)
+    @scala.inline
+    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    @scala.inline
+    def setMargin(value: Margins): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMarkerColor(value: String): Self = this.set("markerColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkerColor: Self = this.set("markerColor", js.undefined)
+    @scala.inline
+    def setNoWrap(value: Boolean): Self = this.set("noWrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoWrap: Self = this.set("noWrap", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPreserveLeadingSpaces(value: Boolean): Self = this.set("preserveLeadingSpaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveLeadingSpaces: Self = this.set("preserveLeadingSpaces", js.undefined)
+  }
+  
 }
 

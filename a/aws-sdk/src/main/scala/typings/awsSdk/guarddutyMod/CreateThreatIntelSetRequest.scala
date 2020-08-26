@@ -43,14 +43,41 @@ object CreateThreatIntelSetRequest {
     DetectorId: DetectorId,
     Format: ThreatIntelSetFormat,
     Location: Location,
-    Name: Name,
-    ClientToken: ClientToken = null,
-    Tags: TagMap = null
+    Name: Name
   ): CreateThreatIntelSetRequest = {
     val __obj = js.Dynamic.literal(Activate = Activate.asInstanceOf[js.Any], DetectorId = DetectorId.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThreatIntelSetRequest]
   }
+  @scala.inline
+  implicit class CreateThreatIntelSetRequestOps[Self <: CreateThreatIntelSetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivate(value: Boolean): Self = this.set("Activate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFormat(value: ThreatIntelSetFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: ClientToken): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

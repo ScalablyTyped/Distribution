@@ -4,18 +4,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StateDefinition extends js.Object {
-  var color: String
-  var label: String
-  var selectable: js.UndefOr[Boolean] = js.undefined
+  var color: String = js.native
+  var label: String = js.native
+  var selectable: js.UndefOr[Boolean] = js.native
 }
 
 object StateDefinition {
   @scala.inline
-  def apply(color: String, label: String, selectable: js.UndefOr[Boolean] = js.undefined): StateDefinition = {
+  def apply(color: String, label: String): StateDefinition = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateDefinition]
   }
+  @scala.inline
+  implicit class StateDefinitionOps[Self <: StateDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+  }
+  
 }
 

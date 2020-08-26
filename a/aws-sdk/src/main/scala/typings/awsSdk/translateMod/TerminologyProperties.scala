@@ -50,30 +50,64 @@ trait TerminologyProperties extends js.Object {
 
 object TerminologyProperties {
   @scala.inline
-  def apply(
-    Arn: TerminologyArn = null,
-    CreatedAt: Timestamp = null,
-    Description: Description = null,
-    EncryptionKey: EncryptionKey = null,
-    LastUpdatedAt: Timestamp = null,
-    Name: ResourceName = null,
-    SizeBytes: js.UndefOr[Integer] = js.undefined,
-    SourceLanguageCode: LanguageCodeString = null,
-    TargetLanguageCodes: LanguageCodeStringList = null,
-    TermCount: js.UndefOr[Integer] = js.undefined
-  ): TerminologyProperties = {
+  def apply(): TerminologyProperties = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EncryptionKey != null) __obj.updateDynamic("EncryptionKey")(EncryptionKey.asInstanceOf[js.Any])
-    if (LastUpdatedAt != null) __obj.updateDynamic("LastUpdatedAt")(LastUpdatedAt.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizeBytes)) __obj.updateDynamic("SizeBytes")(SizeBytes.get.asInstanceOf[js.Any])
-    if (SourceLanguageCode != null) __obj.updateDynamic("SourceLanguageCode")(SourceLanguageCode.asInstanceOf[js.Any])
-    if (TargetLanguageCodes != null) __obj.updateDynamic("TargetLanguageCodes")(TargetLanguageCodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(TermCount)) __obj.updateDynamic("TermCount")(TermCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminologyProperties]
   }
+  @scala.inline
+  implicit class TerminologyPropertiesOps[Self <: TerminologyProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: TerminologyArn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: Timestamp): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: EncryptionKey): Self = this.set("EncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("EncryptionKey", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: Timestamp): Self = this.set("LastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("LastUpdatedAt", js.undefined)
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setSizeBytes(value: Integer): Self = this.set("SizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeBytes: Self = this.set("SizeBytes", js.undefined)
+    @scala.inline
+    def setSourceLanguageCode(value: LanguageCodeString): Self = this.set("SourceLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceLanguageCode: Self = this.set("SourceLanguageCode", js.undefined)
+    @scala.inline
+    def setTargetLanguageCodesVarargs(value: LanguageCodeString*): Self = this.set("TargetLanguageCodes", js.Array(value :_*))
+    @scala.inline
+    def setTargetLanguageCodes(value: LanguageCodeStringList): Self = this.set("TargetLanguageCodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLanguageCodes: Self = this.set("TargetLanguageCodes", js.undefined)
+    @scala.inline
+    def setTermCount(value: Integer): Self = this.set("TermCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTermCount: Self = this.set("TermCount", js.undefined)
+  }
+  
 }
 

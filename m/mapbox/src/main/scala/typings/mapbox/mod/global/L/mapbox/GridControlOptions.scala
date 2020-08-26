@@ -1,38 +1,56 @@
 package typings.mapbox.mod.global.L.mapbox
 
-import typings.leaflet.mod.ControlPosition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridControlOptions extends ControlOptions {
-  var follow: js.UndefOr[Boolean] = js.undefined
-  var location: js.UndefOr[Boolean] = js.undefined
-  var pinnable: js.UndefOr[Boolean] = js.undefined
-  var template: js.UndefOr[String] = js.undefined
-  var touchTeaser: js.UndefOr[Boolean] = js.undefined
+  var follow: js.UndefOr[Boolean] = js.native
+  var location: js.UndefOr[Boolean] = js.native
+  var pinnable: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[String] = js.native
+  var touchTeaser: js.UndefOr[Boolean] = js.native
 }
 
 object GridControlOptions {
   @scala.inline
-  def apply(
-    follow: js.UndefOr[Boolean] = js.undefined,
-    location: js.UndefOr[Boolean] = js.undefined,
-    pinnable: js.UndefOr[Boolean] = js.undefined,
-    position: ControlPosition = null,
-    sanitizer: /* template */ String => String = null,
-    template: String = null,
-    touchTeaser: js.UndefOr[Boolean] = js.undefined
-  ): GridControlOptions = {
+  def apply(): GridControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinnable)) __obj.updateDynamic("pinnable")(pinnable.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (sanitizer != null) __obj.updateDynamic("sanitizer")(js.Any.fromFunction1(sanitizer))
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchTeaser)) __obj.updateDynamic("touchTeaser")(touchTeaser.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridControlOptions]
   }
+  @scala.inline
+  implicit class GridControlOptionsOps[Self <: GridControlOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollow: Self = this.set("follow", js.undefined)
+    @scala.inline
+    def setLocation(value: Boolean): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setPinnable(value: Boolean): Self = this.set("pinnable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinnable: Self = this.set("pinnable", js.undefined)
+    @scala.inline
+    def setTemplate(value: String): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTouchTeaser(value: Boolean): Self = this.set("touchTeaser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouchTeaser: Self = this.set("touchTeaser", js.undefined)
+  }
+  
 }
 

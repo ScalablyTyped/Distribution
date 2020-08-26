@@ -38,8 +38,66 @@ class OClass () extends js.Object {
     * @promise {Object}                The created class object
     */
   def create(name: String): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: js.UndefOr[scala.Nothing],
+    cluster: js.UndefOr[scala.Nothing],
+    isAbstract: js.UndefOr[scala.Nothing],
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: js.UndefOr[scala.Nothing],
+    cluster: js.UndefOr[scala.Nothing],
+    isAbstract: Boolean
+  ): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: js.UndefOr[scala.Nothing],
+    cluster: js.UndefOr[scala.Nothing],
+    isAbstract: Boolean,
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
+  def create(name: String, parentName: js.UndefOr[scala.Nothing], cluster: String): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: js.UndefOr[scala.Nothing],
+    cluster: String,
+    isAbstract: js.UndefOr[scala.Nothing],
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
+  def create(name: String, parentName: js.UndefOr[scala.Nothing], cluster: String, isAbstract: Boolean): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: js.UndefOr[scala.Nothing],
+    cluster: String,
+    isAbstract: Boolean,
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
   def create(name: String, parentName: String): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: String,
+    cluster: js.UndefOr[scala.Nothing],
+    isAbstract: js.UndefOr[scala.Nothing],
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
+  def create(name: String, parentName: String, cluster: js.UndefOr[scala.Nothing], isAbstract: Boolean): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: String,
+    cluster: js.UndefOr[scala.Nothing],
+    isAbstract: Boolean,
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
   def create(name: String, parentName: String, cluster: String): js.Promise[OClass] = js.native
+  def create(
+    name: String,
+    parentName: String,
+    cluster: String,
+    isAbstract: js.UndefOr[scala.Nothing],
+    ifnotexist: Boolean
+  ): js.Promise[OClass] = js.native
   def create(name: String, parentName: String, cluster: String, isAbstract: Boolean): js.Promise[OClass] = js.native
   def create(name: String, parentName: String, cluster: String, isAbstract: Boolean, ifnotexist: Boolean): js.Promise[OClass] = js.native
   /**
@@ -67,6 +125,7 @@ class OClass () extends js.Object {
     * @promise {Object[]}          An array of records in the class.
     */
   def find(attributes: js.Any): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: js.Any, limit: js.UndefOr[scala.Nothing], offset: Double): js.Promise[js.Array[ORecord]] = js.native
   def find(attributes: js.Any, limit: Double): js.Promise[js.Array[ORecord]] = js.native
   def find(attributes: js.Any, limit: Double, offset: Double): js.Promise[js.Array[ORecord]] = js.native
   /**

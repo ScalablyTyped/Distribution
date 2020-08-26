@@ -35,18 +35,38 @@ trait SchemaCompanyInfoSource extends js.Object {
 
 object SchemaCompanyInfoSource {
   @scala.inline
-  def apply(
-    freebaseMid: String = null,
-    gplusId: String = null,
-    mapsCid: String = null,
-    unknownTypeId: String = null
-  ): SchemaCompanyInfoSource = {
+  def apply(): SchemaCompanyInfoSource = {
     val __obj = js.Dynamic.literal()
-    if (freebaseMid != null) __obj.updateDynamic("freebaseMid")(freebaseMid.asInstanceOf[js.Any])
-    if (gplusId != null) __obj.updateDynamic("gplusId")(gplusId.asInstanceOf[js.Any])
-    if (mapsCid != null) __obj.updateDynamic("mapsCid")(mapsCid.asInstanceOf[js.Any])
-    if (unknownTypeId != null) __obj.updateDynamic("unknownTypeId")(unknownTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCompanyInfoSource]
   }
+  @scala.inline
+  implicit class SchemaCompanyInfoSourceOps[Self <: SchemaCompanyInfoSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFreebaseMid(value: String): Self = this.set("freebaseMid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreebaseMid: Self = this.set("freebaseMid", js.undefined)
+    @scala.inline
+    def setGplusId(value: String): Self = this.set("gplusId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGplusId: Self = this.set("gplusId", js.undefined)
+    @scala.inline
+    def setMapsCid(value: String): Self = this.set("mapsCid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapsCid: Self = this.set("mapsCid", js.undefined)
+    @scala.inline
+    def setUnknownTypeId(value: String): Self = this.set("unknownTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnknownTypeId: Self = this.set("unknownTypeId", js.undefined)
+  }
+  
 }
 

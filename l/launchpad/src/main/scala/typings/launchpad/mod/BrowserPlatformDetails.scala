@@ -4,58 +4,92 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BrowserPlatformDetails extends js.Object {
-  var args: js.UndefOr[js.Array[String]] = js.undefined
-  var command: js.UndefOr[String] = js.undefined
-  var cwd: js.UndefOr[String] = js.undefined
-  var defaultLocation: js.UndefOr[String] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
+  var command: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.native
+  var defaultLocation: js.UndefOr[String] = js.native
   var getCommand: js.UndefOr[
-    js.Function3[
-      /* browser */ BrowserPlatformDetails, 
-      /* url */ String, 
-      /* args */ js.Array[String], 
-      String
-    ]
-  ] = js.undefined
-  var imageName: js.UndefOr[String] = js.undefined
-  var multi: js.UndefOr[Boolean] = js.undefined
-  var opensTab: js.UndefOr[Boolean] = js.undefined
-  var pathQuery: js.UndefOr[String] = js.undefined
-  var plistPath: js.UndefOr[String] = js.undefined
-  var process: js.UndefOr[String] = js.undefined
-  var versionKey: js.UndefOr[String] = js.undefined
+    js.Function3[/* browser */ this.type, /* url */ String, /* args */ js.Array[String], String]
+  ] = js.native
+  var imageName: js.UndefOr[String] = js.native
+  var multi: js.UndefOr[Boolean] = js.native
+  var opensTab: js.UndefOr[Boolean] = js.native
+  var pathQuery: js.UndefOr[String] = js.native
+  var plistPath: js.UndefOr[String] = js.native
+  var process: js.UndefOr[String] = js.native
+  var versionKey: js.UndefOr[String] = js.native
 }
 
 object BrowserPlatformDetails {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    command: String = null,
-    cwd: String = null,
-    defaultLocation: String = null,
-    getCommand: (/* browser */ BrowserPlatformDetails, /* url */ String, /* args */ js.Array[String]) => String = null,
-    imageName: String = null,
-    multi: js.UndefOr[Boolean] = js.undefined,
-    opensTab: js.UndefOr[Boolean] = js.undefined,
-    pathQuery: String = null,
-    plistPath: String = null,
-    process: String = null,
-    versionKey: String = null
-  ): BrowserPlatformDetails = {
+  def apply(): BrowserPlatformDetails = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (defaultLocation != null) __obj.updateDynamic("defaultLocation")(defaultLocation.asInstanceOf[js.Any])
-    if (getCommand != null) __obj.updateDynamic("getCommand")(js.Any.fromFunction3(getCommand))
-    if (imageName != null) __obj.updateDynamic("imageName")(imageName.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opensTab)) __obj.updateDynamic("opensTab")(opensTab.get.asInstanceOf[js.Any])
-    if (pathQuery != null) __obj.updateDynamic("pathQuery")(pathQuery.asInstanceOf[js.Any])
-    if (plistPath != null) __obj.updateDynamic("plistPath")(plistPath.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (versionKey != null) __obj.updateDynamic("versionKey")(versionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserPlatformDetails]
   }
+  @scala.inline
+  implicit class BrowserPlatformDetailsOps[Self <: BrowserPlatformDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setCommand(value: String): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setCwd(value: String): Self = this.set("cwd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCwd: Self = this.set("cwd", js.undefined)
+    @scala.inline
+    def setDefaultLocation(value: String): Self = this.set("defaultLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultLocation: Self = this.set("defaultLocation", js.undefined)
+    @scala.inline
+    def setGetCommand(value: (BrowserPlatformDetails, /* url */ String, /* args */ js.Array[String]) => String): Self = this.set("getCommand", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteGetCommand: Self = this.set("getCommand", js.undefined)
+    @scala.inline
+    def setImageName(value: String): Self = this.set("imageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageName: Self = this.set("imageName", js.undefined)
+    @scala.inline
+    def setMulti(value: Boolean): Self = this.set("multi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMulti: Self = this.set("multi", js.undefined)
+    @scala.inline
+    def setOpensTab(value: Boolean): Self = this.set("opensTab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpensTab: Self = this.set("opensTab", js.undefined)
+    @scala.inline
+    def setPathQuery(value: String): Self = this.set("pathQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathQuery: Self = this.set("pathQuery", js.undefined)
+    @scala.inline
+    def setPlistPath(value: String): Self = this.set("plistPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlistPath: Self = this.set("plistPath", js.undefined)
+    @scala.inline
+    def setProcess(value: String): Self = this.set("process", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcess: Self = this.set("process", js.undefined)
+    @scala.inline
+    def setVersionKey(value: String): Self = this.set("versionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionKey: Self = this.set("versionKey", js.undefined)
+  }
+  
 }
 

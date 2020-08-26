@@ -14,7 +14,7 @@ trait Anchor extends Component[AnchorProps, AnchorState, ConfigConsumerProps] {
   var content: ConfigConsumerProps = js.native
   var inkNode: js.Any = js.native
   var links: js.Any = js.native
-  var prefixCls: js.UndefOr[js.Any] = js.native
+  var prefixCls: js.Any = js.native
   var scrollContainer: js.Any = js.native
   var scrollEvent: js.Any = js.native
   @JSName("state")
@@ -27,6 +27,7 @@ trait Anchor extends Component[AnchorProps, AnchorState, ConfigConsumerProps] {
   def componentWillUnmount_MAnchor(): Unit = js.native
   def getContainer(): js.Any = js.native
   def getCurrentAnchor(): String = js.native
+  def getCurrentAnchor(offsetTop: js.UndefOr[scala.Nothing], bounds: Double): String = js.native
   def getCurrentAnchor(offsetTop: Double): String = js.native
   def getCurrentAnchor(offsetTop: Double, bounds: Double): String = js.native
   def handleScroll(): Unit = js.native

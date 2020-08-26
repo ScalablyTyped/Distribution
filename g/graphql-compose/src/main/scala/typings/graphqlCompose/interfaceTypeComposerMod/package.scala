@@ -14,7 +14,7 @@ package object interfaceTypeComposerMod {
     typings.graphqlCompose.definitionsMod.MaybePromise[js.UndefOr[scala.Boolean | scala.Null]]
   ]
   type InterfaceTypeResolversMap[TContext] = typings.std.Map[
-    (typings.graphqlCompose.objectTypeComposerMod.ObjectTypeComposer[js.Any, TContext]) | (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]), 
+    (typings.graphqlCompose.objectTypeComposerMod.ObjectTypeComposer[js.Any, TContext]) | (typings.graphql.mod.GraphQLObjectType[js.Any, js.Any]), 
     typings.graphqlCompose.interfaceTypeComposerMod.InterfaceTypeResolverCheckFn[js.Any, TContext]
   ]
 }

@@ -11,8 +11,8 @@ Helper module for loading your native module's .node file
 | Full name          | bindings |
 | Keywords           | native, addon, bindings, gyp, waf, c, c++ |
 | # releases         | 4 |
-| # dependents       | 1652 |
-| # downloads        | 71150458 |
+| # dependents       | 1681 |
+| # downloads        | 82021007 |
 | # stars            | 24 |
 
 ## Links

@@ -11,7 +11,11 @@ trait SecretListEntry extends js.Object {
     */
   var ARN: js.UndefOr[SecretARNType] = js.native
   /**
-    * The date and time on which this secret was deleted. Not present on active secrets. The secret can be recovered until the number of days in the recovery window has passed, as specified in the RecoveryWindowInDays parameter of the DeleteSecret operation.
+    * The date and time when a secret was created.
+    */
+  var CreatedDate: js.UndefOr[TimestampType] = js.native
+  /**
+    * The date and time the deletion of the secret occurred. Not present on active secrets. The secret can be recovered until the number of days in the recovery window has passed, as specified in the RecoveryWindowInDays parameter of the DeleteSecret operation.
     */
   var DeletedDate: js.UndefOr[DeletedDateType] = js.native
   /**
@@ -19,7 +23,7 @@ trait SecretListEntry extends js.Object {
     */
   var Description: js.UndefOr[DescriptionType] = js.native
   /**
-    * The ARN or alias of the AWS KMS customer master key (CMK) that's used to encrypt the SecretString and SecretBinary fields in each version of the secret. If you don't provide a key, then Secrets Manager defaults to encrypting the secret fields with the default KMS CMK (the one named awssecretsmanager) for this account.
+    * The ARN or alias of the AWS KMS customer master key (CMK) used to encrypt the SecretString and SecretBinary fields in each version of the secret. If you don't provide a key, then Secrets Manager defaults to encrypting the secret fields with the default KMS CMK, the key named awssecretsmanager, for this account.
     */
   var KmsKeyId: js.UndefOr[KmsKeyIdType] = js.native
   /**
@@ -47,7 +51,7 @@ trait SecretListEntry extends js.Object {
     */
   var RotationEnabled: js.UndefOr[RotationEnabledType] = js.native
   /**
-    * The ARN of an AWS Lambda function that's invoked by Secrets Manager to rotate and expire the secret either automatically per the schedule or manually by a call to RotateSecret.
+    * The ARN of an AWS Lambda function invoked by Secrets Manager to rotate and expire the secret either automatically per the schedule or manually by a call to RotateSecret.
     */
   var RotationLambdaARN: js.UndefOr[RotationLambdaARNType] = js.native
   /**
@@ -55,49 +59,95 @@ trait SecretListEntry extends js.Object {
     */
   var RotationRules: js.UndefOr[RotationRulesType] = js.native
   /**
-    * A list of all of the currently assigned SecretVersionStage staging labels and the SecretVersionId that each is attached to. Staging labels are used to keep track of the different versions during the rotation process.  A version that does not have any SecretVersionStage is considered deprecated and subject to deletion. Such versions are not included in this list. 
+    * A list of all of the currently assigned SecretVersionStage staging labels and the SecretVersionId attached to each one. Staging labels are used to keep track of the different versions during the rotation process.  A version that does not have any SecretVersionStage is considered deprecated and subject to deletion. Such versions are not included in this list. 
     */
   var SecretVersionsToStages: js.UndefOr[SecretVersionsToStagesMapType] = js.native
   /**
-    * The list of user-defined tags that are associated with the secret. To add tags to a secret, use TagResource. To remove tags, use UntagResource.
+    * The list of user-defined tags associated with the secret. To add tags to a secret, use TagResource. To remove tags, use UntagResource.
     */
   var Tags: js.UndefOr[TagListType] = js.native
 }
 
 object SecretListEntry {
   @scala.inline
-  def apply(
-    ARN: SecretARNType = null,
-    DeletedDate: DeletedDateType = null,
-    Description: DescriptionType = null,
-    KmsKeyId: KmsKeyIdType = null,
-    LastAccessedDate: LastAccessedDateType = null,
-    LastChangedDate: LastChangedDateType = null,
-    LastRotatedDate: LastRotatedDateType = null,
-    Name: SecretNameType = null,
-    OwningService: OwningServiceType = null,
-    RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined,
-    RotationLambdaARN: RotationLambdaARNType = null,
-    RotationRules: RotationRulesType = null,
-    SecretVersionsToStages: SecretVersionsToStagesMapType = null,
-    Tags: TagListType = null
-  ): SecretListEntry = {
+  def apply(): SecretListEntry = {
     val __obj = js.Dynamic.literal()
-    if (ARN != null) __obj.updateDynamic("ARN")(ARN.asInstanceOf[js.Any])
-    if (DeletedDate != null) __obj.updateDynamic("DeletedDate")(DeletedDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LastAccessedDate != null) __obj.updateDynamic("LastAccessedDate")(LastAccessedDate.asInstanceOf[js.Any])
-    if (LastChangedDate != null) __obj.updateDynamic("LastChangedDate")(LastChangedDate.asInstanceOf[js.Any])
-    if (LastRotatedDate != null) __obj.updateDynamic("LastRotatedDate")(LastRotatedDate.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OwningService != null) __obj.updateDynamic("OwningService")(OwningService.asInstanceOf[js.Any])
-    if (!js.isUndefined(RotationEnabled)) __obj.updateDynamic("RotationEnabled")(RotationEnabled.get.asInstanceOf[js.Any])
-    if (RotationLambdaARN != null) __obj.updateDynamic("RotationLambdaARN")(RotationLambdaARN.asInstanceOf[js.Any])
-    if (RotationRules != null) __obj.updateDynamic("RotationRules")(RotationRules.asInstanceOf[js.Any])
-    if (SecretVersionsToStages != null) __obj.updateDynamic("SecretVersionsToStages")(SecretVersionsToStages.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretListEntry]
   }
+  @scala.inline
+  implicit class SecretListEntryOps[Self <: SecretListEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: SecretARNType): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteARN: Self = this.set("ARN", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: TimestampType): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDeletedDate(value: DeletedDateType): Self = this.set("DeletedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletedDate: Self = this.set("DeletedDate", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyIdType): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLastAccessedDate(value: LastAccessedDateType): Self = this.set("LastAccessedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAccessedDate: Self = this.set("LastAccessedDate", js.undefined)
+    @scala.inline
+    def setLastChangedDate(value: LastChangedDateType): Self = this.set("LastChangedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastChangedDate: Self = this.set("LastChangedDate", js.undefined)
+    @scala.inline
+    def setLastRotatedDate(value: LastRotatedDateType): Self = this.set("LastRotatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastRotatedDate: Self = this.set("LastRotatedDate", js.undefined)
+    @scala.inline
+    def setName(value: SecretNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOwningService(value: OwningServiceType): Self = this.set("OwningService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwningService: Self = this.set("OwningService", js.undefined)
+    @scala.inline
+    def setRotationEnabled(value: RotationEnabledType): Self = this.set("RotationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationEnabled: Self = this.set("RotationEnabled", js.undefined)
+    @scala.inline
+    def setRotationLambdaARN(value: RotationLambdaARNType): Self = this.set("RotationLambdaARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationLambdaARN: Self = this.set("RotationLambdaARN", js.undefined)
+    @scala.inline
+    def setRotationRules(value: RotationRulesType): Self = this.set("RotationRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotationRules: Self = this.set("RotationRules", js.undefined)
+    @scala.inline
+    def setSecretVersionsToStages(value: SecretVersionsToStagesMapType): Self = this.set("SecretVersionsToStages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecretVersionsToStages: Self = this.set("SecretVersionsToStages", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagListType): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ Like duplexer but using streams3
 | ------------------ | :-------------: |
 | Full name          | duplexer3 |
 | Keywords           | duplex, duplexer, stream, stream3, join, combine |
-| # releases         | 1 |
-| # dependents       | 31 |
-| # downloads        | 200957287 |
+| # releases         | 0 |
+| # dependents       | 32 |
+| # downloads        | 206884970 |
 | # stars            | 0 |
 
 ## Links

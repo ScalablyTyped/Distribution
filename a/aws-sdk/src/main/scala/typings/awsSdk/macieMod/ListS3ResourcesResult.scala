@@ -18,11 +18,32 @@ trait ListS3ResourcesResult extends js.Object {
 
 object ListS3ResourcesResult {
   @scala.inline
-  def apply(nextToken: NextToken = null, s3Resources: S3ResourcesClassification = null): ListS3ResourcesResult = {
+  def apply(): ListS3ResourcesResult = {
     val __obj = js.Dynamic.literal()
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (s3Resources != null) __obj.updateDynamic("s3Resources")(s3Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListS3ResourcesResult]
   }
+  @scala.inline
+  implicit class ListS3ResourcesResultOps[Self <: ListS3ResourcesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setS3ResourcesVarargs(value: S3ResourceClassification*): Self = this.set("s3Resources", js.Array(value :_*))
+    @scala.inline
+    def setS3Resources(value: S3ResourcesClassification): Self = this.set("s3Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Resources: Self = this.set("s3Resources", js.undefined)
+  }
+  
 }
 

@@ -24,11 +24,9 @@ object IDLNamespaceMemberType {
     extAttrs: js.Array[ExtendedAttribute],
     parent: InterfaceType | InterfaceMixinType | NamespaceType,
     special: getter | setter | deleter | static | stringifier,
-    `type`: operation,
-    idlType: IDLTypeDescription = null,
-    name: String = null
+    `type`: operation
   ): IDLNamespaceMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDLNamespaceMemberType]
   }

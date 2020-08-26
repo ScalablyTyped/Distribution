@@ -4,22 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TreeListToolbarItem extends js.Object {
-  var click: js.UndefOr[js.Function] = js.undefined
-  var imageClass: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
+  var click: js.UndefOr[js.Function] = js.native
+  var imageClass: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
 }
 
 object TreeListToolbarItem {
   @scala.inline
-  def apply(click: js.Function = null, imageClass: String = null, name: String = null, text: String = null): TreeListToolbarItem = {
+  def apply(): TreeListToolbarItem = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListToolbarItem]
   }
+  @scala.inline
+  implicit class TreeListToolbarItemOps[Self <: TreeListToolbarItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClick(value: js.Function): Self = this.set("click", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setImageClass(value: String): Self = this.set("imageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageClass: Self = this.set("imageClass", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

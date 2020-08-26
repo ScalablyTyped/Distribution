@@ -8,15 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends WellKnownMimeType {
   def this(str: String, identifier: Double) = this()
-  /** @return the byte identifier of the mime type, guaranteed to be positive or zero. */
-  /* CompleteClass */
-  override val identifier: Double = js.native
-  /**
-    * @return the mime type represented as a {@link String}, which is made of US_ASCII compatible
-    *     characters only
-    */
-  /* CompleteClass */
-  override val string: String = js.native
 }
 
 /* static members */

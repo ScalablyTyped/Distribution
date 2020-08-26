@@ -26,16 +26,34 @@ trait CreatePolicyRequest extends js.Object {
 
 object CreatePolicyRequest {
   @scala.inline
-  def apply(
-    PolicyDocument: policyDocumentType,
-    PolicyName: policyNameType,
-    Description: policyDescriptionType = null,
-    Path: policyPathType = null
-  ): CreatePolicyRequest = {
+  def apply(PolicyDocument: policyDocumentType, PolicyName: policyNameType): CreatePolicyRequest = {
     val __obj = js.Dynamic.literal(PolicyDocument = PolicyDocument.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Path != null) __obj.updateDynamic("Path")(Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePolicyRequest]
   }
+  @scala.inline
+  implicit class CreatePolicyRequestOps[Self <: CreatePolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyDocument(value: policyDocumentType): Self = this.set("PolicyDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolicyName(value: policyNameType): Self = this.set("PolicyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: policyDescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setPath(value: policyPathType): Self = this.set("Path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("Path", js.undefined)
+  }
+  
 }
 

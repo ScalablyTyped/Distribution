@@ -1,38 +1,37 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.anon.ValueText
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.mod.DevExpress.ui.format
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxLinearGaugeScaleLabel extends BaseGaugeScaleLabel {
   /** @name dxLinearGauge.Options.scale.label.indentFromTick */
-  var indentFromTick: js.UndefOr[Double] = js.undefined
+  var indentFromTick: js.UndefOr[Double] = js.native
 }
 
 object dxLinearGaugeScaleLabel {
   @scala.inline
-  def apply(
-    customizeText: /* scaleValue */ ValueText => String = null,
-    font: Font = null,
-    format: format = null,
-    indentFromTick: js.UndefOr[Double] = js.undefined,
-    overlappingBehavior: hide | none = null,
-    useRangeColors: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxLinearGaugeScaleLabel = {
+  def apply(): dxLinearGaugeScaleLabel = {
     val __obj = js.Dynamic.literal()
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1(customizeText))
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentFromTick)) __obj.updateDynamic("indentFromTick")(indentFromTick.get.asInstanceOf[js.Any])
-    if (overlappingBehavior != null) __obj.updateDynamic("overlappingBehavior")(overlappingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRangeColors)) __obj.updateDynamic("useRangeColors")(useRangeColors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLinearGaugeScaleLabel]
   }
+  @scala.inline
+  implicit class dxLinearGaugeScaleLabelOps[Self <: dxLinearGaugeScaleLabel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndentFromTick(value: Double): Self = this.set("indentFromTick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndentFromTick: Self = this.set("indentFromTick", js.undefined)
+  }
+  
 }
 

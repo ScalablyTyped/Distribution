@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 package object mod {
   type ChartChangeEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeChartsWrapper.anon.Action]
   type ChartSelectEvent = typings.reactNative.mod.NativeSyntheticEvent[typings.reactNativeChartsWrapper.anon.Y | scala.Null]
-  type Color = scala.Double
+  type Color = typings.std.ReturnType[typings.reactNativeChartsWrapper.anon.FnCall]
   /* Rewritten from type alias, can be one of: 
     - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.largeValue
     - typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.percent

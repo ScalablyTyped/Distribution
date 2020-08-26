@@ -34,22 +34,46 @@ trait GetDeviceDefinitionVersionResponse extends js.Object {
 
 object GetDeviceDefinitionVersionResponse {
   @scala.inline
-  def apply(
-    Arn: string = null,
-    CreationTimestamp: string = null,
-    Definition: DeviceDefinitionVersion = null,
-    Id: string = null,
-    NextToken: string = null,
-    Version: string = null
-  ): GetDeviceDefinitionVersionResponse = {
+  def apply(): GetDeviceDefinitionVersionResponse = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreationTimestamp != null) __obj.updateDynamic("CreationTimestamp")(CreationTimestamp.asInstanceOf[js.Any])
-    if (Definition != null) __obj.updateDynamic("Definition")(Definition.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeviceDefinitionVersionResponse]
   }
+  @scala.inline
+  implicit class GetDeviceDefinitionVersionResponseOps[Self <: GetDeviceDefinitionVersionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: string): Self = this.set("CreationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("CreationTimestamp", js.undefined)
+    @scala.inline
+    def setDefinition(value: DeviceDefinitionVersion): Self = this.set("Definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("Definition", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setNextToken(value: string): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setVersion(value: string): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

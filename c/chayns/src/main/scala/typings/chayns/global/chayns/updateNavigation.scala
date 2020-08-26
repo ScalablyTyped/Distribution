@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object updateNavigation extends js.Object {
   def apply(): js.Promise[_] = js.native
+  def apply(tappId: js.UndefOr[scala.Nothing], config: UpdateNavigationConfig): js.Promise[_] = js.native
   def apply(tappId: Double): js.Promise[_] = js.native
   def apply(tappId: Double, config: UpdateNavigationConfig): js.Promise[_] = js.native
 }

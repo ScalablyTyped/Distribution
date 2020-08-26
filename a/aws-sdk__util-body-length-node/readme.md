@@ -11,8 +11,8 @@ Determines the length of a request body in node.js
 | Full name          | @aws-sdk/util-body-length-node |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 184 |
-| # downloads        | 29182 |
+| # dependents       | 366 |
+| # downloads        | 30774 |
 | # stars            | 0 |
 
 ## Links

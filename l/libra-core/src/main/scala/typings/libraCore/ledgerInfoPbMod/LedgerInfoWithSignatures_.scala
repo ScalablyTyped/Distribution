@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LedgerInfoWithSignatures_ () extends Message {
   def addSignatures(): ValidatorSignature = js.native
+  def addSignatures(value: js.UndefOr[scala.Nothing], index: Double): ValidatorSignature = js.native
   def addSignatures(value: ValidatorSignature): ValidatorSignature = js.native
   def addSignatures(value: ValidatorSignature, index: Double): ValidatorSignature = js.native
   def clearLedgerInfo(): Unit = js.native

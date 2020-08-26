@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/contexts/AnnounceContext", "AnnounceContext")
+@JSImport("grommet/es6/contexts/AnnounceContext", "AnnounceContext")
 @js.native
 object AnnounceContext extends TopLevel[Context[AnnounceValue]]
 

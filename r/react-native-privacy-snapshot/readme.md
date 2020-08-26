@@ -12,7 +12,7 @@ Obscure passwords and other sensitive personal information when a react-native a
 | Keywords           | react-native, react-component, privacy, snapshot, secure |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 16713 |
+| # downloads        | 16226 |
 | # stars            | 2 |
 
 ## Links

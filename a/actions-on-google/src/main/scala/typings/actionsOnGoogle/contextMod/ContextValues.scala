@@ -12,8 +12,9 @@ import scala.scalajs.js.annotation._
 /** @hidden */
 class ContextValues[TContexts /* <: Contexts */] () extends js.Object {
   def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context]) = this()
+  def this(outputContexts: js.UndefOr[scala.Nothing], _session: String) = this()
   def this(outputContexts: js.Array[DialogflowV1Context | GoogleCloudDialogflowV2Context], _session: String) = this()
-  var _session: js.UndefOr[js.Any] = js.native
+  var _session: js.Any = js.native
   /** @public */
   var input: TContexts = js.native
   /**

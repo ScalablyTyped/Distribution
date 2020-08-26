@@ -116,58 +116,120 @@ trait SchemaObject extends js.Object {
 
 object SchemaObject {
   @scala.inline
-  def apply(
-    acl: js.Array[SchemaObjectAccessControl] = null,
-    bucket: String = null,
-    cacheControl: String = null,
-    componentCount: js.UndefOr[Double] = js.undefined,
-    contentDisposition: String = null,
-    contentEncoding: String = null,
-    contentLanguage: String = null,
-    contentType: String = null,
-    crc32c: String = null,
-    etag: String = null,
-    generation: String = null,
-    id: String = null,
-    kind: String = null,
-    md5Hash: String = null,
-    mediaLink: String = null,
-    metadata: StringDictionary[String] = null,
-    metageneration: String = null,
-    name: String = null,
-    owner: Entity = null,
-    selfLink: String = null,
-    size: String = null,
-    storageClass: String = null,
-    timeDeleted: String = null,
-    updated: String = null
-  ): SchemaObject = {
+  def apply(): SchemaObject = {
     val __obj = js.Dynamic.literal()
-    if (acl != null) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl.asInstanceOf[js.Any])
-    if (!js.isUndefined(componentCount)) __obj.updateDynamic("componentCount")(componentCount.get.asInstanceOf[js.Any])
-    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (crc32c != null) __obj.updateDynamic("crc32c")(crc32c.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash.asInstanceOf[js.Any])
-    if (mediaLink != null) __obj.updateDynamic("mediaLink")(mediaLink.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (metageneration != null) __obj.updateDynamic("metageneration")(metageneration.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
-    if (timeDeleted != null) __obj.updateDynamic("timeDeleted")(timeDeleted.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObject]
   }
+  @scala.inline
+  implicit class SchemaObjectOps[Self <: SchemaObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAclVarargs(value: SchemaObjectAccessControl*): Self = this.set("acl", js.Array(value :_*))
+    @scala.inline
+    def setAcl(value: js.Array[SchemaObjectAccessControl]): Self = this.set("acl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcl: Self = this.set("acl", js.undefined)
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setCacheControl(value: String): Self = this.set("cacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("cacheControl", js.undefined)
+    @scala.inline
+    def setComponentCount(value: Double): Self = this.set("componentCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentCount: Self = this.set("componentCount", js.undefined)
+    @scala.inline
+    def setContentDisposition(value: String): Self = this.set("contentDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDisposition: Self = this.set("contentDisposition", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: String): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: String): Self = this.set("contentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("contentLanguage", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setCrc32c(value: String): Self = this.set("crc32c", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrc32c: Self = this.set("crc32c", js.undefined)
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setGeneration(value: String): Self = this.set("generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneration: Self = this.set("generation", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMd5Hash(value: String): Self = this.set("md5Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMd5Hash: Self = this.set("md5Hash", js.undefined)
+    @scala.inline
+    def setMediaLink(value: String): Self = this.set("mediaLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaLink: Self = this.set("mediaLink", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMetageneration(value: String): Self = this.set("metageneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetageneration: Self = this.set("metageneration", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwner(value: Entity): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStorageClass(value: String): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+    @scala.inline
+    def setTimeDeleted(value: String): Self = this.set("timeDeleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeDeleted: Self = this.set("timeDeleted", js.undefined)
+    @scala.inline
+    def setUpdated(value: String): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+  }
+  
 }
 

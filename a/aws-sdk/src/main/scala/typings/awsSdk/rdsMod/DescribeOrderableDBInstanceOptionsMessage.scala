@@ -46,27 +46,58 @@ trait DescribeOrderableDBInstanceOptionsMessage extends js.Object {
 
 object DescribeOrderableDBInstanceOptionsMessage {
   @scala.inline
-  def apply(
-    Engine: String,
-    AvailabilityZoneGroup: String = null,
-    DBInstanceClass: String = null,
-    EngineVersion: String = null,
-    Filters: FilterList = null,
-    LicenseModel: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    Vpc: js.UndefOr[BooleanOptional] = js.undefined
-  ): DescribeOrderableDBInstanceOptionsMessage = {
+  def apply(Engine: String): DescribeOrderableDBInstanceOptionsMessage = {
     val __obj = js.Dynamic.literal(Engine = Engine.asInstanceOf[js.Any])
-    if (AvailabilityZoneGroup != null) __obj.updateDynamic("AvailabilityZoneGroup")(AvailabilityZoneGroup.asInstanceOf[js.Any])
-    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Vpc)) __obj.updateDynamic("Vpc")(Vpc.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeOrderableDBInstanceOptionsMessage]
   }
+  @scala.inline
+  implicit class DescribeOrderableDBInstanceOptionsMessageOps[Self <: DescribeOrderableDBInstanceOptionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZoneGroup(value: String): Self = this.set("AvailabilityZoneGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZoneGroup: Self = this.set("AvailabilityZoneGroup", js.undefined)
+    @scala.inline
+    def setDBInstanceClass(value: String): Self = this.set("DBInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceClass: Self = this.set("DBInstanceClass", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setLicenseModel(value: String): Self = this.set("LicenseModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseModel: Self = this.set("LicenseModel", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setVpc(value: BooleanOptional): Self = this.set("Vpc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpc: Self = this.set("Vpc", js.undefined)
+  }
+  
 }
 

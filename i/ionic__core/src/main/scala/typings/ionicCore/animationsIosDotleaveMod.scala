@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object animationsIosDotleaveMod extends js.Object {
   def iosLeaveAnimation(baseEl: HTMLElement): Animation = js.native
+  def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: js.UndefOr[scala.Nothing], duration: Double): Animation = js.native
   def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: HTMLElement): Animation = js.native
   def iosLeaveAnimation(baseEl: HTMLElement, presentingEl: HTMLElement, duration: Double): Animation = js.native
 }

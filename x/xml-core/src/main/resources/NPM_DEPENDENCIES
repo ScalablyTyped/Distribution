@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xml-core" : "1.0.21"
+      "xml-core" : "1.0.24"
     }
   ],
   "test-dependencies" : [
     {
-      "xml-core" : "1.0.21"
+      "xml-core" : "1.0.24"
     }
   ],
   "compile-devDependencies" : [

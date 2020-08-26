@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.NamedRanges
   * @see com.sun.star.sheet.NamedRange
   */
+@js.native
 trait XNamedRanges extends XNameAccess {
   /**
     * adds a new named range to the collection.
@@ -22,7 +23,7 @@ trait XNamedRanges extends XNameAccess {
     * @param aPosition specifies the base address for relative cell references.
     * @param nType a combination of flags that specify the type of a named range, as defined in {@link NamedRangeFlag} .  This parameter will be zero for any
     */
-  def addNewByName(aName: String, aContent: String, aPosition: CellAddress, nType: Double): Unit
+  def addNewByName(aName: String, aContent: String, aPosition: CellAddress, nType: Double): Unit = js.native
   /**
     * creates named cell ranges from titles in a cell range.
     *
@@ -35,16 +36,16 @@ trait XNamedRanges extends XNameAccess {
     * @param aSource the cell range used to create the named ranges.
     * @param aBorder specifies the location of the title cells.
     */
-  def addNewFromTitles(aSource: CellRangeAddress, aBorder: Border): Unit
+  def addNewFromTitles(aSource: CellRangeAddress, aBorder: Border): Unit = js.native
   /**
     * writes a list of all named ranges into the document.
     *
     * The first column of the list contains the names. The second column contains the contents of the named ranges.
     * @param aOutputPosition specifies the top left cell of the output range.
     */
-  def outputList(aOutputPosition: CellAddress): Unit
+  def outputList(aOutputPosition: CellAddress): Unit = js.native
   /** removes a named range from the collection. */
-  def removeByName(aName: String): Unit
+  def removeByName(aName: String): Unit = js.native
 }
 
 object XNamedRanges {
@@ -68,5 +69,26 @@ object XNamedRanges {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addNewByName = js.Any.fromFunction4(addNewByName), addNewFromTitles = js.Any.fromFunction2(addNewFromTitles), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), outputList = js.Any.fromFunction1(outputList), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByName = js.Any.fromFunction1(removeByName))
     __obj.asInstanceOf[XNamedRanges]
   }
+  @scala.inline
+  implicit class XNamedRangesOps[Self <: XNamedRanges] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddNewByName(value: (String, String, CellAddress, Double) => Unit): Self = this.set("addNewByName", js.Any.fromFunction4(value))
+    @scala.inline
+    def setAddNewFromTitles(value: (CellRangeAddress, Border) => Unit): Self = this.set("addNewFromTitles", js.Any.fromFunction2(value))
+    @scala.inline
+    def setOutputList(value: CellAddress => Unit): Self = this.set("outputList", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRemoveByName(value: String => Unit): Self = this.set("removeByName", js.Any.fromFunction1(value))
+  }
+  
 }
 

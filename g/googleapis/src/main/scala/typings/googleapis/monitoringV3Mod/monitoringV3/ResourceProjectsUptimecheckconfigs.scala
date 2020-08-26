@@ -28,6 +28,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def create(callback: BodyResponseCallback[SchemaUptimeCheckConfig]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def create(params: ParamsResourceProjectsUptimecheckconfigsCreate): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def create(
     params: ParamsResourceProjectsUptimecheckconfigsCreate,
@@ -61,6 +62,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsUptimecheckconfigsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsUptimecheckconfigsDelete,
@@ -91,6 +93,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaUptimeCheckConfig]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def get(params: ParamsResourceProjectsUptimecheckconfigsGet): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def get(
     params: ParamsResourceProjectsUptimecheckconfigsGet,
@@ -124,6 +127,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListUptimeCheckConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUptimeCheckConfigsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUptimeCheckConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsUptimecheckconfigsList): GaxiosPromise[SchemaListUptimeCheckConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsUptimecheckconfigsList,
@@ -159,6 +163,7 @@ class ResourceProjectsUptimecheckconfigs protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaUptimeCheckConfig]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def patch(params: ParamsResourceProjectsUptimecheckconfigsPatch): GaxiosPromise[SchemaUptimeCheckConfig] = js.native
   def patch(
     params: ParamsResourceProjectsUptimecheckconfigsPatch,

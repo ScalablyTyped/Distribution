@@ -3,7 +3,6 @@ package typings.prismaBinding
 import typings.apolloLink.mod.ApolloLink
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphqlBinding.distTypesMod.FragmentReplacement
-import typings.graphqlTools.interfacesMod.IResolvers
 import typings.prismaBinding.anon.Debug
 import typings.prismaBinding.anon.TypeDefs
 import typings.prismaBinding.typesMod.PrismaOptions
@@ -20,7 +19,9 @@ object mod extends js.Object {
     def this(hasTypeDefsEndpointSecretFragmentReplacementsDebugDisableCache: PrismaOptions) = this()
   }
   
-  def extractFragmentReplacements(resolvers: IResolvers[_, _]): js.Array[FragmentReplacement] = js.native
+  def extractFragmentReplacements(
+    resolvers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IResolvers */ js.Any
+  ): js.Array[FragmentReplacement] = js.native
   def forwardTo(bindingName: String): js.Function4[
     /* parent */ js.Any, 
     /* args */ js.Any, 

@@ -31,18 +31,38 @@ trait SchemaGoogleExampleLibraryagentV1Book extends js.Object {
 
 object SchemaGoogleExampleLibraryagentV1Book {
   @scala.inline
-  def apply(
-    author: String = null,
-    name: String = null,
-    read: js.UndefOr[Boolean] = js.undefined,
-    title: String = null
-  ): SchemaGoogleExampleLibraryagentV1Book = {
+  def apply(): SchemaGoogleExampleLibraryagentV1Book = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleExampleLibraryagentV1Book]
   }
+  @scala.inline
+  implicit class SchemaGoogleExampleLibraryagentV1BookOps[Self <: SchemaGoogleExampleLibraryagentV1Book] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: String): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRead: Self = this.set("read", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

@@ -40,6 +40,7 @@ trait ContainerBase extends NodeBase {
     * @returns This container for chaining.
     */
   def append(nodes: (Node | js.Object | String)*): this.type = js.native
+  def each(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Boolean]): Boolean = js.native
   /**
     * Iterates through the container's immediate children, calling the
     * callback function for each child. If you need to recursively iterate
@@ -51,7 +52,8 @@ trait ContainerBase extends NodeBase {
     * will adjust the current index to match the mutations.
     * @returns False if the callback returns false during iteration.
     */
-  def each(callback: js.Function2[/* node */ ChildNode, /* index */ Double, _]): Boolean | Unit = js.native
+  @JSName("each")
+  def each_Unit(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Unit]): Unit = js.native
   /**
     * Determines whether all child nodes satisfy the specified test.
     * @param callback A function that accepts up to three arguments. The
@@ -61,11 +63,7 @@ trait ContainerBase extends NodeBase {
     * children.
     */
   def every(
-    callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], _]
-  ): Boolean = js.native
-  def every(
-    callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], _],
-    thisArg: js.Any
+    callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], Boolean]
   ): Boolean = js.native
   def index(child: Double): Double = js.native
   /**
@@ -163,28 +161,18 @@ trait ContainerBase extends NodeBase {
     * @param callback A function that accepts up to three arguments. The some
     * method calls the callback for each node until the callback returns true,
     * or until the end of the array.
-    * @param thisArg An object to which the this keyword can refer in the
-    * callback function. If thisArg is omitted, undefined is used as the
-    * this value.
     * @returns True if callback returns true for (at least) one of the
     * container's children.
     */
   def some(
     callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], Boolean]
   ): Boolean = js.native
-  def some(
-    callback: js.Function3[/* node */ ChildNode, /* index */ Double, /* nodes */ js.Array[ChildNode], Boolean],
-    thisArg: js.Any
-  ): Boolean = js.native
-  /**
-    * Traverses the container's descendant nodes, calling `callback` for each
-    * node. Like container.each(), this method is safe to use if you are
-    * mutating arrays during iteration. If you only need to iterate through
-    * the container's immediate children, use container.each().
-    * @param callback Iterator.
-    */
-  def walk(callback: js.Function2[/* node */ ChildNode, /* index */ Double, _]): Boolean | Unit = js.native
-  def walkAtRules(callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, _]): Boolean | Unit = js.native
+  def walk(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Boolean]): Boolean = js.native
+  def walkAtRules(callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Boolean]): Boolean = js.native
+  def walkAtRules(nameFilter: String, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Boolean]): Boolean = js.native
+  def walkAtRules(nameFilter: RegExp, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Boolean]): Boolean = js.native
+  @JSName("walkAtRules")
+  def walkAtRules_Unit(callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Unit]): Unit = js.native
   /**
     * Traverses the container's descendant nodes, calling `callback` for each
     * at-rule. Like container.each(), this method is safe to use if you are
@@ -194,16 +182,24 @@ trait ContainerBase extends NodeBase {
     * @param callback Iterator called for each at-rule node within the
     * container.
     */
-  def walkAtRules(nameFilter: String, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, _]): Boolean | Unit = js.native
-  def walkAtRules(nameFilter: RegExp, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, _]): Boolean | Unit = js.native
+  @JSName("walkAtRules")
+  def walkAtRules_Unit(nameFilter: String, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Unit]): Unit = js.native
+  @JSName("walkAtRules")
+  def walkAtRules_Unit(nameFilter: RegExp, callback: js.Function2[/* atRule */ AtRule_, /* index */ Double, Unit]): Unit = js.native
+  def walkComments(callback: js.Function2[/* comment */ Comment_, /* indexed */ Double, Boolean]): Boolean = js.native
   /**
     * Traverses the container's descendant nodes, calling `callback` for each
     * comment. Like container.each(), this method is safe to use if you are
     * mutating arrays during iteration.
     * @param callback Iterator called for each comment node within the container.
     */
-  def walkComments(callback: js.Function2[/* comment */ Comment_, /* indexed */ Double, _]): Unit | Boolean = js.native
-  def walkDecls(callback: js.Function2[/* decl */ Declaration, /* index */ Double, _]): Boolean | Unit = js.native
+  @JSName("walkComments")
+  def walkComments_Unit(callback: js.Function2[/* comment */ Comment_, /* indexed */ Double, Unit]): Unit = js.native
+  def walkDecls(callback: js.Function2[/* decl */ Declaration, /* index */ Double, Boolean]): Boolean = js.native
+  def walkDecls(propFilter: String, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Boolean]): Boolean = js.native
+  def walkDecls(propFilter: RegExp, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Boolean]): Boolean = js.native
+  @JSName("walkDecls")
+  def walkDecls_Unit(callback: js.Function2[/* decl */ Declaration, /* index */ Double, Unit]): Unit = js.native
   /**
     * Traverses the container's descendant nodes, calling `callback` for each
     * declaration. Like container.each(), this method is safe to use if you
@@ -212,11 +208,15 @@ trait ContainerBase extends NodeBase {
     * declarations whose property matches propFilter will be iterated over.
     * @param callback Called for each declaration node within the container.
     */
-  def walkDecls(propFilter: String): Boolean | Unit = js.native
-  def walkDecls(propFilter: String, callback: js.Function2[/* decl */ Declaration, /* index */ Double, _]): Boolean | Unit = js.native
-  def walkDecls(propFilter: RegExp): Boolean | Unit = js.native
-  def walkDecls(propFilter: RegExp, callback: js.Function2[/* decl */ Declaration, /* index */ Double, _]): Boolean | Unit = js.native
-  def walkRules(callback: js.Function2[/* atRule */ Rule_, /* index */ Double, _]): Boolean | Unit = js.native
+  @JSName("walkDecls")
+  def walkDecls_Unit(propFilter: String, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Unit]): Unit = js.native
+  @JSName("walkDecls")
+  def walkDecls_Unit(propFilter: RegExp, callback: js.Function2[/* decl */ Declaration, /* index */ Double, Unit]): Unit = js.native
+  def walkRules(callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Boolean]): Boolean = js.native
+  def walkRules(selectorFilter: String, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Boolean]): Boolean = js.native
+  def walkRules(selectorFilter: RegExp, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Boolean]): Boolean = js.native
+  @JSName("walkRules")
+  def walkRules_Unit(callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Unit]): Unit = js.native
   /**
     * Traverses the container's descendant nodes, calling `callback` for each
     * rule. Like container.each(), this method is safe to use if you are
@@ -226,9 +226,18 @@ trait ContainerBase extends NodeBase {
     * @param callback Iterator called for each rule node within the
     * container.
     */
-  def walkRules(selectorFilter: String, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, _]): Boolean | Unit = js.native
-  def walkRules(selectorFilter: js.Any): Boolean | Unit = js.native
-  def walkRules(selectorFilter: js.Any, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, _]): Boolean | Unit = js.native
-  def walkRules(selectorFilter: RegExp, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, _]): Boolean | Unit = js.native
+  @JSName("walkRules")
+  def walkRules_Unit(selectorFilter: String, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Unit]): Unit = js.native
+  @JSName("walkRules")
+  def walkRules_Unit(selectorFilter: RegExp, callback: js.Function2[/* atRule */ Rule_, /* index */ Double, Unit]): Unit = js.native
+  /**
+    * Traverses the container's descendant nodes, calling `callback` for each
+    * node. Like container.each(), this method is safe to use if you are
+    * mutating arrays during iteration. If you only need to iterate through
+    * the container's immediate children, use container.each().
+    * @param callback Iterator.
+    */
+  @JSName("walk")
+  def walk_Unit(callback: js.Function2[/* node */ ChildNode, /* index */ Double, Unit]): Unit = js.native
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Statement () extends js.Object {
   def this(modifiers: js.Array[StmtModifier]) = this()
+  def this(modifiers: js.UndefOr[scala.Nothing], sourceSpan: ParseSourceSpan) = this()
   def this(modifiers: js.Array[StmtModifier], sourceSpan: ParseSourceSpan) = this()
   def this(modifiers: Null, sourceSpan: ParseSourceSpan) = this()
   var modifiers: js.Array[StmtModifier] = js.native

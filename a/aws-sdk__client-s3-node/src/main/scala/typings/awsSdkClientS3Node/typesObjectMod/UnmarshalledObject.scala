@@ -1,47 +1,51 @@
 package typings.awsSdkClientS3Node.typesObjectMod
 
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.GLACIER
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.ONEZONE_IA
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.REDUCED_REDUNDANCY
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.STANDARD
-import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.STANDARD_IA
 import typings.awsSdkClientS3Node.typesOwnerMod.UnmarshalledOwner
 import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledObject extends Object {
   /**
     * _LastModified shape
     */
   @JSName("LastModified")
-  var LastModified_UnmarshalledObject: js.UndefOr[Date] = js.undefined
+  var LastModified_UnmarshalledObject: js.UndefOr[Date] = js.native
   /**
     * _Owner shape
     */
   @JSName("Owner")
-  var Owner_UnmarshalledObject: js.UndefOr[UnmarshalledOwner] = js.undefined
+  var Owner_UnmarshalledObject: js.UndefOr[UnmarshalledOwner] = js.native
 }
 
 object UnmarshalledObject {
   @scala.inline
-  def apply(
-    ETag: String = null,
-    Key: String = null,
-    LastModified: Date = null,
-    Owner: UnmarshalledOwner = null,
-    Size: js.UndefOr[Double] = js.undefined,
-    StorageClass: STANDARD | REDUCED_REDUNDANCY | GLACIER | STANDARD_IA | ONEZONE_IA | String = null
-  ): UnmarshalledObject = {
+  def apply(): UnmarshalledObject = {
     val __obj = js.Dynamic.literal()
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (Owner != null) __obj.updateDynamic("Owner")(Owner.asInstanceOf[js.Any])
-    if (!js.isUndefined(Size)) __obj.updateDynamic("Size")(Size.get.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledObject]
   }
+  @scala.inline
+  implicit class UnmarshalledObjectOps[Self <: UnmarshalledObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastModified(value: Date): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setOwner(value: UnmarshalledOwner): Self = this.set("Owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("Owner", js.undefined)
+  }
+  
 }
 

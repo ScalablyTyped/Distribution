@@ -23,11 +23,11 @@ trait Service extends js.Object {
     */
   var Description: js.UndefOr[ResourceDescription] = js.native
   /**
-    * A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
+    * A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
     */
   var DnsConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.DnsConfig] = js.native
   /**
-    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, AWS Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
+    *  Public DNS and HTTP namespaces only. A complex type that contains settings for an optional health check. If you specify settings for a health check, AWS Cloud Map associates the health check with the records that you specify in DnsConfig. For information about the charges for health checks, see Amazon Route 53 Pricing.
     */
   var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
   /**
@@ -54,32 +54,66 @@ trait Service extends js.Object {
 
 object Service {
   @scala.inline
-  def apply(
-    Arn: Arn = null,
-    CreateDate: Timestamp = null,
-    CreatorRequestId: ResourceId = null,
-    Description: ResourceDescription = null,
-    DnsConfig: DnsConfig = null,
-    HealthCheckConfig: HealthCheckConfig = null,
-    HealthCheckCustomConfig: HealthCheckCustomConfig = null,
-    Id: ResourceId = null,
-    InstanceCount: js.UndefOr[ResourceCount] = js.undefined,
-    Name: ServiceName = null,
-    NamespaceId: ResourceId = null
-  ): Service = {
+  def apply(): Service = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (CreateDate != null) __obj.updateDynamic("CreateDate")(CreateDate.asInstanceOf[js.Any])
-    if (CreatorRequestId != null) __obj.updateDynamic("CreatorRequestId")(CreatorRequestId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DnsConfig != null) __obj.updateDynamic("DnsConfig")(DnsConfig.asInstanceOf[js.Any])
-    if (HealthCheckConfig != null) __obj.updateDynamic("HealthCheckConfig")(HealthCheckConfig.asInstanceOf[js.Any])
-    if (HealthCheckCustomConfig != null) __obj.updateDynamic("HealthCheckCustomConfig")(HealthCheckCustomConfig.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (!js.isUndefined(InstanceCount)) __obj.updateDynamic("InstanceCount")(InstanceCount.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (NamespaceId != null) __obj.updateDynamic("NamespaceId")(NamespaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
+  @scala.inline
+  implicit class ServiceOps[Self <: Service] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCreateDate(value: Timestamp): Self = this.set("CreateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateDate: Self = this.set("CreateDate", js.undefined)
+    @scala.inline
+    def setCreatorRequestId(value: ResourceId): Self = this.set("CreatorRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatorRequestId: Self = this.set("CreatorRequestId", js.undefined)
+    @scala.inline
+    def setDescription(value: ResourceDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDnsConfig(value: DnsConfig): Self = this.set("DnsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsConfig: Self = this.set("DnsConfig", js.undefined)
+    @scala.inline
+    def setHealthCheckConfig(value: HealthCheckConfig): Self = this.set("HealthCheckConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckConfig: Self = this.set("HealthCheckConfig", js.undefined)
+    @scala.inline
+    def setHealthCheckCustomConfig(value: HealthCheckCustomConfig): Self = this.set("HealthCheckCustomConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckCustomConfig: Self = this.set("HealthCheckCustomConfig", js.undefined)
+    @scala.inline
+    def setId(value: ResourceId): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: ResourceCount): Self = this.set("InstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("InstanceCount", js.undefined)
+    @scala.inline
+    def setName(value: ServiceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setNamespaceId(value: ResourceId): Self = this.set("NamespaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamespaceId: Self = this.set("NamespaceId", js.undefined)
+  }
+  
 }
 

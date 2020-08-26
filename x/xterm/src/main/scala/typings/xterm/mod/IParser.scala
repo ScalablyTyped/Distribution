@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IParser extends js.Object {
   /**
     * Adds a handler for CSI escape sequences.
@@ -20,7 +21,7 @@ trait IParser extends js.Object {
   def registerCsiHandler(
     id: IFunctionIdentifier,
     callback: js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]
-  ): IDisposable
+  ): IDisposable = js.native
   /**
     * Adds a handler for DCS escape sequences.
     * @param id Specifies the function identifier under which the callback
@@ -41,7 +42,7 @@ trait IParser extends js.Object {
   def registerDcsHandler(
     id: IFunctionIdentifier,
     callback: js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]
-  ): IDisposable
+  ): IDisposable = js.native
   /**
     * Adds a handler for ESC escape sequences.
     * @param id Specifies the function identifier under which the callback
@@ -53,7 +54,7 @@ trait IParser extends js.Object {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def registerEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable
+  def registerEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean]): IDisposable = js.native
   /**
     * Adds a handler for OSC escape sequences.
     * @param ident The number (first parameter) of the sequence.
@@ -70,7 +71,7 @@ trait IParser extends js.Object {
     * The most recently added handler is tried first.
     * @return An IDisposable you can call to remove this handler.
     */
-  def registerOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable
+  def registerOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean]): IDisposable = js.native
 }
 
 object IParser {
@@ -84,5 +85,30 @@ object IParser {
     val __obj = js.Dynamic.literal(registerCsiHandler = js.Any.fromFunction2(registerCsiHandler), registerDcsHandler = js.Any.fromFunction2(registerDcsHandler), registerEscHandler = js.Any.fromFunction2(registerEscHandler), registerOscHandler = js.Any.fromFunction2(registerOscHandler))
     __obj.asInstanceOf[IParser]
   }
+  @scala.inline
+  implicit class IParserOps[Self <: IParser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegisterCsiHandler(
+      value: (IFunctionIdentifier, js.Function1[/* params */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable
+    ): Self = this.set("registerCsiHandler", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRegisterDcsHandler(
+      value: (IFunctionIdentifier, js.Function2[/* data */ String, /* param */ js.Array[Double | js.Array[Double]], Boolean]) => IDisposable
+    ): Self = this.set("registerDcsHandler", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRegisterEscHandler(value: (IFunctionIdentifier, js.Function0[Boolean]) => IDisposable): Self = this.set("registerEscHandler", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRegisterOscHandler(value: (Double, js.Function1[/* data */ String, Boolean]) => IDisposable): Self = this.set("registerOscHandler", js.Any.fromFunction2(value))
+  }
+  
 }
 

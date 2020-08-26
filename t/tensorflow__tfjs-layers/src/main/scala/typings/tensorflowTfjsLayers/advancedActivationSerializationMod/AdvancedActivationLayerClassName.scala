@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 /* Inlined @tensorflow/tfjs-layers.@tensorflow/tfjs-layers/dist/keras_format/layers/advanced_activation_serialization.AdvancedActivationLayerSerialization['class_name'] */
 /* Rewritten from type alias, can be one of: 
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.PReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU
-  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.Softmax
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ReLU
   - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.LeakyReLU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ELU
+  - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.ThresholdedReLU
 */
 trait AdvancedActivationLayerClassName extends js.Object
 

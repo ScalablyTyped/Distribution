@@ -12,7 +12,7 @@ A geographic extension for [kdbush](https://github.com/mourner/kdbush), the fast
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 15 |
-| # downloads        | 64379 |
+| # downloads        | 64866 |
 | # stars            | 0 |
 
 ## Links

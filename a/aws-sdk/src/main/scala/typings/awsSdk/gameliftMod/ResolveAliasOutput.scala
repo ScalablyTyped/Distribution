@@ -18,11 +18,30 @@ trait ResolveAliasOutput extends js.Object {
 
 object ResolveAliasOutput {
   @scala.inline
-  def apply(FleetArn: FleetArn = null, FleetId: FleetId = null): ResolveAliasOutput = {
+  def apply(): ResolveAliasOutput = {
     val __obj = js.Dynamic.literal()
-    if (FleetArn != null) __obj.updateDynamic("FleetArn")(FleetArn.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveAliasOutput]
   }
+  @scala.inline
+  implicit class ResolveAliasOutputOps[Self <: ResolveAliasOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFleetArn(value: FleetArn): Self = this.set("FleetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetArn: Self = this.set("FleetArn", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+  }
+  
 }
 

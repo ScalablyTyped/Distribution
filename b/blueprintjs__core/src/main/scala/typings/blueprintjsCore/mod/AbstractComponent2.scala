@@ -10,5 +10,6 @@ abstract class AbstractComponent2[P, S, SS] ()
   extends typings.blueprintjsCore.commonMod.AbstractComponent2[P, S, SS] {
   def this(props: P) = this()
   def this(props: P, context: js.Any) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
 }
 

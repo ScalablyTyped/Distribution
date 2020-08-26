@@ -11,7 +11,7 @@ Sort files in stream by path or any custom sort comparator
 | Keywords           | gulpplugin, gulp, sort, paths, order, comparator |
 | # releases         | 1 |
 | # dependents       | 29 |
-| # downloads        | 1539252 |
+| # downloads        | 1607153 |
 | # stars            | 7 |
 
 ## Links

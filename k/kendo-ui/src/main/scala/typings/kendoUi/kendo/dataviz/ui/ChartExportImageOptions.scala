@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartExportImageOptions extends js.Object {
-  var cors: js.UndefOr[String] = js.undefined
-  var height: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
+  var cors: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.native
 }
 
 object ChartExportImageOptions {
   @scala.inline
-  def apply(cors: String = null, height: String = null, width: String = null): ChartExportImageOptions = {
+  def apply(): ChartExportImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartExportImageOptions]
   }
+  @scala.inline
+  implicit class ChartExportImageOptionsOps[Self <: ChartExportImageOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCors(value: String): Self = this.set("cors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCors: Self = this.set("cors", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

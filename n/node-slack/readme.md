@@ -11,7 +11,7 @@ Send and receive Slack Webhooks easily!
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 53 |
-| # downloads        | 763174 |
+| # downloads        | 781956 |
 | # stars            | 15 |
 
 ## Links

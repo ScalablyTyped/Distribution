@@ -1,0 +1,12 @@
+package typings.angularCompiler.compilerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/compiler", "isQuote")
+@js.native
+object isQuote extends js.Object {
+  def apply(code: Double): Boolean = js.native
+}
+

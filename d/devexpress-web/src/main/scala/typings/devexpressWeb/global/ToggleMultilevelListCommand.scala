@@ -10,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ToggleMultilevelListCommand")
 @js.native
 class ToggleMultilevelListCommand ()
-  extends typings.devexpressWeb.ToggleMultilevelListCommand {
-  /**
-    * Executes the ToggleMultilevelListCommand command.
-    */
-  /* CompleteClass */
-  override def execute(): Boolean = js.native
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.CommandState[Boolean] = js.native
-}
+  extends typings.devexpressWeb.ToggleMultilevelListCommand
 

@@ -86,48 +86,98 @@ trait DataSourceParameters extends js.Object {
 
 object DataSourceParameters {
   @scala.inline
-  def apply(
-    AmazonElasticsearchParameters: AmazonElasticsearchParameters = null,
-    AthenaParameters: AthenaParameters = null,
-    AuroraParameters: AuroraParameters = null,
-    AuroraPostgreSqlParameters: AuroraPostgreSqlParameters = null,
-    AwsIotAnalyticsParameters: AwsIotAnalyticsParameters = null,
-    JiraParameters: JiraParameters = null,
-    MariaDbParameters: MariaDbParameters = null,
-    MySqlParameters: MySqlParameters = null,
-    PostgreSqlParameters: PostgreSqlParameters = null,
-    PrestoParameters: PrestoParameters = null,
-    RdsParameters: RdsParameters = null,
-    RedshiftParameters: RedshiftParameters = null,
-    S3Parameters: S3Parameters = null,
-    ServiceNowParameters: ServiceNowParameters = null,
-    SnowflakeParameters: SnowflakeParameters = null,
-    SparkParameters: SparkParameters = null,
-    SqlServerParameters: SqlServerParameters = null,
-    TeradataParameters: TeradataParameters = null,
-    TwitterParameters: TwitterParameters = null
-  ): DataSourceParameters = {
+  def apply(): DataSourceParameters = {
     val __obj = js.Dynamic.literal()
-    if (AmazonElasticsearchParameters != null) __obj.updateDynamic("AmazonElasticsearchParameters")(AmazonElasticsearchParameters.asInstanceOf[js.Any])
-    if (AthenaParameters != null) __obj.updateDynamic("AthenaParameters")(AthenaParameters.asInstanceOf[js.Any])
-    if (AuroraParameters != null) __obj.updateDynamic("AuroraParameters")(AuroraParameters.asInstanceOf[js.Any])
-    if (AuroraPostgreSqlParameters != null) __obj.updateDynamic("AuroraPostgreSqlParameters")(AuroraPostgreSqlParameters.asInstanceOf[js.Any])
-    if (AwsIotAnalyticsParameters != null) __obj.updateDynamic("AwsIotAnalyticsParameters")(AwsIotAnalyticsParameters.asInstanceOf[js.Any])
-    if (JiraParameters != null) __obj.updateDynamic("JiraParameters")(JiraParameters.asInstanceOf[js.Any])
-    if (MariaDbParameters != null) __obj.updateDynamic("MariaDbParameters")(MariaDbParameters.asInstanceOf[js.Any])
-    if (MySqlParameters != null) __obj.updateDynamic("MySqlParameters")(MySqlParameters.asInstanceOf[js.Any])
-    if (PostgreSqlParameters != null) __obj.updateDynamic("PostgreSqlParameters")(PostgreSqlParameters.asInstanceOf[js.Any])
-    if (PrestoParameters != null) __obj.updateDynamic("PrestoParameters")(PrestoParameters.asInstanceOf[js.Any])
-    if (RdsParameters != null) __obj.updateDynamic("RdsParameters")(RdsParameters.asInstanceOf[js.Any])
-    if (RedshiftParameters != null) __obj.updateDynamic("RedshiftParameters")(RedshiftParameters.asInstanceOf[js.Any])
-    if (S3Parameters != null) __obj.updateDynamic("S3Parameters")(S3Parameters.asInstanceOf[js.Any])
-    if (ServiceNowParameters != null) __obj.updateDynamic("ServiceNowParameters")(ServiceNowParameters.asInstanceOf[js.Any])
-    if (SnowflakeParameters != null) __obj.updateDynamic("SnowflakeParameters")(SnowflakeParameters.asInstanceOf[js.Any])
-    if (SparkParameters != null) __obj.updateDynamic("SparkParameters")(SparkParameters.asInstanceOf[js.Any])
-    if (SqlServerParameters != null) __obj.updateDynamic("SqlServerParameters")(SqlServerParameters.asInstanceOf[js.Any])
-    if (TeradataParameters != null) __obj.updateDynamic("TeradataParameters")(TeradataParameters.asInstanceOf[js.Any])
-    if (TwitterParameters != null) __obj.updateDynamic("TwitterParameters")(TwitterParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceParameters]
   }
+  @scala.inline
+  implicit class DataSourceParametersOps[Self <: DataSourceParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmazonElasticsearchParameters(value: AmazonElasticsearchParameters): Self = this.set("AmazonElasticsearchParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonElasticsearchParameters: Self = this.set("AmazonElasticsearchParameters", js.undefined)
+    @scala.inline
+    def setAthenaParameters(value: AthenaParameters): Self = this.set("AthenaParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAthenaParameters: Self = this.set("AthenaParameters", js.undefined)
+    @scala.inline
+    def setAuroraParameters(value: AuroraParameters): Self = this.set("AuroraParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuroraParameters: Self = this.set("AuroraParameters", js.undefined)
+    @scala.inline
+    def setAuroraPostgreSqlParameters(value: AuroraPostgreSqlParameters): Self = this.set("AuroraPostgreSqlParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuroraPostgreSqlParameters: Self = this.set("AuroraPostgreSqlParameters", js.undefined)
+    @scala.inline
+    def setAwsIotAnalyticsParameters(value: AwsIotAnalyticsParameters): Self = this.set("AwsIotAnalyticsParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIotAnalyticsParameters: Self = this.set("AwsIotAnalyticsParameters", js.undefined)
+    @scala.inline
+    def setJiraParameters(value: JiraParameters): Self = this.set("JiraParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJiraParameters: Self = this.set("JiraParameters", js.undefined)
+    @scala.inline
+    def setMariaDbParameters(value: MariaDbParameters): Self = this.set("MariaDbParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMariaDbParameters: Self = this.set("MariaDbParameters", js.undefined)
+    @scala.inline
+    def setMySqlParameters(value: MySqlParameters): Self = this.set("MySqlParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMySqlParameters: Self = this.set("MySqlParameters", js.undefined)
+    @scala.inline
+    def setPostgreSqlParameters(value: PostgreSqlParameters): Self = this.set("PostgreSqlParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostgreSqlParameters: Self = this.set("PostgreSqlParameters", js.undefined)
+    @scala.inline
+    def setPrestoParameters(value: PrestoParameters): Self = this.set("PrestoParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrestoParameters: Self = this.set("PrestoParameters", js.undefined)
+    @scala.inline
+    def setRdsParameters(value: RdsParameters): Self = this.set("RdsParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRdsParameters: Self = this.set("RdsParameters", js.undefined)
+    @scala.inline
+    def setRedshiftParameters(value: RedshiftParameters): Self = this.set("RedshiftParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedshiftParameters: Self = this.set("RedshiftParameters", js.undefined)
+    @scala.inline
+    def setS3Parameters(value: S3Parameters): Self = this.set("S3Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Parameters: Self = this.set("S3Parameters", js.undefined)
+    @scala.inline
+    def setServiceNowParameters(value: ServiceNowParameters): Self = this.set("ServiceNowParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceNowParameters: Self = this.set("ServiceNowParameters", js.undefined)
+    @scala.inline
+    def setSnowflakeParameters(value: SnowflakeParameters): Self = this.set("SnowflakeParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnowflakeParameters: Self = this.set("SnowflakeParameters", js.undefined)
+    @scala.inline
+    def setSparkParameters(value: SparkParameters): Self = this.set("SparkParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparkParameters: Self = this.set("SparkParameters", js.undefined)
+    @scala.inline
+    def setSqlServerParameters(value: SqlServerParameters): Self = this.set("SqlServerParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlServerParameters: Self = this.set("SqlServerParameters", js.undefined)
+    @scala.inline
+    def setTeradataParameters(value: TeradataParameters): Self = this.set("TeradataParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeradataParameters: Self = this.set("TeradataParameters", js.undefined)
+    @scala.inline
+    def setTwitterParameters(value: TwitterParameters): Self = this.set("TwitterParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTwitterParameters: Self = this.set("TwitterParameters", js.undefined)
+  }
+  
 }
 

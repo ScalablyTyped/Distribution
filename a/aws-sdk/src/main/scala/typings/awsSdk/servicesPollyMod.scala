@@ -16,7 +16,7 @@ object servicesPollyMod extends js.Object {
   /* static members */
   @js.native
   object PollyCustomizations extends js.Object {
-    var Presigner: Instantiable1[js.UndefOr[/* options */ PresignerOptions], typings.awsSdk.presignerMod.Presigner] = js.native
+    var Presigner: Instantiable1[/* options */ js.UndefOr[PresignerOptions], typings.awsSdk.presignerMod.Presigner] = js.native
   }
   
 }

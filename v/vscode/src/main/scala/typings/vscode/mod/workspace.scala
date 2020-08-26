@@ -36,7 +36,30 @@ object workspace extends js.Object {
   def asRelativePath(pathOrUri: Uri): String = js.native
   def asRelativePath(pathOrUri: Uri, includeWorkspaceFolder: Boolean): String = js.native
   def createFileSystemWatcher(globPattern: GlobPattern): FileSystemWatcher = js.native
+  def createFileSystemWatcher(
+    globPattern: GlobPattern,
+    ignoreCreateEvents: js.UndefOr[scala.Nothing],
+    ignoreChangeEvents: js.UndefOr[scala.Nothing],
+    ignoreDeleteEvents: Boolean
+  ): FileSystemWatcher = js.native
+  def createFileSystemWatcher(
+    globPattern: GlobPattern,
+    ignoreCreateEvents: js.UndefOr[scala.Nothing],
+    ignoreChangeEvents: Boolean
+  ): FileSystemWatcher = js.native
+  def createFileSystemWatcher(
+    globPattern: GlobPattern,
+    ignoreCreateEvents: js.UndefOr[scala.Nothing],
+    ignoreChangeEvents: Boolean,
+    ignoreDeleteEvents: Boolean
+  ): FileSystemWatcher = js.native
   def createFileSystemWatcher(globPattern: GlobPattern, ignoreCreateEvents: Boolean): FileSystemWatcher = js.native
+  def createFileSystemWatcher(
+    globPattern: GlobPattern,
+    ignoreCreateEvents: Boolean,
+    ignoreChangeEvents: js.UndefOr[scala.Nothing],
+    ignoreDeleteEvents: Boolean
+  ): FileSystemWatcher = js.native
   def createFileSystemWatcher(globPattern: GlobPattern, ignoreCreateEvents: Boolean, ignoreChangeEvents: Boolean): FileSystemWatcher = js.native
   def createFileSystemWatcher(
     globPattern: GlobPattern,
@@ -45,12 +68,30 @@ object workspace extends js.Object {
     ignoreDeleteEvents: Boolean
   ): FileSystemWatcher = js.native
   def findFiles(include: GlobPattern): Thenable[js.Array[Uri]] = js.native
+  def findFiles(
+    include: GlobPattern,
+    exclude: js.UndefOr[GlobPattern],
+    maxResults: js.UndefOr[scala.Nothing],
+    token: CancellationToken
+  ): Thenable[js.Array[Uri]] = js.native
+  def findFiles(include: GlobPattern, exclude: js.UndefOr[GlobPattern], maxResults: Double): Thenable[js.Array[Uri]] = js.native
+  def findFiles(
+    include: GlobPattern,
+    exclude: js.UndefOr[GlobPattern],
+    maxResults: Double,
+    token: CancellationToken
+  ): Thenable[js.Array[Uri]] = js.native
+  def findFiles(
+    include: GlobPattern,
+    exclude: Null,
+    maxResults: js.UndefOr[scala.Nothing],
+    token: CancellationToken
+  ): Thenable[js.Array[Uri]] = js.native
   def findFiles(include: GlobPattern, exclude: Null, maxResults: Double): Thenable[js.Array[Uri]] = js.native
   def findFiles(include: GlobPattern, exclude: Null, maxResults: Double, token: CancellationToken): Thenable[js.Array[Uri]] = js.native
   def findFiles(include: GlobPattern, exclude: GlobPattern): Thenable[js.Array[Uri]] = js.native
-  def findFiles(include: GlobPattern, exclude: GlobPattern, maxResults: Double): Thenable[js.Array[Uri]] = js.native
-  def findFiles(include: GlobPattern, exclude: GlobPattern, maxResults: Double, token: CancellationToken): Thenable[js.Array[Uri]] = js.native
   def getConfiguration(): WorkspaceConfiguration = js.native
+  def getConfiguration(section: js.UndefOr[scala.Nothing], scope: ConfigurationScope): WorkspaceConfiguration = js.native
   def getConfiguration(section: String): WorkspaceConfiguration = js.native
   def getConfiguration(section: String, scope: ConfigurationScope): WorkspaceConfiguration = js.native
   def getWorkspaceFolder(uri: Uri): js.UndefOr[WorkspaceFolder] = js.native
@@ -64,8 +105,8 @@ object workspace extends js.Object {
   def registerTextDocumentContentProvider(scheme: String, provider: TextDocumentContentProvider): Disposable = js.native
   def saveAll(): Thenable[Boolean] = js.native
   def saveAll(includeUntitled: Boolean): Thenable[Boolean] = js.native
-  def updateWorkspaceFolders(start: Double): Boolean = js.native
+  def updateWorkspaceFolders(start: Double, deleteCount: js.UndefOr[scala.Nothing], workspaceFoldersToAdd: Name*): Boolean = js.native
   def updateWorkspaceFolders(start: Double, deleteCount: Double, workspaceFoldersToAdd: Name*): Boolean = js.native
-  def updateWorkspaceFolders(start: Double, workspaceFoldersToAdd: Name*): Boolean = js.native
+  def updateWorkspaceFolders(start: Double, deleteCount: Null, workspaceFoldersToAdd: Name*): Boolean = js.native
 }
 

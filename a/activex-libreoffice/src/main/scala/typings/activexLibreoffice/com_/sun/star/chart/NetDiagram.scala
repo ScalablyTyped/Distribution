@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   *
   * Net diagrams are also known as radar diagrams.
   */
+@js.native
 trait NetDiagram
   extends Diagram
      with StackableDiagram

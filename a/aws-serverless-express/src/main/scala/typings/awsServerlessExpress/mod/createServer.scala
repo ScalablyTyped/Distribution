@@ -13,6 +13,11 @@ object createServer extends js.Object {
   def apply(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = js.native
   def apply(
     requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
+    serverListenCallback: js.UndefOr[scala.Nothing],
+    binaryMimeTypes: js.Array[String]
+  ): Server = js.native
+  def apply(
+    requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit],
     serverListenCallback: js.Function0[_]
   ): Server = js.native
   def apply(

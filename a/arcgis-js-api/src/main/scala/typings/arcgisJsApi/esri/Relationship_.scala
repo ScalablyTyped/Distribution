@@ -3,6 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`many-to-many`
 import typings.arcgisJsApi.arcgisJsApiStrings.`one-to-many`
 import typings.arcgisJsApi.arcgisJsApiStrings.`one-to-one`
+import typings.arcgisJsApi.arcgisJsApiStrings.destination
+import typings.arcgisJsApi.arcgisJsApiStrings.origin
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,6 +17,7 @@ trait Relationship_ extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#cardinality)
     */
   var cardinality: `one-to-one` | `one-to-many` | `many-to-many` = js.native
+  var composite: Boolean = js.native
   /**
     * The unique ID for the relationship. These ids for the relationships the [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) participates in are listed in the ArcGIS Services directory.
     *
@@ -27,6 +30,7 @@ trait Relationship_ extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#keyField)
     */
   var keyField: String = js.native
+  var keyFieldInRelationshipTable: String = js.native
   /**
     * The name of the relationship.
     *
@@ -39,5 +43,7 @@ trait Relationship_ extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html#relatedTableId)
     */
   var relatedTableId: Double = js.native
+  var relationshipTableId: Double = js.native
+  var role: origin | destination = js.native
 }
 

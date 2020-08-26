@@ -1,7 +1,7 @@
 
 # Scala.js typings for jss-plugin-vendor-prefixer
 
-Typings are for version 10.1.1
+Typings are for version 10.3.0
 
 ## Library description:
 JSS plugin that handles vendor prefixes in the browser

@@ -17,6 +17,8 @@ trait Stylesheet extends js.Object {
   @JSName("apply")
   def apply(source: String, callback: ApplyStringCallback): Unit = js.native
   @JSName("apply")
+  def apply(source: String, params: js.UndefOr[scala.Nothing], options: ApplyOptions): String | Document = js.native
+  @JSName("apply")
   def apply(source: String, params: js.Object): String = js.native
   @JSName("apply")
   def apply(source: String, params: js.Object, callback: ApplyStringCallback): Unit = js.native
@@ -36,6 +38,8 @@ trait Stylesheet extends js.Object {
   def apply(source: Document): Document = js.native
   @JSName("apply")
   def apply(source: Document, callback: ApplyDocumentCallback): Unit = js.native
+  @JSName("apply")
+  def apply(source: Document, params: js.UndefOr[scala.Nothing], options: ApplyOptions): String | Document = js.native
   @JSName("apply")
   def apply(source: Document, params: js.Object): Document = js.native
   @JSName("apply")

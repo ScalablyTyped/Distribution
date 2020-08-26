@@ -4,24 +4,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RowCollapsingEventUIParam extends js.Object {
   /**
     * Gets access the hierarchical grid object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[js.Any] = js.native
   /**
     * Gets access the row element for the row that's about to be collapsed.
     */
-  var parentrow: js.UndefOr[String] = js.undefined
+  var parentrow: js.UndefOr[String] = js.native
 }
 
 object RowCollapsingEventUIParam {
   @scala.inline
-  def apply(owner: js.Any = null, parentrow: String = null): RowCollapsingEventUIParam = {
+  def apply(): RowCollapsingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowCollapsingEventUIParam]
   }
+  @scala.inline
+  implicit class RowCollapsingEventUIParamOps[Self <: RowCollapsingEventUIParam] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOwner(value: js.Any): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setParentrow(value: String): Self = this.set("parentrow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentrow: Self = this.set("parentrow", js.undefined)
+  }
+  
 }
 

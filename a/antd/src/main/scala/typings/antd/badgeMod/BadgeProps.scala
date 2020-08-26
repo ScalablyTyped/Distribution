@@ -9,57 +9,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BadgeProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.native
   /** Number to show in badge */
-  var count: js.UndefOr[ReactNode] = js.undefined
+  var count: js.UndefOr[ReactNode] = js.native
   /** whether to show red dot without number */
-  var dot: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
+  var dot: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.native
   /** Max count to show */
-  var overflowCount: js.UndefOr[Double] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var scrollNumberPrefixCls: js.UndefOr[String] = js.undefined
-  var showZero: js.UndefOr[Boolean] = js.undefined
-  var status: js.UndefOr[PresetStatusColorType] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var text: js.UndefOr[ReactNode] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
+  var overflowCount: js.UndefOr[Double] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var scrollNumberPrefixCls: js.UndefOr[String] = js.native
+  var showZero: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[PresetStatusColorType] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var text: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[String] = js.native
 }
 
 object BadgeProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    color: LiteralUnion[PresetColorType, String] = null,
-    count: ReactNode = null,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    offset: js.Tuple2[Double | String, Double | String] = null,
-    overflowCount: js.UndefOr[Double] = js.undefined,
-    prefixCls: String = null,
-    scrollNumberPrefixCls: String = null,
-    showZero: js.UndefOr[Boolean] = js.undefined,
-    status: PresetStatusColorType = null,
-    style: CSSProperties = null,
-    text: ReactNode = null,
-    title: String = null
-  ): BadgeProps = {
+  def apply(): BadgeProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(overflowCount)) __obj.updateDynamic("overflowCount")(overflowCount.get.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (scrollNumberPrefixCls != null) __obj.updateDynamic("scrollNumberPrefixCls")(scrollNumberPrefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZero)) __obj.updateDynamic("showZero")(showZero.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeProps]
   }
+  @scala.inline
+  implicit class BadgePropsOps[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColor(value: LiteralUnion[PresetColorType, String]): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCount(value: ReactNode): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDot(value: Boolean): Self = this.set("dot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDot: Self = this.set("dot", js.undefined)
+    @scala.inline
+    def setOffset(value: js.Tuple2[Double | String, Double | String]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOverflowCount(value: Double): Self = this.set("overflowCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflowCount: Self = this.set("overflowCount", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setScrollNumberPrefixCls(value: String): Self = this.set("scrollNumberPrefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollNumberPrefixCls: Self = this.set("scrollNumberPrefixCls", js.undefined)
+    @scala.inline
+    def setShowZero(value: Boolean): Self = this.set("showZero", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowZero: Self = this.set("showZero", js.undefined)
+    @scala.inline
+    def setStatus(value: PresetStatusColorType): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setText(value: ReactNode): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

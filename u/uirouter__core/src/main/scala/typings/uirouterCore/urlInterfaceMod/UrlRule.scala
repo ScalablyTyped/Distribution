@@ -16,7 +16,7 @@ trait UrlRule extends js.Object {
     */
   @JSName("$id")
   var $id: Double = js.native
-  /** @hidden */
+  /** @internal */
   var _group: Double = js.native
   /**
     * This function is called if the rule matched, and was selected as the "best match".
@@ -49,7 +49,11 @@ trait UrlRule extends js.Object {
     * See [[UrlRuleHandlerFn]] for details
     */
   def handler(): String | TargetState | TargetStateDef | Unit = js.native
+  def handler(matchValue: js.UndefOr[scala.Nothing], url: js.UndefOr[scala.Nothing], router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+  def handler(matchValue: js.UndefOr[scala.Nothing], url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
+  def handler(matchValue: js.UndefOr[scala.Nothing], url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
   def handler(matchValue: js.Any): String | TargetState | TargetStateDef | Unit = js.native
+  def handler(matchValue: js.Any, url: js.UndefOr[scala.Nothing], router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
   def handler(matchValue: js.Any, url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
   def handler(matchValue: js.Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
   /**
@@ -58,6 +62,7 @@ trait UrlRule extends js.Object {
     * See [[UrlRuleMatchFn]] for details
     */
   def `match`(): js.Any = js.native
+  def `match`(url: js.UndefOr[scala.Nothing], router: UIRouter): js.Any = js.native
   def `match`(url: UrlParts): js.Any = js.native
   def `match`(url: UrlParts, router: UIRouter): js.Any = js.native
   /**

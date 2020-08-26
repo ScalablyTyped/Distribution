@@ -5,24 +5,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BeaconServiceChangeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_BeaconServiceChangeOptions: js.UndefOr[js.Function1[/* res */ Available, Unit]] = js.undefined
+  var success_BeaconServiceChangeOptions: js.UndefOr[js.Function1[/* res */ Available, Unit]] = js.native
 }
 
 object BeaconServiceChangeOptions {
   @scala.inline
-  def apply(
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: /* res */ Available => Unit = null
-  ): BeaconServiceChangeOptions = {
+  def apply(): BeaconServiceChangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[BeaconServiceChangeOptions]
   }
+  @scala.inline
+  implicit class BeaconServiceChangeOptionsOps[Self <: BeaconServiceChangeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccess(value: /* res */ Available => Unit): Self = this.set("success", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSuccess: Self = this.set("success", js.undefined)
+  }
+  
 }
 

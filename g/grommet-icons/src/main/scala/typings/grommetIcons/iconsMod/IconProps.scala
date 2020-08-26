@@ -8,24 +8,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IconProps extends js.Object {
-  var a11yTitle: js.UndefOr[String] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
+  var a11yTitle: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.native
+  var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
 }
 
 object IconProps {
   @scala.inline
-  def apply(
-    a11yTitle: String = null,
-    color: String = null,
-    size: small | medium | large | xlarge | String = null
-  ): IconProps = {
+  def apply(): IconProps = {
     val __obj = js.Dynamic.literal()
-    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconProps]
   }
+  @scala.inline
+  implicit class IconPropsOps[Self <: IconProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA11yTitle(value: String): Self = this.set("a11yTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA11yTitle: Self = this.set("a11yTitle", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large | xlarge | String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+  }
+  
 }
 

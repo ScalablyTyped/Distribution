@@ -4,10 +4,7 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.elementInterfaceMod.AnchorInterface
 import typings.ionicCore.elementInterfaceMod.ButtonInterface
 import typings.ionicCore.interfaceMod.RouterDirection
-import typings.ionicCore.ionicCoreStrings.button
-import typings.ionicCore.ionicCoreStrings.reset
 import typings.ionicCore.ionicCoreStrings.small
-import typings.ionicCore.ionicCoreStrings.submit
 import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
@@ -40,8 +37,6 @@ object fabButtonMod extends js.Object {
       * For more information on colors, see [theming](/docs/theming/basics).
       */
     var color: js.UndefOr[Color] = js.native
-    /* CompleteClass */
-    override var disabled: Boolean = js.native
     var el: HTMLElement = js.native
     /**
       * Emitted when the button loses focus.
@@ -77,8 +72,6 @@ object fabButtonMod extends js.Object {
       * [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
       */
     var translucent: Boolean = js.native
-    /* CompleteClass */
-    override var `type`: submit | reset | button = js.native
     @JSName("render")
     def render_MFabButton(): js.Any = js.native
   }

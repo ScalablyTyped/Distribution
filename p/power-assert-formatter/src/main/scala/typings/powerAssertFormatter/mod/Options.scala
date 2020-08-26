@@ -5,51 +5,90 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var ambiguousEastAsianCharWidth: js.UndefOr[Double] = js.undefined
-  var anonymous: js.UndefOr[String] = js.undefined
-  var circular: js.UndefOr[String] = js.undefined
-  var diff: js.UndefOr[js.Function] = js.undefined
-  var lineDiffThreshold: js.UndefOr[Double] = js.undefined
-  var lineSeparator: js.UndefOr[String] = js.undefined
-  var maxDepth: js.UndefOr[Double] = js.undefined
-  var outputOffset: js.UndefOr[Double] = js.undefined
-  var renderers: js.UndefOr[js.Array[_]] = js.undefined
-  var stringify: js.UndefOr[js.Function] = js.undefined
-  var widthOf: js.UndefOr[js.Function] = js.undefined
-  var writerClass: js.UndefOr[Instantiable] = js.undefined
+  var ambiguousEastAsianCharWidth: js.UndefOr[Double] = js.native
+  var anonymous: js.UndefOr[String] = js.native
+  var circular: js.UndefOr[String] = js.native
+  var diff: js.UndefOr[js.Function] = js.native
+  var lineDiffThreshold: js.UndefOr[Double] = js.native
+  var lineSeparator: js.UndefOr[String] = js.native
+  var maxDepth: js.UndefOr[Double] = js.native
+  var outputOffset: js.UndefOr[Double] = js.native
+  var renderers: js.UndefOr[js.Array[_]] = js.native
+  var stringify: js.UndefOr[js.Function] = js.native
+  var widthOf: js.UndefOr[js.Function] = js.native
+  var writerClass: js.UndefOr[Instantiable] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    ambiguousEastAsianCharWidth: js.UndefOr[Double] = js.undefined,
-    anonymous: String = null,
-    circular: String = null,
-    diff: js.Function = null,
-    lineDiffThreshold: js.UndefOr[Double] = js.undefined,
-    lineSeparator: String = null,
-    maxDepth: js.UndefOr[Double] = js.undefined,
-    outputOffset: js.UndefOr[Double] = js.undefined,
-    renderers: js.Array[_] = null,
-    stringify: js.Function = null,
-    widthOf: js.Function = null,
-    writerClass: Instantiable = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ambiguousEastAsianCharWidth)) __obj.updateDynamic("ambiguousEastAsianCharWidth")(ambiguousEastAsianCharWidth.get.asInstanceOf[js.Any])
-    if (anonymous != null) __obj.updateDynamic("anonymous")(anonymous.asInstanceOf[js.Any])
-    if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (diff != null) __obj.updateDynamic("diff")(diff.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineDiffThreshold)) __obj.updateDynamic("lineDiffThreshold")(lineDiffThreshold.get.asInstanceOf[js.Any])
-    if (lineSeparator != null) __obj.updateDynamic("lineSeparator")(lineSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDepth)) __obj.updateDynamic("maxDepth")(maxDepth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(outputOffset)) __obj.updateDynamic("outputOffset")(outputOffset.get.asInstanceOf[js.Any])
-    if (renderers != null) __obj.updateDynamic("renderers")(renderers.asInstanceOf[js.Any])
-    if (stringify != null) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
-    if (widthOf != null) __obj.updateDynamic("widthOf")(widthOf.asInstanceOf[js.Any])
-    if (writerClass != null) __obj.updateDynamic("writerClass")(writerClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmbiguousEastAsianCharWidth(value: Double): Self = this.set("ambiguousEastAsianCharWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmbiguousEastAsianCharWidth: Self = this.set("ambiguousEastAsianCharWidth", js.undefined)
+    @scala.inline
+    def setAnonymous(value: String): Self = this.set("anonymous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnonymous: Self = this.set("anonymous", js.undefined)
+    @scala.inline
+    def setCircular(value: String): Self = this.set("circular", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircular: Self = this.set("circular", js.undefined)
+    @scala.inline
+    def setDiff(value: js.Function): Self = this.set("diff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiff: Self = this.set("diff", js.undefined)
+    @scala.inline
+    def setLineDiffThreshold(value: Double): Self = this.set("lineDiffThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineDiffThreshold: Self = this.set("lineDiffThreshold", js.undefined)
+    @scala.inline
+    def setLineSeparator(value: String): Self = this.set("lineSeparator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineSeparator: Self = this.set("lineSeparator", js.undefined)
+    @scala.inline
+    def setMaxDepth(value: Double): Self = this.set("maxDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDepth: Self = this.set("maxDepth", js.undefined)
+    @scala.inline
+    def setOutputOffset(value: Double): Self = this.set("outputOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputOffset: Self = this.set("outputOffset", js.undefined)
+    @scala.inline
+    def setRenderersVarargs(value: js.Any*): Self = this.set("renderers", js.Array(value :_*))
+    @scala.inline
+    def setRenderers(value: js.Array[_]): Self = this.set("renderers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderers: Self = this.set("renderers", js.undefined)
+    @scala.inline
+    def setStringify(value: js.Function): Self = this.set("stringify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringify: Self = this.set("stringify", js.undefined)
+    @scala.inline
+    def setWidthOf(value: js.Function): Self = this.set("widthOf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidthOf: Self = this.set("widthOf", js.undefined)
+    @scala.inline
+    def setWriterClass(value: Instantiable): Self = this.set("writerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriterClass: Self = this.set("writerClass", js.undefined)
+  }
+  
 }
 

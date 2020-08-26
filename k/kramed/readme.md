@@ -11,8 +11,8 @@ A markdown (kramdown compatible) parser and compiler. Built for speed.
 | Full name          | kramed |
 | Keywords           | markdown, markup, html, kramdown, kramed, parser |
 | # releases         | 0 |
-| # dependents       | 28 |
-| # downloads        | 707862 |
+| # dependents       | 29 |
+| # downloads        | 712508 |
 | # stars            | 3 |
 
 ## Links

@@ -32,6 +32,7 @@ class ResourceRepresentatives protected () extends js.Object {
     */
   def representativeInfoByAddress(): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
   def representativeInfoByAddress(callback: BodyResponseCallback[SchemaRepresentativeInfoResponse]): Unit = js.native
+  def representativeInfoByAddress(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
   def representativeInfoByAddress(params: ParamsResourceRepresentativesRepresentativeinfobyaddress): GaxiosPromise[SchemaRepresentativeInfoResponse] = js.native
   def representativeInfoByAddress(
     params: ParamsResourceRepresentativesRepresentativeinfobyaddress,
@@ -67,6 +68,7 @@ class ResourceRepresentatives protected () extends js.Object {
     */
   def representativeInfoByDivision(): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
   def representativeInfoByDivision(callback: BodyResponseCallback[SchemaRepresentativeInfoData]): Unit = js.native
+  def representativeInfoByDivision(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
   def representativeInfoByDivision(params: ParamsResourceRepresentativesRepresentativeinfobydivision): GaxiosPromise[SchemaRepresentativeInfoData] = js.native
   def representativeInfoByDivision(
     params: ParamsResourceRepresentativesRepresentativeinfobydivision,

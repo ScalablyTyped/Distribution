@@ -12,7 +12,7 @@ Babel browserify transform
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 1057 |
-| # downloads        | 14637321 |
+| # downloads        | 14766218 |
 | # stars            | 77 |
 
 ## Links

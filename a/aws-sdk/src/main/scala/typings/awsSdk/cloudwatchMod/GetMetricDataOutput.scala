@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GetMetricDataOutput extends js.Object {
   /**
-    * Contains a message about this GetMetricData operation, if the operation results in such a message. An example of a message that may be returned is Maximum number of allowed metrics exceeded. If there is a message, as much of the operation as possible is still executed. A message appears here only if it is related to the global GetMetricData operation. Any message about a specific metric returned by the operation appears in the MetricDataResult object returned for that metric.
+    * Contains a message about this GetMetricData operation, if the operation results in such a message. An example of a message that might be returned is Maximum number of allowed metrics exceeded. If there is a message, as much of the operation as possible is still executed. A message appears here only if it is related to the global GetMetricData operation. Any message about a specific metric returned by the operation appears in the MetricDataResult object returned for that metric.
     */
   var Messages: js.UndefOr[MetricDataResultMessages] = js.native
   /**
@@ -22,16 +22,38 @@ trait GetMetricDataOutput extends js.Object {
 
 object GetMetricDataOutput {
   @scala.inline
-  def apply(
-    Messages: MetricDataResultMessages = null,
-    MetricDataResults: MetricDataResults = null,
-    NextToken: NextToken = null
-  ): GetMetricDataOutput = {
+  def apply(): GetMetricDataOutput = {
     val __obj = js.Dynamic.literal()
-    if (Messages != null) __obj.updateDynamic("Messages")(Messages.asInstanceOf[js.Any])
-    if (MetricDataResults != null) __obj.updateDynamic("MetricDataResults")(MetricDataResults.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricDataOutput]
   }
+  @scala.inline
+  implicit class GetMetricDataOutputOps[Self <: GetMetricDataOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessagesVarargs(value: MessageData*): Self = this.set("Messages", js.Array(value :_*))
+    @scala.inline
+    def setMessages(value: MetricDataResultMessages): Self = this.set("Messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("Messages", js.undefined)
+    @scala.inline
+    def setMetricDataResultsVarargs(value: MetricDataResult*): Self = this.set("MetricDataResults", js.Array(value :_*))
+    @scala.inline
+    def setMetricDataResults(value: MetricDataResults): Self = this.set("MetricDataResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricDataResults: Self = this.set("MetricDataResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -13,12 +13,12 @@ trait DataSync extends Service {
   @JSName("config")
   var config_DataSync: ConfigBase with ClientConfiguration = js.native
   /**
-    * Cancels execution of a task.  When you cancel a task execution, the transfer of some files are abruptly interrupted. The contents of files that are transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution on the same task and you allow the task execution to complete, file content on the destination is complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, AWS DataSync successfully complete the transfer when you start the next task execution.
+    * Cancels execution of a task.  When you cancel a task execution, the transfer of some files is abruptly interrupted. The contents of files that are transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution on the same task and you allow the task execution to complete, file content on the destination is complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, AWS DataSync successfully complete the transfer when you start the next task execution.
     */
   def cancelTaskExecution(): Request[CancelTaskExecutionResponse, AWSError] = js.native
   def cancelTaskExecution(callback: js.Function2[/* err */ AWSError, /* data */ CancelTaskExecutionResponse, Unit]): Request[CancelTaskExecutionResponse, AWSError] = js.native
   /**
-    * Cancels execution of a task.  When you cancel a task execution, the transfer of some files are abruptly interrupted. The contents of files that are transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution on the same task and you allow the task execution to complete, file content on the destination is complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, AWS DataSync successfully complete the transfer when you start the next task execution.
+    * Cancels execution of a task.  When you cancel a task execution, the transfer of some files is abruptly interrupted. The contents of files that are transferred to the destination might be incomplete or inconsistent with the source files. However, if you start a new task execution on the same task and you allow the task execution to complete, file content on the destination is complete and consistent. This applies to other unexpected failures that interrupt a task execution. In all of these cases, AWS DataSync successfully complete the transfer when you start the next task execution.
     */
   def cancelTaskExecution(params: CancelTaskExecutionRequest): Request[CancelTaskExecutionResponse, AWSError] = js.native
   def cancelTaskExecution(
@@ -26,12 +26,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CancelTaskExecutionResponse, Unit]
   ): Request[CancelTaskExecutionResponse, AWSError] = js.native
   /**
-    * Activates an AWS DataSync agent that you have deployed on your host. The activation process associates your agent with your account. In the activation process, you specify information such as the AWS Region that you want to activate the agent in. You activate the agent in the AWS Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this AWS Region. You can activate the agent in a VPC (Virtual private Cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public Internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by AWS on a regular basis, using a mechanism that ensures minimal interruption to your tasks. 
+    * Activates an AWS DataSync agent that you have deployed on your host. The activation process associates your agent with your account. In the activation process, you specify information such as the AWS Region that you want to activate the agent in. You activate the agent in the AWS Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this AWS Region. You can activate the agent in a VPC (virtual private cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public Internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by AWS on a regular basis, using a mechanism that ensures minimal interruption to your tasks. 
     */
   def createAgent(): Request[CreateAgentResponse, AWSError] = js.native
   def createAgent(callback: js.Function2[/* err */ AWSError, /* data */ CreateAgentResponse, Unit]): Request[CreateAgentResponse, AWSError] = js.native
   /**
-    * Activates an AWS DataSync agent that you have deployed on your host. The activation process associates your agent with your account. In the activation process, you specify information such as the AWS Region that you want to activate the agent in. You activate the agent in the AWS Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this AWS Region. You can activate the agent in a VPC (Virtual private Cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public Internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by AWS on a regular basis, using a mechanism that ensures minimal interruption to your tasks. 
+    * Activates an AWS DataSync agent that you have deployed on your host. The activation process associates your agent with your account. In the activation process, you specify information such as the AWS Region that you want to activate the agent in. You activate the agent in the AWS Region where your target locations (in Amazon S3 or Amazon EFS) reside. Your tasks are created in this AWS Region. You can activate the agent in a VPC (virtual private cloud) or provide the agent access to a VPC endpoint so you can run tasks without going over the public Internet. You can use an agent for more than one location. If a task uses multiple agents, all of them need to have status AVAILABLE for the task to run. If you use multiple agents for a source location, the status of all the agents must be AVAILABLE for the task to run.  Agents are automatically updated by AWS on a regular basis, using a mechanism that ensures minimal interruption to your tasks. 
     */
   def createAgent(params: CreateAgentRequest): Request[CreateAgentResponse, AWSError] = js.native
   def createAgent(
@@ -65,18 +65,31 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationFsxWindowsResponse, Unit]
   ): Request[CreateLocationFsxWindowsResponse, AWSError] = js.native
   /**
-    * Defines a file system on a Network File System (NFS) server that can be read from or written to
+    * Defines a file system on a Network File System (NFS) server that can be read from or written to.
     */
   def createLocationNfs(): Request[CreateLocationNfsResponse, AWSError] = js.native
   def createLocationNfs(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationNfsResponse, Unit]): Request[CreateLocationNfsResponse, AWSError] = js.native
   /**
-    * Defines a file system on a Network File System (NFS) server that can be read from or written to
+    * Defines a file system on a Network File System (NFS) server that can be read from or written to.
     */
   def createLocationNfs(params: CreateLocationNfsRequest): Request[CreateLocationNfsResponse, AWSError] = js.native
   def createLocationNfs(
     params: CreateLocationNfsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationNfsResponse, Unit]
   ): Request[CreateLocationNfsResponse, AWSError] = js.native
+  /**
+    * Creates an endpoint for a self-managed object storage bucket.
+    */
+  def createLocationObjectStorage(): Request[CreateLocationObjectStorageResponse, AWSError] = js.native
+  def createLocationObjectStorage(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationObjectStorageResponse, Unit]): Request[CreateLocationObjectStorageResponse, AWSError] = js.native
+  /**
+    * Creates an endpoint for a self-managed object storage bucket.
+    */
+  def createLocationObjectStorage(params: CreateLocationObjectStorageRequest): Request[CreateLocationObjectStorageResponse, AWSError] = js.native
+  def createLocationObjectStorage(
+    params: CreateLocationObjectStorageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationObjectStorageResponse, Unit]
+  ): Request[CreateLocationObjectStorageResponse, AWSError] = js.native
   /**
     * Creates an endpoint for an Amazon S3 bucket. For AWS DataSync to access a destination S3 bucket, it needs an AWS Identity and Access Management (IAM) role that has the required permissions. You can set up the required permissions by creating an IAM policy that grants the required permissions and attaching the policy to the role. An example of such a policy is shown in the examples section. For more information, see https://docs.aws.amazon.com/datasync/latest/userguide/working-with-locations.html#create-s3-location in the AWS DataSync User Guide. 
     */
@@ -91,12 +104,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationS3Response, Unit]
   ): Request[CreateLocationS3Response, AWSError] = js.native
   /**
-    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to.
+    * Defines a file system on a Server Message Block (SMB) server that can be read from or written to.
     */
   def createLocationSmb(): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ CreateLocationSmbResponse, Unit]): Request[CreateLocationSmbResponse, AWSError] = js.native
   /**
-    * Defines a file system on an Server Message Block (SMB) server that can be read from or written to.
+    * Defines a file system on a Server Message Block (SMB) server that can be read from or written to.
     */
   def createLocationSmb(params: CreateLocationSmbRequest): Request[CreateLocationSmbResponse, AWSError] = js.native
   def createLocationSmb(
@@ -195,18 +208,31 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationFsxWindowsResponse, Unit]
   ): Request[DescribeLocationFsxWindowsResponse, AWSError] = js.native
   /**
-    * Returns metadata, such as the path information, about a NFS location.
+    * Returns metadata, such as the path information, about an NFS location.
     */
   def describeLocationNfs(): Request[DescribeLocationNfsResponse, AWSError] = js.native
   def describeLocationNfs(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationNfsResponse, Unit]): Request[DescribeLocationNfsResponse, AWSError] = js.native
   /**
-    * Returns metadata, such as the path information, about a NFS location.
+    * Returns metadata, such as the path information, about an NFS location.
     */
   def describeLocationNfs(params: DescribeLocationNfsRequest): Request[DescribeLocationNfsResponse, AWSError] = js.native
   def describeLocationNfs(
     params: DescribeLocationNfsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationNfsResponse, Unit]
   ): Request[DescribeLocationNfsResponse, AWSError] = js.native
+  /**
+    * Returns metadata about a self-managed object storage server location.
+    */
+  def describeLocationObjectStorage(): Request[DescribeLocationObjectStorageResponse, AWSError] = js.native
+  def describeLocationObjectStorage(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationObjectStorageResponse, Unit]): Request[DescribeLocationObjectStorageResponse, AWSError] = js.native
+  /**
+    * Returns metadata about a self-managed object storage server location.
+    */
+  def describeLocationObjectStorage(params: DescribeLocationObjectStorageRequest): Request[DescribeLocationObjectStorageResponse, AWSError] = js.native
+  def describeLocationObjectStorage(
+    params: DescribeLocationObjectStorageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationObjectStorageResponse, Unit]
+  ): Request[DescribeLocationObjectStorageResponse, AWSError] = js.native
   /**
     * Returns metadata, such as bucket name, about an Amazon S3 bucket location.
     */
@@ -221,12 +247,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationS3Response, Unit]
   ): Request[DescribeLocationS3Response, AWSError] = js.native
   /**
-    * Returns metadata, such as the path and user information about a SMB location.
+    * Returns metadata, such as the path and user information about an SMB location.
     */
   def describeLocationSmb(): Request[DescribeLocationSmbResponse, AWSError] = js.native
   def describeLocationSmb(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLocationSmbResponse, Unit]): Request[DescribeLocationSmbResponse, AWSError] = js.native
   /**
-    * Returns metadata, such as the path and user information about a SMB location.
+    * Returns metadata, such as the path and user information about an SMB location.
     */
   def describeLocationSmb(params: DescribeLocationSmbRequest): Request[DescribeLocationSmbResponse, AWSError] = js.native
   def describeLocationSmb(
@@ -273,12 +299,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListAgentsResponse, Unit]
   ): Request[ListAgentsResponse, AWSError] = js.native
   /**
-    * Returns a lists of source and destination locations. If you have more locations than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a token that you can specify in your next request to fetch the next page of locations.
+    * Returns a list of source and destination locations. If you have more locations than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a token that you can specify in your next request to fetch the next page of locations.
     */
   def listLocations(): Request[ListLocationsResponse, AWSError] = js.native
   def listLocations(callback: js.Function2[/* err */ AWSError, /* data */ ListLocationsResponse, Unit]): Request[ListLocationsResponse, AWSError] = js.native
   /**
-    * Returns a lists of source and destination locations. If you have more locations than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a token that you can specify in your next request to fetch the next page of locations.
+    * Returns a list of source and destination locations. If you have more locations than are returned in a response (that is, the response returns only a truncated list of your agents), the response contains a token that you can specify in your next request to fetch the next page of locations.
     */
   def listLocations(params: ListLocationsRequest): Request[ListLocationsResponse, AWSError] = js.native
   def listLocations(
@@ -286,12 +312,12 @@ trait DataSync extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ListLocationsResponse, Unit]
   ): Request[ListLocationsResponse, AWSError] = js.native
   /**
-    * Returns all the tags associated with a specified resources. 
+    * Returns all the tags associated with a specified resource. 
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Returns all the tags associated with a specified resources. 
+    * Returns all the tags associated with a specified resource. 
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(

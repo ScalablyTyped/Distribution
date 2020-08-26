@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-limit" : "2.3.0"
+      "p-limit" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "p-limit" : "2.3.0"
+      "p-limit" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

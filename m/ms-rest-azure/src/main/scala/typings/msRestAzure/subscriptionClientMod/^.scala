@@ -2,8 +2,6 @@ package typings.msRestAzure.subscriptionClientMod
 
 import typings.msRest.mod.ServiceClientCredentials
 import typings.msRest.mod.ServiceClientOptions
-import typings.msRestAzure.operationsMod.Subscriptions
-import typings.msRestAzure.operationsMod.Tenants
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -40,21 +38,11 @@ class ^ protected () extends SubscriptionClient {
     */
   def this(credentials: ServiceClientCredentials) = this()
   def this(credentials: ServiceClientCredentials, baseUri: String) = this()
+  def this(
+    credentials: ServiceClientCredentials,
+    baseUri: js.UndefOr[scala.Nothing],
+    options: ServiceClientOptions
+  ) = this()
   def this(credentials: ServiceClientCredentials, baseUri: String, options: ServiceClientOptions) = this()
-  /* CompleteClass */
-  override var acceptLanguage: String = js.native
-  /* CompleteClass */
-  override var apiVersion: String = js.native
-  /* CompleteClass */
-  override var credentials: ServiceClientCredentials = js.native
-  /* CompleteClass */
-  override var generateClientRequestId: Boolean = js.native
-  /* CompleteClass */
-  override var longRunningOperationRetryTimeout: Double = js.native
-  // Operation groups
-  /* CompleteClass */
-  override var subscriptions: Subscriptions = js.native
-  /* CompleteClass */
-  override var tenants: Tenants = js.native
 }
 

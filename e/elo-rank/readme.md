@@ -12,7 +12,7 @@ elo ranking system
 | Keywords           | elo, rank, ranking, chess |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 18891 |
+| # downloads        | 23308 |
 | # stars            | 3 |
 
 ## Links

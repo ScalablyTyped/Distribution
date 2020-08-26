@@ -18,11 +18,30 @@ trait OutputSerialization extends js.Object {
 
 object OutputSerialization {
   @scala.inline
-  def apply(CSV: CSVOutput = null, JSON: JSONOutput = null): OutputSerialization = {
+  def apply(): OutputSerialization = {
     val __obj = js.Dynamic.literal()
-    if (CSV != null) __obj.updateDynamic("CSV")(CSV.asInstanceOf[js.Any])
-    if (JSON != null) __obj.updateDynamic("JSON")(JSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputSerialization]
   }
+  @scala.inline
+  implicit class OutputSerializationOps[Self <: OutputSerialization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCSV(value: CSVOutput): Self = this.set("CSV", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCSV: Self = this.set("CSV", js.undefined)
+    @scala.inline
+    def setJSON(value: JSONOutput): Self = this.set("JSON", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJSON: Self = this.set("JSON", js.undefined)
+  }
+  
 }
 

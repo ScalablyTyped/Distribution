@@ -12,7 +12,7 @@ Promises A+ conformant implementation
 | Keywords           | promise, mongoose, aplus, a+, plus |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 5914408 |
+| # downloads        | 5785779 |
 | # stars            | 5 |
 
 ## Links

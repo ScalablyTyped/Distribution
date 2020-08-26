@@ -28,6 +28,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaLiasettingsCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaLiasettingsCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceLiasettingsCustombatch): GaxiosPromise[SchemaLiasettingsCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceLiasettingsCustombatch,
@@ -59,6 +60,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaLiaSettings] = js.native
   def get(callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiaSettings] = js.native
   def get(params: ParamsResourceLiasettingsGet): GaxiosPromise[SchemaLiaSettings] = js.native
   def get(params: ParamsResourceLiasettingsGet, callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
   def get(
@@ -87,6 +89,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def getaccessiblegmbaccounts(): GaxiosPromise[SchemaLiasettingsGetAccessibleGmbAccountsResponse] = js.native
   def getaccessiblegmbaccounts(callback: BodyResponseCallback[SchemaLiasettingsGetAccessibleGmbAccountsResponse]): Unit = js.native
+  def getaccessiblegmbaccounts(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsGetAccessibleGmbAccountsResponse] = js.native
   def getaccessiblegmbaccounts(params: ParamsResourceLiasettingsGetaccessiblegmbaccounts): GaxiosPromise[SchemaLiasettingsGetAccessibleGmbAccountsResponse] = js.native
   def getaccessiblegmbaccounts(
     params: ParamsResourceLiasettingsGetaccessiblegmbaccounts,
@@ -120,6 +123,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaLiasettingsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLiasettingsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsListResponse] = js.native
   def list(params: ParamsResourceLiasettingsList): GaxiosPromise[SchemaLiasettingsListResponse] = js.native
   def list(
     params: ParamsResourceLiasettingsList,
@@ -150,6 +154,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def listposdataproviders(): GaxiosPromise[SchemaLiasettingsListPosDataProvidersResponse] = js.native
   def listposdataproviders(callback: BodyResponseCallback[SchemaLiasettingsListPosDataProvidersResponse]): Unit = js.native
+  def listposdataproviders(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsListPosDataProvidersResponse] = js.native
   def listposdataproviders(params: ParamsResourceLiasettingsListposdataproviders): GaxiosPromise[SchemaLiasettingsListPosDataProvidersResponse] = js.native
   def listposdataproviders(
     params: ParamsResourceLiasettingsListposdataproviders,
@@ -182,6 +187,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def requestgmbaccess(): GaxiosPromise[SchemaLiasettingsRequestGmbAccessResponse] = js.native
   def requestgmbaccess(callback: BodyResponseCallback[SchemaLiasettingsRequestGmbAccessResponse]): Unit = js.native
+  def requestgmbaccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsRequestGmbAccessResponse] = js.native
   def requestgmbaccess(params: ParamsResourceLiasettingsRequestgmbaccess): GaxiosPromise[SchemaLiasettingsRequestGmbAccessResponse] = js.native
   def requestgmbaccess(
     params: ParamsResourceLiasettingsRequestgmbaccess,
@@ -214,6 +220,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def requestinventoryverification(): GaxiosPromise[SchemaLiasettingsRequestInventoryVerificationResponse] = js.native
   def requestinventoryverification(callback: BodyResponseCallback[SchemaLiasettingsRequestInventoryVerificationResponse]): Unit = js.native
+  def requestinventoryverification(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsRequestInventoryVerificationResponse] = js.native
   def requestinventoryverification(params: ParamsResourceLiasettingsRequestinventoryverification): GaxiosPromise[SchemaLiasettingsRequestInventoryVerificationResponse] = js.native
   def requestinventoryverification(
     params: ParamsResourceLiasettingsRequestinventoryverification,
@@ -249,6 +256,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def setinventoryverificationcontact(): GaxiosPromise[SchemaLiasettingsSetInventoryVerificationContactResponse] = js.native
   def setinventoryverificationcontact(callback: BodyResponseCallback[SchemaLiasettingsSetInventoryVerificationContactResponse]): Unit = js.native
+  def setinventoryverificationcontact(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsSetInventoryVerificationContactResponse] = js.native
   def setinventoryverificationcontact(params: ParamsResourceLiasettingsSetinventoryverificationcontact): GaxiosPromise[SchemaLiasettingsSetInventoryVerificationContactResponse] = js.native
   def setinventoryverificationcontact(
     params: ParamsResourceLiasettingsSetinventoryverificationcontact,
@@ -283,6 +291,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def setposdataprovider(): GaxiosPromise[SchemaLiasettingsSetPosDataProviderResponse] = js.native
   def setposdataprovider(callback: BodyResponseCallback[SchemaLiasettingsSetPosDataProviderResponse]): Unit = js.native
+  def setposdataprovider(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiasettingsSetPosDataProviderResponse] = js.native
   def setposdataprovider(params: ParamsResourceLiasettingsSetposdataprovider): GaxiosPromise[SchemaLiasettingsSetPosDataProviderResponse] = js.native
   def setposdataprovider(
     params: ParamsResourceLiasettingsSetposdataprovider,
@@ -315,6 +324,7 @@ class ResourceLiasettings protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaLiaSettings] = js.native
   def update(callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiaSettings] = js.native
   def update(params: ParamsResourceLiasettingsUpdate): GaxiosPromise[SchemaLiaSettings] = js.native
   def update(params: ParamsResourceLiasettingsUpdate, callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
   def update(

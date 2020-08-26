@@ -14,13 +14,9 @@ class Clusterer_ ()
      with IParentOnMap {
   def this(options: IClustererOptions) = this()
   var balloon: typings.yandexMaps.mod.clusterer.Balloon = js.native
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   //     balloonopen:
   var hint: Hint = js.native
   var options: IOptionManager = js.native
-  /* CompleteClass */
-  override def getMap(): Map_ = js.native
   def setParent(parent: IControlParent): this.type = js.native
 }
 

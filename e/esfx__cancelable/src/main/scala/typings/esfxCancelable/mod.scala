@@ -53,10 +53,11 @@ object mod extends js.Object {
       */
     def isSignaled(): Boolean = js.native
     def isSignaled(cancelable: typings.esfxCancelable.distMod.Cancelable): Boolean = js.native
+    def subscribe(cancelable: js.UndefOr[scala.Nothing], onSignaled: js.Function0[Unit]): CancelSubscription = js.native
     /**
       * Subscribes to be notified when a `cancelable` becomes signaled.
       */
-    def subscribe(cancelable: js.UndefOr[typings.esfxCancelable.distMod.Cancelable], onSignaled: js.Function0[Unit]): CancelSubscription = js.native
+    def subscribe(cancelable: typings.esfxCancelable.distMod.Cancelable, onSignaled: js.Function0[Unit]): CancelSubscription = js.native
     /**
       * Throws a `CancelError` exception if the provided `cancelable` is in the signaled state.
       */

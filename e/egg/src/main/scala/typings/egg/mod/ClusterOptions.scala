@@ -5,50 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClusterOptions
   extends /* prop */ StringDictionary[js.Any] {
   /** directory of application, default to `process.cwd()` */
-  var baseDir: js.UndefOr[String] = js.undefined
+  var baseDir: js.UndefOr[String] = js.native
   /** ssl cert */
-  var cert: js.UndefOr[String] = js.undefined
+  var cert: js.UndefOr[String] = js.native
   /** specify framework that can be absolute path or npm package */
-  var framework: js.UndefOr[String] = js.undefined
+  var framework: js.UndefOr[String] = js.native
   /** https or not */
-  var https: js.UndefOr[Boolean] = js.undefined
+  var https: js.UndefOr[Boolean] = js.native
   /** ssl key */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /** customized plugins, for unittest */
-  var plugins: js.UndefOr[js.Object | Null] = js.undefined
+  var plugins: js.UndefOr[js.Object | Null] = js.native
   /** listening port, default to 7001(http) or 8443(https) */
-  var port: js.UndefOr[Double] = js.undefined
+  var port: js.UndefOr[Double] = js.native
   /** numbers of app workers, default to `os.cpus().length` */
-  var workers: js.UndefOr[Double] = js.undefined
+  var workers: js.UndefOr[Double] = js.native
 }
 
 object ClusterOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    baseDir: String = null,
-    cert: String = null,
-    framework: String = null,
-    https: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    plugins: js.UndefOr[Null | js.Object] = js.undefined,
-    port: js.UndefOr[Double] = js.undefined,
-    workers: js.UndefOr[Double] = js.undefined
-  ): ClusterOptions = {
+  def apply(): ClusterOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(https)) __obj.updateDynamic("https")(https.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(workers)) __obj.updateDynamic("workers")(workers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
+  @scala.inline
+  implicit class ClusterOptionsOps[Self <: ClusterOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseDir(value: String): Self = this.set("baseDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseDir: Self = this.set("baseDir", js.undefined)
+    @scala.inline
+    def setCert(value: String): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setFramework(value: String): Self = this.set("framework", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramework: Self = this.set("framework", js.undefined)
+    @scala.inline
+    def setHttps(value: Boolean): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setPlugins(value: js.Object): Self = this.set("plugins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlugins: Self = this.set("plugins", js.undefined)
+    @scala.inline
+    def setPluginsNull: Self = this.set("plugins", null)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setWorkers(value: Double): Self = this.set("workers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkers: Self = this.set("workers", js.undefined)
+  }
+  
 }
 

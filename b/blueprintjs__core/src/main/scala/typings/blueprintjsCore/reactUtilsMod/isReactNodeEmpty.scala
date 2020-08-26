@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object isReactNodeEmpty extends js.Object {
   def apply(): Boolean = js.native
+  def apply(node: js.UndefOr[ReactNode], skipArray: Boolean): Boolean = js.native
   def apply(node: ReactNode): Boolean = js.native
-  def apply(node: ReactNode, skipArray: Boolean): Boolean = js.native
 }
 

@@ -15,14 +15,14 @@ object byeMod extends js.Object {
     /** @internal */
     def this(incomingByeRequest: IncomingByeRequest) = this()
     var incomingByeRequest: js.Any = js.native
-    /** Incoming BYE request message. */
-    val request: IncomingRequestMessage = js.native
     /** Accept the request. */
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native
     def reject(options: ResponseOptions): js.Promise[Unit] = js.native
+    /** Incoming BYE request message. */
+    def request: IncomingRequestMessage = js.native
   }
   
 }

@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LeaseIdOptions extends TimeoutIntervalOptions {
-  var leaseId: js.UndefOr[String] = js.undefined
+  var leaseId: js.UndefOr[String] = js.native
 }
 
 object LeaseIdOptions {
   @scala.inline
-  def apply(
-    leaseId: String = null,
-    locationMode: String = null,
-    maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined,
-    timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
-  ): LeaseIdOptions = {
+  def apply(): LeaseIdOptions = {
     val __obj = js.Dynamic.literal()
-    if (leaseId != null) __obj.updateDynamic("leaseId")(leaseId.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumExecutionTimeInMs)) __obj.updateDynamic("maximumExecutionTimeInMs")(maximumExecutionTimeInMs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutIntervalInMs)) __obj.updateDynamic("timeoutIntervalInMs")(timeoutIntervalInMs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeaseIdOptions]
   }
+  @scala.inline
+  implicit class LeaseIdOptionsOps[Self <: LeaseIdOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLeaseId(value: String): Self = this.set("leaseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaseId: Self = this.set("leaseId", js.undefined)
+  }
+  
 }
 

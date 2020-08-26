@@ -43,6 +43,11 @@ object Diff extends js.Object {
     opts: DiffOptions
   ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def indexToWorkdir(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def indexToWorkdir(
+    repo: typings.nodegit.repositoryMod.Repository,
+    index: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def indexToWorkdir(repo: typings.nodegit.repositoryMod.Repository, index: typings.nodegit.indexMod.Index): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def indexToWorkdir(
     repo: typings.nodegit.repositoryMod.Repository,
@@ -50,7 +55,30 @@ object Diff extends js.Object {
     opts: DiffOptions
   ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToIndex(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToIndex(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    index: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToIndex(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    index: typings.nodegit.indexMod.Index
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToIndex(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    index: typings.nodegit.indexMod.Index,
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToIndex(repo: typings.nodegit.repositoryMod.Repository, oldTree: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToIndex(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: typings.nodegit.treeMod.Tree,
+    index: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToIndex(
     repo: typings.nodegit.repositoryMod.Repository,
     oldTree: typings.nodegit.treeMod.Tree,
@@ -63,7 +91,30 @@ object Diff extends js.Object {
     opts: DiffOptions
   ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToTree(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToTree(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    new_tree: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToTree(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    new_tree: typings.nodegit.treeMod.Tree
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToTree(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    new_tree: typings.nodegit.treeMod.Tree,
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToTree(repo: typings.nodegit.repositoryMod.Repository, oldTree: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToTree(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: typings.nodegit.treeMod.Tree,
+    new_tree: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToTree(
     repo: typings.nodegit.repositoryMod.Repository,
     oldTree: typings.nodegit.treeMod.Tree,
@@ -76,6 +127,11 @@ object Diff extends js.Object {
     opts: DiffOptions
   ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToWorkdir(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToWorkdir(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToWorkdir(repo: typings.nodegit.repositoryMod.Repository, oldTree: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToWorkdir(
     repo: typings.nodegit.repositoryMod.Repository,
@@ -83,6 +139,11 @@ object Diff extends js.Object {
     opts: DiffOptions
   ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToWorkdirWithIndex(repo: typings.nodegit.repositoryMod.Repository): js.Promise[typings.nodegit.diffMod.Diff] = js.native
+  def treeToWorkdirWithIndex(
+    repo: typings.nodegit.repositoryMod.Repository,
+    oldTree: js.UndefOr[scala.Nothing],
+    opts: DiffOptions
+  ): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToWorkdirWithIndex(repo: typings.nodegit.repositoryMod.Repository, oldTree: typings.nodegit.treeMod.Tree): js.Promise[typings.nodegit.diffMod.Diff] = js.native
   def treeToWorkdirWithIndex(
     repo: typings.nodegit.repositoryMod.Repository,

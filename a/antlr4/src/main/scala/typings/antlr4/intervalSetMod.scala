@@ -35,7 +35,15 @@ object intervalSetMod extends js.Object {
     def removeRange(interval: Interval): Boolean = js.native
     def toCharString(): String = js.native
     def toIndexString(): String = js.native
+    def toString(
+      literalNames: js.UndefOr[scala.Nothing],
+      symbolicNames: js.UndefOr[scala.Nothing],
+      elemsAreChar: Boolean
+    ): String = js.native
+    def toString(literalNames: js.UndefOr[scala.Nothing], symbolicNames: js.Array[String]): String = js.native
+    def toString(literalNames: js.UndefOr[scala.Nothing], symbolicNames: js.Array[String], elemsAreChar: Boolean): String = js.native
     def toString(literalNames: js.Array[String]): String = js.native
+    def toString(literalNames: js.Array[String], symbolicNames: js.UndefOr[scala.Nothing], elemsAreChar: Boolean): String = js.native
     def toString(literalNames: js.Array[String], symbolicNames: js.Array[String]): String = js.native
     def toString(literalNames: js.Array[String], symbolicNames: js.Array[String], elemsAreChar: Boolean): String = js.native
     def toTokenString(literalNames: js.Array[String], symbolicNames: js.Array[String]): String = js.native

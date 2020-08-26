@@ -27,17 +27,10 @@ object putObjectCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutObjectInput[Blob]) = this()
-    /* CompleteClass */
-    override val input: PutObjectInput[Blob] = js.native
     val middlewareStack: MiddlewareStack[PutObjectInput[Blob], PutObjectOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutObjectInput[Blob], PutObjectOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[PutObjectInput[Blob], PutObjectOutput] = js.native
   }

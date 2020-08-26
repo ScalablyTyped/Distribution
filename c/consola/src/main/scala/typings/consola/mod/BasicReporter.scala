@@ -15,7 +15,5 @@ class BasicReporter () extends ConsolaReporter {
   /* protected */ def formatDate(date: Date): String = js.native
   /* protected */ def formatLogObj(logObj: ConsolaReporterLogObject): String = js.native
   /* protected */ def formatStack(stack: String): String = js.native
-  /* CompleteClass */
-  override def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
 }
 

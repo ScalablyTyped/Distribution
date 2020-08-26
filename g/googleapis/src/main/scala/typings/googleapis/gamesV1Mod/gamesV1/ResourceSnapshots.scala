@@ -28,6 +28,7 @@ class ResourceSnapshots protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaSnapshot] = js.native
   def get(callback: BodyResponseCallback[SchemaSnapshot]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSnapshot] = js.native
   def get(params: ParamsResourceSnapshotsGet): GaxiosPromise[SchemaSnapshot] = js.native
   def get(params: ParamsResourceSnapshotsGet, callback: BodyResponseCallback[SchemaSnapshot]): Unit = js.native
   def get(
@@ -59,6 +60,7 @@ class ResourceSnapshots protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSnapshotListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSnapshotListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSnapshotListResponse] = js.native
   def list(params: ParamsResourceSnapshotsList): GaxiosPromise[SchemaSnapshotListResponse] = js.native
   def list(params: ParamsResourceSnapshotsList, callback: BodyResponseCallback[SchemaSnapshotListResponse]): Unit = js.native
   def list(

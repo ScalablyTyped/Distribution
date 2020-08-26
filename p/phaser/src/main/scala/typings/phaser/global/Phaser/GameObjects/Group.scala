@@ -28,6 +28,8 @@ class Group protected ()
   def this(scene: Scene, children: js.Array[typings.phaser.Phaser.GameObjects.GameObject]) = this()
   def this(scene: Scene, children: GroupConfig) = this()
   def this(scene: Scene, children: GroupCreateConfig) = this()
+  def this(scene: Scene, children: js.UndefOr[scala.Nothing], config: GroupConfig) = this()
+  def this(scene: Scene, children: js.UndefOr[scala.Nothing], config: GroupCreateConfig) = this()
   def this(
     scene: Scene,
     children: js.Array[typings.phaser.Phaser.GameObjects.GameObject],

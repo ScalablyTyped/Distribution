@@ -12,7 +12,7 @@ Fast CSV parser
 | Keywords           | parse, csv, comma, separated, values, tab, delimiter, separator, text, string, buffer, stream, parser |
 | # releases         | 5 |
 | # dependents       | 22 |
-| # downloads        | 4775947 |
+| # downloads        | 4968866 |
 | # stars            | 7 |
 
 ## Links

@@ -40,6 +40,19 @@ package object autoscalingMod {
   type HeartbeatTimeout = scala.Double
   type HonorCooldown = scala.Boolean
   type InstanceIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen19]
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.disabled__
+    - typings.awsSdk.awsSdkStrings.enabled__
+    - java.lang.String
+  */
+  type InstanceMetadataEndpointState = typings.awsSdk.autoscalingMod._InstanceMetadataEndpointState | java.lang.String
+  type InstanceMetadataHttpPutResponseHopLimit = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - typings.awsSdk.awsSdkStrings.optional__
+    - typings.awsSdk.awsSdkStrings.required__
+    - java.lang.String
+  */
+  type InstanceMetadataHttpTokensState = typings.awsSdk.autoscalingMod._InstanceMetadataHttpTokensState | java.lang.String
   type InstanceProtected = scala.Boolean
   type InstanceRefreshIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
   /* Rewritten from type alias, can be one of: 

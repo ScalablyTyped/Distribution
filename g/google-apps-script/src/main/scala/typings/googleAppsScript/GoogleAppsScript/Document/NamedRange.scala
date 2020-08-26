@@ -22,11 +22,12 @@ import scala.scalajs.js.annotation._
   *     }
   *     doc.addNamedRange('myUniquePrefix-tables', rangeBuilder.build());
   */
+@js.native
 trait NamedRange extends js.Object {
-  def getId(): String
-  def getName(): String
-  def getRange(): Range
-  def remove(): Unit
+  def getId(): String = js.native
+  def getName(): String = js.native
+  def getRange(): Range = js.native
+  def remove(): Unit = js.native
 }
 
 object NamedRange {
@@ -35,5 +36,26 @@ object NamedRange {
     val __obj = js.Dynamic.literal(getId = js.Any.fromFunction0(getId), getName = js.Any.fromFunction0(getName), getRange = js.Any.fromFunction0(getRange), remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[NamedRange]
   }
+  @scala.inline
+  implicit class NamedRangeOps[Self <: NamedRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetId(value: () => String): Self = this.set("getId", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetName(value: () => String): Self = this.set("getName", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRange(value: () => Range): Self = this.set("getRange", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRemove(value: () => Unit): Self = this.set("remove", js.Any.fromFunction0(value))
+  }
+  
 }
 

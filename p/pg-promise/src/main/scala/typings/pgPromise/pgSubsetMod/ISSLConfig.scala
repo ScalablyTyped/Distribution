@@ -11,42 +11,83 @@ import scala.scalajs.js.annotation._
 // SSL configuration;
 // For property types and documentation see:
 // http://nodejs.org/api/tls.html#tls_tls_connect_options_callback
+@js.native
 trait ISSLConfig extends js.Object {
-  var NPNProtocols: js.UndefOr[(js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array] = js.undefined
-  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
-  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
-  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.undefined
-  var passphrase: js.UndefOr[String] = js.undefined
-  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.undefined
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
-  var secureOptions: js.UndefOr[Double] = js.undefined
+  var NPNProtocols: js.UndefOr[(js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array] = js.native
+  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.native
+  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.native
+  var passphrase: js.UndefOr[String] = js.native
+  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var secureOptions: js.UndefOr[Double] = js.native
 }
 
 object ISSLConfig {
   @scala.inline
-  def apply(
-    NPNProtocols: (js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array = null,
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    checkServerIdentity: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error] = null,
-    key: String | Buffer | (js.Array[Buffer | js.Object]) = null,
-    passphrase: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | js.Object]) = null,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    secureOptions: js.UndefOr[Double] = js.undefined
-  ): ISSLConfig = {
+  def apply(): ISSLConfig = {
     val __obj = js.Dynamic.literal()
-    if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISSLConfig]
   }
+  @scala.inline
+  implicit class ISSLConfigOps[Self <: ISSLConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNPNProtocolsVarargs(value: (Buffer | String | Uint8Array)*): Self = this.set("NPNProtocols", js.Array(value :_*))
+    @scala.inline
+    def setNPNProtocols(value: (js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array): Self = this.set("NPNProtocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNPNProtocols: Self = this.set("NPNProtocols", js.undefined)
+    @scala.inline
+    def setCaVarargs(value: (String | Buffer)*): Self = this.set("ca", js.Array(value :_*))
+    @scala.inline
+    def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("ca", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCa: Self = this.set("ca", js.undefined)
+    @scala.inline
+    def setCertVarargs(value: (String | Buffer)*): Self = this.set("cert", js.Array(value :_*))
+    @scala.inline
+    def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = this.set("cert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCert: Self = this.set("cert", js.undefined)
+    @scala.inline
+    def setCheckServerIdentity(value: (/* host */ String, /* cert */ PeerCertificate) => js.UndefOr[Error]): Self = this.set("checkServerIdentity", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCheckServerIdentity: Self = this.set("checkServerIdentity", js.undefined)
+    @scala.inline
+    def setKeyVarargs(value: (Buffer | js.Object)*): Self = this.set("key", js.Array(value :_*))
+    @scala.inline
+    def setKey(value: String | Buffer | (js.Array[Buffer | js.Object])): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setPassphrase(value: String): Self = this.set("passphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassphrase: Self = this.set("passphrase", js.undefined)
+    @scala.inline
+    def setPfxVarargs(value: (String | Buffer | js.Object)*): Self = this.set("pfx", js.Array(value :_*))
+    @scala.inline
+    def setPfx(value: String | Buffer | (js.Array[String | Buffer | js.Object])): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfx: Self = this.set("pfx", js.undefined)
+    @scala.inline
+    def setRejectUnauthorized(value: Boolean): Self = this.set("rejectUnauthorized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRejectUnauthorized: Self = this.set("rejectUnauthorized", js.undefined)
+    @scala.inline
+    def setSecureOptions(value: Double): Self = this.set("secureOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecureOptions: Self = this.set("secureOptions", js.undefined)
+  }
+  
 }
 

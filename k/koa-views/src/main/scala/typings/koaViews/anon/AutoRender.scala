@@ -4,45 +4,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AutoRender extends js.Object {
   /*
     * autoRender the result into ctx.body, defaults to true
     */
-  var autoRender: js.UndefOr[Boolean] = js.undefined
+  var autoRender: js.UndefOr[Boolean] = js.native
   /*
     * replace consolidate as default engine source
     */
-  var engineSource: js.UndefOr[js.Any] = js.undefined
+  var engineSource: js.UndefOr[js.Any] = js.native
   /*
     * default extension for your views
     */
-  var extension: js.UndefOr[String] = js.undefined
+  var extension: js.UndefOr[String] = js.native
   /*
     * map a file extension to an engine
     */
-  var map: js.UndefOr[js.Any] = js.undefined
+  var map: js.UndefOr[js.Any] = js.native
   /*
     * these options will get passed to the view engine
     */
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[js.Any] = js.native
 }
 
 object AutoRender {
   @scala.inline
-  def apply(
-    autoRender: js.UndefOr[Boolean] = js.undefined,
-    engineSource: js.Any = null,
-    extension: String = null,
-    map: js.Any = null,
-    options: js.Any = null
-  ): AutoRender = {
+  def apply(): AutoRender = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoRender)) __obj.updateDynamic("autoRender")(autoRender.get.asInstanceOf[js.Any])
-    if (engineSource != null) __obj.updateDynamic("engineSource")(engineSource.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoRender]
   }
+  @scala.inline
+  implicit class AutoRenderOps[Self <: AutoRender] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoRender(value: Boolean): Self = this.set("autoRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRender: Self = this.set("autoRender", js.undefined)
+    @scala.inline
+    def setEngineSource(value: js.Any): Self = this.set("engineSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineSource: Self = this.set("engineSource", js.undefined)
+    @scala.inline
+    def setExtension(value: String): Self = this.set("extension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtension: Self = this.set("extension", js.undefined)
+    @scala.inline
+    def setMap(value: js.Any): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Any): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+  }
+  
 }
 

@@ -10,26 +10,26 @@ import typings.arcgisJsApi.arcgisJsApiStrings.meters_
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
-import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DistanceMeasurement2DProperties extends WidgetProperties {
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.undefined
+  var iconClass: js.UndefOr[String] = js.native
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.  **Possible Values:** metric | imperial | inches | feet | us-feet | yards | miles | nautical-miles | meters | kilometers
+    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unit)
     */
   var unit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.undefined
+  ] = js.native
   /**
     * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
@@ -39,47 +39,69 @@ trait DistanceMeasurement2DProperties extends WidgetProperties {
     js.Array[
       metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewProperties] = js.native
   /**
     * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [DistanceMeasurement2DViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html) class to access all properties and methods on the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#viewModel)
     */
-  var viewModel: js.UndefOr[DistanceMeasurement2DViewModel] = js.undefined
+  var viewModel: js.UndefOr[DistanceMeasurement2DViewModel] = js.native
 }
 
 object DistanceMeasurement2DProperties {
   @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = null,
-    unitOptions: js.Array[
-      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-    ] = null,
-    view: MapViewProperties = null,
-    viewModel: DistanceMeasurement2DViewModel = null
-  ): DistanceMeasurement2DProperties = {
+  def apply(): DistanceMeasurement2DProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.get.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMeasurement2DProperties]
   }
+  @scala.inline
+  implicit class DistanceMeasurement2DPropertiesOps[Self <: DistanceMeasurement2DProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIconClass(value: String): Self = this.set("iconClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconClass: Self = this.set("iconClass", js.undefined)
+    @scala.inline
+    def setUnit(
+      value: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+    ): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setUnitOptionsVarargs(
+      value: (metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_)*
+    ): Self = this.set("unitOptions", js.Array(value :_*))
+    @scala.inline
+    def setUnitOptions(
+      value: js.Array[
+          metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+        ]
+    ): Self = this.set("unitOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnitOptions: Self = this.set("unitOptions", js.undefined)
+    @scala.inline
+    def setView(value: MapViewProperties): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteView: Self = this.set("view", js.undefined)
+    @scala.inline
+    def setViewModel(value: DistanceMeasurement2DViewModel): Self = this.set("viewModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewModel: Self = this.set("viewModel", js.undefined)
+  }
+  
 }
 

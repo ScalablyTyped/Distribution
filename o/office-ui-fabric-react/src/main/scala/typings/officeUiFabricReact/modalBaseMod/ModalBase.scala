@@ -42,11 +42,6 @@ class ModalBase protected ()
   def componentDidUpdate_MModalBase(prevProps: IModalProps, prevState: IDialogState): Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MModalBase(): Unit = js.native
-  /**
-    * Sets focus on the first focusable, or configured, child in focus trap zone
-    */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
 }
 
 /* static members */

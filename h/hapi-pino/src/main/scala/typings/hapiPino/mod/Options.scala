@@ -13,63 +13,120 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var allTags: js.UndefOr[Level] = js.undefined
-  var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.undefined
-  var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
-  var instance: js.UndefOr[Logger] = js.undefined
-  var level: js.UndefOr[Level] = js.undefined
-  var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.undefined
-  var logPayload: js.UndefOr[Boolean] = js.undefined
-  var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
-  var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
-  var logRouteTags: js.UndefOr[Boolean] = js.undefined
-  var mergeHapiLogData: js.UndefOr[Boolean] = js.undefined
-  var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
-  var redact: js.UndefOr[js.Array[String] | redactOptions] = js.undefined
-  var serializers: js.UndefOr[Serializers] = js.undefined
-  var stream: js.UndefOr[WriteStream] = js.undefined
-  var tags: js.UndefOr[keyinLevelstring] = js.undefined
+  var allTags: js.UndefOr[Level] = js.native
+  var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.native
+  var ignorePaths: js.UndefOr[js.Array[String]] = js.native
+  var instance: js.UndefOr[Logger] = js.native
+  var level: js.UndefOr[Level] = js.native
+  var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.native
+  var logPayload: js.UndefOr[Boolean] = js.native
+  var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.native
+  var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.native
+  var logRouteTags: js.UndefOr[Boolean] = js.native
+  var mergeHapiLogData: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.native
+  var redact: js.UndefOr[js.Array[String] | redactOptions] = js.native
+  var serializers: js.UndefOr[Serializers] = js.native
+  var stream: js.UndefOr[WriteStream] = js.native
+  var tags: js.UndefOr[keyinLevelstring] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    allTags: Level = null,
-    getChildBindings: /* req */ Request => Dictkey = null,
-    ignorePaths: js.Array[String] = null,
-    instance: Logger = null,
-    level: Level = null,
-    logEvents: js.UndefOr[Null | js.Array[String] | `false`] = js.undefined,
-    logPayload: js.UndefOr[Boolean] = js.undefined,
-    logRequestComplete: Boolean | (js.Function1[/* req */ Request, Boolean]) = null,
-    logRequestStart: Boolean | (js.Function1[/* req */ Request, Boolean]) = null,
-    logRouteTags: js.UndefOr[Boolean] = js.undefined,
-    mergeHapiLogData: js.UndefOr[Boolean] = js.undefined,
-    prettyPrint: Boolean | PrettyOptions = null,
-    redact: js.Array[String] | redactOptions = null,
-    serializers: Serializers = null,
-    stream: WriteStream = null,
-    tags: keyinLevelstring = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (allTags != null) __obj.updateDynamic("allTags")(allTags.asInstanceOf[js.Any])
-    if (getChildBindings != null) __obj.updateDynamic("getChildBindings")(js.Any.fromFunction1(getChildBindings))
-    if (ignorePaths != null) __obj.updateDynamic("ignorePaths")(ignorePaths.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(logEvents)) __obj.updateDynamic("logEvents")(logEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(logPayload)) __obj.updateDynamic("logPayload")(logPayload.get.asInstanceOf[js.Any])
-    if (logRequestComplete != null) __obj.updateDynamic("logRequestComplete")(logRequestComplete.asInstanceOf[js.Any])
-    if (logRequestStart != null) __obj.updateDynamic("logRequestStart")(logRequestStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(logRouteTags)) __obj.updateDynamic("logRouteTags")(logRouteTags.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mergeHapiLogData)) __obj.updateDynamic("mergeHapiLogData")(mergeHapiLogData.get.asInstanceOf[js.Any])
-    if (prettyPrint != null) __obj.updateDynamic("prettyPrint")(prettyPrint.asInstanceOf[js.Any])
-    if (redact != null) __obj.updateDynamic("redact")(redact.asInstanceOf[js.Any])
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers.asInstanceOf[js.Any])
-    if (stream != null) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllTags(value: Level): Self = this.set("allTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllTags: Self = this.set("allTags", js.undefined)
+    @scala.inline
+    def setGetChildBindings(value: /* req */ Request => Dictkey): Self = this.set("getChildBindings", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetChildBindings: Self = this.set("getChildBindings", js.undefined)
+    @scala.inline
+    def setIgnorePathsVarargs(value: String*): Self = this.set("ignorePaths", js.Array(value :_*))
+    @scala.inline
+    def setIgnorePaths(value: js.Array[String]): Self = this.set("ignorePaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnorePaths: Self = this.set("ignorePaths", js.undefined)
+    @scala.inline
+    def setInstance(value: Logger): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setLevel(value: Level): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setLogEventsVarargs(value: String*): Self = this.set("logEvents", js.Array(value :_*))
+    @scala.inline
+    def setLogEvents(value: js.Array[String] | `false`): Self = this.set("logEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogEvents: Self = this.set("logEvents", js.undefined)
+    @scala.inline
+    def setLogEventsNull: Self = this.set("logEvents", null)
+    @scala.inline
+    def setLogPayload(value: Boolean): Self = this.set("logPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPayload: Self = this.set("logPayload", js.undefined)
+    @scala.inline
+    def setLogRequestCompleteFunction1(value: /* req */ Request => Boolean): Self = this.set("logRequestComplete", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLogRequestComplete(value: Boolean | (js.Function1[/* req */ Request, Boolean])): Self = this.set("logRequestComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogRequestComplete: Self = this.set("logRequestComplete", js.undefined)
+    @scala.inline
+    def setLogRequestStartFunction1(value: /* req */ Request => Boolean): Self = this.set("logRequestStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLogRequestStart(value: Boolean | (js.Function1[/* req */ Request, Boolean])): Self = this.set("logRequestStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogRequestStart: Self = this.set("logRequestStart", js.undefined)
+    @scala.inline
+    def setLogRouteTags(value: Boolean): Self = this.set("logRouteTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogRouteTags: Self = this.set("logRouteTags", js.undefined)
+    @scala.inline
+    def setMergeHapiLogData(value: Boolean): Self = this.set("mergeHapiLogData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeHapiLogData: Self = this.set("mergeHapiLogData", js.undefined)
+    @scala.inline
+    def setPrettyPrint(value: Boolean | PrettyOptions): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    @scala.inline
+    def setRedactVarargs(value: String*): Self = this.set("redact", js.Array(value :_*))
+    @scala.inline
+    def setRedact(value: js.Array[String] | redactOptions): Self = this.set("redact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedact: Self = this.set("redact", js.undefined)
+    @scala.inline
+    def setSerializers(value: Serializers): Self = this.set("serializers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerializers: Self = this.set("serializers", js.undefined)
+    @scala.inline
+    def setStream(value: WriteStream): Self = this.set("stream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStream: Self = this.set("stream", js.undefined)
+    @scala.inline
+    def setTags(value: keyinLevelstring): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

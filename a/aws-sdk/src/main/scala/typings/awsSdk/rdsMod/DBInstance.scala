@@ -242,126 +242,276 @@ trait DBInstance extends js.Object {
 
 object DBInstance {
   @scala.inline
-  def apply(
-    AllocatedStorage: js.UndefOr[Integer] = js.undefined,
-    AssociatedRoles: DBInstanceRoles = null,
-    AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined,
-    AvailabilityZone: String = null,
-    BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined,
-    CACertificateIdentifier: String = null,
-    CharacterSetName: String = null,
-    CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined,
-    DBClusterIdentifier: String = null,
-    DBInstanceArn: String = null,
-    DBInstanceClass: String = null,
-    DBInstanceIdentifier: String = null,
-    DBInstanceStatus: String = null,
-    DBName: String = null,
-    DBParameterGroups: DBParameterGroupStatusList = null,
-    DBSecurityGroups: DBSecurityGroupMembershipList = null,
-    DBSubnetGroup: DBSubnetGroup = null,
-    DbInstancePort: js.UndefOr[Integer] = js.undefined,
-    DbiResourceId: String = null,
-    DeletionProtection: js.UndefOr[Boolean] = js.undefined,
-    DomainMemberships: DomainMembershipList = null,
-    EnabledCloudwatchLogsExports: LogTypeList = null,
-    Endpoint: Endpoint = null,
-    Engine: String = null,
-    EngineVersion: String = null,
-    EnhancedMonitoringResourceArn: String = null,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined,
-    InstanceCreateTime: TStamp = null,
-    Iops: js.UndefOr[IntegerOptional] = js.undefined,
-    KmsKeyId: String = null,
-    LatestRestorableTime: TStamp = null,
-    LicenseModel: String = null,
-    ListenerEndpoint: Endpoint = null,
-    MasterUsername: String = null,
-    MaxAllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined,
-    MonitoringRoleArn: String = null,
-    MultiAZ: js.UndefOr[Boolean] = js.undefined,
-    OptionGroupMemberships: OptionGroupMembershipList = null,
-    PendingModifiedValues: PendingModifiedValues = null,
-    PerformanceInsightsEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    PerformanceInsightsKMSKeyId: String = null,
-    PerformanceInsightsRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    PreferredBackupWindow: String = null,
-    PreferredMaintenanceWindow: String = null,
-    ProcessorFeatures: ProcessorFeatureList = null,
-    PromotionTier: js.UndefOr[IntegerOptional] = js.undefined,
-    PubliclyAccessible: js.UndefOr[Boolean] = js.undefined,
-    ReadReplicaDBClusterIdentifiers: ReadReplicaDBClusterIdentifierList = null,
-    ReadReplicaDBInstanceIdentifiers: ReadReplicaDBInstanceIdentifierList = null,
-    ReadReplicaSourceDBInstanceIdentifier: String = null,
-    SecondaryAvailabilityZone: String = null,
-    StatusInfos: DBInstanceStatusInfoList = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
-    StorageType: String = null,
-    TdeCredentialArn: String = null,
-    Timezone: String = null,
-    VpcSecurityGroups: VpcSecurityGroupMembershipList = null
-  ): DBInstance = {
+  def apply(): DBInstance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.get.asInstanceOf[js.Any])
-    if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.get.asInstanceOf[js.Any])
-    if (CACertificateIdentifier != null) __obj.updateDynamic("CACertificateIdentifier")(CACertificateIdentifier.asInstanceOf[js.Any])
-    if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot.get.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (DBInstanceArn != null) __obj.updateDynamic("DBInstanceArn")(DBInstanceArn.asInstanceOf[js.Any])
-    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
-    if (DBInstanceIdentifier != null) __obj.updateDynamic("DBInstanceIdentifier")(DBInstanceIdentifier.asInstanceOf[js.Any])
-    if (DBInstanceStatus != null) __obj.updateDynamic("DBInstanceStatus")(DBInstanceStatus.asInstanceOf[js.Any])
-    if (DBName != null) __obj.updateDynamic("DBName")(DBName.asInstanceOf[js.Any])
-    if (DBParameterGroups != null) __obj.updateDynamic("DBParameterGroups")(DBParameterGroups.asInstanceOf[js.Any])
-    if (DBSecurityGroups != null) __obj.updateDynamic("DBSecurityGroups")(DBSecurityGroups.asInstanceOf[js.Any])
-    if (DBSubnetGroup != null) __obj.updateDynamic("DBSubnetGroup")(DBSubnetGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(DbInstancePort)) __obj.updateDynamic("DbInstancePort")(DbInstancePort.get.asInstanceOf[js.Any])
-    if (DbiResourceId != null) __obj.updateDynamic("DbiResourceId")(DbiResourceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
-    if (DomainMemberships != null) __obj.updateDynamic("DomainMemberships")(DomainMemberships.asInstanceOf[js.Any])
-    if (EnabledCloudwatchLogsExports != null) __obj.updateDynamic("EnabledCloudwatchLogsExports")(EnabledCloudwatchLogsExports.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (EnhancedMonitoringResourceArn != null) __obj.updateDynamic("EnhancedMonitoringResourceArn")(EnhancedMonitoringResourceArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.get.asInstanceOf[js.Any])
-    if (InstanceCreateTime != null) __obj.updateDynamic("InstanceCreateTime")(InstanceCreateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LatestRestorableTime != null) __obj.updateDynamic("LatestRestorableTime")(LatestRestorableTime.asInstanceOf[js.Any])
-    if (LicenseModel != null) __obj.updateDynamic("LicenseModel")(LicenseModel.asInstanceOf[js.Any])
-    if (ListenerEndpoint != null) __obj.updateDynamic("ListenerEndpoint")(ListenerEndpoint.asInstanceOf[js.Any])
-    if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAllocatedStorage)) __obj.updateDynamic("MaxAllocatedStorage")(MaxAllocatedStorage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MonitoringInterval)) __obj.updateDynamic("MonitoringInterval")(MonitoringInterval.get.asInstanceOf[js.Any])
-    if (MonitoringRoleArn != null) __obj.updateDynamic("MonitoringRoleArn")(MonitoringRoleArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
-    if (OptionGroupMemberships != null) __obj.updateDynamic("OptionGroupMemberships")(OptionGroupMemberships.asInstanceOf[js.Any])
-    if (PendingModifiedValues != null) __obj.updateDynamic("PendingModifiedValues")(PendingModifiedValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformanceInsightsEnabled)) __obj.updateDynamic("PerformanceInsightsEnabled")(PerformanceInsightsEnabled.get.asInstanceOf[js.Any])
-    if (PerformanceInsightsKMSKeyId != null) __obj.updateDynamic("PerformanceInsightsKMSKeyId")(PerformanceInsightsKMSKeyId.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformanceInsightsRetentionPeriod)) __obj.updateDynamic("PerformanceInsightsRetentionPeriod")(PerformanceInsightsRetentionPeriod.get.asInstanceOf[js.Any])
-    if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (ProcessorFeatures != null) __obj.updateDynamic("ProcessorFeatures")(ProcessorFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(PromotionTier)) __obj.updateDynamic("PromotionTier")(PromotionTier.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PubliclyAccessible)) __obj.updateDynamic("PubliclyAccessible")(PubliclyAccessible.get.asInstanceOf[js.Any])
-    if (ReadReplicaDBClusterIdentifiers != null) __obj.updateDynamic("ReadReplicaDBClusterIdentifiers")(ReadReplicaDBClusterIdentifiers.asInstanceOf[js.Any])
-    if (ReadReplicaDBInstanceIdentifiers != null) __obj.updateDynamic("ReadReplicaDBInstanceIdentifiers")(ReadReplicaDBInstanceIdentifiers.asInstanceOf[js.Any])
-    if (ReadReplicaSourceDBInstanceIdentifier != null) __obj.updateDynamic("ReadReplicaSourceDBInstanceIdentifier")(ReadReplicaSourceDBInstanceIdentifier.asInstanceOf[js.Any])
-    if (SecondaryAvailabilityZone != null) __obj.updateDynamic("SecondaryAvailabilityZone")(SecondaryAvailabilityZone.asInstanceOf[js.Any])
-    if (StatusInfos != null) __obj.updateDynamic("StatusInfos")(StatusInfos.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
-    if (StorageType != null) __obj.updateDynamic("StorageType")(StorageType.asInstanceOf[js.Any])
-    if (TdeCredentialArn != null) __obj.updateDynamic("TdeCredentialArn")(TdeCredentialArn.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
-    if (VpcSecurityGroups != null) __obj.updateDynamic("VpcSecurityGroups")(VpcSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBInstance]
   }
+  @scala.inline
+  implicit class DBInstanceOps[Self <: DBInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocatedStorage(value: Integer): Self = this.set("AllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedStorage: Self = this.set("AllocatedStorage", js.undefined)
+    @scala.inline
+    def setAssociatedRolesVarargs(value: DBInstanceRole*): Self = this.set("AssociatedRoles", js.Array(value :_*))
+    @scala.inline
+    def setAssociatedRoles(value: DBInstanceRoles): Self = this.set("AssociatedRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedRoles: Self = this.set("AssociatedRoles", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: Boolean): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setBackupRetentionPeriod(value: Integer): Self = this.set("BackupRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionPeriod: Self = this.set("BackupRetentionPeriod", js.undefined)
+    @scala.inline
+    def setCACertificateIdentifier(value: String): Self = this.set("CACertificateIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCACertificateIdentifier: Self = this.set("CACertificateIdentifier", js.undefined)
+    @scala.inline
+    def setCharacterSetName(value: String): Self = this.set("CharacterSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacterSetName: Self = this.set("CharacterSetName", js.undefined)
+    @scala.inline
+    def setCopyTagsToSnapshot(value: Boolean): Self = this.set("CopyTagsToSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToSnapshot: Self = this.set("CopyTagsToSnapshot", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setDBInstanceArn(value: String): Self = this.set("DBInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceArn: Self = this.set("DBInstanceArn", js.undefined)
+    @scala.inline
+    def setDBInstanceClass(value: String): Self = this.set("DBInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceClass: Self = this.set("DBInstanceClass", js.undefined)
+    @scala.inline
+    def setDBInstanceIdentifier(value: String): Self = this.set("DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceIdentifier: Self = this.set("DBInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setDBInstanceStatus(value: String): Self = this.set("DBInstanceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceStatus: Self = this.set("DBInstanceStatus", js.undefined)
+    @scala.inline
+    def setDBName(value: String): Self = this.set("DBName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBName: Self = this.set("DBName", js.undefined)
+    @scala.inline
+    def setDBParameterGroupsVarargs(value: DBParameterGroupStatus*): Self = this.set("DBParameterGroups", js.Array(value :_*))
+    @scala.inline
+    def setDBParameterGroups(value: DBParameterGroupStatusList): Self = this.set("DBParameterGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBParameterGroups: Self = this.set("DBParameterGroups", js.undefined)
+    @scala.inline
+    def setDBSecurityGroupsVarargs(value: DBSecurityGroupMembership*): Self = this.set("DBSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setDBSecurityGroups(value: DBSecurityGroupMembershipList): Self = this.set("DBSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSecurityGroups: Self = this.set("DBSecurityGroups", js.undefined)
+    @scala.inline
+    def setDBSubnetGroup(value: DBSubnetGroup): Self = this.set("DBSubnetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSubnetGroup: Self = this.set("DBSubnetGroup", js.undefined)
+    @scala.inline
+    def setDbInstancePort(value: Integer): Self = this.set("DbInstancePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbInstancePort: Self = this.set("DbInstancePort", js.undefined)
+    @scala.inline
+    def setDbiResourceId(value: String): Self = this.set("DbiResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbiResourceId: Self = this.set("DbiResourceId", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Boolean): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    @scala.inline
+    def setDomainMembershipsVarargs(value: DomainMembership*): Self = this.set("DomainMemberships", js.Array(value :_*))
+    @scala.inline
+    def setDomainMemberships(value: DomainMembershipList): Self = this.set("DomainMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainMemberships: Self = this.set("DomainMemberships", js.undefined)
+    @scala.inline
+    def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = this.set("EnabledCloudwatchLogsExports", js.Array(value :_*))
+    @scala.inline
+    def setEnabledCloudwatchLogsExports(value: LogTypeList): Self = this.set("EnabledCloudwatchLogsExports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledCloudwatchLogsExports: Self = this.set("EnabledCloudwatchLogsExports", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Endpoint): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setEnhancedMonitoringResourceArn(value: String): Self = this.set("EnhancedMonitoringResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedMonitoringResourceArn: Self = this.set("EnhancedMonitoringResourceArn", js.undefined)
+    @scala.inline
+    def setIAMDatabaseAuthenticationEnabled(value: Boolean): Self = this.set("IAMDatabaseAuthenticationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMDatabaseAuthenticationEnabled: Self = this.set("IAMDatabaseAuthenticationEnabled", js.undefined)
+    @scala.inline
+    def setInstanceCreateTime(value: TStamp): Self = this.set("InstanceCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCreateTime: Self = this.set("InstanceCreateTime", js.undefined)
+    @scala.inline
+    def setIops(value: IntegerOptional): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("Iops", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLatestRestorableTime(value: TStamp): Self = this.set("LatestRestorableTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestRestorableTime: Self = this.set("LatestRestorableTime", js.undefined)
+    @scala.inline
+    def setLicenseModel(value: String): Self = this.set("LicenseModel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseModel: Self = this.set("LicenseModel", js.undefined)
+    @scala.inline
+    def setListenerEndpoint(value: Endpoint): Self = this.set("ListenerEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListenerEndpoint: Self = this.set("ListenerEndpoint", js.undefined)
+    @scala.inline
+    def setMasterUsername(value: String): Self = this.set("MasterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUsername: Self = this.set("MasterUsername", js.undefined)
+    @scala.inline
+    def setMaxAllocatedStorage(value: IntegerOptional): Self = this.set("MaxAllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAllocatedStorage: Self = this.set("MaxAllocatedStorage", js.undefined)
+    @scala.inline
+    def setMonitoringInterval(value: IntegerOptional): Self = this.set("MonitoringInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringInterval: Self = this.set("MonitoringInterval", js.undefined)
+    @scala.inline
+    def setMonitoringRoleArn(value: String): Self = this.set("MonitoringRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoringRoleArn: Self = this.set("MonitoringRoleArn", js.undefined)
+    @scala.inline
+    def setMultiAZ(value: Boolean): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    @scala.inline
+    def setOptionGroupMembershipsVarargs(value: OptionGroupMembership*): Self = this.set("OptionGroupMemberships", js.Array(value :_*))
+    @scala.inline
+    def setOptionGroupMemberships(value: OptionGroupMembershipList): Self = this.set("OptionGroupMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupMemberships: Self = this.set("OptionGroupMemberships", js.undefined)
+    @scala.inline
+    def setPendingModifiedValues(value: PendingModifiedValues): Self = this.set("PendingModifiedValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingModifiedValues: Self = this.set("PendingModifiedValues", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsEnabled(value: BooleanOptional): Self = this.set("PerformanceInsightsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsEnabled: Self = this.set("PerformanceInsightsEnabled", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsKMSKeyId(value: String): Self = this.set("PerformanceInsightsKMSKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsKMSKeyId: Self = this.set("PerformanceInsightsKMSKeyId", js.undefined)
+    @scala.inline
+    def setPerformanceInsightsRetentionPeriod(value: IntegerOptional): Self = this.set("PerformanceInsightsRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformanceInsightsRetentionPeriod: Self = this.set("PerformanceInsightsRetentionPeriod", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: String): Self = this.set("PreferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("PreferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = this.set("ProcessorFeatures", js.Array(value :_*))
+    @scala.inline
+    def setProcessorFeatures(value: ProcessorFeatureList): Self = this.set("ProcessorFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessorFeatures: Self = this.set("ProcessorFeatures", js.undefined)
+    @scala.inline
+    def setPromotionTier(value: IntegerOptional): Self = this.set("PromotionTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePromotionTier: Self = this.set("PromotionTier", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Boolean): Self = this.set("PubliclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("PubliclyAccessible", js.undefined)
+    @scala.inline
+    def setReadReplicaDBClusterIdentifiersVarargs(value: String*): Self = this.set("ReadReplicaDBClusterIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setReadReplicaDBClusterIdentifiers(value: ReadReplicaDBClusterIdentifierList): Self = this.set("ReadReplicaDBClusterIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadReplicaDBClusterIdentifiers: Self = this.set("ReadReplicaDBClusterIdentifiers", js.undefined)
+    @scala.inline
+    def setReadReplicaDBInstanceIdentifiersVarargs(value: String*): Self = this.set("ReadReplicaDBInstanceIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setReadReplicaDBInstanceIdentifiers(value: ReadReplicaDBInstanceIdentifierList): Self = this.set("ReadReplicaDBInstanceIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadReplicaDBInstanceIdentifiers: Self = this.set("ReadReplicaDBInstanceIdentifiers", js.undefined)
+    @scala.inline
+    def setReadReplicaSourceDBInstanceIdentifier(value: String): Self = this.set("ReadReplicaSourceDBInstanceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadReplicaSourceDBInstanceIdentifier: Self = this.set("ReadReplicaSourceDBInstanceIdentifier", js.undefined)
+    @scala.inline
+    def setSecondaryAvailabilityZone(value: String): Self = this.set("SecondaryAvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryAvailabilityZone: Self = this.set("SecondaryAvailabilityZone", js.undefined)
+    @scala.inline
+    def setStatusInfosVarargs(value: DBInstanceStatusInfo*): Self = this.set("StatusInfos", js.Array(value :_*))
+    @scala.inline
+    def setStatusInfos(value: DBInstanceStatusInfoList): Self = this.set("StatusInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusInfos: Self = this.set("StatusInfos", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Boolean): Self = this.set("StorageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("StorageEncrypted", js.undefined)
+    @scala.inline
+    def setStorageType(value: String): Self = this.set("StorageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageType: Self = this.set("StorageType", js.undefined)
+    @scala.inline
+    def setTdeCredentialArn(value: String): Self = this.set("TdeCredentialArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTdeCredentialArn: Self = this.set("TdeCredentialArn", js.undefined)
+    @scala.inline
+    def setTimezone(value: String): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = this.set("VpcSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = this.set("VpcSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroups: Self = this.set("VpcSecurityGroups", js.undefined)
+  }
+  
 }
 

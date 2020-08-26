@@ -3,10 +3,8 @@ package typings.octokitPluginRestEndpointMethods.anon
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.baseUrl
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.headers
 import typings.octokitPluginRestEndpointMethods.octokitPluginRestEndpointMethodsStrings.mediaType
-import typings.octokitTypes.endpointsMod.ReposMergeEndpoint
-import typings.octokitTypes.endpointsMod.ReposMergeResponse404Data
-import typings.octokitTypes.endpointsMod.ReposMergeResponse409Data
-import typings.octokitTypes.endpointsMod.ReposMergeResponseData
+import typings.octokitTypes.endpointsMod.ReposListLanguagesEndpoint
+import typings.octokitTypes.endpointsMod.ReposListLanguagesResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
@@ -14,19 +12,37 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait `988` extends js.Object {
-  var parameters: RequestParameters with (Omit[ReposMergeEndpoint, baseUrl | headers | mediaType])
-  var response: OctokitResponse[ReposMergeResponseData | ReposMergeResponse404Data | ReposMergeResponse409Data]
+  var parameters: RequestParameters with (Omit[ReposListLanguagesEndpoint, baseUrl | headers | mediaType]) = js.native
+  var response: OctokitResponse[ReposListLanguagesResponseData] = js.native
 }
 
 object `988` {
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ReposMergeEndpoint, baseUrl | headers | mediaType]),
-    response: OctokitResponse[ReposMergeResponseData | ReposMergeResponse404Data | ReposMergeResponse409Data]
+    parameters: RequestParameters with (Omit[ReposListLanguagesEndpoint, baseUrl | headers | mediaType]),
+    response: OctokitResponse[ReposListLanguagesResponseData]
   ): `988` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[`988`]
   }
+  @scala.inline
+  implicit class `988Ops`[Self <: `988`] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameters(value: RequestParameters with (Omit[ReposListLanguagesEndpoint, baseUrl | headers | mediaType])): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponse(value: OctokitResponse[ReposListLanguagesResponseData]): Self = this.set("response", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -18,14 +18,34 @@ trait DeleteLaunchTemplateVersionsResult extends js.Object {
 
 object DeleteLaunchTemplateVersionsResult {
   @scala.inline
-  def apply(
-    SuccessfullyDeletedLaunchTemplateVersions: DeleteLaunchTemplateVersionsResponseSuccessSet = null,
-    UnsuccessfullyDeletedLaunchTemplateVersions: DeleteLaunchTemplateVersionsResponseErrorSet = null
-  ): DeleteLaunchTemplateVersionsResult = {
+  def apply(): DeleteLaunchTemplateVersionsResult = {
     val __obj = js.Dynamic.literal()
-    if (SuccessfullyDeletedLaunchTemplateVersions != null) __obj.updateDynamic("SuccessfullyDeletedLaunchTemplateVersions")(SuccessfullyDeletedLaunchTemplateVersions.asInstanceOf[js.Any])
-    if (UnsuccessfullyDeletedLaunchTemplateVersions != null) __obj.updateDynamic("UnsuccessfullyDeletedLaunchTemplateVersions")(UnsuccessfullyDeletedLaunchTemplateVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResult]
   }
+  @scala.inline
+  implicit class DeleteLaunchTemplateVersionsResultOps[Self <: DeleteLaunchTemplateVersionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuccessfullyDeletedLaunchTemplateVersionsVarargs(value: DeleteLaunchTemplateVersionsResponseSuccessItem*): Self = this.set("SuccessfullyDeletedLaunchTemplateVersions", js.Array(value :_*))
+    @scala.inline
+    def setSuccessfullyDeletedLaunchTemplateVersions(value: DeleteLaunchTemplateVersionsResponseSuccessSet): Self = this.set("SuccessfullyDeletedLaunchTemplateVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuccessfullyDeletedLaunchTemplateVersions: Self = this.set("SuccessfullyDeletedLaunchTemplateVersions", js.undefined)
+    @scala.inline
+    def setUnsuccessfullyDeletedLaunchTemplateVersionsVarargs(value: DeleteLaunchTemplateVersionsResponseErrorItem*): Self = this.set("UnsuccessfullyDeletedLaunchTemplateVersions", js.Array(value :_*))
+    @scala.inline
+    def setUnsuccessfullyDeletedLaunchTemplateVersions(value: DeleteLaunchTemplateVersionsResponseErrorSet): Self = this.set("UnsuccessfullyDeletedLaunchTemplateVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnsuccessfullyDeletedLaunchTemplateVersions: Self = this.set("UnsuccessfullyDeletedLaunchTemplateVersions", js.undefined)
+  }
+  
 }
 

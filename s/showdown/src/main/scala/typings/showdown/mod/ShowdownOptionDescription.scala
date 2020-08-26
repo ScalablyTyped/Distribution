@@ -10,33 +10,52 @@ import scala.scalajs.js.annotation._
 /**
   * Showdown option description.
   */
+@js.native
 trait ShowdownOptionDescription extends js.Object {
   /**
     * The default value of option.
     */
-  var defaultValue: js.UndefOr[Boolean] = js.undefined
+  var defaultValue: js.UndefOr[Boolean] = js.native
   /**
     * The description of the option.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * The type of the option value.
     */
-  var `type`: js.UndefOr[boolean | string | integer] = js.undefined
+  var `type`: js.UndefOr[boolean | string | integer] = js.native
 }
 
 object ShowdownOptionDescription {
   @scala.inline
-  def apply(
-    defaultValue: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    `type`: boolean | string | integer = null
-  ): ShowdownOptionDescription = {
+  def apply(): ShowdownOptionDescription = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowdownOptionDescription]
   }
+  @scala.inline
+  implicit class ShowdownOptionDescriptionOps[Self <: ShowdownOptionDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultValue(value: Boolean): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setType(value: boolean | string | integer): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

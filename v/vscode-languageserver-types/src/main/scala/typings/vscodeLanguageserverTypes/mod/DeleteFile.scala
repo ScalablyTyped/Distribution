@@ -5,20 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DeleteFile extends ResourceOperation {
   /**
     * A delete
     */
   @JSName("kind")
-  var kind_DeleteFile: delete
+  var kind_DeleteFile: delete = js.native
   /**
     * Delete options.
     */
-  var options: js.UndefOr[DeleteFileOptions] = js.undefined
+  var options: js.UndefOr[DeleteFileOptions] = js.native
   /**
     * The file to delete.
     */
-  var uri: DocumentUri
+  var uri: DocumentUri = js.native
 }
 
 @JSImport("vscode-languageserver-types", "DeleteFile")

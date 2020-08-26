@@ -5,46 +5,79 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // DateTimePicker
+@js.native
 trait DateTimePickerSettings extends js.Object {
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var datepicker: js.UndefOr[DatePickerSettings] = js.undefined
-  var footer: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var locale: js.UndefOr[String] = js.undefined
-  var modal: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
-  var uiLibrary: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var datepicker: js.UndefOr[DatePickerSettings] = js.native
+  var footer: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.native
+  var modal: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object DateTimePickerSettings {
   @scala.inline
-  def apply(
-    change: /* e */ js.Any => _ = null,
-    datepicker: DatePickerSettings = null,
-    footer: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    locale: String = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    uiLibrary: String = null,
-    value: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): DateTimePickerSettings = {
+  def apply(): DateTimePickerSettings = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (datepicker != null) __obj.updateDynamic("datepicker")(datepicker.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerSettings]
   }
+  @scala.inline
+  implicit class DateTimePickerSettingsOps[Self <: DateTimePickerSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChange(value: /* e */ js.Any => _): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setDatepicker(value: DatePickerSettings): Self = this.set("datepicker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatepicker: Self = this.set("datepicker", js.undefined)
+    @scala.inline
+    def setFooter(value: Boolean): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setModal(value: Boolean): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setUiLibrary(value: String): Self = this.set("uiLibrary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUiLibrary: Self = this.set("uiLibrary", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

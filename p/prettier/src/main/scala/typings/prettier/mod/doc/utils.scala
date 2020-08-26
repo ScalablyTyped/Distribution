@@ -15,7 +15,26 @@ object utils extends js.Object {
   def removeLines(doc: Doc_): Doc_ = js.native
   def stripTrailingHardline(doc: Doc_): Doc_ = js.native
   def traverseDoc(doc: Doc_): Unit = js.native
+  def traverseDoc(
+    doc: Doc_,
+    onEnter: js.UndefOr[scala.Nothing],
+    onExit: js.UndefOr[scala.Nothing],
+    shouldTraverseConditionalGroups: Boolean
+  ): Unit = js.native
+  def traverseDoc(doc: Doc_, onEnter: js.UndefOr[scala.Nothing], onExit: js.Function1[/* doc */ Doc_, Unit]): Unit = js.native
+  def traverseDoc(
+    doc: Doc_,
+    onEnter: js.UndefOr[scala.Nothing],
+    onExit: js.Function1[/* doc */ Doc_, Unit],
+    shouldTraverseConditionalGroups: Boolean
+  ): Unit = js.native
   def traverseDoc(doc: Doc_, onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean]): Unit = js.native
+  def traverseDoc(
+    doc: Doc_,
+    onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean],
+    onExit: js.UndefOr[scala.Nothing],
+    shouldTraverseConditionalGroups: Boolean
+  ): Unit = js.native
   def traverseDoc(
     doc: Doc_,
     onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean],

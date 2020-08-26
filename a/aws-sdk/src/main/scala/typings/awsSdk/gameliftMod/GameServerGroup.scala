@@ -58,34 +58,74 @@ trait GameServerGroup extends js.Object {
 
 object GameServerGroup {
   @scala.inline
-  def apply(
-    AutoScalingGroupArn: AutoScalingGroupArn = null,
-    BalancingStrategy: BalancingStrategy = null,
-    CreationTime: Timestamp = null,
-    GameServerGroupArn: GameServerGroupArn = null,
-    GameServerGroupName: GameServerGroupName = null,
-    GameServerProtectionPolicy: GameServerProtectionPolicy = null,
-    InstanceDefinitions: InstanceDefinitions = null,
-    LastUpdatedTime: Timestamp = null,
-    RoleArn: IamRoleArn = null,
-    Status: GameServerGroupStatus = null,
-    StatusReason: NonZeroAndMaxString = null,
-    SuspendedActions: GameServerGroupActions = null
-  ): GameServerGroup = {
+  def apply(): GameServerGroup = {
     val __obj = js.Dynamic.literal()
-    if (AutoScalingGroupArn != null) __obj.updateDynamic("AutoScalingGroupArn")(AutoScalingGroupArn.asInstanceOf[js.Any])
-    if (BalancingStrategy != null) __obj.updateDynamic("BalancingStrategy")(BalancingStrategy.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (GameServerGroupArn != null) __obj.updateDynamic("GameServerGroupArn")(GameServerGroupArn.asInstanceOf[js.Any])
-    if (GameServerGroupName != null) __obj.updateDynamic("GameServerGroupName")(GameServerGroupName.asInstanceOf[js.Any])
-    if (GameServerProtectionPolicy != null) __obj.updateDynamic("GameServerProtectionPolicy")(GameServerProtectionPolicy.asInstanceOf[js.Any])
-    if (InstanceDefinitions != null) __obj.updateDynamic("InstanceDefinitions")(InstanceDefinitions.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusReason != null) __obj.updateDynamic("StatusReason")(StatusReason.asInstanceOf[js.Any])
-    if (SuspendedActions != null) __obj.updateDynamic("SuspendedActions")(SuspendedActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameServerGroup]
   }
+  @scala.inline
+  implicit class GameServerGroupOps[Self <: GameServerGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = this.set("AutoScalingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupArn: Self = this.set("AutoScalingGroupArn", js.undefined)
+    @scala.inline
+    def setBalancingStrategy(value: BalancingStrategy): Self = this.set("BalancingStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBalancingStrategy: Self = this.set("BalancingStrategy", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setGameServerGroupArn(value: GameServerGroupArn): Self = this.set("GameServerGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerGroupArn: Self = this.set("GameServerGroupArn", js.undefined)
+    @scala.inline
+    def setGameServerGroupName(value: GameServerGroupName): Self = this.set("GameServerGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerGroupName: Self = this.set("GameServerGroupName", js.undefined)
+    @scala.inline
+    def setGameServerProtectionPolicy(value: GameServerProtectionPolicy): Self = this.set("GameServerProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGameServerProtectionPolicy: Self = this.set("GameServerProtectionPolicy", js.undefined)
+    @scala.inline
+    def setInstanceDefinitionsVarargs(value: InstanceDefinition*): Self = this.set("InstanceDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setInstanceDefinitions(value: InstanceDefinitions): Self = this.set("InstanceDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceDefinitions: Self = this.set("InstanceDefinitions", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: Timestamp): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+    @scala.inline
+    def setRoleArn(value: IamRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: GameServerGroupStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: NonZeroAndMaxString): Self = this.set("StatusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("StatusReason", js.undefined)
+    @scala.inline
+    def setSuspendedActionsVarargs(value: GameServerGroupAction*): Self = this.set("SuspendedActions", js.Array(value :_*))
+    @scala.inline
+    def setSuspendedActions(value: GameServerGroupActions): Self = this.set("SuspendedActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedActions: Self = this.set("SuspendedActions", js.undefined)
+  }
+  
 }
 

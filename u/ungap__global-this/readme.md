@@ -11,8 +11,8 @@ A cross engine globalThis.
 | Full name          | @ungap/global-this |
 | Keywords           | global, this |
 | # releases         | 8 |
-| # dependents       | 5 |
-| # downloads        | 4581 |
+| # dependents       | 6 |
+| # downloads        | 7169 |
 | # stars            | 0 |
 
 ## Links

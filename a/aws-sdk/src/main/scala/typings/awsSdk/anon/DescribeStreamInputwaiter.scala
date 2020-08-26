@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/kinesis.DescribeStreamInput & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/kinesis.DescribeStreamInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeStreamInputwaiter extends js.Object {
   @JSName("$waiter")
@@ -29,17 +29,36 @@ trait DescribeStreamInputwaiter extends js.Object {
 
 object DescribeStreamInputwaiter {
   @scala.inline
-  def apply(
-    StreamName: StreamName,
-    $waiter: WaiterConfiguration = null,
-    ExclusiveStartShardId: ShardId = null,
-    Limit: js.UndefOr[DescribeStreamInputLimit] = js.undefined
-  ): DescribeStreamInputwaiter = {
+  def apply(StreamName: StreamName): DescribeStreamInputwaiter = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (ExclusiveStartShardId != null) __obj.updateDynamic("ExclusiveStartShardId")(ExclusiveStartShardId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamInputwaiter]
   }
+  @scala.inline
+  implicit class DescribeStreamInputwaiterOps[Self <: DescribeStreamInputwaiter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setExclusiveStartShardId(value: ShardId): Self = this.set("ExclusiveStartShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExclusiveStartShardId: Self = this.set("ExclusiveStartShardId", js.undefined)
+    @scala.inline
+    def setLimit(value: DescribeStreamInputLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+  }
+  
 }
 

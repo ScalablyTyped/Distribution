@@ -10,9 +10,9 @@ Transform into a lower case string with a period between words
 | ------------------ | :-------------: |
 | Full name          | dot-case |
 | Keywords           | dot, case, period, full, stop, convert, transform |
-| # releases         | 3 |
+| # releases         | 5 |
 | # dependents       | 8 |
-| # downloads        | 41603231 |
+| # downloads        | 42927675 |
 | # stars            | 0 |
 
 ## Links

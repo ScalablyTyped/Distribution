@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   * // constructor with values
   * o = new KJUR.asn1.ocsp.Request({namehash: "1a...", keyhash: "ad...", serial: "1234", alg: "sha256"});
   */
+@js.native
 trait Request extends ASN1Object
 
 object Request {

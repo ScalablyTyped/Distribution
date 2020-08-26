@@ -11,8 +11,8 @@ A fuzzy string set for JavaScript
 | Full name          | fuzzyset |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 24952 |
+| # dependents       | 1 |
+| # downloads        | 28685 |
 | # stars            | 0 |
 
 ## Links

@@ -4,18 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PathElevationRequest extends js.Object {
-  var path: js.UndefOr[js.Array[LatLng]] = js.undefined
-  var samples: js.UndefOr[Double] = js.undefined
+  var path: js.UndefOr[js.Array[LatLng]] = js.native
+  var samples: js.UndefOr[Double] = js.native
 }
 
 object PathElevationRequest {
   @scala.inline
-  def apply(path: js.Array[LatLng] = null, samples: js.UndefOr[Double] = js.undefined): PathElevationRequest = {
+  def apply(): PathElevationRequest = {
     val __obj = js.Dynamic.literal()
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(samples)) __obj.updateDynamic("samples")(samples.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathElevationRequest]
   }
+  @scala.inline
+  implicit class PathElevationRequestOps[Self <: PathElevationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPathVarargs(value: LatLng*): Self = this.set("path", js.Array(value :_*))
+    @scala.inline
+    def setPath(value: js.Array[LatLng]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setSamples(value: Double): Self = this.set("samples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSamples: Self = this.set("samples", js.undefined)
+  }
+  
 }
 

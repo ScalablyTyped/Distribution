@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-notifications"
-version := "0.0-unknown-dt-20200515Z-ab8304"
-scalaVersion := "2.13.2"
+version := "0.0-unknown-dt-20200515Z-04fc6f"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "angular" % "1.7-dt-20200624Z-d22a75",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "angular" % "1.7-dt-20200624Z-a4dbaf",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

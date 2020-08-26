@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object cloneBlock extends js.Object {
   def apply[T /* <: Record[String, _] */](block: BlockInstance[T]): BlockInstance[T] = js.native
+  def apply[T /* <: Record[String, _] */](
+    block: BlockInstance[T],
+    mergeAttributes: js.UndefOr[scala.Nothing],
+    newInnerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
+  ): BlockInstance[T] = js.native
   def apply[T /* <: Record[String, _] */](block: BlockInstance[T], mergeAttributes: Partial[T]): BlockInstance[T] = js.native
   def apply[T /* <: Record[String, _] */](
     block: BlockInstance[T],

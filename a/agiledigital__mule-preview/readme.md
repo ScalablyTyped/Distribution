@@ -10,9 +10,9 @@ Renders Mule XML files as HTML.
 | ------------------ | :-------------: |
 | Full name          | @agiledigital/mule-preview |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 509 |
+| # downloads        | 653 |
 | # stars            | 0 |
 
 ## Links

@@ -54,6 +54,7 @@ trait SequenceBaser[T] extends js.Object {
   def some(): Boolean = js.native
   def some(predicateFn: TestCallback[T, String | Double]): Boolean = js.native
   def sort(): Sequence[T] = js.native
+  def sort(sortFn: js.UndefOr[scala.Nothing], descending: Boolean): Sequence[T] = js.native
   def sort(sortFn: CompareCallback): Sequence[T] = js.native
   def sort(sortFn: CompareCallback, descending: Boolean): Sequence[T] = js.native
   def sortBy(sortFn: String): Sequence[T] = js.native

@@ -5,36 +5,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentType extends js.Object {
-  var contentType: js.UndefOr[String] = js.undefined
-  var correlationData: js.UndefOr[Buffer] = js.undefined
-  var messageExpiryInterval: js.UndefOr[Double] = js.undefined
-  var payloadFormatIndicator: js.UndefOr[Double] = js.undefined
-  var responseTopic: js.UndefOr[String] = js.undefined
-  var userProperties: js.UndefOr[js.Object] = js.undefined
-  var willDelayInterval: js.UndefOr[Double] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
+  var correlationData: js.UndefOr[Buffer] = js.native
+  var messageExpiryInterval: js.UndefOr[Double] = js.native
+  var payloadFormatIndicator: js.UndefOr[Double] = js.native
+  var responseTopic: js.UndefOr[String] = js.native
+  var userProperties: js.UndefOr[js.Object] = js.native
+  var willDelayInterval: js.UndefOr[Double] = js.native
 }
 
 object ContentType {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    correlationData: Buffer = null,
-    messageExpiryInterval: js.UndefOr[Double] = js.undefined,
-    payloadFormatIndicator: js.UndefOr[Double] = js.undefined,
-    responseTopic: String = null,
-    userProperties: js.Object = null,
-    willDelayInterval: js.UndefOr[Double] = js.undefined
-  ): ContentType = {
+  def apply(): ContentType = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (correlationData != null) __obj.updateDynamic("correlationData")(correlationData.asInstanceOf[js.Any])
-    if (!js.isUndefined(messageExpiryInterval)) __obj.updateDynamic("messageExpiryInterval")(messageExpiryInterval.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(payloadFormatIndicator)) __obj.updateDynamic("payloadFormatIndicator")(payloadFormatIndicator.get.asInstanceOf[js.Any])
-    if (responseTopic != null) __obj.updateDynamic("responseTopic")(responseTopic.asInstanceOf[js.Any])
-    if (userProperties != null) __obj.updateDynamic("userProperties")(userProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(willDelayInterval)) __obj.updateDynamic("willDelayInterval")(willDelayInterval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentType]
   }
+  @scala.inline
+  implicit class ContentTypeOps[Self <: ContentType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setCorrelationData(value: Buffer): Self = this.set("correlationData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrelationData: Self = this.set("correlationData", js.undefined)
+    @scala.inline
+    def setMessageExpiryInterval(value: Double): Self = this.set("messageExpiryInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageExpiryInterval: Self = this.set("messageExpiryInterval", js.undefined)
+    @scala.inline
+    def setPayloadFormatIndicator(value: Double): Self = this.set("payloadFormatIndicator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayloadFormatIndicator: Self = this.set("payloadFormatIndicator", js.undefined)
+    @scala.inline
+    def setResponseTopic(value: String): Self = this.set("responseTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTopic: Self = this.set("responseTopic", js.undefined)
+    @scala.inline
+    def setUserProperties(value: js.Object): Self = this.set("userProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProperties: Self = this.set("userProperties", js.undefined)
+    @scala.inline
+    def setWillDelayInterval(value: Double): Self = this.set("willDelayInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWillDelayInterval: Self = this.set("willDelayInterval", js.undefined)
+  }
+  
 }
 

@@ -3,6 +3,7 @@ package typings.angularRoute.mod.angularAugmentingMod.route
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IPromise
 import typings.angular.mod.Injectable
+import typings.angular.mod.global.Function
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,6 +11,7 @@ import scala.scalajs.js.annotation._
 /**
   * see http://docs.angularjs.org/api/ngRoute/provider/$routeProvider#when for API documentation
   */
+@js.native
 trait IRoute extends js.Object {
   /**
     * {boolean=false}
@@ -18,16 +20,16 @@ trait IRoute extends js.Object {
     *
     * Defaults to `false`.
     */
-  var caseInsensitiveMatch: js.UndefOr[Boolean] = js.undefined
+  var caseInsensitiveMatch: js.UndefOr[Boolean] = js.native
   /**
     * {(string|Function)=}
     * Controller fn that should be associated with newly created scope or the name of a registered controller if passed as a string.
     */
-  var controller: js.UndefOr[String | InlineAnnotatedFunction] = js.undefined
+  var controller: js.UndefOr[String | InlineAnnotatedFunction] = js.native
   /**
     * A controller alias name. If present the controller will be published to scope under the controllerAs name.
     */
-  var controllerAs: js.UndefOr[String] = js.undefined
+  var controllerAs: js.UndefOr[String] = js.native
   /**
     * {(string|Function)=}
     * Value to update `$location` path with and trigger route redirection.
@@ -55,7 +57,7 @@ trait IRoute extends js.Object {
       /* $locationSearch */ js.UndefOr[js.Any], 
       String
     ])
-  ] = js.undefined
+  ] = js.native
   /**
     * {boolean=true}
     * Reload route when only `$location.search()` or `$location.hash()` changes.
@@ -67,7 +69,7 @@ trait IRoute extends js.Object {
     *
     * Defaults to `true`.
     */
-  var reloadOnSearch: js.UndefOr[Boolean] = js.undefined
+  var reloadOnSearch: js.UndefOr[Boolean] = js.native
   /**
     * {boolean=true}
     * Reload route when any part of the URL changes (including the path) even if the new URL maps to the same
@@ -78,7 +80,7 @@ trait IRoute extends js.Object {
     *
     * Defaults to `true`.
     */
-  var reloadOnUrl: js.UndefOr[Boolean] = js.undefined
+  var reloadOnUrl: js.UndefOr[Boolean] = js.native
   /**
     * {Object.<string, Function>=}
     * An optional map of dependencies which should be injected into the controller. If any of these
@@ -104,13 +106,13 @@ trait IRoute extends js.Object {
     *   `ngRoute.$routeParams` will still refer to the previous route within these resolve functions.  Use
     *   `$route.current.params` to access the new route parameters, instead.
     */
-  var resolve: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var resolve: js.UndefOr[StringDictionary[js.Any]] = js.native
   /**
     * {string=}
     * The name under which the `resolve` map will be available on the scope of the route. If omitted, defaults
     * to `$resolve`.
     */
-  var resolveAs: js.UndefOr[String] = js.undefined
+  var resolveAs: js.UndefOr[String] = js.native
   /**
     * {Function=}
     * A function that will (eventually) return the value to update `$location` URL with and trigger route
@@ -131,7 +133,7 @@ trait IRoute extends js.Object {
     Injectable[
       js.Function1[/* repeated */ _, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
     ]
-  ] = js.undefined
+  ] = js.native
   /**
     * {(string|Function)=}
     * Html template as a string or a function that returns an html template as a string which should be used by ngView or ngInclude directives. This property takes precedence over templateUrl.
@@ -142,7 +144,7 @@ trait IRoute extends js.Object {
     */
   var template: js.UndefOr[
     String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])
-  ] = js.undefined
+  ] = js.native
   /**
     * {(string|Function)=}
     * Path or function that returns a path to an html template that should be used by ngView.
@@ -153,44 +155,96 @@ trait IRoute extends js.Object {
     */
   var templateUrl: js.UndefOr[
     String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])
-  ] = js.undefined
+  ] = js.native
 }
 
 object IRoute {
   @scala.inline
-  def apply(
-    caseInsensitiveMatch: js.UndefOr[Boolean] = js.undefined,
-    controller: String | InlineAnnotatedFunction = null,
-    controllerAs: String = null,
-    redirectTo: String | (js.Function3[
-      /* $routeParams */ js.UndefOr[IRouteParamsService], 
-      /* $locationPath */ js.UndefOr[String], 
-      /* $locationSearch */ js.UndefOr[js.Any], 
-      String
-    ]) = null,
-    reloadOnSearch: js.UndefOr[Boolean] = js.undefined,
-    reloadOnUrl: js.UndefOr[Boolean] = js.undefined,
-    resolve: StringDictionary[js.Any] = null,
-    resolveAs: String = null,
-    resolveRedirectTo: Injectable[
-      js.Function1[/* repeated */ _, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
-    ] = null,
-    template: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String]) = null,
-    templateUrl: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String]) = null
-  ): IRoute = {
+  def apply(): IRoute = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(caseInsensitiveMatch)) __obj.updateDynamic("caseInsensitiveMatch")(caseInsensitiveMatch.get.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs.asInstanceOf[js.Any])
-    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(reloadOnUrl)) __obj.updateDynamic("reloadOnUrl")(reloadOnUrl.get.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
-    if (resolveAs != null) __obj.updateDynamic("resolveAs")(resolveAs.asInstanceOf[js.Any])
-    if (resolveRedirectTo != null) __obj.updateDynamic("resolveRedirectTo")(resolveRedirectTo.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRoute]
   }
+  @scala.inline
+  implicit class IRouteOps[Self <: IRoute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaseInsensitiveMatch(value: Boolean): Self = this.set("caseInsensitiveMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaseInsensitiveMatch: Self = this.set("caseInsensitiveMatch", js.undefined)
+    @scala.inline
+    def setControllerVarargs(value: (String | Function)*): Self = this.set("controller", js.Array(value :_*))
+    @scala.inline
+    def setController(value: String | InlineAnnotatedFunction): Self = this.set("controller", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteController: Self = this.set("controller", js.undefined)
+    @scala.inline
+    def setControllerAs(value: String): Self = this.set("controllerAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControllerAs: Self = this.set("controllerAs", js.undefined)
+    @scala.inline
+    def setRedirectToFunction3(
+      value: (/* $routeParams */ js.UndefOr[IRouteParamsService], /* $locationPath */ js.UndefOr[String], /* $locationSearch */ js.UndefOr[js.Any]) => String
+    ): Self = this.set("redirectTo", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRedirectTo(
+      value: String | (js.Function3[
+          /* $routeParams */ js.UndefOr[IRouteParamsService], 
+          /* $locationPath */ js.UndefOr[String], 
+          /* $locationSearch */ js.UndefOr[js.Any], 
+          String
+        ])
+    ): Self = this.set("redirectTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirectTo: Self = this.set("redirectTo", js.undefined)
+    @scala.inline
+    def setReloadOnSearch(value: Boolean): Self = this.set("reloadOnSearch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReloadOnSearch: Self = this.set("reloadOnSearch", js.undefined)
+    @scala.inline
+    def setReloadOnUrl(value: Boolean): Self = this.set("reloadOnUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReloadOnUrl: Self = this.set("reloadOnUrl", js.undefined)
+    @scala.inline
+    def setResolve(value: StringDictionary[js.Any]): Self = this.set("resolve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolve: Self = this.set("resolve", js.undefined)
+    @scala.inline
+    def setResolveAs(value: String): Self = this.set("resolveAs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolveAs: Self = this.set("resolveAs", js.undefined)
+    @scala.inline
+    def setResolveRedirectToVarargs(value: (String | (js.Function1[js.Any, js.UndefOr[IPromise[js.UndefOr[String]] | String]]))*): Self = this.set("resolveRedirectTo", js.Array(value :_*))
+    @scala.inline
+    def setResolveRedirectToFunction1(value: /* repeated */ _ => js.UndefOr[IPromise[js.UndefOr[String]] | String]): Self = this.set("resolveRedirectTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def setResolveRedirectTo(
+      value: Injectable[
+          js.Function1[/* repeated */ _, js.UndefOr[IPromise[js.UndefOr[String]] | String]]
+        ]
+    ): Self = this.set("resolveRedirectTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolveRedirectTo: Self = this.set("resolveRedirectTo", js.undefined)
+    @scala.inline
+    def setTemplateFunction1(value: /* $routeParams */ js.UndefOr[IRouteParamsService] => String): Self = this.set("template", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTemplate(value: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setTemplateUrlFunction1(value: /* $routeParams */ js.UndefOr[IRouteParamsService] => String): Self = this.set("templateUrl", js.Any.fromFunction1(value))
+    @scala.inline
+    def setTemplateUrl(value: String | (js.Function1[/* $routeParams */ js.UndefOr[IRouteParamsService], String])): Self = this.set("templateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("templateUrl", js.undefined)
+  }
+  
 }
 

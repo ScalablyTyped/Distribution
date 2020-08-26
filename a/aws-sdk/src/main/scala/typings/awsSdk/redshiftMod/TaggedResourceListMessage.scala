@@ -18,11 +18,32 @@ trait TaggedResourceListMessage extends js.Object {
 
 object TaggedResourceListMessage {
   @scala.inline
-  def apply(Marker: String = null, TaggedResources: TaggedResourceList = null): TaggedResourceListMessage = {
+  def apply(): TaggedResourceListMessage = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (TaggedResources != null) __obj.updateDynamic("TaggedResources")(TaggedResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaggedResourceListMessage]
   }
+  @scala.inline
+  implicit class TaggedResourceListMessageOps[Self <: TaggedResourceListMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setTaggedResourcesVarargs(value: TaggedResource*): Self = this.set("TaggedResources", js.Array(value :_*))
+    @scala.inline
+    def setTaggedResources(value: TaggedResourceList): Self = this.set("TaggedResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaggedResources: Self = this.set("TaggedResources", js.undefined)
+  }
+  
 }
 

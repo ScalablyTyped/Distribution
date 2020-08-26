@@ -14,10 +14,26 @@ trait ResourceDataSyncDestinationDataSharing extends js.Object {
 
 object ResourceDataSyncDestinationDataSharing {
   @scala.inline
-  def apply(DestinationDataSharingType: ResourceDataSyncDestinationDataSharingType = null): ResourceDataSyncDestinationDataSharing = {
+  def apply(): ResourceDataSyncDestinationDataSharing = {
     val __obj = js.Dynamic.literal()
-    if (DestinationDataSharingType != null) __obj.updateDynamic("DestinationDataSharingType")(DestinationDataSharingType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncDestinationDataSharing]
   }
+  @scala.inline
+  implicit class ResourceDataSyncDestinationDataSharingOps[Self <: ResourceDataSyncDestinationDataSharing] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationDataSharingType(value: ResourceDataSyncDestinationDataSharingType): Self = this.set("DestinationDataSharingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationDataSharingType: Self = this.set("DestinationDataSharingType", js.undefined)
+  }
+  
 }
 

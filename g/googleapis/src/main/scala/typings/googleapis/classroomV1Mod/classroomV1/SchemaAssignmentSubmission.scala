@@ -22,10 +22,28 @@ trait SchemaAssignmentSubmission extends js.Object {
 
 object SchemaAssignmentSubmission {
   @scala.inline
-  def apply(attachments: js.Array[SchemaAttachment] = null): SchemaAssignmentSubmission = {
+  def apply(): SchemaAssignmentSubmission = {
     val __obj = js.Dynamic.literal()
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAssignmentSubmission]
   }
+  @scala.inline
+  implicit class SchemaAssignmentSubmissionOps[Self <: SchemaAssignmentSubmission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentsVarargs(value: SchemaAttachment*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: js.Array[SchemaAttachment]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+  }
+  
 }
 

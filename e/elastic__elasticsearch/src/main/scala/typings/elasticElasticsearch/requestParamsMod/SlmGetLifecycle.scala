@@ -4,32 +4,35 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SlmGetLifecycle extends Generic {
-  var policy_id: js.UndefOr[String | js.Array[String]] = js.undefined
+  var policy_id: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object SlmGetLifecycle {
   @scala.inline
-  def apply(
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    method: String = null,
-    policy_id: String | js.Array[String] = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null
-  ): SlmGetLifecycle = {
+  def apply(): SlmGetLifecycle = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (policy_id != null) __obj.updateDynamic("policy_id")(policy_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlmGetLifecycle]
   }
+  @scala.inline
+  implicit class SlmGetLifecycleOps[Self <: SlmGetLifecycle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicy_idVarargs(value: String*): Self = this.set("policy_id", js.Array(value :_*))
+    @scala.inline
+    def setPolicy_id(value: String | js.Array[String]): Self = this.set("policy_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy_id: Self = this.set("policy_id", js.undefined)
+  }
+  
 }
 

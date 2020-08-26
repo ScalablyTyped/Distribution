@@ -42,24 +42,52 @@ trait DescribeScheduledInstanceAvailabilityRequest extends js.Object {
 
 object DescribeScheduledInstanceAvailabilityRequest {
   @scala.inline
-  def apply(
-    FirstSlotStartTimeRange: SlotDateTimeRangeRequest,
-    Recurrence: ScheduledInstanceRecurrenceRequest,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    MaxResults: js.UndefOr[DescribeScheduledInstanceAvailabilityMaxResults] = js.undefined,
-    MaxSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
-    MinSlotDurationInHours: js.UndefOr[Integer] = js.undefined,
-    NextToken: String = null
-  ): DescribeScheduledInstanceAvailabilityRequest = {
+  def apply(FirstSlotStartTimeRange: SlotDateTimeRangeRequest, Recurrence: ScheduledInstanceRecurrenceRequest): DescribeScheduledInstanceAvailabilityRequest = {
     val __obj = js.Dynamic.literal(FirstSlotStartTimeRange = FirstSlotStartTimeRange.asInstanceOf[js.Any], Recurrence = Recurrence.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSlotDurationInHours)) __obj.updateDynamic("MaxSlotDurationInHours")(MaxSlotDurationInHours.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MinSlotDurationInHours)) __obj.updateDynamic("MinSlotDurationInHours")(MinSlotDurationInHours.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScheduledInstanceAvailabilityRequest]
   }
+  @scala.inline
+  implicit class DescribeScheduledInstanceAvailabilityRequestOps[Self <: DescribeScheduledInstanceAvailabilityRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFirstSlotStartTimeRange(value: SlotDateTimeRangeRequest): Self = this.set("FirstSlotStartTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRecurrence(value: ScheduledInstanceRecurrenceRequest): Self = this.set("Recurrence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setMaxResults(value: DescribeScheduledInstanceAvailabilityMaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setMaxSlotDurationInHours(value: Integer): Self = this.set("MaxSlotDurationInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSlotDurationInHours: Self = this.set("MaxSlotDurationInHours", js.undefined)
+    @scala.inline
+    def setMinSlotDurationInHours(value: Integer): Self = this.set("MinSlotDurationInHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinSlotDurationInHours: Self = this.set("MinSlotDurationInHours", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

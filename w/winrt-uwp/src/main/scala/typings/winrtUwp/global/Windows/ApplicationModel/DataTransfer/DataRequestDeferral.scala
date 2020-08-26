@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.DataTransfer.DataRequestDeferral")
 @js.native
 abstract class DataRequestDeferral ()
-  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataRequestDeferral {
-  /** Indicates that the content for an asynchronous share is ready for a target app, or that an error in the sharing operation occurred. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.DataTransfer.DataRequestDeferral
 

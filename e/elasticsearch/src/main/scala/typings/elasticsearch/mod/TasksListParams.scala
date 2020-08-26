@@ -6,48 +6,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TasksListParams extends GenericParams {
-  var actions: js.UndefOr[NameList] = js.undefined
-  var detailed: js.UndefOr[Boolean] = js.undefined
-  var groupBy: js.UndefOr[nodes | parents] = js.undefined
-  var nodeId: js.UndefOr[NameList] = js.undefined
-  var parentNode: js.UndefOr[String] = js.undefined
-  var parentTask: js.UndefOr[String] = js.undefined
-  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
+  var actions: js.UndefOr[NameList] = js.native
+  var detailed: js.UndefOr[Boolean] = js.native
+  var groupBy: js.UndefOr[nodes | parents] = js.native
+  var nodeId: js.UndefOr[NameList] = js.native
+  var parentNode: js.UndefOr[String] = js.native
+  var parentTask: js.UndefOr[String] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.native
 }
 
 object TasksListParams {
   @scala.inline
-  def apply(
-    actions: NameList = null,
-    body: js.Any = null,
-    detailed: js.UndefOr[Boolean] = js.undefined,
-    filterPath: String | js.Array[String] = null,
-    groupBy: nodes | parents = null,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: js.UndefOr[Double] = js.undefined,
-    method: String = null,
-    nodeId: NameList = null,
-    parentNode: String = null,
-    parentTask: String = null,
-    requestTimeout: js.UndefOr[Double] = js.undefined,
-    waitForCompletion: js.UndefOr[Boolean] = js.undefined
-  ): TasksListParams = {
+  def apply(): TasksListParams = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.get.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxRetries)) __obj.updateDynamic("maxRetries")(maxRetries.get.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
-    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
-    if (parentTask != null) __obj.updateDynamic("parentTask")(parentTask.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestTimeout)) __obj.updateDynamic("requestTimeout")(requestTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForCompletion)) __obj.updateDynamic("waitForCompletion")(waitForCompletion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TasksListParams]
   }
+  @scala.inline
+  implicit class TasksListParamsOps[Self <: TasksListParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: String*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: NameList): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActions: Self = this.set("actions", js.undefined)
+    @scala.inline
+    def setDetailed(value: Boolean): Self = this.set("detailed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailed: Self = this.set("detailed", js.undefined)
+    @scala.inline
+    def setGroupBy(value: nodes | parents): Self = this.set("groupBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupBy: Self = this.set("groupBy", js.undefined)
+    @scala.inline
+    def setNodeIdVarargs(value: String*): Self = this.set("nodeId", js.Array(value :_*))
+    @scala.inline
+    def setNodeId(value: NameList): Self = this.set("nodeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeId: Self = this.set("nodeId", js.undefined)
+    @scala.inline
+    def setParentNode(value: String): Self = this.set("parentNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentNode: Self = this.set("parentNode", js.undefined)
+    @scala.inline
+    def setParentTask(value: String): Self = this.set("parentTask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentTask: Self = this.set("parentTask", js.undefined)
+    @scala.inline
+    def setWaitForCompletion(value: Boolean): Self = this.set("waitForCompletion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaitForCompletion: Self = this.set("waitForCompletion", js.undefined)
+  }
+  
 }
 

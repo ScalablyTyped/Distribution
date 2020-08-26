@@ -74,42 +74,90 @@ trait OpsItem extends js.Object {
 
 object OpsItem {
   @scala.inline
-  def apply(
-    Category: OpsItemCategory = null,
-    CreatedBy: String = null,
-    CreatedTime: DateTime = null,
-    Description: OpsItemDescription = null,
-    LastModifiedBy: String = null,
-    LastModifiedTime: DateTime = null,
-    Notifications: OpsItemNotifications = null,
-    OperationalData: OpsItemOperationalData = null,
-    OpsItemId: OpsItemId = null,
-    Priority: js.UndefOr[OpsItemPriority] = js.undefined,
-    RelatedOpsItems: RelatedOpsItems = null,
-    Severity: OpsItemSeverity = null,
-    Source: OpsItemSource = null,
-    Status: OpsItemStatus = null,
-    Title: OpsItemTitle = null,
-    Version: String = null
-  ): OpsItem = {
+  def apply(): OpsItem = {
     val __obj = js.Dynamic.literal()
-    if (Category != null) __obj.updateDynamic("Category")(Category.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastModifiedBy != null) __obj.updateDynamic("LastModifiedBy")(LastModifiedBy.asInstanceOf[js.Any])
-    if (LastModifiedTime != null) __obj.updateDynamic("LastModifiedTime")(LastModifiedTime.asInstanceOf[js.Any])
-    if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications.asInstanceOf[js.Any])
-    if (OperationalData != null) __obj.updateDynamic("OperationalData")(OperationalData.asInstanceOf[js.Any])
-    if (OpsItemId != null) __obj.updateDynamic("OpsItemId")(OpsItemId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (RelatedOpsItems != null) __obj.updateDynamic("RelatedOpsItems")(RelatedOpsItems.asInstanceOf[js.Any])
-    if (Severity != null) __obj.updateDynamic("Severity")(Severity.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Version != null) __obj.updateDynamic("Version")(Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpsItem]
   }
+  @scala.inline
+  implicit class OpsItemOps[Self <: OpsItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCategory(value: OpsItemCategory): Self = this.set("Category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("Category", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: String): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: DateTime): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("CreatedTime", js.undefined)
+    @scala.inline
+    def setDescription(value: OpsItemDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastModifiedBy(value: String): Self = this.set("LastModifiedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedBy: Self = this.set("LastModifiedBy", js.undefined)
+    @scala.inline
+    def setLastModifiedTime(value: DateTime): Self = this.set("LastModifiedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTime: Self = this.set("LastModifiedTime", js.undefined)
+    @scala.inline
+    def setNotificationsVarargs(value: OpsItemNotification*): Self = this.set("Notifications", js.Array(value :_*))
+    @scala.inline
+    def setNotifications(value: OpsItemNotifications): Self = this.set("Notifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotifications: Self = this.set("Notifications", js.undefined)
+    @scala.inline
+    def setOperationalData(value: OpsItemOperationalData): Self = this.set("OperationalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationalData: Self = this.set("OperationalData", js.undefined)
+    @scala.inline
+    def setOpsItemId(value: OpsItemId): Self = this.set("OpsItemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpsItemId: Self = this.set("OpsItemId", js.undefined)
+    @scala.inline
+    def setPriority(value: OpsItemPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setRelatedOpsItemsVarargs(value: RelatedOpsItem*): Self = this.set("RelatedOpsItems", js.Array(value :_*))
+    @scala.inline
+    def setRelatedOpsItems(value: RelatedOpsItems): Self = this.set("RelatedOpsItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedOpsItems: Self = this.set("RelatedOpsItems", js.undefined)
+    @scala.inline
+    def setSeverity(value: OpsItemSeverity): Self = this.set("Severity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverity: Self = this.set("Severity", js.undefined)
+    @scala.inline
+    def setSource(value: OpsItemSource): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+    @scala.inline
+    def setStatus(value: OpsItemStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTitle(value: OpsItemTitle): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

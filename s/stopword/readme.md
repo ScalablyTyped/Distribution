@@ -4,15 +4,15 @@
 Typings are for version 0.3
 
 ## Library description:
-A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 54 languages and also takes lists with custom stopwords as input.
+A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 32 languages and also takes lists with custom stopwords as input.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stopword |
 | Keywords           | stopword, stopwords, document, processing, search, norch, search-index, nlp |
-| # releases         | 20 |
-| # dependents       | 29 |
-| # downloads        | 240741 |
+| # releases         | 21 |
+| # dependents       | 28 |
+| # downloads        | 225903 |
 | # stars            | 6 |
 
 ## Links

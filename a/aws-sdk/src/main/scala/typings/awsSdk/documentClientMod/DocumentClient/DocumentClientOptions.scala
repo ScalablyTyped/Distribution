@@ -20,18 +20,30 @@ trait DocumentClientOptions extends ConverterOptions {
 
 object DocumentClientOptions {
   @scala.inline
-  def apply(
-    convertEmptyValues: js.UndefOr[Boolean] = js.undefined,
-    params: StringDictionary[js.Any] = null,
-    service: ^ = null,
-    wrapNumbers: js.UndefOr[Boolean] = js.undefined
-  ): DocumentClientOptions = {
+  def apply(): DocumentClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(convertEmptyValues)) __obj.updateDynamic("convertEmptyValues")(convertEmptyValues.get.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapNumbers)) __obj.updateDynamic("wrapNumbers")(wrapNumbers.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClientOptions]
   }
+  @scala.inline
+  implicit class DocumentClientOptionsOps[Self <: DocumentClientOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParams(value: StringDictionary[js.Any]): Self = this.set("params", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParams: Self = this.set("params", js.undefined)
+    @scala.inline
+    def setService(value: ^): Self = this.set("service", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteService: Self = this.set("service", js.undefined)
+  }
+  
 }
 

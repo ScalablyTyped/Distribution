@@ -27,18 +27,38 @@ trait NfsFileShareNfsFileShareDefaults extends js.Object {
 
 object NfsFileShareNfsFileShareDefaults {
   @scala.inline
-  def apply(
-    directoryMode: Input[String] = null,
-    fileMode: Input[String] = null,
-    groupId: Input[Double] = null,
-    ownerId: Input[Double] = null
-  ): NfsFileShareNfsFileShareDefaults = {
+  def apply(): NfsFileShareNfsFileShareDefaults = {
     val __obj = js.Dynamic.literal()
-    if (directoryMode != null) __obj.updateDynamic("directoryMode")(directoryMode.asInstanceOf[js.Any])
-    if (fileMode != null) __obj.updateDynamic("fileMode")(fileMode.asInstanceOf[js.Any])
-    if (groupId != null) __obj.updateDynamic("groupId")(groupId.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NfsFileShareNfsFileShareDefaults]
   }
+  @scala.inline
+  implicit class NfsFileShareNfsFileShareDefaultsOps[Self <: NfsFileShareNfsFileShareDefaults] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryMode(value: Input[String]): Self = this.set("directoryMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryMode: Self = this.set("directoryMode", js.undefined)
+    @scala.inline
+    def setFileMode(value: Input[String]): Self = this.set("fileMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileMode: Self = this.set("fileMode", js.undefined)
+    @scala.inline
+    def setGroupId(value: Input[Double]): Self = this.set("groupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupId: Self = this.set("groupId", js.undefined)
+    @scala.inline
+    def setOwnerId(value: Input[Double]): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+  }
+  
 }
 

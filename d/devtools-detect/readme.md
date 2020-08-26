@@ -1,7 +1,7 @@
 
 # Scala.js typings for devtools-detect
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 Detect if DevTools is open and its orientation
@@ -12,7 +12,7 @@ Detect if DevTools is open and its orientation
 | Keywords           | browser, detect, identify, check, dev, devtools, developer, orientation, placement, docked |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 50951 |
+| # downloads        | 48403 |
 | # stars            | 1 |
 
 ## Links

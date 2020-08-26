@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait ErrorConstructor
   extends Instantiable1[/* name */ String, Error]
      with Instantiable2[/* name */ String, /* message */ String, Error]
-     with Instantiable3[/* name */ String, /* message */ String, /* details */ js.Any, Error]
+     with Instantiable3[/* name */ String, js.UndefOr[/* message */ String], /* details */ js.Any, Error]
 

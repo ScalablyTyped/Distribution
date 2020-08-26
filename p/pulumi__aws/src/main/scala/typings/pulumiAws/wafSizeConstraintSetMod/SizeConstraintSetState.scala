@@ -24,16 +24,36 @@ trait SizeConstraintSetState extends js.Object {
 
 object SizeConstraintSetState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    name: Input[String] = null,
-    sizeConstraints: Input[js.Array[Input[SizeConstraintSetSizeConstraint]]] = null
-  ): SizeConstraintSetState = {
+  def apply(): SizeConstraintSetState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sizeConstraints != null) __obj.updateDynamic("sizeConstraints")(sizeConstraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSetState]
   }
+  @scala.inline
+  implicit class SizeConstraintSetStateOps[Self <: SizeConstraintSetState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSizeConstraintsVarargs(value: Input[SizeConstraintSetSizeConstraint]*): Self = this.set("sizeConstraints", js.Array(value :_*))
+    @scala.inline
+    def setSizeConstraints(value: Input[js.Array[Input[SizeConstraintSetSizeConstraint]]]): Self = this.set("sizeConstraints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeConstraints: Self = this.set("sizeConstraints", js.undefined)
+  }
+  
 }
 

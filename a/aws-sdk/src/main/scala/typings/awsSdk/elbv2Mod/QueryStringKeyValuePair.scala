@@ -18,11 +18,30 @@ trait QueryStringKeyValuePair extends js.Object {
 
 object QueryStringKeyValuePair {
   @scala.inline
-  def apply(Key: StringValue = null, Value: StringValue = null): QueryStringKeyValuePair = {
+  def apply(): QueryStringKeyValuePair = {
     val __obj = js.Dynamic.literal()
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryStringKeyValuePair]
   }
+  @scala.inline
+  implicit class QueryStringKeyValuePairOps[Self <: QueryStringKeyValuePair] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: StringValue): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setValue(value: StringValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

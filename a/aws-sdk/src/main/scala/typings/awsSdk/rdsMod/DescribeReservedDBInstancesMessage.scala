@@ -54,32 +54,68 @@ trait DescribeReservedDBInstancesMessage extends js.Object {
 
 object DescribeReservedDBInstancesMessage {
   @scala.inline
-  def apply(
-    DBInstanceClass: String = null,
-    Duration: String = null,
-    Filters: FilterList = null,
-    LeaseId: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
-    OfferingType: String = null,
-    ProductDescription: String = null,
-    ReservedDBInstanceId: String = null,
-    ReservedDBInstancesOfferingId: String = null
-  ): DescribeReservedDBInstancesMessage = {
+  def apply(): DescribeReservedDBInstancesMessage = {
     val __obj = js.Dynamic.literal()
-    if (DBInstanceClass != null) __obj.updateDynamic("DBInstanceClass")(DBInstanceClass.asInstanceOf[js.Any])
-    if (Duration != null) __obj.updateDynamic("Duration")(Duration.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (LeaseId != null) __obj.updateDynamic("LeaseId")(LeaseId.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
-    if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
-    if (ProductDescription != null) __obj.updateDynamic("ProductDescription")(ProductDescription.asInstanceOf[js.Any])
-    if (ReservedDBInstanceId != null) __obj.updateDynamic("ReservedDBInstanceId")(ReservedDBInstanceId.asInstanceOf[js.Any])
-    if (ReservedDBInstancesOfferingId != null) __obj.updateDynamic("ReservedDBInstancesOfferingId")(ReservedDBInstancesOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReservedDBInstancesMessage]
   }
+  @scala.inline
+  implicit class DescribeReservedDBInstancesMessageOps[Self <: DescribeReservedDBInstancesMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDBInstanceClass(value: String): Self = this.set("DBInstanceClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBInstanceClass: Self = this.set("DBInstanceClass", js.undefined)
+    @scala.inline
+    def setDuration(value: String): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setLeaseId(value: String): Self = this.set("LeaseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeaseId: Self = this.set("LeaseId", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setMultiAZ(value: BooleanOptional): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    @scala.inline
+    def setOfferingType(value: String): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    @scala.inline
+    def setProductDescription(value: String): Self = this.set("ProductDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductDescription: Self = this.set("ProductDescription", js.undefined)
+    @scala.inline
+    def setReservedDBInstanceId(value: String): Self = this.set("ReservedDBInstanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedDBInstanceId: Self = this.set("ReservedDBInstanceId", js.undefined)
+    @scala.inline
+    def setReservedDBInstancesOfferingId(value: String): Self = this.set("ReservedDBInstancesOfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedDBInstancesOfferingId: Self = this.set("ReservedDBInstancesOfferingId", js.undefined)
+  }
+  
 }
 

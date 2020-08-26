@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IotaUtils extends js.Object {
   def addChecksum(inputValue: String): String = js.native
+  def addChecksum(inputValue: String, checksumLength: js.UndefOr[scala.Nothing], isAddress: Boolean): String = js.native
   def addChecksum(inputValue: String, checksumLength: Double): String = js.native
   def addChecksum(inputValue: String, checksumLength: Double, isAddress: Boolean): String = js.native
   def addChecksum(inputValue: js.Array[String]): js.Array[String] = js.native
+  def addChecksum(inputValue: js.Array[String], checksumLength: js.UndefOr[scala.Nothing], isAddress: Boolean): js.Array[String] = js.native
   def addChecksum(inputValue: js.Array[String], checksumLength: Double): js.Array[String] = js.native
   def addChecksum(inputValue: js.Array[String], checksumLength: Double, isAddress: Boolean): js.Array[String] = js.native
   def categorizeTransfers(transfers: js.Array[TransactionObject], addresses: js.Array[String]): Received = js.native

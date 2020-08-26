@@ -51,6 +51,13 @@ class ViewEngine protected () extends js.Object {
     moduleIds: js.Array[String],
     names: js.Array[String],
     resources: ViewResources_,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext
+  ): js.Promise[ViewResources_] = js.native
+  def importViewResources(
+    moduleIds: js.Array[String],
+    names: js.Array[String],
+    resources: ViewResources_,
     compileInstruction: ViewCompileInstruction
   ): js.Promise[ViewResources_] = js.native
   def importViewResources(
@@ -69,7 +76,30 @@ class ViewEngine protected () extends js.Object {
     * @return A promise of ViewResources for the registry entry.
     */
   def loadTemplateResources(registryEntry: TemplateRegistryEntry): js.Promise[ViewResources_] = js.native
+  def loadTemplateResources(
+    registryEntry: TemplateRegistryEntry,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewResources_] = js.native
+  def loadTemplateResources(
+    registryEntry: TemplateRegistryEntry,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext
+  ): js.Promise[ViewResources_] = js.native
+  def loadTemplateResources(
+    registryEntry: TemplateRegistryEntry,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext,
+    target: js.Any
+  ): js.Promise[ViewResources_] = js.native
   def loadTemplateResources(registryEntry: TemplateRegistryEntry, compileInstruction: ViewCompileInstruction): js.Promise[ViewResources_] = js.native
+  def loadTemplateResources(
+    registryEntry: TemplateRegistryEntry,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewResources_] = js.native
   def loadTemplateResources(
     registryEntry: TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction,
@@ -90,7 +120,30 @@ class ViewEngine protected () extends js.Object {
     * @return A promise for the compiled view factory.
     */
   def loadViewFactory(urlOrRegistryEntry: String): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: String,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: String,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext
+  ): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: String,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext,
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(urlOrRegistryEntry: String, compileInstruction: ViewCompileInstruction): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: String,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     urlOrRegistryEntry: String,
     compileInstruction: ViewCompileInstruction,
@@ -103,7 +156,30 @@ class ViewEngine protected () extends js.Object {
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(urlOrRegistryEntry: TemplateRegistryEntry): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: TemplateRegistryEntry,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: TemplateRegistryEntry,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext
+  ): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: TemplateRegistryEntry,
+    compileInstruction: js.UndefOr[scala.Nothing],
+    loadContext: ResourceLoadContext,
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(urlOrRegistryEntry: TemplateRegistryEntry, compileInstruction: ViewCompileInstruction): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    urlOrRegistryEntry: TemplateRegistryEntry,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     urlOrRegistryEntry: TemplateRegistryEntry,
     compileInstruction: ViewCompileInstruction,

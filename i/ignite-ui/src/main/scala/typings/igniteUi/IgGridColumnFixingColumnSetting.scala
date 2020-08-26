@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgGridColumnFixingColumnSetting
   extends /**
   * Option for JSONPDataSourceSettings
@@ -14,40 +15,58 @@ trait IgGridColumnFixingColumnSetting
     * Specifies whether the column can be fixed or not. If allow fixing is false, then the fixing pin will not be rendered for the column.
     *
     */
-  var allowFixing: js.UndefOr[Boolean] = js.undefined
+  var allowFixing: js.UndefOr[Boolean] = js.native
   /**
     * Identifies the grid column by index. Either key or index must be set in every column setting.
     *
     */
-  var columnIndex: js.UndefOr[Double] = js.undefined
+  var columnIndex: js.UndefOr[Double] = js.native
   /**
     * Identifies the grid column by key. Either key or index must be set in every column setting.
     *
     */
-  var columnKey: js.UndefOr[String] = js.undefined
+  var columnKey: js.UndefOr[String] = js.native
   /**
     * Specifies whether the column is initially fixed or not. Check [this topic](http://www.igniteui.com/help/iggrid-columnfixing-configuring#initial-state) out for more information.
     *
     */
-  var isFixed: js.UndefOr[Boolean] = js.undefined
+  var isFixed: js.UndefOr[Boolean] = js.native
 }
 
 object IgGridColumnFixingColumnSetting {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    allowFixing: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: js.UndefOr[Double] = js.undefined,
-    columnKey: String = null,
-    isFixed: js.UndefOr[Boolean] = js.undefined
-  ): IgGridColumnFixingColumnSetting = {
+  def apply(): IgGridColumnFixingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowFixing)) __obj.updateDynamic("allowFixing")(allowFixing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.get.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFixed)) __obj.updateDynamic("isFixed")(isFixed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridColumnFixingColumnSetting]
   }
+  @scala.inline
+  implicit class IgGridColumnFixingColumnSettingOps[Self <: IgGridColumnFixingColumnSetting] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowFixing(value: Boolean): Self = this.set("allowFixing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFixing: Self = this.set("allowFixing", js.undefined)
+    @scala.inline
+    def setColumnIndex(value: Double): Self = this.set("columnIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIndex: Self = this.set("columnIndex", js.undefined)
+    @scala.inline
+    def setColumnKey(value: String): Self = this.set("columnKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnKey: Self = this.set("columnKey", js.undefined)
+    @scala.inline
+    def setIsFixed(value: Boolean): Self = this.set("isFixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsFixed: Self = this.set("isFixed", js.undefined)
+  }
+  
 }
 

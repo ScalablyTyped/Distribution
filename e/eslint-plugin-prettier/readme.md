@@ -10,9 +10,9 @@ Runs prettier as an eslint rule
 | ------------------ | :-------------: |
 | Full name          | eslint-plugin-prettier |
 | Keywords           | eslint, eslintplugin, eslint-plugin, prettier |
-| # releases         | 10 |
-| # dependents       | 1431 |
-| # downloads        | 77822529 |
+| # releases         | 11 |
+| # dependents       | 1492 |
+| # downloads        | 82188845 |
 | # stars            | 6 |
 
 ## Links

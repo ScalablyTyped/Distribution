@@ -20,11 +20,32 @@ trait SchemaAcceleratorTypesScopedList extends js.Object {
 
 object SchemaAcceleratorTypesScopedList {
   @scala.inline
-  def apply(acceleratorTypes: js.Array[SchemaAcceleratorType] = null, warning: Code = null): SchemaAcceleratorTypesScopedList = {
+  def apply(): SchemaAcceleratorTypesScopedList = {
     val __obj = js.Dynamic.literal()
-    if (acceleratorTypes != null) __obj.updateDynamic("acceleratorTypes")(acceleratorTypes.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAcceleratorTypesScopedList]
   }
+  @scala.inline
+  implicit class SchemaAcceleratorTypesScopedListOps[Self <: SchemaAcceleratorTypesScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorTypesVarargs(value: SchemaAcceleratorType*): Self = this.set("acceleratorTypes", js.Array(value :_*))
+    @scala.inline
+    def setAcceleratorTypes(value: js.Array[SchemaAcceleratorType]): Self = this.set("acceleratorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceleratorTypes: Self = this.set("acceleratorTypes", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

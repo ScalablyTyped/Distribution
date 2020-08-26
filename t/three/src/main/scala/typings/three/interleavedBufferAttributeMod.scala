@@ -1,6 +1,8 @@
 package typings.three
 
 import typings.std.ArrayLike
+import typings.three.anon.Data
+import typings.three.bufferAttributeMod.BufferAttribute
 import typings.three.interleavedBufferMod.InterleavedBuffer
 import typings.three.matrix4Mod.Matrix4
 import typings.three.threeBooleans.`true`
@@ -18,15 +20,18 @@ object interleavedBufferAttributeMod extends js.Object {
     var data: InterleavedBuffer = js.native
     val isInterleavedBufferAttribute: `true` = js.native
     var itemSize: Double = js.native
+    var name: String = js.native
     var normalized: Boolean = js.native
     var offset: Double = js.native
     def applyMatrix4(m: Matrix4): this.type = js.native
     def array: ArrayLike[Double] = js.native
+    def clone(data: js.Object): BufferAttribute = js.native
     def count: Double = js.native
     def getW(index: Double): Double = js.native
     def getX(index: Double): Double = js.native
     def getY(index: Double): Double = js.native
     def getZ(index: Double): Double = js.native
+    def needsUpdate_=(value: Boolean): Unit = js.native
     def setW(index: Double, z: Double): InterleavedBufferAttribute = js.native
     def setX(index: Double, x: Double): InterleavedBufferAttribute = js.native
     def setXY(index: Double, x: Double, y: Double): InterleavedBufferAttribute = js.native
@@ -34,6 +39,8 @@ object interleavedBufferAttributeMod extends js.Object {
     def setXYZW(index: Double, x: Double, y: Double, z: Double, w: Double): InterleavedBufferAttribute = js.native
     def setY(index: Double, y: Double): InterleavedBufferAttribute = js.native
     def setZ(index: Double, z: Double): InterleavedBufferAttribute = js.native
+    def toJSON(): Data = js.native
+    def toJSON(data: js.Object): Data = js.native
   }
   
 }

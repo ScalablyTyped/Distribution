@@ -12,7 +12,7 @@ Check whether a value is empty or blank, includes string whitespace support
 | Keywords           | string, blank, whitespace, object, array, empty |
 | # releases         | 0 |
 | # dependents       | 50 |
-| # downloads        | 982591 |
+| # downloads        | 1004547 |
 | # stars            | 0 |
 
 ## Links

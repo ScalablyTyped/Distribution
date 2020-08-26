@@ -46,26 +46,60 @@ trait EvaluationResult extends js.Object {
 
 object EvaluationResult {
   @scala.inline
-  def apply(
-    EvalActionName: ActionNameType,
-    EvalDecision: PolicyEvaluationDecisionType,
-    EvalDecisionDetails: EvalDecisionDetailsType = null,
-    EvalResourceName: ResourceNameType = null,
-    MatchedStatements: StatementListType = null,
-    MissingContextValues: ContextKeyNamesResultListType = null,
-    OrganizationsDecisionDetail: OrganizationsDecisionDetail = null,
-    PermissionsBoundaryDecisionDetail: PermissionsBoundaryDecisionDetail = null,
-    ResourceSpecificResults: ResourceSpecificResultListType = null
-  ): EvaluationResult = {
+  def apply(EvalActionName: ActionNameType, EvalDecision: PolicyEvaluationDecisionType): EvaluationResult = {
     val __obj = js.Dynamic.literal(EvalActionName = EvalActionName.asInstanceOf[js.Any], EvalDecision = EvalDecision.asInstanceOf[js.Any])
-    if (EvalDecisionDetails != null) __obj.updateDynamic("EvalDecisionDetails")(EvalDecisionDetails.asInstanceOf[js.Any])
-    if (EvalResourceName != null) __obj.updateDynamic("EvalResourceName")(EvalResourceName.asInstanceOf[js.Any])
-    if (MatchedStatements != null) __obj.updateDynamic("MatchedStatements")(MatchedStatements.asInstanceOf[js.Any])
-    if (MissingContextValues != null) __obj.updateDynamic("MissingContextValues")(MissingContextValues.asInstanceOf[js.Any])
-    if (OrganizationsDecisionDetail != null) __obj.updateDynamic("OrganizationsDecisionDetail")(OrganizationsDecisionDetail.asInstanceOf[js.Any])
-    if (PermissionsBoundaryDecisionDetail != null) __obj.updateDynamic("PermissionsBoundaryDecisionDetail")(PermissionsBoundaryDecisionDetail.asInstanceOf[js.Any])
-    if (ResourceSpecificResults != null) __obj.updateDynamic("ResourceSpecificResults")(ResourceSpecificResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluationResult]
   }
+  @scala.inline
+  implicit class EvaluationResultOps[Self <: EvaluationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEvalActionName(value: ActionNameType): Self = this.set("EvalActionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvalDecision(value: PolicyEvaluationDecisionType): Self = this.set("EvalDecision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvalDecisionDetails(value: EvalDecisionDetailsType): Self = this.set("EvalDecisionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvalDecisionDetails: Self = this.set("EvalDecisionDetails", js.undefined)
+    @scala.inline
+    def setEvalResourceName(value: ResourceNameType): Self = this.set("EvalResourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvalResourceName: Self = this.set("EvalResourceName", js.undefined)
+    @scala.inline
+    def setMatchedStatementsVarargs(value: Statement*): Self = this.set("MatchedStatements", js.Array(value :_*))
+    @scala.inline
+    def setMatchedStatements(value: StatementListType): Self = this.set("MatchedStatements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMatchedStatements: Self = this.set("MatchedStatements", js.undefined)
+    @scala.inline
+    def setMissingContextValuesVarargs(value: ContextKeyNameType*): Self = this.set("MissingContextValues", js.Array(value :_*))
+    @scala.inline
+    def setMissingContextValues(value: ContextKeyNamesResultListType): Self = this.set("MissingContextValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingContextValues: Self = this.set("MissingContextValues", js.undefined)
+    @scala.inline
+    def setOrganizationsDecisionDetail(value: OrganizationsDecisionDetail): Self = this.set("OrganizationsDecisionDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationsDecisionDetail: Self = this.set("OrganizationsDecisionDetail", js.undefined)
+    @scala.inline
+    def setPermissionsBoundaryDecisionDetail(value: PermissionsBoundaryDecisionDetail): Self = this.set("PermissionsBoundaryDecisionDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionsBoundaryDecisionDetail: Self = this.set("PermissionsBoundaryDecisionDetail", js.undefined)
+    @scala.inline
+    def setResourceSpecificResultsVarargs(value: ResourceSpecificResult*): Self = this.set("ResourceSpecificResults", js.Array(value :_*))
+    @scala.inline
+    def setResourceSpecificResults(value: ResourceSpecificResultListType): Self = this.set("ResourceSpecificResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceSpecificResults: Self = this.set("ResourceSpecificResults", js.undefined)
+  }
+  
 }
 

@@ -26,17 +26,38 @@ trait ContinueUpdateRollbackInput extends js.Object {
 
 object ContinueUpdateRollbackInput {
   @scala.inline
-  def apply(
-    StackName: StackNameOrId,
-    ClientRequestToken: ClientRequestToken = null,
-    ResourcesToSkip: ResourcesToSkip = null,
-    RoleARN: RoleARN_ = null
-  ): ContinueUpdateRollbackInput = {
+  def apply(StackName: StackNameOrId): ContinueUpdateRollbackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (ResourcesToSkip != null) __obj.updateDynamic("ResourcesToSkip")(ResourcesToSkip.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinueUpdateRollbackInput]
   }
+  @scala.inline
+  implicit class ContinueUpdateRollbackInputOps[Self <: ContinueUpdateRollbackInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackName(value: StackNameOrId): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setResourcesToSkipVarargs(value: ResourceToSkip*): Self = this.set("ResourcesToSkip", js.Array(value :_*))
+    @scala.inline
+    def setResourcesToSkip(value: ResourcesToSkip): Self = this.set("ResourcesToSkip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcesToSkip: Self = this.set("ResourcesToSkip", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+  }
+  
 }
 

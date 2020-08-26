@@ -15,8 +15,5 @@ class LoggingChannelOptions ()
     * @param group The group identifier.
     */
   def this(group: String) = this()
-  /** Gets or sets the channel group identifier. */
-  /* CompleteClass */
-  override var group: String = js.native
 }
 

@@ -27,6 +27,7 @@ trait CLEditor extends js.Object {
   def clear(): CLEditor = js.native
   def disable(disabled: Boolean): CLEditor = js.native
   def execCommand(commands: String, value: js.Any): CLEditor = js.native
+  def execCommand(commands: String, value: js.Any, useCSS: js.UndefOr[scala.Nothing], button: js.Any): CLEditor = js.native
   def execCommand(commands: String, value: js.Any, useCSS: Boolean): CLEditor = js.native
   def execCommand(commands: String, value: js.Any, useCSS: Boolean, button: js.Any): CLEditor = js.native
   def focus(): CLEditor = js.native

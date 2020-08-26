@@ -25,6 +25,13 @@ class Commits () extends BaseService {
   def comments(projectId: Double, sha: String): js.Promise[GetResponse] = js.native
   def comments(projectId: Double, sha: String, options: Sudo): js.Promise[GetResponse] = js.native
   def create(projectId: String, branch: String, message: String): js.Promise[js.Object] = js.native
+  def create(
+    projectId: String,
+    branch: String,
+    message: String,
+    actions: js.UndefOr[scala.Nothing],
+    options: BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
   def create(projectId: String, branch: String, message: String, actions: js.Array[CommitAction]): js.Promise[js.Object] = js.native
   def create(
     projectId: String,
@@ -34,6 +41,13 @@ class Commits () extends BaseService {
     options: BaseRequestOptions
   ): js.Promise[js.Object] = js.native
   def create(projectId: Double, branch: String, message: String): js.Promise[js.Object] = js.native
+  def create(
+    projectId: Double,
+    branch: String,
+    message: String,
+    actions: js.UndefOr[scala.Nothing],
+    options: BaseRequestOptions
+  ): js.Promise[js.Object] = js.native
   def create(projectId: Double, branch: String, message: String, actions: js.Array[CommitAction]): js.Promise[js.Object] = js.native
   def create(
     projectId: Double,

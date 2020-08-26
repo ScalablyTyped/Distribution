@@ -89,16 +89,21 @@ trait Component_ extends EventedMixin {
     *         `Component` will get created by this process.
     */
   def addChild(component: String): Component = js.native
+  def addChild(component: String, optionsopt: js.UndefOr[scala.Nothing], indexopt: Double): Component = js.native
   def addChild(component: String, optionsopt: js.Any): Component = js.native
   def addChild(component: String, optionsopt: js.Any, indexopt: Double): Component = js.native
   def addChild(component: Element): Element = js.native
+  def addChild(component: Element, optionsopt: js.UndefOr[scala.Nothing], indexopt: Double): Element = js.native
   def addChild(component: Element, optionsopt: js.Any): Element = js.native
   def addChild(component: Element, optionsopt: js.Any, indexopt: Double): Element = js.native
   def addChild[T /* <: Component */](child: T): T = js.native
+  def addChild[T /* <: Component */](child: T, options: js.UndefOr[scala.Nothing], index: Double): T = js.native
   def addChild[T /* <: Component */](child: T, options: js.Any): T = js.native
   def addChild[T /* <: Component */](child: T, options: js.Any, index: Double): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String): T = js.native
+  @JSName("addChild")
+  def addChild_T_Component_T[T /* <: Component */](child: String, options: js.UndefOr[scala.Nothing], index: Double): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any): T = js.native
   @JSName("addChild")
@@ -195,7 +200,11 @@ trait Component_ extends EventedMixin {
     * @return The element that gets created.
     */
   def createEl(): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any): Element = js.native
+  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any, attributes: js.Any): Element = js.native
   def createEl(tagName: String): Element = js.native
+  def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any): Element = js.native
   @JSName("currentDimension")
@@ -460,6 +469,7 @@ trait Component_ extends EventedMixin {
     * @return The localized string or if no localization exists the english string.
     */
   def localize(string: String): String = js.native
+  def localize(string: String, tokens: js.UndefOr[scala.Nothing], defaultValue: String): String = js.native
   def localize(string: String, tokens: js.Array[String]): String = js.native
   def localize(string: String, tokens: js.Array[String], defaultValue: String): String = js.native
   /**

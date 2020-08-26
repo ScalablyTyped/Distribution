@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.icns
   - typings.fileType.fileTypeStrings.jxr
   - typings.fileType.fileTypeStrings.psd
+  - typings.fileType.fileTypeStrings.indd
   - typings.fileType.fileTypeStrings.zip
   - typings.fileType.fileTypeStrings.tar
   - typings.fileType.fileTypeStrings.rar
@@ -136,6 +137,7 @@ import scala.scalajs.js.annotation._
   - typings.fileType.fileTypeStrings.eps
   - typings.fileType.fileTypeStrings.lzh
   - typings.fileType.fileTypeStrings.pgp
+  - typings.fileType.fileTypeStrings.asar
 */
 trait FileExtension extends js.Object
 
@@ -170,6 +172,8 @@ object FileExtension {
   def arrow: typings.fileType.fileTypeStrings.arrow = "arrow".asInstanceOf[typings.fileType.fileTypeStrings.arrow]
   @scala.inline
   def arw: typings.fileType.fileTypeStrings.arw = "arw".asInstanceOf[typings.fileType.fileTypeStrings.arw]
+  @scala.inline
+  def asar: typings.fileType.fileTypeStrings.asar = "asar".asInstanceOf[typings.fileType.fileTypeStrings.asar]
   @scala.inline
   def asf: typings.fileType.fileTypeStrings.asf = "asf".asInstanceOf[typings.fileType.fileTypeStrings.asf]
   @scala.inline
@@ -242,6 +246,8 @@ object FileExtension {
   def ico: typings.fileType.fileTypeStrings.ico = "ico".asInstanceOf[typings.fileType.fileTypeStrings.ico]
   @scala.inline
   def ics: typings.fileType.fileTypeStrings.ics = "ics".asInstanceOf[typings.fileType.fileTypeStrings.ics]
+  @scala.inline
+  def indd: typings.fileType.fileTypeStrings.indd = "indd".asInstanceOf[typings.fileType.fileTypeStrings.indd]
   @scala.inline
   def it: typings.fileType.fileTypeStrings.it = "it".asInstanceOf[typings.fileType.fileTypeStrings.it]
   @scala.inline

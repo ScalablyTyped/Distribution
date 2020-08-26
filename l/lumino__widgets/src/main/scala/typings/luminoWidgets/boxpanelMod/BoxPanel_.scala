@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/boxpanel", "BoxPanel")
+@JSImport("@lumino/widgets/types/boxpanel", "BoxPanel")
 @js.native
 /**
   * Construct a new box panel.

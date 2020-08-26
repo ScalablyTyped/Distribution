@@ -26,18 +26,38 @@ trait DefaultIntegerHyperParameterRange extends js.Object {
 
 object DefaultIntegerHyperParameterRange {
   @scala.inline
-  def apply(
-    isTunable: js.UndefOr[Tunable] = js.undefined,
-    maxValue: js.UndefOr[IntegerMaxValue] = js.undefined,
-    minValue: js.UndefOr[IntegerMinValue] = js.undefined,
-    name: ParameterName = null
-  ): DefaultIntegerHyperParameterRange = {
+  def apply(): DefaultIntegerHyperParameterRange = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isTunable)) __obj.updateDynamic("isTunable")(isTunable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxValue)) __obj.updateDynamic("maxValue")(maxValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minValue)) __obj.updateDynamic("minValue")(minValue.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultIntegerHyperParameterRange]
   }
+  @scala.inline
+  implicit class DefaultIntegerHyperParameterRangeOps[Self <: DefaultIntegerHyperParameterRange] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsTunable(value: Tunable): Self = this.set("isTunable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTunable: Self = this.set("isTunable", js.undefined)
+    @scala.inline
+    def setMaxValue(value: IntegerMaxValue): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinValue(value: IntegerMinValue): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setName(value: ParameterName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

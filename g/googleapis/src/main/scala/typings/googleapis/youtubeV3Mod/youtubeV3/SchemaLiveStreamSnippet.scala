@@ -31,20 +31,42 @@ trait SchemaLiveStreamSnippet extends js.Object {
 
 object SchemaLiveStreamSnippet {
   @scala.inline
-  def apply(
-    channelId: String = null,
-    description: String = null,
-    isDefaultStream: js.UndefOr[Boolean] = js.undefined,
-    publishedAt: String = null,
-    title: String = null
-  ): SchemaLiveStreamSnippet = {
+  def apply(): SchemaLiveStreamSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefaultStream)) __obj.updateDynamic("isDefaultStream")(isDefaultStream.get.asInstanceOf[js.Any])
-    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveStreamSnippet]
   }
+  @scala.inline
+  implicit class SchemaLiveStreamSnippetOps[Self <: SchemaLiveStreamSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIsDefaultStream(value: Boolean): Self = this.set("isDefaultStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefaultStream: Self = this.set("isDefaultStream", js.undefined)
+    @scala.inline
+    def setPublishedAt(value: String): Self = this.set("publishedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublishedAt: Self = this.set("publishedAt", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

@@ -8,8 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class Quaternion () extends Packable {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
+  def this(
+    x: js.UndefOr[scala.Nothing],
+    y: js.UndefOr[scala.Nothing],
+    z: js.UndefOr[scala.Nothing],
+    w: Double
+  ) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+  def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
   def this(x: Double, y: Double, z: Double, w: Double) = this()
   var w: Double = js.native
   var x: Double = js.native
@@ -36,12 +52,32 @@ object Quaternion extends js.Object {
   def computeInnerQuadrangle(q0: Quaternion, q1: Quaternion, q2: Quaternion, result: Quaternion): Quaternion = js.native
   def conjugate(quaternion: Quaternion, result: Quaternion): Quaternion = js.native
   def convertPackedArrayForInterpolation(packedArray: js.Array[Double]): Unit = js.native
+  def convertPackedArrayForInterpolation(
+    packedArray: js.Array[Double],
+    startingIndex: js.UndefOr[scala.Nothing],
+    lastIndex: js.UndefOr[scala.Nothing],
+    result: js.Array[Double]
+  ): Unit = js.native
+  def convertPackedArrayForInterpolation(packedArray: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], lastIndex: Double): Unit = js.native
+  def convertPackedArrayForInterpolation(
+    packedArray: js.Array[Double],
+    startingIndex: js.UndefOr[scala.Nothing],
+    lastIndex: Double,
+    result: js.Array[Double]
+  ): Unit = js.native
   def convertPackedArrayForInterpolation(packedArray: js.Array[Double], startingIndex: Double): Unit = js.native
+  def convertPackedArrayForInterpolation(
+    packedArray: js.Array[Double],
+    startingIndex: Double,
+    lastIndex: js.UndefOr[scala.Nothing],
+    result: js.Array[Double]
+  ): Unit = js.native
   def convertPackedArrayForInterpolation(packedArray: js.Array[Double], startingIndex: Double, lastIndex: Double): Unit = js.native
   def convertPackedArrayForInterpolation(packedArray: js.Array[Double], startingIndex: Double, lastIndex: Double, result: js.Array[Double]): Unit = js.native
   def divideByScalar(quaternion: Quaternion, scalar: Double, result: Quaternion): Quaternion = js.native
   def dot(left: Quaternion, right: Quaternion): Double = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: Quaternion): Boolean = js.native
   def equals(left: Quaternion): Boolean = js.native
   def equals(left: Quaternion, right: Quaternion): Boolean = js.native
   def equalsEpsilon(left: Quaternion, right: Quaternion, epsilon: Double): Boolean = js.native
@@ -70,10 +106,38 @@ object Quaternion extends js.Object {
   def squad(q0: Quaternion, q1: Quaternion, s0: Quaternion, s1: Quaternion, t: Double, result: Quaternion): Quaternion = js.native
   def subtract(left: Quaternion, right: Quaternion, result: Quaternion): Quaternion = js.native
   def unpack(array: js.Array[Double]): Quaternion = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Quaternion): Quaternion = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Quaternion = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Quaternion): Quaternion = js.native
   def unpackInterpolationResult(array: js.Array[Double], sourceArray: js.Array[Double]): Quaternion = js.native
+  def unpackInterpolationResult(
+    array: js.Array[Double],
+    sourceArray: js.Array[Double],
+    startingIndex: js.UndefOr[scala.Nothing],
+    lastIndex: js.UndefOr[scala.Nothing],
+    result: Quaternion
+  ): Quaternion = js.native
+  def unpackInterpolationResult(
+    array: js.Array[Double],
+    sourceArray: js.Array[Double],
+    startingIndex: js.UndefOr[scala.Nothing],
+    lastIndex: Double
+  ): Quaternion = js.native
+  def unpackInterpolationResult(
+    array: js.Array[Double],
+    sourceArray: js.Array[Double],
+    startingIndex: js.UndefOr[scala.Nothing],
+    lastIndex: Double,
+    result: Quaternion
+  ): Quaternion = js.native
   def unpackInterpolationResult(array: js.Array[Double], sourceArray: js.Array[Double], startingIndex: Double): Quaternion = js.native
+  def unpackInterpolationResult(
+    array: js.Array[Double],
+    sourceArray: js.Array[Double],
+    startingIndex: Double,
+    lastIndex: js.UndefOr[scala.Nothing],
+    result: Quaternion
+  ): Quaternion = js.native
   def unpackInterpolationResult(array: js.Array[Double], sourceArray: js.Array[Double], startingIndex: Double, lastIndex: Double): Quaternion = js.native
   def unpackInterpolationResult(
     array: js.Array[Double],

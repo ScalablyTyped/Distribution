@@ -21,11 +21,30 @@ trait SchemaFindThreatMatchesRequest extends js.Object {
 
 object SchemaFindThreatMatchesRequest {
   @scala.inline
-  def apply(client: SchemaClientInfo = null, threatInfo: SchemaThreatInfo = null): SchemaFindThreatMatchesRequest = {
+  def apply(): SchemaFindThreatMatchesRequest = {
     val __obj = js.Dynamic.literal()
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (threatInfo != null) __obj.updateDynamic("threatInfo")(threatInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFindThreatMatchesRequest]
   }
+  @scala.inline
+  implicit class SchemaFindThreatMatchesRequestOps[Self <: SchemaFindThreatMatchesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClient(value: SchemaClientInfo): Self = this.set("client", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClient: Self = this.set("client", js.undefined)
+    @scala.inline
+    def setThreatInfo(value: SchemaThreatInfo): Self = this.set("threatInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatInfo: Self = this.set("threatInfo", js.undefined)
+  }
+  
 }
 

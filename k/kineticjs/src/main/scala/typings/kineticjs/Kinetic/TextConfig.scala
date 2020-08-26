@@ -4,93 +4,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextConfig
   extends DrawOptionsConfig
      with ObjectOptionsConfig {
-  var align: js.UndefOr[String] = js.undefined
-  var cornerRadius: js.UndefOr[Double] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var fontStyle: js.UndefOr[String] = js.undefined
-  var lineHeight: js.UndefOr[Double] = js.undefined
-  var padding: js.UndefOr[String] = js.undefined
-  var text: String
-  var textFill: js.UndefOr[js.Any] = js.undefined
-  var textStroke: js.UndefOr[js.Any] = js.undefined
-  var textStrokeWidth: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.native
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var fontStyle: js.UndefOr[String] = js.native
+  var lineHeight: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[String] = js.native
+  var text: String = js.native
+  var textFill: js.UndefOr[js.Any] = js.native
+  var textStroke: js.UndefOr[js.Any] = js.native
+  var textStrokeWidth: js.UndefOr[Double] = js.native
 }
 
 object TextConfig {
   @scala.inline
-  def apply(
-    text: String,
-    align: String = null,
-    cornerRadius: js.UndefOr[Double] = js.undefined,
-    dragBoundFunc: /* pos */ Vector2d => Vector2d = null,
-    dragBounds: js.Any = null,
-    dragConstraint: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    fill: String = null,
-    fontFamily: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontStyle: String = null,
-    height: js.UndefOr[Double] = js.undefined,
-    id: String = null,
-    lineHeight: js.UndefOr[Double] = js.undefined,
-    lineJoin: String = null,
-    listening: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    offset: Vector2d = null,
-    opacity: js.Any = null,
-    padding: String = null,
-    rotation: js.UndefOr[Double] = js.undefined,
-    rotationDeg: js.UndefOr[Double] = js.undefined,
-    scale: Vector2d = null,
-    shadow: js.Any = null,
-    stroke: String = null,
-    strokeWidth: js.UndefOr[Double] = js.undefined,
-    textFill: js.Any = null,
-    textStroke: js.Any = null,
-    textStrokeWidth: js.UndefOr[Double] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): TextConfig = {
+  def apply(text: String): TextConfig = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(cornerRadius)) __obj.updateDynamic("cornerRadius")(cornerRadius.get.asInstanceOf[js.Any])
-    if (dragBoundFunc != null) __obj.updateDynamic("dragBoundFunc")(js.Any.fromFunction1(dragBoundFunc))
-    if (dragBounds != null) __obj.updateDynamic("dragBounds")(dragBounds.asInstanceOf[js.Any])
-    if (dragConstraint != null) __obj.updateDynamic("dragConstraint")(dragConstraint.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineHeight)) __obj.updateDynamic("lineHeight")(lineHeight.get.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (!js.isUndefined(listening)) __obj.updateDynamic("listening")(listening.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotation)) __obj.updateDynamic("rotation")(rotation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotationDeg)) __obj.updateDynamic("rotationDeg")(rotationDeg.get.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
-    if (textFill != null) __obj.updateDynamic("textFill")(textFill.asInstanceOf[js.Any])
-    if (textStroke != null) __obj.updateDynamic("textStroke")(textStroke.asInstanceOf[js.Any])
-    if (!js.isUndefined(textStrokeWidth)) __obj.updateDynamic("textStrokeWidth")(textStrokeWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextConfig]
   }
+  @scala.inline
+  implicit class TextConfigOps[Self <: TextConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setCornerRadius(value: Double): Self = this.set("cornerRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCornerRadius: Self = this.set("cornerRadius", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    @scala.inline
+    def setPadding(value: String): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setTextFill(value: js.Any): Self = this.set("textFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextFill: Self = this.set("textFill", js.undefined)
+    @scala.inline
+    def setTextStroke(value: js.Any): Self = this.set("textStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStroke: Self = this.set("textStroke", js.undefined)
+    @scala.inline
+    def setTextStrokeWidth(value: Double): Self = this.set("textStrokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStrokeWidth: Self = this.set("textStrokeWidth", js.undefined)
+  }
+  
 }
 

@@ -56,39 +56,77 @@ trait FleetArgs extends js.Object {
     */
   val runtimeConfiguration: js.UndefOr[Input[FleetRuntimeConfiguration]] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object FleetArgs {
   @scala.inline
-  def apply(
-    buildId: Input[String],
-    ec2InstanceType: Input[String],
-    description: Input[String] = null,
-    ec2InboundPermissions: Input[js.Array[Input[FleetEc2InboundPermission]]] = null,
-    fleetType: Input[String] = null,
-    instanceRoleArn: Input[String] = null,
-    metricGroups: Input[js.Array[Input[String]]] = null,
-    name: Input[String] = null,
-    newGameSessionProtectionPolicy: Input[String] = null,
-    resourceCreationLimitPolicy: Input[FleetResourceCreationLimitPolicy] = null,
-    runtimeConfiguration: Input[FleetRuntimeConfiguration] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): FleetArgs = {
+  def apply(buildId: Input[String], ec2InstanceType: Input[String]): FleetArgs = {
     val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], ec2InstanceType = ec2InstanceType.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ec2InboundPermissions != null) __obj.updateDynamic("ec2InboundPermissions")(ec2InboundPermissions.asInstanceOf[js.Any])
-    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
-    if (instanceRoleArn != null) __obj.updateDynamic("instanceRoleArn")(instanceRoleArn.asInstanceOf[js.Any])
-    if (metricGroups != null) __obj.updateDynamic("metricGroups")(metricGroups.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (newGameSessionProtectionPolicy != null) __obj.updateDynamic("newGameSessionProtectionPolicy")(newGameSessionProtectionPolicy.asInstanceOf[js.Any])
-    if (resourceCreationLimitPolicy != null) __obj.updateDynamic("resourceCreationLimitPolicy")(resourceCreationLimitPolicy.asInstanceOf[js.Any])
-    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetArgs]
   }
+  @scala.inline
+  implicit class FleetArgsOps[Self <: FleetArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuildId(value: Input[String]): Self = this.set("buildId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEc2InstanceType(value: Input[String]): Self = this.set("ec2InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEc2InboundPermissionsVarargs(value: Input[FleetEc2InboundPermission]*): Self = this.set("ec2InboundPermissions", js.Array(value :_*))
+    @scala.inline
+    def setEc2InboundPermissions(value: Input[js.Array[Input[FleetEc2InboundPermission]]]): Self = this.set("ec2InboundPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InboundPermissions: Self = this.set("ec2InboundPermissions", js.undefined)
+    @scala.inline
+    def setFleetType(value: Input[String]): Self = this.set("fleetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetType: Self = this.set("fleetType", js.undefined)
+    @scala.inline
+    def setInstanceRoleArn(value: Input[String]): Self = this.set("instanceRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceRoleArn: Self = this.set("instanceRoleArn", js.undefined)
+    @scala.inline
+    def setMetricGroupsVarargs(value: Input[String]*): Self = this.set("metricGroups", js.Array(value :_*))
+    @scala.inline
+    def setMetricGroups(value: Input[js.Array[Input[String]]]): Self = this.set("metricGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricGroups: Self = this.set("metricGroups", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNewGameSessionProtectionPolicy(value: Input[String]): Self = this.set("newGameSessionProtectionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewGameSessionProtectionPolicy: Self = this.set("newGameSessionProtectionPolicy", js.undefined)
+    @scala.inline
+    def setResourceCreationLimitPolicy(value: Input[FleetResourceCreationLimitPolicy]): Self = this.set("resourceCreationLimitPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceCreationLimitPolicy: Self = this.set("resourceCreationLimitPolicy", js.undefined)
+    @scala.inline
+    def setRuntimeConfiguration(value: Input[FleetRuntimeConfiguration]): Self = this.set("runtimeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeConfiguration: Self = this.set("runtimeConfiguration", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

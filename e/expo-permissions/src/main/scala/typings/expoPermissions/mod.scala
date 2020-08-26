@@ -1,5 +1,6 @@
 package typings.expoPermissions
 
+import typings.expoPermissions.permissionsHooksMod.PermissionsOptions
 import typings.expoPermissions.permissionsTypesMod.PermissionResponse
 import typings.expoPermissions.permissionsTypesMod.PermissionType
 import scala.scalajs.js
@@ -22,6 +23,26 @@ object mod extends js.Object {
   val USER_FACING_NOTIFICATIONS: /* "userFacingNotifications" */ String = js.native
   def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = js.native
   def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = js.native
+  def usePermissions(`type`: js.Array[PermissionType]): js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ] = js.native
+  def usePermissions(`type`: js.Array[PermissionType], options: PermissionsOptions): js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ] = js.native
+  def usePermissions(`type`: PermissionType): js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ] = js.native
+  def usePermissions(`type`: PermissionType, options: PermissionsOptions): js.Tuple3[
+    js.UndefOr[PermissionResponse], 
+    js.Function0[js.Promise[Unit]], 
+    js.Function0[js.Promise[Unit]]
+  ] = js.native
   @js.native
   object PermissionStatus extends js.Object {
     /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED with String = js.native

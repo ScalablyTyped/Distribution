@@ -22,11 +22,32 @@ trait PutResourcePolicyRequest extends js.Object {
 
 object PutResourcePolicyRequest {
   @scala.inline
-  def apply(Policy: string, RegistryName: string = null, RevisionId: string = null): PutResourcePolicyRequest = {
+  def apply(Policy: string): PutResourcePolicyRequest = {
     val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
-    if (RegistryName != null) __obj.updateDynamic("RegistryName")(RegistryName.asInstanceOf[js.Any])
-    if (RevisionId != null) __obj.updateDynamic("RevisionId")(RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutResourcePolicyRequest]
   }
+  @scala.inline
+  implicit class PutResourcePolicyRequestOps[Self <: PutResourcePolicyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicy(value: string): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
+    @scala.inline
+    def setRevisionId(value: string): Self = this.set("RevisionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionId: Self = this.set("RevisionId", js.undefined)
+  }
+  
 }
 

@@ -22,11 +22,32 @@ trait RegisterOnPremisesInstanceInput extends js.Object {
 
 object RegisterOnPremisesInstanceInput {
   @scala.inline
-  def apply(instanceName: InstanceName, iamSessionArn: IamSessionArn = null, iamUserArn: IamUserArn = null): RegisterOnPremisesInstanceInput = {
+  def apply(instanceName: InstanceName): RegisterOnPremisesInstanceInput = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
-    if (iamSessionArn != null) __obj.updateDynamic("iamSessionArn")(iamSessionArn.asInstanceOf[js.Any])
-    if (iamUserArn != null) __obj.updateDynamic("iamUserArn")(iamUserArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOnPremisesInstanceInput]
   }
+  @scala.inline
+  implicit class RegisterOnPremisesInstanceInputOps[Self <: RegisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceName(value: InstanceName): Self = this.set("instanceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIamSessionArn(value: IamSessionArn): Self = this.set("iamSessionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamSessionArn: Self = this.set("iamSessionArn", js.undefined)
+    @scala.inline
+    def setIamUserArn(value: IamUserArn): Self = this.set("iamUserArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamUserArn: Self = this.set("iamUserArn", js.undefined)
+  }
+  
 }
 

@@ -30,20 +30,42 @@ trait IntegrationResponse extends js.Object {
 
 object IntegrationResponse {
   @scala.inline
-  def apply(
-    contentHandling: ContentHandlingStrategy = null,
-    responseParameters: MapOfStringToString = null,
-    responseTemplates: MapOfStringToString = null,
-    selectionPattern: String = null,
-    statusCode: StatusCode = null
-  ): IntegrationResponse = {
+  def apply(): IntegrationResponse = {
     val __obj = js.Dynamic.literal()
-    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
-    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
-    if (selectionPattern != null) __obj.updateDynamic("selectionPattern")(selectionPattern.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationResponse]
   }
+  @scala.inline
+  implicit class IntegrationResponseOps[Self <: IntegrationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentHandling(value: ContentHandlingStrategy): Self = this.set("contentHandling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentHandling: Self = this.set("contentHandling", js.undefined)
+    @scala.inline
+    def setResponseParameters(value: MapOfStringToString): Self = this.set("responseParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseParameters: Self = this.set("responseParameters", js.undefined)
+    @scala.inline
+    def setResponseTemplates(value: MapOfStringToString): Self = this.set("responseTemplates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTemplates: Self = this.set("responseTemplates", js.undefined)
+    @scala.inline
+    def setSelectionPattern(value: String): Self = this.set("selectionPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionPattern: Self = this.set("selectionPattern", js.undefined)
+    @scala.inline
+    def setStatusCode(value: StatusCode): Self = this.set("statusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("statusCode", js.undefined)
+  }
+  
 }
 

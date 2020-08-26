@@ -26,5 +26,24 @@ object GetParametersForImportRequest {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any], WrappingAlgorithm = WrappingAlgorithm.asInstanceOf[js.Any], WrappingKeySpec = WrappingKeySpec.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersForImportRequest]
   }
+  @scala.inline
+  implicit class GetParametersForImportRequestOps[Self <: GetParametersForImportRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrappingAlgorithm(value: AlgorithmSpec): Self = this.set("WrappingAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrappingKeySpec(value: WrappingKeySpec): Self = this.set("WrappingKeySpec", value.asInstanceOf[js.Any])
+  }
+  
 }
 

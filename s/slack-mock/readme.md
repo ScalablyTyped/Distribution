@@ -12,7 +12,7 @@ Slack API mocker
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 13009 |
+| # downloads        | 13449 |
 | # stars            | 0 |
 
 ## Links

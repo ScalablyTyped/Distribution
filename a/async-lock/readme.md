@@ -11,8 +11,8 @@ Lock on asynchronous code
 | Full name          | async-lock |
 | Keywords           | lock, async, concurrency, critical, section, mutex |
 | # releases         | 8 |
-| # dependents       | 115 |
-| # downloads        | 4291967 |
+| # dependents       | 120 |
+| # downloads        | 4535261 |
 | # stars            | 8 |
 
 ## Links

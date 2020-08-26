@@ -12,7 +12,7 @@ JSON does not handle circular references. This version does
 | Keywords           | JSON, circular, reference, recursive, recursion, parse, stringify |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 10017 |
+| # downloads        | 14905 |
 | # stars            | 0 |
 
 ## Links

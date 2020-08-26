@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "testing-library__dom"
-version := "7.19.0-a620b1"
-scalaVersion := "2.13.2"
+version := "7.21.7-65f288"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "pretty-format" % "25.5.0-c99381",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "aria-query" % "4.2-dt-20200628Z-4b589c",
+  "org.scalablytyped" %%% "pretty-format" % "26.2.0-662c48",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

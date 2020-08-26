@@ -10,9 +10,9 @@ Arbitrary-precision integer arithmetic using libgmp
 | ------------------ | :-------------: |
 | Full name          | bigint |
 | Keywords           | gmp, libgmp, big, bignum, bigint, integer, arithmetic, precision |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 5714 |
+| # downloads        | 5006 |
 | # stars            | 4 |
 
 ## Links

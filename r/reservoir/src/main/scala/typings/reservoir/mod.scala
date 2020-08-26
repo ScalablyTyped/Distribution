@@ -26,6 +26,7 @@ object mod extends js.Object {
     *   place of the default Math.random.
     */
   def apply[T](): ReservoirArray[T] = js.native
+  def apply[T](reservoirSize: js.UndefOr[scala.Nothing], randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
   def apply[T](reservoirSize: Double): ReservoirArray[T] = js.native
   def apply[T](reservoirSize: Double, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
 }

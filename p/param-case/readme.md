@@ -10,9 +10,9 @@ Transform into a lower cased string with dashes between words
 | ------------------ | :-------------: |
 | Full name          | param-case |
 | Keywords           | param, case, kebab, hyphen, dash, dash-case, param-case, convert, transform |
-| # releases         | 3 |
-| # dependents       | 143 |
-| # downloads        | 202814235 |
+| # releases         | 5 |
+| # dependents       | 149 |
+| # downloads        | 206403095 |
 | # stars            | 2 |
 
 ## Links

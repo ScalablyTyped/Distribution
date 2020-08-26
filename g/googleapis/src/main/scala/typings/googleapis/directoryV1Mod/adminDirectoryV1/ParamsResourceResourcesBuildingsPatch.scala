@@ -36,34 +36,42 @@ trait ParamsResourceResourcesBuildingsPatch extends StandardParameters {
 
 object ParamsResourceResourcesBuildingsPatch {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    buildingId: String = null,
-    coordinatesSource: String = null,
-    customer: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaBuilding = null,
-    userIp: String = null
-  ): ParamsResourceResourcesBuildingsPatch = {
+  def apply(): ParamsResourceResourcesBuildingsPatch = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId.asInstanceOf[js.Any])
-    if (coordinatesSource != null) __obj.updateDynamic("coordinatesSource")(coordinatesSource.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceResourcesBuildingsPatch]
   }
+  @scala.inline
+  implicit class ParamsResourceResourcesBuildingsPatchOps[Self <: ParamsResourceResourcesBuildingsPatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setBuildingId(value: String): Self = this.set("buildingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildingId: Self = this.set("buildingId", js.undefined)
+    @scala.inline
+    def setCoordinatesSource(value: String): Self = this.set("coordinatesSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinatesSource: Self = this.set("coordinatesSource", js.undefined)
+    @scala.inline
+    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomer: Self = this.set("customer", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaBuilding): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+  }
+  
 }
 

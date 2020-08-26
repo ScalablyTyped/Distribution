@@ -28,6 +28,7 @@ class ResourceEditsTesters protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTesters] = js.native
   def get(callback: BodyResponseCallback[SchemaTesters]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTesters] = js.native
   def get(params: ParamsResourceEditsTestersGet): GaxiosPromise[SchemaTesters] = js.native
   def get(params: ParamsResourceEditsTestersGet, callback: BodyResponseCallback[SchemaTesters]): Unit = js.native
   def get(
@@ -57,6 +58,7 @@ class ResourceEditsTesters protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaTesters] = js.native
   def patch(callback: BodyResponseCallback[SchemaTesters]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTesters] = js.native
   def patch(params: ParamsResourceEditsTestersPatch): GaxiosPromise[SchemaTesters] = js.native
   def patch(params: ParamsResourceEditsTestersPatch, callback: BodyResponseCallback[SchemaTesters]): Unit = js.native
   def patch(
@@ -86,6 +88,7 @@ class ResourceEditsTesters protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaTesters] = js.native
   def update(callback: BodyResponseCallback[SchemaTesters]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTesters] = js.native
   def update(params: ParamsResourceEditsTestersUpdate): GaxiosPromise[SchemaTesters] = js.native
   def update(params: ParamsResourceEditsTestersUpdate, callback: BodyResponseCallback[SchemaTesters]): Unit = js.native
   def update(

@@ -35,5 +35,7 @@ trait BluetoothRemoteGATTCharacteristic
   def startNotifications(): js.Promise[BluetoothRemoteGATTCharacteristic] = js.native
   def stopNotifications(): js.Promise[BluetoothRemoteGATTCharacteristic] = js.native
   def writeValue(value: BufferSource): js.Promise[Unit] = js.native
+  def writeValueWithResponse(value: BufferSource): js.Promise[Unit] = js.native
+  def writeValueWithoutResponse(value: BufferSource): js.Promise[Unit] = js.native
 }
 

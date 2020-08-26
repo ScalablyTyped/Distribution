@@ -35,5 +35,26 @@ object CertificateDomainValidationOption {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any], resourceRecordName = resourceRecordName.asInstanceOf[js.Any], resourceRecordType = resourceRecordType.asInstanceOf[js.Any], resourceRecordValue = resourceRecordValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateDomainValidationOption]
   }
+  @scala.inline
+  implicit class CertificateDomainValidationOptionOps[Self <: CertificateDomainValidationOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: String): Self = this.set("domainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceRecordName(value: String): Self = this.set("resourceRecordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceRecordType(value: String): Self = this.set("resourceRecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceRecordValue(value: String): Self = this.set("resourceRecordValue", value.asInstanceOf[js.Any])
+  }
+  
 }
 

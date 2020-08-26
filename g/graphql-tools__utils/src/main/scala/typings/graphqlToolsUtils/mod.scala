@@ -25,11 +25,14 @@ import typings.graphql.definitionMod.GraphQLOutputType
 import typings.graphql.definitionMod.GraphQLResolveInfo
 import typings.graphql.definitionMod.GraphQLType
 import typings.graphql.mod.GraphQLDirective
+import typings.graphql.mod.GraphQLEnumType
 import typings.graphql.mod.GraphQLError
 import typings.graphql.mod.GraphQLInputObjectType
 import typings.graphql.mod.GraphQLInterfaceType
 import typings.graphql.mod.GraphQLObjectType
+import typings.graphql.mod.GraphQLScalarType
 import typings.graphql.mod.GraphQLSchema
+import typings.graphql.mod.GraphQLUnionType
 import typings.graphql.parserMod.ParseOptions
 import typings.graphql.schemaMod.GraphQLSchemaValidationOptions
 import typings.graphqlToolsUtils.anon.ArgNames
@@ -51,6 +54,7 @@ import typings.graphqlToolsUtils.graphqlToolsUtilsStrings.`object`
 import typings.graphqlToolsUtils.graphqlToolsUtilsStrings.input
 import typings.graphqlToolsUtils.graphqlToolsUtilsStrings.interface
 import typings.graphqlToolsUtils.graphqlToolsUtilsStrings.output
+import typings.graphqlToolsUtils.interfacesMod.ExecutionResult
 import typings.graphqlToolsUtils.interfacesMod.GraphQLExecutionContext
 import typings.graphqlToolsUtils.interfacesMod.IDefaultValueIteratorFn
 import typings.graphqlToolsUtils.interfacesMod.IFieldIteratorFn
@@ -68,6 +72,9 @@ import typings.graphqlToolsUtils.transformInputValueMod.InputValueTransformer
 import typings.graphqlToolsUtils.typesMod.SchemaPrintOptions
 import typings.graphqlToolsUtils.validateDocumentsMod.LoadDocumentError
 import typings.graphqlToolsUtils.validateDocumentsMod.ValidationRule
+import typings.graphqlToolsUtils.visitResultMod.ErrorVisitorMap
+import typings.graphqlToolsUtils.visitResultMod.ResultVisitorMap
+import typings.graphqlToolsUtils.visitResultMod.ValueVisitor
 import typings.std.AsyncIterator
 import typings.std.Record
 import scala.scalajs.js
@@ -89,14 +96,10 @@ object mod extends js.Object {
   
   val ERROR_SYMBOL: js.Symbol = js.native
   def addTypes(schema: GraphQLSchema, newTypesOrDirectives: js.Array[GraphQLNamedType | GraphQLDirective]): GraphQLSchema = js.native
-  def appendObjectFields(
-    schema: GraphQLSchema,
-    typeName: String,
-    additionalFields: GraphQLFieldConfigMap[_, _, StringDictionary[_]]
-  ): GraphQLSchema = js.native
-  def applyRequestTransforms(originalRequest: Request, transforms: js.Array[Transform]): Request = js.native
-  def applyResultTransforms(originalResult: js.Any, transforms: js.Array[Transform]): js.Any = js.native
-  def applySchemaTransforms(originalSchema: GraphQLSchema, transforms: js.Array[Transform]): GraphQLSchema = js.native
+  def appendObjectFields(schema: GraphQLSchema, typeName: String, additionalFields: GraphQLFieldConfigMap[_, _]): GraphQLSchema = js.native
+  def applyRequestTransforms(originalRequest: Request, transforms: js.Array[Transform[Record[String, _]]]): Request = js.native
+  def applyResultTransforms(originalResult: js.Any, transforms: js.Array[Transform[Record[String, _]]]): js.Any = js.native
+  def applySchemaTransforms(originalSchema: GraphQLSchema, transforms: js.Array[Transform[Record[String, _]]]): GraphQLSchema = js.native
   def argsToFieldConfigArgumentMap(args: js.Array[GraphQLArgument]): GraphQLFieldConfigArgumentMap = js.native
   def argumentToArgumentConfig(arg: GraphQLArgument): GraphQLArgumentConfig = js.native
   def asArray[T](fns: T): js.Array[T] = js.native
@@ -108,7 +111,7 @@ object mod extends js.Object {
   def cloneType(`type`: GraphQLNamedType): GraphQLNamedType = js.native
   def collectFields(
     exeContext: GraphQLExecutionContext,
-    runtimeType: GraphQLObjectType[_, _, StringDictionary[_]],
+    runtimeType: GraphQLObjectType[_, _],
     selectionSet: SelectionSetNode,
     fields: Record[String, js.Array[FieldNode]],
     visitedFragmentNames: Record[String, Boolean]
@@ -117,12 +120,16 @@ object mod extends js.Object {
   def compareNodes(a: ASTNode, b: ASTNode, customFn: js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): Double = js.native
   def compareStrings[A, B](a: A, b: B): `0` | `1` | `-1` = js.native
   def concatInlineFragments(`type`: String, fragments: js.Array[InlineFragmentNode]): InlineFragmentNode = js.native
+  def correctASTNodes(`type`: GraphQLEnumType): GraphQLEnumType = js.native
+  def correctASTNodes(`type`: GraphQLInputObjectType): GraphQLInputObjectType = js.native
+  def correctASTNodes(`type`: GraphQLInterfaceType): GraphQLInterfaceType = js.native
+  def correctASTNodes(`type`: GraphQLObjectType[_, _]): GraphQLObjectType[_, _] = js.native
   @JSName("createNamedStub")
   def createNamedStub_input(name: String, `type`: input): GraphQLInputObjectType = js.native
   @JSName("createNamedStub")
   def createNamedStub_interface(name: String, `type`: interface): GraphQLInterfaceType = js.native
   @JSName("createNamedStub")
-  def createNamedStub_object(name: String, `type`: `object`): GraphQLObjectType[_, _, StringDictionary[_]] = js.native
+  def createNamedStub_object(name: String, `type`: `object`): GraphQLObjectType[_, _] = js.native
   def createSchemaDefinition(`def`: Mutation): String = js.native
   def createSchemaDefinition(`def`: Mutation, config: Force): String = js.native
   @JSName("createStub")
@@ -149,7 +156,7 @@ object mod extends js.Object {
   def getImplementingTypes(interfaceName: String, schema: GraphQLSchema): js.Array[String] = js.native
   def getResolversFromSchema(schema: GraphQLSchema): IResolvers[_, _, Record[String, _], _] = js.native
   def getResponseKeyFromInfo(info: GraphQLResolveInfo): String = js.native
-  def getUserTypesFromSchema(schema: GraphQLSchema): js.Array[GraphQLObjectType[_, _, StringDictionary[_]]] = js.native
+  def getUserTypesFromSchema(schema: GraphQLSchema): js.Array[GraphQLObjectType[_, _]] = js.native
   def healSchema(schema: GraphQLSchema): GraphQLSchema = js.native
   def healTypes(originalTypeMap: Record[String, GraphQLNamedType | Null], directives: js.Array[GraphQLDirective]): Unit = js.native
   def healTypes(
@@ -185,8 +192,8 @@ object mod extends js.Object {
       /* field */ GraphQLFieldConfig[_, _, StringDictionary[_]], 
       Boolean
     ],
-    newFields: GraphQLFieldConfigMap[_, _, StringDictionary[_]]
-  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = js.native
+    newFields: GraphQLFieldConfigMap[_, _]
+  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _]] = js.native
   def nodeToString(a: ASTNode): String = js.native
   def observableToAsyncIterable[T](observable: Observable[T]): (AsyncIterator[T, _, js.UndefOr[scala.Nothing]]) with typings.graphqlToolsUtils.anon.AsyncIterator[T] = js.native
   def parseFragmentToInlineFragment(definitions: String): InlineFragmentNode = js.native
@@ -214,8 +221,15 @@ object mod extends js.Object {
       /* field */ GraphQLFieldConfig[_, _, StringDictionary[_]], 
       Boolean
     ]
-  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _, StringDictionary[_]]] = js.native
+  ): js.Tuple2[GraphQLSchema, GraphQLFieldConfigMap[_, _]] = js.native
   def renameFieldNode(fieldNode: FieldNode, name: String): FieldNode = js.native
+  def renameType(`type`: GraphQLNamedType, newTypeName: String): GraphQLNamedType = js.native
+  def renameType(`type`: GraphQLEnumType, newTypeName: String): GraphQLEnumType = js.native
+  def renameType(`type`: GraphQLInputObjectType, newTypeName: String): GraphQLInputObjectType = js.native
+  def renameType(`type`: GraphQLInterfaceType, newTypeName: String): GraphQLInterfaceType = js.native
+  def renameType(`type`: GraphQLObjectType[_, _], newTypeName: String): GraphQLObjectType[_, _] = js.native
+  def renameType(`type`: GraphQLScalarType, newTypeName: String): GraphQLScalarType = js.native
+  def renameType(`type`: GraphQLUnionType, newTypeName: String): GraphQLUnionType = js.native
   def rewireTypes(originalTypeMap: Record[String, GraphQLNamedType | Null], directives: js.Array[GraphQLDirective]): Directives = js.native
   def rewireTypes(
     originalTypeMap: Record[String, GraphQLNamedType | Null],
@@ -230,12 +244,12 @@ object mod extends js.Object {
       /* field */ GraphQLFieldConfig[_, _, StringDictionary[_]], 
       Boolean
     ]
-  ): GraphQLFieldConfigMap[_, _, StringDictionary[_]] = js.native
+  ): GraphQLFieldConfigMap[_, _] = js.native
   def serializeInputValue(`type`: GraphQLInputType, value: js.Any): js.Any = js.native
   def setErrors(result: js.Any, errors: js.Array[GraphQLError]): Unit = js.native
   def slicedError(originalError: GraphQLError): GraphQLError = js.native
   def transformInputValue(`type`: GraphQLInputType, value: js.Any, transformer: InputValueTransformer): js.Any = js.native
-  def typeContainsSelectionSet(`type`: GraphQLObjectType[_, _, StringDictionary[_]], selectionSet: SelectionSetNode): Boolean = js.native
+  def typeContainsSelectionSet(`type`: GraphQLObjectType[_, _], selectionSet: SelectionSetNode): Boolean = js.native
   def updateArgument(
     argName: String,
     argType: GraphQLInputType,
@@ -246,6 +260,32 @@ object mod extends js.Object {
   ): Unit = js.native
   def validateGraphQlDocuments(schema: GraphQLSchema, documentFiles: js.Array[Source]): js.Promise[js.Array[LoadDocumentError]] = js.native
   def validateGraphQlDocuments(schema: GraphQLSchema, documentFiles: js.Array[Source], effectiveRules: js.Array[ValidationRule]): js.Promise[js.Array[LoadDocumentError]] = js.native
+  def visitData(data: js.Any): js.Any = js.native
+  def visitData(data: js.Any, enter: js.UndefOr[scala.Nothing], leave: ValueVisitor): js.Any = js.native
+  def visitData(data: js.Any, enter: ValueVisitor): js.Any = js.native
+  def visitData(data: js.Any, enter: ValueVisitor, leave: ValueVisitor): js.Any = js.native
+  def visitErrors(errors: js.Array[GraphQLError], visitor: js.Function1[/* error */ GraphQLError, GraphQLError]): js.Array[GraphQLError] = js.native
+  def visitResult(result: ExecutionResult[Record[String, _]], request: Request, schema: GraphQLSchema): js.Any = js.native
+  def visitResult(
+    result: ExecutionResult[Record[String, _]],
+    request: Request,
+    schema: GraphQLSchema,
+    resultVisitorMap: js.UndefOr[scala.Nothing],
+    errorVisitorMap: ErrorVisitorMap
+  ): js.Any = js.native
+  def visitResult(
+    result: ExecutionResult[Record[String, _]],
+    request: Request,
+    schema: GraphQLSchema,
+    resultVisitorMap: ResultVisitorMap
+  ): js.Any = js.native
+  def visitResult(
+    result: ExecutionResult[Record[String, _]],
+    request: Request,
+    schema: GraphQLSchema,
+    resultVisitorMap: ResultVisitorMap,
+    errorVisitorMap: ErrorVisitorMap
+  ): js.Any = js.native
   def visitSchema(
     schema: GraphQLSchema,
     visitorOrVisitorSelector: js.Array[typings.graphqlToolsUtils.schemaVisitorMod.SchemaVisitor | SchemaVisitorMap]

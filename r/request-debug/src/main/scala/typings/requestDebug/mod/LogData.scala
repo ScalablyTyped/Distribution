@@ -14,15 +14,13 @@ trait LogData extends js.Object
 
 object LogData {
   @scala.inline
-  def RequestData(debugId: Double, headers: Headers, method: String, uri: String, body: js.Any = null): LogData = {
+  def RequestData(debugId: Double, headers: Headers, method: String, uri: String): LogData = {
     val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogData]
   }
   @scala.inline
-  def ResponseData(debugId: Double, headers: Headers, statusCode: Double, body: js.Any = null): LogData = {
+  def ResponseData(debugId: Double, headers: Headers, statusCode: Double): LogData = {
     val __obj = js.Dynamic.literal(debugId = debugId.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogData]
   }
   @scala.inline

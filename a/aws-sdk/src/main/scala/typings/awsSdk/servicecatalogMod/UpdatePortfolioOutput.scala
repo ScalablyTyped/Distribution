@@ -18,11 +18,32 @@ trait UpdatePortfolioOutput extends js.Object {
 
 object UpdatePortfolioOutput {
   @scala.inline
-  def apply(PortfolioDetail: PortfolioDetail = null, Tags: Tags = null): UpdatePortfolioOutput = {
+  def apply(): UpdatePortfolioOutput = {
     val __obj = js.Dynamic.literal()
-    if (PortfolioDetail != null) __obj.updateDynamic("PortfolioDetail")(PortfolioDetail.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePortfolioOutput]
   }
+  @scala.inline
+  implicit class UpdatePortfolioOutputOps[Self <: UpdatePortfolioOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPortfolioDetail(value: PortfolioDetail): Self = this.set("PortfolioDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortfolioDetail: Self = this.set("PortfolioDetail", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

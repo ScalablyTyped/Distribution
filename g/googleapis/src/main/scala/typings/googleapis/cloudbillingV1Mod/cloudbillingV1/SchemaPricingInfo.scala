@@ -44,20 +44,42 @@ trait SchemaPricingInfo extends js.Object {
 
 object SchemaPricingInfo {
   @scala.inline
-  def apply(
-    aggregationInfo: SchemaAggregationInfo = null,
-    currencyConversionRate: js.UndefOr[Double] = js.undefined,
-    effectiveTime: String = null,
-    pricingExpression: SchemaPricingExpression = null,
-    summary: String = null
-  ): SchemaPricingInfo = {
+  def apply(): SchemaPricingInfo = {
     val __obj = js.Dynamic.literal()
-    if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(currencyConversionRate)) __obj.updateDynamic("currencyConversionRate")(currencyConversionRate.get.asInstanceOf[js.Any])
-    if (effectiveTime != null) __obj.updateDynamic("effectiveTime")(effectiveTime.asInstanceOf[js.Any])
-    if (pricingExpression != null) __obj.updateDynamic("pricingExpression")(pricingExpression.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPricingInfo]
   }
+  @scala.inline
+  implicit class SchemaPricingInfoOps[Self <: SchemaPricingInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationInfo(value: SchemaAggregationInfo): Self = this.set("aggregationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationInfo: Self = this.set("aggregationInfo", js.undefined)
+    @scala.inline
+    def setCurrencyConversionRate(value: Double): Self = this.set("currencyConversionRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyConversionRate: Self = this.set("currencyConversionRate", js.undefined)
+    @scala.inline
+    def setEffectiveTime(value: String): Self = this.set("effectiveTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffectiveTime: Self = this.set("effectiveTime", js.undefined)
+    @scala.inline
+    def setPricingExpression(value: SchemaPricingExpression): Self = this.set("pricingExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePricingExpression: Self = this.set("pricingExpression", js.undefined)
+    @scala.inline
+    def setSummary(value: String): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+  }
+  
 }
 

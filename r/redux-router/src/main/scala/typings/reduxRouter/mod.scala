@@ -41,6 +41,7 @@ object mod extends js.Object {
   def goForward(args: js.Object*): ReduxRouterAction = js.native
   def historyAPI(method: js.Any): js.Function1[/* repeated */ js.Object, ReduxRouterAction] = js.native
   def isActive(pathname: Pathname): Boolean = js.native
+  def isActive(pathname: Pathname, query: js.UndefOr[scala.Nothing], indexOnly: Boolean): Boolean = js.native
   def isActive(
     pathname: Pathname,
     query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any

@@ -30,10 +30,8 @@ class TabContainer protected () extends ConditionallyVisibleWidget {
   ) = this()
   @JSName("model")
   var model_FTabContainer: IModel = js.native
-  def defaultPage(): js.Any = js.native
-  def defaultPage(newValue: TabPage): js.Any = js.native
-  @JSName("defaultPage")
-  def defaultPage_Union: TabPage | Null = js.native
+  def defaultPage: TabPage | Null = js.native
+  def defaultPage_=(newValue: TabPage | Null): Unit = js.native
   def tabPages: IList[TabPage] = js.native
 }
 

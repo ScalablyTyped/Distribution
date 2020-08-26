@@ -4,18 +4,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait HTMLNamespace extends js.Object {
   @JSName("MSHTML.HTMLNamespace_typekey")
-  var MSHTMLDotHTMLNamespace_typekey: HTMLNamespace
-  val constructor: js.Any
-  val name: String
-  var onreadystatechange: js.Any
-  val readyState: js.Any
-  val tagNames: js.Any
-  val urn: String
-  def attachEvent(event: String, pdisp: js.Any): Boolean
-  def detachEvent(event: String, pdisp: js.Any): Unit
-  def doImport(bstrImplementationUrl: String): Unit
+  var MSHTMLDotHTMLNamespace_typekey: HTMLNamespace = js.native
+  val constructor: js.Any = js.native
+  val name: String = js.native
+  var onreadystatechange: js.Any = js.native
+  val readyState: js.Any = js.native
+  val tagNames: js.Any = js.native
+  val urn: String = js.native
+  def attachEvent(event: String, pdisp: js.Any): Boolean = js.native
+  def detachEvent(event: String, pdisp: js.Any): Unit = js.native
+  def doImport(bstrImplementationUrl: String): Unit = js.native
 }
 
 object HTMLNamespace {
@@ -36,5 +37,38 @@ object HTMLNamespace {
     __obj.updateDynamic("MSHTML.HTMLNamespace_typekey")(MSHTMLDotHTMLNamespace_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTMLNamespace]
   }
+  @scala.inline
+  implicit class HTMLNamespaceOps[Self <: HTMLNamespace] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSHTMLDotHTMLNamespace_typekey(value: HTMLNamespace): Self = this.set("MSHTML.HTMLNamespace_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachEvent(value: (String, js.Any) => Boolean): Self = this.set("attachEvent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setConstructor(value: js.Any): Self = this.set("constructor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetachEvent(value: (String, js.Any) => Unit): Self = this.set("detachEvent", js.Any.fromFunction2(value))
+    @scala.inline
+    def setDoImport(value: String => Unit): Self = this.set("doImport", js.Any.fromFunction1(value))
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOnreadystatechange(value: js.Any): Self = this.set("onreadystatechange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReadyState(value: js.Any): Self = this.set("readyState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTagNames(value: js.Any): Self = this.set("tagNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrn(value: String): Self = this.set("urn", value.asInstanceOf[js.Any])
+  }
+  
 }
 

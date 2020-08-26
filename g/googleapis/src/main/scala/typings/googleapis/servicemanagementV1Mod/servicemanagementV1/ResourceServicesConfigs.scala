@@ -33,6 +33,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaService] = js.native
   def create(callback: BodyResponseCallback[SchemaService]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def create(params: ParamsResourceServicesConfigsCreate): GaxiosPromise[SchemaService] = js.native
   def create(params: ParamsResourceServicesConfigsCreate, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def create(
@@ -62,6 +63,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaService] = js.native
   def get(callback: BodyResponseCallback[SchemaService]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceServicesConfigsGet): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceServicesConfigsGet, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def get(
@@ -92,6 +94,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServiceConfigsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
   def list(params: ParamsResourceServicesConfigsList): GaxiosPromise[SchemaListServiceConfigsResponse] = js.native
   def list(
     params: ParamsResourceServicesConfigsList,
@@ -130,6 +133,7 @@ class ResourceServicesConfigs protected () extends js.Object {
     */
   def submit(): GaxiosPromise[SchemaOperation] = js.native
   def submit(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def submit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def submit(params: ParamsResourceServicesConfigsSubmit): GaxiosPromise[SchemaOperation] = js.native
   def submit(params: ParamsResourceServicesConfigsSubmit, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def submit(

@@ -1,6 +1,6 @@
 package typings.intlMessageformatParser
 
-import typings.formatjsIntlUnifiedNumberformat.mod.UnifiedNumberFormatOptions
+import typings.formatjsIntlNumberformat.mod.NumberFormatOptions
 import typings.intlMessageformatParser.parserMod.Expectation
 import typings.intlMessageformatParser.parserMod.IFileRange
 import typings.intlMessageformatParser.parserMod.IParseOptions
@@ -29,24 +29,24 @@ object libMod extends js.Object {
   }
   
   val pegParse: ParseFunction = js.native
-  def convertNumberSkeletonToNumberFormatOptions(tokens: js.Array[NumberSkeletonToken]): UnifiedNumberFormatOptions = js.native
+  def convertNumberSkeletonToNumberFormatOptions(tokens: js.Array[NumberSkeletonToken]): NumberFormatOptions = js.native
   def createLiteralElement(value: String): LiteralElement = js.native
   def createNumberElement(value: String): NumberElement = js.native
   def createNumberElement(value: String, style: String): NumberElement = js.native
-  def isArgumentElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.ArgumentElement */ Boolean = js.native
-  def isDateElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateElement */ Boolean = js.native
-  def isDateTimeSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateTimeSkeleton */ Boolean = js.native
-  def isDateTimeSkeleton(el: DateTimeSkeleton | String): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateTimeSkeleton */ Boolean = js.native
-  def isDateTimeSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.DateTimeSkeleton */ Boolean = js.native
-  def isLiteralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.LiteralElement */ Boolean = js.native
-  def isNumberElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberElement */ Boolean = js.native
-  def isNumberSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def isNumberSkeleton(el: String | NumberSkeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def isNumberSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.NumberSkeleton */ Boolean = js.native
-  def isPluralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.PluralElement */ Boolean = js.native
-  def isPoundElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.PoundElement */ Boolean = js.native
-  def isSelectElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.SelectElement */ Boolean = js.native
-  def isTimeElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/types.TimeElement */ Boolean = js.native
+  def isArgumentElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.ArgumentElement */ Boolean = js.native
+  def isDateElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.DateElement */ Boolean = js.native
+  def isDateTimeSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.DateTimeSkeleton */ Boolean = js.native
+  def isDateTimeSkeleton(el: js.UndefOr[DateTimeSkeleton | Null | String]): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.DateTimeSkeleton */ Boolean = js.native
+  def isDateTimeSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.DateTimeSkeleton */ Boolean = js.native
+  def isLiteralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.LiteralElement */ Boolean = js.native
+  def isNumberElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.NumberElement */ Boolean = js.native
+  def isNumberSkeleton(el: js.UndefOr[String | NumberSkeleton | Null]): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.NumberSkeleton */ Boolean = js.native
+  def isNumberSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.NumberSkeleton */ Boolean = js.native
+  def isPluralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.PluralElement */ Boolean = js.native
+  def isPoundElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.PoundElement */ Boolean = js.native
+  def isSelectElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.SelectElement */ Boolean = js.native
+  def isTagElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.TagElement */ Boolean = js.native
+  def isTimeElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/lib/src/types.TimeElement */ Boolean = js.native
   def parse(input: String): js.Array[MessageFormatElement] = js.native
   def parse(input: String, opts: ParseOptions): js.Array[MessageFormatElement] = js.native
   def parseDateTimeSkeleton(skeleton: String): ExtendedDateTimeFormatOptions = js.native
@@ -66,6 +66,7 @@ object libMod extends js.Object {
     /* 6 */ val plural: typings.intlMessageformatParser.typesMod.TYPE.plural with Double = js.native
     /* 7 */ val pound: typings.intlMessageformatParser.typesMod.TYPE.pound with Double = js.native
     /* 5 */ val select: typings.intlMessageformatParser.typesMod.TYPE.select with Double = js.native
+    /* 8 */ val tag: typings.intlMessageformatParser.typesMod.TYPE.tag with Double = js.native
     /* 4 */ val time: typings.intlMessageformatParser.typesMod.TYPE.time with Double = js.native
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.intlMessageformatParser.typesMod.TYPE with Double] = js.native

@@ -43,20 +43,46 @@ trait SchemaCacheKeyPolicy extends js.Object {
 
 object SchemaCacheKeyPolicy {
   @scala.inline
-  def apply(
-    includeHost: js.UndefOr[Boolean] = js.undefined,
-    includeProtocol: js.UndefOr[Boolean] = js.undefined,
-    includeQueryString: js.UndefOr[Boolean] = js.undefined,
-    queryStringBlacklist: js.Array[String] = null,
-    queryStringWhitelist: js.Array[String] = null
-  ): SchemaCacheKeyPolicy = {
+  def apply(): SchemaCacheKeyPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(includeHost)) __obj.updateDynamic("includeHost")(includeHost.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeProtocol)) __obj.updateDynamic("includeProtocol")(includeProtocol.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeQueryString)) __obj.updateDynamic("includeQueryString")(includeQueryString.get.asInstanceOf[js.Any])
-    if (queryStringBlacklist != null) __obj.updateDynamic("queryStringBlacklist")(queryStringBlacklist.asInstanceOf[js.Any])
-    if (queryStringWhitelist != null) __obj.updateDynamic("queryStringWhitelist")(queryStringWhitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCacheKeyPolicy]
   }
+  @scala.inline
+  implicit class SchemaCacheKeyPolicyOps[Self <: SchemaCacheKeyPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIncludeHost(value: Boolean): Self = this.set("includeHost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeHost: Self = this.set("includeHost", js.undefined)
+    @scala.inline
+    def setIncludeProtocol(value: Boolean): Self = this.set("includeProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeProtocol: Self = this.set("includeProtocol", js.undefined)
+    @scala.inline
+    def setIncludeQueryString(value: Boolean): Self = this.set("includeQueryString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeQueryString: Self = this.set("includeQueryString", js.undefined)
+    @scala.inline
+    def setQueryStringBlacklistVarargs(value: String*): Self = this.set("queryStringBlacklist", js.Array(value :_*))
+    @scala.inline
+    def setQueryStringBlacklist(value: js.Array[String]): Self = this.set("queryStringBlacklist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryStringBlacklist: Self = this.set("queryStringBlacklist", js.undefined)
+    @scala.inline
+    def setQueryStringWhitelistVarargs(value: String*): Self = this.set("queryStringWhitelist", js.Array(value :_*))
+    @scala.inline
+    def setQueryStringWhitelist(value: js.Array[String]): Self = this.set("queryStringWhitelist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryStringWhitelist: Self = this.set("queryStringWhitelist", js.undefined)
+  }
+  
 }
 

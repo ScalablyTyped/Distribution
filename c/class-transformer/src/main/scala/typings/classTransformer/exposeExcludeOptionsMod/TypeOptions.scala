@@ -4,21 +4,41 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TypeOptions extends js.Object {
-  var discriminator: js.UndefOr[Discriminator] = js.undefined
+  var discriminator: js.UndefOr[Discriminator] = js.native
   /**
     * Is false by default.
     */
-  var keepDiscriminatorProperty: js.UndefOr[Boolean] = js.undefined
+  var keepDiscriminatorProperty: js.UndefOr[Boolean] = js.native
 }
 
 object TypeOptions {
   @scala.inline
-  def apply(discriminator: Discriminator = null, keepDiscriminatorProperty: js.UndefOr[Boolean] = js.undefined): TypeOptions = {
+  def apply(): TypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepDiscriminatorProperty)) __obj.updateDynamic("keepDiscriminatorProperty")(keepDiscriminatorProperty.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeOptions]
   }
+  @scala.inline
+  implicit class TypeOptionsOps[Self <: TypeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiscriminator(value: Discriminator): Self = this.set("discriminator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscriminator: Self = this.set("discriminator", js.undefined)
+    @scala.inline
+    def setKeepDiscriminatorProperty(value: Boolean): Self = this.set("keepDiscriminatorProperty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeepDiscriminatorProperty: Self = this.set("keepDiscriminatorProperty", js.undefined)
+  }
+  
 }
 

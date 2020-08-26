@@ -15,7 +15,7 @@ trait SearchSource extends JSONSupport {
     */
   var autoNavigate: Boolean = js.native
   /**
-    * This property replaces the now deprecated `searchQueryParams`, `suggestQueryParams`, and `searchExtent` properties. Please see the object specification table below for details.
+    * For filtering suggests or search results. Please see the object specification table below for details.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
@@ -132,6 +132,8 @@ trait SearchSource extends JSONSupport {
     * The set zoom scale for the resulting search result. This scale is automatically honored.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#zoomScale)
+    *
+    * @default null
     */
   var zoomScale: Double = js.native
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("jest-watcher/build", JSImport.Namespace)
+@JSImport("jest-watcher", JSImport.Namespace)
 @js.native
 object mod extends js.Object {
   @js.native

@@ -60,7 +60,7 @@ object ionRouterOutletMod extends js.Object {
       parentOutlet: IonRouterOutlet
     ) = this()
     var _activatedRoute: js.Any = js.native
-    var _swipeGesture: js.UndefOr[js.Any] = js.native
+    var _swipeGesture: js.Any = js.native
     var activateEvents: EventEmitter[_] = js.native
     var activated: js.Any = js.native
     val activatedRoute: ActivatedRoute = js.native
@@ -112,6 +112,7 @@ object ionRouterOutletMod extends js.Object {
       * Returns `true` if there are pages in the stack to go back.
       */
     def canGoBack(): Boolean = js.native
+    def canGoBack(deep: js.UndefOr[scala.Nothing], stackId: String): Boolean = js.native
     def canGoBack(deep: Double): Boolean = js.native
     def canGoBack(deep: Double, stackId: String): Boolean = js.native
     def deactivate(): Unit = js.native
@@ -142,24 +143,10 @@ object ionRouterOutletMod extends js.Object {
     def getRootView(): js.UndefOr[RouteView] = js.native
     def getRootView(stackId: String): js.UndefOr[RouteView] = js.native
     /**
-      * A callback method that performs custom clean-up, invoked immediately
-      * before a directive, pipe, or service instance is destroyed.
-      */
-    /* CompleteClass */
-    override def ngOnDestroy(): Unit = js.native
-    /**
-      * A callback method that is invoked immediately after the
-      * default change detector has checked the directive's
-      * data-bound properties for the first time,
-      * and before any of the view or content children have been checked.
-      * It is invoked only once when the directive is instantiated.
-      */
-    /* CompleteClass */
-    override def ngOnInit(): Unit = js.native
-    /**
       * Resolves to `true` if it the outlet was able to sucessfully pop the last N pages.
       */
     def pop(): js.Promise[Boolean] = js.native
+    def pop(deep: js.UndefOr[scala.Nothing], stackId: String): js.Promise[Boolean] = js.native
     def pop(deep: Double): js.Promise[Boolean] = js.native
     def pop(deep: Double, stackId: String): js.Promise[Boolean] = js.native
   }

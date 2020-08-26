@@ -14,6 +14,7 @@ trait Socket extends js.Object {
   def onconnect(): Unit = js.native
   def ondata(data: String): Unit = js.native
   def ondisconnect(error: Boolean): Unit = js.native
+  def ondisconnect(error: Boolean, code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def ondisconnect(error: Boolean, code: Double): Unit = js.native
   def ondisconnect(error: Boolean, code: Double, reason: String): Unit = js.native
   def send(data: String): Unit = js.native

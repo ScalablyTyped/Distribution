@@ -30,20 +30,44 @@ trait ScanOutput extends js.Object {
 
 object ScanOutput {
   @scala.inline
-  def apply(
-    ConsumedCapacity: ConsumedCapacity = null,
-    Count: js.UndefOr[Integer] = js.undefined,
-    Items: ItemList = null,
-    LastEvaluatedKey: Key = null,
-    ScannedCount: js.UndefOr[Integer] = js.undefined
-  ): ScanOutput = {
+  def apply(): ScanOutput = {
     val __obj = js.Dynamic.literal()
-    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
-    if (Items != null) __obj.updateDynamic("Items")(Items.asInstanceOf[js.Any])
-    if (LastEvaluatedKey != null) __obj.updateDynamic("LastEvaluatedKey")(LastEvaluatedKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(ScannedCount)) __obj.updateDynamic("ScannedCount")(ScannedCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanOutput]
   }
+  @scala.inline
+  implicit class ScanOutputOps[Self <: ScanOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumedCapacity(value: ConsumedCapacity): Self = this.set("ConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumedCapacity: Self = this.set("ConsumedCapacity", js.undefined)
+    @scala.inline
+    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("Count", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: AttributeMap*): Self = this.set("Items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: ItemList): Self = this.set("Items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("Items", js.undefined)
+    @scala.inline
+    def setLastEvaluatedKey(value: Key): Self = this.set("LastEvaluatedKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEvaluatedKey: Self = this.set("LastEvaluatedKey", js.undefined)
+    @scala.inline
+    def setScannedCount(value: Integer): Self = this.set("ScannedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScannedCount: Self = this.set("ScannedCount", js.undefined)
+  }
+  
 }
 

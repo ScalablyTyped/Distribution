@@ -6,16 +6,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Build extends js.Object {
-  var build: js.UndefOr[js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, _], _]] = js.undefined
+  var build: js.UndefOr[js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, _], _]] = js.native
 }
 
 object Build {
   @scala.inline
-  def apply(build: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, _]) => _ = null): Build = {
+  def apply(): Build = {
     val __obj = js.Dynamic.literal()
-    if (build != null) __obj.updateDynamic("build")(js.Any.fromFunction2(build))
     __obj.asInstanceOf[Build]
   }
+  @scala.inline
+  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, _]) => _): Self = this.set("build", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+  }
+  
 }
 

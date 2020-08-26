@@ -62,34 +62,72 @@ trait CreateJobRequest extends js.Object {
 
 object CreateJobRequest {
   @scala.inline
-  def apply(
-    Role: string,
-    Settings: JobSettings,
-    AccelerationSettings: AccelerationSettings = null,
-    BillingTagsSource: BillingTagsSource = null,
-    ClientRequestToken: string = null,
-    HopDestinations: listOfHopDestination = null,
-    JobTemplate: string = null,
-    Priority: js.UndefOr[integerMinNegative50Max50] = js.undefined,
-    Queue: string = null,
-    SimulateReservedQueue: SimulateReservedQueue = null,
-    StatusUpdateInterval: StatusUpdateInterval = null,
-    Tags: mapOfString = null,
-    UserMetadata: mapOfString = null
-  ): CreateJobRequest = {
+  def apply(Role: string, Settings: JobSettings): CreateJobRequest = {
     val __obj = js.Dynamic.literal(Role = Role.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
-    if (AccelerationSettings != null) __obj.updateDynamic("AccelerationSettings")(AccelerationSettings.asInstanceOf[js.Any])
-    if (BillingTagsSource != null) __obj.updateDynamic("BillingTagsSource")(BillingTagsSource.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (HopDestinations != null) __obj.updateDynamic("HopDestinations")(HopDestinations.asInstanceOf[js.Any])
-    if (JobTemplate != null) __obj.updateDynamic("JobTemplate")(JobTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (Queue != null) __obj.updateDynamic("Queue")(Queue.asInstanceOf[js.Any])
-    if (SimulateReservedQueue != null) __obj.updateDynamic("SimulateReservedQueue")(SimulateReservedQueue.asInstanceOf[js.Any])
-    if (StatusUpdateInterval != null) __obj.updateDynamic("StatusUpdateInterval")(StatusUpdateInterval.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (UserMetadata != null) __obj.updateDynamic("UserMetadata")(UserMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
+  @scala.inline
+  implicit class CreateJobRequestOps[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRole(value: string): Self = this.set("Role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSettings(value: JobSettings): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccelerationSettings(value: AccelerationSettings): Self = this.set("AccelerationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccelerationSettings: Self = this.set("AccelerationSettings", js.undefined)
+    @scala.inline
+    def setBillingTagsSource(value: BillingTagsSource): Self = this.set("BillingTagsSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingTagsSource: Self = this.set("BillingTagsSource", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: string): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setHopDestinationsVarargs(value: HopDestination*): Self = this.set("HopDestinations", js.Array(value :_*))
+    @scala.inline
+    def setHopDestinations(value: listOfHopDestination): Self = this.set("HopDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHopDestinations: Self = this.set("HopDestinations", js.undefined)
+    @scala.inline
+    def setJobTemplate(value: string): Self = this.set("JobTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTemplate: Self = this.set("JobTemplate", js.undefined)
+    @scala.inline
+    def setPriority(value: integerMinNegative50Max50): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setQueue(value: string): Self = this.set("Queue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueue: Self = this.set("Queue", js.undefined)
+    @scala.inline
+    def setSimulateReservedQueue(value: SimulateReservedQueue): Self = this.set("SimulateReservedQueue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSimulateReservedQueue: Self = this.set("SimulateReservedQueue", js.undefined)
+    @scala.inline
+    def setStatusUpdateInterval(value: StatusUpdateInterval): Self = this.set("StatusUpdateInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusUpdateInterval: Self = this.set("StatusUpdateInterval", js.undefined)
+    @scala.inline
+    def setTags(value: mapOfString): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setUserMetadata(value: mapOfString): Self = this.set("UserMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserMetadata: Self = this.set("UserMetadata", js.undefined)
+  }
+  
 }
 

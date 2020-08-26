@@ -29,8 +29,8 @@ class Container protected () extends js.Object {
   def copy(options: js.Object): js.Promise[_] = js.native
   /** Deprecated since RAPI v1.20 */
   def copy(options: js.Object, callback: Callback[_]): Unit = js.native
-  def exec(options: js.Object): js.Promise[_] = js.native
-  def exec(options: js.Object, callback: Callback[_]): Unit = js.native
+  def exec(options: ExecCreateOptions): js.Promise[Exec] = js.native
+  def exec(options: ExecCreateOptions, callback: Callback[Exec]): Unit = js.native
   def export(): js.Promise[ReadableStream] = js.native
   def export(callback: Callback[ReadableStream]): Unit = js.native
   def getArchive(options: js.Object): js.Promise[ReadableStream] = js.native

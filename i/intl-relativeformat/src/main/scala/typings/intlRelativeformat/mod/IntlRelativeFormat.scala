@@ -16,7 +16,7 @@ trait IntlRelativeFormat
   extends Instantiable0[IntlRelativeFormat]
      with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), IntlRelativeFormat]
      with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
       /* opts */ IntlRelativeFormatOptions, 
       IntlRelativeFormat
     ] {
@@ -24,6 +24,7 @@ trait IntlRelativeFormat
   var defaultLocale: String = js.native
   var thresholds: Record[String, Double] = js.native
   def apply(): IntlRelativeFormat = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
   def apply(locales: String): IntlRelativeFormat = js.native
   def apply(locales: String, opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
   def apply(locales: js.Array[String]): IntlRelativeFormat = js.native

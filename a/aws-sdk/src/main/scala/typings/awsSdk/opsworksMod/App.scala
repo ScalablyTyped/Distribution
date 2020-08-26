@@ -66,38 +66,84 @@ trait App extends js.Object {
 
 object App {
   @scala.inline
-  def apply(
-    AppId: String = null,
-    AppSource: Source = null,
-    Attributes: AppAttributes = null,
-    CreatedAt: String = null,
-    DataSources: DataSources = null,
-    Description: String = null,
-    Domains: Strings = null,
-    EnableSsl: js.UndefOr[Boolean] = js.undefined,
-    Environment: EnvironmentVariables = null,
-    Name: String = null,
-    Shortname: String = null,
-    SslConfiguration: SslConfiguration = null,
-    StackId: String = null,
-    Type: AppType = null
-  ): App = {
+  def apply(): App = {
     val __obj = js.Dynamic.literal()
-    if (AppId != null) __obj.updateDynamic("AppId")(AppId.asInstanceOf[js.Any])
-    if (AppSource != null) __obj.updateDynamic("AppSource")(AppSource.asInstanceOf[js.Any])
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (DataSources != null) __obj.updateDynamic("DataSources")(DataSources.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Domains != null) __obj.updateDynamic("Domains")(Domains.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableSsl)) __obj.updateDynamic("EnableSsl")(EnableSsl.get.asInstanceOf[js.Any])
-    if (Environment != null) __obj.updateDynamic("Environment")(Environment.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Shortname != null) __obj.updateDynamic("Shortname")(Shortname.asInstanceOf[js.Any])
-    if (SslConfiguration != null) __obj.updateDynamic("SslConfiguration")(SslConfiguration.asInstanceOf[js.Any])
-    if (StackId != null) __obj.updateDynamic("StackId")(StackId.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
   }
+  @scala.inline
+  implicit class AppOps[Self <: App] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: String): Self = this.set("AppId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppId: Self = this.set("AppId", js.undefined)
+    @scala.inline
+    def setAppSource(value: Source): Self = this.set("AppSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppSource: Self = this.set("AppSource", js.undefined)
+    @scala.inline
+    def setAttributes(value: AppAttributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: String): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setDataSourcesVarargs(value: DataSource*): Self = this.set("DataSources", js.Array(value :_*))
+    @scala.inline
+    def setDataSources(value: DataSources): Self = this.set("DataSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSources: Self = this.set("DataSources", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDomainsVarargs(value: String*): Self = this.set("Domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: Strings): Self = this.set("Domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("Domains", js.undefined)
+    @scala.inline
+    def setEnableSsl(value: Boolean): Self = this.set("EnableSsl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSsl: Self = this.set("EnableSsl", js.undefined)
+    @scala.inline
+    def setEnvironmentVarargs(value: EnvironmentVariable*): Self = this.set("Environment", js.Array(value :_*))
+    @scala.inline
+    def setEnvironment(value: EnvironmentVariables): Self = this.set("Environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("Environment", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setShortname(value: String): Self = this.set("Shortname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortname: Self = this.set("Shortname", js.undefined)
+    @scala.inline
+    def setSslConfiguration(value: SslConfiguration): Self = this.set("SslConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSslConfiguration: Self = this.set("SslConfiguration", js.undefined)
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackId: Self = this.set("StackId", js.undefined)
+    @scala.inline
+    def setType(value: AppType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

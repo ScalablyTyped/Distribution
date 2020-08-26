@@ -79,6 +79,7 @@ trait Navigation_ extends js.Object {
     *                                                 It is advised to use encodeURIcomponent() to encode the value.
     */
   def openWebResource(webResourceName: String): Unit = js.native
+  def openWebResource(webResourceName: String, windowOptions: js.UndefOr[scala.Nothing], data: String): Unit = js.native
   def openWebResource(webResourceName: String, windowOptions: OpenWebresourceOptions): Unit = js.native
   def openWebResource(webResourceName: String, windowOptions: OpenWebresourceOptions, data: String): Unit = js.native
 }

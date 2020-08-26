@@ -329,6 +329,12 @@ trait AppointmentRead extends Item {
     handler: js.Any,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addHandlerAsync(
+    eventType: String,
+    handler: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Any, options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: String,
@@ -361,6 +367,12 @@ trait AppointmentRead extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -451,6 +463,11 @@ trait AppointmentRead extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
+  ): Unit = js.native
+  def getAttachmentContentAsync(
+    attachmentId: String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
   def getAttachmentContentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
@@ -722,6 +739,11 @@ trait AppointmentRead extends Item {
   def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], Unit], userContext: js.Any): Unit = js.native
   def removeHandlerAsync(eventType: String): Unit = js.native
   def removeHandlerAsync(eventType: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
@@ -749,6 +771,11 @@ trait AppointmentRead extends Item {
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,

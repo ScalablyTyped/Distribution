@@ -12,6 +12,7 @@ trait UpdateBundleProject[T /* <: BuilderProgram */]
   @JSName("kind")
   val kind_UpdateBundleProject: UpdateBundle = js.native
   def emit(): js.UndefOr[EmitResult | BuildInvalidedProject[T]] = js.native
+  def emit(writeFile: js.UndefOr[scala.Nothing], customTransformers: CustomTransformers): js.UndefOr[EmitResult | BuildInvalidedProject[T]] = js.native
   def emit(writeFile: WriteFileCallback): js.UndefOr[EmitResult | BuildInvalidedProject[T]] = js.native
   def emit(writeFile: WriteFileCallback, customTransformers: CustomTransformers): js.UndefOr[EmitResult | BuildInvalidedProject[T]] = js.native
 }

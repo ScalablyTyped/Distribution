@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Sentiment extends js.Object {
   def analyze(phrase: String): AnalysisResult = js.native
+  def analyze(
+    phrase: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ String, /* result */ AnalysisResult, Unit]
+  ): AnalysisResult = js.native
   def analyze(phrase: String, options: AnalysisOptions): AnalysisResult = js.native
   def analyze(
     phrase: String,

@@ -17,22 +17,39 @@ trait SnapshotCopyGrantArgs extends js.Object {
     */
   val snapshotCopyGrantName: Input[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object SnapshotCopyGrantArgs {
   @scala.inline
-  def apply(
-    snapshotCopyGrantName: Input[String],
-    kmsKeyId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): SnapshotCopyGrantArgs = {
+  def apply(snapshotCopyGrantName: Input[String]): SnapshotCopyGrantArgs = {
     val __obj = js.Dynamic.literal(snapshotCopyGrantName = snapshotCopyGrantName.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotCopyGrantArgs]
   }
+  @scala.inline
+  implicit class SnapshotCopyGrantArgsOps[Self <: SnapshotCopyGrantArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotCopyGrantName(value: Input[String]): Self = this.set("snapshotCopyGrantName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

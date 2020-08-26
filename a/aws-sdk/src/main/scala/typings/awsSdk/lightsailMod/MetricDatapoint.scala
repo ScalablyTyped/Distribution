@@ -38,24 +38,50 @@ trait MetricDatapoint extends js.Object {
 
 object MetricDatapoint {
   @scala.inline
-  def apply(
-    average: js.UndefOr[double] = js.undefined,
-    maximum: js.UndefOr[double] = js.undefined,
-    minimum: js.UndefOr[double] = js.undefined,
-    sampleCount: js.UndefOr[double] = js.undefined,
-    sum: js.UndefOr[double] = js.undefined,
-    timestamp: timestamp = null,
-    unit: MetricUnit = null
-  ): MetricDatapoint = {
+  def apply(): MetricDatapoint = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sampleCount)) __obj.updateDynamic("sampleCount")(sampleCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.get.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricDatapoint]
   }
+  @scala.inline
+  implicit class MetricDatapointOps[Self <: MetricDatapoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAverage(value: double): Self = this.set("average", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAverage: Self = this.set("average", js.undefined)
+    @scala.inline
+    def setMaximum(value: double): Self = this.set("maximum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximum: Self = this.set("maximum", js.undefined)
+    @scala.inline
+    def setMinimum(value: double): Self = this.set("minimum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimum: Self = this.set("minimum", js.undefined)
+    @scala.inline
+    def setSampleCount(value: double): Self = this.set("sampleCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleCount: Self = this.set("sampleCount", js.undefined)
+    @scala.inline
+    def setSum(value: double): Self = this.set("sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSum: Self = this.set("sum", js.undefined)
+    @scala.inline
+    def setTimestamp(value: timestamp): Self = this.set("timestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamp: Self = this.set("timestamp", js.undefined)
+    @scala.inline
+    def setUnit(value: MetricUnit): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+  }
+  
 }
 

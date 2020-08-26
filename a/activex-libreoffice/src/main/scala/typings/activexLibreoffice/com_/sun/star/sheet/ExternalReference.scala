@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * @see FormulaMapGroupSpecialOffset.PUSH
   * @since OOo 3.1
   */
+@js.native
 trait ExternalReference extends js.Object {
   /**
     * Index of an externally linked document. Each externally-linked document has a unique index value.
@@ -19,7 +20,7 @@ trait ExternalReference extends js.Object {
     * @see com.sun.star.sheet.ExternalDocLink
     * @see com.sun.star.sheet.ExternalDocLink.TokenIndex
     */
-  var Index: Double
+  var Index: Double = js.native
   /**
     * Name of the sheet that the external reference points to.
     *
@@ -37,7 +38,7 @@ trait ExternalReference extends js.Object {
     * @see com.sun.star.sheet.SingleReference
     * @see com.sun.star.sheet.ComplexReference
     */
-  var Reference: js.Any
+  var Reference: js.Any = js.native
 }
 
 object ExternalReference {
@@ -46,5 +47,22 @@ object ExternalReference {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any], Reference = Reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalReference]
   }
+  @scala.inline
+  implicit class ExternalReferenceOps[Self <: ExternalReference] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("Index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReference(value: js.Any): Self = this.set("Reference", value.asInstanceOf[js.Any])
+  }
+  
 }
 

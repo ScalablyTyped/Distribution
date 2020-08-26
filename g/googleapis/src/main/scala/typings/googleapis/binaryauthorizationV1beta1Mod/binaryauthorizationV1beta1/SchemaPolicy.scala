@@ -55,24 +55,52 @@ trait SchemaPolicy extends js.Object {
 
 object SchemaPolicy {
   @scala.inline
-  def apply(
-    admissionWhitelistPatterns: js.Array[SchemaAdmissionWhitelistPattern] = null,
-    clusterAdmissionRules: StringDictionary[SchemaAdmissionRule] = null,
-    defaultAdmissionRule: SchemaAdmissionRule = null,
-    description: String = null,
-    globalPolicyEvaluationMode: String = null,
-    name: String = null,
-    updateTime: String = null
-  ): SchemaPolicy = {
+  def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
-    if (admissionWhitelistPatterns != null) __obj.updateDynamic("admissionWhitelistPatterns")(admissionWhitelistPatterns.asInstanceOf[js.Any])
-    if (clusterAdmissionRules != null) __obj.updateDynamic("clusterAdmissionRules")(clusterAdmissionRules.asInstanceOf[js.Any])
-    if (defaultAdmissionRule != null) __obj.updateDynamic("defaultAdmissionRule")(defaultAdmissionRule.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (globalPolicyEvaluationMode != null) __obj.updateDynamic("globalPolicyEvaluationMode")(globalPolicyEvaluationMode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPolicy]
   }
+  @scala.inline
+  implicit class SchemaPolicyOps[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdmissionWhitelistPatternsVarargs(value: SchemaAdmissionWhitelistPattern*): Self = this.set("admissionWhitelistPatterns", js.Array(value :_*))
+    @scala.inline
+    def setAdmissionWhitelistPatterns(value: js.Array[SchemaAdmissionWhitelistPattern]): Self = this.set("admissionWhitelistPatterns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdmissionWhitelistPatterns: Self = this.set("admissionWhitelistPatterns", js.undefined)
+    @scala.inline
+    def setClusterAdmissionRules(value: StringDictionary[SchemaAdmissionRule]): Self = this.set("clusterAdmissionRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterAdmissionRules: Self = this.set("clusterAdmissionRules", js.undefined)
+    @scala.inline
+    def setDefaultAdmissionRule(value: SchemaAdmissionRule): Self = this.set("defaultAdmissionRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultAdmissionRule: Self = this.set("defaultAdmissionRule", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setGlobalPolicyEvaluationMode(value: String): Self = this.set("globalPolicyEvaluationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalPolicyEvaluationMode: Self = this.set("globalPolicyEvaluationMode", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

@@ -4,69 +4,122 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JsonWebKey extends js.Object {
-  var alg: js.UndefOr[java.lang.String] = js.undefined
-  var crv: js.UndefOr[java.lang.String] = js.undefined
-  var d: js.UndefOr[java.lang.String] = js.undefined
-  var dp: js.UndefOr[java.lang.String] = js.undefined
-  var dq: js.UndefOr[java.lang.String] = js.undefined
-  var e: js.UndefOr[java.lang.String] = js.undefined
-  var ext: js.UndefOr[scala.Boolean] = js.undefined
-  var k: js.UndefOr[java.lang.String] = js.undefined
-  var key_ops: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var kty: js.UndefOr[java.lang.String] = js.undefined
-  var n: js.UndefOr[java.lang.String] = js.undefined
-  var oth: js.UndefOr[js.Array[RsaOtherPrimesInfo]] = js.undefined
-  var p: js.UndefOr[java.lang.String] = js.undefined
-  var q: js.UndefOr[java.lang.String] = js.undefined
-  var qi: js.UndefOr[java.lang.String] = js.undefined
-  var use: js.UndefOr[java.lang.String] = js.undefined
-  var x: js.UndefOr[java.lang.String] = js.undefined
-  var y: js.UndefOr[java.lang.String] = js.undefined
+  var alg: js.UndefOr[java.lang.String] = js.native
+  var crv: js.UndefOr[java.lang.String] = js.native
+  var d: js.UndefOr[java.lang.String] = js.native
+  var dp: js.UndefOr[java.lang.String] = js.native
+  var dq: js.UndefOr[java.lang.String] = js.native
+  var e: js.UndefOr[java.lang.String] = js.native
+  var ext: js.UndefOr[scala.Boolean] = js.native
+  var k: js.UndefOr[java.lang.String] = js.native
+  var key_ops: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var kty: js.UndefOr[java.lang.String] = js.native
+  var n: js.UndefOr[java.lang.String] = js.native
+  var oth: js.UndefOr[js.Array[RsaOtherPrimesInfo]] = js.native
+  var p: js.UndefOr[java.lang.String] = js.native
+  var q: js.UndefOr[java.lang.String] = js.native
+  var qi: js.UndefOr[java.lang.String] = js.native
+  var use: js.UndefOr[java.lang.String] = js.native
+  var x: js.UndefOr[java.lang.String] = js.native
+  var y: js.UndefOr[java.lang.String] = js.native
 }
 
 object JsonWebKey {
   @scala.inline
-  def apply(
-    alg: java.lang.String = null,
-    crv: java.lang.String = null,
-    d: java.lang.String = null,
-    dp: java.lang.String = null,
-    dq: java.lang.String = null,
-    e: java.lang.String = null,
-    ext: js.UndefOr[scala.Boolean] = js.undefined,
-    k: java.lang.String = null,
-    key_ops: js.Array[java.lang.String] = null,
-    kty: java.lang.String = null,
-    n: java.lang.String = null,
-    oth: js.Array[RsaOtherPrimesInfo] = null,
-    p: java.lang.String = null,
-    q: java.lang.String = null,
-    qi: java.lang.String = null,
-    use: java.lang.String = null,
-    x: java.lang.String = null,
-    y: java.lang.String = null
-  ): JsonWebKey = {
+  def apply(): JsonWebKey = {
     val __obj = js.Dynamic.literal()
-    if (alg != null) __obj.updateDynamic("alg")(alg.asInstanceOf[js.Any])
-    if (crv != null) __obj.updateDynamic("crv")(crv.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (dp != null) __obj.updateDynamic("dp")(dp.asInstanceOf[js.Any])
-    if (dq != null) __obj.updateDynamic("dq")(dq.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (!js.isUndefined(ext)) __obj.updateDynamic("ext")(ext.get.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (key_ops != null) __obj.updateDynamic("key_ops")(key_ops.asInstanceOf[js.Any])
-    if (kty != null) __obj.updateDynamic("kty")(kty.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (oth != null) __obj.updateDynamic("oth")(oth.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (qi != null) __obj.updateDynamic("qi")(qi.asInstanceOf[js.Any])
-    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonWebKey]
   }
+  @scala.inline
+  implicit class JsonWebKeyOps[Self <: JsonWebKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlg(value: java.lang.String): Self = this.set("alg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlg: Self = this.set("alg", js.undefined)
+    @scala.inline
+    def setCrv(value: java.lang.String): Self = this.set("crv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrv: Self = this.set("crv", js.undefined)
+    @scala.inline
+    def setD(value: java.lang.String): Self = this.set("d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteD: Self = this.set("d", js.undefined)
+    @scala.inline
+    def setDp(value: java.lang.String): Self = this.set("dp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDp: Self = this.set("dp", js.undefined)
+    @scala.inline
+    def setDq(value: java.lang.String): Self = this.set("dq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDq: Self = this.set("dq", js.undefined)
+    @scala.inline
+    def setE(value: java.lang.String): Self = this.set("e", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteE: Self = this.set("e", js.undefined)
+    @scala.inline
+    def setExt(value: scala.Boolean): Self = this.set("ext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExt: Self = this.set("ext", js.undefined)
+    @scala.inline
+    def setK(value: java.lang.String): Self = this.set("k", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteK: Self = this.set("k", js.undefined)
+    @scala.inline
+    def setKey_opsVarargs(value: java.lang.String*): Self = this.set("key_ops", js.Array(value :_*))
+    @scala.inline
+    def setKey_ops(value: js.Array[java.lang.String]): Self = this.set("key_ops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey_ops: Self = this.set("key_ops", js.undefined)
+    @scala.inline
+    def setKty(value: java.lang.String): Self = this.set("kty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKty: Self = this.set("kty", js.undefined)
+    @scala.inline
+    def setN(value: java.lang.String): Self = this.set("n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteN: Self = this.set("n", js.undefined)
+    @scala.inline
+    def setOthVarargs(value: RsaOtherPrimesInfo*): Self = this.set("oth", js.Array(value :_*))
+    @scala.inline
+    def setOth(value: js.Array[RsaOtherPrimesInfo]): Self = this.set("oth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOth: Self = this.set("oth", js.undefined)
+    @scala.inline
+    def setP(value: java.lang.String): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+    @scala.inline
+    def setQ(value: java.lang.String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setQi(value: java.lang.String): Self = this.set("qi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQi: Self = this.set("qi", js.undefined)
+    @scala.inline
+    def setUse(value: java.lang.String): Self = this.set("use", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUse: Self = this.set("use", js.undefined)
+    @scala.inline
+    def setX(value: java.lang.String): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: java.lang.String): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

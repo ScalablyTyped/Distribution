@@ -20,6 +20,16 @@ object ^ extends js.Object {
     * @see {@link https://github.com/Level/subleveldown#api subleveldown API}
     */
   def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]]): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
+  def apply[K, V](
+    db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]],
+    prefix: js.UndefOr[scala.Nothing],
+    opts: String
+  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
+  def apply[K, V](
+    db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]],
+    prefix: js.UndefOr[scala.Nothing],
+    opts: SubDownOptions
+  ): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
   def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
   def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String, opts: String): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native
   def apply[K, V](db: LevelUp[AbstractLevelDOWN[_, _], AbstractIterator[_, _]], prefix: String, opts: SubDownOptions): LevelUp[AbstractLevelDOWN[K, V], AbstractIterator[K, V]] = js.native

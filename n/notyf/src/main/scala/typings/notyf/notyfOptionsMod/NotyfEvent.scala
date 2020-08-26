@@ -12,12 +12,18 @@ sealed trait NotyfEvent extends js.Object
 @js.native
 object NotyfEvent extends js.Object {
   @js.native
+  sealed trait Click extends NotyfEvent
+  
+  @js.native
   sealed trait Dismiss extends NotyfEvent
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NotyfEvent with Double] = js.native
-  /* 0 */ @js.native
-  object Dismiss extends TopLevel[Dismiss with Double]
+  def apply(value: String): js.UndefOr[NotyfEvent with String] = js.native
+  /* "click" */ @js.native
+  object Click extends TopLevel[Click with String]
+  
+  /* "dismiss" */ @js.native
+  object Dismiss extends TopLevel[Dismiss with String]
   
 }
 

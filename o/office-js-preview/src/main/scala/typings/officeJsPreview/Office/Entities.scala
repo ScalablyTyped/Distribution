@@ -33,35 +33,36 @@ import scala.scalajs.js.annotation._
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
+@js.native
 trait Entities extends js.Object {
   /**
     * Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
     */
-  var addresses: js.Array[String]
+  var addresses: js.Array[String] = js.native
   /**
     * Gets the contacts found in an email address or appointment.
     */
-  var contacts: js.Array[Contact]
+  var contacts: js.Array[Contact] = js.native
   /**
     * Gets the email addresses found in an email message or appointment.
     */
-  var emailAddresses: js.Array[String]
+  var emailAddresses: js.Array[String] = js.native
   /**
     * Gets the meeting suggestions found in an email message.
     */
-  var meetingSuggestions: js.Array[MeetingSuggestion]
+  var meetingSuggestions: js.Array[MeetingSuggestion] = js.native
   /**
     * Gets the phone numbers found in an email message or appointment.
     */
-  var phoneNumbers: js.Array[PhoneNumber]
+  var phoneNumbers: js.Array[PhoneNumber] = js.native
   /**
     * Gets the task suggestions found in an email message or appointment.
     */
-  var taskSuggestions: js.Array[String]
+  var taskSuggestions: js.Array[String] = js.native
   /**
     * Gets the Internet URLs present in an email message or appointment.
     */
-  var urls: js.Array[String]
+  var urls: js.Array[String] = js.native
 }
 
 object Entities {
@@ -78,5 +79,46 @@ object Entities {
     val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], contacts = contacts.asInstanceOf[js.Any], emailAddresses = emailAddresses.asInstanceOf[js.Any], meetingSuggestions = meetingSuggestions.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], taskSuggestions = taskSuggestions.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entities]
   }
+  @scala.inline
+  implicit class EntitiesOps[Self <: Entities] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressesVarargs(value: String*): Self = this.set("addresses", js.Array(value :_*))
+    @scala.inline
+    def setAddresses(value: js.Array[String]): Self = this.set("addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContactsVarargs(value: Contact*): Self = this.set("contacts", js.Array(value :_*))
+    @scala.inline
+    def setContacts(value: js.Array[Contact]): Self = this.set("contacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmailAddressesVarargs(value: String*): Self = this.set("emailAddresses", js.Array(value :_*))
+    @scala.inline
+    def setEmailAddresses(value: js.Array[String]): Self = this.set("emailAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = this.set("meetingSuggestions", js.Array(value :_*))
+    @scala.inline
+    def setMeetingSuggestions(value: js.Array[MeetingSuggestion]): Self = this.set("meetingSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhoneNumbersVarargs(value: PhoneNumber*): Self = this.set("phoneNumbers", js.Array(value :_*))
+    @scala.inline
+    def setPhoneNumbers(value: js.Array[PhoneNumber]): Self = this.set("phoneNumbers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTaskSuggestionsVarargs(value: String*): Self = this.set("taskSuggestions", js.Array(value :_*))
+    @scala.inline
+    def setTaskSuggestions(value: js.Array[String]): Self = this.set("taskSuggestions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrlsVarargs(value: String*): Self = this.set("urls", js.Array(value :_*))
+    @scala.inline
+    def setUrls(value: js.Array[String]): Self = this.set("urls", value.asInstanceOf[js.Any])
+  }
+  
 }
 

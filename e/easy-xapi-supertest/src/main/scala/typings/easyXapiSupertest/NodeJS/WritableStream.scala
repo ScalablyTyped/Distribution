@@ -13,12 +13,14 @@ trait WritableStream extends EventEmitter {
   def end(buffer: Buffer, cb: js.Function): Unit = js.native
   def end(str: String): Unit = js.native
   def end(str: String, cb: js.Function): Unit = js.native
+  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
   def end(str: String, encoding: String): Unit = js.native
   def end(str: String, encoding: String, cb: js.Function): Unit = js.native
   def write(buffer: Buffer): Boolean = js.native
   def write(buffer: Buffer, cb: js.Function): Boolean = js.native
   def write(str: String): Boolean = js.native
   def write(str: String, cb: js.Function): Boolean = js.native
+  def write(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
   def write(str: String, encoding: String): Boolean = js.native
   def write(str: String, encoding: String, cb: js.Function): Boolean = js.native
 }

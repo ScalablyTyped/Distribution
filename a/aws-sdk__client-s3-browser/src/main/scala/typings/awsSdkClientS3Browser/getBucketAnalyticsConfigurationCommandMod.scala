@@ -27,17 +27,10 @@ object getBucketAnalyticsConfigurationCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GetBucketAnalyticsConfigurationInput) = this()
-    /* CompleteClass */
-    override val input: GetBucketAnalyticsConfigurationInput = js.native
     val middlewareStack: MiddlewareStack[GetBucketAnalyticsConfigurationInput, GetBucketAnalyticsConfigurationOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[GetBucketAnalyticsConfigurationInput, GetBucketAnalyticsConfigurationOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[GetBucketAnalyticsConfigurationInput, GetBucketAnalyticsConfigurationOutput] = js.native
   }

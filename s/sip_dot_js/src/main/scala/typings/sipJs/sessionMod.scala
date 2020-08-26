@@ -30,6 +30,7 @@ import typings.sipJs.referMod.IncomingReferRequest
 import typings.sipJs.referMod.OutgoingReferRequest
 import typings.sipJs.sessionByeOptionsMod.SessionByeOptions
 import typings.sipJs.sessionDelegateMod.SessionDelegate
+import typings.sipJs.sessionDescriptionHandlerFactoryMod.SessionDescriptionHandlerFactory
 import typings.sipJs.sessionInfoOptionsMod.SessionInfoOptions
 import typings.sipJs.sessionInviteOptionsMod.SessionInviteOptions
 import typings.sipJs.sessionMessageOptionsMod.SessionMessageOptions
@@ -73,20 +74,20 @@ object sessionMod extends js.Object {
     var _replacee: js.UndefOr[Session] = js.native
     /** Dialogs session description handler. */
     var _sessionDescriptionHandler: js.Any = js.native
-    /** @internal */
-    var _sessionDescriptionHandlerModifiers: js.UndefOr[js.Array[SessionDescriptionHandlerModifier]] = js.native
-    /** @internal */
-    var _sessionDescriptionHandlerOptions: js.UndefOr[SessionDescriptionHandlerOptions] = js.native
+    /** SDH modifiers for the initial INVITE transaction. */
+    var _sessionDescriptionHandlerModifiers: js.Any = js.native
+    /** SDH modifiers for re-INVITE transactions. */
+    var _sessionDescriptionHandlerModifiersReInvite: js.Any = js.native
+    /** SDH options for the initial INVITE transaction. */
+    var _sessionDescriptionHandlerOptions: js.Any = js.native
+    /** SDH options for re-NVITE transactions.*/
+    var _sessionDescriptionHandlerOptionsReInvite: js.Any = js.native
     /** Session state. */
     var _state: js.Any = js.native
     /** Session state emitter. */
     var _stateEventEmitter: js.Any = js.native
     /** User agent. */
     var _userAgent: js.Any = js.native
-    /**
-      * The asserted identity of the remote user.
-      */
-    val assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
     var copyRequestOptions: js.Any = js.native
     /**
       * Property reserved for use by instance owner.
@@ -98,15 +99,7 @@ object sessionMod extends js.Object {
       * @defaultValue `undefined`
       */
     var delegate: js.UndefOr[SessionDelegate] = js.native
-    /**
-      * The confirmed session dialog.
-      */
-    val dialog: js.UndefOr[typings.sipJs.sessionSessionMod.Session] = js.native
     var getReasonHeaderValue: js.Any = js.native
-    /**
-      * A unique identifier for this session.
-      */
-    val id: String = js.native
     /**
       * The identity of the local user.
       */
@@ -117,8 +110,10 @@ object sessionMod extends js.Object {
     var logger: Logger = js.native
     /** If defined, NOTIFYs associated with a REFER subscription are delivered here. */
     var onNotify: js.Any = js.native
-    /** True if there is a re-INVITE request outstanding. */
+    /** True if there is an outgoing re-INVITE request outstanding. */
     var pendingReinvite: js.Any = js.native
+    /** True if there is an incoming re-INVITE ACK request outstanding. */
+    var pendingReinviteAck: js.Any = js.native
     var referExtraHeaders: js.Any = js.native
     var referToString: js.Any = js.native
     /**
@@ -126,40 +121,13 @@ object sessionMod extends js.Object {
       */
     val remoteIdentity: NameAddrHeader = js.native
     /**
-      * The session being replace by this one.
-      */
-    val replacee: js.UndefOr[Session] = js.native
-    /**
-      * Session description handler.
-      * @remarks
-      * If `this` is an instance of `Invitation`,
-      * `sessionDescriptionHandler` will be defined when the session state changes to "established".
-      * If `this` is an instance of `Inviter` and an offer was sent in the INVITE,
-      * `sessionDescriptionHandler` will be defined when the session state changes to "establishing".
-      * If `this` is an instance of `Inviter` and an offer was not sent in the INVITE,
-      * `sessionDescriptionHandler` will be defined when the session state changes to "established".
-      * Otherwise `undefined`.
-      */
-    val sessionDescriptionHandler: js.UndefOr[SessionDescriptionHandler] = js.native
-    /**
-      * Session state.
-      */
-    val state: SessionState = js.native
-    /**
-      * Session state change emitter.
-      */
-    val stateChange: Emitter[SessionState] = js.native
-    /**
-      * The user agent.
-      */
-    val userAgent: UserAgent = js.native
-    /**
       * Send BYE.
       * @param delegate - Request delegate.
       * @param options - Request options bucket.
       * @internal
       */
     def _bye(): js.Promise[OutgoingByeRequest] = js.native
+    def _bye(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     def _bye(delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
     def _bye(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     /**
@@ -169,6 +137,7 @@ object sessionMod extends js.Object {
       * @internal
       */
     def _info(): js.Promise[OutgoingInfoRequest] = js.native
+    def _info(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingInfoRequest] = js.native
     def _info(delegate: OutgoingRequestDelegate): js.Promise[OutgoingInfoRequest] = js.native
     def _info(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingInfoRequest] = js.native
     /**
@@ -178,6 +147,7 @@ object sessionMod extends js.Object {
       * @internal
       */
     def _message(): js.Promise[OutgoingMessageRequest] = js.native
+    def _message(delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingMessageRequest] = js.native
     def _message(delegate: OutgoingRequestDelegate): js.Promise[OutgoingMessageRequest] = js.native
     def _message(delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingMessageRequest] = js.native
     /**
@@ -188,7 +158,15 @@ object sessionMod extends js.Object {
       * @internal
       */
     def _refer(): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: js.UndefOr[scala.Nothing], delegate: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: js.UndefOr[scala.Nothing], delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(onNotify: js.UndefOr[scala.Nothing], delegate: OutgoingRequestDelegate, options: RequestOptions): js.Promise[OutgoingByeRequest] = js.native
     def _refer(onNotify: js.Function1[/* notification */ Notification, Unit]): js.Promise[OutgoingByeRequest] = js.native
+    def _refer(
+      onNotify: js.Function1[/* notification */ Notification, Unit],
+      delegate: js.UndefOr[scala.Nothing],
+      options: RequestOptions
+    ): js.Promise[OutgoingByeRequest] = js.native
     def _refer(onNotify: js.Function1[/* notification */ Notification, Unit], delegate: OutgoingRequestDelegate): js.Promise[OutgoingByeRequest] = js.native
     def _refer(
       onNotify: js.Function1[/* notification */ Notification, Unit],
@@ -208,14 +186,27 @@ object sessionMod extends js.Object {
       * @internal
       */
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession): Unit = js.native
+    /* protected */ def ackAndBye(
+      response: AckableIncomingResponseWithSession,
+      statusCode: js.UndefOr[scala.Nothing],
+      reasonPhrase: String
+    ): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double): Unit = js.native
     /* protected */ def ackAndBye(response: AckableIncomingResponseWithSession, statusCode: Double, reasonPhrase: String): Unit = js.native
+    /**
+      * The asserted identity of the remote user.
+      */
+    def assertedIdentity: js.UndefOr[NameAddrHeader] = js.native
     /**
       * End the {@link Session}. Sends a BYE.
       * @param options - Options bucket. See {@link SessionByeOptions} for details.
       */
     def bye(): js.Promise[OutgoingByeRequest] = js.native
     def bye(options: SessionByeOptions): js.Promise[OutgoingByeRequest] = js.native
+    /**
+      * The confirmed session dialog.
+      */
+    def dialog: js.UndefOr[typings.sipJs.sessionSessionMod.Session] = js.native
     /**
       * Destructor.
       */
@@ -241,6 +232,10 @@ object sessionMod extends js.Object {
       */
     /* protected */ def getOffer(options: SessionDescriptionHandlerModifiers): js.Promise[Body] = js.native
     /**
+      * A unique identifier for this session.
+      */
+    def id: String = js.native
+    /**
       * Share {@link Info} with peer. Sends an INFO.
       * @param options - Options bucket. See {@link SessionInfoOptions} for details.
       */
@@ -262,7 +257,7 @@ object sessionMod extends js.Object {
       * Handle in dialog ACK request.
       * @internal
       */
-    /* protected */ def onAckRequest(request: IncomingAckRequest): Unit = js.native
+    /* protected */ def onAckRequest(request: IncomingAckRequest): js.Promise[Unit] = js.native
     /**
       * Handle in dialog BYE request.
       * @internal
@@ -308,15 +303,70 @@ object sessionMod extends js.Object {
     def refer(referTo: Session): js.Promise[OutgoingReferRequest] = js.native
     def refer(referTo: Session, options: SessionReferOptions): js.Promise[OutgoingReferRequest] = js.native
     /**
+      * The session being replace by this one.
+      */
+    def replacee: js.UndefOr[Session] = js.native
+    /**
       * Rollback local/remote offer.
       * @internal
       */
     /* protected */ def rollbackOffer(): js.Promise[Unit] = js.native
     /**
+      * Session description handler.
+      * @remarks
+      * If `this` is an instance of `Invitation`,
+      * `sessionDescriptionHandler` will be defined when the session state changes to "established".
+      * If `this` is an instance of `Inviter` and an offer was sent in the INVITE,
+      * `sessionDescriptionHandler` will be defined when the session state changes to "establishing".
+      * If `this` is an instance of `Inviter` and an offer was not sent in the INVITE,
+      * `sessionDescriptionHandler` will be defined when the session state changes to "established".
+      * Otherwise `undefined`.
+      */
+    def sessionDescriptionHandler: js.UndefOr[SessionDescriptionHandler] = js.native
+    /**
       * Session description handler factory.
       */
-    def sessionDescriptionHandlerFactory(session: Session): SessionDescriptionHandler = js.native
-    def sessionDescriptionHandlerFactory(session: Session, options: js.Object): SessionDescriptionHandler = js.native
+    def sessionDescriptionHandlerFactory: SessionDescriptionHandlerFactory = js.native
+    /**
+      * SDH modifiers for the initial INVITE transaction.
+      * @remarks
+      * Used in all cases when handling the initial INVITE transaction as either UAC or UAS.
+      * May be set directly at anytime.
+      * May optionally be set via constructor option.
+      * May optionally be set via options passed to Inviter.invite() or Invitation.accept().
+      */
+    def sessionDescriptionHandlerModifiers: js.Array[SessionDescriptionHandlerModifier] = js.native
+    /**
+      * SDH modifiers for re-INVITE transactions.
+      * @remarks
+      * Used in all cases when handling a re-INVITE transaction as either UAC or UAS.
+      * May be set directly at anytime.
+      * May optionally be set via constructor option.
+      * May optionally be set via options passed to Session.invite().
+      */
+    def sessionDescriptionHandlerModifiersReInvite: js.Array[SessionDescriptionHandlerModifier] = js.native
+    def sessionDescriptionHandlerModifiersReInvite_=(modifiers: js.Array[SessionDescriptionHandlerModifier]): Unit = js.native
+    def sessionDescriptionHandlerModifiers_=(modifiers: js.Array[SessionDescriptionHandlerModifier]): Unit = js.native
+    /**
+      * SDH options for the initial INVITE transaction.
+      * @remarks
+      * Used in all cases when handling the initial INVITE transaction as either UAC or UAS.
+      * May be set directly at anytime.
+      * May optionally be set via constructor option.
+      * May optionally be set via options passed to Inviter.invite() or Invitation.accept().
+      */
+    def sessionDescriptionHandlerOptions: SessionDescriptionHandlerOptions = js.native
+    /**
+      * SDH options for re-INVITE transactions.
+      * @remarks
+      * Used in all cases when handling a re-INVITE transaction as either UAC or UAS.
+      * May be set directly at anytime.
+      * May optionally be set via constructor option.
+      * May optionally be set via options passed to Session.invite().
+      */
+    def sessionDescriptionHandlerOptionsReInvite: SessionDescriptionHandlerOptions = js.native
+    def sessionDescriptionHandlerOptionsReInvite_=(options: SessionDescriptionHandlerOptions): Unit = js.native
+    def sessionDescriptionHandlerOptions_=(options: SessionDescriptionHandlerOptions): Unit = js.native
     /**
       * Set remote answer.
       * @internal
@@ -338,10 +388,22 @@ object sessionMod extends js.Object {
       */
     /* protected */ def setupSessionDescriptionHandler(): SessionDescriptionHandler = js.native
     /**
+      * Session state.
+      */
+    def state: SessionState = js.native
+    /**
+      * Session state change emitter.
+      */
+    def stateChange: Emitter[SessionState] = js.native
+    /**
       * Transition session state.
       * @internal
       */
     /* protected */ def stateTransition(newState: SessionState): Unit = js.native
+    /**
+      * The user agent.
+      */
+    def userAgent: UserAgent = js.native
   }
   
 }

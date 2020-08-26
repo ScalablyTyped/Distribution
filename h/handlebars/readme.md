@@ -10,9 +10,9 @@ Handlebars provides the power necessary to let you build semantic templates effe
 | ------------------ | :-------------: |
 | Full name          | handlebars |
 | Keywords           | handlebars, mustache, template, html |
-| # releases         | 31 |
-| # dependents       | 6274 |
-| # downloads        | 376741311 |
+| # releases         | 33 |
+| # dependents       | 6426 |
+| # downloads        | 389759809 |
 | # stars            | 177 |
 
 ## Links

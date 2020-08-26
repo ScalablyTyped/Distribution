@@ -12,7 +12,7 @@ The lodash method `_.functionsIn` exported as a module.
 | Keywords           | lodash-modularized, functionsin |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 977 |
+| # downloads        | 949 |
 | # stars            | 0 |
 
 ## Links

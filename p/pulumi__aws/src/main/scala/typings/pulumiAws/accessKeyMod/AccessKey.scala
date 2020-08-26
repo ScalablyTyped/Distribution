@@ -48,6 +48,9 @@ class AccessKey protected () extends CustomResource {
   /**
     * **DEPRECATED** The secret access key converted into an SES SMTP
     * password by applying [AWS's documented conversion
+    *
+    * @deprecated AWS SigV2 for SES SMTP passwords isy deprecated.
+  Use 'ses_smtp_password_v4' for region-specific AWS SigV4 signed SES SMTP password instead.
     */
   val sesSmtpPassword: Output_[String] = js.native
   /**
@@ -79,8 +82,10 @@ object AccessKey extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AccessKey = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccessKey = js.native
   def get(name: String, id: Input[ID], state: AccessKeyState): AccessKey = js.native
   def get(name: String, id: Input[ID], state: AccessKeyState, opts: CustomResourceOptions): AccessKey = js.native
   /**

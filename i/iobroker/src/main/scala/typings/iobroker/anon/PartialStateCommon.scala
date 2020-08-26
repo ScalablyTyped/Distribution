@@ -7,66 +7,113 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<iobroker.iobroker.<global>.ioBroker.StateCommon> */
+@js.native
 trait PartialStateCommon extends js.Object {
-  var alias: js.UndefOr[Id] = js.undefined
-  var custom: js.UndefOr[Record[String, _]] = js.undefined
-  var `def`: js.UndefOr[js.Any] = js.undefined
-  var defAck: js.UndefOr[Boolean] = js.undefined
-  var desc: js.UndefOr[String] = js.undefined
-  var history: js.UndefOr[js.Any] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var read: js.UndefOr[Boolean] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
-  var states: js.UndefOr[(Record[String, String]) | String] = js.undefined
-  var `type`: js.UndefOr[CommonType] = js.undefined
-  var unit: js.UndefOr[String] = js.undefined
-  var workingID: js.UndefOr[String] = js.undefined
-  var write: js.UndefOr[Boolean] = js.undefined
+  var alias: js.UndefOr[Id] = js.native
+  var custom: js.UndefOr[Record[String, _]] = js.native
+  var `def`: js.UndefOr[js.Any] = js.native
+  var defAck: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[String] = js.native
+  var history: js.UndefOr[js.Any] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var name: js.UndefOr[String] = js.native
+  var read: js.UndefOr[Boolean] = js.native
+  var role: js.UndefOr[String] = js.native
+  var states: js.UndefOr[(Record[String, String]) | String] = js.native
+  var `type`: js.UndefOr[CommonType] = js.native
+  var unit: js.UndefOr[String] = js.native
+  var workingID: js.UndefOr[String] = js.native
+  var write: js.UndefOr[Boolean] = js.native
 }
 
 object PartialStateCommon {
   @scala.inline
-  def apply(
-    alias: Id = null,
-    custom: Record[String, _] = null,
-    `def`: js.Any = null,
-    defAck: js.UndefOr[Boolean] = js.undefined,
-    desc: String = null,
-    history: js.Any = null,
-    icon: String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    name: String = null,
-    read: js.UndefOr[Boolean] = js.undefined,
-    role: String = null,
-    states: (Record[String, String]) | String = null,
-    `type`: CommonType = null,
-    unit: String = null,
-    workingID: String = null,
-    write: js.UndefOr[Boolean] = js.undefined
-  ): PartialStateCommon = {
+  def apply(): PartialStateCommon = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (`def` != null) __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
-    if (!js.isUndefined(defAck)) __obj.updateDynamic("defAck")(defAck.get.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (workingID != null) __obj.updateDynamic("workingID")(workingID.asInstanceOf[js.Any])
-    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStateCommon]
   }
+  @scala.inline
+  implicit class PartialStateCommonOps[Self <: PartialStateCommon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: Id): Self = this.set("alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("alias", js.undefined)
+    @scala.inline
+    def setCustom(value: Record[String, _]): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDef(value: js.Any): Self = this.set("def", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDef: Self = this.set("def", js.undefined)
+    @scala.inline
+    def setDefAck(value: Boolean): Self = this.set("defAck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefAck: Self = this.set("defAck", js.undefined)
+    @scala.inline
+    def setDesc(value: String): Self = this.set("desc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDesc: Self = this.set("desc", js.undefined)
+    @scala.inline
+    def setHistory(value: js.Any): Self = this.set("history", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistory: Self = this.set("history", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRead(value: Boolean): Self = this.set("read", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRead: Self = this.set("read", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setStates(value: (Record[String, String]) | String): Self = this.set("states", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStates: Self = this.set("states", js.undefined)
+    @scala.inline
+    def setType(value: CommonType): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnit(value: String): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setWorkingID(value: String): Self = this.set("workingID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingID: Self = this.set("workingID", js.undefined)
+    @scala.inline
+    def setWrite(value: Boolean): Self = this.set("write", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrite: Self = this.set("write", js.undefined)
+  }
+  
 }
 

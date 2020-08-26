@@ -53,6 +53,17 @@ object Horizon extends js.Object {
     /* "tx_bad_auth_extra" */ val TX_BAD_AUTH_EXTRA: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_AUTH_EXTRA with String = js.native
     /* "tx_bad_seq" */ val TX_BAD_SEQ: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_BAD_SEQ with String = js.native
     /* "tx_failed" */ val TX_FAILED: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_FAILED with String = js.native
+    /* "tx_fee_bump_inner_failed" */ val TX_FEE_BUMP_INNER_FAILED: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_FEE_BUMP_INNER_FAILED with String = js.native
+    /* "tx_fee_bump_inner_success" */ val TX_FEE_BUMP_INNER_SUCCESS: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_FEE_BUMP_INNER_SUCCESS with String = js.native
+    /* "tx_insufficient_balance" */ val TX_INSUFFICIENT_BALANCE: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_INSUFFICIENT_BALANCE with String = js.native
+    /* "tx_insufficient_fee" */ val TX_INSUFFICIENT_FEE: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_INSUFFICIENT_FEE with String = js.native
+    /* "tx_internal_error" */ val TX_INTERNAL_ERROR: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_INTERNAL_ERROR with String = js.native
+    /* "tx_missing_operation" */ val TX_MISSING_OPERATION: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_MISSING_OPERATION with String = js.native
+    /* "tx_not_supported" */ val TX_NOT_SUPPORTED: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_NOT_SUPPORTED with String = js.native
+    /* "tx_no_source_account" */ val TX_NO_SOURCE_ACCOUNT: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_NO_SOURCE_ACCOUNT with String = js.native
+    /* "tx_success" */ val TX_SUCCESS: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_SUCCESS with String = js.native
+    /* "tx_too_early" */ val TX_TOO_EARLY: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_TOO_EARLY with String = js.native
+    /* "tx_too_late" */ val TX_TOO_LATE: typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes.TX_TOO_LATE with String = js.native
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
         typings.stellarSdk.horizonApiMod.Horizon.TransactionFailedResultCodes with String

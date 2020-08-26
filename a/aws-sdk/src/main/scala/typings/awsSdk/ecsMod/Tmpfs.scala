@@ -22,10 +22,32 @@ trait Tmpfs extends js.Object {
 
 object Tmpfs {
   @scala.inline
-  def apply(containerPath: String, size: Integer, mountOptions: StringList = null): Tmpfs = {
+  def apply(containerPath: String, size: Integer): Tmpfs = {
     val __obj = js.Dynamic.literal(containerPath = containerPath.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (mountOptions != null) __obj.updateDynamic("mountOptions")(mountOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tmpfs]
   }
+  @scala.inline
+  implicit class TmpfsOps[Self <: Tmpfs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainerPath(value: String): Self = this.set("containerPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Integer): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMountOptionsVarargs(value: String*): Self = this.set("mountOptions", js.Array(value :_*))
+    @scala.inline
+    def setMountOptions(value: StringList): Self = this.set("mountOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountOptions: Self = this.set("mountOptions", js.undefined)
+  }
+  
 }
 

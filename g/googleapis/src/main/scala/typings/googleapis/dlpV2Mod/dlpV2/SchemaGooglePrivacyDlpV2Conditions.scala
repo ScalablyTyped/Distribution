@@ -14,10 +14,28 @@ trait SchemaGooglePrivacyDlpV2Conditions extends js.Object {
 
 object SchemaGooglePrivacyDlpV2Conditions {
   @scala.inline
-  def apply(conditions: js.Array[SchemaGooglePrivacyDlpV2Condition] = null): SchemaGooglePrivacyDlpV2Conditions = {
+  def apply(): SchemaGooglePrivacyDlpV2Conditions = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Conditions]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2ConditionsOps[Self <: SchemaGooglePrivacyDlpV2Conditions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionsVarargs(value: SchemaGooglePrivacyDlpV2Condition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaGooglePrivacyDlpV2Condition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+  }
+  
 }
 

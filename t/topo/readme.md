@@ -12,7 +12,7 @@ Topological sorting with grouping support
 | Keywords           | topological, sort, toposort, topsort |
 | # releases         | 4 |
 | # dependents       | 15 |
-| # downloads        | 103130503 |
+| # downloads        | 101971194 |
 | # stars            | 2 |
 
 ## Links

@@ -12,7 +12,7 @@ Module to parse multipart/form data
 | Keywords           | express, form, data, multipart, multipart/form, json |
 | # releases         | 9 |
 | # dependents       | 8 |
-| # downloads        | 266092 |
+| # downloads        | 274830 |
 | # stars            | 0 |
 
 ## Links

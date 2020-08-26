@@ -30,18 +30,38 @@ trait CreateUserRequest extends js.Object {
 
 object CreateUserRequest {
   @scala.inline
-  def apply(
-    AuthenticationType: AuthenticationType,
-    UserName: Username,
-    FirstName: UserAttributeValue = null,
-    LastName: UserAttributeValue = null,
-    MessageAction: MessageAction = null
-  ): CreateUserRequest = {
+  def apply(AuthenticationType: AuthenticationType, UserName: Username): CreateUserRequest = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (FirstName != null) __obj.updateDynamic("FirstName")(FirstName.asInstanceOf[js.Any])
-    if (LastName != null) __obj.updateDynamic("LastName")(LastName.asInstanceOf[js.Any])
-    if (MessageAction != null) __obj.updateDynamic("MessageAction")(MessageAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateUserRequest]
   }
+  @scala.inline
+  implicit class CreateUserRequestOps[Self <: CreateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthenticationType(value: AuthenticationType): Self = this.set("AuthenticationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: Username): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFirstName(value: UserAttributeValue): Self = this.set("FirstName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstName: Self = this.set("FirstName", js.undefined)
+    @scala.inline
+    def setLastName(value: UserAttributeValue): Self = this.set("LastName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastName: Self = this.set("LastName", js.undefined)
+    @scala.inline
+    def setMessageAction(value: MessageAction): Self = this.set("MessageAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageAction: Self = this.set("MessageAction", js.undefined)
+  }
+  
 }
 

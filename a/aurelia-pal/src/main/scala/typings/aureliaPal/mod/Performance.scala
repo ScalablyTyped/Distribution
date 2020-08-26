@@ -56,6 +56,7 @@ trait Performance extends js.Object {
     * @memberof IPerformance
     */
   def measure(measureName: String): Unit = js.native
+  def measure(measureName: String, startMarkName: js.UndefOr[scala.Nothing], endMarkName: String): Unit = js.native
   def measure(measureName: String, startMarkName: String): Unit = js.native
   def measure(measureName: String, startMarkName: String, endMarkName: String): Unit = js.native
   /**

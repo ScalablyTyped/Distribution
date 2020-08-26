@@ -12,14 +12,12 @@ package object Command {
   type RequestParser = js.Function1[/* cmd */ typings.ts3NodejsLibrary.commandMod.Command, java.lang.String]
   type ResponseParser = js.Function1[
     /* data */ typings.ts3NodejsLibrary.commandMod.Command.ParserArgument, 
-    js.Array[typings.ts3NodejsLibrary.queryResponseMod.QueryResponse]
+    typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
   ]
   type flags = js.Array[scala.Double | java.lang.String | scala.Null]
   type multiOpts = js.Array[typings.ts3NodejsLibrary.commandMod.Command.options]
   type options = typings.std.Record[
     java.lang.String, 
-    js.UndefOr[
-      java.lang.String | (js.Array[scala.Double | java.lang.String]) | scala.Double | scala.Null
-    ]
+    typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ValueTypes
   ]
 }

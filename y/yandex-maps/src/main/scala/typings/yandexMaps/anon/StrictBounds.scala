@@ -4,24 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictBounds extends js.Object {
-  var boundedBy: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
-  var results: js.UndefOr[Double] = js.undefined
-  var strictBounds: js.UndefOr[Boolean] = js.undefined
+  var boundedBy: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var results: js.UndefOr[Double] = js.native
+  var strictBounds: js.UndefOr[Boolean] = js.native
 }
 
 object StrictBounds {
   @scala.inline
-  def apply(
-    boundedBy: js.Array[js.Array[Double]] = null,
-    results: js.UndefOr[Double] = js.undefined,
-    strictBounds: js.UndefOr[Boolean] = js.undefined
-  ): StrictBounds = {
+  def apply(): StrictBounds = {
     val __obj = js.Dynamic.literal()
-    if (boundedBy != null) __obj.updateDynamic("boundedBy")(boundedBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(results)) __obj.updateDynamic("results")(results.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(strictBounds)) __obj.updateDynamic("strictBounds")(strictBounds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictBounds]
   }
+  @scala.inline
+  implicit class StrictBoundsOps[Self <: StrictBounds] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundedByVarargs(value: js.Array[Double]*): Self = this.set("boundedBy", js.Array(value :_*))
+    @scala.inline
+    def setBoundedBy(value: js.Array[js.Array[Double]]): Self = this.set("boundedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundedBy: Self = this.set("boundedBy", js.undefined)
+    @scala.inline
+    def setResults(value: Double): Self = this.set("results", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResults: Self = this.set("results", js.undefined)
+    @scala.inline
+    def setStrictBounds(value: Boolean): Self = this.set("strictBounds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrictBounds: Self = this.set("strictBounds", js.undefined)
+  }
+  
 }
 

@@ -12,6 +12,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** {@link ChartType} service */
+@js.native
 trait ChartType
   extends XChartType
      with XDataSeriesContainer

@@ -26,17 +26,36 @@ trait CreateSnapshotMessage extends js.Object {
 
 object CreateSnapshotMessage {
   @scala.inline
-  def apply(
-    SnapshotName: String,
-    CacheClusterId: String = null,
-    KmsKeyId: String = null,
-    ReplicationGroupId: String = null
-  ): CreateSnapshotMessage = {
+  def apply(SnapshotName: String): CreateSnapshotMessage = {
     val __obj = js.Dynamic.literal(SnapshotName = SnapshotName.asInstanceOf[js.Any])
-    if (CacheClusterId != null) __obj.updateDynamic("CacheClusterId")(CacheClusterId.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (ReplicationGroupId != null) __obj.updateDynamic("ReplicationGroupId")(ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSnapshotMessage]
   }
+  @scala.inline
+  implicit class CreateSnapshotMessageOps[Self <: CreateSnapshotMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotName(value: String): Self = this.set("SnapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCacheClusterId(value: String): Self = this.set("CacheClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterId: Self = this.set("CacheClusterId", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupId: Self = this.set("ReplicationGroupId", js.undefined)
+  }
+  
 }
 

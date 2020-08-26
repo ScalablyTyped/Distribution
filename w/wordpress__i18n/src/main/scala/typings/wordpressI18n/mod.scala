@@ -19,6 +19,7 @@ object mod extends js.Object {
   @JSName("_x")
   val x: js.Any = js.native
   def createI18n(): I18n = js.native
+  def createI18n(initialData: js.UndefOr[scala.Nothing], initialDomain: String): I18n = js.native
   def createI18n(initialData: Record[String, _]): I18n = js.native
   def createI18n(initialData: Record[String, _], initialDomain: String): I18n = js.native
   def sprintf(format: String, args: js.Any*): String = js.native

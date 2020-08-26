@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("asynciterator", "ClonedIterator")
 @js.native
-class ClonedIterator[T] () extends TransformIterator[T, T] {
+class ClonedIterator[T] protected () extends TransformIterator[T, T] {
+  /**
+    Creates a new `ClonedIterator`.
+    @param {module:asynciterator.AsyncIterator|Readable} [source] The source this iterator copies items from
+    */
   def this(source: AsyncIterator[T]) = this()
-  var _readPosition: Double = js.native
+  var _readPosition: js.Any = js.native
+  /* protected */ def _getSourceProperty[P](propertyName: String, callback: js.Function1[/* value */ P, Unit]): Unit = js.native
+  /* protected */ def _init(): Unit = js.native
 }
 

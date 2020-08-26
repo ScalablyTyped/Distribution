@@ -1,11 +1,13 @@
 package typings.reactPrimitives.mod
 
 import org.scalablytyped.runtime.Instantiable0
+import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import typings.reactNative.anon.TypeofImage
 import typings.reactNative.anon.TypeofView
 import typings.reactNative.anon.Y
 import typings.reactNative.mod.Animated.AnimatedComponent
+import typings.reactNative.mod.Animated.AnimatedProps
 import typings.reactNative.mod.Animated.AnimatedValue
 import typings.reactNative.mod.Animated.AnimatedValueXY
 import typings.reactNative.mod.Animated.CompositeAnimation
@@ -16,6 +18,8 @@ import typings.reactNative.mod.Animated.Mapping
 import typings.reactNative.mod.Animated.ParallelConfig
 import typings.reactNative.mod.Animated.SpringAnimationConfig
 import typings.reactNative.mod.Animated.TimingAnimationConfig
+import typings.reactNative.mod.FlatListProps
+import typings.reactNative.mod.SectionListProps
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -60,6 +64,18 @@ object Animated extends js.Object {
     extends typings.reactNative.mod.Animated.Animated
   
   @js.native
+  class FlatList[ItemT] ()
+    extends Component[FlatListProps[ItemT] | AnimatedProps[FlatListProps[ItemT]], js.Object, js.Any]
+  
+  @js.native
+  class SectionList[SectionT] ()
+    extends Component[
+          SectionListProps[SectionT] | AnimatedProps[SectionListProps[SectionT]], 
+          js.Object, 
+          js.Any
+        ]
+  
+  @js.native
   class Value protected ()
     extends typings.reactNative.mod.Animated.Value {
     def this(value: Double) = this()
@@ -71,10 +87,8 @@ object Animated extends js.Object {
     def this(valueIn: Y) = this()
   }
   
-  val FlatList: AnimatedComponent[Instantiable0[typings.reactNative.mod.FlatList[js.Object]]] = js.native
   val Image: AnimatedComponent[TypeofImage] = js.native
   val ScrollView: AnimatedComponent[Instantiable0[typings.reactNative.mod.ScrollView]] = js.native
-  val SectionList: AnimatedComponent[Instantiable0[typings.reactNative.mod.SectionList[js.Object]]] = js.native
   val Text: AnimatedComponent[Instantiable0[typings.reactNative.mod.Text]] = js.native
   val View: AnimatedComponent[TypeofView] = js.native
   def add(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedAddition = js.native

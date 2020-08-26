@@ -27,12 +27,34 @@ trait SchemaAdSize extends js.Object {
 
 object SchemaAdSize {
   @scala.inline
-  def apply(height: String = null, sizeType: String = null, width: String = null): SchemaAdSize = {
+  def apply(): SchemaAdSize = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (sizeType != null) __obj.updateDynamic("sizeType")(sizeType.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdSize]
   }
+  @scala.inline
+  implicit class SchemaAdSizeOps[Self <: SchemaAdSize] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setSizeType(value: String): Self = this.set("sizeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeType: Self = this.set("sizeType", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

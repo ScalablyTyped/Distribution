@@ -24,13 +24,14 @@ class Deferred () extends js.Object {
 @js.native
 object Deferred extends js.Object {
   var methods: js.Array[String] = js.native
-  def call(): Deferred = js.native
+  def call(fun: js.UndefOr[scala.Nothing], args: js.Any*): Deferred = js.native
   def call(fun: js.Function, args: js.Any*): Deferred = js.native
   def chain(args: js.Any*): Deferred = js.native
   def connect(funo: js.Any, options: String): DeferredizedFunction = js.native
   def connect(funo: js.Function): DeferredizedFunction = js.native
   def connect(funo: js.Function, options: ConnectOption): DeferredizedFunction = js.native
   def define(): js.Any = js.native
+  def define(obj: js.UndefOr[scala.Nothing], list: js.Array[String]): js.Any = js.native
   def define(obj: js.Any): js.Any = js.native
   def define(obj: js.Any, list: js.Array[String]): js.Any = js.native
   def earlier(dl: js.Any): Deferred = js.native

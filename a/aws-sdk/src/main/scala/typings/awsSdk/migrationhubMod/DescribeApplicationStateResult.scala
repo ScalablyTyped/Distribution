@@ -18,11 +18,30 @@ trait DescribeApplicationStateResult extends js.Object {
 
 object DescribeApplicationStateResult {
   @scala.inline
-  def apply(ApplicationStatus: ApplicationStatus = null, LastUpdatedTime: UpdateDateTime = null): DescribeApplicationStateResult = {
+  def apply(): DescribeApplicationStateResult = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationStatus != null) __obj.updateDynamic("ApplicationStatus")(ApplicationStatus.asInstanceOf[js.Any])
-    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeApplicationStateResult]
   }
+  @scala.inline
+  implicit class DescribeApplicationStateResultOps[Self <: DescribeApplicationStateResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationStatus(value: ApplicationStatus): Self = this.set("ApplicationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationStatus: Self = this.set("ApplicationStatus", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: UpdateDateTime): Self = this.set("LastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("LastUpdatedTime", js.undefined)
+  }
+  
 }
 

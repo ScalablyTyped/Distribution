@@ -14,31 +14,14 @@ trait FlowPredicate extends _Node
 
 object FlowPredicate {
   @scala.inline
-  def DeclaredPredicate_(
-    `type`: DeclaredPredicate,
-    value: Flow,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): FlowPredicate = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def DeclaredPredicate_(`type`: DeclaredPredicate, value: Flow): FlowPredicate = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowPredicate]
   }
   @scala.inline
-  def InferredPredicate_(
-    `type`: InferredPredicate,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): FlowPredicate = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def InferredPredicate_(`type`: InferredPredicate): FlowPredicate = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowPredicate]
   }

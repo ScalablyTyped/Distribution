@@ -85,34 +85,72 @@ trait SchemaGoogleCloudMlV1PredictionInput extends js.Object {
 
 object SchemaGoogleCloudMlV1PredictionInput {
   @scala.inline
-  def apply(
-    batchSize: String = null,
-    dataFormat: String = null,
-    inputPaths: js.Array[String] = null,
-    maxWorkerCount: String = null,
-    modelName: String = null,
-    outputDataFormat: String = null,
-    outputPath: String = null,
-    region: String = null,
-    runtimeVersion: String = null,
-    signatureName: String = null,
-    uri: String = null,
-    versionName: String = null
-  ): SchemaGoogleCloudMlV1PredictionInput = {
+  def apply(): SchemaGoogleCloudMlV1PredictionInput = {
     val __obj = js.Dynamic.literal()
-    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
-    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat.asInstanceOf[js.Any])
-    if (inputPaths != null) __obj.updateDynamic("inputPaths")(inputPaths.asInstanceOf[js.Any])
-    if (maxWorkerCount != null) __obj.updateDynamic("maxWorkerCount")(maxWorkerCount.asInstanceOf[js.Any])
-    if (modelName != null) __obj.updateDynamic("modelName")(modelName.asInstanceOf[js.Any])
-    if (outputDataFormat != null) __obj.updateDynamic("outputDataFormat")(outputDataFormat.asInstanceOf[js.Any])
-    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion.asInstanceOf[js.Any])
-    if (signatureName != null) __obj.updateDynamic("signatureName")(signatureName.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (versionName != null) __obj.updateDynamic("versionName")(versionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1PredictionInput]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1PredictionInputOps[Self <: SchemaGoogleCloudMlV1PredictionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchSize(value: String): Self = this.set("batchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("batchSize", js.undefined)
+    @scala.inline
+    def setDataFormat(value: String): Self = this.set("dataFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFormat: Self = this.set("dataFormat", js.undefined)
+    @scala.inline
+    def setInputPathsVarargs(value: String*): Self = this.set("inputPaths", js.Array(value :_*))
+    @scala.inline
+    def setInputPaths(value: js.Array[String]): Self = this.set("inputPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputPaths: Self = this.set("inputPaths", js.undefined)
+    @scala.inline
+    def setMaxWorkerCount(value: String): Self = this.set("maxWorkerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxWorkerCount: Self = this.set("maxWorkerCount", js.undefined)
+    @scala.inline
+    def setModelName(value: String): Self = this.set("modelName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelName: Self = this.set("modelName", js.undefined)
+    @scala.inline
+    def setOutputDataFormat(value: String): Self = this.set("outputDataFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDataFormat: Self = this.set("outputDataFormat", js.undefined)
+    @scala.inline
+    def setOutputPath(value: String): Self = this.set("outputPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputPath: Self = this.set("outputPath", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRuntimeVersion(value: String): Self = this.set("runtimeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeVersion: Self = this.set("runtimeVersion", js.undefined)
+    @scala.inline
+    def setSignatureName(value: String): Self = this.set("signatureName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSignatureName: Self = this.set("signatureName", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+    @scala.inline
+    def setVersionName(value: String): Self = this.set("versionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionName: Self = this.set("versionName", js.undefined)
+  }
+  
 }
 

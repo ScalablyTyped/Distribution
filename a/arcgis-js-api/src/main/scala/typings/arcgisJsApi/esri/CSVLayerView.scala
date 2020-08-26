@@ -74,6 +74,7 @@ trait CSVLayerView extends LayerView {
     *
     */
   def queryExtent(): js.Promise[_] = js.native
+  def queryExtent(query: js.UndefOr[scala.Nothing], options: CSVLayerViewQueryExtentOptions): js.Promise[_] = js.native
   def queryExtent(query: Query): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties): js.Promise[_] = js.native
   def queryExtent(query: QueryProperties, options: CSVLayerViewQueryExtentOptions): js.Promise[_] = js.native
@@ -96,6 +97,7 @@ trait CSVLayerView extends LayerView {
     *
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
+  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: CSVLayerViewQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -119,6 +121,7 @@ trait CSVLayerView extends LayerView {
     *
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: js.UndefOr[scala.Nothing], options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: CSVLayerViewQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -141,6 +144,7 @@ trait CSVLayerView extends LayerView {
     *
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: CSVLayerViewQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native

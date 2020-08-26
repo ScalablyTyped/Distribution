@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 /**
   * A command to modify a floating object's alignment position.
   */
+@js.native
 trait ChangeFloatingObjectAlignmentPositionCommand extends ChangeFloatingObjectPropertyCommandBase[FloatingObjectAlignmentPositionSettings]
 
 object ChangeFloatingObjectAlignmentPositionCommand {

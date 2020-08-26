@@ -45,24 +45,56 @@ trait SchemaTableCell extends js.Object {
 
 object SchemaTableCell {
   @scala.inline
-  def apply(
-    content: js.Array[SchemaStructuralElement] = null,
-    endIndex: js.UndefOr[Double] = js.undefined,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    suggestedDeletionIds: js.Array[String] = null,
-    suggestedInsertionIds: js.Array[String] = null,
-    suggestedTableCellStyleChanges: StringDictionary[SchemaSuggestedTableCellStyle] = null,
-    tableCellStyle: SchemaTableCellStyle = null
-  ): SchemaTableCell = {
+  def apply(): SchemaTableCell = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
-    if (suggestedInsertionIds != null) __obj.updateDynamic("suggestedInsertionIds")(suggestedInsertionIds.asInstanceOf[js.Any])
-    if (suggestedTableCellStyleChanges != null) __obj.updateDynamic("suggestedTableCellStyleChanges")(suggestedTableCellStyleChanges.asInstanceOf[js.Any])
-    if (tableCellStyle != null) __obj.updateDynamic("tableCellStyle")(tableCellStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaTableCell]
   }
+  @scala.inline
+  implicit class SchemaTableCellOps[Self <: SchemaTableCell] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentVarargs(value: SchemaStructuralElement*): Self = this.set("content", js.Array(value :_*))
+    @scala.inline
+    def setContent(value: js.Array[SchemaStructuralElement]): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    @scala.inline
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    @scala.inline
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
+    @scala.inline
+    def setSuggestedInsertionIdsVarargs(value: String*): Self = this.set("suggestedInsertionIds", js.Array(value :_*))
+    @scala.inline
+    def setSuggestedInsertionIds(value: js.Array[String]): Self = this.set("suggestedInsertionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedInsertionIds: Self = this.set("suggestedInsertionIds", js.undefined)
+    @scala.inline
+    def setSuggestedTableCellStyleChanges(value: StringDictionary[SchemaSuggestedTableCellStyle]): Self = this.set("suggestedTableCellStyleChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedTableCellStyleChanges: Self = this.set("suggestedTableCellStyleChanges", js.undefined)
+    @scala.inline
+    def setTableCellStyle(value: SchemaTableCellStyle): Self = this.set("tableCellStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableCellStyle: Self = this.set("tableCellStyle", js.undefined)
+  }
+  
 }
 

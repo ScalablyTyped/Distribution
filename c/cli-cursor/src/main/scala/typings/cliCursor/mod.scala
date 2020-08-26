@@ -13,6 +13,7 @@ object mod extends js.Object {
   def show(): Unit = js.native
   def show(stream: WritableStream): Unit = js.native
   def toggle(): Unit = js.native
+  def toggle(force: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
   def toggle(force: Boolean): Unit = js.native
   def toggle(force: Boolean, stream: WritableStream): Unit = js.native
 }

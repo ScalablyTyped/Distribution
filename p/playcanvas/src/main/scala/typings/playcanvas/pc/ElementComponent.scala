@@ -6,18 +6,18 @@ import scala.scalajs.js.annotation._
 
 /**
   * Enables an Entity to be positioned using anchors and screen coordinates under a {@link pc.ScreenComponent} or under other ElementComponents.
-  Depending on its type it can be used to render images, text or just as a layout mechanism to build 2D and 3D user interfaces.
-  If the component is a descendant of a {@link pc.ScreenComponent}, then the Entity's {@link pc.Entity.setLocalPosition} is in the {@link pc.ScreenComponent}'s coordinate system.
+  * Depending on its type it can be used to render images, text or just as a layout mechanism to build 2D and 3D user interfaces.
+  * If the component is a descendant of a {@link pc.ScreenComponent}, then the Entity's {@link pc.Entity.setLocalPosition} is in the {@link pc.ScreenComponent}'s coordinate system.
   * @property type - The type of the ElementComponent. Can be:
-  
-  * {@link pc.ELEMENTTYPE_GROUP}: The component can be used as a layout mechanism to create groups of ElementComponents e.g. panels.
-  * {@link pc.ELEMENTTYPE_IMAGE}: The component will render an image
-  * {@link pc.ELEMENTTYPE_TEXT}: The component will render text
+  *
+  * * {@link pc.ELEMENTTYPE_GROUP}: The component can be used as a layout mechanism to create groups of ElementComponents e.g. panels.
+  * * {@link pc.ELEMENTTYPE_IMAGE}: The component will render an image
+  * * {@link pc.ELEMENTTYPE_TEXT}: The component will render text
   * @property screen - The Entity with a {@link pc.ScreenComponent} that this component belongs to. This is automatically set when the component is a child of a ScreenComponent.
   * @property drawOrder - The draw order of the component. A higher value means that the component will be rendered on top of other components.
   * @property anchor - Specifies where the left, bottom, right and top edges of the component are anchored relative to its parent. Each value
-  ranges from 0 to 1. E.g. a value of [0,0,0,0] means that the element will be anchored to the bottom left of its parent. A value of [1, 1, 1, 1] means
-  it will be anchored to the top right. A split anchor is when the left-right or top-bottom pairs of the anchor are not equal. In that case the component will be resized to cover that entire area. E.g. a value of [0,0,1,1] will make the component resize exactly as its parent.
+  * ranges from 0 to 1. E.g. a value of [0,0,0,0] means that the element will be anchored to the bottom left of its parent. A value of [1, 1, 1, 1] means
+  * it will be anchored to the top right. A split anchor is when the left-right or top-bottom pairs of the anchor are not equal. In that case the component will be resized to cover that entire area. E.g. a value of [0,0,1,1] will make the component resize exactly as its parent.
   * @property pivot - The position of the pivot of the component relative to its anchor. Each value ranges from 0 to 1 where [0,0] is the bottom left and [1,1] is the top right.
   * @property margin - The distance from the left, bottom, right and top edges of the anchor. For example if we are using a split anchor like [0,0,1,1] and the margin is [0,0,0,0] then the component will be the same width and height as its parent.
   * @property left - The distance from the left edge of the anchor. Can be used in combination with a split anchor to make the component's left edge always be 'left' units away from the left.
@@ -69,8 +69,8 @@ import scala.scalajs.js.annotation._
   * @property unicodeConverter - Convert unicode characters using a function registered by `app.systems.element.registerUnicodeConverter`.
   * @property batchGroupId - Assign element to a specific batch group (see {@link pc.BatchGroup}). Default value is -1 (no group).
   * @property layers - An array of layer IDs ({@link pc.Layer#id}) to which this element should belong.
-  Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
-  * @property enableMarkup - Flag for enabling markup processing. Only works for {@link pc.ELEMENTTYPE_TEXT} types.
+  * Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
+  * @property enableMarkup - Flag for enabling markup processing. Only works for {@link pc.ELEMENTTYPE_TEXT} types. The only supported tag is `[color]` with a hex color value. E.g `[color="#ff0000"]red text[/color]`
   * @property rangeStart - Index of the first character to render. Only works for {@link pc.ELEMENTTYPE_TEXT} types.
   * @property rangeEnd - Index of the last character to render. Only works for {@link pc.ELEMENTTYPE_TEXT} types.
   * @param system - The ComponentSystem that created this Component.
@@ -84,8 +84,8 @@ trait ElementComponent extends Component {
   var alignment: Vec2 = js.native
   /**
     * Specifies where the left, bottom, right and top edges of the component are anchored relative to its parent. Each value
-    * ranges from 0 to 1. E.g. a value of [0,0,0,0] means that the element will be anchored to the bottom left of its parent. A value of [1, 1, 1, 1] means
-    * it will be anchored to the top right. A split anchor is when the left-right or top-bottom pairs of the anchor are not equal. In that case the component will be resized to cover that entire area. E.g. a value of [0,0,1,1] will make the component resize exactly as its parent.
+    ranges from 0 to 1. E.g. a value of [0,0,0,0] means that the element will be anchored to the bottom left of its parent. A value of [1, 1, 1, 1] means
+    it will be anchored to the top right. A split anchor is when the left-right or top-bottom pairs of the anchor are not equal. In that case the component will be resized to cover that entire area. E.g. a value of [0,0,1,1] will make the component resize exactly as its parent.
     */
   var anchor: Vec4 = js.native
   /**
@@ -99,11 +99,11 @@ trait ElementComponent extends Component {
   /**
     * Automatically set the height of the component to be the same as the textHeight. Only works for {@link pc.ELEMENTTYPE_TEXT} types.
     */
-  var autoHeight: Double = js.native
+  var autoHeight: Boolean = js.native
   /**
     * Automatically set the width of the component to be the same as the textWidth. Only works for {@link pc.ELEMENTTYPE_TEXT} types.
     */
-  var autoWidth: Double = js.native
+  var autoWidth: Boolean = js.native
   /**
     * Assign element to a specific batch group (see {@link pc.BatchGroup}). Default value is -1 (no group).
     */
@@ -133,7 +133,7 @@ trait ElementComponent extends Component {
     */
   var drawOrder: Double = js.native
   /**
-    * Flag for enabling markup processing. Only works for {@link pc.ELEMENTTYPE_TEXT} types.
+    * Flag for enabling markup processing. Only works for {@link pc.ELEMENTTYPE_TEXT} types. The only supported tag is `[color]` with a hex color value. E.g `[color="#ff0000"]red text[/color]`
     */
   var enableMarkup: Boolean = js.native
   /**
@@ -158,7 +158,7 @@ trait ElementComponent extends Component {
   var key: String = js.native
   /**
     * An array of layer IDs ({@link pc.Layer#id}) to which this element should belong.
-    * Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
+    Don't push/pop/splice or modify this array, if you want to change it - set a new one instead.
     */
   var layers: js.Array[Double] = js.native
   /**
@@ -291,9 +291,10 @@ trait ElementComponent extends Component {
   var top: Double = js.native
   /**
     * The type of the ElementComponent. Can be:
-    * * {@link pc.ELEMENTTYPE_GROUP}: The component can be used as a layout mechanism to create groups of ElementComponents e.g. panels.
-    * * {@link pc.ELEMENTTYPE_IMAGE}: The component will render an image
-    * * {@link pc.ELEMENTTYPE_TEXT}: The component will render text
+    
+    * {@link pc.ELEMENTTYPE_GROUP}: The component can be used as a layout mechanism to create groups of ElementComponents e.g. panels.
+    * {@link pc.ELEMENTTYPE_IMAGE}: The component will render an image
+    * {@link pc.ELEMENTTYPE_TEXT}: The component will render text
     */
   var `type`: String = js.native
   /**

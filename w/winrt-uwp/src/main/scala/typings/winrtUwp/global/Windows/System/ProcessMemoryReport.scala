@@ -8,12 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.System.ProcessMemoryReport")
 @js.native
 abstract class ProcessMemoryReport ()
-  extends typings.winrtUwp.Windows.System.ProcessMemoryReport {
-  /** Gets the process' private working set usage. */
-  /* CompleteClass */
-  override var privateWorkingSetUsage: Double = js.native
-  /** Gets the process' total working set usage. */
-  /* CompleteClass */
-  override var totalWorkingSetUsage: Double = js.native
-}
+  extends typings.winrtUwp.Windows.System.ProcessMemoryReport
 

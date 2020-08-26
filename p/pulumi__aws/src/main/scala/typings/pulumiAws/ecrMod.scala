@@ -6,6 +6,8 @@ import typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicyArgs
 import typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicyState
 import typings.pulumiAws.ecrRepositoryMod.RepositoryArgs
 import typings.pulumiAws.ecrRepositoryMod.RepositoryState
+import typings.pulumiAws.getAuthorizationTokenMod.GetAuthorizationTokenArgs
+import typings.pulumiAws.getAuthorizationTokenMod.GetAuthorizationTokenResult
 import typings.pulumiAws.getCredentialsMod.GetCredentialsArgs
 import typings.pulumiAws.getCredentialsMod.GetCredentialsResult
 import typings.pulumiAws.getImageMod.GetImageArgs
@@ -49,6 +51,7 @@ object ecrMod extends js.Object {
       */
     def this(name: String) = this()
     def this(name: String, args: RepositoryArgs) = this()
+    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
     def this(name: String, args: RepositoryArgs, opts: CustomResourceOptions) = this()
   }
   
@@ -66,12 +69,16 @@ object ecrMod extends js.Object {
     def this(name: String, args: RepositoryPolicyArgs, opts: CustomResourceOptions) = this()
   }
   
-  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] with GetCredentialsResult = js.native
-  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] with GetCredentialsResult = js.native
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] with GetImageResult = js.native
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] with GetImageResult = js.native
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] with GetRepositoryResult = js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] with GetRepositoryResult = js.native
+  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getAuthorizationToken(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = js.native
+  def getCredentials(args: GetCredentialsArgs): js.Promise[GetCredentialsResult] = js.native
+  def getCredentials(args: GetCredentialsArgs, opts: InvokeOptions): js.Promise[GetCredentialsResult] = js.native
+  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
+  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
   /* static members */
   @js.native
   object LifecyclePolicy extends js.Object {
@@ -82,8 +89,10 @@ object ecrMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
     def get(name: String, id: Input[ID], state: LifecyclePolicyState): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
     def get(name: String, id: Input[ID], state: LifecyclePolicyState, opts: CustomResourceOptions): typings.pulumiAws.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
     /**
@@ -103,8 +112,10 @@ object ecrMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
     def get(name: String, id: Input[ID], state: RepositoryState): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
     def get(name: String, id: Input[ID], state: RepositoryState, opts: CustomResourceOptions): typings.pulumiAws.ecrRepositoryMod.Repository = js.native
     /**
@@ -124,8 +135,10 @@ object ecrMod extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
     def get(name: String, id: Input[ID], state: RepositoryPolicyState): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
     def get(name: String, id: Input[ID], state: RepositoryPolicyState, opts: CustomResourceOptions): typings.pulumiAws.repositoryPolicyMod.RepositoryPolicy = js.native
     /**

@@ -6,30 +6,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LastEditorId extends js.Object {
-  var lastEditorId: js.UndefOr[UserID] = js.undefined
-  var saved: js.UndefOr[Timestamp] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var updateSequenceNum: js.UndefOr[Double] = js.undefined
-  var updated: js.UndefOr[Timestamp] = js.undefined
+  var lastEditorId: js.UndefOr[UserID] = js.native
+  var saved: js.UndefOr[Timestamp] = js.native
+  var title: js.UndefOr[String] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updated: js.UndefOr[Timestamp] = js.native
 }
 
 object LastEditorId {
   @scala.inline
-  def apply(
-    lastEditorId: js.UndefOr[UserID] = js.undefined,
-    saved: js.UndefOr[Timestamp] = js.undefined,
-    title: String = null,
-    updateSequenceNum: js.UndefOr[Double] = js.undefined,
-    updated: js.UndefOr[Timestamp] = js.undefined
-  ): LastEditorId = {
+  def apply(): LastEditorId = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastEditorId)) __obj.updateDynamic("lastEditorId")(lastEditorId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateSequenceNum)) __obj.updateDynamic("updateSequenceNum")(updateSequenceNum.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updated)) __obj.updateDynamic("updated")(updated.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastEditorId]
   }
+  @scala.inline
+  implicit class LastEditorIdOps[Self <: LastEditorId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastEditorId(value: UserID): Self = this.set("lastEditorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEditorId: Self = this.set("lastEditorId", js.undefined)
+    @scala.inline
+    def setSaved(value: Timestamp): Self = this.set("saved", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSaved: Self = this.set("saved", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUpdateSequenceNum(value: Double): Self = this.set("updateSequenceNum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateSequenceNum: Self = this.set("updateSequenceNum", js.undefined)
+    @scala.inline
+    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+  }
+  
 }
 

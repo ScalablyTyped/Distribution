@@ -18,11 +18,32 @@ trait ExportTasksMessage extends js.Object {
 
 object ExportTasksMessage {
   @scala.inline
-  def apply(ExportTasks: ExportTasksList = null, Marker: String = null): ExportTasksMessage = {
+  def apply(): ExportTasksMessage = {
     val __obj = js.Dynamic.literal()
-    if (ExportTasks != null) __obj.updateDynamic("ExportTasks")(ExportTasks.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportTasksMessage]
   }
+  @scala.inline
+  implicit class ExportTasksMessageOps[Self <: ExportTasksMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportTasksVarargs(value: ExportTask*): Self = this.set("ExportTasks", js.Array(value :_*))
+    @scala.inline
+    def setExportTasks(value: ExportTasksList): Self = this.set("ExportTasks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportTasks: Self = this.set("ExportTasks", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

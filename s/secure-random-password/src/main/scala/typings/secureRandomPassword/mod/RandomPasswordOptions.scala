@@ -4,29 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RandomPasswordOptions extends js.Object {
-  var avoidAmbiguous: js.UndefOr[Boolean] = js.undefined
+  var avoidAmbiguous: js.UndefOr[Boolean] = js.native
   var characters: js.UndefOr[
     String | RandomPasswordCharactersSet | (js.Array[RandomPasswordCharactersSet | String])
-  ] = js.undefined
-  var length: js.UndefOr[Double] = js.undefined
-  var predicate: js.UndefOr[js.Function1[/* result */ String, Boolean]] = js.undefined
+  ] = js.native
+  var length: js.UndefOr[Double] = js.native
+  var predicate: js.UndefOr[js.Function1[/* result */ String, Boolean]] = js.native
 }
 
 object RandomPasswordOptions {
   @scala.inline
-  def apply(
-    avoidAmbiguous: js.UndefOr[Boolean] = js.undefined,
-    characters: String | RandomPasswordCharactersSet | (js.Array[RandomPasswordCharactersSet | String]) = null,
-    length: js.UndefOr[Double] = js.undefined,
-    predicate: /* result */ String => Boolean = null
-  ): RandomPasswordOptions = {
+  def apply(): RandomPasswordOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(avoidAmbiguous)) __obj.updateDynamic("avoidAmbiguous")(avoidAmbiguous.get.asInstanceOf[js.Any])
-    if (characters != null) __obj.updateDynamic("characters")(characters.asInstanceOf[js.Any])
-    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length.get.asInstanceOf[js.Any])
-    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     __obj.asInstanceOf[RandomPasswordOptions]
   }
+  @scala.inline
+  implicit class RandomPasswordOptionsOps[Self <: RandomPasswordOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvoidAmbiguous(value: Boolean): Self = this.set("avoidAmbiguous", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvoidAmbiguous: Self = this.set("avoidAmbiguous", js.undefined)
+    @scala.inline
+    def setCharactersVarargs(value: (RandomPasswordCharactersSet | String)*): Self = this.set("characters", js.Array(value :_*))
+    @scala.inline
+    def setCharacters(value: String | RandomPasswordCharactersSet | (js.Array[RandomPasswordCharactersSet | String])): Self = this.set("characters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacters: Self = this.set("characters", js.undefined)
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLength: Self = this.set("length", js.undefined)
+    @scala.inline
+    def setPredicate(value: /* result */ String => Boolean): Self = this.set("predicate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePredicate: Self = this.set("predicate", js.undefined)
+  }
+  
 }
 

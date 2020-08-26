@@ -46,22 +46,48 @@ trait BrokerNodeInfo extends js.Object {
 
 object BrokerNodeInfo {
   @scala.inline
-  def apply(
-    AttachedENIId: string = null,
-    BrokerId: js.UndefOr[double] = js.undefined,
-    ClientSubnet: string = null,
-    ClientVpcIpAddress: string = null,
-    CurrentBrokerSoftwareInfo: BrokerSoftwareInfo = null,
-    Endpoints: listOfString = null
-  ): BrokerNodeInfo = {
+  def apply(): BrokerNodeInfo = {
     val __obj = js.Dynamic.literal()
-    if (AttachedENIId != null) __obj.updateDynamic("AttachedENIId")(AttachedENIId.asInstanceOf[js.Any])
-    if (!js.isUndefined(BrokerId)) __obj.updateDynamic("BrokerId")(BrokerId.get.asInstanceOf[js.Any])
-    if (ClientSubnet != null) __obj.updateDynamic("ClientSubnet")(ClientSubnet.asInstanceOf[js.Any])
-    if (ClientVpcIpAddress != null) __obj.updateDynamic("ClientVpcIpAddress")(ClientVpcIpAddress.asInstanceOf[js.Any])
-    if (CurrentBrokerSoftwareInfo != null) __obj.updateDynamic("CurrentBrokerSoftwareInfo")(CurrentBrokerSoftwareInfo.asInstanceOf[js.Any])
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerNodeInfo]
   }
+  @scala.inline
+  implicit class BrokerNodeInfoOps[Self <: BrokerNodeInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachedENIId(value: string): Self = this.set("AttachedENIId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachedENIId: Self = this.set("AttachedENIId", js.undefined)
+    @scala.inline
+    def setBrokerId(value: double): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    @scala.inline
+    def setClientSubnet(value: string): Self = this.set("ClientSubnet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientSubnet: Self = this.set("ClientSubnet", js.undefined)
+    @scala.inline
+    def setClientVpcIpAddress(value: string): Self = this.set("ClientVpcIpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientVpcIpAddress: Self = this.set("ClientVpcIpAddress", js.undefined)
+    @scala.inline
+    def setCurrentBrokerSoftwareInfo(value: BrokerSoftwareInfo): Self = this.set("CurrentBrokerSoftwareInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentBrokerSoftwareInfo: Self = this.set("CurrentBrokerSoftwareInfo", js.undefined)
+    @scala.inline
+    def setEndpointsVarargs(value: string*): Self = this.set("Endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: listOfString): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+  }
+  
 }
 

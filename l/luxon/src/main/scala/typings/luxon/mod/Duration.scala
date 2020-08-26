@@ -39,8 +39,8 @@ class Duration () extends js.Object {
   def shiftTo(units: DurationUnit*): Duration = js.native
   def toFormat(format: String): String = js.native
   def toFormat(format: String, options: DurationToFormatOptions): String = js.native
-  def toISO(): String = js.native
-  def toJSON(): String = js.native
+  def toISO(): String | Null = js.native
+  def toJSON(): String | Null = js.native
   def toObject(): DurationObject = js.native
   def toObject(options: IncludeConfig): DurationObject = js.native
 }

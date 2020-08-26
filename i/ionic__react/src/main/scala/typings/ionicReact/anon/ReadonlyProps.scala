@@ -16,51 +16,90 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Readonly<@ionic/react.@ionic/react/dist/types/components/navigation/IonBackButton.Props> */
+@js.native
 trait ReadonlyProps extends js.Object {
-  val `class`: js.UndefOr[String] = js.undefined
-  val className: js.UndefOr[String] = js.undefined
-  val color: js.UndefOr[Color] = js.undefined
-  val defaultHref: js.UndefOr[String] = js.undefined
-  val disabled: js.UndefOr[Boolean] = js.undefined
-  val icon: js.UndefOr[Ios | String] = js.undefined
-  val mode: js.UndefOr[ios | md] = js.undefined
-  val ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.undefined
-  val routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
-  val style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
-  val text: js.UndefOr[String] = js.undefined
-  val `type`: js.UndefOr[submit | reset | button] = js.undefined
+  val `class`: js.UndefOr[String] = js.native
+  val className: js.UndefOr[String] = js.native
+  val color: js.UndefOr[Color] = js.native
+  val defaultHref: js.UndefOr[String] = js.native
+  val disabled: js.UndefOr[Boolean] = js.native
+  val icon: js.UndefOr[Ios | String] = js.native
+  val mode: js.UndefOr[ios | md] = js.native
+  val ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.native
+  val routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+  val style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val text: js.UndefOr[String | Null] = js.native
+  val `type`: js.UndefOr[submit | reset | button] = js.native
 }
 
 object ReadonlyProps {
   @scala.inline
-  def apply(
-    `class`: String = null,
-    className: String = null,
-    color: Color = null,
-    defaultHref: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: Ios | String = null,
-    mode: ios | md = null,
-    ref: RefObject[HTMLIonBackButtonElement] = null,
-    routerAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    style: StringDictionary[js.Any] = null,
-    text: String = null,
-    `type`: submit | reset | button = null
-  ): ReadonlyProps = {
+  def apply(): ReadonlyProps = {
     val __obj = js.Dynamic.literal()
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (defaultHref != null) __obj.updateDynamic("defaultHref")(defaultHref.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (routerAnimation != null) __obj.updateDynamic("routerAnimation")(js.Any.fromFunction2(routerAnimation))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyProps]
   }
+  @scala.inline
+  implicit class ReadonlyPropsOps[Self <: ReadonlyProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClass(value: String): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColor(value: Color): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDefaultHref(value: String): Self = this.set("defaultHref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultHref: Self = this.set("defaultHref", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setIcon(value: Ios | String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setRef(value: RefObject[HTMLIonBackButtonElement]): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("routerAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRouterAnimation: Self = this.set("routerAnimation", js.undefined)
+    @scala.inline
+    def setStyle(value: StringDictionary[js.Any]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTextNull: Self = this.set("text", null)
+    @scala.inline
+    def setType(value: submit | reset | button): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

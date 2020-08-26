@@ -26,17 +26,36 @@ trait InvokeEndpointOutput extends js.Object {
 
 object InvokeEndpointOutput {
   @scala.inline
-  def apply(
-    Body: BodyBlob,
-    ContentType: Header = null,
-    CustomAttributes: CustomAttributesHeader = null,
-    InvokedProductionVariant: Header = null
-  ): InvokeEndpointOutput = {
+  def apply(Body: BodyBlob): InvokeEndpointOutput = {
     val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (CustomAttributes != null) __obj.updateDynamic("CustomAttributes")(CustomAttributes.asInstanceOf[js.Any])
-    if (InvokedProductionVariant != null) __obj.updateDynamic("InvokedProductionVariant")(InvokedProductionVariant.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeEndpointOutput]
   }
+  @scala.inline
+  implicit class InvokeEndpointOutputOps[Self <: InvokeEndpointOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: BodyBlob): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: Header): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setCustomAttributes(value: CustomAttributesHeader): Self = this.set("CustomAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAttributes: Self = this.set("CustomAttributes", js.undefined)
+    @scala.inline
+    def setInvokedProductionVariant(value: Header): Self = this.set("InvokedProductionVariant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvokedProductionVariant: Self = this.set("InvokedProductionVariant", js.undefined)
+  }
+  
 }
 

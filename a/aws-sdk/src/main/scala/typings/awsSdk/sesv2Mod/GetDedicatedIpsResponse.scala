@@ -18,11 +18,32 @@ trait GetDedicatedIpsResponse extends js.Object {
 
 object GetDedicatedIpsResponse {
   @scala.inline
-  def apply(DedicatedIps: DedicatedIpList = null, NextToken: NextToken = null): GetDedicatedIpsResponse = {
+  def apply(): GetDedicatedIpsResponse = {
     val __obj = js.Dynamic.literal()
-    if (DedicatedIps != null) __obj.updateDynamic("DedicatedIps")(DedicatedIps.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDedicatedIpsResponse]
   }
+  @scala.inline
+  implicit class GetDedicatedIpsResponseOps[Self <: GetDedicatedIpsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDedicatedIpsVarargs(value: DedicatedIp*): Self = this.set("DedicatedIps", js.Array(value :_*))
+    @scala.inline
+    def setDedicatedIps(value: DedicatedIpList): Self = this.set("DedicatedIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedIps: Self = this.set("DedicatedIps", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

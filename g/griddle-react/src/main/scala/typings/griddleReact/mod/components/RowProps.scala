@@ -9,39 +9,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RowProps extends js.Object {
-  var Cell: js.UndefOr[js.Any] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var columnIds: js.UndefOr[js.Array[Double]] = js.undefined
-  var griddleKey: js.UndefOr[String] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[Element]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[Element]] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var Cell: js.UndefOr[js.Any] = js.native
+  var className: js.UndefOr[String] = js.native
+  var columnIds: js.UndefOr[js.Array[Double]] = js.native
+  var griddleKey: js.UndefOr[String] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
 }
 
 object RowProps {
   @scala.inline
-  def apply(
-    Cell: js.Any = null,
-    className: String = null,
-    columnIds: js.Array[Double] = null,
-    griddleKey: String = null,
-    onClick: MouseEvent[Element, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[Element, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[Element, NativeMouseEvent] => Unit = null,
-    style: CSSProperties = null
-  ): RowProps = {
+  def apply(): RowProps = {
     val __obj = js.Dynamic.literal()
-    if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columnIds != null) __obj.updateDynamic("columnIds")(columnIds.asInstanceOf[js.Any])
-    if (griddleKey != null) __obj.updateDynamic("griddleKey")(griddleKey.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowProps]
   }
+  @scala.inline
+  implicit class RowPropsOps[Self <: RowProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCell(value: js.Any): Self = this.set("Cell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCell: Self = this.set("Cell", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColumnIdsVarargs(value: Double*): Self = this.set("columnIds", js.Array(value :_*))
+    @scala.inline
+    def setColumnIds(value: js.Array[Double]): Self = this.set("columnIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnIds: Self = this.set("columnIds", js.undefined)
+    @scala.inline
+    def setGriddleKey(value: String): Self = this.set("griddleKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGriddleKey: Self = this.set("griddleKey", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

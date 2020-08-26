@@ -12,7 +12,7 @@ The Final Countdown for jQuery
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 291823 |
+| # downloads        | 292650 |
 | # stars            | 2 |
 
 ## Links

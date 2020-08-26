@@ -12,7 +12,7 @@ Keyboard shortcuts in Redux
 | Keywords           | redux, shortcut |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1635 |
+| # downloads        | 1640 |
 | # stars            | 0 |
 
 ## Links

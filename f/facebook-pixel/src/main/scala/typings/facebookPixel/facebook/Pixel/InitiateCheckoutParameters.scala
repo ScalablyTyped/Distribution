@@ -4,33 +4,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InitiateCheckoutParameters extends js.Object {
-  var content_category: js.UndefOr[String] = js.undefined
-  var content_ids: js.UndefOr[js.Array[String]] = js.undefined
-  var content_name: js.UndefOr[String] = js.undefined
-  var currency: js.UndefOr[String] = js.undefined
-  var num_items: js.UndefOr[Double] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var content_category: js.UndefOr[String] = js.native
+  var content_ids: js.UndefOr[js.Array[String]] = js.native
+  var content_name: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.native
+  var num_items: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object InitiateCheckoutParameters {
   @scala.inline
-  def apply(
-    content_category: String = null,
-    content_ids: js.Array[String] = null,
-    content_name: String = null,
-    currency: String = null,
-    num_items: js.UndefOr[Double] = js.undefined,
-    value: js.UndefOr[Double] = js.undefined
-  ): InitiateCheckoutParameters = {
+  def apply(): InitiateCheckoutParameters = {
     val __obj = js.Dynamic.literal()
-    if (content_category != null) __obj.updateDynamic("content_category")(content_category.asInstanceOf[js.Any])
-    if (content_ids != null) __obj.updateDynamic("content_ids")(content_ids.asInstanceOf[js.Any])
-    if (content_name != null) __obj.updateDynamic("content_name")(content_name.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(num_items)) __obj.updateDynamic("num_items")(num_items.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateCheckoutParameters]
   }
+  @scala.inline
+  implicit class InitiateCheckoutParametersOps[Self <: InitiateCheckoutParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent_category(value: String): Self = this.set("content_category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_category: Self = this.set("content_category", js.undefined)
+    @scala.inline
+    def setContent_idsVarargs(value: String*): Self = this.set("content_ids", js.Array(value :_*))
+    @scala.inline
+    def setContent_ids(value: js.Array[String]): Self = this.set("content_ids", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_ids: Self = this.set("content_ids", js.undefined)
+    @scala.inline
+    def setContent_name(value: String): Self = this.set("content_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent_name: Self = this.set("content_name", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setNum_items(value: Double): Self = this.set("num_items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNum_items: Self = this.set("num_items", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

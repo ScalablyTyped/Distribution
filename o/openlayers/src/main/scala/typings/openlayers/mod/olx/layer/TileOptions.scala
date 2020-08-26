@@ -7,44 +7,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TileOptions extends js.Object {
-  var extent: js.UndefOr[Extent_] = js.undefined
-  var map: js.UndefOr[Map] = js.undefined
-  var maxResolution: js.UndefOr[Double] = js.undefined
-  var minResolution: js.UndefOr[Double] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var preload: js.UndefOr[Double] = js.undefined
-  var source: Tile
-  var useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var extent: js.UndefOr[Extent_] = js.native
+  var map: js.UndefOr[Map] = js.native
+  var maxResolution: js.UndefOr[Double] = js.native
+  var minResolution: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var preload: js.UndefOr[Double] = js.native
+  var source: Tile = js.native
+  var useInterimTilesOnError: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object TileOptions {
   @scala.inline
-  def apply(
-    source: Tile,
-    extent: Extent_ = null,
-    map: Map = null,
-    maxResolution: js.UndefOr[Double] = js.undefined,
-    minResolution: js.UndefOr[Double] = js.undefined,
-    opacity: js.UndefOr[Double] = js.undefined,
-    preload: js.UndefOr[Double] = js.undefined,
-    useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): TileOptions = {
+  def apply(source: Tile): TileOptions = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResolution)) __obj.updateDynamic("maxResolution")(maxResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minResolution)) __obj.updateDynamic("minResolution")(minResolution.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useInterimTilesOnError)) __obj.updateDynamic("useInterimTilesOnError")(useInterimTilesOnError.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileOptions]
   }
+  @scala.inline
+  implicit class TileOptionsOps[Self <: TileOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSource(value: Tile): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtent(value: Extent_): Self = this.set("extent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtent: Self = this.set("extent", js.undefined)
+    @scala.inline
+    def setMap(value: Map): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setMaxResolution(value: Double): Self = this.set("maxResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResolution: Self = this.set("maxResolution", js.undefined)
+    @scala.inline
+    def setMinResolution(value: Double): Self = this.set("minResolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinResolution: Self = this.set("minResolution", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setPreload(value: Double): Self = this.set("preload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreload: Self = this.set("preload", js.undefined)
+    @scala.inline
+    def setUseInterimTilesOnError(value: Boolean): Self = this.set("useInterimTilesOnError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseInterimTilesOnError: Self = this.set("useInterimTilesOnError", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

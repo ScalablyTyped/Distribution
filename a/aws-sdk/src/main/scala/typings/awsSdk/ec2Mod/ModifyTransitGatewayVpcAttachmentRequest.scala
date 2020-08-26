@@ -30,19 +30,44 @@ trait ModifyTransitGatewayVpcAttachmentRequest extends js.Object {
 
 object ModifyTransitGatewayVpcAttachmentRequest {
   @scala.inline
-  def apply(
-    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
-    AddSubnetIds: TransitGatewaySubnetIdList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Options: ModifyTransitGatewayVpcAttachmentRequestOptions = null,
-    RemoveSubnetIds: TransitGatewaySubnetIdList = null
-  ): ModifyTransitGatewayVpcAttachmentRequest = {
+  def apply(TransitGatewayAttachmentId: TransitGatewayAttachmentId): ModifyTransitGatewayVpcAttachmentRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any])
-    if (AddSubnetIds != null) __obj.updateDynamic("AddSubnetIds")(AddSubnetIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
-    if (RemoveSubnetIds != null) __obj.updateDynamic("RemoveSubnetIds")(RemoveSubnetIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTransitGatewayVpcAttachmentRequest]
   }
+  @scala.inline
+  implicit class ModifyTransitGatewayVpcAttachmentRequestOps[Self <: ModifyTransitGatewayVpcAttachmentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = this.set("TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddSubnetIdsVarargs(value: SubnetId*): Self = this.set("AddSubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setAddSubnetIds(value: TransitGatewaySubnetIdList): Self = this.set("AddSubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddSubnetIds: Self = this.set("AddSubnetIds", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setOptions(value: ModifyTransitGatewayVpcAttachmentRequestOptions): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+    @scala.inline
+    def setRemoveSubnetIdsVarargs(value: SubnetId*): Self = this.set("RemoveSubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setRemoveSubnetIds(value: TransitGatewaySubnetIdList): Self = this.set("RemoveSubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveSubnetIds: Self = this.set("RemoveSubnetIds", js.undefined)
+  }
+  
 }
 

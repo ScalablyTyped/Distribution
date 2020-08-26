@@ -10,9 +10,9 @@ React Apollo server-side rendering utilities
 | ------------------ | :-------------: |
 | Full name          | @apollo/react-ssr |
 | Keywords           | apollo, graphql, react, hooks |
-| # releases         | 14 |
-| # dependents       | 15 |
-| # downloads        | 3567041 |
+| # releases         | 13 |
+| # dependents       | 16 |
+| # downloads        | 4086275 |
 | # stars            | 0 |
 
 ## Links

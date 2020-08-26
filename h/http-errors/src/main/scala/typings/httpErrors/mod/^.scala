@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("http-errors", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[CreateHttpError with NamedConstructors]
+object ^
+  extends TopLevel[CreateHttpError with NamedConstructors with typings.httpErrors.anon.IsHttpError]
 

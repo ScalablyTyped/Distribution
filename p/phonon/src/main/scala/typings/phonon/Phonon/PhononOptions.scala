@@ -5,21 +5,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*** Options ***/
+@js.native
 trait PhononOptions extends js.Object {
-  var i18n: js.UndefOr[PhononI18nOptions | Null] = js.undefined
-  var navigator: js.UndefOr[PhononNavigatorOptions] = js.undefined
+  var i18n: js.UndefOr[PhononI18nOptions | Null] = js.native
+  var navigator: js.UndefOr[PhononNavigatorOptions] = js.native
 }
 
 object PhononOptions {
   @scala.inline
-  def apply(
-    i18n: js.UndefOr[Null | PhononI18nOptions] = js.undefined,
-    navigator: PhononNavigatorOptions = null
-  ): PhononOptions = {
+  def apply(): PhononOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(i18n)) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (navigator != null) __obj.updateDynamic("navigator")(navigator.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhononOptions]
   }
+  @scala.inline
+  implicit class PhononOptionsOps[Self <: PhononOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setI18n(value: PhononI18nOptions): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI18n: Self = this.set("i18n", js.undefined)
+    @scala.inline
+    def setI18nNull: Self = this.set("i18n", null)
+    @scala.inline
+    def setNavigator(value: PhononNavigatorOptions): Self = this.set("navigator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigator: Self = this.set("navigator", js.undefined)
+  }
+  
 }
 

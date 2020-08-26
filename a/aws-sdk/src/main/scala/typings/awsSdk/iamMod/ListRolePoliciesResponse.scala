@@ -22,15 +22,34 @@ trait ListRolePoliciesResponse extends js.Object {
 
 object ListRolePoliciesResponse {
   @scala.inline
-  def apply(
-    PolicyNames: policyNameListType,
-    IsTruncated: js.UndefOr[booleanType] = js.undefined,
-    Marker: responseMarkerType = null
-  ): ListRolePoliciesResponse = {
+  def apply(PolicyNames: policyNameListType): ListRolePoliciesResponse = {
     val __obj = js.Dynamic.literal(PolicyNames = PolicyNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsTruncated)) __obj.updateDynamic("IsTruncated")(IsTruncated.get.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRolePoliciesResponse]
   }
+  @scala.inline
+  implicit class ListRolePoliciesResponseOps[Self <: ListRolePoliciesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolicyNamesVarargs(value: policyNameType*): Self = this.set("PolicyNames", js.Array(value :_*))
+    @scala.inline
+    def setPolicyNames(value: policyNameListType): Self = this.set("PolicyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsTruncated(value: booleanType): Self = this.set("IsTruncated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsTruncated: Self = this.set("IsTruncated", js.undefined)
+    @scala.inline
+    def setMarker(value: responseMarkerType): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

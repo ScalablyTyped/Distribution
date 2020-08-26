@@ -4,20 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UserInfo extends js.Object {
-  var email: js.UndefOr[String] = js.undefined
-  var first_name: js.UndefOr[String] = js.undefined
-  var last_name: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.native
 }
 
 object UserInfo {
   @scala.inline
-  def apply(email: String = null, first_name: String = null, last_name: String = null): UserInfo = {
+  def apply(): UserInfo = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (first_name != null) __obj.updateDynamic("first_name")(first_name.asInstanceOf[js.Any])
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserInfo]
   }
+  @scala.inline
+  implicit class UserInfoOps[Self <: UserInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setFirst_name(value: String): Self = this.set("first_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirst_name: Self = this.set("first_name", js.undefined)
+    @scala.inline
+    def setLast_name(value: String): Self = this.set("last_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_name: Self = this.set("last_name", js.undefined)
+  }
+  
 }
 

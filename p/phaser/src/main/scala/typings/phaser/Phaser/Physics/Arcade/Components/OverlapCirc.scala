@@ -14,5 +14,6 @@ import scala.scalajs.js.annotation._
   * If Arcade Physics is set to use the RTree (which it is by default) then the search is rather fast,
   * otherwise the search is O(N) for Dynamic Bodies.
   */
+@js.native
 trait OverlapCirc extends js.Object
 

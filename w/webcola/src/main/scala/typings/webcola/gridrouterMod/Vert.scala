@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Vert protected () extends js.Object {
   def this(id: Double, x: Double, y: Double) = this()
   def this(id: Double, x: Double, y: Double, node: NodeWrapper) = this()
+  def this(id: Double, x: Double, y: Double, node: js.UndefOr[scala.Nothing], line: js.Any) = this()
   def this(id: Double, x: Double, y: Double, node: NodeWrapper, line: js.Any) = this()
   var id: Double = js.native
   var line: js.Any = js.native

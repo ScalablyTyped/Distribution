@@ -23,16 +23,34 @@ trait GatewayState extends js.Object {
 
 object GatewayState {
   @scala.inline
-  def apply(
-    amazonSideAsn: Input[String] = null,
-    name: Input[String] = null,
-    ownerAccountId: Input[String] = null
-  ): GatewayState = {
+  def apply(): GatewayState = {
     val __obj = js.Dynamic.literal()
-    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayState]
   }
+  @scala.inline
+  implicit class GatewayStateOps[Self <: GatewayState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmazonSideAsn(value: Input[String]): Self = this.set("amazonSideAsn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonSideAsn: Self = this.set("amazonSideAsn", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOwnerAccountId(value: Input[String]): Self = this.set("ownerAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccountId: Self = this.set("ownerAccountId", js.undefined)
+  }
+  
 }
 

@@ -30,19 +30,42 @@ trait ImportInstanceRequest extends js.Object {
 
 object ImportInstanceRequest {
   @scala.inline
-  def apply(
-    Platform: PlatformValues,
-    Description: String = null,
-    DiskImages: DiskImageList = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    LaunchSpecification: ImportInstanceLaunchSpecification = null
-  ): ImportInstanceRequest = {
+  def apply(Platform: PlatformValues): ImportInstanceRequest = {
     val __obj = js.Dynamic.literal(Platform = Platform.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (DiskImages != null) __obj.updateDynamic("DiskImages")(DiskImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (LaunchSpecification != null) __obj.updateDynamic("LaunchSpecification")(LaunchSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportInstanceRequest]
   }
+  @scala.inline
+  implicit class ImportInstanceRequestOps[Self <: ImportInstanceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlatform(value: PlatformValues): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDiskImagesVarargs(value: DiskImage*): Self = this.set("DiskImages", js.Array(value :_*))
+    @scala.inline
+    def setDiskImages(value: DiskImageList): Self = this.set("DiskImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskImages: Self = this.set("DiskImages", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setLaunchSpecification(value: ImportInstanceLaunchSpecification): Self = this.set("LaunchSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchSpecification: Self = this.set("LaunchSpecification", js.undefined)
+  }
+  
 }
 

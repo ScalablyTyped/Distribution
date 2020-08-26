@@ -1,9 +1,7 @@
 package typings.antd.radioInterfaceMod
 
-import typings.antd.groupMod.AbstractCheckboxGroupProps
-import typings.antd.groupMod.CheckboxOptionType
+import typings.antd.checkboxGroupMod.AbstractCheckboxGroupProps
 import typings.antd.sizeContextMod.SizeType
-import typings.react.mod.CSSProperties
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
@@ -13,58 +11,83 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RadioGroupProps extends AbstractCheckboxGroupProps {
-  var buttonStyle: js.UndefOr[RadioGroupButtonStyle] = js.undefined
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var optionType: js.UndefOr[RadioGroupOptionType] = js.undefined
-  var size: js.UndefOr[SizeType] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  var buttonStyle: js.UndefOr[RadioGroupButtonStyle] = js.native
+  var children: js.UndefOr[ReactNode] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ RadioChangeEvent, Unit]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var optionType: js.UndefOr[RadioGroupOptionType] = js.native
+  var size: js.UndefOr[SizeType] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 
 object RadioGroupProps {
   @scala.inline
-  def apply(
-    buttonStyle: RadioGroupButtonStyle = null,
-    children: ReactNode = null,
-    className: String = null,
-    defaultValue: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    name: String = null,
-    onChange: /* e */ RadioChangeEvent => Unit = null,
-    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    optionType: RadioGroupOptionType = null,
-    options: js.Array[CheckboxOptionType | String] = null,
-    prefixCls: String = null,
-    size: SizeType = null,
-    style: CSSProperties = null,
-    value: js.Any = null
-  ): RadioGroupProps = {
+  def apply(): RadioGroupProps = {
     val __obj = js.Dynamic.literal()
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (optionType != null) __obj.updateDynamic("optionType")(optionType.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioGroupProps]
   }
+  @scala.inline
+  implicit class RadioGroupPropsOps[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButtonStyle(value: RadioGroupButtonStyle): Self = this.set("buttonStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtonStyle: Self = this.set("buttonStyle", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: js.Any): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* e */ RadioChangeEvent => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOptionType(value: RadioGroupOptionType): Self = this.set("optionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionType: Self = this.set("optionType", js.undefined)
+    @scala.inline
+    def setSize(value: SizeType): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setValue(value: js.Any): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

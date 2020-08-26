@@ -17,375 +17,628 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DOMAttributes[T] extends js.Object {
-  var exportparts: js.UndefOr[String] = js.undefined
-  var key: js.UndefOr[String | Double] = js.undefined
-  var onAnimationEnd: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
-  var onAnimationEndCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
-  var onAnimationIteration: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
-  var onAnimationIterationCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
-  var onAnimationStart: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
-  var onAnimationStartCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.undefined
-  var onAuxClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onBlurCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onChangeCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onCompositionEnd: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
-  var onCompositionEndCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
-  var onCompositionStart: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
-  var onCompositionStartCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
-  var onCompositionUpdate: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
-  var onCompositionUpdateCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.undefined
-  var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onContextMenuCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onCopy: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
-  var onCopyCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
-  var onCut: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
-  var onCutCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
-  var onDblClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onDblClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragEndCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragEnter: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragEnterCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragExit: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragExitCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragLeave: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragLeaveCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragOverCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDragStartCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDrop: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onDropCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onFocusIn: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onFocusInCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onFocusOut: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onFocusOutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.undefined
-  var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onGotPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onInputCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onInvalid: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onInvalidCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onKeyDownCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onKeyPressCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onKeyUpCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.undefined
-  var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onLoadCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onLostPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onLostPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseDownCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseMoveCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseOut: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseOutCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseOverCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onMouseUpCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
-  var onPaste: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
-  var onPasteCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.undefined
-  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerOutCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerOver: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerOverCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
-  var onReset: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onResetCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.undefined
-  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.undefined
-  var onSubmit: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onSubmitCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
-  var onTouchCancel: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchCancelCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchMoveCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTouchStartCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.undefined
-  var onTransitionEnd: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.undefined
-  var onTransitionEndCapture: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.undefined
-  var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
-  var onWheelCapture: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.undefined
-  var part: js.UndefOr[String] = js.undefined
-  var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], Unit]] = js.undefined
-  var slot: js.UndefOr[String] = js.undefined
+  var exportparts: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String | Double] = js.native
+  var onAnimationEnd: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationEndCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationIteration: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationIterationCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationStart: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAnimationStartCapture: js.UndefOr[js.Function1[/* event */ AnimationEvent, Unit]] = js.native
+  var onAuxClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onBlurCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onChangeCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onCompositionEnd: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionEndCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionStart: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionStartCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionUpdate: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onCompositionUpdateCapture: js.UndefOr[js.Function1[/* event */ CompositionEvent, Unit]] = js.native
+  var onContextMenu: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onContextMenuCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onCopy: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCopyCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCut: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onCutCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onDblClick: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onDblClickCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEndCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnter: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragEnterCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragExit: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragExitCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragLeave: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragLeaveCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragOver: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragOverCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDragStartCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDrop: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onDropCapture: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onErrorCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusIn: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusInCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusOut: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onFocusOutCapture: js.UndefOr[js.Function1[/* event */ FocusEvent, Unit]] = js.native
+  var onGotPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onGotPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onInput: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInputCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInvalid: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onInvalidCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyDownCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyPressCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onKeyUpCapture: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLoadCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onLostPointerCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onLostPointerCaptureCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseDownCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseMoveCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOut: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOutCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOver: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseOverCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseUpCapture: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onPaste: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onPasteCapture: js.UndefOr[js.Function1[/* event */ ClipboardEvent, Unit]] = js.native
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOutCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOver: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerOverCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.native
+  var onReset: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onResetCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.native
+  var onScrollCapture: js.UndefOr[js.Function1[/* event */ UIEvent, Unit]] = js.native
+  var onSubmit: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSubmitCapture: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onTouchCancel: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchCancelCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchMoveCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTouchStartCapture: js.UndefOr[js.Function1[/* event */ TouchEvent, Unit]] = js.native
+  var onTransitionEnd: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.native
+  var onTransitionEndCapture: js.UndefOr[js.Function1[/* event */ TransitionEvent, Unit]] = js.native
+  var onWheel: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.native
+  var onWheelCapture: js.UndefOr[js.Function1[/* event */ WheelEvent, Unit]] = js.native
+  var part: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[js.Function1[/* elm */ js.UndefOr[T], Unit]] = js.native
+  var slot: js.UndefOr[String] = js.native
 }
 
 object DOMAttributes {
   @scala.inline
-  def apply[T](
-    exportparts: String = null,
-    key: String | Double = null,
-    onAnimationEnd: /* event */ AnimationEvent => Unit = null,
-    onAnimationEndCapture: /* event */ AnimationEvent => Unit = null,
-    onAnimationIteration: /* event */ AnimationEvent => Unit = null,
-    onAnimationIterationCapture: /* event */ AnimationEvent => Unit = null,
-    onAnimationStart: /* event */ AnimationEvent => Unit = null,
-    onAnimationStartCapture: /* event */ AnimationEvent => Unit = null,
-    onAuxClick: /* event */ MouseEvent => Unit = null,
-    onBlur: /* event */ FocusEvent => Unit = null,
-    onBlurCapture: /* event */ FocusEvent => Unit = null,
-    onChange: /* event */ Event => Unit = null,
-    onChangeCapture: /* event */ Event => Unit = null,
-    onClick: /* event */ MouseEvent => Unit = null,
-    onClickCapture: /* event */ MouseEvent => Unit = null,
-    onCompositionEnd: /* event */ CompositionEvent => Unit = null,
-    onCompositionEndCapture: /* event */ CompositionEvent => Unit = null,
-    onCompositionStart: /* event */ CompositionEvent => Unit = null,
-    onCompositionStartCapture: /* event */ CompositionEvent => Unit = null,
-    onCompositionUpdate: /* event */ CompositionEvent => Unit = null,
-    onCompositionUpdateCapture: /* event */ CompositionEvent => Unit = null,
-    onContextMenu: /* event */ MouseEvent => Unit = null,
-    onContextMenuCapture: /* event */ MouseEvent => Unit = null,
-    onCopy: /* event */ ClipboardEvent => Unit = null,
-    onCopyCapture: /* event */ ClipboardEvent => Unit = null,
-    onCut: /* event */ ClipboardEvent => Unit = null,
-    onCutCapture: /* event */ ClipboardEvent => Unit = null,
-    onDblClick: /* event */ MouseEvent => Unit = null,
-    onDblClickCapture: /* event */ MouseEvent => Unit = null,
-    onDrag: /* event */ DragEvent => Unit = null,
-    onDragCapture: /* event */ DragEvent => Unit = null,
-    onDragEnd: /* event */ DragEvent => Unit = null,
-    onDragEndCapture: /* event */ DragEvent => Unit = null,
-    onDragEnter: /* event */ DragEvent => Unit = null,
-    onDragEnterCapture: /* event */ DragEvent => Unit = null,
-    onDragExit: /* event */ DragEvent => Unit = null,
-    onDragExitCapture: /* event */ DragEvent => Unit = null,
-    onDragLeave: /* event */ DragEvent => Unit = null,
-    onDragLeaveCapture: /* event */ DragEvent => Unit = null,
-    onDragOver: /* event */ DragEvent => Unit = null,
-    onDragOverCapture: /* event */ DragEvent => Unit = null,
-    onDragStart: /* event */ DragEvent => Unit = null,
-    onDragStartCapture: /* event */ DragEvent => Unit = null,
-    onDrop: /* event */ DragEvent => Unit = null,
-    onDropCapture: /* event */ DragEvent => Unit = null,
-    onError: /* event */ Event => Unit = null,
-    onErrorCapture: /* event */ Event => Unit = null,
-    onFocus: /* event */ FocusEvent => Unit = null,
-    onFocusCapture: /* event */ FocusEvent => Unit = null,
-    onFocusIn: /* event */ FocusEvent => Unit = null,
-    onFocusInCapture: /* event */ FocusEvent => Unit = null,
-    onFocusOut: /* event */ FocusEvent => Unit = null,
-    onFocusOutCapture: /* event */ FocusEvent => Unit = null,
-    onGotPointerCapture: /* event */ PointerEvent => Unit = null,
-    onGotPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
-    onInput: /* event */ Event => Unit = null,
-    onInputCapture: /* event */ Event => Unit = null,
-    onInvalid: /* event */ Event => Unit = null,
-    onInvalidCapture: /* event */ Event => Unit = null,
-    onKeyDown: /* event */ KeyboardEvent => Unit = null,
-    onKeyDownCapture: /* event */ KeyboardEvent => Unit = null,
-    onKeyPress: /* event */ KeyboardEvent => Unit = null,
-    onKeyPressCapture: /* event */ KeyboardEvent => Unit = null,
-    onKeyUp: /* event */ KeyboardEvent => Unit = null,
-    onKeyUpCapture: /* event */ KeyboardEvent => Unit = null,
-    onLoad: /* event */ Event => Unit = null,
-    onLoadCapture: /* event */ Event => Unit = null,
-    onLostPointerCapture: /* event */ PointerEvent => Unit = null,
-    onLostPointerCaptureCapture: /* event */ PointerEvent => Unit = null,
-    onMouseDown: /* event */ MouseEvent => Unit = null,
-    onMouseDownCapture: /* event */ MouseEvent => Unit = null,
-    onMouseEnter: /* event */ MouseEvent => Unit = null,
-    onMouseLeave: /* event */ MouseEvent => Unit = null,
-    onMouseMove: /* event */ MouseEvent => Unit = null,
-    onMouseMoveCapture: /* event */ MouseEvent => Unit = null,
-    onMouseOut: /* event */ MouseEvent => Unit = null,
-    onMouseOutCapture: /* event */ MouseEvent => Unit = null,
-    onMouseOver: /* event */ MouseEvent => Unit = null,
-    onMouseOverCapture: /* event */ MouseEvent => Unit = null,
-    onMouseUp: /* event */ MouseEvent => Unit = null,
-    onMouseUpCapture: /* event */ MouseEvent => Unit = null,
-    onPaste: /* event */ ClipboardEvent => Unit = null,
-    onPasteCapture: /* event */ ClipboardEvent => Unit = null,
-    onPointerCancel: /* event */ PointerEvent => Unit = null,
-    onPointerCancelCapture: /* event */ PointerEvent => Unit = null,
-    onPointerDown: /* event */ PointerEvent => Unit = null,
-    onPointerDownCapture: /* event */ PointerEvent => Unit = null,
-    onPointerEnter: /* event */ PointerEvent => Unit = null,
-    onPointerEnterCapture: /* event */ PointerEvent => Unit = null,
-    onPointerLeave: /* event */ PointerEvent => Unit = null,
-    onPointerLeaveCapture: /* event */ PointerEvent => Unit = null,
-    onPointerMove: /* event */ PointerEvent => Unit = null,
-    onPointerMoveCapture: /* event */ PointerEvent => Unit = null,
-    onPointerOut: /* event */ PointerEvent => Unit = null,
-    onPointerOutCapture: /* event */ PointerEvent => Unit = null,
-    onPointerOver: /* event */ PointerEvent => Unit = null,
-    onPointerOverCapture: /* event */ PointerEvent => Unit = null,
-    onPointerUp: /* event */ PointerEvent => Unit = null,
-    onPointerUpCapture: /* event */ PointerEvent => Unit = null,
-    onReset: /* event */ Event => Unit = null,
-    onResetCapture: /* event */ Event => Unit = null,
-    onScroll: /* event */ UIEvent => Unit = null,
-    onScrollCapture: /* event */ UIEvent => Unit = null,
-    onSubmit: /* event */ Event => Unit = null,
-    onSubmitCapture: /* event */ Event => Unit = null,
-    onTouchCancel: /* event */ TouchEvent => Unit = null,
-    onTouchCancelCapture: /* event */ TouchEvent => Unit = null,
-    onTouchEnd: /* event */ TouchEvent => Unit = null,
-    onTouchEndCapture: /* event */ TouchEvent => Unit = null,
-    onTouchMove: /* event */ TouchEvent => Unit = null,
-    onTouchMoveCapture: /* event */ TouchEvent => Unit = null,
-    onTouchStart: /* event */ TouchEvent => Unit = null,
-    onTouchStartCapture: /* event */ TouchEvent => Unit = null,
-    onTransitionEnd: /* event */ TransitionEvent => Unit = null,
-    onTransitionEndCapture: /* event */ TransitionEvent => Unit = null,
-    onWheel: /* event */ WheelEvent => Unit = null,
-    onWheelCapture: /* event */ WheelEvent => Unit = null,
-    part: String = null,
-    ref: /* elm */ js.UndefOr[T] => Unit = null,
-    slot: String = null
-  ): DOMAttributes[T] = {
+  def apply[T](): DOMAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (exportparts != null) __obj.updateDynamic("exportparts")(exportparts.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1(onAnimationEnd))
-    if (onAnimationEndCapture != null) __obj.updateDynamic("onAnimationEndCapture")(js.Any.fromFunction1(onAnimationEndCapture))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1(onAnimationIteration))
-    if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(js.Any.fromFunction1(onAnimationIterationCapture))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1(onAnimationStart))
-    if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(js.Any.fromFunction1(onAnimationStartCapture))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1(onAuxClick))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onBlurCapture != null) __obj.updateDynamic("onBlurCapture")(js.Any.fromFunction1(onBlurCapture))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onChangeCapture != null) __obj.updateDynamic("onChangeCapture")(js.Any.fromFunction1(onChangeCapture))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onClickCapture != null) __obj.updateDynamic("onClickCapture")(js.Any.fromFunction1(onClickCapture))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1(onCompositionEnd))
-    if (onCompositionEndCapture != null) __obj.updateDynamic("onCompositionEndCapture")(js.Any.fromFunction1(onCompositionEndCapture))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1(onCompositionStart))
-    if (onCompositionStartCapture != null) __obj.updateDynamic("onCompositionStartCapture")(js.Any.fromFunction1(onCompositionStartCapture))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1(onCompositionUpdate))
-    if (onCompositionUpdateCapture != null) __obj.updateDynamic("onCompositionUpdateCapture")(js.Any.fromFunction1(onCompositionUpdateCapture))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onContextMenuCapture != null) __obj.updateDynamic("onContextMenuCapture")(js.Any.fromFunction1(onContextMenuCapture))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1(onCopy))
-    if (onCopyCapture != null) __obj.updateDynamic("onCopyCapture")(js.Any.fromFunction1(onCopyCapture))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1(onCut))
-    if (onCutCapture != null) __obj.updateDynamic("onCutCapture")(js.Any.fromFunction1(onCutCapture))
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1(onDblClick))
-    if (onDblClickCapture != null) __obj.updateDynamic("onDblClickCapture")(js.Any.fromFunction1(onDblClickCapture))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1(onDrag))
-    if (onDragCapture != null) __obj.updateDynamic("onDragCapture")(js.Any.fromFunction1(onDragCapture))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1(onDragEnd))
-    if (onDragEndCapture != null) __obj.updateDynamic("onDragEndCapture")(js.Any.fromFunction1(onDragEndCapture))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1(onDragEnter))
-    if (onDragEnterCapture != null) __obj.updateDynamic("onDragEnterCapture")(js.Any.fromFunction1(onDragEnterCapture))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1(onDragExit))
-    if (onDragExitCapture != null) __obj.updateDynamic("onDragExitCapture")(js.Any.fromFunction1(onDragExitCapture))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1(onDragLeave))
-    if (onDragLeaveCapture != null) __obj.updateDynamic("onDragLeaveCapture")(js.Any.fromFunction1(onDragLeaveCapture))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1(onDragOver))
-    if (onDragOverCapture != null) __obj.updateDynamic("onDragOverCapture")(js.Any.fromFunction1(onDragOverCapture))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
-    if (onDragStartCapture != null) __obj.updateDynamic("onDragStartCapture")(js.Any.fromFunction1(onDragStartCapture))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
-    if (onDropCapture != null) __obj.updateDynamic("onDropCapture")(js.Any.fromFunction1(onDropCapture))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
-    if (onErrorCapture != null) __obj.updateDynamic("onErrorCapture")(js.Any.fromFunction1(onErrorCapture))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onFocusCapture != null) __obj.updateDynamic("onFocusCapture")(js.Any.fromFunction1(onFocusCapture))
-    if (onFocusIn != null) __obj.updateDynamic("onFocusIn")(js.Any.fromFunction1(onFocusIn))
-    if (onFocusInCapture != null) __obj.updateDynamic("onFocusInCapture")(js.Any.fromFunction1(onFocusInCapture))
-    if (onFocusOut != null) __obj.updateDynamic("onFocusOut")(js.Any.fromFunction1(onFocusOut))
-    if (onFocusOutCapture != null) __obj.updateDynamic("onFocusOutCapture")(js.Any.fromFunction1(onFocusOutCapture))
-    if (onGotPointerCapture != null) __obj.updateDynamic("onGotPointerCapture")(js.Any.fromFunction1(onGotPointerCapture))
-    if (onGotPointerCaptureCapture != null) __obj.updateDynamic("onGotPointerCaptureCapture")(js.Any.fromFunction1(onGotPointerCaptureCapture))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1(onInput))
-    if (onInputCapture != null) __obj.updateDynamic("onInputCapture")(js.Any.fromFunction1(onInputCapture))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1(onInvalid))
-    if (onInvalidCapture != null) __obj.updateDynamic("onInvalidCapture")(js.Any.fromFunction1(onInvalidCapture))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (onKeyDownCapture != null) __obj.updateDynamic("onKeyDownCapture")(js.Any.fromFunction1(onKeyDownCapture))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1(onKeyPress))
-    if (onKeyPressCapture != null) __obj.updateDynamic("onKeyPressCapture")(js.Any.fromFunction1(onKeyPressCapture))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1(onKeyUp))
-    if (onKeyUpCapture != null) __obj.updateDynamic("onKeyUpCapture")(js.Any.fromFunction1(onKeyUpCapture))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1(onLoad))
-    if (onLoadCapture != null) __obj.updateDynamic("onLoadCapture")(js.Any.fromFunction1(onLoadCapture))
-    if (onLostPointerCapture != null) __obj.updateDynamic("onLostPointerCapture")(js.Any.fromFunction1(onLostPointerCapture))
-    if (onLostPointerCaptureCapture != null) __obj.updateDynamic("onLostPointerCaptureCapture")(js.Any.fromFunction1(onLostPointerCaptureCapture))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseDownCapture != null) __obj.updateDynamic("onMouseDownCapture")(js.Any.fromFunction1(onMouseDownCapture))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1(onMouseMove))
-    if (onMouseMoveCapture != null) __obj.updateDynamic("onMouseMoveCapture")(js.Any.fromFunction1(onMouseMoveCapture))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1(onMouseOut))
-    if (onMouseOutCapture != null) __obj.updateDynamic("onMouseOutCapture")(js.Any.fromFunction1(onMouseOutCapture))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1(onMouseOver))
-    if (onMouseOverCapture != null) __obj.updateDynamic("onMouseOverCapture")(js.Any.fromFunction1(onMouseOverCapture))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onMouseUpCapture != null) __obj.updateDynamic("onMouseUpCapture")(js.Any.fromFunction1(onMouseUpCapture))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1(onPaste))
-    if (onPasteCapture != null) __obj.updateDynamic("onPasteCapture")(js.Any.fromFunction1(onPasteCapture))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1(onPointerCancel))
-    if (onPointerCancelCapture != null) __obj.updateDynamic("onPointerCancelCapture")(js.Any.fromFunction1(onPointerCancelCapture))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1(onPointerDown))
-    if (onPointerDownCapture != null) __obj.updateDynamic("onPointerDownCapture")(js.Any.fromFunction1(onPointerDownCapture))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1(onPointerEnter))
-    if (onPointerEnterCapture != null) __obj.updateDynamic("onPointerEnterCapture")(js.Any.fromFunction1(onPointerEnterCapture))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1(onPointerLeave))
-    if (onPointerLeaveCapture != null) __obj.updateDynamic("onPointerLeaveCapture")(js.Any.fromFunction1(onPointerLeaveCapture))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1(onPointerMove))
-    if (onPointerMoveCapture != null) __obj.updateDynamic("onPointerMoveCapture")(js.Any.fromFunction1(onPointerMoveCapture))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1(onPointerOut))
-    if (onPointerOutCapture != null) __obj.updateDynamic("onPointerOutCapture")(js.Any.fromFunction1(onPointerOutCapture))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1(onPointerOver))
-    if (onPointerOverCapture != null) __obj.updateDynamic("onPointerOverCapture")(js.Any.fromFunction1(onPointerOverCapture))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1(onPointerUp))
-    if (onPointerUpCapture != null) __obj.updateDynamic("onPointerUpCapture")(js.Any.fromFunction1(onPointerUpCapture))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1(onReset))
-    if (onResetCapture != null) __obj.updateDynamic("onResetCapture")(js.Any.fromFunction1(onResetCapture))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1(onScroll))
-    if (onScrollCapture != null) __obj.updateDynamic("onScrollCapture")(js.Any.fromFunction1(onScrollCapture))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
-    if (onSubmitCapture != null) __obj.updateDynamic("onSubmitCapture")(js.Any.fromFunction1(onSubmitCapture))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1(onTouchCancel))
-    if (onTouchCancelCapture != null) __obj.updateDynamic("onTouchCancelCapture")(js.Any.fromFunction1(onTouchCancelCapture))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1(onTouchEnd))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1(onTouchEndCapture))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
-    if (onTouchMoveCapture != null) __obj.updateDynamic("onTouchMoveCapture")(js.Any.fromFunction1(onTouchMoveCapture))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
-    if (onTouchStartCapture != null) __obj.updateDynamic("onTouchStartCapture")(js.Any.fromFunction1(onTouchStartCapture))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1(onTransitionEnd))
-    if (onTransitionEndCapture != null) __obj.updateDynamic("onTransitionEndCapture")(js.Any.fromFunction1(onTransitionEndCapture))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1(onWheel))
-    if (onWheelCapture != null) __obj.updateDynamic("onWheelCapture")(js.Any.fromFunction1(onWheelCapture))
-    if (part != null) __obj.updateDynamic("part")(part.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMAttributes[T]]
   }
+  @scala.inline
+  implicit class DOMAttributesOps[Self <: DOMAttributes[_], T] (val x: Self with DOMAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportparts(value: String): Self = this.set("exportparts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportparts: Self = this.set("exportparts", js.undefined)
+    @scala.inline
+    def setKey(value: String | Double): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setOnAnimationEnd(value: /* event */ AnimationEvent => Unit): Self = this.set("onAnimationEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationEnd: Self = this.set("onAnimationEnd", js.undefined)
+    @scala.inline
+    def setOnAnimationEndCapture(value: /* event */ AnimationEvent => Unit): Self = this.set("onAnimationEndCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationEndCapture: Self = this.set("onAnimationEndCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationIteration(value: /* event */ AnimationEvent => Unit): Self = this.set("onAnimationIteration", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationIteration: Self = this.set("onAnimationIteration", js.undefined)
+    @scala.inline
+    def setOnAnimationIterationCapture(value: /* event */ AnimationEvent => Unit): Self = this.set("onAnimationIterationCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationIterationCapture: Self = this.set("onAnimationIterationCapture", js.undefined)
+    @scala.inline
+    def setOnAnimationStart(value: /* event */ AnimationEvent => Unit): Self = this.set("onAnimationStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationStart: Self = this.set("onAnimationStart", js.undefined)
+    @scala.inline
+    def setOnAnimationStartCapture(value: /* event */ AnimationEvent => Unit): Self = this.set("onAnimationStartCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAnimationStartCapture: Self = this.set("onAnimationStartCapture", js.undefined)
+    @scala.inline
+    def setOnAuxClick(value: /* event */ MouseEvent => Unit): Self = this.set("onAuxClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnAuxClick: Self = this.set("onAuxClick", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* event */ FocusEvent => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnBlurCapture(value: /* event */ FocusEvent => Unit): Self = this.set("onBlurCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlurCapture: Self = this.set("onBlurCapture", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* event */ Event => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnChangeCapture(value: /* event */ Event => Unit): Self = this.set("onChangeCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChangeCapture: Self = this.set("onChangeCapture", js.undefined)
+    @scala.inline
+    def setOnClick(value: /* event */ MouseEvent => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnClickCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onClickCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClickCapture: Self = this.set("onClickCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionEnd(value: /* event */ CompositionEvent => Unit): Self = this.set("onCompositionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionEnd: Self = this.set("onCompositionEnd", js.undefined)
+    @scala.inline
+    def setOnCompositionEndCapture(value: /* event */ CompositionEvent => Unit): Self = this.set("onCompositionEndCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionEndCapture: Self = this.set("onCompositionEndCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionStart(value: /* event */ CompositionEvent => Unit): Self = this.set("onCompositionStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionStart: Self = this.set("onCompositionStart", js.undefined)
+    @scala.inline
+    def setOnCompositionStartCapture(value: /* event */ CompositionEvent => Unit): Self = this.set("onCompositionStartCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionStartCapture: Self = this.set("onCompositionStartCapture", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdate(value: /* event */ CompositionEvent => Unit): Self = this.set("onCompositionUpdate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionUpdate: Self = this.set("onCompositionUpdate", js.undefined)
+    @scala.inline
+    def setOnCompositionUpdateCapture(value: /* event */ CompositionEvent => Unit): Self = this.set("onCompositionUpdateCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCompositionUpdateCapture: Self = this.set("onCompositionUpdateCapture", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: /* event */ MouseEvent => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnContextMenuCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onContextMenuCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenuCapture: Self = this.set("onContextMenuCapture", js.undefined)
+    @scala.inline
+    def setOnCopy(value: /* event */ ClipboardEvent => Unit): Self = this.set("onCopy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopy: Self = this.set("onCopy", js.undefined)
+    @scala.inline
+    def setOnCopyCapture(value: /* event */ ClipboardEvent => Unit): Self = this.set("onCopyCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCopyCapture: Self = this.set("onCopyCapture", js.undefined)
+    @scala.inline
+    def setOnCut(value: /* event */ ClipboardEvent => Unit): Self = this.set("onCut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCut: Self = this.set("onCut", js.undefined)
+    @scala.inline
+    def setOnCutCapture(value: /* event */ ClipboardEvent => Unit): Self = this.set("onCutCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnCutCapture: Self = this.set("onCutCapture", js.undefined)
+    @scala.inline
+    def setOnDblClick(value: /* event */ MouseEvent => Unit): Self = this.set("onDblClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDblClick: Self = this.set("onDblClick", js.undefined)
+    @scala.inline
+    def setOnDblClickCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onDblClickCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDblClickCapture: Self = this.set("onDblClickCapture", js.undefined)
+    @scala.inline
+    def setOnDrag(value: /* event */ DragEvent => Unit): Self = this.set("onDrag", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrag: Self = this.set("onDrag", js.undefined)
+    @scala.inline
+    def setOnDragCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragCapture: Self = this.set("onDragCapture", js.undefined)
+    @scala.inline
+    def setOnDragEnd(value: /* event */ DragEvent => Unit): Self = this.set("onDragEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnd: Self = this.set("onDragEnd", js.undefined)
+    @scala.inline
+    def setOnDragEndCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragEndCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEndCapture: Self = this.set("onDragEndCapture", js.undefined)
+    @scala.inline
+    def setOnDragEnter(value: /* event */ DragEvent => Unit): Self = this.set("onDragEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnter: Self = this.set("onDragEnter", js.undefined)
+    @scala.inline
+    def setOnDragEnterCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragEnterCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragEnterCapture: Self = this.set("onDragEnterCapture", js.undefined)
+    @scala.inline
+    def setOnDragExit(value: /* event */ DragEvent => Unit): Self = this.set("onDragExit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragExit: Self = this.set("onDragExit", js.undefined)
+    @scala.inline
+    def setOnDragExitCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragExitCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragExitCapture: Self = this.set("onDragExitCapture", js.undefined)
+    @scala.inline
+    def setOnDragLeave(value: /* event */ DragEvent => Unit): Self = this.set("onDragLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragLeave: Self = this.set("onDragLeave", js.undefined)
+    @scala.inline
+    def setOnDragLeaveCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragLeaveCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragLeaveCapture: Self = this.set("onDragLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnDragOver(value: /* event */ DragEvent => Unit): Self = this.set("onDragOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragOver: Self = this.set("onDragOver", js.undefined)
+    @scala.inline
+    def setOnDragOverCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragOverCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragOverCapture: Self = this.set("onDragOverCapture", js.undefined)
+    @scala.inline
+    def setOnDragStart(value: /* event */ DragEvent => Unit): Self = this.set("onDragStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStart: Self = this.set("onDragStart", js.undefined)
+    @scala.inline
+    def setOnDragStartCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDragStartCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDragStartCapture: Self = this.set("onDragStartCapture", js.undefined)
+    @scala.inline
+    def setOnDrop(value: /* event */ DragEvent => Unit): Self = this.set("onDrop", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDrop: Self = this.set("onDrop", js.undefined)
+    @scala.inline
+    def setOnDropCapture(value: /* event */ DragEvent => Unit): Self = this.set("onDropCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnDropCapture: Self = this.set("onDropCapture", js.undefined)
+    @scala.inline
+    def setOnError(value: /* event */ Event => Unit): Self = this.set("onError", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnError: Self = this.set("onError", js.undefined)
+    @scala.inline
+    def setOnErrorCapture(value: /* event */ Event => Unit): Self = this.set("onErrorCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnErrorCapture: Self = this.set("onErrorCapture", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* event */ FocusEvent => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnFocusCapture(value: /* event */ FocusEvent => Unit): Self = this.set("onFocusCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusCapture: Self = this.set("onFocusCapture", js.undefined)
+    @scala.inline
+    def setOnFocusIn(value: /* event */ FocusEvent => Unit): Self = this.set("onFocusIn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusIn: Self = this.set("onFocusIn", js.undefined)
+    @scala.inline
+    def setOnFocusInCapture(value: /* event */ FocusEvent => Unit): Self = this.set("onFocusInCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusInCapture: Self = this.set("onFocusInCapture", js.undefined)
+    @scala.inline
+    def setOnFocusOut(value: /* event */ FocusEvent => Unit): Self = this.set("onFocusOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusOut: Self = this.set("onFocusOut", js.undefined)
+    @scala.inline
+    def setOnFocusOutCapture(value: /* event */ FocusEvent => Unit): Self = this.set("onFocusOutCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocusOutCapture: Self = this.set("onFocusOutCapture", js.undefined)
+    @scala.inline
+    def setOnGotPointerCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onGotPointerCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnGotPointerCapture: Self = this.set("onGotPointerCapture", js.undefined)
+    @scala.inline
+    def setOnGotPointerCaptureCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onGotPointerCaptureCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnGotPointerCaptureCapture: Self = this.set("onGotPointerCaptureCapture", js.undefined)
+    @scala.inline
+    def setOnInput(value: /* event */ Event => Unit): Self = this.set("onInput", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInput: Self = this.set("onInput", js.undefined)
+    @scala.inline
+    def setOnInputCapture(value: /* event */ Event => Unit): Self = this.set("onInputCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInputCapture: Self = this.set("onInputCapture", js.undefined)
+    @scala.inline
+    def setOnInvalid(value: /* event */ Event => Unit): Self = this.set("onInvalid", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvalid: Self = this.set("onInvalid", js.undefined)
+    @scala.inline
+    def setOnInvalidCapture(value: /* event */ Event => Unit): Self = this.set("onInvalidCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnInvalidCapture: Self = this.set("onInvalidCapture", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setOnKeyDownCapture(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyDownCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDownCapture: Self = this.set("onKeyDownCapture", js.undefined)
+    @scala.inline
+    def setOnKeyPress(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPress: Self = this.set("onKeyPress", js.undefined)
+    @scala.inline
+    def setOnKeyPressCapture(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyPressCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyPressCapture: Self = this.set("onKeyPressCapture", js.undefined)
+    @scala.inline
+    def setOnKeyUp(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUp: Self = this.set("onKeyUp", js.undefined)
+    @scala.inline
+    def setOnKeyUpCapture(value: /* event */ KeyboardEvent => Unit): Self = this.set("onKeyUpCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyUpCapture: Self = this.set("onKeyUpCapture", js.undefined)
+    @scala.inline
+    def setOnLoad(value: /* event */ Event => Unit): Self = this.set("onLoad", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoad: Self = this.set("onLoad", js.undefined)
+    @scala.inline
+    def setOnLoadCapture(value: /* event */ Event => Unit): Self = this.set("onLoadCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLoadCapture: Self = this.set("onLoadCapture", js.undefined)
+    @scala.inline
+    def setOnLostPointerCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onLostPointerCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLostPointerCapture: Self = this.set("onLostPointerCapture", js.undefined)
+    @scala.inline
+    def setOnLostPointerCaptureCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onLostPointerCaptureCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLostPointerCaptureCapture: Self = this.set("onLostPointerCaptureCapture", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseDownCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseDownCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDownCapture: Self = this.set("onMouseDownCapture", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseMove(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMove: Self = this.set("onMouseMove", js.undefined)
+    @scala.inline
+    def setOnMouseMoveCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseMoveCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseMoveCapture: Self = this.set("onMouseMoveCapture", js.undefined)
+    @scala.inline
+    def setOnMouseOut(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOut: Self = this.set("onMouseOut", js.undefined)
+    @scala.inline
+    def setOnMouseOutCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseOutCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOutCapture: Self = this.set("onMouseOutCapture", js.undefined)
+    @scala.inline
+    def setOnMouseOver(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOver: Self = this.set("onMouseOver", js.undefined)
+    @scala.inline
+    def setOnMouseOverCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseOverCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseOverCapture: Self = this.set("onMouseOverCapture", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnMouseUpCapture(value: /* event */ MouseEvent => Unit): Self = this.set("onMouseUpCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUpCapture: Self = this.set("onMouseUpCapture", js.undefined)
+    @scala.inline
+    def setOnPaste(value: /* event */ ClipboardEvent => Unit): Self = this.set("onPaste", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPaste: Self = this.set("onPaste", js.undefined)
+    @scala.inline
+    def setOnPasteCapture(value: /* event */ ClipboardEvent => Unit): Self = this.set("onPasteCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPasteCapture: Self = this.set("onPasteCapture", js.undefined)
+    @scala.inline
+    def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerCancel: Self = this.set("onPointerCancel", js.undefined)
+    @scala.inline
+    def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerCancelCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerCancelCapture: Self = this.set("onPointerCancelCapture", js.undefined)
+    @scala.inline
+    def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerDown: Self = this.set("onPointerDown", js.undefined)
+    @scala.inline
+    def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerDownCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerDownCapture: Self = this.set("onPointerDownCapture", js.undefined)
+    @scala.inline
+    def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerEnter: Self = this.set("onPointerEnter", js.undefined)
+    @scala.inline
+    def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerEnterCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerEnterCapture: Self = this.set("onPointerEnterCapture", js.undefined)
+    @scala.inline
+    def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerLeave: Self = this.set("onPointerLeave", js.undefined)
+    @scala.inline
+    def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerLeaveCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerLeaveCapture: Self = this.set("onPointerLeaveCapture", js.undefined)
+    @scala.inline
+    def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerMove: Self = this.set("onPointerMove", js.undefined)
+    @scala.inline
+    def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerMoveCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerMoveCapture: Self = this.set("onPointerMoveCapture", js.undefined)
+    @scala.inline
+    def setOnPointerOut(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerOut", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOut: Self = this.set("onPointerOut", js.undefined)
+    @scala.inline
+    def setOnPointerOutCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerOutCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOutCapture: Self = this.set("onPointerOutCapture", js.undefined)
+    @scala.inline
+    def setOnPointerOver(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerOver", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOver: Self = this.set("onPointerOver", js.undefined)
+    @scala.inline
+    def setOnPointerOverCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerOverCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerOverCapture: Self = this.set("onPointerOverCapture", js.undefined)
+    @scala.inline
+    def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerUp: Self = this.set("onPointerUp", js.undefined)
+    @scala.inline
+    def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = this.set("onPointerUpCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPointerUpCapture: Self = this.set("onPointerUpCapture", js.undefined)
+    @scala.inline
+    def setOnReset(value: /* event */ Event => Unit): Self = this.set("onReset", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnReset: Self = this.set("onReset", js.undefined)
+    @scala.inline
+    def setOnResetCapture(value: /* event */ Event => Unit): Self = this.set("onResetCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnResetCapture: Self = this.set("onResetCapture", js.undefined)
+    @scala.inline
+    def setOnScroll(value: /* event */ UIEvent => Unit): Self = this.set("onScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScroll: Self = this.set("onScroll", js.undefined)
+    @scala.inline
+    def setOnScrollCapture(value: /* event */ UIEvent => Unit): Self = this.set("onScrollCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnScrollCapture: Self = this.set("onScrollCapture", js.undefined)
+    @scala.inline
+    def setOnSubmit(value: /* event */ Event => Unit): Self = this.set("onSubmit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmit: Self = this.set("onSubmit", js.undefined)
+    @scala.inline
+    def setOnSubmitCapture(value: /* event */ Event => Unit): Self = this.set("onSubmitCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSubmitCapture: Self = this.set("onSubmitCapture", js.undefined)
+    @scala.inline
+    def setOnTouchCancel(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchCancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancel: Self = this.set("onTouchCancel", js.undefined)
+    @scala.inline
+    def setOnTouchCancelCapture(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchCancelCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchCancelCapture: Self = this.set("onTouchCancelCapture", js.undefined)
+    @scala.inline
+    def setOnTouchEnd(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEnd: Self = this.set("onTouchEnd", js.undefined)
+    @scala.inline
+    def setOnTouchEndCapture(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchEndCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchEndCapture: Self = this.set("onTouchEndCapture", js.undefined)
+    @scala.inline
+    def setOnTouchMove(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchMove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMove: Self = this.set("onTouchMove", js.undefined)
+    @scala.inline
+    def setOnTouchMoveCapture(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchMoveCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchMoveCapture: Self = this.set("onTouchMoveCapture", js.undefined)
+    @scala.inline
+    def setOnTouchStart(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStart: Self = this.set("onTouchStart", js.undefined)
+    @scala.inline
+    def setOnTouchStartCapture(value: /* event */ TouchEvent => Unit): Self = this.set("onTouchStartCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTouchStartCapture: Self = this.set("onTouchStartCapture", js.undefined)
+    @scala.inline
+    def setOnTransitionEnd(value: /* event */ TransitionEvent => Unit): Self = this.set("onTransitionEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEnd: Self = this.set("onTransitionEnd", js.undefined)
+    @scala.inline
+    def setOnTransitionEndCapture(value: /* event */ TransitionEvent => Unit): Self = this.set("onTransitionEndCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTransitionEndCapture: Self = this.set("onTransitionEndCapture", js.undefined)
+    @scala.inline
+    def setOnWheel(value: /* event */ WheelEvent => Unit): Self = this.set("onWheel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheel: Self = this.set("onWheel", js.undefined)
+    @scala.inline
+    def setOnWheelCapture(value: /* event */ WheelEvent => Unit): Self = this.set("onWheelCapture", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnWheelCapture: Self = this.set("onWheelCapture", js.undefined)
+    @scala.inline
+    def setPart(value: String): Self = this.set("part", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePart: Self = this.set("part", js.undefined)
+    @scala.inline
+    def setRef(value: /* elm */ js.UndefOr[T] => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setSlot(value: String): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlot: Self = this.set("slot", js.undefined)
+  }
+  
 }
 

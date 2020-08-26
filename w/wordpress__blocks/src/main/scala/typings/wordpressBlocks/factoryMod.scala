@@ -17,6 +17,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object factoryMod extends js.Object {
   def cloneBlock[T /* <: Record[String, _] */](block: BlockInstance[T]): BlockInstance[T] = js.native
+  def cloneBlock[T /* <: Record[String, _] */](
+    block: BlockInstance[T],
+    mergeAttributes: js.UndefOr[scala.Nothing],
+    newInnerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
+  ): BlockInstance[T] = js.native
   def cloneBlock[T /* <: Record[String, _] */](block: BlockInstance[T], mergeAttributes: Partial[T]): BlockInstance[T] = js.native
   def cloneBlock[T /* <: Record[String, _] */](
     block: BlockInstance[T],
@@ -24,6 +29,11 @@ object factoryMod extends js.Object {
     newInnerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
   ): BlockInstance[T] = js.native
   def createBlock[T /* <: Record[String, _] */](name: String): BlockInstance[T] = js.native
+  def createBlock[T /* <: Record[String, _] */](
+    name: String,
+    attributes: js.UndefOr[scala.Nothing],
+    innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]
+  ): BlockInstance[T] = js.native
   def createBlock[T /* <: Record[String, _] */](name: String, attributes: Partial[T]): BlockInstance[T] = js.native
   def createBlock[T /* <: Record[String, _] */](name: String, attributes: Partial[T], innerBlocks: js.Array[BlockInstance[StringDictionary[_]]]): BlockInstance[T] = js.native
   def findTransform[T /* <: Transform[Record[String, _]] */, U /* <: Record[String, _] */](transforms: js.Array[T], predicate: js.Function1[/* transform */ T, Boolean]): Transform[U] | Null = js.native

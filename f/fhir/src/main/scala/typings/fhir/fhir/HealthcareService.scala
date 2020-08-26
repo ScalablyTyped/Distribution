@@ -8,233 +8,312 @@ import scala.scalajs.js.annotation._
   * The details of a healthcare service available at a location
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait HealthcareService extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait HealthcareService extends DomainResource {
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.undefined
+  var _active: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'appointmentRequired'.
     */
-  var _appointmentRequired: js.UndefOr[Element] = js.undefined
+  var _appointmentRequired: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'availabilityExceptions'.
     */
-  var _availabilityExceptions: js.UndefOr[Element] = js.undefined
+  var _availabilityExceptions: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.undefined
+  var _comment: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'eligibilityNote'.
     */
-  var _eligibilityNote: js.UndefOr[Element] = js.undefined
+  var _eligibilityNote: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'extraDetails'.
     */
-  var _extraDetails: js.UndefOr[Element] = js.undefined
+  var _extraDetails: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.undefined
+  var _name: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'programName'.
     */
-  var _programName: js.UndefOr[js.Array[Element]] = js.undefined
+  var _programName: js.UndefOr[js.Array[Element]] = js.native
   /**
     * Whether this healthcareservice is in active use
     */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /**
     * If an appointment is required for access to this service
     */
-  var appointmentRequired: js.UndefOr[Boolean] = js.undefined
+  var appointmentRequired: js.UndefOr[Boolean] = js.native
   /**
     * Description of availability exceptions
     */
-  var availabilityExceptions: js.UndefOr[String] = js.undefined
+  var availabilityExceptions: js.UndefOr[String] = js.native
   /**
     * Times the Service Site is available
     */
-  var availableTime: js.UndefOr[js.Array[HealthcareServiceAvailableTime]] = js.undefined
+  var availableTime: js.UndefOr[js.Array[HealthcareServiceAvailableTime]] = js.native
   /**
     * Broad category of service being performed or delivered
     */
-  var category: js.UndefOr[CodeableConcept] = js.undefined
+  var category: js.UndefOr[CodeableConcept] = js.native
   /**
     * Collection of characteristics (attributes)
     */
-  var characteristic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var characteristic: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Additional description and/or any specific issues not covered elsewhere
     */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String] = js.native
   /**
     * Location(s) service is inteded for/available to
     */
-  var coverageArea: js.UndefOr[js.Array[Reference]] = js.undefined
+  var coverageArea: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Specific eligibility requirements required to use the service
     */
-  var eligibility: js.UndefOr[CodeableConcept] = js.undefined
+  var eligibility: js.UndefOr[CodeableConcept] = js.native
   /**
     * Describes the eligibility conditions for the service
     */
-  var eligibilityNote: js.UndefOr[String] = js.undefined
+  var eligibilityNote: js.UndefOr[String] = js.native
   /**
     * Technical endpoints providing access to services operated for the location
     */
-  var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
+  var endpoint: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Extra details about the service that can't be placed in the other fields
     */
-  var extraDetails: js.UndefOr[String] = js.undefined
+  var extraDetails: js.UndefOr[String] = js.native
   /**
     * External identifiers for this item
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Location(s) where service may be provided
     */
-  var location: js.UndefOr[js.Array[Reference]] = js.undefined
+  var location: js.UndefOr[js.Array[Reference]] = js.native
   /**
     * Description of service as presented to a consumer while searching
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Not available during this time due to provided reason
     */
-  var notAvailable: js.UndefOr[js.Array[HealthcareServiceNotAvailable]] = js.undefined
+  var notAvailable: js.UndefOr[js.Array[HealthcareServiceNotAvailable]] = js.native
   /**
     * Facilitates quick identification of the service
     */
-  var photo: js.UndefOr[Attachment] = js.undefined
+  var photo: js.UndefOr[Attachment] = js.native
   /**
     * Program Names that categorize the service
     */
-  var programName: js.UndefOr[js.Array[String]] = js.undefined
+  var programName: js.UndefOr[js.Array[String]] = js.native
   /**
     * Organization that provides this service
     */
-  var providedBy: js.UndefOr[Reference] = js.undefined
+  var providedBy: js.UndefOr[Reference] = js.native
   /**
     * Ways that the service accepts referrals
     */
-  var referralMethod: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var referralMethod: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Conditions under which service is available/offered
     */
-  var serviceProvisionCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var serviceProvisionCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Specialties handled by the HealthcareService
     */
-  var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * Contacts related to the healthcare service
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
   /**
     * Type of service that may be delivered or performed
     */
-  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.native
 }
 
 object HealthcareService {
   @scala.inline
-  def apply(
-    _active: Element = null,
-    _appointmentRequired: Element = null,
-    _availabilityExceptions: Element = null,
-    _comment: Element = null,
-    _eligibilityNote: Element = null,
-    _extraDetails: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _name: Element = null,
-    _programName: js.Array[Element] = null,
-    _resourceType: Element = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    appointmentRequired: js.UndefOr[Boolean] = js.undefined,
-    availabilityExceptions: String = null,
-    availableTime: js.Array[HealthcareServiceAvailableTime] = null,
-    category: CodeableConcept = null,
-    characteristic: js.Array[CodeableConcept] = null,
-    comment: String = null,
-    contained: js.Array[Resource] = null,
-    coverageArea: js.Array[Reference] = null,
-    eligibility: CodeableConcept = null,
-    eligibilityNote: String = null,
-    endpoint: js.Array[Reference] = null,
-    extension: js.Array[Extension] = null,
-    extraDetails: String = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    language: code = null,
-    location: js.Array[Reference] = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    name: String = null,
-    notAvailable: js.Array[HealthcareServiceNotAvailable] = null,
-    photo: Attachment = null,
-    programName: js.Array[String] = null,
-    providedBy: Reference = null,
-    referralMethod: js.Array[CodeableConcept] = null,
-    resourceType: code = null,
-    serviceProvisionCode: js.Array[CodeableConcept] = null,
-    specialty: js.Array[CodeableConcept] = null,
-    telecom: js.Array[ContactPoint] = null,
-    text: Narrative = null,
-    `type`: js.Array[CodeableConcept] = null
-  ): HealthcareService = {
+  def apply(): HealthcareService = {
     val __obj = js.Dynamic.literal()
-    if (_active != null) __obj.updateDynamic("_active")(_active.asInstanceOf[js.Any])
-    if (_appointmentRequired != null) __obj.updateDynamic("_appointmentRequired")(_appointmentRequired.asInstanceOf[js.Any])
-    if (_availabilityExceptions != null) __obj.updateDynamic("_availabilityExceptions")(_availabilityExceptions.asInstanceOf[js.Any])
-    if (_comment != null) __obj.updateDynamic("_comment")(_comment.asInstanceOf[js.Any])
-    if (_eligibilityNote != null) __obj.updateDynamic("_eligibilityNote")(_eligibilityNote.asInstanceOf[js.Any])
-    if (_extraDetails != null) __obj.updateDynamic("_extraDetails")(_extraDetails.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_name != null) __obj.updateDynamic("_name")(_name.asInstanceOf[js.Any])
-    if (_programName != null) __obj.updateDynamic("_programName")(_programName.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(appointmentRequired)) __obj.updateDynamic("appointmentRequired")(appointmentRequired.get.asInstanceOf[js.Any])
-    if (availabilityExceptions != null) __obj.updateDynamic("availabilityExceptions")(availabilityExceptions.asInstanceOf[js.Any])
-    if (availableTime != null) __obj.updateDynamic("availableTime")(availableTime.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (characteristic != null) __obj.updateDynamic("characteristic")(characteristic.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (coverageArea != null) __obj.updateDynamic("coverageArea")(coverageArea.asInstanceOf[js.Any])
-    if (eligibility != null) __obj.updateDynamic("eligibility")(eligibility.asInstanceOf[js.Any])
-    if (eligibilityNote != null) __obj.updateDynamic("eligibilityNote")(eligibilityNote.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (extraDetails != null) __obj.updateDynamic("extraDetails")(extraDetails.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notAvailable != null) __obj.updateDynamic("notAvailable")(notAvailable.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (programName != null) __obj.updateDynamic("programName")(programName.asInstanceOf[js.Any])
-    if (providedBy != null) __obj.updateDynamic("providedBy")(providedBy.asInstanceOf[js.Any])
-    if (referralMethod != null) __obj.updateDynamic("referralMethod")(referralMethod.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (serviceProvisionCode != null) __obj.updateDynamic("serviceProvisionCode")(serviceProvisionCode.asInstanceOf[js.Any])
-    if (specialty != null) __obj.updateDynamic("specialty")(specialty.asInstanceOf[js.Any])
-    if (telecom != null) __obj.updateDynamic("telecom")(telecom.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HealthcareService]
   }
+  @scala.inline
+  implicit class HealthcareServiceOps[Self <: HealthcareService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_active(value: Element): Self = this.set("_active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_active: Self = this.set("_active", js.undefined)
+    @scala.inline
+    def set_appointmentRequired(value: Element): Self = this.set("_appointmentRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_appointmentRequired: Self = this.set("_appointmentRequired", js.undefined)
+    @scala.inline
+    def set_availabilityExceptions(value: Element): Self = this.set("_availabilityExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_availabilityExceptions: Self = this.set("_availabilityExceptions", js.undefined)
+    @scala.inline
+    def set_comment(value: Element): Self = this.set("_comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_comment: Self = this.set("_comment", js.undefined)
+    @scala.inline
+    def set_eligibilityNote(value: Element): Self = this.set("_eligibilityNote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_eligibilityNote: Self = this.set("_eligibilityNote", js.undefined)
+    @scala.inline
+    def set_extraDetails(value: Element): Self = this.set("_extraDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_extraDetails: Self = this.set("_extraDetails", js.undefined)
+    @scala.inline
+    def set_name(value: Element): Self = this.set("_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_name: Self = this.set("_name", js.undefined)
+    @scala.inline
+    def set_programNameVarargs(value: Element*): Self = this.set("_programName", js.Array(value :_*))
+    @scala.inline
+    def set_programName(value: js.Array[Element]): Self = this.set("_programName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_programName: Self = this.set("_programName", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAppointmentRequired(value: Boolean): Self = this.set("appointmentRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppointmentRequired: Self = this.set("appointmentRequired", js.undefined)
+    @scala.inline
+    def setAvailabilityExceptions(value: String): Self = this.set("availabilityExceptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityExceptions: Self = this.set("availabilityExceptions", js.undefined)
+    @scala.inline
+    def setAvailableTimeVarargs(value: HealthcareServiceAvailableTime*): Self = this.set("availableTime", js.Array(value :_*))
+    @scala.inline
+    def setAvailableTime(value: js.Array[HealthcareServiceAvailableTime]): Self = this.set("availableTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableTime: Self = this.set("availableTime", js.undefined)
+    @scala.inline
+    def setCategory(value: CodeableConcept): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setCharacteristicVarargs(value: CodeableConcept*): Self = this.set("characteristic", js.Array(value :_*))
+    @scala.inline
+    def setCharacteristic(value: js.Array[CodeableConcept]): Self = this.set("characteristic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacteristic: Self = this.set("characteristic", js.undefined)
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComment: Self = this.set("comment", js.undefined)
+    @scala.inline
+    def setCoverageAreaVarargs(value: Reference*): Self = this.set("coverageArea", js.Array(value :_*))
+    @scala.inline
+    def setCoverageArea(value: js.Array[Reference]): Self = this.set("coverageArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverageArea: Self = this.set("coverageArea", js.undefined)
+    @scala.inline
+    def setEligibility(value: CodeableConcept): Self = this.set("eligibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEligibility: Self = this.set("eligibility", js.undefined)
+    @scala.inline
+    def setEligibilityNote(value: String): Self = this.set("eligibilityNote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEligibilityNote: Self = this.set("eligibilityNote", js.undefined)
+    @scala.inline
+    def setEndpointVarargs(value: Reference*): Self = this.set("endpoint", js.Array(value :_*))
+    @scala.inline
+    def setEndpoint(value: js.Array[Reference]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setExtraDetails(value: String): Self = this.set("extraDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraDetails: Self = this.set("extraDetails", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setLocationVarargs(value: Reference*): Self = this.set("location", js.Array(value :_*))
+    @scala.inline
+    def setLocation(value: js.Array[Reference]): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotAvailableVarargs(value: HealthcareServiceNotAvailable*): Self = this.set("notAvailable", js.Array(value :_*))
+    @scala.inline
+    def setNotAvailable(value: js.Array[HealthcareServiceNotAvailable]): Self = this.set("notAvailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotAvailable: Self = this.set("notAvailable", js.undefined)
+    @scala.inline
+    def setPhoto(value: Attachment): Self = this.set("photo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoto: Self = this.set("photo", js.undefined)
+    @scala.inline
+    def setProgramNameVarargs(value: String*): Self = this.set("programName", js.Array(value :_*))
+    @scala.inline
+    def setProgramName(value: js.Array[String]): Self = this.set("programName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramName: Self = this.set("programName", js.undefined)
+    @scala.inline
+    def setProvidedBy(value: Reference): Self = this.set("providedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProvidedBy: Self = this.set("providedBy", js.undefined)
+    @scala.inline
+    def setReferralMethodVarargs(value: CodeableConcept*): Self = this.set("referralMethod", js.Array(value :_*))
+    @scala.inline
+    def setReferralMethod(value: js.Array[CodeableConcept]): Self = this.set("referralMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferralMethod: Self = this.set("referralMethod", js.undefined)
+    @scala.inline
+    def setServiceProvisionCodeVarargs(value: CodeableConcept*): Self = this.set("serviceProvisionCode", js.Array(value :_*))
+    @scala.inline
+    def setServiceProvisionCode(value: js.Array[CodeableConcept]): Self = this.set("serviceProvisionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceProvisionCode: Self = this.set("serviceProvisionCode", js.undefined)
+    @scala.inline
+    def setSpecialtyVarargs(value: CodeableConcept*): Self = this.set("specialty", js.Array(value :_*))
+    @scala.inline
+    def setSpecialty(value: js.Array[CodeableConcept]): Self = this.set("specialty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecialty: Self = this.set("specialty", js.undefined)
+    @scala.inline
+    def setTelecomVarargs(value: ContactPoint*): Self = this.set("telecom", js.Array(value :_*))
+    @scala.inline
+    def setTelecom(value: js.Array[ContactPoint]): Self = this.set("telecom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTelecom: Self = this.set("telecom", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: CodeableConcept*): Self = this.set("type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: js.Array[CodeableConcept]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

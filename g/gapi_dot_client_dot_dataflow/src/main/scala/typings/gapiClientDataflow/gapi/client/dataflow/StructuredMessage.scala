@@ -4,26 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StructuredMessage extends js.Object {
   /**
     * Idenfier for this message type.  Used by external systems to
     * internationalize or personalize message.
     */
-  var messageKey: js.UndefOr[String] = js.undefined
+  var messageKey: js.UndefOr[String] = js.native
   /** Human-readable version of message. */
-  var messageText: js.UndefOr[String] = js.undefined
+  var messageText: js.UndefOr[String] = js.native
   /** The structured data associated with this message. */
-  var parameters: js.UndefOr[js.Array[Parameter]] = js.undefined
+  var parameters: js.UndefOr[js.Array[Parameter]] = js.native
 }
 
 object StructuredMessage {
   @scala.inline
-  def apply(messageKey: String = null, messageText: String = null, parameters: js.Array[Parameter] = null): StructuredMessage = {
+  def apply(): StructuredMessage = {
     val __obj = js.Dynamic.literal()
-    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
-    if (messageText != null) __obj.updateDynamic("messageText")(messageText.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[StructuredMessage]
   }
+  @scala.inline
+  implicit class StructuredMessageOps[Self <: StructuredMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageKey(value: String): Self = this.set("messageKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageKey: Self = this.set("messageKey", js.undefined)
+    @scala.inline
+    def setMessageText(value: String): Self = this.set("messageText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageText: Self = this.set("messageText", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[Parameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

@@ -24,6 +24,7 @@ trait Promise[T] extends js.Object {
   def `catch`[U](onRejected: js.Function1[/* reason */ js.Any, Boolean | Promise[U] | U]): Promise[U] = js.native
   def delay(milliseconds: Double): Promise[T] = js.native
   def done[U](): Unit = js.native
+  def done[U](onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* reason */ js.Any, Unit]): Unit = js.native
   def done[U](onFulfilled: js.Function1[/* value */ T, Unit]): Unit = js.native
   def done[U](
     onFulfilled: js.Function1[/* value */ T, Unit],
@@ -54,7 +55,31 @@ trait Promise[T] extends js.Object {
   def spread[A1, A2, A3, A4, A5, T](onFulfilled: Fn5[A1, A2, A3, A4, A5, Promise[T] | T]): Promise[T] = js.native
   def tap(onFulfilledSideEffect: js.Function1[/* value */ T, Unit]): Promise[T] = js.native
   def `then`(): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: Null,
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[T] = js.native
   def `then`(onFulfilled: js.Function1[/* value */ T, T | Thenable[T]]): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[T] = js.native
   def `then`(
     onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
     onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
@@ -69,6 +94,11 @@ trait Promise[T] extends js.Object {
     onRejected: Null,
     onProgress: js.Function1[/* update */ js.Any, Unit]
   ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: Null,
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[T] = js.native
   def `then`(onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]): Promise[T] = js.native
   def `then`(
     onFulfilled: Null,
@@ -76,12 +106,14 @@ trait Promise[T] extends js.Object {
     onProgress: js.Function1[/* update */ js.Any, Unit]
   ): Promise[T] = js.native
   def `then`(onFulfilled: Null, onRejected: Null, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
-  def `then`[TResult](
-    onFulfilled: js.UndefOr[(js.Function1[/* value */ T, T | Thenable[T]]) | Null],
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: js.UndefOr[scala.Nothing],
     onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
   ): Promise[T | TResult] = js.native
-  def `then`[TResult](
-    onFulfilled: js.UndefOr[(js.Function1[/* value */ T, T | Thenable[T]]) | Null],
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: js.UndefOr[scala.Nothing],
     onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
     onProgress: js.Function1[/* update */ js.Any, Unit]
   ): Promise[T | TResult] = js.native
@@ -90,11 +122,17 @@ trait Promise[T] extends js.Object {
   @JSName("then")
   def then_TResult[TResult](
     onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[TResult] = js.native
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
     onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
   ): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
-    onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
+    onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
     onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
     onProgress: js.Function1[/* update */ js.Any, Unit]
   ): Promise[TResult] = js.native
@@ -104,6 +142,14 @@ trait Promise[T] extends js.Object {
     onRejected: Null,
     onProgress: js.Function1[/* update */ js.Any, Unit]
   ): Promise[TResult] = js.native
+  @JSName("then")
+  def then_TResult[TResult](onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: Null,
+    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
+    onProgress: js.Function1[/* update */ js.Any, Unit]
+  ): Promise[T | TResult] = js.native
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](
     onFulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],

@@ -18,11 +18,32 @@ trait ListCopyJobsOutput extends js.Object {
 
 object ListCopyJobsOutput {
   @scala.inline
-  def apply(CopyJobs: CopyJobsList = null, NextToken: String = null): ListCopyJobsOutput = {
+  def apply(): ListCopyJobsOutput = {
     val __obj = js.Dynamic.literal()
-    if (CopyJobs != null) __obj.updateDynamic("CopyJobs")(CopyJobs.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCopyJobsOutput]
   }
+  @scala.inline
+  implicit class ListCopyJobsOutputOps[Self <: ListCopyJobsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCopyJobsVarargs(value: CopyJob*): Self = this.set("CopyJobs", js.Array(value :_*))
+    @scala.inline
+    def setCopyJobs(value: CopyJobsList): Self = this.set("CopyJobs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyJobs: Self = this.set("CopyJobs", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

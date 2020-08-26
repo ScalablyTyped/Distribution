@@ -6,24 +6,43 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<passport-saml-metadata.passport-saml-metadata/src/fetch.FetchAxiosConfig> */
+@js.native
 trait PartialFetchAxiosConfig extends js.Object {
-  var backupStore: js.UndefOr[Map[String, String]] = js.undefined
-  var responseType: js.UndefOr[String] = js.undefined
-  var timeout: js.UndefOr[Double] = js.undefined
+  var backupStore: js.UndefOr[Map[String, String]] = js.native
+  var responseType: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[Double] = js.native
 }
 
 object PartialFetchAxiosConfig {
   @scala.inline
-  def apply(
-    backupStore: Map[String, String] = null,
-    responseType: String = null,
-    timeout: js.UndefOr[Double] = js.undefined
-  ): PartialFetchAxiosConfig = {
+  def apply(): PartialFetchAxiosConfig = {
     val __obj = js.Dynamic.literal()
-    if (backupStore != null) __obj.updateDynamic("backupStore")(backupStore.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialFetchAxiosConfig]
   }
+  @scala.inline
+  implicit class PartialFetchAxiosConfigOps[Self <: PartialFetchAxiosConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupStore(value: Map[String, String]): Self = this.set("backupStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupStore: Self = this.set("backupStore", js.undefined)
+    @scala.inline
+    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+  }
+  
 }
 

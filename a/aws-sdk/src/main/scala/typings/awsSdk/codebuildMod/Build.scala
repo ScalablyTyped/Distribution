@@ -15,6 +15,10 @@ trait Build extends js.Object {
     */
   var artifacts: js.UndefOr[BuildArtifacts] = js.native
   /**
+    * The ARN of the batch build that this build is a member of, if applicable.
+    */
+  var buildBatchArn: js.UndefOr[String] = js.native
+  /**
     * Whether the build is complete. True if complete; otherwise, false.
     */
   var buildComplete: js.UndefOr[Boolean] = js.native
@@ -34,6 +38,10 @@ trait Build extends js.Object {
     * The current build phase.
     */
   var currentPhase: js.UndefOr[String] = js.native
+  /**
+    * Contains information about the debug session for this build.
+    */
+  var debugSession: js.UndefOr[DebugSession] = js.native
   /**
     * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
     */
@@ -130,70 +138,164 @@ trait Build extends js.Object {
 
 object Build {
   @scala.inline
-  def apply(
-    arn: NonEmptyString = null,
-    artifacts: BuildArtifacts = null,
-    buildComplete: js.UndefOr[Boolean] = js.undefined,
-    buildNumber: js.UndefOr[WrapperLong] = js.undefined,
-    buildStatus: StatusType = null,
-    cache: ProjectCache = null,
-    currentPhase: String = null,
-    encryptionKey: NonEmptyString = null,
-    endTime: Timestamp = null,
-    environment: ProjectEnvironment = null,
-    exportedEnvironmentVariables: ExportedEnvironmentVariables = null,
-    fileSystemLocations: ProjectFileSystemLocations = null,
-    id: NonEmptyString = null,
-    initiator: String = null,
-    logs: LogsLocation = null,
-    networkInterface: NetworkInterface = null,
-    phases: BuildPhases = null,
-    projectName: NonEmptyString = null,
-    queuedTimeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined,
-    reportArns: BuildReportArns = null,
-    resolvedSourceVersion: NonEmptyString = null,
-    secondaryArtifacts: BuildArtifactsList = null,
-    secondarySourceVersions: ProjectSecondarySourceVersions = null,
-    secondarySources: ProjectSources = null,
-    serviceRole: NonEmptyString = null,
-    source: ProjectSource = null,
-    sourceVersion: NonEmptyString = null,
-    startTime: Timestamp = null,
-    timeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined,
-    vpcConfig: VpcConfig = null
-  ): Build = {
+  def apply(): Build = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
-    if (!js.isUndefined(buildComplete)) __obj.updateDynamic("buildComplete")(buildComplete.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(buildNumber)) __obj.updateDynamic("buildNumber")(buildNumber.get.asInstanceOf[js.Any])
-    if (buildStatus != null) __obj.updateDynamic("buildStatus")(buildStatus.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (currentPhase != null) __obj.updateDynamic("currentPhase")(currentPhase.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (exportedEnvironmentVariables != null) __obj.updateDynamic("exportedEnvironmentVariables")(exportedEnvironmentVariables.asInstanceOf[js.Any])
-    if (fileSystemLocations != null) __obj.updateDynamic("fileSystemLocations")(fileSystemLocations.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initiator != null) __obj.updateDynamic("initiator")(initiator.asInstanceOf[js.Any])
-    if (logs != null) __obj.updateDynamic("logs")(logs.asInstanceOf[js.Any])
-    if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface.asInstanceOf[js.Any])
-    if (phases != null) __obj.updateDynamic("phases")(phases.asInstanceOf[js.Any])
-    if (projectName != null) __obj.updateDynamic("projectName")(projectName.asInstanceOf[js.Any])
-    if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes.get.asInstanceOf[js.Any])
-    if (reportArns != null) __obj.updateDynamic("reportArns")(reportArns.asInstanceOf[js.Any])
-    if (resolvedSourceVersion != null) __obj.updateDynamic("resolvedSourceVersion")(resolvedSourceVersion.asInstanceOf[js.Any])
-    if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
-    if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions.asInstanceOf[js.Any])
-    if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
-    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.get.asInstanceOf[js.Any])
-    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Build]
   }
+  @scala.inline
+  implicit class BuildOps[Self <: Build] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setArtifacts(value: BuildArtifacts): Self = this.set("artifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifacts: Self = this.set("artifacts", js.undefined)
+    @scala.inline
+    def setBuildBatchArn(value: String): Self = this.set("buildBatchArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildBatchArn: Self = this.set("buildBatchArn", js.undefined)
+    @scala.inline
+    def setBuildComplete(value: Boolean): Self = this.set("buildComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildComplete: Self = this.set("buildComplete", js.undefined)
+    @scala.inline
+    def setBuildNumber(value: WrapperLong): Self = this.set("buildNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildNumber: Self = this.set("buildNumber", js.undefined)
+    @scala.inline
+    def setBuildStatus(value: StatusType): Self = this.set("buildStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildStatus: Self = this.set("buildStatus", js.undefined)
+    @scala.inline
+    def setCache(value: ProjectCache): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setCurrentPhase(value: String): Self = this.set("currentPhase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPhase: Self = this.set("currentPhase", js.undefined)
+    @scala.inline
+    def setDebugSession(value: DebugSession): Self = this.set("debugSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugSession: Self = this.set("debugSession", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: NonEmptyString): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+    @scala.inline
+    def setEnvironment(value: ProjectEnvironment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setExportedEnvironmentVariablesVarargs(value: ExportedEnvironmentVariable*): Self = this.set("exportedEnvironmentVariables", js.Array(value :_*))
+    @scala.inline
+    def setExportedEnvironmentVariables(value: ExportedEnvironmentVariables): Self = this.set("exportedEnvironmentVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportedEnvironmentVariables: Self = this.set("exportedEnvironmentVariables", js.undefined)
+    @scala.inline
+    def setFileSystemLocationsVarargs(value: ProjectFileSystemLocation*): Self = this.set("fileSystemLocations", js.Array(value :_*))
+    @scala.inline
+    def setFileSystemLocations(value: ProjectFileSystemLocations): Self = this.set("fileSystemLocations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemLocations: Self = this.set("fileSystemLocations", js.undefined)
+    @scala.inline
+    def setId(value: NonEmptyString): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInitiator(value: String): Self = this.set("initiator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitiator: Self = this.set("initiator", js.undefined)
+    @scala.inline
+    def setLogs(value: LogsLocation): Self = this.set("logs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogs: Self = this.set("logs", js.undefined)
+    @scala.inline
+    def setNetworkInterface(value: NetworkInterface): Self = this.set("networkInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterface: Self = this.set("networkInterface", js.undefined)
+    @scala.inline
+    def setPhasesVarargs(value: BuildPhase*): Self = this.set("phases", js.Array(value :_*))
+    @scala.inline
+    def setPhases(value: BuildPhases): Self = this.set("phases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhases: Self = this.set("phases", js.undefined)
+    @scala.inline
+    def setProjectName(value: NonEmptyString): Self = this.set("projectName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectName: Self = this.set("projectName", js.undefined)
+    @scala.inline
+    def setQueuedTimeoutInMinutes(value: WrapperInt): Self = this.set("queuedTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueuedTimeoutInMinutes: Self = this.set("queuedTimeoutInMinutes", js.undefined)
+    @scala.inline
+    def setReportArnsVarargs(value: String*): Self = this.set("reportArns", js.Array(value :_*))
+    @scala.inline
+    def setReportArns(value: BuildReportArns): Self = this.set("reportArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReportArns: Self = this.set("reportArns", js.undefined)
+    @scala.inline
+    def setResolvedSourceVersion(value: NonEmptyString): Self = this.set("resolvedSourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedSourceVersion: Self = this.set("resolvedSourceVersion", js.undefined)
+    @scala.inline
+    def setSecondaryArtifactsVarargs(value: BuildArtifacts*): Self = this.set("secondaryArtifacts", js.Array(value :_*))
+    @scala.inline
+    def setSecondaryArtifacts(value: BuildArtifactsList): Self = this.set("secondaryArtifacts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondaryArtifacts: Self = this.set("secondaryArtifacts", js.undefined)
+    @scala.inline
+    def setSecondarySourceVersionsVarargs(value: ProjectSourceVersion*): Self = this.set("secondarySourceVersions", js.Array(value :_*))
+    @scala.inline
+    def setSecondarySourceVersions(value: ProjectSecondarySourceVersions): Self = this.set("secondarySourceVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondarySourceVersions: Self = this.set("secondarySourceVersions", js.undefined)
+    @scala.inline
+    def setSecondarySourcesVarargs(value: ProjectSource*): Self = this.set("secondarySources", js.Array(value :_*))
+    @scala.inline
+    def setSecondarySources(value: ProjectSources): Self = this.set("secondarySources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondarySources: Self = this.set("secondarySources", js.undefined)
+    @scala.inline
+    def setServiceRole(value: NonEmptyString): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("serviceRole", js.undefined)
+    @scala.inline
+    def setSource(value: ProjectSource): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setSourceVersion(value: NonEmptyString): Self = this.set("sourceVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceVersion: Self = this.set("sourceVersion", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setTimeoutInMinutes(value: WrapperInt): Self = this.set("timeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMinutes: Self = this.set("timeoutInMinutes", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("vpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("vpcConfig", js.undefined)
+  }
+  
 }
 

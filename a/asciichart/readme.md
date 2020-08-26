@@ -11,8 +11,8 @@ Nice-looking lightweight console ASCII line charts ╭┈╯ with no dependencie
 | Full name          | asciichart |
 | Keywords           | asciichart, ascii, chart, charting, charts, console, terminal, draw, box-drawing, box drawing, drawing, stats, line, linear, plot, graph, ascii graphics, graphics, command line, commandline, bash, shell, sh, light |
 | # releases         | 2 |
-| # dependents       | 30 |
-| # downloads        | 64320 |
+| # dependents       | 31 |
+| # downloads        | 65781 |
 | # stars            | 5 |
 
 ## Links

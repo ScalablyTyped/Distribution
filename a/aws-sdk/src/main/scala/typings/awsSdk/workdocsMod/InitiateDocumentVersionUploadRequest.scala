@@ -42,25 +42,52 @@ trait InitiateDocumentVersionUploadRequest extends js.Object {
 
 object InitiateDocumentVersionUploadRequest {
   @scala.inline
-  def apply(
-    ParentFolderId: ResourceIdType,
-    AuthenticationToken: AuthenticationHeaderType = null,
-    ContentCreatedTimestamp: TimestampType = null,
-    ContentModifiedTimestamp: TimestampType = null,
-    ContentType: DocumentContentType = null,
-    DocumentSizeInBytes: js.UndefOr[SizeType] = js.undefined,
-    Id: ResourceIdType = null,
-    Name: ResourceNameType = null
-  ): InitiateDocumentVersionUploadRequest = {
+  def apply(ParentFolderId: ResourceIdType): InitiateDocumentVersionUploadRequest = {
     val __obj = js.Dynamic.literal(ParentFolderId = ParentFolderId.asInstanceOf[js.Any])
-    if (AuthenticationToken != null) __obj.updateDynamic("AuthenticationToken")(AuthenticationToken.asInstanceOf[js.Any])
-    if (ContentCreatedTimestamp != null) __obj.updateDynamic("ContentCreatedTimestamp")(ContentCreatedTimestamp.asInstanceOf[js.Any])
-    if (ContentModifiedTimestamp != null) __obj.updateDynamic("ContentModifiedTimestamp")(ContentModifiedTimestamp.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DocumentSizeInBytes)) __obj.updateDynamic("DocumentSizeInBytes")(DocumentSizeInBytes.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateDocumentVersionUploadRequest]
   }
+  @scala.inline
+  implicit class InitiateDocumentVersionUploadRequestOps[Self <: InitiateDocumentVersionUploadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParentFolderId(value: ResourceIdType): Self = this.set("ParentFolderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthenticationToken(value: AuthenticationHeaderType): Self = this.set("AuthenticationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthenticationToken: Self = this.set("AuthenticationToken", js.undefined)
+    @scala.inline
+    def setContentCreatedTimestamp(value: TimestampType): Self = this.set("ContentCreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentCreatedTimestamp: Self = this.set("ContentCreatedTimestamp", js.undefined)
+    @scala.inline
+    def setContentModifiedTimestamp(value: TimestampType): Self = this.set("ContentModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentModifiedTimestamp: Self = this.set("ContentModifiedTimestamp", js.undefined)
+    @scala.inline
+    def setContentType(value: DocumentContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setDocumentSizeInBytes(value: SizeType): Self = this.set("DocumentSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentSizeInBytes: Self = this.set("DocumentSizeInBytes", js.undefined)
+    @scala.inline
+    def setId(value: ResourceIdType): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setName(value: ResourceNameType): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

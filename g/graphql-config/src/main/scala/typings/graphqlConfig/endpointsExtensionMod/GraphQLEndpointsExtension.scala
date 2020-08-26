@@ -14,7 +14,6 @@ class GraphQLEndpointsExtension protected () extends js.Object {
   def getEndpoint(endpointName: String): GraphQLEndpoint = js.native
   def getEndpoint(endpointName: String, env: StringDictionary[js.UndefOr[String]]): GraphQLEndpoint = js.native
   def getEnvVarsForEndpoint(endpointName: String): StringDictionary[String | Null] = js.native
-  /* private */ def getRawEndpoint(): js.Any = js.native
   /* private */ def getRawEndpoint(endpointName: js.Any): js.Any = js.native
   def getRawEndpointsMap(): GraphQLConfigEnpointsMap = js.native
 }

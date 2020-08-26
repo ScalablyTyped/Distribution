@@ -146,6 +146,7 @@ trait Vec2 extends js.Object {
     * `returnNew` - causes the result to be applied to a new `Vec2`, otherwise the result is applied to `this`
     */
   def rotate(radians: Double): Vec2 = js.native
+  def rotate(radians: Double, inverse: js.UndefOr[scala.Nothing], returnNew: Boolean): Vec2 = js.native
   def rotate(radians: Double, inverse: Double): Vec2 = js.native
   def rotate(radians: Double, inverse: Double, returnNew: Boolean): Vec2 = js.native
   /**

@@ -17,25 +17,5 @@ class ASPxClientReportViewerPageLoadEventArgs protected ()
     * @param pageCount An integer value which specifies the total number of pages displayed in a report viewer. This value is assigned to the ASPxClientReportViewerPageLoadEventArgs.PageCount field.
     */
   def this(pageIndex: Double, pageCount: Double) = this()
-  /**
-    * Gets a value specifying the total number of pages displayed in a report viewer.
-    */
-  /* CompleteClass */
-  override var PageCount: Double = js.native
-  /**
-    * Gets a value specifying a zero-based index of a page to be displayed in a report viewer.
-    */
-  /* CompleteClass */
-  override var PageIndex: Double = js.native
-  /**
-    * Gets a value indicating whether a report page, which is currently loaded into the ASPxClientReportViewer, is the first page of a report.
-    */
-  /* CompleteClass */
-  override def IsFirstPage(): Boolean = js.native
-  /**
-    * Gets a value indicating whether a report page, which is currently loaded into the ASPxClientReportViewer, is the last page of a report.
-    */
-  /* CompleteClass */
-  override def IsLastPage(): Boolean = js.native
 }
 

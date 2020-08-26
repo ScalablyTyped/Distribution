@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * This service is deprecated, instead please use the `Transformation` property of the service {@link Shape} .
   * @deprecated Deprecated
   */
+@js.native
 trait RotationDescriptor extends js.Object {
   /**
     * This is the angle for rotation of this {@link Shape} . The shape is rotated counter-clockwise around the center of the bounding box.
@@ -18,12 +19,12 @@ trait RotationDescriptor extends js.Object {
     * pointing down. Please use the `Transformation` property of the service {@link Shape} instead.
     * @deprecated Deprecated
     */
-  var RotateAngle: Double
+  var RotateAngle: Double = js.native
   /**
     * This is the amount of shearing for this {@link Shape} . The shape is sheared counter-clockwise around the center of the bounding box
     * @deprecated Deprecated
     */
-  var ShearAngle: Double
+  var ShearAngle: Double = js.native
 }
 
 object RotationDescriptor {
@@ -32,5 +33,22 @@ object RotationDescriptor {
     val __obj = js.Dynamic.literal(RotateAngle = RotateAngle.asInstanceOf[js.Any], ShearAngle = ShearAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotationDescriptor]
   }
+  @scala.inline
+  implicit class RotationDescriptorOps[Self <: RotationDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRotateAngle(value: Double): Self = this.set("RotateAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShearAngle(value: Double): Self = this.set("ShearAngle", value.asInstanceOf[js.Any])
+  }
+  
 }
 

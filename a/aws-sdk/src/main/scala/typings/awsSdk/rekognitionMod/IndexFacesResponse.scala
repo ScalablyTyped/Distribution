@@ -26,18 +26,42 @@ trait IndexFacesResponse extends js.Object {
 
 object IndexFacesResponse {
   @scala.inline
-  def apply(
-    FaceModelVersion: String = null,
-    FaceRecords: FaceRecordList = null,
-    OrientationCorrection: OrientationCorrection = null,
-    UnindexedFaces: UnindexedFaces = null
-  ): IndexFacesResponse = {
+  def apply(): IndexFacesResponse = {
     val __obj = js.Dynamic.literal()
-    if (FaceModelVersion != null) __obj.updateDynamic("FaceModelVersion")(FaceModelVersion.asInstanceOf[js.Any])
-    if (FaceRecords != null) __obj.updateDynamic("FaceRecords")(FaceRecords.asInstanceOf[js.Any])
-    if (OrientationCorrection != null) __obj.updateDynamic("OrientationCorrection")(OrientationCorrection.asInstanceOf[js.Any])
-    if (UnindexedFaces != null) __obj.updateDynamic("UnindexedFaces")(UnindexedFaces.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexFacesResponse]
   }
+  @scala.inline
+  implicit class IndexFacesResponseOps[Self <: IndexFacesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFaceModelVersion(value: String): Self = this.set("FaceModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceModelVersion: Self = this.set("FaceModelVersion", js.undefined)
+    @scala.inline
+    def setFaceRecordsVarargs(value: FaceRecord*): Self = this.set("FaceRecords", js.Array(value :_*))
+    @scala.inline
+    def setFaceRecords(value: FaceRecordList): Self = this.set("FaceRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFaceRecords: Self = this.set("FaceRecords", js.undefined)
+    @scala.inline
+    def setOrientationCorrection(value: OrientationCorrection): Self = this.set("OrientationCorrection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientationCorrection: Self = this.set("OrientationCorrection", js.undefined)
+    @scala.inline
+    def setUnindexedFacesVarargs(value: UnindexedFace*): Self = this.set("UnindexedFaces", js.Array(value :_*))
+    @scala.inline
+    def setUnindexedFaces(value: UnindexedFaces): Self = this.set("UnindexedFaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnindexedFaces: Self = this.set("UnindexedFaces", js.undefined)
+  }
+  
 }
 

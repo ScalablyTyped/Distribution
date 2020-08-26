@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphql-tools__schema
 
-Typings are for version 6.0.11
+Typings are for version 6.0.15
 
 ## Library description:
 A set of utils for faster development of GraphQL tools
@@ -10,9 +10,9 @@ A set of utils for faster development of GraphQL tools
 | ------------------ | :-------------: |
 | Full name          | @graphql-tools/schema |
 | Keywords           | - |
-| # releases         | 262 |
-| # dependents       | 18 |
-| # downloads        | 2001660 |
+| # releases         | 399 |
+| # dependents       | 34 |
+| # downloads        | 5653450 |
 | # stars            | 0 |
 
 ## Links

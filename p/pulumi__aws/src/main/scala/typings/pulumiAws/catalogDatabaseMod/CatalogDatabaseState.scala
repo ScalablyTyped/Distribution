@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CatalogDatabaseState extends js.Object {
   /**
+    * The ARN of the Glue Catalog Database.
+    */
+  val arn: js.UndefOr[Input[String]] = js.native
+  /**
     * ID of the Glue Catalog to create the database in. If omitted, this defaults to the AWS Account ID.
     */
   val catalogId: js.UndefOr[Input[String]] = js.native
@@ -32,20 +36,46 @@ trait CatalogDatabaseState extends js.Object {
 
 object CatalogDatabaseState {
   @scala.inline
-  def apply(
-    catalogId: Input[String] = null,
-    description: Input[String] = null,
-    locationUri: Input[String] = null,
-    name: Input[String] = null,
-    parameters: Input[StringDictionary[Input[String]]] = null
-  ): CatalogDatabaseState = {
+  def apply(): CatalogDatabaseState = {
     val __obj = js.Dynamic.literal()
-    if (catalogId != null) __obj.updateDynamic("catalogId")(catalogId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (locationUri != null) __obj.updateDynamic("locationUri")(locationUri.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogDatabaseState]
   }
+  @scala.inline
+  implicit class CatalogDatabaseStateOps[Self <: CatalogDatabaseState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCatalogId(value: Input[String]): Self = this.set("catalogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCatalogId: Self = this.set("catalogId", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLocationUri(value: Input[String]): Self = this.set("locationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationUri: Self = this.set("locationUri", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParameters(value: Input[StringDictionary[Input[String]]]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+  }
+  
 }
 

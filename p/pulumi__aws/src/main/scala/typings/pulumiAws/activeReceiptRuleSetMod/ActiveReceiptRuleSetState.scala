@@ -15,10 +15,26 @@ trait ActiveReceiptRuleSetState extends js.Object {
 
 object ActiveReceiptRuleSetState {
   @scala.inline
-  def apply(ruleSetName: Input[String] = null): ActiveReceiptRuleSetState = {
+  def apply(): ActiveReceiptRuleSetState = {
     val __obj = js.Dynamic.literal()
-    if (ruleSetName != null) __obj.updateDynamic("ruleSetName")(ruleSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveReceiptRuleSetState]
   }
+  @scala.inline
+  implicit class ActiveReceiptRuleSetStateOps[Self <: ActiveReceiptRuleSetState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRuleSetName(value: Input[String]): Self = this.set("ruleSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleSetName: Self = this.set("ruleSetName", js.undefined)
+  }
+  
 }
 

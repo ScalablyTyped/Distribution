@@ -40,6 +40,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://echarts.apache.org/en/option.html#series-graph
   */
+@js.native
 trait SeriesGraph_ extends js.Object {
   /**
     * Whether to enable animation.
@@ -49,7 +50,7 @@ trait SeriesGraph_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-graph.animation
     */
-  var animation: js.UndefOr[Boolean] = js.undefined
+  var animation: js.UndefOr[Boolean] = js.native
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -65,7 +66,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.animationDelay
     */
-  var animationDelay: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelay: js.UndefOr[js.Function | Double] = js.native
   /**
     * Delay before updating animation, which supports callback function
     * for different data to have different animation effect.
@@ -81,7 +82,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.animationDelayUpdate
     */
-  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDelayUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Duration of the first animation, which supports callback function
     * for different data to have different animation effect:
@@ -93,7 +94,7 @@ trait SeriesGraph_ extends js.Object {
     * 1000
     * @see https://echarts.apache.org/en/option.html#series-graph.animationDuration
     */
-  var animationDuration: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDuration: js.UndefOr[js.Function | Double] = js.native
   /**
     * Time for animation to complete, which supports callback function
     * for different data to have different animation effect:
@@ -105,7 +106,7 @@ trait SeriesGraph_ extends js.Object {
     * 300
     * @see https://echarts.apache.org/en/option.html#series-graph.animationDurationUpdate
     */
-  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.undefined
+  var animationDurationUpdate: js.UndefOr[js.Function | Double] = js.native
   /**
     * Easing method used for the first animation.
     * Varied easing effects can be found at
@@ -117,7 +118,7 @@ trait SeriesGraph_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-graph.animationEasing
     */
-  var animationEasing: js.UndefOr[String] = js.undefined
+  var animationEasing: js.UndefOr[String] = js.native
   /**
     * Easing method used for animation.
     *
@@ -126,7 +127,7 @@ trait SeriesGraph_ extends js.Object {
     * "cubicOut"
     * @see https://echarts.apache.org/en/option.html#series-graph.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[String] = js.undefined
+  var animationEasingUpdate: js.UndefOr[String] = js.native
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -137,7 +138,7 @@ trait SeriesGraph_ extends js.Object {
     * 2000
     * @see https://echarts.apache.org/en/option.html#series-graph.animationThreshold
     */
-  var animationThreshold: js.UndefOr[Double] = js.undefined
+  var animationThreshold: js.UndefOr[Double] = js.native
   /**
     * Distance between component and the bottom side of the container.
     *
@@ -151,7 +152,7 @@ trait SeriesGraph_ extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-graph.bottom
     */
-  var bottom: js.UndefOr[Double | String] = js.undefined
+  var bottom: js.UndefOr[Double | String] = js.native
   /**
     * Index of
     * [calendar coordinates](https://echarts.apache.org/en/option.html#calendar)
@@ -161,7 +162,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.calendarIndex
     */
-  var calendarIndex: js.UndefOr[Double] = js.undefined
+  var calendarIndex: js.UndefOr[Double] = js.native
   /**
     * The categories of node, which is optional.
     * If there is a classification of nodes, the category of each node
@@ -176,14 +177,14 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.categories
     */
-  var categories: js.UndefOr[js.Array[CategoryObject]] = js.undefined
+  var categories: js.UndefOr[js.Array[CategoryObject]] = js.native
   /**
     * Configuration about circular layout.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.circular
     */
-  var circular: js.UndefOr[RotateLabel] = js.undefined
+  var circular: js.UndefOr[RotateLabel] = js.native
   /**
     * The coordinate used in the series, whose options are:
     *
@@ -219,7 +220,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.coordinateSystem
     */
-  var coordinateSystem: js.UndefOr[String] = js.undefined
+  var coordinateSystem: js.UndefOr[String] = js.native
   /**
     * The mouse style when mouse hovers on an element, the same as
     * `cursor` property in `CSS`.
@@ -229,7 +230,7 @@ trait SeriesGraph_ extends js.Object {
     * "pointer"
     * @see https://echarts.apache.org/en/option.html#series-graph.cursor
     */
-  var cursor: js.UndefOr[String] = js.undefined
+  var cursor: js.UndefOr[String] = js.native
   /**
     * Nodes list of graph.
     *
@@ -238,7 +239,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.data
     */
-  var data: js.UndefOr[js.Array[DataObject]] = js.undefined
+  var data: js.UndefOr[js.Array[DataObject]] = js.native
   /**
     * If node is draggable.
     * Only available when using force-directed layout.
@@ -246,11 +247,11 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.draggable
     */
-  var draggable: js.UndefOr[Boolean] = js.undefined
+  var draggable: js.UndefOr[Boolean] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.edgeLabel
     */
-  var edgeLabel: js.UndefOr[FontSize] = js.undefined
+  var edgeLabel: js.UndefOr[FontSize] = js.native
   /**
     * Symbol of two ends of edge line.
     *
@@ -266,7 +267,7 @@ trait SeriesGraph_ extends js.Object {
     * "[none', 'none']"
     * @see https://echarts.apache.org/en/option.html#series-graph.edgeSymbol
     */
-  var edgeSymbol: js.UndefOr[js.Array[_] | String] = js.undefined
+  var edgeSymbol: js.UndefOr[js.Array[_] | String] = js.native
   /**
     * Size of symbol of two ends of edge line.
     * Can be an array or a single number.
@@ -280,7 +281,7 @@ trait SeriesGraph_ extends js.Object {
     * 10
     * @see https://echarts.apache.org/en/option.html#series-graph.edgeSymbolSize
     */
-  var edgeSymbolSize: js.UndefOr[js.Array[_] | Double] = js.undefined
+  var edgeSymbolSize: js.UndefOr[js.Array[_] | Double] = js.native
   /**
     * Alias of
     * [links](https://echarts.apache.org/en/option.html#series-graph.links)
@@ -288,18 +289,18 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.edges
     */
-  var edges: js.UndefOr[js.Array[_]] = js.undefined
+  var edges: js.UndefOr[js.Array[_]] = js.native
   /**
     * @see https://echarts.apache.org/en/option.html#series-graph.emphasis
     */
-  var emphasis: js.UndefOr[EdgeLabel] = js.undefined
+  var emphasis: js.UndefOr[EdgeLabel] = js.native
   /**
     * Whether to focus/highlight the hover node and it's adjacencies.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.focusNodeAdjacency
     */
-  var focusNodeAdjacency: js.UndefOr[Boolean] = js.undefined
+  var focusNodeAdjacency: js.UndefOr[Boolean] = js.native
   /**
     * Configuration items about force-directed layout.
     * Force-directed layout simulates spring/charge model, which will
@@ -318,7 +319,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.force
     */
-  var force: js.UndefOr[EdgeLength] = js.undefined
+  var force: js.UndefOr[EdgeLength] = js.native
   /**
     * Index of
     * [geographic coordinate](https://echarts.apache.org/en/option.html#geo)
@@ -328,7 +329,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.geoIndex
     */
-  var geoIndex: js.UndefOr[Double] = js.undefined
+  var geoIndex: js.UndefOr[Double] = js.native
   /**
     * Height of component.
     *
@@ -337,7 +338,7 @@ trait SeriesGraph_ extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-graph.height
     */
-  var height: js.UndefOr[Double | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.native
   /**
     * Whether to enable the highlight animation effect of mousr hover
     * node.
@@ -345,7 +346,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.hoverAnimation
     */
-  var hoverAnimation: js.UndefOr[Boolean] = js.undefined
+  var hoverAnimation: js.UndefOr[Boolean] = js.native
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -354,7 +355,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.id
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
     * like being hovered by mouse, or highlighted via legend connect.
@@ -362,7 +363,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.itemStyle
     */
-  var itemStyle: js.UndefOr[ShadowOffsetY] = js.undefined
+  var itemStyle: js.UndefOr[ShadowOffsetY] = js.native
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -374,7 +375,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.label
     */
-  var label: js.UndefOr[BorderRadius] = js.undefined
+  var label: js.UndefOr[BorderRadius] = js.native
   /**
     * Graph layout.
     *
@@ -402,7 +403,7 @@ trait SeriesGraph_ extends js.Object {
     * "none"
     * @see https://echarts.apache.org/en/option.html#series-graph.layout
     */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[String] = js.native
   /**
     * Distance between component and the left side of the container.
     *
@@ -418,7 +419,7 @@ trait SeriesGraph_ extends js.Object {
     * "center"
     * @see https://echarts.apache.org/en/option.html#series-graph.left
     */
-  var left: js.UndefOr[Double | String] = js.undefined
+  var left: js.UndefOr[Double | String] = js.native
   /**
     * Whether to enable highlighting chart when
     * [legend](https://echarts.apache.org/en/option.html#legend)
@@ -429,7 +430,7 @@ trait SeriesGraph_ extends js.Object {
     * "true"
     * @see https://echarts.apache.org/en/option.html#series-graph.legendHoverLink
     */
-  var legendHoverLink: js.UndefOr[Boolean] = js.undefined
+  var legendHoverLink: js.UndefOr[Boolean] = js.native
   /**
     * The style of edge line.
     * [lineStyle.color](https://echarts.apache.org/en/option.html#series-graph.lineStyle.color)
@@ -439,7 +440,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowColor] = js.undefined
+  var lineStyle: js.UndefOr[ShadowColor] = js.native
   /**
     * Relational data between nodes. Example:
     *
@@ -448,7 +449,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.links
     */
-  var links: js.UndefOr[js.Array[LinkObject]] = js.undefined
+  var links: js.UndefOr[js.Array[LinkObject]] = js.native
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -456,21 +457,21 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.markArea
     */
-  var markArea: js.UndefOr[AnimationDelayUpdate] = js.undefined
+  var markArea: js.UndefOr[AnimationDelayUpdate] = js.native
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.markLine
     */
-  var markLine: js.UndefOr[AnimationDelay] = js.undefined
+  var markLine: js.UndefOr[AnimationDelay] = js.native
   /**
     * Mark point in a chart.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.markPoint
     */
-  var markPoint: js.UndefOr[AnimationDuration] = js.undefined
+  var markPoint: js.UndefOr[AnimationDuration] = js.native
   /**
     * Series name used for displaying in
     * [tooltip](https://echarts.apache.org/en/option.html#tooltip)
@@ -481,7 +482,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.name
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Related zooming ratio of nodes when mouse zooming in or out.
     * When it is set as 0, the node will not zoom as the mouse zooms.
@@ -491,7 +492,7 @@ trait SeriesGraph_ extends js.Object {
     * 0.6
     * @see https://echarts.apache.org/en/option.html#series-graph.nodeScaleRatio
     */
-  var nodeScaleRatio: js.UndefOr[Double] = js.undefined
+  var nodeScaleRatio: js.UndefOr[Double] = js.native
   /**
     * Alias of
     * [data](https://echarts.apache.org/en/option.html#series-graph.data)
@@ -499,7 +500,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.nodes
     */
-  var nodes: js.UndefOr[js.Array[_]] = js.undefined
+  var nodes: js.UndefOr[js.Array[_]] = js.native
   /**
     * Index of
     * [polar coordinate](https://echarts.apache.org/en/option.html#polar)
@@ -509,7 +510,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.polarIndex
     */
-  var polarIndex: js.UndefOr[Double] = js.undefined
+  var polarIndex: js.UndefOr[Double] = js.native
   /**
     * Distance between component and the right side of the container.
     *
@@ -523,7 +524,7 @@ trait SeriesGraph_ extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-graph.right
     */
-  var right: js.UndefOr[Double | String] = js.undefined
+  var right: js.UndefOr[Double | String] = js.native
   /**
     * Whether to enable mouse zooming and translating.
     * `false` by default.
@@ -534,7 +535,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.roam
     */
-  var roam: js.UndefOr[Boolean | String] = js.undefined
+  var roam: js.UndefOr[Boolean | String] = js.native
   /**
     * Whether to ignore mouse events.
     * Default value is false, for triggering and responding to mouse
@@ -543,7 +544,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.silent
     */
-  var silent: js.UndefOr[Boolean] = js.undefined
+  var silent: js.UndefOr[Boolean] = js.native
   /**
     * Symbol of node of relation graph.
     *
@@ -584,14 +585,14 @@ trait SeriesGraph_ extends js.Object {
     * "circle"
     * @see https://echarts.apache.org/en/option.html#series-graph.symbol
     */
-  var symbol: js.UndefOr[String] = js.undefined
+  var symbol: js.UndefOr[String] = js.native
   /**
     * Whether to keep aspect for symbols in the form of `path://`.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.symbolKeepAspect
     */
-  var symbolKeepAspect: js.UndefOr[Boolean] = js.undefined
+  var symbolKeepAspect: js.UndefOr[Boolean] = js.native
   /**
     * Offset of node of relation graph symbol relative to original
     * position.
@@ -613,7 +614,7 @@ trait SeriesGraph_ extends js.Object {
     * [0, 0]
     * @see https://echarts.apache.org/en/option.html#series-graph.symbolOffset
     */
-  var symbolOffset: js.UndefOr[js.Array[_]] = js.undefined
+  var symbolOffset: js.UndefOr[js.Array[_]] = js.native
   /**
     * Rotate degree of node of relation graph symbol.
     * Note that when `symbol` is set to be `'arrow'` in `markLine`,
@@ -623,7 +624,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.symbolRotate
     */
-  var symbolRotate: js.UndefOr[Double] = js.undefined
+  var symbolRotate: js.UndefOr[Double] = js.native
   /**
     * node of relation graph symbol size.
     * It can be set to single numbers like `10`, or use an array to
@@ -649,14 +650,14 @@ trait SeriesGraph_ extends js.Object {
     * 10
     * @see https://echarts.apache.org/en/option.html#series-graph.symbolSize
     */
-  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.undefined
+  var symbolSize: js.UndefOr[js.Array[_] | js.Function | Double] = js.native
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.tooltip
     */
-  var tooltip: js.UndefOr[BaseTooltip] = js.undefined
+  var tooltip: js.UndefOr[BaseTooltip] = js.native
   /**
     * Distance between component and the top side of the container.
     *
@@ -672,13 +673,13 @@ trait SeriesGraph_ extends js.Object {
     * "middle"
     * @see https://echarts.apache.org/en/option.html#series-graph.top
     */
-  var top: js.UndefOr[Double | String] = js.undefined
+  var top: js.UndefOr[Double | String] = js.native
   /**
     * @default
     * "graph"
     * @see https://echarts.apache.org/en/option.html#series-graph.type
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * Width of component.
     *
@@ -687,7 +688,7 @@ trait SeriesGraph_ extends js.Object {
     * "auto"
     * @see https://echarts.apache.org/en/option.html#series-graph.width
     */
-  var width: js.UndefOr[Double | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.native
   /**
     * Index of
     * [x axis](https://echarts.apache.org/en/option.html#xAxis)
@@ -696,7 +697,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.xAxisIndex
     */
-  var xAxisIndex: js.UndefOr[Double] = js.undefined
+  var xAxisIndex: js.UndefOr[Double] = js.native
   /**
     * Index of
     * [y axis](https://echarts.apache.org/en/option.html#yAxis)
@@ -705,7 +706,7 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.yAxisIndex
     */
-  var yAxisIndex: js.UndefOr[Double] = js.undefined
+  var yAxisIndex: js.UndefOr[Double] = js.native
   /**
     * `z` value of all graghical elements in , which controls order
     * of drawing graphical components.
@@ -720,7 +721,7 @@ trait SeriesGraph_ extends js.Object {
     * 2
     * @see https://echarts.apache.org/en/option.html#series-graph.z
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var z: js.UndefOr[Double] = js.native
   /**
     * `zlevel` value of all graghical elements in .
     *
@@ -738,129 +739,273 @@ trait SeriesGraph_ extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-graph.zlevel
     */
-  var zlevel: js.UndefOr[Double] = js.undefined
+  var zlevel: js.UndefOr[Double] = js.native
 }
 
 object SeriesGraph_ {
   @scala.inline
-  def apply(
-    animation: js.UndefOr[Boolean] = js.undefined,
-    animationDelay: js.Function | Double = null,
-    animationDelayUpdate: js.Function | Double = null,
-    animationDuration: js.Function | Double = null,
-    animationDurationUpdate: js.Function | Double = null,
-    animationEasing: String = null,
-    animationEasingUpdate: String = null,
-    animationThreshold: js.UndefOr[Double] = js.undefined,
-    bottom: Double | String = null,
-    calendarIndex: js.UndefOr[Double] = js.undefined,
-    categories: js.Array[CategoryObject] = null,
-    circular: RotateLabel = null,
-    coordinateSystem: String = null,
-    cursor: String = null,
-    data: js.Array[DataObject] = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    edgeLabel: FontSize = null,
-    edgeSymbol: js.Array[_] | String = null,
-    edgeSymbolSize: js.Array[_] | Double = null,
-    edges: js.Array[_] = null,
-    emphasis: EdgeLabel = null,
-    focusNodeAdjacency: js.UndefOr[Boolean] = js.undefined,
-    force: EdgeLength = null,
-    geoIndex: js.UndefOr[Double] = js.undefined,
-    height: Double | String = null,
-    hoverAnimation: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    itemStyle: ShadowOffsetY = null,
-    label: BorderRadius = null,
-    layout: String = null,
-    left: Double | String = null,
-    legendHoverLink: js.UndefOr[Boolean] = js.undefined,
-    lineStyle: ShadowColor = null,
-    links: js.Array[LinkObject] = null,
-    markArea: AnimationDelayUpdate = null,
-    markLine: AnimationDelay = null,
-    markPoint: AnimationDuration = null,
-    name: String = null,
-    nodeScaleRatio: js.UndefOr[Double] = js.undefined,
-    nodes: js.Array[_] = null,
-    polarIndex: js.UndefOr[Double] = js.undefined,
-    right: Double | String = null,
-    roam: Boolean | String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    symbol: String = null,
-    symbolKeepAspect: js.UndefOr[Boolean] = js.undefined,
-    symbolOffset: js.Array[_] = null,
-    symbolRotate: js.UndefOr[Double] = js.undefined,
-    symbolSize: js.Array[_] | js.Function | Double = null,
-    tooltip: BaseTooltip = null,
-    top: Double | String = null,
-    `type`: String = null,
-    width: Double | String = null,
-    xAxisIndex: js.UndefOr[Double] = js.undefined,
-    yAxisIndex: js.UndefOr[Double] = js.undefined,
-    z: js.UndefOr[Double] = js.undefined,
-    zlevel: js.UndefOr[Double] = js.undefined
-  ): SeriesGraph_ = {
+  def apply(): SeriesGraph_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation.get.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
-    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
-    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationThreshold)) __obj.updateDynamic("animationThreshold")(animationThreshold.get.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(calendarIndex)) __obj.updateDynamic("calendarIndex")(calendarIndex.get.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.get.asInstanceOf[js.Any])
-    if (edgeLabel != null) __obj.updateDynamic("edgeLabel")(edgeLabel.asInstanceOf[js.Any])
-    if (edgeSymbol != null) __obj.updateDynamic("edgeSymbol")(edgeSymbol.asInstanceOf[js.Any])
-    if (edgeSymbolSize != null) __obj.updateDynamic("edgeSymbolSize")(edgeSymbolSize.asInstanceOf[js.Any])
-    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
-    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusNodeAdjacency)) __obj.updateDynamic("focusNodeAdjacency")(focusNodeAdjacency.get.asInstanceOf[js.Any])
-    if (force != null) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(geoIndex)) __obj.updateDynamic("geoIndex")(geoIndex.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink.get.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (markArea != null) __obj.updateDynamic("markArea")(markArea.asInstanceOf[js.Any])
-    if (markLine != null) __obj.updateDynamic("markLine")(markLine.asInstanceOf[js.Any])
-    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nodeScaleRatio)) __obj.updateDynamic("nodeScaleRatio")(nodeScaleRatio.get.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(polarIndex)) __obj.updateDynamic("polarIndex")(polarIndex.get.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.get.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect.get.asInstanceOf[js.Any])
-    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolRotate)) __obj.updateDynamic("symbolRotate")(symbolRotate.get.asInstanceOf[js.Any])
-    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(xAxisIndex)) __obj.updateDynamic("xAxisIndex")(xAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisIndex)) __obj.updateDynamic("yAxisIndex")(yAxisIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(z)) __obj.updateDynamic("z")(z.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zlevel)) __obj.updateDynamic("zlevel")(zlevel.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesGraph_]
   }
+  @scala.inline
+  implicit class SeriesGraph_Ops[Self <: SeriesGraph_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAnimationDelay(value: js.Function | Double): Self = this.set("animationDelay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelay: Self = this.set("animationDelay", js.undefined)
+    @scala.inline
+    def setAnimationDelayUpdate(value: js.Function | Double): Self = this.set("animationDelayUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDelayUpdate: Self = this.set("animationDelayUpdate", js.undefined)
+    @scala.inline
+    def setAnimationDuration(value: js.Function | Double): Self = this.set("animationDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDuration: Self = this.set("animationDuration", js.undefined)
+    @scala.inline
+    def setAnimationDurationUpdate(value: js.Function | Double): Self = this.set("animationDurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationDurationUpdate: Self = this.set("animationDurationUpdate", js.undefined)
+    @scala.inline
+    def setAnimationEasing(value: String): Self = this.set("animationEasing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasing: Self = this.set("animationEasing", js.undefined)
+    @scala.inline
+    def setAnimationEasingUpdate(value: String): Self = this.set("animationEasingUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationEasingUpdate: Self = this.set("animationEasingUpdate", js.undefined)
+    @scala.inline
+    def setAnimationThreshold(value: Double): Self = this.set("animationThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimationThreshold: Self = this.set("animationThreshold", js.undefined)
+    @scala.inline
+    def setBottom(value: Double | String): Self = this.set("bottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottom: Self = this.set("bottom", js.undefined)
+    @scala.inline
+    def setCalendarIndex(value: Double): Self = this.set("calendarIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCalendarIndex: Self = this.set("calendarIndex", js.undefined)
+    @scala.inline
+    def setCategoriesVarargs(value: CategoryObject*): Self = this.set("categories", js.Array(value :_*))
+    @scala.inline
+    def setCategories(value: js.Array[CategoryObject]): Self = this.set("categories", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategories: Self = this.set("categories", js.undefined)
+    @scala.inline
+    def setCircular(value: RotateLabel): Self = this.set("circular", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCircular: Self = this.set("circular", js.undefined)
+    @scala.inline
+    def setCoordinateSystem(value: String): Self = this.set("coordinateSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoordinateSystem: Self = this.set("coordinateSystem", js.undefined)
+    @scala.inline
+    def setCursor(value: String): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: DataObject*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[DataObject]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDraggable(value: Boolean): Self = this.set("draggable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDraggable: Self = this.set("draggable", js.undefined)
+    @scala.inline
+    def setEdgeLabel(value: FontSize): Self = this.set("edgeLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeLabel: Self = this.set("edgeLabel", js.undefined)
+    @scala.inline
+    def setEdgeSymbolVarargs(value: js.Any*): Self = this.set("edgeSymbol", js.Array(value :_*))
+    @scala.inline
+    def setEdgeSymbol(value: js.Array[_] | String): Self = this.set("edgeSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeSymbol: Self = this.set("edgeSymbol", js.undefined)
+    @scala.inline
+    def setEdgeSymbolSizeVarargs(value: js.Any*): Self = this.set("edgeSymbolSize", js.Array(value :_*))
+    @scala.inline
+    def setEdgeSymbolSize(value: js.Array[_] | Double): Self = this.set("edgeSymbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeSymbolSize: Self = this.set("edgeSymbolSize", js.undefined)
+    @scala.inline
+    def setEdgesVarargs(value: js.Any*): Self = this.set("edges", js.Array(value :_*))
+    @scala.inline
+    def setEdges(value: js.Array[_]): Self = this.set("edges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdges: Self = this.set("edges", js.undefined)
+    @scala.inline
+    def setEmphasis(value: EdgeLabel): Self = this.set("emphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmphasis: Self = this.set("emphasis", js.undefined)
+    @scala.inline
+    def setFocusNodeAdjacency(value: Boolean): Self = this.set("focusNodeAdjacency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusNodeAdjacency: Self = this.set("focusNodeAdjacency", js.undefined)
+    @scala.inline
+    def setForce(value: EdgeLength): Self = this.set("force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("force", js.undefined)
+    @scala.inline
+    def setGeoIndex(value: Double): Self = this.set("geoIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoIndex: Self = this.set("geoIndex", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHoverAnimation(value: Boolean): Self = this.set("hoverAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHoverAnimation: Self = this.set("hoverAnimation", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setItemStyle(value: ShadowOffsetY): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    @scala.inline
+    def setLabel(value: BorderRadius): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setLeft(value: Double | String): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setLegendHoverLink(value: Boolean): Self = this.set("legendHoverLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLegendHoverLink: Self = this.set("legendHoverLink", js.undefined)
+    @scala.inline
+    def setLineStyle(value: ShadowColor): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    @scala.inline
+    def setLinksVarargs(value: LinkObject*): Self = this.set("links", js.Array(value :_*))
+    @scala.inline
+    def setLinks(value: js.Array[LinkObject]): Self = this.set("links", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinks: Self = this.set("links", js.undefined)
+    @scala.inline
+    def setMarkArea(value: AnimationDelayUpdate): Self = this.set("markArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkArea: Self = this.set("markArea", js.undefined)
+    @scala.inline
+    def setMarkLine(value: AnimationDelay): Self = this.set("markLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkLine: Self = this.set("markLine", js.undefined)
+    @scala.inline
+    def setMarkPoint(value: AnimationDuration): Self = this.set("markPoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarkPoint: Self = this.set("markPoint", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNodeScaleRatio(value: Double): Self = this.set("nodeScaleRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeScaleRatio: Self = this.set("nodeScaleRatio", js.undefined)
+    @scala.inline
+    def setNodesVarargs(value: js.Any*): Self = this.set("nodes", js.Array(value :_*))
+    @scala.inline
+    def setNodes(value: js.Array[_]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodes: Self = this.set("nodes", js.undefined)
+    @scala.inline
+    def setPolarIndex(value: Double): Self = this.set("polarIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolarIndex: Self = this.set("polarIndex", js.undefined)
+    @scala.inline
+    def setRight(value: Double | String): Self = this.set("right", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight: Self = this.set("right", js.undefined)
+    @scala.inline
+    def setRoam(value: Boolean | String): Self = this.set("roam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoam: Self = this.set("roam", js.undefined)
+    @scala.inline
+    def setSilent(value: Boolean): Self = this.set("silent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSilent: Self = this.set("silent", js.undefined)
+    @scala.inline
+    def setSymbol(value: String): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbol: Self = this.set("symbol", js.undefined)
+    @scala.inline
+    def setSymbolKeepAspect(value: Boolean): Self = this.set("symbolKeepAspect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolKeepAspect: Self = this.set("symbolKeepAspect", js.undefined)
+    @scala.inline
+    def setSymbolOffsetVarargs(value: js.Any*): Self = this.set("symbolOffset", js.Array(value :_*))
+    @scala.inline
+    def setSymbolOffset(value: js.Array[_]): Self = this.set("symbolOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolOffset: Self = this.set("symbolOffset", js.undefined)
+    @scala.inline
+    def setSymbolRotate(value: Double): Self = this.set("symbolRotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolRotate: Self = this.set("symbolRotate", js.undefined)
+    @scala.inline
+    def setSymbolSizeVarargs(value: js.Any*): Self = this.set("symbolSize", js.Array(value :_*))
+    @scala.inline
+    def setSymbolSize(value: js.Array[_] | js.Function | Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setTooltip(value: BaseTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setTop(value: Double | String): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setXAxisIndex(value: Double): Self = this.set("xAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXAxisIndex: Self = this.set("xAxisIndex", js.undefined)
+    @scala.inline
+    def setYAxisIndex(value: Double): Self = this.set("yAxisIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYAxisIndex: Self = this.set("yAxisIndex", js.undefined)
+    @scala.inline
+    def setZ(value: Double): Self = this.set("z", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZ: Self = this.set("z", js.undefined)
+    @scala.inline
+    def setZlevel(value: Double): Self = this.set("zlevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZlevel: Self = this.set("zlevel", js.undefined)
+  }
+  
 }
 

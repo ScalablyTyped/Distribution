@@ -27,12 +27,34 @@ trait SchemaRoomModification extends js.Object {
 
 object SchemaRoomModification {
   @scala.inline
-  def apply(kind: String = null, modifiedTimestampMillis: String = null, participantId: String = null): SchemaRoomModification = {
+  def apply(): SchemaRoomModification = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (modifiedTimestampMillis != null) __obj.updateDynamic("modifiedTimestampMillis")(modifiedTimestampMillis.asInstanceOf[js.Any])
-    if (participantId != null) __obj.updateDynamic("participantId")(participantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoomModification]
   }
+  @scala.inline
+  implicit class SchemaRoomModificationOps[Self <: SchemaRoomModification] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setModifiedTimestampMillis(value: String): Self = this.set("modifiedTimestampMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifiedTimestampMillis: Self = this.set("modifiedTimestampMillis", js.undefined)
+    @scala.inline
+    def setParticipantId(value: String): Self = this.set("participantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipantId: Self = this.set("participantId", js.undefined)
+  }
+  
 }
 

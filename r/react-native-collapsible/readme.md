@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-collapsible
 
-Typings are for version 1.5.2
+Typings are for version 1.5.3
 
 ## Library description:
 Animated collapsible component for React Native using the Animated API. Good for accordions, toggles etc
@@ -10,9 +10,9 @@ Animated collapsible component for React Native using the Animated API. Good for
 | ------------------ | :-------------: |
 | Full name          | react-native-collapsible |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, ui, collapse, collapsible, toggle, accordion |
-| # releases         | 18 |
-| # dependents       | 65 |
-| # downloads        | 1564711 |
+| # releases         | 17 |
+| # dependents       | 67 |
+| # downloads        | 1595686 |
 | # stars            | 7 |
 
 ## Links

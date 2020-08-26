@@ -12,7 +12,7 @@ AngujarJS Environment Plugin
 | Keywords           | angular, angularjs, environment, env |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 25869 |
+| # downloads        | 25591 |
 | # stars            | 1 |
 
 ## Links

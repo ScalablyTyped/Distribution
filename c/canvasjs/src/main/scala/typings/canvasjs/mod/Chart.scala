@@ -49,12 +49,30 @@ class Chart protected () extends js.Object {
     * @param updateChart When true, Updates the chart automatically after setting the value. Defaults to true.
     */
   def addTo(propertyName: String, options: ChartAxisXOptions): Unit = js.native
+  def addTo(
+    propertyName: String,
+    options: ChartAxisXOptions,
+    index: js.UndefOr[scala.Nothing],
+    updateChart: Boolean
+  ): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisXOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisXOptions, index: Double, updateChart: Boolean): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisYOptions): Unit = js.native
+  def addTo(
+    propertyName: String,
+    options: ChartAxisYOptions,
+    index: js.UndefOr[scala.Nothing],
+    updateChart: Boolean
+  ): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisYOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartAxisYOptions, index: Double, updateChart: Boolean): Unit = js.native
   def addTo(propertyName: String, options: ChartDataSeriesOptions): Unit = js.native
+  def addTo(
+    propertyName: String,
+    options: ChartDataSeriesOptions,
+    index: js.UndefOr[scala.Nothing],
+    updateChart: Boolean
+  ): Unit = js.native
   def addTo(propertyName: String, options: ChartDataSeriesOptions, index: Double): Unit = js.native
   def addTo(propertyName: String, options: ChartDataSeriesOptions, index: Double, updateChart: Boolean): Unit = js.native
   /**

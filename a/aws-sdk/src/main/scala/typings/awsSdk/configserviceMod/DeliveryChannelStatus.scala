@@ -26,18 +26,38 @@ trait DeliveryChannelStatus extends js.Object {
 
 object DeliveryChannelStatus {
   @scala.inline
-  def apply(
-    configHistoryDeliveryInfo: ConfigExportDeliveryInfo = null,
-    configSnapshotDeliveryInfo: ConfigExportDeliveryInfo = null,
-    configStreamDeliveryInfo: ConfigStreamDeliveryInfo = null,
-    name: String = null
-  ): DeliveryChannelStatus = {
+  def apply(): DeliveryChannelStatus = {
     val __obj = js.Dynamic.literal()
-    if (configHistoryDeliveryInfo != null) __obj.updateDynamic("configHistoryDeliveryInfo")(configHistoryDeliveryInfo.asInstanceOf[js.Any])
-    if (configSnapshotDeliveryInfo != null) __obj.updateDynamic("configSnapshotDeliveryInfo")(configSnapshotDeliveryInfo.asInstanceOf[js.Any])
-    if (configStreamDeliveryInfo != null) __obj.updateDynamic("configStreamDeliveryInfo")(configStreamDeliveryInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryChannelStatus]
   }
+  @scala.inline
+  implicit class DeliveryChannelStatusOps[Self <: DeliveryChannelStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigHistoryDeliveryInfo(value: ConfigExportDeliveryInfo): Self = this.set("configHistoryDeliveryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigHistoryDeliveryInfo: Self = this.set("configHistoryDeliveryInfo", js.undefined)
+    @scala.inline
+    def setConfigSnapshotDeliveryInfo(value: ConfigExportDeliveryInfo): Self = this.set("configSnapshotDeliveryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigSnapshotDeliveryInfo: Self = this.set("configSnapshotDeliveryInfo", js.undefined)
+    @scala.inline
+    def setConfigStreamDeliveryInfo(value: ConfigStreamDeliveryInfo): Self = this.set("configStreamDeliveryInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigStreamDeliveryInfo: Self = this.set("configStreamDeliveryInfo", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

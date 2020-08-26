@@ -1,7 +1,5 @@
 package typings.xml.mod
 
-import org.scalablytyped.runtime.NumberDictionary
-import typings.xml.anon.Attr
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,9 +23,8 @@ object _XmlDesc {
     __obj.asInstanceOf[_XmlDesc]
   }
   @scala.inline
-  def XmlDescArray(NumberDictionary: /* index */ NumberDictionary[Attr | XmlObject] = null): _XmlDesc = {
+  def XmlDescArray(): _XmlDesc = {
     val __obj = js.Dynamic.literal()
-    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[_XmlDesc]
   }
 }

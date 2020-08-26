@@ -64,22 +64,59 @@ object FirehoseDeliveryStreamRedshiftConfiguration {
     dataTableName: String,
     password: String,
     roleArn: String,
-    username: String,
-    copyOptions: String = null,
-    dataTableColumns: String = null,
-    processingConfiguration: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration = null,
-    retryDuration: js.UndefOr[Double] = js.undefined,
-    s3BackupConfiguration: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration = null,
-    s3BackupMode: String = null
+    username: String
   ): FirehoseDeliveryStreamRedshiftConfiguration = {
     val __obj = js.Dynamic.literal(cloudwatchLoggingOptions = cloudwatchLoggingOptions.asInstanceOf[js.Any], clusterJdbcurl = clusterJdbcurl.asInstanceOf[js.Any], dataTableName = dataTableName.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
-    if (copyOptions != null) __obj.updateDynamic("copyOptions")(copyOptions.asInstanceOf[js.Any])
-    if (dataTableColumns != null) __obj.updateDynamic("dataTableColumns")(dataTableColumns.asInstanceOf[js.Any])
-    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryDuration)) __obj.updateDynamic("retryDuration")(retryDuration.get.asInstanceOf[js.Any])
-    if (s3BackupConfiguration != null) __obj.updateDynamic("s3BackupConfiguration")(s3BackupConfiguration.asInstanceOf[js.Any])
-    if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamRedshiftConfiguration]
   }
+  @scala.inline
+  implicit class FirehoseDeliveryStreamRedshiftConfigurationOps[Self <: FirehoseDeliveryStreamRedshiftConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions): Self = this.set("cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClusterJdbcurl(value: String): Self = this.set("clusterJdbcurl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataTableName(value: String): Self = this.set("dataTableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: String): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: String): Self = this.set("username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopyOptions(value: String): Self = this.set("copyOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyOptions: Self = this.set("copyOptions", js.undefined)
+    @scala.inline
+    def setDataTableColumns(value: String): Self = this.set("dataTableColumns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTableColumns: Self = this.set("dataTableColumns", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+    @scala.inline
+    def setRetryDuration(value: Double): Self = this.set("retryDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetryDuration: Self = this.set("retryDuration", js.undefined)
+    @scala.inline
+    def setS3BackupConfiguration(value: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration): Self = this.set("s3BackupConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupConfiguration: Self = this.set("s3BackupConfiguration", js.undefined)
+    @scala.inline
+    def setS3BackupMode(value: String): Self = this.set("s3BackupMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3BackupMode: Self = this.set("s3BackupMode", js.undefined)
+  }
+  
 }
 

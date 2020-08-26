@@ -47,6 +47,7 @@ class Oauth2 protected () extends js.Object {
     */
   def tokeninfo(): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
+  def tokeninfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(params: ParamsTokeninfo): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(params: ParamsTokeninfo, callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
   def tokeninfo(

@@ -28,9 +28,9 @@ object default extends js.Object {
     /* type */ String, 
     /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
     /* text */ String, 
-    js.UndefOr[/* pos */ Double], 
-    js.UndefOr[/* line */ Double], 
-    js.UndefOr[/* column */ Double], 
+    /* pos */ js.UndefOr[Double], 
+    /* line */ js.UndefOr[Double], 
+    /* column */ js.UndefOr[Double], 
     typings.tokenizr.mod.Token[js.Object]
   ] = js.native
 }

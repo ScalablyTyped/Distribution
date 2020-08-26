@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 class Label ()
   extends typings.plottable.labelMod.Label {
   def this(displayText: String) = this()
+  def this(displayText: js.UndefOr[scala.Nothing], angle: Double) = this()
   def this(displayText: String, angle: Double) = this()
 }
 

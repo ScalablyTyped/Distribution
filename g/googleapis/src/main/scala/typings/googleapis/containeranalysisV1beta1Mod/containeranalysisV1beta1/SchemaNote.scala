@@ -82,42 +82,90 @@ trait SchemaNote extends js.Object {
 
 object SchemaNote {
   @scala.inline
-  def apply(
-    _package: SchemaPackage = null,
-    attestationAuthority: SchemaAuthority = null,
-    baseImage: SchemaBasis = null,
-    build: SchemaBuild = null,
-    createTime: String = null,
-    deployable: SchemaDeployable = null,
-    discovery: SchemaDiscovery = null,
-    expirationTime: String = null,
-    kind: String = null,
-    longDescription: String = null,
-    name: String = null,
-    relatedNoteNames: js.Array[String] = null,
-    relatedUrl: js.Array[SchemaRelatedUrl] = null,
-    shortDescription: String = null,
-    updateTime: String = null,
-    vulnerability: SchemaVulnerability = null
-  ): SchemaNote = {
+  def apply(): SchemaNote = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (attestationAuthority != null) __obj.updateDynamic("attestationAuthority")(attestationAuthority.asInstanceOf[js.Any])
-    if (baseImage != null) __obj.updateDynamic("baseImage")(baseImage.asInstanceOf[js.Any])
-    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (deployable != null) __obj.updateDynamic("deployable")(deployable.asInstanceOf[js.Any])
-    if (discovery != null) __obj.updateDynamic("discovery")(discovery.asInstanceOf[js.Any])
-    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (longDescription != null) __obj.updateDynamic("longDescription")(longDescription.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (relatedNoteNames != null) __obj.updateDynamic("relatedNoteNames")(relatedNoteNames.asInstanceOf[js.Any])
-    if (relatedUrl != null) __obj.updateDynamic("relatedUrl")(relatedUrl.asInstanceOf[js.Any])
-    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (vulnerability != null) __obj.updateDynamic("vulnerability")(vulnerability.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNote]
   }
+  @scala.inline
+  implicit class SchemaNoteOps[Self <: SchemaNote] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: SchemaPackage): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_package: Self = this.set("package", js.undefined)
+    @scala.inline
+    def setAttestationAuthority(value: SchemaAuthority): Self = this.set("attestationAuthority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttestationAuthority: Self = this.set("attestationAuthority", js.undefined)
+    @scala.inline
+    def setBaseImage(value: SchemaBasis): Self = this.set("baseImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseImage: Self = this.set("baseImage", js.undefined)
+    @scala.inline
+    def setBuild(value: SchemaBuild): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDeployable(value: SchemaDeployable): Self = this.set("deployable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployable: Self = this.set("deployable", js.undefined)
+    @scala.inline
+    def setDiscovery(value: SchemaDiscovery): Self = this.set("discovery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscovery: Self = this.set("discovery", js.undefined)
+    @scala.inline
+    def setExpirationTime(value: String): Self = this.set("expirationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpirationTime: Self = this.set("expirationTime", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLongDescription(value: String): Self = this.set("longDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongDescription: Self = this.set("longDescription", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRelatedNoteNamesVarargs(value: String*): Self = this.set("relatedNoteNames", js.Array(value :_*))
+    @scala.inline
+    def setRelatedNoteNames(value: js.Array[String]): Self = this.set("relatedNoteNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedNoteNames: Self = this.set("relatedNoteNames", js.undefined)
+    @scala.inline
+    def setRelatedUrlVarargs(value: SchemaRelatedUrl*): Self = this.set("relatedUrl", js.Array(value :_*))
+    @scala.inline
+    def setRelatedUrl(value: js.Array[SchemaRelatedUrl]): Self = this.set("relatedUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedUrl: Self = this.set("relatedUrl", js.undefined)
+    @scala.inline
+    def setShortDescription(value: String): Self = this.set("shortDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortDescription: Self = this.set("shortDescription", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setVulnerability(value: SchemaVulnerability): Self = this.set("vulnerability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVulnerability: Self = this.set("vulnerability", js.undefined)
+  }
+  
 }
 

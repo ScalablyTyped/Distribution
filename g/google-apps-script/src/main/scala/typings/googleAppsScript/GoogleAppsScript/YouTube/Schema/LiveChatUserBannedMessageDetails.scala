@@ -4,24 +4,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LiveChatUserBannedMessageDetails extends js.Object {
-  var banDurationSeconds: js.UndefOr[String] = js.undefined
-  var banType: js.UndefOr[String] = js.undefined
-  var bannedUserDetails: js.UndefOr[ChannelProfileDetails] = js.undefined
+  var banDurationSeconds: js.UndefOr[String] = js.native
+  var banType: js.UndefOr[String] = js.native
+  var bannedUserDetails: js.UndefOr[ChannelProfileDetails] = js.native
 }
 
 object LiveChatUserBannedMessageDetails {
   @scala.inline
-  def apply(
-    banDurationSeconds: String = null,
-    banType: String = null,
-    bannedUserDetails: ChannelProfileDetails = null
-  ): LiveChatUserBannedMessageDetails = {
+  def apply(): LiveChatUserBannedMessageDetails = {
     val __obj = js.Dynamic.literal()
-    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds.asInstanceOf[js.Any])
-    if (banType != null) __obj.updateDynamic("banType")(banType.asInstanceOf[js.Any])
-    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiveChatUserBannedMessageDetails]
   }
+  @scala.inline
+  implicit class LiveChatUserBannedMessageDetailsOps[Self <: LiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBanDurationSeconds(value: String): Self = this.set("banDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBanDurationSeconds: Self = this.set("banDurationSeconds", js.undefined)
+    @scala.inline
+    def setBanType(value: String): Self = this.set("banType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBanType: Self = this.set("banType", js.undefined)
+    @scala.inline
+    def setBannedUserDetails(value: ChannelProfileDetails): Self = this.set("bannedUserDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannedUserDetails: Self = this.set("bannedUserDetails", js.undefined)
+  }
+  
 }
 

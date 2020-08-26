@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait args extends js.Object {
   var sub: js.Array[String] = js.native
   def command(name: String, description: String): args = js.native
+  def command(name: String, description: String, init: js.UndefOr[scala.Nothing], aliases: js.Array[String]): args = js.native
   def command(
     name: String,
     description: String,
@@ -33,9 +34,21 @@ trait args extends js.Object {
   def example(usage: String, description: String): args = js.native
   def examples(list: js.Array[Example]): args = js.native
   def option(name: String, description: String): args = js.native
+  def option(
+    name: String,
+    description: String,
+    defaultValue: js.UndefOr[scala.Nothing],
+    init: OptionInitFunction
+  ): args = js.native
   def option(name: String, description: String, defaultValue: js.Any): args = js.native
   def option(name: String, description: String, defaultValue: js.Any, init: OptionInitFunction): args = js.native
   def option(name: js.Tuple2[String, String], description: String): args = js.native
+  def option(
+    name: js.Tuple2[String, String],
+    description: String,
+    defaultValue: js.UndefOr[scala.Nothing],
+    init: OptionInitFunction
+  ): args = js.native
   def option(name: js.Tuple2[String, String], description: String, defaultValue: js.Any): args = js.native
   def option(
     name: js.Tuple2[String, String],

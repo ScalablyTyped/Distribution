@@ -28,6 +28,11 @@ trait Pbf extends js.Object {
     result: T,
     end: Double
   ): T = js.native
+  def readFields[T](
+    readField: js.Function3[/* tag */ Double, /* result */ js.UndefOr[T], /* pbf */ js.UndefOr[this.type], Unit],
+    result: js.UndefOr[scala.Nothing],
+    end: Double
+  ): T = js.native
   def readFixed32(): Double = js.native
   def readFixed64(): Double = js.native
   def readFloat(): Double = js.native
@@ -55,6 +60,7 @@ trait Pbf extends js.Object {
   def readPackedSVarint(): js.Array[Double] = js.native
   def readPackedSVarint(arr: js.Array[Double]): js.Array[Double] = js.native
   def readPackedVarint(): js.Array[Double] = js.native
+  def readPackedVarint(arr: js.UndefOr[scala.Nothing], isSigned: Boolean): js.Array[Double] = js.native
   def readPackedVarint(arr: js.Array[Double]): js.Array[Double] = js.native
   def readPackedVarint(arr: js.Array[Double], isSigned: Boolean): js.Array[Double] = js.native
   def readSFixed32(): Double = js.native

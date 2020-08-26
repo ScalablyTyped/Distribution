@@ -14,18 +14,38 @@ trait Self extends js.Object {
 
 object Self {
   @scala.inline
-  def apply(
-    displayName: String = null,
-    email: String = null,
-    id: String = null,
-    self: js.UndefOr[Boolean] = js.undefined
-  ): Self = {
+  def apply(): Self = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Self]
   }
+  @scala.inline
+  implicit class SelfOps[Self_ <: Self] (val x: Self_) extends AnyVal {
+    @scala.inline
+    def duplicate: Self_ = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self_]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self_ with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self_ with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self_ = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayName(value: String): Self_ = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self_ = this.set("displayName", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self_ = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self_ = this.set("email", js.undefined)
+    @scala.inline
+    def setId(value: String): Self_ = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self_ = this.set("id", js.undefined)
+    @scala.inline
+    def setSelf(value: Boolean): Self_ = this.set("self", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelf: Self_ = this.set("self", js.undefined)
+  }
+  
 }
 

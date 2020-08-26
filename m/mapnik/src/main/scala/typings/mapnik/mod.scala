@@ -73,6 +73,11 @@ object mod extends js.Object {
   class VectorTile protected () extends js.Object {
     def this(z: Double, x: Double, y: Double) = this()
     def addData(buffer: Buffer): Unit = js.native
+    def addData(
+      buffer: Buffer,
+      options: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
     def addData(buffer: Buffer, options: Upgrade): Unit = js.native
     def addData(buffer: Buffer, options: Upgrade, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def addDataSync(buffer: Buffer): Unit = js.native
@@ -98,6 +103,7 @@ object mod extends js.Object {
     def emptyLayers(): js.Array[String] = js.native
     def extent(): js.Tuple4[Double, Double, Double, Double] = js.native
     def getData(): Unit = js.native
+    def getData(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def getData(options: Compression): Unit = js.native
     def getData(options: Compression, callback: js.Function0[Unit]): Unit = js.native
     def getDataSync(): Unit = js.native
@@ -108,6 +114,12 @@ object mod extends js.Object {
     def painted(): Boolean = js.native
     def paintedLayers(): js.Array[String] = js.native
     def query(longitude: Double, latitude: Double): Unit = js.native
+    def query(
+      longitude: Double,
+      latitude: Double,
+      options: js.UndefOr[scala.Nothing],
+      callback: js.Function2[/* err */ Error, /* features */ js.Array[Feature], Unit]
+    ): Unit = js.native
     def query(longitude: Double, latitude: Double, options: Layer): Unit = js.native
     def query(
       longitude: Double,

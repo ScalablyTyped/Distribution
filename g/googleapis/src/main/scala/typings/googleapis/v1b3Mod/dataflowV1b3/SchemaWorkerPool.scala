@@ -130,52 +130,110 @@ trait SchemaWorkerPool extends js.Object {
 
 object SchemaWorkerPool {
   @scala.inline
-  def apply(
-    autoscalingSettings: SchemaAutoscalingSettings = null,
-    dataDisks: js.Array[SchemaDisk] = null,
-    defaultPackageSet: String = null,
-    diskSizeGb: js.UndefOr[Double] = js.undefined,
-    diskSourceImage: String = null,
-    diskType: String = null,
-    ipConfiguration: String = null,
-    kind: String = null,
-    machineType: String = null,
-    metadata: StringDictionary[String] = null,
-    network: String = null,
-    numThreadsPerWorker: js.UndefOr[Double] = js.undefined,
-    numWorkers: js.UndefOr[Double] = js.undefined,
-    onHostMaintenance: String = null,
-    packages: js.Array[SchemaPackage] = null,
-    poolArgs: StringDictionary[js.Any] = null,
-    subnetwork: String = null,
-    taskrunnerSettings: SchemaTaskRunnerSettings = null,
-    teardownPolicy: String = null,
-    workerHarnessContainerImage: String = null,
-    zone: String = null
-  ): SchemaWorkerPool = {
+  def apply(): SchemaWorkerPool = {
     val __obj = js.Dynamic.literal()
-    if (autoscalingSettings != null) __obj.updateDynamic("autoscalingSettings")(autoscalingSettings.asInstanceOf[js.Any])
-    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks.asInstanceOf[js.Any])
-    if (defaultPackageSet != null) __obj.updateDynamic("defaultPackageSet")(defaultPackageSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(diskSizeGb)) __obj.updateDynamic("diskSizeGb")(diskSizeGb.get.asInstanceOf[js.Any])
-    if (diskSourceImage != null) __obj.updateDynamic("diskSourceImage")(diskSourceImage.asInstanceOf[js.Any])
-    if (diskType != null) __obj.updateDynamic("diskType")(diskType.asInstanceOf[js.Any])
-    if (ipConfiguration != null) __obj.updateDynamic("ipConfiguration")(ipConfiguration.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (!js.isUndefined(numThreadsPerWorker)) __obj.updateDynamic("numThreadsPerWorker")(numThreadsPerWorker.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numWorkers)) __obj.updateDynamic("numWorkers")(numWorkers.get.asInstanceOf[js.Any])
-    if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance.asInstanceOf[js.Any])
-    if (packages != null) __obj.updateDynamic("packages")(packages.asInstanceOf[js.Any])
-    if (poolArgs != null) __obj.updateDynamic("poolArgs")(poolArgs.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
-    if (taskrunnerSettings != null) __obj.updateDynamic("taskrunnerSettings")(taskrunnerSettings.asInstanceOf[js.Any])
-    if (teardownPolicy != null) __obj.updateDynamic("teardownPolicy")(teardownPolicy.asInstanceOf[js.Any])
-    if (workerHarnessContainerImage != null) __obj.updateDynamic("workerHarnessContainerImage")(workerHarnessContainerImage.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkerPool]
   }
+  @scala.inline
+  implicit class SchemaWorkerPoolOps[Self <: SchemaWorkerPool] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingSettings(value: SchemaAutoscalingSettings): Self = this.set("autoscalingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingSettings: Self = this.set("autoscalingSettings", js.undefined)
+    @scala.inline
+    def setDataDisksVarargs(value: SchemaDisk*): Self = this.set("dataDisks", js.Array(value :_*))
+    @scala.inline
+    def setDataDisks(value: js.Array[SchemaDisk]): Self = this.set("dataDisks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataDisks: Self = this.set("dataDisks", js.undefined)
+    @scala.inline
+    def setDefaultPackageSet(value: String): Self = this.set("defaultPackageSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPackageSet: Self = this.set("defaultPackageSet", js.undefined)
+    @scala.inline
+    def setDiskSizeGb(value: Double): Self = this.set("diskSizeGb", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSizeGb: Self = this.set("diskSizeGb", js.undefined)
+    @scala.inline
+    def setDiskSourceImage(value: String): Self = this.set("diskSourceImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskSourceImage: Self = this.set("diskSourceImage", js.undefined)
+    @scala.inline
+    def setDiskType(value: String): Self = this.set("diskType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskType: Self = this.set("diskType", js.undefined)
+    @scala.inline
+    def setIpConfiguration(value: String): Self = this.set("ipConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpConfiguration: Self = this.set("ipConfiguration", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNumThreadsPerWorker(value: Double): Self = this.set("numThreadsPerWorker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumThreadsPerWorker: Self = this.set("numThreadsPerWorker", js.undefined)
+    @scala.inline
+    def setNumWorkers(value: Double): Self = this.set("numWorkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumWorkers: Self = this.set("numWorkers", js.undefined)
+    @scala.inline
+    def setOnHostMaintenance(value: String): Self = this.set("onHostMaintenance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnHostMaintenance: Self = this.set("onHostMaintenance", js.undefined)
+    @scala.inline
+    def setPackagesVarargs(value: SchemaPackage*): Self = this.set("packages", js.Array(value :_*))
+    @scala.inline
+    def setPackages(value: js.Array[SchemaPackage]): Self = this.set("packages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackages: Self = this.set("packages", js.undefined)
+    @scala.inline
+    def setPoolArgs(value: StringDictionary[js.Any]): Self = this.set("poolArgs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePoolArgs: Self = this.set("poolArgs", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+    @scala.inline
+    def setTaskrunnerSettings(value: SchemaTaskRunnerSettings): Self = this.set("taskrunnerSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskrunnerSettings: Self = this.set("taskrunnerSettings", js.undefined)
+    @scala.inline
+    def setTeardownPolicy(value: String): Self = this.set("teardownPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeardownPolicy: Self = this.set("teardownPolicy", js.undefined)
+    @scala.inline
+    def setWorkerHarnessContainerImage(value: String): Self = this.set("workerHarnessContainerImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerHarnessContainerImage: Self = this.set("workerHarnessContainerImage", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

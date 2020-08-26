@@ -82,6 +82,7 @@ class Room protected () extends js.Object {
   def removeEvents(event_ids: js.Array[String]): Unit = js.native
   def removeFilteredTimelineSet(filter: Filter): Unit = js.native
   def resetLiveTimeline(): Unit = js.native
+  def resetLiveTimeline(backPaginationToken: js.UndefOr[scala.Nothing], forwardPaginationToken: String): Unit = js.native
   def resetLiveTimeline(backPaginationToken: String): Unit = js.native
   def resetLiveTimeline(backPaginationToken: String, forwardPaginationToken: String): Unit = js.native
   def setBlacklistUnverifiedDevices(value: Boolean): Unit = js.native

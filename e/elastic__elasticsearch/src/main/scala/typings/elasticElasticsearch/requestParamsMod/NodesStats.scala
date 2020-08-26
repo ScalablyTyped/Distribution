@@ -7,62 +7,97 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesStats extends Generic {
-  var completion_fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var fields: js.UndefOr[String | js.Array[String]] = js.undefined
-  var groups: js.UndefOr[Boolean] = js.undefined
-  var include_segment_file_sizes: js.UndefOr[Boolean] = js.undefined
-  var index_metric: js.UndefOr[String | js.Array[String]] = js.undefined
-  var level: js.UndefOr[indices | node | shards] = js.undefined
-  var metric: js.UndefOr[String | js.Array[String]] = js.undefined
-  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
-  var timeout: js.UndefOr[String] = js.undefined
-  var types: js.UndefOr[String | js.Array[String]] = js.undefined
+  var completion_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fielddata_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var fields: js.UndefOr[String | js.Array[String]] = js.native
+  var groups: js.UndefOr[Boolean] = js.native
+  var include_segment_file_sizes: js.UndefOr[Boolean] = js.native
+  var index_metric: js.UndefOr[String | js.Array[String]] = js.native
+  var level: js.UndefOr[indices | node | shards] = js.native
+  var metric: js.UndefOr[String | js.Array[String]] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var timeout: js.UndefOr[String] = js.native
+  var types: js.UndefOr[String | js.Array[String]] = js.native
 }
 
 object NodesStats {
   @scala.inline
-  def apply(
-    completion_fields: String | js.Array[String] = null,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    fielddata_fields: String | js.Array[String] = null,
-    fields: String | js.Array[String] = null,
-    filter_path: String | js.Array[String] = null,
-    groups: js.UndefOr[Boolean] = js.undefined,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    include_segment_file_sizes: js.UndefOr[Boolean] = js.undefined,
-    index_metric: String | js.Array[String] = null,
-    level: indices | node | shards = null,
-    method: String = null,
-    metric: String | js.Array[String] = null,
-    node_id: String | js.Array[String] = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    timeout: String = null,
-    types: String | js.Array[String] = null
-  ): NodesStats = {
+  def apply(): NodesStats = {
     val __obj = js.Dynamic.literal()
-    if (completion_fields != null) __obj.updateDynamic("completion_fields")(completion_fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (fielddata_fields != null) __obj.updateDynamic("fielddata_fields")(fielddata_fields.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(groups)) __obj.updateDynamic("groups")(groups.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_segment_file_sizes)) __obj.updateDynamic("include_segment_file_sizes")(include_segment_file_sizes.get.asInstanceOf[js.Any])
-    if (index_metric != null) __obj.updateDynamic("index_metric")(index_metric.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (metric != null) __obj.updateDynamic("metric")(metric.asInstanceOf[js.Any])
-    if (node_id != null) __obj.updateDynamic("node_id")(node_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodesStats]
   }
+  @scala.inline
+  implicit class NodesStatsOps[Self <: NodesStats] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletion_fieldsVarargs(value: String*): Self = this.set("completion_fields", js.Array(value :_*))
+    @scala.inline
+    def setCompletion_fields(value: String | js.Array[String]): Self = this.set("completion_fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletion_fields: Self = this.set("completion_fields", js.undefined)
+    @scala.inline
+    def setFielddata_fieldsVarargs(value: String*): Self = this.set("fielddata_fields", js.Array(value :_*))
+    @scala.inline
+    def setFielddata_fields(value: String | js.Array[String]): Self = this.set("fielddata_fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFielddata_fields: Self = this.set("fielddata_fields", js.undefined)
+    @scala.inline
+    def setFieldsVarargs(value: String*): Self = this.set("fields", js.Array(value :_*))
+    @scala.inline
+    def setFields(value: String | js.Array[String]): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setGroups(value: Boolean): Self = this.set("groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("groups", js.undefined)
+    @scala.inline
+    def setInclude_segment_file_sizes(value: Boolean): Self = this.set("include_segment_file_sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInclude_segment_file_sizes: Self = this.set("include_segment_file_sizes", js.undefined)
+    @scala.inline
+    def setIndex_metricVarargs(value: String*): Self = this.set("index_metric", js.Array(value :_*))
+    @scala.inline
+    def setIndex_metric(value: String | js.Array[String]): Self = this.set("index_metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex_metric: Self = this.set("index_metric", js.undefined)
+    @scala.inline
+    def setLevel(value: indices | node | shards): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setMetricVarargs(value: String*): Self = this.set("metric", js.Array(value :_*))
+    @scala.inline
+    def setMetric(value: String | js.Array[String]): Self = this.set("metric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetric: Self = this.set("metric", js.undefined)
+    @scala.inline
+    def setNode_idVarargs(value: String*): Self = this.set("node_id", js.Array(value :_*))
+    @scala.inline
+    def setNode_id(value: String | js.Array[String]): Self = this.set("node_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNode_id: Self = this.set("node_id", js.undefined)
+    @scala.inline
+    def setTimeout(value: String): Self = this.set("timeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeout: Self = this.set("timeout", js.undefined)
+    @scala.inline
+    def setTypesVarargs(value: String*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: String | js.Array[String]): Self = this.set("types", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypes: Self = this.set("types", js.undefined)
+  }
+  
 }
 

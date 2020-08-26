@@ -20,11 +20,6 @@ object referralMod extends js.Object {
     def this(incomingReferRequest: IncomingReferRequest, session: Session) = this()
     var incomingReferRequest: js.Any = js.native
     var inviter: js.Any = js.native
-    val referTo: NameAddrHeader = js.native
-    val referredBy: js.UndefOr[String] = js.native
-    val replaces: js.UndefOr[String] = js.native
-    /** Incoming REFER request message. */
-    val request: IncomingRequestMessage = js.native
     var session: js.Any = js.native
     /** Accept the request. */
     def accept(): js.Promise[Unit] = js.native
@@ -44,9 +39,14 @@ object referralMod extends js.Object {
       */
     def makeInviter(): Inviter = js.native
     def makeInviter(options: InviterOptions): Inviter = js.native
+    def referTo: NameAddrHeader = js.native
+    def referredBy: js.UndefOr[String] = js.native
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native
     def reject(options: ResponseOptions): js.Promise[Unit] = js.native
+    def replaces: js.UndefOr[String] = js.native
+    /** Incoming REFER request message. */
+    def request: IncomingRequestMessage = js.native
   }
   
 }

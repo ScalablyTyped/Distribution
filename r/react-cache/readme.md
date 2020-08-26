@@ -12,7 +12,7 @@ A basic cache for React applications
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 5 |
-| # downloads        | 118738 |
+| # downloads        | 120630 |
 | # stars            | 0 |
 
 ## Links

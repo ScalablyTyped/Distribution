@@ -30,19 +30,40 @@ trait ListResourceRecordSetsRequest extends js.Object {
 
 object ListResourceRecordSetsRequest {
   @scala.inline
-  def apply(
-    HostedZoneId: ResourceId,
-    MaxItems: PageMaxItems = null,
-    StartRecordIdentifier: ResourceRecordSetIdentifier = null,
-    StartRecordName: DNSName = null,
-    StartRecordType: RRType = null
-  ): ListResourceRecordSetsRequest = {
+  def apply(HostedZoneId: ResourceId): ListResourceRecordSetsRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
-    if (MaxItems != null) __obj.updateDynamic("MaxItems")(MaxItems.asInstanceOf[js.Any])
-    if (StartRecordIdentifier != null) __obj.updateDynamic("StartRecordIdentifier")(StartRecordIdentifier.asInstanceOf[js.Any])
-    if (StartRecordName != null) __obj.updateDynamic("StartRecordName")(StartRecordName.asInstanceOf[js.Any])
-    if (StartRecordType != null) __obj.updateDynamic("StartRecordType")(StartRecordType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceRecordSetsRequest]
   }
+  @scala.inline
+  implicit class ListResourceRecordSetsRequestOps[Self <: ListResourceRecordSetsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostedZoneId(value: ResourceId): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxItems(value: PageMaxItems): Self = this.set("MaxItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxItems: Self = this.set("MaxItems", js.undefined)
+    @scala.inline
+    def setStartRecordIdentifier(value: ResourceRecordSetIdentifier): Self = this.set("StartRecordIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRecordIdentifier: Self = this.set("StartRecordIdentifier", js.undefined)
+    @scala.inline
+    def setStartRecordName(value: DNSName): Self = this.set("StartRecordName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRecordName: Self = this.set("StartRecordName", js.undefined)
+    @scala.inline
+    def setStartRecordType(value: RRType): Self = this.set("StartRecordType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRecordType: Self = this.set("StartRecordType", js.undefined)
+  }
+  
 }
 

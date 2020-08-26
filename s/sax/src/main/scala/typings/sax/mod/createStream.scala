@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createStream extends js.Object {
   def apply(): SAXStream = js.native
+  def apply(strict: js.UndefOr[scala.Nothing], opt: SAXOptions): SAXStream = js.native
   def apply(strict: Boolean): SAXStream = js.native
   def apply(strict: Boolean, opt: SAXOptions): SAXStream = js.native
 }

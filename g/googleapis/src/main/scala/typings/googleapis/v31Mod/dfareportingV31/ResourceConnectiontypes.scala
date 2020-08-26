@@ -28,6 +28,7 @@ class ResourceConnectiontypes protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaConnectionType] = js.native
   def get(callback: BodyResponseCallback[SchemaConnectionType]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConnectionType] = js.native
   def get(params: ParamsResourceConnectiontypesGet): GaxiosPromise[SchemaConnectionType] = js.native
   def get(params: ParamsResourceConnectiontypesGet, callback: BodyResponseCallback[SchemaConnectionType]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceConnectiontypes protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaConnectionTypesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaConnectionTypesListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaConnectionTypesListResponse] = js.native
   def list(params: ParamsResourceConnectiontypesList): GaxiosPromise[SchemaConnectionTypesListResponse] = js.native
   def list(
     params: ParamsResourceConnectiontypesList,

@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmbeddedOptions extends js.Object {
-  var container: js.UndefOr[HTMLElement] = js.undefined
-  var height: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var sessionKey: js.UndefOr[String] = js.undefined
-  var timeoutInMilliseconds: js.UndefOr[Double] = js.undefined
-  var width: js.UndefOr[String] = js.undefined
+  var container: js.UndefOr[HTMLElement] = js.native
+  var height: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.native
+  var sessionKey: js.UndefOr[String] = js.native
+  var timeoutInMilliseconds: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[String] = js.native
 }
 
 object EmbeddedOptions {
   @scala.inline
-  def apply(
-    container: HTMLElement = null,
-    height: String = null,
-    id: String = null,
-    sessionKey: String = null,
-    timeoutInMilliseconds: js.UndefOr[Double] = js.undefined,
-    width: String = null
-  ): EmbeddedOptions = {
+  def apply(): EmbeddedOptions = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (sessionKey != null) __obj.updateDynamic("sessionKey")(sessionKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeoutInMilliseconds)) __obj.updateDynamic("timeoutInMilliseconds")(timeoutInMilliseconds.get.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmbeddedOptions]
   }
+  @scala.inline
+  implicit class EmbeddedOptionsOps[Self <: EmbeddedOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: HTMLElement): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setHeight(value: String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setSessionKey(value: String): Self = this.set("sessionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionKey: Self = this.set("sessionKey", js.undefined)
+    @scala.inline
+    def setTimeoutInMilliseconds(value: Double): Self = this.set("timeoutInMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMilliseconds: Self = this.set("timeoutInMilliseconds", js.undefined)
+    @scala.inline
+    def setWidth(value: String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

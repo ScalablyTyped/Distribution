@@ -1,6 +1,9 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`bing-maps`
+import typings.arcgisJsApi.arcgisJsApiStrings.aerial
+import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
+import typings.arcgisJsApi.arcgisJsApiStrings.road
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -50,13 +53,13 @@ trait BingMapsLayer extends BaseTileLayer {
     */
   var region: String = js.native
   /**
-    * The three supported maps are: `road` | `aerial` | `hybrid`  For more information on Bing map styles please visit: https://msdn.microsoft.com/en-us/library/ff701716.aspx
+    * For more information on Bing map styles please visit: https://msdn.microsoft.com/en-us/library/ff701716.aspx
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#style)
     *
     * @default "road"
     */
-  var style: String = js.native
+  var style: road | aerial | hybrid = js.native
   @JSName("type")
   val type_BingMapsLayer: `bing-maps` = js.native
 }

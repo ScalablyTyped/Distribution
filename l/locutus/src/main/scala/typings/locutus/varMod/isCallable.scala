@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object isCallable extends js.Object {
   def apply(): js.Any = js.native
+  def apply(mixedVar: js.UndefOr[scala.Nothing], syntaxOnly: js.UndefOr[scala.Nothing], callableName: js.Any): js.Any = js.native
+  def apply(mixedVar: js.UndefOr[scala.Nothing], syntaxOnly: js.Any): js.Any = js.native
+  def apply(mixedVar: js.UndefOr[scala.Nothing], syntaxOnly: js.Any, callableName: js.Any): js.Any = js.native
   def apply(mixedVar: js.Any): js.Any = js.native
+  def apply(mixedVar: js.Any, syntaxOnly: js.UndefOr[scala.Nothing], callableName: js.Any): js.Any = js.native
   def apply(mixedVar: js.Any, syntaxOnly: js.Any): js.Any = js.native
   def apply(mixedVar: js.Any, syntaxOnly: js.Any, callableName: js.Any): js.Any = js.native
 }

@@ -28,11 +28,32 @@ trait SchemaListStepThumbnailsResponse extends js.Object {
 
 object SchemaListStepThumbnailsResponse {
   @scala.inline
-  def apply(nextPageToken: String = null, thumbnails: js.Array[SchemaImage] = null): SchemaListStepThumbnailsResponse = {
+  def apply(): SchemaListStepThumbnailsResponse = {
     val __obj = js.Dynamic.literal()
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListStepThumbnailsResponse]
   }
+  @scala.inline
+  implicit class SchemaListStepThumbnailsResponseOps[Self <: SchemaListStepThumbnailsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+    @scala.inline
+    def setThumbnailsVarargs(value: SchemaImage*): Self = this.set("thumbnails", js.Array(value :_*))
+    @scala.inline
+    def setThumbnails(value: js.Array[SchemaImage]): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+  }
+  
 }
 

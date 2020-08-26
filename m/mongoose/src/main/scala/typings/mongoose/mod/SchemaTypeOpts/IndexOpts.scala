@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IndexOpts extends js.Object {
-  var background: js.UndefOr[Boolean] = js.undefined
-  var expires: js.UndefOr[Double | String] = js.undefined
-  var sparse: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var unique: js.UndefOr[Boolean] = js.undefined
+  var background: js.UndefOr[Boolean] = js.native
+  var expires: js.UndefOr[Double | String] = js.native
+  var sparse: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var unique: js.UndefOr[Boolean] = js.native
 }
 
 object IndexOpts {
   @scala.inline
-  def apply(
-    background: js.UndefOr[Boolean] = js.undefined,
-    expires: Double | String = null,
-    sparse: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    unique: js.UndefOr[Boolean] = js.undefined
-  ): IndexOpts = {
+  def apply(): IndexOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(sparse)) __obj.updateDynamic("sparse")(sparse.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(unique)) __obj.updateDynamic("unique")(unique.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexOpts]
   }
+  @scala.inline
+  implicit class IndexOptsOps[Self <: IndexOpts] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setExpires(value: Double | String): Self = this.set("expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("expires", js.undefined)
+    @scala.inline
+    def setSparse(value: Boolean): Self = this.set("sparse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSparse: Self = this.set("sparse", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnique(value: Boolean): Self = this.set("unique", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnique: Self = this.set("unique", js.undefined)
+  }
+  
 }
 

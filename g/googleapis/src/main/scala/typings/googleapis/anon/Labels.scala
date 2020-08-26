@@ -13,12 +13,36 @@ trait Labels extends js.Object {
 
 object Labels {
   @scala.inline
-  def apply(labels: js.Array[String] = null, lossType: String = null, modelType: String = null): Labels = {
+  def apply(): Labels = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lossType != null) __obj.updateDynamic("lossType")(lossType.asInstanceOf[js.Any])
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Labels]
   }
+  @scala.inline
+  implicit class LabelsOps[Self <: Labels] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLabelsVarargs(value: String*): Self = this.set("labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: js.Array[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLossType(value: String): Self = this.set("lossType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLossType: Self = this.set("lossType", js.undefined)
+    @scala.inline
+    def setModelType(value: String): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelType: Self = this.set("modelType", js.undefined)
+  }
+  
 }
 

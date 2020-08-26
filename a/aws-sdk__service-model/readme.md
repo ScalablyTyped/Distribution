@@ -12,7 +12,7 @@ A service model parser and validator
 | Keywords           | - |
 | # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 341 |
+| # downloads        | 369 |
 | # stars            | 0 |
 
 ## Links

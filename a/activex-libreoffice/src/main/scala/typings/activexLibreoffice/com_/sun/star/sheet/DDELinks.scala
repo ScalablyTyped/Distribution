@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sheet.DDELink
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
+@js.native
 trait DDELinks
   extends XDDELinks
      with XIndexAccess

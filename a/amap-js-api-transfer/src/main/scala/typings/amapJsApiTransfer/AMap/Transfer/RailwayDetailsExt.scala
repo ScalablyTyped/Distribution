@@ -5,19 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.amapJsApiTransfer.AMap.Transfer.RailwayDetails because Already inherited */ trait RailwayDetailsExt extends RailwayDetailsBase {
+- typings.amapJsApiTransfer.AMap.Transfer.RailwayDetails because Already inherited */ @js.native
+trait RailwayDetailsExt extends RailwayDetailsBase {
   /**
     * 聚合的备选方案
     */
-  var alters: js.Array[Alter]
+  var alters: js.Array[Alter] = js.native
   /**
     * 途经站点数量
     */
-  var via_num: Double
+  var via_num: Double = js.native
   /**
     * 途经站点信息
     */
-  var via_stops: js.Array[ViaStop]
+  var via_stops: js.Array[ViaStop] = js.native
 }
 
 object RailwayDetailsExt {
@@ -40,5 +41,28 @@ object RailwayDetailsExt {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RailwayDetailsExt]
   }
+  @scala.inline
+  implicit class RailwayDetailsExtOps[Self <: RailwayDetailsExt] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAltersVarargs(value: Alter*): Self = this.set("alters", js.Array(value :_*))
+    @scala.inline
+    def setAlters(value: js.Array[Alter]): Self = this.set("alters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVia_num(value: Double): Self = this.set("via_num", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVia_stopsVarargs(value: ViaStop*): Self = this.set("via_stops", js.Array(value :_*))
+    @scala.inline
+    def setVia_stops(value: js.Array[ViaStop]): Self = this.set("via_stops", value.asInstanceOf[js.Any])
+  }
+  
 }
 

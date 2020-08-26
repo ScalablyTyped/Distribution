@@ -13,29 +13,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NumericRule extends js.Object {
   /** @name NumericRule.ignoreEmptyValue */
-  var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
+  var ignoreEmptyValue: js.UndefOr[Boolean] = js.native
   /** @name NumericRule.message */
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[String] = js.native
   /** @name NumericRule.type */
   var `type`: js.UndefOr[
     required | numeric | range | stringLength | custom | compare | pattern | email | async
-  ] = js.undefined
+  ] = js.native
 }
 
 object NumericRule {
   @scala.inline
-  def apply(
-    ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    message: String = null,
-    `type`: required | numeric | range | stringLength | custom | compare | pattern | email | async = null
-  ): NumericRule = {
+  def apply(): NumericRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumericRule]
   }
+  @scala.inline
+  implicit class NumericRuleOps[Self <: NumericRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIgnoreEmptyValue(value: Boolean): Self = this.set("ignoreEmptyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreEmptyValue: Self = this.set("ignoreEmptyValue", js.undefined)
+    @scala.inline
+    def setMessage(value: String): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setType(value: required | numeric | range | stringLength | custom | compare | pattern | email | async): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

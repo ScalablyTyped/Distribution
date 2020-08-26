@@ -28,6 +28,7 @@ class ResourceDivisions protected () extends js.Object {
     */
   def search(): GaxiosPromise[SchemaDivisionSearchResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaDivisionSearchResponse]): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDivisionSearchResponse] = js.native
   def search(params: ParamsResourceDivisionsSearch): GaxiosPromise[SchemaDivisionSearchResponse] = js.native
   def search(
     params: ParamsResourceDivisionsSearch,

@@ -14,7 +14,6 @@ import typings.marked.markedStrings.heading
 import typings.marked.markedStrings.hr
 import typings.marked.markedStrings.html
 import typings.marked.markedStrings.image
-import typings.marked.markedStrings.indented
 import typings.marked.markedStrings.left
 import typings.marked.markedStrings.link
 import typings.marked.markedStrings.list_item
@@ -26,7 +25,6 @@ import typings.marked.markedStrings.strong
 import typings.marked.markedStrings.table
 import typings.marked.markedStrings.text
 import typings.marked.mod.Tokens.ListItem
-import typings.marked.mod.Tokens.Text
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -156,17 +154,9 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def Link(
-    href: String,
-    raw: String,
-    text: String,
-    title: String,
-    `type`: link,
-    tokens: js.Array[Text] = null
-  ): Token = {
+  def Link(href: String, raw: String, text: String, title: String, `type`: link): Token = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
@@ -176,11 +166,9 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def Code(raw: String, text: String, `type`: code, codeBlockStyle: indented = null, lang: String = null): Token = {
+  def Code(raw: String, text: String, `type`: code): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (codeBlockStyle != null) __obj.updateDynamic("codeBlockStyle")(codeBlockStyle.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline
@@ -202,10 +190,9 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   @scala.inline
-  def Paragraph(raw: String, text: String, `type`: paragraph, pre: js.UndefOr[Boolean] = js.undefined): Token = {
+  def Paragraph(raw: String, text: String, `type`: paragraph): Token = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(pre)) __obj.updateDynamic("pre")(pre.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Token]
   }
   @scala.inline

@@ -26,18 +26,38 @@ trait VolumeStatistics extends js.Object {
 
 object VolumeStatistics {
   @scala.inline
-  def apply(
-    InboxRawCount: js.UndefOr[Volume] = js.undefined,
-    ProjectedInbox: js.UndefOr[Volume] = js.undefined,
-    ProjectedSpam: js.UndefOr[Volume] = js.undefined,
-    SpamRawCount: js.UndefOr[Volume] = js.undefined
-  ): VolumeStatistics = {
+  def apply(): VolumeStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InboxRawCount)) __obj.updateDynamic("InboxRawCount")(InboxRawCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProjectedInbox)) __obj.updateDynamic("ProjectedInbox")(ProjectedInbox.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProjectedSpam)) __obj.updateDynamic("ProjectedSpam")(ProjectedSpam.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SpamRawCount)) __obj.updateDynamic("SpamRawCount")(SpamRawCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeStatistics]
   }
+  @scala.inline
+  implicit class VolumeStatisticsOps[Self <: VolumeStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInboxRawCount(value: Volume): Self = this.set("InboxRawCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInboxRawCount: Self = this.set("InboxRawCount", js.undefined)
+    @scala.inline
+    def setProjectedInbox(value: Volume): Self = this.set("ProjectedInbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectedInbox: Self = this.set("ProjectedInbox", js.undefined)
+    @scala.inline
+    def setProjectedSpam(value: Volume): Self = this.set("ProjectedSpam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectedSpam: Self = this.set("ProjectedSpam", js.undefined)
+    @scala.inline
+    def setSpamRawCount(value: Volume): Self = this.set("SpamRawCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpamRawCount: Self = this.set("SpamRawCount", js.undefined)
+  }
+  
 }
 

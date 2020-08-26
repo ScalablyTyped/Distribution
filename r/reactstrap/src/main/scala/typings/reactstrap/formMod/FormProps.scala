@@ -11,36 +11,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FormProps
   extends AllHTMLAttributes[HTMLFormElement]
      with ClassAttributes[HTMLFormElement]
      with /* key */ StringDictionary[js.Any] {
-  var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var innerRef: js.UndefOr[Ref[HTMLFormElement]] = js.undefined
-  var tag: js.UndefOr[String | ReactType[_]] = js.undefined
+  var cssModule: js.UndefOr[CSSModule] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var innerRef: js.UndefOr[Ref[HTMLFormElement]] = js.native
+  var tag: js.UndefOr[String | ReactType[_]] = js.native
 }
 
 object FormProps {
   @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[HTMLFormElement] = null,
-    ClassAttributes: ClassAttributes[HTMLFormElement] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    cssModule: CSSModule = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    innerRef: js.UndefOr[Null | Ref[HTMLFormElement]] = js.undefined,
-    tag: String | ReactType[_] = null
-  ): FormProps = {
+  def apply(): FormProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormProps]
   }
+  @scala.inline
+  implicit class FormPropsOps[Self <: FormProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCssModule(value: CSSModule): Self = this.set("cssModule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssModule: Self = this.set("cssModule", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setInnerRefFunction1(value: /* instance */ HTMLFormElement | Null => Unit): Self = this.set("innerRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInnerRef(value: Ref[HTMLFormElement]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerRef: Self = this.set("innerRef", js.undefined)
+    @scala.inline
+    def setInnerRefNull: Self = this.set("innerRef", null)
+    @scala.inline
+    def setTag(value: String | ReactType[_]): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+  }
+  
 }
 

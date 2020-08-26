@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object switchMapMod extends js.Object {
   def switchMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def switchMap[T, O /* <: ObservableInput[_] */](
+    project: js.Function2[/* value */ T, /* index */ Double, O],
+    resultSelector: js.UndefOr[scala.Nothing]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def switchMap[T, R, O /* <: ObservableInput[_] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[

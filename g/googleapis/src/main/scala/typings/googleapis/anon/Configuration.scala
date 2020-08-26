@@ -24,28 +24,58 @@ trait Configuration extends js.Object {
 
 object Configuration {
   @scala.inline
-  def apply(
-    configuration: SchemaJobConfiguration = null,
-    errorResult: SchemaErrorProto = null,
-    id: String = null,
-    jobReference: SchemaJobReference = null,
-    kind: String = null,
-    state: String = null,
-    statistics: SchemaJobStatistics = null,
-    status: SchemaJobStatus = null,
-    user_email: String = null
-  ): Configuration = {
+  def apply(): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (jobReference != null) __obj.updateDynamic("jobReference")(jobReference.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (user_email != null) __obj.updateDynamic("user_email")(user_email.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
+  @scala.inline
+  implicit class ConfigurationOps[Self <: Configuration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfiguration(value: SchemaJobConfiguration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setErrorResult(value: SchemaErrorProto): Self = this.set("errorResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorResult: Self = this.set("errorResult", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setJobReference(value: SchemaJobReference): Self = this.set("jobReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobReference: Self = this.set("jobReference", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatistics(value: SchemaJobStatistics): Self = this.set("statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("statistics", js.undefined)
+    @scala.inline
+    def setStatus(value: SchemaJobStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setUser_email(value: String): Self = this.set("user_email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUser_email: Self = this.set("user_email", js.undefined)
+  }
+  
 }
 

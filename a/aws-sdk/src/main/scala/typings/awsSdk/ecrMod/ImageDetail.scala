@@ -42,26 +42,56 @@ trait ImageDetail extends js.Object {
 
 object ImageDetail {
   @scala.inline
-  def apply(
-    imageDigest: ImageDigest = null,
-    imagePushedAt: PushTimestamp = null,
-    imageScanFindingsSummary: ImageScanFindingsSummary = null,
-    imageScanStatus: ImageScanStatus = null,
-    imageSizeInBytes: js.UndefOr[ImageSizeInBytes] = js.undefined,
-    imageTags: ImageTagList = null,
-    registryId: RegistryId = null,
-    repositoryName: RepositoryName = null
-  ): ImageDetail = {
+  def apply(): ImageDetail = {
     val __obj = js.Dynamic.literal()
-    if (imageDigest != null) __obj.updateDynamic("imageDigest")(imageDigest.asInstanceOf[js.Any])
-    if (imagePushedAt != null) __obj.updateDynamic("imagePushedAt")(imagePushedAt.asInstanceOf[js.Any])
-    if (imageScanFindingsSummary != null) __obj.updateDynamic("imageScanFindingsSummary")(imageScanFindingsSummary.asInstanceOf[js.Any])
-    if (imageScanStatus != null) __obj.updateDynamic("imageScanStatus")(imageScanStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(imageSizeInBytes)) __obj.updateDynamic("imageSizeInBytes")(imageSizeInBytes.get.asInstanceOf[js.Any])
-    if (imageTags != null) __obj.updateDynamic("imageTags")(imageTags.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageDetail]
   }
+  @scala.inline
+  implicit class ImageDetailOps[Self <: ImageDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageDigest(value: ImageDigest): Self = this.set("imageDigest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageDigest: Self = this.set("imageDigest", js.undefined)
+    @scala.inline
+    def setImagePushedAt(value: PushTimestamp): Self = this.set("imagePushedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePushedAt: Self = this.set("imagePushedAt", js.undefined)
+    @scala.inline
+    def setImageScanFindingsSummary(value: ImageScanFindingsSummary): Self = this.set("imageScanFindingsSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScanFindingsSummary: Self = this.set("imageScanFindingsSummary", js.undefined)
+    @scala.inline
+    def setImageScanStatus(value: ImageScanStatus): Self = this.set("imageScanStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageScanStatus: Self = this.set("imageScanStatus", js.undefined)
+    @scala.inline
+    def setImageSizeInBytes(value: ImageSizeInBytes): Self = this.set("imageSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageSizeInBytes: Self = this.set("imageSizeInBytes", js.undefined)
+    @scala.inline
+    def setImageTagsVarargs(value: ImageTag*): Self = this.set("imageTags", js.Array(value :_*))
+    @scala.inline
+    def setImageTags(value: ImageTagList): Self = this.set("imageTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageTags: Self = this.set("imageTags", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+  }
+  
 }
 

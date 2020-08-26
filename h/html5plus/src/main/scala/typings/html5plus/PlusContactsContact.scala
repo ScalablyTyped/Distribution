@@ -116,6 +116,7 @@ trait PlusContactsContact extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   def remove(): Unit = js.native
+  def remove(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def remove(successCB: js.Function0[Unit]): Unit = js.native
   def remove(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   /**
@@ -125,6 +126,7 @@ trait PlusContactsContact extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
   def save(): Unit = js.native
+  def save(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def save(successCB: js.Function0[Unit]): Unit = js.native
   def save(successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

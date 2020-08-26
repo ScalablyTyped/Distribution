@@ -14,5 +14,6 @@ import scala.scalajs.js.annotation._
   *
   * These functions encapsulate some of the most common transaction sequences.
   */
+@js.native
 trait DraftModifier extends js.Object
 

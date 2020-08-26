@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "algoliasearch-helper" : "3.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "algoliasearch-helper" : "3.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

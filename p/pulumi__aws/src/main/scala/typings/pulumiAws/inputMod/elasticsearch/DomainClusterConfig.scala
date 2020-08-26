@@ -28,6 +28,18 @@ trait DomainClusterConfig extends js.Object {
     */
   var instanceType: js.UndefOr[Input[String]] = js.native
   /**
+    * The number of warm nodes in the cluster. Valid values are between `2` and `150`. `warmCount` can be only and must be set when `warmEnabled` is set to `true`.
+    */
+  var warmCount: js.UndefOr[Input[Double]] = js.native
+  /**
+    * Indicates whether to enable warm storage.
+    */
+  var warmEnabled: js.UndefOr[Input[Boolean]] = js.native
+  /**
+    * The instance type for the Elasticsearch cluster's warm nodes. Valid values are `ultrawarm1.medium.elasticsearch`, `ultrawarm1.large.elasticsearch` and `ultrawarm1.xlarge.elasticsearch`. `warmType` can be only and must be set when `warmEnabled` is set to `true`.
+    */
+  var warmType: js.UndefOr[Input[String]] = js.native
+  /**
     * Configuration block containing zone awareness settings. Documented below.
     */
   var zoneAwarenessConfig: js.UndefOr[Input[DomainClusterConfigZoneAwarenessConfig]] = js.native
@@ -39,24 +51,62 @@ trait DomainClusterConfig extends js.Object {
 
 object DomainClusterConfig {
   @scala.inline
-  def apply(
-    dedicatedMasterCount: Input[Double] = null,
-    dedicatedMasterEnabled: Input[Boolean] = null,
-    dedicatedMasterType: Input[String] = null,
-    instanceCount: Input[Double] = null,
-    instanceType: Input[String] = null,
-    zoneAwarenessConfig: Input[DomainClusterConfigZoneAwarenessConfig] = null,
-    zoneAwarenessEnabled: Input[Boolean] = null
-  ): DomainClusterConfig = {
+  def apply(): DomainClusterConfig = {
     val __obj = js.Dynamic.literal()
-    if (dedicatedMasterCount != null) __obj.updateDynamic("dedicatedMasterCount")(dedicatedMasterCount.asInstanceOf[js.Any])
-    if (dedicatedMasterEnabled != null) __obj.updateDynamic("dedicatedMasterEnabled")(dedicatedMasterEnabled.asInstanceOf[js.Any])
-    if (dedicatedMasterType != null) __obj.updateDynamic("dedicatedMasterType")(dedicatedMasterType.asInstanceOf[js.Any])
-    if (instanceCount != null) __obj.updateDynamic("instanceCount")(instanceCount.asInstanceOf[js.Any])
-    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
-    if (zoneAwarenessConfig != null) __obj.updateDynamic("zoneAwarenessConfig")(zoneAwarenessConfig.asInstanceOf[js.Any])
-    if (zoneAwarenessEnabled != null) __obj.updateDynamic("zoneAwarenessEnabled")(zoneAwarenessEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainClusterConfig]
   }
+  @scala.inline
+  implicit class DomainClusterConfigOps[Self <: DomainClusterConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDedicatedMasterCount(value: Input[Double]): Self = this.set("dedicatedMasterCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedMasterCount: Self = this.set("dedicatedMasterCount", js.undefined)
+    @scala.inline
+    def setDedicatedMasterEnabled(value: Input[Boolean]): Self = this.set("dedicatedMasterEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedMasterEnabled: Self = this.set("dedicatedMasterEnabled", js.undefined)
+    @scala.inline
+    def setDedicatedMasterType(value: Input[String]): Self = this.set("dedicatedMasterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDedicatedMasterType: Self = this.set("dedicatedMasterType", js.undefined)
+    @scala.inline
+    def setInstanceCount(value: Input[Double]): Self = this.set("instanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceCount: Self = this.set("instanceCount", js.undefined)
+    @scala.inline
+    def setInstanceType(value: Input[String]): Self = this.set("instanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("instanceType", js.undefined)
+    @scala.inline
+    def setWarmCount(value: Input[Double]): Self = this.set("warmCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmCount: Self = this.set("warmCount", js.undefined)
+    @scala.inline
+    def setWarmEnabled(value: Input[Boolean]): Self = this.set("warmEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmEnabled: Self = this.set("warmEnabled", js.undefined)
+    @scala.inline
+    def setWarmType(value: Input[String]): Self = this.set("warmType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarmType: Self = this.set("warmType", js.undefined)
+    @scala.inline
+    def setZoneAwarenessConfig(value: Input[DomainClusterConfigZoneAwarenessConfig]): Self = this.set("zoneAwarenessConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneAwarenessConfig: Self = this.set("zoneAwarenessConfig", js.undefined)
+    @scala.inline
+    def setZoneAwarenessEnabled(value: Input[Boolean]): Self = this.set("zoneAwarenessEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoneAwarenessEnabled: Self = this.set("zoneAwarenessEnabled", js.undefined)
+  }
+  
 }
 

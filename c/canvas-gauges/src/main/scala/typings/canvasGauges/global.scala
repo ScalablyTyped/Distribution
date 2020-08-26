@@ -5,7 +5,6 @@ import typings.canvasGauges.CanvasGauges.DrawEventCallback
 import typings.canvasGauges.CanvasGauges.EndEventCallback
 import typings.canvasGauges.CanvasGauges.LinearGaugeOptions
 import typings.canvasGauges.CanvasGauges.RadialGaugeOptions
-import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import scala.scalajs.js
@@ -22,11 +21,56 @@ object global extends js.Object {
       extends typings.canvasGauges.CanvasGauges.Animation {
       def this(rule: String) = this()
       def this(rule: AnimationRule) = this()
+      def this(rule: js.UndefOr[scala.Nothing], duration: Double) = this()
       def this(rule: String, duration: Double) = this()
       def this(rule: AnimationRule, duration: Double) = this()
+      def this(rule: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback) = this()
+      def this(rule: js.UndefOr[scala.Nothing], duration: Double, draw: DrawEventCallback) = this()
+      def this(rule: String, duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback) = this()
       def this(rule: String, duration: Double, draw: DrawEventCallback) = this()
+      def this(rule: AnimationRule, duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback) = this()
       def this(rule: AnimationRule, duration: Double, draw: DrawEventCallback) = this()
+      def this(
+        rule: js.UndefOr[scala.Nothing],
+        duration: js.UndefOr[scala.Nothing],
+        draw: js.UndefOr[scala.Nothing],
+        end: EndEventCallback
+      ) = this()
+      def this(
+        rule: js.UndefOr[scala.Nothing],
+        duration: js.UndefOr[scala.Nothing],
+        draw: DrawEventCallback,
+        end: EndEventCallback
+      ) = this()
+      def this(
+        rule: js.UndefOr[scala.Nothing],
+        duration: Double,
+        draw: js.UndefOr[scala.Nothing],
+        end: EndEventCallback
+      ) = this()
+      def this(rule: js.UndefOr[scala.Nothing], duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
+      def this(
+        rule: String,
+        duration: js.UndefOr[scala.Nothing],
+        draw: js.UndefOr[scala.Nothing],
+        end: EndEventCallback
+      ) = this()
+      def this(rule: String, duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback, end: EndEventCallback) = this()
+      def this(rule: String, duration: Double, draw: js.UndefOr[scala.Nothing], end: EndEventCallback) = this()
       def this(rule: String, duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
+      def this(
+        rule: AnimationRule,
+        duration: js.UndefOr[scala.Nothing],
+        draw: js.UndefOr[scala.Nothing],
+        end: EndEventCallback
+      ) = this()
+      def this(
+        rule: AnimationRule,
+        duration: js.UndefOr[scala.Nothing],
+        draw: DrawEventCallback,
+        end: EndEventCallback
+      ) = this()
+      def this(rule: AnimationRule, duration: Double, draw: js.UndefOr[scala.Nothing], end: EndEventCallback) = this()
       def this(rule: AnimationRule, duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
     }
     
@@ -59,41 +103,8 @@ object global extends js.Object {
       extends typings.canvasGauges.CanvasGauges.SmartCanvas {
       def this(element: HTMLCanvasElement) = this()
       def this(element: HTMLCanvasElement, width: Double) = this()
+      def this(element: HTMLCanvasElement, width: js.UndefOr[scala.Nothing], height: Double) = this()
       def this(element: HTMLCanvasElement, width: Double, height: Double) = this()
-      /* CompleteClass */
-      override var context: CanvasRenderingContext2D = js.native
-      /* CompleteClass */
-      override var contextClone: CanvasRenderingContext2D = js.native
-      /* CompleteClass */
-      override var drawHeight: Double = js.native
-      /* CompleteClass */
-      override var drawWidth: Double = js.native
-      /* CompleteClass */
-      override var drawX: Double = js.native
-      /* CompleteClass */
-      override var drawY: Double = js.native
-      /* CompleteClass */
-      override var element: HTMLCanvasElement = js.native
-      /* CompleteClass */
-      override var elementClone: HTMLCanvasElement = js.native
-      /* CompleteClass */
-      override var height: Double = js.native
-      /* CompleteClass */
-      override var minSide: Double = js.native
-      /* CompleteClass */
-      override var pixelRatio: Double = js.native
-      /* CompleteClass */
-      override var width: Double = js.native
-      /* CompleteClass */
-      override def commit(): typings.canvasGauges.CanvasGauges.SmartCanvas = js.native
-      /* CompleteClass */
-      override def destroy(): js.Any = js.native
-      /* CompleteClass */
-      override def init(): js.Any = js.native
-      /* CompleteClass */
-      override def onRedraw(): js.Any = js.native
-      /* CompleteClass */
-      override def redraw(): typings.canvasGauges.CanvasGauges.SmartCanvas = js.native
     }
     
     val GenericOptions: typings.canvasGauges.CanvasGauges.GenericOptions = js.native

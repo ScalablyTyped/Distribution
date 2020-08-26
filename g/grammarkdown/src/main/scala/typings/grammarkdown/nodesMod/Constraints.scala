@@ -14,6 +14,11 @@ class Constraints protected ()
   def this(openBracketToken: Token[OpenBracketToken], elements: js.Array[Argument]) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
+    elements: js.UndefOr[scala.Nothing],
+    closeBracketToken: Token[CloseBracketToken]
+  ) = this()
+  def this(
+    openBracketToken: Token[OpenBracketToken],
     elements: js.Array[Argument],
     closeBracketToken: Token[CloseBracketToken]
   ) = this()

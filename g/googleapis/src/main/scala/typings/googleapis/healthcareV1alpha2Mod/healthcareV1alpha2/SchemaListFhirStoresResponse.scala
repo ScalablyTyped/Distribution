@@ -23,11 +23,32 @@ trait SchemaListFhirStoresResponse extends js.Object {
 
 object SchemaListFhirStoresResponse {
   @scala.inline
-  def apply(fhirStores: js.Array[SchemaFhirStore] = null, nextPageToken: String = null): SchemaListFhirStoresResponse = {
+  def apply(): SchemaListFhirStoresResponse = {
     val __obj = js.Dynamic.literal()
-    if (fhirStores != null) __obj.updateDynamic("fhirStores")(fhirStores.asInstanceOf[js.Any])
-    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListFhirStoresResponse]
   }
+  @scala.inline
+  implicit class SchemaListFhirStoresResponseOps[Self <: SchemaListFhirStoresResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFhirStoresVarargs(value: SchemaFhirStore*): Self = this.set("fhirStores", js.Array(value :_*))
+    @scala.inline
+    def setFhirStores(value: js.Array[SchemaFhirStore]): Self = this.set("fhirStores", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFhirStores: Self = this.set("fhirStores", js.undefined)
+    @scala.inline
+    def setNextPageToken(value: String): Self = this.set("nextPageToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageToken: Self = this.set("nextPageToken", js.undefined)
+  }
+  
 }
 

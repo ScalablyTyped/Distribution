@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object `override` extends js.Object {
   def apply(): Unit = js.native
+  def apply(cls: js.UndefOr[scala.Nothing], overrides: js.Any): Unit = js.native
   def apply(cls: js.Any): Unit = js.native
   def apply(cls: js.Any, overrides: js.Any): Unit = js.native
 }

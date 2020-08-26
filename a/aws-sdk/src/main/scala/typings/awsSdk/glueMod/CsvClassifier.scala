@@ -50,29 +50,62 @@ trait CsvClassifier extends js.Object {
 
 object CsvClassifier {
   @scala.inline
-  def apply(
-    Name: NameString,
-    AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined,
-    ContainsHeader: CsvHeaderOption = null,
-    CreationTime: Timestamp = null,
-    Delimiter: CsvColumnDelimiter = null,
-    DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined,
-    Header: CsvHeader = null,
-    LastUpdated: Timestamp = null,
-    QuoteSymbol: CsvQuoteSymbol = null,
-    Version: js.UndefOr[VersionId] = js.undefined
-  ): CsvClassifier = {
+  def apply(Name: NameString): CsvClassifier = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllowSingleColumn)) __obj.updateDynamic("AllowSingleColumn")(AllowSingleColumn.get.asInstanceOf[js.Any])
-    if (ContainsHeader != null) __obj.updateDynamic("ContainsHeader")(ContainsHeader.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableValueTrimming)) __obj.updateDynamic("DisableValueTrimming")(DisableValueTrimming.get.asInstanceOf[js.Any])
-    if (Header != null) __obj.updateDynamic("Header")(Header.asInstanceOf[js.Any])
-    if (LastUpdated != null) __obj.updateDynamic("LastUpdated")(LastUpdated.asInstanceOf[js.Any])
-    if (QuoteSymbol != null) __obj.updateDynamic("QuoteSymbol")(QuoteSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(Version)) __obj.updateDynamic("Version")(Version.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CsvClassifier]
   }
+  @scala.inline
+  implicit class CsvClassifierOps[Self <: CsvClassifier] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: NameString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowSingleColumn(value: NullableBoolean): Self = this.set("AllowSingleColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowSingleColumn: Self = this.set("AllowSingleColumn", js.undefined)
+    @scala.inline
+    def setContainsHeader(value: CsvHeaderOption): Self = this.set("ContainsHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainsHeader: Self = this.set("ContainsHeader", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDelimiter(value: CsvColumnDelimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    @scala.inline
+    def setDisableValueTrimming(value: NullableBoolean): Self = this.set("DisableValueTrimming", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableValueTrimming: Self = this.set("DisableValueTrimming", js.undefined)
+    @scala.inline
+    def setHeaderVarargs(value: NameString*): Self = this.set("Header", js.Array(value :_*))
+    @scala.inline
+    def setHeader(value: CsvHeader): Self = this.set("Header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("Header", js.undefined)
+    @scala.inline
+    def setLastUpdated(value: Timestamp): Self = this.set("LastUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdated: Self = this.set("LastUpdated", js.undefined)
+    @scala.inline
+    def setQuoteSymbol(value: CsvQuoteSymbol): Self = this.set("QuoteSymbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuoteSymbol: Self = this.set("QuoteSymbol", js.undefined)
+    @scala.inline
+    def setVersion(value: VersionId): Self = this.set("Version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("Version", js.undefined)
+  }
+  
 }
 

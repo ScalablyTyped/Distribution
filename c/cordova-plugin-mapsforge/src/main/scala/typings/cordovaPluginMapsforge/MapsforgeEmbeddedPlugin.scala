@@ -29,6 +29,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def addMarker(arg: js.Array[_]): Unit = js.native
+  def addMarker(
+    arg: js.Array[_],
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def addMarker(arg: js.Array[_], success: js.Function1[/* key */ Double, Unit]): Unit = js.native
   def addMarker(
     arg: js.Array[_],
@@ -46,6 +51,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def addPolyline(arg: js.Array[_]): Unit = js.native
+  def addPolyline(
+    arg: js.Array[_],
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def addPolyline(arg: js.Array[_], success: js.Function1[/* key */ Double, Unit]): Unit = js.native
   def addPolyline(
     arg: js.Array[_],
@@ -59,6 +69,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def deleteLayer(key: Double): Unit = js.native
+  def deleteLayer(key: Double, success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def deleteLayer(key: Double, success: js.Function0[Unit]): Unit = js.native
   def deleteLayer(key: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -67,6 +78,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def hide(): Unit = js.native
+  def hide(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def hide(success: js.Function0[Unit]): Unit = js.native
   def hide(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -77,6 +89,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def initialize(args: js.Array[_]): Unit = js.native
+  def initialize(
+    args: js.Array[_],
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def initialize(args: js.Array[_], success: js.Function0[Unit]): Unit = js.native
   def initialize(args: js.Array[_], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -85,6 +102,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def onDestroy(): Unit = js.native
+  def onDestroy(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit]): Unit = js.native
   def onDestroy(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -93,6 +111,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def onStart(): Unit = js.native
+  def onStart(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onStart(success: js.Function0[Unit]): Unit = js.native
   def onStart(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -101,6 +120,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def onStop(): Unit = js.native
+  def onStop(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def onStop(success: js.Function0[Unit]): Unit = js.native
   def onStop(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -111,6 +131,12 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def setCenter(lat: Double, lng: Double): Unit = js.native
+  def setCenter(
+    lat: Double,
+    lng: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setCenter(lat: Double, lng: Double, success: js.Function0[Unit]): Unit = js.native
   def setCenter(
     lat: Double,
@@ -125,6 +151,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def setMaxZoom(maxZoom: Double): Unit = js.native
+  def setMaxZoom(
+    maxZoom: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setMaxZoom(maxZoom: Double, success: js.Function0[Unit]): Unit = js.native
   def setMaxZoom(maxZoom: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -134,6 +165,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def setMinZoom(minZoom: Double): Unit = js.native
+  def setMinZoom(
+    minZoom: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setMinZoom(minZoom: Double, success: js.Function0[Unit]): Unit = js.native
   def setMinZoom(minZoom: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -143,6 +179,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def setOfflineTileLayer(args: js.Array[_]): Unit = js.native
+  def setOfflineTileLayer(
+    args: js.Array[_],
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setOfflineTileLayer(args: js.Array[_], success: js.Function0[Unit]): Unit = js.native
   def setOfflineTileLayer(args: js.Array[_], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -152,6 +193,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def setOnlineTileLayer(args: js.Array[_]): Unit = js.native
+  def setOnlineTileLayer(
+    args: js.Array[_],
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setOnlineTileLayer(args: js.Array[_], success: js.Function0[Unit]): Unit = js.native
   def setOnlineTileLayer(args: js.Array[_], success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -161,6 +207,11 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def setZoom(zoomLevel: Double): Unit = js.native
+  def setZoom(
+    zoomLevel: Double,
+    success: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* message */ String, Unit]
+  ): Unit = js.native
   def setZoom(zoomLevel: Double, success: js.Function0[Unit]): Unit = js.native
   def setZoom(zoomLevel: Double, success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   /**
@@ -169,6 +220,7 @@ trait MapsforgeEmbeddedPlugin extends js.Object {
     * @param error Error callback
     */
   def show(): Unit = js.native
+  def show(success: js.UndefOr[scala.Nothing], error: js.Function1[/* message */ String, Unit]): Unit = js.native
   def show(success: js.Function0[Unit]): Unit = js.native
   def show(success: js.Function0[Unit], error: js.Function1[/* message */ String, Unit]): Unit = js.native
 }

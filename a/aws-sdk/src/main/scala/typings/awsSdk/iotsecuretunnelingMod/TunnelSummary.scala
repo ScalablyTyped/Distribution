@@ -34,22 +34,46 @@ trait TunnelSummary extends js.Object {
 
 object TunnelSummary {
   @scala.inline
-  def apply(
-    createdAt: DateType = null,
-    description: Description = null,
-    lastUpdatedAt: DateType = null,
-    status: TunnelStatus = null,
-    tunnelArn: TunnelArn = null,
-    tunnelId: TunnelId = null
-  ): TunnelSummary = {
+  def apply(): TunnelSummary = {
     val __obj = js.Dynamic.literal()
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (tunnelArn != null) __obj.updateDynamic("tunnelArn")(tunnelArn.asInstanceOf[js.Any])
-    if (tunnelId != null) __obj.updateDynamic("tunnelId")(tunnelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TunnelSummary]
   }
+  @scala.inline
+  implicit class TunnelSummaryOps[Self <: TunnelSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreatedAt(value: DateType): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLastUpdatedAt(value: DateType): Self = this.set("lastUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedAt: Self = this.set("lastUpdatedAt", js.undefined)
+    @scala.inline
+    def setStatus(value: TunnelStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTunnelArn(value: TunnelArn): Self = this.set("tunnelArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnelArn: Self = this.set("tunnelArn", js.undefined)
+    @scala.inline
+    def setTunnelId(value: TunnelId): Self = this.set("tunnelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTunnelId: Self = this.set("tunnelId", js.undefined)
+  }
+  
 }
 

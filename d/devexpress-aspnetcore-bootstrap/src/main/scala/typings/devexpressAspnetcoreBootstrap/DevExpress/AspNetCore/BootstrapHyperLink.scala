@@ -14,6 +14,10 @@ trait BootstrapHyperLink extends Control {
   def getNavigateUrl(): String = js.native
   def getText(): String = js.native
   def getValue(): js.Any = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[/* this */ this.type, js.UndefOr[EditClickEventArgs | EventArgs], Unit]
+  ): this.type = js.native
   @JSName("off")
   def off_click(eventName: click): this.type = js.native
   @JSName("off")

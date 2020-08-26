@@ -204,7 +204,11 @@ trait ComboBox extends js.Object {
   def ItemData(Index: Double): js.Any = js.native
   def ItemsSelected(Index: js.Any): Double = js.native
   def Move(Left: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double): Unit = js.native
+  def Move(Left: Double, Top: js.UndefOr[scala.Nothing], Width: Double, Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double): Unit = js.native
+  def Move(Left: Double, Top: Double, Width: js.UndefOr[scala.Nothing], Height: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double): Unit = js.native
   def Move(Left: Double, Top: Double, Width: Double, Height: Double): Unit = js.native
   def Properties(Index: String): AccessProperty = js.native

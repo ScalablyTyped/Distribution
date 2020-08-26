@@ -1,6 +1,5 @@
 package typings.log4js.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.log4js.log4jsStrings.basic
 import typings.log4js.log4jsStrings.colored
 import typings.log4js.log4jsStrings.coloured
@@ -47,17 +46,15 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
-  def CustomLayout(`type`: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): Layout = {
+  def CustomLayout(`type`: String): Layout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[Layout]
   }
   @scala.inline
-  def PatternLayout(pattern: String, `type`: pattern, tokens: StringDictionary[Token] = null): Layout = {
+  def PatternLayout(pattern: String, `type`: pattern): Layout = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (tokens != null) __obj.updateDynamic("tokens")(tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
 }

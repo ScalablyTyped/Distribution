@@ -8,54 +8,115 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ TConverter in keyof json2md.json2md.DefaultConverters.Converters ]:? json2md.json2md.DefaultConverters.Converters[TConverter]} */
+@js.native
 trait DataObject extends js.Object {
-  var blockquote: js.UndefOr[String | js.Array[String]] = js.undefined
-  var code: js.UndefOr[CodeInput] = js.undefined
-  var h1: js.UndefOr[String | js.Array[String]] = js.undefined
-  var h2: js.UndefOr[String | js.Array[String]] = js.undefined
-  var h3: js.UndefOr[String | js.Array[String]] = js.undefined
-  var h4: js.UndefOr[String | js.Array[String]] = js.undefined
-  var h5: js.UndefOr[String | js.Array[String]] = js.undefined
-  var h6: js.UndefOr[String | js.Array[String]] = js.undefined
-  var img: js.UndefOr[ImgInput | js.Array[ImgInput]] = js.undefined
-  var ol: js.UndefOr[js.Array[String]] = js.undefined
-  var p: js.UndefOr[String | js.Array[String]] = js.undefined
-  var table: js.UndefOr[TableInput] = js.undefined
-  var ul: js.UndefOr[js.Array[String]] = js.undefined
+  var blockquote: js.UndefOr[String | js.Array[String]] = js.native
+  var code: js.UndefOr[CodeInput] = js.native
+  var h1: js.UndefOr[String | js.Array[String]] = js.native
+  var h2: js.UndefOr[String | js.Array[String]] = js.native
+  var h3: js.UndefOr[String | js.Array[String]] = js.native
+  var h4: js.UndefOr[String | js.Array[String]] = js.native
+  var h5: js.UndefOr[String | js.Array[String]] = js.native
+  var h6: js.UndefOr[String | js.Array[String]] = js.native
+  var img: js.UndefOr[ImgInput | js.Array[ImgInput]] = js.native
+  var ol: js.UndefOr[js.Array[String]] = js.native
+  var p: js.UndefOr[String | js.Array[String]] = js.native
+  var table: js.UndefOr[TableInput] = js.native
+  var ul: js.UndefOr[js.Array[String]] = js.native
 }
 
 object DataObject {
   @scala.inline
-  def apply(
-    blockquote: String | js.Array[String] = null,
-    code: CodeInput = null,
-    h1: String | js.Array[String] = null,
-    h2: String | js.Array[String] = null,
-    h3: String | js.Array[String] = null,
-    h4: String | js.Array[String] = null,
-    h5: String | js.Array[String] = null,
-    h6: String | js.Array[String] = null,
-    img: ImgInput | js.Array[ImgInput] = null,
-    ol: js.Array[String] = null,
-    p: String | js.Array[String] = null,
-    table: TableInput = null,
-    ul: js.Array[String] = null
-  ): DataObject = {
+  def apply(): DataObject = {
     val __obj = js.Dynamic.literal()
-    if (blockquote != null) __obj.updateDynamic("blockquote")(blockquote.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (h1 != null) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    if (h2 != null) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    if (h3 != null) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    if (h4 != null) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    if (h5 != null) __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
-    if (h6 != null) __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    if (ol != null) __obj.updateDynamic("ol")(ol.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (ul != null) __obj.updateDynamic("ul")(ul.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataObject]
   }
+  @scala.inline
+  implicit class DataObjectOps[Self <: DataObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlockquoteVarargs(value: String*): Self = this.set("blockquote", js.Array(value :_*))
+    @scala.inline
+    def setBlockquote(value: String | js.Array[String]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockquote: Self = this.set("blockquote", js.undefined)
+    @scala.inline
+    def setCode(value: CodeInput): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setH1Varargs(value: String*): Self = this.set("h1", js.Array(value :_*))
+    @scala.inline
+    def setH1(value: String | js.Array[String]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH2Varargs(value: String*): Self = this.set("h2", js.Array(value :_*))
+    @scala.inline
+    def setH2(value: String | js.Array[String]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH3Varargs(value: String*): Self = this.set("h3", js.Array(value :_*))
+    @scala.inline
+    def setH3(value: String | js.Array[String]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH4Varargs(value: String*): Self = this.set("h4", js.Array(value :_*))
+    @scala.inline
+    def setH4(value: String | js.Array[String]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH5Varargs(value: String*): Self = this.set("h5", js.Array(value :_*))
+    @scala.inline
+    def setH5(value: String | js.Array[String]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH5: Self = this.set("h5", js.undefined)
+    @scala.inline
+    def setH6Varargs(value: String*): Self = this.set("h6", js.Array(value :_*))
+    @scala.inline
+    def setH6(value: String | js.Array[String]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH6: Self = this.set("h6", js.undefined)
+    @scala.inline
+    def setImgVarargs(value: ImgInput*): Self = this.set("img", js.Array(value :_*))
+    @scala.inline
+    def setImg(value: ImgInput | js.Array[ImgInput]): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImg: Self = this.set("img", js.undefined)
+    @scala.inline
+    def setOlVarargs(value: String*): Self = this.set("ol", js.Array(value :_*))
+    @scala.inline
+    def setOl(value: js.Array[String]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOl: Self = this.set("ol", js.undefined)
+    @scala.inline
+    def setPVarargs(value: String*): Self = this.set("p", js.Array(value :_*))
+    @scala.inline
+    def setP(value: String | js.Array[String]): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+    @scala.inline
+    def setTable(value: TableInput): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setUlVarargs(value: String*): Self = this.set("ul", js.Array(value :_*))
+    @scala.inline
+    def setUl(value: js.Array[String]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUl: Self = this.set("ul", js.undefined)
+  }
+  
 }
 

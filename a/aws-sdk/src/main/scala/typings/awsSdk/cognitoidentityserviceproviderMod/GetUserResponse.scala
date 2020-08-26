@@ -30,18 +30,44 @@ trait GetUserResponse extends js.Object {
 
 object GetUserResponse {
   @scala.inline
-  def apply(
-    UserAttributes: AttributeListType,
-    Username: UsernameType,
-    MFAOptions: MFAOptionListType = null,
-    PreferredMfaSetting: StringType = null,
-    UserMFASettingList: UserMFASettingListType = null
-  ): GetUserResponse = {
+  def apply(UserAttributes: AttributeListType, Username: UsernameType): GetUserResponse = {
     val __obj = js.Dynamic.literal(UserAttributes = UserAttributes.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
-    if (MFAOptions != null) __obj.updateDynamic("MFAOptions")(MFAOptions.asInstanceOf[js.Any])
-    if (PreferredMfaSetting != null) __obj.updateDynamic("PreferredMfaSetting")(PreferredMfaSetting.asInstanceOf[js.Any])
-    if (UserMFASettingList != null) __obj.updateDynamic("UserMFASettingList")(UserMFASettingList.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserResponse]
   }
+  @scala.inline
+  implicit class GetUserResponseOps[Self <: GetUserResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUserAttributesVarargs(value: AttributeType*): Self = this.set("UserAttributes", js.Array(value :_*))
+    @scala.inline
+    def setUserAttributes(value: AttributeListType): Self = this.set("UserAttributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsername(value: UsernameType): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMFAOptionsVarargs(value: MFAOptionType*): Self = this.set("MFAOptions", js.Array(value :_*))
+    @scala.inline
+    def setMFAOptions(value: MFAOptionListType): Self = this.set("MFAOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMFAOptions: Self = this.set("MFAOptions", js.undefined)
+    @scala.inline
+    def setPreferredMfaSetting(value: StringType): Self = this.set("PreferredMfaSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMfaSetting: Self = this.set("PreferredMfaSetting", js.undefined)
+    @scala.inline
+    def setUserMFASettingListVarargs(value: StringType*): Self = this.set("UserMFASettingList", js.Array(value :_*))
+    @scala.inline
+    def setUserMFASettingList(value: UserMFASettingListType): Self = this.set("UserMFASettingList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserMFASettingList: Self = this.set("UserMFASettingList", js.undefined)
+  }
+  
 }
 

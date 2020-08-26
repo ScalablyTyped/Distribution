@@ -29,9 +29,9 @@ class SaveChangesClientAction protected () extends ClientAction {
   @JSName("model")
   var model_FSaveChangesClientAction: IModel = js.native
   def closePage: Boolean = js.native
-  def closePage(newValue: Boolean): js.Any = js.native
+  def closePage_=(newValue: Boolean): Unit = js.native
   def syncAutomatically: Boolean = js.native
-  def syncAutomatically(newValue: Boolean): js.Any = js.native
+  def syncAutomatically_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

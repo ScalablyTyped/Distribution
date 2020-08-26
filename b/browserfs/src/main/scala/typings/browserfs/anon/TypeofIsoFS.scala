@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
 trait TypeofIsoFS
   extends Instantiable1[/* data */ Buffer, default]
      with Instantiable2[/* data */ Buffer, /* name */ String, default]
-     with Instantiable3[/* data */ Buffer, /* name */ String, /* deprecateMsg */ Boolean, default] {
+     with Instantiable3[/* data */ Buffer, js.UndefOr[/* name */ String], /* deprecateMsg */ Boolean, default] {
   val Name: String = js.native
   val Options: FileSystemOptions = js.native
   /**

@@ -91,6 +91,7 @@ trait QueryTable extends js.Object {
   def ResultRange(RowIndex: Double): Range = js.native
   def ResultRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
   def SaveAsODC(ODCFileName: String): Unit = js.native
+  def SaveAsODC(ODCFileName: String, Description: js.UndefOr[scala.Nothing], Keywords: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String, Keywords: String): Unit = js.native
 }

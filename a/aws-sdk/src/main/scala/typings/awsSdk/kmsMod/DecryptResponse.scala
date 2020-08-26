@@ -22,16 +22,34 @@ trait DecryptResponse extends js.Object {
 
 object DecryptResponse {
   @scala.inline
-  def apply(
-    EncryptionAlgorithm: EncryptionAlgorithmSpec = null,
-    KeyId: KeyIdType = null,
-    Plaintext: PlaintextType = null
-  ): DecryptResponse = {
+  def apply(): DecryptResponse = {
     val __obj = js.Dynamic.literal()
-    if (EncryptionAlgorithm != null) __obj.updateDynamic("EncryptionAlgorithm")(EncryptionAlgorithm.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (Plaintext != null) __obj.updateDynamic("Plaintext")(Plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptResponse]
   }
+  @scala.inline
+  implicit class DecryptResponseOps[Self <: DecryptResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncryptionAlgorithm(value: EncryptionAlgorithmSpec): Self = this.set("EncryptionAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAlgorithm: Self = this.set("EncryptionAlgorithm", js.undefined)
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setPlaintext(value: PlaintextType): Self = this.set("Plaintext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaintext: Self = this.set("Plaintext", js.undefined)
+  }
+  
 }
 

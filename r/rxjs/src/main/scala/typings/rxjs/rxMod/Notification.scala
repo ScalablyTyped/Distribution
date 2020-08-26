@@ -18,8 +18,11 @@ class Notification[T] protected ()
   def this(kind: E, value: T) = this()
   def this(kind: N, value: T) = this()
   def this(kind: C, value: T, error: js.Any) = this()
+  def this(kind: C, value: js.UndefOr[scala.Nothing], error: js.Any) = this()
   def this(kind: E, value: T, error: js.Any) = this()
+  def this(kind: E, value: js.UndefOr[scala.Nothing], error: js.Any) = this()
   def this(kind: N, value: T, error: js.Any) = this()
+  def this(kind: N, value: js.UndefOr[scala.Nothing], error: js.Any) = this()
 }
 
 /* static members */

@@ -26,7 +26,7 @@ class ConditionalVisibilitySettings protected () extends ConditionalSettings {
   @JSName("model")
   var model_FConditionalVisibilitySettings: IModel = js.native
   def ignoreSecurity: Boolean = js.native
-  def ignoreSecurity(newValue: Boolean): js.Any = js.native
+  def ignoreSecurity_=(newValue: Boolean): Unit = js.native
   def moduleRoles: IList[IModuleRole] = js.native
   def moduleRolesQualifiedNames: js.Array[String] = js.native
 }

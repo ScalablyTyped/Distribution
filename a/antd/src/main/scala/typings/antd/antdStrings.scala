@@ -37,6 +37,7 @@ import typings.antd.radioInterfaceMod.RadioGroupOptionType
 import typings.antd.responsiveObserveMod.Breakpoint
 import typings.antd.resultMod.ExceptionStatusType
 import typings.antd.resultMod.ResultStatusType
+import typings.antd.ribbonMod.RibbonPlacement
 import typings.antd.siderMod.CollapseType
 import typings.antd.siderMod.SiderTheme
 import typings.antd.sizeContextMod._SizeType
@@ -68,7 +69,7 @@ object antdStrings {
   sealed trait `404` extends ExceptionStatusType
   
   @js.native
-  sealed trait `4Dot4Dot0` extends js.Object
+  sealed trait `4Dot5Dot1` extends js.Object
   
   @js.native
   sealed trait `500` extends ExceptionStatusType
@@ -493,7 +494,7 @@ object antdStrings {
   sealed trait email extends js.Object
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end extends RibbonPlacement
   
   @js.native
   sealed trait error
@@ -520,6 +521,9 @@ object antdStrings {
   
   @js.native
   sealed trait finish extends js.Object
+  
+  @js.native
+  sealed trait focus extends js.Object
   
   @js.native
   sealed trait footer extends js.Object
@@ -817,6 +821,12 @@ object antdStrings {
   sealed trait paginate extends TableAction
   
   @js.native
+  sealed trait panelRender extends js.Object
+  
+  @js.native
+  sealed trait parallel extends js.Object
+  
+  @js.native
   sealed trait part extends js.Object
   
   @js.native
@@ -1008,7 +1018,7 @@ object antdStrings {
   sealed trait square extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start extends RibbonPlacement
   
   @js.native
   sealed trait step extends js.Object
@@ -1163,7 +1173,7 @@ object antdStrings {
   @scala.inline
   def `404`: `404` = "404".asInstanceOf[`404`]
   @scala.inline
-  def `4Dot4Dot0`: `4Dot4Dot0` = "4.4.0".asInstanceOf[`4Dot4Dot0`]
+  def `4Dot5Dot1`: `4Dot5Dot1` = "4.5.1".asInstanceOf[`4Dot5Dot1`]
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   @scala.inline
@@ -1439,6 +1449,8 @@ object antdStrings {
   @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
   @scala.inline
+  def focus: focus = "focus".asInstanceOf[focus]
+  @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
   @scala.inline
   def format: format = "format".asInstanceOf[format]
@@ -1616,6 +1628,10 @@ object antdStrings {
   def page: page = "page".asInstanceOf[page]
   @scala.inline
   def paginate: paginate = "paginate".asInstanceOf[paginate]
+  @scala.inline
+  def panelRender: panelRender = "panelRender".asInstanceOf[panelRender]
+  @scala.inline
+  def parallel: parallel = "parallel".asInstanceOf[parallel]
   @scala.inline
   def part: part = "part".asInstanceOf[part]
   @scala.inline

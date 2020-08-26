@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BorderColorSaturation extends js.Object {
   /**
     * The border color and gap color of a node.
@@ -13,7 +14,7 @@ trait BorderColorSaturation extends js.Object {
     * "#fff',"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.borderColor
     */
-  var borderColor: js.UndefOr[String] = js.undefined
+  var borderColor: js.UndefOr[String] = js.native
   /**
     * The color saturation of a border or gap.
     * The value range is between 0 ~ 1.
@@ -48,7 +49,7 @@ trait BorderColorSaturation extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.borderColorSaturation
     */
-  var borderColorSaturation: js.UndefOr[String] = js.undefined
+  var borderColorSaturation: js.UndefOr[String] = js.native
   /**
     * The border width of a node.
     * There is no border when it is set as `0`.
@@ -59,7 +60,7 @@ trait BorderColorSaturation extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.borderWidth
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * The color of a node. It use global palette
     * [option.color](https://echarts.apache.org/en/option.html#color)
@@ -68,7 +69,7 @@ trait BorderColorSaturation extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.color
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * The tranparent rate of a node, the range is between 0
     * ~ 1.
@@ -76,7 +77,7 @@ trait BorderColorSaturation extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.colorAlpha
     */
-  var colorAlpha: js.UndefOr[Double] = js.undefined
+  var colorAlpha: js.UndefOr[Double] = js.native
   /**
     * The color saturation of a node.
     * The range is between 0 ~ 1.
@@ -84,54 +85,84 @@ trait BorderColorSaturation extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.colorSaturation
     */
-  var colorSaturation: js.UndefOr[Double] = js.undefined
+  var colorSaturation: js.UndefOr[Double] = js.native
   /**
     * Gaps between child nodes.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.gapWidth
     */
-  var gapWidth: js.UndefOr[Double] = js.undefined
+  var gapWidth: js.UndefOr[Double] = js.native
   /**
     * Stroke color of each rect.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.strokeColor
     */
-  var strokeColor: js.UndefOr[String] = js.undefined
+  var strokeColor: js.UndefOr[String] = js.native
   /**
     * Stroke width of each rect.
     *
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.itemStyle.strokeWidth
     */
-  var strokeWidth: js.UndefOr[Double] = js.undefined
+  var strokeWidth: js.UndefOr[Double] = js.native
 }
 
 object BorderColorSaturation {
   @scala.inline
-  def apply(
-    borderColor: String = null,
-    borderColorSaturation: String = null,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    colorAlpha: js.UndefOr[Double] = js.undefined,
-    colorSaturation: js.UndefOr[Double] = js.undefined,
-    gapWidth: js.UndefOr[Double] = js.undefined,
-    strokeColor: String = null,
-    strokeWidth: js.UndefOr[Double] = js.undefined
-  ): BorderColorSaturation = {
+  def apply(): BorderColorSaturation = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderColorSaturation != null) __obj.updateDynamic("borderColorSaturation")(borderColorSaturation.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorAlpha)) __obj.updateDynamic("colorAlpha")(colorAlpha.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorSaturation)) __obj.updateDynamic("colorSaturation")(colorSaturation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gapWidth)) __obj.updateDynamic("gapWidth")(gapWidth.get.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(strokeWidth)) __obj.updateDynamic("strokeWidth")(strokeWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderColorSaturation]
   }
+  @scala.inline
+  implicit class BorderColorSaturationOps[Self <: BorderColorSaturation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderColorSaturation(value: String): Self = this.set("borderColorSaturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColorSaturation: Self = this.set("borderColorSaturation", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColorAlpha(value: Double): Self = this.set("colorAlpha", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorAlpha: Self = this.set("colorAlpha", js.undefined)
+    @scala.inline
+    def setColorSaturation(value: Double): Self = this.set("colorSaturation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSaturation: Self = this.set("colorSaturation", js.undefined)
+    @scala.inline
+    def setGapWidth(value: Double): Self = this.set("gapWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGapWidth: Self = this.set("gapWidth", js.undefined)
+    @scala.inline
+    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+    @scala.inline
+    def setStrokeWidth(value: Double): Self = this.set("strokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeWidth: Self = this.set("strokeWidth", js.undefined)
+  }
+  
 }
 

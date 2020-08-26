@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object classPrivateMethod_get extends js.Object {
   def apply(
-    kind: js.UndefOr[get],
+    kind: get,
     key: PrivateName_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_
   ): ClassPrivateMethod_ = js.native
   def apply(
-    kind: js.UndefOr[get],
+    kind: get,
     key: PrivateName_,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     body: BlockStatement_,

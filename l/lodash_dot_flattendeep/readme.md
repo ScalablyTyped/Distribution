@@ -12,7 +12,7 @@ The lodash method `_.flattenDeep` exported as a module.
 | Keywords           | lodash-modularized, flattendeep |
 | # releases         | 0 |
 | # dependents       | 151 |
-| # downloads        | 104323219 |
+| # downloads        | 107984080 |
 | # stars            | 1 |
 
 ## Links

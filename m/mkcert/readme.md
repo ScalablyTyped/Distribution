@@ -12,7 +12,7 @@ Create Self Signed Development Certificates
 | Keywords           | signed, certificate, cert |
 | # releases         | 10 |
 | # dependents       | 11 |
-| # downloads        | 58801 |
+| # downloads        | 81203 |
 | # stars            | 0 |
 
 ## Links

@@ -27,20 +27,42 @@ trait DeploymentTarget extends js.Object {
 
 object DeploymentTarget {
   @scala.inline
-  def apply(
-    cloudFormationTarget: CloudFormationTarget = null,
-    deploymentTargetType: DeploymentTargetType = null,
-    ecsTarget: ECSTarget = null,
-    instanceTarget: InstanceTarget = null,
-    lambdaTarget: LambdaTarget = null
-  ): DeploymentTarget = {
+  def apply(): DeploymentTarget = {
     val __obj = js.Dynamic.literal()
-    if (cloudFormationTarget != null) __obj.updateDynamic("cloudFormationTarget")(cloudFormationTarget.asInstanceOf[js.Any])
-    if (deploymentTargetType != null) __obj.updateDynamic("deploymentTargetType")(deploymentTargetType.asInstanceOf[js.Any])
-    if (ecsTarget != null) __obj.updateDynamic("ecsTarget")(ecsTarget.asInstanceOf[js.Any])
-    if (instanceTarget != null) __obj.updateDynamic("instanceTarget")(instanceTarget.asInstanceOf[js.Any])
-    if (lambdaTarget != null) __obj.updateDynamic("lambdaTarget")(lambdaTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentTarget]
   }
+  @scala.inline
+  implicit class DeploymentTargetOps[Self <: DeploymentTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudFormationTarget(value: CloudFormationTarget): Self = this.set("cloudFormationTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudFormationTarget: Self = this.set("cloudFormationTarget", js.undefined)
+    @scala.inline
+    def setDeploymentTargetType(value: DeploymentTargetType): Self = this.set("deploymentTargetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentTargetType: Self = this.set("deploymentTargetType", js.undefined)
+    @scala.inline
+    def setEcsTarget(value: ECSTarget): Self = this.set("ecsTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsTarget: Self = this.set("ecsTarget", js.undefined)
+    @scala.inline
+    def setInstanceTarget(value: InstanceTarget): Self = this.set("instanceTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTarget: Self = this.set("instanceTarget", js.undefined)
+    @scala.inline
+    def setLambdaTarget(value: LambdaTarget): Self = this.set("lambdaTarget", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaTarget: Self = this.set("lambdaTarget", js.undefined)
+  }
+  
 }
 

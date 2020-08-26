@@ -26,18 +26,38 @@ trait ReservationUtilizationGroup extends js.Object {
 
 object ReservationUtilizationGroup {
   @scala.inline
-  def apply(
-    Attributes: Attributes = null,
-    Key: ReservationGroupKey = null,
-    Utilization: ReservationAggregates = null,
-    Value: ReservationGroupValue = null
-  ): ReservationUtilizationGroup = {
+  def apply(): ReservationUtilizationGroup = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (Utilization != null) __obj.updateDynamic("Utilization")(Utilization.asInstanceOf[js.Any])
-    if (Value != null) __obj.updateDynamic("Value")(Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationUtilizationGroup]
   }
+  @scala.inline
+  implicit class ReservationUtilizationGroupOps[Self <: ReservationUtilizationGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setKey(value: ReservationGroupKey): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setUtilization(value: ReservationAggregates): Self = this.set("Utilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUtilization: Self = this.set("Utilization", js.undefined)
+    @scala.inline
+    def setValue(value: ReservationGroupValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

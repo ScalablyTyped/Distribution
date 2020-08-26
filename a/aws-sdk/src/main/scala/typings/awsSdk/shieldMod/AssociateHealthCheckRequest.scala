@@ -22,5 +22,22 @@ object AssociateHealthCheckRequest {
     val __obj = js.Dynamic.literal(HealthCheckArn = HealthCheckArn.asInstanceOf[js.Any], ProtectionId = ProtectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateHealthCheckRequest]
   }
+  @scala.inline
+  implicit class AssociateHealthCheckRequestOps[Self <: AssociateHealthCheckRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHealthCheckArn(value: HealthCheckArn): Self = this.set("HealthCheckArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProtectionId(value: ProtectionId): Self = this.set("ProtectionId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

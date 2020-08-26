@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
@@ -19,7 +20,7 @@ trait ChartOptions extends js.Object {
     *
     * Disabled for logarithmic axes.
     */
-  var alignTicks: js.UndefOr[Boolean] = js.undefined
+  var alignTicks: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set the overall animation for
     * all chart updating. Animation can be disabled throughout the chart by
@@ -41,32 +42,32 @@ trait ChartOptions extends js.Object {
     * be done with animation, but in case of more data points, it is necessary
     * to set this option to ensure animation on zoom.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
+  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the outer chart area.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the outer chart
     * border.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The corner radius of the outer
     * chart border.
     */
-  var borderRadius: js.UndefOr[Double] = js.undefined
+  var borderRadius: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the outer
     * chart border.
     */
-  var borderWidth: js.UndefOr[Double] = js.undefined
+  var borderWidth: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name to apply to the
     * charts container `div`, allowing unique CSS styling for each chart.
     */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) In styled mode, this sets how
     * many colors the class names should rotate between. With ten colors,
@@ -74,16 +75,16 @@ trait ChartOptions extends js.Object {
     * `highcharts-color-0` [...] `highcharts-color-9`. The equivalent in
     * non-styled mode is to set colors using the colors setting.
     */
-  var colorCount: js.UndefOr[Double] = js.undefined
+  var colorCount: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to display errors on the
     * chart. When `false`, the errors will be shown only in the console.
     */
-  var displayErrors: js.UndefOr[Boolean] = js.undefined
+  var displayErrors: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event listeners for the chart.
     */
-  var events: js.UndefOr[ChartEventsOptions] = js.undefined
+  var events: js.UndefOr[ChartEventsOptions] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An explicit height for the
     * chart. If a _number_, the height is given in pixels. If given a
@@ -95,7 +96,7 @@ trait ChartOptions extends js.Object {
     * of the containing element, or 400 pixels if the containing element's
     * height is 0.
     */
-  var height: js.UndefOr[Double | String | Null] = js.undefined
+  var height: js.UndefOr[Double | String | Null] = js.native
   /**
     * (Highcharts, Highstock, Gantt) If true, the axes will scale to the
     * remaining visible series once one series is hidden. If false, hiding and
@@ -103,24 +104,24 @@ trait ChartOptions extends js.Object {
     * stacks, once one series within the stack is hidden, the rest of the stack
     * will close in around it even if the axis is not affected.
     */
-  var ignoreHiddenSeries: js.UndefOr[Boolean] = js.undefined
+  var ignoreHiddenSeries: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Whether to invert the axes so that the x
     * axis is vertical and y axis is horizontal. When `true`, the x axis is
     * reversed by default.
     */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean] = js.native
   /**
     * (Highmaps) Default `mapData` for all series. If set to a string, it
     * functions as an index into the `Highcharts.maps` array. Otherwise it is
     * interpreted as map data.
     */
-  var map: js.UndefOr[String | GeoJSON | js.Array[_]] = js.undefined
+  var map: js.UndefOr[String | GeoJSON | js.Array[_]] = js.native
   /**
     * (Highmaps) Set lat/lon transformation definitions for the chart. If not
     * defined, these are extracted from the map data.
     */
-  var mapTransforms: js.UndefOr[js.Any] = js.undefined
+  var mapTransforms: js.UndefOr[js.Any] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the outer
     * edge of the chart and the plot area. The numbers in the array designate
@@ -133,47 +134,47 @@ trait ChartOptions extends js.Object {
     * addition to the `spacingTop`, `spacingRight`, `spacingBottom` and
     * `spacingLeft` options.
     */
-  var margin: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  var margin: js.UndefOr[Double | js.Array[Double]] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the bottom
     * outer edge of the chart and the plot area. Use this to set a fixed pixel
     * value for the margin as opposed to the default dynamic margin. See also
     * `spacingBottom`.
     */
-  var marginBottom: js.UndefOr[Double] = js.undefined
+  var marginBottom: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the left
     * outer edge of the chart and the plot area. Use this to set a fixed pixel
     * value for the margin as opposed to the default dynamic margin. See also
     * `spacingLeft`.
     */
-  var marginLeft: js.UndefOr[Double] = js.undefined
+  var marginLeft: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the right
     * outer edge of the chart and the plot area. Use this to set a fixed pixel
     * value for the margin as opposed to the default dynamic margin. See also
     * `spacingRight`.
     */
-  var marginRight: js.UndefOr[Double] = js.undefined
+  var marginRight: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The margin between the top outer
     * edge of the chart and the plot area. Use this to set a fixed pixel value
     * for the margin as opposed to the default dynamic margin. See also
     * `spacingTop`.
     */
-  var marginTop: js.UndefOr[Double] = js.undefined
+  var marginTop: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to override
     * the default function that formats all the numbers in the chart. Returns a
     * string with the formatted number.
     */
-  var numberFormatter: js.UndefOr[NumberFormatterCallbackFunction] = js.undefined
+  var numberFormatter: js.UndefOr[NumberFormatterCallbackFunction] = js.native
   /**
     * (Highcharts) Options to render charts in 3 dimensions. This feature
     * requires `highcharts-3d.js`, found in the download package or online at
     * code.highcharts.com/highcharts-3d.js.
     */
-  var options3d: js.UndefOr[Chart3dOptions] = js.undefined
+  var options3d: js.UndefOr[Chart3dOptions] = js.native
   /**
     * (Highcharts, Gantt) Allows setting a key to switch between zooming and
     * panning. Can be one of `alt`, `ctrl`, `meta` (the command key on Mac and
@@ -181,7 +182,7 @@ trait ChartOptions extends js.Object {
     * key properties of the click event argument (`event.altKey`,
     * `event.ctrlKey`, `event.metaKey` and `event.shiftKey`).
     */
-  var panKey: js.UndefOr[OptionsPanKeyValue] = js.undefined
+  var panKey: js.UndefOr[OptionsPanKeyValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Allow panning in a chart. Best used with
     * panKey to combine zooming and panning.
@@ -190,7 +191,7 @@ trait ChartOptions extends js.Object {
     * (default), panning requires two fingers. To allow panning with one
     * finger, set `followTouchMove` to `false`.
     */
-  var panning: js.UndefOr[ChartPanningOptions] = js.undefined
+  var panning: js.UndefOr[ChartPanningOptions] = js.native
   /**
     * (Highcharts) Common options for all yAxes rendered in a parallel
     * coordinates plot. This feature requires
@@ -198,14 +199,14 @@ trait ChartOptions extends js.Object {
     *
     * The default options are: (see online documentation for example)
     */
-  var parallelAxes: js.UndefOr[ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions]] = js.undefined
+  var parallelAxes: js.UndefOr[ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions]] = js.native
   /**
     * (Highcharts) Flag to render charts as a parallel coordinates plot. In a
     * parallel coordinates plot (||-coords) by default all required yAxes are
     * generated and the legend is disabled. This feature requires
     * `modules/parallel-coordinates.js`.
     */
-  var parallelCoordinates: js.UndefOr[Boolean] = js.undefined
+  var parallelCoordinates: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Equivalent to zoomType, but for multitouch
     * gestures only. By default, the `pinchType` is the same as the `zoomType`
@@ -214,12 +215,12 @@ trait ChartOptions extends js.Object {
     * is enabled. When tooltip.followTouchMove is true, pinchType only applies
     * to two-finger touches.
     */
-  var pinchType: js.UndefOr[OptionsPinchTypeValue] = js.undefined
+  var pinchType: js.UndefOr[OptionsPinchTypeValue] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the plot area.
     */
-  var plotBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var plotBackgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The URL for an image to use as
     * the plot background. To set an image as the background for the entire
@@ -227,42 +228,42 @@ trait ChartOptions extends js.Object {
     * the image to be applied to exported charts, its URL needs to be
     * accessible by the export server.
     */
-  var plotBackgroundImage: js.UndefOr[String] = js.undefined
+  var plotBackgroundImage: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the inner chart or
     * plot area border.
     */
-  var plotBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var plotBorderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the plot area
     * border.
     */
-  var plotBorderWidth: js.UndefOr[Double] = js.undefined
+  var plotBorderWidth: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the plot area. Requires that plotBackgroundColor be set. The shadow
     * can be an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var plotShadow: js.UndefOr[Boolean | CSSObject] = js.undefined
+  var plotShadow: js.UndefOr[Boolean | CSSObject] = js.native
   /**
     * (Highcharts) When true, cartesian charts like line, spline, area and
     * column are transformed into the polar coordinate system. This produces
     * _polar charts_, also known as _radar charts_.
     */
-  var polar: js.UndefOr[Boolean] = js.undefined
+  var polar: js.UndefOr[Boolean] = js.native
   /**
     * (Highmaps) Allows to manually load the proj4 library from Highcharts
     * options instead of the `window`. In case of loading the library from a
     * `script` tag, this option is not needed, it will be loaded from there by
     * default.
     */
-  var proj4: js.UndefOr[js.Function] = js.undefined
+  var proj4: js.UndefOr[js.Function] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to reflow the chart to
     * fit the width of the container div on resizing the window.
     */
-  var reflow: js.UndefOr[Boolean] = js.undefined
+  var reflow: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML element where the chart
     * will be rendered. If it is a string, the element by that id is used. The
@@ -270,12 +271,12 @@ trait ChartOptions extends js.Object {
     * argument of the chart constructor, in which case the option is not
     * needed.
     */
-  var renderTo: js.UndefOr[String | HTMLDOMElement] = js.undefined
+  var renderTo: js.UndefOr[String | HTMLDOMElement] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The button that appears after a
     * selection zoom, allowing the user to reset zoom.
     */
-  var resetZoomButton: js.UndefOr[ChartResetZoomButtonOptions] = js.undefined
+  var resetZoomButton: js.UndefOr[ChartResetZoomButtonOptions] = js.native
   /**
     * (Highcharts, Gantt) Options for a scrollable plot area. This feature
     * provides a minimum size for the plot area of the chart. If the size gets
@@ -288,25 +289,25 @@ trait ChartOptions extends js.Object {
     * or vertical scrolling, depending on whether the `minWidth` or `minHeight`
     * option is set.
     */
-  var scrollablePlotArea: js.UndefOr[ChartScrollablePlotAreaOptions] = js.undefined
+  var scrollablePlotArea: js.UndefOr[ChartScrollablePlotAreaOptions] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color of the
     * marker square when selecting (zooming in on) an area of the chart.
     */
-  var selectionMarkerFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var selectionMarkerFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the outer chart area. Requires that backgroundColor be set. The shadow
     * can be an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | CSSObject] = js.undefined
+  var shadow: js.UndefOr[Boolean | CSSObject] = js.native
   /**
     * (Highcharts, Gantt) Whether to show the axes initially. This only applies
     * to empty charts where series are added dynamically, as axes are
     * automatically added to cartesian series.
     */
-  var showAxes: js.UndefOr[Boolean] = js.undefined
+  var showAxes: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The distance between the outer
     * edge of the chart and the content, like title or legend, or axis title
@@ -315,38 +316,38 @@ trait ChartOptions extends js.Object {
     * spacingBottom and spacingLeft options for shorthand setting of one
     * option.
     */
-  var spacing: js.UndefOr[js.Array[Double]] = js.undefined
+  var spacing: js.UndefOr[js.Array[Double]] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the bottom
     * edge of the chart and the content (plot area, axis title and labels,
     * title, subtitle or legend in top position).
     */
-  var spacingBottom: js.UndefOr[Double] = js.undefined
+  var spacingBottom: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the left edge
     * of the chart and the content (plot area, axis title and labels, title,
     * subtitle or legend in top position).
     */
-  var spacingLeft: js.UndefOr[Double] = js.undefined
+  var spacingLeft: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the right edge
     * of the chart and the content (plot area, axis title and labels, title,
     * subtitle or legend in top position).
     */
-  var spacingRight: js.UndefOr[Double] = js.undefined
+  var spacingRight: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The space between the top edge
     * of the chart and the content (plot area, axis title and labels, title,
     * subtitle or legend in top position).
     */
-  var spacingTop: js.UndefOr[Double] = js.undefined
+  var spacingTop: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional CSS styles to apply
     * inline to the container `div`. Note that since the default font styles
     * are applied in the renderer, it is ignorant of the individual chart
     * options and must be set globally.
     */
-  var style: js.UndefOr[CSSObject] = js.undefined
+  var style: js.UndefOr[CSSObject] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply styled mode.
     * When in styled mode, no presentational attributes or CSS are applied to
@@ -354,7 +355,7 @@ trait ChartOptions extends js.Object {
     * default style sheet is available from
     * `https://code.highcharts.com/css/highcharts.css`.
     */
-  var styledMode: js.UndefOr[Boolean] = js.undefined
+  var styledMode: js.UndefOr[Boolean] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default series type for the
     * chart. Can be any of the chart types listed under plotOptions and series
@@ -363,136 +364,266 @@ trait ChartOptions extends js.Object {
     * In TypeScript this option has no effect in sense of typing and instead
     * the `type` option must always be set in the series.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An explicit width for the chart.
     * By default (when `null`) the width is calculated from the offset width of
     * the containing element.
     */
-  var width: js.UndefOr[Double | String | Null] = js.undefined
+  var width: js.UndefOr[Double | String | Null] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set a key to hold when dragging
     * to zoom the chart. This is useful to avoid zooming while moving points.
     * Should be set different than chart.panKey.
     */
-  var zoomKey: js.UndefOr[OptionsZoomKeyValue] = js.undefined
+  var zoomKey: js.UndefOr[OptionsZoomKeyValue] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
     * zoom by dragging the mouse. Can be one of `x`, `y` or `xy`.
     */
-  var zoomType: js.UndefOr[OptionsZoomTypeValue] = js.undefined
+  var zoomType: js.UndefOr[OptionsZoomTypeValue] = js.native
 }
 
 object ChartOptions {
   @scala.inline
-  def apply(
-    alignTicks: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | AnimationOptionsObject = null,
-    backgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderRadius: js.UndefOr[Double] = js.undefined,
-    borderWidth: js.UndefOr[Double] = js.undefined,
-    className: String = null,
-    colorCount: js.UndefOr[Double] = js.undefined,
-    displayErrors: js.UndefOr[Boolean] = js.undefined,
-    events: ChartEventsOptions = null,
-    height: js.UndefOr[Null | Double | String] = js.undefined,
-    ignoreHiddenSeries: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    map: String | GeoJSON | js.Array[_] = null,
-    mapTransforms: js.Any = null,
-    margin: Double | js.Array[Double] = null,
-    marginBottom: js.UndefOr[Double] = js.undefined,
-    marginLeft: js.UndefOr[Double] = js.undefined,
-    marginRight: js.UndefOr[Double] = js.undefined,
-    marginTop: js.UndefOr[Double] = js.undefined,
-    numberFormatter: (/* number */ Double, /* decimals */ Double, /* decimalPoint */ js.UndefOr[String], /* thousandsSep */ js.UndefOr[String]) => String = null,
-    options3d: Chart3dOptions = null,
-    panKey: OptionsPanKeyValue = null,
-    panning: ChartPanningOptions = null,
-    parallelAxes: ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions] = null,
-    parallelCoordinates: js.UndefOr[Boolean] = js.undefined,
-    pinchType: OptionsPinchTypeValue = null,
-    plotBackgroundColor: ColorString | GradientColorObject | PatternObject = null,
-    plotBackgroundImage: String = null,
-    plotBorderColor: ColorString | GradientColorObject | PatternObject = null,
-    plotBorderWidth: js.UndefOr[Double] = js.undefined,
-    plotShadow: Boolean | CSSObject = null,
-    polar: js.UndefOr[Boolean] = js.undefined,
-    proj4: js.Function = null,
-    reflow: js.UndefOr[Boolean] = js.undefined,
-    renderTo: String | HTMLDOMElement = null,
-    resetZoomButton: ChartResetZoomButtonOptions = null,
-    scrollablePlotArea: ChartScrollablePlotAreaOptions = null,
-    selectionMarkerFill: ColorString | GradientColorObject | PatternObject = null,
-    shadow: Boolean | CSSObject = null,
-    showAxes: js.UndefOr[Boolean] = js.undefined,
-    spacing: js.Array[Double] = null,
-    spacingBottom: js.UndefOr[Double] = js.undefined,
-    spacingLeft: js.UndefOr[Double] = js.undefined,
-    spacingRight: js.UndefOr[Double] = js.undefined,
-    spacingTop: js.UndefOr[Double] = js.undefined,
-    style: CSSObject = null,
-    styledMode: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    width: js.UndefOr[Null | Double | String] = js.undefined,
-    zoomKey: OptionsZoomKeyValue = null,
-    zoomType: OptionsZoomTypeValue = null
-  ): ChartOptions = {
+  def apply(): ChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.get.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderRadius)) __obj.updateDynamic("borderRadius")(borderRadius.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderWidth)) __obj.updateDynamic("borderWidth")(borderWidth.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(colorCount)) __obj.updateDynamic("colorCount")(colorCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayErrors)) __obj.updateDynamic("displayErrors")(displayErrors.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreHiddenSeries)) __obj.updateDynamic("ignoreHiddenSeries")(ignoreHiddenSeries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (mapTransforms != null) __obj.updateDynamic("mapTransforms")(mapTransforms.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
-    if (numberFormatter != null) __obj.updateDynamic("numberFormatter")(js.Any.fromFunction4(numberFormatter))
-    if (options3d != null) __obj.updateDynamic("options3d")(options3d.asInstanceOf[js.Any])
-    if (panKey != null) __obj.updateDynamic("panKey")(panKey.asInstanceOf[js.Any])
-    if (panning != null) __obj.updateDynamic("panning")(panning.asInstanceOf[js.Any])
-    if (parallelAxes != null) __obj.updateDynamic("parallelAxes")(parallelAxes.asInstanceOf[js.Any])
-    if (!js.isUndefined(parallelCoordinates)) __obj.updateDynamic("parallelCoordinates")(parallelCoordinates.get.asInstanceOf[js.Any])
-    if (pinchType != null) __obj.updateDynamic("pinchType")(pinchType.asInstanceOf[js.Any])
-    if (plotBackgroundColor != null) __obj.updateDynamic("plotBackgroundColor")(plotBackgroundColor.asInstanceOf[js.Any])
-    if (plotBackgroundImage != null) __obj.updateDynamic("plotBackgroundImage")(plotBackgroundImage.asInstanceOf[js.Any])
-    if (plotBorderColor != null) __obj.updateDynamic("plotBorderColor")(plotBorderColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(plotBorderWidth)) __obj.updateDynamic("plotBorderWidth")(plotBorderWidth.get.asInstanceOf[js.Any])
-    if (plotShadow != null) __obj.updateDynamic("plotShadow")(plotShadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar.get.asInstanceOf[js.Any])
-    if (proj4 != null) __obj.updateDynamic("proj4")(proj4.asInstanceOf[js.Any])
-    if (!js.isUndefined(reflow)) __obj.updateDynamic("reflow")(reflow.get.asInstanceOf[js.Any])
-    if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
-    if (resetZoomButton != null) __obj.updateDynamic("resetZoomButton")(resetZoomButton.asInstanceOf[js.Any])
-    if (scrollablePlotArea != null) __obj.updateDynamic("scrollablePlotArea")(scrollablePlotArea.asInstanceOf[js.Any])
-    if (selectionMarkerFill != null) __obj.updateDynamic("selectionMarkerFill")(selectionMarkerFill.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAxes)) __obj.updateDynamic("showAxes")(showAxes.get.asInstanceOf[js.Any])
-    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacingBottom)) __obj.updateDynamic("spacingBottom")(spacingBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacingLeft)) __obj.updateDynamic("spacingLeft")(spacingLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacingRight)) __obj.updateDynamic("spacingRight")(spacingRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacingTop)) __obj.updateDynamic("spacingTop")(spacingTop.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(styledMode)) __obj.updateDynamic("styledMode")(styledMode.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoomKey != null) __obj.updateDynamic("zoomKey")(zoomKey.asInstanceOf[js.Any])
-    if (zoomType != null) __obj.updateDynamic("zoomType")(zoomType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartOptions]
   }
+  @scala.inline
+  implicit class ChartOptionsOps[Self <: ChartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignTicks(value: Boolean): Self = this.set("alignTicks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignTicks: Self = this.set("alignTicks", js.undefined)
+    @scala.inline
+    def setAnimation(value: Boolean | AnimationOptionsObject): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    @scala.inline
+    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColorCount(value: Double): Self = this.set("colorCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorCount: Self = this.set("colorCount", js.undefined)
+    @scala.inline
+    def setDisplayErrors(value: Boolean): Self = this.set("displayErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayErrors: Self = this.set("displayErrors", js.undefined)
+    @scala.inline
+    def setEvents(value: ChartEventsOptions): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHeightNull: Self = this.set("height", null)
+    @scala.inline
+    def setIgnoreHiddenSeries(value: Boolean): Self = this.set("ignoreHiddenSeries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreHiddenSeries: Self = this.set("ignoreHiddenSeries", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setMapVarargs(value: js.Any*): Self = this.set("map", js.Array(value :_*))
+    @scala.inline
+    def setMap(value: String | GeoJSON | js.Array[_]): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMap: Self = this.set("map", js.undefined)
+    @scala.inline
+    def setMapTransforms(value: js.Any): Self = this.set("mapTransforms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMapTransforms: Self = this.set("mapTransforms", js.undefined)
+    @scala.inline
+    def setMarginVarargs(value: Double*): Self = this.set("margin", js.Array(value :_*))
+    @scala.inline
+    def setMargin(value: Double | js.Array[Double]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMarginBottom(value: Double): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    @scala.inline
+    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    @scala.inline
+    def setMarginRight(value: Double): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    @scala.inline
+    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    @scala.inline
+    def setNumberFormatter(
+      value: (/* number */ Double, /* decimals */ Double, /* decimalPoint */ js.UndefOr[String], /* thousandsSep */ js.UndefOr[String]) => String
+    ): Self = this.set("numberFormatter", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteNumberFormatter: Self = this.set("numberFormatter", js.undefined)
+    @scala.inline
+    def setOptions3d(value: Chart3dOptions): Self = this.set("options3d", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions3d: Self = this.set("options3d", js.undefined)
+    @scala.inline
+    def setPanKey(value: OptionsPanKeyValue): Self = this.set("panKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanKey: Self = this.set("panKey", js.undefined)
+    @scala.inline
+    def setPanning(value: ChartPanningOptions): Self = this.set("panning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanning: Self = this.set("panning", js.undefined)
+    @scala.inline
+    def setParallelAxesVarargs(value: ChartParallelAxesOptions*): Self = this.set("parallelAxes", js.Array(value :_*))
+    @scala.inline
+    def setParallelAxes(value: ChartParallelAxesOptions | js.Array[ChartParallelAxesOptions]): Self = this.set("parallelAxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelAxes: Self = this.set("parallelAxes", js.undefined)
+    @scala.inline
+    def setParallelCoordinates(value: Boolean): Self = this.set("parallelCoordinates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelCoordinates: Self = this.set("parallelCoordinates", js.undefined)
+    @scala.inline
+    def setPinchType(value: OptionsPinchTypeValue): Self = this.set("pinchType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePinchType: Self = this.set("pinchType", js.undefined)
+    @scala.inline
+    def setPlotBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("plotBackgroundColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotBackgroundColor: Self = this.set("plotBackgroundColor", js.undefined)
+    @scala.inline
+    def setPlotBackgroundImage(value: String): Self = this.set("plotBackgroundImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotBackgroundImage: Self = this.set("plotBackgroundImage", js.undefined)
+    @scala.inline
+    def setPlotBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = this.set("plotBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotBorderColor: Self = this.set("plotBorderColor", js.undefined)
+    @scala.inline
+    def setPlotBorderWidth(value: Double): Self = this.set("plotBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotBorderWidth: Self = this.set("plotBorderWidth", js.undefined)
+    @scala.inline
+    def setPlotShadow(value: Boolean | CSSObject): Self = this.set("plotShadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlotShadow: Self = this.set("plotShadow", js.undefined)
+    @scala.inline
+    def setPolar(value: Boolean): Self = this.set("polar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolar: Self = this.set("polar", js.undefined)
+    @scala.inline
+    def setProj4(value: js.Function): Self = this.set("proj4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProj4: Self = this.set("proj4", js.undefined)
+    @scala.inline
+    def setReflow(value: Boolean): Self = this.set("reflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReflow: Self = this.set("reflow", js.undefined)
+    @scala.inline
+    def setRenderTo(value: String | HTMLDOMElement): Self = this.set("renderTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderTo: Self = this.set("renderTo", js.undefined)
+    @scala.inline
+    def setResetZoomButton(value: ChartResetZoomButtonOptions): Self = this.set("resetZoomButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResetZoomButton: Self = this.set("resetZoomButton", js.undefined)
+    @scala.inline
+    def setScrollablePlotArea(value: ChartScrollablePlotAreaOptions): Self = this.set("scrollablePlotArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScrollablePlotArea: Self = this.set("scrollablePlotArea", js.undefined)
+    @scala.inline
+    def setSelectionMarkerFill(value: ColorString | GradientColorObject | PatternObject): Self = this.set("selectionMarkerFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionMarkerFill: Self = this.set("selectionMarkerFill", js.undefined)
+    @scala.inline
+    def setShadow(value: Boolean | CSSObject): Self = this.set("shadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShadow: Self = this.set("shadow", js.undefined)
+    @scala.inline
+    def setShowAxes(value: Boolean): Self = this.set("showAxes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowAxes: Self = this.set("showAxes", js.undefined)
+    @scala.inline
+    def setSpacingVarargs(value: Double*): Self = this.set("spacing", js.Array(value :_*))
+    @scala.inline
+    def setSpacing(value: js.Array[Double]): Self = this.set("spacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing: Self = this.set("spacing", js.undefined)
+    @scala.inline
+    def setSpacingBottom(value: Double): Self = this.set("spacingBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacingBottom: Self = this.set("spacingBottom", js.undefined)
+    @scala.inline
+    def setSpacingLeft(value: Double): Self = this.set("spacingLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacingLeft: Self = this.set("spacingLeft", js.undefined)
+    @scala.inline
+    def setSpacingRight(value: Double): Self = this.set("spacingRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacingRight: Self = this.set("spacingRight", js.undefined)
+    @scala.inline
+    def setSpacingTop(value: Double): Self = this.set("spacingTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacingTop: Self = this.set("spacingTop", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSObject): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyledMode(value: Boolean): Self = this.set("styledMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyledMode: Self = this.set("styledMode", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWidthNull: Self = this.set("width", null)
+    @scala.inline
+    def setZoomKey(value: OptionsZoomKeyValue): Self = this.set("zoomKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomKey: Self = this.set("zoomKey", js.undefined)
+    @scala.inline
+    def setZoomType(value: OptionsZoomTypeValue): Self = this.set("zoomType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZoomType: Self = this.set("zoomType", js.undefined)
+  }
+  
 }
 

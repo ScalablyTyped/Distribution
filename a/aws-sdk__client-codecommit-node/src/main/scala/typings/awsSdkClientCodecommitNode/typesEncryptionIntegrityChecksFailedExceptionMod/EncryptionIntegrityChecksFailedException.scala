@@ -37,6 +37,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EncryptionIntegrityChecksFailedException
   extends ServiceException[EncryptionIntegrityChecksFailedExceptionDetails]
      with BatchGetRepositoriesExceptionsUnion
@@ -71,7 +72,7 @@ trait EncryptionIntegrityChecksFailedException
      with UpdatePullRequestStatusExceptionsUnion
      with UpdateRepositoryDescriptionExceptionsUnion {
   @JSName("name")
-  var name_EncryptionIntegrityChecksFailedException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
+  var name_EncryptionIntegrityChecksFailedException: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException = js.native
 }
 
 object EncryptionIntegrityChecksFailedException {
@@ -80,12 +81,27 @@ object EncryptionIntegrityChecksFailedException {
     $metadata: ResponseMetadata,
     details: EncryptionIntegrityChecksFailedExceptionDetails,
     message: String,
-    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException,
-    stack: String = null
+    name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
   ): EncryptionIntegrityChecksFailedException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionIntegrityChecksFailedException]
   }
+  @scala.inline
+  implicit class EncryptionIntegrityChecksFailedExceptionOps[Self <: EncryptionIntegrityChecksFailedException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(
+      value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
+    ): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -12,6 +12,7 @@ object privateKeyToPutty extends js.Object {
     * @description Encodes (and optionally encrypts) a private RSA key as a Putty PPK file
     */
   def apply(privateKey: PrivateKey): String = js.native
+  def apply(privateKey: PrivateKey, passphrase: js.UndefOr[scala.Nothing], comment: String): String = js.native
   def apply(privateKey: PrivateKey, passphrase: String): String = js.native
   def apply(privateKey: PrivateKey, passphrase: String, comment: String): String = js.native
 }

@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.sdbc.XResultSet
   * @see com.sun.star.sdbc.XDatabaseMetaData
   */
+@js.native
 trait Connection
   extends XConnection
      with XComponent

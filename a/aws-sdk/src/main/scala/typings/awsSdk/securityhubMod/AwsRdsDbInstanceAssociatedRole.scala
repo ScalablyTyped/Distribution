@@ -22,12 +22,34 @@ trait AwsRdsDbInstanceAssociatedRole extends js.Object {
 
 object AwsRdsDbInstanceAssociatedRole {
   @scala.inline
-  def apply(FeatureName: NonEmptyString = null, RoleArn: NonEmptyString = null, Status: NonEmptyString = null): AwsRdsDbInstanceAssociatedRole = {
+  def apply(): AwsRdsDbInstanceAssociatedRole = {
     val __obj = js.Dynamic.literal()
-    if (FeatureName != null) __obj.updateDynamic("FeatureName")(FeatureName.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsRdsDbInstanceAssociatedRole]
   }
+  @scala.inline
+  implicit class AwsRdsDbInstanceAssociatedRoleOps[Self <: AwsRdsDbInstanceAssociatedRole] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeatureName(value: NonEmptyString): Self = this.set("FeatureName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureName: Self = this.set("FeatureName", js.undefined)
+    @scala.inline
+    def setRoleArn(value: NonEmptyString): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: NonEmptyString): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

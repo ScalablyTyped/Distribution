@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("MFiles.MFShellDocListCtrl")
 @js.native
-class MFShellDocListCtrl () extends IMFDocListCtrl {
-  /* CompleteClass */
-  override def AttachToListingWindow(shellListing: js.Any): Unit = js.native
-}
+class MFShellDocListCtrl () extends IMFDocListCtrl
 
 @JSGlobal("MFiles.MFShellDocListCtrl")
 @js.native

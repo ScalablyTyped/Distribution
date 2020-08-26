@@ -161,6 +161,7 @@ trait Linq[T] extends js.Object {
     * otherwise, the first element in source that passes the test specified by predicate.
     */
   def FirstOrDefault(): T = js.native
+  def FirstOrDefault(selector: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def FirstOrDefault(selector: js.Function1[/* e */ T, Boolean]): T = js.native
   def FirstOrDefault(selector: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
   /**
@@ -180,6 +181,11 @@ trait Linq[T] extends js.Object {
     * over a group and its key.
     */
   def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey]): Linq[_] = js.native
+  def GroupBy[TKey, TElement](
+    keySelector: js.Function1[/* e */ T, TKey],
+    elementSelector: js.UndefOr[scala.Nothing],
+    comparer: IEqualityComparer[TKey]
+  ): Linq[_] = js.native
   def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey], elementSelector: js.Function1[/* e */ T, TElement]): Linq[_] = js.native
   def GroupBy[TKey, TElement](
     keySelector: js.Function1[/* e */ T, TKey],
@@ -256,6 +262,7 @@ trait Linq[T] extends js.Object {
     * predicate function.
     */
   def LastOrDefault(): T = js.native
+  def LastOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def LastOrDefault(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
   def LastOrDefault(predicate: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
   /**
@@ -367,6 +374,7 @@ trait Linq[T] extends js.Object {
     * or defaultValue if no such element is found.
     */
   def SingleOrDefault(): T = js.native
+  def SingleOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
   def SingleOrDefault(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
   def SingleOrDefault(predicate: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
   /**

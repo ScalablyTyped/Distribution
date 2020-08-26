@@ -8,7 +8,7 @@ package object mod {
   type DocumentReference = java.lang.String | scala.Double
   type EventHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
   type FieldSearchConfig[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? {  bool? :elasticlunr.elasticlunr.Bool,   boost? :number,   expand? :boolean}}
+  {[ K in keyof T ]:? {  bool :elasticlunr.elasticlunr.Bool | undefined,   boost :number | undefined,   expand :boolean | undefined}}
     */ typings.elasticlunr.elasticlunrStrings.FieldSearchConfig with org.scalablytyped.runtime.TopLevel[js.Any]
   type IndexDocuments[T] = org.scalablytyped.runtime.StringDictionary[T]
   type IndexTokens = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]

@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageableCollection[TModel /* <: Model[_, ModelSetOptions] */] () extends Collection[TModel] {
   def this(models: js.Array[TModel]) = this()
+  def this(models: js.UndefOr[scala.Nothing], options: PageableInitialOptions) = this()
   def this(models: js.Array[TModel], options: PageableInitialOptions) = this()
   var fullCollection: Collection[TModel] = js.native
   var mode: String = js.native
@@ -46,9 +47,11 @@ class PageableCollection[TModel /* <: Model[_, ModelSetOptions] */] () extends C
   def setPageSize(pageSize: Double): JQueryXHR | PageableCollection[TModel] = js.native
   def setPageSize(pageSize: Double, options: CollectionFetchOptions): JQueryXHR | PageableCollection[TModel] = js.native
   def setSorting(sortKey: String): PageableCollection[TModel] = js.native
+  def setSorting(sortKey: String, order: js.UndefOr[scala.Nothing], options: PageableSetSortingOptions[TModel]): PageableCollection[TModel] = js.native
   def setSorting(sortKey: String, order: Double): PageableCollection[TModel] = js.native
   def setSorting(sortKey: String, order: Double, options: PageableSetSortingOptions[TModel]): PageableCollection[TModel] = js.native
   def switchMode(): JQueryXHR | PageableCollection[TModel] = js.native
+  def switchMode(mode: js.UndefOr[scala.Nothing], options: PageableSwitchModeOptions): JQueryXHR | PageableCollection[TModel] = js.native
   def switchMode(mode: String): JQueryXHR | PageableCollection[TModel] = js.native
   def switchMode(mode: String, options: PageableSwitchModeOptions): JQueryXHR | PageableCollection[TModel] = js.native
   def sync(method: String, model: TModel): JQueryXHR = js.native

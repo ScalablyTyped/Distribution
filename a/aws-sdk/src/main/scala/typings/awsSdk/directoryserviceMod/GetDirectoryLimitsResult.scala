@@ -14,10 +14,26 @@ trait GetDirectoryLimitsResult extends js.Object {
 
 object GetDirectoryLimitsResult {
   @scala.inline
-  def apply(DirectoryLimits: DirectoryLimits = null): GetDirectoryLimitsResult = {
+  def apply(): GetDirectoryLimitsResult = {
     val __obj = js.Dynamic.literal()
-    if (DirectoryLimits != null) __obj.updateDynamic("DirectoryLimits")(DirectoryLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDirectoryLimitsResult]
   }
+  @scala.inline
+  implicit class GetDirectoryLimitsResultOps[Self <: GetDirectoryLimitsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryLimits(value: DirectoryLimits): Self = this.set("DirectoryLimits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryLimits: Self = this.set("DirectoryLimits", js.undefined)
+  }
+  
 }
 

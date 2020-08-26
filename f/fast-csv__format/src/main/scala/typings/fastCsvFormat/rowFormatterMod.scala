@@ -15,7 +15,7 @@ object rowFormatterMod extends js.Object {
   @js.native
   class RowFormatter[I /* <: Row */, O /* <: Row */] protected () extends js.Object {
     def this(formatterOptions: FormatterOptions[I, O]) = this()
-    var _rowTransform: js.UndefOr[js.Any] = js.native
+    var _rowTransform: js.Any = js.native
     var callTransformer: js.Any = js.native
     var checkHeaders: js.Any = js.native
     val fieldFormatter: js.Any = js.native
@@ -28,7 +28,7 @@ object rowFormatterMod extends js.Object {
     val shouldWriteHeaders: js.Any = js.native
     def finish(cb: RowFormatterCallback): Unit = js.native
     def format(row: I, cb: RowFormatterCallback): Unit = js.native
-    def rowTransform(transformFunction: RowTransformFunction[I, O]): js.Any = js.native
+    def rowTransform_=(transformFunction: RowTransformFunction[I, O]): Unit = js.native
   }
   
   /* static members */

@@ -4,7 +4,6 @@ import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoMessaging.mod.IMessageHandler
 import typings.luminoMessaging.mod.Message
-import typings.luminoSignaling.mod.ISignal
 import typings.luminoWidgets.layoutMod.Layout
 import typings.luminoWidgets.titleMod.Title
 import typings.luminoWidgets.widgetMod.Widget.ChildMessage
@@ -17,7 +16,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/widget", "Widget")
+@JSImport("@lumino/widgets/types/widget", "Widget")
 @js.native
 /**
   * Construct a new widget.
@@ -37,11 +36,6 @@ class Widget_ ()
     */
   val dataset: DOMStringMap = js.native
   /**
-    * A signal emitted when the object is disposed.
-    */
-  /* CompleteClass */
-  override val disposed: ISignal[this.type, Unit] = js.native
-  /**
     * Get the id of the widget's DOM node.
     */
   /**
@@ -52,14 +46,6 @@ class Widget_ ()
     * Test whether the widget's node is attached to the DOM.
     */
   val isAttached: Boolean = js.native
-  /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
   /**
     * Test whether the widget is explicitly hidden.
     */
@@ -167,19 +153,6 @@ class Widget_ ()
     * @returns `true` if the widget is a descendant, `false` otherwise.
     */
   def contains(widget: Widget): Boolean = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Post a `'fit-request'` message to the widget.
     *
@@ -320,13 +293,6 @@ class Widget_ ()
     * The default implementation of this handler is a no-op.
     */
   /* protected */ def onUpdateRequest(msg: Message): Unit = js.native
-  /**
-    * Process a message sent to the handler.
-    *
-    * @param msg - The message to be processed.
-    */
-  /* CompleteClass */
-  override def processMessage(msg: Message): Unit = js.native
   /**
     * Remove a class name from the widget's DOM node.
     *

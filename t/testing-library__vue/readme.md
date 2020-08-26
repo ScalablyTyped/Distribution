@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__vue
 
-Typings are for version 2.0
+Typings are for version 5.0
 
 ## Library description:
 Simple and complete Vue DOM testing utilities that encourage good testing practices.
@@ -12,7 +12,7 @@ Simple and complete Vue DOM testing utilities that encourage good testing practi
 | Keywords           | vue.js, vue.js testing, vue, vue testing, vue.js 2, vue.js 2 testing, vue 2, vue 2 testing |
 | # releases         | 14 |
 | # dependents       | 0 |
-| # downloads        | 33932 |
+| # downloads        | 41288 |
 | # stars            | 0 |
 
 ## Links

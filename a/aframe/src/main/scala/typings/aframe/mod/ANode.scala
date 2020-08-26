@@ -18,12 +18,15 @@ trait ANode extends HTMLElement {
   // attributeChangedCallback
   def closestScene(): Scene = js.native
   def emit(name: String): Unit = js.native
+  def emit(name: String, detail: js.UndefOr[scala.Nothing], bubbles: Boolean): Unit = js.native
   def emit(name: String, detail: js.Any): Unit = js.native
   def emit(name: String, detail: js.Any, bubbles: Boolean): Unit = js.native
   def emitter(name: String): js.Function0[Unit] = js.native
+  def emitter(name: String, detail: js.UndefOr[scala.Nothing], bubbles: Boolean): js.Function0[Unit] = js.native
   def emitter(name: String, detail: js.Any): js.Function0[Unit] = js.native
   def emitter(name: String, detail: js.Any, bubbles: Boolean): js.Function0[Unit] = js.native
   def load(): Unit = js.native
+  def load(cb: js.UndefOr[scala.Nothing], childFilter: js.Function1[/* el */ Element, Boolean]): Unit = js.native
   def load(cb: js.Function0[Unit]): Unit = js.native
   def load(cb: js.Function0[Unit], childFilter: js.Function1[/* el */ Element, Boolean]): Unit = js.native
   // updateMixins

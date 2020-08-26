@@ -19,9 +19,11 @@ object animationFrameActionMod extends js.Object {
     @JSName("scheduler")
     var scheduler_AnimationFrameAction: AnimationFrameScheduler = js.native
     /* protected */ def recycleAsyncId(scheduler: AnimationFrameScheduler): js.Any = js.native
+    /* protected */ def recycleAsyncId(scheduler: AnimationFrameScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: AnimationFrameScheduler, id: js.Any): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: AnimationFrameScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AnimationFrameScheduler): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AnimationFrameScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AnimationFrameScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AnimationFrameScheduler, id: js.Any, delay: Double): js.Any = js.native
   }

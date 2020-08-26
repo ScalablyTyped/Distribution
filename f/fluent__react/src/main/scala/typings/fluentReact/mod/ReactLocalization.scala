@@ -13,6 +13,7 @@ class ReactLocalization protected () extends js.Object {
   def getBundle(id: String): FluentBundle | Null = js.native
   def getBundle(id: js.Array[String]): js.Array[FluentBundle | Null] = js.native
   def getString(id: String): String = js.native
+  def getString(id: String, args: js.UndefOr[scala.Nothing], fallback: String): String = js.native
   def getString(id: String, args: js.Object): String = js.native
   def getString(id: String, args: js.Object, fallback: String): String = js.native
   def reportError(error: String): Unit = js.native

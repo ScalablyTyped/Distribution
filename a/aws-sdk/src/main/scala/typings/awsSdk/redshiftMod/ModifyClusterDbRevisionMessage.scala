@@ -22,5 +22,22 @@ object ModifyClusterDbRevisionMessage {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], RevisionTarget = RevisionTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterDbRevisionMessage]
   }
+  @scala.inline
+  implicit class ModifyClusterDbRevisionMessageOps[Self <: ModifyClusterDbRevisionMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevisionTarget(value: String): Self = this.set("RevisionTarget", value.asInstanceOf[js.Any])
+  }
+  
 }
 

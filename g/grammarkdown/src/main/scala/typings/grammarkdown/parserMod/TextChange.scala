@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TextChange extends js.Object {
-  var range: Range
-  var text: String
+  var range: Range = js.native
+  var text: String = js.native
 }
 
 @JSImport("grammarkdown/dist/parser", "TextChange")

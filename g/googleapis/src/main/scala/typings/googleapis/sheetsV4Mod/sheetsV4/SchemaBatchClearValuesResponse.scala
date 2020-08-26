@@ -24,11 +24,32 @@ trait SchemaBatchClearValuesResponse extends js.Object {
 
 object SchemaBatchClearValuesResponse {
   @scala.inline
-  def apply(clearedRanges: js.Array[String] = null, spreadsheetId: String = null): SchemaBatchClearValuesResponse = {
+  def apply(): SchemaBatchClearValuesResponse = {
     val __obj = js.Dynamic.literal()
-    if (clearedRanges != null) __obj.updateDynamic("clearedRanges")(clearedRanges.asInstanceOf[js.Any])
-    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBatchClearValuesResponse]
   }
+  @scala.inline
+  implicit class SchemaBatchClearValuesResponseOps[Self <: SchemaBatchClearValuesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClearedRangesVarargs(value: String*): Self = this.set("clearedRanges", js.Array(value :_*))
+    @scala.inline
+    def setClearedRanges(value: js.Array[String]): Self = this.set("clearedRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearedRanges: Self = this.set("clearedRanges", js.undefined)
+    @scala.inline
+    def setSpreadsheetId(value: String): Self = this.set("spreadsheetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpreadsheetId: Self = this.set("spreadsheetId", js.undefined)
+  }
+  
 }
 

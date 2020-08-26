@@ -7,14 +7,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSParameterProperty
   extends Node
      with LVal {
-  var accessibility: public | `private` | `protected` | Null
-  var parameter: Identifier_ | AssignmentPattern_
-  var readonly: Boolean | Null
+  var accessibility: public | `private` | `protected` | Null = js.native
+  var parameter: Identifier_ | AssignmentPattern_ = js.native
+  var readonly: Boolean | Null = js.native
   @JSName("type")
-  var type_TSParameterProperty: typings.babelTypes.babelTypesStrings.TSParameterProperty
+  var type_TSParameterProperty: typings.babelTypes.babelTypesStrings.TSParameterProperty = js.native
 }
 
 @JSImport("babel-types", "TSParameterProperty")

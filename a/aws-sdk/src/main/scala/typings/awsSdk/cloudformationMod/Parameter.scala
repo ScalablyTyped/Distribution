@@ -26,18 +26,38 @@ trait Parameter extends js.Object {
 
 object Parameter {
   @scala.inline
-  def apply(
-    ParameterKey: ParameterKey = null,
-    ParameterValue: ParameterValue = null,
-    ResolvedValue: ParameterValue = null,
-    UsePreviousValue: js.UndefOr[UsePreviousValue] = js.undefined
-  ): Parameter = {
+  def apply(): Parameter = {
     val __obj = js.Dynamic.literal()
-    if (ParameterKey != null) __obj.updateDynamic("ParameterKey")(ParameterKey.asInstanceOf[js.Any])
-    if (ParameterValue != null) __obj.updateDynamic("ParameterValue")(ParameterValue.asInstanceOf[js.Any])
-    if (ResolvedValue != null) __obj.updateDynamic("ResolvedValue")(ResolvedValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(UsePreviousValue)) __obj.updateDynamic("UsePreviousValue")(UsePreviousValue.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameter]
   }
+  @scala.inline
+  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameterKey(value: ParameterKey): Self = this.set("ParameterKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterKey: Self = this.set("ParameterKey", js.undefined)
+    @scala.inline
+    def setParameterValue(value: ParameterValue): Self = this.set("ParameterValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterValue: Self = this.set("ParameterValue", js.undefined)
+    @scala.inline
+    def setResolvedValue(value: ParameterValue): Self = this.set("ResolvedValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolvedValue: Self = this.set("ResolvedValue", js.undefined)
+    @scala.inline
+    def setUsePreviousValue(value: UsePreviousValue): Self = this.set("UsePreviousValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsePreviousValue: Self = this.set("UsePreviousValue", js.undefined)
+  }
+  
 }
 

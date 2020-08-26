@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EntryPoint extends js.Object {
   /**
     * The access code to access the conference. The maximum length is 128 characters.
@@ -11,12 +12,12 @@ trait EntryPoint extends js.Object {
     * that the conference provider uses. Only the populated fields should be displayed.
     * Optional.
     */
-  var accessCode: js.UndefOr[String] = js.undefined
+  var accessCode: js.UndefOr[String] = js.native
   /**
     * Features of the entry point, such as being toll or toll-free. One entry point can have multiple features. However, toll and toll-free cannot be both
     * set on the same entry point.
     */
-  var entryPointFeatures: js.UndefOr[js.Array[String]] = js.undefined
+  var entryPointFeatures: js.UndefOr[js.Array[String]] = js.native
   /**
     * The type of the conference entry point.
     * Possible values are:
@@ -26,7 +27,7 @@ trait EntryPoint extends js.Object {
     * - "more" - further conference joining instructions, for example additional phone numbers. A conference can have zero or one more entry point. A
     * conference with only a more entry point is not a valid conference.
     */
-  var entryPointType: js.UndefOr[String] = js.undefined
+  var entryPointType: js.UndefOr[String] = js.native
   /**
     * The label for the URI. Visible to end users. Not localized. The maximum length is 512 characters.
     * Examples:
@@ -36,39 +37,39 @@ trait EntryPoint extends js.Object {
     * - for more: should not be filled
     * Optional.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String] = js.native
   /**
     * The meeting code to access the conference. The maximum length is 128 characters.
     * When creating new conference data, populate only the subset of {meetingCode, accessCode, passcode, password, pin} fields that match the terminology
     * that the conference provider uses. Only the populated fields should be displayed.
     * Optional.
     */
-  var meetingCode: js.UndefOr[String] = js.undefined
+  var meetingCode: js.UndefOr[String] = js.native
   /**
     * The passcode to access the conference. The maximum length is 128 characters.
     * When creating new conference data, populate only the subset of {meetingCode, accessCode, passcode, password, pin} fields that match the terminology
     * that the conference provider uses. Only the populated fields should be displayed.
     */
-  var passcode: js.UndefOr[String] = js.undefined
+  var passcode: js.UndefOr[String] = js.native
   /**
     * The password to access the conference. The maximum length is 128 characters.
     * When creating new conference data, populate only the subset of {meetingCode, accessCode, passcode, password, pin} fields that match the terminology
     * that the conference provider uses. Only the populated fields should be displayed.
     * Optional.
     */
-  var password: js.UndefOr[String] = js.undefined
+  var password: js.UndefOr[String] = js.native
   /**
     * The PIN to access the conference. The maximum length is 128 characters.
     * When creating new conference data, populate only the subset of {meetingCode, accessCode, passcode, password, pin} fields that match the terminology
     * that the conference provider uses. Only the populated fields should be displayed.
     * Optional.
     */
-  var pin: js.UndefOr[String] = js.undefined
+  var pin: js.UndefOr[String] = js.native
   /**
     * The CLDR/ISO 3166 region code for the country associated with this phone access. Example: "SE" for Sweden.
     * Calendar backend will populate this field only for EntryPointType.PHONE.
     */
-  var regionCode: js.UndefOr[String] = js.undefined
+  var regionCode: js.UndefOr[String] = js.native
   /**
     * The URI of the entry point. The maximum length is 1300 characters.
     * Format:
@@ -77,35 +78,69 @@ trait EntryPoint extends js.Object {
     * - for sip, sip: schema is required, e.g., sip:12345678@myprovider.com.
     * - for more, http: or https: schema is required.
     */
-  var uri: js.UndefOr[String] = js.undefined
+  var uri: js.UndefOr[String] = js.native
 }
 
 object EntryPoint {
   @scala.inline
-  def apply(
-    accessCode: String = null,
-    entryPointFeatures: js.Array[String] = null,
-    entryPointType: String = null,
-    label: String = null,
-    meetingCode: String = null,
-    passcode: String = null,
-    password: String = null,
-    pin: String = null,
-    regionCode: String = null,
-    uri: String = null
-  ): EntryPoint = {
+  def apply(): EntryPoint = {
     val __obj = js.Dynamic.literal()
-    if (accessCode != null) __obj.updateDynamic("accessCode")(accessCode.asInstanceOf[js.Any])
-    if (entryPointFeatures != null) __obj.updateDynamic("entryPointFeatures")(entryPointFeatures.asInstanceOf[js.Any])
-    if (entryPointType != null) __obj.updateDynamic("entryPointType")(entryPointType.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (meetingCode != null) __obj.updateDynamic("meetingCode")(meetingCode.asInstanceOf[js.Any])
-    if (passcode != null) __obj.updateDynamic("passcode")(passcode.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (pin != null) __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
-    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryPoint]
   }
+  @scala.inline
+  implicit class EntryPointOps[Self <: EntryPoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessCode(value: String): Self = this.set("accessCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessCode: Self = this.set("accessCode", js.undefined)
+    @scala.inline
+    def setEntryPointFeaturesVarargs(value: String*): Self = this.set("entryPointFeatures", js.Array(value :_*))
+    @scala.inline
+    def setEntryPointFeatures(value: js.Array[String]): Self = this.set("entryPointFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPointFeatures: Self = this.set("entryPointFeatures", js.undefined)
+    @scala.inline
+    def setEntryPointType(value: String): Self = this.set("entryPointType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPointType: Self = this.set("entryPointType", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setMeetingCode(value: String): Self = this.set("meetingCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeetingCode: Self = this.set("meetingCode", js.undefined)
+    @scala.inline
+    def setPasscode(value: String): Self = this.set("passcode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasscode: Self = this.set("passcode", js.undefined)
+    @scala.inline
+    def setPassword(value: String): Self = this.set("password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassword: Self = this.set("password", js.undefined)
+    @scala.inline
+    def setPin(value: String): Self = this.set("pin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePin: Self = this.set("pin", js.undefined)
+    @scala.inline
+    def setRegionCode(value: String): Self = this.set("regionCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegionCode: Self = this.set("regionCode", js.undefined)
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

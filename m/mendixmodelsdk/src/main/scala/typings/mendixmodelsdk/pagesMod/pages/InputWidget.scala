@@ -23,20 +23,21 @@ abstract class InputWidget protected () extends ConditionallyEditableWidget {
   ) = this()
   @JSName("model")
   var model_FInputWidget: IModel = js.native
-  def label(): js.Any = js.native
-  def label(newValue: Text): js.Any = js.native
-  def labelTemplate(): js.Any = js.native
-  def labelTemplate(newValue: ClientTemplate): js.Any = js.native
-  /**
-    * In version 7.18.0: introduced
-    */
-  @JSName("labelTemplate")
-  def labelTemplate_Union: ClientTemplate | Null = js.native
   /**
     * In version 7.18.0: deleted
     */
-  @JSName("label")
-  def label_Union: Text | Null = js.native
+  def label: Text | Null = js.native
+  /**
+    * In version 7.18.0: introduced
+    */
+  def labelTemplate: ClientTemplate | Null = js.native
+  def labelTemplate_=(newValue: ClientTemplate | Null): Unit = js.native
+  def label_=(newValue: Text | Null): Unit = js.native
+  /**
+    * In version 8.12.0: introduced
+    */
+  def screenReaderLabel: ClientTemplate | Null = js.native
+  def screenReaderLabel_=(newValue: ClientTemplate | Null): Unit = js.native
 }
 
 /* static members */

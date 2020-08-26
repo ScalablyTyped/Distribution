@@ -11,8 +11,8 @@ The lodash method `_.keyBy` exported as a module.
 | Full name          | lodash.keyby |
 | Keywords           | lodash-modularized, keyby |
 | # releases         | 0 |
-| # dependents       | 58 |
-| # downloads        | 1134053 |
+| # dependents       | 60 |
+| # downloads        | 1199661 |
 | # stars            | 0 |
 
 ## Links

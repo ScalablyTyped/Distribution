@@ -22,12 +22,34 @@ trait DescribeIndexResponse extends js.Object {
 
 object DescribeIndexResponse {
   @scala.inline
-  def apply(indexName: IndexName = null, indexStatus: IndexStatus = null, schema: IndexSchema = null): DescribeIndexResponse = {
+  def apply(): DescribeIndexResponse = {
     val __obj = js.Dynamic.literal()
-    if (indexName != null) __obj.updateDynamic("indexName")(indexName.asInstanceOf[js.Any])
-    if (indexStatus != null) __obj.updateDynamic("indexStatus")(indexStatus.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIndexResponse]
   }
+  @scala.inline
+  implicit class DescribeIndexResponseOps[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIndexName(value: IndexName): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("indexName", js.undefined)
+    @scala.inline
+    def setIndexStatus(value: IndexStatus): Self = this.set("indexStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexStatus: Self = this.set("indexStatus", js.undefined)
+    @scala.inline
+    def setSchema(value: IndexSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchema: Self = this.set("schema", js.undefined)
+  }
+  
 }
 

@@ -17,10 +17,28 @@ trait SchemaScheduleTransferRunsResponse extends js.Object {
 
 object SchemaScheduleTransferRunsResponse {
   @scala.inline
-  def apply(runs: js.Array[SchemaTransferRun] = null): SchemaScheduleTransferRunsResponse = {
+  def apply(): SchemaScheduleTransferRunsResponse = {
     val __obj = js.Dynamic.literal()
-    if (runs != null) __obj.updateDynamic("runs")(runs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaScheduleTransferRunsResponse]
   }
+  @scala.inline
+  implicit class SchemaScheduleTransferRunsResponseOps[Self <: SchemaScheduleTransferRunsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRunsVarargs(value: SchemaTransferRun*): Self = this.set("runs", js.Array(value :_*))
+    @scala.inline
+    def setRuns(value: js.Array[SchemaTransferRun]): Self = this.set("runs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuns: Self = this.set("runs", js.undefined)
+  }
+  
 }
 

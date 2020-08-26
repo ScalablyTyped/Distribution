@@ -146,6 +146,7 @@ trait Rope
     * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
   def play(key: String): this.type = js.native
+  def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
   /**
@@ -190,6 +191,7 @@ trait Rope
     * @param bottomAlpha An optional bottom alpha value. See the method description for details.
     */
   def setAlphas(): this.type = js.native
+  def setAlphas(alphas: js.UndefOr[scala.Nothing], bottomAlpha: Double): this.type = js.native
   def setAlphas(alphas: js.Array[Double]): this.type = js.native
   def setAlphas(alphas: js.Array[Double], bottomAlpha: Double): this.type = js.native
   def setAlphas(alphas: Double): this.type = js.native
@@ -241,6 +243,7 @@ trait Rope
     * @param callback The callback to invoke during debug render. Leave as undefined to use the built-in callback.
     */
   def setDebug(): this.type = js.native
+  def setDebug(graphic: js.UndefOr[scala.Nothing], callback: js.Function): this.type = js.native
   def setDebug(graphic: Graphics): this.type = js.native
   def setDebug(graphic: Graphics, callback: js.Function): this.type = js.native
   /**
@@ -259,7 +262,17 @@ trait Rope
     * @param alphas Either a single alpha value, or an array of values.
     */
   def setHorizontal(): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: js.Array[Double], alphas: Double): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: Double): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: Double, alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: js.UndefOr[scala.Nothing], colors: Double, alphas: Double): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like]): this.type = js.native
+  def setHorizontal(points: js.Array[Vector2Like], colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: js.Array[Vector2Like], colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like], colors: js.Array[Double]): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like], colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like], colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -267,6 +280,8 @@ trait Rope
   def setHorizontal(points: js.Array[Vector2Like], colors: Double, alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: js.Array[Vector2Like], colors: Double, alphas: Double): this.type = js.native
   def setHorizontal(points: integer): this.type = js.native
+  def setHorizontal(points: integer, colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setHorizontal(points: integer, colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
   def setHorizontal(points: integer, colors: js.Array[Double]): this.type = js.native
   def setHorizontal(points: integer, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setHorizontal(points: integer, colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -309,7 +324,17 @@ trait Rope
     * @param alphas Either a single alpha value, or an array of values.
     */
   def setPoints(): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: js.Array[Double]): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: js.Array[Double], alphas: Double): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: Double): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: Double, alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: js.UndefOr[scala.Nothing], colors: Double, alphas: Double): this.type = js.native
   def setPoints(points: js.Array[Vector2Like]): this.type = js.native
+  def setPoints(points: js.Array[Vector2Like], colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: js.Array[Vector2Like], colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
   def setPoints(points: js.Array[Vector2Like], colors: js.Array[Double]): this.type = js.native
   def setPoints(points: js.Array[Vector2Like], colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: js.Array[Vector2Like], colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -317,6 +342,8 @@ trait Rope
   def setPoints(points: js.Array[Vector2Like], colors: Double, alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: js.Array[Vector2Like], colors: Double, alphas: Double): this.type = js.native
   def setPoints(points: integer): this.type = js.native
+  def setPoints(points: integer, colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setPoints(points: integer, colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
   def setPoints(points: integer, colors: js.Array[Double]): this.type = js.native
   def setPoints(points: integer, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setPoints(points: integer, colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -350,7 +377,17 @@ trait Rope
     * @param alphas Either a single alpha value, or an array of values.
     */
   def setVertical(): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: js.Array[Double]): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: js.Array[Double], alphas: Double): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: Double): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: Double, alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: js.UndefOr[scala.Nothing], colors: Double, alphas: Double): this.type = js.native
   def setVertical(points: js.Array[Vector2Like]): this.type = js.native
+  def setVertical(points: js.Array[Vector2Like], colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: js.Array[Vector2Like], colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
   def setVertical(points: js.Array[Vector2Like], colors: js.Array[Double]): this.type = js.native
   def setVertical(points: js.Array[Vector2Like], colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: js.Array[Vector2Like], colors: js.Array[Double], alphas: Double): this.type = js.native
@@ -358,6 +395,8 @@ trait Rope
   def setVertical(points: js.Array[Vector2Like], colors: Double, alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: js.Array[Vector2Like], colors: Double, alphas: Double): this.type = js.native
   def setVertical(points: integer): this.type = js.native
+  def setVertical(points: integer, colors: js.UndefOr[scala.Nothing], alphas: js.Array[Double]): this.type = js.native
+  def setVertical(points: integer, colors: js.UndefOr[scala.Nothing], alphas: Double): this.type = js.native
   def setVertical(points: integer, colors: js.Array[Double]): this.type = js.native
   def setVertical(points: integer, colors: js.Array[Double], alphas: js.Array[Double]): this.type = js.native
   def setVertical(points: integer, colors: js.Array[Double], alphas: Double): this.type = js.native

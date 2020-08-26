@@ -2,8 +2,8 @@ package typings.sipJs.outgoingRequestMessageMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sipJs.bodyMod.Body
-import typings.sipJs.nameAddrHeaderMod.NameAddrHeader
-import typings.sipJs.uriMod.URI
+import typings.sipJs.grammarMod.NameAddrHeader
+import typings.sipJs.grammarMod.URI
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,8 +18,43 @@ class OutgoingRequestMessage protected () extends js.Object {
     ruri: URI,
     fromURI: URI,
     toURI: URI,
+    options: js.UndefOr[scala.Nothing],
+    extraHeaders: js.Array[String]
+  ) = this()
+  def this(
+    method: String,
+    ruri: URI,
+    fromURI: URI,
+    toURI: URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String]
+  ) = this()
+  def this(
+    method: String,
+    ruri: URI,
+    fromURI: URI,
+    toURI: URI,
+    options: js.UndefOr[scala.Nothing],
+    extraHeaders: js.UndefOr[scala.Nothing],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: URI,
+    fromURI: URI,
+    toURI: URI,
+    options: js.UndefOr[scala.Nothing],
+    extraHeaders: js.Array[String],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: URI,
+    fromURI: URI,
+    toURI: URI,
+    options: OutgoingRequestMessageOptions,
+    extraHeaders: js.UndefOr[scala.Nothing],
+    body: Body
   ) = this()
   def this(
     method: String,

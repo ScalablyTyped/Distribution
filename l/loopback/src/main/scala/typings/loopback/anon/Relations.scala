@@ -4,17 +4,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Relations extends js.Object {
-  var dataSource: js.Any
-  var relations: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.Any = js.native
+  var relations: js.UndefOr[js.Any] = js.native
 }
 
 object Relations {
   @scala.inline
-  def apply(dataSource: js.Any, relations: js.Any = null): Relations = {
+  def apply(dataSource: js.Any): Relations = {
     val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any])
-    if (relations != null) __obj.updateDynamic("relations")(relations.asInstanceOf[js.Any])
     __obj.asInstanceOf[Relations]
   }
+  @scala.inline
+  implicit class RelationsOps[Self <: Relations] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelations(value: js.Any): Self = this.set("relations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelations: Self = this.set("relations", js.undefined)
+  }
+  
 }
 

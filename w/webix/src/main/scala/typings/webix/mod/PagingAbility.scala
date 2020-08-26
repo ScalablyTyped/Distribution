@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PagingAbility extends js.Object {
-  def getPage(): Double
-  def getPager(): js.Any
-  def setPage(page: Double): Unit
+  def getPage(): Double = js.native
+  def getPager(): js.Any = js.native
+  def setPage(page: Double): Unit = js.native
 }
 
 @JSImport("webix", "PagingAbility")

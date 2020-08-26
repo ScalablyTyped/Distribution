@@ -1,7 +1,8 @@
 package typings.pulumiAws.accessPointMod
 
-import typings.pulumiAws.outputMod.s3.AccessPointPublicAccessBlockConfiguration
-import typings.pulumiAws.outputMod.s3.AccessPointVpcConfiguration
+import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.efs.AccessPointPosixUser
+import typings.pulumiAws.outputMod.efs.AccessPointRootDirectory
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.outputMod.Output_
@@ -11,7 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint")
+@JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint")
 @js.native
 class AccessPoint protected () extends CustomResource {
   /**
@@ -24,50 +25,34 @@ class AccessPoint protected () extends CustomResource {
   def this(name: String, args: AccessPointArgs) = this()
   def this(name: String, args: AccessPointArgs, opts: CustomResourceOptions) = this()
   /**
-    * The AWS account ID for the owner of the bucket for which you want to create an access point. Defaults to automatically determined account ID of the provider.
-    */
-  val accountId: Output_[String] = js.native
-  /**
-    * Amazon Resource Name (ARN) of the S3 Access Point.
+    * Amazon Resource Name of the access point.
     */
   val arn: Output_[String] = js.native
   /**
-    * The name of the bucket that you want to associate this access point with.
+    * Amazon Resource Name of the file system.
     */
-  val bucket: Output_[String] = js.native
+  val fileSystemArn: Output_[String] = js.native
   /**
-    * The DNS domain name of the S3 Access Point in the format _`name`_-_`accountId`_.s3-accesspoint._region_.amazonaws.com.
-    * Note: S3 access points only support secure access by HTTPS. HTTP isn't supported.
+    * The ID of the file system for which the access point is intended.
     */
-  val domainName: Output_[String] = js.native
+  val fileSystemId: Output_[String] = js.native
+  val ownerId: Output_[String] = js.native
   /**
-    * Indicates whether this access point currently has a policy that allows public access.
+    * The operating system user and group applied to all file system requests made using the access point. See Posix User below.
     */
-  val hasPublicAccessPolicy: Output_[Boolean] = js.native
+  val posixUser: Output_[js.UndefOr[AccessPointPosixUser]] = js.native
   /**
-    * The name you want to assign to this access point.
+    * Specifies the directory on the Amazon EFS file system that the access point provides access to. See Root Directory below.
     */
-  val name: Output_[String] = js.native
+  val rootDirectory: Output_[AccessPointRootDirectory] = js.native
   /**
-    * Indicates whether this access point allows access from the public Internet. Values are `VPC` (the access point doesn't allow access from the public Internet) and `Internet` (the access point allows access from the public Internet, subject to the access point and bucket access policies).
+    * Key-value mapping of resource tags.
     */
-  val networkOrigin: Output_[String] = js.native
-  /**
-    * A valid JSON document that specifies the policy that you want to apply to this access point.
-    */
-  val policy: Output_[js.UndefOr[String]] = js.native
-  /**
-    * Configuration block to manage the `PublicAccessBlock` configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. Detailed below.
-    */
-  val publicAccessBlockConfiguration: Output_[js.UndefOr[AccessPointPublicAccessBlockConfiguration]] = js.native
-  /**
-    * Configuration block to restrict access to this access point to requests from the specified Virtual Private Cloud (VPC). Detailed below.
-    */
-  val vpcConfiguration: Output_[js.UndefOr[AccessPointVpcConfiguration]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
-@JSImport("@pulumi/aws/s3/accessPoint", "AccessPoint")
+@JSImport("@pulumi/aws/efs/accessPoint", "AccessPoint")
 @js.native
 object AccessPoint extends js.Object {
   /**
@@ -77,14 +62,16 @@ object AccessPoint extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AccessPoint = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AccessPoint = js.native
   def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = js.native
   def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = js.native
   /**
     * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accessPoint.AccessPoint */ Boolean = js.native
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = js.native
 }
 

@@ -145,6 +145,7 @@ trait NavContainer extends Control {
     * transition.
     */
   def backToPage(sPageId: String): NavContainer = js.native
+  def backToPage(sPageId: String, oBackData: js.UndefOr[scala.Nothing], oTransitionParameters: js.Any): NavContainer = js.native
   def backToPage(sPageId: String, oBackData: js.Any): NavContainer = js.native
   def backToPage(sPageId: String, oBackData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
   /**
@@ -344,6 +345,7 @@ trait NavContainer extends Control {
     * inserted previous page if the user would have done a normal forward navigation to it.
     */
   def insertPreviousPage(sPageId: String): NavContainer = js.native
+  def insertPreviousPage(sPageId: String, sTransitionName: js.UndefOr[scala.Nothing], oData: js.Any): NavContainer = js.native
   def insertPreviousPage(sPageId: String, sTransitionName: String): NavContainer = js.native
   def insertPreviousPage(sPageId: String, sTransitionName: String, oData: js.Any): NavContainer = js.native
   /**
@@ -443,7 +445,26 @@ trait NavContainer extends Control {
     * use any parameter.
     */
   def to(sPageId: String): NavContainer = js.native
+  def to(
+    sPageId: String,
+    sTransitionName: js.UndefOr[scala.Nothing],
+    oData: js.UndefOr[scala.Nothing],
+    oTransitionParameters: js.Any
+  ): NavContainer = js.native
+  def to(sPageId: String, sTransitionName: js.UndefOr[scala.Nothing], oData: js.Any): NavContainer = js.native
+  def to(
+    sPageId: String,
+    sTransitionName: js.UndefOr[scala.Nothing],
+    oData: js.Any,
+    oTransitionParameters: js.Any
+  ): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String): NavContainer = js.native
+  def to(
+    sPageId: String,
+    sTransitionName: String,
+    oData: js.UndefOr[scala.Nothing],
+    oTransitionParameters: js.Any
+  ): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String, oData: js.Any): NavContainer = js.native
   def to(sPageId: String, sTransitionName: String, oData: js.Any, oTransitionParameters: js.Any): NavContainer = js.native
 }

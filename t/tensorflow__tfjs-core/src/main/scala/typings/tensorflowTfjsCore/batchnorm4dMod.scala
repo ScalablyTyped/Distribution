@@ -19,14 +19,5 @@ object batchnorm4dMod extends js.Object {
     /* varianceEpsilon */ js.UndefOr[Double], 
     Tensor4D
   ] = js.native
-  val batchNormalization4d: js.Function6[
-    /* x */ Tensor4D | TensorLike, 
-    /* mean */ Tensor4D | Tensor1D | TensorLike, 
-    /* variance */ Tensor4D | Tensor1D | TensorLike, 
-    /* varianceEpsilon */ js.UndefOr[Double], 
-    /* scale */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
-    /* offset */ js.UndefOr[Tensor4D | Tensor1D | TensorLike], 
-    Tensor4D
-  ] = js.native
 }
 

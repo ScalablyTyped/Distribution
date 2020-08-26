@@ -26,17 +26,38 @@ trait StopInstancesRequest extends js.Object {
 
 object StopInstancesRequest {
   @scala.inline
-  def apply(
-    InstanceIds: InstanceIdStringList,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Force: js.UndefOr[Boolean] = js.undefined,
-    Hibernate: js.UndefOr[Boolean] = js.undefined
-  ): StopInstancesRequest = {
+  def apply(InstanceIds: InstanceIdStringList): StopInstancesRequest = {
     val __obj = js.Dynamic.literal(InstanceIds = InstanceIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Hibernate)) __obj.updateDynamic("Hibernate")(Hibernate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopInstancesRequest]
   }
+  @scala.inline
+  implicit class StopInstancesRequestOps[Self <: StopInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceIdsVarargs(value: InstanceId*): Self = this.set("InstanceIds", js.Array(value :_*))
+    @scala.inline
+    def setInstanceIds(value: InstanceIdStringList): Self = this.set("InstanceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("Force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("Force", js.undefined)
+    @scala.inline
+    def setHibernate(value: Boolean): Self = this.set("Hibernate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHibernate: Self = this.set("Hibernate", js.undefined)
+  }
+  
 }
 

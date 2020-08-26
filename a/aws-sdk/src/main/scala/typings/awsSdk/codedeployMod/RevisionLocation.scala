@@ -30,20 +30,42 @@ trait RevisionLocation extends js.Object {
 
 object RevisionLocation {
   @scala.inline
-  def apply(
-    appSpecContent: AppSpecContent = null,
-    gitHubLocation: GitHubLocation = null,
-    revisionType: RevisionLocationType = null,
-    s3Location: S3Location = null,
-    string: RawString = null
-  ): RevisionLocation = {
+  def apply(): RevisionLocation = {
     val __obj = js.Dynamic.literal()
-    if (appSpecContent != null) __obj.updateDynamic("appSpecContent")(appSpecContent.asInstanceOf[js.Any])
-    if (gitHubLocation != null) __obj.updateDynamic("gitHubLocation")(gitHubLocation.asInstanceOf[js.Any])
-    if (revisionType != null) __obj.updateDynamic("revisionType")(revisionType.asInstanceOf[js.Any])
-    if (s3Location != null) __obj.updateDynamic("s3Location")(s3Location.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevisionLocation]
   }
+  @scala.inline
+  implicit class RevisionLocationOps[Self <: RevisionLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppSpecContent(value: AppSpecContent): Self = this.set("appSpecContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppSpecContent: Self = this.set("appSpecContent", js.undefined)
+    @scala.inline
+    def setGitHubLocation(value: GitHubLocation): Self = this.set("gitHubLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitHubLocation: Self = this.set("gitHubLocation", js.undefined)
+    @scala.inline
+    def setRevisionType(value: RevisionLocationType): Self = this.set("revisionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionType: Self = this.set("revisionType", js.undefined)
+    @scala.inline
+    def setS3Location(value: S3Location): Self = this.set("s3Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Location: Self = this.set("s3Location", js.undefined)
+    @scala.inline
+    def setString(value: RawString): Self = this.set("string", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteString: Self = this.set("string", js.undefined)
+  }
+  
 }
 

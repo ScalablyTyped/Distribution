@@ -10,9 +10,9 @@ PostgreSQL storage adapter for Keyv
 | ------------------ | :-------------: |
 | Full name          | @keyv/postgres |
 | Keywords           | postgres, postgresql, sql, keyv, storage, adapter, key, value, store, cache, ttl |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 2576 |
+| # downloads        | 2694 |
 | # stars            | 0 |
 
 ## Links

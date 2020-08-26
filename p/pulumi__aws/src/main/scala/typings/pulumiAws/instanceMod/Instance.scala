@@ -97,7 +97,6 @@ class Instance protected () extends CustomResource {
   /**
     * The IAM Instance Profile to
     * launch the instance with. Specified as the name of the Instance Profile. Ensure your credentials have the correct permission to assign the instance profile according to the [EC2 documentation](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html#roles-usingrole-ec2instance-permissions), notably `iam:PassRole`.
-    * * `ipv6AddressCount`- (Optional) A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
     */
   val iamInstanceProfile: Output_[js.UndefOr[String]] = js.native
   /**
@@ -115,6 +114,9 @@ class Instance protected () extends CustomResource {
     * The type of instance to start. Updates to this field will trigger a stop/start of the EC2 instance.
     */
   val instanceType: Output_[InstanceType] = js.native
+  /**
+    * A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
+    */
   val ipv6AddressCount: Output_[Double] = js.native
   /**
     * Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface
@@ -136,6 +138,10 @@ class Instance protected () extends CustomResource {
     * Customize network interfaces to be attached at instance boot time. See Network Interfaces below for more details.
     */
   val networkInterfaces: Output_[js.Array[InstanceNetworkInterface]] = js.native
+  /**
+    * The ARN of the Outpost the instance is assigned to.
+    */
+  val outpostArn: Output_[String] = js.native
   /**
     * Base-64 encoded encrypted password data for the instance.
     * Useful for getting the administrator password for instances running Microsoft Windows.
@@ -169,7 +175,7 @@ class Instance protected () extends CustomResource {
     */
   val publicDns: Output_[String] = js.native
   /**
-    * The public IP address assigned to the instance, if applicable. **NOTE**: If you are using an [`aws.ec2.Eip`](https://www.terraform.io/docs/providers/aws/r/eip.html) with your instance, you should refer to the EIP's address directly and not use `publicIp`, as this field will change after the EIP is attached.
+    * The public IP address assigned to the instance, if applicable. **NOTE**: If you are using an `aws.ec2.Eip` with your instance, you should refer to the EIP's address directly and not use `publicIp`, as this field will change after the EIP is attached.
     */
   val publicIp: Output_[String] = js.native
   /**
@@ -179,6 +185,8 @@ class Instance protected () extends CustomResource {
   val rootBlockDevice: Output_[InstanceRootBlockDevice] = js.native
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
+    *
+    * @deprecated Use of `securityGroups` is discouraged as it does not allow for changes and will force your instance to be replaced if changes are made. To avoid this, use `vpcSecurityGroupIds` which allows for updates.
     */
   val securityGroups: Output_[js.Array[String]] = js.native
   /**
@@ -191,9 +199,9 @@ class Instance protected () extends CustomResource {
     */
   val subnetId: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for the import-instance command.
     */
@@ -207,9 +215,9 @@ class Instance protected () extends CustomResource {
     */
   val userDataBase64: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of tags to assign to the devices created by the instance at launch time.
+    * A map of tags to assign to the devices created by the instance at launch time.
     */
-  val volumeTags: Output_[StringDictionary[_]] = js.native
+  val volumeTags: Output_[StringDictionary[String]] = js.native
   /**
     * A list of security group IDs to associate with.
     */
@@ -227,8 +235,10 @@ object Instance extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Instance = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Instance = js.native
   def get(name: String, id: Input[ID], state: InstanceState): Instance = js.native
   def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = js.native
   /**

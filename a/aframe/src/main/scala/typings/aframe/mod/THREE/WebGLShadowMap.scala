@@ -10,7 +10,7 @@ class WebGLShadowMap protected ()
   extends typings.three.mod.WebGLShadowMap {
   def this(
     _renderer: typings.three.webGLRendererMod.WebGLRenderer,
-    _objects: js.Array[_],
+    _objects: typings.three.webGLObjectsMod.WebGLObjects,
     maxTextureSize: Double
   ) = this()
 }

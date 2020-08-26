@@ -1,6 +1,5 @@
 package typings.reactNativeSnapCarousel.mod
 
-import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import typings.reactNative.mod.Animated.AnimatedValue
 import typings.reactNative.mod.Animated.DecayAnimationConfig
@@ -9,7 +8,6 @@ import typings.reactNative.mod.Animated.TimingAnimationConfig
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSnapCarousel.anon.Index
@@ -27,7 +25,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CarouselProps[T] extends Props[ScrollViewProps] {
+trait CarouselProps[T] extends js.Object {
   // Style and animation
   /**
     * Custom animation options.

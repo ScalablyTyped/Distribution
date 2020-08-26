@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("ui-box/dist/enhancers/grid", JSImport.Namespace)
+@JSImport("ui-box/dist/src/enhancers/grid", JSImport.Namespace)
 @js.native
 object gridMod extends js.Object {
   val propAliases: PropAliases = js.native

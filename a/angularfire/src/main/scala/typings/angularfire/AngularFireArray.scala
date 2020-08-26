@@ -87,6 +87,8 @@ trait AngularFireArray extends Array[AngularFireSimpleObject] {
   @JSName("$loaded")
   def $loaded(): IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
+  def $loaded(resolve: js.UndefOr[scala.Nothing], reject: js.Function1[/* err */ js.Any, _]): IPromise[AngularFireArray] = js.native
+  @JSName("$loaded")
   def $loaded(resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit]): IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
   def $loaded(

@@ -244,6 +244,14 @@ trait SearchViewModel
     */
   var suggestionsEnabled: Boolean = js.native
   /**
+    * Indicates whether the `View` or `Portal` is loading resources prior to use. If resources are still loading, this value is `false`. If resources are done loading, this value is `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#updating)
+    *
+    * @default false
+    */
+  val updating: Boolean = js.native
+  /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#view)

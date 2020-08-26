@@ -80,9 +80,9 @@ class WindowsFileSystem protected () extends CustomResource {
     */
   val subnetIds: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the file system.
+    * A map of tags to assign to the file system.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * Throughput (megabytes per second) of the file system in power of 2 increments. Minimum of `8` and maximum of `2048`.
     */
@@ -108,8 +108,10 @@ object WindowsFileSystem extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): WindowsFileSystem = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WindowsFileSystem = js.native
   def get(name: String, id: Input[ID], state: WindowsFileSystemState): WindowsFileSystem = js.native
   def get(name: String, id: Input[ID], state: WindowsFileSystemState, opts: CustomResourceOptions): WindowsFileSystem = js.native
   /**

@@ -17,6 +17,7 @@ trait Recipe extends js.Object {
   def comment(text: String, x: Double, y: Double, options: CommentOptions): Recipe = js.native
   def createPage(pageWidth: Double, pageHeight: Double): Recipe = js.native
   def custom(): Recipe = js.native
+  def custom(key: js.UndefOr[scala.Nothing], value: String): Recipe = js.native
   def custom(key: String): Recipe = js.native
   def custom(key: String, value: String): Recipe = js.native
   def editPage(pageNumber: Double): Recipe = js.native

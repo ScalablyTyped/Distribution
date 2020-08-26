@@ -304,6 +304,9 @@ object pulumiAwsStrings {
   sealed trait a1Dotxlarge extends InstanceType
   
   @js.native
+  sealed trait `af-south-1` extends Region
+  
+  @js.native
   sealed trait all_ extends ProtocolType
   
   @js.native
@@ -427,6 +430,30 @@ object pulumiAwsStrings {
   
   @js.native
   sealed trait c5Dotxlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDot12xlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDot16xlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDot24xlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDot2xlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDot4xlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDot8xlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDotlarge extends InstanceType
+  
+  @js.native
+  sealed trait c5aDotxlarge extends InstanceType
   
   @js.native
   sealed trait c5dDot18xlarge extends InstanceType
@@ -761,6 +788,9 @@ object pulumiAwsStrings {
   
   @js.native
   sealed trait `eu-north-1` extends Region
+  
+  @js.native
+  sealed trait `eu-south-1` extends Region
   
   @js.native
   sealed trait `eu-west-1` extends Region
@@ -1519,6 +1549,8 @@ object pulumiAwsStrings {
   @scala.inline
   def a1Dotxlarge: a1Dotxlarge = "a1.xlarge".asInstanceOf[a1Dotxlarge]
   @scala.inline
+  def `af-south-1`: `af-south-1` = "af-south-1".asInstanceOf[`af-south-1`]
+  @scala.inline
   def all_ : all_ = "all".asInstanceOf[all_]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
@@ -1600,6 +1632,22 @@ object pulumiAwsStrings {
   def c5Dotlarge: c5Dotlarge = "c5.large".asInstanceOf[c5Dotlarge]
   @scala.inline
   def c5Dotxlarge: c5Dotxlarge = "c5.xlarge".asInstanceOf[c5Dotxlarge]
+  @scala.inline
+  def c5aDot12xlarge: c5aDot12xlarge = "c5a.12xlarge".asInstanceOf[c5aDot12xlarge]
+  @scala.inline
+  def c5aDot16xlarge: c5aDot16xlarge = "c5a.16xlarge".asInstanceOf[c5aDot16xlarge]
+  @scala.inline
+  def c5aDot24xlarge: c5aDot24xlarge = "c5a.24xlarge".asInstanceOf[c5aDot24xlarge]
+  @scala.inline
+  def c5aDot2xlarge: c5aDot2xlarge = "c5a.2xlarge".asInstanceOf[c5aDot2xlarge]
+  @scala.inline
+  def c5aDot4xlarge: c5aDot4xlarge = "c5a.4xlarge".asInstanceOf[c5aDot4xlarge]
+  @scala.inline
+  def c5aDot8xlarge: c5aDot8xlarge = "c5a.8xlarge".asInstanceOf[c5aDot8xlarge]
+  @scala.inline
+  def c5aDotlarge: c5aDotlarge = "c5a.large".asInstanceOf[c5aDotlarge]
+  @scala.inline
+  def c5aDotxlarge: c5aDotxlarge = "c5a.xlarge".asInstanceOf[c5aDotxlarge]
   @scala.inline
   def c5dDot18xlarge: c5dDot18xlarge = "c5d.18xlarge".asInstanceOf[c5dDot18xlarge]
   @scala.inline
@@ -1782,6 +1830,8 @@ object pulumiAwsStrings {
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
   @scala.inline
   def `eu-north-1`: `eu-north-1` = "eu-north-1".asInstanceOf[`eu-north-1`]
+  @scala.inline
+  def `eu-south-1`: `eu-south-1` = "eu-south-1".asInstanceOf[`eu-south-1`]
   @scala.inline
   def `eu-west-1`: `eu-west-1` = "eu-west-1".asInstanceOf[`eu-west-1`]
   @scala.inline

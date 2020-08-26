@@ -21,30 +21,62 @@ trait PartialClassNameMapFabCla extends js.Object {
 
 object PartialClassNameMapFabCla {
   @scala.inline
-  def apply(
-    colorInherit: String = null,
-    disabled: String = null,
-    extended: String = null,
-    focusVisible: String = null,
-    label: String = null,
-    primary: String = null,
-    root: String = null,
-    secondary: String = null,
-    sizeMedium: String = null,
-    sizeSmall: String = null
-  ): PartialClassNameMapFabCla = {
+  def apply(): PartialClassNameMapFabCla = {
     val __obj = js.Dynamic.literal()
-    if (colorInherit != null) __obj.updateDynamic("colorInherit")(colorInherit.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (extended != null) __obj.updateDynamic("extended")(extended.asInstanceOf[js.Any])
-    if (focusVisible != null) __obj.updateDynamic("focusVisible")(focusVisible.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (secondary != null) __obj.updateDynamic("secondary")(secondary.asInstanceOf[js.Any])
-    if (sizeMedium != null) __obj.updateDynamic("sizeMedium")(sizeMedium.asInstanceOf[js.Any])
-    if (sizeSmall != null) __obj.updateDynamic("sizeSmall")(sizeSmall.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapFabCla]
   }
+  @scala.inline
+  implicit class PartialClassNameMapFabClaOps[Self <: PartialClassNameMapFabCla] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorInherit(value: String): Self = this.set("colorInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorInherit: Self = this.set("colorInherit", js.undefined)
+    @scala.inline
+    def setDisabled(value: String): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setExtended(value: String): Self = this.set("extended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtended: Self = this.set("extended", js.undefined)
+    @scala.inline
+    def setFocusVisible(value: String): Self = this.set("focusVisible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusVisible: Self = this.set("focusVisible", js.undefined)
+    @scala.inline
+    def setLabel(value: String): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setPrimary(value: String): Self = this.set("primary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimary: Self = this.set("primary", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSecondary(value: String): Self = this.set("secondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecondary: Self = this.set("secondary", js.undefined)
+    @scala.inline
+    def setSizeMedium(value: String): Self = this.set("sizeMedium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeMedium: Self = this.set("sizeMedium", js.undefined)
+    @scala.inline
+    def setSizeSmall(value: String): Self = this.set("sizeSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeSmall: Self = this.set("sizeSmall", js.undefined)
+  }
+  
 }
 

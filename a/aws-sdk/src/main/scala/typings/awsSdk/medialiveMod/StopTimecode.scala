@@ -18,11 +18,30 @@ trait StopTimecode extends js.Object {
 
 object StopTimecode {
   @scala.inline
-  def apply(LastFrameClippingBehavior: LastFrameClippingBehavior = null, Timecode: string = null): StopTimecode = {
+  def apply(): StopTimecode = {
     val __obj = js.Dynamic.literal()
-    if (LastFrameClippingBehavior != null) __obj.updateDynamic("LastFrameClippingBehavior")(LastFrameClippingBehavior.asInstanceOf[js.Any])
-    if (Timecode != null) __obj.updateDynamic("Timecode")(Timecode.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopTimecode]
   }
+  @scala.inline
+  implicit class StopTimecodeOps[Self <: StopTimecode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastFrameClippingBehavior(value: LastFrameClippingBehavior): Self = this.set("LastFrameClippingBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastFrameClippingBehavior: Self = this.set("LastFrameClippingBehavior", js.undefined)
+    @scala.inline
+    def setTimecode(value: string): Self = this.set("Timecode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimecode: Self = this.set("Timecode", js.undefined)
+  }
+  
 }
 

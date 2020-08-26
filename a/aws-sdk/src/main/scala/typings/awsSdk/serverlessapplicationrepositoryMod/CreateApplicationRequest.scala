@@ -75,37 +75,78 @@ trait CreateApplicationRequest extends js.Object {
 
 object CreateApplicationRequest {
   @scala.inline
-  def apply(
-    Author: string,
-    Description: string,
-    Name: string,
-    HomePageUrl: string = null,
-    Labels: listOfString = null,
-    LicenseBody: string = null,
-    LicenseUrl: string = null,
-    ReadmeBody: string = null,
-    ReadmeUrl: string = null,
-    SemanticVersion: string = null,
-    SourceCodeArchiveUrl: string = null,
-    SourceCodeUrl: string = null,
-    SpdxLicenseId: string = null,
-    TemplateBody: string = null,
-    TemplateUrl: string = null
-  ): CreateApplicationRequest = {
+  def apply(Author: string, Description: string, Name: string): CreateApplicationRequest = {
     val __obj = js.Dynamic.literal(Author = Author.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (HomePageUrl != null) __obj.updateDynamic("HomePageUrl")(HomePageUrl.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (LicenseBody != null) __obj.updateDynamic("LicenseBody")(LicenseBody.asInstanceOf[js.Any])
-    if (LicenseUrl != null) __obj.updateDynamic("LicenseUrl")(LicenseUrl.asInstanceOf[js.Any])
-    if (ReadmeBody != null) __obj.updateDynamic("ReadmeBody")(ReadmeBody.asInstanceOf[js.Any])
-    if (ReadmeUrl != null) __obj.updateDynamic("ReadmeUrl")(ReadmeUrl.asInstanceOf[js.Any])
-    if (SemanticVersion != null) __obj.updateDynamic("SemanticVersion")(SemanticVersion.asInstanceOf[js.Any])
-    if (SourceCodeArchiveUrl != null) __obj.updateDynamic("SourceCodeArchiveUrl")(SourceCodeArchiveUrl.asInstanceOf[js.Any])
-    if (SourceCodeUrl != null) __obj.updateDynamic("SourceCodeUrl")(SourceCodeUrl.asInstanceOf[js.Any])
-    if (SpdxLicenseId != null) __obj.updateDynamic("SpdxLicenseId")(SpdxLicenseId.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
-    if (TemplateUrl != null) __obj.updateDynamic("TemplateUrl")(TemplateUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateApplicationRequest]
   }
+  @scala.inline
+  implicit class CreateApplicationRequestOps[Self <: CreateApplicationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: string): Self = this.set("Author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: string): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: string): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHomePageUrl(value: string): Self = this.set("HomePageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHomePageUrl: Self = this.set("HomePageUrl", js.undefined)
+    @scala.inline
+    def setLabelsVarargs(value: string*): Self = this.set("Labels", js.Array(value :_*))
+    @scala.inline
+    def setLabels(value: listOfString): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setLicenseBody(value: string): Self = this.set("LicenseBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseBody: Self = this.set("LicenseBody", js.undefined)
+    @scala.inline
+    def setLicenseUrl(value: string): Self = this.set("LicenseUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseUrl: Self = this.set("LicenseUrl", js.undefined)
+    @scala.inline
+    def setReadmeBody(value: string): Self = this.set("ReadmeBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadmeBody: Self = this.set("ReadmeBody", js.undefined)
+    @scala.inline
+    def setReadmeUrl(value: string): Self = this.set("ReadmeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadmeUrl: Self = this.set("ReadmeUrl", js.undefined)
+    @scala.inline
+    def setSemanticVersion(value: string): Self = this.set("SemanticVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSemanticVersion: Self = this.set("SemanticVersion", js.undefined)
+    @scala.inline
+    def setSourceCodeArchiveUrl(value: string): Self = this.set("SourceCodeArchiveUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeArchiveUrl: Self = this.set("SourceCodeArchiveUrl", js.undefined)
+    @scala.inline
+    def setSourceCodeUrl(value: string): Self = this.set("SourceCodeUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceCodeUrl: Self = this.set("SourceCodeUrl", js.undefined)
+    @scala.inline
+    def setSpdxLicenseId(value: string): Self = this.set("SpdxLicenseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpdxLicenseId: Self = this.set("SpdxLicenseId", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: string): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    @scala.inline
+    def setTemplateUrl(value: string): Self = this.set("TemplateUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateUrl: Self = this.set("TemplateUrl", js.undefined)
+  }
+  
 }
 

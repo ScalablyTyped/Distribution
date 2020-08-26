@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ColumnSizerProps
   extends /**
   * PLEASE NOTE
@@ -16,13 +17,13 @@ trait ColumnSizerProps
   */
 /* key */ StringDictionary[js.Any] {
   /** Number of columns in Grid or Table child */
-  var columnCount: js.UndefOr[Double] = js.undefined
+  var columnCount: js.UndefOr[Double] = js.native
   /** Optional maximum allowed column width */
-  var columnMaxWidth: js.UndefOr[Double] = js.undefined
+  var columnMaxWidth: js.UndefOr[Double] = js.native
   /** Optional minimum allowed column width */
-  var columnMinWidth: js.UndefOr[Double] = js.undefined
+  var columnMinWidth: js.UndefOr[Double] = js.native
   /** Width of Grid or Table child */
-  var width: Double
+  var width: Double = js.native
   /**
     * Function responsible for rendering a virtualized Grid.
     * This function should implement the following signature:
@@ -32,25 +33,43 @@ trait ColumnSizerProps
     * The :registerChild should be passed to the Grid's :ref property.
     * The :adjustedWidth property is optional; it reflects the lesser of the overall width or the width of all columns.
     */
-  def children(props: SizedColumnProps): ReactNode
+  def children(props: SizedColumnProps): ReactNode = js.native
 }
 
 object ColumnSizerProps {
   @scala.inline
-  def apply(
-    children: SizedColumnProps => ReactNode,
-    width: Double,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    columnCount: js.UndefOr[Double] = js.undefined,
-    columnMaxWidth: js.UndefOr[Double] = js.undefined,
-    columnMinWidth: js.UndefOr[Double] = js.undefined
-  ): ColumnSizerProps = {
+  def apply(children: SizedColumnProps => ReactNode, width: Double): ColumnSizerProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), width = width.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnMaxWidth)) __obj.updateDynamic("columnMaxWidth")(columnMaxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnMinWidth)) __obj.updateDynamic("columnMinWidth")(columnMinWidth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSizerProps]
   }
+  @scala.inline
+  implicit class ColumnSizerPropsOps[Self <: ColumnSizerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: SizedColumnProps => ReactNode): Self = this.set("children", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColumnCount(value: Double): Self = this.set("columnCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnCount: Self = this.set("columnCount", js.undefined)
+    @scala.inline
+    def setColumnMaxWidth(value: Double): Self = this.set("columnMaxWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnMaxWidth: Self = this.set("columnMaxWidth", js.undefined)
+    @scala.inline
+    def setColumnMinWidth(value: Double): Self = this.set("columnMinWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnMinWidth: Self = this.set("columnMinWidth", js.undefined)
+  }
+  
 }
 

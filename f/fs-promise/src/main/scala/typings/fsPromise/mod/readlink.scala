@@ -25,11 +25,26 @@ object readlink extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[`1` | BufferEncoding | Encoding | Null | String],
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
   ): Unit = js.native
   def apply(path: PathLike, options: String): js.Promise[String | Buffer] = js.native
+  def apply(
+    path: PathLike,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String | Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* linkString */ String), Unit]
+  ): Unit = js.native
   def apply(path: PathLike, options: Encoding): js.Promise[String] = js.native
+  def apply(
+    path: PathLike,
+    options: Encoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
+  ): Unit = js.native
   def apply(path: PathLike, options: `0`): js.Promise[Buffer] = js.native
   def apply(
     path: PathLike,
@@ -37,6 +52,16 @@ object readlink extends js.Object {
     callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ Buffer, Unit]
   ): Unit = js.native
   def apply(path: PathLike, options: `1`): js.Promise[String | Buffer] = js.native
+  def apply(
+    path: PathLike,
+    options: `1`,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String | Buffer, Unit]
+  ): Unit = js.native
   def apply(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
+  def apply(
+    path: PathLike,
+    options: BufferEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* linkString */ String, Unit]
+  ): Unit = js.native
 }
 

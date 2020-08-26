@@ -180,292 +180,293 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined {[ TTag in keyof react.react.<global>.JSX.IntrinsicElements ]: styled-components.styled-components.ThemedStyledFunction<TTag, T, {}, never>} */
+@js.native
 trait ThemedStyledComponentFactories[T /* <: js.Object */] extends js.Object {
-  var a: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.a, T, js.Object, scala.Nothing]
-  var abbr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.abbr, T, js.Object, scala.Nothing]
-  var address: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.address, T, js.Object, scala.Nothing]
-  var animate: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.animate, T, js.Object, scala.Nothing]
+  var a: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.a, T, js.Object, scala.Nothing] = js.native
+  var abbr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.abbr, T, js.Object, scala.Nothing] = js.native
+  var address: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.address, T, js.Object, scala.Nothing] = js.native
+  var animate: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.animate, T, js.Object, scala.Nothing] = js.native
   var animateMotion: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.animateMotion, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var animateTransform: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.animateTransform, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var area: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.area, T, js.Object, scala.Nothing]
-  var article: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.article, T, js.Object, scala.Nothing]
-  var aside: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.aside, T, js.Object, scala.Nothing]
-  var audio: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.audio, T, js.Object, scala.Nothing]
-  var b: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.b, T, js.Object, scala.Nothing]
-  var base: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.base, T, js.Object, scala.Nothing]
-  var bdi: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.bdi, T, js.Object, scala.Nothing]
-  var bdo: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.bdo, T, js.Object, scala.Nothing]
-  var big: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.big, T, js.Object, scala.Nothing]
+  ] = js.native
+  var area: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.area, T, js.Object, scala.Nothing] = js.native
+  var article: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.article, T, js.Object, scala.Nothing] = js.native
+  var aside: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.aside, T, js.Object, scala.Nothing] = js.native
+  var audio: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.audio, T, js.Object, scala.Nothing] = js.native
+  var b: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.b, T, js.Object, scala.Nothing] = js.native
+  var base: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.base, T, js.Object, scala.Nothing] = js.native
+  var bdi: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.bdi, T, js.Object, scala.Nothing] = js.native
+  var bdo: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.bdo, T, js.Object, scala.Nothing] = js.native
+  var big: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.big, T, js.Object, scala.Nothing] = js.native
   var blockquote: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.blockquote, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var body: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.body, T, js.Object, scala.Nothing]
-  var br: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.br, T, js.Object, scala.Nothing]
-  var button: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.button, T, js.Object, scala.Nothing]
-  var canvas: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.canvas, T, js.Object, scala.Nothing]
-  var caption: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.caption, T, js.Object, scala.Nothing]
-  var circle: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.circle, T, js.Object, scala.Nothing]
-  var cite: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.cite, T, js.Object, scala.Nothing]
-  var clipPath: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.clipPath, T, js.Object, scala.Nothing]
-  var code: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.code, T, js.Object, scala.Nothing]
-  var col: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.col, T, js.Object, scala.Nothing]
-  var colgroup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.colgroup, T, js.Object, scala.Nothing]
-  var data: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.data, T, js.Object, scala.Nothing]
-  var datalist: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.datalist, T, js.Object, scala.Nothing]
-  var dd: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dd, T, js.Object, scala.Nothing]
-  var defs: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.defs, T, js.Object, scala.Nothing]
-  var del: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.del, T, js.Object, scala.Nothing]
-  var desc: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.desc, T, js.Object, scala.Nothing]
-  var details: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.details, T, js.Object, scala.Nothing]
-  var dfn: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dfn, T, js.Object, scala.Nothing]
-  var dialog: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dialog, T, js.Object, scala.Nothing]
-  var div: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.div, T, js.Object, scala.Nothing]
-  var dl: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dl, T, js.Object, scala.Nothing]
-  var dt: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dt, T, js.Object, scala.Nothing]
-  var ellipse: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ellipse, T, js.Object, scala.Nothing]
-  var em: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.em, T, js.Object, scala.Nothing]
-  var embed: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.embed, T, js.Object, scala.Nothing]
-  var feBlend: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feBlend, T, js.Object, scala.Nothing]
+  ] = js.native
+  var body: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.body, T, js.Object, scala.Nothing] = js.native
+  var br: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.br, T, js.Object, scala.Nothing] = js.native
+  var button: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.button, T, js.Object, scala.Nothing] = js.native
+  var canvas: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.canvas, T, js.Object, scala.Nothing] = js.native
+  var caption: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.caption, T, js.Object, scala.Nothing] = js.native
+  var circle: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.circle, T, js.Object, scala.Nothing] = js.native
+  var cite: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.cite, T, js.Object, scala.Nothing] = js.native
+  var clipPath: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.clipPath, T, js.Object, scala.Nothing] = js.native
+  var code: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.code, T, js.Object, scala.Nothing] = js.native
+  var col: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.col, T, js.Object, scala.Nothing] = js.native
+  var colgroup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.colgroup, T, js.Object, scala.Nothing] = js.native
+  var data: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.data, T, js.Object, scala.Nothing] = js.native
+  var datalist: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.datalist, T, js.Object, scala.Nothing] = js.native
+  var dd: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dd, T, js.Object, scala.Nothing] = js.native
+  var defs: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.defs, T, js.Object, scala.Nothing] = js.native
+  var del: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.del, T, js.Object, scala.Nothing] = js.native
+  var desc: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.desc, T, js.Object, scala.Nothing] = js.native
+  var details: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.details, T, js.Object, scala.Nothing] = js.native
+  var dfn: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dfn, T, js.Object, scala.Nothing] = js.native
+  var dialog: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dialog, T, js.Object, scala.Nothing] = js.native
+  var div: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.div, T, js.Object, scala.Nothing] = js.native
+  var dl: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dl, T, js.Object, scala.Nothing] = js.native
+  var dt: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.dt, T, js.Object, scala.Nothing] = js.native
+  var ellipse: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ellipse, T, js.Object, scala.Nothing] = js.native
+  var em: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.em, T, js.Object, scala.Nothing] = js.native
+  var embed: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.embed, T, js.Object, scala.Nothing] = js.native
+  var feBlend: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feBlend, T, js.Object, scala.Nothing] = js.native
   var feColorMatrix: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feColorMatrix, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feComponentTransfer: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feComponentTransfer, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feComposite: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feComposite, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feConvolveMatrix: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feConvolveMatrix, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feDiffuseLighting: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feDiffuseLighting, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feDisplacementMap: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feDisplacementMap, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feDistantLight: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feDistantLight, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feDropShadow: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feDropShadow, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var feFlood: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFlood, T, js.Object, scala.Nothing]
-  var feFuncA: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncA, T, js.Object, scala.Nothing]
-  var feFuncB: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncB, T, js.Object, scala.Nothing]
-  var feFuncG: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncG, T, js.Object, scala.Nothing]
-  var feFuncR: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncR, T, js.Object, scala.Nothing]
+  ] = js.native
+  var feFlood: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFlood, T, js.Object, scala.Nothing] = js.native
+  var feFuncA: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncA, T, js.Object, scala.Nothing] = js.native
+  var feFuncB: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncB, T, js.Object, scala.Nothing] = js.native
+  var feFuncG: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncG, T, js.Object, scala.Nothing] = js.native
+  var feFuncR: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feFuncR, T, js.Object, scala.Nothing] = js.native
   var feGaussianBlur: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feGaussianBlur, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var feImage: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feImage, T, js.Object, scala.Nothing]
-  var feMerge: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feMerge, T, js.Object, scala.Nothing]
+  ] = js.native
+  var feImage: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feImage, T, js.Object, scala.Nothing] = js.native
+  var feMerge: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feMerge, T, js.Object, scala.Nothing] = js.native
   var feMergeNode: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feMergeNode, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feMorphology: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feMorphology, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var feOffset: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feOffset, T, js.Object, scala.Nothing]
+  ] = js.native
+  var feOffset: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feOffset, T, js.Object, scala.Nothing] = js.native
   var fePointLight: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.fePointLight, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feSpecularLighting: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feSpecularLighting, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
+  ] = js.native
   var feSpotLight: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feSpotLight, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var feTile: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feTile, T, js.Object, scala.Nothing]
+  ] = js.native
+  var feTile: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.feTile, T, js.Object, scala.Nothing] = js.native
   var feTurbulence: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.feTurbulence, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var fieldset: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.fieldset, T, js.Object, scala.Nothing]
+  ] = js.native
+  var fieldset: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.fieldset, T, js.Object, scala.Nothing] = js.native
   var figcaption: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.figcaption, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var figure: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.figure, T, js.Object, scala.Nothing]
-  var filter: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.filter, T, js.Object, scala.Nothing]
-  var footer: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.footer, T, js.Object, scala.Nothing]
+  ] = js.native
+  var figure: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.figure, T, js.Object, scala.Nothing] = js.native
+  var filter: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.filter, T, js.Object, scala.Nothing] = js.native
+  var footer: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.footer, T, js.Object, scala.Nothing] = js.native
   var foreignObject: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.foreignObject, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var form: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.form, T, js.Object, scala.Nothing]
-  var g: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.g, T, js.Object, scala.Nothing]
-  var h1: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h1, T, js.Object, scala.Nothing]
-  var h2: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h2, T, js.Object, scala.Nothing]
-  var h3: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h3, T, js.Object, scala.Nothing]
-  var h4: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h4, T, js.Object, scala.Nothing]
-  var h5: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h5, T, js.Object, scala.Nothing]
-  var h6: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h6, T, js.Object, scala.Nothing]
-  var head: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.head, T, js.Object, scala.Nothing]
-  var header: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.header, T, js.Object, scala.Nothing]
-  var hgroup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.hgroup, T, js.Object, scala.Nothing]
-  var hr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.hr, T, js.Object, scala.Nothing]
-  var html: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.html, T, js.Object, scala.Nothing]
-  var i: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.i, T, js.Object, scala.Nothing]
-  var iframe: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.iframe, T, js.Object, scala.Nothing]
-  var image: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.image, T, js.Object, scala.Nothing]
-  var img: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.img, T, js.Object, scala.Nothing]
-  var input: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.input, T, js.Object, scala.Nothing]
-  var ins: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ins, T, js.Object, scala.Nothing]
-  var kbd: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.kbd, T, js.Object, scala.Nothing]
-  var keygen: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.keygen, T, js.Object, scala.Nothing]
-  var label: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.label, T, js.Object, scala.Nothing]
-  var legend: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.legend, T, js.Object, scala.Nothing]
-  var li: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.li, T, js.Object, scala.Nothing]
-  var line: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.line, T, js.Object, scala.Nothing]
+  ] = js.native
+  var form: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.form, T, js.Object, scala.Nothing] = js.native
+  var g: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.g, T, js.Object, scala.Nothing] = js.native
+  var h1: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h1, T, js.Object, scala.Nothing] = js.native
+  var h2: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h2, T, js.Object, scala.Nothing] = js.native
+  var h3: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h3, T, js.Object, scala.Nothing] = js.native
+  var h4: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h4, T, js.Object, scala.Nothing] = js.native
+  var h5: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h5, T, js.Object, scala.Nothing] = js.native
+  var h6: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.h6, T, js.Object, scala.Nothing] = js.native
+  var head: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.head, T, js.Object, scala.Nothing] = js.native
+  var header: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.header, T, js.Object, scala.Nothing] = js.native
+  var hgroup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.hgroup, T, js.Object, scala.Nothing] = js.native
+  var hr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.hr, T, js.Object, scala.Nothing] = js.native
+  var html: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.html, T, js.Object, scala.Nothing] = js.native
+  var i: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.i, T, js.Object, scala.Nothing] = js.native
+  var iframe: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.iframe, T, js.Object, scala.Nothing] = js.native
+  var image: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.image, T, js.Object, scala.Nothing] = js.native
+  var img: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.img, T, js.Object, scala.Nothing] = js.native
+  var input: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.input, T, js.Object, scala.Nothing] = js.native
+  var ins: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ins, T, js.Object, scala.Nothing] = js.native
+  var kbd: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.kbd, T, js.Object, scala.Nothing] = js.native
+  var keygen: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.keygen, T, js.Object, scala.Nothing] = js.native
+  var label: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.label, T, js.Object, scala.Nothing] = js.native
+  var legend: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.legend, T, js.Object, scala.Nothing] = js.native
+  var li: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.li, T, js.Object, scala.Nothing] = js.native
+  var line: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.line, T, js.Object, scala.Nothing] = js.native
   var linearGradient: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.linearGradient, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var link: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.link, T, js.Object, scala.Nothing]
-  var main: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.main, T, js.Object, scala.Nothing]
-  var map: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.map, T, js.Object, scala.Nothing]
-  var mark: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.mark, T, js.Object, scala.Nothing]
-  var marker: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.marker, T, js.Object, scala.Nothing]
-  var mask: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.mask, T, js.Object, scala.Nothing]
-  var menu: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.menu, T, js.Object, scala.Nothing]
-  var menuitem: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.menuitem, T, js.Object, scala.Nothing]
-  var meta: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.meta, T, js.Object, scala.Nothing]
-  var metadata: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.metadata, T, js.Object, scala.Nothing]
-  var meter: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.meter, T, js.Object, scala.Nothing]
-  var mpath: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.mpath, T, js.Object, scala.Nothing]
-  var nav: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.nav, T, js.Object, scala.Nothing]
-  var noindex: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.noindex, T, js.Object, scala.Nothing]
-  var noscript: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.noscript, T, js.Object, scala.Nothing]
-  var `object`: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.`object`, T, js.Object, scala.Nothing]
-  var ol: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ol, T, js.Object, scala.Nothing]
-  var optgroup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.optgroup, T, js.Object, scala.Nothing]
-  var option: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.option, T, js.Object, scala.Nothing]
-  var output: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.output, T, js.Object, scala.Nothing]
-  var p: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.p, T, js.Object, scala.Nothing]
-  var param: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.param, T, js.Object, scala.Nothing]
-  var path: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.path, T, js.Object, scala.Nothing]
-  var pattern: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.pattern, T, js.Object, scala.Nothing]
-  var picture: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.picture, T, js.Object, scala.Nothing]
-  var polygon: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.polygon, T, js.Object, scala.Nothing]
-  var polyline: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.polyline, T, js.Object, scala.Nothing]
-  var pre: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.pre, T, js.Object, scala.Nothing]
-  var progress: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.progress, T, js.Object, scala.Nothing]
-  var q: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.q, T, js.Object, scala.Nothing]
+  ] = js.native
+  var link: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.link, T, js.Object, scala.Nothing] = js.native
+  var main: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.main, T, js.Object, scala.Nothing] = js.native
+  var map: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.map, T, js.Object, scala.Nothing] = js.native
+  var mark: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.mark, T, js.Object, scala.Nothing] = js.native
+  var marker: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.marker, T, js.Object, scala.Nothing] = js.native
+  var mask: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.mask, T, js.Object, scala.Nothing] = js.native
+  var menu: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.menu, T, js.Object, scala.Nothing] = js.native
+  var menuitem: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.menuitem, T, js.Object, scala.Nothing] = js.native
+  var meta: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.meta, T, js.Object, scala.Nothing] = js.native
+  var metadata: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.metadata, T, js.Object, scala.Nothing] = js.native
+  var meter: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.meter, T, js.Object, scala.Nothing] = js.native
+  var mpath: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.mpath, T, js.Object, scala.Nothing] = js.native
+  var nav: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.nav, T, js.Object, scala.Nothing] = js.native
+  var noindex: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.noindex, T, js.Object, scala.Nothing] = js.native
+  var noscript: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.noscript, T, js.Object, scala.Nothing] = js.native
+  var `object`: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.`object`, T, js.Object, scala.Nothing] = js.native
+  var ol: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ol, T, js.Object, scala.Nothing] = js.native
+  var optgroup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.optgroup, T, js.Object, scala.Nothing] = js.native
+  var option: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.option, T, js.Object, scala.Nothing] = js.native
+  var output: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.output, T, js.Object, scala.Nothing] = js.native
+  var p: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.p, T, js.Object, scala.Nothing] = js.native
+  var param: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.param, T, js.Object, scala.Nothing] = js.native
+  var path: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.path, T, js.Object, scala.Nothing] = js.native
+  var pattern: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.pattern, T, js.Object, scala.Nothing] = js.native
+  var picture: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.picture, T, js.Object, scala.Nothing] = js.native
+  var polygon: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.polygon, T, js.Object, scala.Nothing] = js.native
+  var polyline: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.polyline, T, js.Object, scala.Nothing] = js.native
+  var pre: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.pre, T, js.Object, scala.Nothing] = js.native
+  var progress: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.progress, T, js.Object, scala.Nothing] = js.native
+  var q: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.q, T, js.Object, scala.Nothing] = js.native
   var radialGradient: ThemedStyledFunction[
     typings.styledComponents.styledComponentsStrings.radialGradient, 
     T, 
     js.Object, 
     scala.Nothing
-  ]
-  var rect: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.rect, T, js.Object, scala.Nothing]
-  var rp: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.rp, T, js.Object, scala.Nothing]
-  var rt: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.rt, T, js.Object, scala.Nothing]
-  var ruby: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ruby, T, js.Object, scala.Nothing]
-  var s: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.s, T, js.Object, scala.Nothing]
-  var samp: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.samp, T, js.Object, scala.Nothing]
-  var script: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.script, T, js.Object, scala.Nothing]
-  var section: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.section, T, js.Object, scala.Nothing]
-  var select: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.select, T, js.Object, scala.Nothing]
-  var slot: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.slot, T, js.Object, scala.Nothing]
-  var small: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.small, T, js.Object, scala.Nothing]
-  var source: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.source, T, js.Object, scala.Nothing]
-  var span: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.span, T, js.Object, scala.Nothing]
-  var stop: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.stop, T, js.Object, scala.Nothing]
-  var strong: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.strong, T, js.Object, scala.Nothing]
-  var style: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.style, T, js.Object, scala.Nothing]
-  var sub: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.sub, T, js.Object, scala.Nothing]
-  var summary: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.summary, T, js.Object, scala.Nothing]
-  var sup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.sup, T, js.Object, scala.Nothing]
-  var svg: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.svg, T, js.Object, scala.Nothing]
-  var switch: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.switch, T, js.Object, scala.Nothing]
-  var symbol: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.symbol, T, js.Object, scala.Nothing]
-  var table: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.table, T, js.Object, scala.Nothing]
-  var tbody: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tbody, T, js.Object, scala.Nothing]
-  var td: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.td, T, js.Object, scala.Nothing]
-  var template: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.template, T, js.Object, scala.Nothing]
-  var text: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.text, T, js.Object, scala.Nothing]
-  var textPath: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.textPath, T, js.Object, scala.Nothing]
-  var textarea: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.textarea, T, js.Object, scala.Nothing]
-  var tfoot: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tfoot, T, js.Object, scala.Nothing]
-  var th: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.th, T, js.Object, scala.Nothing]
-  var thead: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.thead, T, js.Object, scala.Nothing]
-  var time: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.time, T, js.Object, scala.Nothing]
-  var title: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.title, T, js.Object, scala.Nothing]
-  var tr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tr, T, js.Object, scala.Nothing]
-  var track: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.track, T, js.Object, scala.Nothing]
-  var tspan: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tspan, T, js.Object, scala.Nothing]
-  var u: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.u, T, js.Object, scala.Nothing]
-  var ul: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ul, T, js.Object, scala.Nothing]
-  var use: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.use, T, js.Object, scala.Nothing]
-  var `var`: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.`var`, T, js.Object, scala.Nothing]
-  var video: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.video, T, js.Object, scala.Nothing]
-  var view: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.view, T, js.Object, scala.Nothing]
-  var wbr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.wbr, T, js.Object, scala.Nothing]
-  var webview: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.webview, T, js.Object, scala.Nothing]
+  ] = js.native
+  var rect: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.rect, T, js.Object, scala.Nothing] = js.native
+  var rp: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.rp, T, js.Object, scala.Nothing] = js.native
+  var rt: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.rt, T, js.Object, scala.Nothing] = js.native
+  var ruby: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ruby, T, js.Object, scala.Nothing] = js.native
+  var s: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.s, T, js.Object, scala.Nothing] = js.native
+  var samp: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.samp, T, js.Object, scala.Nothing] = js.native
+  var script: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.script, T, js.Object, scala.Nothing] = js.native
+  var section: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.section, T, js.Object, scala.Nothing] = js.native
+  var select: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.select, T, js.Object, scala.Nothing] = js.native
+  var slot: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.slot, T, js.Object, scala.Nothing] = js.native
+  var small: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.small, T, js.Object, scala.Nothing] = js.native
+  var source: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.source, T, js.Object, scala.Nothing] = js.native
+  var span: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.span, T, js.Object, scala.Nothing] = js.native
+  var stop: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.stop, T, js.Object, scala.Nothing] = js.native
+  var strong: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.strong, T, js.Object, scala.Nothing] = js.native
+  var style: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.style, T, js.Object, scala.Nothing] = js.native
+  var sub: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.sub, T, js.Object, scala.Nothing] = js.native
+  var summary: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.summary, T, js.Object, scala.Nothing] = js.native
+  var sup: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.sup, T, js.Object, scala.Nothing] = js.native
+  var svg: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.svg, T, js.Object, scala.Nothing] = js.native
+  var switch: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.switch, T, js.Object, scala.Nothing] = js.native
+  var symbol: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.symbol, T, js.Object, scala.Nothing] = js.native
+  var table: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.table, T, js.Object, scala.Nothing] = js.native
+  var tbody: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tbody, T, js.Object, scala.Nothing] = js.native
+  var td: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.td, T, js.Object, scala.Nothing] = js.native
+  var template: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.template, T, js.Object, scala.Nothing] = js.native
+  var text: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.text, T, js.Object, scala.Nothing] = js.native
+  var textPath: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.textPath, T, js.Object, scala.Nothing] = js.native
+  var textarea: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.textarea, T, js.Object, scala.Nothing] = js.native
+  var tfoot: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tfoot, T, js.Object, scala.Nothing] = js.native
+  var th: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.th, T, js.Object, scala.Nothing] = js.native
+  var thead: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.thead, T, js.Object, scala.Nothing] = js.native
+  var time: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.time, T, js.Object, scala.Nothing] = js.native
+  var title: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.title, T, js.Object, scala.Nothing] = js.native
+  var tr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tr, T, js.Object, scala.Nothing] = js.native
+  var track: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.track, T, js.Object, scala.Nothing] = js.native
+  var tspan: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.tspan, T, js.Object, scala.Nothing] = js.native
+  var u: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.u, T, js.Object, scala.Nothing] = js.native
+  var ul: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.ul, T, js.Object, scala.Nothing] = js.native
+  var use: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.use, T, js.Object, scala.Nothing] = js.native
+  var `var`: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.`var`, T, js.Object, scala.Nothing] = js.native
+  var video: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.video, T, js.Object, scala.Nothing] = js.native
+  var view: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.view, T, js.Object, scala.Nothing] = js.native
+  var wbr: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.wbr, T, js.Object, scala.Nothing] = js.native
+  var webview: ThemedStyledFunction[typings.styledComponents.styledComponentsStrings.webview, T, js.Object, scala.Nothing] = js.native
 }
 
 object ThemedStyledComponentFactories {
@@ -652,5 +653,368 @@ object ThemedStyledComponentFactories {
     __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemedStyledComponentFactories[T]]
   }
+  @scala.inline
+  implicit class ThemedStyledComponentFactoriesOps[Self <: ThemedStyledComponentFactories[_], /* <: js.Object */ T] (val x: Self with ThemedStyledComponentFactories[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setA(value: ThemedStyledFunction[a, T, js.Object, scala.Nothing]): Self = this.set("a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbbr(value: ThemedStyledFunction[abbr, T, js.Object, scala.Nothing]): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddress(value: ThemedStyledFunction[address, T, js.Object, scala.Nothing]): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimate(value: ThemedStyledFunction[animate, T, js.Object, scala.Nothing]): Self = this.set("animate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimateMotion(value: ThemedStyledFunction[animateMotion, T, js.Object, scala.Nothing]): Self = this.set("animateMotion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAnimateTransform(value: ThemedStyledFunction[animateTransform, T, js.Object, scala.Nothing]): Self = this.set("animateTransform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArea(value: ThemedStyledFunction[area, T, js.Object, scala.Nothing]): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArticle(value: ThemedStyledFunction[article, T, js.Object, scala.Nothing]): Self = this.set("article", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAside(value: ThemedStyledFunction[aside, T, js.Object, scala.Nothing]): Self = this.set("aside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAudio(value: ThemedStyledFunction[audio, T, js.Object, scala.Nothing]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setB(value: ThemedStyledFunction[b, T, js.Object, scala.Nothing]): Self = this.set("b", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBase(value: ThemedStyledFunction[base, T, js.Object, scala.Nothing]): Self = this.set("base", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBdi(value: ThemedStyledFunction[bdi, T, js.Object, scala.Nothing]): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBdo(value: ThemedStyledFunction[bdo, T, js.Object, scala.Nothing]): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBig(value: ThemedStyledFunction[big, T, js.Object, scala.Nothing]): Self = this.set("big", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBlockquote(value: ThemedStyledFunction[blockquote, T, js.Object, scala.Nothing]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBody(value: ThemedStyledFunction[body, T, js.Object, scala.Nothing]): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBr(value: ThemedStyledFunction[br, T, js.Object, scala.Nothing]): Self = this.set("br", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButton(value: ThemedStyledFunction[button, T, js.Object, scala.Nothing]): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCanvas(value: ThemedStyledFunction[canvas, T, js.Object, scala.Nothing]): Self = this.set("canvas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaption(value: ThemedStyledFunction[caption, T, js.Object, scala.Nothing]): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCircle(value: ThemedStyledFunction[circle, T, js.Object, scala.Nothing]): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCite(value: ThemedStyledFunction[cite, T, js.Object, scala.Nothing]): Self = this.set("cite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClipPath(value: ThemedStyledFunction[clipPath, T, js.Object, scala.Nothing]): Self = this.set("clipPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCode(value: ThemedStyledFunction[code, T, js.Object, scala.Nothing]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCol(value: ThemedStyledFunction[col, T, js.Object, scala.Nothing]): Self = this.set("col", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setColgroup(value: ThemedStyledFunction[colgroup, T, js.Object, scala.Nothing]): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setData(value: ThemedStyledFunction[data, T, js.Object, scala.Nothing]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatalist(value: ThemedStyledFunction[datalist, T, js.Object, scala.Nothing]): Self = this.set("datalist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDd(value: ThemedStyledFunction[dd, T, js.Object, scala.Nothing]): Self = this.set("dd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefs(value: ThemedStyledFunction[defs, T, js.Object, scala.Nothing]): Self = this.set("defs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDel(value: ThemedStyledFunction[del, T, js.Object, scala.Nothing]): Self = this.set("del", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesc(value: ThemedStyledFunction[desc, T, js.Object, scala.Nothing]): Self = this.set("desc", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: ThemedStyledFunction[details, T, js.Object, scala.Nothing]): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDfn(value: ThemedStyledFunction[dfn, T, js.Object, scala.Nothing]): Self = this.set("dfn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDialog(value: ThemedStyledFunction[dialog, T, js.Object, scala.Nothing]): Self = this.set("dialog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiv(value: ThemedStyledFunction[div, T, js.Object, scala.Nothing]): Self = this.set("div", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDl(value: ThemedStyledFunction[dl, T, js.Object, scala.Nothing]): Self = this.set("dl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDt(value: ThemedStyledFunction[dt, T, js.Object, scala.Nothing]): Self = this.set("dt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEllipse(value: ThemedStyledFunction[ellipse, T, js.Object, scala.Nothing]): Self = this.set("ellipse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEm(value: ThemedStyledFunction[em, T, js.Object, scala.Nothing]): Self = this.set("em", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmbed(value: ThemedStyledFunction[embed, T, js.Object, scala.Nothing]): Self = this.set("embed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeBlend(value: ThemedStyledFunction[feBlend, T, js.Object, scala.Nothing]): Self = this.set("feBlend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeColorMatrix(value: ThemedStyledFunction[feColorMatrix, T, js.Object, scala.Nothing]): Self = this.set("feColorMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeComponentTransfer(value: ThemedStyledFunction[feComponentTransfer, T, js.Object, scala.Nothing]): Self = this.set("feComponentTransfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeComposite(value: ThemedStyledFunction[feComposite, T, js.Object, scala.Nothing]): Self = this.set("feComposite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeConvolveMatrix(value: ThemedStyledFunction[feConvolveMatrix, T, js.Object, scala.Nothing]): Self = this.set("feConvolveMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDiffuseLighting(value: ThemedStyledFunction[feDiffuseLighting, T, js.Object, scala.Nothing]): Self = this.set("feDiffuseLighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDisplacementMap(value: ThemedStyledFunction[feDisplacementMap, T, js.Object, scala.Nothing]): Self = this.set("feDisplacementMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDistantLight(value: ThemedStyledFunction[feDistantLight, T, js.Object, scala.Nothing]): Self = this.set("feDistantLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeDropShadow(value: ThemedStyledFunction[feDropShadow, T, js.Object, scala.Nothing]): Self = this.set("feDropShadow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFlood(value: ThemedStyledFunction[feFlood, T, js.Object, scala.Nothing]): Self = this.set("feFlood", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncA(value: ThemedStyledFunction[feFuncA, T, js.Object, scala.Nothing]): Self = this.set("feFuncA", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncB(value: ThemedStyledFunction[feFuncB, T, js.Object, scala.Nothing]): Self = this.set("feFuncB", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncG(value: ThemedStyledFunction[feFuncG, T, js.Object, scala.Nothing]): Self = this.set("feFuncG", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeFuncR(value: ThemedStyledFunction[feFuncR, T, js.Object, scala.Nothing]): Self = this.set("feFuncR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeGaussianBlur(value: ThemedStyledFunction[feGaussianBlur, T, js.Object, scala.Nothing]): Self = this.set("feGaussianBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeImage(value: ThemedStyledFunction[feImage, T, js.Object, scala.Nothing]): Self = this.set("feImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeMerge(value: ThemedStyledFunction[feMerge, T, js.Object, scala.Nothing]): Self = this.set("feMerge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeMergeNode(value: ThemedStyledFunction[feMergeNode, T, js.Object, scala.Nothing]): Self = this.set("feMergeNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeMorphology(value: ThemedStyledFunction[feMorphology, T, js.Object, scala.Nothing]): Self = this.set("feMorphology", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeOffset(value: ThemedStyledFunction[feOffset, T, js.Object, scala.Nothing]): Self = this.set("feOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFePointLight(value: ThemedStyledFunction[fePointLight, T, js.Object, scala.Nothing]): Self = this.set("fePointLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeSpecularLighting(value: ThemedStyledFunction[feSpecularLighting, T, js.Object, scala.Nothing]): Self = this.set("feSpecularLighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeSpotLight(value: ThemedStyledFunction[feSpotLight, T, js.Object, scala.Nothing]): Self = this.set("feSpotLight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeTile(value: ThemedStyledFunction[feTile, T, js.Object, scala.Nothing]): Self = this.set("feTile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFeTurbulence(value: ThemedStyledFunction[feTurbulence, T, js.Object, scala.Nothing]): Self = this.set("feTurbulence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFieldset(value: ThemedStyledFunction[fieldset, T, js.Object, scala.Nothing]): Self = this.set("fieldset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFigcaption(value: ThemedStyledFunction[figcaption, T, js.Object, scala.Nothing]): Self = this.set("figcaption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFigure(value: ThemedStyledFunction[figure, T, js.Object, scala.Nothing]): Self = this.set("figure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: ThemedStyledFunction[filter, T, js.Object, scala.Nothing]): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFooter(value: ThemedStyledFunction[footer, T, js.Object, scala.Nothing]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForeignObject(value: ThemedStyledFunction[foreignObject, T, js.Object, scala.Nothing]): Self = this.set("foreignObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForm(value: ThemedStyledFunction[form, T, js.Object, scala.Nothing]): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setG(value: ThemedStyledFunction[g, T, js.Object, scala.Nothing]): Self = this.set("g", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH1(value: ThemedStyledFunction[h1, T, js.Object, scala.Nothing]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH2(value: ThemedStyledFunction[h2, T, js.Object, scala.Nothing]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH3(value: ThemedStyledFunction[h3, T, js.Object, scala.Nothing]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH4(value: ThemedStyledFunction[h4, T, js.Object, scala.Nothing]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH5(value: ThemedStyledFunction[h5, T, js.Object, scala.Nothing]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setH6(value: ThemedStyledFunction[h6, T, js.Object, scala.Nothing]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHead(value: ThemedStyledFunction[head, T, js.Object, scala.Nothing]): Self = this.set("head", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeader(value: ThemedStyledFunction[header, T, js.Object, scala.Nothing]): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHgroup(value: ThemedStyledFunction[hgroup, T, js.Object, scala.Nothing]): Self = this.set("hgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHr(value: ThemedStyledFunction[hr, T, js.Object, scala.Nothing]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHtml(value: ThemedStyledFunction[html, T, js.Object, scala.Nothing]): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setI(value: ThemedStyledFunction[i, T, js.Object, scala.Nothing]): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIframe(value: ThemedStyledFunction[iframe, T, js.Object, scala.Nothing]): Self = this.set("iframe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImage(value: ThemedStyledFunction[image, T, js.Object, scala.Nothing]): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setImg(value: ThemedStyledFunction[img, T, js.Object, scala.Nothing]): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInput(value: ThemedStyledFunction[input, T, js.Object, scala.Nothing]): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIns(value: ThemedStyledFunction[ins, T, js.Object, scala.Nothing]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKbd(value: ThemedStyledFunction[kbd, T, js.Object, scala.Nothing]): Self = this.set("kbd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeygen(value: ThemedStyledFunction[keygen, T, js.Object, scala.Nothing]): Self = this.set("keygen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabel(value: ThemedStyledFunction[label, T, js.Object, scala.Nothing]): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLegend(value: ThemedStyledFunction[legend, T, js.Object, scala.Nothing]): Self = this.set("legend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLi(value: ThemedStyledFunction[li, T, js.Object, scala.Nothing]): Self = this.set("li", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLine(value: ThemedStyledFunction[line, T, js.Object, scala.Nothing]): Self = this.set("line", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLinearGradient(value: ThemedStyledFunction[linearGradient, T, js.Object, scala.Nothing]): Self = this.set("linearGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLink(value: ThemedStyledFunction[link, T, js.Object, scala.Nothing]): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMain(value: ThemedStyledFunction[main, T, js.Object, scala.Nothing]): Self = this.set("main", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMap(value: ThemedStyledFunction[map, T, js.Object, scala.Nothing]): Self = this.set("map", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMark(value: ThemedStyledFunction[mark, T, js.Object, scala.Nothing]): Self = this.set("mark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMarker(value: ThemedStyledFunction[marker, T, js.Object, scala.Nothing]): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMask(value: ThemedStyledFunction[mask, T, js.Object, scala.Nothing]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMenu(value: ThemedStyledFunction[menu, T, js.Object, scala.Nothing]): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMenuitem(value: ThemedStyledFunction[menuitem, T, js.Object, scala.Nothing]): Self = this.set("menuitem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeta(value: ThemedStyledFunction[meta, T, js.Object, scala.Nothing]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetadata(value: ThemedStyledFunction[metadata, T, js.Object, scala.Nothing]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMeter(value: ThemedStyledFunction[meter, T, js.Object, scala.Nothing]): Self = this.set("meter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMpath(value: ThemedStyledFunction[mpath, T, js.Object, scala.Nothing]): Self = this.set("mpath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNav(value: ThemedStyledFunction[nav, T, js.Object, scala.Nothing]): Self = this.set("nav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoindex(value: ThemedStyledFunction[noindex, T, js.Object, scala.Nothing]): Self = this.set("noindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoscript(value: ThemedStyledFunction[noscript, T, js.Object, scala.Nothing]): Self = this.set("noscript", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setObject(value: ThemedStyledFunction[`object`, T, js.Object, scala.Nothing]): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOl(value: ThemedStyledFunction[ol, T, js.Object, scala.Nothing]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptgroup(value: ThemedStyledFunction[optgroup, T, js.Object, scala.Nothing]): Self = this.set("optgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOption(value: ThemedStyledFunction[option, T, js.Object, scala.Nothing]): Self = this.set("option", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutput(value: ThemedStyledFunction[output, T, js.Object, scala.Nothing]): Self = this.set("output", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setP(value: ThemedStyledFunction[p, T, js.Object, scala.Nothing]): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParam(value: ThemedStyledFunction[param, T, js.Object, scala.Nothing]): Self = this.set("param", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPath(value: ThemedStyledFunction[path, T, js.Object, scala.Nothing]): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPattern(value: ThemedStyledFunction[pattern, T, js.Object, scala.Nothing]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPicture(value: ThemedStyledFunction[picture, T, js.Object, scala.Nothing]): Self = this.set("picture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolygon(value: ThemedStyledFunction[polygon, T, js.Object, scala.Nothing]): Self = this.set("polygon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPolyline(value: ThemedStyledFunction[polyline, T, js.Object, scala.Nothing]): Self = this.set("polyline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPre(value: ThemedStyledFunction[pre, T, js.Object, scala.Nothing]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgress(value: ThemedStyledFunction[progress, T, js.Object, scala.Nothing]): Self = this.set("progress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQ(value: ThemedStyledFunction[q, T, js.Object, scala.Nothing]): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRadialGradient(value: ThemedStyledFunction[radialGradient, T, js.Object, scala.Nothing]): Self = this.set("radialGradient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRect(value: ThemedStyledFunction[rect, T, js.Object, scala.Nothing]): Self = this.set("rect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRp(value: ThemedStyledFunction[rp, T, js.Object, scala.Nothing]): Self = this.set("rp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRt(value: ThemedStyledFunction[rt, T, js.Object, scala.Nothing]): Self = this.set("rt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRuby(value: ThemedStyledFunction[ruby, T, js.Object, scala.Nothing]): Self = this.set("ruby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setS(value: ThemedStyledFunction[s, T, js.Object, scala.Nothing]): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSamp(value: ThemedStyledFunction[samp, T, js.Object, scala.Nothing]): Self = this.set("samp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScript(value: ThemedStyledFunction[script, T, js.Object, scala.Nothing]): Self = this.set("script", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSection(value: ThemedStyledFunction[section, T, js.Object, scala.Nothing]): Self = this.set("section", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSelect(value: ThemedStyledFunction[select, T, js.Object, scala.Nothing]): Self = this.set("select", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSlot(value: ThemedStyledFunction[slot, T, js.Object, scala.Nothing]): Self = this.set("slot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSmall(value: ThemedStyledFunction[small, T, js.Object, scala.Nothing]): Self = this.set("small", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSource(value: ThemedStyledFunction[source, T, js.Object, scala.Nothing]): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpan(value: ThemedStyledFunction[span, T, js.Object, scala.Nothing]): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStop(value: ThemedStyledFunction[stop, T, js.Object, scala.Nothing]): Self = this.set("stop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStrong(value: ThemedStyledFunction[strong, T, js.Object, scala.Nothing]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStyle(value: ThemedStyledFunction[style, T, js.Object, scala.Nothing]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSub(value: ThemedStyledFunction[sub, T, js.Object, scala.Nothing]): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSummary(value: ThemedStyledFunction[summary, T, js.Object, scala.Nothing]): Self = this.set("summary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSup(value: ThemedStyledFunction[sup, T, js.Object, scala.Nothing]): Self = this.set("sup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSvg(value: ThemedStyledFunction[svg, T, js.Object, scala.Nothing]): Self = this.set("svg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSwitch(value: ThemedStyledFunction[switch, T, js.Object, scala.Nothing]): Self = this.set("switch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSymbol(value: ThemedStyledFunction[symbol, T, js.Object, scala.Nothing]): Self = this.set("symbol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTable(value: ThemedStyledFunction[table, T, js.Object, scala.Nothing]): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTbody(value: ThemedStyledFunction[tbody, T, js.Object, scala.Nothing]): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTd(value: ThemedStyledFunction[td, T, js.Object, scala.Nothing]): Self = this.set("td", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplate(value: ThemedStyledFunction[template, T, js.Object, scala.Nothing]): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setText(value: ThemedStyledFunction[text, T, js.Object, scala.Nothing]): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextPath(value: ThemedStyledFunction[textPath, T, js.Object, scala.Nothing]): Self = this.set("textPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTextarea(value: ThemedStyledFunction[textarea, T, js.Object, scala.Nothing]): Self = this.set("textarea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTfoot(value: ThemedStyledFunction[tfoot, T, js.Object, scala.Nothing]): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTh(value: ThemedStyledFunction[th, T, js.Object, scala.Nothing]): Self = this.set("th", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThead(value: ThemedStyledFunction[thead, T, js.Object, scala.Nothing]): Self = this.set("thead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: ThemedStyledFunction[time, T, js.Object, scala.Nothing]): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: ThemedStyledFunction[title, T, js.Object, scala.Nothing]): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTr(value: ThemedStyledFunction[tr, T, js.Object, scala.Nothing]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrack(value: ThemedStyledFunction[track, T, js.Object, scala.Nothing]): Self = this.set("track", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTspan(value: ThemedStyledFunction[tspan, T, js.Object, scala.Nothing]): Self = this.set("tspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setU(value: ThemedStyledFunction[u, T, js.Object, scala.Nothing]): Self = this.set("u", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUl(value: ThemedStyledFunction[ul, T, js.Object, scala.Nothing]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUse(value: ThemedStyledFunction[use, T, js.Object, scala.Nothing]): Self = this.set("use", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVar(value: ThemedStyledFunction[`var`, T, js.Object, scala.Nothing]): Self = this.set("var", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVideo(value: ThemedStyledFunction[video, T, js.Object, scala.Nothing]): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setView(value: ThemedStyledFunction[view, T, js.Object, scala.Nothing]): Self = this.set("view", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWbr(value: ThemedStyledFunction[wbr, T, js.Object, scala.Nothing]): Self = this.set("wbr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebview(value: ThemedStyledFunction[webview, T, js.Object, scala.Nothing]): Self = this.set("webview", value.asInstanceOf[js.Any])
+  }
+  
 }
 

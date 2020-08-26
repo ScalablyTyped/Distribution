@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 @JSImport("next/dist/next-server/server/next-server", JSImport.Default)
 @js.native
 class default () extends Server {
-  def this(hasDirStaticMarkupQuietConfDevCustomServer: ServerConstructor) = this()
+  def this(hasDirQuietConfDevCustomServer: ServerConstructor) = this()
 }
 

@@ -9,5 +9,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/slider", JSImport.Default)
 @js.native
-object default extends TopLevel[ForwardRefExoticComponent[SliderProps with RefAttributes[_]]]
+object default extends TopLevel[
+      ForwardRefExoticComponent[
+        (SliderSingleProps with RefAttributes[_]) | (SliderRangeProps with RefAttributes[_])
+      ]
+    ]
 

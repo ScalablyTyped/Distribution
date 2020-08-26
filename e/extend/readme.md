@@ -11,8 +11,8 @@ Port of jQuery.extend for node.js and the browser
 | Full name          | extend |
 | Keywords           | extend, clone, merge |
 | # releases         | 3 |
-| # dependents       | 3526 |
-| # downloads        | 631022127 |
+| # dependents       | 3541 |
+| # downloads        | 641274338 |
 | # stars            | 52 |
 
 ## Links

@@ -35,12 +35,35 @@ object EmailChannelArgs {
     applicationId: Input[String],
     fromAddress: Input[String],
     identity: Input[String],
-    roleArn: Input[String],
-    enabled: Input[Boolean] = null
+    roleArn: Input[String]
   ): EmailChannelArgs = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], fromAddress = fromAddress.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
-    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailChannelArgs]
   }
+  @scala.inline
+  implicit class EmailChannelArgsOps[Self <: EmailChannelArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Input[String]): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFromAddress(value: Input[String]): Self = this.set("fromAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentity(value: Input[String]): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnabled(value: Input[Boolean]): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+  }
+  
 }
 

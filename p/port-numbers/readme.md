@@ -12,7 +12,7 @@ Get information on network port numbers and services, based on IANA's public lis
 | Keywords           | port, port-numbers, numbers, tcp, udp, network, networking, iana, well-known |
 | # releases         | 39 |
 | # dependents       | 7 |
-| # downloads        | 1979970 |
+| # downloads        | 1990014 |
 | # stars            | 1 |
 
 ## Links

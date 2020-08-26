@@ -11,8 +11,8 @@ Left and right string padding
 | Full name          | pad |
 | Keywords           | pad, string |
 | # releases         | 11 |
-| # dependents       | 288 |
-| # downloads        | 4619546 |
+| # dependents       | 290 |
+| # downloads        | 4769467 |
 | # stars            | 5 |
 
 ## Links

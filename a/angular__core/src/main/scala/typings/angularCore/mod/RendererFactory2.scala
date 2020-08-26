@@ -20,13 +20,13 @@ abstract class RendererFactory2 () extends js.Object {
     * @returns The asynchronous result of the developer-defined function.
     */
   var whenRenderingDone: js.UndefOr[js.Function0[js.Promise[_]]] = js.native
-  def createRenderer(hostElement: js.Any): Renderer2 = js.native
   /**
     * Creates and initializes a custom renderer for a host DOM element.
     * @param hostElement The element to render.
     * @param type The base class to implement.
     * @returns The new custom renderer instance.
     */
+  def createRenderer(hostElement: js.Any): Renderer2 = js.native
   def createRenderer(hostElement: js.Any, `type`: RendererType2): Renderer2 = js.native
 }
 

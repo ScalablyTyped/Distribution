@@ -49,24 +49,50 @@ trait SchemaUserLocation extends js.Object {
 
 object SchemaUserLocation {
   @scala.inline
-  def apply(
-    area: String = null,
-    buildingId: String = null,
-    customType: String = null,
-    deskCode: String = null,
-    floorName: String = null,
-    floorSection: String = null,
-    `type`: String = null
-  ): SchemaUserLocation = {
+  def apply(): SchemaUserLocation = {
     val __obj = js.Dynamic.literal()
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (buildingId != null) __obj.updateDynamic("buildingId")(buildingId.asInstanceOf[js.Any])
-    if (customType != null) __obj.updateDynamic("customType")(customType.asInstanceOf[js.Any])
-    if (deskCode != null) __obj.updateDynamic("deskCode")(deskCode.asInstanceOf[js.Any])
-    if (floorName != null) __obj.updateDynamic("floorName")(floorName.asInstanceOf[js.Any])
-    if (floorSection != null) __obj.updateDynamic("floorSection")(floorSection.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaUserLocation]
   }
+  @scala.inline
+  implicit class SchemaUserLocationOps[Self <: SchemaUserLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArea(value: String): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setBuildingId(value: String): Self = this.set("buildingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuildingId: Self = this.set("buildingId", js.undefined)
+    @scala.inline
+    def setCustomType(value: String): Self = this.set("customType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomType: Self = this.set("customType", js.undefined)
+    @scala.inline
+    def setDeskCode(value: String): Self = this.set("deskCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeskCode: Self = this.set("deskCode", js.undefined)
+    @scala.inline
+    def setFloorName(value: String): Self = this.set("floorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloorName: Self = this.set("floorName", js.undefined)
+    @scala.inline
+    def setFloorSection(value: String): Self = this.set("floorSection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloorSection: Self = this.set("floorSection", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

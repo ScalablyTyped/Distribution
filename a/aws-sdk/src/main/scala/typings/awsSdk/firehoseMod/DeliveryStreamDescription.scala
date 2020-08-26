@@ -65,20 +65,59 @@ object DeliveryStreamDescription {
     DeliveryStreamType: DeliveryStreamType,
     Destinations: DestinationDescriptionList,
     HasMoreDestinations: BooleanObject,
-    VersionId: DeliveryStreamVersionId,
-    CreateTimestamp: Timestamp = null,
-    DeliveryStreamEncryptionConfiguration: DeliveryStreamEncryptionConfiguration = null,
-    FailureDescription: FailureDescription = null,
-    LastUpdateTimestamp: Timestamp = null,
-    Source: SourceDescription = null
+    VersionId: DeliveryStreamVersionId
   ): DeliveryStreamDescription = {
     val __obj = js.Dynamic.literal(DeliveryStreamARN = DeliveryStreamARN.asInstanceOf[js.Any], DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any], DeliveryStreamStatus = DeliveryStreamStatus.asInstanceOf[js.Any], DeliveryStreamType = DeliveryStreamType.asInstanceOf[js.Any], Destinations = Destinations.asInstanceOf[js.Any], HasMoreDestinations = HasMoreDestinations.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
-    if (CreateTimestamp != null) __obj.updateDynamic("CreateTimestamp")(CreateTimestamp.asInstanceOf[js.Any])
-    if (DeliveryStreamEncryptionConfiguration != null) __obj.updateDynamic("DeliveryStreamEncryptionConfiguration")(DeliveryStreamEncryptionConfiguration.asInstanceOf[js.Any])
-    if (FailureDescription != null) __obj.updateDynamic("FailureDescription")(FailureDescription.asInstanceOf[js.Any])
-    if (LastUpdateTimestamp != null) __obj.updateDynamic("LastUpdateTimestamp")(LastUpdateTimestamp.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryStreamDescription]
   }
+  @scala.inline
+  implicit class DeliveryStreamDescriptionOps[Self <: DeliveryStreamDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeliveryStreamARN(value: DeliveryStreamARN): Self = this.set("DeliveryStreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryStreamName(value: DeliveryStreamName): Self = this.set("DeliveryStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryStreamStatus(value: DeliveryStreamStatus): Self = this.set("DeliveryStreamStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeliveryStreamType(value: DeliveryStreamType): Self = this.set("DeliveryStreamType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDestinationsVarargs(value: DestinationDescription*): Self = this.set("Destinations", js.Array(value :_*))
+    @scala.inline
+    def setDestinations(value: DestinationDescriptionList): Self = this.set("Destinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHasMoreDestinations(value: BooleanObject): Self = this.set("HasMoreDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersionId(value: DeliveryStreamVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreateTimestamp(value: Timestamp): Self = this.set("CreateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTimestamp: Self = this.set("CreateTimestamp", js.undefined)
+    @scala.inline
+    def setDeliveryStreamEncryptionConfiguration(value: DeliveryStreamEncryptionConfiguration): Self = this.set("DeliveryStreamEncryptionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeliveryStreamEncryptionConfiguration: Self = this.set("DeliveryStreamEncryptionConfiguration", js.undefined)
+    @scala.inline
+    def setFailureDescription(value: FailureDescription): Self = this.set("FailureDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDescription: Self = this.set("FailureDescription", js.undefined)
+    @scala.inline
+    def setLastUpdateTimestamp(value: Timestamp): Self = this.set("LastUpdateTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTimestamp: Self = this.set("LastUpdateTimestamp", js.undefined)
+    @scala.inline
+    def setSource(value: SourceDescription): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+  }
+  
 }
 

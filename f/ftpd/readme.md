@@ -12,7 +12,7 @@ Node FTP Server
 | Keywords           | ftp, ftp-server, ftpd |
 | # releases         | 1 |
 | # dependents       | 19 |
-| # downloads        | 19012 |
+| # downloads        | 15402 |
 | # stars            | 11 |
 
 ## Links

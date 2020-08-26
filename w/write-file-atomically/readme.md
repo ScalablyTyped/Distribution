@@ -12,7 +12,7 @@ Promisified version of write-file-atomic
 | Keywords           | write, output, create, fs, file, atomic, atomically, files, async, asynchronous, asynchronously, promise, then |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 60975 |
+| # downloads        | 62517 |
 | # stars            | 0 |
 
 ## Links

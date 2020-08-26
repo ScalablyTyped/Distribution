@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * represents a single condition in a conditional format.
   * @see com.sun.star.sheet.TableConditionalFormat
   */
+@js.native
 trait TableConditionalEntry
   extends XSheetCondition
      with XSheetConditionalEntry

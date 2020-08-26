@@ -36,7 +36,7 @@ class DateTimeAttributeType protected () extends AttributeType {
   @JSName("containerAsODataKeyPart")
   def containerAsODataKeyPart_MDateTimeAttributeType: ODataKeyPart = js.native
   def localizeDate: Boolean = js.native
-  def localizeDate(newValue: Boolean): js.Any = js.native
+  def localizeDate_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

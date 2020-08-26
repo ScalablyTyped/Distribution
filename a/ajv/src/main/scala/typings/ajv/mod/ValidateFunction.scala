@@ -15,69 +15,12 @@ trait ValidateFunction extends js.Object {
   var root: js.UndefOr[ValidateFunction | js.Object] = js.native
   var schema: js.UndefOr[js.Object | Boolean] = js.native
   var source: js.UndefOr[js.Object] = js.native
-  def apply(data: js.Any): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String, parentData: js.Array[_]): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String, parentData: js.Array[_], parentDataProperty: String): Boolean | js.Thenable[_] = js.native
   def apply(
     data: js.Any,
-    dataPath: String,
-    parentData: js.Array[_],
-    parentDataProperty: String,
-    rootData: js.Array[_]
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Array[_],
-    parentDataProperty: String,
-    rootData: js.Object
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String, parentData: js.Array[_], parentDataProperty: Double): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Array[_],
-    parentDataProperty: Double,
-    rootData: js.Array[_]
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Array[_],
-    parentDataProperty: Double,
-    rootData: js.Object
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String, parentData: js.Object): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String, parentData: js.Object, parentDataProperty: String): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Object,
-    parentDataProperty: String,
-    rootData: js.Array[_]
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Object,
-    parentDataProperty: String,
-    rootData: js.Object
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(data: js.Any, dataPath: String, parentData: js.Object, parentDataProperty: Double): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Object,
-    parentDataProperty: Double,
-    rootData: js.Array[_]
-  ): Boolean | js.Thenable[_] = js.native
-  def apply(
-    data: js.Any,
-    dataPath: String,
-    parentData: js.Object,
-    parentDataProperty: Double,
-    rootData: js.Object
+    dataPath: js.UndefOr[String],
+    parentData: js.UndefOr[js.Object | js.Array[_]],
+    parentDataProperty: js.UndefOr[String | Double],
+    rootData: js.UndefOr[js.Object | js.Array[_]]
   ): Boolean | js.Thenable[_] = js.native
 }
 

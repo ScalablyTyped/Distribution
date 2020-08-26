@@ -10,9 +10,9 @@ An addon for [xterm.js](https://github.com/xtermjs/xterm.js) that enables fittin
 | ------------------ | :-------------: |
 | Full name          | xterm-addon-fit |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 23 |
-| # downloads        | 169169 |
+| # releases         | 31 |
+| # dependents       | 27 |
+| # downloads        | 681298 |
 | # stars            | 0 |
 
 ## Links

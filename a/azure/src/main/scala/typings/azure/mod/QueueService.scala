@@ -37,6 +37,12 @@ class QueueService () extends StorageServiceClient {
     */
   def this(storageAccount: String, storageAccessKey: String) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String) = this()
+  def this(
+    storageAccount: String,
+    storageAccessKey: String,
+    host: js.UndefOr[scala.Nothing],
+    sasToken: String
+  ) = this()
   def this(storageAccount: String, storageAccessKey: String, host: String, sasToken: String) = this()
   var authenticationProvider: SharedKey = js.native
   /**

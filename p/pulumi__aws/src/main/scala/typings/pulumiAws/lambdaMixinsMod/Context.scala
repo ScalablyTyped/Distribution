@@ -96,5 +96,40 @@ object Context {
     val __obj = js.Dynamic.literal(awsRequestId = awsRequestId.asInstanceOf[js.Any], callbackWaitsForEmptyEventLoop = callbackWaitsForEmptyEventLoop.asInstanceOf[js.Any], clientContext = clientContext.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any], functionVersion = functionVersion.asInstanceOf[js.Any], getRemainingTimeInMillis = js.Any.fromFunction0(getRemainingTimeInMillis), identity = identity.asInstanceOf[js.Any], invokedFunctionArn = invokedFunctionArn.asInstanceOf[js.Any], logGroupName = logGroupName.asInstanceOf[js.Any], logStreamName = logStreamName.asInstanceOf[js.Any], memoryLimitInMB = memoryLimitInMB.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
+  @scala.inline
+  implicit class ContextOps[Self <: Context] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsRequestId(value: String): Self = this.set("awsRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCallbackWaitsForEmptyEventLoop(value: Boolean): Self = this.set("callbackWaitsForEmptyEventLoop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientContext(value: js.Any): Self = this.set("clientContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctionName(value: String): Self = this.set("functionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFunctionVersion(value: String): Self = this.set("functionVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetRemainingTimeInMillis(value: () => String): Self = this.set("getRemainingTimeInMillis", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIdentity(value: js.Any): Self = this.set("identity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInvokedFunctionArn(value: String): Self = this.set("invokedFunctionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogGroupName(value: String): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLogStreamName(value: String): Self = this.set("logStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMemoryLimitInMB(value: String): Self = this.set("memoryLimitInMB", value.asInstanceOf[js.Any])
+  }
+  
 }
 

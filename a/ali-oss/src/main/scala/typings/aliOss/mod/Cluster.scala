@@ -16,9 +16,11 @@ class Cluster protected () extends js.Object {
   def deleteMulti(names: js.Array[String]): js.Promise[DeleteMultiResult] = js.native
   def deleteMulti(names: js.Array[String], options: DeleteMultiOptions): js.Promise[DeleteMultiResult] = js.native
   def get(name: String): js.Promise[GetObjectResult] = js.native
+  def get(name: String, file: js.UndefOr[scala.Nothing], options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   def getStream(): js.Promise[GetStreamResult] = js.native
+  def getStream(name: js.UndefOr[scala.Nothing], options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   def getStream(name: String): js.Promise[GetStreamResult] = js.native
   def getStream(name: String, options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   def head(name: String): js.Promise[HeadObjectResult] = js.native

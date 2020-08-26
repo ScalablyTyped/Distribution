@@ -90,50 +90,110 @@ trait FleetData extends js.Object {
 
 object FleetData {
   @scala.inline
-  def apply(
-    ActivityStatus: FleetActivityStatus = null,
-    ClientToken: String = null,
-    CreateTime: DateTime = null,
-    Errors: DescribeFleetsErrorSet = null,
-    ExcessCapacityTerminationPolicy: FleetExcessCapacityTerminationPolicy = null,
-    FleetId: FleetId = null,
-    FleetState: FleetStateCode = null,
-    FulfilledCapacity: js.UndefOr[Double] = js.undefined,
-    FulfilledOnDemandCapacity: js.UndefOr[Double] = js.undefined,
-    Instances: DescribeFleetsInstancesSet = null,
-    LaunchTemplateConfigs: FleetLaunchTemplateConfigList = null,
-    OnDemandOptions: OnDemandOptions = null,
-    ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined,
-    SpotOptions: SpotOptions = null,
-    Tags: TagList = null,
-    TargetCapacitySpecification: TargetCapacitySpecification = null,
-    TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined,
-    Type: FleetType = null,
-    ValidFrom: DateTime = null,
-    ValidUntil: DateTime = null
-  ): FleetData = {
+  def apply(): FleetData = {
     val __obj = js.Dynamic.literal()
-    if (ActivityStatus != null) __obj.updateDynamic("ActivityStatus")(ActivityStatus.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (Errors != null) __obj.updateDynamic("Errors")(Errors.asInstanceOf[js.Any])
-    if (ExcessCapacityTerminationPolicy != null) __obj.updateDynamic("ExcessCapacityTerminationPolicy")(ExcessCapacityTerminationPolicy.asInstanceOf[js.Any])
-    if (FleetId != null) __obj.updateDynamic("FleetId")(FleetId.asInstanceOf[js.Any])
-    if (FleetState != null) __obj.updateDynamic("FleetState")(FleetState.asInstanceOf[js.Any])
-    if (!js.isUndefined(FulfilledCapacity)) __obj.updateDynamic("FulfilledCapacity")(FulfilledCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FulfilledOnDemandCapacity)) __obj.updateDynamic("FulfilledOnDemandCapacity")(FulfilledOnDemandCapacity.get.asInstanceOf[js.Any])
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (LaunchTemplateConfigs != null) __obj.updateDynamic("LaunchTemplateConfigs")(LaunchTemplateConfigs.asInstanceOf[js.Any])
-    if (OnDemandOptions != null) __obj.updateDynamic("OnDemandOptions")(OnDemandOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReplaceUnhealthyInstances)) __obj.updateDynamic("ReplaceUnhealthyInstances")(ReplaceUnhealthyInstances.get.asInstanceOf[js.Any])
-    if (SpotOptions != null) __obj.updateDynamic("SpotOptions")(SpotOptions.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TargetCapacitySpecification != null) __obj.updateDynamic("TargetCapacitySpecification")(TargetCapacitySpecification.asInstanceOf[js.Any])
-    if (!js.isUndefined(TerminateInstancesWithExpiration)) __obj.updateDynamic("TerminateInstancesWithExpiration")(TerminateInstancesWithExpiration.get.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (ValidFrom != null) __obj.updateDynamic("ValidFrom")(ValidFrom.asInstanceOf[js.Any])
-    if (ValidUntil != null) __obj.updateDynamic("ValidUntil")(ValidUntil.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetData]
   }
+  @scala.inline
+  implicit class FleetDataOps[Self <: FleetData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityStatus(value: FleetActivityStatus): Self = this.set("ActivityStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityStatus: Self = this.set("ActivityStatus", js.undefined)
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setCreateTime(value: DateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setErrorsVarargs(value: DescribeFleetError*): Self = this.set("Errors", js.Array(value :_*))
+    @scala.inline
+    def setErrors(value: DescribeFleetsErrorSet): Self = this.set("Errors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrors: Self = this.set("Errors", js.undefined)
+    @scala.inline
+    def setExcessCapacityTerminationPolicy(value: FleetExcessCapacityTerminationPolicy): Self = this.set("ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcessCapacityTerminationPolicy: Self = this.set("ExcessCapacityTerminationPolicy", js.undefined)
+    @scala.inline
+    def setFleetId(value: FleetId): Self = this.set("FleetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetId: Self = this.set("FleetId", js.undefined)
+    @scala.inline
+    def setFleetState(value: FleetStateCode): Self = this.set("FleetState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFleetState: Self = this.set("FleetState", js.undefined)
+    @scala.inline
+    def setFulfilledCapacity(value: Double): Self = this.set("FulfilledCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfilledCapacity: Self = this.set("FulfilledCapacity", js.undefined)
+    @scala.inline
+    def setFulfilledOnDemandCapacity(value: Double): Self = this.set("FulfilledOnDemandCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfilledOnDemandCapacity: Self = this.set("FulfilledOnDemandCapacity", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: DescribeFleetsInstances*): Self = this.set("Instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: DescribeFleetsInstancesSet): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+    @scala.inline
+    def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfig*): Self = this.set("LaunchTemplateConfigs", js.Array(value :_*))
+    @scala.inline
+    def setLaunchTemplateConfigs(value: FleetLaunchTemplateConfigList): Self = this.set("LaunchTemplateConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplateConfigs: Self = this.set("LaunchTemplateConfigs", js.undefined)
+    @scala.inline
+    def setOnDemandOptions(value: OnDemandOptions): Self = this.set("OnDemandOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandOptions: Self = this.set("OnDemandOptions", js.undefined)
+    @scala.inline
+    def setReplaceUnhealthyInstances(value: Boolean): Self = this.set("ReplaceUnhealthyInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplaceUnhealthyInstances: Self = this.set("ReplaceUnhealthyInstances", js.undefined)
+    @scala.inline
+    def setSpotOptions(value: SpotOptions): Self = this.set("SpotOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotOptions: Self = this.set("SpotOptions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTargetCapacitySpecification(value: TargetCapacitySpecification): Self = this.set("TargetCapacitySpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetCapacitySpecification: Self = this.set("TargetCapacitySpecification", js.undefined)
+    @scala.inline
+    def setTerminateInstancesWithExpiration(value: Boolean): Self = this.set("TerminateInstancesWithExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminateInstancesWithExpiration: Self = this.set("TerminateInstancesWithExpiration", js.undefined)
+    @scala.inline
+    def setType(value: FleetType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setValidFrom(value: DateTime): Self = this.set("ValidFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidFrom: Self = this.set("ValidFrom", js.undefined)
+    @scala.inline
+    def setValidUntil(value: DateTime): Self = this.set("ValidUntil", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidUntil: Self = this.set("ValidUntil", js.undefined)
+  }
+  
 }
 

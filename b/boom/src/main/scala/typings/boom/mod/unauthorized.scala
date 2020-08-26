@@ -27,10 +27,23 @@ object unauthorized extends js.Object {
     * @see {@link https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes}
     */
   def apply(): Boom[Null] = js.native
+  def apply(message: js.UndefOr[scala.Nothing], scheme: js.UndefOr[scala.Nothing], attributes: String): Boom[Null] = js.native
+  def apply(
+    message: js.UndefOr[scala.Nothing],
+    scheme: js.UndefOr[scala.Nothing],
+    attributes: StringDictionary[String]
+  ): Boom[Null] = js.native
+  def apply(message: js.UndefOr[scala.Nothing], scheme: String): Boom[Null] = js.native
+  def apply(message: js.UndefOr[scala.Nothing], scheme: String, attributes: String): Boom[Null] = js.native
+  def apply(message: js.UndefOr[scala.Nothing], scheme: String, attributes: StringDictionary[String]): Boom[Null] = js.native
+  def apply(message: js.UndefOr[scala.Nothing], scheme: js.Array[String]): Boom[Null] = js.native
   def apply(message: String): Boom[Null] = js.native
+  def apply(message: String, scheme: js.UndefOr[scala.Nothing], attributes: StringDictionary[String]): Boom[Null] = js.native
   def apply(message: String, scheme: String): Boom[Null] = js.native
   def apply(message: String, scheme: String, attributes: StringDictionary[String]): Boom[Null] = js.native
   def apply(message: String, scheme: js.Array[String]): Boom[Null] = js.native
+  def apply(message: Null, scheme: js.UndefOr[scala.Nothing], attributes: String): Boom[Null] = js.native
+  def apply(message: Null, scheme: js.UndefOr[scala.Nothing], attributes: StringDictionary[String]): Boom[Null] = js.native
   def apply(message: Null, scheme: String): Boom[Null] = js.native
   def apply(message: Null, scheme: String, attributes: String): Boom[Null] = js.native
   def apply(message: Null, scheme: String, attributes: StringDictionary[String]): Boom[Null] = js.native

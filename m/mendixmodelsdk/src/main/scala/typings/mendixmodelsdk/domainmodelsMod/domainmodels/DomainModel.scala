@@ -45,7 +45,7 @@ class DomainModel protected () extends ModuleDocument {
   def containerAsModule_MDomainModel: Module = js.native
   def crossAssociations: IList[CrossAssociation] = js.native
   def documentation: String = js.native
-  def documentation(newValue: String): js.Any = js.native
+  def documentation_=(newValue: String): Unit = js.native
   def entities: IList[Entity] = js.native
 }
 

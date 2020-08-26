@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply[T /* <: js.Function */](fn: T): T = js.native
+  def apply[T /* <: js.Function */](fn: T, wait: js.UndefOr[scala.Nothing], callFirst: Boolean): T = js.native
   def apply[T /* <: js.Function */](fn: T, wait: Double): js.Function1[/* args */ ArgumentTypes[T], Unit] = js.native
   def apply[T /* <: js.Function */](fn: T, wait: Double, callFirst: `false`): js.Function1[/* args */ ArgumentTypes[T], Unit] = js.native
   def apply[T /* <: js.Function */](fn: T, wait: Double, callFirst: `true`): T = js.native

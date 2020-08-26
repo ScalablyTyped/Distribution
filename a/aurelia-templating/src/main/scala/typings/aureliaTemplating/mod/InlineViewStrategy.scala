@@ -15,6 +15,7 @@ class InlineViewStrategy protected () extends js.Object {
     */
   def this(markup: String) = this()
   def this(markup: String, dependencies: js.Array[String | js.Function | js.Object]) = this()
+  def this(markup: String, dependencies: js.UndefOr[scala.Nothing], dependencyBaseUrl: String) = this()
   def this(
     markup: String,
     dependencies: js.Array[String | js.Function | js.Object],
@@ -29,6 +30,12 @@ class InlineViewStrategy protected () extends js.Object {
     * @return A promise for the view factory that is produced by this strategy.
     */
   def loadViewFactory(viewEngine: ViewEngine, compileInstruction: ViewCompileInstruction): js.Promise[ViewFactory] = js.native
+  def loadViewFactory(
+    viewEngine: ViewEngine,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: js.UndefOr[scala.Nothing],
+    target: js.Any
+  ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,

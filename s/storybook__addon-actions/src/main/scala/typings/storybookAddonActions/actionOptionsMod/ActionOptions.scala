@@ -4,27 +4,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionOptions extends js.Object {
-  var allowFunction: js.UndefOr[Boolean] = js.undefined
-  var clearOnStoryChange: js.UndefOr[Boolean] = js.undefined
-  var depth: js.UndefOr[Double] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
+  var allowFunction: js.UndefOr[Boolean] = js.native
+  var clearOnStoryChange: js.UndefOr[Boolean] = js.native
+  var depth: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.native
 }
 
 object ActionOptions {
   @scala.inline
-  def apply(
-    allowFunction: js.UndefOr[Boolean] = js.undefined,
-    clearOnStoryChange: js.UndefOr[Boolean] = js.undefined,
-    depth: js.UndefOr[Double] = js.undefined,
-    limit: js.UndefOr[Double] = js.undefined
-  ): ActionOptions = {
+  def apply(): ActionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFunction)) __obj.updateDynamic("allowFunction")(allowFunction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearOnStoryChange)) __obj.updateDynamic("clearOnStoryChange")(clearOnStoryChange.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionOptions]
   }
+  @scala.inline
+  implicit class ActionOptionsOps[Self <: ActionOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowFunction(value: Boolean): Self = this.set("allowFunction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFunction: Self = this.set("allowFunction", js.undefined)
+    @scala.inline
+    def setClearOnStoryChange(value: Boolean): Self = this.set("clearOnStoryChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearOnStoryChange: Self = this.set("clearOnStoryChange", js.undefined)
+    @scala.inline
+    def setDepth(value: Double): Self = this.set("depth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDepth: Self = this.set("depth", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+  }
+  
 }
 

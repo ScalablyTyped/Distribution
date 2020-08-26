@@ -23,14 +23,14 @@ class VolumeAttachment protected () extends CustomResource {
   def this(name: String, args: VolumeAttachmentArgs, opts: CustomResourceOptions) = this()
   /**
     * The device name to expose to the instance (for
-    * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances][1] and [Device Naming on Windows Instances][2] for more information.
+    * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/device_naming.html#available-ec2-device-names) and [Device Naming on Windows Instances](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/device_naming.html#available-ec2-device-names) for more information.
     */
   val deviceName: Output_[String] = js.native
   /**
     * Set to `true` if you want to force the
     * volume to detach. Useful if previous attempts failed, but use this option only
     * as a last resort, as this can result in **data loss**. See
-    * [Detaching an Amazon EBS Volume from an Instance][3] for more information.
+    * [Detaching an Amazon EBS Volume from an Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-detaching-volume.html) for more information.
     */
   val forceDetach: Output_[js.UndefOr[Boolean]] = js.native
   /**
@@ -62,8 +62,10 @@ object VolumeAttachment extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): VolumeAttachment = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VolumeAttachment = js.native
   def get(name: String, id: Input[ID], state: VolumeAttachmentState): VolumeAttachment = js.native
   def get(name: String, id: Input[ID], state: VolumeAttachmentState, opts: CustomResourceOptions): VolumeAttachment = js.native
   /**

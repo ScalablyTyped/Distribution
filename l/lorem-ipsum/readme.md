@@ -12,7 +12,7 @@ Generates passages of lorem ipsum text suitable for use as placeholder copy in w
 | Keywords           | lorem, ipsum, placeholder, text, dummy, filler |
 | # releases         | 19 |
 | # dependents       | 84 |
-| # downloads        | 2300507 |
+| # downloads        | 2308139 |
 | # stars            | 14 |
 
 ## Links

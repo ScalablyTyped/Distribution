@@ -34,22 +34,46 @@ trait InstancesDistribution extends js.Object {
 
 object InstancesDistribution {
   @scala.inline
-  def apply(
-    OnDemandAllocationStrategy: XmlString = null,
-    OnDemandBaseCapacity: js.UndefOr[OnDemandBaseCapacity] = js.undefined,
-    OnDemandPercentageAboveBaseCapacity: js.UndefOr[OnDemandPercentageAboveBaseCapacity] = js.undefined,
-    SpotAllocationStrategy: XmlString = null,
-    SpotInstancePools: js.UndefOr[SpotInstancePools] = js.undefined,
-    SpotMaxPrice: MixedInstanceSpotPrice = null
-  ): InstancesDistribution = {
+  def apply(): InstancesDistribution = {
     val __obj = js.Dynamic.literal()
-    if (OnDemandAllocationStrategy != null) __obj.updateDynamic("OnDemandAllocationStrategy")(OnDemandAllocationStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(OnDemandBaseCapacity)) __obj.updateDynamic("OnDemandBaseCapacity")(OnDemandBaseCapacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(OnDemandPercentageAboveBaseCapacity)) __obj.updateDynamic("OnDemandPercentageAboveBaseCapacity")(OnDemandPercentageAboveBaseCapacity.get.asInstanceOf[js.Any])
-    if (SpotAllocationStrategy != null) __obj.updateDynamic("SpotAllocationStrategy")(SpotAllocationStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(SpotInstancePools)) __obj.updateDynamic("SpotInstancePools")(SpotInstancePools.get.asInstanceOf[js.Any])
-    if (SpotMaxPrice != null) __obj.updateDynamic("SpotMaxPrice")(SpotMaxPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstancesDistribution]
   }
+  @scala.inline
+  implicit class InstancesDistributionOps[Self <: InstancesDistribution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnDemandAllocationStrategy(value: XmlString): Self = this.set("OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandAllocationStrategy: Self = this.set("OnDemandAllocationStrategy", js.undefined)
+    @scala.inline
+    def setOnDemandBaseCapacity(value: OnDemandBaseCapacity): Self = this.set("OnDemandBaseCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandBaseCapacity: Self = this.set("OnDemandBaseCapacity", js.undefined)
+    @scala.inline
+    def setOnDemandPercentageAboveBaseCapacity(value: OnDemandPercentageAboveBaseCapacity): Self = this.set("OnDemandPercentageAboveBaseCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandPercentageAboveBaseCapacity: Self = this.set("OnDemandPercentageAboveBaseCapacity", js.undefined)
+    @scala.inline
+    def setSpotAllocationStrategy(value: XmlString): Self = this.set("SpotAllocationStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotAllocationStrategy: Self = this.set("SpotAllocationStrategy", js.undefined)
+    @scala.inline
+    def setSpotInstancePools(value: SpotInstancePools): Self = this.set("SpotInstancePools", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotInstancePools: Self = this.set("SpotInstancePools", js.undefined)
+    @scala.inline
+    def setSpotMaxPrice(value: MixedInstanceSpotPrice): Self = this.set("SpotMaxPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotMaxPrice: Self = this.set("SpotMaxPrice", js.undefined)
+  }
+  
 }
 

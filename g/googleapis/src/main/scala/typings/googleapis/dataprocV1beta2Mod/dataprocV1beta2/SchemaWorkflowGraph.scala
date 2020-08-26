@@ -17,10 +17,28 @@ trait SchemaWorkflowGraph extends js.Object {
 
 object SchemaWorkflowGraph {
   @scala.inline
-  def apply(nodes: js.Array[SchemaWorkflowNode] = null): SchemaWorkflowGraph = {
+  def apply(): SchemaWorkflowGraph = {
     val __obj = js.Dynamic.literal()
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWorkflowGraph]
   }
+  @scala.inline
+  implicit class SchemaWorkflowGraphOps[Self <: SchemaWorkflowGraph] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodesVarargs(value: SchemaWorkflowNode*): Self = this.set("nodes", js.Array(value :_*))
+    @scala.inline
+    def setNodes(value: js.Array[SchemaWorkflowNode]): Self = this.set("nodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodes: Self = this.set("nodes", js.undefined)
+  }
+  
 }
 

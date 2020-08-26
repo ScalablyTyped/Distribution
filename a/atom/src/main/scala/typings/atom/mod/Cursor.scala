@@ -5,9 +5,9 @@ import typings.atom.anon.Autoscroll
 import typings.atom.anon.Backwards
 import typings.atom.anon.IncludeNewline
 import typings.atom.anon.IncludeNonWordCharacters
-import typings.atom.anon.IncludeNonWordCharactersBoolean
 import typings.atom.anon.MoveToEndOfSelection
 import typings.atom.anon.WordRegex
+import typings.atom.anon.`31`
 import typings.std.RegExp
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -116,14 +116,17 @@ trait Cursor extends js.Object {
   def isVisible(): Boolean = js.native
   /** Moves the cursor down one screen row. */
   def moveDown(): Unit = js.native
+  def moveDown(rowCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveDown(rowCount: Double): Unit = js.native
   def moveDown(rowCount: Double, options: MoveToEndOfSelection): Unit = js.native
   /** Moves the cursor left one screen column. */
   def moveLeft(): Unit = js.native
+  def moveLeft(columnCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveLeft(columnCount: Double): Unit = js.native
   def moveLeft(columnCount: Double, options: MoveToEndOfSelection): Unit = js.native
   /** Moves the cursor right one screen column. */
   def moveRight(): Unit = js.native
+  def moveRight(columnCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveRight(columnCount: Double): Unit = js.native
   def moveRight(columnCount: Double, options: MoveToEndOfSelection): Unit = js.native
   /** Moves the cursor to the beginning of the buffer line. */
@@ -161,6 +164,7 @@ trait Cursor extends js.Object {
   // Moving the Cursor
   /** Moves the cursor up one screen row. */
   def moveUp(): Unit = js.native
+  def moveUp(rowCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveUp(rowCount: Double): Unit = js.native
   def moveUp(rowCount: Double, options: MoveToEndOfSelection): Unit = js.native
   // Event Subscription
@@ -187,6 +191,6 @@ trait Cursor extends js.Object {
   def subwordRegExp(options: Backwards): RegExp = js.native
   /** Get the RegExp used by the cursor to determine what a "word" is. */
   def wordRegExp(): RegExp = js.native
-  def wordRegExp(options: IncludeNonWordCharactersBoolean): RegExp = js.native
+  def wordRegExp(options: `31`): RegExp = js.native
 }
 

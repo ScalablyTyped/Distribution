@@ -49,12 +49,43 @@ object CloudWatchAlarmConfiguration {
     Namespace: Namespace,
     Period: Period,
     Statistic: Statistic,
-    Threshold: Threshold,
-    Dimensions: DimensionList = null
+    Threshold: Threshold
   ): CloudWatchAlarmConfiguration = {
     val __obj = js.Dynamic.literal(ComparisonOperator = ComparisonOperator.asInstanceOf[js.Any], EvaluationPeriods = EvaluationPeriods.asInstanceOf[js.Any], MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], Statistic = Statistic.asInstanceOf[js.Any], Threshold = Threshold.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchAlarmConfiguration]
   }
+  @scala.inline
+  implicit class CloudWatchAlarmConfigurationOps[Self <: CloudWatchAlarmConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComparisonOperator(value: ComparisonOperator): Self = this.set("ComparisonOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEvaluationPeriods(value: EvaluationPeriods): Self = this.set("EvaluationPeriods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatistic(value: Statistic): Self = this.set("Statistic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThreshold(value: Threshold): Self = this.set("Threshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: DimensionList): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+  }
+  
 }
 

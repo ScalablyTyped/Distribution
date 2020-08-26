@@ -30,20 +30,44 @@ trait ClassificationResult extends js.Object {
 
 object ClassificationResult {
   @scala.inline
-  def apply(
-    customDataIdentifiers: CustomDataIdentifiers = null,
-    mimeType: string = null,
-    sensitiveData: SensitiveData = null,
-    sizeClassified: js.UndefOr[long] = js.undefined,
-    status: ClassificationResultStatus = null
-  ): ClassificationResult = {
+  def apply(): ClassificationResult = {
     val __obj = js.Dynamic.literal()
-    if (customDataIdentifiers != null) __obj.updateDynamic("customDataIdentifiers")(customDataIdentifiers.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (sensitiveData != null) __obj.updateDynamic("sensitiveData")(sensitiveData.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeClassified)) __obj.updateDynamic("sizeClassified")(sizeClassified.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassificationResult]
   }
+  @scala.inline
+  implicit class ClassificationResultOps[Self <: ClassificationResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomDataIdentifiers(value: CustomDataIdentifiers): Self = this.set("customDataIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDataIdentifiers: Self = this.set("customDataIdentifiers", js.undefined)
+    @scala.inline
+    def setMimeType(value: string): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setSensitiveDataVarargs(value: SensitiveDataItem*): Self = this.set("sensitiveData", js.Array(value :_*))
+    @scala.inline
+    def setSensitiveData(value: SensitiveData): Self = this.set("sensitiveData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSensitiveData: Self = this.set("sensitiveData", js.undefined)
+    @scala.inline
+    def setSizeClassified(value: long): Self = this.set("sizeClassified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizeClassified: Self = this.set("sizeClassified", js.undefined)
+    @scala.inline
+    def setStatus(value: ClassificationResultStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for bent
 
-Typings are for version 7.0
+Typings are for version 7.3
 
 ## Library description:
 Functional HTTP client for Node.js w/ async/await.

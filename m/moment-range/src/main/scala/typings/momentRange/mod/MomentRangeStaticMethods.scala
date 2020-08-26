@@ -20,6 +20,8 @@ trait MomentRangeStaticMethods extends js.Object {
   def range(start: Date, end: Date): DateRange = js.native
   def rangeFromISOString(isoTimeInterval: String): DateRange = js.native
   def rangeFromInterval(interval: Diff): DateRange = js.native
+  def rangeFromInterval(interval: Diff, count: js.UndefOr[scala.Nothing], date: Moment): DateRange = js.native
+  def rangeFromInterval(interval: Diff, count: js.UndefOr[scala.Nothing], date: Date): DateRange = js.native
   def rangeFromInterval(interval: Diff, count: Double): DateRange = js.native
   def rangeFromInterval(interval: Diff, count: Double, date: Moment): DateRange = js.native
   def rangeFromInterval(interval: Diff, count: Double, date: Date): DateRange = js.native

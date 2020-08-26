@@ -12,7 +12,7 @@ A low-level API for defining explicit resource management.
 | Keywords           | - |
 | # releases         | 14 |
 | # dependents       | 13 |
-| # downloads        | 48273 |
+| # downloads        | 58088 |
 | # stars            | 0 |
 
 ## Links

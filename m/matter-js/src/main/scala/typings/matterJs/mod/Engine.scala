@@ -120,6 +120,7 @@ object Engine extends js.Object {
     * @deprecated
     */
   def create(): Engine = js.native
+  def create(element: js.UndefOr[scala.Nothing], options: IEngineDefinition): Engine = js.native
   def create(element: IEngineDefinition): Engine = js.native
   def create(element: IEngineDefinition, options: IEngineDefinition): Engine = js.native
   def create(element: HTMLElement): Engine = js.native
@@ -153,6 +154,7 @@ object Engine extends js.Object {
     * @param {number} [correction=1]
     */
   def update(engine: Engine): Engine = js.native
+  def update(engine: Engine, delta: js.UndefOr[scala.Nothing], correction: Double): Engine = js.native
   def update(engine: Engine, delta: Double): Engine = js.native
   def update(engine: Engine, delta: Double, correction: Double): Engine = js.native
 }

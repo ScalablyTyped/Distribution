@@ -27,16 +27,36 @@ trait SchemaBeaconInfo extends js.Object {
 
 object SchemaBeaconInfo {
   @scala.inline
-  def apply(
-    advertisedId: SchemaAdvertisedId = null,
-    attachments: js.Array[SchemaAttachmentInfo] = null,
-    beaconName: String = null
-  ): SchemaBeaconInfo = {
+  def apply(): SchemaBeaconInfo = {
     val __obj = js.Dynamic.literal()
-    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBeaconInfo]
   }
+  @scala.inline
+  implicit class SchemaBeaconInfoOps[Self <: SchemaBeaconInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdvertisedId(value: SchemaAdvertisedId): Self = this.set("advertisedId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertisedId: Self = this.set("advertisedId", js.undefined)
+    @scala.inline
+    def setAttachmentsVarargs(value: SchemaAttachmentInfo*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: js.Array[SchemaAttachmentInfo]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setBeaconName(value: String): Self = this.set("beaconName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBeaconName: Self = this.set("beaconName", js.undefined)
+  }
+  
 }
 

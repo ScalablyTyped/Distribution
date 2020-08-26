@@ -1,6 +1,9 @@
 package typings.semanticUiReact.tableTableMod
 
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.ReactNodeArray
+import typings.react.mod.ReactType
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
@@ -20,43 +23,44 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictTableProps extends js.Object {
   /** An element type to render as (string or function). */
-  var as: js.UndefOr[js.Any] = js.undefined
+  var as: js.UndefOr[js.Any] = js.native
   /** Attach table to other content */
-  var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
+  var attached: js.UndefOr[Boolean | top | bottom] = js.native
   /** A table can reduce its complexity to increase readability. */
-  var basic: js.UndefOr[Boolean | very] = js.undefined
+  var basic: js.UndefOr[Boolean | very] = js.native
   /** A table may be divided each row into separate cells. */
-  var celled: js.UndefOr[Boolean | internally] = js.undefined
+  var celled: js.UndefOr[Boolean | internally] = js.native
   /** Primary content. */
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
   /** Additional classes. */
-  var className: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
   /** A table can be collapsing, taking up only as much space as its rows. */
-  var collapsing: js.UndefOr[Boolean] = js.undefined
+  var collapsing: js.UndefOr[Boolean] = js.native
   /** A table can be given a color to distinguish it from other tables. */
-  var color: js.UndefOr[SemanticCOLORS] = js.undefined
+  var color: js.UndefOr[SemanticCOLORS] = js.native
   /** A table can specify its column count to divide its content evenly. */
-  var columns: js.UndefOr[SemanticWIDTHS] = js.undefined
+  var columns: js.UndefOr[SemanticWIDTHS] = js.native
   /** A table may sometimes need to be more compact to make more rows visible at a time. */
-  var compact: js.UndefOr[Boolean | very] = js.undefined
+  var compact: js.UndefOr[Boolean | very] = js.native
   /** A table may be formatted to emphasize a first column that defines a rows content. */
-  var definition: js.UndefOr[Boolean] = js.undefined
+  var definition: js.UndefOr[Boolean] = js.native
   /**
     * A table can use fixed a special faster form of table rendering that does not resize table cells based on content.
     */
-  var fixed: js.UndefOr[Boolean] = js.undefined
+  var fixed: js.UndefOr[Boolean] = js.native
   /** Shorthand for a TableRow to be placed within Table.Footer. */
-  var footerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.undefined
+  var footerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.native
   /** Shorthand for a TableRow to be placed within Table.Header. */
-  var headerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.undefined
+  var headerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.native
   /** Shorthand for multiple TableRows to be placed within Table.Header. */
-  var headerRows: js.UndefOr[SemanticShorthandCollection[TableRowProps]] = js.undefined
+  var headerRows: js.UndefOr[SemanticShorthandCollection[TableRowProps]] = js.native
   /** A table's colors can be inverted. */
-  var inverted: js.UndefOr[Boolean] = js.undefined
+  var inverted: js.UndefOr[Boolean] = js.native
   /** A table may sometimes need to be more padded for legibility. */
-  var padded: js.UndefOr[Boolean | very] = js.undefined
+  var padded: js.UndefOr[Boolean | very] = js.native
   /**
     * Mapped over `tableData` and should return shorthand for each Table.Row to be placed within Table.Body.
     *
@@ -64,95 +68,177 @@ trait StrictTableProps extends js.Object {
     * @param {number} index - The index of the current element in `tableData`.
     * @returns {*} Shorthand for a Table.Row.
     */
-  var renderBodyRow: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, _]] = js.undefined
+  var renderBodyRow: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, _]] = js.native
   /** A table can have its rows appear selectable. */
-  var selectable: js.UndefOr[Boolean] = js.undefined
+  var selectable: js.UndefOr[Boolean] = js.native
   /** A table can specify that its cell contents should remain on a single line and not wrap. */
-  var singleLine: js.UndefOr[Boolean] = js.undefined
+  var singleLine: js.UndefOr[Boolean] = js.native
   /** A table can also be small or large. */
-  var size: js.UndefOr[small | large] = js.undefined
+  var size: js.UndefOr[small | large] = js.native
   /** A table may allow a user to sort contents by clicking on a table header. */
-  var sortable: js.UndefOr[Boolean] = js.undefined
+  var sortable: js.UndefOr[Boolean] = js.native
   /** A table can specify how it stacks table content responsively. */
-  var stackable: js.UndefOr[Boolean] = js.undefined
+  var stackable: js.UndefOr[Boolean] = js.native
   /** A table can stripe alternate rows of content with a darker color to increase contrast. */
-  var striped: js.UndefOr[Boolean] = js.undefined
+  var striped: js.UndefOr[Boolean] = js.native
   /** A table can be formatted to display complex structured data. */
-  var structured: js.UndefOr[Boolean] = js.undefined
+  var structured: js.UndefOr[Boolean] = js.native
   /** Data to be passed to the renderBodyRow function. */
-  var tableData: js.UndefOr[js.Array[_]] = js.undefined
+  var tableData: js.UndefOr[js.Array[_]] = js.native
   /** A table can adjust its text alignment. */
-  var textAlign: js.UndefOr[center | left | right] = js.undefined
+  var textAlign: js.UndefOr[center | left | right] = js.native
   /** A table can specify how it stacks table content responsively. */
-  var unstackable: js.UndefOr[Boolean] = js.undefined
+  var unstackable: js.UndefOr[Boolean] = js.native
   /** A table can adjust its text alignment. */
-  var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
+  var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
 }
 
 object StrictTableProps {
   @scala.inline
-  def apply(
-    as: js.Any = null,
-    attached: Boolean | top | bottom = null,
-    basic: Boolean | very = null,
-    celled: Boolean | internally = null,
-    children: ReactNode = null,
-    className: String = null,
-    collapsing: js.UndefOr[Boolean] = js.undefined,
-    color: SemanticCOLORS = null,
-    columns: SemanticWIDTHS = null,
-    compact: Boolean | very = null,
-    definition: js.UndefOr[Boolean] = js.undefined,
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    footerRow: SemanticShorthandItem[TableRowProps] = null,
-    headerRow: SemanticShorthandItem[TableRowProps] = null,
-    headerRows: SemanticShorthandCollection[TableRowProps] = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    padded: Boolean | very = null,
-    renderBodyRow: (/* data */ js.Any, /* index */ Double) => _ = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    singleLine: js.UndefOr[Boolean] = js.undefined,
-    size: small | large = null,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    stackable: js.UndefOr[Boolean] = js.undefined,
-    striped: js.UndefOr[Boolean] = js.undefined,
-    structured: js.UndefOr[Boolean] = js.undefined,
-    tableData: js.Array[_] = null,
-    textAlign: center | left | right = null,
-    unstackable: js.UndefOr[Boolean] = js.undefined,
-    verticalAlign: SemanticVERTICALALIGNMENTS = null
-  ): StrictTableProps = {
+  def apply(): StrictTableProps = {
     val __obj = js.Dynamic.literal()
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
-    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
-    if (celled != null) __obj.updateDynamic("celled")(celled.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsing)) __obj.updateDynamic("collapsing")(collapsing.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (compact != null) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(definition)) __obj.updateDynamic("definition")(definition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.get.asInstanceOf[js.Any])
-    if (footerRow != null) __obj.updateDynamic("footerRow")(footerRow.asInstanceOf[js.Any])
-    if (headerRow != null) __obj.updateDynamic("headerRow")(headerRow.asInstanceOf[js.Any])
-    if (headerRows != null) __obj.updateDynamic("headerRows")(headerRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.get.asInstanceOf[js.Any])
-    if (padded != null) __obj.updateDynamic("padded")(padded.asInstanceOf[js.Any])
-    if (renderBodyRow != null) __obj.updateDynamic("renderBodyRow")(js.Any.fromFunction2(renderBodyRow))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleLine)) __obj.updateDynamic("singleLine")(singleLine.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackable)) __obj.updateDynamic("stackable")(stackable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(striped)) __obj.updateDynamic("striped")(striped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(structured)) __obj.updateDynamic("structured")(structured.get.asInstanceOf[js.Any])
-    if (tableData != null) __obj.updateDynamic("tableData")(tableData.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(unstackable)) __obj.updateDynamic("unstackable")(unstackable.get.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictTableProps]
   }
+  @scala.inline
+  implicit class StrictTablePropsOps[Self <: StrictTableProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: js.Any): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setAttached(value: Boolean | top | bottom): Self = this.set("attached", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttached: Self = this.set("attached", js.undefined)
+    @scala.inline
+    def setBasic(value: Boolean | very): Self = this.set("basic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasic: Self = this.set("basic", js.undefined)
+    @scala.inline
+    def setCelled(value: Boolean | internally): Self = this.set("celled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCelled: Self = this.set("celled", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCollapsing(value: Boolean): Self = this.set("collapsing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollapsing: Self = this.set("collapsing", js.undefined)
+    @scala.inline
+    def setColor(value: SemanticCOLORS): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setColumns(value: SemanticWIDTHS): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setCompact(value: Boolean | very): Self = this.set("compact", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompact: Self = this.set("compact", js.undefined)
+    @scala.inline
+    def setDefinition(value: Boolean): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setFixed(value: Boolean): Self = this.set("fixed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixed: Self = this.set("fixed", js.undefined)
+    @scala.inline
+    def setFooterRowFunction3(
+      value: (/* component */ ReactType[TableRowProps], TableRowProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("footerRow", js.Any.fromFunction3(value))
+    @scala.inline
+    def setFooterRow(value: SemanticShorthandItem[TableRowProps]): Self = this.set("footerRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooterRow: Self = this.set("footerRow", js.undefined)
+    @scala.inline
+    def setHeaderRowFunction3(
+      value: (/* component */ ReactType[TableRowProps], TableRowProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
+    ): Self = this.set("headerRow", js.Any.fromFunction3(value))
+    @scala.inline
+    def setHeaderRow(value: SemanticShorthandItem[TableRowProps]): Self = this.set("headerRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderRow: Self = this.set("headerRow", js.undefined)
+    @scala.inline
+    def setHeaderRowsVarargs(value: SemanticShorthandItem[TableRowProps]*): Self = this.set("headerRows", js.Array(value :_*))
+    @scala.inline
+    def setHeaderRows(value: SemanticShorthandCollection[TableRowProps]): Self = this.set("headerRows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderRows: Self = this.set("headerRows", js.undefined)
+    @scala.inline
+    def setInverted(value: Boolean): Self = this.set("inverted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInverted: Self = this.set("inverted", js.undefined)
+    @scala.inline
+    def setPadded(value: Boolean | very): Self = this.set("padded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadded: Self = this.set("padded", js.undefined)
+    @scala.inline
+    def setRenderBodyRow(value: (/* data */ js.Any, /* index */ Double) => _): Self = this.set("renderBodyRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRenderBodyRow: Self = this.set("renderBodyRow", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setSingleLine(value: Boolean): Self = this.set("singleLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSingleLine: Self = this.set("singleLine", js.undefined)
+    @scala.inline
+    def setSize(value: small | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortable: Self = this.set("sortable", js.undefined)
+    @scala.inline
+    def setStackable(value: Boolean): Self = this.set("stackable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackable: Self = this.set("stackable", js.undefined)
+    @scala.inline
+    def setStriped(value: Boolean): Self = this.set("striped", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStriped: Self = this.set("striped", js.undefined)
+    @scala.inline
+    def setStructured(value: Boolean): Self = this.set("structured", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructured: Self = this.set("structured", js.undefined)
+    @scala.inline
+    def setTableDataVarargs(value: js.Any*): Self = this.set("tableData", js.Array(value :_*))
+    @scala.inline
+    def setTableData(value: js.Array[_]): Self = this.set("tableData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableData: Self = this.set("tableData", js.undefined)
+    @scala.inline
+    def setTextAlign(value: center | left | right): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setUnstackable(value: Boolean): Self = this.set("unstackable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnstackable: Self = this.set("unstackable", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+  }
+  
 }
 

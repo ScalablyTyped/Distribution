@@ -12,7 +12,7 @@ A GraphQL response deduplicator. Removes duplicate entities from the GraphQL res
 | Keywords           | apollo, compression, deduplicator, graphql, normalizer |
 | # releases         | 7 |
 | # dependents       | 13 |
-| # downloads        | 970441 |
+| # downloads        | 987169 |
 | # stars            | 1 |
 
 ## Links

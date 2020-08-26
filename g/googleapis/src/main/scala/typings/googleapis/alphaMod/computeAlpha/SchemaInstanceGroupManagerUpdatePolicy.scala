@@ -56,24 +56,50 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends js.Object {
 
 object SchemaInstanceGroupManagerUpdatePolicy {
   @scala.inline
-  def apply(
-    instanceRedistributionType: String = null,
-    maxSurge: SchemaFixedOrPercent = null,
-    maxUnavailable: SchemaFixedOrPercent = null,
-    minReadySec: js.UndefOr[Double] = js.undefined,
-    minimalAction: String = null,
-    replacementMethod: String = null,
-    `type`: String = null
-  ): SchemaInstanceGroupManagerUpdatePolicy = {
+  def apply(): SchemaInstanceGroupManagerUpdatePolicy = {
     val __obj = js.Dynamic.literal()
-    if (instanceRedistributionType != null) __obj.updateDynamic("instanceRedistributionType")(instanceRedistributionType.asInstanceOf[js.Any])
-    if (maxSurge != null) __obj.updateDynamic("maxSurge")(maxSurge.asInstanceOf[js.Any])
-    if (maxUnavailable != null) __obj.updateDynamic("maxUnavailable")(maxUnavailable.asInstanceOf[js.Any])
-    if (!js.isUndefined(minReadySec)) __obj.updateDynamic("minReadySec")(minReadySec.get.asInstanceOf[js.Any])
-    if (minimalAction != null) __obj.updateDynamic("minimalAction")(minimalAction.asInstanceOf[js.Any])
-    if (replacementMethod != null) __obj.updateDynamic("replacementMethod")(replacementMethod.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstanceGroupManagerUpdatePolicy]
   }
+  @scala.inline
+  implicit class SchemaInstanceGroupManagerUpdatePolicyOps[Self <: SchemaInstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstanceRedistributionType(value: String): Self = this.set("instanceRedistributionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceRedistributionType: Self = this.set("instanceRedistributionType", js.undefined)
+    @scala.inline
+    def setMaxSurge(value: SchemaFixedOrPercent): Self = this.set("maxSurge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSurge: Self = this.set("maxSurge", js.undefined)
+    @scala.inline
+    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = this.set("maxUnavailable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxUnavailable: Self = this.set("maxUnavailable", js.undefined)
+    @scala.inline
+    def setMinReadySec(value: Double): Self = this.set("minReadySec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinReadySec: Self = this.set("minReadySec", js.undefined)
+    @scala.inline
+    def setMinimalAction(value: String): Self = this.set("minimalAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimalAction: Self = this.set("minimalAction", js.undefined)
+    @scala.inline
+    def setReplacementMethod(value: String): Self = this.set("replacementMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplacementMethod: Self = this.set("replacementMethod", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -28,9 +28,11 @@ trait filemanager extends baseview {
   def clearAll(): Unit = js.native
   def clearAll(soft: Boolean): Unit = js.native
   def copy(sid: String, tindex: Double): Double = js.native
+  def copy(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview): Double = js.native
   def copy(sid: String, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double): Double = js.native
+  def copy(sid: Double, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview): Double = js.native
   def copy(sid: Double, tindex: Double, tobj: baseview, details: js.Any): Double = js.native
   def copyFile(source: String, target: String): Unit = js.native
@@ -45,9 +47,11 @@ trait filemanager extends baseview {
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   def filter(text: WebixCallback | WebixTemplate): Unit = js.native
+  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
   def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
+  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
   def find(criterion: WebixCallback): js.Any = js.native
@@ -99,6 +103,7 @@ trait filemanager extends baseview {
   def isBranch(id: Double): Boolean = js.native
   def levelUp(id: String): Unit = js.native
   def load(url: String): js.Promise[_] = js.native
+  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
   def load(url: String, `type`: String): js.Promise[_] = js.native
   def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
   def loadBranch(id: String, callback: WebixCallback, url: String): js.Promise[_] = js.native
@@ -110,6 +115,7 @@ trait filemanager extends baseview {
   def markCut(id: String): Unit = js.native
   def markCut(id: js.Array[_]): Unit = js.native
   def move(sid: String, tindex: Double): String = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
   def moveFile(source: String, target: String): Unit = js.native
@@ -130,6 +136,7 @@ trait filemanager extends baseview {
   def showSearchResults(text: String): Unit = js.native
   def showTree(): Unit = js.native
   def sort(by: String): Unit = js.native
+  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native

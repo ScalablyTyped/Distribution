@@ -97,46 +97,98 @@ trait SchemaDataSource extends js.Object {
 
 object SchemaDataSource {
   @scala.inline
-  def apply(
-    authorizationType: String = null,
-    clientId: String = null,
-    dataRefreshType: String = null,
-    dataSourceId: String = null,
-    defaultDataRefreshWindowDays: js.UndefOr[Double] = js.undefined,
-    defaultSchedule: String = null,
-    description: String = null,
-    displayName: String = null,
-    helpUrl: String = null,
-    manualRunsDisabled: js.UndefOr[Boolean] = js.undefined,
-    minimumScheduleInterval: String = null,
-    name: String = null,
-    parameters: js.Array[SchemaDataSourceParameter] = null,
-    scopes: js.Array[String] = null,
-    supportsCustomSchedule: js.UndefOr[Boolean] = js.undefined,
-    supportsMultipleTransfers: js.UndefOr[Boolean] = js.undefined,
-    transferType: String = null,
-    updateDeadlineSeconds: js.UndefOr[Double] = js.undefined
-  ): SchemaDataSource = {
+  def apply(): SchemaDataSource = {
     val __obj = js.Dynamic.literal()
-    if (authorizationType != null) __obj.updateDynamic("authorizationType")(authorizationType.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (dataRefreshType != null) __obj.updateDynamic("dataRefreshType")(dataRefreshType.asInstanceOf[js.Any])
-    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultDataRefreshWindowDays)) __obj.updateDynamic("defaultDataRefreshWindowDays")(defaultDataRefreshWindowDays.get.asInstanceOf[js.Any])
-    if (defaultSchedule != null) __obj.updateDynamic("defaultSchedule")(defaultSchedule.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (helpUrl != null) __obj.updateDynamic("helpUrl")(helpUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(manualRunsDisabled)) __obj.updateDynamic("manualRunsDisabled")(manualRunsDisabled.get.asInstanceOf[js.Any])
-    if (minimumScheduleInterval != null) __obj.updateDynamic("minimumScheduleInterval")(minimumScheduleInterval.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (scopes != null) __obj.updateDynamic("scopes")(scopes.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsCustomSchedule)) __obj.updateDynamic("supportsCustomSchedule")(supportsCustomSchedule.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsMultipleTransfers)) __obj.updateDynamic("supportsMultipleTransfers")(supportsMultipleTransfers.get.asInstanceOf[js.Any])
-    if (transferType != null) __obj.updateDynamic("transferType")(transferType.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateDeadlineSeconds)) __obj.updateDynamic("updateDeadlineSeconds")(updateDeadlineSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDataSource]
   }
+  @scala.inline
+  implicit class SchemaDataSourceOps[Self <: SchemaDataSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorizationType(value: String): Self = this.set("authorizationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorizationType: Self = this.set("authorizationType", js.undefined)
+    @scala.inline
+    def setClientId(value: String): Self = this.set("clientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientId: Self = this.set("clientId", js.undefined)
+    @scala.inline
+    def setDataRefreshType(value: String): Self = this.set("dataRefreshType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRefreshType: Self = this.set("dataRefreshType", js.undefined)
+    @scala.inline
+    def setDataSourceId(value: String): Self = this.set("dataSourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceId: Self = this.set("dataSourceId", js.undefined)
+    @scala.inline
+    def setDefaultDataRefreshWindowDays(value: Double): Self = this.set("defaultDataRefreshWindowDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultDataRefreshWindowDays: Self = this.set("defaultDataRefreshWindowDays", js.undefined)
+    @scala.inline
+    def setDefaultSchedule(value: String): Self = this.set("defaultSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSchedule: Self = this.set("defaultSchedule", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setHelpUrl(value: String): Self = this.set("helpUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHelpUrl: Self = this.set("helpUrl", js.undefined)
+    @scala.inline
+    def setManualRunsDisabled(value: Boolean): Self = this.set("manualRunsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManualRunsDisabled: Self = this.set("manualRunsDisabled", js.undefined)
+    @scala.inline
+    def setMinimumScheduleInterval(value: String): Self = this.set("minimumScheduleInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumScheduleInterval: Self = this.set("minimumScheduleInterval", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: SchemaDataSourceParameter*): Self = this.set("parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: js.Array[SchemaDataSourceParameter]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setScopesVarargs(value: String*): Self = this.set("scopes", js.Array(value :_*))
+    @scala.inline
+    def setScopes(value: js.Array[String]): Self = this.set("scopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScopes: Self = this.set("scopes", js.undefined)
+    @scala.inline
+    def setSupportsCustomSchedule(value: Boolean): Self = this.set("supportsCustomSchedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsCustomSchedule: Self = this.set("supportsCustomSchedule", js.undefined)
+    @scala.inline
+    def setSupportsMultipleTransfers(value: Boolean): Self = this.set("supportsMultipleTransfers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportsMultipleTransfers: Self = this.set("supportsMultipleTransfers", js.undefined)
+    @scala.inline
+    def setTransferType(value: String): Self = this.set("transferType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransferType: Self = this.set("transferType", js.undefined)
+    @scala.inline
+    def setUpdateDeadlineSeconds(value: Double): Self = this.set("updateDeadlineSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateDeadlineSeconds: Self = this.set("updateDeadlineSeconds", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,36 @@ trait AlarmConfiguration extends js.Object {
 
 object AlarmConfiguration {
   @scala.inline
-  def apply(
-    alarms: AlarmList = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    ignorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
-  ): AlarmConfiguration = {
+  def apply(): AlarmConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (alarms != null) __obj.updateDynamic("alarms")(alarms.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePollAlarmFailure)) __obj.updateDynamic("ignorePollAlarmFailure")(ignorePollAlarmFailure.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlarmConfiguration]
   }
+  @scala.inline
+  implicit class AlarmConfigurationOps[Self <: AlarmConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlarmsVarargs(value: Alarm*): Self = this.set("alarms", js.Array(value :_*))
+    @scala.inline
+    def setAlarms(value: AlarmList): Self = this.set("alarms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlarms: Self = this.set("alarms", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setIgnorePollAlarmFailure(value: Boolean): Self = this.set("ignorePollAlarmFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnorePollAlarmFailure: Self = this.set("ignorePollAlarmFailure", js.undefined)
+  }
+  
 }
 

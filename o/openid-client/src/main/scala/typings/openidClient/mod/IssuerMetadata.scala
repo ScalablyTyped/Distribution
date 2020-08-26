@@ -5,65 +5,121 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IssuerMetadata
   extends /* key */ StringDictionary[js.Any] {
-  var authorization_endpoint: js.UndefOr[String] = js.undefined
-  var end_session_endpoint: js.UndefOr[String] = js.undefined
-  var introspection_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var introspection_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var issuer: String
-  var jwks_uri: js.UndefOr[String] = js.undefined
-  var mtls_endpoint_aliases: js.UndefOr[MtlsEndpointAliases] = js.undefined
-  var registration_endpoint: js.UndefOr[String] = js.undefined
-  var request_object_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var revocation_endpoint: js.UndefOr[String] = js.undefined
-  var revocation_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var revocation_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var token_endpoint: js.UndefOr[String] = js.undefined
-  var token_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var token_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.undefined
-  var userinfo_endpoint: js.UndefOr[String] = js.undefined
+  var authorization_endpoint: js.UndefOr[String] = js.native
+  var end_session_endpoint: js.UndefOr[String] = js.native
+  var introspection_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.native
+  var introspection_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var issuer: String = js.native
+  var jwks_uri: js.UndefOr[String] = js.native
+  var mtls_endpoint_aliases: js.UndefOr[MtlsEndpointAliases] = js.native
+  var registration_endpoint: js.UndefOr[String] = js.native
+  var request_object_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var revocation_endpoint: js.UndefOr[String] = js.native
+  var revocation_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.native
+  var revocation_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var token_endpoint: js.UndefOr[String] = js.native
+  var token_endpoint_auth_methods_supported: js.UndefOr[js.Array[String]] = js.native
+  var token_endpoint_auth_signing_alg_values_supported: js.UndefOr[js.Array[String]] = js.native
+  var userinfo_endpoint: js.UndefOr[String] = js.native
 }
 
 object IssuerMetadata {
   @scala.inline
-  def apply(
-    issuer: String,
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    authorization_endpoint: String = null,
-    end_session_endpoint: String = null,
-    introspection_endpoint_auth_methods_supported: js.Array[String] = null,
-    introspection_endpoint_auth_signing_alg_values_supported: js.Array[String] = null,
-    jwks_uri: String = null,
-    mtls_endpoint_aliases: MtlsEndpointAliases = null,
-    registration_endpoint: String = null,
-    request_object_signing_alg_values_supported: js.Array[String] = null,
-    revocation_endpoint: String = null,
-    revocation_endpoint_auth_methods_supported: js.Array[String] = null,
-    revocation_endpoint_auth_signing_alg_values_supported: js.Array[String] = null,
-    token_endpoint: String = null,
-    token_endpoint_auth_methods_supported: js.Array[String] = null,
-    token_endpoint_auth_signing_alg_values_supported: js.Array[String] = null,
-    userinfo_endpoint: String = null
-  ): IssuerMetadata = {
+  def apply(issuer: String): IssuerMetadata = {
     val __obj = js.Dynamic.literal(issuer = issuer.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (authorization_endpoint != null) __obj.updateDynamic("authorization_endpoint")(authorization_endpoint.asInstanceOf[js.Any])
-    if (end_session_endpoint != null) __obj.updateDynamic("end_session_endpoint")(end_session_endpoint.asInstanceOf[js.Any])
-    if (introspection_endpoint_auth_methods_supported != null) __obj.updateDynamic("introspection_endpoint_auth_methods_supported")(introspection_endpoint_auth_methods_supported.asInstanceOf[js.Any])
-    if (introspection_endpoint_auth_signing_alg_values_supported != null) __obj.updateDynamic("introspection_endpoint_auth_signing_alg_values_supported")(introspection_endpoint_auth_signing_alg_values_supported.asInstanceOf[js.Any])
-    if (jwks_uri != null) __obj.updateDynamic("jwks_uri")(jwks_uri.asInstanceOf[js.Any])
-    if (mtls_endpoint_aliases != null) __obj.updateDynamic("mtls_endpoint_aliases")(mtls_endpoint_aliases.asInstanceOf[js.Any])
-    if (registration_endpoint != null) __obj.updateDynamic("registration_endpoint")(registration_endpoint.asInstanceOf[js.Any])
-    if (request_object_signing_alg_values_supported != null) __obj.updateDynamic("request_object_signing_alg_values_supported")(request_object_signing_alg_values_supported.asInstanceOf[js.Any])
-    if (revocation_endpoint != null) __obj.updateDynamic("revocation_endpoint")(revocation_endpoint.asInstanceOf[js.Any])
-    if (revocation_endpoint_auth_methods_supported != null) __obj.updateDynamic("revocation_endpoint_auth_methods_supported")(revocation_endpoint_auth_methods_supported.asInstanceOf[js.Any])
-    if (revocation_endpoint_auth_signing_alg_values_supported != null) __obj.updateDynamic("revocation_endpoint_auth_signing_alg_values_supported")(revocation_endpoint_auth_signing_alg_values_supported.asInstanceOf[js.Any])
-    if (token_endpoint != null) __obj.updateDynamic("token_endpoint")(token_endpoint.asInstanceOf[js.Any])
-    if (token_endpoint_auth_methods_supported != null) __obj.updateDynamic("token_endpoint_auth_methods_supported")(token_endpoint_auth_methods_supported.asInstanceOf[js.Any])
-    if (token_endpoint_auth_signing_alg_values_supported != null) __obj.updateDynamic("token_endpoint_auth_signing_alg_values_supported")(token_endpoint_auth_signing_alg_values_supported.asInstanceOf[js.Any])
-    if (userinfo_endpoint != null) __obj.updateDynamic("userinfo_endpoint")(userinfo_endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuerMetadata]
   }
+  @scala.inline
+  implicit class IssuerMetadataOps[Self <: IssuerMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssuer(value: String): Self = this.set("issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAuthorization_endpoint(value: String): Self = this.set("authorization_endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorization_endpoint: Self = this.set("authorization_endpoint", js.undefined)
+    @scala.inline
+    def setEnd_session_endpoint(value: String): Self = this.set("end_session_endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd_session_endpoint: Self = this.set("end_session_endpoint", js.undefined)
+    @scala.inline
+    def setIntrospection_endpoint_auth_methods_supportedVarargs(value: String*): Self = this.set("introspection_endpoint_auth_methods_supported", js.Array(value :_*))
+    @scala.inline
+    def setIntrospection_endpoint_auth_methods_supported(value: js.Array[String]): Self = this.set("introspection_endpoint_auth_methods_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntrospection_endpoint_auth_methods_supported: Self = this.set("introspection_endpoint_auth_methods_supported", js.undefined)
+    @scala.inline
+    def setIntrospection_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = this.set("introspection_endpoint_auth_signing_alg_values_supported", js.Array(value :_*))
+    @scala.inline
+    def setIntrospection_endpoint_auth_signing_alg_values_supported(value: js.Array[String]): Self = this.set("introspection_endpoint_auth_signing_alg_values_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntrospection_endpoint_auth_signing_alg_values_supported: Self = this.set("introspection_endpoint_auth_signing_alg_values_supported", js.undefined)
+    @scala.inline
+    def setJwks_uri(value: String): Self = this.set("jwks_uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJwks_uri: Self = this.set("jwks_uri", js.undefined)
+    @scala.inline
+    def setMtls_endpoint_aliases(value: MtlsEndpointAliases): Self = this.set("mtls_endpoint_aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtls_endpoint_aliases: Self = this.set("mtls_endpoint_aliases", js.undefined)
+    @scala.inline
+    def setRegistration_endpoint(value: String): Self = this.set("registration_endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistration_endpoint: Self = this.set("registration_endpoint", js.undefined)
+    @scala.inline
+    def setRequest_object_signing_alg_values_supportedVarargs(value: String*): Self = this.set("request_object_signing_alg_values_supported", js.Array(value :_*))
+    @scala.inline
+    def setRequest_object_signing_alg_values_supported(value: js.Array[String]): Self = this.set("request_object_signing_alg_values_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequest_object_signing_alg_values_supported: Self = this.set("request_object_signing_alg_values_supported", js.undefined)
+    @scala.inline
+    def setRevocation_endpoint(value: String): Self = this.set("revocation_endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocation_endpoint: Self = this.set("revocation_endpoint", js.undefined)
+    @scala.inline
+    def setRevocation_endpoint_auth_methods_supportedVarargs(value: String*): Self = this.set("revocation_endpoint_auth_methods_supported", js.Array(value :_*))
+    @scala.inline
+    def setRevocation_endpoint_auth_methods_supported(value: js.Array[String]): Self = this.set("revocation_endpoint_auth_methods_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocation_endpoint_auth_methods_supported: Self = this.set("revocation_endpoint_auth_methods_supported", js.undefined)
+    @scala.inline
+    def setRevocation_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = this.set("revocation_endpoint_auth_signing_alg_values_supported", js.Array(value :_*))
+    @scala.inline
+    def setRevocation_endpoint_auth_signing_alg_values_supported(value: js.Array[String]): Self = this.set("revocation_endpoint_auth_signing_alg_values_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevocation_endpoint_auth_signing_alg_values_supported: Self = this.set("revocation_endpoint_auth_signing_alg_values_supported", js.undefined)
+    @scala.inline
+    def setToken_endpoint(value: String): Self = this.set("token_endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_endpoint: Self = this.set("token_endpoint", js.undefined)
+    @scala.inline
+    def setToken_endpoint_auth_methods_supportedVarargs(value: String*): Self = this.set("token_endpoint_auth_methods_supported", js.Array(value :_*))
+    @scala.inline
+    def setToken_endpoint_auth_methods_supported(value: js.Array[String]): Self = this.set("token_endpoint_auth_methods_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_endpoint_auth_methods_supported: Self = this.set("token_endpoint_auth_methods_supported", js.undefined)
+    @scala.inline
+    def setToken_endpoint_auth_signing_alg_values_supportedVarargs(value: String*): Self = this.set("token_endpoint_auth_signing_alg_values_supported", js.Array(value :_*))
+    @scala.inline
+    def setToken_endpoint_auth_signing_alg_values_supported(value: js.Array[String]): Self = this.set("token_endpoint_auth_signing_alg_values_supported", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToken_endpoint_auth_signing_alg_values_supported: Self = this.set("token_endpoint_auth_signing_alg_values_supported", js.undefined)
+    @scala.inline
+    def setUserinfo_endpoint(value: String): Self = this.set("userinfo_endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserinfo_endpoint: Self = this.set("userinfo_endpoint", js.undefined)
+  }
+  
 }
 

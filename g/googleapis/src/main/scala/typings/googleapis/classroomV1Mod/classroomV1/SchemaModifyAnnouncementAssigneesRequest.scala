@@ -23,14 +23,30 @@ trait SchemaModifyAnnouncementAssigneesRequest extends js.Object {
 
 object SchemaModifyAnnouncementAssigneesRequest {
   @scala.inline
-  def apply(
-    assigneeMode: String = null,
-    modifyIndividualStudentsOptions: SchemaModifyIndividualStudentsOptions = null
-  ): SchemaModifyAnnouncementAssigneesRequest = {
+  def apply(): SchemaModifyAnnouncementAssigneesRequest = {
     val __obj = js.Dynamic.literal()
-    if (assigneeMode != null) __obj.updateDynamic("assigneeMode")(assigneeMode.asInstanceOf[js.Any])
-    if (modifyIndividualStudentsOptions != null) __obj.updateDynamic("modifyIndividualStudentsOptions")(modifyIndividualStudentsOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaModifyAnnouncementAssigneesRequest]
   }
+  @scala.inline
+  implicit class SchemaModifyAnnouncementAssigneesRequestOps[Self <: SchemaModifyAnnouncementAssigneesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssigneeMode(value: String): Self = this.set("assigneeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssigneeMode: Self = this.set("assigneeMode", js.undefined)
+    @scala.inline
+    def setModifyIndividualStudentsOptions(value: SchemaModifyIndividualStudentsOptions): Self = this.set("modifyIndividualStudentsOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifyIndividualStudentsOptions: Self = this.set("modifyIndividualStudentsOptions", js.undefined)
+  }
+  
 }
 

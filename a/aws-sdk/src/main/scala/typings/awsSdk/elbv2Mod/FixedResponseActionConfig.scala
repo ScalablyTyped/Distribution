@@ -22,15 +22,32 @@ trait FixedResponseActionConfig extends js.Object {
 
 object FixedResponseActionConfig {
   @scala.inline
-  def apply(
-    StatusCode: FixedResponseActionStatusCode,
-    ContentType: FixedResponseActionContentType = null,
-    MessageBody: FixedResponseActionMessage = null
-  ): FixedResponseActionConfig = {
+  def apply(StatusCode: FixedResponseActionStatusCode): FixedResponseActionConfig = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (MessageBody != null) __obj.updateDynamic("MessageBody")(MessageBody.asInstanceOf[js.Any])
     __obj.asInstanceOf[FixedResponseActionConfig]
   }
+  @scala.inline
+  implicit class FixedResponseActionConfigOps[Self <: FixedResponseActionConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatusCode(value: FixedResponseActionStatusCode): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContentType(value: FixedResponseActionContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setMessageBody(value: FixedResponseActionMessage): Self = this.set("MessageBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageBody: Self = this.set("MessageBody", js.undefined)
+  }
+  
 }
 

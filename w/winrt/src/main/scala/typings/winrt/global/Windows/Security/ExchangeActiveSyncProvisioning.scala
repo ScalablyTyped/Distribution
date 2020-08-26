@@ -1,14 +1,5 @@
 package typings.winrt.global.Windows.Security
 
-import typings.winrt.Windows.Foundation.IAsyncOperation
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasDisallowConvenienceLogonResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxInactivityTimeLockResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMaxPasswordFailedAttemptsResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordComplexCharactersResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasMinPasswordLengthResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordExpirationResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasPasswordHistoryResult
-import typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasRequireEncryptionResult
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,70 +9,15 @@ import scala.scalajs.js.annotation._
 object ExchangeActiveSyncProvisioning extends js.Object {
   @js.native
   class EasClientDeviceInformation ()
-    extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation {
-    /* CompleteClass */
-    override var friendlyName: String = js.native
-    /* CompleteClass */
-    override var id: String = js.native
-    /* CompleteClass */
-    override var operatingSystem: String = js.native
-    /* CompleteClass */
-    override var systemManufacturer: String = js.native
-    /* CompleteClass */
-    override var systemProductName: String = js.native
-    /* CompleteClass */
-    override var systemSku: String = js.native
-  }
+    extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation
   
   @js.native
   class EasClientSecurityPolicy ()
-    extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy {
-    /* CompleteClass */
-    override var disallowConvenienceLogon: Boolean = js.native
-    /* CompleteClass */
-    override var maxInactivityTimeLock: Double = js.native
-    /* CompleteClass */
-    override var maxPasswordFailedAttempts: Double = js.native
-    /* CompleteClass */
-    override var minPasswordComplexCharacters: Double = js.native
-    /* CompleteClass */
-    override var minPasswordLength: Double = js.native
-    /* CompleteClass */
-    override var passwordExpiration: Double = js.native
-    /* CompleteClass */
-    override var passwordHistory: Double = js.native
-    /* CompleteClass */
-    override var requireEncryption: Boolean = js.native
-    /* CompleteClass */
-    override def applyAsync(): IAsyncOperation[
-        typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults
-      ] = js.native
-    /* CompleteClass */
-    override def checkCompliance(): typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults = js.native
-  }
+    extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy
   
   @js.native
   class EasComplianceResults ()
-    extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults {
-    /* CompleteClass */
-    override var compliant: Boolean = js.native
-    /* CompleteClass */
-    override var disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult = js.native
-    /* CompleteClass */
-    override var maxInactivityTimeLockResult: EasMaxInactivityTimeLockResult = js.native
-    /* CompleteClass */
-    override var maxPasswordFailedAttemptsResult: EasMaxPasswordFailedAttemptsResult = js.native
-    /* CompleteClass */
-    override var minPasswordComplexCharactersResult: EasMinPasswordComplexCharactersResult = js.native
-    /* CompleteClass */
-    override var minPasswordLengthResult: EasMinPasswordLengthResult = js.native
-    /* CompleteClass */
-    override var passwordExpirationResult: EasPasswordExpirationResult = js.native
-    /* CompleteClass */
-    override var passwordHistoryResult: EasPasswordHistoryResult = js.native
-    /* CompleteClass */
-    override var requireEncryptionResult: EasRequireEncryptionResult = js.native
-  }
+    extends typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults
   
   @js.native
   object EasDisallowConvenienceLogonResult extends js.Object {

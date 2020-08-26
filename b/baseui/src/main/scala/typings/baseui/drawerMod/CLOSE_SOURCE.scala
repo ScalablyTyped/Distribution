@@ -6,10 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CLOSE_SOURCE extends js.Object {
-  var backdrop: typings.baseui.baseuiStrings.backdrop
-  var closeButton: typings.baseui.baseuiStrings.closeButton
-  var escape: escape_
+  var backdrop: typings.baseui.baseuiStrings.backdrop = js.native
+  var closeButton: typings.baseui.baseuiStrings.closeButton = js.native
+  var escape: escape_ = js.native
 }
 
 @JSImport("baseui/drawer", "CLOSE_SOURCE")

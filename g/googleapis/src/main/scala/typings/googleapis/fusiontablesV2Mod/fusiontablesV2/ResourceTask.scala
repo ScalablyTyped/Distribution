@@ -29,6 +29,7 @@ class ResourceTask protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTaskDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTaskDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -53,6 +54,7 @@ class ResourceTask protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTask] = js.native
   def get(callback: BodyResponseCallback[SchemaTask]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceTaskGet): GaxiosPromise[SchemaTask] = js.native
   def get(params: ParamsResourceTaskGet, callback: BodyResponseCallback[SchemaTask]): Unit = js.native
   def get(
@@ -79,6 +81,7 @@ class ResourceTask protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaTaskList] = js.native
   def list(callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
   def list(params: ParamsResourceTaskList): GaxiosPromise[SchemaTaskList] = js.native
   def list(params: ParamsResourceTaskList, callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
   def list(

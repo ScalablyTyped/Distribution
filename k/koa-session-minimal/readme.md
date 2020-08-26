@@ -12,7 +12,7 @@ Minimal implementation of session middleware for Koa 2. Inspired by and compatib
 | Keywords           | koa, session |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 41636 |
+| # downloads        | 42077 |
 | # stars            | 2 |
 
 ## Links

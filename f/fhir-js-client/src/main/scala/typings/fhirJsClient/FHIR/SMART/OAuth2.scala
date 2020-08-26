@@ -27,6 +27,7 @@ trait OAuth2 extends js.Object {
     * @param errback Called when either the OAuth2 workflow has not been started on an error occured during the OAuth2 workflow.
     */
   def ready(): Unit = js.native
+  def ready(callback: js.UndefOr[scala.Nothing], errback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   def ready(callback: js.Function1[/* smart */ SMARTClient, Unit]): Unit = js.native
   def ready(
     callback: js.Function1[/* smart */ SMARTClient, Unit],
@@ -39,6 +40,11 @@ trait OAuth2 extends js.Object {
     * @param errBack Called when an error occured while trying to fetch the conformance statement.
     */
   def resolveAuthType(fhirServiceUrl: String): Unit = js.native
+  def resolveAuthType(
+    fhirServiceUrl: String,
+    callback: js.UndefOr[scala.Nothing],
+    errBack: js.Function1[/* type */ String, Unit]
+  ): Unit = js.native
   def resolveAuthType(fhirServiceUrl: String, callback: js.Function1[/* type */ String, Unit]): Unit = js.native
   def resolveAuthType(
     fhirServiceUrl: String,

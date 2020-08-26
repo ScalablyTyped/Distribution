@@ -110,7 +110,6 @@ trait DOMAssertions extends js.Object {
     * Assert that the [HTMLElement][] does not have the `expected` style declarations using
     * [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
     *
-    * @name doesNotHaveStyle
     * @param {object} expected
     * @param {string?} message
     *
@@ -238,6 +237,7 @@ trait DOMAssertions extends js.Object {
     * @see {@link #hasNoAria}
     */
   def hasAria(name: String): DOMAssertions = js.native
+  def hasAria(name: String, value: js.UndefOr[scala.Nothing], message: String): DOMAssertions = js.native
   def hasAria(name: String, value: String): DOMAssertions = js.native
   def hasAria(name: String, value: String, message: String): DOMAssertions = js.native
   def hasAria(name: String, value: Any): DOMAssertions = js.native
@@ -354,7 +354,6 @@ trait DOMAssertions extends js.Object {
     * Assert that the [HTMLElement][] has the `expected` style declarations using
     * [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
     *
-    * @name hasStyle
     * @param {object} expected
     * @param {string?} message
     *
@@ -440,6 +439,7 @@ trait DOMAssertions extends js.Object {
     * @see {@link #hasNoValue}
     */
   def hasValue(): DOMAssertions = js.native
+  def hasValue(expected: js.UndefOr[scala.Nothing], message: String): DOMAssertions = js.native
   def hasValue(expected: String): DOMAssertions = js.native
   def hasValue(expected: String, message: String): DOMAssertions = js.native
   def hasValue(expected: Any): DOMAssertions = js.native
@@ -569,6 +569,22 @@ trait DOMAssertions extends js.Object {
   def isNotRequired(): DOMAssertions = js.native
   def isNotRequired(message: String): DOMAssertions = js.native
   /**
+    * Assert that the {@link HTMLElement} does not pass validation
+    *
+    * Validity is determined by asserting that:
+    *
+    * - `element.reportValidity() === true`
+    *
+    * @param {string?} message
+    *
+    * @example
+    * assert.dom('.input').isNotValid();
+    *
+    * @see {@link #isValid}
+    */
+  def isNotValid(): DOMAssertions = js.native
+  def isNotValid(message: String): DOMAssertions = js.native
+  /**
     * Assert that the {@link HTMLElement} or an {@link HTMLElement} matching the
     * `selector` does not exist or is not visible on the page.
     *
@@ -602,6 +618,22 @@ trait DOMAssertions extends js.Object {
     */
   def isRequired(): DOMAssertions = js.native
   def isRequired(message: String): DOMAssertions = js.native
+  /**
+    * Assert that the {@link HTMLElement} passes validation
+    *
+    * Validity is determined by asserting that:
+    *
+    * - `element.reportValidity() === true`
+    *
+    * @param {string?} message
+    *
+    * @example
+    * assert.dom('.input').isValid();
+    *
+    * @see {@link #isValid}
+    */
+  def isValid(): DOMAssertions = js.native
+  def isValid(message: String): DOMAssertions = js.native
   /**
     * Assert that the {@link HTMLElement} or an {@link HTMLElement} matching the
     * `selector` exists and is visible.

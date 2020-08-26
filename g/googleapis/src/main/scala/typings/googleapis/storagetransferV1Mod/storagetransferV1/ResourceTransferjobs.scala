@@ -81,6 +81,7 @@ class ResourceTransferjobs protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTransferJob] = js.native
   def create(callback: BodyResponseCallback[SchemaTransferJob]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferJob] = js.native
   def create(params: ParamsResourceTransferjobsCreate): GaxiosPromise[SchemaTransferJob] = js.native
   def create(params: ParamsResourceTransferjobsCreate, callback: BodyResponseCallback[SchemaTransferJob]): Unit = js.native
   def create(
@@ -164,6 +165,7 @@ class ResourceTransferjobs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTransferJob] = js.native
   def get(callback: BodyResponseCallback[SchemaTransferJob]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferJob] = js.native
   def get(params: ParamsResourceTransferjobsGet): GaxiosPromise[SchemaTransferJob] = js.native
   def get(params: ParamsResourceTransferjobsGet, callback: BodyResponseCallback[SchemaTransferJob]): Unit = js.native
   def get(
@@ -257,6 +259,7 @@ class ResourceTransferjobs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTransferJobsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferJobsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferJobsResponse] = js.native
   def list(params: ParamsResourceTransferjobsList): GaxiosPromise[SchemaListTransferJobsResponse] = js.native
   def list(
     params: ParamsResourceTransferjobsList,
@@ -351,6 +354,7 @@ class ResourceTransferjobs protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaTransferJob] = js.native
   def patch(callback: BodyResponseCallback[SchemaTransferJob]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferJob] = js.native
   def patch(params: ParamsResourceTransferjobsPatch): GaxiosPromise[SchemaTransferJob] = js.native
   def patch(params: ParamsResourceTransferjobsPatch, callback: BodyResponseCallback[SchemaTransferJob]): Unit = js.native
   def patch(

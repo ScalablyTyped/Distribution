@@ -124,44 +124,92 @@ trait SchemaDevice extends js.Object {
 
 object SchemaDevice {
   @scala.inline
-  def apply(
-    blocked: js.UndefOr[Boolean] = js.undefined,
-    config: SchemaDeviceConfig = null,
-    credentials: js.Array[SchemaDeviceCredential] = null,
-    gatewayConfig: SchemaGatewayConfig = null,
-    id: String = null,
-    lastConfigAckTime: String = null,
-    lastConfigSendTime: String = null,
-    lastErrorStatus: SchemaStatus = null,
-    lastErrorTime: String = null,
-    lastEventTime: String = null,
-    lastHeartbeatTime: String = null,
-    lastStateTime: String = null,
-    logLevel: String = null,
-    metadata: StringDictionary[String] = null,
-    name: String = null,
-    numId: String = null,
-    state: SchemaDeviceState = null
-  ): SchemaDevice = {
+  def apply(): SchemaDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked.get.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (gatewayConfig != null) __obj.updateDynamic("gatewayConfig")(gatewayConfig.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastConfigAckTime != null) __obj.updateDynamic("lastConfigAckTime")(lastConfigAckTime.asInstanceOf[js.Any])
-    if (lastConfigSendTime != null) __obj.updateDynamic("lastConfigSendTime")(lastConfigSendTime.asInstanceOf[js.Any])
-    if (lastErrorStatus != null) __obj.updateDynamic("lastErrorStatus")(lastErrorStatus.asInstanceOf[js.Any])
-    if (lastErrorTime != null) __obj.updateDynamic("lastErrorTime")(lastErrorTime.asInstanceOf[js.Any])
-    if (lastEventTime != null) __obj.updateDynamic("lastEventTime")(lastEventTime.asInstanceOf[js.Any])
-    if (lastHeartbeatTime != null) __obj.updateDynamic("lastHeartbeatTime")(lastHeartbeatTime.asInstanceOf[js.Any])
-    if (lastStateTime != null) __obj.updateDynamic("lastStateTime")(lastStateTime.asInstanceOf[js.Any])
-    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numId != null) __obj.updateDynamic("numId")(numId.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDevice]
   }
+  @scala.inline
+  implicit class SchemaDeviceOps[Self <: SchemaDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlocked(value: Boolean): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlocked: Self = this.set("blocked", js.undefined)
+    @scala.inline
+    def setConfig(value: SchemaDeviceConfig): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setCredentialsVarargs(value: SchemaDeviceCredential*): Self = this.set("credentials", js.Array(value :_*))
+    @scala.inline
+    def setCredentials(value: js.Array[SchemaDeviceCredential]): Self = this.set("credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("credentials", js.undefined)
+    @scala.inline
+    def setGatewayConfig(value: SchemaGatewayConfig): Self = this.set("gatewayConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGatewayConfig: Self = this.set("gatewayConfig", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLastConfigAckTime(value: String): Self = this.set("lastConfigAckTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastConfigAckTime: Self = this.set("lastConfigAckTime", js.undefined)
+    @scala.inline
+    def setLastConfigSendTime(value: String): Self = this.set("lastConfigSendTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastConfigSendTime: Self = this.set("lastConfigSendTime", js.undefined)
+    @scala.inline
+    def setLastErrorStatus(value: SchemaStatus): Self = this.set("lastErrorStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorStatus: Self = this.set("lastErrorStatus", js.undefined)
+    @scala.inline
+    def setLastErrorTime(value: String): Self = this.set("lastErrorTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorTime: Self = this.set("lastErrorTime", js.undefined)
+    @scala.inline
+    def setLastEventTime(value: String): Self = this.set("lastEventTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastEventTime: Self = this.set("lastEventTime", js.undefined)
+    @scala.inline
+    def setLastHeartbeatTime(value: String): Self = this.set("lastHeartbeatTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastHeartbeatTime: Self = this.set("lastHeartbeatTime", js.undefined)
+    @scala.inline
+    def setLastStateTime(value: String): Self = this.set("lastStateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStateTime: Self = this.set("lastStateTime", js.undefined)
+    @scala.inline
+    def setLogLevel(value: String): Self = this.set("logLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogLevel: Self = this.set("logLevel", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNumId(value: String): Self = this.set("numId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumId: Self = this.set("numId", js.undefined)
+    @scala.inline
+    def setState(value: SchemaDeviceState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

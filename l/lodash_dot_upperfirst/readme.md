@@ -12,7 +12,7 @@ The lodash method `_.upperFirst` exported as a module.
 | Keywords           | lodash-modularized, upperfirst |
 | # releases         | 0 |
 | # dependents       | 122 |
-| # downloads        | 13756174 |
+| # downloads        | 14158469 |
 | # stars            | 0 |
 
 ## Links

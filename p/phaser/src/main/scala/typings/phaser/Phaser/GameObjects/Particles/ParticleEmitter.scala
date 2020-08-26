@@ -314,7 +314,11 @@ trait ParticleEmitter
     * @param y The y coordinate to emit the Particles from. Default this.x.
     */
   def emitParticle(): Particle = js.native
+  def emitParticle(count: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], y: Double): Particle = js.native
+  def emitParticle(count: js.UndefOr[scala.Nothing], x: Double): Particle = js.native
+  def emitParticle(count: js.UndefOr[scala.Nothing], x: Double, y: Double): Particle = js.native
   def emitParticle(count: integer): Particle = js.native
+  def emitParticle(count: integer, x: js.UndefOr[scala.Nothing], y: Double): Particle = js.native
   def emitParticle(count: integer, x: Double): Particle = js.native
   def emitParticle(count: integer, x: Double, y: Double): Particle = js.native
   /**
@@ -324,7 +328,11 @@ trait ParticleEmitter
     * @param count The number of Particles to emit. Default this.quantity.
     */
   def emitParticleAt(): Particle = js.native
+  def emitParticleAt(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], count: integer): Particle = js.native
+  def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double): Particle = js.native
+  def emitParticleAt(x: js.UndefOr[scala.Nothing], y: Double, count: integer): Particle = js.native
   def emitParticleAt(x: Double): Particle = js.native
+  def emitParticleAt(x: Double, y: js.UndefOr[scala.Nothing], count: integer): Particle = js.native
   def emitParticleAt(x: Double, y: Double): Particle = js.native
   def emitParticleAt(x: Double, y: Double, count: integer): Particle = js.native
   /**
@@ -462,6 +470,7 @@ trait ParticleEmitter
     */
   def setEmitterAngle(value: EmitterOpOnEmitType): this.type = js.native
   def setFrame(frames: String): this.type = js.native
+  def setFrame(frames: String, pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
   def setFrame(frames: String, pickRandom: Boolean): this.type = js.native
   def setFrame(frames: String, pickRandom: Boolean, quantity: integer): this.type = js.native
   /**
@@ -471,12 +480,15 @@ trait ParticleEmitter
     * @param quantity The number of consecutive particles that will receive each frame. Default 1.
     */
   def setFrame(frames: js.Array[_]): this.type = js.native
+  def setFrame(frames: js.Array[_], pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
   def setFrame(frames: js.Array[_], pickRandom: Boolean): this.type = js.native
   def setFrame(frames: js.Array[_], pickRandom: Boolean, quantity: integer): this.type = js.native
   def setFrame(frames: ParticleEmitterFrameConfig): this.type = js.native
+  def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
   def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean): this.type = js.native
   def setFrame(frames: ParticleEmitterFrameConfig, pickRandom: Boolean, quantity: integer): this.type = js.native
   def setFrame(frames: integer): this.type = js.native
+  def setFrame(frames: integer, pickRandom: js.UndefOr[scala.Nothing], quantity: integer): this.type = js.native
   def setFrame(frames: integer, pickRandom: Boolean): this.type = js.native
   def setFrame(frames: integer, pickRandom: Boolean, quantity: integer): this.type = js.native
   /**
@@ -581,7 +593,16 @@ trait ParticleEmitter
     * @param trackVisible Whether the emitter's visible state will track the target's visible state. Default false.
     */
   def startFollow(target: GameObject): this.type = js.native
+  def startFollow(
+    target: GameObject,
+    offsetX: js.UndefOr[scala.Nothing],
+    offsetY: js.UndefOr[scala.Nothing],
+    trackVisible: Boolean
+  ): this.type = js.native
+  def startFollow(target: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double): this.type = js.native
+  def startFollow(target: GameObject, offsetX: js.UndefOr[scala.Nothing], offsetY: Double, trackVisible: Boolean): this.type = js.native
   def startFollow(target: GameObject, offsetX: Double): this.type = js.native
+  def startFollow(target: GameObject, offsetX: Double, offsetY: js.UndefOr[scala.Nothing], trackVisible: Boolean): this.type = js.native
   def startFollow(target: GameObject, offsetX: Double, offsetY: Double): this.type = js.native
   def startFollow(target: GameObject, offsetX: Double, offsetY: Double, trackVisible: Boolean): this.type = js.native
   /**

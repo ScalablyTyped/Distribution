@@ -141,7 +141,34 @@ class Map protected () extends Object {
     * @api stable
     */
   def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T]): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: js.UndefOr[scala.Nothing],
+    opt_layerFilter: js.UndefOr[scala.Nothing],
+    opt_this2: js.Any
+  ): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: js.UndefOr[scala.Nothing],
+    opt_layerFilter: js.Function1[/* layer */ Layer, Boolean]
+  ): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: js.UndefOr[scala.Nothing],
+    opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
+    opt_this2: js.Any
+  ): T = js.native
   def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T], opt_this: js.Any): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: js.Any,
+    opt_layerFilter: js.UndefOr[scala.Nothing],
+    opt_this2: js.Any
+  ): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],

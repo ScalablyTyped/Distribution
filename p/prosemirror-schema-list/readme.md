@@ -11,8 +11,8 @@ List-related schema elements and commands for ProseMirror
 | Full name          | prosemirror-schema-list |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 64 |
-| # downloads        | 2251200 |
+| # dependents       | 68 |
+| # downloads        | 2421387 |
 | # stars            | 0 |
 
 ## Links

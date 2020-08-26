@@ -25,7 +25,7 @@ trait CopyFpgaImageRequest extends js.Object {
   /**
     * The ID of the source AFI.
     */
-  var SourceFpgaImageId: FpgaImageId = js.native
+  var SourceFpgaImageId: String = js.native
   /**
     * The Region that contains the source AFI.
     */
@@ -34,20 +34,42 @@ trait CopyFpgaImageRequest extends js.Object {
 
 object CopyFpgaImageRequest {
   @scala.inline
-  def apply(
-    SourceFpgaImageId: FpgaImageId,
-    SourceRegion: String,
-    ClientToken: String = null,
-    Description: String = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Name: String = null
-  ): CopyFpgaImageRequest = {
+  def apply(SourceFpgaImageId: String, SourceRegion: String): CopyFpgaImageRequest = {
     val __obj = js.Dynamic.literal(SourceFpgaImageId = SourceFpgaImageId.asInstanceOf[js.Any], SourceRegion = SourceRegion.asInstanceOf[js.Any])
-    if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyFpgaImageRequest]
   }
+  @scala.inline
+  implicit class CopyFpgaImageRequestOps[Self <: CopyFpgaImageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSourceFpgaImageId(value: String): Self = this.set("SourceFpgaImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceRegion(value: String): Self = this.set("SourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("ClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("ClientToken", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+  }
+  
 }
 

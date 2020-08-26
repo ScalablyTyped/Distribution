@@ -26,5 +26,24 @@ object Note {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any], UpdatedBy = UpdatedBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Note]
   }
+  @scala.inline
+  implicit class NoteOps[Self <: Note] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setText(value: NonEmptyString): Self = this.set("Text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedAt(value: NonEmptyString): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpdatedBy(value: NonEmptyString): Self = this.set("UpdatedBy", value.asInstanceOf[js.Any])
+  }
+  
 }
 

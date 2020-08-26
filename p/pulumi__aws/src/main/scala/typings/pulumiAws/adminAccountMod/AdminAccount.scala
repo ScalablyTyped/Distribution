@@ -21,6 +21,7 @@ class AdminAccount protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: AdminAccountArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: AdminAccountArgs, opts: CustomResourceOptions) = this()
   /**
     * The AWS account ID to associate with AWS Firewall Manager as the AWS Firewall Manager administrator account. This can be an AWS Organizations master account or a member account. Defaults to the current account. Must be configured to perform drift detection.
@@ -39,8 +40,10 @@ object AdminAccount extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AdminAccount = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AdminAccount = js.native
   def get(name: String, id: Input[ID], state: AdminAccountState): AdminAccount = js.native
   def get(name: String, id: Input[ID], state: AdminAccountState, opts: CustomResourceOptions): AdminAccount = js.native
   /**

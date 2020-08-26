@@ -223,118 +223,256 @@ trait DBCluster extends js.Object {
 
 object DBCluster {
   @scala.inline
-  def apply(
-    ActivityStreamKinesisStreamName: String = null,
-    ActivityStreamKmsKeyId: String = null,
-    ActivityStreamMode: ActivityStreamMode = null,
-    ActivityStreamStatus: ActivityStreamStatus = null,
-    AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
-    AssociatedRoles: DBClusterRoles = null,
-    AvailabilityZones: AvailabilityZones = null,
-    BacktrackConsumedChangeRecords: js.UndefOr[LongOptional] = js.undefined,
-    BacktrackWindow: js.UndefOr[LongOptional] = js.undefined,
-    BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    Capacity: js.UndefOr[IntegerOptional] = js.undefined,
-    CharacterSetName: String = null,
-    CloneGroupId: String = null,
-    ClusterCreateTime: TStamp = null,
-    CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined,
-    CrossAccountClone: js.UndefOr[BooleanOptional] = js.undefined,
-    CustomEndpoints: StringList = null,
-    DBClusterArn: String = null,
-    DBClusterIdentifier: String = null,
-    DBClusterMembers: DBClusterMemberList = null,
-    DBClusterOptionGroupMemberships: DBClusterOptionGroupMemberships = null,
-    DBClusterParameterGroup: String = null,
-    DBSubnetGroup: String = null,
-    DatabaseName: String = null,
-    DbClusterResourceId: String = null,
-    DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined,
-    DomainMemberships: DomainMembershipList = null,
-    EarliestBacktrackTime: TStamp = null,
-    EarliestRestorableTime: TStamp = null,
-    EnabledCloudwatchLogsExports: LogTypeList = null,
-    Endpoint: String = null,
-    Engine: String = null,
-    EngineMode: String = null,
-    EngineVersion: String = null,
-    GlobalWriteForwardingRequested: js.UndefOr[BooleanOptional] = js.undefined,
-    GlobalWriteForwardingStatus: WriteForwardingStatus = null,
-    HostedZoneId: String = null,
-    HttpEndpointEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    KmsKeyId: String = null,
-    LatestRestorableTime: TStamp = null,
-    MasterUsername: String = null,
-    MultiAZ: js.UndefOr[BooleanOptional] = js.undefined,
-    PercentProgress: String = null,
-    Port: js.UndefOr[IntegerOptional] = js.undefined,
-    PreferredBackupWindow: String = null,
-    PreferredMaintenanceWindow: String = null,
-    ReadReplicaIdentifiers: ReadReplicaIdentifierList = null,
-    ReaderEndpoint: String = null,
-    ReplicationSourceIdentifier: String = null,
-    ScalingConfigurationInfo: ScalingConfigurationInfo = null,
-    Status: String = null,
-    StorageEncrypted: js.UndefOr[Boolean] = js.undefined,
-    VpcSecurityGroups: VpcSecurityGroupMembershipList = null
-  ): DBCluster = {
+  def apply(): DBCluster = {
     val __obj = js.Dynamic.literal()
-    if (ActivityStreamKinesisStreamName != null) __obj.updateDynamic("ActivityStreamKinesisStreamName")(ActivityStreamKinesisStreamName.asInstanceOf[js.Any])
-    if (ActivityStreamKmsKeyId != null) __obj.updateDynamic("ActivityStreamKmsKeyId")(ActivityStreamKmsKeyId.asInstanceOf[js.Any])
-    if (ActivityStreamMode != null) __obj.updateDynamic("ActivityStreamMode")(ActivityStreamMode.asInstanceOf[js.Any])
-    if (ActivityStreamStatus != null) __obj.updateDynamic("ActivityStreamStatus")(ActivityStreamStatus.asInstanceOf[js.Any])
-    if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage.get.asInstanceOf[js.Any])
-    if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles.asInstanceOf[js.Any])
-    if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones.asInstanceOf[js.Any])
-    if (!js.isUndefined(BacktrackConsumedChangeRecords)) __obj.updateDynamic("BacktrackConsumedChangeRecords")(BacktrackConsumedChangeRecords.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BacktrackWindow)) __obj.updateDynamic("BacktrackWindow")(BacktrackWindow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupRetentionPeriod)) __obj.updateDynamic("BackupRetentionPeriod")(BackupRetentionPeriod.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Capacity)) __obj.updateDynamic("Capacity")(Capacity.get.asInstanceOf[js.Any])
-    if (CharacterSetName != null) __obj.updateDynamic("CharacterSetName")(CharacterSetName.asInstanceOf[js.Any])
-    if (CloneGroupId != null) __obj.updateDynamic("CloneGroupId")(CloneGroupId.asInstanceOf[js.Any])
-    if (ClusterCreateTime != null) __obj.updateDynamic("ClusterCreateTime")(ClusterCreateTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(CopyTagsToSnapshot)) __obj.updateDynamic("CopyTagsToSnapshot")(CopyTagsToSnapshot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(CrossAccountClone)) __obj.updateDynamic("CrossAccountClone")(CrossAccountClone.get.asInstanceOf[js.Any])
-    if (CustomEndpoints != null) __obj.updateDynamic("CustomEndpoints")(CustomEndpoints.asInstanceOf[js.Any])
-    if (DBClusterArn != null) __obj.updateDynamic("DBClusterArn")(DBClusterArn.asInstanceOf[js.Any])
-    if (DBClusterIdentifier != null) __obj.updateDynamic("DBClusterIdentifier")(DBClusterIdentifier.asInstanceOf[js.Any])
-    if (DBClusterMembers != null) __obj.updateDynamic("DBClusterMembers")(DBClusterMembers.asInstanceOf[js.Any])
-    if (DBClusterOptionGroupMemberships != null) __obj.updateDynamic("DBClusterOptionGroupMemberships")(DBClusterOptionGroupMemberships.asInstanceOf[js.Any])
-    if (DBClusterParameterGroup != null) __obj.updateDynamic("DBClusterParameterGroup")(DBClusterParameterGroup.asInstanceOf[js.Any])
-    if (DBSubnetGroup != null) __obj.updateDynamic("DBSubnetGroup")(DBSubnetGroup.asInstanceOf[js.Any])
-    if (DatabaseName != null) __obj.updateDynamic("DatabaseName")(DatabaseName.asInstanceOf[js.Any])
-    if (DbClusterResourceId != null) __obj.updateDynamic("DbClusterResourceId")(DbClusterResourceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeletionProtection)) __obj.updateDynamic("DeletionProtection")(DeletionProtection.get.asInstanceOf[js.Any])
-    if (DomainMemberships != null) __obj.updateDynamic("DomainMemberships")(DomainMemberships.asInstanceOf[js.Any])
-    if (EarliestBacktrackTime != null) __obj.updateDynamic("EarliestBacktrackTime")(EarliestBacktrackTime.asInstanceOf[js.Any])
-    if (EarliestRestorableTime != null) __obj.updateDynamic("EarliestRestorableTime")(EarliestRestorableTime.asInstanceOf[js.Any])
-    if (EnabledCloudwatchLogsExports != null) __obj.updateDynamic("EnabledCloudwatchLogsExports")(EnabledCloudwatchLogsExports.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (EngineMode != null) __obj.updateDynamic("EngineMode")(EngineMode.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(GlobalWriteForwardingRequested)) __obj.updateDynamic("GlobalWriteForwardingRequested")(GlobalWriteForwardingRequested.get.asInstanceOf[js.Any])
-    if (GlobalWriteForwardingStatus != null) __obj.updateDynamic("GlobalWriteForwardingStatus")(GlobalWriteForwardingStatus.asInstanceOf[js.Any])
-    if (HostedZoneId != null) __obj.updateDynamic("HostedZoneId")(HostedZoneId.asInstanceOf[js.Any])
-    if (!js.isUndefined(HttpEndpointEnabled)) __obj.updateDynamic("HttpEndpointEnabled")(HttpEndpointEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IAMDatabaseAuthenticationEnabled)) __obj.updateDynamic("IAMDatabaseAuthenticationEnabled")(IAMDatabaseAuthenticationEnabled.get.asInstanceOf[js.Any])
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
-    if (LatestRestorableTime != null) __obj.updateDynamic("LatestRestorableTime")(LatestRestorableTime.asInstanceOf[js.Any])
-    if (MasterUsername != null) __obj.updateDynamic("MasterUsername")(MasterUsername.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZ)) __obj.updateDynamic("MultiAZ")(MultiAZ.get.asInstanceOf[js.Any])
-    if (PercentProgress != null) __obj.updateDynamic("PercentProgress")(PercentProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port.get.asInstanceOf[js.Any])
-    if (PreferredBackupWindow != null) __obj.updateDynamic("PreferredBackupWindow")(PreferredBackupWindow.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (ReadReplicaIdentifiers != null) __obj.updateDynamic("ReadReplicaIdentifiers")(ReadReplicaIdentifiers.asInstanceOf[js.Any])
-    if (ReaderEndpoint != null) __obj.updateDynamic("ReaderEndpoint")(ReaderEndpoint.asInstanceOf[js.Any])
-    if (ReplicationSourceIdentifier != null) __obj.updateDynamic("ReplicationSourceIdentifier")(ReplicationSourceIdentifier.asInstanceOf[js.Any])
-    if (ScalingConfigurationInfo != null) __obj.updateDynamic("ScalingConfigurationInfo")(ScalingConfigurationInfo.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(StorageEncrypted)) __obj.updateDynamic("StorageEncrypted")(StorageEncrypted.get.asInstanceOf[js.Any])
-    if (VpcSecurityGroups != null) __obj.updateDynamic("VpcSecurityGroups")(VpcSecurityGroups.asInstanceOf[js.Any])
     __obj.asInstanceOf[DBCluster]
   }
+  @scala.inline
+  implicit class DBClusterOps[Self <: DBCluster] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityStreamKinesisStreamName(value: String): Self = this.set("ActivityStreamKinesisStreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityStreamKinesisStreamName: Self = this.set("ActivityStreamKinesisStreamName", js.undefined)
+    @scala.inline
+    def setActivityStreamKmsKeyId(value: String): Self = this.set("ActivityStreamKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityStreamKmsKeyId: Self = this.set("ActivityStreamKmsKeyId", js.undefined)
+    @scala.inline
+    def setActivityStreamMode(value: ActivityStreamMode): Self = this.set("ActivityStreamMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityStreamMode: Self = this.set("ActivityStreamMode", js.undefined)
+    @scala.inline
+    def setActivityStreamStatus(value: ActivityStreamStatus): Self = this.set("ActivityStreamStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityStreamStatus: Self = this.set("ActivityStreamStatus", js.undefined)
+    @scala.inline
+    def setAllocatedStorage(value: IntegerOptional): Self = this.set("AllocatedStorage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocatedStorage: Self = this.set("AllocatedStorage", js.undefined)
+    @scala.inline
+    def setAssociatedRolesVarargs(value: DBClusterRole*): Self = this.set("AssociatedRoles", js.Array(value :_*))
+    @scala.inline
+    def setAssociatedRoles(value: DBClusterRoles): Self = this.set("AssociatedRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociatedRoles: Self = this.set("AssociatedRoles", js.undefined)
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: String*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZones: Self = this.set("AvailabilityZones", js.undefined)
+    @scala.inline
+    def setBacktrackConsumedChangeRecords(value: LongOptional): Self = this.set("BacktrackConsumedChangeRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackConsumedChangeRecords: Self = this.set("BacktrackConsumedChangeRecords", js.undefined)
+    @scala.inline
+    def setBacktrackWindow(value: LongOptional): Self = this.set("BacktrackWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBacktrackWindow: Self = this.set("BacktrackWindow", js.undefined)
+    @scala.inline
+    def setBackupRetentionPeriod(value: IntegerOptional): Self = this.set("BackupRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupRetentionPeriod: Self = this.set("BackupRetentionPeriod", js.undefined)
+    @scala.inline
+    def setCapacity(value: IntegerOptional): Self = this.set("Capacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacity: Self = this.set("Capacity", js.undefined)
+    @scala.inline
+    def setCharacterSetName(value: String): Self = this.set("CharacterSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCharacterSetName: Self = this.set("CharacterSetName", js.undefined)
+    @scala.inline
+    def setCloneGroupId(value: String): Self = this.set("CloneGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloneGroupId: Self = this.set("CloneGroupId", js.undefined)
+    @scala.inline
+    def setClusterCreateTime(value: TStamp): Self = this.set("ClusterCreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterCreateTime: Self = this.set("ClusterCreateTime", js.undefined)
+    @scala.inline
+    def setCopyTagsToSnapshot(value: BooleanOptional): Self = this.set("CopyTagsToSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyTagsToSnapshot: Self = this.set("CopyTagsToSnapshot", js.undefined)
+    @scala.inline
+    def setCrossAccountClone(value: BooleanOptional): Self = this.set("CrossAccountClone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossAccountClone: Self = this.set("CrossAccountClone", js.undefined)
+    @scala.inline
+    def setCustomEndpointsVarargs(value: String*): Self = this.set("CustomEndpoints", js.Array(value :_*))
+    @scala.inline
+    def setCustomEndpoints(value: StringList): Self = this.set("CustomEndpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomEndpoints: Self = this.set("CustomEndpoints", js.undefined)
+    @scala.inline
+    def setDBClusterArn(value: String): Self = this.set("DBClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterArn: Self = this.set("DBClusterArn", js.undefined)
+    @scala.inline
+    def setDBClusterIdentifier(value: String): Self = this.set("DBClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterIdentifier: Self = this.set("DBClusterIdentifier", js.undefined)
+    @scala.inline
+    def setDBClusterMembersVarargs(value: DBClusterMember*): Self = this.set("DBClusterMembers", js.Array(value :_*))
+    @scala.inline
+    def setDBClusterMembers(value: DBClusterMemberList): Self = this.set("DBClusterMembers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterMembers: Self = this.set("DBClusterMembers", js.undefined)
+    @scala.inline
+    def setDBClusterOptionGroupMembershipsVarargs(value: DBClusterOptionGroupStatus*): Self = this.set("DBClusterOptionGroupMemberships", js.Array(value :_*))
+    @scala.inline
+    def setDBClusterOptionGroupMemberships(value: DBClusterOptionGroupMemberships): Self = this.set("DBClusterOptionGroupMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterOptionGroupMemberships: Self = this.set("DBClusterOptionGroupMemberships", js.undefined)
+    @scala.inline
+    def setDBClusterParameterGroup(value: String): Self = this.set("DBClusterParameterGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBClusterParameterGroup: Self = this.set("DBClusterParameterGroup", js.undefined)
+    @scala.inline
+    def setDBSubnetGroup(value: String): Self = this.set("DBSubnetGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDBSubnetGroup: Self = this.set("DBSubnetGroup", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: String): Self = this.set("DatabaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("DatabaseName", js.undefined)
+    @scala.inline
+    def setDbClusterResourceId(value: String): Self = this.set("DbClusterResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterResourceId: Self = this.set("DbClusterResourceId", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: BooleanOptional): Self = this.set("DeletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("DeletionProtection", js.undefined)
+    @scala.inline
+    def setDomainMembershipsVarargs(value: DomainMembership*): Self = this.set("DomainMemberships", js.Array(value :_*))
+    @scala.inline
+    def setDomainMemberships(value: DomainMembershipList): Self = this.set("DomainMemberships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainMemberships: Self = this.set("DomainMemberships", js.undefined)
+    @scala.inline
+    def setEarliestBacktrackTime(value: TStamp): Self = this.set("EarliestBacktrackTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEarliestBacktrackTime: Self = this.set("EarliestBacktrackTime", js.undefined)
+    @scala.inline
+    def setEarliestRestorableTime(value: TStamp): Self = this.set("EarliestRestorableTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEarliestRestorableTime: Self = this.set("EarliestRestorableTime", js.undefined)
+    @scala.inline
+    def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = this.set("EnabledCloudwatchLogsExports", js.Array(value :_*))
+    @scala.inline
+    def setEnabledCloudwatchLogsExports(value: LogTypeList): Self = this.set("EnabledCloudwatchLogsExports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledCloudwatchLogsExports: Self = this.set("EnabledCloudwatchLogsExports", js.undefined)
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setEngineMode(value: String): Self = this.set("EngineMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineMode: Self = this.set("EngineMode", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setGlobalWriteForwardingRequested(value: BooleanOptional): Self = this.set("GlobalWriteForwardingRequested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalWriteForwardingRequested: Self = this.set("GlobalWriteForwardingRequested", js.undefined)
+    @scala.inline
+    def setGlobalWriteForwardingStatus(value: WriteForwardingStatus): Self = this.set("GlobalWriteForwardingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalWriteForwardingStatus: Self = this.set("GlobalWriteForwardingStatus", js.undefined)
+    @scala.inline
+    def setHostedZoneId(value: String): Self = this.set("HostedZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedZoneId: Self = this.set("HostedZoneId", js.undefined)
+    @scala.inline
+    def setHttpEndpointEnabled(value: BooleanOptional): Self = this.set("HttpEndpointEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpointEnabled: Self = this.set("HttpEndpointEnabled", js.undefined)
+    @scala.inline
+    def setIAMDatabaseAuthenticationEnabled(value: BooleanOptional): Self = this.set("IAMDatabaseAuthenticationEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIAMDatabaseAuthenticationEnabled: Self = this.set("IAMDatabaseAuthenticationEnabled", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+    @scala.inline
+    def setLatestRestorableTime(value: TStamp): Self = this.set("LatestRestorableTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLatestRestorableTime: Self = this.set("LatestRestorableTime", js.undefined)
+    @scala.inline
+    def setMasterUsername(value: String): Self = this.set("MasterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUsername: Self = this.set("MasterUsername", js.undefined)
+    @scala.inline
+    def setMultiAZ(value: BooleanOptional): Self = this.set("MultiAZ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZ: Self = this.set("MultiAZ", js.undefined)
+    @scala.inline
+    def setPercentProgress(value: String): Self = this.set("PercentProgress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePercentProgress: Self = this.set("PercentProgress", js.undefined)
+    @scala.inline
+    def setPort(value: IntegerOptional): Self = this.set("Port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("Port", js.undefined)
+    @scala.inline
+    def setPreferredBackupWindow(value: String): Self = this.set("PreferredBackupWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredBackupWindow: Self = this.set("PreferredBackupWindow", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setReadReplicaIdentifiersVarargs(value: String*): Self = this.set("ReadReplicaIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setReadReplicaIdentifiers(value: ReadReplicaIdentifierList): Self = this.set("ReadReplicaIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadReplicaIdentifiers: Self = this.set("ReadReplicaIdentifiers", js.undefined)
+    @scala.inline
+    def setReaderEndpoint(value: String): Self = this.set("ReaderEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReaderEndpoint: Self = this.set("ReaderEndpoint", js.undefined)
+    @scala.inline
+    def setReplicationSourceIdentifier(value: String): Self = this.set("ReplicationSourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationSourceIdentifier: Self = this.set("ReplicationSourceIdentifier", js.undefined)
+    @scala.inline
+    def setScalingConfigurationInfo(value: ScalingConfigurationInfo): Self = this.set("ScalingConfigurationInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalingConfigurationInfo: Self = this.set("ScalingConfigurationInfo", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStorageEncrypted(value: Boolean): Self = this.set("StorageEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageEncrypted: Self = this.set("StorageEncrypted", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = this.set("VpcSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroups(value: VpcSecurityGroupMembershipList): Self = this.set("VpcSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroups: Self = this.set("VpcSecurityGroups", js.undefined)
+  }
+  
 }
 

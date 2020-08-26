@@ -152,6 +152,7 @@ trait TileSprite
     * @param y The y position of this sprite's tiling texture.
     */
   def setTilePosition(): this.type = js.native
+  def setTilePosition(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setTilePosition(x: Double): this.type = js.native
   def setTilePosition(x: Double, y: Double): this.type = js.native
   /**
@@ -160,6 +161,7 @@ trait TileSprite
     * @param y The vertical scale of the tiling texture. If not given it will use the `x` value. Default x.
     */
   def setTileScale(): this.type = js.native
+  def setTileScale(x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
   def setTileScale(x: Double): this.type = js.native
   def setTileScale(x: Double, y: Double): this.type = js.native
 }

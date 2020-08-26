@@ -13,16 +13,34 @@ trait ClusterLoggingInfoBrokerLogs extends js.Object {
 
 object ClusterLoggingInfoBrokerLogs {
   @scala.inline
-  def apply(
-    cloudwatchLogs: ClusterLoggingInfoBrokerLogsCloudwatchLogs = null,
-    firehose: ClusterLoggingInfoBrokerLogsFirehose = null,
-    s3: ClusterLoggingInfoBrokerLogsS3 = null
-  ): ClusterLoggingInfoBrokerLogs = {
+  def apply(): ClusterLoggingInfoBrokerLogs = {
     val __obj = js.Dynamic.literal()
-    if (cloudwatchLogs != null) __obj.updateDynamic("cloudwatchLogs")(cloudwatchLogs.asInstanceOf[js.Any])
-    if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
-    if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLoggingInfoBrokerLogs]
   }
+  @scala.inline
+  implicit class ClusterLoggingInfoBrokerLogsOps[Self <: ClusterLoggingInfoBrokerLogs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudwatchLogs(value: ClusterLoggingInfoBrokerLogsCloudwatchLogs): Self = this.set("cloudwatchLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudwatchLogs: Self = this.set("cloudwatchLogs", js.undefined)
+    @scala.inline
+    def setFirehose(value: ClusterLoggingInfoBrokerLogsFirehose): Self = this.set("firehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirehose: Self = this.set("firehose", js.undefined)
+    @scala.inline
+    def setS3(value: ClusterLoggingInfoBrokerLogsS3): Self = this.set("s3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3: Self = this.set("s3", js.undefined)
+  }
+  
 }
 

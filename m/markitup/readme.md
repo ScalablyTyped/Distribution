@@ -12,7 +12,7 @@ A framework agnostic Javascript library that add powerful new features to standa
 | Keywords           | editor, tag, markup, markdown, html |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 11524 |
+| # downloads        | 11397 |
 | # stars            | 0 |
 
 ## Links

@@ -50,30 +50,64 @@ trait ConfigurationSettingsDescription extends js.Object {
 
 object ConfigurationSettingsDescription {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName = null,
-    DateCreated: CreationDate = null,
-    DateUpdated: UpdateDate = null,
-    DeploymentStatus: ConfigurationDeploymentStatus = null,
-    Description: Description = null,
-    EnvironmentName: EnvironmentName = null,
-    OptionSettings: ConfigurationOptionSettingsList = null,
-    PlatformArn: PlatformArn = null,
-    SolutionStackName: SolutionStackName = null,
-    TemplateName: ConfigurationTemplateName = null
-  ): ConfigurationSettingsDescription = {
+  def apply(): ConfigurationSettingsDescription = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationName != null) __obj.updateDynamic("ApplicationName")(ApplicationName.asInstanceOf[js.Any])
-    if (DateCreated != null) __obj.updateDynamic("DateCreated")(DateCreated.asInstanceOf[js.Any])
-    if (DateUpdated != null) __obj.updateDynamic("DateUpdated")(DateUpdated.asInstanceOf[js.Any])
-    if (DeploymentStatus != null) __obj.updateDynamic("DeploymentStatus")(DeploymentStatus.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EnvironmentName != null) __obj.updateDynamic("EnvironmentName")(EnvironmentName.asInstanceOf[js.Any])
-    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
-    if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])
-    if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName.asInstanceOf[js.Any])
-    if (TemplateName != null) __obj.updateDynamic("TemplateName")(TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationSettingsDescription]
   }
+  @scala.inline
+  implicit class ConfigurationSettingsDescriptionOps[Self <: ConfigurationSettingsDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationName: Self = this.set("ApplicationName", js.undefined)
+    @scala.inline
+    def setDateCreated(value: CreationDate): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    @scala.inline
+    def setDateUpdated(value: UpdateDate): Self = this.set("DateUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateUpdated: Self = this.set("DateUpdated", js.undefined)
+    @scala.inline
+    def setDeploymentStatus(value: ConfigurationDeploymentStatus): Self = this.set("DeploymentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStatus: Self = this.set("DeploymentStatus", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEnvironmentName(value: EnvironmentName): Self = this.set("EnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentName: Self = this.set("EnvironmentName", js.undefined)
+    @scala.inline
+    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionSettings: Self = this.set("OptionSettings", js.undefined)
+    @scala.inline
+    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
+    @scala.inline
+    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+    @scala.inline
+    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateName: Self = this.set("TemplateName", js.undefined)
+  }
+  
 }
 

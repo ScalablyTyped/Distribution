@@ -10,9 +10,9 @@ utilities for working with typescript's AST
 | ------------------ | :-------------: |
 | Full name          | tsutils |
 | Keywords           | typescript, ts, ast, typeguard, utils, helper, node |
-| # releases         | 54 |
-| # dependents       | 146 |
-| # downloads        | 195905134 |
+| # releases         | 49 |
+| # dependents       | 151 |
+| # downloads        | 218738806 |
 | # stars            | 4 |
 
 ## Links

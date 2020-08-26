@@ -24,9 +24,164 @@ trait OLEFormat extends js.Object {
   def Activate(): Unit = js.native
   def ActivateAs(ClassType: String): Unit = js.native
   def ConvertTo(): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any,
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any,
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any,
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(ClassType: js.UndefOr[scala.Nothing], DisplayAsIcon: js.Any): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.Any,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.Any,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.Any,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(ClassType: js.UndefOr[scala.Nothing], DisplayAsIcon: js.Any, IconFileName: js.Any): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.Any,
+    IconFileName: js.Any,
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.Any,
+    IconFileName: js.Any,
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: js.Any,
+    IconFileName: js.Any,
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
   def ConvertTo(ClassType: js.Any): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.UndefOr[scala.Nothing], IconFileName: js.Any): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any,
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any,
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.UndefOr[scala.Nothing],
+    IconFileName: js.Any,
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
   def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.Any,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.Any,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any
+  ): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.Any,
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.Any,
+    IconLabel: js.Any
+  ): Unit = js.native
   def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: js.Any): Unit = js.native
+  def ConvertTo(
+    ClassType: js.Any,
+    DisplayAsIcon: js.Any,
+    IconFileName: js.Any,
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.Any
+  ): Unit = js.native
   def ConvertTo(ClassType: js.Any, DisplayAsIcon: js.Any, IconFileName: js.Any, IconIndex: js.Any): Unit = js.native
   def ConvertTo(
     ClassType: js.Any,

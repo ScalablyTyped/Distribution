@@ -11,8 +11,8 @@ split a Text Stream into a Line Stream
 | Full name          | split |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 816 |
-| # downloads        | 148536833 |
+| # dependents       | 820 |
+| # downloads        | 155004001 |
 | # stars            | 81 |
 
 ## Links

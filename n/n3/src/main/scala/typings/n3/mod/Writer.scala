@@ -26,6 +26,13 @@ class Writer[Q /* <: typings.rdfJs.mod.BaseQuad */] () extends js.Object {
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
+    graph: js.UndefOr[scala.Nothing],
+    done: js.Function0[Unit]
+  ): Unit = js.native
+  def addQuad(
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
     graph: /* import warning: importer.ImportType#apply Failed type conversion: Q['graph'] */ js.Any
   ): Unit = js.native
   def addQuad(
@@ -41,6 +48,15 @@ class Writer[Q /* <: typings.rdfJs.mod.BaseQuad */] () extends js.Object {
     `object`: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
     ]
+  ): Unit = js.native
+  def addQuad(
+    subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
+    predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any,
+    `object`: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any
+    ],
+    graph: js.UndefOr[scala.Nothing],
+    done: js.Function0[Unit]
   ): Unit = js.native
   def addQuad(
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q['subject'] */ js.Any,
@@ -68,6 +84,7 @@ class Writer[Q /* <: typings.rdfJs.mod.BaseQuad */] () extends js.Object {
   def blank(triple: BlankTriple[typings.rdfJs.mod.Quad]): BlankNode = js.native
   def blank(triple: typings.rdfJs.mod.Quad): BlankNode = js.native
   def end(): Unit = js.native
+  def end(err: js.UndefOr[scala.Nothing], result: String): Unit = js.native
   def end(err: ErrorCallback): Unit = js.native
   def end(err: ErrorCallback, result: String): Unit = js.native
   @JSName("list")

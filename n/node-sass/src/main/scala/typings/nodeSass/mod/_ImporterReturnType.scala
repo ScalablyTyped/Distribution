@@ -13,9 +13,8 @@ object _ImporterReturnType {
     __obj.asInstanceOf[_ImporterReturnType]
   }
   @scala.inline
-  def Contents(contents: String, file: String = null): _ImporterReturnType = {
+  def Contents(contents: String): _ImporterReturnType = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[_ImporterReturnType]
   }
   @scala.inline

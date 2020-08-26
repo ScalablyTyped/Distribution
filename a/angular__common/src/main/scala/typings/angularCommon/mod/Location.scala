@@ -32,6 +32,7 @@ class Location protected () extends js.Object {
     *
     */
   def go(path: String): Unit = js.native
+  def go(path: String, query: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
   def go(path: String, query: String): Unit = js.native
   def go(path: String, query: String, state: js.Any): Unit = js.native
   /**
@@ -89,6 +90,7 @@ class Location protected () extends js.Object {
     * @param state Location history state.
     */
   def replaceState(path: String): Unit = js.native
+  def replaceState(path: String, query: js.UndefOr[scala.Nothing], state: js.Any): Unit = js.native
   def replaceState(path: String, query: String): Unit = js.native
   def replaceState(path: String, query: String, state: js.Any): Unit = js.native
   /**
@@ -100,6 +102,11 @@ class Location protected () extends js.Object {
     * @returns Subscribed events.
     */
   def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit]): SubscriptionLike = js.native
+  def subscribe(
+    onNext: js.Function1[/* value */ PopStateEvent, Unit],
+    onThrow: js.UndefOr[scala.Nothing],
+    onReturn: js.Function0[Unit]
+  ): SubscriptionLike = js.native
   def subscribe(
     onNext: js.Function1[/* value */ PopStateEvent, Unit],
     onThrow: js.Function1[/* exception */ js.Any, Unit]

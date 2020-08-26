@@ -11,62 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("KiiCloud.KiiACLEntry")
 @js.native
 class KiiACLEntry ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiACLEntry {
-  /**
-    * Get the action that is being permitted/restricted in this entry
-    *
-    */
-  /* CompleteClass */
-  override def getAction(): typings.kiiCloudSdk.KiiCloud.KiiACLAction = js.native
-  /**
-    * Get whether or not the action is being permitted to the subject
-    *
-    */
-  /* CompleteClass */
-  override def getGrant(): Boolean = js.native
-  /**
-    * Get the subject that is being permitted/restricted in this entry
-    *
-    */
-  /* CompleteClass */
-  override def getSubject[T /* <: KiiACLSubject */](): T = js.native
-  /**
-    * The action that is being permitted/restricted. Possible values:
-    * <br><br>
-    * KiiACLAction.KiiACLBucketActionCreateObjects,<br>
-    * KiiACLAction.KiiACLBucketActionQueryObjects,  <br>
-    * KiiACLAction.KiiACLBucketActionDropBucket,<br>
-    * KiiACLAction.KiiACLBucketActionReadObjects,<br>
-    * KiiACLAction.KiiACLObjectActionRead,<br>
-    * KiiACLAction.KiiACLObjectActionWrite,<br>
-    * KiiACLAction.KiiACLSubscribeToTopic,<br>
-    * KiiACLAction.KiiACLSendMessageToTopic
-    *
-    * @param value The action being permitted/restricted
-    *
-    * @throws If the value is not one of the permitted values
-    */
-  /* CompleteClass */
-  override def setAction(value: typings.kiiCloudSdk.KiiCloud.KiiACLAction): Unit = js.native
-  /**
-    * Set whether or not the action is being permitted to the subject
-    *
-    * @param value true if the action is permitted, false otherwise
-    *
-    * @throws If the value is not a boolean type
-    */
-  /* CompleteClass */
-  override def setGrant(value: Boolean): Unit = js.native
-  /**
-    * Set the subject to which the action/grant is being applied
-    *
-    * @param subject instance.
-    *
-    * @throws If the value is not one of the permitted values
-    */
-  /* CompleteClass */
-  override def setSubject(subject: KiiACLSubject): Unit = js.native
-}
+  extends typings.kiiCloudSdk.KiiCloud.KiiACLEntry
 
 /* static members */
 @JSGlobal("KiiCloud.KiiACLEntry")

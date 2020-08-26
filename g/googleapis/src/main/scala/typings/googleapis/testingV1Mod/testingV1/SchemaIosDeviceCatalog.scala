@@ -29,18 +29,44 @@ trait SchemaIosDeviceCatalog extends js.Object {
 
 object SchemaIosDeviceCatalog {
   @scala.inline
-  def apply(
-    models: js.Array[SchemaIosModel] = null,
-    runtimeConfiguration: SchemaIosRuntimeConfiguration = null,
-    versions: js.Array[SchemaIosVersion] = null,
-    xcodeVersions: js.Array[SchemaXcodeVersion] = null
-  ): SchemaIosDeviceCatalog = {
+  def apply(): SchemaIosDeviceCatalog = {
     val __obj = js.Dynamic.literal()
-    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (runtimeConfiguration != null) __obj.updateDynamic("runtimeConfiguration")(runtimeConfiguration.asInstanceOf[js.Any])
-    if (versions != null) __obj.updateDynamic("versions")(versions.asInstanceOf[js.Any])
-    if (xcodeVersions != null) __obj.updateDynamic("xcodeVersions")(xcodeVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIosDeviceCatalog]
   }
+  @scala.inline
+  implicit class SchemaIosDeviceCatalogOps[Self <: SchemaIosDeviceCatalog] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setModelsVarargs(value: SchemaIosModel*): Self = this.set("models", js.Array(value :_*))
+    @scala.inline
+    def setModels(value: js.Array[SchemaIosModel]): Self = this.set("models", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModels: Self = this.set("models", js.undefined)
+    @scala.inline
+    def setRuntimeConfiguration(value: SchemaIosRuntimeConfiguration): Self = this.set("runtimeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeConfiguration: Self = this.set("runtimeConfiguration", js.undefined)
+    @scala.inline
+    def setVersionsVarargs(value: SchemaIosVersion*): Self = this.set("versions", js.Array(value :_*))
+    @scala.inline
+    def setVersions(value: js.Array[SchemaIosVersion]): Self = this.set("versions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersions: Self = this.set("versions", js.undefined)
+    @scala.inline
+    def setXcodeVersionsVarargs(value: SchemaXcodeVersion*): Self = this.set("xcodeVersions", js.Array(value :_*))
+    @scala.inline
+    def setXcodeVersions(value: js.Array[SchemaXcodeVersion]): Self = this.set("xcodeVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXcodeVersions: Self = this.set("xcodeVersions", js.undefined)
+  }
+  
 }
 

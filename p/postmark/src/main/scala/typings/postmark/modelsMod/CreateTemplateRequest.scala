@@ -13,7 +13,7 @@ class CreateTemplateRequest protected ()
     Subject: js.UndefOr[String],
     HtmlBody: js.UndefOr[String],
     TextBody: js.UndefOr[String],
-    Alias: js.UndefOr[Null | String],
+    Alias: js.UndefOr[String | Null],
     TemplateType: js.UndefOr[typings.postmark.templateMod.TemplateTypes],
     LayoutTemplate: js.UndefOr[String]
   ) = this()

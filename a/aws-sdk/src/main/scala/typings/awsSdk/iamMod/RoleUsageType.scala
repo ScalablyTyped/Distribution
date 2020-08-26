@@ -18,11 +18,32 @@ trait RoleUsageType extends js.Object {
 
 object RoleUsageType {
   @scala.inline
-  def apply(Region: RegionNameType = null, Resources: ArnListType = null): RoleUsageType = {
+  def apply(): RoleUsageType = {
     val __obj = js.Dynamic.literal()
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoleUsageType]
   }
+  @scala.inline
+  implicit class RoleUsageTypeOps[Self <: RoleUsageType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegion(value: RegionNameType): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: arnType*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: ArnListType): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("Resources", js.undefined)
+  }
+  
 }
 

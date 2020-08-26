@@ -30,20 +30,42 @@ trait FindMatchesMetrics extends js.Object {
 
 object FindMatchesMetrics {
   @scala.inline
-  def apply(
-    AreaUnderPRCurve: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    ConfusionMatrix: ConfusionMatrix = null,
-    F1: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    Precision: js.UndefOr[GenericBoundedDouble] = js.undefined,
-    Recall: js.UndefOr[GenericBoundedDouble] = js.undefined
-  ): FindMatchesMetrics = {
+  def apply(): FindMatchesMetrics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AreaUnderPRCurve)) __obj.updateDynamic("AreaUnderPRCurve")(AreaUnderPRCurve.get.asInstanceOf[js.Any])
-    if (ConfusionMatrix != null) __obj.updateDynamic("ConfusionMatrix")(ConfusionMatrix.asInstanceOf[js.Any])
-    if (!js.isUndefined(F1)) __obj.updateDynamic("F1")(F1.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Precision)) __obj.updateDynamic("Precision")(Precision.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Recall)) __obj.updateDynamic("Recall")(Recall.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindMatchesMetrics]
   }
+  @scala.inline
+  implicit class FindMatchesMetricsOps[Self <: FindMatchesMetrics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAreaUnderPRCurve(value: GenericBoundedDouble): Self = this.set("AreaUnderPRCurve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAreaUnderPRCurve: Self = this.set("AreaUnderPRCurve", js.undefined)
+    @scala.inline
+    def setConfusionMatrix(value: ConfusionMatrix): Self = this.set("ConfusionMatrix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfusionMatrix: Self = this.set("ConfusionMatrix", js.undefined)
+    @scala.inline
+    def setF1(value: GenericBoundedDouble): Self = this.set("F1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteF1: Self = this.set("F1", js.undefined)
+    @scala.inline
+    def setPrecision(value: GenericBoundedDouble): Self = this.set("Precision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecision: Self = this.set("Precision", js.undefined)
+    @scala.inline
+    def setRecall(value: GenericBoundedDouble): Self = this.set("Recall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecall: Self = this.set("Recall", js.undefined)
+  }
+  
 }
 

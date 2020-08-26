@@ -1,7 +1,7 @@
 
 # Scala.js typings for zipkin-transport-http
 
-Typings are for version 0.19.2
+Typings are for version 0.22.0
 
 ## Library description:
 Transports Zipkin trace data via HTTP
@@ -10,9 +10,9 @@ Transports Zipkin trace data via HTTP
 | ------------------ | :-------------: |
 | Full name          | zipkin-transport-http |
 | Keywords           | - |
-| # releases         | 27 |
+| # releases         | 26 |
 | # dependents       | 57 |
-| # downloads        | 1056460 |
+| # downloads        | 1094598 |
 | # stars            | 0 |
 
 ## Links

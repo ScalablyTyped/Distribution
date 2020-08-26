@@ -15,6 +15,7 @@ object infoUserAgentClientMod extends js.Object {
   class InfoUserAgentClient protected () extends UserAgentClient {
     def this(dialog: SessionDialog) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate) = this()
+    def this(dialog: SessionDialog, delegate: js.UndefOr[scala.Nothing], options: RequestOptions) = this()
     def this(dialog: SessionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
   }
   

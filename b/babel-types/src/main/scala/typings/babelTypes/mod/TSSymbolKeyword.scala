@@ -4,11 +4,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TSSymbolKeyword
   extends Node
      with TSType {
   @JSName("type")
-  var type_TSSymbolKeyword: typings.babelTypes.babelTypesStrings.TSSymbolKeyword
+  var type_TSSymbolKeyword: typings.babelTypes.babelTypesStrings.TSSymbolKeyword = js.native
 }
 
 @JSImport("babel-types", "TSSymbolKeyword")

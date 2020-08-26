@@ -7,63 +7,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.widget.BaseExpandableListAdapter")
 @js.native
-abstract class BaseExpandableListAdapter ()
+trait BaseExpandableListAdapter
   extends ExpandableListAdapter
      with HeterogeneousExpandableList {
   var mDataSetObservable: js.Any = js.native
-  /* CompleteClass */
-  override def areAllItemsEnabled(): Boolean = js.native
-  /* CompleteClass */
-  override def getChild(groupPosition: Double, childPosition: Double): js.Any = js.native
-  /* CompleteClass */
-  override def getChildId(groupPosition: Double, childPosition: Double): Double = js.native
-  /* CompleteClass */
-  override def getChildType(groupPosition: Double, childPosition: Double): Double = js.native
-  /* CompleteClass */
-  override def getChildTypeCount(): Double = js.native
-  /* CompleteClass */
-  override def getChildView(
-    groupPosition: Double,
-    childPosition: Double,
-    isLastChild: Boolean,
-    convertView: View,
-    parent: ViewGroup
-  ): View = js.native
-  /* CompleteClass */
-  override def getChildrenCount(groupPosition: Double): Double = js.native
-  /* CompleteClass */
-  override def getCombinedChildId(groupId: Double, childId: Double): Double = js.native
-  /* CompleteClass */
-  override def getCombinedGroupId(groupId: Double): Double = js.native
-  /* CompleteClass */
-  override def getGroup(groupPosition: Double): js.Any = js.native
-  /* CompleteClass */
-  override def getGroupCount(): Double = js.native
-  /* CompleteClass */
-  override def getGroupId(groupPosition: Double): Double = js.native
-  /* CompleteClass */
-  override def getGroupType(groupPosition: Double): Double = js.native
-  /* CompleteClass */
-  override def getGroupTypeCount(): Double = js.native
-  /* CompleteClass */
-  override def getGroupView(groupPosition: Double, isExpanded: Boolean, convertView: View, parent: ViewGroup): View = js.native
-  /* CompleteClass */
-  override def hasStableIds(): Boolean = js.native
-  /* CompleteClass */
-  override def isChildSelectable(groupPosition: Double, childPosition: Double): Boolean = js.native
-  /* CompleteClass */
-  override def isEmpty(): Boolean = js.native
   def notifyDataSetChanged(): Unit = js.native
   def notifyDataSetInvalidated(): Unit = js.native
-  /* CompleteClass */
-  override def onGroupCollapsed(groupPosition: Double): Unit = js.native
-  /* CompleteClass */
-  override def onGroupExpanded(groupPosition: Double): Unit = js.native
-  /* CompleteClass */
-  override def registerDataSetObserver(observer: DataSetObserver): Unit = js.native
-  /* CompleteClass */
-  override def unregisterDataSetObserver(observer: DataSetObserver): Unit = js.native
+}
+
+object BaseExpandableListAdapter {
+  @scala.inline
+  def apply(
+    areAllItemsEnabled: () => Boolean,
+    getChild: (Double, Double) => js.Any,
+    getChildId: (Double, Double) => Double,
+    getChildType: (Double, Double) => Double,
+    getChildTypeCount: () => Double,
+    getChildView: (Double, Double, Boolean, View, ViewGroup) => View,
+    getChildrenCount: Double => Double,
+    getCombinedChildId: (Double, Double) => Double,
+    getCombinedGroupId: Double => Double,
+    getGroup: Double => js.Any,
+    getGroupCount: () => Double,
+    getGroupId: Double => Double,
+    getGroupType: Double => Double,
+    getGroupTypeCount: () => Double,
+    getGroupView: (Double, Boolean, View, ViewGroup) => View,
+    hasStableIds: () => Boolean,
+    isChildSelectable: (Double, Double) => Boolean,
+    isEmpty: () => Boolean,
+    mDataSetObservable: js.Any,
+    notifyDataSetChanged: () => Unit,
+    notifyDataSetInvalidated: () => Unit,
+    onGroupCollapsed: Double => Unit,
+    onGroupExpanded: Double => Unit,
+    registerDataSetObserver: DataSetObserver => Unit,
+    unregisterDataSetObserver: DataSetObserver => Unit
+  ): BaseExpandableListAdapter = {
+    val __obj = js.Dynamic.literal(areAllItemsEnabled = js.Any.fromFunction0(areAllItemsEnabled), getChild = js.Any.fromFunction2(getChild), getChildId = js.Any.fromFunction2(getChildId), getChildType = js.Any.fromFunction2(getChildType), getChildTypeCount = js.Any.fromFunction0(getChildTypeCount), getChildView = js.Any.fromFunction5(getChildView), getChildrenCount = js.Any.fromFunction1(getChildrenCount), getCombinedChildId = js.Any.fromFunction2(getCombinedChildId), getCombinedGroupId = js.Any.fromFunction1(getCombinedGroupId), getGroup = js.Any.fromFunction1(getGroup), getGroupCount = js.Any.fromFunction0(getGroupCount), getGroupId = js.Any.fromFunction1(getGroupId), getGroupType = js.Any.fromFunction1(getGroupType), getGroupTypeCount = js.Any.fromFunction0(getGroupTypeCount), getGroupView = js.Any.fromFunction4(getGroupView), hasStableIds = js.Any.fromFunction0(hasStableIds), isChildSelectable = js.Any.fromFunction2(isChildSelectable), isEmpty = js.Any.fromFunction0(isEmpty), mDataSetObservable = mDataSetObservable.asInstanceOf[js.Any], notifyDataSetChanged = js.Any.fromFunction0(notifyDataSetChanged), notifyDataSetInvalidated = js.Any.fromFunction0(notifyDataSetInvalidated), onGroupCollapsed = js.Any.fromFunction1(onGroupCollapsed), onGroupExpanded = js.Any.fromFunction1(onGroupExpanded), registerDataSetObserver = js.Any.fromFunction1(registerDataSetObserver), unregisterDataSetObserver = js.Any.fromFunction1(unregisterDataSetObserver))
+    __obj.asInstanceOf[BaseExpandableListAdapter]
+  }
+  @scala.inline
+  implicit class BaseExpandableListAdapterOps[Self <: BaseExpandableListAdapter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMDataSetObservable(value: js.Any): Self = this.set("mDataSetObservable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotifyDataSetChanged(value: () => Unit): Self = this.set("notifyDataSetChanged", js.Any.fromFunction0(value))
+    @scala.inline
+    def setNotifyDataSetInvalidated(value: () => Unit): Self = this.set("notifyDataSetInvalidated", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -7,8 +7,8 @@ import typings.exceljs.anon.PartialColumnAlignment
 import typings.exceljs.anon.PartialHeaderFooter
 import typings.exceljs.anon.PartialPageSetup
 import typings.exceljs.anon.PartialWorksheetProtectio
-import typings.exceljs.anon.editAsstringhyperlinksIma
-import typings.exceljs.anon.editAsstringhyperlinksImaEditAs
+import typings.exceljs.anon.editAsstringundefinedhype
+import typings.exceljs.anon.editAsstringundefinedhypeEditAs
 import typings.std.Partial
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -86,18 +86,21 @@ trait Worksheet extends js.Object {
   	 * embed an image within the worksheet to cover a range
   	 */
   def addImage(imageId: Double, range: String): Unit = js.native
-  def addImage(imageId: Double, range: editAsstringhyperlinksIma): Unit = js.native
-  def addImage(imageId: Double, range: editAsstringhyperlinksImaEditAs): Unit = js.native
+  def addImage(imageId: Double, range: editAsstringundefinedhype): Unit = js.native
+  def addImage(imageId: Double, range: editAsstringundefinedhypeEditAs): Unit = js.native
   def addRow(data: js.Any): Row = js.native
+  def addRow(data: js.Any, styleOption: String): Row = js.native
   /**
   	 * Add a couple of Rows by key-value, after the last current row, using the column keys,
   	 * or add a row by contiguous Array (assign to columns A, B & C)
   	 */
   def addRow(data: js.Array[_]): Row = js.native
+  def addRow(data: js.Array[_], styleOption: String): Row = js.native
   /**
   	 * Add multiple rows by providing an array of arrays or key-value pairs
   	 */
   def addRows(rows: js.Array[_]): Unit = js.native
+  def addRows(rows: js.Array[_], styleOption: String): Unit = js.native
   /**
   	 * Add a new table and return a reference to it
   	 */
@@ -180,6 +183,20 @@ trait Worksheet extends js.Object {
   	 *  fetch table
   	 */
   def getTables(): js.Array[js.Tuple2[Table, Unit]] = js.native
+  def insertRow(pos: Double, value: js.Any): Row = js.native
+  def insertRow(pos: Double, value: js.Any, styleOption: String): Row = js.native
+  /**
+  	 * Insert a Row by key-value, at the pos (shifiting down all rows from pos),
+  	 * using the column keys, or add a row by contiguous Array (assign to columns A, B & C)
+  	 */
+  def insertRow(pos: Double, value: js.Array[_]): Row = js.native
+  def insertRow(pos: Double, value: js.Array[_], styleOption: String): Row = js.native
+  /**
+  	 * Insert multiple rows at pos (shifiting down all rows from pos)
+  	 * by providing an array of arrays or key-value pairs
+  	 */
+  def insertRows(pos: Double, values: js.Array[_]): Unit = js.native
+  def insertRows(pos: Double, values: js.Array[_], styleOption: String): Unit = js.native
   /**
   	 * Merge cells, either:
   	 *

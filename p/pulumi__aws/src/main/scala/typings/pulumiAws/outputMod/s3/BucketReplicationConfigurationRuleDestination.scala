@@ -31,19 +31,40 @@ trait BucketReplicationConfigurationRuleDestination extends js.Object {
 
 object BucketReplicationConfigurationRuleDestination {
   @scala.inline
-  def apply(
-    bucket: String,
-    accessControlTranslation: BucketReplicationConfigurationRuleDestinationAccessControlTranslation = null,
-    accountId: String = null,
-    replicaKmsKeyId: String = null,
-    storageClass: String = null
-  ): BucketReplicationConfigurationRuleDestination = {
+  def apply(bucket: String): BucketReplicationConfigurationRuleDestination = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (accessControlTranslation != null) __obj.updateDynamic("accessControlTranslation")(accessControlTranslation.asInstanceOf[js.Any])
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (replicaKmsKeyId != null) __obj.updateDynamic("replicaKmsKeyId")(replicaKmsKeyId.asInstanceOf[js.Any])
-    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRuleDestination]
   }
+  @scala.inline
+  implicit class BucketReplicationConfigurationRuleDestinationOps[Self <: BucketReplicationConfigurationRuleDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessControlTranslation(value: BucketReplicationConfigurationRuleDestinationAccessControlTranslation): Self = this.set("accessControlTranslation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessControlTranslation: Self = this.set("accessControlTranslation", js.undefined)
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setReplicaKmsKeyId(value: String): Self = this.set("replicaKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicaKmsKeyId: Self = this.set("replicaKmsKeyId", js.undefined)
+    @scala.inline
+    def setStorageClass(value: String): Self = this.set("storageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("storageClass", js.undefined)
+  }
+  
 }
 

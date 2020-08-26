@@ -42,8 +42,12 @@ class AsyncResource protected () extends js.Object {
     * @param thisArg The receiver to be used for the function call.
     * @param args Optional arguments to pass to the function.
     */
-  def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result]): Result = js.native
   def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result], thisArg: This, args: js.Any*): Result = js.native
+  def runInAsyncScope[This, Result](
+    fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result],
+    thisArg: js.UndefOr[scala.Nothing],
+    args: js.Any*
+  ): Result = js.native
   /**
     * @return the trigger ID for this AsyncResource instance.
     */

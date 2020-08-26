@@ -65,28 +65,62 @@ trait SchemaGoogleCloudVisionV1p1beta1EntityAnnotation extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1EntityAnnotation {
   @scala.inline
-  def apply(
-    boundingPoly: SchemaGoogleCloudVisionV1p1beta1BoundingPoly = null,
-    confidence: js.UndefOr[Double] = js.undefined,
-    description: String = null,
-    locale: String = null,
-    locations: js.Array[SchemaGoogleCloudVisionV1p1beta1LocationInfo] = null,
-    mid: String = null,
-    properties: js.Array[SchemaGoogleCloudVisionV1p1beta1Property] = null,
-    score: js.UndefOr[Double] = js.undefined,
-    topicality: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleCloudVisionV1p1beta1EntityAnnotation = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1EntityAnnotation = {
     val __obj = js.Dynamic.literal()
-    if (boundingPoly != null) __obj.updateDynamic("boundingPoly")(boundingPoly.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (locations != null) __obj.updateDynamic("locations")(locations.asInstanceOf[js.Any])
-    if (mid != null) __obj.updateDynamic("mid")(mid.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(score)) __obj.updateDynamic("score")(score.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(topicality)) __obj.updateDynamic("topicality")(topicality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1EntityAnnotationOps[Self <: SchemaGoogleCloudVisionV1p1beta1EntityAnnotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p1beta1BoundingPoly): Self = this.set("boundingPoly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingPoly: Self = this.set("boundingPoly", js.undefined)
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocationsVarargs(value: SchemaGoogleCloudVisionV1p1beta1LocationInfo*): Self = this.set("locations", js.Array(value :_*))
+    @scala.inline
+    def setLocations(value: js.Array[SchemaGoogleCloudVisionV1p1beta1LocationInfo]): Self = this.set("locations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocations: Self = this.set("locations", js.undefined)
+    @scala.inline
+    def setMid(value: String): Self = this.set("mid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMid: Self = this.set("mid", js.undefined)
+    @scala.inline
+    def setPropertiesVarargs(value: SchemaGoogleCloudVisionV1p1beta1Property*): Self = this.set("properties", js.Array(value :_*))
+    @scala.inline
+    def setProperties(value: js.Array[SchemaGoogleCloudVisionV1p1beta1Property]): Self = this.set("properties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperties: Self = this.set("properties", js.undefined)
+    @scala.inline
+    def setScore(value: Double): Self = this.set("score", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScore: Self = this.set("score", js.undefined)
+    @scala.inline
+    def setTopicality(value: Double): Self = this.set("topicality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicality: Self = this.set("topicality", js.undefined)
+  }
+  
 }
 

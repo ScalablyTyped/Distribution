@@ -1,115 +1,124 @@
 package typings.extjs.Ext.chart
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ILegend extends IBase {
   /** [Config Option] (String) */
-  var boxFill: js.UndefOr[String] = js.undefined
+  var boxFill: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var boxStroke: js.UndefOr[String] = js.undefined
+  var boxStroke: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var boxStrokeWidth: js.UndefOr[String] = js.undefined
+  var boxStrokeWidth: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var boxZIndex: js.UndefOr[Double] = js.undefined
+  var boxZIndex: js.UndefOr[Double] = js.native
   /** [Property] (Boolean) */
-  var isVertical: js.UndefOr[Boolean] = js.undefined
+  var isVertical: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var itemSpacing: js.UndefOr[Double] = js.undefined
+  var itemSpacing: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var labelColor: js.UndefOr[String] = js.undefined
+  var labelColor: js.UndefOr[String] = js.native
   /** [Config Option] (String) */
-  var labelFont: js.UndefOr[String] = js.undefined
+  var labelFont: js.UndefOr[String] = js.native
   /** [Config Option] (Number) */
-  var padding: js.UndefOr[Double] = js.undefined
+  var padding: js.UndefOr[Double] = js.native
   /** [Config Option] (String) */
-  var position: js.UndefOr[String] = js.undefined
+  var position: js.UndefOr[String] = js.native
   /** [Method] toggle
     * @param show Boolean Whether to show or hide the legend.
     */
-  var toggle: js.UndefOr[js.Function1[/* show */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var toggle: js.UndefOr[js.Function1[/* show */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var update: js.UndefOr[Boolean] = js.undefined
+  var update: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Number) */
-  var x: js.UndefOr[Double] = js.undefined
+  var x: js.UndefOr[Double] = js.native
   /** [Config Option] (Number) */
-  var y: js.UndefOr[Double] = js.undefined
+  var y: js.UndefOr[Double] = js.native
 }
 
 object ILegend {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    boxFill: String = null,
-    boxStroke: String = null,
-    boxStrokeWidth: String = null,
-    boxZIndex: js.UndefOr[Double] = js.undefined,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => ILegend = null,
-    isVertical: js.UndefOr[Boolean] = js.undefined,
-    itemSpacing: js.UndefOr[Double] = js.undefined,
-    labelColor: String = null,
-    labelFont: String = null,
-    mixins: js.Any = null,
-    padding: js.UndefOr[Double] = js.undefined,
-    position: String = null,
-    requires: Array = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    toggle: /* show */ js.UndefOr[Boolean] => Unit = null,
-    update: js.UndefOr[Boolean] = js.undefined,
-    uses: Array = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): ILegend = {
+  def apply(): ILegend = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (boxFill != null) __obj.updateDynamic("boxFill")(boxFill.asInstanceOf[js.Any])
-    if (boxStroke != null) __obj.updateDynamic("boxStroke")(boxStroke.asInstanceOf[js.Any])
-    if (boxStrokeWidth != null) __obj.updateDynamic("boxStrokeWidth")(boxStrokeWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxZIndex)) __obj.updateDynamic("boxZIndex")(boxZIndex.get.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemSpacing)) __obj.updateDynamic("itemSpacing")(itemSpacing.get.asInstanceOf[js.Any])
-    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor.asInstanceOf[js.Any])
-    if (labelFont != null) __obj.updateDynamic("labelFont")(labelFont.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction1(toggle))
-    if (!js.isUndefined(update)) __obj.updateDynamic("update")(update.get.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILegend]
   }
+  @scala.inline
+  implicit class ILegendOps[Self <: ILegend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoxFill(value: String): Self = this.set("boxFill", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxFill: Self = this.set("boxFill", js.undefined)
+    @scala.inline
+    def setBoxStroke(value: String): Self = this.set("boxStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxStroke: Self = this.set("boxStroke", js.undefined)
+    @scala.inline
+    def setBoxStrokeWidth(value: String): Self = this.set("boxStrokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxStrokeWidth: Self = this.set("boxStrokeWidth", js.undefined)
+    @scala.inline
+    def setBoxZIndex(value: Double): Self = this.set("boxZIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoxZIndex: Self = this.set("boxZIndex", js.undefined)
+    @scala.inline
+    def setIsVertical(value: Boolean): Self = this.set("isVertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsVertical: Self = this.set("isVertical", js.undefined)
+    @scala.inline
+    def setItemSpacing(value: Double): Self = this.set("itemSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemSpacing: Self = this.set("itemSpacing", js.undefined)
+    @scala.inline
+    def setLabelColor(value: String): Self = this.set("labelColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelColor: Self = this.set("labelColor", js.undefined)
+    @scala.inline
+    def setLabelFont(value: String): Self = this.set("labelFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFont: Self = this.set("labelFont", js.undefined)
+    @scala.inline
+    def setPadding(value: Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setToggle(value: /* show */ js.UndefOr[Boolean] => Unit): Self = this.set("toggle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteToggle: Self = this.set("toggle", js.undefined)
+    @scala.inline
+    def setUpdate(value: Boolean): Self = this.set("update", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

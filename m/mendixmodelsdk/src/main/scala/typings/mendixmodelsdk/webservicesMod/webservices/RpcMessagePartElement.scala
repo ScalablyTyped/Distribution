@@ -25,11 +25,11 @@ class RpcMessagePartElement protected () extends Element {
   var model_FRpcMessagePartElement: IModel = js.native
   def containerAsRpcOperationElement: RpcOperationElement = js.native
   def elementName: String = js.native
-  def elementName(newValue: String): js.Any = js.native
+  def elementName_=(newValue: String): Unit = js.native
   def partName: String = js.native
-  def partName(newValue: String): js.Any = js.native
+  def partName_=(newValue: String): Unit = js.native
   def typeName: String = js.native
-  def typeName(newValue: String): js.Any = js.native
+  def typeName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

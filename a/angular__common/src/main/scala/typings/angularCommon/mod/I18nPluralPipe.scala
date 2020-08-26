@@ -11,8 +11,6 @@ import scala.scalajs.js.annotation._
 class I18nPluralPipe protected () extends PipeTransform {
   def this(_localization: NgLocalization) = this()
   var _localization: js.Any = js.native
-  /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
   /**
     * @param value the number to be formatted
     * @param pluralMap an object that mimics the ICU format, see

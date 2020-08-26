@@ -103,48 +103,107 @@ object ElasticsearchDomainStatus {
     ARN: ARN,
     DomainId: DomainId,
     DomainName: DomainName,
-    ElasticsearchClusterConfig: ElasticsearchClusterConfig,
-    AccessPolicies: PolicyDocument = null,
-    AdvancedOptions: AdvancedOptions = null,
-    AdvancedSecurityOptions: AdvancedSecurityOptions = null,
-    CognitoOptions: CognitoOptions = null,
-    Created: js.UndefOr[Boolean] = js.undefined,
-    Deleted: js.UndefOr[Boolean] = js.undefined,
-    DomainEndpointOptions: DomainEndpointOptions = null,
-    EBSOptions: EBSOptions = null,
-    ElasticsearchVersion: ElasticsearchVersionString = null,
-    EncryptionAtRestOptions: EncryptionAtRestOptions = null,
-    Endpoint: ServiceUrl = null,
-    Endpoints: EndpointsMap = null,
-    LogPublishingOptions: LogPublishingOptions = null,
-    NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptions = null,
-    Processing: js.UndefOr[Boolean] = js.undefined,
-    ServiceSoftwareOptions: ServiceSoftwareOptions = null,
-    SnapshotOptions: SnapshotOptions = null,
-    UpgradeProcessing: js.UndefOr[Boolean] = js.undefined,
-    VPCOptions: VPCDerivedInfo = null
+    ElasticsearchClusterConfig: ElasticsearchClusterConfig
   ): ElasticsearchDomainStatus = {
     val __obj = js.Dynamic.literal(ARN = ARN.asInstanceOf[js.Any], DomainId = DomainId.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], ElasticsearchClusterConfig = ElasticsearchClusterConfig.asInstanceOf[js.Any])
-    if (AccessPolicies != null) __obj.updateDynamic("AccessPolicies")(AccessPolicies.asInstanceOf[js.Any])
-    if (AdvancedOptions != null) __obj.updateDynamic("AdvancedOptions")(AdvancedOptions.asInstanceOf[js.Any])
-    if (AdvancedSecurityOptions != null) __obj.updateDynamic("AdvancedSecurityOptions")(AdvancedSecurityOptions.asInstanceOf[js.Any])
-    if (CognitoOptions != null) __obj.updateDynamic("CognitoOptions")(CognitoOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Created)) __obj.updateDynamic("Created")(Created.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Deleted)) __obj.updateDynamic("Deleted")(Deleted.get.asInstanceOf[js.Any])
-    if (DomainEndpointOptions != null) __obj.updateDynamic("DomainEndpointOptions")(DomainEndpointOptions.asInstanceOf[js.Any])
-    if (EBSOptions != null) __obj.updateDynamic("EBSOptions")(EBSOptions.asInstanceOf[js.Any])
-    if (ElasticsearchVersion != null) __obj.updateDynamic("ElasticsearchVersion")(ElasticsearchVersion.asInstanceOf[js.Any])
-    if (EncryptionAtRestOptions != null) __obj.updateDynamic("EncryptionAtRestOptions")(EncryptionAtRestOptions.asInstanceOf[js.Any])
-    if (Endpoint != null) __obj.updateDynamic("Endpoint")(Endpoint.asInstanceOf[js.Any])
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
-    if (LogPublishingOptions != null) __obj.updateDynamic("LogPublishingOptions")(LogPublishingOptions.asInstanceOf[js.Any])
-    if (NodeToNodeEncryptionOptions != null) __obj.updateDynamic("NodeToNodeEncryptionOptions")(NodeToNodeEncryptionOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(Processing)) __obj.updateDynamic("Processing")(Processing.get.asInstanceOf[js.Any])
-    if (ServiceSoftwareOptions != null) __obj.updateDynamic("ServiceSoftwareOptions")(ServiceSoftwareOptions.asInstanceOf[js.Any])
-    if (SnapshotOptions != null) __obj.updateDynamic("SnapshotOptions")(SnapshotOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpgradeProcessing)) __obj.updateDynamic("UpgradeProcessing")(UpgradeProcessing.get.asInstanceOf[js.Any])
-    if (VPCOptions != null) __obj.updateDynamic("VPCOptions")(VPCOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchDomainStatus]
   }
+  @scala.inline
+  implicit class ElasticsearchDomainStatusOps[Self <: ElasticsearchDomainStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setARN(value: ARN): Self = this.set("ARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainId(value: DomainId): Self = this.set("DomainId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setElasticsearchClusterConfig(value: ElasticsearchClusterConfig): Self = this.set("ElasticsearchClusterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessPolicies(value: PolicyDocument): Self = this.set("AccessPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessPolicies: Self = this.set("AccessPolicies", js.undefined)
+    @scala.inline
+    def setAdvancedOptions(value: AdvancedOptions): Self = this.set("AdvancedOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedOptions: Self = this.set("AdvancedOptions", js.undefined)
+    @scala.inline
+    def setAdvancedSecurityOptions(value: AdvancedSecurityOptions): Self = this.set("AdvancedSecurityOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvancedSecurityOptions: Self = this.set("AdvancedSecurityOptions", js.undefined)
+    @scala.inline
+    def setCognitoOptions(value: CognitoOptions): Self = this.set("CognitoOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCognitoOptions: Self = this.set("CognitoOptions", js.undefined)
+    @scala.inline
+    def setCreated(value: Boolean): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("Created", js.undefined)
+    @scala.inline
+    def setDeleted(value: Boolean): Self = this.set("Deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("Deleted", js.undefined)
+    @scala.inline
+    def setDomainEndpointOptions(value: DomainEndpointOptions): Self = this.set("DomainEndpointOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainEndpointOptions: Self = this.set("DomainEndpointOptions", js.undefined)
+    @scala.inline
+    def setEBSOptions(value: EBSOptions): Self = this.set("EBSOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEBSOptions: Self = this.set("EBSOptions", js.undefined)
+    @scala.inline
+    def setElasticsearchVersion(value: ElasticsearchVersionString): Self = this.set("ElasticsearchVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticsearchVersion: Self = this.set("ElasticsearchVersion", js.undefined)
+    @scala.inline
+    def setEncryptionAtRestOptions(value: EncryptionAtRestOptions): Self = this.set("EncryptionAtRestOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAtRestOptions: Self = this.set("EncryptionAtRestOptions", js.undefined)
+    @scala.inline
+    def setEndpoint(value: ServiceUrl): Self = this.set("Endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("Endpoint", js.undefined)
+    @scala.inline
+    def setEndpoints(value: EndpointsMap): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    @scala.inline
+    def setLogPublishingOptions(value: LogPublishingOptions): Self = this.set("LogPublishingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogPublishingOptions: Self = this.set("LogPublishingOptions", js.undefined)
+    @scala.inline
+    def setNodeToNodeEncryptionOptions(value: NodeToNodeEncryptionOptions): Self = this.set("NodeToNodeEncryptionOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeToNodeEncryptionOptions: Self = this.set("NodeToNodeEncryptionOptions", js.undefined)
+    @scala.inline
+    def setProcessing(value: Boolean): Self = this.set("Processing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessing: Self = this.set("Processing", js.undefined)
+    @scala.inline
+    def setServiceSoftwareOptions(value: ServiceSoftwareOptions): Self = this.set("ServiceSoftwareOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceSoftwareOptions: Self = this.set("ServiceSoftwareOptions", js.undefined)
+    @scala.inline
+    def setSnapshotOptions(value: SnapshotOptions): Self = this.set("SnapshotOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotOptions: Self = this.set("SnapshotOptions", js.undefined)
+    @scala.inline
+    def setUpgradeProcessing(value: Boolean): Self = this.set("UpgradeProcessing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgradeProcessing: Self = this.set("UpgradeProcessing", js.undefined)
+    @scala.inline
+    def setVPCOptions(value: VPCDerivedInfo): Self = this.set("VPCOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVPCOptions: Self = this.set("VPCOptions", js.undefined)
+  }
+  
 }
 

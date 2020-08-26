@@ -38,24 +38,50 @@ trait GetExportResponse extends js.Object {
 
 object GetExportResponse {
   @scala.inline
-  def apply(
-    exportStatus: ExportStatus = null,
-    exportType: ExportType = null,
-    failureReason: String = null,
-    name: Name = null,
-    resourceType: ResourceType = null,
-    url: String = null,
-    version: NumericalVersion = null
-  ): GetExportResponse = {
+  def apply(): GetExportResponse = {
     val __obj = js.Dynamic.literal()
-    if (exportStatus != null) __obj.updateDynamic("exportStatus")(exportStatus.asInstanceOf[js.Any])
-    if (exportType != null) __obj.updateDynamic("exportType")(exportType.asInstanceOf[js.Any])
-    if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetExportResponse]
   }
+  @scala.inline
+  implicit class GetExportResponseOps[Self <: GetExportResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExportStatus(value: ExportStatus): Self = this.set("exportStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportStatus: Self = this.set("exportStatus", js.undefined)
+    @scala.inline
+    def setExportType(value: ExportType): Self = this.set("exportType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportType: Self = this.set("exportType", js.undefined)
+    @scala.inline
+    def setFailureReason(value: String): Self = this.set("failureReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReason: Self = this.set("failureReason", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setVersion(value: NumericalVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

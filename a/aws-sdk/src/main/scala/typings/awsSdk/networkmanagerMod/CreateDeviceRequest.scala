@@ -46,27 +46,58 @@ trait CreateDeviceRequest extends js.Object {
 
 object CreateDeviceRequest {
   @scala.inline
-  def apply(
-    GlobalNetworkId: String,
-    Description: String = null,
-    Location: Location = null,
-    Model: String = null,
-    SerialNumber: String = null,
-    SiteId: String = null,
-    Tags: TagList = null,
-    Type: String = null,
-    Vendor: String = null
-  ): CreateDeviceRequest = {
+  def apply(GlobalNetworkId: String): CreateDeviceRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Location != null) __obj.updateDynamic("Location")(Location.asInstanceOf[js.Any])
-    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
-    if (SerialNumber != null) __obj.updateDynamic("SerialNumber")(SerialNumber.asInstanceOf[js.Any])
-    if (SiteId != null) __obj.updateDynamic("SiteId")(SiteId.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (Vendor != null) __obj.updateDynamic("Vendor")(Vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeviceRequest]
   }
+  @scala.inline
+  implicit class CreateDeviceRequestOps[Self <: CreateDeviceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGlobalNetworkId(value: String): Self = this.set("GlobalNetworkId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("Location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("Location", js.undefined)
+    @scala.inline
+    def setModel(value: String): Self = this.set("Model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("Model", js.undefined)
+    @scala.inline
+    def setSerialNumber(value: String): Self = this.set("SerialNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSerialNumber: Self = this.set("SerialNumber", js.undefined)
+    @scala.inline
+    def setSiteId(value: String): Self = this.set("SiteId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteId: Self = this.set("SiteId", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setVendor(value: String): Self = this.set("Vendor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVendor: Self = this.set("Vendor", js.undefined)
+  }
+  
 }
 

@@ -29,8 +29,66 @@ object utils extends js.Object {
       * @returns Image
       */
     def makeImage(url: String): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: js.UndefOr[scala.Nothing],
+      heightPixels: js.UndefOr[scala.Nothing],
+      size: js.UndefOr[scala.Nothing],
+      description: String
+    ): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: js.UndefOr[scala.Nothing],
+      heightPixels: js.UndefOr[scala.Nothing],
+      size: ImageSourceSize
+    ): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: js.UndefOr[scala.Nothing],
+      heightPixels: js.UndefOr[scala.Nothing],
+      size: ImageSourceSize,
+      description: String
+    ): Image = js.native
+    def makeImage(url: String, widthPixels: js.UndefOr[scala.Nothing], heightPixels: Double): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: js.UndefOr[scala.Nothing],
+      heightPixels: Double,
+      size: js.UndefOr[scala.Nothing],
+      description: String
+    ): Image = js.native
+    def makeImage(url: String, widthPixels: js.UndefOr[scala.Nothing], heightPixels: Double, size: ImageSourceSize): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: js.UndefOr[scala.Nothing],
+      heightPixels: Double,
+      size: ImageSourceSize,
+      description: String
+    ): Image = js.native
     def makeImage(url: String, widthPixels: Double): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: Double,
+      heightPixels: js.UndefOr[scala.Nothing],
+      size: js.UndefOr[scala.Nothing],
+      description: String
+    ): Image = js.native
+    def makeImage(url: String, widthPixels: Double, heightPixels: js.UndefOr[scala.Nothing], size: ImageSourceSize): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: Double,
+      heightPixels: js.UndefOr[scala.Nothing],
+      size: ImageSourceSize,
+      description: String
+    ): Image = js.native
     def makeImage(url: String, widthPixels: Double, heightPixels: Double): Image = js.native
+    def makeImage(
+      url: String,
+      widthPixels: Double,
+      heightPixels: Double,
+      size: js.UndefOr[scala.Nothing],
+      description: String
+    ): Image = js.native
     def makeImage(url: String, widthPixels: Double, heightPixels: Double, size: ImageSourceSize): Image = js.native
     def makeImage(url: String, widthPixels: Double, heightPixels: Double, size: ImageSourceSize, description: String): Image = js.native
     /**

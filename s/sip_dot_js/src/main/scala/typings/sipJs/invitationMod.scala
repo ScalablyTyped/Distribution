@@ -1,6 +1,7 @@
 package typings.sipJs
 
 import typings.sipJs.coreMod.IncomingRequestMessage
+import typings.sipJs.coreMod.NameAddrHeader
 import typings.sipJs.invitationAcceptOptionsMod.InvitationAcceptOptions
 import typings.sipJs.invitationProgressOptionsMod.InvitationProgressOptions
 import typings.sipJs.invitationRejectOptionsMod.InvitationRejectOptions
@@ -18,35 +19,6 @@ object invitationMod extends js.Object {
   class Invitation protected () extends Session {
     /** @internal */
     def this(userAgent: UserAgent, incomingInviteRequest: IncomingInviteRequest) = this()
-    /**
-      * If true, a first provisional response after the 100 Trying
-      * will be sent automatically. This is false it the UAC required
-      * reliable provisional responses (100rel in Require header),
-      * otherwise it is true. The provisional is sent by calling
-      * `progress()` without any options.
-      *
-      * FIXME: TODO: It seems reasonable that the ISC user should
-      * be able to optionally disable this behavior. As the provisional
-      * is sent prior to the "invite" event being emitted, it's a known
-      * issue that the ISC user cannot register listeners or do any other
-      * setup prior to the call to `progress()`. As an example why this is
-      * an issue, setting `ua.configuration.rel100` to REQUIRED will result
-      * in an attempt by `progress()` to send a 183 with SDP produced by
-      * calling `getDescription()` on a session description handler, but
-      * the ISC user cannot perform any potentially required session description
-      * handler initialization (thus preventing the utilization of setting
-      * `ua.configuration.rel100` to REQUIRED). That begs the question of
-      * why this behavior is disabled when the UAC requires 100rel but not
-      * when the UAS requires 100rel? But ignoring that, it's just one example
-      * of a class of cases where the ISC user needs to do something prior
-      * to the first call to `progress()` and is unable to do so.
-      * @internal
-      */
-    val autoSendAnInitialProvisionalResponse: Boolean = js.native
-    /**
-      * Initial incoming INVITE request message body.
-      */
-    val body: js.UndefOr[String] = js.native
     /** True if dispose() has been called. */
     var disposed: js.Any = js.native
     /** INVITE will be rejected if not accepted within a certain period time. */
@@ -83,10 +55,6 @@ object invitationMod extends js.Object {
     var prackNeverArrived: js.Any = js.native
     /** Are reliable provisional responses required or supported. */
     var rel100: js.Any = js.native
-    /**
-      * Initial incoming INVITE request message.
-      */
-    val request: IncomingRequestMessage = js.native
     /** The current RSeq header value. */
     var rseq: js.Any = js.native
     /**
@@ -158,6 +126,40 @@ object invitationMod extends js.Object {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: InvitationAcceptOptions): js.Promise[Unit] = js.native
     /**
+      * If true, a first provisional response after the 100 Trying
+      * will be sent automatically. This is false it the UAC required
+      * reliable provisional responses (100rel in Require header),
+      * otherwise it is true. The provisional is sent by calling
+      * `progress()` without any options.
+      *
+      * FIXME: TODO: It seems reasonable that the ISC user should
+      * be able to optionally disable this behavior. As the provisional
+      * is sent prior to the "invite" event being emitted, it's a known
+      * issue that the ISC user cannot register listeners or do any other
+      * setup prior to the call to `progress()`. As an example why this is
+      * an issue, setting `ua.configuration.rel100` to REQUIRED will result
+      * in an attempt by `progress()` to send a 183 with SDP produced by
+      * calling `getDescription()` on a session description handler, but
+      * the ISC user cannot perform any potentially required session description
+      * handler initialization (thus preventing the utilization of setting
+      * `ua.configuration.rel100` to REQUIRED). That begs the question of
+      * why this behavior is disabled when the UAC requires 100rel but not
+      * when the UAS requires 100rel? But ignoring that, it's just one example
+      * of a class of cases where the ISC user needs to do something prior
+      * to the first call to `progress()` and is unable to do so.
+      * @internal
+      */
+    def autoSendAnInitialProvisionalResponse: Boolean = js.native
+    /**
+      * Initial incoming INVITE request message body.
+      */
+    def body: js.UndefOr[String] = js.native
+    /**
+      * The identity of the local user.
+      */
+    @JSName("localIdentity")
+    def localIdentity_MInvitation: NameAddrHeader = js.native
+    /**
       * Indicate progress processing the invitation.
       *
       * @remarks
@@ -184,6 +186,15 @@ object invitationMod extends js.Object {
       */
     def reject(): js.Promise[Unit] = js.native
     def reject(options: InvitationRejectOptions): js.Promise[Unit] = js.native
+    /**
+      * The identity of the remote user.
+      */
+    @JSName("remoteIdentity")
+    def remoteIdentity_MInvitation: NameAddrHeader = js.native
+    /**
+      * Initial incoming INVITE request message.
+      */
+    def request: IncomingRequestMessage = js.native
   }
   
 }

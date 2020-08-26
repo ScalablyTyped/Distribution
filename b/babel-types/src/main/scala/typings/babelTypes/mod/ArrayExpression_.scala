@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArrayExpression_
   extends Node
      with Expression {
-  var elements: js.Array[Null | Expression | SpreadElement_]
+  var elements: js.Array[Null | Expression | SpreadElement_] = js.native
   @JSName("type")
-  var type_ArrayExpression_ : ArrayExpression
+  var type_ArrayExpression_ : ArrayExpression = js.native
 }
 
 object ArrayExpression_ {
@@ -20,17 +21,30 @@ object ArrayExpression_ {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    `type`: ArrayExpression,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
+    `type`: ArrayExpression
   ): ArrayExpression_ = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayExpression_]
   }
+  @scala.inline
+  implicit class ArrayExpression_Ops[Self <: ArrayExpression_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElementsVarargs(value: (Null | Expression | SpreadElement_)*): Self = this.set("elements", js.Array(value :_*))
+    @scala.inline
+    def setElements(value: js.Array[Null | Expression | SpreadElement_]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ArrayExpression): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

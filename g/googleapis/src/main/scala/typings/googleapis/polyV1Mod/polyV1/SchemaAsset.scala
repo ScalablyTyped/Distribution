@@ -84,38 +84,80 @@ trait SchemaAsset extends js.Object {
 
 object SchemaAsset {
   @scala.inline
-  def apply(
-    authorName: String = null,
-    createTime: String = null,
-    description: String = null,
-    displayName: String = null,
-    formats: js.Array[SchemaFormat] = null,
-    isCurated: js.UndefOr[Boolean] = js.undefined,
-    license: String = null,
-    metadata: String = null,
-    name: String = null,
-    presentationParams: SchemaPresentationParams = null,
-    remixInfo: SchemaRemixInfo = null,
-    thumbnail: SchemaFile = null,
-    updateTime: String = null,
-    visibility: String = null
-  ): SchemaAsset = {
+  def apply(): SchemaAsset = {
     val __obj = js.Dynamic.literal()
-    if (authorName != null) __obj.updateDynamic("authorName")(authorName.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCurated)) __obj.updateDynamic("isCurated")(isCurated.get.asInstanceOf[js.Any])
-    if (license != null) __obj.updateDynamic("license")(license.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (presentationParams != null) __obj.updateDynamic("presentationParams")(presentationParams.asInstanceOf[js.Any])
-    if (remixInfo != null) __obj.updateDynamic("remixInfo")(remixInfo.asInstanceOf[js.Any])
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAsset]
   }
+  @scala.inline
+  implicit class SchemaAssetOps[Self <: SchemaAsset] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthorName(value: String): Self = this.set("authorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthorName: Self = this.set("authorName", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setFormatsVarargs(value: SchemaFormat*): Self = this.set("formats", js.Array(value :_*))
+    @scala.inline
+    def setFormats(value: js.Array[SchemaFormat]): Self = this.set("formats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormats: Self = this.set("formats", js.undefined)
+    @scala.inline
+    def setIsCurated(value: Boolean): Self = this.set("isCurated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCurated: Self = this.set("isCurated", js.undefined)
+    @scala.inline
+    def setLicense(value: String): Self = this.set("license", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicense: Self = this.set("license", js.undefined)
+    @scala.inline
+    def setMetadata(value: String): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPresentationParams(value: SchemaPresentationParams): Self = this.set("presentationParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresentationParams: Self = this.set("presentationParams", js.undefined)
+    @scala.inline
+    def setRemixInfo(value: SchemaRemixInfo): Self = this.set("remixInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemixInfo: Self = this.set("remixInfo", js.undefined)
+    @scala.inline
+    def setThumbnail(value: SchemaFile): Self = this.set("thumbnail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnail: Self = this.set("thumbnail", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setVisibility(value: String): Self = this.set("visibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisibility: Self = this.set("visibility", js.undefined)
+  }
+  
 }
 

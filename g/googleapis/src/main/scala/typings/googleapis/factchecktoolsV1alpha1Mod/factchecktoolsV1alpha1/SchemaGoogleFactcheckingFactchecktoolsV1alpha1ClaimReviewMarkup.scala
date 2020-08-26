@@ -56,26 +56,56 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup extends js
 
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup {
   @scala.inline
-  def apply(
-    claimAppearances: js.Array[String] = null,
-    claimAuthor: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor = null,
-    claimDate: String = null,
-    claimFirstAppearance: String = null,
-    claimLocation: String = null,
-    claimReviewed: String = null,
-    rating: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating = null,
-    url: String = null
-  ): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup = {
+  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup = {
     val __obj = js.Dynamic.literal()
-    if (claimAppearances != null) __obj.updateDynamic("claimAppearances")(claimAppearances.asInstanceOf[js.Any])
-    if (claimAuthor != null) __obj.updateDynamic("claimAuthor")(claimAuthor.asInstanceOf[js.Any])
-    if (claimDate != null) __obj.updateDynamic("claimDate")(claimDate.asInstanceOf[js.Any])
-    if (claimFirstAppearance != null) __obj.updateDynamic("claimFirstAppearance")(claimFirstAppearance.asInstanceOf[js.Any])
-    if (claimLocation != null) __obj.updateDynamic("claimLocation")(claimLocation.asInstanceOf[js.Any])
-    if (claimReviewed != null) __obj.updateDynamic("claimReviewed")(claimReviewed.asInstanceOf[js.Any])
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup]
   }
+  @scala.inline
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkupOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewMarkup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClaimAppearancesVarargs(value: String*): Self = this.set("claimAppearances", js.Array(value :_*))
+    @scala.inline
+    def setClaimAppearances(value: js.Array[String]): Self = this.set("claimAppearances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimAppearances: Self = this.set("claimAppearances", js.undefined)
+    @scala.inline
+    def setClaimAuthor(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimAuthor): Self = this.set("claimAuthor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimAuthor: Self = this.set("claimAuthor", js.undefined)
+    @scala.inline
+    def setClaimDate(value: String): Self = this.set("claimDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimDate: Self = this.set("claimDate", js.undefined)
+    @scala.inline
+    def setClaimFirstAppearance(value: String): Self = this.set("claimFirstAppearance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimFirstAppearance: Self = this.set("claimFirstAppearance", js.undefined)
+    @scala.inline
+    def setClaimLocation(value: String): Self = this.set("claimLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimLocation: Self = this.set("claimLocation", js.undefined)
+    @scala.inline
+    def setClaimReviewed(value: String): Self = this.set("claimReviewed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClaimReviewed: Self = this.set("claimReviewed", js.undefined)
+    @scala.inline
+    def setRating(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating): Self = this.set("rating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRating: Self = this.set("rating", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

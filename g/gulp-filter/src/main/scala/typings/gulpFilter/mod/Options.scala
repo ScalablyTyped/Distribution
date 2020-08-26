@@ -5,43 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends IOptions {
-  var passthrough: js.UndefOr[Boolean] = js.undefined
-  var restore: js.UndefOr[Boolean] = js.undefined
+  var passthrough: js.UndefOr[Boolean] = js.native
+  var restore: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    debug: js.UndefOr[Boolean] = js.undefined,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    flipNegate: js.UndefOr[Boolean] = js.undefined,
-    matchBase: js.UndefOr[Boolean] = js.undefined,
-    nobrace: js.UndefOr[Boolean] = js.undefined,
-    nocase: js.UndefOr[Boolean] = js.undefined,
-    nocomment: js.UndefOr[Boolean] = js.undefined,
-    noext: js.UndefOr[Boolean] = js.undefined,
-    noglobstar: js.UndefOr[Boolean] = js.undefined,
-    nonegate: js.UndefOr[Boolean] = js.undefined,
-    nonull: js.UndefOr[Boolean] = js.undefined,
-    passthrough: js.UndefOr[Boolean] = js.undefined,
-    restore: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flipNegate)) __obj.updateDynamic("flipNegate")(flipNegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBase)) __obj.updateDynamic("matchBase")(matchBase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nobrace)) __obj.updateDynamic("nobrace")(nobrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocase)) __obj.updateDynamic("nocase")(nocase.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nocomment)) __obj.updateDynamic("nocomment")(nocomment.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noext)) __obj.updateDynamic("noext")(noext.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noglobstar)) __obj.updateDynamic("noglobstar")(noglobstar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonegate)) __obj.updateDynamic("nonegate")(nonegate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonull)) __obj.updateDynamic("nonull")(nonull.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(restore)) __obj.updateDynamic("restore")(restore.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassthrough(value: Boolean): Self = this.set("passthrough", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePassthrough: Self = this.set("passthrough", js.undefined)
+    @scala.inline
+    def setRestore(value: Boolean): Self = this.set("restore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestore: Self = this.set("restore", js.undefined)
+  }
+  
 }
 

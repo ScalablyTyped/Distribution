@@ -6,24 +6,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Files extends js.Object {
   /**
     * Information on files choden in the picker.
     */
-  var files: js.UndefOr[js.Array[IFile]] = js.undefined
+  var files: js.UndefOr[js.Array[IFile]] = js.native
   /**
     * Information on folders chosen in the picker.
     */
-  var folders: js.UndefOr[js.Array[IFolder]] = js.undefined
+  var folders: js.UndefOr[js.Array[IFolder]] = js.native
 }
 
 object Files {
   @scala.inline
-  def apply(files: js.Array[IFile] = null, folders: js.Array[IFolder] = null): Files = {
+  def apply(): Files = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (folders != null) __obj.updateDynamic("folders")(folders.asInstanceOf[js.Any])
     __obj.asInstanceOf[Files]
   }
+  @scala.inline
+  implicit class FilesOps[Self <: Files] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilesVarargs(value: IFile*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: js.Array[IFile]): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiles: Self = this.set("files", js.undefined)
+    @scala.inline
+    def setFoldersVarargs(value: IFolder*): Self = this.set("folders", js.Array(value :_*))
+    @scala.inline
+    def setFolders(value: js.Array[IFolder]): Self = this.set("folders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolders: Self = this.set("folders", js.undefined)
+  }
+  
 }
 

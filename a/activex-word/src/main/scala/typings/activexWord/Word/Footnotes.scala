@@ -20,6 +20,7 @@ trait Footnotes extends js.Object {
   @JSName("Word.Footnotes_typekey")
   var WordDotFootnotes_typekey: Footnotes = js.native
   def Add(Range: Range): Footnote = js.native
+  def Add(Range: Range, Reference: js.UndefOr[scala.Nothing], Text: js.Any): Footnote = js.native
   def Add(Range: Range, Reference: js.Any): Footnote = js.native
   def Add(Range: Range, Reference: js.Any, Text: js.Any): Footnote = js.native
   def Convert(): Unit = js.native

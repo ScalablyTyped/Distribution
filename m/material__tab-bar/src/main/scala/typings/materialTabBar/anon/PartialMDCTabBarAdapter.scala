@@ -1,76 +1,119 @@
 package typings.materialTabBar.anon
 
+import typings.materialTab.typesMod.MDCTabDimensions
 import typings.std.ClientRect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material/tab-bar.@material/tab-bar/adapter.MDCTabBarAdapter> */
+@js.native
 trait PartialMDCTabBarAdapter extends js.Object {
-  var activateTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* clientRect */ js.UndefOr[ClientRect], Unit]] = js.undefined
-  var deactivateTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
-  var focusTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
-  var getFocusedTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
-  var getIndexOfTabById: js.UndefOr[js.Function1[/* id */ String, Double]] = js.undefined
-  var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
-  var getPreviousActiveTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
-  var getScrollContentWidth: js.UndefOr[js.Function0[Double]] = js.undefined
-  var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.undefined
-  var getTabDimensionsAtIndex: js.UndefOr[
-    js.Function1[
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCTabDimensions */ _
-    ]
-  ] = js.undefined
-  var getTabIndicatorClientRectAtIndex: js.UndefOr[js.Function1[/* index */ Double, ClientRect]] = js.undefined
-  var getTabListLength: js.UndefOr[js.Function0[Double]] = js.undefined
-  var incrementScroll: js.UndefOr[js.Function1[/* scrollXIncrement */ Double, Unit]] = js.undefined
-  var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
-  var notifyTabActivated: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
-  var scrollTo: js.UndefOr[js.Function1[/* scrollX */ Double, Unit]] = js.undefined
-  var setActiveTab: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
+  var activateTabAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* clientRect */ js.UndefOr[ClientRect], Unit]] = js.native
+  var deactivateTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+  var focusTabAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+  var getFocusedTabIndex: js.UndefOr[js.Function0[Double]] = js.native
+  var getIndexOfTabById: js.UndefOr[js.Function1[/* id */ String, Double]] = js.native
+  var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getPreviousActiveTabIndex: js.UndefOr[js.Function0[Double]] = js.native
+  var getScrollContentWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getScrollPosition: js.UndefOr[js.Function0[Double]] = js.native
+  var getTabDimensionsAtIndex: js.UndefOr[js.Function1[/* index */ Double, MDCTabDimensions]] = js.native
+  var getTabIndicatorClientRectAtIndex: js.UndefOr[js.Function1[/* index */ Double, ClientRect]] = js.native
+  var getTabListLength: js.UndefOr[js.Function0[Double]] = js.native
+  var incrementScroll: js.UndefOr[js.Function1[/* scrollXIncrement */ Double, Unit]] = js.native
+  var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+  var notifyTabActivated: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+  var scrollTo: js.UndefOr[js.Function1[/* scrollX */ Double, Unit]] = js.native
+  var setActiveTab: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
 }
 
 object PartialMDCTabBarAdapter {
   @scala.inline
-  def apply(
-    activateTabAtIndex: (/* index */ Double, /* clientRect */ js.UndefOr[ClientRect]) => Unit = null,
-    deactivateTabAtIndex: /* index */ Double => Unit = null,
-    focusTabAtIndex: /* index */ Double => Unit = null,
-    getFocusedTabIndex: () => Double = null,
-    getIndexOfTabById: /* id */ String => Double = null,
-    getOffsetWidth: () => Double = null,
-    getPreviousActiveTabIndex: () => Double = null,
-    getScrollContentWidth: () => Double = null,
-    getScrollPosition: () => Double = null,
-    getTabDimensionsAtIndex: /* index */ Double => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCTabDimensions */ _ = null,
-    getTabIndicatorClientRectAtIndex: /* index */ Double => ClientRect = null,
-    getTabListLength: () => Double = null,
-    incrementScroll: /* scrollXIncrement */ Double => Unit = null,
-    isRTL: () => Boolean = null,
-    notifyTabActivated: /* index */ Double => Unit = null,
-    scrollTo: /* scrollX */ Double => Unit = null,
-    setActiveTab: /* index */ Double => Unit = null
-  ): PartialMDCTabBarAdapter = {
+  def apply(): PartialMDCTabBarAdapter = {
     val __obj = js.Dynamic.literal()
-    if (activateTabAtIndex != null) __obj.updateDynamic("activateTabAtIndex")(js.Any.fromFunction2(activateTabAtIndex))
-    if (deactivateTabAtIndex != null) __obj.updateDynamic("deactivateTabAtIndex")(js.Any.fromFunction1(deactivateTabAtIndex))
-    if (focusTabAtIndex != null) __obj.updateDynamic("focusTabAtIndex")(js.Any.fromFunction1(focusTabAtIndex))
-    if (getFocusedTabIndex != null) __obj.updateDynamic("getFocusedTabIndex")(js.Any.fromFunction0(getFocusedTabIndex))
-    if (getIndexOfTabById != null) __obj.updateDynamic("getIndexOfTabById")(js.Any.fromFunction1(getIndexOfTabById))
-    if (getOffsetWidth != null) __obj.updateDynamic("getOffsetWidth")(js.Any.fromFunction0(getOffsetWidth))
-    if (getPreviousActiveTabIndex != null) __obj.updateDynamic("getPreviousActiveTabIndex")(js.Any.fromFunction0(getPreviousActiveTabIndex))
-    if (getScrollContentWidth != null) __obj.updateDynamic("getScrollContentWidth")(js.Any.fromFunction0(getScrollContentWidth))
-    if (getScrollPosition != null) __obj.updateDynamic("getScrollPosition")(js.Any.fromFunction0(getScrollPosition))
-    if (getTabDimensionsAtIndex != null) __obj.updateDynamic("getTabDimensionsAtIndex")(js.Any.fromFunction1(getTabDimensionsAtIndex))
-    if (getTabIndicatorClientRectAtIndex != null) __obj.updateDynamic("getTabIndicatorClientRectAtIndex")(js.Any.fromFunction1(getTabIndicatorClientRectAtIndex))
-    if (getTabListLength != null) __obj.updateDynamic("getTabListLength")(js.Any.fromFunction0(getTabListLength))
-    if (incrementScroll != null) __obj.updateDynamic("incrementScroll")(js.Any.fromFunction1(incrementScroll))
-    if (isRTL != null) __obj.updateDynamic("isRTL")(js.Any.fromFunction0(isRTL))
-    if (notifyTabActivated != null) __obj.updateDynamic("notifyTabActivated")(js.Any.fromFunction1(notifyTabActivated))
-    if (scrollTo != null) __obj.updateDynamic("scrollTo")(js.Any.fromFunction1(scrollTo))
-    if (setActiveTab != null) __obj.updateDynamic("setActiveTab")(js.Any.fromFunction1(setActiveTab))
     __obj.asInstanceOf[PartialMDCTabBarAdapter]
   }
+  @scala.inline
+  implicit class PartialMDCTabBarAdapterOps[Self <: PartialMDCTabBarAdapter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivateTabAtIndex(value: (/* index */ Double, /* clientRect */ js.UndefOr[ClientRect]) => Unit): Self = this.set("activateTabAtIndex", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteActivateTabAtIndex: Self = this.set("activateTabAtIndex", js.undefined)
+    @scala.inline
+    def setDeactivateTabAtIndex(value: /* index */ Double => Unit): Self = this.set("deactivateTabAtIndex", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDeactivateTabAtIndex: Self = this.set("deactivateTabAtIndex", js.undefined)
+    @scala.inline
+    def setFocusTabAtIndex(value: /* index */ Double => Unit): Self = this.set("focusTabAtIndex", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFocusTabAtIndex: Self = this.set("focusTabAtIndex", js.undefined)
+    @scala.inline
+    def setGetFocusedTabIndex(value: () => Double): Self = this.set("getFocusedTabIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetFocusedTabIndex: Self = this.set("getFocusedTabIndex", js.undefined)
+    @scala.inline
+    def setGetIndexOfTabById(value: /* id */ String => Double): Self = this.set("getIndexOfTabById", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetIndexOfTabById: Self = this.set("getIndexOfTabById", js.undefined)
+    @scala.inline
+    def setGetOffsetWidth(value: () => Double): Self = this.set("getOffsetWidth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetOffsetWidth: Self = this.set("getOffsetWidth", js.undefined)
+    @scala.inline
+    def setGetPreviousActiveTabIndex(value: () => Double): Self = this.set("getPreviousActiveTabIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetPreviousActiveTabIndex: Self = this.set("getPreviousActiveTabIndex", js.undefined)
+    @scala.inline
+    def setGetScrollContentWidth(value: () => Double): Self = this.set("getScrollContentWidth", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetScrollContentWidth: Self = this.set("getScrollContentWidth", js.undefined)
+    @scala.inline
+    def setGetScrollPosition(value: () => Double): Self = this.set("getScrollPosition", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetScrollPosition: Self = this.set("getScrollPosition", js.undefined)
+    @scala.inline
+    def setGetTabDimensionsAtIndex(value: /* index */ Double => MDCTabDimensions): Self = this.set("getTabDimensionsAtIndex", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetTabDimensionsAtIndex: Self = this.set("getTabDimensionsAtIndex", js.undefined)
+    @scala.inline
+    def setGetTabIndicatorClientRectAtIndex(value: /* index */ Double => ClientRect): Self = this.set("getTabIndicatorClientRectAtIndex", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetTabIndicatorClientRectAtIndex: Self = this.set("getTabIndicatorClientRectAtIndex", js.undefined)
+    @scala.inline
+    def setGetTabListLength(value: () => Double): Self = this.set("getTabListLength", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTabListLength: Self = this.set("getTabListLength", js.undefined)
+    @scala.inline
+    def setIncrementScroll(value: /* scrollXIncrement */ Double => Unit): Self = this.set("incrementScroll", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIncrementScroll: Self = this.set("incrementScroll", js.undefined)
+    @scala.inline
+    def setIsRTL(value: () => Boolean): Self = this.set("isRTL", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsRTL: Self = this.set("isRTL", js.undefined)
+    @scala.inline
+    def setNotifyTabActivated(value: /* index */ Double => Unit): Self = this.set("notifyTabActivated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNotifyTabActivated: Self = this.set("notifyTabActivated", js.undefined)
+    @scala.inline
+    def setScrollTo(value: /* scrollX */ Double => Unit): Self = this.set("scrollTo", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteScrollTo: Self = this.set("scrollTo", js.undefined)
+    @scala.inline
+    def setSetActiveTab(value: /* index */ Double => Unit): Self = this.set("setActiveTab", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetActiveTab: Self = this.set("setActiveTab", js.undefined)
+  }
+  
 }
 

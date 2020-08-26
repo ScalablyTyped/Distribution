@@ -15,6 +15,7 @@ object random extends js.Object {
     * @return {Number} Returns the random number.
     */
   def apply(): Double = js.native
+  def apply(lower: js.UndefOr[scala.Nothing], upper: Double): Double = js.native
   def apply(lower: Double): Double = js.native
   def apply(lower: Double, upper: Double): Double = js.native
 }

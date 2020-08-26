@@ -16,6 +16,7 @@ class Query[R /* <: QueryResultRow */, I /* <: js.Array[_] */] ()
      with Submittable {
   def this(queryTextOrConfig: String) = this()
   def this(queryTextOrConfig: QueryConfig[I]) = this()
+  def this(queryTextOrConfig: js.UndefOr[scala.Nothing], values: I) = this()
   def this(queryTextOrConfig: String, values: I) = this()
   def this(queryTextOrConfig: QueryConfig[I], values: I) = this()
   @JSName("on")
@@ -24,7 +25,5 @@ class Query[R /* <: QueryResultRow */, I /* <: js.Array[_] */] ()
   def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
   @JSName("on")
   def on_row(event: row, listener: js.Function2[/* row */ R, /* result */ js.UndefOr[ResultBuilder[R]], Unit]): this.type = js.native
-  /* CompleteClass */
-  override def submit(connection: Connection): Unit = js.native
 }
 

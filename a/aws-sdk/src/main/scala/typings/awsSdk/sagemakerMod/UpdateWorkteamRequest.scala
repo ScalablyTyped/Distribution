@@ -26,17 +26,38 @@ trait UpdateWorkteamRequest extends js.Object {
 
 object UpdateWorkteamRequest {
   @scala.inline
-  def apply(
-    WorkteamName: WorkteamName,
-    Description: String200 = null,
-    MemberDefinitions: MemberDefinitions = null,
-    NotificationConfiguration: NotificationConfiguration = null
-  ): UpdateWorkteamRequest = {
+  def apply(WorkteamName: WorkteamName): UpdateWorkteamRequest = {
     val __obj = js.Dynamic.literal(WorkteamName = WorkteamName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (MemberDefinitions != null) __obj.updateDynamic("MemberDefinitions")(MemberDefinitions.asInstanceOf[js.Any])
-    if (NotificationConfiguration != null) __obj.updateDynamic("NotificationConfiguration")(NotificationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkteamRequest]
   }
+  @scala.inline
+  implicit class UpdateWorkteamRequestOps[Self <: UpdateWorkteamRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWorkteamName(value: WorkteamName): Self = this.set("WorkteamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String200): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = this.set("MemberDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setMemberDefinitions(value: MemberDefinitions): Self = this.set("MemberDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberDefinitions: Self = this.set("MemberDefinitions", js.undefined)
+    @scala.inline
+    def setNotificationConfiguration(value: NotificationConfiguration): Self = this.set("NotificationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationConfiguration: Self = this.set("NotificationConfiguration", js.undefined)
+  }
+  
 }
 

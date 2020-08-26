@@ -14,6 +14,7 @@ object ^ extends js.Object {
     * locale determined using the `best` method described below.
     */
   def apply(): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native
+  def apply(supported: js.UndefOr[scala.Nothing], `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native
   def apply(supported: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native
   def apply(supported: String, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native
   def apply(supported: js.Array[String | Locale]): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = js.native

@@ -38,18 +38,38 @@ trait SchemaGooglePrivacyDlpV2DateShiftConfig extends js.Object {
 
 object SchemaGooglePrivacyDlpV2DateShiftConfig {
   @scala.inline
-  def apply(
-    context: SchemaGooglePrivacyDlpV2FieldId = null,
-    cryptoKey: SchemaGooglePrivacyDlpV2CryptoKey = null,
-    lowerBoundDays: js.UndefOr[Double] = js.undefined,
-    upperBoundDays: js.UndefOr[Double] = js.undefined
-  ): SchemaGooglePrivacyDlpV2DateShiftConfig = {
+  def apply(): SchemaGooglePrivacyDlpV2DateShiftConfig = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (cryptoKey != null) __obj.updateDynamic("cryptoKey")(cryptoKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerBoundDays)) __obj.updateDynamic("lowerBoundDays")(lowerBoundDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(upperBoundDays)) __obj.updateDynamic("upperBoundDays")(upperBoundDays.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DateShiftConfig]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2DateShiftConfigOps[Self <: SchemaGooglePrivacyDlpV2DateShiftConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: SchemaGooglePrivacyDlpV2FieldId): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setCryptoKey(value: SchemaGooglePrivacyDlpV2CryptoKey): Self = this.set("cryptoKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCryptoKey: Self = this.set("cryptoKey", js.undefined)
+    @scala.inline
+    def setLowerBoundDays(value: Double): Self = this.set("lowerBoundDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLowerBoundDays: Self = this.set("lowerBoundDays", js.undefined)
+    @scala.inline
+    def setUpperBoundDays(value: Double): Self = this.set("upperBoundDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpperBoundDays: Self = this.set("upperBoundDays", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,38 @@ trait ConfigStreamDeliveryInfo extends js.Object {
 
 object ConfigStreamDeliveryInfo {
   @scala.inline
-  def apply(
-    lastErrorCode: String = null,
-    lastErrorMessage: String = null,
-    lastStatus: DeliveryStatus = null,
-    lastStatusChangeTime: Date = null
-  ): ConfigStreamDeliveryInfo = {
+  def apply(): ConfigStreamDeliveryInfo = {
     val __obj = js.Dynamic.literal()
-    if (lastErrorCode != null) __obj.updateDynamic("lastErrorCode")(lastErrorCode.asInstanceOf[js.Any])
-    if (lastErrorMessage != null) __obj.updateDynamic("lastErrorMessage")(lastErrorMessage.asInstanceOf[js.Any])
-    if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus.asInstanceOf[js.Any])
-    if (lastStatusChangeTime != null) __obj.updateDynamic("lastStatusChangeTime")(lastStatusChangeTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigStreamDeliveryInfo]
   }
+  @scala.inline
+  implicit class ConfigStreamDeliveryInfoOps[Self <: ConfigStreamDeliveryInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastErrorCode(value: String): Self = this.set("lastErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorCode: Self = this.set("lastErrorCode", js.undefined)
+    @scala.inline
+    def setLastErrorMessage(value: String): Self = this.set("lastErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorMessage: Self = this.set("lastErrorMessage", js.undefined)
+    @scala.inline
+    def setLastStatus(value: DeliveryStatus): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    @scala.inline
+    def setLastStatusChangeTime(value: Date): Self = this.set("lastStatusChangeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatusChangeTime: Self = this.set("lastStatusChangeTime", js.undefined)
+  }
+  
 }
 

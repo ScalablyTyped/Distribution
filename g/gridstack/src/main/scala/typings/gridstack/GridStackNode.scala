@@ -8,47 +8,34 @@ import scala.scalajs.js.annotation._
 /**
   * internal descriptions describing the items in the grid
   */
+@js.native
 trait GridStackNode extends GridstackWidget {
-  var _grid: GridStack
-  var el: HTMLElement
+  var _grid: GridStack = js.native
+  var el: HTMLElement = js.native
 }
 
 object GridStackNode {
   @scala.inline
-  def apply(
-    _grid: GridStack,
-    el: HTMLElement,
-    autoPosition: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    id: Double | String = null,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: js.UndefOr[Double] = js.undefined,
-    maxWidth: js.UndefOr[Double] = js.undefined,
-    minHeight: js.UndefOr[Double] = js.undefined,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    noMove: js.UndefOr[Boolean] = js.undefined,
-    noResize: js.UndefOr[Boolean] = js.undefined,
-    resizeHandles: String = null,
-    width: js.UndefOr[Double] = js.undefined,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): GridStackNode = {
+  def apply(_grid: GridStack, el: HTMLElement): GridStackNode = {
     val __obj = js.Dynamic.literal(_grid = _grid.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPosition)) __obj.updateDynamic("autoPosition")(autoPosition.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noMove)) __obj.updateDynamic("noMove")(noMove.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noResize)) __obj.updateDynamic("noResize")(noResize.get.asInstanceOf[js.Any])
-    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridStackNode]
   }
+  @scala.inline
+  implicit class GridStackNodeOps[Self <: GridStackNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_grid(value: GridStack): Self = this.set("_grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEl(value: HTMLElement): Self = this.set("el", value.asInstanceOf[js.Any])
+  }
+  
 }
 

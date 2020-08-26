@@ -30,20 +30,44 @@ trait DescribeJobDefinitionsRequest extends js.Object {
 
 object DescribeJobDefinitionsRequest {
   @scala.inline
-  def apply(
-    jobDefinitionName: String = null,
-    jobDefinitions: StringList = null,
-    maxResults: js.UndefOr[Integer] = js.undefined,
-    nextToken: String = null,
-    status: String = null
-  ): DescribeJobDefinitionsRequest = {
+  def apply(): DescribeJobDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (jobDefinitionName != null) __obj.updateDynamic("jobDefinitionName")(jobDefinitionName.asInstanceOf[js.Any])
-    if (jobDefinitions != null) __obj.updateDynamic("jobDefinitions")(jobDefinitions.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJobDefinitionsRequest]
   }
+  @scala.inline
+  implicit class DescribeJobDefinitionsRequestOps[Self <: DescribeJobDefinitionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobDefinitionName(value: String): Self = this.set("jobDefinitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDefinitionName: Self = this.set("jobDefinitionName", js.undefined)
+    @scala.inline
+    def setJobDefinitionsVarargs(value: String*): Self = this.set("jobDefinitions", js.Array(value :_*))
+    @scala.inline
+    def setJobDefinitions(value: StringList): Self = this.set("jobDefinitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDefinitions: Self = this.set("jobDefinitions", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Integer): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

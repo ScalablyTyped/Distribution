@@ -32,6 +32,7 @@ trait ODataTreeBinding extends TreeBinding {
     * than requested                                  if the backend does not have enough data.
     */
   def getRootContexts(iStartIndex: Double): js.Array[Context] = js.native
+  def getRootContexts(iStartIndex: Double, iLength: js.UndefOr[scala.Nothing], iThreshold: Double): js.Array[Context] = js.native
   def getRootContexts(iStartIndex: Double, iLength: Double, iThreshold: Double): js.Array[Context] = js.native
   /**
     * Returns the rootLevel

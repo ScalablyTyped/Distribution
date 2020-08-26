@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("class-validator/validation/ValidatorConstraintInterface", JSImport.Namespace)
+@JSImport("class-validator/types/validation/ValidatorConstraintInterface", JSImport.Namespace)
 @js.native
 object validatorConstraintInterfaceMod extends js.Object {
   @js.native

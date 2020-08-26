@@ -30,17 +30,36 @@ trait ImportTerminologyRequest extends js.Object {
 
 object ImportTerminologyRequest {
   @scala.inline
-  def apply(
-    MergeStrategy: MergeStrategy,
-    Name: ResourceName,
-    TerminologyData: TerminologyData,
-    Description: Description = null,
-    EncryptionKey: EncryptionKey = null
-  ): ImportTerminologyRequest = {
+  def apply(MergeStrategy: MergeStrategy, Name: ResourceName, TerminologyData: TerminologyData): ImportTerminologyRequest = {
     val __obj = js.Dynamic.literal(MergeStrategy = MergeStrategy.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TerminologyData = TerminologyData.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (EncryptionKey != null) __obj.updateDynamic("EncryptionKey")(EncryptionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportTerminologyRequest]
   }
+  @scala.inline
+  implicit class ImportTerminologyRequestOps[Self <: ImportTerminologyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMergeStrategy(value: MergeStrategy): Self = this.set("MergeStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ResourceName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTerminologyData(value: TerminologyData): Self = this.set("TerminologyData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: EncryptionKey): Self = this.set("EncryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("EncryptionKey", js.undefined)
+  }
+  
 }
 

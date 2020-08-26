@@ -176,72 +176,154 @@ trait SchemaInstance extends js.Object {
 
 object SchemaInstance {
   @scala.inline
-  def apply(
-    canIpForward: js.UndefOr[Boolean] = js.undefined,
-    cpuPlatform: String = null,
-    creationTimestamp: String = null,
-    deletionProtection: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    disks: js.Array[SchemaAttachedDisk] = null,
-    displayDevice: SchemaDisplayDevice = null,
-    guestAccelerators: js.Array[SchemaAcceleratorConfig] = null,
-    hostname: String = null,
-    id: String = null,
-    kind: String = null,
-    labelFingerprint: String = null,
-    labels: StringDictionary[String] = null,
-    machineType: String = null,
-    metadata: SchemaMetadata = null,
-    minCpuPlatform: String = null,
-    name: String = null,
-    networkInterfaces: js.Array[SchemaNetworkInterface] = null,
-    reservationAffinity: SchemaReservationAffinity = null,
-    scheduling: SchemaScheduling = null,
-    selfLink: String = null,
-    serviceAccounts: js.Array[SchemaServiceAccount] = null,
-    shieldedInstanceConfig: SchemaShieldedInstanceConfig = null,
-    shieldedInstanceIntegrityPolicy: SchemaShieldedInstanceIntegrityPolicy = null,
-    shieldedVmConfig: SchemaShieldedVmConfig = null,
-    shieldedVmIntegrityPolicy: SchemaShieldedVmIntegrityPolicy = null,
-    startRestricted: js.UndefOr[Boolean] = js.undefined,
-    status: String = null,
-    statusMessage: String = null,
-    tags: SchemaTags = null,
-    zone: String = null
-  ): SchemaInstance = {
+  def apply(): SchemaInstance = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward.get.asInstanceOf[js.Any])
-    if (cpuPlatform != null) __obj.updateDynamic("cpuPlatform")(cpuPlatform.asInstanceOf[js.Any])
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(deletionProtection)) __obj.updateDynamic("deletionProtection")(deletionProtection.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (displayDevice != null) __obj.updateDynamic("displayDevice")(displayDevice.asInstanceOf[js.Any])
-    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators.asInstanceOf[js.Any])
-    if (hostname != null) __obj.updateDynamic("hostname")(hostname.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (machineType != null) __obj.updateDynamic("machineType")(machineType.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
-    if (reservationAffinity != null) __obj.updateDynamic("reservationAffinity")(reservationAffinity.asInstanceOf[js.Any])
-    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (serviceAccounts != null) __obj.updateDynamic("serviceAccounts")(serviceAccounts.asInstanceOf[js.Any])
-    if (shieldedInstanceConfig != null) __obj.updateDynamic("shieldedInstanceConfig")(shieldedInstanceConfig.asInstanceOf[js.Any])
-    if (shieldedInstanceIntegrityPolicy != null) __obj.updateDynamic("shieldedInstanceIntegrityPolicy")(shieldedInstanceIntegrityPolicy.asInstanceOf[js.Any])
-    if (shieldedVmConfig != null) __obj.updateDynamic("shieldedVmConfig")(shieldedVmConfig.asInstanceOf[js.Any])
-    if (shieldedVmIntegrityPolicy != null) __obj.updateDynamic("shieldedVmIntegrityPolicy")(shieldedVmIntegrityPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(startRestricted)) __obj.updateDynamic("startRestricted")(startRestricted.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (zone != null) __obj.updateDynamic("zone")(zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaInstance]
   }
+  @scala.inline
+  implicit class SchemaInstanceOps[Self <: SchemaInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCanIpForward(value: Boolean): Self = this.set("canIpForward", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanIpForward: Self = this.set("canIpForward", js.undefined)
+    @scala.inline
+    def setCpuPlatform(value: String): Self = this.set("cpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuPlatform: Self = this.set("cpuPlatform", js.undefined)
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDeletionProtection(value: Boolean): Self = this.set("deletionProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeletionProtection: Self = this.set("deletionProtection", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDisksVarargs(value: SchemaAttachedDisk*): Self = this.set("disks", js.Array(value :_*))
+    @scala.inline
+    def setDisks(value: js.Array[SchemaAttachedDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("disks", js.undefined)
+    @scala.inline
+    def setDisplayDevice(value: SchemaDisplayDevice): Self = this.set("displayDevice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayDevice: Self = this.set("displayDevice", js.undefined)
+    @scala.inline
+    def setGuestAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = this.set("guestAccelerators", js.Array(value :_*))
+    @scala.inline
+    def setGuestAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = this.set("guestAccelerators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGuestAccelerators: Self = this.set("guestAccelerators", js.undefined)
+    @scala.inline
+    def setHostname(value: String): Self = this.set("hostname", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostname: Self = this.set("hostname", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setMachineType(value: String): Self = this.set("machineType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMachineType: Self = this.set("machineType", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setMinCpuPlatform(value: String): Self = this.set("minCpuPlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinCpuPlatform: Self = this.set("minCpuPlatform", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: SchemaNetworkInterface*): Self = this.set("networkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: js.Array[SchemaNetworkInterface]): Self = this.set("networkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("networkInterfaces", js.undefined)
+    @scala.inline
+    def setReservationAffinity(value: SchemaReservationAffinity): Self = this.set("reservationAffinity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationAffinity: Self = this.set("reservationAffinity", js.undefined)
+    @scala.inline
+    def setScheduling(value: SchemaScheduling): Self = this.set("scheduling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheduling: Self = this.set("scheduling", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setServiceAccountsVarargs(value: SchemaServiceAccount*): Self = this.set("serviceAccounts", js.Array(value :_*))
+    @scala.inline
+    def setServiceAccounts(value: js.Array[SchemaServiceAccount]): Self = this.set("serviceAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAccounts: Self = this.set("serviceAccounts", js.undefined)
+    @scala.inline
+    def setShieldedInstanceConfig(value: SchemaShieldedInstanceConfig): Self = this.set("shieldedInstanceConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShieldedInstanceConfig: Self = this.set("shieldedInstanceConfig", js.undefined)
+    @scala.inline
+    def setShieldedInstanceIntegrityPolicy(value: SchemaShieldedInstanceIntegrityPolicy): Self = this.set("shieldedInstanceIntegrityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShieldedInstanceIntegrityPolicy: Self = this.set("shieldedInstanceIntegrityPolicy", js.undefined)
+    @scala.inline
+    def setShieldedVmConfig(value: SchemaShieldedVmConfig): Self = this.set("shieldedVmConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShieldedVmConfig: Self = this.set("shieldedVmConfig", js.undefined)
+    @scala.inline
+    def setShieldedVmIntegrityPolicy(value: SchemaShieldedVmIntegrityPolicy): Self = this.set("shieldedVmIntegrityPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShieldedVmIntegrityPolicy: Self = this.set("shieldedVmIntegrityPolicy", js.undefined)
+    @scala.inline
+    def setStartRestricted(value: Boolean): Self = this.set("startRestricted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartRestricted: Self = this.set("startRestricted", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setTags(value: SchemaTags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setZone(value: String): Self = this.set("zone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZone: Self = this.set("zone", js.undefined)
+  }
+  
 }
 

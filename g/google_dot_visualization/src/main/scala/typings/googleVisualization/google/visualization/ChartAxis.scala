@@ -5,88 +5,153 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartAxis extends js.Object {
-  var allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined
-  var baseline: js.UndefOr[Double] = js.undefined
+  var allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.native
+  var baseline: js.UndefOr[Double] = js.native
    // This option is only supported for a continuous axis. https://developers.google.com/chart/interactive/docs/customizing_axes#Terminology
-  var baselineColor: js.UndefOr[String] = js.undefined
+  var baselineColor: js.UndefOr[String] = js.native
    // google's documentation on this is wrong, specifies it as a number. The color of the baseline for the horizontal axis. Can be any HTML color string, for example: 'red' or '#00cc00'
-  var direction: js.UndefOr[Double] = js.undefined
+  var direction: js.UndefOr[Double] = js.native
    // The direction in which the values along the horizontal axis grow. Specify -1 to reverse the order of the values.
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
    // icu pattern set http://icu-project.org/apiref/icu4c/classDecimalFormat.html#_details
-  var gridlines: js.UndefOr[ChartGridlines] = js.undefined
-  var logScale: js.UndefOr[Boolean] = js.undefined
-  var maxAlternation: js.UndefOr[Double] = js.undefined
-  var maxTextLines: js.UndefOr[Double] = js.undefined
-  var maxValue: js.UndefOr[Double | Date | js.Array[Double]] = js.undefined
-  var minTextSpacing: js.UndefOr[Double] = js.undefined
-  var minValue: js.UndefOr[Double | Date | js.Array[Double]] = js.undefined
-  var minorGridlines: js.UndefOr[ChartGridlines] = js.undefined
-  var showTextEvery: js.UndefOr[Double] = js.undefined
-  var slantedText: js.UndefOr[Boolean] = js.undefined
-  var slantedTextAngle: js.UndefOr[Double] = js.undefined
-  var textPosition: js.UndefOr[String] = js.undefined
-  var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
-  var ticks: js.UndefOr[js.Array[_]] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
-  var viewWindow: js.UndefOr[ChartViewWindow] = js.undefined
-  var viewWindowMode: js.UndefOr[String] = js.undefined
+  var gridlines: js.UndefOr[ChartGridlines] = js.native
+  var logScale: js.UndefOr[Boolean] = js.native
+  var maxAlternation: js.UndefOr[Double] = js.native
+  var maxTextLines: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double | Date | js.Array[Double]] = js.native
+  var minTextSpacing: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double | Date | js.Array[Double]] = js.native
+  var minorGridlines: js.UndefOr[ChartGridlines] = js.native
+  var showTextEvery: js.UndefOr[Double] = js.native
+  var slantedText: js.UndefOr[Boolean] = js.native
+  var slantedTextAngle: js.UndefOr[Double] = js.native
+  var textPosition: js.UndefOr[String] = js.native
+  var textStyle: js.UndefOr[ChartTextStyle] = js.native
+  var ticks: js.UndefOr[js.Array[_]] = js.native
+  var title: js.UndefOr[String] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var viewWindow: js.UndefOr[ChartViewWindow] = js.native
+  var viewWindowMode: js.UndefOr[String] = js.native
 }
 
 object ChartAxis {
   @scala.inline
-  def apply(
-    allowContainerBoundaryTextCufoff: js.UndefOr[Boolean] = js.undefined,
-    baseline: js.UndefOr[Double] = js.undefined,
-    baselineColor: String = null,
-    direction: js.UndefOr[Double] = js.undefined,
-    format: String = null,
-    gridlines: ChartGridlines = null,
-    logScale: js.UndefOr[Boolean] = js.undefined,
-    maxAlternation: js.UndefOr[Double] = js.undefined,
-    maxTextLines: js.UndefOr[Double] = js.undefined,
-    maxValue: Double | Date | js.Array[Double] = null,
-    minTextSpacing: js.UndefOr[Double] = js.undefined,
-    minValue: Double | Date | js.Array[Double] = null,
-    minorGridlines: ChartGridlines = null,
-    showTextEvery: js.UndefOr[Double] = js.undefined,
-    slantedText: js.UndefOr[Boolean] = js.undefined,
-    slantedTextAngle: js.UndefOr[Double] = js.undefined,
-    textPosition: String = null,
-    textStyle: ChartTextStyle = null,
-    ticks: js.Array[_] = null,
-    title: String = null,
-    titleTextStyle: ChartTextStyle = null,
-    viewWindow: ChartViewWindow = null,
-    viewWindowMode: String = null
-  ): ChartAxis = {
+  def apply(): ChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowContainerBoundaryTextCufoff)) __obj.updateDynamic("allowContainerBoundaryTextCufoff")(allowContainerBoundaryTextCufoff.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(baseline)) __obj.updateDynamic("baseline")(baseline.get.asInstanceOf[js.Any])
-    if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(direction)) __obj.updateDynamic("direction")(direction.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (gridlines != null) __obj.updateDynamic("gridlines")(gridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(logScale)) __obj.updateDynamic("logScale")(logScale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxAlternation)) __obj.updateDynamic("maxAlternation")(maxAlternation.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxTextLines)) __obj.updateDynamic("maxTextLines")(maxTextLines.get.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(minTextSpacing)) __obj.updateDynamic("minTextSpacing")(minTextSpacing.get.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTextEvery)) __obj.updateDynamic("showTextEvery")(showTextEvery.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slantedText)) __obj.updateDynamic("slantedText")(slantedText.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(slantedTextAngle)) __obj.updateDynamic("slantedTextAngle")(slantedTextAngle.get.asInstanceOf[js.Any])
-    if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (viewWindow != null) __obj.updateDynamic("viewWindow")(viewWindow.asInstanceOf[js.Any])
-    if (viewWindowMode != null) __obj.updateDynamic("viewWindowMode")(viewWindowMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxis]
   }
+  @scala.inline
+  implicit class ChartAxisOps[Self <: ChartAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowContainerBoundaryTextCufoff(value: Boolean): Self = this.set("allowContainerBoundaryTextCufoff", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowContainerBoundaryTextCufoff: Self = this.set("allowContainerBoundaryTextCufoff", js.undefined)
+    @scala.inline
+    def setBaseline(value: Double): Self = this.set("baseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseline: Self = this.set("baseline", js.undefined)
+    @scala.inline
+    def setBaselineColor(value: String): Self = this.set("baselineColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaselineColor: Self = this.set("baselineColor", js.undefined)
+    @scala.inline
+    def setDirection(value: Double): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGridlines(value: ChartGridlines): Self = this.set("gridlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridlines: Self = this.set("gridlines", js.undefined)
+    @scala.inline
+    def setLogScale(value: Boolean): Self = this.set("logScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogScale: Self = this.set("logScale", js.undefined)
+    @scala.inline
+    def setMaxAlternation(value: Double): Self = this.set("maxAlternation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAlternation: Self = this.set("maxAlternation", js.undefined)
+    @scala.inline
+    def setMaxTextLines(value: Double): Self = this.set("maxTextLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxTextLines: Self = this.set("maxTextLines", js.undefined)
+    @scala.inline
+    def setMaxValueVarargs(value: Double*): Self = this.set("maxValue", js.Array(value :_*))
+    @scala.inline
+    def setMaxValue(value: Double | Date | js.Array[Double]): Self = this.set("maxValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxValue: Self = this.set("maxValue", js.undefined)
+    @scala.inline
+    def setMinTextSpacing(value: Double): Self = this.set("minTextSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinTextSpacing: Self = this.set("minTextSpacing", js.undefined)
+    @scala.inline
+    def setMinValueVarargs(value: Double*): Self = this.set("minValue", js.Array(value :_*))
+    @scala.inline
+    def setMinValue(value: Double | Date | js.Array[Double]): Self = this.set("minValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinValue: Self = this.set("minValue", js.undefined)
+    @scala.inline
+    def setMinorGridlines(value: ChartGridlines): Self = this.set("minorGridlines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinorGridlines: Self = this.set("minorGridlines", js.undefined)
+    @scala.inline
+    def setShowTextEvery(value: Double): Self = this.set("showTextEvery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTextEvery: Self = this.set("showTextEvery", js.undefined)
+    @scala.inline
+    def setSlantedText(value: Boolean): Self = this.set("slantedText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlantedText: Self = this.set("slantedText", js.undefined)
+    @scala.inline
+    def setSlantedTextAngle(value: Double): Self = this.set("slantedTextAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlantedTextAngle: Self = this.set("slantedTextAngle", js.undefined)
+    @scala.inline
+    def setTextPosition(value: String): Self = this.set("textPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextPosition: Self = this.set("textPosition", js.undefined)
+    @scala.inline
+    def setTextStyle(value: ChartTextStyle): Self = this.set("textStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextStyle: Self = this.set("textStyle", js.undefined)
+    @scala.inline
+    def setTicksVarargs(value: js.Any*): Self = this.set("ticks", js.Array(value :_*))
+    @scala.inline
+    def setTicks(value: js.Array[_]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleTextStyle(value: ChartTextStyle): Self = this.set("titleTextStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleTextStyle: Self = this.set("titleTextStyle", js.undefined)
+    @scala.inline
+    def setViewWindow(value: ChartViewWindow): Self = this.set("viewWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewWindow: Self = this.set("viewWindow", js.undefined)
+    @scala.inline
+    def setViewWindowMode(value: String): Self = this.set("viewWindowMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViewWindowMode: Self = this.set("viewWindowMode", js.undefined)
+  }
+  
 }
 

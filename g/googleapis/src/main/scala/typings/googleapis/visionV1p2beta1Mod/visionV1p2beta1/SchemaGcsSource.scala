@@ -18,10 +18,26 @@ trait SchemaGcsSource extends js.Object {
 
 object SchemaGcsSource {
   @scala.inline
-  def apply(uri: String = null): SchemaGcsSource = {
+  def apply(): SchemaGcsSource = {
     val __obj = js.Dynamic.literal()
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGcsSource]
   }
+  @scala.inline
+  implicit class SchemaGcsSourceOps[Self <: SchemaGcsSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUri(value: String): Self = this.set("uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUri: Self = this.set("uri", js.undefined)
+  }
+  
 }
 

@@ -138,6 +138,9 @@ object cordovaPluginsDiagnosticStrings {
   sealed trait device_only extends js.Object
   
   @js.native
+  sealed trait full extends js.Object
+  
+  @js.native
   sealed trait high_accuracy extends js.Object
   
   @js.native
@@ -163,6 +166,9 @@ object cordovaPluginsDiagnosticStrings {
   
   @js.native
   sealed trait powering_on extends js.Object
+  
+  @js.native
+  sealed trait reduced extends js.Object
   
   @js.native
   sealed trait resetting extends js.Object
@@ -274,6 +280,8 @@ object cordovaPluginsDiagnosticStrings {
   @scala.inline
   def device_only: device_only = "device_only".asInstanceOf[device_only]
   @scala.inline
+  def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def high_accuracy: high_accuracy = "high_accuracy".asInstanceOf[high_accuracy]
   @scala.inline
   def location_off: location_off = "location_off".asInstanceOf[location_off]
@@ -291,6 +299,8 @@ object cordovaPluginsDiagnosticStrings {
   def powering_off: powering_off = "powering_off".asInstanceOf[powering_off]
   @scala.inline
   def powering_on: powering_on = "powering_on".asInstanceOf[powering_on]
+  @scala.inline
+  def reduced: reduced = "reduced".asInstanceOf[reduced]
   @scala.inline
   def resetting: resetting = "resetting".asInstanceOf[resetting]
   @scala.inline

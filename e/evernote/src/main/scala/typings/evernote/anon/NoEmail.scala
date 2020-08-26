@@ -4,30 +4,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NoEmail extends js.Object {
-  var noEmail: js.UndefOr[Boolean] = js.undefined
-  var noShare: js.UndefOr[Boolean] = js.undefined
-  var noSharePublicly: js.UndefOr[Boolean] = js.undefined
-  var noUpdateContent: js.UndefOr[Boolean] = js.undefined
-  var noUpdateTitle: js.UndefOr[Boolean] = js.undefined
+  var noEmail: js.UndefOr[Boolean] = js.native
+  var noShare: js.UndefOr[Boolean] = js.native
+  var noSharePublicly: js.UndefOr[Boolean] = js.native
+  var noUpdateContent: js.UndefOr[Boolean] = js.native
+  var noUpdateTitle: js.UndefOr[Boolean] = js.native
 }
 
 object NoEmail {
   @scala.inline
-  def apply(
-    noEmail: js.UndefOr[Boolean] = js.undefined,
-    noShare: js.UndefOr[Boolean] = js.undefined,
-    noSharePublicly: js.UndefOr[Boolean] = js.undefined,
-    noUpdateContent: js.UndefOr[Boolean] = js.undefined,
-    noUpdateTitle: js.UndefOr[Boolean] = js.undefined
-  ): NoEmail = {
+  def apply(): NoEmail = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noEmail)) __obj.updateDynamic("noEmail")(noEmail.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noShare)) __obj.updateDynamic("noShare")(noShare.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSharePublicly)) __obj.updateDynamic("noSharePublicly")(noSharePublicly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noUpdateContent)) __obj.updateDynamic("noUpdateContent")(noUpdateContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noUpdateTitle)) __obj.updateDynamic("noUpdateTitle")(noUpdateTitle.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoEmail]
   }
+  @scala.inline
+  implicit class NoEmailOps[Self <: NoEmail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNoEmail(value: Boolean): Self = this.set("noEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoEmail: Self = this.set("noEmail", js.undefined)
+    @scala.inline
+    def setNoShare(value: Boolean): Self = this.set("noShare", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoShare: Self = this.set("noShare", js.undefined)
+    @scala.inline
+    def setNoSharePublicly(value: Boolean): Self = this.set("noSharePublicly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoSharePublicly: Self = this.set("noSharePublicly", js.undefined)
+    @scala.inline
+    def setNoUpdateContent(value: Boolean): Self = this.set("noUpdateContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoUpdateContent: Self = this.set("noUpdateContent", js.undefined)
+    @scala.inline
+    def setNoUpdateTitle(value: Boolean): Self = this.set("noUpdateTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoUpdateTitle: Self = this.set("noUpdateTitle", js.undefined)
+  }
+  
 }
 

@@ -21,11 +21,30 @@ trait SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest extends js.Object 
 
 object SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest {
   @scala.inline
-  def apply(deidentifyTemplate: SchemaGooglePrivacyDlpV2DeidentifyTemplate = null, updateMask: String = null): SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest = {
+  def apply(): SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest = {
     val __obj = js.Dynamic.literal()
-    if (deidentifyTemplate != null) __obj.updateDynamic("deidentifyTemplate")(deidentifyTemplate.asInstanceOf[js.Any])
-    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequestOps[Self <: SchemaGooglePrivacyDlpV2UpdateDeidentifyTemplateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeidentifyTemplate(value: SchemaGooglePrivacyDlpV2DeidentifyTemplate): Self = this.set("deidentifyTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeidentifyTemplate: Self = this.set("deidentifyTemplate", js.undefined)
+    @scala.inline
+    def setUpdateMask(value: String): Self = this.set("updateMask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateMask: Self = this.set("updateMask", js.undefined)
+  }
+  
 }
 

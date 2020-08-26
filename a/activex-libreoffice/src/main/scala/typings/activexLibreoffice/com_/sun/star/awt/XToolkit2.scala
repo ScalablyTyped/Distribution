@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * Provides a unified interface for the new-style service {@link Toolkit} to implement.
   * @since LibreOffice 4.0
   */
+@js.native
 trait XToolkit2
   extends XToolkit
      with XDataTransferProviderAccess

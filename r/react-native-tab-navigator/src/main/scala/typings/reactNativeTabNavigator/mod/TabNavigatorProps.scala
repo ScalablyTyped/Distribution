@@ -5,41 +5,62 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabNavigatorProps extends js.Object {
   /**
     * Disable onPress opacity for Tab
     *
     * @default false
     */
-  var hidesTabTouch: js.UndefOr[Boolean] = js.undefined
+  var hidesTabTouch: js.UndefOr[Boolean] = js.native
   /**
     * Define for rendered scene
     */
-  var sceneStyle: js.UndefOr[ViewStyle] = js.undefined
+  var sceneStyle: js.UndefOr[ViewStyle] = js.native
   /**
     * Define shadow style for tabBar
     */
-  var tabBarShadowStyle: js.UndefOr[ViewStyle] = js.undefined
+  var tabBarShadowStyle: js.UndefOr[ViewStyle] = js.native
   /**
     * Define style for TabBar
     */
-  var tabBarStyle: js.UndefOr[ViewStyle] = js.undefined
+  var tabBarStyle: js.UndefOr[ViewStyle] = js.native
 }
 
 object TabNavigatorProps {
   @scala.inline
-  def apply(
-    hidesTabTouch: js.UndefOr[Boolean] = js.undefined,
-    sceneStyle: ViewStyle = null,
-    tabBarShadowStyle: ViewStyle = null,
-    tabBarStyle: ViewStyle = null
-  ): TabNavigatorProps = {
+  def apply(): TabNavigatorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hidesTabTouch)) __obj.updateDynamic("hidesTabTouch")(hidesTabTouch.get.asInstanceOf[js.Any])
-    if (sceneStyle != null) __obj.updateDynamic("sceneStyle")(sceneStyle.asInstanceOf[js.Any])
-    if (tabBarShadowStyle != null) __obj.updateDynamic("tabBarShadowStyle")(tabBarShadowStyle.asInstanceOf[js.Any])
-    if (tabBarStyle != null) __obj.updateDynamic("tabBarStyle")(tabBarStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabNavigatorProps]
   }
+  @scala.inline
+  implicit class TabNavigatorPropsOps[Self <: TabNavigatorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHidesTabTouch(value: Boolean): Self = this.set("hidesTabTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidesTabTouch: Self = this.set("hidesTabTouch", js.undefined)
+    @scala.inline
+    def setSceneStyle(value: ViewStyle): Self = this.set("sceneStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSceneStyle: Self = this.set("sceneStyle", js.undefined)
+    @scala.inline
+    def setTabBarShadowStyle(value: ViewStyle): Self = this.set("tabBarShadowStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarShadowStyle: Self = this.set("tabBarShadowStyle", js.undefined)
+    @scala.inline
+    def setTabBarStyle(value: ViewStyle): Self = this.set("tabBarStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabBarStyle: Self = this.set("tabBarStyle", js.undefined)
+  }
+  
 }
 

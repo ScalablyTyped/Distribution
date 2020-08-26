@@ -23,16 +23,34 @@ trait SchemaPackageIssue extends js.Object {
 
 object SchemaPackageIssue {
   @scala.inline
-  def apply(
-    affectedLocation: SchemaVulnerabilityLocation = null,
-    fixedLocation: SchemaVulnerabilityLocation = null,
-    severityName: String = null
-  ): SchemaPackageIssue = {
+  def apply(): SchemaPackageIssue = {
     val __obj = js.Dynamic.literal()
-    if (affectedLocation != null) __obj.updateDynamic("affectedLocation")(affectedLocation.asInstanceOf[js.Any])
-    if (fixedLocation != null) __obj.updateDynamic("fixedLocation")(fixedLocation.asInstanceOf[js.Any])
-    if (severityName != null) __obj.updateDynamic("severityName")(severityName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPackageIssue]
   }
+  @scala.inline
+  implicit class SchemaPackageIssueOps[Self <: SchemaPackageIssue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAffectedLocation(value: SchemaVulnerabilityLocation): Self = this.set("affectedLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAffectedLocation: Self = this.set("affectedLocation", js.undefined)
+    @scala.inline
+    def setFixedLocation(value: SchemaVulnerabilityLocation): Self = this.set("fixedLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedLocation: Self = this.set("fixedLocation", js.undefined)
+    @scala.inline
+    def setSeverityName(value: String): Self = this.set("severityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityName: Self = this.set("severityName", js.undefined)
+  }
+  
 }
 

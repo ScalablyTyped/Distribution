@@ -1,12 +1,13 @@
 package typings.rcCascader
 
+import typings.rcTrigger.interfaceMod.BuildInPlacements
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-cascader/lib/placements", JSImport.Namespace)
+@JSImport("rc-cascader/es/placements", JSImport.Namespace)
 @js.native
 object placementsMod extends js.Object {
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BuildInPlacements */ js.Any = js.native
+  val default: BuildInPlacements = js.native
 }
 

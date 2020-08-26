@@ -23,14 +23,30 @@ trait SchemaPreservedState extends js.Object {
 
 object SchemaPreservedState {
   @scala.inline
-  def apply(
-    disks: StringDictionary[SchemaPreservedStatePreservedDisk] = null,
-    metadata: StringDictionary[String] = null
-  ): SchemaPreservedState = {
+  def apply(): SchemaPreservedState = {
     val __obj = js.Dynamic.literal()
-    if (disks != null) __obj.updateDynamic("disks")(disks.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPreservedState]
   }
+  @scala.inline
+  implicit class SchemaPreservedStateOps[Self <: SchemaPreservedState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisks(value: StringDictionary[SchemaPreservedStatePreservedDisk]): Self = this.set("disks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisks: Self = this.set("disks", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+  }
+  
 }
 

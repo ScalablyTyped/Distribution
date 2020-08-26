@@ -11,8 +11,8 @@ Bitwise XOR between two Buffers or Strings, returns a Buffer
 | Full name          | bitwise-xor |
 | Keywords           | bitwise, xor, buffer, string |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 267876 |
+| # dependents       | 15 |
+| # downloads        | 283180 |
 | # stars            | 0 |
 
 ## Links

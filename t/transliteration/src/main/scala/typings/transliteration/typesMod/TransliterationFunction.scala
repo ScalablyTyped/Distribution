@@ -21,6 +21,7 @@ trait TransliterationFunction[T] extends js.Object {
   def config(): T = js.native
   def config(options: T): T = js.native
   def config(options: T, reset: Boolean): T = js.native
+  def config(options: js.UndefOr[scala.Nothing], reset: Boolean): T = js.native
   /**
     * Set charmap data
     * @param data
@@ -28,6 +29,7 @@ trait TransliterationFunction[T] extends js.Object {
     * @memberof Transliterate
     */
   def setData(): Charmap_ = js.native
+  def setData(data: js.UndefOr[scala.Nothing], reset: Boolean): Charmap_ = js.native
   def setData(data: Charmap_): Charmap_ = js.native
   def setData(data: Charmap_, reset: Boolean): Charmap_ = js.native
 }

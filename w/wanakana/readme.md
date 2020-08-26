@@ -10,9 +10,9 @@ Utility library for converting between Kanji, Hiragana, Katakana, and Romaji
 | ------------------ | :-------------: |
 | Full name          | wanakana |
 | Keywords           | english, japanese, hiragana, katakana, kana, romaji, conversion, transliteration, input, ime, wanikani |
-| # releases         | 17 |
+| # releases         | 15 |
 | # dependents       | 5 |
-| # downloads        | 59148 |
+| # downloads        | 52862 |
 | # stars            | 3 |
 
 ## Links

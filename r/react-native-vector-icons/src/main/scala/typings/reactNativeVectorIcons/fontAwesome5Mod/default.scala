@@ -22,7 +22,16 @@ object default extends js.Object {
   var TabBarItemIOS: Instantiable0[typings.reactNativeVectorIcons.iconMod.Icon.TabBarItemIOS] = js.native
   var ToolbarAndroid: Instantiable0[typings.reactNativeVectorIcons.iconMod.Icon.ToolbarAndroid] = js.native
   def getImageSource(name: String): js.Promise[ImageSource] = js.native
+  def getImageSource(
+    name: String,
+    size: js.UndefOr[scala.Nothing],
+    color: js.UndefOr[scala.Nothing],
+    fa5Style: ValueOf[Brand]
+  ): js.Promise[ImageSource] = js.native
+  def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String): js.Promise[ImageSource] = js.native
+  def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
+  def getImageSource(name: String, size: Double, color: js.UndefOr[scala.Nothing], fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
   def getImageSource(name: String, size: Double, color: String, fa5Style: ValueOf[Brand]): js.Promise[ImageSource] = js.native
   def hasIcon(name: String): Boolean = js.native

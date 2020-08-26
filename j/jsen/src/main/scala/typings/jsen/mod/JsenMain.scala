@@ -9,6 +9,7 @@ trait JsenMain extends js.Object {
   @JSName("unique")
   var unique_Original: JsenUnique = js.native
   def apply(): JsenValidator = js.native
+  def apply(schema: js.UndefOr[scala.Nothing], options: JsenSettings): JsenValidator = js.native
   def apply(schema: js.Any): JsenValidator = js.native
   def apply(schema: js.Any, options: JsenSettings): JsenValidator = js.native
   def clone(data: js.Any): js.Any = js.native

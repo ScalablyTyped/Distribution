@@ -1,7 +1,6 @@
 package typings.asar.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.asar.asarBooleans.`true`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,16 +19,8 @@ object Metadata {
     __obj.asInstanceOf[Metadata]
   }
   @scala.inline
-  def FileMetadata(
-    unpacked: Boolean,
-    executable: `true` = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined
-  ): Metadata = {
+  def FileMetadata(unpacked: Boolean): Metadata = {
     val __obj = js.Dynamic.literal(unpacked = unpacked.asInstanceOf[js.Any])
-    if (executable != null) __obj.updateDynamic("executable")(executable.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
   @scala.inline

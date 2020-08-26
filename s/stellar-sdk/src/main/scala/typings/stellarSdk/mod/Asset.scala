@@ -16,7 +16,7 @@ class Asset protected ()
 @JSImport("stellar-sdk", "Asset")
 @js.native
 object Asset extends js.Object {
-  def fromOperation(xdr: typings.stellarBase.mod.xdr.Asset): typings.stellarBase.mod.Asset = js.native
+  def fromOperation(xdr: typings.stellarBase.xdrMod.default.Asset): typings.stellarBase.mod.Asset = js.native
   def native(): typings.stellarBase.mod.Asset = js.native
 }
 

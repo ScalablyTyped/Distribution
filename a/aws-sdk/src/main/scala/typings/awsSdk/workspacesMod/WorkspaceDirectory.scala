@@ -74,42 +74,92 @@ trait WorkspaceDirectory extends js.Object {
 
 object WorkspaceDirectory {
   @scala.inline
-  def apply(
-    Alias: Alias = null,
-    CustomerUserName: UserName = null,
-    DirectoryId: DirectoryId = null,
-    DirectoryName: DirectoryName = null,
-    DirectoryType: WorkspaceDirectoryType = null,
-    DnsIpAddresses: DnsIpAddresses = null,
-    IamRoleId: ARN = null,
-    RegistrationCode: RegistrationCode = null,
-    SelfservicePermissions: SelfservicePermissions = null,
-    State: WorkspaceDirectoryState = null,
-    SubnetIds: SubnetIds = null,
-    Tenancy: Tenancy = null,
-    WorkspaceAccessProperties: WorkspaceAccessProperties = null,
-    WorkspaceCreationProperties: DefaultWorkspaceCreationProperties = null,
-    WorkspaceSecurityGroupId: SecurityGroupId = null,
-    ipGroupIds: IpGroupIdList = null
-  ): WorkspaceDirectory = {
+  def apply(): WorkspaceDirectory = {
     val __obj = js.Dynamic.literal()
-    if (Alias != null) __obj.updateDynamic("Alias")(Alias.asInstanceOf[js.Any])
-    if (CustomerUserName != null) __obj.updateDynamic("CustomerUserName")(CustomerUserName.asInstanceOf[js.Any])
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (DirectoryName != null) __obj.updateDynamic("DirectoryName")(DirectoryName.asInstanceOf[js.Any])
-    if (DirectoryType != null) __obj.updateDynamic("DirectoryType")(DirectoryType.asInstanceOf[js.Any])
-    if (DnsIpAddresses != null) __obj.updateDynamic("DnsIpAddresses")(DnsIpAddresses.asInstanceOf[js.Any])
-    if (IamRoleId != null) __obj.updateDynamic("IamRoleId")(IamRoleId.asInstanceOf[js.Any])
-    if (RegistrationCode != null) __obj.updateDynamic("RegistrationCode")(RegistrationCode.asInstanceOf[js.Any])
-    if (SelfservicePermissions != null) __obj.updateDynamic("SelfservicePermissions")(SelfservicePermissions.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (Tenancy != null) __obj.updateDynamic("Tenancy")(Tenancy.asInstanceOf[js.Any])
-    if (WorkspaceAccessProperties != null) __obj.updateDynamic("WorkspaceAccessProperties")(WorkspaceAccessProperties.asInstanceOf[js.Any])
-    if (WorkspaceCreationProperties != null) __obj.updateDynamic("WorkspaceCreationProperties")(WorkspaceCreationProperties.asInstanceOf[js.Any])
-    if (WorkspaceSecurityGroupId != null) __obj.updateDynamic("WorkspaceSecurityGroupId")(WorkspaceSecurityGroupId.asInstanceOf[js.Any])
-    if (ipGroupIds != null) __obj.updateDynamic("ipGroupIds")(ipGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceDirectory]
   }
+  @scala.inline
+  implicit class WorkspaceDirectoryOps[Self <: WorkspaceDirectory] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlias(value: Alias): Self = this.set("Alias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlias: Self = this.set("Alias", js.undefined)
+    @scala.inline
+    def setCustomerUserName(value: UserName): Self = this.set("CustomerUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerUserName: Self = this.set("CustomerUserName", js.undefined)
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setDirectoryName(value: DirectoryName): Self = this.set("DirectoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryName: Self = this.set("DirectoryName", js.undefined)
+    @scala.inline
+    def setDirectoryType(value: WorkspaceDirectoryType): Self = this.set("DirectoryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryType: Self = this.set("DirectoryType", js.undefined)
+    @scala.inline
+    def setDnsIpAddressesVarargs(value: IpAddress*): Self = this.set("DnsIpAddresses", js.Array(value :_*))
+    @scala.inline
+    def setDnsIpAddresses(value: DnsIpAddresses): Self = this.set("DnsIpAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsIpAddresses: Self = this.set("DnsIpAddresses", js.undefined)
+    @scala.inline
+    def setIamRoleId(value: ARN): Self = this.set("IamRoleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleId: Self = this.set("IamRoleId", js.undefined)
+    @scala.inline
+    def setRegistrationCode(value: RegistrationCode): Self = this.set("RegistrationCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrationCode: Self = this.set("RegistrationCode", js.undefined)
+    @scala.inline
+    def setSelfservicePermissions(value: SelfservicePermissions): Self = this.set("SelfservicePermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfservicePermissions: Self = this.set("SelfservicePermissions", js.undefined)
+    @scala.inline
+    def setState(value: WorkspaceDirectoryState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setTenancy(value: Tenancy): Self = this.set("Tenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenancy: Self = this.set("Tenancy", js.undefined)
+    @scala.inline
+    def setWorkspaceAccessProperties(value: WorkspaceAccessProperties): Self = this.set("WorkspaceAccessProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceAccessProperties: Self = this.set("WorkspaceAccessProperties", js.undefined)
+    @scala.inline
+    def setWorkspaceCreationProperties(value: DefaultWorkspaceCreationProperties): Self = this.set("WorkspaceCreationProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceCreationProperties: Self = this.set("WorkspaceCreationProperties", js.undefined)
+    @scala.inline
+    def setWorkspaceSecurityGroupId(value: SecurityGroupId): Self = this.set("WorkspaceSecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceSecurityGroupId: Self = this.set("WorkspaceSecurityGroupId", js.undefined)
+    @scala.inline
+    def setIpGroupIdsVarargs(value: IpGroupId*): Self = this.set("ipGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setIpGroupIds(value: IpGroupIdList): Self = this.set("ipGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpGroupIds: Self = this.set("ipGroupIds", js.undefined)
+  }
+  
 }
 

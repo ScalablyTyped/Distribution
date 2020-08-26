@@ -22,16 +22,34 @@ trait JourneyLimits extends js.Object {
 
 object JourneyLimits {
   @scala.inline
-  def apply(
-    DailyCap: js.UndefOr[integer] = js.undefined,
-    EndpointReentryCap: js.UndefOr[integer] = js.undefined,
-    MessagesPerSecond: js.UndefOr[integer] = js.undefined
-  ): JourneyLimits = {
+  def apply(): JourneyLimits = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DailyCap)) __obj.updateDynamic("DailyCap")(DailyCap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EndpointReentryCap)) __obj.updateDynamic("EndpointReentryCap")(EndpointReentryCap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MessagesPerSecond)) __obj.updateDynamic("MessagesPerSecond")(MessagesPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneyLimits]
   }
+  @scala.inline
+  implicit class JourneyLimitsOps[Self <: JourneyLimits] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDailyCap(value: integer): Self = this.set("DailyCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDailyCap: Self = this.set("DailyCap", js.undefined)
+    @scala.inline
+    def setEndpointReentryCap(value: integer): Self = this.set("EndpointReentryCap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpointReentryCap: Self = this.set("EndpointReentryCap", js.undefined)
+    @scala.inline
+    def setMessagesPerSecond(value: integer): Self = this.set("MessagesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessagesPerSecond: Self = this.set("MessagesPerSecond", js.undefined)
+  }
+  
 }
 

@@ -61,7 +61,7 @@ trait Geometry extends js.Object {
     */
   def addAttribute(
     id: String,
-    buffer: js.UndefOr[js.Array[Double] | Buffer],
+    buffer: js.UndefOr[Buffer | js.Array[Double]],
     size: js.UndefOr[Double],
     normalized: js.UndefOr[Boolean],
     `type`: js.UndefOr[Double],

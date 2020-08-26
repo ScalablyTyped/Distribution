@@ -1,9 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceClosedStatus
-import typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceResponseStatus
-import typings.winrtUwp.Windows.Foundation.Collections.ValueSet
-import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -20,11 +16,7 @@ object AppService extends js.Object {
   /** Provides data for the AppServiceConnection.ServiceClosed event that occurs when the other endpoint closes connection to the app service. */
   @js.native
   abstract class AppServiceClosedEventArgs ()
-    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceClosedEventArgs {
-    /** Gets the status that was set when the endpoint for the app service was closed. */
-    /* CompleteClass */
-    override var status: AppServiceClosedStatus = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceClosedEventArgs
   
   /** Represents a connection to the endpoint for an app service. */
   @js.native
@@ -35,69 +27,27 @@ object AppService extends js.Object {
   /** Enables the background task for an app service to get a deferral so that the app service can respond to subsequent requests. */
   @js.native
   abstract class AppServiceDeferral ()
-    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceDeferral {
-    /** Indicates that the content for an asynchronous handler for the AppServiceConnection.RequestReceived event is ready, or that an error occurred. */
-    /* CompleteClass */
-    override def complete(): Unit = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceDeferral
   
   /** Represents a message that the endpoint for one app service sends to another app service. */
   @js.native
   abstract class AppServiceRequest ()
-    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequest {
-    /** Gets the message that request from the app service contains. */
-    /* CompleteClass */
-    override var message: ValueSet = js.native
-    /**
-      * Sends a response to a received request.
-      * @param message The message that you want to include in the response.
-      * @return An asynchronous operation to send the response.
-      */
-    /* CompleteClass */
-    override def sendResponseAsync(message: ValueSet): IPromiseWithIAsyncOperation[AppServiceResponseStatus] = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequest
   
   /** Provides data for the AppServiceConnection.RequestReceived event that occurs when a message arrives from the other endpoint of the app service connection. */
   @js.native
   abstract class AppServiceRequestReceivedEventArgs ()
-    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequestReceivedEventArgs {
-    /** Gets the request that was received from the app service. */
-    /* CompleteClass */
-    override var request: typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequest = js.native
-    /**
-      * Informs the system that the event handler might continue to perform work after the event handler returns.
-      * @return The deferral.
-      */
-    /* CompleteClass */
-    override def getDeferral(): typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceDeferral = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceRequestReceivedEventArgs
   
   /** Represents the message that the app service sent in response to a request. */
   @js.native
   abstract class AppServiceResponse ()
-    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceResponse {
-    /** Gets the message that the response from the app service contains. */
-    /* CompleteClass */
-    override var message: ValueSet = js.native
-    /** Gets the status for the response from the app service. */
-    /* CompleteClass */
-    override var status: AppServiceResponseStatus = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceResponse
   
   /** Represents details associated with the background task for the app service. */
   @js.native
   abstract class AppServiceTriggerDetails ()
-    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceTriggerDetails {
-    /** Gets the connection to the endpoint of the other app service. */
-    /* CompleteClass */
-    override var appServiceConnection: typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceConnection = js.native
-    /** Gets the name of the package family for the client app that called the background task for the app service. */
-    /* CompleteClass */
-    override var callerPackageFamilyName: String = js.native
-    /** Gets the name of the app service. */
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+    extends typings.winrtUwp.Windows.ApplicationModel.AppService.AppServiceTriggerDetails
   
   /* static members */
   @js.native

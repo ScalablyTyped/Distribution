@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import typings.pProps.pPropsStrings.^
 import typings.std.Map
+import typings.std.ReadonlyMap
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,6 +13,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in keyof InputType ]: MappedValueType}
+    */ ^  with TopLevel[js.Any]
+  ] = js.native
+  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: js.UndefOr[scala.Nothing], options: Options): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
     */ ^  with TopLevel[js.Any]
@@ -64,10 +70,24 @@ object mod extends js.Object {
   })();
   ```
   */
-  def apply[KeyType, ValueType, MappedValueType](map: Map[KeyType, ValueType]): js.Promise[Map[KeyType, MappedValueType]] = js.native
-  def apply[KeyType, ValueType, MappedValueType](map: Map[KeyType, ValueType], mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]): js.Promise[Map[KeyType, MappedValueType]] = js.native
   def apply[KeyType, ValueType, MappedValueType](
-    map: Map[KeyType, ValueType],
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+  map: ReadonlyMap[KeyType, ValueType]
+  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  def apply[KeyType, ValueType, MappedValueType](
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+  map: ReadonlyMap[KeyType, ValueType],
+    mapper: js.UndefOr[scala.Nothing],
+    options: Options
+  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  def apply[KeyType, ValueType, MappedValueType](
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+  map: ReadonlyMap[KeyType, ValueType],
+    mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
+  ): js.Promise[Map[KeyType, MappedValueType]] = js.native
+  def apply[KeyType, ValueType, MappedValueType](
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
+  map: ReadonlyMap[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType],
     options: Options
   ): js.Promise[Map[KeyType, MappedValueType]] = js.native

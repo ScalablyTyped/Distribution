@@ -4,17 +4,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GooglePrivacyDlpV2beta1DatastoreKey extends js.Object {
   /** Datastore entity key. */
-  var entityKey: js.UndefOr[GooglePrivacyDlpV2beta1Key] = js.undefined
+  var entityKey: js.UndefOr[GooglePrivacyDlpV2beta1Key] = js.native
 }
 
 object GooglePrivacyDlpV2beta1DatastoreKey {
   @scala.inline
-  def apply(entityKey: GooglePrivacyDlpV2beta1Key = null): GooglePrivacyDlpV2beta1DatastoreKey = {
+  def apply(): GooglePrivacyDlpV2beta1DatastoreKey = {
     val __obj = js.Dynamic.literal()
-    if (entityKey != null) __obj.updateDynamic("entityKey")(entityKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1DatastoreKey]
   }
+  @scala.inline
+  implicit class GooglePrivacyDlpV2beta1DatastoreKeyOps[Self <: GooglePrivacyDlpV2beta1DatastoreKey] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntityKey(value: GooglePrivacyDlpV2beta1Key): Self = this.set("entityKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityKey: Self = this.set("entityKey", js.undefined)
+  }
+  
 }
 

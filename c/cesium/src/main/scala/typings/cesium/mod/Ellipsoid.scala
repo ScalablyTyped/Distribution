@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Ellipsoid () extends Packable {
   def this(x: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
   def this(x: Double, y: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+  def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+  def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
   def this(x: Double, y: Double, z: Double) = this()
   var maximumRadius: Double = js.native
   var minimumRadius: Double = js.native
@@ -56,6 +60,7 @@ object Ellipsoid extends js.Object {
   def fromCartesian3(): Ellipsoid = js.native
   def fromCartesian3(radii: Cartesian3): Ellipsoid = js.native
   def unpack(array: js.Array[Double]): Ellipsoid = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Ellipsoid): Ellipsoid = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Ellipsoid = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Ellipsoid): Ellipsoid = js.native
 }

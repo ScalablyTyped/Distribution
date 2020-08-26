@@ -12,11 +12,32 @@ trait Definition extends js.Object {
 
 object Definition {
   @scala.inline
-  def apply(definition: String = null, examples: js.Array[Source] = null): Definition = {
+  def apply(): Definition = {
     val __obj = js.Dynamic.literal()
-    if (definition != null) __obj.updateDynamic("definition")(definition.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
     __obj.asInstanceOf[Definition]
   }
+  @scala.inline
+  implicit class DefinitionOps[Self <: Definition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinition(value: String): Self = this.set("definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefinition: Self = this.set("definition", js.undefined)
+    @scala.inline
+    def setExamplesVarargs(value: Source*): Self = this.set("examples", js.Array(value :_*))
+    @scala.inline
+    def setExamples(value: js.Array[Source]): Self = this.set("examples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExamples: Self = this.set("examples", js.undefined)
+  }
+  
 }
 

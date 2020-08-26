@@ -36,15 +36,16 @@ trait Index[TValue, TKey] extends HasCursor[TValue, TKey] {
     * @param count Optional. Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown.
     * @returns A promise that resolves with the items when the underlying getAll IDBRequest is successful. */
   def getAll(): js.Promise[js.Array[TValue]] = js.native
+  def getAll(query: js.UndefOr[IDBValidKey], count: Double): js.Promise[js.Array[TValue]] = js.native
   def getAll(query: IDBKeyRange): js.Promise[js.Array[TValue]] = js.native
   def getAll(query: IDBKeyRange, count: Double): js.Promise[js.Array[TValue]] = js.native
   def getAll(query: IDBValidKey): js.Promise[js.Array[TValue]] = js.native
-  def getAll(query: IDBValidKey, count: Double): js.Promise[js.Array[TValue]] = js.native
   /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves with record keys for all the objects matching the specified parameter or all record keys in the store if no parameters are given.
     * @param query Optional. A key or IDBKeyRange to be queried. If nothing is passed, this will default to a key range that selects all the records in this object store.
     * @param count Optional. Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown.
     * @returns A promise that resolves with the record keys when the underlying getAllKeys IDBRequest is successful. */
   def getAllKeys(): js.Promise[js.Array[TKey]] = js.native
+  def getAllKeys(query: js.UndefOr[scala.Nothing], count: Double): js.Promise[js.Array[TKey]] = js.native
   def getAllKeys(query: IDBKeyRange): js.Promise[js.Array[TKey]] = js.native
   def getAllKeys(query: IDBKeyRange, count: Double): js.Promise[js.Array[TKey]] = js.native
   /** Returns a Promise of an IDBRequest object that (in a separate thread) finds either the given key or the primary key, if key is an IDBKeyRange.

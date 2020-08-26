@@ -459,7 +459,7 @@ object antvG2Strings {
   sealed trait tree extends js.Object
   
   @js.native
-  sealed trait vertica extends js.Object
+  sealed trait vertical extends js.Object
   
   @js.native
   sealed trait volumechange extends js.Object
@@ -782,7 +782,7 @@ object antvG2Strings {
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
   @scala.inline
-  def vertica: vertica = "vertica".asInstanceOf[vertica]
+  def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
   def volumechange: volumechange = "volumechange".asInstanceOf[volumechange]
   @scala.inline

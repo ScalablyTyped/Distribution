@@ -18,11 +18,30 @@ trait IdentityPoolShortDescription extends js.Object {
 
 object IdentityPoolShortDescription {
   @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId = null, IdentityPoolName: IdentityPoolName = null): IdentityPoolShortDescription = {
+  def apply(): IdentityPoolShortDescription = {
     val __obj = js.Dynamic.literal()
-    if (IdentityPoolId != null) __obj.updateDynamic("IdentityPoolId")(IdentityPoolId.asInstanceOf[js.Any])
-    if (IdentityPoolName != null) __obj.updateDynamic("IdentityPoolName")(IdentityPoolName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolShortDescription]
   }
+  @scala.inline
+  implicit class IdentityPoolShortDescriptionOps[Self <: IdentityPoolShortDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIdentityPoolId(value: IdentityPoolId): Self = this.set("IdentityPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityPoolId: Self = this.set("IdentityPoolId", js.undefined)
+    @scala.inline
+    def setIdentityPoolName(value: IdentityPoolName): Self = this.set("IdentityPoolName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityPoolName: Self = this.set("IdentityPoolName", js.undefined)
+  }
+  
 }
 

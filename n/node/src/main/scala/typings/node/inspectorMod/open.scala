@@ -16,7 +16,11 @@ object open extends js.Object {
     * @param wait Block until a client has connected. Optional, defaults to false.
     */
   def apply(): Unit = js.native
+  def apply(port: js.UndefOr[scala.Nothing], host: js.UndefOr[scala.Nothing], wait: Boolean): Unit = js.native
+  def apply(port: js.UndefOr[scala.Nothing], host: String): Unit = js.native
+  def apply(port: js.UndefOr[scala.Nothing], host: String, wait: Boolean): Unit = js.native
   def apply(port: Double): Unit = js.native
+  def apply(port: Double, host: js.UndefOr[scala.Nothing], wait: Boolean): Unit = js.native
   def apply(port: Double, host: String): Unit = js.native
   def apply(port: Double, host: String, wait: Boolean): Unit = js.native
 }

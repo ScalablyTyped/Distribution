@@ -82,8 +82,54 @@ object message extends js.Object {
       * Abstract parse method must be implemented in the inheriting class.
       */
     def parse(): Unit = js.native
+    def parse(
+      oResponse: js.UndefOr[scala.Nothing],
+      oRequest: js.UndefOr[scala.Nothing],
+      mGetEntities: js.UndefOr[scala.Nothing],
+      mChangeEntities: js.Any
+    ): Unit = js.native
+    def parse(oResponse: js.UndefOr[scala.Nothing], oRequest: js.UndefOr[scala.Nothing], mGetEntities: js.Any): Unit = js.native
+    def parse(
+      oResponse: js.UndefOr[scala.Nothing],
+      oRequest: js.UndefOr[scala.Nothing],
+      mGetEntities: js.Any,
+      mChangeEntities: js.Any
+    ): Unit = js.native
+    def parse(oResponse: js.UndefOr[scala.Nothing], oRequest: js.Any): Unit = js.native
+    def parse(
+      oResponse: js.UndefOr[scala.Nothing],
+      oRequest: js.Any,
+      mGetEntities: js.UndefOr[scala.Nothing],
+      mChangeEntities: js.Any
+    ): Unit = js.native
+    def parse(oResponse: js.UndefOr[scala.Nothing], oRequest: js.Any, mGetEntities: js.Any): Unit = js.native
+    def parse(
+      oResponse: js.UndefOr[scala.Nothing],
+      oRequest: js.Any,
+      mGetEntities: js.Any,
+      mChangeEntities: js.Any
+    ): Unit = js.native
     def parse(oResponse: js.Any): Unit = js.native
+    def parse(
+      oResponse: js.Any,
+      oRequest: js.UndefOr[scala.Nothing],
+      mGetEntities: js.UndefOr[scala.Nothing],
+      mChangeEntities: js.Any
+    ): Unit = js.native
+    def parse(oResponse: js.Any, oRequest: js.UndefOr[scala.Nothing], mGetEntities: js.Any): Unit = js.native
+    def parse(
+      oResponse: js.Any,
+      oRequest: js.UndefOr[scala.Nothing],
+      mGetEntities: js.Any,
+      mChangeEntities: js.Any
+    ): Unit = js.native
     def parse(oResponse: js.Any, oRequest: js.Any): Unit = js.native
+    def parse(
+      oResponse: js.Any,
+      oRequest: js.Any,
+      mGetEntities: js.UndefOr[scala.Nothing],
+      mChangeEntities: js.Any
+    ): Unit = js.native
     def parse(oResponse: js.Any, oRequest: js.Any, mGetEntities: js.Any): Unit = js.native
     def parse(oResponse: js.Any, oRequest: js.Any, mGetEntities: js.Any, mChangeEntities: js.Any): Unit = js.native
     /**

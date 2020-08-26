@@ -4,35 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TeamMemberSettings extends js.Object {
   // If set to true, members can add and remove apps.
-  var allowAddRemoveApps: js.UndefOr[Boolean] = js.undefined
+  var allowAddRemoveApps: js.UndefOr[Boolean] = js.native
   // If set to true, members can add and update channels.
-  var allowCreateUpdateChannels: js.UndefOr[Boolean] = js.undefined
+  var allowCreateUpdateChannels: js.UndefOr[Boolean] = js.native
   // If set to true, members can add, update, and remove connectors.
-  var allowCreateUpdateRemoveConnectors: js.UndefOr[Boolean] = js.undefined
+  var allowCreateUpdateRemoveConnectors: js.UndefOr[Boolean] = js.native
   // If set to true, members can add, update, and remove tabs.
-  var allowCreateUpdateRemoveTabs: js.UndefOr[Boolean] = js.undefined
+  var allowCreateUpdateRemoveTabs: js.UndefOr[Boolean] = js.native
   // If set to true, members can delete channels.
-  var allowDeleteChannels: js.UndefOr[Boolean] = js.undefined
+  var allowDeleteChannels: js.UndefOr[Boolean] = js.native
 }
 
 object TeamMemberSettings {
   @scala.inline
-  def apply(
-    allowAddRemoveApps: js.UndefOr[Boolean] = js.undefined,
-    allowCreateUpdateChannels: js.UndefOr[Boolean] = js.undefined,
-    allowCreateUpdateRemoveConnectors: js.UndefOr[Boolean] = js.undefined,
-    allowCreateUpdateRemoveTabs: js.UndefOr[Boolean] = js.undefined,
-    allowDeleteChannels: js.UndefOr[Boolean] = js.undefined
-  ): TeamMemberSettings = {
+  def apply(): TeamMemberSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAddRemoveApps)) __obj.updateDynamic("allowAddRemoveApps")(allowAddRemoveApps.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCreateUpdateChannels)) __obj.updateDynamic("allowCreateUpdateChannels")(allowCreateUpdateChannels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCreateUpdateRemoveConnectors)) __obj.updateDynamic("allowCreateUpdateRemoveConnectors")(allowCreateUpdateRemoveConnectors.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCreateUpdateRemoveTabs)) __obj.updateDynamic("allowCreateUpdateRemoveTabs")(allowCreateUpdateRemoveTabs.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeleteChannels)) __obj.updateDynamic("allowDeleteChannels")(allowDeleteChannels.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamMemberSettings]
   }
+  @scala.inline
+  implicit class TeamMemberSettingsOps[Self <: TeamMemberSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowAddRemoveApps(value: Boolean): Self = this.set("allowAddRemoveApps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowAddRemoveApps: Self = this.set("allowAddRemoveApps", js.undefined)
+    @scala.inline
+    def setAllowCreateUpdateChannels(value: Boolean): Self = this.set("allowCreateUpdateChannels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCreateUpdateChannels: Self = this.set("allowCreateUpdateChannels", js.undefined)
+    @scala.inline
+    def setAllowCreateUpdateRemoveConnectors(value: Boolean): Self = this.set("allowCreateUpdateRemoveConnectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCreateUpdateRemoveConnectors: Self = this.set("allowCreateUpdateRemoveConnectors", js.undefined)
+    @scala.inline
+    def setAllowCreateUpdateRemoveTabs(value: Boolean): Self = this.set("allowCreateUpdateRemoveTabs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowCreateUpdateRemoveTabs: Self = this.set("allowCreateUpdateRemoveTabs", js.undefined)
+    @scala.inline
+    def setAllowDeleteChannels(value: Boolean): Self = this.set("allowDeleteChannels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowDeleteChannels: Self = this.set("allowDeleteChannels", js.undefined)
+  }
+  
 }
 

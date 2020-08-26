@@ -12,7 +12,7 @@ The code in this package has moved. We recommend you to use `TransitionGroup` fr
 | Keywords           | react, react-addon |
 | # releases         | 1 |
 | # dependents       | 181 |
-| # downloads        | 3339442 |
+| # downloads        | 3304658 |
 | # stars            | 4 |
 
 ## Links

@@ -12,7 +12,7 @@ Apple iTunesConnect analytics API client.
 | Keywords           | itunes, itunesconnect, apple, analytics, api, client |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 21698 |
+| # downloads        | 22779 |
 | # stars            | 0 |
 
 ## Links

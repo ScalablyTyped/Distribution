@@ -54,42 +54,58 @@ trait ParamsResourcePostsPatch extends StandardParameters {
 
 object ParamsResourcePostsPatch {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    blogId: String = null,
-    fetchBody: js.UndefOr[Boolean] = js.undefined,
-    fetchImages: js.UndefOr[Boolean] = js.undefined,
-    fields: String = null,
-    key: String = null,
-    maxComments: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    postId: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    publish: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    requestBody: SchemaPost = null,
-    revert: js.UndefOr[Boolean] = js.undefined,
-    userIp: String = null
-  ): ParamsResourcePostsPatch = {
+  def apply(): ParamsResourcePostsPatch = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (blogId != null) __obj.updateDynamic("blogId")(blogId.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchBody)) __obj.updateDynamic("fetchBody")(fetchBody.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fetchImages)) __obj.updateDynamic("fetchImages")(fetchImages.get.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxComments)) __obj.updateDynamic("maxComments")(maxComments.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (postId != null) __obj.updateDynamic("postId")(postId.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(publish)) __obj.updateDynamic("publish")(publish.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (requestBody != null) __obj.updateDynamic("requestBody")(requestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(revert)) __obj.updateDynamic("revert")(revert.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourcePostsPatch]
   }
+  @scala.inline
+  implicit class ParamsResourcePostsPatchOps[Self <: ParamsResourcePostsPatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setBlogId(value: String): Self = this.set("blogId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlogId: Self = this.set("blogId", js.undefined)
+    @scala.inline
+    def setFetchBody(value: Boolean): Self = this.set("fetchBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchBody: Self = this.set("fetchBody", js.undefined)
+    @scala.inline
+    def setFetchImages(value: Boolean): Self = this.set("fetchImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchImages: Self = this.set("fetchImages", js.undefined)
+    @scala.inline
+    def setMaxComments(value: Double): Self = this.set("maxComments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxComments: Self = this.set("maxComments", js.undefined)
+    @scala.inline
+    def setPostId(value: String): Self = this.set("postId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostId: Self = this.set("postId", js.undefined)
+    @scala.inline
+    def setPublish(value: Boolean): Self = this.set("publish", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublish: Self = this.set("publish", js.undefined)
+    @scala.inline
+    def setRequestBody(value: SchemaPost): Self = this.set("requestBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestBody: Self = this.set("requestBody", js.undefined)
+    @scala.inline
+    def setRevert(value: Boolean): Self = this.set("revert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevert: Self = this.set("revert", js.undefined)
+  }
+  
 }
 

@@ -73,36 +73,74 @@ trait SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest extends js.Object 
 
 object SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest {
   @scala.inline
-  def apply(
-    autoCreate: js.UndefOr[Boolean] = js.undefined,
-    delegatedProjectNumber: String = null,
-    idToken: String = null,
-    instanceId: String = null,
-    pendingIdToken: String = null,
-    postBody: String = null,
-    requestUri: String = null,
-    returnIdpCredential: js.UndefOr[Boolean] = js.undefined,
-    returnRefreshToken: js.UndefOr[Boolean] = js.undefined,
-    returnSecureToken: js.UndefOr[Boolean] = js.undefined,
-    sessionId: String = null,
-    tenantId: String = null,
-    tenantProjectNumber: String = null
-  ): SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest = {
+  def apply(): SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCreate)) __obj.updateDynamic("autoCreate")(autoCreate.get.asInstanceOf[js.Any])
-    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber.asInstanceOf[js.Any])
-    if (idToken != null) __obj.updateDynamic("idToken")(idToken.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (pendingIdToken != null) __obj.updateDynamic("pendingIdToken")(pendingIdToken.asInstanceOf[js.Any])
-    if (postBody != null) __obj.updateDynamic("postBody")(postBody.asInstanceOf[js.Any])
-    if (requestUri != null) __obj.updateDynamic("requestUri")(requestUri.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnIdpCredential)) __obj.updateDynamic("returnIdpCredential")(returnIdpCredential.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnRefreshToken)) __obj.updateDynamic("returnRefreshToken")(returnRefreshToken.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken.get.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    if (tenantId != null) __obj.updateDynamic("tenantId")(tenantId.asInstanceOf[js.Any])
-    if (tenantProjectNumber != null) __obj.updateDynamic("tenantProjectNumber")(tenantProjectNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest]
   }
+  @scala.inline
+  implicit class SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequestOps[Self <: SchemaIdentitytoolkitRelyingpartyVerifyAssertionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoCreate(value: Boolean): Self = this.set("autoCreate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCreate: Self = this.set("autoCreate", js.undefined)
+    @scala.inline
+    def setDelegatedProjectNumber(value: String): Self = this.set("delegatedProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelegatedProjectNumber: Self = this.set("delegatedProjectNumber", js.undefined)
+    @scala.inline
+    def setIdToken(value: String): Self = this.set("idToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdToken: Self = this.set("idToken", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setPendingIdToken(value: String): Self = this.set("pendingIdToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingIdToken: Self = this.set("pendingIdToken", js.undefined)
+    @scala.inline
+    def setPostBody(value: String): Self = this.set("postBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostBody: Self = this.set("postBody", js.undefined)
+    @scala.inline
+    def setRequestUri(value: String): Self = this.set("requestUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestUri: Self = this.set("requestUri", js.undefined)
+    @scala.inline
+    def setReturnIdpCredential(value: Boolean): Self = this.set("returnIdpCredential", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnIdpCredential: Self = this.set("returnIdpCredential", js.undefined)
+    @scala.inline
+    def setReturnRefreshToken(value: Boolean): Self = this.set("returnRefreshToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnRefreshToken: Self = this.set("returnRefreshToken", js.undefined)
+    @scala.inline
+    def setReturnSecureToken(value: Boolean): Self = this.set("returnSecureToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnSecureToken: Self = this.set("returnSecureToken", js.undefined)
+    @scala.inline
+    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    @scala.inline
+    def setTenantId(value: String): Self = this.set("tenantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantId: Self = this.set("tenantId", js.undefined)
+    @scala.inline
+    def setTenantProjectNumber(value: String): Self = this.set("tenantProjectNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTenantProjectNumber: Self = this.set("tenantProjectNumber", js.undefined)
+  }
+  
 }
 

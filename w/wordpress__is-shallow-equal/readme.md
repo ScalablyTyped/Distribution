@@ -12,7 +12,7 @@ Test for shallow equality between two objects or arrays.
 | Keywords           | wordpress, shallow, shallow-equal, shallowequal |
 | # releases         | 17 |
 | # dependents       | 11 |
-| # downloads        | 183163 |
+| # downloads        | 187566 |
 | # stars            | 0 |
 
 ## Links

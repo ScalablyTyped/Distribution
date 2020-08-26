@@ -22,14 +22,30 @@ trait SchemaRequestUtilization extends js.Object {
 
 object SchemaRequestUtilization {
   @scala.inline
-  def apply(
-    targetConcurrentRequests: js.UndefOr[Double] = js.undefined,
-    targetRequestCountPerSecond: js.UndefOr[Double] = js.undefined
-  ): SchemaRequestUtilization = {
+  def apply(): SchemaRequestUtilization = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(targetConcurrentRequests)) __obj.updateDynamic("targetConcurrentRequests")(targetConcurrentRequests.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetRequestCountPerSecond)) __obj.updateDynamic("targetRequestCountPerSecond")(targetRequestCountPerSecond.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRequestUtilization]
   }
+  @scala.inline
+  implicit class SchemaRequestUtilizationOps[Self <: SchemaRequestUtilization] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTargetConcurrentRequests(value: Double): Self = this.set("targetConcurrentRequests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetConcurrentRequests: Self = this.set("targetConcurrentRequests", js.undefined)
+    @scala.inline
+    def setTargetRequestCountPerSecond(value: Double): Self = this.set("targetRequestCountPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetRequestCountPerSecond: Self = this.set("targetRequestCountPerSecond", js.undefined)
+  }
+  
 }
 

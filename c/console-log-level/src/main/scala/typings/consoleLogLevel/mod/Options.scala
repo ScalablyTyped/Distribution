@@ -4,24 +4,45 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var level: js.UndefOr[LogLevelNames] = js.undefined
-  var prefix: js.UndefOr[String | PrefixFunction] = js.undefined
-  var stderr: js.UndefOr[Boolean] = js.undefined
+  var level: js.UndefOr[LogLevelNames] = js.native
+  var prefix: js.UndefOr[String | PrefixFunction] = js.native
+  var stderr: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    level: LogLevelNames = null,
-    prefix: String | PrefixFunction = null,
-    stderr: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLevel(value: LogLevelNames): Self = this.set("level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLevel: Self = this.set("level", js.undefined)
+    @scala.inline
+    def setPrefixFunction1(value: /* level */ String => String): Self = this.set("prefix", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPrefix(value: String | PrefixFunction): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+    @scala.inline
+    def setStderr(value: Boolean): Self = this.set("stderr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStderr: Self = this.set("stderr", js.undefined)
+  }
+  
 }
 

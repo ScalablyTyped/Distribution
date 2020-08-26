@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ComponentProps
   extends AllHTMLAttributes[js.Any]
      with ClassAttributes[js.Any]
@@ -18,85 +19,113 @@ trait ComponentProps
   /**
     * 是否可以拖入子元素
     */
-  var canDragIn: js.UndefOr[Boolean] = js.undefined
+  var canDragIn: js.UndefOr[Boolean] = js.native
   /**
     * 父组件传递的数据
     */
-  var gaeaData: js.UndefOr[js.Any] = js.undefined
+  var gaeaData: js.UndefOr[js.Any] = js.native
   /**
     * 编辑信息
     */
-  var gaeaEdit: js.UndefOr[js.Array[ComponentPropsGaeaEdit]] = js.undefined
+  var gaeaEdit: js.UndefOr[js.Array[ComponentPropsGaeaEdit]] = js.native
   /**
     * 事件定义
     */
-  var gaeaEvent: js.UndefOr[GaeaEvent] = js.undefined
+  var gaeaEvent: js.UndefOr[GaeaEvent] = js.native
   /**
     * 存储事件设置
     */
-  var gaeaEventData: js.UndefOr[js.Array[EventData]] = js.undefined
+  var gaeaEventData: js.UndefOr[js.Array[EventData]] = js.native
   /**
     * 组件图标,为 fontAwesome
     */
-  var gaeaIcon: js.UndefOr[String] = js.undefined
+  var gaeaIcon: js.UndefOr[String] = js.native
   /**
     * 组件的中文名
     */
-  var gaeaName: String
+  var gaeaName: String = js.native
   /**
     * 存储native事件设置
     */
-  var gaeaNativeEventData: js.UndefOr[js.Array[EventData]] = js.undefined
+  var gaeaNativeEventData: js.UndefOr[js.Array[EventData]] = js.native
   /**
     * 是否在预览模式，preivew 会传入 true
     */
-  var gaeaPreview: js.UndefOr[Boolean] = js.undefined
+  var gaeaPreview: js.UndefOr[Boolean] = js.native
   /**
     * 唯一的 key,用来唯一标识这个组件,所有盖亚内部组件都以 gaea- 为前缀
     */
-  var gaeaUniqueKey: String
+  var gaeaUniqueKey: String = js.native
   /**
     * 存储变量信息
     */
-  var gaeaVariables: js.UndefOr[StringDictionary[VariableData]] = js.undefined
+  var gaeaVariables: js.UndefOr[StringDictionary[VariableData]] = js.native
 }
 
 object ComponentProps {
   @scala.inline
-  def apply(
-    gaeaName: String,
-    gaeaUniqueKey: String,
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    StringDictionary: /**
-    * 渲染编辑回调
-    */
-  // renderEditer?:(React.ComponentClass<FitGaea.ComponentProps>,{})=>void
-  /* x */ StringDictionary[js.Any] = null,
-    canDragIn: js.UndefOr[Boolean] = js.undefined,
-    gaeaData: js.Any = null,
-    gaeaEdit: js.Array[ComponentPropsGaeaEdit] = null,
-    gaeaEvent: GaeaEvent = null,
-    gaeaEventData: js.Array[EventData] = null,
-    gaeaIcon: String = null,
-    gaeaNativeEventData: js.Array[EventData] = null,
-    gaeaPreview: js.UndefOr[Boolean] = js.undefined,
-    gaeaVariables: StringDictionary[VariableData] = null
-  ): ComponentProps = {
+  def apply(gaeaName: String, gaeaUniqueKey: String): ComponentProps = {
     val __obj = js.Dynamic.literal(gaeaName = gaeaName.asInstanceOf[js.Any], gaeaUniqueKey = gaeaUniqueKey.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(canDragIn)) __obj.updateDynamic("canDragIn")(canDragIn.get.asInstanceOf[js.Any])
-    if (gaeaData != null) __obj.updateDynamic("gaeaData")(gaeaData.asInstanceOf[js.Any])
-    if (gaeaEdit != null) __obj.updateDynamic("gaeaEdit")(gaeaEdit.asInstanceOf[js.Any])
-    if (gaeaEvent != null) __obj.updateDynamic("gaeaEvent")(gaeaEvent.asInstanceOf[js.Any])
-    if (gaeaEventData != null) __obj.updateDynamic("gaeaEventData")(gaeaEventData.asInstanceOf[js.Any])
-    if (gaeaIcon != null) __obj.updateDynamic("gaeaIcon")(gaeaIcon.asInstanceOf[js.Any])
-    if (gaeaNativeEventData != null) __obj.updateDynamic("gaeaNativeEventData")(gaeaNativeEventData.asInstanceOf[js.Any])
-    if (!js.isUndefined(gaeaPreview)) __obj.updateDynamic("gaeaPreview")(gaeaPreview.get.asInstanceOf[js.Any])
-    if (gaeaVariables != null) __obj.updateDynamic("gaeaVariables")(gaeaVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentProps]
   }
+  @scala.inline
+  implicit class ComponentPropsOps[Self <: ComponentProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGaeaName(value: String): Self = this.set("gaeaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGaeaUniqueKey(value: String): Self = this.set("gaeaUniqueKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCanDragIn(value: Boolean): Self = this.set("canDragIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCanDragIn: Self = this.set("canDragIn", js.undefined)
+    @scala.inline
+    def setGaeaData(value: js.Any): Self = this.set("gaeaData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaData: Self = this.set("gaeaData", js.undefined)
+    @scala.inline
+    def setGaeaEditVarargs(value: ComponentPropsGaeaEdit*): Self = this.set("gaeaEdit", js.Array(value :_*))
+    @scala.inline
+    def setGaeaEdit(value: js.Array[ComponentPropsGaeaEdit]): Self = this.set("gaeaEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaEdit: Self = this.set("gaeaEdit", js.undefined)
+    @scala.inline
+    def setGaeaEvent(value: GaeaEvent): Self = this.set("gaeaEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaEvent: Self = this.set("gaeaEvent", js.undefined)
+    @scala.inline
+    def setGaeaEventDataVarargs(value: EventData*): Self = this.set("gaeaEventData", js.Array(value :_*))
+    @scala.inline
+    def setGaeaEventData(value: js.Array[EventData]): Self = this.set("gaeaEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaEventData: Self = this.set("gaeaEventData", js.undefined)
+    @scala.inline
+    def setGaeaIcon(value: String): Self = this.set("gaeaIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaIcon: Self = this.set("gaeaIcon", js.undefined)
+    @scala.inline
+    def setGaeaNativeEventDataVarargs(value: EventData*): Self = this.set("gaeaNativeEventData", js.Array(value :_*))
+    @scala.inline
+    def setGaeaNativeEventData(value: js.Array[EventData]): Self = this.set("gaeaNativeEventData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaNativeEventData: Self = this.set("gaeaNativeEventData", js.undefined)
+    @scala.inline
+    def setGaeaPreview(value: Boolean): Self = this.set("gaeaPreview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaPreview: Self = this.set("gaeaPreview", js.undefined)
+    @scala.inline
+    def setGaeaVariables(value: StringDictionary[VariableData]): Self = this.set("gaeaVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGaeaVariables: Self = this.set("gaeaVariables", js.undefined)
+  }
+  
 }
 

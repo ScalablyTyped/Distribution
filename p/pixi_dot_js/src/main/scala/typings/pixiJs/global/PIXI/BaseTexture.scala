@@ -47,6 +47,7 @@ class BaseTexture ()
   def this(resource: HTMLCanvasElement) = this()
   def this(resource: HTMLImageElement) = this()
   def this(resource: HTMLVideoElement) = this()
+  def this(resource: js.UndefOr[scala.Nothing], options: AlphaMode) = this()
   def this(resource: String, options: AlphaMode) = this()
   def this(resource: Resource, options: AlphaMode) = this()
   def this(resource: HTMLCanvasElement, options: AlphaMode) = this()
@@ -87,18 +88,23 @@ object BaseTexture extends js.Object {
     * @returns {PIXI.BaseTexture} The new base texture.
     */
   def from(source: String): typings.pixiJs.PIXI.BaseTexture = js.native
+  def from(source: String, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: String, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: String, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLCanvasElement): typings.pixiJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLCanvasElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLCanvasElement, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLImageElement): typings.pixiJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLImageElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLImageElement, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLImageElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLVideoElement): typings.pixiJs.PIXI.BaseTexture = js.native
+  def from(source: HTMLVideoElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLVideoElement, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: SVGElement): typings.pixiJs.PIXI.BaseTexture = js.native
+  def from(source: SVGElement, options: js.UndefOr[scala.Nothing], strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: SVGElement, options: js.Any): typings.pixiJs.PIXI.BaseTexture = js.native
   def from(source: SVGElement, options: js.Any, strict: Boolean): typings.pixiJs.PIXI.BaseTexture = js.native
   /**

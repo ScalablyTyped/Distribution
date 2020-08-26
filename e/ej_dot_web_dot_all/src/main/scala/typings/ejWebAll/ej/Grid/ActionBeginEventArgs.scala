@@ -4,155 +4,224 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionBeginEventArgs extends js.Object {
   /** Returns the cancel option value.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** Returns the current grouped column field name.
     */
-  var columnName: js.UndefOr[String] = js.undefined
+  var columnName: js.UndefOr[String] = js.native
   /** Returns the column sort direction.
     */
-  var columnSortDirection: js.UndefOr[String] = js.undefined
+  var columnSortDirection: js.UndefOr[String] = js.native
   /** Returns type of the column like number, string and so on.
     */
-  var columnType: js.UndefOr[String] = js.undefined
+  var columnType: js.UndefOr[String] = js.native
   /** Returns current filtering object.
     */
-  var currentFilterObject: js.UndefOr[js.Any] = js.undefined
+  var currentFilterObject: js.UndefOr[js.Any] = js.native
   /** Returns current filtering column field name.
     */
-  var currentFilteringColumn: js.UndefOr[js.Any] = js.undefined
+  var currentFilteringColumn: js.UndefOr[js.Any] = js.native
   /** Returns the current selected page number.
     */
-  var currentPage: js.UndefOr[Double] = js.undefined
+  var currentPage: js.UndefOr[Double] = js.native
   /** Returns the record object (JSON).
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** Returns the dataSource.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[js.Any] = js.native
   /** Returns the end row index of that current page.
     */
-  var endIndex: js.UndefOr[Double] = js.undefined
+  var endIndex: js.UndefOr[Double] = js.native
   /** Returns filter details.
     */
-  var filterCollection: js.UndefOr[js.Any] = js.undefined
+  var filterCollection: js.UndefOr[js.Any] = js.native
   /** Returns the excel filter model.
     */
-  var filtermodel: js.UndefOr[js.Any] = js.undefined
+  var filtermodel: js.UndefOr[js.Any] = js.native
   /** Returns the foreign key record object (JSON).
     */
-  var foreignKeyData: js.UndefOr[js.Any] = js.undefined
+  var foreignKeyData: js.UndefOr[js.Any] = js.native
   /** Returns the customfilter option value.
     */
-  var isCustomFilter: js.UndefOr[Boolean] = js.undefined
+  var isCustomFilter: js.UndefOr[Boolean] = js.native
   /** Returns the grid model.
     */
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[js.Any] = js.native
   /** Returns the current action event type.
     */
-  var originalEventType: js.UndefOr[String] = js.undefined
+  var originalEventType: js.UndefOr[String] = js.native
   /** Returns the previous selected page number.
     */
-  var previousPage: js.UndefOr[Double] = js.undefined
+  var previousPage: js.UndefOr[Double] = js.native
   /** Returns primary key.
     */
-  var primaryKey: js.UndefOr[String] = js.undefined
+  var primaryKey: js.UndefOr[String] = js.native
   /** Returns primary key value.
     */
-  var primaryKeyValue: js.UndefOr[String] = js.undefined
+  var primaryKeyValue: js.UndefOr[String] = js.native
   /** Returns the query manager.
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[js.Any] = js.native
   /** Returns request type.
     */
-  var requestType: js.UndefOr[String] = js.undefined
+  var requestType: js.UndefOr[String] = js.native
   /** Returns current edited row.
     */
-  var row: js.UndefOr[js.Any] = js.undefined
+  var row: js.UndefOr[js.Any] = js.native
   /** Returns the record object (JSON).
     */
-  var rowData: js.UndefOr[js.Any] = js.undefined
+  var rowData: js.UndefOr[js.Any] = js.native
   /** Returns the edited row index.
     */
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.native
   /** Returns the selected row index.
     */
-  var selectedRow: js.UndefOr[Double] = js.undefined
+  var selectedRow: js.UndefOr[Double] = js.native
   /** Returns the start row index of that current page.
     */
-  var startIndex: js.UndefOr[Double] = js.undefined
+  var startIndex: js.UndefOr[Double] = js.native
   /** Returns selected row for delete.
     */
-  var tr: js.UndefOr[js.Any] = js.undefined
+  var tr: js.UndefOr[js.Any] = js.native
   /** Returns the name of the event.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object ActionBeginEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    columnName: String = null,
-    columnSortDirection: String = null,
-    columnType: String = null,
-    currentFilterObject: js.Any = null,
-    currentFilteringColumn: js.Any = null,
-    currentPage: js.UndefOr[Double] = js.undefined,
-    data: js.Any = null,
-    dataSource: js.Any = null,
-    endIndex: js.UndefOr[Double] = js.undefined,
-    filterCollection: js.Any = null,
-    filtermodel: js.Any = null,
-    foreignKeyData: js.Any = null,
-    isCustomFilter: js.UndefOr[Boolean] = js.undefined,
-    model: js.Any = null,
-    originalEventType: String = null,
-    previousPage: js.UndefOr[Double] = js.undefined,
-    primaryKey: String = null,
-    primaryKeyValue: String = null,
-    query: js.Any = null,
-    requestType: String = null,
-    row: js.Any = null,
-    rowData: js.Any = null,
-    rowIndex: js.UndefOr[Double] = js.undefined,
-    selectedRow: js.UndefOr[Double] = js.undefined,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    tr: js.Any = null,
-    `type`: String = null
-  ): ActionBeginEventArgs = {
+  def apply(): ActionBeginEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
-    if (columnSortDirection != null) __obj.updateDynamic("columnSortDirection")(columnSortDirection.asInstanceOf[js.Any])
-    if (columnType != null) __obj.updateDynamic("columnType")(columnType.asInstanceOf[js.Any])
-    if (currentFilterObject != null) __obj.updateDynamic("currentFilterObject")(currentFilterObject.asInstanceOf[js.Any])
-    if (currentFilteringColumn != null) __obj.updateDynamic("currentFilteringColumn")(currentFilteringColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(currentPage)) __obj.updateDynamic("currentPage")(currentPage.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(endIndex)) __obj.updateDynamic("endIndex")(endIndex.get.asInstanceOf[js.Any])
-    if (filterCollection != null) __obj.updateDynamic("filterCollection")(filterCollection.asInstanceOf[js.Any])
-    if (filtermodel != null) __obj.updateDynamic("filtermodel")(filtermodel.asInstanceOf[js.Any])
-    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCustomFilter)) __obj.updateDynamic("isCustomFilter")(isCustomFilter.get.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (originalEventType != null) __obj.updateDynamic("originalEventType")(originalEventType.asInstanceOf[js.Any])
-    if (!js.isUndefined(previousPage)) __obj.updateDynamic("previousPage")(previousPage.get.asInstanceOf[js.Any])
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (primaryKeyValue != null) __obj.updateDynamic("primaryKeyValue")(primaryKeyValue.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectedRow)) __obj.updateDynamic("selectedRow")(selectedRow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionBeginEventArgs]
   }
+  @scala.inline
+  implicit class ActionBeginEventArgsOps[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    @scala.inline
+    def setColumnSortDirection(value: String): Self = this.set("columnSortDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnSortDirection: Self = this.set("columnSortDirection", js.undefined)
+    @scala.inline
+    def setColumnType(value: String): Self = this.set("columnType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnType: Self = this.set("columnType", js.undefined)
+    @scala.inline
+    def setCurrentFilterObject(value: js.Any): Self = this.set("currentFilterObject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentFilterObject: Self = this.set("currentFilterObject", js.undefined)
+    @scala.inline
+    def setCurrentFilteringColumn(value: js.Any): Self = this.set("currentFilteringColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentFilteringColumn: Self = this.set("currentFilteringColumn", js.undefined)
+    @scala.inline
+    def setCurrentPage(value: Double): Self = this.set("currentPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentPage: Self = this.set("currentPage", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("endIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndIndex: Self = this.set("endIndex", js.undefined)
+    @scala.inline
+    def setFilterCollection(value: js.Any): Self = this.set("filterCollection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterCollection: Self = this.set("filterCollection", js.undefined)
+    @scala.inline
+    def setFiltermodel(value: js.Any): Self = this.set("filtermodel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFiltermodel: Self = this.set("filtermodel", js.undefined)
+    @scala.inline
+    def setForeignKeyData(value: js.Any): Self = this.set("foreignKeyData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForeignKeyData: Self = this.set("foreignKeyData", js.undefined)
+    @scala.inline
+    def setIsCustomFilter(value: Boolean): Self = this.set("isCustomFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCustomFilter: Self = this.set("isCustomFilter", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setOriginalEventType(value: String): Self = this.set("originalEventType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalEventType: Self = this.set("originalEventType", js.undefined)
+    @scala.inline
+    def setPreviousPage(value: Double): Self = this.set("previousPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousPage: Self = this.set("previousPage", js.undefined)
+    @scala.inline
+    def setPrimaryKey(value: String): Self = this.set("primaryKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKey: Self = this.set("primaryKey", js.undefined)
+    @scala.inline
+    def setPrimaryKeyValue(value: String): Self = this.set("primaryKeyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryKeyValue: Self = this.set("primaryKeyValue", js.undefined)
+    @scala.inline
+    def setQuery(value: js.Any): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setRequestType(value: String): Self = this.set("requestType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestType: Self = this.set("requestType", js.undefined)
+    @scala.inline
+    def setRow(value: js.Any): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowData: Self = this.set("rowData", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    @scala.inline
+    def setSelectedRow(value: Double): Self = this.set("selectedRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedRow: Self = this.set("selectedRow", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+    @scala.inline
+    def setTr(value: js.Any): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTr: Self = this.set("tr", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

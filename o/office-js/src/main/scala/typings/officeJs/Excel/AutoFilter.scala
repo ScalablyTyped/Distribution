@@ -44,6 +44,8 @@ trait AutoFilter extends ClientObject {
   @JSName("apply")
   def apply(range: String): Unit = js.native
   @JSName("apply")
+  def apply(range: String, columnIndex: js.UndefOr[scala.Nothing], criteria: FilterCriteria): Unit = js.native
+  @JSName("apply")
   def apply(range: String, columnIndex: Double): Unit = js.native
   @JSName("apply")
   def apply(range: String, columnIndex: Double, criteria: FilterCriteria): Unit = js.native
@@ -58,6 +60,8 @@ trait AutoFilter extends ClientObject {
     */
   @JSName("apply")
   def apply(range: Range): Unit = js.native
+  @JSName("apply")
+  def apply(range: Range, columnIndex: js.UndefOr[scala.Nothing], criteria: FilterCriteria): Unit = js.native
   @JSName("apply")
   def apply(range: Range, columnIndex: Double): Unit = js.native
   @JSName("apply")

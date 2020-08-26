@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SystemService () extends js.Object {
   def this(config: ServiceConfiguration) = this()
+  def this(config: js.UndefOr[scala.Nothing], messageConsumer: MessageConsumer) = this()
   def this(config: ServiceConfiguration, messageConsumer: MessageConsumer) = this()
   var config: ServiceConfiguration = js.native
   var logger: typings.systemLogger.mod.Logger = js.native

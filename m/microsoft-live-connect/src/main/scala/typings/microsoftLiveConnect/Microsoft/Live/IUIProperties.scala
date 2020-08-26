@@ -7,18 +7,19 @@ import scala.scalajs.js.annotation._
 /**
   * 'Properties' object passed into the WL.ui method.
   */
+@js.native
 trait IUIProperties extends js.Object {
   /**
     * The value of the id attribute of the <div> tag to display the button
     * in.
     */
-  var element: String
+  var element: String = js.native
   /**
     * Specifies the type of button to display. Specify "signin" to display
     * the Live Connect sign-in button. Specify "skydrivepicker" to display
     * the SkyDrive button.
     */
-  var name: String
+  var name: String = js.native
   /**
     * Windows Store apps using JavaScript: not applicable.
     * Web apps: Optional. If the name property is set to "signin", the
@@ -30,15 +31,35 @@ trait IUIProperties extends js.Object {
     * section.
     * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String] = js.native
 }
 
 object IUIProperties {
   @scala.inline
-  def apply(element: String, name: String, state: String = null): IUIProperties = {
+  def apply(element: String, name: String): IUIProperties = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUIProperties]
   }
+  @scala.inline
+  implicit class IUIPropertiesOps[Self <: IUIProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElement(value: String): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

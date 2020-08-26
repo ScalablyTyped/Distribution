@@ -12,7 +12,7 @@ Constant-time comparison algorithm to prevent timing attacks.
 | Keywords           | safe-compare, secure-compare, compare, time-equivalent-comparison, time, equivalent, timing, attack, constant-time, constant, time |
 | # releases         | 5 |
 | # dependents       | 16 |
-| # downloads        | 164186 |
+| # downloads        | 175474 |
 | # stars            | 0 |
 
 ## Links

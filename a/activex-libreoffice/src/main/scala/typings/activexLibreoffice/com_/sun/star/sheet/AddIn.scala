@@ -53,6 +53,7 @@ import scala.scalajs.js.annotation._
   * implementing the {@link VolatileResult} service, that contains a volatile result. Subsequent calls with the same parameters must return the same
   * object. An `any` return value can contain any of the other types.
   */
+@js.native
 trait AddIn
   extends XAddIn
      with XServiceName

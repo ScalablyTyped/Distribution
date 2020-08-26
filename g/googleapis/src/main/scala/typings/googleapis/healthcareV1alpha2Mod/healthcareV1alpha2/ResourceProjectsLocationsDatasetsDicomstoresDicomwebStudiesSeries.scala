@@ -32,6 +32,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeries protecte
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesDelete,
@@ -69,6 +70,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeries protecte
     */
   def metadata(): GaxiosPromise[SchemaHttpBody] = js.native
   def metadata(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def metadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def metadata(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesMetadata): GaxiosPromise[SchemaHttpBody] = js.native
   def metadata(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesMetadata,
@@ -106,6 +108,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeries protecte
     */
   def retrieveSeries(): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveSeries(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def retrieveSeries(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveSeries(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesRetrieveseries): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveSeries(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesRetrieveseries,
@@ -142,6 +145,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeries protecte
     */
   def searchForInstances(): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForInstances(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def searchForInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForInstances(params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesSearchforinstances): GaxiosPromise[SchemaHttpBody] = js.native
   def searchForInstances(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesSearchforinstances,

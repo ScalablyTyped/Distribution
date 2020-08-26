@@ -18,11 +18,30 @@ trait EbsBlockDevice extends js.Object {
 
 object EbsBlockDevice {
   @scala.inline
-  def apply(Device: String = null, VolumeSpecification: VolumeSpecification = null): EbsBlockDevice = {
+  def apply(): EbsBlockDevice = {
     val __obj = js.Dynamic.literal()
-    if (Device != null) __obj.updateDynamic("Device")(Device.asInstanceOf[js.Any])
-    if (VolumeSpecification != null) __obj.updateDynamic("VolumeSpecification")(VolumeSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[EbsBlockDevice]
   }
+  @scala.inline
+  implicit class EbsBlockDeviceOps[Self <: EbsBlockDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevice(value: String): Self = this.set("Device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("Device", js.undefined)
+    @scala.inline
+    def setVolumeSpecification(value: VolumeSpecification): Self = this.set("VolumeSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSpecification: Self = this.set("VolumeSpecification", js.undefined)
+  }
+  
 }
 

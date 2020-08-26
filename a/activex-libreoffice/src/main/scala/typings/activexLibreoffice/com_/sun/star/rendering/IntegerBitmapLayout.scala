@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   * This structure collects all necessary information to describe the memory layout of a bitmap having integer color channels
   * @since OOo 2.0
   */
+@js.native
 trait IntegerBitmapLayout extends js.Object {
   /**
     * Color space the bitmap colors shall be interpreted within.
@@ -19,7 +20,7 @@ trait IntegerBitmapLayout extends js.Object {
     * entries.
     * @see XBitmapPalette
     */
-  var ColorSpace: XIntegerBitmapColorSpace
+  var ColorSpace: XIntegerBitmapColorSpace = js.native
   /**
     * This member determines the bit order (only relevant if a pixel uses less than 8 bits, of course).
     *
@@ -29,7 +30,7 @@ trait IntegerBitmapLayout extends js.Object {
     * Example: for a 1bpp bitmap, each pixel is represented by exactly one bit. If this member is `TRUE` , the first pixel is the MSB of the first byte, and
     * the eighth pixel is the LSB of the first byte. If this member is `FALSE` , it's just the opposite.
     */
-  var IsMsbFirst: Boolean
+  var IsMsbFirst: Boolean = js.native
   /**
     * This member determines whether the bitmap data are actually indices into a color map.
     *
@@ -37,7 +38,7 @@ trait IntegerBitmapLayout extends js.Object {
     * If this member references a valid palette, one of the pixel components as returned by the color space referenced from the {@link ColorSpace} is
     * required to be of type {@link ColorComponentTag.INDEX} . That component is then used to index the palette.
     */
-  var Palette: XBitmapPalette
+  var Palette: XBitmapPalette = js.native
   /**
     * Byte offset between the start of two consecutive planes.
     *
@@ -46,25 +47,25 @@ trait IntegerBitmapLayout extends js.Object {
     * pixel lies consecutively in memory. For a planar layout, the first channel of all pixel is stored consecutive, followed by the second channel, and so
     * forth.
     */
-  var PlaneStride: Double
+  var PlaneStride: Double = js.native
   /**
     * Number of data bytes per scanline.
     *
     * This value must not be negative
     */
-  var ScanLineBytes: Double
+  var ScanLineBytes: Double = js.native
   /**
     * Byte offset between the start of two consecutive scanlines.
     *
     * This value is permitted to be negative, denoting a bitmap whose content is flipped at the x axis.
     */
-  var ScanLineStride: Double
+  var ScanLineStride: Double = js.native
   /**
     * Number of scanlines for this bitmap.
     *
     * This value must not be negative
     */
-  var ScanLines: Double
+  var ScanLines: Double = js.native
 }
 
 object IntegerBitmapLayout {
@@ -81,5 +82,32 @@ object IntegerBitmapLayout {
     val __obj = js.Dynamic.literal(ColorSpace = ColorSpace.asInstanceOf[js.Any], IsMsbFirst = IsMsbFirst.asInstanceOf[js.Any], Palette = Palette.asInstanceOf[js.Any], PlaneStride = PlaneStride.asInstanceOf[js.Any], ScanLineBytes = ScanLineBytes.asInstanceOf[js.Any], ScanLineStride = ScanLineStride.asInstanceOf[js.Any], ScanLines = ScanLines.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerBitmapLayout]
   }
+  @scala.inline
+  implicit class IntegerBitmapLayoutOps[Self <: IntegerBitmapLayout] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorSpace(value: XIntegerBitmapColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsMsbFirst(value: Boolean): Self = this.set("IsMsbFirst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPalette(value: XBitmapPalette): Self = this.set("Palette", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlaneStride(value: Double): Self = this.set("PlaneStride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScanLineBytes(value: Double): Self = this.set("ScanLineBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScanLineStride(value: Double): Self = this.set("ScanLineStride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScanLines(value: Double): Self = this.set("ScanLines", value.asInstanceOf[js.Any])
+  }
+  
 }
 

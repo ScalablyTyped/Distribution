@@ -9,6 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CellTypeObject
   extends GridSettings
      with /**
@@ -26,40 +27,55 @@ trait CellTypeObject
       /* cellProperties */ CellProperties, 
       Base
     ]
-  ] = js.undefined
+  ] = js.native
   @JSName("renderer")
-  var renderer_CellTypeObject: js.UndefOr[typings.handsontable.mod.Handsontable.renderers.Base] = js.undefined
+  var renderer_CellTypeObject: js.UndefOr[typings.handsontable.mod.Handsontable.renderers.Base] = js.native
   @JSName("validator")
-  var validator_CellTypeObject: js.UndefOr[typings.handsontable.mod.Handsontable.validators.Base] = js.undefined
+  var validator_CellTypeObject: js.UndefOr[typings.handsontable.mod.Handsontable.validators.Base] = js.native
 }
 
 object CellTypeObject {
   @scala.inline
-  def apply(
-    GridSettings: GridSettings = null,
-    StringDictionary: /**
-    * Custom properties which will be accessible in `cellProperties`
-    */
-  /* key */ StringDictionary[js.Any] = null,
-    editor: Instantiable6[
-      /* hotInstance */ Core, 
-      /* row */ Double, 
-      /* col */ Double, 
-      /* prop */ String | Double, 
-      /* TD */ HTMLTableCellElement, 
-      /* cellProperties */ CellProperties, 
-      Base
-    ] = null,
-    renderer: (/* instance */ Core, /* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ CellValue, /* cellProperties */ CellProperties) => HTMLTableCellElement | Unit = null,
-    validator: typings.handsontable.mod.Handsontable.validators.Base = null
-  ): CellTypeObject = {
+  def apply(): CellTypeObject = {
     val __obj = js.Dynamic.literal()
-    if (GridSettings != null) js.Dynamic.global.Object.assign(__obj, GridSettings)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(js.Any.fromFunction7(renderer))
-    if (validator != null) __obj.updateDynamic("validator")(validator.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellTypeObject]
   }
+  @scala.inline
+  implicit class CellTypeObjectOps[Self <: CellTypeObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEditor(
+      value: Instantiable6[
+          /* hotInstance */ Core, 
+          /* row */ Double, 
+          /* col */ Double, 
+          /* prop */ String | Double, 
+          /* TD */ HTMLTableCellElement, 
+          /* cellProperties */ CellProperties, 
+          Base
+        ]
+    ): Self = this.set("editor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditor: Self = this.set("editor", js.undefined)
+    @scala.inline
+    def setRenderer(
+      value: (/* instance */ Core, /* TD */ HTMLTableCellElement, /* row */ Double, /* col */ Double, /* prop */ String | Double, /* value */ CellValue, /* cellProperties */ CellProperties) => HTMLTableCellElement | Unit
+    ): Self = this.set("renderer", js.Any.fromFunction7(value))
+    @scala.inline
+    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    @scala.inline
+    def setValidator(value: typings.handsontable.mod.Handsontable.validators.Base): Self = this.set("validator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidator: Self = this.set("validator", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Webpack block for style loader, file loader, url loader and friends.
 | Keywords           | webpack, webpack-blocks |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 134355 |
+| # downloads        | 128288 |
 | # stars            | 0 |
 
 ## Links

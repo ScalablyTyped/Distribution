@@ -19,7 +19,7 @@ trait AllocateAddressResult extends js.Object {
     */
   var CustomerOwnedIpv4Pool: js.UndefOr[String] = js.native
   /**
-    * Indicates whether this Elastic IP address is for use with instances in EC2-Classic (standard) or instances in a VPC (vpc).
+    * Indicates whether the Elastic IP address is for use with instances in a VPC (vpc) or instances in EC2-Classic (standard).
     */
   var Domain: js.UndefOr[DomainType] = js.native
   /**
@@ -38,24 +38,50 @@ trait AllocateAddressResult extends js.Object {
 
 object AllocateAddressResult {
   @scala.inline
-  def apply(
-    AllocationId: String = null,
-    CustomerOwnedIp: String = null,
-    CustomerOwnedIpv4Pool: String = null,
-    Domain: DomainType = null,
-    NetworkBorderGroup: String = null,
-    PublicIp: String = null,
-    PublicIpv4Pool: String = null
-  ): AllocateAddressResult = {
+  def apply(): AllocateAddressResult = {
     val __obj = js.Dynamic.literal()
-    if (AllocationId != null) __obj.updateDynamic("AllocationId")(AllocationId.asInstanceOf[js.Any])
-    if (CustomerOwnedIp != null) __obj.updateDynamic("CustomerOwnedIp")(CustomerOwnedIp.asInstanceOf[js.Any])
-    if (CustomerOwnedIpv4Pool != null) __obj.updateDynamic("CustomerOwnedIpv4Pool")(CustomerOwnedIpv4Pool.asInstanceOf[js.Any])
-    if (Domain != null) __obj.updateDynamic("Domain")(Domain.asInstanceOf[js.Any])
-    if (NetworkBorderGroup != null) __obj.updateDynamic("NetworkBorderGroup")(NetworkBorderGroup.asInstanceOf[js.Any])
-    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
-    if (PublicIpv4Pool != null) __obj.updateDynamic("PublicIpv4Pool")(PublicIpv4Pool.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllocateAddressResult]
   }
+  @scala.inline
+  implicit class AllocateAddressResultOps[Self <: AllocateAddressResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllocationId(value: String): Self = this.set("AllocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllocationId: Self = this.set("AllocationId", js.undefined)
+    @scala.inline
+    def setCustomerOwnedIp(value: String): Self = this.set("CustomerOwnedIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOwnedIp: Self = this.set("CustomerOwnedIp", js.undefined)
+    @scala.inline
+    def setCustomerOwnedIpv4Pool(value: String): Self = this.set("CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerOwnedIpv4Pool: Self = this.set("CustomerOwnedIpv4Pool", js.undefined)
+    @scala.inline
+    def setDomain(value: DomainType): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomain: Self = this.set("Domain", js.undefined)
+    @scala.inline
+    def setNetworkBorderGroup(value: String): Self = this.set("NetworkBorderGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkBorderGroup: Self = this.set("NetworkBorderGroup", js.undefined)
+    @scala.inline
+    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+    @scala.inline
+    def setPublicIpv4Pool(value: String): Self = this.set("PublicIpv4Pool", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIpv4Pool: Self = this.set("PublicIpv4Pool", js.undefined)
+  }
+  
 }
 

@@ -11,11 +11,92 @@ trait Keys extends js.Object {
   def apply(Item: String): Key = js.native
   def apply(Item: Double): Key = js.native
   def Append(Item: String): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: String
+  ): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: String, Type: js.UndefOr[scala.Nothing], Column: String): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: String,
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: String, Type: js.UndefOr[scala.Nothing], Column: String, RelatedTable: String): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: String,
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: String, Type: js.UndefOr[scala.Nothing], Column: SafeArray[String]): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: SafeArray[String],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: String, Type: js.UndefOr[scala.Nothing], Column: SafeArray[String], RelatedTable: String): Unit = js.native
+  def Append(
+    Item: String,
+    Type: js.UndefOr[scala.Nothing],
+    Column: SafeArray[String],
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: String, Type: KeyTypeEnum): Unit = js.native
+  def Append(
+    Item: String,
+    Type: KeyTypeEnum,
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: String, Type: KeyTypeEnum, Column: js.UndefOr[scala.Nothing], RelatedTable: String): Unit = js.native
+  def Append(
+    Item: String,
+    Type: KeyTypeEnum,
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: String, Type: KeyTypeEnum, Column: String): Unit = js.native
+  def Append(
+    Item: String,
+    Type: KeyTypeEnum,
+    Column: String,
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: String, Type: KeyTypeEnum, Column: String, RelatedTable: String): Unit = js.native
   def Append(Item: String, Type: KeyTypeEnum, Column: String, RelatedTable: String, RelatedColumn: String): Unit = js.native
   def Append(Item: String, Type: KeyTypeEnum, Column: SafeArray[String]): Unit = js.native
+  def Append(
+    Item: String,
+    Type: KeyTypeEnum,
+    Column: SafeArray[String],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: String, Type: KeyTypeEnum, Column: SafeArray[String], RelatedTable: String): Unit = js.native
   def Append(
     Item: String,
@@ -30,11 +111,92 @@ trait Keys extends js.Object {
     * @param RelatedColumn [RelatedColumn='']
     */
   def Append(Item: Key): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: String
+  ): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: Key, Type: js.UndefOr[scala.Nothing], Column: String): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: String,
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: Key, Type: js.UndefOr[scala.Nothing], Column: String, RelatedTable: String): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: String,
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: Key, Type: js.UndefOr[scala.Nothing], Column: SafeArray[String]): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: SafeArray[String],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: Key, Type: js.UndefOr[scala.Nothing], Column: SafeArray[String], RelatedTable: String): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: js.UndefOr[scala.Nothing],
+    Column: SafeArray[String],
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
+  def Append(Item: Key, Type: KeyTypeEnum, Column: js.UndefOr[scala.Nothing], RelatedTable: String): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: js.UndefOr[scala.Nothing],
+    RelatedTable: String,
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: String): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: String,
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: String, RelatedTable: String): Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: String, RelatedTable: String, RelatedColumn: String): Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: SafeArray[String]): Unit = js.native
+  def Append(
+    Item: Key,
+    Type: KeyTypeEnum,
+    Column: SafeArray[String],
+    RelatedTable: js.UndefOr[scala.Nothing],
+    RelatedColumn: String
+  ): Unit = js.native
   def Append(Item: Key, Type: KeyTypeEnum, Column: SafeArray[String], RelatedTable: String): Unit = js.native
   def Append(
     Item: Key,

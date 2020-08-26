@@ -14,64 +14,89 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ImgHTMLAttributes[T] extends HTMLAttributes[T] {
-  var alt: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
-  var crossorigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
-  var decoding: js.UndefOr[async | auto | sync] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+  var crossorigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+  var decoding: js.UndefOr[async | auto | sync] = js.native
+  var height: js.UndefOr[Double | String] = js.native
   var loading: js.UndefOr[
     eager | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.`lazy`
-  ] = js.undefined
-  var referrerPolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.undefined
-  var referrerpolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.undefined
-  var sizes: js.UndefOr[String] = js.undefined
-  var src: js.UndefOr[String] = js.undefined
-  var srcSet: js.UndefOr[String] = js.undefined
-  var srcset: js.UndefOr[String] = js.undefined
-  var useMap: js.UndefOr[String] = js.undefined
-  var usemap: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  ] = js.native
+  var referrerPolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.native
+  var referrerpolicy: js.UndefOr[`no-referrer` | origin | `unsafe-url`] = js.native
+  var sizes: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.native
+  var srcset: js.UndefOr[String] = js.native
+  var useMap: js.UndefOr[String] = js.native
+  var usemap: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object ImgHTMLAttributes {
   @scala.inline
-  def apply[T](
-    HTMLAttributes: HTMLAttributes[T] = null,
-    alt: String = null,
-    crossOrigin: anonymous | `use-credentials` | _empty = null,
-    crossorigin: anonymous | `use-credentials` | _empty = null,
-    decoding: async | auto | sync = null,
-    height: Double | String = null,
-    loading: eager | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.`lazy` = null,
-    referrerPolicy: `no-referrer` | origin | `unsafe-url` = null,
-    referrerpolicy: `no-referrer` | origin | `unsafe-url` = null,
-    sizes: String = null,
-    src: String = null,
-    srcSet: String = null,
-    srcset: String = null,
-    useMap: String = null,
-    usemap: String = null,
-    width: Double | String = null
-  ): ImgHTMLAttributes[T] = {
+  def apply[T](): ImgHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (HTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (crossorigin != null) __obj.updateDynamic("crossorigin")(crossorigin.asInstanceOf[js.Any])
-    if (decoding != null) __obj.updateDynamic("decoding")(decoding.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (referrerpolicy != null) __obj.updateDynamic("referrerpolicy")(referrerpolicy.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (srcSet != null) __obj.updateDynamic("srcSet")(srcSet.asInstanceOf[js.Any])
-    if (srcset != null) __obj.updateDynamic("srcset")(srcset.asInstanceOf[js.Any])
-    if (useMap != null) __obj.updateDynamic("useMap")(useMap.asInstanceOf[js.Any])
-    if (usemap != null) __obj.updateDynamic("usemap")(usemap.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImgHTMLAttributes[T]]
   }
+  @scala.inline
+  implicit class ImgHTMLAttributesOps[Self <: ImgHTMLAttributes[_], T] (val x: Self with ImgHTMLAttributes[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = this.set("crossOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrossOrigin: Self = this.set("crossOrigin", js.undefined)
+    @scala.inline
+    def setDecoding(value: async | auto | sync): Self = this.set("decoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecoding: Self = this.set("decoding", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLoading(value: eager | typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.`lazy`): Self = this.set("loading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoading: Self = this.set("loading", js.undefined)
+    @scala.inline
+    def setReferrerPolicy(value: `no-referrer` | origin | `unsafe-url`): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
+    @scala.inline
+    def setSizes(value: String): Self = this.set("sizes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizes: Self = this.set("sizes", js.undefined)
+    @scala.inline
+    def setSrc(value: String): Self = this.set("src", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrc: Self = this.set("src", js.undefined)
+    @scala.inline
+    def setSrcSet(value: String): Self = this.set("srcSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcSet: Self = this.set("srcSet", js.undefined)
+    @scala.inline
+    def setUseMap(value: String): Self = this.set("useMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseMap: Self = this.set("useMap", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -1,38 +1,40 @@
 package typings.stripe.mod.paymentIntents
 
-import typings.stripe.mod.IDateFilter
 import typings.stripe.mod.IListOptionsCreated
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPaymentIntentListOptions extends IListOptionsCreated {
   /**
     * Only return PaymentIntents for the customer specified by this customer ID.
     */
-  var customer: js.UndefOr[String] = js.undefined
+  var customer: js.UndefOr[String] = js.native
 }
 
 object IPaymentIntentListOptions {
   @scala.inline
-  def apply(
-    created: String | IDateFilter = null,
-    customer: String = null,
-    ending_before: String = null,
-    expand: js.Array[String] = null,
-    include: js.Array[String] = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    starting_after: String = null
-  ): IPaymentIntentListOptions = {
+  def apply(): IPaymentIntentListOptions = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (customer != null) __obj.updateDynamic("customer")(customer.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentListOptions]
   }
+  @scala.inline
+  implicit class IPaymentIntentListOptionsOps[Self <: IPaymentIntentListOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomer(value: String): Self = this.set("customer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomer: Self = this.set("customer", js.undefined)
+  }
+  
 }
 

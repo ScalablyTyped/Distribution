@@ -12,7 +12,7 @@ Handles keyboard shortcuts in the browser
 | Keywords           | keyboard, shortcuts, events, browser |
 | # releases         | 2 |
 | # dependents       | 22 |
-| # downloads        | 614776 |
+| # downloads        | 627693 |
 | # stars            | 9 |
 
 ## Links

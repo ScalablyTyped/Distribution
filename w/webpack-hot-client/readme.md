@@ -12,7 +12,7 @@ A client for enabling, and interacting with, webpack Hot Module Replacement
 | Keywords           | webpack |
 | # releases         | 38 |
 | # dependents       | 55 |
-| # downloads        | 3719368 |
+| # downloads        | 3646832 |
 | # stars            | 0 |
 
 ## Links

@@ -70,14 +70,51 @@ object SamplingRuleArgs {
     serviceName: Input[String],
     serviceType: Input[String],
     urlPath: Input[String],
-    version: Input[Double],
-    attributes: Input[StringDictionary[Input[String]]] = null,
-    ruleName: Input[String] = null
+    version: Input[Double]
   ): SamplingRuleArgs = {
     val __obj = js.Dynamic.literal(fixedRate = fixedRate.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], reservoirSize = reservoirSize.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any], urlPath = urlPath.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (ruleName != null) __obj.updateDynamic("ruleName")(ruleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplingRuleArgs]
   }
+  @scala.inline
+  implicit class SamplingRuleArgsOps[Self <: SamplingRuleArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFixedRate(value: Input[Double]): Self = this.set("fixedRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHost(value: Input[String]): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHttpMethod(value: Input[String]): Self = this.set("httpMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPriority(value: Input[Double]): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReservoirSize(value: Input[Double]): Self = this.set("reservoirSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResourceArn(value: Input[String]): Self = this.set("resourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceName(value: Input[String]): Self = this.set("serviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceType(value: Input[String]): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrlPath(value: Input[String]): Self = this.set("urlPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVersion(value: Input[Double]): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributes(value: Input[StringDictionary[Input[String]]]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setRuleName(value: Input[String]): Self = this.set("ruleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleName: Self = this.set("ruleName", js.undefined)
+  }
+  
 }
 

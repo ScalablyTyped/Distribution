@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined keyof react-native-vector-icons.react-native-vector-icons/FontAwesome5.Omit<{  regular  :0,   light  :1,   solid  :2,   brand  :3}, 'regular'> */
+/* Inlined keyof react-native-vector-icons.react-native-vector-icons/FontAwesome5.Omit<{  regular :0,   light :1,   solid :2,   brand :3}, 'regular'> */
 /* Rewritten from type alias, can be one of: 
   - typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.light
   - typings.reactNativeVectorIcons.reactNativeVectorIconsStrings.solid

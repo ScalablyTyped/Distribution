@@ -40,13 +40,111 @@ trait CommandBar extends js.Object {
   def Controls(Index: Double): CommandBarControl = js.native
   def Delete(): Unit = js.native
   def FindControl(): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean,
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.UndefOr[scala.Nothing], Tag: js.Any): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.Any,
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.Any,
+    Visible: Boolean,
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.Any,
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.Any,
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean,
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any): CommandBarControl = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.Any,
+    Tag: js.Any,
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControl = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any, Visible: Boolean, Recursive: Boolean): CommandBarControl = js.native
   def FindControl(Type: js.Any): CommandBarControl = js.native
+  def FindControl(
+    Type: js.Any,
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.UndefOr[scala.Nothing], Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControl = js.native
+  def FindControl(
+    Type: js.Any,
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean,
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.UndefOr[scala.Nothing], Tag: js.Any): CommandBarControl = js.native
+  def FindControl(
+    Type: js.Any,
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.Any,
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean, Recursive: Boolean): CommandBarControl = js.native
   def FindControl(Type: js.Any, Id: js.Any): CommandBarControl = js.native
+  def FindControl(
+    Type: js.Any,
+    Id: js.Any,
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: js.UndefOr[scala.Nothing],
+    Recursive: Boolean
+  ): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean, Recursive: Boolean): CommandBarControl = js.native
   def FindControl(Type: js.Any, Id: js.Any, Tag: js.Any): CommandBarControl = js.native
+  def FindControl(Type: js.Any, Id: js.Any, Tag: js.Any, Visible: js.UndefOr[scala.Nothing], Recursive: Boolean): CommandBarControl = js.native
   def FindControl(Type: js.Any, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControl = js.native
   def FindControl(Type: js.Any, Id: js.Any, Tag: js.Any, Visible: Boolean, Recursive: Boolean): CommandBarControl = js.native
   def Reset(): Unit = js.native
   def ShowPopup(): Unit = js.native
+  def ShowPopup(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def ShowPopup(x: Double): Unit = js.native
   def ShowPopup(x: Double, y: Double): Unit = js.native
   def accChild(varChild: js.Any): js.Any = js.native

@@ -18,11 +18,30 @@ trait PutImagePolicyResponse extends js.Object {
 
 object PutImagePolicyResponse {
   @scala.inline
-  def apply(imageArn: ImageBuildVersionArn = null, requestId: NonEmptyString = null): PutImagePolicyResponse = {
+  def apply(): PutImagePolicyResponse = {
     val __obj = js.Dynamic.literal()
-    if (imageArn != null) __obj.updateDynamic("imageArn")(imageArn.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutImagePolicyResponse]
   }
+  @scala.inline
+  implicit class PutImagePolicyResponseOps[Self <: PutImagePolicyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageArn(value: ImageBuildVersionArn): Self = this.set("imageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageArn: Self = this.set("imageArn", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

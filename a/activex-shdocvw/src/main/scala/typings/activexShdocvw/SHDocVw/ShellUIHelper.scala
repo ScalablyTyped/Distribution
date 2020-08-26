@@ -10,8 +10,74 @@ trait ShellUIHelper extends js.Object {
   var SHDocVwDotShellUIHelper_typekey: ShellUIHelper = js.native
   def AddChannel(URL: String): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: js.Any
+  ): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.Any
+  ): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.Any,
+    Height: js.Any
+  ): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: js.UndefOr[scala.Nothing], Top: js.Any): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.Any,
+    Width: js.UndefOr[scala.Nothing],
+    Height: js.Any
+  ): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: js.UndefOr[scala.Nothing], Top: js.Any, Width: js.Any): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.UndefOr[scala.Nothing],
+    Top: js.Any,
+    Width: js.Any,
+    Height: js.Any
+  ): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String, Left: js.Any): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.Any,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.UndefOr[scala.Nothing],
+    Height: js.Any
+  ): Unit = js.native
+  def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.UndefOr[scala.Nothing], Width: js.Any): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.Any,
+    Top: js.UndefOr[scala.Nothing],
+    Width: js.Any,
+    Height: js.Any
+  ): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any): Unit = js.native
+  def AddDesktopComponent(
+    URL: String,
+    Type: String,
+    Left: js.Any,
+    Top: js.Any,
+    Width: js.UndefOr[scala.Nothing],
+    Height: js.Any
+  ): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any, Width: js.Any): Unit = js.native
   def AddDesktopComponent(URL: String, Type: String, Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
   def AddFavorite(URL: String): Unit = js.native
@@ -98,6 +164,13 @@ trait ShellUIHelper extends js.Object {
     bstrNotificationXml: String,
     bstrNotificationId: String,
     bstrNotificationTag: String,
+    startTime: js.UndefOr[scala.Nothing],
+    expirationTime: js.Any
+  ): Unit = js.native
+  def msScheduledTileNotification(
+    bstrNotificationXml: String,
+    bstrNotificationId: String,
+    bstrNotificationTag: String,
     startTime: js.Any
   ): Unit = js.native
   def msScheduledTileNotification(
@@ -124,12 +197,15 @@ trait ShellUIHelper extends js.Object {
   def msSiteModeShowThumbBar(): Unit = js.native
   def msSiteModeUpdateThumbBarButton(ButtonID: js.Any, fEnabled: Boolean, fVisible: Boolean): Unit = js.native
   def msStartPeriodicBadgeUpdate(pollingUri: String): Unit = js.native
+  def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: js.UndefOr[scala.Nothing], uiUpdateRecurrence: js.Any): Unit = js.native
   def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: js.Any): Unit = js.native
   def msStartPeriodicBadgeUpdate(pollingUri: String, startTime: js.Any, uiUpdateRecurrence: js.Any): Unit = js.native
   def msStartPeriodicTileUpdate(pollingUris: js.Any): Unit = js.native
+  def msStartPeriodicTileUpdate(pollingUris: js.Any, startTime: js.UndefOr[scala.Nothing], uiUpdateRecurrence: js.Any): Unit = js.native
   def msStartPeriodicTileUpdate(pollingUris: js.Any, startTime: js.Any): Unit = js.native
   def msStartPeriodicTileUpdate(pollingUris: js.Any, startTime: js.Any, uiUpdateRecurrence: js.Any): Unit = js.native
   def msStartPeriodicTileUpdateBatch(pollingUris: js.Any): Unit = js.native
+  def msStartPeriodicTileUpdateBatch(pollingUris: js.Any, startTime: js.UndefOr[scala.Nothing], uiUpdateRecurrence: js.Any): Unit = js.native
   def msStartPeriodicTileUpdateBatch(pollingUris: js.Any, startTime: js.Any): Unit = js.native
   def msStartPeriodicTileUpdateBatch(pollingUris: js.Any, startTime: js.Any, uiUpdateRecurrence: js.Any): Unit = js.native
   def msStopPeriodicBadgeUpdate(): Unit = js.native

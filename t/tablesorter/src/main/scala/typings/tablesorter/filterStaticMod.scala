@@ -111,7 +111,10 @@ object filterStaticMod extends js.Object {
       */
     def getOptions(table: JQuery[TElement], column: Double): js.Array[String] = js.native
     def getOptions(table: JQuery[TElement], column: Double, visibleOnly: Boolean): js.Array[String] = js.native
-    def processOptions(table: TElement, column: js.UndefOr[Double | Null], options: js.Array[_]): js.Array[String] = js.native
+    def processOptions(table: TElement, column: js.UndefOr[scala.Nothing], options: js.Array[_]): js.Array[String] = js.native
+    def processOptions(table: TElement, column: Double, options: js.Array[_]): js.Array[String] = js.native
+    def processOptions(table: TElement, column: Null, options: js.Array[_]): js.Array[String] = js.native
+    def processOptions(table: JQuery[TElement], column: js.UndefOr[scala.Nothing], options: js.Array[_]): js.Array[String] = js.native
     /**
       * Processes and sorts the options according to the options of the specified `column`.
       *
@@ -124,7 +127,8 @@ object filterStaticMod extends js.Object {
       * @param options
       * The options to add.
       */
-    def processOptions(table: JQuery[TElement], column: js.UndefOr[Double | Null], options: js.Array[_]): js.Array[String] = js.native
+    def processOptions(table: JQuery[TElement], column: Double, options: js.Array[_]): js.Array[String] = js.native
+    def processOptions(table: JQuery[TElement], column: Null, options: js.Array[_]): js.Array[String] = js.native
   }
   
 }

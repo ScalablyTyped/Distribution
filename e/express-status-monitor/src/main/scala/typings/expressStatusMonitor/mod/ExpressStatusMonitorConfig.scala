@@ -6,43 +6,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExpressStatusMonitorConfig extends js.Object {
-  var chartVisibility: js.UndefOr[Cpu] = js.undefined
-  var healthChecks: js.UndefOr[js.Array[HealthCheck]] = js.undefined
-  var ignoreStartsWith: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
-  var socketPath: js.UndefOr[String] = js.undefined
+  var chartVisibility: js.UndefOr[Cpu] = js.native
+  var healthChecks: js.UndefOr[js.Array[HealthCheck]] = js.native
+  var ignoreStartsWith: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.native
    // References a socket.io instance
-  var spans: js.UndefOr[js.Array[RetentionSpan]] = js.undefined
-  var theme: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var websocket: js.UndefOr[Server | Null] = js.undefined
+  var spans: js.UndefOr[js.Array[RetentionSpan]] = js.native
+  var theme: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var websocket: js.UndefOr[Server | Null] = js.native
 }
 
 object ExpressStatusMonitorConfig {
   @scala.inline
-  def apply(
-    chartVisibility: Cpu = null,
-    healthChecks: js.Array[HealthCheck] = null,
-    ignoreStartsWith: String = null,
-    path: String = null,
-    socketPath: String = null,
-    spans: js.Array[RetentionSpan] = null,
-    theme: String = null,
-    title: String = null,
-    websocket: js.UndefOr[Null | Server] = js.undefined
-  ): ExpressStatusMonitorConfig = {
+  def apply(): ExpressStatusMonitorConfig = {
     val __obj = js.Dynamic.literal()
-    if (chartVisibility != null) __obj.updateDynamic("chartVisibility")(chartVisibility.asInstanceOf[js.Any])
-    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks.asInstanceOf[js.Any])
-    if (ignoreStartsWith != null) __obj.updateDynamic("ignoreStartsWith")(ignoreStartsWith.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (spans != null) __obj.updateDynamic("spans")(spans.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(websocket)) __obj.updateDynamic("websocket")(websocket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpressStatusMonitorConfig]
   }
+  @scala.inline
+  implicit class ExpressStatusMonitorConfigOps[Self <: ExpressStatusMonitorConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChartVisibility(value: Cpu): Self = this.set("chartVisibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartVisibility: Self = this.set("chartVisibility", js.undefined)
+    @scala.inline
+    def setHealthChecksVarargs(value: HealthCheck*): Self = this.set("healthChecks", js.Array(value :_*))
+    @scala.inline
+    def setHealthChecks(value: js.Array[HealthCheck]): Self = this.set("healthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthChecks: Self = this.set("healthChecks", js.undefined)
+    @scala.inline
+    def setIgnoreStartsWith(value: String): Self = this.set("ignoreStartsWith", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreStartsWith: Self = this.set("ignoreStartsWith", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    @scala.inline
+    def setSpansVarargs(value: RetentionSpan*): Self = this.set("spans", js.Array(value :_*))
+    @scala.inline
+    def setSpans(value: js.Array[RetentionSpan]): Self = this.set("spans", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpans: Self = this.set("spans", js.undefined)
+    @scala.inline
+    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTheme: Self = this.set("theme", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWebsocket(value: Server): Self = this.set("websocket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsocket: Self = this.set("websocket", js.undefined)
+    @scala.inline
+    def setWebsocketNull: Self = this.set("websocket", null)
+  }
+  
 }
 

@@ -10,9 +10,9 @@ An express-based Node.js web application bootstrapping module.
 | ------------------ | :-------------: |
 | Full name          | kraken-js |
 | Keywords           | node.js, node, javascript, js, web, express, connect |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 10 |
-| # downloads        | 87258 |
+| # downloads        | 87574 |
 | # stars            | 24 |
 
 ## Links

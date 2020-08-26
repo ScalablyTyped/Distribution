@@ -1,35 +1,34 @@
 package typings.extjs.Ext.util
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IKeyMap extends IBase {
   /** [Method] Add a new binding to this KeyMap
     * @param binding Object/Object[] A single KeyMap config or an array of configs. The following config object properties are supported:
     */
-  var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Config Option] (Object/Object[][]) */
-  var binding: js.UndefOr[js.Any] = js.undefined
+  var binding: js.UndefOr[js.Any] = js.native
   /** [Method] Destroys the KeyMap instance and removes all handlers
     * @param removeTarget Boolean True to also remove the target
     */
-  var destroy: js.UndefOr[js.Function1[/* removeTarget */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var destroy: js.UndefOr[js.Function1[/* removeTarget */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Disable this KeyMap */
-  var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var disable: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Method] Enables this KeyMap */
-  var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var enable: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (String) */
-  var eventName: js.UndefOr[String] = js.undefined
+  var eventName: js.UndefOr[String] = js.native
   /** [Config Option] (Boolean) */
-  var ignoreInputFields: js.UndefOr[Boolean] = js.undefined
+  var ignoreInputFields: js.UndefOr[Boolean] = js.native
   /** [Method] Returns true if this KeyMap is enabled
     * @returns Boolean
     */
-  var isEnabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var isEnabled: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Shorthand for adding a single key listener
     * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
     * @param fn Function The function to call
@@ -42,21 +41,21 @@ trait IKeyMap extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   /** [Config Option] (Function) */
-  var processEvent: js.UndefOr[js.Any] = js.undefined
+  var processEvent: js.UndefOr[js.Any] = js.native
   /** [Config Option] (Object) */
-  var processEventScope: js.UndefOr[js.Any] = js.undefined
+  var processEventScope: js.UndefOr[js.Any] = js.native
   /** [Method] Remove a binding from this KeyMap
     * @param binding Object See for options
     */
-  var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var removeBinding: js.UndefOr[js.Function1[/* binding */ js.UndefOr[js.Any], Unit]] = js.native
   /** [Method] Convenience function for setting disabled enabled by boolean
     * @param disabled Boolean
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[js.Any] = js.native
   /** [Method] Shorthand for removing a single key listener
     * @param key Number/Number[]/Object Either the numeric key code, array of key codes or an object with the following options: {key: (number or array), shift: (true/false), ctrl: (true/false), alt: (true/false)}
     * @param fn Function The function to call
@@ -69,77 +68,91 @@ trait IKeyMap extends IBase {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object IKeyMap {
   @scala.inline
-  def apply(
-    addBinding: /* binding */ js.UndefOr[js.Any] => Unit = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    binding: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: /* removeTarget */ js.UndefOr[Boolean] => Unit = null,
-    disable: () => Unit = null,
-    enable: () => Unit = null,
-    eventName: String = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    ignoreInputFields: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IKeyMap = null,
-    isEnabled: () => Boolean = null,
-    mixins: js.Any = null,
-    on: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    processEvent: js.Any = null,
-    processEventScope: js.Any = null,
-    removeBinding: /* binding */ js.UndefOr[js.Any] => Unit = null,
-    requires: Array = null,
-    self: IClass = null,
-    setDisabled: /* disabled */ js.UndefOr[Boolean] => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    target: js.Any = null,
-    un: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit = null,
-    uses: Array = null
-  ): IKeyMap = {
+  def apply(): IKeyMap = {
     val __obj = js.Dynamic.literal()
-    if (addBinding != null) __obj.updateDynamic("addBinding")(js.Any.fromFunction1(addBinding))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (binding != null) __obj.updateDynamic("binding")(binding.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction1(destroy))
-    if (disable != null) __obj.updateDynamic("disable")(js.Any.fromFunction0(disable))
-    if (enable != null) __obj.updateDynamic("enable")(js.Any.fromFunction0(enable))
-    if (eventName != null) __obj.updateDynamic("eventName")(eventName.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (!js.isUndefined(ignoreInputFields)) __obj.updateDynamic("ignoreInputFields")(ignoreInputFields.get.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (isEnabled != null) __obj.updateDynamic("isEnabled")(js.Any.fromFunction0(isEnabled))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction3(on))
-    if (processEvent != null) __obj.updateDynamic("processEvent")(processEvent.asInstanceOf[js.Any])
-    if (processEventScope != null) __obj.updateDynamic("processEventScope")(processEventScope.asInstanceOf[js.Any])
-    if (removeBinding != null) __obj.updateDynamic("removeBinding")(js.Any.fromFunction1(removeBinding))
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setDisabled != null) __obj.updateDynamic("setDisabled")(js.Any.fromFunction1(setDisabled))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction3(un))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKeyMap]
   }
+  @scala.inline
+  implicit class IKeyMapOps[Self <: IKeyMap] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = this.set("addBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAddBinding: Self = this.set("addBinding", js.undefined)
+    @scala.inline
+    def setBinding(value: js.Any): Self = this.set("binding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBinding: Self = this.set("binding", js.undefined)
+    @scala.inline
+    def setDestroy(value: /* removeTarget */ js.UndefOr[Boolean] => Unit): Self = this.set("destroy", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDestroy: Self = this.set("destroy", js.undefined)
+    @scala.inline
+    def setDisable(value: () => Unit): Self = this.set("disable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteDisable: Self = this.set("disable", js.undefined)
+    @scala.inline
+    def setEnable(value: () => Unit): Self = this.set("enable", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setEventName(value: String): Self = this.set("eventName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventName: Self = this.set("eventName", js.undefined)
+    @scala.inline
+    def setIgnoreInputFields(value: Boolean): Self = this.set("ignoreInputFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreInputFields: Self = this.set("ignoreInputFields", js.undefined)
+    @scala.inline
+    def setIsEnabled(value: () => Boolean): Self = this.set("isEnabled", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIsEnabled: Self = this.set("isEnabled", js.undefined)
+    @scala.inline
+    def setOn(
+      value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("on", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOn: Self = this.set("on", js.undefined)
+    @scala.inline
+    def setProcessEvent(value: js.Any): Self = this.set("processEvent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessEvent: Self = this.set("processEvent", js.undefined)
+    @scala.inline
+    def setProcessEventScope(value: js.Any): Self = this.set("processEventScope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessEventScope: Self = this.set("processEventScope", js.undefined)
+    @scala.inline
+    def setRemoveBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = this.set("removeBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemoveBinding: Self = this.set("removeBinding", js.undefined)
+    @scala.inline
+    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = this.set("setDisabled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetDisabled: Self = this.set("setDisabled", js.undefined)
+    @scala.inline
+    def setTarget(value: js.Any): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setUn(
+      value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+    ): Self = this.set("un", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteUn: Self = this.set("un", js.undefined)
+  }
+  
 }
 

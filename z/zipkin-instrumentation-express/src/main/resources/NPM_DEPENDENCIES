@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "zipkin-instrumentation-express" : "0.19.2"
+      "zipkin-instrumentation-express" : "0.22.0"
     }
   ],
   "test-dependencies" : [
     {
-      "zipkin-instrumentation-express" : "0.19.2"
+      "zipkin-instrumentation-express" : "0.22.0"
     }
   ],
   "compile-devDependencies" : [

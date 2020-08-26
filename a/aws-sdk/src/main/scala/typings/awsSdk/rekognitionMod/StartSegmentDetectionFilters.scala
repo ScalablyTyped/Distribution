@@ -18,14 +18,30 @@ trait StartSegmentDetectionFilters extends js.Object {
 
 object StartSegmentDetectionFilters {
   @scala.inline
-  def apply(
-    ShotFilter: StartShotDetectionFilter = null,
-    TechnicalCueFilter: StartTechnicalCueDetectionFilter = null
-  ): StartSegmentDetectionFilters = {
+  def apply(): StartSegmentDetectionFilters = {
     val __obj = js.Dynamic.literal()
-    if (ShotFilter != null) __obj.updateDynamic("ShotFilter")(ShotFilter.asInstanceOf[js.Any])
-    if (TechnicalCueFilter != null) __obj.updateDynamic("TechnicalCueFilter")(TechnicalCueFilter.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSegmentDetectionFilters]
   }
+  @scala.inline
+  implicit class StartSegmentDetectionFiltersOps[Self <: StartSegmentDetectionFilters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setShotFilter(value: StartShotDetectionFilter): Self = this.set("ShotFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShotFilter: Self = this.set("ShotFilter", js.undefined)
+    @scala.inline
+    def setTechnicalCueFilter(value: StartTechnicalCueDetectionFilter): Self = this.set("TechnicalCueFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTechnicalCueFilter: Self = this.set("TechnicalCueFilter", js.undefined)
+  }
+  
 }
 

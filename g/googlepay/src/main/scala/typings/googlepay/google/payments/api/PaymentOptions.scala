@@ -28,36 +28,55 @@ import scala.scalajs.js.annotation._
   * }
   * ```
   */
+@js.native
 trait PaymentOptions extends js.Object {
   /**
     * This value specifies which Google Pay environment to target
     *
     * @default "TEST"
     */
-  var environment: js.UndefOr[Environment] = js.undefined
+  var environment: js.UndefOr[Environment] = js.native
   /**
     * This object provides information about the merchant that requests
     * payment data.
     */
-  var merchantInfo: js.UndefOr[MerchantInfo] = js.undefined
+  var merchantInfo: js.UndefOr[MerchantInfo] = js.native
   /**
     * This object declares the callbacks used for Dynamic Price Updates.
     */
-  var paymentDataCallbacks: js.UndefOr[PaymentDataCallbacks] = js.undefined
+  var paymentDataCallbacks: js.UndefOr[PaymentDataCallbacks] = js.native
 }
 
 object PaymentOptions {
   @scala.inline
-  def apply(
-    environment: Environment = null,
-    merchantInfo: MerchantInfo = null,
-    paymentDataCallbacks: PaymentDataCallbacks = null
-  ): PaymentOptions = {
+  def apply(): PaymentOptions = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (merchantInfo != null) __obj.updateDynamic("merchantInfo")(merchantInfo.asInstanceOf[js.Any])
-    if (paymentDataCallbacks != null) __obj.updateDynamic("paymentDataCallbacks")(paymentDataCallbacks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentOptions]
   }
+  @scala.inline
+  implicit class PaymentOptionsOps[Self <: PaymentOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnvironment(value: Environment): Self = this.set("environment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironment: Self = this.set("environment", js.undefined)
+    @scala.inline
+    def setMerchantInfo(value: MerchantInfo): Self = this.set("merchantInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantInfo: Self = this.set("merchantInfo", js.undefined)
+    @scala.inline
+    def setPaymentDataCallbacks(value: PaymentDataCallbacks): Self = this.set("paymentDataCallbacks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentDataCallbacks: Self = this.set("paymentDataCallbacks", js.undefined)
+  }
+  
 }
 

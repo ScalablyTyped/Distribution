@@ -22,16 +22,34 @@ trait DeleteIAMPolicyAssignmentResponse extends js.Object {
 
 object DeleteIAMPolicyAssignmentResponse {
   @scala.inline
-  def apply(
-    AssignmentName: IAMPolicyAssignmentName = null,
-    RequestId: String = null,
-    Status: js.UndefOr[StatusCode] = js.undefined
-  ): DeleteIAMPolicyAssignmentResponse = {
+  def apply(): DeleteIAMPolicyAssignmentResponse = {
     val __obj = js.Dynamic.literal()
-    if (AssignmentName != null) __obj.updateDynamic("AssignmentName")(AssignmentName.asInstanceOf[js.Any])
-    if (RequestId != null) __obj.updateDynamic("RequestId")(RequestId.asInstanceOf[js.Any])
-    if (!js.isUndefined(Status)) __obj.updateDynamic("Status")(Status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIAMPolicyAssignmentResponse]
   }
+  @scala.inline
+  implicit class DeleteIAMPolicyAssignmentResponseOps[Self <: DeleteIAMPolicyAssignmentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssignmentName(value: IAMPolicyAssignmentName): Self = this.set("AssignmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignmentName: Self = this.set("AssignmentName", js.undefined)
+    @scala.inline
+    def setRequestId(value: String): Self = this.set("RequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("RequestId", js.undefined)
+    @scala.inline
+    def setStatus(value: StatusCode): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

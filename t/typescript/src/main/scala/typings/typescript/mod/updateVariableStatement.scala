@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 object updateVariableStatement extends js.Object {
   def apply(
     node: VariableStatement,
-    modifiers: js.UndefOr[js.Array[Modifier]],
+    modifiers: js.UndefOr[scala.Nothing],
     declarationList: VariableDeclarationList
   ): VariableStatement = js.native
+  def apply(node: VariableStatement, modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
 }
 

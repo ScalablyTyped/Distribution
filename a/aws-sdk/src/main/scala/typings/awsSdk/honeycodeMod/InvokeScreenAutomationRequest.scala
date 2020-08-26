@@ -38,20 +38,42 @@ trait InvokeScreenAutomationRequest extends js.Object {
 
 object InvokeScreenAutomationRequest {
   @scala.inline
-  def apply(
-    appId: ResourceId,
-    screenAutomationId: ResourceId,
-    screenId: ResourceId,
-    workbookId: ResourceId,
-    clientRequestToken: ClientRequestToken = null,
-    rowId: RowId = null,
-    variables: VariableValueMap = null
-  ): InvokeScreenAutomationRequest = {
+  def apply(appId: ResourceId, screenAutomationId: ResourceId, screenId: ResourceId, workbookId: ResourceId): InvokeScreenAutomationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], screenAutomationId = screenAutomationId.asInstanceOf[js.Any], screenId = screenId.asInstanceOf[js.Any], workbookId = workbookId.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (rowId != null) __obj.updateDynamic("rowId")(rowId.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeScreenAutomationRequest]
   }
+  @scala.inline
+  implicit class InvokeScreenAutomationRequestOps[Self <: InvokeScreenAutomationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: ResourceId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScreenAutomationId(value: ResourceId): Self = this.set("screenAutomationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScreenId(value: ResourceId): Self = this.set("screenId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWorkbookId(value: ResourceId): Self = this.set("workbookId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setRowId(value: RowId): Self = this.set("rowId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowId: Self = this.set("rowId", js.undefined)
+    @scala.inline
+    def setVariables(value: VariableValueMap): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

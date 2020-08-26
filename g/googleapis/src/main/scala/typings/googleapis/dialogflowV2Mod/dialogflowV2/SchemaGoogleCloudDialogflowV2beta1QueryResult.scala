@@ -109,42 +109,90 @@ trait SchemaGoogleCloudDialogflowV2beta1QueryResult extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2beta1QueryResult {
   @scala.inline
-  def apply(
-    action: String = null,
-    allRequiredParamsPresent: js.UndefOr[Boolean] = js.undefined,
-    diagnosticInfo: StringDictionary[js.Any] = null,
-    fulfillmentMessages: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessage] = null,
-    fulfillmentText: String = null,
-    intent: SchemaGoogleCloudDialogflowV2beta1Intent = null,
-    intentDetectionConfidence: js.UndefOr[Double] = js.undefined,
-    knowledgeAnswers: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers = null,
-    languageCode: String = null,
-    outputContexts: js.Array[SchemaGoogleCloudDialogflowV2beta1Context] = null,
-    parameters: StringDictionary[js.Any] = null,
-    queryText: String = null,
-    sentimentAnalysisResult: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult = null,
-    speechRecognitionConfidence: js.UndefOr[Double] = js.undefined,
-    webhookPayload: StringDictionary[js.Any] = null,
-    webhookSource: String = null
-  ): SchemaGoogleCloudDialogflowV2beta1QueryResult = {
+  def apply(): SchemaGoogleCloudDialogflowV2beta1QueryResult = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(allRequiredParamsPresent)) __obj.updateDynamic("allRequiredParamsPresent")(allRequiredParamsPresent.get.asInstanceOf[js.Any])
-    if (diagnosticInfo != null) __obj.updateDynamic("diagnosticInfo")(diagnosticInfo.asInstanceOf[js.Any])
-    if (fulfillmentMessages != null) __obj.updateDynamic("fulfillmentMessages")(fulfillmentMessages.asInstanceOf[js.Any])
-    if (fulfillmentText != null) __obj.updateDynamic("fulfillmentText")(fulfillmentText.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (!js.isUndefined(intentDetectionConfidence)) __obj.updateDynamic("intentDetectionConfidence")(intentDetectionConfidence.get.asInstanceOf[js.Any])
-    if (knowledgeAnswers != null) __obj.updateDynamic("knowledgeAnswers")(knowledgeAnswers.asInstanceOf[js.Any])
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (outputContexts != null) __obj.updateDynamic("outputContexts")(outputContexts.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (queryText != null) __obj.updateDynamic("queryText")(queryText.asInstanceOf[js.Any])
-    if (sentimentAnalysisResult != null) __obj.updateDynamic("sentimentAnalysisResult")(sentimentAnalysisResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(speechRecognitionConfidence)) __obj.updateDynamic("speechRecognitionConfidence")(speechRecognitionConfidence.get.asInstanceOf[js.Any])
-    if (webhookPayload != null) __obj.updateDynamic("webhookPayload")(webhookPayload.asInstanceOf[js.Any])
-    if (webhookSource != null) __obj.updateDynamic("webhookSource")(webhookSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1QueryResult]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2beta1QueryResultOps[Self <: SchemaGoogleCloudDialogflowV2beta1QueryResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: String): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setAllRequiredParamsPresent(value: Boolean): Self = this.set("allRequiredParamsPresent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllRequiredParamsPresent: Self = this.set("allRequiredParamsPresent", js.undefined)
+    @scala.inline
+    def setDiagnosticInfo(value: StringDictionary[js.Any]): Self = this.set("diagnosticInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiagnosticInfo: Self = this.set("diagnosticInfo", js.undefined)
+    @scala.inline
+    def setFulfillmentMessagesVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessage*): Self = this.set("fulfillmentMessages", js.Array(value :_*))
+    @scala.inline
+    def setFulfillmentMessages(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessage]): Self = this.set("fulfillmentMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfillmentMessages: Self = this.set("fulfillmentMessages", js.undefined)
+    @scala.inline
+    def setFulfillmentText(value: String): Self = this.set("fulfillmentText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFulfillmentText: Self = this.set("fulfillmentText", js.undefined)
+    @scala.inline
+    def setIntent(value: SchemaGoogleCloudDialogflowV2beta1Intent): Self = this.set("intent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntent: Self = this.set("intent", js.undefined)
+    @scala.inline
+    def setIntentDetectionConfidence(value: Double): Self = this.set("intentDetectionConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntentDetectionConfidence: Self = this.set("intentDetectionConfidence", js.undefined)
+    @scala.inline
+    def setKnowledgeAnswers(value: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswers): Self = this.set("knowledgeAnswers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKnowledgeAnswers: Self = this.set("knowledgeAnswers", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setOutputContextsVarargs(value: SchemaGoogleCloudDialogflowV2beta1Context*): Self = this.set("outputContexts", js.Array(value :_*))
+    @scala.inline
+    def setOutputContexts(value: js.Array[SchemaGoogleCloudDialogflowV2beta1Context]): Self = this.set("outputContexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputContexts: Self = this.set("outputContexts", js.undefined)
+    @scala.inline
+    def setParameters(value: StringDictionary[js.Any]): Self = this.set("parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("parameters", js.undefined)
+    @scala.inline
+    def setQueryText(value: String): Self = this.set("queryText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryText: Self = this.set("queryText", js.undefined)
+    @scala.inline
+    def setSentimentAnalysisResult(value: SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult): Self = this.set("sentimentAnalysisResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentimentAnalysisResult: Self = this.set("sentimentAnalysisResult", js.undefined)
+    @scala.inline
+    def setSpeechRecognitionConfidence(value: Double): Self = this.set("speechRecognitionConfidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeechRecognitionConfidence: Self = this.set("speechRecognitionConfidence", js.undefined)
+    @scala.inline
+    def setWebhookPayload(value: StringDictionary[js.Any]): Self = this.set("webhookPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhookPayload: Self = this.set("webhookPayload", js.undefined)
+    @scala.inline
+    def setWebhookSource(value: String): Self = this.set("webhookSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebhookSource: Self = this.set("webhookSource", js.undefined)
+  }
+  
 }
 

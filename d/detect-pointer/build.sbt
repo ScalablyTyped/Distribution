@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "detect-pointer"
-version := "1.0-dt-20200515Z-1f2508"
-scalaVersion := "2.13.2"
+version := "1.0-dt-20200515Z-b70ef2"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

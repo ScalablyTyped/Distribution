@@ -31,17 +31,38 @@ trait HttpRouteMatch extends js.Object {
 
 object HttpRouteMatch {
   @scala.inline
-  def apply(
-    prefix: String,
-    headers: HttpRouteHeaders = null,
-    method: HttpMethod = null,
-    scheme: HttpScheme = null
-  ): HttpRouteMatch = {
+  def apply(prefix: String): HttpRouteMatch = {
     val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpRouteMatch]
   }
+  @scala.inline
+  implicit class HttpRouteMatchOps[Self <: HttpRouteMatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeadersVarargs(value: HttpRouteHeader*): Self = this.set("headers", js.Array(value :_*))
+    @scala.inline
+    def setHeaders(value: HttpRouteHeaders): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setMethod(value: HttpMethod): Self = this.set("method", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethod: Self = this.set("method", js.undefined)
+    @scala.inline
+    def setScheme(value: HttpScheme): Self = this.set("scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("scheme", js.undefined)
+  }
+  
 }
 

@@ -12,65 +12,101 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UncontrolledCarouselProps
   extends AllHTMLAttributes[HTMLElement]
      with ClassAttributes[HTMLElement]
      with /* key */ StringDictionary[js.Any] {
-  var activeIndex: js.UndefOr[Double] = js.undefined
-  var cssModule: js.UndefOr[CSSModule] = js.undefined
-  var enableTouch: js.UndefOr[Boolean] = js.undefined
-  var indicators: js.UndefOr[Boolean] = js.undefined
-  var interval: js.UndefOr[Double | String | Boolean] = js.undefined
-  var items: js.Array[_]
-  var keyboard: js.UndefOr[Boolean] = js.undefined
-  var mouseEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var mouseExit: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var next: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var pause: js.UndefOr[hover | `false`] = js.undefined
-  var previous: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var ride: js.UndefOr[carousel] = js.undefined
-  var slide: js.UndefOr[Boolean] = js.undefined
+  var activeIndex: js.UndefOr[Double] = js.native
+  var cssModule: js.UndefOr[CSSModule] = js.native
+  var enableTouch: js.UndefOr[Boolean] = js.native
+  var indicators: js.UndefOr[Boolean] = js.native
+  var interval: js.UndefOr[Double | String | Boolean] = js.native
+  var items: js.Array[_] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.native
+  var mouseEnter: js.UndefOr[js.Function0[Unit]] = js.native
+  var mouseExit: js.UndefOr[js.Function0[Unit]] = js.native
+  var next: js.UndefOr[js.Function0[Unit]] = js.native
+  var pause: js.UndefOr[hover | `false`] = js.native
+  var previous: js.UndefOr[js.Function0[Unit]] = js.native
+  var ride: js.UndefOr[carousel] = js.native
+  var slide: js.UndefOr[Boolean] = js.native
 }
 
 object UncontrolledCarouselProps {
   @scala.inline
-  def apply(
-    items: js.Array[_],
-    AllHTMLAttributes: AllHTMLAttributes[HTMLElement] = null,
-    ClassAttributes: ClassAttributes[HTMLElement] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    activeIndex: js.UndefOr[Double] = js.undefined,
-    cssModule: CSSModule = null,
-    enableTouch: js.UndefOr[Boolean] = js.undefined,
-    indicators: js.UndefOr[Boolean] = js.undefined,
-    interval: Double | String | Boolean = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    mouseEnter: () => Unit = null,
-    mouseExit: () => Unit = null,
-    next: () => Unit = null,
-    pause: hover | `false` = null,
-    previous: () => Unit = null,
-    ride: carousel = null,
-    slide: js.UndefOr[Boolean] = js.undefined
-  ): UncontrolledCarouselProps = {
+  def apply(items: js.Array[_]): UncontrolledCarouselProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(activeIndex)) __obj.updateDynamic("activeIndex")(activeIndex.get.asInstanceOf[js.Any])
-    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(indicators)) __obj.updateDynamic("indicators")(indicators.get.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
-    if (mouseEnter != null) __obj.updateDynamic("mouseEnter")(js.Any.fromFunction0(mouseEnter))
-    if (mouseExit != null) __obj.updateDynamic("mouseExit")(js.Any.fromFunction0(mouseExit))
-    if (next != null) __obj.updateDynamic("next")(js.Any.fromFunction0(next))
-    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(js.Any.fromFunction0(previous))
-    if (ride != null) __obj.updateDynamic("ride")(ride.asInstanceOf[js.Any])
-    if (!js.isUndefined(slide)) __obj.updateDynamic("slide")(slide.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UncontrolledCarouselProps]
   }
+  @scala.inline
+  implicit class UncontrolledCarouselPropsOps[Self <: UncontrolledCarouselProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: js.Any*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[_]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActiveIndex(value: Double): Self = this.set("activeIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveIndex: Self = this.set("activeIndex", js.undefined)
+    @scala.inline
+    def setCssModule(value: CSSModule): Self = this.set("cssModule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssModule: Self = this.set("cssModule", js.undefined)
+    @scala.inline
+    def setEnableTouch(value: Boolean): Self = this.set("enableTouch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableTouch: Self = this.set("enableTouch", js.undefined)
+    @scala.inline
+    def setIndicators(value: Boolean): Self = this.set("indicators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndicators: Self = this.set("indicators", js.undefined)
+    @scala.inline
+    def setInterval(value: Double | String | Boolean): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setMouseEnter(value: () => Unit): Self = this.set("mouseEnter", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteMouseEnter: Self = this.set("mouseEnter", js.undefined)
+    @scala.inline
+    def setMouseExit(value: () => Unit): Self = this.set("mouseExit", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteMouseExit: Self = this.set("mouseExit", js.undefined)
+    @scala.inline
+    def setNext(value: () => Unit): Self = this.set("next", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteNext: Self = this.set("next", js.undefined)
+    @scala.inline
+    def setPause(value: hover | `false`): Self = this.set("pause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePause: Self = this.set("pause", js.undefined)
+    @scala.inline
+    def setPrevious(value: () => Unit): Self = this.set("previous", js.Any.fromFunction0(value))
+    @scala.inline
+    def deletePrevious: Self = this.set("previous", js.undefined)
+    @scala.inline
+    def setRide(value: carousel): Self = this.set("ride", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRide: Self = this.set("ride", js.undefined)
+    @scala.inline
+    def setSlide(value: Boolean): Self = this.set("slide", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSlide: Self = this.set("slide", js.undefined)
+  }
+  
 }
 

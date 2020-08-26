@@ -37,8 +37,39 @@ import scala.scalajs.js.annotation._
 class ParticleContainer ()
   extends typings.pixiJs.PIXI.ParticleContainer {
   def this(maxSize: Double) = this()
+  def this(maxSize: js.UndefOr[scala.Nothing], properties: Position) = this()
   def this(maxSize: Double, properties: Position) = this()
+  def this(maxSize: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], batchSize: Double) = this()
+  def this(maxSize: js.UndefOr[scala.Nothing], properties: Position, batchSize: Double) = this()
+  def this(maxSize: Double, properties: js.UndefOr[scala.Nothing], batchSize: Double) = this()
   def this(maxSize: Double, properties: Position, batchSize: Double) = this()
+  def this(
+    maxSize: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    batchSize: js.UndefOr[scala.Nothing],
+    autoResize: Boolean
+  ) = this()
+  def this(
+    maxSize: js.UndefOr[scala.Nothing],
+    properties: js.UndefOr[scala.Nothing],
+    batchSize: Double,
+    autoResize: Boolean
+  ) = this()
+  def this(
+    maxSize: js.UndefOr[scala.Nothing],
+    properties: Position,
+    batchSize: js.UndefOr[scala.Nothing],
+    autoResize: Boolean
+  ) = this()
+  def this(maxSize: js.UndefOr[scala.Nothing], properties: Position, batchSize: Double, autoResize: Boolean) = this()
+  def this(
+    maxSize: Double,
+    properties: js.UndefOr[scala.Nothing],
+    batchSize: js.UndefOr[scala.Nothing],
+    autoResize: Boolean
+  ) = this()
+  def this(maxSize: Double, properties: js.UndefOr[scala.Nothing], batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Double, properties: Position, batchSize: js.UndefOr[scala.Nothing], autoResize: Boolean) = this()
   def this(maxSize: Double, properties: Position, batchSize: Double, autoResize: Boolean) = this()
 }
 

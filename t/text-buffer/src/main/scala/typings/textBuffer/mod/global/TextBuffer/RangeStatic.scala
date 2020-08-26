@@ -13,7 +13,7 @@ trait RangeStatic
   extends /** Construct a Range object. */
 Instantiable0[Range]
      with Instantiable1[/* pointA */ PointCompatible, Range]
-     with Instantiable2[/* pointA */ PointCompatible, /* pointB */ PointCompatible, Range] {
+     with Instantiable2[js.UndefOr[/* pointA */ PointCompatible], /* pointB */ PointCompatible, Range] {
   /** Call this with the result of Range::serialize to construct a new Range. */
   def deserialize(array: js.Object): Range = js.native
   /** Convert any range-compatible object to a Range. */

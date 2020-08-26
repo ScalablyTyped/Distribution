@@ -28,16 +28,34 @@ trait EventPermissionArgs extends js.Object {
 
 object EventPermissionArgs {
   @scala.inline
-  def apply(
-    principal: Input[String],
-    statementId: Input[String],
-    action: Input[String] = null,
-    condition: Input[EventPermissionCondition] = null
-  ): EventPermissionArgs = {
+  def apply(principal: Input[String], statementId: Input[String]): EventPermissionArgs = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], statementId = statementId.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPermissionArgs]
   }
+  @scala.inline
+  implicit class EventPermissionArgsOps[Self <: EventPermissionArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrincipal(value: Input[String]): Self = this.set("principal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatementId(value: Input[String]): Self = this.set("statementId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAction(value: Input[String]): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("action", js.undefined)
+    @scala.inline
+    def setCondition(value: Input[EventPermissionCondition]): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+  }
+  
 }
 

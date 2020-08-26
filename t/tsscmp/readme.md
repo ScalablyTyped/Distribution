@@ -12,7 +12,7 @@ Timing safe string compare using double HMAC
 | Keywords           | timing safe string compare, double hmac string compare, safe string compare, hmac |
 | # releases         | 2 |
 | # dependents       | 34 |
-| # downloads        | 28843213 |
+| # downloads        | 29211993 |
 | # stars            | 3 |
 
 ## Links

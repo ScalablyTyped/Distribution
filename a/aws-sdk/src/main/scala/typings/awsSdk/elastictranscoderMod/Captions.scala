@@ -22,16 +22,38 @@ trait Captions extends js.Object {
 
 object Captions {
   @scala.inline
-  def apply(
-    CaptionFormats: CaptionFormats = null,
-    CaptionSources: CaptionSources = null,
-    MergePolicy: CaptionMergePolicy = null
-  ): Captions = {
+  def apply(): Captions = {
     val __obj = js.Dynamic.literal()
-    if (CaptionFormats != null) __obj.updateDynamic("CaptionFormats")(CaptionFormats.asInstanceOf[js.Any])
-    if (CaptionSources != null) __obj.updateDynamic("CaptionSources")(CaptionSources.asInstanceOf[js.Any])
-    if (MergePolicy != null) __obj.updateDynamic("MergePolicy")(MergePolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Captions]
   }
+  @scala.inline
+  implicit class CaptionsOps[Self <: Captions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptionFormatsVarargs(value: CaptionFormat*): Self = this.set("CaptionFormats", js.Array(value :_*))
+    @scala.inline
+    def setCaptionFormats(value: CaptionFormats): Self = this.set("CaptionFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionFormats: Self = this.set("CaptionFormats", js.undefined)
+    @scala.inline
+    def setCaptionSourcesVarargs(value: CaptionSource*): Self = this.set("CaptionSources", js.Array(value :_*))
+    @scala.inline
+    def setCaptionSources(value: CaptionSources): Self = this.set("CaptionSources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionSources: Self = this.set("CaptionSources", js.undefined)
+    @scala.inline
+    def setMergePolicy(value: CaptionMergePolicy): Self = this.set("MergePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergePolicy: Self = this.set("MergePolicy", js.undefined)
+  }
+  
 }
 

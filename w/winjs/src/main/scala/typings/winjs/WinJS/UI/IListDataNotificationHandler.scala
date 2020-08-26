@@ -47,6 +47,13 @@ trait IListDataNotificationHandler[T] extends js.Object {
     * @param newIndex The item's new index.
     **/
   def moved(item: IItem[T], previousKey: String, nextKey: String): Unit = js.native
+  def moved(
+    item: IItem[T],
+    previousKey: String,
+    nextKey: String,
+    oldIndex: js.UndefOr[scala.Nothing],
+    newIndex: Double
+  ): Unit = js.native
   def moved(item: IItem[T], previousKey: String, nextKey: String, oldIndex: Double): Unit = js.native
   def moved(item: IItem[T], previousKey: String, nextKey: String, oldIndex: Double, newIndex: Double): Unit = js.native
   /**

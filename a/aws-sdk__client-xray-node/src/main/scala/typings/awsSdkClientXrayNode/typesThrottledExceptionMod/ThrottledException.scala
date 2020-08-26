@@ -20,6 +20,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ThrottledException
   extends ServiceException[ThrottledExceptionDetails]
      with BatchGetTracesExceptionsUnion
@@ -37,7 +38,7 @@ trait ThrottledException
      with PutTraceSegmentsExceptionsUnion
      with UpdateSamplingRuleExceptionsUnion {
   @JSName("name")
-  var name_ThrottledException: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException
+  var name_ThrottledException: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException = js.native
 }
 
 object ThrottledException {
@@ -46,12 +47,25 @@ object ThrottledException {
     $metadata: ResponseMetadata,
     details: ThrottledExceptionDetails,
     message: String,
-    name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException,
-    stack: String = null
+    name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException
   ): ThrottledException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThrottledException]
   }
+  @scala.inline
+  implicit class ThrottledExceptionOps[Self <: ThrottledException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

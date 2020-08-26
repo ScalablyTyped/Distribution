@@ -58,6 +58,7 @@ trait Gantt_ extends Widget_ {
     * @returns {void}
     */
   def export(action: String): Unit = js.native
+  def export(action: String, serverEvent: js.UndefOr[scala.Nothing], multipleExport: Boolean): Unit = js.native
   def export(action: String, serverEvent: String): Unit = js.native
   def export(action: String, serverEvent: String, multipleExport: Boolean): Unit = js.native
   /** Sends filtering request to filter a column in Gantt dynamically.
@@ -69,6 +70,13 @@ trait Gantt_ extends Widget_ {
     * @returns {void}
     */
   def filterColumn(fieldName: String, filterOperator: String, filterValue: String): Unit = js.native
+  def filterColumn(
+    fieldName: String,
+    filterOperator: String,
+    filterValue: String,
+    predicate: js.UndefOr[scala.Nothing],
+    matchCase: Boolean
+  ): Unit = js.native
   def filterColumn(fieldName: String, filterOperator: String, filterValue: String, predicate: String): Unit = js.native
   def filterColumn(
     fieldName: String,

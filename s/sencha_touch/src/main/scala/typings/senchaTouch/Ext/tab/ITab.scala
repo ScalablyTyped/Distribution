@@ -5,65 +5,94 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ITab extends IButton {
   /** [Config Option] (Boolean) */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: js.UndefOr[Boolean] = js.native
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[String] = js.undefined
+  var activeCls: js.UndefOr[String] = js.native
   /** [Method] Returns the value of active
     * @returns Boolean
     */
-  var getActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  var getActive: js.UndefOr[js.Function0[Boolean]] = js.native
   /** [Method] Returns the value of activeCls
     * @returns String
     */
-  var getActiveCls: js.UndefOr[js.Function0[String]] = js.undefined
+  var getActiveCls: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Returns the value of title
     * @returns String
     */
-  var getTitle: js.UndefOr[js.Function0[String]] = js.undefined
+  var getTitle: js.UndefOr[js.Function0[String]] = js.native
   /** [Method] Sets the value of active
     * @param active Boolean The new value.
     */
-  var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.native
   /** [Method] Sets the value of activeCls
     * @param activeCls String The new value.
     */
-  var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[String], Unit]] = js.undefined
+  var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[String], Unit]] = js.native
   /** [Method] Sets the value of title
     * @param title String The new value.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.undefined
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[String], Unit]] = js.native
   /** [Config Option] (String) */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String] = js.native
 }
 
 object ITab {
   @scala.inline
-  def apply(
-    IButton: IButton = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    activeCls: String = null,
-    getActive: () => Boolean = null,
-    getActiveCls: () => String = null,
-    getTitle: () => String = null,
-    setActive: /* active */ js.UndefOr[Boolean] => Unit = null,
-    setActiveCls: /* activeCls */ js.UndefOr[String] => Unit = null,
-    setTitle: /* title */ js.UndefOr[String] => Unit = null,
-    title: String = null
-  ): ITab = {
+  def apply(): ITab = {
     val __obj = js.Dynamic.literal()
-    if (IButton != null) js.Dynamic.global.Object.assign(__obj, IButton)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls.asInstanceOf[js.Any])
-    if (getActive != null) __obj.updateDynamic("getActive")(js.Any.fromFunction0(getActive))
-    if (getActiveCls != null) __obj.updateDynamic("getActiveCls")(js.Any.fromFunction0(getActiveCls))
-    if (getTitle != null) __obj.updateDynamic("getTitle")(js.Any.fromFunction0(getTitle))
-    if (setActive != null) __obj.updateDynamic("setActive")(js.Any.fromFunction1(setActive))
-    if (setActiveCls != null) __obj.updateDynamic("setActiveCls")(js.Any.fromFunction1(setActiveCls))
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1(setTitle))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITab]
   }
+  @scala.inline
+  implicit class ITabOps[Self <: ITab] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setActiveCls(value: String): Self = this.set("activeCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActiveCls: Self = this.set("activeCls", js.undefined)
+    @scala.inline
+    def setGetActive(value: () => Boolean): Self = this.set("getActive", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetActive: Self = this.set("getActive", js.undefined)
+    @scala.inline
+    def setGetActiveCls(value: () => String): Self = this.set("getActiveCls", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetActiveCls: Self = this.set("getActiveCls", js.undefined)
+    @scala.inline
+    def setGetTitle(value: () => String): Self = this.set("getTitle", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetTitle: Self = this.set("getTitle", js.undefined)
+    @scala.inline
+    def setSetActive(value: /* active */ js.UndefOr[Boolean] => Unit): Self = this.set("setActive", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetActive: Self = this.set("setActive", js.undefined)
+    @scala.inline
+    def setSetActiveCls(value: /* activeCls */ js.UndefOr[String] => Unit): Self = this.set("setActiveCls", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetActiveCls: Self = this.set("setActiveCls", js.undefined)
+    @scala.inline
+    def setSetTitle(value: /* title */ js.UndefOr[String] => Unit): Self = this.set("setTitle", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetTitle: Self = this.set("setTitle", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

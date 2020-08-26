@@ -46,26 +46,54 @@ trait TreatmentResource extends js.Object {
 
 object TreatmentResource {
   @scala.inline
-  def apply(
-    Id: string,
-    SizePercent: integer,
-    CustomDeliveryConfiguration: CustomDeliveryConfiguration = null,
-    MessageConfiguration: MessageConfiguration = null,
-    Schedule: Schedule = null,
-    State: CampaignState = null,
-    TemplateConfiguration: TemplateConfiguration = null,
-    TreatmentDescription: string = null,
-    TreatmentName: string = null
-  ): TreatmentResource = {
+  def apply(Id: string, SizePercent: integer): TreatmentResource = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], SizePercent = SizePercent.asInstanceOf[js.Any])
-    if (CustomDeliveryConfiguration != null) __obj.updateDynamic("CustomDeliveryConfiguration")(CustomDeliveryConfiguration.asInstanceOf[js.Any])
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (TemplateConfiguration != null) __obj.updateDynamic("TemplateConfiguration")(TemplateConfiguration.asInstanceOf[js.Any])
-    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
-    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreatmentResource]
   }
+  @scala.inline
+  implicit class TreatmentResourceOps[Self <: TreatmentResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: string): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSizePercent(value: integer): Self = this.set("SizePercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = this.set("CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDeliveryConfiguration: Self = this.set("CustomDeliveryConfiguration", js.undefined)
+    @scala.inline
+    def setMessageConfiguration(value: MessageConfiguration): Self = this.set("MessageConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageConfiguration: Self = this.set("MessageConfiguration", js.undefined)
+    @scala.inline
+    def setSchedule(value: Schedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+    @scala.inline
+    def setState(value: CampaignState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTemplateConfiguration(value: TemplateConfiguration): Self = this.set("TemplateConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateConfiguration: Self = this.set("TemplateConfiguration", js.undefined)
+    @scala.inline
+    def setTreatmentDescription(value: string): Self = this.set("TreatmentDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreatmentDescription: Self = this.set("TreatmentDescription", js.undefined)
+    @scala.inline
+    def setTreatmentName(value: string): Self = this.set("TreatmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTreatmentName: Self = this.set("TreatmentName", js.undefined)
+  }
+  
 }
 

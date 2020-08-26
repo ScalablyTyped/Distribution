@@ -5,21 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledExportJobsResponse extends ExportJobsResponse {
   /**
     * A list of export jobs for the application.
     */
   @JSName("Item")
-  var Item_UnmarshalledExportJobsResponse: js.UndefOr[js.Array[UnmarshalledExportJobResponse]] = js.undefined
+  var Item_UnmarshalledExportJobsResponse: js.UndefOr[js.Array[UnmarshalledExportJobResponse]] = js.native
 }
 
 object UnmarshalledExportJobsResponse {
   @scala.inline
-  def apply(Item: js.Array[UnmarshalledExportJobResponse] = null, NextToken: String = null): UnmarshalledExportJobsResponse = {
+  def apply(): UnmarshalledExportJobsResponse = {
     val __obj = js.Dynamic.literal()
-    if (Item != null) __obj.updateDynamic("Item")(Item.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledExportJobsResponse]
   }
+  @scala.inline
+  implicit class UnmarshalledExportJobsResponseOps[Self <: UnmarshalledExportJobsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemVarargs(value: UnmarshalledExportJobResponse*): Self = this.set("Item", js.Array(value :_*))
+    @scala.inline
+    def setItem(value: js.Array[UnmarshalledExportJobResponse]): Self = this.set("Item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("Item", js.undefined)
+  }
+  
 }
 

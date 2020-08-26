@@ -11,7 +11,7 @@ trait FakeTimers[TimerRef] extends js.Object {
   var _checkFakeTimers: js.Any = js.native
   var _config: js.Any = js.native
   var _createMocks: js.Any = js.native
-  var _disposed: js.UndefOr[js.Any] = js.native
+  var _disposed: js.Any = js.native
   var _fakeClearImmediate: js.Any = js.native
   var _fakeClearTimer: js.Any = js.native
   var _fakeNextTick: js.Any = js.native

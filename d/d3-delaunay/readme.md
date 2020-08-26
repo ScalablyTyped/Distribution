@@ -12,7 +12,7 @@ Compute the Voronoi diagram of a set of two-dimensional points.
 | Keywords           | voronoi, delaunay, geometry |
 | # releases         | 35 |
 | # dependents       | 17 |
-| # downloads        | 588998 |
+| # downloads        | 684723 |
 | # stars            | 0 |
 
 ## Links

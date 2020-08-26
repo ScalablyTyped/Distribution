@@ -35,22 +35,48 @@ trait GetItemInput extends js.Object {
 
 object GetItemInput {
   @scala.inline
-  def apply(
-    Key: Key,
-    TableName: TableName,
-    AttributesToGet: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ProjectionExpression: ProjectionExpression = null,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null
-  ): GetItemInput = {
+  def apply(Key: Key, TableName: TableName): GetItemInput = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
-    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.get.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemInput]
   }
+  @scala.inline
+  implicit class GetItemInputOps[Self <: GetItemInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTableName(value: TableName): Self = this.set("TableName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttributesToGetVarargs(value: AttributeName*): Self = this.set("AttributesToGet", js.Array(value :_*))
+    @scala.inline
+    def setAttributesToGet(value: AttributeNameList): Self = this.set("AttributesToGet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributesToGet: Self = this.set("AttributesToGet", js.undefined)
+    @scala.inline
+    def setConsistentRead(value: ConsistentRead): Self = this.set("ConsistentRead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsistentRead: Self = this.set("ConsistentRead", js.undefined)
+    @scala.inline
+    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = this.set("ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpressionAttributeNames: Self = this.set("ExpressionAttributeNames", js.undefined)
+    @scala.inline
+    def setProjectionExpression(value: ProjectionExpression): Self = this.set("ProjectionExpression", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectionExpression: Self = this.set("ProjectionExpression", js.undefined)
+    @scala.inline
+    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = this.set("ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReturnConsumedCapacity: Self = this.set("ReturnConsumedCapacity", js.undefined)
+  }
+  
 }
 

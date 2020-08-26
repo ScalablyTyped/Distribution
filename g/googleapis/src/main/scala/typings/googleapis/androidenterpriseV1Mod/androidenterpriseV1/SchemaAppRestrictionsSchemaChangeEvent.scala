@@ -21,10 +21,26 @@ trait SchemaAppRestrictionsSchemaChangeEvent extends js.Object {
 
 object SchemaAppRestrictionsSchemaChangeEvent {
   @scala.inline
-  def apply(productId: String = null): SchemaAppRestrictionsSchemaChangeEvent = {
+  def apply(): SchemaAppRestrictionsSchemaChangeEvent = {
     val __obj = js.Dynamic.literal()
-    if (productId != null) __obj.updateDynamic("productId")(productId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAppRestrictionsSchemaChangeEvent]
   }
+  @scala.inline
+  implicit class SchemaAppRestrictionsSchemaChangeEventOps[Self <: SchemaAppRestrictionsSchemaChangeEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProductId(value: String): Self = this.set("productId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductId: Self = this.set("productId", js.undefined)
+  }
+  
 }
 

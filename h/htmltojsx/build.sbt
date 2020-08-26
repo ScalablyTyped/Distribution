@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "htmltojsx"
-version := "0.0-unknown-dt-20200515Z-d9d211"
-scalaVersion := "2.13.2"
+version := "0.0-unknown-dt-20200515Z-eda981"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

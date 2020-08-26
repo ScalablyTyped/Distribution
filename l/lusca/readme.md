@@ -11,8 +11,8 @@ Application security for express.
 | Full name          | lusca |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 80 |
-| # downloads        | 1065878 |
+| # dependents       | 81 |
+| # downloads        | 1084862 |
 | # stars            | 21 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ora
 
-Typings are for version 4.0.4
+Typings are for version 4.0.5
 
 ## Library description:
 Elegant terminal spinner

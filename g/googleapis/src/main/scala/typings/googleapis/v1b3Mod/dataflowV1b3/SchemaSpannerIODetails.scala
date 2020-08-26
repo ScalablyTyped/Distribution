@@ -25,12 +25,34 @@ trait SchemaSpannerIODetails extends js.Object {
 
 object SchemaSpannerIODetails {
   @scala.inline
-  def apply(databaseId: String = null, instanceId: String = null, projectId: String = null): SchemaSpannerIODetails = {
+  def apply(): SchemaSpannerIODetails = {
     val __obj = js.Dynamic.literal()
-    if (databaseId != null) __obj.updateDynamic("databaseId")(databaseId.asInstanceOf[js.Any])
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSpannerIODetails]
   }
+  @scala.inline
+  implicit class SchemaSpannerIODetailsOps[Self <: SchemaSpannerIODetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatabaseId(value: String): Self = this.set("databaseId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseId: Self = this.set("databaseId", js.undefined)
+    @scala.inline
+    def setInstanceId(value: String): Self = this.set("instanceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceId: Self = this.set("instanceId", js.undefined)
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+  }
+  
 }
 

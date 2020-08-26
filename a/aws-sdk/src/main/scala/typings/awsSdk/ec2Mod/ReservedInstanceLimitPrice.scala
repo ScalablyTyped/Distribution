@@ -18,11 +18,30 @@ trait ReservedInstanceLimitPrice extends js.Object {
 
 object ReservedInstanceLimitPrice {
   @scala.inline
-  def apply(Amount: js.UndefOr[Double] = js.undefined, CurrencyCode: CurrencyCodeValues = null): ReservedInstanceLimitPrice = {
+  def apply(): ReservedInstanceLimitPrice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Amount)) __obj.updateDynamic("Amount")(Amount.get.asInstanceOf[js.Any])
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservedInstanceLimitPrice]
   }
+  @scala.inline
+  implicit class ReservedInstanceLimitPriceOps[Self <: ReservedInstanceLimitPrice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmount(value: Double): Self = this.set("Amount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmount: Self = this.set("Amount", js.undefined)
+    @scala.inline
+    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+  }
+  
 }
 

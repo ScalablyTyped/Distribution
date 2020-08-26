@@ -35,7 +35,26 @@ trait BOLDWEIGHT extends js.Object {
   def highlightTrailingWhitespace(text: String): String = js.native
   def matcherErrorMessage(hint: String, generic: String, specific: String): String = js.native
   def matcherHint(matcherName: String): String = js.native
+  def matcherHint(
+    matcherName: String,
+    received: js.UndefOr[scala.Nothing],
+    expected: js.UndefOr[scala.Nothing],
+    options: MatcherHintOptions
+  ): String = js.native
+  def matcherHint(matcherName: String, received: js.UndefOr[scala.Nothing], expected: String): String = js.native
+  def matcherHint(
+    matcherName: String,
+    received: js.UndefOr[scala.Nothing],
+    expected: String,
+    options: MatcherHintOptions
+  ): String = js.native
   def matcherHint(matcherName: String, received: String): String = js.native
+  def matcherHint(
+    matcherName: String,
+    received: String,
+    expected: js.UndefOr[scala.Nothing],
+    options: MatcherHintOptions
+  ): String = js.native
   def matcherHint(matcherName: String, received: String, expected: String): String = js.native
   def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = js.native
   def pluralize(word: String, count: Double): String = js.native

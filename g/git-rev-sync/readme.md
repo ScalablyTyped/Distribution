@@ -10,9 +10,9 @@ Synchronously get the current git commit hash, tag, or branch
 | ------------------ | :-------------: |
 | Full name          | git-rev-sync |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 7 |
 | # dependents       | 123 |
-| # downloads        | 8942328 |
+| # downloads        | 9557964 |
 | # stars            | 7 |
 
 ## Links

@@ -1,7 +1,7 @@
 package typings.materialDataTable
 
 import typings.materialBase.componentMod.MDCComponent
-import typings.materialBase.foundationMod.default
+import typings.materialCheckbox.componentMod.MDCCheckboxFactory
 import typings.materialDataTable.foundationMod.MDCDataTableFoundation
 import typings.std.Element
 import scala.scalajs.js
@@ -12,7 +12,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object componentMod extends js.Object {
   @js.native
-  class MDCDataTable () extends MDCComponent[MDCDataTableFoundation, default[MDCDataTableFoundation]] {
+  class MDCDataTable () extends MDCComponent[MDCDataTableFoundation] {
+    /**
+      * @return Returns array of header row cell elements.
+      */
+    def getHeaderCells(): js.Array[Element] = js.native
     /**
       * @return Returns array of row elements.
       */
@@ -22,9 +26,7 @@ object componentMod extends js.Object {
       */
     def getSelectedRowIds(): js.Array[String | Null] = js.native
     def initialize(): Unit = js.native
-    def initialize(
-      checkboxFactory: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MDCCheckboxFactory */ js.Any
-    ): Unit = js.native
+    def initialize(checkboxFactory: MDCCheckboxFactory): Unit = js.native
     /**
       * Re-initializes header row checkbox and row checkboxes when selectable rows are added or removed from table.
       */

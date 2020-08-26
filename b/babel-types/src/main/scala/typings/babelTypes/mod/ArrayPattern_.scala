@@ -5,14 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArrayPattern_
   extends Node
      with LVal
      with Pattern {
-  var elements: js.Array[Expression]
-  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
+  var elements: js.Array[Expression] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.native
   @JSName("type")
-  var type_ArrayPattern_ : ArrayPattern
+  var type_ArrayPattern_ : ArrayPattern = js.native
 }
 
 object ArrayPattern_ {
@@ -22,19 +23,34 @@ object ArrayPattern_ {
     end: Double,
     loc: SourceLocation,
     start: Double,
-    `type`: ArrayPattern,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ = null
+    `type`: ArrayPattern
   ): ArrayPattern_ = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayPattern_]
   }
+  @scala.inline
+  implicit class ArrayPattern_Ops[Self <: ArrayPattern_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setElementsVarargs(value: Expression*): Self = this.set("elements", js.Array(value :_*))
+    @scala.inline
+    def setElements(value: js.Array[Expression]): Self = this.set("elements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: ArrayPattern): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeAnnotation(value: TypeAnnotation_): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeAnnotation: Self = this.set("typeAnnotation", js.undefined)
+  }
+  
 }
 

@@ -19,17 +19,5 @@ class PhoneCallHistoryEntryAddress ()
     rawAddress: String,
     rawAddressKind: typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryRawAddressKind
   ) = this()
-  /** Gets or sets the unique identifier for this contact. */
-  /* CompleteClass */
-  override var contactId: String = js.native
-  /** Get or sets the display name for this entry. */
-  /* CompleteClass */
-  override var displayName: String = js.native
-  /** Gets or sets the address information for this contact. */
-  /* CompleteClass */
-  override var rawAddress: String = js.native
-  /** Gets or sets the type of address indicated by RawAddress . */
-  /* CompleteClass */
-  override var rawAddressKind: typings.winrtUwp.Windows.ApplicationModel.Calls.PhoneCallHistoryEntryRawAddressKind = js.native
 }
 

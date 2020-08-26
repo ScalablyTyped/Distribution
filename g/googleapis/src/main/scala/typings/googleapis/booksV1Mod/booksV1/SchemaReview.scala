@@ -1,7 +1,7 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleapis.anon.DisplayNameString
 import typings.googleapis.anon.ExtraDescription
+import typings.googleapis.anon.`2`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ trait SchemaReview extends js.Object {
   /**
     * Author of this review.
     */
-  var author: js.UndefOr[DisplayNameString] = js.native
+  var author: js.UndefOr[`2`] = js.native
   /**
     * Review text.
     */
@@ -55,30 +55,62 @@ trait SchemaReview extends js.Object {
 
 object SchemaReview {
   @scala.inline
-  def apply(
-    author: DisplayNameString = null,
-    content: String = null,
-    date: String = null,
-    fullTextUrl: String = null,
-    kind: String = null,
-    rating: String = null,
-    source: ExtraDescription = null,
-    title: String = null,
-    `type`: String = null,
-    volumeId: String = null
-  ): SchemaReview = {
+  def apply(): SchemaReview = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (fullTextUrl != null) __obj.updateDynamic("fullTextUrl")(fullTextUrl.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaReview]
   }
+  @scala.inline
+  implicit class SchemaReviewOps[Self <: SchemaReview] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuthor(value: `2`): Self = this.set("author", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthor: Self = this.set("author", js.undefined)
+    @scala.inline
+    def setContent(value: String): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("content", js.undefined)
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setFullTextUrl(value: String): Self = this.set("fullTextUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullTextUrl: Self = this.set("fullTextUrl", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setRating(value: String): Self = this.set("rating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRating: Self = this.set("rating", js.undefined)
+    @scala.inline
+    def setSource(value: ExtraDescription): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setVolumeId(value: String): Self = this.set("volumeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeId: Self = this.set("volumeId", js.undefined)
+  }
+  
 }
 

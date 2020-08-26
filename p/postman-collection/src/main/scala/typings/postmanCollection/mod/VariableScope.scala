@@ -28,6 +28,7 @@ class VariableScope protected () extends Property[VariableScopeDefinition] {
   def has(variableName: String): Boolean = js.native
   def set(key: String, value: js.Any, `type`: String): Unit = js.native
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition]): js.UndefOr[Created] = js.native
+  def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: js.UndefOr[scala.Nothing], prune: Boolean): js.UndefOr[Created] = js.native
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean): js.UndefOr[Created] = js.native
   def syncVariablesFrom(obj: StringDictionary[VariableDefinition], track: Boolean, prune: Boolean): js.UndefOr[Created] = js.native
   def syncVariablesTo(): StringDictionary[VariableDefinition] = js.native

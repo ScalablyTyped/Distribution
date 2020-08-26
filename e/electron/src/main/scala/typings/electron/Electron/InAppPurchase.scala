@@ -1,7 +1,7 @@
 package typings.electron.Electron
 
 import typings.electron.electronStrings.`transactions-updated`
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -47,5 +47,15 @@ trait InAppPurchase extends EventEmitter {
   def purchaseProduct(productID: String, quantity: Double): js.Promise[Boolean] = js.native
   @JSName("removeListener")
   def removeListener_transactionsupdated(event: `transactions-updated`, listener: js.Function): this.type = js.native
+  /**
+    * Restores finished transactions. This method can be called either to install
+    * purchases on additional devices, or to restore purchases for an application that
+    * the user deleted and reinstalled.
+    *
+    * The payment queue delivers a new transaction for each previously completed
+    * transaction that can be restored. Each transaction includes a copy of the
+    * original transaction.
+    */
+  def restoreCompletedTransactions(): Unit = js.native
 }
 

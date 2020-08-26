@@ -11,8 +11,8 @@ Pretty unicode tables for the command line. Based on the original cli-table.
 | Full name          | cli-table3 |
 | Keywords           | node, command, line, cli, table, tables, tabular, unicode, colors, grid |
 | # releases         | 5 |
-| # dependents       | 328 |
-| # downloads        | 63866203 |
+| # dependents       | 363 |
+| # downloads        | 72498429 |
 | # stars            | 0 |
 
 ## Links

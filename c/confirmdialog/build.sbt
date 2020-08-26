@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "confirmdialog"
-version := "1.0.2-b5f30b"
-scalaVersion := "2.13.2"
+version := "1.0.2-f4c7d8"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

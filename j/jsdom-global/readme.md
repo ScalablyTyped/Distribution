@@ -11,8 +11,8 @@ Enable DOM in Node.js
 | Full name          | jsdom-global |
 | Keywords           | dom, jsdom, test |
 | # releases         | 1 |
-| # dependents       | 97 |
-| # downloads        | 7128572 |
+| # dependents       | 101 |
+| # downloads        | 7304424 |
 | # stars            | 2 |
 
 ## Links

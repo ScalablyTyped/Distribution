@@ -18,11 +18,32 @@ trait TestingData extends js.Object {
 
 object TestingData {
   @scala.inline
-  def apply(Assets: Assets = null, AutoCreate: js.UndefOr[Boolean] = js.undefined): TestingData = {
+  def apply(): TestingData = {
     val __obj = js.Dynamic.literal()
-    if (Assets != null) __obj.updateDynamic("Assets")(Assets.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoCreate)) __obj.updateDynamic("AutoCreate")(AutoCreate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestingData]
   }
+  @scala.inline
+  implicit class TestingDataOps[Self <: TestingData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetsVarargs(value: Asset*): Self = this.set("Assets", js.Array(value :_*))
+    @scala.inline
+    def setAssets(value: Assets): Self = this.set("Assets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssets: Self = this.set("Assets", js.undefined)
+    @scala.inline
+    def setAutoCreate(value: Boolean): Self = this.set("AutoCreate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoCreate: Self = this.set("AutoCreate", js.undefined)
+  }
+  
 }
 

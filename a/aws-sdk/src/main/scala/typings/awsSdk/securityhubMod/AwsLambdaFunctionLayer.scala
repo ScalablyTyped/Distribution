@@ -18,11 +18,30 @@ trait AwsLambdaFunctionLayer extends js.Object {
 
 object AwsLambdaFunctionLayer {
   @scala.inline
-  def apply(Arn: NonEmptyString = null, CodeSize: js.UndefOr[Integer] = js.undefined): AwsLambdaFunctionLayer = {
+  def apply(): AwsLambdaFunctionLayer = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(CodeSize)) __obj.updateDynamic("CodeSize")(CodeSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsLambdaFunctionLayer]
   }
+  @scala.inline
+  implicit class AwsLambdaFunctionLayerOps[Self <: AwsLambdaFunctionLayer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setCodeSize(value: Integer): Self = this.set("CodeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodeSize: Self = this.set("CodeSize", js.undefined)
+  }
+  
 }
 

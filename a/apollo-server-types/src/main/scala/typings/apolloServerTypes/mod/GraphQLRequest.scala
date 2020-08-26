@@ -6,30 +6,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GraphQLRequest extends js.Object {
-  var extensions: js.UndefOr[Record[String, _]] = js.undefined
-  var http: js.UndefOr[PickRequesturlmethodheade] = js.undefined
-  var operationName: js.UndefOr[String] = js.undefined
-  var query: js.UndefOr[String] = js.undefined
-  var variables: js.UndefOr[VariableValues] = js.undefined
+  var extensions: js.UndefOr[Record[String, _]] = js.native
+  var http: js.UndefOr[PickRequesturlmethodheade] = js.native
+  var operationName: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.native
+  var variables: js.UndefOr[VariableValues] = js.native
 }
 
 object GraphQLRequest {
   @scala.inline
-  def apply(
-    extensions: Record[String, _] = null,
-    http: PickRequesturlmethodheade = null,
-    operationName: String = null,
-    query: String = null,
-    variables: VariableValues = null
-  ): GraphQLRequest = {
+  def apply(): GraphQLRequest = {
     val __obj = js.Dynamic.literal()
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (operationName != null) __obj.updateDynamic("operationName")(operationName.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (variables != null) __obj.updateDynamic("variables")(variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLRequest]
   }
+  @scala.inline
+  implicit class GraphQLRequestOps[Self <: GraphQLRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtensions(value: Record[String, _]): Self = this.set("extensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtensions: Self = this.set("extensions", js.undefined)
+    @scala.inline
+    def setHttp(value: PickRequesturlmethodheade): Self = this.set("http", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp: Self = this.set("http", js.undefined)
+    @scala.inline
+    def setOperationName(value: String): Self = this.set("operationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationName: Self = this.set("operationName", js.undefined)
+    @scala.inline
+    def setQuery(value: String): Self = this.set("query", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuery: Self = this.set("query", js.undefined)
+    @scala.inline
+    def setVariables(value: VariableValues): Self = this.set("variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("variables", js.undefined)
+  }
+  
 }
 

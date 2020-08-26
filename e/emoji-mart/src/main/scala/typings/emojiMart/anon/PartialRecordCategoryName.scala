@@ -5,48 +5,83 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<std.Record<emoji-mart.emoji-mart/dist-es/utils/shared-props.CategoryName, string>> */
+@js.native
 trait PartialRecordCategoryName extends js.Object {
-  var activity: js.UndefOr[String] = js.undefined
-  var custom: js.UndefOr[String] = js.undefined
-  var flags: js.UndefOr[String] = js.undefined
-  var foods: js.UndefOr[String] = js.undefined
-  var nature: js.UndefOr[String] = js.undefined
-  var objects: js.UndefOr[String] = js.undefined
-  var people: js.UndefOr[String] = js.undefined
-  var places: js.UndefOr[String] = js.undefined
-  var recent: js.UndefOr[String] = js.undefined
-  var search: js.UndefOr[String] = js.undefined
-  var symbols: js.UndefOr[String] = js.undefined
+  var activity: js.UndefOr[String] = js.native
+  var custom: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.native
+  var foods: js.UndefOr[String] = js.native
+  var nature: js.UndefOr[String] = js.native
+  var objects: js.UndefOr[String] = js.native
+  var people: js.UndefOr[String] = js.native
+  var places: js.UndefOr[String] = js.native
+  var recent: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.native
+  var symbols: js.UndefOr[String] = js.native
 }
 
 object PartialRecordCategoryName {
   @scala.inline
-  def apply(
-    activity: String = null,
-    custom: String = null,
-    flags: String = null,
-    foods: String = null,
-    nature: String = null,
-    objects: String = null,
-    people: String = null,
-    places: String = null,
-    recent: String = null,
-    search: String = null,
-    symbols: String = null
-  ): PartialRecordCategoryName = {
+  def apply(): PartialRecordCategoryName = {
     val __obj = js.Dynamic.literal()
-    if (activity != null) __obj.updateDynamic("activity")(activity.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (foods != null) __obj.updateDynamic("foods")(foods.asInstanceOf[js.Any])
-    if (nature != null) __obj.updateDynamic("nature")(nature.asInstanceOf[js.Any])
-    if (objects != null) __obj.updateDynamic("objects")(objects.asInstanceOf[js.Any])
-    if (people != null) __obj.updateDynamic("people")(people.asInstanceOf[js.Any])
-    if (places != null) __obj.updateDynamic("places")(places.asInstanceOf[js.Any])
-    if (recent != null) __obj.updateDynamic("recent")(recent.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (symbols != null) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialRecordCategoryName]
   }
+  @scala.inline
+  implicit class PartialRecordCategoryNameOps[Self <: PartialRecordCategoryName] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivity(value: String): Self = this.set("activity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivity: Self = this.set("activity", js.undefined)
+    @scala.inline
+    def setCustom(value: String): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setFlags(value: String): Self = this.set("flags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlags: Self = this.set("flags", js.undefined)
+    @scala.inline
+    def setFoods(value: String): Self = this.set("foods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFoods: Self = this.set("foods", js.undefined)
+    @scala.inline
+    def setNature(value: String): Self = this.set("nature", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNature: Self = this.set("nature", js.undefined)
+    @scala.inline
+    def setObjects(value: String): Self = this.set("objects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjects: Self = this.set("objects", js.undefined)
+    @scala.inline
+    def setPeople(value: String): Self = this.set("people", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeople: Self = this.set("people", js.undefined)
+    @scala.inline
+    def setPlaces(value: String): Self = this.set("places", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaces: Self = this.set("places", js.undefined)
+    @scala.inline
+    def setRecent(value: String): Self = this.set("recent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecent: Self = this.set("recent", js.undefined)
+    @scala.inline
+    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearch: Self = this.set("search", js.undefined)
+    @scala.inline
+    def setSymbols(value: String): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbols: Self = this.set("symbols", js.undefined)
+  }
+  
 }
 

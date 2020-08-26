@@ -4,77 +4,96 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Drive extends BaseItem {
   /**
     * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for
     * Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
     */
-  var driveType: js.UndefOr[String] = js.undefined
+  var driveType: js.UndefOr[String] = js.native
+  // The list of items the user is following. Only in OneDrive for Business.
+  var following: js.UndefOr[js.Array[DriveItem]] = js.native
   // All items contained in the drive. Read-only. Nullable.
-  var items: js.UndefOr[js.Array[DriveItem]] = js.undefined
+  var items: js.UndefOr[js.Array[DriveItem]] = js.native
   // For drives in SharePoint, the underlying document library list. Read-only. Nullable.
-  var list: js.UndefOr[List] = js.undefined
+  var list: js.UndefOr[List] = js.native
   // Optional. The user account that owns the drive. Read-only.
-  var owner: js.UndefOr[IdentitySet] = js.undefined
+  var owner: js.UndefOr[IdentitySet] = js.native
   // Optional. Information about the drive's storage space quota. Read-only.
-  var quota: js.UndefOr[Quota] = js.undefined
+  var quota: js.UndefOr[Quota] = js.native
   // The root folder of the drive. Read-only.
-  var root: js.UndefOr[DriveItem] = js.undefined
-  var sharePointIds: js.UndefOr[SharepointIds] = js.undefined
+  var root: js.UndefOr[DriveItem] = js.native
+  var sharePointIds: js.UndefOr[SharepointIds] = js.native
   // Collection of common folders available in OneDrive. Read-only. Nullable.
-  var special: js.UndefOr[js.Array[DriveItem]] = js.undefined
+  var special: js.UndefOr[js.Array[DriveItem]] = js.native
   // If present, indicates that this is a system-managed drive. Read-only.
-  var system: js.UndefOr[SystemFacet] = js.undefined
+  var system: js.UndefOr[SystemFacet] = js.native
 }
 
 object Drive {
   @scala.inline
-  def apply(
-    createdBy: IdentitySet = null,
-    createdByUser: User = null,
-    createdDateTime: String = null,
-    description: String = null,
-    driveType: String = null,
-    eTag: String = null,
-    id: String = null,
-    items: js.Array[DriveItem] = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedByUser: User = null,
-    lastModifiedDateTime: String = null,
-    list: List = null,
-    name: String = null,
-    owner: IdentitySet = null,
-    parentReference: ItemReference = null,
-    quota: Quota = null,
-    root: DriveItem = null,
-    sharePointIds: SharepointIds = null,
-    special: js.Array[DriveItem] = null,
-    system: SystemFacet = null,
-    webUrl: String = null
-  ): Drive = {
+  def apply(): Drive = {
     val __obj = js.Dynamic.literal()
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
-    if (createdByUser != null) __obj.updateDynamic("createdByUser")(createdByUser.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (driveType != null) __obj.updateDynamic("driveType")(driveType.asInstanceOf[js.Any])
-    if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedByUser != null) __obj.updateDynamic("lastModifiedByUser")(lastModifiedByUser.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (parentReference != null) __obj.updateDynamic("parentReference")(parentReference.asInstanceOf[js.Any])
-    if (quota != null) __obj.updateDynamic("quota")(quota.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (sharePointIds != null) __obj.updateDynamic("sharePointIds")(sharePointIds.asInstanceOf[js.Any])
-    if (special != null) __obj.updateDynamic("special")(special.asInstanceOf[js.Any])
-    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Drive]
   }
+  @scala.inline
+  implicit class DriveOps[Self <: Drive] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDriveType(value: String): Self = this.set("driveType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDriveType: Self = this.set("driveType", js.undefined)
+    @scala.inline
+    def setFollowingVarargs(value: DriveItem*): Self = this.set("following", js.Array(value :_*))
+    @scala.inline
+    def setFollowing(value: js.Array[DriveItem]): Self = this.set("following", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollowing: Self = this.set("following", js.undefined)
+    @scala.inline
+    def setItemsVarargs(value: DriveItem*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: js.Array[DriveItem]): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItems: Self = this.set("items", js.undefined)
+    @scala.inline
+    def setList(value: List): Self = this.set("list", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteList: Self = this.set("list", js.undefined)
+    @scala.inline
+    def setOwner(value: IdentitySet): Self = this.set("owner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwner: Self = this.set("owner", js.undefined)
+    @scala.inline
+    def setQuota(value: Quota): Self = this.set("quota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuota: Self = this.set("quota", js.undefined)
+    @scala.inline
+    def setRoot(value: DriveItem): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setSharePointIds(value: SharepointIds): Self = this.set("sharePointIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharePointIds: Self = this.set("sharePointIds", js.undefined)
+    @scala.inline
+    def setSpecialVarargs(value: DriveItem*): Self = this.set("special", js.Array(value :_*))
+    @scala.inline
+    def setSpecial(value: js.Array[DriveItem]): Self = this.set("special", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecial: Self = this.set("special", js.undefined)
+    @scala.inline
+    def setSystem(value: SystemFacet): Self = this.set("system", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem: Self = this.set("system", js.undefined)
+  }
+  
 }
 

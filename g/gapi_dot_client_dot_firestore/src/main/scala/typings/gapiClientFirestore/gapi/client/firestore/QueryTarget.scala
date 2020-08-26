@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryTarget extends js.Object {
   /**
     * The parent resource name. In the format:
@@ -13,18 +14,37 @@ trait QueryTarget extends js.Object {
     * `projects/my-project/databases/my-database/documents` or
     * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
     */
-  var parent: js.UndefOr[String] = js.undefined
+  var parent: js.UndefOr[String] = js.native
   /** A structured query. */
-  var structuredQuery: js.UndefOr[StructuredQuery] = js.undefined
+  var structuredQuery: js.UndefOr[StructuredQuery] = js.native
 }
 
 object QueryTarget {
   @scala.inline
-  def apply(parent: String = null, structuredQuery: StructuredQuery = null): QueryTarget = {
+  def apply(): QueryTarget = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryTarget]
   }
+  @scala.inline
+  implicit class QueryTargetOps[Self <: QueryTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParent(value: String): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setStructuredQuery(value: StructuredQuery): Self = this.set("structuredQuery", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStructuredQuery: Self = this.set("structuredQuery", js.undefined)
+  }
+  
 }
 

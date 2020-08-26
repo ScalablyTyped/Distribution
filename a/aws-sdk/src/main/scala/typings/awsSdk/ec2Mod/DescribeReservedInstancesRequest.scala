@@ -30,20 +30,46 @@ trait DescribeReservedInstancesRequest extends js.Object {
 
 object DescribeReservedInstancesRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Filters: FilterList = null,
-    OfferingClass: OfferingClassType = null,
-    OfferingType: OfferingTypeValues = null,
-    ReservedInstancesIds: ReservedInstancesIdStringList = null
-  ): DescribeReservedInstancesRequest = {
+  def apply(): DescribeReservedInstancesRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (OfferingClass != null) __obj.updateDynamic("OfferingClass")(OfferingClass.asInstanceOf[js.Any])
-    if (OfferingType != null) __obj.updateDynamic("OfferingType")(OfferingType.asInstanceOf[js.Any])
-    if (ReservedInstancesIds != null) __obj.updateDynamic("ReservedInstancesIds")(ReservedInstancesIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeReservedInstancesRequest]
   }
+  @scala.inline
+  implicit class DescribeReservedInstancesRequestOps[Self <: DescribeReservedInstancesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: FilterList): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setOfferingClass(value: OfferingClassType): Self = this.set("OfferingClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingClass: Self = this.set("OfferingClass", js.undefined)
+    @scala.inline
+    def setOfferingType(value: OfferingTypeValues): Self = this.set("OfferingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingType: Self = this.set("OfferingType", js.undefined)
+    @scala.inline
+    def setReservedInstancesIdsVarargs(value: ReservationId*): Self = this.set("ReservedInstancesIds", js.Array(value :_*))
+    @scala.inline
+    def setReservedInstancesIds(value: ReservedInstancesIdStringList): Self = this.set("ReservedInstancesIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservedInstancesIds: Self = this.set("ReservedInstancesIds", js.undefined)
+  }
+  
 }
 

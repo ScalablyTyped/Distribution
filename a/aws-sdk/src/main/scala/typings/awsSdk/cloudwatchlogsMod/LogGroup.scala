@@ -35,24 +35,50 @@ trait LogGroup extends js.Object {
 
 object LogGroup {
   @scala.inline
-  def apply(
-    arn: Arn = null,
-    creationTime: js.UndefOr[Timestamp] = js.undefined,
-    kmsKeyId: KmsKeyId = null,
-    logGroupName: LogGroupName = null,
-    metricFilterCount: js.UndefOr[FilterCount] = js.undefined,
-    retentionInDays: js.UndefOr[Days] = js.undefined,
-    storedBytes: js.UndefOr[StoredBytes] = js.undefined
-  ): LogGroup = {
+  def apply(): LogGroup = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (!js.isUndefined(creationTime)) __obj.updateDynamic("creationTime")(creationTime.get.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (logGroupName != null) __obj.updateDynamic("logGroupName")(logGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(metricFilterCount)) __obj.updateDynamic("metricFilterCount")(metricFilterCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(retentionInDays)) __obj.updateDynamic("retentionInDays")(retentionInDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(storedBytes)) __obj.updateDynamic("storedBytes")(storedBytes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogGroup]
   }
+  @scala.inline
+  implicit class LogGroupOps[Self <: LogGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: KmsKeyId): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("logGroupName", js.undefined)
+    @scala.inline
+    def setMetricFilterCount(value: FilterCount): Self = this.set("metricFilterCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricFilterCount: Self = this.set("metricFilterCount", js.undefined)
+    @scala.inline
+    def setRetentionInDays(value: Days): Self = this.set("retentionInDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetentionInDays: Self = this.set("retentionInDays", js.undefined)
+    @scala.inline
+    def setStoredBytes(value: StoredBytes): Self = this.set("storedBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoredBytes: Self = this.set("storedBytes", js.undefined)
+  }
+  
 }
 

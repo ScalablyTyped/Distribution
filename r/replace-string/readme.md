@@ -11,8 +11,8 @@ Replace all substring matches in a string
 | Full name          | replace-string |
 | Keywords           | replace, string, text, all, many, multiple, global, match, matches, replacement, replacer, modify, substring, sub-string, needle, search |
 | # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 1915464 |
+| # dependents       | 34 |
+| # downloads        | 1952271 |
 | # stars            | 3 |
 
 ## Links

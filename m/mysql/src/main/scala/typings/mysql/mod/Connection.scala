@@ -25,6 +25,7 @@ trait Connection extends EscapeFunctions {
   var threadId: Double | Null = js.native
   def beginTransaction(): Unit = js.native
   def beginTransaction(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def beginTransaction(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def beginTransaction(options: QueryOptions): Unit = js.native
   def beginTransaction(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def changeUser(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
@@ -32,6 +33,7 @@ trait Connection extends EscapeFunctions {
   def changeUser(options: ConnectionOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def commit(): Unit = js.native
   def commit(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def commit(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def commit(options: QueryOptions): Unit = js.native
   def commit(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def connect(): Unit = js.native
@@ -94,6 +96,7 @@ trait Connection extends EscapeFunctions {
   def pause(): Unit = js.native
   def ping(): Unit = js.native
   def ping(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def ping(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def ping(options: QueryOptions): Unit = js.native
   def ping(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def query(options: String): Query = js.native
@@ -111,10 +114,12 @@ trait Connection extends EscapeFunctions {
   def resume(): Unit = js.native
   def rollback(): Unit = js.native
   def rollback(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def rollback(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def rollback(options: QueryOptions): Unit = js.native
   def rollback(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def statistics(): Unit = js.native
   def statistics(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def statistics(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def statistics(options: QueryOptions): Unit = js.native
   def statistics(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
 }

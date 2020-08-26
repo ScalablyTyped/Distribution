@@ -58,6 +58,16 @@ trait BootstrapPopupControl extends Control {
   def hideWindow(window: BootstrapPopupWindow): Unit = js.native
   def isVisible(): Boolean = js.native
   def isWindowVisible(window: BootstrapPopupWindow): Boolean = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs | PopupWindowCancelEventArgs | PopupWindowCloseUpEventArgs | PopupWindowEventArgs | PopupWindowPinnedChangedEventArgs | PopupWindowResizeEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_afterResizing(eventName: afterResizing): this.type = js.native
   @JSName("off")

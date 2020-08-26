@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.linguistic2.XSearchableDictionaryList
   * @since OOo 3.0.1
   */
+@js.native
 trait Dictionary
   extends XSearchableDictionary
      with XStorable

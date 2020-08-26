@@ -18,6 +18,72 @@ trait FreeformBuilder extends js.Object {
     * @param Y3 [Y3=0]
     */
   def AddNodes(SegmentType: MsoSegmentType, EditingType: MsoEditingType, X1: Double, Y1: Double): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: js.UndefOr[scala.Nothing],
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double,
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double,
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: js.UndefOr[scala.Nothing],
+    Y2: Double,
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
   def AddNodes(SegmentType: MsoSegmentType, EditingType: MsoEditingType, X1: Double, Y1: Double, X2: Double): Unit = js.native
   def AddNodes(
     SegmentType: MsoSegmentType,
@@ -25,7 +91,46 @@ trait FreeformBuilder extends js.Object {
     X1: Double,
     Y1: Double,
     X2: Double,
+    Y2: js.UndefOr[scala.Nothing],
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: js.UndefOr[scala.Nothing],
+    X3: Double,
+    Y3: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
     Y2: Double
+  ): Unit = js.native
+  def AddNodes(
+    SegmentType: MsoSegmentType,
+    EditingType: MsoEditingType,
+    X1: Double,
+    Y1: Double,
+    X2: Double,
+    Y2: Double,
+    X3: js.UndefOr[scala.Nothing],
+    Y3: Double
   ): Unit = js.native
   def AddNodes(
     SegmentType: MsoSegmentType,

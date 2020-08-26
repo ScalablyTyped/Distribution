@@ -18,11 +18,32 @@ trait DescribeLDAPSSettingsResult extends js.Object {
 
 object DescribeLDAPSSettingsResult {
   @scala.inline
-  def apply(LDAPSSettingsInfo: LDAPSSettingsInfo = null, NextToken: NextToken = null): DescribeLDAPSSettingsResult = {
+  def apply(): DescribeLDAPSSettingsResult = {
     val __obj = js.Dynamic.literal()
-    if (LDAPSSettingsInfo != null) __obj.updateDynamic("LDAPSSettingsInfo")(LDAPSSettingsInfo.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLDAPSSettingsResult]
   }
+  @scala.inline
+  implicit class DescribeLDAPSSettingsResultOps[Self <: DescribeLDAPSSettingsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLDAPSSettingsInfoVarargs(value: LDAPSSettingInfo*): Self = this.set("LDAPSSettingsInfo", js.Array(value :_*))
+    @scala.inline
+    def setLDAPSSettingsInfo(value: LDAPSSettingsInfo): Self = this.set("LDAPSSettingsInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLDAPSSettingsInfo: Self = this.set("LDAPSSettingsInfo", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Clean up regular expressions
 | Keywords           | regex, regexp, regular, expression, clean, cleanup, digit, word |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 6200974 |
+| # downloads        | 6607667 |
 | # stars            | 0 |
 
 ## Links

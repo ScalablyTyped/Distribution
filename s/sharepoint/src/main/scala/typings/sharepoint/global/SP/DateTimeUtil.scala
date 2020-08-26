@@ -11,22 +11,6 @@ object DateTimeUtil extends js.Object {
   class SimpleDate protected ()
     extends typings.sharepoint.SP.DateTimeUtil.SimpleDate {
     def this(year: Double, month: Double, day: Double, era: Double) = this()
-    /* CompleteClass */
-    override def get_day(): Double = js.native
-    /* CompleteClass */
-    override def get_era(): Double = js.native
-    /* CompleteClass */
-    override def get_month(): Double = js.native
-    /* CompleteClass */
-    override def get_year(): Double = js.native
-    /* CompleteClass */
-    override def set_day(value: Double): Unit = js.native
-    /* CompleteClass */
-    override def set_era(value: Double): Unit = js.native
-    /* CompleteClass */
-    override def set_month(value: Double): Unit = js.native
-    /* CompleteClass */
-    override def set_year(value: Double): Unit = js.native
   }
   
   /* static members */

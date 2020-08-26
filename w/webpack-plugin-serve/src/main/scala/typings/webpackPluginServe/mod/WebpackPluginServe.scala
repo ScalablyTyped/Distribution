@@ -1,6 +1,5 @@
 package typings.webpackPluginServe.mod
 
-import typings.webpack.mod.Compiler_
 import typings.webpackPluginServe.anon.Apply
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -11,8 +10,12 @@ import scala.scalajs.js.annotation._
 class WebpackPluginServe () extends js.Object {
   def this(opts: WebpackPluginServeOptions) = this()
   @JSName("apply")
-  def apply(compiler: Compiler_): Unit = js.native
+  def apply(
+    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+  ): Unit = js.native
   def attach(): Apply = js.native
-  def hook(compiler: Compiler_): Unit = js.native
+  def hook(
+    compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+  ): Unit = js.native
 }
 

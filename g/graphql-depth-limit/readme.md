@@ -11,8 +11,8 @@ Limit the complexity of your GraphQL queries based on depth.
 | Full name          | graphql-depth-limit |
 | Keywords           | graphql, complexity, query, depth, limit |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 845252 |
+| # dependents       | 13 |
+| # downloads        | 920520 |
 | # stars            | 0 |
 
 ## Links

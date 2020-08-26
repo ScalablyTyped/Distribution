@@ -73,6 +73,11 @@ trait JQuery extends js.Object {
   def data_colorpicker(methodName: colorpicker): ColorPicker = js.native
   def off(events: ColorPickerEvents): JQuery = js.native
   def off(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
+  def off(
+    events: ColorPickerEvents,
+    selector: js.UndefOr[scala.Nothing],
+    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+  ): JQuery = js.native
   def off(events: ColorPickerEvents, selector: String): JQuery = js.native
   def off(
     events: ColorPickerEvents,

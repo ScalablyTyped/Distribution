@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 class GammaGompertz ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.GammaGompertz] {
   def this(b: Double) = this()
+  def this(b: js.UndefOr[scala.Nothing], s: Double) = this()
   def this(b: Double, s: Double) = this()
+  def this(b: js.UndefOr[scala.Nothing], s: js.UndefOr[scala.Nothing], beta: Double) = this()
+  def this(b: js.UndefOr[scala.Nothing], s: Double, beta: Double) = this()
+  def this(b: Double, s: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(b: Double, s: Double, beta: Double) = this()
 }
 

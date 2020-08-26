@@ -64,8 +64,8 @@ abstract class EntityType protected () extends DataType {
   @JSName("containerAsMicroflowParameterBase")
   def containerAsMicroflowParameterBase_MEntityType: MicroflowParameterBase = js.native
   def entity: IEntity = js.native
-  def entity(newValue: IEntity): js.Any = js.native
   def entityQualifiedName: String = js.native
+  def entity_=(newValue: IEntity): Unit = js.native
 }
 
 /* static members */

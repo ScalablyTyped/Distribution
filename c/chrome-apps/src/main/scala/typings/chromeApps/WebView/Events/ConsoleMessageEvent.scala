@@ -1,7 +1,7 @@
 package typings.chromeApps.WebView.Events
 
 import typings.chromeApps.chrome.integer
-import typings.std.Event_
+import typings.std.Event
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * The following example code forwards all log messages to the embedder's console without regard for log level or other properties.
   */
 @js.native
-trait ConsoleMessageEvent extends Event_ {
+trait ConsoleMessageEvent extends Event {
   /**
     * The severity level of the log message.
     * Ranges from -1 to 2.

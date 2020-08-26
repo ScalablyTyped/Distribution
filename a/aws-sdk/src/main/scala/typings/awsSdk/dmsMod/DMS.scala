@@ -51,6 +51,21 @@ trait DMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ ApplyPendingMaintenanceActionResponse, Unit]
   ): Request[ApplyPendingMaintenanceActionResponse, AWSError] = js.native
   /**
+    * Cancels a single premigration assessment run. This operation prevents any individual assessments from running if they haven't started running. It also attempts to cancel any individual assessments that are currently running.
+    */
+  def cancelReplicationTaskAssessmentRun(): Request[CancelReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  def cancelReplicationTaskAssessmentRun(
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelReplicationTaskAssessmentRunResponse, Unit]
+  ): Request[CancelReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  /**
+    * Cancels a single premigration assessment run. This operation prevents any individual assessments from running if they haven't started running. It also attempts to cancel any individual assessments that are currently running.
+    */
+  def cancelReplicationTaskAssessmentRun(params: CancelReplicationTaskAssessmentRunMessage): Request[CancelReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  def cancelReplicationTaskAssessmentRun(
+    params: CancelReplicationTaskAssessmentRunMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelReplicationTaskAssessmentRunResponse, Unit]
+  ): Request[CancelReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  /**
     * Creates an endpoint using the provided settings.
     */
   def createEndpoint(): Request[CreateEndpointResponse, AWSError] = js.native
@@ -207,6 +222,21 @@ trait DMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationTaskResponse, Unit]
   ): Request[DeleteReplicationTaskResponse, AWSError] = js.native
   /**
+    * Deletes the record of a single premigration assessment run. This operation removes all metadata that AWS DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
+    */
+  def deleteReplicationTaskAssessmentRun(): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  def deleteReplicationTaskAssessmentRun(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationTaskAssessmentRunResponse, Unit]
+  ): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  /**
+    * Deletes the record of a single premigration assessment run. This operation removes all metadata that AWS DMS maintains about this assessment run. However, the operation leaves untouched all information about this assessment run that is stored in your Amazon S3 bucket.
+    */
+  def deleteReplicationTaskAssessmentRun(params: DeleteReplicationTaskAssessmentRunMessage): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  def deleteReplicationTaskAssessmentRun(
+    params: DeleteReplicationTaskAssessmentRunMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteReplicationTaskAssessmentRunResponse, Unit]
+  ): Request[DeleteReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  /**
     * Lists all of the AWS DMS attributes for a customer account. These attributes include AWS DMS quotas for the account and a unique account identifier in a particular DMS region. DMS quotas include a list of resource quotas supported by the account, such as the number of replication instances allowed. The description for each resource quota, includes the quota name, current usage toward that quota, and the quota's maximum value. DMS uses the unique account identifier to name each artifact used by DMS in the given region. This command does not take any parameters.
     */
   def describeAccountAttributes(): Request[DescribeAccountAttributesResponse, AWSError] = js.native
@@ -219,6 +249,21 @@ trait DMS extends Service {
     params: DescribeAccountAttributesMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountAttributesResponse, Unit]
   ): Request[DescribeAccountAttributesResponse, AWSError] = js.native
+  /**
+    * Provides a list of individual assessments that you can specify for a new premigration assessment run, given one or more parameters. If you specify an existing migration task, this operation provides the default individual assessments you can specify for that task. Otherwise, the specified parameters model elements of a possible migration task on which to base a premigration assessment run. To use these migration task modeling parameters, you must specify an existing replication instance, a source database engine, a target database engine, and a migration type. This combination of parameters potentially limits the default individual assessments available for an assessment run created for a corresponding migration task. If you specify no parameters, this operation provides a list of all possible individual assessments that you can specify for an assessment run. If you specify any one of the task modeling parameters, you must specify all of them or the operation cannot provide a list of individual assessments. The only parameter that you can specify alone is for an existing migration task. The specified task definition then determines the default list of individual assessments that you can specify in an assessment run for the task.
+    */
+  def describeApplicableIndividualAssessments(): Request[DescribeApplicableIndividualAssessmentsResponse, AWSError] = js.native
+  def describeApplicableIndividualAssessments(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicableIndividualAssessmentsResponse, Unit]
+  ): Request[DescribeApplicableIndividualAssessmentsResponse, AWSError] = js.native
+  /**
+    * Provides a list of individual assessments that you can specify for a new premigration assessment run, given one or more parameters. If you specify an existing migration task, this operation provides the default individual assessments you can specify for that task. Otherwise, the specified parameters model elements of a possible migration task on which to base a premigration assessment run. To use these migration task modeling parameters, you must specify an existing replication instance, a source database engine, a target database engine, and a migration type. This combination of parameters potentially limits the default individual assessments available for an assessment run created for a corresponding migration task. If you specify no parameters, this operation provides a list of all possible individual assessments that you can specify for an assessment run. If you specify any one of the task modeling parameters, you must specify all of them or the operation cannot provide a list of individual assessments. The only parameter that you can specify alone is for an existing migration task. The specified task definition then determines the default list of individual assessments that you can specify in an assessment run for the task.
+    */
+  def describeApplicableIndividualAssessments(params: DescribeApplicableIndividualAssessmentsMessage): Request[DescribeApplicableIndividualAssessmentsResponse, AWSError] = js.native
+  def describeApplicableIndividualAssessments(
+    params: DescribeApplicableIndividualAssessmentsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeApplicableIndividualAssessmentsResponse, Unit]
+  ): Request[DescribeApplicableIndividualAssessmentsResponse, AWSError] = js.native
   /**
     * Provides a description of the certificate.
     */
@@ -419,6 +464,44 @@ trait DMS extends Service {
       Unit
     ]
   ): Request[DescribeReplicationTaskAssessmentResultsResponse, AWSError] = js.native
+  /**
+    * Returns a paginated list of premigration assessment runs based on filter settings. These filter settings can specify a combination of premigration assessment runs, migration tasks, replication instances, and assessment run status values.  This operation doesn't return information about individual assessments. For this information, see the DescribeReplicationTaskIndividualAssessments operation.  
+    */
+  def describeReplicationTaskAssessmentRuns(): Request[DescribeReplicationTaskAssessmentRunsResponse, AWSError] = js.native
+  def describeReplicationTaskAssessmentRuns(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTaskAssessmentRunsResponse, Unit]
+  ): Request[DescribeReplicationTaskAssessmentRunsResponse, AWSError] = js.native
+  /**
+    * Returns a paginated list of premigration assessment runs based on filter settings. These filter settings can specify a combination of premigration assessment runs, migration tasks, replication instances, and assessment run status values.  This operation doesn't return information about individual assessments. For this information, see the DescribeReplicationTaskIndividualAssessments operation.  
+    */
+  def describeReplicationTaskAssessmentRuns(params: DescribeReplicationTaskAssessmentRunsMessage): Request[DescribeReplicationTaskAssessmentRunsResponse, AWSError] = js.native
+  def describeReplicationTaskAssessmentRuns(
+    params: DescribeReplicationTaskAssessmentRunsMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReplicationTaskAssessmentRunsResponse, Unit]
+  ): Request[DescribeReplicationTaskAssessmentRunsResponse, AWSError] = js.native
+  /**
+    * Returns a paginated list of individual assessments based on filter settings. These filter settings can specify a combination of premigration assessment runs, migration tasks, and assessment status values.
+    */
+  def describeReplicationTaskIndividualAssessments(): Request[DescribeReplicationTaskIndividualAssessmentsResponse, AWSError] = js.native
+  def describeReplicationTaskIndividualAssessments(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeReplicationTaskIndividualAssessmentsResponse, 
+      Unit
+    ]
+  ): Request[DescribeReplicationTaskIndividualAssessmentsResponse, AWSError] = js.native
+  /**
+    * Returns a paginated list of individual assessments based on filter settings. These filter settings can specify a combination of premigration assessment runs, migration tasks, and assessment status values.
+    */
+  def describeReplicationTaskIndividualAssessments(params: DescribeReplicationTaskIndividualAssessmentsMessage): Request[DescribeReplicationTaskIndividualAssessmentsResponse, AWSError] = js.native
+  def describeReplicationTaskIndividualAssessments(
+    params: DescribeReplicationTaskIndividualAssessmentsMessage,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeReplicationTaskIndividualAssessmentsResponse, 
+      Unit
+    ]
+  ): Request[DescribeReplicationTaskIndividualAssessmentsResponse, AWSError] = js.native
   /**
     * Returns information about replication tasks for your account in the current region.
     */
@@ -630,12 +713,27 @@ trait DMS extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskAssessmentResponse, Unit]
   ): Request[StartReplicationTaskAssessmentResponse, AWSError] = js.native
   /**
-    * Stops the replication task. 
+    * Starts a new premigration assessment run for one or more individual assessments of a migration task. The assessments that you can specify depend on the source and target database engine and the migration type defined for the given task. To run this operation, your migration task must already be created. After you run this operation, you can review the status of each individual assessment. You can also run the migration task manually after the assessment run and its individual assessments complete.
+    */
+  def startReplicationTaskAssessmentRun(): Request[StartReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  def startReplicationTaskAssessmentRun(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskAssessmentRunResponse, Unit]
+  ): Request[StartReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  /**
+    * Starts a new premigration assessment run for one or more individual assessments of a migration task. The assessments that you can specify depend on the source and target database engine and the migration type defined for the given task. To run this operation, your migration task must already be created. After you run this operation, you can review the status of each individual assessment. You can also run the migration task manually after the assessment run and its individual assessments complete.
+    */
+  def startReplicationTaskAssessmentRun(params: StartReplicationTaskAssessmentRunMessage): Request[StartReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  def startReplicationTaskAssessmentRun(
+    params: StartReplicationTaskAssessmentRunMessage,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationTaskAssessmentRunResponse, Unit]
+  ): Request[StartReplicationTaskAssessmentRunResponse, AWSError] = js.native
+  /**
+    * Stops the replication task.
     */
   def stopReplicationTask(): Request[StopReplicationTaskResponse, AWSError] = js.native
   def stopReplicationTask(callback: js.Function2[/* err */ AWSError, /* data */ StopReplicationTaskResponse, Unit]): Request[StopReplicationTaskResponse, AWSError] = js.native
   /**
-    * Stops the replication task. 
+    * Stops the replication task.
     */
   def stopReplicationTask(params: StopReplicationTaskMessage): Request[StopReplicationTaskResponse, AWSError] = js.native
   def stopReplicationTask(

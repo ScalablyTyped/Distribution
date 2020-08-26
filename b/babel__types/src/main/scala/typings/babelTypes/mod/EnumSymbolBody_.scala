@@ -6,29 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait EnumSymbolBody_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait EnumSymbolBody_
   extends EnumBody
      with BaseNode {
-  var members: js.Array[EnumDefaultedMember_]
+  var members: js.Array[EnumDefaultedMember_] = js.native
   @JSName("type")
-  var type_EnumSymbolBody_ : EnumSymbolBody
+  var type_EnumSymbolBody_ : EnumSymbolBody = js.native
 }
 
 object EnumSymbolBody_ {
   @scala.inline
-  def apply(
-    members: js.Array[EnumDefaultedMember_],
-    `type`: EnumSymbolBody,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): EnumSymbolBody_ = {
-    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(members: js.Array[EnumDefaultedMember_], `type`: EnumSymbolBody): EnumSymbolBody_ = {
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumSymbolBody_]
   }
+  @scala.inline
+  implicit class EnumSymbolBody_Ops[Self <: EnumSymbolBody_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembersVarargs(value: EnumDefaultedMember_ *): Self = this.set("members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: js.Array[EnumDefaultedMember_]): Self = this.set("members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: EnumSymbolBody): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

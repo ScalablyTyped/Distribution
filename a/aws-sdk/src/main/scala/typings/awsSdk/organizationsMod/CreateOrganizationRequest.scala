@@ -14,10 +14,26 @@ trait CreateOrganizationRequest extends js.Object {
 
 object CreateOrganizationRequest {
   @scala.inline
-  def apply(FeatureSet: OrganizationFeatureSet = null): CreateOrganizationRequest = {
+  def apply(): CreateOrganizationRequest = {
     val __obj = js.Dynamic.literal()
-    if (FeatureSet != null) __obj.updateDynamic("FeatureSet")(FeatureSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOrganizationRequest]
   }
+  @scala.inline
+  implicit class CreateOrganizationRequestOps[Self <: CreateOrganizationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFeatureSet(value: OrganizationFeatureSet): Self = this.set("FeatureSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureSet: Self = this.set("FeatureSet", js.undefined)
+  }
+  
 }
 

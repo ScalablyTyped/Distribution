@@ -19,10 +19,26 @@ trait SchemaCreateVersionMetadataV1 extends js.Object {
 
 object SchemaCreateVersionMetadataV1 {
   @scala.inline
-  def apply(cloudBuildId: String = null): SchemaCreateVersionMetadataV1 = {
+  def apply(): SchemaCreateVersionMetadataV1 = {
     val __obj = js.Dynamic.literal()
-    if (cloudBuildId != null) __obj.updateDynamic("cloudBuildId")(cloudBuildId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreateVersionMetadataV1]
   }
+  @scala.inline
+  implicit class SchemaCreateVersionMetadataV1Ops[Self <: SchemaCreateVersionMetadataV1] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloudBuildId(value: String): Self = this.set("cloudBuildId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloudBuildId: Self = this.set("cloudBuildId", js.undefined)
+  }
+  
 }
 

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InsertTableRowsRequest extends js.Object {
   /**
     * The reference table cell location from which rows will be inserted.
@@ -12,34 +13,54 @@ trait InsertTableRowsRequest extends js.Object {
     * cell is. If the reference cell is a merged cell, a new row will be
     * inserted above (or below) the merged cell.
     */
-  var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
+  var cellLocation: js.UndefOr[TableCellLocation] = js.native
   /**
     * Whether to insert new rows below the reference cell location.
     *
     * - `True`: insert below the cell.
     * - `False`: insert above the cell.
     */
-  var insertBelow: js.UndefOr[Boolean] = js.undefined
+  var insertBelow: js.UndefOr[Boolean] = js.native
   /** The number of rows to be inserted. Maximum 20 per request. */
-  var number: js.UndefOr[Double] = js.undefined
+  var number: js.UndefOr[Double] = js.native
   /** The table to insert rows into. */
-  var tableObjectId: js.UndefOr[String] = js.undefined
+  var tableObjectId: js.UndefOr[String] = js.native
 }
 
 object InsertTableRowsRequest {
   @scala.inline
-  def apply(
-    cellLocation: TableCellLocation = null,
-    insertBelow: js.UndefOr[Boolean] = js.undefined,
-    number: js.UndefOr[Double] = js.undefined,
-    tableObjectId: String = null
-  ): InsertTableRowsRequest = {
+  def apply(): InsertTableRowsRequest = {
     val __obj = js.Dynamic.literal()
-    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(insertBelow)) __obj.updateDynamic("insertBelow")(insertBelow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number.get.asInstanceOf[js.Any])
-    if (tableObjectId != null) __obj.updateDynamic("tableObjectId")(tableObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTableRowsRequest]
   }
+  @scala.inline
+  implicit class InsertTableRowsRequestOps[Self <: InsertTableRowsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCellLocation(value: TableCellLocation): Self = this.set("cellLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellLocation: Self = this.set("cellLocation", js.undefined)
+    @scala.inline
+    def setInsertBelow(value: Boolean): Self = this.set("insertBelow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertBelow: Self = this.set("insertBelow", js.undefined)
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumber: Self = this.set("number", js.undefined)
+    @scala.inline
+    def setTableObjectId(value: String): Self = this.set("tableObjectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableObjectId: Self = this.set("tableObjectId", js.undefined)
+  }
+  
 }
 

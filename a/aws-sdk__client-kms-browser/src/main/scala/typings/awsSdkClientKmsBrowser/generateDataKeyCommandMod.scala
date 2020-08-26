@@ -26,16 +26,9 @@ object generateDataKeyCommandMod extends js.Object {
           Blob
         ] {
     def this(input: GenerateDataKeyInput) = this()
-    /* CompleteClass */
-    override val input: GenerateDataKeyInput = js.native
     val middlewareStack: MiddlewareStack[GenerateDataKeyInput, GenerateDataKeyOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KMSResolvedConfiguration
-    ): Handler[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KMSResolvedConfiguration
     ): Handler[GenerateDataKeyInput, GenerateDataKeyOutput] = js.native
   }

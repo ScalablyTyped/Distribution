@@ -25,9 +25,9 @@ class CustomSetting protected () extends Element {
   var model_FCustomSetting: IModel = js.native
   def containerAsConfiguration: Configuration = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def value: String = js.native
-  def value(newValue: String): js.Any = js.native
+  def value_=(newValue: String): Unit = js.native
 }
 
 /* static members */

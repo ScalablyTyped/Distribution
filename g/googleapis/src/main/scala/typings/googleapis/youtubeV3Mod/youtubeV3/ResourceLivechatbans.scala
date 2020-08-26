@@ -27,6 +27,7 @@ class ResourceLivechatbans protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivechatbansDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivechatbansDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -55,6 +56,7 @@ class ResourceLivechatbans protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaLiveChatBan] = js.native
   def insert(callback: BodyResponseCallback[SchemaLiveChatBan]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveChatBan] = js.native
   def insert(params: ParamsResourceLivechatbansInsert): GaxiosPromise[SchemaLiveChatBan] = js.native
   def insert(params: ParamsResourceLivechatbansInsert, callback: BodyResponseCallback[SchemaLiveChatBan]): Unit = js.native
   def insert(

@@ -37,6 +37,7 @@ trait ChartObjects extends js.Object {
     * @param Format [Format=-4147]
     */
   def CopyPicture(): js.Any = js.native
+  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def Cut(): js.Any = js.native

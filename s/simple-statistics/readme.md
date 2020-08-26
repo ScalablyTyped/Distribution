@@ -10,9 +10,9 @@ Simple Statistics
 | ------------------ | :-------------: |
 | Full name          | simple-statistics |
 | Keywords           | descriptive, linear, math, probability, regression, statistics |
-| # releases         | 15 |
-| # dependents       | 101 |
-| # downloads        | 1916745 |
+| # releases         | 14 |
+| # dependents       | 102 |
+| # downloads        | 1959124 |
 | # stars            | 22 |
 
 ## Links

@@ -13,12 +13,34 @@ trait BackupOption extends js.Object {
 
 object BackupOption {
   @scala.inline
-  def apply(backupOption: Color = null, size: String = null, `type`: String = null): BackupOption = {
+  def apply(): BackupOption = {
     val __obj = js.Dynamic.literal()
-    if (backupOption != null) __obj.updateDynamic("backupOption")(backupOption.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackupOption]
   }
+  @scala.inline
+  implicit class BackupOptionOps[Self <: BackupOption] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackupOption(value: Color): Self = this.set("backupOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupOption: Self = this.set("backupOption", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

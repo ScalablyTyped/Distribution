@@ -2,6 +2,7 @@ package typings.rcTable.tableMod
 
 import typings.rcTable.anon.Body
 import typings.rcTable.anon.X
+import typings.rcTable.interfaceMod.ColumnGroupType
 import typings.rcTable.interfaceMod.ColumnType
 import typings.rcTable.interfaceMod.ColumnsType
 import typings.rcTable.interfaceMod.ExpandableConfig
@@ -10,7 +11,6 @@ import typings.rcTable.interfaceMod.GetRowKey
 import typings.rcTable.interfaceMod.Key
 import typings.rcTable.interfaceMod.LegacyExpandableProps
 import typings.rcTable.interfaceMod.PanelRender
-import typings.rcTable.interfaceMod.RenderExpandIconProps
 import typings.rcTable.interfaceMod.RowClassName
 import typings.rcTable.interfaceMod.TableComponents
 import typings.rcTable.interfaceMod.TableLayout
@@ -24,127 +24,176 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TableProps[RecordType] extends LegacyExpandableProps[RecordType] {
-  var children: js.UndefOr[ReactNode] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var columns: js.UndefOr[ColumnsType[RecordType]] = js.undefined
-  var components: js.UndefOr[TableComponents[RecordType]] = js.undefined
-  var data: js.UndefOr[js.Array[RecordType]] = js.undefined
-  var direction: js.UndefOr[ltr | rtl] = js.undefined
-  var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.native
+  var className: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[ColumnsType[RecordType]] = js.native
+  var components: js.UndefOr[TableComponents[RecordType]] = js.native
+  var data: js.UndefOr[js.Array[RecordType]] = js.native
+  var direction: js.UndefOr[ltr | rtl] = js.native
+  var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.native
   /** Config expand rows */
-  var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.undefined
-  var footer: js.UndefOr[PanelRender[RecordType]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
+  var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.native
+  var footer: js.UndefOr[PanelRender[RecordType]] = js.native
+  var id: js.UndefOr[String] = js.native
   /**
     * @private Internal usage, may remove by refactor. Should always use `columns` instead.
     *
     * !!! DO NOT USE IN PRODUCTION ENVIRONMENT !!!
     */
-  var internalHooks: js.UndefOr[String] = js.undefined
+  var internalHooks: js.UndefOr[String] = js.native
   /**
     * @private Internal usage, may remove by refactor.
     *
     * !!! DO NOT USE IN PRODUCTION ENVIRONMENT !!!
     */
-  var internalRefs: js.UndefOr[Body] = js.undefined
-  var onHeaderRow: js.UndefOr[GetComponentProps[js.Array[ColumnType[RecordType]]]] = js.undefined
-  var onRow: js.UndefOr[GetComponentProps[RecordType]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var rowClassName: js.UndefOr[String | RowClassName[RecordType]] = js.undefined
-  var rowKey: js.UndefOr[String | GetRowKey[RecordType]] = js.undefined
-  var scroll: js.UndefOr[X] = js.undefined
-  var showHeader: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var summary: js.UndefOr[js.Function1[/* data */ js.Array[RecordType], ReactNode]] = js.undefined
-  var tableLayout: js.UndefOr[TableLayout] = js.undefined
-  var title: js.UndefOr[PanelRender[RecordType]] = js.undefined
+  var internalRefs: js.UndefOr[Body] = js.native
+  var onHeaderRow: js.UndefOr[GetComponentProps[js.Array[ColumnType[RecordType]]]] = js.native
+  var onRow: js.UndefOr[GetComponentProps[RecordType]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var rowClassName: js.UndefOr[String | RowClassName[RecordType]] = js.native
+  var rowKey: js.UndefOr[String | GetRowKey[RecordType]] = js.native
+  var scroll: js.UndefOr[X] = js.native
+  var showHeader: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var summary: js.UndefOr[js.Function1[/* data */ js.Array[RecordType], ReactNode]] = js.native
+  var tableLayout: js.UndefOr[TableLayout] = js.native
+  var title: js.UndefOr[PanelRender[RecordType]] = js.native
   /**
     * @private Internal usage, may remove by refactor. Should always use `columns` instead.
     *
     * !!! DO NOT USE IN PRODUCTION ENVIRONMENT !!!
     */
-  var transformColumns: js.UndefOr[js.Function1[/* columns */ ColumnsType[RecordType], ColumnsType[RecordType]]] = js.undefined
+  var transformColumns: js.UndefOr[js.Function1[/* columns */ ColumnsType[RecordType], ColumnsType[RecordType]]] = js.native
 }
 
 object TableProps {
   @scala.inline
-  def apply[RecordType](
-    children: ReactNode = null,
-    childrenColumnName: String = null,
-    className: String = null,
-    columns: ColumnsType[RecordType] = null,
-    components: TableComponents[RecordType] = null,
-    data: js.Array[RecordType] = null,
-    defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined,
-    defaultExpandedRowKeys: js.Array[Key] = null,
-    direction: ltr | rtl = null,
-    emptyText: ReactNode | js.Function0[ReactNode] = null,
-    expandIcon: /* props */ RenderExpandIconProps[RecordType] => ReactNode = null,
-    expandIconColumnIndex: js.UndefOr[Double] = js.undefined,
-    expandRowByClick: js.UndefOr[Boolean] = js.undefined,
-    expandable: ExpandableConfig[RecordType] = null,
-    expandedRowClassName: (RecordType, /* index */ Double, /* indent */ Double) => String = null,
-    expandedRowKeys: js.Array[Key] = null,
-    expandedRowRender: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode = null,
-    footer: /* data */ js.Array[RecordType] => ReactNode = null,
-    id: String = null,
-    indentSize: js.UndefOr[Double] = js.undefined,
-    internalHooks: String = null,
-    internalRefs: Body = null,
-    onExpand: (/* expanded */ Boolean, RecordType) => Unit = null,
-    onExpandedRowsChange: /* expandedKeys */ js.Array[Key] => Unit = null,
-    onHeaderRow: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    onRow: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement] = null,
-    prefixCls: String = null,
-    rowClassName: String | RowClassName[RecordType] = null,
-    rowKey: String | GetRowKey[RecordType] = null,
-    scroll: X = null,
-    showHeader: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    summary: /* data */ js.Array[RecordType] => ReactNode = null,
-    tableLayout: TableLayout = null,
-    title: /* data */ js.Array[RecordType] => ReactNode = null,
-    transformColumns: /* columns */ ColumnsType[RecordType] => ColumnsType[RecordType] = null
-  ): TableProps[RecordType] = {
+  def apply[RecordType](): TableProps[RecordType] = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (childrenColumnName != null) __obj.updateDynamic("childrenColumnName")(childrenColumnName.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows.get.asInstanceOf[js.Any])
-    if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
-    if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
-    if (!js.isUndefined(expandIconColumnIndex)) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick.get.asInstanceOf[js.Any])
-    if (expandable != null) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
-    if (expandedRowClassName != null) __obj.updateDynamic("expandedRowClassName")(js.Any.fromFunction3(expandedRowClassName))
-    if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
-    if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4(expandedRowRender))
-    if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentSize)) __obj.updateDynamic("indentSize")(indentSize.get.asInstanceOf[js.Any])
-    if (internalHooks != null) __obj.updateDynamic("internalHooks")(internalHooks.asInstanceOf[js.Any])
-    if (internalRefs != null) __obj.updateDynamic("internalRefs")(internalRefs.asInstanceOf[js.Any])
-    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
-    if (onExpandedRowsChange != null) __obj.updateDynamic("onExpandedRowsChange")(js.Any.fromFunction1(onExpandedRowsChange))
-    if (onHeaderRow != null) __obj.updateDynamic("onHeaderRow")(js.Any.fromFunction2(onHeaderRow))
-    if (onRow != null) __obj.updateDynamic("onRow")(js.Any.fromFunction2(onRow))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(js.Any.fromFunction1(summary))
-    if (tableLayout != null) __obj.updateDynamic("tableLayout")(tableLayout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(js.Any.fromFunction1(title))
-    if (transformColumns != null) __obj.updateDynamic("transformColumns")(js.Any.fromFunction1(transformColumns))
     __obj.asInstanceOf[TableProps[RecordType]]
   }
+  @scala.inline
+  implicit class TablePropsOps[Self <: TableProps[_], RecordType] (val x: Self with TableProps[RecordType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: ColumnsType[RecordType]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setComponents(value: TableComponents[RecordType]): Self = this.set("components", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponents: Self = this.set("components", js.undefined)
+    @scala.inline
+    def setDataVarargs(value: RecordType*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[RecordType]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDirection(value: ltr | rtl): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setEmptyTextFunction0(value: () => ReactNode): Self = this.set("emptyText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setEmptyText(value: ReactNode | js.Function0[ReactNode]): Self = this.set("emptyText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmptyText: Self = this.set("emptyText", js.undefined)
+    @scala.inline
+    def setExpandable(value: ExpandableConfig[RecordType]): Self = this.set("expandable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandable: Self = this.set("expandable", js.undefined)
+    @scala.inline
+    def setFooter(value: /* data */ js.Array[RecordType] => ReactNode): Self = this.set("footer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInternalHooks(value: String): Self = this.set("internalHooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalHooks: Self = this.set("internalHooks", js.undefined)
+    @scala.inline
+    def setInternalRefs(value: Body): Self = this.set("internalRefs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInternalRefs: Self = this.set("internalRefs", js.undefined)
+    @scala.inline
+    def setOnHeaderRow(
+      value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
+    ): Self = this.set("onHeaderRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnHeaderRow: Self = this.set("onHeaderRow", js.undefined)
+    @scala.inline
+    def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = this.set("onRow", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnRow: Self = this.set("onRow", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setRowClassNameFunction3(value: (RecordType, /* index */ Double, /* indent */ Double) => String): Self = this.set("rowClassName", js.Any.fromFunction3(value))
+    @scala.inline
+    def setRowClassName(value: String | RowClassName[RecordType]): Self = this.set("rowClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowClassName: Self = this.set("rowClassName", js.undefined)
+    @scala.inline
+    def setRowKeyFunction2(value: (RecordType, /* index */ js.UndefOr[Double]) => Key): Self = this.set("rowKey", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRowKey(value: String | GetRowKey[RecordType]): Self = this.set("rowKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowKey: Self = this.set("rowKey", js.undefined)
+    @scala.inline
+    def setScroll(value: X): Self = this.set("scroll", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScroll: Self = this.set("scroll", js.undefined)
+    @scala.inline
+    def setShowHeader(value: Boolean): Self = this.set("showHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowHeader: Self = this.set("showHeader", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSummary(value: /* data */ js.Array[RecordType] => ReactNode): Self = this.set("summary", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSummary: Self = this.set("summary", js.undefined)
+    @scala.inline
+    def setTableLayout(value: TableLayout): Self = this.set("tableLayout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableLayout: Self = this.set("tableLayout", js.undefined)
+    @scala.inline
+    def setTitle(value: /* data */ js.Array[RecordType] => ReactNode): Self = this.set("title", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransformColumns(value: /* columns */ ColumnsType[RecordType] => ColumnsType[RecordType]): Self = this.set("transformColumns", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTransformColumns: Self = this.set("transformColumns", js.undefined)
+  }
+  
 }
 

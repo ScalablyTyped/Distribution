@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/reduce", JSImport.Namespace)
+@JSImport("@lumino/algorithm/types/reduce", JSImport.Namespace)
 @js.native
 object reduceMod extends js.Object {
   def reduce[T](

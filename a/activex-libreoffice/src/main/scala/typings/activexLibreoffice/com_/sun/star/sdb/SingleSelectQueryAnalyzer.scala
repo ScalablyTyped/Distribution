@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * group by, having and order criteria, as well as the corresponding select columns and tables. If supported, it even gives access to the parameters.
   * @see com.sun.star.sdb.SingleSelectQueryComposer
   */
+@js.native
 trait SingleSelectQueryAnalyzer
   extends XSingleSelectQueryAnalyzer
      with XTablesSupplier

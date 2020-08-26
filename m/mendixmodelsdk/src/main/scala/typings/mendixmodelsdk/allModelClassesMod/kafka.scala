@@ -34,7 +34,7 @@ object kafka extends js.Object {
   /**
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
-    * In version 8.11.0: introduced
+    * In version 8.12.0: deleted
     */
   @js.native
   class KafkaAttribute protected ()
@@ -52,7 +52,7 @@ object kafka extends js.Object {
   /**
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
-    * In version 8.11.0: introduced
+    * In version 8.12.0: deleted
     */
   @js.native
   class KafkaEntity protected ()
@@ -86,7 +86,7 @@ object kafka extends js.Object {
   /**
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
-    * In version 8.11.0: introduced
+    * In version 8.12.0: deleted
     */
   @js.native
   class KafkaNavigationProperty protected ()
@@ -148,7 +148,7 @@ object kafka extends js.Object {
       * of the parent KafkaEntity element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  8.11.0 and higher
+      *  6.0.0 to 8.11.0
       */
     def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.KafkaEntity): typings.mendixmodelsdk.kafkaMod.kafka.KafkaAttribute = js.native
   }
@@ -164,6 +164,15 @@ object kafka extends js.Object {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     def create(model: IModel): typings.mendixmodelsdk.kafkaMod.kafka.KafkaEntity = js.native
+    /**
+      * Creates and returns a new KafkaEntity instance in the SDK and on the server.
+      * The new KafkaEntity will be automatically stored in the 'entities' property
+      * of the parent ConsumedKafkaService element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  8.11.0 to 8.11.0
+      */
+    def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.ConsumedKafkaService): typings.mendixmodelsdk.kafkaMod.kafka.KafkaEntity = js.native
   }
   
   /* static members */
@@ -205,7 +214,7 @@ object kafka extends js.Object {
       * of the parent KafkaEntity element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  8.11.0 and higher
+      *  6.0.0 to 8.11.0
       */
     def createIn(container: typings.mendixmodelsdk.kafkaMod.kafka.KafkaEntity): typings.mendixmodelsdk.kafkaMod.kafka.KafkaNavigationProperty = js.native
   }

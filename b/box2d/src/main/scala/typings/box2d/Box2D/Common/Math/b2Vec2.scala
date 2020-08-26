@@ -98,6 +98,7 @@ trait b2Vec2 extends js.Object {
     * @param y y value, default is 0.
     **/
   def Set(): Unit = js.native
+  def Set(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def Set(x: Double): Unit = js.native
   def Set(x: Double, y: Double): Unit = js.native
   /**

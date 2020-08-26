@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ErrorMessages extends /* key */ StringDictionary[String | ErrorMessages]
 
 object ErrorMessages {
   @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[String | ErrorMessages] = null): ErrorMessages = {
+  def apply(): ErrorMessages = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ErrorMessages]
   }
 }

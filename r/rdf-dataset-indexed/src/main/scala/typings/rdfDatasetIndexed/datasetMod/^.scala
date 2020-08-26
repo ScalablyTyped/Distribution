@@ -15,6 +15,10 @@ import scala.scalajs.js.annotation._
 class ^[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] () extends js.Object {
   def this(quads: js.Array[Q]) = this()
   def this(
+    quads: js.UndefOr[scala.Nothing],
+    factory: (DataFactory[Quad, Quad]) with (DatasetFactory[Quad, Quad, Dataset[Quad, Quad]])
+  ) = this()
+  def this(
     quads: js.Array[Q],
     factory: (DataFactory[Quad, Quad]) with (DatasetFactory[Quad, Quad, Dataset[Quad, Quad]])
   ) = this()

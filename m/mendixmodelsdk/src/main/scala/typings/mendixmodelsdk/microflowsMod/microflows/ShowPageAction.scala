@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/Show+Page relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/show-page relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ShowPageAction")
 @js.native
@@ -32,11 +32,11 @@ class ShowPageAction protected () extends MicroflowAction {
     * In version 8.11.0: introduced
     */
   def numberOfPagesToClose: String = js.native
-  def numberOfPagesToClose(newValue: String): js.Any = js.native
+  def numberOfPagesToClose_=(newValue: String): Unit = js.native
   def pageSettings: PageSettings = js.native
-  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pageSettings_=(newValue: PageSettings): Unit = js.native
   def passedObjectVariableName: String = js.native
-  def passedObjectVariableName(newValue: String): js.Any = js.native
+  def passedObjectVariableName_=(newValue: String): Unit = js.native
 }
 
 /* static members */

@@ -30,5 +30,26 @@ object RegisterRdsDbInstanceRequest {
     val __obj = js.Dynamic.literal(DbPassword = DbPassword.asInstanceOf[js.Any], DbUser = DbUser.asInstanceOf[js.Any], RdsDbInstanceArn = RdsDbInstanceArn.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterRdsDbInstanceRequest]
   }
+  @scala.inline
+  implicit class RegisterRdsDbInstanceRequestOps[Self <: RegisterRdsDbInstanceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDbPassword(value: String): Self = this.set("DbPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDbUser(value: String): Self = this.set("DbUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRdsDbInstanceArn(value: String): Self = this.set("RdsDbInstanceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStackId(value: String): Self = this.set("StackId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

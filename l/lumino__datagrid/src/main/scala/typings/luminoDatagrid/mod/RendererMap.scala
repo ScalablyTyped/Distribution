@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 class RendererMap ()
   extends typings.luminoDatagrid.renderermapMod.RendererMap {
   def this(values: Values) = this()
+  def this(values: js.UndefOr[scala.Nothing], fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
   def this(values: Values, fallback: typings.luminoDatagrid.cellrendererMod.CellRenderer) = this()
 }
 

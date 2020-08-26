@@ -23,12 +23,36 @@ trait GetPrefixListArgs extends js.Object {
 
 object GetPrefixListArgs {
   @scala.inline
-  def apply(filters: js.Array[GetPrefixListFilter] = null, name: String = null, prefixListId: String = null): GetPrefixListArgs = {
+  def apply(): GetPrefixListArgs = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefixListId != null) __obj.updateDynamic("prefixListId")(prefixListId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPrefixListArgs]
   }
+  @scala.inline
+  implicit class GetPrefixListArgsOps[Self <: GetPrefixListArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: GetPrefixListFilter*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[GetPrefixListFilter]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPrefixListId(value: String): Self = this.set("prefixListId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixListId: Self = this.set("prefixListId", js.undefined)
+  }
+  
 }
 

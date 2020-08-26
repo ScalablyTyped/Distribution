@@ -50,86 +50,174 @@ trait PartialStyleRulesGridClas extends js.Object {
 
 object PartialStyleRulesGridClas {
   @scala.inline
-  def apply(
-    `align-content-xs-center`: CSSProperties = null,
-    `align-content-xs-flex-end`: CSSProperties = null,
-    `align-content-xs-flex-start`: CSSProperties = null,
-    `align-content-xs-space-around`: CSSProperties = null,
-    `align-content-xs-space-between`: CSSProperties = null,
-    `align-items-xs-baseline`: CSSProperties = null,
-    `align-items-xs-center`: CSSProperties = null,
-    `align-items-xs-flex-end`: CSSProperties = null,
-    `align-items-xs-flex-start`: CSSProperties = null,
-    container: CSSProperties = null,
-    `direction-xs-column`: CSSProperties = null,
-    `direction-xs-column-reverse`: CSSProperties = null,
-    `direction-xs-row-reverse`: CSSProperties = null,
-    `grid-xs-1`: CSSProperties = null,
-    `grid-xs-10`: CSSProperties = null,
-    `grid-xs-11`: CSSProperties = null,
-    `grid-xs-12`: CSSProperties = null,
-    `grid-xs-2`: CSSProperties = null,
-    `grid-xs-3`: CSSProperties = null,
-    `grid-xs-4`: CSSProperties = null,
-    `grid-xs-5`: CSSProperties = null,
-    `grid-xs-6`: CSSProperties = null,
-    `grid-xs-7`: CSSProperties = null,
-    `grid-xs-8`: CSSProperties = null,
-    `grid-xs-9`: CSSProperties = null,
-    `grid-xs-auto`: CSSProperties = null,
-    `grid-xs-true`: CSSProperties = null,
-    item: CSSProperties = null,
-    `justify-xs-center`: CSSProperties = null,
-    `justify-xs-flex-end`: CSSProperties = null,
-    `justify-xs-space-around`: CSSProperties = null,
-    `justify-xs-space-between`: CSSProperties = null,
-    `spacing-xs-16`: CSSProperties = null,
-    `spacing-xs-24`: CSSProperties = null,
-    `spacing-xs-40`: CSSProperties = null,
-    `spacing-xs-8`: CSSProperties = null,
-    `wrap-xs-nowrap`: CSSProperties = null,
-    `wrap-xs-wrap-reverse`: CSSProperties = null
-  ): PartialStyleRulesGridClas = {
+  def apply(): PartialStyleRulesGridClas = {
     val __obj = js.Dynamic.literal()
-    if (`align-content-xs-center` != null) __obj.updateDynamic("align-content-xs-center")(`align-content-xs-center`.asInstanceOf[js.Any])
-    if (`align-content-xs-flex-end` != null) __obj.updateDynamic("align-content-xs-flex-end")(`align-content-xs-flex-end`.asInstanceOf[js.Any])
-    if (`align-content-xs-flex-start` != null) __obj.updateDynamic("align-content-xs-flex-start")(`align-content-xs-flex-start`.asInstanceOf[js.Any])
-    if (`align-content-xs-space-around` != null) __obj.updateDynamic("align-content-xs-space-around")(`align-content-xs-space-around`.asInstanceOf[js.Any])
-    if (`align-content-xs-space-between` != null) __obj.updateDynamic("align-content-xs-space-between")(`align-content-xs-space-between`.asInstanceOf[js.Any])
-    if (`align-items-xs-baseline` != null) __obj.updateDynamic("align-items-xs-baseline")(`align-items-xs-baseline`.asInstanceOf[js.Any])
-    if (`align-items-xs-center` != null) __obj.updateDynamic("align-items-xs-center")(`align-items-xs-center`.asInstanceOf[js.Any])
-    if (`align-items-xs-flex-end` != null) __obj.updateDynamic("align-items-xs-flex-end")(`align-items-xs-flex-end`.asInstanceOf[js.Any])
-    if (`align-items-xs-flex-start` != null) __obj.updateDynamic("align-items-xs-flex-start")(`align-items-xs-flex-start`.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (`direction-xs-column` != null) __obj.updateDynamic("direction-xs-column")(`direction-xs-column`.asInstanceOf[js.Any])
-    if (`direction-xs-column-reverse` != null) __obj.updateDynamic("direction-xs-column-reverse")(`direction-xs-column-reverse`.asInstanceOf[js.Any])
-    if (`direction-xs-row-reverse` != null) __obj.updateDynamic("direction-xs-row-reverse")(`direction-xs-row-reverse`.asInstanceOf[js.Any])
-    if (`grid-xs-1` != null) __obj.updateDynamic("grid-xs-1")(`grid-xs-1`.asInstanceOf[js.Any])
-    if (`grid-xs-10` != null) __obj.updateDynamic("grid-xs-10")(`grid-xs-10`.asInstanceOf[js.Any])
-    if (`grid-xs-11` != null) __obj.updateDynamic("grid-xs-11")(`grid-xs-11`.asInstanceOf[js.Any])
-    if (`grid-xs-12` != null) __obj.updateDynamic("grid-xs-12")(`grid-xs-12`.asInstanceOf[js.Any])
-    if (`grid-xs-2` != null) __obj.updateDynamic("grid-xs-2")(`grid-xs-2`.asInstanceOf[js.Any])
-    if (`grid-xs-3` != null) __obj.updateDynamic("grid-xs-3")(`grid-xs-3`.asInstanceOf[js.Any])
-    if (`grid-xs-4` != null) __obj.updateDynamic("grid-xs-4")(`grid-xs-4`.asInstanceOf[js.Any])
-    if (`grid-xs-5` != null) __obj.updateDynamic("grid-xs-5")(`grid-xs-5`.asInstanceOf[js.Any])
-    if (`grid-xs-6` != null) __obj.updateDynamic("grid-xs-6")(`grid-xs-6`.asInstanceOf[js.Any])
-    if (`grid-xs-7` != null) __obj.updateDynamic("grid-xs-7")(`grid-xs-7`.asInstanceOf[js.Any])
-    if (`grid-xs-8` != null) __obj.updateDynamic("grid-xs-8")(`grid-xs-8`.asInstanceOf[js.Any])
-    if (`grid-xs-9` != null) __obj.updateDynamic("grid-xs-9")(`grid-xs-9`.asInstanceOf[js.Any])
-    if (`grid-xs-auto` != null) __obj.updateDynamic("grid-xs-auto")(`grid-xs-auto`.asInstanceOf[js.Any])
-    if (`grid-xs-true` != null) __obj.updateDynamic("grid-xs-true")(`grid-xs-true`.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (`justify-xs-center` != null) __obj.updateDynamic("justify-xs-center")(`justify-xs-center`.asInstanceOf[js.Any])
-    if (`justify-xs-flex-end` != null) __obj.updateDynamic("justify-xs-flex-end")(`justify-xs-flex-end`.asInstanceOf[js.Any])
-    if (`justify-xs-space-around` != null) __obj.updateDynamic("justify-xs-space-around")(`justify-xs-space-around`.asInstanceOf[js.Any])
-    if (`justify-xs-space-between` != null) __obj.updateDynamic("justify-xs-space-between")(`justify-xs-space-between`.asInstanceOf[js.Any])
-    if (`spacing-xs-16` != null) __obj.updateDynamic("spacing-xs-16")(`spacing-xs-16`.asInstanceOf[js.Any])
-    if (`spacing-xs-24` != null) __obj.updateDynamic("spacing-xs-24")(`spacing-xs-24`.asInstanceOf[js.Any])
-    if (`spacing-xs-40` != null) __obj.updateDynamic("spacing-xs-40")(`spacing-xs-40`.asInstanceOf[js.Any])
-    if (`spacing-xs-8` != null) __obj.updateDynamic("spacing-xs-8")(`spacing-xs-8`.asInstanceOf[js.Any])
-    if (`wrap-xs-nowrap` != null) __obj.updateDynamic("wrap-xs-nowrap")(`wrap-xs-nowrap`.asInstanceOf[js.Any])
-    if (`wrap-xs-wrap-reverse` != null) __obj.updateDynamic("wrap-xs-wrap-reverse")(`wrap-xs-wrap-reverse`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesGridClas]
   }
+  @scala.inline
+  implicit class PartialStyleRulesGridClasOps[Self <: PartialStyleRulesGridClas] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAlign-content-xs-center`(value: CSSProperties): Self = this.set("align-content-xs-center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-content-xs-center`: Self = this.set("align-content-xs-center", js.undefined)
+    @scala.inline
+    def `setAlign-content-xs-flex-end`(value: CSSProperties): Self = this.set("align-content-xs-flex-end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-content-xs-flex-end`: Self = this.set("align-content-xs-flex-end", js.undefined)
+    @scala.inline
+    def `setAlign-content-xs-flex-start`(value: CSSProperties): Self = this.set("align-content-xs-flex-start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-content-xs-flex-start`: Self = this.set("align-content-xs-flex-start", js.undefined)
+    @scala.inline
+    def `setAlign-content-xs-space-around`(value: CSSProperties): Self = this.set("align-content-xs-space-around", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-content-xs-space-around`: Self = this.set("align-content-xs-space-around", js.undefined)
+    @scala.inline
+    def `setAlign-content-xs-space-between`(value: CSSProperties): Self = this.set("align-content-xs-space-between", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-content-xs-space-between`: Self = this.set("align-content-xs-space-between", js.undefined)
+    @scala.inline
+    def `setAlign-items-xs-baseline`(value: CSSProperties): Self = this.set("align-items-xs-baseline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-items-xs-baseline`: Self = this.set("align-items-xs-baseline", js.undefined)
+    @scala.inline
+    def `setAlign-items-xs-center`(value: CSSProperties): Self = this.set("align-items-xs-center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-items-xs-center`: Self = this.set("align-items-xs-center", js.undefined)
+    @scala.inline
+    def `setAlign-items-xs-flex-end`(value: CSSProperties): Self = this.set("align-items-xs-flex-end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-items-xs-flex-end`: Self = this.set("align-items-xs-flex-end", js.undefined)
+    @scala.inline
+    def `setAlign-items-xs-flex-start`(value: CSSProperties): Self = this.set("align-items-xs-flex-start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAlign-items-xs-flex-start`: Self = this.set("align-items-xs-flex-start", js.undefined)
+    @scala.inline
+    def setContainer(value: CSSProperties): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def `setDirection-xs-column`(value: CSSProperties): Self = this.set("direction-xs-column", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDirection-xs-column`: Self = this.set("direction-xs-column", js.undefined)
+    @scala.inline
+    def `setDirection-xs-column-reverse`(value: CSSProperties): Self = this.set("direction-xs-column-reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDirection-xs-column-reverse`: Self = this.set("direction-xs-column-reverse", js.undefined)
+    @scala.inline
+    def `setDirection-xs-row-reverse`(value: CSSProperties): Self = this.set("direction-xs-row-reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteDirection-xs-row-reverse`: Self = this.set("direction-xs-row-reverse", js.undefined)
+    @scala.inline
+    def `setGrid-xs-1`(value: CSSProperties): Self = this.set("grid-xs-1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-1`: Self = this.set("grid-xs-1", js.undefined)
+    @scala.inline
+    def `setGrid-xs-10`(value: CSSProperties): Self = this.set("grid-xs-10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-10`: Self = this.set("grid-xs-10", js.undefined)
+    @scala.inline
+    def `setGrid-xs-11`(value: CSSProperties): Self = this.set("grid-xs-11", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-11`: Self = this.set("grid-xs-11", js.undefined)
+    @scala.inline
+    def `setGrid-xs-12`(value: CSSProperties): Self = this.set("grid-xs-12", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-12`: Self = this.set("grid-xs-12", js.undefined)
+    @scala.inline
+    def `setGrid-xs-2`(value: CSSProperties): Self = this.set("grid-xs-2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-2`: Self = this.set("grid-xs-2", js.undefined)
+    @scala.inline
+    def `setGrid-xs-3`(value: CSSProperties): Self = this.set("grid-xs-3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-3`: Self = this.set("grid-xs-3", js.undefined)
+    @scala.inline
+    def `setGrid-xs-4`(value: CSSProperties): Self = this.set("grid-xs-4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-4`: Self = this.set("grid-xs-4", js.undefined)
+    @scala.inline
+    def `setGrid-xs-5`(value: CSSProperties): Self = this.set("grid-xs-5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-5`: Self = this.set("grid-xs-5", js.undefined)
+    @scala.inline
+    def `setGrid-xs-6`(value: CSSProperties): Self = this.set("grid-xs-6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-6`: Self = this.set("grid-xs-6", js.undefined)
+    @scala.inline
+    def `setGrid-xs-7`(value: CSSProperties): Self = this.set("grid-xs-7", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-7`: Self = this.set("grid-xs-7", js.undefined)
+    @scala.inline
+    def `setGrid-xs-8`(value: CSSProperties): Self = this.set("grid-xs-8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-8`: Self = this.set("grid-xs-8", js.undefined)
+    @scala.inline
+    def `setGrid-xs-9`(value: CSSProperties): Self = this.set("grid-xs-9", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-9`: Self = this.set("grid-xs-9", js.undefined)
+    @scala.inline
+    def `setGrid-xs-auto`(value: CSSProperties): Self = this.set("grid-xs-auto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-auto`: Self = this.set("grid-xs-auto", js.undefined)
+    @scala.inline
+    def `setGrid-xs-true`(value: CSSProperties): Self = this.set("grid-xs-true", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteGrid-xs-true`: Self = this.set("grid-xs-true", js.undefined)
+    @scala.inline
+    def setItem(value: CSSProperties): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def `setJustify-xs-center`(value: CSSProperties): Self = this.set("justify-xs-center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteJustify-xs-center`: Self = this.set("justify-xs-center", js.undefined)
+    @scala.inline
+    def `setJustify-xs-flex-end`(value: CSSProperties): Self = this.set("justify-xs-flex-end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteJustify-xs-flex-end`: Self = this.set("justify-xs-flex-end", js.undefined)
+    @scala.inline
+    def `setJustify-xs-space-around`(value: CSSProperties): Self = this.set("justify-xs-space-around", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteJustify-xs-space-around`: Self = this.set("justify-xs-space-around", js.undefined)
+    @scala.inline
+    def `setJustify-xs-space-between`(value: CSSProperties): Self = this.set("justify-xs-space-between", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteJustify-xs-space-between`: Self = this.set("justify-xs-space-between", js.undefined)
+    @scala.inline
+    def `setSpacing-xs-16`(value: CSSProperties): Self = this.set("spacing-xs-16", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSpacing-xs-16`: Self = this.set("spacing-xs-16", js.undefined)
+    @scala.inline
+    def `setSpacing-xs-24`(value: CSSProperties): Self = this.set("spacing-xs-24", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSpacing-xs-24`: Self = this.set("spacing-xs-24", js.undefined)
+    @scala.inline
+    def `setSpacing-xs-40`(value: CSSProperties): Self = this.set("spacing-xs-40", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSpacing-xs-40`: Self = this.set("spacing-xs-40", js.undefined)
+    @scala.inline
+    def `setSpacing-xs-8`(value: CSSProperties): Self = this.set("spacing-xs-8", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteSpacing-xs-8`: Self = this.set("spacing-xs-8", js.undefined)
+    @scala.inline
+    def `setWrap-xs-nowrap`(value: CSSProperties): Self = this.set("wrap-xs-nowrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteWrap-xs-nowrap`: Self = this.set("wrap-xs-nowrap", js.undefined)
+    @scala.inline
+    def `setWrap-xs-wrap-reverse`(value: CSSProperties): Self = this.set("wrap-xs-wrap-reverse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteWrap-xs-wrap-reverse`: Self = this.set("wrap-xs-wrap-reverse", js.undefined)
+  }
+  
 }
 

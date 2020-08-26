@@ -16,6 +16,7 @@ class Connection protected () extends EventEmitter {
   def api(command: js.Any, args: js.Array[String], cb: js.Function0[Unit]): Unit = js.native
   def auth(cb: js.Function0[Unit]): Unit = js.native
   def bgapi(command: js.Any, args: js.Array[String]): Unit = js.native
+  def bgapi(command: js.Any, args: js.Array[String], jobid: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
   def bgapi(command: js.Any, args: js.Array[String], jobid: js.Any): Unit = js.native
   def bgapi(command: js.Any, args: js.Array[String], jobid: js.Any, cb: js.Function0[Unit]): Unit = js.native
   def connected(): js.Any = js.native
@@ -33,11 +34,29 @@ class Connection protected () extends EventEmitter {
   @JSName("events")
   def events_xml(`type`: xml, events: String, cb: js.Function0[Unit]): Unit = js.native
   def execute(app: js.Any): js.Any = js.native
+  def execute(
+    app: js.Any,
+    arg: js.UndefOr[scala.Nothing],
+    uuid: js.UndefOr[scala.Nothing],
+    cb: js.Function0[Unit]
+  ): js.Any = js.native
+  def execute(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String): js.Any = js.native
+  def execute(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String, cb: js.Function0[Unit]): js.Any = js.native
   def execute(app: js.Any, arg: String): js.Any = js.native
+  def execute(app: js.Any, arg: String, uuid: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): js.Any = js.native
   def execute(app: js.Any, arg: String, uuid: String): js.Any = js.native
   def execute(app: js.Any, arg: String, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
   def executeAsync(app: js.Any): js.Any = js.native
+  def executeAsync(
+    app: js.Any,
+    arg: js.UndefOr[scala.Nothing],
+    uuid: js.UndefOr[scala.Nothing],
+    cb: js.Function0[Unit]
+  ): js.Any = js.native
+  def executeAsync(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String): js.Any = js.native
+  def executeAsync(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String, cb: js.Function0[Unit]): js.Any = js.native
   def executeAsync(app: js.Any, arg: String): js.Any = js.native
+  def executeAsync(app: js.Any, arg: String, uuid: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): js.Any = js.native
   def executeAsync(app: js.Any, arg: String, uuid: String): js.Any = js.native
   def executeAsync(app: js.Any, arg: String, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
   def filter(header: js.Any, value: js.Any): Unit = js.native

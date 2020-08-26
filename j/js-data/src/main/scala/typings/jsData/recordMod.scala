@@ -270,6 +270,7 @@ object recordMod extends js.Object {
       * @since 3.0.0
       */
     def loadRelations(): js.Promise[this.type] = js.native
+    def loadRelations(relations: js.UndefOr[scala.Nothing], opts: js.Any): js.Promise[this.type] = js.native
     def loadRelations(relations: String): js.Promise[this.type] = js.native
     def loadRelations(relations: String, opts: js.Any): js.Promise[this.type] = js.native
     def loadRelations(relations: js.Any): js.Promise[this.type] = js.native
@@ -395,9 +396,11 @@ object recordMod extends js.Object {
       * @since 3.0.0
       */
     def set(key: String): Unit = js.native
+    def set(key: String, value: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
     def set(key: String, value: js.Any): Unit = js.native
     def set(key: String, value: js.Any, opts: js.Any): Unit = js.native
     def set(key: js.Any): Unit = js.native
+    def set(key: js.Any, value: js.UndefOr[scala.Nothing], opts: js.Any): Unit = js.native
     def set(key: js.Any, value: js.Any): Unit = js.native
     def set(key: js.Any, value: js.Any, opts: js.Any): Unit = js.native
     def setupInverseRelation(record: js.Any, id: js.Any, inverseDef: js.Any, idAttribute: js.Any): Unit = js.native
@@ -498,6 +501,7 @@ object recordMod extends js.Object {
   @js.native
   class default () extends Record {
     def this(props: js.Any) = this()
+    def this(props: js.UndefOr[scala.Nothing], opts: js.Any) = this()
     def this(props: js.Any, opts: js.Any) = this()
   }
   

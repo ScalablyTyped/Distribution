@@ -39,7 +39,7 @@ trait GetMetricStatisticsInput extends js.Object {
     */
   var Statistics: js.UndefOr[typings.awsSdk.cloudwatchMod.Statistics] = js.native
   /**
-    * The unit for a given metric. If you omit Unit, all data that was collected with any unit is returned, along with the corresponding units that were specified when the data was reported to CloudWatch. If you specify a unit, the operation returns only data data that was collected with that unit specified. If you specify a unit that does not match the data collected, the results of the operation are null. CloudWatch does not perform unit conversions.
+    * The unit for a given metric. If you omit Unit, all data that was collected with any unit is returned, along with the corresponding units that were specified when the data was reported to CloudWatch. If you specify a unit, the operation returns only data that was collected with that unit specified. If you specify a unit that does not match the data collected, the results of the operation are null. CloudWatch does not perform unit conversions.
     */
   var Unit: js.UndefOr[StandardUnit] = js.native
 }
@@ -51,18 +51,55 @@ object GetMetricStatisticsInput {
     MetricName: MetricName,
     Namespace: Namespace,
     Period: Period,
-    StartTime: Timestamp,
-    Dimensions: Dimensions = null,
-    ExtendedStatistics: ExtendedStatistics = null,
-    Statistics: Statistics = null,
-    Unit: StandardUnit = null
+    StartTime: Timestamp
   ): GetMetricStatisticsInput = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
-    if (Dimensions != null) __obj.updateDynamic("Dimensions")(Dimensions.asInstanceOf[js.Any])
-    if (ExtendedStatistics != null) __obj.updateDynamic("ExtendedStatistics")(ExtendedStatistics.asInstanceOf[js.Any])
-    if (Statistics != null) __obj.updateDynamic("Statistics")(Statistics.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMetricStatisticsInput]
   }
+  @scala.inline
+  implicit class GetMetricStatisticsInputOps[Self <: GetMetricStatisticsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricName(value: MetricName): Self = this.set("MetricName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamespace(value: Namespace): Self = this.set("Namespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPeriod(value: Period): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDimensionsVarargs(value: Dimension*): Self = this.set("Dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: Dimensions): Self = this.set("Dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("Dimensions", js.undefined)
+    @scala.inline
+    def setExtendedStatisticsVarargs(value: ExtendedStatistic*): Self = this.set("ExtendedStatistics", js.Array(value :_*))
+    @scala.inline
+    def setExtendedStatistics(value: ExtendedStatistics): Self = this.set("ExtendedStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtendedStatistics: Self = this.set("ExtendedStatistics", js.undefined)
+    @scala.inline
+    def setStatisticsVarargs(value: Statistic*): Self = this.set("Statistics", js.Array(value :_*))
+    @scala.inline
+    def setStatistics(value: Statistics): Self = this.set("Statistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatistics: Self = this.set("Statistics", js.undefined)
+    @scala.inline
+    def setUnit(value: StandardUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+  }
+  
 }
 

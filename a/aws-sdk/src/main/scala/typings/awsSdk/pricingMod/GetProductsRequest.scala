@@ -30,20 +30,44 @@ trait GetProductsRequest extends js.Object {
 
 object GetProductsRequest {
   @scala.inline
-  def apply(
-    Filters: Filters = null,
-    FormatVersion: String = null,
-    MaxResults: js.UndefOr[BoxedInteger] = js.undefined,
-    NextToken: String = null,
-    ServiceCode: String = null
-  ): GetProductsRequest = {
+  def apply(): GetProductsRequest = {
     val __obj = js.Dynamic.literal()
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (FormatVersion != null) __obj.updateDynamic("FormatVersion")(FormatVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProductsRequest]
   }
+  @scala.inline
+  implicit class GetProductsRequestOps[Self <: GetProductsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: Filter*): Self = this.set("Filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: Filters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setFormatVersion(value: String): Self = this.set("FormatVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormatVersion: Self = this.set("FormatVersion", js.undefined)
+    @scala.inline
+    def setMaxResults(value: BoxedInteger): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setServiceCode(value: String): Self = this.set("ServiceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("ServiceCode", js.undefined)
+  }
+  
 }
 

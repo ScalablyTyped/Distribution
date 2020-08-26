@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
 trait IShell extends js.Object {
   def alterPath(path: String): String = js.native
   def cmdinfo(cmd: String): js.Promise[js.UndefOr[String]] = js.native
+  def cmdinfo(cmd: String, args: js.UndefOr[scala.Nothing], options: SubprocessOptions): js.Promise[js.UndefOr[String]] = js.native
   def cmdinfo(cmd: String, args: js.Array[String]): js.Promise[js.UndefOr[String]] = js.native
   def cmdinfo(cmd: String, args: js.Array[String], options: SubprocessOptions): js.Promise[js.UndefOr[String]] = js.native
   def createSubprocess(command: String, args: js.Array[String]): js.Promise[Subprocess] = js.native

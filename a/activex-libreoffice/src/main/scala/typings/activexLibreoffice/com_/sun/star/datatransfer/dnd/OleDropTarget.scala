@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   * This service connects the Java-like UNO Drag & Drop protocol to the protocol used on window platforms. It realizes the drop target.
   * @see XDropTarget
   */
+@js.native
 trait OleDropTarget
   extends XDropTarget
      with XInitialization

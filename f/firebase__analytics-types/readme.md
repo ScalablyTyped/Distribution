@@ -10,9 +10,9 @@ Typings are for version 0.3.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/analytics-types |
 | Keywords           | - |
-| # releases         | 130 |
+| # releases         | 147 |
 | # dependents       | 1 |
-| # downloads        | 1553232 |
+| # downloads        | 1865947 |
 | # stars            | 0 |
 
 ## Links

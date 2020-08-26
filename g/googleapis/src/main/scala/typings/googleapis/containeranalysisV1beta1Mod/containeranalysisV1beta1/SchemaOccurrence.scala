@@ -74,38 +74,78 @@ trait SchemaOccurrence extends js.Object {
 
 object SchemaOccurrence {
   @scala.inline
-  def apply(
-    attestation: SchemaDetails = null,
-    build: SchemaGrafeasV1beta1BuildDetails = null,
-    createTime: String = null,
-    deployment: SchemaGrafeasV1beta1DeploymentDetails = null,
-    derivedImage: SchemaGrafeasV1beta1ImageDetails = null,
-    discovered: SchemaGrafeasV1beta1DiscoveryDetails = null,
-    installation: SchemaGrafeasV1beta1PackageDetails = null,
-    kind: String = null,
-    name: String = null,
-    noteName: String = null,
-    remediation: String = null,
-    resource: SchemaResource = null,
-    updateTime: String = null,
-    vulnerability: SchemaGrafeasV1beta1VulnerabilityDetails = null
-  ): SchemaOccurrence = {
+  def apply(): SchemaOccurrence = {
     val __obj = js.Dynamic.literal()
-    if (attestation != null) __obj.updateDynamic("attestation")(attestation.asInstanceOf[js.Any])
-    if (build != null) __obj.updateDynamic("build")(build.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (deployment != null) __obj.updateDynamic("deployment")(deployment.asInstanceOf[js.Any])
-    if (derivedImage != null) __obj.updateDynamic("derivedImage")(derivedImage.asInstanceOf[js.Any])
-    if (discovered != null) __obj.updateDynamic("discovered")(discovered.asInstanceOf[js.Any])
-    if (installation != null) __obj.updateDynamic("installation")(installation.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (noteName != null) __obj.updateDynamic("noteName")(noteName.asInstanceOf[js.Any])
-    if (remediation != null) __obj.updateDynamic("remediation")(remediation.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
-    if (vulnerability != null) __obj.updateDynamic("vulnerability")(vulnerability.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOccurrence]
   }
+  @scala.inline
+  implicit class SchemaOccurrenceOps[Self <: SchemaOccurrence] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttestation(value: SchemaDetails): Self = this.set("attestation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttestation: Self = this.set("attestation", js.undefined)
+    @scala.inline
+    def setBuild(value: SchemaGrafeasV1beta1BuildDetails): Self = this.set("build", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBuild: Self = this.set("build", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setDeployment(value: SchemaGrafeasV1beta1DeploymentDetails): Self = this.set("deployment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeployment: Self = this.set("deployment", js.undefined)
+    @scala.inline
+    def setDerivedImage(value: SchemaGrafeasV1beta1ImageDetails): Self = this.set("derivedImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDerivedImage: Self = this.set("derivedImage", js.undefined)
+    @scala.inline
+    def setDiscovered(value: SchemaGrafeasV1beta1DiscoveryDetails): Self = this.set("discovered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiscovered: Self = this.set("discovered", js.undefined)
+    @scala.inline
+    def setInstallation(value: SchemaGrafeasV1beta1PackageDetails): Self = this.set("installation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallation: Self = this.set("installation", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNoteName(value: String): Self = this.set("noteName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteName: Self = this.set("noteName", js.undefined)
+    @scala.inline
+    def setRemediation(value: String): Self = this.set("remediation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemediation: Self = this.set("remediation", js.undefined)
+    @scala.inline
+    def setResource(value: SchemaResource): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+    @scala.inline
+    def setVulnerability(value: SchemaGrafeasV1beta1VulnerabilityDetails): Self = this.set("vulnerability", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVulnerability: Self = this.set("vulnerability", js.undefined)
+  }
+  
 }
 

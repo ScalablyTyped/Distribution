@@ -6,30 +6,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BackendTraceId extends js.Object {
-  var backendTraceId: js.UndefOr[String] = js.undefined
-  var componentStack: js.UndefOr[String] = js.undefined
-  var duration: js.UndefOr[Double] = js.undefined
-  var error: js.UndefOr[Error] = js.undefined
-  var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.undefined
+  var backendTraceId: js.UndefOr[String] = js.native
+  var componentStack: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[Double] = js.native
+  var error: js.UndefOr[Error] = js.native
+  var meta: js.UndefOr[StringDictionary[String | Double | Boolean]] = js.native
 }
 
 object BackendTraceId {
   @scala.inline
-  def apply(
-    backendTraceId: String = null,
-    componentStack: String = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    error: Error = null,
-    meta: StringDictionary[String | Double | Boolean] = null
-  ): BackendTraceId = {
+  def apply(): BackendTraceId = {
     val __obj = js.Dynamic.literal()
-    if (backendTraceId != null) __obj.updateDynamic("backendTraceId")(backendTraceId.asInstanceOf[js.Any])
-    if (componentStack != null) __obj.updateDynamic("componentStack")(componentStack.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendTraceId]
   }
+  @scala.inline
+  implicit class BackendTraceIdOps[Self <: BackendTraceId] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackendTraceId(value: String): Self = this.set("backendTraceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackendTraceId: Self = this.set("backendTraceId", js.undefined)
+    @scala.inline
+    def setComponentStack(value: String): Self = this.set("componentStack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComponentStack: Self = this.set("componentStack", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setError(value: Error): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setMeta(value: StringDictionary[String | Double | Boolean]): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
+  }
+  
 }
 

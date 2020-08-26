@@ -22,16 +22,36 @@ trait AuditMitigationActionsTaskTarget extends js.Object {
 
 object AuditMitigationActionsTaskTarget {
   @scala.inline
-  def apply(
-    auditCheckToReasonCodeFilter: AuditCheckToReasonCodeFilter = null,
-    auditTaskId: AuditTaskId = null,
-    findingIds: FindingIds = null
-  ): AuditMitigationActionsTaskTarget = {
+  def apply(): AuditMitigationActionsTaskTarget = {
     val __obj = js.Dynamic.literal()
-    if (auditCheckToReasonCodeFilter != null) __obj.updateDynamic("auditCheckToReasonCodeFilter")(auditCheckToReasonCodeFilter.asInstanceOf[js.Any])
-    if (auditTaskId != null) __obj.updateDynamic("auditTaskId")(auditTaskId.asInstanceOf[js.Any])
-    if (findingIds != null) __obj.updateDynamic("findingIds")(findingIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuditMitigationActionsTaskTarget]
   }
+  @scala.inline
+  implicit class AuditMitigationActionsTaskTargetOps[Self <: AuditMitigationActionsTaskTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuditCheckToReasonCodeFilter(value: AuditCheckToReasonCodeFilter): Self = this.set("auditCheckToReasonCodeFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditCheckToReasonCodeFilter: Self = this.set("auditCheckToReasonCodeFilter", js.undefined)
+    @scala.inline
+    def setAuditTaskId(value: AuditTaskId): Self = this.set("auditTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuditTaskId: Self = this.set("auditTaskId", js.undefined)
+    @scala.inline
+    def setFindingIdsVarargs(value: FindingId*): Self = this.set("findingIds", js.Array(value :_*))
+    @scala.inline
+    def setFindingIds(value: FindingIds): Self = this.set("findingIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingIds: Self = this.set("findingIds", js.undefined)
+  }
+  
 }
 

@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   *
   * In case a stream is open with read-write access only one instance of the stream can exist.
   */
+@js.native
 trait StorageStream
   extends XStream
      with XComponent
@@ -27,7 +28,7 @@ trait StorageStream
      with XSeekable
      with XEncryptionProtectedSource {
   /** specifies if the stream should be compressed next time it is stored. */
-  var IsCompressed: Boolean
+  var IsCompressed: Boolean = js.native
   /**
     * allows to detect if the stream is encrypted.
     *
@@ -36,11 +37,11 @@ trait StorageStream
     * If somebody sets a password explicitly by using {@link XEncryptionProtectedSource} interface the value is automatically set to `TRUE` . If the
     * interface is used to remove the encryption - the value is automatically set to `FALSE` .
     */
-  var IsEncrypted: Boolean
+  var IsEncrypted: Boolean = js.native
   /** allows to get and set media type of the stream. */
-  var MediaType: String
+  var MediaType: String = js.native
   /** allows to detect size of the stream in bytes. */
-  var Size: Double
+  var Size: Double = js.native
   /**
     * specifies whether the stream will become encrypted next time the common storage password holder is committed.
     *
@@ -57,7 +58,7 @@ trait StorageStream
     * In case stream is encrypted one and the value is set to `TRUE` the stream becomes non-encrypted until the common storage password holder is committed.
     * The data about previously set password ( if any ) will be removed and the stream can be accessed as non-encrypted stream.
     */
-  var UseCommonStoragePasswordEncryption: Boolean
+  var UseCommonStoragePasswordEncryption: Boolean = js.native
 }
 
 object StorageStream {
@@ -97,5 +98,28 @@ object StorageStream {
     val __obj = js.Dynamic.literal(InputStream = InputStream.asInstanceOf[js.Any], IsCompressed = IsCompressed.asInstanceOf[js.Any], IsEncrypted = IsEncrypted.asInstanceOf[js.Any], Length = Length.asInstanceOf[js.Any], MediaType = MediaType.asInstanceOf[js.Any], OutputStream = OutputStream.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], UseCommonStoragePasswordEncryption = UseCommonStoragePasswordEncryption.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), getInputStream = js.Any.fromFunction0(getInputStream), getLength = js.Any.fromFunction0(getLength), getOutputStream = js.Any.fromFunction0(getOutputStream), getPosition = js.Any.fromFunction0(getPosition), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEncryption = js.Any.fromFunction0(removeEncryption), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), seek = js.Any.fromFunction1(seek), setEncryptionPassword = js.Any.fromFunction1(setEncryptionPassword), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[StorageStream]
   }
+  @scala.inline
+  implicit class StorageStreamOps[Self <: StorageStream] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsCompressed(value: Boolean): Self = this.set("IsCompressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsEncrypted(value: Boolean): Self = this.set("IsEncrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMediaType(value: String): Self = this.set("MediaType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSize(value: Double): Self = this.set("Size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseCommonStoragePasswordEncryption(value: Boolean): Self = this.set("UseCommonStoragePasswordEncryption", value.asInstanceOf[js.Any])
+  }
+  
 }
 

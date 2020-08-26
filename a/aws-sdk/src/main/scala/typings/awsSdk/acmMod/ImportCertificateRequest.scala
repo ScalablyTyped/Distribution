@@ -30,18 +30,40 @@ trait ImportCertificateRequest extends js.Object {
 
 object ImportCertificateRequest {
   @scala.inline
-  def apply(
-    Certificate: CertificateBodyBlob,
-    PrivateKey: PrivateKeyBlob,
-    CertificateArn: Arn = null,
-    CertificateChain: CertificateChainBlob = null,
-    Tags: TagList = null
-  ): ImportCertificateRequest = {
+  def apply(Certificate: CertificateBodyBlob, PrivateKey: PrivateKeyBlob): ImportCertificateRequest = {
     val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any], PrivateKey = PrivateKey.asInstanceOf[js.Any])
-    if (CertificateArn != null) __obj.updateDynamic("CertificateArn")(CertificateArn.asInstanceOf[js.Any])
-    if (CertificateChain != null) __obj.updateDynamic("CertificateChain")(CertificateChain.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportCertificateRequest]
   }
+  @scala.inline
+  implicit class ImportCertificateRequestOps[Self <: ImportCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: CertificateBodyBlob): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrivateKey(value: PrivateKeyBlob): Self = this.set("PrivateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateArn(value: Arn): Self = this.set("CertificateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateArn: Self = this.set("CertificateArn", js.undefined)
+    @scala.inline
+    def setCertificateChain(value: CertificateChainBlob): Self = this.set("CertificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateChain: Self = this.set("CertificateChain", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

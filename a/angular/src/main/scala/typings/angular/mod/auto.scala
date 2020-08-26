@@ -112,6 +112,11 @@ object auto extends js.Object {
     def instantiate[T](typeConstructor: Instantiable[T]): T = js.native
     def instantiate[T](typeConstructor: Instantiable[T], locals: js.Any): T = js.native
     def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ _, T])]): T = js.native
+    def invoke[T](
+      func: Injectable[Function | (js.Function1[/* repeated */ _, T])],
+      context: js.UndefOr[scala.Nothing],
+      locals: js.Any
+    ): T = js.native
     def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ _, T])], context: js.Any): T = js.native
     def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ _, T])], context: js.Any, locals: js.Any): T = js.native
     /**

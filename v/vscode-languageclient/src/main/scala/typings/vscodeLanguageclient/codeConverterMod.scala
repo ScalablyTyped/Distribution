@@ -10,9 +10,7 @@ import typings.vscode.mod.DiagnosticSeverity
 import typings.vscode.mod.DiagnosticTag
 import typings.vscode.mod.DocumentLink
 import typings.vscode.mod.FormattingOptions
-import typings.vscode.mod.Location
 import typings.vscode.mod.Position
-import typings.vscode.mod.Range
 import typings.vscode.mod.SignatureHelpContext
 import typings.vscode.mod.SymbolKind
 import typings.vscode.mod.SymbolTag
@@ -34,6 +32,8 @@ import typings.vscodeLanguageserverProtocol.protocolMod.ReferenceParams
 import typings.vscodeLanguageserverProtocol.protocolMod.SignatureHelpParams
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
+import typings.vscodeLanguageserverTypes.mod.Location
+import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
 import scala.scalajs.js
@@ -62,26 +62,26 @@ object codeConverterMod extends js.Object {
     def asDocumentLinkParams(textDocument: TextDocument): DocumentLinkParams = js.native
     def asDocumentSymbolParams(textDocument: TextDocument): DocumentSymbolParams = js.native
     def asFormattingOptions(item: FormattingOptions): typings.vscodeLanguageserverTypes.mod.FormattingOptions = js.native
-    def asLocation(): Null = js.native
-    def asLocation(value: Location): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Location | Null] = js.native
+    def asLocation(): js.UndefOr[Location | Null] = js.native
+    def asLocation(value: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
+    def asLocation(value: Null): Null = js.native
+    def asLocation(value: typings.vscode.mod.Location): js.UndefOr[Location | Null] = js.native
     @JSName("asLocation")
-    def asLocation_Location(value: Location): typings.vscodeLanguageserverTypes.mod.Location = js.native
-    @JSName("asLocation")
-    def asLocation_Union(): js.UndefOr[scala.Nothing] = js.native
+    def asLocation_Location(value: typings.vscode.mod.Location): Location = js.native
     def asOpenTextDocumentParams(textDocument: TextDocument): DidOpenTextDocumentParams = js.native
-    def asPosition(): Null = js.native
+    def asPosition(): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Position | Null] = js.native
+    def asPosition(value: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
+    def asPosition(value: Null): Null = js.native
     def asPosition(value: Position): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Position | Null] = js.native
     @JSName("asPosition")
     def asPosition_Position(value: Position): typings.vscodeLanguageserverTypes.mod.Position = js.native
-    @JSName("asPosition")
-    def asPosition_Union(): js.UndefOr[scala.Nothing] = js.native
     def asPositions(value: js.Array[Position]): js.Array[typings.vscodeLanguageserverTypes.mod.Position] = js.native
-    def asRange(): Null = js.native
-    def asRange(value: Range): js.UndefOr[typings.vscodeLanguageserverTypes.mod.Range | Null] = js.native
+    def asRange(): js.UndefOr[Range | Null] = js.native
+    def asRange(value: js.UndefOr[scala.Nothing]): js.UndefOr[scala.Nothing] = js.native
+    def asRange(value: Null): Null = js.native
+    def asRange(value: typings.vscode.mod.Range): js.UndefOr[Range | Null] = js.native
     @JSName("asRange")
-    def asRange_Range(value: Range): typings.vscodeLanguageserverTypes.mod.Range = js.native
-    @JSName("asRange")
-    def asRange_Union(): js.UndefOr[scala.Nothing] = js.native
+    def asRange_Range(value: typings.vscode.mod.Range): Range = js.native
     def asReferenceParams(textDocument: TextDocument, position: Position, options: IncludeDeclaration): ReferenceParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument): DidSaveTextDocumentParams = js.native
     def asSaveTextDocumentParams(textDocument: TextDocument, includeContent: Boolean): DidSaveTextDocumentParams = js.native

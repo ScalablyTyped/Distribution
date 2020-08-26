@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 /**
   * An error object.
   **/
+@js.native
 trait ErrorFromName extends js.Object
 

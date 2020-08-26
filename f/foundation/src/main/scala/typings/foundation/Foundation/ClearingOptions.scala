@@ -5,36 +5,63 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/clearing.html#optional-javascript-configuration
+@js.native
 trait ClearingOptions extends js.Object {
-  var close_selectors: js.UndefOr[String] = js.undefined
-  var init: js.UndefOr[Boolean] = js.undefined
-  var locked: js.UndefOr[Boolean] = js.undefined
-  var open_selectors: js.UndefOr[String] = js.undefined
-  var skip_selector: js.UndefOr[String] = js.undefined
-  var templates: js.UndefOr[js.Object] = js.undefined
-  var touch_label: js.UndefOr[String] = js.undefined
+  var close_selectors: js.UndefOr[String] = js.native
+  var init: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.native
+  var open_selectors: js.UndefOr[String] = js.native
+  var skip_selector: js.UndefOr[String] = js.native
+  var templates: js.UndefOr[js.Object] = js.native
+  var touch_label: js.UndefOr[String] = js.native
 }
 
 object ClearingOptions {
   @scala.inline
-  def apply(
-    close_selectors: String = null,
-    init: js.UndefOr[Boolean] = js.undefined,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    open_selectors: String = null,
-    skip_selector: String = null,
-    templates: js.Object = null,
-    touch_label: String = null
-  ): ClearingOptions = {
+  def apply(): ClearingOptions = {
     val __obj = js.Dynamic.literal()
-    if (close_selectors != null) __obj.updateDynamic("close_selectors")(close_selectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.get.asInstanceOf[js.Any])
-    if (open_selectors != null) __obj.updateDynamic("open_selectors")(open_selectors.asInstanceOf[js.Any])
-    if (skip_selector != null) __obj.updateDynamic("skip_selector")(skip_selector.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    if (touch_label != null) __obj.updateDynamic("touch_label")(touch_label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearingOptions]
   }
+  @scala.inline
+  implicit class ClearingOptionsOps[Self <: ClearingOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClose_selectors(value: String): Self = this.set("close_selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose_selectors: Self = this.set("close_selectors", js.undefined)
+    @scala.inline
+    def setInit(value: Boolean): Self = this.set("init", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInit: Self = this.set("init", js.undefined)
+    @scala.inline
+    def setLocked(value: Boolean): Self = this.set("locked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocked: Self = this.set("locked", js.undefined)
+    @scala.inline
+    def setOpen_selectors(value: String): Self = this.set("open_selectors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen_selectors: Self = this.set("open_selectors", js.undefined)
+    @scala.inline
+    def setSkip_selector(value: String): Self = this.set("skip_selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkip_selector: Self = this.set("skip_selector", js.undefined)
+    @scala.inline
+    def setTemplates(value: js.Object): Self = this.set("templates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplates: Self = this.set("templates", js.undefined)
+    @scala.inline
+    def setTouch_label(value: String): Self = this.set("touch_label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTouch_label: Self = this.set("touch_label", js.undefined)
+  }
+  
 }
 

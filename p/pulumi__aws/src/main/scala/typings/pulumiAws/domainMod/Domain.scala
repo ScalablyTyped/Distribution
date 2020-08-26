@@ -1,6 +1,7 @@
 package typings.pulumiAws.domainMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.pulumiAws.outputMod.elasticsearch.DomainAdvancedSecurityOptions
 import typings.pulumiAws.outputMod.elasticsearch.DomainClusterConfig
 import typings.pulumiAws.outputMod.elasticsearch.DomainCognitoOptions
 import typings.pulumiAws.outputMod.elasticsearch.DomainDomainEndpointOptions
@@ -31,6 +32,7 @@ class Domain protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: DomainArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
   /**
     * IAM policy document specifying the access policies for the domain
@@ -42,7 +44,11 @@ class Domain protected () extends CustomResource {
     * may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
     * domain on every apply.
     */
-  val advancedOptions: Output_[StringDictionary[_]] = js.native
+  val advancedOptions: Output_[StringDictionary[String]] = js.native
+  /**
+    * Options for [fine-grained access control](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html). See below for more details.
+    */
+  val advancedSecurityOptions: Output_[DomainAdvancedSecurityOptions] = js.native
   /**
     * Amazon Resource Name (ARN) of the domain.
     */
@@ -99,9 +105,9 @@ class Domain protected () extends CustomResource {
     */
   val snapshotOptions: Output_[js.UndefOr[DomainSnapshotOptions]] = js.native
   /**
-    * A mapping of tags to assign to the resource
+    * A map of tags to assign to the resource
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
@@ -119,8 +125,10 @@ object Domain extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Domain = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Domain = js.native
   def get(name: String, id: Input[ID], state: DomainState): Domain = js.native
   def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = js.native
   /**

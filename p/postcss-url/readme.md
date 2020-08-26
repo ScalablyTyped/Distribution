@@ -11,8 +11,8 @@ PostCSS plugin to rebase or inline on url().
 | Full name          | postcss-url |
 | Keywords           | css, postcss, postcss-plugin, url, rebase, inline, base64, assets |
 | # releases         | 5 |
-| # dependents       | 388 |
-| # downloads        | 28366666 |
+| # dependents       | 399 |
+| # downloads        | 28423458 |
 | # stars            | 2 |
 
 ## Links

@@ -49,22 +49,48 @@ trait SchemaAutoscalingPolicy extends js.Object {
 
 object SchemaAutoscalingPolicy {
   @scala.inline
-  def apply(
-    coolDownPeriodSec: js.UndefOr[Double] = js.undefined,
-    cpuUtilization: SchemaAutoscalingPolicyCpuUtilization = null,
-    customMetricUtilizations: js.Array[SchemaAutoscalingPolicyCustomMetricUtilization] = null,
-    loadBalancingUtilization: SchemaAutoscalingPolicyLoadBalancingUtilization = null,
-    maxNumReplicas: js.UndefOr[Double] = js.undefined,
-    minNumReplicas: js.UndefOr[Double] = js.undefined
-  ): SchemaAutoscalingPolicy = {
+  def apply(): SchemaAutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(coolDownPeriodSec)) __obj.updateDynamic("coolDownPeriodSec")(coolDownPeriodSec.get.asInstanceOf[js.Any])
-    if (cpuUtilization != null) __obj.updateDynamic("cpuUtilization")(cpuUtilization.asInstanceOf[js.Any])
-    if (customMetricUtilizations != null) __obj.updateDynamic("customMetricUtilizations")(customMetricUtilizations.asInstanceOf[js.Any])
-    if (loadBalancingUtilization != null) __obj.updateDynamic("loadBalancingUtilization")(loadBalancingUtilization.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxNumReplicas)) __obj.updateDynamic("maxNumReplicas")(maxNumReplicas.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minNumReplicas)) __obj.updateDynamic("minNumReplicas")(minNumReplicas.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAutoscalingPolicy]
   }
+  @scala.inline
+  implicit class SchemaAutoscalingPolicyOps[Self <: SchemaAutoscalingPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCoolDownPeriodSec(value: Double): Self = this.set("coolDownPeriodSec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoolDownPeriodSec: Self = this.set("coolDownPeriodSec", js.undefined)
+    @scala.inline
+    def setCpuUtilization(value: SchemaAutoscalingPolicyCpuUtilization): Self = this.set("cpuUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuUtilization: Self = this.set("cpuUtilization", js.undefined)
+    @scala.inline
+    def setCustomMetricUtilizationsVarargs(value: SchemaAutoscalingPolicyCustomMetricUtilization*): Self = this.set("customMetricUtilizations", js.Array(value :_*))
+    @scala.inline
+    def setCustomMetricUtilizations(value: js.Array[SchemaAutoscalingPolicyCustomMetricUtilization]): Self = this.set("customMetricUtilizations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMetricUtilizations: Self = this.set("customMetricUtilizations", js.undefined)
+    @scala.inline
+    def setLoadBalancingUtilization(value: SchemaAutoscalingPolicyLoadBalancingUtilization): Self = this.set("loadBalancingUtilization", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancingUtilization: Self = this.set("loadBalancingUtilization", js.undefined)
+    @scala.inline
+    def setMaxNumReplicas(value: Double): Self = this.set("maxNumReplicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxNumReplicas: Self = this.set("maxNumReplicas", js.undefined)
+    @scala.inline
+    def setMinNumReplicas(value: Double): Self = this.set("minNumReplicas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinNumReplicas: Self = this.set("minNumReplicas", js.undefined)
+  }
+  
 }
 

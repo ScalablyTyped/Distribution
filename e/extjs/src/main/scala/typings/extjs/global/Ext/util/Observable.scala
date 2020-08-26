@@ -32,7 +32,11 @@ object Observable extends js.Object {
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Observable firing the event.
     */
   def capture(): Unit = js.native
+  def capture(o: js.UndefOr[scala.Nothing], fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
+  def capture(o: js.UndefOr[scala.Nothing], fn: js.Any): Unit = js.native
+  def capture(o: js.UndefOr[scala.Nothing], fn: js.Any, scope: js.Any): Unit = js.native
   def capture(o: IObservable): Unit = js.native
+  def capture(o: IObservable, fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def capture(o: IObservable, fn: js.Any): Unit = js.native
   def capture(o: IObservable, fn: js.Any, scope: js.Any): Unit = js.native
   /** [Method] Create a new instance of this Class
@@ -44,6 +48,7 @@ object Observable extends js.Object {
     * @param origin String/Object The original method name
     */
   def createAlias(): Unit = js.native
+  def createAlias(alias: js.UndefOr[scala.Nothing], origin: js.Any): Unit = js.native
   def createAlias(alias: js.Any): Unit = js.native
   def createAlias(alias: js.Any, origin: js.Any): Unit = js.native
   /** [Method] Get the current class name in string format
@@ -57,6 +62,7 @@ object Observable extends js.Object {
     * @param listeners Object An object containing a series of listeners to add. See addListener.
     */
   def observe(): Unit = js.native
+  def observe(c: js.UndefOr[scala.Nothing], listeners: js.Any): Unit = js.native
   def observe(c: js.Any): Unit = js.native
   def observe(c: js.Any, listeners: js.Any): Unit = js.native
   /** [Method] Override members of this class

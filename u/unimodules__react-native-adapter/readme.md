@@ -1,7 +1,7 @@
 
 # Scala.js typings for unimodules__react-native-adapter
 
-Typings are for version 5.0.0
+Typings are for version 5.4.0
 
 ## Library description:
 The adapter to use universal modules with the React Native bridge

@@ -41,18 +41,40 @@ trait SchemaClientTlsSettings extends js.Object {
 
 object SchemaClientTlsSettings {
   @scala.inline
-  def apply(
-    clientTlsContext: SchemaTlsContext = null,
-    mode: String = null,
-    sni: String = null,
-    subjectAltNames: js.Array[String] = null
-  ): SchemaClientTlsSettings = {
+  def apply(): SchemaClientTlsSettings = {
     val __obj = js.Dynamic.literal()
-    if (clientTlsContext != null) __obj.updateDynamic("clientTlsContext")(clientTlsContext.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (sni != null) __obj.updateDynamic("sni")(sni.asInstanceOf[js.Any])
-    if (subjectAltNames != null) __obj.updateDynamic("subjectAltNames")(subjectAltNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaClientTlsSettings]
   }
+  @scala.inline
+  implicit class SchemaClientTlsSettingsOps[Self <: SchemaClientTlsSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientTlsContext(value: SchemaTlsContext): Self = this.set("clientTlsContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientTlsContext: Self = this.set("clientTlsContext", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setSni(value: String): Self = this.set("sni", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSni: Self = this.set("sni", js.undefined)
+    @scala.inline
+    def setSubjectAltNamesVarargs(value: String*): Self = this.set("subjectAltNames", js.Array(value :_*))
+    @scala.inline
+    def setSubjectAltNames(value: js.Array[String]): Self = this.set("subjectAltNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectAltNames: Self = this.set("subjectAltNames", js.undefined)
+  }
+  
 }
 

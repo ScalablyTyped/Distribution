@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * represents the collection of spreadsheets in a spreadsheet document.
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
+@js.native
 trait Spreadsheets
   extends XSpreadsheets
      with XIndexAccess

@@ -24,15 +24,19 @@ class Connection protected () extends CustomResource {
   def this(name: String, args: ConnectionArgs) = this()
   def this(name: String, args: ConnectionArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the Glue Connection.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
     */
   val catalogId: Output_[String] = js.native
   /**
     * A map of key-value pairs used as parameters for this connection.
     */
-  val connectionProperties: Output_[StringDictionary[_]] = js.native
+  val connectionProperties: Output_[StringDictionary[String]] = js.native
   /**
-    * The type of the connection. Defaults to `JBDC`.
+    * The type of the connection. Supported are: `JDBC`, `MONGODB`, `KAFKA`. Defaults to `JBDC`.
     */
   val connectionType: Output_[js.UndefOr[String]] = js.native
   /**
@@ -64,8 +68,10 @@ object Connection extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Connection = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Connection = js.native
   def get(name: String, id: Input[ID], state: ConnectionState): Connection = js.native
   def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = js.native
   /**

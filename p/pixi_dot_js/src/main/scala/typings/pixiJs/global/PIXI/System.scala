@@ -16,17 +16,5 @@ import scala.scalajs.js.annotation._
 class System protected ()
   extends typings.pixiJs.PIXI.System {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
-  /**
-    * The renderer this manager works for.
-    *
-    * @member {PIXI.Renderer} PIXI.System#renderer
-    */
-  /* CompleteClass */
-  override var renderer: typings.pixiJs.PIXI.Renderer = js.native
-  /**
-    * Generic destroy methods to be overridden by the subclass
-    */
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
 }
 

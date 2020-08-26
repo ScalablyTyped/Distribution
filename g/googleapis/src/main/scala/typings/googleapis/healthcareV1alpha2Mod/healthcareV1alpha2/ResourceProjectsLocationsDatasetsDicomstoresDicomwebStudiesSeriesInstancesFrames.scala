@@ -32,6 +32,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstances
     */
   def rendered(): GaxiosPromise[SchemaHttpBody] = js.native
   def rendered(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def rendered(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def rendered(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesFramesRendered
   ): GaxiosPromise[SchemaHttpBody] = js.native
@@ -71,6 +72,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstances
     */
   def retrieveFrames(): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveFrames(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
+  def retrieveFrames(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveFrames(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresDicomwebStudiesSeriesInstancesFramesRetrieveframes
   ): GaxiosPromise[SchemaHttpBody] = js.native

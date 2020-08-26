@@ -14,10 +14,26 @@ trait DescribeNodegroupResponse extends js.Object {
 
 object DescribeNodegroupResponse {
   @scala.inline
-  def apply(nodegroup: Nodegroup = null): DescribeNodegroupResponse = {
+  def apply(): DescribeNodegroupResponse = {
     val __obj = js.Dynamic.literal()
-    if (nodegroup != null) __obj.updateDynamic("nodegroup")(nodegroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNodegroupResponse]
   }
+  @scala.inline
+  implicit class DescribeNodegroupResponseOps[Self <: DescribeNodegroupResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNodegroup(value: Nodegroup): Self = this.set("nodegroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodegroup: Self = this.set("nodegroup", js.undefined)
+  }
+  
 }
 

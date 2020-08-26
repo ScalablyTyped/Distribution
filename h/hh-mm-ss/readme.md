@@ -11,8 +11,8 @@ Simple hh:mm:ss time formatting utility
 | Full name          | hh-mm-ss |
 | Keywords           | time format, hours, minutes, seconds, miliseconds, hh:mm:ss |
 | # releases         | 1 |
-| # dependents       | 17 |
-| # downloads        | 233175 |
+| # dependents       | 18 |
+| # downloads        | 254999 |
 | # stars            | 3 |
 
 ## Links

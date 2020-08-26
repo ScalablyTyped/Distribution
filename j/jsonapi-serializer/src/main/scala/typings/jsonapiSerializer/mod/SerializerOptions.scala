@@ -5,63 +5,116 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SerializerOptions extends js.Object {
-  var attributes: js.UndefOr[js.Array[String]] = js.undefined
-  var dataLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
-  var dataMeta: js.UndefOr[js.Function0[Unit] | js.Object] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var ignoreRelationshipData: js.UndefOr[Boolean] = js.undefined
-  var included: js.UndefOr[Boolean] = js.undefined
-  var keyForAttribute: js.UndefOr[String | KeyForAttribute] = js.undefined
-  var meta: js.UndefOr[js.Object] = js.undefined
-  var nullIfMissing: js.UndefOr[Boolean] = js.undefined
-  var pluralizeType: js.UndefOr[Boolean] = js.undefined
-  var ref: js.UndefOr[js.Function0[Unit] | Boolean | String] = js.undefined
-  var relationshipLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
-  var relationshipMeta: js.UndefOr[js.Object] = js.undefined
-  var topLevelLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
-  var transform: js.UndefOr[Transform] = js.undefined
-  var typeForAttribute: js.UndefOr[TypeForAttribute] = js.undefined
+  var attributes: js.UndefOr[js.Array[String]] = js.native
+  var dataLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.native
+  var dataMeta: js.UndefOr[js.Function0[Unit] | js.Object] = js.native
+  var id: js.UndefOr[String] = js.native
+  var ignoreRelationshipData: js.UndefOr[Boolean] = js.native
+  var included: js.UndefOr[Boolean] = js.native
+  var keyForAttribute: js.UndefOr[String | KeyForAttribute] = js.native
+  var meta: js.UndefOr[js.Object] = js.native
+  var nullIfMissing: js.UndefOr[Boolean] = js.native
+  var pluralizeType: js.UndefOr[Boolean] = js.native
+  var ref: js.UndefOr[js.Function0[Unit] | Boolean | String] = js.native
+  var relationshipLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.native
+  var relationshipMeta: js.UndefOr[js.Object] = js.native
+  var topLevelLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.native
+  var transform: js.UndefOr[Transform] = js.native
+  var typeForAttribute: js.UndefOr[TypeForAttribute] = js.native
 }
 
 object SerializerOptions {
   @scala.inline
-  def apply(
-    attributes: js.Array[String] = null,
-    dataLinks: StringDictionary[String | LinkFunction] = null,
-    dataMeta: js.Function0[Unit] | js.Object = null,
-    id: String = null,
-    ignoreRelationshipData: js.UndefOr[Boolean] = js.undefined,
-    included: js.UndefOr[Boolean] = js.undefined,
-    keyForAttribute: String | KeyForAttribute = null,
-    meta: js.Object = null,
-    nullIfMissing: js.UndefOr[Boolean] = js.undefined,
-    pluralizeType: js.UndefOr[Boolean] = js.undefined,
-    ref: js.Function0[Unit] | Boolean | String = null,
-    relationshipLinks: StringDictionary[String | LinkFunction] = null,
-    relationshipMeta: js.Object = null,
-    topLevelLinks: StringDictionary[String | LinkFunction] = null,
-    transform: /* record */ js.Any => js.Any = null,
-    typeForAttribute: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any = null
-  ): SerializerOptions = {
+  def apply(): SerializerOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (dataLinks != null) __obj.updateDynamic("dataLinks")(dataLinks.asInstanceOf[js.Any])
-    if (dataMeta != null) __obj.updateDynamic("dataMeta")(dataMeta.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreRelationshipData)) __obj.updateDynamic("ignoreRelationshipData")(ignoreRelationshipData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.get.asInstanceOf[js.Any])
-    if (keyForAttribute != null) __obj.updateDynamic("keyForAttribute")(keyForAttribute.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullIfMissing)) __obj.updateDynamic("nullIfMissing")(nullIfMissing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pluralizeType)) __obj.updateDynamic("pluralizeType")(pluralizeType.get.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (relationshipLinks != null) __obj.updateDynamic("relationshipLinks")(relationshipLinks.asInstanceOf[js.Any])
-    if (relationshipMeta != null) __obj.updateDynamic("relationshipMeta")(relationshipMeta.asInstanceOf[js.Any])
-    if (topLevelLinks != null) __obj.updateDynamic("topLevelLinks")(topLevelLinks.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
-    if (typeForAttribute != null) __obj.updateDynamic("typeForAttribute")(js.Any.fromFunction2(typeForAttribute))
     __obj.asInstanceOf[SerializerOptions]
   }
+  @scala.inline
+  implicit class SerializerOptionsOps[Self <: SerializerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributesVarargs(value: String*): Self = this.set("attributes", js.Array(value :_*))
+    @scala.inline
+    def setAttributes(value: js.Array[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setDataLinks(value: StringDictionary[String | LinkFunction]): Self = this.set("dataLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataLinks: Self = this.set("dataLinks", js.undefined)
+    @scala.inline
+    def setDataMetaFunction0(value: () => Unit): Self = this.set("dataMeta", js.Any.fromFunction0(value))
+    @scala.inline
+    def setDataMeta(value: js.Function0[Unit] | js.Object): Self = this.set("dataMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataMeta: Self = this.set("dataMeta", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIgnoreRelationshipData(value: Boolean): Self = this.set("ignoreRelationshipData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreRelationshipData: Self = this.set("ignoreRelationshipData", js.undefined)
+    @scala.inline
+    def setIncluded(value: Boolean): Self = this.set("included", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncluded: Self = this.set("included", js.undefined)
+    @scala.inline
+    def setKeyForAttributeFunction1(value: /* attribute */ String => String): Self = this.set("keyForAttribute", js.Any.fromFunction1(value))
+    @scala.inline
+    def setKeyForAttribute(value: String | KeyForAttribute): Self = this.set("keyForAttribute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyForAttribute: Self = this.set("keyForAttribute", js.undefined)
+    @scala.inline
+    def setMeta(value: js.Object): Self = this.set("meta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeta: Self = this.set("meta", js.undefined)
+    @scala.inline
+    def setNullIfMissing(value: Boolean): Self = this.set("nullIfMissing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullIfMissing: Self = this.set("nullIfMissing", js.undefined)
+    @scala.inline
+    def setPluralizeType(value: Boolean): Self = this.set("pluralizeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePluralizeType: Self = this.set("pluralizeType", js.undefined)
+    @scala.inline
+    def setRefFunction0(value: () => Unit): Self = this.set("ref", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRef(value: js.Function0[Unit] | Boolean | String): Self = this.set("ref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setRelationshipLinks(value: StringDictionary[String | LinkFunction]): Self = this.set("relationshipLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipLinks: Self = this.set("relationshipLinks", js.undefined)
+    @scala.inline
+    def setRelationshipMeta(value: js.Object): Self = this.set("relationshipMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipMeta: Self = this.set("relationshipMeta", js.undefined)
+    @scala.inline
+    def setTopLevelLinks(value: StringDictionary[String | LinkFunction]): Self = this.set("topLevelLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopLevelLinks: Self = this.set("topLevelLinks", js.undefined)
+    @scala.inline
+    def setTransform(value: /* record */ js.Any => js.Any): Self = this.set("transform", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+    @scala.inline
+    def setTypeForAttribute(value: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any): Self = this.set("typeForAttribute", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteTypeForAttribute: Self = this.set("typeForAttribute", js.undefined)
+  }
+  
 }
 

@@ -86,48 +86,102 @@ trait DescribePredictorResponse extends js.Object {
 
 object DescribePredictorResponse {
   @scala.inline
-  def apply(
-    AlgorithmArn: Arn = null,
-    AutoMLAlgorithmArns: ArnList = null,
-    CreationTime: Timestamp = null,
-    DatasetImportJobArns: ArnList = null,
-    EncryptionConfig: EncryptionConfig = null,
-    EvaluationParameters: EvaluationParameters = null,
-    FeaturizationConfig: FeaturizationConfig = null,
-    ForecastHorizon: js.UndefOr[Integer] = js.undefined,
-    HPOConfig: HyperParameterTuningJobConfig = null,
-    InputDataConfig: InputDataConfig = null,
-    LastModificationTime: Timestamp = null,
-    Message: Message = null,
-    PerformAutoML: js.UndefOr[Boolean] = js.undefined,
-    PerformHPO: js.UndefOr[Boolean] = js.undefined,
-    PredictorArn: Name = null,
-    PredictorExecutionDetails: PredictorExecutionDetails = null,
-    PredictorName: Name = null,
-    Status: Status = null,
-    TrainingParameters: TrainingParameters = null
-  ): DescribePredictorResponse = {
+  def apply(): DescribePredictorResponse = {
     val __obj = js.Dynamic.literal()
-    if (AlgorithmArn != null) __obj.updateDynamic("AlgorithmArn")(AlgorithmArn.asInstanceOf[js.Any])
-    if (AutoMLAlgorithmArns != null) __obj.updateDynamic("AutoMLAlgorithmArns")(AutoMLAlgorithmArns.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (DatasetImportJobArns != null) __obj.updateDynamic("DatasetImportJobArns")(DatasetImportJobArns.asInstanceOf[js.Any])
-    if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
-    if (EvaluationParameters != null) __obj.updateDynamic("EvaluationParameters")(EvaluationParameters.asInstanceOf[js.Any])
-    if (FeaturizationConfig != null) __obj.updateDynamic("FeaturizationConfig")(FeaturizationConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(ForecastHorizon)) __obj.updateDynamic("ForecastHorizon")(ForecastHorizon.get.asInstanceOf[js.Any])
-    if (HPOConfig != null) __obj.updateDynamic("HPOConfig")(HPOConfig.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (LastModificationTime != null) __obj.updateDynamic("LastModificationTime")(LastModificationTime.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformAutoML)) __obj.updateDynamic("PerformAutoML")(PerformAutoML.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(PerformHPO)) __obj.updateDynamic("PerformHPO")(PerformHPO.get.asInstanceOf[js.Any])
-    if (PredictorArn != null) __obj.updateDynamic("PredictorArn")(PredictorArn.asInstanceOf[js.Any])
-    if (PredictorExecutionDetails != null) __obj.updateDynamic("PredictorExecutionDetails")(PredictorExecutionDetails.asInstanceOf[js.Any])
-    if (PredictorName != null) __obj.updateDynamic("PredictorName")(PredictorName.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (TrainingParameters != null) __obj.updateDynamic("TrainingParameters")(TrainingParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePredictorResponse]
   }
+  @scala.inline
+  implicit class DescribePredictorResponseOps[Self <: DescribePredictorResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlgorithmArn(value: Arn): Self = this.set("AlgorithmArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlgorithmArn: Self = this.set("AlgorithmArn", js.undefined)
+    @scala.inline
+    def setAutoMLAlgorithmArnsVarargs(value: Arn*): Self = this.set("AutoMLAlgorithmArns", js.Array(value :_*))
+    @scala.inline
+    def setAutoMLAlgorithmArns(value: ArnList): Self = this.set("AutoMLAlgorithmArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMLAlgorithmArns: Self = this.set("AutoMLAlgorithmArns", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDatasetImportJobArnsVarargs(value: Arn*): Self = this.set("DatasetImportJobArns", js.Array(value :_*))
+    @scala.inline
+    def setDatasetImportJobArns(value: ArnList): Self = this.set("DatasetImportJobArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatasetImportJobArns: Self = this.set("DatasetImportJobArns", js.undefined)
+    @scala.inline
+    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("EncryptionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfig: Self = this.set("EncryptionConfig", js.undefined)
+    @scala.inline
+    def setEvaluationParameters(value: EvaluationParameters): Self = this.set("EvaluationParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationParameters: Self = this.set("EvaluationParameters", js.undefined)
+    @scala.inline
+    def setFeaturizationConfig(value: FeaturizationConfig): Self = this.set("FeaturizationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeaturizationConfig: Self = this.set("FeaturizationConfig", js.undefined)
+    @scala.inline
+    def setForecastHorizon(value: Integer): Self = this.set("ForecastHorizon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForecastHorizon: Self = this.set("ForecastHorizon", js.undefined)
+    @scala.inline
+    def setHPOConfig(value: HyperParameterTuningJobConfig): Self = this.set("HPOConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHPOConfig: Self = this.set("HPOConfig", js.undefined)
+    @scala.inline
+    def setInputDataConfig(value: InputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setLastModificationTime(value: Timestamp): Self = this.set("LastModificationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModificationTime: Self = this.set("LastModificationTime", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setPerformAutoML(value: Boolean): Self = this.set("PerformAutoML", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformAutoML: Self = this.set("PerformAutoML", js.undefined)
+    @scala.inline
+    def setPerformHPO(value: Boolean): Self = this.set("PerformHPO", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerformHPO: Self = this.set("PerformHPO", js.undefined)
+    @scala.inline
+    def setPredictorArn(value: Name): Self = this.set("PredictorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorArn: Self = this.set("PredictorArn", js.undefined)
+    @scala.inline
+    def setPredictorExecutionDetails(value: PredictorExecutionDetails): Self = this.set("PredictorExecutionDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorExecutionDetails: Self = this.set("PredictorExecutionDetails", js.undefined)
+    @scala.inline
+    def setPredictorName(value: Name): Self = this.set("PredictorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredictorName: Self = this.set("PredictorName", js.undefined)
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setTrainingParameters(value: TrainingParameters): Self = this.set("TrainingParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingParameters: Self = this.set("TrainingParameters", js.undefined)
+  }
+  
 }
 

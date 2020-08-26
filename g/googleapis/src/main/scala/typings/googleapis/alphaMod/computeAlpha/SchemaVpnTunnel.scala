@@ -162,58 +162,122 @@ trait SchemaVpnTunnel extends js.Object {
 
 object SchemaVpnTunnel {
   @scala.inline
-  def apply(
-    creationTimestamp: String = null,
-    description: String = null,
-    detailedStatus: String = null,
-    id: String = null,
-    ikeVersion: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    labelFingerprint: String = null,
-    labels: StringDictionary[String] = null,
-    localTrafficSelector: js.Array[String] = null,
-    name: String = null,
-    peerExternalGateway: String = null,
-    peerExternalGatewayInterface: js.UndefOr[Double] = js.undefined,
-    peerGcpGateway: String = null,
-    peerIp: String = null,
-    region: String = null,
-    remoteTrafficSelector: js.Array[String] = null,
-    router: String = null,
-    selfLink: String = null,
-    sharedSecret: String = null,
-    sharedSecretHash: String = null,
-    status: String = null,
-    targetVpnGateway: String = null,
-    vpnGateway: String = null,
-    vpnGatewayInterface: js.UndefOr[Double] = js.undefined
-  ): SchemaVpnTunnel = {
+  def apply(): SchemaVpnTunnel = {
     val __obj = js.Dynamic.literal()
-    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (detailedStatus != null) __obj.updateDynamic("detailedStatus")(detailedStatus.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ikeVersion)) __obj.updateDynamic("ikeVersion")(ikeVersion.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (localTrafficSelector != null) __obj.updateDynamic("localTrafficSelector")(localTrafficSelector.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (peerExternalGateway != null) __obj.updateDynamic("peerExternalGateway")(peerExternalGateway.asInstanceOf[js.Any])
-    if (!js.isUndefined(peerExternalGatewayInterface)) __obj.updateDynamic("peerExternalGatewayInterface")(peerExternalGatewayInterface.get.asInstanceOf[js.Any])
-    if (peerGcpGateway != null) __obj.updateDynamic("peerGcpGateway")(peerGcpGateway.asInstanceOf[js.Any])
-    if (peerIp != null) __obj.updateDynamic("peerIp")(peerIp.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (remoteTrafficSelector != null) __obj.updateDynamic("remoteTrafficSelector")(remoteTrafficSelector.asInstanceOf[js.Any])
-    if (router != null) __obj.updateDynamic("router")(router.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
-    if (sharedSecret != null) __obj.updateDynamic("sharedSecret")(sharedSecret.asInstanceOf[js.Any])
-    if (sharedSecretHash != null) __obj.updateDynamic("sharedSecretHash")(sharedSecretHash.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetVpnGateway != null) __obj.updateDynamic("targetVpnGateway")(targetVpnGateway.asInstanceOf[js.Any])
-    if (vpnGateway != null) __obj.updateDynamic("vpnGateway")(vpnGateway.asInstanceOf[js.Any])
-    if (!js.isUndefined(vpnGatewayInterface)) __obj.updateDynamic("vpnGatewayInterface")(vpnGatewayInterface.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnTunnel]
   }
+  @scala.inline
+  implicit class SchemaVpnTunnelOps[Self <: SchemaVpnTunnel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationTimestamp(value: String): Self = this.set("creationTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTimestamp: Self = this.set("creationTimestamp", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setDetailedStatus(value: String): Self = this.set("detailedStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailedStatus: Self = this.set("detailedStatus", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIkeVersion(value: Double): Self = this.set("ikeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIkeVersion: Self = this.set("ikeVersion", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLabelFingerprint(value: String): Self = this.set("labelFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelFingerprint: Self = this.set("labelFingerprint", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setLocalTrafficSelectorVarargs(value: String*): Self = this.set("localTrafficSelector", js.Array(value :_*))
+    @scala.inline
+    def setLocalTrafficSelector(value: js.Array[String]): Self = this.set("localTrafficSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocalTrafficSelector: Self = this.set("localTrafficSelector", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPeerExternalGateway(value: String): Self = this.set("peerExternalGateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerExternalGateway: Self = this.set("peerExternalGateway", js.undefined)
+    @scala.inline
+    def setPeerExternalGatewayInterface(value: Double): Self = this.set("peerExternalGatewayInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerExternalGatewayInterface: Self = this.set("peerExternalGatewayInterface", js.undefined)
+    @scala.inline
+    def setPeerGcpGateway(value: String): Self = this.set("peerGcpGateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerGcpGateway: Self = this.set("peerGcpGateway", js.undefined)
+    @scala.inline
+    def setPeerIp(value: String): Self = this.set("peerIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerIp: Self = this.set("peerIp", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRemoteTrafficSelectorVarargs(value: String*): Self = this.set("remoteTrafficSelector", js.Array(value :_*))
+    @scala.inline
+    def setRemoteTrafficSelector(value: js.Array[String]): Self = this.set("remoteTrafficSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoteTrafficSelector: Self = this.set("remoteTrafficSelector", js.undefined)
+    @scala.inline
+    def setRouter(value: String): Self = this.set("router", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouter: Self = this.set("router", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+    @scala.inline
+    def setSharedSecret(value: String): Self = this.set("sharedSecret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedSecret: Self = this.set("sharedSecret", js.undefined)
+    @scala.inline
+    def setSharedSecretHash(value: String): Self = this.set("sharedSecretHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedSecretHash: Self = this.set("sharedSecretHash", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetVpnGateway(value: String): Self = this.set("targetVpnGateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetVpnGateway: Self = this.set("targetVpnGateway", js.undefined)
+    @scala.inline
+    def setVpnGateway(value: String): Self = this.set("vpnGateway", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnGateway: Self = this.set("vpnGateway", js.undefined)
+    @scala.inline
+    def setVpnGatewayInterface(value: Double): Self = this.set("vpnGatewayInterface", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnGatewayInterface: Self = this.set("vpnGatewayInterface", js.undefined)
+  }
+  
 }
 

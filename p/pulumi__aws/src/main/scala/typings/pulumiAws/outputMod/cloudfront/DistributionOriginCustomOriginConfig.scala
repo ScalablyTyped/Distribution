@@ -41,14 +41,41 @@ object DistributionOriginCustomOriginConfig {
     httpPort: Double,
     httpsPort: Double,
     originProtocolPolicy: String,
-    originSslProtocols: js.Array[String],
-    originKeepaliveTimeout: js.UndefOr[Double] = js.undefined,
-    originReadTimeout: js.UndefOr[Double] = js.undefined
+    originSslProtocols: js.Array[String]
   ): DistributionOriginCustomOriginConfig = {
     val __obj = js.Dynamic.literal(httpPort = httpPort.asInstanceOf[js.Any], httpsPort = httpsPort.asInstanceOf[js.Any], originProtocolPolicy = originProtocolPolicy.asInstanceOf[js.Any], originSslProtocols = originSslProtocols.asInstanceOf[js.Any])
-    if (!js.isUndefined(originKeepaliveTimeout)) __obj.updateDynamic("originKeepaliveTimeout")(originKeepaliveTimeout.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(originReadTimeout)) __obj.updateDynamic("originReadTimeout")(originReadTimeout.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistributionOriginCustomOriginConfig]
   }
+  @scala.inline
+  implicit class DistributionOriginCustomOriginConfigOps[Self <: DistributionOriginCustomOriginConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpPort(value: Double): Self = this.set("httpPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHttpsPort(value: Double): Self = this.set("httpsPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginProtocolPolicy(value: String): Self = this.set("originProtocolPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginSslProtocolsVarargs(value: String*): Self = this.set("originSslProtocols", js.Array(value :_*))
+    @scala.inline
+    def setOriginSslProtocols(value: js.Array[String]): Self = this.set("originSslProtocols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginKeepaliveTimeout(value: Double): Self = this.set("originKeepaliveTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginKeepaliveTimeout: Self = this.set("originKeepaliveTimeout", js.undefined)
+    @scala.inline
+    def setOriginReadTimeout(value: Double): Self = this.set("originReadTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginReadTimeout: Self = this.set("originReadTimeout", js.undefined)
+  }
+  
 }
 

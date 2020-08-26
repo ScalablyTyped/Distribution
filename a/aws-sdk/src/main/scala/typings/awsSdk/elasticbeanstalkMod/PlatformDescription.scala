@@ -94,52 +94,116 @@ trait PlatformDescription extends js.Object {
 
 object PlatformDescription {
   @scala.inline
-  def apply(
-    CustomAmiList: CustomAmiList = null,
-    DateCreated: CreationDate = null,
-    DateUpdated: UpdateDate = null,
-    Description: Description = null,
-    Frameworks: PlatformFrameworks = null,
-    Maintainer: Maintainer = null,
-    OperatingSystemName: OperatingSystemName = null,
-    OperatingSystemVersion: OperatingSystemVersion = null,
-    PlatformArn: PlatformArn = null,
-    PlatformBranchLifecycleState: PlatformBranchLifecycleState = null,
-    PlatformBranchName: BranchName = null,
-    PlatformCategory: PlatformCategory = null,
-    PlatformLifecycleState: PlatformLifecycleState = null,
-    PlatformName: PlatformName = null,
-    PlatformOwner: PlatformOwner = null,
-    PlatformStatus: PlatformStatus = null,
-    PlatformVersion: PlatformVersion = null,
-    ProgrammingLanguages: PlatformProgrammingLanguages = null,
-    SolutionStackName: SolutionStackName = null,
-    SupportedAddonList: SupportedAddonList = null,
-    SupportedTierList: SupportedTierList = null
-  ): PlatformDescription = {
+  def apply(): PlatformDescription = {
     val __obj = js.Dynamic.literal()
-    if (CustomAmiList != null) __obj.updateDynamic("CustomAmiList")(CustomAmiList.asInstanceOf[js.Any])
-    if (DateCreated != null) __obj.updateDynamic("DateCreated")(DateCreated.asInstanceOf[js.Any])
-    if (DateUpdated != null) __obj.updateDynamic("DateUpdated")(DateUpdated.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Frameworks != null) __obj.updateDynamic("Frameworks")(Frameworks.asInstanceOf[js.Any])
-    if (Maintainer != null) __obj.updateDynamic("Maintainer")(Maintainer.asInstanceOf[js.Any])
-    if (OperatingSystemName != null) __obj.updateDynamic("OperatingSystemName")(OperatingSystemName.asInstanceOf[js.Any])
-    if (OperatingSystemVersion != null) __obj.updateDynamic("OperatingSystemVersion")(OperatingSystemVersion.asInstanceOf[js.Any])
-    if (PlatformArn != null) __obj.updateDynamic("PlatformArn")(PlatformArn.asInstanceOf[js.Any])
-    if (PlatformBranchLifecycleState != null) __obj.updateDynamic("PlatformBranchLifecycleState")(PlatformBranchLifecycleState.asInstanceOf[js.Any])
-    if (PlatformBranchName != null) __obj.updateDynamic("PlatformBranchName")(PlatformBranchName.asInstanceOf[js.Any])
-    if (PlatformCategory != null) __obj.updateDynamic("PlatformCategory")(PlatformCategory.asInstanceOf[js.Any])
-    if (PlatformLifecycleState != null) __obj.updateDynamic("PlatformLifecycleState")(PlatformLifecycleState.asInstanceOf[js.Any])
-    if (PlatformName != null) __obj.updateDynamic("PlatformName")(PlatformName.asInstanceOf[js.Any])
-    if (PlatformOwner != null) __obj.updateDynamic("PlatformOwner")(PlatformOwner.asInstanceOf[js.Any])
-    if (PlatformStatus != null) __obj.updateDynamic("PlatformStatus")(PlatformStatus.asInstanceOf[js.Any])
-    if (PlatformVersion != null) __obj.updateDynamic("PlatformVersion")(PlatformVersion.asInstanceOf[js.Any])
-    if (ProgrammingLanguages != null) __obj.updateDynamic("ProgrammingLanguages")(ProgrammingLanguages.asInstanceOf[js.Any])
-    if (SolutionStackName != null) __obj.updateDynamic("SolutionStackName")(SolutionStackName.asInstanceOf[js.Any])
-    if (SupportedAddonList != null) __obj.updateDynamic("SupportedAddonList")(SupportedAddonList.asInstanceOf[js.Any])
-    if (SupportedTierList != null) __obj.updateDynamic("SupportedTierList")(SupportedTierList.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlatformDescription]
   }
+  @scala.inline
+  implicit class PlatformDescriptionOps[Self <: PlatformDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomAmiListVarargs(value: CustomAmi*): Self = this.set("CustomAmiList", js.Array(value :_*))
+    @scala.inline
+    def setCustomAmiList(value: CustomAmiList): Self = this.set("CustomAmiList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomAmiList: Self = this.set("CustomAmiList", js.undefined)
+    @scala.inline
+    def setDateCreated(value: CreationDate): Self = this.set("DateCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateCreated: Self = this.set("DateCreated", js.undefined)
+    @scala.inline
+    def setDateUpdated(value: UpdateDate): Self = this.set("DateUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateUpdated: Self = this.set("DateUpdated", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFrameworksVarargs(value: PlatformFramework*): Self = this.set("Frameworks", js.Array(value :_*))
+    @scala.inline
+    def setFrameworks(value: PlatformFrameworks): Self = this.set("Frameworks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameworks: Self = this.set("Frameworks", js.undefined)
+    @scala.inline
+    def setMaintainer(value: Maintainer): Self = this.set("Maintainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintainer: Self = this.set("Maintainer", js.undefined)
+    @scala.inline
+    def setOperatingSystemName(value: OperatingSystemName): Self = this.set("OperatingSystemName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystemName: Self = this.set("OperatingSystemName", js.undefined)
+    @scala.inline
+    def setOperatingSystemVersion(value: OperatingSystemVersion): Self = this.set("OperatingSystemVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperatingSystemVersion: Self = this.set("OperatingSystemVersion", js.undefined)
+    @scala.inline
+    def setPlatformArn(value: PlatformArn): Self = this.set("PlatformArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformArn: Self = this.set("PlatformArn", js.undefined)
+    @scala.inline
+    def setPlatformBranchLifecycleState(value: PlatformBranchLifecycleState): Self = this.set("PlatformBranchLifecycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformBranchLifecycleState: Self = this.set("PlatformBranchLifecycleState", js.undefined)
+    @scala.inline
+    def setPlatformBranchName(value: BranchName): Self = this.set("PlatformBranchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformBranchName: Self = this.set("PlatformBranchName", js.undefined)
+    @scala.inline
+    def setPlatformCategory(value: PlatformCategory): Self = this.set("PlatformCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformCategory: Self = this.set("PlatformCategory", js.undefined)
+    @scala.inline
+    def setPlatformLifecycleState(value: PlatformLifecycleState): Self = this.set("PlatformLifecycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformLifecycleState: Self = this.set("PlatformLifecycleState", js.undefined)
+    @scala.inline
+    def setPlatformName(value: PlatformName): Self = this.set("PlatformName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformName: Self = this.set("PlatformName", js.undefined)
+    @scala.inline
+    def setPlatformOwner(value: PlatformOwner): Self = this.set("PlatformOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformOwner: Self = this.set("PlatformOwner", js.undefined)
+    @scala.inline
+    def setPlatformStatus(value: PlatformStatus): Self = this.set("PlatformStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformStatus: Self = this.set("PlatformStatus", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: PlatformVersion): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("PlatformVersion", js.undefined)
+    @scala.inline
+    def setProgrammingLanguagesVarargs(value: PlatformProgrammingLanguage*): Self = this.set("ProgrammingLanguages", js.Array(value :_*))
+    @scala.inline
+    def setProgrammingLanguages(value: PlatformProgrammingLanguages): Self = this.set("ProgrammingLanguages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgrammingLanguages: Self = this.set("ProgrammingLanguages", js.undefined)
+    @scala.inline
+    def setSolutionStackName(value: SolutionStackName): Self = this.set("SolutionStackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSolutionStackName: Self = this.set("SolutionStackName", js.undefined)
+    @scala.inline
+    def setSupportedAddonListVarargs(value: SupportedAddon*): Self = this.set("SupportedAddonList", js.Array(value :_*))
+    @scala.inline
+    def setSupportedAddonList(value: SupportedAddonList): Self = this.set("SupportedAddonList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedAddonList: Self = this.set("SupportedAddonList", js.undefined)
+    @scala.inline
+    def setSupportedTierListVarargs(value: SupportedTier*): Self = this.set("SupportedTierList", js.Array(value :_*))
+    @scala.inline
+    def setSupportedTierList(value: SupportedTierList): Self = this.set("SupportedTierList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedTierList: Self = this.set("SupportedTierList", js.undefined)
+  }
+  
 }
 

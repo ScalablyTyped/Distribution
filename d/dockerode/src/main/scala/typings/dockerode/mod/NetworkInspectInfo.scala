@@ -6,20 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Information returned from inspecting a network
+@js.native
 trait NetworkInspectInfo extends js.Object {
-  var Attachable: Boolean
-  var Containers: js.UndefOr[StringDictionary[NetworkContainer]] = js.undefined
-  var Created: String
-  var Driver: String
-  var EnableIPv6: Boolean
-  var IPAM: js.UndefOr[typings.dockerode.mod.IPAM] = js.undefined
-  var Id: String
-  var Ingress: Boolean
-  var Internal: Boolean
-  var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
-  var Name: String
-  var Options: js.UndefOr[StringDictionary[String]] = js.undefined
-  var Scope: String
+  var Attachable: Boolean = js.native
+  var Containers: js.UndefOr[StringDictionary[NetworkContainer]] = js.native
+  var Created: String = js.native
+  var Driver: String = js.native
+  var EnableIPv6: Boolean = js.native
+  var IPAM: js.UndefOr[typings.dockerode.mod.IPAM] = js.native
+  var Id: String = js.native
+  var Ingress: Boolean = js.native
+  var Internal: Boolean = js.native
+  var Labels: js.UndefOr[StringDictionary[String]] = js.native
+  var Name: String = js.native
+  var Options: js.UndefOr[StringDictionary[String]] = js.native
+  var Scope: String = js.native
 }
 
 object NetworkInspectInfo {
@@ -33,18 +34,57 @@ object NetworkInspectInfo {
     Ingress: Boolean,
     Internal: Boolean,
     Name: String,
-    Scope: String,
-    Containers: StringDictionary[NetworkContainer] = null,
-    IPAM: IPAM = null,
-    Labels: StringDictionary[String] = null,
-    Options: StringDictionary[String] = null
+    Scope: String
   ): NetworkInspectInfo = {
     val __obj = js.Dynamic.literal(Attachable = Attachable.asInstanceOf[js.Any], Created = Created.asInstanceOf[js.Any], Driver = Driver.asInstanceOf[js.Any], EnableIPv6 = EnableIPv6.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Ingress = Ingress.asInstanceOf[js.Any], Internal = Internal.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
-    if (Containers != null) __obj.updateDynamic("Containers")(Containers.asInstanceOf[js.Any])
-    if (IPAM != null) __obj.updateDynamic("IPAM")(IPAM.asInstanceOf[js.Any])
-    if (Labels != null) __obj.updateDynamic("Labels")(Labels.asInstanceOf[js.Any])
-    if (Options != null) __obj.updateDynamic("Options")(Options.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInspectInfo]
   }
+  @scala.inline
+  implicit class NetworkInspectInfoOps[Self <: NetworkInspectInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachable(value: Boolean): Self = this.set("Attachable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreated(value: String): Self = this.set("Created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDriver(value: String): Self = this.set("Driver", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableIPv6(value: Boolean): Self = this.set("EnableIPv6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIngress(value: Boolean): Self = this.set("Ingress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInternal(value: Boolean): Self = this.set("Internal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setScope(value: String): Self = this.set("Scope", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContainers(value: StringDictionary[NetworkContainer]): Self = this.set("Containers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainers: Self = this.set("Containers", js.undefined)
+    @scala.inline
+    def setIPAM(value: IPAM): Self = this.set("IPAM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPAM: Self = this.set("IPAM", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("Labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("Labels", js.undefined)
+    @scala.inline
+    def setOptions(value: StringDictionary[String]): Self = this.set("Options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("Options", js.undefined)
+  }
+  
 }
 

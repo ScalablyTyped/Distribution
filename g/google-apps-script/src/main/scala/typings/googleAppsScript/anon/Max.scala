@@ -5,18 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Max extends js.Object {
-  var max: js.UndefOr[Integer] = js.undefined
-  var start: js.UndefOr[Integer] = js.undefined
+  var max: js.UndefOr[Integer] = js.native
+  var start: js.UndefOr[Integer] = js.native
 }
 
 object Max {
   @scala.inline
-  def apply(max: js.UndefOr[Integer] = js.undefined, start: js.UndefOr[Integer] = js.undefined): Max = {
+  def apply(): Max = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(start)) __obj.updateDynamic("start")(start.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Max]
   }
+  @scala.inline
+  implicit class MaxOps[Self <: Max] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMax(value: Integer): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setStart(value: Integer): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+  }
+  
 }
 

@@ -65,33 +65,15 @@ object ChatEventData {
     __obj.asInstanceOf[ChatEventData]
   }
   @scala.inline
-  def BaseChatEventDatatypechatNewrating(
-    display_name: String,
-    nick: String,
-    time_stamp: Double,
-    `type`: chatDotrating,
-    new_rating: String = null,
-    rating: String = null
-  ): ChatEventData = {
+  def BaseChatEventDatatypechatNewrating(display_name: String, nick: String, time_stamp: Double, `type`: chatDotrating): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (new_rating != null) __obj.updateDynamic("new_rating")(new_rating.asInstanceOf[js.Any])
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
   @scala.inline
-  def BaseChatEventDatatypechatComment(
-    display_name: String,
-    nick: String,
-    time_stamp: Double,
-    `type`: chatDotcomment,
-    comment: String = null,
-    new_comment: String = null
-  ): ChatEventData = {
+  def BaseChatEventDatatypechatComment(display_name: String, nick: String, time_stamp: Double, `type`: chatDotcomment): ChatEventData = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (new_comment != null) __obj.updateDynamic("new_comment")(new_comment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatEventData]
   }
   @scala.inline

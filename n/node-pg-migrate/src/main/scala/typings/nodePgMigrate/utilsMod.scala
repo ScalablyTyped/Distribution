@@ -25,9 +25,11 @@ object utilsMod extends js.Object {
   def createTransformer(literal: Literal): js.Function2[/* s */ String, /* d */ js.UndefOr[StringDictionary[Name]], String] = js.native
   def escapeValue(`val`: Value): String | Double = js.native
   def formatLines(lines: js.Array[String]): String = js.native
+  def formatLines(lines: js.Array[String], replace: js.UndefOr[scala.Nothing], separator: String): String = js.native
   def formatLines(lines: js.Array[String], replace: String): String = js.native
   def formatLines(lines: js.Array[String], replace: String, separator: String): String = js.native
-  def formatParams(params: js.UndefOr[js.Array[FunctionParam]], mOptions: MigrationOptions): String = js.native
+  def formatParams(params: js.UndefOr[scala.Nothing], mOptions: MigrationOptions): String = js.native
+  def formatParams(params: js.Array[FunctionParam], mOptions: MigrationOptions): String = js.native
   def getMigrationTableSchema(options: RunnerOption): String = js.native
   def getSchemas(): js.Array[String] = js.native
   def getSchemas(schema: String): js.Array[String] = js.native

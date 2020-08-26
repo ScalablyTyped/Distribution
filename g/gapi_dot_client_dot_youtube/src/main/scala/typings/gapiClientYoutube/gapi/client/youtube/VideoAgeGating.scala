@@ -4,33 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoAgeGating extends js.Object {
   /**
     * Indicates whether or not the video has alcoholic beverage content. Only users of legal purchasing age in a particular country, as identified by ICAP,
     * can view the content.
     */
-  var alcoholContent: js.UndefOr[Boolean] = js.undefined
+  var alcoholContent: js.UndefOr[Boolean] = js.native
   /**
     * Age-restricted trailers. For redband trailers and adult-rated video-games. Only users aged 18+ can view the content. The the field is true the content
     * is restricted to viewers aged 18+. Otherwise The field won't be present.
     */
-  var restricted: js.UndefOr[Boolean] = js.undefined
+  var restricted: js.UndefOr[Boolean] = js.native
   /** Video game rating, if any. */
-  var videoGameRating: js.UndefOr[String] = js.undefined
+  var videoGameRating: js.UndefOr[String] = js.native
 }
 
 object VideoAgeGating {
   @scala.inline
-  def apply(
-    alcoholContent: js.UndefOr[Boolean] = js.undefined,
-    restricted: js.UndefOr[Boolean] = js.undefined,
-    videoGameRating: String = null
-  ): VideoAgeGating = {
+  def apply(): VideoAgeGating = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alcoholContent)) __obj.updateDynamic("alcoholContent")(alcoholContent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.get.asInstanceOf[js.Any])
-    if (videoGameRating != null) __obj.updateDynamic("videoGameRating")(videoGameRating.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoAgeGating]
   }
+  @scala.inline
+  implicit class VideoAgeGatingOps[Self <: VideoAgeGating] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlcoholContent(value: Boolean): Self = this.set("alcoholContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlcoholContent: Self = this.set("alcoholContent", js.undefined)
+    @scala.inline
+    def setRestricted(value: Boolean): Self = this.set("restricted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestricted: Self = this.set("restricted", js.undefined)
+    @scala.inline
+    def setVideoGameRating(value: String): Self = this.set("videoGameRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoGameRating: Self = this.set("videoGameRating", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__plugin-color
 
-Typings are for version 0.9.8
+Typings are for version 0.14.0
 
 ## Library description:
 Bitmap manipulation to adjust the color in an image.
@@ -10,9 +10,9 @@ Bitmap manipulation to adjust the color in an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-color |
 | Keywords           | - |
-| # releases         | 73 |
+| # releases         | 72 |
 | # dependents       | 1 |
-| # downloads        | 14083373 |
+| # downloads        | 14455524 |
 | # stars            | 0 |
 
 ## Links

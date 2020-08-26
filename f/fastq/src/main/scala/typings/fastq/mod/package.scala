@@ -5,6 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mod {
-  type done = js.Function2[/* err */ typings.std.Error, /* result */ js.Any, scala.Unit]
-  type worker[T] = js.ThisFunction2[/* this */ T, /* arg */ js.Any, /* cb */ js.Function0[scala.Unit], scala.Unit]
+  type done[R] = js.Function2[/* err */ typings.std.Error | scala.Null, /* result */ js.UndefOr[R], scala.Unit]
+  type worker[C, T, R] = js.ThisFunction2[/* this */ C, /* task */ T, /* cb */ typings.fastq.mod.done[R], scala.Unit]
 }

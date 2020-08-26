@@ -4,45 +4,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionCompleteEventArgs extends js.Object {
   /** Returns the cancel option value.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** Returns Spreadsheet model.
     */
-  var model: js.UndefOr[Model] = js.undefined
+  var model: js.UndefOr[Model] = js.native
   /** Returns the request type.
     */
-  var reqType: js.UndefOr[String] = js.undefined
+  var reqType: js.UndefOr[String] = js.native
   /** Returns the applied cell format object.
     */
-  var selectedCell: js.UndefOr[js.Array[_] | js.Any] = js.undefined
+  var selectedCell: js.UndefOr[js.Array[_] | js.Any] = js.native
   /** Returns the sheet index.
     */
-  var sheetIdx: js.UndefOr[Double] = js.undefined
+  var sheetIdx: js.UndefOr[Double] = js.native
   /** Returns the name of the event.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object ActionCompleteEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    model: Model = null,
-    reqType: String = null,
-    selectedCell: js.Array[_] | js.Any = null,
-    sheetIdx: js.UndefOr[Double] = js.undefined,
-    `type`: String = null
-  ): ActionCompleteEventArgs = {
+  def apply(): ActionCompleteEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (reqType != null) __obj.updateDynamic("reqType")(reqType.asInstanceOf[js.Any])
-    if (selectedCell != null) __obj.updateDynamic("selectedCell")(selectedCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetIdx)) __obj.updateDynamic("sheetIdx")(sheetIdx.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionCompleteEventArgs]
   }
+  @scala.inline
+  implicit class ActionCompleteEventArgsOps[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setModel(value: Model): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setReqType(value: String): Self = this.set("reqType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReqType: Self = this.set("reqType", js.undefined)
+    @scala.inline
+    def setSelectedCellVarargs(value: js.Any*): Self = this.set("selectedCell", js.Array(value :_*))
+    @scala.inline
+    def setSelectedCell(value: js.Array[_] | js.Any): Self = this.set("selectedCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectedCell: Self = this.set("selectedCell", js.undefined)
+    @scala.inline
+    def setSheetIdx(value: Double): Self = this.set("sheetIdx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSheetIdx: Self = this.set("sheetIdx", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

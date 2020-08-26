@@ -28,6 +28,7 @@ class ResourceVideoformats protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaVideoFormat] = js.native
   def get(callback: BodyResponseCallback[SchemaVideoFormat]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoFormat] = js.native
   def get(params: ParamsResourceVideoformatsGet): GaxiosPromise[SchemaVideoFormat] = js.native
   def get(params: ParamsResourceVideoformatsGet, callback: BodyResponseCallback[SchemaVideoFormat]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceVideoformats protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaVideoFormatsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVideoFormatsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVideoFormatsListResponse] = js.native
   def list(params: ParamsResourceVideoformatsList): GaxiosPromise[SchemaVideoFormatsListResponse] = js.native
   def list(
     params: ParamsResourceVideoformatsList,

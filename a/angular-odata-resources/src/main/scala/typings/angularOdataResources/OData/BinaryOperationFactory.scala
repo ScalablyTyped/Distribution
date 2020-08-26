@@ -13,7 +13,7 @@ trait BinaryOperationFactory
      with Instantiable2[/* propertyOrPredicate */ js.Any, /* valueOrOperator */ js.Any, BinaryOperation]
      with Instantiable3[
       /* propertyOrPredicate */ js.Any, 
-      /* valueOrOperator */ js.Any, 
+      js.UndefOr[/* valueOrOperator */ js.Any], 
       /* value */ js.Any, 
       BinaryOperation
     ]

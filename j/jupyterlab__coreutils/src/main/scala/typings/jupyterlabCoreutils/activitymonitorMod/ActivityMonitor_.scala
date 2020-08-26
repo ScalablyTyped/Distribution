@@ -26,30 +26,9 @@ class ActivityMonitor_[Sender, Args] protected () extends IDisposable {
   var _timeout: js.Any = js.native
   var _timer: js.Any = js.native
   /**
-    * Test whether the object has been disposed.
-    *
-    * #### Notes
-    * This property is always safe to access.
-    */
-  /* CompleteClass */
-  override val isDisposed: Boolean = js.native
-  /**
     * A signal emitted when activity has ceased.
     */
   def activityStopped: ISignal[this.type, IArguments[Sender, Args]] = js.native
-  /**
-    * Dispose of the resources held by the object.
-    *
-    * #### Notes
-    * If the object's `dispose` method is called more than once, all
-    * calls made after the first will be a no-op.
-    *
-    * #### Undefined Behavior
-    * It is undefined behavior to use any functionality of the object
-    * after it has been disposed unless otherwise explicitly noted.
-    */
-  /* CompleteClass */
-  override def dispose(): Unit = js.native
   /**
     * Test whether the monitor has been disposed.
     *
@@ -62,6 +41,6 @@ class ActivityMonitor_[Sender, Args] protected () extends IDisposable {
     * The timeout associated with the monitor, in milliseconds.
     */
   def timeout: Double = js.native
-  def timeout(value: Double): js.Any = js.native
+  def timeout_=(value: Double): Unit = js.native
 }
 

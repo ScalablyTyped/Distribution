@@ -28,6 +28,7 @@ class ResourceV1 protected () extends js.Object {
     */
   def watch(): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
   def watch(callback: BodyResponseCallback[SchemaGoogleWatcherV1ChangeBatch]): Unit = js.native
+  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
   def watch(params: ParamsResourceV1Watch): GaxiosPromise[SchemaGoogleWatcherV1ChangeBatch] = js.native
   def watch(params: ParamsResourceV1Watch, callback: BodyResponseCallback[SchemaGoogleWatcherV1ChangeBatch]): Unit = js.native
   def watch(

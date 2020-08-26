@@ -58,9 +58,16 @@ trait IsoBox extends Shape {
     * @param showRight Show the right-face of the iso box. Default true.
     */
   def setFaces(): this.type = js.native
+  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: js.UndefOr[scala.Nothing], showRight: Boolean): this.type = js.native
+  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: Boolean): this.type = js.native
+  def setFaces(showTop: js.UndefOr[scala.Nothing], showLeft: Boolean, showRight: Boolean): this.type = js.native
   def setFaces(showTop: Boolean): this.type = js.native
+  def setFaces(showTop: Boolean, showLeft: js.UndefOr[scala.Nothing], showRight: Boolean): this.type = js.native
   def setFaces(showTop: Boolean, showLeft: Boolean): this.type = js.native
   def setFaces(showTop: Boolean, showLeft: Boolean, showRight: Boolean): this.type = js.native
+  def setFillStyle(fillTop: js.UndefOr[scala.Nothing], fillLeft: js.UndefOr[scala.Nothing], fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: js.UndefOr[scala.Nothing], fillLeft: Double, fillRight: Double): this.type = js.native
+  def setFillStyle(fillTop: Double, fillLeft: js.UndefOr[scala.Nothing], fillRight: Double): this.type = js.native
   def setFillStyle(fillTop: Double, fillLeft: Double, fillRight: Double): this.type = js.native
   /**
     * Sets the projection level of the iso box. Change this to change the 'angle' at which you are looking at the box.

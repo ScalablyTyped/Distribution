@@ -15,15 +15,5 @@ class ASPxClientUploadControlFilesUploadCompleteEventArgs protected ()
     * For internal use only.
     */
   def this(errorText: String, callbackData: String) = this()
-  /**
-    * Gets a string that contains specific information (if any) passed from the server side for further client processing.
-    */
-  /* CompleteClass */
-  override var callbackData: String = js.native
-  /**
-    * Gets the error text to be displayed within the upload control's error frame.
-    */
-  /* CompleteClass */
-  override var errorText: String = js.native
 }
 

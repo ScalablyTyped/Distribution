@@ -29,14 +29,30 @@ trait SchemaFeatureSettings extends js.Object {
 
 object SchemaFeatureSettings {
   @scala.inline
-  def apply(
-    splitHealthChecks: js.UndefOr[Boolean] = js.undefined,
-    useContainerOptimizedOs: js.UndefOr[Boolean] = js.undefined
-  ): SchemaFeatureSettings = {
+  def apply(): SchemaFeatureSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(splitHealthChecks)) __obj.updateDynamic("splitHealthChecks")(splitHealthChecks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useContainerOptimizedOs)) __obj.updateDynamic("useContainerOptimizedOs")(useContainerOptimizedOs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFeatureSettings]
   }
+  @scala.inline
+  implicit class SchemaFeatureSettingsOps[Self <: SchemaFeatureSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSplitHealthChecks(value: Boolean): Self = this.set("splitHealthChecks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSplitHealthChecks: Self = this.set("splitHealthChecks", js.undefined)
+    @scala.inline
+    def setUseContainerOptimizedOs(value: Boolean): Self = this.set("useContainerOptimizedOs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseContainerOptimizedOs: Self = this.set("useContainerOptimizedOs", js.undefined)
+  }
+  
 }
 

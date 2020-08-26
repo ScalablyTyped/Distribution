@@ -10,9 +10,9 @@ React package for creating custom renderers.
 | ------------------ | :-------------: |
 | Full name          | react-reconciler |
 | Keywords           | react |
-| # releases         | 108 |
-| # dependents       | 153 |
-| # downloads        | 16193069 |
+| # releases         | 109 |
+| # dependents       | 159 |
+| # downloads        | 16649238 |
 | # stars            | 1 |
 
 ## Links

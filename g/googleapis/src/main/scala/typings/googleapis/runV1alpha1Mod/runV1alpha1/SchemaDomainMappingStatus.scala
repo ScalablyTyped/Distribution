@@ -35,18 +35,42 @@ trait SchemaDomainMappingStatus extends js.Object {
 
 object SchemaDomainMappingStatus {
   @scala.inline
-  def apply(
-    conditions: js.Array[SchemaDomainMappingCondition] = null,
-    mappedRouteName: String = null,
-    observedGeneration: js.UndefOr[Double] = js.undefined,
-    resourceRecords: js.Array[SchemaResourceRecord] = null
-  ): SchemaDomainMappingStatus = {
+  def apply(): SchemaDomainMappingStatus = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (mappedRouteName != null) __obj.updateDynamic("mappedRouteName")(mappedRouteName.asInstanceOf[js.Any])
-    if (!js.isUndefined(observedGeneration)) __obj.updateDynamic("observedGeneration")(observedGeneration.get.asInstanceOf[js.Any])
-    if (resourceRecords != null) __obj.updateDynamic("resourceRecords")(resourceRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDomainMappingStatus]
   }
+  @scala.inline
+  implicit class SchemaDomainMappingStatusOps[Self <: SchemaDomainMappingStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConditionsVarargs(value: SchemaDomainMappingCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaDomainMappingCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setMappedRouteName(value: String): Self = this.set("mappedRouteName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMappedRouteName: Self = this.set("mappedRouteName", js.undefined)
+    @scala.inline
+    def setObservedGeneration(value: Double): Self = this.set("observedGeneration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObservedGeneration: Self = this.set("observedGeneration", js.undefined)
+    @scala.inline
+    def setResourceRecordsVarargs(value: SchemaResourceRecord*): Self = this.set("resourceRecords", js.Array(value :_*))
+    @scala.inline
+    def setResourceRecords(value: js.Array[SchemaResourceRecord]): Self = this.set("resourceRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRecords: Self = this.set("resourceRecords", js.undefined)
+  }
+  
 }
 

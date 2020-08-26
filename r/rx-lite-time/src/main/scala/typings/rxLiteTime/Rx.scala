@@ -33,6 +33,7 @@ object Rx extends js.Object {
     def takeLastBufferWithTime(duration: Double): Observable[js.Array[T]] = js.native
     def takeLastBufferWithTime(duration: Double, scheduler: IScheduler): Observable[js.Array[T]] = js.native
     def takeLastWithTime(duration: Double): Observable[T] = js.native
+    def takeLastWithTime(duration: Double, timerScheduler: js.UndefOr[scala.Nothing], loopScheduler: IScheduler): Observable[T] = js.native
     def takeLastWithTime(duration: Double, timerScheduler: IScheduler): Observable[T] = js.native
     def takeLastWithTime(duration: Double, timerScheduler: IScheduler, loopScheduler: IScheduler): Observable[T] = js.native
     def takeUntilWithTime(duration: Double): Observable[T] = js.native
@@ -46,6 +47,11 @@ object Rx extends js.Object {
       */
     def throttleWithSelector[TTimeout](debounceDurationSelector: js.Function1[/* item */ T, Observable[TTimeout]]): Observable[T] = js.native
     def timeoutWithSelector[TTimeout](firstTimeout: Observable[TTimeout]): Observable[T] = js.native
+    def timeoutWithSelector[TTimeout](
+      firstTimeout: Observable[TTimeout],
+      timeoutdurationSelector: js.UndefOr[scala.Nothing],
+      other: Observable[T]
+    ): Observable[T] = js.native
     def timeoutWithSelector[TTimeout](
       firstTimeout: Observable[TTimeout],
       timeoutdurationSelector: js.Function1[/* item */ T, Observable[TTimeout]]

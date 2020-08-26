@@ -19,27 +19,28 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.linguistic2.XDictionary
   * @see com.sun.star.uno.XInterface
   */
+@js.native
 trait XDictionaryEntry extends XInterface {
   /** @returns the word defining this entry. */
-  val DictionaryWord: String
+  val DictionaryWord: String = js.native
   /**
     * is the suggested replacement text for negative words.
     *
     * It is undefined if the entry is not negative.
     * @returns the replacement text for a negative entry. An empty string indicates that no replacement text is provided.
     */
-  val ReplacementText: String
+  val ReplacementText: String = js.native
   /** @returns the word defining this entry. */
-  def getDictionaryWord(): String
+  def getDictionaryWord(): String = js.native
   /**
     * is the suggested replacement text for negative words.
     *
     * It is undefined if the entry is not negative.
     * @returns the replacement text for a negative entry. An empty string indicates that no replacement text is provided.
     */
-  def getReplacementText(): String
+  def getReplacementText(): String = js.native
   /** @returns `TRUE` if the word (entry) is a negative one and should not be used, `FALSE` otherwise. */
-  def isNegative(): Boolean
+  def isNegative(): Boolean = js.native
 }
 
 object XDictionaryEntry {
@@ -57,5 +58,28 @@ object XDictionaryEntry {
     val __obj = js.Dynamic.literal(DictionaryWord = DictionaryWord.asInstanceOf[js.Any], ReplacementText = ReplacementText.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDictionaryWord = js.Any.fromFunction0(getDictionaryWord), getReplacementText = js.Any.fromFunction0(getReplacementText), isNegative = js.Any.fromFunction0(isNegative), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XDictionaryEntry]
   }
+  @scala.inline
+  implicit class XDictionaryEntryOps[Self <: XDictionaryEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDictionaryWord(value: String): Self = this.set("DictionaryWord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReplacementText(value: String): Self = this.set("ReplacementText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetDictionaryWord(value: () => String): Self = this.set("getDictionaryWord", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetReplacementText(value: () => String): Self = this.set("getReplacementText", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsNegative(value: () => Boolean): Self = this.set("isNegative", js.Any.fromFunction0(value))
+  }
+  
 }
 

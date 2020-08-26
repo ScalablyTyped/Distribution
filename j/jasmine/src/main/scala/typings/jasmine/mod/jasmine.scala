@@ -27,6 +27,7 @@ trait jasmine extends js.Object {
   def configureDefaultReporter(options: js.Any, args: js.Any*): Unit = js.native
   def coreVersion(): String = js.native
   def execute(): js.Any = js.native
+  def execute(files: js.UndefOr[scala.Nothing], filterString: String): js.Any = js.native
   def execute(files: js.Array[String]): js.Any = js.native
   def execute(files: js.Array[String], filterString: String): js.Any = js.native
   def exitCodeCompletion(passed: js.Any): Unit = js.native

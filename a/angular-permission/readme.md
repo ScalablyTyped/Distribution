@@ -12,7 +12,7 @@ Fully featured role and permission based access control for your angular applica
 | Keywords           | angular, ui-router, ng-route, angular-route, access-control, permissions, access, acl, rbac, roles, route |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 198862 |
+| # downloads        | 196627 |
 | # stars            | 10 |
 
 ## Links

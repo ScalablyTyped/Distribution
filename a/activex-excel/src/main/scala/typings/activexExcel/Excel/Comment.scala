@@ -18,7 +18,11 @@ trait Comment extends js.Object {
   def Next(): Comment = js.native
   def Previous(): Comment = js.native
   def Text(): String = js.native
+  def Text(Text: js.UndefOr[scala.Nothing], Start: js.UndefOr[scala.Nothing], Overwrite: Boolean): String = js.native
+  def Text(Text: js.UndefOr[scala.Nothing], Start: Double): String = js.native
+  def Text(Text: js.UndefOr[scala.Nothing], Start: Double, Overwrite: Boolean): String = js.native
   def Text(Text: String): String = js.native
+  def Text(Text: String, Start: js.UndefOr[scala.Nothing], Overwrite: Boolean): String = js.native
   def Text(Text: String, Start: Double): String = js.native
   def Text(Text: String, Start: Double, Overwrite: Boolean): String = js.native
 }

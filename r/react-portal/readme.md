@@ -10,9 +10,9 @@ To make your life with React Portals easier.
 | ------------------ | :-------------: |
 | Full name          | react-portal |
 | Keywords           | react, react-component, modal, lightbox, react-portal, portal, transportation |
-| # releases         | 7 |
-| # dependents       | 290 |
-| # downloads        | 17755075 |
+| # releases         | 5 |
+| # dependents       | 294 |
+| # downloads        | 18207928 |
 | # stars            | 10 |
 
 ## Links

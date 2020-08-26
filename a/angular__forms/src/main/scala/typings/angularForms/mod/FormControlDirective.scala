@@ -2,7 +2,6 @@ package typings.angularForms.mod
 
 import typings.angularCore.mod.EventEmitter
 import typings.angularCore.mod.OnChanges
-import typings.angularCore.mod.SimpleChanges
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -43,15 +42,6 @@ class FormControlDirective protected ()
     * @description
     * Triggers a warning that this input should not be used with reactive forms.
     */
-  def isDisabled(isDisabled: Boolean): js.Any = js.native
-  /**
-    * A callback method that is invoked immediately after the
-    * default change detector has checked data-bound properties
-    * if at least one has changed, and before the view and content
-    * children are checked.
-    * @param changes The changed properties.
-    */
-  /* CompleteClass */
-  override def ngOnChanges(changes: SimpleChanges): Unit = js.native
+  def isDisabled_=(isDisabled: Boolean): Unit = js.native
 }
 

@@ -22,16 +22,34 @@ trait ListDomainConfigurationsRequest extends js.Object {
 
 object ListDomainConfigurationsRequest {
   @scala.inline
-  def apply(
-    marker: Marker = null,
-    pageSize: js.UndefOr[PageSize] = js.undefined,
-    serviceType: ServiceType = null
-  ): ListDomainConfigurationsRequest = {
+  def apply(): ListDomainConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(pageSize)) __obj.updateDynamic("pageSize")(pageSize.get.asInstanceOf[js.Any])
-    if (serviceType != null) __obj.updateDynamic("serviceType")(serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainConfigurationsRequest]
   }
+  @scala.inline
+  implicit class ListDomainConfigurationsRequestOps[Self <: ListDomainConfigurationsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("marker", js.undefined)
+    @scala.inline
+    def setPageSize(value: PageSize): Self = this.set("pageSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageSize: Self = this.set("pageSize", js.undefined)
+    @scala.inline
+    def setServiceType(value: ServiceType): Self = this.set("serviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceType: Self = this.set("serviceType", js.undefined)
+  }
+  
 }
 

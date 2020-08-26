@@ -30,17 +30,36 @@ trait ExecuteProvisionedProductServiceActionInput extends js.Object {
 
 object ExecuteProvisionedProductServiceActionInput {
   @scala.inline
-  def apply(
-    ExecuteToken: IdempotencyToken,
-    ProvisionedProductId: Id,
-    ServiceActionId: Id,
-    AcceptLanguage: AcceptLanguage = null,
-    Parameters: ExecutionParameterMap = null
-  ): ExecuteProvisionedProductServiceActionInput = {
+  def apply(ExecuteToken: IdempotencyToken, ProvisionedProductId: Id, ServiceActionId: Id): ExecuteProvisionedProductServiceActionInput = {
     val __obj = js.Dynamic.literal(ExecuteToken = ExecuteToken.asInstanceOf[js.Any], ProvisionedProductId = ProvisionedProductId.asInstanceOf[js.Any], ServiceActionId = ServiceActionId.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteProvisionedProductServiceActionInput]
   }
+  @scala.inline
+  implicit class ExecuteProvisionedProductServiceActionInputOps[Self <: ExecuteProvisionedProductServiceActionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExecuteToken(value: IdempotencyToken): Self = this.set("ExecuteToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvisionedProductId(value: Id): Self = this.set("ProvisionedProductId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceActionId(value: Id): Self = this.set("ServiceActionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setParameters(value: ExecutionParameterMap): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+  }
+  
 }
 

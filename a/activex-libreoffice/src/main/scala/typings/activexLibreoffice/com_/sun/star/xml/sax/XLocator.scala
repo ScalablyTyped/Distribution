@@ -11,23 +11,24 @@ import scala.scalajs.js.annotation._
   *
   * This interface is an IDL version of the Java interface **org.xml.sax.Locator** .
   */
+@js.native
 trait XLocator extends XInterface {
   /** @returns the column number where the current document event ends. */
-  val ColumnNumber: Double
+  val ColumnNumber: Double = js.native
   /** @returns the line number where the current document event ends. */
-  val LineNumber: Double
+  val LineNumber: Double = js.native
   /** @returns the public identifier for the current document event. */
-  val PublicId: String
+  val PublicId: String = js.native
   /** @returns the system identifier for the current document event. */
-  val SystemId: String
+  val SystemId: String = js.native
   /** @returns the column number where the current document event ends. */
-  def getColumnNumber(): Double
+  def getColumnNumber(): Double = js.native
   /** @returns the line number where the current document event ends. */
-  def getLineNumber(): Double
+  def getLineNumber(): Double = js.native
   /** @returns the public identifier for the current document event. */
-  def getPublicId(): String
+  def getPublicId(): String = js.native
   /** @returns the system identifier for the current document event. */
-  def getSystemId(): String
+  def getSystemId(): String = js.native
 }
 
 object XLocator {
@@ -48,5 +49,34 @@ object XLocator {
     val __obj = js.Dynamic.literal(ColumnNumber = ColumnNumber.asInstanceOf[js.Any], LineNumber = LineNumber.asInstanceOf[js.Any], PublicId = PublicId.asInstanceOf[js.Any], SystemId = SystemId.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getColumnNumber = js.Any.fromFunction0(getColumnNumber), getLineNumber = js.Any.fromFunction0(getLineNumber), getPublicId = js.Any.fromFunction0(getPublicId), getSystemId = js.Any.fromFunction0(getSystemId), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XLocator]
   }
+  @scala.inline
+  implicit class XLocatorOps[Self <: XLocator] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColumnNumber(value: Double): Self = this.set("ColumnNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLineNumber(value: Double): Self = this.set("LineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublicId(value: String): Self = this.set("PublicId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSystemId(value: String): Self = this.set("SystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetColumnNumber(value: () => Double): Self = this.set("getColumnNumber", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetLineNumber(value: () => Double): Self = this.set("getLineNumber", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetPublicId(value: () => String): Self = this.set("getPublicId", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetSystemId(value: () => String): Self = this.set("getSystemId", js.Any.fromFunction0(value))
+  }
+  
 }
 

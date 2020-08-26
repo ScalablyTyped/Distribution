@@ -30,17 +30,36 @@ trait Shard extends js.Object {
 
 object Shard {
   @scala.inline
-  def apply(
-    HashKeyRange: HashKeyRange,
-    SequenceNumberRange: SequenceNumberRange,
-    ShardId: ShardId,
-    AdjacentParentShardId: ShardId = null,
-    ParentShardId: ShardId = null
-  ): Shard = {
+  def apply(HashKeyRange: HashKeyRange, SequenceNumberRange: SequenceNumberRange, ShardId: ShardId): Shard = {
     val __obj = js.Dynamic.literal(HashKeyRange = HashKeyRange.asInstanceOf[js.Any], SequenceNumberRange = SequenceNumberRange.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
-    if (AdjacentParentShardId != null) __obj.updateDynamic("AdjacentParentShardId")(AdjacentParentShardId.asInstanceOf[js.Any])
-    if (ParentShardId != null) __obj.updateDynamic("ParentShardId")(ParentShardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shard]
   }
+  @scala.inline
+  implicit class ShardOps[Self <: Shard] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHashKeyRange(value: HashKeyRange): Self = this.set("HashKeyRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSequenceNumberRange(value: SequenceNumberRange): Self = this.set("SequenceNumberRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShardId(value: ShardId): Self = this.set("ShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdjacentParentShardId(value: ShardId): Self = this.set("AdjacentParentShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjacentParentShardId: Self = this.set("AdjacentParentShardId", js.undefined)
+    @scala.inline
+    def setParentShardId(value: ShardId): Self = this.set("ParentShardId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentShardId: Self = this.set("ParentShardId", js.undefined)
+  }
+  
 }
 

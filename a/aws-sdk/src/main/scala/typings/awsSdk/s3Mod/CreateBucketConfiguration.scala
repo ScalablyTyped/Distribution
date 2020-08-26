@@ -14,10 +14,26 @@ trait CreateBucketConfiguration extends js.Object {
 
 object CreateBucketConfiguration {
   @scala.inline
-  def apply(LocationConstraint: BucketLocationConstraint = null): CreateBucketConfiguration = {
+  def apply(): CreateBucketConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (LocationConstraint != null) __obj.updateDynamic("LocationConstraint")(LocationConstraint.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketConfiguration]
   }
+  @scala.inline
+  implicit class CreateBucketConfigurationOps[Self <: CreateBucketConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocationConstraint(value: BucketLocationConstraint): Self = this.set("LocationConstraint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationConstraint: Self = this.set("LocationConstraint", js.undefined)
+  }
+  
 }
 

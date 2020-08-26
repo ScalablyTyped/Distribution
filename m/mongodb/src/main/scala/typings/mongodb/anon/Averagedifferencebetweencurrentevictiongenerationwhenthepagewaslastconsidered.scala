@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered extends js.Object {
-  var `Average difference between current eviction generation when the page was last considered`: Double
-  var `Average on-disk page image size seen`: Double
-  var `Clean pages currently in cache`: Double
-  var `Current eviction generation`: Double
-  var `Dirty pages currently in cache`: Double
-  var `Entries in the root page`: Double
-  var `Internal pages currently in cache`: Double
-  var `Leaf pages currently in cache`: Double
-  var `Maximum difference between current eviction generation when the page was last considered`: Double
-  var `Maximum page size seen`: Double
-  var `Minimum on-disk page image size seen`: Double
-  var `On-disk page image sizes smaller than a single allocation unit`: Double
-  var `Pages created in memory and never written`: Double
-  var `Pages currently queued for eviction`: Double
-  var `Pages that could not be queued for eviction`: Double
-  var `Refs skipped during cache traversal`: Double
-  var `Size of the root page`: Double
-  var `Total number of pages currently in cache`: Double
+  var `Average difference between current eviction generation when the page was last considered`: Double = js.native
+  var `Average on-disk page image size seen`: Double = js.native
+  var `Clean pages currently in cache`: Double = js.native
+  var `Current eviction generation`: Double = js.native
+  var `Dirty pages currently in cache`: Double = js.native
+  var `Entries in the root page`: Double = js.native
+  var `Internal pages currently in cache`: Double = js.native
+  var `Leaf pages currently in cache`: Double = js.native
+  var `Maximum difference between current eviction generation when the page was last considered`: Double = js.native
+  var `Maximum page size seen`: Double = js.native
+  var `Minimum on-disk page image size seen`: Double = js.native
+  var `On-disk page image sizes smaller than a single allocation unit`: Double = js.native
+  var `Pages created in memory and never written`: Double = js.native
+  var `Pages currently queued for eviction`: Double = js.native
+  var `Pages that could not be queued for eviction`: Double = js.native
+  var `Refs skipped during cache traversal`: Double = js.native
+  var `Size of the root page`: Double = js.native
+  var `Total number of pages currently in cache`: Double = js.native
 }
 
 object Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered {
@@ -68,5 +69,54 @@ object Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsid
     __obj.updateDynamic("Total number of pages currently in cache")((`Total number of pages currently in cache`).asInstanceOf[js.Any])
     __obj.asInstanceOf[Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered]
   }
+  @scala.inline
+  implicit class AveragedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsideredOps[Self <: Averagedifferencebetweencurrentevictiongenerationwhenthepagewaslastconsidered] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setAverage difference between current eviction generation when the page was last considered`(value: Double): Self = this.set("Average difference between current eviction generation when the page was last considered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setAverage on-disk page image size seen`(value: Double): Self = this.set("Average on-disk page image size seen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setClean pages currently in cache`(value: Double): Self = this.set("Clean pages currently in cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setCurrent eviction generation`(value: Double): Self = this.set("Current eviction generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setDirty pages currently in cache`(value: Double): Self = this.set("Dirty pages currently in cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setEntries in the root page`(value: Double): Self = this.set("Entries in the root page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setInternal pages currently in cache`(value: Double): Self = this.set("Internal pages currently in cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setLeaf pages currently in cache`(value: Double): Self = this.set("Leaf pages currently in cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMaximum difference between current eviction generation when the page was last considered`(value: Double): Self = this.set("Maximum difference between current eviction generation when the page was last considered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMaximum page size seen`(value: Double): Self = this.set("Maximum page size seen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setMinimum on-disk page image size seen`(value: Double): Self = this.set("Minimum on-disk page image size seen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setOn-disk page image sizes smaller than a single allocation unit`(value: Double): Self = this.set("On-disk page image sizes smaller than a single allocation unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPages created in memory and never written`(value: Double): Self = this.set("Pages created in memory and never written", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPages currently queued for eviction`(value: Double): Self = this.set("Pages currently queued for eviction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setPages that could not be queued for eviction`(value: Double): Self = this.set("Pages that could not be queued for eviction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setRefs skipped during cache traversal`(value: Double): Self = this.set("Refs skipped during cache traversal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setSize of the root page`(value: Double): Self = this.set("Size of the root page", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setTotal number of pages currently in cache`(value: Double): Self = this.set("Total number of pages currently in cache", value.asInstanceOf[js.Any])
+  }
+  
 }
 

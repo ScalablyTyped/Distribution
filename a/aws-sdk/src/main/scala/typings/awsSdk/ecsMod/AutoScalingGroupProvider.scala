@@ -22,15 +22,32 @@ trait AutoScalingGroupProvider extends js.Object {
 
 object AutoScalingGroupProvider {
   @scala.inline
-  def apply(
-    autoScalingGroupArn: String,
-    managedScaling: ManagedScaling = null,
-    managedTerminationProtection: ManagedTerminationProtection = null
-  ): AutoScalingGroupProvider = {
+  def apply(autoScalingGroupArn: String): AutoScalingGroupProvider = {
     val __obj = js.Dynamic.literal(autoScalingGroupArn = autoScalingGroupArn.asInstanceOf[js.Any])
-    if (managedScaling != null) __obj.updateDynamic("managedScaling")(managedScaling.asInstanceOf[js.Any])
-    if (managedTerminationProtection != null) __obj.updateDynamic("managedTerminationProtection")(managedTerminationProtection.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupProvider]
   }
+  @scala.inline
+  implicit class AutoScalingGroupProviderOps[Self <: AutoScalingGroupProvider] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupArn(value: String): Self = this.set("autoScalingGroupArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setManagedScaling(value: ManagedScaling): Self = this.set("managedScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedScaling: Self = this.set("managedScaling", js.undefined)
+    @scala.inline
+    def setManagedTerminationProtection(value: ManagedTerminationProtection): Self = this.set("managedTerminationProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManagedTerminationProtection: Self = this.set("managedTerminationProtection", js.undefined)
+  }
+  
 }
 

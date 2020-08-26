@@ -14,6 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AccessibilityPropsAndroid extends js.Object {
   /**
     * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
@@ -22,14 +23,14 @@ trait AccessibilityPropsAndroid extends js.Object {
     * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
     * @platform android
     */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
   /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
     * Works for Android API >= 19 only.
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
     * @platform android
     */
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
   /**
     * Controls how view is important for accessibility which is if it fires accessibility events
     * and if it is reported to accessibility services that query the screen.
@@ -41,21 +42,39 @@ trait AccessibilityPropsAndroid extends js.Object {
     *      'no' - The view is not important for accessibility.
     *      'no-hide-descendants' - The view is not important for accessibility, nor are any of its descendant views.
     */
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
 }
 
 object AccessibilityPropsAndroid {
   @scala.inline
-  def apply(
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null
-  ): AccessibilityPropsAndroid = {
+  def apply(): AccessibilityPropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityPropsAndroid]
   }
+  @scala.inline
+  implicit class AccessibilityPropsAndroidOps[Self <: AccessibilityPropsAndroid] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = this.set("accessibilityComponentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityComponentType: Self = this.set("accessibilityComponentType", js.undefined)
+    @scala.inline
+    def setAccessibilityLiveRegion(value: none | polite | assertive): Self = this.set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLiveRegion: Self = this.set("accessibilityLiveRegion", js.undefined)
+    @scala.inline
+    def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = this.set("importantForAccessibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportantForAccessibility: Self = this.set("importantForAccessibility", js.undefined)
+  }
+  
 }
 

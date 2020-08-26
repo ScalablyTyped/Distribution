@@ -11,72 +11,123 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RateProps extends js.Object {
-  var allowClear: js.UndefOr[Boolean] = js.undefined
-  var allowHalf: js.UndefOr[Boolean] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var character: js.UndefOr[js.Function1[/* props */ StarProps, ReactNode]] = js.undefined
-  var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var count: js.UndefOr[Double] = js.undefined
-  var defaultValue: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onHoverChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  var allowClear: js.UndefOr[Boolean] = js.native
+  var allowHalf: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var character: js.UndefOr[js.Function1[/* props */ StarProps, ReactNode]] = js.native
+  var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var count: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHoverChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.native
 }
 
 object RateProps {
   @scala.inline
-  def apply(
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    allowHalf: js.UndefOr[Boolean] = js.undefined,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    character: /* props */ StarProps => ReactNode = null,
-    characterRender: (/* origin */ ReactElement, /* props */ StarProps) => ReactNode = null,
-    className: String = null,
-    count: js.UndefOr[Double] = js.undefined,
-    defaultValue: js.UndefOr[Double] = js.undefined,
-    direction: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onBlur: () => Unit = null,
-    onChange: /* value */ Double => Unit = null,
-    onFocus: () => Unit = null,
-    onHoverChange: /* value */ Double => Unit = null,
-    onKeyDown: KeyboardEvent[HTMLUListElement] => Unit = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    value: js.UndefOr[Double] = js.undefined
-  ): RateProps = {
+  def apply(): RateProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHalf)) __obj.updateDynamic("allowHalf")(allowHalf.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (character != null) __obj.updateDynamic("character")(js.Any.fromFunction1(character))
-    if (characterRender != null) __obj.updateDynamic("characterRender")(js.Any.fromFunction2(characterRender))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction0(onBlur))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction0(onFocus))
-    if (onHoverChange != null) __obj.updateDynamic("onHoverChange")(js.Any.fromFunction1(onHoverChange))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateProps]
   }
+  @scala.inline
+  implicit class RatePropsOps[Self <: RateProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowClear(value: Boolean): Self = this.set("allowClear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowClear: Self = this.set("allowClear", js.undefined)
+    @scala.inline
+    def setAllowHalf(value: Boolean): Self = this.set("allowHalf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowHalf: Self = this.set("allowHalf", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setCharacter(value: /* props */ StarProps => ReactNode): Self = this.set("character", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCharacter: Self = this.set("character", js.undefined)
+    @scala.inline
+    def setCharacterRender(value: (/* origin */ ReactElement, /* props */ StarProps) => ReactNode): Self = this.set("characterRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCharacterRender: Self = this.set("characterRender", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: Double): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDirection(value: String): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setOnBlur(value: () => Unit): Self = this.set("onBlur", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* value */ Double => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnFocus(value: () => Unit): Self = this.set("onFocus", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnHoverChange(value: /* value */ Double => Unit): Self = this.set("onHoverChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnHoverChange: Self = this.set("onHoverChange", js.undefined)
+    @scala.inline
+    def setOnKeyDown(value: KeyboardEvent[HTMLUListElement] => Unit): Self = this.set("onKeyDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnKeyDown: Self = this.set("onKeyDown", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setValue(value: Double): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

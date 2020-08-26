@@ -22,11 +22,30 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata extends js.
 
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata {
   @scala.inline
-  def apply(createTime: String = null, endTime: String = null): SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata = {
+  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata = {
     val __obj = js.Dynamic.literal()
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (endTime != null) __obj.updateDynamic("endTime")(endTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadataOps[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1OperationMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setEndTime(value: String): Self = this.set("endTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("endTime", js.undefined)
+  }
+  
 }
 

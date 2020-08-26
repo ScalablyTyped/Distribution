@@ -4,22 +4,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait QueryResultBatch extends js.Object {
   /** A cursor that points to the position after the last result in the batch. */
-  var endCursor: js.UndefOr[String] = js.undefined
+  var endCursor: js.UndefOr[String] = js.native
   /** The result type for every entity in `entity_results`. */
-  var entityResultType: js.UndefOr[String] = js.undefined
+  var entityResultType: js.UndefOr[String] = js.native
   /** The results for this batch. */
-  var entityResults: js.UndefOr[js.Array[EntityResult]] = js.undefined
+  var entityResults: js.UndefOr[js.Array[EntityResult]] = js.native
   /** The state of the query after the current batch. */
-  var moreResults: js.UndefOr[String] = js.undefined
+  var moreResults: js.UndefOr[String] = js.native
   /**
     * A cursor that points to the position after the last skipped result.
     * Will be set when `skipped_results` != 0.
     */
-  var skippedCursor: js.UndefOr[String] = js.undefined
+  var skippedCursor: js.UndefOr[String] = js.native
   /** The number of results skipped, typically because of an offset. */
-  var skippedResults: js.UndefOr[Double] = js.undefined
+  var skippedResults: js.UndefOr[Double] = js.native
   /**
     * The version number of the snapshot this batch was returned from.
     * This applies to the range of results from the query's `start_cursor` (or
@@ -31,29 +32,57 @@ trait QueryResultBatch extends js.Object {
     * is valid for all preceding batches.
     * The value will be zero for eventually consistent queries.
     */
-  var snapshotVersion: js.UndefOr[String] = js.undefined
+  var snapshotVersion: js.UndefOr[String] = js.native
 }
 
 object QueryResultBatch {
   @scala.inline
-  def apply(
-    endCursor: String = null,
-    entityResultType: String = null,
-    entityResults: js.Array[EntityResult] = null,
-    moreResults: String = null,
-    skippedCursor: String = null,
-    skippedResults: js.UndefOr[Double] = js.undefined,
-    snapshotVersion: String = null
-  ): QueryResultBatch = {
+  def apply(): QueryResultBatch = {
     val __obj = js.Dynamic.literal()
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
-    if (entityResultType != null) __obj.updateDynamic("entityResultType")(entityResultType.asInstanceOf[js.Any])
-    if (entityResults != null) __obj.updateDynamic("entityResults")(entityResults.asInstanceOf[js.Any])
-    if (moreResults != null) __obj.updateDynamic("moreResults")(moreResults.asInstanceOf[js.Any])
-    if (skippedCursor != null) __obj.updateDynamic("skippedCursor")(skippedCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(skippedResults)) __obj.updateDynamic("skippedResults")(skippedResults.get.asInstanceOf[js.Any])
-    if (snapshotVersion != null) __obj.updateDynamic("snapshotVersion")(snapshotVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResultBatch]
   }
+  @scala.inline
+  implicit class QueryResultBatchOps[Self <: QueryResultBatch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndCursor(value: String): Self = this.set("endCursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndCursor: Self = this.set("endCursor", js.undefined)
+    @scala.inline
+    def setEntityResultType(value: String): Self = this.set("entityResultType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityResultType: Self = this.set("entityResultType", js.undefined)
+    @scala.inline
+    def setEntityResultsVarargs(value: EntityResult*): Self = this.set("entityResults", js.Array(value :_*))
+    @scala.inline
+    def setEntityResults(value: js.Array[EntityResult]): Self = this.set("entityResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityResults: Self = this.set("entityResults", js.undefined)
+    @scala.inline
+    def setMoreResults(value: String): Self = this.set("moreResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoreResults: Self = this.set("moreResults", js.undefined)
+    @scala.inline
+    def setSkippedCursor(value: String): Self = this.set("skippedCursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippedCursor: Self = this.set("skippedCursor", js.undefined)
+    @scala.inline
+    def setSkippedResults(value: Double): Self = this.set("skippedResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippedResults: Self = this.set("skippedResults", js.undefined)
+    @scala.inline
+    def setSnapshotVersion(value: String): Self = this.set("snapshotVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotVersion: Self = this.set("snapshotVersion", js.undefined)
+  }
+  
 }
 

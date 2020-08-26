@@ -22,15 +22,32 @@ trait Task extends js.Object {
 
 object Task {
   @scala.inline
-  def apply(
-    Status: Status,
-    ProgressPercent: js.UndefOr[ProgressPercent] = js.undefined,
-    StatusDetail: StatusDetail = null
-  ): Task = {
+  def apply(Status: Status): Task = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent.get.asInstanceOf[js.Any])
-    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
+  @scala.inline
+  implicit class TaskOps[Self <: Task] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: Status): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProgressPercent(value: ProgressPercent): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: StatusDetail): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+  }
+  
 }
 

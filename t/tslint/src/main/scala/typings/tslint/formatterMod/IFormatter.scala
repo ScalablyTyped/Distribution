@@ -14,6 +14,7 @@ trait IFormatter extends js.Object {
     * @param fileNames All of the file paths that were linted
     */
   def format(failures: js.Array[RuleFailure]): String = js.native
+  def format(failures: js.Array[RuleFailure], fixes: js.UndefOr[scala.Nothing], fileNames: js.Array[String]): String = js.native
   def format(failures: js.Array[RuleFailure], fixes: js.Array[RuleFailure]): String = js.native
   def format(failures: js.Array[RuleFailure], fixes: js.Array[RuleFailure], fileNames: js.Array[String]): String = js.native
 }

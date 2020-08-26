@@ -57,28 +57,58 @@ trait SchemaDetail extends js.Object {
 
 object SchemaDetail {
   @scala.inline
-  def apply(
-    _package: String = null,
-    cpeUri: String = null,
-    description: String = null,
-    fixedLocation: SchemaVulnerabilityLocation = null,
-    isObsolete: js.UndefOr[Boolean] = js.undefined,
-    maxAffectedVersion: SchemaVersion = null,
-    minAffectedVersion: SchemaVersion = null,
-    packageType: String = null,
-    severityName: String = null
-  ): SchemaDetail = {
+  def apply(): SchemaDetail = {
     val __obj = js.Dynamic.literal()
-    if (_package != null) __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (cpeUri != null) __obj.updateDynamic("cpeUri")(cpeUri.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fixedLocation != null) __obj.updateDynamic("fixedLocation")(fixedLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(isObsolete)) __obj.updateDynamic("isObsolete")(isObsolete.get.asInstanceOf[js.Any])
-    if (maxAffectedVersion != null) __obj.updateDynamic("maxAffectedVersion")(maxAffectedVersion.asInstanceOf[js.Any])
-    if (minAffectedVersion != null) __obj.updateDynamic("minAffectedVersion")(minAffectedVersion.asInstanceOf[js.Any])
-    if (packageType != null) __obj.updateDynamic("packageType")(packageType.asInstanceOf[js.Any])
-    if (severityName != null) __obj.updateDynamic("severityName")(severityName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDetail]
   }
+  @scala.inline
+  implicit class SchemaDetailOps[Self <: SchemaDetail] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set_package(value: String): Self = this.set("package", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_package: Self = this.set("package", js.undefined)
+    @scala.inline
+    def setCpeUri(value: String): Self = this.set("cpeUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpeUri: Self = this.set("cpeUri", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setFixedLocation(value: SchemaVulnerabilityLocation): Self = this.set("fixedLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFixedLocation: Self = this.set("fixedLocation", js.undefined)
+    @scala.inline
+    def setIsObsolete(value: Boolean): Self = this.set("isObsolete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsObsolete: Self = this.set("isObsolete", js.undefined)
+    @scala.inline
+    def setMaxAffectedVersion(value: SchemaVersion): Self = this.set("maxAffectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAffectedVersion: Self = this.set("maxAffectedVersion", js.undefined)
+    @scala.inline
+    def setMinAffectedVersion(value: SchemaVersion): Self = this.set("minAffectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinAffectedVersion: Self = this.set("minAffectedVersion", js.undefined)
+    @scala.inline
+    def setPackageType(value: String): Self = this.set("packageType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageType: Self = this.set("packageType", js.undefined)
+    @scala.inline
+    def setSeverityName(value: String): Self = this.set("severityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityName: Self = this.set("severityName", js.undefined)
+  }
+  
 }
 

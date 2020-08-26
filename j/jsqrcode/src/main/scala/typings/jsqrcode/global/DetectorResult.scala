@@ -25,18 +25,5 @@ class DetectorResult protected ()
         typings.jsqrcode.DetectorResult
       ]
   ) = this()
-  /* CompleteClass */
-  override var bits: typings.jsqrcode.BitMatrix = js.native
-  /* CompleteClass */
-  override var points: (js.Tuple3[
-    typings.jsqrcode.DetectorResult, 
-    typings.jsqrcode.DetectorResult, 
-    typings.jsqrcode.DetectorResult
-  ]) | (js.Tuple4[
-    typings.jsqrcode.DetectorResult, 
-    typings.jsqrcode.DetectorResult, 
-    typings.jsqrcode.DetectorResult, 
-    typings.jsqrcode.DetectorResult
-  ]) = js.native
 }
 

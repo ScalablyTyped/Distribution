@@ -11,8 +11,8 @@ The lodash method `_.find` exported as a module.
 | Full name          | lodash.find |
 | Keywords           | lodash-modularized, find |
 | # releases         | 0 |
-| # dependents       | 341 |
-| # downloads        | 24741171 |
+| # dependents       | 345 |
+| # downloads        | 24875608 |
 | # stars            | 1 |
 
 ## Links

@@ -17,15 +17,5 @@ class ASPxClientRichEditContentInsertedEventArgs protected ()
     * @param interval An interval object that relates to the inserted content.
     */
   def this(subDocumentId: Double, interval: typings.devexpressWeb.Interval) = this()
-  /**
-    * Gets the text buffer interval related to the inserted content.
-    */
-  /* CompleteClass */
-  override var interval: typings.devexpressWeb.Interval = js.native
-  /**
-    * Gets the active sub-document's identifier.
-    */
-  /* CompleteClass */
-  override var subDocumentId: Double = js.native
 }
 

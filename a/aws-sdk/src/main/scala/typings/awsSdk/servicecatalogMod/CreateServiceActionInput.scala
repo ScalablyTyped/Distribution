@@ -38,14 +38,39 @@ object CreateServiceActionInput {
     Definition: ServiceActionDefinitionMap,
     DefinitionType: ServiceActionDefinitionType,
     IdempotencyToken: IdempotencyToken,
-    Name: ServiceActionName,
-    AcceptLanguage: AcceptLanguage = null,
-    Description: ServiceActionDescription = null
+    Name: ServiceActionName
   ): CreateServiceActionInput = {
     val __obj = js.Dynamic.literal(Definition = Definition.asInstanceOf[js.Any], DefinitionType = DefinitionType.asInstanceOf[js.Any], IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
-    if (AcceptLanguage != null) __obj.updateDynamic("AcceptLanguage")(AcceptLanguage.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateServiceActionInput]
   }
+  @scala.inline
+  implicit class CreateServiceActionInputOps[Self <: CreateServiceActionInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefinition(value: ServiceActionDefinitionMap): Self = this.set("Definition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefinitionType(value: ServiceActionDefinitionType): Self = this.set("DefinitionType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: ServiceActionName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAcceptLanguage(value: AcceptLanguage): Self = this.set("AcceptLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptLanguage: Self = this.set("AcceptLanguage", js.undefined)
+    @scala.inline
+    def setDescription(value: ServiceActionDescription): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

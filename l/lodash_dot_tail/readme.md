@@ -11,8 +11,8 @@ The lodash method `_.tail` exported as a module.
 | Full name          | lodash.tail |
 | Keywords           | lodash-modularized, tail |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 140957625 |
+| # dependents       | 25 |
+| # downloads        | 140654591 |
 | # stars            | 0 |
 
 ## Links

@@ -10,9 +10,9 @@ Adapters for handling storage of the File type
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/file-adapters |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 954 |
+| # downloads        | 1860 |
 | # stars            | 0 |
 
 ## Links

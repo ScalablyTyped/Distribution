@@ -102,6 +102,7 @@ object Draw extends js.Object {
     * @api
     */
   def createRegularPolygon(): DrawGeometryFunctionType = js.native
+  def createRegularPolygon(opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): DrawGeometryFunctionType = js.native
   def createRegularPolygon(opt_sides: Double): DrawGeometryFunctionType = js.native
   def createRegularPolygon(opt_sides: Double, opt_angle: Double): DrawGeometryFunctionType = js.native
 }

@@ -36,6 +36,7 @@ class ResourceData protected () extends js.Object {
     */
   def get(): GaxiosPromise[Unit] = js.native
   def get(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def get(params: ParamsResourceDataGet): GaxiosPromise[Unit] = js.native
   def get(params: ParamsResourceDataGet, callback: BodyResponseCallback[Unit]): Unit = js.native
   def get(

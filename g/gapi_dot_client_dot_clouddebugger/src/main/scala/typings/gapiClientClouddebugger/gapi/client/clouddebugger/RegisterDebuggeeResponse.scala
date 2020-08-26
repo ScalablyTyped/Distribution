@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RegisterDebuggeeResponse extends js.Object {
   /**
     * Debuggee resource.
@@ -12,15 +13,31 @@ trait RegisterDebuggeeResponse extends js.Object {
     * itself by removing all breakpoints and detaching from the application.
     * It should however continue to poll `RegisterDebuggee` until reenabled.
     */
-  var debuggee: js.UndefOr[Debuggee] = js.undefined
+  var debuggee: js.UndefOr[Debuggee] = js.native
 }
 
 object RegisterDebuggeeResponse {
   @scala.inline
-  def apply(debuggee: Debuggee = null): RegisterDebuggeeResponse = {
+  def apply(): RegisterDebuggeeResponse = {
     val __obj = js.Dynamic.literal()
-    if (debuggee != null) __obj.updateDynamic("debuggee")(debuggee.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterDebuggeeResponse]
   }
+  @scala.inline
+  implicit class RegisterDebuggeeResponseOps[Self <: RegisterDebuggeeResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebuggee(value: Debuggee): Self = this.set("debuggee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebuggee: Self = this.set("debuggee", js.undefined)
+  }
+  
 }
 

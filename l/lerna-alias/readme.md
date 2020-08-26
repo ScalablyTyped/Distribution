@@ -12,7 +12,7 @@ Get aliases for your lerna packages for the other tools
 | Keywords           | lerna, monorepo, alias, webpack, rollup, jest |
 | # releases         | 3 |
 | # dependents       | 1 |
-| # downloads        | 36125 |
+| # downloads        | 40061 |
 | # stars            | 0 |
 
 ## Links

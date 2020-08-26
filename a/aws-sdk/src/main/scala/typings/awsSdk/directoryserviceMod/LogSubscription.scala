@@ -22,16 +22,34 @@ trait LogSubscription extends js.Object {
 
 object LogSubscription {
   @scala.inline
-  def apply(
-    DirectoryId: DirectoryId = null,
-    LogGroupName: LogGroupName = null,
-    SubscriptionCreatedDateTime: SubscriptionCreatedDateTime = null
-  ): LogSubscription = {
+  def apply(): LogSubscription = {
     val __obj = js.Dynamic.literal()
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
-    if (SubscriptionCreatedDateTime != null) __obj.updateDynamic("SubscriptionCreatedDateTime")(SubscriptionCreatedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogSubscription]
   }
+  @scala.inline
+  implicit class LogSubscriptionOps[Self <: LogSubscription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: LogGroupName): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    @scala.inline
+    def setSubscriptionCreatedDateTime(value: SubscriptionCreatedDateTime): Self = this.set("SubscriptionCreatedDateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionCreatedDateTime: Self = this.set("SubscriptionCreatedDateTime", js.undefined)
+  }
+  
 }
 

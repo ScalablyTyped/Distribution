@@ -12,7 +12,7 @@ A stand-alone, Redux compatible implementation of combine reducers
 | Keywords           | Redux, flux, combineReducers |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 10653 |
+| # downloads        | 11951 |
 | # stars            | 0 |
 
 ## Links

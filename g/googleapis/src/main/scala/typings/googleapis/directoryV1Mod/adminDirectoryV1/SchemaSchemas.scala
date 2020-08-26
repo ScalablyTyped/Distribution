@@ -25,12 +25,36 @@ trait SchemaSchemas extends js.Object {
 
 object SchemaSchemas {
   @scala.inline
-  def apply(etag: String = null, kind: String = null, schemas: js.Array[SchemaSchema] = null): SchemaSchemas = {
+  def apply(): SchemaSchemas = {
     val __obj = js.Dynamic.literal()
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (schemas != null) __obj.updateDynamic("schemas")(schemas.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSchemas]
   }
+  @scala.inline
+  implicit class SchemaSchemasOps[Self <: SchemaSchemas] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEtag(value: String): Self = this.set("etag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEtag: Self = this.set("etag", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setSchemasVarargs(value: SchemaSchema*): Self = this.set("schemas", js.Array(value :_*))
+    @scala.inline
+    def setSchemas(value: js.Array[SchemaSchema]): Self = this.set("schemas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemas: Self = this.set("schemas", js.undefined)
+  }
+  
 }
 

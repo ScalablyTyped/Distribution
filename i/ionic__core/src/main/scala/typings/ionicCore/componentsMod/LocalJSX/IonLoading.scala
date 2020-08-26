@@ -12,111 +12,160 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IonLoading extends js.Object {
   /**
     * If `true`, the loading indicator will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.undefined
+  var animated: js.UndefOr[Boolean] = js.native
   /**
     * If `true`, the loading indicator will be dismissed when the backdrop is clicked.
     */
-  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
+  var backdropDismiss: js.UndefOr[Boolean] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
   /**
     * Number of milliseconds to wait before dismissing the loading indicator.
     */
-  var duration: js.UndefOr[Double] = js.undefined
+  var duration: js.UndefOr[Double] = js.native
   /**
     * Animation to use when the loading indicator is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.undefined
+  var keyboardClose: js.UndefOr[Boolean] = js.native
   /**
     * Animation to use when the loading indicator is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
   /**
     * Optional text content to display in the loading indicator.
     */
-  var message: js.UndefOr[String | IonicSafeString] = js.undefined
+  var message: js.UndefOr[String | IonicSafeString] = js.native
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.undefined
+  var mode: js.UndefOr[ios | md] = js.native
   /**
     * Emitted after the loading has dismissed.
     */
-  var onIonLoadingDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
+  var onIonLoadingDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
   /**
     * Emitted after the loading has presented.
     */
-  var onIonLoadingDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonLoadingDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * Emitted before the loading has dismissed.
     */
-  var onIonLoadingWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.undefined
+  var onIonLoadingWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
   /**
     * Emitted before the loading has presented.
     */
-  var onIonLoadingWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
+  var onIonLoadingWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
   /**
     * If `true`, a backdrop will be displayed behind the loading indicator.
     */
-  var showBackdrop: js.UndefOr[Boolean] = js.undefined
+  var showBackdrop: js.UndefOr[Boolean] = js.native
   /**
     * The name of the spinner to display.
     */
-  var spinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
+  var spinner: js.UndefOr[SpinnerTypes | Null] = js.native
   /**
     * If `true`, the loading indicator will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
-  var translucent: js.UndefOr[Boolean] = js.undefined
+  var translucent: js.UndefOr[Boolean] = js.native
 }
 
 object IonLoading {
   @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    backdropDismiss: js.UndefOr[Boolean] = js.undefined,
-    cssClass: String | js.Array[String] = null,
-    duration: js.UndefOr[Double] = js.undefined,
-    enterAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    keyboardClose: js.UndefOr[Boolean] = js.undefined,
-    leaveAnimation: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation = null,
-    message: String | IonicSafeString = null,
-    mode: ios | md = null,
-    onIonLoadingDidDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
-    onIonLoadingDidPresent: /* event */ CustomEvent[Unit] => Unit = null,
-    onIonLoadingWillDismiss: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit = null,
-    onIonLoadingWillPresent: /* event */ CustomEvent[Unit] => Unit = null,
-    showBackdrop: js.UndefOr[Boolean] = js.undefined,
-    spinner: js.UndefOr[Null | SpinnerTypes] = js.undefined,
-    translucent: js.UndefOr[Boolean] = js.undefined
-  ): IonLoading = {
+  def apply(): IonLoading = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdropDismiss)) __obj.updateDynamic("backdropDismiss")(backdropDismiss.get.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(js.Any.fromFunction2(enterAnimation))
-    if (!js.isUndefined(keyboardClose)) __obj.updateDynamic("keyboardClose")(keyboardClose.get.asInstanceOf[js.Any])
-    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(js.Any.fromFunction2(leaveAnimation))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (onIonLoadingDidDismiss != null) __obj.updateDynamic("onIonLoadingDidDismiss")(js.Any.fromFunction1(onIonLoadingDidDismiss))
-    if (onIonLoadingDidPresent != null) __obj.updateDynamic("onIonLoadingDidPresent")(js.Any.fromFunction1(onIonLoadingDidPresent))
-    if (onIonLoadingWillDismiss != null) __obj.updateDynamic("onIonLoadingWillDismiss")(js.Any.fromFunction1(onIonLoadingWillDismiss))
-    if (onIonLoadingWillPresent != null) __obj.updateDynamic("onIonLoadingWillPresent")(js.Any.fromFunction1(onIonLoadingWillPresent))
-    if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinner)) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonLoading]
   }
+  @scala.inline
+  implicit class IonLoadingOps[Self <: IonLoading] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimated(value: Boolean): Self = this.set("animated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimated: Self = this.set("animated", js.undefined)
+    @scala.inline
+    def setBackdropDismiss(value: Boolean): Self = this.set("backdropDismiss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackdropDismiss: Self = this.set("backdropDismiss", js.undefined)
+    @scala.inline
+    def setCssClassVarargs(value: String*): Self = this.set("cssClass", js.Array(value :_*))
+    @scala.inline
+    def setCssClass(value: String | js.Array[String]): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDuration(value: Double): Self = this.set("duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("duration", js.undefined)
+    @scala.inline
+    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("enterAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEnterAnimation: Self = this.set("enterAnimation", js.undefined)
+    @scala.inline
+    def setKeyboardClose(value: Boolean): Self = this.set("keyboardClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboardClose: Self = this.set("keyboardClose", js.undefined)
+    @scala.inline
+    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = this.set("leaveAnimation", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteLeaveAnimation: Self = this.set("leaveAnimation", js.undefined)
+    @scala.inline
+    def setMessage(value: String | IonicSafeString): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setMode(value: ios | md): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setOnIonLoadingDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onIonLoadingDidDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonLoadingDidDismiss: Self = this.set("onIonLoadingDidDismiss", js.undefined)
+    @scala.inline
+    def setOnIonLoadingDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonLoadingDidPresent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonLoadingDidPresent: Self = this.set("onIonLoadingDidPresent", js.undefined)
+    @scala.inline
+    def setOnIonLoadingWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = this.set("onIonLoadingWillDismiss", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonLoadingWillDismiss: Self = this.set("onIonLoadingWillDismiss", js.undefined)
+    @scala.inline
+    def setOnIonLoadingWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = this.set("onIonLoadingWillPresent", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnIonLoadingWillPresent: Self = this.set("onIonLoadingWillPresent", js.undefined)
+    @scala.inline
+    def setShowBackdrop(value: Boolean): Self = this.set("showBackdrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowBackdrop: Self = this.set("showBackdrop", js.undefined)
+    @scala.inline
+    def setSpinner(value: SpinnerTypes): Self = this.set("spinner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpinner: Self = this.set("spinner", js.undefined)
+    @scala.inline
+    def setSpinnerNull: Self = this.set("spinner", null)
+    @scala.inline
+    def setTranslucent(value: Boolean): Self = this.set("translucent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslucent: Self = this.set("translucent", js.undefined)
+  }
+  
 }
 

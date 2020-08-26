@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/widget", "Widget.attach")
+@JSImport("@lumino/widgets/types/widget", "Widget.attach")
 @js.native
 object attach extends js.Object {
   /**

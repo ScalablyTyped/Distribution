@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-uid" : "2.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-uid" : "2.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

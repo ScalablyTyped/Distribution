@@ -211,44 +211,94 @@ trait SchemaGoogleCloudMlV1TrainingInput extends js.Object {
 
 object SchemaGoogleCloudMlV1TrainingInput {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    hyperparameters: SchemaGoogleCloudMlV1HyperparameterSpec = null,
-    jobDir: String = null,
-    masterConfig: SchemaGoogleCloudMlV1ReplicaConfig = null,
-    masterType: String = null,
-    packageUris: js.Array[String] = null,
-    parameterServerConfig: SchemaGoogleCloudMlV1ReplicaConfig = null,
-    parameterServerCount: String = null,
-    parameterServerType: String = null,
-    pythonModule: String = null,
-    pythonVersion: String = null,
-    region: String = null,
-    runtimeVersion: String = null,
-    scaleTier: String = null,
-    workerConfig: SchemaGoogleCloudMlV1ReplicaConfig = null,
-    workerCount: String = null,
-    workerType: String = null
-  ): SchemaGoogleCloudMlV1TrainingInput = {
+  def apply(): SchemaGoogleCloudMlV1TrainingInput = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (hyperparameters != null) __obj.updateDynamic("hyperparameters")(hyperparameters.asInstanceOf[js.Any])
-    if (jobDir != null) __obj.updateDynamic("jobDir")(jobDir.asInstanceOf[js.Any])
-    if (masterConfig != null) __obj.updateDynamic("masterConfig")(masterConfig.asInstanceOf[js.Any])
-    if (masterType != null) __obj.updateDynamic("masterType")(masterType.asInstanceOf[js.Any])
-    if (packageUris != null) __obj.updateDynamic("packageUris")(packageUris.asInstanceOf[js.Any])
-    if (parameterServerConfig != null) __obj.updateDynamic("parameterServerConfig")(parameterServerConfig.asInstanceOf[js.Any])
-    if (parameterServerCount != null) __obj.updateDynamic("parameterServerCount")(parameterServerCount.asInstanceOf[js.Any])
-    if (parameterServerType != null) __obj.updateDynamic("parameterServerType")(parameterServerType.asInstanceOf[js.Any])
-    if (pythonModule != null) __obj.updateDynamic("pythonModule")(pythonModule.asInstanceOf[js.Any])
-    if (pythonVersion != null) __obj.updateDynamic("pythonVersion")(pythonVersion.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion.asInstanceOf[js.Any])
-    if (scaleTier != null) __obj.updateDynamic("scaleTier")(scaleTier.asInstanceOf[js.Any])
-    if (workerConfig != null) __obj.updateDynamic("workerConfig")(workerConfig.asInstanceOf[js.Any])
-    if (workerCount != null) __obj.updateDynamic("workerCount")(workerCount.asInstanceOf[js.Any])
-    if (workerType != null) __obj.updateDynamic("workerType")(workerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudMlV1TrainingInput]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudMlV1TrainingInputOps[Self <: SchemaGoogleCloudMlV1TrainingInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setHyperparameters(value: SchemaGoogleCloudMlV1HyperparameterSpec): Self = this.set("hyperparameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHyperparameters: Self = this.set("hyperparameters", js.undefined)
+    @scala.inline
+    def setJobDir(value: String): Self = this.set("jobDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobDir: Self = this.set("jobDir", js.undefined)
+    @scala.inline
+    def setMasterConfig(value: SchemaGoogleCloudMlV1ReplicaConfig): Self = this.set("masterConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterConfig: Self = this.set("masterConfig", js.undefined)
+    @scala.inline
+    def setMasterType(value: String): Self = this.set("masterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterType: Self = this.set("masterType", js.undefined)
+    @scala.inline
+    def setPackageUrisVarargs(value: String*): Self = this.set("packageUris", js.Array(value :_*))
+    @scala.inline
+    def setPackageUris(value: js.Array[String]): Self = this.set("packageUris", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackageUris: Self = this.set("packageUris", js.undefined)
+    @scala.inline
+    def setParameterServerConfig(value: SchemaGoogleCloudMlV1ReplicaConfig): Self = this.set("parameterServerConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterServerConfig: Self = this.set("parameterServerConfig", js.undefined)
+    @scala.inline
+    def setParameterServerCount(value: String): Self = this.set("parameterServerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterServerCount: Self = this.set("parameterServerCount", js.undefined)
+    @scala.inline
+    def setParameterServerType(value: String): Self = this.set("parameterServerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterServerType: Self = this.set("parameterServerType", js.undefined)
+    @scala.inline
+    def setPythonModule(value: String): Self = this.set("pythonModule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonModule: Self = this.set("pythonModule", js.undefined)
+    @scala.inline
+    def setPythonVersion(value: String): Self = this.set("pythonVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePythonVersion: Self = this.set("pythonVersion", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setRuntimeVersion(value: String): Self = this.set("runtimeVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuntimeVersion: Self = this.set("runtimeVersion", js.undefined)
+    @scala.inline
+    def setScaleTier(value: String): Self = this.set("scaleTier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleTier: Self = this.set("scaleTier", js.undefined)
+    @scala.inline
+    def setWorkerConfig(value: SchemaGoogleCloudMlV1ReplicaConfig): Self = this.set("workerConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerConfig: Self = this.set("workerConfig", js.undefined)
+    @scala.inline
+    def setWorkerCount(value: String): Self = this.set("workerCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerCount: Self = this.set("workerCount", js.undefined)
+    @scala.inline
+    def setWorkerType(value: String): Self = this.set("workerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerType: Self = this.set("workerType", js.undefined)
+  }
+  
 }
 

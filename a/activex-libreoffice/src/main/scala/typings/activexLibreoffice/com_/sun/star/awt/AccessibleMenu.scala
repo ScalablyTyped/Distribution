@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   * specifies accessibility support for a menu.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleMenu
   extends XAccessibleExtendedComponent
      with XAccessibleContext

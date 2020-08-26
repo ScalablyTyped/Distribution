@@ -41,24 +41,50 @@ trait StandardParameters extends js.Object {
 
 object StandardParameters {
   @scala.inline
-  def apply(
-    alt: String = null,
-    fields: String = null,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    userIp: String = null
-  ): StandardParameters = {
+  def apply(): StandardParameters = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[StandardParameters]
   }
+  @scala.inline
+  implicit class StandardParametersOps[Self <: StandardParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    @scala.inline
+    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    @scala.inline
+    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    @scala.inline
+    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIp: Self = this.set("userIp", js.undefined)
+  }
+  
 }
 

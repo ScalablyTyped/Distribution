@@ -46,25 +46,52 @@ trait UpdateJobExecutionRequest extends js.Object {
 
 object UpdateJobExecutionRequest {
   @scala.inline
-  def apply(
-    jobId: JobId,
-    status: JobExecutionStatus,
-    thingName: ThingName,
-    executionNumber: js.UndefOr[ExecutionNumber] = js.undefined,
-    expectedVersion: js.UndefOr[ExpectedVersion] = js.undefined,
-    includeJobDocument: js.UndefOr[IncludeJobDocument] = js.undefined,
-    includeJobExecutionState: js.UndefOr[IncludeExecutionState] = js.undefined,
-    statusDetails: DetailsMap = null,
-    stepTimeoutInMinutes: js.UndefOr[StepTimeoutInMinutes] = js.undefined
-  ): UpdateJobExecutionRequest = {
+  def apply(jobId: JobId, status: JobExecutionStatus, thingName: ThingName): UpdateJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
-    if (!js.isUndefined(executionNumber)) __obj.updateDynamic("executionNumber")(executionNumber.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(expectedVersion)) __obj.updateDynamic("expectedVersion")(expectedVersion.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeJobDocument)) __obj.updateDynamic("includeJobDocument")(includeJobDocument.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeJobExecutionState)) __obj.updateDynamic("includeJobExecutionState")(includeJobExecutionState.get.asInstanceOf[js.Any])
-    if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails.asInstanceOf[js.Any])
-    if (!js.isUndefined(stepTimeoutInMinutes)) __obj.updateDynamic("stepTimeoutInMinutes")(stepTimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobExecutionRequest]
   }
+  @scala.inline
+  implicit class UpdateJobExecutionRequestOps[Self <: UpdateJobExecutionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: JobExecutionStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExecutionNumber(value: ExecutionNumber): Self = this.set("executionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionNumber: Self = this.set("executionNumber", js.undefined)
+    @scala.inline
+    def setExpectedVersion(value: ExpectedVersion): Self = this.set("expectedVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpectedVersion: Self = this.set("expectedVersion", js.undefined)
+    @scala.inline
+    def setIncludeJobDocument(value: IncludeJobDocument): Self = this.set("includeJobDocument", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeJobDocument: Self = this.set("includeJobDocument", js.undefined)
+    @scala.inline
+    def setIncludeJobExecutionState(value: IncludeExecutionState): Self = this.set("includeJobExecutionState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeJobExecutionState: Self = this.set("includeJobExecutionState", js.undefined)
+    @scala.inline
+    def setStatusDetails(value: DetailsMap): Self = this.set("statusDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetails: Self = this.set("statusDetails", js.undefined)
+    @scala.inline
+    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = this.set("stepTimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepTimeoutInMinutes: Self = this.set("stepTimeoutInMinutes", js.undefined)
+  }
+  
 }
 

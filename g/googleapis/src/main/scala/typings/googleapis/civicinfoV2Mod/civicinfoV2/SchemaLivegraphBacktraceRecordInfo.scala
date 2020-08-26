@@ -26,42 +26,86 @@ trait SchemaLivegraphBacktraceRecordInfo extends js.Object {
 
 object SchemaLivegraphBacktraceRecordInfo {
   @scala.inline
-  def apply(
-    dataSourcePublishMsec: String = null,
-    expId: String = null,
-    expInfo: SchemaLivegraphBacktraceRecordInfoExpInfo = null,
-    isRecon: js.UndefOr[Boolean] = js.undefined,
-    isWlmThrottled: js.UndefOr[Boolean] = js.undefined,
-    numberOfTriples: String = null,
-    priority: String = null,
-    process: String = null,
-    proxyReceiveMsec: String = null,
-    proxySentMsec: String = null,
-    recordId: String = null,
-    shouldMonitorLatency: js.UndefOr[Boolean] = js.undefined,
-    subscriberReceiveMsec: String = null,
-    topicBuildFinishMsec: String = null,
-    topicBuildStartMsec: String = null,
-    version: String = null
-  ): SchemaLivegraphBacktraceRecordInfo = {
+  def apply(): SchemaLivegraphBacktraceRecordInfo = {
     val __obj = js.Dynamic.literal()
-    if (dataSourcePublishMsec != null) __obj.updateDynamic("dataSourcePublishMsec")(dataSourcePublishMsec.asInstanceOf[js.Any])
-    if (expId != null) __obj.updateDynamic("expId")(expId.asInstanceOf[js.Any])
-    if (expInfo != null) __obj.updateDynamic("expInfo")(expInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRecon)) __obj.updateDynamic("isRecon")(isRecon.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWlmThrottled)) __obj.updateDynamic("isWlmThrottled")(isWlmThrottled.get.asInstanceOf[js.Any])
-    if (numberOfTriples != null) __obj.updateDynamic("numberOfTriples")(numberOfTriples.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (proxyReceiveMsec != null) __obj.updateDynamic("proxyReceiveMsec")(proxyReceiveMsec.asInstanceOf[js.Any])
-    if (proxySentMsec != null) __obj.updateDynamic("proxySentMsec")(proxySentMsec.asInstanceOf[js.Any])
-    if (recordId != null) __obj.updateDynamic("recordId")(recordId.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldMonitorLatency)) __obj.updateDynamic("shouldMonitorLatency")(shouldMonitorLatency.get.asInstanceOf[js.Any])
-    if (subscriberReceiveMsec != null) __obj.updateDynamic("subscriberReceiveMsec")(subscriberReceiveMsec.asInstanceOf[js.Any])
-    if (topicBuildFinishMsec != null) __obj.updateDynamic("topicBuildFinishMsec")(topicBuildFinishMsec.asInstanceOf[js.Any])
-    if (topicBuildStartMsec != null) __obj.updateDynamic("topicBuildStartMsec")(topicBuildStartMsec.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLivegraphBacktraceRecordInfo]
   }
+  @scala.inline
+  implicit class SchemaLivegraphBacktraceRecordInfoOps[Self <: SchemaLivegraphBacktraceRecordInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourcePublishMsec(value: String): Self = this.set("dataSourcePublishMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourcePublishMsec: Self = this.set("dataSourcePublishMsec", js.undefined)
+    @scala.inline
+    def setExpId(value: String): Self = this.set("expId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpId: Self = this.set("expId", js.undefined)
+    @scala.inline
+    def setExpInfo(value: SchemaLivegraphBacktraceRecordInfoExpInfo): Self = this.set("expInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpInfo: Self = this.set("expInfo", js.undefined)
+    @scala.inline
+    def setIsRecon(value: Boolean): Self = this.set("isRecon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsRecon: Self = this.set("isRecon", js.undefined)
+    @scala.inline
+    def setIsWlmThrottled(value: Boolean): Self = this.set("isWlmThrottled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsWlmThrottled: Self = this.set("isWlmThrottled", js.undefined)
+    @scala.inline
+    def setNumberOfTriples(value: String): Self = this.set("numberOfTriples", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfTriples: Self = this.set("numberOfTriples", js.undefined)
+    @scala.inline
+    def setPriority(value: String): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setProcess(value: String): Self = this.set("process", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcess: Self = this.set("process", js.undefined)
+    @scala.inline
+    def setProxyReceiveMsec(value: String): Self = this.set("proxyReceiveMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyReceiveMsec: Self = this.set("proxyReceiveMsec", js.undefined)
+    @scala.inline
+    def setProxySentMsec(value: String): Self = this.set("proxySentMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxySentMsec: Self = this.set("proxySentMsec", js.undefined)
+    @scala.inline
+    def setRecordId(value: String): Self = this.set("recordId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordId: Self = this.set("recordId", js.undefined)
+    @scala.inline
+    def setShouldMonitorLatency(value: Boolean): Self = this.set("shouldMonitorLatency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldMonitorLatency: Self = this.set("shouldMonitorLatency", js.undefined)
+    @scala.inline
+    def setSubscriberReceiveMsec(value: String): Self = this.set("subscriberReceiveMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriberReceiveMsec: Self = this.set("subscriberReceiveMsec", js.undefined)
+    @scala.inline
+    def setTopicBuildFinishMsec(value: String): Self = this.set("topicBuildFinishMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicBuildFinishMsec: Self = this.set("topicBuildFinishMsec", js.undefined)
+    @scala.inline
+    def setTopicBuildStartMsec(value: String): Self = this.set("topicBuildStartMsec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicBuildStartMsec: Self = this.set("topicBuildStartMsec", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

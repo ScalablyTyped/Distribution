@@ -26,18 +26,38 @@ trait ConditionalSplitActivity extends js.Object {
 
 object ConditionalSplitActivity {
   @scala.inline
-  def apply(
-    Condition: Condition = null,
-    EvaluationWaitTime: WaitTime = null,
-    FalseActivity: string = null,
-    TrueActivity: string = null
-  ): ConditionalSplitActivity = {
+  def apply(): ConditionalSplitActivity = {
     val __obj = js.Dynamic.literal()
-    if (Condition != null) __obj.updateDynamic("Condition")(Condition.asInstanceOf[js.Any])
-    if (EvaluationWaitTime != null) __obj.updateDynamic("EvaluationWaitTime")(EvaluationWaitTime.asInstanceOf[js.Any])
-    if (FalseActivity != null) __obj.updateDynamic("FalseActivity")(FalseActivity.asInstanceOf[js.Any])
-    if (TrueActivity != null) __obj.updateDynamic("TrueActivity")(TrueActivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalSplitActivity]
   }
+  @scala.inline
+  implicit class ConditionalSplitActivityOps[Self <: ConditionalSplitActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCondition(value: Condition): Self = this.set("Condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("Condition", js.undefined)
+    @scala.inline
+    def setEvaluationWaitTime(value: WaitTime): Self = this.set("EvaluationWaitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationWaitTime: Self = this.set("EvaluationWaitTime", js.undefined)
+    @scala.inline
+    def setFalseActivity(value: string): Self = this.set("FalseActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFalseActivity: Self = this.set("FalseActivity", js.undefined)
+    @scala.inline
+    def setTrueActivity(value: string): Self = this.set("TrueActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrueActivity: Self = this.set("TrueActivity", js.undefined)
+  }
+  
 }
 

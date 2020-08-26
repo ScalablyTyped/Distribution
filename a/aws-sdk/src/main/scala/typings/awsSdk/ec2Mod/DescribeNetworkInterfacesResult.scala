@@ -18,11 +18,32 @@ trait DescribeNetworkInterfacesResult extends js.Object {
 
 object DescribeNetworkInterfacesResult {
   @scala.inline
-  def apply(NetworkInterfaces: NetworkInterfaceList = null, NextToken: String = null): DescribeNetworkInterfacesResult = {
+  def apply(): DescribeNetworkInterfacesResult = {
     val __obj = js.Dynamic.literal()
-    if (NetworkInterfaces != null) __obj.updateDynamic("NetworkInterfaces")(NetworkInterfaces.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeNetworkInterfacesResult]
   }
+  @scala.inline
+  implicit class DescribeNetworkInterfacesResultOps[Self <: DescribeNetworkInterfacesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = this.set("NetworkInterfaces", js.Array(value :_*))
+    @scala.inline
+    def setNetworkInterfaces(value: NetworkInterfaceList): Self = this.set("NetworkInterfaces", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaces: Self = this.set("NetworkInterfaces", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

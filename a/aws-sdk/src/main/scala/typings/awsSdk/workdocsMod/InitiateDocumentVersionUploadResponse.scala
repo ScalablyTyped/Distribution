@@ -18,11 +18,30 @@ trait InitiateDocumentVersionUploadResponse extends js.Object {
 
 object InitiateDocumentVersionUploadResponse {
   @scala.inline
-  def apply(Metadata: DocumentMetadata = null, UploadMetadata: UploadMetadata = null): InitiateDocumentVersionUploadResponse = {
+  def apply(): InitiateDocumentVersionUploadResponse = {
     val __obj = js.Dynamic.literal()
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (UploadMetadata != null) __obj.updateDynamic("UploadMetadata")(UploadMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitiateDocumentVersionUploadResponse]
   }
+  @scala.inline
+  implicit class InitiateDocumentVersionUploadResponseOps[Self <: InitiateDocumentVersionUploadResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetadata(value: DocumentMetadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    @scala.inline
+    def setUploadMetadata(value: UploadMetadata): Self = this.set("UploadMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadMetadata: Self = this.set("UploadMetadata", js.undefined)
+  }
+  
 }
 

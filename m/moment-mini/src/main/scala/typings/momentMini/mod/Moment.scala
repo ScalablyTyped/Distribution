@@ -20,16 +20,16 @@ trait Moment
      with _LocaleSpecifier
      with _MomentInput {
   def add(): Moment = js.native
+  def add(amount: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Moment = js.native
   def add(amount: DurationInputArg1): Moment = js.native
-  def add(amount: DurationInputArg1, unit: DurationInputArg2): Moment = js.native
   def add(unit: DurationConstructor, amount: String): Moment = js.native
   /**
     * @deprecated reverse syntax
     */
   def add(unit: DurationConstructor, amount: Double): Moment = js.native
   def calendar(): String = js.native
+  def calendar(time: js.UndefOr[MomentInput], formats: CalendarSpec): String = js.native
   def calendar(time: MomentInput): String = js.native
-  def calendar(time: MomentInput, formats: CalendarSpec): String = js.native
   def creationData(): MomentCreationData = js.native
   def date(): Double = js.native
   def date(d: Double): Moment = js.native
@@ -51,6 +51,7 @@ trait Moment
   def days(d: Double): Moment = js.native
   def daysInMonth(): Double = js.native
   def diff(b: MomentInput): Double = js.native
+  def diff(b: MomentInput, unitOfTime: js.UndefOr[scala.Nothing], precise: Boolean): Double = js.native
   def diff(b: MomentInput, unitOfTime: Diff): Double = js.native
   def diff(b: MomentInput, unitOfTime: Diff, precise: Boolean): Double = js.native
   def endOf(unitOfTime: StartOf): Moment = js.native
@@ -70,12 +71,31 @@ trait Moment
   def inspect(): String = js.native
   def invalidAt(): Double = js.native
   def isAfter(): Boolean = js.native
+  def isAfter(inp: js.UndefOr[MomentInput], granularity: StartOf): Boolean = js.native
   def isAfter(inp: MomentInput): Boolean = js.native
-  def isAfter(inp: MomentInput, granularity: StartOf): Boolean = js.native
   def isBefore(): Boolean = js.native
+  def isBefore(inp: js.UndefOr[MomentInput], granularity: StartOf): Boolean = js.native
   def isBefore(inp: MomentInput): Boolean = js.native
-  def isBefore(inp: MomentInput, granularity: StartOf): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput): Boolean = js.native
+  def isBetween(
+    a: MomentInput,
+    b: MomentInput,
+    granularity: js.UndefOr[scala.Nothing],
+    inclusivity: LeftparenthesisRightparenthesis
+  ): Boolean = js.native
+  def isBetween(
+    a: MomentInput,
+    b: MomentInput,
+    granularity: js.UndefOr[scala.Nothing],
+    inclusivity: `Leftparenthesis]`
+  ): Boolean = js.native
+  def isBetween(
+    a: MomentInput,
+    b: MomentInput,
+    granularity: js.UndefOr[scala.Nothing],
+    inclusivity: `[Rightparenthesis`
+  ): Boolean = js.native
+  def isBetween(a: MomentInput, b: MomentInput, granularity: js.UndefOr[scala.Nothing], inclusivity: `[]`): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: LeftparenthesisRightparenthesis): Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: StartOf, inclusivity: `Leftparenthesis]`): Boolean = js.native
@@ -89,14 +109,14 @@ trait Moment
   def isLeapYear(): Boolean = js.native
   def isLocal(): Boolean = js.native
   def isSame(): Boolean = js.native
+  def isSame(inp: js.UndefOr[MomentInput], granularity: StartOf): Boolean = js.native
   def isSame(inp: MomentInput): Boolean = js.native
-  def isSame(inp: MomentInput, granularity: StartOf): Boolean = js.native
   def isSameOrAfter(): Boolean = js.native
+  def isSameOrAfter(inp: js.UndefOr[MomentInput], granularity: StartOf): Boolean = js.native
   def isSameOrAfter(inp: MomentInput): Boolean = js.native
-  def isSameOrAfter(inp: MomentInput, granularity: StartOf): Boolean = js.native
   def isSameOrBefore(): Boolean = js.native
+  def isSameOrBefore(inp: js.UndefOr[MomentInput], granularity: StartOf): Boolean = js.native
   def isSameOrBefore(inp: MomentInput): Boolean = js.native
-  def isSameOrBefore(inp: MomentInput, granularity: StartOf): Boolean = js.native
   def isUTC(): Boolean = js.native
   /**
     * @deprecated use isUTC
@@ -133,11 +153,22 @@ trait Moment
     * @deprecated as of 2.7.0, use moment.min/max
     */
   def max(): Moment = js.native
+  def max(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): Moment = js.native
+  def max(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
+  def max(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: String,
+    strict: Boolean
+  ): Moment = js.native
+  def max(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
+  def max(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
   def max(inp: MomentInput): Moment = js.native
-  def max(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  def max(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
-  def max(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
-  def max(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
   def millisecond(): Double = js.native
   def millisecond(ms: Double): Moment = js.native
   def milliseconds(): Double = js.native
@@ -147,11 +178,22 @@ trait Moment
     * @deprecated as of 2.7.0, use moment.min/max
     */
   def min(): Moment = js.native
+  def min(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: js.UndefOr[scala.Nothing],
+    strict: Boolean
+  ): Moment = js.native
+  def min(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
+  def min(
+    inp: js.UndefOr[MomentInput],
+    format: js.UndefOr[MomentFormatSpecification],
+    language: String,
+    strict: Boolean
+  ): Moment = js.native
+  def min(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
+  def min(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
   def min(inp: MomentInput): Moment = js.native
-  def min(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  def min(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = js.native
-  def min(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = js.native
-  def min(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = js.native
   def minute(): Double = js.native
   def minute(m: Double): Moment = js.native
   def minutes(): Double = js.native
@@ -182,8 +224,8 @@ trait Moment
   def set(unit: All, value: Double): Moment = js.native
   def startOf(unitOfTime: StartOf): Moment = js.native
   def subtract(): Moment = js.native
+  def subtract(amount: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Moment = js.native
   def subtract(amount: DurationInputArg1): Moment = js.native
-  def subtract(amount: DurationInputArg1, unit: DurationInputArg2): Moment = js.native
   def subtract(unit: DurationConstructor, amount: String): Moment = js.native
   /**
     * @deprecated reverse syntax

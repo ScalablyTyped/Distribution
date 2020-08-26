@@ -39,6 +39,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the TextFrame object, for use in `textFrame.set({ ... })`. */
+@js.native
 trait TextFrameUpdateData extends js.Object {
   /**
     *
@@ -48,14 +49,14 @@ trait TextFrameUpdateData extends js.Object {
     */
   var autoSizeSetting: js.UndefOr[
     ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed
-  ] = js.undefined
+  ] = js.native
   /**
     *
     * Represents the bottom margin, in points, of the text frame.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottomMargin: js.UndefOr[Double] = js.undefined
+  var bottomMargin: js.UndefOr[Double] = js.native
   /**
     *
     * Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
@@ -64,21 +65,21 @@ trait TextFrameUpdateData extends js.Object {
     */
   var horizontalAlignment: js.UndefOr[
     ShapeTextHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed
-  ] = js.undefined
+  ] = js.native
   /**
     *
     * Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalOverflow: js.UndefOr[ShapeTextHorizontalOverflow | Overflow | Clip] = js.undefined
+  var horizontalOverflow: js.UndefOr[ShapeTextHorizontalOverflow | Overflow | Clip] = js.native
   /**
     *
     * Represents the left margin, in points, of the text frame.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftMargin: js.UndefOr[Double] = js.undefined
+  var leftMargin: js.UndefOr[Double] = js.native
   /**
     *
     * Represents the angle to which the text is oriented for the text frame. See Excel.ShapeTextOrientation for details.
@@ -87,72 +88,112 @@ trait TextFrameUpdateData extends js.Object {
     */
   var orientation: js.UndefOr[
     ShapeTextOrientation | Horizontal | Vertical | Vertical270 | WordArtVertical | EastAsianVertical | MongolianVertical | WordArtVerticalRTL
-  ] = js.undefined
+  ] = js.native
   /**
     *
     * Represents the reading order of the text frame, either left-to-right or right-to-left. See Excel.ShapeTextReadingOrder for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[ShapeTextReadingOrder | LeftToRight | RightToLeft] = js.undefined
+  var readingOrder: js.UndefOr[ShapeTextReadingOrder | LeftToRight | RightToLeft] = js.native
   /**
     *
     * Represents the right margin, in points, of the text frame.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightMargin: js.UndefOr[Double] = js.undefined
+  var rightMargin: js.UndefOr[Double] = js.native
   /**
     *
     * Represents the top margin, in points, of the text frame.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var topMargin: js.UndefOr[Double] = js.undefined
+  var topMargin: js.UndefOr[Double] = js.native
   /**
     *
     * Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalAlignment: js.UndefOr[ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed] = js.undefined
+  var verticalAlignment: js.UndefOr[ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed] = js.native
   /**
     *
     * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalOverflow: js.UndefOr[ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip] = js.undefined
+  var verticalOverflow: js.UndefOr[ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip] = js.native
 }
 
 object TextFrameUpdateData {
   @scala.inline
-  def apply(
-    autoSizeSetting: ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed = null,
-    bottomMargin: js.UndefOr[Double] = js.undefined,
-    horizontalAlignment: ShapeTextHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed = null,
-    horizontalOverflow: ShapeTextHorizontalOverflow | Overflow | Clip = null,
-    leftMargin: js.UndefOr[Double] = js.undefined,
-    orientation: ShapeTextOrientation | Horizontal | Vertical | Vertical270 | WordArtVertical | EastAsianVertical | MongolianVertical | WordArtVerticalRTL = null,
-    readingOrder: ShapeTextReadingOrder | LeftToRight | RightToLeft = null,
-    rightMargin: js.UndefOr[Double] = js.undefined,
-    topMargin: js.UndefOr[Double] = js.undefined,
-    verticalAlignment: ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed = null,
-    verticalOverflow: ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip = null
-  ): TextFrameUpdateData = {
+  def apply(): TextFrameUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (autoSizeSetting != null) __obj.updateDynamic("autoSizeSetting")(autoSizeSetting.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin.get.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (horizontalOverflow != null) __obj.updateDynamic("horizontalOverflow")(horizontalOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(leftMargin)) __obj.updateDynamic("leftMargin")(leftMargin.get.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightMargin)) __obj.updateDynamic("rightMargin")(rightMargin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(topMargin)) __obj.updateDynamic("topMargin")(topMargin.get.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (verticalOverflow != null) __obj.updateDynamic("verticalOverflow")(verticalOverflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFrameUpdateData]
   }
+  @scala.inline
+  implicit class TextFrameUpdateDataOps[Self <: TextFrameUpdateData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoSizeSetting(
+      value: ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed
+    ): Self = this.set("autoSizeSetting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoSizeSetting: Self = this.set("autoSizeSetting", js.undefined)
+    @scala.inline
+    def setBottomMargin(value: Double): Self = this.set("bottomMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomMargin: Self = this.set("bottomMargin", js.undefined)
+    @scala.inline
+    def setHorizontalAlignment(
+      value: ShapeTextHorizontalAlignment | Left | Center | Right | Justify | JustifyLow | Distributed | ThaiDistributed
+    ): Self = this.set("horizontalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalAlignment: Self = this.set("horizontalAlignment", js.undefined)
+    @scala.inline
+    def setHorizontalOverflow(value: ShapeTextHorizontalOverflow | Overflow | Clip): Self = this.set("horizontalOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOverflow: Self = this.set("horizontalOverflow", js.undefined)
+    @scala.inline
+    def setLeftMargin(value: Double): Self = this.set("leftMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeftMargin: Self = this.set("leftMargin", js.undefined)
+    @scala.inline
+    def setOrientation(
+      value: ShapeTextOrientation | Horizontal | Vertical | Vertical270 | WordArtVertical | EastAsianVertical | MongolianVertical | WordArtVerticalRTL
+    ): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+    @scala.inline
+    def setReadingOrder(value: ShapeTextReadingOrder | LeftToRight | RightToLeft): Self = this.set("readingOrder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadingOrder: Self = this.set("readingOrder", js.undefined)
+    @scala.inline
+    def setRightMargin(value: Double): Self = this.set("rightMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRightMargin: Self = this.set("rightMargin", js.undefined)
+    @scala.inline
+    def setTopMargin(value: Double): Self = this.set("topMargin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopMargin: Self = this.set("topMargin", js.undefined)
+    @scala.inline
+    def setVerticalAlignment(value: ShapeTextVerticalAlignment | Top | Middle | Bottom | Justified | Distributed): Self = this.set("verticalAlignment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlignment: Self = this.set("verticalAlignment", js.undefined)
+    @scala.inline
+    def setVerticalOverflow(value: ShapeTextVerticalOverflow | Overflow | Ellipsis | Clip): Self = this.set("verticalOverflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalOverflow: Self = this.set("verticalOverflow", js.undefined)
+  }
+  
 }
 

@@ -67,40 +67,82 @@ trait CopyJob extends js.Object {
 
 object CopyJob {
   @scala.inline
-  def apply(
-    AccountId: AccountId = null,
-    BackupSizeInBytes: js.UndefOr[Long_] = js.undefined,
-    CompletionDate: timestamp = null,
-    CopyJobId: String = null,
-    CreatedBy: RecoveryPointCreator = null,
-    CreationDate: timestamp = null,
-    DestinationBackupVaultArn: ARN = null,
-    DestinationRecoveryPointArn: ARN = null,
-    IamRoleArn: IAMRoleArn = null,
-    ResourceArn: ARN = null,
-    ResourceType: ResourceType = null,
-    SourceBackupVaultArn: ARN = null,
-    SourceRecoveryPointArn: ARN = null,
-    State: CopyJobState = null,
-    StatusMessage: String = null
-  ): CopyJob = {
+  def apply(): CopyJob = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(BackupSizeInBytes)) __obj.updateDynamic("BackupSizeInBytes")(BackupSizeInBytes.get.asInstanceOf[js.Any])
-    if (CompletionDate != null) __obj.updateDynamic("CompletionDate")(CompletionDate.asInstanceOf[js.Any])
-    if (CopyJobId != null) __obj.updateDynamic("CopyJobId")(CopyJobId.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (DestinationBackupVaultArn != null) __obj.updateDynamic("DestinationBackupVaultArn")(DestinationBackupVaultArn.asInstanceOf[js.Any])
-    if (DestinationRecoveryPointArn != null) __obj.updateDynamic("DestinationRecoveryPointArn")(DestinationRecoveryPointArn.asInstanceOf[js.Any])
-    if (IamRoleArn != null) __obj.updateDynamic("IamRoleArn")(IamRoleArn.asInstanceOf[js.Any])
-    if (ResourceArn != null) __obj.updateDynamic("ResourceArn")(ResourceArn.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (SourceBackupVaultArn != null) __obj.updateDynamic("SourceBackupVaultArn")(SourceBackupVaultArn.asInstanceOf[js.Any])
-    if (SourceRecoveryPointArn != null) __obj.updateDynamic("SourceRecoveryPointArn")(SourceRecoveryPointArn.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (StatusMessage != null) __obj.updateDynamic("StatusMessage")(StatusMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyJob]
   }
+  @scala.inline
+  implicit class CopyJobOps[Self <: CopyJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setBackupSizeInBytes(value: Long_): Self = this.set("BackupSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackupSizeInBytes: Self = this.set("BackupSizeInBytes", js.undefined)
+    @scala.inline
+    def setCompletionDate(value: timestamp): Self = this.set("CompletionDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionDate: Self = this.set("CompletionDate", js.undefined)
+    @scala.inline
+    def setCopyJobId(value: String): Self = this.set("CopyJobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopyJobId: Self = this.set("CopyJobId", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: RecoveryPointCreator): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setCreationDate(value: timestamp): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDestinationBackupVaultArn(value: ARN): Self = this.set("DestinationBackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationBackupVaultArn: Self = this.set("DestinationBackupVaultArn", js.undefined)
+    @scala.inline
+    def setDestinationRecoveryPointArn(value: ARN): Self = this.set("DestinationRecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationRecoveryPointArn: Self = this.set("DestinationRecoveryPointArn", js.undefined)
+    @scala.inline
+    def setIamRoleArn(value: IAMRoleArn): Self = this.set("IamRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoleArn: Self = this.set("IamRoleArn", js.undefined)
+    @scala.inline
+    def setResourceArn(value: ARN): Self = this.set("ResourceArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceArn: Self = this.set("ResourceArn", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setSourceBackupVaultArn(value: ARN): Self = this.set("SourceBackupVaultArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceBackupVaultArn: Self = this.set("SourceBackupVaultArn", js.undefined)
+    @scala.inline
+    def setSourceRecoveryPointArn(value: ARN): Self = this.set("SourceRecoveryPointArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceRecoveryPointArn: Self = this.set("SourceRecoveryPointArn", js.undefined)
+    @scala.inline
+    def setState(value: CopyJobState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("StatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("StatusMessage", js.undefined)
+  }
+  
 }
 

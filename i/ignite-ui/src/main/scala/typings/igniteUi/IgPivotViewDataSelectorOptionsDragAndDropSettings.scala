@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgPivotViewDataSelectorOptionsDragAndDropSettings
   extends /**
   * Option for JSONPDataSourceSettings
@@ -13,32 +14,50 @@ trait IgPivotViewDataSelectorOptionsDragAndDropSettings
   /**
     * Which element the draggable helper should be appended to while dragging.
     */
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+  var appendTo: js.UndefOr[js.Any] = js.native
   /**
     * Specifies the containment for the drag helper. The area inside of which thehelper is contained would be scrollable while dragging.
     *
     */
-  var containment: js.UndefOr[Boolean | String | js.Array[_]] = js.undefined
+  var containment: js.UndefOr[Boolean | String | js.Array[_]] = js.native
   /**
     * Specifies z-index that would be set for the drag helper.
     */
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object IgPivotViewDataSelectorOptionsDragAndDropSettings {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    appendTo: js.Any = null,
-    containment: Boolean | String | js.Array[_] = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): IgPivotViewDataSelectorOptionsDragAndDropSettings = {
+  def apply(): IgPivotViewDataSelectorOptionsDragAndDropSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotViewDataSelectorOptionsDragAndDropSettings]
   }
+  @scala.inline
+  implicit class IgPivotViewDataSelectorOptionsDragAndDropSettingsOps[Self <: IgPivotViewDataSelectorOptionsDragAndDropSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppendTo(value: js.Any): Self = this.set("appendTo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppendTo: Self = this.set("appendTo", js.undefined)
+    @scala.inline
+    def setContainmentVarargs(value: js.Any*): Self = this.set("containment", js.Array(value :_*))
+    @scala.inline
+    def setContainment(value: Boolean | String | js.Array[_]): Self = this.set("containment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainment: Self = this.set("containment", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

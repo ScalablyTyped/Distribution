@@ -30,20 +30,46 @@ trait Reservation extends js.Object {
 
 object Reservation {
   @scala.inline
-  def apply(
-    Groups: GroupIdentifierList = null,
-    Instances: InstanceList = null,
-    OwnerId: String = null,
-    RequesterId: String = null,
-    ReservationId: String = null
-  ): Reservation = {
+  def apply(): Reservation = {
     val __obj = js.Dynamic.literal()
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
-    if (RequesterId != null) __obj.updateDynamic("RequesterId")(RequesterId.asInstanceOf[js.Any])
-    if (ReservationId != null) __obj.updateDynamic("ReservationId")(ReservationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reservation]
   }
+  @scala.inline
+  implicit class ReservationOps[Self <: Reservation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupsVarargs(value: GroupIdentifier*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: GroupIdentifierList): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: Instance*): Self = this.set("Instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: InstanceList): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+    @scala.inline
+    def setOwnerId(value: String): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setRequesterId(value: String): Self = this.set("RequesterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequesterId: Self = this.set("RequesterId", js.undefined)
+    @scala.inline
+    def setReservationId(value: String): Self = this.set("ReservationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReservationId: Self = this.set("ReservationId", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for inquirer
 
-Typings are for version 6.5
+Typings are for version 7.3
 
 ## Library description:
 A collection of common interactive command line user interfaces.

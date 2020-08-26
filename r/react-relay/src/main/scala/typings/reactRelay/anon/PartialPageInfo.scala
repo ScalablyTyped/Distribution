@@ -5,27 +5,52 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<relay-runtime.relay-runtime.PageInfo> */
+@js.native
 trait PartialPageInfo extends js.Object {
-  var endCursor: js.UndefOr[String] = js.undefined
-  var hasNextPage: js.UndefOr[Boolean] = js.undefined
-  var hasPreviousPage: js.UndefOr[Boolean] = js.undefined
-  var startCursor: js.UndefOr[String] = js.undefined
+  var endCursor: js.UndefOr[String | Null] = js.native
+  var hasNextPage: js.UndefOr[Boolean] = js.native
+  var hasPreviousPage: js.UndefOr[Boolean] = js.native
+  var startCursor: js.UndefOr[String | Null] = js.native
 }
 
 object PartialPageInfo {
   @scala.inline
-  def apply(
-    endCursor: String = null,
-    hasNextPage: js.UndefOr[Boolean] = js.undefined,
-    hasPreviousPage: js.UndefOr[Boolean] = js.undefined,
-    startCursor: String = null
-  ): PartialPageInfo = {
+  def apply(): PartialPageInfo = {
     val __obj = js.Dynamic.literal()
-    if (endCursor != null) __obj.updateDynamic("endCursor")(endCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasNextPage)) __obj.updateDynamic("hasNextPage")(hasNextPage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasPreviousPage)) __obj.updateDynamic("hasPreviousPage")(hasPreviousPage.get.asInstanceOf[js.Any])
-    if (startCursor != null) __obj.updateDynamic("startCursor")(startCursor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialPageInfo]
   }
+  @scala.inline
+  implicit class PartialPageInfoOps[Self <: PartialPageInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndCursor(value: String): Self = this.set("endCursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndCursor: Self = this.set("endCursor", js.undefined)
+    @scala.inline
+    def setEndCursorNull: Self = this.set("endCursor", null)
+    @scala.inline
+    def setHasNextPage(value: Boolean): Self = this.set("hasNextPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasNextPage: Self = this.set("hasNextPage", js.undefined)
+    @scala.inline
+    def setHasPreviousPage(value: Boolean): Self = this.set("hasPreviousPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHasPreviousPage: Self = this.set("hasPreviousPage", js.undefined)
+    @scala.inline
+    def setStartCursor(value: String): Self = this.set("startCursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartCursor: Self = this.set("startCursor", js.undefined)
+    @scala.inline
+    def setStartCursorNull: Self = this.set("startCursor", null)
+  }
+  
 }
 

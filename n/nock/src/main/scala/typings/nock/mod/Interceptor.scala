@@ -45,9 +45,11 @@ trait Interceptor extends js.Object {
       ReplyFnResult | js.Promise[ReplyFnResult]
     ]
   ): Scope = js.native
+  def reply(responseCode: js.UndefOr[scala.Nothing], body: js.UndefOr[Body], headers: ReplyHeaders): Scope = js.native
+  def reply(responseCode: js.UndefOr[scala.Nothing], body: Body): Scope = js.native
   def reply(responseCode: StatusCode): Scope = js.native
+  def reply(responseCode: StatusCode, body: js.UndefOr[Body], headers: ReplyHeaders): Scope = js.native
   def reply(responseCode: StatusCode, body: Body): Scope = js.native
-  def reply(responseCode: StatusCode, body: Body, headers: ReplyHeaders): Scope = js.native
   def reply(
     statusCode: StatusCode,
     replyBodyFnWithCallback: js.ThisFunction3[
@@ -93,7 +95,6 @@ trait Interceptor extends js.Object {
   def replyWithError(errorMessage: js.Object): Scope = js.native
   def replyWithFile(statusCode: StatusCode, fileName: String): Scope = js.native
   def replyWithFile(statusCode: StatusCode, fileName: String, headers: ReplyHeaders): Scope = js.native
-  def socketDelay(timeMs: Double): this.type = js.native
   def thrice(): this.type = js.native
   def times(newCounter: Double): this.type = js.native
   def twice(): this.type = js.native

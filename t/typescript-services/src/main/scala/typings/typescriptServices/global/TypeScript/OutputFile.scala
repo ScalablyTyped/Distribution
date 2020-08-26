@@ -21,15 +21,5 @@ class OutputFile protected ()
     fileType: typings.typescriptServices.TypeScript.OutputFileType,
     sourceMapEntries: js.Array[typings.typescriptServices.TypeScript.SourceMapEntry]
   ) = this()
-  /* CompleteClass */
-  override var fileType: typings.typescriptServices.TypeScript.OutputFileType = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var sourceMapEntries: js.Array[typings.typescriptServices.TypeScript.SourceMapEntry] = js.native
-  /* CompleteClass */
-  override var text: String = js.native
-  /* CompleteClass */
-  override var writeByteOrderMark: Boolean = js.native
 }
 

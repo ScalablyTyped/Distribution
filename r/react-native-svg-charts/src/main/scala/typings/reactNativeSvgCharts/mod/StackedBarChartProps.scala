@@ -1,108 +1,100 @@
 package typings.reactNativeSvgCharts.mod
 
-import typings.d3Path.mod.Path_
-import typings.d3Scale.mod.ScaleBand_
-import typings.d3Shape.mod.CurveGenerator
 import typings.d3Shape.mod.Series
 import typings.react.mod.Component
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvg.mod.LinearGradientProps
 import typings.reactNativeSvg.mod.RadialGradientProps
-import typings.reactNativeSvgCharts.anon.Bottom
 import typings.reactNativeSvgCharts.anon.Id
-import typings.reactNativeSvgCharts.anon.PartialPathProps
-import typings.std.CanvasRenderingContext2D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StackedBarChartProps[T] extends ChartProps[T] {
-  var colors: js.Array[String]
-  var extra: js.UndefOr[js.Function0[js.Object]] = js.undefined
-  var extras: js.UndefOr[js.Array[_]] = js.undefined
-  var horizontal: js.UndefOr[Boolean] = js.undefined
-  var keys: js.Array[/* keyof T */ String]
-  var offset: js.UndefOr[OffsetFunction] = js.undefined
-  var order: js.UndefOr[OrderFunction] = js.undefined
+  var colors: js.Array[String] = js.native
+  var extra: js.UndefOr[js.Function0[js.Object]] = js.native
+  var extras: js.UndefOr[js.Array[_]] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.native
+  var keys: js.Array[/* keyof T */ String] = js.native
+  var offset: js.UndefOr[OffsetFunction] = js.native
+  var order: js.UndefOr[OrderFunction] = js.native
   var renderGradient: js.UndefOr[
     js.Function1[/* props */ Id, Component[LinearGradientProps | RadialGradientProps, js.Object, _]]
-  ] = js.undefined
-  var showGrid: js.UndefOr[Boolean] = js.undefined
-  var spacingInner: js.UndefOr[Double] = js.undefined
-  var spacingOuter: js.UndefOr[Double] = js.undefined
-  var strokeColor: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var showGrid: js.UndefOr[Boolean] = js.native
+  var spacingInner: js.UndefOr[Double] = js.native
+  var spacingOuter: js.UndefOr[Double] = js.native
+  var strokeColor: js.UndefOr[String] = js.native
 }
 
 object StackedBarChartProps {
   @scala.inline
-  def apply[T](
-    colors: js.Array[String],
-    data: js.Array[T],
-    keys: js.Array[/* keyof T */ String],
-    animate: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    contentInset: Bottom = null,
-    curve: /* context */ CanvasRenderingContext2D | Path_ => CurveGenerator = null,
-    extra: () => js.Object = null,
-    extras: js.Array[_] = null,
-    gridMax: js.UndefOr[Double] = js.undefined,
-    gridMin: js.UndefOr[Double] = js.undefined,
-    gridProps: GridProps[_] = null,
-    height: js.UndefOr[Double] = js.undefined,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    numberOfTicks: js.UndefOr[Double] = js.undefined,
-    offset: (/* series */ Series[js.Any, js.Any], /* order */ js.Array[Double]) => Unit = null,
-    order: /* series */ Series[js.Any, js.Any] => js.Array[Double] = null,
-    renderGradient: /* props */ Id => Component[LinearGradientProps | RadialGradientProps, js.Object, _] = null,
-    showGrid: js.UndefOr[Boolean] = js.undefined,
-    spacingInner: js.UndefOr[Double] = js.undefined,
-    spacingOuter: js.UndefOr[Double] = js.undefined,
-    strokeColor: String = null,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    svg: PartialPathProps = null,
-    width: js.UndefOr[Double] = js.undefined,
-    xAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
-    xMax: js.UndefOr[Double] = js.undefined,
-    xMin: js.UndefOr[Double] = js.undefined,
-    xScale: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any] = null,
-    yAccessor: /* props */ AccessorFunctionProps[T] => Double = null,
-    yMax: js.UndefOr[Double] = js.undefined,
-    yMin: js.UndefOr[Double] = js.undefined,
-    yScale: () => (ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any] = null
-  ): StackedBarChartProps[T] = {
+  def apply[T](colors: js.Array[String], data: js.Array[T], keys: js.Array[/* keyof T */ String]): StackedBarChartProps[T] = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset.asInstanceOf[js.Any])
-    if (curve != null) __obj.updateDynamic("curve")(js.Any.fromFunction1(curve))
-    if (extra != null) __obj.updateDynamic("extra")(js.Any.fromFunction0(extra))
-    if (extras != null) __obj.updateDynamic("extras")(extras.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridMax)) __obj.updateDynamic("gridMax")(gridMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridMin)) __obj.updateDynamic("gridMin")(gridMin.get.asInstanceOf[js.Any])
-    if (gridProps != null) __obj.updateDynamic("gridProps")(gridProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfTicks)) __obj.updateDynamic("numberOfTicks")(numberOfTicks.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(js.Any.fromFunction2(offset))
-    if (order != null) __obj.updateDynamic("order")(js.Any.fromFunction1(order))
-    if (renderGradient != null) __obj.updateDynamic("renderGradient")(js.Any.fromFunction1(renderGradient))
-    if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacingInner)) __obj.updateDynamic("spacingInner")(spacingInner.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacingOuter)) __obj.updateDynamic("spacingOuter")(spacingOuter.get.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (xAccessor != null) __obj.updateDynamic("xAccessor")(js.Any.fromFunction1(xAccessor))
-    if (!js.isUndefined(xMax)) __obj.updateDynamic("xMax")(xMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xMin)) __obj.updateDynamic("xMin")(xMin.get.asInstanceOf[js.Any])
-    if (xScale != null) __obj.updateDynamic("xScale")(js.Any.fromFunction0(xScale))
-    if (yAccessor != null) __obj.updateDynamic("yAccessor")(js.Any.fromFunction1(yAccessor))
-    if (!js.isUndefined(yMax)) __obj.updateDynamic("yMax")(yMax.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yMin)) __obj.updateDynamic("yMin")(yMin.get.asInstanceOf[js.Any])
-    if (yScale != null) __obj.updateDynamic("yScale")(js.Any.fromFunction0(yScale))
     __obj.asInstanceOf[StackedBarChartProps[T]]
   }
+  @scala.inline
+  implicit class StackedBarChartPropsOps[Self <: StackedBarChartProps[_], T] (val x: Self with StackedBarChartProps[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorsVarargs(value: String*): Self = this.set("colors", js.Array(value :_*))
+    @scala.inline
+    def setColors(value: js.Array[String]): Self = this.set("colors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKeysVarargs(value: (/* keyof T */ String)*): Self = this.set("keys", js.Array(value :_*))
+    @scala.inline
+    def setKeys(value: js.Array[/* keyof T */ String]): Self = this.set("keys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExtra(value: () => js.Object): Self = this.set("extra", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteExtra: Self = this.set("extra", js.undefined)
+    @scala.inline
+    def setExtrasVarargs(value: js.Any*): Self = this.set("extras", js.Array(value :_*))
+    @scala.inline
+    def setExtras(value: js.Array[_]): Self = this.set("extras", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtras: Self = this.set("extras", js.undefined)
+    @scala.inline
+    def setHorizontal(value: Boolean): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setOffset(value: (/* series */ Series[js.Any, js.Any], /* order */ js.Array[Double]) => Unit): Self = this.set("offset", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOrder(value: /* series */ Series[js.Any, js.Any] => js.Array[Double]): Self = this.set("order", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+    @scala.inline
+    def setRenderGradient(value: /* props */ Id => Component[LinearGradientProps | RadialGradientProps, js.Object, _]): Self = this.set("renderGradient", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderGradient: Self = this.set("renderGradient", js.undefined)
+    @scala.inline
+    def setShowGrid(value: Boolean): Self = this.set("showGrid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowGrid: Self = this.set("showGrid", js.undefined)
+    @scala.inline
+    def setSpacingInner(value: Double): Self = this.set("spacingInner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacingInner: Self = this.set("spacingInner", js.undefined)
+    @scala.inline
+    def setSpacingOuter(value: Double): Self = this.set("spacingOuter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacingOuter: Self = this.set("spacingOuter", js.undefined)
+    @scala.inline
+    def setStrokeColor(value: String): Self = this.set("strokeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrokeColor: Self = this.set("strokeColor", js.undefined)
+  }
+  
 }
 

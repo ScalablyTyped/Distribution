@@ -47,6 +47,7 @@ class Graph2d protected () extends js.Object {
   def moveTo(time: DateType, options: TimelineAnimationOptions): Unit = js.native
   def off(event: TimelineEvents, callback: js.Function0[Unit]): Unit = js.native
   def on(): Unit = js.native
+  def on(event: js.UndefOr[scala.Nothing], callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
   def on(event: String): Unit = js.native
   def on(event: String, callback: js.Function1[/* properties */ js.Any, Unit]): Unit = js.native
   def on(event: TimelineEvents, callback: js.Function0[Unit]): Unit = js.native

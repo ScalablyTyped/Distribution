@@ -30,18 +30,40 @@ trait SchemaWidgetMarkup extends js.Object {
 
 object SchemaWidgetMarkup {
   @scala.inline
-  def apply(
-    buttons: js.Array[SchemaButton] = null,
-    image: SchemaImage = null,
-    keyValue: SchemaKeyValue = null,
-    textParagraph: SchemaTextParagraph = null
-  ): SchemaWidgetMarkup = {
+  def apply(): SchemaWidgetMarkup = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
-    if (textParagraph != null) __obj.updateDynamic("textParagraph")(textParagraph.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWidgetMarkup]
   }
+  @scala.inline
+  implicit class SchemaWidgetMarkupOps[Self <: SchemaWidgetMarkup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setButtonsVarargs(value: SchemaButton*): Self = this.set("buttons", js.Array(value :_*))
+    @scala.inline
+    def setButtons(value: js.Array[SchemaButton]): Self = this.set("buttons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButtons: Self = this.set("buttons", js.undefined)
+    @scala.inline
+    def setImage(value: SchemaImage): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setKeyValue(value: SchemaKeyValue): Self = this.set("keyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    @scala.inline
+    def setTextParagraph(value: SchemaTextParagraph): Self = this.set("textParagraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextParagraph: Self = this.set("textParagraph", js.undefined)
+  }
+  
 }
 

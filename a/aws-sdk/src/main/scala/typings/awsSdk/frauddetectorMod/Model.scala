@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Model extends js.Object {
   /**
+    * The ARN of the model.
+    */
+  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  /**
     * Timestamp of when the model was created.
     */
   var createdTime: js.UndefOr[time] = js.native
@@ -15,9 +19,9 @@ trait Model extends js.Object {
     */
   var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
   /**
-    * The model label schema.
+    * The name of the event type.
     */
-  var labelSchema: js.UndefOr[LabelSchema] = js.native
+  var eventTypeName: js.UndefOr[String] = js.native
   /**
     * Timestamp of last time the model was updated.
     */
@@ -25,43 +29,59 @@ trait Model extends js.Object {
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[identifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.native
   /**
     * The model type.
     */
   var modelType: js.UndefOr[ModelTypeEnum] = js.native
-  /**
-    * The model input variables.
-    */
-  var modelVariables: js.UndefOr[ModelVariablesList] = js.native
-  /**
-    * The model training data source in Amazon S3.
-    */
-  var trainingDataSource: js.UndefOr[TrainingDataSource] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    createdTime: time = null,
-    description: description = null,
-    labelSchema: LabelSchema = null,
-    lastUpdatedTime: time = null,
-    modelId: identifier = null,
-    modelType: ModelTypeEnum = null,
-    modelVariables: ModelVariablesList = null,
-    trainingDataSource: TrainingDataSource = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (labelSchema != null) __obj.updateDynamic("labelSchema")(labelSchema.asInstanceOf[js.Any])
-    if (lastUpdatedTime != null) __obj.updateDynamic("lastUpdatedTime")(lastUpdatedTime.asInstanceOf[js.Any])
-    if (modelId != null) __obj.updateDynamic("modelId")(modelId.asInstanceOf[js.Any])
-    if (modelType != null) __obj.updateDynamic("modelType")(modelType.asInstanceOf[js.Any])
-    if (modelVariables != null) __obj.updateDynamic("modelVariables")(modelVariables.asInstanceOf[js.Any])
-    if (trainingDataSource != null) __obj.updateDynamic("trainingDataSource")(trainingDataSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: fraudDetectorArn): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedTime(value: time): Self = this.set("createdTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTime: Self = this.set("createdTime", js.undefined)
+    @scala.inline
+    def setDescription(value: description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEventTypeName(value: String): Self = this.set("eventTypeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTypeName: Self = this.set("eventTypeName", js.undefined)
+    @scala.inline
+    def setLastUpdatedTime(value: time): Self = this.set("lastUpdatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedTime: Self = this.set("lastUpdatedTime", js.undefined)
+    @scala.inline
+    def setModelId(value: modelIdentifier): Self = this.set("modelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelId: Self = this.set("modelId", js.undefined)
+    @scala.inline
+    def setModelType(value: ModelTypeEnum): Self = this.set("modelType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelType: Self = this.set("modelType", js.undefined)
+  }
+  
 }
 

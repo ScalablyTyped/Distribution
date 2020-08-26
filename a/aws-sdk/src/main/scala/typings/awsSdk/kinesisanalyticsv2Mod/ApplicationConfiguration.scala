@@ -34,21 +34,46 @@ trait ApplicationConfiguration extends js.Object {
 
 object ApplicationConfiguration {
   @scala.inline
-  def apply(
-    ApplicationCodeConfiguration: ApplicationCodeConfiguration,
-    ApplicationSnapshotConfiguration: ApplicationSnapshotConfiguration = null,
-    EnvironmentProperties: EnvironmentProperties = null,
-    FlinkApplicationConfiguration: FlinkApplicationConfiguration = null,
-    SqlApplicationConfiguration: SqlApplicationConfiguration = null,
-    VpcConfigurations: VpcConfigurations = null
-  ): ApplicationConfiguration = {
+  def apply(ApplicationCodeConfiguration: ApplicationCodeConfiguration): ApplicationConfiguration = {
     val __obj = js.Dynamic.literal(ApplicationCodeConfiguration = ApplicationCodeConfiguration.asInstanceOf[js.Any])
-    if (ApplicationSnapshotConfiguration != null) __obj.updateDynamic("ApplicationSnapshotConfiguration")(ApplicationSnapshotConfiguration.asInstanceOf[js.Any])
-    if (EnvironmentProperties != null) __obj.updateDynamic("EnvironmentProperties")(EnvironmentProperties.asInstanceOf[js.Any])
-    if (FlinkApplicationConfiguration != null) __obj.updateDynamic("FlinkApplicationConfiguration")(FlinkApplicationConfiguration.asInstanceOf[js.Any])
-    if (SqlApplicationConfiguration != null) __obj.updateDynamic("SqlApplicationConfiguration")(SqlApplicationConfiguration.asInstanceOf[js.Any])
-    if (VpcConfigurations != null) __obj.updateDynamic("VpcConfigurations")(VpcConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationConfiguration]
   }
+  @scala.inline
+  implicit class ApplicationConfigurationOps[Self <: ApplicationConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationCodeConfiguration(value: ApplicationCodeConfiguration): Self = this.set("ApplicationCodeConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplicationSnapshotConfiguration(value: ApplicationSnapshotConfiguration): Self = this.set("ApplicationSnapshotConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationSnapshotConfiguration: Self = this.set("ApplicationSnapshotConfiguration", js.undefined)
+    @scala.inline
+    def setEnvironmentProperties(value: EnvironmentProperties): Self = this.set("EnvironmentProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvironmentProperties: Self = this.set("EnvironmentProperties", js.undefined)
+    @scala.inline
+    def setFlinkApplicationConfiguration(value: FlinkApplicationConfiguration): Self = this.set("FlinkApplicationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlinkApplicationConfiguration: Self = this.set("FlinkApplicationConfiguration", js.undefined)
+    @scala.inline
+    def setSqlApplicationConfiguration(value: SqlApplicationConfiguration): Self = this.set("SqlApplicationConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSqlApplicationConfiguration: Self = this.set("SqlApplicationConfiguration", js.undefined)
+    @scala.inline
+    def setVpcConfigurationsVarargs(value: VpcConfiguration*): Self = this.set("VpcConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setVpcConfigurations(value: VpcConfigurations): Self = this.set("VpcConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfigurations: Self = this.set("VpcConfigurations", js.undefined)
+  }
+  
 }
 

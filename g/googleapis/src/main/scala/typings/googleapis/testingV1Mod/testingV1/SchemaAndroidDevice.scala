@@ -33,18 +33,38 @@ trait SchemaAndroidDevice extends js.Object {
 
 object SchemaAndroidDevice {
   @scala.inline
-  def apply(
-    androidModelId: String = null,
-    androidVersionId: String = null,
-    locale: String = null,
-    orientation: String = null
-  ): SchemaAndroidDevice = {
+  def apply(): SchemaAndroidDevice = {
     val __obj = js.Dynamic.literal()
-    if (androidModelId != null) __obj.updateDynamic("androidModelId")(androidModelId.asInstanceOf[js.Any])
-    if (androidVersionId != null) __obj.updateDynamic("androidVersionId")(androidVersionId.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAndroidDevice]
   }
+  @scala.inline
+  implicit class SchemaAndroidDeviceOps[Self <: SchemaAndroidDevice] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAndroidModelId(value: String): Self = this.set("androidModelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidModelId: Self = this.set("androidModelId", js.undefined)
+    @scala.inline
+    def setAndroidVersionId(value: String): Self = this.set("androidVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidVersionId: Self = this.set("androidVersionId", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setOrientation(value: String): Self = this.set("orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrientation: Self = this.set("orientation", js.undefined)
+  }
+  
 }
 

@@ -34,7 +34,7 @@ package object mod {
   type ColumnWithLooseAccessor[D /* <: js.Object */] = typings.reactTable.mod.ColumnInterface[D] with (typings.reactTable.mod.ColumnInterfaceBasedOnValue[D, _]) with (typings.reactTable.anon.Header | typings.reactTable.anon.IdIdType[D] | typings.reactTable.anon.`0`[D]) with typings.reactTable.anon.`1`[D]
   type ColumnWithStrictAccessor[D /* <: js.Object */] = typings.reactTable.mod.ColumnInterface[D] with (typings.reactTable.mod.ValueOf[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof D ]: {  accessor  :K} & react-table.react-table.ColumnInterfaceBasedOnValue<D, D[K]>}
+  {[ K in keyof D ]: {  accessor :K} & react-table.react-table.ColumnInterfaceBasedOnValue<D, D[K]>}
     */ typings.reactTable.reactTableStrings.ColumnWithStrictAccessor with org.scalablytyped.runtime.TopLevel[D]
   ])
   type FilterTypes[D /* <: js.Object */] = typings.std.Record[java.lang.String, typings.reactTable.mod.FilterValue]

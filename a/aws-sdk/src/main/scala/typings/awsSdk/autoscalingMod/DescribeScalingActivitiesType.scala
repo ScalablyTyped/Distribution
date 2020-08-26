@@ -26,18 +26,40 @@ trait DescribeScalingActivitiesType extends js.Object {
 
 object DescribeScalingActivitiesType {
   @scala.inline
-  def apply(
-    ActivityIds: ActivityIds = null,
-    AutoScalingGroupName: ResourceName = null,
-    MaxRecords: js.UndefOr[MaxRecords] = js.undefined,
-    NextToken: XmlString = null
-  ): DescribeScalingActivitiesType = {
+  def apply(): DescribeScalingActivitiesType = {
     val __obj = js.Dynamic.literal()
-    if (ActivityIds != null) __obj.updateDynamic("ActivityIds")(ActivityIds.asInstanceOf[js.Any])
-    if (AutoScalingGroupName != null) __obj.updateDynamic("AutoScalingGroupName")(AutoScalingGroupName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingActivitiesType]
   }
+  @scala.inline
+  implicit class DescribeScalingActivitiesTypeOps[Self <: DescribeScalingActivitiesType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityIdsVarargs(value: XmlString*): Self = this.set("ActivityIds", js.Array(value :_*))
+    @scala.inline
+    def setActivityIds(value: ActivityIds): Self = this.set("ActivityIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityIds: Self = this.set("ActivityIds", js.undefined)
+    @scala.inline
+    def setAutoScalingGroupName(value: ResourceName): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupName: Self = this.set("AutoScalingGroupName", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: MaxRecords): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

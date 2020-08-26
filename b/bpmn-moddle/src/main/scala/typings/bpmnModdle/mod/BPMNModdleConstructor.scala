@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
 trait BPMNModdleConstructor
   extends Instantiable0[BPMNModdle]
      with Instantiable1[/* packages */ js.Any, BPMNModdle]
-     with Instantiable2[/* packages */ js.Any, /* options */ Option, BPMNModdle]
+     with Instantiable2[js.UndefOr[/* packages */ js.Any], /* options */ Option, BPMNModdle]
 

@@ -39,13 +39,13 @@ trait JQueryCallback extends js.Object {
     * @param arguments The argument or list of arguments to pass back to the callback list.
     */
   def fire(arguments: js.Any*): JQueryCallback = js.native
+  def fireWith(context: js.UndefOr[scala.Nothing], args: js.Any*): JQueryCallback = js.native
   /**
     * Call all callbacks in a list with the given context and arguments.
     * 
     * @param context A reference to the context in which the callbacks in the list should be fired.
     * @param arguments An argument, or array of arguments, to pass to the callbacks in the list.
     */
-  def fireWith(): JQueryCallback = js.native
   def fireWith(context: js.Any, args: js.Any*): JQueryCallback = js.native
   /**
     * Determine if the callbacks have already been called at least once.

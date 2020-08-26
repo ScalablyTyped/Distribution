@@ -5,30 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait JasmineAjaxRequestStubReturnOptions extends js.Object {
-  var contentType: js.UndefOr[String] = js.undefined
-  var response: js.UndefOr[String] = js.undefined
-  var responseHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
-  var responseText: js.UndefOr[String] = js.undefined
-  var status: js.UndefOr[Double] = js.undefined
+  var contentType: js.UndefOr[String] = js.native
+  var response: js.UndefOr[String] = js.native
+  var responseHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var responseText: js.UndefOr[String] = js.native
+  var status: js.UndefOr[Double] = js.native
 }
 
 object JasmineAjaxRequestStubReturnOptions {
   @scala.inline
-  def apply(
-    contentType: String = null,
-    response: String = null,
-    responseHeaders: StringDictionary[String] = null,
-    responseText: String = null,
-    status: js.UndefOr[Double] = js.undefined
-  ): JasmineAjaxRequestStubReturnOptions = {
+  def apply(): JasmineAjaxRequestStubReturnOptions = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
-    if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
-    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JasmineAjaxRequestStubReturnOptions]
   }
+  @scala.inline
+  implicit class JasmineAjaxRequestStubReturnOptionsOps[Self <: JasmineAjaxRequestStubReturnOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+    @scala.inline
+    def setResponseHeaders(value: StringDictionary[String]): Self = this.set("responseHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseHeaders: Self = this.set("responseHeaders", js.undefined)
+    @scala.inline
+    def setResponseText(value: String): Self = this.set("responseText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseText: Self = this.set("responseText", js.undefined)
+    @scala.inline
+    def setStatus(value: Double): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

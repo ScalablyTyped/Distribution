@@ -16,10 +16,5 @@ class ASPxClientHtmlEditorTabEventArgs protected ()
     * @param name A string value that uniquely identifies the name of a tab related to the event.
     */
   def this(name: String) = this()
-  /**
-    * Gets the name that uniquely identifies an editor tab.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

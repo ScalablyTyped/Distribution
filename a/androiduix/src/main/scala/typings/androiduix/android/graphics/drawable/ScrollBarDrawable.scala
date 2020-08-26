@@ -6,9 +6,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.drawable.ScrollBarDrawable")
 @js.native
-class ScrollBarDrawable () extends Drawable {
+trait ScrollBarDrawable extends Drawable {
   var mAlwaysDrawHorizontalTrack: js.Any = js.native
   var mAlwaysDrawVerticalTrack: js.Any = js.native
   var mChanged: js.Any = js.native

@@ -22,16 +22,34 @@ trait VorbisSettings extends js.Object {
 
 object VorbisSettings {
   @scala.inline
-  def apply(
-    Channels: js.UndefOr[integerMin1Max2] = js.undefined,
-    SampleRate: js.UndefOr[integerMin22050Max48000] = js.undefined,
-    VbrQuality: js.UndefOr[integerMinNegative1Max10] = js.undefined
-  ): VorbisSettings = {
+  def apply(): VorbisSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Channels)) __obj.updateDynamic("Channels")(Channels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SampleRate)) __obj.updateDynamic("SampleRate")(SampleRate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VbrQuality)) __obj.updateDynamic("VbrQuality")(VbrQuality.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VorbisSettings]
   }
+  @scala.inline
+  implicit class VorbisSettingsOps[Self <: VorbisSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannels(value: integerMin1Max2): Self = this.set("Channels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannels: Self = this.set("Channels", js.undefined)
+    @scala.inline
+    def setSampleRate(value: integerMin22050Max48000): Self = this.set("SampleRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSampleRate: Self = this.set("SampleRate", js.undefined)
+    @scala.inline
+    def setVbrQuality(value: integerMinNegative1Max10): Self = this.set("VbrQuality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVbrQuality: Self = this.set("VbrQuality", js.undefined)
+  }
+  
 }
 

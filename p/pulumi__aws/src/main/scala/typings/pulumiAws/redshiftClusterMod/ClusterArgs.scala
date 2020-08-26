@@ -146,9 +146,9 @@ trait ClusterArgs extends js.Object {
     */
   val snapshotIdentifier: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
   /**
     * A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.
     */
@@ -157,76 +157,160 @@ trait ClusterArgs extends js.Object {
 
 object ClusterArgs {
   @scala.inline
-  def apply(
-    clusterIdentifier: Input[String],
-    nodeType: Input[String],
-    allowVersionUpgrade: Input[Boolean] = null,
-    automatedSnapshotRetentionPeriod: Input[Double] = null,
-    availabilityZone: Input[String] = null,
-    clusterParameterGroupName: Input[String] = null,
-    clusterPublicKey: Input[String] = null,
-    clusterRevisionNumber: Input[String] = null,
-    clusterSecurityGroups: Input[js.Array[Input[String]]] = null,
-    clusterSubnetGroupName: Input[String] = null,
-    clusterType: Input[String] = null,
-    clusterVersion: Input[String] = null,
-    databaseName: Input[String] = null,
-    elasticIp: Input[String] = null,
-    encrypted: Input[Boolean] = null,
-    endpoint: Input[String] = null,
-    enhancedVpcRouting: Input[Boolean] = null,
-    finalSnapshotIdentifier: Input[String] = null,
-    iamRoles: Input[js.Array[Input[String]]] = null,
-    kmsKeyId: Input[String] = null,
-    logging: Input[ClusterLogging] = null,
-    masterPassword: Input[String] = null,
-    masterUsername: Input[String] = null,
-    numberOfNodes: Input[Double] = null,
-    ownerAccount: Input[String] = null,
-    port: Input[Double] = null,
-    preferredMaintenanceWindow: Input[String] = null,
-    publiclyAccessible: Input[Boolean] = null,
-    skipFinalSnapshot: Input[Boolean] = null,
-    snapshotClusterIdentifier: Input[String] = null,
-    snapshotCopy: Input[ClusterSnapshotCopy] = null,
-    snapshotIdentifier: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null,
-    vpcSecurityGroupIds: Input[js.Array[Input[String]]] = null
-  ): ClusterArgs = {
+  def apply(clusterIdentifier: Input[String], nodeType: Input[String]): ClusterArgs = {
     val __obj = js.Dynamic.literal(clusterIdentifier = clusterIdentifier.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
-    if (allowVersionUpgrade != null) __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade.asInstanceOf[js.Any])
-    if (automatedSnapshotRetentionPeriod != null) __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (clusterParameterGroupName != null) __obj.updateDynamic("clusterParameterGroupName")(clusterParameterGroupName.asInstanceOf[js.Any])
-    if (clusterPublicKey != null) __obj.updateDynamic("clusterPublicKey")(clusterPublicKey.asInstanceOf[js.Any])
-    if (clusterRevisionNumber != null) __obj.updateDynamic("clusterRevisionNumber")(clusterRevisionNumber.asInstanceOf[js.Any])
-    if (clusterSecurityGroups != null) __obj.updateDynamic("clusterSecurityGroups")(clusterSecurityGroups.asInstanceOf[js.Any])
-    if (clusterSubnetGroupName != null) __obj.updateDynamic("clusterSubnetGroupName")(clusterSubnetGroupName.asInstanceOf[js.Any])
-    if (clusterType != null) __obj.updateDynamic("clusterType")(clusterType.asInstanceOf[js.Any])
-    if (clusterVersion != null) __obj.updateDynamic("clusterVersion")(clusterVersion.asInstanceOf[js.Any])
-    if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
-    if (elasticIp != null) __obj.updateDynamic("elasticIp")(elasticIp.asInstanceOf[js.Any])
-    if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
-    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
-    if (enhancedVpcRouting != null) __obj.updateDynamic("enhancedVpcRouting")(enhancedVpcRouting.asInstanceOf[js.Any])
-    if (finalSnapshotIdentifier != null) __obj.updateDynamic("finalSnapshotIdentifier")(finalSnapshotIdentifier.asInstanceOf[js.Any])
-    if (iamRoles != null) __obj.updateDynamic("iamRoles")(iamRoles.asInstanceOf[js.Any])
-    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (masterPassword != null) __obj.updateDynamic("masterPassword")(masterPassword.asInstanceOf[js.Any])
-    if (masterUsername != null) __obj.updateDynamic("masterUsername")(masterUsername.asInstanceOf[js.Any])
-    if (numberOfNodes != null) __obj.updateDynamic("numberOfNodes")(numberOfNodes.asInstanceOf[js.Any])
-    if (ownerAccount != null) __obj.updateDynamic("ownerAccount")(ownerAccount.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
-    if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
-    if (snapshotClusterIdentifier != null) __obj.updateDynamic("snapshotClusterIdentifier")(snapshotClusterIdentifier.asInstanceOf[js.Any])
-    if (snapshotCopy != null) __obj.updateDynamic("snapshotCopy")(snapshotCopy.asInstanceOf[js.Any])
-    if (snapshotIdentifier != null) __obj.updateDynamic("snapshotIdentifier")(snapshotIdentifier.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterArgs]
   }
+  @scala.inline
+  implicit class ClusterArgsOps[Self <: ClusterArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: Input[String]): Self = this.set("clusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNodeType(value: Input[String]): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowVersionUpgrade(value: Input[Boolean]): Self = this.set("allowVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowVersionUpgrade: Self = this.set("allowVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAutomatedSnapshotRetentionPeriod(value: Input[Double]): Self = this.set("automatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomatedSnapshotRetentionPeriod: Self = this.set("automatedSnapshotRetentionPeriod", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setClusterParameterGroupName(value: Input[String]): Self = this.set("clusterParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterParameterGroupName: Self = this.set("clusterParameterGroupName", js.undefined)
+    @scala.inline
+    def setClusterPublicKey(value: Input[String]): Self = this.set("clusterPublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterPublicKey: Self = this.set("clusterPublicKey", js.undefined)
+    @scala.inline
+    def setClusterRevisionNumber(value: Input[String]): Self = this.set("clusterRevisionNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterRevisionNumber: Self = this.set("clusterRevisionNumber", js.undefined)
+    @scala.inline
+    def setClusterSecurityGroupsVarargs(value: Input[String]*): Self = this.set("clusterSecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setClusterSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("clusterSecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterSecurityGroups: Self = this.set("clusterSecurityGroups", js.undefined)
+    @scala.inline
+    def setClusterSubnetGroupName(value: Input[String]): Self = this.set("clusterSubnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterSubnetGroupName: Self = this.set("clusterSubnetGroupName", js.undefined)
+    @scala.inline
+    def setClusterType(value: Input[String]): Self = this.set("clusterType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterType: Self = this.set("clusterType", js.undefined)
+    @scala.inline
+    def setClusterVersion(value: Input[String]): Self = this.set("clusterVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterVersion: Self = this.set("clusterVersion", js.undefined)
+    @scala.inline
+    def setDatabaseName(value: Input[String]): Self = this.set("databaseName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatabaseName: Self = this.set("databaseName", js.undefined)
+    @scala.inline
+    def setElasticIp(value: Input[String]): Self = this.set("elasticIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElasticIp: Self = this.set("elasticIp", js.undefined)
+    @scala.inline
+    def setEncrypted(value: Input[Boolean]): Self = this.set("encrypted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncrypted: Self = this.set("encrypted", js.undefined)
+    @scala.inline
+    def setEndpoint(value: Input[String]): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoint: Self = this.set("endpoint", js.undefined)
+    @scala.inline
+    def setEnhancedVpcRouting(value: Input[Boolean]): Self = this.set("enhancedVpcRouting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnhancedVpcRouting: Self = this.set("enhancedVpcRouting", js.undefined)
+    @scala.inline
+    def setFinalSnapshotIdentifier(value: Input[String]): Self = this.set("finalSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalSnapshotIdentifier: Self = this.set("finalSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setIamRolesVarargs(value: Input[String]*): Self = this.set("iamRoles", js.Array(value :_*))
+    @scala.inline
+    def setIamRoles(value: Input[js.Array[Input[String]]]): Self = this.set("iamRoles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIamRoles: Self = this.set("iamRoles", js.undefined)
+    @scala.inline
+    def setKmsKeyId(value: Input[String]): Self = this.set("kmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("kmsKeyId", js.undefined)
+    @scala.inline
+    def setLogging(value: Input[ClusterLogging]): Self = this.set("logging", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogging: Self = this.set("logging", js.undefined)
+    @scala.inline
+    def setMasterPassword(value: Input[String]): Self = this.set("masterPassword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterPassword: Self = this.set("masterPassword", js.undefined)
+    @scala.inline
+    def setMasterUsername(value: Input[String]): Self = this.set("masterUsername", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMasterUsername: Self = this.set("masterUsername", js.undefined)
+    @scala.inline
+    def setNumberOfNodes(value: Input[Double]): Self = this.set("numberOfNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfNodes: Self = this.set("numberOfNodes", js.undefined)
+    @scala.inline
+    def setOwnerAccount(value: Input[String]): Self = this.set("ownerAccount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerAccount: Self = this.set("ownerAccount", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: Input[String]): Self = this.set("preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("preferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPubliclyAccessible(value: Input[Boolean]): Self = this.set("publiclyAccessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubliclyAccessible: Self = this.set("publiclyAccessible", js.undefined)
+    @scala.inline
+    def setSkipFinalSnapshot(value: Input[Boolean]): Self = this.set("skipFinalSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalSnapshot: Self = this.set("skipFinalSnapshot", js.undefined)
+    @scala.inline
+    def setSnapshotClusterIdentifier(value: Input[String]): Self = this.set("snapshotClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotClusterIdentifier: Self = this.set("snapshotClusterIdentifier", js.undefined)
+    @scala.inline
+    def setSnapshotCopy(value: Input[ClusterSnapshotCopy]): Self = this.set("snapshotCopy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotCopy: Self = this.set("snapshotCopy", js.undefined)
+    @scala.inline
+    def setSnapshotIdentifier(value: Input[String]): Self = this.set("snapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotIdentifier: Self = this.set("snapshotIdentifier", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("vpcSecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSecurityGroupIds: Self = this.set("vpcSecurityGroupIds", js.undefined)
+  }
+  
 }
 

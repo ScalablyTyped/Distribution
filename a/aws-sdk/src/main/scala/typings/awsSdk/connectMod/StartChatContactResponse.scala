@@ -22,16 +22,34 @@ trait StartChatContactResponse extends js.Object {
 
 object StartChatContactResponse {
   @scala.inline
-  def apply(
-    ContactId: ContactId = null,
-    ParticipantId: ParticipantId = null,
-    ParticipantToken: ParticipantToken = null
-  ): StartChatContactResponse = {
+  def apply(): StartChatContactResponse = {
     val __obj = js.Dynamic.literal()
-    if (ContactId != null) __obj.updateDynamic("ContactId")(ContactId.asInstanceOf[js.Any])
-    if (ParticipantId != null) __obj.updateDynamic("ParticipantId")(ParticipantId.asInstanceOf[js.Any])
-    if (ParticipantToken != null) __obj.updateDynamic("ParticipantToken")(ParticipantToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartChatContactResponse]
   }
+  @scala.inline
+  implicit class StartChatContactResponseOps[Self <: StartChatContactResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContactId(value: ContactId): Self = this.set("ContactId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContactId: Self = this.set("ContactId", js.undefined)
+    @scala.inline
+    def setParticipantId(value: ParticipantId): Self = this.set("ParticipantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipantId: Self = this.set("ParticipantId", js.undefined)
+    @scala.inline
+    def setParticipantToken(value: ParticipantToken): Self = this.set("ParticipantToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipantToken: Self = this.set("ParticipantToken", js.undefined)
+  }
+  
 }
 

@@ -1,29 +1,34 @@
 package typings.ts3NodejsLibrary.contextMod
 
+import typings.ts3NodejsLibrary.contextMod.SelectType.NONE
+import typings.ts3NodejsLibrary.contextMod.SelectType.PORT
+import typings.ts3NodejsLibrary.contextMod.SelectType.SID
+import typings.ts3NodejsLibrary.ts3NodejsLibraryNumbers.`0`
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Context extends js.Object {
-  var client_nickname: js.UndefOr[String] = js.undefined
-  var events: js.Array[ActiveEvent]
-  var login: js.UndefOr[LoginInfo] = js.undefined
-  var selectType: SelectType
-  var selected: Double
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.ts3NodejsLibrary.contextMod.SelectPortContext
+  - typings.ts3NodejsLibrary.contextMod.SelectSidContext
+  - typings.ts3NodejsLibrary.contextMod.SelectNoneContext
+*/
+trait Context extends js.Object
 
 object Context {
   @scala.inline
-  def apply(
-    events: js.Array[ActiveEvent],
-    selectType: SelectType,
-    selected: Double,
-    client_nickname: String = null,
-    login: LoginInfo = null
-  ): Context = {
+  def SelectPortContext(events: js.Array[ActiveEvent], selectType: PORT, selected: Double): Context = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
-    if (client_nickname != null) __obj.updateDynamic("client_nickname")(client_nickname.asInstanceOf[js.Any])
-    if (login != null) __obj.updateDynamic("login")(login.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Context]
+  }
+  @scala.inline
+  def SelectSidContext(events: js.Array[ActiveEvent], selectType: SID, selected: String): Context = {
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Context]
+  }
+  @scala.inline
+  def SelectNoneContext(events: js.Array[ActiveEvent], selectType: NONE, selected: `0`): Context = {
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], selectType = selectType.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[Context]
   }
 }

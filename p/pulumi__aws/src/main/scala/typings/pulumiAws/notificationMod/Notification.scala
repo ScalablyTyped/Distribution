@@ -28,7 +28,7 @@ class Notification protected () extends CustomResource {
   val groupNames: Output_[js.Array[String]] = js.native
   /**
     * A list of Notification Types that trigger
-    * notifications. Acceptable values are documented [in the AWS documentation here][1]
+    * notifications. Acceptable values are documented [in the AWS documentation here](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_NotificationConfiguration.html)
     */
   val notifications: Output_[js.Array[NotificationType]] = js.native
   /**
@@ -48,8 +48,10 @@ object Notification extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Notification = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Notification = js.native
   def get(name: String, id: Input[ID], state: NotificationState): Notification = js.native
   def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): Notification = js.native
   /**

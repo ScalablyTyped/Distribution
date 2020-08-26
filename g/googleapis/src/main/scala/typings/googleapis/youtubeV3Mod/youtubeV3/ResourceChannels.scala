@@ -38,6 +38,7 @@ class ResourceChannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaChannelListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaChannelListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannelListResponse] = js.native
   def list(params: ParamsResourceChannelsList): GaxiosPromise[SchemaChannelListResponse] = js.native
   def list(params: ParamsResourceChannelsList, callback: BodyResponseCallback[SchemaChannelListResponse]): Unit = js.native
   def list(
@@ -69,6 +70,7 @@ class ResourceChannels protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaChannel] = js.native
   def update(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def update(params: ParamsResourceChannelsUpdate): GaxiosPromise[SchemaChannel] = js.native
   def update(params: ParamsResourceChannelsUpdate, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def update(

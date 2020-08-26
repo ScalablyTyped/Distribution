@@ -54,11 +54,17 @@ trait TableSort extends ClientObject {
   @JSName("apply")
   def apply(fields: js.Array[SortField]): Unit = js.native
   @JSName("apply")
+  def apply(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], method: SortMethod): Unit = js.native
+  @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean): Unit = js.native
   @JSName("apply")
   def apply(fields: js.Array[SortField], matchCase: Boolean, method: SortMethod): Unit = js.native
   @JSName("apply")
+  def apply_PinYin(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], method: PinYin): Unit = js.native
+  @JSName("apply")
   def apply_PinYin(fields: js.Array[SortField], matchCase: Boolean, method: PinYin): Unit = js.native
+  @JSName("apply")
+  def apply_StrokeCount(fields: js.Array[SortField], matchCase: js.UndefOr[scala.Nothing], method: StrokeCount): Unit = js.native
   @JSName("apply")
   def apply_StrokeCount(fields: js.Array[SortField], matchCase: Boolean, method: StrokeCount): Unit = js.native
   /**

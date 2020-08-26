@@ -8,33 +8,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecipientIdentity extends js.Object {
-  var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.undefined
-  var recipientIdentity: js.UndefOr[Identity] = js.undefined
-  var serviceAssigned: js.UndefOr[Timestamp] = js.undefined
-  var serviceCreated: js.UndefOr[Timestamp] = js.undefined
-  var serviceUpdated: js.UndefOr[Timestamp] = js.undefined
-  var sharerUserID: js.UndefOr[UserID] = js.undefined
+  var privilege: js.UndefOr[SharedNotePrivilegeLevel] = js.native
+  var recipientIdentity: js.UndefOr[Identity] = js.native
+  var serviceAssigned: js.UndefOr[Timestamp] = js.native
+  var serviceCreated: js.UndefOr[Timestamp] = js.native
+  var serviceUpdated: js.UndefOr[Timestamp] = js.native
+  var sharerUserID: js.UndefOr[UserID] = js.native
 }
 
 object RecipientIdentity {
   @scala.inline
-  def apply(
-    privilege: SharedNotePrivilegeLevel = null,
-    recipientIdentity: Identity = null,
-    serviceAssigned: js.UndefOr[Timestamp] = js.undefined,
-    serviceCreated: js.UndefOr[Timestamp] = js.undefined,
-    serviceUpdated: js.UndefOr[Timestamp] = js.undefined,
-    sharerUserID: js.UndefOr[UserID] = js.undefined
-  ): RecipientIdentity = {
+  def apply(): RecipientIdentity = {
     val __obj = js.Dynamic.literal()
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
-    if (recipientIdentity != null) __obj.updateDynamic("recipientIdentity")(recipientIdentity.asInstanceOf[js.Any])
-    if (!js.isUndefined(serviceAssigned)) __obj.updateDynamic("serviceAssigned")(serviceAssigned.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serviceCreated)) __obj.updateDynamic("serviceCreated")(serviceCreated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serviceUpdated)) __obj.updateDynamic("serviceUpdated")(serviceUpdated.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharerUserID)) __obj.updateDynamic("sharerUserID")(sharerUserID.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecipientIdentity]
   }
+  @scala.inline
+  implicit class RecipientIdentityOps[Self <: RecipientIdentity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrivilege(value: SharedNotePrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    @scala.inline
+    def setRecipientIdentity(value: Identity): Self = this.set("recipientIdentity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipientIdentity: Self = this.set("recipientIdentity", js.undefined)
+    @scala.inline
+    def setServiceAssigned(value: Timestamp): Self = this.set("serviceAssigned", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceAssigned: Self = this.set("serviceAssigned", js.undefined)
+    @scala.inline
+    def setServiceCreated(value: Timestamp): Self = this.set("serviceCreated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCreated: Self = this.set("serviceCreated", js.undefined)
+    @scala.inline
+    def setServiceUpdated(value: Timestamp): Self = this.set("serviceUpdated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdated: Self = this.set("serviceUpdated", js.undefined)
+    @scala.inline
+    def setSharerUserID(value: UserID): Self = this.set("sharerUserID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharerUserID: Self = this.set("sharerUserID", js.undefined)
+  }
+  
 }
 

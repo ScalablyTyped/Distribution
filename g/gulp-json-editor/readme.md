@@ -11,8 +11,8 @@ A gulp plugin to edit JSON objects
 | Full name          | gulp-json-editor |
 | Keywords           | gulpplugin, gulp, json |
 | # releases         | 13 |
-| # dependents       | 77 |
-| # downloads        | 1526969 |
+| # dependents       | 91 |
+| # downloads        | 1529126 |
 | # stars            | 10 |
 
 ## Links

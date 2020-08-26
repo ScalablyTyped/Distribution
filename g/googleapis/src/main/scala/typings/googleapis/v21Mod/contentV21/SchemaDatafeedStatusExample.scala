@@ -25,12 +25,34 @@ trait SchemaDatafeedStatusExample extends js.Object {
 
 object SchemaDatafeedStatusExample {
   @scala.inline
-  def apply(itemId: String = null, lineNumber: String = null, value: String = null): SchemaDatafeedStatusExample = {
+  def apply(): SchemaDatafeedStatusExample = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDatafeedStatusExample]
   }
+  @scala.inline
+  implicit class SchemaDatafeedStatusExampleOps[Self <: SchemaDatafeedStatusExample] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemId(value: String): Self = this.set("itemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemId: Self = this.set("itemId", js.undefined)
+    @scala.inline
+    def setLineNumber(value: String): Self = this.set("lineNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineNumber: Self = this.set("lineNumber", js.undefined)
+    @scala.inline
+    def setValue(value: String): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

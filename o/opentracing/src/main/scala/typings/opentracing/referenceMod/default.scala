@@ -18,21 +18,5 @@ class default protected () extends Reference {
     */
   def this(`type`: String, referencedContext: typings.opentracing.spanContextMod.default) = this()
   def this(`type`: String, referencedContext: typings.opentracing.spanMod.default) = this()
-  /* CompleteClass */
-  override var _referencedContext: typings.opentracing.spanContextMod.default = js.native
-  /* CompleteClass */
-  override var _type: String = js.native
-  /**
-    * @return {SpanContext} The SpanContext being referred to (e.g., the
-    *         parent in a REFERENCE_CHILD_OF Reference).
-    */
-  /* CompleteClass */
-  override def referencedContext(): typings.opentracing.spanContextMod.default = js.native
-  /**
-    * @return {string} The Reference type (e.g., REFERENCE_CHILD_OF or
-    *         REFERENCE_FOLLOWS_FROM).
-    */
-  /* CompleteClass */
-  override def `type`(): String = js.native
 }
 

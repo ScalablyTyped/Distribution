@@ -269,6 +269,7 @@ object mod extends js.Object {
       * @param transferSize
       */
     def startPoll(): Unit = js.native
+    def startPoll(nTransfers: js.UndefOr[scala.Nothing], transferSize: Double): Unit = js.native
     def startPoll(nTransfers: Double): Unit = js.native
     def startPoll(nTransfers: Double, transferSize: Double): Unit = js.native
     /**
@@ -347,6 +348,7 @@ object mod extends js.Object {
       */
     def release(): Unit = js.native
     def release(cb: js.Function1[/* err */ js.UndefOr[String], Unit]): Unit = js.native
+    def release(closeEndpoints: js.UndefOr[scala.Nothing], cb: js.Function1[/* err */ js.UndefOr[String], Unit]): Unit = js.native
     def release(closeEndpoints: Boolean): Unit = js.native
     def release(closeEndpoints: Boolean, cb: js.Function1[/* err */ js.UndefOr[String], Unit]): Unit = js.native
     /**
@@ -388,10 +390,6 @@ object mod extends js.Object {
   @js.native
   class LibUSBException () extends Error {
     var errno: Double = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native

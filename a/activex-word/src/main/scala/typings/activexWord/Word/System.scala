@@ -26,6 +26,7 @@ trait System extends js.Object {
   @JSName("Word.System_typekey")
   var WordDotSystem_typekey: System = js.native
   def Connect(Path: String): Unit = js.native
+  def Connect(Path: String, Drive: js.UndefOr[scala.Nothing], Password: js.Any): Unit = js.native
   def Connect(Path: String, Drive: js.Any): Unit = js.native
   def Connect(Path: String, Drive: js.Any, Password: js.Any): Unit = js.native
   def MSInfo(): Unit = js.native

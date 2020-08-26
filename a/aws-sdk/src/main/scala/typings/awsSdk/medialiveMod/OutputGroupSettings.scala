@@ -18,26 +18,54 @@ trait OutputGroupSettings extends js.Object {
 
 object OutputGroupSettings {
   @scala.inline
-  def apply(
-    ArchiveGroupSettings: ArchiveGroupSettings = null,
-    FrameCaptureGroupSettings: FrameCaptureGroupSettings = null,
-    HlsGroupSettings: HlsGroupSettings = null,
-    MediaPackageGroupSettings: MediaPackageGroupSettings = null,
-    MsSmoothGroupSettings: MsSmoothGroupSettings = null,
-    MultiplexGroupSettings: MultiplexGroupSettings = null,
-    RtmpGroupSettings: RtmpGroupSettings = null,
-    UdpGroupSettings: UdpGroupSettings = null
-  ): OutputGroupSettings = {
+  def apply(): OutputGroupSettings = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveGroupSettings != null) __obj.updateDynamic("ArchiveGroupSettings")(ArchiveGroupSettings.asInstanceOf[js.Any])
-    if (FrameCaptureGroupSettings != null) __obj.updateDynamic("FrameCaptureGroupSettings")(FrameCaptureGroupSettings.asInstanceOf[js.Any])
-    if (HlsGroupSettings != null) __obj.updateDynamic("HlsGroupSettings")(HlsGroupSettings.asInstanceOf[js.Any])
-    if (MediaPackageGroupSettings != null) __obj.updateDynamic("MediaPackageGroupSettings")(MediaPackageGroupSettings.asInstanceOf[js.Any])
-    if (MsSmoothGroupSettings != null) __obj.updateDynamic("MsSmoothGroupSettings")(MsSmoothGroupSettings.asInstanceOf[js.Any])
-    if (MultiplexGroupSettings != null) __obj.updateDynamic("MultiplexGroupSettings")(MultiplexGroupSettings.asInstanceOf[js.Any])
-    if (RtmpGroupSettings != null) __obj.updateDynamic("RtmpGroupSettings")(RtmpGroupSettings.asInstanceOf[js.Any])
-    if (UdpGroupSettings != null) __obj.updateDynamic("UdpGroupSettings")(UdpGroupSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OutputGroupSettings]
   }
+  @scala.inline
+  implicit class OutputGroupSettingsOps[Self <: OutputGroupSettings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveGroupSettings(value: ArchiveGroupSettings): Self = this.set("ArchiveGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveGroupSettings: Self = this.set("ArchiveGroupSettings", js.undefined)
+    @scala.inline
+    def setFrameCaptureGroupSettings(value: FrameCaptureGroupSettings): Self = this.set("FrameCaptureGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameCaptureGroupSettings: Self = this.set("FrameCaptureGroupSettings", js.undefined)
+    @scala.inline
+    def setHlsGroupSettings(value: HlsGroupSettings): Self = this.set("HlsGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsGroupSettings: Self = this.set("HlsGroupSettings", js.undefined)
+    @scala.inline
+    def setMediaPackageGroupSettings(value: MediaPackageGroupSettings): Self = this.set("MediaPackageGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMediaPackageGroupSettings: Self = this.set("MediaPackageGroupSettings", js.undefined)
+    @scala.inline
+    def setMsSmoothGroupSettings(value: MsSmoothGroupSettings): Self = this.set("MsSmoothGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMsSmoothGroupSettings: Self = this.set("MsSmoothGroupSettings", js.undefined)
+    @scala.inline
+    def setMultiplexGroupSettings(value: MultiplexGroupSettings): Self = this.set("MultiplexGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiplexGroupSettings: Self = this.set("MultiplexGroupSettings", js.undefined)
+    @scala.inline
+    def setRtmpGroupSettings(value: RtmpGroupSettings): Self = this.set("RtmpGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRtmpGroupSettings: Self = this.set("RtmpGroupSettings", js.undefined)
+    @scala.inline
+    def setUdpGroupSettings(value: UdpGroupSettings): Self = this.set("UdpGroupSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUdpGroupSettings: Self = this.set("UdpGroupSettings", js.undefined)
+  }
+  
 }
 

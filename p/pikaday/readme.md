@@ -12,7 +12,7 @@ A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS
 | Keywords           | datepicker, calendar, date |
 | # releases         | 2 |
 | # dependents       | 127 |
-| # downloads        | 6617548 |
+| # downloads        | 6750989 |
 | # stars            | 15 |
 
 ## Links

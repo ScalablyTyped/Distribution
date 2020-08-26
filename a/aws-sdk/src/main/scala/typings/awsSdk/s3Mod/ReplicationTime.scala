@@ -22,5 +22,22 @@ object ReplicationTime {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationTime]
   }
+  @scala.inline
+  implicit class ReplicationTimeOps[Self <: ReplicationTime] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: ReplicationTimeStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: ReplicationTimeValue): Self = this.set("Time", value.asInstanceOf[js.Any])
+  }
+  
 }
 

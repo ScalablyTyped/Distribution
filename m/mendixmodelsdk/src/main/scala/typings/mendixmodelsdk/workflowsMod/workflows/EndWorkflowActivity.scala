@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
 - typings.mendixmodelsdk.elementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.elementsMod.IElement because Already inherited
 - typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowActivity because Already inherited
-- typings.mendixmodelsdk.workflowsMod.workflows.IEndWorkflowActivity because var conflicts: containerAsWorkflow, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.EndWorkflowActivity")
+- typings.mendixmodelsdk.workflowsMod.workflows.IEndWorkflowActivity because var conflicts: caption, containerAsWorkflow, id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.EndWorkflowActivity")
 @js.native
 class EndWorkflowActivity protected () extends WorkflowActivity {
   def this(

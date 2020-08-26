@@ -120,6 +120,10 @@ trait BonjourService extends Proxy {
     * Asynchronously resolve a Bonjour service from the network.  Must be done before attempting to access the service's socket information, if a remote service.  You cannot resolve a locally published service.
     */
   def resolve(): Unit = js.native
+  def resolve(
+    timeout: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* param0 */ Error, /* param1 */ Boolean, Unit]
+  ): Unit = js.native
   def resolve(timeout: Double): Unit = js.native
   def resolve(timeout: Double, callback: js.Function2[/* param0 */ Error, /* param1 */ Boolean, Unit]): Unit = js.native
   /**

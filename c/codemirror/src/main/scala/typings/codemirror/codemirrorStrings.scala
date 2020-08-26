@@ -279,6 +279,9 @@ object codemirrorStrings {
   sealed trait keyup extends DOMEvent
   
   @js.native
+  sealed trait lineNumberFormatter extends js.Object
+  
+  @js.native
   sealed trait lineNumbers extends js.Object
   
   @js.native
@@ -340,6 +343,12 @@ object codemirrorStrings {
   
   @js.native
   sealed trait mouseup extends js.Object
+  
+  @js.native
+  sealed trait onDragEvent extends js.Object
+  
+  @js.native
+  sealed trait onKeyEvent extends js.Object
   
   @js.native
   sealed trait optionChange extends js.Object
@@ -762,6 +771,8 @@ object codemirrorStrings {
   @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
   @scala.inline
+  def lineNumberFormatter: lineNumberFormatter = "lineNumberFormatter".asInstanceOf[lineNumberFormatter]
+  @scala.inline
   def lineNumbers: lineNumbers = "lineNumbers".asInstanceOf[lineNumbers]
   @scala.inline
   def lineWiseCopyCut: lineWiseCopyCut = "lineWiseCopyCut".asInstanceOf[lineWiseCopyCut]
@@ -803,6 +814,10 @@ object codemirrorStrings {
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  @scala.inline
+  def onDragEvent: onDragEvent = "onDragEvent".asInstanceOf[onDragEvent]
+  @scala.inline
+  def onKeyEvent: onKeyEvent = "onKeyEvent".asInstanceOf[onKeyEvent]
   @scala.inline
   def optionChange: optionChange = "optionChange".asInstanceOf[optionChange]
   @scala.inline

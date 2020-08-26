@@ -9,19 +9,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeneralPropTypes extends ClassNameProps {
-  var float: js.UndefOr[FloatTypes] = js.undefined
-  var hideFor: js.UndefOr[medium | large] = js.undefined
-  var hideOnlyFor: js.UndefOr[Breakpoints] = js.undefined
-  var isClearfix: js.UndefOr[Boolean] = js.undefined
-  var isHidden: js.UndefOr[Boolean] = js.undefined
-  var isInvisible: js.UndefOr[Boolean] = js.undefined
-  var showFor: js.UndefOr[Breakpoints] = js.undefined
-  var showForLandscape: js.UndefOr[Boolean] = js.undefined
-  var showForPortrait: js.UndefOr[Boolean] = js.undefined
-  var showForSr: js.UndefOr[Boolean] = js.undefined
-  var showOnFocus: js.UndefOr[Boolean] = js.undefined
-  var showOnlyFor: js.UndefOr[Breakpoints] = js.undefined
+  var float: js.UndefOr[FloatTypes] = js.native
+  var hideFor: js.UndefOr[medium | large] = js.native
+  var hideOnlyFor: js.UndefOr[Breakpoints] = js.native
+  var isClearfix: js.UndefOr[Boolean] = js.native
+  var isHidden: js.UndefOr[Boolean] = js.native
+  var isInvisible: js.UndefOr[Boolean] = js.native
+  var showFor: js.UndefOr[Breakpoints] = js.native
+  var showForLandscape: js.UndefOr[Boolean] = js.native
+  var showForPortrait: js.UndefOr[Boolean] = js.native
+  var showForSr: js.UndefOr[Boolean] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showOnlyFor: js.UndefOr[Breakpoints] = js.native
 }
 
 @JSImport("react-foundation/utils", "GeneralPropTypes")

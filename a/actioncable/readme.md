@@ -10,9 +10,9 @@ WebSocket framework for Ruby on Rails.
 | ------------------ | :-------------: |
 | Full name          | actioncable |
 | Keywords           | websockets, actioncable, rails |
-| # releases         | 23 |
+| # releases         | 25 |
 | # dependents       | 33 |
-| # downloads        | 2321359 |
+| # downloads        | 2364567 |
 | # stars            | 6 |
 
 ## Links

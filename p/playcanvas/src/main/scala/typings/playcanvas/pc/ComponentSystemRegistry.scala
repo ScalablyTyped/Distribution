@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new ComponentSystemRegistry.
   */
+@js.native
 trait ComponentSystemRegistry extends js.Object
 

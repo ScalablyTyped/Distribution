@@ -31,20 +31,44 @@ trait StartSegmentDetectionRequest extends js.Object {
 
 object StartSegmentDetectionRequest {
   @scala.inline
-  def apply(
-    SegmentTypes: SegmentTypes,
-    Video: Video,
-    ClientRequestToken: ClientRequestToken = null,
-    Filters: StartSegmentDetectionFilters = null,
-    JobTag: JobTag = null,
-    NotificationChannel: NotificationChannel = null
-  ): StartSegmentDetectionRequest = {
+  def apply(SegmentTypes: SegmentTypes, Video: Video): StartSegmentDetectionRequest = {
     val __obj = js.Dynamic.literal(SegmentTypes = SegmentTypes.asInstanceOf[js.Any], Video = Video.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (JobTag != null) __obj.updateDynamic("JobTag")(JobTag.asInstanceOf[js.Any])
-    if (NotificationChannel != null) __obj.updateDynamic("NotificationChannel")(NotificationChannel.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSegmentDetectionRequest]
   }
+  @scala.inline
+  implicit class StartSegmentDetectionRequestOps[Self <: StartSegmentDetectionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSegmentTypesVarargs(value: SegmentType*): Self = this.set("SegmentTypes", js.Array(value :_*))
+    @scala.inline
+    def setSegmentTypes(value: SegmentTypes): Self = this.set("SegmentTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVideo(value: Video): Self = this.set("Video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setFilters(value: StartSegmentDetectionFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setJobTag(value: JobTag): Self = this.set("JobTag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobTag: Self = this.set("JobTag", js.undefined)
+    @scala.inline
+    def setNotificationChannel(value: NotificationChannel): Self = this.set("NotificationChannel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationChannel: Self = this.set("NotificationChannel", js.undefined)
+  }
+  
 }
 

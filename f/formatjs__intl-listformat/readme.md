@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-listformat
 
-Typings are for version 1.4.2
+Typings are for version 4.0.0
 
 ## Library description:
 Formats JS list in a i18n-safe way
@@ -10,9 +10,9 @@ Formats JS list in a i18n-safe way
 | ------------------ | :-------------: |
 | Full name          | @formatjs/intl-listformat |
 | Keywords           | intl, i18n, list, format, formatjs |
-| # releases         | 19 |
+| # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 389287 |
+| # downloads        | 460912 |
 | # stars            | 0 |
 
 ## Links

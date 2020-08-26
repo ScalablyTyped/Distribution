@@ -18,11 +18,30 @@ trait TargetGrant extends js.Object {
 
 object TargetGrant {
   @scala.inline
-  def apply(Grantee: Grantee = null, Permission: BucketLogsPermission = null): TargetGrant = {
+  def apply(): TargetGrant = {
     val __obj = js.Dynamic.literal()
-    if (Grantee != null) __obj.updateDynamic("Grantee")(Grantee.asInstanceOf[js.Any])
-    if (Permission != null) __obj.updateDynamic("Permission")(Permission.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGrant]
   }
+  @scala.inline
+  implicit class TargetGrantOps[Self <: TargetGrant] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGrantee(value: Grantee): Self = this.set("Grantee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantee: Self = this.set("Grantee", js.undefined)
+    @scala.inline
+    def setPermission(value: BucketLogsPermission): Self = this.set("Permission", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermission: Self = this.set("Permission", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,30 @@ trait RejectResourceShareInvitationResponse extends js.Object {
 
 object RejectResourceShareInvitationResponse {
   @scala.inline
-  def apply(clientToken: String = null, resourceShareInvitation: ResourceShareInvitation = null): RejectResourceShareInvitationResponse = {
+  def apply(): RejectResourceShareInvitationResponse = {
     val __obj = js.Dynamic.literal()
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (resourceShareInvitation != null) __obj.updateDynamic("resourceShareInvitation")(resourceShareInvitation.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectResourceShareInvitationResponse]
   }
+  @scala.inline
+  implicit class RejectResourceShareInvitationResponseOps[Self <: RejectResourceShareInvitationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClientToken(value: String): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setResourceShareInvitation(value: ResourceShareInvitation): Self = this.set("resourceShareInvitation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceShareInvitation: Self = this.set("resourceShareInvitation", js.undefined)
+  }
+  
 }
 

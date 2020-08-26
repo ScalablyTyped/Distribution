@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends ComponentDidMount {
   def this(props: IMultiPickerProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: IMultiPickerProps, context: js.Any) = this()
 }
 
@@ -22,7 +23,7 @@ class default () extends ComponentDidMount {
 object default
   extends Instantiable0[ComponentDidMount]
      with Instantiable1[/* props */ IMultiPickerProps, ComponentDidMount]
-     with Instantiable2[/* props */ IMultiPickerProps, /* context */ js.Any, ComponentDidMount] {
+     with Instantiable2[js.UndefOr[/* props */ IMultiPickerProps], /* context */ js.Any, ComponentDidMount] {
   var defaultProps: OnValueChange = js.native
 }
 

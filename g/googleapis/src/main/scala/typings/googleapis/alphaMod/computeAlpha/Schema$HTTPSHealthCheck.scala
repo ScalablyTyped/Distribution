@@ -53,24 +53,50 @@ trait Schema$HTTPSHealthCheck extends js.Object {
 
 object Schema$HTTPSHealthCheck {
   @scala.inline
-  def apply(
-    host: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    portName: String = null,
-    portSpecification: String = null,
-    proxyHeader: String = null,
-    requestPath: String = null,
-    response: String = null
-  ): Schema$HTTPSHealthCheck = {
+  def apply(): Schema$HTTPSHealthCheck = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (portName != null) __obj.updateDynamic("portName")(portName.asInstanceOf[js.Any])
-    if (portSpecification != null) __obj.updateDynamic("portSpecification")(portSpecification.asInstanceOf[js.Any])
-    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader.asInstanceOf[js.Any])
-    if (requestPath != null) __obj.updateDynamic("requestPath")(requestPath.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
     __obj.asInstanceOf[Schema$HTTPSHealthCheck]
   }
+  @scala.inline
+  implicit class Schema$HTTPSHealthCheckOps[Self <: Schema$HTTPSHealthCheck] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPortName(value: String): Self = this.set("portName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortName: Self = this.set("portName", js.undefined)
+    @scala.inline
+    def setPortSpecification(value: String): Self = this.set("portSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortSpecification: Self = this.set("portSpecification", js.undefined)
+    @scala.inline
+    def setProxyHeader(value: String): Self = this.set("proxyHeader", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxyHeader: Self = this.set("proxyHeader", js.undefined)
+    @scala.inline
+    def setRequestPath(value: String): Self = this.set("requestPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPath: Self = this.set("requestPath", js.undefined)
+    @scala.inline
+    def setResponse(value: String): Self = this.set("response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("response", js.undefined)
+  }
+  
 }
 

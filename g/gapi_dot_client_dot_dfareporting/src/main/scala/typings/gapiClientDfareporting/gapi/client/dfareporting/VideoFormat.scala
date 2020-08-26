@@ -4,35 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VideoFormat extends js.Object {
   /** File type of the video format. */
-  var fileType: js.UndefOr[String] = js.undefined
+  var fileType: js.UndefOr[String] = js.native
   /** ID of the video format. */
-  var id: js.UndefOr[Double] = js.undefined
+  var id: js.UndefOr[Double] = js.native
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#videoFormat". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** The resolution of this video format. */
-  var resolution: js.UndefOr[Size] = js.undefined
+  var resolution: js.UndefOr[Size] = js.native
   /** The target bit rate of this video format. */
-  var targetBitRate: js.UndefOr[Double] = js.undefined
+  var targetBitRate: js.UndefOr[Double] = js.native
 }
 
 object VideoFormat {
   @scala.inline
-  def apply(
-    fileType: String = null,
-    id: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    resolution: Size = null,
-    targetBitRate: js.UndefOr[Double] = js.undefined
-  ): VideoFormat = {
+  def apply(): VideoFormat = {
     val __obj = js.Dynamic.literal()
-    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (!js.isUndefined(targetBitRate)) __obj.updateDynamic("targetBitRate")(targetBitRate.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoFormat]
   }
+  @scala.inline
+  implicit class VideoFormatOps[Self <: VideoFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileType(value: String): Self = this.set("fileType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileType: Self = this.set("fileType", js.undefined)
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setResolution(value: Size): Self = this.set("resolution", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResolution: Self = this.set("resolution", js.undefined)
+    @scala.inline
+    def setTargetBitRate(value: Double): Self = this.set("targetBitRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetBitRate: Self = this.set("targetBitRate", js.undefined)
+  }
+  
 }
 

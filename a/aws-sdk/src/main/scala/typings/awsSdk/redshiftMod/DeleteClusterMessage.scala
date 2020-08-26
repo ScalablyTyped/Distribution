@@ -26,17 +26,36 @@ trait DeleteClusterMessage extends js.Object {
 
 object DeleteClusterMessage {
   @scala.inline
-  def apply(
-    ClusterIdentifier: String,
-    FinalClusterSnapshotIdentifier: String = null,
-    FinalClusterSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined,
-    SkipFinalClusterSnapshot: js.UndefOr[Boolean] = js.undefined
-  ): DeleteClusterMessage = {
+  def apply(ClusterIdentifier: String): DeleteClusterMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
-    if (FinalClusterSnapshotIdentifier != null) __obj.updateDynamic("FinalClusterSnapshotIdentifier")(FinalClusterSnapshotIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(FinalClusterSnapshotRetentionPeriod)) __obj.updateDynamic("FinalClusterSnapshotRetentionPeriod")(FinalClusterSnapshotRetentionPeriod.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SkipFinalClusterSnapshot)) __obj.updateDynamic("SkipFinalClusterSnapshot")(SkipFinalClusterSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClusterMessage]
   }
+  @scala.inline
+  implicit class DeleteClusterMessageOps[Self <: DeleteClusterMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterIdentifier(value: String): Self = this.set("ClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFinalClusterSnapshotIdentifier(value: String): Self = this.set("FinalClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalClusterSnapshotIdentifier: Self = this.set("FinalClusterSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setFinalClusterSnapshotRetentionPeriod(value: IntegerOptional): Self = this.set("FinalClusterSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinalClusterSnapshotRetentionPeriod: Self = this.set("FinalClusterSnapshotRetentionPeriod", js.undefined)
+    @scala.inline
+    def setSkipFinalClusterSnapshot(value: Boolean): Self = this.set("SkipFinalClusterSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFinalClusterSnapshot: Self = this.set("SkipFinalClusterSnapshot", js.undefined)
+  }
+  
 }
 

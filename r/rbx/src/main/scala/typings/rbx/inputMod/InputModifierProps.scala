@@ -28,38 +28,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputModifierProps extends js.Object {
   var color: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
-  var rounded: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[small | medium | large] = js.undefined
-  var state: js.UndefOr[focused | hovered] = js.undefined
-  var static: js.UndefOr[Boolean] = js.undefined
-  var `type`: js.UndefOr[text | email | tel | password | number | search | color | date | time] = js.undefined
+  ] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[small | medium | large] = js.native
+  var state: js.UndefOr[focused | hovered] = js.native
+  var static: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[text | email | tel | password | number | search | color | date | time] = js.native
 }
 
 object InputModifierProps {
   @scala.inline
-  def apply(
-    color: primary | success | info | warning | danger | light | dark | white | black | link = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rounded: js.UndefOr[Boolean] = js.undefined,
-    size: small | medium | large = null,
-    state: focused | hovered = null,
-    static: js.UndefOr[Boolean] = js.undefined,
-    `type`: text | email | tel | password | number | search | color | date | time = null
-  ): InputModifierProps = {
+  def apply(): InputModifierProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(static)) __obj.updateDynamic("static")(static.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputModifierProps]
   }
+  @scala.inline
+  implicit class InputModifierPropsOps[Self <: InputModifierProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRounded(value: Boolean): Self = this.set("rounded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRounded: Self = this.set("rounded", js.undefined)
+    @scala.inline
+    def setSize(value: small | medium | large): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setState(value: focused | hovered): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatic(value: Boolean): Self = this.set("static", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatic: Self = this.set("static", js.undefined)
+    @scala.inline
+    def setType(value: text | email | tel | password | number | search | color | date | time): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

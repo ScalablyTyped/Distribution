@@ -23,7 +23,30 @@ object mod extends js.Object {
     * @returns { breadcrumb, menuData}
     */
   def transformRoute(routes: js.Array[Route]): Breadcrumb = js.native
+  def transformRoute(
+    routes: js.Array[Route],
+    locale: js.UndefOr[scala.Nothing],
+    formatMessage: js.UndefOr[scala.Nothing],
+    ignoreFilter: Boolean
+  ): Breadcrumb = js.native
+  def transformRoute(
+    routes: js.Array[Route],
+    locale: js.UndefOr[scala.Nothing],
+    formatMessage: js.Function1[/* message */ MessageDescriptor, String]
+  ): Breadcrumb = js.native
+  def transformRoute(
+    routes: js.Array[Route],
+    locale: js.UndefOr[scala.Nothing],
+    formatMessage: js.Function1[/* message */ MessageDescriptor, String],
+    ignoreFilter: Boolean
+  ): Breadcrumb = js.native
   def transformRoute(routes: js.Array[Route], locale: Boolean): Breadcrumb = js.native
+  def transformRoute(
+    routes: js.Array[Route],
+    locale: Boolean,
+    formatMessage: js.UndefOr[scala.Nothing],
+    ignoreFilter: Boolean
+  ): Breadcrumb = js.native
   def transformRoute(
     routes: js.Array[Route],
     locale: Boolean,

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object restElement extends js.Object {
   def apply(): RestElement_ = js.native
+  def apply(argument: js.UndefOr[scala.Nothing], typeAnnotation: TypeAnnotation_): RestElement_ = js.native
   def apply(argument: LVal): RestElement_ = js.native
   def apply(argument: LVal, typeAnnotation: TypeAnnotation_): RestElement_ = js.native
 }

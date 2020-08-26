@@ -5,11 +5,11 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.easyXapiSupertest.anon.FnCall
 import typings.easyXapiSupertest.anon.FnCallSRadix
 import typings.easyXapiSupertest.anon.Instantiable
+import typings.node.consoleMod.global.Console_
 import typings.std.ArrayBufferConstructor
 import typings.std.ArrayBufferLike
 import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
-import typings.std.Console
 import typings.std.DataViewConstructor
 import typings.std.DateConstructor
 import typings.std.ErrorConstructor
@@ -110,7 +110,7 @@ trait Global extends js.Object {
   var Uint8ClampedArray: js.Function = js.native
   var WeakMap: WeakMapConstructor with (Instantiable0[typings.std.global.WeakMap[js.Object, js.Object]]) = js.native
   var WeakSet: js.Function = js.native
-  var console: Console = js.native
+  var console: Console_ = js.native
   @JSName("decodeURIComponent")
   var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ String, String] = js.native
   @JSName("decodeURI")

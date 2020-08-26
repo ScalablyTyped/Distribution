@@ -31,6 +31,7 @@ class ResourceUsersDataset protected () extends js.Object {
     */
   def aggregate(): GaxiosPromise[SchemaAggregateResponse] = js.native
   def aggregate(callback: BodyResponseCallback[SchemaAggregateResponse]): Unit = js.native
+  def aggregate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAggregateResponse] = js.native
   def aggregate(params: ParamsResourceUsersDatasetAggregate): GaxiosPromise[SchemaAggregateResponse] = js.native
   def aggregate(
     params: ParamsResourceUsersDatasetAggregate,

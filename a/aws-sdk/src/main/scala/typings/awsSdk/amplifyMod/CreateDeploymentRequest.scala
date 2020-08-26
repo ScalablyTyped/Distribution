@@ -22,10 +22,30 @@ trait CreateDeploymentRequest extends js.Object {
 
 object CreateDeploymentRequest {
   @scala.inline
-  def apply(appId: AppId, branchName: BranchName, fileMap: FileMap = null): CreateDeploymentRequest = {
+  def apply(appId: AppId, branchName: BranchName): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
-    if (fileMap != null) __obj.updateDynamic("fileMap")(fileMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
+  @scala.inline
+  implicit class CreateDeploymentRequestOps[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppId(value: AppId): Self = this.set("appId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranchName(value: BranchName): Self = this.set("branchName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFileMap(value: FileMap): Self = this.set("fileMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileMap: Self = this.set("fileMap", js.undefined)
+  }
+  
 }
 

@@ -3,7 +3,7 @@ package typings.terminalKit.textBufferMod
 import typings.terminalKit.anon.FinalCall
 import typings.terminalKit.anon.Height
 import typings.terminalKit.anon.Misc
-import typings.terminalKit.anon.`2`
+import typings.terminalKit.anon.`4`
 import typings.terminalKit.rectMod.Region
 import typings.terminalKit.screenBufferMod.Attributes
 import typings.terminalKit.screenBufferMod.DrawOptions
@@ -22,7 +22,7 @@ trait TextBuffer extends js.Object {
   def draw(): Unit = js.native
   def draw(options: DrawOptions): Unit = js.native
   def drawCursor(): Unit = js.native
-  def drawCursor(options: `2`): Unit = js.native
+  def drawCursor(options: `4`): Unit = js.native
   def getContentSize(): Height = js.native
   def getHidden(): Boolean = js.native
   def getMisc(): js.Any = js.native

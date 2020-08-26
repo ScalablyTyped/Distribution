@@ -30,20 +30,42 @@ trait BillingRecord extends js.Object {
 
 object BillingRecord {
   @scala.inline
-  def apply(
-    BillDate: Timestamp = null,
-    DomainName: DomainName = null,
-    InvoiceId: InvoiceId = null,
-    Operation: OperationType = null,
-    Price: js.UndefOr[Price] = js.undefined
-  ): BillingRecord = {
+  def apply(): BillingRecord = {
     val __obj = js.Dynamic.literal()
-    if (BillDate != null) __obj.updateDynamic("BillDate")(BillDate.asInstanceOf[js.Any])
-    if (DomainName != null) __obj.updateDynamic("DomainName")(DomainName.asInstanceOf[js.Any])
-    if (InvoiceId != null) __obj.updateDynamic("InvoiceId")(InvoiceId.asInstanceOf[js.Any])
-    if (Operation != null) __obj.updateDynamic("Operation")(Operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(Price)) __obj.updateDynamic("Price")(Price.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BillingRecord]
   }
+  @scala.inline
+  implicit class BillingRecordOps[Self <: BillingRecord] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillDate(value: Timestamp): Self = this.set("BillDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillDate: Self = this.set("BillDate", js.undefined)
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainName: Self = this.set("DomainName", js.undefined)
+    @scala.inline
+    def setInvoiceId(value: InvoiceId): Self = this.set("InvoiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvoiceId: Self = this.set("InvoiceId", js.undefined)
+    @scala.inline
+    def setOperation(value: OperationType): Self = this.set("Operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("Operation", js.undefined)
+    @scala.inline
+    def setPrice(value: Price): Self = this.set("Price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrice: Self = this.set("Price", js.undefined)
+  }
+  
 }
 

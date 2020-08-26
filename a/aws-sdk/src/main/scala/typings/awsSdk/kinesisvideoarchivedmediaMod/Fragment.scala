@@ -30,20 +30,42 @@ trait Fragment extends js.Object {
 
 object Fragment {
   @scala.inline
-  def apply(
-    FragmentLengthInMilliseconds: js.UndefOr[Long] = js.undefined,
-    FragmentNumber: FragmentNumberString = null,
-    FragmentSizeInBytes: js.UndefOr[Long] = js.undefined,
-    ProducerTimestamp: Timestamp = null,
-    ServerTimestamp: Timestamp = null
-  ): Fragment = {
+  def apply(): Fragment = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(FragmentLengthInMilliseconds)) __obj.updateDynamic("FragmentLengthInMilliseconds")(FragmentLengthInMilliseconds.get.asInstanceOf[js.Any])
-    if (FragmentNumber != null) __obj.updateDynamic("FragmentNumber")(FragmentNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(FragmentSizeInBytes)) __obj.updateDynamic("FragmentSizeInBytes")(FragmentSizeInBytes.get.asInstanceOf[js.Any])
-    if (ProducerTimestamp != null) __obj.updateDynamic("ProducerTimestamp")(ProducerTimestamp.asInstanceOf[js.Any])
-    if (ServerTimestamp != null) __obj.updateDynamic("ServerTimestamp")(ServerTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fragment]
   }
+  @scala.inline
+  implicit class FragmentOps[Self <: Fragment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFragmentLengthInMilliseconds(value: Long): Self = this.set("FragmentLengthInMilliseconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentLengthInMilliseconds: Self = this.set("FragmentLengthInMilliseconds", js.undefined)
+    @scala.inline
+    def setFragmentNumber(value: FragmentNumberString): Self = this.set("FragmentNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentNumber: Self = this.set("FragmentNumber", js.undefined)
+    @scala.inline
+    def setFragmentSizeInBytes(value: Long): Self = this.set("FragmentSizeInBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFragmentSizeInBytes: Self = this.set("FragmentSizeInBytes", js.undefined)
+    @scala.inline
+    def setProducerTimestamp(value: Timestamp): Self = this.set("ProducerTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducerTimestamp: Self = this.set("ProducerTimestamp", js.undefined)
+    @scala.inline
+    def setServerTimestamp(value: Timestamp): Self = this.set("ServerTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerTimestamp: Self = this.set("ServerTimestamp", js.undefined)
+  }
+  
 }
 

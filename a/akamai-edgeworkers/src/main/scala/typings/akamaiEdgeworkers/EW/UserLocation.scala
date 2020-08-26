@@ -12,27 +12,28 @@ import scala.scalajs.js.annotation._
   * * If user location properties can not be supplied for any reason,
   *   undefined is returned for that property
   */
+@js.native
 trait UserLocation extends js.Object {
   /**
     * The city value is the city (within a 50-mile radius) that the IP
     * address maps to.
     */
-  val city: js.UndefOr[String] = js.undefined
+  val city: js.UndefOr[String] = js.native
   /**
     * The continent value is a two-letter code for the continent that
     * the IP address maps to.
     */
-  val continent: js.UndefOr[String] = js.undefined
+  val continent: js.UndefOr[String] = js.native
   /**
     * The country value is an ISO-3166, two-letter code for the country
     * where the IP address maps to.
     */
-  val country: js.UndefOr[String] = js.undefined
+  val country: js.UndefOr[String] = js.native
   /**
     * The region value is an ISO-3166, two-letter code for the state,
     * province, or region where the IP address maps to.
     */
-  val region: js.UndefOr[String] = js.undefined
+  val region: js.UndefOr[String] = js.native
   /**
     * The zipCode value is the zipcode that the IP address maps to
     * (multiple values possible).
@@ -57,25 +58,47 @@ trait UserLocation extends js.Object {
     *
     * See the EdgeScape Users Guide for more details.
     */
-  val zipCode: js.UndefOr[String] = js.undefined
+  val zipCode: js.UndefOr[String] = js.native
 }
 
 object UserLocation {
   @scala.inline
-  def apply(
-    city: String = null,
-    continent: String = null,
-    country: String = null,
-    region: String = null,
-    zipCode: String = null
-  ): UserLocation = {
+  def apply(): UserLocation = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (continent != null) __obj.updateDynamic("continent")(continent.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (zipCode != null) __obj.updateDynamic("zipCode")(zipCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserLocation]
   }
+  @scala.inline
+  implicit class UserLocationOps[Self <: UserLocation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCity(value: String): Self = this.set("city", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCity: Self = this.set("city", js.undefined)
+    @scala.inline
+    def setContinent(value: String): Self = this.set("continent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinent: Self = this.set("continent", js.undefined)
+    @scala.inline
+    def setCountry(value: String): Self = this.set("country", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCountry: Self = this.set("country", js.undefined)
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setZipCode(value: String): Self = this.set("zipCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZipCode: Self = this.set("zipCode", js.undefined)
+  }
+  
 }
 

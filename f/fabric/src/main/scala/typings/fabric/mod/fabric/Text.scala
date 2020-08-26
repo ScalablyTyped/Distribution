@@ -33,6 +33,7 @@ object Text extends js.Object {
     * @param {Object} [options] Options object
     */
   def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Text = js.native
+  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: TextOptions): typings.fabric.fabricImplMod.Text = js.native
   def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Text = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): typings.fabric.fabricImplMod.Text = js.native
   /**

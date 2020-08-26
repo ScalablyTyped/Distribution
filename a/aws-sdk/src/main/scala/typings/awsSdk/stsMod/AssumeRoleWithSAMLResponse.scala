@@ -42,26 +42,54 @@ trait AssumeRoleWithSAMLResponse extends js.Object {
 
 object AssumeRoleWithSAMLResponse {
   @scala.inline
-  def apply(
-    AssumedRoleUser: AssumedRoleUser = null,
-    Audience: Audience = null,
-    Credentials: Credentials = null,
-    Issuer: Issuer = null,
-    NameQualifier: NameQualifier = null,
-    PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined,
-    Subject: Subject = null,
-    SubjectType: SubjectType = null
-  ): AssumeRoleWithSAMLResponse = {
+  def apply(): AssumeRoleWithSAMLResponse = {
     val __obj = js.Dynamic.literal()
-    if (AssumedRoleUser != null) __obj.updateDynamic("AssumedRoleUser")(AssumedRoleUser.asInstanceOf[js.Any])
-    if (Audience != null) __obj.updateDynamic("Audience")(Audience.asInstanceOf[js.Any])
-    if (Credentials != null) __obj.updateDynamic("Credentials")(Credentials.asInstanceOf[js.Any])
-    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer.asInstanceOf[js.Any])
-    if (NameQualifier != null) __obj.updateDynamic("NameQualifier")(NameQualifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(PackedPolicySize)) __obj.updateDynamic("PackedPolicySize")(PackedPolicySize.get.asInstanceOf[js.Any])
-    if (Subject != null) __obj.updateDynamic("Subject")(Subject.asInstanceOf[js.Any])
-    if (SubjectType != null) __obj.updateDynamic("SubjectType")(SubjectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleWithSAMLResponse]
   }
+  @scala.inline
+  implicit class AssumeRoleWithSAMLResponseOps[Self <: AssumeRoleWithSAMLResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssumedRoleUser(value: AssumedRoleUser): Self = this.set("AssumedRoleUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssumedRoleUser: Self = this.set("AssumedRoleUser", js.undefined)
+    @scala.inline
+    def setAudience(value: Audience): Self = this.set("Audience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudience: Self = this.set("Audience", js.undefined)
+    @scala.inline
+    def setCredentials(value: Credentials): Self = this.set("Credentials", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentials: Self = this.set("Credentials", js.undefined)
+    @scala.inline
+    def setIssuer(value: Issuer): Self = this.set("Issuer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssuer: Self = this.set("Issuer", js.undefined)
+    @scala.inline
+    def setNameQualifier(value: NameQualifier): Self = this.set("NameQualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNameQualifier: Self = this.set("NameQualifier", js.undefined)
+    @scala.inline
+    def setPackedPolicySize(value: nonNegativeIntegerType): Self = this.set("PackedPolicySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePackedPolicySize: Self = this.set("PackedPolicySize", js.undefined)
+    @scala.inline
+    def setSubject(value: Subject): Self = this.set("Subject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubject: Self = this.set("Subject", js.undefined)
+    @scala.inline
+    def setSubjectType(value: SubjectType): Self = this.set("SubjectType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubjectType: Self = this.set("SubjectType", js.undefined)
+  }
+  
 }
 

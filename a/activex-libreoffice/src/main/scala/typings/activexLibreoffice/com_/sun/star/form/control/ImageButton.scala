@@ -37,6 +37,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.awt.UnoControlModel
   * @see com.sun.star.form.component.ImageButton.ButtonType
   */
+@js.native
 trait ImageButton
   extends XControl
      with XWindow

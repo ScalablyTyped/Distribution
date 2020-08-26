@@ -18,11 +18,6 @@ class Address () extends Resource {
     */
   var name: js.UndefOr[String] = js.native
   /**
-    * Resource type
-    */
-  /* CompleteClass */
-  override var resource: ResourceType = js.native
-  /**
     * Type of resource, constant string "address"
     */
   @JSName("resource")

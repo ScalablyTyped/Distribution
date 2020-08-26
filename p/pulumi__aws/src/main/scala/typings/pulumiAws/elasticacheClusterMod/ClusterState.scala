@@ -12,7 +12,7 @@ trait ClusterState extends js.Object {
   /**
     * Specifies whether any database modifications
     * are applied immediately, or during the next maintenance window. Default is
-    * `false`. See [Amazon ElastiCache Documentation for more information.][1]
+    * `false`. See [Amazon ElastiCache Documentation for more information.](https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_ModifyCacheCluster.html)
     * (Available since v0.6.0)
     */
   val applyImmediately: js.UndefOr[Input[Boolean]] = js.native
@@ -135,69 +135,143 @@ trait ClusterState extends js.Object {
     */
   val subnetGroupName: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource
+    * A map of tags to assign to the resource
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object ClusterState {
   @scala.inline
-  def apply(
-    applyImmediately: Input[Boolean] = null,
-    arn: Input[String] = null,
-    availabilityZone: Input[String] = null,
-    azMode: Input[String] = null,
-    cacheNodes: Input[js.Array[Input[ClusterCacheNode]]] = null,
-    clusterAddress: Input[String] = null,
-    clusterId: Input[String] = null,
-    configurationEndpoint: Input[String] = null,
-    engine: Input[String] = null,
-    engineVersion: Input[String] = null,
-    maintenanceWindow: Input[String] = null,
-    nodeType: Input[String] = null,
-    notificationTopicArn: Input[String] = null,
-    numCacheNodes: Input[Double] = null,
-    parameterGroupName: Input[String] = null,
-    port: Input[Double] = null,
-    preferredAvailabilityZones: Input[js.Array[Input[String]]] = null,
-    replicationGroupId: Input[String] = null,
-    securityGroupIds: Input[js.Array[Input[String]]] = null,
-    securityGroupNames: Input[js.Array[Input[String]]] = null,
-    snapshotArns: Input[js.Array[Input[String]]] = null,
-    snapshotName: Input[String] = null,
-    snapshotRetentionLimit: Input[Double] = null,
-    snapshotWindow: Input[String] = null,
-    subnetGroupName: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): ClusterState = {
+  def apply(): ClusterState = {
     val __obj = js.Dynamic.literal()
-    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (azMode != null) __obj.updateDynamic("azMode")(azMode.asInstanceOf[js.Any])
-    if (cacheNodes != null) __obj.updateDynamic("cacheNodes")(cacheNodes.asInstanceOf[js.Any])
-    if (clusterAddress != null) __obj.updateDynamic("clusterAddress")(clusterAddress.asInstanceOf[js.Any])
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    if (configurationEndpoint != null) __obj.updateDynamic("configurationEndpoint")(configurationEndpoint.asInstanceOf[js.Any])
-    if (engine != null) __obj.updateDynamic("engine")(engine.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow.asInstanceOf[js.Any])
-    if (nodeType != null) __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
-    if (notificationTopicArn != null) __obj.updateDynamic("notificationTopicArn")(notificationTopicArn.asInstanceOf[js.Any])
-    if (numCacheNodes != null) __obj.updateDynamic("numCacheNodes")(numCacheNodes.asInstanceOf[js.Any])
-    if (parameterGroupName != null) __obj.updateDynamic("parameterGroupName")(parameterGroupName.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (preferredAvailabilityZones != null) __obj.updateDynamic("preferredAvailabilityZones")(preferredAvailabilityZones.asInstanceOf[js.Any])
-    if (replicationGroupId != null) __obj.updateDynamic("replicationGroupId")(replicationGroupId.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (securityGroupNames != null) __obj.updateDynamic("securityGroupNames")(securityGroupNames.asInstanceOf[js.Any])
-    if (snapshotArns != null) __obj.updateDynamic("snapshotArns")(snapshotArns.asInstanceOf[js.Any])
-    if (snapshotName != null) __obj.updateDynamic("snapshotName")(snapshotName.asInstanceOf[js.Any])
-    if (snapshotRetentionLimit != null) __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit.asInstanceOf[js.Any])
-    if (snapshotWindow != null) __obj.updateDynamic("snapshotWindow")(snapshotWindow.asInstanceOf[js.Any])
-    if (subnetGroupName != null) __obj.updateDynamic("subnetGroupName")(subnetGroupName.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterState]
   }
+  @scala.inline
+  implicit class ClusterStateOps[Self <: ClusterState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplyImmediately(value: Input[Boolean]): Self = this.set("applyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("applyImmediately", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setAzMode(value: Input[String]): Self = this.set("azMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAzMode: Self = this.set("azMode", js.undefined)
+    @scala.inline
+    def setCacheNodesVarargs(value: Input[ClusterCacheNode]*): Self = this.set("cacheNodes", js.Array(value :_*))
+    @scala.inline
+    def setCacheNodes(value: Input[js.Array[Input[ClusterCacheNode]]]): Self = this.set("cacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodes: Self = this.set("cacheNodes", js.undefined)
+    @scala.inline
+    def setClusterAddress(value: Input[String]): Self = this.set("clusterAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterAddress: Self = this.set("clusterAddress", js.undefined)
+    @scala.inline
+    def setClusterId(value: Input[String]): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    @scala.inline
+    def setConfigurationEndpoint(value: Input[String]): Self = this.set("configurationEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationEndpoint: Self = this.set("configurationEndpoint", js.undefined)
+    @scala.inline
+    def setEngine(value: Input[String]): Self = this.set("engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("engine", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: Input[String]): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setMaintenanceWindow(value: Input[String]): Self = this.set("maintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaintenanceWindow: Self = this.set("maintenanceWindow", js.undefined)
+    @scala.inline
+    def setNodeType(value: Input[String]): Self = this.set("nodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeType: Self = this.set("nodeType", js.undefined)
+    @scala.inline
+    def setNotificationTopicArn(value: Input[String]): Self = this.set("notificationTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTopicArn: Self = this.set("notificationTopicArn", js.undefined)
+    @scala.inline
+    def setNumCacheNodes(value: Input[Double]): Self = this.set("numCacheNodes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumCacheNodes: Self = this.set("numCacheNodes", js.undefined)
+    @scala.inline
+    def setParameterGroupName(value: Input[String]): Self = this.set("parameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameterGroupName: Self = this.set("parameterGroupName", js.undefined)
+    @scala.inline
+    def setPort(value: Input[Double]): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setPreferredAvailabilityZonesVarargs(value: Input[String]*): Self = this.set("preferredAvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setPreferredAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = this.set("preferredAvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredAvailabilityZones: Self = this.set("preferredAvailabilityZones", js.undefined)
+    @scala.inline
+    def setReplicationGroupId(value: Input[String]): Self = this.set("replicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupId: Self = this.set("replicationGroupId", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setSecurityGroupNamesVarargs(value: Input[String]*): Self = this.set("securityGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupNames: Self = this.set("securityGroupNames", js.undefined)
+    @scala.inline
+    def setSnapshotArnsVarargs(value: Input[String]*): Self = this.set("snapshotArns", js.Array(value :_*))
+    @scala.inline
+    def setSnapshotArns(value: Input[js.Array[Input[String]]]): Self = this.set("snapshotArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotArns: Self = this.set("snapshotArns", js.undefined)
+    @scala.inline
+    def setSnapshotName(value: Input[String]): Self = this.set("snapshotName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotName: Self = this.set("snapshotName", js.undefined)
+    @scala.inline
+    def setSnapshotRetentionLimit(value: Input[Double]): Self = this.set("snapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotRetentionLimit: Self = this.set("snapshotRetentionLimit", js.undefined)
+    @scala.inline
+    def setSnapshotWindow(value: Input[String]): Self = this.set("snapshotWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotWindow: Self = this.set("snapshotWindow", js.undefined)
+    @scala.inline
+    def setSubnetGroupName(value: Input[String]): Self = this.set("subnetGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetGroupName: Self = this.set("subnetGroupName", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

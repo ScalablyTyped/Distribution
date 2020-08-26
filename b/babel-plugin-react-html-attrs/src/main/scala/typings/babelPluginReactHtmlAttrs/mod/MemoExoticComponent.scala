@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 // will show `Memo(${Component.displayName || Component.name})` in devtools by default,
 // but can be given its own specific name
-/* Inlined babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.NamedExoticComponent<babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ComponentPropsWithRef<T>> & { readonly type  :T} */
+/* Inlined babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.NamedExoticComponent<babel-plugin-react-html-attrs.babel-plugin-react-html-attrs.ComponentPropsWithRef<T>> & { readonly type :T} */
 @js.native
 trait MemoExoticComponent[T /* <: ComponentType[_] */] extends js.Object {
   @JSName("$$typeof")

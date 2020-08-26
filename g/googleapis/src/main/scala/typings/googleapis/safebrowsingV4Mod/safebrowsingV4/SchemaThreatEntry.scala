@@ -29,12 +29,34 @@ trait SchemaThreatEntry extends js.Object {
 
 object SchemaThreatEntry {
   @scala.inline
-  def apply(digest: String = null, hash: String = null, url: String = null): SchemaThreatEntry = {
+  def apply(): SchemaThreatEntry = {
     val __obj = js.Dynamic.literal()
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaThreatEntry]
   }
+  @scala.inline
+  implicit class SchemaThreatEntryOps[Self <: SchemaThreatEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDigest(value: String): Self = this.set("digest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDigest: Self = this.set("digest", js.undefined)
+    @scala.inline
+    def setHash(value: String): Self = this.set("hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHash: Self = this.set("hash", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

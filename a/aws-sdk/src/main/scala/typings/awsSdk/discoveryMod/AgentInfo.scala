@@ -50,30 +50,64 @@ trait AgentInfo extends js.Object {
 
 object AgentInfo {
   @scala.inline
-  def apply(
-    agentId: AgentId = null,
-    agentNetworkInfoList: AgentNetworkInfoList = null,
-    agentType: String = null,
-    collectionStatus: String = null,
-    connectorId: String = null,
-    health: AgentStatus = null,
-    hostName: String = null,
-    lastHealthPingTime: String = null,
-    registeredTime: String = null,
-    version: String = null
-  ): AgentInfo = {
+  def apply(): AgentInfo = {
     val __obj = js.Dynamic.literal()
-    if (agentId != null) __obj.updateDynamic("agentId")(agentId.asInstanceOf[js.Any])
-    if (agentNetworkInfoList != null) __obj.updateDynamic("agentNetworkInfoList")(agentNetworkInfoList.asInstanceOf[js.Any])
-    if (agentType != null) __obj.updateDynamic("agentType")(agentType.asInstanceOf[js.Any])
-    if (collectionStatus != null) __obj.updateDynamic("collectionStatus")(collectionStatus.asInstanceOf[js.Any])
-    if (connectorId != null) __obj.updateDynamic("connectorId")(connectorId.asInstanceOf[js.Any])
-    if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
-    if (hostName != null) __obj.updateDynamic("hostName")(hostName.asInstanceOf[js.Any])
-    if (lastHealthPingTime != null) __obj.updateDynamic("lastHealthPingTime")(lastHealthPingTime.asInstanceOf[js.Any])
-    if (registeredTime != null) __obj.updateDynamic("registeredTime")(registeredTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentInfo]
   }
+  @scala.inline
+  implicit class AgentInfoOps[Self <: AgentInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAgentId(value: AgentId): Self = this.set("agentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentId: Self = this.set("agentId", js.undefined)
+    @scala.inline
+    def setAgentNetworkInfoListVarargs(value: AgentNetworkInfo*): Self = this.set("agentNetworkInfoList", js.Array(value :_*))
+    @scala.inline
+    def setAgentNetworkInfoList(value: AgentNetworkInfoList): Self = this.set("agentNetworkInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentNetworkInfoList: Self = this.set("agentNetworkInfoList", js.undefined)
+    @scala.inline
+    def setAgentType(value: String): Self = this.set("agentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAgentType: Self = this.set("agentType", js.undefined)
+    @scala.inline
+    def setCollectionStatus(value: String): Self = this.set("collectionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCollectionStatus: Self = this.set("collectionStatus", js.undefined)
+    @scala.inline
+    def setConnectorId(value: String): Self = this.set("connectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectorId: Self = this.set("connectorId", js.undefined)
+    @scala.inline
+    def setHealth(value: AgentStatus): Self = this.set("health", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealth: Self = this.set("health", js.undefined)
+    @scala.inline
+    def setHostName(value: String): Self = this.set("hostName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostName: Self = this.set("hostName", js.undefined)
+    @scala.inline
+    def setLastHealthPingTime(value: String): Self = this.set("lastHealthPingTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastHealthPingTime: Self = this.set("lastHealthPingTime", js.undefined)
+    @scala.inline
+    def setRegisteredTime(value: String): Self = this.set("registeredTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegisteredTime: Self = this.set("registeredTime", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

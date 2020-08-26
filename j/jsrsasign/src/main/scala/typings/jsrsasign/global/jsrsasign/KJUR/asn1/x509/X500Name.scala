@@ -3,7 +3,6 @@ package typings.jsrsasign.global.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.anon.Certissuer
 import typings.jsrsasign.anon.StringParamcertissuerstri
 import typings.jsrsasign.anon.X500NameParamcertissuerst
-import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.X500NameParam
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -48,68 +47,6 @@ class X500Name protected ()
   def this(params: Certissuer) = this()
   def this(params: StringParamcertissuerstri) = this()
   def this(params: X500NameParamcertissuerst) = this()
-  /** hexadecimal string of ASN.1 TLV length(L) */
-  /* CompleteClass */
-  override var hL: String = js.native
-  /** hexadecimal string of ASN.1 TLV tag(T) */
-  /* CompleteClass */
-  override var hT: String = js.native
-  /** hexadecimal string of ASN.1 TLV */
-  /* CompleteClass */
-  override var hTLV: String = js.native
-  /** hexadecimal string of ASN.1 TLV value(V) */
-  /* CompleteClass */
-  override var hV: String = js.native
-  /** flag whether internal data was changed */
-  /* CompleteClass */
-  override var isModified: String = js.native
-  /**
-    * get hexadecimal string of ASN.1 TLV bytes
-    * @return hexadecimal string of ASN.1 TLV
-    */
-  /* CompleteClass */
-  override def getEncodedHex(): String = js.native
-  /* CompleteClass */
-  override def getFreshValueHex(): String = js.native
-  /**
-    * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
-    * @return hexadecimal string of ASN.1 TLV length(L)
-    */
-  /* CompleteClass */
-  override def getLengthHexFromValue(): String = js.native
-  /**
-    * get hexadecimal string of ASN.1 TLV value(V) bytes
-    * @return hexadecimal string of ASN.1 TLV value(V) bytes
-    */
-  /* CompleteClass */
-  override def getValueHex(): String = js.native
-  /**
-    * set DN by LDAP(RFC 2253) distinguished name string
-    * @param dnStr distinguished name by LDAP string (ex. O=aaa,C=US)
-    * @example
-    * name = new KJUR.asn1.x509.X500Name();
-    * name.setByLdapString("CN=foo@example.com,OU=bbb,O=aaa,C=US");
-    */
-  /* CompleteClass */
-  override def setByLdapString(dnStr: String): Unit = js.native
-  /**
-    * set DN by associative array
-    * @param dnObj associative array of DN (ex. {C: "US", O: "aaa"})
-    * @example
-    * name = new KJUR.asn1.x509.X500Name();
-    * name.setByObject({C: "US", O: "aaa", CN="http://example.com/"1});
-    */
-  /* CompleteClass */
-  override def setByObject(dnObj: X500NameParam): Unit = js.native
-  /**
-    * set DN by OpenSSL oneline distinguished name string
-    * @param dnStr distinguished name by string (ex. /C=US/O=aaa)
-    * @example
-    * name = new KJUR.asn1.x509.X500Name();
-    * name.setByString("/C=US/O=aaa/OU=bbb/CN=foo@example.com");
-    */
-  /* CompleteClass */
-  override def setByString(dnStr: String): Unit = js.native
 }
 
 /* static members */

@@ -22,15 +22,32 @@ trait ModifyVpcAttributeRequest extends js.Object {
 
 object ModifyVpcAttributeRequest {
   @scala.inline
-  def apply(
-    VpcId: VpcId,
-    EnableDnsHostnames: AttributeBooleanValue = null,
-    EnableDnsSupport: AttributeBooleanValue = null
-  ): ModifyVpcAttributeRequest = {
+  def apply(VpcId: VpcId): ModifyVpcAttributeRequest = {
     val __obj = js.Dynamic.literal(VpcId = VpcId.asInstanceOf[js.Any])
-    if (EnableDnsHostnames != null) __obj.updateDynamic("EnableDnsHostnames")(EnableDnsHostnames.asInstanceOf[js.Any])
-    if (EnableDnsSupport != null) __obj.updateDynamic("EnableDnsSupport")(EnableDnsSupport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcAttributeRequest]
   }
+  @scala.inline
+  implicit class ModifyVpcAttributeRequestOps[Self <: ModifyVpcAttributeRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEnableDnsHostnames(value: AttributeBooleanValue): Self = this.set("EnableDnsHostnames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDnsHostnames: Self = this.set("EnableDnsHostnames", js.undefined)
+    @scala.inline
+    def setEnableDnsSupport(value: AttributeBooleanValue): Self = this.set("EnableDnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDnsSupport: Self = this.set("EnableDnsSupport", js.undefined)
+  }
+  
 }
 

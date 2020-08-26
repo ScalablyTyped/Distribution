@@ -16,10 +16,5 @@ class ASPxClientFileManagerCustomCommandEventArgs protected ()
     * @param commandName A string value that identifies the executed command. Initializes the ASPxClientFileManagerCustomCommandEventArgs.commandName property.
     */
   def this(commandName: String) = this()
-  /**
-    * Gets the name of the processed command.
-    */
-  /* CompleteClass */
-  override var commandName: String = js.native
 }
 

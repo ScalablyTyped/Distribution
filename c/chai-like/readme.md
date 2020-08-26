@@ -10,9 +10,9 @@ A JSON matcher for chai
 | ------------------ | :-------------: |
 | Full name          | chai-like |
 | Keywords           | chai, chai-plugin, objects, json, like, test, integration, API |
-| # releases         | 4 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 242938 |
+| # downloads        | 248916 |
 | # stars            | 0 |
 
 ## Links

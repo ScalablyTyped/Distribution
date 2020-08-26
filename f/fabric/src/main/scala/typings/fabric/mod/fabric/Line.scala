@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 class Line ()
   extends typings.fabric.fabricImplMod.Line {
   def this(points: js.Array[Double]) = this()
+  def this(points: js.UndefOr[scala.Nothing], objObjects: ILineOptions) = this()
   def this(points: js.Array[Double], objObjects: ILineOptions) = this()
 }
 
@@ -33,6 +34,7 @@ object Line extends js.Object {
     * @param {Function} [callback] callback function invoked after parsing
     */
   def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Line = js.native
+  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: ILineOptions): typings.fabric.fabricImplMod.Line = js.native
   def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Line = js.native
   def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): typings.fabric.fabricImplMod.Line = js.native
   /**

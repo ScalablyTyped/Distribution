@@ -335,7 +335,7 @@ trait AwsSecurityFindingFilters extends js.Object {
     */
   var VerificationState: js.UndefOr[StringFilterList] = js.native
   /**
-    * The workflow state of a finding.
+    * The workflow state of a finding. Note that this field is deprecated. To search for a finding based on its workflow status, use WorkflowStatus.
     */
   var WorkflowState: js.UndefOr[StringFilterList] = js.native
   /**
@@ -346,178 +346,526 @@ trait AwsSecurityFindingFilters extends js.Object {
 
 object AwsSecurityFindingFilters {
   @scala.inline
-  def apply(
-    AwsAccountId: StringFilterList = null,
-    CompanyName: StringFilterList = null,
-    ComplianceStatus: StringFilterList = null,
-    Confidence: NumberFilterList = null,
-    CreatedAt: DateFilterList = null,
-    Criticality: NumberFilterList = null,
-    Description: StringFilterList = null,
-    FirstObservedAt: DateFilterList = null,
-    GeneratorId: StringFilterList = null,
-    Id: StringFilterList = null,
-    Keyword: KeywordFilterList = null,
-    LastObservedAt: DateFilterList = null,
-    MalwareName: StringFilterList = null,
-    MalwarePath: StringFilterList = null,
-    MalwareState: StringFilterList = null,
-    MalwareType: StringFilterList = null,
-    NetworkDestinationDomain: StringFilterList = null,
-    NetworkDestinationIpV4: IpFilterList = null,
-    NetworkDestinationIpV6: IpFilterList = null,
-    NetworkDestinationPort: NumberFilterList = null,
-    NetworkDirection: StringFilterList = null,
-    NetworkProtocol: StringFilterList = null,
-    NetworkSourceDomain: StringFilterList = null,
-    NetworkSourceIpV4: IpFilterList = null,
-    NetworkSourceIpV6: IpFilterList = null,
-    NetworkSourceMac: StringFilterList = null,
-    NetworkSourcePort: NumberFilterList = null,
-    NoteText: StringFilterList = null,
-    NoteUpdatedAt: DateFilterList = null,
-    NoteUpdatedBy: StringFilterList = null,
-    ProcessLaunchedAt: DateFilterList = null,
-    ProcessName: StringFilterList = null,
-    ProcessParentPid: NumberFilterList = null,
-    ProcessPath: StringFilterList = null,
-    ProcessPid: NumberFilterList = null,
-    ProcessTerminatedAt: DateFilterList = null,
-    ProductArn: StringFilterList = null,
-    ProductFields: MapFilterList = null,
-    ProductName: StringFilterList = null,
-    RecommendationText: StringFilterList = null,
-    RecordState: StringFilterList = null,
-    RelatedFindingsId: StringFilterList = null,
-    RelatedFindingsProductArn: StringFilterList = null,
-    ResourceAwsEc2InstanceIamInstanceProfileArn: StringFilterList = null,
-    ResourceAwsEc2InstanceImageId: StringFilterList = null,
-    ResourceAwsEc2InstanceIpV4Addresses: IpFilterList = null,
-    ResourceAwsEc2InstanceIpV6Addresses: IpFilterList = null,
-    ResourceAwsEc2InstanceKeyName: StringFilterList = null,
-    ResourceAwsEc2InstanceLaunchedAt: DateFilterList = null,
-    ResourceAwsEc2InstanceSubnetId: StringFilterList = null,
-    ResourceAwsEc2InstanceType: StringFilterList = null,
-    ResourceAwsEc2InstanceVpcId: StringFilterList = null,
-    ResourceAwsIamAccessKeyCreatedAt: DateFilterList = null,
-    ResourceAwsIamAccessKeyStatus: StringFilterList = null,
-    ResourceAwsIamAccessKeyUserName: StringFilterList = null,
-    ResourceAwsS3BucketOwnerId: StringFilterList = null,
-    ResourceAwsS3BucketOwnerName: StringFilterList = null,
-    ResourceContainerImageId: StringFilterList = null,
-    ResourceContainerImageName: StringFilterList = null,
-    ResourceContainerLaunchedAt: DateFilterList = null,
-    ResourceContainerName: StringFilterList = null,
-    ResourceDetailsOther: MapFilterList = null,
-    ResourceId: StringFilterList = null,
-    ResourcePartition: StringFilterList = null,
-    ResourceRegion: StringFilterList = null,
-    ResourceTags: MapFilterList = null,
-    ResourceType: StringFilterList = null,
-    SeverityLabel: StringFilterList = null,
-    SeverityNormalized: NumberFilterList = null,
-    SeverityProduct: NumberFilterList = null,
-    SourceUrl: StringFilterList = null,
-    ThreatIntelIndicatorCategory: StringFilterList = null,
-    ThreatIntelIndicatorLastObservedAt: DateFilterList = null,
-    ThreatIntelIndicatorSource: StringFilterList = null,
-    ThreatIntelIndicatorSourceUrl: StringFilterList = null,
-    ThreatIntelIndicatorType: StringFilterList = null,
-    ThreatIntelIndicatorValue: StringFilterList = null,
-    Title: StringFilterList = null,
-    Type: StringFilterList = null,
-    UpdatedAt: DateFilterList = null,
-    UserDefinedFields: MapFilterList = null,
-    VerificationState: StringFilterList = null,
-    WorkflowState: StringFilterList = null,
-    WorkflowStatus: StringFilterList = null
-  ): AwsSecurityFindingFilters = {
+  def apply(): AwsSecurityFindingFilters = {
     val __obj = js.Dynamic.literal()
-    if (AwsAccountId != null) __obj.updateDynamic("AwsAccountId")(AwsAccountId.asInstanceOf[js.Any])
-    if (CompanyName != null) __obj.updateDynamic("CompanyName")(CompanyName.asInstanceOf[js.Any])
-    if (ComplianceStatus != null) __obj.updateDynamic("ComplianceStatus")(ComplianceStatus.asInstanceOf[js.Any])
-    if (Confidence != null) __obj.updateDynamic("Confidence")(Confidence.asInstanceOf[js.Any])
-    if (CreatedAt != null) __obj.updateDynamic("CreatedAt")(CreatedAt.asInstanceOf[js.Any])
-    if (Criticality != null) __obj.updateDynamic("Criticality")(Criticality.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FirstObservedAt != null) __obj.updateDynamic("FirstObservedAt")(FirstObservedAt.asInstanceOf[js.Any])
-    if (GeneratorId != null) __obj.updateDynamic("GeneratorId")(GeneratorId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Keyword != null) __obj.updateDynamic("Keyword")(Keyword.asInstanceOf[js.Any])
-    if (LastObservedAt != null) __obj.updateDynamic("LastObservedAt")(LastObservedAt.asInstanceOf[js.Any])
-    if (MalwareName != null) __obj.updateDynamic("MalwareName")(MalwareName.asInstanceOf[js.Any])
-    if (MalwarePath != null) __obj.updateDynamic("MalwarePath")(MalwarePath.asInstanceOf[js.Any])
-    if (MalwareState != null) __obj.updateDynamic("MalwareState")(MalwareState.asInstanceOf[js.Any])
-    if (MalwareType != null) __obj.updateDynamic("MalwareType")(MalwareType.asInstanceOf[js.Any])
-    if (NetworkDestinationDomain != null) __obj.updateDynamic("NetworkDestinationDomain")(NetworkDestinationDomain.asInstanceOf[js.Any])
-    if (NetworkDestinationIpV4 != null) __obj.updateDynamic("NetworkDestinationIpV4")(NetworkDestinationIpV4.asInstanceOf[js.Any])
-    if (NetworkDestinationIpV6 != null) __obj.updateDynamic("NetworkDestinationIpV6")(NetworkDestinationIpV6.asInstanceOf[js.Any])
-    if (NetworkDestinationPort != null) __obj.updateDynamic("NetworkDestinationPort")(NetworkDestinationPort.asInstanceOf[js.Any])
-    if (NetworkDirection != null) __obj.updateDynamic("NetworkDirection")(NetworkDirection.asInstanceOf[js.Any])
-    if (NetworkProtocol != null) __obj.updateDynamic("NetworkProtocol")(NetworkProtocol.asInstanceOf[js.Any])
-    if (NetworkSourceDomain != null) __obj.updateDynamic("NetworkSourceDomain")(NetworkSourceDomain.asInstanceOf[js.Any])
-    if (NetworkSourceIpV4 != null) __obj.updateDynamic("NetworkSourceIpV4")(NetworkSourceIpV4.asInstanceOf[js.Any])
-    if (NetworkSourceIpV6 != null) __obj.updateDynamic("NetworkSourceIpV6")(NetworkSourceIpV6.asInstanceOf[js.Any])
-    if (NetworkSourceMac != null) __obj.updateDynamic("NetworkSourceMac")(NetworkSourceMac.asInstanceOf[js.Any])
-    if (NetworkSourcePort != null) __obj.updateDynamic("NetworkSourcePort")(NetworkSourcePort.asInstanceOf[js.Any])
-    if (NoteText != null) __obj.updateDynamic("NoteText")(NoteText.asInstanceOf[js.Any])
-    if (NoteUpdatedAt != null) __obj.updateDynamic("NoteUpdatedAt")(NoteUpdatedAt.asInstanceOf[js.Any])
-    if (NoteUpdatedBy != null) __obj.updateDynamic("NoteUpdatedBy")(NoteUpdatedBy.asInstanceOf[js.Any])
-    if (ProcessLaunchedAt != null) __obj.updateDynamic("ProcessLaunchedAt")(ProcessLaunchedAt.asInstanceOf[js.Any])
-    if (ProcessName != null) __obj.updateDynamic("ProcessName")(ProcessName.asInstanceOf[js.Any])
-    if (ProcessParentPid != null) __obj.updateDynamic("ProcessParentPid")(ProcessParentPid.asInstanceOf[js.Any])
-    if (ProcessPath != null) __obj.updateDynamic("ProcessPath")(ProcessPath.asInstanceOf[js.Any])
-    if (ProcessPid != null) __obj.updateDynamic("ProcessPid")(ProcessPid.asInstanceOf[js.Any])
-    if (ProcessTerminatedAt != null) __obj.updateDynamic("ProcessTerminatedAt")(ProcessTerminatedAt.asInstanceOf[js.Any])
-    if (ProductArn != null) __obj.updateDynamic("ProductArn")(ProductArn.asInstanceOf[js.Any])
-    if (ProductFields != null) __obj.updateDynamic("ProductFields")(ProductFields.asInstanceOf[js.Any])
-    if (ProductName != null) __obj.updateDynamic("ProductName")(ProductName.asInstanceOf[js.Any])
-    if (RecommendationText != null) __obj.updateDynamic("RecommendationText")(RecommendationText.asInstanceOf[js.Any])
-    if (RecordState != null) __obj.updateDynamic("RecordState")(RecordState.asInstanceOf[js.Any])
-    if (RelatedFindingsId != null) __obj.updateDynamic("RelatedFindingsId")(RelatedFindingsId.asInstanceOf[js.Any])
-    if (RelatedFindingsProductArn != null) __obj.updateDynamic("RelatedFindingsProductArn")(RelatedFindingsProductArn.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceIamInstanceProfileArn != null) __obj.updateDynamic("ResourceAwsEc2InstanceIamInstanceProfileArn")(ResourceAwsEc2InstanceIamInstanceProfileArn.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceImageId != null) __obj.updateDynamic("ResourceAwsEc2InstanceImageId")(ResourceAwsEc2InstanceImageId.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceIpV4Addresses != null) __obj.updateDynamic("ResourceAwsEc2InstanceIpV4Addresses")(ResourceAwsEc2InstanceIpV4Addresses.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceIpV6Addresses != null) __obj.updateDynamic("ResourceAwsEc2InstanceIpV6Addresses")(ResourceAwsEc2InstanceIpV6Addresses.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceKeyName != null) __obj.updateDynamic("ResourceAwsEc2InstanceKeyName")(ResourceAwsEc2InstanceKeyName.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceLaunchedAt != null) __obj.updateDynamic("ResourceAwsEc2InstanceLaunchedAt")(ResourceAwsEc2InstanceLaunchedAt.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceSubnetId != null) __obj.updateDynamic("ResourceAwsEc2InstanceSubnetId")(ResourceAwsEc2InstanceSubnetId.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceType != null) __obj.updateDynamic("ResourceAwsEc2InstanceType")(ResourceAwsEc2InstanceType.asInstanceOf[js.Any])
-    if (ResourceAwsEc2InstanceVpcId != null) __obj.updateDynamic("ResourceAwsEc2InstanceVpcId")(ResourceAwsEc2InstanceVpcId.asInstanceOf[js.Any])
-    if (ResourceAwsIamAccessKeyCreatedAt != null) __obj.updateDynamic("ResourceAwsIamAccessKeyCreatedAt")(ResourceAwsIamAccessKeyCreatedAt.asInstanceOf[js.Any])
-    if (ResourceAwsIamAccessKeyStatus != null) __obj.updateDynamic("ResourceAwsIamAccessKeyStatus")(ResourceAwsIamAccessKeyStatus.asInstanceOf[js.Any])
-    if (ResourceAwsIamAccessKeyUserName != null) __obj.updateDynamic("ResourceAwsIamAccessKeyUserName")(ResourceAwsIamAccessKeyUserName.asInstanceOf[js.Any])
-    if (ResourceAwsS3BucketOwnerId != null) __obj.updateDynamic("ResourceAwsS3BucketOwnerId")(ResourceAwsS3BucketOwnerId.asInstanceOf[js.Any])
-    if (ResourceAwsS3BucketOwnerName != null) __obj.updateDynamic("ResourceAwsS3BucketOwnerName")(ResourceAwsS3BucketOwnerName.asInstanceOf[js.Any])
-    if (ResourceContainerImageId != null) __obj.updateDynamic("ResourceContainerImageId")(ResourceContainerImageId.asInstanceOf[js.Any])
-    if (ResourceContainerImageName != null) __obj.updateDynamic("ResourceContainerImageName")(ResourceContainerImageName.asInstanceOf[js.Any])
-    if (ResourceContainerLaunchedAt != null) __obj.updateDynamic("ResourceContainerLaunchedAt")(ResourceContainerLaunchedAt.asInstanceOf[js.Any])
-    if (ResourceContainerName != null) __obj.updateDynamic("ResourceContainerName")(ResourceContainerName.asInstanceOf[js.Any])
-    if (ResourceDetailsOther != null) __obj.updateDynamic("ResourceDetailsOther")(ResourceDetailsOther.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ResourcePartition != null) __obj.updateDynamic("ResourcePartition")(ResourcePartition.asInstanceOf[js.Any])
-    if (ResourceRegion != null) __obj.updateDynamic("ResourceRegion")(ResourceRegion.asInstanceOf[js.Any])
-    if (ResourceTags != null) __obj.updateDynamic("ResourceTags")(ResourceTags.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
-    if (SeverityLabel != null) __obj.updateDynamic("SeverityLabel")(SeverityLabel.asInstanceOf[js.Any])
-    if (SeverityNormalized != null) __obj.updateDynamic("SeverityNormalized")(SeverityNormalized.asInstanceOf[js.Any])
-    if (SeverityProduct != null) __obj.updateDynamic("SeverityProduct")(SeverityProduct.asInstanceOf[js.Any])
-    if (SourceUrl != null) __obj.updateDynamic("SourceUrl")(SourceUrl.asInstanceOf[js.Any])
-    if (ThreatIntelIndicatorCategory != null) __obj.updateDynamic("ThreatIntelIndicatorCategory")(ThreatIntelIndicatorCategory.asInstanceOf[js.Any])
-    if (ThreatIntelIndicatorLastObservedAt != null) __obj.updateDynamic("ThreatIntelIndicatorLastObservedAt")(ThreatIntelIndicatorLastObservedAt.asInstanceOf[js.Any])
-    if (ThreatIntelIndicatorSource != null) __obj.updateDynamic("ThreatIntelIndicatorSource")(ThreatIntelIndicatorSource.asInstanceOf[js.Any])
-    if (ThreatIntelIndicatorSourceUrl != null) __obj.updateDynamic("ThreatIntelIndicatorSourceUrl")(ThreatIntelIndicatorSourceUrl.asInstanceOf[js.Any])
-    if (ThreatIntelIndicatorType != null) __obj.updateDynamic("ThreatIntelIndicatorType")(ThreatIntelIndicatorType.asInstanceOf[js.Any])
-    if (ThreatIntelIndicatorValue != null) __obj.updateDynamic("ThreatIntelIndicatorValue")(ThreatIntelIndicatorValue.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
-    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt.asInstanceOf[js.Any])
-    if (UserDefinedFields != null) __obj.updateDynamic("UserDefinedFields")(UserDefinedFields.asInstanceOf[js.Any])
-    if (VerificationState != null) __obj.updateDynamic("VerificationState")(VerificationState.asInstanceOf[js.Any])
-    if (WorkflowState != null) __obj.updateDynamic("WorkflowState")(WorkflowState.asInstanceOf[js.Any])
-    if (WorkflowStatus != null) __obj.updateDynamic("WorkflowStatus")(WorkflowStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSecurityFindingFilters]
   }
+  @scala.inline
+  implicit class AwsSecurityFindingFiltersOps[Self <: AwsSecurityFindingFilters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsAccountIdVarargs(value: StringFilter*): Self = this.set("AwsAccountId", js.Array(value :_*))
+    @scala.inline
+    def setAwsAccountId(value: StringFilterList): Self = this.set("AwsAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsAccountId: Self = this.set("AwsAccountId", js.undefined)
+    @scala.inline
+    def setCompanyNameVarargs(value: StringFilter*): Self = this.set("CompanyName", js.Array(value :_*))
+    @scala.inline
+    def setCompanyName(value: StringFilterList): Self = this.set("CompanyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompanyName: Self = this.set("CompanyName", js.undefined)
+    @scala.inline
+    def setComplianceStatusVarargs(value: StringFilter*): Self = this.set("ComplianceStatus", js.Array(value :_*))
+    @scala.inline
+    def setComplianceStatus(value: StringFilterList): Self = this.set("ComplianceStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceStatus: Self = this.set("ComplianceStatus", js.undefined)
+    @scala.inline
+    def setConfidenceVarargs(value: NumberFilter*): Self = this.set("Confidence", js.Array(value :_*))
+    @scala.inline
+    def setConfidence(value: NumberFilterList): Self = this.set("Confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("Confidence", js.undefined)
+    @scala.inline
+    def setCreatedAtVarargs(value: DateFilter*): Self = this.set("CreatedAt", js.Array(value :_*))
+    @scala.inline
+    def setCreatedAt(value: DateFilterList): Self = this.set("CreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("CreatedAt", js.undefined)
+    @scala.inline
+    def setCriticalityVarargs(value: NumberFilter*): Self = this.set("Criticality", js.Array(value :_*))
+    @scala.inline
+    def setCriticality(value: NumberFilterList): Self = this.set("Criticality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriticality: Self = this.set("Criticality", js.undefined)
+    @scala.inline
+    def setDescriptionVarargs(value: StringFilter*): Self = this.set("Description", js.Array(value :_*))
+    @scala.inline
+    def setDescription(value: StringFilterList): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFirstObservedAtVarargs(value: DateFilter*): Self = this.set("FirstObservedAt", js.Array(value :_*))
+    @scala.inline
+    def setFirstObservedAt(value: DateFilterList): Self = this.set("FirstObservedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFirstObservedAt: Self = this.set("FirstObservedAt", js.undefined)
+    @scala.inline
+    def setGeneratorIdVarargs(value: StringFilter*): Self = this.set("GeneratorId", js.Array(value :_*))
+    @scala.inline
+    def setGeneratorId(value: StringFilterList): Self = this.set("GeneratorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneratorId: Self = this.set("GeneratorId", js.undefined)
+    @scala.inline
+    def setIdVarargs(value: StringFilter*): Self = this.set("Id", js.Array(value :_*))
+    @scala.inline
+    def setId(value: StringFilterList): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setKeywordVarargs(value: KeywordFilter*): Self = this.set("Keyword", js.Array(value :_*))
+    @scala.inline
+    def setKeyword(value: KeywordFilterList): Self = this.set("Keyword", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyword: Self = this.set("Keyword", js.undefined)
+    @scala.inline
+    def setLastObservedAtVarargs(value: DateFilter*): Self = this.set("LastObservedAt", js.Array(value :_*))
+    @scala.inline
+    def setLastObservedAt(value: DateFilterList): Self = this.set("LastObservedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastObservedAt: Self = this.set("LastObservedAt", js.undefined)
+    @scala.inline
+    def setMalwareNameVarargs(value: StringFilter*): Self = this.set("MalwareName", js.Array(value :_*))
+    @scala.inline
+    def setMalwareName(value: StringFilterList): Self = this.set("MalwareName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMalwareName: Self = this.set("MalwareName", js.undefined)
+    @scala.inline
+    def setMalwarePathVarargs(value: StringFilter*): Self = this.set("MalwarePath", js.Array(value :_*))
+    @scala.inline
+    def setMalwarePath(value: StringFilterList): Self = this.set("MalwarePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMalwarePath: Self = this.set("MalwarePath", js.undefined)
+    @scala.inline
+    def setMalwareStateVarargs(value: StringFilter*): Self = this.set("MalwareState", js.Array(value :_*))
+    @scala.inline
+    def setMalwareState(value: StringFilterList): Self = this.set("MalwareState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMalwareState: Self = this.set("MalwareState", js.undefined)
+    @scala.inline
+    def setMalwareTypeVarargs(value: StringFilter*): Self = this.set("MalwareType", js.Array(value :_*))
+    @scala.inline
+    def setMalwareType(value: StringFilterList): Self = this.set("MalwareType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMalwareType: Self = this.set("MalwareType", js.undefined)
+    @scala.inline
+    def setNetworkDestinationDomainVarargs(value: StringFilter*): Self = this.set("NetworkDestinationDomain", js.Array(value :_*))
+    @scala.inline
+    def setNetworkDestinationDomain(value: StringFilterList): Self = this.set("NetworkDestinationDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDestinationDomain: Self = this.set("NetworkDestinationDomain", js.undefined)
+    @scala.inline
+    def setNetworkDestinationIpV4Varargs(value: IpFilter*): Self = this.set("NetworkDestinationIpV4", js.Array(value :_*))
+    @scala.inline
+    def setNetworkDestinationIpV4(value: IpFilterList): Self = this.set("NetworkDestinationIpV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDestinationIpV4: Self = this.set("NetworkDestinationIpV4", js.undefined)
+    @scala.inline
+    def setNetworkDestinationIpV6Varargs(value: IpFilter*): Self = this.set("NetworkDestinationIpV6", js.Array(value :_*))
+    @scala.inline
+    def setNetworkDestinationIpV6(value: IpFilterList): Self = this.set("NetworkDestinationIpV6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDestinationIpV6: Self = this.set("NetworkDestinationIpV6", js.undefined)
+    @scala.inline
+    def setNetworkDestinationPortVarargs(value: NumberFilter*): Self = this.set("NetworkDestinationPort", js.Array(value :_*))
+    @scala.inline
+    def setNetworkDestinationPort(value: NumberFilterList): Self = this.set("NetworkDestinationPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDestinationPort: Self = this.set("NetworkDestinationPort", js.undefined)
+    @scala.inline
+    def setNetworkDirectionVarargs(value: StringFilter*): Self = this.set("NetworkDirection", js.Array(value :_*))
+    @scala.inline
+    def setNetworkDirection(value: StringFilterList): Self = this.set("NetworkDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkDirection: Self = this.set("NetworkDirection", js.undefined)
+    @scala.inline
+    def setNetworkProtocolVarargs(value: StringFilter*): Self = this.set("NetworkProtocol", js.Array(value :_*))
+    @scala.inline
+    def setNetworkProtocol(value: StringFilterList): Self = this.set("NetworkProtocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProtocol: Self = this.set("NetworkProtocol", js.undefined)
+    @scala.inline
+    def setNetworkSourceDomainVarargs(value: StringFilter*): Self = this.set("NetworkSourceDomain", js.Array(value :_*))
+    @scala.inline
+    def setNetworkSourceDomain(value: StringFilterList): Self = this.set("NetworkSourceDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSourceDomain: Self = this.set("NetworkSourceDomain", js.undefined)
+    @scala.inline
+    def setNetworkSourceIpV4Varargs(value: IpFilter*): Self = this.set("NetworkSourceIpV4", js.Array(value :_*))
+    @scala.inline
+    def setNetworkSourceIpV4(value: IpFilterList): Self = this.set("NetworkSourceIpV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSourceIpV4: Self = this.set("NetworkSourceIpV4", js.undefined)
+    @scala.inline
+    def setNetworkSourceIpV6Varargs(value: IpFilter*): Self = this.set("NetworkSourceIpV6", js.Array(value :_*))
+    @scala.inline
+    def setNetworkSourceIpV6(value: IpFilterList): Self = this.set("NetworkSourceIpV6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSourceIpV6: Self = this.set("NetworkSourceIpV6", js.undefined)
+    @scala.inline
+    def setNetworkSourceMacVarargs(value: StringFilter*): Self = this.set("NetworkSourceMac", js.Array(value :_*))
+    @scala.inline
+    def setNetworkSourceMac(value: StringFilterList): Self = this.set("NetworkSourceMac", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSourceMac: Self = this.set("NetworkSourceMac", js.undefined)
+    @scala.inline
+    def setNetworkSourcePortVarargs(value: NumberFilter*): Self = this.set("NetworkSourcePort", js.Array(value :_*))
+    @scala.inline
+    def setNetworkSourcePort(value: NumberFilterList): Self = this.set("NetworkSourcePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkSourcePort: Self = this.set("NetworkSourcePort", js.undefined)
+    @scala.inline
+    def setNoteTextVarargs(value: StringFilter*): Self = this.set("NoteText", js.Array(value :_*))
+    @scala.inline
+    def setNoteText(value: StringFilterList): Self = this.set("NoteText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteText: Self = this.set("NoteText", js.undefined)
+    @scala.inline
+    def setNoteUpdatedAtVarargs(value: DateFilter*): Self = this.set("NoteUpdatedAt", js.Array(value :_*))
+    @scala.inline
+    def setNoteUpdatedAt(value: DateFilterList): Self = this.set("NoteUpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteUpdatedAt: Self = this.set("NoteUpdatedAt", js.undefined)
+    @scala.inline
+    def setNoteUpdatedByVarargs(value: StringFilter*): Self = this.set("NoteUpdatedBy", js.Array(value :_*))
+    @scala.inline
+    def setNoteUpdatedBy(value: StringFilterList): Self = this.set("NoteUpdatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoteUpdatedBy: Self = this.set("NoteUpdatedBy", js.undefined)
+    @scala.inline
+    def setProcessLaunchedAtVarargs(value: DateFilter*): Self = this.set("ProcessLaunchedAt", js.Array(value :_*))
+    @scala.inline
+    def setProcessLaunchedAt(value: DateFilterList): Self = this.set("ProcessLaunchedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessLaunchedAt: Self = this.set("ProcessLaunchedAt", js.undefined)
+    @scala.inline
+    def setProcessNameVarargs(value: StringFilter*): Self = this.set("ProcessName", js.Array(value :_*))
+    @scala.inline
+    def setProcessName(value: StringFilterList): Self = this.set("ProcessName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessName: Self = this.set("ProcessName", js.undefined)
+    @scala.inline
+    def setProcessParentPidVarargs(value: NumberFilter*): Self = this.set("ProcessParentPid", js.Array(value :_*))
+    @scala.inline
+    def setProcessParentPid(value: NumberFilterList): Self = this.set("ProcessParentPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessParentPid: Self = this.set("ProcessParentPid", js.undefined)
+    @scala.inline
+    def setProcessPathVarargs(value: StringFilter*): Self = this.set("ProcessPath", js.Array(value :_*))
+    @scala.inline
+    def setProcessPath(value: StringFilterList): Self = this.set("ProcessPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessPath: Self = this.set("ProcessPath", js.undefined)
+    @scala.inline
+    def setProcessPidVarargs(value: NumberFilter*): Self = this.set("ProcessPid", js.Array(value :_*))
+    @scala.inline
+    def setProcessPid(value: NumberFilterList): Self = this.set("ProcessPid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessPid: Self = this.set("ProcessPid", js.undefined)
+    @scala.inline
+    def setProcessTerminatedAtVarargs(value: DateFilter*): Self = this.set("ProcessTerminatedAt", js.Array(value :_*))
+    @scala.inline
+    def setProcessTerminatedAt(value: DateFilterList): Self = this.set("ProcessTerminatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessTerminatedAt: Self = this.set("ProcessTerminatedAt", js.undefined)
+    @scala.inline
+    def setProductArnVarargs(value: StringFilter*): Self = this.set("ProductArn", js.Array(value :_*))
+    @scala.inline
+    def setProductArn(value: StringFilterList): Self = this.set("ProductArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductArn: Self = this.set("ProductArn", js.undefined)
+    @scala.inline
+    def setProductFieldsVarargs(value: MapFilter*): Self = this.set("ProductFields", js.Array(value :_*))
+    @scala.inline
+    def setProductFields(value: MapFilterList): Self = this.set("ProductFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductFields: Self = this.set("ProductFields", js.undefined)
+    @scala.inline
+    def setProductNameVarargs(value: StringFilter*): Self = this.set("ProductName", js.Array(value :_*))
+    @scala.inline
+    def setProductName(value: StringFilterList): Self = this.set("ProductName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductName: Self = this.set("ProductName", js.undefined)
+    @scala.inline
+    def setRecommendationTextVarargs(value: StringFilter*): Self = this.set("RecommendationText", js.Array(value :_*))
+    @scala.inline
+    def setRecommendationText(value: StringFilterList): Self = this.set("RecommendationText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendationText: Self = this.set("RecommendationText", js.undefined)
+    @scala.inline
+    def setRecordStateVarargs(value: StringFilter*): Self = this.set("RecordState", js.Array(value :_*))
+    @scala.inline
+    def setRecordState(value: StringFilterList): Self = this.set("RecordState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordState: Self = this.set("RecordState", js.undefined)
+    @scala.inline
+    def setRelatedFindingsIdVarargs(value: StringFilter*): Self = this.set("RelatedFindingsId", js.Array(value :_*))
+    @scala.inline
+    def setRelatedFindingsId(value: StringFilterList): Self = this.set("RelatedFindingsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedFindingsId: Self = this.set("RelatedFindingsId", js.undefined)
+    @scala.inline
+    def setRelatedFindingsProductArnVarargs(value: StringFilter*): Self = this.set("RelatedFindingsProductArn", js.Array(value :_*))
+    @scala.inline
+    def setRelatedFindingsProductArn(value: StringFilterList): Self = this.set("RelatedFindingsProductArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedFindingsProductArn: Self = this.set("RelatedFindingsProductArn", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceIamInstanceProfileArnVarargs(value: StringFilter*): Self = this.set("ResourceAwsEc2InstanceIamInstanceProfileArn", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceIamInstanceProfileArn(value: StringFilterList): Self = this.set("ResourceAwsEc2InstanceIamInstanceProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceIamInstanceProfileArn: Self = this.set("ResourceAwsEc2InstanceIamInstanceProfileArn", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceImageIdVarargs(value: StringFilter*): Self = this.set("ResourceAwsEc2InstanceImageId", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceImageId(value: StringFilterList): Self = this.set("ResourceAwsEc2InstanceImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceImageId: Self = this.set("ResourceAwsEc2InstanceImageId", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceIpV4AddressesVarargs(value: IpFilter*): Self = this.set("ResourceAwsEc2InstanceIpV4Addresses", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceIpV4Addresses(value: IpFilterList): Self = this.set("ResourceAwsEc2InstanceIpV4Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceIpV4Addresses: Self = this.set("ResourceAwsEc2InstanceIpV4Addresses", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceIpV6AddressesVarargs(value: IpFilter*): Self = this.set("ResourceAwsEc2InstanceIpV6Addresses", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceIpV6Addresses(value: IpFilterList): Self = this.set("ResourceAwsEc2InstanceIpV6Addresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceIpV6Addresses: Self = this.set("ResourceAwsEc2InstanceIpV6Addresses", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceKeyNameVarargs(value: StringFilter*): Self = this.set("ResourceAwsEc2InstanceKeyName", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceKeyName(value: StringFilterList): Self = this.set("ResourceAwsEc2InstanceKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceKeyName: Self = this.set("ResourceAwsEc2InstanceKeyName", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceLaunchedAtVarargs(value: DateFilter*): Self = this.set("ResourceAwsEc2InstanceLaunchedAt", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceLaunchedAt(value: DateFilterList): Self = this.set("ResourceAwsEc2InstanceLaunchedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceLaunchedAt: Self = this.set("ResourceAwsEc2InstanceLaunchedAt", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceSubnetIdVarargs(value: StringFilter*): Self = this.set("ResourceAwsEc2InstanceSubnetId", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceSubnetId(value: StringFilterList): Self = this.set("ResourceAwsEc2InstanceSubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceSubnetId: Self = this.set("ResourceAwsEc2InstanceSubnetId", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceTypeVarargs(value: StringFilter*): Self = this.set("ResourceAwsEc2InstanceType", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceType(value: StringFilterList): Self = this.set("ResourceAwsEc2InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceType: Self = this.set("ResourceAwsEc2InstanceType", js.undefined)
+    @scala.inline
+    def setResourceAwsEc2InstanceVpcIdVarargs(value: StringFilter*): Self = this.set("ResourceAwsEc2InstanceVpcId", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsEc2InstanceVpcId(value: StringFilterList): Self = this.set("ResourceAwsEc2InstanceVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsEc2InstanceVpcId: Self = this.set("ResourceAwsEc2InstanceVpcId", js.undefined)
+    @scala.inline
+    def setResourceAwsIamAccessKeyCreatedAtVarargs(value: DateFilter*): Self = this.set("ResourceAwsIamAccessKeyCreatedAt", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsIamAccessKeyCreatedAt(value: DateFilterList): Self = this.set("ResourceAwsIamAccessKeyCreatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsIamAccessKeyCreatedAt: Self = this.set("ResourceAwsIamAccessKeyCreatedAt", js.undefined)
+    @scala.inline
+    def setResourceAwsIamAccessKeyStatusVarargs(value: StringFilter*): Self = this.set("ResourceAwsIamAccessKeyStatus", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsIamAccessKeyStatus(value: StringFilterList): Self = this.set("ResourceAwsIamAccessKeyStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsIamAccessKeyStatus: Self = this.set("ResourceAwsIamAccessKeyStatus", js.undefined)
+    @scala.inline
+    def setResourceAwsIamAccessKeyUserNameVarargs(value: StringFilter*): Self = this.set("ResourceAwsIamAccessKeyUserName", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsIamAccessKeyUserName(value: StringFilterList): Self = this.set("ResourceAwsIamAccessKeyUserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsIamAccessKeyUserName: Self = this.set("ResourceAwsIamAccessKeyUserName", js.undefined)
+    @scala.inline
+    def setResourceAwsS3BucketOwnerIdVarargs(value: StringFilter*): Self = this.set("ResourceAwsS3BucketOwnerId", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsS3BucketOwnerId(value: StringFilterList): Self = this.set("ResourceAwsS3BucketOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsS3BucketOwnerId: Self = this.set("ResourceAwsS3BucketOwnerId", js.undefined)
+    @scala.inline
+    def setResourceAwsS3BucketOwnerNameVarargs(value: StringFilter*): Self = this.set("ResourceAwsS3BucketOwnerName", js.Array(value :_*))
+    @scala.inline
+    def setResourceAwsS3BucketOwnerName(value: StringFilterList): Self = this.set("ResourceAwsS3BucketOwnerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceAwsS3BucketOwnerName: Self = this.set("ResourceAwsS3BucketOwnerName", js.undefined)
+    @scala.inline
+    def setResourceContainerImageIdVarargs(value: StringFilter*): Self = this.set("ResourceContainerImageId", js.Array(value :_*))
+    @scala.inline
+    def setResourceContainerImageId(value: StringFilterList): Self = this.set("ResourceContainerImageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceContainerImageId: Self = this.set("ResourceContainerImageId", js.undefined)
+    @scala.inline
+    def setResourceContainerImageNameVarargs(value: StringFilter*): Self = this.set("ResourceContainerImageName", js.Array(value :_*))
+    @scala.inline
+    def setResourceContainerImageName(value: StringFilterList): Self = this.set("ResourceContainerImageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceContainerImageName: Self = this.set("ResourceContainerImageName", js.undefined)
+    @scala.inline
+    def setResourceContainerLaunchedAtVarargs(value: DateFilter*): Self = this.set("ResourceContainerLaunchedAt", js.Array(value :_*))
+    @scala.inline
+    def setResourceContainerLaunchedAt(value: DateFilterList): Self = this.set("ResourceContainerLaunchedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceContainerLaunchedAt: Self = this.set("ResourceContainerLaunchedAt", js.undefined)
+    @scala.inline
+    def setResourceContainerNameVarargs(value: StringFilter*): Self = this.set("ResourceContainerName", js.Array(value :_*))
+    @scala.inline
+    def setResourceContainerName(value: StringFilterList): Self = this.set("ResourceContainerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceContainerName: Self = this.set("ResourceContainerName", js.undefined)
+    @scala.inline
+    def setResourceDetailsOtherVarargs(value: MapFilter*): Self = this.set("ResourceDetailsOther", js.Array(value :_*))
+    @scala.inline
+    def setResourceDetailsOther(value: MapFilterList): Self = this.set("ResourceDetailsOther", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceDetailsOther: Self = this.set("ResourceDetailsOther", js.undefined)
+    @scala.inline
+    def setResourceIdVarargs(value: StringFilter*): Self = this.set("ResourceId", js.Array(value :_*))
+    @scala.inline
+    def setResourceId(value: StringFilterList): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setResourcePartitionVarargs(value: StringFilter*): Self = this.set("ResourcePartition", js.Array(value :_*))
+    @scala.inline
+    def setResourcePartition(value: StringFilterList): Self = this.set("ResourcePartition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourcePartition: Self = this.set("ResourcePartition", js.undefined)
+    @scala.inline
+    def setResourceRegionVarargs(value: StringFilter*): Self = this.set("ResourceRegion", js.Array(value :_*))
+    @scala.inline
+    def setResourceRegion(value: StringFilterList): Self = this.set("ResourceRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRegion: Self = this.set("ResourceRegion", js.undefined)
+    @scala.inline
+    def setResourceTagsVarargs(value: MapFilter*): Self = this.set("ResourceTags", js.Array(value :_*))
+    @scala.inline
+    def setResourceTags(value: MapFilterList): Self = this.set("ResourceTags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTags: Self = this.set("ResourceTags", js.undefined)
+    @scala.inline
+    def setResourceTypeVarargs(value: StringFilter*): Self = this.set("ResourceType", js.Array(value :_*))
+    @scala.inline
+    def setResourceType(value: StringFilterList): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+    @scala.inline
+    def setSeverityLabelVarargs(value: StringFilter*): Self = this.set("SeverityLabel", js.Array(value :_*))
+    @scala.inline
+    def setSeverityLabel(value: StringFilterList): Self = this.set("SeverityLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityLabel: Self = this.set("SeverityLabel", js.undefined)
+    @scala.inline
+    def setSeverityNormalizedVarargs(value: NumberFilter*): Self = this.set("SeverityNormalized", js.Array(value :_*))
+    @scala.inline
+    def setSeverityNormalized(value: NumberFilterList): Self = this.set("SeverityNormalized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityNormalized: Self = this.set("SeverityNormalized", js.undefined)
+    @scala.inline
+    def setSeverityProductVarargs(value: NumberFilter*): Self = this.set("SeverityProduct", js.Array(value :_*))
+    @scala.inline
+    def setSeverityProduct(value: NumberFilterList): Self = this.set("SeverityProduct", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeverityProduct: Self = this.set("SeverityProduct", js.undefined)
+    @scala.inline
+    def setSourceUrlVarargs(value: StringFilter*): Self = this.set("SourceUrl", js.Array(value :_*))
+    @scala.inline
+    def setSourceUrl(value: StringFilterList): Self = this.set("SourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUrl: Self = this.set("SourceUrl", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorCategoryVarargs(value: StringFilter*): Self = this.set("ThreatIntelIndicatorCategory", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicatorCategory(value: StringFilterList): Self = this.set("ThreatIntelIndicatorCategory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicatorCategory: Self = this.set("ThreatIntelIndicatorCategory", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorLastObservedAtVarargs(value: DateFilter*): Self = this.set("ThreatIntelIndicatorLastObservedAt", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicatorLastObservedAt(value: DateFilterList): Self = this.set("ThreatIntelIndicatorLastObservedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicatorLastObservedAt: Self = this.set("ThreatIntelIndicatorLastObservedAt", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorSourceVarargs(value: StringFilter*): Self = this.set("ThreatIntelIndicatorSource", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicatorSource(value: StringFilterList): Self = this.set("ThreatIntelIndicatorSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicatorSource: Self = this.set("ThreatIntelIndicatorSource", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorSourceUrlVarargs(value: StringFilter*): Self = this.set("ThreatIntelIndicatorSourceUrl", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicatorSourceUrl(value: StringFilterList): Self = this.set("ThreatIntelIndicatorSourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicatorSourceUrl: Self = this.set("ThreatIntelIndicatorSourceUrl", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorTypeVarargs(value: StringFilter*): Self = this.set("ThreatIntelIndicatorType", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicatorType(value: StringFilterList): Self = this.set("ThreatIntelIndicatorType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicatorType: Self = this.set("ThreatIntelIndicatorType", js.undefined)
+    @scala.inline
+    def setThreatIntelIndicatorValueVarargs(value: StringFilter*): Self = this.set("ThreatIntelIndicatorValue", js.Array(value :_*))
+    @scala.inline
+    def setThreatIntelIndicatorValue(value: StringFilterList): Self = this.set("ThreatIntelIndicatorValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatIntelIndicatorValue: Self = this.set("ThreatIntelIndicatorValue", js.undefined)
+    @scala.inline
+    def setTitleVarargs(value: StringFilter*): Self = this.set("Title", js.Array(value :_*))
+    @scala.inline
+    def setTitle(value: StringFilterList): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+    @scala.inline
+    def setTypeVarargs(value: StringFilter*): Self = this.set("Type", js.Array(value :_*))
+    @scala.inline
+    def setType(value: StringFilterList): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+    @scala.inline
+    def setUpdatedAtVarargs(value: DateFilter*): Self = this.set("UpdatedAt", js.Array(value :_*))
+    @scala.inline
+    def setUpdatedAt(value: DateFilterList): Self = this.set("UpdatedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedAt: Self = this.set("UpdatedAt", js.undefined)
+    @scala.inline
+    def setUserDefinedFieldsVarargs(value: MapFilter*): Self = this.set("UserDefinedFields", js.Array(value :_*))
+    @scala.inline
+    def setUserDefinedFields(value: MapFilterList): Self = this.set("UserDefinedFields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserDefinedFields: Self = this.set("UserDefinedFields", js.undefined)
+    @scala.inline
+    def setVerificationStateVarargs(value: StringFilter*): Self = this.set("VerificationState", js.Array(value :_*))
+    @scala.inline
+    def setVerificationState(value: StringFilterList): Self = this.set("VerificationState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerificationState: Self = this.set("VerificationState", js.undefined)
+    @scala.inline
+    def setWorkflowStateVarargs(value: StringFilter*): Self = this.set("WorkflowState", js.Array(value :_*))
+    @scala.inline
+    def setWorkflowState(value: StringFilterList): Self = this.set("WorkflowState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowState: Self = this.set("WorkflowState", js.undefined)
+    @scala.inline
+    def setWorkflowStatusVarargs(value: StringFilter*): Self = this.set("WorkflowStatus", js.Array(value :_*))
+    @scala.inline
+    def setWorkflowStatus(value: StringFilterList): Self = this.set("WorkflowStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkflowStatus: Self = this.set("WorkflowStatus", js.undefined)
+  }
+  
 }
 

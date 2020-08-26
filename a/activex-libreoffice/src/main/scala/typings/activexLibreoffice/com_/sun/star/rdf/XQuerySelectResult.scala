@@ -17,11 +17,12 @@ import scala.scalajs.js.annotation._
   * @see XNode
   * @since OOo 3.0
   */
+@js.native
 trait XQuerySelectResult extends XEnumeration {
   /** get the names of the query variables. */
-  val BindingNames: SafeArray[String]
+  val BindingNames: SafeArray[String] = js.native
   /** get the names of the query variables. */
-  def getBindingNames(): SafeArray[String]
+  def getBindingNames(): SafeArray[String] = js.native
 }
 
 object XQuerySelectResult {
@@ -38,5 +39,22 @@ object XQuerySelectResult {
     val __obj = js.Dynamic.literal(BindingNames = BindingNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getBindingNames = js.Any.fromFunction0(getBindingNames), hasMoreElements = js.Any.fromFunction0(hasMoreElements), nextElement = js.Any.fromFunction0(nextElement), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XQuerySelectResult]
   }
+  @scala.inline
+  implicit class XQuerySelectResultOps[Self <: XQuerySelectResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindingNames(value: SafeArray[String]): Self = this.set("BindingNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetBindingNames(value: () => SafeArray[String]): Self = this.set("getBindingNames", js.Any.fromFunction0(value))
+  }
+  
 }
 

@@ -6,38 +6,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEvent extends js.Object {
-  var absolutePointer: js.UndefOr[Point] = js.undefined
-  var button: js.UndefOr[Double] = js.undefined
-  var e: Event
-  var isClick: js.UndefOr[Boolean] = js.undefined
-  var pointer: js.UndefOr[Point] = js.undefined
-  var subTargets: js.UndefOr[js.Array[Object]] = js.undefined
-  var target: js.UndefOr[Object] = js.undefined
-  var transform: js.UndefOr[Corner] = js.undefined
+  var absolutePointer: js.UndefOr[Point] = js.native
+  var button: js.UndefOr[Double] = js.native
+  var e: Event = js.native
+  var isClick: js.UndefOr[Boolean] = js.native
+  var pointer: js.UndefOr[Point] = js.native
+  var subTargets: js.UndefOr[js.Array[Object]] = js.native
+  var target: js.UndefOr[Object] = js.native
+  var transform: js.UndefOr[Corner] = js.native
 }
 
 object IEvent {
   @scala.inline
-  def apply(
-    e: Event,
-    absolutePointer: Point = null,
-    button: js.UndefOr[Double] = js.undefined,
-    isClick: js.UndefOr[Boolean] = js.undefined,
-    pointer: Point = null,
-    subTargets: js.Array[Object] = null,
-    target: Object = null,
-    transform: Corner = null
-  ): IEvent = {
+  def apply(e: Event): IEvent = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any])
-    if (absolutePointer != null) __obj.updateDynamic("absolutePointer")(absolutePointer.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClick)) __obj.updateDynamic("isClick")(isClick.get.asInstanceOf[js.Any])
-    if (pointer != null) __obj.updateDynamic("pointer")(pointer.asInstanceOf[js.Any])
-    if (subTargets != null) __obj.updateDynamic("subTargets")(subTargets.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEvent]
   }
+  @scala.inline
+  implicit class IEventOps[Self <: IEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setE(value: Event): Self = this.set("e", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbsolutePointer(value: Point): Self = this.set("absolutePointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbsolutePointer: Self = this.set("absolutePointer", js.undefined)
+    @scala.inline
+    def setButton(value: Double): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteButton: Self = this.set("button", js.undefined)
+    @scala.inline
+    def setIsClick(value: Boolean): Self = this.set("isClick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsClick: Self = this.set("isClick", js.undefined)
+    @scala.inline
+    def setPointer(value: Point): Self = this.set("pointer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointer: Self = this.set("pointer", js.undefined)
+    @scala.inline
+    def setSubTargetsVarargs(value: Object*): Self = this.set("subTargets", js.Array(value :_*))
+    @scala.inline
+    def setSubTargets(value: js.Array[Object]): Self = this.set("subTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubTargets: Self = this.set("subTargets", js.undefined)
+    @scala.inline
+    def setTarget(value: Object): Self = this.set("target", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTarget: Self = this.set("target", js.undefined)
+    @scala.inline
+    def setTransform(value: Corner): Self = this.set("transform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

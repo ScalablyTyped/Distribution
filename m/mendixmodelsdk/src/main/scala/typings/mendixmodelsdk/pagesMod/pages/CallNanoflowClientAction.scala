@@ -32,28 +32,22 @@ class CallNanoflowClientAction protected () extends ClientAction {
   ) = this()
   @JSName("model")
   var model_FCallNanoflowClientAction: IModel = js.native
-  def confirmationInfo(): js.Any = js.native
-  def confirmationInfo(newValue: ConfirmationInfo): js.Any = js.native
-  @JSName("confirmationInfo")
-  def confirmationInfo_Union: ConfirmationInfo | Null = js.native
-  def nanoflow(): js.Any = js.native
-  def nanoflow(newValue: INanoflow): js.Any = js.native
-  def nanoflowQualifiedName: String | Null = js.native
+  def confirmationInfo: ConfirmationInfo | Null = js.native
+  def confirmationInfo_=(newValue: ConfirmationInfo | Null): Unit = js.native
   /**
     * In version 7.10.0: introduced
     */
-  @JSName("nanoflow")
-  def nanoflow_Union: INanoflow | Null = js.native
+  def nanoflow: INanoflow | Null = js.native
+  def nanoflowQualifiedName: String | Null = js.native
+  def nanoflow_=(newValue: INanoflow | Null): Unit = js.native
   /**
     * In version 7.19.0: introduced
     */
   def parameterMappings: IList[NanoflowParameterMapping] = js.native
   def progressBar: ProgressBarType = js.native
-  def progressBar(newValue: ProgressBarType): js.Any = js.native
-  def progressMessage(): js.Any = js.native
-  def progressMessage(newValue: Text): js.Any = js.native
-  @JSName("progressMessage")
-  def progressMessage_Union: Text | Null = js.native
+  def progressBar_=(newValue: ProgressBarType): Unit = js.native
+  def progressMessage: Text | Null = js.native
+  def progressMessage_=(newValue: Text | Null): Unit = js.native
 }
 
 /* static members */

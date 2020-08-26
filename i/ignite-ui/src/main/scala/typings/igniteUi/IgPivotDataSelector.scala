@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IgPivotDataSelector
   extends /**
   * Option for JSONPDataSourceSettings
@@ -19,104 +20,104 @@ trait IgPivotDataSelector
     * paramType="string" The unique name of the item.
     * returnType="bool"  The function must return true if the item should be accepted.
     */
-  var customMoveValidation: js.UndefOr[js.Function] = js.undefined
+  var customMoveValidation: js.UndefOr[js.Function] = js.native
   /**
     * Fired after the data selector is rendered. Changing the data source instance will re-render the data selector.
     */
-  var dataSelectorRendered: js.UndefOr[DataSelectorRenderedEvent] = js.undefined
+  var dataSelectorRendered: js.UndefOr[DataSelectorRenderedEvent] = js.native
   /**
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[js.Any] = js.native
   /**
     * Fired after the data source has initialized.
     */
-  var dataSourceInitialized: js.UndefOr[DataSourceInitializedEvent] = js.undefined
+  var dataSourceInitialized: js.UndefOr[DataSourceInitializedEvent] = js.native
   /**
     * An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     * The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.
     *
     */
-  var dataSourceOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptions] = js.undefined
+  var dataSourceOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptions] = js.native
   /**
     * Fired after the data source has updated.
     */
-  var dataSourceUpdated: js.UndefOr[DataSourceUpdatedEvent] = js.undefined
+  var dataSourceUpdated: js.UndefOr[DataSourceUpdatedEvent] = js.native
   /**
     * Setting deferUpdate to true will not apply changes to the data source until the update method is called or the update layout button is clicked.
     *
     */
-  var deferUpdate: js.UndefOr[Boolean] = js.undefined
+  var deferUpdate: js.UndefOr[Boolean] = js.native
   /**
     * Fired when the defer update checkbox changes.
     */
-  var deferUpdateChanged: js.UndefOr[DeferUpdateChangedEvent] = js.undefined
+  var deferUpdateChanged: js.UndefOr[DeferUpdateChangedEvent] = js.native
   /**
     * Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableColumnsDropArea: js.UndefOr[Boolean] = js.undefined
+  var disableColumnsDropArea: js.UndefOr[Boolean] = js.native
   /**
     * Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableFiltersDropArea: js.UndefOr[Boolean] = js.undefined
+  var disableFiltersDropArea: js.UndefOr[Boolean] = js.native
   /**
     * Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableMeasuresDropArea: js.UndefOr[Boolean] = js.undefined
+  var disableMeasuresDropArea: js.UndefOr[Boolean] = js.native
   /**
     * Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableRowsDropArea: js.UndefOr[Boolean] = js.undefined
+  var disableRowsDropArea: js.UndefOr[Boolean] = js.native
   /**
     * Fired on drag. Return false to cancel the dragging.
     */
-  var drag: js.UndefOr[DragEvent] = js.undefined
+  var drag: js.UndefOr[DragEvent] = js.native
   /**
     * Settings for the drag and drop functionality of the igPivotDataSelector.
     *
     */
-  var dragAndDropSettings: js.UndefOr[IgPivotDataSelectorDragAndDropSettings] = js.undefined
+  var dragAndDropSettings: js.UndefOr[IgPivotDataSelectorDragAndDropSettings] = js.native
   /**
     * Fired on drag start. Return false to cancel the drag.
     */
-  var dragStart: js.UndefOr[DragStartEvent] = js.undefined
+  var dragStart: js.UndefOr[DragStartEvent] = js.native
   /**
     * Fired on drag stop.
     */
-  var dragStop: js.UndefOr[DragStopEvent] = js.undefined
+  var dragStop: js.UndefOr[DragStopEvent] = js.native
   /**
     * Specifies the parent for the drop downs.
     */
-  var dropDownParent: js.UndefOr[js.Any] = js.undefined
+  var dropDownParent: js.UndefOr[js.Any] = js.native
   /**
     * Fired after the filter members drop down closes.
     */
-  var filterDropDownClosed: js.UndefOr[FilterDropDownClosedEvent] = js.undefined
+  var filterDropDownClosed: js.UndefOr[FilterDropDownClosedEvent] = js.native
   /**
     * Fired before the filter members drop down closes. Return false to cancel the closing.
     */
-  var filterDropDownClosing: js.UndefOr[FilterDropDownClosingEvent] = js.undefined
+  var filterDropDownClosing: js.UndefOr[FilterDropDownClosingEvent] = js.native
   /**
     * Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.
     */
-  var filterDropDownOk: js.UndefOr[FilterDropDownOkEvent] = js.undefined
+  var filterDropDownOk: js.UndefOr[FilterDropDownOkEvent] = js.native
   /**
     * Fired after the filter members drop down opens.
     */
-  var filterDropDownOpened: js.UndefOr[FilterDropDownOpenedEvent] = js.undefined
+  var filterDropDownOpened: js.UndefOr[FilterDropDownOpenedEvent] = js.native
   /**
     * Fired before the filter members drop down opens. Return false to cancel the opening.
     */
-  var filterDropDownOpening: js.UndefOr[FilterDropDownOpeningEvent] = js.undefined
+  var filterDropDownOpening: js.UndefOr[FilterDropDownOpeningEvent] = js.native
   /**
     * Fired after the filter members are loaded.
     */
-  var filterMembersLoaded: js.UndefOr[FilterMembersLoadedEvent] = js.undefined
+  var filterMembersLoaded: js.UndefOr[FilterMembersLoadedEvent] = js.native
   /**
     * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.
     *
@@ -126,38 +127,38 @@ trait IgPivotDataSelector
     * "number" The widget height can be set as a number.
     * "null" will stretch vertically to fit data, if no other heights are defined.
     */
-  var height: js.UndefOr[String | Double] = js.undefined
+  var height: js.UndefOr[String | Double] = js.native
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[js.Any] = js.native
   /**
     * Fired after a metadata item drop.
     */
-  var metadataDropped: js.UndefOr[MetadataDroppedEvent] = js.undefined
+  var metadataDropped: js.UndefOr[MetadataDroppedEvent] = js.native
   /**
     * Fired before a metadata item drop. Return false to cancel the drop.
     */
-  var metadataDropping: js.UndefOr[MetadataDroppingEvent] = js.undefined
+  var metadataDropping: js.UndefOr[MetadataDroppingEvent] = js.native
   /**
     * Fired after a metadata item is removed when the user clicks the close icon.
     */
-  var metadataRemoved: js.UndefOr[MetadataRemovedEvent] = js.undefined
+  var metadataRemoved: js.UndefOr[MetadataRemovedEvent] = js.native
   /**
     * Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.
     */
-  var metadataRemoving: js.UndefOr[MetadataRemovingEvent] = js.undefined
+  var metadataRemoving: js.UndefOr[MetadataRemovingEvent] = js.native
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.undefined
+  var regional: js.UndefOr[String | js.Object] = js.native
   /**
     *
     *
@@ -166,81 +167,155 @@ trait IgPivotDataSelector
     * "number" The widget width can be set as a number.
     * "null" will stretch to fit data, if no other widths are defined.
     */
-  var width: js.UndefOr[String | Double] = js.undefined
+  var width: js.UndefOr[String | Double] = js.native
 }
 
 object IgPivotDataSelector {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    customMoveValidation: js.Function = null,
-    dataSelectorRendered: (/* event */ Event, /* ui */ DataSelectorRenderedEventUIParam) => Unit = null,
-    dataSource: js.Any = null,
-    dataSourceInitialized: (/* event */ Event, /* ui */ DataSourceInitializedEventUIParam) => Unit = null,
-    dataSourceOptions: IgPivotDataSelectorDataSourceOptions = null,
-    dataSourceUpdated: (/* event */ Event, /* ui */ DataSourceUpdatedEventUIParam) => Unit = null,
-    deferUpdate: js.UndefOr[Boolean] = js.undefined,
-    deferUpdateChanged: (/* event */ Event, /* ui */ DeferUpdateChangedEventUIParam) => Unit = null,
-    disableColumnsDropArea: js.UndefOr[Boolean] = js.undefined,
-    disableFiltersDropArea: js.UndefOr[Boolean] = js.undefined,
-    disableMeasuresDropArea: js.UndefOr[Boolean] = js.undefined,
-    disableRowsDropArea: js.UndefOr[Boolean] = js.undefined,
-    drag: (/* event */ Event, /* ui */ DragEventUIParam) => Unit = null,
-    dragAndDropSettings: IgPivotDataSelectorDragAndDropSettings = null,
-    dragStart: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit = null,
-    dragStop: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit = null,
-    dropDownParent: js.Any = null,
-    filterDropDownClosed: (/* event */ Event, /* ui */ FilterDropDownClosedEventUIParam) => Unit = null,
-    filterDropDownClosing: (/* event */ Event, /* ui */ FilterDropDownClosingEventUIParam) => Unit = null,
-    filterDropDownOk: (/* event */ Event, /* ui */ FilterDropDownOkEventUIParam) => Unit = null,
-    filterDropDownOpened: (/* event */ Event, /* ui */ FilterDropDownOpenedEventUIParam) => Unit = null,
-    filterDropDownOpening: (/* event */ Event, /* ui */ FilterDropDownOpeningEventUIParam) => Unit = null,
-    filterMembersLoaded: (/* event */ Event, /* ui */ FilterMembersLoadedEventUIParam) => Unit = null,
-    height: String | Double = null,
-    language: String = null,
-    locale: js.Any = null,
-    metadataDropped: (/* event */ Event, /* ui */ MetadataDroppedEventUIParam) => Unit = null,
-    metadataDropping: (/* event */ Event, /* ui */ MetadataDroppingEventUIParam) => Unit = null,
-    metadataRemoved: (/* event */ Event, /* ui */ MetadataRemovedEventUIParam) => Unit = null,
-    metadataRemoving: (/* event */ Event, /* ui */ MetadataRemovingEventUIParam) => Unit = null,
-    regional: String | js.Object = null,
-    width: String | Double = null
-  ): IgPivotDataSelector = {
+  def apply(): IgPivotDataSelector = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation.asInstanceOf[js.Any])
-    if (dataSelectorRendered != null) __obj.updateDynamic("dataSelectorRendered")(js.Any.fromFunction2(dataSelectorRendered))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSourceInitialized != null) __obj.updateDynamic("dataSourceInitialized")(js.Any.fromFunction2(dataSourceInitialized))
-    if (dataSourceOptions != null) __obj.updateDynamic("dataSourceOptions")(dataSourceOptions.asInstanceOf[js.Any])
-    if (dataSourceUpdated != null) __obj.updateDynamic("dataSourceUpdated")(js.Any.fromFunction2(dataSourceUpdated))
-    if (!js.isUndefined(deferUpdate)) __obj.updateDynamic("deferUpdate")(deferUpdate.get.asInstanceOf[js.Any])
-    if (deferUpdateChanged != null) __obj.updateDynamic("deferUpdateChanged")(js.Any.fromFunction2(deferUpdateChanged))
-    if (!js.isUndefined(disableColumnsDropArea)) __obj.updateDynamic("disableColumnsDropArea")(disableColumnsDropArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFiltersDropArea)) __obj.updateDynamic("disableFiltersDropArea")(disableFiltersDropArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMeasuresDropArea)) __obj.updateDynamic("disableMeasuresDropArea")(disableMeasuresDropArea.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableRowsDropArea)) __obj.updateDynamic("disableRowsDropArea")(disableRowsDropArea.get.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2(drag))
-    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings.asInstanceOf[js.Any])
-    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2(dragStart))
-    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2(dragStop))
-    if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent.asInstanceOf[js.Any])
-    if (filterDropDownClosed != null) __obj.updateDynamic("filterDropDownClosed")(js.Any.fromFunction2(filterDropDownClosed))
-    if (filterDropDownClosing != null) __obj.updateDynamic("filterDropDownClosing")(js.Any.fromFunction2(filterDropDownClosing))
-    if (filterDropDownOk != null) __obj.updateDynamic("filterDropDownOk")(js.Any.fromFunction2(filterDropDownOk))
-    if (filterDropDownOpened != null) __obj.updateDynamic("filterDropDownOpened")(js.Any.fromFunction2(filterDropDownOpened))
-    if (filterDropDownOpening != null) __obj.updateDynamic("filterDropDownOpening")(js.Any.fromFunction2(filterDropDownOpening))
-    if (filterMembersLoaded != null) __obj.updateDynamic("filterMembersLoaded")(js.Any.fromFunction2(filterMembersLoaded))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (metadataDropped != null) __obj.updateDynamic("metadataDropped")(js.Any.fromFunction2(metadataDropped))
-    if (metadataDropping != null) __obj.updateDynamic("metadataDropping")(js.Any.fromFunction2(metadataDropping))
-    if (metadataRemoved != null) __obj.updateDynamic("metadataRemoved")(js.Any.fromFunction2(metadataRemoved))
-    if (metadataRemoving != null) __obj.updateDynamic("metadataRemoving")(js.Any.fromFunction2(metadataRemoving))
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelector]
   }
+  @scala.inline
+  implicit class IgPivotDataSelectorOps[Self <: IgPivotDataSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomMoveValidation(value: js.Function): Self = this.set("customMoveValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomMoveValidation: Self = this.set("customMoveValidation", js.undefined)
+    @scala.inline
+    def setDataSelectorRendered(value: (/* event */ Event, /* ui */ DataSelectorRenderedEventUIParam) => Unit): Self = this.set("dataSelectorRendered", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDataSelectorRendered: Self = this.set("dataSelectorRendered", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDataSourceInitialized(value: (/* event */ Event, /* ui */ DataSourceInitializedEventUIParam) => Unit): Self = this.set("dataSourceInitialized", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDataSourceInitialized: Self = this.set("dataSourceInitialized", js.undefined)
+    @scala.inline
+    def setDataSourceOptions(value: IgPivotDataSelectorDataSourceOptions): Self = this.set("dataSourceOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceOptions: Self = this.set("dataSourceOptions", js.undefined)
+    @scala.inline
+    def setDataSourceUpdated(value: (/* event */ Event, /* ui */ DataSourceUpdatedEventUIParam) => Unit): Self = this.set("dataSourceUpdated", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDataSourceUpdated: Self = this.set("dataSourceUpdated", js.undefined)
+    @scala.inline
+    def setDeferUpdate(value: Boolean): Self = this.set("deferUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeferUpdate: Self = this.set("deferUpdate", js.undefined)
+    @scala.inline
+    def setDeferUpdateChanged(value: (/* event */ Event, /* ui */ DeferUpdateChangedEventUIParam) => Unit): Self = this.set("deferUpdateChanged", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDeferUpdateChanged: Self = this.set("deferUpdateChanged", js.undefined)
+    @scala.inline
+    def setDisableColumnsDropArea(value: Boolean): Self = this.set("disableColumnsDropArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableColumnsDropArea: Self = this.set("disableColumnsDropArea", js.undefined)
+    @scala.inline
+    def setDisableFiltersDropArea(value: Boolean): Self = this.set("disableFiltersDropArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableFiltersDropArea: Self = this.set("disableFiltersDropArea", js.undefined)
+    @scala.inline
+    def setDisableMeasuresDropArea(value: Boolean): Self = this.set("disableMeasuresDropArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableMeasuresDropArea: Self = this.set("disableMeasuresDropArea", js.undefined)
+    @scala.inline
+    def setDisableRowsDropArea(value: Boolean): Self = this.set("disableRowsDropArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableRowsDropArea: Self = this.set("disableRowsDropArea", js.undefined)
+    @scala.inline
+    def setDrag(value: (/* event */ Event, /* ui */ DragEventUIParam) => Unit): Self = this.set("drag", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDrag: Self = this.set("drag", js.undefined)
+    @scala.inline
+    def setDragAndDropSettings(value: IgPivotDataSelectorDragAndDropSettings): Self = this.set("dragAndDropSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragAndDropSettings: Self = this.set("dragAndDropSettings", js.undefined)
+    @scala.inline
+    def setDragStart(value: (/* event */ Event, /* ui */ DragStartEventUIParam) => Unit): Self = this.set("dragStart", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDragStart: Self = this.set("dragStart", js.undefined)
+    @scala.inline
+    def setDragStop(value: (/* event */ Event, /* ui */ DragStopEventUIParam) => Unit): Self = this.set("dragStop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDragStop: Self = this.set("dragStop", js.undefined)
+    @scala.inline
+    def setDropDownParent(value: js.Any): Self = this.set("dropDownParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropDownParent: Self = this.set("dropDownParent", js.undefined)
+    @scala.inline
+    def setFilterDropDownClosed(value: (/* event */ Event, /* ui */ FilterDropDownClosedEventUIParam) => Unit): Self = this.set("filterDropDownClosed", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterDropDownClosed: Self = this.set("filterDropDownClosed", js.undefined)
+    @scala.inline
+    def setFilterDropDownClosing(value: (/* event */ Event, /* ui */ FilterDropDownClosingEventUIParam) => Unit): Self = this.set("filterDropDownClosing", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterDropDownClosing: Self = this.set("filterDropDownClosing", js.undefined)
+    @scala.inline
+    def setFilterDropDownOk(value: (/* event */ Event, /* ui */ FilterDropDownOkEventUIParam) => Unit): Self = this.set("filterDropDownOk", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterDropDownOk: Self = this.set("filterDropDownOk", js.undefined)
+    @scala.inline
+    def setFilterDropDownOpened(value: (/* event */ Event, /* ui */ FilterDropDownOpenedEventUIParam) => Unit): Self = this.set("filterDropDownOpened", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterDropDownOpened: Self = this.set("filterDropDownOpened", js.undefined)
+    @scala.inline
+    def setFilterDropDownOpening(value: (/* event */ Event, /* ui */ FilterDropDownOpeningEventUIParam) => Unit): Self = this.set("filterDropDownOpening", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterDropDownOpening: Self = this.set("filterDropDownOpening", js.undefined)
+    @scala.inline
+    def setFilterMembersLoaded(value: (/* event */ Event, /* ui */ FilterMembersLoadedEventUIParam) => Unit): Self = this.set("filterMembersLoaded", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteFilterMembersLoaded: Self = this.set("filterMembersLoaded", js.undefined)
+    @scala.inline
+    def setHeight(value: String | Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setLocale(value: js.Any): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMetadataDropped(value: (/* event */ Event, /* ui */ MetadataDroppedEventUIParam) => Unit): Self = this.set("metadataDropped", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMetadataDropped: Self = this.set("metadataDropped", js.undefined)
+    @scala.inline
+    def setMetadataDropping(value: (/* event */ Event, /* ui */ MetadataDroppingEventUIParam) => Unit): Self = this.set("metadataDropping", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMetadataDropping: Self = this.set("metadataDropping", js.undefined)
+    @scala.inline
+    def setMetadataRemoved(value: (/* event */ Event, /* ui */ MetadataRemovedEventUIParam) => Unit): Self = this.set("metadataRemoved", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMetadataRemoved: Self = this.set("metadataRemoved", js.undefined)
+    @scala.inline
+    def setMetadataRemoving(value: (/* event */ Event, /* ui */ MetadataRemovingEventUIParam) => Unit): Self = this.set("metadataRemoving", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMetadataRemoving: Self = this.set("metadataRemoving", js.undefined)
+    @scala.inline
+    def setRegional(value: String | js.Object): Self = this.set("regional", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegional: Self = this.set("regional", js.undefined)
+    @scala.inline
+    def setWidth(value: String | Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

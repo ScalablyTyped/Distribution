@@ -28,6 +28,7 @@ trait Grid_ extends Widget_ {
     * @returns {void}
     */
   def addRecord(): Unit = js.native
+  def addRecord(data: js.UndefOr[scala.Nothing], serverChange: js.Array[_]): Unit = js.native
   def addRecord(data: js.Array[_]): Unit = js.native
   def addRecord(data: js.Array[_], serverChange: js.Array[_]): Unit = js.native
   /** Cancel the modified changes in grid control when edit mode is &quot;batch&quot;.
@@ -162,11 +163,65 @@ trait Grid_ extends Widget_ {
     * @returns {void}
     */
   def export(): Unit = js.native
+  def export(
+    action: js.UndefOr[scala.Nothing],
+    serverEvent: js.UndefOr[scala.Nothing],
+    multipleExport: js.UndefOr[scala.Nothing],
+    gridIds: js.Array[_]
+  ): Unit = js.native
+  def export(action: js.UndefOr[scala.Nothing], serverEvent: js.UndefOr[scala.Nothing], multipleExport: Boolean): Unit = js.native
+  def export(
+    action: js.UndefOr[scala.Nothing],
+    serverEvent: js.UndefOr[scala.Nothing],
+    multipleExport: Boolean,
+    gridIds: js.Array[_]
+  ): Unit = js.native
+  def export(action: js.UndefOr[scala.Nothing], serverEvent: String): Unit = js.native
+  def export(
+    action: js.UndefOr[scala.Nothing],
+    serverEvent: String,
+    multipleExport: js.UndefOr[scala.Nothing],
+    gridIds: js.Array[_]
+  ): Unit = js.native
+  def export(action: js.UndefOr[scala.Nothing], serverEvent: String, multipleExport: Boolean): Unit = js.native
+  def export(
+    action: js.UndefOr[scala.Nothing],
+    serverEvent: String,
+    multipleExport: Boolean,
+    gridIds: js.Array[_]
+  ): Unit = js.native
   def export(action: String): Unit = js.native
+  def export(
+    action: String,
+    serverEvent: js.UndefOr[scala.Nothing],
+    multipleExport: js.UndefOr[scala.Nothing],
+    gridIds: js.Array[_]
+  ): Unit = js.native
+  def export(action: String, serverEvent: js.UndefOr[scala.Nothing], multipleExport: Boolean): Unit = js.native
+  def export(
+    action: String,
+    serverEvent: js.UndefOr[scala.Nothing],
+    multipleExport: Boolean,
+    gridIds: js.Array[_]
+  ): Unit = js.native
   def export(action: String, serverEvent: String): Unit = js.native
+  def export(
+    action: String,
+    serverEvent: String,
+    multipleExport: js.UndefOr[scala.Nothing],
+    gridIds: js.Array[_]
+  ): Unit = js.native
   def export(action: String, serverEvent: String, multipleExport: Boolean): Unit = js.native
   def export(action: String, serverEvent: String, multipleExport: Boolean, gridIds: js.Array[_]): Unit = js.native
   def filterColumn(fieldName: String, filterOperator: String, filterValue: String, predicate: String): Unit = js.native
+  def filterColumn(
+    fieldName: String,
+    filterOperator: String,
+    filterValue: String,
+    predicate: String,
+    matchcase: js.UndefOr[scala.Nothing],
+    actualFilterValue: js.Any
+  ): Unit = js.native
   def filterColumn(
     fieldName: String,
     filterOperator: String,
@@ -192,6 +247,14 @@ trait Grid_ extends Widget_ {
     * @returns {void}
     */
   def filterColumn(fieldName: js.Array[_], filterOperator: String, filterValue: String, predicate: String): Unit = js.native
+  def filterColumn(
+    fieldName: js.Array[_],
+    filterOperator: String,
+    filterValue: String,
+    predicate: String,
+    matchcase: js.UndefOr[scala.Nothing],
+    actualFilterValue: js.Any
+  ): Unit = js.native
   def filterColumn(
     fieldName: js.Array[_],
     filterOperator: String,

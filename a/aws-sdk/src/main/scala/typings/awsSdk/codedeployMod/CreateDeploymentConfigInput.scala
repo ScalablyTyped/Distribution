@@ -26,17 +26,36 @@ trait CreateDeploymentConfigInput extends js.Object {
 
 object CreateDeploymentConfigInput {
   @scala.inline
-  def apply(
-    deploymentConfigName: DeploymentConfigName,
-    computePlatform: ComputePlatform = null,
-    minimumHealthyHosts: MinimumHealthyHosts = null,
-    trafficRoutingConfig: TrafficRoutingConfig = null
-  ): CreateDeploymentConfigInput = {
+  def apply(deploymentConfigName: DeploymentConfigName): CreateDeploymentConfigInput = {
     val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
-    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
-    if (minimumHealthyHosts != null) __obj.updateDynamic("minimumHealthyHosts")(minimumHealthyHosts.asInstanceOf[js.Any])
-    if (trafficRoutingConfig != null) __obj.updateDynamic("trafficRoutingConfig")(trafficRoutingConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentConfigInput]
   }
+  @scala.inline
+  implicit class CreateDeploymentConfigInputOps[Self <: CreateDeploymentConfigInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeploymentConfigName(value: DeploymentConfigName): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComputePlatform(value: ComputePlatform): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    @scala.inline
+    def setMinimumHealthyHosts(value: MinimumHealthyHosts): Self = this.set("minimumHealthyHosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumHealthyHosts: Self = this.set("minimumHealthyHosts", js.undefined)
+    @scala.inline
+    def setTrafficRoutingConfig(value: TrafficRoutingConfig): Self = this.set("trafficRoutingConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrafficRoutingConfig: Self = this.set("trafficRoutingConfig", js.undefined)
+  }
+  
 }
 

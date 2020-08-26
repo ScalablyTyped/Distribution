@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Header ()
   extends Component[IInternalHeaderProps, IHeaderState, js.Any] {
   def this(props: IInternalHeaderProps) = this()
+  def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
   def this(props: IInternalHeaderProps, context: js.Any) = this()
   var activationIndex: Double = js.native
   var convertEventToIndex: js.Any = js.native
@@ -33,6 +34,8 @@ class Header ()
   def componentDidUpdate_MHeader(_underscore: IInternalHeaderProps, prevState: IHeaderState): Unit = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MHeader(): Boolean = js.native
+  @JSName("shouldComponentUpdate")
+  def shouldComponentUpdate_MHeader(nextProps: js.UndefOr[scala.Nothing], nextState: IHeaderState): Boolean = js.native
   @JSName("shouldComponentUpdate")
   def shouldComponentUpdate_MHeader(nextProps: IInternalHeaderProps): Boolean = js.native
   @JSName("shouldComponentUpdate")

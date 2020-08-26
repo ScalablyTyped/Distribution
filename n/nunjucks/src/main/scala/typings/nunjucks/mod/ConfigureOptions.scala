@@ -6,42 +6,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ConfigureOptions extends js.Object {
-  var autoescape: js.UndefOr[Boolean] = js.undefined
-  var express: js.UndefOr[js.Object] = js.undefined
-  var lstripBlocks: js.UndefOr[Boolean] = js.undefined
-  var noCache: js.UndefOr[Boolean] = js.undefined
-  var tags: js.UndefOr[BlockEnd] = js.undefined
-  var throwOnUndefined: js.UndefOr[Boolean] = js.undefined
-  var trimBlocks: js.UndefOr[Boolean] = js.undefined
-  var watch: js.UndefOr[Boolean] = js.undefined
-  var web: js.UndefOr[Async] = js.undefined
+  var autoescape: js.UndefOr[Boolean] = js.native
+  var express: js.UndefOr[js.Object] = js.native
+  var lstripBlocks: js.UndefOr[Boolean] = js.native
+  var noCache: js.UndefOr[Boolean] = js.native
+  var tags: js.UndefOr[BlockEnd] = js.native
+  var throwOnUndefined: js.UndefOr[Boolean] = js.native
+  var trimBlocks: js.UndefOr[Boolean] = js.native
+  var watch: js.UndefOr[Boolean] = js.native
+  var web: js.UndefOr[Async] = js.native
 }
 
 object ConfigureOptions {
   @scala.inline
-  def apply(
-    autoescape: js.UndefOr[Boolean] = js.undefined,
-    express: js.Object = null,
-    lstripBlocks: js.UndefOr[Boolean] = js.undefined,
-    noCache: js.UndefOr[Boolean] = js.undefined,
-    tags: BlockEnd = null,
-    throwOnUndefined: js.UndefOr[Boolean] = js.undefined,
-    trimBlocks: js.UndefOr[Boolean] = js.undefined,
-    watch: js.UndefOr[Boolean] = js.undefined,
-    web: Async = null
-  ): ConfigureOptions = {
+  def apply(): ConfigureOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoescape)) __obj.updateDynamic("autoescape")(autoescape.get.asInstanceOf[js.Any])
-    if (express != null) __obj.updateDynamic("express")(express.asInstanceOf[js.Any])
-    if (!js.isUndefined(lstripBlocks)) __obj.updateDynamic("lstripBlocks")(lstripBlocks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCache)) __obj.updateDynamic("noCache")(noCache.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnUndefined)) __obj.updateDynamic("throwOnUndefined")(throwOnUndefined.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(trimBlocks)) __obj.updateDynamic("trimBlocks")(trimBlocks.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.get.asInstanceOf[js.Any])
-    if (web != null) __obj.updateDynamic("web")(web.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigureOptions]
   }
+  @scala.inline
+  implicit class ConfigureOptionsOps[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoescape(value: Boolean): Self = this.set("autoescape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoescape: Self = this.set("autoescape", js.undefined)
+    @scala.inline
+    def setExpress(value: js.Object): Self = this.set("express", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpress: Self = this.set("express", js.undefined)
+    @scala.inline
+    def setLstripBlocks(value: Boolean): Self = this.set("lstripBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLstripBlocks: Self = this.set("lstripBlocks", js.undefined)
+    @scala.inline
+    def setNoCache(value: Boolean): Self = this.set("noCache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoCache: Self = this.set("noCache", js.undefined)
+    @scala.inline
+    def setTags(value: BlockEnd): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setThrowOnUndefined(value: Boolean): Self = this.set("throwOnUndefined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThrowOnUndefined: Self = this.set("throwOnUndefined", js.undefined)
+    @scala.inline
+    def setTrimBlocks(value: Boolean): Self = this.set("trimBlocks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrimBlocks: Self = this.set("trimBlocks", js.undefined)
+    @scala.inline
+    def setWatch(value: Boolean): Self = this.set("watch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatch: Self = this.set("watch", js.undefined)
+    @scala.inline
+    def setWeb(value: Async): Self = this.set("web", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeb: Self = this.set("web", js.undefined)
+  }
+  
 }
 

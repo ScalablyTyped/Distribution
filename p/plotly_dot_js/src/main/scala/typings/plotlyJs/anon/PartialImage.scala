@@ -19,54 +19,93 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<plotly.js.plotly.js.Image> */
+@js.native
 trait PartialImage extends js.Object {
-  var layer: js.UndefOr[above | below] = js.undefined
-  var opacity: js.UndefOr[Double] = js.undefined
-  var sizex: js.UndefOr[Double] = js.undefined
-  var sizey: js.UndefOr[Double] = js.undefined
-  var sizing: js.UndefOr[fill | contain | stretch] = js.undefined
-  var source: js.UndefOr[String] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var x: js.UndefOr[Double | String] = js.undefined
-  var xanchor: js.UndefOr[left | center | right] = js.undefined
-  var xref: js.UndefOr[paper | x] = js.undefined
-  var y: js.UndefOr[Double | String] = js.undefined
-  var yanchor: js.UndefOr[top | middle | bottom] = js.undefined
-  var yref: js.UndefOr[paper | y] = js.undefined
+  var layer: js.UndefOr[above | below] = js.native
+  var opacity: js.UndefOr[Double] = js.native
+  var sizex: js.UndefOr[Double] = js.native
+  var sizey: js.UndefOr[Double] = js.native
+  var sizing: js.UndefOr[fill | contain | stretch] = js.native
+  var source: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var x: js.UndefOr[Double | String] = js.native
+  var xanchor: js.UndefOr[left | center | right] = js.native
+  var xref: js.UndefOr[paper | x] = js.native
+  var y: js.UndefOr[Double | String] = js.native
+  var yanchor: js.UndefOr[top | middle | bottom] = js.native
+  var yref: js.UndefOr[paper | y] = js.native
 }
 
 object PartialImage {
   @scala.inline
-  def apply(
-    layer: above | below = null,
-    opacity: js.UndefOr[Double] = js.undefined,
-    sizex: js.UndefOr[Double] = js.undefined,
-    sizey: js.UndefOr[Double] = js.undefined,
-    sizing: fill | contain | stretch = null,
-    source: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    x: Double | String = null,
-    xanchor: left | center | right = null,
-    xref: paper | x = null,
-    y: Double | String = null,
-    yanchor: top | middle | bottom = null,
-    yref: paper | y = null
-  ): PartialImage = {
+  def apply(): PartialImage = {
     val __obj = js.Dynamic.literal()
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizex)) __obj.updateDynamic("sizex")(sizex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizey)) __obj.updateDynamic("sizey")(sizey.get.asInstanceOf[js.Any])
-    if (sizing != null) __obj.updateDynamic("sizing")(sizing.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xanchor != null) __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
-    if (xref != null) __obj.updateDynamic("xref")(xref.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (yanchor != null) __obj.updateDynamic("yanchor")(yanchor.asInstanceOf[js.Any])
-    if (yref != null) __obj.updateDynamic("yref")(yref.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialImage]
   }
+  @scala.inline
+  implicit class PartialImageOps[Self <: PartialImage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLayer(value: above | below): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayer: Self = this.set("layer", js.undefined)
+    @scala.inline
+    def setOpacity(value: Double): Self = this.set("opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpacity: Self = this.set("opacity", js.undefined)
+    @scala.inline
+    def setSizex(value: Double): Self = this.set("sizex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizex: Self = this.set("sizex", js.undefined)
+    @scala.inline
+    def setSizey(value: Double): Self = this.set("sizey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizey: Self = this.set("sizey", js.undefined)
+    @scala.inline
+    def setSizing(value: fill | contain | stretch): Self = this.set("sizing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSizing: Self = this.set("sizing", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setXanchor(value: left | center | right): Self = this.set("xanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXanchor: Self = this.set("xanchor", js.undefined)
+    @scala.inline
+    def setXref(value: paper | typings.plotlyJs.plotlyJsStrings.x): Self = this.set("xref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXref: Self = this.set("xref", js.undefined)
+    @scala.inline
+    def setY(value: Double | String): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+    @scala.inline
+    def setYanchor(value: top | middle | bottom): Self = this.set("yanchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYanchor: Self = this.set("yanchor", js.undefined)
+    @scala.inline
+    def setYref(value: paper | y): Self = this.set("yref", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYref: Self = this.set("yref", js.undefined)
+  }
+  
 }
 

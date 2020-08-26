@@ -24,16 +24,36 @@ trait SchemaCreativeRestrictions extends js.Object {
 
 object SchemaCreativeRestrictions {
   @scala.inline
-  def apply(
-    creativeFormat: String = null,
-    creativeSpecifications: js.Array[SchemaCreativeSpecification] = null,
-    skippableAdType: String = null
-  ): SchemaCreativeRestrictions = {
+  def apply(): SchemaCreativeRestrictions = {
     val __obj = js.Dynamic.literal()
-    if (creativeFormat != null) __obj.updateDynamic("creativeFormat")(creativeFormat.asInstanceOf[js.Any])
-    if (creativeSpecifications != null) __obj.updateDynamic("creativeSpecifications")(creativeSpecifications.asInstanceOf[js.Any])
-    if (skippableAdType != null) __obj.updateDynamic("skippableAdType")(skippableAdType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreativeRestrictions]
   }
+  @scala.inline
+  implicit class SchemaCreativeRestrictionsOps[Self <: SchemaCreativeRestrictions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreativeFormat(value: String): Self = this.set("creativeFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeFormat: Self = this.set("creativeFormat", js.undefined)
+    @scala.inline
+    def setCreativeSpecificationsVarargs(value: SchemaCreativeSpecification*): Self = this.set("creativeSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setCreativeSpecifications(value: js.Array[SchemaCreativeSpecification]): Self = this.set("creativeSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreativeSpecifications: Self = this.set("creativeSpecifications", js.undefined)
+    @scala.inline
+    def setSkippableAdType(value: String): Self = this.set("skippableAdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkippableAdType: Self = this.set("skippableAdType", js.undefined)
+  }
+  
 }
 

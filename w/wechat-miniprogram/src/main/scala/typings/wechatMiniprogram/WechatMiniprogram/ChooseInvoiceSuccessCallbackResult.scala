@@ -1,0 +1,38 @@
+package typings.wechatMiniprogram.WechatMiniprogram
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ChooseInvoiceSuccessCallbackResult extends js.Object {
+  var errMsg: String = js.native
+  /** 用户选中的发票信息，格式为一个 JSON 字符串，包含三个字段： card_id：所选发票卡券的 cardId，encrypt_code：所选发票卡券的加密 code，报销方可以通过 cardId 和 encryptCode 获得报销发票的信息，app_id： 发票方的 appId。 */
+  var invoiceInfo: String = js.native
+}
+
+object ChooseInvoiceSuccessCallbackResult {
+  @scala.inline
+  def apply(errMsg: String, invoiceInfo: String): ChooseInvoiceSuccessCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], invoiceInfo = invoiceInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChooseInvoiceSuccessCallbackResult]
+  }
+  @scala.inline
+  implicit class ChooseInvoiceSuccessCallbackResultOps[Self <: ChooseInvoiceSuccessCallbackResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrMsg(value: String): Self = this.set("errMsg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInvoiceInfo(value: String): Self = this.set("invoiceInfo", value.asInstanceOf[js.Any])
+  }
+  
+}
+

@@ -66,38 +66,78 @@ trait GetStageResponse extends js.Object {
 
 object GetStageResponse {
   @scala.inline
-  def apply(
-    AccessLogSettings: AccessLogSettings = null,
-    ApiGatewayManaged: js.UndefOr[boolean] = js.undefined,
-    AutoDeploy: js.UndefOr[boolean] = js.undefined,
-    ClientCertificateId: Id = null,
-    CreatedDate: timestampIso8601 = null,
-    DefaultRouteSettings: RouteSettings = null,
-    DeploymentId: Id = null,
-    Description: StringWithLengthBetween0And1024 = null,
-    LastDeploymentStatusMessage: string = null,
-    LastUpdatedDate: timestampIso8601 = null,
-    RouteSettings: RouteSettingsMap = null,
-    StageName: StringWithLengthBetween1And128 = null,
-    StageVariables: StageVariablesMap = null,
-    Tags: Tags = null
-  ): GetStageResponse = {
+  def apply(): GetStageResponse = {
     val __obj = js.Dynamic.literal()
-    if (AccessLogSettings != null) __obj.updateDynamic("AccessLogSettings")(AccessLogSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApiGatewayManaged)) __obj.updateDynamic("ApiGatewayManaged")(ApiGatewayManaged.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoDeploy)) __obj.updateDynamic("AutoDeploy")(AutoDeploy.get.asInstanceOf[js.Any])
-    if (ClientCertificateId != null) __obj.updateDynamic("ClientCertificateId")(ClientCertificateId.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DefaultRouteSettings != null) __obj.updateDynamic("DefaultRouteSettings")(DefaultRouteSettings.asInstanceOf[js.Any])
-    if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (LastDeploymentStatusMessage != null) __obj.updateDynamic("LastDeploymentStatusMessage")(LastDeploymentStatusMessage.asInstanceOf[js.Any])
-    if (LastUpdatedDate != null) __obj.updateDynamic("LastUpdatedDate")(LastUpdatedDate.asInstanceOf[js.Any])
-    if (RouteSettings != null) __obj.updateDynamic("RouteSettings")(RouteSettings.asInstanceOf[js.Any])
-    if (StageName != null) __obj.updateDynamic("StageName")(StageName.asInstanceOf[js.Any])
-    if (StageVariables != null) __obj.updateDynamic("StageVariables")(StageVariables.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStageResponse]
   }
+  @scala.inline
+  implicit class GetStageResponseOps[Self <: GetStageResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessLogSettings(value: AccessLogSettings): Self = this.set("AccessLogSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessLogSettings: Self = this.set("AccessLogSettings", js.undefined)
+    @scala.inline
+    def setApiGatewayManaged(value: boolean): Self = this.set("ApiGatewayManaged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApiGatewayManaged: Self = this.set("ApiGatewayManaged", js.undefined)
+    @scala.inline
+    def setAutoDeploy(value: boolean): Self = this.set("AutoDeploy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeploy: Self = this.set("AutoDeploy", js.undefined)
+    @scala.inline
+    def setClientCertificateId(value: Id): Self = this.set("ClientCertificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientCertificateId: Self = this.set("ClientCertificateId", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDefaultRouteSettings(value: RouteSettings): Self = this.set("DefaultRouteSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRouteSettings: Self = this.set("DefaultRouteSettings", js.undefined)
+    @scala.inline
+    def setDeploymentId(value: Id): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    @scala.inline
+    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setLastDeploymentStatusMessage(value: string): Self = this.set("LastDeploymentStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastDeploymentStatusMessage: Self = this.set("LastDeploymentStatusMessage", js.undefined)
+    @scala.inline
+    def setLastUpdatedDate(value: timestampIso8601): Self = this.set("LastUpdatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdatedDate: Self = this.set("LastUpdatedDate", js.undefined)
+    @scala.inline
+    def setRouteSettings(value: RouteSettingsMap): Self = this.set("RouteSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteSettings: Self = this.set("RouteSettings", js.undefined)
+    @scala.inline
+    def setStageName(value: StringWithLengthBetween1And128): Self = this.set("StageName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageName: Self = this.set("StageName", js.undefined)
+    @scala.inline
+    def setStageVariables(value: StageVariablesMap): Self = this.set("StageVariables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStageVariables: Self = this.set("StageVariables", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

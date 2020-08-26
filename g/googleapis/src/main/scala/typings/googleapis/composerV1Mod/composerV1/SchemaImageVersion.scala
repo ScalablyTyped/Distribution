@@ -27,16 +27,36 @@ trait SchemaImageVersion extends js.Object {
 
 object SchemaImageVersion {
   @scala.inline
-  def apply(
-    imageVersionId: String = null,
-    isDefault: js.UndefOr[Boolean] = js.undefined,
-    supportedPythonVersions: js.Array[String] = null
-  ): SchemaImageVersion = {
+  def apply(): SchemaImageVersion = {
     val __obj = js.Dynamic.literal()
-    if (imageVersionId != null) __obj.updateDynamic("imageVersionId")(imageVersionId.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDefault)) __obj.updateDynamic("isDefault")(isDefault.get.asInstanceOf[js.Any])
-    if (supportedPythonVersions != null) __obj.updateDynamic("supportedPythonVersions")(supportedPythonVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaImageVersion]
   }
+  @scala.inline
+  implicit class SchemaImageVersionOps[Self <: SchemaImageVersion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setImageVersionId(value: String): Self = this.set("imageVersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageVersionId: Self = this.set("imageVersionId", js.undefined)
+    @scala.inline
+    def setIsDefault(value: Boolean): Self = this.set("isDefault", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsDefault: Self = this.set("isDefault", js.undefined)
+    @scala.inline
+    def setSupportedPythonVersionsVarargs(value: String*): Self = this.set("supportedPythonVersions", js.Array(value :_*))
+    @scala.inline
+    def setSupportedPythonVersions(value: js.Array[String]): Self = this.set("supportedPythonVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedPythonVersions: Self = this.set("supportedPythonVersions", js.undefined)
+  }
+  
 }
 

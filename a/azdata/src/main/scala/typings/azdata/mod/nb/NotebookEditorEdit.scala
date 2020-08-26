@@ -21,6 +21,7 @@ trait NotebookEditorEdit extends js.Object {
     * @param collapsed The collapsed state of the new cell. Default value is `false` if not provided.
     */
   def insertCell(value: ICellContents): Unit = js.native
+  def insertCell(value: ICellContents, index: js.UndefOr[scala.Nothing], collapsed: Boolean): Unit = js.native
   def insertCell(value: ICellContents, index: Double): Unit = js.native
   def insertCell(value: ICellContents, index: Double, collapsed: Boolean): Unit = js.native
   /**

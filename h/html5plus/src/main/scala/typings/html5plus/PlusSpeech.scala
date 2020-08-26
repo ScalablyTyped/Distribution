@@ -33,7 +33,15 @@ trait PlusSpeech extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
   def addEventListener(): Unit = js.native
+  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
+  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(
+    event: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* result */ js.Any, Unit],
+    capture: Boolean
+  ): Unit = js.native
   def addEventListener(event: PlusSpeechSpeechRecoginzeEvents): Unit = js.native
+  def addEventListener(event: PlusSpeechSpeechRecoginzeEvents, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusSpeechSpeechRecoginzeEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusSpeechSpeechRecoginzeEvents,
@@ -47,7 +55,23 @@ trait PlusSpeech extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
   def startRecognize(): Unit = js.native
+  def startRecognize(
+    options: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def startRecognize(options: js.UndefOr[scala.Nothing], successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def startRecognize(
+    options: js.UndefOr[scala.Nothing],
+    successCB: js.Function1[/* result */ String, Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def startRecognize(options: PlusSpeechSpeechRecognizeOptions): Unit = js.native
+  def startRecognize(
+    options: PlusSpeechSpeechRecognizeOptions,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def startRecognize(options: PlusSpeechSpeechRecognizeOptions, successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def startRecognize(
     options: PlusSpeechSpeechRecognizeOptions,

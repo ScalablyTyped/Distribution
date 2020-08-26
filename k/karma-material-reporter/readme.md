@@ -12,7 +12,7 @@ A good looking UI for displaying karma test results
 | Keywords           | karma, reporter, material |
 | # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 1424 |
+| # downloads        | 1409 |
 | # stars            | 0 |
 
 ## Links

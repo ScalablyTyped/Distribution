@@ -19,6 +19,15 @@ object IntersectionTests extends js.Object {
     p0: Cartesian3,
     p1: Cartesian3,
     p2: Cartesian3,
+    cullBackFaces: js.UndefOr[scala.Nothing],
+    result: Cartesian3
+  ): Cartesian3 = js.native
+  def lineSegmentTriangle(
+    v0: Cartesian3,
+    v1: Cartesian3,
+    p0: Cartesian3,
+    p1: Cartesian3,
+    p2: Cartesian3,
     cullBackFaces: Boolean
   ): Cartesian3 = js.native
   def lineSegmentTriangle(
@@ -36,6 +45,14 @@ object IntersectionTests extends js.Object {
   def raySphere(ray: Ray, sphere: BoundingSphere): js.Any = js.native
   def raySphere(ray: Ray, sphere: BoundingSphere, result: js.Any): js.Any = js.native
   def rayTriangle(ray: Ray, p0: Cartesian3, p1: Cartesian3, p2: Cartesian3): Cartesian3 = js.native
+  def rayTriangle(
+    ray: Ray,
+    p0: Cartesian3,
+    p1: Cartesian3,
+    p2: Cartesian3,
+    cullBackFaces: js.UndefOr[scala.Nothing],
+    result: Cartesian3
+  ): Cartesian3 = js.native
   def rayTriangle(ray: Ray, p0: Cartesian3, p1: Cartesian3, p2: Cartesian3, cullBackFaces: Boolean): Cartesian3 = js.native
   def rayTriangle(
     ray: Ray,

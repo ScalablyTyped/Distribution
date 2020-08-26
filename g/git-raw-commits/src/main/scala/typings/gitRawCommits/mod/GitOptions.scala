@@ -24,53 +24,74 @@ import scala.scalajs.js.annotation._
   * * `debug`
   * * `path`
   */
+@js.native
 trait GitOptions
   extends /* options */ StringDictionary[js.Any] {
   /**
     * A function to get debug information.
     */
-  var debug: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
+  var debug: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.native
   /**
     * Please check http://git-scm.com/docs/git-log for format options.
     *
     * @default
     * '%B'
     */
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String] = js.native
   /**
     * @default
     * ''
     */
-  var from: js.UndefOr[String] = js.undefined
+  var from: js.UndefOr[String] = js.native
   /**
     * Filter commits to the path provided.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String] = js.native
   /**
     * @default
     * 'HEAD'
     */
-  var to: js.UndefOr[String] = js.undefined
+  var to: js.UndefOr[String] = js.native
 }
 
 object GitOptions {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    debug: /* message */ js.Any => Unit = null,
-    format: String = null,
-    from: String = null,
-    path: String = null,
-    to: String = null
-  ): GitOptions = {
+  def apply(): GitOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1(debug))
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitOptions]
   }
+  @scala.inline
+  implicit class GitOptionsOps[Self <: GitOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDebug(value: /* message */ js.Any => Unit): Self = this.set("debug", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDebug: Self = this.set("debug", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFrom(value: String): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setTo(value: String): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

@@ -5,77 +5,131 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BottomText extends js.Object {
-  var bottomText: js.UndefOr[ReactNode] = js.undefined
-  var cancelText: js.UndefOr[String] = js.undefined
-  var children: ReactNode
-  var className: js.UndefOr[String] = js.undefined
-  var closeOnBlur: js.UndefOr[Boolean] = js.undefined
-  var closeOnCancel: js.UndefOr[Boolean] = js.undefined
-  var closeOnConfirm: js.UndefOr[Boolean] = js.undefined
-  var confirmText: js.UndefOr[String] = js.undefined
-  var confirmable: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var id: String
-  var onBlur: js.UndefOr[js.Function] = js.undefined
-  var onCancel: js.UndefOr[js.Function] = js.undefined
-  var onClose: js.UndefOr[js.Function] = js.undefined
-  var onConfirm: js.UndefOr[js.Function] = js.undefined
-  var showCancel: js.UndefOr[Boolean] = js.undefined
-  var showClose: js.UndefOr[Boolean] = js.undefined
-  var showConfirm: js.UndefOr[Boolean] = js.undefined
-  var showFooter: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var bottomText: js.UndefOr[ReactNode] = js.native
+  var cancelText: js.UndefOr[String] = js.native
+  var children: ReactNode = js.native
+  var className: js.UndefOr[String] = js.native
+  var closeOnBlur: js.UndefOr[Boolean] = js.native
+  var closeOnCancel: js.UndefOr[Boolean] = js.native
+  var closeOnConfirm: js.UndefOr[Boolean] = js.native
+  var confirmText: js.UndefOr[String] = js.native
+  var confirmable: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var id: String = js.native
+  var onBlur: js.UndefOr[js.Function] = js.native
+  var onCancel: js.UndefOr[js.Function] = js.native
+  var onClose: js.UndefOr[js.Function] = js.native
+  var onConfirm: js.UndefOr[js.Function] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.native
+  var showClose: js.UndefOr[Boolean] = js.native
+  var showConfirm: js.UndefOr[Boolean] = js.native
+  var showFooter: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object BottomText {
   @scala.inline
-  def apply(
-    id: String,
-    bottomText: ReactNode = null,
-    cancelText: String = null,
-    children: ReactNode = null,
-    className: String = null,
-    closeOnBlur: js.UndefOr[Boolean] = js.undefined,
-    closeOnCancel: js.UndefOr[Boolean] = js.undefined,
-    closeOnConfirm: js.UndefOr[Boolean] = js.undefined,
-    confirmText: String = null,
-    confirmable: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    onBlur: js.Function = null,
-    onCancel: js.Function = null,
-    onClose: js.Function = null,
-    onConfirm: js.Function = null,
-    showCancel: js.UndefOr[Boolean] = js.undefined,
-    showClose: js.UndefOr[Boolean] = js.undefined,
-    showConfirm: js.UndefOr[Boolean] = js.undefined,
-    showFooter: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): BottomText = {
+  def apply(id: String): BottomText = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (bottomText != null) __obj.updateDynamic("bottomText")(bottomText.asInstanceOf[js.Any])
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnBlur)) __obj.updateDynamic("closeOnBlur")(closeOnBlur.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnCancel)) __obj.updateDynamic("closeOnCancel")(closeOnCancel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnConfirm)) __obj.updateDynamic("closeOnConfirm")(closeOnConfirm.get.asInstanceOf[js.Any])
-    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
-    if (!js.isUndefined(confirmable)) __obj.updateDynamic("confirmable")(confirmable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(onConfirm.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showConfirm)) __obj.updateDynamic("showConfirm")(showConfirm.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomText]
   }
+  @scala.inline
+  implicit class BottomTextOps[Self <: BottomText] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBottomText(value: ReactNode): Self = this.set("bottomText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBottomText: Self = this.set("bottomText", js.undefined)
+    @scala.inline
+    def setCancelText(value: String): Self = this.set("cancelText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancelText: Self = this.set("cancelText", js.undefined)
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setCloseOnBlur(value: Boolean): Self = this.set("closeOnBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnBlur: Self = this.set("closeOnBlur", js.undefined)
+    @scala.inline
+    def setCloseOnCancel(value: Boolean): Self = this.set("closeOnCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnCancel: Self = this.set("closeOnCancel", js.undefined)
+    @scala.inline
+    def setCloseOnConfirm(value: Boolean): Self = this.set("closeOnConfirm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseOnConfirm: Self = this.set("closeOnConfirm", js.undefined)
+    @scala.inline
+    def setConfirmText(value: String): Self = this.set("confirmText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmText: Self = this.set("confirmText", js.undefined)
+    @scala.inline
+    def setConfirmable(value: Boolean): Self = this.set("confirmable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmable: Self = this.set("confirmable", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setOnBlur(value: js.Function): Self = this.set("onBlur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnCancel(value: js.Function): Self = this.set("onCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnCancel: Self = this.set("onCancel", js.undefined)
+    @scala.inline
+    def setOnClose(value: js.Function): Self = this.set("onClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setOnConfirm(value: js.Function): Self = this.set("onConfirm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnConfirm: Self = this.set("onConfirm", js.undefined)
+    @scala.inline
+    def setShowCancel(value: Boolean): Self = this.set("showCancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowCancel: Self = this.set("showCancel", js.undefined)
+    @scala.inline
+    def setShowClose(value: Boolean): Self = this.set("showClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowClose: Self = this.set("showClose", js.undefined)
+    @scala.inline
+    def setShowConfirm(value: Boolean): Self = this.set("showConfirm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowConfirm: Self = this.set("showConfirm", js.undefined)
+    @scala.inline
+    def setShowFooter(value: Boolean): Self = this.set("showFooter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowFooter: Self = this.set("showFooter", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

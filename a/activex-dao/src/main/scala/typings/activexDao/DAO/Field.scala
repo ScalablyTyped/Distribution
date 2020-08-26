@@ -37,8 +37,29 @@ trait Field extends js.Object {
   val VisibleValue: js.Any = js.native
   def AppendChunk(Val: js.Any): Unit = js.native
   def CreateProperty(): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Property = js.native
+  def CreateProperty(
+    Name: js.UndefOr[scala.Nothing],
+    Type: DataTypeEnum,
+    Value: js.UndefOr[scala.Nothing],
+    DDL: Boolean
+  ): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any): Property = js.native
+  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
+  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def GetChunk(Offset: Double, Bytes: Double): js.Any = js.native

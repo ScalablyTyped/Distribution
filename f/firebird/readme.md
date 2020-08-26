@@ -12,7 +12,7 @@ Firebird binding to node, uses libfbclient.
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 5278 |
+| # downloads        | 5543 |
 | # stars            | 1 |
 
 ## Links

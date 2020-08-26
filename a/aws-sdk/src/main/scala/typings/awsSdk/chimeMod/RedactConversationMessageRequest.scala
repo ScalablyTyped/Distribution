@@ -26,5 +26,24 @@ object RedactConversationMessageRequest {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], ConversationId = ConversationId.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedactConversationMessageRequest]
   }
+  @scala.inline
+  implicit class RedactConversationMessageRequestOps[Self <: RedactConversationMessageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConversationId(value: NonEmptyString): Self = this.set("ConversationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMessageId(value: NonEmptyString): Self = this.set("MessageId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

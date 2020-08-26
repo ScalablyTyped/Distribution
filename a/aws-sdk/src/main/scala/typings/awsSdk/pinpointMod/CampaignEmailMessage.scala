@@ -26,13 +26,38 @@ trait CampaignEmailMessage extends js.Object {
 
 object CampaignEmailMessage {
   @scala.inline
-  def apply(Body: string = null, FromAddress: string = null, HtmlBody: string = null, Title: string = null): CampaignEmailMessage = {
+  def apply(): CampaignEmailMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (FromAddress != null) __obj.updateDynamic("FromAddress")(FromAddress.asInstanceOf[js.Any])
-    if (HtmlBody != null) __obj.updateDynamic("HtmlBody")(HtmlBody.asInstanceOf[js.Any])
-    if (Title != null) __obj.updateDynamic("Title")(Title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CampaignEmailMessage]
   }
+  @scala.inline
+  implicit class CampaignEmailMessageOps[Self <: CampaignEmailMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setFromAddress(value: string): Self = this.set("FromAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromAddress: Self = this.set("FromAddress", js.undefined)
+    @scala.inline
+    def setHtmlBody(value: string): Self = this.set("HtmlBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtmlBody: Self = this.set("HtmlBody", js.undefined)
+    @scala.inline
+    def setTitle(value: string): Self = this.set("Title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("Title", js.undefined)
+  }
+  
 }
 

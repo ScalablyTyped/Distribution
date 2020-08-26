@@ -317,5 +317,320 @@ object Add {
     val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], admin = admin.asInstanceOf[js.Any], alert = alert.asInstanceOf[js.Any], arrowdown = arrowdown.asInstanceOf[js.Any], arrowleft = arrowleft.asInstanceOf[js.Any], arrowleftalt = arrowleftalt.asInstanceOf[js.Any], arrowright = arrowright.asInstanceOf[js.Any], arrowrightalt = arrowrightalt.asInstanceOf[js.Any], arrowup = arrowup.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], basket = basket.asInstanceOf[js.Any], batchaccept = batchaccept.asInstanceOf[js.Any], batchdeny = batchdeny.asInstanceOf[js.Any], beaker = beaker.asInstanceOf[js.Any], bell = bell.asInstanceOf[js.Any], bitbucket = bitbucket.asInstanceOf[js.Any], book = book.asInstanceOf[js.Any], bookmark = bookmark.asInstanceOf[js.Any], bookmarkhollow = bookmarkhollow.asInstanceOf[js.Any], bottombar = bottombar.asInstanceOf[js.Any], box = box.asInstanceOf[js.Any], branch = branch.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], calendar = calendar.asInstanceOf[js.Any], camera = camera.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], check = check.asInstanceOf[js.Any], chevrondown = chevrondown.asInstanceOf[js.Any], chroma = chroma.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], circlehollow = circlehollow.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closeAlt = closeAlt.asInstanceOf[js.Any], cog = cog.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], compass = compass.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cpu = cpu.asInstanceOf[js.Any], credit = credit.asInstanceOf[js.Any], cross = cross.asInstanceOf[js.Any], dashboard = dashboard.asInstanceOf[js.Any], database = database.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], discord = discord.asInstanceOf[js.Any], docchart = docchart.asInstanceOf[js.Any], doclist = doclist.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], download = download.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], ellipsis = ellipsis.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], expandalt = expandalt.asInstanceOf[js.Any], eye = eye.asInstanceOf[js.Any], eyeclose = eyeclose.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], facehappy = facehappy.asInstanceOf[js.Any], faceneutral = faceneutral.asInstanceOf[js.Any], facesad = facesad.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], flag = flag.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], gdrive = gdrive.asInstanceOf[js.Any], github = github.asInstanceOf[js.Any], gitlab = gitlab.asInstanceOf[js.Any], globe = globe.asInstanceOf[js.Any], google = google.asInstanceOf[js.Any], graphbar = graphbar.asInstanceOf[js.Any], graphline = graphline.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], grow = grow.asInstanceOf[js.Any], heart = heart.asInstanceOf[js.Any], hearthollow = hearthollow.asInstanceOf[js.Any], home = home.asInstanceOf[js.Any], hourglass = hourglass.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], lightning = lightning.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], listunordered = listunordered.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], lock = lock.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], mirror = mirror.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], nut = nut.asInstanceOf[js.Any], outbox = outbox.asInstanceOf[js.Any], paintbrush = paintbrush.asInstanceOf[js.Any], paperclip = paperclip.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], photo = photo.asInstanceOf[js.Any], pin = pin.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], plus = plus.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any], proceed = proceed.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], pullrequest = pullrequest.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], redirect = redirect.asInstanceOf[js.Any], redux = redux.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], requestchange = requestchange.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], share = share.asInstanceOf[js.Any], shield = shield.asInstanceOf[js.Any], sidebar = sidebar.asInstanceOf[js.Any], sidebaralt = sidebaralt.asInstanceOf[js.Any], speaker = speaker.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], starhollow = starhollow.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], structure = structure.asInstanceOf[js.Any], subtract = subtract.asInstanceOf[js.Any], support = support.asInstanceOf[js.Any], switchalt = switchalt.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], tablet = tablet.asInstanceOf[js.Any], thumbsup = thumbsup.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timer = timer.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any], trash = trash.asInstanceOf[js.Any], twitter = twitter.asInstanceOf[js.Any], undo = undo.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], useradd = useradd.asInstanceOf[js.Any], useralt = useralt.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], wrench = wrench.asInstanceOf[js.Any], youtube = youtube.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any], zoomout = zoomout.asInstanceOf[js.Any], zoomreset = zoomreset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Add]
   }
+  @scala.inline
+  implicit class AddOps[Self <: Add] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: String): Self = this.set("add", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdmin(value: String): Self = this.set("admin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlert(value: String): Self = this.set("alert", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrowdown(value: String): Self = this.set("arrowdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrowleft(value: String): Self = this.set("arrowleft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrowleftalt(value: String): Self = this.set("arrowleftalt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrowright(value: String): Self = this.set("arrowright", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrowrightalt(value: String): Self = this.set("arrowrightalt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArrowup(value: String): Self = this.set("arrowup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBack(value: String): Self = this.set("back", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBasket(value: String): Self = this.set("basket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchaccept(value: String): Self = this.set("batchaccept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchdeny(value: String): Self = this.set("batchdeny", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBeaker(value: String): Self = this.set("beaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBell(value: String): Self = this.set("bell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBitbucket(value: String): Self = this.set("bitbucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBook(value: String): Self = this.set("book", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBookmark(value: String): Self = this.set("bookmark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBookmarkhollow(value: String): Self = this.set("bookmarkhollow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBottombar(value: String): Self = this.set("bottombar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBox(value: String): Self = this.set("box", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBranch(value: String): Self = this.set("branch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBrowser(value: String): Self = this.set("browser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setButton(value: String): Self = this.set("button", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCalendar(value: String): Self = this.set("calendar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCamera(value: String): Self = this.set("camera", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCategory(value: String): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCheck(value: String): Self = this.set("check", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChevrondown(value: String): Self = this.set("chevrondown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChroma(value: String): Self = this.set("chroma", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCircle(value: String): Self = this.set("circle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCirclehollow(value: String): Self = this.set("circlehollow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCloseAlt(value: String): Self = this.set("closeAlt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCog(value: String): Self = this.set("cog", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComment(value: String): Self = this.set("comment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCommit(value: String): Self = this.set("commit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCompass(value: String): Self = this.set("compass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setComponent(value: String): Self = this.set("component", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCopy(value: String): Self = this.set("copy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCpu(value: String): Self = this.set("cpu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCredit(value: String): Self = this.set("credit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCross(value: String): Self = this.set("cross", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDashboard(value: String): Self = this.set("dashboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatabase(value: String): Self = this.set("database", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDelete(value: String): Self = this.set("delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiscord(value: String): Self = this.set("discord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocchart(value: String): Self = this.set("docchart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDoclist(value: String): Self = this.set("doclist", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDocument(value: String): Self = this.set("document", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDownload(value: String): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEdit(value: String): Self = this.set("edit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEllipsis(value: String): Self = this.set("ellipsis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpand(value: String): Self = this.set("expand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExpandalt(value: String): Self = this.set("expandalt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEye(value: String): Self = this.set("eye", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEyeclose(value: String): Self = this.set("eyeclose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFacebook(value: String): Self = this.set("facebook", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFacehappy(value: String): Self = this.set("facehappy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFaceneutral(value: String): Self = this.set("faceneutral", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFacesad(value: String): Self = this.set("facesad", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlag(value: String): Self = this.set("flag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFolder(value: String): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGdrive(value: String): Self = this.set("gdrive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGithub(value: String): Self = this.set("github", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGitlab(value: String): Self = this.set("gitlab", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGlobe(value: String): Self = this.set("globe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGoogle(value: String): Self = this.set("google", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGraphbar(value: String): Self = this.set("graphbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGraphline(value: String): Self = this.set("graphline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGraphql(value: String): Self = this.set("graphql", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrid(value: String): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGrow(value: String): Self = this.set("grow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHeart(value: String): Self = this.set("heart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHearthollow(value: String): Self = this.set("hearthollow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHome(value: String): Self = this.set("home", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHourglass(value: String): Self = this.set("hourglass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInfo(value: String): Self = this.set("info", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLightning(value: String): Self = this.set("lightning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLink(value: String): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setListunordered(value: String): Self = this.set("listunordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLock(value: String): Self = this.set("lock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMedium(value: String): Self = this.set("medium", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMemory(value: String): Self = this.set("memory", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMenu(value: String): Self = this.set("menu", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMerge(value: String): Self = this.set("merge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMirror(value: String): Self = this.set("mirror", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMobile(value: String): Self = this.set("mobile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNut(value: String): Self = this.set("nut", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutbox(value: String): Self = this.set("outbox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaintbrush(value: String): Self = this.set("paintbrush", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPaperclip(value: String): Self = this.set("paperclip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParagraph(value: String): Self = this.set("paragraph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhone(value: String): Self = this.set("phone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhoto(value: String): Self = this.set("photo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPin(value: String): Self = this.set("pin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlay(value: String): Self = this.set("play", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlus(value: String): Self = this.set("plus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPower(value: String): Self = this.set("power", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPrint(value: String): Self = this.set("print", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProceed(value: String): Self = this.set("proceed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPullrequest(value: String): Self = this.set("pullrequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuestion(value: String): Self = this.set("question", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRedirect(value: String): Self = this.set("redirect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRedux(value: String): Self = this.set("redux", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReply(value: String): Self = this.set("reply", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepository(value: String): Self = this.set("repository", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestchange(value: String): Self = this.set("requestchange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRss(value: String): Self = this.set("rss", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSearch(value: String): Self = this.set("search", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShare(value: String): Self = this.set("share", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setShield(value: String): Self = this.set("shield", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSidebar(value: String): Self = this.set("sidebar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSidebaralt(value: String): Self = this.set("sidebaralt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSpeaker(value: String): Self = this.set("speaker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStar(value: String): Self = this.set("star", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStarhollow(value: String): Self = this.set("starhollow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStop(value: String): Self = this.set("stop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStructure(value: String): Self = this.set("structure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubtract(value: String): Self = this.set("subtract", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSupport(value: String): Self = this.set("support", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSwitchalt(value: String): Self = this.set("switchalt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSync(value: String): Self = this.set("sync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTablet(value: String): Self = this.set("tablet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setThumbsup(value: String): Self = this.set("thumbsup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime(value: String): Self = this.set("time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimer(value: String): Self = this.set("timer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTransfer(value: String): Self = this.set("transfer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTrash(value: String): Self = this.set("trash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTwitter(value: String): Self = this.set("twitter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUndo(value: String): Self = this.set("undo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUnlock(value: String): Self = this.set("unlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUpload(value: String): Self = this.set("upload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUser(value: String): Self = this.set("user", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseradd(value: String): Self = this.set("useradd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseralt(value: String): Self = this.set("useralt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUsers(value: String): Self = this.set("users", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVideo(value: String): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWatch(value: String): Self = this.set("watch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWrench(value: String): Self = this.set("wrench", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setYoutube(value: String): Self = this.set("youtube", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZoom(value: String): Self = this.set("zoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZoomout(value: String): Self = this.set("zoomout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZoomreset(value: String): Self = this.set("zoomreset", value.asInstanceOf[js.Any])
+  }
+  
 }
 

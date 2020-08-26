@@ -4,20 +4,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LandingPagesListResponse extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#landingPagesListResponse". */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String] = js.native
   /** Landing page collection */
-  var landingPages: js.UndefOr[js.Array[LandingPage]] = js.undefined
+  var landingPages: js.UndefOr[js.Array[LandingPage]] = js.native
 }
 
 object LandingPagesListResponse {
   @scala.inline
-  def apply(kind: String = null, landingPages: js.Array[LandingPage] = null): LandingPagesListResponse = {
+  def apply(): LandingPagesListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (landingPages != null) __obj.updateDynamic("landingPages")(landingPages.asInstanceOf[js.Any])
     __obj.asInstanceOf[LandingPagesListResponse]
   }
+  @scala.inline
+  implicit class LandingPagesListResponseOps[Self <: LandingPagesListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLandingPagesVarargs(value: LandingPage*): Self = this.set("landingPages", js.Array(value :_*))
+    @scala.inline
+    def setLandingPages(value: js.Array[LandingPage]): Self = this.set("landingPages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLandingPages: Self = this.set("landingPages", js.undefined)
+  }
+  
 }
 

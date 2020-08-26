@@ -12,7 +12,7 @@ dynamic json-schema validator
 | Keywords           | json-schema, json, schema, validator, validate |
 | # releases         | 9 |
 | # dependents       | 13 |
-| # downloads        | 146580 |
+| # downloads        | 170349 |
 | # stars            | 4 |
 
 ## Links

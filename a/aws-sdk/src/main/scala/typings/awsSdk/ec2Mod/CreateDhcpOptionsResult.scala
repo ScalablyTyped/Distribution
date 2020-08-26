@@ -14,10 +14,26 @@ trait CreateDhcpOptionsResult extends js.Object {
 
 object CreateDhcpOptionsResult {
   @scala.inline
-  def apply(DhcpOptions: DhcpOptions = null): CreateDhcpOptionsResult = {
+  def apply(): CreateDhcpOptionsResult = {
     val __obj = js.Dynamic.literal()
-    if (DhcpOptions != null) __obj.updateDynamic("DhcpOptions")(DhcpOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDhcpOptionsResult]
   }
+  @scala.inline
+  implicit class CreateDhcpOptionsResultOps[Self <: CreateDhcpOptionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDhcpOptions(value: DhcpOptions): Self = this.set("DhcpOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpOptions: Self = this.set("DhcpOptions", js.undefined)
+  }
+  
 }
 

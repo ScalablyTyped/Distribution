@@ -1,7 +1,7 @@
 package typings.materialIconToggle
 
+import typings.materialBase.componentMod.default
 import typings.materialIconToggle.adapterMod.MDCIconToggleAdapter
-import typings.materialIconToggle.foundationMod.default
 import typings.materialRipple.mod.MDCRipple
 import typings.std.Element
 import scala.scalajs.js
@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   @js.native
-  class MDCIconToggle ()
-    extends typings.materialBase.componentMod.default[MDCIconToggleAdapter, default] {
+  class MDCIconToggle () extends default[MDCIconToggleAdapter] {
     var disabled: Boolean = js.native
     var on: Boolean = js.native
     val ripple: MDCRipple = js.native
@@ -21,7 +20,8 @@ object mod extends js.Object {
   }
   
   @js.native
-  class MDCIconToggleFoundation () extends default
+  class MDCIconToggleFoundation ()
+    extends typings.materialIconToggle.foundationMod.default
   
   /* static members */
   @js.native

@@ -46,7 +46,12 @@ trait TagCtx extends js.Object {
   	 */
   /* Template for wrapped content, or else external template. Otherwise, false */
   def content(): String = js.native
+  def content(data: js.UndefOr[scala.Nothing], helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
+  def content(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_]): String = js.native
+  def content(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
+  def content(data: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def content(data: js.Any): String = js.native
+  def content(data: js.Any, helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def content(data: js.Any, helpersOrContext: Hash[_]): String = js.native
   def content(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def content(data: js.Any, noIteration: Boolean): String = js.native
@@ -72,7 +77,12 @@ trait TagCtx extends js.Object {
   	 */
   /* External tmpl, or else template for wrapped content. Otherwise, false */
   def tmpl(): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_]): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
+  def tmpl(data: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def tmpl(data: js.Any): String = js.native
+  def tmpl(data: js.Any, helpersOrContext: js.UndefOr[scala.Nothing], noIteration: Boolean): String = js.native
   def tmpl(data: js.Any, helpersOrContext: Hash[_]): String = js.native
   def tmpl(data: js.Any, helpersOrContext: Hash[_], noIteration: Boolean): String = js.native
   def tmpl(data: js.Any, noIteration: Boolean): String = js.native

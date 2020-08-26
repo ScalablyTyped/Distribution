@@ -39,7 +39,7 @@ object ^ extends js.Object {
     */
   var Builder: Instantiable2[
     /* name */ String, 
-    js.UndefOr[/* attrs */ js.Any], 
+    /* attrs */ js.UndefOr[js.Any], 
     typings.strophe.mod.Strophe.Builder
   ] = js.native
   /** Class: Strophe.Connection
@@ -65,7 +65,7 @@ object ^ extends js.Object {
     */
   var Connection: Instantiable2[
     /* service */ String, 
-    js.UndefOr[/* options */ typings.strophe.mod.Strophe.ConnectionOptions], 
+    /* options */ js.UndefOr[typings.strophe.mod.Strophe.ConnectionOptions], 
     typings.strophe.mod.Strophe.Connection
   ] = js.native
   val MUC: js.Any = js.native
@@ -323,8 +323,10 @@ object ^ extends js.Object {
     *    A new XML DOM element.
     */
   def xmlElement(name: String): Element = js.native
+  def xmlElement(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
   def xmlElement(name: String, attrs: js.Any): Element = js.native
   def xmlElement(name: String, attrs: js.Any, text: String): Element = js.native
+  def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
   def xmlElement(name: String, text: String): Element = js.native
   def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
   /** Function: xmlGenerator

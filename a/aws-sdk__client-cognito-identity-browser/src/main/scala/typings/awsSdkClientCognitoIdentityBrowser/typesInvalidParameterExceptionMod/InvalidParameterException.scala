@@ -24,6 +24,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidParameterException
   extends ServiceException[InvalidParameterExceptionDetails]
      with CreateIdentityPoolExceptionsUnion
@@ -45,7 +46,7 @@ trait InvalidParameterException
      with UnlinkIdentityExceptionsUnion
      with UpdateIdentityPoolExceptionsUnion {
   @JSName("name")
-  var name_InvalidParameterException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
+  var name_InvalidParameterException: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException = js.native
 }
 
 object InvalidParameterException {
@@ -54,12 +55,27 @@ object InvalidParameterException {
     $metadata: ResponseMetadata,
     details: InvalidParameterExceptionDetails,
     message: String,
-    name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException,
-    stack: String = null
+    name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
   ): InvalidParameterException = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidParameterException]
   }
+  @scala.inline
+  implicit class InvalidParameterExceptionOps[Self <: InvalidParameterException] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(
+      value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
+    ): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -33,15 +33,34 @@ object rxjsMod extends js.Object {
   def bufferCount[T](bufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferCount[T](bufferSize: Double, startBufferEvery: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double): OperatorFunction[T, js.Array[T]] = js.native
-  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[Double | Null], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: js.UndefOr[scala.Nothing], maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](
     bufferTimeSpan: Double,
-    bufferCreationInterval: js.UndefOr[Double | Null],
+    bufferCreationInterval: js.UndefOr[scala.Nothing],
     maxBufferSize: Double,
     scheduler: SchedulerLike
   ): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Double,
+    maxBufferSize: Double,
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, maxBufferSize: Double): OperatorFunction[T, js.Array[T]] = js.native
+  def bufferTime[T](
+    bufferTimeSpan: Double,
+    bufferCreationInterval: Null,
+    maxBufferSize: Double,
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, bufferCreationInterval: Null, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
   def bufferTime[T](bufferTimeSpan: Double, scheduler: SchedulerLike): OperatorFunction[T, js.Array[T]] = js.native
   def bufferToggle[T, O](
@@ -140,6 +159,10 @@ object rxjsMod extends js.Object {
   @JSName("concatAll")
   def concatAll_R[R](): OperatorFunction[_, R] = js.native
   def concatMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def concatMap[T, O /* <: ObservableInput[_] */](
+    project: js.Function2[/* value */ T, /* index */ Double, O],
+    resultSelector: js.UndefOr[scala.Nothing]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def concatMap[T, R, O /* <: ObservableInput[_] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
@@ -151,6 +174,7 @@ object rxjsMod extends js.Object {
     ]
   ): OperatorFunction[T, R] = js.native
   def concatMapTo[T, O /* <: ObservableInput[_] */](observable: O): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def concatMapTo[T, O /* <: ObservableInput[_] */](observable: O, resultSelector: js.UndefOr[scala.Nothing]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def concatMapTo[T, R, O /* <: ObservableInput[_] */](
     observable: O,
     resultSelector: js.Function4[
@@ -187,6 +211,7 @@ object rxjsMod extends js.Object {
   ): MonoTypeOperatorFunction[T] = js.native
   def dematerialize[T](): OperatorFunction[Notification[T], T] = js.native
   def distinct[T, K](): MonoTypeOperatorFunction[T] = js.native
+  def distinct[T, K](keySelector: js.UndefOr[scala.Nothing], flushes: Observable[_]): MonoTypeOperatorFunction[T] = js.native
   def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): MonoTypeOperatorFunction[T] = js.native
   def distinct[T, K](keySelector: js.Function1[/* value */ T, K], flushes: Observable[_]): MonoTypeOperatorFunction[T] = js.native
   def distinctUntilChanged[T](): MonoTypeOperatorFunction[T] = js.native
@@ -224,6 +249,10 @@ object rxjsMod extends js.Object {
   ): OperatorFunction[T, Boolean] = js.native
   def exhaust[T](): OperatorFunction[ObservableInput[T], T] = js.native
   def exhaustMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def exhaustMap[T, O /* <: ObservableInput[_] */](
+    project: js.Function2[/* value */ T, /* index */ Double, O],
+    resultSelector: js.UndefOr[scala.Nothing]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def exhaustMap[T, I, R](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[I]],
     resultSelector: js.Function4[
@@ -237,6 +266,11 @@ object rxjsMod extends js.Object {
   @JSName("exhaust")
   def exhaust_R[R](): OperatorFunction[_, R] = js.native
   def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]]): MonoTypeOperatorFunction[T] = js.native
+  def expand[T](
+    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): MonoTypeOperatorFunction[T] = js.native
   def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]], concurrent: Double): MonoTypeOperatorFunction[T] = js.native
   def expand[T](
     project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
@@ -245,6 +279,12 @@ object rxjsMod extends js.Object {
   ): MonoTypeOperatorFunction[T] = js.native
   @JSName("expand")
   def expand_TR_OperatorFunction[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]): OperatorFunction[T, R] = js.native
+  @JSName("expand")
+  def expand_TR_OperatorFunction[T, R](
+    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, R] = js.native
   @JSName("expand")
   def expand_TR_OperatorFunction[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double): OperatorFunction[T, R] = js.native
   @JSName("expand")
@@ -280,6 +320,7 @@ object rxjsMod extends js.Object {
     thisArg: js.Any
   ): OperatorFunction[T, js.UndefOr[S]] = js.native
   def first[T, D](): OperatorFunction[T, T | D] = js.native
+  def first[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): OperatorFunction[T, T | D] = js.native
   def first[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = js.native
   def first[T, D](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
@@ -295,41 +336,36 @@ object rxjsMod extends js.Object {
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], /* is S */ Boolean],
     defaultValue: S
   ): OperatorFunction[T, S] = js.native
-  def flatMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  def flatMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  def flatMap[T, O /* <: ObservableInput[_] */](
-    project: js.Function2[/* value */ T, /* index */ Double, O],
-    resultSelector: js.UndefOr[scala.Nothing],
-    concurrent: Double
-  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
-  def flatMap[T, R, O /* <: ObservableInput[_] */](
-    project: js.Function2[/* value */ T, /* index */ Double, O],
-    resultSelector: js.Function4[
-      /* outerValue */ T, 
-      /* innerValue */ ObservedValueOf[O], 
-      /* outerIndex */ Double, 
-      /* innerIndex */ Double, 
-      R
-    ]
-  ): OperatorFunction[T, R] = js.native
-  def flatMap[T, R, O /* <: ObservableInput[_] */](
-    project: js.Function2[/* value */ T, /* index */ Double, O],
-    resultSelector: js.Function4[
-      /* outerValue */ T, 
-      /* innerValue */ ObservedValueOf[O], 
-      /* outerIndex */ Double, 
-      /* innerIndex */ Double, 
-      R
-    ],
-    concurrent: Double
-  ): OperatorFunction[T, R] = js.native
   def groupBy[T, K](keySelector: js.Function1[/* value */ T, K]): OperatorFunction[T, GroupedObservable[K, T]] = js.native
   def groupBy[T, K](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: Unit,
     durationSelector: js.Function1[/* grouped */ GroupedObservable[K, T], Observable[_]]
   ): OperatorFunction[T, GroupedObservable[K, T]] = js.native
+  def groupBy[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: js.UndefOr[scala.Nothing],
+    durationSelector: js.UndefOr[scala.Nothing],
+    subjectSelector: js.Function0[Subject[R]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
+  def groupBy[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: js.UndefOr[scala.Nothing],
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[_]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
+  def groupBy[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: js.UndefOr[scala.Nothing],
+    durationSelector: js.Function1[/* grouped */ GroupedObservable[K, R], Observable[_]],
+    subjectSelector: js.Function0[Subject[R]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
   def groupBy[T, K, R](keySelector: js.Function1[/* value */ T, K], elementSelector: js.Function1[/* value */ T, R]): OperatorFunction[T, GroupedObservable[K, R]] = js.native
+  def groupBy[T, K, R](
+    keySelector: js.Function1[/* value */ T, K],
+    elementSelector: js.Function1[/* value */ T, R],
+    durationSelector: js.UndefOr[scala.Nothing],
+    subjectSelector: js.Function0[Subject[R]]
+  ): OperatorFunction[T, GroupedObservable[K, R]] = js.native
   def groupBy[T, K, R](
     keySelector: js.Function1[/* value */ T, K],
     elementSelector: js.Function1[/* value */ T, R],
@@ -346,6 +382,7 @@ object rxjsMod extends js.Object {
   def ignoreElements(): OperatorFunction[_, scala.Nothing] = js.native
   def isEmpty[T](): OperatorFunction[T, Boolean] = js.native
   def last[T, D](): OperatorFunction[T, T | D] = js.native
+  def last[T, D](predicate: js.UndefOr[scala.Nothing], defaultValue: D): OperatorFunction[T, T | D] = js.native
   def last[T, D](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean]): OperatorFunction[T, T | D] = js.native
   def last[T, D](
     predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable[T], Boolean],
@@ -368,19 +405,32 @@ object rxjsMod extends js.Object {
   def max[T](): MonoTypeOperatorFunction[T] = js.native
   def max[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): MonoTypeOperatorFunction[T] = js.native
   def merge[T](): MonoTypeOperatorFunction[T] = js.native
+  def merge[T](concurrent: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T](concurrent: Double): MonoTypeOperatorFunction[T] = js.native
   def merge[T](concurrent: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T](observables: (ObservableInput[T] | SchedulerLike | Double)*): MonoTypeOperatorFunction[T] = js.native
   def merge[T](scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def merge[T, T2](v2: ObservableInput[T2]): OperatorFunction[T, T | T2] = js.native
+  def merge[T, T2](v2: ObservableInput[T2], concurrent: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
   def merge[T, T2](v2: ObservableInput[T2], concurrent: Double): OperatorFunction[T, T | T2] = js.native
   def merge[T, T2](v2: ObservableInput[T2], concurrent: Double, scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
-  def merge[T, T2](v2: ObservableInput[T2], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
   def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3]): OperatorFunction[T, T | T2 | T3] = js.native
+  def merge[T, T2, T3](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3] = js.native
   def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], concurrent: Double): OperatorFunction[T, T | T2 | T3] = js.native
   def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], concurrent: Double, scheduler: SchedulerLike): OperatorFunction[T, T | T2 | T3] = js.native
-  def merge[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], scheduler: SchedulerLike): OperatorFunction[T, T | T2 | T3] = js.native
   def merge[T, T2, T3, T4](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4]): OperatorFunction[T, T | T2 | T3 | T4] = js.native
+  def merge[T, T2, T3, T4](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
   def merge[T, T2, T3, T4](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], concurrent: Double): OperatorFunction[T, T | T2 | T3 | T4] = js.native
   def merge[T, T2, T3, T4](
     v2: ObservableInput[T2],
@@ -389,13 +439,15 @@ object rxjsMod extends js.Object {
     concurrent: Double,
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
-  def merge[T, T2, T3, T4](
+  def merge[T, T2, T3, T4, T5](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
+  def merge[T, T2, T3, T4, T5](
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
     v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    concurrent: js.UndefOr[scala.Nothing],
     scheduler: SchedulerLike
-  ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
-  def merge[T, T2, T3, T4, T5](v2: ObservableInput[T2], v3: ObservableInput[T3], v4: ObservableInput[T4], v5: ObservableInput[T5]): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
   def merge[T, T2, T3, T4, T5](
     v2: ObservableInput[T2],
     v3: ObservableInput[T3],
@@ -409,13 +461,6 @@ object rxjsMod extends js.Object {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     concurrent: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
-  def merge[T, T2, T3, T4, T5](
-    v2: ObservableInput[T2],
-    v3: ObservableInput[T3],
-    v4: ObservableInput[T4],
-    v5: ObservableInput[T5],
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
   def merge[T, T2, T3, T4, T5, T6](
@@ -431,6 +476,15 @@ object rxjsMod extends js.Object {
     v4: ObservableInput[T4],
     v5: ObservableInput[T5],
     v6: ObservableInput[T6],
+    concurrent: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
+  def merge[T, T2, T3, T4, T5, T6](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    v6: ObservableInput[T6],
     concurrent: Double
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
   def merge[T, T2, T3, T4, T5, T6](
@@ -440,14 +494,6 @@ object rxjsMod extends js.Object {
     v5: ObservableInput[T5],
     v6: ObservableInput[T6],
     concurrent: Double,
-    scheduler: SchedulerLike
-  ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
-  def merge[T, T2, T3, T4, T5, T6](
-    v2: ObservableInput[T2],
-    v3: ObservableInput[T3],
-    v4: ObservableInput[T4],
-    v5: ObservableInput[T5],
-    v6: ObservableInput[T6],
     scheduler: SchedulerLike
   ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
   def mergeAll[T](): OperatorFunction[ObservableInput[T], T] = js.native
@@ -514,6 +560,34 @@ object rxjsMod extends js.Object {
   ): OperatorFunction[T, R] = js.native
   @JSName("merge")
   def merge_TR_OperatorFunction[T, R](observables: (ObservableInput[_] | SchedulerLike | Double)*): OperatorFunction[T, R] = js.native
+  @JSName("merge")
+  def merge_TT2T3[T, T2, T3](v2: ObservableInput[T2], v3: ObservableInput[T3], scheduler: SchedulerLike): OperatorFunction[T, T | T2 | T3] = js.native
+  @JSName("merge")
+  def merge_TT2T3T4[T, T2, T3, T4](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4] = js.native
+  @JSName("merge")
+  def merge_TT2T3T4T5[T, T2, T3, T4, T5](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5] = js.native
+  @JSName("merge")
+  def merge_TT2T3T4T5T6[T, T2, T3, T4, T5, T6](
+    v2: ObservableInput[T2],
+    v3: ObservableInput[T3],
+    v4: ObservableInput[T4],
+    v5: ObservableInput[T5],
+    v6: ObservableInput[T6],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, T | T2 | T3 | T4 | T5 | T6] = js.native
+  @JSName("merge")
+  def merge_TT2_OperatorFunction[T, T2](v2: ObservableInput[T2], scheduler: SchedulerLike): OperatorFunction[T, T | T2] = js.native
   def min[T](): MonoTypeOperatorFunction[T] = js.native
   def min[T](comparer: js.Function2[/* x */ T, /* y */ T, Double]): MonoTypeOperatorFunction[T] = js.native
   def multicast[T](subjectFactory: js.ThisFunction0[/* this */ Observable[T], Subject[T]]): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
@@ -580,9 +654,74 @@ object rxjsMod extends js.Object {
   def publishBehavior[T](value: T): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
   def publishLast[T](): UnaryFunction[Observable[T], ConnectableObservable[T]] = js.native
   def publishReplay[T](): MonoTypeOperatorFunction[T] = js.native
+  def publishReplay[T](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): MonoTypeOperatorFunction[T] = js.native
+  def publishReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): MonoTypeOperatorFunction[T] = js.native
+  def publishReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def publishReplay[T](bufferSize: Double): MonoTypeOperatorFunction[T] = js.native
+  def publishReplay[T](bufferSize: Double, windowTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def publishReplay[T](bufferSize: Double, windowTime: Double): MonoTypeOperatorFunction[T] = js.native
   def publishReplay[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: js.UndefOr[scala.Nothing],
+    selector: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: js.UndefOr[scala.Nothing],
+    selector: js.Function1[/* shared */ Observable[T], O]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: js.UndefOr[scala.Nothing],
+    selector: js.Function1[/* shared */ Observable[T], O],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: Double,
+    selector: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: Double,
+    selector: js.Function1[/* shared */ Observable[T], O]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: Double,
+    selector: js.Function1[/* shared */ Observable[T], O],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: Double,
+    windowTime: js.UndefOr[scala.Nothing],
+    selector: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: Double,
+    windowTime: js.UndefOr[scala.Nothing],
+    selector: js.Function1[/* shared */ Observable[T], O]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: Double,
+    windowTime: js.UndefOr[scala.Nothing],
+    selector: js.Function1[/* shared */ Observable[T], O],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def publishReplay[T, O /* <: ObservableInput[_] */](
+    bufferSize: Double,
+    windowTime: Double,
+    selector: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def publishReplay[T, O /* <: ObservableInput[_] */](bufferSize: Double, windowTime: Double, selector: js.Function1[/* shared */ Observable[T], O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def publishReplay[T, O /* <: ObservableInput[_] */](
     bufferSize: Double,
@@ -592,6 +731,8 @@ object rxjsMod extends js.Object {
   ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   @JSName("publishReplay")
   def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  @JSName("publishReplay")
+  def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
   @JSName("publishReplay")
   def publishReplay_TO_ObservableInputWildcard_OperatorFunction[T, O /* <: ObservableInput[_] */](bufferSize: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
   @JSName("publishReplay")
@@ -630,7 +771,15 @@ object rxjsMod extends js.Object {
   def sequenceEqual[T](compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = js.native
   def share[T](): MonoTypeOperatorFunction[T] = js.native
   def shareReplay[T](): MonoTypeOperatorFunction[T] = js.native
+  def shareReplay[T](
+    bufferSize: js.UndefOr[scala.Nothing],
+    windowTime: js.UndefOr[scala.Nothing],
+    scheduler: SchedulerLike
+  ): MonoTypeOperatorFunction[T] = js.native
+  def shareReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double): MonoTypeOperatorFunction[T] = js.native
+  def shareReplay[T](bufferSize: js.UndefOr[scala.Nothing], windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def shareReplay[T](bufferSize: Double): MonoTypeOperatorFunction[T] = js.native
+  def shareReplay[T](bufferSize: Double, windowTime: js.UndefOr[scala.Nothing], scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def shareReplay[T](bufferSize: Double, windowTime: Double): MonoTypeOperatorFunction[T] = js.native
   def shareReplay[T](bufferSize: Double, windowTime: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def shareReplay[T](config: ShareReplayConfig): MonoTypeOperatorFunction[T] = js.native
@@ -660,6 +809,10 @@ object rxjsMod extends js.Object {
   @JSName("switchAll")
   def switchAll_R[R](): OperatorFunction[_, R] = js.native
   def switchMap[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
+  def switchMap[T, O /* <: ObservableInput[_] */](
+    project: js.Function2[/* value */ T, /* index */ Double, O],
+    resultSelector: js.UndefOr[scala.Nothing]
+  ): OperatorFunction[T, ObservedValueOf[O]] = js.native
   def switchMap[T, R, O /* <: ObservableInput[_] */](
     project: js.Function2[/* value */ T, /* index */ Double, O],
     resultSelector: js.Function4[
@@ -671,6 +824,7 @@ object rxjsMod extends js.Object {
     ]
   ): OperatorFunction[T, R] = js.native
   def switchMapTo[R](observable: ObservableInput[R]): OperatorFunction[_, R] = js.native
+  def switchMapTo[T, R](observable: ObservableInput[R], resultSelector: js.UndefOr[scala.Nothing]): OperatorFunction[T, R] = js.native
   def switchMapTo[T, I, R](
     observable: ObservableInput[I],
     resultSelector: js.Function4[
@@ -681,8 +835,6 @@ object rxjsMod extends js.Object {
       R
     ]
   ): OperatorFunction[T, R] = js.native
-  @JSName("switchMapTo")
-  def switchMapTo_TR[T, R](observable: ObservableInput[R]): OperatorFunction[T, R] = js.native
   def take[T](count: Double): MonoTypeOperatorFunction[T] = js.native
   def takeLast[T](count: Double): MonoTypeOperatorFunction[T] = js.native
   def takeUntil[T](notifier: Observable[_]): MonoTypeOperatorFunction[T] = js.native
@@ -693,25 +845,36 @@ object rxjsMod extends js.Object {
   @JSName("takeWhile")
   def takeWhile_false[T, S /* <: T */](predicate: js.Function2[/* value */ T, /* index */ Double, /* is S */ Boolean], inclusive: `false`): OperatorFunction[T, S] = js.native
   def tap[T](): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[Null], error: js.UndefOr[Null], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.UndefOr[Null], error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[scala.Nothing], error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[scala.Nothing], error: js.Function1[/* e */ /* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](
-    next: js.UndefOr[Null],
-    error: js.Function1[/* error */ js.Any, Unit],
+    next: js.UndefOr[scala.Nothing],
+    error: js.Function1[/* e */ /* error */ js.Any, Unit],
     complete: js.Function0[Unit]
   ): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.UndefOr[scala.Nothing], error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.Function1[/* x */ T, Unit]): MonoTypeOperatorFunction[T] = js.native
-  def tap[T](next: js.Function1[/* value */ T, Unit], error: js.UndefOr[Null], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](
+    next: js.Function1[/* x */ /* value */ T, Unit],
+    error: js.UndefOr[scala.Nothing],
+    complete: js.Function0[Unit]
+  ): MonoTypeOperatorFunction[T] = js.native
   def tap[T](next: js.Function1[/* x */ T, Unit], error: js.Function1[/* e */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](
     next: js.Function1[/* x */ T, Unit],
     error: js.Function1[/* e */ js.Any, Unit],
     complete: js.Function0[Unit]
   ): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: js.Function1[/* value */ T, Unit], error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: js.UndefOr[scala.Nothing], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: js.Function1[/* error */ js.Any, Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: js.Function1[/* error */ js.Any, Unit], complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
+  def tap[T](next: Null, error: Null, complete: js.Function0[Unit]): MonoTypeOperatorFunction[T] = js.native
   def tap[T](observer: PartialObserver[T]): MonoTypeOperatorFunction[T] = js.native
   def throttle[T](durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[_]]): MonoTypeOperatorFunction[T] = js.native
   def throttle[T](durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[_]], config: ThrottleConfig): MonoTypeOperatorFunction[T] = js.native
   def throttleTime[T](duration: Double): MonoTypeOperatorFunction[T] = js.native
+  def throttleTime[T](duration: Double, scheduler: js.UndefOr[scala.Nothing], config: ThrottleConfig): MonoTypeOperatorFunction[T] = js.native
   def throttleTime[T](duration: Double, scheduler: SchedulerLike): MonoTypeOperatorFunction[T] = js.native
   def throttleTime[T](duration: Double, scheduler: SchedulerLike, config: ThrottleConfig): MonoTypeOperatorFunction[T] = js.native
   def throwIfEmpty[T](): MonoTypeOperatorFunction[T] = js.native
@@ -864,5 +1027,37 @@ object rxjsMod extends js.Object {
   def zipAll[R](project: js.Function1[/* repeated */ js.Any, R]): OperatorFunction[_, R] = js.native
   @JSName("zipAll")
   def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): OperatorFunction[ObservableInput[T], R] = js.native
+  @js.native
+  object flatMap extends js.Object {
+    def apply[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O]): OperatorFunction[T, ObservedValueOf[O]] = js.native
+    def apply[T, O /* <: ObservableInput[_] */](project: js.Function2[/* value */ T, /* index */ Double, O], concurrent: Double): OperatorFunction[T, ObservedValueOf[O]] = js.native
+    def apply[T, O /* <: ObservableInput[_] */](
+      project: js.Function2[/* value */ T, /* index */ Double, O],
+      resultSelector: js.UndefOr[scala.Nothing],
+      concurrent: Double
+    ): OperatorFunction[T, ObservedValueOf[O]] = js.native
+    def apply[T, R, O /* <: ObservableInput[_] */](
+      project: js.Function2[/* value */ T, /* index */ Double, O],
+      resultSelector: js.Function4[
+          /* outerValue */ T, 
+          /* innerValue */ ObservedValueOf[O], 
+          /* outerIndex */ Double, 
+          /* innerIndex */ Double, 
+          R
+        ]
+    ): OperatorFunction[T, R] = js.native
+    def apply[T, R, O /* <: ObservableInput[_] */](
+      project: js.Function2[/* value */ T, /* index */ Double, O],
+      resultSelector: js.Function4[
+          /* outerValue */ T, 
+          /* innerValue */ ObservedValueOf[O], 
+          /* outerIndex */ Double, 
+          /* innerIndex */ Double, 
+          R
+        ],
+      concurrent: Double
+    ): OperatorFunction[T, R] = js.native
+  }
+  
 }
 

@@ -41,7 +41,7 @@ class ListType protected () extends Type {
   @JSName("containerAsCodeAction")
   def containerAsCodeAction_MListType: CodeAction = js.native
   def parameter: EntityType = js.native
-  def parameter(newValue: EntityType): js.Any = js.native
+  def parameter_=(newValue: EntityType): Unit = js.native
 }
 
 /* static members */

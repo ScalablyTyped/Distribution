@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Grid")
+@JSImport("grommet/es6", "Grid")
 @js.native
 object Grid extends TopLevel[
       FC[

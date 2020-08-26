@@ -1,6 +1,5 @@
 package typings.verror.mod
 
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,12 +11,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("verror", "WError")
 @js.native
-class WError () extends VError {
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override def cause(): js.UndefOr[Error] = js.native
-}
+class WError () extends VError
 

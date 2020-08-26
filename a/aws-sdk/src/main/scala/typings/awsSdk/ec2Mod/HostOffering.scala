@@ -38,24 +38,50 @@ trait HostOffering extends js.Object {
 
 object HostOffering {
   @scala.inline
-  def apply(
-    CurrencyCode: CurrencyCodeValues = null,
-    Duration: js.UndefOr[Integer] = js.undefined,
-    HourlyPrice: String = null,
-    InstanceFamily: String = null,
-    OfferingId: String = null,
-    PaymentOption: PaymentOption = null,
-    UpfrontPrice: String = null
-  ): HostOffering = {
+  def apply(): HostOffering = {
     val __obj = js.Dynamic.literal()
-    if (CurrencyCode != null) __obj.updateDynamic("CurrencyCode")(CurrencyCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (HourlyPrice != null) __obj.updateDynamic("HourlyPrice")(HourlyPrice.asInstanceOf[js.Any])
-    if (InstanceFamily != null) __obj.updateDynamic("InstanceFamily")(InstanceFamily.asInstanceOf[js.Any])
-    if (OfferingId != null) __obj.updateDynamic("OfferingId")(OfferingId.asInstanceOf[js.Any])
-    if (PaymentOption != null) __obj.updateDynamic("PaymentOption")(PaymentOption.asInstanceOf[js.Any])
-    if (UpfrontPrice != null) __obj.updateDynamic("UpfrontPrice")(UpfrontPrice.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostOffering]
   }
+  @scala.inline
+  implicit class HostOfferingOps[Self <: HostOffering] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrencyCode(value: CurrencyCodeValues): Self = this.set("CurrencyCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrencyCode: Self = this.set("CurrencyCode", js.undefined)
+    @scala.inline
+    def setDuration(value: Integer): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setHourlyPrice(value: String): Self = this.set("HourlyPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourlyPrice: Self = this.set("HourlyPrice", js.undefined)
+    @scala.inline
+    def setInstanceFamily(value: String): Self = this.set("InstanceFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceFamily: Self = this.set("InstanceFamily", js.undefined)
+    @scala.inline
+    def setOfferingId(value: String): Self = this.set("OfferingId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("OfferingId", js.undefined)
+    @scala.inline
+    def setPaymentOption(value: PaymentOption): Self = this.set("PaymentOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentOption: Self = this.set("PaymentOption", js.undefined)
+    @scala.inline
+    def setUpfrontPrice(value: String): Self = this.set("UpfrontPrice", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpfrontPrice: Self = this.set("UpfrontPrice", js.undefined)
+  }
+  
 }
 

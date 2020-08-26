@@ -38,24 +38,52 @@ trait GetCapacityReservationUsageResult extends js.Object {
 
 object GetCapacityReservationUsageResult {
   @scala.inline
-  def apply(
-    AvailableInstanceCount: js.UndefOr[Integer] = js.undefined,
-    CapacityReservationId: String = null,
-    InstanceType: String = null,
-    InstanceUsages: InstanceUsageSet = null,
-    NextToken: String = null,
-    State: CapacityReservationState = null,
-    TotalInstanceCount: js.UndefOr[Integer] = js.undefined
-  ): GetCapacityReservationUsageResult = {
+  def apply(): GetCapacityReservationUsageResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AvailableInstanceCount)) __obj.updateDynamic("AvailableInstanceCount")(AvailableInstanceCount.get.asInstanceOf[js.Any])
-    if (CapacityReservationId != null) __obj.updateDynamic("CapacityReservationId")(CapacityReservationId.asInstanceOf[js.Any])
-    if (InstanceType != null) __obj.updateDynamic("InstanceType")(InstanceType.asInstanceOf[js.Any])
-    if (InstanceUsages != null) __obj.updateDynamic("InstanceUsages")(InstanceUsages.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (State != null) __obj.updateDynamic("State")(State.asInstanceOf[js.Any])
-    if (!js.isUndefined(TotalInstanceCount)) __obj.updateDynamic("TotalInstanceCount")(TotalInstanceCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCapacityReservationUsageResult]
   }
+  @scala.inline
+  implicit class GetCapacityReservationUsageResultOps[Self <: GetCapacityReservationUsageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailableInstanceCount(value: Integer): Self = this.set("AvailableInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailableInstanceCount: Self = this.set("AvailableInstanceCount", js.undefined)
+    @scala.inline
+    def setCapacityReservationId(value: String): Self = this.set("CapacityReservationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapacityReservationId: Self = this.set("CapacityReservationId", js.undefined)
+    @scala.inline
+    def setInstanceType(value: String): Self = this.set("InstanceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceType: Self = this.set("InstanceType", js.undefined)
+    @scala.inline
+    def setInstanceUsagesVarargs(value: InstanceUsage*): Self = this.set("InstanceUsages", js.Array(value :_*))
+    @scala.inline
+    def setInstanceUsages(value: InstanceUsageSet): Self = this.set("InstanceUsages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceUsages: Self = this.set("InstanceUsages", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setState(value: CapacityReservationState): Self = this.set("State", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("State", js.undefined)
+    @scala.inline
+    def setTotalInstanceCount(value: Integer): Self = this.set("TotalInstanceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalInstanceCount: Self = this.set("TotalInstanceCount", js.undefined)
+  }
+  
 }
 

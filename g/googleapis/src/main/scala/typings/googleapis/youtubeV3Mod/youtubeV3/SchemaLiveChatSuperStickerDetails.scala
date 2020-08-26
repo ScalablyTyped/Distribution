@@ -31,20 +31,42 @@ trait SchemaLiveChatSuperStickerDetails extends js.Object {
 
 object SchemaLiveChatSuperStickerDetails {
   @scala.inline
-  def apply(
-    amountDisplayString: String = null,
-    amountMicros: String = null,
-    currency: String = null,
-    superStickerMetadata: SchemaSuperStickerMetadata = null,
-    tier: js.UndefOr[Double] = js.undefined
-  ): SchemaLiveChatSuperStickerDetails = {
+  def apply(): SchemaLiveChatSuperStickerDetails = {
     val __obj = js.Dynamic.literal()
-    if (amountDisplayString != null) __obj.updateDynamic("amountDisplayString")(amountDisplayString.asInstanceOf[js.Any])
-    if (amountMicros != null) __obj.updateDynamic("amountMicros")(amountMicros.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (superStickerMetadata != null) __obj.updateDynamic("superStickerMetadata")(superStickerMetadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(tier)) __obj.updateDynamic("tier")(tier.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatSuperStickerDetails]
   }
+  @scala.inline
+  implicit class SchemaLiveChatSuperStickerDetailsOps[Self <: SchemaLiveChatSuperStickerDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAmountDisplayString(value: String): Self = this.set("amountDisplayString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmountDisplayString: Self = this.set("amountDisplayString", js.undefined)
+    @scala.inline
+    def setAmountMicros(value: String): Self = this.set("amountMicros", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmountMicros: Self = this.set("amountMicros", js.undefined)
+    @scala.inline
+    def setCurrency(value: String): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setSuperStickerMetadata(value: SchemaSuperStickerMetadata): Self = this.set("superStickerMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuperStickerMetadata: Self = this.set("superStickerMetadata", js.undefined)
+    @scala.inline
+    def setTier(value: Double): Self = this.set("tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("tier", js.undefined)
+  }
+  
 }
 

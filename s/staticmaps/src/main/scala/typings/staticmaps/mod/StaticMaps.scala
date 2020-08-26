@@ -13,6 +13,7 @@ trait StaticMaps extends js.Object {
   def addPolygon(options: AddPolygonOptions): Unit = js.native
   def addText(options: AddTextOptions): Unit = js.native
   def render(): js.Promise[Unit] = js.native
+  def render(center: js.UndefOr[scala.Nothing], zoom: Double): js.Promise[Unit] = js.native
   def render(center: js.Array[Double]): js.Promise[Unit] = js.native
   def render(center: js.Array[Double], zoom: Double): js.Promise[Unit] = js.native
 }

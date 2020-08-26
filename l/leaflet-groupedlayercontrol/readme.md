@@ -12,7 +12,7 @@ A Leaflet layer control with support for grouping overlays together
 | Keywords           | leaflet, overlay, groups, grouped, control, plugin |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 17277 |
+| # downloads        | 18113 |
 | # stars            | 0 |
 
 ## Links

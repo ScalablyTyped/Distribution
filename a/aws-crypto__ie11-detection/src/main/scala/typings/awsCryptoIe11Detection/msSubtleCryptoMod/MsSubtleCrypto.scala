@@ -18,12 +18,25 @@ trait MsSubtleCrypto extends js.Object {
   def encrypt(algorithm: Ie11EncryptionAlgorithm, key: Key, buffer: ArrayBufferView): CryptoOperation = js.native
   def exportKey(format: String, key: Key): KeyOperation = js.native
   def generateKey(algorithm: Ie11EncryptionAlgorithm): KeyOperation = js.native
+  def generateKey(
+    algorithm: Ie11EncryptionAlgorithm,
+    extractable: js.UndefOr[scala.Nothing],
+    keyUsages: js.Array[KeyUsage]
+  ): KeyOperation = js.native
   def generateKey(algorithm: Ie11EncryptionAlgorithm, extractable: Boolean): KeyOperation = js.native
   def generateKey(algorithm: Ie11EncryptionAlgorithm, extractable: Boolean, keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
   def generateKey(algorithm: SigningAlgorithm): KeyOperation = js.native
+  def generateKey(algorithm: SigningAlgorithm, extractable: js.UndefOr[scala.Nothing], keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
   def generateKey(algorithm: SigningAlgorithm, extractable: Boolean): KeyOperation = js.native
   def generateKey(algorithm: SigningAlgorithm, extractable: Boolean, keyUsages: js.Array[KeyUsage]): KeyOperation = js.native
   def importKey(format: String, keyData: ArrayBufferView, algorithm: js.Any): KeyOperation = js.native
+  def importKey(
+    format: String,
+    keyData: ArrayBufferView,
+    algorithm: js.Any,
+    extractable: js.UndefOr[scala.Nothing],
+    keyUsages: js.Array[KeyUsage]
+  ): KeyOperation = js.native
   def importKey(format: String, keyData: ArrayBufferView, algorithm: js.Any, extractable: Boolean): KeyOperation = js.native
   def importKey(
     format: String,

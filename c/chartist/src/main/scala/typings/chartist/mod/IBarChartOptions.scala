@@ -6,70 +6,111 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBarChartOptions extends IChartOptions {
-  var axisX: js.UndefOr[IBarChartAxis] = js.undefined
-  var axisY: js.UndefOr[IBarChartAxis] = js.undefined
-  var chartPadding: js.UndefOr[IChartPadding] = js.undefined
+  var axisX: js.UndefOr[IBarChartAxis] = js.native
+  var axisY: js.UndefOr[IBarChartAxis] = js.native
+  var chartPadding: js.UndefOr[IChartPadding] = js.native
   /**
     * Override the class names that are used to generate the SVG structure of the chart
     */
-  var classNames: js.UndefOr[IBarChartClasses] = js.undefined
-  var distributeSeries: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var high: js.UndefOr[Double] = js.undefined
-  var horizontalBars: js.UndefOr[Boolean] = js.undefined
-  var low: js.UndefOr[Double] = js.undefined
-  var onlyInteger: js.UndefOr[Boolean] = js.undefined
-  var seriesBarDistance: js.UndefOr[Double] = js.undefined
+  var classNames: js.UndefOr[IBarChartClasses] = js.native
+  var distributeSeries: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var high: js.UndefOr[Double] = js.native
+  var horizontalBars: js.UndefOr[Boolean] = js.native
+  var low: js.UndefOr[Double] = js.native
+  var onlyInteger: js.UndefOr[Boolean] = js.native
+  var seriesBarDistance: js.UndefOr[Double] = js.native
   /**
     * If set to true this property will cause the series bars to be stacked and form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
     */
-  var stackBars: js.UndefOr[Boolean] = js.undefined
-  var stackMode: js.UndefOr[overlap | accumulate] = js.undefined
-  var ticks: js.UndefOr[js.Array[String | Double]] = js.undefined
-  var width: js.UndefOr[Double | String] = js.undefined
+  var stackBars: js.UndefOr[Boolean] = js.native
+  var stackMode: js.UndefOr[overlap | accumulate] = js.native
+  var ticks: js.UndefOr[js.Array[String | Double]] = js.native
+  var width: js.UndefOr[Double | String] = js.native
 }
 
 object IBarChartOptions {
   @scala.inline
-  def apply(
-    axisX: IBarChartAxis = null,
-    axisY: IBarChartAxis = null,
-    chartPadding: IChartPadding = null,
-    classNames: IBarChartClasses = null,
-    distributeSeries: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    high: js.UndefOr[Double] = js.undefined,
-    horizontalBars: js.UndefOr[Boolean] = js.undefined,
-    low: js.UndefOr[Double] = js.undefined,
-    onlyInteger: js.UndefOr[Boolean] = js.undefined,
-    plugins: js.Array[_] = null,
-    reverseData: js.UndefOr[Boolean] = js.undefined,
-    seriesBarDistance: js.UndefOr[Double] = js.undefined,
-    stackBars: js.UndefOr[Boolean] = js.undefined,
-    stackMode: overlap | accumulate = null,
-    ticks: js.Array[String | Double] = null,
-    width: Double | String = null
-  ): IBarChartOptions = {
+  def apply(): IBarChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (axisX != null) __obj.updateDynamic("axisX")(axisX.asInstanceOf[js.Any])
-    if (axisY != null) __obj.updateDynamic("axisY")(axisY.asInstanceOf[js.Any])
-    if (chartPadding != null) __obj.updateDynamic("chartPadding")(chartPadding.asInstanceOf[js.Any])
-    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(distributeSeries)) __obj.updateDynamic("distributeSeries")(distributeSeries.get.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(high)) __obj.updateDynamic("high")(high.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalBars)) __obj.updateDynamic("horizontalBars")(horizontalBars.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(low)) __obj.updateDynamic("low")(low.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(onlyInteger)) __obj.updateDynamic("onlyInteger")(onlyInteger.get.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(seriesBarDistance)) __obj.updateDynamic("seriesBarDistance")(seriesBarDistance.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackBars)) __obj.updateDynamic("stackBars")(stackBars.get.asInstanceOf[js.Any])
-    if (stackMode != null) __obj.updateDynamic("stackMode")(stackMode.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBarChartOptions]
   }
+  @scala.inline
+  implicit class IBarChartOptionsOps[Self <: IBarChartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAxisX(value: IBarChartAxis): Self = this.set("axisX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisX: Self = this.set("axisX", js.undefined)
+    @scala.inline
+    def setAxisY(value: IBarChartAxis): Self = this.set("axisY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAxisY: Self = this.set("axisY", js.undefined)
+    @scala.inline
+    def setChartPadding(value: IChartPadding): Self = this.set("chartPadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartPadding: Self = this.set("chartPadding", js.undefined)
+    @scala.inline
+    def setClassNames(value: IBarChartClasses): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassNames: Self = this.set("classNames", js.undefined)
+    @scala.inline
+    def setDistributeSeries(value: Boolean): Self = this.set("distributeSeries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributeSeries: Self = this.set("distributeSeries", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHigh(value: Double): Self = this.set("high", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHigh: Self = this.set("high", js.undefined)
+    @scala.inline
+    def setHorizontalBars(value: Boolean): Self = this.set("horizontalBars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalBars: Self = this.set("horizontalBars", js.undefined)
+    @scala.inline
+    def setLow(value: Double): Self = this.set("low", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLow: Self = this.set("low", js.undefined)
+    @scala.inline
+    def setOnlyInteger(value: Boolean): Self = this.set("onlyInteger", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnlyInteger: Self = this.set("onlyInteger", js.undefined)
+    @scala.inline
+    def setSeriesBarDistance(value: Double): Self = this.set("seriesBarDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeriesBarDistance: Self = this.set("seriesBarDistance", js.undefined)
+    @scala.inline
+    def setStackBars(value: Boolean): Self = this.set("stackBars", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackBars: Self = this.set("stackBars", js.undefined)
+    @scala.inline
+    def setStackMode(value: overlap | accumulate): Self = this.set("stackMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackMode: Self = this.set("stackMode", js.undefined)
+    @scala.inline
+    def setTicksVarargs(value: (String | Double)*): Self = this.set("ticks", js.Array(value :_*))
+    @scala.inline
+    def setTicks(value: js.Array[String | Double]): Self = this.set("ticks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTicks: Self = this.set("ticks", js.undefined)
+    @scala.inline
+    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

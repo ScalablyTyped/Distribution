@@ -30,6 +30,7 @@ class ResourceApplications protected () extends js.Object {
     */
   def listHidden(): GaxiosPromise[SchemaHiddenPlayerList] = js.native
   def listHidden(callback: BodyResponseCallback[SchemaHiddenPlayerList]): Unit = js.native
+  def listHidden(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHiddenPlayerList] = js.native
   def listHidden(params: ParamsResourceApplicationsListhidden): GaxiosPromise[SchemaHiddenPlayerList] = js.native
   def listHidden(
     params: ParamsResourceApplicationsListhidden,

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipConstants", JSImport.Namespace)
 @js.native
 object keytipConstantsMod extends js.Object {
+  val DATAKTP_ARIA_TARGET: /* "data-ktp-aria-target" */ String = js.native
   val DATAKTP_EXECUTE_TARGET: /* "data-ktp-execute-target" */ String = js.native
   val DATAKTP_TARGET: /* "data-ktp-target" */ String = js.native
   val KTP_ARIA_SEPARATOR: /* ", " */ String = js.native

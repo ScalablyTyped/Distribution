@@ -29,12 +29,33 @@ object UpdatePullRequestApprovalRuleContentInput {
   def apply(
     approvalRuleName: ApprovalRuleName,
     newRuleContent: ApprovalRuleContent,
-    pullRequestId: PullRequestId,
-    existingRuleContentSha256: RuleContentSha256 = null
+    pullRequestId: PullRequestId
   ): UpdatePullRequestApprovalRuleContentInput = {
     val __obj = js.Dynamic.literal(approvalRuleName = approvalRuleName.asInstanceOf[js.Any], newRuleContent = newRuleContent.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
-    if (existingRuleContentSha256 != null) __obj.updateDynamic("existingRuleContentSha256")(existingRuleContentSha256.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePullRequestApprovalRuleContentInput]
   }
+  @scala.inline
+  implicit class UpdatePullRequestApprovalRuleContentInputOps[Self <: UpdatePullRequestApprovalRuleContentInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApprovalRuleName(value: ApprovalRuleName): Self = this.set("approvalRuleName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewRuleContent(value: ApprovalRuleContent): Self = this.set("newRuleContent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPullRequestId(value: PullRequestId): Self = this.set("pullRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExistingRuleContentSha256(value: RuleContentSha256): Self = this.set("existingRuleContentSha256", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExistingRuleContentSha256: Self = this.set("existingRuleContentSha256", js.undefined)
+  }
+  
 }
 

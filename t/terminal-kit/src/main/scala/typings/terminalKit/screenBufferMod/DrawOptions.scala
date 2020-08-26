@@ -7,42 +7,73 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawOptions extends js.Object {
-  var blending: js.UndefOr[Boolean] = js.undefined
-  var delta: js.UndefOr[Boolean] = js.undefined
-  var dst: js.UndefOr[Terminal | ScreenBuffer] = js.undefined
-  var dstClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.undefined
-  var srcClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.undefined
-  var tile: js.UndefOr[Boolean] = js.undefined
-  var wrap: js.UndefOr[Boolean | x | y] = js.undefined
-  var x: js.UndefOr[Double] = js.undefined
-  var y: js.UndefOr[Double] = js.undefined
+  var blending: js.UndefOr[Boolean] = js.native
+  var delta: js.UndefOr[Boolean] = js.native
+  var dst: js.UndefOr[Terminal | ScreenBuffer] = js.native
+  var dstClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.native
+  var srcClipRect: js.UndefOr[typings.terminalKit.rectMod.^] = js.native
+  var tile: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean | x | y] = js.native
+  var x: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.native
 }
 
 object DrawOptions {
   @scala.inline
-  def apply(
-    blending: js.UndefOr[Boolean] = js.undefined,
-    delta: js.UndefOr[Boolean] = js.undefined,
-    dst: Terminal | ScreenBuffer = null,
-    dstClipRect: typings.terminalKit.rectMod.^ = null,
-    srcClipRect: typings.terminalKit.rectMod.^ = null,
-    tile: js.UndefOr[Boolean] = js.undefined,
-    wrap: Boolean | x | y = null,
-    x: js.UndefOr[Double] = js.undefined,
-    y: js.UndefOr[Double] = js.undefined
-  ): DrawOptions = {
+  def apply(): DrawOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(blending)) __obj.updateDynamic("blending")(blending.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(delta)) __obj.updateDynamic("delta")(delta.get.asInstanceOf[js.Any])
-    if (dst != null) __obj.updateDynamic("dst")(dst.asInstanceOf[js.Any])
-    if (dstClipRect != null) __obj.updateDynamic("dstClipRect")(dstClipRect.asInstanceOf[js.Any])
-    if (srcClipRect != null) __obj.updateDynamic("srcClipRect")(srcClipRect.asInstanceOf[js.Any])
-    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile.get.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(x)) __obj.updateDynamic("x")(x.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(y)) __obj.updateDynamic("y")(y.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptions]
   }
+  @scala.inline
+  implicit class DrawOptionsOps[Self <: DrawOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlending(value: Boolean): Self = this.set("blending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlending: Self = this.set("blending", js.undefined)
+    @scala.inline
+    def setDelta(value: Boolean): Self = this.set("delta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelta: Self = this.set("delta", js.undefined)
+    @scala.inline
+    def setDst(value: Terminal | ScreenBuffer): Self = this.set("dst", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDst: Self = this.set("dst", js.undefined)
+    @scala.inline
+    def setDstClipRect(value: typings.terminalKit.rectMod.^): Self = this.set("dstClipRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDstClipRect: Self = this.set("dstClipRect", js.undefined)
+    @scala.inline
+    def setSrcClipRect(value: typings.terminalKit.rectMod.^): Self = this.set("srcClipRect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSrcClipRect: Self = this.set("srcClipRect", js.undefined)
+    @scala.inline
+    def setTile(value: Boolean): Self = this.set("tile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTile: Self = this.set("tile", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean | typings.terminalKit.terminalKitStrings.x | y): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteY: Self = this.set("y", js.undefined)
+  }
+  
 }
 

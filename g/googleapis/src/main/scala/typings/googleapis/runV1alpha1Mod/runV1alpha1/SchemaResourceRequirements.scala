@@ -44,18 +44,38 @@ trait SchemaResourceRequirements extends js.Object {
 
 object SchemaResourceRequirements {
   @scala.inline
-  def apply(
-    limits: StringDictionary[String] = null,
-    limitsInMap: StringDictionary[SchemaQuantity] = null,
-    requests: StringDictionary[String] = null,
-    requestsInMap: StringDictionary[SchemaQuantity] = null
-  ): SchemaResourceRequirements = {
+  def apply(): SchemaResourceRequirements = {
     val __obj = js.Dynamic.literal()
-    if (limits != null) __obj.updateDynamic("limits")(limits.asInstanceOf[js.Any])
-    if (limitsInMap != null) __obj.updateDynamic("limitsInMap")(limitsInMap.asInstanceOf[js.Any])
-    if (requests != null) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
-    if (requestsInMap != null) __obj.updateDynamic("requestsInMap")(requestsInMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResourceRequirements]
   }
+  @scala.inline
+  implicit class SchemaResourceRequirementsOps[Self <: SchemaResourceRequirements] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLimits(value: StringDictionary[String]): Self = this.set("limits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimits: Self = this.set("limits", js.undefined)
+    @scala.inline
+    def setLimitsInMap(value: StringDictionary[SchemaQuantity]): Self = this.set("limitsInMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimitsInMap: Self = this.set("limitsInMap", js.undefined)
+    @scala.inline
+    def setRequests(value: StringDictionary[String]): Self = this.set("requests", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequests: Self = this.set("requests", js.undefined)
+    @scala.inline
+    def setRequestsInMap(value: StringDictionary[SchemaQuantity]): Self = this.set("requestsInMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestsInMap: Self = this.set("requestsInMap", js.undefined)
+  }
+  
 }
 

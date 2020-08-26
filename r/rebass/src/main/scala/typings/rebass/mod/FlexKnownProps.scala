@@ -14,6 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlexKnownProps
   extends BoxKnownProps
      with FlexGrowProps[RequiredTheme]
@@ -25,4 +26,12 @@ trait FlexKnownProps
      with JustifyItemsProps[RequiredTheme]
      with JustifyContentProps[RequiredTheme]
      with JustifySelfProps[RequiredTheme]
+
+object FlexKnownProps {
+  @scala.inline
+  def apply(): FlexKnownProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[FlexKnownProps]
+  }
+}
 

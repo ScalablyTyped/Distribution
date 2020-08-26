@@ -22,7 +22,7 @@ trait GetCertificateAuthorityResult extends js.Object {
     */
   val certificateSigningRequest: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -53,7 +53,7 @@ trait GetCertificateAuthorityResult extends js.Object {
   /**
     * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
     */
-  val tags: StringDictionary[js.Any] = js.native
+  val tags: StringDictionary[String] = js.native
   /**
     * The type of the certificate authority.
     */
@@ -73,12 +73,51 @@ object GetCertificateAuthorityResult {
     revocationConfigurations: js.Array[GetCertificateAuthorityRevocationConfiguration],
     serial: String,
     status: String,
-    tags: StringDictionary[js.Any],
+    tags: StringDictionary[String],
     `type`: String
   ): GetCertificateAuthorityResult = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], certificate = certificate.asInstanceOf[js.Any], certificateChain = certificateChain.asInstanceOf[js.Any], certificateSigningRequest = certificateSigningRequest.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], notAfter = notAfter.asInstanceOf[js.Any], notBefore = notBefore.asInstanceOf[js.Any], revocationConfigurations = revocationConfigurations.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateAuthorityResult]
   }
+  @scala.inline
+  implicit class GetCertificateAuthorityResultOps[Self <: GetCertificateAuthorityResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificate(value: String): Self = this.set("certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateChain(value: String): Self = this.set("certificateChain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCertificateSigningRequest(value: String): Self = this.set("certificateSigningRequest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotAfter(value: String): Self = this.set("notAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNotBefore(value: String): Self = this.set("notBefore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRevocationConfigurationsVarargs(value: GetCertificateAuthorityRevocationConfiguration*): Self = this.set("revocationConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setRevocationConfigurations(value: js.Array[GetCertificateAuthorityRevocationConfiguration]): Self = this.set("revocationConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSerial(value: String): Self = this.set("serial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTags(value: StringDictionary[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -12,7 +12,7 @@ JavaScript client for Fast Healthcare Interoperability Resources
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 321 |
+| # downloads        | 296 |
 | # stars            | 2 |
 
 ## Links

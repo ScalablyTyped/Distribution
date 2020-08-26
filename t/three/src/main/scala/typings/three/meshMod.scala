@@ -14,16 +14,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object meshMod extends js.Object {
   @js.native
-  class Mesh () extends Object3D {
-    def this(geometry: BufferGeometry) = this()
-    def this(geometry: Geometry) = this()
-    def this(geometry: BufferGeometry, material: js.Array[Material]) = this()
-    def this(geometry: BufferGeometry, material: Material) = this()
-    def this(geometry: Geometry, material: js.Array[Material]) = this()
-    def this(geometry: Geometry, material: Material) = this()
-    var geometry: Geometry | BufferGeometry = js.native
+  class Mesh[TGeometry /* <: Geometry | BufferGeometry */, TMaterial /* <: Material | js.Array[Material] */] () extends Object3D {
+    def this(geometry: TGeometry) = this()
+    def this(geometry: TGeometry, material: TMaterial) = this()
+    def this(geometry: js.UndefOr[scala.Nothing], material: TMaterial) = this()
+    var geometry: TGeometry = js.native
     val isMesh: `true` = js.native
-    var material: Material | js.Array[Material] = js.native
+    var material: TMaterial = js.native
     var morphTargetDictionary: js.UndefOr[StringDictionary[Double]] = js.native
     var morphTargetInfluences: js.UndefOr[js.Array[Double]] = js.native
     def updateMorphTargets(): Unit = js.native

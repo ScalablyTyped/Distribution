@@ -8,26 +8,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Args extends js.Object {
-  var args: js.UndefOr[js.Array[String]] = js.undefined
-  var env: js.UndefOr[StringDictionary[String]] = js.undefined
-  var path: String
-  var `type`: js.UndefOr[stdio | socket | pipe] = js.undefined
+  var args: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[StringDictionary[String]] = js.native
+  var path: String = js.native
+  var `type`: js.UndefOr[stdio | socket | pipe] = js.native
 }
 
 object Args {
   @scala.inline
-  def apply(
-    path: String,
-    args: js.Array[String] = null,
-    env: StringDictionary[String] = null,
-    `type`: stdio | socket | pipe = null
-  ): Args = {
+  def apply(path: String): Args = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
+  @scala.inline
+  implicit class ArgsOps[Self <: Args] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setEnv(value: StringDictionary[String]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setType(value: stdio | socket | pipe): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

@@ -2,6 +2,7 @@ package typings.storybookReactNative.anon
 
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityTrait
+import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.StyleProp
@@ -28,105 +29,184 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Pick<react-native.react-native.TextProps & react.react.RefAttributes<react-native.react-native.Text>, 'style' | 'allowFontScaling' | 'ellipsizeMode' | 'lineBreakMode' | 'numberOfLines' | 'onLayout' | 'onPress' | 'onLongPress' | 'testID' | 'nativeID' | 'maxFontSizeMultiplier' | 'adjustsFontSizeToFit' | 'minimumFontScale' | 'suppressHighlighting' | 'selectable' | 'selectionColor' | 'textBreakStrategy' | 'accessible' | 'accessibilityLabel' | 'accessibilityRole' | 'accessibilityStates' | 'accessibilityHint' | 'accessibilityComponentType' | 'accessibilityLiveRegion' | 'importantForAccessibility' | 'accessibilityElementsHidden' | 'accessibilityTraits' | 'onAccessibilityTap' | 'onMagicTap' | 'accessibilityIgnoresInvertColors'> */
+@js.native
 trait PickTextPropsRefAttribute extends js.Object {
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
-  var accessibilityHint: js.UndefOr[String] = js.undefined
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
-  var accessibilityLabel: js.UndefOr[String] = js.undefined
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
-  var accessibilityStates: js.UndefOr[js.Any] = js.undefined
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
-  var accessible: js.UndefOr[Boolean] = js.undefined
-  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined
-  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
-  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
-  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.undefined
-  var maxFontSizeMultiplier: js.UndefOr[Double] = js.undefined
-  var minimumFontScale: js.UndefOr[Double] = js.undefined
-  var nativeID: js.UndefOr[String] = js.undefined
-  var numberOfLines: js.UndefOr[Double] = js.undefined
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
-  var selectable: js.UndefOr[Boolean] = js.undefined
-  var selectionColor: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
-  var suppressHighlighting: js.UndefOr[Boolean] = js.undefined
-  var testID: js.UndefOr[String] = js.undefined
-  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.undefined
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityStates: js.UndefOr[js.Any] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessible: js.UndefOr[Boolean] = js.native
+  var adjustsFontSizeToFit: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var lineBreakMode: js.UndefOr[head | middle | tail | clip] = js.native
+  var maxFontSizeMultiplier: js.UndefOr[Double | Null] = js.native
+  var minimumFontScale: js.UndefOr[Double] = js.native
+  var nativeID: js.UndefOr[String] = js.native
+  var numberOfLines: js.UndefOr[Double] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var selectable: js.UndefOr[Boolean] = js.native
+  var selectionColor: js.UndefOr[ColorValue] = js.native
+  var style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var suppressHighlighting: js.UndefOr[Boolean] = js.native
+  var testID: js.UndefOr[String] = js.native
+  var textBreakStrategy: js.UndefOr[simple | highQuality | balanced] = js.native
 }
 
 object PickTextPropsRefAttribute {
   @scala.inline
-  def apply(
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityStates: js.Any = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined,
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    ellipsizeMode: head | middle | tail | clip = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    lineBreakMode: head | middle | tail | clip = null,
-    maxFontSizeMultiplier: js.UndefOr[Double] = js.undefined,
-    minimumFontScale: js.UndefOr[Double] = js.undefined,
-    nativeID: String = null,
-    numberOfLines: js.UndefOr[Double] = js.undefined,
-    onAccessibilityTap: () => Unit = null,
-    onLayout: /* event */ LayoutChangeEvent => Unit = null,
-    onLongPress: /* event */ GestureResponderEvent => Unit = null,
-    onMagicTap: () => Unit = null,
-    onPress: /* event */ GestureResponderEvent => Unit = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selectionColor: String = null,
-    style: js.UndefOr[Null | StyleProp[TextStyle]] = js.undefined,
-    suppressHighlighting: js.UndefOr[Boolean] = js.undefined,
-    testID: String = null,
-    textBreakStrategy: simple | highQuality | balanced = null
-  ): PickTextPropsRefAttribute = {
+  def apply(): PickTextPropsRefAttribute = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.get.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.get.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.get.asInstanceOf[js.Any])
-    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxFontSizeMultiplier)) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimumFontScale)) __obj.updateDynamic("minimumFontScale")(minimumFontScale.get.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberOfLines)) __obj.updateDynamic("numberOfLines")(numberOfLines.get.asInstanceOf[js.Any])
-    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(js.Any.fromFunction0(onAccessibilityTap))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1(onLayout))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1(onLongPress))
-    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting.get.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickTextPropsRefAttribute]
   }
+  @scala.inline
+  implicit class PickTextPropsRefAttributeOps[Self <: PickTextPropsRefAttribute] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = this.set("accessibilityComponentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityComponentType: Self = this.set("accessibilityComponentType", js.undefined)
+    @scala.inline
+    def setAccessibilityElementsHidden(value: Boolean): Self = this.set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityElementsHidden: Self = this.set("accessibilityElementsHidden", js.undefined)
+    @scala.inline
+    def setAccessibilityHint(value: String): Self = this.set("accessibilityHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityHint: Self = this.set("accessibilityHint", js.undefined)
+    @scala.inline
+    def setAccessibilityIgnoresInvertColors(value: Boolean): Self = this.set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityIgnoresInvertColors: Self = this.set("accessibilityIgnoresInvertColors", js.undefined)
+    @scala.inline
+    def setAccessibilityLabel(value: String): Self = this.set("accessibilityLabel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLabel: Self = this.set("accessibilityLabel", js.undefined)
+    @scala.inline
+    def setAccessibilityLiveRegion(value: none | polite | assertive): Self = this.set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityLiveRegion: Self = this.set("accessibilityLiveRegion", js.undefined)
+    @scala.inline
+    def setAccessibilityRole(value: AccessibilityRole): Self = this.set("accessibilityRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityRole: Self = this.set("accessibilityRole", js.undefined)
+    @scala.inline
+    def setAccessibilityStates(value: js.Any): Self = this.set("accessibilityStates", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityStates: Self = this.set("accessibilityStates", js.undefined)
+    @scala.inline
+    def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = this.set("accessibilityTraits", js.Array(value :_*))
+    @scala.inline
+    def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = this.set("accessibilityTraits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessibilityTraits: Self = this.set("accessibilityTraits", js.undefined)
+    @scala.inline
+    def setAccessible(value: Boolean): Self = this.set("accessible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessible: Self = this.set("accessible", js.undefined)
+    @scala.inline
+    def setAdjustsFontSizeToFit(value: Boolean): Self = this.set("adjustsFontSizeToFit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustsFontSizeToFit: Self = this.set("adjustsFontSizeToFit", js.undefined)
+    @scala.inline
+    def setAllowFontScaling(value: Boolean): Self = this.set("allowFontScaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowFontScaling: Self = this.set("allowFontScaling", js.undefined)
+    @scala.inline
+    def setEllipsizeMode(value: head | middle | tail | clip): Self = this.set("ellipsizeMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsizeMode: Self = this.set("ellipsizeMode", js.undefined)
+    @scala.inline
+    def setImportantForAccessibility(value: auto | yes | no | `no-hide-descendants`): Self = this.set("importantForAccessibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportantForAccessibility: Self = this.set("importantForAccessibility", js.undefined)
+    @scala.inline
+    def setLineBreakMode(value: head | middle | tail | clip): Self = this.set("lineBreakMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineBreakMode: Self = this.set("lineBreakMode", js.undefined)
+    @scala.inline
+    def setMaxFontSizeMultiplier(value: Double): Self = this.set("maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxFontSizeMultiplier: Self = this.set("maxFontSizeMultiplier", js.undefined)
+    @scala.inline
+    def setMaxFontSizeMultiplierNull: Self = this.set("maxFontSizeMultiplier", null)
+    @scala.inline
+    def setMinimumFontScale(value: Double): Self = this.set("minimumFontScale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumFontScale: Self = this.set("minimumFontScale", js.undefined)
+    @scala.inline
+    def setNativeID(value: String): Self = this.set("nativeID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNativeID: Self = this.set("nativeID", js.undefined)
+    @scala.inline
+    def setNumberOfLines(value: Double): Self = this.set("numberOfLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumberOfLines: Self = this.set("numberOfLines", js.undefined)
+    @scala.inline
+    def setOnAccessibilityTap(value: () => Unit): Self = this.set("onAccessibilityTap", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnAccessibilityTap: Self = this.set("onAccessibilityTap", js.undefined)
+    @scala.inline
+    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = this.set("onLayout", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLayout: Self = this.set("onLayout", js.undefined)
+    @scala.inline
+    def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onLongPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLongPress: Self = this.set("onLongPress", js.undefined)
+    @scala.inline
+    def setOnMagicTap(value: () => Unit): Self = this.set("onMagicTap", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnMagicTap: Self = this.set("onMagicTap", js.undefined)
+    @scala.inline
+    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setSelectionColor(value: ColorValue): Self = this.set("selectionColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectionColor: Self = this.set("selectionColor", js.undefined)
+    @scala.inline
+    def setStyle(value: StyleProp[TextStyle]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setStyleNull: Self = this.set("style", null)
+    @scala.inline
+    def setSuppressHighlighting(value: Boolean): Self = this.set("suppressHighlighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuppressHighlighting: Self = this.set("suppressHighlighting", js.undefined)
+    @scala.inline
+    def setTestID(value: String): Self = this.set("testID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestID: Self = this.set("testID", js.undefined)
+    @scala.inline
+    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = this.set("textBreakStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextBreakStrategy: Self = this.set("textBreakStrategy", js.undefined)
+  }
+  
 }
 

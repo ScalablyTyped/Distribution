@@ -11,8 +11,8 @@ Styled box component for Ink
 | Full name          | ink-box |
 | Keywords           | ink-component, ink, component, box, boxen, boxes, border, react, jsx, terminal, term, console, command-line |
 | # releases         | 2 |
-| # dependents       | 44 |
-| # downloads        | 2187233 |
+| # dependents       | 46 |
+| # downloads        | 3748411 |
 | # stars            | 0 |
 
 ## Links

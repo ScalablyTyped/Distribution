@@ -13,9 +13,222 @@ trait CalculatedMembers extends js.Object {
   def apply(Index: String): CalculatedMember = js.native
   def apply(Index: Double): CalculatedMember = js.native
   def Add(Name: String, Formula: String): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean,
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean,
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean,
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(Name: String, Formula: String, SolveOrder: js.UndefOr[scala.Nothing], Type: XlCalculatedMemberType): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: Boolean,
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: Boolean,
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: js.UndefOr[scala.Nothing],
+    Type: XlCalculatedMemberType,
+    Dynamic: Boolean,
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
   def Add(Name: String, Formula: String, SolveOrder: Double): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean,
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean,
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: js.UndefOr[scala.Nothing],
+    Dynamic: Boolean,
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
   def Add(Name: String, Formula: String, SolveOrder: Double, Type: XlCalculatedMemberType): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: XlCalculatedMemberType,
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: XlCalculatedMemberType,
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String
+  ): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: XlCalculatedMemberType,
+    Dynamic: js.UndefOr[scala.Nothing],
+    DisplayFolder: String,
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
   def Add(Name: String, Formula: String, SolveOrder: Double, Type: XlCalculatedMemberType, Dynamic: Boolean): CalculatedMember = js.native
+  def Add(
+    Name: String,
+    Formula: String,
+    SolveOrder: Double,
+    Type: XlCalculatedMemberType,
+    Dynamic: Boolean,
+    DisplayFolder: js.UndefOr[scala.Nothing],
+    HierarchizeDistinct: Boolean
+  ): CalculatedMember = js.native
   def Add(
     Name: String,
     Formula: String,
@@ -47,6 +260,7 @@ trait CalculatedMembers extends js.Object {
   def Item(Index: String): CalculatedMember = js.native
   def Item(Index: Double): CalculatedMember = js.native
   def _Add(Name: String, Formula: String): CalculatedMember = js.native
+  def _Add(Name: String, Formula: String, SolveOrder: js.UndefOr[scala.Nothing], Type: js.Any): CalculatedMember = js.native
   def _Add(Name: String, Formula: String, SolveOrder: js.Any): CalculatedMember = js.native
   def _Add(Name: String, Formula: String, SolveOrder: js.Any, Type: js.Any): CalculatedMember = js.native
   def _Default(Index: js.Any): CalculatedMember = js.native

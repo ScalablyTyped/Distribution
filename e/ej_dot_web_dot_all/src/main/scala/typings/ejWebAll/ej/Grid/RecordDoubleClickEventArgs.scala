@@ -4,70 +4,105 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RecordDoubleClickEventArgs extends js.Object {
   /** Returns the cancel option value.
     */
-  var cancel: js.UndefOr[Boolean] = js.undefined
+  var cancel: js.UndefOr[Boolean] = js.native
   /** Returns the current selected cell.
     */
-  var cell: js.UndefOr[js.Any] = js.undefined
+  var cell: js.UndefOr[js.Any] = js.native
   /** Returns the selected cell index value.
     */
-  var cellIndex: js.UndefOr[Double] = js.undefined
+  var cellIndex: js.UndefOr[Double] = js.native
   /** Returns the corresponding cell value.
     */
-  var cellValue: js.UndefOr[String] = js.undefined
+  var cellValue: js.UndefOr[String] = js.native
   /** Returns the Header text of the column corresponding to the selected cell.
     */
-  var columnName: js.UndefOr[String] = js.undefined
+  var columnName: js.UndefOr[String] = js.native
   /** Returns current record object (JSON).
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** Returns the grid model.
     */
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[js.Any] = js.native
   /** Returns the jQuery object of the current selected row.
     */
-  var row: js.UndefOr[js.Any] = js.undefined
+  var row: js.UndefOr[js.Any] = js.native
   /** Returns current record object (JSON).
     */
-  var rowData: js.UndefOr[js.Any] = js.undefined
+  var rowData: js.UndefOr[js.Any] = js.native
   /** Returns the row index of the selected row.
     */
-  var rowIndex: js.UndefOr[Double] = js.undefined
+  var rowIndex: js.UndefOr[Double] = js.native
   /** Returns the name of the event.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object RecordDoubleClickEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    cell: js.Any = null,
-    cellIndex: js.UndefOr[Double] = js.undefined,
-    cellValue: String = null,
-    columnName: String = null,
-    data: js.Any = null,
-    model: js.Any = null,
-    row: js.Any = null,
-    rowData: js.Any = null,
-    rowIndex: js.UndefOr[Double] = js.undefined,
-    `type`: String = null
-  ): RecordDoubleClickEventArgs = {
+  def apply(): RecordDoubleClickEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.get.asInstanceOf[js.Any])
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex.get.asInstanceOf[js.Any])
-    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue.asInstanceOf[js.Any])
-    if (columnName != null) __obj.updateDynamic("columnName")(columnName.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (rowData != null) __obj.updateDynamic("rowData")(rowData.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex.get.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordDoubleClickEventArgs]
   }
+  @scala.inline
+  implicit class RecordDoubleClickEventArgsOps[Self <: RecordDoubleClickEventArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCancel(value: Boolean): Self = this.set("cancel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setCell(value: js.Any): Self = this.set("cell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCell: Self = this.set("cell", js.undefined)
+    @scala.inline
+    def setCellIndex(value: Double): Self = this.set("cellIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellIndex: Self = this.set("cellIndex", js.undefined)
+    @scala.inline
+    def setCellValue(value: String): Self = this.set("cellValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellValue: Self = this.set("cellValue", js.undefined)
+    @scala.inline
+    def setColumnName(value: String): Self = this.set("columnName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnName: Self = this.set("columnName", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setModel(value: js.Any): Self = this.set("model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("model", js.undefined)
+    @scala.inline
+    def setRow(value: js.Any): Self = this.set("row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("row", js.undefined)
+    @scala.inline
+    def setRowData(value: js.Any): Self = this.set("rowData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowData: Self = this.set("rowData", js.undefined)
+    @scala.inline
+    def setRowIndex(value: Double): Self = this.set("rowIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowIndex: Self = this.set("rowIndex", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

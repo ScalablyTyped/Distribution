@@ -6,24 +6,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Label extends js.Object {
-  var container: js.UndefOr[ViewStyle] = js.undefined
-  var icon: js.UndefOr[ViewStyle] = js.undefined
-  var label: js.UndefOr[TextStyle] = js.undefined
+  var container: js.UndefOr[ViewStyle] = js.native
+  var icon: js.UndefOr[ViewStyle] = js.native
+  var label: js.UndefOr[TextStyle] = js.native
 }
 
 object Label {
   @scala.inline
-  def apply(
-    container: js.UndefOr[Null | ViewStyle] = js.undefined,
-    icon: js.UndefOr[Null | ViewStyle] = js.undefined,
-    label: js.UndefOr[Null | TextStyle] = js.undefined
-  ): Label = {
+  def apply(): Label = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
+  @scala.inline
+  implicit class LabelOps[Self <: Label] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContainer(value: ViewStyle): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setContainerNull: Self = this.set("container", null)
+    @scala.inline
+    def setIcon(value: ViewStyle): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconNull: Self = this.set("icon", null)
+    @scala.inline
+    def setLabel(value: TextStyle): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setLabelNull: Self = this.set("label", null)
+  }
+  
 }
 

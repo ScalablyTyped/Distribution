@@ -18,11 +18,30 @@ trait NumberValidateRequest extends js.Object {
 
 object NumberValidateRequest {
   @scala.inline
-  def apply(IsoCountryCode: string = null, PhoneNumber: string = null): NumberValidateRequest = {
+  def apply(): NumberValidateRequest = {
     val __obj = js.Dynamic.literal()
-    if (IsoCountryCode != null) __obj.updateDynamic("IsoCountryCode")(IsoCountryCode.asInstanceOf[js.Any])
-    if (PhoneNumber != null) __obj.updateDynamic("PhoneNumber")(PhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[NumberValidateRequest]
   }
+  @scala.inline
+  implicit class NumberValidateRequestOps[Self <: NumberValidateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsoCountryCode(value: string): Self = this.set("IsoCountryCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsoCountryCode: Self = this.set("IsoCountryCode", js.undefined)
+    @scala.inline
+    def setPhoneNumber(value: string): Self = this.set("PhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePhoneNumber: Self = this.set("PhoneNumber", js.undefined)
+  }
+  
 }
 

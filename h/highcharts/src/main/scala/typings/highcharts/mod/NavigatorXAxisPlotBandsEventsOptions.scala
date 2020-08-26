@@ -4,40 +4,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NavigatorXAxisPlotBandsEventsOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Gantt) Click event on a plot band.
     */
-  var click: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
+  var click: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Mouse move event on a plot band.
     */
-  var mousemove: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
+  var mousemove: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Mouse out event on the corner of a plot
     * band.
     */
-  var mouseout: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
+  var mouseout: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Mouse over event on a plot band.
     */
-  var mouseover: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.undefined
+  var mouseover: js.UndefOr[EventCallbackFunction[PlotLineOrBand]] = js.native
 }
 
 object NavigatorXAxisPlotBandsEventsOptions {
   @scala.inline
-  def apply(
-    click: EventCallbackFunction[PlotLineOrBand] = null,
-    mousemove: EventCallbackFunction[PlotLineOrBand] = null,
-    mouseout: EventCallbackFunction[PlotLineOrBand] = null,
-    mouseover: EventCallbackFunction[PlotLineOrBand] = null
-  ): NavigatorXAxisPlotBandsEventsOptions = {
+  def apply(): NavigatorXAxisPlotBandsEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (mousemove != null) __obj.updateDynamic("mousemove")(mousemove.asInstanceOf[js.Any])
-    if (mouseout != null) __obj.updateDynamic("mouseout")(mouseout.asInstanceOf[js.Any])
-    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorXAxisPlotBandsEventsOptions]
   }
+  @scala.inline
+  implicit class NavigatorXAxisPlotBandsEventsOptionsOps[Self <: NavigatorXAxisPlotBandsEventsOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("click", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClick: Self = this.set("click", js.undefined)
+    @scala.inline
+    def setMousemove(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("mousemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMousemove: Self = this.set("mousemove", js.undefined)
+    @scala.inline
+    def setMouseout(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("mouseout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseout: Self = this.set("mouseout", js.undefined)
+    @scala.inline
+    def setMouseover(value: EventCallbackFunction[PlotLineOrBand]): Self = this.set("mouseover", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMouseover: Self = this.set("mouseover", js.undefined)
+  }
+  
 }
 

@@ -28,6 +28,7 @@ class ResourceUptimecheckips protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUptimeCheckIpsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
   def list(params: ParamsResourceUptimecheckipsList): GaxiosPromise[SchemaListUptimeCheckIpsResponse] = js.native
   def list(
     params: ParamsResourceUptimecheckipsList,

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "media-typer"
-version := "1.1-dt-20200512Z-b59a40"
-scalaVersion := "2.13.2"
+version := "1.1-dt-20200512Z-6330f7"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -14,10 +14,28 @@ trait DescribeEventTopicsResult extends js.Object {
 
 object DescribeEventTopicsResult {
   @scala.inline
-  def apply(EventTopics: EventTopics = null): DescribeEventTopicsResult = {
+  def apply(): DescribeEventTopicsResult = {
     val __obj = js.Dynamic.literal()
-    if (EventTopics != null) __obj.updateDynamic("EventTopics")(EventTopics.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventTopicsResult]
   }
+  @scala.inline
+  implicit class DescribeEventTopicsResultOps[Self <: DescribeEventTopicsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEventTopicsVarargs(value: EventTopic*): Self = this.set("EventTopics", js.Array(value :_*))
+    @scala.inline
+    def setEventTopics(value: EventTopics): Self = this.set("EventTopics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventTopics: Self = this.set("EventTopics", js.undefined)
+  }
+  
 }
 

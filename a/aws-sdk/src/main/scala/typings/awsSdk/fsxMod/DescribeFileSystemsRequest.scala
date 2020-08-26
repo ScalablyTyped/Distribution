@@ -22,16 +22,36 @@ trait DescribeFileSystemsRequest extends js.Object {
 
 object DescribeFileSystemsRequest {
   @scala.inline
-  def apply(
-    FileSystemIds: FileSystemIds = null,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null
-  ): DescribeFileSystemsRequest = {
+  def apply(): DescribeFileSystemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (FileSystemIds != null) __obj.updateDynamic("FileSystemIds")(FileSystemIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFileSystemsRequest]
   }
+  @scala.inline
+  implicit class DescribeFileSystemsRequestOps[Self <: DescribeFileSystemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemIdsVarargs(value: FileSystemId*): Self = this.set("FileSystemIds", js.Array(value :_*))
+    @scala.inline
+    def setFileSystemIds(value: FileSystemIds): Self = this.set("FileSystemIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSystemIds: Self = this.set("FileSystemIds", js.undefined)
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

@@ -17,22 +17,9 @@ object pool extends js.Object {
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
     poolingType: avg | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.max,
-    pad: valid | same | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    input: T | TensorLike,
-    windowShape: (js.Tuple2[Double, Double]) | Double,
-    poolingType: avg | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.max,
     pad: valid | same | Double,
-    dilations: (js.Tuple2[Double, Double]) | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    input: T | TensorLike,
-    windowShape: (js.Tuple2[Double, Double]) | Double,
-    poolingType: avg | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.max,
-    pad: valid | same | Double,
-    dilations: (js.Tuple2[Double, Double]) | Double,
-    strides: (js.Tuple2[Double, Double]) | Double
+    dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+    strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double]
   ): T = js.native
 }
 

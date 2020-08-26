@@ -281,6 +281,7 @@ trait Shader
     * @param flipY Does this texture need vertically flipping before rendering? This should usually be set to `true` if being fed from a buffer. Default false.
     */
   def setRenderToTexture(): this.type = js.native
+  def setRenderToTexture(key: js.UndefOr[scala.Nothing], flipY: Boolean): this.type = js.native
   def setRenderToTexture(key: String): this.type = js.native
   def setRenderToTexture(key: String, flipY: Boolean): this.type = js.native
   /**
@@ -296,6 +297,12 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setSampler2D(uniformKey: String, textureKey: String): this.type = js.native
+  def setSampler2D(
+    uniformKey: String,
+    textureKey: String,
+    textureIndex: js.UndefOr[scala.Nothing],
+    textureData: js.Any
+  ): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer, textureData: js.Any): this.type = js.native
   /**
@@ -324,6 +331,14 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer): this.type = js.native
+  def setSampler2DBuffer(
+    uniformKey: String,
+    texture: WebGLTexture,
+    width: integer,
+    height: integer,
+    textureIndex: js.UndefOr[scala.Nothing],
+    textureData: js.Any
+  ): this.type = js.native
   def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer, textureIndex: integer): this.type = js.native
   def setSampler2DBuffer(
     uniformKey: String,
@@ -342,9 +357,11 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setShader(key: String): this.type = js.native
+  def setShader(key: String, textures: js.UndefOr[scala.Nothing], textureData: js.Any): this.type = js.native
   def setShader(key: String, textures: js.Array[String]): this.type = js.native
   def setShader(key: String, textures: js.Array[String], textureData: js.Any): this.type = js.native
   def setShader(key: BaseShader): this.type = js.native
+  def setShader(key: BaseShader, textures: js.UndefOr[scala.Nothing], textureData: js.Any): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String]): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String], textureData: js.Any): this.type = js.native
   /**

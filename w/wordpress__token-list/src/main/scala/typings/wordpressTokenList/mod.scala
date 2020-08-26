@@ -138,7 +138,7 @@ object mod extends js.Object {
       *
       * @param {string} value New token set as string.
       */
-    def value(arg: String): js.Any = js.native
+    def value_=(arg: String): Unit = js.native
     /**
       * @param {Parameters<Array<string>['values']>} args
       */

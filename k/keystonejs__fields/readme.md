@@ -10,9 +10,9 @@ KeystoneJS Field Types including Text, Password, DateTime, Integer, and more.
 | ------------------ | :-------------: |
 | Full name          | @keystonejs/fields |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 12 |
 | # dependents       | 11 |
-| # downloads        | 17283 |
+| # downloads        | 21792 |
 | # stars            | 0 |
 
 ## Links

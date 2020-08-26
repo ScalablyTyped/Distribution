@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ^ () extends NamedRegExp {
   def this(pattern: String) = this()
   def this(pattern: RegExp) = this()
+  def this(pattern: js.UndefOr[scala.Nothing], flags: String) = this()
   def this(pattern: String, flags: String) = this()
   def this(pattern: RegExp, flags: String) = this()
 }

@@ -36,18 +36,38 @@ trait SchemaGoogleCloudDialogflowV2DetectIntentRequest extends js.Object {
 
 object SchemaGoogleCloudDialogflowV2DetectIntentRequest {
   @scala.inline
-  def apply(
-    inputAudio: String = null,
-    outputAudioConfig: SchemaGoogleCloudDialogflowV2OutputAudioConfig = null,
-    queryInput: SchemaGoogleCloudDialogflowV2QueryInput = null,
-    queryParams: SchemaGoogleCloudDialogflowV2QueryParameters = null
-  ): SchemaGoogleCloudDialogflowV2DetectIntentRequest = {
+  def apply(): SchemaGoogleCloudDialogflowV2DetectIntentRequest = {
     val __obj = js.Dynamic.literal()
-    if (inputAudio != null) __obj.updateDynamic("inputAudio")(inputAudio.asInstanceOf[js.Any])
-    if (outputAudioConfig != null) __obj.updateDynamic("outputAudioConfig")(outputAudioConfig.asInstanceOf[js.Any])
-    if (queryInput != null) __obj.updateDynamic("queryInput")(queryInput.asInstanceOf[js.Any])
-    if (queryParams != null) __obj.updateDynamic("queryParams")(queryParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2DetectIntentRequest]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudDialogflowV2DetectIntentRequestOps[Self <: SchemaGoogleCloudDialogflowV2DetectIntentRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputAudio(value: String): Self = this.set("inputAudio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAudio: Self = this.set("inputAudio", js.undefined)
+    @scala.inline
+    def setOutputAudioConfig(value: SchemaGoogleCloudDialogflowV2OutputAudioConfig): Self = this.set("outputAudioConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputAudioConfig: Self = this.set("outputAudioConfig", js.undefined)
+    @scala.inline
+    def setQueryInput(value: SchemaGoogleCloudDialogflowV2QueryInput): Self = this.set("queryInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryInput: Self = this.set("queryInput", js.undefined)
+    @scala.inline
+    def setQueryParams(value: SchemaGoogleCloudDialogflowV2QueryParameters): Self = this.set("queryParams", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQueryParams: Self = this.set("queryParams", js.undefined)
+  }
+  
 }
 

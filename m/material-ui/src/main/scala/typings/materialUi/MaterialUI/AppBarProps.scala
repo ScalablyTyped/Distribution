@@ -10,60 +10,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AppBarProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var iconClassNameLeft: js.UndefOr[String] = js.undefined
-  var iconClassNameRight: js.UndefOr[String] = js.undefined
-  var iconElementLeft: js.UndefOr[ReactElement] = js.undefined
-  var iconElementRight: js.UndefOr[ReactElement] = js.undefined
-  var iconStyleLeft: js.UndefOr[CSSProperties] = js.undefined
-  var iconStyleRight: js.UndefOr[CSSProperties] = js.undefined
-  var onLeftIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
-  var onRightIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
-  var onTitleClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
-  var showMenuIconButton: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
-  var titleStyle: js.UndefOr[CSSProperties] = js.undefined
-  var zDepth: js.UndefOr[Double] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var iconClassNameLeft: js.UndefOr[String] = js.native
+  var iconClassNameRight: js.UndefOr[String] = js.native
+  var iconElementLeft: js.UndefOr[ReactElement] = js.native
+  var iconElementRight: js.UndefOr[ReactElement] = js.native
+  var iconStyleLeft: js.UndefOr[CSSProperties] = js.native
+  var iconStyleRight: js.UndefOr[CSSProperties] = js.native
+  var onLeftIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onRightIconButtonClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onTitleClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var showMenuIconButton: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
+  var titleStyle: js.UndefOr[CSSProperties] = js.native
+  var zDepth: js.UndefOr[Double] = js.native
 }
 
 object AppBarProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    iconClassNameLeft: String = null,
-    iconClassNameRight: String = null,
-    iconElementLeft: ReactElement = null,
-    iconElementRight: ReactElement = null,
-    iconStyleLeft: CSSProperties = null,
-    iconStyleRight: CSSProperties = null,
-    onLeftIconButtonClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    onRightIconButtonClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    onTitleClick: MouseEvent[js.Object, NativeMouseEvent] => Unit = null,
-    showMenuIconButton: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    title: ReactNode = null,
-    titleStyle: CSSProperties = null,
-    zDepth: js.UndefOr[Double] = js.undefined
-  ): AppBarProps = {
+  def apply(): AppBarProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (iconClassNameLeft != null) __obj.updateDynamic("iconClassNameLeft")(iconClassNameLeft.asInstanceOf[js.Any])
-    if (iconClassNameRight != null) __obj.updateDynamic("iconClassNameRight")(iconClassNameRight.asInstanceOf[js.Any])
-    if (iconElementLeft != null) __obj.updateDynamic("iconElementLeft")(iconElementLeft.asInstanceOf[js.Any])
-    if (iconElementRight != null) __obj.updateDynamic("iconElementRight")(iconElementRight.asInstanceOf[js.Any])
-    if (iconStyleLeft != null) __obj.updateDynamic("iconStyleLeft")(iconStyleLeft.asInstanceOf[js.Any])
-    if (iconStyleRight != null) __obj.updateDynamic("iconStyleRight")(iconStyleRight.asInstanceOf[js.Any])
-    if (onLeftIconButtonClick != null) __obj.updateDynamic("onLeftIconButtonClick")(js.Any.fromFunction1(onLeftIconButtonClick))
-    if (onRightIconButtonClick != null) __obj.updateDynamic("onRightIconButtonClick")(js.Any.fromFunction1(onRightIconButtonClick))
-    if (onTitleClick != null) __obj.updateDynamic("onTitleClick")(js.Any.fromFunction1(onTitleClick))
-    if (!js.isUndefined(showMenuIconButton)) __obj.updateDynamic("showMenuIconButton")(showMenuIconButton.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(zDepth)) __obj.updateDynamic("zDepth")(zDepth.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppBarProps]
   }
+  @scala.inline
+  implicit class AppBarPropsOps[Self <: AppBarProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setIconClassNameLeft(value: String): Self = this.set("iconClassNameLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconClassNameLeft: Self = this.set("iconClassNameLeft", js.undefined)
+    @scala.inline
+    def setIconClassNameRight(value: String): Self = this.set("iconClassNameRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconClassNameRight: Self = this.set("iconClassNameRight", js.undefined)
+    @scala.inline
+    def setIconElementLeft(value: ReactElement): Self = this.set("iconElementLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconElementLeft: Self = this.set("iconElementLeft", js.undefined)
+    @scala.inline
+    def setIconElementRight(value: ReactElement): Self = this.set("iconElementRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconElementRight: Self = this.set("iconElementRight", js.undefined)
+    @scala.inline
+    def setIconStyleLeft(value: CSSProperties): Self = this.set("iconStyleLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyleLeft: Self = this.set("iconStyleLeft", js.undefined)
+    @scala.inline
+    def setIconStyleRight(value: CSSProperties): Self = this.set("iconStyleRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyleRight: Self = this.set("iconStyleRight", js.undefined)
+    @scala.inline
+    def setOnLeftIconButtonClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = this.set("onLeftIconButtonClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnLeftIconButtonClick: Self = this.set("onLeftIconButtonClick", js.undefined)
+    @scala.inline
+    def setOnRightIconButtonClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = this.set("onRightIconButtonClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnRightIconButtonClick: Self = this.set("onRightIconButtonClick", js.undefined)
+    @scala.inline
+    def setOnTitleClick(value: MouseEvent[js.Object, NativeMouseEvent] => Unit): Self = this.set("onTitleClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnTitleClick: Self = this.set("onTitleClick", js.undefined)
+    @scala.inline
+    def setShowMenuIconButton(value: Boolean): Self = this.set("showMenuIconButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowMenuIconButton: Self = this.set("showMenuIconButton", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleStyle(value: CSSProperties): Self = this.set("titleStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleStyle: Self = this.set("titleStyle", js.undefined)
+    @scala.inline
+    def setZDepth(value: Double): Self = this.set("zDepth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZDepth: Self = this.set("zDepth", js.undefined)
+  }
+  
 }
 

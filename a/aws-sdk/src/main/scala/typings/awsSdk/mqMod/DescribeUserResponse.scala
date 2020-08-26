@@ -30,20 +30,44 @@ trait DescribeUserResponse extends js.Object {
 
 object DescribeUserResponse {
   @scala.inline
-  def apply(
-    BrokerId: string = null,
-    ConsoleAccess: js.UndefOr[boolean] = js.undefined,
-    Groups: listOfString = null,
-    Pending: UserPendingChanges = null,
-    Username: string = null
-  ): DescribeUserResponse = {
+  def apply(): DescribeUserResponse = {
     val __obj = js.Dynamic.literal()
-    if (BrokerId != null) __obj.updateDynamic("BrokerId")(BrokerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsoleAccess)) __obj.updateDynamic("ConsoleAccess")(ConsoleAccess.get.asInstanceOf[js.Any])
-    if (Groups != null) __obj.updateDynamic("Groups")(Groups.asInstanceOf[js.Any])
-    if (Pending != null) __obj.updateDynamic("Pending")(Pending.asInstanceOf[js.Any])
-    if (Username != null) __obj.updateDynamic("Username")(Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserResponse]
   }
+  @scala.inline
+  implicit class DescribeUserResponseOps[Self <: DescribeUserResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokerId(value: string): Self = this.set("BrokerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokerId: Self = this.set("BrokerId", js.undefined)
+    @scala.inline
+    def setConsoleAccess(value: boolean): Self = this.set("ConsoleAccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsoleAccess: Self = this.set("ConsoleAccess", js.undefined)
+    @scala.inline
+    def setGroupsVarargs(value: string*): Self = this.set("Groups", js.Array(value :_*))
+    @scala.inline
+    def setGroups(value: listOfString): Self = this.set("Groups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroups: Self = this.set("Groups", js.undefined)
+    @scala.inline
+    def setPending(value: UserPendingChanges): Self = this.set("Pending", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePending: Self = this.set("Pending", js.undefined)
+    @scala.inline
+    def setUsername(value: string): Self = this.set("Username", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsername: Self = this.set("Username", js.undefined)
+  }
+  
 }
 

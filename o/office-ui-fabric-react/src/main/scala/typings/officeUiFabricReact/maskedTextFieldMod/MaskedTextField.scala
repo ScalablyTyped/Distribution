@@ -42,39 +42,10 @@ class MaskedTextField protected ()
   var _onMouseUp: js.Any = js.native
   var _onPaste: js.Any = js.native
   var _textField: js.Any = js.native
-  /** Gets the selection end of the text field. Returns -1 if there is no selection. */
-  /* CompleteClass */
-  override var selectionEnd: Double | Null = js.native
-  /** Gets the selection start of the text field. Returns -1 if there is no selection. */
-  /* CompleteClass */
-  override var selectionStart: Double | Null = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MMaskedTextField(newProps: ITextFieldProps): Unit = js.native
-  /** Blurs the input */
-  /* CompleteClass */
-  override def blur(): Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MMaskedTextField(): Unit = js.native
-  /** Sets focus to the input. */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
-  /** Select the value of the text field. */
-  /* CompleteClass */
-  override def select(): Unit = js.native
-  /** Sets the selection end of the text field to a specified value. */
-  /* CompleteClass */
-  override def setSelectionEnd(value: Double): Unit = js.native
-  /**
-    * Sets the start and end positions of a selection in a text field.
-    * Call with start and end set to the same value to set the cursor position.
-    * @param start - Index of the start of the selection.
-    * @param end - Index of the end of the selection.
-    */
-  /* CompleteClass */
-  override def setSelectionRange(start: Double, end: Double): Unit = js.native
-  /** Sets the selection start of the text field to a specified value. */
-  /* CompleteClass */
-  override def setSelectionStart(value: Double): Unit = js.native
   def setValue(newValue: String): Unit = js.native
 }
 

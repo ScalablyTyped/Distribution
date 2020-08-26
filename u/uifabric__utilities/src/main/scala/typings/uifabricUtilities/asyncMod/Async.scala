@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Async () extends js.Object {
   def this(parent: js.Object) = this()
+  def this(parent: js.UndefOr[scala.Nothing], onError: js.Function1[/* e */ js.Any, Unit]) = this()
   def this(parent: js.Object, onError: js.Function1[/* e */ js.Any, Unit]) = this()
   var _animationFrameIds: js.Any = js.native
   var _immediateIds: js.Any = js.native
@@ -56,6 +57,7 @@ class Async () extends js.Object {
     * @returns The new debounced function.
     */
   def debounce[T /* <: js.Function */](func: T): ICancelable[T] with js.Function0[Unit] = js.native
+  def debounce[T /* <: js.Function */](func: T, wait: js.UndefOr[scala.Nothing], options: MaxWait): ICancelable[T] with js.Function0[Unit] = js.native
   def debounce[T /* <: js.Function */](func: T, wait: Double): ICancelable[T] with js.Function0[Unit] = js.native
   def debounce[T /* <: js.Function */](func: T, wait: Double, options: MaxWait): ICancelable[T] with js.Function0[Unit] = js.native
   /**
@@ -101,6 +103,7 @@ class Async () extends js.Object {
     * @returns The new throttled function.
     */
   def throttle[T /* <: js.Function */](func: T): T | js.Function0[Unit] = js.native
+  def throttle[T /* <: js.Function */](func: T, wait: js.UndefOr[scala.Nothing], options: Leading): T | js.Function0[Unit] = js.native
   def throttle[T /* <: js.Function */](func: T, wait: Double): T | js.Function0[Unit] = js.native
   def throttle[T /* <: js.Function */](func: T, wait: Double, options: Leading): T | js.Function0[Unit] = js.native
 }

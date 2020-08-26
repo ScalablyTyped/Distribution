@@ -12,7 +12,7 @@ A read/write lock implementation for Node.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 44 |
-| # downloads        | 374093 |
+| # downloads        | 388463 |
 | # stars            | 4 |
 
 ## Links

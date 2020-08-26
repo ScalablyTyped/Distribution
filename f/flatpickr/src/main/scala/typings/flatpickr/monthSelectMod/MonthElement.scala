@@ -440,7 +440,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.HTMLSpanElement & {  dateObj  :flatpickr.flatpickr/dist/types/globals.<global>.Date,   $i  :number} */
+/* Inlined std.HTMLSpanElement & {  dateObj :flatpickr.flatpickr/dist/types/globals.<global>.Date,   $i :number} */
 @js.native
 trait MonthElement extends js.Object {
   @JSName("$i")
@@ -913,6 +913,19 @@ trait MonthElement extends js.Object {
   var textContent: String | Null = js.native
   var title: String = js.native
   var translate: Boolean = js.native
+  /**
+    * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
+    * 
+    * The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
+    * 
+    * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
+    * 
+    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
+    * 
+    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
+    * 
+    * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    */
   def addEventListener(`type`: String): Unit = js.native
   def addEventListener(`type`: String, listener: Null, options: Boolean): Unit = js.native
   def addEventListener(`type`: String, listener: Null, options: AddEventListenerOptions): Unit = js.native
@@ -2631,10 +2644,10 @@ trait MonthElement extends js.Object {
     * Returns a bitmask indicating the position of other relative to node.
     */
   def compareDocumentPosition(other: Node): Double = js.native
-  def contains(): Boolean = js.native
   /**
     * Returns true if other is an inclusive descendant of node, and false otherwise.
     */
+  def contains(): Boolean = js.native
   def contains(other: Node): Boolean = js.native
   /**
     * Dispatches a synthetic event event to target and returns true if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
@@ -3044,10 +3057,10 @@ trait MonthElement extends js.Object {
   def insertBefore[T /* <: Node */](newChild: T, refChild: Node): T = js.native
   def isDefaultNamespace(): Boolean = js.native
   def isDefaultNamespace(namespace: String): Boolean = js.native
-  def isEqualNode(): Boolean = js.native
   /**
     * Returns whether node and otherNode have the same properties.
     */
+  def isEqualNode(): Boolean = js.native
   def isEqualNode(otherNode: Node): Boolean = js.native
   def isSameNode(): Boolean = js.native
   def isSameNode(otherNode: Node): Boolean = js.native
@@ -3782,6 +3795,9 @@ trait MonthElement extends js.Object {
   def removeAttributeNS(namespace: Null, localName: String): Unit = js.native
   def removeAttributeNode(attr: Attr): Attr = js.native
   def removeChild[T /* <: Node */](oldChild: T): T = js.native
+  /**
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    */
   def removeEventListener(`type`: String): Unit = js.native
   def removeEventListener(`type`: String, callback: Null, options: Boolean): Unit = js.native
   def removeEventListener(`type`: String, callback: Null, options: EventListenerOptions): Unit = js.native

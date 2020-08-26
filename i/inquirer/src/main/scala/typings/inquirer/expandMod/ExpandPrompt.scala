@@ -103,6 +103,7 @@ trait ExpandPrompt[TQuestion /* <: Question */]
     * The hint to render.
     */
   /* protected */ def render(): Unit = js.native
+  /* protected */ def render(error: js.UndefOr[scala.Nothing], hint: String): Unit = js.native
   /* protected */ def render(error: String): Unit = js.native
   /* protected */ def render(error: String, hint: String): Unit = js.native
   /**

@@ -23,7 +23,7 @@ trait ModifyReplicationGroupMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.native
   /**
-    * Determines whether a read replica is automatically promoted to read/write primary if the existing primary encounters a failure. Valid values: true | false  Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
+    * Determines whether a read replica is automatically promoted to read/write primary if the existing primary encounters a failure. Valid values: true | false 
     */
   var AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.native
   /**
@@ -94,51 +94,108 @@ trait ModifyReplicationGroupMessage extends js.Object {
 
 object ModifyReplicationGroupMessage {
   @scala.inline
-  def apply(
-    ReplicationGroupId: String,
-    ApplyImmediately: js.UndefOr[Boolean] = js.undefined,
-    AuthToken: String = null,
-    AuthTokenUpdateStrategy: AuthTokenUpdateStrategyType = null,
-    AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined,
-    AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    CacheNodeType: String = null,
-    CacheParameterGroupName: String = null,
-    CacheSecurityGroupNames: CacheSecurityGroupNameList = null,
-    EngineVersion: String = null,
-    MultiAZEnabled: js.UndefOr[BooleanOptional] = js.undefined,
-    NodeGroupId: String = null,
-    NotificationTopicArn: String = null,
-    NotificationTopicStatus: String = null,
-    PreferredMaintenanceWindow: String = null,
-    PrimaryClusterId: String = null,
-    ReplicationGroupDescription: String = null,
-    SecurityGroupIds: SecurityGroupIdsList = null,
-    SnapshotRetentionLimit: js.UndefOr[IntegerOptional] = js.undefined,
-    SnapshotWindow: String = null,
-    SnapshottingClusterId: String = null
-  ): ModifyReplicationGroupMessage = {
+  def apply(ReplicationGroupId: String): ModifyReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ApplyImmediately)) __obj.updateDynamic("ApplyImmediately")(ApplyImmediately.get.asInstanceOf[js.Any])
-    if (AuthToken != null) __obj.updateDynamic("AuthToken")(AuthToken.asInstanceOf[js.Any])
-    if (AuthTokenUpdateStrategy != null) __obj.updateDynamic("AuthTokenUpdateStrategy")(AuthTokenUpdateStrategy.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoMinorVersionUpgrade)) __obj.updateDynamic("AutoMinorVersionUpgrade")(AutoMinorVersionUpgrade.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutomaticFailoverEnabled)) __obj.updateDynamic("AutomaticFailoverEnabled")(AutomaticFailoverEnabled.get.asInstanceOf[js.Any])
-    if (CacheNodeType != null) __obj.updateDynamic("CacheNodeType")(CacheNodeType.asInstanceOf[js.Any])
-    if (CacheParameterGroupName != null) __obj.updateDynamic("CacheParameterGroupName")(CacheParameterGroupName.asInstanceOf[js.Any])
-    if (CacheSecurityGroupNames != null) __obj.updateDynamic("CacheSecurityGroupNames")(CacheSecurityGroupNames.asInstanceOf[js.Any])
-    if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(MultiAZEnabled)) __obj.updateDynamic("MultiAZEnabled")(MultiAZEnabled.get.asInstanceOf[js.Any])
-    if (NodeGroupId != null) __obj.updateDynamic("NodeGroupId")(NodeGroupId.asInstanceOf[js.Any])
-    if (NotificationTopicArn != null) __obj.updateDynamic("NotificationTopicArn")(NotificationTopicArn.asInstanceOf[js.Any])
-    if (NotificationTopicStatus != null) __obj.updateDynamic("NotificationTopicStatus")(NotificationTopicStatus.asInstanceOf[js.Any])
-    if (PreferredMaintenanceWindow != null) __obj.updateDynamic("PreferredMaintenanceWindow")(PreferredMaintenanceWindow.asInstanceOf[js.Any])
-    if (PrimaryClusterId != null) __obj.updateDynamic("PrimaryClusterId")(PrimaryClusterId.asInstanceOf[js.Any])
-    if (ReplicationGroupDescription != null) __obj.updateDynamic("ReplicationGroupDescription")(ReplicationGroupDescription.asInstanceOf[js.Any])
-    if (SecurityGroupIds != null) __obj.updateDynamic("SecurityGroupIds")(SecurityGroupIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(SnapshotRetentionLimit)) __obj.updateDynamic("SnapshotRetentionLimit")(SnapshotRetentionLimit.get.asInstanceOf[js.Any])
-    if (SnapshotWindow != null) __obj.updateDynamic("SnapshotWindow")(SnapshotWindow.asInstanceOf[js.Any])
-    if (SnapshottingClusterId != null) __obj.updateDynamic("SnapshottingClusterId")(SnapshottingClusterId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyReplicationGroupMessage]
   }
+  @scala.inline
+  implicit class ModifyReplicationGroupMessageOps[Self <: ModifyReplicationGroupMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setReplicationGroupId(value: String): Self = this.set("ReplicationGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setApplyImmediately(value: Boolean): Self = this.set("ApplyImmediately", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplyImmediately: Self = this.set("ApplyImmediately", js.undefined)
+    @scala.inline
+    def setAuthToken(value: String): Self = this.set("AuthToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthToken: Self = this.set("AuthToken", js.undefined)
+    @scala.inline
+    def setAuthTokenUpdateStrategy(value: AuthTokenUpdateStrategyType): Self = this.set("AuthTokenUpdateStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthTokenUpdateStrategy: Self = this.set("AuthTokenUpdateStrategy", js.undefined)
+    @scala.inline
+    def setAutoMinorVersionUpgrade(value: BooleanOptional): Self = this.set("AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMinorVersionUpgrade: Self = this.set("AutoMinorVersionUpgrade", js.undefined)
+    @scala.inline
+    def setAutomaticFailoverEnabled(value: BooleanOptional): Self = this.set("AutomaticFailoverEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutomaticFailoverEnabled: Self = this.set("AutomaticFailoverEnabled", js.undefined)
+    @scala.inline
+    def setCacheNodeType(value: String): Self = this.set("CacheNodeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheNodeType: Self = this.set("CacheNodeType", js.undefined)
+    @scala.inline
+    def setCacheParameterGroupName(value: String): Self = this.set("CacheParameterGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheParameterGroupName: Self = this.set("CacheParameterGroupName", js.undefined)
+    @scala.inline
+    def setCacheSecurityGroupNamesVarargs(value: String*): Self = this.set("CacheSecurityGroupNames", js.Array(value :_*))
+    @scala.inline
+    def setCacheSecurityGroupNames(value: CacheSecurityGroupNameList): Self = this.set("CacheSecurityGroupNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSecurityGroupNames: Self = this.set("CacheSecurityGroupNames", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: String): Self = this.set("EngineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("EngineVersion", js.undefined)
+    @scala.inline
+    def setMultiAZEnabled(value: BooleanOptional): Self = this.set("MultiAZEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiAZEnabled: Self = this.set("MultiAZEnabled", js.undefined)
+    @scala.inline
+    def setNodeGroupId(value: String): Self = this.set("NodeGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNodeGroupId: Self = this.set("NodeGroupId", js.undefined)
+    @scala.inline
+    def setNotificationTopicArn(value: String): Self = this.set("NotificationTopicArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTopicArn: Self = this.set("NotificationTopicArn", js.undefined)
+    @scala.inline
+    def setNotificationTopicStatus(value: String): Self = this.set("NotificationTopicStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTopicStatus: Self = this.set("NotificationTopicStatus", js.undefined)
+    @scala.inline
+    def setPreferredMaintenanceWindow(value: String): Self = this.set("PreferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreferredMaintenanceWindow: Self = this.set("PreferredMaintenanceWindow", js.undefined)
+    @scala.inline
+    def setPrimaryClusterId(value: String): Self = this.set("PrimaryClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrimaryClusterId: Self = this.set("PrimaryClusterId", js.undefined)
+    @scala.inline
+    def setReplicationGroupDescription(value: String): Self = this.set("ReplicationGroupDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupDescription: Self = this.set("ReplicationGroupDescription", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: String*): Self = this.set("SecurityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: SecurityGroupIdsList): Self = this.set("SecurityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("SecurityGroupIds", js.undefined)
+    @scala.inline
+    def setSnapshotRetentionLimit(value: IntegerOptional): Self = this.set("SnapshotRetentionLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotRetentionLimit: Self = this.set("SnapshotRetentionLimit", js.undefined)
+    @scala.inline
+    def setSnapshotWindow(value: String): Self = this.set("SnapshotWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotWindow: Self = this.set("SnapshotWindow", js.undefined)
+    @scala.inline
+    def setSnapshottingClusterId(value: String): Self = this.set("SnapshottingClusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshottingClusterId: Self = this.set("SnapshottingClusterId", js.undefined)
+  }
+  
 }
 

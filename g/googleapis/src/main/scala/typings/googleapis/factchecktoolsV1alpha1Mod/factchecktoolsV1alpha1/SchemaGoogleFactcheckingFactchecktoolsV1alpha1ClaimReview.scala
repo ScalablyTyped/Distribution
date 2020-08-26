@@ -38,22 +38,46 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview extends js.Objec
 
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview {
   @scala.inline
-  def apply(
-    languageCode: String = null,
-    publisher: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher = null,
-    reviewDate: String = null,
-    textualRating: String = null,
-    title: String = null,
-    url: String = null
-  ): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview = {
+  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview = {
     val __obj = js.Dynamic.literal()
-    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (reviewDate != null) __obj.updateDynamic("reviewDate")(reviewDate.asInstanceOf[js.Any])
-    if (textualRating != null) __obj.updateDynamic("textualRating")(textualRating.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview]
   }
+  @scala.inline
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReviewOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimReview] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguageCode(value: String): Self = this.set("languageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("languageCode", js.undefined)
+    @scala.inline
+    def setPublisher(value: SchemaGoogleFactcheckingFactchecktoolsV1alpha1Publisher): Self = this.set("publisher", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublisher: Self = this.set("publisher", js.undefined)
+    @scala.inline
+    def setReviewDate(value: String): Self = this.set("reviewDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReviewDate: Self = this.set("reviewDate", js.undefined)
+    @scala.inline
+    def setTextualRating(value: String): Self = this.set("textualRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextualRating: Self = this.set("textualRating", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

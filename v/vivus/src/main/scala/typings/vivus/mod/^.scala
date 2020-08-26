@@ -17,7 +17,17 @@ class ^ protected () extends Vivus {
   def this(element: HTMLElement) = this()
   def this(element: String, options: VivusOptions) = this()
   def this(element: HTMLElement, options: VivusOptions) = this()
+  def this(
+    element: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* vivusInstance */ Vivus, Unit]
+  ) = this()
   def this(element: String, options: VivusOptions, callback: js.Function1[/* vivusInstance */ Vivus, Unit]) = this()
+  def this(
+    element: HTMLElement,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* vivusInstance */ Vivus, Unit]
+  ) = this()
   def this(
     element: HTMLElement,
     options: VivusOptions,

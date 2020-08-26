@@ -33,14 +33,37 @@ object GetMergeCommitInput {
   def apply(
     destinationCommitSpecifier: CommitName,
     repositoryName: RepositoryName,
-    sourceCommitSpecifier: CommitName,
-    conflictDetailLevel: ConflictDetailLevelTypeEnum = null,
-    conflictResolutionStrategy: ConflictResolutionStrategyTypeEnum = null
+    sourceCommitSpecifier: CommitName
   ): GetMergeCommitInput = {
     val __obj = js.Dynamic.literal(destinationCommitSpecifier = destinationCommitSpecifier.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any], sourceCommitSpecifier = sourceCommitSpecifier.asInstanceOf[js.Any])
-    if (conflictDetailLevel != null) __obj.updateDynamic("conflictDetailLevel")(conflictDetailLevel.asInstanceOf[js.Any])
-    if (conflictResolutionStrategy != null) __obj.updateDynamic("conflictResolutionStrategy")(conflictResolutionStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMergeCommitInput]
   }
+  @scala.inline
+  implicit class GetMergeCommitInputOps[Self <: GetMergeCommitInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationCommitSpecifier(value: CommitName): Self = this.set("destinationCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSourceCommitSpecifier(value: CommitName): Self = this.set("sourceCommitSpecifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConflictDetailLevel(value: ConflictDetailLevelTypeEnum): Self = this.set("conflictDetailLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictDetailLevel: Self = this.set("conflictDetailLevel", js.undefined)
+    @scala.inline
+    def setConflictResolutionStrategy(value: ConflictResolutionStrategyTypeEnum): Self = this.set("conflictResolutionStrategy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConflictResolutionStrategy: Self = this.set("conflictResolutionStrategy", js.undefined)
+  }
+  
 }
 

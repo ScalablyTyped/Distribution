@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@tensorflow/tfjs-layers/dist/exports_layers", "Layer")
 @js.native
-abstract class Layer protected ()
+abstract class Layer ()
   extends typings.tensorflowTfjsLayers.topologyMod.Layer {
   def this(args: LayerArgs) = this()
 }

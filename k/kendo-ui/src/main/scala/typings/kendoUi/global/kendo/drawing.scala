@@ -50,22 +50,12 @@ object drawing extends js.Object {
   class Gradient ()
     extends typings.kendoUi.kendo.drawing.Gradient {
     def this(options: GradientOptions) = this()
-    /* CompleteClass */
-    override var options: GradientOptions = js.native
-    /* CompleteClass */
-    override var stops: js.Any = js.native
-    /* CompleteClass */
-    override def addStop(offset: Double, color: String, opacity: Double): typings.kendoUi.kendo.drawing.GradientStop = js.native
-    /* CompleteClass */
-    override def removeStop(stop: typings.kendoUi.kendo.drawing.GradientStop): Unit = js.native
   }
   
   @js.native
   class GradientStop ()
     extends typings.kendoUi.kendo.drawing.GradientStop {
     def this(options: GradientStopOptions) = this()
-    /* CompleteClass */
-    override var options: GradientStopOptions = js.native
   }
   
   @js.native
@@ -91,14 +81,6 @@ object drawing extends js.Object {
   class LinearGradient ()
     extends typings.kendoUi.kendo.drawing.LinearGradient {
     def this(options: LinearGradientOptions) = this()
-    /* CompleteClass */
-    override var options: GradientOptions = js.native
-    /* CompleteClass */
-    override var stops: js.Any = js.native
-    /* CompleteClass */
-    override def addStop(offset: Double, color: String, opacity: Double): typings.kendoUi.kendo.drawing.GradientStop = js.native
-    /* CompleteClass */
-    override def removeStop(stop: typings.kendoUi.kendo.drawing.GradientStop): Unit = js.native
   }
   
   @js.native
@@ -111,14 +93,6 @@ object drawing extends js.Object {
   class OptionsStore ()
     extends typings.kendoUi.kendo.drawing.OptionsStore {
     def this(options: OptionsStoreOptions) = this()
-    /* CompleteClass */
-    override var observer: js.Any = js.native
-    /* CompleteClass */
-    override var options: OptionsStoreOptions = js.native
-    /* CompleteClass */
-    override def get(field: String): js.Any = js.native
-    /* CompleteClass */
-    override def set(field: String, value: js.Any): Unit = js.native
   }
   
   @js.native
@@ -131,14 +105,6 @@ object drawing extends js.Object {
   class RadialGradient ()
     extends typings.kendoUi.kendo.drawing.RadialGradient {
     def this(options: RadialGradientOptions) = this()
-    /* CompleteClass */
-    override var options: GradientOptions = js.native
-    /* CompleteClass */
-    override var stops: js.Any = js.native
-    /* CompleteClass */
-    override def addStop(offset: Double, color: String, opacity: Double): typings.kendoUi.kendo.drawing.GradientStop = js.native
-    /* CompleteClass */
-    override def removeStop(stop: typings.kendoUi.kendo.drawing.GradientStop): Unit = js.native
   }
   
   @js.native
@@ -206,6 +172,12 @@ object drawing extends js.Object {
   @js.native
   object pdf extends js.Object {
     def saveAs(group: typings.kendoUi.kendo.drawing.Group, fileName: String): Unit = js.native
+    def saveAs(
+      group: typings.kendoUi.kendo.drawing.Group,
+      fileName: String,
+      proxyUrl: js.UndefOr[scala.Nothing],
+      callback: js.Function
+    ): Unit = js.native
     def saveAs(group: typings.kendoUi.kendo.drawing.Group, fileName: String, proxyUrl: String): Unit = js.native
     def saveAs(
       group: typings.kendoUi.kendo.drawing.Group,

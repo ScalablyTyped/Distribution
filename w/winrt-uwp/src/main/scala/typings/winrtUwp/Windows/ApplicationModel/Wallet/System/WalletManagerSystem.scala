@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides a static method to get an instance of the system wallet store for this app. */
+@js.native
 trait WalletManagerSystem extends js.Object
 

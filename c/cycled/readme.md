@@ -1,7 +1,7 @@
 
 # Scala.js typings for cycled
 
-Typings are for version 1.1.0
+Typings are for version 1.2.0
 
 ## Library description:
 Cycle through the items of an array
@@ -12,7 +12,7 @@ Cycle through the items of an array
 | Keywords           | cycle, cycled, iterable, iterables, array, item, next, previous, loop, repeat, value, values, iterator |
 | # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 8881 |
+| # downloads        | 10262 |
 | # stars            | 0 |
 
 ## Links

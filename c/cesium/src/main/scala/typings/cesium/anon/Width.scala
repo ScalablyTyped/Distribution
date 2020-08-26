@@ -5,33 +5,60 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Width extends js.Object {
-  var id: js.UndefOr[js.Any] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var material: js.UndefOr[typings.cesium.mod.Material] = js.undefined
-  var positions: js.UndefOr[js.Array[Cartesian3]] = js.undefined
-  var show: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var id: js.UndefOr[js.Any] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var material: js.UndefOr[typings.cesium.mod.Material] = js.native
+  var positions: js.UndefOr[js.Array[Cartesian3]] = js.native
+  var show: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Width {
   @scala.inline
-  def apply(
-    id: js.Any = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    material: typings.cesium.mod.Material = null,
-    positions: js.Array[Cartesian3] = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): Width = {
+  def apply(): Width = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (positions != null) __obj.updateDynamic("positions")(positions.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Width]
   }
+  @scala.inline
+  implicit class WidthOps[Self <: Width] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: js.Any): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMaterial(value: typings.cesium.mod.Material): Self = this.set("material", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaterial: Self = this.set("material", js.undefined)
+    @scala.inline
+    def setPositionsVarargs(value: Cartesian3*): Self = this.set("positions", js.Array(value :_*))
+    @scala.inline
+    def setPositions(value: js.Array[Cartesian3]): Self = this.set("positions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositions: Self = this.set("positions", js.undefined)
+    @scala.inline
+    def setShow(value: Boolean): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

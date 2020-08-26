@@ -4,31 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReadOptions extends Options {
-  var encoding: js.UndefOr[String] = js.undefined
-  var flag: js.UndefOr[String] = js.undefined
+  var encoding: js.UndefOr[String] = js.native
+  var flag: js.UndefOr[String] = js.native
 }
 
 object ReadOptions {
   @scala.inline
-  def apply(
-    cwd: String = null,
-    dir: String = null,
-    dot: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    flag: String = null,
-    home: js.UndefOr[Boolean] = js.undefined,
-    module: js.UndefOr[Boolean] = js.undefined
-  ): ReadOptions = {
+  def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot.get.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
-    if (!js.isUndefined(home)) __obj.updateDynamic("home")(home.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
+  @scala.inline
+  implicit class ReadOptionsOps[Self <: ReadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEncoding(value: String): Self = this.set("encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("encoding", js.undefined)
+    @scala.inline
+    def setFlag(value: String): Self = this.set("flag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlag: Self = this.set("flag", js.undefined)
+  }
+  
 }
 

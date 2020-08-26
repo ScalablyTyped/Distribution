@@ -25,16 +25,34 @@ trait SchemaGdataDiffUploadRequest extends js.Object {
 
 object SchemaGdataDiffUploadRequest {
   @scala.inline
-  def apply(
-    checksumsInfo: SchemaGdataCompositeMedia = null,
-    objectInfo: SchemaGdataCompositeMedia = null,
-    objectVersion: String = null
-  ): SchemaGdataDiffUploadRequest = {
+  def apply(): SchemaGdataDiffUploadRequest = {
     val __obj = js.Dynamic.literal()
-    if (checksumsInfo != null) __obj.updateDynamic("checksumsInfo")(checksumsInfo.asInstanceOf[js.Any])
-    if (objectInfo != null) __obj.updateDynamic("objectInfo")(objectInfo.asInstanceOf[js.Any])
-    if (objectVersion != null) __obj.updateDynamic("objectVersion")(objectVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGdataDiffUploadRequest]
   }
+  @scala.inline
+  implicit class SchemaGdataDiffUploadRequestOps[Self <: SchemaGdataDiffUploadRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChecksumsInfo(value: SchemaGdataCompositeMedia): Self = this.set("checksumsInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksumsInfo: Self = this.set("checksumsInfo", js.undefined)
+    @scala.inline
+    def setObjectInfo(value: SchemaGdataCompositeMedia): Self = this.set("objectInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectInfo: Self = this.set("objectInfo", js.undefined)
+    @scala.inline
+    def setObjectVersion(value: String): Self = this.set("objectVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectVersion: Self = this.set("objectVersion", js.undefined)
+  }
+  
 }
 

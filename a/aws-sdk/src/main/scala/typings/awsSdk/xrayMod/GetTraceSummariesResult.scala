@@ -26,18 +26,40 @@ trait GetTraceSummariesResult extends js.Object {
 
 object GetTraceSummariesResult {
   @scala.inline
-  def apply(
-    ApproximateTime: Timestamp = null,
-    NextToken: String = null,
-    TraceSummaries: TraceSummaryList = null,
-    TracesProcessedCount: js.UndefOr[NullableLong] = js.undefined
-  ): GetTraceSummariesResult = {
+  def apply(): GetTraceSummariesResult = {
     val __obj = js.Dynamic.literal()
-    if (ApproximateTime != null) __obj.updateDynamic("ApproximateTime")(ApproximateTime.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TraceSummaries != null) __obj.updateDynamic("TraceSummaries")(TraceSummaries.asInstanceOf[js.Any])
-    if (!js.isUndefined(TracesProcessedCount)) __obj.updateDynamic("TracesProcessedCount")(TracesProcessedCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesResult]
   }
+  @scala.inline
+  implicit class GetTraceSummariesResultOps[Self <: GetTraceSummariesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApproximateTime(value: Timestamp): Self = this.set("ApproximateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApproximateTime: Self = this.set("ApproximateTime", js.undefined)
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTraceSummariesVarargs(value: TraceSummary*): Self = this.set("TraceSummaries", js.Array(value :_*))
+    @scala.inline
+    def setTraceSummaries(value: TraceSummaryList): Self = this.set("TraceSummaries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraceSummaries: Self = this.set("TraceSummaries", js.undefined)
+    @scala.inline
+    def setTracesProcessedCount(value: NullableLong): Self = this.set("TracesProcessedCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTracesProcessedCount: Self = this.set("TracesProcessedCount", js.undefined)
+  }
+  
 }
 

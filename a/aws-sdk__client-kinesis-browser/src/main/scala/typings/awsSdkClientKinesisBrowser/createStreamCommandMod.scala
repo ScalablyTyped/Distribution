@@ -26,16 +26,9 @@ object createStreamCommandMod extends js.Object {
           Blob
         ] {
     def this(input: CreateStreamInput) = this()
-    /* CompleteClass */
-    override val input: CreateStreamInput = js.native
     val middlewareStack: MiddlewareStack[CreateStreamInput, CreateStreamOutput, Blob] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: KinesisResolvedConfiguration
-    ): Handler[CreateStreamInput, CreateStreamOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: KinesisResolvedConfiguration
     ): Handler[CreateStreamInput, CreateStreamOutput] = js.native
   }

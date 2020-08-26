@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.WebUI.SuspendingDeferral")
 @js.native
 abstract class SuspendingDeferral ()
-  extends typings.winrtUwp.Windows.UI.WebUI.SuspendingDeferral {
-  /** Notifies the system that the app has saved its data and is ready to be suspended. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.UI.WebUI.SuspendingDeferral
 

@@ -7,28 +7,49 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ISerializableCipherCfg extends js.Object {
-  var format: js.UndefOr[IFormatter] = js.undefined
+  var format: js.UndefOr[IFormatter] = js.native
   //default OpenSSLFormatter
-  var iv: js.UndefOr[WordArray] = js.undefined
-  var mode: js.UndefOr[IBlockCipherModeImpl] = js.undefined
-  var padding: js.UndefOr[IPaddingImpl] = js.undefined
+  var iv: js.UndefOr[WordArray] = js.native
+  var mode: js.UndefOr[IBlockCipherModeImpl] = js.native
+  var padding: js.UndefOr[IPaddingImpl] = js.native
 }
 
 object ISerializableCipherCfg {
   @scala.inline
-  def apply(
-    format: IFormatter = null,
-    iv: WordArray = null,
-    mode: IBlockCipherModeImpl = null,
-    padding: IPaddingImpl = null
-  ): ISerializableCipherCfg = {
+  def apply(): ISerializableCipherCfg = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISerializableCipherCfg]
   }
+  @scala.inline
+  implicit class ISerializableCipherCfgOps[Self <: ISerializableCipherCfg] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: IFormatter): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setIv(value: WordArray): Self = this.set("iv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIv: Self = this.set("iv", js.undefined)
+    @scala.inline
+    def setMode(value: IBlockCipherModeImpl): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setPadding(value: IPaddingImpl): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+  }
+  
 }
 

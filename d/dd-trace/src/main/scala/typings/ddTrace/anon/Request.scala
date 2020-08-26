@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Request extends js.Object {
   /**
     * Hook to execute just before the request span finishes.
@@ -18,17 +19,33 @@ trait Request extends js.Object {
       /* res */ js.UndefOr[ServerResponse], 
       _
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object Request {
   @scala.inline
-  def apply(
-    request: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse]) => _ = null
-  ): Request = {
+  def apply(): Request = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(js.Any.fromFunction3(request))
     __obj.asInstanceOf[Request]
   }
+  @scala.inline
+  implicit class RequestOps[Self <: Request] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRequest(
+      value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse]) => _
+    ): Self = this.set("request", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteRequest: Self = this.set("request", js.undefined)
+  }
+  
 }
 

@@ -40,6 +40,11 @@ trait Navigator
   ): Unit = js.native
   def getVRDisplays(): js.Promise[js.Array[VRDisplay]] = js.native
   def msLaunchUri(uri: java.lang.String): Unit = js.native
+  def msLaunchUri(
+    uri: java.lang.String,
+    successCallback: js.UndefOr[scala.Nothing],
+    noHandlerCallback: MSLaunchUriCallback
+  ): Unit = js.native
   def msLaunchUri(uri: java.lang.String, successCallback: MSLaunchUriCallback): Unit = js.native
   def msLaunchUri(
     uri: java.lang.String,
@@ -48,6 +53,7 @@ trait Navigator
   ): Unit = js.native
   def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: js.Array[MediaKeySystemConfiguration]): js.Promise[MediaKeySystemAccess] = js.native
   def requestMediaKeySystemAccess(keySystem: java.lang.String, supportedConfigurations: Iterable[MediaKeySystemConfiguration]): js.Promise[MediaKeySystemAccess] = js.native
+  def sendBeacon(url: java.lang.String, data: BodyInit): scala.Boolean = js.native
   def share(): js.Promise[Unit] = js.native
   def share(data: ShareData): js.Promise[Unit] = js.native
   def vibrate(pattern: js.Array[Double]): scala.Boolean = js.native

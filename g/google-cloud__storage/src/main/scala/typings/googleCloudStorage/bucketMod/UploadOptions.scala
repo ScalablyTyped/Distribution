@@ -1,58 +1,54 @@
 package typings.googleCloudStorage.bucketMod
 
-import typings.googleCloudCommon.serviceObjectMod.Metadata
 import typings.googleCloudStorage.fileMod.CreateWriteStreamOptions
 import typings.googleCloudStorage.fileMod.File
-import typings.googleCloudStorage.fileMod.PredefinedAcl
 import typings.node.Buffer
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UploadOptions extends CreateWriteStreamOptions {
-  var destination: js.UndefOr[String | File] = js.undefined
-  var encryptionKey: js.UndefOr[String | Buffer] = js.undefined
-  var kmsKeyName: js.UndefOr[String] = js.undefined
+  var destination: js.UndefOr[String | File] = js.native
+  var encryptionKey: js.UndefOr[String | Buffer] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.native
+  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
 }
 
 object UploadOptions {
   @scala.inline
-  def apply(
-    configPath: String = null,
-    contentType: String = null,
-    destination: String | File = null,
-    encryptionKey: String | Buffer = null,
-    gzip: String | Boolean = null,
-    kmsKeyName: String = null,
-    metadata: Metadata = null,
-    offset: js.UndefOr[Double] = js.undefined,
-    origin: String = null,
-    predefinedAcl: PredefinedAcl = null,
-    `private`: js.UndefOr[Boolean] = js.undefined,
-    public: js.UndefOr[Boolean] = js.undefined,
-    resumable: js.UndefOr[Boolean] = js.undefined,
-    uri: String = null,
-    userProject: String = null,
-    validation: String | Boolean = null
-  ): UploadOptions = {
+  def apply(): UploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (configPath != null) __obj.updateDynamic("configPath")(configPath.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
-    if (gzip != null) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(resumable)) __obj.updateDynamic("resumable")(resumable.get.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadOptions]
   }
+  @scala.inline
+  implicit class UploadOptionsOps[Self <: UploadOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestination(value: String | File): Self = this.set("destination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestination: Self = this.set("destination", js.undefined)
+    @scala.inline
+    def setEncryptionKey(value: String | Buffer): Self = this.set("encryptionKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionKey: Self = this.set("encryptionKey", js.undefined)
+    @scala.inline
+    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
+    @scala.inline
+    def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = this.set("onUploadProgress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnUploadProgress: Self = this.set("onUploadProgress", js.undefined)
+  }
+  
 }
 

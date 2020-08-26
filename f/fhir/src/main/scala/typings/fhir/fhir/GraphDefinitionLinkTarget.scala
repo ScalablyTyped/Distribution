@@ -7,63 +7,79 @@ import scala.scalajs.js.annotation._
 /**
   * Potential target for the link
   */
+@js.native
 trait GraphDefinitionLinkTarget extends BackboneElement {
   /**
     * Contains extended information for property 'profile'.
     */
-  var _profile: js.UndefOr[Element] = js.undefined
+  var _profile: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.undefined
+  var _type: js.UndefOr[Element] = js.native
   /**
     * Compartment Consistency Rules
     */
-  var compartment: js.UndefOr[js.Array[GraphDefinitionLinkTargetCompartment]] = js.undefined
+  var compartment: js.UndefOr[js.Array[GraphDefinitionLinkTargetCompartment]] = js.native
   /**
     * Additional links from target resource
     */
-  var link: js.UndefOr[js.Array[GraphDefinitionLink]] = js.undefined
+  var link: js.UndefOr[js.Array[GraphDefinitionLink]] = js.native
   /**
     * Profile for the target resource
     */
-  var profile: js.UndefOr[uri] = js.undefined
+  var profile: js.UndefOr[uri] = js.native
   /**
     * Type of resource this link refers to
     */
-  var `type`: code
+  var `type`: code = js.native
 }
 
 object GraphDefinitionLinkTarget {
   @scala.inline
-  def apply(
-    `type`: code,
-    _fhir_comments: js.Array[Element] = null,
-    _id: Element = null,
-    _profile: Element = null,
-    _type: Element = null,
-    compartment: js.Array[GraphDefinitionLinkTargetCompartment] = null,
-    extension: js.Array[Extension] = null,
-    fhir_comments: js.Array[String] = null,
-    id: String = null,
-    link: js.Array[GraphDefinitionLink] = null,
-    modifierExtension: js.Array[Extension] = null,
-    profile: uri = null
-  ): GraphDefinitionLinkTarget = {
+  def apply(`type`: code): GraphDefinitionLinkTarget = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_profile != null) __obj.updateDynamic("_profile")(_profile.asInstanceOf[js.Any])
-    if (_type != null) __obj.updateDynamic("_type")(_type.asInstanceOf[js.Any])
-    if (compartment != null) __obj.updateDynamic("compartment")(compartment.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphDefinitionLinkTarget]
   }
+  @scala.inline
+  implicit class GraphDefinitionLinkTargetOps[Self <: GraphDefinitionLinkTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: code): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_profile(value: Element): Self = this.set("_profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_profile: Self = this.set("_profile", js.undefined)
+    @scala.inline
+    def set_type(value: Element): Self = this.set("_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_type: Self = this.set("_type", js.undefined)
+    @scala.inline
+    def setCompartmentVarargs(value: GraphDefinitionLinkTargetCompartment*): Self = this.set("compartment", js.Array(value :_*))
+    @scala.inline
+    def setCompartment(value: js.Array[GraphDefinitionLinkTargetCompartment]): Self = this.set("compartment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompartment: Self = this.set("compartment", js.undefined)
+    @scala.inline
+    def setLinkVarargs(value: GraphDefinitionLink*): Self = this.set("link", js.Array(value :_*))
+    @scala.inline
+    def setLink(value: js.Array[GraphDefinitionLink]): Self = this.set("link", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLink: Self = this.set("link", js.undefined)
+    @scala.inline
+    def setProfile(value: uri): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+  }
+  
 }
 

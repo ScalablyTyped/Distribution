@@ -15,7 +15,7 @@ trait GetServerResult extends js.Object {
     */
   val endpoint: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -52,5 +52,34 @@ object GetServerResult {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identityProviderType = identityProviderType.asInstanceOf[js.Any], invocationRole = invocationRole.asInstanceOf[js.Any], loggingRole = loggingRole.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetServerResult]
   }
+  @scala.inline
+  implicit class GetServerResultOps[Self <: GetServerResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEndpoint(value: String): Self = this.set("endpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentityProviderType(value: String): Self = this.set("identityProviderType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInvocationRole(value: String): Self = this.set("invocationRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoggingRole(value: String): Self = this.set("loggingRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServerId(value: String): Self = this.set("serverId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

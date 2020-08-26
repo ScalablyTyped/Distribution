@@ -34,20 +34,42 @@ trait Resource extends js.Object {
 
 object Resource {
   @scala.inline
-  def apply(
-    Id: NonEmptyString,
-    Type: NonEmptyString,
-    Details: ResourceDetails = null,
-    Partition: Partition = null,
-    Region: NonEmptyString = null,
-    Tags: FieldMap = null
-  ): Resource = {
+  def apply(Id: NonEmptyString, Type: NonEmptyString): Resource = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    if (Details != null) __obj.updateDynamic("Details")(Details.asInstanceOf[js.Any])
-    if (Partition != null) __obj.updateDynamic("Partition")(Partition.asInstanceOf[js.Any])
-    if (Region != null) __obj.updateDynamic("Region")(Region.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
+  @scala.inline
+  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: NonEmptyString): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: NonEmptyString): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetails(value: ResourceDetails): Self = this.set("Details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("Details", js.undefined)
+    @scala.inline
+    def setPartition(value: Partition): Self = this.set("Partition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartition: Self = this.set("Partition", js.undefined)
+    @scala.inline
+    def setRegion(value: NonEmptyString): Self = this.set("Region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("Region", js.undefined)
+    @scala.inline
+    def setTags(value: FieldMap): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

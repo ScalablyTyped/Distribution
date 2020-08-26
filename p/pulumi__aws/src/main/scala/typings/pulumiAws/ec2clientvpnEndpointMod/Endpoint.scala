@@ -1,7 +1,7 @@
 package typings.pulumiAws.ec2clientvpnEndpointMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pulumiAws.outputMod.ec2clientvpn.EndpointAuthenticationOptions
+import typings.pulumiAws.outputMod.ec2clientvpn.EndpointAuthenticationOption
 import typings.pulumiAws.outputMod.ec2clientvpn.EndpointConnectionLogOptions
 import typings.pulumiPulumi.mod.CustomResource
 import typings.pulumiPulumi.outputMod.Input
@@ -25,9 +25,13 @@ class Endpoint protected () extends CustomResource {
   def this(name: String, args: EndpointArgs) = this()
   def this(name: String, args: EndpointArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the Client VPN endpoint.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * Information about the authentication method to be used to authenticate clients.
     */
-  val authenticationOptions: Output_[EndpointAuthenticationOptions] = js.native
+  val authenticationOptions: Output_[js.Array[EndpointAuthenticationOption]] = js.native
   /**
     * The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. The CIDR block should be /22 or greater.
     */
@@ -63,7 +67,7 @@ class Endpoint protected () extends CustomResource {
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The transport protocol to be used by the VPN session. Default value is `udp`.
     */
@@ -81,8 +85,10 @@ object Endpoint extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Endpoint = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
   def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
   /**

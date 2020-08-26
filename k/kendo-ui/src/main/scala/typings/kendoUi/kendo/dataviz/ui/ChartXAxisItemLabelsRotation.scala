@@ -4,18 +4,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ChartXAxisItemLabelsRotation extends js.Object {
-  var align: js.UndefOr[String] = js.undefined
-  var angle: js.UndefOr[Double | String] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var angle: js.UndefOr[Double | String] = js.native
 }
 
 object ChartXAxisItemLabelsRotation {
   @scala.inline
-  def apply(align: String = null, angle: Double | String = null): ChartXAxisItemLabelsRotation = {
+  def apply(): ChartXAxisItemLabelsRotation = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartXAxisItemLabelsRotation]
   }
+  @scala.inline
+  implicit class ChartXAxisItemLabelsRotationOps[Self <: ChartXAxisItemLabelsRotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setAngle(value: Double | String): Self = this.set("angle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAngle: Self = this.set("angle", js.undefined)
+  }
+  
 }
 

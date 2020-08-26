@@ -14,7 +14,7 @@ class Tracer () extends Readable {
   var _push: js.Any = js.native
   var events: js.Any = js.native
   var fields: js.Any = js.native
-  var firstPush: js.UndefOr[js.Any] = js.native
+  var firstPush: js.Any = js.native
   var noStream: js.Any = js.native
   var parent: js.Any = js.native
   /* private */ def _flush(): js.Any = js.native

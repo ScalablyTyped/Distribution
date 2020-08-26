@@ -15,6 +15,7 @@ object cookieMod extends js.Object {
   class CookieResponse () extends default {
     def getCookies(): StringDictionary[String] = js.native
     def setCookie(name: String): Unit = js.native
+    def setCookie(name: String, value: js.UndefOr[scala.Nothing], options: CookieSerializeOptions): Unit = js.native
     def setCookie(name: String, value: js.Any): Unit = js.native
     def setCookie(name: String, value: js.Any, options: CookieSerializeOptions): Unit = js.native
   }

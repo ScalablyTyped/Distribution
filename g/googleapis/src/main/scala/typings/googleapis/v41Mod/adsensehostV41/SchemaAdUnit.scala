@@ -50,26 +50,54 @@ trait SchemaAdUnit extends js.Object {
 
 object SchemaAdUnit {
   @scala.inline
-  def apply(
-    code: String = null,
-    contentAdsSettings: BackupOption = null,
-    customStyle: SchemaAdStyle = null,
-    id: String = null,
-    kind: String = null,
-    mobileContentAdsSettings: MarkupLanguage = null,
-    name: String = null,
-    status: String = null
-  ): SchemaAdUnit = {
+  def apply(): SchemaAdUnit = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (contentAdsSettings != null) __obj.updateDynamic("contentAdsSettings")(contentAdsSettings.asInstanceOf[js.Any])
-    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (mobileContentAdsSettings != null) __obj.updateDynamic("mobileContentAdsSettings")(mobileContentAdsSettings.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAdUnit]
   }
+  @scala.inline
+  implicit class SchemaAdUnitOps[Self <: SchemaAdUnit] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: String): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setContentAdsSettings(value: BackupOption): Self = this.set("contentAdsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentAdsSettings: Self = this.set("contentAdsSettings", js.undefined)
+    @scala.inline
+    def setCustomStyle(value: SchemaAdStyle): Self = this.set("customStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomStyle: Self = this.set("customStyle", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMobileContentAdsSettings(value: MarkupLanguage): Self = this.set("mobileContentAdsSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileContentAdsSettings: Self = this.set("mobileContentAdsSettings", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

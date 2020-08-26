@@ -52,30 +52,62 @@ trait ComputeEnvironmentState extends js.Object {
 
 object ComputeEnvironmentState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    computeEnvironmentName: Input[String] = null,
-    computeEnvironmentNamePrefix: Input[String] = null,
-    computeResources: Input[ComputeEnvironmentComputeResources] = null,
-    ecsClusterArn: Input[String] = null,
-    serviceRole: Input[String] = null,
-    state: Input[String] = null,
-    status: Input[String] = null,
-    statusReason: Input[String] = null,
-    `type`: Input[String] = null
-  ): ComputeEnvironmentState = {
+  def apply(): ComputeEnvironmentState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
-    if (computeEnvironmentNamePrefix != null) __obj.updateDynamic("computeEnvironmentNamePrefix")(computeEnvironmentNamePrefix.asInstanceOf[js.Any])
-    if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
-    if (ecsClusterArn != null) __obj.updateDynamic("ecsClusterArn")(ecsClusterArn.asInstanceOf[js.Any])
-    if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentState]
   }
+  @scala.inline
+  implicit class ComputeEnvironmentStateOps[Self <: ComputeEnvironmentState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setComputeEnvironmentName(value: Input[String]): Self = this.set("computeEnvironmentName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentName: Self = this.set("computeEnvironmentName", js.undefined)
+    @scala.inline
+    def setComputeEnvironmentNamePrefix(value: Input[String]): Self = this.set("computeEnvironmentNamePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeEnvironmentNamePrefix: Self = this.set("computeEnvironmentNamePrefix", js.undefined)
+    @scala.inline
+    def setComputeResources(value: Input[ComputeEnvironmentComputeResources]): Self = this.set("computeResources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputeResources: Self = this.set("computeResources", js.undefined)
+    @scala.inline
+    def setEcsClusterArn(value: Input[String]): Self = this.set("ecsClusterArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEcsClusterArn: Self = this.set("ecsClusterArn", js.undefined)
+    @scala.inline
+    def setServiceRole(value: Input[String]): Self = this.set("serviceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceRole: Self = this.set("serviceRole", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setStatus(value: Input[String]): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusReason(value: Input[String]): Self = this.set("statusReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReason: Self = this.set("statusReason", js.undefined)
+    @scala.inline
+    def setType(value: Input[String]): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

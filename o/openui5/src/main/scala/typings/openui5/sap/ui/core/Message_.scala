@@ -17,8 +17,8 @@ trait Message_ extends Element {
     * message has a higher level.
     */
   def compareByType(
-    oMessage1: Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_],
-    oMessage2: Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_]
+    oMessage1: Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_],
+    oMessage2: Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_]
   ): Double = js.native
   /**
     * Compares the given message with <code>this</code> message. The types of{@link
@@ -29,7 +29,7 @@ trait Message_ extends Element {
     * <code>this</code>        message has a lower level. <code>1</code> if <code>this</code>       
     * message has a higher level.
     */
-  def compareByType(oOther: Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_]): Double = js.native
+  def compareByType(oOther: Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_]): Double = js.native
   /**
     * Returns the icon's default URI depending on given size.There are default icons for messages
     * available that can be used this way. If noparameter is given, the size will be 16x16 per default. If
@@ -77,7 +77,7 @@ trait Message_ extends Element {
     * @param sIcon New value for property <code>icon</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setIcon(sIcon: js.Any): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_] = js.native
+  def setIcon(sIcon: js.Any): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
   /**
     * Sets a new value for property <code>level</code>.Setting the message's level.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -85,7 +85,7 @@ trait Message_ extends Element {
     * @param sLevel New value for property <code>level</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setLevel(sLevel: MessageType): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_] = js.native
+  def setLevel(sLevel: MessageType): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
   /**
     * Sets a new value for property <code>readOnly</code>.Determines whether the message should be read
     * only. This helps the application to handle a message a different way if the application
@@ -96,14 +96,14 @@ trait Message_ extends Element {
     * @param bReadOnly New value for property <code>readOnly</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setReadOnly(bReadOnly: Boolean): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_] = js.native
+  def setReadOnly(bReadOnly: Boolean): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
   /**
     * Sets a new value for property <code>text</code>.Message textWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
     * @param sText New value for property <code>text</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setText(sText: String): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_] = js.native
+  def setText(sText: String): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
   /**
     * Sets a new value for property <code>timestamp</code>.Message's timestamp. It is just a simple String
     * that will be used without any transformation. So the application that uses messages needs to format
@@ -112,6 +112,6 @@ trait Message_ extends Element {
     * @param sTimestamp New value for property <code>timestamp</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setTimestamp(sTimestamp: String): Instantiable2[/* sId */ String, js.UndefOr[/* mSettings */ js.Any], Message_] = js.native
+  def setTimestamp(sTimestamp: String): Instantiable2[/* sId */ String, /* mSettings */ js.UndefOr[js.Any], Message_] = js.native
 }
 

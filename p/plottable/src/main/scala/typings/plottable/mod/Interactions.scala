@@ -36,6 +36,7 @@ object Interactions extends js.Object {
   class PanZoom ()
     extends typings.plottable.interactionsMod.PanZoom {
     def this(xScale: TransformableScale[_, Double]) = this()
+    def this(xScale: js.UndefOr[scala.Nothing], yScale: TransformableScale[_, Double]) = this()
     def this(xScale: TransformableScale[_, Double], yScale: TransformableScale[_, Double]) = this()
   }
   

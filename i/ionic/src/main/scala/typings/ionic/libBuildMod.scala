@@ -19,7 +19,7 @@ import typings.ionicCliFrameworkPrompts.mod.PromptQuestionOther
 import typings.ionicCliFrameworkPrompts.mod.PromptValueCheckbox
 import typings.ionicCliFrameworkPrompts.mod.PromptValueConfirm
 import typings.ionicCliFrameworkPrompts.mod.PromptValueOther
-import typings.node.NodeJS.ProcessEnv
+import typings.node.processMod.global.NodeJS.ProcessEnv
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -30,7 +30,7 @@ object libBuildMod extends js.Object {
   @js.native
   abstract class BuildCLI[T /* <: js.Object */] protected () extends js.Object {
     def this(e: BuildRunnerDeps) = this()
-    var _resolvedProgram: js.UndefOr[js.Any] = js.native
+    var _resolvedProgram: js.Any = js.native
     val e: BuildRunnerDeps = js.native
     /**
       * If true, the Build CLI will not prompt to be installed.
@@ -81,8 +81,6 @@ object libBuildMod extends js.Object {
     def determineEngineFromCommandLine(options: CommandLineOptions): String = js.native
     def getCommandMetadata(): js.Promise[PartialCommandMetadata] = js.native
     def getPkgManagerBuildCLI(): PkgManagerBuildCLI = js.native
-    /* CompleteClass */
-    override def run(options: T): js.Promise[Unit] = js.native
   }
   
   @js.native

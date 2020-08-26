@@ -20,10 +20,9 @@ object CommandHelpSchemaFootnote {
     __obj.asInstanceOf[CommandHelpSchemaFootnote]
   }
   @scala.inline
-  def CommandHelpSchemaFootnoteLink(id: String | Double, `type`: link, url: String, shortUrl: String = null): CommandHelpSchemaFootnote = {
+  def CommandHelpSchemaFootnoteLink(id: String | Double, `type`: link, url: String): CommandHelpSchemaFootnote = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shortUrl != null) __obj.updateDynamic("shortUrl")(shortUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandHelpSchemaFootnote]
   }
 }

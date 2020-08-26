@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object generateSync_oct extends js.Object {
   def apply(kty: oct): OctKey = js.native
+  def apply(kty: oct, bitlength: js.UndefOr[scala.Nothing], parameters: BasicParameters): OctKey = js.native
   def apply(kty: oct, bitlength: Double): OctKey = js.native
   def apply(kty: oct, bitlength: Double, parameters: BasicParameters): OctKey = js.native
 }

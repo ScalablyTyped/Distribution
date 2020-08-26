@@ -12,7 +12,7 @@ easily add a modal to your angular app
 | Keywords           | angular, angularjs, modal |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 113389 |
+| # downloads        | 106802 |
 | # stars            | 0 |
 
 ## Links

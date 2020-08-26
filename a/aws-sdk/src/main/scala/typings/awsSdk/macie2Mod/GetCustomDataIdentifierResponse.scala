@@ -54,32 +54,70 @@ trait GetCustomDataIdentifierResponse extends js.Object {
 
 object GetCustomDataIdentifierResponse {
   @scala.inline
-  def apply(
-    arn: string = null,
-    createdAt: timestampIso8601 = null,
-    deleted: js.UndefOr[boolean] = js.undefined,
-    description: string = null,
-    id: string = null,
-    ignoreWords: listOfString = null,
-    keywords: listOfString = null,
-    maximumMatchDistance: js.UndefOr[integer] = js.undefined,
-    name: string = null,
-    regex: string = null,
-    tags: TagMap = null
-  ): GetCustomDataIdentifierResponse = {
+  def apply(): GetCustomDataIdentifierResponse = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.get.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ignoreWords != null) __obj.updateDynamic("ignoreWords")(ignoreWords.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximumMatchDistance)) __obj.updateDynamic("maximumMatchDistance")(maximumMatchDistance.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (regex != null) __obj.updateDynamic("regex")(regex.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCustomDataIdentifierResponse]
   }
+  @scala.inline
+  implicit class GetCustomDataIdentifierResponseOps[Self <: GetCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: string): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCreatedAt(value: timestampIso8601): Self = this.set("createdAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedAt: Self = this.set("createdAt", js.undefined)
+    @scala.inline
+    def setDeleted(value: boolean): Self = this.set("deleted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleted: Self = this.set("deleted", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setId(value: string): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIgnoreWordsVarargs(value: string*): Self = this.set("ignoreWords", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreWords(value: listOfString): Self = this.set("ignoreWords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreWords: Self = this.set("ignoreWords", js.undefined)
+    @scala.inline
+    def setKeywordsVarargs(value: string*): Self = this.set("keywords", js.Array(value :_*))
+    @scala.inline
+    def setKeywords(value: listOfString): Self = this.set("keywords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeywords: Self = this.set("keywords", js.undefined)
+    @scala.inline
+    def setMaximumMatchDistance(value: integer): Self = this.set("maximumMatchDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumMatchDistance: Self = this.set("maximumMatchDistance", js.undefined)
+    @scala.inline
+    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setRegex(value: string): Self = this.set("regex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegex: Self = this.set("regex", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

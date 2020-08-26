@@ -36,6 +36,10 @@ trait TypeofimportedSelectors extends js.Object {
   def getAdjacentBlockClientId(): String | Null = js.native
   def getAdjacentBlockClientId(startClientId: String): String | Null = js.native
   @JSName("getAdjacentBlockClientId")
+  def getAdjacentBlockClientId_1(startClientId: js.UndefOr[scala.Nothing], modifier: `-1`): String | Null = js.native
+  @JSName("getAdjacentBlockClientId")
+  def getAdjacentBlockClientId_1(startClientId: js.UndefOr[scala.Nothing], modifier: `1`): String | Null = js.native
+  @JSName("getAdjacentBlockClientId")
   def getAdjacentBlockClientId_1(startClientId: String, modifier: `-1`): String | Null = js.native
   @JSName("getAdjacentBlockClientId")
   def getAdjacentBlockClientId_1(startClientId: String, modifier: `1`): String | Null = js.native

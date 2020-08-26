@@ -19,6 +19,7 @@ import typings.aceBuilds.aceBuildsStrings.cursorStyle
 import typings.aceBuilds.aceBuildsStrings.displayIndentGuides
 import typings.aceBuilds.aceBuildsStrings.dragDelay
 import typings.aceBuilds.aceBuildsStrings.dragEnabled
+import typings.aceBuilds.aceBuildsStrings.enableAutoIndent
 import typings.aceBuilds.aceBuildsStrings.fadeFoldWidgets
 import typings.aceBuilds.aceBuildsStrings.firstLineNumber
 import typings.aceBuilds.aceBuildsStrings.fixedWidthGutter
@@ -27,6 +28,7 @@ import typings.aceBuilds.aceBuildsStrings.focusTimeout
 import typings.aceBuilds.aceBuildsStrings.foldStyle
 import typings.aceBuilds.aceBuildsStrings.fontFamily
 import typings.aceBuilds.aceBuildsStrings.fontSize
+import typings.aceBuilds.aceBuildsStrings.free
 import typings.aceBuilds.aceBuildsStrings.hScrollBarAlwaysVisible
 import typings.aceBuilds.aceBuildsStrings.hasCssTransforms
 import typings.aceBuilds.aceBuildsStrings.highlightActiveLine
@@ -46,11 +48,13 @@ import typings.aceBuilds.aceBuildsStrings.minLines
 import typings.aceBuilds.aceBuildsStrings.mode
 import typings.aceBuilds.aceBuildsStrings.navigateWithinSoftTabs
 import typings.aceBuilds.aceBuildsStrings.newLineMode
+import typings.aceBuilds.aceBuildsStrings.off
 import typings.aceBuilds.aceBuildsStrings.overwrite
 import typings.aceBuilds.aceBuildsStrings.paste
 import typings.aceBuilds.aceBuildsStrings.placeholder
 import typings.aceBuilds.aceBuildsStrings.printMargin
 import typings.aceBuilds.aceBuildsStrings.printMarginColumn
+import typings.aceBuilds.aceBuildsStrings.printmargin_
 import typings.aceBuilds.aceBuildsStrings.readOnly
 import typings.aceBuilds.aceBuildsStrings.right
 import typings.aceBuilds.aceBuildsStrings.scrollPastEnd
@@ -100,6 +104,7 @@ trait Editor
   var session: EditSession = js.native
   def blockIndent(): Unit = js.native
   def blockOutdent(): Unit = js.native
+  def blur(): Unit = js.native
   def centerSelection(): Unit = js.native
   def clearSelection(): Unit = js.native
   def copyLinesDown(): Unit = js.native
@@ -111,15 +116,17 @@ trait Editor
   def execCommand(command: js.Array[String]): Boolean = js.native
   def execCommand(command: js.Array[String], args: js.Any): Boolean = js.native
   def find(needle: String): Unit = js.native
+  def find(needle: String, options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def find(needle: String, options: PartialSearchOptions): Unit = js.native
   def find(needle: String, options: PartialSearchOptions, animate: Boolean): Unit = js.native
   def findNext(): Unit = js.native
+  def findNext(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def findNext(options: PartialSearchOptions): Unit = js.native
   def findNext(options: PartialSearchOptions, animate: Boolean): Unit = js.native
   def findPrevious(): Unit = js.native
+  def findPrevious(options: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def findPrevious(options: PartialSearchOptions): Unit = js.native
   def findPrevious(options: PartialSearchOptions, animate: Boolean): Unit = js.native
-  def flur(): Unit = js.native
   def focus(): Unit = js.native
   def getAnimatedScroll(): Boolean = js.native
   def getBehavioursEnabled(): Boolean = js.native
@@ -153,6 +160,8 @@ trait Editor
   def getOption_dragDelay(name: dragDelay): Double = js.native
   @JSName("getOption")
   def getOption_dragEnabled(name: dragEnabled): Boolean = js.native
+  @JSName("getOption")
+  def getOption_enableAutoIndent(name: enableAutoIndent): Boolean = js.native
   @JSName("getOption")
   def getOption_fadeFoldWidgets(name: fadeFoldWidgets): Boolean = js.native
   @JSName("getOption")
@@ -238,7 +247,7 @@ trait Editor
   @JSName("getOption")
   def getOption_value(name: value): String = js.native
   @JSName("getOption")
-  def getOption_wrap(name: wrap): String | Double = js.native
+  def getOption_wrap(name: wrap): off | free | printmargin_ | Boolean | Double = js.native
   @JSName("getOption")
   def getOption_wrapBehavioursEnabled(name: wrapBehavioursEnabled): Boolean = js.native
   @JSName("getOption")
@@ -350,6 +359,9 @@ trait Editor
   def setOption(name: wrapMethod, value: auto): Unit = js.native
   def setOption(name: wrapMethod, value: code): Unit = js.native
   def setOption(name: wrapMethod, value: text): Unit = js.native
+  def setOption(name: wrap, value: free): Unit = js.native
+  def setOption(name: wrap, value: off): Unit = js.native
+  def setOption(name: wrap, value: printmargin_): Unit = js.native
   @JSName("setOption")
   def setOption_animatedScroll(name: animatedScroll, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -364,6 +376,8 @@ trait Editor
   def setOption_dragDelay(name: dragDelay, value: Double): Unit = js.native
   @JSName("setOption")
   def setOption_dragEnabled(name: dragEnabled, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_enableAutoIndent(name: enableAutoIndent, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_fadeFoldWidgets(name: fadeFoldWidgets, value: Boolean): Unit = js.native
   @JSName("setOption")
@@ -447,7 +461,7 @@ trait Editor
   @JSName("setOption")
   def setOption_value(name: value, value: String): Unit = js.native
   @JSName("setOption")
-  def setOption_wrap(name: wrap, value: String): Unit = js.native
+  def setOption_wrap(name: wrap, value: Boolean): Unit = js.native
   @JSName("setOption")
   def setOption_wrap(name: wrap, value: Double): Unit = js.native
   @JSName("setOption")

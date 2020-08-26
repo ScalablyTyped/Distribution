@@ -49,22 +49,48 @@ trait SchemaEntity extends js.Object {
 
 object SchemaEntity {
   @scala.inline
-  def apply(
-    mentions: js.Array[SchemaEntityMention] = null,
-    metadata: StringDictionary[String] = null,
-    name: String = null,
-    salience: js.UndefOr[Double] = js.undefined,
-    sentiment: SchemaSentiment = null,
-    `type`: String = null
-  ): SchemaEntity = {
+  def apply(): SchemaEntity = {
     val __obj = js.Dynamic.literal()
-    if (mentions != null) __obj.updateDynamic("mentions")(mentions.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(salience)) __obj.updateDynamic("salience")(salience.get.asInstanceOf[js.Any])
-    if (sentiment != null) __obj.updateDynamic("sentiment")(sentiment.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEntity]
   }
+  @scala.inline
+  implicit class SchemaEntityOps[Self <: SchemaEntity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMentionsVarargs(value: SchemaEntityMention*): Self = this.set("mentions", js.Array(value :_*))
+    @scala.inline
+    def setMentions(value: js.Array[SchemaEntityMention]): Self = this.set("mentions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMentions: Self = this.set("mentions", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[String]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSalience(value: Double): Self = this.set("salience", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSalience: Self = this.set("salience", js.undefined)
+    @scala.inline
+    def setSentiment(value: SchemaSentiment): Self = this.set("sentiment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSentiment: Self = this.set("sentiment", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

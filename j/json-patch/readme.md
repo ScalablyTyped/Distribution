@@ -11,7 +11,7 @@ A JavaScript implementation of the JSON Object Notation (JSON) Patch http://tool
 | Keywords           | diff, patch, json, jsonpatch, jsonpointer |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 100846 |
+| # downloads        | 93461 |
 | # stars            | 4 |
 
 ## Links

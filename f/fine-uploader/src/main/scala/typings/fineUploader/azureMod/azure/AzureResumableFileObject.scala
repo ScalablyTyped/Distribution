@@ -5,31 +5,36 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AzureResumableFileObject extends ResumableFileObject {
   /**
     * The associated file's blob name in Azure Blob Storage
     */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
 }
 
 object AzureResumableFileObject {
   @scala.inline
-  def apply(
-    customResumeData: js.Any = null,
-    key: String = null,
-    name: String = null,
-    remaining: js.UndefOr[Double] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    uuid: js.UndefOr[Double] = js.undefined
-  ): AzureResumableFileObject = {
+  def apply(): AzureResumableFileObject = {
     val __obj = js.Dynamic.literal()
-    if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(remaining)) __obj.updateDynamic("remaining")(remaining.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uuid)) __obj.updateDynamic("uuid")(uuid.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureResumableFileObject]
   }
+  @scala.inline
+  implicit class AzureResumableFileObjectOps[Self <: AzureResumableFileObject] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+  }
+  
 }
 

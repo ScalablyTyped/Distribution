@@ -32,6 +32,7 @@ class ResourceBiddersFiltersetsFilteredbids protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListFilteredBidsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListFilteredBidsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListFilteredBidsResponse] = js.native
   def list(params: ParamsResourceBiddersFiltersetsFilteredbidsList): GaxiosPromise[SchemaListFilteredBidsResponse] = js.native
   def list(
     params: ParamsResourceBiddersFiltersetsFilteredbidsList,

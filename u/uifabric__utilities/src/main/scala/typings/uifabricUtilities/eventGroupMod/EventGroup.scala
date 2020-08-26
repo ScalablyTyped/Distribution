@@ -20,58 +20,131 @@ class EventGroup protected () extends js.Object {
   def declare(event: js.Array[String]): Unit = js.native
   def dispose(): Unit = js.native
   def off(): Unit = js.native
-  def off( // tslint:disable-line:no-any
-  target: js.Any): Unit = js.native
-  def off( // tslint:disable-line:no-any
-  target: js.Any, eventName: String): Unit = js.native
   def off(
-     // tslint:disable-line:no-any
-  target: js.Any,
-    eventName: String,
-     // tslint:disable-line:no-any
-  callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
-  def off(
-     // tslint:disable-line:no-any
-  target: js.Any,
-    eventName: String,
-     // tslint:disable-line:no-any
-  callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    target: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
     options: Boolean
   ): Unit = js.native
   def off(
-     // tslint:disable-line:no-any
-  target: js.Any,
+    target: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: Boolean
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(target: js.UndefOr[scala.Nothing], eventName: String): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
     eventName: String,
-     // tslint:disable-line:no-any
-  callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    callback: js.UndefOr[scala.Nothing],
+    options: Boolean
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: String,
+    callback: js.UndefOr[scala.Nothing],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: Boolean
+  ): Unit = js.native
+  def off(
+    target: js.UndefOr[scala.Nothing],
+    eventName: String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(target: js.Any): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: Boolean
+  ): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]
+  ): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: Boolean
+  ): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(target: js.Any, eventName: String): Unit = js.native
+  def off(target: js.Any, eventName: String, callback: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: String,
+    callback: js.UndefOr[scala.Nothing],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  def off(target: js.Any, eventName: String, callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    options: Boolean
+  ): Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
     options: AddEventListenerOptions
   ): Unit = js.native
   /**
     * On the target, attach an event whose handler will be called in the context of the parent
     * of this instance of EventGroup.
     */
+  def on(target: js.Any, eventName: String, callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]): Unit = js.native
   def on(
-     // tslint:disable-line:no-any
-  target: js.Any,
+    target: js.Any,
     eventName: String,
-     // tslint:disable-line:no-any
-  callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
-  def on(
-     // tslint:disable-line:no-any
-  target: js.Any,
-    eventName: String,
-     // tslint:disable-line:no-any
-  callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
     options: Boolean
   ): Unit = js.native
   def on(
-     // tslint:disable-line:no-any
-  target: js.Any,
+    target: js.Any,
     eventName: String,
-     // tslint:disable-line:no-any
-  callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], Unit],
     options: AddEventListenerOptions
   ): Unit = js.native
   /** On the target, attach a set of events, where the events object is a name to function mapping. */
@@ -83,6 +156,7 @@ class EventGroup protected () extends js.Object {
   ): Unit = js.native
   /** Trigger the given event in the context of this instance of EventGroup. */
   def raise(eventName: String): js.UndefOr[Boolean] = js.native
+  def raise(eventName: String, eventArgs: js.UndefOr[scala.Nothing], bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
   def raise(eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = js.native
   def raise(eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
 }
@@ -103,6 +177,7 @@ object EventGroup extends js.Object {
     *
     */
   def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = js.native
+  def raise(target: js.Any, eventName: String, eventArgs: js.UndefOr[scala.Nothing], bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
   def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = js.native
   def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
   def stopPropagation(event: js.Any): Unit = js.native

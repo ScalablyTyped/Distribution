@@ -34,22 +34,46 @@ trait Item extends js.Object {
 
 object Item {
   @scala.inline
-  def apply(
-    ContentLength: js.UndefOr[NonNegativeLong] = js.undefined,
-    ContentType: ContentType = null,
-    ETag: ETag = null,
-    LastModified: TimeStamp = null,
-    Name: ItemName = null,
-    Type: ItemType = null
-  ): Item = {
+  def apply(): Item = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
+  @scala.inline
+  implicit class ItemOps[Self <: Item] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContentLength(value: NonNegativeLong): Self = this.set("ContentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLength: Self = this.set("ContentLength", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setETag(value: ETag): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setLastModified(value: TimeStamp): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setName(value: ItemName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setType(value: ItemType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

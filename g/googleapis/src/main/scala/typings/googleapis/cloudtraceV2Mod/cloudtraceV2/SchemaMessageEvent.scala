@@ -32,18 +32,38 @@ trait SchemaMessageEvent extends js.Object {
 
 object SchemaMessageEvent {
   @scala.inline
-  def apply(
-    compressedSizeBytes: String = null,
-    id: String = null,
-    `type`: String = null,
-    uncompressedSizeBytes: String = null
-  ): SchemaMessageEvent = {
+  def apply(): SchemaMessageEvent = {
     val __obj = js.Dynamic.literal()
-    if (compressedSizeBytes != null) __obj.updateDynamic("compressedSizeBytes")(compressedSizeBytes.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uncompressedSizeBytes != null) __obj.updateDynamic("uncompressedSizeBytes")(uncompressedSizeBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMessageEvent]
   }
+  @scala.inline
+  implicit class SchemaMessageEventOps[Self <: SchemaMessageEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompressedSizeBytes(value: String): Self = this.set("compressedSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompressedSizeBytes: Self = this.set("compressedSizeBytes", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUncompressedSizeBytes(value: String): Self = this.set("uncompressedSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUncompressedSizeBytes: Self = this.set("uncompressedSizeBytes", js.undefined)
+  }
+  
 }
 

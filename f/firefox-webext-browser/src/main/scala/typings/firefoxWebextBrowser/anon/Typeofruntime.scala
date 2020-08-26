@@ -18,7 +18,7 @@ trait Typeofruntime extends js.Object {
   val id: String = js.native
   /* runtime properties */
   /** This will be defined during an API method callback if there was an error */
-  val lastError: js.UndefOr[MessageString] = js.native
+  val lastError: js.UndefOr[`0`] = js.native
   /**
     * Fired when an update for the browser is available, but isn't installed immediately because a browser restart is
     * required.
@@ -121,6 +121,7 @@ trait Typeofruntime extends js.Object {
     *     fired if the extension/app does not exist.
     */
   def connect(): Port = js.native
+  def connect(extensionId: js.UndefOr[scala.Nothing], connectInfo: IncludeTlsChannelId): Port = js.native
   def connect(extensionId: String): Port = js.native
   def connect(extensionId: String, connectInfo: IncludeTlsChannelId): Port = js.native
   /**
@@ -190,7 +191,7 @@ trait Typeofruntime extends js.Object {
     *     your own extension/app. Required if sending messages from a web page for web messaging.
     */
   def sendMessage(extensionId: String, message: js.Any): js.Promise[_] = js.native
-  def sendMessage(extensionId: String, message: js.Any, options: IncludeTlsChannelIdBoolean): js.Promise[_] = js.native
+  def sendMessage(extensionId: String, message: js.Any, options: `1`): js.Promise[_] = js.native
   /**
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to
     * `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the
@@ -199,7 +200,7 @@ trait Typeofruntime extends js.Object {
     * scripts, use `tabs.sendMessage`.
     */
   def sendMessage(message: js.Any): js.Promise[_] = js.native
-  def sendMessage(message: js.Any, options: IncludeTlsChannelIdBoolean): js.Promise[_] = js.native
+  def sendMessage(message: js.Any, options: `1`): js.Promise[_] = js.native
   /**
     * Send a single message to a native application.
     *

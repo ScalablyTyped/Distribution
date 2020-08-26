@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "meteor-jboulhous-dev"
-version := "0.0-unknown-dt-20200515Z-f476ab"
-scalaVersion := "2.13.2"
+version := "0.0-unknown-dt-20200515Z-4b129e"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

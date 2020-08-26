@@ -1,5 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.auto
+import typings.arcgisJsApi.arcgisJsApiStrings.drawer
+import typings.arcgisJsApi.arcgisJsApiStrings.floating
 import typings.std.Node
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -83,7 +86,7 @@ trait Expand extends Widget_ {
     *
     * @default "auto"
     */
-  var mode: String = js.native
+  var mode: auto | floating | drawer = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *

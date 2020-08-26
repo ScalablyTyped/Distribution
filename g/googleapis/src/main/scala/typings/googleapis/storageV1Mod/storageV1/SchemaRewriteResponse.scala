@@ -43,22 +43,46 @@ trait SchemaRewriteResponse extends js.Object {
 
 object SchemaRewriteResponse {
   @scala.inline
-  def apply(
-    done: js.UndefOr[Boolean] = js.undefined,
-    kind: String = null,
-    objectSize: String = null,
-    resource: SchemaObject = null,
-    rewriteToken: String = null,
-    totalBytesRewritten: String = null
-  ): SchemaRewriteResponse = {
+  def apply(): SchemaRewriteResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (objectSize != null) __obj.updateDynamic("objectSize")(objectSize.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (rewriteToken != null) __obj.updateDynamic("rewriteToken")(rewriteToken.asInstanceOf[js.Any])
-    if (totalBytesRewritten != null) __obj.updateDynamic("totalBytesRewritten")(totalBytesRewritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRewriteResponse]
   }
+  @scala.inline
+  implicit class SchemaRewriteResponseOps[Self <: SchemaRewriteResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDone(value: Boolean): Self = this.set("done", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDone: Self = this.set("done", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setObjectSize(value: String): Self = this.set("objectSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectSize: Self = this.set("objectSize", js.undefined)
+    @scala.inline
+    def setResource(value: SchemaObject): Self = this.set("resource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResource: Self = this.set("resource", js.undefined)
+    @scala.inline
+    def setRewriteToken(value: String): Self = this.set("rewriteToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRewriteToken: Self = this.set("rewriteToken", js.undefined)
+    @scala.inline
+    def setTotalBytesRewritten(value: String): Self = this.set("totalBytesRewritten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTotalBytesRewritten: Self = this.set("totalBytesRewritten", js.undefined)
+  }
+  
 }
 

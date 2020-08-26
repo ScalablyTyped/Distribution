@@ -66,15 +66,15 @@ class SwatchColorPickerBase protected ()
     * @returns - Element representing the item
     */
   var _renderOption: js.Any = js.native
-  var async: js.Any = js.native
-  var isNavigationIdle: js.Any = js.native
-  val navigationIdleDelay: js.Any = js.native
-  var navigationIdleTimeoutId: js.Any = js.native
   /**
     * Sets a timeout so we won't process any mouse "hover" events
     * while navigating (via mouseWheel or arrowKeys)
     */
-  var setNavigationTimeout: js.Any = js.native
+  var _setNavigationTimeout: js.Any = js.native
+  var async: js.Any = js.native
+  var isNavigationIdle: js.Any = js.native
+  val navigationIdleDelay: js.Any = js.native
+  var navigationIdleTimeoutId: js.Any = js.native
   @JSName("UNSAFE_componentWillReceiveProps")
   def UNSAFE_componentWillReceiveProps_MSwatchColorPickerBase(newProps: ISwatchColorPickerProps): Unit = js.native
   @JSName("componentWillUnmount")

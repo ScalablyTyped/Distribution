@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "react-highlighter"
-version := "0.3-dt-20200227Z-6d9ef7"
-scalaVersion := "2.13.2"
+version := "0.3-dt-20200227Z-72cbc0"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

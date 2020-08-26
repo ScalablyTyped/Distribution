@@ -12,24 +12,43 @@ import scala.scalajs.js.annotation._
   * @property onSpaceCreated {function(H.service.venues.Space)=} - A callback function that is called on every created space (see H.service.venues.Space) object. The function can be
   * used for space object styling.
   */
+@js.native
 trait Options extends js.Object {
-  var onSpaceCreated: js.UndefOr[js.Function1[/* space */ Space, Unit]] = js.undefined
-  var pixelRatio: js.UndefOr[Double] = js.undefined
-  var tileCacheSize: js.UndefOr[Double] = js.undefined
+  var onSpaceCreated: js.UndefOr[js.Function1[/* space */ Space, Unit]] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.native
+  var tileCacheSize: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    onSpaceCreated: /* space */ Space => Unit = null,
-    pixelRatio: js.UndefOr[Double] = js.undefined,
-    tileCacheSize: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (onSpaceCreated != null) __obj.updateDynamic("onSpaceCreated")(js.Any.fromFunction1(onSpaceCreated))
-    if (!js.isUndefined(pixelRatio)) __obj.updateDynamic("pixelRatio")(pixelRatio.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileCacheSize)) __obj.updateDynamic("tileCacheSize")(tileCacheSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnSpaceCreated(value: /* space */ Space => Unit): Self = this.set("onSpaceCreated", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSpaceCreated: Self = this.set("onSpaceCreated", js.undefined)
+    @scala.inline
+    def setPixelRatio(value: Double): Self = this.set("pixelRatio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelRatio: Self = this.set("pixelRatio", js.undefined)
+    @scala.inline
+    def setTileCacheSize(value: Double): Self = this.set("tileCacheSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTileCacheSize: Self = this.set("tileCacheSize", js.undefined)
+  }
+  
 }
 

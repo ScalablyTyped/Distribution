@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.lastIndexOf")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.lastIndexOf")
 @js.native
 object lastIndexOf extends js.Object {
   /**
@@ -49,6 +49,7 @@ object lastIndexOf extends js.Object {
     * ```
     */
   def apply[T](array: ArrayLike[T], value: T): Double = js.native
+  def apply[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], stop: Double): Double = js.native
   def apply[T](array: ArrayLike[T], value: T, start: Double): Double = js.native
   def apply[T](array: ArrayLike[T], value: T, start: Double, stop: Double): Double = js.native
 }

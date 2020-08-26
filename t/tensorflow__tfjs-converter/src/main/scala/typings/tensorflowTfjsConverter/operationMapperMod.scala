@@ -16,6 +16,9 @@ import scala.scalajs.js.annotation._
 object operationMapperMod extends js.Object {
   @js.native
   class OperationMapper protected () extends js.Object {
+    var mapArgToTensorInfo: js.Any = js.native
+    var mapArgsToSignature: js.Any = js.native
+    var mapFunction: js.Any = js.native
     var mapNode: js.Any = js.native
     var mapSignatureEntries: js.Any = js.native
     var opMappers: js.Any = js.native
@@ -28,6 +31,7 @@ object operationMapperMod extends js.Object {
   def getBoolParam(attrs: StringDictionary[IAttrValue], name: String, `def`: Boolean): Boolean = js.native
   def getDtypeArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[DataType]): js.Array[DataType] = js.native
   def getDtypeParam(attrs: StringDictionary[IAttrValue], name: String, `def`: DataType): DataType = js.native
+  def getFuncParam(attrs: StringDictionary[IAttrValue], name: String, `def`: String): String = js.native
   def getNumberParam(attrs: StringDictionary[IAttrValue], name: String, `def`: Double): Double = js.native
   def getNumericArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[Double]): js.Array[Double] = js.native
   def getStringArrayParam(attrs: StringDictionary[IAttrValue], name: String, `def`: js.Array[String]): js.Array[String] = js.native

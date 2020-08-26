@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SmartMappingSliderBase extends Widget_ {
   /**
-    * The [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) associated with the data represented on the slider. The bins are typically generated using the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) statistics function.
+    * The [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) associated with the data represented on the slider. The bins are typically generated using the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) statistics function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#histogramConfig)
     */
@@ -104,6 +104,7 @@ trait SmartMappingSliderBase extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("inputFormatFunction")
   def inputFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("inputFormatFunction")
@@ -126,6 +127,7 @@ trait SmartMappingSliderBase extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
+  def inputParseFunction(value: String, `type`: js.UndefOr[scala.Nothing], index: Double): Double = js.native
   @JSName("inputParseFunction")
   def inputParseFunction_average(value: String, `type`: average): Double = js.native
   @JSName("inputParseFunction")
@@ -152,6 +154,7 @@ trait SmartMappingSliderBase extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("labelFormatFunction")
   def labelFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("labelFormatFunction")

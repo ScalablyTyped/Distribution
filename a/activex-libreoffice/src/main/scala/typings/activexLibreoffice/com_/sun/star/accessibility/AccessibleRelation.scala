@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   * The represented relation points from the implementing object to a set of target objects.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleRelation extends js.Object {
   /**
     * Type of the relation.
@@ -20,13 +21,13 @@ trait AccessibleRelation extends js.Object {
     * invalid. The content of the TargetSet is then undefined.
     * @see AccessibleRelationType
     */
-  var RelationType: Double
+  var RelationType: Double = js.native
   /**
     * Set of objects that are the relation's targets.
     *
     * The content of this set is undefined if the relation's type is INVALID. The set must not contain references to one object more than once.
     */
-  var TargetSet: SafeArray[XInterface]
+  var TargetSet: SafeArray[XInterface] = js.native
 }
 
 object AccessibleRelation {
@@ -35,5 +36,22 @@ object AccessibleRelation {
     val __obj = js.Dynamic.literal(RelationType = RelationType.asInstanceOf[js.Any], TargetSet = TargetSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibleRelation]
   }
+  @scala.inline
+  implicit class AccessibleRelationOps[Self <: AccessibleRelation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRelationType(value: Double): Self = this.set("RelationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetSet(value: SafeArray[XInterface]): Self = this.set("TargetSet", value.asInstanceOf[js.Any])
+  }
+  
 }
 

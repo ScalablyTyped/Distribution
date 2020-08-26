@@ -12,7 +12,7 @@ SAML Protocol server middleware
 | Keywords           | saml, auth |
 | # releases         | 4 |
 | # dependents       | 2 |
-| # downloads        | 232376 |
+| # downloads        | 235813 |
 | # stars            | 0 |
 
 ## Links

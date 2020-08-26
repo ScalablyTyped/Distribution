@@ -30,20 +30,42 @@ trait Resource extends js.Object {
 
 object Resource {
   @scala.inline
-  def apply(
-    id: String = null,
-    parentId: String = null,
-    path: String = null,
-    pathPart: String = null,
-    resourceMethods: MapOfMethod = null
-  ): Resource = {
+  def apply(): Resource = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (pathPart != null) __obj.updateDynamic("pathPart")(pathPart.asInstanceOf[js.Any])
-    if (resourceMethods != null) __obj.updateDynamic("resourceMethods")(resourceMethods.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
+  @scala.inline
+  implicit class ResourceOps[Self <: Resource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setParentId(value: String): Self = this.set("parentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentId: Self = this.set("parentId", js.undefined)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+    @scala.inline
+    def setPathPart(value: String): Self = this.set("pathPart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePathPart: Self = this.set("pathPart", js.undefined)
+    @scala.inline
+    def setResourceMethods(value: MapOfMethod): Self = this.set("resourceMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceMethods: Self = this.set("resourceMethods", js.undefined)
+  }
+  
 }
 

@@ -34,22 +34,46 @@ trait Room extends js.Object {
 
 object Room {
   @scala.inline
-  def apply(
-    AccountId: NonEmptyString = null,
-    CreatedBy: NonEmptyString = null,
-    CreatedTimestamp: Iso8601Timestamp = null,
-    Name: SensitiveString = null,
-    RoomId: NonEmptyString = null,
-    UpdatedTimestamp: Iso8601Timestamp = null
-  ): Room = {
+  def apply(): Room = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (CreatedBy != null) __obj.updateDynamic("CreatedBy")(CreatedBy.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (RoomId != null) __obj.updateDynamic("RoomId")(RoomId.asInstanceOf[js.Any])
-    if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Room]
   }
+  @scala.inline
+  implicit class RoomOps[Self <: Room] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setCreatedBy(value: NonEmptyString): Self = this.set("CreatedBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedBy: Self = this.set("CreatedBy", js.undefined)
+    @scala.inline
+    def setCreatedTimestamp(value: Iso8601Timestamp): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setName(value: SensitiveString): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setRoomId(value: NonEmptyString): Self = this.set("RoomId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomId: Self = this.set("RoomId", js.undefined)
+    @scala.inline
+    def setUpdatedTimestamp(value: Iso8601Timestamp): Self = this.set("UpdatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatedTimestamp: Self = this.set("UpdatedTimestamp", js.undefined)
+  }
+  
 }
 

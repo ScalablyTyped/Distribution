@@ -8,27 +8,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StartOptions extends js.Object {
-  var additionalData: js.UndefOr[String] = js.undefined
-  var iv: js.UndefOr[ByteBuffer | js.Array[Byte] | Bytes] = js.undefined
-  var tag: js.UndefOr[ByteStringBuffer] = js.undefined
-  var tagLength: js.UndefOr[Double] = js.undefined
+  var additionalData: js.UndefOr[String] = js.native
+  var iv: js.UndefOr[ByteBuffer | js.Array[Byte] | Bytes] = js.native
+  var tag: js.UndefOr[ByteStringBuffer] = js.native
+  var tagLength: js.UndefOr[Double] = js.native
 }
 
 object StartOptions {
   @scala.inline
-  def apply(
-    additionalData: String = null,
-    iv: ByteBuffer | js.Array[Byte] | Bytes = null,
-    tag: ByteStringBuffer = null,
-    tagLength: js.UndefOr[Double] = js.undefined
-  ): StartOptions = {
+  def apply(): StartOptions = {
     val __obj = js.Dynamic.literal()
-    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData.asInstanceOf[js.Any])
-    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (!js.isUndefined(tagLength)) __obj.updateDynamic("tagLength")(tagLength.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
+  @scala.inline
+  implicit class StartOptionsOps[Self <: StartOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalData(value: String): Self = this.set("additionalData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalData: Self = this.set("additionalData", js.undefined)
+    @scala.inline
+    def setIvVarargs(value: Byte*): Self = this.set("iv", js.Array(value :_*))
+    @scala.inline
+    def setIv(value: ByteBuffer | js.Array[Byte] | Bytes): Self = this.set("iv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIv: Self = this.set("iv", js.undefined)
+    @scala.inline
+    def setTag(value: ByteStringBuffer): Self = this.set("tag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTag: Self = this.set("tag", js.undefined)
+    @scala.inline
+    def setTagLength(value: Double): Self = this.set("tagLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagLength: Self = this.set("tagLength", js.undefined)
+  }
+  
 }
 

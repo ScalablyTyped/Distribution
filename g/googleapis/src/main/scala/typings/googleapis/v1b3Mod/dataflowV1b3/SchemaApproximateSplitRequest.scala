@@ -28,16 +28,34 @@ trait SchemaApproximateSplitRequest extends js.Object {
 
 object SchemaApproximateSplitRequest {
   @scala.inline
-  def apply(
-    fractionConsumed: js.UndefOr[Double] = js.undefined,
-    fractionOfRemainder: js.UndefOr[Double] = js.undefined,
-    position: SchemaPosition = null
-  ): SchemaApproximateSplitRequest = {
+  def apply(): SchemaApproximateSplitRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fractionConsumed)) __obj.updateDynamic("fractionConsumed")(fractionConsumed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fractionOfRemainder)) __obj.updateDynamic("fractionOfRemainder")(fractionOfRemainder.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaApproximateSplitRequest]
   }
+  @scala.inline
+  implicit class SchemaApproximateSplitRequestOps[Self <: SchemaApproximateSplitRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFractionConsumed(value: Double): Self = this.set("fractionConsumed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFractionConsumed: Self = this.set("fractionConsumed", js.undefined)
+    @scala.inline
+    def setFractionOfRemainder(value: Double): Self = this.set("fractionOfRemainder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFractionOfRemainder: Self = this.set("fractionOfRemainder", js.undefined)
+    @scala.inline
+    def setPosition(value: SchemaPosition): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+  }
+  
 }
 

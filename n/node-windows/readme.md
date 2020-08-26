@@ -12,7 +12,7 @@ Support for Windows services, event logging, UAC, and several helper methods for
 | Keywords           | ngn, windows, service, daemon, logging, event, event logging, elevate, sudo, task |
 | # releases         | 1 |
 | # dependents       | 58 |
-| # downloads        | 192480 |
+| # downloads        | 197422 |
 | # stars            | 45 |
 
 ## Links

@@ -106,6 +106,7 @@ trait Color extends js.Object {
     * @param max The maximum random color value. Between 0 and 255. Default 255.
     */
   def random(): Color = js.native
+  def random(min: js.UndefOr[scala.Nothing], max: integer): Color = js.native
   def random(min: integer): Color = js.native
   def random(min: integer, max: integer): Color = js.native
   /**
@@ -114,6 +115,7 @@ trait Color extends js.Object {
     * @param max The maximum random color value. Between 0 and 255. Default 255.
     */
   def randomGray(): Color = js.native
+  def randomGray(min: js.UndefOr[scala.Nothing], max: integer): Color = js.native
   def randomGray(min: integer): Color = js.native
   def randomGray(min: integer, max: integer): Color = js.native
   /**
@@ -152,6 +154,7 @@ trait Color extends js.Object {
     * @param updateHSV Update the HSV values after setting the RGB values? Default true.
     */
   def setTo(red: integer, green: integer, blue: integer): Color = js.native
+  def setTo(red: integer, green: integer, blue: integer, alpha: js.UndefOr[scala.Nothing], updateHSV: Boolean): Color = js.native
   def setTo(red: integer, green: integer, blue: integer, alpha: integer): Color = js.native
   def setTo(red: integer, green: integer, blue: integer, alpha: integer, updateHSV: Boolean): Color = js.native
   /**

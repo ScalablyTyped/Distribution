@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait YAxisBreaksOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Gantt) A number indicating how much space should
@@ -11,36 +12,56 @@ trait YAxisBreaksOptions extends js.Object {
     * given in axis units, so for instance on a `datetime` axis, a break size
     * of 3600000 would indicate the equivalent of an hour.
     */
-  var breakSize: js.UndefOr[Double] = js.undefined
+  var breakSize: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The point where the break starts.
     */
-  var from: js.UndefOr[Double] = js.undefined
+  var from: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) Defines an interval after which the break
     * appears again. By default the breaks do not repeat.
     */
-  var repeat: js.UndefOr[Double] = js.undefined
+  var repeat: js.UndefOr[Double] = js.native
   /**
     * (Highcharts, Highstock, Gantt) The point where the break ends.
     */
-  var to: js.UndefOr[Double] = js.undefined
+  var to: js.UndefOr[Double] = js.native
 }
 
 object YAxisBreaksOptions {
   @scala.inline
-  def apply(
-    breakSize: js.UndefOr[Double] = js.undefined,
-    from: js.UndefOr[Double] = js.undefined,
-    repeat: js.UndefOr[Double] = js.undefined,
-    to: js.UndefOr[Double] = js.undefined
-  ): YAxisBreaksOptions = {
+  def apply(): YAxisBreaksOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(breakSize)) __obj.updateDynamic("breakSize")(breakSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(from)) __obj.updateDynamic("from")(from.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(to)) __obj.updateDynamic("to")(to.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisBreaksOptions]
   }
+  @scala.inline
+  implicit class YAxisBreaksOptionsOps[Self <: YAxisBreaksOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBreakSize(value: Double): Self = this.set("breakSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBreakSize: Self = this.set("breakSize", js.undefined)
+    @scala.inline
+    def setFrom(value: Double): Self = this.set("from", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrom: Self = this.set("from", js.undefined)
+    @scala.inline
+    def setRepeat(value: Double): Self = this.set("repeat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepeat: Self = this.set("repeat", js.undefined)
+    @scala.inline
+    def setTo(value: Double): Self = this.set("to", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTo: Self = this.set("to", js.undefined)
+  }
+  
 }
 

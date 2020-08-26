@@ -30,22 +30,52 @@ trait CreateDatasetRequest extends js.Object {
     * The schema for the dataset. The schema attributes and their order must match the fields in your data. The dataset Domain and DatasetType that you choose determine the minimum required fields in your training data. For information about the required fields for a specific dataset domain and type, see howitworks-domains-ds-types.
     */
   var Schema: typings.awsSdk.forecastserviceMod.Schema = js.native
+  /**
+    * The optional metadata that you apply to the dataset to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50.   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8.   Maximum value length - 256 Unicode characters in UTF-8.   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for keys as it is reserved for AWS use. You cannot edit or delete tag keys with this prefix. Values can have this prefix. If a tag value has aws as its prefix but the key does not, then Forecast considers it to be a user tag and will count against the limit of 50 tags. Tags with only the key prefix of aws do not count against your tags per resource limit.  
+    */
+  var Tags: js.UndefOr[typings.awsSdk.forecastserviceMod.Tags] = js.native
 }
 
 object CreateDatasetRequest {
   @scala.inline
-  def apply(
-    DatasetName: Name,
-    DatasetType: DatasetType,
-    Domain: Domain,
-    Schema: Schema,
-    DataFrequency: Frequency = null,
-    EncryptionConfig: EncryptionConfig = null
-  ): CreateDatasetRequest = {
+  def apply(DatasetName: Name, DatasetType: DatasetType, Domain: Domain, Schema: Schema): CreateDatasetRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], DatasetType = DatasetType.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], Schema = Schema.asInstanceOf[js.Any])
-    if (DataFrequency != null) __obj.updateDynamic("DataFrequency")(DataFrequency.asInstanceOf[js.Any])
-    if (EncryptionConfig != null) __obj.updateDynamic("EncryptionConfig")(EncryptionConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatasetRequest]
   }
+  @scala.inline
+  implicit class CreateDatasetRequestOps[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDatasetName(value: Name): Self = this.set("DatasetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDatasetType(value: DatasetType): Self = this.set("DatasetType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomain(value: Domain): Self = this.set("Domain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: Schema): Self = this.set("Schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataFrequency(value: Frequency): Self = this.set("DataFrequency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataFrequency: Self = this.set("DataFrequency", js.undefined)
+    @scala.inline
+    def setEncryptionConfig(value: EncryptionConfig): Self = this.set("EncryptionConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionConfig: Self = this.set("EncryptionConfig", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -164,7 +164,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def abbr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def abbr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def abbr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def abbr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def abbr_close(
     /**
@@ -232,7 +320,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def abbr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def abbr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def abbr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def abbr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[AbbrOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def abbr_open(
     /**
@@ -300,7 +476,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def blockquote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def blockquote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def blockquote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def blockquote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def blockquote_close(
     /**
@@ -368,7 +632,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def blockquote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def blockquote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def blockquote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def blockquote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BlockquoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def blockquote_open(
     /**
@@ -436,7 +788,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def bullet_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def bullet_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def bullet_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def bullet_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def bullet_list_close(
     /**
@@ -504,7 +944,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def bullet_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def bullet_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def bullet_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def bullet_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[BulletListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def bullet_list_open(
     /**
@@ -572,7 +1100,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def code(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[CodeToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def code(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[CodeToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def code(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[CodeToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def code(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[CodeToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def code(
     /**
@@ -640,7 +1256,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dd_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def dd_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dd_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def dd_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def dd_close(
     /**
@@ -708,7 +1412,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dd_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def dd_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dd_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def dd_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DdOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def dd_open(
     /**
@@ -776,7 +1568,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def del_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def del_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def del_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def del_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def del_close(
     /**
@@ -844,7 +1724,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def del_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def del_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def del_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def del_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DelOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def del_open(
     /**
@@ -912,7 +1880,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dl_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def dl_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dl_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def dl_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def dl_close(
     /**
@@ -980,7 +2036,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dl_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def dl_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dl_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def dl_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DlOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def dl_open(
     /**
@@ -1048,7 +2192,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dt_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def dt_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dt_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def dt_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def dt_close(
     /**
@@ -1116,7 +2348,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dt_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def dt_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def dt_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def dt_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[DtOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def dt_open(
     /**
@@ -1184,7 +2504,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def em_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def em_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def em_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def em_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def em_close(
     /**
@@ -1252,7 +2660,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def em_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def em_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def em_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def em_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[EmOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def em_open(
     /**
@@ -1320,7 +2816,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def fence(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FenceToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def fence(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FenceToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def fence(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FenceToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def fence(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FenceToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def fence(
     /**
@@ -1388,7 +2972,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_anchor(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteAnchorToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def footnote_anchor(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteAnchorToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_anchor(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteAnchorToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def footnote_anchor(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteAnchorToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def footnote_anchor(
     /**
@@ -1456,7 +3128,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_block_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def footnote_block_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_block_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def footnote_block_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def footnote_block_close(
     /**
@@ -1524,7 +3284,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_block_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def footnote_block_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_block_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def footnote_block_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteBlockOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def footnote_block_open(
     /**
@@ -1592,7 +3440,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def footnote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def footnote_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def footnote_close(
     /**
@@ -1660,7 +3596,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def footnote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def footnote_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def footnote_open(
     /**
@@ -1728,7 +3752,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_ref(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteInlineToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def footnote_ref(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteInlineToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def footnote_ref(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteInlineToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def footnote_ref(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[FootnoteInlineToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def footnote_ref(
     /**
@@ -1799,7 +3911,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): _empty | Linefeed = js.native
+  def getBreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ContentToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): _empty | Linefeed = js.native
   def getBreak(
     /**
@@ -1867,7 +4067,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def hardbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HardbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def hardbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HardbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def hardbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HardbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def hardbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HardbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def hardbreak(
     /**
@@ -1935,7 +4223,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def heading_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def heading_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def heading_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def heading_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def heading_close(
     /**
@@ -2003,7 +4379,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def heading_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def heading_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def heading_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def heading_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HeadingOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def heading_open(
     /**
@@ -2071,7 +4535,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def hr(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HrToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def hr(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HrToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def hr(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HrToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def hr(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HrToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def hr(
     /**
@@ -2139,7 +4691,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def htmlblock(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlBlockToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def htmlblock(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlBlockToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def htmlblock(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlBlockToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def htmlblock(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlBlockToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def htmlblock(
     /**
@@ -2207,7 +4847,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def htmltag(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlTagToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def htmltag(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlTagToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def htmltag(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlTagToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def htmltag(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[HtmlTagToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def htmltag(
     /**
@@ -2275,7 +5003,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def image(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ImageToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def image(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ImageToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def image(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ImageToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def image(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ImageToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def image(
     /**
@@ -2343,7 +5159,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ins_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def ins_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ins_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def ins_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def ins_close(
     /**
@@ -2411,7 +5315,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ins_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def ins_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ins_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def ins_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[InsOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def ins_open(
     /**
@@ -2479,7 +5471,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def link_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def link_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def link_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def link_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def link_close(
     /**
@@ -2547,7 +5627,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def link_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def link_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def link_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def link_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[LinkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def link_open(
     /**
@@ -2615,7 +5783,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def list_item_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def list_item_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def list_item_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def list_item_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def list_item_close(
     /**
@@ -2683,7 +5939,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def list_item_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def list_item_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def list_item_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def list_item_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ListItemOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def list_item_open(
     /**
@@ -2751,7 +6095,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def mark_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def mark_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def mark_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def mark_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def mark_close(
     /**
@@ -2819,7 +6251,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def mark_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def mark_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def mark_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def mark_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[MarkOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def mark_open(
     /**
@@ -2887,7 +6407,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ordered_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def ordered_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ordered_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def ordered_list_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def ordered_list_close(
     /**
@@ -2955,7 +6563,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ordered_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def ordered_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def ordered_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def ordered_list_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[OrderedListOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def ordered_list_open(
     /**
@@ -3023,7 +6719,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def paragraph_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def paragraph_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def paragraph_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def paragraph_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def paragraph_close(
     /**
@@ -3091,7 +6875,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def paragraph_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def paragraph_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def paragraph_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def paragraph_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[ParagraphOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def paragraph_open(
     /**
@@ -3159,7 +7031,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def softbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SoftbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def softbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SoftbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def softbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SoftbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def softbreak(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SoftbreakToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def softbreak(
     /**
@@ -3227,7 +7187,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def strong_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def strong_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def strong_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def strong_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def strong_close(
     /**
@@ -3295,7 +7343,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def strong_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def strong_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def strong_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def strong_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[StrongOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def strong_open(
     /**
@@ -3363,7 +7499,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def sub(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SubToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def sub(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SubToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def sub(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SubToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def sub(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SubToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def sub(
     /**
@@ -3431,7 +7655,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def sup(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SupToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def sup(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SupToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def sup(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SupToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def sup(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[SupToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def sup(
     /**
@@ -3499,7 +7811,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def table_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def table_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def table_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def table_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def table_close(
     /**
@@ -3567,7 +7967,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def table_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def table_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def table_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def table_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TableOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def table_open(
     /**
@@ -3635,7 +8123,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tbody_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def tbody_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tbody_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def tbody_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def tbody_close(
     /**
@@ -3703,7 +8279,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tbody_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def tbody_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tbody_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def tbody_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TBodyOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def tbody_open(
     /**
@@ -3771,7 +8435,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def td_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def td_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def td_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def td_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def td_close(
     /**
@@ -3839,7 +8591,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def td_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def td_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def td_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def td_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TDOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def td_open(
     /**
@@ -3907,7 +8747,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def text(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TextToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def text(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TextToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def text(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TextToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def text(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TextToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def text(
     /**
@@ -3975,7 +8903,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def th_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def th_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def th_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def th_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def th_close(
     /**
@@ -4043,7 +9059,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def th_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def th_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def th_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def th_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def th_open(
     /**
@@ -4111,7 +9215,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def thead_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def thead_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def thead_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def thead_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def thead_close(
     /**
@@ -4179,7 +9371,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def thead_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def thead_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def thead_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def thead_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[THeadOpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def thead_open(
     /**
@@ -4247,7 +9527,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TRCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def tr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TRCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TRCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def tr_close(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TRCloseToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def tr_close(
     /**
@@ -4315,7 +9683,95 @@ trait Rules extends /* name */ StringDictionary[(Rule[TagToken, String]) | (Stri
     /**
     * The options given to remarkable.
     */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TROpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env
+  ): String = js.native
+  def tr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TROpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: js.UndefOr[scala.Nothing],
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: Env,
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
+  ): String = js.native
+  def tr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TROpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
   options: Options
+  ): String = js.native
+  def tr_open(
+    /**
+    * The list of tokens currently being processed.
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  tokens: js.Array[TROpenToken],
+    /**
+    * The index of the token currently being processed.
+    */
+  idx: Double,
+    /**
+    * The options given to remarkable.
+    */
+  options: Options,
+    /**
+    * The key-value store created by the parsing rules.
+    */
+  env: js.UndefOr[scala.Nothing],
+    /**
+    * The possible instance of Remarkable. See `fence` renderer function.
+    */
+  instance: Remarkable
   ): String = js.native
   def tr_open(
     /**

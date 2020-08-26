@@ -3,7 +3,6 @@ package typings.protractor
 import org.scalablytyped.runtime.StringDictionary
 import typings.blockingProxy.mod.BPClient
 import typings.protractor.anon.Args
-import typings.protractor.debuggerMod.DebugHelper
 import typings.protractor.elementMod.ElementArrayFinder
 import typings.protractor.elementMod.ElementFinder
 import typings.protractor.expectedConditionsMod.ProtractorExpectedConditions
@@ -39,8 +38,38 @@ object browserMod extends js.Object {
        with /* key */ StringDictionary[js.Any] {
     def this(webdriverInstance: WebDriver) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String) = this()
+    def this(webdriverInstance: WebDriver, opt_baseUrl: js.UndefOr[scala.Nothing], opt_rootElement: String) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.Promise[String]
+    ) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String, opt_rootElement: String) = this()
     def this(webdriverInstance: WebDriver, opt_baseUrl: String, opt_rootElement: js.Promise[String]) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.UndefOr[scala.Nothing],
+      opt_untrackOutstandingTimeouts: Boolean
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: Boolean
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: Boolean
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: js.UndefOr[scala.Nothing],
+      opt_untrackOutstandingTimeouts: Boolean
+    ) = this()
     def this(
       webdriverInstance: WebDriver,
       opt_baseUrl: String,
@@ -55,9 +84,79 @@ object browserMod extends js.Object {
     ) = this()
     def this(
       webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.UndefOr[scala.Nothing],
+      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.UndefOr[scala.Nothing],
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: js.UndefOr[scala.Nothing],
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: js.UndefOr[scala.Nothing],
+      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: js.UndefOr[scala.Nothing],
+      opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: String,
+      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
       opt_baseUrl: String,
       opt_rootElement: String,
       opt_untrackOutstandingTimeouts: Boolean,
+      opt_blockingProxyUrl: String
+    ) = this()
+    def this(
+      webdriverInstance: WebDriver,
+      opt_baseUrl: String,
+      opt_rootElement: js.Promise[String],
+      opt_untrackOutstandingTimeouts: js.UndefOr[scala.Nothing],
       opt_blockingProxyUrl: String
     ) = this()
     def this(
@@ -84,10 +183,6 @@ object browserMod extends js.Object {
       * not being used and Protractor will handle client-side synchronization.
       */
     var bpClient: BPClient = js.native
-    /**
-      * A helper that manages debugging tests.
-      */
-    var debugHelper: DebugHelper = js.native
     /**
       * If specified, start a debugger server at specified port instead of repl
       * when running element explorer.
@@ -253,37 +348,11 @@ object browserMod extends js.Object {
       */
     def controlFlowIsEnabled(): js.Any = js.native
     /**
-      * Adds a task to the control flow to pause the test and inject helper
-      * functions
-      * into the browser, so that debugging may be done in the browser console.
-      *
-      * This should be used under node in debug mode, i.e. with
-      * protractor debug <configuration.js>
-      *
-      * @example
-      * While in the debugger, commands can be scheduled through webdriver by
-      * entering the repl:
-      *   debug> repl
-      *   > element(by.input('user')).sendKeys('Laura');
-      *   > browser.debugger();
-      *   Press Ctrl + c to leave debug repl
-      *   debug> c
-      *
-      * This will run the sendKeys command as the next task, then re-enter the
-      * debugger.
-      */
-    def debugger(): js.Promise[Unit] = js.native
-    /**
       * Helper function for finding elements.
       *
       * @type {function(webdriver.Locator): ElementFinder}
       */
     def element(locator: Locator): ElementFinder = js.native
-    /**
-      * See browser.explore().
-      */
-    def enterRepl(): Unit = js.native
-    def enterRepl(opt_debugPort: Double): Unit = js.native
     /**
       * The same as {@code webdriver.WebDriver.prototype.executeAsyncScript},
       * but with a customized description for debugging.
@@ -317,24 +386,6 @@ object browserMod extends js.Object {
     def executeScriptWithDescription(script: String, description: String, scriptArgs: js.Any*): js.Promise[_] = js.native
     def executeScriptWithDescription(script: js.Function, description: String, scriptArgs: js.Any*): js.Promise[_] = js.native
     /**
-      * Beta (unstable) explore function for entering the repl loop from
-      * any point in the control flow. Use browser.explore() in your test.
-      * Does not require changes to the command line (no need to add 'debug').
-      * Note, if you are wrapping your own instance of Protractor, you must
-      * expose globals 'browser' and 'protractor' for pause to work.
-      *
-      * @example
-      * element(by.id('foo')).click();
-      * browser.explore();
-      * // Execution will stop before the next click action.
-      * element(by.id('bar')).click();
-      *
-      * @param {number=} opt_debugPort Optional port to use for the debugging
-      * process
-      */
-    def explore(): Unit = js.native
-    def explore(opt_debugPort: Double): Unit = js.native
-    /**
       * Fork another instance of browser for use in interactive tests.
       *
       * @example
@@ -354,7 +405,15 @@ object browserMod extends js.Object {
       * @returns {ProtractorBrowser} A browser instance.
       */
     def forkNewDriverInstance(): ProtractorBrowser = js.native
+    def forkNewDriverInstance(
+      useSameUrl: js.UndefOr[scala.Nothing],
+      copyMockModules: js.UndefOr[scala.Nothing],
+      copyConfigUpdates: Boolean
+    ): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: js.UndefOr[scala.Nothing], copyMockModules: Boolean): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: js.UndefOr[scala.Nothing], copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean): ProtractorBrowser = js.native
+    def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: js.UndefOr[scala.Nothing], copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Boolean): ProtractorBrowser = js.native
     def forkNewDriverInstance(useSameUrl: Boolean, copyMockModules: Boolean, copyConfigUpdates: Boolean): ProtractorBrowser = js.native
     def get(destination: String, timeout: Double): js.Promise[_] = js.native
@@ -400,25 +459,6 @@ object browserMod extends js.Object {
       */
     def isElementPresent(locatorOrElement: Locator): js.Promise[_] = js.native
     def isElementPresent(locatorOrElement: WebElement): js.Promise[_] = js.native
-    /**
-      * Beta (unstable) pause function for debugging webdriver tests. Use
-      * browser.pause() in your test to enter the protractor debugger from that
-      * point in the control flow.
-      * Does not require changes to the command line (no need to add 'debug').
-      * Note, if you are wrapping your own instance of Protractor, you must
-      * expose globals 'browser' and 'protractor' for pause to work.
-      *
-      * @example
-      * element(by.id('foo')).click();
-      * browser.pause();
-      * // Execution will stop before the next click action.
-      * element(by.id('bar')).click();
-      *
-      * @param {number=} opt_debugPort Optional port to use for the debugging
-      * process
-      */
-    def pause(): js.Promise[_] = js.native
-    def pause(opt_debugPort: Double): js.Promise[_] = js.native
     /**
       * @see webdriver.WebDriver.refresh
       *

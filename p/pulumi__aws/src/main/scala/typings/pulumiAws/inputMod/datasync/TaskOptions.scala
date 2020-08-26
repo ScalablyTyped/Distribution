@@ -40,35 +40,65 @@ trait TaskOptions extends js.Object {
     */
   var uid: js.UndefOr[Input[String]] = js.native
   /**
-    * Whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred. Valid values: `NONE`, `POINT_IN_TIME_CONSISTENT`. Default: `POINT_IN_TIME_CONSISTENT`.
+    * Whether a data integrity verification should be performed at the end of a task execution after all data and metadata have been transferred. Valid values: `NONE`, `POINT_IN_TIME_CONSISTENT`, `ONLY_FILES_TRANSFERRED`. Default: `POINT_IN_TIME_CONSISTENT`.
     */
   var verifyMode: js.UndefOr[Input[String]] = js.native
 }
 
 object TaskOptions {
   @scala.inline
-  def apply(
-    atime: Input[String] = null,
-    bytesPerSecond: Input[Double] = null,
-    gid: Input[String] = null,
-    mtime: Input[String] = null,
-    posixPermissions: Input[String] = null,
-    preserveDeletedFiles: Input[String] = null,
-    preserveDevices: Input[String] = null,
-    uid: Input[String] = null,
-    verifyMode: Input[String] = null
-  ): TaskOptions = {
+  def apply(): TaskOptions = {
     val __obj = js.Dynamic.literal()
-    if (atime != null) __obj.updateDynamic("atime")(atime.asInstanceOf[js.Any])
-    if (bytesPerSecond != null) __obj.updateDynamic("bytesPerSecond")(bytesPerSecond.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (mtime != null) __obj.updateDynamic("mtime")(mtime.asInstanceOf[js.Any])
-    if (posixPermissions != null) __obj.updateDynamic("posixPermissions")(posixPermissions.asInstanceOf[js.Any])
-    if (preserveDeletedFiles != null) __obj.updateDynamic("preserveDeletedFiles")(preserveDeletedFiles.asInstanceOf[js.Any])
-    if (preserveDevices != null) __obj.updateDynamic("preserveDevices")(preserveDevices.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (verifyMode != null) __obj.updateDynamic("verifyMode")(verifyMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskOptions]
   }
+  @scala.inline
+  implicit class TaskOptionsOps[Self <: TaskOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAtime(value: Input[String]): Self = this.set("atime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtime: Self = this.set("atime", js.undefined)
+    @scala.inline
+    def setBytesPerSecond(value: Input[Double]): Self = this.set("bytesPerSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesPerSecond: Self = this.set("bytesPerSecond", js.undefined)
+    @scala.inline
+    def setGid(value: Input[String]): Self = this.set("gid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGid: Self = this.set("gid", js.undefined)
+    @scala.inline
+    def setMtime(value: Input[String]): Self = this.set("mtime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMtime: Self = this.set("mtime", js.undefined)
+    @scala.inline
+    def setPosixPermissions(value: Input[String]): Self = this.set("posixPermissions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosixPermissions: Self = this.set("posixPermissions", js.undefined)
+    @scala.inline
+    def setPreserveDeletedFiles(value: Input[String]): Self = this.set("preserveDeletedFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDeletedFiles: Self = this.set("preserveDeletedFiles", js.undefined)
+    @scala.inline
+    def setPreserveDevices(value: Input[String]): Self = this.set("preserveDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreserveDevices: Self = this.set("preserveDevices", js.undefined)
+    @scala.inline
+    def setUid(value: Input[String]): Self = this.set("uid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUid: Self = this.set("uid", js.undefined)
+    @scala.inline
+    def setVerifyMode(value: Input[String]): Self = this.set("verifyMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerifyMode: Self = this.set("verifyMode", js.undefined)
+  }
+  
 }
 

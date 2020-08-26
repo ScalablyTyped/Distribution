@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object createFunctionMod extends js.Object {
   def apply(): js.Any = js.native
+  def apply(args: js.UndefOr[scala.Nothing], code: js.Any): js.Any = js.native
   def apply(args: js.Any): js.Any = js.native
   def apply(args: js.Any, code: js.Any): js.Any = js.native
 }

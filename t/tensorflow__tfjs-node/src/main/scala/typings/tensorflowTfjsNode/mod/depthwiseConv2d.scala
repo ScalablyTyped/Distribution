@@ -18,31 +18,12 @@ object depthwiseConv2d extends js.Object {
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
     strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid | same | Double,
-    dataFormat: NHWC | NCHW
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double,
-    dataFormat: NHWC | NCHW,
-    dilations: (js.Tuple2[Double, Double]) | Double
-  ): T = js.native
-  def apply[T /* <: Tensor3D | Tensor4D */](
-    x: T | TensorLike,
-    filter: Tensor4D | TensorLike,
-    strides: (js.Tuple2[Double, Double]) | Double,
-    pad: valid | same | Double,
-    dataFormat: NHWC | NCHW,
-    dilations: (js.Tuple2[Double, Double]) | Double,
-    dimRoundingMode: typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil
+    dataFormat: js.UndefOr[NHWC | NCHW],
+    dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
+    dimRoundingMode: js.UndefOr[
+      typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.floor | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.round | typings.tensorflowTfjsNode.tensorflowTfjsNodeStrings.ceil
+    ]
   ): T = js.native
 }
 

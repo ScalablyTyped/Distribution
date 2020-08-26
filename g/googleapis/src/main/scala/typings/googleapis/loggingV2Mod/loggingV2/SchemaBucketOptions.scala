@@ -38,16 +38,34 @@ trait SchemaBucketOptions extends js.Object {
 
 object SchemaBucketOptions {
   @scala.inline
-  def apply(
-    explicitBuckets: SchemaExplicit = null,
-    exponentialBuckets: SchemaExponential = null,
-    linearBuckets: SchemaLinear = null
-  ): SchemaBucketOptions = {
+  def apply(): SchemaBucketOptions = {
     val __obj = js.Dynamic.literal()
-    if (explicitBuckets != null) __obj.updateDynamic("explicitBuckets")(explicitBuckets.asInstanceOf[js.Any])
-    if (exponentialBuckets != null) __obj.updateDynamic("exponentialBuckets")(exponentialBuckets.asInstanceOf[js.Any])
-    if (linearBuckets != null) __obj.updateDynamic("linearBuckets")(linearBuckets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBucketOptions]
   }
+  @scala.inline
+  implicit class SchemaBucketOptionsOps[Self <: SchemaBucketOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExplicitBuckets(value: SchemaExplicit): Self = this.set("explicitBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExplicitBuckets: Self = this.set("explicitBuckets", js.undefined)
+    @scala.inline
+    def setExponentialBuckets(value: SchemaExponential): Self = this.set("exponentialBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExponentialBuckets: Self = this.set("exponentialBuckets", js.undefined)
+    @scala.inline
+    def setLinearBuckets(value: SchemaLinear): Self = this.set("linearBuckets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinearBuckets: Self = this.set("linearBuckets", js.undefined)
+  }
+  
 }
 

@@ -4,45 +4,78 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Glyphspacingpx extends js.Object {
-  var fill_style: js.UndefOr[String] = js.undefined
-  var glyph_spacing_px: js.UndefOr[Double] = js.undefined
-  var left_bar: js.UndefOr[Boolean] = js.undefined
-  var num_lines: js.UndefOr[Double] = js.undefined
-  var right_bar: js.UndefOr[Boolean] = js.undefined
-  var space_above_staff_ln: js.UndefOr[Double] = js.undefined
-  var space_below_staff_ln: js.UndefOr[Double] = js.undefined
-  var spacing_between_lines_px: js.UndefOr[Double] = js.undefined
-  var top_text_position: js.UndefOr[Double] = js.undefined
-  var vertical_bar_width: js.UndefOr[Double] = js.undefined
+  var fill_style: js.UndefOr[String] = js.native
+  var glyph_spacing_px: js.UndefOr[Double] = js.native
+  var left_bar: js.UndefOr[Boolean] = js.native
+  var num_lines: js.UndefOr[Double] = js.native
+  var right_bar: js.UndefOr[Boolean] = js.native
+  var space_above_staff_ln: js.UndefOr[Double] = js.native
+  var space_below_staff_ln: js.UndefOr[Double] = js.native
+  var spacing_between_lines_px: js.UndefOr[Double] = js.native
+  var top_text_position: js.UndefOr[Double] = js.native
+  var vertical_bar_width: js.UndefOr[Double] = js.native
 }
 
 object Glyphspacingpx {
   @scala.inline
-  def apply(
-    fill_style: String = null,
-    glyph_spacing_px: js.UndefOr[Double] = js.undefined,
-    left_bar: js.UndefOr[Boolean] = js.undefined,
-    num_lines: js.UndefOr[Double] = js.undefined,
-    right_bar: js.UndefOr[Boolean] = js.undefined,
-    space_above_staff_ln: js.UndefOr[Double] = js.undefined,
-    space_below_staff_ln: js.UndefOr[Double] = js.undefined,
-    spacing_between_lines_px: js.UndefOr[Double] = js.undefined,
-    top_text_position: js.UndefOr[Double] = js.undefined,
-    vertical_bar_width: js.UndefOr[Double] = js.undefined
-  ): Glyphspacingpx = {
+  def apply(): Glyphspacingpx = {
     val __obj = js.Dynamic.literal()
-    if (fill_style != null) __obj.updateDynamic("fill_style")(fill_style.asInstanceOf[js.Any])
-    if (!js.isUndefined(glyph_spacing_px)) __obj.updateDynamic("glyph_spacing_px")(glyph_spacing_px.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(left_bar)) __obj.updateDynamic("left_bar")(left_bar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(num_lines)) __obj.updateDynamic("num_lines")(num_lines.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(right_bar)) __obj.updateDynamic("right_bar")(right_bar.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(space_above_staff_ln)) __obj.updateDynamic("space_above_staff_ln")(space_above_staff_ln.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(space_below_staff_ln)) __obj.updateDynamic("space_below_staff_ln")(space_below_staff_ln.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(spacing_between_lines_px)) __obj.updateDynamic("spacing_between_lines_px")(spacing_between_lines_px.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(top_text_position)) __obj.updateDynamic("top_text_position")(top_text_position.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical_bar_width)) __obj.updateDynamic("vertical_bar_width")(vertical_bar_width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Glyphspacingpx]
   }
+  @scala.inline
+  implicit class GlyphspacingpxOps[Self <: Glyphspacingpx] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFill_style(value: String): Self = this.set("fill_style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFill_style: Self = this.set("fill_style", js.undefined)
+    @scala.inline
+    def setGlyph_spacing_px(value: Double): Self = this.set("glyph_spacing_px", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyph_spacing_px: Self = this.set("glyph_spacing_px", js.undefined)
+    @scala.inline
+    def setLeft_bar(value: Boolean): Self = this.set("left_bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft_bar: Self = this.set("left_bar", js.undefined)
+    @scala.inline
+    def setNum_lines(value: Double): Self = this.set("num_lines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNum_lines: Self = this.set("num_lines", js.undefined)
+    @scala.inline
+    def setRight_bar(value: Boolean): Self = this.set("right_bar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRight_bar: Self = this.set("right_bar", js.undefined)
+    @scala.inline
+    def setSpace_above_staff_ln(value: Double): Self = this.set("space_above_staff_ln", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace_above_staff_ln: Self = this.set("space_above_staff_ln", js.undefined)
+    @scala.inline
+    def setSpace_below_staff_ln(value: Double): Self = this.set("space_below_staff_ln", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpace_below_staff_ln: Self = this.set("space_below_staff_ln", js.undefined)
+    @scala.inline
+    def setSpacing_between_lines_px(value: Double): Self = this.set("spacing_between_lines_px", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpacing_between_lines_px: Self = this.set("spacing_between_lines_px", js.undefined)
+    @scala.inline
+    def setTop_text_position(value: Double): Self = this.set("top_text_position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop_text_position: Self = this.set("top_text_position", js.undefined)
+    @scala.inline
+    def setVertical_bar_width(value: Double): Self = this.set("vertical_bar_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical_bar_width: Self = this.set("vertical_bar_width", js.undefined)
+  }
+  
 }
 

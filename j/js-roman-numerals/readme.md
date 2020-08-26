@@ -10,9 +10,9 @@ Roman Numerals - JS Library
 | ------------------ | :-------------: |
 | Full name          | js-roman-numerals |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 625 |
+| # downloads        | 907 |
 | # stars            | 0 |
 
 ## Links

@@ -30,20 +30,42 @@ trait CommentMetadata extends js.Object {
 
 object CommentMetadata {
   @scala.inline
-  def apply(
-    CommentId: CommentIdType = null,
-    CommentStatus: CommentStatusType = null,
-    Contributor: User = null,
-    CreatedTimestamp: TimestampType = null,
-    RecipientId: IdType = null
-  ): CommentMetadata = {
+  def apply(): CommentMetadata = {
     val __obj = js.Dynamic.literal()
-    if (CommentId != null) __obj.updateDynamic("CommentId")(CommentId.asInstanceOf[js.Any])
-    if (CommentStatus != null) __obj.updateDynamic("CommentStatus")(CommentStatus.asInstanceOf[js.Any])
-    if (Contributor != null) __obj.updateDynamic("Contributor")(Contributor.asInstanceOf[js.Any])
-    if (CreatedTimestamp != null) __obj.updateDynamic("CreatedTimestamp")(CreatedTimestamp.asInstanceOf[js.Any])
-    if (RecipientId != null) __obj.updateDynamic("RecipientId")(RecipientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentMetadata]
   }
+  @scala.inline
+  implicit class CommentMetadataOps[Self <: CommentMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommentId(value: CommentIdType): Self = this.set("CommentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentId: Self = this.set("CommentId", js.undefined)
+    @scala.inline
+    def setCommentStatus(value: CommentStatusType): Self = this.set("CommentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommentStatus: Self = this.set("CommentStatus", js.undefined)
+    @scala.inline
+    def setContributor(value: User): Self = this.set("Contributor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContributor: Self = this.set("Contributor", js.undefined)
+    @scala.inline
+    def setCreatedTimestamp(value: TimestampType): Self = this.set("CreatedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedTimestamp: Self = this.set("CreatedTimestamp", js.undefined)
+    @scala.inline
+    def setRecipientId(value: IdType): Self = this.set("RecipientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecipientId: Self = this.set("RecipientId", js.undefined)
+  }
+  
 }
 

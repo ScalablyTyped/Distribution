@@ -38,7 +38,7 @@ Instantiable1[(/* reason */ Error) | (/* reason */ String), VFileMessage]
     ]
      with Instantiable3[
       (/* reason */ Error) | (/* reason */ String), 
-      (/* position */ Node) | (/* position */ Point) | (/* position */ Position), 
+      js.UndefOr[(/* position */ Node) | (/* position */ Point) | (/* position */ Position)], 
       /* origin */ String, 
       VFileMessage
     ] {
@@ -92,6 +92,7 @@ Instantiable1[(/* reason */ Error) | (/* reason */ String), VFileMessage]
     * @param origin Place in code the message originates from (`string`, optional).
     */
   def apply(reason: String): VFileMessage = js.native
+  def apply(reason: String, position: js.UndefOr[scala.Nothing], origin: String): VFileMessage = js.native
   def apply(reason: String, position: Node): VFileMessage = js.native
   def apply(reason: String, position: Node, origin: String): VFileMessage = js.native
   def apply(reason: String, position: Point): VFileMessage = js.native
@@ -99,6 +100,7 @@ Instantiable1[(/* reason */ Error) | (/* reason */ String), VFileMessage]
   def apply(reason: String, position: Position): VFileMessage = js.native
   def apply(reason: String, position: Position, origin: String): VFileMessage = js.native
   def apply(reason: Error): VFileMessage = js.native
+  def apply(reason: Error, position: js.UndefOr[scala.Nothing], origin: String): VFileMessage = js.native
   def apply(reason: Error, position: Node): VFileMessage = js.native
   def apply(reason: Error, position: Node, origin: String): VFileMessage = js.native
   def apply(reason: Error, position: Point): VFileMessage = js.native

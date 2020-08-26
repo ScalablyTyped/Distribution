@@ -42,26 +42,54 @@ trait EndpointDemographic extends js.Object {
 
 object EndpointDemographic {
   @scala.inline
-  def apply(
-    AppVersion: string = null,
-    Locale: string = null,
-    Make: string = null,
-    Model: string = null,
-    ModelVersion: string = null,
-    Platform: string = null,
-    PlatformVersion: string = null,
-    Timezone: string = null
-  ): EndpointDemographic = {
+  def apply(): EndpointDemographic = {
     val __obj = js.Dynamic.literal()
-    if (AppVersion != null) __obj.updateDynamic("AppVersion")(AppVersion.asInstanceOf[js.Any])
-    if (Locale != null) __obj.updateDynamic("Locale")(Locale.asInstanceOf[js.Any])
-    if (Make != null) __obj.updateDynamic("Make")(Make.asInstanceOf[js.Any])
-    if (Model != null) __obj.updateDynamic("Model")(Model.asInstanceOf[js.Any])
-    if (ModelVersion != null) __obj.updateDynamic("ModelVersion")(ModelVersion.asInstanceOf[js.Any])
-    if (Platform != null) __obj.updateDynamic("Platform")(Platform.asInstanceOf[js.Any])
-    if (PlatformVersion != null) __obj.updateDynamic("PlatformVersion")(PlatformVersion.asInstanceOf[js.Any])
-    if (Timezone != null) __obj.updateDynamic("Timezone")(Timezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointDemographic]
   }
+  @scala.inline
+  implicit class EndpointDemographicOps[Self <: EndpointDemographic] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppVersion(value: string): Self = this.set("AppVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppVersion: Self = this.set("AppVersion", js.undefined)
+    @scala.inline
+    def setLocale(value: string): Self = this.set("Locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("Locale", js.undefined)
+    @scala.inline
+    def setMake(value: string): Self = this.set("Make", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMake: Self = this.set("Make", js.undefined)
+    @scala.inline
+    def setModel(value: string): Self = this.set("Model", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel: Self = this.set("Model", js.undefined)
+    @scala.inline
+    def setModelVersion(value: string): Self = this.set("ModelVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModelVersion: Self = this.set("ModelVersion", js.undefined)
+    @scala.inline
+    def setPlatform(value: string): Self = this.set("Platform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatform: Self = this.set("Platform", js.undefined)
+    @scala.inline
+    def setPlatformVersion(value: string): Self = this.set("PlatformVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformVersion: Self = this.set("PlatformVersion", js.undefined)
+    @scala.inline
+    def setTimezone(value: string): Self = this.set("Timezone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimezone: Self = this.set("Timezone", js.undefined)
+  }
+  
 }
 

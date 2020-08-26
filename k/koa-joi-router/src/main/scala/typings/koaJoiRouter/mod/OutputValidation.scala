@@ -1,6 +1,5 @@
 package typings.koaJoiRouter.mod
 
-import typings.joi.mod.SchemaLike
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -13,13 +12,13 @@ trait OutputValidation extends js.Object
 
 object OutputValidation {
   @scala.inline
-  def Body(body: SchemaLike = null): OutputValidation = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+  def Body(): OutputValidation = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputValidation]
   }
   @scala.inline
-  def Headers(headers: SchemaLike = null): OutputValidation = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
+  def Headers(): OutputValidation = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputValidation]
   }
 }

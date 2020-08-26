@@ -8,9 +8,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral")
 @js.native
 abstract class SearchPaneSuggestionsRequestDeferral ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral {
-  /** Signals that the app has finished populating a searchSuggestionCollection object while handling the suggestionsrequested event. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
-}
+  extends typings.winrtUwp.Windows.ApplicationModel.Search.SearchPaneSuggestionsRequestDeferral
 

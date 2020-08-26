@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 /**
   * @since 1.0.0
   */
+@js.native
 trait DropdownOptions extends js.Object
 

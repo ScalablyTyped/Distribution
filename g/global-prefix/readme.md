@@ -11,8 +11,8 @@ Get the npm global path prefix.
 | Full name          | global-prefix |
 | Keywords           | global, module, modules, npm, path, prefix, resolve |
 | # releases         | 2 |
-| # dependents       | 32 |
-| # downloads        | 301256628 |
+| # dependents       | 31 |
+| # downloads        | 314551276 |
 | # stars            | 1 |
 
 ## Links

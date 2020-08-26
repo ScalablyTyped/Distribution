@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__pulumi
 
-Typings are for version 1.14.1
+Typings are for version 2.7.1
 
 ## Library description:
 Pulumi's Node.js SDK
@@ -10,9 +10,9 @@ Pulumi's Node.js SDK
 | ------------------ | :-------------: |
 | Full name          | @pulumi/pulumi |
 | Keywords           | - |
-| # releases         | 1737 |
-| # dependents       | 86 |
-| # downloads        | 2193773 |
+| # releases         | 1757 |
+| # dependents       | 87 |
+| # downloads        | 2153457 |
 | # stars            | 0 |
 
 ## Links

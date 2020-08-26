@@ -12,7 +12,7 @@ The lodash method `_.unionWith` exported as a module.
 | Keywords           | lodash-modularized, unionwith |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 1323198 |
+| # downloads        | 1416781 |
 | # stars            | 0 |
 
 ## Links

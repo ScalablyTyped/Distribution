@@ -18,6 +18,7 @@ object fileTransferMod extends js.Object {
       */
     def this(host: String) = this()
     def this(host: String, port: Double) = this()
+    def this(host: String, port: js.UndefOr[scala.Nothing], timeout: Double) = this()
     def this(host: String, port: Double, timeout: Double) = this()
     var buffer: js.Any = js.native
     var bytesreceived: js.Any = js.native

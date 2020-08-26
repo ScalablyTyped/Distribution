@@ -28,12 +28,34 @@ trait SchemaStorageSource extends js.Object {
 
 object SchemaStorageSource {
   @scala.inline
-  def apply(bucket: String = null, generation: String = null, `object`: String = null): SchemaStorageSource = {
+  def apply(): SchemaStorageSource = {
     val __obj = js.Dynamic.literal()
-    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
-    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStorageSource]
   }
+  @scala.inline
+  implicit class SchemaStorageSourceOps[Self <: SchemaStorageSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("bucket", js.undefined)
+    @scala.inline
+    def setGeneration(value: String): Self = this.set("generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneration: Self = this.set("generation", js.undefined)
+    @scala.inline
+    def setObject(value: String): Self = this.set("object", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObject: Self = this.set("object", js.undefined)
+  }
+  
 }
 

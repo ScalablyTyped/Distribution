@@ -6,61 +6,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GlyphIconOptions extends IconOptions {
-  var bgPos: js.UndefOr[PointExpression] = js.undefined
-  var bgSize: js.UndefOr[PointExpression] = js.undefined
-  var glyph: js.UndefOr[String] = js.undefined
-  var glyphAnchor: js.UndefOr[PointExpression] = js.undefined
-  var glyphColor: js.UndefOr[String] = js.undefined
-  var glyphSize: js.UndefOr[String] = js.undefined
-  var prefix: js.UndefOr[String] = js.undefined
+  var bgPos: js.UndefOr[PointExpression] = js.native
+  var bgSize: js.UndefOr[PointExpression] = js.native
+  var glyph: js.UndefOr[String] = js.native
+  var glyphAnchor: js.UndefOr[PointExpression] = js.native
+  var glyphColor: js.UndefOr[String] = js.native
+  var glyphSize: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.native
 }
 
 object GlyphIconOptions {
   @scala.inline
-  def apply(
-    iconUrl: String,
-    attribution: String = null,
-    bgPos: PointExpression = null,
-    bgSize: PointExpression = null,
-    className: String = null,
-    glyph: String = null,
-    glyphAnchor: PointExpression = null,
-    glyphColor: String = null,
-    glyphSize: String = null,
-    iconAnchor: PointExpression = null,
-    iconRetinaUrl: String = null,
-    iconSize: PointExpression = null,
-    pane: String = null,
-    popupAnchor: PointExpression = null,
-    prefix: String = null,
-    shadowAnchor: PointExpression = null,
-    shadowRetinaUrl: String = null,
-    shadowSize: PointExpression = null,
-    shadowUrl: String = null,
-    tooltipAnchor: PointExpression = null
-  ): GlyphIconOptions = {
+  def apply(iconUrl: String): GlyphIconOptions = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (bgPos != null) __obj.updateDynamic("bgPos")(bgPos.asInstanceOf[js.Any])
-    if (bgSize != null) __obj.updateDynamic("bgSize")(bgSize.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (glyph != null) __obj.updateDynamic("glyph")(glyph.asInstanceOf[js.Any])
-    if (glyphAnchor != null) __obj.updateDynamic("glyphAnchor")(glyphAnchor.asInstanceOf[js.Any])
-    if (glyphColor != null) __obj.updateDynamic("glyphColor")(glyphColor.asInstanceOf[js.Any])
-    if (glyphSize != null) __obj.updateDynamic("glyphSize")(glyphSize.asInstanceOf[js.Any])
-    if (iconAnchor != null) __obj.updateDynamic("iconAnchor")(iconAnchor.asInstanceOf[js.Any])
-    if (iconRetinaUrl != null) __obj.updateDynamic("iconRetinaUrl")(iconRetinaUrl.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (popupAnchor != null) __obj.updateDynamic("popupAnchor")(popupAnchor.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (shadowAnchor != null) __obj.updateDynamic("shadowAnchor")(shadowAnchor.asInstanceOf[js.Any])
-    if (shadowRetinaUrl != null) __obj.updateDynamic("shadowRetinaUrl")(shadowRetinaUrl.asInstanceOf[js.Any])
-    if (shadowSize != null) __obj.updateDynamic("shadowSize")(shadowSize.asInstanceOf[js.Any])
-    if (shadowUrl != null) __obj.updateDynamic("shadowUrl")(shadowUrl.asInstanceOf[js.Any])
-    if (tooltipAnchor != null) __obj.updateDynamic("tooltipAnchor")(tooltipAnchor.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlyphIconOptions]
   }
+  @scala.inline
+  implicit class GlyphIconOptionsOps[Self <: GlyphIconOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBgPos(value: PointExpression): Self = this.set("bgPos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgPos: Self = this.set("bgPos", js.undefined)
+    @scala.inline
+    def setBgSize(value: PointExpression): Self = this.set("bgSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBgSize: Self = this.set("bgSize", js.undefined)
+    @scala.inline
+    def setGlyph(value: String): Self = this.set("glyph", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyph: Self = this.set("glyph", js.undefined)
+    @scala.inline
+    def setGlyphAnchor(value: PointExpression): Self = this.set("glyphAnchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphAnchor: Self = this.set("glyphAnchor", js.undefined)
+    @scala.inline
+    def setGlyphColor(value: String): Self = this.set("glyphColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphColor: Self = this.set("glyphColor", js.undefined)
+    @scala.inline
+    def setGlyphSize(value: String): Self = this.set("glyphSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlyphSize: Self = this.set("glyphSize", js.undefined)
+    @scala.inline
+    def setPrefix(value: String): Self = this.set("prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("prefix", js.undefined)
+  }
+  
 }
 

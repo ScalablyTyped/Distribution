@@ -1,36 +1,39 @@
 package typings.devextreme.mod.DevExpress.viz
 
-import typings.devextreme.devextremeStrings.dash
-import typings.devextreme.devextremeStrings.dot
-import typings.devextreme.devextremeStrings.longDash
-import typings.devextreme.devextremeStrings.solid
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @name dxChartSeriesTypes.StepAreaSeries.hoverStyle */
+@js.native
 trait dxChartSeriesTypesStepAreaSeriesHoverStyle extends dxChartSeriesTypesCommonSeriesHoverStyle {
   /** @name dxChartSeriesTypes.StepAreaSeries.hoverStyle.border */
   @JSName("border")
-  var border_dxChartSeriesTypesStepAreaSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyleBorder] = js.undefined
+  var border_dxChartSeriesTypesStepAreaSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyleBorder] = js.native
 }
 
 object dxChartSeriesTypesStepAreaSeriesHoverStyle {
   @scala.inline
-  def apply(
-    border: dxChartSeriesTypesStepAreaSeriesHoverStyleBorder = null,
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    hatching: dxChartSeriesTypesCommonSeriesHoverStyleHatching = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): dxChartSeriesTypesStepAreaSeriesHoverStyle = {
+  def apply(): dxChartSeriesTypesStepAreaSeriesHoverStyle = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (hatching != null) __obj.updateDynamic("hatching")(hatching.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesStepAreaSeriesHoverStyle]
   }
+  @scala.inline
+  implicit class dxChartSeriesTypesStepAreaSeriesHoverStyleOps[Self <: dxChartSeriesTypesStepAreaSeriesHoverStyle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBorder(value: dxChartSeriesTypesStepAreaSeriesHoverStyleBorder): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+  }
+  
 }
 

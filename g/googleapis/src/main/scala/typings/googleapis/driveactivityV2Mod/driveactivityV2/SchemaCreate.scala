@@ -28,12 +28,34 @@ trait SchemaCreate extends js.Object {
 
 object SchemaCreate {
   @scala.inline
-  def apply(copy: SchemaCopy = null, `new`: SchemaNew = null, upload: SchemaUpload = null): SchemaCreate = {
+  def apply(): SchemaCreate = {
     val __obj = js.Dynamic.literal()
-    if (copy != null) __obj.updateDynamic("copy")(copy.asInstanceOf[js.Any])
-    if (`new` != null) __obj.updateDynamic("new")(`new`.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCreate]
   }
+  @scala.inline
+  implicit class SchemaCreateOps[Self <: SchemaCreate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCopy(value: SchemaCopy): Self = this.set("copy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCopy: Self = this.set("copy", js.undefined)
+    @scala.inline
+    def setNew(value: SchemaNew): Self = this.set("new", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNew: Self = this.set("new", js.undefined)
+    @scala.inline
+    def setUpload(value: SchemaUpload): Self = this.set("upload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpload: Self = this.set("upload", js.undefined)
+  }
+  
 }
 

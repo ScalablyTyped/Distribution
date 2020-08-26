@@ -23,6 +23,10 @@ trait CreateVpcPeeringConnectionRequest extends js.Object {
     */
   var PeerVpcId: js.UndefOr[String] = js.native
   /**
+    * The tags to assign to the peering connection.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  /**
     * The ID of the requester VPC. You must specify this parameter in the request.
     */
   var VpcId: js.UndefOr[typings.awsSdk.ec2Mod.VpcId] = js.native
@@ -30,20 +34,48 @@ trait CreateVpcPeeringConnectionRequest extends js.Object {
 
 object CreateVpcPeeringConnectionRequest {
   @scala.inline
-  def apply(
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    PeerOwnerId: String = null,
-    PeerRegion: String = null,
-    PeerVpcId: String = null,
-    VpcId: VpcId = null
-  ): CreateVpcPeeringConnectionRequest = {
+  def apply(): CreateVpcPeeringConnectionRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (PeerOwnerId != null) __obj.updateDynamic("PeerOwnerId")(PeerOwnerId.asInstanceOf[js.Any])
-    if (PeerRegion != null) __obj.updateDynamic("PeerRegion")(PeerRegion.asInstanceOf[js.Any])
-    if (PeerVpcId != null) __obj.updateDynamic("PeerVpcId")(PeerVpcId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVpcPeeringConnectionRequest]
   }
+  @scala.inline
+  implicit class CreateVpcPeeringConnectionRequestOps[Self <: CreateVpcPeeringConnectionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setPeerOwnerId(value: String): Self = this.set("PeerOwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerOwnerId: Self = this.set("PeerOwnerId", js.undefined)
+    @scala.inline
+    def setPeerRegion(value: String): Self = this.set("PeerRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerRegion: Self = this.set("PeerRegion", js.undefined)
+    @scala.inline
+    def setPeerVpcId(value: String): Self = this.set("PeerVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeerVpcId: Self = this.set("PeerVpcId", js.undefined)
+    @scala.inline
+    def setTagSpecificationsVarargs(value: TagSpecification*): Self = this.set("TagSpecifications", js.Array(value :_*))
+    @scala.inline
+    def setTagSpecifications(value: TagSpecificationList): Self = this.set("TagSpecifications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTagSpecifications: Self = this.set("TagSpecifications", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

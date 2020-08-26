@@ -14,11 +14,12 @@ trait SupportedLocalesOf
   extends Instantiable0[PluralRules]
      with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), PluralRules]
      with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
       /* options */ PluralRulesOptions, 
       PluralRules
     ] {
   def apply(): PluralRules = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], options: PluralRulesOptions): PluralRules = js.native
   def apply(locales: String): PluralRules = js.native
   def apply(locales: String, options: PluralRulesOptions): PluralRules = js.native
   def apply(locales: js.Array[String]): PluralRules = js.native

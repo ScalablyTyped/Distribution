@@ -34,22 +34,50 @@ trait GetPublicKeyResponse extends js.Object {
 
 object GetPublicKeyResponse {
   @scala.inline
-  def apply(
-    CustomerMasterKeySpec: CustomerMasterKeySpec = null,
-    EncryptionAlgorithms: EncryptionAlgorithmSpecList = null,
-    KeyId: KeyIdType = null,
-    KeyUsage: KeyUsageType = null,
-    PublicKey: PublicKeyType = null,
-    SigningAlgorithms: SigningAlgorithmSpecList = null
-  ): GetPublicKeyResponse = {
+  def apply(): GetPublicKeyResponse = {
     val __obj = js.Dynamic.literal()
-    if (CustomerMasterKeySpec != null) __obj.updateDynamic("CustomerMasterKeySpec")(CustomerMasterKeySpec.asInstanceOf[js.Any])
-    if (EncryptionAlgorithms != null) __obj.updateDynamic("EncryptionAlgorithms")(EncryptionAlgorithms.asInstanceOf[js.Any])
-    if (KeyId != null) __obj.updateDynamic("KeyId")(KeyId.asInstanceOf[js.Any])
-    if (KeyUsage != null) __obj.updateDynamic("KeyUsage")(KeyUsage.asInstanceOf[js.Any])
-    if (PublicKey != null) __obj.updateDynamic("PublicKey")(PublicKey.asInstanceOf[js.Any])
-    if (SigningAlgorithms != null) __obj.updateDynamic("SigningAlgorithms")(SigningAlgorithms.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPublicKeyResponse]
   }
+  @scala.inline
+  implicit class GetPublicKeyResponseOps[Self <: GetPublicKeyResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerMasterKeySpec(value: CustomerMasterKeySpec): Self = this.set("CustomerMasterKeySpec", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerMasterKeySpec: Self = this.set("CustomerMasterKeySpec", js.undefined)
+    @scala.inline
+    def setEncryptionAlgorithmsVarargs(value: EncryptionAlgorithmSpec*): Self = this.set("EncryptionAlgorithms", js.Array(value :_*))
+    @scala.inline
+    def setEncryptionAlgorithms(value: EncryptionAlgorithmSpecList): Self = this.set("EncryptionAlgorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionAlgorithms: Self = this.set("EncryptionAlgorithms", js.undefined)
+    @scala.inline
+    def setKeyId(value: KeyIdType): Self = this.set("KeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyId: Self = this.set("KeyId", js.undefined)
+    @scala.inline
+    def setKeyUsage(value: KeyUsageType): Self = this.set("KeyUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyUsage: Self = this.set("KeyUsage", js.undefined)
+    @scala.inline
+    def setPublicKey(value: PublicKeyType): Self = this.set("PublicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("PublicKey", js.undefined)
+    @scala.inline
+    def setSigningAlgorithmsVarargs(value: SigningAlgorithmSpec*): Self = this.set("SigningAlgorithms", js.Array(value :_*))
+    @scala.inline
+    def setSigningAlgorithms(value: SigningAlgorithmSpecList): Self = this.set("SigningAlgorithms", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSigningAlgorithms: Self = this.set("SigningAlgorithms", js.undefined)
+  }
+  
 }
 

@@ -78,43 +78,98 @@ trait CreateStackInput extends js.Object {
 
 object CreateStackInput {
   @scala.inline
-  def apply(
-    StackName: StackName,
-    Capabilities: Capabilities = null,
-    ClientRequestToken: ClientRequestToken = null,
-    DisableRollback: js.UndefOr[DisableRollback] = js.undefined,
-    EnableTerminationProtection: js.UndefOr[EnableTerminationProtection] = js.undefined,
-    NotificationARNs: NotificationARNs = null,
-    OnFailure: OnFailure = null,
-    Parameters: Parameters = null,
-    ResourceTypes: ResourceTypes = null,
-    RoleARN: RoleARN_ = null,
-    RollbackConfiguration: RollbackConfiguration = null,
-    StackPolicyBody: StackPolicyBody = null,
-    StackPolicyURL: StackPolicyURL = null,
-    Tags: Tags = null,
-    TemplateBody: TemplateBody = null,
-    TemplateURL: TemplateURL = null,
-    TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
-  ): CreateStackInput = {
+  def apply(StackName: StackName): CreateStackInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
-    if (Capabilities != null) __obj.updateDynamic("Capabilities")(Capabilities.asInstanceOf[js.Any])
-    if (ClientRequestToken != null) __obj.updateDynamic("ClientRequestToken")(ClientRequestToken.asInstanceOf[js.Any])
-    if (!js.isUndefined(DisableRollback)) __obj.updateDynamic("DisableRollback")(DisableRollback.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnableTerminationProtection)) __obj.updateDynamic("EnableTerminationProtection")(EnableTerminationProtection.get.asInstanceOf[js.Any])
-    if (NotificationARNs != null) __obj.updateDynamic("NotificationARNs")(NotificationARNs.asInstanceOf[js.Any])
-    if (OnFailure != null) __obj.updateDynamic("OnFailure")(OnFailure.asInstanceOf[js.Any])
-    if (Parameters != null) __obj.updateDynamic("Parameters")(Parameters.asInstanceOf[js.Any])
-    if (ResourceTypes != null) __obj.updateDynamic("ResourceTypes")(ResourceTypes.asInstanceOf[js.Any])
-    if (RoleARN != null) __obj.updateDynamic("RoleARN")(RoleARN.asInstanceOf[js.Any])
-    if (RollbackConfiguration != null) __obj.updateDynamic("RollbackConfiguration")(RollbackConfiguration.asInstanceOf[js.Any])
-    if (StackPolicyBody != null) __obj.updateDynamic("StackPolicyBody")(StackPolicyBody.asInstanceOf[js.Any])
-    if (StackPolicyURL != null) __obj.updateDynamic("StackPolicyURL")(StackPolicyURL.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TemplateBody != null) __obj.updateDynamic("TemplateBody")(TemplateBody.asInstanceOf[js.Any])
-    if (TemplateURL != null) __obj.updateDynamic("TemplateURL")(TemplateURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutInMinutes)) __obj.updateDynamic("TimeoutInMinutes")(TimeoutInMinutes.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStackInput]
   }
+  @scala.inline
+  implicit class CreateStackInputOps[Self <: CreateStackInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCapabilitiesVarargs(value: Capability*): Self = this.set("Capabilities", js.Array(value :_*))
+    @scala.inline
+    def setCapabilities(value: Capabilities): Self = this.set("Capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("Capabilities", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("ClientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("ClientRequestToken", js.undefined)
+    @scala.inline
+    def setDisableRollback(value: DisableRollback): Self = this.set("DisableRollback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableRollback: Self = this.set("DisableRollback", js.undefined)
+    @scala.inline
+    def setEnableTerminationProtection(value: EnableTerminationProtection): Self = this.set("EnableTerminationProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableTerminationProtection: Self = this.set("EnableTerminationProtection", js.undefined)
+    @scala.inline
+    def setNotificationARNsVarargs(value: NotificationARN*): Self = this.set("NotificationARNs", js.Array(value :_*))
+    @scala.inline
+    def setNotificationARNs(value: NotificationARNs): Self = this.set("NotificationARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationARNs: Self = this.set("NotificationARNs", js.undefined)
+    @scala.inline
+    def setOnFailure(value: OnFailure): Self = this.set("OnFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFailure: Self = this.set("OnFailure", js.undefined)
+    @scala.inline
+    def setParametersVarargs(value: Parameter*): Self = this.set("Parameters", js.Array(value :_*))
+    @scala.inline
+    def setParameters(value: Parameters): Self = this.set("Parameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParameters: Self = this.set("Parameters", js.undefined)
+    @scala.inline
+    def setResourceTypesVarargs(value: ResourceType*): Self = this.set("ResourceTypes", js.Array(value :_*))
+    @scala.inline
+    def setResourceTypes(value: ResourceTypes): Self = this.set("ResourceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceTypes: Self = this.set("ResourceTypes", js.undefined)
+    @scala.inline
+    def setRoleARN(value: RoleARN_): Self = this.set("RoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleARN: Self = this.set("RoleARN", js.undefined)
+    @scala.inline
+    def setRollbackConfiguration(value: RollbackConfiguration): Self = this.set("RollbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackConfiguration: Self = this.set("RollbackConfiguration", js.undefined)
+    @scala.inline
+    def setStackPolicyBody(value: StackPolicyBody): Self = this.set("StackPolicyBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackPolicyBody: Self = this.set("StackPolicyBody", js.undefined)
+    @scala.inline
+    def setStackPolicyURL(value: StackPolicyURL): Self = this.set("StackPolicyURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackPolicyURL: Self = this.set("StackPolicyURL", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTemplateBody(value: TemplateBody): Self = this.set("TemplateBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateBody: Self = this.set("TemplateBody", js.undefined)
+    @scala.inline
+    def setTemplateURL(value: TemplateURL): Self = this.set("TemplateURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateURL: Self = this.set("TemplateURL", js.undefined)
+    @scala.inline
+    def setTimeoutInMinutes(value: TimeoutMinutes): Self = this.set("TimeoutInMinutes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInMinutes: Self = this.set("TimeoutInMinutes", js.undefined)
+  }
+  
 }
 

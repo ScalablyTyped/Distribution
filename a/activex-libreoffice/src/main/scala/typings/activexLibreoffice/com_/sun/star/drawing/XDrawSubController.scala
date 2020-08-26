@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   * in the center pane is replaced by another one. The sub controller handles the things that are not common to all views, i.e. properties, the current
   * page/slide, and the selection.
   */
+@js.native
 trait XDrawSubController
   extends XDrawView
      with XSelectionSupplier

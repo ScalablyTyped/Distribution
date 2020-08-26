@@ -42,26 +42,54 @@ trait DataSourceSyncJob extends js.Object {
 
 object DataSourceSyncJob {
   @scala.inline
-  def apply(
-    DataSourceErrorCode: String = null,
-    EndTime: Timestamp = null,
-    ErrorCode: ErrorCode = null,
-    ErrorMessage: ErrorMessage = null,
-    ExecutionId: String = null,
-    Metrics: DataSourceSyncJobMetrics = null,
-    StartTime: Timestamp = null,
-    Status: DataSourceSyncJobStatus = null
-  ): DataSourceSyncJob = {
+  def apply(): DataSourceSyncJob = {
     val __obj = js.Dynamic.literal()
-    if (DataSourceErrorCode != null) __obj.updateDynamic("DataSourceErrorCode")(DataSourceErrorCode.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (ErrorCode != null) __obj.updateDynamic("ErrorCode")(ErrorCode.asInstanceOf[js.Any])
-    if (ErrorMessage != null) __obj.updateDynamic("ErrorMessage")(ErrorMessage.asInstanceOf[js.Any])
-    if (ExecutionId != null) __obj.updateDynamic("ExecutionId")(ExecutionId.asInstanceOf[js.Any])
-    if (Metrics != null) __obj.updateDynamic("Metrics")(Metrics.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSyncJob]
   }
+  @scala.inline
+  implicit class DataSourceSyncJobOps[Self <: DataSourceSyncJob] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataSourceErrorCode(value: String): Self = this.set("DataSourceErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSourceErrorCode: Self = this.set("DataSourceErrorCode", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setErrorCode(value: ErrorCode): Self = this.set("ErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorCode: Self = this.set("ErrorCode", js.undefined)
+    @scala.inline
+    def setErrorMessage(value: ErrorMessage): Self = this.set("ErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("ErrorMessage", js.undefined)
+    @scala.inline
+    def setExecutionId(value: String): Self = this.set("ExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("ExecutionId", js.undefined)
+    @scala.inline
+    def setMetrics(value: DataSourceSyncJobMetrics): Self = this.set("Metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("Metrics", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setStatus(value: DataSourceSyncJobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+  }
+  
 }
 

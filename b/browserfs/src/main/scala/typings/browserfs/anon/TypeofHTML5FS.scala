@@ -17,8 +17,13 @@ import scala.scalajs.js.annotation._
 trait TypeofHTML5FS
   extends Instantiable0[default]
      with Instantiable1[/* size */ Double, default]
-     with Instantiable2[/* size */ Double, /* type */ Double, default]
-     with Instantiable3[/* size */ Double, /* type */ Double, /* deprecateMsg */ Boolean, default] {
+     with Instantiable2[js.UndefOr[/* size */ Double], /* type */ Double, default]
+     with Instantiable3[
+      js.UndefOr[/* size */ Double], 
+      js.UndefOr[/* type */ Double], 
+      /* deprecateMsg */ Boolean, 
+      default
+    ] {
   val Name: String = js.native
   val Options: FileSystemOptions = js.native
   /**

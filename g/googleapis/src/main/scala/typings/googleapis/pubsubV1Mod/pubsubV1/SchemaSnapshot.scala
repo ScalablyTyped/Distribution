@@ -45,18 +45,38 @@ trait SchemaSnapshot extends js.Object {
 
 object SchemaSnapshot {
   @scala.inline
-  def apply(
-    expireTime: String = null,
-    labels: StringDictionary[String] = null,
-    name: String = null,
-    topic: String = null
-  ): SchemaSnapshot = {
+  def apply(): SchemaSnapshot = {
     val __obj = js.Dynamic.literal()
-    if (expireTime != null) __obj.updateDynamic("expireTime")(expireTime.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (topic != null) __obj.updateDynamic("topic")(topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSnapshot]
   }
+  @scala.inline
+  implicit class SchemaSnapshotOps[Self <: SchemaSnapshot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExpireTime(value: String): Self = this.set("expireTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpireTime: Self = this.set("expireTime", js.undefined)
+    @scala.inline
+    def setLabels(value: StringDictionary[String]): Self = this.set("labels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabels: Self = this.set("labels", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setTopic(value: String): Self = this.set("topic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopic: Self = this.set("topic", js.undefined)
+  }
+  
 }
 

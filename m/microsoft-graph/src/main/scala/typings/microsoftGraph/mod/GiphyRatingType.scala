@@ -5,8 +5,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - typings.microsoftGraph.microsoftGraphStrings.moderate
   - typings.microsoftGraph.microsoftGraphStrings.strict
+  - typings.microsoftGraph.microsoftGraphStrings.moderate
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue
 */
 trait GiphyRatingType extends js.Object

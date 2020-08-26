@@ -33,7 +33,29 @@ trait XMLHTTP60 extends js.Object {
   def getResponseHeader(bstrHeader: String): String = js.native
   /** Open HTTP connection */
   def open(bstrMethod: String, bstrUrl: String): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrUrl: String,
+    varAsync: js.UndefOr[scala.Nothing],
+    bstrUser: js.UndefOr[scala.Nothing],
+    bstrPassword: js.Any
+  ): Unit = js.native
+  def open(bstrMethod: String, bstrUrl: String, varAsync: js.UndefOr[scala.Nothing], bstrUser: js.Any): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrUrl: String,
+    varAsync: js.UndefOr[scala.Nothing],
+    bstrUser: js.Any,
+    bstrPassword: js.Any
+  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any): Unit = js.native
+  def open(
+    bstrMethod: String,
+    bstrUrl: String,
+    varAsync: js.Any,
+    bstrUser: js.UndefOr[scala.Nothing],
+    bstrPassword: js.Any
+  ): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any): Unit = js.native
   def open(bstrMethod: String, bstrUrl: String, varAsync: js.Any, bstrUser: js.Any, bstrPassword: js.Any): Unit = js.native
   /** Send HTTP request */

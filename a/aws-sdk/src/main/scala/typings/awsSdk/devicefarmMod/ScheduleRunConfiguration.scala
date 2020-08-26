@@ -46,28 +46,62 @@ trait ScheduleRunConfiguration extends js.Object {
 
 object ScheduleRunConfiguration {
   @scala.inline
-  def apply(
-    auxiliaryApps: AmazonResourceNames = null,
-    billingMethod: BillingMethod = null,
-    customerArtifactPaths: CustomerArtifactPaths = null,
-    extraDataPackageArn: AmazonResourceName = null,
-    locale: String = null,
-    location: Location = null,
-    networkProfileArn: AmazonResourceName = null,
-    radios: Radios = null,
-    vpceConfigurationArns: AmazonResourceNames = null
-  ): ScheduleRunConfiguration = {
+  def apply(): ScheduleRunConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (auxiliaryApps != null) __obj.updateDynamic("auxiliaryApps")(auxiliaryApps.asInstanceOf[js.Any])
-    if (billingMethod != null) __obj.updateDynamic("billingMethod")(billingMethod.asInstanceOf[js.Any])
-    if (customerArtifactPaths != null) __obj.updateDynamic("customerArtifactPaths")(customerArtifactPaths.asInstanceOf[js.Any])
-    if (extraDataPackageArn != null) __obj.updateDynamic("extraDataPackageArn")(extraDataPackageArn.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (networkProfileArn != null) __obj.updateDynamic("networkProfileArn")(networkProfileArn.asInstanceOf[js.Any])
-    if (radios != null) __obj.updateDynamic("radios")(radios.asInstanceOf[js.Any])
-    if (vpceConfigurationArns != null) __obj.updateDynamic("vpceConfigurationArns")(vpceConfigurationArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleRunConfiguration]
   }
+  @scala.inline
+  implicit class ScheduleRunConfigurationOps[Self <: ScheduleRunConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuxiliaryAppsVarargs(value: AmazonResourceName*): Self = this.set("auxiliaryApps", js.Array(value :_*))
+    @scala.inline
+    def setAuxiliaryApps(value: AmazonResourceNames): Self = this.set("auxiliaryApps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuxiliaryApps: Self = this.set("auxiliaryApps", js.undefined)
+    @scala.inline
+    def setBillingMethod(value: BillingMethod): Self = this.set("billingMethod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingMethod: Self = this.set("billingMethod", js.undefined)
+    @scala.inline
+    def setCustomerArtifactPaths(value: CustomerArtifactPaths): Self = this.set("customerArtifactPaths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerArtifactPaths: Self = this.set("customerArtifactPaths", js.undefined)
+    @scala.inline
+    def setExtraDataPackageArn(value: AmazonResourceName): Self = this.set("extraDataPackageArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtraDataPackageArn: Self = this.set("extraDataPackageArn", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setLocation(value: Location): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setNetworkProfileArn(value: AmazonResourceName): Self = this.set("networkProfileArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkProfileArn: Self = this.set("networkProfileArn", js.undefined)
+    @scala.inline
+    def setRadios(value: Radios): Self = this.set("radios", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadios: Self = this.set("radios", js.undefined)
+    @scala.inline
+    def setVpceConfigurationArnsVarargs(value: AmazonResourceName*): Self = this.set("vpceConfigurationArns", js.Array(value :_*))
+    @scala.inline
+    def setVpceConfigurationArns(value: AmazonResourceNames): Self = this.set("vpceConfigurationArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpceConfigurationArns: Self = this.set("vpceConfigurationArns", js.undefined)
+  }
+  
 }
 

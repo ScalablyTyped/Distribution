@@ -11,7 +11,7 @@ A Mustache template engine for Node.js
 | Keywords           | template, mustache |
 | # releases         | 1 |
 | # dependents       | 63 |
-| # downloads        | 1380759 |
+| # downloads        | 1396648 |
 | # stars            | 1 |
 
 ## Links

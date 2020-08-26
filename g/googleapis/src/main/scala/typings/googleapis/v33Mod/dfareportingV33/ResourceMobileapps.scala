@@ -28,6 +28,7 @@ class ResourceMobileapps protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMobileApp] = js.native
   def get(callback: BodyResponseCallback[SchemaMobileApp]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileApp] = js.native
   def get(params: ParamsResourceMobileappsGet): GaxiosPromise[SchemaMobileApp] = js.native
   def get(params: ParamsResourceMobileappsGet, callback: BodyResponseCallback[SchemaMobileApp]): Unit = js.native
   def get(
@@ -60,6 +61,7 @@ class ResourceMobileapps protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMobileAppsListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(params: ParamsResourceMobileappsList): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(params: ParamsResourceMobileappsList, callback: BodyResponseCallback[SchemaMobileAppsListResponse]): Unit = js.native
   def list(

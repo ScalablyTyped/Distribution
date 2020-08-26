@@ -1,12 +1,11 @@
 package typings.node.tlsMod
 
 import typings.node.Buffer
-import typings.std.Error
-import typings.std.Uint8Array
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TLSSocketOptions
   extends SecureContextOptions
      with CommonConnectionOptions {
@@ -14,87 +13,57 @@ trait TLSSocketOptions
     * If true the TLS socket will be instantiated in server-mode.
     * Defaults to false.
     */
-  var isServer: js.UndefOr[Boolean] = js.undefined
+  var isServer: js.UndefOr[Boolean] = js.native
   /**
     * If true, specifies that the OCSP status request extension will be
     * added to the client hello and an 'OCSPResponse' event will be
     * emitted on the socket before establishing a secure communication
     */
-  var requestOCSP: js.UndefOr[Boolean] = js.undefined
+  var requestOCSP: js.UndefOr[Boolean] = js.native
   /**
     * An optional net.Server instance.
     */
-  var server: js.UndefOr[typings.node.netMod.Server] = js.undefined
+  var server: js.UndefOr[typings.node.netMod.Server] = js.native
   /**
     * An optional Buffer instance containing a TLS session.
     */
-  var session: js.UndefOr[Buffer] = js.undefined
+  var session: js.UndefOr[Buffer] = js.native
 }
 
 object TLSSocketOptions {
   @scala.inline
-  def apply(
-    ALPNProtocols: (js.Array[String | Uint8Array]) | Uint8Array = null,
-    SNICallback: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit = null,
-    ca: String | Buffer | (js.Array[String | Buffer]) = null,
-    cert: String | Buffer | (js.Array[String | Buffer]) = null,
-    ciphers: String = null,
-    clientCertEngine: String = null,
-    crl: String | Buffer | (js.Array[String | Buffer]) = null,
-    dhparam: String | Buffer = null,
-    ecdhCurve: String = null,
-    enableTrace: js.UndefOr[Boolean] = js.undefined,
-    honorCipherOrder: js.UndefOr[Boolean] = js.undefined,
-    isServer: js.UndefOr[Boolean] = js.undefined,
-    key: String | Buffer | (js.Array[Buffer | KeyObject]) = null,
-    maxVersion: SecureVersion = null,
-    minVersion: SecureVersion = null,
-    passphrase: String = null,
-    pfx: String | Buffer | (js.Array[String | Buffer | PxfObject]) = null,
-    privateKeyEngine: String = null,
-    privateKeyIdentifier: String = null,
-    rejectUnauthorized: js.UndefOr[Boolean] = js.undefined,
-    requestCert: js.UndefOr[Boolean] = js.undefined,
-    requestOCSP: js.UndefOr[Boolean] = js.undefined,
-    secureContext: SecureContext = null,
-    secureOptions: js.UndefOr[Double] = js.undefined,
-    secureProtocol: String = null,
-    server: typings.node.netMod.Server = null,
-    session: Buffer = null,
-    sessionIdContext: String = null,
-    sigalgs: String = null
-  ): TLSSocketOptions = {
+  def apply(): TLSSocketOptions = {
     val __obj = js.Dynamic.literal()
-    if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
-    if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
-    if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers.asInstanceOf[js.Any])
-    if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine.asInstanceOf[js.Any])
-    if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
-    if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
-    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTrace)) __obj.updateDynamic("enableTrace")(enableTrace.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isServer)) __obj.updateDynamic("isServer")(isServer.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
-    if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (privateKeyEngine != null) __obj.updateDynamic("privateKeyEngine")(privateKeyEngine.asInstanceOf[js.Any])
-    if (privateKeyIdentifier != null) __obj.updateDynamic("privateKeyIdentifier")(privateKeyIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCert)) __obj.updateDynamic("requestCert")(requestCert.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestOCSP)) __obj.updateDynamic("requestOCSP")(requestOCSP.get.asInstanceOf[js.Any])
-    if (secureContext != null) __obj.updateDynamic("secureContext")(secureContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(secureOptions)) __obj.updateDynamic("secureOptions")(secureOptions.get.asInstanceOf[js.Any])
-    if (secureProtocol != null) __obj.updateDynamic("secureProtocol")(secureProtocol.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (sessionIdContext != null) __obj.updateDynamic("sessionIdContext")(sessionIdContext.asInstanceOf[js.Any])
-    if (sigalgs != null) __obj.updateDynamic("sigalgs")(sigalgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[TLSSocketOptions]
   }
+  @scala.inline
+  implicit class TLSSocketOptionsOps[Self <: TLSSocketOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIsServer(value: Boolean): Self = this.set("isServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsServer: Self = this.set("isServer", js.undefined)
+    @scala.inline
+    def setRequestOCSP(value: Boolean): Self = this.set("requestOCSP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestOCSP: Self = this.set("requestOCSP", js.undefined)
+    @scala.inline
+    def setServer(value: typings.node.netMod.Server): Self = this.set("server", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServer: Self = this.set("server", js.undefined)
+    @scala.inline
+    def setSession(value: Buffer): Self = this.set("session", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSession: Self = this.set("session", js.undefined)
+  }
+  
 }
 

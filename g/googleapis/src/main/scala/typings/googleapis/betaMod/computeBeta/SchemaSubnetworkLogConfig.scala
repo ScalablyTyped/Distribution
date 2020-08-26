@@ -40,18 +40,38 @@ trait SchemaSubnetworkLogConfig extends js.Object {
 
 object SchemaSubnetworkLogConfig {
   @scala.inline
-  def apply(
-    aggregationInterval: String = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    flowSampling: js.UndefOr[Double] = js.undefined,
-    metadata: String = null
-  ): SchemaSubnetworkLogConfig = {
+  def apply(): SchemaSubnetworkLogConfig = {
     val __obj = js.Dynamic.literal()
-    if (aggregationInterval != null) __obj.updateDynamic("aggregationInterval")(aggregationInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(flowSampling)) __obj.updateDynamic("flowSampling")(flowSampling.get.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSubnetworkLogConfig]
   }
+  @scala.inline
+  implicit class SchemaSubnetworkLogConfigOps[Self <: SchemaSubnetworkLogConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAggregationInterval(value: String): Self = this.set("aggregationInterval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAggregationInterval: Self = this.set("aggregationInterval", js.undefined)
+    @scala.inline
+    def setEnable(value: Boolean): Self = this.set("enable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnable: Self = this.set("enable", js.undefined)
+    @scala.inline
+    def setFlowSampling(value: Double): Self = this.set("flowSampling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowSampling: Self = this.set("flowSampling", js.undefined)
+    @scala.inline
+    def setMetadata(value: String): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+  }
+  
 }
 

@@ -25,6 +25,15 @@ object scrollUtilsMod extends js.Object {
     currScrollTop: Double,
     getLeftOffset: js.Function1[/* columnIndex */ Double, Double],
     getTopOffset: js.Function1[/* rowIndex */ Double, Double],
+    numFrozenRows: js.UndefOr[scala.Nothing],
+    numFrozenColumns: Double
+  ): ScrollLeft = js.native
+  def getScrollPositionForRegion(
+    region: IRegion,
+    currScrollLeft: Double,
+    currScrollTop: Double,
+    getLeftOffset: js.Function1[/* columnIndex */ Double, Double],
+    getTopOffset: js.Function1[/* rowIndex */ Double, Double],
     numFrozenRows: Double
   ): ScrollLeft = js.native
   def getScrollPositionForRegion(

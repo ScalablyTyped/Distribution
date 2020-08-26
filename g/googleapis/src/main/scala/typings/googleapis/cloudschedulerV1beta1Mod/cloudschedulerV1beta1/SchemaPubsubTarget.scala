@@ -34,12 +34,34 @@ trait SchemaPubsubTarget extends js.Object {
 
 object SchemaPubsubTarget {
   @scala.inline
-  def apply(attributes: StringDictionary[String] = null, data: String = null, topicName: String = null): SchemaPubsubTarget = {
+  def apply(): SchemaPubsubTarget = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (topicName != null) __obj.updateDynamic("topicName")(topicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPubsubTarget]
   }
+  @scala.inline
+  implicit class SchemaPubsubTargetOps[Self <: SchemaPubsubTarget] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: StringDictionary[String]): Self = this.set("attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("attributes", js.undefined)
+    @scala.inline
+    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setTopicName(value: String): Self = this.set("topicName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTopicName: Self = this.set("topicName", js.undefined)
+  }
+  
 }
 

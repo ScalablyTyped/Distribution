@@ -1467,27 +1467,37 @@ trait LoDashFp extends js.Object {
   def delay(wait: Double, func: js.Function1[/* repeated */ js.Any, _]): Double = js.native
   def delay(wait: __, func: js.Function1[/* repeated */ js.Any, _]): LodashDelay1x2 = js.native
   def difference[T](): LodashDifference1x1[T] = js.native
-  def difference[T](array: js.UndefOr[List[T] | Null], values: List[T]): js.Array[T] = js.native
+  def difference[T](array: js.UndefOr[scala.Nothing], values: List[T]): js.Array[T] = js.native
+  def difference[T](array: Null, values: List[T]): js.Array[T] = js.native
   def difference[T](array: List[T]): LodashDifference1x1[T] = js.native
+  def difference[T](array: List[T], values: List[T]): js.Array[T] = js.native
   def difference[T](array: __, values: List[T]): LodashDifference1x2[T] = js.native
   def differenceBy[T1](iteratee: __): LodashDifferenceBy1x2[T1] = js.native
   def differenceBy[T1](iteratee: __, array: List[T1]): LodashDifferenceBy1x2[T1] = js.native
   def differenceBy[T2](iteratee: __, array: __, values: List[T2]): LodashDifferenceBy1x4[T2] = js.native
   def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2]): LodashDifferenceBy1x3[T1, T2] = js.native
-  def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2], array: js.UndefOr[List[T1] | Null], values: List[T2]): js.Array[T1] = js.native
+  def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2], array: js.UndefOr[scala.Nothing], values: List[T2]): js.Array[T1] = js.native
+  def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2], array: Null, values: List[T2]): js.Array[T1] = js.native
   def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2], array: List[T1]): LodashDifferenceBy1x3[T1, T2] = js.native
+  def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2], array: List[T1], values: List[T2]): js.Array[T1] = js.native
   def differenceBy[T1, T2](iteratee: ValueIteratee[T1 | T2], array: __, values: List[T2]): LodashDifferenceBy1x5[T1] = js.native
-  def differenceBy[T1, T2](iteratee: __, array: js.UndefOr[List[T1] | Null], values: List[T2]): LodashDifferenceBy1x6[T1, T2] = js.native
+  def differenceBy[T1, T2](iteratee: __, array: js.UndefOr[scala.Nothing], values: List[T2]): LodashDifferenceBy1x6[T1, T2] = js.native
+  def differenceBy[T1, T2](iteratee: __, array: Null, values: List[T2]): LodashDifferenceBy1x6[T1, T2] = js.native
+  def differenceBy[T1, T2](iteratee: __, array: List[T1], values: List[T2]): LodashDifferenceBy1x6[T1, T2] = js.native
   @JSName("differenceBy")
   def differenceBy_T1T2_LodashDifferenceBy1x1[T1, T2](iteratee: ValueIteratee[T1 | T2]): LodashDifferenceBy1x1[T1, T2] = js.native
   def differenceWith[T1](comparator: __): LodashDifferenceWith1x2[T1] = js.native
   def differenceWith[T1](comparator: __, array: List[T1]): LodashDifferenceWith1x2[T1] = js.native
   def differenceWith[T2](comparator: __, array: __, values: List[T2]): LodashDifferenceWith1x4[T2] = js.native
   def differenceWith[T1, T2](comparator: Comparator2[T1, T2]): LodashDifferenceWith1x3[T1, T2] = js.native
-  def differenceWith[T1, T2](comparator: Comparator2[T1, T2], array: js.UndefOr[List[T1] | Null], values: List[T2]): js.Array[T1] = js.native
+  def differenceWith[T1, T2](comparator: Comparator2[T1, T2], array: js.UndefOr[scala.Nothing], values: List[T2]): js.Array[T1] = js.native
+  def differenceWith[T1, T2](comparator: Comparator2[T1, T2], array: Null, values: List[T2]): js.Array[T1] = js.native
   def differenceWith[T1, T2](comparator: Comparator2[T1, T2], array: List[T1]): LodashDifferenceWith1x3[T1, T2] = js.native
+  def differenceWith[T1, T2](comparator: Comparator2[T1, T2], array: List[T1], values: List[T2]): js.Array[T1] = js.native
   def differenceWith[T1, T2](comparator: Comparator2[T1, T2], array: __, values: List[T2]): LodashDifferenceWith1x5[T1] = js.native
-  def differenceWith[T1, T2](comparator: __, array: js.UndefOr[List[T1] | Null], values: List[T2]): LodashDifferenceWith1x6[T1, T2] = js.native
+  def differenceWith[T1, T2](comparator: __, array: js.UndefOr[scala.Nothing], values: List[T2]): LodashDifferenceWith1x6[T1, T2] = js.native
+  def differenceWith[T1, T2](comparator: __, array: Null, values: List[T2]): LodashDifferenceWith1x6[T1, T2] = js.native
+  def differenceWith[T1, T2](comparator: __, array: List[T1], values: List[T2]): LodashDifferenceWith1x6[T1, T2] = js.native
   @JSName("differenceWith")
   def differenceWith_T1T2_LodashDifferenceWith1x1[T1, T2](comparator: Comparator2[T1, T2]): LodashDifferenceWith1x1[T1, T2] = js.native
   def dissoc(path: PropertyPath): LodashUnset1x1 = js.native
@@ -3396,10 +3406,14 @@ trait LoDashFp extends js.Object {
   def intersectionWith[T1](comparator: __, array: List[T1]): LodashIntersectionWith1x2[T1] = js.native
   def intersectionWith[T2](comparator: __, array: __, values: List[T2]): LodashIntersectionWith1x4[T2] = js.native
   def intersectionWith[T1, T2](comparator: Comparator2[T1, T2]): LodashIntersectionWith1x3[T1, T2] = js.native
-  def intersectionWith[T1, T2](comparator: Comparator2[T1, T2], array: js.UndefOr[List[T1] | Null], values: List[T2]): js.Array[T1] = js.native
+  def intersectionWith[T1, T2](comparator: Comparator2[T1, T2], array: js.UndefOr[scala.Nothing], values: List[T2]): js.Array[T1] = js.native
+  def intersectionWith[T1, T2](comparator: Comparator2[T1, T2], array: Null, values: List[T2]): js.Array[T1] = js.native
   def intersectionWith[T1, T2](comparator: Comparator2[T1, T2], array: List[T1]): LodashIntersectionWith1x3[T1, T2] = js.native
+  def intersectionWith[T1, T2](comparator: Comparator2[T1, T2], array: List[T1], values: List[T2]): js.Array[T1] = js.native
   def intersectionWith[T1, T2](comparator: Comparator2[T1, T2], array: __, values: List[T2]): LodashIntersectionWith1x5[T1] = js.native
-  def intersectionWith[T1, T2](comparator: __, array: js.UndefOr[List[T1] | Null], values: List[T2]): LodashIntersectionWith1x6[T1, T2] = js.native
+  def intersectionWith[T1, T2](comparator: __, array: js.UndefOr[scala.Nothing], values: List[T2]): LodashIntersectionWith1x6[T1, T2] = js.native
+  def intersectionWith[T1, T2](comparator: __, array: Null, values: List[T2]): LodashIntersectionWith1x6[T1, T2] = js.native
+  def intersectionWith[T1, T2](comparator: __, array: List[T1], values: List[T2]): LodashIntersectionWith1x6[T1, T2] = js.native
   @JSName("intersectionWith")
   def intersectionWith_T1T2_LodashIntersectionWith1x1[T1, T2](comparator: Comparator2[T1, T2]): LodashIntersectionWith1x1[T1, T2] = js.native
   def invert(`object`: js.Object): Dictionary[String] = js.native
@@ -5768,9 +5782,14 @@ trait LoDashFp extends js.Object {
   def sortedUniqBy_T_LodashSortedUniqBy1x1[T](iteratee: ValueIteratee[T]): LodashSortedUniqBy1x1[T] = js.native
   def split(separator: String): LodashSplit1x1 = js.native
   def split(separator: String, string: String): js.Array[String] = js.native
+  def split(separator: __): LodashSplit1x2 = js.native
   def split(separator: __, string: String): LodashSplit1x2 = js.native
   def split(separator: RegExp): LodashSplit1x1 = js.native
   def split(separator: RegExp, string: String): js.Array[String] = js.native
+  @JSName("split")
+  def split_Array(separator: String): js.Array[String] = js.native
+  @JSName("split")
+  def split_Array(separator: RegExp): js.Array[String] = js.native
   def spread[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult] = js.native
   def spreadFrom(start: Double): LodashSpreadFrom1x1 = js.native
   def spreadFrom[TResult](start: Double, func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult] = js.native
@@ -5800,18 +5819,21 @@ trait LoDashFp extends js.Object {
   @JSName("sumBy")
   def sumBy_T_Double[T](iteratee: js.Function1[/* value */ T, Double]): Double = js.native
   def symmetricDifference[T](): js.Array[T] = js.native
+  def symmetricDifference[T](arrays2: js.UndefOr[scala.Nothing], arrays: List[T]): js.Array[T] = js.native
   def symmetricDifference[T](arrays2: Null, arrays: List[T]): js.Array[T] = js.native
   def symmetricDifference[T](arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifference[T](arrays2: List[T], arrays: List[T]): js.Array[T] = js.native
   def symmetricDifference[T](arrays2: __): LodashXor1x2[T] = js.native
   def symmetricDifference[T](arrays2: __, arrays: List[T]): LodashXor1x2[T] = js.native
   def symmetricDifferenceBy[T](iteratee: ValueIteratee[T]): js.Array[T] = js.native
+  def symmetricDifferenceBy[T](iteratee: ValueIteratee[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifferenceBy[T](iteratee: ValueIteratee[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifferenceBy[T](iteratee: ValueIteratee[T], arrays: List[T]): js.Array[T] = js.native
   def symmetricDifferenceBy[T](iteratee: ValueIteratee[T], arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifferenceBy[T](iteratee: ValueIteratee[T], arrays: __): LodashXorBy1x5[T] = js.native
   def symmetricDifferenceBy[T](iteratee: ValueIteratee[T], arrays: __, arrays2: List[T]): LodashXorBy1x5[T] = js.native
   def symmetricDifferenceBy[T](iteratee: __): LodashXorBy1x2[T] = js.native
+  def symmetricDifferenceBy[T](iteratee: __, arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): LodashXorBy1x6[T] = js.native
   def symmetricDifferenceBy[T](iteratee: __, arrays: Null, arrays2: List[T]): LodashXorBy1x6[T] = js.native
   def symmetricDifferenceBy[T](iteratee: __, arrays: List[T]): LodashXorBy1x2[T] = js.native
   def symmetricDifferenceBy[T](iteratee: __, arrays: List[T], arrays2: List[T]): LodashXorBy1x6[T] = js.native
@@ -5828,12 +5850,14 @@ trait LoDashFp extends js.Object {
   @JSName("symmetricDifferenceBy")
   def symmetricDifferenceBy_T_LodashXorBy1x6[T](iteratee: __, arrays: List[T]): LodashXorBy1x6[T] = js.native
   def symmetricDifferenceWith[T](comparator: Comparator[T]): js.Array[T] = js.native
+  def symmetricDifferenceWith[T](comparator: Comparator[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifferenceWith[T](comparator: Comparator[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifferenceWith[T](comparator: Comparator[T], arrays: List[T]): js.Array[T] = js.native
   def symmetricDifferenceWith[T](comparator: Comparator[T], arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def symmetricDifferenceWith[T](comparator: Comparator[T], arrays: __): LodashXorWith1x5[T] = js.native
   def symmetricDifferenceWith[T](comparator: Comparator[T], arrays: __, arrays2: List[T]): LodashXorWith1x5[T] = js.native
   def symmetricDifferenceWith[T](comparator: __): LodashXorWith1x6[T] = js.native
+  def symmetricDifferenceWith[T](comparator: __, arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): LodashXorWith1x6[T] = js.native
   def symmetricDifferenceWith[T](comparator: __, arrays: Null, arrays2: List[T]): LodashXorWith1x6[T] = js.native
   def symmetricDifferenceWith[T](comparator: __, arrays: List[T]): LodashXorWith1x6[T] = js.native
   def symmetricDifferenceWith[T](comparator: __, arrays: List[T], arrays2: List[T]): LodashXorWith1x6[T] = js.native
@@ -5987,18 +6011,21 @@ trait LoDashFp extends js.Object {
   def unary[T, TResult](func: js.Function2[/* arg1 */ T, /* repeated */ js.Any, TResult]): js.Function1[/* arg1 */ T, TResult] = js.native
   def unescape(string: String): String = js.native
   def union[T](): js.Array[T] = js.native
+  def union[T](arrays2: js.UndefOr[scala.Nothing], arrays: List[T]): js.Array[T] = js.native
   def union[T](arrays2: Null, arrays: List[T]): js.Array[T] = js.native
   def union[T](arrays2: List[T]): js.Array[T] = js.native
   def union[T](arrays2: List[T], arrays: List[T]): js.Array[T] = js.native
   def union[T](arrays2: __): LodashUnion1x2[T] = js.native
   def union[T](arrays2: __, arrays: List[T]): LodashUnion1x2[T] = js.native
   def unionBy[T](iteratee: ValueIteratee[T]): js.Array[T] = js.native
+  def unionBy[T](iteratee: ValueIteratee[T], arrays1: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def unionBy[T](iteratee: ValueIteratee[T], arrays1: Null, arrays2: List[T]): js.Array[T] = js.native
   def unionBy[T](iteratee: ValueIteratee[T], arrays1: List[T]): js.Array[T] = js.native
   def unionBy[T](iteratee: ValueIteratee[T], arrays1: List[T], arrays2: List[T]): js.Array[T] = js.native
   def unionBy[T](iteratee: ValueIteratee[T], arrays1: __): LodashUnionBy1x5[T] = js.native
   def unionBy[T](iteratee: ValueIteratee[T], arrays1: __, arrays2: List[T]): LodashUnionBy1x5[T] = js.native
   def unionBy[T](iteratee: __): LodashUnionBy1x2[T] = js.native
+  def unionBy[T](iteratee: __, arrays1: js.UndefOr[scala.Nothing], arrays2: List[T]): LodashUnionBy1x6[T] = js.native
   def unionBy[T](iteratee: __, arrays1: Null, arrays2: List[T]): LodashUnionBy1x6[T] = js.native
   def unionBy[T](iteratee: __, arrays1: List[T]): LodashUnionBy1x2[T] = js.native
   def unionBy[T](iteratee: __, arrays1: List[T], arrays2: List[T]): LodashUnionBy1x6[T] = js.native
@@ -6015,12 +6042,14 @@ trait LoDashFp extends js.Object {
   @JSName("unionBy")
   def unionBy_T_LodashUnionBy1x6[T](iteratee: __, arrays1: List[T]): LodashUnionBy1x6[T] = js.native
   def unionWith[T](comparator: Comparator[T]): js.Array[T] = js.native
+  def unionWith[T](comparator: Comparator[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def unionWith[T](comparator: Comparator[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def unionWith[T](comparator: Comparator[T], arrays: List[T]): js.Array[T] = js.native
   def unionWith[T](comparator: Comparator[T], arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def unionWith[T](comparator: Comparator[T], arrays: __): LodashUnionWith1x5[T] = js.native
   def unionWith[T](comparator: Comparator[T], arrays: __, arrays2: List[T]): LodashUnionWith1x5[T] = js.native
   def unionWith[T](comparator: __): LodashUnionWith1x6[T] = js.native
+  def unionWith[T](comparator: __, arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): LodashUnionWith1x6[T] = js.native
   def unionWith[T](comparator: __, arrays: Null, arrays2: List[T]): LodashUnionWith1x6[T] = js.native
   def unionWith[T](comparator: __, arrays: List[T]): LodashUnionWith1x6[T] = js.native
   def unionWith[T](comparator: __, arrays: List[T], arrays2: List[T]): LodashUnionWith1x6[T] = js.native
@@ -6154,18 +6183,21 @@ trait LoDashFp extends js.Object {
   @JSName("wrap")
   def wrap_TTArgsTResult_LodashWrap1x1[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ TArgs, TResult]): LodashWrap1x1[T, TArgs, TResult] = js.native
   def xor[T](): js.Array[T] = js.native
+  def xor[T](arrays2: js.UndefOr[scala.Nothing], arrays: List[T]): js.Array[T] = js.native
   def xor[T](arrays2: Null, arrays: List[T]): js.Array[T] = js.native
   def xor[T](arrays2: List[T]): js.Array[T] = js.native
   def xor[T](arrays2: List[T], arrays: List[T]): js.Array[T] = js.native
   def xor[T](arrays2: __): LodashXor1x2[T] = js.native
   def xor[T](arrays2: __, arrays: List[T]): LodashXor1x2[T] = js.native
   def xorBy[T](iteratee: ValueIteratee[T]): js.Array[T] = js.native
+  def xorBy[T](iteratee: ValueIteratee[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def xorBy[T](iteratee: ValueIteratee[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def xorBy[T](iteratee: ValueIteratee[T], arrays: List[T]): js.Array[T] = js.native
   def xorBy[T](iteratee: ValueIteratee[T], arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def xorBy[T](iteratee: ValueIteratee[T], arrays: __): LodashXorBy1x5[T] = js.native
   def xorBy[T](iteratee: ValueIteratee[T], arrays: __, arrays2: List[T]): LodashXorBy1x5[T] = js.native
   def xorBy[T](iteratee: __): LodashXorBy1x2[T] = js.native
+  def xorBy[T](iteratee: __, arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): LodashXorBy1x6[T] = js.native
   def xorBy[T](iteratee: __, arrays: Null, arrays2: List[T]): LodashXorBy1x6[T] = js.native
   def xorBy[T](iteratee: __, arrays: List[T]): LodashXorBy1x2[T] = js.native
   def xorBy[T](iteratee: __, arrays: List[T], arrays2: List[T]): LodashXorBy1x6[T] = js.native
@@ -6182,12 +6214,14 @@ trait LoDashFp extends js.Object {
   @JSName("xorBy")
   def xorBy_T_LodashXorBy1x6[T](iteratee: __, arrays: List[T]): LodashXorBy1x6[T] = js.native
   def xorWith[T](comparator: Comparator[T]): js.Array[T] = js.native
+  def xorWith[T](comparator: Comparator[T], arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): js.Array[T] = js.native
   def xorWith[T](comparator: Comparator[T], arrays: Null, arrays2: List[T]): js.Array[T] = js.native
   def xorWith[T](comparator: Comparator[T], arrays: List[T]): js.Array[T] = js.native
   def xorWith[T](comparator: Comparator[T], arrays: List[T], arrays2: List[T]): js.Array[T] = js.native
   def xorWith[T](comparator: Comparator[T], arrays: __): LodashXorWith1x5[T] = js.native
   def xorWith[T](comparator: Comparator[T], arrays: __, arrays2: List[T]): LodashXorWith1x5[T] = js.native
   def xorWith[T](comparator: __): LodashXorWith1x6[T] = js.native
+  def xorWith[T](comparator: __, arrays: js.UndefOr[scala.Nothing], arrays2: List[T]): LodashXorWith1x6[T] = js.native
   def xorWith[T](comparator: __, arrays: Null, arrays2: List[T]): LodashXorWith1x6[T] = js.native
   def xorWith[T](comparator: __, arrays: List[T]): LodashXorWith1x6[T] = js.native
   def xorWith[T](comparator: __, arrays: List[T], arrays2: List[T]): LodashXorWith1x6[T] = js.native

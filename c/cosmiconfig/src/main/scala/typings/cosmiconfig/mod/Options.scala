@@ -6,31 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends OptionsBase {
-  var loaders: js.UndefOr[Loaders] = js.undefined
-  var transform: js.UndefOr[Transform] = js.undefined
+  var loaders: js.UndefOr[Loaders] = js.native
+  var transform: js.UndefOr[Transform] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
-    ignoreEmptySearchPlaces: js.UndefOr[Boolean] = js.undefined,
-    loaders: Loaders = null,
-    packageProp: String = null,
-    searchPlaces: js.Array[String] = null,
-    stopDir: String = null,
-    transform: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult | js.Promise[CosmiconfigResult] = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptySearchPlaces)) __obj.updateDynamic("ignoreEmptySearchPlaces")(ignoreEmptySearchPlaces.get.asInstanceOf[js.Any])
-    if (loaders != null) __obj.updateDynamic("loaders")(loaders.asInstanceOf[js.Any])
-    if (packageProp != null) __obj.updateDynamic("packageProp")(packageProp.asInstanceOf[js.Any])
-    if (searchPlaces != null) __obj.updateDynamic("searchPlaces")(searchPlaces.asInstanceOf[js.Any])
-    if (stopDir != null) __obj.updateDynamic("stopDir")(stopDir.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction1(transform))
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoaders(value: Loaders): Self = this.set("loaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoaders: Self = this.set("loaders", js.undefined)
+    @scala.inline
+    def setTransform(
+      value: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult | js.Promise[CosmiconfigResult]
+    ): Self = this.set("transform", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTransform: Self = this.set("transform", js.undefined)
+  }
+  
 }
 

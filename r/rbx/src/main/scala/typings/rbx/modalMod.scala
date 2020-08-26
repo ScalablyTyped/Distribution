@@ -7,7 +7,7 @@ import typings.rbx.anon.PickModalContainerPropsac
 import typings.rbx.anon.PreferHelpersPropsOverridBackgroundColor
 import typings.rbx.anon.TypeofModalContainer
 import typings.rbx.anon.TypeofModalPortal
-import typings.rbx.anon.`7`
+import typings.rbx.anon.`6`
 import typings.rbx.exoticMod.ForwardRefAsExoticComponent
 import typings.rbx.exoticMod.FromReactType
 import typings.rbx.modalBackgroundMod.ModalBackgroundProps
@@ -51,7 +51,7 @@ object modalMod extends js.Object {
     var displayName: js.UndefOr[String] = js.native
     var propTypes: Active = js.native
     def apply[TAsComponent /* <: ElementType[_] */](
-      props: `7`[TAsComponent] with PickModalContainerPropsac with (Pick[
+      props: `6`[TAsComponent] with PickModalContainerPropsac with (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 

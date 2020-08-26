@@ -50,30 +50,62 @@ trait Service extends js.Object {
 
 object Service {
   @scala.inline
-  def apply(
-    Action: Action = null,
-    Archived: js.UndefOr[Boolean] = js.undefined,
-    Count: js.UndefOr[Integer] = js.undefined,
-    DetectorId: DetectorId = null,
-    EventFirstSeen: String = null,
-    EventLastSeen: String = null,
-    Evidence: Evidence = null,
-    ResourceRole: String = null,
-    ServiceName: String = null,
-    UserFeedback: String = null
-  ): Service = {
+  def apply(): Service = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (!js.isUndefined(Archived)) __obj.updateDynamic("Archived")(Archived.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Count)) __obj.updateDynamic("Count")(Count.get.asInstanceOf[js.Any])
-    if (DetectorId != null) __obj.updateDynamic("DetectorId")(DetectorId.asInstanceOf[js.Any])
-    if (EventFirstSeen != null) __obj.updateDynamic("EventFirstSeen")(EventFirstSeen.asInstanceOf[js.Any])
-    if (EventLastSeen != null) __obj.updateDynamic("EventLastSeen")(EventLastSeen.asInstanceOf[js.Any])
-    if (Evidence != null) __obj.updateDynamic("Evidence")(Evidence.asInstanceOf[js.Any])
-    if (ResourceRole != null) __obj.updateDynamic("ResourceRole")(ResourceRole.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
-    if (UserFeedback != null) __obj.updateDynamic("UserFeedback")(UserFeedback.asInstanceOf[js.Any])
     __obj.asInstanceOf[Service]
   }
+  @scala.inline
+  implicit class ServiceOps[Self <: Service] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: Action): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setArchived(value: Boolean): Self = this.set("Archived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchived: Self = this.set("Archived", js.undefined)
+    @scala.inline
+    def setCount(value: Integer): Self = this.set("Count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("Count", js.undefined)
+    @scala.inline
+    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetectorId: Self = this.set("DetectorId", js.undefined)
+    @scala.inline
+    def setEventFirstSeen(value: String): Self = this.set("EventFirstSeen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventFirstSeen: Self = this.set("EventFirstSeen", js.undefined)
+    @scala.inline
+    def setEventLastSeen(value: String): Self = this.set("EventLastSeen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventLastSeen: Self = this.set("EventLastSeen", js.undefined)
+    @scala.inline
+    def setEvidence(value: Evidence): Self = this.set("Evidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvidence: Self = this.set("Evidence", js.undefined)
+    @scala.inline
+    def setResourceRole(value: String): Self = this.set("ResourceRole", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceRole: Self = this.set("ResourceRole", js.undefined)
+    @scala.inline
+    def setServiceName(value: String): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    @scala.inline
+    def setUserFeedback(value: String): Self = this.set("UserFeedback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserFeedback: Self = this.set("UserFeedback", js.undefined)
+  }
+  
 }
 

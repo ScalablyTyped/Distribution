@@ -4,12 +4,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoJSONEvent extends LeafletEvent {
-  var geometryType: String
-  var id: String
+  var geometryType: String = js.native
+  var id: String = js.native
   @JSName("layer")
-  var layer_GeoJSONEvent: Layer
-  var properties: js.Any
+  var layer_GeoJSONEvent: Layer = js.native
+  var properties: js.Any = js.native
 }
 
 object GeoJSONEvent {
@@ -28,5 +29,26 @@ object GeoJSONEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONEvent]
   }
+  @scala.inline
+  implicit class GeoJSONEventOps[Self <: GeoJSONEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeometryType(value: String): Self = this.set("geometryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLayer(value: Layer): Self = this.set("layer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProperties(value: js.Any): Self = this.set("properties", value.asInstanceOf[js.Any])
+  }
+  
 }
 

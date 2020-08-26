@@ -11,9 +11,5 @@ import scala.scalajs.js.annotation._
 class Plugin[T /* <: SlickData */] ()
   extends typings.slickgrid.Slick.Plugin[T] {
   def this(options: PluginOptions) = this()
-  /* CompleteClass */
-  override def destroy(): Unit = js.native
-  /* CompleteClass */
-  override def init(grid: typings.slickgrid.Slick.Grid[T]): Unit = js.native
 }
 

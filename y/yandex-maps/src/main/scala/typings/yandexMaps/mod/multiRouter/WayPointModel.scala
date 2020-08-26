@@ -1,7 +1,6 @@
 package typings.yandexMaps.mod.multiRouter
 
 import typings.yandexMaps.mod.IEventEmitter
-import typings.yandexMaps.mod.IEventManager
 import typings.yandexMaps.mod.data.Manager
 import typings.yandexMaps.mod.geometry.base.Point
 import scala.scalajs.js
@@ -11,8 +10,6 @@ import scala.scalajs.js.annotation._
 @JSImport("yandex-maps", "multiRouter.WayPointModel")
 @js.native
 class WayPointModel () extends IEventEmitter {
-  /* CompleteClass */
-  override var events: IEventManager = js.native
   var geometry: Point = js.native
   var multiRoute: MultiRouteModel = js.native
   var properties: Manager = js.native

@@ -22,12 +22,34 @@ trait PipelineMetadata extends js.Object {
 
 object PipelineMetadata {
   @scala.inline
-  def apply(created: Timestamp = null, pipelineArn: PipelineArn = null, updated: Timestamp = null): PipelineMetadata = {
+  def apply(): PipelineMetadata = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (pipelineArn != null) __obj.updateDynamic("pipelineArn")(pipelineArn.asInstanceOf[js.Any])
-    if (updated != null) __obj.updateDynamic("updated")(updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineMetadata]
   }
+  @scala.inline
+  implicit class PipelineMetadataOps[Self <: PipelineMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreated(value: Timestamp): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setPipelineArn(value: PipelineArn): Self = this.set("pipelineArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePipelineArn: Self = this.set("pipelineArn", js.undefined)
+    @scala.inline
+    def setUpdated(value: Timestamp): Self = this.set("updated", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdated: Self = this.set("updated", js.undefined)
+  }
+  
 }
 

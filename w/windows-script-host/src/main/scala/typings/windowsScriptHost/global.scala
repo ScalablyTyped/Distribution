@@ -86,6 +86,7 @@ object global extends js.Object {
     def Echo(): Unit = js.native
     def Echo(s: js.Any): Unit = js.native
     def GetObject(strPathname: String): js.Any = js.native
+    def GetObject(strPathname: String, strProgID: js.UndefOr[scala.Nothing], strPrefix: String): js.Any = js.native
     def GetObject(strPathname: String, strProgID: String): js.Any = js.native
     def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = js.native
     /**
@@ -183,6 +184,7 @@ object global extends js.Object {
     def Echo(): Unit = js.native
     def Echo(s: js.Any): Unit = js.native
     def GetObject(strPathname: String): js.Any = js.native
+    def GetObject(strPathname: String, strProgID: js.UndefOr[scala.Nothing], strPrefix: String): js.Any = js.native
     def GetObject(strPathname: String, strProgID: String): js.Any = js.native
     def GetObject(strPathname: String, strProgID: String, strPrefix: String): js.Any = js.native
     /**

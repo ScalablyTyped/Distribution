@@ -6,31 +6,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SceneViewEnvironment extends AnonymousAccessor {
   /**
     * Atmosphere conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphere] = js.undefined
+  var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphere] = js.native
   /**
     * Indicates whether atmosphere visualization is enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
+  var atmosphereEnabled: js.UndefOr[Boolean] = js.native
   /**
     * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed. By default this is simply a single, fully opaque, black color. Currently [ColorBackground](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html) is the only type of background supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var background: js.UndefOr[Background] = js.undefined
+  var background: js.UndefOr[Background] = js.native
   /**
     * Lighting conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var lighting: js.UndefOr[SceneViewEnvironmentLighting] = js.undefined
+  var lighting: js.UndefOr[SceneViewEnvironmentLighting] = js.native
   /**
     * Indicates whether stars visualization is enabled.
     *
@@ -38,7 +39,7 @@ trait SceneViewEnvironment extends AnonymousAccessor {
     *
     * @default true
     */
-  var starsEnabled: js.UndefOr[Boolean] = js.undefined
+  var starsEnabled: js.UndefOr[Boolean] = js.native
 }
 
 object SceneViewEnvironment {
@@ -47,25 +48,45 @@ object SceneViewEnvironment {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    atmosphere: SceneViewEnvironmentAtmosphere = null,
-    atmosphereEnabled: js.UndefOr[Boolean] = js.undefined,
-    background: Background = null,
-    get: /* propertyName */ String => _ = null,
-    lighting: SceneViewEnvironmentLighting = null,
-    set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironment]) with (js.Function1[/* props */ HashMap[_], SceneViewEnvironment]) = null,
-    starsEnabled: js.UndefOr[Boolean] = js.undefined,
-    watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => WatchHandle = null
+    set: (js.UndefOr[
+      js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironment]
+    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], SceneViewEnvironment]])
   ): SceneViewEnvironment = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
-    if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere.asInstanceOf[js.Any])
-    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled.get.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1(get))
-    if (lighting != null) __obj.updateDynamic("lighting")(lighting.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled.get.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3(watch))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewEnvironment]
   }
+  @scala.inline
+  implicit class SceneViewEnvironmentOps[Self <: SceneViewEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAtmosphere(value: SceneViewEnvironmentAtmosphere): Self = this.set("atmosphere", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtmosphere: Self = this.set("atmosphere", js.undefined)
+    @scala.inline
+    def setAtmosphereEnabled(value: Boolean): Self = this.set("atmosphereEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAtmosphereEnabled: Self = this.set("atmosphereEnabled", js.undefined)
+    @scala.inline
+    def setBackground(value: Background): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setLighting(value: SceneViewEnvironmentLighting): Self = this.set("lighting", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLighting: Self = this.set("lighting", js.undefined)
+    @scala.inline
+    def setStarsEnabled(value: Boolean): Self = this.set("starsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStarsEnabled: Self = this.set("starsEnabled", js.undefined)
+  }
+  
 }
 

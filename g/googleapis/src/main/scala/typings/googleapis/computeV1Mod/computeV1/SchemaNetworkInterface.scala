@@ -72,26 +72,58 @@ trait SchemaNetworkInterface extends js.Object {
 
 object SchemaNetworkInterface {
   @scala.inline
-  def apply(
-    accessConfigs: js.Array[SchemaAccessConfig] = null,
-    aliasIpRanges: js.Array[SchemaAliasIpRange] = null,
-    fingerprint: String = null,
-    kind: String = null,
-    name: String = null,
-    network: String = null,
-    networkIP: String = null,
-    subnetwork: String = null
-  ): SchemaNetworkInterface = {
+  def apply(): SchemaNetworkInterface = {
     val __obj = js.Dynamic.literal()
-    if (accessConfigs != null) __obj.updateDynamic("accessConfigs")(accessConfigs.asInstanceOf[js.Any])
-    if (aliasIpRanges != null) __obj.updateDynamic("aliasIpRanges")(aliasIpRanges.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (network != null) __obj.updateDynamic("network")(network.asInstanceOf[js.Any])
-    if (networkIP != null) __obj.updateDynamic("networkIP")(networkIP.asInstanceOf[js.Any])
-    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaNetworkInterface]
   }
+  @scala.inline
+  implicit class SchemaNetworkInterfaceOps[Self <: SchemaNetworkInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessConfigsVarargs(value: SchemaAccessConfig*): Self = this.set("accessConfigs", js.Array(value :_*))
+    @scala.inline
+    def setAccessConfigs(value: js.Array[SchemaAccessConfig]): Self = this.set("accessConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessConfigs: Self = this.set("accessConfigs", js.undefined)
+    @scala.inline
+    def setAliasIpRangesVarargs(value: SchemaAliasIpRange*): Self = this.set("aliasIpRanges", js.Array(value :_*))
+    @scala.inline
+    def setAliasIpRanges(value: js.Array[SchemaAliasIpRange]): Self = this.set("aliasIpRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliasIpRanges: Self = this.set("aliasIpRanges", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetwork(value: String): Self = this.set("network", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetwork: Self = this.set("network", js.undefined)
+    @scala.inline
+    def setNetworkIP(value: String): Self = this.set("networkIP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkIP: Self = this.set("networkIP", js.undefined)
+    @scala.inline
+    def setSubnetwork(value: String): Self = this.set("subnetwork", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetwork: Self = this.set("subnetwork", js.undefined)
+  }
+  
 }
 

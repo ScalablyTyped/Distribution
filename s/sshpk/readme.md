@@ -10,9 +10,9 @@ A library for finding and using SSH public keys
 | ------------------ | :-------------: |
 | Full name          | sshpk |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 102 |
-| # downloads        | 569498126 |
+| # releases         | 10 |
+| # dependents       | 101 |
+| # downloads        | 580250299 |
 | # stars            | 4 |
 
 ## Links

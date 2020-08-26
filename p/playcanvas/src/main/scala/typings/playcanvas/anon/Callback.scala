@@ -8,30 +8,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Callback extends js.Object {
-  var callback: js.UndefOr[XrHitTestStart] = js.undefined
-  var entityTypes: js.UndefOr[js.Array[String]] = js.undefined
-  var offsetRay: js.UndefOr[Ray] = js.undefined
-  var profile: js.UndefOr[String] = js.undefined
-  var spaceType: js.UndefOr[String] = js.undefined
+  var callback: js.UndefOr[XrHitTestStart] = js.native
+  var entityTypes: js.UndefOr[js.Array[String]] = js.native
+  var offsetRay: js.UndefOr[Ray] = js.native
+  var profile: js.UndefOr[String] = js.native
+  var spaceType: js.UndefOr[String] = js.native
 }
 
 object Callback {
   @scala.inline
-  def apply(
-    callback: (/* err */ Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Unit = null,
-    entityTypes: js.Array[String] = null,
-    offsetRay: Ray = null,
-    profile: String = null,
-    spaceType: String = null
-  ): Callback = {
+  def apply(): Callback = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2(callback))
-    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes.asInstanceOf[js.Any])
-    if (offsetRay != null) __obj.updateDynamic("offsetRay")(offsetRay.asInstanceOf[js.Any])
-    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (spaceType != null) __obj.updateDynamic("spaceType")(spaceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Callback]
   }
+  @scala.inline
+  implicit class CallbackOps[Self <: Callback] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallback(value: (/* err */ Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Unit): Self = this.set("callback", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteCallback: Self = this.set("callback", js.undefined)
+    @scala.inline
+    def setEntityTypesVarargs(value: String*): Self = this.set("entityTypes", js.Array(value :_*))
+    @scala.inline
+    def setEntityTypes(value: js.Array[String]): Self = this.set("entityTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityTypes: Self = this.set("entityTypes", js.undefined)
+    @scala.inline
+    def setOffsetRay(value: Ray): Self = this.set("offsetRay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffsetRay: Self = this.set("offsetRay", js.undefined)
+    @scala.inline
+    def setProfile(value: String): Self = this.set("profile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProfile: Self = this.set("profile", js.undefined)
+    @scala.inline
+    def setSpaceType(value: String): Self = this.set("spaceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpaceType: Self = this.set("spaceType", js.undefined)
+  }
+  
 }
 

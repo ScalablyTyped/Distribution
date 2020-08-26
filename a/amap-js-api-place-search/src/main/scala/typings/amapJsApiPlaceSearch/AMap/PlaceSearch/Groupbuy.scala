@@ -4,71 +4,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Groupbuy extends js.Object {
   /**
     * 团购总量
     */
-  var count: Double
+  var count: Double = js.native
   /**
     * 团购详情
     */
-  var detail: String
+  var detail: String = js.native
   /**
     * 折扣
     */
-  var discount: Double
+  var discount: Double = js.native
   /**
     * 团购结束时间
     */
-  var etime: String
+  var etime: String = js.native
   /**
     * 折扣价
     */
-  var groupbuy_price: Double
+  var groupbuy_price: Double = js.native
   /**
     * 原价
     */
-  var original_price: Double
+  var original_price: Double = js.native
   /**
     * 图片信息
     */
-  var photos: js.Array[PoiPhoto]
+  var photos: js.Array[PoiPhoto] = js.native
   /**
     * 来源标识
     */
-  var provider: String
+  var provider: String = js.native
   /**
     * 已卖出数量
     */
-  var sold_num: Double
+  var sold_num: Double = js.native
   /**
     * 团购开始时间
     */
-  var stime: String
+  var stime: String = js.native
   /**
     * 取票地址
     */
-  var ticket_address: String
+  var ticket_address: String = js.native
   /**
     * 取票电话
     */
-  var ticket_tel: String
+  var ticket_tel: String = js.native
   /**
     * 团购标题
     */
-  var title: String
+  var title: String = js.native
   /**
     * 团购分类
     */
-  var `type`: String
+  var `type`: String = js.native
   /**
     * 团购分类代码
     */
-  var type_code: String
+  var type_code: String = js.native
   /**
     * 来源url
     */
-  var url: String
+  var url: String = js.native
 }
 
 object Groupbuy {
@@ -95,5 +96,52 @@ object Groupbuy {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Groupbuy]
   }
+  @scala.inline
+  implicit class GroupbuyOps[Self <: Groupbuy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDetail(value: String): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDiscount(value: Double): Self = this.set("discount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEtime(value: String): Self = this.set("etime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGroupbuy_price(value: Double): Self = this.set("groupbuy_price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOriginal_price(value: Double): Self = this.set("original_price", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPhotosVarargs(value: PoiPhoto*): Self = this.set("photos", js.Array(value :_*))
+    @scala.inline
+    def setPhotos(value: js.Array[PoiPhoto]): Self = this.set("photos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvider(value: String): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSold_num(value: Double): Self = this.set("sold_num", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStime(value: String): Self = this.set("stime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTicket_address(value: String): Self = this.set("ticket_address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTicket_tel(value: String): Self = this.set("ticket_tel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType_code(value: String): Self = this.set("type_code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+  }
+  
 }
 

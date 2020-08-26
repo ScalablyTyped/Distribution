@@ -12,7 +12,7 @@ Webpack block for PostCSS.
 | Keywords           | webpack, webpack-blocks |
 | # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 145097 |
+| # downloads        | 133709 |
 | # stars            | 0 |
 
 ## Links

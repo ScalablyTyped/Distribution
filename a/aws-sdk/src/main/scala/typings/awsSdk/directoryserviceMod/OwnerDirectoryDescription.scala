@@ -34,22 +34,48 @@ trait OwnerDirectoryDescription extends js.Object {
 
 object OwnerDirectoryDescription {
   @scala.inline
-  def apply(
-    AccountId: CustomerId = null,
-    DirectoryId: DirectoryId = null,
-    DnsIpAddrs: DnsIpAddrs = null,
-    RadiusSettings: RadiusSettings = null,
-    RadiusStatus: RadiusStatus = null,
-    VpcSettings: DirectoryVpcSettingsDescription = null
-  ): OwnerDirectoryDescription = {
+  def apply(): OwnerDirectoryDescription = {
     val __obj = js.Dynamic.literal()
-    if (AccountId != null) __obj.updateDynamic("AccountId")(AccountId.asInstanceOf[js.Any])
-    if (DirectoryId != null) __obj.updateDynamic("DirectoryId")(DirectoryId.asInstanceOf[js.Any])
-    if (DnsIpAddrs != null) __obj.updateDynamic("DnsIpAddrs")(DnsIpAddrs.asInstanceOf[js.Any])
-    if (RadiusSettings != null) __obj.updateDynamic("RadiusSettings")(RadiusSettings.asInstanceOf[js.Any])
-    if (RadiusStatus != null) __obj.updateDynamic("RadiusStatus")(RadiusStatus.asInstanceOf[js.Any])
-    if (VpcSettings != null) __obj.updateDynamic("VpcSettings")(VpcSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerDirectoryDescription]
   }
+  @scala.inline
+  implicit class OwnerDirectoryDescriptionOps[Self <: OwnerDirectoryDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: CustomerId): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("AccountId", js.undefined)
+    @scala.inline
+    def setDirectoryId(value: DirectoryId): Self = this.set("DirectoryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirectoryId: Self = this.set("DirectoryId", js.undefined)
+    @scala.inline
+    def setDnsIpAddrsVarargs(value: IpAddr*): Self = this.set("DnsIpAddrs", js.Array(value :_*))
+    @scala.inline
+    def setDnsIpAddrs(value: DnsIpAddrs): Self = this.set("DnsIpAddrs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnsIpAddrs: Self = this.set("DnsIpAddrs", js.undefined)
+    @scala.inline
+    def setRadiusSettings(value: RadiusSettings): Self = this.set("RadiusSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusSettings: Self = this.set("RadiusSettings", js.undefined)
+    @scala.inline
+    def setRadiusStatus(value: RadiusStatus): Self = this.set("RadiusStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRadiusStatus: Self = this.set("RadiusStatus", js.undefined)
+    @scala.inline
+    def setVpcSettings(value: DirectoryVpcSettingsDescription): Self = this.set("VpcSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcSettings: Self = this.set("VpcSettings", js.undefined)
+  }
+  
 }
 

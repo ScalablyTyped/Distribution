@@ -50,29 +50,60 @@ trait UpdateEventSourceMappingRequest extends js.Object {
 
 object UpdateEventSourceMappingRequest {
   @scala.inline
-  def apply(
-    UUID: String,
-    BatchSize: js.UndefOr[BatchSize] = js.undefined,
-    BisectBatchOnFunctionError: js.UndefOr[BisectBatchOnFunctionError] = js.undefined,
-    DestinationConfig: DestinationConfig = null,
-    Enabled: js.UndefOr[Enabled] = js.undefined,
-    FunctionName: FunctionName = null,
-    MaximumBatchingWindowInSeconds: js.UndefOr[MaximumBatchingWindowInSeconds] = js.undefined,
-    MaximumRecordAgeInSeconds: js.UndefOr[MaximumRecordAgeInSeconds] = js.undefined,
-    MaximumRetryAttempts: js.UndefOr[MaximumRetryAttemptsEventSourceMapping] = js.undefined,
-    ParallelizationFactor: js.UndefOr[ParallelizationFactor] = js.undefined
-  ): UpdateEventSourceMappingRequest = {
+  def apply(UUID: String): UpdateEventSourceMappingRequest = {
     val __obj = js.Dynamic.literal(UUID = UUID.asInstanceOf[js.Any])
-    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BisectBatchOnFunctionError)) __obj.updateDynamic("BisectBatchOnFunctionError")(BisectBatchOnFunctionError.get.asInstanceOf[js.Any])
-    if (DestinationConfig != null) __obj.updateDynamic("DestinationConfig")(DestinationConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (FunctionName != null) __obj.updateDynamic("FunctionName")(FunctionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumBatchingWindowInSeconds)) __obj.updateDynamic("MaximumBatchingWindowInSeconds")(MaximumBatchingWindowInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumRecordAgeInSeconds)) __obj.updateDynamic("MaximumRecordAgeInSeconds")(MaximumRecordAgeInSeconds.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaximumRetryAttempts)) __obj.updateDynamic("MaximumRetryAttempts")(MaximumRetryAttempts.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ParallelizationFactor)) __obj.updateDynamic("ParallelizationFactor")(ParallelizationFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEventSourceMappingRequest]
   }
+  @scala.inline
+  implicit class UpdateEventSourceMappingRequestOps[Self <: UpdateEventSourceMappingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUUID(value: String): Self = this.set("UUID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBatchSize(value: BatchSize): Self = this.set("BatchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("BatchSize", js.undefined)
+    @scala.inline
+    def setBisectBatchOnFunctionError(value: BisectBatchOnFunctionError): Self = this.set("BisectBatchOnFunctionError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBisectBatchOnFunctionError: Self = this.set("BisectBatchOnFunctionError", js.undefined)
+    @scala.inline
+    def setDestinationConfig(value: DestinationConfig): Self = this.set("DestinationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationConfig: Self = this.set("DestinationConfig", js.undefined)
+    @scala.inline
+    def setEnabled(value: Enabled): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setFunctionName(value: FunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionName: Self = this.set("FunctionName", js.undefined)
+    @scala.inline
+    def setMaximumBatchingWindowInSeconds(value: MaximumBatchingWindowInSeconds): Self = this.set("MaximumBatchingWindowInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumBatchingWindowInSeconds: Self = this.set("MaximumBatchingWindowInSeconds", js.undefined)
+    @scala.inline
+    def setMaximumRecordAgeInSeconds(value: MaximumRecordAgeInSeconds): Self = this.set("MaximumRecordAgeInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumRecordAgeInSeconds: Self = this.set("MaximumRecordAgeInSeconds", js.undefined)
+    @scala.inline
+    def setMaximumRetryAttempts(value: MaximumRetryAttemptsEventSourceMapping): Self = this.set("MaximumRetryAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumRetryAttempts: Self = this.set("MaximumRetryAttempts", js.undefined)
+    @scala.inline
+    def setParallelizationFactor(value: ParallelizationFactor): Self = this.set("ParallelizationFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelizationFactor: Self = this.set("ParallelizationFactor", js.undefined)
+  }
+  
 }
 

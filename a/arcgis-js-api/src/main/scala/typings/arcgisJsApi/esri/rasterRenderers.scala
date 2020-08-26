@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object rasterRenderers extends js.Object {
   type ClassBreaksRenderer = typings.arcgisJsApi.esri.ClassBreaksRenderer
+  type RasterColormapRenderer = typings.arcgisJsApi.esri.RasterColormapRenderer
+  type RasterShadedReliefRenderer = typings.arcgisJsApi.esri.RasterShadedReliefRenderer
   type RasterStretchRenderer = typings.arcgisJsApi.esri.RasterStretchRenderer
   type UniqueValueRenderer = typings.arcgisJsApi.esri.UniqueValueRenderer
 }

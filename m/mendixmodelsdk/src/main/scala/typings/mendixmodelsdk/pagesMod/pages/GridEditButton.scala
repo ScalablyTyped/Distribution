@@ -29,7 +29,7 @@ class GridEditButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FGridEditButton: IModel = js.native
   def pageSettings: PageSettings = js.native
-  def pageSettings(newValue: PageSettings): js.Any = js.native
+  def pageSettings_=(newValue: PageSettings): Unit = js.native
   def pagesForSpecializations: IList[PageForSpecialization] = js.native
 }
 

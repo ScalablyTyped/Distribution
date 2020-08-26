@@ -28,7 +28,7 @@ trait GetGroupResult extends js.Object {
     */
   val healthCheckType: String = js.native
   /**
-    * id is the provider-assigned unique ID for this managed resource.
+    * The provider-assigned unique ID for this managed resource.
     */
   val id: String = js.native
   /**
@@ -104,5 +104,64 @@ object GetGroupResult {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], availabilityZones = availabilityZones.asInstanceOf[js.Any], defaultCooldown = defaultCooldown.asInstanceOf[js.Any], desiredCapacity = desiredCapacity.asInstanceOf[js.Any], healthCheckGracePeriod = healthCheckGracePeriod.asInstanceOf[js.Any], healthCheckType = healthCheckType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], launchConfiguration = launchConfiguration.asInstanceOf[js.Any], loadBalancers = loadBalancers.asInstanceOf[js.Any], maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newInstancesProtectedFromScaleIn = newInstancesProtectedFromScaleIn.asInstanceOf[js.Any], placementGroup = placementGroup.asInstanceOf[js.Any], serviceLinkedRoleArn = serviceLinkedRoleArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], targetGroupArns = targetGroupArns.asInstanceOf[js.Any], terminationPolicies = terminationPolicies.asInstanceOf[js.Any], vpcZoneIdentifier = vpcZoneIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGroupResult]
   }
+  @scala.inline
+  implicit class GetGroupResultOps[Self <: GetGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: String): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: String*): Self = this.set("availabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: js.Array[String]): Self = this.set("availabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultCooldown(value: Double): Self = this.set("defaultCooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesiredCapacity(value: Double): Self = this.set("desiredCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckGracePeriod(value: Double): Self = this.set("healthCheckGracePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckType(value: String): Self = this.set("healthCheckType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLaunchConfiguration(value: String): Self = this.set("launchConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLoadBalancersVarargs(value: String*): Self = this.set("loadBalancers", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancers(value: js.Array[String]): Self = this.set("loadBalancers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxSize(value: Double): Self = this.set("maxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinSize(value: Double): Self = this.set("minSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewInstancesProtectedFromScaleIn(value: Boolean): Self = this.set("newInstancesProtectedFromScaleIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPlacementGroup(value: String): Self = this.set("placementGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setServiceLinkedRoleArn(value: String): Self = this.set("serviceLinkedRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTargetGroupArnsVarargs(value: String*): Self = this.set("targetGroupArns", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupArns(value: js.Array[String]): Self = this.set("targetGroupArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTerminationPoliciesVarargs(value: String*): Self = this.set("terminationPolicies", js.Array(value :_*))
+    @scala.inline
+    def setTerminationPolicies(value: js.Array[String]): Self = this.set("terminationPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpcZoneIdentifier(value: String): Self = this.set("vpcZoneIdentifier", value.asInstanceOf[js.Any])
+  }
+  
 }
 

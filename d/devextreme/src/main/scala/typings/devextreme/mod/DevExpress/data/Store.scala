@@ -23,13 +23,13 @@ trait Store extends js.Object {
   def load(): Promise[_] with JQueryPromise[_] = js.native
   /** @name Store.load(options) */
   def load(options: LoadOptions): Promise[_] with JQueryPromise[_] = js.native
-  /** @name EventsMixin.off(eventName) */
+  /** @name Store.off(eventName) */
   def off(eventName: String): this.type = js.native
-  /** @name EventsMixin.off(eventName, eventHandler) */
+  /** @name Store.off(eventName, eventHandler) */
   def off(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(eventName, eventHandler) */
+  /** @name Store.on(eventName, eventHandler) */
   def on(eventName: String, eventHandler: js.Function): this.type = js.native
-  /** @name EventsMixin.on(events) */
+  /** @name Store.on(events) */
   def on(events: js.Any): this.type = js.native
   /** @name Store.push(changes) */
   def push(changes: js.Array[_]): Unit = js.native

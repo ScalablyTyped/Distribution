@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Graphics.Printing.PrintTaskProgressingEventArgs")
 @js.native
 class PrintTaskProgressingEventArgs ()
-  extends typings.winrt.Windows.Graphics.Printing.PrintTaskProgressingEventArgs {
-  /* CompleteClass */
-  override var documentPageCount: Double = js.native
-}
+  extends typings.winrt.Windows.Graphics.Printing.PrintTaskProgressingEventArgs
 

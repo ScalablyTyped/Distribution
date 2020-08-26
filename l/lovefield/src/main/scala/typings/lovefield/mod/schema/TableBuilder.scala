@@ -11,6 +11,12 @@ trait TableBuilder extends js.Object {
   def addColumn(name: String, `type`: Type): TableBuilder = js.native
   def addForeignKey(name: String, spec: RawForeignKeySpec): TableBuilder = js.native
   def addIndex(name: String, columns: js.Array[IndexedColumn | String]): TableBuilder = js.native
+  def addIndex(
+    name: String,
+    columns: js.Array[IndexedColumn | String],
+    unique: js.UndefOr[scala.Nothing],
+    order: Order
+  ): TableBuilder = js.native
   def addIndex(name: String, columns: js.Array[IndexedColumn | String], unique: Boolean): TableBuilder = js.native
   def addIndex(name: String, columns: js.Array[IndexedColumn | String], unique: Boolean, order: Order): TableBuilder = js.native
   def addNullable(columns: js.Array[String]): TableBuilder = js.native

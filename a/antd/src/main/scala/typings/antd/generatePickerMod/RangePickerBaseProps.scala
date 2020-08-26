@@ -13,7 +13,6 @@ import typings.antd.antdStrings.copy
 import typings.antd.antdStrings.date
 import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
-import typings.antd.antdStrings.end
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
@@ -35,14 +34,12 @@ import typings.antd.antdStrings.popup
 import typings.antd.antdStrings.removals
 import typings.antd.antdStrings.rtl
 import typings.antd.antdStrings.spelling
-import typings.antd.antdStrings.start
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.text
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.vertical
 import typings.antd.sizeContextMod.SizeType
-import typings.rcPicker.anon.Range
 import typings.rcPicker.interfaceMod.DisabledTimes
 import typings.rcPicker.interfaceMod.EventValue
 import typings.rcPicker.interfaceMod.Locale
@@ -52,6 +49,9 @@ import typings.rcPicker.interfaceMod.RangeValue
 import typings.rcPicker.monthBodyMod.MonthCellRender
 import typings.rcPicker.pickerMod.PickerRefConfig
 import typings.rcPicker.rangePickerMod.RangeDateRender
+import typings.rcPicker.rangePickerMod.RangeInfo
+import typings.rcPicker.rangePickerMod.RangeType
+import typings.rcTrigger.interfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
@@ -69,350 +69,582 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined antd.antd/lib/date-picker/generatePicker.InjectDefaultProps<rc-picker.rc-picker/lib/RangePicker.RangePickerBaseProps<DateType>> */
+/* Inlined antd.antd/lib/date-picker/generatePicker.InjectDefaultProps<rc-picker.rc-picker/es/RangePicker.RangePickerBaseProps<DateType>> */
+@js.native
 trait RangePickerBaseProps[DateType] extends RangePickerProps[DateType] {
-  var activePickerIndex: js.UndefOr[`0` | `1`] = js.undefined
-  var allowClear: js.UndefOr[Boolean] = js.undefined
-  var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.undefined
-  var `aria-activedescendant`: js.UndefOr[String] = js.undefined
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
-  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
-  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-colcount`: js.UndefOr[Double] = js.undefined
-  var `aria-colindex`: js.UndefOr[Double] = js.undefined
-  var `aria-colspan`: js.UndefOr[Double] = js.undefined
-  var `aria-controls`: js.UndefOr[String] = js.undefined
-  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
-  var `aria-describedby`: js.UndefOr[String] = js.undefined
-  var `aria-details`: js.UndefOr[String] = js.undefined
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
-  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
-  var `aria-errormessage`: js.UndefOr[String] = js.undefined
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
-  var `aria-flowto`: js.UndefOr[String] = js.undefined
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
-  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
-  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
-  var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
-  var `aria-label`: js.UndefOr[String] = js.undefined
-  var `aria-labelledby`: js.UndefOr[String] = js.undefined
-  var `aria-level`: js.UndefOr[Double] = js.undefined
-  var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
-  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
-  var `aria-owns`: js.UndefOr[String] = js.undefined
-  var `aria-placeholder`: js.UndefOr[String] = js.undefined
-  var `aria-posinset`: js.UndefOr[Double] = js.undefined
-  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
-  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.undefined
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
-  var `aria-roledescription`: js.UndefOr[String] = js.undefined
-  var `aria-rowcount`: js.UndefOr[Double] = js.undefined
-  var `aria-rowindex`: js.UndefOr[Double] = js.undefined
-  var `aria-rowspan`: js.UndefOr[Double] = js.undefined
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
-  var `aria-setsize`: js.UndefOr[Double] = js.undefined
-  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
-  var `aria-valuemax`: js.UndefOr[Double] = js.undefined
-  var `aria-valuemin`: js.UndefOr[Double] = js.undefined
-  var `aria-valuenow`: js.UndefOr[Double] = js.undefined
-  var `aria-valuetext`: js.UndefOr[String] = js.undefined
-  var autoComplete: js.UndefOr[String] = js.undefined
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  var bordered: js.UndefOr[Boolean] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var clearIcon: js.UndefOr[ReactNode] = js.undefined
-  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.undefined
-  var defaultOpen: js.UndefOr[Boolean] = js.undefined
-  var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
-  var defaultValue: js.UndefOr[RangeValue[DateType]] = js.undefined
-  var direction: js.UndefOr[ltr | rtl] = js.undefined
-  var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.undefined
-  var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
+  var activePickerIndex: js.UndefOr[`0` | `1`] = js.native
+  var allowClear: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[js.Tuple2[Boolean, Boolean]] = js.native
+  var `aria-activedescendant`: js.UndefOr[String] = js.native
+  var `aria-atomic`: js.UndefOr[Boolean] = js.native
+  var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  var `aria-busy`: js.UndefOr[Boolean] = js.native
+  var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-colcount`: js.UndefOr[Double] = js.native
+  var `aria-colindex`: js.UndefOr[Double] = js.native
+  var `aria-colspan`: js.UndefOr[Double] = js.native
+  var `aria-controls`: js.UndefOr[String] = js.native
+  var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  var `aria-describedby`: js.UndefOr[String] = js.native
+  var `aria-details`: js.UndefOr[String] = js.native
+  var `aria-disabled`: js.UndefOr[Boolean] = js.native
+  var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  var `aria-errormessage`: js.UndefOr[String] = js.native
+  var `aria-expanded`: js.UndefOr[Boolean] = js.native
+  var `aria-flowto`: js.UndefOr[String] = js.native
+  var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  var `aria-hidden`: js.UndefOr[Boolean] = js.native
+  var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  var `aria-label`: js.UndefOr[String] = js.native
+  var `aria-labelledby`: js.UndefOr[String] = js.native
+  var `aria-level`: js.UndefOr[Double] = js.native
+  var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  var `aria-modal`: js.UndefOr[Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  var `aria-owns`: js.UndefOr[String] = js.native
+  var `aria-placeholder`: js.UndefOr[String] = js.native
+  var `aria-posinset`: js.UndefOr[Double] = js.native
+  var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  var `aria-readonly`: js.UndefOr[Boolean] = js.native
+  var `aria-relevant`: js.UndefOr[additions | (`additions text`) | all | removals | text] = js.native
+  var `aria-required`: js.UndefOr[Boolean] = js.native
+  var `aria-roledescription`: js.UndefOr[String] = js.native
+  var `aria-rowcount`: js.UndefOr[Double] = js.native
+  var `aria-rowindex`: js.UndefOr[Double] = js.native
+  var `aria-rowspan`: js.UndefOr[Double] = js.native
+  var `aria-selected`: js.UndefOr[Boolean] = js.native
+  var `aria-setsize`: js.UndefOr[Double] = js.native
+  var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  var `aria-valuemax`: js.UndefOr[Double] = js.native
+  var `aria-valuemin`: js.UndefOr[Double] = js.native
+  var `aria-valuenow`: js.UndefOr[Double] = js.native
+  var `aria-valuetext`: js.UndefOr[String] = js.native
+  var autoComplete: js.UndefOr[String] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  var bordered: js.UndefOr[Boolean] = js.native
+  var className: js.UndefOr[String] = js.native
+  var clearIcon: js.UndefOr[ReactNode] = js.native
+  var dateRender: js.UndefOr[RangeDateRender[DateType]] = js.native
+  var defaultOpen: js.UndefOr[Boolean] = js.native
+  var defaultPickerValue: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+  var defaultValue: js.UndefOr[RangeValue[DateType]] = js.native
+  var direction: js.UndefOr[ltr | rtl] = js.native
+  var disabled: js.UndefOr[Boolean | (js.Tuple2[Boolean, Boolean])] = js.native
+  var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
   var disabledTime: js.UndefOr[
-    js.Function2[/* date */ EventValue[DateType], /* type */ start | end, DisabledTimes]
-  ] = js.undefined
-  var dropdownAlign: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any
-  ] = js.undefined
-  var dropdownClassName: js.UndefOr[String] = js.undefined
-  var format: js.UndefOr[String | js.Array[String]] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var inputReadOnly: js.UndefOr[Boolean] = js.undefined
-  var locale: js.UndefOr[PickerLocale] = js.undefined
-  var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.undefined
-  var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
+    js.Function2[/* date */ EventValue[DateType], /* type */ RangeType, DisabledTimes]
+  ] = js.native
+  var dropdownAlign: js.UndefOr[AlignType] = js.native
+  var dropdownClassName: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String | js.Array[String]] = js.native
+  var getPopupContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+  var id: js.UndefOr[String] = js.native
+  var inputReadOnly: js.UndefOr[Boolean] = js.native
+  var locale: js.UndefOr[PickerLocale] = js.native
+  var mode: js.UndefOr[js.Tuple2[PanelMode, PanelMode]] = js.native
+  var monthCellRender: js.UndefOr[MonthCellRender[DateType]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
   var onCalendarChange: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* values */ RangeValue[DateType], 
       /* formatString */ js.Tuple2[String, String], 
+      /* info */ RangeInfo, 
       Unit
     ]
-  ] = js.undefined
+  ] = js.native
   var onChange: js.UndefOr[
     js.Function2[
       /* values */ RangeValue[DateType], 
       /* formatString */ js.Tuple2[String, String], 
       Unit
     ]
-  ] = js.undefined
-  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
-  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.undefined
-  var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
+  ] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+  var onOk: js.UndefOr[js.Function1[/* dates */ RangeValue[DateType], Unit]] = js.native
+  var onOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.native
   var onPanelChange: js.UndefOr[
     js.Function2[/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode], Unit]
-  ] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var picker: Exclude[PickerMode, date | time]
-  var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.undefined
-  var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.undefined
-  var popupStyle: js.UndefOr[CSSProperties] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
+  ] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var panelRender: js.UndefOr[js.Function1[/* originPanel */ ReactNode, ReactNode]] = js.native
+  var picker: Exclude[PickerMode, date | time] = js.native
+  var pickerRef: js.UndefOr[MutableRefObject[PickerRefConfig]] = js.native
+  var placeholder: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var popupStyle: js.UndefOr[CSSProperties] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
   var ranges: js.UndefOr[
     Record[
       String, 
       (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
     ]
-  ] = js.undefined
-  var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.undefined
-  var role: js.UndefOr[String] = js.undefined
-  var separator: js.UndefOr[ReactNode] = js.undefined
-  var size: js.UndefOr[SizeType] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var suffixIcon: js.UndefOr[ReactNode] = js.undefined
-  var tabIndex: js.UndefOr[Double] = js.undefined
-  var transitionName: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[RangeValue[DateType]] = js.undefined
+  ] = js.native
+  var renderExtraFooter: js.UndefOr[js.Function1[/* mode */ PanelMode, ReactNode]] = js.native
+  var role: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[ReactNode] = js.native
+  var size: js.UndefOr[SizeType] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var suffixIcon: js.UndefOr[ReactNode] = js.native
+  var tabIndex: js.UndefOr[Double] = js.native
+  var transitionName: js.UndefOr[String] = js.native
+  var value: js.UndefOr[RangeValue[DateType]] = js.native
 }
 
 object RangePickerBaseProps {
   @scala.inline
-  def apply[DateType](
-    picker: Exclude[PickerMode, date | time],
-    activePickerIndex: `0` | `1` = null,
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    allowEmpty: js.Tuple2[Boolean, Boolean] = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: js.UndefOr[Double] = js.undefined,
-    `aria-colindex`: js.UndefOr[Double] = js.undefined,
-    `aria-colspan`: js.UndefOr[Double] = js.undefined,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: js.UndefOr[Double] = js.undefined,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: js.UndefOr[Double] = js.undefined,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: js.UndefOr[Double] = js.undefined,
-    `aria-rowindex`: js.UndefOr[Double] = js.undefined,
-    `aria-rowspan`: js.UndefOr[Double] = js.undefined,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: js.UndefOr[Double] = js.undefined,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: js.UndefOr[Double] = js.undefined,
-    `aria-valuemin`: js.UndefOr[Double] = js.undefined,
-    `aria-valuenow`: js.UndefOr[Double] = js.undefined,
-    `aria-valuetext`: String = null,
-    autoComplete: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clearIcon: ReactNode = null,
-    dateRender: (DateType, DateType, /* info */ Range) => ReactNode = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultPickerValue: js.Tuple2[DateType, DateType] = null,
-    defaultValue: js.UndefOr[Null | RangeValue[DateType]] = js.undefined,
-    direction: ltr | rtl = null,
-    disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
-    disabledDate: /* date */ DateType => Boolean = null,
-    disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => DisabledTimes = null,
-    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
-    dropdownClassName: String = null,
-    format: String | js.Array[String] = null,
-    getPopupContainer: /* node */ HTMLElement => HTMLElement = null,
-    id: String = null,
-    inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    locale: PickerLocale = null,
-    mode: js.Tuple2[PanelMode, PanelMode] = null,
-    monthCellRender: (DateType, /* locale */ Locale) => ReactNode = null,
-    name: String = null,
-    onBlur: FocusEvent[HTMLInputElement] => Unit = null,
-    onCalendarChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Unit = null,
-    onChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Unit = null,
-    onClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onContextMenu: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onFocus: FocusEvent[HTMLInputElement] => Unit = null,
-    onMouseDown: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseEnter: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseLeave: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onMouseUp: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit = null,
-    onOk: /* dates */ RangeValue[DateType] => Unit = null,
-    onOpenChange: /* open */ Boolean => Unit = null,
-    onPanelChange: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    pickerRef: MutableRefObject[PickerRefConfig] = null,
-    placeholder: js.Tuple2[String, String] = null,
-    popupStyle: CSSProperties = null,
-    prefixCls: String = null,
-    ranges: Record[
-      String, 
-      (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
-    ] = null,
-    renderExtraFooter: /* mode */ PanelMode => ReactNode = null,
-    role: String = null,
-    separator: ReactNode = null,
-    size: SizeType = null,
-    style: CSSProperties = null,
-    suffixIcon: ReactNode = null,
-    tabIndex: js.UndefOr[Double] = js.undefined,
-    transitionName: String = null,
-    value: js.UndefOr[Null | RangeValue[DateType]] = js.undefined
-  ): RangePickerBaseProps[DateType] = {
+  def apply[DateType](picker: Exclude[PickerMode, date | time]): RangePickerBaseProps[DateType] = {
     val __obj = js.Dynamic.literal(picker = picker.asInstanceOf[js.Any])
-    if (activePickerIndex != null) __obj.updateDynamic("activePickerIndex")(activePickerIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.get.asInstanceOf[js.Any])
-    if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.get.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.get.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colcount`)) __obj.updateDynamic("aria-colcount")(`aria-colcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colindex`)) __obj.updateDynamic("aria-colindex")(`aria-colindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-colspan`)) __obj.updateDynamic("aria-colspan")(`aria-colspan`.get.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.get.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.get.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.get.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.get.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-level`)) __obj.updateDynamic("aria-level")(`aria-level`.get.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.get.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-posinset`)) __obj.updateDynamic("aria-posinset")(`aria-posinset`.get.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.get.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.get.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowcount`)) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowindex`)) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-rowspan`)) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-setsize`)) __obj.updateDynamic("aria-setsize")(`aria-setsize`.get.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemax`)) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuemin`)) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-valuenow`)) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.get.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.get.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction3(dateRender))
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.get.asInstanceOf[js.Any])
-    if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultValue)) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1(disabledDate))
-    if (disabledTime != null) __obj.updateDynamic("disabledTime")(js.Any.fromFunction2(disabledTime))
-    if (dropdownAlign != null) __obj.updateDynamic("dropdownAlign")(dropdownAlign.asInstanceOf[js.Any])
-    if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.get.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction2(monthCellRender))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onCalendarChange != null) __obj.updateDynamic("onCalendarChange")(js.Any.fromFunction2(onCalendarChange))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1(onMouseLeave))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1(onMouseUp))
-    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1(onOk))
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2(onPanelChange))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1(renderExtraFooter))
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(tabIndex)) __obj.updateDynamic("tabIndex")(tabIndex.get.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangePickerBaseProps[DateType]]
   }
+  @scala.inline
+  implicit class RangePickerBasePropsOps[Self <: RangePickerBaseProps[_], DateType] (val x: Self with RangePickerBaseProps[DateType]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPicker(value: Exclude[PickerMode, date | time]): Self = this.set("picker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivePickerIndex(value: `0` | `1`): Self = this.set("activePickerIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivePickerIndex: Self = this.set("activePickerIndex", js.undefined)
+    @scala.inline
+    def setAllowClear(value: Boolean): Self = this.set("allowClear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowClear: Self = this.set("allowClear", js.undefined)
+    @scala.inline
+    def setAllowEmpty(value: js.Tuple2[Boolean, Boolean]): Self = this.set("allowEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowEmpty: Self = this.set("allowEmpty", js.undefined)
+    @scala.inline
+    def `setAria-activedescendant`(value: String): Self = this.set("aria-activedescendant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-activedescendant`: Self = this.set("aria-activedescendant", js.undefined)
+    @scala.inline
+    def `setAria-atomic`(value: Boolean): Self = this.set("aria-atomic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-atomic`: Self = this.set("aria-atomic", js.undefined)
+    @scala.inline
+    def `setAria-autocomplete`(value: none | `inline` | list | both): Self = this.set("aria-autocomplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-autocomplete`: Self = this.set("aria-autocomplete", js.undefined)
+    @scala.inline
+    def `setAria-busy`(value: Boolean): Self = this.set("aria-busy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-busy`: Self = this.set("aria-busy", js.undefined)
+    @scala.inline
+    def `setAria-checked`(value: Boolean | mixed): Self = this.set("aria-checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-checked`: Self = this.set("aria-checked", js.undefined)
+    @scala.inline
+    def `setAria-colcount`(value: Double): Self = this.set("aria-colcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colcount`: Self = this.set("aria-colcount", js.undefined)
+    @scala.inline
+    def `setAria-colindex`(value: Double): Self = this.set("aria-colindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colindex`: Self = this.set("aria-colindex", js.undefined)
+    @scala.inline
+    def `setAria-colspan`(value: Double): Self = this.set("aria-colspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-colspan`: Self = this.set("aria-colspan", js.undefined)
+    @scala.inline
+    def `setAria-controls`(value: String): Self = this.set("aria-controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-controls`: Self = this.set("aria-controls", js.undefined)
+    @scala.inline
+    def `setAria-current`(value: Boolean | page | step | location | date | time): Self = this.set("aria-current", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-current`: Self = this.set("aria-current", js.undefined)
+    @scala.inline
+    def `setAria-describedby`(value: String): Self = this.set("aria-describedby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-describedby`: Self = this.set("aria-describedby", js.undefined)
+    @scala.inline
+    def `setAria-details`(value: String): Self = this.set("aria-details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-details`: Self = this.set("aria-details", js.undefined)
+    @scala.inline
+    def `setAria-disabled`(value: Boolean): Self = this.set("aria-disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-disabled`: Self = this.set("aria-disabled", js.undefined)
+    @scala.inline
+    def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = this.set("aria-dropeffect", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-dropeffect`: Self = this.set("aria-dropeffect", js.undefined)
+    @scala.inline
+    def `setAria-errormessage`(value: String): Self = this.set("aria-errormessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-errormessage`: Self = this.set("aria-errormessage", js.undefined)
+    @scala.inline
+    def `setAria-expanded`(value: Boolean): Self = this.set("aria-expanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-expanded`: Self = this.set("aria-expanded", js.undefined)
+    @scala.inline
+    def `setAria-flowto`(value: String): Self = this.set("aria-flowto", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-flowto`: Self = this.set("aria-flowto", js.undefined)
+    @scala.inline
+    def `setAria-grabbed`(value: Boolean): Self = this.set("aria-grabbed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-grabbed`: Self = this.set("aria-grabbed", js.undefined)
+    @scala.inline
+    def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = this.set("aria-haspopup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-haspopup`: Self = this.set("aria-haspopup", js.undefined)
+    @scala.inline
+    def `setAria-hidden`(value: Boolean): Self = this.set("aria-hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-hidden`: Self = this.set("aria-hidden", js.undefined)
+    @scala.inline
+    def `setAria-invalid`(value: Boolean | grammar | spelling): Self = this.set("aria-invalid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-invalid`: Self = this.set("aria-invalid", js.undefined)
+    @scala.inline
+    def `setAria-keyshortcuts`(value: String): Self = this.set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-keyshortcuts`: Self = this.set("aria-keyshortcuts", js.undefined)
+    @scala.inline
+    def `setAria-label`(value: String): Self = this.set("aria-label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-label`: Self = this.set("aria-label", js.undefined)
+    @scala.inline
+    def `setAria-labelledby`(value: String): Self = this.set("aria-labelledby", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-labelledby`: Self = this.set("aria-labelledby", js.undefined)
+    @scala.inline
+    def `setAria-level`(value: Double): Self = this.set("aria-level", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-level`: Self = this.set("aria-level", js.undefined)
+    @scala.inline
+    def `setAria-live`(value: off | assertive | polite): Self = this.set("aria-live", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-live`: Self = this.set("aria-live", js.undefined)
+    @scala.inline
+    def `setAria-modal`(value: Boolean): Self = this.set("aria-modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-modal`: Self = this.set("aria-modal", js.undefined)
+    @scala.inline
+    def `setAria-multiline`(value: Boolean): Self = this.set("aria-multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiline`: Self = this.set("aria-multiline", js.undefined)
+    @scala.inline
+    def `setAria-multiselectable`(value: Boolean): Self = this.set("aria-multiselectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-multiselectable`: Self = this.set("aria-multiselectable", js.undefined)
+    @scala.inline
+    def `setAria-orientation`(value: horizontal | vertical): Self = this.set("aria-orientation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-orientation`: Self = this.set("aria-orientation", js.undefined)
+    @scala.inline
+    def `setAria-owns`(value: String): Self = this.set("aria-owns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-owns`: Self = this.set("aria-owns", js.undefined)
+    @scala.inline
+    def `setAria-placeholder`(value: String): Self = this.set("aria-placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-placeholder`: Self = this.set("aria-placeholder", js.undefined)
+    @scala.inline
+    def `setAria-posinset`(value: Double): Self = this.set("aria-posinset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-posinset`: Self = this.set("aria-posinset", js.undefined)
+    @scala.inline
+    def `setAria-pressed`(value: Boolean | mixed): Self = this.set("aria-pressed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-pressed`: Self = this.set("aria-pressed", js.undefined)
+    @scala.inline
+    def `setAria-readonly`(value: Boolean): Self = this.set("aria-readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-readonly`: Self = this.set("aria-readonly", js.undefined)
+    @scala.inline
+    def `setAria-relevant`(value: additions | (`additions text`) | all | removals | text): Self = this.set("aria-relevant", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-relevant`: Self = this.set("aria-relevant", js.undefined)
+    @scala.inline
+    def `setAria-required`(value: Boolean): Self = this.set("aria-required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-required`: Self = this.set("aria-required", js.undefined)
+    @scala.inline
+    def `setAria-roledescription`(value: String): Self = this.set("aria-roledescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-roledescription`: Self = this.set("aria-roledescription", js.undefined)
+    @scala.inline
+    def `setAria-rowcount`(value: Double): Self = this.set("aria-rowcount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowcount`: Self = this.set("aria-rowcount", js.undefined)
+    @scala.inline
+    def `setAria-rowindex`(value: Double): Self = this.set("aria-rowindex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowindex`: Self = this.set("aria-rowindex", js.undefined)
+    @scala.inline
+    def `setAria-rowspan`(value: Double): Self = this.set("aria-rowspan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-rowspan`: Self = this.set("aria-rowspan", js.undefined)
+    @scala.inline
+    def `setAria-selected`(value: Boolean): Self = this.set("aria-selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-selected`: Self = this.set("aria-selected", js.undefined)
+    @scala.inline
+    def `setAria-setsize`(value: Double): Self = this.set("aria-setsize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-setsize`: Self = this.set("aria-setsize", js.undefined)
+    @scala.inline
+    def `setAria-sort`(value: none | ascending | descending | other): Self = this.set("aria-sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-sort`: Self = this.set("aria-sort", js.undefined)
+    @scala.inline
+    def `setAria-valuemax`(value: Double): Self = this.set("aria-valuemax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemax`: Self = this.set("aria-valuemax", js.undefined)
+    @scala.inline
+    def `setAria-valuemin`(value: Double): Self = this.set("aria-valuemin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuemin`: Self = this.set("aria-valuemin", js.undefined)
+    @scala.inline
+    def `setAria-valuenow`(value: Double): Self = this.set("aria-valuenow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuenow`: Self = this.set("aria-valuenow", js.undefined)
+    @scala.inline
+    def `setAria-valuetext`(value: String): Self = this.set("aria-valuetext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteAria-valuetext`: Self = this.set("aria-valuetext", js.undefined)
+    @scala.inline
+    def setAutoComplete(value: String): Self = this.set("autoComplete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoComplete: Self = this.set("autoComplete", js.undefined)
+    @scala.inline
+    def setAutoFocus(value: Boolean): Self = this.set("autoFocus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoFocus: Self = this.set("autoFocus", js.undefined)
+    @scala.inline
+    def setBordered(value: Boolean): Self = this.set("bordered", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBordered: Self = this.set("bordered", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClearIcon(value: ReactNode): Self = this.set("clearIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClearIcon: Self = this.set("clearIcon", js.undefined)
+    @scala.inline
+    def setDateRender(value: (DateType, DateType, /* info */ RangeInfo) => ReactNode): Self = this.set("dateRender", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteDateRender: Self = this.set("dateRender", js.undefined)
+    @scala.inline
+    def setDefaultOpen(value: Boolean): Self = this.set("defaultOpen", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultOpen: Self = this.set("defaultOpen", js.undefined)
+    @scala.inline
+    def setDefaultPickerValue(value: js.Tuple2[DateType, DateType]): Self = this.set("defaultPickerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPickerValue: Self = this.set("defaultPickerValue", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: RangeValue[DateType]): Self = this.set("defaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("defaultValue", js.undefined)
+    @scala.inline
+    def setDefaultValueNull: Self = this.set("defaultValue", null)
+    @scala.inline
+    def setDirection(value: ltr | rtl): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean | (js.Tuple2[Boolean, Boolean])): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setDisabledDate(value: /* date */ DateType => Boolean): Self = this.set("disabledDate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDisabledDate: Self = this.set("disabledDate", js.undefined)
+    @scala.inline
+    def setDisabledTime(value: (/* date */ EventValue[DateType], /* type */ RangeType) => DisabledTimes): Self = this.set("disabledTime", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDisabledTime: Self = this.set("disabledTime", js.undefined)
+    @scala.inline
+    def setDropdownAlign(value: AlignType): Self = this.set("dropdownAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownAlign: Self = this.set("dropdownAlign", js.undefined)
+    @scala.inline
+    def setDropdownClassName(value: String): Self = this.set("dropdownClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDropdownClassName: Self = this.set("dropdownClassName", js.undefined)
+    @scala.inline
+    def setFormatVarargs(value: String*): Self = this.set("format", js.Array(value :_*))
+    @scala.inline
+    def setFormat(value: String | js.Array[String]): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = this.set("getPopupContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetPopupContainer: Self = this.set("getPopupContainer", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setInputReadOnly(value: Boolean): Self = this.set("inputReadOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputReadOnly: Self = this.set("inputReadOnly", js.undefined)
+    @scala.inline
+    def setLocale(value: PickerLocale): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setMode(value: js.Tuple2[PanelMode, PanelMode]): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setMonthCellRender(value: (DateType, /* locale */ Locale) => ReactNode): Self = this.set("monthCellRender", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMonthCellRender: Self = this.set("monthCellRender", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnCalendarChange(
+      value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String], /* info */ RangeInfo) => Unit
+    ): Self = this.set("onCalendarChange", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnCalendarChange: Self = this.set("onCalendarChange", js.undefined)
+    @scala.inline
+    def setOnChange(value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Unit): Self = this.set("onChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onClick", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnContextMenu(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onContextMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnContextMenu: Self = this.set("onContextMenu", js.undefined)
+    @scala.inline
+    def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseDown", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseDown: Self = this.set("onMouseDown", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseEnter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseLeave", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setOnMouseUp(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = this.set("onMouseUp", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnMouseUp: Self = this.set("onMouseUp", js.undefined)
+    @scala.inline
+    def setOnOk(value: /* dates */ RangeValue[DateType] => Unit): Self = this.set("onOk", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOk: Self = this.set("onOk", js.undefined)
+    @scala.inline
+    def setOnOpenChange(value: /* open */ Boolean => Unit): Self = this.set("onOpenChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOpenChange: Self = this.set("onOpenChange", js.undefined)
+    @scala.inline
+    def setOnPanelChange(value: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Unit): Self = this.set("onPanelChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnPanelChange: Self = this.set("onPanelChange", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPanelRender(value: /* originPanel */ ReactNode => ReactNode): Self = this.set("panelRender", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePanelRender: Self = this.set("panelRender", js.undefined)
+    @scala.inline
+    def setPickerRef(value: MutableRefObject[PickerRefConfig]): Self = this.set("pickerRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickerRef: Self = this.set("pickerRef", js.undefined)
+    @scala.inline
+    def setPlaceholder(value: js.Tuple2[String, String]): Self = this.set("placeholder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceholder: Self = this.set("placeholder", js.undefined)
+    @scala.inline
+    def setPopupStyle(value: CSSProperties): Self = this.set("popupStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePopupStyle: Self = this.set("popupStyle", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setRanges(
+      value: Record[
+          String, 
+          (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
+        ]
+    ): Self = this.set("ranges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRanges: Self = this.set("ranges", js.undefined)
+    @scala.inline
+    def setRenderExtraFooter(value: /* mode */ PanelMode => ReactNode): Self = this.set("renderExtraFooter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRenderExtraFooter: Self = this.set("renderExtraFooter", js.undefined)
+    @scala.inline
+    def setRole(value: String): Self = this.set("role", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRole: Self = this.set("role", js.undefined)
+    @scala.inline
+    def setSeparator(value: ReactNode): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setSize(value: SizeType): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuffixIcon(value: ReactNode): Self = this.set("suffixIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuffixIcon: Self = this.set("suffixIcon", js.undefined)
+    @scala.inline
+    def setTabIndex(value: Double): Self = this.set("tabIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTabIndex: Self = this.set("tabIndex", js.undefined)
+    @scala.inline
+    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setValue(value: RangeValue[DateType]): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setValueNull: Self = this.set("value", null)
+  }
+  
 }
 

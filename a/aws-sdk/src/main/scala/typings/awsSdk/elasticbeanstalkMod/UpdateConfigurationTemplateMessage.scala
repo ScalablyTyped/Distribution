@@ -30,18 +30,42 @@ trait UpdateConfigurationTemplateMessage extends js.Object {
 
 object UpdateConfigurationTemplateMessage {
   @scala.inline
-  def apply(
-    ApplicationName: ApplicationName,
-    TemplateName: ConfigurationTemplateName,
-    Description: Description = null,
-    OptionSettings: ConfigurationOptionSettingsList = null,
-    OptionsToRemove: OptionsSpecifierList = null
-  ): UpdateConfigurationTemplateMessage = {
+  def apply(ApplicationName: ApplicationName, TemplateName: ConfigurationTemplateName): UpdateConfigurationTemplateMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (OptionSettings != null) __obj.updateDynamic("OptionSettings")(OptionSettings.asInstanceOf[js.Any])
-    if (OptionsToRemove != null) __obj.updateDynamic("OptionsToRemove")(OptionsToRemove.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationTemplateMessage]
   }
+  @scala.inline
+  implicit class UpdateConfigurationTemplateMessageOps[Self <: UpdateConfigurationTemplateMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("ApplicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplateName(value: ConfigurationTemplateName): Self = this.set("TemplateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setOptionSettingsVarargs(value: ConfigurationOptionSetting*): Self = this.set("OptionSettings", js.Array(value :_*))
+    @scala.inline
+    def setOptionSettings(value: ConfigurationOptionSettingsList): Self = this.set("OptionSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionSettings: Self = this.set("OptionSettings", js.undefined)
+    @scala.inline
+    def setOptionsToRemoveVarargs(value: OptionSpecification*): Self = this.set("OptionsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setOptionsToRemove(value: OptionsSpecifierList): Self = this.set("OptionsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionsToRemove: Self = this.set("OptionsToRemove", js.undefined)
+  }
+  
 }
 

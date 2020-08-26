@@ -10,13 +10,14 @@ Generate an AST from a string template.
 | ------------------ | :-------------: |
 | Full name          | @babel/template |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 233 |
-| # downloads        | 397224580 |
+| # releases         | 35 |
+| # dependents       | 247 |
+| # downloads        | 440956423 |
 | # stars            | 1 |
 
 ## Links
 - [Homepage](https://babeljs.io/)
+- [Bugs](https://github.com/babel/babel/issues)
 - [Npm](https://www.npmjs.com/package/%40babel%2Ftemplate)
     
 

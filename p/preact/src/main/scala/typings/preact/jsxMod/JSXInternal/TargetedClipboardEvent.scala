@@ -16,7 +16,7 @@ trait TargetedClipboardEvent[Target /* <: EventTarget */] extends js.Object {
   var bubbles: Boolean = js.native
   var cancelBubble: Boolean = js.native
   var cancelable: Boolean = js.native
-  var clipboardData: js.UndefOr[DataTransfer] = js.native
+  var clipboardData: js.UndefOr[DataTransfer | Null] = js.native
   var composed: Boolean = js.native
   @JSName("composedPath")
   var composedPath_Original: js.Function0[js.Array[EventTarget]] = js.native
@@ -29,12 +29,12 @@ trait TargetedClipboardEvent[Target /* <: EventTarget */] extends js.Object {
   @JSName("preventDefault")
   var preventDefault_Original: js.Function0[Unit] = js.native
   var returnValue: Boolean = js.native
-  var srcElement: js.UndefOr[EventTarget] = js.native
+  var srcElement: js.UndefOr[EventTarget | Null] = js.native
   @JSName("stopImmediatePropagation")
   var stopImmediatePropagation_Original: js.Function0[Unit] = js.native
   @JSName("stopPropagation")
   var stopPropagation_Original: js.Function0[Unit] = js.native
-  var target: js.UndefOr[EventTarget] = js.native
+  var target: js.UndefOr[EventTarget | Null] = js.native
   var timeStamp: Double = js.native
   var `type`: String = js.native
   def composedPath(): js.Array[EventTarget] = js.native

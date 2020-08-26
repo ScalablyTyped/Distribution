@@ -17,32 +17,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BadgeHelpersProps extends js.Object {
-  var badge: js.UndefOr[Double | String] = js.undefined
+  var badge: js.UndefOr[Double | String] = js.native
   var badgeColor: js.UndefOr[
     primary | success | info | warning | danger | light | dark | white | black | link
-  ] = js.undefined
-  var badgeOutlined: js.UndefOr[Boolean] = js.undefined
-  var badgeRounded: js.UndefOr[Boolean] = js.undefined
-  var badgeSize: js.UndefOr[small | medium | large] = js.undefined
+  ] = js.native
+  var badgeOutlined: js.UndefOr[Boolean] = js.native
+  var badgeRounded: js.UndefOr[Boolean] = js.native
+  var badgeSize: js.UndefOr[small | medium | large] = js.native
 }
 
 object BadgeHelpersProps {
   @scala.inline
-  def apply(
-    badge: Double | String = null,
-    badgeColor: primary | success | info | warning | danger | light | dark | white | black | link = null,
-    badgeOutlined: js.UndefOr[Boolean] = js.undefined,
-    badgeRounded: js.UndefOr[Boolean] = js.undefined,
-    badgeSize: small | medium | large = null
-  ): BadgeHelpersProps = {
+  def apply(): BadgeHelpersProps = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(badgeOutlined)) __obj.updateDynamic("badgeOutlined")(badgeOutlined.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(badgeRounded)) __obj.updateDynamic("badgeRounded")(badgeRounded.get.asInstanceOf[js.Any])
-    if (badgeSize != null) __obj.updateDynamic("badgeSize")(badgeSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BadgeHelpersProps]
   }
+  @scala.inline
+  implicit class BadgeHelpersPropsOps[Self <: BadgeHelpersProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBadge(value: Double | String): Self = this.set("badge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadge: Self = this.set("badge", js.undefined)
+    @scala.inline
+    def setBadgeColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = this.set("badgeColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeColor: Self = this.set("badgeColor", js.undefined)
+    @scala.inline
+    def setBadgeOutlined(value: Boolean): Self = this.set("badgeOutlined", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeOutlined: Self = this.set("badgeOutlined", js.undefined)
+    @scala.inline
+    def setBadgeRounded(value: Boolean): Self = this.set("badgeRounded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeRounded: Self = this.set("badgeRounded", js.undefined)
+    @scala.inline
+    def setBadgeSize(value: small | medium | large): Self = this.set("badgeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBadgeSize: Self = this.set("badgeSize", js.undefined)
+  }
+  
 }
 

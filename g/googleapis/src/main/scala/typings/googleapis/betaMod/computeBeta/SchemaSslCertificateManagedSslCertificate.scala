@@ -28,16 +28,36 @@ trait SchemaSslCertificateManagedSslCertificate extends js.Object {
 
 object SchemaSslCertificateManagedSslCertificate {
   @scala.inline
-  def apply(
-    domainStatus: StringDictionary[String] = null,
-    domains: js.Array[String] = null,
-    status: String = null
-  ): SchemaSslCertificateManagedSslCertificate = {
+  def apply(): SchemaSslCertificateManagedSslCertificate = {
     val __obj = js.Dynamic.literal()
-    if (domainStatus != null) __obj.updateDynamic("domainStatus")(domainStatus.asInstanceOf[js.Any])
-    if (domains != null) __obj.updateDynamic("domains")(domains.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSslCertificateManagedSslCertificate]
   }
+  @scala.inline
+  implicit class SchemaSslCertificateManagedSslCertificateOps[Self <: SchemaSslCertificateManagedSslCertificate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainStatus(value: StringDictionary[String]): Self = this.set("domainStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainStatus: Self = this.set("domainStatus", js.undefined)
+    @scala.inline
+    def setDomainsVarargs(value: String*): Self = this.set("domains", js.Array(value :_*))
+    @scala.inline
+    def setDomains(value: js.Array[String]): Self = this.set("domains", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomains: Self = this.set("domains", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

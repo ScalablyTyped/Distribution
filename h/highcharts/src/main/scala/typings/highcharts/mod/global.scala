@@ -33,11 +33,21 @@ object global extends js.Object {
       * @return The current JQuery selector.
       */
     def highcharts(): JQuery = js.native
+    def highcharts(
+      className: js.UndefOr[scala.Nothing],
+      options: js.UndefOr[scala.Nothing],
+      callback: ChartCallbackFunction
+    ): JQuery = js.native
+    def highcharts(className: js.UndefOr[scala.Nothing], options: Options): JQuery = js.native
+    def highcharts(className: js.UndefOr[scala.Nothing], options: Options, callback: ChartCallbackFunction): JQuery = js.native
     def highcharts(className: String): JQuery = js.native
+    def highcharts(className: String, options: js.UndefOr[scala.Nothing], callback: ChartCallbackFunction): JQuery = js.native
     def highcharts(className: String, options: Options): JQuery = js.native
     def highcharts(className: String, options: Options, callback: ChartCallbackFunction): JQuery = js.native
     @JSName("highcharts")
     def highcharts_Chart(className: Chart): JQuery = js.native
+    @JSName("highcharts")
+    def highcharts_Chart(className: Chart, options: js.UndefOr[scala.Nothing], callback: ChartCallbackFunction): JQuery = js.native
     @JSName("highcharts")
     def highcharts_Chart(className: Chart, options: Options): JQuery = js.native
     @JSName("highcharts")
@@ -45,11 +55,15 @@ object global extends js.Object {
     @JSName("highcharts")
     def highcharts_Map(className: Map): JQuery = js.native
     @JSName("highcharts")
+    def highcharts_Map(className: Map, options: js.UndefOr[scala.Nothing], callback: ChartCallbackFunction): JQuery = js.native
+    @JSName("highcharts")
     def highcharts_Map(className: Map, options: Options): JQuery = js.native
     @JSName("highcharts")
     def highcharts_Map(className: Map, options: Options, callback: ChartCallbackFunction): JQuery = js.native
     @JSName("highcharts")
     def highcharts_StockChart(className: StockChart): JQuery = js.native
+    @JSName("highcharts")
+    def highcharts_StockChart(className: StockChart, options: js.UndefOr[scala.Nothing], callback: ChartCallbackFunction): JQuery = js.native
     @JSName("highcharts")
     def highcharts_StockChart(className: StockChart, options: Options): JQuery = js.native
     @JSName("highcharts")

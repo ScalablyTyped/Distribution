@@ -34,7 +34,7 @@ class StoredValue protected () extends ValueType {
   @JSName("containerAsAttribute")
   def containerAsAttribute_MStoredValue: Attribute = js.native
   def defaultValue: String = js.native
-  def defaultValue(newValue: String): js.Any = js.native
+  def defaultValue_=(newValue: String): Unit = js.native
 }
 
 /* static members */

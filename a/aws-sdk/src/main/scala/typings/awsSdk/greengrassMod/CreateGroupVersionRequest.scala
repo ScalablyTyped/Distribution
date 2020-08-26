@@ -46,27 +46,56 @@ trait CreateGroupVersionRequest extends js.Object {
 
 object CreateGroupVersionRequest {
   @scala.inline
-  def apply(
-    GroupId: string,
-    AmznClientToken: string = null,
-    ConnectorDefinitionVersionArn: string = null,
-    CoreDefinitionVersionArn: string = null,
-    DeviceDefinitionVersionArn: string = null,
-    FunctionDefinitionVersionArn: string = null,
-    LoggerDefinitionVersionArn: string = null,
-    ResourceDefinitionVersionArn: string = null,
-    SubscriptionDefinitionVersionArn: string = null
-  ): CreateGroupVersionRequest = {
+  def apply(GroupId: string): CreateGroupVersionRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
-    if (AmznClientToken != null) __obj.updateDynamic("AmznClientToken")(AmznClientToken.asInstanceOf[js.Any])
-    if (ConnectorDefinitionVersionArn != null) __obj.updateDynamic("ConnectorDefinitionVersionArn")(ConnectorDefinitionVersionArn.asInstanceOf[js.Any])
-    if (CoreDefinitionVersionArn != null) __obj.updateDynamic("CoreDefinitionVersionArn")(CoreDefinitionVersionArn.asInstanceOf[js.Any])
-    if (DeviceDefinitionVersionArn != null) __obj.updateDynamic("DeviceDefinitionVersionArn")(DeviceDefinitionVersionArn.asInstanceOf[js.Any])
-    if (FunctionDefinitionVersionArn != null) __obj.updateDynamic("FunctionDefinitionVersionArn")(FunctionDefinitionVersionArn.asInstanceOf[js.Any])
-    if (LoggerDefinitionVersionArn != null) __obj.updateDynamic("LoggerDefinitionVersionArn")(LoggerDefinitionVersionArn.asInstanceOf[js.Any])
-    if (ResourceDefinitionVersionArn != null) __obj.updateDynamic("ResourceDefinitionVersionArn")(ResourceDefinitionVersionArn.asInstanceOf[js.Any])
-    if (SubscriptionDefinitionVersionArn != null) __obj.updateDynamic("SubscriptionDefinitionVersionArn")(SubscriptionDefinitionVersionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupVersionRequest]
   }
+  @scala.inline
+  implicit class CreateGroupVersionRequestOps[Self <: CreateGroupVersionRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGroupId(value: string): Self = this.set("GroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAmznClientToken(value: string): Self = this.set("AmznClientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmznClientToken: Self = this.set("AmznClientToken", js.undefined)
+    @scala.inline
+    def setConnectorDefinitionVersionArn(value: string): Self = this.set("ConnectorDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConnectorDefinitionVersionArn: Self = this.set("ConnectorDefinitionVersionArn", js.undefined)
+    @scala.inline
+    def setCoreDefinitionVersionArn(value: string): Self = this.set("CoreDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoreDefinitionVersionArn: Self = this.set("CoreDefinitionVersionArn", js.undefined)
+    @scala.inline
+    def setDeviceDefinitionVersionArn(value: string): Self = this.set("DeviceDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceDefinitionVersionArn: Self = this.set("DeviceDefinitionVersionArn", js.undefined)
+    @scala.inline
+    def setFunctionDefinitionVersionArn(value: string): Self = this.set("FunctionDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunctionDefinitionVersionArn: Self = this.set("FunctionDefinitionVersionArn", js.undefined)
+    @scala.inline
+    def setLoggerDefinitionVersionArn(value: string): Self = this.set("LoggerDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoggerDefinitionVersionArn: Self = this.set("LoggerDefinitionVersionArn", js.undefined)
+    @scala.inline
+    def setResourceDefinitionVersionArn(value: string): Self = this.set("ResourceDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceDefinitionVersionArn: Self = this.set("ResourceDefinitionVersionArn", js.undefined)
+    @scala.inline
+    def setSubscriptionDefinitionVersionArn(value: string): Self = this.set("SubscriptionDefinitionVersionArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubscriptionDefinitionVersionArn: Self = this.set("SubscriptionDefinitionVersionArn", js.undefined)
+  }
+  
 }
 

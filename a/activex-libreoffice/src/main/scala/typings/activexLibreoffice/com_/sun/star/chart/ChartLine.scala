@@ -17,6 +17,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** specifies line elements in a chart (regression lines, etc.). */
+@js.native
 trait ChartLine
   extends XPropertySet
      with LineProperties

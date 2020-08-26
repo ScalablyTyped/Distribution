@@ -22,18 +22,6 @@ class RequiredValidator () extends Validator {
     * Tracks changes to the required attribute bound to this directive.
     */
   def required: Boolean | String = js.native
-  def required(value: String): js.Any = js.native
-  def required(value: Boolean): js.Any = js.native
-  /**
-    * @description
-    * Method that performs synchronous validation against the provided control.
-    *
-    * @param control The control to validate against.
-    *
-    * @returns A map of validation errors if validation fails,
-    * otherwise null.
-    */
-  /* CompleteClass */
-  override def validate(control: AbstractControl): ValidationErrors | Null = js.native
+  def required_=(value: Boolean | String): Unit = js.native
 }
 

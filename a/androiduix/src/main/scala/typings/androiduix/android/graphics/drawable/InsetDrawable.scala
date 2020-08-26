@@ -5,21 +5,15 @@ import typings.androiduix.android.graphics.Canvas
 import typings.androiduix.android.graphics.Rect
 import typings.androiduix.android.graphics.drawable.Drawable.Callback
 import typings.androiduix.android.graphics.drawable.Drawable.ConstantState
-import typings.androiduix.java.lang.Runnable
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.drawable.InsetDrawable")
 @js.native
-class InsetDrawable protected ()
+trait InsetDrawable
   extends Drawable
      with Callback {
-  def this(drawable: Drawable, insetLeft: Double) = this()
-  def this(drawable: Drawable, insetLeft: Double, insetTop: Double) = this()
-  def this(drawable: Drawable, insetLeft: Double, insetTop: Double, insetRight: Double) = this()
-  def this(drawable: Drawable, insetLeft: Double, insetTop: Double, insetRight: Double, insetBottom: Double) = this()
   var mInsetState: js.Any = js.native
   var mMutated: js.Any = js.native
   var mTmpRect: js.Any = js.native
@@ -60,8 +54,6 @@ class InsetDrawable protected ()
   override def getState(): js.Array[Double] = js.native
   /* InferMemberOverrides */
   override def inflate(r: Resources, parser: HTMLElement): Unit = js.native
-  /* CompleteClass */
-  override def invalidateDrawable(who: Drawable): Unit = js.native
   /* InferMemberOverrides */
   override def invalidateSelf(): Unit = js.native
   /* InferMemberOverrides */
@@ -82,8 +74,6 @@ class InsetDrawable protected ()
   /* protected */ override def onLevelChange(level: Double): Boolean = js.native
   /* InferMemberOverrides */
   /* protected */ override def onStateChange(state: js.Array[Double]): Boolean = js.native
-  /* CompleteClass */
-  override def scheduleDrawable(who: Drawable, what: Runnable, when: Double): Unit = js.native
   /* InferMemberOverrides */
   override def scheduleSelf(what: js.Any, when: js.Any): Unit = js.native
   /* InferMemberOverrides */
@@ -106,8 +96,6 @@ class InsetDrawable protected ()
   override def setState(stateSet: js.Array[Double]): Boolean = js.native
   /* InferMemberOverrides */
   override def setVisible(visible: Boolean, restart: Boolean): Boolean = js.native
-  /* CompleteClass */
-  override def unscheduleDrawable(who: Drawable, what: Runnable): Unit = js.native
   /* InferMemberOverrides */
   override def unscheduleSelf(what: js.Any): Unit = js.native
 }

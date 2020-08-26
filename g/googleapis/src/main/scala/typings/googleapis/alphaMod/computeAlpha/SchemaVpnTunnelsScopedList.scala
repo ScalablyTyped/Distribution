@@ -20,11 +20,32 @@ trait SchemaVpnTunnelsScopedList extends js.Object {
 
 object SchemaVpnTunnelsScopedList {
   @scala.inline
-  def apply(vpnTunnels: js.Array[SchemaVpnTunnel] = null, warning: Code = null): SchemaVpnTunnelsScopedList = {
+  def apply(): SchemaVpnTunnelsScopedList = {
     val __obj = js.Dynamic.literal()
-    if (vpnTunnels != null) __obj.updateDynamic("vpnTunnels")(vpnTunnels.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVpnTunnelsScopedList]
   }
+  @scala.inline
+  implicit class SchemaVpnTunnelsScopedListOps[Self <: SchemaVpnTunnelsScopedList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVpnTunnelsVarargs(value: SchemaVpnTunnel*): Self = this.set("vpnTunnels", js.Array(value :_*))
+    @scala.inline
+    def setVpnTunnels(value: js.Array[SchemaVpnTunnel]): Self = this.set("vpnTunnels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnTunnels: Self = this.set("vpnTunnels", js.undefined)
+    @scala.inline
+    def setWarning(value: Code): Self = this.set("warning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWarning: Self = this.set("warning", js.undefined)
+  }
+  
 }
 

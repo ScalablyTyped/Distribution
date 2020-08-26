@@ -20,7 +20,15 @@ trait PlusVideoVideoPlayer extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def addEventListener(): Unit = js.native
+  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
+  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(
+    event: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* result */ js.Any, Unit],
+    capture: Boolean
+  ): Unit = js.native
   def addEventListener(event: PlusVideoVideoPlayerEvents): Unit = js.native
+  def addEventListener(event: PlusVideoVideoPlayerEvents, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusVideoVideoPlayerEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusVideoVideoPlayerEvents,

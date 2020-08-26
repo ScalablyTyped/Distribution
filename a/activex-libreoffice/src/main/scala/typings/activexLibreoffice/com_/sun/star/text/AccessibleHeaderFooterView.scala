@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
   * The accessible view of headers and footers.
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleHeaderFooterView
   extends XAccessibleContext
      with XAccessibleComponent

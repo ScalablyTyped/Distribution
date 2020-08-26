@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object keyInYN extends js.Object {
   def apply(): Boolean | String = js.native
+  def apply(query: js.UndefOr[scala.Nothing], options: BasicOptions): Boolean | String = js.native
   def apply(query: js.Any): Boolean | String = js.native
   def apply(query: js.Any, options: BasicOptions): Boolean | String = js.native
 }

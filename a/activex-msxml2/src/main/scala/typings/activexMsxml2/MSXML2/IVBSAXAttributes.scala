@@ -5,33 +5,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** IVBSAXAttributes interface */
+@js.native
 trait IVBSAXAttributes extends js.Object {
   @JSName("MSXML2.IVBSAXAttributes_typekey")
-  var MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes
+  var MSXML2DotIVBSAXAttributes_typekey: IVBSAXAttributes = js.native
   /** Get the number of attributes in the list. */
-  val length: Double
+  val length: Double = js.native
   /** Look up the index of an attribute by Namespace name. */
-  def getIndexFromName(strURI: String, strLocalName: String): Double
+  def getIndexFromName(strURI: String, strLocalName: String): Double = js.native
   /** Look up the index of an attribute by XML 1.0 qualified name. */
-  def getIndexFromQName(strQName: String): Double
+  def getIndexFromQName(strQName: String): Double = js.native
   /** Look up an attribute's local name by index. */
-  def getLocalName(nIndex: Double): String
+  def getLocalName(nIndex: Double): String = js.native
   /** Look up an attribute's XML 1.0 qualified name by index. */
-  def getQName(nIndex: Double): String
+  def getQName(nIndex: Double): String = js.native
   /** Look up an attribute's type by index. */
-  def getType(nIndex: Double): String
+  def getType(nIndex: Double): String = js.native
   /** Look up an attribute's type by Namespace name. */
-  def getTypeFromName(strURI: String, strLocalName: String): String
+  def getTypeFromName(strURI: String, strLocalName: String): String = js.native
   /** Look up an attribute's type by XML 1.0 qualified name. */
-  def getTypeFromQName(strQName: String): String
+  def getTypeFromQName(strQName: String): String = js.native
   /** Look up an attribute's Namespace URI by index. */
-  def getURI(nIndex: Double): String
+  def getURI(nIndex: Double): String = js.native
   /** Look up an attribute's value by index. */
-  def getValue(nIndex: Double): String
+  def getValue(nIndex: Double): String = js.native
   /** Look up an attribute's value by Namespace name. */
-  def getValueFromName(strURI: String, strLocalName: String): String
+  def getValueFromName(strURI: String, strLocalName: String): String = js.native
   /** Look up an attribute's value by XML 1.0 qualified name. */
-  def getValueFromQName(strQName: String): String
+  def getValueFromQName(strQName: String): String = js.native
 }
 
 object IVBSAXAttributes {
@@ -55,5 +56,44 @@ object IVBSAXAttributes {
     __obj.updateDynamic("MSXML2.IVBSAXAttributes_typekey")(MSXML2DotIVBSAXAttributes_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVBSAXAttributes]
   }
+  @scala.inline
+  implicit class IVBSAXAttributesOps[Self <: IVBSAXAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMSXML2DotIVBSAXAttributes_typekey(value: IVBSAXAttributes): Self = this.set("MSXML2.IVBSAXAttributes_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetIndexFromName(value: (String, String) => Double): Self = this.set("getIndexFromName", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetIndexFromQName(value: String => Double): Self = this.set("getIndexFromQName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetLocalName(value: Double => String): Self = this.set("getLocalName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetQName(value: Double => String): Self = this.set("getQName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetType(value: Double => String): Self = this.set("getType", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetTypeFromName(value: (String, String) => String): Self = this.set("getTypeFromName", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetTypeFromQName(value: String => String): Self = this.set("getTypeFromQName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetURI(value: Double => String): Self = this.set("getURI", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetValue(value: Double => String): Self = this.set("getValue", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetValueFromName(value: (String, String) => String): Self = this.set("getValueFromName", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetValueFromQName(value: String => String): Self = this.set("getValueFromQName", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLength(value: Double): Self = this.set("length", value.asInstanceOf[js.Any])
+  }
+  
 }
 

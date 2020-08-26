@@ -23,6 +23,9 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-view", "EditorView")
 @js.native
 class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
+  def this(place: js.UndefOr[scala.Nothing], props: DirectEditorProps[S]) = this()
+  def this(place: js.Function1[/* p */ Node, Unit], props: DirectEditorProps[S]) = this()
+  def this(place: Mount, props: DirectEditorProps[S]) = this()
   /**
     * Create a view. `place` may be a DOM node that the editor should
     * be appended to, a function that will place it into the document,
@@ -30,7 +33,7 @@ class EditorView[S /* <: Schema[_, _] */] protected () extends js.Object {
     * document container. If it is `null`, the editor will not be added
     * to the document.
     */
-  def this(place: js.UndefOr[(js.Function1[/* p */ Node, Unit]) | Mount | Node], props: DirectEditorProps[S]) = this()
+  def this(place: Node, props: DirectEditorProps[S]) = this()
   /**
     * Holds true when a composition is active.
     */

@@ -1,7 +1,7 @@
 package typings.expoWebBrowser
 
 import typings.expoWebBrowser.anon.Message
-import typings.expoWebBrowser.anon.SkipRedirectCheckBoolean
+import typings.expoWebBrowser.anon.SkipRedirectCheck
 import typings.expoWebBrowser.expoWebBrowserStrings.cancel
 import typings.expoWebBrowser.expoWebBrowserStrings.dismiss
 import typings.expoWebBrowser.expoWebBrowserStrings.opened
@@ -27,7 +27,7 @@ object mod extends js.Object {
   def mayInitWithUrlAsync(url: String): js.Promise[WebBrowserMayInitWithUrlResult] = js.native
   def mayInitWithUrlAsync(url: String, browserPackage: String): js.Promise[WebBrowserMayInitWithUrlResult] = js.native
   def maybeCompleteAuthSession(): Message = js.native
-  def maybeCompleteAuthSession(options: SkipRedirectCheckBoolean): Message = js.native
+  def maybeCompleteAuthSession(options: SkipRedirectCheck): Message = js.native
   def openAuthSessionAsync(url: String, redirectUrl: String): js.Promise[WebBrowserAuthSessionResult] = js.native
   def openAuthSessionAsync(url: String, redirectUrl: String, browserParams: WebBrowserOpenOptions): js.Promise[WebBrowserAuthSessionResult] = js.native
   def openBrowserAsync(url: String): js.Promise[WebBrowserResult] = js.native

@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ResponsiveRulesOptions extends js.Object {
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A full set of chart options to
@@ -18,21 +19,40 @@ trait ResponsiveRulesOptions extends js.Object {
     * will cause the existing chart's two series to be updated with respective
     * options.
     */
-  var chartOptions: js.UndefOr[Options] = js.undefined
+  var chartOptions: js.UndefOr[Options] = js.native
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Under which conditions the rule
     * applies.
     */
-  var condition: js.UndefOr[ResponsiveRulesConditionOptions] = js.undefined
+  var condition: js.UndefOr[ResponsiveRulesConditionOptions] = js.native
 }
 
 object ResponsiveRulesOptions {
   @scala.inline
-  def apply(chartOptions: Options = null, condition: ResponsiveRulesConditionOptions = null): ResponsiveRulesOptions = {
+  def apply(): ResponsiveRulesOptions = {
     val __obj = js.Dynamic.literal()
-    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveRulesOptions]
   }
+  @scala.inline
+  implicit class ResponsiveRulesOptionsOps[Self <: ResponsiveRulesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChartOptions(value: Options): Self = this.set("chartOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChartOptions: Self = this.set("chartOptions", js.undefined)
+    @scala.inline
+    def setCondition(value: ResponsiveRulesConditionOptions): Self = this.set("condition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+  }
+  
 }
 

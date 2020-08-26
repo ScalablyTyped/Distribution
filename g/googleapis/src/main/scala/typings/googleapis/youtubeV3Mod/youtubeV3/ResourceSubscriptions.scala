@@ -27,6 +27,7 @@ class ResourceSubscriptions protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSubscriptionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceSubscriptionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -55,6 +56,7 @@ class ResourceSubscriptions protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaSubscription] = js.native
   def insert(callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscription] = js.native
   def insert(params: ParamsResourceSubscriptionsInsert): GaxiosPromise[SchemaSubscription] = js.native
   def insert(params: ParamsResourceSubscriptionsInsert, callback: BodyResponseCallback[SchemaSubscription]): Unit = js.native
   def insert(
@@ -93,6 +95,7 @@ class ResourceSubscriptions protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaSubscriptionListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSubscriptionListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubscriptionListResponse] = js.native
   def list(params: ParamsResourceSubscriptionsList): GaxiosPromise[SchemaSubscriptionListResponse] = js.native
   def list(
     params: ParamsResourceSubscriptionsList,

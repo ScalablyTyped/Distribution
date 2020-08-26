@@ -28,6 +28,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceGroupsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -52,6 +53,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def insert(params: ParamsResourceGroupsInsert): GaxiosPromise[SchemaGroup] = js.native
   def insert(params: ParamsResourceGroupsInsert, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def insert(
@@ -85,6 +87,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaGroupListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGroupListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupListResponse] = js.native
   def list(params: ParamsResourceGroupsList): GaxiosPromise[SchemaGroupListResponse] = js.native
   def list(params: ParamsResourceGroupsList, callback: BodyResponseCallback[SchemaGroupListResponse]): Unit = js.native
   def list(
@@ -113,6 +116,7 @@ class ResourceGroups protected () extends js.Object {
     */
   def update(): GaxiosPromise[SchemaGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroup] = js.native
   def update(params: ParamsResourceGroupsUpdate): GaxiosPromise[SchemaGroup] = js.native
   def update(params: ParamsResourceGroupsUpdate, callback: BodyResponseCallback[SchemaGroup]): Unit = js.native
   def update(

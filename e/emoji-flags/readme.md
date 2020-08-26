@@ -12,7 +12,7 @@ return emoji flag symbol for country code
 | Keywords           | emoji, countries, flag, country code, emoji flag, country flag, ISO 3166-1, ISO 3166-1-alpha-2 |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 221936 |
+| # downloads        | 230653 |
 | # stars            | 2 |
 
 ## Links

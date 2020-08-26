@@ -21,51 +21,86 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojnavigationlist.ojTabBarSettableProperties<K, D>> */
+@js.native
 trait ojTabBarSettablePropertiesLenient[K, D]
   extends /* key */ StringDictionary[js.Any] {
-  var as: js.UndefOr[String] = js.undefined
-  var currentItem: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
-  var display: js.UndefOr[all | icons] = js.undefined
-  var edge: js.UndefOr[top | bottom | start | end] = js.undefined
-  var item: js.UndefOr[RendererSelectable[K, D]] = js.undefined
-  var overflow: js.UndefOr[popup | hidden] = js.undefined
-  var reorderable: js.UndefOr[enabled | disabled] = js.undefined
-  var selection: js.UndefOr[js.Any] = js.undefined
-  var translations: js.UndefOr[AccessibleReorderAfterItem] = js.undefined
-  var truncation: js.UndefOr[none | progressive] = js.undefined
+  var as: js.UndefOr[String] = js.native
+  var currentItem: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.native
+  var display: js.UndefOr[all | icons] = js.native
+  var edge: js.UndefOr[top | bottom | start | end] = js.native
+  var item: js.UndefOr[RendererSelectable[K, D]] = js.native
+  var overflow: js.UndefOr[popup | hidden] = js.native
+  var reorderable: js.UndefOr[enabled | disabled] = js.native
+  var selection: js.UndefOr[js.Any] = js.native
+  var translations: js.UndefOr[AccessibleReorderAfterItem] = js.native
+  var truncation: js.UndefOr[none | progressive] = js.native
 }
 
 object ojTabBarSettablePropertiesLenient {
   @scala.inline
-  def apply[K, D](
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    as: String = null,
-    currentItem: js.Any = null,
-    data: DataProvider[K, D] = null,
-    display: all | icons = null,
-    edge: top | bottom | start | end = null,
-    item: RendererSelectable[K, D] = null,
-    overflow: popup | hidden = null,
-    reorderable: enabled | disabled = null,
-    selection: js.Any = null,
-    translations: AccessibleReorderAfterItem = null,
-    truncation: none | progressive = null
-  ): ojTabBarSettablePropertiesLenient[K, D] = {
+  def apply[K, D](): ojTabBarSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (currentItem != null) __obj.updateDynamic("currentItem")(currentItem.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (edge != null) __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (reorderable != null) __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (truncation != null) __obj.updateDynamic("truncation")(truncation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojTabBarSettablePropertiesLenient[K, D]]
   }
+  @scala.inline
+  implicit class ojTabBarSettablePropertiesLenientOps[Self <: ojTabBarSettablePropertiesLenient[_, _], K, D] (val x: Self with (ojTabBarSettablePropertiesLenient[K, D])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAs(value: String): Self = this.set("as", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAs: Self = this.set("as", js.undefined)
+    @scala.inline
+    def setCurrentItem(value: js.Any): Self = this.set("currentItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentItem: Self = this.set("currentItem", js.undefined)
+    @scala.inline
+    def setData(value: DataProvider[K, D]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataNull: Self = this.set("data", null)
+    @scala.inline
+    def setDisplay(value: all | icons): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setEdge(value: top | bottom | start | end): Self = this.set("edge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdge: Self = this.set("edge", js.undefined)
+    @scala.inline
+    def setItem(value: RendererSelectable[K, D]): Self = this.set("item", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItem: Self = this.set("item", js.undefined)
+    @scala.inline
+    def setOverflow(value: popup | hidden): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setReorderable(value: enabled | disabled): Self = this.set("reorderable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReorderable: Self = this.set("reorderable", js.undefined)
+    @scala.inline
+    def setSelection(value: js.Any): Self = this.set("selection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelection: Self = this.set("selection", js.undefined)
+    @scala.inline
+    def setTranslations(value: AccessibleReorderAfterItem): Self = this.set("translations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslations: Self = this.set("translations", js.undefined)
+    @scala.inline
+    def setTruncation(value: none | progressive): Self = this.set("truncation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTruncation: Self = this.set("truncation", js.undefined)
+  }
+  
 }
 

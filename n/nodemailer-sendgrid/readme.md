@@ -12,7 +12,7 @@ SendGrid transport object for Nodemailer.
 | Keywords           | nodemailer, sendgrid |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 172314 |
+| # downloads        | 181894 |
 | # stars            | 0 |
 
 ## Links

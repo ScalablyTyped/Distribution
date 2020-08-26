@@ -12,7 +12,7 @@ all the types of nodes in htmlparser2's dom
 | Keywords           | dom, htmlparser2 |
 | # releases         | 5 |
 | # dependents       | 65 |
-| # downloads        | 487518691 |
+| # downloads        | 496139898 |
 | # stars            | 3 |
 
 ## Links

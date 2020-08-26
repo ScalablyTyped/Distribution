@@ -30,7 +30,7 @@ class SimpleMenuBar protected () extends MenuWidget {
   @JSName("model")
   var model_FSimpleMenuBar: IModel = js.native
   def orientation: SimpleMenuBarOrientation = js.native
-  def orientation(newValue: SimpleMenuBarOrientation): js.Any = js.native
+  def orientation_=(newValue: SimpleMenuBarOrientation): Unit = js.native
 }
 
 /* static members */

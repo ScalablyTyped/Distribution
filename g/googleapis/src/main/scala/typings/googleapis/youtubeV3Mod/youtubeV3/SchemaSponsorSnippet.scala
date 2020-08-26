@@ -27,18 +27,38 @@ trait SchemaSponsorSnippet extends js.Object {
 
 object SchemaSponsorSnippet {
   @scala.inline
-  def apply(
-    channelId: String = null,
-    cumulativeDurationMonths: js.UndefOr[Double] = js.undefined,
-    sponsorDetails: SchemaChannelProfileDetails = null,
-    sponsorSince: String = null
-  ): SchemaSponsorSnippet = {
+  def apply(): SchemaSponsorSnippet = {
     val __obj = js.Dynamic.literal()
-    if (channelId != null) __obj.updateDynamic("channelId")(channelId.asInstanceOf[js.Any])
-    if (!js.isUndefined(cumulativeDurationMonths)) __obj.updateDynamic("cumulativeDurationMonths")(cumulativeDurationMonths.get.asInstanceOf[js.Any])
-    if (sponsorDetails != null) __obj.updateDynamic("sponsorDetails")(sponsorDetails.asInstanceOf[js.Any])
-    if (sponsorSince != null) __obj.updateDynamic("sponsorSince")(sponsorSince.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSponsorSnippet]
   }
+  @scala.inline
+  implicit class SchemaSponsorSnippetOps[Self <: SchemaSponsorSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChannelId(value: String): Self = this.set("channelId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChannelId: Self = this.set("channelId", js.undefined)
+    @scala.inline
+    def setCumulativeDurationMonths(value: Double): Self = this.set("cumulativeDurationMonths", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCumulativeDurationMonths: Self = this.set("cumulativeDurationMonths", js.undefined)
+    @scala.inline
+    def setSponsorDetails(value: SchemaChannelProfileDetails): Self = this.set("sponsorDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSponsorDetails: Self = this.set("sponsorDetails", js.undefined)
+    @scala.inline
+    def setSponsorSince(value: String): Self = this.set("sponsorSince", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSponsorSince: Self = this.set("sponsorSince", js.undefined)
+  }
+  
 }
 

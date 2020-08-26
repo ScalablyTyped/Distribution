@@ -17,32 +17,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined {  dataFrom  :'indexes' | 'keys'} & @nivo/legends.@nivo/legends.LegendProps */
+/* Inlined {  dataFrom :'indexes' | 'keys'} & @nivo/legends.@nivo/legends.LegendProps */
+@js.native
 trait dataFromindexeskeysLegend extends js.Object {
-  var anchor: LegendAnchor
-  var data: js.UndefOr[js.Array[Color]] = js.undefined
-  var dataFrom: indexes | keys
-  var direction: LegendDirection
-  var effects: js.UndefOr[js.Array[LegendEffect]] = js.undefined
-  var itemBackground: js.UndefOr[String] = js.undefined
-  var itemDirection: js.UndefOr[LegendItemDirection] = js.undefined
-  var itemHeight: Double
-  var itemOpacity: js.UndefOr[Double] = js.undefined
-  var itemTextColor: js.UndefOr[String] = js.undefined
-  var itemWidth: Double
-  var itemsSpacing: js.UndefOr[Double] = js.undefined
-  var justify: js.UndefOr[Boolean] = js.undefined
-  var onClick: js.UndefOr[LegendMouseHandler] = js.undefined
-  var onMouseEnter: js.UndefOr[LegendMouseHandler] = js.undefined
-  var onMouseLeave: js.UndefOr[LegendMouseHandler] = js.undefined
-  var padding: js.UndefOr[Double | Box] = js.undefined
-  var symbolBorderColor: js.UndefOr[String] = js.undefined
-  var symbolShape: js.UndefOr[LegendSymbolShape | js.Any] = js.undefined
-  var symbolSize: js.UndefOr[Double] = js.undefined
-  var symbolSpacing: js.UndefOr[Double] = js.undefined
-  var textColor: js.UndefOr[String] = js.undefined
-  var translateX: js.UndefOr[Double] = js.undefined
-  var translateY: js.UndefOr[Double] = js.undefined
+  var anchor: LegendAnchor = js.native
+  var data: js.UndefOr[js.Array[Color]] = js.native
+  var dataFrom: indexes | keys = js.native
+  var direction: LegendDirection = js.native
+  var effects: js.UndefOr[js.Array[LegendEffect]] = js.native
+  var itemBackground: js.UndefOr[String] = js.native
+  var itemDirection: js.UndefOr[LegendItemDirection] = js.native
+  var itemHeight: Double = js.native
+  var itemOpacity: js.UndefOr[Double] = js.native
+  var itemTextColor: js.UndefOr[String] = js.native
+  var itemWidth: Double = js.native
+  var itemsSpacing: js.UndefOr[Double] = js.native
+  var justify: js.UndefOr[Boolean] = js.native
+  var onClick: js.UndefOr[LegendMouseHandler] = js.native
+  var onMouseEnter: js.UndefOr[LegendMouseHandler] = js.native
+  var onMouseLeave: js.UndefOr[LegendMouseHandler] = js.native
+  var padding: js.UndefOr[Double | Box] = js.native
+  var symbolBorderColor: js.UndefOr[String] = js.native
+  var symbolShape: js.UndefOr[LegendSymbolShape | js.Any] = js.native
+  var symbolSize: js.UndefOr[Double] = js.native
+  var symbolSpacing: js.UndefOr[Double] = js.native
+  var textColor: js.UndefOr[String] = js.native
+  var translateX: js.UndefOr[Double] = js.native
+  var translateY: js.UndefOr[Double] = js.native
 }
 
 object dataFromindexeskeysLegend {
@@ -52,48 +53,119 @@ object dataFromindexeskeysLegend {
     dataFrom: indexes | keys,
     direction: LegendDirection,
     itemHeight: Double,
-    itemWidth: Double,
-    data: js.Array[Color] = null,
-    effects: js.Array[LegendEffect] = null,
-    itemBackground: String = null,
-    itemDirection: LegendItemDirection = null,
-    itemOpacity: js.UndefOr[Double] = js.undefined,
-    itemTextColor: String = null,
-    itemsSpacing: js.UndefOr[Double] = js.undefined,
-    justify: js.UndefOr[Boolean] = js.undefined,
-    onClick: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
-    onMouseEnter: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
-    onMouseLeave: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit = null,
-    padding: Double | Box = null,
-    symbolBorderColor: String = null,
-    symbolShape: LegendSymbolShape | js.Any = null,
-    symbolSize: js.UndefOr[Double] = js.undefined,
-    symbolSpacing: js.UndefOr[Double] = js.undefined,
-    textColor: String = null,
-    translateX: js.UndefOr[Double] = js.undefined,
-    translateY: js.UndefOr[Double] = js.undefined
+    itemWidth: Double
   ): dataFromindexeskeysLegend = {
     val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], dataFrom = dataFrom.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], itemHeight = itemHeight.asInstanceOf[js.Any], itemWidth = itemWidth.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (effects != null) __obj.updateDynamic("effects")(effects.asInstanceOf[js.Any])
-    if (itemBackground != null) __obj.updateDynamic("itemBackground")(itemBackground.asInstanceOf[js.Any])
-    if (itemDirection != null) __obj.updateDynamic("itemDirection")(itemDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemOpacity)) __obj.updateDynamic("itemOpacity")(itemOpacity.get.asInstanceOf[js.Any])
-    if (itemTextColor != null) __obj.updateDynamic("itemTextColor")(itemTextColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemsSpacing)) __obj.updateDynamic("itemsSpacing")(itemsSpacing.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(justify)) __obj.updateDynamic("justify")(justify.get.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2(onMouseEnter))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2(onMouseLeave))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (symbolBorderColor != null) __obj.updateDynamic("symbolBorderColor")(symbolBorderColor.asInstanceOf[js.Any])
-    if (symbolShape != null) __obj.updateDynamic("symbolShape")(symbolShape.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolSize)) __obj.updateDynamic("symbolSize")(symbolSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(symbolSpacing)) __obj.updateDynamic("symbolSpacing")(symbolSpacing.get.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(translateX)) __obj.updateDynamic("translateX")(translateX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(translateY)) __obj.updateDynamic("translateY")(translateY.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[dataFromindexeskeysLegend]
   }
+  @scala.inline
+  implicit class dataFromindexeskeysLegendOps[Self <: dataFromindexeskeysLegend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnchor(value: LegendAnchor): Self = this.set("anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataFrom(value: indexes | keys): Self = this.set("dataFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDirection(value: LegendDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemHeight(value: Double): Self = this.set("itemHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setItemWidth(value: Double): Self = this.set("itemWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDataVarargs(value: Color*): Self = this.set("data", js.Array(value :_*))
+    @scala.inline
+    def setData(value: js.Array[Color]): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setEffectsVarargs(value: LegendEffect*): Self = this.set("effects", js.Array(value :_*))
+    @scala.inline
+    def setEffects(value: js.Array[LegendEffect]): Self = this.set("effects", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEffects: Self = this.set("effects", js.undefined)
+    @scala.inline
+    def setItemBackground(value: String): Self = this.set("itemBackground", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemBackground: Self = this.set("itemBackground", js.undefined)
+    @scala.inline
+    def setItemDirection(value: LegendItemDirection): Self = this.set("itemDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemDirection: Self = this.set("itemDirection", js.undefined)
+    @scala.inline
+    def setItemOpacity(value: Double): Self = this.set("itemOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemOpacity: Self = this.set("itemOpacity", js.undefined)
+    @scala.inline
+    def setItemTextColor(value: String): Self = this.set("itemTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemTextColor: Self = this.set("itemTextColor", js.undefined)
+    @scala.inline
+    def setItemsSpacing(value: Double): Self = this.set("itemsSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItemsSpacing: Self = this.set("itemsSpacing", js.undefined)
+    @scala.inline
+    def setJustify(value: Boolean): Self = this.set("justify", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJustify: Self = this.set("justify", js.undefined)
+    @scala.inline
+    def setOnClick(
+      value: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
+    ): Self = this.set("onClick", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnClick: Self = this.set("onClick", js.undefined)
+    @scala.inline
+    def setOnMouseEnter(
+      value: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
+    ): Self = this.set("onMouseEnter", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMouseEnter: Self = this.set("onMouseEnter", js.undefined)
+    @scala.inline
+    def setOnMouseLeave(
+      value: (/* data */ LegendMouseHandlerData, /* event */ MouseEvent[js.Any, NativeMouseEvent]) => Unit
+    ): Self = this.set("onMouseLeave", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMouseLeave: Self = this.set("onMouseLeave", js.undefined)
+    @scala.inline
+    def setPadding(value: Double | Box): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setSymbolBorderColor(value: String): Self = this.set("symbolBorderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolBorderColor: Self = this.set("symbolBorderColor", js.undefined)
+    @scala.inline
+    def setSymbolShape(value: LegendSymbolShape | js.Any): Self = this.set("symbolShape", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolShape: Self = this.set("symbolShape", js.undefined)
+    @scala.inline
+    def setSymbolSize(value: Double): Self = this.set("symbolSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSize: Self = this.set("symbolSize", js.undefined)
+    @scala.inline
+    def setSymbolSpacing(value: Double): Self = this.set("symbolSpacing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbolSpacing: Self = this.set("symbolSpacing", js.undefined)
+    @scala.inline
+    def setTextColor(value: String): Self = this.set("textColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextColor: Self = this.set("textColor", js.undefined)
+    @scala.inline
+    def setTranslateX(value: Double): Self = this.set("translateX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslateX: Self = this.set("translateX", js.undefined)
+    @scala.inline
+    def setTranslateY(value: Double): Self = this.set("translateY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslateY: Self = this.set("translateY", js.undefined)
+  }
+  
 }
 

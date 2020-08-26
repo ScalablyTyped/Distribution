@@ -22,11 +22,30 @@ trait SchemaCloudWorkspaceSourceContext extends js.Object {
 
 object SchemaCloudWorkspaceSourceContext {
   @scala.inline
-  def apply(snapshotId: String = null, workspaceId: SchemaCloudWorkspaceId = null): SchemaCloudWorkspaceSourceContext = {
+  def apply(): SchemaCloudWorkspaceSourceContext = {
     val __obj = js.Dynamic.literal()
-    if (snapshotId != null) __obj.updateDynamic("snapshotId")(snapshotId.asInstanceOf[js.Any])
-    if (workspaceId != null) __obj.updateDynamic("workspaceId")(workspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCloudWorkspaceSourceContext]
   }
+  @scala.inline
+  implicit class SchemaCloudWorkspaceSourceContextOps[Self <: SchemaCloudWorkspaceSourceContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSnapshotId(value: String): Self = this.set("snapshotId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnapshotId: Self = this.set("snapshotId", js.undefined)
+    @scala.inline
+    def setWorkspaceId(value: SchemaCloudWorkspaceId): Self = this.set("workspaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspaceId: Self = this.set("workspaceId", js.undefined)
+  }
+  
 }
 

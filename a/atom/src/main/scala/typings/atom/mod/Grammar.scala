@@ -23,6 +23,7 @@ trait Grammar extends js.Object {
     *  @return An object representing the result of the tokenize.
     */
   def tokenizeLine(line: String): TokenizeLineResult = js.native
+  def tokenizeLine(line: String, ruleStack: js.UndefOr[scala.Nothing], firstLine: Boolean): TokenizeLineResult = js.native
   /**
     *  Tokenizes the line of text.
     *  @param line A string of text to tokenize.

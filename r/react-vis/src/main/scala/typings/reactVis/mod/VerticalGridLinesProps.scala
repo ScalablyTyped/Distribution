@@ -6,65 +6,112 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VerticalGridLinesProps extends js.Object {
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
    // default: 'vertical'
-  var attr: js.UndefOr[String] = js.undefined
-  var direction: js.UndefOr[vertical] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var innerHeight: js.UndefOr[Double] = js.undefined
-  var innerWidth: js.UndefOr[Double] = js.undefined
-  var left: js.UndefOr[Double] = js.undefined
-  var marginBottom: js.UndefOr[Double] = js.undefined
-  var marginLeft: js.UndefOr[Double] = js.undefined
-  var marginRight: js.UndefOr[Double] = js.undefined
-  var marginTop: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var tickTotal: js.UndefOr[Double] = js.undefined
-  var tickValues: js.UndefOr[js.Array[_]] = js.undefined
-  var top: js.UndefOr[Double] = js.undefined
+  var attr: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[vertical] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var innerHeight: js.UndefOr[Double] = js.native
+  var innerWidth: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var tickTotal: js.UndefOr[Double] = js.native
+  var tickValues: js.UndefOr[js.Array[_]] = js.native
+  var top: js.UndefOr[Double] = js.native
    // default: 'x'
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
 }
 
 object VerticalGridLinesProps {
   @scala.inline
-  def apply(
-    animation: String | AnimationParam | Boolean = null,
-    attr: String = null,
-    direction: vertical = null,
-    height: js.UndefOr[Double] = js.undefined,
-    innerHeight: js.UndefOr[Double] = js.undefined,
-    innerWidth: js.UndefOr[Double] = js.undefined,
-    left: js.UndefOr[Double] = js.undefined,
-    marginBottom: js.UndefOr[Double] = js.undefined,
-    marginLeft: js.UndefOr[Double] = js.undefined,
-    marginRight: js.UndefOr[Double] = js.undefined,
-    marginTop: js.UndefOr[Double] = js.undefined,
-    style: CSSProperties = null,
-    tickTotal: js.UndefOr[Double] = js.undefined,
-    tickValues: js.Array[_] = null,
-    top: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined
-  ): VerticalGridLinesProps = {
+  def apply(): VerticalGridLinesProps = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (attr != null) __obj.updateDynamic("attr")(attr.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerHeight)) __obj.updateDynamic("innerHeight")(innerHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerWidth)) __obj.updateDynamic("innerWidth")(innerWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginBottom)) __obj.updateDynamic("marginBottom")(marginBottom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginLeft)) __obj.updateDynamic("marginLeft")(marginLeft.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginRight)) __obj.updateDynamic("marginRight")(marginRight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(marginTop)) __obj.updateDynamic("marginTop")(marginTop.get.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tickTotal)) __obj.updateDynamic("tickTotal")(tickTotal.get.asInstanceOf[js.Any])
-    if (tickValues != null) __obj.updateDynamic("tickValues")(tickValues.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalGridLinesProps]
   }
+  @scala.inline
+  implicit class VerticalGridLinesPropsOps[Self <: VerticalGridLinesProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnimation(value: String | AnimationParam | Boolean): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setAttr(value: String): Self = this.set("attr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttr: Self = this.set("attr", js.undefined)
+    @scala.inline
+    def setDirection(value: vertical): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setInnerHeight(value: Double): Self = this.set("innerHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerHeight: Self = this.set("innerHeight", js.undefined)
+    @scala.inline
+    def setInnerWidth(value: Double): Self = this.set("innerWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerWidth: Self = this.set("innerWidth", js.undefined)
+    @scala.inline
+    def setLeft(value: Double): Self = this.set("left", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLeft: Self = this.set("left", js.undefined)
+    @scala.inline
+    def setMarginBottom(value: Double): Self = this.set("marginBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginBottom: Self = this.set("marginBottom", js.undefined)
+    @scala.inline
+    def setMarginLeft(value: Double): Self = this.set("marginLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginLeft: Self = this.set("marginLeft", js.undefined)
+    @scala.inline
+    def setMarginRight(value: Double): Self = this.set("marginRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginRight: Self = this.set("marginRight", js.undefined)
+    @scala.inline
+    def setMarginTop(value: Double): Self = this.set("marginTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarginTop: Self = this.set("marginTop", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTickTotal(value: Double): Self = this.set("tickTotal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickTotal: Self = this.set("tickTotal", js.undefined)
+    @scala.inline
+    def setTickValuesVarargs(value: js.Any*): Self = this.set("tickValues", js.Array(value :_*))
+    @scala.inline
+    def setTickValues(value: js.Array[_]): Self = this.set("tickValues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickValues: Self = this.set("tickValues", js.undefined)
+    @scala.inline
+    def setTop(value: Double): Self = this.set("top", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTop: Self = this.set("top", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

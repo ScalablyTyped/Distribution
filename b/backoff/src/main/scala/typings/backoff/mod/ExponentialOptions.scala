@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExponentialOptions extends Options {
-  var factor: js.UndefOr[Double] = js.undefined
+  var factor: js.UndefOr[Double] = js.native
 }
 
 object ExponentialOptions {
   @scala.inline
-  def apply(
-    factor: js.UndefOr[Double] = js.undefined,
-    initialDelay: js.UndefOr[Double] = js.undefined,
-    maxDelay: js.UndefOr[Double] = js.undefined,
-    randomisationFactor: js.UndefOr[Double] = js.undefined
-  ): ExponentialOptions = {
+  def apply(): ExponentialOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(factor)) __obj.updateDynamic("factor")(factor.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(initialDelay)) __obj.updateDynamic("initialDelay")(initialDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDelay)) __obj.updateDynamic("maxDelay")(maxDelay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(randomisationFactor)) __obj.updateDynamic("randomisationFactor")(randomisationFactor.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExponentialOptions]
   }
+  @scala.inline
+  implicit class ExponentialOptionsOps[Self <: ExponentialOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFactor(value: Double): Self = this.set("factor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactor: Self = this.set("factor", js.undefined)
+  }
+  
 }
 

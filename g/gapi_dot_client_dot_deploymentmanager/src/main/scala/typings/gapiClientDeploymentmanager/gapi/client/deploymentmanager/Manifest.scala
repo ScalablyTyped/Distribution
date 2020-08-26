@@ -4,51 +4,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Manifest extends js.Object {
   /** Output only. The YAML configuration for this manifest. */
-  var config: js.UndefOr[ConfigFile] = js.undefined
+  var config: js.UndefOr[ConfigFile] = js.native
   /** Output only. The fully-expanded configuration file, including any templates and references. */
-  var expandedConfig: js.UndefOr[String] = js.undefined
+  var expandedConfig: js.UndefOr[String] = js.native
   /** Output only. Unique identifier for the resource; defined by the server. */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /** Output only. The imported files for this manifest. */
-  var imports: js.UndefOr[js.Array[ImportFile]] = js.undefined
+  var imports: js.UndefOr[js.Array[ImportFile]] = js.native
   /** Output only. Timestamp when the manifest was created, in RFC3339 text format. */
-  var insertTime: js.UndefOr[String] = js.undefined
+  var insertTime: js.UndefOr[String] = js.native
   /** Output only. The YAML layout for this manifest. */
-  var layout: js.UndefOr[String] = js.undefined
+  var layout: js.UndefOr[String] = js.native
   /**
     * Output only.
     *
     * The name of the manifest.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Output only. Self link for the manifest. */
-  var selfLink: js.UndefOr[String] = js.undefined
+  var selfLink: js.UndefOr[String] = js.native
 }
 
 object Manifest {
   @scala.inline
-  def apply(
-    config: ConfigFile = null,
-    expandedConfig: String = null,
-    id: String = null,
-    imports: js.Array[ImportFile] = null,
-    insertTime: String = null,
-    layout: String = null,
-    name: String = null,
-    selfLink: String = null
-  ): Manifest = {
+  def apply(): Manifest = {
     val __obj = js.Dynamic.literal()
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (expandedConfig != null) __obj.updateDynamic("expandedConfig")(expandedConfig.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manifest]
   }
+  @scala.inline
+  implicit class ManifestOps[Self <: Manifest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfig(value: ConfigFile): Self = this.set("config", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfig: Self = this.set("config", js.undefined)
+    @scala.inline
+    def setExpandedConfig(value: String): Self = this.set("expandedConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpandedConfig: Self = this.set("expandedConfig", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setImportsVarargs(value: ImportFile*): Self = this.set("imports", js.Array(value :_*))
+    @scala.inline
+    def setImports(value: js.Array[ImportFile]): Self = this.set("imports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImports: Self = this.set("imports", js.undefined)
+    @scala.inline
+    def setInsertTime(value: String): Self = this.set("insertTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertTime: Self = this.set("insertTime", js.undefined)
+    @scala.inline
+    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("layout", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSelfLink(value: String): Self = this.set("selfLink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelfLink: Self = this.set("selfLink", js.undefined)
+  }
+  
 }
 

@@ -52,26 +52,58 @@ trait SchemaListUpdateResponse extends js.Object {
 
 object SchemaListUpdateResponse {
   @scala.inline
-  def apply(
-    additions: js.Array[SchemaThreatEntrySet] = null,
-    checksum: SchemaChecksum = null,
-    newClientState: String = null,
-    platformType: String = null,
-    removals: js.Array[SchemaThreatEntrySet] = null,
-    responseType: String = null,
-    threatEntryType: String = null,
-    threatType: String = null
-  ): SchemaListUpdateResponse = {
+  def apply(): SchemaListUpdateResponse = {
     val __obj = js.Dynamic.literal()
-    if (additions != null) __obj.updateDynamic("additions")(additions.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (newClientState != null) __obj.updateDynamic("newClientState")(newClientState.asInstanceOf[js.Any])
-    if (platformType != null) __obj.updateDynamic("platformType")(platformType.asInstanceOf[js.Any])
-    if (removals != null) __obj.updateDynamic("removals")(removals.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType.asInstanceOf[js.Any])
-    if (threatType != null) __obj.updateDynamic("threatType")(threatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListUpdateResponse]
   }
+  @scala.inline
+  implicit class SchemaListUpdateResponseOps[Self <: SchemaListUpdateResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionsVarargs(value: SchemaThreatEntrySet*): Self = this.set("additions", js.Array(value :_*))
+    @scala.inline
+    def setAdditions(value: js.Array[SchemaThreatEntrySet]): Self = this.set("additions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditions: Self = this.set("additions", js.undefined)
+    @scala.inline
+    def setChecksum(value: SchemaChecksum): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setNewClientState(value: String): Self = this.set("newClientState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewClientState: Self = this.set("newClientState", js.undefined)
+    @scala.inline
+    def setPlatformType(value: String): Self = this.set("platformType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlatformType: Self = this.set("platformType", js.undefined)
+    @scala.inline
+    def setRemovalsVarargs(value: SchemaThreatEntrySet*): Self = this.set("removals", js.Array(value :_*))
+    @scala.inline
+    def setRemovals(value: js.Array[SchemaThreatEntrySet]): Self = this.set("removals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemovals: Self = this.set("removals", js.undefined)
+    @scala.inline
+    def setResponseType(value: String): Self = this.set("responseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseType: Self = this.set("responseType", js.undefined)
+    @scala.inline
+    def setThreatEntryType(value: String): Self = this.set("threatEntryType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatEntryType: Self = this.set("threatEntryType", js.undefined)
+    @scala.inline
+    def setThreatType(value: String): Self = this.set("threatType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThreatType: Self = this.set("threatType", js.undefined)
+  }
+  
 }
 

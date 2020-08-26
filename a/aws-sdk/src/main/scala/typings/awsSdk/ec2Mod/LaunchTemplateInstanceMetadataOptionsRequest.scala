@@ -22,16 +22,34 @@ trait LaunchTemplateInstanceMetadataOptionsRequest extends js.Object {
 
 object LaunchTemplateInstanceMetadataOptionsRequest {
   @scala.inline
-  def apply(
-    HttpEndpoint: LaunchTemplateInstanceMetadataEndpointState = null,
-    HttpPutResponseHopLimit: js.UndefOr[Integer] = js.undefined,
-    HttpTokens: LaunchTemplateHttpTokensState = null
-  ): LaunchTemplateInstanceMetadataOptionsRequest = {
+  def apply(): LaunchTemplateInstanceMetadataOptionsRequest = {
     val __obj = js.Dynamic.literal()
-    if (HttpEndpoint != null) __obj.updateDynamic("HttpEndpoint")(HttpEndpoint.asInstanceOf[js.Any])
-    if (!js.isUndefined(HttpPutResponseHopLimit)) __obj.updateDynamic("HttpPutResponseHopLimit")(HttpPutResponseHopLimit.get.asInstanceOf[js.Any])
-    if (HttpTokens != null) __obj.updateDynamic("HttpTokens")(HttpTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateInstanceMetadataOptionsRequest]
   }
+  @scala.inline
+  implicit class LaunchTemplateInstanceMetadataOptionsRequestOps[Self <: LaunchTemplateInstanceMetadataOptionsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHttpEndpoint(value: LaunchTemplateInstanceMetadataEndpointState): Self = this.set("HttpEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpEndpoint: Self = this.set("HttpEndpoint", js.undefined)
+    @scala.inline
+    def setHttpPutResponseHopLimit(value: Integer): Self = this.set("HttpPutResponseHopLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpPutResponseHopLimit: Self = this.set("HttpPutResponseHopLimit", js.undefined)
+    @scala.inline
+    def setHttpTokens(value: LaunchTemplateHttpTokensState): Self = this.set("HttpTokens", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttpTokens: Self = this.set("HttpTokens", js.undefined)
+  }
+  
 }
 

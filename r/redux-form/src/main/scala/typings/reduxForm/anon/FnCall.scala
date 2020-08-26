@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FnCall extends js.Object {
   def apply(form: String, data: js.Any): FormAction = js.native
+  def apply(
+    form: String,
+    data: js.Any,
+    keepDirty: js.UndefOr[scala.Nothing],
+    options: PartialInitializeOptions
+  ): FormAction = js.native
   def apply(form: String, data: js.Any, keepDirty: Boolean): FormAction = js.native
   def apply(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
   def apply(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = js.native

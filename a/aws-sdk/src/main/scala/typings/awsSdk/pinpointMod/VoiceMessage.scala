@@ -30,20 +30,42 @@ trait VoiceMessage extends js.Object {
 
 object VoiceMessage {
   @scala.inline
-  def apply(
-    Body: string = null,
-    LanguageCode: string = null,
-    OriginationNumber: string = null,
-    Substitutions: MapOfListOfString = null,
-    VoiceId: string = null
-  ): VoiceMessage = {
+  def apply(): VoiceMessage = {
     val __obj = js.Dynamic.literal()
-    if (Body != null) __obj.updateDynamic("Body")(Body.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (OriginationNumber != null) __obj.updateDynamic("OriginationNumber")(OriginationNumber.asInstanceOf[js.Any])
-    if (Substitutions != null) __obj.updateDynamic("Substitutions")(Substitutions.asInstanceOf[js.Any])
-    if (VoiceId != null) __obj.updateDynamic("VoiceId")(VoiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VoiceMessage]
   }
+  @scala.inline
+  implicit class VoiceMessageOps[Self <: VoiceMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: string): Self = this.set("Body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("Body", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: string): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setOriginationNumber(value: string): Self = this.set("OriginationNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginationNumber: Self = this.set("OriginationNumber", js.undefined)
+    @scala.inline
+    def setSubstitutions(value: MapOfListOfString): Self = this.set("Substitutions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubstitutions: Self = this.set("Substitutions", js.undefined)
+    @scala.inline
+    def setVoiceId(value: string): Self = this.set("VoiceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVoiceId: Self = this.set("VoiceId", js.undefined)
+  }
+  
 }
 

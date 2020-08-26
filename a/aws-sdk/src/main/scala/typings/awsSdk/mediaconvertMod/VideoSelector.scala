@@ -38,24 +38,50 @@ trait VideoSelector extends js.Object {
 
 object VideoSelector {
   @scala.inline
-  def apply(
-    AlphaBehavior: AlphaBehavior = null,
-    ColorSpace: ColorSpace = null,
-    ColorSpaceUsage: ColorSpaceUsage = null,
-    Hdr10Metadata: Hdr10Metadata = null,
-    Pid: js.UndefOr[integerMin1Max2147483647] = js.undefined,
-    ProgramNumber: js.UndefOr[integerMinNegative2147483648Max2147483647] = js.undefined,
-    Rotate: InputRotate = null
-  ): VideoSelector = {
+  def apply(): VideoSelector = {
     val __obj = js.Dynamic.literal()
-    if (AlphaBehavior != null) __obj.updateDynamic("AlphaBehavior")(AlphaBehavior.asInstanceOf[js.Any])
-    if (ColorSpace != null) __obj.updateDynamic("ColorSpace")(ColorSpace.asInstanceOf[js.Any])
-    if (ColorSpaceUsage != null) __obj.updateDynamic("ColorSpaceUsage")(ColorSpaceUsage.asInstanceOf[js.Any])
-    if (Hdr10Metadata != null) __obj.updateDynamic("Hdr10Metadata")(Hdr10Metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(Pid)) __obj.updateDynamic("Pid")(Pid.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgramNumber)) __obj.updateDynamic("ProgramNumber")(ProgramNumber.get.asInstanceOf[js.Any])
-    if (Rotate != null) __obj.updateDynamic("Rotate")(Rotate.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSelector]
   }
+  @scala.inline
+  implicit class VideoSelectorOps[Self <: VideoSelector] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlphaBehavior(value: AlphaBehavior): Self = this.set("AlphaBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlphaBehavior: Self = this.set("AlphaBehavior", js.undefined)
+    @scala.inline
+    def setColorSpace(value: ColorSpace): Self = this.set("ColorSpace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSpace: Self = this.set("ColorSpace", js.undefined)
+    @scala.inline
+    def setColorSpaceUsage(value: ColorSpaceUsage): Self = this.set("ColorSpaceUsage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSpaceUsage: Self = this.set("ColorSpaceUsage", js.undefined)
+    @scala.inline
+    def setHdr10Metadata(value: Hdr10Metadata): Self = this.set("Hdr10Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHdr10Metadata: Self = this.set("Hdr10Metadata", js.undefined)
+    @scala.inline
+    def setPid(value: integerMin1Max2147483647): Self = this.set("Pid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePid: Self = this.set("Pid", js.undefined)
+    @scala.inline
+    def setProgramNumber(value: integerMinNegative2147483648Max2147483647): Self = this.set("ProgramNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgramNumber: Self = this.set("ProgramNumber", js.undefined)
+    @scala.inline
+    def setRotate(value: InputRotate): Self = this.set("Rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("Rotate", js.undefined)
+  }
+  
 }
 

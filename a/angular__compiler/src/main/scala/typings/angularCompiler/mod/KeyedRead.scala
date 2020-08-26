@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler", "KeyedRead")
 @js.native
 class KeyedRead protected ()
-  extends typings.angularCompiler.publicApiMod.KeyedRead {
+  extends typings.angularCompiler.compilerMod.KeyedRead {
   def this(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,

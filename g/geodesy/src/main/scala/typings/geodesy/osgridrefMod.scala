@@ -48,18 +48,22 @@ object osgridrefMod extends js.Object {
     def parse(dms: String): Double = js.native
     def parse(dms: Double): Double = js.native
     def separator: String = js.native
-    def separator(char: String): js.Any = js.native
+    def separator_=(char: String): Unit = js.native
     def toBrng(deg: Double): String = js.native
+    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toBrng(deg: Double, format: Format): String = js.native
     def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
     def toDms(deg: Double): String = js.native
+    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toDms(deg: Double, format: Format): String = js.native
     def toDms(deg: Double, format: Format, dp: Dp): String = js.native
     def toLat(deg: Double): String = js.native
+    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toLat(deg: Double, format: Format): String = js.native
     def toLat(deg: Double, format: Format, dp: Dp): String = js.native
     def toLocale(str: String): String = js.native
     def toLon(deg: Double): String = js.native
+    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
     def toLon(deg: Double, format: Format): String = js.native
     def toLon(deg: Double, format: Format, dp: Dp): String = js.native
     def wrap360(degrees: Double): String = js.native

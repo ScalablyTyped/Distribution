@@ -21,11 +21,12 @@ import scala.scalajs.js.annotation._
   *           .addToUi();
   *     }
   */
+@js.native
 trait Menu extends js.Object {
-  def addItem(caption: String, functionName: String): Menu
-  def addSeparator(): Menu
-  def addSubMenu(menu: Menu): Menu
-  def addToUi(): Unit
+  def addItem(caption: String, functionName: String): Menu = js.native
+  def addSeparator(): Menu = js.native
+  def addSubMenu(menu: Menu): Menu = js.native
+  def addToUi(): Unit = js.native
 }
 
 object Menu {
@@ -39,5 +40,26 @@ object Menu {
     val __obj = js.Dynamic.literal(addItem = js.Any.fromFunction2(addItem), addSeparator = js.Any.fromFunction0(addSeparator), addSubMenu = js.Any.fromFunction1(addSubMenu), addToUi = js.Any.fromFunction0(addToUi))
     __obj.asInstanceOf[Menu]
   }
+  @scala.inline
+  implicit class MenuOps[Self <: Menu] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddItem(value: (String, String) => Menu): Self = this.set("addItem", js.Any.fromFunction2(value))
+    @scala.inline
+    def setAddSeparator(value: () => Menu): Self = this.set("addSeparator", js.Any.fromFunction0(value))
+    @scala.inline
+    def setAddSubMenu(value: Menu => Menu): Self = this.set("addSubMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def setAddToUi(value: () => Unit): Self = this.set("addToUi", js.Any.fromFunction0(value))
+  }
+  
 }
 

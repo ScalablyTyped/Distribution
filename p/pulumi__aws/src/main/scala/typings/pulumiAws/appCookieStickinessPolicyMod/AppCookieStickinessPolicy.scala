@@ -19,6 +19,7 @@ class AppCookieStickinessPolicy protected () extends CustomResource {
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  /** @deprecated aws.elasticloadbalancing.AppCookieStickinessPolicy has been deprecated in favor of aws.elb.AppCookieStickinessPolicy */
   def this(name: String, args: AppCookieStickinessPolicyArgs) = this()
   def this(name: String, args: AppCookieStickinessPolicyArgs, opts: CustomResourceOptions) = this()
   /**
@@ -53,8 +54,10 @@ object AppCookieStickinessPolicy extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): AppCookieStickinessPolicy = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AppCookieStickinessPolicy = js.native
   def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): AppCookieStickinessPolicy = js.native
   def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): AppCookieStickinessPolicy = js.native
   /**

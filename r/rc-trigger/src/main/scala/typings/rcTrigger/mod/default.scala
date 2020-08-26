@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-trigger/lib", JSImport.Default)
+@JSImport("rc-trigger", JSImport.Default)
 @js.native
 class default protected ()
   extends Component[TriggerProps, js.Any, js.Any] {
@@ -15,7 +15,7 @@ class default protected ()
   def this(props: TriggerProps, context: js.Any) = this()
 }
 
-@JSImport("rc-trigger/lib", JSImport.Default)
+@JSImport("rc-trigger", JSImport.Default)
 @js.native
 object default
   extends TopLevel[ComponentClass[TriggerProps, js.Any]]

@@ -14,6 +14,7 @@ trait Sade extends js.Object {
     */
   def alias(names: String*): Sade = js.native
   def command(str: String): Sade = js.native
+  def command(str: String, desc: js.UndefOr[scala.Nothing], opts: ReadonlyCommandOptions): Sade = js.native
   def command(str: String, desc: String): Sade = js.native
   def command(str: String, desc: String, opts: ReadonlyCommandOptions): Sade = js.native
   def describe(str: String): Sade = js.native

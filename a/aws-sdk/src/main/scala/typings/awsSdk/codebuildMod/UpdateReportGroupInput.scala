@@ -22,11 +22,34 @@ trait UpdateReportGroupInput extends js.Object {
 
 object UpdateReportGroupInput {
   @scala.inline
-  def apply(arn: NonEmptyString, exportConfig: ReportExportConfig = null, tags: TagList = null): UpdateReportGroupInput = {
+  def apply(arn: NonEmptyString): UpdateReportGroupInput = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
-    if (exportConfig != null) __obj.updateDynamic("exportConfig")(exportConfig.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateReportGroupInput]
   }
+  @scala.inline
+  implicit class UpdateReportGroupInputOps[Self <: UpdateReportGroupInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: NonEmptyString): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setExportConfig(value: ReportExportConfig): Self = this.set("exportConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExportConfig: Self = this.set("exportConfig", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

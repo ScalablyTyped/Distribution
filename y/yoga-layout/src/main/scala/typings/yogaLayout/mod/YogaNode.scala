@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait YogaNode extends js.Object {
   def calculateLayout(): Unit = js.native
+  def calculateLayout(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], direction: YogaDirection): Unit = js.native
+  def calculateLayout(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
+  def calculateLayout(width: js.UndefOr[scala.Nothing], height: Double, direction: YogaDirection): Unit = js.native
   def calculateLayout(width: Double): Unit = js.native
+  def calculateLayout(width: Double, height: js.UndefOr[scala.Nothing], direction: YogaDirection): Unit = js.native
   def calculateLayout(width: Double, height: Double): Unit = js.native
   def calculateLayout(width: Double, height: Double, direction: YogaDirection): Unit = js.native
   def copyStyle(node: YogaNode): Unit = js.native
@@ -74,6 +78,7 @@ trait YogaNode extends js.Object {
   def setHeightAuto(): Unit = js.native
   def setHeightPercent(height: Double): Unit = js.native
   def setJustifyContent(justifyContent: YogaJustifyContent): Unit = js.native
+  def setMargin(edge: YogaEdge, margin: String): Unit = js.native
   def setMargin(edge: YogaEdge, margin: Double): Unit = js.native
   def setMarginAuto(edge: YogaEdge): Unit = js.native
   def setMarginPercent(edge: YogaEdge, margin: Double): Unit = js.native

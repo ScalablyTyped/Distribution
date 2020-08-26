@@ -28,11 +28,30 @@ trait SchemaPoint extends js.Object {
 
 object SchemaPoint {
   @scala.inline
-  def apply(interval: SchemaTimeInterval = null, value: SchemaTypedValue = null): SchemaPoint = {
+  def apply(): SchemaPoint = {
     val __obj = js.Dynamic.literal()
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPoint]
   }
+  @scala.inline
+  implicit class SchemaPointOps[Self <: SchemaPoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInterval(value: SchemaTimeInterval): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setValue(value: SchemaTypedValue): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

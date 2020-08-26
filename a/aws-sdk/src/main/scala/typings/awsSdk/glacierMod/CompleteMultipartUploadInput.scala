@@ -30,17 +30,36 @@ trait CompleteMultipartUploadInput extends js.Object {
 
 object CompleteMultipartUploadInput {
   @scala.inline
-  def apply(
-    accountId: String,
-    uploadId: String,
-    vaultName: String,
-    archiveSize: String = null,
-    checksum: String = null
-  ): CompleteMultipartUploadInput = {
+  def apply(accountId: String, uploadId: String, vaultName: String): CompleteMultipartUploadInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
-    if (archiveSize != null) __obj.updateDynamic("archiveSize")(archiveSize.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMultipartUploadInput]
   }
+  @scala.inline
+  implicit class CompleteMultipartUploadInputOps[Self <: CompleteMultipartUploadInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUploadId(value: String): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVaultName(value: String): Self = this.set("vaultName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setArchiveSize(value: String): Self = this.set("archiveSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveSize: Self = this.set("archiveSize", js.undefined)
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+  }
+  
 }
 

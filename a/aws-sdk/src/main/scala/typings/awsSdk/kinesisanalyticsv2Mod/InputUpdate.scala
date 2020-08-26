@@ -38,23 +38,48 @@ trait InputUpdate extends js.Object {
 
 object InputUpdate {
   @scala.inline
-  def apply(
-    InputId: Id,
-    InputParallelismUpdate: InputParallelismUpdate = null,
-    InputProcessingConfigurationUpdate: InputProcessingConfigurationUpdate = null,
-    InputSchemaUpdate: InputSchemaUpdate = null,
-    KinesisFirehoseInputUpdate: KinesisFirehoseInputUpdate = null,
-    KinesisStreamsInputUpdate: KinesisStreamsInputUpdate = null,
-    NamePrefixUpdate: InAppStreamName = null
-  ): InputUpdate = {
+  def apply(InputId: Id): InputUpdate = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any])
-    if (InputParallelismUpdate != null) __obj.updateDynamic("InputParallelismUpdate")(InputParallelismUpdate.asInstanceOf[js.Any])
-    if (InputProcessingConfigurationUpdate != null) __obj.updateDynamic("InputProcessingConfigurationUpdate")(InputProcessingConfigurationUpdate.asInstanceOf[js.Any])
-    if (InputSchemaUpdate != null) __obj.updateDynamic("InputSchemaUpdate")(InputSchemaUpdate.asInstanceOf[js.Any])
-    if (KinesisFirehoseInputUpdate != null) __obj.updateDynamic("KinesisFirehoseInputUpdate")(KinesisFirehoseInputUpdate.asInstanceOf[js.Any])
-    if (KinesisStreamsInputUpdate != null) __obj.updateDynamic("KinesisStreamsInputUpdate")(KinesisStreamsInputUpdate.asInstanceOf[js.Any])
-    if (NamePrefixUpdate != null) __obj.updateDynamic("NamePrefixUpdate")(NamePrefixUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputUpdate]
   }
+  @scala.inline
+  implicit class InputUpdateOps[Self <: InputUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputId(value: Id): Self = this.set("InputId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputParallelismUpdate(value: InputParallelismUpdate): Self = this.set("InputParallelismUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputParallelismUpdate: Self = this.set("InputParallelismUpdate", js.undefined)
+    @scala.inline
+    def setInputProcessingConfigurationUpdate(value: InputProcessingConfigurationUpdate): Self = this.set("InputProcessingConfigurationUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputProcessingConfigurationUpdate: Self = this.set("InputProcessingConfigurationUpdate", js.undefined)
+    @scala.inline
+    def setInputSchemaUpdate(value: InputSchemaUpdate): Self = this.set("InputSchemaUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputSchemaUpdate: Self = this.set("InputSchemaUpdate", js.undefined)
+    @scala.inline
+    def setKinesisFirehoseInputUpdate(value: KinesisFirehoseInputUpdate): Self = this.set("KinesisFirehoseInputUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisFirehoseInputUpdate: Self = this.set("KinesisFirehoseInputUpdate", js.undefined)
+    @scala.inline
+    def setKinesisStreamsInputUpdate(value: KinesisStreamsInputUpdate): Self = this.set("KinesisStreamsInputUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisStreamsInputUpdate: Self = this.set("KinesisStreamsInputUpdate", js.undefined)
+    @scala.inline
+    def setNamePrefixUpdate(value: InAppStreamName): Self = this.set("NamePrefixUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNamePrefixUpdate: Self = this.set("NamePrefixUpdate", js.undefined)
+  }
+  
 }
 

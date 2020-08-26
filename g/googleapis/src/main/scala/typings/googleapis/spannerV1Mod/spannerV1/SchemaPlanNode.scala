@@ -51,24 +51,52 @@ trait SchemaPlanNode extends js.Object {
 
 object SchemaPlanNode {
   @scala.inline
-  def apply(
-    childLinks: js.Array[SchemaChildLink] = null,
-    displayName: String = null,
-    executionStats: StringDictionary[js.Any] = null,
-    index: js.UndefOr[Double] = js.undefined,
-    kind: String = null,
-    metadata: StringDictionary[js.Any] = null,
-    shortRepresentation: SchemaShortRepresentation = null
-  ): SchemaPlanNode = {
+  def apply(): SchemaPlanNode = {
     val __obj = js.Dynamic.literal()
-    if (childLinks != null) __obj.updateDynamic("childLinks")(childLinks.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (executionStats != null) __obj.updateDynamic("executionStats")(executionStats.asInstanceOf[js.Any])
-    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index.get.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (shortRepresentation != null) __obj.updateDynamic("shortRepresentation")(shortRepresentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPlanNode]
   }
+  @scala.inline
+  implicit class SchemaPlanNodeOps[Self <: SchemaPlanNode] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildLinksVarargs(value: SchemaChildLink*): Self = this.set("childLinks", js.Array(value :_*))
+    @scala.inline
+    def setChildLinks(value: js.Array[SchemaChildLink]): Self = this.set("childLinks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildLinks: Self = this.set("childLinks", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setExecutionStats(value: StringDictionary[js.Any]): Self = this.set("executionStats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStats: Self = this.set("executionStats", js.undefined)
+    @scala.inline
+    def setIndex(value: Double): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMetadata(value: StringDictionary[js.Any]): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setShortRepresentation(value: SchemaShortRepresentation): Self = this.set("shortRepresentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortRepresentation: Self = this.set("shortRepresentation", js.undefined)
+  }
+  
 }
 

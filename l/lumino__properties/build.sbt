@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "lumino__properties"
-version := "1.1.6-470efe"
-scalaVersion := "2.13.2"
+version := "1.2.3-b81785"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

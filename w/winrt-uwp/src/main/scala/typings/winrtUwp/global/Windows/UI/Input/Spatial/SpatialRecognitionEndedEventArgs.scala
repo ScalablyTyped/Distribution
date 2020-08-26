@@ -7,8 +7,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs")
 @js.native
 abstract class SpatialRecognitionEndedEventArgs ()
-  extends typings.winrtUwp.Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs {
-  /* CompleteClass */
-  override var interactionSourceKind: js.Any = js.native
-}
+  extends typings.winrtUwp.Windows.UI.Input.Spatial.SpatialRecognitionEndedEventArgs
 

@@ -18,7 +18,7 @@ object channeldescriptorMod extends js.Object {
     * Unlike {@link Channel}, this information won't be updated in realtime.
     * To have a fresh data, user should query channel descriptors again.
     *
-    * @property {Object} attributes - The Channel's custom attributes
+    * @property {any} attributes - The Channel's custom attributes
     * @property {String} createdBy - The identity of the User that created Channel
     * @property {Date} dateCreated - The Date Channel was created
     * @property {Date} dateUpdated - The Date Channel was last updated
@@ -40,7 +40,7 @@ object channeldescriptorMod extends js.Object {
       * @private
       */
     def this(client: Client, descriptor: js.Any) = this()
-    val attributes: js.Object = js.native
+    val attributes: js.Any = js.native
     val channel: String = js.native
     var client: Client = js.native
     val createdBy: String = js.native

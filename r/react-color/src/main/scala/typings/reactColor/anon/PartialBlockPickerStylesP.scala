@@ -6,33 +6,58 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<react-color.react-color/lib/components/block/Block.BlockPickerStylesProps> */
+@js.native
 trait PartialBlockPickerStylesP extends js.Object {
-  var body: js.UndefOr[CSSProperties] = js.undefined
-  var card: js.UndefOr[CSSProperties] = js.undefined
-  var head: js.UndefOr[CSSProperties] = js.undefined
-  var input: js.UndefOr[CSSProperties] = js.undefined
-  var label: js.UndefOr[CSSProperties] = js.undefined
-  var triangle: js.UndefOr[CSSProperties] = js.undefined
+  var body: js.UndefOr[CSSProperties] = js.native
+  var card: js.UndefOr[CSSProperties] = js.native
+  var head: js.UndefOr[CSSProperties] = js.native
+  var input: js.UndefOr[CSSProperties] = js.native
+  var label: js.UndefOr[CSSProperties] = js.native
+  var triangle: js.UndefOr[CSSProperties] = js.native
 }
 
 object PartialBlockPickerStylesP {
   @scala.inline
-  def apply(
-    body: CSSProperties = null,
-    card: CSSProperties = null,
-    head: CSSProperties = null,
-    input: CSSProperties = null,
-    label: CSSProperties = null,
-    triangle: CSSProperties = null
-  ): PartialBlockPickerStylesP = {
+  def apply(): PartialBlockPickerStylesP = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (head != null) __obj.updateDynamic("head")(head.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (triangle != null) __obj.updateDynamic("triangle")(triangle.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialBlockPickerStylesP]
   }
+  @scala.inline
+  implicit class PartialBlockPickerStylesPOps[Self <: PartialBlockPickerStylesP] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: CSSProperties): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCard(value: CSSProperties): Self = this.set("card", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCard: Self = this.set("card", js.undefined)
+    @scala.inline
+    def setHead(value: CSSProperties): Self = this.set("head", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHead: Self = this.set("head", js.undefined)
+    @scala.inline
+    def setInput(value: CSSProperties): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setLabel(value: CSSProperties): Self = this.set("label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("label", js.undefined)
+    @scala.inline
+    def setTriangle(value: CSSProperties): Self = this.set("triangle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriangle: Self = this.set("triangle", js.undefined)
+  }
+  
 }
 

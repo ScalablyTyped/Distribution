@@ -54,6 +54,12 @@ trait Actions[R] extends js.Object {
     * await element(by.id('scrollView')).scroll(100, 'up');
     */
   def scroll(pixels: Double, direction: Direction): js.Promise[Actions[R]] = js.native
+  def scroll(
+    pixels: Double,
+    direction: Direction,
+    startPositionX: js.UndefOr[scala.Nothing],
+    startPositionY: Double
+  ): js.Promise[Actions[R]] = js.native
   def scroll(pixels: Double, direction: Direction, startPositionX: Double): js.Promise[Actions[R]] = js.native
   def scroll(pixels: Double, direction: Direction, startPositionX: Double, startPositionY: Double): js.Promise[Actions[R]] = js.native
   /**
@@ -97,6 +103,7 @@ trait Actions[R] extends js.Object {
     * await element(by.id('scrollView')).swipe('down', 'fast', 0.5);
     */
   def swipe(direction: Direction): js.Promise[Actions[R]] = js.native
+  def swipe(direction: Direction, speed: js.UndefOr[scala.Nothing], percentage: Double): js.Promise[Actions[R]] = js.native
   def swipe(direction: Direction, speed: Speed): js.Promise[Actions[R]] = js.native
   def swipe(direction: Direction, speed: Speed, percentage: Double): js.Promise[Actions[R]] = js.native
   /**

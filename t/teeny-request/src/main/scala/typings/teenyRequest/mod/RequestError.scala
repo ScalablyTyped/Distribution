@@ -9,9 +9,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class RequestError () extends Error {
   var code: js.UndefOr[Double] = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

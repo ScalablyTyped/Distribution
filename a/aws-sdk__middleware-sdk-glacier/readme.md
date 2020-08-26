@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-sdk-glacier |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 2 |
-| # downloads        | 531 |
+| # releases         | 14 |
+| # dependents       | 3 |
+| # downloads        | 737 |
 | # stars            | 0 |
 
 ## Links

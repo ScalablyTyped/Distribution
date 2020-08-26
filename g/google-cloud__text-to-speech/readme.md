@@ -10,9 +10,9 @@ Cloud Text-to-Speech API client for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/text-to-speech |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google texttospeech, texttospeech, Cloud Text-to-Speech API |
-| # releases         | 21 |
+| # releases         | 22 |
 | # dependents       | 15 |
-| # downloads        | 197696 |
+| # downloads        | 198014 |
 | # stars            | 0 |
 
 ## Links

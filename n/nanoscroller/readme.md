@@ -12,7 +12,7 @@ A jQuery plugin that offers a simplistic way of implementing Lion OS scrollbars.
 | Keywords           | ecosystem:jquery, jquery-plugin, scrollbar |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 306581 |
+| # downloads        | 299019 |
 | # stars            | 3 |
 
 ## Links

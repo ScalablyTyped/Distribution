@@ -89,30 +89,66 @@ trait SchemaAlertPolicy extends js.Object {
 
 object SchemaAlertPolicy {
   @scala.inline
-  def apply(
-    combiner: String = null,
-    conditions: js.Array[SchemaCondition] = null,
-    creationRecord: SchemaMutationRecord = null,
-    displayName: String = null,
-    documentation: SchemaDocumentation = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    mutationRecord: SchemaMutationRecord = null,
-    name: String = null,
-    notificationChannels: js.Array[String] = null,
-    userLabels: StringDictionary[String] = null
-  ): SchemaAlertPolicy = {
+  def apply(): SchemaAlertPolicy = {
     val __obj = js.Dynamic.literal()
-    if (combiner != null) __obj.updateDynamic("combiner")(combiner.asInstanceOf[js.Any])
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (creationRecord != null) __obj.updateDynamic("creationRecord")(creationRecord.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (mutationRecord != null) __obj.updateDynamic("mutationRecord")(mutationRecord.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notificationChannels != null) __obj.updateDynamic("notificationChannels")(notificationChannels.asInstanceOf[js.Any])
-    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAlertPolicy]
   }
+  @scala.inline
+  implicit class SchemaAlertPolicyOps[Self <: SchemaAlertPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCombiner(value: String): Self = this.set("combiner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCombiner: Self = this.set("combiner", js.undefined)
+    @scala.inline
+    def setConditionsVarargs(value: SchemaCondition*): Self = this.set("conditions", js.Array(value :_*))
+    @scala.inline
+    def setConditions(value: js.Array[SchemaCondition]): Self = this.set("conditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConditions: Self = this.set("conditions", js.undefined)
+    @scala.inline
+    def setCreationRecord(value: SchemaMutationRecord): Self = this.set("creationRecord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationRecord: Self = this.set("creationRecord", js.undefined)
+    @scala.inline
+    def setDisplayName(value: String): Self = this.set("displayName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayName: Self = this.set("displayName", js.undefined)
+    @scala.inline
+    def setDocumentation(value: SchemaDocumentation): Self = this.set("documentation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentation: Self = this.set("documentation", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setMutationRecord(value: SchemaMutationRecord): Self = this.set("mutationRecord", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMutationRecord: Self = this.set("mutationRecord", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotificationChannelsVarargs(value: String*): Self = this.set("notificationChannels", js.Array(value :_*))
+    @scala.inline
+    def setNotificationChannels(value: js.Array[String]): Self = this.set("notificationChannels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationChannels: Self = this.set("notificationChannels", js.undefined)
+    @scala.inline
+    def setUserLabels(value: StringDictionary[String]): Self = this.set("userLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserLabels: Self = this.set("userLabels", js.undefined)
+  }
+  
 }
 

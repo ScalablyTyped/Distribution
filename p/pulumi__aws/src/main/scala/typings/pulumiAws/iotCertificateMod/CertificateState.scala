@@ -39,22 +39,46 @@ trait CertificateState extends js.Object {
 
 object CertificateState {
   @scala.inline
-  def apply(
-    active: Input[Boolean] = null,
-    arn: Input[String] = null,
-    certificatePem: Input[String] = null,
-    csr: Input[String] = null,
-    privateKey: Input[String] = null,
-    publicKey: Input[String] = null
-  ): CertificateState = {
+  def apply(): CertificateState = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (certificatePem != null) __obj.updateDynamic("certificatePem")(certificatePem.asInstanceOf[js.Any])
-    if (csr != null) __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
-    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
-    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateState]
   }
+  @scala.inline
+  implicit class CertificateStateOps[Self <: CertificateState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActive(value: Input[Boolean]): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setCertificatePem(value: Input[String]): Self = this.set("certificatePem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificatePem: Self = this.set("certificatePem", js.undefined)
+    @scala.inline
+    def setCsr(value: Input[String]): Self = this.set("csr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCsr: Self = this.set("csr", js.undefined)
+    @scala.inline
+    def setPrivateKey(value: Input[String]): Self = this.set("privateKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKey: Self = this.set("privateKey", js.undefined)
+    @scala.inline
+    def setPublicKey(value: Input[String]): Self = this.set("publicKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicKey: Self = this.set("publicKey", js.undefined)
+  }
+  
 }
 

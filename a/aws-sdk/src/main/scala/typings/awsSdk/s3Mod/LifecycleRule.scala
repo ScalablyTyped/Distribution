@@ -37,27 +37,60 @@ trait LifecycleRule extends js.Object {
 
 object LifecycleRule {
   @scala.inline
-  def apply(
-    Status: ExpirationStatus,
-    AbortIncompleteMultipartUpload: AbortIncompleteMultipartUpload = null,
-    Expiration: LifecycleExpiration = null,
-    Filter: LifecycleRuleFilter = null,
-    ID: ID = null,
-    NoncurrentVersionExpiration: NoncurrentVersionExpiration = null,
-    NoncurrentVersionTransitions: NoncurrentVersionTransitionList = null,
-    Prefix: Prefix = null,
-    Transitions: TransitionList = null
-  ): LifecycleRule = {
+  def apply(Status: ExpirationStatus): LifecycleRule = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
-    if (AbortIncompleteMultipartUpload != null) __obj.updateDynamic("AbortIncompleteMultipartUpload")(AbortIncompleteMultipartUpload.asInstanceOf[js.Any])
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (ID != null) __obj.updateDynamic("ID")(ID.asInstanceOf[js.Any])
-    if (NoncurrentVersionExpiration != null) __obj.updateDynamic("NoncurrentVersionExpiration")(NoncurrentVersionExpiration.asInstanceOf[js.Any])
-    if (NoncurrentVersionTransitions != null) __obj.updateDynamic("NoncurrentVersionTransitions")(NoncurrentVersionTransitions.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (Transitions != null) __obj.updateDynamic("Transitions")(Transitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleRule]
   }
+  @scala.inline
+  implicit class LifecycleRuleOps[Self <: LifecycleRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: ExpirationStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAbortIncompleteMultipartUpload(value: AbortIncompleteMultipartUpload): Self = this.set("AbortIncompleteMultipartUpload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbortIncompleteMultipartUpload: Self = this.set("AbortIncompleteMultipartUpload", js.undefined)
+    @scala.inline
+    def setExpiration(value: LifecycleExpiration): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    @scala.inline
+    def setFilter(value: LifecycleRuleFilter): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setID(value: ID): Self = this.set("ID", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteID: Self = this.set("ID", js.undefined)
+    @scala.inline
+    def setNoncurrentVersionExpiration(value: NoncurrentVersionExpiration): Self = this.set("NoncurrentVersionExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoncurrentVersionExpiration: Self = this.set("NoncurrentVersionExpiration", js.undefined)
+    @scala.inline
+    def setNoncurrentVersionTransitionsVarargs(value: NoncurrentVersionTransition*): Self = this.set("NoncurrentVersionTransitions", js.Array(value :_*))
+    @scala.inline
+    def setNoncurrentVersionTransitions(value: NoncurrentVersionTransitionList): Self = this.set("NoncurrentVersionTransitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoncurrentVersionTransitions: Self = this.set("NoncurrentVersionTransitions", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setTransitionsVarargs(value: Transition*): Self = this.set("Transitions", js.Array(value :_*))
+    @scala.inline
+    def setTransitions(value: TransitionList): Self = this.set("Transitions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitions: Self = this.set("Transitions", js.undefined)
+  }
+  
 }
 

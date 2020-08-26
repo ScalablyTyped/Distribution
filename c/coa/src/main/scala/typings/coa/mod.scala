@@ -53,10 +53,15 @@ object mod extends js.Object {
       def extendable(pattern: String): Cmd = js.native
       def helpful(): Cmd = js.native
       def invoke(): Promise[_] = js.native
+      def invoke(cmds: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], args: js.Any): Promise[_] = js.native
+      def invoke(cmds: js.UndefOr[scala.Nothing], opts: js.Any): Promise[_] = js.native
+      def invoke(cmds: js.UndefOr[scala.Nothing], opts: js.Any, args: js.Any): Promise[_] = js.native
       def invoke(cmds: String): Promise[_] = js.native
+      def invoke(cmds: String, opts: js.UndefOr[scala.Nothing], args: js.Any): Promise[_] = js.native
       def invoke(cmds: String, opts: js.Any): Promise[_] = js.native
       def invoke(cmds: String, opts: js.Any, args: js.Any): Promise[_] = js.native
       def invoke(cmds: js.Array[String]): Promise[_] = js.native
+      def invoke(cmds: js.Array[String], opts: js.UndefOr[scala.Nothing], args: js.Any): Promise[_] = js.native
       def invoke(cmds: js.Array[String], opts: js.Any): Promise[_] = js.native
       def invoke(cmds: js.Array[String], opts: js.Any, args: js.Any): Promise[_] = js.native
       def name(name: String): Cmd = js.native

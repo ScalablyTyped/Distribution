@@ -15,10 +15,6 @@ object errorsMod extends js.Object {
     def this(message: String, accountId: String, operationIndex: Double) = this()
     var __proto__ : AccountRequiresMemoError = js.native
     var accountId: String = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var operationIndex: Double = js.native
   }
   
@@ -36,20 +32,12 @@ object errorsMod extends js.Object {
   class InvalidSep10ChallengeError protected () extends Error {
     def this(message: String) = this()
     var __proto__ : InvalidSep10ChallengeError = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
   }
   
   @js.native
   class NetworkError protected () extends Error {
     def this(message: String, response: js.Any) = this()
     var __proto__ : NetworkError = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var response: Data = js.native
     def getResponse(): Status = js.native
   }

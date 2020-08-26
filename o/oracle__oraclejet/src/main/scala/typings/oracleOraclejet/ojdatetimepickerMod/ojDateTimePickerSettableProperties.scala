@@ -15,8 +15,6 @@ import typings.oracleOraclejet.ojmessagingMod.^
 import typings.oracleOraclejet.ojvalidationBaseMod.AsyncValidator
 import typings.oracleOraclejet.ojvalidationBaseMod.Converter
 import typings.oracleOraclejet.ojvalidationBaseMod.Validation.RegisteredConverter
-import typings.oracleOraclejet.ojvalidationBaseMod.Validation.RegisteredValidator
-import typings.oracleOraclejet.ojvalidationBaseMod.Validator
 import typings.oracleOraclejet.oracleOraclejetStrings.all
 import typings.oracleOraclejet.oracleOraclejetStrings.disabled
 import typings.oracleOraclejet.oracleOraclejetStrings.invalidHidden
@@ -30,11 +28,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ojDateTimePickerSettableProperties extends ojInputDateTimeSettableProperties {
   @JSName("keyboardEdit")
-  var keyboardEdit_ojDateTimePickerSettableProperties: disabled
+  var keyboardEdit_ojDateTimePickerSettableProperties: disabled = js.native
   @JSName("renderMode")
-  var renderMode_ojDateTimePickerSettableProperties: jet
+  var renderMode_ojDateTimePickerSettableProperties: jet = js.native
 }
 
 object ojDateTimePickerSettableProperties {
@@ -63,14 +62,27 @@ object ojDateTimePickerSettableProperties {
     timePicker: FooterLayout,
     translations: Cancel,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: String,
-    describedBy: String = null,
-    max: String = null,
-    min: String = null,
-    validators: js.Array[Validator[String] | RegisteredValidator] = null
+    value: String
   ): ojDateTimePickerSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], datePicker = datePicker.asInstanceOf[js.Any], dayFormatter = js.Any.fromFunction1(dayFormatter), dayMetaData = dayMetaData.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], describedBy = describedBy.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], validators = validators.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], converter = converter.asInstanceOf[js.Any], datePicker = datePicker.asInstanceOf[js.Any], dayFormatter = js.Any.fromFunction1(dayFormatter), dayMetaData = dayMetaData.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], keyboardEdit = keyboardEdit.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], timePicker = timePicker.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojDateTimePickerSettableProperties]
   }
+  @scala.inline
+  implicit class ojDateTimePickerSettablePropertiesOps[Self <: ojDateTimePickerSettableProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKeyboardEdit(value: disabled): Self = this.set("keyboardEdit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRenderMode(value: jet): Self = this.set("renderMode", value.asInstanceOf[js.Any])
+  }
+  
 }
 

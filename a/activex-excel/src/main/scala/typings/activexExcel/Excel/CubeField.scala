@@ -39,6 +39,11 @@ trait CubeField extends js.Object {
   val Value: String = js.native
   val _Caption: String = js.native
   def AddMemberPropertyField(Property: String): Unit = js.native
+  def AddMemberPropertyField(
+    Property: String,
+    PropertyOrder: js.UndefOr[scala.Nothing],
+    PropertyDisplayedIn: XlPropertyDisplayedIn
+  ): Unit = js.native
   def AddMemberPropertyField(Property: String, PropertyOrder: Double): Unit = js.native
   def AddMemberPropertyField(Property: String, PropertyOrder: Double, PropertyDisplayedIn: XlPropertyDisplayedIn): Unit = js.native
   def ClearManualFilter(): Unit = js.native

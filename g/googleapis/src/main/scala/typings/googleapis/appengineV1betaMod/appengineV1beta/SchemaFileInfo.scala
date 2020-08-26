@@ -29,12 +29,34 @@ trait SchemaFileInfo extends js.Object {
 
 object SchemaFileInfo {
   @scala.inline
-  def apply(mimeType: String = null, sha1Sum: String = null, sourceUrl: String = null): SchemaFileInfo = {
+  def apply(): SchemaFileInfo = {
     val __obj = js.Dynamic.literal()
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (sha1Sum != null) __obj.updateDynamic("sha1Sum")(sha1Sum.asInstanceOf[js.Any])
-    if (sourceUrl != null) __obj.updateDynamic("sourceUrl")(sourceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFileInfo]
   }
+  @scala.inline
+  implicit class SchemaFileInfoOps[Self <: SchemaFileInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMimeType(value: String): Self = this.set("mimeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeType: Self = this.set("mimeType", js.undefined)
+    @scala.inline
+    def setSha1Sum(value: String): Self = this.set("sha1Sum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSha1Sum: Self = this.set("sha1Sum", js.undefined)
+    @scala.inline
+    def setSourceUrl(value: String): Self = this.set("sourceUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceUrl: Self = this.set("sourceUrl", js.undefined)
+  }
+  
 }
 

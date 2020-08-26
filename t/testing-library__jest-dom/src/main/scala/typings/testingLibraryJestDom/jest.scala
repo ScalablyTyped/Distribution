@@ -257,7 +257,6 @@ object jest extends js.Object {
       * [testing-library/jest-dom#tobevisible](https:github.com/testing-library/jest-dom#tobevisible)
       */
     def toBeVisible(): R = js.native
-    def toContainElement(): R = js.native
     /**
       * @description
       * Allows you to assert whether an element contains another element as a descendant or not.
@@ -275,6 +274,7 @@ object jest extends js.Object {
       * @see
       * [testing-library/jest-dom#tocontainelement](https:github.com/testing-library/jest-dom#tocontainelement)
       */
+    def toContainElement(): R = js.native
     def toContainElement(element: HTMLElement): R = js.native
     def toContainElement(element: SVGElement): R = js.native
     /**

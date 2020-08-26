@@ -7,28 +7,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SagaMonitor extends js.Object {
   /**
     * @param action The dispatched Redux action. If the action was dispatched by
     * a Saga then the action will have a property `SAGA_ACTION` set to true
     * (`SAGA_ACTION` can be imported from `@redux-saga/symbols`).
     */
-  var actionDispatched: js.UndefOr[js.Function1[/* action */ Action[_], Unit]] = js.undefined
+  var actionDispatched: js.UndefOr[js.Function1[/* action */ Action[_], Unit]] = js.native
   /**
     * @param effectId The ID of the yielded effect
     */
-  var effectCancelled: js.UndefOr[js.Function1[/* effectId */ Double, Unit]] = js.undefined
+  var effectCancelled: js.UndefOr[js.Function1[/* effectId */ Double, Unit]] = js.native
   /**
     * @param effectId The ID of the yielded effect
     * @param error Error raised with the rejection of the effect
     */
-  var effectRejected: js.UndefOr[js.Function2[/* effectId */ Double, /* error */ js.Any, Unit]] = js.undefined
+  var effectRejected: js.UndefOr[js.Function2[/* effectId */ Double, /* error */ js.Any, Unit]] = js.native
   /**
     * @param effectId The ID of the yielded effect
     * @param result The result of the successful resolution of the effect. In
     *   case of `fork` or `spawn` effects, the result will be a `Task` object.
     */
-  var effectResolved: js.UndefOr[js.Function2[/* effectId */ Double, /* result */ js.Any, Unit]] = js.undefined
+  var effectResolved: js.UndefOr[js.Function2[/* effectId */ Double, /* result */ js.Any, Unit]] = js.native
   /**
     * @param effectId Unique ID assigned to the yielded effect
     * @param parentEffectId ID of the parent Effect. In the case of a `race` or
@@ -40,33 +41,57 @@ trait SagaMonitor extends js.Object {
     *   `race`/`all`
     * @param effect The yielded effect itself
     */
-  var effectTriggered: js.UndefOr[js.Function1[/* options */ Effect, Unit]] = js.undefined
+  var effectTriggered: js.UndefOr[js.Function1[/* options */ Effect, Unit]] = js.native
   /**
     * @param effectId Unique ID assigned to this root saga execution
     * @param saga The generator function that starts to run
     * @param args The arguments passed to the generator function
     */
-  var rootSagaStarted: js.UndefOr[js.Function1[/* options */ Args, Unit]] = js.undefined
+  var rootSagaStarted: js.UndefOr[js.Function1[/* options */ Args, Unit]] = js.native
 }
 
 object SagaMonitor {
   @scala.inline
-  def apply(
-    actionDispatched: /* action */ Action[_] => Unit = null,
-    effectCancelled: /* effectId */ Double => Unit = null,
-    effectRejected: (/* effectId */ Double, /* error */ js.Any) => Unit = null,
-    effectResolved: (/* effectId */ Double, /* result */ js.Any) => Unit = null,
-    effectTriggered: /* options */ Effect => Unit = null,
-    rootSagaStarted: /* options */ Args => Unit = null
-  ): SagaMonitor = {
+  def apply(): SagaMonitor = {
     val __obj = js.Dynamic.literal()
-    if (actionDispatched != null) __obj.updateDynamic("actionDispatched")(js.Any.fromFunction1(actionDispatched))
-    if (effectCancelled != null) __obj.updateDynamic("effectCancelled")(js.Any.fromFunction1(effectCancelled))
-    if (effectRejected != null) __obj.updateDynamic("effectRejected")(js.Any.fromFunction2(effectRejected))
-    if (effectResolved != null) __obj.updateDynamic("effectResolved")(js.Any.fromFunction2(effectResolved))
-    if (effectTriggered != null) __obj.updateDynamic("effectTriggered")(js.Any.fromFunction1(effectTriggered))
-    if (rootSagaStarted != null) __obj.updateDynamic("rootSagaStarted")(js.Any.fromFunction1(rootSagaStarted))
     __obj.asInstanceOf[SagaMonitor]
   }
+  @scala.inline
+  implicit class SagaMonitorOps[Self <: SagaMonitor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionDispatched(value: /* action */ Action[_] => Unit): Self = this.set("actionDispatched", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteActionDispatched: Self = this.set("actionDispatched", js.undefined)
+    @scala.inline
+    def setEffectCancelled(value: /* effectId */ Double => Unit): Self = this.set("effectCancelled", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEffectCancelled: Self = this.set("effectCancelled", js.undefined)
+    @scala.inline
+    def setEffectRejected(value: (/* effectId */ Double, /* error */ js.Any) => Unit): Self = this.set("effectRejected", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEffectRejected: Self = this.set("effectRejected", js.undefined)
+    @scala.inline
+    def setEffectResolved(value: (/* effectId */ Double, /* result */ js.Any) => Unit): Self = this.set("effectResolved", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteEffectResolved: Self = this.set("effectResolved", js.undefined)
+    @scala.inline
+    def setEffectTriggered(value: /* options */ Effect => Unit): Self = this.set("effectTriggered", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEffectTriggered: Self = this.set("effectTriggered", js.undefined)
+    @scala.inline
+    def setRootSagaStarted(value: /* options */ Args => Unit): Self = this.set("rootSagaStarted", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRootSagaStarted: Self = this.set("rootSagaStarted", js.undefined)
+  }
+  
 }
 

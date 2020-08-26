@@ -26,18 +26,38 @@ trait EBSOptions extends js.Object {
 
 object EBSOptions {
   @scala.inline
-  def apply(
-    EBSEnabled: js.UndefOr[Boolean] = js.undefined,
-    Iops: js.UndefOr[IntegerClass] = js.undefined,
-    VolumeSize: js.UndefOr[IntegerClass] = js.undefined,
-    VolumeType: VolumeType = null
-  ): EBSOptions = {
+  def apply(): EBSOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(EBSEnabled)) __obj.updateDynamic("EBSEnabled")(EBSEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Iops)) __obj.updateDynamic("Iops")(Iops.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(VolumeSize)) __obj.updateDynamic("VolumeSize")(VolumeSize.get.asInstanceOf[js.Any])
-    if (VolumeType != null) __obj.updateDynamic("VolumeType")(VolumeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBSOptions]
   }
+  @scala.inline
+  implicit class EBSOptionsOps[Self <: EBSOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEBSEnabled(value: Boolean): Self = this.set("EBSEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEBSEnabled: Self = this.set("EBSEnabled", js.undefined)
+    @scala.inline
+    def setIops(value: IntegerClass): Self = this.set("Iops", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIops: Self = this.set("Iops", js.undefined)
+    @scala.inline
+    def setVolumeSize(value: IntegerClass): Self = this.set("VolumeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeSize: Self = this.set("VolumeSize", js.undefined)
+    @scala.inline
+    def setVolumeType(value: VolumeType): Self = this.set("VolumeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeType: Self = this.set("VolumeType", js.undefined)
+  }
+  
 }
 

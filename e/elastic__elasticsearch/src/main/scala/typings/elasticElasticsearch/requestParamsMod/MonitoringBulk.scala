@@ -4,43 +4,51 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MonitoringBulk[T] extends Generic {
-  var body: T
-  var interval: js.UndefOr[String] = js.undefined
-  var system_api_version: js.UndefOr[String] = js.undefined
-  var system_id: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  var body: T = js.native
+  var interval: js.UndefOr[String] = js.native
+  var system_api_version: js.UndefOr[String] = js.native
+  var system_id: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
 }
 
 object MonitoringBulk {
   @scala.inline
-  def apply[T](
-    body: T,
-    error_trace: js.UndefOr[Boolean] = js.undefined,
-    filter_path: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    interval: String = null,
-    method: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    system_api_version: String = null,
-    system_id: String = null,
-    `type`: String = null
-  ): MonitoringBulk[T] = {
+  def apply[T](body: T): MonitoringBulk[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (!js.isUndefined(error_trace)) __obj.updateDynamic("error_trace")(error_trace.get.asInstanceOf[js.Any])
-    if (filter_path != null) __obj.updateDynamic("filter_path")(filter_path.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.get.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (system_api_version != null) __obj.updateDynamic("system_api_version")(system_api_version.asInstanceOf[js.Any])
-    if (system_id != null) __obj.updateDynamic("system_id")(system_id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringBulk[T]]
   }
+  @scala.inline
+  implicit class MonitoringBulkOps[Self <: MonitoringBulk[_], T] (val x: Self with MonitoringBulk[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: T): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInterval(value: String): Self = this.set("interval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInterval: Self = this.set("interval", js.undefined)
+    @scala.inline
+    def setSystem_api_version(value: String): Self = this.set("system_api_version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem_api_version: Self = this.set("system_api_version", js.undefined)
+    @scala.inline
+    def setSystem_id(value: String): Self = this.set("system_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystem_id: Self = this.set("system_id", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

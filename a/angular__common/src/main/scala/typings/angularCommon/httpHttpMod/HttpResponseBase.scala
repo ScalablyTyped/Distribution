@@ -18,6 +18,7 @@ abstract class HttpResponseBase protected () extends js.Object {
     */
   def this(init: Headers) = this()
   def this(init: Headers, defaultStatus: Double) = this()
+  def this(init: Headers, defaultStatus: js.UndefOr[scala.Nothing], defaultStatusText: String) = this()
   def this(init: Headers, defaultStatus: Double, defaultStatusText: String) = this()
   /**
     * All response headers.

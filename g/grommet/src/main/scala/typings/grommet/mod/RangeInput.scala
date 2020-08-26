@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "RangeInput")
+@JSImport("grommet/es6", "RangeInput")
 @js.native
 object RangeInput extends TopLevel[
       FC[

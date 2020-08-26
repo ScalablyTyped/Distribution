@@ -18,14 +18,32 @@ trait GetTransitGatewayRouteTablePropagationsResult extends js.Object {
 
 object GetTransitGatewayRouteTablePropagationsResult {
   @scala.inline
-  def apply(
-    NextToken: String = null,
-    TransitGatewayRouteTablePropagations: TransitGatewayRouteTablePropagationList = null
-  ): GetTransitGatewayRouteTablePropagationsResult = {
+  def apply(): GetTransitGatewayRouteTablePropagationsResult = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TransitGatewayRouteTablePropagations != null) __obj.updateDynamic("TransitGatewayRouteTablePropagations")(TransitGatewayRouteTablePropagations.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTransitGatewayRouteTablePropagationsResult]
   }
+  @scala.inline
+  implicit class GetTransitGatewayRouteTablePropagationsResultOps[Self <: GetTransitGatewayRouteTablePropagationsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: String): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTransitGatewayRouteTablePropagationsVarargs(value: TransitGatewayRouteTablePropagation*): Self = this.set("TransitGatewayRouteTablePropagations", js.Array(value :_*))
+    @scala.inline
+    def setTransitGatewayRouteTablePropagations(value: TransitGatewayRouteTablePropagationList): Self = this.set("TransitGatewayRouteTablePropagations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitGatewayRouteTablePropagations: Self = this.set("TransitGatewayRouteTablePropagations", js.undefined)
+  }
+  
 }
 

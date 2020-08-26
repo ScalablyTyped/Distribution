@@ -721,6 +721,51 @@ object sortablejsStrings {
   sealed trait objectPosition extends js.Object
   
   @js.native
+  sealed trait onAdd extends js.Object
+  
+  @js.native
+  sealed trait onChange extends js.Object
+  
+  @js.native
+  sealed trait onChoose extends js.Object
+  
+  @js.native
+  sealed trait onClone extends js.Object
+  
+  @js.native
+  sealed trait onDeselect extends js.Object
+  
+  @js.native
+  sealed trait onEnd extends js.Object
+  
+  @js.native
+  sealed trait onFilter extends js.Object
+  
+  @js.native
+  sealed trait onMove extends js.Object
+  
+  @js.native
+  sealed trait onRemove extends js.Object
+  
+  @js.native
+  sealed trait onSelect extends js.Object
+  
+  @js.native
+  sealed trait onSort extends js.Object
+  
+  @js.native
+  sealed trait onSpill extends js.Object
+  
+  @js.native
+  sealed trait onStart extends js.Object
+  
+  @js.native
+  sealed trait onUnchoose extends js.Object
+  
+  @js.native
+  sealed trait onUpdate extends js.Object
+  
+  @js.native
   sealed trait opacity extends js.Object
   
   @js.native
@@ -865,6 +910,9 @@ object sortablejsStrings {
   sealed trait scrollBehavior extends js.Object
   
   @js.native
+  sealed trait scrollFn extends js.Object
+  
+  @js.native
   sealed trait scrollSensitivity extends js.Object
   
   @js.native
@@ -872,6 +920,9 @@ object sortablejsStrings {
   
   @js.native
   sealed trait selectedClass extends js.Object
+  
+  @js.native
+  sealed trait setData extends js.Object
   
   @js.native
   sealed trait shapeRendering extends js.Object
@@ -1759,6 +1810,36 @@ object sortablejsStrings {
   @scala.inline
   def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
   @scala.inline
+  def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
+  def onChoose: onChoose = "onChoose".asInstanceOf[onChoose]
+  @scala.inline
+  def onClone: onClone = "onClone".asInstanceOf[onClone]
+  @scala.inline
+  def onDeselect: onDeselect = "onDeselect".asInstanceOf[onDeselect]
+  @scala.inline
+  def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
+  @scala.inline
+  def onFilter: onFilter = "onFilter".asInstanceOf[onFilter]
+  @scala.inline
+  def onMove: onMove = "onMove".asInstanceOf[onMove]
+  @scala.inline
+  def onRemove: onRemove = "onRemove".asInstanceOf[onRemove]
+  @scala.inline
+  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  @scala.inline
+  def onSort: onSort = "onSort".asInstanceOf[onSort]
+  @scala.inline
+  def onSpill: onSpill = "onSpill".asInstanceOf[onSpill]
+  @scala.inline
+  def onStart: onStart = "onStart".asInstanceOf[onStart]
+  @scala.inline
+  def onUnchoose: onUnchoose = "onUnchoose".asInstanceOf[onUnchoose]
+  @scala.inline
+  def onUpdate: onUpdate = "onUpdate".asInstanceOf[onUpdate]
+  @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   @scala.inline
   def order: order = "order".asInstanceOf[order]
@@ -1855,11 +1936,15 @@ object sortablejsStrings {
   @scala.inline
   def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
   @scala.inline
+  def scrollFn: scrollFn = "scrollFn".asInstanceOf[scrollFn]
+  @scala.inline
   def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
   @scala.inline
   def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
   @scala.inline
   def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
+  @scala.inline
+  def setData: setData = "setData".asInstanceOf[setData]
   @scala.inline
   def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
   @scala.inline

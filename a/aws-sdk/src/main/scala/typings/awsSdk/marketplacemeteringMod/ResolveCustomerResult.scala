@@ -18,11 +18,30 @@ trait ResolveCustomerResult extends js.Object {
 
 object ResolveCustomerResult {
   @scala.inline
-  def apply(CustomerIdentifier: CustomerIdentifier = null, ProductCode: ProductCode = null): ResolveCustomerResult = {
+  def apply(): ResolveCustomerResult = {
     val __obj = js.Dynamic.literal()
-    if (CustomerIdentifier != null) __obj.updateDynamic("CustomerIdentifier")(CustomerIdentifier.asInstanceOf[js.Any])
-    if (ProductCode != null) __obj.updateDynamic("ProductCode")(ProductCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveCustomerResult]
   }
+  @scala.inline
+  implicit class ResolveCustomerResultOps[Self <: ResolveCustomerResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerIdentifier(value: CustomerIdentifier): Self = this.set("CustomerIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerIdentifier: Self = this.set("CustomerIdentifier", js.undefined)
+    @scala.inline
+    def setProductCode(value: ProductCode): Self = this.set("ProductCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductCode: Self = this.set("ProductCode", js.undefined)
+  }
+  
 }
 

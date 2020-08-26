@@ -27,14 +27,12 @@ class ResultHandling protected () extends Element {
   def containerAsImportXmlAction: ImportXmlAction = js.native
   def containerAsRestCallAction: RestCallAction = js.native
   def containerAsWebServiceCallAction: WebServiceCallAction = js.native
-  def importMappingCall(): js.Any = js.native
-  def importMappingCall(newValue: ImportMappingCall): js.Any = js.native
-  @JSName("importMappingCall")
-  def importMappingCall_Union: ImportMappingCall | Null = js.native
+  def importMappingCall: ImportMappingCall | Null = js.native
+  def importMappingCall_=(newValue: ImportMappingCall | Null): Unit = js.native
   def outputVariableName: String = js.native
-  def outputVariableName(newValue: String): js.Any = js.native
+  def outputVariableName_=(newValue: String): Unit = js.native
   def storeInVariable: Boolean = js.native
-  def storeInVariable(newValue: Boolean): js.Any = js.native
+  def storeInVariable_=(newValue: Boolean): Unit = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
@@ -42,12 +40,12 @@ class ResultHandling protected () extends Element {
     * In version 6.10.0: introduced
     */
   def variableDataType: String = js.native
-  def variableDataType(newValue: String): js.Any = js.native
+  def variableDataType_=(newValue: String): Unit = js.native
   /**
     * In version 7.9.0: introduced
     */
   def variableType: DataType = js.native
-  def variableType(newValue: DataType): js.Any = js.native
+  def variableType_=(newValue: DataType): Unit = js.native
 }
 
 /* static members */

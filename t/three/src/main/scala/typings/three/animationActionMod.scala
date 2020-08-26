@@ -3,6 +3,7 @@ package typings.three
 import typings.three.animationClipMod.AnimationClip
 import typings.three.animationMixerMod.AnimationMixer
 import typings.three.constantsMod.AnimationActionLoopStyles
+import typings.three.constantsMod.AnimationBlendMode
 import typings.three.object3DMod.Object3D
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -15,6 +16,14 @@ object animationActionMod extends js.Object {
   class AnimationAction protected () extends js.Object {
     def this(mixer: AnimationMixer, clip: AnimationClip) = this()
     def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D) = this()
+    def this(
+      mixer: AnimationMixer,
+      clip: AnimationClip,
+      localRoot: js.UndefOr[scala.Nothing],
+      blendMode: AnimationBlendMode
+    ) = this()
+    def this(mixer: AnimationMixer, clip: AnimationClip, localRoot: Object3D, blendMode: AnimationBlendMode) = this()
+    var blendMode: AnimationBlendMode = js.native
     var clampWhenFinished: Boolean = js.native
     var enabled: Boolean = js.native
     var loop: AnimationActionLoopStyles = js.native

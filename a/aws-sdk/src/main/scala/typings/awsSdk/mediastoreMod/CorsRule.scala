@@ -30,18 +30,46 @@ trait CorsRule extends js.Object {
 
 object CorsRule {
   @scala.inline
-  def apply(
-    AllowedHeaders: AllowedHeaders,
-    AllowedOrigins: AllowedOrigins,
-    AllowedMethods: AllowedMethods = null,
-    ExposeHeaders: ExposeHeaders = null,
-    MaxAgeSeconds: js.UndefOr[MaxAgeSeconds] = js.undefined
-  ): CorsRule = {
+  def apply(AllowedHeaders: AllowedHeaders, AllowedOrigins: AllowedOrigins): CorsRule = {
     val __obj = js.Dynamic.literal(AllowedHeaders = AllowedHeaders.asInstanceOf[js.Any], AllowedOrigins = AllowedOrigins.asInstanceOf[js.Any])
-    if (AllowedMethods != null) __obj.updateDynamic("AllowedMethods")(AllowedMethods.asInstanceOf[js.Any])
-    if (ExposeHeaders != null) __obj.updateDynamic("ExposeHeaders")(ExposeHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAgeSeconds)) __obj.updateDynamic("MaxAgeSeconds")(MaxAgeSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorsRule]
   }
+  @scala.inline
+  implicit class CorsRuleOps[Self <: CorsRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedHeadersVarargs(value: Header*): Self = this.set("AllowedHeaders", js.Array(value :_*))
+    @scala.inline
+    def setAllowedHeaders(value: AllowedHeaders): Self = this.set("AllowedHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedOriginsVarargs(value: Origin*): Self = this.set("AllowedOrigins", js.Array(value :_*))
+    @scala.inline
+    def setAllowedOrigins(value: AllowedOrigins): Self = this.set("AllowedOrigins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAllowedMethodsVarargs(value: MethodName*): Self = this.set("AllowedMethods", js.Array(value :_*))
+    @scala.inline
+    def setAllowedMethods(value: AllowedMethods): Self = this.set("AllowedMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedMethods: Self = this.set("AllowedMethods", js.undefined)
+    @scala.inline
+    def setExposeHeadersVarargs(value: Header*): Self = this.set("ExposeHeaders", js.Array(value :_*))
+    @scala.inline
+    def setExposeHeaders(value: ExposeHeaders): Self = this.set("ExposeHeaders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExposeHeaders: Self = this.set("ExposeHeaders", js.undefined)
+    @scala.inline
+    def setMaxAgeSeconds(value: MaxAgeSeconds): Self = this.set("MaxAgeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAgeSeconds: Self = this.set("MaxAgeSeconds", js.undefined)
+  }
+  
 }
 

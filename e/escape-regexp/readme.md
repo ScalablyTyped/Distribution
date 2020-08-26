@@ -12,7 +12,7 @@ Escape regular expression special characters
 | Keywords           | escape, regexp, utility |
 | # releases         | 0 |
 | # dependents       | 101 |
-| # downloads        | 16162413 |
+| # downloads        | 16487255 |
 | # stars            | 2 |
 
 ## Links

@@ -1,7 +1,7 @@
 
 # Scala.js typings for braintree-web-drop-in
 
-Typings are for version 1.18
+Typings are for version 1.22
 
 ## Library description:
 [![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=eXpPWDNzYkdKZkxuQ1VaYkRqOTYwT1hBZ1ZWcFNoWGE1Mm1UYk02cGNYRT0tLTc5RXJRNFhQdnBlOXFlQlYwdjY4SFE9PQ==--e62ce6f205d984a440dca2c74289c82a30ad84a8)](https://automate.browserstack.com/pu
@@ -10,9 +10,9 @@ Typings are for version 1.18
 | ------------------ | :-------------: |
 | Full name          | braintree-web-drop-in |
 | Keywords           | - |
-| # releases         | 22 |
+| # releases         | 21 |
 | # dependents       | 10 |
-| # downloads        | 701752 |
+| # downloads        | 728045 |
 | # stars            | 0 |
 
 ## Links

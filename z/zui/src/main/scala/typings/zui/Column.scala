@@ -4,36 +4,63 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Column extends js.Object {
-  var colClass: js.UndefOr[String] = js.undefined
-  var flex: js.UndefOr[Boolean] = js.undefined
-  var ignore: js.UndefOr[Boolean] = js.undefined
-  var sort: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var colClass: js.UndefOr[String] = js.native
+  var flex: js.UndefOr[Boolean] = js.native
+  var ignore: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Column {
   @scala.inline
-  def apply(
-    colClass: String = null,
-    flex: js.UndefOr[Boolean] = js.undefined,
-    ignore: js.UndefOr[Boolean] = js.undefined,
-    sort: String = null,
-    text: String = null,
-    `type`: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Column = {
+  def apply(): Column = {
     val __obj = js.Dynamic.literal()
-    if (colClass != null) __obj.updateDynamic("colClass")(colClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(flex)) __obj.updateDynamic("flex")(flex.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore.get.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
+  @scala.inline
+  implicit class ColumnOps[Self <: Column] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColClass(value: String): Self = this.set("colClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColClass: Self = this.set("colClass", js.undefined)
+    @scala.inline
+    def setFlex(value: Boolean): Self = this.set("flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlex: Self = this.set("flex", js.undefined)
+    @scala.inline
+    def setIgnore(value: Boolean): Self = this.set("ignore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnore: Self = this.set("ignore", js.undefined)
+    @scala.inline
+    def setSort(value: String): Self = this.set("sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -6,37 +6,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LoaderProps extends WixComponentProps {
-  var color: js.UndefOr[LoaderColor] = js.undefined
-  var shouldLoadAsync: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[LoaderSize] = js.undefined
-  var status: js.UndefOr[LoaderStatus] = js.undefined
-  var statusMessage: js.UndefOr[String] = js.undefined
-  var text: js.UndefOr[ReactNode] = js.undefined
+  var color: js.UndefOr[LoaderColor] = js.native
+  var shouldLoadAsync: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[LoaderSize] = js.native
+  var status: js.UndefOr[LoaderStatus] = js.native
+  var statusMessage: js.UndefOr[String] = js.native
+  var text: js.UndefOr[ReactNode] = js.native
 }
 
 object LoaderProps {
   @scala.inline
-  def apply(
-    color: LoaderColor = null,
-    dataHook: String = null,
-    shouldLoadAsync: js.UndefOr[Boolean] = js.undefined,
-    size: LoaderSize = null,
-    status: LoaderStatus = null,
-    statusMessage: String = null,
-    styles: String = null,
-    text: ReactNode = null
-  ): LoaderProps = {
+  def apply(): LoaderProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dataHook != null) __obj.updateDynamic("dataHook")(dataHook.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldLoadAsync)) __obj.updateDynamic("shouldLoadAsync")(shouldLoadAsync.get.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderProps]
   }
+  @scala.inline
+  implicit class LoaderPropsOps[Self <: LoaderProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: LoaderColor): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setShouldLoadAsync(value: Boolean): Self = this.set("shouldLoadAsync", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShouldLoadAsync: Self = this.set("shouldLoadAsync", js.undefined)
+    @scala.inline
+    def setSize(value: LoaderSize): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setStatus(value: LoaderStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusMessage(value: String): Self = this.set("statusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusMessage: Self = this.set("statusMessage", js.undefined)
+    @scala.inline
+    def setText(value: ReactNode): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

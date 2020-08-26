@@ -4,84 +4,143 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var autopause: js.UndefOr[Boolean] = js.undefined
-  var autoplay: js.UndefOr[Boolean] = js.undefined
-  var background: js.UndefOr[Boolean] = js.undefined
-  var byline: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var controls: js.UndefOr[Boolean] = js.undefined
-  var dnt: js.UndefOr[Boolean] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var id: js.UndefOr[Double] = js.undefined
-  var loop: js.UndefOr[Boolean] = js.undefined
-  var maxheight: js.UndefOr[Double] = js.undefined
-  var maxwidth: js.UndefOr[Double] = js.undefined
-  var muted: js.UndefOr[Boolean] = js.undefined
-  var playsinline: js.UndefOr[Boolean] = js.undefined
-  var portrait: js.UndefOr[Boolean] = js.undefined
-  var quality: js.UndefOr[VimeoVideoQuality] = js.undefined
-  var responsive: js.UndefOr[Boolean] = js.undefined
-  var speed: js.UndefOr[Boolean] = js.undefined
-  var texttrack: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[Boolean] = js.undefined
-  var transparent: js.UndefOr[Boolean] = js.undefined
-  var url: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var autopause: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.native
+  var background: js.UndefOr[Boolean] = js.native
+  var byline: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[String] = js.native
+  var controls: js.UndefOr[Boolean] = js.native
+  var dnt: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Boolean] = js.native
+  var maxheight: js.UndefOr[Double] = js.native
+  var maxwidth: js.UndefOr[Double] = js.native
+  var muted: js.UndefOr[Boolean] = js.native
+  var playsinline: js.UndefOr[Boolean] = js.native
+  var portrait: js.UndefOr[Boolean] = js.native
+  var quality: js.UndefOr[VimeoVideoQuality] = js.native
+  var responsive: js.UndefOr[Boolean] = js.native
+  var speed: js.UndefOr[Boolean] = js.native
+  var texttrack: js.UndefOr[String] = js.native
+  var title: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.native
+  var url: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    autopause: js.UndefOr[Boolean] = js.undefined,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    background: js.UndefOr[Boolean] = js.undefined,
-    byline: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    dnt: js.UndefOr[Boolean] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    id: js.UndefOr[Double] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    maxheight: js.UndefOr[Double] = js.undefined,
-    maxwidth: js.UndefOr[Double] = js.undefined,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    playsinline: js.UndefOr[Boolean] = js.undefined,
-    portrait: js.UndefOr[Boolean] = js.undefined,
-    quality: VimeoVideoQuality = null,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    speed: js.UndefOr[Boolean] = js.undefined,
-    texttrack: String = null,
-    title: js.UndefOr[Boolean] = js.undefined,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autopause)) __obj.updateDynamic("autopause")(autopause.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(byline)) __obj.updateDynamic("byline")(byline.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxheight)) __obj.updateDynamic("maxheight")(maxheight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxwidth)) __obj.updateDynamic("maxwidth")(maxwidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(portrait)) __obj.updateDynamic("portrait")(portrait.get.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
-    if (texttrack != null) __obj.updateDynamic("texttrack")(texttrack.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.get.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutopause(value: Boolean): Self = this.set("autopause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutopause: Self = this.set("autopause", js.undefined)
+    @scala.inline
+    def setAutoplay(value: Boolean): Self = this.set("autoplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoplay: Self = this.set("autoplay", js.undefined)
+    @scala.inline
+    def setBackground(value: Boolean): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setByline(value: Boolean): Self = this.set("byline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteByline: Self = this.set("byline", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setControls(value: Boolean): Self = this.set("controls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControls: Self = this.set("controls", js.undefined)
+    @scala.inline
+    def setDnt(value: Boolean): Self = this.set("dnt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDnt: Self = this.set("dnt", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setId(value: Double): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setLoop(value: Boolean): Self = this.set("loop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoop: Self = this.set("loop", js.undefined)
+    @scala.inline
+    def setMaxheight(value: Double): Self = this.set("maxheight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxheight: Self = this.set("maxheight", js.undefined)
+    @scala.inline
+    def setMaxwidth(value: Double): Self = this.set("maxwidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxwidth: Self = this.set("maxwidth", js.undefined)
+    @scala.inline
+    def setMuted(value: Boolean): Self = this.set("muted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMuted: Self = this.set("muted", js.undefined)
+    @scala.inline
+    def setPlaysinline(value: Boolean): Self = this.set("playsinline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaysinline: Self = this.set("playsinline", js.undefined)
+    @scala.inline
+    def setPortrait(value: Boolean): Self = this.set("portrait", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortrait: Self = this.set("portrait", js.undefined)
+    @scala.inline
+    def setQuality(value: VimeoVideoQuality): Self = this.set("quality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuality: Self = this.set("quality", js.undefined)
+    @scala.inline
+    def setResponsive(value: Boolean): Self = this.set("responsive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponsive: Self = this.set("responsive", js.undefined)
+    @scala.inline
+    def setSpeed(value: Boolean): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+    @scala.inline
+    def setTexttrack(value: String): Self = this.set("texttrack", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTexttrack: Self = this.set("texttrack", js.undefined)
+    @scala.inline
+    def setTitle(value: Boolean): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransparent(value: Boolean): Self = this.set("transparent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransparent: Self = this.set("transparent", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

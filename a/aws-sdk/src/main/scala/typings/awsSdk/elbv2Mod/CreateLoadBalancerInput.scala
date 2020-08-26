@@ -42,25 +42,60 @@ trait CreateLoadBalancerInput extends js.Object {
 
 object CreateLoadBalancerInput {
   @scala.inline
-  def apply(
-    Name: LoadBalancerName,
-    IpAddressType: IpAddressType = null,
-    Scheme: LoadBalancerSchemeEnum = null,
-    SecurityGroups: SecurityGroups = null,
-    SubnetMappings: SubnetMappings = null,
-    Subnets: Subnets = null,
-    Tags: TagList = null,
-    Type: LoadBalancerTypeEnum = null
-  ): CreateLoadBalancerInput = {
+  def apply(Name: LoadBalancerName): CreateLoadBalancerInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
-    if (IpAddressType != null) __obj.updateDynamic("IpAddressType")(IpAddressType.asInstanceOf[js.Any])
-    if (Scheme != null) __obj.updateDynamic("Scheme")(Scheme.asInstanceOf[js.Any])
-    if (SecurityGroups != null) __obj.updateDynamic("SecurityGroups")(SecurityGroups.asInstanceOf[js.Any])
-    if (SubnetMappings != null) __obj.updateDynamic("SubnetMappings")(SubnetMappings.asInstanceOf[js.Any])
-    if (Subnets != null) __obj.updateDynamic("Subnets")(Subnets.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoadBalancerInput]
   }
+  @scala.inline
+  implicit class CreateLoadBalancerInputOps[Self <: CreateLoadBalancerInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: LoadBalancerName): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIpAddressType(value: IpAddressType): Self = this.set("IpAddressType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddressType: Self = this.set("IpAddressType", js.undefined)
+    @scala.inline
+    def setScheme(value: LoadBalancerSchemeEnum): Self = this.set("Scheme", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScheme: Self = this.set("Scheme", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = this.set("SecurityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: SecurityGroups): Self = this.set("SecurityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("SecurityGroups", js.undefined)
+    @scala.inline
+    def setSubnetMappingsVarargs(value: SubnetMapping*): Self = this.set("SubnetMappings", js.Array(value :_*))
+    @scala.inline
+    def setSubnetMappings(value: SubnetMappings): Self = this.set("SubnetMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetMappings: Self = this.set("SubnetMappings", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: SubnetId*): Self = this.set("Subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Subnets): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("Subnets", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setType(value: LoadBalancerTypeEnum): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

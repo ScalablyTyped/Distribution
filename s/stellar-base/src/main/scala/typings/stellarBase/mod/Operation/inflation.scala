@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Operation.inflation")
 @js.native
 object inflation extends js.Object {
-  def apply(options: Inflation): typings.stellarBase.mod.xdr.Operation[Inflation_] = js.native
+  def apply(options: Inflation): typings.stellarBase.xdrMod.default.Operation[Inflation_] = js.native
 }
 

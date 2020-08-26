@@ -9,27 +9,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DrawerProps extends js.Object {
-  var onOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
-  var open: js.UndefOr[Boolean] = js.undefined
-  var position: js.UndefOr[left | right | top | bottom] = js.undefined
-  var sidebar: js.UndefOr[ReactNode] = js.undefined
+  var onOpenChange: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+  var open: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[left | right | top | bottom] = js.native
+  var sidebar: js.UndefOr[ReactNode] = js.native
 }
 
 object DrawerProps {
   @scala.inline
-  def apply(
-    onOpenChange: /* isOpen */ Boolean => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    position: left | right | top | bottom = null,
-    sidebar: ReactNode = null
-  ): DrawerProps = {
+  def apply(): DrawerProps = {
     val __obj = js.Dynamic.literal()
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1(onOpenChange))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawerProps]
   }
+  @scala.inline
+  implicit class DrawerPropsOps[Self <: DrawerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnOpenChange(value: /* isOpen */ Boolean => Unit): Self = this.set("onOpenChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnOpenChange: Self = this.set("onOpenChange", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setPosition(value: left | right | top | bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setSidebar(value: ReactNode): Self = this.set("sidebar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSidebar: Self = this.set("sidebar", js.undefined)
+  }
+  
 }
 

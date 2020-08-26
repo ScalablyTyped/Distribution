@@ -8,94 +8,106 @@ import scala.scalajs.js.annotation._
   * A homogeneous material with a definite composition
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ trait Substance extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ @js.native
+trait Substance extends DomainResource {
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.undefined
+  var _description: js.UndefOr[Element] = js.native
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.undefined
+  var _status: js.UndefOr[Element] = js.native
   /**
     * What class/type of substance this is
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
   /**
     * What substance this is
     */
-  var code: CodeableConcept
+  var code: CodeableConcept = js.native
   /**
     * Textual description of the substance, comments
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /**
     * Unique identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
   /**
     * Composition information about the substance
     */
-  var ingredient: js.UndefOr[js.Array[SubstanceIngredient]] = js.undefined
+  var ingredient: js.UndefOr[js.Array[SubstanceIngredient]] = js.native
   /**
     * If this describes a specific package/container of the substance
     */
-  var instance: js.UndefOr[js.Array[SubstanceInstance]] = js.undefined
+  var instance: js.UndefOr[js.Array[SubstanceInstance]] = js.native
   /**
     * active | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.undefined
+  var status: js.UndefOr[code] = js.native
 }
 
 object Substance {
   @scala.inline
-  def apply(
-    code: CodeableConcept,
-    _description: Element = null,
-    _id: Element = null,
-    _implicitRules: Element = null,
-    _language: Element = null,
-    _resourceType: Element = null,
-    _status: Element = null,
-    category: js.Array[CodeableConcept] = null,
-    contained: js.Array[Resource] = null,
-    description: String = null,
-    extension: js.Array[Extension] = null,
-    id: id = null,
-    identifier: js.Array[Identifier] = null,
-    implicitRules: uri = null,
-    ingredient: js.Array[SubstanceIngredient] = null,
-    instance: js.Array[SubstanceInstance] = null,
-    language: code = null,
-    meta: Meta = null,
-    modifierExtension: js.Array[Extension] = null,
-    resourceType: code = null,
-    status: code = null,
-    text: Narrative = null
-  ): Substance = {
+  def apply(code: CodeableConcept): Substance = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
-    if (_description != null) __obj.updateDynamic("_description")(_description.asInstanceOf[js.Any])
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules.asInstanceOf[js.Any])
-    if (_language != null) __obj.updateDynamic("_language")(_language.asInstanceOf[js.Any])
-    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType.asInstanceOf[js.Any])
-    if (_status != null) __obj.updateDynamic("_status")(_status.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (contained != null) __obj.updateDynamic("contained")(contained.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (extension != null) __obj.updateDynamic("extension")(extension.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identifier != null) __obj.updateDynamic("identifier")(identifier.asInstanceOf[js.Any])
-    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules.asInstanceOf[js.Any])
-    if (ingredient != null) __obj.updateDynamic("ingredient")(ingredient.asInstanceOf[js.Any])
-    if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Substance]
   }
+  @scala.inline
+  implicit class SubstanceOps[Self <: Substance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCode(value: CodeableConcept): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def set_description(value: Element): Self = this.set("_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_description: Self = this.set("_description", js.undefined)
+    @scala.inline
+    def set_status(value: Element): Self = this.set("_status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete_status: Self = this.set("_status", js.undefined)
+    @scala.inline
+    def setCategoryVarargs(value: CodeableConcept*): Self = this.set("category", js.Array(value :_*))
+    @scala.inline
+    def setCategory(value: js.Array[CodeableConcept]): Self = this.set("category", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCategory: Self = this.set("category", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setIdentifierVarargs(value: Identifier*): Self = this.set("identifier", js.Array(value :_*))
+    @scala.inline
+    def setIdentifier(value: js.Array[Identifier]): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentifier: Self = this.set("identifier", js.undefined)
+    @scala.inline
+    def setIngredientVarargs(value: SubstanceIngredient*): Self = this.set("ingredient", js.Array(value :_*))
+    @scala.inline
+    def setIngredient(value: js.Array[SubstanceIngredient]): Self = this.set("ingredient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIngredient: Self = this.set("ingredient", js.undefined)
+    @scala.inline
+    def setInstanceVarargs(value: SubstanceInstance*): Self = this.set("instance", js.Array(value :_*))
+    @scala.inline
+    def setInstance(value: js.Array[SubstanceInstance]): Self = this.set("instance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstance: Self = this.set("instance", js.undefined)
+    @scala.inline
+    def setStatus(value: code): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

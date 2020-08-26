@@ -4,39 +4,70 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScaleTitleOptions extends js.Object {
-  var display: js.UndefOr[Boolean] = js.undefined
-  var fontColor: js.UndefOr[ChartColor] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var fontStyle: js.UndefOr[String] = js.undefined
-  var labelString: js.UndefOr[String] = js.undefined
-  var lineHeight: js.UndefOr[Double | String] = js.undefined
-  var padding: js.UndefOr[ChartLayoutPaddingObject | Double] = js.undefined
+  var display: js.UndefOr[Boolean] = js.native
+  var fontColor: js.UndefOr[ChartColor] = js.native
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var fontStyle: js.UndefOr[String] = js.native
+  var labelString: js.UndefOr[String] = js.native
+  var lineHeight: js.UndefOr[Double | String] = js.native
+  var padding: js.UndefOr[ChartLayoutPaddingObject | Double] = js.native
 }
 
 object ScaleTitleOptions {
   @scala.inline
-  def apply(
-    display: js.UndefOr[Boolean] = js.undefined,
-    fontColor: ChartColor = null,
-    fontFamily: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    fontStyle: String = null,
-    labelString: String = null,
-    lineHeight: Double | String = null,
-    padding: ChartLayoutPaddingObject | Double = null
-  ): ScaleTitleOptions = {
+  def apply(): ScaleTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.get.asInstanceOf[js.Any])
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (labelString != null) __obj.updateDynamic("labelString")(labelString.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleTitleOptions]
   }
+  @scala.inline
+  implicit class ScaleTitleOptionsOps[Self <: ScaleTitleOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay(value: Boolean): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setFontColorVarargs(value: String*): Self = this.set("fontColor", js.Array(value :_*))
+    @scala.inline
+    def setFontColor(value: ChartColor): Self = this.set("fontColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontColor: Self = this.set("fontColor", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    @scala.inline
+    def setLabelString(value: String): Self = this.set("labelString", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelString: Self = this.set("labelString", js.undefined)
+    @scala.inline
+    def setLineHeight(value: Double | String): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    @scala.inline
+    def setPadding(value: ChartLayoutPaddingObject | Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+  }
+  
 }
 

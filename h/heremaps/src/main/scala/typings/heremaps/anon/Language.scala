@@ -4,18 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Language extends js.Object {
-  var language: js.UndefOr[String] = js.undefined
-  var route: js.UndefOr[js.Array[Leg]] = js.undefined
+  var language: js.UndefOr[String] = js.native
+  var route: js.UndefOr[js.Array[Leg]] = js.native
 }
 
 object Language {
   @scala.inline
-  def apply(language: String = null, route: js.Array[Leg] = null): Language = {
+  def apply(): Language = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (route != null) __obj.updateDynamic("route")(route.asInstanceOf[js.Any])
     __obj.asInstanceOf[Language]
   }
+  @scala.inline
+  implicit class LanguageOps[Self <: Language] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setRouteVarargs(value: Leg*): Self = this.set("route", js.Array(value :_*))
+    @scala.inline
+    def setRoute(value: js.Array[Leg]): Self = this.set("route", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoute: Self = this.set("route", js.undefined)
+  }
+  
 }
 

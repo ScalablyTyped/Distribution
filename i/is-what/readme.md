@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-what
 
-Typings are for version 3.3.1
+Typings are for version 3.11.0
 
 ## Library description:
 JS type check (TypeScript supported) functions like `isPlainObject() isArray()` etc. A simple & small integration.
@@ -10,9 +10,9 @@ JS type check (TypeScript supported) functions like `isPlainObject() isArray()` 
 | ------------------ | :-------------: |
 | Full name          | is-what |
 | Keywords           | javascript, typescript, typechecker, check-type, javascript-type, primitive-types, plain-object, plain-objects, class-instance, class-identifier, type-checking, type-checker, type-check, define-type, get-type, what-type, is-object, is-plain-obj, is-plain-object |
-| # releases         | 28 |
+| # releases         | 30 |
 | # dependents       | 17 |
-| # downloads        | 16379970 |
+| # downloads        | 18832050 |
 | # stars            | 0 |
 
 ## Links

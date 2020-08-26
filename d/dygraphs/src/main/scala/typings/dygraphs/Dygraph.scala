@@ -196,6 +196,7 @@ trait Dygraph extends js.Object {
   def setAnnotations(ann: js.Array[Annotation]): Unit = js.native
   def setAnnotations(ann: js.Array[Annotation], suppressDraw: Boolean): Unit = js.native
   def setSelection(row: Boolean): Unit = js.native
+  def setSelection(row: Boolean, seriesName: js.UndefOr[scala.Nothing], locked: Boolean): Unit = js.native
   def setSelection(row: Boolean, seriesName: String): Unit = js.native
   def setSelection(row: Boolean, seriesName: String, locked: Boolean): Unit = js.native
   /**
@@ -211,6 +212,7 @@ trait Dygraph extends js.Object {
     * to unlock it.
     */
   def setSelection(row: Double): Unit = js.native
+  def setSelection(row: Double, seriesName: js.UndefOr[scala.Nothing], locked: Boolean): Unit = js.native
   def setSelection(row: Double, seriesName: String): Unit = js.native
   def setSelection(row: Double, seriesName: String, locked: Boolean): Unit = js.native
   /**

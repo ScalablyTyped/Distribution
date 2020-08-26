@@ -20,6 +20,7 @@ import scala.scalajs.js.annotation._
   *                                 millis: 500,
   *                                 micros: 500});
   */
+@js.native
 trait Accuracy extends ASN1Object
 
 object Accuracy {

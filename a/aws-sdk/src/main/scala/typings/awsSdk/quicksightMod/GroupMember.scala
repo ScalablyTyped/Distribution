@@ -18,11 +18,30 @@ trait GroupMember extends js.Object {
 
 object GroupMember {
   @scala.inline
-  def apply(Arn: Arn = null, MemberName: GroupMemberName = null): GroupMember = {
+  def apply(): GroupMember = {
     val __obj = js.Dynamic.literal()
-    if (Arn != null) __obj.updateDynamic("Arn")(Arn.asInstanceOf[js.Any])
-    if (MemberName != null) __obj.updateDynamic("MemberName")(MemberName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupMember]
   }
+  @scala.inline
+  implicit class GroupMemberOps[Self <: GroupMember] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Arn): Self = this.set("Arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("Arn", js.undefined)
+    @scala.inline
+    def setMemberName(value: GroupMemberName): Self = this.set("MemberName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberName: Self = this.set("MemberName", js.undefined)
+  }
+  
 }
 

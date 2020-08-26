@@ -27,6 +27,7 @@ class ResourceUrltestingtoolsMobilefriendlytest protected () extends js.Object {
     */
   def run(): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
   def run(callback: BodyResponseCallback[SchemaRunMobileFriendlyTestResponse]): Unit = js.native
+  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
   def run(params: ParamsResourceUrltestingtoolsMobilefriendlytestRun): GaxiosPromise[SchemaRunMobileFriendlyTestResponse] = js.native
   def run(
     params: ParamsResourceUrltestingtoolsMobilefriendlytestRun,

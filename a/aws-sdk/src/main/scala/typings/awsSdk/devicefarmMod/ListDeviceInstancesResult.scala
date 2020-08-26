@@ -18,11 +18,32 @@ trait ListDeviceInstancesResult extends js.Object {
 
 object ListDeviceInstancesResult {
   @scala.inline
-  def apply(deviceInstances: DeviceInstances = null, nextToken: PaginationToken = null): ListDeviceInstancesResult = {
+  def apply(): ListDeviceInstancesResult = {
     val __obj = js.Dynamic.literal()
-    if (deviceInstances != null) __obj.updateDynamic("deviceInstances")(deviceInstances.asInstanceOf[js.Any])
-    if (nextToken != null) __obj.updateDynamic("nextToken")(nextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceInstancesResult]
   }
+  @scala.inline
+  implicit class ListDeviceInstancesResultOps[Self <: ListDeviceInstancesResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceInstancesVarargs(value: DeviceInstance*): Self = this.set("deviceInstances", js.Array(value :_*))
+    @scala.inline
+    def setDeviceInstances(value: DeviceInstances): Self = this.set("deviceInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceInstances: Self = this.set("deviceInstances", js.undefined)
+    @scala.inline
+    def setNextToken(value: PaginationToken): Self = this.set("nextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("nextToken", js.undefined)
+  }
+  
 }
 

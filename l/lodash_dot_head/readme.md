@@ -12,13 +12,12 @@ The lodash method `_.head` exported as a module.
 | Keywords           | lodash-modularized, head |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 845592 |
+| # downloads        | 865893 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.head)
     
 

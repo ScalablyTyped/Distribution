@@ -30,17 +30,38 @@ trait CreateIndexRequest extends js.Object {
 
 object CreateIndexRequest {
   @scala.inline
-  def apply(
-    DirectoryArn: Arn,
-    IsUnique: Bool,
-    OrderedIndexedAttributeList: AttributeKeyList,
-    LinkName: LinkName = null,
-    ParentReference: ObjectReference = null
-  ): CreateIndexRequest = {
+  def apply(DirectoryArn: Arn, IsUnique: Bool, OrderedIndexedAttributeList: AttributeKeyList): CreateIndexRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], IsUnique = IsUnique.asInstanceOf[js.Any], OrderedIndexedAttributeList = OrderedIndexedAttributeList.asInstanceOf[js.Any])
-    if (LinkName != null) __obj.updateDynamic("LinkName")(LinkName.asInstanceOf[js.Any])
-    if (ParentReference != null) __obj.updateDynamic("ParentReference")(ParentReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIndexRequest]
   }
+  @scala.inline
+  implicit class CreateIndexRequestOps[Self <: CreateIndexRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDirectoryArn(value: Arn): Self = this.set("DirectoryArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIsUnique(value: Bool): Self = this.set("IsUnique", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOrderedIndexedAttributeListVarargs(value: AttributeKey*): Self = this.set("OrderedIndexedAttributeList", js.Array(value :_*))
+    @scala.inline
+    def setOrderedIndexedAttributeList(value: AttributeKeyList): Self = this.set("OrderedIndexedAttributeList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLinkName(value: LinkName): Self = this.set("LinkName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkName: Self = this.set("LinkName", js.undefined)
+    @scala.inline
+    def setParentReference(value: ObjectReference): Self = this.set("ParentReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParentReference: Self = this.set("ParentReference", js.undefined)
+  }
+  
 }
 

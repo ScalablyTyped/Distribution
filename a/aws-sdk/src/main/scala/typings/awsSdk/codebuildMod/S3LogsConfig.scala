@@ -22,15 +22,32 @@ trait S3LogsConfig extends js.Object {
 
 object S3LogsConfig {
   @scala.inline
-  def apply(
-    status: LogsConfigStatusType,
-    encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined,
-    location: String = null
-  ): S3LogsConfig = {
+  def apply(status: LogsConfigStatusType): S3LogsConfig = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
-    if (!js.isUndefined(encryptionDisabled)) __obj.updateDynamic("encryptionDisabled")(encryptionDisabled.get.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LogsConfig]
   }
+  @scala.inline
+  implicit class S3LogsConfigOps[Self <: S3LogsConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatus(value: LogsConfigStatusType): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEncryptionDisabled(value: WrapperBoolean): Self = this.set("encryptionDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionDisabled: Self = this.set("encryptionDisabled", js.undefined)
+    @scala.inline
+    def setLocation(value: String): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+  }
+  
 }
 

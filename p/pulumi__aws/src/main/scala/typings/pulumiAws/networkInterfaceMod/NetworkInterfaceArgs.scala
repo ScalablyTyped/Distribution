@@ -39,34 +39,69 @@ trait NetworkInterfaceArgs extends js.Object {
     */
   val subnetId: Input[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object NetworkInterfaceArgs {
   @scala.inline
-  def apply(
-    subnetId: Input[String],
-    attachments: Input[js.Array[Input[NetworkInterfaceAttachment]]] = null,
-    description: Input[String] = null,
-    privateIp: Input[String] = null,
-    privateIps: Input[js.Array[Input[String]]] = null,
-    privateIpsCount: Input[Double] = null,
-    securityGroups: Input[js.Array[Input[String]]] = null,
-    sourceDestCheck: Input[Boolean] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): NetworkInterfaceArgs = {
+  def apply(subnetId: Input[String]): NetworkInterfaceArgs = {
     val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any])
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
-    if (privateIps != null) __obj.updateDynamic("privateIps")(privateIps.asInstanceOf[js.Any])
-    if (privateIpsCount != null) __obj.updateDynamic("privateIpsCount")(privateIpsCount.asInstanceOf[js.Any])
-    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
-    if (sourceDestCheck != null) __obj.updateDynamic("sourceDestCheck")(sourceDestCheck.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkInterfaceArgs]
   }
+  @scala.inline
+  implicit class NetworkInterfaceArgsOps[Self <: NetworkInterfaceArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachmentsVarargs(value: Input[NetworkInterfaceAttachment]*): Self = this.set("attachments", js.Array(value :_*))
+    @scala.inline
+    def setAttachments(value: Input[js.Array[Input[NetworkInterfaceAttachment]]]): Self = this.set("attachments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachments: Self = this.set("attachments", js.undefined)
+    @scala.inline
+    def setDescription(value: Input[String]): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setPrivateIp(value: Input[String]): Self = this.set("privateIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIp: Self = this.set("privateIp", js.undefined)
+    @scala.inline
+    def setPrivateIpsVarargs(value: Input[String]*): Self = this.set("privateIps", js.Array(value :_*))
+    @scala.inline
+    def setPrivateIps(value: Input[js.Array[Input[String]]]): Self = this.set("privateIps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIps: Self = this.set("privateIps", js.undefined)
+    @scala.inline
+    def setPrivateIpsCount(value: Input[Double]): Self = this.set("privateIpsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateIpsCount: Self = this.set("privateIpsCount", js.undefined)
+    @scala.inline
+    def setSecurityGroupsVarargs(value: Input[String]*): Self = this.set("securityGroups", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroups(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroups: Self = this.set("securityGroups", js.undefined)
+    @scala.inline
+    def setSourceDestCheck(value: Input[Boolean]): Self = this.set("sourceDestCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDestCheck: Self = this.set("sourceDestCheck", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

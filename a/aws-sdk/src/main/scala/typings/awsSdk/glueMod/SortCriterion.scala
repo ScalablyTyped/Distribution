@@ -18,11 +18,30 @@ trait SortCriterion extends js.Object {
 
 object SortCriterion {
   @scala.inline
-  def apply(FieldName: ValueString = null, Sort: Sort = null): SortCriterion = {
+  def apply(): SortCriterion = {
     val __obj = js.Dynamic.literal()
-    if (FieldName != null) __obj.updateDynamic("FieldName")(FieldName.asInstanceOf[js.Any])
-    if (Sort != null) __obj.updateDynamic("Sort")(Sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortCriterion]
   }
+  @scala.inline
+  implicit class SortCriterionOps[Self <: SortCriterion] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldName(value: ValueString): Self = this.set("FieldName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldName: Self = this.set("FieldName", js.undefined)
+    @scala.inline
+    def setSort(value: Sort): Self = this.set("Sort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSort: Self = this.set("Sort", js.undefined)
+  }
+  
 }
 

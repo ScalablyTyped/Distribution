@@ -4,9 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.graphics.drawable.StateListDrawable")
 @js.native
-class StateListDrawable () extends DrawableContainer {
+trait StateListDrawable extends DrawableContainer {
   var mStateListState: js.Any = js.native
   def addState(stateSet: js.Array[Double], drawable: Drawable): Unit = js.native
   def getStateCount(): Double = js.native

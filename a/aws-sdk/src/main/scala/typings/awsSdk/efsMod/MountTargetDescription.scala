@@ -42,6 +42,10 @@ trait MountTargetDescription extends js.Object {
     * The ID of the mount target's subnet.
     */
   var SubnetId: typings.awsSdk.efsMod.SubnetId = js.native
+  /**
+    * The Virtual Private Cloud (VPC) ID that the mount target is configured in.
+    */
+  var VpcId: js.UndefOr[typings.awsSdk.efsMod.VpcId] = js.native
 }
 
 object MountTargetDescription {
@@ -50,20 +54,55 @@ object MountTargetDescription {
     FileSystemId: FileSystemId,
     LifeCycleState: LifeCycleState,
     MountTargetId: MountTargetId,
-    SubnetId: SubnetId,
-    AvailabilityZoneId: AvailabilityZoneId = null,
-    AvailabilityZoneName: AvailabilityZoneName = null,
-    IpAddress: IpAddress = null,
-    NetworkInterfaceId: NetworkInterfaceId = null,
-    OwnerId: AwsAccountId = null
+    SubnetId: SubnetId
   ): MountTargetDescription = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], LifeCycleState = LifeCycleState.asInstanceOf[js.Any], MountTargetId = MountTargetId.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
-    if (AvailabilityZoneId != null) __obj.updateDynamic("AvailabilityZoneId")(AvailabilityZoneId.asInstanceOf[js.Any])
-    if (AvailabilityZoneName != null) __obj.updateDynamic("AvailabilityZoneName")(AvailabilityZoneName.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
-    if (NetworkInterfaceId != null) __obj.updateDynamic("NetworkInterfaceId")(NetworkInterfaceId.asInstanceOf[js.Any])
-    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MountTargetDescription]
   }
+  @scala.inline
+  implicit class MountTargetDescriptionOps[Self <: MountTargetDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileSystemId(value: FileSystemId): Self = this.set("FileSystemId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLifeCycleState(value: LifeCycleState): Self = this.set("LifeCycleState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMountTargetId(value: MountTargetId): Self = this.set("MountTargetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetId(value: SubnetId): Self = this.set("SubnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZoneId(value: AvailabilityZoneId): Self = this.set("AvailabilityZoneId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZoneId: Self = this.set("AvailabilityZoneId", js.undefined)
+    @scala.inline
+    def setAvailabilityZoneName(value: AvailabilityZoneName): Self = this.set("AvailabilityZoneName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZoneName: Self = this.set("AvailabilityZoneName", js.undefined)
+    @scala.inline
+    def setIpAddress(value: IpAddress): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+    @scala.inline
+    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = this.set("NetworkInterfaceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkInterfaceId: Self = this.set("NetworkInterfaceId", js.undefined)
+    @scala.inline
+    def setOwnerId(value: AwsAccountId): Self = this.set("OwnerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("OwnerId", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

@@ -19,10 +19,28 @@ trait SchemaGooglePrivacyDlpV2WordList extends js.Object {
 
 object SchemaGooglePrivacyDlpV2WordList {
   @scala.inline
-  def apply(words: js.Array[String] = null): SchemaGooglePrivacyDlpV2WordList = {
+  def apply(): SchemaGooglePrivacyDlpV2WordList = {
     val __obj = js.Dynamic.literal()
-    if (words != null) __obj.updateDynamic("words")(words.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2WordList]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2WordListOps[Self <: SchemaGooglePrivacyDlpV2WordList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setWordsVarargs(value: String*): Self = this.set("words", js.Array(value :_*))
+    @scala.inline
+    def setWords(value: js.Array[String]): Self = this.set("words", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWords: Self = this.set("words", js.undefined)
+  }
+  
 }
 

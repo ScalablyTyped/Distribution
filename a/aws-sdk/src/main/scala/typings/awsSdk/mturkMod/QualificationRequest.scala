@@ -34,22 +34,46 @@ trait QualificationRequest extends js.Object {
 
 object QualificationRequest {
   @scala.inline
-  def apply(
-    Answer: String = null,
-    QualificationRequestId: String = null,
-    QualificationTypeId: EntityId = null,
-    SubmitTime: Timestamp = null,
-    Test: String = null,
-    WorkerId: CustomerId = null
-  ): QualificationRequest = {
+  def apply(): QualificationRequest = {
     val __obj = js.Dynamic.literal()
-    if (Answer != null) __obj.updateDynamic("Answer")(Answer.asInstanceOf[js.Any])
-    if (QualificationRequestId != null) __obj.updateDynamic("QualificationRequestId")(QualificationRequestId.asInstanceOf[js.Any])
-    if (QualificationTypeId != null) __obj.updateDynamic("QualificationTypeId")(QualificationTypeId.asInstanceOf[js.Any])
-    if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime.asInstanceOf[js.Any])
-    if (Test != null) __obj.updateDynamic("Test")(Test.asInstanceOf[js.Any])
-    if (WorkerId != null) __obj.updateDynamic("WorkerId")(WorkerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[QualificationRequest]
   }
+  @scala.inline
+  implicit class QualificationRequestOps[Self <: QualificationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAnswer(value: String): Self = this.set("Answer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnswer: Self = this.set("Answer", js.undefined)
+    @scala.inline
+    def setQualificationRequestId(value: String): Self = this.set("QualificationRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualificationRequestId: Self = this.set("QualificationRequestId", js.undefined)
+    @scala.inline
+    def setQualificationTypeId(value: EntityId): Self = this.set("QualificationTypeId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualificationTypeId: Self = this.set("QualificationTypeId", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: Timestamp): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+    @scala.inline
+    def setTest(value: String): Self = this.set("Test", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest: Self = this.set("Test", js.undefined)
+    @scala.inline
+    def setWorkerId(value: CustomerId): Self = this.set("WorkerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkerId: Self = this.set("WorkerId", js.undefined)
+  }
+  
 }
 

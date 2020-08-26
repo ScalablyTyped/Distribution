@@ -1,29 +1,40 @@
 package typings.eslint.mod.Rule
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.IterableIterator
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ReportDescriptorOptions extends ReportDescriptorOptionsBase {
-  var suggest: js.UndefOr[js.Array[SuggestionReportDescriptor] | Null] = js.undefined
+  var suggest: js.UndefOr[js.Array[SuggestionReportDescriptor] | Null] = js.native
 }
 
 object ReportDescriptorOptions {
   @scala.inline
-  def apply(
-    data: StringDictionary[String] = null,
-    fix: js.UndefOr[
-      Null | (/* fixer */ RuleFixer => Null | Fix | IterableIterator[Fix] | js.Array[Fix])
-    ] = js.undefined,
-    suggest: js.UndefOr[Null | js.Array[SuggestionReportDescriptor]] = js.undefined
-  ): ReportDescriptorOptions = {
+  def apply(): ReportDescriptorOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(if (fix != null) js.Any.fromFunction1(fix.asInstanceOf[/* fixer */ RuleFixer => Null | Fix | IterableIterator[Fix] | js.Array[Fix]]) else null)
-    if (!js.isUndefined(suggest)) __obj.updateDynamic("suggest")(suggest.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportDescriptorOptions]
   }
+  @scala.inline
+  implicit class ReportDescriptorOptionsOps[Self <: ReportDescriptorOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSuggestVarargs(value: SuggestionReportDescriptor*): Self = this.set("suggest", js.Array(value :_*))
+    @scala.inline
+    def setSuggest(value: js.Array[SuggestionReportDescriptor]): Self = this.set("suggest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggest: Self = this.set("suggest", js.undefined)
+    @scala.inline
+    def setSuggestNull: Self = this.set("suggest", null)
+  }
+  
 }
 

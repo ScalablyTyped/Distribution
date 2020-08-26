@@ -30,20 +30,42 @@ trait DetectedProperties extends js.Object {
 
 object DetectedProperties {
   @scala.inline
-  def apply(
-    DurationMillis: js.UndefOr[NullableLong] = js.undefined,
-    FileSize: js.UndefOr[NullableLong] = js.undefined,
-    FrameRate: FloatString = null,
-    Height: js.UndefOr[NullableInteger] = js.undefined,
-    Width: js.UndefOr[NullableInteger] = js.undefined
-  ): DetectedProperties = {
+  def apply(): DetectedProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DurationMillis)) __obj.updateDynamic("DurationMillis")(DurationMillis.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(FileSize)) __obj.updateDynamic("FileSize")(FileSize.get.asInstanceOf[js.Any])
-    if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedProperties]
   }
+  @scala.inline
+  implicit class DetectedPropertiesOps[Self <: DetectedProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDurationMillis(value: NullableLong): Self = this.set("DurationMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationMillis: Self = this.set("DurationMillis", js.undefined)
+    @scala.inline
+    def setFileSize(value: NullableLong): Self = this.set("FileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSize: Self = this.set("FileSize", js.undefined)
+    @scala.inline
+    def setFrameRate(value: FloatString): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    @scala.inline
+    def setHeight(value: NullableInteger): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("Height", js.undefined)
+    @scala.inline
+    def setWidth(value: NullableInteger): Self = this.set("Width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("Width", js.undefined)
+  }
+  
 }
 

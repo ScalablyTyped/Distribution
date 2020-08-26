@@ -38,21 +38,44 @@ trait CreateFindingsFilterRequest extends js.Object {
 
 object CreateFindingsFilterRequest {
   @scala.inline
-  def apply(
-    action: FindingsFilterAction,
-    findingCriteria: FindingCriteria,
-    name: string,
-    clientToken: string = null,
-    description: string = null,
-    position: js.UndefOr[integer] = js.undefined,
-    tags: TagMap = null
-  ): CreateFindingsFilterRequest = {
+  def apply(action: FindingsFilterAction, findingCriteria: FindingCriteria, name: string): CreateFindingsFilterRequest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], findingCriteria = findingCriteria.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position.get.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFindingsFilterRequest]
   }
+  @scala.inline
+  implicit class CreateFindingsFilterRequestOps[Self <: CreateFindingsFilterRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: FindingsFilterAction): Self = this.set("action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFindingCriteria(value: FindingCriteria): Self = this.set("findingCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: string): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientToken(value: string): Self = this.set("clientToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientToken: Self = this.set("clientToken", js.undefined)
+    @scala.inline
+    def setDescription(value: string): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setPosition(value: integer): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

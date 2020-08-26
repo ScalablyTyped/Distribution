@@ -28,11 +28,9 @@ class OfflineSchema protected () extends Element {
   ) = this()
   @JSName("model")
   var model_FOfflineSchema: IModel = js.native
-  def role(): js.Any = js.native
-  def role(newValue: IUserRole): js.Any = js.native
+  def role: IUserRole | Null = js.native
   def roleQualifiedName: String | Null = js.native
-  @JSName("role")
-  def role_Union: IUserRole | Null = js.native
+  def role_=(newValue: IUserRole | Null): Unit = js.native
   /**
     * In version 6.4.0: introduced
     */

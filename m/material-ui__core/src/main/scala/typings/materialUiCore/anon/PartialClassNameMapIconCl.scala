@@ -20,28 +20,58 @@ trait PartialClassNameMapIconCl extends js.Object {
 
 object PartialClassNameMapIconCl {
   @scala.inline
-  def apply(
-    colorAction: String = null,
-    colorDisabled: String = null,
-    colorError: String = null,
-    colorPrimary: String = null,
-    colorSecondary: String = null,
-    fontSizeInherit: String = null,
-    fontSizeLarge: String = null,
-    fontSizeSmall: String = null,
-    root: String = null
-  ): PartialClassNameMapIconCl = {
+  def apply(): PartialClassNameMapIconCl = {
     val __obj = js.Dynamic.literal()
-    if (colorAction != null) __obj.updateDynamic("colorAction")(colorAction.asInstanceOf[js.Any])
-    if (colorDisabled != null) __obj.updateDynamic("colorDisabled")(colorDisabled.asInstanceOf[js.Any])
-    if (colorError != null) __obj.updateDynamic("colorError")(colorError.asInstanceOf[js.Any])
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (fontSizeInherit != null) __obj.updateDynamic("fontSizeInherit")(fontSizeInherit.asInstanceOf[js.Any])
-    if (fontSizeLarge != null) __obj.updateDynamic("fontSizeLarge")(fontSizeLarge.asInstanceOf[js.Any])
-    if (fontSizeSmall != null) __obj.updateDynamic("fontSizeSmall")(fontSizeSmall.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapIconCl]
   }
+  @scala.inline
+  implicit class PartialClassNameMapIconClOps[Self <: PartialClassNameMapIconCl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorAction(value: String): Self = this.set("colorAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorAction: Self = this.set("colorAction", js.undefined)
+    @scala.inline
+    def setColorDisabled(value: String): Self = this.set("colorDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorDisabled: Self = this.set("colorDisabled", js.undefined)
+    @scala.inline
+    def setColorError(value: String): Self = this.set("colorError", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorError: Self = this.set("colorError", js.undefined)
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setFontSizeInherit(value: String): Self = this.set("fontSizeInherit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeInherit: Self = this.set("fontSizeInherit", js.undefined)
+    @scala.inline
+    def setFontSizeLarge(value: String): Self = this.set("fontSizeLarge", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeLarge: Self = this.set("fontSizeLarge", js.undefined)
+    @scala.inline
+    def setFontSizeSmall(value: String): Self = this.set("fontSizeSmall", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSizeSmall: Self = this.set("fontSizeSmall", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

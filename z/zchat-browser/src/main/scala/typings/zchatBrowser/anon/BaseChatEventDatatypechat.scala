@@ -7,15 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined zchat-browser.zchat-browser.ChatEvent.BaseChatEventData & {  type  :'chat.msg',   msg  :string,   options  :std.Array<string>,   structured_msg  :zchat-browser.zchat-browser.ChatEvent.StructuredMessage} */
+/* Inlined zchat-browser.zchat-browser.ChatEvent.BaseChatEventData & {  type :'chat.msg',   msg :string,   options :std.Array<string>,   structured_msg :zchat-browser.zchat-browser.ChatEvent.StructuredMessage} */
+@js.native
 trait BaseChatEventDatatypechat extends ChatEventData {
-  var display_name: String
-  var msg: String
-  var nick: String
-  var options: js.Array[String]
-  var structured_msg: StructuredMessage
-  var time_stamp: Double
-  var `type`: chatDotmsg
+  var display_name: String = js.native
+  var msg: String = js.native
+  var nick: String = js.native
+  var options: js.Array[String] = js.native
+  var structured_msg: StructuredMessage = js.native
+  var time_stamp: Double = js.native
+  var `type`: chatDotmsg = js.native
 }
 
 object BaseChatEventDatatypechat {
@@ -33,5 +34,34 @@ object BaseChatEventDatatypechat {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseChatEventDatatypechat]
   }
+  @scala.inline
+  implicit class BaseChatEventDatatypechatOps[Self <: BaseChatEventDatatypechat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplay_name(value: String): Self = this.set("display_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMsg(value: String): Self = this.set("msg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNick(value: String): Self = this.set("nick", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptionsVarargs(value: String*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[String]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStructured_msg(value: StructuredMessage): Self = this.set("structured_msg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTime_stamp(value: Double): Self = this.set("time_stamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: chatDotmsg): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

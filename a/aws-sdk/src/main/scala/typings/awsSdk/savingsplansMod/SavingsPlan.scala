@@ -82,46 +82,96 @@ trait SavingsPlan extends js.Object {
 
 object SavingsPlan {
   @scala.inline
-  def apply(
-    commitment: Amount = null,
-    currency: CurrencyCode = null,
-    description: String = null,
-    ec2InstanceFamily: EC2InstanceFamily = null,
-    end: String = null,
-    offeringId: SavingsPlanOfferingId = null,
-    paymentOption: SavingsPlanPaymentOption = null,
-    productTypes: SavingsPlanProductTypeList = null,
-    recurringPaymentAmount: Amount = null,
-    region: Region = null,
-    savingsPlanArn: SavingsPlanArn = null,
-    savingsPlanId: SavingsPlanId = null,
-    savingsPlanType: SavingsPlanType = null,
-    start: String = null,
-    state: SavingsPlanState = null,
-    tags: TagMap = null,
-    termDurationInSeconds: js.UndefOr[TermDurationInSeconds] = js.undefined,
-    upfrontPaymentAmount: Amount = null
-  ): SavingsPlan = {
+  def apply(): SavingsPlan = {
     val __obj = js.Dynamic.literal()
-    if (commitment != null) __obj.updateDynamic("commitment")(commitment.asInstanceOf[js.Any])
-    if (currency != null) __obj.updateDynamic("currency")(currency.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (ec2InstanceFamily != null) __obj.updateDynamic("ec2InstanceFamily")(ec2InstanceFamily.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (offeringId != null) __obj.updateDynamic("offeringId")(offeringId.asInstanceOf[js.Any])
-    if (paymentOption != null) __obj.updateDynamic("paymentOption")(paymentOption.asInstanceOf[js.Any])
-    if (productTypes != null) __obj.updateDynamic("productTypes")(productTypes.asInstanceOf[js.Any])
-    if (recurringPaymentAmount != null) __obj.updateDynamic("recurringPaymentAmount")(recurringPaymentAmount.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (savingsPlanArn != null) __obj.updateDynamic("savingsPlanArn")(savingsPlanArn.asInstanceOf[js.Any])
-    if (savingsPlanId != null) __obj.updateDynamic("savingsPlanId")(savingsPlanId.asInstanceOf[js.Any])
-    if (savingsPlanType != null) __obj.updateDynamic("savingsPlanType")(savingsPlanType.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (!js.isUndefined(termDurationInSeconds)) __obj.updateDynamic("termDurationInSeconds")(termDurationInSeconds.get.asInstanceOf[js.Any])
-    if (upfrontPaymentAmount != null) __obj.updateDynamic("upfrontPaymentAmount")(upfrontPaymentAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SavingsPlan]
   }
+  @scala.inline
+  implicit class SavingsPlanOps[Self <: SavingsPlan] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCommitment(value: Amount): Self = this.set("commitment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommitment: Self = this.set("commitment", js.undefined)
+    @scala.inline
+    def setCurrency(value: CurrencyCode): Self = this.set("currency", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrency: Self = this.set("currency", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setEc2InstanceFamily(value: EC2InstanceFamily): Self = this.set("ec2InstanceFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEc2InstanceFamily: Self = this.set("ec2InstanceFamily", js.undefined)
+    @scala.inline
+    def setEnd(value: String): Self = this.set("end", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnd: Self = this.set("end", js.undefined)
+    @scala.inline
+    def setOfferingId(value: SavingsPlanOfferingId): Self = this.set("offeringId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOfferingId: Self = this.set("offeringId", js.undefined)
+    @scala.inline
+    def setPaymentOption(value: SavingsPlanPaymentOption): Self = this.set("paymentOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaymentOption: Self = this.set("paymentOption", js.undefined)
+    @scala.inline
+    def setProductTypesVarargs(value: SavingsPlanProductType*): Self = this.set("productTypes", js.Array(value :_*))
+    @scala.inline
+    def setProductTypes(value: SavingsPlanProductTypeList): Self = this.set("productTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProductTypes: Self = this.set("productTypes", js.undefined)
+    @scala.inline
+    def setRecurringPaymentAmount(value: Amount): Self = this.set("recurringPaymentAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecurringPaymentAmount: Self = this.set("recurringPaymentAmount", js.undefined)
+    @scala.inline
+    def setRegion(value: Region): Self = this.set("region", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegion: Self = this.set("region", js.undefined)
+    @scala.inline
+    def setSavingsPlanArn(value: SavingsPlanArn): Self = this.set("savingsPlanArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsPlanArn: Self = this.set("savingsPlanArn", js.undefined)
+    @scala.inline
+    def setSavingsPlanId(value: SavingsPlanId): Self = this.set("savingsPlanId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsPlanId: Self = this.set("savingsPlanId", js.undefined)
+    @scala.inline
+    def setSavingsPlanType(value: SavingsPlanType): Self = this.set("savingsPlanType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSavingsPlanType: Self = this.set("savingsPlanType", js.undefined)
+    @scala.inline
+    def setStart(value: String): Self = this.set("start", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setState(value: SavingsPlanState): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTags(value: TagMap): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setTermDurationInSeconds(value: TermDurationInSeconds): Self = this.set("termDurationInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTermDurationInSeconds: Self = this.set("termDurationInSeconds", js.undefined)
+    @scala.inline
+    def setUpfrontPaymentAmount(value: Amount): Self = this.set("upfrontPaymentAmount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpfrontPaymentAmount: Self = this.set("upfrontPaymentAmount", js.undefined)
+  }
+  
 }
 

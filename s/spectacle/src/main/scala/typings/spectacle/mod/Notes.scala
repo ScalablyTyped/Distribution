@@ -1,12 +1,13 @@
 package typings.spectacle.mod
 
-import typings.react.mod.Component
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.FC
+import typings.spectacle.anon.ChildrenReactNode
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @JSImport("spectacle", "Notes")
 @js.native
-class Notes ()
-  extends Component[BaseProps, js.Object, js.Any]
+object Notes extends TopLevel[FC[ChildrenReactNode]]
 

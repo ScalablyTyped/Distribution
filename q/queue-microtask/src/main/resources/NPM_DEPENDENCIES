@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "queue-microtask" : "1.1.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "queue-microtask" : "1.1.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

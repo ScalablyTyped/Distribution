@@ -49,28 +49,60 @@ trait SchemaParallelInstruction extends js.Object {
 
 object SchemaParallelInstruction {
   @scala.inline
-  def apply(
-    flatten: SchemaFlattenInstruction = null,
-    name: String = null,
-    originalName: String = null,
-    outputs: js.Array[SchemaInstructionOutput] = null,
-    parDo: SchemaParDoInstruction = null,
-    partialGroupByKey: SchemaPartialGroupByKeyInstruction = null,
-    read: SchemaReadInstruction = null,
-    systemName: String = null,
-    write: SchemaWriteInstruction = null
-  ): SchemaParallelInstruction = {
+  def apply(): SchemaParallelInstruction = {
     val __obj = js.Dynamic.literal()
-    if (flatten != null) __obj.updateDynamic("flatten")(flatten.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (originalName != null) __obj.updateDynamic("originalName")(originalName.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (parDo != null) __obj.updateDynamic("parDo")(parDo.asInstanceOf[js.Any])
-    if (partialGroupByKey != null) __obj.updateDynamic("partialGroupByKey")(partialGroupByKey.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (systemName != null) __obj.updateDynamic("systemName")(systemName.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaParallelInstruction]
   }
+  @scala.inline
+  implicit class SchemaParallelInstructionOps[Self <: SchemaParallelInstruction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFlatten(value: SchemaFlattenInstruction): Self = this.set("flatten", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlatten: Self = this.set("flatten", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOriginalName(value: String): Self = this.set("originalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalName: Self = this.set("originalName", js.undefined)
+    @scala.inline
+    def setOutputsVarargs(value: SchemaInstructionOutput*): Self = this.set("outputs", js.Array(value :_*))
+    @scala.inline
+    def setOutputs(value: js.Array[SchemaInstructionOutput]): Self = this.set("outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("outputs", js.undefined)
+    @scala.inline
+    def setParDo(value: SchemaParDoInstruction): Self = this.set("parDo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParDo: Self = this.set("parDo", js.undefined)
+    @scala.inline
+    def setPartialGroupByKey(value: SchemaPartialGroupByKeyInstruction): Self = this.set("partialGroupByKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartialGroupByKey: Self = this.set("partialGroupByKey", js.undefined)
+    @scala.inline
+    def setRead(value: SchemaReadInstruction): Self = this.set("read", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRead: Self = this.set("read", js.undefined)
+    @scala.inline
+    def setSystemName(value: String): Self = this.set("systemName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemName: Self = this.set("systemName", js.undefined)
+    @scala.inline
+    def setWrite(value: SchemaWriteInstruction): Self = this.set("write", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrite: Self = this.set("write", js.undefined)
+  }
+  
 }
 

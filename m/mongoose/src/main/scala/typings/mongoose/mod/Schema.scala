@@ -336,24 +336,30 @@ trait Schema[T] extends EventEmitter {
   def requiredPaths(invalidate: Boolean): js.Array[String] = js.native
   def set(key: strict, value: `throw`): this.type = js.native
   @JSName("set")
-  def set_autoCreate(key: autoCreate): Boolean = js.native
+  def set_autoCreate(key: autoCreate): this.type = js.native
   @JSName("set")
   def set_autoCreate(key: autoCreate, value: Boolean): this.type = js.native
+  @JSName("set")
+  def set_autoCreate_Union(key: autoCreate): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_autoIndex(key: autoIndex): this.type = js.native
+  @JSName("set")
+  def set_autoIndex(key: autoIndex, value: Boolean): this.type = js.native
   /**
     * Sets/gets a schema option.
     * @param key option name
     * @param value if not passed, the current option value is returned
     */
   @JSName("set")
-  def set_autoIndex(key: autoIndex): Boolean = js.native
+  def set_autoIndex_Union(key: autoIndex): js.UndefOr[Boolean] = js.native
   @JSName("set")
-  def set_autoIndex(key: autoIndex, value: Boolean): this.type = js.native
-  @JSName("set")
-  def set_bufferCommands(key: bufferCommands): Boolean = js.native
+  def set_bufferCommands(key: bufferCommands): this.type = js.native
   @JSName("set")
   def set_bufferCommands(key: bufferCommands, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_capped(key: capped): Boolean | Double | AutoIndexId = js.native
+  def set_bufferCommands_Union(key: bufferCommands): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_capped(key: capped): this.type = js.native
   @JSName("set")
   def set_capped(key: capped, value: Boolean): this.type = js.native
   @JSName("set")
@@ -361,115 +367,169 @@ trait Schema[T] extends EventEmitter {
   @JSName("set")
   def set_capped(key: capped, value: AutoIndexId): this.type = js.native
   @JSName("set")
-  def set_collation(key: collation): CollationOptions = js.native
+  def set_capped_Union(key: capped): js.UndefOr[Boolean | Double | AutoIndexId] = js.native
+  @JSName("set")
+  def set_collation(key: collation): this.type = js.native
   @JSName("set")
   def set_collation(key: collation, value: CollationOptions): this.type = js.native
   @JSName("set")
-  def set_collection(key: collection): String = js.native
+  def set_collation_Union(key: collation): js.UndefOr[CollationOptions] = js.native
+  @JSName("set")
+  def set_collection(key: collection): this.type = js.native
   @JSName("set")
   def set_collection(key: collection, value: String): this.type = js.native
   @JSName("set")
-  def set_discriminatorKey(key: discriminatorKey): String = js.native
+  def set_collection_Union(key: collection): js.UndefOr[String] = js.native
+  @JSName("set")
+  def set_discriminatorKey(key: discriminatorKey): this.type = js.native
   @JSName("set")
   def set_discriminatorKey(key: discriminatorKey, value: String): this.type = js.native
   @JSName("set")
-  def set_emitIndexErrors(key: emitIndexErrors): Boolean = js.native
+  def set_discriminatorKey_Union(key: discriminatorKey): js.UndefOr[String] = js.native
+  @JSName("set")
+  def set_emitIndexErrors(key: emitIndexErrors): this.type = js.native
   @JSName("set")
   def set_emitIndexErrors(key: emitIndexErrors, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_excludeIndexes(key: excludeIndexes): js.Any = js.native
+  def set_emitIndexErrors_Union(key: emitIndexErrors): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_excludeIndexes(key: excludeIndexes): this.type = js.native
   @JSName("set")
   def set_excludeIndexes(key: excludeIndexes, value: js.Any): this.type = js.native
   @JSName("set")
-  def set_id(key: _id): Boolean = js.native
+  def set_excludeIndexes_Union(key: excludeIndexes): js.UndefOr[js.Any] = js.native
+  @JSName("set")
+  def set_id(key: _id): this.type = js.native
   @JSName("set")
   def set_id(key: _id, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_id(key: id): Boolean = js.native
+  def set_id(key: id): this.type = js.native
   @JSName("set")
   def set_id(key: id, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_minimize(key: minimize): Boolean = js.native
+  def set_id_Union(key: _id): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_id_Union(key: id): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_minimize(key: minimize): this.type = js.native
   @JSName("set")
   def set_minimize(key: minimize, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_read(key: read): String = js.native
+  def set_minimize_Union(key: minimize): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_read(key: read): this.type = js.native
   @JSName("set")
   def set_read(key: read, value: String): this.type = js.native
   @JSName("set")
-  def set_safe(key: safe): Boolean | J = js.native
+  def set_read_Union(key: read): js.UndefOr[String] = js.native
+  @JSName("set")
+  def set_safe(key: safe): this.type = js.native
   @JSName("set")
   def set_safe(key: safe, value: Boolean): this.type = js.native
   @JSName("set")
   def set_safe(key: safe, value: J): this.type = js.native
   @JSName("set")
-  def set_selectPopulatedPaths(key: selectPopulatedPaths): Boolean = js.native
+  def set_safe_Union(key: safe): js.UndefOr[Boolean | J] = js.native
+  @JSName("set")
+  def set_selectPopulatedPaths(key: selectPopulatedPaths): this.type = js.native
   @JSName("set")
   def set_selectPopulatedPaths(key: selectPopulatedPaths, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_shardKey(key: shardKey): js.Object = js.native
+  def set_selectPopulatedPaths_Union(key: selectPopulatedPaths): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_shardKey(key: shardKey): this.type = js.native
   @JSName("set")
   def set_shardKey(key: shardKey, value: js.Object): this.type = js.native
   @JSName("set")
-  def set_skipVersioning(key: skipVersioning): js.Any = js.native
+  def set_shardKey_Union(key: shardKey): js.UndefOr[js.Object] = js.native
+  @JSName("set")
+  def set_skipVersioning(key: skipVersioning): this.type = js.native
   @JSName("set")
   def set_skipVersioning(key: skipVersioning, value: js.Any): this.type = js.native
   @JSName("set")
-  def set_storeSubdocValidationError(key: storeSubdocValidationError): Boolean = js.native
+  def set_skipVersioning_Union(key: skipVersioning): js.UndefOr[js.Any] = js.native
+  @JSName("set")
+  def set_storeSubdocValidationError(key: storeSubdocValidationError): this.type = js.native
   @JSName("set")
   def set_storeSubdocValidationError(key: storeSubdocValidationError, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_strict(key: strict): Boolean | `throw` = js.native
+  def set_storeSubdocValidationError_Union(key: storeSubdocValidationError): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_strict(key: strict): this.type = js.native
   @JSName("set")
   def set_strict(key: strict, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_strictQuery(key: strictQuery): Boolean = js.native
+  def set_strictQuery(key: strictQuery): this.type = js.native
   @JSName("set")
   def set_strictQuery(key: strictQuery, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_timestamps(key: timestamps): Boolean | SchemaTimestampsConfig = js.native
+  def set_strictQuery_Union(key: strictQuery): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_strict_Union(key: strict): js.UndefOr[Boolean | `throw`] = js.native
+  @JSName("set")
+  def set_timestamps(key: timestamps): this.type = js.native
   @JSName("set")
   def set_timestamps(key: timestamps, value: Boolean): this.type = js.native
   @JSName("set")
   def set_timestamps(key: timestamps, value: SchemaTimestampsConfig): this.type = js.native
   @JSName("set")
-  def set_toJSON(key: toJSON): DocumentToObjectOptions = js.native
+  def set_timestamps_Union(key: timestamps): js.UndefOr[Boolean | SchemaTimestampsConfig] = js.native
+  @JSName("set")
+  def set_toJSON(key: toJSON): this.type = js.native
   @JSName("set")
   def set_toJSON(key: toJSON, value: DocumentToObjectOptions): this.type = js.native
   @JSName("set")
-  def set_toObject(key: toObject): DocumentToObjectOptions = js.native
+  def set_toJSON_Union(key: toJSON): js.UndefOr[DocumentToObjectOptions] = js.native
+  @JSName("set")
+  def set_toObject(key: toObject): this.type = js.native
   @JSName("set")
   def set_toObject(key: toObject, value: DocumentToObjectOptions): this.type = js.native
   @JSName("set")
-  def set_typeKey(key: typeKey): String = js.native
+  def set_toObject_Union(key: toObject): js.UndefOr[DocumentToObjectOptions] = js.native
+  @JSName("set")
+  def set_typeKey(key: typeKey): this.type = js.native
   @JSName("set")
   def set_typeKey(key: typeKey, value: String): this.type = js.native
   @JSName("set")
-  def set_typePojoToMixed(key: typePojoToMixed): Boolean = js.native
+  def set_typeKey_Union(key: typeKey): js.UndefOr[String] = js.native
+  @JSName("set")
+  def set_typePojoToMixed(key: typePojoToMixed): this.type = js.native
   @JSName("set")
   def set_typePojoToMixed(key: typePojoToMixed, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_useNestedStrict(key: useNestedStrict): Boolean = js.native
+  def set_typePojoToMixed_Union(key: typePojoToMixed): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_useNestedStrict(key: useNestedStrict): this.type = js.native
   @JSName("set")
   def set_useNestedStrict(key: useNestedStrict, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_usePushEach(key: usePushEach): Boolean = js.native
+  def set_useNestedStrict_Union(key: useNestedStrict): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_usePushEach(key: usePushEach): this.type = js.native
   @JSName("set")
   def set_usePushEach(key: usePushEach, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_validateBeforeSave(key: validateBeforeSave): Boolean = js.native
+  def set_usePushEach_Union(key: usePushEach): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_validateBeforeSave(key: validateBeforeSave): this.type = js.native
   @JSName("set")
   def set_validateBeforeSave(key: validateBeforeSave, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_versionKey(key: versionKey): String | Boolean = js.native
+  def set_validateBeforeSave_Union(key: validateBeforeSave): js.UndefOr[Boolean] = js.native
+  @JSName("set")
+  def set_versionKey(key: versionKey): this.type = js.native
   @JSName("set")
   def set_versionKey(key: versionKey, value: String): this.type = js.native
   @JSName("set")
   def set_versionKey(key: versionKey, value: Boolean): this.type = js.native
   @JSName("set")
-  def set_writeConcern(key: writeConcern): WriteConcern = js.native
+  def set_versionKey_Union(key: versionKey): js.UndefOr[String | Boolean] = js.native
+  @JSName("set")
+  def set_writeConcern(key: writeConcern): this.type = js.native
   @JSName("set")
   def set_writeConcern(key: writeConcern, value: WriteConcern): this.type = js.native
+  @JSName("set")
+  def set_writeConcern_Union(key: writeConcern): js.UndefOr[WriteConcern] = js.native
   def static(nameObj: StringDictionary[js.Function]): this.type = js.native
   /**
     * Adds static "class" methods to Models compiled from this schema.

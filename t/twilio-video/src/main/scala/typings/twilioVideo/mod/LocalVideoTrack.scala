@@ -3,6 +3,7 @@ package typings.twilioVideo.mod
 import typings.std.HTMLMediaElement
 import typings.std.HTMLVideoElement
 import typings.std.MediaStreamTrack
+import typings.std.MediaTrackConstraints
 import typings.twilioVideo.mod.Track.ID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -32,6 +33,8 @@ class LocalVideoTrack protected ()
   def disable(): LocalVideoTrack = js.native
   def enable(): LocalVideoTrack = js.native
   def enable(enabled: Boolean): LocalVideoTrack = js.native
+  def restart(): js.Promise[Unit] = js.native
+  def restart(constraints: MediaTrackConstraints): js.Promise[Unit] = js.native
   def stop(): LocalVideoTrack = js.native
 }
 

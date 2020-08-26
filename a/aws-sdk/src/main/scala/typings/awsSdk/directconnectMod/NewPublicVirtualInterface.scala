@@ -46,25 +46,56 @@ trait NewPublicVirtualInterface extends js.Object {
 
 object NewPublicVirtualInterface {
   @scala.inline
-  def apply(
-    asn: ASN,
-    virtualInterfaceName: VirtualInterfaceName,
-    vlan: VLAN,
-    addressFamily: AddressFamily = null,
-    amazonAddress: AmazonAddress = null,
-    authKey: BGPAuthKey = null,
-    customerAddress: CustomerAddress = null,
-    routeFilterPrefixes: RouteFilterPrefixList = null,
-    tags: TagList = null
-  ): NewPublicVirtualInterface = {
+  def apply(asn: ASN, virtualInterfaceName: VirtualInterfaceName, vlan: VLAN): NewPublicVirtualInterface = {
     val __obj = js.Dynamic.literal(asn = asn.asInstanceOf[js.Any], virtualInterfaceName = virtualInterfaceName.asInstanceOf[js.Any], vlan = vlan.asInstanceOf[js.Any])
-    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
-    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
-    if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
-    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
-    if (routeFilterPrefixes != null) __obj.updateDynamic("routeFilterPrefixes")(routeFilterPrefixes.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewPublicVirtualInterface]
   }
+  @scala.inline
+  implicit class NewPublicVirtualInterfaceOps[Self <: NewPublicVirtualInterface] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsn(value: ASN): Self = this.set("asn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVirtualInterfaceName(value: VirtualInterfaceName): Self = this.set("virtualInterfaceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVlan(value: VLAN): Self = this.set("vlan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAddressFamily(value: AddressFamily): Self = this.set("addressFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressFamily: Self = this.set("addressFamily", js.undefined)
+    @scala.inline
+    def setAmazonAddress(value: AmazonAddress): Self = this.set("amazonAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAmazonAddress: Self = this.set("amazonAddress", js.undefined)
+    @scala.inline
+    def setAuthKey(value: BGPAuthKey): Self = this.set("authKey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuthKey: Self = this.set("authKey", js.undefined)
+    @scala.inline
+    def setCustomerAddress(value: CustomerAddress): Self = this.set("customerAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerAddress: Self = this.set("customerAddress", js.undefined)
+    @scala.inline
+    def setRouteFilterPrefixesVarargs(value: RouteFilterPrefix*): Self = this.set("routeFilterPrefixes", js.Array(value :_*))
+    @scala.inline
+    def setRouteFilterPrefixes(value: RouteFilterPrefixList): Self = this.set("routeFilterPrefixes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRouteFilterPrefixes: Self = this.set("routeFilterPrefixes", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

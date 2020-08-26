@@ -38,24 +38,50 @@ trait Problem extends js.Object {
 
 object Problem {
   @scala.inline
-  def apply(
-    device: Device = null,
-    job: ProblemDetail = null,
-    message: Message = null,
-    result: ExecutionResult = null,
-    run: ProblemDetail = null,
-    suite: ProblemDetail = null,
-    test: ProblemDetail = null
-  ): Problem = {
+  def apply(): Problem = {
     val __obj = js.Dynamic.literal()
-    if (device != null) __obj.updateDynamic("device")(device.asInstanceOf[js.Any])
-    if (job != null) __obj.updateDynamic("job")(job.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
-    if (suite != null) __obj.updateDynamic("suite")(suite.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
     __obj.asInstanceOf[Problem]
   }
+  @scala.inline
+  implicit class ProblemOps[Self <: Problem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDevice(value: Device): Self = this.set("device", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevice: Self = this.set("device", js.undefined)
+    @scala.inline
+    def setJob(value: ProblemDetail): Self = this.set("job", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJob: Self = this.set("job", js.undefined)
+    @scala.inline
+    def setMessage(value: Message): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setResult(value: ExecutionResult): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+    @scala.inline
+    def setRun(value: ProblemDetail): Self = this.set("run", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRun: Self = this.set("run", js.undefined)
+    @scala.inline
+    def setSuite(value: ProblemDetail): Self = this.set("suite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuite: Self = this.set("suite", js.undefined)
+    @scala.inline
+    def setTest(value: ProblemDetail): Self = this.set("test", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTest: Self = this.set("test", js.undefined)
+  }
+  
 }
 

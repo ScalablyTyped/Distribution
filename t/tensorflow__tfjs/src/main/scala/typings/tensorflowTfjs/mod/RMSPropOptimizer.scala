@@ -13,8 +13,66 @@ class RMSPropOptimizer protected ()
   extends typings.tensorflowTfjsCore.mod.RMSPropOptimizer {
   def this(learningRate: Double) = this()
   def this(learningRate: Double, decay: Double) = this()
+  def this(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double) = this()
   def this(learningRate: Double, decay: Double, momentum: Double) = this()
+  def this(
+    learningRate: Double,
+    decay: js.UndefOr[scala.Nothing],
+    momentum: js.UndefOr[scala.Nothing],
+    epsilon: Double
+  ) = this()
+  def this(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double, epsilon: Double) = this()
+  def this(learningRate: Double, decay: Double, momentum: js.UndefOr[scala.Nothing], epsilon: Double) = this()
   def this(learningRate: Double, decay: Double, momentum: Double, epsilon: Double) = this()
+  def this(
+    learningRate: Double,
+    decay: js.UndefOr[scala.Nothing],
+    momentum: js.UndefOr[scala.Nothing],
+    epsilon: js.UndefOr[scala.Nothing],
+    centered: Boolean
+  ) = this()
+  def this(
+    learningRate: Double,
+    decay: js.UndefOr[scala.Nothing],
+    momentum: js.UndefOr[scala.Nothing],
+    epsilon: Double,
+    centered: Boolean
+  ) = this()
+  def this(
+    learningRate: Double,
+    decay: js.UndefOr[scala.Nothing],
+    momentum: Double,
+    epsilon: js.UndefOr[scala.Nothing],
+    centered: Boolean
+  ) = this()
+  def this(
+    learningRate: Double,
+    decay: js.UndefOr[scala.Nothing],
+    momentum: Double,
+    epsilon: Double,
+    centered: Boolean
+  ) = this()
+  def this(
+    learningRate: Double,
+    decay: Double,
+    momentum: js.UndefOr[scala.Nothing],
+    epsilon: js.UndefOr[scala.Nothing],
+    centered: Boolean
+  ) = this()
+  def this(
+    learningRate: Double,
+    decay: Double,
+    momentum: js.UndefOr[scala.Nothing],
+    epsilon: Double,
+    centered: Boolean
+  ) = this()
+  def this(
+    learningRate: Double,
+    decay: Double,
+    momentum: Double,
+    epsilon: js.UndefOr[scala.Nothing],
+    centered: Boolean
+  ) = this()
   def this(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean) = this()
 }
 

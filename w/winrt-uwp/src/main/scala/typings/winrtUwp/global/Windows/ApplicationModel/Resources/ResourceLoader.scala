@@ -16,20 +16,6 @@ class ResourceLoader ()
     * @param name The resource identifier of the ResourceMap that the new resource loader uses for unqualified resource references. It can then retrieve resources relative to those references.
     */
   def this(name: String) = this()
-  /**
-    * Returns the most appropriate string value of a resource, specified by resource identifier, for the default ResourceContext of the view in which the ResourceLoader was obtained using ResourceLoader.GetForCurrentView .
-    * @param resource The resource identifier of the resource to be resolved.
-    * @return The most appropriate string value of the specified resource for the default ResourceContext .
-    */
-  /* CompleteClass */
-  override def getString(resource: String): String = js.native
-  /**
-    * Returns the most appropriate string value of a resource, specified by a Uniform Resource Identifier (URI) resource identifier, for the default ResourceContext of the currently running app.
-    * @param uri A URI that represents the resource to be retrieved.
-    * @return The most appropriate string value of the specified resource for the default ResourceContext .
-    */
-  /* CompleteClass */
-  override def getStringForUri(uri: Uri): String = js.native
 }
 
 /* static members */

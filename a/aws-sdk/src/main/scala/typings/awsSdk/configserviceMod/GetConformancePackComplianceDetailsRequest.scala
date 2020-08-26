@@ -26,17 +26,36 @@ trait GetConformancePackComplianceDetailsRequest extends js.Object {
 
 object GetConformancePackComplianceDetailsRequest {
   @scala.inline
-  def apply(
-    ConformancePackName: ConformancePackName,
-    Filters: ConformancePackEvaluationFilters = null,
-    Limit: js.UndefOr[GetConformancePackComplianceDetailsLimit] = js.undefined,
-    NextToken: NextToken = null
-  ): GetConformancePackComplianceDetailsRequest = {
+  def apply(ConformancePackName: ConformancePackName): GetConformancePackComplianceDetailsRequest = {
     val __obj = js.Dynamic.literal(ConformancePackName = ConformancePackName.asInstanceOf[js.Any])
-    if (Filters != null) __obj.updateDynamic("Filters")(Filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConformancePackComplianceDetailsRequest]
   }
+  @scala.inline
+  implicit class GetConformancePackComplianceDetailsRequestOps[Self <: GetConformancePackComplianceDetailsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConformancePackName(value: ConformancePackName): Self = this.set("ConformancePackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFilters(value: ConformancePackEvaluationFilters): Self = this.set("Filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("Filters", js.undefined)
+    @scala.inline
+    def setLimit(value: GetConformancePackComplianceDetailsLimit): Self = this.set("Limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("Limit", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

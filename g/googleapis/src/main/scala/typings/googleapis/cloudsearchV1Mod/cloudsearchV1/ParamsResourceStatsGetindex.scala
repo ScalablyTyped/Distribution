@@ -48,46 +48,50 @@ trait ParamsResourceStatsGetindex extends StandardParameters {
 
 object ParamsResourceStatsGetindex {
   @scala.inline
-  def apply(
-    $Dotxgafv: String = null,
-    access_token: String = null,
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    callback: String = null,
-    fields: String = null,
-    fromDateDotday: js.UndefOr[Double] = js.undefined,
-    fromDateDotmonth: js.UndefOr[Double] = js.undefined,
-    fromDateDotyear: js.UndefOr[Double] = js.undefined,
-    key: String = null,
-    oauth_token: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    quotaUser: String = null,
-    toDateDotday: js.UndefOr[Double] = js.undefined,
-    toDateDotmonth: js.UndefOr[Double] = js.undefined,
-    toDateDotyear: js.UndefOr[Double] = js.undefined,
-    uploadType: String = null,
-    upload_protocol: String = null
-  ): ParamsResourceStatsGetindex = {
+  def apply(): ParamsResourceStatsGetindex = {
     val __obj = js.Dynamic.literal()
-    if ($Dotxgafv != null) __obj.updateDynamic("$.xgafv")($Dotxgafv.asInstanceOf[js.Any])
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromDateDotday)) __obj.updateDynamic("fromDate.day")(fromDateDotday.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromDateDotmonth)) __obj.updateDynamic("fromDate.month")(fromDateDotmonth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fromDateDotyear)) __obj.updateDynamic("fromDate.year")(fromDateDotyear.get.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(toDateDotday)) __obj.updateDynamic("toDate.day")(toDateDotday.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toDateDotmonth)) __obj.updateDynamic("toDate.month")(toDateDotmonth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(toDateDotyear)) __obj.updateDynamic("toDate.year")(toDateDotyear.get.asInstanceOf[js.Any])
-    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType.asInstanceOf[js.Any])
-    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceStatsGetindex]
   }
+  @scala.inline
+  implicit class ParamsResourceStatsGetindexOps[Self <: ParamsResourceStatsGetindex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setFromDateDotday(value: Double): Self = this.set("fromDate.day", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromDateDotday: Self = this.set("fromDate.day", js.undefined)
+    @scala.inline
+    def setFromDateDotmonth(value: Double): Self = this.set("fromDate.month", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromDateDotmonth: Self = this.set("fromDate.month", js.undefined)
+    @scala.inline
+    def setFromDateDotyear(value: Double): Self = this.set("fromDate.year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFromDateDotyear: Self = this.set("fromDate.year", js.undefined)
+    @scala.inline
+    def setToDateDotday(value: Double): Self = this.set("toDate.day", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToDateDotday: Self = this.set("toDate.day", js.undefined)
+    @scala.inline
+    def setToDateDotmonth(value: Double): Self = this.set("toDate.month", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToDateDotmonth: Self = this.set("toDate.month", js.undefined)
+    @scala.inline
+    def setToDateDotyear(value: Double): Self = this.set("toDate.year", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToDateDotyear: Self = this.set("toDate.year", js.undefined)
+  }
+  
 }
 

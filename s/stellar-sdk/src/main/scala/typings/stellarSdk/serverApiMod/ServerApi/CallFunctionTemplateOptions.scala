@@ -6,20 +6,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CallFunctionTemplateOptions extends js.Object {
-  var cursor: js.UndefOr[String | Double] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var order: js.UndefOr[asc | desc] = js.undefined
+  var cursor: js.UndefOr[String | Double] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[asc | desc] = js.native
 }
 
 object CallFunctionTemplateOptions {
   @scala.inline
-  def apply(cursor: String | Double = null, limit: js.UndefOr[Double] = js.undefined, order: asc | desc = null): CallFunctionTemplateOptions = {
+  def apply(): CallFunctionTemplateOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFunctionTemplateOptions]
   }
+  @scala.inline
+  implicit class CallFunctionTemplateOptionsOps[Self <: CallFunctionTemplateOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCursor(value: String | Double): Self = this.set("cursor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCursor: Self = this.set("cursor", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setOrder(value: asc | desc): Self = this.set("order", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrder: Self = this.set("order", js.undefined)
+  }
+  
 }
 

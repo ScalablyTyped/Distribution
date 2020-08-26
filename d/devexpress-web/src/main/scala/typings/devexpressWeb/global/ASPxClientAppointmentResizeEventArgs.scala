@@ -24,30 +24,5 @@ class ASPxClientAppointmentResizeEventArgs protected ()
     oldInterval: typings.devexpressWeb.ASPxClientTimeInterval,
     newInterval: typings.devexpressWeb.ASPxClientTimeInterval
   ) = this()
-  /**
-    * Gets the resized appointment's identifier.
-    */
-  /* CompleteClass */
-  override var appointmentId: String = js.native
-  /**
-    * Gets or sets whether default event processing is required.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets the appointment's interval after resizing.
-    */
-  /* CompleteClass */
-  override var newInterval: typings.devexpressWeb.ASPxClientTimeInterval = js.native
-  /**
-    * Gets the appointment's interval before resizing.
-    */
-  /* CompleteClass */
-  override var oldInterval: typings.devexpressWeb.ASPxClientTimeInterval = js.native
-  /**
-    * Provides access to an object that enables you to choose an operation to perform.
-    */
-  /* CompleteClass */
-  override var operation: typings.devexpressWeb.ASPxClientAppointmentOperation = js.native
 }
 

@@ -17,6 +17,7 @@ object global extends js.Object {
     class TextDecoderClass ()
       extends typings.fastTextEncoding.fastTextEncoding.TextDecoderClass {
       def this(utfLabel: String) = this()
+      def this(utfLabel: js.UndefOr[scala.Nothing], options: TextDecoderOptions) = this()
       def this(utfLabel: String, options: TextDecoderOptions) = this()
     }
     

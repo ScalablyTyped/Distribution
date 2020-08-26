@@ -58,34 +58,70 @@ trait ServiceQuota extends js.Object {
 
 object ServiceQuota {
   @scala.inline
-  def apply(
-    Adjustable: js.UndefOr[QuotaAdjustable] = js.undefined,
-    ErrorReason: ErrorReason = null,
-    GlobalQuota: js.UndefOr[GlobalQuota] = js.undefined,
-    Period: QuotaPeriod = null,
-    QuotaArn: QuotaArn = null,
-    QuotaCode: QuotaCode = null,
-    QuotaName: QuotaName = null,
-    ServiceCode: ServiceCode = null,
-    ServiceName: ServiceName = null,
-    Unit: QuotaUnit = null,
-    UsageMetric: MetricInfo = null,
-    Value: js.UndefOr[QuotaValue] = js.undefined
-  ): ServiceQuota = {
+  def apply(): ServiceQuota = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(Adjustable)) __obj.updateDynamic("Adjustable")(Adjustable.get.asInstanceOf[js.Any])
-    if (ErrorReason != null) __obj.updateDynamic("ErrorReason")(ErrorReason.asInstanceOf[js.Any])
-    if (!js.isUndefined(GlobalQuota)) __obj.updateDynamic("GlobalQuota")(GlobalQuota.get.asInstanceOf[js.Any])
-    if (Period != null) __obj.updateDynamic("Period")(Period.asInstanceOf[js.Any])
-    if (QuotaArn != null) __obj.updateDynamic("QuotaArn")(QuotaArn.asInstanceOf[js.Any])
-    if (QuotaCode != null) __obj.updateDynamic("QuotaCode")(QuotaCode.asInstanceOf[js.Any])
-    if (QuotaName != null) __obj.updateDynamic("QuotaName")(QuotaName.asInstanceOf[js.Any])
-    if (ServiceCode != null) __obj.updateDynamic("ServiceCode")(ServiceCode.asInstanceOf[js.Any])
-    if (ServiceName != null) __obj.updateDynamic("ServiceName")(ServiceName.asInstanceOf[js.Any])
-    if (Unit != null) __obj.updateDynamic("Unit")(Unit.asInstanceOf[js.Any])
-    if (UsageMetric != null) __obj.updateDynamic("UsageMetric")(UsageMetric.asInstanceOf[js.Any])
-    if (!js.isUndefined(Value)) __obj.updateDynamic("Value")(Value.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceQuota]
   }
+  @scala.inline
+  implicit class ServiceQuotaOps[Self <: ServiceQuota] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdjustable(value: QuotaAdjustable): Self = this.set("Adjustable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustable: Self = this.set("Adjustable", js.undefined)
+    @scala.inline
+    def setErrorReason(value: ErrorReason): Self = this.set("ErrorReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorReason: Self = this.set("ErrorReason", js.undefined)
+    @scala.inline
+    def setGlobalQuota(value: GlobalQuota): Self = this.set("GlobalQuota", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalQuota: Self = this.set("GlobalQuota", js.undefined)
+    @scala.inline
+    def setPeriod(value: QuotaPeriod): Self = this.set("Period", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeriod: Self = this.set("Period", js.undefined)
+    @scala.inline
+    def setQuotaArn(value: QuotaArn): Self = this.set("QuotaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaArn: Self = this.set("QuotaArn", js.undefined)
+    @scala.inline
+    def setQuotaCode(value: QuotaCode): Self = this.set("QuotaCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaCode: Self = this.set("QuotaCode", js.undefined)
+    @scala.inline
+    def setQuotaName(value: QuotaName): Self = this.set("QuotaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaName: Self = this.set("QuotaName", js.undefined)
+    @scala.inline
+    def setServiceCode(value: ServiceCode): Self = this.set("ServiceCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceCode: Self = this.set("ServiceCode", js.undefined)
+    @scala.inline
+    def setServiceName(value: ServiceName): Self = this.set("ServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceName: Self = this.set("ServiceName", js.undefined)
+    @scala.inline
+    def setUnit(value: QuotaUnit): Self = this.set("Unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("Unit", js.undefined)
+    @scala.inline
+    def setUsageMetric(value: MetricInfo): Self = this.set("UsageMetric", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsageMetric: Self = this.set("UsageMetric", js.undefined)
+    @scala.inline
+    def setValue(value: QuotaValue): Self = this.set("Value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("Value", js.undefined)
+  }
+  
 }
 

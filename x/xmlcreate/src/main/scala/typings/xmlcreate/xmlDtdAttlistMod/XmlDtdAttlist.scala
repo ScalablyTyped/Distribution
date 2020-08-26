@@ -16,7 +16,7 @@ trait XmlDtdAttlist[Parent] extends js.Object {
   /**
     * Sets the text of this entity declaration.
     */
-  def charData(charData: String): js.Any = js.native
+  def charData_=(charData: String): Unit = js.native
   /**
     * Returns the parent of this entity declaration.
     */

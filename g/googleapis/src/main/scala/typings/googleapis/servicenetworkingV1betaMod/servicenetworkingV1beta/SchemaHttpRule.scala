@@ -217,30 +217,64 @@ trait SchemaHttpRule extends js.Object {
 
 object SchemaHttpRule {
   @scala.inline
-  def apply(
-    additionalBindings: js.Array[SchemaHttpRule] = null,
-    body: String = null,
-    custom: SchemaCustomHttpPattern = null,
-    delete: String = null,
-    get: String = null,
-    patch: String = null,
-    post: String = null,
-    put: String = null,
-    responseBody: String = null,
-    selector: String = null
-  ): SchemaHttpRule = {
+  def apply(): SchemaHttpRule = {
     val __obj = js.Dynamic.literal()
-    if (additionalBindings != null) __obj.updateDynamic("additionalBindings")(additionalBindings.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (delete != null) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(get.asInstanceOf[js.Any])
-    if (patch != null) __obj.updateDynamic("patch")(patch.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
-    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
-    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHttpRule]
   }
+  @scala.inline
+  implicit class SchemaHttpRuleOps[Self <: SchemaHttpRule] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalBindingsVarargs(value: SchemaHttpRule*): Self = this.set("additionalBindings", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalBindings(value: js.Array[SchemaHttpRule]): Self = this.set("additionalBindings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalBindings: Self = this.set("additionalBindings", js.undefined)
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBody: Self = this.set("body", js.undefined)
+    @scala.inline
+    def setCustom(value: SchemaCustomHttpPattern): Self = this.set("custom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustom: Self = this.set("custom", js.undefined)
+    @scala.inline
+    def setDelete(value: String): Self = this.set("delete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelete: Self = this.set("delete", js.undefined)
+    @scala.inline
+    def setGet(value: String): Self = this.set("get", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGet: Self = this.set("get", js.undefined)
+    @scala.inline
+    def setPatch(value: String): Self = this.set("patch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePatch: Self = this.set("patch", js.undefined)
+    @scala.inline
+    def setPost(value: String): Self = this.set("post", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePost: Self = this.set("post", js.undefined)
+    @scala.inline
+    def setPut(value: String): Self = this.set("put", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePut: Self = this.set("put", js.undefined)
+    @scala.inline
+    def setResponseBody(value: String): Self = this.set("responseBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseBody: Self = this.set("responseBody", js.undefined)
+    @scala.inline
+    def setSelector(value: String): Self = this.set("selector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelector: Self = this.set("selector", js.undefined)
+  }
+  
 }
 

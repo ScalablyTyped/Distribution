@@ -12,7 +12,7 @@ Reads / writes floats / doubles from / to buffers in both modern and ancient bro
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 27 |
-| # downloads        | 54148827 |
+| # downloads        | 56928396 |
 | # stars            | 0 |
 
 ## Links

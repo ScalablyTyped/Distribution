@@ -10,9 +10,9 @@ A read/write lock for evented operations.
 | ------------------ | :-------------: |
 | Full name          | sequester |
 | Keywords           | cadence, concurrency, lock, mutex, transaction, database, evented, cadence |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 3 |
-| # downloads        | 7254 |
+| # downloads        | 5883 |
 | # stars            | 0 |
 
 ## Links

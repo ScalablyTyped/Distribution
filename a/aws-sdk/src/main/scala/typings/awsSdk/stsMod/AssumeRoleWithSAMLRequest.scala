@@ -34,19 +34,42 @@ trait AssumeRoleWithSAMLRequest extends js.Object {
 
 object AssumeRoleWithSAMLRequest {
   @scala.inline
-  def apply(
-    PrincipalArn: arnType,
-    RoleArn: arnType,
-    SAMLAssertion: SAMLAssertionType,
-    DurationSeconds: js.UndefOr[roleDurationSecondsType] = js.undefined,
-    Policy: sessionPolicyDocumentType = null,
-    PolicyArns: policyDescriptorListType = null
-  ): AssumeRoleWithSAMLRequest = {
+  def apply(PrincipalArn: arnType, RoleArn: arnType, SAMLAssertion: SAMLAssertionType): AssumeRoleWithSAMLRequest = {
     val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], SAMLAssertion = SAMLAssertion.asInstanceOf[js.Any])
-    if (!js.isUndefined(DurationSeconds)) __obj.updateDynamic("DurationSeconds")(DurationSeconds.get.asInstanceOf[js.Any])
-    if (Policy != null) __obj.updateDynamic("Policy")(Policy.asInstanceOf[js.Any])
-    if (PolicyArns != null) __obj.updateDynamic("PolicyArns")(PolicyArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssumeRoleWithSAMLRequest]
   }
+  @scala.inline
+  implicit class AssumeRoleWithSAMLRequestOps[Self <: AssumeRoleWithSAMLRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPrincipalArn(value: arnType): Self = this.set("PrincipalArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: arnType): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSAMLAssertion(value: SAMLAssertionType): Self = this.set("SAMLAssertion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDurationSeconds(value: roleDurationSecondsType): Self = this.set("DurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationSeconds: Self = this.set("DurationSeconds", js.undefined)
+    @scala.inline
+    def setPolicy(value: sessionPolicyDocumentType): Self = this.set("Policy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicy: Self = this.set("Policy", js.undefined)
+    @scala.inline
+    def setPolicyArnsVarargs(value: PolicyDescriptorType*): Self = this.set("PolicyArns", js.Array(value :_*))
+    @scala.inline
+    def setPolicyArns(value: policyDescriptorListType): Self = this.set("PolicyArns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyArns: Self = this.set("PolicyArns", js.undefined)
+  }
+  
 }
 

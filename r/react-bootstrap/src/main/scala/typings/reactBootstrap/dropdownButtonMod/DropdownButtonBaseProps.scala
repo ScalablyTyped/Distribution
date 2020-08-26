@@ -1,62 +1,66 @@
 package typings.reactBootstrap.dropdownButtonMod
 
 import typings.react.mod.ReactNode
-import typings.react.mod.ReactType
 import typings.reactBootstrap.dropdownMod.DropdownBaseProps
-import typings.reactBootstrap.mod.SelectCallback
 import typings.reactBootstrap.mod.Sizes
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DropdownButtonBaseProps extends DropdownBaseProps {
-  var block: js.UndefOr[Boolean] = js.undefined
-  var bsSize: js.UndefOr[Sizes] = js.undefined
-  var bsStyle: js.UndefOr[String | Null] = js.undefined
-  var navItem: js.UndefOr[Boolean] = js.undefined
-  var noCaret: js.UndefOr[Boolean] = js.undefined
-  var title: ReactNode
+  var block: js.UndefOr[Boolean] = js.native
+  var bsSize: js.UndefOr[Sizes] = js.native
+  var bsStyle: js.UndefOr[String | Null] = js.native
+  var navItem: js.UndefOr[Boolean] = js.native
+  var noCaret: js.UndefOr[Boolean] = js.native
+  var title: ReactNode = js.native
 }
 
 object DropdownButtonBaseProps {
   @scala.inline
-  def apply(
-    id: String,
-    block: js.UndefOr[Boolean] = js.undefined,
-    bsClass: String = null,
-    bsSize: Sizes = null,
-    bsStyle: js.UndefOr[Null | String] = js.undefined,
-    componentClass: ReactType[_] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dropup: js.UndefOr[Boolean] = js.undefined,
-    navItem: js.UndefOr[Boolean] = js.undefined,
-    noCaret: js.UndefOr[Boolean] = js.undefined,
-    onClose: js.Function = null,
-    onSelect: SelectCallback = null,
-    onToggle: /* isOpen */ Boolean => Unit = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    pullRight: js.UndefOr[Boolean] = js.undefined,
-    role: String = null,
-    title: ReactNode = null
-  ): DropdownButtonBaseProps = {
+  def apply(id: String): DropdownButtonBaseProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.get.asInstanceOf[js.Any])
-    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass.asInstanceOf[js.Any])
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(bsStyle)) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(navItem)) __obj.updateDynamic("navItem")(navItem.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCaret)) __obj.updateDynamic("noCaret")(noCaret.get.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
-    if (onToggle != null) __obj.updateDynamic("onToggle")(js.Any.fromFunction1(onToggle))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.get.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropdownButtonBaseProps]
   }
+  @scala.inline
+  implicit class DropdownButtonBasePropsOps[Self <: DropdownButtonBaseProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBlock(value: Boolean): Self = this.set("block", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlock: Self = this.set("block", js.undefined)
+    @scala.inline
+    def setBsSize(value: Sizes): Self = this.set("bsSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsSize: Self = this.set("bsSize", js.undefined)
+    @scala.inline
+    def setBsStyle(value: String): Self = this.set("bsStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBsStyle: Self = this.set("bsStyle", js.undefined)
+    @scala.inline
+    def setBsStyleNull: Self = this.set("bsStyle", null)
+    @scala.inline
+    def setNavItem(value: Boolean): Self = this.set("navItem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavItem: Self = this.set("navItem", js.undefined)
+    @scala.inline
+    def setNoCaret(value: Boolean): Self = this.set("noCaret", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoCaret: Self = this.set("noCaret", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

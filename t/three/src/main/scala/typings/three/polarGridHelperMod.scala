@@ -1,7 +1,10 @@
 package typings.three
 
+import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.colorMod.Color
+import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
+import typings.three.materialMod.Material
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,11 +13,36 @@ import scala.scalajs.js.annotation._
 @js.native
 object polarGridHelperMod extends js.Object {
   @js.native
-  class PolarGridHelper protected () extends LineSegments {
+  class PolarGridHelper protected ()
+    extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {
     def this(radius: Double, radials: Double, circles: Double, divisions: Double) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: String) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Double) = this()
     def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Color) = this()
+    def this(
+      radius: Double,
+      radials: Double,
+      circles: Double,
+      divisions: Double,
+      color1: js.UndefOr[scala.Nothing],
+      color2: String
+    ) = this()
+    def this(
+      radius: Double,
+      radials: Double,
+      circles: Double,
+      divisions: Double,
+      color1: js.UndefOr[scala.Nothing],
+      color2: Double
+    ) = this()
+    def this(
+      radius: Double,
+      radials: Double,
+      circles: Double,
+      divisions: Double,
+      color1: js.UndefOr[scala.Nothing],
+      color2: Color
+    ) = this()
     def this(
       radius: Double,
       radials: Double,

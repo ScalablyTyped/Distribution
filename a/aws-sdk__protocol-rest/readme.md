@@ -12,7 +12,7 @@ Provides a marshaller and unmarshaller for the AWS REST protocol
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 138 |
-| # downloads        | 8775 |
+| # downloads        | 10958 |
 | # stars            | 0 |
 
 ## Links

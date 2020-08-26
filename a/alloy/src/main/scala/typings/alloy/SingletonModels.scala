@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SingletonModels
   extends /* key */ StringDictionary[js.Any] {
   /**
@@ -15,18 +16,29 @@ trait SingletonModels
     *
     * @param name The name of the base model for the model.
     */
-  def instance(name: String): Model[_, ModelSetOptions]
+  def instance(name: String): Model[_, ModelSetOptions] = js.native
 }
 
 object SingletonModels {
   @scala.inline
-  def apply(
-    instance: String => Model[_, ModelSetOptions],
-    StringDictionary: /* name */ StringDictionary[js.Any] = null
-  ): SingletonModels = {
+  def apply(instance: String => Model[_, ModelSetOptions]): SingletonModels = {
     val __obj = js.Dynamic.literal(instance = js.Any.fromFunction1(instance))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SingletonModels]
   }
+  @scala.inline
+  implicit class SingletonModelsOps[Self <: SingletonModels] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInstance(value: String => Model[_, ModelSetOptions]): Self = this.set("instance", js.Any.fromFunction1(value))
+  }
+  
 }
 

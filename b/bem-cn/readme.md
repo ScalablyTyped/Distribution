@@ -12,7 +12,7 @@ Friendly BEM class names generator, greate for React
 | Keywords           | BEM, React, class, classname, block, element, modifier |
 | # releases         | 5 |
 | # dependents       | 19 |
-| # downloads        | 206577 |
+| # downloads        | 204647 |
 | # stars            | 2 |
 
 ## Links

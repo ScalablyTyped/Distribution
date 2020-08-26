@@ -125,11 +125,11 @@ trait JQuery extends js.Object {
   @JSName("dropdown")
   var dropdown_Original: Dropdown = js.native
   def dropdown(): JQuery = js.native
-  def dropdown(behavior: setting, name: `match`): both | value | text = js.native
+  def dropdown(behavior: setting, name: `match`, value: js.UndefOr[scala.Nothing]): both | value | text = js.native
   def dropdown(behavior: setting, name: `match`, value: both): JQuery = js.native
   def dropdown(behavior: setting, name: `match`, value: text): JQuery = js.native
   def dropdown(behavior: setting, name: `match`, value: value): JQuery = js.native
-  def dropdown(behavior: setting, name: action): activate | select | combo | nothing | hide | (js.ThisFunction3[
+  def dropdown(behavior: setting, name: action, value: js.UndefOr[scala.Nothing]): activate | select | combo | nothing | hide | (js.ThisFunction3[
     /* this */ JQuery, 
     /* text */ String, 
     /* value */ String | `false`, 
@@ -152,68 +152,58 @@ trait JQuery extends js.Object {
   def dropdown(behavior: setting, name: action, value: hide): JQuery = js.native
   def dropdown(behavior: setting, name: action, value: nothing): JQuery = js.native
   def dropdown(behavior: setting, name: action, value: select): JQuery = js.native
-  def dropdown(behavior: setting, name: allowAdditions): Boolean = js.native
+  def dropdown(behavior: setting, name: allowAdditions, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: allowAdditions, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: allowCategorySelection): Boolean = js.native
+  def dropdown(behavior: setting, name: allowCategorySelection, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: allowCategorySelection, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: allowReselection): Boolean = js.native
+  def dropdown(behavior: setting, name: allowReselection, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: allowReselection, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: allowTab): Boolean = js.native
+  def dropdown(behavior: setting, name: allowTab, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: allowTab, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: apiSettings): `false` | ApiSettings = js.native
-  def dropdown(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
+  def dropdown(behavior: setting, name: apiSettings, value: js.UndefOr[scala.Nothing]): `false` | ApiSettings = js.native
   def dropdown(behavior: setting, name: apiSettings, value: `false`): JQuery = js.native
-  def dropdown(behavior: setting, name: className): ClassNameSettings = js.native
-  def dropdown(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: context): String | JQuery = js.native
+  def dropdown(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  def dropdown(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
   def dropdown(behavior: setting, name: context, value: String): JQuery = js.native
   def dropdown(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def dropdown(behavior: setting, name: debug): Boolean = js.native
+  def dropdown(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: delay): DelaySettings = js.native
-  def dropdown(behavior: setting, name: delay, value: DelaySettings): JQuery = js.native
-  def dropdown(behavior: setting, name: direction): auto | upward | downward = js.native
+  def dropdown(behavior: setting, name: delay, value: js.UndefOr[scala.Nothing]): DelaySettings = js.native
+  def dropdown(behavior: setting, name: direction, value: js.UndefOr[scala.Nothing]): auto | upward | downward = js.native
   def dropdown(behavior: setting, name: direction, value: auto): JQuery = js.native
   def dropdown(behavior: setting, name: direction, value: downward): JQuery = js.native
   def dropdown(behavior: setting, name: direction, value: upward): JQuery = js.native
-  def dropdown(behavior: setting, name: duration): Double = js.native
+  def dropdown(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
   def dropdown(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def dropdown(behavior: setting, name: error): ErrorSettings = js.native
-  def dropdown(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: fields): FieldsSettings = js.native
-  def dropdown(behavior: setting, name: fields, value: FieldsSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: filterRemoteData): Boolean = js.native
+  def dropdown(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+  def dropdown(behavior: setting, name: fields, value: js.UndefOr[scala.Nothing]): FieldsSettings = js.native
+  def dropdown(behavior: setting, name: filterRemoteData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: filterRemoteData, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: forceSelection): Boolean = js.native
+  def dropdown(behavior: setting, name: forceSelection, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: forceSelection, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: fullTextSearch): Boolean | exact = js.native
+  def dropdown(behavior: setting, name: fullTextSearch, value: js.UndefOr[scala.Nothing]): Boolean | exact = js.native
   def dropdown(behavior: setting, name: fullTextSearch, value: Boolean): JQuery = js.native
   def dropdown(behavior: setting, name: fullTextSearch, value: exact): JQuery = js.native
-  def dropdown(behavior: setting, name: glyphWidth): Double = js.native
+  def dropdown(behavior: setting, name: glyphWidth, value: js.UndefOr[scala.Nothing]): Double = js.native
   def dropdown(behavior: setting, name: glyphWidth, value: Double): JQuery = js.native
-  def dropdown(behavior: setting, name: hideAdditions): Boolean = js.native
+  def dropdown(behavior: setting, name: hideAdditions, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: hideAdditions, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: keepOnScreen): Boolean = js.native
+  def dropdown(behavior: setting, name: keepOnScreen, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: keepOnScreen, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: keys): KeySettings = js.native
-  def dropdown(behavior: setting, name: keys, value: KeySettings): JQuery = js.native
-  def dropdown(behavior: setting, name: label): LabelSettings = js.native
-  def dropdown(behavior: setting, name: label, value: LabelSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: maxSelections): `false` | Double = js.native
+  def dropdown(behavior: setting, name: keys, value: js.UndefOr[scala.Nothing]): KeySettings = js.native
+  def dropdown(behavior: setting, name: label, value: js.UndefOr[scala.Nothing]): LabelSettings = js.native
+  def dropdown(behavior: setting, name: maxSelections, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
   def dropdown(behavior: setting, name: maxSelections, value: Double): JQuery = js.native
   def dropdown(behavior: setting, name: maxSelections, value: `false`): JQuery = js.native
-  def dropdown(behavior: setting, name: message): MessageSettings = js.native
-  def dropdown(behavior: setting, name: message, value: MessageSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: metadata): MetadataSettings = js.native
-  def dropdown(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: minCharacters): Double = js.native
+  def dropdown(behavior: setting, name: message, value: js.UndefOr[scala.Nothing]): MessageSettings = js.native
+  def dropdown(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
+  def dropdown(behavior: setting, name: minCharacters, value: js.UndefOr[scala.Nothing]): Double = js.native
   def dropdown(behavior: setting, name: minCharacters, value: Double): JQuery = js.native
-  def dropdown(behavior: setting, name: name): String = js.native
-  def dropdown(behavior: setting, name: namespace): String = js.native
+  def dropdown(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
   def dropdown(behavior: setting, name: namespace, value: String): JQuery = js.native
+  def dropdown(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
   def dropdown(behavior: setting, name: name, value: String): JQuery = js.native
-  def dropdown(behavior: setting, name: on): String = js.native
-  def dropdown(behavior: setting, name: onAdd): js.ThisFunction3[
+  def dropdown(behavior: setting, name: onAdd, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
     /* this */ JQuery, 
     /* addedValue */ js.Any, 
     /* addedText */ String, 
@@ -231,39 +221,39 @@ trait JQuery extends js.Object {
       Unit
     ]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onChange): js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit] = js.native
+  def dropdown(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit] = js.native
   def dropdown(
     behavior: setting,
     name: onChange,
     value: js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onHide): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
+  def dropdown(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
   def dropdown(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): JQuery = js.native
-  def dropdown(behavior: setting, name: onLabelCreate): js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery] = js.native
+  def dropdown(behavior: setting, name: onLabelCreate, value: js.UndefOr[scala.Nothing]): js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery] = js.native
   def dropdown(
     behavior: setting,
     name: onLabelCreate,
     value: js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onLabelRemove): js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit] = js.native
+  def dropdown(behavior: setting, name: onLabelRemove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit] = js.native
   def dropdown(
     behavior: setting,
     name: onLabelRemove,
     value: js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onLabelSelect): js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit] = js.native
+  def dropdown(behavior: setting, name: onLabelSelect, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit] = js.native
   def dropdown(
     behavior: setting,
     name: onLabelSelect,
     value: js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onNoResults): js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit] = js.native
+  def dropdown(behavior: setting, name: onNoResults, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit] = js.native
   def dropdown(
     behavior: setting,
     name: onNoResults,
     value: js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onRemove): js.ThisFunction3[
+  def dropdown(behavior: setting, name: onRemove, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
     /* this */ JQuery, 
     /* removedValue */ js.Any, 
     /* removedText */ String, 
@@ -281,45 +271,65 @@ trait JQuery extends js.Object {
       Unit
     ]
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: onShow): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
+  def dropdown(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, `false` | Unit] = js.native
   def dropdown(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, `false` | Unit]): JQuery = js.native
+  def dropdown(behavior: setting, name: on, value: js.UndefOr[scala.Nothing]): String = js.native
   def dropdown(behavior: setting, name: on, value: String): JQuery = js.native
-  def dropdown(behavior: setting, name: performance): Boolean = js.native
+  def dropdown(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: placeholder): auto | value | `false` = js.native
+  def dropdown(behavior: setting, name: placeholder, value: js.UndefOr[scala.Nothing]): auto | value | `false` = js.native
   def dropdown(behavior: setting, name: placeholder, value: `false`): JQuery = js.native
   def dropdown(behavior: setting, name: placeholder, value: auto): JQuery = js.native
   def dropdown(behavior: setting, name: placeholder, value: value): JQuery = js.native
-  def dropdown(behavior: setting, name: preserveHTML): Boolean = js.native
+  def dropdown(behavior: setting, name: preserveHTML, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: preserveHTML, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: regExp): RegExpSettings = js.native
+  def dropdown(behavior: setting, name: regExp, value: js.UndefOr[scala.Nothing]): RegExpSettings = js.native
   def dropdown(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: saveRemoteData): Boolean = js.native
+  def dropdown(behavior: setting, name: saveRemoteData, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: saveRemoteData, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: selectOnKeydown): Boolean = js.native
+  def dropdown(behavior: setting, name: selectOnKeydown, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: selectOnKeydown, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: selector): SelectorSettings = js.native
-  def dropdown(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  def dropdown(behavior: setting, name: showOnFocus): Boolean = js.native
+  def dropdown(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+  def dropdown(behavior: setting, name: showOnFocus, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: showOnFocus, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: silent): Boolean = js.native
+  def dropdown(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: sortSelect): Boolean = js.native
+  def dropdown(behavior: setting, name: sortSelect, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: sortSelect, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: transition): auto | String = js.native
+  def dropdown(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): auto | String = js.native
   def dropdown(behavior: setting, name: transition, value: String): JQuery = js.native
   def dropdown(behavior: setting, name: transition, value: auto): JQuery = js.native
-  def dropdown(behavior: setting, name: useLabels): Boolean = js.native
+  def dropdown(behavior: setting, name: useLabels, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: useLabels, value: Boolean): JQuery = js.native
-  def dropdown(behavior: setting, name: values): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl['values'] */ js.Any = js.native
+  def dropdown(behavior: setting, name: values, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl['values'] */ js.Any = js.native
   def dropdown(
     behavior: setting,
     name: values,
     value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl['values'] */ js.Any
   ): JQuery = js.native
-  def dropdown(behavior: setting, name: verbose): Boolean = js.native
+  def dropdown(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
   def dropdown(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
   def dropdown(settings: DropdownSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: delay, value: DelaySettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: fields, value: FieldsSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: keys, value: KeySettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: label, value: LabelSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: message, value: MessageSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
+  @JSName("dropdown")
+  def dropdown_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
   /**
     * Binds a click to document to determine if you click away from a dropdown
     */

@@ -1,595 +1,391 @@
 package typings.csstype.mod
 
+import typings.csstype.mod.Property.All
+import typings.csstype.mod.Property.Animation
+import typings.csstype.mod.Property.Background
+import typings.csstype.mod.Property.Border
+import typings.csstype.mod.Property.BorderBlock
+import typings.csstype.mod.Property.BorderBlockEnd
+import typings.csstype.mod.Property.BorderBlockStart
+import typings.csstype.mod.Property.BorderBottom
+import typings.csstype.mod.Property.BorderColor
+import typings.csstype.mod.Property.BorderImage
+import typings.csstype.mod.Property.BorderInline
+import typings.csstype.mod.Property.BorderInlineEnd
+import typings.csstype.mod.Property.BorderInlineStart
+import typings.csstype.mod.Property.BorderLeft
+import typings.csstype.mod.Property.BorderRadius
+import typings.csstype.mod.Property.BorderRight
+import typings.csstype.mod.Property.BorderStyle
+import typings.csstype.mod.Property.BorderTop
+import typings.csstype.mod.Property.BorderWidth
+import typings.csstype.mod.Property.ColumnRule
+import typings.csstype.mod.Property.Columns
+import typings.csstype.mod.Property.Flex
+import typings.csstype.mod.Property.FlexFlow
+import typings.csstype.mod.Property.Font
+import typings.csstype.mod.Property.Gap
+import typings.csstype.mod.Property.Grid
+import typings.csstype.mod.Property.GridArea
+import typings.csstype.mod.Property.GridColumn
+import typings.csstype.mod.Property.GridRow
+import typings.csstype.mod.Property.GridTemplate
+import typings.csstype.mod.Property.LineClamp
+import typings.csstype.mod.Property.ListStyle
+import typings.csstype.mod.Property.Margin
+import typings.csstype.mod.Property.Mask
+import typings.csstype.mod.Property.MaskBorder
+import typings.csstype.mod.Property.Offset
+import typings.csstype.mod.Property.Outline
+import typings.csstype.mod.Property.Overflow
+import typings.csstype.mod.Property.Padding
+import typings.csstype.mod.Property.PlaceItems
+import typings.csstype.mod.Property.PlaceSelf
+import typings.csstype.mod.Property.TextDecoration
+import typings.csstype.mod.Property.TextEmphasis
+import typings.csstype.mod.Property.Transition
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
-  /**
-    * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
-    *
-    * **Initial value**: There is no practical initial value for it.
-    *
-    * | Chrome | Firefox | Safari  | Edge | IE  |
-    * | :----: | :-----: | :-----: | :--: | :-: |
-    * | **37** | **27**  | **9.1** |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/all
-    */
-  var all: js.UndefOr[Globals | js.Array[Globals]] = js.undefined
-  /**
-    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
-    *
-    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
-    * | :-----: | :-----: | :-----: | :----: | :----: |
-    * | **43**  | **16**  |  **9**  | **12** | **10** |
-    * | 3 _-x-_ | 5 _-x-_ | 4 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/animation
-    */
-  var animation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
-  /**
-    * The **`background`** shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/background
-    */
-  var background: js.UndefOr[BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]]] = js.undefined
-  /**
-    * The **`border`** CSS property sets an element's border. It's a shorthand for `border-width`, `border-style`, and `border-color`.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border
-    */
-  var border: js.UndefOr[BorderProperty[TLength] | js.Array[BorderProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-block`** CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet.
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **66**  |   No   |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-block
-    */
-  var borderBlock: js.UndefOr[BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **41**  | **12.1** |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end
-    */
-  var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-block-start`** CSS property is a shorthand property for setting the individual logical block-start border property values in a single place in the style sheet.
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **41**  | **12.1** |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start
-    */
-  var borderBlockStart: js.UndefOr[BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-bottom`** CSS property is a shorthand that sets the values of `border-bottom-width`, `border-bottom-style` and `border-bottom-color`. These properties set an element's bottom border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-bottom
-    */
-  var borderBottom: js.UndefOr[BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-color`** shorthand CSS property sets the color of all sides of an element's border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-color
-    */
-  var borderColor: js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]] = js.undefined
-  /**
-    * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
-    *
-    * | Chrome  |  Firefox  | Safari  |  Edge  |   IE   |
-    * | :-----: | :-------: | :-----: | :----: | :----: |
-    * | **16**  |  **15**   |  **6**  | **12** | **11** |
-    * | 7 _-x-_ | 3.5 _-x-_ | 3 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-image
-    */
-  var borderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
-  /**
-    * The **`border-inline`** CSS property is a shorthand property for setting the individual logical inline border property values in a single place in the style sheet.
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **66**  |   No   |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline
-    */
-  var borderInline: js.UndefOr[BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **41**  | **12.1** |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end
-    */
-  var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-inline-start`** CSS property is a shorthand property for setting the individual logical inline-start border property values in a single place in the style sheet.
-    *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * | **69** | **41**  | **12.1** |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start
-    */
-  var borderInlineStart: js.UndefOr[
-    BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]]
-  ] = js.undefined
-  /**
-    * The **`border-left`** CSS property is a shorthand that sets the values of `border-left-width`, `border-left-style` and `border-left-color`. These properties set an element's left border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-left
-    */
-  var borderLeft: js.UndefOr[BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
-    *
-    * | Chrome  | Firefox | Safari  |  Edge  |  IE   |
-    * | :-----: | :-----: | :-----: | :----: | :---: |
-    * |  **4**  |  **4**  |  **5**  | **12** | **9** |
-    * | 1 _-x-_ |         | 3 _-x-_ |        |       |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-radius
-    */
-  var borderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-right`** CSS property is a shorthand that sets the values of `border-right-width`, `border-right-style` and `border-right-color`. These properties set an element's right border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |   IE    |
-    * | :----: | :-----: | :----: | :----: | :-----: |
-    * | **1**  |  **1**  | **1**  | **12** | **5.5** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-right
-    */
-  var borderRight: js.UndefOr[BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-style`** CSS property is a shorthand property that sets the line style for all four sides of an element's border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-style
-    */
-  var borderStyle: js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]] = js.undefined
-  /**
-    * The **`border-top`** CSS property is a shorthand that sets the values of `border-top-width`, `border-top-style` and `border-top-color`. These properties set an element's top border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-top
-    */
-  var borderTop: js.UndefOr[BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]]] = js.undefined
-  /**
-    * The **`border-width`** shorthand CSS property sets the widths of all four sides of an element's border.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/border-width
-    */
-  var borderWidth: js.UndefOr[BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]]] = js.undefined
-  /**
-    * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
-    *
-    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
-    * | :-----: | :-----: | :-----: | :----: | :----: |
-    * | **50**  | **52**  |  **9**  | **12** | **10** |
-    * | 1 _-x-_ |         | 3 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/column-rule
-    */
-  var columnRule: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
-  /**
-    * The **`columns`** CSS property sets the column width and column count of an element.
-    *
-    * | Chrome | Firefox | Safari  |  Edge  |   IE   |
-    * | :----: | :-----: | :-----: | :----: | :----: |
-    * | **50** | **52**  |  **9**  | **12** | **10** |
-    * |        |         | 3 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/columns
-    */
-  var columns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
-  /**
-    * The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
-    *
-    * |  Chrome  | Firefox |  Safari   |  Edge  |    IE    |
-    * | :------: | :-----: | :-------: | :----: | :------: |
-    * |  **29**  | **20**  |   **9**   | **12** |  **11**  |
-    * | 21 _-x-_ |         | 6.1 _-x-_ |        | 10 _-x-_ |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/flex
-    */
-  var flex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
-  /**
-    * The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties.
-    *
-    * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
-    * | :------: | :-----: | :-------: | :----: | :----: |
-    * |  **29**  | **28**  |   **9**   | **12** | **11** |
-    * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/flex-flow
-    */
-  var flexFlow: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
-  /**
-    * The **`font`** CSS property is a shorthand for `font-style`, `font-variant`, `font-weight`, `font-size`, `line-height`, and `font-family`. Alternatively, it sets an element's font to a system font.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **3** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/font
-    */
-  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.undefined
-  /**
-    * The **`gap`** CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
-    *
-    * ---
-    *
-    * _Supported in Flex Layout_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **63**  |   No   |  No  | No  |
-    *
-    * ---
-    *
-    * _Supported in Grid Layout_
-    *
-    * |     Chrome      |     Firefox     |        Safari         |  Edge  | IE  |
-    * | :-------------: | :-------------: | :-------------------: | :----: | :-: |
-    * |     **66**      |     **61**      | **10.1** _(grid-gap)_ | **16** | No  |
-    * | 57 _(grid-gap)_ | 52 _(grid-gap)_ |                       |        |     |
-    *
-    * ---
-    *
-    * _Supported in Multi-column Layout_
-    *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **66** | **61**  |   No   | **16** | No  |
-    *
-    * ---
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/gap
-    */
-  var gap: js.UndefOr[GapProperty[TLength] | js.Array[GapProperty[TLength]]] = js.undefined
-  /**
-    * The **`grid`** CSS property is a shorthand property that sets all of the explicit grid properties (`grid-template-rows`, `grid-template-columns`, and `grid-template-areas`), and all the implicit grid properties (`grid-auto-rows`, `grid-auto-columns`, and `grid-auto-flow`), in a single declaration.
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid
-    */
-  var grid: js.UndefOr[GridProperty | js.Array[GridProperty]] = js.undefined
-  /**
-    * The **`grid-area`** CSS property is a shorthand property for `grid-row-start`, `grid-column-start`, `grid-row-end` and `grid-column-end`, specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the edges of its grid area.
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-area
-    */
-  var gridArea: js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]] = js.undefined
-  /**
-    * The **`grid-column`** CSS property is a shorthand property for `grid-column-start` and `grid-column-end` specifying a grid item's size and location within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-column
-    */
-  var gridColumn: js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]] = js.undefined
-  /**
-    * The **`grid-row`** CSS property is a shorthand property for `grid-row-start` and `grid-row-end` specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-row
-    */
-  var gridRow: js.UndefOr[GridRowProperty | js.Array[GridRowProperty]] = js.undefined
-  /**
-    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
-    *
-    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/grid-template
-    */
-  var gridTemplate: js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]] = js.undefined
-  /** **Initial value**: `none` */
-  var lineClamp: js.UndefOr[LineClampProperty | js.Array[LineClampProperty]] = js.undefined
-  /**
-    * The **`list-style`** CSS property is a shorthand to set list style properties `list-style-type`, `list-style-image`, and `list-style-position`.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/list-style
-    */
-  var listStyle: js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]] = js.undefined
-  /**
-    * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **3** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/margin
-    */
-  var margin: js.UndefOr[MarginProperty[TLength] | js.Array[MarginProperty[TLength]]] = js.undefined
-  /**
-    * The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points.
-    *
-    * | Chrome | Firefox | Safari  |  Edge  | IE  |
-    * | :----: | :-----: | :-----: | :----: | :-: |
-    * | **1**  |  **2**  | **3.2** | **12** | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/mask
-    */
-  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
-  /** The **`mask-border`** CSS property lets you create a mask along the edge of an element's border. */
-  var maskBorder: js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]] = js.undefined
-  /**
-    * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
-    *
-    * |    Chrome     | Firefox | Safari | Edge | IE  |
-    * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     | **72**  |   No   |  No  | No  |
-    * | 46 _(motion)_ |         |        |      |     |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/offset
-    */
-  var motion: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
-  /**
-    * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
-    *
-    * |    Chrome     | Firefox | Safari | Edge | IE  |
-    * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     | **72**  |   No   |  No  | No  |
-    * | 46 _(motion)_ |         |        |      |     |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/offset
-    */
-  var offset: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
-  /**
-    * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
-    *
-    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
-    * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **1**  | **1.5** | **1.2** | **12** | **8** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/outline
-    */
-  var outline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.undefined
-  /**
-    * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **4** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/padding
-    */
-  var padding: js.UndefOr[PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]]] = js.undefined
-  /**
-    * The CSS **`place-items`** shorthand property sets the `align-items` and `justify-items` properties, respectively. If the second value is not set, the first value is also used for it.
-    *
-    * ---
-    *
-    * _Supported in Flex Layout_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  | **11** |  No  | No  |
-    *
-    * ---
-    *
-    * _Supported in Grid Layout_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  | **11** |  No  | No  |
-    *
-    * ---
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/place-items
-    */
-  var placeItems: js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]] = js.undefined
-  /**
-    * The **`place-self`** CSS property is a shorthand property sets both the `align-self` and `justify-self` properties. The first value is the `align-self` property value, the second the `justify-self` one. If the second value is not present, the first value is also used for it.
-    *
-    * ---
-    *
-    * _Supported in Flex Layout_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |   No   |  No  | No  |
-    *
-    * ---
-    *
-    * _Supported in Grid Layout_
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |   No   |  No  | No  |
-    *
-    * ---
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/place-self
-    */
-  var placeSelf: js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]] = js.undefined
-  /**
-    * The **`text-decoration`** CSS property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, and `text-decoration-style`.
-    *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **1**  | **12** | **3** |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/text-decoration
-    */
-  var textDecoration: js.UndefOr[TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]]] = js.undefined
-  /**
-    * The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`.
-    *
-    * | Chrome | Firefox | Safari  | Edge | IE  |
-    * | :----: | :-----: | :-----: | :--: | :-: |
-    * | **25** | **46**  | **6.1** |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/text-emphasis
-    */
-  var textEmphasis: js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]] = js.undefined
-  /**
-    * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
-    *
-    * | Chrome  | Firefox |  Safari   |  Edge  |   IE   |
-    * | :-----: | :-----: | :-------: | :----: | :----: |
-    * | **26**  | **16**  |   **9**   | **12** | **10** |
-    * | 1 _-x-_ | 4 _-x-_ | 3.1 _-x-_ |        |        |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/transition
-    */
-  var transition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
+/* Inlined {[ P in keyof csstype.csstype.StandardShorthandProperties<TLength, TTime> ]: csstype.csstype.StandardShorthandProperties<TLength, TTime>[P] | std.Array<csstype.csstype.StandardShorthandProperties<TLength, TTime>[P]>} */
+@js.native
+trait StandardShorthandPropertiesFallback[TLength, TTime] extends js.Object {
+  var all: js.UndefOr[All | js.Array[js.UndefOr[All]]] = js.native
+  var animation: js.UndefOr[Animation[TTime] | js.Array[js.UndefOr[Animation[TTime]]]] = js.native
+  var background: js.UndefOr[Background[TLength] | js.Array[js.UndefOr[Background[TLength]]]] = js.native
+  var border: js.UndefOr[Border[TLength] | js.Array[js.UndefOr[Border[TLength]]]] = js.native
+  var borderBlock: js.UndefOr[BorderBlock[TLength] | js.Array[js.UndefOr[BorderBlock[TLength]]]] = js.native
+  var borderBlockEnd: js.UndefOr[BorderBlockEnd[TLength] | js.Array[js.UndefOr[BorderBlockEnd[TLength]]]] = js.native
+  var borderBlockStart: js.UndefOr[BorderBlockStart[TLength] | js.Array[js.UndefOr[BorderBlockStart[TLength]]]] = js.native
+  var borderBottom: js.UndefOr[BorderBottom[TLength] | js.Array[js.UndefOr[BorderBottom[TLength]]]] = js.native
+  var borderColor: js.UndefOr[BorderColor | js.Array[js.UndefOr[BorderColor]]] = js.native
+  var borderImage: js.UndefOr[BorderImage | js.Array[js.UndefOr[BorderImage]]] = js.native
+  var borderInline: js.UndefOr[BorderInline[TLength] | js.Array[js.UndefOr[BorderInline[TLength]]]] = js.native
+  var borderInlineEnd: js.UndefOr[BorderInlineEnd[TLength] | js.Array[js.UndefOr[BorderInlineEnd[TLength]]]] = js.native
+  var borderInlineStart: js.UndefOr[BorderInlineStart[TLength] | js.Array[js.UndefOr[BorderInlineStart[TLength]]]] = js.native
+  var borderLeft: js.UndefOr[BorderLeft[TLength] | js.Array[js.UndefOr[BorderLeft[TLength]]]] = js.native
+  var borderRadius: js.UndefOr[BorderRadius[TLength] | js.Array[js.UndefOr[BorderRadius[TLength]]]] = js.native
+  var borderRight: js.UndefOr[BorderRight[TLength] | js.Array[js.UndefOr[BorderRight[TLength]]]] = js.native
+  var borderStyle: js.UndefOr[BorderStyle | js.Array[js.UndefOr[BorderStyle]]] = js.native
+  var borderTop: js.UndefOr[BorderTop[TLength] | js.Array[js.UndefOr[BorderTop[TLength]]]] = js.native
+  var borderWidth: js.UndefOr[BorderWidth[TLength] | js.Array[js.UndefOr[BorderWidth[TLength]]]] = js.native
+  var columnRule: js.UndefOr[ColumnRule[TLength] | js.Array[js.UndefOr[ColumnRule[TLength]]]] = js.native
+  var columns: js.UndefOr[Columns[TLength] | js.Array[js.UndefOr[Columns[TLength]]]] = js.native
+  var flex: js.UndefOr[Flex[TLength] | js.Array[js.UndefOr[Flex[TLength]]]] = js.native
+  var flexFlow: js.UndefOr[FlexFlow | js.Array[js.UndefOr[FlexFlow]]] = js.native
+  var font: js.UndefOr[Font | js.Array[js.UndefOr[Font]]] = js.native
+  var gap: js.UndefOr[Gap[TLength] | js.Array[js.UndefOr[Gap[TLength]]]] = js.native
+  var grid: js.UndefOr[Grid | js.Array[js.UndefOr[Grid]]] = js.native
+  var gridArea: js.UndefOr[GridArea | js.Array[js.UndefOr[GridArea]]] = js.native
+  var gridColumn: js.UndefOr[GridColumn | js.Array[js.UndefOr[GridColumn]]] = js.native
+  var gridRow: js.UndefOr[GridRow | js.Array[js.UndefOr[GridRow]]] = js.native
+  var gridTemplate: js.UndefOr[GridTemplate | js.Array[js.UndefOr[GridTemplate]]] = js.native
+  var lineClamp: js.UndefOr[LineClamp | js.Array[js.UndefOr[LineClamp]]] = js.native
+  var listStyle: js.UndefOr[ListStyle | js.Array[js.UndefOr[ListStyle]]] = js.native
+  var margin: js.UndefOr[Margin[TLength] | js.Array[js.UndefOr[Margin[TLength]]]] = js.native
+  var mask: js.UndefOr[Mask[TLength] | js.Array[js.UndefOr[Mask[TLength]]]] = js.native
+  var maskBorder: js.UndefOr[MaskBorder | js.Array[js.UndefOr[MaskBorder]]] = js.native
+  var motion: js.UndefOr[Offset[TLength] | js.Array[js.UndefOr[Offset[TLength]]]] = js.native
+  var offset: js.UndefOr[Offset[TLength] | js.Array[js.UndefOr[Offset[TLength]]]] = js.native
+  var outline: js.UndefOr[Outline[TLength] | js.Array[js.UndefOr[Outline[TLength]]]] = js.native
+  var overflow: js.UndefOr[Overflow | js.Array[js.UndefOr[Overflow]]] = js.native
+  var padding: js.UndefOr[Padding[TLength] | js.Array[js.UndefOr[Padding[TLength]]]] = js.native
+  var placeItems: js.UndefOr[PlaceItems | js.Array[js.UndefOr[PlaceItems]]] = js.native
+  var placeSelf: js.UndefOr[PlaceSelf | js.Array[js.UndefOr[PlaceSelf]]] = js.native
+  var textDecoration: js.UndefOr[TextDecoration[TLength] | js.Array[js.UndefOr[TextDecoration[TLength]]]] = js.native
+  var textEmphasis: js.UndefOr[TextEmphasis | js.Array[js.UndefOr[TextEmphasis]]] = js.native
+  var transition: js.UndefOr[Transition[TTime] | js.Array[js.UndefOr[Transition[TTime]]]] = js.native
 }
 
 object StandardShorthandPropertiesFallback {
   @scala.inline
-  def apply[TLength](
-    all: Globals | js.Array[Globals] = null,
-    animation: AnimationProperty | js.Array[AnimationProperty] = null,
-    background: BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]] = null,
-    border: BorderProperty[TLength] | js.Array[BorderProperty[TLength]] = null,
-    borderBlock: BorderBlockProperty[TLength] | js.Array[BorderBlockProperty[TLength]] = null,
-    borderBlockEnd: BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]] = null,
-    borderBlockStart: BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]] = null,
-    borderBottom: BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]] = null,
-    borderColor: BorderColorProperty | js.Array[BorderColorProperty] = null,
-    borderImage: BorderImageProperty | js.Array[BorderImageProperty] = null,
-    borderInline: BorderInlineProperty[TLength] | js.Array[BorderInlineProperty[TLength]] = null,
-    borderInlineEnd: BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]] = null,
-    borderInlineStart: BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]] = null,
-    borderLeft: BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]] = null,
-    borderRadius: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]] = null,
-    borderRight: BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]] = null,
-    borderStyle: BorderStyleProperty | js.Array[BorderStyleProperty] = null,
-    borderTop: BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]] = null,
-    borderWidth: BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]] = null,
-    columnRule: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
-    columns: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
-    flex: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
-    flexFlow: FlexFlowProperty | js.Array[FlexFlowProperty] = null,
-    font: FontProperty | js.Array[FontProperty] = null,
-    gap: GapProperty[TLength] | js.Array[GapProperty[TLength]] = null,
-    grid: GridProperty | js.Array[GridProperty] = null,
-    gridArea: GridAreaProperty | js.Array[GridAreaProperty] = null,
-    gridColumn: GridColumnProperty | js.Array[GridColumnProperty] = null,
-    gridRow: GridRowProperty | js.Array[GridRowProperty] = null,
-    gridTemplate: GridTemplateProperty | js.Array[GridTemplateProperty] = null,
-    lineClamp: LineClampProperty | js.Array[LineClampProperty] = null,
-    listStyle: ListStyleProperty | js.Array[ListStyleProperty] = null,
-    margin: MarginProperty[TLength] | js.Array[MarginProperty[TLength]] = null,
-    mask: MaskProperty[TLength] | js.Array[MaskProperty[TLength]] = null,
-    maskBorder: MaskBorderProperty | js.Array[MaskBorderProperty] = null,
-    motion: OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]] = null,
-    offset: OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]] = null,
-    outline: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]] = null,
-    padding: PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]] = null,
-    placeItems: PlaceItemsProperty | js.Array[PlaceItemsProperty] = null,
-    placeSelf: PlaceSelfProperty | js.Array[PlaceSelfProperty] = null,
-    textDecoration: TextDecorationProperty[TLength] | js.Array[TextDecorationProperty[TLength]] = null,
-    textEmphasis: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
-    transition: TransitionProperty | js.Array[TransitionProperty] = null
-  ): StandardShorthandPropertiesFallback[TLength] = {
+  def apply[TLength, TTime](): StandardShorthandPropertiesFallback[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderBlock != null) __obj.updateDynamic("borderBlock")(borderBlock.asInstanceOf[js.Any])
-    if (borderBlockEnd != null) __obj.updateDynamic("borderBlockEnd")(borderBlockEnd.asInstanceOf[js.Any])
-    if (borderBlockStart != null) __obj.updateDynamic("borderBlockStart")(borderBlockStart.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderImage != null) __obj.updateDynamic("borderImage")(borderImage.asInstanceOf[js.Any])
-    if (borderInline != null) __obj.updateDynamic("borderInline")(borderInline.asInstanceOf[js.Any])
-    if (borderInlineEnd != null) __obj.updateDynamic("borderInlineEnd")(borderInlineEnd.asInstanceOf[js.Any])
-    if (borderInlineStart != null) __obj.updateDynamic("borderInlineStart")(borderInlineStart.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (columnRule != null) __obj.updateDynamic("columnRule")(columnRule.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexFlow != null) __obj.updateDynamic("flexFlow")(flexFlow.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
-    if (gridRow != null) __obj.updateDynamic("gridRow")(gridRow.asInstanceOf[js.Any])
-    if (gridTemplate != null) __obj.updateDynamic("gridTemplate")(gridTemplate.asInstanceOf[js.Any])
-    if (lineClamp != null) __obj.updateDynamic("lineClamp")(lineClamp.asInstanceOf[js.Any])
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maskBorder != null) __obj.updateDynamic("maskBorder")(maskBorder.asInstanceOf[js.Any])
-    if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (placeItems != null) __obj.updateDynamic("placeItems")(placeItems.asInstanceOf[js.Any])
-    if (placeSelf != null) __obj.updateDynamic("placeSelf")(placeSelf.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (textEmphasis != null) __obj.updateDynamic("textEmphasis")(textEmphasis.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StandardShorthandPropertiesFallback[TLength]]
+    __obj.asInstanceOf[StandardShorthandPropertiesFallback[TLength, TTime]]
   }
+  @scala.inline
+  implicit class StandardShorthandPropertiesFallbackOps[Self <: StandardShorthandPropertiesFallback[_, _], TLength, TTime] (val x: Self with (StandardShorthandPropertiesFallback[TLength, TTime])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllVarargs(value: js.UndefOr[All]*): Self = this.set("all", js.Array(value :_*))
+    @scala.inline
+    def setAll(value: All | js.Array[js.UndefOr[All]]): Self = this.set("all", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAll: Self = this.set("all", js.undefined)
+    @scala.inline
+    def setAnimationVarargs(value: js.UndefOr[Animation[TTime]]*): Self = this.set("animation", js.Array(value :_*))
+    @scala.inline
+    def setAnimation(value: Animation[TTime] | js.Array[js.UndefOr[Animation[TTime]]]): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setBackgroundVarargs(value: js.UndefOr[Background[TLength]]*): Self = this.set("background", js.Array(value :_*))
+    @scala.inline
+    def setBackground(value: Background[TLength] | js.Array[js.UndefOr[Background[TLength]]]): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBorderVarargs(value: js.UndefOr[Border[TLength]]*): Self = this.set("border", js.Array(value :_*))
+    @scala.inline
+    def setBorder(value: Border[TLength] | js.Array[js.UndefOr[Border[TLength]]]): Self = this.set("border", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorder: Self = this.set("border", js.undefined)
+    @scala.inline
+    def setBorderBlockVarargs(value: js.UndefOr[BorderBlock[TLength]]*): Self = this.set("borderBlock", js.Array(value :_*))
+    @scala.inline
+    def setBorderBlock(value: BorderBlock[TLength] | js.Array[js.UndefOr[BorderBlock[TLength]]]): Self = this.set("borderBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderBlock: Self = this.set("borderBlock", js.undefined)
+    @scala.inline
+    def setBorderBlockEndVarargs(value: js.UndefOr[BorderBlockEnd[TLength]]*): Self = this.set("borderBlockEnd", js.Array(value :_*))
+    @scala.inline
+    def setBorderBlockEnd(value: BorderBlockEnd[TLength] | js.Array[js.UndefOr[BorderBlockEnd[TLength]]]): Self = this.set("borderBlockEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderBlockEnd: Self = this.set("borderBlockEnd", js.undefined)
+    @scala.inline
+    def setBorderBlockStartVarargs(value: js.UndefOr[BorderBlockStart[TLength]]*): Self = this.set("borderBlockStart", js.Array(value :_*))
+    @scala.inline
+    def setBorderBlockStart(value: BorderBlockStart[TLength] | js.Array[js.UndefOr[BorderBlockStart[TLength]]]): Self = this.set("borderBlockStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderBlockStart: Self = this.set("borderBlockStart", js.undefined)
+    @scala.inline
+    def setBorderBottomVarargs(value: js.UndefOr[BorderBottom[TLength]]*): Self = this.set("borderBottom", js.Array(value :_*))
+    @scala.inline
+    def setBorderBottom(value: BorderBottom[TLength] | js.Array[js.UndefOr[BorderBottom[TLength]]]): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
+    @scala.inline
+    def setBorderColorVarargs(value: js.UndefOr[BorderColor]*): Self = this.set("borderColor", js.Array(value :_*))
+    @scala.inline
+    def setBorderColor(value: BorderColor | js.Array[js.UndefOr[BorderColor]]): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    @scala.inline
+    def setBorderImageVarargs(value: js.UndefOr[BorderImage]*): Self = this.set("borderImage", js.Array(value :_*))
+    @scala.inline
+    def setBorderImage(value: BorderImage | js.Array[js.UndefOr[BorderImage]]): Self = this.set("borderImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderImage: Self = this.set("borderImage", js.undefined)
+    @scala.inline
+    def setBorderInlineVarargs(value: js.UndefOr[BorderInline[TLength]]*): Self = this.set("borderInline", js.Array(value :_*))
+    @scala.inline
+    def setBorderInline(value: BorderInline[TLength] | js.Array[js.UndefOr[BorderInline[TLength]]]): Self = this.set("borderInline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderInline: Self = this.set("borderInline", js.undefined)
+    @scala.inline
+    def setBorderInlineEndVarargs(value: js.UndefOr[BorderInlineEnd[TLength]]*): Self = this.set("borderInlineEnd", js.Array(value :_*))
+    @scala.inline
+    def setBorderInlineEnd(value: BorderInlineEnd[TLength] | js.Array[js.UndefOr[BorderInlineEnd[TLength]]]): Self = this.set("borderInlineEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderInlineEnd: Self = this.set("borderInlineEnd", js.undefined)
+    @scala.inline
+    def setBorderInlineStartVarargs(value: js.UndefOr[BorderInlineStart[TLength]]*): Self = this.set("borderInlineStart", js.Array(value :_*))
+    @scala.inline
+    def setBorderInlineStart(value: BorderInlineStart[TLength] | js.Array[js.UndefOr[BorderInlineStart[TLength]]]): Self = this.set("borderInlineStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderInlineStart: Self = this.set("borderInlineStart", js.undefined)
+    @scala.inline
+    def setBorderLeftVarargs(value: js.UndefOr[BorderLeft[TLength]]*): Self = this.set("borderLeft", js.Array(value :_*))
+    @scala.inline
+    def setBorderLeft(value: BorderLeft[TLength] | js.Array[js.UndefOr[BorderLeft[TLength]]]): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
+    @scala.inline
+    def setBorderRadiusVarargs(value: js.UndefOr[BorderRadius[TLength]]*): Self = this.set("borderRadius", js.Array(value :_*))
+    @scala.inline
+    def setBorderRadius(value: BorderRadius[TLength] | js.Array[js.UndefOr[BorderRadius[TLength]]]): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    @scala.inline
+    def setBorderRightVarargs(value: js.UndefOr[BorderRight[TLength]]*): Self = this.set("borderRight", js.Array(value :_*))
+    @scala.inline
+    def setBorderRight(value: BorderRight[TLength] | js.Array[js.UndefOr[BorderRight[TLength]]]): Self = this.set("borderRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
+    @scala.inline
+    def setBorderStyleVarargs(value: js.UndefOr[BorderStyle]*): Self = this.set("borderStyle", js.Array(value :_*))
+    @scala.inline
+    def setBorderStyle(value: BorderStyle | js.Array[js.UndefOr[BorderStyle]]): Self = this.set("borderStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderStyle: Self = this.set("borderStyle", js.undefined)
+    @scala.inline
+    def setBorderTopVarargs(value: js.UndefOr[BorderTop[TLength]]*): Self = this.set("borderTop", js.Array(value :_*))
+    @scala.inline
+    def setBorderTop(value: BorderTop[TLength] | js.Array[js.UndefOr[BorderTop[TLength]]]): Self = this.set("borderTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
+    @scala.inline
+    def setBorderWidthVarargs(value: js.UndefOr[BorderWidth[TLength]]*): Self = this.set("borderWidth", js.Array(value :_*))
+    @scala.inline
+    def setBorderWidth(value: BorderWidth[TLength] | js.Array[js.UndefOr[BorderWidth[TLength]]]): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    @scala.inline
+    def setColumnRuleVarargs(value: js.UndefOr[ColumnRule[TLength]]*): Self = this.set("columnRule", js.Array(value :_*))
+    @scala.inline
+    def setColumnRule(value: ColumnRule[TLength] | js.Array[js.UndefOr[ColumnRule[TLength]]]): Self = this.set("columnRule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnRule: Self = this.set("columnRule", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: js.UndefOr[Columns[TLength]]*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: Columns[TLength] | js.Array[js.UndefOr[Columns[TLength]]]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setFlexVarargs(value: js.UndefOr[Flex[TLength]]*): Self = this.set("flex", js.Array(value :_*))
+    @scala.inline
+    def setFlex(value: Flex[TLength] | js.Array[js.UndefOr[Flex[TLength]]]): Self = this.set("flex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlex: Self = this.set("flex", js.undefined)
+    @scala.inline
+    def setFlexFlowVarargs(value: js.UndefOr[FlexFlow]*): Self = this.set("flexFlow", js.Array(value :_*))
+    @scala.inline
+    def setFlexFlow(value: FlexFlow | js.Array[js.UndefOr[FlexFlow]]): Self = this.set("flexFlow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlexFlow: Self = this.set("flexFlow", js.undefined)
+    @scala.inline
+    def setFontVarargs(value: js.UndefOr[Font]*): Self = this.set("font", js.Array(value :_*))
+    @scala.inline
+    def setFont(value: Font | js.Array[js.UndefOr[Font]]): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setGapVarargs(value: js.UndefOr[Gap[TLength]]*): Self = this.set("gap", js.Array(value :_*))
+    @scala.inline
+    def setGap(value: Gap[TLength] | js.Array[js.UndefOr[Gap[TLength]]]): Self = this.set("gap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGap: Self = this.set("gap", js.undefined)
+    @scala.inline
+    def setGridVarargs(value: js.UndefOr[Grid]*): Self = this.set("grid", js.Array(value :_*))
+    @scala.inline
+    def setGrid(value: Grid | js.Array[js.UndefOr[Grid]]): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setGridAreaVarargs(value: js.UndefOr[GridArea]*): Self = this.set("gridArea", js.Array(value :_*))
+    @scala.inline
+    def setGridArea(value: GridArea | js.Array[js.UndefOr[GridArea]]): Self = this.set("gridArea", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridArea: Self = this.set("gridArea", js.undefined)
+    @scala.inline
+    def setGridColumnVarargs(value: js.UndefOr[GridColumn]*): Self = this.set("gridColumn", js.Array(value :_*))
+    @scala.inline
+    def setGridColumn(value: GridColumn | js.Array[js.UndefOr[GridColumn]]): Self = this.set("gridColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridColumn: Self = this.set("gridColumn", js.undefined)
+    @scala.inline
+    def setGridRowVarargs(value: js.UndefOr[GridRow]*): Self = this.set("gridRow", js.Array(value :_*))
+    @scala.inline
+    def setGridRow(value: GridRow | js.Array[js.UndefOr[GridRow]]): Self = this.set("gridRow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridRow: Self = this.set("gridRow", js.undefined)
+    @scala.inline
+    def setGridTemplateVarargs(value: js.UndefOr[GridTemplate]*): Self = this.set("gridTemplate", js.Array(value :_*))
+    @scala.inline
+    def setGridTemplate(value: GridTemplate | js.Array[js.UndefOr[GridTemplate]]): Self = this.set("gridTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridTemplate: Self = this.set("gridTemplate", js.undefined)
+    @scala.inline
+    def setLineClampVarargs(value: js.UndefOr[LineClamp]*): Self = this.set("lineClamp", js.Array(value :_*))
+    @scala.inline
+    def setLineClamp(value: LineClamp | js.Array[js.UndefOr[LineClamp]]): Self = this.set("lineClamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineClamp: Self = this.set("lineClamp", js.undefined)
+    @scala.inline
+    def setListStyleVarargs(value: js.UndefOr[ListStyle]*): Self = this.set("listStyle", js.Array(value :_*))
+    @scala.inline
+    def setListStyle(value: ListStyle | js.Array[js.UndefOr[ListStyle]]): Self = this.set("listStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListStyle: Self = this.set("listStyle", js.undefined)
+    @scala.inline
+    def setMarginVarargs(value: js.UndefOr[Margin[TLength]]*): Self = this.set("margin", js.Array(value :_*))
+    @scala.inline
+    def setMargin(value: Margin[TLength] | js.Array[js.UndefOr[Margin[TLength]]]): Self = this.set("margin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMargin: Self = this.set("margin", js.undefined)
+    @scala.inline
+    def setMaskVarargs(value: js.UndefOr[Mask[TLength]]*): Self = this.set("mask", js.Array(value :_*))
+    @scala.inline
+    def setMask(value: Mask[TLength] | js.Array[js.UndefOr[Mask[TLength]]]): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskBorderVarargs(value: js.UndefOr[MaskBorder]*): Self = this.set("maskBorder", js.Array(value :_*))
+    @scala.inline
+    def setMaskBorder(value: MaskBorder | js.Array[js.UndefOr[MaskBorder]]): Self = this.set("maskBorder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskBorder: Self = this.set("maskBorder", js.undefined)
+    @scala.inline
+    def setMotionVarargs(value: js.UndefOr[Offset[TLength]]*): Self = this.set("motion", js.Array(value :_*))
+    @scala.inline
+    def setMotion(value: Offset[TLength] | js.Array[js.UndefOr[Offset[TLength]]]): Self = this.set("motion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMotion: Self = this.set("motion", js.undefined)
+    @scala.inline
+    def setOffsetVarargs(value: js.UndefOr[Offset[TLength]]*): Self = this.set("offset", js.Array(value :_*))
+    @scala.inline
+    def setOffset(value: Offset[TLength] | js.Array[js.UndefOr[Offset[TLength]]]): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setOutlineVarargs(value: js.UndefOr[Outline[TLength]]*): Self = this.set("outline", js.Array(value :_*))
+    @scala.inline
+    def setOutline(value: Outline[TLength] | js.Array[js.UndefOr[Outline[TLength]]]): Self = this.set("outline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutline: Self = this.set("outline", js.undefined)
+    @scala.inline
+    def setOverflowVarargs(value: js.UndefOr[Overflow]*): Self = this.set("overflow", js.Array(value :_*))
+    @scala.inline
+    def setOverflow(value: Overflow | js.Array[js.UndefOr[Overflow]]): Self = this.set("overflow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverflow: Self = this.set("overflow", js.undefined)
+    @scala.inline
+    def setPaddingVarargs(value: js.UndefOr[Padding[TLength]]*): Self = this.set("padding", js.Array(value :_*))
+    @scala.inline
+    def setPadding(value: Padding[TLength] | js.Array[js.UndefOr[Padding[TLength]]]): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setPlaceItemsVarargs(value: js.UndefOr[PlaceItems]*): Self = this.set("placeItems", js.Array(value :_*))
+    @scala.inline
+    def setPlaceItems(value: PlaceItems | js.Array[js.UndefOr[PlaceItems]]): Self = this.set("placeItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceItems: Self = this.set("placeItems", js.undefined)
+    @scala.inline
+    def setPlaceSelfVarargs(value: js.UndefOr[PlaceSelf]*): Self = this.set("placeSelf", js.Array(value :_*))
+    @scala.inline
+    def setPlaceSelf(value: PlaceSelf | js.Array[js.UndefOr[PlaceSelf]]): Self = this.set("placeSelf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaceSelf: Self = this.set("placeSelf", js.undefined)
+    @scala.inline
+    def setTextDecorationVarargs(value: js.UndefOr[TextDecoration[TLength]]*): Self = this.set("textDecoration", js.Array(value :_*))
+    @scala.inline
+    def setTextDecoration(value: TextDecoration[TLength] | js.Array[js.UndefOr[TextDecoration[TLength]]]): Self = this.set("textDecoration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextDecoration: Self = this.set("textDecoration", js.undefined)
+    @scala.inline
+    def setTextEmphasisVarargs(value: js.UndefOr[TextEmphasis]*): Self = this.set("textEmphasis", js.Array(value :_*))
+    @scala.inline
+    def setTextEmphasis(value: TextEmphasis | js.Array[js.UndefOr[TextEmphasis]]): Self = this.set("textEmphasis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextEmphasis: Self = this.set("textEmphasis", js.undefined)
+    @scala.inline
+    def setTransitionVarargs(value: js.UndefOr[Transition[TTime]]*): Self = this.set("transition", js.Array(value :_*))
+    @scala.inline
+    def setTransition(value: Transition[TTime] | js.Array[js.UndefOr[Transition[TTime]]]): Self = this.set("transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransition: Self = this.set("transition", js.undefined)
+  }
+  
 }
 

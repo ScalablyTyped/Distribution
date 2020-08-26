@@ -32,6 +32,7 @@ class ResourceWatermarks protected () extends js.Object {
     */
   def set(): GaxiosPromise[Unit] = js.native
   def set(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def set(params: ParamsResourceWatermarksSet): GaxiosPromise[Unit] = js.native
   def set(params: ParamsResourceWatermarksSet, callback: BodyResponseCallback[Unit]): Unit = js.native
   def set(
@@ -56,6 +57,7 @@ class ResourceWatermarks protected () extends js.Object {
     */
   def unset(): GaxiosPromise[Unit] = js.native
   def unset(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def unset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unset(params: ParamsResourceWatermarksUnset): GaxiosPromise[Unit] = js.native
   def unset(params: ParamsResourceWatermarksUnset, callback: BodyResponseCallback[Unit]): Unit = js.native
   def unset(

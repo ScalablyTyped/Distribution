@@ -9,27 +9,25 @@ import scala.scalajs.js.annotation._
 class Color ()
   extends typings.phaser.spine.Color {
   def this(r: Double) = this()
+  def this(r: js.UndefOr[scala.Nothing], g: Double) = this()
   def this(r: Double, g: Double) = this()
+  def this(r: js.UndefOr[scala.Nothing], g: js.UndefOr[scala.Nothing], b: Double) = this()
+  def this(r: js.UndefOr[scala.Nothing], g: Double, b: Double) = this()
+  def this(r: Double, g: js.UndefOr[scala.Nothing], b: Double) = this()
   def this(r: Double, g: Double, b: Double) = this()
+  def this(
+    r: js.UndefOr[scala.Nothing],
+    g: js.UndefOr[scala.Nothing],
+    b: js.UndefOr[scala.Nothing],
+    a: Double
+  ) = this()
+  def this(r: js.UndefOr[scala.Nothing], g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
+  def this(r: js.UndefOr[scala.Nothing], g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
+  def this(r: js.UndefOr[scala.Nothing], g: Double, b: Double, a: Double) = this()
+  def this(r: Double, g: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], a: Double) = this()
+  def this(r: Double, g: js.UndefOr[scala.Nothing], b: Double, a: Double) = this()
+  def this(r: Double, g: Double, b: js.UndefOr[scala.Nothing], a: Double) = this()
   def this(r: Double, g: Double, b: Double, a: Double) = this()
-  /* CompleteClass */
-  override var a: Double = js.native
-  /* CompleteClass */
-  override var b: Double = js.native
-  /* CompleteClass */
-  override var g: Double = js.native
-  /* CompleteClass */
-  override var r: Double = js.native
-  /* CompleteClass */
-  override def add(r: Double, g: Double, b: Double, a: Double): this.type = js.native
-  /* CompleteClass */
-  override def clamp(): this.type = js.native
-  /* CompleteClass */
-  override def set(r: Double, g: Double, b: Double, a: Double): this.type = js.native
-  /* CompleteClass */
-  override def setFromColor(c: typings.phaser.spine.Color): this.type = js.native
-  /* CompleteClass */
-  override def setFromString(hex: String): this.type = js.native
 }
 
 /* static members */

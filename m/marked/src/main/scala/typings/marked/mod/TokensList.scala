@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Array<marked.marked.Token> & {  links  :{[key: string] : {  href  :string | null,   title  :string | null}}} */
+/* Inlined std.Array<marked.marked.Token> & {  links :{[key: string] : {  href :string | null,   title :string | null}}} */
 @js.native
 trait TokensList extends /* n */ NumberDictionary[Token] {
   /** Iterator */
@@ -69,6 +69,7 @@ trait TokensList extends /* n */ NumberDictionary[Token] {
     * length+end.
     */
   def fill(value: Token): this.type = js.native
+  def fill(value: Token, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: Token, start: Double): this.type = js.native
   def fill(value: Token, start: Double, end: Double): this.type = js.native
   /**
@@ -331,6 +332,7 @@ trait TokensList extends /* n */ NumberDictionary[Token] {
     * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
     */
   def slice(): js.Array[Token] = js.native
+  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Token] = js.native
   def slice(start: Double): js.Array[Token] = js.native
   def slice(start: Double, end: Double): js.Array[Token] = js.native
   /**

@@ -122,46 +122,127 @@ object AutoScalingGroup {
     DesiredCapacity: AutoScalingGroupDesiredCapacity,
     HealthCheckType: XmlStringMaxLen32,
     MaxSize: AutoScalingGroupMaxSize,
-    MinSize: AutoScalingGroupMinSize,
-    AutoScalingGroupARN: ResourceName = null,
-    EnabledMetrics: EnabledMetrics = null,
-    HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined,
-    Instances: Instances = null,
-    LaunchConfigurationName: XmlStringMaxLen255 = null,
-    LaunchTemplate: LaunchTemplateSpecification = null,
-    LoadBalancerNames: LoadBalancerNames = null,
-    MaxInstanceLifetime: js.UndefOr[MaxInstanceLifetime] = js.undefined,
-    MixedInstancesPolicy: MixedInstancesPolicy = null,
-    NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined,
-    PlacementGroup: XmlStringMaxLen255 = null,
-    ServiceLinkedRoleARN: ResourceName = null,
-    Status: XmlStringMaxLen255 = null,
-    SuspendedProcesses: SuspendedProcesses = null,
-    Tags: TagDescriptionList = null,
-    TargetGroupARNs: TargetGroupARNs = null,
-    TerminationPolicies: TerminationPolicies = null,
-    VPCZoneIdentifier: XmlStringMaxLen2047 = null
+    MinSize: AutoScalingGroupMinSize
   ): AutoScalingGroup = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], AvailabilityZones = AvailabilityZones.asInstanceOf[js.Any], CreatedTime = CreatedTime.asInstanceOf[js.Any], DefaultCooldown = DefaultCooldown.asInstanceOf[js.Any], DesiredCapacity = DesiredCapacity.asInstanceOf[js.Any], HealthCheckType = HealthCheckType.asInstanceOf[js.Any], MaxSize = MaxSize.asInstanceOf[js.Any], MinSize = MinSize.asInstanceOf[js.Any])
-    if (AutoScalingGroupARN != null) __obj.updateDynamic("AutoScalingGroupARN")(AutoScalingGroupARN.asInstanceOf[js.Any])
-    if (EnabledMetrics != null) __obj.updateDynamic("EnabledMetrics")(EnabledMetrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(HealthCheckGracePeriod)) __obj.updateDynamic("HealthCheckGracePeriod")(HealthCheckGracePeriod.get.asInstanceOf[js.Any])
-    if (Instances != null) __obj.updateDynamic("Instances")(Instances.asInstanceOf[js.Any])
-    if (LaunchConfigurationName != null) __obj.updateDynamic("LaunchConfigurationName")(LaunchConfigurationName.asInstanceOf[js.Any])
-    if (LaunchTemplate != null) __obj.updateDynamic("LaunchTemplate")(LaunchTemplate.asInstanceOf[js.Any])
-    if (LoadBalancerNames != null) __obj.updateDynamic("LoadBalancerNames")(LoadBalancerNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxInstanceLifetime)) __obj.updateDynamic("MaxInstanceLifetime")(MaxInstanceLifetime.get.asInstanceOf[js.Any])
-    if (MixedInstancesPolicy != null) __obj.updateDynamic("MixedInstancesPolicy")(MixedInstancesPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(NewInstancesProtectedFromScaleIn)) __obj.updateDynamic("NewInstancesProtectedFromScaleIn")(NewInstancesProtectedFromScaleIn.get.asInstanceOf[js.Any])
-    if (PlacementGroup != null) __obj.updateDynamic("PlacementGroup")(PlacementGroup.asInstanceOf[js.Any])
-    if (ServiceLinkedRoleARN != null) __obj.updateDynamic("ServiceLinkedRoleARN")(ServiceLinkedRoleARN.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SuspendedProcesses != null) __obj.updateDynamic("SuspendedProcesses")(SuspendedProcesses.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (TargetGroupARNs != null) __obj.updateDynamic("TargetGroupARNs")(TargetGroupARNs.asInstanceOf[js.Any])
-    if (TerminationPolicies != null) __obj.updateDynamic("TerminationPolicies")(TerminationPolicies.asInstanceOf[js.Any])
-    if (VPCZoneIdentifier != null) __obj.updateDynamic("VPCZoneIdentifier")(VPCZoneIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroup]
   }
+  @scala.inline
+  implicit class AutoScalingGroupOps[Self <: AutoScalingGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = this.set("AutoScalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailabilityZonesVarargs(value: XmlStringMaxLen255*): Self = this.set("AvailabilityZones", js.Array(value :_*))
+    @scala.inline
+    def setAvailabilityZones(value: AvailabilityZones): Self = this.set("AvailabilityZones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCreatedTime(value: TimestampType): Self = this.set("CreatedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDefaultCooldown(value: Cooldown): Self = this.set("DefaultCooldown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDesiredCapacity(value: AutoScalingGroupDesiredCapacity): Self = this.set("DesiredCapacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setHealthCheckType(value: XmlStringMaxLen32): Self = this.set("HealthCheckType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxSize(value: AutoScalingGroupMaxSize): Self = this.set("MaxSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMinSize(value: AutoScalingGroupMinSize): Self = this.set("MinSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAutoScalingGroupARN(value: ResourceName): Self = this.set("AutoScalingGroupARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoScalingGroupARN: Self = this.set("AutoScalingGroupARN", js.undefined)
+    @scala.inline
+    def setEnabledMetricsVarargs(value: EnabledMetric*): Self = this.set("EnabledMetrics", js.Array(value :_*))
+    @scala.inline
+    def setEnabledMetrics(value: EnabledMetrics): Self = this.set("EnabledMetrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledMetrics: Self = this.set("EnabledMetrics", js.undefined)
+    @scala.inline
+    def setHealthCheckGracePeriod(value: HealthCheckGracePeriod): Self = this.set("HealthCheckGracePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHealthCheckGracePeriod: Self = this.set("HealthCheckGracePeriod", js.undefined)
+    @scala.inline
+    def setInstancesVarargs(value: Instance*): Self = this.set("Instances", js.Array(value :_*))
+    @scala.inline
+    def setInstances(value: Instances): Self = this.set("Instances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstances: Self = this.set("Instances", js.undefined)
+    @scala.inline
+    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = this.set("LaunchConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchConfigurationName: Self = this.set("LaunchConfigurationName", js.undefined)
+    @scala.inline
+    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = this.set("LaunchTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLaunchTemplate: Self = this.set("LaunchTemplate", js.undefined)
+    @scala.inline
+    def setLoadBalancerNamesVarargs(value: XmlStringMaxLen255*): Self = this.set("LoadBalancerNames", js.Array(value :_*))
+    @scala.inline
+    def setLoadBalancerNames(value: LoadBalancerNames): Self = this.set("LoadBalancerNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerNames: Self = this.set("LoadBalancerNames", js.undefined)
+    @scala.inline
+    def setMaxInstanceLifetime(value: MaxInstanceLifetime): Self = this.set("MaxInstanceLifetime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxInstanceLifetime: Self = this.set("MaxInstanceLifetime", js.undefined)
+    @scala.inline
+    def setMixedInstancesPolicy(value: MixedInstancesPolicy): Self = this.set("MixedInstancesPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixedInstancesPolicy: Self = this.set("MixedInstancesPolicy", js.undefined)
+    @scala.inline
+    def setNewInstancesProtectedFromScaleIn(value: InstanceProtected): Self = this.set("NewInstancesProtectedFromScaleIn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNewInstancesProtectedFromScaleIn: Self = this.set("NewInstancesProtectedFromScaleIn", js.undefined)
+    @scala.inline
+    def setPlacementGroup(value: XmlStringMaxLen255): Self = this.set("PlacementGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlacementGroup: Self = this.set("PlacementGroup", js.undefined)
+    @scala.inline
+    def setServiceLinkedRoleARN(value: ResourceName): Self = this.set("ServiceLinkedRoleARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceLinkedRoleARN: Self = this.set("ServiceLinkedRoleARN", js.undefined)
+    @scala.inline
+    def setStatus(value: XmlStringMaxLen255): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSuspendedProcessesVarargs(value: SuspendedProcess*): Self = this.set("SuspendedProcesses", js.Array(value :_*))
+    @scala.inline
+    def setSuspendedProcesses(value: SuspendedProcesses): Self = this.set("SuspendedProcesses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedProcesses: Self = this.set("SuspendedProcesses", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: TagDescription*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagDescriptionList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+    @scala.inline
+    def setTargetGroupARNsVarargs(value: XmlStringMaxLen511*): Self = this.set("TargetGroupARNs", js.Array(value :_*))
+    @scala.inline
+    def setTargetGroupARNs(value: TargetGroupARNs): Self = this.set("TargetGroupARNs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetGroupARNs: Self = this.set("TargetGroupARNs", js.undefined)
+    @scala.inline
+    def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = this.set("TerminationPolicies", js.Array(value :_*))
+    @scala.inline
+    def setTerminationPolicies(value: TerminationPolicies): Self = this.set("TerminationPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationPolicies: Self = this.set("TerminationPolicies", js.undefined)
+    @scala.inline
+    def setVPCZoneIdentifier(value: XmlStringMaxLen2047): Self = this.set("VPCZoneIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVPCZoneIdentifier: Self = this.set("VPCZoneIdentifier", js.undefined)
+  }
+  
 }
 

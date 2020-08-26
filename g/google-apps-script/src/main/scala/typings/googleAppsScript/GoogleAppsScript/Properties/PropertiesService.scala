@@ -18,10 +18,11 @@ import scala.scalajs.js.annotation._
   *     scriptProperties.setProperty('SERVER_URL', 'http://www.example.com/MyWeatherService/');
   *     userProperties.setProperty('DISPLAY_UNITS', 'metric');
   */
+@js.native
 trait PropertiesService extends js.Object {
-  def getDocumentProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties
-  def getScriptProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties
-  def getUserProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties
+  def getDocumentProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties = js.native
+  def getScriptProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties = js.native
+  def getUserProperties(): typings.googleAppsScript.GoogleAppsScript.Properties.Properties = js.native
 }
 
 object PropertiesService {
@@ -34,5 +35,24 @@ object PropertiesService {
     val __obj = js.Dynamic.literal(getDocumentProperties = js.Any.fromFunction0(getDocumentProperties), getScriptProperties = js.Any.fromFunction0(getScriptProperties), getUserProperties = js.Any.fromFunction0(getUserProperties))
     __obj.asInstanceOf[PropertiesService]
   }
+  @scala.inline
+  implicit class PropertiesServiceOps[Self <: PropertiesService] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetDocumentProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = this.set("getDocumentProperties", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetScriptProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = this.set("getScriptProperties", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetUserProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = this.set("getUserProperties", js.Any.fromFunction0(value))
+  }
+  
 }
 

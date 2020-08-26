@@ -12,7 +12,7 @@ JavaScript Performance Monitor
 | Keywords           | performance, fps, stats |
 | # releases         | 0 |
 | # dependents       | 59 |
-| # downloads        | 304206 |
+| # downloads        | 309574 |
 | # stars            | 5 |
 
 ## Links

@@ -1,31 +1,37 @@
 package typings.antdMobileRn.listItemNativeMod
 
-import typings.react.mod.ReactNode
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BriefProps
   extends typings.antdMobileRn.listPropsTypeMod.BriefProps {
-  var styles: js.UndefOr[typings.antdMobileRn.anon.Brief] = js.undefined
+  var styles: js.UndefOr[typings.antdMobileRn.anon.Brief] = js.native
 }
 
 object BriefProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    styles: typings.antdMobileRn.anon.Brief = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): BriefProps = {
+  def apply(): BriefProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BriefProps]
   }
+  @scala.inline
+  implicit class BriefPropsOps[Self <: BriefProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStyles(value: typings.antdMobileRn.anon.Brief): Self = this.set("styles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyles: Self = this.set("styles", js.undefined)
+  }
+  
 }
 

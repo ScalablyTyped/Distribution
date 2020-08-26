@@ -13,7 +13,30 @@ import scala.scalajs.js.annotation._
 @js.native
 object getMenuDataMod extends js.Object {
   def default(routes: js.Array[Route]): Breadcrumb = js.native
+  def default(
+    routes: js.Array[Route],
+    menu: js.UndefOr[scala.Nothing],
+    formatMessage: js.UndefOr[scala.Nothing],
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = js.native
+  def default(
+    routes: js.Array[Route],
+    menu: js.UndefOr[scala.Nothing],
+    formatMessage: js.Function1[/* message */ MessageDescriptor, String]
+  ): Breadcrumb = js.native
+  def default(
+    routes: js.Array[Route],
+    menu: js.UndefOr[scala.Nothing],
+    formatMessage: js.Function1[/* message */ MessageDescriptor, String],
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = js.native
   def default(routes: js.Array[Route], menu: Locale): Breadcrumb = js.native
+  def default(
+    routes: js.Array[Route],
+    menu: Locale,
+    formatMessage: js.UndefOr[scala.Nothing],
+    menuDataRender: js.Function1[/* menuData */ js.Array[MenuDataItem], js.Array[MenuDataItem]]
+  ): Breadcrumb = js.native
   def default(
     routes: js.Array[Route],
     menu: Locale,

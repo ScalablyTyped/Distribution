@@ -13,7 +13,7 @@ trait BasemapLayerList extends Widget_ {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#baseItems)
     */
-  var baseItems: Collection[ListItem] = js.native
+  val baseItems: Collection[ListItem] = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a base layer. Each list item's modifiable properties can be updated within. Actions can be added to list items using the [actionsSections](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections) property of the ListItem.
     *
@@ -53,7 +53,7 @@ trait BasemapLayerList extends Widget_ {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#referenceItems)
     */
-  var referenceItems: Collection[ListItem] = js.native
+  val referenceItems: Collection[ListItem] = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a reference layer. Each list item's modifiable properties can be updated within. Actions can be added to list items using the [actionsSections](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections) property of the ListItem.
     *
@@ -65,7 +65,7 @@ trait BasemapLayerList extends Widget_ {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#selectedItems)
     */
-  val selectedItems: Collection[ListItem] = js.native
+  var selectedItems: Collection[ListItem] = js.native
   /**
     * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
     *

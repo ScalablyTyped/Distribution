@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Execution extends js.Object {
   /**
     * The time when the Execution status transitioned to COMPLETE.
@@ -12,7 +13,7 @@ trait Execution extends js.Object {
     *
     * - In response: set if the execution state is COMPLETE. - In create/update request: never set
     */
-  var completionTime: js.UndefOr[Timestamp] = js.undefined
+  var completionTime: js.UndefOr[Timestamp] = js.native
   /**
     * The time when the Execution was created.
     *
@@ -20,7 +21,7 @@ trait Execution extends js.Object {
     *
     * - In response: always set - In create/update request: never set
     */
-  var creationTime: js.UndefOr[Timestamp] = js.undefined
+  var creationTime: js.UndefOr[Timestamp] = js.native
   /**
     * A unique identifier within a History for this Execution.
     *
@@ -28,19 +29,19 @@ trait Execution extends js.Object {
     *
     * - In response always set - In create/update request: never set
     */
-  var executionId: js.UndefOr[String] = js.undefined
+  var executionId: js.UndefOr[String] = js.native
   /**
     * Classify the result, for example into SUCCESS or FAILURE
     *
     * - In response: present if set by create/update request - In create/update request: optional
     */
-  var outcome: js.UndefOr[Outcome] = js.undefined
+  var outcome: js.UndefOr[Outcome] = js.native
   /**
     * Lightweight information about execution request.
     *
     * - In response: present if set by create - In create: optional - In update: optional
     */
-  var specification: js.UndefOr[Specification] = js.undefined
+  var specification: js.UndefOr[Specification] = js.native
   /**
     * The initial state is IN_PROGRESS.
     *
@@ -55,35 +56,61 @@ trait Execution extends js.Object {
     *
     * - In response always set - In create/update request: optional
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String] = js.native
   /**
     * TestExecution Matrix ID that the TestExecutionService uses.
     *
     * - In response: present if set by create - In create: optional - In update: never set
     */
-  var testExecutionMatrixId: js.UndefOr[String] = js.undefined
+  var testExecutionMatrixId: js.UndefOr[String] = js.native
 }
 
 object Execution {
   @scala.inline
-  def apply(
-    completionTime: Timestamp = null,
-    creationTime: Timestamp = null,
-    executionId: String = null,
-    outcome: Outcome = null,
-    specification: Specification = null,
-    state: String = null,
-    testExecutionMatrixId: String = null
-  ): Execution = {
+  def apply(): Execution = {
     val __obj = js.Dynamic.literal()
-    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime.asInstanceOf[js.Any])
-    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime.asInstanceOf[js.Any])
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
-    if (outcome != null) __obj.updateDynamic("outcome")(outcome.asInstanceOf[js.Any])
-    if (specification != null) __obj.updateDynamic("specification")(specification.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (testExecutionMatrixId != null) __obj.updateDynamic("testExecutionMatrixId")(testExecutionMatrixId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Execution]
   }
+  @scala.inline
+  implicit class ExecutionOps[Self <: Execution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCompletionTime(value: Timestamp): Self = this.set("completionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompletionTime: Self = this.set("completionTime", js.undefined)
+    @scala.inline
+    def setCreationTime(value: Timestamp): Self = this.set("creationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("creationTime", js.undefined)
+    @scala.inline
+    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    @scala.inline
+    def setOutcome(value: Outcome): Self = this.set("outcome", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutcome: Self = this.set("outcome", js.undefined)
+    @scala.inline
+    def setSpecification(value: Specification): Self = this.set("specification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpecification: Self = this.set("specification", js.undefined)
+    @scala.inline
+    def setState(value: String): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+    @scala.inline
+    def setTestExecutionMatrixId(value: String): Self = this.set("testExecutionMatrixId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestExecutionMatrixId: Self = this.set("testExecutionMatrixId", js.undefined)
+  }
+  
 }
 

@@ -26,5 +26,24 @@ object DecisionTaskTimedOutEventAttributes {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any], timeoutType = timeoutType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTaskTimedOutEventAttributes]
   }
+  @scala.inline
+  implicit class DecisionTaskTimedOutEventAttributesOps[Self <: DecisionTaskTimedOutEventAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScheduledEventId(value: EventId): Self = this.set("scheduledEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartedEventId(value: EventId): Self = this.set("startedEventId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTimeoutType(value: DecisionTaskTimeoutType): Self = this.set("timeoutType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

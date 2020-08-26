@@ -14,12 +14,34 @@ trait PartialClassNameMapTabInd extends js.Object {
 
 object PartialClassNameMapTabInd {
   @scala.inline
-  def apply(colorPrimary: String = null, colorSecondary: String = null, root: String = null): PartialClassNameMapTabInd = {
+  def apply(): PartialClassNameMapTabInd = {
     val __obj = js.Dynamic.literal()
-    if (colorPrimary != null) __obj.updateDynamic("colorPrimary")(colorPrimary.asInstanceOf[js.Any])
-    if (colorSecondary != null) __obj.updateDynamic("colorSecondary")(colorSecondary.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialClassNameMapTabInd]
   }
+  @scala.inline
+  implicit class PartialClassNameMapTabIndOps[Self <: PartialClassNameMapTabInd] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColorPrimary(value: String): Self = this.set("colorPrimary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorPrimary: Self = this.set("colorPrimary", js.undefined)
+    @scala.inline
+    def setColorSecondary(value: String): Self = this.set("colorSecondary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColorSecondary: Self = this.set("colorSecondary", js.undefined)
+    @scala.inline
+    def setRoot(value: String): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+  }
+  
 }
 

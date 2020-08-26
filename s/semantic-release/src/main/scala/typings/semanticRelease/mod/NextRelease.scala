@@ -7,15 +7,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NextRelease extends LastRelease {
   /**
     * The release notes of the next release.
     */
-  var notes: String
+  var notes: String = js.native
   /**
     * The semver type of the release.
     */
-  var `type`: patch | minor | major
+  var `type`: patch | minor | major = js.native
 }
 
 object NextRelease {
@@ -25,5 +26,22 @@ object NextRelease {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextRelease]
   }
+  @scala.inline
+  implicit class NextReleaseOps[Self <: NextRelease] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotes(value: String): Self = this.set("notes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: patch | minor | major): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

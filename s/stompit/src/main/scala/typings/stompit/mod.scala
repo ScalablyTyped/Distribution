@@ -47,6 +47,7 @@ object mod extends js.Object {
     extends typings.stompit.connectFailoverMod.^ {
     def this(servers: String) = this()
     def this(servers: js.Array[ConnectOptions]) = this()
+    def this(servers: js.UndefOr[scala.Nothing], options: ConnectFailoverOptions) = this()
     def this(servers: String, options: ConnectFailoverOptions) = this()
     def this(servers: js.Array[ConnectOptions], options: ConnectFailoverOptions) = this()
   }
@@ -71,6 +72,7 @@ object mod extends js.Object {
     def apply(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
     def apply(optionsOrPathOrPort: ConnectOptions): typings.stompit.clientMod.^ = js.native
     def apply(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
+    def apply(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
     def apply(port: Double, host: String): typings.stompit.clientMod.^ = js.native
     def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
   }

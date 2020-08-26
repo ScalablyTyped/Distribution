@@ -22,12 +22,34 @@ trait GetQueryResultsOutput extends js.Object {
 
 object GetQueryResultsOutput {
   @scala.inline
-  def apply(NextToken: Token = null, ResultSet: ResultSet = null, UpdateCount: js.UndefOr[Long] = js.undefined): GetQueryResultsOutput = {
+  def apply(): GetQueryResultsOutput = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (ResultSet != null) __obj.updateDynamic("ResultSet")(ResultSet.asInstanceOf[js.Any])
-    if (!js.isUndefined(UpdateCount)) __obj.updateDynamic("UpdateCount")(UpdateCount.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueryResultsOutput]
   }
+  @scala.inline
+  implicit class GetQueryResultsOutputOps[Self <: GetQueryResultsOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setResultSet(value: ResultSet): Self = this.set("ResultSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResultSet: Self = this.set("ResultSet", js.undefined)
+    @scala.inline
+    def setUpdateCount(value: Long): Self = this.set("UpdateCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateCount: Self = this.set("UpdateCount", js.undefined)
+  }
+  
 }
 

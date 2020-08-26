@@ -17,10 +17,28 @@ trait SchemaPolicyDelta extends js.Object {
 
 object SchemaPolicyDelta {
   @scala.inline
-  def apply(bindingDeltas: js.Array[SchemaBindingDelta] = null): SchemaPolicyDelta = {
+  def apply(): SchemaPolicyDelta = {
     val __obj = js.Dynamic.literal()
-    if (bindingDeltas != null) __obj.updateDynamic("bindingDeltas")(bindingDeltas.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPolicyDelta]
   }
+  @scala.inline
+  implicit class SchemaPolicyDeltaOps[Self <: SchemaPolicyDelta] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBindingDeltasVarargs(value: SchemaBindingDelta*): Self = this.set("bindingDeltas", js.Array(value :_*))
+    @scala.inline
+    def setBindingDeltas(value: js.Array[SchemaBindingDelta]): Self = this.set("bindingDeltas", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBindingDeltas: Self = this.set("bindingDeltas", js.undefined)
+  }
+  
 }
 

@@ -50,30 +50,62 @@ trait JobParameters extends js.Object {
 
 object JobParameters {
   @scala.inline
-  def apply(
-    ArchiveId: String = null,
-    Description: String = null,
-    Format: String = null,
-    InventoryRetrievalParameters: InventoryRetrievalJobInput = null,
-    OutputLocation: OutputLocation = null,
-    RetrievalByteRange: String = null,
-    SNSTopic: String = null,
-    SelectParameters: SelectParameters = null,
-    Tier: String = null,
-    Type: String = null
-  ): JobParameters = {
+  def apply(): JobParameters = {
     val __obj = js.Dynamic.literal()
-    if (ArchiveId != null) __obj.updateDynamic("ArchiveId")(ArchiveId.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (InventoryRetrievalParameters != null) __obj.updateDynamic("InventoryRetrievalParameters")(InventoryRetrievalParameters.asInstanceOf[js.Any])
-    if (OutputLocation != null) __obj.updateDynamic("OutputLocation")(OutputLocation.asInstanceOf[js.Any])
-    if (RetrievalByteRange != null) __obj.updateDynamic("RetrievalByteRange")(RetrievalByteRange.asInstanceOf[js.Any])
-    if (SNSTopic != null) __obj.updateDynamic("SNSTopic")(SNSTopic.asInstanceOf[js.Any])
-    if (SelectParameters != null) __obj.updateDynamic("SelectParameters")(SelectParameters.asInstanceOf[js.Any])
-    if (Tier != null) __obj.updateDynamic("Tier")(Tier.asInstanceOf[js.Any])
-    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobParameters]
   }
+  @scala.inline
+  implicit class JobParametersOps[Self <: JobParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveId(value: String): Self = this.set("ArchiveId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArchiveId: Self = this.set("ArchiveId", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setInventoryRetrievalParameters(value: InventoryRetrievalJobInput): Self = this.set("InventoryRetrievalParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInventoryRetrievalParameters: Self = this.set("InventoryRetrievalParameters", js.undefined)
+    @scala.inline
+    def setOutputLocation(value: OutputLocation): Self = this.set("OutputLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputLocation: Self = this.set("OutputLocation", js.undefined)
+    @scala.inline
+    def setRetrievalByteRange(value: String): Self = this.set("RetrievalByteRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetrievalByteRange: Self = this.set("RetrievalByteRange", js.undefined)
+    @scala.inline
+    def setSNSTopic(value: String): Self = this.set("SNSTopic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSNSTopic: Self = this.set("SNSTopic", js.undefined)
+    @scala.inline
+    def setSelectParameters(value: SelectParameters): Self = this.set("SelectParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectParameters: Self = this.set("SelectParameters", js.undefined)
+    @scala.inline
+    def setTier(value: String): Self = this.set("Tier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTier: Self = this.set("Tier", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("Type", js.undefined)
+  }
+  
 }
 

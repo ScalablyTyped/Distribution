@@ -41,22 +41,58 @@ trait SchemaWebDetection extends js.Object {
 
 object SchemaWebDetection {
   @scala.inline
-  def apply(
-    bestGuessLabels: js.Array[SchemaWebLabel] = null,
-    fullMatchingImages: js.Array[SchemaWebImage] = null,
-    pagesWithMatchingImages: js.Array[SchemaWebPage] = null,
-    partialMatchingImages: js.Array[SchemaWebImage] = null,
-    visuallySimilarImages: js.Array[SchemaWebImage] = null,
-    webEntities: js.Array[SchemaWebEntity] = null
-  ): SchemaWebDetection = {
+  def apply(): SchemaWebDetection = {
     val __obj = js.Dynamic.literal()
-    if (bestGuessLabels != null) __obj.updateDynamic("bestGuessLabels")(bestGuessLabels.asInstanceOf[js.Any])
-    if (fullMatchingImages != null) __obj.updateDynamic("fullMatchingImages")(fullMatchingImages.asInstanceOf[js.Any])
-    if (pagesWithMatchingImages != null) __obj.updateDynamic("pagesWithMatchingImages")(pagesWithMatchingImages.asInstanceOf[js.Any])
-    if (partialMatchingImages != null) __obj.updateDynamic("partialMatchingImages")(partialMatchingImages.asInstanceOf[js.Any])
-    if (visuallySimilarImages != null) __obj.updateDynamic("visuallySimilarImages")(visuallySimilarImages.asInstanceOf[js.Any])
-    if (webEntities != null) __obj.updateDynamic("webEntities")(webEntities.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWebDetection]
   }
+  @scala.inline
+  implicit class SchemaWebDetectionOps[Self <: SchemaWebDetection] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBestGuessLabelsVarargs(value: SchemaWebLabel*): Self = this.set("bestGuessLabels", js.Array(value :_*))
+    @scala.inline
+    def setBestGuessLabels(value: js.Array[SchemaWebLabel]): Self = this.set("bestGuessLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBestGuessLabels: Self = this.set("bestGuessLabels", js.undefined)
+    @scala.inline
+    def setFullMatchingImagesVarargs(value: SchemaWebImage*): Self = this.set("fullMatchingImages", js.Array(value :_*))
+    @scala.inline
+    def setFullMatchingImages(value: js.Array[SchemaWebImage]): Self = this.set("fullMatchingImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFullMatchingImages: Self = this.set("fullMatchingImages", js.undefined)
+    @scala.inline
+    def setPagesWithMatchingImagesVarargs(value: SchemaWebPage*): Self = this.set("pagesWithMatchingImages", js.Array(value :_*))
+    @scala.inline
+    def setPagesWithMatchingImages(value: js.Array[SchemaWebPage]): Self = this.set("pagesWithMatchingImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagesWithMatchingImages: Self = this.set("pagesWithMatchingImages", js.undefined)
+    @scala.inline
+    def setPartialMatchingImagesVarargs(value: SchemaWebImage*): Self = this.set("partialMatchingImages", js.Array(value :_*))
+    @scala.inline
+    def setPartialMatchingImages(value: js.Array[SchemaWebImage]): Self = this.set("partialMatchingImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartialMatchingImages: Self = this.set("partialMatchingImages", js.undefined)
+    @scala.inline
+    def setVisuallySimilarImagesVarargs(value: SchemaWebImage*): Self = this.set("visuallySimilarImages", js.Array(value :_*))
+    @scala.inline
+    def setVisuallySimilarImages(value: js.Array[SchemaWebImage]): Self = this.set("visuallySimilarImages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisuallySimilarImages: Self = this.set("visuallySimilarImages", js.undefined)
+    @scala.inline
+    def setWebEntitiesVarargs(value: SchemaWebEntity*): Self = this.set("webEntities", js.Array(value :_*))
+    @scala.inline
+    def setWebEntities(value: js.Array[SchemaWebEntity]): Self = this.set("webEntities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebEntities: Self = this.set("webEntities", js.undefined)
+  }
+  
 }
 

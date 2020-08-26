@@ -39,18 +39,38 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadata extends js.Object
 
 object SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadata {
   @scala.inline
-  def apply(
-    actionId: String = null,
-    correlatedInvocationsId: String = null,
-    toolDetails: SchemaGoogleDevtoolsRemoteexecutionV1testToolDetails = null,
-    toolInvocationId: String = null
-  ): SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadata = {
+  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadata = {
     val __obj = js.Dynamic.literal()
-    if (actionId != null) __obj.updateDynamic("actionId")(actionId.asInstanceOf[js.Any])
-    if (correlatedInvocationsId != null) __obj.updateDynamic("correlatedInvocationsId")(correlatedInvocationsId.asInstanceOf[js.Any])
-    if (toolDetails != null) __obj.updateDynamic("toolDetails")(toolDetails.asInstanceOf[js.Any])
-    if (toolInvocationId != null) __obj.updateDynamic("toolInvocationId")(toolInvocationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadata]
   }
+  @scala.inline
+  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadataOps[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testRequestMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionId(value: String): Self = this.set("actionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActionId: Self = this.set("actionId", js.undefined)
+    @scala.inline
+    def setCorrelatedInvocationsId(value: String): Self = this.set("correlatedInvocationsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCorrelatedInvocationsId: Self = this.set("correlatedInvocationsId", js.undefined)
+    @scala.inline
+    def setToolDetails(value: SchemaGoogleDevtoolsRemoteexecutionV1testToolDetails): Self = this.set("toolDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolDetails: Self = this.set("toolDetails", js.undefined)
+    @scala.inline
+    def setToolInvocationId(value: String): Self = this.set("toolInvocationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolInvocationId: Self = this.set("toolInvocationId", js.undefined)
+  }
+  
 }
 

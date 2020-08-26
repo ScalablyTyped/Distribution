@@ -12,13 +12,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Control extends js.Object {
-  var background: js.UndefOr[BackgroundType] = js.undefined
-  var container: js.UndefOr[ExtendExtendType] = js.undefined
-  var control: js.UndefOr[Open] = js.undefined
-  var extend: js.UndefOr[ExtendType] = js.undefined
-  var icons: js.UndefOr[Up] = js.undefined
-  var options: js.UndefOr[ContainerText] = js.undefined
+  var background: js.UndefOr[BackgroundType] = js.native
+  var container: js.UndefOr[`10`] = js.native
+  var control: js.UndefOr[Open] = js.native
+  var extend: js.UndefOr[ExtendType] = js.native
+  var icons: js.UndefOr[Up] = js.native
+  var options: js.UndefOr[Container] = js.native
   // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/37506
   var searchInput: js.UndefOr[
     ReactComponentElement[
@@ -28,38 +29,70 @@ trait Control extends js.Object {
         Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
       ]
     ]
-  ] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
+  ] = js.native
+  var step: js.UndefOr[Double] = js.native
 }
 
 object Control {
   @scala.inline
-  def apply(
-    background: BackgroundType = null,
-    container: ExtendExtendType = null,
-    control: Open = null,
-    extend: ExtendType = null,
-    icons: Up = null,
-    options: ContainerText = null,
-    searchInput: ReactComponentElement[
-      _, 
-      Pick[
-        ComponentProps[_], 
-        Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
-      ]
-    ] = null,
-    step: js.UndefOr[Double] = js.undefined
-  ): Control = {
+  def apply(): Control = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (control != null) __obj.updateDynamic("control")(control.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (searchInput != null) __obj.updateDynamic("searchInput")(searchInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Control]
   }
+  @scala.inline
+  implicit class ControlOps[Self <: Control] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: BackgroundType): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setContainer(value: `10`): Self = this.set("container", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainer: Self = this.set("container", js.undefined)
+    @scala.inline
+    def setControl(value: Open): Self = this.set("control", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteControl: Self = this.set("control", js.undefined)
+    @scala.inline
+    def setExtendFunction1(value: /* args */ js.Any => Unit): Self = this.set("extend", js.Any.fromFunction1(value))
+    @scala.inline
+    def setExtend(value: ExtendType): Self = this.set("extend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtend: Self = this.set("extend", js.undefined)
+    @scala.inline
+    def setIcons(value: Up): Self = this.set("icons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcons: Self = this.set("icons", js.undefined)
+    @scala.inline
+    def setOptions(value: Container): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSearchInput(
+      value: ReactComponentElement[
+          _, 
+          Pick[
+            ComponentProps[_], 
+            Exclude[/* keyof react.react.ComponentProps<any> */ String, key | ref]
+          ]
+        ]
+    ): Self = this.set("searchInput", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSearchInput: Self = this.set("searchInput", js.undefined)
+    @scala.inline
+    def setStep(value: Double): Self = this.set("step", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStep: Self = this.set("step", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Your CLI formatting friend.
 | Keywords           | cli, logging, tools, winston |
 | # releases         | 0 |
 | # dependents       | 134 |
-| # downloads        | 15990313 |
+| # downloads        | 16471530 |
 | # stars            | 10 |
 
 ## Links

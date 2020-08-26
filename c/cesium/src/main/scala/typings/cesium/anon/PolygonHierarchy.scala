@@ -5,35 +5,61 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PolygonHierarchy extends js.Object {
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
-  var extrudedHeight: js.UndefOr[Double] = js.undefined
-  var granularity: js.UndefOr[Double] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var perPositionHeight: js.UndefOr[Boolean] = js.undefined
-  var polygonHierarchy: js.Any
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var extrudedHeight: js.UndefOr[Double] = js.native
+  var granularity: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var perPositionHeight: js.UndefOr[Boolean] = js.native
+  var polygonHierarchy: js.Any = js.native
+  var vertexFormat: js.UndefOr[VertexFormat] = js.native
 }
 
 object PolygonHierarchy {
   @scala.inline
-  def apply(
-    polygonHierarchy: js.Any,
-    ellipsoid: typings.cesium.mod.Ellipsoid = null,
-    extrudedHeight: js.UndefOr[Double] = js.undefined,
-    granularity: js.UndefOr[Double] = js.undefined,
-    height: js.UndefOr[Double] = js.undefined,
-    perPositionHeight: js.UndefOr[Boolean] = js.undefined,
-    vertexFormat: VertexFormat = null
-  ): PolygonHierarchy = {
+  def apply(polygonHierarchy: js.Any): PolygonHierarchy = {
     val __obj = js.Dynamic.literal(polygonHierarchy = polygonHierarchy.asInstanceOf[js.Any])
-    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid.asInstanceOf[js.Any])
-    if (!js.isUndefined(extrudedHeight)) __obj.updateDynamic("extrudedHeight")(extrudedHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(granularity)) __obj.updateDynamic("granularity")(granularity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(perPositionHeight)) __obj.updateDynamic("perPositionHeight")(perPositionHeight.get.asInstanceOf[js.Any])
-    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonHierarchy]
   }
+  @scala.inline
+  implicit class PolygonHierarchyOps[Self <: PolygonHierarchy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPolygonHierarchy(value: js.Any): Self = this.set("polygonHierarchy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = this.set("ellipsoid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEllipsoid: Self = this.set("ellipsoid", js.undefined)
+    @scala.inline
+    def setExtrudedHeight(value: Double): Self = this.set("extrudedHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtrudedHeight: Self = this.set("extrudedHeight", js.undefined)
+    @scala.inline
+    def setGranularity(value: Double): Self = this.set("granularity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGranularity: Self = this.set("granularity", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setPerPositionHeight(value: Boolean): Self = this.set("perPositionHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePerPositionHeight: Self = this.set("perPositionHeight", js.undefined)
+    @scala.inline
+    def setVertexFormat(value: VertexFormat): Self = this.set("vertexFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertexFormat: Self = this.set("vertexFormat", js.undefined)
+  }
+  
 }
 

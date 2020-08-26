@@ -18,10 +18,28 @@ trait ResetJobBookmarkRequest extends js.Object {
 
 object ResetJobBookmarkRequest {
   @scala.inline
-  def apply(JobName: JobName, RunId: RunId = null): ResetJobBookmarkRequest = {
+  def apply(JobName: JobName): ResetJobBookmarkRequest = {
     val __obj = js.Dynamic.literal(JobName = JobName.asInstanceOf[js.Any])
-    if (RunId != null) __obj.updateDynamic("RunId")(RunId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetJobBookmarkRequest]
   }
+  @scala.inline
+  implicit class ResetJobBookmarkRequestOps[Self <: ResetJobBookmarkRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setJobName(value: JobName): Self = this.set("JobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRunId(value: RunId): Self = this.set("RunId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunId: Self = this.set("RunId", js.undefined)
+  }
+  
 }
 

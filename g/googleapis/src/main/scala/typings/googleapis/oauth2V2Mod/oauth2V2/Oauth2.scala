@@ -44,6 +44,7 @@ class Oauth2 protected () extends js.Object {
     */
   def getCertForOpenIdConnect(): GaxiosPromise[SchemaJwk] = js.native
   def getCertForOpenIdConnect(callback: BodyResponseCallback[SchemaJwk]): Unit = js.native
+  def getCertForOpenIdConnect(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaJwk] = js.native
   def getCertForOpenIdConnect(params: ParamsGetcertforopenidconnect): GaxiosPromise[SchemaJwk] = js.native
   def getCertForOpenIdConnect(params: ParamsGetcertforopenidconnect, callback: BodyResponseCallback[SchemaJwk]): Unit = js.native
   def getCertForOpenIdConnect(
@@ -72,6 +73,7 @@ class Oauth2 protected () extends js.Object {
     */
   def tokeninfo(): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
+  def tokeninfo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(params: ParamsTokeninfo): GaxiosPromise[SchemaTokeninfo] = js.native
   def tokeninfo(params: ParamsTokeninfo, callback: BodyResponseCallback[SchemaTokeninfo]): Unit = js.native
   def tokeninfo(

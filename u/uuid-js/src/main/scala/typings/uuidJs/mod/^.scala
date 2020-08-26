@@ -6,23 +6,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("uuid-js", JSImport.Namespace)
 @js.native
-class ^ () extends uuid {
-  /* CompleteClass */
-  override def equals(uuid: uuid): Boolean = js.native
-  /* CompleteClass */
-  override def fromParts(
-    timeLow: js.Any,
-    timeMid: js.Any,
-    timeHiAndVersion: js.Any,
-    clockSeqHiAndReserved: js.Any,
-    clockSeqLow: js.Any,
-    node: js.Any
-  ): uuid = js.native
-  /* CompleteClass */
-  override def toBytes(): js.Array[_] = js.native
-  /* CompleteClass */
-  override def toURN(): String = js.native
-}
+class ^ () extends uuid
 
 @JSImport("uuid-js", JSImport.Namespace)
 @js.native

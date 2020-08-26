@@ -14,345 +14,526 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GriddleComponents extends js.Object {
-  var Cell: js.UndefOr[GriddleComponent[CellProps]] = js.undefined
+  var Cell: js.UndefOr[GriddleComponent[CellProps]] = js.native
   var CellContainer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[CellProps], GriddleComponent[CellProps]]
-  ] = js.undefined
+  ] = js.native
   var CellContainerEnhancer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[CellProps], GriddleComponent[CellProps]]
-  ] = js.undefined
+  ] = js.native
   var CellEnhancer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[CellProps], GriddleComponent[CellProps]]
-  ] = js.undefined
-  var Filter: js.UndefOr[GriddleComponent[FilterProps]] = js.undefined
+  ] = js.native
+  var Filter: js.UndefOr[GriddleComponent[FilterProps]] = js.native
   var FilterContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[FilterProps], 
       GriddleComponent[FilterProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var FilterContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[FilterProps], 
       GriddleComponent[FilterProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var FilterEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[FilterProps], 
       GriddleComponent[FilterProps]
     ]
-  ] = js.undefined
-  var Layout: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var LayoutContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var LayoutContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var LayoutEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var NextButton: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var NextButtonContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var NextButtonContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var NextButtonEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var NoResults: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var NoResultsContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var NoResultsContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var NoResultsEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PageDropdown: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var PageDropdownContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PageDropdownContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PageDropdownEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var Pagination: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var PaginationContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PaginationContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PaginationEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PreviousButton: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var PreviousButtonContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PreviousButtonContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var PreviousButtonEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var Row: js.UndefOr[GriddleComponent[RowProps]] = js.undefined
+  ] = js.native
+  var Layout: js.UndefOr[GriddleComponent[_]] = js.native
+  var LayoutContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var LayoutContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var LayoutEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var NextButton: js.UndefOr[GriddleComponent[_]] = js.native
+  var NextButtonContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var NextButtonContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var NextButtonEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var NoResults: js.UndefOr[GriddleComponent[_]] = js.native
+  var NoResultsContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var NoResultsContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var NoResultsEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PageDropdown: js.UndefOr[GriddleComponent[_]] = js.native
+  var PageDropdownContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PageDropdownContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PageDropdownEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var Pagination: js.UndefOr[GriddleComponent[_]] = js.native
+  var PaginationContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PaginationContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PaginationEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PreviousButton: js.UndefOr[GriddleComponent[_]] = js.native
+  var PreviousButtonContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PreviousButtonContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var PreviousButtonEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var Row: js.UndefOr[GriddleComponent[RowProps]] = js.native
   var RowContainer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[RowProps], GriddleComponent[RowProps]]
-  ] = js.undefined
+  ] = js.native
   var RowContainerEnhancer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[RowProps], GriddleComponent[RowProps]]
-  ] = js.undefined
+  ] = js.native
   var RowEnhancer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[RowProps], GriddleComponent[RowProps]]
-  ] = js.undefined
-  var Settings: js.UndefOr[GriddleComponent[SettingsProps]] = js.undefined
-  var SettingsComponents: js.UndefOr[PropertyBag[GriddleComponent[_]]] = js.undefined
+  ] = js.native
+  var Settings: js.UndefOr[GriddleComponent[SettingsProps]] = js.native
+  var SettingsComponents: js.UndefOr[PropertyBag[GriddleComponent[_]]] = js.native
   var SettingsContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsProps], 
       GriddleComponent[SettingsProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var SettingsContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsProps], 
       GriddleComponent[SettingsProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var SettingsEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsProps], 
       GriddleComponent[SettingsProps]
     ]
-  ] = js.undefined
-  var SettingsToggle: js.UndefOr[GriddleComponent[SettingsToggleProps]] = js.undefined
+  ] = js.native
+  var SettingsToggle: js.UndefOr[GriddleComponent[SettingsToggleProps]] = js.native
   var SettingsToggleContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsToggleProps], 
       GriddleComponent[SettingsToggleProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var SettingsToggleContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsToggleProps], 
       GriddleComponent[SettingsToggleProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var SettingsToggleEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsToggleProps], 
       GriddleComponent[SettingsToggleProps]
     ]
-  ] = js.undefined
-  var SettingsWrapper: js.UndefOr[GriddleComponent[SettingsWrapperProps]] = js.undefined
+  ] = js.native
+  var SettingsWrapper: js.UndefOr[GriddleComponent[SettingsWrapperProps]] = js.native
   var SettingsWrapperContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsWrapperProps], 
       GriddleComponent[SettingsWrapperProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var SettingsWrapperContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsWrapperProps], 
       GriddleComponent[SettingsWrapperProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var SettingsWrapperEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[SettingsWrapperProps], 
       GriddleComponent[SettingsWrapperProps]
     ]
-  ] = js.undefined
-  var Style: js.UndefOr[GriddleComponent[_]] = js.undefined
-  var StyleContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var StyleContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var StyleEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.undefined
-  var Table: js.UndefOr[GriddleComponent[TableProps]] = js.undefined
-  var TableBody: js.UndefOr[GriddleComponent[TableBodyProps]] = js.undefined
+  ] = js.native
+  var Style: js.UndefOr[GriddleComponent[_]] = js.native
+  var StyleContainer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var StyleContainerEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var StyleEnhancer: js.UndefOr[js.Function1[/* OriginalComponent */ GriddleComponent[_], GriddleComponent[_]]] = js.native
+  var Table: js.UndefOr[GriddleComponent[TableProps]] = js.native
+  var TableBody: js.UndefOr[GriddleComponent[TableBodyProps]] = js.native
   var TableBodyContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableBodyProps], 
       GriddleComponent[TableBodyProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableBodyContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableBodyProps], 
       GriddleComponent[TableBodyProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableBodyEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableBodyProps], 
       GriddleComponent[TableBodyProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableContainer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[TableProps], GriddleComponent[TableProps]]
-  ] = js.undefined
+  ] = js.native
   var TableContainerEnhancer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[TableProps], GriddleComponent[TableProps]]
-  ] = js.undefined
+  ] = js.native
   var TableEnhancer: js.UndefOr[
     js.Function1[/* OriginalComponent */ GriddleComponent[TableProps], GriddleComponent[TableProps]]
-  ] = js.undefined
-  var TableHeading: js.UndefOr[GriddleComponent[TableHeadingProps]] = js.undefined
-  var TableHeadingCell: js.UndefOr[GriddleComponent[TableHeadingCellProps]] = js.undefined
+  ] = js.native
+  var TableHeading: js.UndefOr[GriddleComponent[TableHeadingProps]] = js.native
+  var TableHeadingCell: js.UndefOr[GriddleComponent[TableHeadingCellProps]] = js.native
   var TableHeadingCellContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableHeadingCellProps], 
       GriddleComponent[TableHeadingCellProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableHeadingCellContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableHeadingCellProps], 
       GriddleComponent[TableHeadingCellProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableHeadingCellEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableHeadingCellProps], 
       GriddleComponent[TableHeadingCellProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableHeadingContainer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableHeadingProps], 
       GriddleComponent[TableHeadingProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableHeadingContainerEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableHeadingProps], 
       GriddleComponent[TableHeadingProps]
     ]
-  ] = js.undefined
+  ] = js.native
   var TableHeadingEnhancer: js.UndefOr[
     js.Function1[
       /* OriginalComponent */ GriddleComponent[TableHeadingProps], 
       GriddleComponent[TableHeadingProps]
     ]
-  ] = js.undefined
+  ] = js.native
 }
 
 object GriddleComponents {
   @scala.inline
-  def apply(
-    Cell: GriddleComponent[CellProps] = null,
-    CellContainer: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps] = null,
-    CellContainerEnhancer: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps] = null,
-    CellEnhancer: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps] = null,
-    Filter: GriddleComponent[FilterProps] = null,
-    FilterContainer: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps] = null,
-    FilterContainerEnhancer: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps] = null,
-    FilterEnhancer: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps] = null,
-    Layout: GriddleComponent[_] = null,
-    LayoutContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    LayoutContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    LayoutEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    NextButton: GriddleComponent[_] = null,
-    NextButtonContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    NextButtonContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    NextButtonEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    NoResults: GriddleComponent[_] = null,
-    NoResultsContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    NoResultsContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    NoResultsEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PageDropdown: GriddleComponent[_] = null,
-    PageDropdownContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PageDropdownContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PageDropdownEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    Pagination: GriddleComponent[_] = null,
-    PaginationContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PaginationContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PaginationEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PreviousButton: GriddleComponent[_] = null,
-    PreviousButtonContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PreviousButtonContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    PreviousButtonEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    Row: GriddleComponent[RowProps] = null,
-    RowContainer: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps] = null,
-    RowContainerEnhancer: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps] = null,
-    RowEnhancer: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps] = null,
-    Settings: GriddleComponent[SettingsProps] = null,
-    SettingsComponents: PropertyBag[GriddleComponent[_]] = null,
-    SettingsContainer: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps] = null,
-    SettingsContainerEnhancer: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps] = null,
-    SettingsEnhancer: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps] = null,
-    SettingsToggle: GriddleComponent[SettingsToggleProps] = null,
-    SettingsToggleContainer: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps] = null,
-    SettingsToggleContainerEnhancer: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps] = null,
-    SettingsToggleEnhancer: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps] = null,
-    SettingsWrapper: GriddleComponent[SettingsWrapperProps] = null,
-    SettingsWrapperContainer: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps] = null,
-    SettingsWrapperContainerEnhancer: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps] = null,
-    SettingsWrapperEnhancer: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps] = null,
-    Style: GriddleComponent[_] = null,
-    StyleContainer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    StyleContainerEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    StyleEnhancer: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_] = null,
-    Table: GriddleComponent[TableProps] = null,
-    TableBody: GriddleComponent[TableBodyProps] = null,
-    TableBodyContainer: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps] = null,
-    TableBodyContainerEnhancer: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps] = null,
-    TableBodyEnhancer: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps] = null,
-    TableContainer: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps] = null,
-    TableContainerEnhancer: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps] = null,
-    TableEnhancer: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps] = null,
-    TableHeading: GriddleComponent[TableHeadingProps] = null,
-    TableHeadingCell: GriddleComponent[TableHeadingCellProps] = null,
-    TableHeadingCellContainer: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps] = null,
-    TableHeadingCellContainerEnhancer: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps] = null,
-    TableHeadingCellEnhancer: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps] = null,
-    TableHeadingContainer: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps] = null,
-    TableHeadingContainerEnhancer: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps] = null,
-    TableHeadingEnhancer: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps] = null
-  ): GriddleComponents = {
+  def apply(): GriddleComponents = {
     val __obj = js.Dynamic.literal()
-    if (Cell != null) __obj.updateDynamic("Cell")(Cell.asInstanceOf[js.Any])
-    if (CellContainer != null) __obj.updateDynamic("CellContainer")(js.Any.fromFunction1(CellContainer))
-    if (CellContainerEnhancer != null) __obj.updateDynamic("CellContainerEnhancer")(js.Any.fromFunction1(CellContainerEnhancer))
-    if (CellEnhancer != null) __obj.updateDynamic("CellEnhancer")(js.Any.fromFunction1(CellEnhancer))
-    if (Filter != null) __obj.updateDynamic("Filter")(Filter.asInstanceOf[js.Any])
-    if (FilterContainer != null) __obj.updateDynamic("FilterContainer")(js.Any.fromFunction1(FilterContainer))
-    if (FilterContainerEnhancer != null) __obj.updateDynamic("FilterContainerEnhancer")(js.Any.fromFunction1(FilterContainerEnhancer))
-    if (FilterEnhancer != null) __obj.updateDynamic("FilterEnhancer")(js.Any.fromFunction1(FilterEnhancer))
-    if (Layout != null) __obj.updateDynamic("Layout")(Layout.asInstanceOf[js.Any])
-    if (LayoutContainer != null) __obj.updateDynamic("LayoutContainer")(js.Any.fromFunction1(LayoutContainer))
-    if (LayoutContainerEnhancer != null) __obj.updateDynamic("LayoutContainerEnhancer")(js.Any.fromFunction1(LayoutContainerEnhancer))
-    if (LayoutEnhancer != null) __obj.updateDynamic("LayoutEnhancer")(js.Any.fromFunction1(LayoutEnhancer))
-    if (NextButton != null) __obj.updateDynamic("NextButton")(NextButton.asInstanceOf[js.Any])
-    if (NextButtonContainer != null) __obj.updateDynamic("NextButtonContainer")(js.Any.fromFunction1(NextButtonContainer))
-    if (NextButtonContainerEnhancer != null) __obj.updateDynamic("NextButtonContainerEnhancer")(js.Any.fromFunction1(NextButtonContainerEnhancer))
-    if (NextButtonEnhancer != null) __obj.updateDynamic("NextButtonEnhancer")(js.Any.fromFunction1(NextButtonEnhancer))
-    if (NoResults != null) __obj.updateDynamic("NoResults")(NoResults.asInstanceOf[js.Any])
-    if (NoResultsContainer != null) __obj.updateDynamic("NoResultsContainer")(js.Any.fromFunction1(NoResultsContainer))
-    if (NoResultsContainerEnhancer != null) __obj.updateDynamic("NoResultsContainerEnhancer")(js.Any.fromFunction1(NoResultsContainerEnhancer))
-    if (NoResultsEnhancer != null) __obj.updateDynamic("NoResultsEnhancer")(js.Any.fromFunction1(NoResultsEnhancer))
-    if (PageDropdown != null) __obj.updateDynamic("PageDropdown")(PageDropdown.asInstanceOf[js.Any])
-    if (PageDropdownContainer != null) __obj.updateDynamic("PageDropdownContainer")(js.Any.fromFunction1(PageDropdownContainer))
-    if (PageDropdownContainerEnhancer != null) __obj.updateDynamic("PageDropdownContainerEnhancer")(js.Any.fromFunction1(PageDropdownContainerEnhancer))
-    if (PageDropdownEnhancer != null) __obj.updateDynamic("PageDropdownEnhancer")(js.Any.fromFunction1(PageDropdownEnhancer))
-    if (Pagination != null) __obj.updateDynamic("Pagination")(Pagination.asInstanceOf[js.Any])
-    if (PaginationContainer != null) __obj.updateDynamic("PaginationContainer")(js.Any.fromFunction1(PaginationContainer))
-    if (PaginationContainerEnhancer != null) __obj.updateDynamic("PaginationContainerEnhancer")(js.Any.fromFunction1(PaginationContainerEnhancer))
-    if (PaginationEnhancer != null) __obj.updateDynamic("PaginationEnhancer")(js.Any.fromFunction1(PaginationEnhancer))
-    if (PreviousButton != null) __obj.updateDynamic("PreviousButton")(PreviousButton.asInstanceOf[js.Any])
-    if (PreviousButtonContainer != null) __obj.updateDynamic("PreviousButtonContainer")(js.Any.fromFunction1(PreviousButtonContainer))
-    if (PreviousButtonContainerEnhancer != null) __obj.updateDynamic("PreviousButtonContainerEnhancer")(js.Any.fromFunction1(PreviousButtonContainerEnhancer))
-    if (PreviousButtonEnhancer != null) __obj.updateDynamic("PreviousButtonEnhancer")(js.Any.fromFunction1(PreviousButtonEnhancer))
-    if (Row != null) __obj.updateDynamic("Row")(Row.asInstanceOf[js.Any])
-    if (RowContainer != null) __obj.updateDynamic("RowContainer")(js.Any.fromFunction1(RowContainer))
-    if (RowContainerEnhancer != null) __obj.updateDynamic("RowContainerEnhancer")(js.Any.fromFunction1(RowContainerEnhancer))
-    if (RowEnhancer != null) __obj.updateDynamic("RowEnhancer")(js.Any.fromFunction1(RowEnhancer))
-    if (Settings != null) __obj.updateDynamic("Settings")(Settings.asInstanceOf[js.Any])
-    if (SettingsComponents != null) __obj.updateDynamic("SettingsComponents")(SettingsComponents.asInstanceOf[js.Any])
-    if (SettingsContainer != null) __obj.updateDynamic("SettingsContainer")(js.Any.fromFunction1(SettingsContainer))
-    if (SettingsContainerEnhancer != null) __obj.updateDynamic("SettingsContainerEnhancer")(js.Any.fromFunction1(SettingsContainerEnhancer))
-    if (SettingsEnhancer != null) __obj.updateDynamic("SettingsEnhancer")(js.Any.fromFunction1(SettingsEnhancer))
-    if (SettingsToggle != null) __obj.updateDynamic("SettingsToggle")(SettingsToggle.asInstanceOf[js.Any])
-    if (SettingsToggleContainer != null) __obj.updateDynamic("SettingsToggleContainer")(js.Any.fromFunction1(SettingsToggleContainer))
-    if (SettingsToggleContainerEnhancer != null) __obj.updateDynamic("SettingsToggleContainerEnhancer")(js.Any.fromFunction1(SettingsToggleContainerEnhancer))
-    if (SettingsToggleEnhancer != null) __obj.updateDynamic("SettingsToggleEnhancer")(js.Any.fromFunction1(SettingsToggleEnhancer))
-    if (SettingsWrapper != null) __obj.updateDynamic("SettingsWrapper")(SettingsWrapper.asInstanceOf[js.Any])
-    if (SettingsWrapperContainer != null) __obj.updateDynamic("SettingsWrapperContainer")(js.Any.fromFunction1(SettingsWrapperContainer))
-    if (SettingsWrapperContainerEnhancer != null) __obj.updateDynamic("SettingsWrapperContainerEnhancer")(js.Any.fromFunction1(SettingsWrapperContainerEnhancer))
-    if (SettingsWrapperEnhancer != null) __obj.updateDynamic("SettingsWrapperEnhancer")(js.Any.fromFunction1(SettingsWrapperEnhancer))
-    if (Style != null) __obj.updateDynamic("Style")(Style.asInstanceOf[js.Any])
-    if (StyleContainer != null) __obj.updateDynamic("StyleContainer")(js.Any.fromFunction1(StyleContainer))
-    if (StyleContainerEnhancer != null) __obj.updateDynamic("StyleContainerEnhancer")(js.Any.fromFunction1(StyleContainerEnhancer))
-    if (StyleEnhancer != null) __obj.updateDynamic("StyleEnhancer")(js.Any.fromFunction1(StyleEnhancer))
-    if (Table != null) __obj.updateDynamic("Table")(Table.asInstanceOf[js.Any])
-    if (TableBody != null) __obj.updateDynamic("TableBody")(TableBody.asInstanceOf[js.Any])
-    if (TableBodyContainer != null) __obj.updateDynamic("TableBodyContainer")(js.Any.fromFunction1(TableBodyContainer))
-    if (TableBodyContainerEnhancer != null) __obj.updateDynamic("TableBodyContainerEnhancer")(js.Any.fromFunction1(TableBodyContainerEnhancer))
-    if (TableBodyEnhancer != null) __obj.updateDynamic("TableBodyEnhancer")(js.Any.fromFunction1(TableBodyEnhancer))
-    if (TableContainer != null) __obj.updateDynamic("TableContainer")(js.Any.fromFunction1(TableContainer))
-    if (TableContainerEnhancer != null) __obj.updateDynamic("TableContainerEnhancer")(js.Any.fromFunction1(TableContainerEnhancer))
-    if (TableEnhancer != null) __obj.updateDynamic("TableEnhancer")(js.Any.fromFunction1(TableEnhancer))
-    if (TableHeading != null) __obj.updateDynamic("TableHeading")(TableHeading.asInstanceOf[js.Any])
-    if (TableHeadingCell != null) __obj.updateDynamic("TableHeadingCell")(TableHeadingCell.asInstanceOf[js.Any])
-    if (TableHeadingCellContainer != null) __obj.updateDynamic("TableHeadingCellContainer")(js.Any.fromFunction1(TableHeadingCellContainer))
-    if (TableHeadingCellContainerEnhancer != null) __obj.updateDynamic("TableHeadingCellContainerEnhancer")(js.Any.fromFunction1(TableHeadingCellContainerEnhancer))
-    if (TableHeadingCellEnhancer != null) __obj.updateDynamic("TableHeadingCellEnhancer")(js.Any.fromFunction1(TableHeadingCellEnhancer))
-    if (TableHeadingContainer != null) __obj.updateDynamic("TableHeadingContainer")(js.Any.fromFunction1(TableHeadingContainer))
-    if (TableHeadingContainerEnhancer != null) __obj.updateDynamic("TableHeadingContainerEnhancer")(js.Any.fromFunction1(TableHeadingContainerEnhancer))
-    if (TableHeadingEnhancer != null) __obj.updateDynamic("TableHeadingEnhancer")(js.Any.fromFunction1(TableHeadingEnhancer))
     __obj.asInstanceOf[GriddleComponents]
   }
+  @scala.inline
+  implicit class GriddleComponentsOps[Self <: GriddleComponents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCell(value: GriddleComponent[CellProps]): Self = this.set("Cell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCell: Self = this.set("Cell", js.undefined)
+    @scala.inline
+    def setCellContainer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = this.set("CellContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCellContainer: Self = this.set("CellContainer", js.undefined)
+    @scala.inline
+    def setCellContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = this.set("CellContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCellContainerEnhancer: Self = this.set("CellContainerEnhancer", js.undefined)
+    @scala.inline
+    def setCellEnhancer(value: /* OriginalComponent */ GriddleComponent[CellProps] => GriddleComponent[CellProps]): Self = this.set("CellEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCellEnhancer: Self = this.set("CellEnhancer", js.undefined)
+    @scala.inline
+    def setFilter(value: GriddleComponent[FilterProps]): Self = this.set("Filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("Filter", js.undefined)
+    @scala.inline
+    def setFilterContainer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = this.set("FilterContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterContainer: Self = this.set("FilterContainer", js.undefined)
+    @scala.inline
+    def setFilterContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = this.set("FilterContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterContainerEnhancer: Self = this.set("FilterContainerEnhancer", js.undefined)
+    @scala.inline
+    def setFilterEnhancer(value: /* OriginalComponent */ GriddleComponent[FilterProps] => GriddleComponent[FilterProps]): Self = this.set("FilterEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFilterEnhancer: Self = this.set("FilterEnhancer", js.undefined)
+    @scala.inline
+    def setLayout(value: GriddleComponent[_]): Self = this.set("Layout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLayout: Self = this.set("Layout", js.undefined)
+    @scala.inline
+    def setLayoutContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("LayoutContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLayoutContainer: Self = this.set("LayoutContainer", js.undefined)
+    @scala.inline
+    def setLayoutContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("LayoutContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLayoutContainerEnhancer: Self = this.set("LayoutContainerEnhancer", js.undefined)
+    @scala.inline
+    def setLayoutEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("LayoutEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteLayoutEnhancer: Self = this.set("LayoutEnhancer", js.undefined)
+    @scala.inline
+    def setNextButton(value: GriddleComponent[_]): Self = this.set("NextButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextButton: Self = this.set("NextButton", js.undefined)
+    @scala.inline
+    def setNextButtonContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NextButtonContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNextButtonContainer: Self = this.set("NextButtonContainer", js.undefined)
+    @scala.inline
+    def setNextButtonContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NextButtonContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNextButtonContainerEnhancer: Self = this.set("NextButtonContainerEnhancer", js.undefined)
+    @scala.inline
+    def setNextButtonEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NextButtonEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNextButtonEnhancer: Self = this.set("NextButtonEnhancer", js.undefined)
+    @scala.inline
+    def setNoResults(value: GriddleComponent[_]): Self = this.set("NoResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoResults: Self = this.set("NoResults", js.undefined)
+    @scala.inline
+    def setNoResultsContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NoResultsContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNoResultsContainer: Self = this.set("NoResultsContainer", js.undefined)
+    @scala.inline
+    def setNoResultsContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NoResultsContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNoResultsContainerEnhancer: Self = this.set("NoResultsContainerEnhancer", js.undefined)
+    @scala.inline
+    def setNoResultsEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("NoResultsEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNoResultsEnhancer: Self = this.set("NoResultsEnhancer", js.undefined)
+    @scala.inline
+    def setPageDropdown(value: GriddleComponent[_]): Self = this.set("PageDropdown", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePageDropdown: Self = this.set("PageDropdown", js.undefined)
+    @scala.inline
+    def setPageDropdownContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PageDropdownContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePageDropdownContainer: Self = this.set("PageDropdownContainer", js.undefined)
+    @scala.inline
+    def setPageDropdownContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PageDropdownContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePageDropdownContainerEnhancer: Self = this.set("PageDropdownContainerEnhancer", js.undefined)
+    @scala.inline
+    def setPageDropdownEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PageDropdownEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePageDropdownEnhancer: Self = this.set("PageDropdownEnhancer", js.undefined)
+    @scala.inline
+    def setPagination(value: GriddleComponent[_]): Self = this.set("Pagination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePagination: Self = this.set("Pagination", js.undefined)
+    @scala.inline
+    def setPaginationContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PaginationContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaginationContainer: Self = this.set("PaginationContainer", js.undefined)
+    @scala.inline
+    def setPaginationContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PaginationContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaginationContainerEnhancer: Self = this.set("PaginationContainerEnhancer", js.undefined)
+    @scala.inline
+    def setPaginationEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PaginationEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePaginationEnhancer: Self = this.set("PaginationEnhancer", js.undefined)
+    @scala.inline
+    def setPreviousButton(value: GriddleComponent[_]): Self = this.set("PreviousButton", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousButton: Self = this.set("PreviousButton", js.undefined)
+    @scala.inline
+    def setPreviousButtonContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PreviousButtonContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePreviousButtonContainer: Self = this.set("PreviousButtonContainer", js.undefined)
+    @scala.inline
+    def setPreviousButtonContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PreviousButtonContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePreviousButtonContainerEnhancer: Self = this.set("PreviousButtonContainerEnhancer", js.undefined)
+    @scala.inline
+    def setPreviousButtonEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("PreviousButtonEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePreviousButtonEnhancer: Self = this.set("PreviousButtonEnhancer", js.undefined)
+    @scala.inline
+    def setRow(value: GriddleComponent[RowProps]): Self = this.set("Row", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRow: Self = this.set("Row", js.undefined)
+    @scala.inline
+    def setRowContainer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = this.set("RowContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRowContainer: Self = this.set("RowContainer", js.undefined)
+    @scala.inline
+    def setRowContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = this.set("RowContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRowContainerEnhancer: Self = this.set("RowContainerEnhancer", js.undefined)
+    @scala.inline
+    def setRowEnhancer(value: /* OriginalComponent */ GriddleComponent[RowProps] => GriddleComponent[RowProps]): Self = this.set("RowEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRowEnhancer: Self = this.set("RowEnhancer", js.undefined)
+    @scala.inline
+    def setSettings(value: GriddleComponent[SettingsProps]): Self = this.set("Settings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettings: Self = this.set("Settings", js.undefined)
+    @scala.inline
+    def setSettingsComponents(value: PropertyBag[GriddleComponent[_]]): Self = this.set("SettingsComponents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsComponents: Self = this.set("SettingsComponents", js.undefined)
+    @scala.inline
+    def setSettingsContainer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = this.set("SettingsContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsContainer: Self = this.set("SettingsContainer", js.undefined)
+    @scala.inline
+    def setSettingsContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = this.set("SettingsContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsContainerEnhancer: Self = this.set("SettingsContainerEnhancer", js.undefined)
+    @scala.inline
+    def setSettingsEnhancer(value: /* OriginalComponent */ GriddleComponent[SettingsProps] => GriddleComponent[SettingsProps]): Self = this.set("SettingsEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsEnhancer: Self = this.set("SettingsEnhancer", js.undefined)
+    @scala.inline
+    def setSettingsToggle(value: GriddleComponent[SettingsToggleProps]): Self = this.set("SettingsToggle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsToggle: Self = this.set("SettingsToggle", js.undefined)
+    @scala.inline
+    def setSettingsToggleContainer(
+      value: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps]
+    ): Self = this.set("SettingsToggleContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsToggleContainer: Self = this.set("SettingsToggleContainer", js.undefined)
+    @scala.inline
+    def setSettingsToggleContainerEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps]
+    ): Self = this.set("SettingsToggleContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsToggleContainerEnhancer: Self = this.set("SettingsToggleContainerEnhancer", js.undefined)
+    @scala.inline
+    def setSettingsToggleEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[SettingsToggleProps] => GriddleComponent[SettingsToggleProps]
+    ): Self = this.set("SettingsToggleEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsToggleEnhancer: Self = this.set("SettingsToggleEnhancer", js.undefined)
+    @scala.inline
+    def setSettingsWrapper(value: GriddleComponent[SettingsWrapperProps]): Self = this.set("SettingsWrapper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSettingsWrapper: Self = this.set("SettingsWrapper", js.undefined)
+    @scala.inline
+    def setSettingsWrapperContainer(
+      value: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps]
+    ): Self = this.set("SettingsWrapperContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsWrapperContainer: Self = this.set("SettingsWrapperContainer", js.undefined)
+    @scala.inline
+    def setSettingsWrapperContainerEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps]
+    ): Self = this.set("SettingsWrapperContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsWrapperContainerEnhancer: Self = this.set("SettingsWrapperContainerEnhancer", js.undefined)
+    @scala.inline
+    def setSettingsWrapperEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[SettingsWrapperProps] => GriddleComponent[SettingsWrapperProps]
+    ): Self = this.set("SettingsWrapperEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSettingsWrapperEnhancer: Self = this.set("SettingsWrapperEnhancer", js.undefined)
+    @scala.inline
+    def setStyle(value: GriddleComponent[_]): Self = this.set("Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("Style", js.undefined)
+    @scala.inline
+    def setStyleContainer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("StyleContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStyleContainer: Self = this.set("StyleContainer", js.undefined)
+    @scala.inline
+    def setStyleContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("StyleContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStyleContainerEnhancer: Self = this.set("StyleContainerEnhancer", js.undefined)
+    @scala.inline
+    def setStyleEnhancer(value: /* OriginalComponent */ GriddleComponent[_] => GriddleComponent[_]): Self = this.set("StyleEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStyleEnhancer: Self = this.set("StyleEnhancer", js.undefined)
+    @scala.inline
+    def setTable(value: GriddleComponent[TableProps]): Self = this.set("Table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("Table", js.undefined)
+    @scala.inline
+    def setTableBody(value: GriddleComponent[TableBodyProps]): Self = this.set("TableBody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableBody: Self = this.set("TableBody", js.undefined)
+    @scala.inline
+    def setTableBodyContainer(
+      value: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps]
+    ): Self = this.set("TableBodyContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableBodyContainer: Self = this.set("TableBodyContainer", js.undefined)
+    @scala.inline
+    def setTableBodyContainerEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps]
+    ): Self = this.set("TableBodyContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableBodyContainerEnhancer: Self = this.set("TableBodyContainerEnhancer", js.undefined)
+    @scala.inline
+    def setTableBodyEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[TableBodyProps] => GriddleComponent[TableBodyProps]
+    ): Self = this.set("TableBodyEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableBodyEnhancer: Self = this.set("TableBodyEnhancer", js.undefined)
+    @scala.inline
+    def setTableContainer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = this.set("TableContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableContainer: Self = this.set("TableContainer", js.undefined)
+    @scala.inline
+    def setTableContainerEnhancer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = this.set("TableContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableContainerEnhancer: Self = this.set("TableContainerEnhancer", js.undefined)
+    @scala.inline
+    def setTableEnhancer(value: /* OriginalComponent */ GriddleComponent[TableProps] => GriddleComponent[TableProps]): Self = this.set("TableEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableEnhancer: Self = this.set("TableEnhancer", js.undefined)
+    @scala.inline
+    def setTableHeading(value: GriddleComponent[TableHeadingProps]): Self = this.set("TableHeading", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableHeading: Self = this.set("TableHeading", js.undefined)
+    @scala.inline
+    def setTableHeadingCell(value: GriddleComponent[TableHeadingCellProps]): Self = this.set("TableHeadingCell", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableHeadingCell: Self = this.set("TableHeadingCell", js.undefined)
+    @scala.inline
+    def setTableHeadingCellContainer(
+      value: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps]
+    ): Self = this.set("TableHeadingCellContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableHeadingCellContainer: Self = this.set("TableHeadingCellContainer", js.undefined)
+    @scala.inline
+    def setTableHeadingCellContainerEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps]
+    ): Self = this.set("TableHeadingCellContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableHeadingCellContainerEnhancer: Self = this.set("TableHeadingCellContainerEnhancer", js.undefined)
+    @scala.inline
+    def setTableHeadingCellEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[TableHeadingCellProps] => GriddleComponent[TableHeadingCellProps]
+    ): Self = this.set("TableHeadingCellEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableHeadingCellEnhancer: Self = this.set("TableHeadingCellEnhancer", js.undefined)
+    @scala.inline
+    def setTableHeadingContainer(
+      value: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps]
+    ): Self = this.set("TableHeadingContainer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableHeadingContainer: Self = this.set("TableHeadingContainer", js.undefined)
+    @scala.inline
+    def setTableHeadingContainerEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps]
+    ): Self = this.set("TableHeadingContainerEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableHeadingContainerEnhancer: Self = this.set("TableHeadingContainerEnhancer", js.undefined)
+    @scala.inline
+    def setTableHeadingEnhancer(
+      value: /* OriginalComponent */ GriddleComponent[TableHeadingProps] => GriddleComponent[TableHeadingProps]
+    ): Self = this.set("TableHeadingEnhancer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteTableHeadingEnhancer: Self = this.set("TableHeadingEnhancer", js.undefined)
+  }
+  
 }
 

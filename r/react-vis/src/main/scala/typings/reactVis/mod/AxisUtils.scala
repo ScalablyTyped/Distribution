@@ -12,7 +12,11 @@ object AxisUtils extends js.Object {
   var DIRECTION: HORIZONTAL_ = js.native
   var ORIENTATION: BOTTOM_ = js.native
   def getTickValues(): js.Any = js.native
+  def getTickValues(scale: js.UndefOr[scala.Nothing], tickTotal: js.UndefOr[scala.Nothing], tickValues: js.Any): js.Any = js.native
+  def getTickValues(scale: js.UndefOr[scala.Nothing], tickTotal: js.Any): js.Any = js.native
+  def getTickValues(scale: js.UndefOr[scala.Nothing], tickTotal: js.Any, tickValues: js.Any): js.Any = js.native
   def getTickValues(scale: js.Any): js.Any = js.native
+  def getTickValues(scale: js.Any, tickTotal: js.UndefOr[scala.Nothing], tickValues: js.Any): js.Any = js.native
   def getTickValues(scale: js.Any, tickTotal: js.Any): js.Any = js.native
   def getTickValues(scale: js.Any, tickTotal: js.Any, tickValues: js.Any): js.Any = js.native
   def getTicksTotalFromSize(): js.Any = js.native

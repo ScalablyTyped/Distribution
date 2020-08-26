@@ -31,6 +31,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaTransferConfig] = js.native
   def create(callback: BodyResponseCallback[SchemaTransferConfig]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
   def create(params: ParamsResourceProjectsTransferconfigsCreate): GaxiosPromise[SchemaTransferConfig] = js.native
   def create(
     params: ParamsResourceProjectsTransferconfigsCreate,
@@ -62,6 +63,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTransferconfigsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTransferconfigsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -89,6 +91,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaTransferConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaTransferConfig]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
   def get(params: ParamsResourceProjectsTransferconfigsGet): GaxiosPromise[SchemaTransferConfig] = js.native
   def get(
     params: ParamsResourceProjectsTransferconfigsGet,
@@ -122,6 +125,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferConfigsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsTransferconfigsList): GaxiosPromise[SchemaListTransferConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsTransferconfigsList,
@@ -157,6 +161,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaTransferConfig] = js.native
   def patch(callback: BodyResponseCallback[SchemaTransferConfig]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferConfig] = js.native
   def patch(params: ParamsResourceProjectsTransferconfigsPatch): GaxiosPromise[SchemaTransferConfig] = js.native
   def patch(
     params: ParamsResourceProjectsTransferconfigsPatch,
@@ -191,6 +196,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def scheduleRuns(): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
   def scheduleRuns(callback: BodyResponseCallback[SchemaScheduleTransferRunsResponse]): Unit = js.native
+  def scheduleRuns(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
   def scheduleRuns(params: ParamsResourceProjectsTransferconfigsScheduleruns): GaxiosPromise[SchemaScheduleTransferRunsResponse] = js.native
   def scheduleRuns(
     params: ParamsResourceProjectsTransferconfigsScheduleruns,
@@ -225,6 +231,7 @@ class ResourceProjectsTransferconfigs protected () extends js.Object {
     */
   def startManualRuns(): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
   def startManualRuns(callback: BodyResponseCallback[SchemaStartManualTransferRunsResponse]): Unit = js.native
+  def startManualRuns(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
   def startManualRuns(params: ParamsResourceProjectsTransferconfigsStartmanualruns): GaxiosPromise[SchemaStartManualTransferRunsResponse] = js.native
   def startManualRuns(
     params: ParamsResourceProjectsTransferconfigsStartmanualruns,

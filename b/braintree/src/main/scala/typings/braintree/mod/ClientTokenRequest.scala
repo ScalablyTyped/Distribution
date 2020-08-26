@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClientTokenRequest extends js.Object {
-  var customerId: js.UndefOr[String] = js.undefined
-  var merchantAccountId: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[FailOnDuplicatePaymentMethod] = js.undefined
-  var version: js.UndefOr[String] = js.undefined
+  var customerId: js.UndefOr[String] = js.native
+  var merchantAccountId: js.UndefOr[String] = js.native
+  var options: js.UndefOr[FailOnDuplicatePaymentMethod] = js.native
+  var version: js.UndefOr[String] = js.native
 }
 
 object ClientTokenRequest {
   @scala.inline
-  def apply(
-    customerId: String = null,
-    merchantAccountId: String = null,
-    options: FailOnDuplicatePaymentMethod = null,
-    version: String = null
-  ): ClientTokenRequest = {
+  def apply(): ClientTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (merchantAccountId != null) __obj.updateDynamic("merchantAccountId")(merchantAccountId.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientTokenRequest]
   }
+  @scala.inline
+  implicit class ClientTokenRequestOps[Self <: ClientTokenRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCustomerId(value: String): Self = this.set("customerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomerId: Self = this.set("customerId", js.undefined)
+    @scala.inline
+    def setMerchantAccountId(value: String): Self = this.set("merchantAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMerchantAccountId: Self = this.set("merchantAccountId", js.undefined)
+    @scala.inline
+    def setOptions(value: FailOnDuplicatePaymentMethod): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

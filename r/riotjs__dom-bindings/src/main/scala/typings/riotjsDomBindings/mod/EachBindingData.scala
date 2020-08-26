@@ -4,38 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EachBindingData
   extends BaseBindingData
      with BindingData {
-  var condition: js.UndefOr[(js.Function1[/* scope */ js.Any, _]) | Null] = js.undefined
-  var getKey: js.UndefOr[(js.Function1[/* scope */ js.Any, _]) | Null] = js.undefined
-  var indexName: js.UndefOr[Double] = js.undefined
-  var itemName: String
-  var template: TemplateChunk[_, _]
+  var condition: js.UndefOr[(js.Function1[/* scope */ js.Any, _]) | Null] = js.native
+  var getKey: js.UndefOr[(js.Function1[/* scope */ js.Any, _]) | Null] = js.native
+  var indexName: js.UndefOr[Double] = js.native
+  var itemName: String = js.native
+  var template: TemplateChunk[_, _] = js.native
 }
 
 object EachBindingData {
   @scala.inline
-  def apply(
-    itemName: String,
-    template: TemplateChunk[_, _],
-    condition: js.UndefOr[Null | (/* scope */ js.Any => _)] = js.undefined,
-    evaluate: /* scope */ js.Any => _ = null,
-    getKey: js.UndefOr[Null | (/* scope */ js.Any => _)] = js.undefined,
-    indexName: js.UndefOr[Double] = js.undefined,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): EachBindingData = {
+  def apply(itemName: String, template: TemplateChunk[_, _]): EachBindingData = {
     val __obj = js.Dynamic.literal(itemName = itemName.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
-    if (!js.isUndefined(condition)) __obj.updateDynamic("condition")(if (condition != null) js.Any.fromFunction1(condition.asInstanceOf[/* scope */ js.Any => _]) else null)
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1(evaluate))
-    if (!js.isUndefined(getKey)) __obj.updateDynamic("getKey")(if (getKey != null) js.Any.fromFunction1(getKey.asInstanceOf[/* scope */ js.Any => _]) else null)
-    if (!js.isUndefined(indexName)) __obj.updateDynamic("indexName")(indexName.get.asInstanceOf[js.Any])
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EachBindingData]
   }
+  @scala.inline
+  implicit class EachBindingDataOps[Self <: EachBindingData] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemName(value: String): Self = this.set("itemName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTemplate(value: TemplateChunk[_, _]): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCondition(value: /* scope */ js.Any => _): Self = this.set("condition", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCondition: Self = this.set("condition", js.undefined)
+    @scala.inline
+    def setConditionNull: Self = this.set("condition", null)
+    @scala.inline
+    def setGetKey(value: /* scope */ js.Any => _): Self = this.set("getKey", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteGetKey: Self = this.set("getKey", js.undefined)
+    @scala.inline
+    def setGetKeyNull: Self = this.set("getKey", null)
+    @scala.inline
+    def setIndexName(value: Double): Self = this.set("indexName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndexName: Self = this.set("indexName", js.undefined)
+  }
+  
 }
 

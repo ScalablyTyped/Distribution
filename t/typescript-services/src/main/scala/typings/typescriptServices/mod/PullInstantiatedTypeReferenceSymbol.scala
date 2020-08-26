@@ -14,12 +14,6 @@ class PullInstantiatedTypeReferenceSymbol protected ()
     _typeParameterArgumentMap: TypeArgumentMap,
     isInstanceReferenceType: Boolean
   ) = this()
-  /* CompleteClass */
-  override def getAllowedToReferenceTypeParameters(): js.Array[typings.typescriptServices.TypeScript.PullTypeParameterSymbol] = js.native
-  /* CompleteClass */
-  override def getIsSpecialized(): Boolean = js.native
-  /* CompleteClass */
-  override def getTypeParameterArgumentMap(): TypeArgumentMap = js.native
 }
 
 /* static members */

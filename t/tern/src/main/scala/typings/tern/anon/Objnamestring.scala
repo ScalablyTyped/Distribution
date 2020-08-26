@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined tern.tern/lib/infer.Obj & {  name  :string} */
+/* Inlined tern.tern/lib/infer.Obj & {  name :string} */
 @js.native
 trait Objnamestring extends js.Object {
   /** The name of the type, if any. */

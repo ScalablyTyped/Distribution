@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object pageview extends js.Object {
   def apply(path: String): Unit = js.native
+  def apply(path: String, trackerNames: js.UndefOr[scala.Nothing], title: String): Unit = js.native
   def apply(path: String, trackerNames: TrackerNames): Unit = js.native
   def apply(path: String, trackerNames: TrackerNames, title: String): Unit = js.native
 }

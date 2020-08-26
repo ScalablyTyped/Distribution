@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__firestore-types
 
-Typings are for version 1.11.0
+Typings are for version 1.12.0
 
 ## Library description:
 @firebase/firestore Types
@@ -10,9 +10,9 @@ Typings are for version 1.11.0
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore-types |
 | Keywords           | - |
-| # releases         | 917 |
+| # releases         | 932 |
 | # dependents       | 17 |
-| # downloads        | 17178931 |
+| # downloads        | 17446391 |
 | # stars            | 0 |
 
 ## Links

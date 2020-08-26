@@ -54,6 +54,7 @@ trait URI extends js.Object {
   def fragment(fragment: String): URI = js.native
   def fragmentPrefix(prefix: String): URI = js.native
   def hasQuery(name: /*string | */ js.Any): Boolean = js.native
+  def hasQuery(name: /*string | */ js.Any, value: js.UndefOr[scala.Nothing], withinArray: Boolean): Boolean = js.native
   def hasQuery(name: /*string | */ js.Any, value: String): Boolean = js.native
   def hasQuery(name: /*string | */ js.Any, value: String, withinArray: Boolean): Boolean = js.native
   def hasQuery(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
@@ -67,6 +68,7 @@ trait URI extends js.Object {
   def hasQuery(name: /*string | */ js.Any, value: RegExp): Boolean = js.native
   def hasQuery(name: /*string | */ js.Any, value: RegExp, withinArray: Boolean): Boolean = js.native
   def hasSearch(name: /*string | */ js.Any): Boolean = js.native
+  def hasSearch(name: /*string | */ js.Any, value: js.UndefOr[scala.Nothing], withinArray: Boolean): Boolean = js.native
   def hasSearch(name: /*string | */ js.Any, value: String): Boolean = js.native
   def hasSearch(name: /*string | */ js.Any, value: String, withinArray: Boolean): Boolean = js.native
   def hasSearch(name: /*string | */ js.Any, value: js.Array[Boolean | Double | String]): Boolean = js.native
@@ -87,9 +89,38 @@ trait URI extends js.Object {
   def hostname(hostname: String): URI = js.native
   def href(): String = js.native
   def href(url: String): Unit = js.native
-  def is(
-    qry: relative | absolute | urn | url | domain | name | sld | idn | punycode | ip | ip4 | ipv4 | inet4 | ip6 | ipv6 | inet6
-  ): Boolean = js.native
+  @JSName("is")
+  def is_absolute(qry: absolute): Boolean = js.native
+  @JSName("is")
+  def is_domain(qry: domain): Boolean = js.native
+  @JSName("is")
+  def is_idn(qry: idn): Boolean = js.native
+  @JSName("is")
+  def is_inet4(qry: inet4): Boolean = js.native
+  @JSName("is")
+  def is_inet6(qry: inet6): Boolean = js.native
+  @JSName("is")
+  def is_ip(qry: ip): Boolean = js.native
+  @JSName("is")
+  def is_ip4(qry: ip4): Boolean = js.native
+  @JSName("is")
+  def is_ip6(qry: ip6): Boolean = js.native
+  @JSName("is")
+  def is_ipv4(qry: ipv4): Boolean = js.native
+  @JSName("is")
+  def is_ipv6(qry: ipv6): Boolean = js.native
+  @JSName("is")
+  def is_name(qry: name): Boolean = js.native
+  @JSName("is")
+  def is_punycode(qry: punycode): Boolean = js.native
+  @JSName("is")
+  def is_relative(qry: relative): Boolean = js.native
+  @JSName("is")
+  def is_sld(qry: sld): Boolean = js.native
+  @JSName("is")
+  def is_url(qry: url): Boolean = js.native
+  @JSName("is")
+  def is_urn(qry: urn): Boolean = js.native
   def iso8859(): URI = js.native
   def normalize(): URI = js.native
   def normalizeFragment(): URI = js.native

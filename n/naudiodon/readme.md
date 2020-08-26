@@ -12,7 +12,7 @@ Node Stream bindings for PortAudio.
 | Keywords           | portaudio, audio, play, record, wav, raspberry pi |
 | # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 4855 |
+| # downloads        | 5051 |
 | # stars            | 1 |
 
 ## Links

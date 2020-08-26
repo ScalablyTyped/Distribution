@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@uirouter/core" : "6.0.5"
+      "@uirouter/core" : "6.0.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@uirouter/core" : "6.0.5"
+      "@uirouter/core" : "6.0.6"
     }
   ],
   "compile-devDependencies" : [

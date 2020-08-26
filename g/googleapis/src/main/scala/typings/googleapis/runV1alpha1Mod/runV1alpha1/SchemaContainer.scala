@@ -173,52 +173,120 @@ trait SchemaContainer extends js.Object {
 
 object SchemaContainer {
   @scala.inline
-  def apply(
-    args: js.Array[String] = null,
-    command: js.Array[String] = null,
-    env: js.Array[SchemaEnvVar] = null,
-    envFrom: js.Array[SchemaEnvFromSource] = null,
-    image: String = null,
-    imagePullPolicy: String = null,
-    lifecycle: SchemaLifecycle = null,
-    livenessProbe: SchemaProbe = null,
-    name: String = null,
-    ports: js.Array[SchemaContainerPort] = null,
-    readinessProbe: SchemaProbe = null,
-    resources: SchemaResourceRequirements = null,
-    securityContext: SchemaSecurityContext = null,
-    stdin: js.UndefOr[Boolean] = js.undefined,
-    stdinOnce: js.UndefOr[Boolean] = js.undefined,
-    terminationMessagePath: String = null,
-    terminationMessagePolicy: String = null,
-    tty: js.UndefOr[Boolean] = js.undefined,
-    volumeDevices: js.Array[SchemaVolumeDevice] = null,
-    volumeMounts: js.Array[SchemaVolumeMount] = null,
-    workingDir: String = null
-  ): SchemaContainer = {
+  def apply(): SchemaContainer = {
     val __obj = js.Dynamic.literal()
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (envFrom != null) __obj.updateDynamic("envFrom")(envFrom.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (imagePullPolicy != null) __obj.updateDynamic("imagePullPolicy")(imagePullPolicy.asInstanceOf[js.Any])
-    if (lifecycle != null) __obj.updateDynamic("lifecycle")(lifecycle.asInstanceOf[js.Any])
-    if (livenessProbe != null) __obj.updateDynamic("livenessProbe")(livenessProbe.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (readinessProbe != null) __obj.updateDynamic("readinessProbe")(readinessProbe.asInstanceOf[js.Any])
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (securityContext != null) __obj.updateDynamic("securityContext")(securityContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdin)) __obj.updateDynamic("stdin")(stdin.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stdinOnce)) __obj.updateDynamic("stdinOnce")(stdinOnce.get.asInstanceOf[js.Any])
-    if (terminationMessagePath != null) __obj.updateDynamic("terminationMessagePath")(terminationMessagePath.asInstanceOf[js.Any])
-    if (terminationMessagePolicy != null) __obj.updateDynamic("terminationMessagePolicy")(terminationMessagePolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(tty)) __obj.updateDynamic("tty")(tty.get.asInstanceOf[js.Any])
-    if (volumeDevices != null) __obj.updateDynamic("volumeDevices")(volumeDevices.asInstanceOf[js.Any])
-    if (volumeMounts != null) __obj.updateDynamic("volumeMounts")(volumeMounts.asInstanceOf[js.Any])
-    if (workingDir != null) __obj.updateDynamic("workingDir")(workingDir.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaContainer]
   }
+  @scala.inline
+  implicit class SchemaContainerOps[Self <: SchemaContainer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArgsVarargs(value: String*): Self = this.set("args", js.Array(value :_*))
+    @scala.inline
+    def setArgs(value: js.Array[String]): Self = this.set("args", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArgs: Self = this.set("args", js.undefined)
+    @scala.inline
+    def setCommandVarargs(value: String*): Self = this.set("command", js.Array(value :_*))
+    @scala.inline
+    def setCommand(value: js.Array[String]): Self = this.set("command", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCommand: Self = this.set("command", js.undefined)
+    @scala.inline
+    def setEnvVarargs(value: SchemaEnvVar*): Self = this.set("env", js.Array(value :_*))
+    @scala.inline
+    def setEnv(value: js.Array[SchemaEnvVar]): Self = this.set("env", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnv: Self = this.set("env", js.undefined)
+    @scala.inline
+    def setEnvFromVarargs(value: SchemaEnvFromSource*): Self = this.set("envFrom", js.Array(value :_*))
+    @scala.inline
+    def setEnvFrom(value: js.Array[SchemaEnvFromSource]): Self = this.set("envFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnvFrom: Self = this.set("envFrom", js.undefined)
+    @scala.inline
+    def setImage(value: String): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setImagePullPolicy(value: String): Self = this.set("imagePullPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImagePullPolicy: Self = this.set("imagePullPolicy", js.undefined)
+    @scala.inline
+    def setLifecycle(value: SchemaLifecycle): Self = this.set("lifecycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycle: Self = this.set("lifecycle", js.undefined)
+    @scala.inline
+    def setLivenessProbe(value: SchemaProbe): Self = this.set("livenessProbe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLivenessProbe: Self = this.set("livenessProbe", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPortsVarargs(value: SchemaContainerPort*): Self = this.set("ports", js.Array(value :_*))
+    @scala.inline
+    def setPorts(value: js.Array[SchemaContainerPort]): Self = this.set("ports", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePorts: Self = this.set("ports", js.undefined)
+    @scala.inline
+    def setReadinessProbe(value: SchemaProbe): Self = this.set("readinessProbe", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadinessProbe: Self = this.set("readinessProbe", js.undefined)
+    @scala.inline
+    def setResources(value: SchemaResourceRequirements): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setSecurityContext(value: SchemaSecurityContext): Self = this.set("securityContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityContext: Self = this.set("securityContext", js.undefined)
+    @scala.inline
+    def setStdin(value: Boolean): Self = this.set("stdin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdin: Self = this.set("stdin", js.undefined)
+    @scala.inline
+    def setStdinOnce(value: Boolean): Self = this.set("stdinOnce", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdinOnce: Self = this.set("stdinOnce", js.undefined)
+    @scala.inline
+    def setTerminationMessagePath(value: String): Self = this.set("terminationMessagePath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationMessagePath: Self = this.set("terminationMessagePath", js.undefined)
+    @scala.inline
+    def setTerminationMessagePolicy(value: String): Self = this.set("terminationMessagePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationMessagePolicy: Self = this.set("terminationMessagePolicy", js.undefined)
+    @scala.inline
+    def setTty(value: Boolean): Self = this.set("tty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTty: Self = this.set("tty", js.undefined)
+    @scala.inline
+    def setVolumeDevicesVarargs(value: SchemaVolumeDevice*): Self = this.set("volumeDevices", js.Array(value :_*))
+    @scala.inline
+    def setVolumeDevices(value: js.Array[SchemaVolumeDevice]): Self = this.set("volumeDevices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeDevices: Self = this.set("volumeDevices", js.undefined)
+    @scala.inline
+    def setVolumeMountsVarargs(value: SchemaVolumeMount*): Self = this.set("volumeMounts", js.Array(value :_*))
+    @scala.inline
+    def setVolumeMounts(value: js.Array[SchemaVolumeMount]): Self = this.set("volumeMounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeMounts: Self = this.set("volumeMounts", js.undefined)
+    @scala.inline
+    def setWorkingDir(value: String): Self = this.set("workingDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkingDir: Self = this.set("workingDir", js.undefined)
+  }
+  
 }
 

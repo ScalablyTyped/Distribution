@@ -8,27 +8,28 @@ import scala.scalajs.js.annotation._
 /**
   * A generic class to represent a handle for any kind of asynchronous processed requests
   */
+@js.native
 trait Request extends js.Object {
   /**
     * Returns the number of processingsteps which have been failed
     * @returns {number}
     */
-  def getFailed(): Double
+  def getFailed(): Double = js.native
   /**
     * Returns the number of steps which are already processed by this request
     * @returns {number}
     */
-  def getProcessed(): Double
+  def getProcessed(): Double = js.native
   /**
     * Returns the state of this request
     * @returns {H.util.Request.State}
     */
-  def getState(): State
+  def getState(): State = js.native
   /**
     * Returns the number of processing steps to complete this request
     * @returns {number}
     */
-  def getTotal(): Double
+  def getTotal(): Double = js.native
 }
 
 @JSGlobal("H.util.Request")

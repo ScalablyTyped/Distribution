@@ -14,10 +14,26 @@ trait DeleteCollectionResponse extends js.Object {
 
 object DeleteCollectionResponse {
   @scala.inline
-  def apply(StatusCode: js.UndefOr[UInteger] = js.undefined): DeleteCollectionResponse = {
+  def apply(): DeleteCollectionResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(StatusCode)) __obj.updateDynamic("StatusCode")(StatusCode.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCollectionResponse]
   }
+  @scala.inline
+  implicit class DeleteCollectionResponseOps[Self <: DeleteCollectionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setStatusCode(value: UInteger): Self = this.set("StatusCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusCode: Self = this.set("StatusCode", js.undefined)
+  }
+  
 }
 

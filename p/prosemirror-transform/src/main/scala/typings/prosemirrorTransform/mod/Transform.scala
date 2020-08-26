@@ -80,6 +80,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * last and first siblings are also joined, and so on.
     */
   def join(pos: Double): this.type = js.native
+  def join(pos: Double, depth: js.UndefOr[scala.Nothing], p1: Boolean): this.type = js.native
   def join(pos: Double, depth: Double): this.type = js.native
   def join(pos: Double, depth: Double, p1: Boolean): this.type = js.native
   /**
@@ -109,6 +110,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * given `slice`.
     */
   def replace(from: Double): this.type = js.native
+  def replace(from: Double, to: js.UndefOr[scala.Nothing], slice: Slice[S]): this.type = js.native
   def replace(from: Double, to: Double): this.type = js.native
   def replace(from: Double, to: Double, slice: Slice[S]): this.type = js.native
   /**
@@ -146,18 +148,34 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     */
   def replaceWith(from: Double, to: Double, content: Fragment[S]): this.type = js.native
   def replaceWith(from: Double, to: Double, content: Node[S]): this.type = js.native
+  def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S]): this.type = js.native
+  def setBlockType(from: Double, to: js.UndefOr[scala.Nothing], `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   /**
     * Set the type of all textblocks (partly) between `from` and `to` to
     * the given node type with the given attributes.
     */
-  def setBlockType(from: Double, to: js.UndefOr[Double], `type`: NodeType[S]): this.type = js.native
-  def setBlockType(from: Double, to: js.UndefOr[Double], `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
+  def setBlockType(from: Double, to: Double, `type`: NodeType[S]): this.type = js.native
+  def setBlockType(from: Double, to: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   /**
     * Change the type, attributes, and/or marks of the node at `pos`.
     * When `nodeType` is null, the existing node type is preserved,
     */
   def setNodeMarkup(pos: Double): this.type = js.native
+  def setNodeMarkup(
+    pos: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    attrs: js.UndefOr[scala.Nothing],
+    marks: js.Array[Mark[S]]
+  ): this.type = js.native
+  def setNodeMarkup(pos: Double, `type`: js.UndefOr[scala.Nothing], attrs: StringDictionary[js.Any]): this.type = js.native
+  def setNodeMarkup(
+    pos: Double,
+    `type`: js.UndefOr[scala.Nothing],
+    attrs: StringDictionary[js.Any],
+    marks: js.Array[Mark[S]]
+  ): this.type = js.native
   def setNodeMarkup(pos: Double, `type`: NodeType[S]): this.type = js.native
+  def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: js.UndefOr[scala.Nothing], marks: js.Array[Mark[S]]): this.type = js.native
   def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any]): this.type = js.native
   def setNodeMarkup(pos: Double, `type`: NodeType[S], attrs: StringDictionary[js.Any], marks: js.Array[Mark[S]]): this.type = js.native
   /**
@@ -168,6 +186,7 @@ class Transform[S /* <: Schema[_, _] */] protected () extends js.Object {
     * use after the split.
     */
   def split(pos: Double): this.type = js.native
+  def split(pos: Double, depth: js.UndefOr[scala.Nothing], typesAfter: js.Array[Attrs[S]]): this.type = js.native
   def split(pos: Double, depth: Double): this.type = js.native
   def split(pos: Double, depth: Double, typesAfter: js.Array[Attrs[S]]): this.type = js.native
   /**

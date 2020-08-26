@@ -18,10 +18,28 @@ trait InputTransformer extends js.Object {
 
 object InputTransformer {
   @scala.inline
-  def apply(InputTemplate: TransformerInput, InputPathsMap: TransformerPaths = null): InputTransformer = {
+  def apply(InputTemplate: TransformerInput): InputTransformer = {
     val __obj = js.Dynamic.literal(InputTemplate = InputTemplate.asInstanceOf[js.Any])
-    if (InputPathsMap != null) __obj.updateDynamic("InputPathsMap")(InputPathsMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTransformer]
   }
+  @scala.inline
+  implicit class InputTransformerOps[Self <: InputTransformer] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInputTemplate(value: TransformerInput): Self = this.set("InputTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputPathsMap(value: TransformerPaths): Self = this.set("InputPathsMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputPathsMap: Self = this.set("InputPathsMap", js.undefined)
+  }
+  
 }
 

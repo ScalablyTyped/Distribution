@@ -18,11 +18,30 @@ trait RemoveFromGlobalClusterMessage extends js.Object {
 
 object RemoveFromGlobalClusterMessage {
   @scala.inline
-  def apply(DbClusterIdentifier: String = null, GlobalClusterIdentifier: String = null): RemoveFromGlobalClusterMessage = {
+  def apply(): RemoveFromGlobalClusterMessage = {
     val __obj = js.Dynamic.literal()
-    if (DbClusterIdentifier != null) __obj.updateDynamic("DbClusterIdentifier")(DbClusterIdentifier.asInstanceOf[js.Any])
-    if (GlobalClusterIdentifier != null) __obj.updateDynamic("GlobalClusterIdentifier")(GlobalClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveFromGlobalClusterMessage]
   }
+  @scala.inline
+  implicit class RemoveFromGlobalClusterMessageOps[Self <: RemoveFromGlobalClusterMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDbClusterIdentifier(value: String): Self = this.set("DbClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDbClusterIdentifier: Self = this.set("DbClusterIdentifier", js.undefined)
+    @scala.inline
+    def setGlobalClusterIdentifier(value: String): Self = this.set("GlobalClusterIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGlobalClusterIdentifier: Self = this.set("GlobalClusterIdentifier", js.undefined)
+  }
+  
 }
 

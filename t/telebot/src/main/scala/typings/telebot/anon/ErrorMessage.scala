@@ -4,18 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ErrorMessage extends js.Object {
-  var errorMessage: js.UndefOr[String] = js.undefined
-  var shippingOptions: js.UndefOr[js.Array[_]] = js.undefined
+  var errorMessage: js.UndefOr[String] = js.native
+  var shippingOptions: js.UndefOr[js.Array[_]] = js.native
 }
 
 object ErrorMessage {
   @scala.inline
-  def apply(errorMessage: String = null, shippingOptions: js.Array[_] = null): ErrorMessage = {
+  def apply(): ErrorMessage = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorMessage]
   }
+  @scala.inline
+  implicit class ErrorMessageOps[Self <: ErrorMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setErrorMessage(value: String): Self = this.set("errorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorMessage: Self = this.set("errorMessage", js.undefined)
+    @scala.inline
+    def setShippingOptionsVarargs(value: js.Any*): Self = this.set("shippingOptions", js.Array(value :_*))
+    @scala.inline
+    def setShippingOptions(value: js.Array[_]): Self = this.set("shippingOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShippingOptions: Self = this.set("shippingOptions", js.undefined)
+  }
+  
 }
 

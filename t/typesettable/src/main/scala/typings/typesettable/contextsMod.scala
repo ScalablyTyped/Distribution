@@ -24,6 +24,7 @@ object contextsMod extends js.Object {
     extends typings.typesettable.canvasMod.CanvasContext {
     def this(ctx: CanvasRenderingContext2D) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double) = this()
+    def this(ctx: CanvasRenderingContext2D, lineHeight: js.UndefOr[scala.Nothing], style: ICanvasFontStyle) = this()
     def this(ctx: CanvasRenderingContext2D, lineHeight: Double, style: ICanvasFontStyle) = this()
   }
   
@@ -38,6 +39,7 @@ object contextsMod extends js.Object {
       */
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, className: String) = this()
+    def this(element: HTMLElement, className: js.UndefOr[scala.Nothing], addTitle: Boolean) = this()
     def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
   }
   
@@ -70,6 +72,7 @@ object contextsMod extends js.Object {
     extends typings.typesettable.svgMod.SvgContext {
     def this(element: SVGElement) = this()
     def this(element: SVGElement, className: String) = this()
+    def this(element: SVGElement, className: js.UndefOr[scala.Nothing], addTitleElement: Boolean) = this()
     def this(element: SVGElement, className: String, addTitleElement: Boolean) = this()
   }
   

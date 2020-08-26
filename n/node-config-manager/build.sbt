@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "node-config-manager"
-version := "1.0.2-dt-20200515Z-6bc31c"
-scalaVersion := "2.13.2"
+version := "1.0.2-dt-20200515Z-3a69a2"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

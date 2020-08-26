@@ -42,26 +42,54 @@ trait GetDASHStreamingSessionURLInput extends js.Object {
 
 object GetDASHStreamingSessionURLInput {
   @scala.inline
-  def apply(
-    DASHFragmentSelector: DASHFragmentSelector = null,
-    DisplayFragmentNumber: DASHDisplayFragmentNumber = null,
-    DisplayFragmentTimestamp: DASHDisplayFragmentTimestamp = null,
-    Expires: js.UndefOr[Expires] = js.undefined,
-    MaxManifestFragmentResults: js.UndefOr[PageLimit] = js.undefined,
-    PlaybackMode: DASHPlaybackMode = null,
-    StreamARN: ResourceARN = null,
-    StreamName: StreamName = null
-  ): GetDASHStreamingSessionURLInput = {
+  def apply(): GetDASHStreamingSessionURLInput = {
     val __obj = js.Dynamic.literal()
-    if (DASHFragmentSelector != null) __obj.updateDynamic("DASHFragmentSelector")(DASHFragmentSelector.asInstanceOf[js.Any])
-    if (DisplayFragmentNumber != null) __obj.updateDynamic("DisplayFragmentNumber")(DisplayFragmentNumber.asInstanceOf[js.Any])
-    if (DisplayFragmentTimestamp != null) __obj.updateDynamic("DisplayFragmentTimestamp")(DisplayFragmentTimestamp.asInstanceOf[js.Any])
-    if (!js.isUndefined(Expires)) __obj.updateDynamic("Expires")(Expires.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxManifestFragmentResults)) __obj.updateDynamic("MaxManifestFragmentResults")(MaxManifestFragmentResults.get.asInstanceOf[js.Any])
-    if (PlaybackMode != null) __obj.updateDynamic("PlaybackMode")(PlaybackMode.asInstanceOf[js.Any])
-    if (StreamARN != null) __obj.updateDynamic("StreamARN")(StreamARN.asInstanceOf[js.Any])
-    if (StreamName != null) __obj.updateDynamic("StreamName")(StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDASHStreamingSessionURLInput]
   }
+  @scala.inline
+  implicit class GetDASHStreamingSessionURLInputOps[Self <: GetDASHStreamingSessionURLInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDASHFragmentSelector(value: DASHFragmentSelector): Self = this.set("DASHFragmentSelector", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDASHFragmentSelector: Self = this.set("DASHFragmentSelector", js.undefined)
+    @scala.inline
+    def setDisplayFragmentNumber(value: DASHDisplayFragmentNumber): Self = this.set("DisplayFragmentNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayFragmentNumber: Self = this.set("DisplayFragmentNumber", js.undefined)
+    @scala.inline
+    def setDisplayFragmentTimestamp(value: DASHDisplayFragmentTimestamp): Self = this.set("DisplayFragmentTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayFragmentTimestamp: Self = this.set("DisplayFragmentTimestamp", js.undefined)
+    @scala.inline
+    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("Expires", js.undefined)
+    @scala.inline
+    def setMaxManifestFragmentResults(value: PageLimit): Self = this.set("MaxManifestFragmentResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxManifestFragmentResults: Self = this.set("MaxManifestFragmentResults", js.undefined)
+    @scala.inline
+    def setPlaybackMode(value: DASHPlaybackMode): Self = this.set("PlaybackMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaybackMode: Self = this.set("PlaybackMode", js.undefined)
+    @scala.inline
+    def setStreamARN(value: ResourceARN): Self = this.set("StreamARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamARN: Self = this.set("StreamARN", js.undefined)
+    @scala.inline
+    def setStreamName(value: StreamName): Self = this.set("StreamName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStreamName: Self = this.set("StreamName", js.undefined)
+  }
+  
 }
 

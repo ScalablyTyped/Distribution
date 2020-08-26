@@ -5,88 +5,149 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Partial<{  IARL  :string,   IART  :string,   ICMS  :string,   ICMT  :string,   ICOP  :string,   ICRD  :string | std.Date,   ICRP  :string,   IDIM  :string,   IDPI  :string,   IENG  :string,   IGNR  :string,   IKEY  :string,   ILGT  :string,   ILNG  :string,   IMED  :string,   INAM  :string,   IPLT  :string,   IPRD  :string,   ISBJ  :string,   ISFT  :string,   ISHP  :string,   ISRC  :string,   ISRF  :string,   ITCH  :string}> */
+/* Inlined std.Partial<{  IARL :string,   IART :string,   ICMS :string,   ICMT :string,   ICOP :string,   ICRD :string | std.Date,   ICRP :string,   IDIM :string,   IDPI :string,   IENG :string,   IGNR :string,   IKEY :string,   ILGT :string,   ILNG :string,   IMED :string,   INAM :string,   IPLT :string,   IPRD :string,   ISBJ :string,   ISFT :string,   ISHP :string,   ISRC :string,   ISRF :string,   ITCH :string}> */
+@js.native
 trait AVIMetadata extends js.Object {
-  var IARL: js.UndefOr[String] = js.undefined
-  var IART: js.UndefOr[String] = js.undefined
-  var ICMS: js.UndefOr[String] = js.undefined
-  var ICMT: js.UndefOr[String] = js.undefined
-  var ICOP: js.UndefOr[String] = js.undefined
-  var ICRD: js.UndefOr[String | Date] = js.undefined
-  var ICRP: js.UndefOr[String] = js.undefined
-  var IDIM: js.UndefOr[String] = js.undefined
-  var IDPI: js.UndefOr[String] = js.undefined
-  var IENG: js.UndefOr[String] = js.undefined
-  var IGNR: js.UndefOr[String] = js.undefined
-  var IKEY: js.UndefOr[String] = js.undefined
-  var ILGT: js.UndefOr[String] = js.undefined
-  var ILNG: js.UndefOr[String] = js.undefined
-  var IMED: js.UndefOr[String] = js.undefined
-  var INAM: js.UndefOr[String] = js.undefined
-  var IPLT: js.UndefOr[String] = js.undefined
-  var IPRD: js.UndefOr[String] = js.undefined
-  var ISBJ: js.UndefOr[String] = js.undefined
-  var ISFT: js.UndefOr[String] = js.undefined
-  var ISHP: js.UndefOr[String] = js.undefined
-  var ISRC: js.UndefOr[String] = js.undefined
-  var ISRF: js.UndefOr[String] = js.undefined
-  var ITCH: js.UndefOr[String] = js.undefined
+  var IARL: js.UndefOr[String] = js.native
+  var IART: js.UndefOr[String] = js.native
+  var ICMS: js.UndefOr[String] = js.native
+  var ICMT: js.UndefOr[String] = js.native
+  var ICOP: js.UndefOr[String] = js.native
+  var ICRD: js.UndefOr[String | Date] = js.native
+  var ICRP: js.UndefOr[String] = js.native
+  var IDIM: js.UndefOr[String] = js.native
+  var IDPI: js.UndefOr[String] = js.native
+  var IENG: js.UndefOr[String] = js.native
+  var IGNR: js.UndefOr[String] = js.native
+  var IKEY: js.UndefOr[String] = js.native
+  var ILGT: js.UndefOr[String] = js.native
+  var ILNG: js.UndefOr[String] = js.native
+  var IMED: js.UndefOr[String] = js.native
+  var INAM: js.UndefOr[String] = js.native
+  var IPLT: js.UndefOr[String] = js.native
+  var IPRD: js.UndefOr[String] = js.native
+  var ISBJ: js.UndefOr[String] = js.native
+  var ISFT: js.UndefOr[String] = js.native
+  var ISHP: js.UndefOr[String] = js.native
+  var ISRC: js.UndefOr[String] = js.native
+  var ISRF: js.UndefOr[String] = js.native
+  var ITCH: js.UndefOr[String] = js.native
 }
 
 object AVIMetadata {
   @scala.inline
-  def apply(
-    IARL: String = null,
-    IART: String = null,
-    ICMS: String = null,
-    ICMT: String = null,
-    ICOP: String = null,
-    ICRD: String | Date = null,
-    ICRP: String = null,
-    IDIM: String = null,
-    IDPI: String = null,
-    IENG: String = null,
-    IGNR: String = null,
-    IKEY: String = null,
-    ILGT: String = null,
-    ILNG: String = null,
-    IMED: String = null,
-    INAM: String = null,
-    IPLT: String = null,
-    IPRD: String = null,
-    ISBJ: String = null,
-    ISFT: String = null,
-    ISHP: String = null,
-    ISRC: String = null,
-    ISRF: String = null,
-    ITCH: String = null
-  ): AVIMetadata = {
+  def apply(): AVIMetadata = {
     val __obj = js.Dynamic.literal()
-    if (IARL != null) __obj.updateDynamic("IARL")(IARL.asInstanceOf[js.Any])
-    if (IART != null) __obj.updateDynamic("IART")(IART.asInstanceOf[js.Any])
-    if (ICMS != null) __obj.updateDynamic("ICMS")(ICMS.asInstanceOf[js.Any])
-    if (ICMT != null) __obj.updateDynamic("ICMT")(ICMT.asInstanceOf[js.Any])
-    if (ICOP != null) __obj.updateDynamic("ICOP")(ICOP.asInstanceOf[js.Any])
-    if (ICRD != null) __obj.updateDynamic("ICRD")(ICRD.asInstanceOf[js.Any])
-    if (ICRP != null) __obj.updateDynamic("ICRP")(ICRP.asInstanceOf[js.Any])
-    if (IDIM != null) __obj.updateDynamic("IDIM")(IDIM.asInstanceOf[js.Any])
-    if (IDPI != null) __obj.updateDynamic("IDPI")(IDPI.asInstanceOf[js.Any])
-    if (IENG != null) __obj.updateDynamic("IENG")(IENG.asInstanceOf[js.Any])
-    if (IGNR != null) __obj.updateDynamic("IGNR")(IGNR.asInstanceOf[js.Any])
-    if (IKEY != null) __obj.updateDynamic("IKEY")(IKEY.asInstanceOf[js.Any])
-    if (ILGT != null) __obj.updateDynamic("ILGT")(ILGT.asInstanceOf[js.Any])
-    if (ILNG != null) __obj.updateDynamic("ILNG")(ILNG.asInstanceOf[js.Any])
-    if (IMED != null) __obj.updateDynamic("IMED")(IMED.asInstanceOf[js.Any])
-    if (INAM != null) __obj.updateDynamic("INAM")(INAM.asInstanceOf[js.Any])
-    if (IPLT != null) __obj.updateDynamic("IPLT")(IPLT.asInstanceOf[js.Any])
-    if (IPRD != null) __obj.updateDynamic("IPRD")(IPRD.asInstanceOf[js.Any])
-    if (ISBJ != null) __obj.updateDynamic("ISBJ")(ISBJ.asInstanceOf[js.Any])
-    if (ISFT != null) __obj.updateDynamic("ISFT")(ISFT.asInstanceOf[js.Any])
-    if (ISHP != null) __obj.updateDynamic("ISHP")(ISHP.asInstanceOf[js.Any])
-    if (ISRC != null) __obj.updateDynamic("ISRC")(ISRC.asInstanceOf[js.Any])
-    if (ISRF != null) __obj.updateDynamic("ISRF")(ISRF.asInstanceOf[js.Any])
-    if (ITCH != null) __obj.updateDynamic("ITCH")(ITCH.asInstanceOf[js.Any])
     __obj.asInstanceOf[AVIMetadata]
   }
+  @scala.inline
+  implicit class AVIMetadataOps[Self <: AVIMetadata] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIARL(value: String): Self = this.set("IARL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIARL: Self = this.set("IARL", js.undefined)
+    @scala.inline
+    def setIART(value: String): Self = this.set("IART", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIART: Self = this.set("IART", js.undefined)
+    @scala.inline
+    def setICMS(value: String): Self = this.set("ICMS", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteICMS: Self = this.set("ICMS", js.undefined)
+    @scala.inline
+    def setICMT(value: String): Self = this.set("ICMT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteICMT: Self = this.set("ICMT", js.undefined)
+    @scala.inline
+    def setICOP(value: String): Self = this.set("ICOP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteICOP: Self = this.set("ICOP", js.undefined)
+    @scala.inline
+    def setICRD(value: String | Date): Self = this.set("ICRD", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteICRD: Self = this.set("ICRD", js.undefined)
+    @scala.inline
+    def setICRP(value: String): Self = this.set("ICRP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteICRP: Self = this.set("ICRP", js.undefined)
+    @scala.inline
+    def setIDIM(value: String): Self = this.set("IDIM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIDIM: Self = this.set("IDIM", js.undefined)
+    @scala.inline
+    def setIDPI(value: String): Self = this.set("IDPI", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIDPI: Self = this.set("IDPI", js.undefined)
+    @scala.inline
+    def setIENG(value: String): Self = this.set("IENG", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIENG: Self = this.set("IENG", js.undefined)
+    @scala.inline
+    def setIGNR(value: String): Self = this.set("IGNR", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIGNR: Self = this.set("IGNR", js.undefined)
+    @scala.inline
+    def setIKEY(value: String): Self = this.set("IKEY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIKEY: Self = this.set("IKEY", js.undefined)
+    @scala.inline
+    def setILGT(value: String): Self = this.set("ILGT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteILGT: Self = this.set("ILGT", js.undefined)
+    @scala.inline
+    def setILNG(value: String): Self = this.set("ILNG", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteILNG: Self = this.set("ILNG", js.undefined)
+    @scala.inline
+    def setIMED(value: String): Self = this.set("IMED", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIMED: Self = this.set("IMED", js.undefined)
+    @scala.inline
+    def setINAM(value: String): Self = this.set("INAM", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteINAM: Self = this.set("INAM", js.undefined)
+    @scala.inline
+    def setIPLT(value: String): Self = this.set("IPLT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPLT: Self = this.set("IPLT", js.undefined)
+    @scala.inline
+    def setIPRD(value: String): Self = this.set("IPRD", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIPRD: Self = this.set("IPRD", js.undefined)
+    @scala.inline
+    def setISBJ(value: String): Self = this.set("ISBJ", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteISBJ: Self = this.set("ISBJ", js.undefined)
+    @scala.inline
+    def setISFT(value: String): Self = this.set("ISFT", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteISFT: Self = this.set("ISFT", js.undefined)
+    @scala.inline
+    def setISHP(value: String): Self = this.set("ISHP", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteISHP: Self = this.set("ISHP", js.undefined)
+    @scala.inline
+    def setISRC(value: String): Self = this.set("ISRC", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteISRC: Self = this.set("ISRC", js.undefined)
+    @scala.inline
+    def setISRF(value: String): Self = this.set("ISRF", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteISRF: Self = this.set("ISRF", js.undefined)
+    @scala.inline
+    def setITCH(value: String): Self = this.set("ITCH", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteITCH: Self = this.set("ITCH", js.undefined)
+  }
+  
 }
 

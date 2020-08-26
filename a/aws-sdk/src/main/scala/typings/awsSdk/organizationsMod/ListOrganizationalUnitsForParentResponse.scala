@@ -18,11 +18,32 @@ trait ListOrganizationalUnitsForParentResponse extends js.Object {
 
 object ListOrganizationalUnitsForParentResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, OrganizationalUnits: OrganizationalUnits = null): ListOrganizationalUnitsForParentResponse = {
+  def apply(): ListOrganizationalUnitsForParentResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (OrganizationalUnits != null) __obj.updateDynamic("OrganizationalUnits")(OrganizationalUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListOrganizationalUnitsForParentResponse]
   }
+  @scala.inline
+  implicit class ListOrganizationalUnitsForParentResponseOps[Self <: ListOrganizationalUnitsForParentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setOrganizationalUnitsVarargs(value: OrganizationalUnit*): Self = this.set("OrganizationalUnits", js.Array(value :_*))
+    @scala.inline
+    def setOrganizationalUnits(value: OrganizationalUnits): Self = this.set("OrganizationalUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnits: Self = this.set("OrganizationalUnits", js.undefined)
+  }
+  
 }
 

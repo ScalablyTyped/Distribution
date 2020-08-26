@@ -7,19 +7,10 @@ import scala.scalajs.js.annotation._
 
 object expoStrings {
   @js.native
-  sealed trait FaceAnchor extends js.Object
-  
-  @js.native
-  sealed trait cancel extends js.Object
-  
-  @js.native
   sealed trait day extends js.Object
   
   @js.native
   sealed trait debug extends LogLevel
-  
-  @js.native
-  sealed trait dismiss extends js.Object
   
   @js.native
   sealed trait downloadFinished extends js.Object
@@ -40,9 +31,6 @@ object expoStrings {
   sealed trait info extends LogLevel
   
   @js.native
-  sealed trait locked extends js.Object
-  
-  @js.native
   sealed trait minute extends js.Object
   
   @js.native
@@ -58,12 +46,6 @@ object expoStrings {
   sealed trait selected extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
-  
-  @js.native
-  sealed trait url extends js.Object
-  
-  @js.native
   sealed trait warn extends LogLevel
   
   @js.native
@@ -73,15 +55,9 @@ object expoStrings {
   sealed trait year extends js.Object
   
   @scala.inline
-  def FaceAnchor: FaceAnchor = "FaceAnchor".asInstanceOf[FaceAnchor]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
   def day: day = "day".asInstanceOf[day]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
   @scala.inline
   def downloadFinished: downloadFinished = "downloadFinished".asInstanceOf[downloadFinished]
   @scala.inline
@@ -95,8 +71,6 @@ object expoStrings {
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline
-  def locked: locked = "locked".asInstanceOf[locked]
-  @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
@@ -106,10 +80,6 @@ object expoStrings {
   def received: received = "received".asInstanceOf[received]
   @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   @scala.inline

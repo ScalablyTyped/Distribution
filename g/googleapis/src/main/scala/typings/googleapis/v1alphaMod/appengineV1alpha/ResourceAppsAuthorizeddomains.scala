@@ -29,6 +29,7 @@ class ResourceAppsAuthorizeddomains protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListAuthorizedDomainsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAuthorizedDomainsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAuthorizedDomainsResponse] = js.native
   def list(params: ParamsResourceAppsAuthorizeddomainsList): GaxiosPromise[SchemaListAuthorizedDomainsResponse] = js.native
   def list(
     params: ParamsResourceAppsAuthorizeddomainsList,

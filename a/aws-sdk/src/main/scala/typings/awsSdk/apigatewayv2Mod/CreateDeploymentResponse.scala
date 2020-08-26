@@ -34,22 +34,46 @@ trait CreateDeploymentResponse extends js.Object {
 
 object CreateDeploymentResponse {
   @scala.inline
-  def apply(
-    AutoDeployed: js.UndefOr[boolean] = js.undefined,
-    CreatedDate: timestampIso8601 = null,
-    DeploymentId: Id = null,
-    DeploymentStatus: DeploymentStatus = null,
-    DeploymentStatusMessage: string = null,
-    Description: StringWithLengthBetween0And1024 = null
-  ): CreateDeploymentResponse = {
+  def apply(): CreateDeploymentResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(AutoDeployed)) __obj.updateDynamic("AutoDeployed")(AutoDeployed.get.asInstanceOf[js.Any])
-    if (CreatedDate != null) __obj.updateDynamic("CreatedDate")(CreatedDate.asInstanceOf[js.Any])
-    if (DeploymentId != null) __obj.updateDynamic("DeploymentId")(DeploymentId.asInstanceOf[js.Any])
-    if (DeploymentStatus != null) __obj.updateDynamic("DeploymentStatus")(DeploymentStatus.asInstanceOf[js.Any])
-    if (DeploymentStatusMessage != null) __obj.updateDynamic("DeploymentStatusMessage")(DeploymentStatusMessage.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentResponse]
   }
+  @scala.inline
+  implicit class CreateDeploymentResponseOps[Self <: CreateDeploymentResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoDeployed(value: boolean): Self = this.set("AutoDeployed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeployed: Self = this.set("AutoDeployed", js.undefined)
+    @scala.inline
+    def setCreatedDate(value: timestampIso8601): Self = this.set("CreatedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreatedDate: Self = this.set("CreatedDate", js.undefined)
+    @scala.inline
+    def setDeploymentId(value: Id): Self = this.set("DeploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("DeploymentId", js.undefined)
+    @scala.inline
+    def setDeploymentStatus(value: DeploymentStatus): Self = this.set("DeploymentStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStatus: Self = this.set("DeploymentStatus", js.undefined)
+    @scala.inline
+    def setDeploymentStatusMessage(value: string): Self = this.set("DeploymentStatusMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStatusMessage: Self = this.set("DeploymentStatusMessage", js.undefined)
+    @scala.inline
+    def setDescription(value: StringWithLengthBetween0And1024): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

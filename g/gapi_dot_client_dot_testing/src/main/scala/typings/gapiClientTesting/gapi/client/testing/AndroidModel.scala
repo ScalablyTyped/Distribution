@@ -4,57 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AndroidModel extends js.Object {
   /**
     * The company that this device is branded with.
     * Example: "Google", "Samsung"
     * @OutputOnly
     */
-  var brand: js.UndefOr[String] = js.undefined
+  var brand: js.UndefOr[String] = js.native
   /**
     * The name of the industrial design.
     * This corresponds to android.os.Build.DEVICE
     * @OutputOnly
     */
-  var codename: js.UndefOr[String] = js.undefined
+  var codename: js.UndefOr[String] = js.native
   /**
     * Whether this device is virtual or physical.
     * @OutputOnly
     */
-  var form: js.UndefOr[String] = js.undefined
+  var form: js.UndefOr[String] = js.native
   /**
     * The unique opaque id for this model.
     * Use this for invoking the TestExecutionService.
     * @OutputOnly
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String] = js.native
   /**
     * The manufacturer of this device.
     * @OutputOnly
     */
-  var manufacturer: js.UndefOr[String] = js.undefined
+  var manufacturer: js.UndefOr[String] = js.native
   /**
     * The human-readable marketing name for this device model.
     * Examples: "Nexus 5", "Galaxy S5"
     * @OutputOnly
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /**
     * Screen density in DPI.
     * This corresponds to ro.sf.lcd_density
     * @OutputOnly
     */
-  var screenDensity: js.UndefOr[Double] = js.undefined
+  var screenDensity: js.UndefOr[Double] = js.native
   /**
     * Screen size in the horizontal (X) dimension measured in pixels.
     * @OutputOnly
     */
-  var screenX: js.UndefOr[Double] = js.undefined
+  var screenX: js.UndefOr[Double] = js.native
   /**
     * Screen size in the vertical (Y) dimension measured in pixels.
     * @OutputOnly
     */
-  var screenY: js.UndefOr[Double] = js.undefined
+  var screenY: js.UndefOr[Double] = js.native
   /**
     * The list of supported ABIs for this device.
     * This corresponds to either android.os.Build.SUPPORTED_ABIS (for API level
@@ -66,49 +67,91 @@ trait AndroidModel extends js.Object {
     * a particular version.
     * @OutputOnly
     */
-  var supportedAbis: js.UndefOr[js.Array[String]] = js.undefined
+  var supportedAbis: js.UndefOr[js.Array[String]] = js.native
   /**
     * The set of Android versions this device supports.
     * @OutputOnly
     */
-  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.undefined
+  var supportedVersionIds: js.UndefOr[js.Array[String]] = js.native
   /**
     * Tags for this dimension.
     * Examples: "default", "preview", "deprecated"
     */
-  var tags: js.UndefOr[js.Array[String]] = js.undefined
+  var tags: js.UndefOr[js.Array[String]] = js.native
 }
 
 object AndroidModel {
   @scala.inline
-  def apply(
-    brand: String = null,
-    codename: String = null,
-    form: String = null,
-    id: String = null,
-    manufacturer: String = null,
-    name: String = null,
-    screenDensity: js.UndefOr[Double] = js.undefined,
-    screenX: js.UndefOr[Double] = js.undefined,
-    screenY: js.UndefOr[Double] = js.undefined,
-    supportedAbis: js.Array[String] = null,
-    supportedVersionIds: js.Array[String] = null,
-    tags: js.Array[String] = null
-  ): AndroidModel = {
+  def apply(): AndroidModel = {
     val __obj = js.Dynamic.literal()
-    if (brand != null) __obj.updateDynamic("brand")(brand.asInstanceOf[js.Any])
-    if (codename != null) __obj.updateDynamic("codename")(codename.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenDensity)) __obj.updateDynamic("screenDensity")(screenDensity.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenX)) __obj.updateDynamic("screenX")(screenX.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenY)) __obj.updateDynamic("screenY")(screenY.get.asInstanceOf[js.Any])
-    if (supportedAbis != null) __obj.updateDynamic("supportedAbis")(supportedAbis.asInstanceOf[js.Any])
-    if (supportedVersionIds != null) __obj.updateDynamic("supportedVersionIds")(supportedVersionIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidModel]
   }
+  @scala.inline
+  implicit class AndroidModelOps[Self <: AndroidModel] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrand(value: String): Self = this.set("brand", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrand: Self = this.set("brand", js.undefined)
+    @scala.inline
+    def setCodename(value: String): Self = this.set("codename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCodename: Self = this.set("codename", js.undefined)
+    @scala.inline
+    def setForm(value: String): Self = this.set("form", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForm: Self = this.set("form", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setManufacturer(value: String): Self = this.set("manufacturer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManufacturer: Self = this.set("manufacturer", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setScreenDensity(value: Double): Self = this.set("screenDensity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenDensity: Self = this.set("screenDensity", js.undefined)
+    @scala.inline
+    def setScreenX(value: Double): Self = this.set("screenX", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenX: Self = this.set("screenX", js.undefined)
+    @scala.inline
+    def setScreenY(value: Double): Self = this.set("screenY", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenY: Self = this.set("screenY", js.undefined)
+    @scala.inline
+    def setSupportedAbisVarargs(value: String*): Self = this.set("supportedAbis", js.Array(value :_*))
+    @scala.inline
+    def setSupportedAbis(value: js.Array[String]): Self = this.set("supportedAbis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedAbis: Self = this.set("supportedAbis", js.undefined)
+    @scala.inline
+    def setSupportedVersionIdsVarargs(value: String*): Self = this.set("supportedVersionIds", js.Array(value :_*))
+    @scala.inline
+    def setSupportedVersionIds(value: js.Array[String]): Self = this.set("supportedVersionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupportedVersionIds: Self = this.set("supportedVersionIds", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: String*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: js.Array[String]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

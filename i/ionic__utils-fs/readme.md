@@ -10,9 +10,9 @@ Filesystem utils for Node
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-fs |
 | Keywords           | - |
-| # releases         | 31 |
+| # releases         | 30 |
 | # dependents       | 10 |
-| # downloads        | 3005065 |
+| # downloads        | 3024722 |
 | # stars            | 0 |
 
 ## Links

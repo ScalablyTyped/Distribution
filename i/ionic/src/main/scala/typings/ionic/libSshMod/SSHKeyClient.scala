@@ -28,8 +28,6 @@ class SSHKeyClient protected ()
   var client: IClient = js.native
   var token: String = js.native
   var user: IdNumber = js.native
-  /* CompleteClass */
-  override def create(details: SSHKeyCreateDetails): js.Promise[SSHKey] = js.native
   def load(id: String): js.Promise[SSHKey] = js.native
   def paginate(args: PartialPaginateArgsResponMax): IPaginator[Response[js.Array[SSHKey]], PaginatorState] = js.native
 }

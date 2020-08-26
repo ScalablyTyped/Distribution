@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   *
   *
   */
+@js.native
 trait BootstrapOptions extends js.Object {
   /**
     * Optionally specify which `NgZone` should be used.
@@ -19,7 +20,7 @@ trait BootstrapOptions extends js.Object {
     * - `zone.js` - Use default `NgZone` which requires `Zone.js`.
     * - `noop` - Use `NoopNgZone` which does nothing.
     */
-  var ngZone: js.UndefOr[NgZone | zoneDotjs | noop] = js.undefined
+  var ngZone: js.UndefOr[NgZone | zoneDotjs | noop] = js.native
   /**
     * Optionally specify coalescing event change detections or not.
     * Consider the following case.
@@ -39,19 +40,35 @@ trait BootstrapOptions extends js.Object {
     * triggered async by scheduling a animation frame. So in the case above,
     * the change detection will only be trigged once.
     */
-  var ngZoneEventCoalescing: js.UndefOr[Boolean] = js.undefined
+  var ngZoneEventCoalescing: js.UndefOr[Boolean] = js.native
 }
 
 object BootstrapOptions {
   @scala.inline
-  def apply(
-    ngZone: NgZone | zoneDotjs | noop = null,
-    ngZoneEventCoalescing: js.UndefOr[Boolean] = js.undefined
-  ): BootstrapOptions = {
+  def apply(): BootstrapOptions = {
     val __obj = js.Dynamic.literal()
-    if (ngZone != null) __obj.updateDynamic("ngZone")(ngZone.asInstanceOf[js.Any])
-    if (!js.isUndefined(ngZoneEventCoalescing)) __obj.updateDynamic("ngZoneEventCoalescing")(ngZoneEventCoalescing.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapOptions]
   }
+  @scala.inline
+  implicit class BootstrapOptionsOps[Self <: BootstrapOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNgZone(value: NgZone | zoneDotjs | noop): Self = this.set("ngZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNgZone: Self = this.set("ngZone", js.undefined)
+    @scala.inline
+    def setNgZoneEventCoalescing(value: Boolean): Self = this.set("ngZoneEventCoalescing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNgZoneEventCoalescing: Self = this.set("ngZoneEventCoalescing", js.undefined)
+  }
+  
 }
 

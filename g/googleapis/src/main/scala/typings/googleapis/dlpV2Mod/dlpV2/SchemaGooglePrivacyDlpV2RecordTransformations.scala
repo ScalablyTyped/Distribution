@@ -23,14 +23,34 @@ trait SchemaGooglePrivacyDlpV2RecordTransformations extends js.Object {
 
 object SchemaGooglePrivacyDlpV2RecordTransformations {
   @scala.inline
-  def apply(
-    fieldTransformations: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation] = null,
-    recordSuppressions: js.Array[SchemaGooglePrivacyDlpV2RecordSuppression] = null
-  ): SchemaGooglePrivacyDlpV2RecordTransformations = {
+  def apply(): SchemaGooglePrivacyDlpV2RecordTransformations = {
     val __obj = js.Dynamic.literal()
-    if (fieldTransformations != null) __obj.updateDynamic("fieldTransformations")(fieldTransformations.asInstanceOf[js.Any])
-    if (recordSuppressions != null) __obj.updateDynamic("recordSuppressions")(recordSuppressions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RecordTransformations]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2RecordTransformationsOps[Self <: SchemaGooglePrivacyDlpV2RecordTransformations] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = this.set("fieldTransformations", js.Array(value :_*))
+    @scala.inline
+    def setFieldTransformations(value: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]): Self = this.set("fieldTransformations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFieldTransformations: Self = this.set("fieldTransformations", js.undefined)
+    @scala.inline
+    def setRecordSuppressionsVarargs(value: SchemaGooglePrivacyDlpV2RecordSuppression*): Self = this.set("recordSuppressions", js.Array(value :_*))
+    @scala.inline
+    def setRecordSuppressions(value: js.Array[SchemaGooglePrivacyDlpV2RecordSuppression]): Self = this.set("recordSuppressions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecordSuppressions: Self = this.set("recordSuppressions", js.undefined)
+  }
+  
 }
 

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rmc-steps" : "1.0.0"
+      "rmc-steps" : "1.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "rmc-steps" : "1.0.0"
+      "rmc-steps" : "1.0.1"
     }
   ],
   "compile-devDependencies" : [

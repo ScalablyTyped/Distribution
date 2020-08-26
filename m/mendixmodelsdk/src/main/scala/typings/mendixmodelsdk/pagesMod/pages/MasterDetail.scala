@@ -32,12 +32,12 @@ class MasterDetail protected () extends Widget {
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def detail: MasterDetailDetailRegion = js.native
-  def detail(newValue: MasterDetailDetailRegion): js.Any = js.native
+  def detail_=(newValue: MasterDetailDetailRegion): Unit = js.native
   /**
     * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
     */
   def master: MasterDetailMasterRegion = js.native
-  def master(newValue: MasterDetailMasterRegion): js.Any = js.native
+  def master_=(newValue: MasterDetailMasterRegion): Unit = js.native
 }
 
 /* static members */

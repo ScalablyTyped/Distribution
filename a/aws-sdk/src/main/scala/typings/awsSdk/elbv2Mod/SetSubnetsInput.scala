@@ -22,11 +22,36 @@ trait SetSubnetsInput extends js.Object {
 
 object SetSubnetsInput {
   @scala.inline
-  def apply(LoadBalancerArn: LoadBalancerArn, SubnetMappings: SubnetMappings = null, Subnets: Subnets = null): SetSubnetsInput = {
+  def apply(LoadBalancerArn: LoadBalancerArn): SetSubnetsInput = {
     val __obj = js.Dynamic.literal(LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
-    if (SubnetMappings != null) __obj.updateDynamic("SubnetMappings")(SubnetMappings.asInstanceOf[js.Any])
-    if (Subnets != null) __obj.updateDynamic("Subnets")(Subnets.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetSubnetsInput]
   }
+  @scala.inline
+  implicit class SetSubnetsInputOps[Self <: SetSubnetsInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLoadBalancerArn(value: LoadBalancerArn): Self = this.set("LoadBalancerArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSubnetMappingsVarargs(value: SubnetMapping*): Self = this.set("SubnetMappings", js.Array(value :_*))
+    @scala.inline
+    def setSubnetMappings(value: SubnetMappings): Self = this.set("SubnetMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetMappings: Self = this.set("SubnetMappings", js.undefined)
+    @scala.inline
+    def setSubnetsVarargs(value: SubnetId*): Self = this.set("Subnets", js.Array(value :_*))
+    @scala.inline
+    def setSubnets(value: Subnets): Self = this.set("Subnets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnets: Self = this.set("Subnets", js.undefined)
+  }
+  
 }
 

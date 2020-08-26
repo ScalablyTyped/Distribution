@@ -26,17 +26,36 @@ trait UserPhoneConfig extends js.Object {
 
 object UserPhoneConfig {
   @scala.inline
-  def apply(
-    PhoneType: PhoneType,
-    AfterContactWorkTimeLimit: js.UndefOr[AfterContactWorkTimeLimit] = js.undefined,
-    AutoAccept: js.UndefOr[AutoAccept] = js.undefined,
-    DeskPhoneNumber: PhoneNumber = null
-  ): UserPhoneConfig = {
+  def apply(PhoneType: PhoneType): UserPhoneConfig = {
     val __obj = js.Dynamic.literal(PhoneType = PhoneType.asInstanceOf[js.Any])
-    if (!js.isUndefined(AfterContactWorkTimeLimit)) __obj.updateDynamic("AfterContactWorkTimeLimit")(AfterContactWorkTimeLimit.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(AutoAccept)) __obj.updateDynamic("AutoAccept")(AutoAccept.get.asInstanceOf[js.Any])
-    if (DeskPhoneNumber != null) __obj.updateDynamic("DeskPhoneNumber")(DeskPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPhoneConfig]
   }
+  @scala.inline
+  implicit class UserPhoneConfigOps[Self <: UserPhoneConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPhoneType(value: PhoneType): Self = this.set("PhoneType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAfterContactWorkTimeLimit(value: AfterContactWorkTimeLimit): Self = this.set("AfterContactWorkTimeLimit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAfterContactWorkTimeLimit: Self = this.set("AfterContactWorkTimeLimit", js.undefined)
+    @scala.inline
+    def setAutoAccept(value: AutoAccept): Self = this.set("AutoAccept", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoAccept: Self = this.set("AutoAccept", js.undefined)
+    @scala.inline
+    def setDeskPhoneNumber(value: PhoneNumber): Self = this.set("DeskPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeskPhoneNumber: Self = this.set("DeskPhoneNumber", js.undefined)
+  }
+  
 }
 

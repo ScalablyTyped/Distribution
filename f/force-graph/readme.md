@@ -10,9 +10,9 @@ Typings are for version 1.21
 | ------------------ | :-------------: |
 | Full name          | force-graph |
 | Keywords           | 2d, force, simulation, graph, canvas, d3 |
-| # releases         | 95 |
+| # releases         | 96 |
 | # dependents       | 5 |
-| # downloads        | 52108 |
+| # downloads        | 55309 |
 | # stars            | 0 |
 
 ## Links

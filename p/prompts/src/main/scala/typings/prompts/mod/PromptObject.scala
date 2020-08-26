@@ -7,83 +7,157 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PromptObject[T /* <: String */] extends js.Object {
-  var active: js.UndefOr[String] = js.undefined
-  var choices: js.UndefOr[js.Array[Choice]] = js.undefined
-  var float: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[PrevCaller[T, Unit]] = js.undefined
-  var hint: js.UndefOr[String] = js.undefined
-  var inactive: js.UndefOr[String] = js.undefined
-  var increment: js.UndefOr[Double] = js.undefined
-  var initial: js.UndefOr[String | Double | Boolean | Date] = js.undefined
-  var limit: js.UndefOr[Double] = js.undefined
-  var mask: js.UndefOr[String] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var message: js.UndefOr[ValueOrFunc[String]] = js.undefined
-  var min: js.UndefOr[Double] = js.undefined
-  var name: ValueOrFunc[T]
-  var onState: js.UndefOr[PrevCaller[T, Unit]] = js.undefined
-  var round: js.UndefOr[Double] = js.undefined
-  var separator: js.UndefOr[String] = js.undefined
-  var stdin: js.UndefOr[Readable] = js.undefined
-  var stdout: js.UndefOr[Writable] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var suggest: js.UndefOr[js.Function2[/* input */ js.Any, /* choices */ js.Array[Choice], js.Promise[_]]] = js.undefined
-  var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])
-  var validate: js.UndefOr[PrevCaller[T, Boolean | String | (js.Promise[Boolean | String])]] = js.undefined
+  var active: js.UndefOr[String] = js.native
+  var choices: js.UndefOr[js.Array[Choice]] = js.native
+  var float: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[PrevCaller[T, Unit]] = js.native
+  var hint: js.UndefOr[String] = js.native
+  var inactive: js.UndefOr[String] = js.native
+  var increment: js.UndefOr[Double] = js.native
+  var initial: js.UndefOr[String | Double | Boolean | Date] = js.native
+  var limit: js.UndefOr[Double] = js.native
+  var mask: js.UndefOr[String] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var message: js.UndefOr[ValueOrFunc[String]] = js.native
+  var min: js.UndefOr[Double] = js.native
+  var name: ValueOrFunc[T] = js.native
+  var onState: js.UndefOr[PrevCaller[T, Unit]] = js.native
+  var round: js.UndefOr[Double] = js.native
+  var separator: js.UndefOr[String] = js.native
+  var stdin: js.UndefOr[Readable] = js.native
+  var stdout: js.UndefOr[Writable] = js.native
+  var style: js.UndefOr[String] = js.native
+  var suggest: js.UndefOr[js.Function2[/* input */ js.Any, /* choices */ js.Array[Choice], js.Promise[_]]] = js.native
+  var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy]) = js.native
+  var validate: js.UndefOr[PrevCaller[T, Boolean | String | (js.Promise[Boolean | String])]] = js.native
 }
 
 object PromptObject {
   @scala.inline
-  def apply[/* <: java.lang.String */ T](
-    name: ValueOrFunc[T],
-    active: String = null,
-    choices: js.Array[Choice] = null,
-    float: js.UndefOr[Boolean] = js.undefined,
-    format: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit = null,
-    hint: String = null,
-    inactive: String = null,
-    increment: js.UndefOr[Double] = js.undefined,
-    initial: String | Double | Boolean | Date = null,
-    limit: js.UndefOr[Double] = js.undefined,
-    mask: String = null,
-    max: js.UndefOr[Double] = js.undefined,
-    message: ValueOrFunc[String] = null,
-    min: js.UndefOr[Double] = js.undefined,
-    onState: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit = null,
-    round: js.UndefOr[Double] = js.undefined,
-    separator: String = null,
-    stdin: Readable = null,
-    stdout: Writable = null,
-    style: String = null,
-    suggest: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[_] = null,
-    `type`: js.UndefOr[Null | PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])] = js.undefined,
-    validate: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Boolean | String | (js.Promise[Boolean | String]) = null
-  ): PromptObject[T] = {
+  def apply[/* <: java.lang.String */ T](name: ValueOrFunc[T]): PromptObject[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3(format))
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (inactive != null) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(increment)) __obj.updateDynamic("increment")(increment.get.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.get.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (onState != null) __obj.updateDynamic("onState")(js.Any.fromFunction3(onState))
-    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round.get.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (stdin != null) __obj.updateDynamic("stdin")(stdin.asInstanceOf[js.Any])
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suggest != null) __obj.updateDynamic("suggest")(js.Any.fromFunction2(suggest))
-    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction3(validate))
     __obj.asInstanceOf[PromptObject[T]]
   }
+  @scala.inline
+  implicit class PromptObjectOps[Self <: PromptObject[_], /* <: java.lang.String */ T] (val x: Self with PromptObject[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNameFunction3(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => T): Self = this.set("name", js.Any.fromFunction3(value))
+    @scala.inline
+    def setName(value: ValueOrFunc[T]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActive(value: String): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setChoicesVarargs(value: Choice*): Self = this.set("choices", js.Array(value :_*))
+    @scala.inline
+    def setChoices(value: js.Array[Choice]): Self = this.set("choices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChoices: Self = this.set("choices", js.undefined)
+    @scala.inline
+    def setFloat(value: Boolean): Self = this.set("float", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFloat: Self = this.set("float", js.undefined)
+    @scala.inline
+    def setFormat(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = this.set("format", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHint(value: String): Self = this.set("hint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHint: Self = this.set("hint", js.undefined)
+    @scala.inline
+    def setInactive(value: String): Self = this.set("inactive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInactive: Self = this.set("inactive", js.undefined)
+    @scala.inline
+    def setIncrement(value: Double): Self = this.set("increment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrement: Self = this.set("increment", js.undefined)
+    @scala.inline
+    def setInitial(value: String | Double | Boolean | Date): Self = this.set("initial", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitial: Self = this.set("initial", js.undefined)
+    @scala.inline
+    def setLimit(value: Double): Self = this.set("limit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLimit: Self = this.set("limit", js.undefined)
+    @scala.inline
+    def setMask(value: String): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMessageFunction3(
+      value: (/* prev */ js.Any, /* values */ Answers[String], /* prompt */ PromptObject[String]) => String
+    ): Self = this.set("message", js.Any.fromFunction3(value))
+    @scala.inline
+    def setMessage(value: ValueOrFunc[String]): Self = this.set("message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("message", js.undefined)
+    @scala.inline
+    def setMin(value: Double): Self = this.set("min", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMin: Self = this.set("min", js.undefined)
+    @scala.inline
+    def setOnState(value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = this.set("onState", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteOnState: Self = this.set("onState", js.undefined)
+    @scala.inline
+    def setRound(value: Double): Self = this.set("round", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRound: Self = this.set("round", js.undefined)
+    @scala.inline
+    def setSeparator(value: String): Self = this.set("separator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSeparator: Self = this.set("separator", js.undefined)
+    @scala.inline
+    def setStdin(value: Readable): Self = this.set("stdin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdin: Self = this.set("stdin", js.undefined)
+    @scala.inline
+    def setStdout(value: Writable): Self = this.set("stdout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStdout: Self = this.set("stdout", js.undefined)
+    @scala.inline
+    def setStyle(value: String): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setSuggest(value: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[_]): Self = this.set("suggest", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSuggest: Self = this.set("suggest", js.undefined)
+    @scala.inline
+    def setTypeFunction3(
+      value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => PromptType | Falsy
+    ): Self = this.set("type", js.Any.fromFunction3(value))
+    @scala.inline
+    def setType(value: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setTypeNull: Self = this.set("type", null)
+    @scala.inline
+    def setValidate(
+      value: (/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Boolean | String | (js.Promise[Boolean | String])
+    ): Self = this.set("validate", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteValidate: Self = this.set("validate", js.undefined)
+  }
+  
 }
 

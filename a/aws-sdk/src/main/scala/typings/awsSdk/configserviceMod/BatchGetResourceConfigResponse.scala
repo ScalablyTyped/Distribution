@@ -18,14 +18,34 @@ trait BatchGetResourceConfigResponse extends js.Object {
 
 object BatchGetResourceConfigResponse {
   @scala.inline
-  def apply(
-    baseConfigurationItems: BaseConfigurationItems = null,
-    unprocessedResourceKeys: ResourceKeys = null
-  ): BatchGetResourceConfigResponse = {
+  def apply(): BatchGetResourceConfigResponse = {
     val __obj = js.Dynamic.literal()
-    if (baseConfigurationItems != null) __obj.updateDynamic("baseConfigurationItems")(baseConfigurationItems.asInstanceOf[js.Any])
-    if (unprocessedResourceKeys != null) __obj.updateDynamic("unprocessedResourceKeys")(unprocessedResourceKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchGetResourceConfigResponse]
   }
+  @scala.inline
+  implicit class BatchGetResourceConfigResponseOps[Self <: BatchGetResourceConfigResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = this.set("baseConfigurationItems", js.Array(value :_*))
+    @scala.inline
+    def setBaseConfigurationItems(value: BaseConfigurationItems): Self = this.set("baseConfigurationItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseConfigurationItems: Self = this.set("baseConfigurationItems", js.undefined)
+    @scala.inline
+    def setUnprocessedResourceKeysVarargs(value: ResourceKey*): Self = this.set("unprocessedResourceKeys", js.Array(value :_*))
+    @scala.inline
+    def setUnprocessedResourceKeys(value: ResourceKeys): Self = this.set("unprocessedResourceKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnprocessedResourceKeys: Self = this.set("unprocessedResourceKeys", js.undefined)
+  }
+  
 }
 

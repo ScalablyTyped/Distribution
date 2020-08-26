@@ -18,11 +18,30 @@ trait SchemaFacet extends js.Object {
 
 object SchemaFacet {
   @scala.inline
-  def apply(FacetName: FacetName = null, SchemaArn: Arn = null): SchemaFacet = {
+  def apply(): SchemaFacet = {
     val __obj = js.Dynamic.literal()
-    if (FacetName != null) __obj.updateDynamic("FacetName")(FacetName.asInstanceOf[js.Any])
-    if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFacet]
   }
+  @scala.inline
+  implicit class SchemaFacetOps[Self <: SchemaFacet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFacetName(value: FacetName): Self = this.set("FacetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFacetName: Self = this.set("FacetName", js.undefined)
+    @scala.inline
+    def setSchemaArn(value: Arn): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+  }
+  
 }
 

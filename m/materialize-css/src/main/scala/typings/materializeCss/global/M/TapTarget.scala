@@ -9,23 +9,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("M.TapTarget")
 @js.native
 class TapTarget ()
-  extends typings.materializeCss.M.TapTarget {
-  /**
-    * If the tap target is open
-    */
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /**
-    * Close Tap Target
-    */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /**
-    * Open Tap Target
-    */
-  /* CompleteClass */
-  override def open(): Unit = js.native
-}
+  extends typings.materializeCss.M.TapTarget
 
 /* static members */
 @JSGlobal("M.TapTarget")

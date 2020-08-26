@@ -28,7 +28,7 @@ class Appearance protected () extends Element {
   @JSName("model")
   var model_FAppearance: IModel = js.native
   def `class`: String = js.native
-  def `class`(newValue: String): js.Any = js.native
+  def class_=(newValue: String): Unit = js.native
   def containerAsControlBarButton: ControlBarButton = js.native
   def containerAsGridColumn: GridColumn = js.native
   def containerAsLayout: Layout = js.native
@@ -43,7 +43,7 @@ class Appearance protected () extends Element {
   def containerAsWidget: Widget = js.native
   def designProperties: IList[DesignPropertyValue] = js.native
   def style: String = js.native
-  def style(newValue: String): js.Any = js.native
+  def style_=(newValue: String): Unit = js.native
 }
 
 /* static members */

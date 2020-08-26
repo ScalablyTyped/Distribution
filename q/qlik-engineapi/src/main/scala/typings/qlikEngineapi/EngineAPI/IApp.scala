@@ -359,7 +359,11 @@ trait IApp
     * @returns - A promise of Boolean
     */
   def doReload(): js.Promise[Boolean] = js.native
+  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[Boolean] = js.native
+  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean): js.Promise[Boolean] = js.native
+  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean, qDebug: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double): js.Promise[Boolean] = js.native
+  def doReload(qMode: Double, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double, qPartial: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double, qPartial: Boolean, qDebug: Boolean): js.Promise[Boolean] = js.native
   /**
@@ -513,6 +517,7 @@ trait IApp
     * @returns - return a Promise Array of DataField.
     */
   def getDatabaseTableFields(qConnectionId: String, qTable: String): js.Promise[js.Array[IDataField]] = js.native
+  def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataField]] = js.native
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: String): js.Promise[js.Array[IDataField]] = js.native
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataField]] = js.native
   /**
@@ -526,6 +531,7 @@ trait IApp
     * @returns - return a Promise Array of DataRecord.
     */
   def getDatabaseTablePreview(qConnectionId: String, qTable: String): js.Promise[js.Array[IDataRecord]] = js.native
+  def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: String): js.Promise[js.Array[IDataRecord]] = js.native
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
   /**
@@ -538,6 +544,7 @@ trait IApp
     * @returns - return a Promise Array of DataTable.
     */
   def getDatabaseTables(qConnectionId: String): js.Promise[js.Array[IDataTable]] = js.native
+  def getDatabaseTables(qConnectionId: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
   def getDatabaseTables(qConnectionId: String, qDatabase: String): js.Promise[js.Array[IDataTable]] = js.native
   def getDatabaseTables(qConnectionId: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
   /**

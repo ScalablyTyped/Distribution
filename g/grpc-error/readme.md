@@ -12,7 +12,7 @@ Utility Error class suitable for gRPC error responses
 | Keywords           | protocol buffer, protobuf, grpc |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 33495 |
+| # downloads        | 31891 |
 | # stars            | 0 |
 
 ## Links

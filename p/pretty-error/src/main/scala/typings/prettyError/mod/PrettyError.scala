@@ -19,6 +19,7 @@ trait PrettyError extends js.Object {
   def removeFilter(callbacks: Callback): PrettyError = js.native
   def removeParsedErrorFilter(callbacks: Callback): PrettyError = js.native
   def render(e: ParsedError): String = js.native
+  def render(e: ParsedError, logIt: js.UndefOr[scala.Nothing], useColors: Boolean): String = js.native
   def render(e: ParsedError, logIt: Boolean): String = js.native
   def render(e: ParsedError, logIt: Boolean, useColors: Boolean): String = js.native
   def setMaxItems(maxItems: Double): PrettyError = js.native

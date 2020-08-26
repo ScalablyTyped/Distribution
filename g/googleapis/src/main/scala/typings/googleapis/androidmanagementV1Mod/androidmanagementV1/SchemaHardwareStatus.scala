@@ -45,24 +45,62 @@ trait SchemaHardwareStatus extends js.Object {
 
 object SchemaHardwareStatus {
   @scala.inline
-  def apply(
-    batteryTemperatures: js.Array[Double] = null,
-    cpuTemperatures: js.Array[Double] = null,
-    cpuUsages: js.Array[Double] = null,
-    createTime: String = null,
-    fanSpeeds: js.Array[Double] = null,
-    gpuTemperatures: js.Array[Double] = null,
-    skinTemperatures: js.Array[Double] = null
-  ): SchemaHardwareStatus = {
+  def apply(): SchemaHardwareStatus = {
     val __obj = js.Dynamic.literal()
-    if (batteryTemperatures != null) __obj.updateDynamic("batteryTemperatures")(batteryTemperatures.asInstanceOf[js.Any])
-    if (cpuTemperatures != null) __obj.updateDynamic("cpuTemperatures")(cpuTemperatures.asInstanceOf[js.Any])
-    if (cpuUsages != null) __obj.updateDynamic("cpuUsages")(cpuUsages.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (fanSpeeds != null) __obj.updateDynamic("fanSpeeds")(fanSpeeds.asInstanceOf[js.Any])
-    if (gpuTemperatures != null) __obj.updateDynamic("gpuTemperatures")(gpuTemperatures.asInstanceOf[js.Any])
-    if (skinTemperatures != null) __obj.updateDynamic("skinTemperatures")(skinTemperatures.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaHardwareStatus]
   }
+  @scala.inline
+  implicit class SchemaHardwareStatusOps[Self <: SchemaHardwareStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatteryTemperaturesVarargs(value: Double*): Self = this.set("batteryTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setBatteryTemperatures(value: js.Array[Double]): Self = this.set("batteryTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatteryTemperatures: Self = this.set("batteryTemperatures", js.undefined)
+    @scala.inline
+    def setCpuTemperaturesVarargs(value: Double*): Self = this.set("cpuTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setCpuTemperatures(value: js.Array[Double]): Self = this.set("cpuTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuTemperatures: Self = this.set("cpuTemperatures", js.undefined)
+    @scala.inline
+    def setCpuUsagesVarargs(value: Double*): Self = this.set("cpuUsages", js.Array(value :_*))
+    @scala.inline
+    def setCpuUsages(value: js.Array[Double]): Self = this.set("cpuUsages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCpuUsages: Self = this.set("cpuUsages", js.undefined)
+    @scala.inline
+    def setCreateTime(value: String): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setFanSpeedsVarargs(value: Double*): Self = this.set("fanSpeeds", js.Array(value :_*))
+    @scala.inline
+    def setFanSpeeds(value: js.Array[Double]): Self = this.set("fanSpeeds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFanSpeeds: Self = this.set("fanSpeeds", js.undefined)
+    @scala.inline
+    def setGpuTemperaturesVarargs(value: Double*): Self = this.set("gpuTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setGpuTemperatures(value: js.Array[Double]): Self = this.set("gpuTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGpuTemperatures: Self = this.set("gpuTemperatures", js.undefined)
+    @scala.inline
+    def setSkinTemperaturesVarargs(value: Double*): Self = this.set("skinTemperatures", js.Array(value :_*))
+    @scala.inline
+    def setSkinTemperatures(value: js.Array[Double]): Self = this.set("skinTemperatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkinTemperatures: Self = this.set("skinTemperatures", js.undefined)
+  }
+  
 }
 

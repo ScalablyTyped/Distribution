@@ -54,32 +54,66 @@ trait CloudWatchLogsLogStream extends js.Object {
 
 object CloudWatchLogsLogStream {
   @scala.inline
-  def apply(
-    BatchCount: js.UndefOr[Integer] = js.undefined,
-    BatchSize: js.UndefOr[Integer] = js.undefined,
-    BufferDuration: js.UndefOr[Integer] = js.undefined,
-    DatetimeFormat: String = null,
-    Encoding: CloudWatchLogsEncoding = null,
-    File: String = null,
-    FileFingerprintLines: String = null,
-    InitialPosition: CloudWatchLogsInitialPosition = null,
-    LogGroupName: String = null,
-    MultiLineStartPattern: String = null,
-    TimeZone: CloudWatchLogsTimeZone = null
-  ): CloudWatchLogsLogStream = {
+  def apply(): CloudWatchLogsLogStream = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(BatchCount)) __obj.updateDynamic("BatchCount")(BatchCount.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BatchSize)) __obj.updateDynamic("BatchSize")(BatchSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(BufferDuration)) __obj.updateDynamic("BufferDuration")(BufferDuration.get.asInstanceOf[js.Any])
-    if (DatetimeFormat != null) __obj.updateDynamic("DatetimeFormat")(DatetimeFormat.asInstanceOf[js.Any])
-    if (Encoding != null) __obj.updateDynamic("Encoding")(Encoding.asInstanceOf[js.Any])
-    if (File != null) __obj.updateDynamic("File")(File.asInstanceOf[js.Any])
-    if (FileFingerprintLines != null) __obj.updateDynamic("FileFingerprintLines")(FileFingerprintLines.asInstanceOf[js.Any])
-    if (InitialPosition != null) __obj.updateDynamic("InitialPosition")(InitialPosition.asInstanceOf[js.Any])
-    if (LogGroupName != null) __obj.updateDynamic("LogGroupName")(LogGroupName.asInstanceOf[js.Any])
-    if (MultiLineStartPattern != null) __obj.updateDynamic("MultiLineStartPattern")(MultiLineStartPattern.asInstanceOf[js.Any])
-    if (TimeZone != null) __obj.updateDynamic("TimeZone")(TimeZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudWatchLogsLogStream]
   }
+  @scala.inline
+  implicit class CloudWatchLogsLogStreamOps[Self <: CloudWatchLogsLogStream] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBatchCount(value: Integer): Self = this.set("BatchCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchCount: Self = this.set("BatchCount", js.undefined)
+    @scala.inline
+    def setBatchSize(value: Integer): Self = this.set("BatchSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBatchSize: Self = this.set("BatchSize", js.undefined)
+    @scala.inline
+    def setBufferDuration(value: Integer): Self = this.set("BufferDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBufferDuration: Self = this.set("BufferDuration", js.undefined)
+    @scala.inline
+    def setDatetimeFormat(value: String): Self = this.set("DatetimeFormat", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDatetimeFormat: Self = this.set("DatetimeFormat", js.undefined)
+    @scala.inline
+    def setEncoding(value: CloudWatchLogsEncoding): Self = this.set("Encoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncoding: Self = this.set("Encoding", js.undefined)
+    @scala.inline
+    def setFile(value: String): Self = this.set("File", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFile: Self = this.set("File", js.undefined)
+    @scala.inline
+    def setFileFingerprintLines(value: String): Self = this.set("FileFingerprintLines", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileFingerprintLines: Self = this.set("FileFingerprintLines", js.undefined)
+    @scala.inline
+    def setInitialPosition(value: CloudWatchLogsInitialPosition): Self = this.set("InitialPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitialPosition: Self = this.set("InitialPosition", js.undefined)
+    @scala.inline
+    def setLogGroupName(value: String): Self = this.set("LogGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogGroupName: Self = this.set("LogGroupName", js.undefined)
+    @scala.inline
+    def setMultiLineStartPattern(value: String): Self = this.set("MultiLineStartPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiLineStartPattern: Self = this.set("MultiLineStartPattern", js.undefined)
+    @scala.inline
+    def setTimeZone(value: CloudWatchLogsTimeZone): Self = this.set("TimeZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeZone: Self = this.set("TimeZone", js.undefined)
+  }
+  
 }
 

@@ -7,26 +7,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FieldProps[V] extends js.Object {
-  var TypeField: js.UndefOr[ComponentType[js.Object]] = js.undefined
-  var children: js.UndefOr[js.Any] = js.undefined
-  var choices: js.UndefOr[js.Array[_]] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var classNameModifiers: js.UndefOr[js.Any] = js.undefined
-  var dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var error: js.UndefOr[ReactNode] = js.undefined
-  var extras: js.UndefOr[ReactNode] = js.undefined
-  var formatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.undefined
-  var handleChange: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.undefined
-  var handleEntered: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.undefined
-  var i18n: js.UndefOr[js.Any] = js.undefined
-  var max: js.UndefOr[Double] = js.undefined
-  var minLength: js.UndefOr[Double] = js.undefined
-  var modified: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var normalizer: js.UndefOr[js.Function1[/* v */ V, V]] = js.undefined
-  var readOnly: js.UndefOr[Boolean] = js.undefined
+  var TypeField: js.UndefOr[ComponentType[js.Object]] = js.native
+  var children: js.UndefOr[js.Any] = js.native
+  var choices: js.UndefOr[js.Array[_]] = js.native
+  var className: js.UndefOr[String] = js.native
+  var classNameModifiers: js.UndefOr[js.Any] = js.native
+  var dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[ReactNode] = js.native
+  var extras: js.UndefOr[ReactNode] = js.native
+  var formatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.native
+  var handleChange: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.native
+  var handleEntered: js.UndefOr[js.Function2[/* name */ String, /* v */ V, Unit]] = js.native
+  var i18n: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.native
+  var modified: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var normalizer: js.UndefOr[js.Function1[/* v */ V, V]] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.native
   var register: js.UndefOr[
     js.Function4[
       /* name */ String, 
@@ -35,85 +36,161 @@ trait FieldProps[V] extends js.Object {
       /* validityErrors */ js.Any, 
       Unit
     ]
-  ] = js.undefined
-  var required: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var unformatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.undefined
-  var unit: js.UndefOr[ReactNode] = js.undefined
-  var unregister: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.undefined
-  var validator: js.UndefOr[js.Function1[/* v */ V, String]] = js.undefined
-  var validityErrors: js.UndefOr[js.Any] = js.undefined
-  var value: js.UndefOr[V] = js.undefined
+  ] = js.native
+  var required: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[Double] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var unformatter: js.UndefOr[js.Function1[/* v */ V, V]] = js.native
+  var unit: js.UndefOr[ReactNode] = js.native
+  var unregister: js.UndefOr[js.Function1[/* name */ String, Unit]] = js.native
+  var validator: js.UndefOr[js.Function1[/* v */ V, String]] = js.native
+  var validityErrors: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[V] = js.native
 }
 
 object FieldProps {
   @scala.inline
-  def apply[V](
-    TypeField: ComponentType[js.Object] = null,
-    children: js.Any = null,
-    choices: js.Array[_] = null,
-    className: String = null,
-    classNameModifiers: js.Any = null,
-    dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: ReactNode = null,
-    extras: ReactNode = null,
-    formatter: /* v */ V => V = null,
-    handleChange: (/* name */ String, /* v */ V) => Unit = null,
-    handleEntered: (/* name */ String, /* v */ V) => Unit = null,
-    i18n: js.Any = null,
-    max: js.UndefOr[Double] = js.undefined,
-    minLength: js.UndefOr[Double] = js.undefined,
-    modified: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    normalizer: /* v */ V => V = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    register: (/* name */ String, /* element */ Ref[_], /* validator */ js.Any, /* validityErrors */ js.Any) => Unit = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    title: String = null,
-    `type`: String = null,
-    unformatter: /* v */ V => V = null,
-    unit: ReactNode = null,
-    unregister: /* name */ String => Unit = null,
-    validator: /* v */ V => String = null,
-    validityErrors: js.Any = null,
-    value: V = null
-  ): FieldProps[V] = {
+  def apply[V](): FieldProps[V] = {
     val __obj = js.Dynamic.literal()
-    if (TypeField != null) __obj.updateDynamic("TypeField")(TypeField.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (classNameModifiers != null) __obj.updateDynamic("classNameModifiers")(classNameModifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerousRawHTMLLabels)) __obj.updateDynamic("dangerousRawHTMLLabels")(dangerousRawHTMLLabels.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (extras != null) __obj.updateDynamic("extras")(extras.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction1(formatter))
-    if (handleChange != null) __obj.updateDynamic("handleChange")(js.Any.fromFunction2(handleChange))
-    if (handleEntered != null) __obj.updateDynamic("handleEntered")(js.Any.fromFunction2(handleEntered))
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minLength)) __obj.updateDynamic("minLength")(minLength.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(modified)) __obj.updateDynamic("modified")(modified.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (normalizer != null) __obj.updateDynamic("normalizer")(js.Any.fromFunction1(normalizer))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.get.asInstanceOf[js.Any])
-    if (register != null) __obj.updateDynamic("register")(js.Any.fromFunction4(register))
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unformatter != null) __obj.updateDynamic("unformatter")(js.Any.fromFunction1(unformatter))
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (unregister != null) __obj.updateDynamic("unregister")(js.Any.fromFunction1(unregister))
-    if (validator != null) __obj.updateDynamic("validator")(js.Any.fromFunction1(validator))
-    if (validityErrors != null) __obj.updateDynamic("validityErrors")(validityErrors.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldProps[V]]
   }
+  @scala.inline
+  implicit class FieldPropsOps[Self <: FieldProps[_], V] (val x: Self with FieldProps[V]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTypeField(value: ComponentType[js.Object]): Self = this.set("TypeField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTypeField: Self = this.set("TypeField", js.undefined)
+    @scala.inline
+    def setChildren(value: js.Any): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setChoicesVarargs(value: js.Any*): Self = this.set("choices", js.Array(value :_*))
+    @scala.inline
+    def setChoices(value: js.Array[_]): Self = this.set("choices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChoices: Self = this.set("choices", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClassNameModifiers(value: js.Any): Self = this.set("classNameModifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassNameModifiers: Self = this.set("classNameModifiers", js.undefined)
+    @scala.inline
+    def setDangerousRawHTMLLabels(value: Boolean): Self = this.set("dangerousRawHTMLLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDangerousRawHTMLLabels: Self = this.set("dangerousRawHTMLLabels", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: ReactNode): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExtras(value: ReactNode): Self = this.set("extras", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtras: Self = this.set("extras", js.undefined)
+    @scala.inline
+    def setFormatter(value: /* v */ V => V): Self = this.set("formatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFormatter: Self = this.set("formatter", js.undefined)
+    @scala.inline
+    def setHandleChange(value: (/* name */ String, /* v */ V) => Unit): Self = this.set("handleChange", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHandleChange: Self = this.set("handleChange", js.undefined)
+    @scala.inline
+    def setHandleEntered(value: (/* name */ String, /* v */ V) => Unit): Self = this.set("handleEntered", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteHandleEntered: Self = this.set("handleEntered", js.undefined)
+    @scala.inline
+    def setI18n(value: js.Any): Self = this.set("i18n", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI18n: Self = this.set("i18n", js.undefined)
+    @scala.inline
+    def setMax(value: Double): Self = this.set("max", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMax: Self = this.set("max", js.undefined)
+    @scala.inline
+    def setMinLength(value: Double): Self = this.set("minLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLength: Self = this.set("minLength", js.undefined)
+    @scala.inline
+    def setModified(value: Boolean): Self = this.set("modified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModified: Self = this.set("modified", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNormalizer(value: /* v */ V => V): Self = this.set("normalizer", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNormalizer: Self = this.set("normalizer", js.undefined)
+    @scala.inline
+    def setReadOnly(value: Boolean): Self = this.set("readOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadOnly: Self = this.set("readOnly", js.undefined)
+    @scala.inline
+    def setRegister(
+      value: (/* name */ String, /* element */ Ref[_], /* validator */ js.Any, /* validityErrors */ js.Any) => Unit
+    ): Self = this.set("register", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteRegister: Self = this.set("register", js.undefined)
+    @scala.inline
+    def setRequired(value: Boolean): Self = this.set("required", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequired: Self = this.set("required", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUnformatter(value: /* v */ V => V): Self = this.set("unformatter", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnformatter: Self = this.set("unformatter", js.undefined)
+    @scala.inline
+    def setUnit(value: ReactNode): Self = this.set("unit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnit: Self = this.set("unit", js.undefined)
+    @scala.inline
+    def setUnregister(value: /* name */ String => Unit): Self = this.set("unregister", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteUnregister: Self = this.set("unregister", js.undefined)
+    @scala.inline
+    def setValidator(value: /* v */ V => String): Self = this.set("validator", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteValidator: Self = this.set("validator", js.undefined)
+    @scala.inline
+    def setValidityErrors(value: js.Any): Self = this.set("validityErrors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidityErrors: Self = this.set("validityErrors", js.undefined)
+    @scala.inline
+    def setValue(value: V): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+  }
+  
 }
 

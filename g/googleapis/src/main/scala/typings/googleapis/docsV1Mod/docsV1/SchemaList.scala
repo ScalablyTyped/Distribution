@@ -34,18 +34,40 @@ trait SchemaList extends js.Object {
 
 object SchemaList {
   @scala.inline
-  def apply(
-    listProperties: SchemaListProperties = null,
-    suggestedDeletionIds: js.Array[String] = null,
-    suggestedInsertionId: String = null,
-    suggestedListPropertiesChanges: StringDictionary[SchemaSuggestedListProperties] = null
-  ): SchemaList = {
+  def apply(): SchemaList = {
     val __obj = js.Dynamic.literal()
-    if (listProperties != null) __obj.updateDynamic("listProperties")(listProperties.asInstanceOf[js.Any])
-    if (suggestedDeletionIds != null) __obj.updateDynamic("suggestedDeletionIds")(suggestedDeletionIds.asInstanceOf[js.Any])
-    if (suggestedInsertionId != null) __obj.updateDynamic("suggestedInsertionId")(suggestedInsertionId.asInstanceOf[js.Any])
-    if (suggestedListPropertiesChanges != null) __obj.updateDynamic("suggestedListPropertiesChanges")(suggestedListPropertiesChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaList]
   }
+  @scala.inline
+  implicit class SchemaListOps[Self <: SchemaList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setListProperties(value: SchemaListProperties): Self = this.set("listProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListProperties: Self = this.set("listProperties", js.undefined)
+    @scala.inline
+    def setSuggestedDeletionIdsVarargs(value: String*): Self = this.set("suggestedDeletionIds", js.Array(value :_*))
+    @scala.inline
+    def setSuggestedDeletionIds(value: js.Array[String]): Self = this.set("suggestedDeletionIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedDeletionIds: Self = this.set("suggestedDeletionIds", js.undefined)
+    @scala.inline
+    def setSuggestedInsertionId(value: String): Self = this.set("suggestedInsertionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedInsertionId: Self = this.set("suggestedInsertionId", js.undefined)
+    @scala.inline
+    def setSuggestedListPropertiesChanges(value: StringDictionary[SchemaSuggestedListProperties]): Self = this.set("suggestedListPropertiesChanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuggestedListPropertiesChanges: Self = this.set("suggestedListPropertiesChanges", js.undefined)
+  }
+  
 }
 

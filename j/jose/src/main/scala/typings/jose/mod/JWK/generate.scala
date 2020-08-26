@@ -11,10 +11,25 @@ import scala.scalajs.js.annotation._
 @js.native
 object generate extends js.Object {
   def apply(kty: keyType): js.Promise[Key] = js.native
+  def apply(
+    kty: keyType,
+    crvOrSize: js.UndefOr[scala.Nothing],
+    parameters: js.UndefOr[scala.Nothing],
+    `private`: Boolean
+  ): js.Promise[Key] = js.native
+  def apply(kty: keyType, crvOrSize: js.UndefOr[scala.Nothing], parameters: BasicParameters): js.Promise[Key] = js.native
+  def apply(
+    kty: keyType,
+    crvOrSize: js.UndefOr[scala.Nothing],
+    parameters: BasicParameters,
+    `private`: Boolean
+  ): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Double): js.Promise[Key] = js.native
+  def apply(kty: keyType, crvOrSize: Double, parameters: js.UndefOr[scala.Nothing], `private`: Boolean): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Double, parameters: BasicParameters): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Double, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Curves): js.Promise[Key] = js.native
+  def apply(kty: keyType, crvOrSize: Curves, parameters: js.UndefOr[scala.Nothing], `private`: Boolean): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): js.Promise[Key] = js.native
   def apply(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = js.native
 }

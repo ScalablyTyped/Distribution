@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 class SpotLight protected ()
   extends typings.three.spotLightMod.SpotLight {
   def this(
-    color: js.UndefOr[typings.three.colorMod.Color | Double | String],
+    color: js.UndefOr[typings.three.colorMod.Color | String | Double],
     intensity: js.UndefOr[Double],
     distance: js.UndefOr[Double],
     angle: js.UndefOr[Double],

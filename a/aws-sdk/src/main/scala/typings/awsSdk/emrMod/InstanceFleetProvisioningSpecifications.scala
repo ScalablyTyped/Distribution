@@ -18,14 +18,30 @@ trait InstanceFleetProvisioningSpecifications extends js.Object {
 
 object InstanceFleetProvisioningSpecifications {
   @scala.inline
-  def apply(
-    OnDemandSpecification: OnDemandProvisioningSpecification = null,
-    SpotSpecification: SpotProvisioningSpecification = null
-  ): InstanceFleetProvisioningSpecifications = {
+  def apply(): InstanceFleetProvisioningSpecifications = {
     val __obj = js.Dynamic.literal()
-    if (OnDemandSpecification != null) __obj.updateDynamic("OnDemandSpecification")(OnDemandSpecification.asInstanceOf[js.Any])
-    if (SpotSpecification != null) __obj.updateDynamic("SpotSpecification")(SpotSpecification.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceFleetProvisioningSpecifications]
   }
+  @scala.inline
+  implicit class InstanceFleetProvisioningSpecificationsOps[Self <: InstanceFleetProvisioningSpecifications] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnDemandSpecification(value: OnDemandProvisioningSpecification): Self = this.set("OnDemandSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnDemandSpecification: Self = this.set("OnDemandSpecification", js.undefined)
+    @scala.inline
+    def setSpotSpecification(value: SpotProvisioningSpecification): Self = this.set("SpotSpecification", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotSpecification: Self = this.set("SpotSpecification", js.undefined)
+  }
+  
 }
 

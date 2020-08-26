@@ -12,7 +12,7 @@ jQuery plugin to call a function when an element appears
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 66774 |
+| # downloads        | 68677 |
 | # stars            | 1 |
 
 ## Links

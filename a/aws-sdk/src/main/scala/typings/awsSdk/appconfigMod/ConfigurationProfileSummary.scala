@@ -30,20 +30,44 @@ trait ConfigurationProfileSummary extends js.Object {
 
 object ConfigurationProfileSummary {
   @scala.inline
-  def apply(
-    ApplicationId: Id = null,
-    Id: Id = null,
-    LocationUri: Uri = null,
-    Name: Name = null,
-    ValidatorTypes: ValidatorTypeList = null
-  ): ConfigurationProfileSummary = {
+  def apply(): ConfigurationProfileSummary = {
     val __obj = js.Dynamic.literal()
-    if (ApplicationId != null) __obj.updateDynamic("ApplicationId")(ApplicationId.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (LocationUri != null) __obj.updateDynamic("LocationUri")(LocationUri.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (ValidatorTypes != null) __obj.updateDynamic("ValidatorTypes")(ValidatorTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationProfileSummary]
   }
+  @scala.inline
+  implicit class ConfigurationProfileSummaryOps[Self <: ConfigurationProfileSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: Id): Self = this.set("ApplicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("ApplicationId", js.undefined)
+    @scala.inline
+    def setId(value: Id): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setLocationUri(value: Uri): Self = this.set("LocationUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationUri: Self = this.set("LocationUri", js.undefined)
+    @scala.inline
+    def setName(value: Name): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setValidatorTypesVarargs(value: ValidatorType*): Self = this.set("ValidatorTypes", js.Array(value :_*))
+    @scala.inline
+    def setValidatorTypes(value: ValidatorTypeList): Self = this.set("ValidatorTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidatorTypes: Self = this.set("ValidatorTypes", js.undefined)
+  }
+  
 }
 

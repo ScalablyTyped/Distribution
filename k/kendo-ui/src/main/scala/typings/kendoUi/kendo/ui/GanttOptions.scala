@@ -7,162 +7,279 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GanttOptions extends js.Object {
-  var add: js.UndefOr[js.Function1[/* e */ GanttAddEvent, Unit]] = js.undefined
-  var assignments: js.UndefOr[GanttAssignments] = js.undefined
-  var autoBind: js.UndefOr[Boolean] = js.undefined
-  var cancel: js.UndefOr[js.Function1[/* e */ GanttCancelEvent, Unit]] = js.undefined
-  var change: js.UndefOr[js.Function1[/* e */ GanttChangeEvent, Unit]] = js.undefined
-  var columnResize: js.UndefOr[js.Function1[/* e */ GanttColumnResizeEvent, Unit]] = js.undefined
-  var columnResizeHandleWidth: js.UndefOr[Double] = js.undefined
-  var columns: js.UndefOr[js.Array[GanttColumn]] = js.undefined
-  var currentTimeMarker: js.UndefOr[Boolean | GanttCurrentTimeMarker] = js.undefined
-  var dataBinding: js.UndefOr[js.Function1[/* e */ GanttDataBindingEvent, Unit]] = js.undefined
-  var dataBound: js.UndefOr[js.Function1[/* e */ GanttDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | GanttDataSource] = js.undefined
-  var date: js.UndefOr[Date] = js.undefined
-  var dependencies: js.UndefOr[js.Any | GanttDependencyDataSource] = js.undefined
-  var edit: js.UndefOr[js.Function1[/* e */ GanttEditEvent, Unit]] = js.undefined
-  var editable: js.UndefOr[Boolean | GanttEditable] = js.undefined
-  var height: js.UndefOr[Double | String] = js.undefined
-  var hourSpan: js.UndefOr[Double] = js.undefined
-  var listWidth: js.UndefOr[String | Double] = js.undefined
-  var messages: js.UndefOr[GanttMessages] = js.undefined
-  var move: js.UndefOr[js.Function1[/* e */ GanttMoveEvent, Unit]] = js.undefined
-  var moveEnd: js.UndefOr[js.Function1[/* e */ GanttMoveEndEvent, Unit]] = js.undefined
-  var moveStart: js.UndefOr[js.Function1[/* e */ GanttMoveStartEvent, Unit]] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var navigatable: js.UndefOr[Boolean] = js.undefined
-  var navigate: js.UndefOr[js.Function1[/* e */ GanttNavigateEvent, Unit]] = js.undefined
-  var pdf: js.UndefOr[GanttPdf] = js.undefined
-  var pdfExport: js.UndefOr[js.Function1[/* e */ GanttPdfExportEvent, Unit]] = js.undefined
-  var range: js.UndefOr[GanttRange] = js.undefined
-  var remove: js.UndefOr[js.Function1[/* e */ GanttRemoveEvent, Unit]] = js.undefined
-  var resizable: js.UndefOr[Boolean] = js.undefined
-  var resize: js.UndefOr[js.Function1[/* e */ GanttResizeEvent, Unit]] = js.undefined
-  var resizeEnd: js.UndefOr[js.Function1[/* e */ GanttResizeEndEvent, Unit]] = js.undefined
-  var resizeStart: js.UndefOr[js.Function1[/* e */ GanttResizeStartEvent, Unit]] = js.undefined
-  var resources: js.UndefOr[GanttResources] = js.undefined
-  var rowHeight: js.UndefOr[Double | String] = js.undefined
-  var save: js.UndefOr[js.Function1[/* e */ GanttSaveEvent, Unit]] = js.undefined
-  var selectable: js.UndefOr[Boolean] = js.undefined
-  var showWorkDays: js.UndefOr[Boolean] = js.undefined
-  var showWorkHours: js.UndefOr[Boolean] = js.undefined
-  var snap: js.UndefOr[Boolean] = js.undefined
-  var taskTemplate: js.UndefOr[String | js.Function] = js.undefined
-  var toolbar: js.UndefOr[js.Array[GanttToolbarItem]] = js.undefined
-  var tooltip: js.UndefOr[GanttTooltip] = js.undefined
-  var views: js.UndefOr[js.Array[GanttView]] = js.undefined
-  var workDayEnd: js.UndefOr[Date] = js.undefined
-  var workDayStart: js.UndefOr[Date] = js.undefined
-  var workWeekEnd: js.UndefOr[Double] = js.undefined
-  var workWeekStart: js.UndefOr[Double] = js.undefined
+  var add: js.UndefOr[js.Function1[/* e */ GanttAddEvent, Unit]] = js.native
+  var assignments: js.UndefOr[GanttAssignments] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ GanttCancelEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ GanttChangeEvent, Unit]] = js.native
+  var columnResize: js.UndefOr[js.Function1[/* e */ GanttColumnResizeEvent, Unit]] = js.native
+  var columnResizeHandleWidth: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[js.Array[GanttColumn]] = js.native
+  var currentTimeMarker: js.UndefOr[Boolean | GanttCurrentTimeMarker] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ GanttDataBindingEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ GanttDataBoundEvent, Unit]] = js.native
+  var dataSource: js.UndefOr[js.Any | GanttDataSource] = js.native
+  var date: js.UndefOr[Date] = js.native
+  var dependencies: js.UndefOr[js.Any | GanttDependencyDataSource] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ GanttEditEvent, Unit]] = js.native
+  var editable: js.UndefOr[Boolean | GanttEditable] = js.native
+  var height: js.UndefOr[Double | String] = js.native
+  var hourSpan: js.UndefOr[Double] = js.native
+  var listWidth: js.UndefOr[String | Double] = js.native
+  var messages: js.UndefOr[GanttMessages] = js.native
+  var move: js.UndefOr[js.Function1[/* e */ GanttMoveEvent, Unit]] = js.native
+  var moveEnd: js.UndefOr[js.Function1[/* e */ GanttMoveEndEvent, Unit]] = js.native
+  var moveStart: js.UndefOr[js.Function1[/* e */ GanttMoveStartEvent, Unit]] = js.native
+  var name: js.UndefOr[String] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ GanttNavigateEvent, Unit]] = js.native
+  var pdf: js.UndefOr[GanttPdf] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ GanttPdfExportEvent, Unit]] = js.native
+  var range: js.UndefOr[GanttRange] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ GanttRemoveEvent, Unit]] = js.native
+  var resizable: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ GanttResizeEvent, Unit]] = js.native
+  var resizeEnd: js.UndefOr[js.Function1[/* e */ GanttResizeEndEvent, Unit]] = js.native
+  var resizeStart: js.UndefOr[js.Function1[/* e */ GanttResizeStartEvent, Unit]] = js.native
+  var resources: js.UndefOr[GanttResources] = js.native
+  var rowHeight: js.UndefOr[Double | String] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ GanttSaveEvent, Unit]] = js.native
+  var selectable: js.UndefOr[Boolean] = js.native
+  var showWorkDays: js.UndefOr[Boolean] = js.native
+  var showWorkHours: js.UndefOr[Boolean] = js.native
+  var snap: js.UndefOr[Boolean] = js.native
+  var taskTemplate: js.UndefOr[String | js.Function] = js.native
+  var toolbar: js.UndefOr[js.Array[GanttToolbarItem]] = js.native
+  var tooltip: js.UndefOr[GanttTooltip] = js.native
+  var views: js.UndefOr[js.Array[GanttView]] = js.native
+  var workDayEnd: js.UndefOr[Date] = js.native
+  var workDayStart: js.UndefOr[Date] = js.native
+  var workWeekEnd: js.UndefOr[Double] = js.native
+  var workWeekStart: js.UndefOr[Double] = js.native
 }
 
 object GanttOptions {
   @scala.inline
-  def apply(
-    add: /* e */ GanttAddEvent => Unit = null,
-    assignments: GanttAssignments = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* e */ GanttCancelEvent => Unit = null,
-    change: /* e */ GanttChangeEvent => Unit = null,
-    columnResize: /* e */ GanttColumnResizeEvent => Unit = null,
-    columnResizeHandleWidth: js.UndefOr[Double] = js.undefined,
-    columns: js.Array[GanttColumn] = null,
-    currentTimeMarker: Boolean | GanttCurrentTimeMarker = null,
-    dataBinding: /* e */ GanttDataBindingEvent => Unit = null,
-    dataBound: /* e */ GanttDataBoundEvent => Unit = null,
-    dataSource: js.Any | GanttDataSource = null,
-    date: Date = null,
-    dependencies: js.Any | GanttDependencyDataSource = null,
-    edit: /* e */ GanttEditEvent => Unit = null,
-    editable: Boolean | GanttEditable = null,
-    height: Double | String = null,
-    hourSpan: js.UndefOr[Double] = js.undefined,
-    listWidth: String | Double = null,
-    messages: GanttMessages = null,
-    move: /* e */ GanttMoveEvent => Unit = null,
-    moveEnd: /* e */ GanttMoveEndEvent => Unit = null,
-    moveStart: /* e */ GanttMoveStartEvent => Unit = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    navigate: /* e */ GanttNavigateEvent => Unit = null,
-    pdf: GanttPdf = null,
-    pdfExport: /* e */ GanttPdfExportEvent => Unit = null,
-    range: GanttRange = null,
-    remove: /* e */ GanttRemoveEvent => Unit = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    resize: /* e */ GanttResizeEvent => Unit = null,
-    resizeEnd: /* e */ GanttResizeEndEvent => Unit = null,
-    resizeStart: /* e */ GanttResizeStartEvent => Unit = null,
-    resources: GanttResources = null,
-    rowHeight: Double | String = null,
-    save: /* e */ GanttSaveEvent => Unit = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    showWorkDays: js.UndefOr[Boolean] = js.undefined,
-    showWorkHours: js.UndefOr[Boolean] = js.undefined,
-    snap: js.UndefOr[Boolean] = js.undefined,
-    taskTemplate: String | js.Function = null,
-    toolbar: js.Array[GanttToolbarItem] = null,
-    tooltip: GanttTooltip = null,
-    views: js.Array[GanttView] = null,
-    workDayEnd: Date = null,
-    workDayStart: Date = null,
-    workWeekEnd: js.UndefOr[Double] = js.undefined,
-    workWeekStart: js.UndefOr[Double] = js.undefined
-  ): GanttOptions = {
+  def apply(): GanttOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1(add))
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.get.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1(cancel))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1(columnResize))
-    if (!js.isUndefined(columnResizeHandleWidth)) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.get.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (currentTimeMarker != null) __obj.updateDynamic("currentTimeMarker")(currentTimeMarker.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1(dataBinding))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1(dataBound))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1(edit))
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hourSpan)) __obj.updateDynamic("hourSpan")(hourSpan.get.asInstanceOf[js.Any])
-    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1(move))
-    if (moveEnd != null) __obj.updateDynamic("moveEnd")(js.Any.fromFunction1(moveEnd))
-    if (moveStart != null) __obj.updateDynamic("moveStart")(js.Any.fromFunction1(moveStart))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.get.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1(navigate))
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1(pdfExport))
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1(remove))
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.get.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1(resize))
-    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(js.Any.fromFunction1(resizeEnd))
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1(resizeStart))
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1(save))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkDays)) __obj.updateDynamic("showWorkDays")(showWorkDays.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.get.asInstanceOf[js.Any])
-    if (taskTemplate != null) __obj.updateDynamic("taskTemplate")(taskTemplate.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (workDayEnd != null) __obj.updateDynamic("workDayEnd")(workDayEnd.asInstanceOf[js.Any])
-    if (workDayStart != null) __obj.updateDynamic("workDayStart")(workDayStart.asInstanceOf[js.Any])
-    if (!js.isUndefined(workWeekEnd)) __obj.updateDynamic("workWeekEnd")(workWeekEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(workWeekStart)) __obj.updateDynamic("workWeekStart")(workWeekStart.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttOptions]
   }
+  @scala.inline
+  implicit class GanttOptionsOps[Self <: GanttOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdd(value: /* e */ GanttAddEvent => Unit): Self = this.set("add", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAdd: Self = this.set("add", js.undefined)
+    @scala.inline
+    def setAssignments(value: GanttAssignments): Self = this.set("assignments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignments: Self = this.set("assignments", js.undefined)
+    @scala.inline
+    def setAutoBind(value: Boolean): Self = this.set("autoBind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoBind: Self = this.set("autoBind", js.undefined)
+    @scala.inline
+    def setCancel(value: /* e */ GanttCancelEvent => Unit): Self = this.set("cancel", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteCancel: Self = this.set("cancel", js.undefined)
+    @scala.inline
+    def setChange(value: /* e */ GanttChangeEvent => Unit): Self = this.set("change", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setColumnResize(value: /* e */ GanttColumnResizeEvent => Unit): Self = this.set("columnResize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteColumnResize: Self = this.set("columnResize", js.undefined)
+    @scala.inline
+    def setColumnResizeHandleWidth(value: Double): Self = this.set("columnResizeHandleWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumnResizeHandleWidth: Self = this.set("columnResizeHandleWidth", js.undefined)
+    @scala.inline
+    def setColumnsVarargs(value: GanttColumn*): Self = this.set("columns", js.Array(value :_*))
+    @scala.inline
+    def setColumns(value: js.Array[GanttColumn]): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setCurrentTimeMarker(value: Boolean | GanttCurrentTimeMarker): Self = this.set("currentTimeMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentTimeMarker: Self = this.set("currentTimeMarker", js.undefined)
+    @scala.inline
+    def setDataBinding(value: /* e */ GanttDataBindingEvent => Unit): Self = this.set("dataBinding", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBinding: Self = this.set("dataBinding", js.undefined)
+    @scala.inline
+    def setDataBound(value: /* e */ GanttDataBoundEvent => Unit): Self = this.set("dataBound", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDataBound: Self = this.set("dataBound", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | GanttDataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDate(value: Date): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDependencies(value: js.Any | GanttDependencyDataSource): Self = this.set("dependencies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDependencies: Self = this.set("dependencies", js.undefined)
+    @scala.inline
+    def setEdit(value: /* e */ GanttEditEvent => Unit): Self = this.set("edit", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteEdit: Self = this.set("edit", js.undefined)
+    @scala.inline
+    def setEditable(value: Boolean | GanttEditable): Self = this.set("editable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditable: Self = this.set("editable", js.undefined)
+    @scala.inline
+    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHourSpan(value: Double): Self = this.set("hourSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourSpan: Self = this.set("hourSpan", js.undefined)
+    @scala.inline
+    def setListWidth(value: String | Double): Self = this.set("listWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListWidth: Self = this.set("listWidth", js.undefined)
+    @scala.inline
+    def setMessages(value: GanttMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setMove(value: /* e */ GanttMoveEvent => Unit): Self = this.set("move", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMove: Self = this.set("move", js.undefined)
+    @scala.inline
+    def setMoveEnd(value: /* e */ GanttMoveEndEvent => Unit): Self = this.set("moveEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMoveEnd: Self = this.set("moveEnd", js.undefined)
+    @scala.inline
+    def setMoveStart(value: /* e */ GanttMoveStartEvent => Unit): Self = this.set("moveStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteMoveStart: Self = this.set("moveStart", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNavigatable(value: Boolean): Self = this.set("navigatable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNavigatable: Self = this.set("navigatable", js.undefined)
+    @scala.inline
+    def setNavigate(value: /* e */ GanttNavigateEvent => Unit): Self = this.set("navigate", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteNavigate: Self = this.set("navigate", js.undefined)
+    @scala.inline
+    def setPdf(value: GanttPdf): Self = this.set("pdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePdf: Self = this.set("pdf", js.undefined)
+    @scala.inline
+    def setPdfExport(value: /* e */ GanttPdfExportEvent => Unit): Self = this.set("pdfExport", js.Any.fromFunction1(value))
+    @scala.inline
+    def deletePdfExport: Self = this.set("pdfExport", js.undefined)
+    @scala.inline
+    def setRange(value: GanttRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setRemove(value: /* e */ GanttRemoveEvent => Unit): Self = this.set("remove", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setResizable(value: Boolean): Self = this.set("resizable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResizable: Self = this.set("resizable", js.undefined)
+    @scala.inline
+    def setResize(value: /* e */ GanttResizeEvent => Unit): Self = this.set("resize", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResize: Self = this.set("resize", js.undefined)
+    @scala.inline
+    def setResizeEnd(value: /* e */ GanttResizeEndEvent => Unit): Self = this.set("resizeEnd", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResizeEnd: Self = this.set("resizeEnd", js.undefined)
+    @scala.inline
+    def setResizeStart(value: /* e */ GanttResizeStartEvent => Unit): Self = this.set("resizeStart", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteResizeStart: Self = this.set("resizeStart", js.undefined)
+    @scala.inline
+    def setResources(value: GanttResources): Self = this.set("resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("resources", js.undefined)
+    @scala.inline
+    def setRowHeight(value: Double | String): Self = this.set("rowHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowHeight: Self = this.set("rowHeight", js.undefined)
+    @scala.inline
+    def setSave(value: /* e */ GanttSaveEvent => Unit): Self = this.set("save", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSave: Self = this.set("save", js.undefined)
+    @scala.inline
+    def setSelectable(value: Boolean): Self = this.set("selectable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectable: Self = this.set("selectable", js.undefined)
+    @scala.inline
+    def setShowWorkDays(value: Boolean): Self = this.set("showWorkDays", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWorkDays: Self = this.set("showWorkDays", js.undefined)
+    @scala.inline
+    def setShowWorkHours(value: Boolean): Self = this.set("showWorkHours", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowWorkHours: Self = this.set("showWorkHours", js.undefined)
+    @scala.inline
+    def setSnap(value: Boolean): Self = this.set("snap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnap: Self = this.set("snap", js.undefined)
+    @scala.inline
+    def setTaskTemplate(value: String | js.Function): Self = this.set("taskTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTaskTemplate: Self = this.set("taskTemplate", js.undefined)
+    @scala.inline
+    def setToolbarVarargs(value: GanttToolbarItem*): Self = this.set("toolbar", js.Array(value :_*))
+    @scala.inline
+    def setToolbar(value: js.Array[GanttToolbarItem]): Self = this.set("toolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToolbar: Self = this.set("toolbar", js.undefined)
+    @scala.inline
+    def setTooltip(value: GanttTooltip): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setViewsVarargs(value: GanttView*): Self = this.set("views", js.Array(value :_*))
+    @scala.inline
+    def setViews(value: js.Array[GanttView]): Self = this.set("views", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteViews: Self = this.set("views", js.undefined)
+    @scala.inline
+    def setWorkDayEnd(value: Date): Self = this.set("workDayEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkDayEnd: Self = this.set("workDayEnd", js.undefined)
+    @scala.inline
+    def setWorkDayStart(value: Date): Self = this.set("workDayStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkDayStart: Self = this.set("workDayStart", js.undefined)
+    @scala.inline
+    def setWorkWeekEnd(value: Double): Self = this.set("workWeekEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkWeekEnd: Self = this.set("workWeekEnd", js.undefined)
+    @scala.inline
+    def setWorkWeekStart(value: Double): Self = this.set("workWeekStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkWeekStart: Self = this.set("workWeekStart", js.undefined)
+  }
+  
 }
 

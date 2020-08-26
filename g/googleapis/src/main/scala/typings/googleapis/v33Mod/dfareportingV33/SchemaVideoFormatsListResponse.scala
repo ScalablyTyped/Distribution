@@ -22,11 +22,32 @@ trait SchemaVideoFormatsListResponse extends js.Object {
 
 object SchemaVideoFormatsListResponse {
   @scala.inline
-  def apply(kind: String = null, videoFormats: js.Array[SchemaVideoFormat] = null): SchemaVideoFormatsListResponse = {
+  def apply(): SchemaVideoFormatsListResponse = {
     val __obj = js.Dynamic.literal()
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (videoFormats != null) __obj.updateDynamic("videoFormats")(videoFormats.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoFormatsListResponse]
   }
+  @scala.inline
+  implicit class SchemaVideoFormatsListResponseOps[Self <: SchemaVideoFormatsListResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setVideoFormatsVarargs(value: SchemaVideoFormat*): Self = this.set("videoFormats", js.Array(value :_*))
+    @scala.inline
+    def setVideoFormats(value: js.Array[SchemaVideoFormat]): Self = this.set("videoFormats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideoFormats: Self = this.set("videoFormats", js.undefined)
+  }
+  
 }
 

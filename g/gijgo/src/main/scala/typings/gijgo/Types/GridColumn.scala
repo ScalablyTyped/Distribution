@@ -4,87 +4,148 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridColumn extends js.Object {
-  var align: js.UndefOr[String] = js.undefined
-  var cssClass: js.UndefOr[String] = js.undefined
-  var decimalDigits: js.UndefOr[Double] = js.undefined
-  var editField: js.UndefOr[String] = js.undefined
-  var editor: js.UndefOr[js.Any] = js.undefined
-  var events: js.UndefOr[js.Any] = js.undefined
-  var field: js.UndefOr[String] = js.undefined
-  var filter: js.UndefOr[js.Any] = js.undefined
-  var filterable: js.UndefOr[Boolean] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var headerCssClass: js.UndefOr[String] = js.undefined
-  var hidden: js.UndefOr[Boolean] = js.undefined
-  var icon: js.UndefOr[String] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
-  var mode: js.UndefOr[String] = js.undefined
-  var priority: js.UndefOr[Double] = js.undefined
-  var renderer: js.UndefOr[js.Any] = js.undefined
-  var sortable: js.UndefOr[Boolean] = js.undefined
-  var stopPropagation: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var tmpl: js.UndefOr[String] = js.undefined
-  var tooltip: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
+  var align: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.native
+  var decimalDigits: js.UndefOr[Double] = js.native
+  var editField: js.UndefOr[String] = js.native
+  var editor: js.UndefOr[js.Any] = js.native
+  var events: js.UndefOr[js.Any] = js.native
+  var field: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[js.Any] = js.native
+  var filterable: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[String] = js.native
+  var headerCssClass: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[Boolean] = js.native
+  var icon: js.UndefOr[String] = js.native
+  var minWidth: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[Double] = js.native
+  var renderer: js.UndefOr[js.Any] = js.native
+  var sortable: js.UndefOr[Boolean] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var tmpl: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var width: js.UndefOr[Double] = js.native
 }
 
 object GridColumn {
   @scala.inline
-  def apply(
-    align: String = null,
-    cssClass: String = null,
-    decimalDigits: js.UndefOr[Double] = js.undefined,
-    editField: String = null,
-    editor: js.Any = null,
-    events: js.Any = null,
-    field: String = null,
-    filter: js.Any = null,
-    filterable: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    headerCssClass: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    minWidth: js.UndefOr[Double] = js.undefined,
-    mode: String = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    renderer: js.Any = null,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    stopPropagation: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    tmpl: String = null,
-    tooltip: String = null,
-    `type`: String = null,
-    width: js.UndefOr[Double] = js.undefined
-  ): GridColumn = {
+  def apply(): GridColumn = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(decimalDigits)) __obj.updateDynamic("decimalDigits")(decimalDigits.get.asInstanceOf[js.Any])
-    if (editField != null) __obj.updateDynamic("editField")(editField.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (headerCssClass != null) __obj.updateDynamic("headerCssClass")(headerCssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth.get.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tmpl != null) __obj.updateDynamic("tmpl")(tmpl.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumn]
   }
+  @scala.inline
+  implicit class GridColumnOps[Self <: GridColumn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlign: Self = this.set("align", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDecimalDigits(value: Double): Self = this.set("decimalDigits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecimalDigits: Self = this.set("decimalDigits", js.undefined)
+    @scala.inline
+    def setEditField(value: String): Self = this.set("editField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditField: Self = this.set("editField", js.undefined)
+    @scala.inline
+    def setEditor(value: js.Any): Self = this.set("editor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEditor: Self = this.set("editor", js.undefined)
+    @scala.inline
+    def setEvents(value: js.Any): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setField(value: String): Self = this.set("field", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteField: Self = this.set("field", js.undefined)
+    @scala.inline
+    def setFilter(value: js.Any): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setFilterable(value: Boolean): Self = this.set("filterable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilterable: Self = this.set("filterable", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setHeaderCssClass(value: String): Self = this.set("headerCssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaderCssClass: Self = this.set("headerCssClass", js.undefined)
+    @scala.inline
+    def setHidden(value: Boolean): Self = this.set("hidden", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHidden: Self = this.set("hidden", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setMinWidth(value: Double): Self = this.set("minWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinWidth: Self = this.set("minWidth", js.undefined)
+    @scala.inline
+    def setMode(value: String): Self = this.set("mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("mode", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setRenderer(value: js.Any): Self = this.set("renderer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRenderer: Self = this.set("renderer", js.undefined)
+    @scala.inline
+    def setSortable(value: Boolean): Self = this.set("sortable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortable: Self = this.set("sortable", js.undefined)
+    @scala.inline
+    def setStopPropagation(value: Boolean): Self = this.set("stopPropagation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopPropagation: Self = this.set("stopPropagation", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTmpl(value: String): Self = this.set("tmpl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTmpl: Self = this.set("tmpl", js.undefined)
+    @scala.inline
+    def setTooltip(value: String): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

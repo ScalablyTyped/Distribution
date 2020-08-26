@@ -46,27 +46,56 @@ trait ListObjectsV2Request extends js.Object {
 
 object ListObjectsV2Request {
   @scala.inline
-  def apply(
-    Bucket: BucketName,
-    ContinuationToken: Token = null,
-    Delimiter: Delimiter = null,
-    EncodingType: EncodingType = null,
-    FetchOwner: js.UndefOr[FetchOwner] = js.undefined,
-    MaxKeys: js.UndefOr[MaxKeys] = js.undefined,
-    Prefix: Prefix = null,
-    RequestPayer: RequestPayer = null,
-    StartAfter: StartAfter = null
-  ): ListObjectsV2Request = {
+  def apply(Bucket: BucketName): ListObjectsV2Request = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
-    if (ContinuationToken != null) __obj.updateDynamic("ContinuationToken")(ContinuationToken.asInstanceOf[js.Any])
-    if (Delimiter != null) __obj.updateDynamic("Delimiter")(Delimiter.asInstanceOf[js.Any])
-    if (EncodingType != null) __obj.updateDynamic("EncodingType")(EncodingType.asInstanceOf[js.Any])
-    if (!js.isUndefined(FetchOwner)) __obj.updateDynamic("FetchOwner")(FetchOwner.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxKeys)) __obj.updateDynamic("MaxKeys")(MaxKeys.get.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
-    if (RequestPayer != null) __obj.updateDynamic("RequestPayer")(RequestPayer.asInstanceOf[js.Any])
-    if (StartAfter != null) __obj.updateDynamic("StartAfter")(StartAfter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListObjectsV2Request]
   }
+  @scala.inline
+  implicit class ListObjectsV2RequestOps[Self <: ListObjectsV2Request] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: BucketName): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContinuationToken(value: Token): Self = this.set("ContinuationToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuationToken: Self = this.set("ContinuationToken", js.undefined)
+    @scala.inline
+    def setDelimiter(value: Delimiter): Self = this.set("Delimiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDelimiter: Self = this.set("Delimiter", js.undefined)
+    @scala.inline
+    def setEncodingType(value: EncodingType): Self = this.set("EncodingType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncodingType: Self = this.set("EncodingType", js.undefined)
+    @scala.inline
+    def setFetchOwner(value: FetchOwner): Self = this.set("FetchOwner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFetchOwner: Self = this.set("FetchOwner", js.undefined)
+    @scala.inline
+    def setMaxKeys(value: MaxKeys): Self = this.set("MaxKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxKeys: Self = this.set("MaxKeys", js.undefined)
+    @scala.inline
+    def setPrefix(value: Prefix): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+    @scala.inline
+    def setRequestPayer(value: RequestPayer): Self = this.set("RequestPayer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestPayer: Self = this.set("RequestPayer", js.undefined)
+    @scala.inline
+    def setStartAfter(value: StartAfter): Self = this.set("StartAfter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartAfter: Self = this.set("StartAfter", js.undefined)
+  }
+  
 }
 

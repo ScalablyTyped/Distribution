@@ -32,11 +32,30 @@ trait SchemaConfigurationSpec extends js.Object {
 
 object SchemaConfigurationSpec {
   @scala.inline
-  def apply(generation: js.UndefOr[Double] = js.undefined, revisionTemplate: SchemaRevisionTemplate = null): SchemaConfigurationSpec = {
+  def apply(): SchemaConfigurationSpec = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(generation)) __obj.updateDynamic("generation")(generation.get.asInstanceOf[js.Any])
-    if (revisionTemplate != null) __obj.updateDynamic("revisionTemplate")(revisionTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaConfigurationSpec]
   }
+  @scala.inline
+  implicit class SchemaConfigurationSpecOps[Self <: SchemaConfigurationSpec] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGeneration(value: Double): Self = this.set("generation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeneration: Self = this.set("generation", js.undefined)
+    @scala.inline
+    def setRevisionTemplate(value: SchemaRevisionTemplate): Self = this.set("revisionTemplate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevisionTemplate: Self = this.set("revisionTemplate", js.undefined)
+  }
+  
 }
 

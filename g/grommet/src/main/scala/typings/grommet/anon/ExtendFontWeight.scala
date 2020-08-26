@@ -1,35 +1,44 @@
 package typings.grommet.anon
 
 import typings.grommet.baseMod.ExtendType
-import typings.grommet.utilsMod.ColorType
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendFontWeight extends js.Object {
-  var color: js.UndefOr[ColorType] = js.undefined
-  var extend: js.UndefOr[ExtendType] = js.undefined
-  var fontWeight: js.UndefOr[Double] = js.undefined
-  var hover: js.UndefOr[TextDecoration] = js.undefined
-  var textDecoration: js.UndefOr[String] = js.undefined
+  var extend: js.UndefOr[ExtendType] = js.native
+  var fontWeight: js.UndefOr[Double] = js.native
 }
 
 object ExtendFontWeight {
   @scala.inline
-  def apply(
-    color: ColorType = null,
-    extend: ExtendType = null,
-    fontWeight: js.UndefOr[Double] = js.undefined,
-    hover: TextDecoration = null,
-    textDecoration: String = null
-  ): ExtendFontWeight = {
+  def apply(): ExtendFontWeight = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontWeight)) __obj.updateDynamic("fontWeight")(fontWeight.get.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendFontWeight]
   }
+  @scala.inline
+  implicit class ExtendFontWeightOps[Self <: ExtendFontWeight] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExtendFunction1(value: /* args */ js.Any => Unit): Self = this.set("extend", js.Any.fromFunction1(value))
+    @scala.inline
+    def setExtend(value: ExtendType): Self = this.set("extend", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExtend: Self = this.set("extend", js.undefined)
+    @scala.inline
+    def setFontWeight(value: Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+  }
+  
 }
 

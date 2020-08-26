@@ -23,6 +23,9 @@ object stellarSdkNumbers {
   @js.native
   sealed trait `500` extends js.Object
   
+  @js.native
+  sealed trait _4294967295 extends js.Object
+  
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   @scala.inline
@@ -35,5 +38,7 @@ object stellarSdkNumbers {
   def `429`: `429` = 429.asInstanceOf[`429`]
   @scala.inline
   def `500`: `500` = 500.asInstanceOf[`500`]
+  @scala.inline
+  def _4294967295: _4294967295 = 4294967295.0.asInstanceOf[_4294967295]
 }
 

@@ -10,9 +10,11 @@ trait WebGeolocation extends js.Object {
   var MSHTMLDotWebGeolocation_typekey: WebGeolocation = js.native
   def clearWatch(watchId: Double): Unit = js.native
   def getCurrentPosition(successCallback: js.Any): Unit = js.native
+  def getCurrentPosition(successCallback: js.Any, errorCallback: js.UndefOr[scala.Nothing], options: js.Any): Unit = js.native
   def getCurrentPosition(successCallback: js.Any, errorCallback: js.Any): Unit = js.native
   def getCurrentPosition(successCallback: js.Any, errorCallback: js.Any, options: js.Any): Unit = js.native
   def watchPosition(successCallback: js.Any): Double = js.native
+  def watchPosition(successCallback: js.Any, errorCallback: js.UndefOr[scala.Nothing], options: js.Any): Double = js.native
   def watchPosition(successCallback: js.Any, errorCallback: js.Any): Double = js.native
   def watchPosition(successCallback: js.Any, errorCallback: js.Any, options: js.Any): Double = js.native
 }

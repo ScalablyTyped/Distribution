@@ -22,6 +22,11 @@ trait Observable[T] extends js.Object {
   def reduce_R[R](callback: js.Function2[/* previousValue */ R, /* currentValue */ T, R], initialValue: R): Observable[R] = js.native
   def subscribe(observer: Observer[T]): Subscription = js.native
   def subscribe(onNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
+  def subscribe(
+    onNext: js.Function1[/* value */ T, Unit],
+    onError: js.UndefOr[scala.Nothing],
+    onComplete: js.Function0[Unit]
+  ): Subscription = js.native
   def subscribe(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): Subscription = js.native
   def subscribe(
     onNext: js.Function1[/* value */ T, Unit],

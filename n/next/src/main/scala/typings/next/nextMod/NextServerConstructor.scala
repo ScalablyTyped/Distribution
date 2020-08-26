@@ -5,34 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined std.Omit<next.next/dist/next-server/server/next-server.ServerConstructor, 'staticMarkup'> & {  dev ? :boolean} */
+/* Inlined next.next/dist/next-server/server/next-server.ServerConstructor & {  dev :boolean | undefined} */
+@js.native
 trait NextServerConstructor extends js.Object {
-  var conf: js.UndefOr[NextConfig] = js.undefined
-  var customServer: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Object what you would use in next.config.js - @default {}
+    */
+  var conf: js.UndefOr[NextConfig] = js.native
+  var customServer: js.UndefOr[Boolean] = js.native
   /**
     * Whether to launch Next.js in dev mode - @default false
     */
-  var dev: js.UndefOr[Boolean] = js.undefined
-  var dir: js.UndefOr[String] = js.undefined
-  var quiet: js.UndefOr[Boolean] = js.undefined
+  var dev: js.UndefOr[Boolean] = js.native
+  /**
+    * Where the Next project is located - @default '.'
+    */
+  var dir: js.UndefOr[String] = js.native
+  /**
+    * Hide error messages containing server information - @default false
+    */
+  var quiet: js.UndefOr[Boolean] = js.native
 }
 
 object NextServerConstructor {
   @scala.inline
-  def apply(
-    conf: NextConfig = null,
-    customServer: js.UndefOr[Boolean] = js.undefined,
-    dev: js.UndefOr[Boolean] = js.undefined,
-    dir: String = null,
-    quiet: js.UndefOr[Boolean] = js.undefined
-  ): NextServerConstructor = {
+  def apply(): NextServerConstructor = {
     val __obj = js.Dynamic.literal()
-    if (conf != null) __obj.updateDynamic("conf")(conf.asInstanceOf[js.Any])
-    if (!js.isUndefined(customServer)) __obj.updateDynamic("customServer")(customServer.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dev)) __obj.updateDynamic("dev")(dev.get.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextServerConstructor]
   }
+  @scala.inline
+  implicit class NextServerConstructorOps[Self <: NextServerConstructor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConf(value: NextConfig): Self = this.set("conf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConf: Self = this.set("conf", js.undefined)
+    @scala.inline
+    def setCustomServer(value: Boolean): Self = this.set("customServer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomServer: Self = this.set("customServer", js.undefined)
+    @scala.inline
+    def setDev(value: Boolean): Self = this.set("dev", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDev: Self = this.set("dev", js.undefined)
+    @scala.inline
+    def setDir(value: String): Self = this.set("dir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDir: Self = this.set("dir", js.undefined)
+    @scala.inline
+    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuiet: Self = this.set("quiet", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait OptionGroups extends js.Object {
 
 object OptionGroups {
   @scala.inline
-  def apply(Marker: String = null, OptionGroupsList: OptionGroupsList = null): OptionGroups = {
+  def apply(): OptionGroups = {
     val __obj = js.Dynamic.literal()
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (OptionGroupsList != null) __obj.updateDynamic("OptionGroupsList")(OptionGroupsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionGroups]
   }
+  @scala.inline
+  implicit class OptionGroupsOps[Self <: OptionGroups] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setOptionGroupsListVarargs(value: OptionGroup*): Self = this.set("OptionGroupsList", js.Array(value :_*))
+    @scala.inline
+    def setOptionGroupsList(value: OptionGroupsList): Self = this.set("OptionGroupsList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptionGroupsList: Self = this.set("OptionGroupsList", js.undefined)
+  }
+  
 }
 

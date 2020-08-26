@@ -11,114 +11,195 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IDialogPropTypes extends js.Object {
-  var afterClose: js.UndefOr[js.Function0[_]] = js.undefined
-  var animation: js.UndefOr[js.Any] = js.undefined
-  var bodyProps: js.UndefOr[js.Any] = js.undefined
-  var bodyStyle: js.UndefOr[js.Object] = js.undefined
-  var children: js.UndefOr[js.Any] = js.undefined
-  var className: js.UndefOr[String] = js.undefined
-  var closable: js.UndefOr[Boolean] = js.undefined
-  var closeIcon: js.UndefOr[ReactNode] = js.undefined
-  var destroyOnClose: js.UndefOr[Boolean] = js.undefined
-  var focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined
-  var footer: js.UndefOr[ReactNode] = js.undefined
-  var forceRender: js.UndefOr[Boolean] = js.undefined
-  var getContainer: js.UndefOr[IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | `false`] = js.undefined
-  var height: js.UndefOr[Double] = js.undefined
-  var keyboard: js.UndefOr[Boolean] = js.undefined
-  var mask: js.UndefOr[Boolean] = js.undefined
-  var maskAnimation: js.UndefOr[js.Any] = js.undefined
-  var maskClosable: js.UndefOr[Boolean] = js.undefined
-  var maskProps: js.UndefOr[js.Any] = js.undefined
-  var maskStyle: js.UndefOr[js.Object] = js.undefined
-  var maskTransitionName: js.UndefOr[String] = js.undefined
-  var mousePosition: js.UndefOr[X] = js.undefined
-  var onClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[HTMLDivElement, Event], _]] = js.undefined
-  var prefixCls: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var title: js.UndefOr[ReactNode] = js.undefined
-  var transitionName: js.UndefOr[String] = js.undefined
-  var visible: js.UndefOr[Boolean] = js.undefined
-  var width: js.UndefOr[Double] = js.undefined
-  var wrapClassName: js.UndefOr[String] = js.undefined
-  var wrapProps: js.UndefOr[js.Any] = js.undefined
-  var wrapStyle: js.UndefOr[js.Object] = js.undefined
-  var zIndex: js.UndefOr[Double] = js.undefined
+  var afterClose: js.UndefOr[js.Function0[_]] = js.native
+  var animation: js.UndefOr[js.Any] = js.native
+  var bodyProps: js.UndefOr[js.Any] = js.native
+  var bodyStyle: js.UndefOr[js.Object] = js.native
+  var children: js.UndefOr[js.Any] = js.native
+  var className: js.UndefOr[String] = js.native
+  var closable: js.UndefOr[Boolean] = js.native
+  var closeIcon: js.UndefOr[ReactNode] = js.native
+  var destroyOnClose: js.UndefOr[Boolean] = js.native
+  var focusTriggerAfterClose: js.UndefOr[Boolean] = js.native
+  var footer: js.UndefOr[ReactNode] = js.native
+  var forceRender: js.UndefOr[Boolean] = js.native
+  var getContainer: js.UndefOr[IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | `false`] = js.native
+  var height: js.UndefOr[Double] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.native
+  var maskAnimation: js.UndefOr[js.Any] = js.native
+  var maskClosable: js.UndefOr[Boolean] = js.native
+  var maskProps: js.UndefOr[js.Any] = js.native
+  var maskStyle: js.UndefOr[js.Object] = js.native
+  var maskTransitionName: js.UndefOr[String] = js.native
+  var mousePosition: js.UndefOr[X] = js.native
+  var onClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[HTMLDivElement, Event], _]] = js.native
+  var prefixCls: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var title: js.UndefOr[ReactNode] = js.native
+  var transitionName: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Double] = js.native
+  var wrapClassName: js.UndefOr[String] = js.native
+  var wrapProps: js.UndefOr[js.Any] = js.native
+  var wrapStyle: js.UndefOr[js.Object] = js.native
+  var zIndex: js.UndefOr[Double] = js.native
 }
 
 object IDialogPropTypes {
   @scala.inline
-  def apply(
-    afterClose: () => _ = null,
-    animation: js.Any = null,
-    bodyProps: js.Any = null,
-    bodyStyle: js.Object = null,
-    children: js.Any = null,
-    className: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    closeIcon: ReactNode = null,
-    destroyOnClose: js.UndefOr[Boolean] = js.undefined,
-    focusTriggerAfterClose: js.UndefOr[Boolean] = js.undefined,
-    footer: ReactNode = null,
-    forceRender: js.UndefOr[Boolean] = js.undefined,
-    getContainer: IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | `false` = null,
-    height: js.UndefOr[Double] = js.undefined,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    maskAnimation: js.Any = null,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskProps: js.Any = null,
-    maskStyle: js.Object = null,
-    maskTransitionName: String = null,
-    mousePosition: X = null,
-    onClose: /* e */ SyntheticEvent[HTMLDivElement, Event] => _ = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    title: ReactNode = null,
-    transitionName: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    wrapClassName: String = null,
-    wrapProps: js.Any = null,
-    wrapStyle: js.Object = null,
-    zIndex: js.UndefOr[Double] = js.undefined
-  ): IDialogPropTypes = {
+  def apply(): IDialogPropTypes = {
     val __obj = js.Dynamic.literal()
-    if (afterClose != null) __obj.updateDynamic("afterClose")(js.Any.fromFunction0(afterClose))
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (bodyProps != null) __obj.updateDynamic("bodyProps")(bodyProps.asInstanceOf[js.Any])
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.get.asInstanceOf[js.Any])
-    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusTriggerAfterClose)) __obj.updateDynamic("focusTriggerAfterClose")(focusTriggerAfterClose.get.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.get.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.get.asInstanceOf[js.Any])
-    if (maskAnimation != null) __obj.updateDynamic("maskAnimation")(maskAnimation.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.get.asInstanceOf[js.Any])
-    if (maskProps != null) __obj.updateDynamic("maskProps")(maskProps.asInstanceOf[js.Any])
-    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
-    if (mousePosition != null) __obj.updateDynamic("mousePosition")(mousePosition.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName.asInstanceOf[js.Any])
-    if (wrapProps != null) __obj.updateDynamic("wrapProps")(wrapProps.asInstanceOf[js.Any])
-    if (wrapStyle != null) __obj.updateDynamic("wrapStyle")(wrapStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(zIndex)) __obj.updateDynamic("zIndex")(zIndex.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDialogPropTypes]
   }
+  @scala.inline
+  implicit class IDialogPropTypesOps[Self <: IDialogPropTypes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterClose(value: () => _): Self = this.set("afterClose", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteAfterClose: Self = this.set("afterClose", js.undefined)
+    @scala.inline
+    def setAnimation(value: js.Any): Self = this.set("animation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAnimation: Self = this.set("animation", js.undefined)
+    @scala.inline
+    def setBodyProps(value: js.Any): Self = this.set("bodyProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyProps: Self = this.set("bodyProps", js.undefined)
+    @scala.inline
+    def setBodyStyle(value: js.Object): Self = this.set("bodyStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBodyStyle: Self = this.set("bodyStyle", js.undefined)
+    @scala.inline
+    def setChildren(value: js.Any): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setClosable(value: Boolean): Self = this.set("closable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClosable: Self = this.set("closable", js.undefined)
+    @scala.inline
+    def setCloseIcon(value: ReactNode): Self = this.set("closeIcon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCloseIcon: Self = this.set("closeIcon", js.undefined)
+    @scala.inline
+    def setDestroyOnClose(value: Boolean): Self = this.set("destroyOnClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestroyOnClose: Self = this.set("destroyOnClose", js.undefined)
+    @scala.inline
+    def setFocusTriggerAfterClose(value: Boolean): Self = this.set("focusTriggerAfterClose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocusTriggerAfterClose: Self = this.set("focusTriggerAfterClose", js.undefined)
+    @scala.inline
+    def setFooter(value: ReactNode): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setForceRender(value: Boolean): Self = this.set("forceRender", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForceRender: Self = this.set("forceRender", js.undefined)
+    @scala.inline
+    def setGetContainerFunction0(value: () => IStringOrHtmlElement): Self = this.set("getContainer", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetContainer(value: IStringOrHtmlElement | js.Function0[IStringOrHtmlElement] | `false`): Self = this.set("getContainer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGetContainer: Self = this.set("getContainer", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setKeyboard(value: Boolean): Self = this.set("keyboard", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyboard: Self = this.set("keyboard", js.undefined)
+    @scala.inline
+    def setMask(value: Boolean): Self = this.set("mask", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMask: Self = this.set("mask", js.undefined)
+    @scala.inline
+    def setMaskAnimation(value: js.Any): Self = this.set("maskAnimation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskAnimation: Self = this.set("maskAnimation", js.undefined)
+    @scala.inline
+    def setMaskClosable(value: Boolean): Self = this.set("maskClosable", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskClosable: Self = this.set("maskClosable", js.undefined)
+    @scala.inline
+    def setMaskProps(value: js.Any): Self = this.set("maskProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskProps: Self = this.set("maskProps", js.undefined)
+    @scala.inline
+    def setMaskStyle(value: js.Object): Self = this.set("maskStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskStyle: Self = this.set("maskStyle", js.undefined)
+    @scala.inline
+    def setMaskTransitionName(value: String): Self = this.set("maskTransitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaskTransitionName: Self = this.set("maskTransitionName", js.undefined)
+    @scala.inline
+    def setMousePosition(value: X): Self = this.set("mousePosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMousePosition: Self = this.set("mousePosition", js.undefined)
+    @scala.inline
+    def setOnClose(value: /* e */ SyntheticEvent[HTMLDivElement, Event] => _): Self = this.set("onClose", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnClose: Self = this.set("onClose", js.undefined)
+    @scala.inline
+    def setPrefixCls(value: String): Self = this.set("prefixCls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefixCls: Self = this.set("prefixCls", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTitle(value: ReactNode): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTransitionName(value: String): Self = this.set("transitionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransitionName: Self = this.set("transitionName", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setWrapClassName(value: String): Self = this.set("wrapClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapClassName: Self = this.set("wrapClassName", js.undefined)
+    @scala.inline
+    def setWrapProps(value: js.Any): Self = this.set("wrapProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapProps: Self = this.set("wrapProps", js.undefined)
+    @scala.inline
+    def setWrapStyle(value: js.Object): Self = this.set("wrapStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrapStyle: Self = this.set("wrapStyle", js.undefined)
+    @scala.inline
+    def setZIndex(value: Double): Self = this.set("zIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZIndex: Self = this.set("zIndex", js.undefined)
+  }
+  
 }
 

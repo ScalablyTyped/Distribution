@@ -39,18 +39,40 @@ trait SchemaExportAssetsRequest extends js.Object {
 
 object SchemaExportAssetsRequest {
   @scala.inline
-  def apply(
-    assetTypes: js.Array[String] = null,
-    contentType: String = null,
-    outputConfig: SchemaOutputConfig = null,
-    readTime: String = null
-  ): SchemaExportAssetsRequest = {
+  def apply(): SchemaExportAssetsRequest = {
     val __obj = js.Dynamic.literal()
-    if (assetTypes != null) __obj.updateDynamic("assetTypes")(assetTypes.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (outputConfig != null) __obj.updateDynamic("outputConfig")(outputConfig.asInstanceOf[js.Any])
-    if (readTime != null) __obj.updateDynamic("readTime")(readTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExportAssetsRequest]
   }
+  @scala.inline
+  implicit class SchemaExportAssetsRequestOps[Self <: SchemaExportAssetsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssetTypesVarargs(value: String*): Self = this.set("assetTypes", js.Array(value :_*))
+    @scala.inline
+    def setAssetTypes(value: js.Array[String]): Self = this.set("assetTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssetTypes: Self = this.set("assetTypes", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setOutputConfig(value: SchemaOutputConfig): Self = this.set("outputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputConfig: Self = this.set("outputConfig", js.undefined)
+    @scala.inline
+    def setReadTime(value: String): Self = this.set("readTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReadTime: Self = this.set("readTime", js.undefined)
+  }
+  
 }
 

@@ -11,7 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/range-search-field relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/search-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.RangeSearchField")
 @js.native
@@ -27,37 +27,33 @@ class RangeSearchField protected () extends SearchField {
   @JSName("model")
   var model_FRangeSearchField: IModel = js.native
   def includeLower: Boolean = js.native
-  def includeLower(newValue: Boolean): js.Any = js.native
+  def includeLower_=(newValue: Boolean): Unit = js.native
   def includeUpper: Boolean = js.native
-  def includeUpper(newValue: Boolean): js.Any = js.native
+  def includeUpper_=(newValue: Boolean): Unit = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
   def lowerBound: String = js.native
-  def lowerBound(newValue: String): js.Any = js.native
-  def lowerBoundRef(): js.Any = js.native
-  def lowerBoundRef(newValue: AttributeRef): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("lowerBoundRef")
-  def lowerBoundRef_Union: AttributeRef | Null = js.native
+  def lowerBoundRef: AttributeRef | Null = js.native
+  def lowerBoundRef_=(newValue: AttributeRef | Null): Unit = js.native
+  def lowerBound_=(newValue: String): Unit = js.native
   /**
     * The value of this property is conceptually of type paths.LegacyAttributePath.
     *
     * In version 7.11.0: deleted
     */
   def upperBound: String = js.native
-  def upperBound(newValue: String): js.Any = js.native
-  def upperBoundRef(): js.Any = js.native
-  def upperBoundRef(newValue: AttributeRef): js.Any = js.native
   /**
     * In version 7.11.0: introduced
     */
-  @JSName("upperBoundRef")
-  def upperBoundRef_Union: AttributeRef | Null = js.native
+  def upperBoundRef: AttributeRef | Null = js.native
+  def upperBoundRef_=(newValue: AttributeRef | Null): Unit = js.native
+  def upperBound_=(newValue: String): Unit = js.native
 }
 
 /* static members */

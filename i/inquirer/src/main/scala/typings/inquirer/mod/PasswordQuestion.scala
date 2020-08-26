@@ -1,6 +1,5 @@
 package typings.inquirer.mod
 
-import typings.inquirer.anon.IsFinal
 import typings.inquirer.inquirerStrings.password
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -12,42 +11,36 @@ import scala.scalajs.js.annotation._
   * @template T
   * The type of the answers.
   */
+@js.native
 trait PasswordQuestion[T /* <: Answers */] extends PasswordQuestionOptions[T] {
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_PasswordQuestion: password
+  var type_PasswordQuestion: password = js.native
 }
 
 object PasswordQuestion {
   @scala.inline
-  def apply[/* <: typings.inquirer.mod.Answers */ T](
-    `type`: password,
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => _ = null,
-    mask: String = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    prefix: String = null,
-    suffix: String = null,
-    transformer: (/* input */ js.Any, T, /* flags */ IsFinal) => String | js.Promise[String] = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String]) = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): PasswordQuestion[T] = {
+  def apply[/* <: typings.inquirer.mod.Answers */ T](`type`: password): PasswordQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1(filter))
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (transformer != null) __obj.updateDynamic("transformer")(js.Any.fromFunction3(transformer))
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2(validate))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordQuestion[T]]
   }
+  @scala.inline
+  implicit class PasswordQuestionOps[Self <: PasswordQuestion[_], /* <: typings.inquirer.mod.Answers */ T] (val x: Self with PasswordQuestion[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: password): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

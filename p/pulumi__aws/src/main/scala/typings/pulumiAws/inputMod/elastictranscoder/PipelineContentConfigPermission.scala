@@ -23,16 +23,36 @@ trait PipelineContentConfigPermission extends js.Object {
 
 object PipelineContentConfigPermission {
   @scala.inline
-  def apply(
-    accesses: Input[js.Array[Input[String]]] = null,
-    grantee: Input[String] = null,
-    granteeType: Input[String] = null
-  ): PipelineContentConfigPermission = {
+  def apply(): PipelineContentConfigPermission = {
     val __obj = js.Dynamic.literal()
-    if (accesses != null) __obj.updateDynamic("accesses")(accesses.asInstanceOf[js.Any])
-    if (grantee != null) __obj.updateDynamic("grantee")(grantee.asInstanceOf[js.Any])
-    if (granteeType != null) __obj.updateDynamic("granteeType")(granteeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineContentConfigPermission]
   }
+  @scala.inline
+  implicit class PipelineContentConfigPermissionOps[Self <: PipelineContentConfigPermission] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessesVarargs(value: Input[String]*): Self = this.set("accesses", js.Array(value :_*))
+    @scala.inline
+    def setAccesses(value: Input[js.Array[Input[String]]]): Self = this.set("accesses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccesses: Self = this.set("accesses", js.undefined)
+    @scala.inline
+    def setGrantee(value: Input[String]): Self = this.set("grantee", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrantee: Self = this.set("grantee", js.undefined)
+    @scala.inline
+    def setGranteeType(value: Input[String]): Self = this.set("granteeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGranteeType: Self = this.set("granteeType", js.undefined)
+  }
+  
 }
 

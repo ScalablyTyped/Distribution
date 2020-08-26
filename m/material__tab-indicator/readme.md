@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__tab-indicator
 
-Typings are for version 5.1.0
+Typings are for version 7.0.0
 
 ## Library description:
 The Material Components for the web tab indicator component
@@ -10,9 +10,9 @@ The Material Components for the web tab indicator component
 | ------------------ | :-------------: |
 | Full name          | @material/tab-indicator |
 | Keywords           | material components, material design, tab, indicator |
-| # releases         | 99 |
-| # dependents       | 17 |
-| # downloads        | 926473 |
+| # releases         | 148 |
+| # dependents       | 18 |
+| # downloads        | 958181 |
 | # stars            | 0 |
 
 ## Links

@@ -17,22 +17,46 @@ trait PreviewProps extends js.Object {
 
 object PreviewProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    columns: js.UndefOr[Double] = js.undefined,
-    isColumn: js.UndefOr[Boolean] = js.undefined,
-    isExpanded: js.UndefOr[Boolean] = js.undefined,
-    withSource: SourceProps = null,
-    withToolbar: js.UndefOr[Boolean] = js.undefined
-  ): PreviewProps = {
+  def apply(): PreviewProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded.get.asInstanceOf[js.Any])
-    if (withSource != null) __obj.updateDynamic("withSource")(withSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(withToolbar)) __obj.updateDynamic("withToolbar")(withToolbar.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreviewProps]
   }
+  @scala.inline
+  implicit class PreviewPropsOps[Self <: PreviewProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setColumns(value: Double): Self = this.set("columns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColumns: Self = this.set("columns", js.undefined)
+    @scala.inline
+    def setIsColumn(value: Boolean): Self = this.set("isColumn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsColumn: Self = this.set("isColumn", js.undefined)
+    @scala.inline
+    def setIsExpanded(value: Boolean): Self = this.set("isExpanded", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsExpanded: Self = this.set("isExpanded", js.undefined)
+    @scala.inline
+    def setWithSource(value: SourceProps): Self = this.set("withSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithSource: Self = this.set("withSource", js.undefined)
+    @scala.inline
+    def setWithToolbar(value: Boolean): Self = this.set("withToolbar", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWithToolbar: Self = this.set("withToolbar", js.undefined)
+  }
+  
 }
 

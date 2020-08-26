@@ -5,5 +5,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines a set of methods for managing the windows (app views) sent to secondary displays, such as projectors. */
+@js.native
 trait ProjectionManager extends js.Object
 

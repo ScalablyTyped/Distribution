@@ -26,6 +26,12 @@ trait Element extends js.Object {
   def animate(
     attrs: StringDictionary[String | Double | Boolean | js.Any],
     duration: Double,
+    easing: js.UndefOr[scala.Nothing],
+    callback: js.Function0[Unit]
+  ): Element = js.native
+  def animate(
+    attrs: StringDictionary[String | Double | Boolean | js.Any],
+    duration: Double,
     easing: js.Function1[/* num */ Double, Double]
   ): Element = js.native
   def animate(
@@ -76,7 +82,66 @@ trait Element extends js.Object {
     ],
     onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
     onEnd: js.Function1[/* event */ MouseEvent, Unit],
+    moveThisArg: js.UndefOr[scala.Nothing],
+    startThisArg: js.UndefOr[scala.Nothing],
+    endThisArg: js.Any
+  ): Element = js.native
+  def drag(
+    onMove: js.Function5[
+      /* dx */ Double, 
+      /* dy */ Double, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* event */ MouseEvent, 
+      Unit
+    ],
+    onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+    onEnd: js.Function1[/* event */ MouseEvent, Unit],
+    moveThisArg: js.UndefOr[scala.Nothing],
+    startThisArg: js.Any
+  ): Element = js.native
+  def drag(
+    onMove: js.Function5[
+      /* dx */ Double, 
+      /* dy */ Double, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* event */ MouseEvent, 
+      Unit
+    ],
+    onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+    onEnd: js.Function1[/* event */ MouseEvent, Unit],
+    moveThisArg: js.UndefOr[scala.Nothing],
+    startThisArg: js.Any,
+    endThisArg: js.Any
+  ): Element = js.native
+  def drag(
+    onMove: js.Function5[
+      /* dx */ Double, 
+      /* dy */ Double, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* event */ MouseEvent, 
+      Unit
+    ],
+    onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+    onEnd: js.Function1[/* event */ MouseEvent, Unit],
     moveThisArg: js.Any
+  ): Element = js.native
+  def drag(
+    onMove: js.Function5[
+      /* dx */ Double, 
+      /* dy */ Double, 
+      /* x */ Double, 
+      /* y */ Double, 
+      /* event */ MouseEvent, 
+      Unit
+    ],
+    onStart: js.Function3[/* x */ Double, /* y */ Double, /* event */ MouseEvent, Unit],
+    onEnd: js.Function1[/* event */ MouseEvent, Unit],
+    moveThisArg: js.Any,
+    startThisArg: js.UndefOr[scala.Nothing],
+    endThisArg: js.Any
   ): Element = js.native
   def drag(
     onMove: js.Function5[
@@ -116,6 +181,12 @@ trait Element extends js.Object {
   def hover(
     hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
     hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit]
+  ): Element = js.native
+  def hover(
+    hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],
+    hoverOutHandler: js.Function1[/* event */ MouseEvent, Unit],
+    inThisArg: js.UndefOr[scala.Nothing],
+    outThisArg: js.Any
   ): Element = js.native
   def hover(
     hoverInHandler: js.Function1[/* event */ MouseEvent, Unit],

@@ -7,73 +7,68 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AuthenticateOptionsGoogle extends AuthenticateOptions {
-  var accessType: js.UndefOr[offline | online] = js.undefined
-  var display: js.UndefOr[String] = js.undefined
-  var hd: js.UndefOr[String] = js.undefined
-  var hostedDomain: js.UndefOr[String] = js.undefined
-  var includeGrantedScopes: js.UndefOr[Boolean] = js.undefined
-  var loginHint: js.UndefOr[String] = js.undefined
-  var openIDRealm: js.UndefOr[js.Any] = js.undefined
-  var requestVisibleActions: js.UndefOr[js.Any] = js.undefined
+  var accessType: js.UndefOr[offline | online] = js.native
+  var display: js.UndefOr[String] = js.native
+  var hd: js.UndefOr[String] = js.native
+  var hostedDomain: js.UndefOr[String] = js.native
+  var includeGrantedScopes: js.UndefOr[Boolean] = js.native
+  var loginHint: js.UndefOr[String] = js.native
+  var openIDRealm: js.UndefOr[js.Any] = js.native
+  var requestVisibleActions: js.UndefOr[js.Any] = js.native
 }
 
 object AuthenticateOptionsGoogle {
   @scala.inline
-  def apply(
-    accessType: offline | online = null,
-    assignProperty: String = null,
-    authInfo: js.UndefOr[Boolean] = js.undefined,
-    display: String = null,
-    failWithError: js.UndefOr[Boolean] = js.undefined,
-    failureFlash: String | Boolean = null,
-    failureMessage: Boolean | String = null,
-    failureRedirect: String = null,
-    hd: String = null,
-    hostedDomain: String = null,
-    includeGrantedScopes: js.UndefOr[Boolean] = js.undefined,
-    loginHint: String = null,
-    openIDRealm: js.Any = null,
-    passReqToCallback: js.UndefOr[Boolean] = js.undefined,
-    pauseStream: js.UndefOr[Boolean] = js.undefined,
-    prompt: String = null,
-    requestVisibleActions: js.Any = null,
-    scope: String | js.Array[String] = null,
-    session: js.UndefOr[Boolean] = js.undefined,
-    state: String = null,
-    successFlash: String | Boolean = null,
-    successMessage: Boolean | String = null,
-    successRedirect: String = null,
-    successReturnToOrRedirect: String = null,
-    userProperty: String = null
-  ): AuthenticateOptionsGoogle = {
+  def apply(): AuthenticateOptionsGoogle = {
     val __obj = js.Dynamic.literal()
-    if (accessType != null) __obj.updateDynamic("accessType")(accessType.asInstanceOf[js.Any])
-    if (assignProperty != null) __obj.updateDynamic("assignProperty")(assignProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(authInfo)) __obj.updateDynamic("authInfo")(authInfo.get.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (!js.isUndefined(failWithError)) __obj.updateDynamic("failWithError")(failWithError.get.asInstanceOf[js.Any])
-    if (failureFlash != null) __obj.updateDynamic("failureFlash")(failureFlash.asInstanceOf[js.Any])
-    if (failureMessage != null) __obj.updateDynamic("failureMessage")(failureMessage.asInstanceOf[js.Any])
-    if (failureRedirect != null) __obj.updateDynamic("failureRedirect")(failureRedirect.asInstanceOf[js.Any])
-    if (hd != null) __obj.updateDynamic("hd")(hd.asInstanceOf[js.Any])
-    if (hostedDomain != null) __obj.updateDynamic("hostedDomain")(hostedDomain.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeGrantedScopes)) __obj.updateDynamic("includeGrantedScopes")(includeGrantedScopes.get.asInstanceOf[js.Any])
-    if (loginHint != null) __obj.updateDynamic("loginHint")(loginHint.asInstanceOf[js.Any])
-    if (openIDRealm != null) __obj.updateDynamic("openIDRealm")(openIDRealm.asInstanceOf[js.Any])
-    if (!js.isUndefined(passReqToCallback)) __obj.updateDynamic("passReqToCallback")(passReqToCallback.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseStream)) __obj.updateDynamic("pauseStream")(pauseStream.get.asInstanceOf[js.Any])
-    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
-    if (requestVisibleActions != null) __obj.updateDynamic("requestVisibleActions")(requestVisibleActions.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (!js.isUndefined(session)) __obj.updateDynamic("session")(session.get.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (successFlash != null) __obj.updateDynamic("successFlash")(successFlash.asInstanceOf[js.Any])
-    if (successMessage != null) __obj.updateDynamic("successMessage")(successMessage.asInstanceOf[js.Any])
-    if (successRedirect != null) __obj.updateDynamic("successRedirect")(successRedirect.asInstanceOf[js.Any])
-    if (successReturnToOrRedirect != null) __obj.updateDynamic("successReturnToOrRedirect")(successReturnToOrRedirect.asInstanceOf[js.Any])
-    if (userProperty != null) __obj.updateDynamic("userProperty")(userProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticateOptionsGoogle]
   }
+  @scala.inline
+  implicit class AuthenticateOptionsGoogleOps[Self <: AuthenticateOptionsGoogle] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessType(value: offline | online): Self = this.set("accessType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessType: Self = this.set("accessType", js.undefined)
+    @scala.inline
+    def setDisplay(value: String): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setHd(value: String): Self = this.set("hd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHd: Self = this.set("hd", js.undefined)
+    @scala.inline
+    def setHostedDomain(value: String): Self = this.set("hostedDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostedDomain: Self = this.set("hostedDomain", js.undefined)
+    @scala.inline
+    def setIncludeGrantedScopes(value: Boolean): Self = this.set("includeGrantedScopes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeGrantedScopes: Self = this.set("includeGrantedScopes", js.undefined)
+    @scala.inline
+    def setLoginHint(value: String): Self = this.set("loginHint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoginHint: Self = this.set("loginHint", js.undefined)
+    @scala.inline
+    def setOpenIDRealm(value: js.Any): Self = this.set("openIDRealm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenIDRealm: Self = this.set("openIDRealm", js.undefined)
+    @scala.inline
+    def setRequestVisibleActions(value: js.Any): Self = this.set("requestVisibleActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestVisibleActions: Self = this.set("requestVisibleActions", js.undefined)
+  }
+  
 }
 

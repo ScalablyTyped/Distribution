@@ -5,69 +5,118 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AlignedAxis extends js.Object {
-  var alignedAxis: js.UndefOr[Property] = js.undefined
-  var color: js.UndefOr[Property] = js.undefined
-  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.undefined
-  var eyeOffset: js.UndefOr[Property] = js.undefined
-  var height: js.UndefOr[Property] = js.undefined
-  var heightReference: js.UndefOr[Property] = js.undefined
-  var horizontalOrigin: js.UndefOr[Property] = js.undefined
-  var image: js.UndefOr[Property] = js.undefined
-  var imageSubRegion: js.UndefOr[Property] = js.undefined
-  var pixelOffset: js.UndefOr[Property] = js.undefined
-  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.undefined
-  var rotation: js.UndefOr[Property] = js.undefined
-  var scale: js.UndefOr[Property] = js.undefined
-  var scaleByDistance: js.UndefOr[Property] = js.undefined
-  var show: js.UndefOr[Property] = js.undefined
-  var translucencyByDistance: js.UndefOr[Property] = js.undefined
-  var verticalOrigin: js.UndefOr[Property] = js.undefined
-  var width: js.UndefOr[Property] = js.undefined
+  var alignedAxis: js.UndefOr[Property] = js.native
+  var color: js.UndefOr[Property] = js.native
+  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.native
+  var eyeOffset: js.UndefOr[Property] = js.native
+  var height: js.UndefOr[Property] = js.native
+  var heightReference: js.UndefOr[Property] = js.native
+  var horizontalOrigin: js.UndefOr[Property] = js.native
+  var image: js.UndefOr[Property] = js.native
+  var imageSubRegion: js.UndefOr[Property] = js.native
+  var pixelOffset: js.UndefOr[Property] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.native
+  var rotation: js.UndefOr[Property] = js.native
+  var scale: js.UndefOr[Property] = js.native
+  var scaleByDistance: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.native
+  var translucencyByDistance: js.UndefOr[Property] = js.native
+  var verticalOrigin: js.UndefOr[Property] = js.native
+  var width: js.UndefOr[Property] = js.native
 }
 
 object AlignedAxis {
   @scala.inline
-  def apply(
-    alignedAxis: Property = null,
-    color: Property = null,
-    disableDepthTestDistance: Property | Double = null,
-    eyeOffset: Property = null,
-    height: Property = null,
-    heightReference: Property = null,
-    horizontalOrigin: Property = null,
-    image: Property = null,
-    imageSubRegion: Property = null,
-    pixelOffset: Property = null,
-    pixelOffsetScaleByDistance: Property = null,
-    rotation: Property = null,
-    scale: Property = null,
-    scaleByDistance: Property = null,
-    show: Property = null,
-    translucencyByDistance: Property = null,
-    verticalOrigin: Property = null,
-    width: Property = null
-  ): AlignedAxis = {
+  def apply(): AlignedAxis = {
     val __obj = js.Dynamic.literal()
-    if (alignedAxis != null) __obj.updateDynamic("alignedAxis")(alignedAxis.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (disableDepthTestDistance != null) __obj.updateDynamic("disableDepthTestDistance")(disableDepthTestDistance.asInstanceOf[js.Any])
-    if (eyeOffset != null) __obj.updateDynamic("eyeOffset")(eyeOffset.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (heightReference != null) __obj.updateDynamic("heightReference")(heightReference.asInstanceOf[js.Any])
-    if (horizontalOrigin != null) __obj.updateDynamic("horizontalOrigin")(horizontalOrigin.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (imageSubRegion != null) __obj.updateDynamic("imageSubRegion")(imageSubRegion.asInstanceOf[js.Any])
-    if (pixelOffset != null) __obj.updateDynamic("pixelOffset")(pixelOffset.asInstanceOf[js.Any])
-    if (pixelOffsetScaleByDistance != null) __obj.updateDynamic("pixelOffsetScaleByDistance")(pixelOffsetScaleByDistance.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (scaleByDistance != null) __obj.updateDynamic("scaleByDistance")(scaleByDistance.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (translucencyByDistance != null) __obj.updateDynamic("translucencyByDistance")(translucencyByDistance.asInstanceOf[js.Any])
-    if (verticalOrigin != null) __obj.updateDynamic("verticalOrigin")(verticalOrigin.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignedAxis]
   }
+  @scala.inline
+  implicit class AlignedAxisOps[Self <: AlignedAxis] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignedAxis(value: Property): Self = this.set("alignedAxis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignedAxis: Self = this.set("alignedAxis", js.undefined)
+    @scala.inline
+    def setColor(value: Property): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDisableDepthTestDistance(value: Property | Double): Self = this.set("disableDepthTestDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableDepthTestDistance: Self = this.set("disableDepthTestDistance", js.undefined)
+    @scala.inline
+    def setEyeOffset(value: Property): Self = this.set("eyeOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEyeOffset: Self = this.set("eyeOffset", js.undefined)
+    @scala.inline
+    def setHeight(value: Property): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setHeightReference(value: Property): Self = this.set("heightReference", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeightReference: Self = this.set("heightReference", js.undefined)
+    @scala.inline
+    def setHorizontalOrigin(value: Property): Self = this.set("horizontalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalOrigin: Self = this.set("horizontalOrigin", js.undefined)
+    @scala.inline
+    def setImage(value: Property): Self = this.set("image", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImage: Self = this.set("image", js.undefined)
+    @scala.inline
+    def setImageSubRegion(value: Property): Self = this.set("imageSubRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageSubRegion: Self = this.set("imageSubRegion", js.undefined)
+    @scala.inline
+    def setPixelOffset(value: Property): Self = this.set("pixelOffset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelOffset: Self = this.set("pixelOffset", js.undefined)
+    @scala.inline
+    def setPixelOffsetScaleByDistance(value: Property): Self = this.set("pixelOffsetScaleByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePixelOffsetScaleByDistance: Self = this.set("pixelOffsetScaleByDistance", js.undefined)
+    @scala.inline
+    def setRotation(value: Property): Self = this.set("rotation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotation: Self = this.set("rotation", js.undefined)
+    @scala.inline
+    def setScale(value: Property): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setScaleByDistance(value: Property): Self = this.set("scaleByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaleByDistance: Self = this.set("scaleByDistance", js.undefined)
+    @scala.inline
+    def setShow(value: Property): Self = this.set("show", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+    @scala.inline
+    def setTranslucencyByDistance(value: Property): Self = this.set("translucencyByDistance", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTranslucencyByDistance: Self = this.set("translucencyByDistance", js.undefined)
+    @scala.inline
+    def setVerticalOrigin(value: Property): Self = this.set("verticalOrigin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalOrigin: Self = this.set("verticalOrigin", js.undefined)
+    @scala.inline
+    def setWidth(value: Property): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+  }
+  
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Service of {@link XMLSignature} */
+@js.native
 trait XMLSignature
   extends XXMLSignature
      with XInitialization

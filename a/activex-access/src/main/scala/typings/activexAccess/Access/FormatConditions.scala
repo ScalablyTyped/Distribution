@@ -14,6 +14,9 @@ trait FormatConditions extends js.Object {
   def apply(Index: Double): FormatCondition = js.native
   /** @param Operator [Operator=0] */
   def Add(Type: AcFormatConditionType): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: String): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): FormatCondition = js.native
+  def Add(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Double): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: String): FormatCondition = js.native
   def Add(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: Boolean): FormatCondition = js.native

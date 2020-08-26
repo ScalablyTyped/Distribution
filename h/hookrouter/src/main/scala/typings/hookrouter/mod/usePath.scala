@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object usePath extends js.Object {
   def apply(): String = js.native
+  def apply(active: js.UndefOr[scala.Nothing], withBasePath: Boolean): String = js.native
   def apply(active: Boolean): String = js.native
   def apply(active: Boolean, withBasePath: Boolean): String = js.native
 }

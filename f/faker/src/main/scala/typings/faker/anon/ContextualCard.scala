@@ -20,6 +20,7 @@ trait ContextualCard extends js.Object {
   def randomize(): String = js.native
   def randomize[T](array: js.Array[T]): T = js.native
   def replaceSymbolWithNumber(): String = js.native
+  def replaceSymbolWithNumber(string: js.UndefOr[scala.Nothing], symbol: String): String = js.native
   def replaceSymbolWithNumber(string: String): String = js.native
   def replaceSymbolWithNumber(string: String, symbol: String): String = js.native
   def replaceSymbols(): String = js.native

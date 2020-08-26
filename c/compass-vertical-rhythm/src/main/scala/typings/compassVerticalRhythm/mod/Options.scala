@@ -23,38 +23,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var baseFontSize: js.UndefOr[String] = js.undefined
-  var baseLineHeight: js.UndefOr[Double | String] = js.undefined
+  var baseFontSize: js.UndefOr[String] = js.native
+  var baseLineHeight: js.UndefOr[Double | String] = js.native
   var defaultRhythmBorderStyle: js.UndefOr[
     solid | none | hidden | dashed | dotted | double | groove | ridge | inset | outset
-  ] = js.undefined
-  var defaultRhythmBorderWidth: js.UndefOr[String] = js.undefined
-  var minLinePadding: js.UndefOr[String] = js.undefined
-  var rhythmUnit: js.UndefOr[Percentsign | em | ex | ch | px | rem | vw | vh | vmin] = js.undefined
-  var roundToNearestHalfLine: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var defaultRhythmBorderWidth: js.UndefOr[String] = js.native
+  var minLinePadding: js.UndefOr[String] = js.native
+  var rhythmUnit: js.UndefOr[Percentsign | em | ex | ch | px | rem | vw | vh | vmin] = js.native
+  var roundToNearestHalfLine: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    baseFontSize: String = null,
-    baseLineHeight: Double | String = null,
-    defaultRhythmBorderStyle: solid | none | hidden | dashed | dotted | double | groove | ridge | inset | outset = null,
-    defaultRhythmBorderWidth: String = null,
-    minLinePadding: String = null,
-    rhythmUnit: Percentsign | em | ex | ch | px | rem | vw | vh | vmin = null,
-    roundToNearestHalfLine: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (baseFontSize != null) __obj.updateDynamic("baseFontSize")(baseFontSize.asInstanceOf[js.Any])
-    if (baseLineHeight != null) __obj.updateDynamic("baseLineHeight")(baseLineHeight.asInstanceOf[js.Any])
-    if (defaultRhythmBorderStyle != null) __obj.updateDynamic("defaultRhythmBorderStyle")(defaultRhythmBorderStyle.asInstanceOf[js.Any])
-    if (defaultRhythmBorderWidth != null) __obj.updateDynamic("defaultRhythmBorderWidth")(defaultRhythmBorderWidth.asInstanceOf[js.Any])
-    if (minLinePadding != null) __obj.updateDynamic("minLinePadding")(minLinePadding.asInstanceOf[js.Any])
-    if (rhythmUnit != null) __obj.updateDynamic("rhythmUnit")(rhythmUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundToNearestHalfLine)) __obj.updateDynamic("roundToNearestHalfLine")(roundToNearestHalfLine.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBaseFontSize(value: String): Self = this.set("baseFontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseFontSize: Self = this.set("baseFontSize", js.undefined)
+    @scala.inline
+    def setBaseLineHeight(value: Double | String): Self = this.set("baseLineHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBaseLineHeight: Self = this.set("baseLineHeight", js.undefined)
+    @scala.inline
+    def setDefaultRhythmBorderStyle(value: solid | none | hidden | dashed | dotted | double | groove | ridge | inset | outset): Self = this.set("defaultRhythmBorderStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRhythmBorderStyle: Self = this.set("defaultRhythmBorderStyle", js.undefined)
+    @scala.inline
+    def setDefaultRhythmBorderWidth(value: String): Self = this.set("defaultRhythmBorderWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRhythmBorderWidth: Self = this.set("defaultRhythmBorderWidth", js.undefined)
+    @scala.inline
+    def setMinLinePadding(value: String): Self = this.set("minLinePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinLinePadding: Self = this.set("minLinePadding", js.undefined)
+    @scala.inline
+    def setRhythmUnit(value: Percentsign | em | ex | ch | px | rem | vw | vh | vmin): Self = this.set("rhythmUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRhythmUnit: Self = this.set("rhythmUnit", js.undefined)
+    @scala.inline
+    def setRoundToNearestHalfLine(value: Boolean): Self = this.set("roundToNearestHalfLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoundToNearestHalfLine: Self = this.set("roundToNearestHalfLine", js.undefined)
+  }
+  
 }
 

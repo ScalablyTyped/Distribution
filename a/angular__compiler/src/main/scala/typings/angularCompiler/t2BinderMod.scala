@@ -51,8 +51,6 @@ object t2BinderMod extends js.Object {
   class R3TargetBinder[DirectiveT /* <: DirectiveMeta */] protected () extends TargetBinder[DirectiveT] {
     def this(directiveMatcher: SelectorMatcher[DirectiveT]) = this()
     var directiveMatcher: js.Any = js.native
-    /* CompleteClass */
-    override def bind(target: Target): BoundTarget[DirectiveT] = js.native
   }
   
 }

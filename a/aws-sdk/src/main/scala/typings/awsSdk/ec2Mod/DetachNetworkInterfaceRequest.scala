@@ -22,15 +22,32 @@ trait DetachNetworkInterfaceRequest extends js.Object {
 
 object DetachNetworkInterfaceRequest {
   @scala.inline
-  def apply(
-    AttachmentId: NetworkInterfaceAttachmentId,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    Force: js.UndefOr[Boolean] = js.undefined
-  ): DetachNetworkInterfaceRequest = {
+  def apply(AttachmentId: NetworkInterfaceAttachmentId): DetachNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(AttachmentId = AttachmentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Force)) __obj.updateDynamic("Force")(Force.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachNetworkInterfaceRequest]
   }
+  @scala.inline
+  implicit class DetachNetworkInterfaceRequestOps[Self <: DetachNetworkInterfaceRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = this.set("AttachmentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setForce(value: Boolean): Self = this.set("Force", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteForce: Self = this.set("Force", js.undefined)
+  }
+  
 }
 

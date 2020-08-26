@@ -12,7 +12,7 @@ The Apostrophe Content Management System.
 | Keywords           | apostrophe, apostrophe-cms, apostrophecms, cms, content management, content management system, punkave |
 | # releases         | 104 |
 | # dependents       | 3 |
-| # downloads        | 132779 |
+| # downloads        | 131675 |
 | # stars            | 5 |
 
 ## Links

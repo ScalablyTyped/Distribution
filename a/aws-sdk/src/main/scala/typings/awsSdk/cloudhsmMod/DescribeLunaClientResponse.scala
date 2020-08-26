@@ -30,20 +30,42 @@ trait DescribeLunaClientResponse extends js.Object {
 
 object DescribeLunaClientResponse {
   @scala.inline
-  def apply(
-    Certificate: Certificate = null,
-    CertificateFingerprint: CertificateFingerprint = null,
-    ClientArn: ClientArn = null,
-    Label: Label = null,
-    LastModifiedTimestamp: Timestamp = null
-  ): DescribeLunaClientResponse = {
+  def apply(): DescribeLunaClientResponse = {
     val __obj = js.Dynamic.literal()
-    if (Certificate != null) __obj.updateDynamic("Certificate")(Certificate.asInstanceOf[js.Any])
-    if (CertificateFingerprint != null) __obj.updateDynamic("CertificateFingerprint")(CertificateFingerprint.asInstanceOf[js.Any])
-    if (ClientArn != null) __obj.updateDynamic("ClientArn")(ClientArn.asInstanceOf[js.Any])
-    if (Label != null) __obj.updateDynamic("Label")(Label.asInstanceOf[js.Any])
-    if (LastModifiedTimestamp != null) __obj.updateDynamic("LastModifiedTimestamp")(LastModifiedTimestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLunaClientResponse]
   }
+  @scala.inline
+  implicit class DescribeLunaClientResponseOps[Self <: DescribeLunaClientResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificate(value: Certificate): Self = this.set("Certificate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificate: Self = this.set("Certificate", js.undefined)
+    @scala.inline
+    def setCertificateFingerprint(value: CertificateFingerprint): Self = this.set("CertificateFingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCertificateFingerprint: Self = this.set("CertificateFingerprint", js.undefined)
+    @scala.inline
+    def setClientArn(value: ClientArn): Self = this.set("ClientArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientArn: Self = this.set("ClientArn", js.undefined)
+    @scala.inline
+    def setLabel(value: Label): Self = this.set("Label", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabel: Self = this.set("Label", js.undefined)
+    @scala.inline
+    def setLastModifiedTimestamp(value: Timestamp): Self = this.set("LastModifiedTimestamp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedTimestamp: Self = this.set("LastModifiedTimestamp", js.undefined)
+  }
+  
 }
 

@@ -22,16 +22,34 @@ trait DisassociateVpcCidrBlockResult extends js.Object {
 
 object DisassociateVpcCidrBlockResult {
   @scala.inline
-  def apply(
-    CidrBlockAssociation: VpcCidrBlockAssociation = null,
-    Ipv6CidrBlockAssociation: VpcIpv6CidrBlockAssociation = null,
-    VpcId: String = null
-  ): DisassociateVpcCidrBlockResult = {
+  def apply(): DisassociateVpcCidrBlockResult = {
     val __obj = js.Dynamic.literal()
-    if (CidrBlockAssociation != null) __obj.updateDynamic("CidrBlockAssociation")(CidrBlockAssociation.asInstanceOf[js.Any])
-    if (Ipv6CidrBlockAssociation != null) __obj.updateDynamic("Ipv6CidrBlockAssociation")(Ipv6CidrBlockAssociation.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateVpcCidrBlockResult]
   }
+  @scala.inline
+  implicit class DisassociateVpcCidrBlockResultOps[Self <: DisassociateVpcCidrBlockResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCidrBlockAssociation(value: VpcCidrBlockAssociation): Self = this.set("CidrBlockAssociation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlockAssociation: Self = this.set("CidrBlockAssociation", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlockAssociation(value: VpcIpv6CidrBlockAssociation): Self = this.set("Ipv6CidrBlockAssociation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlockAssociation: Self = this.set("Ipv6CidrBlockAssociation", js.undefined)
+    @scala.inline
+    def setVpcId(value: String): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

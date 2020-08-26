@@ -550,6 +550,21 @@ trait SecurityHub extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateInsightResponse, Unit]
   ): Request[UpdateInsightResponse, AWSError] = js.native
   /**
+    * Updates configuration options for Security Hub.
+    */
+  def updateSecurityHubConfiguration(): Request[UpdateSecurityHubConfigurationResponse, AWSError] = js.native
+  def updateSecurityHubConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityHubConfigurationResponse, Unit]
+  ): Request[UpdateSecurityHubConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates configuration options for Security Hub.
+    */
+  def updateSecurityHubConfiguration(params: UpdateSecurityHubConfigurationRequest): Request[UpdateSecurityHubConfigurationResponse, AWSError] = js.native
+  def updateSecurityHubConfiguration(
+    params: UpdateSecurityHubConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityHubConfigurationResponse, Unit]
+  ): Request[UpdateSecurityHubConfigurationResponse, AWSError] = js.native
+  /**
     * Used to control whether an individual security standard control is enabled or disabled.
     */
   def updateStandardsControl(): Request[UpdateStandardsControlResponse, AWSError] = js.native

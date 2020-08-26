@@ -38,24 +38,54 @@ trait LinuxParameters extends js.Object {
 
 object LinuxParameters {
   @scala.inline
-  def apply(
-    capabilities: KernelCapabilities = null,
-    devices: DevicesList = null,
-    initProcessEnabled: js.UndefOr[BoxedBoolean] = js.undefined,
-    maxSwap: js.UndefOr[BoxedInteger] = js.undefined,
-    sharedMemorySize: js.UndefOr[BoxedInteger] = js.undefined,
-    swappiness: js.UndefOr[BoxedInteger] = js.undefined,
-    tmpfs: TmpfsList = null
-  ): LinuxParameters = {
+  def apply(): LinuxParameters = {
     val __obj = js.Dynamic.literal()
-    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
-    if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
-    if (!js.isUndefined(initProcessEnabled)) __obj.updateDynamic("initProcessEnabled")(initProcessEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxSwap)) __obj.updateDynamic("maxSwap")(maxSwap.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(sharedMemorySize)) __obj.updateDynamic("sharedMemorySize")(sharedMemorySize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(swappiness)) __obj.updateDynamic("swappiness")(swappiness.get.asInstanceOf[js.Any])
-    if (tmpfs != null) __obj.updateDynamic("tmpfs")(tmpfs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinuxParameters]
   }
+  @scala.inline
+  implicit class LinuxParametersOps[Self <: LinuxParameters] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCapabilities(value: KernelCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapabilities: Self = this.set("capabilities", js.undefined)
+    @scala.inline
+    def setDevicesVarargs(value: Device*): Self = this.set("devices", js.Array(value :_*))
+    @scala.inline
+    def setDevices(value: DevicesList): Self = this.set("devices", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDevices: Self = this.set("devices", js.undefined)
+    @scala.inline
+    def setInitProcessEnabled(value: BoxedBoolean): Self = this.set("initProcessEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInitProcessEnabled: Self = this.set("initProcessEnabled", js.undefined)
+    @scala.inline
+    def setMaxSwap(value: BoxedInteger): Self = this.set("maxSwap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSwap: Self = this.set("maxSwap", js.undefined)
+    @scala.inline
+    def setSharedMemorySize(value: BoxedInteger): Self = this.set("sharedMemorySize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSharedMemorySize: Self = this.set("sharedMemorySize", js.undefined)
+    @scala.inline
+    def setSwappiness(value: BoxedInteger): Self = this.set("swappiness", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSwappiness: Self = this.set("swappiness", js.undefined)
+    @scala.inline
+    def setTmpfsVarargs(value: Tmpfs*): Self = this.set("tmpfs", js.Array(value :_*))
+    @scala.inline
+    def setTmpfs(value: TmpfsList): Self = this.set("tmpfs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTmpfs: Self = this.set("tmpfs", js.undefined)
+  }
+  
 }
 

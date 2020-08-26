@@ -13,6 +13,7 @@ trait SelectionModel extends js.Object {
   def select(id: String, preserve: Boolean): Unit = js.native
   def select(id: js.Array[_], preserve: Boolean): Unit = js.native
   def selectAll(): Unit = js.native
+  def selectAll(from: js.UndefOr[scala.Nothing], to: String): Unit = js.native
   def selectAll(from: String): Unit = js.native
   def selectAll(from: String, to: String): Unit = js.native
   def unselect(): Unit = js.native

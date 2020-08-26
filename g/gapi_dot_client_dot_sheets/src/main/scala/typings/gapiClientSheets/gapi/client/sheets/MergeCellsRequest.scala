@@ -4,20 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait MergeCellsRequest extends js.Object {
   /** How the cells should be merged. */
-  var mergeType: js.UndefOr[String] = js.undefined
+  var mergeType: js.UndefOr[String] = js.native
   /** The range of cells to merge. */
-  var range: js.UndefOr[GridRange] = js.undefined
+  var range: js.UndefOr[GridRange] = js.native
 }
 
 object MergeCellsRequest {
   @scala.inline
-  def apply(mergeType: String = null, range: GridRange = null): MergeCellsRequest = {
+  def apply(): MergeCellsRequest = {
     val __obj = js.Dynamic.literal()
-    if (mergeType != null) __obj.updateDynamic("mergeType")(mergeType.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeCellsRequest]
   }
+  @scala.inline
+  implicit class MergeCellsRequestOps[Self <: MergeCellsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMergeType(value: String): Self = this.set("mergeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMergeType: Self = this.set("mergeType", js.undefined)
+    @scala.inline
+    def setRange(value: GridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+  }
+  
 }
 

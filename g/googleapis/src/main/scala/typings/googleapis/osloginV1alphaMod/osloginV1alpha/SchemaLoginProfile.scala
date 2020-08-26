@@ -27,16 +27,36 @@ trait SchemaLoginProfile extends js.Object {
 
 object SchemaLoginProfile {
   @scala.inline
-  def apply(
-    name: String = null,
-    posixAccounts: js.Array[SchemaPosixAccount] = null,
-    sshPublicKeys: StringDictionary[SchemaSshPublicKey] = null
-  ): SchemaLoginProfile = {
+  def apply(): SchemaLoginProfile = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (posixAccounts != null) __obj.updateDynamic("posixAccounts")(posixAccounts.asInstanceOf[js.Any])
-    if (sshPublicKeys != null) __obj.updateDynamic("sshPublicKeys")(sshPublicKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLoginProfile]
   }
+  @scala.inline
+  implicit class SchemaLoginProfileOps[Self <: SchemaLoginProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPosixAccountsVarargs(value: SchemaPosixAccount*): Self = this.set("posixAccounts", js.Array(value :_*))
+    @scala.inline
+    def setPosixAccounts(value: js.Array[SchemaPosixAccount]): Self = this.set("posixAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosixAccounts: Self = this.set("posixAccounts", js.undefined)
+    @scala.inline
+    def setSshPublicKeys(value: StringDictionary[SchemaSshPublicKey]): Self = this.set("sshPublicKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSshPublicKeys: Self = this.set("sshPublicKeys", js.undefined)
+  }
+  
 }
 

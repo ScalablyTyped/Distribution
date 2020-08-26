@@ -25,6 +25,7 @@ class Header protected () extends Property[HeaderDefinition] {
 @js.native
 object Header extends js.Object {
   def create(): Header = js.native
+  def create(value: js.UndefOr[scala.Nothing], name: String): Header = js.native
   def create(value: String): Header = js.native
   def create(value: String, name: String): Header = js.native
   def create(value: HeaderDefinition): Header = js.native

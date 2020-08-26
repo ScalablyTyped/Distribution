@@ -23,6 +23,7 @@ class Server protected () extends CustomResource {
     */
   def this(name: String) = this()
   def this(name: String, args: ServerArgs) = this()
+  def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
   def this(name: String, args: ServerArgs, opts: CustomResourceOptions) = this()
   /**
     * Amazon Resource Name (ARN) of Transfer Server
@@ -65,9 +66,9 @@ class Server protected () extends CustomResource {
     */
   val loggingRole: Output_[js.UndefOr[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * - URL of the service endpoint used to authenticate users with an `identityProviderType` of `API_GATEWAY`.
     */
@@ -85,8 +86,10 @@ object Server extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): Server = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Server = js.native
   def get(name: String, id: Input[ID], state: ServerState): Server = js.native
   def get(name: String, id: Input[ID], state: ServerState, opts: CustomResourceOptions): Server = js.native
   /**

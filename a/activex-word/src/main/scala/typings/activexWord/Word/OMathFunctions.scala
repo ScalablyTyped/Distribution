@@ -13,6 +13,7 @@ trait OMathFunctions extends js.Object {
   @JSName("Word.OMathFunctions_typekey")
   var WordDotOMathFunctions_typekey: OMathFunctions = js.native
   def Add(Range: Range, Type: WdOMathFunctionType): OMathFunction = js.native
+  def Add(Range: Range, Type: WdOMathFunctionType, NumArgs: js.UndefOr[scala.Nothing], NumCols: js.Any): OMathFunction = js.native
   def Add(Range: Range, Type: WdOMathFunctionType, NumArgs: js.Any): OMathFunction = js.native
   def Add(Range: Range, Type: WdOMathFunctionType, NumArgs: js.Any, NumCols: js.Any): OMathFunction = js.native
   def Item(Index: Double): OMathFunction = js.native

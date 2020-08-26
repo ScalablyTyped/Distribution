@@ -27,17 +27,10 @@ object putBucketCorsCommandMod extends js.Object {
           Blob
         ] {
     def this(input: PutBucketCorsInput) = this()
-    /* CompleteClass */
-    override val input: PutBucketCorsInput = js.native
     val middlewareStack: MiddlewareStack[PutBucketCorsInput, PutBucketCorsOutput, Blob] = js.native
     val model: OperationModel = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
-      configuration: S3ResolvedConfiguration
-    ): Handler[PutBucketCorsInput, PutBucketCorsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Blob],
       configuration: S3ResolvedConfiguration
     ): Handler[PutBucketCorsInput, PutBucketCorsOutput] = js.native
   }

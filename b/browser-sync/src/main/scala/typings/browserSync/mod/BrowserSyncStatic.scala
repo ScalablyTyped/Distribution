@@ -1,6 +1,6 @@
 package typings.browserSync.mod
 
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -17,6 +17,10 @@ trait BrowserSyncStatic extends BrowserSyncInstance {
     * depending on your use-case.
     */
   def apply(): BrowserSyncInstance = js.native
+  def apply(
+    config: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, _]
+  ): BrowserSyncInstance = js.native
   def apply(config: Options): BrowserSyncInstance = js.native
   def apply(config: Options, callback: js.Function2[/* err */ Error, /* bs */ BrowserSyncInstance, _]): BrowserSyncInstance = js.native
   /**
@@ -24,6 +28,7 @@ trait BrowserSyncStatic extends BrowserSyncInstance {
     * @param name an identifier that can used for retrieval later
     */
   def create(): BrowserSyncInstance = js.native
+  def create(name: js.UndefOr[scala.Nothing], emitter: EventEmitter): BrowserSyncInstance = js.native
   def create(name: String): BrowserSyncInstance = js.native
   def create(name: String, emitter: EventEmitter): BrowserSyncInstance = js.native
   /**

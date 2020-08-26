@@ -9,33 +9,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSParameterProperty_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait TSParameterProperty_
   extends LVal
      with BaseNode {
-  var accessibility: public | `private` | `protected` | Null
-  var parameter: Identifier_ | AssignmentPattern_
-  var readonly: Boolean | Null
+  var accessibility: public | `private` | `protected` | Null = js.native
+  var parameter: Identifier_ | AssignmentPattern_ = js.native
+  var readonly: Boolean | Null = js.native
   @JSName("type")
-  var type_TSParameterProperty_ : TSParameterProperty
+  var type_TSParameterProperty_ : TSParameterProperty = js.native
 }
 
 object TSParameterProperty_ {
   @scala.inline
-  def apply(
-    parameter: Identifier_ | AssignmentPattern_,
-    `type`: TSParameterProperty,
-    accessibility: public | `private` | `protected` = null,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    readonly: Boolean = null.asInstanceOf[Boolean],
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSParameterProperty_ = {
-    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], accessibility = accessibility.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(parameter: Identifier_ | AssignmentPattern_, `type`: TSParameterProperty): TSParameterProperty_ = {
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSParameterProperty_]
   }
+  @scala.inline
+  implicit class TSParameterProperty_Ops[Self <: TSParameterProperty_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setParameter(value: Identifier_ | AssignmentPattern_): Self = this.set("parameter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: TSParameterProperty): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessibility(value: public | `private` | `protected`): Self = this.set("accessibility", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAccessibilityNull: Self = this.set("accessibility", null)
+    @scala.inline
+    def setReadonly(value: Boolean): Self = this.set("readonly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setReadonlyNull: Self = this.set("readonly", null)
+  }
+  
 }
 

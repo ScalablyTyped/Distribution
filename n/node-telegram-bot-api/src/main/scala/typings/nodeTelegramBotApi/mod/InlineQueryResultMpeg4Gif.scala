@@ -5,46 +5,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InlineQueryResultMpeg4Gif
   extends InlineQueryResultBase
      with InlineQueryResult {
-  var caption: js.UndefOr[String] = js.undefined
-  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
-  var mpeg4_duration: js.UndefOr[Double] = js.undefined
-  var mpeg4_height: js.UndefOr[Double] = js.undefined
-  var mpeg4_url: String
-  var mpeg4_width: js.UndefOr[Double] = js.undefined
-  var thumb_url: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var `type`: mpeg4_gif
+  var caption: js.UndefOr[String] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var mpeg4_duration: js.UndefOr[Double] = js.native
+  var mpeg4_height: js.UndefOr[Double] = js.native
+  var mpeg4_url: String = js.native
+  var mpeg4_width: js.UndefOr[Double] = js.native
+  var thumb_url: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.native
+  var `type`: mpeg4_gif = js.native
 }
 
 object InlineQueryResultMpeg4Gif {
   @scala.inline
-  def apply(
-    id: String,
-    mpeg4_url: String,
-    `type`: mpeg4_gif,
-    caption: String = null,
-    input_message_content: InputMessageContent = null,
-    mpeg4_duration: js.UndefOr[Double] = js.undefined,
-    mpeg4_height: js.UndefOr[Double] = js.undefined,
-    mpeg4_width: js.UndefOr[Double] = js.undefined,
-    reply_markup: InlineKeyboardMarkup = null,
-    thumb_url: String = null,
-    title: String = null
-  ): InlineQueryResultMpeg4Gif = {
+  def apply(id: String, mpeg4_url: String, `type`: mpeg4_gif): InlineQueryResultMpeg4Gif = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mpeg4_url = mpeg4_url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (!js.isUndefined(mpeg4_duration)) __obj.updateDynamic("mpeg4_duration")(mpeg4_duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mpeg4_height)) __obj.updateDynamic("mpeg4_height")(mpeg4_height.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mpeg4_width)) __obj.updateDynamic("mpeg4_width")(mpeg4_width.get.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (thumb_url != null) __obj.updateDynamic("thumb_url")(thumb_url.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineQueryResultMpeg4Gif]
   }
+  @scala.inline
+  implicit class InlineQueryResultMpeg4GifOps[Self <: InlineQueryResultMpeg4Gif] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMpeg4_url(value: String): Self = this.set("mpeg4_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: mpeg4_gif): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCaption(value: String): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setInput_message_content(value: InputMessageContent): Self = this.set("input_message_content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput_message_content: Self = this.set("input_message_content", js.undefined)
+    @scala.inline
+    def setMpeg4_duration(value: Double): Self = this.set("mpeg4_duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpeg4_duration: Self = this.set("mpeg4_duration", js.undefined)
+    @scala.inline
+    def setMpeg4_height(value: Double): Self = this.set("mpeg4_height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpeg4_height: Self = this.set("mpeg4_height", js.undefined)
+    @scala.inline
+    def setMpeg4_width(value: Double): Self = this.set("mpeg4_width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMpeg4_width: Self = this.set("mpeg4_width", js.undefined)
+    @scala.inline
+    def setThumb_url(value: String): Self = this.set("thumb_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumb_url: Self = this.set("thumb_url", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+  }
+  
 }
 

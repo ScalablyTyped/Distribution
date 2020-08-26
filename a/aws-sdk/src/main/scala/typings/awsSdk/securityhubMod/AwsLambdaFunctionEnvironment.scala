@@ -18,11 +18,30 @@ trait AwsLambdaFunctionEnvironment extends js.Object {
 
 object AwsLambdaFunctionEnvironment {
   @scala.inline
-  def apply(Error: AwsLambdaFunctionEnvironmentError = null, Variables: FieldMap = null): AwsLambdaFunctionEnvironment = {
+  def apply(): AwsLambdaFunctionEnvironment = {
     val __obj = js.Dynamic.literal()
-    if (Error != null) __obj.updateDynamic("Error")(Error.asInstanceOf[js.Any])
-    if (Variables != null) __obj.updateDynamic("Variables")(Variables.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsLambdaFunctionEnvironment]
   }
+  @scala.inline
+  implicit class AwsLambdaFunctionEnvironmentOps[Self <: AwsLambdaFunctionEnvironment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: AwsLambdaFunctionEnvironmentError): Self = this.set("Error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("Error", js.undefined)
+    @scala.inline
+    def setVariables(value: FieldMap): Self = this.set("Variables", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVariables: Self = this.set("Variables", js.undefined)
+  }
+  
 }
 

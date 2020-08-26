@@ -10,8 +10,8 @@ Lets you interface with Steam without running an actual Steam client
 | Full name          | steam |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 25 |
-| # downloads        | 31214 |
+| # dependents       | 26 |
+| # downloads        | 30887 |
 | # stars            | 11 |
 
 ## Links

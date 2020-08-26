@@ -24,6 +24,7 @@ object Projections extends js.Object {
     far: js.UndefOr[Double]
   ): Matrix = js.native
   def perspectiveFov(): Matrix = js.native
+  def perspectiveFov(fovyInDegrees: js.UndefOr[scala.Nothing], front: Double): Matrix = js.native
   def perspectiveFov(fovyInDegrees: Double): Matrix = js.native
   def perspectiveFov(fovyInDegrees: Double, front: Double): Matrix = js.native
 }

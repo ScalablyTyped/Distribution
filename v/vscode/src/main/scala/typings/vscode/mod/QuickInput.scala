@@ -67,6 +67,11 @@ trait QuickInput extends js.Object {
     * the user pressing Esc, some other input UI opening, etc.)
     */
   def onDidHide(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
+  def onDidHide(
+    listener: js.Function1[/* e */ Unit, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidHide(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
   def onDidHide(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**

@@ -16,6 +16,11 @@ class ParameterList protected ()
   def this(openParenToken: Token[OpenParenToken | OpenBracketToken], elements: js.Array[Parameter]) = this()
   def this(
     openParenToken: Token[OpenParenToken | OpenBracketToken],
+    elements: js.UndefOr[scala.Nothing],
+    closeParenToken: Token[CloseParenToken | CloseBracketToken]
+  ) = this()
+  def this(
+    openParenToken: Token[OpenParenToken | OpenBracketToken],
     elements: js.Array[Parameter],
     closeParenToken: Token[CloseParenToken | CloseBracketToken]
   ) = this()

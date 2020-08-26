@@ -98,54 +98,114 @@ trait StepExecution extends js.Object {
 
 object StepExecution {
   @scala.inline
-  def apply(
-    Action: AutomationActionName = null,
-    ExecutionEndTime: DateTime = null,
-    ExecutionStartTime: DateTime = null,
-    FailureDetails: FailureDetails = null,
-    FailureMessage: String = null,
-    Inputs: NormalStringMap = null,
-    IsCritical: js.UndefOr[Boolean] = js.undefined,
-    IsEnd: js.UndefOr[Boolean] = js.undefined,
-    MaxAttempts: js.UndefOr[Integer] = js.undefined,
-    NextStep: String = null,
-    OnFailure: String = null,
-    Outputs: AutomationParameterMap = null,
-    OverriddenParameters: AutomationParameterMap = null,
-    Response: String = null,
-    ResponseCode: String = null,
-    StepExecutionId: String = null,
-    StepName: String = null,
-    StepStatus: AutomationExecutionStatus = null,
-    TargetLocation: TargetLocation = null,
-    Targets: Targets = null,
-    TimeoutSeconds: js.UndefOr[Long] = js.undefined,
-    ValidNextSteps: ValidNextStepList = null
-  ): StepExecution = {
+  def apply(): StepExecution = {
     val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
-    if (ExecutionEndTime != null) __obj.updateDynamic("ExecutionEndTime")(ExecutionEndTime.asInstanceOf[js.Any])
-    if (ExecutionStartTime != null) __obj.updateDynamic("ExecutionStartTime")(ExecutionStartTime.asInstanceOf[js.Any])
-    if (FailureDetails != null) __obj.updateDynamic("FailureDetails")(FailureDetails.asInstanceOf[js.Any])
-    if (FailureMessage != null) __obj.updateDynamic("FailureMessage")(FailureMessage.asInstanceOf[js.Any])
-    if (Inputs != null) __obj.updateDynamic("Inputs")(Inputs.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsCritical)) __obj.updateDynamic("IsCritical")(IsCritical.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IsEnd)) __obj.updateDynamic("IsEnd")(IsEnd.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxAttempts)) __obj.updateDynamic("MaxAttempts")(MaxAttempts.get.asInstanceOf[js.Any])
-    if (NextStep != null) __obj.updateDynamic("NextStep")(NextStep.asInstanceOf[js.Any])
-    if (OnFailure != null) __obj.updateDynamic("OnFailure")(OnFailure.asInstanceOf[js.Any])
-    if (Outputs != null) __obj.updateDynamic("Outputs")(Outputs.asInstanceOf[js.Any])
-    if (OverriddenParameters != null) __obj.updateDynamic("OverriddenParameters")(OverriddenParameters.asInstanceOf[js.Any])
-    if (Response != null) __obj.updateDynamic("Response")(Response.asInstanceOf[js.Any])
-    if (ResponseCode != null) __obj.updateDynamic("ResponseCode")(ResponseCode.asInstanceOf[js.Any])
-    if (StepExecutionId != null) __obj.updateDynamic("StepExecutionId")(StepExecutionId.asInstanceOf[js.Any])
-    if (StepName != null) __obj.updateDynamic("StepName")(StepName.asInstanceOf[js.Any])
-    if (StepStatus != null) __obj.updateDynamic("StepStatus")(StepStatus.asInstanceOf[js.Any])
-    if (TargetLocation != null) __obj.updateDynamic("TargetLocation")(TargetLocation.asInstanceOf[js.Any])
-    if (Targets != null) __obj.updateDynamic("Targets")(Targets.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutSeconds)) __obj.updateDynamic("TimeoutSeconds")(TimeoutSeconds.get.asInstanceOf[js.Any])
-    if (ValidNextSteps != null) __obj.updateDynamic("ValidNextSteps")(ValidNextSteps.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepExecution]
   }
+  @scala.inline
+  implicit class StepExecutionOps[Self <: StepExecution] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAction(value: AutomationActionName): Self = this.set("Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAction: Self = this.set("Action", js.undefined)
+    @scala.inline
+    def setExecutionEndTime(value: DateTime): Self = this.set("ExecutionEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionEndTime: Self = this.set("ExecutionEndTime", js.undefined)
+    @scala.inline
+    def setExecutionStartTime(value: DateTime): Self = this.set("ExecutionStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionStartTime: Self = this.set("ExecutionStartTime", js.undefined)
+    @scala.inline
+    def setFailureDetails(value: FailureDetails): Self = this.set("FailureDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureDetails: Self = this.set("FailureDetails", js.undefined)
+    @scala.inline
+    def setFailureMessage(value: String): Self = this.set("FailureMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureMessage: Self = this.set("FailureMessage", js.undefined)
+    @scala.inline
+    def setInputs(value: NormalStringMap): Self = this.set("Inputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputs: Self = this.set("Inputs", js.undefined)
+    @scala.inline
+    def setIsCritical(value: Boolean): Self = this.set("IsCritical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsCritical: Self = this.set("IsCritical", js.undefined)
+    @scala.inline
+    def setIsEnd(value: Boolean): Self = this.set("IsEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsEnd: Self = this.set("IsEnd", js.undefined)
+    @scala.inline
+    def setMaxAttempts(value: Integer): Self = this.set("MaxAttempts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAttempts: Self = this.set("MaxAttempts", js.undefined)
+    @scala.inline
+    def setNextStep(value: String): Self = this.set("NextStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextStep: Self = this.set("NextStep", js.undefined)
+    @scala.inline
+    def setOnFailure(value: String): Self = this.set("OnFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOnFailure: Self = this.set("OnFailure", js.undefined)
+    @scala.inline
+    def setOutputs(value: AutomationParameterMap): Self = this.set("Outputs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputs: Self = this.set("Outputs", js.undefined)
+    @scala.inline
+    def setOverriddenParameters(value: AutomationParameterMap): Self = this.set("OverriddenParameters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverriddenParameters: Self = this.set("OverriddenParameters", js.undefined)
+    @scala.inline
+    def setResponse(value: String): Self = this.set("Response", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponse: Self = this.set("Response", js.undefined)
+    @scala.inline
+    def setResponseCode(value: String): Self = this.set("ResponseCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseCode: Self = this.set("ResponseCode", js.undefined)
+    @scala.inline
+    def setStepExecutionId(value: String): Self = this.set("StepExecutionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepExecutionId: Self = this.set("StepExecutionId", js.undefined)
+    @scala.inline
+    def setStepName(value: String): Self = this.set("StepName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepName: Self = this.set("StepName", js.undefined)
+    @scala.inline
+    def setStepStatus(value: AutomationExecutionStatus): Self = this.set("StepStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStepStatus: Self = this.set("StepStatus", js.undefined)
+    @scala.inline
+    def setTargetLocation(value: TargetLocation): Self = this.set("TargetLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetLocation: Self = this.set("TargetLocation", js.undefined)
+    @scala.inline
+    def setTargetsVarargs(value: Target*): Self = this.set("Targets", js.Array(value :_*))
+    @scala.inline
+    def setTargets(value: Targets): Self = this.set("Targets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargets: Self = this.set("Targets", js.undefined)
+    @scala.inline
+    def setTimeoutSeconds(value: Long): Self = this.set("TimeoutSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutSeconds: Self = this.set("TimeoutSeconds", js.undefined)
+    @scala.inline
+    def setValidNextStepsVarargs(value: ValidNextStep*): Self = this.set("ValidNextSteps", js.Array(value :_*))
+    @scala.inline
+    def setValidNextSteps(value: ValidNextStepList): Self = this.set("ValidNextSteps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidNextSteps: Self = this.set("ValidNextSteps", js.undefined)
+  }
+  
 }
 

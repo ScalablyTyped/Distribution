@@ -8,7 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 class SerializerCls protected () extends Serializer {
   def this(collectionName: String, opts: SerializerOptions) = this()
-  /* CompleteClass */
-  override def serialize(data: js.Any): js.Any = js.native
 }
 

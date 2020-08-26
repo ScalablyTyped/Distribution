@@ -10,7 +10,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/select-all-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridSelectAllButton")
 @js.native
@@ -26,7 +26,7 @@ class GridSelectAllButton protected () extends GridControlBarButton {
   @JSName("model")
   var model_FGridSelectAllButton: IModel = js.native
   def selectionType: SelectionType = js.native
-  def selectionType(newValue: SelectionType): js.Any = js.native
+  def selectionType_=(newValue: SelectionType): Unit = js.native
 }
 
 /* static members */

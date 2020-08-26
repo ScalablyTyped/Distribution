@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-oauth2
 
-Typings are for version 2.5
+Typings are for version 4.1
 
 ## Library description:
 Node.js client for OAuth2
@@ -12,7 +12,7 @@ Node.js client for OAuth2
 | Keywords           | oauth2, authorization, password, client, credentials |
 | # releases         | 16 |
 | # dependents       | 150 |
-| # downloads        | 1662190 |
+| # downloads        | 1716027 |
 | # stars            | 27 |
 
 ## Links

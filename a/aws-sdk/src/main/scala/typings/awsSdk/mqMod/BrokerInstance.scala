@@ -22,12 +22,36 @@ trait BrokerInstance extends js.Object {
 
 object BrokerInstance {
   @scala.inline
-  def apply(ConsoleURL: string = null, Endpoints: listOfString = null, IpAddress: string = null): BrokerInstance = {
+  def apply(): BrokerInstance = {
     val __obj = js.Dynamic.literal()
-    if (ConsoleURL != null) __obj.updateDynamic("ConsoleURL")(ConsoleURL.asInstanceOf[js.Any])
-    if (Endpoints != null) __obj.updateDynamic("Endpoints")(Endpoints.asInstanceOf[js.Any])
-    if (IpAddress != null) __obj.updateDynamic("IpAddress")(IpAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerInstance]
   }
+  @scala.inline
+  implicit class BrokerInstanceOps[Self <: BrokerInstance] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsoleURL(value: string): Self = this.set("ConsoleURL", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsoleURL: Self = this.set("ConsoleURL", js.undefined)
+    @scala.inline
+    def setEndpointsVarargs(value: string*): Self = this.set("Endpoints", js.Array(value :_*))
+    @scala.inline
+    def setEndpoints(value: listOfString): Self = this.set("Endpoints", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndpoints: Self = this.set("Endpoints", js.undefined)
+    @scala.inline
+    def setIpAddress(value: string): Self = this.set("IpAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("IpAddress", js.undefined)
+  }
+  
 }
 

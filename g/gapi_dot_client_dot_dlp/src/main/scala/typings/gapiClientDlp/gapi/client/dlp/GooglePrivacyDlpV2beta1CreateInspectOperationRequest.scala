@@ -4,31 +4,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GooglePrivacyDlpV2beta1CreateInspectOperationRequest extends js.Object {
   /** Configuration for the inspector. */
-  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2beta1InspectConfig] = js.undefined
+  var inspectConfig: js.UndefOr[GooglePrivacyDlpV2beta1InspectConfig] = js.native
   /** Additional configuration settings for long running operations. */
-  var operationConfig: js.UndefOr[GooglePrivacyDlpV2beta1OperationConfig] = js.undefined
+  var operationConfig: js.UndefOr[GooglePrivacyDlpV2beta1OperationConfig] = js.native
   /** Optional location to store findings. */
-  var outputConfig: js.UndefOr[GooglePrivacyDlpV2beta1OutputStorageConfig] = js.undefined
+  var outputConfig: js.UndefOr[GooglePrivacyDlpV2beta1OutputStorageConfig] = js.native
   /** Specification of the data set to process. */
-  var storageConfig: js.UndefOr[GooglePrivacyDlpV2beta1StorageConfig] = js.undefined
+  var storageConfig: js.UndefOr[GooglePrivacyDlpV2beta1StorageConfig] = js.native
 }
 
 object GooglePrivacyDlpV2beta1CreateInspectOperationRequest {
   @scala.inline
-  def apply(
-    inspectConfig: GooglePrivacyDlpV2beta1InspectConfig = null,
-    operationConfig: GooglePrivacyDlpV2beta1OperationConfig = null,
-    outputConfig: GooglePrivacyDlpV2beta1OutputStorageConfig = null,
-    storageConfig: GooglePrivacyDlpV2beta1StorageConfig = null
-  ): GooglePrivacyDlpV2beta1CreateInspectOperationRequest = {
+  def apply(): GooglePrivacyDlpV2beta1CreateInspectOperationRequest = {
     val __obj = js.Dynamic.literal()
-    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig.asInstanceOf[js.Any])
-    if (operationConfig != null) __obj.updateDynamic("operationConfig")(operationConfig.asInstanceOf[js.Any])
-    if (outputConfig != null) __obj.updateDynamic("outputConfig")(outputConfig.asInstanceOf[js.Any])
-    if (storageConfig != null) __obj.updateDynamic("storageConfig")(storageConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GooglePrivacyDlpV2beta1CreateInspectOperationRequest]
   }
+  @scala.inline
+  implicit class GooglePrivacyDlpV2beta1CreateInspectOperationRequestOps[Self <: GooglePrivacyDlpV2beta1CreateInspectOperationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInspectConfig(value: GooglePrivacyDlpV2beta1InspectConfig): Self = this.set("inspectConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInspectConfig: Self = this.set("inspectConfig", js.undefined)
+    @scala.inline
+    def setOperationConfig(value: GooglePrivacyDlpV2beta1OperationConfig): Self = this.set("operationConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationConfig: Self = this.set("operationConfig", js.undefined)
+    @scala.inline
+    def setOutputConfig(value: GooglePrivacyDlpV2beta1OutputStorageConfig): Self = this.set("outputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputConfig: Self = this.set("outputConfig", js.undefined)
+    @scala.inline
+    def setStorageConfig(value: GooglePrivacyDlpV2beta1StorageConfig): Self = this.set("storageConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageConfig: Self = this.set("storageConfig", js.undefined)
+  }
+  
 }
 

@@ -15,12 +15,12 @@ abstract class RouteReuseStrategy () extends js.Object {
   def shouldDetach(route: ActivatedRouteSnapshot): Boolean = js.native
   /** Determines if a route should be reused */
   def shouldReuseRoute(future: ActivatedRouteSnapshot, curr: ActivatedRouteSnapshot): Boolean = js.native
-  def store(route: ActivatedRouteSnapshot): Unit = js.native
   /**
     * Stores the detached route.
     *
     * Storing a `null` value should erase the previously stored value.
     */
+  def store(route: ActivatedRouteSnapshot): Unit = js.native
   def store(route: ActivatedRouteSnapshot, handle: DetachedRouteHandle): Unit = js.native
 }
 

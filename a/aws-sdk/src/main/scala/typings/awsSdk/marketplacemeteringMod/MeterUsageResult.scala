@@ -14,10 +14,26 @@ trait MeterUsageResult extends js.Object {
 
 object MeterUsageResult {
   @scala.inline
-  def apply(MeteringRecordId: String = null): MeterUsageResult = {
+  def apply(): MeterUsageResult = {
     val __obj = js.Dynamic.literal()
-    if (MeteringRecordId != null) __obj.updateDynamic("MeteringRecordId")(MeteringRecordId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterUsageResult]
   }
+  @scala.inline
+  implicit class MeterUsageResultOps[Self <: MeterUsageResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMeteringRecordId(value: String): Self = this.set("MeteringRecordId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeteringRecordId: Self = this.set("MeteringRecordId", js.undefined)
+  }
+  
 }
 

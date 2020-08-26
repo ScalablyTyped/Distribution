@@ -29,6 +29,11 @@ trait Group_ extends Object {
   def forEach(callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit]): Unit = js.native
   def forEach(
     callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
+    opt_recursive: js.UndefOr[scala.Nothing],
+    opt_context: js.Any
+  ): Unit = js.native
+  def forEach(
+    callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
     opt_recursive: Boolean
   ): Unit = js.native
   def forEach(

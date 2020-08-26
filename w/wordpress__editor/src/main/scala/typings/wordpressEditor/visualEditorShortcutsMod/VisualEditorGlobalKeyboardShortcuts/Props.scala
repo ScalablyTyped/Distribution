@@ -4,5 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Props extends js.Object
+@js.native
+trait Props extends js.Object {
+  var children: js.UndefOr[scala.Nothing] = js.native
+}
 

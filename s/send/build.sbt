@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "send"
-version := "v0.14.1-dt-20200515Z-e4f2df"
-scalaVersion := "2.13.2"
+version := "v0.14.1-dt-20200515Z-680398"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20200515Z-a16f63",
-  "org.scalablytyped" %%% "node" % "14.0-dt-20200624Z-2fcd45",
-  "org.scalablytyped" %%% "std" % "3.9-c9f1f8")
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20200722Z-298525",
+  "org.scalablytyped" %%% "node" % "14.0-dt-20200724Z-6c1ba3",
+  "org.scalablytyped" %%% "std" % "3.9-bafc13")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -17,57 +17,13 @@ trait CommandBarControls extends js.Object {
   val Parent: CommandBar = js.native
   def apply(Index: String): CommandBarControl = js.native
   def apply(Index: Double): CommandBarControl = js.native
-  def Add(): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, Id: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, Id: Double, Parameter: js.Any): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, Id: Double, Parameter: js.Any, Before: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_1(Type: `1`, Id: Double, Parameter: js.Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_10(Type: `10`): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_10(Type: `10`, Id: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_10(Type: `10`, Id: Double, Parameter: js.Any): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_10(Type: `10`, Id: Double, Parameter: js.Any, Before: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_10(Type: `10`, Id: Double, Parameter: js.Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, Id: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, Id: Double, Parameter: js.Any): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, Id: Double, Parameter: js.Any, Before: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_2(Type: `2`, Id: Double, Parameter: js.Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_3(Type: `3`): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_3(Type: `3`, Id: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_3(Type: `3`, Id: Double, Parameter: js.Any): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_3(Type: `3`, Id: Double, Parameter: js.Any, Before: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_3(Type: `3`, Id: Double, Parameter: js.Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`, Id: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`, Id: Double, Parameter: js.Any): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`, Id: Double, Parameter: js.Any, Before: Double): CommandBarControl = js.native
-  @JSName("Add")
-  def Add_4(Type: `4`, Id: Double, Parameter: js.Any, Before: Double, Temporary: Boolean): CommandBarControl = js.native
+  def Add(
+    Type: js.UndefOr[`1` | `2` | `3` | `4` | `10`],
+    Id: js.UndefOr[Double],
+    Parameter: js.UndefOr[js.Any],
+    Before: js.UndefOr[Double],
+    Temporary: js.UndefOr[Boolean]
+  ): CommandBarControl = js.native
   def Item(Index: String): CommandBarControl = js.native
   def Item(Index: Double): CommandBarControl = js.native
 }

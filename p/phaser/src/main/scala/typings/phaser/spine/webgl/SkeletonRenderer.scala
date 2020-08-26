@@ -22,6 +22,12 @@ trait SkeletonRenderer extends js.Object {
   var vertexSize: js.Any = js.native
   var vertices: js.Any = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton): Unit = js.native
+  def draw(
+    batcher: PolygonBatcher,
+    skeleton: Skeleton,
+    slotRangeStart: js.UndefOr[scala.Nothing],
+    slotRangeEnd: Double
+  ): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double): Unit = js.native
   def draw(batcher: PolygonBatcher, skeleton: Skeleton, slotRangeStart: Double, slotRangeEnd: Double): Unit = js.native
 }

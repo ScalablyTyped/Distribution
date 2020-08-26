@@ -1,0 +1,27 @@
+package typings.stellarBase.xdrMod.xdr
+
+import typings.node.Buffer
+import typings.stellarBase.stellarBaseStrings.base64
+import typings.stellarBase.stellarBaseStrings.hex
+import typings.stellarBase.stellarBaseStrings.raw
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait ScpStatementExternalize extends js.Object {
+  def commit(): ScpBallot = js.native
+  def commit(value: ScpBallot): ScpBallot = js.native
+  def commitQuorumSetHash(): Buffer = js.native
+  def commitQuorumSetHash(value: Buffer): Buffer = js.native
+  def nH(): Double = js.native
+  def nH(value: Double): Double = js.native
+  def toXDR(): Buffer = js.native
+  @JSName("toXDR")
+  def toXDR_base64(format: base64): String = js.native
+  @JSName("toXDR")
+  def toXDR_hex(format: hex): String = js.native
+  @JSName("toXDR")
+  def toXDR_raw(format: raw): Buffer = js.native
+}
+

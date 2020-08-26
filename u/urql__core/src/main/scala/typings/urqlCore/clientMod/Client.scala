@@ -59,23 +59,29 @@ class Client protected () extends js.Object {
   def mutation[Data, Variables /* <: js.Object */](query: String): PromisifiedSource[OperationResult[Data]] = js.native
   def mutation[Data, Variables /* <: js.Object */](query: String, variables: Variables): PromisifiedSource[OperationResult[Data]] = js.native
   def mutation[Data, Variables /* <: js.Object */](query: String, variables: Variables, context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
+  def mutation[Data, Variables /* <: js.Object */](query: String, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
   def mutation[Data, Variables /* <: js.Object */](query: DocumentNode): PromisifiedSource[OperationResult[Data]] = js.native
   def mutation[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables): PromisifiedSource[OperationResult[Data]] = js.native
   def mutation[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables, context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
+  def mutation[Data, Variables /* <: js.Object */](query: DocumentNode, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
   @JSName("operations$")
   def operations$(_1: sinkT[Operation]): Unit = js.native
   def query[Data, Variables /* <: js.Object */](query: String): PromisifiedSource[OperationResult[Data]] = js.native
   def query[Data, Variables /* <: js.Object */](query: String, variables: Variables): PromisifiedSource[OperationResult[Data]] = js.native
   def query[Data, Variables /* <: js.Object */](query: String, variables: Variables, context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
+  def query[Data, Variables /* <: js.Object */](query: String, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
   def query[Data, Variables /* <: js.Object */](query: DocumentNode): PromisifiedSource[OperationResult[Data]] = js.native
   def query[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables): PromisifiedSource[OperationResult[Data]] = js.native
   def query[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables, context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
+  def query[Data, Variables /* <: js.Object */](query: DocumentNode, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): PromisifiedSource[OperationResult[Data]] = js.native
   def readQuery[Data, Variables /* <: js.Object */](query: String): OperationResult[Data] | Null = js.native
   def readQuery[Data, Variables /* <: js.Object */](query: String, variables: Variables): OperationResult[Data] | Null = js.native
   def readQuery[Data, Variables /* <: js.Object */](query: String, variables: Variables, context: PartialOperationContext): OperationResult[Data] | Null = js.native
+  def readQuery[Data, Variables /* <: js.Object */](query: String, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): OperationResult[Data] | Null = js.native
   def readQuery[Data, Variables /* <: js.Object */](query: DocumentNode): OperationResult[Data] | Null = js.native
   def readQuery[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables): OperationResult[Data] | Null = js.native
   def readQuery[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables, context: PartialOperationContext): OperationResult[Data] | Null = js.native
+  def readQuery[Data, Variables /* <: js.Object */](query: DocumentNode, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): OperationResult[Data] | Null = js.native
   /** Start an operation from an exchange */
   def reexecuteOperation(operation: Operation): Unit = js.native
   @JSName("results$")
@@ -83,8 +89,10 @@ class Client protected () extends js.Object {
   def subscription[Data, Variables /* <: js.Object */](query: String): sourceT[OperationResult[Data]] = js.native
   def subscription[Data, Variables /* <: js.Object */](query: String, variables: Variables): sourceT[OperationResult[Data]] = js.native
   def subscription[Data, Variables /* <: js.Object */](query: String, variables: Variables, context: PartialOperationContext): sourceT[OperationResult[Data]] = js.native
+  def subscription[Data, Variables /* <: js.Object */](query: String, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): sourceT[OperationResult[Data]] = js.native
   def subscription[Data, Variables /* <: js.Object */](query: DocumentNode): sourceT[OperationResult[Data]] = js.native
   def subscription[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables): sourceT[OperationResult[Data]] = js.native
   def subscription[Data, Variables /* <: js.Object */](query: DocumentNode, variables: Variables, context: PartialOperationContext): sourceT[OperationResult[Data]] = js.native
+  def subscription[Data, Variables /* <: js.Object */](query: DocumentNode, variables: js.UndefOr[scala.Nothing], context: PartialOperationContext): sourceT[OperationResult[Data]] = js.native
 }
 

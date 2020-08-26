@@ -7,99 +7,136 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEditorScrollbarOptions extends js.Object {
   /**
     * Always consume mouse wheel events (always call preventDefault() and stopPropagation() on the browser events).
     * Defaults to true.
     */
-  var alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.undefined
+  var alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.native
   /**
     * The size of arrows (if displayed).
     * Defaults to 11.
     */
-  var arrowSize: js.UndefOr[Double] = js.undefined
+  var arrowSize: js.UndefOr[Double] = js.native
   /**
     * Listen to mouse wheel events and react to them by scrolling.
     * Defaults to true.
     */
-  var handleMouseWheel: js.UndefOr[Boolean] = js.undefined
+  var handleMouseWheel: js.UndefOr[Boolean] = js.native
   /**
     * Render horizontal scrollbar.
     * Defaults to 'auto'.
     */
-  var horizontal: js.UndefOr[auto | visible | hidden] = js.undefined
+  var horizontal: js.UndefOr[auto | visible | hidden] = js.native
   /**
     * Render arrows at the left and right of the horizontal scrollbar.
     * Defaults to false.
     */
-  var horizontalHasArrows: js.UndefOr[Boolean] = js.undefined
+  var horizontalHasArrows: js.UndefOr[Boolean] = js.native
   /**
     * Height in pixels for the horizontal scrollbar.
     * Defaults to 10 (px).
     */
-  var horizontalScrollbarSize: js.UndefOr[Double] = js.undefined
+  var horizontalScrollbarSize: js.UndefOr[Double] = js.native
   /**
     * Height in pixels for the horizontal slider.
     * Defaults to `horizontalScrollbarSize`.
     */
-  var horizontalSliderSize: js.UndefOr[Double] = js.undefined
+  var horizontalSliderSize: js.UndefOr[Double] = js.native
   /**
     * Cast horizontal and vertical shadows when the content is scrolled.
     * Defaults to true.
     */
-  var useShadows: js.UndefOr[Boolean] = js.undefined
+  var useShadows: js.UndefOr[Boolean] = js.native
   /**
     * Render vertical scrollbar.
     * Defaults to 'auto'.
     */
-  var vertical: js.UndefOr[auto | visible | hidden] = js.undefined
+  var vertical: js.UndefOr[auto | visible | hidden] = js.native
   /**
     * Render arrows at the top and bottom of the vertical scrollbar.
     * Defaults to false.
     */
-  var verticalHasArrows: js.UndefOr[Boolean] = js.undefined
+  var verticalHasArrows: js.UndefOr[Boolean] = js.native
   /**
     * Width in pixels for the vertical scrollbar.
     * Defaults to 10 (px).
     */
-  var verticalScrollbarSize: js.UndefOr[Double] = js.undefined
+  var verticalScrollbarSize: js.UndefOr[Double] = js.native
   /**
     * Width in pixels for the vertical slider.
     * Defaults to `verticalScrollbarSize`.
     */
-  var verticalSliderSize: js.UndefOr[Double] = js.undefined
+  var verticalSliderSize: js.UndefOr[Double] = js.native
 }
 
 object IEditorScrollbarOptions {
   @scala.inline
-  def apply(
-    alwaysConsumeMouseWheel: js.UndefOr[Boolean] = js.undefined,
-    arrowSize: js.UndefOr[Double] = js.undefined,
-    handleMouseWheel: js.UndefOr[Boolean] = js.undefined,
-    horizontal: auto | visible | hidden = null,
-    horizontalHasArrows: js.UndefOr[Boolean] = js.undefined,
-    horizontalScrollbarSize: js.UndefOr[Double] = js.undefined,
-    horizontalSliderSize: js.UndefOr[Double] = js.undefined,
-    useShadows: js.UndefOr[Boolean] = js.undefined,
-    vertical: auto | visible | hidden = null,
-    verticalHasArrows: js.UndefOr[Boolean] = js.undefined,
-    verticalScrollbarSize: js.UndefOr[Double] = js.undefined,
-    verticalSliderSize: js.UndefOr[Double] = js.undefined
-  ): IEditorScrollbarOptions = {
+  def apply(): IEditorScrollbarOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alwaysConsumeMouseWheel)) __obj.updateDynamic("alwaysConsumeMouseWheel")(alwaysConsumeMouseWheel.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(arrowSize)) __obj.updateDynamic("arrowSize")(arrowSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(handleMouseWheel)) __obj.updateDynamic("handleMouseWheel")(handleMouseWheel.get.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalHasArrows)) __obj.updateDynamic("horizontalHasArrows")(horizontalHasArrows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalScrollbarSize)) __obj.updateDynamic("horizontalScrollbarSize")(horizontalScrollbarSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalSliderSize)) __obj.updateDynamic("horizontalSliderSize")(horizontalSliderSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(useShadows)) __obj.updateDynamic("useShadows")(useShadows.get.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalHasArrows)) __obj.updateDynamic("verticalHasArrows")(verticalHasArrows.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalScrollbarSize)) __obj.updateDynamic("verticalScrollbarSize")(verticalScrollbarSize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalSliderSize)) __obj.updateDynamic("verticalSliderSize")(verticalSliderSize.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditorScrollbarOptions]
   }
+  @scala.inline
+  implicit class IEditorScrollbarOptionsOps[Self <: IEditorScrollbarOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlwaysConsumeMouseWheel(value: Boolean): Self = this.set("alwaysConsumeMouseWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysConsumeMouseWheel: Self = this.set("alwaysConsumeMouseWheel", js.undefined)
+    @scala.inline
+    def setArrowSize(value: Double): Self = this.set("arrowSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrowSize: Self = this.set("arrowSize", js.undefined)
+    @scala.inline
+    def setHandleMouseWheel(value: Boolean): Self = this.set("handleMouseWheel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHandleMouseWheel: Self = this.set("handleMouseWheel", js.undefined)
+    @scala.inline
+    def setHorizontal(value: auto | visible | hidden): Self = this.set("horizontal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontal: Self = this.set("horizontal", js.undefined)
+    @scala.inline
+    def setHorizontalHasArrows(value: Boolean): Self = this.set("horizontalHasArrows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalHasArrows: Self = this.set("horizontalHasArrows", js.undefined)
+    @scala.inline
+    def setHorizontalScrollbarSize(value: Double): Self = this.set("horizontalScrollbarSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalScrollbarSize: Self = this.set("horizontalScrollbarSize", js.undefined)
+    @scala.inline
+    def setHorizontalSliderSize(value: Double): Self = this.set("horizontalSliderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHorizontalSliderSize: Self = this.set("horizontalSliderSize", js.undefined)
+    @scala.inline
+    def setUseShadows(value: Boolean): Self = this.set("useShadows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseShadows: Self = this.set("useShadows", js.undefined)
+    @scala.inline
+    def setVertical(value: auto | visible | hidden): Self = this.set("vertical", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVertical: Self = this.set("vertical", js.undefined)
+    @scala.inline
+    def setVerticalHasArrows(value: Boolean): Self = this.set("verticalHasArrows", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalHasArrows: Self = this.set("verticalHasArrows", js.undefined)
+    @scala.inline
+    def setVerticalScrollbarSize(value: Double): Self = this.set("verticalScrollbarSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalScrollbarSize: Self = this.set("verticalScrollbarSize", js.undefined)
+    @scala.inline
+    def setVerticalSliderSize(value: Double): Self = this.set("verticalSliderSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalSliderSize: Self = this.set("verticalSliderSize", js.undefined)
+  }
+  
 }
 

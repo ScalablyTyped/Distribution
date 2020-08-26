@@ -26,18 +26,38 @@ trait Invitation extends js.Object {
 
 object Invitation {
   @scala.inline
-  def apply(
-    accountId: string = null,
-    invitationId: string = null,
-    invitedAt: timestampIso8601 = null,
-    relationshipStatus: RelationshipStatus = null
-  ): Invitation = {
+  def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId.asInstanceOf[js.Any])
-    if (invitedAt != null) __obj.updateDynamic("invitedAt")(invitedAt.asInstanceOf[js.Any])
-    if (relationshipStatus != null) __obj.updateDynamic("relationshipStatus")(relationshipStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[Invitation]
   }
+  @scala.inline
+  implicit class InvitationOps[Self <: Invitation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: string): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setInvitationId(value: string): Self = this.set("invitationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitationId: Self = this.set("invitationId", js.undefined)
+    @scala.inline
+    def setInvitedAt(value: timestampIso8601): Self = this.set("invitedAt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvitedAt: Self = this.set("invitedAt", js.undefined)
+    @scala.inline
+    def setRelationshipStatus(value: RelationshipStatus): Self = this.set("relationshipStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationshipStatus: Self = this.set("relationshipStatus", js.undefined)
+  }
+  
 }
 

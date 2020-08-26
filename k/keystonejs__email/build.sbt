@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "keystonejs__email"
-version := "5.0-dt-20191115Z-1a55ad"
-scalaVersion := "2.13.2"
+version := "5.0-dt-20191115Z-66bea9"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

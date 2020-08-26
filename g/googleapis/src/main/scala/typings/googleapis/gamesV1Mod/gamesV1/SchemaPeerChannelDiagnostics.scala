@@ -46,26 +46,54 @@ trait SchemaPeerChannelDiagnostics extends js.Object {
 
 object SchemaPeerChannelDiagnostics {
   @scala.inline
-  def apply(
-    bytesReceived: SchemaAggregateStats = null,
-    bytesSent: SchemaAggregateStats = null,
-    kind: String = null,
-    numMessagesLost: js.UndefOr[Double] = js.undefined,
-    numMessagesReceived: js.UndefOr[Double] = js.undefined,
-    numMessagesSent: js.UndefOr[Double] = js.undefined,
-    numSendFailures: js.UndefOr[Double] = js.undefined,
-    roundtripLatencyMillis: SchemaAggregateStats = null
-  ): SchemaPeerChannelDiagnostics = {
+  def apply(): SchemaPeerChannelDiagnostics = {
     val __obj = js.Dynamic.literal()
-    if (bytesReceived != null) __obj.updateDynamic("bytesReceived")(bytesReceived.asInstanceOf[js.Any])
-    if (bytesSent != null) __obj.updateDynamic("bytesSent")(bytesSent.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(numMessagesLost)) __obj.updateDynamic("numMessagesLost")(numMessagesLost.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numMessagesReceived)) __obj.updateDynamic("numMessagesReceived")(numMessagesReceived.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numMessagesSent)) __obj.updateDynamic("numMessagesSent")(numMessagesSent.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(numSendFailures)) __obj.updateDynamic("numSendFailures")(numSendFailures.get.asInstanceOf[js.Any])
-    if (roundtripLatencyMillis != null) __obj.updateDynamic("roundtripLatencyMillis")(roundtripLatencyMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPeerChannelDiagnostics]
   }
+  @scala.inline
+  implicit class SchemaPeerChannelDiagnosticsOps[Self <: SchemaPeerChannelDiagnostics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBytesReceived(value: SchemaAggregateStats): Self = this.set("bytesReceived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesReceived: Self = this.set("bytesReceived", js.undefined)
+    @scala.inline
+    def setBytesSent(value: SchemaAggregateStats): Self = this.set("bytesSent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBytesSent: Self = this.set("bytesSent", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setNumMessagesLost(value: Double): Self = this.set("numMessagesLost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumMessagesLost: Self = this.set("numMessagesLost", js.undefined)
+    @scala.inline
+    def setNumMessagesReceived(value: Double): Self = this.set("numMessagesReceived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumMessagesReceived: Self = this.set("numMessagesReceived", js.undefined)
+    @scala.inline
+    def setNumMessagesSent(value: Double): Self = this.set("numMessagesSent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumMessagesSent: Self = this.set("numMessagesSent", js.undefined)
+    @scala.inline
+    def setNumSendFailures(value: Double): Self = this.set("numSendFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNumSendFailures: Self = this.set("numSendFailures", js.undefined)
+    @scala.inline
+    def setRoundtripLatencyMillis(value: SchemaAggregateStats): Self = this.set("roundtripLatencyMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoundtripLatencyMillis: Self = this.set("roundtripLatencyMillis", js.undefined)
+  }
+  
 }
 

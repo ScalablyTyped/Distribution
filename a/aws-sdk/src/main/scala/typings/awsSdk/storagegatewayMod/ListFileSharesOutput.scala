@@ -22,12 +22,36 @@ trait ListFileSharesOutput extends js.Object {
 
 object ListFileSharesOutput {
   @scala.inline
-  def apply(FileShareInfoList: FileShareInfoList = null, Marker: Marker = null, NextMarker: Marker = null): ListFileSharesOutput = {
+  def apply(): ListFileSharesOutput = {
     val __obj = js.Dynamic.literal()
-    if (FileShareInfoList != null) __obj.updateDynamic("FileShareInfoList")(FileShareInfoList.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (NextMarker != null) __obj.updateDynamic("NextMarker")(NextMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFileSharesOutput]
   }
+  @scala.inline
+  implicit class ListFileSharesOutputOps[Self <: ListFileSharesOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileShareInfoListVarargs(value: FileShareInfo*): Self = this.set("FileShareInfoList", js.Array(value :_*))
+    @scala.inline
+    def setFileShareInfoList(value: FileShareInfoList): Self = this.set("FileShareInfoList", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileShareInfoList: Self = this.set("FileShareInfoList", js.undefined)
+    @scala.inline
+    def setMarker(value: Marker): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setNextMarker(value: Marker): Self = this.set("NextMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMarker: Self = this.set("NextMarker", js.undefined)
+  }
+  
 }
 

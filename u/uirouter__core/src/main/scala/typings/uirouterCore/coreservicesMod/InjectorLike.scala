@@ -16,6 +16,7 @@ trait InjectorLike extends js.Object {
   def get_T_T[T](token: js.Any): T = js.native
   def has(token: js.Any): Boolean = js.native
   def invoke(fn: IInjectable): js.Any = js.native
+  def invoke(fn: IInjectable, context: js.UndefOr[scala.Nothing], locals: Obj): js.Any = js.native
   def invoke(fn: IInjectable, context: js.Any): js.Any = js.native
   def invoke(fn: IInjectable, context: js.Any, locals: Obj): js.Any = js.native
 }

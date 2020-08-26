@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
+import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -25,7 +27,7 @@ trait NavigationToggle extends Widget_ {
     *
     * @default vertical
     */
-  var layout: String = js.native
+  var layout: vertical | horizontal = js.native
   /**
     * A reference to the SceneView. Set this to link the widget to a specific view.
     *

@@ -12,7 +12,7 @@ Finds project root
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 334761 |
+| # downloads        | 363073 |
 | # stars            | 0 |
 
 ## Links

@@ -22,11 +22,30 @@ trait SchemaValidationOptions extends js.Object {
 
 object SchemaValidationOptions {
   @scala.inline
-  def apply(schemaValidation: String = null, undeclaredProperties: String = null): SchemaValidationOptions = {
+  def apply(): SchemaValidationOptions = {
     val __obj = js.Dynamic.literal()
-    if (schemaValidation != null) __obj.updateDynamic("schemaValidation")(schemaValidation.asInstanceOf[js.Any])
-    if (undeclaredProperties != null) __obj.updateDynamic("undeclaredProperties")(undeclaredProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaValidationOptions]
   }
+  @scala.inline
+  implicit class SchemaValidationOptionsOps[Self <: SchemaValidationOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSchemaValidation(value: String): Self = this.set("schemaValidation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaValidation: Self = this.set("schemaValidation", js.undefined)
+    @scala.inline
+    def setUndeclaredProperties(value: String): Self = this.set("undeclaredProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUndeclaredProperties: Self = this.set("undeclaredProperties", js.undefined)
+  }
+  
 }
 

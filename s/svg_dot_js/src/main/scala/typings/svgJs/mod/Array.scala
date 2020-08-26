@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait Array
   extends Instantiable0[Array]
      with Instantiable1[/* array */ ArrayAlias, Array]
-     with Instantiable2[/* array */ ArrayAlias, /* fallback */ js.Array[Double], Array] {
+     with Instantiable2[js.UndefOr[/* array */ ArrayAlias], /* fallback */ js.Array[Double], Array] {
   var value: js.Array[Double] = js.native
   def at(pos: NumberAlias): Array = js.native
   def morph(array: js.Array[Double]): this.type = js.native

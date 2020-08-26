@@ -11,8 +11,8 @@ Get or check the current macOS version
 | Full name          | macos-version |
 | Keywords           | macos, os, darwin, operating, system, platform, version, release, semver, check, assert, condition |
 | # releases         | 4 |
-| # dependents       | 17 |
-| # downloads        | 20601 |
+| # dependents       | 22 |
+| # downloads        | 20997 |
 | # stars            | 0 |
 
 ## Links

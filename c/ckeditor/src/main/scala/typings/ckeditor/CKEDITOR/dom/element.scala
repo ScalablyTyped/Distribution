@@ -36,12 +36,19 @@ trait element extends node {
   def focus(): Unit = js.native
   def focus(defer: Boolean): Unit = js.native
   def focusNext(): Unit = js.native
+  def focusNext(ignoreChildren: js.UndefOr[scala.Nothing], indexToUse: Double): Unit = js.native
   def focusNext(ignoreChildren: Boolean): Unit = js.native
   def focusNext(ignoreChildren: Boolean, indexToUse: Double): Unit = js.native
   def focusPrevious(): Unit = js.native
+  def focusPrevious(ignoreChildren: js.UndefOr[scala.Nothing], indexToUse: Double): Unit = js.native
   def focusPrevious(ignoreChildren: Boolean): Unit = js.native
   def focusPrevious(ignoreChildren: Boolean, indexToUse: Double): Unit = js.native
   def forEach(callback: js.Function1[/* node */ node, Unit]): Unit = js.native
+  def forEach(
+    callback: js.Function1[/* node */ node, Unit],
+    `type`: js.UndefOr[scala.Nothing],
+    skipRoot: Boolean
+  ): Unit = js.native
   def forEach(callback: js.Function1[/* node */ node, Unit], `type`: Double): Unit = js.native
   def forEach(callback: js.Function1[/* node */ node, Unit], `type`: Double, skipRoot: Boolean): Unit = js.native
   def getAttribute(name: String): String = js.native
@@ -107,6 +114,7 @@ trait element extends node {
   def setOpacity(opacity: Double): Unit = js.native
   def setSize(`type`: String, size: Double, isBorderBox: Boolean): Unit = js.native
   def setState(state: Double): Unit = js.native
+  def setState(state: Double, base: js.UndefOr[scala.Nothing], useAria: Boolean): Unit = js.native
   def setState(state: Double, base: String): Unit = js.native
   def setState(state: Double, base: String, useAria: Boolean): Unit = js.native
   def setStyle(name: String, value: String): element = js.native

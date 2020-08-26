@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/common" : "2.4.0"
+      "@google-cloud/common" : "3.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/common" : "2.4.0"
+      "@google-cloud/common" : "3.3.2"
     }
   ],
   "compile-devDependencies" : [

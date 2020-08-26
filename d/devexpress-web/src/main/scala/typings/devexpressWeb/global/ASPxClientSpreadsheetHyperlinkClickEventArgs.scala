@@ -24,25 +24,5 @@ class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
     hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType,
     targetUri: String
   ) = this()
-  /**
-    * Gets or sets a value that specifies whether the event is handled, and the default processing is not required.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets a DHTML event object that relates to the processed event.
-    */
-  /* CompleteClass */
-  override var htmlEvent: js.Any = js.native
-  /**
-    * Gets a value identifying the clicked hyperlink type.
-    */
-  /* CompleteClass */
-  override var hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType = js.native
-  /**
-    * Gets the clicked link's URI.
-    */
-  /* CompleteClass */
-  override var targetUri: String = js.native
 }
 

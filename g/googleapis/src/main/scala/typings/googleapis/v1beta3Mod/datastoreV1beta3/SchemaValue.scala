@@ -75,36 +75,74 @@ trait SchemaValue extends js.Object {
 
 object SchemaValue {
   @scala.inline
-  def apply(
-    arrayValue: SchemaArrayValue = null,
-    blobValue: String = null,
-    booleanValue: js.UndefOr[Boolean] = js.undefined,
-    doubleValue: js.UndefOr[Double] = js.undefined,
-    entityValue: SchemaEntity = null,
-    excludeFromIndexes: js.UndefOr[Boolean] = js.undefined,
-    geoPointValue: SchemaLatLng = null,
-    integerValue: String = null,
-    keyValue: SchemaKey = null,
-    meaning: js.UndefOr[Double] = js.undefined,
-    nullValue: String = null,
-    stringValue: String = null,
-    timestampValue: String = null
-  ): SchemaValue = {
+  def apply(): SchemaValue = {
     val __obj = js.Dynamic.literal()
-    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue.asInstanceOf[js.Any])
-    if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleValue)) __obj.updateDynamic("doubleValue")(doubleValue.get.asInstanceOf[js.Any])
-    if (entityValue != null) __obj.updateDynamic("entityValue")(entityValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(excludeFromIndexes)) __obj.updateDynamic("excludeFromIndexes")(excludeFromIndexes.get.asInstanceOf[js.Any])
-    if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue.asInstanceOf[js.Any])
-    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue.asInstanceOf[js.Any])
-    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(meaning)) __obj.updateDynamic("meaning")(meaning.get.asInstanceOf[js.Any])
-    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
-    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue.asInstanceOf[js.Any])
-    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaValue]
   }
+  @scala.inline
+  implicit class SchemaValueOps[Self <: SchemaValue] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArrayValue(value: SchemaArrayValue): Self = this.set("arrayValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArrayValue: Self = this.set("arrayValue", js.undefined)
+    @scala.inline
+    def setBlobValue(value: String): Self = this.set("blobValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlobValue: Self = this.set("blobValue", js.undefined)
+    @scala.inline
+    def setBooleanValue(value: Boolean): Self = this.set("booleanValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBooleanValue: Self = this.set("booleanValue", js.undefined)
+    @scala.inline
+    def setDoubleValue(value: Double): Self = this.set("doubleValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDoubleValue: Self = this.set("doubleValue", js.undefined)
+    @scala.inline
+    def setEntityValue(value: SchemaEntity): Self = this.set("entityValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntityValue: Self = this.set("entityValue", js.undefined)
+    @scala.inline
+    def setExcludeFromIndexes(value: Boolean): Self = this.set("excludeFromIndexes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExcludeFromIndexes: Self = this.set("excludeFromIndexes", js.undefined)
+    @scala.inline
+    def setGeoPointValue(value: SchemaLatLng): Self = this.set("geoPointValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGeoPointValue: Self = this.set("geoPointValue", js.undefined)
+    @scala.inline
+    def setIntegerValue(value: String): Self = this.set("integerValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntegerValue: Self = this.set("integerValue", js.undefined)
+    @scala.inline
+    def setKeyValue(value: SchemaKey): Self = this.set("keyValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyValue: Self = this.set("keyValue", js.undefined)
+    @scala.inline
+    def setMeaning(value: Double): Self = this.set("meaning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMeaning: Self = this.set("meaning", js.undefined)
+    @scala.inline
+    def setNullValue(value: String): Self = this.set("nullValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNullValue: Self = this.set("nullValue", js.undefined)
+    @scala.inline
+    def setStringValue(value: String): Self = this.set("stringValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStringValue: Self = this.set("stringValue", js.undefined)
+    @scala.inline
+    def setTimestampValue(value: String): Self = this.set("timestampValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampValue: Self = this.set("timestampValue", js.undefined)
+  }
+  
 }
 

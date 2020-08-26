@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ClassNames extends js.Object {
   /**
     * The animation `classNames` applied to the component as it enters or exits.
@@ -29,15 +30,31 @@ trait ClassNames extends js.Object {
     * }}
     * ```
     */
-  var classNames: js.UndefOr[String | CSSTransitionClassNames] = js.undefined
+  var classNames: js.UndefOr[String | CSSTransitionClassNames] = js.native
 }
 
 object ClassNames {
   @scala.inline
-  def apply(classNames: String | CSSTransitionClassNames = null): ClassNames = {
+  def apply(): ClassNames = {
     val __obj = js.Dynamic.literal()
-    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassNames]
   }
+  @scala.inline
+  implicit class ClassNamesOps[Self <: ClassNames] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassNames(value: String | CSSTransitionClassNames): Self = this.set("classNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassNames: Self = this.set("classNames", js.undefined)
+  }
+  
 }
 

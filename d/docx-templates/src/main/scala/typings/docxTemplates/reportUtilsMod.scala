@@ -21,6 +21,7 @@ object reportUtilsMod extends js.Object {
   def isLoopExploring(ctx: Context): Boolean = js.native
   def logLoop(loops: js.Array[LoopStatus]): Unit = js.native
   def newNonTextNode(tag: String): NonTextNode = js.native
+  def newNonTextNode(tag: String, attrs: js.UndefOr[scala.Nothing], children: js.Array[Node]): NonTextNode = js.native
   def newNonTextNode(tag: String, attrs: js.Object): NonTextNode = js.native
   def newNonTextNode(tag: String, attrs: js.Object, children: js.Array[Node]): NonTextNode = js.native
   def newTextNode(text: String): TextNode = js.native

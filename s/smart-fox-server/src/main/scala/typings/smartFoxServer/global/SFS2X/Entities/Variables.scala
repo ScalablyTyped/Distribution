@@ -21,25 +21,6 @@ object Variables extends js.Object {
       */
     def this(name: String, value: js.Any) = this()
     def this(name: String, value: js.Any, `type`: Double) = this()
-    /** @type {string} Indicates the name of this variable. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /** @type {number} Returns the value of this variable. */
-    /* CompleteClass */
-    override var value: Double = js.native
-    /**
-      * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
-      * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
-      * @return {string}        Returns: The variable type name.
-      */
-    /* CompleteClass */
-    override def getTypeName(typeId: Double): String = js.native
-    /**
-      * Indicates if the variable is null.
-      * @return {boolean} Returns: true if the variable has a null value.
-      */
-    /* CompleteClass */
-    override def isNull(): Boolean = js.native
   }
   
   @js.native
@@ -61,31 +42,6 @@ object Variables extends js.Object {
       */
     def this(name: String, value: js.Any) = this()
     def this(name: String, value: js.Any, `type`: Double) = this()
-    /** @type {string} Indicates the name of this variable. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /** @type {number} Returns the value of this variable. */
-    /* CompleteClass */
-    override var value: Double = js.native
-    /**
-      * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
-      * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
-      * @return {string}        Returns: The variable type name.
-      */
-    /* CompleteClass */
-    override def getTypeName(typeId: Double): String = js.native
-    /**
-      * Indicates if the variable is null.
-      * @return {boolean} Returns: true if the variable has a null value.
-      */
-    /* CompleteClass */
-    override def isNull(): Boolean = js.native
-    /**
-      * Indicates whether the Buddy Variable is persistent or not.
-      * @return {boolean} Returns: true if the Buddy Variable is persistent.
-      */
-    /* CompleteClass */
-    override def isOffline(): Boolean = js.native
   }
   
   @js.native
@@ -99,31 +55,6 @@ object Variables extends js.Object {
       */
     def this(name: String, value: js.Any) = this()
     def this(name: String, value: js.Any, `type`: Double) = this()
-    /** @type {boolean} Indicates whether this Room Variable is persistent or not. */
-    /* CompleteClass */
-    override var isPersistent: Boolean = js.native
-    /** @type {boolean} Indicates whether this Room Variable is private or not. */
-    /* CompleteClass */
-    override var isPrivate: Boolean = js.native
-    /** @type {string} Indicates the name of this variable. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /** @type {number} Returns the value of this variable. */
-    /* CompleteClass */
-    override var value: Double = js.native
-    /**
-      * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
-      * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
-      * @return {string}        Returns: The variable type name.
-      */
-    /* CompleteClass */
-    override def getTypeName(typeId: Double): String = js.native
-    /**
-      * Indicates if the variable is null.
-      * @return {boolean} Returns: true if the variable has a null value.
-      */
-    /* CompleteClass */
-    override def isNull(): Boolean = js.native
   }
   
   @js.native
@@ -137,25 +68,6 @@ object Variables extends js.Object {
       */
     def this(name: String, value: js.Any) = this()
     def this(name: String, value: js.Any, `type`: Double) = this()
-    /** @type {string} Indicates the name of this variable. */
-    /* CompleteClass */
-    override var name: String = js.native
-    /** @type {number} Returns the value of this variable. */
-    /* CompleteClass */
-    override var value: Double = js.native
-    /**
-      * Indicates the type of this variable. Possibly returned strings are: Null, Bool, Int, Double, String, Object, Array.
-      * @param  {number} typeId The type id of the User Variable among those available in the VariableType class.
-      * @return {string}        Returns: The variable type name.
-      */
-    /* CompleteClass */
-    override def getTypeName(typeId: Double): String = js.native
-    /**
-      * Indicates if the variable is null.
-      * @return {boolean} Returns: true if the variable has a null value.
-      */
-    /* CompleteClass */
-    override def isNull(): Boolean = js.native
   }
   
   @js.native

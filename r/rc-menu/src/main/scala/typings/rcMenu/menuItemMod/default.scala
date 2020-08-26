@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-menu/lib/MenuItem", JSImport.Default)
+@JSImport("rc-menu/es/MenuItem", JSImport.Default)
 @js.native
 object default
   extends TopLevel[js.Any]

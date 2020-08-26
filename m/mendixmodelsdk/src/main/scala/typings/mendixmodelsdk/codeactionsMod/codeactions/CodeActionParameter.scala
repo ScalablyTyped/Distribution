@@ -52,32 +52,24 @@ abstract class CodeActionParameter protected ()
   @JSName("name")
   val name_FCodeActionParameter: String = js.native
   /**
-    * Returns the qualified name of this element, or
-    * null if this element is not a part of the model,
-    * or if it or one of its namespace containers does not have a
-    * valid name.
-    */
-  /* CompleteClass */
-  override val qualifiedName: String | Null = js.native
-  /**
     * In version 7.21.0: introduced
     */
   def actionParameterType: ParameterType = js.native
-  def actionParameterType(newValue: ParameterType): js.Any = js.native
+  def actionParameterType_=(newValue: ParameterType): Unit = js.native
   /**
     * In version 7.18.0: introduced
     */
   def category: String = js.native
-  def category(newValue: String): js.Any = js.native
+  def category_=(newValue: String): Unit = js.native
   def containerAsCodeAction: CodeAction = js.native
   def containerAsJavaAction: JavaAction = js.native
   /**
     * In version 6.10.0: introduced
     */
   def description: String = js.native
-  def description(newValue: String): js.Any = js.native
+  def description_=(newValue: String): Unit = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   @JSName("qualifiedName")
   def qualifiedName_MCodeActionParameter: String | Null = js.native
 }

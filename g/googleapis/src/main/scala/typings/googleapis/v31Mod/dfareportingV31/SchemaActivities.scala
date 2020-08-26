@@ -26,16 +26,38 @@ trait SchemaActivities extends js.Object {
 
 object SchemaActivities {
   @scala.inline
-  def apply(
-    filters: js.Array[SchemaDimensionValue] = null,
-    kind: String = null,
-    metricNames: js.Array[String] = null
-  ): SchemaActivities = {
+  def apply(): SchemaActivities = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (metricNames != null) __obj.updateDynamic("metricNames")(metricNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaActivities]
   }
+  @scala.inline
+  implicit class SchemaActivitiesOps[Self <: SchemaActivities] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFiltersVarargs(value: SchemaDimensionValue*): Self = this.set("filters", js.Array(value :_*))
+    @scala.inline
+    def setFilters(value: js.Array[SchemaDimensionValue]): Self = this.set("filters", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilters: Self = this.set("filters", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setMetricNamesVarargs(value: String*): Self = this.set("metricNames", js.Array(value :_*))
+    @scala.inline
+    def setMetricNames(value: js.Array[String]): Self = this.set("metricNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricNames: Self = this.set("metricNames", js.undefined)
+  }
+  
 }
 

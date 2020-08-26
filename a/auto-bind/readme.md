@@ -10,9 +10,9 @@ Automatically bind methods to their class instance
 | ------------------ | :-------------: |
 | Full name          | auto-bind |
 | Keywords           | auto, bind, class, methods, method, automatically, prototype, instance, function, this, self, react, component |
-| # releases         | 6 |
-| # dependents       | 114 |
-| # downloads        | 14399132 |
+| # releases         | 8 |
+| # dependents       | 115 |
+| # downloads        | 15653456 |
 | # stars            | 2 |
 
 ## Links

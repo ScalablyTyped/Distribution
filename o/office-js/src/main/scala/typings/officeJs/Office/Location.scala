@@ -81,6 +81,11 @@ trait Location extends js.Object {
     */
   def setAsync(location: String): Unit = js.native
   def setAsync(location: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def setAsync(
+    location: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def setAsync(location: String, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     location: String,

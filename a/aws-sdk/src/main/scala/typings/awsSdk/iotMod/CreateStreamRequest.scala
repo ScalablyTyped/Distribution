@@ -30,17 +30,40 @@ trait CreateStreamRequest extends js.Object {
 
 object CreateStreamRequest {
   @scala.inline
-  def apply(
-    files: StreamFiles,
-    roleArn: RoleArn,
-    streamId: StreamId,
-    description: StreamDescription = null,
-    tags: TagList = null
-  ): CreateStreamRequest = {
+  def apply(files: StreamFiles, roleArn: RoleArn, streamId: StreamId): CreateStreamRequest = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamRequest]
   }
+  @scala.inline
+  implicit class CreateStreamRequestOps[Self <: CreateStreamRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFilesVarargs(value: StreamFile*): Self = this.set("files", js.Array(value :_*))
+    @scala.inline
+    def setFiles(value: StreamFiles): Self = this.set("files", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamId(value: StreamId): Self = this.set("streamId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: StreamDescription): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

@@ -18,11 +18,32 @@ trait ListDocumentVersionsResult extends js.Object {
 
 object ListDocumentVersionsResult {
   @scala.inline
-  def apply(DocumentVersions: DocumentVersionList = null, NextToken: NextToken = null): ListDocumentVersionsResult = {
+  def apply(): ListDocumentVersionsResult = {
     val __obj = js.Dynamic.literal()
-    if (DocumentVersions != null) __obj.updateDynamic("DocumentVersions")(DocumentVersions.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDocumentVersionsResult]
   }
+  @scala.inline
+  implicit class ListDocumentVersionsResultOps[Self <: ListDocumentVersionsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocumentVersionsVarargs(value: DocumentVersionInfo*): Self = this.set("DocumentVersions", js.Array(value :_*))
+    @scala.inline
+    def setDocumentVersions(value: DocumentVersionList): Self = this.set("DocumentVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentVersions: Self = this.set("DocumentVersions", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+  }
+  
 }
 

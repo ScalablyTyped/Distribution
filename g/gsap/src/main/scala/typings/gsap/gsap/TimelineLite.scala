@@ -11,8 +11,53 @@ trait TimelineLite extends SimpleTimeline {
   def addLabel(label: String, position: js.Any): TimelineLite = js.native
   /** Inserts a special callback that pauses playback of the timeline at a particular time or label. */
   def addPause(): TimelineLite = js.native
+  def addPause(
+    position: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): TimelineLite = js.native
+  def addPause(position: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], params: js.Array[_]): TimelineLite = js.native
+  def addPause(
+    position: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    params: js.Array[_],
+    scope: js.Any
+  ): TimelineLite = js.native
+  def addPause(position: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, Unit]): TimelineLite = js.native
+  def addPause(
+    position: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): TimelineLite = js.native
+  def addPause(
+    position: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.Array[_]
+  ): TimelineLite = js.native
+  def addPause(
+    position: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.Array[_],
+    scope: js.Any
+  ): TimelineLite = js.native
   def addPause(position: js.Any): TimelineLite = js.native
+  def addPause(
+    position: js.Any,
+    callback: js.UndefOr[scala.Nothing],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): TimelineLite = js.native
+  def addPause(position: js.Any, callback: js.UndefOr[scala.Nothing], params: js.Array[_]): TimelineLite = js.native
+  def addPause(position: js.Any, callback: js.UndefOr[scala.Nothing], params: js.Array[_], scope: js.Any): TimelineLite = js.native
   def addPause(position: js.Any, callback: js.Function1[/* repeated */ js.Any, Unit]): TimelineLite = js.native
+  def addPause(
+    position: js.Any,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): TimelineLite = js.native
   def addPause(position: js.Any, callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): TimelineLite = js.native
   def addPause(
     position: js.Any,
@@ -25,7 +70,30 @@ trait TimelineLite extends SimpleTimeline {
     * add( TweenLite.delayedCall(...) ) but with less code.
     */
   def call(callback: js.Function1[/* repeated */ js.Any, Unit]): TimelineLite = js.native
+  def call(
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    position: js.Any
+  ): TimelineLite = js.native
+  def call(
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): TimelineLite = js.native
+  def call(
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.UndefOr[scala.Nothing],
+    scope: js.Any,
+    position: js.Any
+  ): TimelineLite = js.native
   def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_]): TimelineLite = js.native
+  def call(
+    callback: js.Function1[/* repeated */ js.Any, Unit],
+    params: js.Array[_],
+    scope: js.UndefOr[scala.Nothing],
+    position: js.Any
+  ): TimelineLite = js.native
   def call(callback: js.Function1[/* repeated */ js.Any, Unit], params: js.Array[_], scope: js.Any): TimelineLite = js.native
   def call(
     callback: js.Function1[/* repeated */ js.Any, Unit],
@@ -50,8 +118,39 @@ trait TimelineLite extends SimpleTimeline {
   def fromTo(target: js.Object, duration: Double, fromVars: js.Object, toVars: js.Object, position: js.Any): TimelineLite = js.native
   /** Returns an array containing all the tweens and/or timelines nested in this timeline. */
   def getChildren(): js.Array[Tween | Timeline] = js.native
+  def getChildren(
+    nested: js.UndefOr[scala.Nothing],
+    tweens: js.UndefOr[scala.Nothing],
+    timelines: js.UndefOr[scala.Nothing],
+    ignoreBeforeTime: Double
+  ): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: js.UndefOr[scala.Nothing], tweens: js.UndefOr[scala.Nothing], timelines: Boolean): js.Array[Tween | Timeline] = js.native
+  def getChildren(
+    nested: js.UndefOr[scala.Nothing],
+    tweens: js.UndefOr[scala.Nothing],
+    timelines: Boolean,
+    ignoreBeforeTime: Double
+  ): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: js.UndefOr[scala.Nothing], tweens: Boolean): js.Array[Tween | Timeline] = js.native
+  def getChildren(
+    nested: js.UndefOr[scala.Nothing],
+    tweens: Boolean,
+    timelines: js.UndefOr[scala.Nothing],
+    ignoreBeforeTime: Double
+  ): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: js.UndefOr[scala.Nothing], tweens: Boolean, timelines: Boolean): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: js.UndefOr[scala.Nothing], tweens: Boolean, timelines: Boolean, ignoreBeforeTime: Double): js.Array[Tween | Timeline] = js.native
   def getChildren(nested: Boolean): js.Array[Tween | Timeline] = js.native
+  def getChildren(
+    nested: Boolean,
+    tweens: js.UndefOr[scala.Nothing],
+    timelines: js.UndefOr[scala.Nothing],
+    ignoreBeforeTime: Double
+  ): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: Boolean, tweens: js.UndefOr[scala.Nothing], timelines: Boolean): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: Boolean, tweens: js.UndefOr[scala.Nothing], timelines: Boolean, ignoreBeforeTime: Double): js.Array[Tween | Timeline] = js.native
   def getChildren(nested: Boolean, tweens: Boolean): js.Array[Tween | Timeline] = js.native
+  def getChildren(nested: Boolean, tweens: Boolean, timelines: js.UndefOr[scala.Nothing], ignoreBeforeTime: Double): js.Array[Tween | Timeline] = js.native
   def getChildren(nested: Boolean, tweens: Boolean, timelines: Boolean): js.Array[Tween | Timeline] = js.native
   def getChildren(nested: Boolean, tweens: Boolean, timelines: Boolean, ignoreBeforeTime: Double): js.Array[Tween | Timeline] = js.native
   /** Returns the time associated with a particular label. */
@@ -78,6 +177,7 @@ trait TimelineLite extends SimpleTimeline {
   def set(target: js.Object, vars: js.Object, position: js.Any): TimelineLite = js.native
   /** Shifts the startTime of the timeline's children by a certain amount and optionally adjusts labels too. */
   def shiftChildren(amount: Double): TimelineLite = js.native
+  def shiftChildren(amount: Double, adjustLabels: js.UndefOr[scala.Nothing], ignoreBeforeTime: Double): TimelineLite = js.native
   def shiftChildren(amount: Double, adjustLabels: Boolean): TimelineLite = js.native
   def shiftChildren(amount: Double, adjustLabels: Boolean, ignoreBeforeTime: Double): TimelineLite = js.native
   /**
@@ -85,7 +185,212 @@ trait TimelineLite extends SimpleTimeline {
     * creating an evenly-spaced sequence with a surprisingly small amount of code.
     */
   def staggerFrom(targets: js.Any, duration: Double, vars: js.Object): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
   def staggerFrom(targets: js.Any, duration: Double, vars: js.Object, stagger: Double): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
   def staggerFrom(targets: js.Any, duration: Double, vars: js.Object, stagger: Double, position: js.Any): TimelineLite = js.native
   def staggerFrom(
     targets: js.Any,
@@ -93,7 +398,46 @@ trait TimelineLite extends SimpleTimeline {
     vars: js.Object,
     stagger: Double,
     position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
     onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFrom(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteScope: js.Any
   ): TimelineLite = js.native
   def staggerFrom(
     targets: js.Any,
@@ -119,7 +463,234 @@ trait TimelineLite extends SimpleTimeline {
     * small amount of code.
     */
   def staggerFromTo(targets: js.Any, duration: Double, fromVars: js.Object, toVars: js.Object): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: js.UndefOr[scala.Nothing],
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
   def staggerFromTo(targets: js.Any, duration: Double, fromVars: js.Object, toVars: js.Object, stagger: Double): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
   def staggerFromTo(
     targets: js.Any,
     duration: Double,
@@ -135,7 +706,50 @@ trait TimelineLite extends SimpleTimeline {
     toVars: js.Object,
     stagger: Double,
     position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.Any,
     onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerFromTo(
+    targets: js.Any,
+    duration: Double,
+    fromVars: js.Object,
+    toVars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
   ): TimelineLite = js.native
   def staggerFromTo(
     targets: js.Any,
@@ -163,6 +777,72 @@ trait TimelineLite extends SimpleTimeline {
     * small amount of code.
     */
   def staggerTo(targets: js.Any, duration: Double, vars: js.Object, stagger: Double): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.UndefOr[scala.Nothing],
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
   def staggerTo(targets: js.Any, duration: Double, vars: js.Object, stagger: Double, position: js.Any): TimelineLite = js.native
   def staggerTo(
     targets: js.Any,
@@ -170,7 +850,46 @@ trait TimelineLite extends SimpleTimeline {
     vars: js.Object,
     stagger: Double,
     position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_]
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.UndefOr[scala.Nothing],
+    onCompleteAllParams: js.Array[_],
+    onCompleteAllScope: js.Any
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
     onCompleteAll: js.Function1[/* repeated */ js.Any, Unit]
+  ): TimelineLite = js.native
+  def staggerTo(
+    targets: js.Any,
+    duration: Double,
+    vars: js.Object,
+    stagger: Double,
+    position: js.Any,
+    onCompleteAll: js.Function1[/* repeated */ js.Any, Unit],
+    onCompleteAllParams: js.UndefOr[scala.Nothing],
+    onCompleteAllScope: js.Any
   ): TimelineLite = js.native
   def staggerTo(
     targets: js.Any,

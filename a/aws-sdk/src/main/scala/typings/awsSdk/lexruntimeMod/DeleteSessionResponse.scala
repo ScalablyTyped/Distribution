@@ -26,18 +26,38 @@ trait DeleteSessionResponse extends js.Object {
 
 object DeleteSessionResponse {
   @scala.inline
-  def apply(
-    botAlias: BotAlias = null,
-    botName: BotName = null,
-    sessionId: String = null,
-    userId: UserId = null
-  ): DeleteSessionResponse = {
+  def apply(): DeleteSessionResponse = {
     val __obj = js.Dynamic.literal()
-    if (botAlias != null) __obj.updateDynamic("botAlias")(botAlias.asInstanceOf[js.Any])
-    if (botName != null) __obj.updateDynamic("botName")(botName.asInstanceOf[js.Any])
-    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSessionResponse]
   }
+  @scala.inline
+  implicit class DeleteSessionResponseOps[Self <: DeleteSessionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotAlias(value: BotAlias): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBotAlias: Self = this.set("botAlias", js.undefined)
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBotName: Self = this.set("botName", js.undefined)
+    @scala.inline
+    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSessionId: Self = this.set("sessionId", js.undefined)
+    @scala.inline
+    def setUserId(value: UserId): Self = this.set("userId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserId: Self = this.set("userId", js.undefined)
+  }
+  
 }
 

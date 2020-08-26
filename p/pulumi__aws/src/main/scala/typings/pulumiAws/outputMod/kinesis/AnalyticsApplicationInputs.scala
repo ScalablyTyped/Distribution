@@ -49,18 +49,53 @@ object AnalyticsApplicationInputs {
     namePrefix: String,
     schema: AnalyticsApplicationInputsSchema,
     startingPositionConfigurations: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration],
-    streamNames: js.Array[String],
-    kinesisFirehose: AnalyticsApplicationInputsKinesisFirehose = null,
-    kinesisStream: AnalyticsApplicationInputsKinesisStream = null,
-    parallelism: AnalyticsApplicationInputsParallelism = null,
-    processingConfiguration: AnalyticsApplicationInputsProcessingConfiguration = null
+    streamNames: js.Array[String]
   ): AnalyticsApplicationInputs = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], namePrefix = namePrefix.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], startingPositionConfigurations = startingPositionConfigurations.asInstanceOf[js.Any], streamNames = streamNames.asInstanceOf[js.Any])
-    if (kinesisFirehose != null) __obj.updateDynamic("kinesisFirehose")(kinesisFirehose.asInstanceOf[js.Any])
-    if (kinesisStream != null) __obj.updateDynamic("kinesisStream")(kinesisStream.asInstanceOf[js.Any])
-    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
-    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationInputs]
   }
+  @scala.inline
+  implicit class AnalyticsApplicationInputsOps[Self <: AnalyticsApplicationInputs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNamePrefix(value: String): Self = this.set("namePrefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSchema(value: AnalyticsApplicationInputsSchema): Self = this.set("schema", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartingPositionConfigurationsVarargs(value: AnalyticsApplicationInputsStartingPositionConfiguration*): Self = this.set("startingPositionConfigurations", js.Array(value :_*))
+    @scala.inline
+    def setStartingPositionConfigurations(value: js.Array[AnalyticsApplicationInputsStartingPositionConfiguration]): Self = this.set("startingPositionConfigurations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStreamNamesVarargs(value: String*): Self = this.set("streamNames", js.Array(value :_*))
+    @scala.inline
+    def setStreamNames(value: js.Array[String]): Self = this.set("streamNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setKinesisFirehose(value: AnalyticsApplicationInputsKinesisFirehose): Self = this.set("kinesisFirehose", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisFirehose: Self = this.set("kinesisFirehose", js.undefined)
+    @scala.inline
+    def setKinesisStream(value: AnalyticsApplicationInputsKinesisStream): Self = this.set("kinesisStream", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKinesisStream: Self = this.set("kinesisStream", js.undefined)
+    @scala.inline
+    def setParallelism(value: AnalyticsApplicationInputsParallelism): Self = this.set("parallelism", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParallelism: Self = this.set("parallelism", js.undefined)
+    @scala.inline
+    def setProcessingConfiguration(value: AnalyticsApplicationInputsProcessingConfiguration): Self = this.set("processingConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProcessingConfiguration: Self = this.set("processingConfiguration", js.undefined)
+  }
+  
 }
 

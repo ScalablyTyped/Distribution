@@ -4,52 +4,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlyToOptions
   extends AnimationOptions
      with CameraOptions {
-  var curve: js.UndefOr[Double] = js.undefined
-  var maxDuration: js.UndefOr[Double] = js.undefined
-  var minZoom: js.UndefOr[Double] = js.undefined
-  var screenSpeed: js.UndefOr[Double] = js.undefined
-  var speed: js.UndefOr[Double] = js.undefined
+  var curve: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.native
+  var screenSpeed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.native
 }
 
 object FlyToOptions {
   @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    around: LngLatLike = null,
-    bearing: js.UndefOr[Double] = js.undefined,
-    center: LngLatLike = null,
-    curve: js.UndefOr[Double] = js.undefined,
-    duration: js.UndefOr[Double] = js.undefined,
-    easing: /* time */ Double => Double = null,
-    essential: js.UndefOr[Boolean] = js.undefined,
-    maxDuration: js.UndefOr[Double] = js.undefined,
-    minZoom: js.UndefOr[Double] = js.undefined,
-    offset: PointLike = null,
-    pitch: js.UndefOr[Double] = js.undefined,
-    screenSpeed: js.UndefOr[Double] = js.undefined,
-    speed: js.UndefOr[Double] = js.undefined,
-    zoom: js.UndefOr[Double] = js.undefined
-  ): FlyToOptions = {
+  def apply(): FlyToOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.get.asInstanceOf[js.Any])
-    if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
-    if (!js.isUndefined(bearing)) __obj.updateDynamic("bearing")(bearing.get.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(curve)) __obj.updateDynamic("curve")(curve.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration.get.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(js.Any.fromFunction1(easing))
-    if (!js.isUndefined(essential)) __obj.updateDynamic("essential")(essential.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxDuration)) __obj.updateDynamic("maxDuration")(maxDuration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(minZoom)) __obj.updateDynamic("minZoom")(minZoom.get.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(pitch)) __obj.updateDynamic("pitch")(pitch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenSpeed)) __obj.updateDynamic("screenSpeed")(screenSpeed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoom)) __obj.updateDynamic("zoom")(zoom.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyToOptions]
   }
+  @scala.inline
+  implicit class FlyToOptionsOps[Self <: FlyToOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurve(value: Double): Self = this.set("curve", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurve: Self = this.set("curve", js.undefined)
+    @scala.inline
+    def setMaxDuration(value: Double): Self = this.set("maxDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxDuration: Self = this.set("maxDuration", js.undefined)
+    @scala.inline
+    def setMinZoom(value: Double): Self = this.set("minZoom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinZoom: Self = this.set("minZoom", js.undefined)
+    @scala.inline
+    def setScreenSpeed(value: Double): Self = this.set("screenSpeed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenSpeed: Self = this.set("screenSpeed", js.undefined)
+    @scala.inline
+    def setSpeed(value: Double): Self = this.set("speed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpeed: Self = this.set("speed", js.undefined)
+  }
+  
 }
 

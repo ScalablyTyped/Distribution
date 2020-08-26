@@ -40,22 +40,48 @@ trait SchemaSearchResult extends js.Object {
 
 object SchemaSearchResult {
   @scala.inline
-  def apply(
-    clusteredResults: js.Array[SchemaSearchResult] = null,
-    debugInfo: SchemaResultDebugInfo = null,
-    metadata: SchemaMetadata = null,
-    snippet: SchemaSnippet = null,
-    title: String = null,
-    url: String = null
-  ): SchemaSearchResult = {
+  def apply(): SchemaSearchResult = {
     val __obj = js.Dynamic.literal()
-    if (clusteredResults != null) __obj.updateDynamic("clusteredResults")(clusteredResults.asInstanceOf[js.Any])
-    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (snippet != null) __obj.updateDynamic("snippet")(snippet.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSearchResult]
   }
+  @scala.inline
+  implicit class SchemaSearchResultOps[Self <: SchemaSearchResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusteredResultsVarargs(value: SchemaSearchResult*): Self = this.set("clusteredResults", js.Array(value :_*))
+    @scala.inline
+    def setClusteredResults(value: js.Array[SchemaSearchResult]): Self = this.set("clusteredResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusteredResults: Self = this.set("clusteredResults", js.undefined)
+    @scala.inline
+    def setDebugInfo(value: SchemaResultDebugInfo): Self = this.set("debugInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebugInfo: Self = this.set("debugInfo", js.undefined)
+    @scala.inline
+    def setMetadata(value: SchemaMetadata): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setSnippet(value: SchemaSnippet): Self = this.set("snippet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSnippet: Self = this.set("snippet", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

@@ -26,18 +26,40 @@ trait UpgradeStepItem extends js.Object {
 
 object UpgradeStepItem {
   @scala.inline
-  def apply(
-    Issues: Issues = null,
-    ProgressPercent: js.UndefOr[Double] = js.undefined,
-    UpgradeStep: UpgradeStep = null,
-    UpgradeStepStatus: UpgradeStatus = null
-  ): UpgradeStepItem = {
+  def apply(): UpgradeStepItem = {
     val __obj = js.Dynamic.literal()
-    if (Issues != null) __obj.updateDynamic("Issues")(Issues.asInstanceOf[js.Any])
-    if (!js.isUndefined(ProgressPercent)) __obj.updateDynamic("ProgressPercent")(ProgressPercent.get.asInstanceOf[js.Any])
-    if (UpgradeStep != null) __obj.updateDynamic("UpgradeStep")(UpgradeStep.asInstanceOf[js.Any])
-    if (UpgradeStepStatus != null) __obj.updateDynamic("UpgradeStepStatus")(UpgradeStepStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpgradeStepItem]
   }
+  @scala.inline
+  implicit class UpgradeStepItemOps[Self <: UpgradeStepItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIssuesVarargs(value: Issue*): Self = this.set("Issues", js.Array(value :_*))
+    @scala.inline
+    def setIssues(value: Issues): Self = this.set("Issues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIssues: Self = this.set("Issues", js.undefined)
+    @scala.inline
+    def setProgressPercent(value: Double): Self = this.set("ProgressPercent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressPercent: Self = this.set("ProgressPercent", js.undefined)
+    @scala.inline
+    def setUpgradeStep(value: UpgradeStep): Self = this.set("UpgradeStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgradeStep: Self = this.set("UpgradeStep", js.undefined)
+    @scala.inline
+    def setUpgradeStepStatus(value: UpgradeStatus): Self = this.set("UpgradeStepStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpgradeStepStatus: Self = this.set("UpgradeStepStatus", js.undefined)
+  }
+  
 }
 

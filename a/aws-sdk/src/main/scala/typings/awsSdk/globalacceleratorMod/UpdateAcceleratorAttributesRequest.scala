@@ -26,17 +26,36 @@ trait UpdateAcceleratorAttributesRequest extends js.Object {
 
 object UpdateAcceleratorAttributesRequest {
   @scala.inline
-  def apply(
-    AcceleratorArn: GenericString,
-    FlowLogsEnabled: js.UndefOr[GenericBoolean] = js.undefined,
-    FlowLogsS3Bucket: GenericString = null,
-    FlowLogsS3Prefix: GenericString = null
-  ): UpdateAcceleratorAttributesRequest = {
+  def apply(AcceleratorArn: GenericString): UpdateAcceleratorAttributesRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
-    if (!js.isUndefined(FlowLogsEnabled)) __obj.updateDynamic("FlowLogsEnabled")(FlowLogsEnabled.get.asInstanceOf[js.Any])
-    if (FlowLogsS3Bucket != null) __obj.updateDynamic("FlowLogsS3Bucket")(FlowLogsS3Bucket.asInstanceOf[js.Any])
-    if (FlowLogsS3Prefix != null) __obj.updateDynamic("FlowLogsS3Prefix")(FlowLogsS3Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAcceleratorAttributesRequest]
   }
+  @scala.inline
+  implicit class UpdateAcceleratorAttributesRequestOps[Self <: UpdateAcceleratorAttributesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceleratorArn(value: GenericString): Self = this.set("AcceleratorArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFlowLogsEnabled(value: GenericBoolean): Self = this.set("FlowLogsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowLogsEnabled: Self = this.set("FlowLogsEnabled", js.undefined)
+    @scala.inline
+    def setFlowLogsS3Bucket(value: GenericString): Self = this.set("FlowLogsS3Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowLogsS3Bucket: Self = this.set("FlowLogsS3Bucket", js.undefined)
+    @scala.inline
+    def setFlowLogsS3Prefix(value: GenericString): Self = this.set("FlowLogsS3Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFlowLogsS3Prefix: Self = this.set("FlowLogsS3Prefix", js.undefined)
+  }
+  
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   *
   * @template TType Type being stubbed.
   */
-/* Inlined std.Function & {  prototype  :TType} */
+/* Inlined std.Function & {  prototype :TType} */
 @js.native
 trait StubbableType[TType] extends js.Object {
   // Non-standard extensions

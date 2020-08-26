@@ -24,26 +24,235 @@ trait CommandBars extends js.Object {
   def apply(Index: String): CommandBar = js.native
   def apply(Index: Double): CommandBar = js.native
   def Add(): CommandBar = js.native
+  def Add(
+    Name: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: Boolean
+  ): CommandBar = js.native
+  def Add(Name: js.UndefOr[scala.Nothing], Position: js.UndefOr[scala.Nothing], MenuBar: Boolean): CommandBar = js.native
+  def Add(
+    Name: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: Boolean,
+    Temporary: Boolean
+  ): CommandBar = js.native
+  def Add(Name: js.UndefOr[scala.Nothing], Position: MsoBarPosition): CommandBar = js.native
+  def Add(
+    Name: js.UndefOr[scala.Nothing],
+    Position: MsoBarPosition,
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: Boolean
+  ): CommandBar = js.native
+  def Add(Name: js.UndefOr[scala.Nothing], Position: MsoBarPosition, MenuBar: Boolean): CommandBar = js.native
+  def Add(Name: js.UndefOr[scala.Nothing], Position: MsoBarPosition, MenuBar: Boolean, Temporary: Boolean): CommandBar = js.native
   def Add(Name: String): CommandBar = js.native
+  def Add(
+    Name: String,
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: Boolean
+  ): CommandBar = js.native
+  def Add(Name: String, Position: js.UndefOr[scala.Nothing], MenuBar: Boolean): CommandBar = js.native
+  def Add(Name: String, Position: js.UndefOr[scala.Nothing], MenuBar: Boolean, Temporary: Boolean): CommandBar = js.native
   def Add(Name: String, Position: MsoBarPosition): CommandBar = js.native
+  def Add(Name: String, Position: MsoBarPosition, MenuBar: js.UndefOr[scala.Nothing], Temporary: Boolean): CommandBar = js.native
   def Add(Name: String, Position: MsoBarPosition, MenuBar: Boolean): CommandBar = js.native
   def Add(Name: String, Position: MsoBarPosition, MenuBar: Boolean, Temporary: Boolean): CommandBar = js.native
   def AddEx(): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.UndefOr[scala.Nothing], Position: js.UndefOr[scala.Nothing], MenuBar: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.Any,
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.Any,
+    Temporary: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.Any,
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.UndefOr[scala.Nothing], Position: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.UndefOr[scala.Nothing], Position: js.Any, MenuBar: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    MenuBar: js.Any,
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.UndefOr[scala.Nothing], Position: js.Any, MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.UndefOr[scala.Nothing],
+    Position: js.Any,
+    MenuBar: js.Any,
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
   def AddEx(TbidOrName: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any
+  ): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.Any, Position: js.UndefOr[scala.Nothing], MenuBar: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.Any,
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.Any, Position: js.UndefOr[scala.Nothing], MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.UndefOr[scala.Nothing],
+    MenuBar: js.Any,
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
   def AddEx(TbidOrName: js.Any, Position: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.Any,
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
+  def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.UndefOr[scala.Nothing], Temporary: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.Any,
+    MenuBar: js.UndefOr[scala.Nothing],
+    Temporary: js.Any,
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
   def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any): CommandBar = js.native
+  def AddEx(
+    TbidOrName: js.Any,
+    Position: js.Any,
+    MenuBar: js.Any,
+    Temporary: js.UndefOr[scala.Nothing],
+    TbtrProtection: js.Any
+  ): CommandBar = js.native
   def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any, Temporary: js.Any): CommandBar = js.native
   def AddEx(TbidOrName: js.Any, Position: js.Any, MenuBar: js.Any, Temporary: js.Any, TbtrProtection: js.Any): CommandBar = js.native
   def CommitRenderingTransaction(hwnd: Double): Unit = js.native
   def ExecuteMso(idMso: String): Unit = js.native
   def FindControl(): CommandBarControl | Null = js.native
+  def FindControl(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean
+  ): CommandBarControl | Null = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.UndefOr[scala.Nothing], Tag: js.Any): CommandBarControl | Null = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any): CommandBarControl | Null = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControl | Null = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any): CommandBarControl | Null = js.native
+  def FindControl(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
   def FindControl(Type: MsoControlType): CommandBarControl | Null = js.native
+  def FindControl(
+    Type: MsoControlType,
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean
+  ): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: js.UndefOr[scala.Nothing], Tag: js.Any): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
   def FindControl(Type: MsoControlType, Id: js.Any): CommandBarControl | Null = js.native
+  def FindControl(Type: MsoControlType, Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControl | Null = js.native
   def FindControl(Type: MsoControlType, Id: js.Any, Tag: js.Any): CommandBarControl | Null = js.native
   def FindControl(Type: MsoControlType, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControl | Null = js.native
   def FindControls(): CommandBarControls | Null = js.native
+  def FindControls(
+    Type: js.UndefOr[scala.Nothing],
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean
+  ): CommandBarControls | Null = js.native
+  def FindControls(Type: js.UndefOr[scala.Nothing], Id: js.UndefOr[scala.Nothing], Tag: js.Any): CommandBarControls | Null = js.native
+  def FindControls(Type: js.UndefOr[scala.Nothing], Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: js.UndefOr[scala.Nothing], Id: js.Any): CommandBarControls | Null = js.native
+  def FindControls(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControls | Null = js.native
+  def FindControls(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any): CommandBarControls | Null = js.native
+  def FindControls(Type: js.UndefOr[scala.Nothing], Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
   def FindControls(Type: MsoControlType): CommandBarControls | Null = js.native
+  def FindControls(
+    Type: MsoControlType,
+    Id: js.UndefOr[scala.Nothing],
+    Tag: js.UndefOr[scala.Nothing],
+    Visible: Boolean
+  ): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: js.UndefOr[scala.Nothing], Tag: js.Any): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: js.UndefOr[scala.Nothing], Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
   def FindControls(Type: MsoControlType, Id: js.Any): CommandBarControls | Null = js.native
+  def FindControls(Type: MsoControlType, Id: js.Any, Tag: js.UndefOr[scala.Nothing], Visible: Boolean): CommandBarControls | Null = js.native
   def FindControls(Type: MsoControlType, Id: js.Any, Tag: js.Any): CommandBarControls | Null = js.native
   def FindControls(Type: MsoControlType, Id: js.Any, Tag: js.Any, Visible: Boolean): CommandBarControls | Null = js.native
   def GetEnabledMso(idMso: String): Boolean = js.native

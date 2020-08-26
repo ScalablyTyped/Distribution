@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
+@js.native
 trait PlusWebviewWebviewDragOptions extends js.Object {
   /**
     * 滑屏操作回调事件触发步长
@@ -25,7 +26,7 @@ trait PlusWebviewWebviewDragOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var callbackStep: js.UndefOr[Double] = js.undefined
+  var callbackStep: js.UndefOr[Double] = js.native
   /**
     * 设置的手势类型
     * 可取值：
@@ -41,7 +42,7 @@ trait PlusWebviewWebviewDragOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var direction: js.UndefOr[rtl | left | ltr | right] = js.undefined
+  var direction: js.UndefOr[rtl | left | ltr | right] = js.native
   /**
     * 滑动手势模式
     * 可取值：
@@ -54,21 +55,39 @@ trait PlusWebviewWebviewDragOptions extends js.Object {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var moveMode: js.UndefOr[followFinger | silent | bounce] = js.undefined
+  var moveMode: js.UndefOr[followFinger | silent | bounce] = js.native
 }
 
 object PlusWebviewWebviewDragOptions {
   @scala.inline
-  def apply(
-    callbackStep: js.UndefOr[Double] = js.undefined,
-    direction: rtl | left | ltr | right = null,
-    moveMode: followFinger | silent | bounce = null
-  ): PlusWebviewWebviewDragOptions = {
+  def apply(): PlusWebviewWebviewDragOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callbackStep)) __obj.updateDynamic("callbackStep")(callbackStep.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (moveMode != null) __obj.updateDynamic("moveMode")(moveMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewDragOptions]
   }
+  @scala.inline
+  implicit class PlusWebviewWebviewDragOptionsOps[Self <: PlusWebviewWebviewDragOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbackStep(value: Double): Self = this.set("callbackStep", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallbackStep: Self = this.set("callbackStep", js.undefined)
+    @scala.inline
+    def setDirection(value: rtl | left | ltr | right): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setMoveMode(value: followFinger | silent | bounce): Self = this.set("moveMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveMode: Self = this.set("moveMode", js.undefined)
+  }
+  
 }
 

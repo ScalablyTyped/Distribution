@@ -24,9 +24,16 @@ class DatePipe protected () extends PipeTransform {
     * @returns A date string in the desired format.
     */
   def transform(value: js.Any): String | Null = js.native
-  /* CompleteClass */
-  override def transform(value: js.Any, args: js.Any*): js.Any = js.native
+  def transform(
+    value: js.Any,
+    format: js.UndefOr[scala.Nothing],
+    timezone: js.UndefOr[scala.Nothing],
+    locale: String
+  ): String | Null = js.native
+  def transform(value: js.Any, format: js.UndefOr[scala.Nothing], timezone: String): String | Null = js.native
+  def transform(value: js.Any, format: js.UndefOr[scala.Nothing], timezone: String, locale: String): String | Null = js.native
   def transform(value: js.Any, format: String): String | Null = js.native
+  def transform(value: js.Any, format: String, timezone: js.UndefOr[scala.Nothing], locale: String): String | Null = js.native
   def transform(value: js.Any, format: String, timezone: String): String | Null = js.native
   def transform(value: js.Any, format: String, timezone: String, locale: String): String | Null = js.native
 }

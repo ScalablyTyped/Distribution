@@ -30,11 +30,30 @@ trait SchemaEncryptRequest extends js.Object {
 
 object SchemaEncryptRequest {
   @scala.inline
-  def apply(additionalAuthenticatedData: String = null, plaintext: String = null): SchemaEncryptRequest = {
+  def apply(): SchemaEncryptRequest = {
     val __obj = js.Dynamic.literal()
-    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData.asInstanceOf[js.Any])
-    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaEncryptRequest]
   }
+  @scala.inline
+  implicit class SchemaEncryptRequestOps[Self <: SchemaEncryptRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalAuthenticatedData(value: String): Self = this.set("additionalAuthenticatedData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalAuthenticatedData: Self = this.set("additionalAuthenticatedData", js.undefined)
+    @scala.inline
+    def setPlaintext(value: String): Self = this.set("plaintext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlaintext: Self = this.set("plaintext", js.undefined)
+  }
+  
 }
 

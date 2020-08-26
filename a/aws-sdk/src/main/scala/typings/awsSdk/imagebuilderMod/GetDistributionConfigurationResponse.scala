@@ -18,11 +18,30 @@ trait GetDistributionConfigurationResponse extends js.Object {
 
 object GetDistributionConfigurationResponse {
   @scala.inline
-  def apply(distributionConfiguration: DistributionConfiguration = null, requestId: NonEmptyString = null): GetDistributionConfigurationResponse = {
+  def apply(): GetDistributionConfigurationResponse = {
     val __obj = js.Dynamic.literal()
-    if (distributionConfiguration != null) __obj.updateDynamic("distributionConfiguration")(distributionConfiguration.asInstanceOf[js.Any])
-    if (requestId != null) __obj.updateDynamic("requestId")(requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDistributionConfigurationResponse]
   }
+  @scala.inline
+  implicit class GetDistributionConfigurationResponseOps[Self <: GetDistributionConfigurationResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDistributionConfiguration(value: DistributionConfiguration): Self = this.set("distributionConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDistributionConfiguration: Self = this.set("distributionConfiguration", js.undefined)
+    @scala.inline
+    def setRequestId(value: NonEmptyString): Self = this.set("requestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestId: Self = this.set("requestId", js.undefined)
+  }
+  
 }
 

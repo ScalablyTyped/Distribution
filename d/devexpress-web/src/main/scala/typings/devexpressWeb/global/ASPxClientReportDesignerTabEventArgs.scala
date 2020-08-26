@@ -16,10 +16,5 @@ class ASPxClientReportDesignerTabEventArgs protected ()
     * @param tab An object that specifies the report tab. This value is assigned to the ASPxClientReportDesignerTabEventArgs.Tab property.
     */
   def this(tab: typings.devexpressWeb.ASPxDesignerNavigateTab) = this()
-  /**
-    * Specifies the report tab currently being processed.
-    */
-  /* CompleteClass */
-  override var Tab: typings.devexpressWeb.ASPxDesignerNavigateTab = js.native
 }
 

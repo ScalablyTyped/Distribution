@@ -31,6 +31,13 @@ object winPackagerMod extends js.Object {
     def sign(file: String): js.Promise[Unit] = js.native
     def sign(file: String, logMessagePrefix: String): js.Promise[Unit] = js.native
     def signAndEditResources(file: String, arch: Arch, outDir: String): js.Promise[Unit] = js.native
+    def signAndEditResources(
+      file: String,
+      arch: Arch,
+      outDir: String,
+      internalName: js.UndefOr[scala.Nothing],
+      requestedExecutionLevel: RequestedExecutionLevel
+    ): js.Promise[Unit] = js.native
     def signAndEditResources(file: String, arch: Arch, outDir: String, internalName: String): js.Promise[Unit] = js.native
     def signAndEditResources(
       file: String,

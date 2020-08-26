@@ -26,18 +26,42 @@ trait UpdateThingGroupsForThingRequest extends js.Object {
 
 object UpdateThingGroupsForThingRequest {
   @scala.inline
-  def apply(
-    overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined,
-    thingGroupsToAdd: ThingGroupList = null,
-    thingGroupsToRemove: ThingGroupList = null,
-    thingName: ThingName = null
-  ): UpdateThingGroupsForThingRequest = {
+  def apply(): UpdateThingGroupsForThingRequest = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overrideDynamicGroups)) __obj.updateDynamic("overrideDynamicGroups")(overrideDynamicGroups.get.asInstanceOf[js.Any])
-    if (thingGroupsToAdd != null) __obj.updateDynamic("thingGroupsToAdd")(thingGroupsToAdd.asInstanceOf[js.Any])
-    if (thingGroupsToRemove != null) __obj.updateDynamic("thingGroupsToRemove")(thingGroupsToRemove.asInstanceOf[js.Any])
-    if (thingName != null) __obj.updateDynamic("thingName")(thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingGroupsForThingRequest]
   }
+  @scala.inline
+  implicit class UpdateThingGroupsForThingRequestOps[Self <: UpdateThingGroupsForThingRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOverrideDynamicGroups(value: OverrideDynamicGroups): Self = this.set("overrideDynamicGroups", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverrideDynamicGroups: Self = this.set("overrideDynamicGroups", js.undefined)
+    @scala.inline
+    def setThingGroupsToAddVarargs(value: ThingGroupName*): Self = this.set("thingGroupsToAdd", js.Array(value :_*))
+    @scala.inline
+    def setThingGroupsToAdd(value: ThingGroupList): Self = this.set("thingGroupsToAdd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupsToAdd: Self = this.set("thingGroupsToAdd", js.undefined)
+    @scala.inline
+    def setThingGroupsToRemoveVarargs(value: ThingGroupName*): Self = this.set("thingGroupsToRemove", js.Array(value :_*))
+    @scala.inline
+    def setThingGroupsToRemove(value: ThingGroupList): Self = this.set("thingGroupsToRemove", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingGroupsToRemove: Self = this.set("thingGroupsToRemove", js.undefined)
+    @scala.inline
+    def setThingName(value: ThingName): Self = this.set("thingName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThingName: Self = this.set("thingName", js.undefined)
+  }
+  
 }
 

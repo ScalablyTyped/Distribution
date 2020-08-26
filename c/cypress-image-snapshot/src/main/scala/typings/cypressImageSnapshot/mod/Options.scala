@@ -15,75 +15,134 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined parent std.Partial<{  blackout  :std.Array<string>,   capture  :'runner' | 'viewport' | 'fullPage',   clip  :{  x  :number,   y  :number,   width  :number,   height  :number},   disableTimersAndAnimations  :boolean,   padding  :number | [number] | [number, number] | [number, number, number] | [number, number, number, number],   scale  :boolean, beforeScreenshot (doc : std.Document): void, afterScreenshot (doc : std.Document): void,   customDiffConfig ? :{ readonly threshold ? :number,  readonly includeAA ? :boolean},   customSnapshotsDir ? :string,   customDiffDir ? :string,   customSnapshotIdentifier ? :(parameters : {  testPath  :string,   currentTestName  :string,   counter  :number,   defaultIdentifier  :string}): string | string,   diffDirection ? :'horizontal' | 'vertical',   noColors ? :boolean,   failureThreshold ? :number,   failureThresholdType ? :'pixel' | 'percent',   updatePassedSnapshot ? :boolean,   blur ? :number,   runInProcess ? :boolean}> */
+/* Inlined parent std.Partial<{  blackout :std.Array<string>,   capture :'runner' | 'viewport' | 'fullPage',   clip :{  x :number,   y :number,   width :number,   height :number},   disableTimersAndAnimations :boolean,   padding :number | [number] | [number, number] | [number, number, number] | [number, number, number, number],   scale :boolean, beforeScreenshot (doc : std.Document): void, afterScreenshot (doc : std.Document): void,   customDiffConfig :{ readonly threshold :number | undefined,  readonly includeAA :boolean | undefined} | undefined,   customSnapshotsDir :string | undefined,   customDiffDir :string | undefined,   customSnapshotIdentifier :(parameters : {  testPath :string,   currentTestName :string,   counter :number,   defaultIdentifier :string}): string | string | undefined,   diffDirection :'horizontal' | 'vertical' | undefined,   noColors :boolean | undefined,   failureThreshold :number | undefined,   failureThresholdType :'pixel' | 'percent' | undefined,   updatePassedSnapshot :boolean | undefined,   blur :number | undefined,   runInProcess :boolean | undefined}> */
+@js.native
 trait Options extends js.Object {
-  var afterScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.undefined
-  var beforeScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.undefined
-  var blackout: js.UndefOr[js.Array[String]] = js.undefined
-  var blur: js.UndefOr[Double] = js.undefined
-  var capture: js.UndefOr[runner | viewport | fullPage] = js.undefined
-  var clip: js.UndefOr[Height] = js.undefined
-  var customDiffConfig: js.UndefOr[IncludeAA] = js.undefined
-  var customDiffDir: js.UndefOr[String] = js.undefined
-  var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Counter, String]) | String] = js.undefined
-  var customSnapshotsDir: js.UndefOr[String] = js.undefined
-  var diffDirection: js.UndefOr[horizontal | vertical] = js.undefined
-  var disableTimersAndAnimations: js.UndefOr[Boolean] = js.undefined
-  var failureThreshold: js.UndefOr[Double] = js.undefined
-  var failureThresholdType: js.UndefOr[pixel | percent] = js.undefined
-  var noColors: js.UndefOr[Boolean] = js.undefined
+  var afterScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.native
+  var beforeScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.native
+  var blackout: js.UndefOr[js.Array[String]] = js.native
+  var blur: js.UndefOr[Double] = js.native
+  var capture: js.UndefOr[runner | viewport | fullPage] = js.native
+  var clip: js.UndefOr[Height] = js.native
+  var customDiffConfig: js.UndefOr[IncludeAA] = js.native
+  var customDiffDir: js.UndefOr[String] = js.native
+  var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Counter, String]) | String] = js.native
+  var customSnapshotsDir: js.UndefOr[String] = js.native
+  var diffDirection: js.UndefOr[horizontal | vertical] = js.native
+  var disableTimersAndAnimations: js.UndefOr[Boolean] = js.native
+  var failureThreshold: js.UndefOr[Double] = js.native
+  var failureThresholdType: js.UndefOr[pixel | percent] = js.native
+  var noColors: js.UndefOr[Boolean] = js.native
   var padding: js.UndefOr[
     Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
-  ] = js.undefined
-  var runInProcess: js.UndefOr[Boolean] = js.undefined
-  var scale: js.UndefOr[Boolean] = js.undefined
-  var updatePassedSnapshot: js.UndefOr[Boolean] = js.undefined
+  ] = js.native
+  var runInProcess: js.UndefOr[Boolean] = js.native
+  var scale: js.UndefOr[Boolean] = js.native
+  var updatePassedSnapshot: js.UndefOr[Boolean] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    afterScreenshot: /* doc */ Document => Unit = null,
-    beforeScreenshot: /* doc */ Document => Unit = null,
-    blackout: js.Array[String] = null,
-    blur: js.UndefOr[Double] = js.undefined,
-    capture: runner | viewport | fullPage = null,
-    clip: Height = null,
-    customDiffConfig: IncludeAA = null,
-    customDiffDir: String = null,
-    customSnapshotIdentifier: (js.Function1[/* parameters */ Counter, String]) | String = null,
-    customSnapshotsDir: String = null,
-    diffDirection: horizontal | vertical = null,
-    disableTimersAndAnimations: js.UndefOr[Boolean] = js.undefined,
-    failureThreshold: js.UndefOr[Double] = js.undefined,
-    failureThresholdType: pixel | percent = null,
-    noColors: js.UndefOr[Boolean] = js.undefined,
-    padding: Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double]) = null,
-    runInProcess: js.UndefOr[Boolean] = js.undefined,
-    scale: js.UndefOr[Boolean] = js.undefined,
-    updatePassedSnapshot: js.UndefOr[Boolean] = js.undefined
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (afterScreenshot != null) __obj.updateDynamic("afterScreenshot")(js.Any.fromFunction1(afterScreenshot))
-    if (beforeScreenshot != null) __obj.updateDynamic("beforeScreenshot")(js.Any.fromFunction1(beforeScreenshot))
-    if (blackout != null) __obj.updateDynamic("blackout")(blackout.asInstanceOf[js.Any])
-    if (!js.isUndefined(blur)) __obj.updateDynamic("blur")(blur.get.asInstanceOf[js.Any])
-    if (capture != null) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (customDiffConfig != null) __obj.updateDynamic("customDiffConfig")(customDiffConfig.asInstanceOf[js.Any])
-    if (customDiffDir != null) __obj.updateDynamic("customDiffDir")(customDiffDir.asInstanceOf[js.Any])
-    if (customSnapshotIdentifier != null) __obj.updateDynamic("customSnapshotIdentifier")(customSnapshotIdentifier.asInstanceOf[js.Any])
-    if (customSnapshotsDir != null) __obj.updateDynamic("customSnapshotsDir")(customSnapshotsDir.asInstanceOf[js.Any])
-    if (diffDirection != null) __obj.updateDynamic("diffDirection")(diffDirection.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTimersAndAnimations)) __obj.updateDynamic("disableTimersAndAnimations")(disableTimersAndAnimations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(failureThreshold)) __obj.updateDynamic("failureThreshold")(failureThreshold.get.asInstanceOf[js.Any])
-    if (failureThresholdType != null) __obj.updateDynamic("failureThresholdType")(failureThresholdType.asInstanceOf[js.Any])
-    if (!js.isUndefined(noColors)) __obj.updateDynamic("noColors")(noColors.get.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(runInProcess)) __obj.updateDynamic("runInProcess")(runInProcess.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(updatePassedSnapshot)) __obj.updateDynamic("updatePassedSnapshot")(updatePassedSnapshot.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfterScreenshot(value: /* doc */ Document => Unit): Self = this.set("afterScreenshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteAfterScreenshot: Self = this.set("afterScreenshot", js.undefined)
+    @scala.inline
+    def setBeforeScreenshot(value: /* doc */ Document => Unit): Self = this.set("beforeScreenshot", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteBeforeScreenshot: Self = this.set("beforeScreenshot", js.undefined)
+    @scala.inline
+    def setBlackoutVarargs(value: String*): Self = this.set("blackout", js.Array(value :_*))
+    @scala.inline
+    def setBlackout(value: js.Array[String]): Self = this.set("blackout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlackout: Self = this.set("blackout", js.undefined)
+    @scala.inline
+    def setBlur(value: Double): Self = this.set("blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlur: Self = this.set("blur", js.undefined)
+    @scala.inline
+    def setCapture(value: runner | viewport | fullPage): Self = this.set("capture", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCapture: Self = this.set("capture", js.undefined)
+    @scala.inline
+    def setClip(value: Height): Self = this.set("clip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClip: Self = this.set("clip", js.undefined)
+    @scala.inline
+    def setCustomDiffConfig(value: IncludeAA): Self = this.set("customDiffConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDiffConfig: Self = this.set("customDiffConfig", js.undefined)
+    @scala.inline
+    def setCustomDiffDir(value: String): Self = this.set("customDiffDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomDiffDir: Self = this.set("customDiffDir", js.undefined)
+    @scala.inline
+    def setCustomSnapshotIdentifierFunction1(value: /* parameters */ Counter => String): Self = this.set("customSnapshotIdentifier", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCustomSnapshotIdentifier(value: (js.Function1[/* parameters */ Counter, String]) | String): Self = this.set("customSnapshotIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSnapshotIdentifier: Self = this.set("customSnapshotIdentifier", js.undefined)
+    @scala.inline
+    def setCustomSnapshotsDir(value: String): Self = this.set("customSnapshotsDir", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomSnapshotsDir: Self = this.set("customSnapshotsDir", js.undefined)
+    @scala.inline
+    def setDiffDirection(value: horizontal | vertical): Self = this.set("diffDirection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiffDirection: Self = this.set("diffDirection", js.undefined)
+    @scala.inline
+    def setDisableTimersAndAnimations(value: Boolean): Self = this.set("disableTimersAndAnimations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableTimersAndAnimations: Self = this.set("disableTimersAndAnimations", js.undefined)
+    @scala.inline
+    def setFailureThreshold(value: Double): Self = this.set("failureThreshold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThreshold: Self = this.set("failureThreshold", js.undefined)
+    @scala.inline
+    def setFailureThresholdType(value: pixel | percent): Self = this.set("failureThresholdType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureThresholdType: Self = this.set("failureThresholdType", js.undefined)
+    @scala.inline
+    def setNoColors(value: Boolean): Self = this.set("noColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoColors: Self = this.set("noColors", js.undefined)
+    @scala.inline
+    def setPaddingVarargs(value: Double*): Self = this.set("padding", js.Array(value :_*))
+    @scala.inline
+    def setPadding(
+      value: Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
+    ): Self = this.set("padding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePadding: Self = this.set("padding", js.undefined)
+    @scala.inline
+    def setRunInProcess(value: Boolean): Self = this.set("runInProcess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunInProcess: Self = this.set("runInProcess", js.undefined)
+    @scala.inline
+    def setScale(value: Boolean): Self = this.set("scale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScale: Self = this.set("scale", js.undefined)
+    @scala.inline
+    def setUpdatePassedSnapshot(value: Boolean): Self = this.set("updatePassedSnapshot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdatePassedSnapshot: Self = this.set("updatePassedSnapshot", js.undefined)
+  }
+  
 }
 

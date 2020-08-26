@@ -12,7 +12,7 @@ A stupidly simple key/value storage using files to persist some data
 | Keywords           | json cache, simple cache, file cache, key par, key value, cache |
 | # releases         | 6 |
 | # dependents       | 54 |
-| # downloads        | 314168960 |
+| # downloads        | 322319918 |
 | # stars            | 6 |
 
 ## Links

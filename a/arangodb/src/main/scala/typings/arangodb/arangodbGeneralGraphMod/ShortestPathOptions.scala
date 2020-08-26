@@ -5,33 +5,64 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ShortestPathOptions extends js.Object {
-  var defaultWeight: js.UndefOr[Double] = js.undefined
-  var direction: js.UndefOr[EdgeDirection] = js.undefined
-  var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
-  var endVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
-  var startVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.undefined
-  var weight: js.UndefOr[String] = js.undefined
+  var defaultWeight: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[EdgeDirection] = js.native
+  var edgeCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+  var endVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+  var startVertexCollectionRestriction: js.UndefOr[js.Array[String] | String] = js.native
+  var weight: js.UndefOr[String] = js.native
 }
 
 object ShortestPathOptions {
   @scala.inline
-  def apply(
-    defaultWeight: js.UndefOr[Double] = js.undefined,
-    direction: EdgeDirection = null,
-    edgeCollectionRestriction: js.Array[String] | String = null,
-    endVertexCollectionRestriction: js.Array[String] | String = null,
-    startVertexCollectionRestriction: js.Array[String] | String = null,
-    weight: String = null
-  ): ShortestPathOptions = {
+  def apply(): ShortestPathOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(defaultWeight)) __obj.updateDynamic("defaultWeight")(defaultWeight.get.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (edgeCollectionRestriction != null) __obj.updateDynamic("edgeCollectionRestriction")(edgeCollectionRestriction.asInstanceOf[js.Any])
-    if (endVertexCollectionRestriction != null) __obj.updateDynamic("endVertexCollectionRestriction")(endVertexCollectionRestriction.asInstanceOf[js.Any])
-    if (startVertexCollectionRestriction != null) __obj.updateDynamic("startVertexCollectionRestriction")(startVertexCollectionRestriction.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShortestPathOptions]
   }
+  @scala.inline
+  implicit class ShortestPathOptionsOps[Self <: ShortestPathOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDefaultWeight(value: Double): Self = this.set("defaultWeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultWeight: Self = this.set("defaultWeight", js.undefined)
+    @scala.inline
+    def setDirection(value: EdgeDirection): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setEdgeCollectionRestrictionVarargs(value: String*): Self = this.set("edgeCollectionRestriction", js.Array(value :_*))
+    @scala.inline
+    def setEdgeCollectionRestriction(value: js.Array[String] | String): Self = this.set("edgeCollectionRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEdgeCollectionRestriction: Self = this.set("edgeCollectionRestriction", js.undefined)
+    @scala.inline
+    def setEndVertexCollectionRestrictionVarargs(value: String*): Self = this.set("endVertexCollectionRestriction", js.Array(value :_*))
+    @scala.inline
+    def setEndVertexCollectionRestriction(value: js.Array[String] | String): Self = this.set("endVertexCollectionRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndVertexCollectionRestriction: Self = this.set("endVertexCollectionRestriction", js.undefined)
+    @scala.inline
+    def setStartVertexCollectionRestrictionVarargs(value: String*): Self = this.set("startVertexCollectionRestriction", js.Array(value :_*))
+    @scala.inline
+    def setStartVertexCollectionRestriction(value: js.Array[String] | String): Self = this.set("startVertexCollectionRestriction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartVertexCollectionRestriction: Self = this.set("startVertexCollectionRestriction", js.undefined)
+    @scala.inline
+    def setWeight(value: String): Self = this.set("weight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWeight: Self = this.set("weight", js.undefined)
+  }
+  
 }
 

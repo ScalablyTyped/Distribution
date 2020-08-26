@@ -24,6 +24,14 @@ object repoInfoMod extends js.Object {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
+      persistenceKey: js.UndefOr[scala.Nothing],
+      includeNamespaceInQueryParams: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
       persistenceKey: String,
       includeNamespaceInQueryParams: Boolean
     ) = this()

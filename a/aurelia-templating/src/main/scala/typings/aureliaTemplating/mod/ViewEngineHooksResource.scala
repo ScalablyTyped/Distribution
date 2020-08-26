@@ -8,12 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class ViewEngineHooksResource () extends js.Object {
   def initialize(): js.Any = js.native
+  def initialize(container: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
   def initialize(container: js.Any): js.Any = js.native
   def initialize(container: js.Any, target: js.Any): js.Any = js.native
   def load(): js.Any = js.native
+  def load(container: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
   def load(container: js.Any): js.Any = js.native
   def load(container: js.Any, target: js.Any): js.Any = js.native
   def register(): js.Any = js.native
+  def register(registry: js.UndefOr[scala.Nothing], name: js.Any): js.Any = js.native
   def register(registry: js.Any): js.Any = js.native
   def register(registry: js.Any, name: js.Any): js.Any = js.native
 }

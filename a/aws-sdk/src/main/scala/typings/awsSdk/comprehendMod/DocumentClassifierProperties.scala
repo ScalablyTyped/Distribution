@@ -70,40 +70,82 @@ trait DocumentClassifierProperties extends js.Object {
 
 object DocumentClassifierProperties {
   @scala.inline
-  def apply(
-    ClassifierMetadata: ClassifierMetadata = null,
-    DataAccessRoleArn: IamRoleArn = null,
-    DocumentClassifierArn: DocumentClassifierArn = null,
-    EndTime: Timestamp = null,
-    InputDataConfig: DocumentClassifierInputDataConfig = null,
-    LanguageCode: LanguageCode = null,
-    Message: AnyLengthString = null,
-    Mode: DocumentClassifierMode = null,
-    OutputDataConfig: DocumentClassifierOutputDataConfig = null,
-    Status: ModelStatus = null,
-    SubmitTime: Timestamp = null,
-    TrainingEndTime: Timestamp = null,
-    TrainingStartTime: Timestamp = null,
-    VolumeKmsKeyId: KmsKeyId = null,
-    VpcConfig: VpcConfig = null
-  ): DocumentClassifierProperties = {
+  def apply(): DocumentClassifierProperties = {
     val __obj = js.Dynamic.literal()
-    if (ClassifierMetadata != null) __obj.updateDynamic("ClassifierMetadata")(ClassifierMetadata.asInstanceOf[js.Any])
-    if (DataAccessRoleArn != null) __obj.updateDynamic("DataAccessRoleArn")(DataAccessRoleArn.asInstanceOf[js.Any])
-    if (DocumentClassifierArn != null) __obj.updateDynamic("DocumentClassifierArn")(DocumentClassifierArn.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (InputDataConfig != null) __obj.updateDynamic("InputDataConfig")(InputDataConfig.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (Message != null) __obj.updateDynamic("Message")(Message.asInstanceOf[js.Any])
-    if (Mode != null) __obj.updateDynamic("Mode")(Mode.asInstanceOf[js.Any])
-    if (OutputDataConfig != null) __obj.updateDynamic("OutputDataConfig")(OutputDataConfig.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (SubmitTime != null) __obj.updateDynamic("SubmitTime")(SubmitTime.asInstanceOf[js.Any])
-    if (TrainingEndTime != null) __obj.updateDynamic("TrainingEndTime")(TrainingEndTime.asInstanceOf[js.Any])
-    if (TrainingStartTime != null) __obj.updateDynamic("TrainingStartTime")(TrainingStartTime.asInstanceOf[js.Any])
-    if (VolumeKmsKeyId != null) __obj.updateDynamic("VolumeKmsKeyId")(VolumeKmsKeyId.asInstanceOf[js.Any])
-    if (VpcConfig != null) __obj.updateDynamic("VpcConfig")(VpcConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentClassifierProperties]
   }
+  @scala.inline
+  implicit class DocumentClassifierPropertiesOps[Self <: DocumentClassifierProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassifierMetadata(value: ClassifierMetadata): Self = this.set("ClassifierMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassifierMetadata: Self = this.set("ClassifierMetadata", js.undefined)
+    @scala.inline
+    def setDataAccessRoleArn(value: IamRoleArn): Self = this.set("DataAccessRoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataAccessRoleArn: Self = this.set("DataAccessRoleArn", js.undefined)
+    @scala.inline
+    def setDocumentClassifierArn(value: DocumentClassifierArn): Self = this.set("DocumentClassifierArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocumentClassifierArn: Self = this.set("DocumentClassifierArn", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setInputDataConfig(value: DocumentClassifierInputDataConfig): Self = this.set("InputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputDataConfig: Self = this.set("InputDataConfig", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setMessage(value: AnyLengthString): Self = this.set("Message", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessage: Self = this.set("Message", js.undefined)
+    @scala.inline
+    def setMode(value: DocumentClassifierMode): Self = this.set("Mode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMode: Self = this.set("Mode", js.undefined)
+    @scala.inline
+    def setOutputDataConfig(value: DocumentClassifierOutputDataConfig): Self = this.set("OutputDataConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputDataConfig: Self = this.set("OutputDataConfig", js.undefined)
+    @scala.inline
+    def setStatus(value: ModelStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setSubmitTime(value: Timestamp): Self = this.set("SubmitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubmitTime: Self = this.set("SubmitTime", js.undefined)
+    @scala.inline
+    def setTrainingEndTime(value: Timestamp): Self = this.set("TrainingEndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingEndTime: Self = this.set("TrainingEndTime", js.undefined)
+    @scala.inline
+    def setTrainingStartTime(value: Timestamp): Self = this.set("TrainingStartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTrainingStartTime: Self = this.set("TrainingStartTime", js.undefined)
+    @scala.inline
+    def setVolumeKmsKeyId(value: KmsKeyId): Self = this.set("VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVolumeKmsKeyId: Self = this.set("VolumeKmsKeyId", js.undefined)
+    @scala.inline
+    def setVpcConfig(value: VpcConfig): Self = this.set("VpcConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcConfig: Self = this.set("VpcConfig", js.undefined)
+  }
+  
 }
 

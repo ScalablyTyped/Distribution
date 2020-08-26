@@ -11,6 +11,7 @@ class Rejection protected ()
   extends typings.uirouterCore.transitionMod.Rejection {
   def this(`type`: Double) = this()
   def this(`type`: Double, message: String) = this()
+  def this(`type`: Double, message: js.UndefOr[scala.Nothing], detail: js.Any) = this()
   def this(`type`: Double, message: String, detail: js.Any) = this()
 }
 
@@ -50,6 +51,7 @@ object Rejection extends js.Object {
   def redirected(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
   /** Returns a Rejection due to transition superseded */
   def superseded(): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
+  def superseded(detail: js.UndefOr[scala.Nothing], options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
   def superseded(detail: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
   def superseded(detail: js.Any, options: js.Any): typings.uirouterCore.rejectFactoryMod.Rejection = js.native
 }

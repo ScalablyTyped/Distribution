@@ -21,10 +21,28 @@ trait SchemaSourceInstanceParams extends js.Object {
 
 object SchemaSourceInstanceParams {
   @scala.inline
-  def apply(diskConfigs: js.Array[SchemaDiskInstantiationConfig] = null): SchemaSourceInstanceParams = {
+  def apply(): SchemaSourceInstanceParams = {
     val __obj = js.Dynamic.literal()
-    if (diskConfigs != null) __obj.updateDynamic("diskConfigs")(diskConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSourceInstanceParams]
   }
+  @scala.inline
+  implicit class SchemaSourceInstanceParamsOps[Self <: SchemaSourceInstanceParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDiskConfigsVarargs(value: SchemaDiskInstantiationConfig*): Self = this.set("diskConfigs", js.Array(value :_*))
+    @scala.inline
+    def setDiskConfigs(value: js.Array[SchemaDiskInstantiationConfig]): Self = this.set("diskConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiskConfigs: Self = this.set("diskConfigs", js.undefined)
+  }
+  
 }
 

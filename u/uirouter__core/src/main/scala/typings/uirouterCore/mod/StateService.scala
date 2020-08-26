@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StateService protected ()
   extends typings.uirouterCore.stateMod.StateService {
-  /** @internalapi */
-  def this(/** @hidden */ router: typings.uirouterCore.routerMod.UIRouter) = this()
+  /** @internal */
+  def this(/** @internal */ router: typings.uirouterCore.routerMod.UIRouter) = this()
 }
 

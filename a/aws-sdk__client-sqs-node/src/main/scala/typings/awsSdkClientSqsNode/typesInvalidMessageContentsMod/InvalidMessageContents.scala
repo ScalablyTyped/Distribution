@@ -7,11 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InvalidMessageContents
   extends ServiceException[InvalidMessageContentsDetails]
      with SendMessageExceptionsUnion {
   @JSName("name")
-  var name_InvalidMessageContents: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents
+  var name_InvalidMessageContents: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents = js.native
 }
 
 object InvalidMessageContents {
@@ -20,12 +21,25 @@ object InvalidMessageContents {
     $metadata: ResponseMetadata,
     details: InvalidMessageContentsDetails,
     message: String,
-    name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents,
-    stack: String = null
+    name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents
   ): InvalidMessageContents = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidMessageContents]
   }
+  @scala.inline
+  implicit class InvalidMessageContentsOps[Self <: InvalidMessageContents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidMessageContents): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

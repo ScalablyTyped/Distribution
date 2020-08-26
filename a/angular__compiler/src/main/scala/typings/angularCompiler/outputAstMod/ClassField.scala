@@ -9,10 +9,26 @@ import scala.scalajs.js.annotation._
 class ClassField protected () extends AbstractClassPart {
   def this(name: String) = this()
   def this(name: String, `type`: Type) = this()
+  def this(name: String, `type`: js.UndefOr[scala.Nothing], modifiers: js.Array[StmtModifier]) = this()
   def this(name: String, `type`: Null, modifiers: js.Array[StmtModifier]) = this()
   def this(name: String, `type`: Type, modifiers: js.Array[StmtModifier]) = this()
+  def this(
+    name: String,
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    initializer: Expression
+  ) = this()
+  def this(
+    name: String,
+    `type`: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[StmtModifier],
+    initializer: Expression
+  ) = this()
+  def this(name: String, `type`: js.UndefOr[scala.Nothing], modifiers: Null, initializer: Expression) = this()
+  def this(name: String, `type`: Null, modifiers: js.UndefOr[scala.Nothing], initializer: Expression) = this()
   def this(name: String, `type`: Null, modifiers: js.Array[StmtModifier], initializer: Expression) = this()
   def this(name: String, `type`: Null, modifiers: Null, initializer: Expression) = this()
+  def this(name: String, `type`: Type, modifiers: js.UndefOr[scala.Nothing], initializer: Expression) = this()
   def this(name: String, `type`: Type, modifiers: js.Array[StmtModifier], initializer: Expression) = this()
   def this(name: String, `type`: Type, modifiers: Null, initializer: Expression) = this()
   var initializer: js.UndefOr[Expression] = js.native

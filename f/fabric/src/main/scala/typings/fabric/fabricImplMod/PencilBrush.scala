@@ -13,6 +13,7 @@ class PencilBrush () extends BaseBrush {
     * @param points Array of points
     */
   def convertPointsToSVGPath(points: js.Array[X]): js.Array[String] = js.native
+  def convertPointsToSVGPath(points: js.Array[X], minX: js.UndefOr[scala.Nothing], minY: Double): js.Array[String] = js.native
   def convertPointsToSVGPath(points: js.Array[X], minX: Double): js.Array[String] = js.native
   def convertPointsToSVGPath(points: js.Array[X], minX: Double, minY: Double): js.Array[String] = js.native
   /**

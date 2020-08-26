@@ -52,8 +52,10 @@ object quicksight extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.quicksightGroupMod.Group = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.quicksightGroupMod.Group = js.native
     def get(name: String, id: Input[ID], state: GroupState): typings.pulumiAws.quicksightGroupMod.Group = js.native
     def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): typings.pulumiAws.quicksightGroupMod.Group = js.native
     /**
@@ -73,8 +75,10 @@ object quicksight extends js.Object {
       * @param name The _unique_ name of the resulting resource.
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
+      * @param opts Optional settings to control the behavior of the CustomResource.
       */
     def get(name: String, id: Input[ID]): typings.pulumiAws.quicksightUserMod.User = js.native
+    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.quicksightUserMod.User = js.native
     def get(name: String, id: Input[ID], state: UserState): typings.pulumiAws.quicksightUserMod.User = js.native
     def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): typings.pulumiAws.quicksightUserMod.User = js.native
     /**

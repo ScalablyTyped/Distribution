@@ -96,42 +96,86 @@ trait SchemaAccountUserProfile extends js.Object {
 
 object SchemaAccountUserProfile {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    advertiserFilter: SchemaObjectFilter = null,
-    campaignFilter: SchemaObjectFilter = null,
-    comments: String = null,
-    email: String = null,
-    id: String = null,
-    kind: String = null,
-    locale: String = null,
-    name: String = null,
-    siteFilter: SchemaObjectFilter = null,
-    subaccountId: String = null,
-    traffickerType: String = null,
-    userAccessType: String = null,
-    userRoleFilter: SchemaObjectFilter = null,
-    userRoleId: String = null
-  ): SchemaAccountUserProfile = {
+  def apply(): SchemaAccountUserProfile = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.get.asInstanceOf[js.Any])
-    if (advertiserFilter != null) __obj.updateDynamic("advertiserFilter")(advertiserFilter.asInstanceOf[js.Any])
-    if (campaignFilter != null) __obj.updateDynamic("campaignFilter")(campaignFilter.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (siteFilter != null) __obj.updateDynamic("siteFilter")(siteFilter.asInstanceOf[js.Any])
-    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId.asInstanceOf[js.Any])
-    if (traffickerType != null) __obj.updateDynamic("traffickerType")(traffickerType.asInstanceOf[js.Any])
-    if (userAccessType != null) __obj.updateDynamic("userAccessType")(userAccessType.asInstanceOf[js.Any])
-    if (userRoleFilter != null) __obj.updateDynamic("userRoleFilter")(userRoleFilter.asInstanceOf[js.Any])
-    if (userRoleId != null) __obj.updateDynamic("userRoleId")(userRoleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAccountUserProfile]
   }
+  @scala.inline
+  implicit class SchemaAccountUserProfileOps[Self <: SchemaAccountUserProfile] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setActive(value: Boolean): Self = this.set("active", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActive: Self = this.set("active", js.undefined)
+    @scala.inline
+    def setAdvertiserFilter(value: SchemaObjectFilter): Self = this.set("advertiserFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdvertiserFilter: Self = this.set("advertiserFilter", js.undefined)
+    @scala.inline
+    def setCampaignFilter(value: SchemaObjectFilter): Self = this.set("campaignFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCampaignFilter: Self = this.set("campaignFilter", js.undefined)
+    @scala.inline
+    def setComments(value: String): Self = this.set("comments", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComments: Self = this.set("comments", js.undefined)
+    @scala.inline
+    def setEmail(value: String): Self = this.set("email", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEmail: Self = this.set("email", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setLocale(value: String): Self = this.set("locale", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocale: Self = this.set("locale", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSiteFilter(value: SchemaObjectFilter): Self = this.set("siteFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSiteFilter: Self = this.set("siteFilter", js.undefined)
+    @scala.inline
+    def setSubaccountId(value: String): Self = this.set("subaccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubaccountId: Self = this.set("subaccountId", js.undefined)
+    @scala.inline
+    def setTraffickerType(value: String): Self = this.set("traffickerType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTraffickerType: Self = this.set("traffickerType", js.undefined)
+    @scala.inline
+    def setUserAccessType(value: String): Self = this.set("userAccessType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAccessType: Self = this.set("userAccessType", js.undefined)
+    @scala.inline
+    def setUserRoleFilter(value: SchemaObjectFilter): Self = this.set("userRoleFilter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserRoleFilter: Self = this.set("userRoleFilter", js.undefined)
+    @scala.inline
+    def setUserRoleId(value: String): Self = this.set("userRoleId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserRoleId: Self = this.set("userRoleId", js.undefined)
+  }
+  
 }
 

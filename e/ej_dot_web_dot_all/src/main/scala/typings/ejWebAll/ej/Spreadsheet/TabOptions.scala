@@ -5,35 +5,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TabOptions extends js.Object {
   /** Pass the align type
     */
-  var alignType: js.UndefOr[HTMLElement] = js.undefined
+  var alignType: js.UndefOr[HTMLElement] = js.native
   /** Pass the content object to be displayed in ribbon tab
     */
-  var contents: js.UndefOr[js.Any] = js.undefined
+  var contents: js.UndefOr[js.Any] = js.native
   /** Pass the defaults object to be displayed in ribbon tab
     */
-  var defaults: js.UndefOr[js.Any] = js.undefined
+  var defaults: js.UndefOr[js.Any] = js.native
   /** Pass the text to displayed in ribbon tab
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
 }
 
 object TabOptions {
   @scala.inline
-  def apply(
-    alignType: HTMLElement = null,
-    contents: js.Any = null,
-    defaults: js.Any = null,
-    text: String = null
-  ): TabOptions = {
+  def apply(): TabOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignType != null) __obj.updateDynamic("alignType")(alignType.asInstanceOf[js.Any])
-    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabOptions]
   }
+  @scala.inline
+  implicit class TabOptionsOps[Self <: TabOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlignType(value: HTMLElement): Self = this.set("alignType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlignType: Self = this.set("alignType", js.undefined)
+    @scala.inline
+    def setContents(value: js.Any): Self = this.set("contents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContents: Self = this.set("contents", js.undefined)
+    @scala.inline
+    def setDefaults(value: js.Any): Self = this.set("defaults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaults: Self = this.set("defaults", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+  }
+  
 }
 

@@ -12,7 +12,7 @@ Typings are for version 1.7
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 32 |
-| # downloads        | 37873 |
+| # downloads        | 36562 |
 | # stars            | 5 |
 
 ## Links

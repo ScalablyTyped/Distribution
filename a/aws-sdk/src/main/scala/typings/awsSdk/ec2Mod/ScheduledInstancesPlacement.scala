@@ -18,11 +18,30 @@ trait ScheduledInstancesPlacement extends js.Object {
 
 object ScheduledInstancesPlacement {
   @scala.inline
-  def apply(AvailabilityZone: String = null, GroupName: PlacementGroupName = null): ScheduledInstancesPlacement = {
+  def apply(): ScheduledInstancesPlacement = {
     val __obj = js.Dynamic.literal()
-    if (AvailabilityZone != null) __obj.updateDynamic("AvailabilityZone")(AvailabilityZone.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduledInstancesPlacement]
   }
+  @scala.inline
+  implicit class ScheduledInstancesPlacementOps[Self <: ScheduledInstancesPlacement] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: String): Self = this.set("AvailabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("AvailabilityZone", js.undefined)
+    @scala.inline
+    def setGroupName(value: PlacementGroupName): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+  }
+  
 }
 

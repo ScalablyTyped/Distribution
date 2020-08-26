@@ -43,26 +43,54 @@ trait LifecycleHookState extends js.Object {
 
 object LifecycleHookState {
   @scala.inline
-  def apply(
-    autoscalingGroupName: Input[String] = null,
-    defaultResult: Input[String] = null,
-    heartbeatTimeout: Input[Double] = null,
-    lifecycleTransition: Input[String] = null,
-    name: Input[String] = null,
-    notificationMetadata: Input[String] = null,
-    notificationTargetArn: Input[String] = null,
-    roleArn: Input[String] = null
-  ): LifecycleHookState = {
+  def apply(): LifecycleHookState = {
     val __obj = js.Dynamic.literal()
-    if (autoscalingGroupName != null) __obj.updateDynamic("autoscalingGroupName")(autoscalingGroupName.asInstanceOf[js.Any])
-    if (defaultResult != null) __obj.updateDynamic("defaultResult")(defaultResult.asInstanceOf[js.Any])
-    if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
-    if (lifecycleTransition != null) __obj.updateDynamic("lifecycleTransition")(lifecycleTransition.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (notificationMetadata != null) __obj.updateDynamic("notificationMetadata")(notificationMetadata.asInstanceOf[js.Any])
-    if (notificationTargetArn != null) __obj.updateDynamic("notificationTargetArn")(notificationTargetArn.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleHookState]
   }
+  @scala.inline
+  implicit class LifecycleHookStateOps[Self <: LifecycleHookState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoscalingGroupName(value: Input[String]): Self = this.set("autoscalingGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoscalingGroupName: Self = this.set("autoscalingGroupName", js.undefined)
+    @scala.inline
+    def setDefaultResult(value: Input[String]): Self = this.set("defaultResult", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultResult: Self = this.set("defaultResult", js.undefined)
+    @scala.inline
+    def setHeartbeatTimeout(value: Input[Double]): Self = this.set("heartbeatTimeout", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeartbeatTimeout: Self = this.set("heartbeatTimeout", js.undefined)
+    @scala.inline
+    def setLifecycleTransition(value: Input[String]): Self = this.set("lifecycleTransition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLifecycleTransition: Self = this.set("lifecycleTransition", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNotificationMetadata(value: Input[String]): Self = this.set("notificationMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationMetadata: Self = this.set("notificationMetadata", js.undefined)
+    @scala.inline
+    def setNotificationTargetArn(value: Input[String]): Self = this.set("notificationTargetArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotificationTargetArn: Self = this.set("notificationTargetArn", js.undefined)
+    @scala.inline
+    def setRoleArn(value: Input[String]): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

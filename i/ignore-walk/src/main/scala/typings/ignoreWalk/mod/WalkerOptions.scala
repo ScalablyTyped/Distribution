@@ -4,30 +4,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WalkerOptions extends js.Object {
-  var follow: js.UndefOr[Boolean] = js.undefined
-  var ignoreFiles: js.UndefOr[js.Array[String]] = js.undefined
-  var includeEmpty: js.UndefOr[Boolean] = js.undefined
-  var parent: js.UndefOr[Walker | WalkerSync | Null] = js.undefined
-  var path: js.UndefOr[String] = js.undefined
+  var follow: js.UndefOr[Boolean] = js.native
+  var ignoreFiles: js.UndefOr[js.Array[String]] = js.native
+  var includeEmpty: js.UndefOr[Boolean] = js.native
+  var parent: js.UndefOr[Walker | WalkerSync | Null] = js.native
+  var path: js.UndefOr[String] = js.native
 }
 
 object WalkerOptions {
   @scala.inline
-  def apply(
-    follow: js.UndefOr[Boolean] = js.undefined,
-    ignoreFiles: js.Array[String] = null,
-    includeEmpty: js.UndefOr[Boolean] = js.undefined,
-    parent: js.UndefOr[Null | Walker | WalkerSync] = js.undefined,
-    path: String = null
-  ): WalkerOptions = {
+  def apply(): WalkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (ignoreFiles != null) __obj.updateDynamic("ignoreFiles")(ignoreFiles.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeEmpty)) __obj.updateDynamic("includeEmpty")(includeEmpty.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parent)) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
     __obj.asInstanceOf[WalkerOptions]
   }
+  @scala.inline
+  implicit class WalkerOptionsOps[Self <: WalkerOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollow: Self = this.set("follow", js.undefined)
+    @scala.inline
+    def setIgnoreFilesVarargs(value: String*): Self = this.set("ignoreFiles", js.Array(value :_*))
+    @scala.inline
+    def setIgnoreFiles(value: js.Array[String]): Self = this.set("ignoreFiles", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreFiles: Self = this.set("ignoreFiles", js.undefined)
+    @scala.inline
+    def setIncludeEmpty(value: Boolean): Self = this.set("includeEmpty", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeEmpty: Self = this.set("includeEmpty", js.undefined)
+    @scala.inline
+    def setParent(value: Walker | WalkerSync): Self = this.set("parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParent: Self = this.set("parent", js.undefined)
+    @scala.inline
+    def setParentNull: Self = this.set("parent", null)
+    @scala.inline
+    def setPath(value: String): Self = this.set("path", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePath: Self = this.set("path", js.undefined)
+  }
+  
 }
 

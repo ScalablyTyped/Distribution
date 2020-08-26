@@ -43,6 +43,7 @@ class datasuggest ()
   def setValue(value: String): Unit = js.native
   def setValue(value: Double): Unit = js.native
   def show(node: HTMLElement): Unit = js.native
+  def show(node: HTMLElement, position: js.UndefOr[scala.Nothing], point: String): Unit = js.native
   def show(node: HTMLElement, position: js.Any): Unit = js.native
   def show(node: HTMLElement, position: js.Any, point: String): Unit = js.native
   def unblockEvent(): Unit = js.native

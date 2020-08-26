@@ -24,6 +24,8 @@ trait OnReuse extends js.Object {
   @JSName("$routerOnReuse")
   def $routerOnReuse(): js.Any = js.native
   @JSName("$routerOnReuse")
+  def $routerOnReuse(next: js.UndefOr[scala.Nothing], prev: ComponentInstruction): js.Any = js.native
+  @JSName("$routerOnReuse")
   def $routerOnReuse(next: ComponentInstruction): js.Any = js.native
   @JSName("$routerOnReuse")
   def $routerOnReuse(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native

@@ -21,11 +21,30 @@ trait SchemaGoogleAppsScriptTypeWebAppEntryPoint extends js.Object {
 
 object SchemaGoogleAppsScriptTypeWebAppEntryPoint {
   @scala.inline
-  def apply(entryPointConfig: SchemaGoogleAppsScriptTypeWebAppConfig = null, url: String = null): SchemaGoogleAppsScriptTypeWebAppEntryPoint = {
+  def apply(): SchemaGoogleAppsScriptTypeWebAppEntryPoint = {
     val __obj = js.Dynamic.literal()
-    if (entryPointConfig != null) __obj.updateDynamic("entryPointConfig")(entryPointConfig.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeWebAppEntryPoint]
   }
+  @scala.inline
+  implicit class SchemaGoogleAppsScriptTypeWebAppEntryPointOps[Self <: SchemaGoogleAppsScriptTypeWebAppEntryPoint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEntryPointConfig(value: SchemaGoogleAppsScriptTypeWebAppConfig): Self = this.set("entryPointConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEntryPointConfig: Self = this.set("entryPointConfig", js.undefined)
+    @scala.inline
+    def setUrl(value: String): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

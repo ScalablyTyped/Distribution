@@ -15,6 +15,7 @@ trait I18NextXhrBackend extends BackendModule[BackendOptions] {
   var type_I18NextXhrBackend: backend = js.native
   def create(languages: String, namespace: String, key: String, fallbackValue: String): Unit = js.native
   def init(): Unit = js.native
+  def init(services: js.UndefOr[scala.Nothing], options: BackendOptions): Unit = js.native
   def init(services: js.Any): Unit = js.native
   def init(services: js.Any, options: BackendOptions): Unit = js.native
   def loadUrl(url: String, callback: ReadCallback): Unit = js.native

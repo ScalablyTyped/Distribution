@@ -4,13 +4,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Parameter extends AST {
-  var dotDotDotToken: ASTSpan
-  var equalsValueClause: EqualsValueClause
-  var identifier: Identifier
-  var modifiers: js.Array[PullElementFlags]
-  var questionToken: ASTSpan
-  var typeAnnotation: TypeAnnotation
+  var dotDotDotToken: ASTSpan = js.native
+  var equalsValueClause: EqualsValueClause = js.native
+  var identifier: Identifier = js.native
+  var modifiers: js.Array[PullElementFlags] = js.native
+  var questionToken: ASTSpan = js.native
+  var typeAnnotation: TypeAnnotation = js.native
 }
 
 object Parameter {
@@ -46,5 +47,32 @@ object Parameter {
     val __obj = js.Dynamic.literal(_astID = _astID.asInstanceOf[js.Any], _end = _end.asInstanceOf[js.Any], _postComments = _postComments.asInstanceOf[js.Any], _preComments = _preComments.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], _trailingTriviaWidth = _trailingTriviaWidth.asInstanceOf[js.Any], dotDotDotToken = dotDotDotToken.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), equalsValueClause = equalsValueClause.asInstanceOf[js.Any], fileName = js.Any.fromFunction0(fileName), identifier = identifier.asInstanceOf[js.Any], isExpression = js.Any.fromFunction0(isExpression), kind = js.Any.fromFunction0(kind), modifiers = modifiers.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], postComments = js.Any.fromFunction0(postComments), preComments = js.Any.fromFunction0(preComments), questionToken = questionToken.asInstanceOf[js.Any], setPostComments = js.Any.fromFunction1(setPostComments), setPreComments = js.Any.fromFunction1(setPreComments), start = js.Any.fromFunction0(start), structuralEquals = js.Any.fromFunction2(structuralEquals), syntaxID = js.Any.fromFunction0(syntaxID), trailingTriviaWidth = js.Any.fromFunction0(trailingTriviaWidth), typeAnnotation = typeAnnotation.asInstanceOf[js.Any], width = js.Any.fromFunction0(width))
     __obj.asInstanceOf[Parameter]
   }
+  @scala.inline
+  implicit class ParameterOps[Self <: Parameter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDotDotDotToken(value: ASTSpan): Self = this.set("dotDotDotToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEqualsValueClause(value: EqualsValueClause): Self = this.set("equalsValueClause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdentifier(value: Identifier): Self = this.set("identifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setModifiersVarargs(value: PullElementFlags*): Self = this.set("modifiers", js.Array(value :_*))
+    @scala.inline
+    def setModifiers(value: js.Array[PullElementFlags]): Self = this.set("modifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setQuestionToken(value: ASTSpan): Self = this.set("questionToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypeAnnotation(value: TypeAnnotation): Self = this.set("typeAnnotation", value.asInstanceOf[js.Any])
+  }
+  
 }
 

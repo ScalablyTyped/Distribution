@@ -29,11 +29,34 @@ trait SchemaVideoContentDetailsRegionRestriction extends js.Object {
 
 object SchemaVideoContentDetailsRegionRestriction {
   @scala.inline
-  def apply(allowed: js.Array[String] = null, blocked: js.Array[String] = null): SchemaVideoContentDetailsRegionRestriction = {
+  def apply(): SchemaVideoContentDetailsRegionRestriction = {
     val __obj = js.Dynamic.literal()
-    if (allowed != null) __obj.updateDynamic("allowed")(allowed.asInstanceOf[js.Any])
-    if (blocked != null) __obj.updateDynamic("blocked")(blocked.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVideoContentDetailsRegionRestriction]
   }
+  @scala.inline
+  implicit class SchemaVideoContentDetailsRegionRestrictionOps[Self <: SchemaVideoContentDetailsRegionRestriction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAllowedVarargs(value: String*): Self = this.set("allowed", js.Array(value :_*))
+    @scala.inline
+    def setAllowed(value: js.Array[String]): Self = this.set("allowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowed: Self = this.set("allowed", js.undefined)
+    @scala.inline
+    def setBlockedVarargs(value: String*): Self = this.set("blocked", js.Array(value :_*))
+    @scala.inline
+    def setBlocked(value: js.Array[String]): Self = this.set("blocked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlocked: Self = this.set("blocked", js.undefined)
+  }
+  
 }
 

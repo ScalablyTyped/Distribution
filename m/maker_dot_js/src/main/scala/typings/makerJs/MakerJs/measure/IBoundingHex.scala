@@ -1,10 +1,6 @@
 package typings.makerJs.MakerJs.measure
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.makerJs.MakerJs.IModel
-import typings.makerJs.MakerJs.IModelMap
-import typings.makerJs.MakerJs.IPathMap
-import typings.makerJs.MakerJs.IPoint
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -12,36 +8,34 @@ import scala.scalajs.js.annotation._
 /**
   * A hexagon which surrounds a model.
   */
+@js.native
 trait IBoundingHex extends IModel {
   /**
     * Radius of the hexagon, which is also the length of a side.
     */
-  var radius: Double
+  var radius: Double = js.native
 }
 
 object IBoundingHex {
   @scala.inline
-  def apply(
-    radius: Double,
-    exporterOptions: StringDictionary[js.Any] = null,
-    layer: String = null,
-    models: IModelMap = null,
-    notes: String = null,
-    origin: IPoint = null,
-    paths: IPathMap = null,
-    `type`: String = null,
-    units: String = null
-  ): IBoundingHex = {
+  def apply(radius: Double): IBoundingHex = {
     val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
-    if (exporterOptions != null) __obj.updateDynamic("exporterOptions")(exporterOptions.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (models != null) __obj.updateDynamic("models")(models.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBoundingHex]
   }
+  @scala.inline
+  implicit class IBoundingHexOps[Self <: IBoundingHex] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRadius(value: Double): Self = this.set("radius", value.asInstanceOf[js.Any])
+  }
+  
 }
 

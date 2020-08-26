@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "throttle-debounce"
-version := "2.1-dt-20200515Z-e835e2"
-scalaVersion := "2.13.2"
+version := "2.1-dt-20200515Z-c969bd"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

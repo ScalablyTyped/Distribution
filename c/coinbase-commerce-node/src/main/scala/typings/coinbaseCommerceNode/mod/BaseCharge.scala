@@ -7,50 +7,72 @@ import scala.scalajs.js.annotation._
 /**
   * Base charge properties.
   */
+@js.native
 trait BaseCharge extends js.Object {
   /**
     * Redirect the user to this URL on cancel.
     */
-  var cancel_url: js.UndefOr[String] = js.undefined
+  var cancel_url: js.UndefOr[String] = js.native
   /**
     * More detailed description of the charge.
     * 200 characters or less.
     */
-  var description: String
+  var description: String = js.native
   /**
     * Optional key value pairs for your own use.
     */
-  var metadata: js.UndefOr[KeyVal] = js.undefined
+  var metadata: js.UndefOr[KeyVal] = js.native
   /**
     * Charge name.
     * 100 characters or less.
     */
-  var name: String
+  var name: String = js.native
   /**
     * Charge pricing type.
     */
-  var pricing_type: PricingType
+  var pricing_type: PricingType = js.native
   /**
     * Redirect the user to this URL on completion.
     */
-  var redirect_url: js.UndefOr[String] = js.undefined
+  var redirect_url: js.UndefOr[String] = js.native
 }
 
 object BaseCharge {
   @scala.inline
-  def apply(
-    description: String,
-    name: String,
-    pricing_type: PricingType,
-    cancel_url: String = null,
-    metadata: KeyVal = null,
-    redirect_url: String = null
-  ): BaseCharge = {
+  def apply(description: String, name: String, pricing_type: PricingType): BaseCharge = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any])
-    if (cancel_url != null) __obj.updateDynamic("cancel_url")(cancel_url.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (redirect_url != null) __obj.updateDynamic("redirect_url")(redirect_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseCharge]
   }
+  @scala.inline
+  implicit class BaseChargeOps[Self <: BaseCharge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPricing_type(value: PricingType): Self = this.set("pricing_type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCancel_url(value: String): Self = this.set("cancel_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCancel_url: Self = this.set("cancel_url", js.undefined)
+    @scala.inline
+    def setMetadata(value: KeyVal): Self = this.set("metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("metadata", js.undefined)
+    @scala.inline
+    def setRedirect_url(value: String): Self = this.set("redirect_url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRedirect_url: Self = this.set("redirect_url", js.undefined)
+  }
+  
 }
 

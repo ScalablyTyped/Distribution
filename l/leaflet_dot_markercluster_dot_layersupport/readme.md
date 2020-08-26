@@ -12,7 +12,7 @@ Sub-plugin for Leaflet.markercluster plugin (MCG in short); brings compatibility
 | Keywords           | leaflet, leaflet.makercluster, plugins, maps, layers, control |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 44649 |
+| # downloads        | 44919 |
 | # stars            | 0 |
 
 ## Links

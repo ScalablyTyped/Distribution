@@ -17,7 +17,17 @@ class TimeUuid ()
 @js.native
 object TimeUuid extends js.Object {
   def fromDate(date: Date): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: String, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: js.UndefOr[scala.Nothing], nodeId: Buffer, clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def fromDate(date: Date, ticks: Double): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: Double, nodeId: js.UndefOr[scala.Nothing], clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
+  def fromDate(date: Date, ticks: Double, nodeId: js.UndefOr[scala.Nothing], clockId: Buffer): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def fromDate(date: Date, ticks: Double, nodeId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def fromDate(date: Date, ticks: Double, nodeId: String, clockId: String): typings.cassandraDriver.typesMod.types.TimeUuid = js.native
   def fromDate(

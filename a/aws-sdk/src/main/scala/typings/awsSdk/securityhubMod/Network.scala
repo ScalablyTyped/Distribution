@@ -27,6 +27,10 @@ trait Network extends js.Object {
     */
   var Direction: js.UndefOr[NetworkDirection] = js.native
   /**
+    * The range of open ports that is present on the network.
+    */
+  var OpenPortRange: js.UndefOr[PortRange] = js.native
+  /**
     * The protocol of network-related information about a finding.
     */
   var Protocol: js.UndefOr[NonEmptyString] = js.native
@@ -54,32 +58,70 @@ trait Network extends js.Object {
 
 object Network {
   @scala.inline
-  def apply(
-    DestinationDomain: NonEmptyString = null,
-    DestinationIpV4: NonEmptyString = null,
-    DestinationIpV6: NonEmptyString = null,
-    DestinationPort: js.UndefOr[Integer] = js.undefined,
-    Direction: NetworkDirection = null,
-    Protocol: NonEmptyString = null,
-    SourceDomain: NonEmptyString = null,
-    SourceIpV4: NonEmptyString = null,
-    SourceIpV6: NonEmptyString = null,
-    SourceMac: NonEmptyString = null,
-    SourcePort: js.UndefOr[Integer] = js.undefined
-  ): Network = {
+  def apply(): Network = {
     val __obj = js.Dynamic.literal()
-    if (DestinationDomain != null) __obj.updateDynamic("DestinationDomain")(DestinationDomain.asInstanceOf[js.Any])
-    if (DestinationIpV4 != null) __obj.updateDynamic("DestinationIpV4")(DestinationIpV4.asInstanceOf[js.Any])
-    if (DestinationIpV6 != null) __obj.updateDynamic("DestinationIpV6")(DestinationIpV6.asInstanceOf[js.Any])
-    if (!js.isUndefined(DestinationPort)) __obj.updateDynamic("DestinationPort")(DestinationPort.get.asInstanceOf[js.Any])
-    if (Direction != null) __obj.updateDynamic("Direction")(Direction.asInstanceOf[js.Any])
-    if (Protocol != null) __obj.updateDynamic("Protocol")(Protocol.asInstanceOf[js.Any])
-    if (SourceDomain != null) __obj.updateDynamic("SourceDomain")(SourceDomain.asInstanceOf[js.Any])
-    if (SourceIpV4 != null) __obj.updateDynamic("SourceIpV4")(SourceIpV4.asInstanceOf[js.Any])
-    if (SourceIpV6 != null) __obj.updateDynamic("SourceIpV6")(SourceIpV6.asInstanceOf[js.Any])
-    if (SourceMac != null) __obj.updateDynamic("SourceMac")(SourceMac.asInstanceOf[js.Any])
-    if (!js.isUndefined(SourcePort)) __obj.updateDynamic("SourcePort")(SourcePort.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Network]
   }
+  @scala.inline
+  implicit class NetworkOps[Self <: Network] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDestinationDomain(value: NonEmptyString): Self = this.set("DestinationDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationDomain: Self = this.set("DestinationDomain", js.undefined)
+    @scala.inline
+    def setDestinationIpV4(value: NonEmptyString): Self = this.set("DestinationIpV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationIpV4: Self = this.set("DestinationIpV4", js.undefined)
+    @scala.inline
+    def setDestinationIpV6(value: NonEmptyString): Self = this.set("DestinationIpV6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationIpV6: Self = this.set("DestinationIpV6", js.undefined)
+    @scala.inline
+    def setDestinationPort(value: Integer): Self = this.set("DestinationPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPort: Self = this.set("DestinationPort", js.undefined)
+    @scala.inline
+    def setDirection(value: NetworkDirection): Self = this.set("Direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("Direction", js.undefined)
+    @scala.inline
+    def setOpenPortRange(value: PortRange): Self = this.set("OpenPortRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenPortRange: Self = this.set("OpenPortRange", js.undefined)
+    @scala.inline
+    def setProtocol(value: NonEmptyString): Self = this.set("Protocol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtocol: Self = this.set("Protocol", js.undefined)
+    @scala.inline
+    def setSourceDomain(value: NonEmptyString): Self = this.set("SourceDomain", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceDomain: Self = this.set("SourceDomain", js.undefined)
+    @scala.inline
+    def setSourceIpV4(value: NonEmptyString): Self = this.set("SourceIpV4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceIpV4: Self = this.set("SourceIpV4", js.undefined)
+    @scala.inline
+    def setSourceIpV6(value: NonEmptyString): Self = this.set("SourceIpV6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceIpV6: Self = this.set("SourceIpV6", js.undefined)
+    @scala.inline
+    def setSourceMac(value: NonEmptyString): Self = this.set("SourceMac", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceMac: Self = this.set("SourceMac", js.undefined)
+    @scala.inline
+    def setSourcePort(value: Integer): Self = this.set("SourcePort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourcePort: Self = this.set("SourcePort", js.undefined)
+  }
+  
 }
 

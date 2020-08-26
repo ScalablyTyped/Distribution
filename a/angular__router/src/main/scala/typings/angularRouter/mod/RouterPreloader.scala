@@ -26,12 +26,6 @@ class RouterPreloader protected () extends OnDestroy {
   var processRoutes: js.Any = js.native
   var router: js.Any = js.native
   var subscription: js.Any = js.native
-  /**
-    * A callback method that performs custom clean-up, invoked immediately
-    * before a directive, pipe, or service instance is destroyed.
-    */
-  /* CompleteClass */
-  override def ngOnDestroy(): Unit = js.native
   def preload(): Observable_[_] = js.native
   def setUpPreloading(): Unit = js.native
 }

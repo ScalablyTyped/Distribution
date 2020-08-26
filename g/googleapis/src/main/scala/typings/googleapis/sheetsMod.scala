@@ -30,7 +30,7 @@ object sheetsMod extends js.Object {
     @js.native
     object v4
       extends TopLevel[
-              Instantiable2[/* options */ GlobalOptions, js.UndefOr[/* google */ GoogleConfigurable], Sheets]
+              Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sheets]
             ]
     
   }

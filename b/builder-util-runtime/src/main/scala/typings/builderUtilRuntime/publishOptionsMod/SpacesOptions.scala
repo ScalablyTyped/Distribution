@@ -1,54 +1,53 @@
 package typings.builderUtilRuntime.publishOptionsMod
 
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.`private`
-import typings.builderUtilRuntime.builderUtilRuntimeStrings.`public-read`
 import typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces
-import typings.node.httpMod.OutgoingHttpHeaders
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SpacesOptions
   extends BaseS3Options
      with _AllPublishOptions {
   /**
     * The space name.
     */
-  val name: String
+  val name: String = js.native
   /**
     * The provider. Must be `spaces`.
     */
   @JSName("provider")
-  val provider_SpacesOptions: spaces
+  val provider_SpacesOptions: spaces = js.native
   /**
     * The region (e.g. `nyc3`).
     */
-  val region: String
+  val region: String = js.native
 }
 
 object SpacesOptions {
   @scala.inline
-  def apply(
-    name: String,
-    provider: spaces,
-    region: String,
-    acl: js.UndefOr[Null | `private` | `public-read`] = js.undefined,
-    channel: js.UndefOr[Null | String] = js.undefined,
-    path: js.UndefOr[Null | String] = js.undefined,
-    publishAutoUpdate: js.UndefOr[Boolean] = js.undefined,
-    publisherName: js.UndefOr[Null | js.Array[String]] = js.undefined,
-    requestHeaders: OutgoingHttpHeaders = null,
-    updaterCacheDirName: js.UndefOr[Null | String] = js.undefined
-  ): SpacesOptions = {
+  def apply(name: String, provider: spaces, region: String): SpacesOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
-    if (!js.isUndefined(acl)) __obj.updateDynamic("acl")(acl.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel)) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
-    if (!js.isUndefined(path)) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(publisherName)) __obj.updateDynamic("publisherName")(publisherName.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(updaterCacheDirName)) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpacesOptions]
   }
+  @scala.inline
+  implicit class SpacesOptionsOps[Self <: SpacesOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setProvider(value: spaces): Self = this.set("provider", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRegion(value: String): Self = this.set("region", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -12,11 +12,7 @@ object errorMod extends js.Object {
   class FirebaseStorageError protected () extends Error {
     def this(code: Code, message: String) = this()
     var code_ : js.Any = js.native
-    /* CompleteClass */
-    override var message: String = js.native
     var message_ : js.Any = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var name_ : js.Any = js.native
     var serverResponse_ : js.Any = js.native
     def code: String = js.native

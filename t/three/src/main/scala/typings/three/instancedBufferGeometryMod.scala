@@ -13,7 +13,7 @@ object instancedBufferGeometryMod extends js.Object {
   class InstancedBufferGeometry () extends BufferGeometry {
     @JSName("groups")
     var groups_InstancedBufferGeometry: js.Array[Instances] = js.native
-    var maxInstancedCount: Double = js.native
+    var instanceCount: Double = js.native
   }
   
 }

@@ -10,7 +10,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet/components/Avatar", "Avatar")
+@JSImport("grommet/es6/components/Avatar", "Avatar")
 @js.native
 object Avatar extends TopLevel[
       FC[

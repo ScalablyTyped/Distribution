@@ -42,8 +42,58 @@ class PropertyList[TElement] protected () extends PropertyBase[PropertyBaseDefin
   def remove(predicate: js.Function1[/* item */ TElement, Boolean], context: js.Any): Unit = js.native
   def repopulate(items: js.Any): Unit = js.native
   def toObject(): js.Any = js.native
+  def toObject(
+    excludeDisabled: js.UndefOr[scala.Nothing],
+    caseSensitive: js.UndefOr[scala.Nothing],
+    multiValue: js.UndefOr[scala.Nothing],
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
+  def toObject(
+    excludeDisabled: js.UndefOr[scala.Nothing],
+    caseSensitive: js.UndefOr[scala.Nothing],
+    multiValue: Boolean
+  ): js.Any = js.native
+  def toObject(
+    excludeDisabled: js.UndefOr[scala.Nothing],
+    caseSensitive: js.UndefOr[scala.Nothing],
+    multiValue: Boolean,
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
+  def toObject(excludeDisabled: js.UndefOr[scala.Nothing], caseSensitive: Boolean): js.Any = js.native
+  def toObject(
+    excludeDisabled: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean,
+    multiValue: js.UndefOr[scala.Nothing],
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
+  def toObject(excludeDisabled: js.UndefOr[scala.Nothing], caseSensitive: Boolean, multiValue: Boolean): js.Any = js.native
+  def toObject(
+    excludeDisabled: js.UndefOr[scala.Nothing],
+    caseSensitive: Boolean,
+    multiValue: Boolean,
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
   def toObject(excludeDisabled: Boolean): js.Any = js.native
+  def toObject(
+    excludeDisabled: Boolean,
+    caseSensitive: js.UndefOr[scala.Nothing],
+    multiValue: js.UndefOr[scala.Nothing],
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
+  def toObject(excludeDisabled: Boolean, caseSensitive: js.UndefOr[scala.Nothing], multiValue: Boolean): js.Any = js.native
+  def toObject(
+    excludeDisabled: Boolean,
+    caseSensitive: js.UndefOr[scala.Nothing],
+    multiValue: Boolean,
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
   def toObject(excludeDisabled: Boolean, caseSensitive: Boolean): js.Any = js.native
+  def toObject(
+    excludeDisabled: Boolean,
+    caseSensitive: Boolean,
+    multiValue: js.UndefOr[scala.Nothing],
+    sanitizeKeys: Boolean
+  ): js.Any = js.native
   def toObject(excludeDisabled: Boolean, caseSensitive: Boolean, multiValue: Boolean): js.Any = js.native
   def toObject(excludeDisabled: Boolean, caseSensitive: Boolean, multiValue: Boolean, sanitizeKeys: Boolean): js.Any = js.native
   def upsert(item: TElement): Boolean | Null = js.native

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Volume ()
   extends typings.chrome.chrome.cast.Volume {
   def this(level: Double) = this()
+  def this(level: js.UndefOr[scala.Nothing], muted: Boolean) = this()
   def this(level: Double, muted: Boolean) = this()
 }
 

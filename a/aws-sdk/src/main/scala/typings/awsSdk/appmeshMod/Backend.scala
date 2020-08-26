@@ -14,10 +14,26 @@ trait Backend extends js.Object {
 
 object Backend {
   @scala.inline
-  def apply(virtualService: VirtualServiceBackend = null): Backend = {
+  def apply(): Backend = {
     val __obj = js.Dynamic.literal()
-    if (virtualService != null) __obj.updateDynamic("virtualService")(virtualService.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backend]
   }
+  @scala.inline
+  implicit class BackendOps[Self <: Backend] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setVirtualService(value: VirtualServiceBackend): Self = this.set("virtualService", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualService: Self = this.set("virtualService", js.undefined)
+  }
+  
 }
 

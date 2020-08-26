@@ -34,18 +34,38 @@ trait IssueCertificateRequest extends js.Object {
 
 object IssueCertificateRequest {
   @scala.inline
-  def apply(
-    CertificateAuthorityArn: Arn,
-    Csr: CsrBlob,
-    SigningAlgorithm: SigningAlgorithm,
-    Validity: Validity,
-    IdempotencyToken: IdempotencyToken = null,
-    TemplateArn: Arn = null
-  ): IssueCertificateRequest = {
+  def apply(CertificateAuthorityArn: Arn, Csr: CsrBlob, SigningAlgorithm: SigningAlgorithm, Validity: Validity): IssueCertificateRequest = {
     val __obj = js.Dynamic.literal(CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any], Csr = Csr.asInstanceOf[js.Any], SigningAlgorithm = SigningAlgorithm.asInstanceOf[js.Any], Validity = Validity.asInstanceOf[js.Any])
-    if (IdempotencyToken != null) __obj.updateDynamic("IdempotencyToken")(IdempotencyToken.asInstanceOf[js.Any])
-    if (TemplateArn != null) __obj.updateDynamic("TemplateArn")(TemplateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssueCertificateRequest]
   }
+  @scala.inline
+  implicit class IssueCertificateRequestOps[Self <: IssueCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateAuthorityArn(value: Arn): Self = this.set("CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCsr(value: CsrBlob): Self = this.set("Csr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSigningAlgorithm(value: SigningAlgorithm): Self = this.set("SigningAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setValidity(value: Validity): Self = this.set("Validity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setIdempotencyToken(value: IdempotencyToken): Self = this.set("IdempotencyToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdempotencyToken: Self = this.set("IdempotencyToken", js.undefined)
+    @scala.inline
+    def setTemplateArn(value: Arn): Self = this.set("TemplateArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplateArn: Self = this.set("TemplateArn", js.undefined)
+  }
+  
 }
 

@@ -62,36 +62,74 @@ trait ImportTask extends js.Object {
 
 object ImportTask {
   @scala.inline
-  def apply(
-    applicationImportFailure: js.UndefOr[Integer] = js.undefined,
-    applicationImportSuccess: js.UndefOr[Integer] = js.undefined,
-    clientRequestToken: ClientRequestToken = null,
-    errorsAndFailedEntriesZip: S3PresignedUrl = null,
-    importCompletionTime: TimeStamp = null,
-    importDeletedTime: TimeStamp = null,
-    importRequestTime: TimeStamp = null,
-    importTaskId: ImportTaskIdentifier = null,
-    importUrl: ImportURL = null,
-    name: ImportTaskName = null,
-    serverImportFailure: js.UndefOr[Integer] = js.undefined,
-    serverImportSuccess: js.UndefOr[Integer] = js.undefined,
-    status: ImportStatus = null
-  ): ImportTask = {
+  def apply(): ImportTask = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applicationImportFailure)) __obj.updateDynamic("applicationImportFailure")(applicationImportFailure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(applicationImportSuccess)) __obj.updateDynamic("applicationImportSuccess")(applicationImportSuccess.get.asInstanceOf[js.Any])
-    if (clientRequestToken != null) __obj.updateDynamic("clientRequestToken")(clientRequestToken.asInstanceOf[js.Any])
-    if (errorsAndFailedEntriesZip != null) __obj.updateDynamic("errorsAndFailedEntriesZip")(errorsAndFailedEntriesZip.asInstanceOf[js.Any])
-    if (importCompletionTime != null) __obj.updateDynamic("importCompletionTime")(importCompletionTime.asInstanceOf[js.Any])
-    if (importDeletedTime != null) __obj.updateDynamic("importDeletedTime")(importDeletedTime.asInstanceOf[js.Any])
-    if (importRequestTime != null) __obj.updateDynamic("importRequestTime")(importRequestTime.asInstanceOf[js.Any])
-    if (importTaskId != null) __obj.updateDynamic("importTaskId")(importTaskId.asInstanceOf[js.Any])
-    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverImportFailure)) __obj.updateDynamic("serverImportFailure")(serverImportFailure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverImportSuccess)) __obj.updateDynamic("serverImportSuccess")(serverImportSuccess.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportTask]
   }
+  @scala.inline
+  implicit class ImportTaskOps[Self <: ImportTask] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationImportFailure(value: Integer): Self = this.set("applicationImportFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationImportFailure: Self = this.set("applicationImportFailure", js.undefined)
+    @scala.inline
+    def setApplicationImportSuccess(value: Integer): Self = this.set("applicationImportSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationImportSuccess: Self = this.set("applicationImportSuccess", js.undefined)
+    @scala.inline
+    def setClientRequestToken(value: ClientRequestToken): Self = this.set("clientRequestToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientRequestToken: Self = this.set("clientRequestToken", js.undefined)
+    @scala.inline
+    def setErrorsAndFailedEntriesZip(value: S3PresignedUrl): Self = this.set("errorsAndFailedEntriesZip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorsAndFailedEntriesZip: Self = this.set("errorsAndFailedEntriesZip", js.undefined)
+    @scala.inline
+    def setImportCompletionTime(value: TimeStamp): Self = this.set("importCompletionTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportCompletionTime: Self = this.set("importCompletionTime", js.undefined)
+    @scala.inline
+    def setImportDeletedTime(value: TimeStamp): Self = this.set("importDeletedTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportDeletedTime: Self = this.set("importDeletedTime", js.undefined)
+    @scala.inline
+    def setImportRequestTime(value: TimeStamp): Self = this.set("importRequestTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportRequestTime: Self = this.set("importRequestTime", js.undefined)
+    @scala.inline
+    def setImportTaskId(value: ImportTaskIdentifier): Self = this.set("importTaskId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportTaskId: Self = this.set("importTaskId", js.undefined)
+    @scala.inline
+    def setImportUrl(value: ImportURL): Self = this.set("importUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImportUrl: Self = this.set("importUrl", js.undefined)
+    @scala.inline
+    def setName(value: ImportTaskName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setServerImportFailure(value: Integer): Self = this.set("serverImportFailure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerImportFailure: Self = this.set("serverImportFailure", js.undefined)
+    @scala.inline
+    def setServerImportSuccess(value: Integer): Self = this.set("serverImportSuccess", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerImportSuccess: Self = this.set("serverImportSuccess", js.undefined)
+    @scala.inline
+    def setStatus(value: ImportStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

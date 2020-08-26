@@ -21,8 +21,24 @@ object quaternionMod extends js.Object {
   	 */
   class Quaternion () extends js.Object {
     def this(x: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(
+      x: js.UndefOr[scala.Nothing],
+      y: js.UndefOr[scala.Nothing],
+      z: js.UndefOr[scala.Nothing],
+      w: Double
+    ) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
     var _onChangeCallback: js.Function = js.native
     val isQuaternion: `true` = js.native
@@ -53,6 +69,7 @@ object quaternionMod extends js.Object {
     	 */
     def fromArray(array: ArrayLike[Double]): this.type = js.native
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
+    def identity(): Quaternion = js.native
     /**
     	 * Inverts this quaternion.
     	 */
@@ -108,6 +125,7 @@ object quaternionMod extends js.Object {
     	 * @return The created or provided array.
     	 */
     def toArray(): js.Array[Double] = js.native
+    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
     /**
@@ -123,6 +141,14 @@ object quaternionMod extends js.Object {
   /* static members */
   @js.native
   object Quaternion extends js.Object {
+    def multiplyQuaternionsFlat(
+      dst: js.Array[Double],
+      dstOffset: Double,
+      src0: js.Array[Double],
+      srcOffset: Double,
+      src1: js.Array[Double],
+      stcOffset1: Double
+    ): js.Array[Double] = js.native
     /**
     	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
     	 */

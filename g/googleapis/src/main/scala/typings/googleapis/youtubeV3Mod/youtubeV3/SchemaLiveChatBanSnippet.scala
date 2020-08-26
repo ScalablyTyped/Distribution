@@ -23,18 +23,38 @@ trait SchemaLiveChatBanSnippet extends js.Object {
 
 object SchemaLiveChatBanSnippet {
   @scala.inline
-  def apply(
-    banDurationSeconds: String = null,
-    bannedUserDetails: SchemaChannelProfileDetails = null,
-    liveChatId: String = null,
-    `type`: String = null
-  ): SchemaLiveChatBanSnippet = {
+  def apply(): SchemaLiveChatBanSnippet = {
     val __obj = js.Dynamic.literal()
-    if (banDurationSeconds != null) __obj.updateDynamic("banDurationSeconds")(banDurationSeconds.asInstanceOf[js.Any])
-    if (bannedUserDetails != null) __obj.updateDynamic("bannedUserDetails")(bannedUserDetails.asInstanceOf[js.Any])
-    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveChatBanSnippet]
   }
+  @scala.inline
+  implicit class SchemaLiveChatBanSnippetOps[Self <: SchemaLiveChatBanSnippet] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBanDurationSeconds(value: String): Self = this.set("banDurationSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBanDurationSeconds: Self = this.set("banDurationSeconds", js.undefined)
+    @scala.inline
+    def setBannedUserDetails(value: SchemaChannelProfileDetails): Self = this.set("bannedUserDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBannedUserDetails: Self = this.set("bannedUserDetails", js.undefined)
+    @scala.inline
+    def setLiveChatId(value: String): Self = this.set("liveChatId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveChatId: Self = this.set("liveChatId", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

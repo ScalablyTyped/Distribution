@@ -38,24 +38,52 @@ trait Playlist extends js.Object {
 
 object Playlist {
   @scala.inline
-  def apply(
-    Format: PlaylistFormat = null,
-    HlsContentProtection: HlsContentProtection = null,
-    Name: Filename = null,
-    OutputKeys: OutputKeys = null,
-    PlayReadyDrm: PlayReadyDrm = null,
-    Status: JobStatus = null,
-    StatusDetail: Description = null
-  ): Playlist = {
+  def apply(): Playlist = {
     val __obj = js.Dynamic.literal()
-    if (Format != null) __obj.updateDynamic("Format")(Format.asInstanceOf[js.Any])
-    if (HlsContentProtection != null) __obj.updateDynamic("HlsContentProtection")(HlsContentProtection.asInstanceOf[js.Any])
-    if (Name != null) __obj.updateDynamic("Name")(Name.asInstanceOf[js.Any])
-    if (OutputKeys != null) __obj.updateDynamic("OutputKeys")(OutputKeys.asInstanceOf[js.Any])
-    if (PlayReadyDrm != null) __obj.updateDynamic("PlayReadyDrm")(PlayReadyDrm.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail.asInstanceOf[js.Any])
     __obj.asInstanceOf[Playlist]
   }
+  @scala.inline
+  implicit class PlaylistOps[Self <: Playlist] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: PlaylistFormat): Self = this.set("Format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("Format", js.undefined)
+    @scala.inline
+    def setHlsContentProtection(value: HlsContentProtection): Self = this.set("HlsContentProtection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHlsContentProtection: Self = this.set("HlsContentProtection", js.undefined)
+    @scala.inline
+    def setName(value: Filename): Self = this.set("Name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("Name", js.undefined)
+    @scala.inline
+    def setOutputKeysVarargs(value: Key*): Self = this.set("OutputKeys", js.Array(value :_*))
+    @scala.inline
+    def setOutputKeys(value: OutputKeys): Self = this.set("OutputKeys", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutputKeys: Self = this.set("OutputKeys", js.undefined)
+    @scala.inline
+    def setPlayReadyDrm(value: PlayReadyDrm): Self = this.set("PlayReadyDrm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayReadyDrm: Self = this.set("PlayReadyDrm", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: Description): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+  }
+  
 }
 

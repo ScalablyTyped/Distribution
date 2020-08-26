@@ -38,24 +38,50 @@ trait ReceiptAction extends js.Object {
 
 object ReceiptAction {
   @scala.inline
-  def apply(
-    AddHeaderAction: AddHeaderAction = null,
-    BounceAction: BounceAction = null,
-    LambdaAction: LambdaAction = null,
-    S3Action: S3Action = null,
-    SNSAction: SNSAction = null,
-    StopAction: StopAction = null,
-    WorkmailAction: WorkmailAction = null
-  ): ReceiptAction = {
+  def apply(): ReceiptAction = {
     val __obj = js.Dynamic.literal()
-    if (AddHeaderAction != null) __obj.updateDynamic("AddHeaderAction")(AddHeaderAction.asInstanceOf[js.Any])
-    if (BounceAction != null) __obj.updateDynamic("BounceAction")(BounceAction.asInstanceOf[js.Any])
-    if (LambdaAction != null) __obj.updateDynamic("LambdaAction")(LambdaAction.asInstanceOf[js.Any])
-    if (S3Action != null) __obj.updateDynamic("S3Action")(S3Action.asInstanceOf[js.Any])
-    if (SNSAction != null) __obj.updateDynamic("SNSAction")(SNSAction.asInstanceOf[js.Any])
-    if (StopAction != null) __obj.updateDynamic("StopAction")(StopAction.asInstanceOf[js.Any])
-    if (WorkmailAction != null) __obj.updateDynamic("WorkmailAction")(WorkmailAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReceiptAction]
   }
+  @scala.inline
+  implicit class ReceiptActionOps[Self <: ReceiptAction] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddHeaderAction(value: AddHeaderAction): Self = this.set("AddHeaderAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddHeaderAction: Self = this.set("AddHeaderAction", js.undefined)
+    @scala.inline
+    def setBounceAction(value: BounceAction): Self = this.set("BounceAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBounceAction: Self = this.set("BounceAction", js.undefined)
+    @scala.inline
+    def setLambdaAction(value: LambdaAction): Self = this.set("LambdaAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLambdaAction: Self = this.set("LambdaAction", js.undefined)
+    @scala.inline
+    def setS3Action(value: S3Action): Self = this.set("S3Action", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS3Action: Self = this.set("S3Action", js.undefined)
+    @scala.inline
+    def setSNSAction(value: SNSAction): Self = this.set("SNSAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSNSAction: Self = this.set("SNSAction", js.undefined)
+    @scala.inline
+    def setStopAction(value: StopAction): Self = this.set("StopAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStopAction: Self = this.set("StopAction", js.undefined)
+    @scala.inline
+    def setWorkmailAction(value: WorkmailAction): Self = this.set("WorkmailAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkmailAction: Self = this.set("WorkmailAction", js.undefined)
+  }
+  
 }
 

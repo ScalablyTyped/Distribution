@@ -12,6 +12,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Html5RangeOptions
   extends RangeOptions
      with ControlOptions
@@ -24,31 +25,8 @@ trait Html5RangeOptions
 
 object Html5RangeOptions {
   @scala.inline
-  def apply(
-    allText: String = null,
-    cellText: String = null,
-    compare: String | js.Array[String] = null,
-    delayed: js.UndefOr[Boolean] = js.undefined,
-    exactMatch: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Double] = js.undefined,
-    min: js.UndefOr[Double] = js.undefined,
-    skipTest: js.UndefOr[Boolean] = js.undefined,
-    step: js.UndefOr[Double] = js.undefined,
-    value: js.UndefOr[Double] = js.undefined,
-    valueToHeader: js.UndefOr[Boolean] = js.undefined
-  ): Html5RangeOptions = {
+  def apply(): Html5RangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (allText != null) __obj.updateDynamic("allText")(allText.asInstanceOf[js.Any])
-    if (cellText != null) __obj.updateDynamic("cellText")(cellText.asInstanceOf[js.Any])
-    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
-    if (!js.isUndefined(delayed)) __obj.updateDynamic("delayed")(delayed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(exactMatch)) __obj.updateDynamic("exactMatch")(exactMatch.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipTest)) __obj.updateDynamic("skipTest")(skipTest.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(step)) __obj.updateDynamic("step")(step.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueToHeader)) __obj.updateDynamic("valueToHeader")(valueToHeader.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Html5RangeOptions]
   }
 }

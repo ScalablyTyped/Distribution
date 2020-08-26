@@ -22,5 +22,22 @@ object UpdateCertificateRequest {
     val __obj = js.Dynamic.literal(certificateId = certificateId.asInstanceOf[js.Any], newStatus = newStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCertificateRequest]
   }
+  @scala.inline
+  implicit class UpdateCertificateRequestOps[Self <: UpdateCertificateRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCertificateId(value: CertificateId): Self = this.set("certificateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNewStatus(value: CertificateStatus): Self = this.set("newStatus", value.asInstanceOf[js.Any])
+  }
+  
 }
 

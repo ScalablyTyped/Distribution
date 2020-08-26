@@ -78,44 +78,92 @@ trait JobDescriptor extends js.Object {
 
 object JobDescriptor {
   @scala.inline
-  def apply(
-    ConfirmationRequired: js.UndefOr[ConfirmationRequired] = js.undefined,
-    CreationTime: JobCreationTime = null,
-    Description: NonEmptyMaxLength256String = null,
-    FailureReasons: JobFailureList = null,
-    JobArn: JobArn = null,
-    JobId: JobId = null,
-    Manifest: JobManifest = null,
-    Operation: JobOperation = null,
-    Priority: js.UndefOr[JobPriority] = js.undefined,
-    ProgressSummary: JobProgressSummary = null,
-    Report: JobReport = null,
-    RoleArn: IAMRoleArn = null,
-    Status: JobStatus = null,
-    StatusUpdateReason: JobStatusUpdateReason = null,
-    SuspendedCause: SuspendedCause = null,
-    SuspendedDate: SuspendedDate = null,
-    TerminationDate: JobTerminationDate = null
-  ): JobDescriptor = {
+  def apply(): JobDescriptor = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ConfirmationRequired)) __obj.updateDynamic("ConfirmationRequired")(ConfirmationRequired.get.asInstanceOf[js.Any])
-    if (CreationTime != null) __obj.updateDynamic("CreationTime")(CreationTime.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (FailureReasons != null) __obj.updateDynamic("FailureReasons")(FailureReasons.asInstanceOf[js.Any])
-    if (JobArn != null) __obj.updateDynamic("JobArn")(JobArn.asInstanceOf[js.Any])
-    if (JobId != null) __obj.updateDynamic("JobId")(JobId.asInstanceOf[js.Any])
-    if (Manifest != null) __obj.updateDynamic("Manifest")(Manifest.asInstanceOf[js.Any])
-    if (Operation != null) __obj.updateDynamic("Operation")(Operation.asInstanceOf[js.Any])
-    if (!js.isUndefined(Priority)) __obj.updateDynamic("Priority")(Priority.get.asInstanceOf[js.Any])
-    if (ProgressSummary != null) __obj.updateDynamic("ProgressSummary")(ProgressSummary.asInstanceOf[js.Any])
-    if (Report != null) __obj.updateDynamic("Report")(Report.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusUpdateReason != null) __obj.updateDynamic("StatusUpdateReason")(StatusUpdateReason.asInstanceOf[js.Any])
-    if (SuspendedCause != null) __obj.updateDynamic("SuspendedCause")(SuspendedCause.asInstanceOf[js.Any])
-    if (SuspendedDate != null) __obj.updateDynamic("SuspendedDate")(SuspendedDate.asInstanceOf[js.Any])
-    if (TerminationDate != null) __obj.updateDynamic("TerminationDate")(TerminationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobDescriptor]
   }
+  @scala.inline
+  implicit class JobDescriptorOps[Self <: JobDescriptor] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfirmationRequired(value: ConfirmationRequired): Self = this.set("ConfirmationRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfirmationRequired: Self = this.set("ConfirmationRequired", js.undefined)
+    @scala.inline
+    def setCreationTime(value: JobCreationTime): Self = this.set("CreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationTime: Self = this.set("CreationTime", js.undefined)
+    @scala.inline
+    def setDescription(value: NonEmptyMaxLength256String): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setFailureReasonsVarargs(value: JobFailure*): Self = this.set("FailureReasons", js.Array(value :_*))
+    @scala.inline
+    def setFailureReasons(value: JobFailureList): Self = this.set("FailureReasons", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailureReasons: Self = this.set("FailureReasons", js.undefined)
+    @scala.inline
+    def setJobArn(value: JobArn): Self = this.set("JobArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobArn: Self = this.set("JobArn", js.undefined)
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("JobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("JobId", js.undefined)
+    @scala.inline
+    def setManifest(value: JobManifest): Self = this.set("Manifest", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteManifest: Self = this.set("Manifest", js.undefined)
+    @scala.inline
+    def setOperation(value: JobOperation): Self = this.set("Operation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperation: Self = this.set("Operation", js.undefined)
+    @scala.inline
+    def setPriority(value: JobPriority): Self = this.set("Priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("Priority", js.undefined)
+    @scala.inline
+    def setProgressSummary(value: JobProgressSummary): Self = this.set("ProgressSummary", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProgressSummary: Self = this.set("ProgressSummary", js.undefined)
+    @scala.inline
+    def setReport(value: JobReport): Self = this.set("Report", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReport: Self = this.set("Report", js.undefined)
+    @scala.inline
+    def setRoleArn(value: IAMRoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = this.set("StatusUpdateReason", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusUpdateReason: Self = this.set("StatusUpdateReason", js.undefined)
+    @scala.inline
+    def setSuspendedCause(value: SuspendedCause): Self = this.set("SuspendedCause", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedCause: Self = this.set("SuspendedCause", js.undefined)
+    @scala.inline
+    def setSuspendedDate(value: SuspendedDate): Self = this.set("SuspendedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSuspendedDate: Self = this.set("SuspendedDate", js.undefined)
+    @scala.inline
+    def setTerminationDate(value: JobTerminationDate): Self = this.set("TerminationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTerminationDate: Self = this.set("TerminationDate", js.undefined)
+  }
+  
 }
 

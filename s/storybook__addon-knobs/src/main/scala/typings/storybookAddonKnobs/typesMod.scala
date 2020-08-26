@@ -49,9 +49,30 @@ object typesMod extends js.Object {
   */
   trait KnobType extends js.Object
   
-  def getKnobControl(
-    `type`: number | boolean | `object` | color | button | select | text | date | options | radios | array | files
-  ): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_array(`type`: array): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_boolean(`type`: boolean): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_button(`type`: button): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_color(`type`: color): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_date(`type`: date): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_files(`type`: files): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_number(`type`: number): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_object(`type`: `object`): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_options(`type`: options): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_radios(`type`: radios): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_select(`type`: select): KnobControlType = js.native
+  @JSName("getKnobControl")
+  def getKnobControl_text(`type`: text): KnobControlType = js.native
   @js.native
   object default extends js.Object {
     var array: TypeofArrayType = js.native

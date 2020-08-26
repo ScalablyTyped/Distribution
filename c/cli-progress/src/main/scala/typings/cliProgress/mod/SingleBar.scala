@@ -15,6 +15,7 @@ class SingleBar protected () extends js.Object {
   def getTotal(): js.Any = js.native
   /** Increases the current progress value by a specified amount (default +1). Update payload optionally */
   def increment(): Unit = js.native
+  def increment(step: js.UndefOr[scala.Nothing], payload: js.Object): Unit = js.native
   def increment(step: Double): Unit = js.native
   def increment(step: Double, payload: js.Object): Unit = js.native
   def render(): Unit = js.native

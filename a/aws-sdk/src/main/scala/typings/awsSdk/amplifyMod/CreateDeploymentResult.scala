@@ -22,10 +22,30 @@ trait CreateDeploymentResult extends js.Object {
 
 object CreateDeploymentResult {
   @scala.inline
-  def apply(fileUploadUrls: FileUploadUrls, zipUploadUrl: UploadUrl, jobId: JobId = null): CreateDeploymentResult = {
+  def apply(fileUploadUrls: FileUploadUrls, zipUploadUrl: UploadUrl): CreateDeploymentResult = {
     val __obj = js.Dynamic.literal(fileUploadUrls = fileUploadUrls.asInstanceOf[js.Any], zipUploadUrl = zipUploadUrl.asInstanceOf[js.Any])
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentResult]
   }
+  @scala.inline
+  implicit class CreateDeploymentResultOps[Self <: CreateDeploymentResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFileUploadUrls(value: FileUploadUrls): Self = this.set("fileUploadUrls", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setZipUploadUrl(value: UploadUrl): Self = this.set("zipUploadUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setJobId(value: JobId): Self = this.set("jobId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobId: Self = this.set("jobId", js.undefined)
+  }
+  
 }
 

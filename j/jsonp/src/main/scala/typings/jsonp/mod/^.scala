@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(url: String): CancelFn = js.native
   def apply(url: String, callback: RequestCallback): CancelFn = js.native
+  def apply(url: String, options: js.UndefOr[scala.Nothing], cb: RequestCallback): CancelFn = js.native
   def apply(url: String, options: Options): CancelFn = js.native
   def apply(url: String, options: Options, cb: RequestCallback): CancelFn = js.native
 }

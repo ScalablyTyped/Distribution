@@ -119,66 +119,134 @@ trait HeadObjectOutput extends js.Object {
 
 object HeadObjectOutput {
   @scala.inline
-  def apply(
-    AcceptRanges: AcceptRanges = null,
-    CacheControl: CacheControl = null,
-    ContentDisposition: ContentDisposition = null,
-    ContentEncoding: ContentEncoding = null,
-    ContentLanguage: ContentLanguage = null,
-    ContentLength: js.UndefOr[ContentLength] = js.undefined,
-    ContentType: ContentType = null,
-    DeleteMarker: js.UndefOr[DeleteMarker] = js.undefined,
-    ETag: ETag = null,
-    Expiration: Expiration = null,
-    Expires: Expires = null,
-    LastModified: LastModified = null,
-    Metadata: Metadata = null,
-    MissingMeta: js.UndefOr[MissingMeta] = js.undefined,
-    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = null,
-    ObjectLockMode: ObjectLockMode = null,
-    ObjectLockRetainUntilDate: ObjectLockRetainUntilDate = null,
-    PartsCount: js.UndefOr[PartsCount] = js.undefined,
-    ReplicationStatus: ReplicationStatus = null,
-    RequestCharged: RequestCharged = null,
-    Restore: Restore = null,
-    SSECustomerAlgorithm: SSECustomerAlgorithm = null,
-    SSECustomerKeyMD5: SSECustomerKeyMD5 = null,
-    SSEKMSKeyId: SSEKMSKeyId = null,
-    ServerSideEncryption: ServerSideEncryption = null,
-    StorageClass: StorageClass = null,
-    VersionId: ObjectVersionId = null,
-    WebsiteRedirectLocation: WebsiteRedirectLocation = null
-  ): HeadObjectOutput = {
+  def apply(): HeadObjectOutput = {
     val __obj = js.Dynamic.literal()
-    if (AcceptRanges != null) __obj.updateDynamic("AcceptRanges")(AcceptRanges.asInstanceOf[js.Any])
-    if (CacheControl != null) __obj.updateDynamic("CacheControl")(CacheControl.asInstanceOf[js.Any])
-    if (ContentDisposition != null) __obj.updateDynamic("ContentDisposition")(ContentDisposition.asInstanceOf[js.Any])
-    if (ContentEncoding != null) __obj.updateDynamic("ContentEncoding")(ContentEncoding.asInstanceOf[js.Any])
-    if (ContentLanguage != null) __obj.updateDynamic("ContentLanguage")(ContentLanguage.asInstanceOf[js.Any])
-    if (!js.isUndefined(ContentLength)) __obj.updateDynamic("ContentLength")(ContentLength.get.asInstanceOf[js.Any])
-    if (ContentType != null) __obj.updateDynamic("ContentType")(ContentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeleteMarker)) __obj.updateDynamic("DeleteMarker")(DeleteMarker.get.asInstanceOf[js.Any])
-    if (ETag != null) __obj.updateDynamic("ETag")(ETag.asInstanceOf[js.Any])
-    if (Expiration != null) __obj.updateDynamic("Expiration")(Expiration.asInstanceOf[js.Any])
-    if (Expires != null) __obj.updateDynamic("Expires")(Expires.asInstanceOf[js.Any])
-    if (LastModified != null) __obj.updateDynamic("LastModified")(LastModified.asInstanceOf[js.Any])
-    if (Metadata != null) __obj.updateDynamic("Metadata")(Metadata.asInstanceOf[js.Any])
-    if (!js.isUndefined(MissingMeta)) __obj.updateDynamic("MissingMeta")(MissingMeta.get.asInstanceOf[js.Any])
-    if (ObjectLockLegalHoldStatus != null) __obj.updateDynamic("ObjectLockLegalHoldStatus")(ObjectLockLegalHoldStatus.asInstanceOf[js.Any])
-    if (ObjectLockMode != null) __obj.updateDynamic("ObjectLockMode")(ObjectLockMode.asInstanceOf[js.Any])
-    if (ObjectLockRetainUntilDate != null) __obj.updateDynamic("ObjectLockRetainUntilDate")(ObjectLockRetainUntilDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(PartsCount)) __obj.updateDynamic("PartsCount")(PartsCount.get.asInstanceOf[js.Any])
-    if (ReplicationStatus != null) __obj.updateDynamic("ReplicationStatus")(ReplicationStatus.asInstanceOf[js.Any])
-    if (RequestCharged != null) __obj.updateDynamic("RequestCharged")(RequestCharged.asInstanceOf[js.Any])
-    if (Restore != null) __obj.updateDynamic("Restore")(Restore.asInstanceOf[js.Any])
-    if (SSECustomerAlgorithm != null) __obj.updateDynamic("SSECustomerAlgorithm")(SSECustomerAlgorithm.asInstanceOf[js.Any])
-    if (SSECustomerKeyMD5 != null) __obj.updateDynamic("SSECustomerKeyMD5")(SSECustomerKeyMD5.asInstanceOf[js.Any])
-    if (SSEKMSKeyId != null) __obj.updateDynamic("SSEKMSKeyId")(SSEKMSKeyId.asInstanceOf[js.Any])
-    if (ServerSideEncryption != null) __obj.updateDynamic("ServerSideEncryption")(ServerSideEncryption.asInstanceOf[js.Any])
-    if (StorageClass != null) __obj.updateDynamic("StorageClass")(StorageClass.asInstanceOf[js.Any])
-    if (VersionId != null) __obj.updateDynamic("VersionId")(VersionId.asInstanceOf[js.Any])
-    if (WebsiteRedirectLocation != null) __obj.updateDynamic("WebsiteRedirectLocation")(WebsiteRedirectLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadObjectOutput]
   }
+  @scala.inline
+  implicit class HeadObjectOutputOps[Self <: HeadObjectOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAcceptRanges(value: AcceptRanges): Self = this.set("AcceptRanges", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAcceptRanges: Self = this.set("AcceptRanges", js.undefined)
+    @scala.inline
+    def setCacheControl(value: CacheControl): Self = this.set("CacheControl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheControl: Self = this.set("CacheControl", js.undefined)
+    @scala.inline
+    def setContentDisposition(value: ContentDisposition): Self = this.set("ContentDisposition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentDisposition: Self = this.set("ContentDisposition", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: ContentEncoding): Self = this.set("ContentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("ContentEncoding", js.undefined)
+    @scala.inline
+    def setContentLanguage(value: ContentLanguage): Self = this.set("ContentLanguage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLanguage: Self = this.set("ContentLanguage", js.undefined)
+    @scala.inline
+    def setContentLength(value: ContentLength): Self = this.set("ContentLength", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentLength: Self = this.set("ContentLength", js.undefined)
+    @scala.inline
+    def setContentType(value: ContentType): Self = this.set("ContentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("ContentType", js.undefined)
+    @scala.inline
+    def setDeleteMarker(value: DeleteMarker): Self = this.set("DeleteMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteMarker: Self = this.set("DeleteMarker", js.undefined)
+    @scala.inline
+    def setETag(value: ETag): Self = this.set("ETag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteETag: Self = this.set("ETag", js.undefined)
+    @scala.inline
+    def setExpiration(value: Expiration): Self = this.set("Expiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpiration: Self = this.set("Expiration", js.undefined)
+    @scala.inline
+    def setExpires(value: Expires): Self = this.set("Expires", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExpires: Self = this.set("Expires", js.undefined)
+    @scala.inline
+    def setLastModified(value: LastModified): Self = this.set("LastModified", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModified: Self = this.set("LastModified", js.undefined)
+    @scala.inline
+    def setMetadata(value: Metadata): Self = this.set("Metadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetadata: Self = this.set("Metadata", js.undefined)
+    @scala.inline
+    def setMissingMeta(value: MissingMeta): Self = this.set("MissingMeta", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingMeta: Self = this.set("MissingMeta", js.undefined)
+    @scala.inline
+    def setObjectLockLegalHoldStatus(value: ObjectLockLegalHoldStatus): Self = this.set("ObjectLockLegalHoldStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockLegalHoldStatus: Self = this.set("ObjectLockLegalHoldStatus", js.undefined)
+    @scala.inline
+    def setObjectLockMode(value: ObjectLockMode): Self = this.set("ObjectLockMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockMode: Self = this.set("ObjectLockMode", js.undefined)
+    @scala.inline
+    def setObjectLockRetainUntilDate(value: ObjectLockRetainUntilDate): Self = this.set("ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteObjectLockRetainUntilDate: Self = this.set("ObjectLockRetainUntilDate", js.undefined)
+    @scala.inline
+    def setPartsCount(value: PartsCount): Self = this.set("PartsCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartsCount: Self = this.set("PartsCount", js.undefined)
+    @scala.inline
+    def setReplicationStatus(value: ReplicationStatus): Self = this.set("ReplicationStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationStatus: Self = this.set("ReplicationStatus", js.undefined)
+    @scala.inline
+    def setRequestCharged(value: RequestCharged): Self = this.set("RequestCharged", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequestCharged: Self = this.set("RequestCharged", js.undefined)
+    @scala.inline
+    def setRestore(value: Restore): Self = this.set("Restore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRestore: Self = this.set("Restore", js.undefined)
+    @scala.inline
+    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = this.set("SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerAlgorithm: Self = this.set("SSECustomerAlgorithm", js.undefined)
+    @scala.inline
+    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = this.set("SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSECustomerKeyMD5: Self = this.set("SSECustomerKeyMD5", js.undefined)
+    @scala.inline
+    def setSSEKMSKeyId(value: SSEKMSKeyId): Self = this.set("SSEKMSKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSSEKMSKeyId: Self = this.set("SSEKMSKeyId", js.undefined)
+    @scala.inline
+    def setServerSideEncryption(value: ServerSideEncryption): Self = this.set("ServerSideEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerSideEncryption: Self = this.set("ServerSideEncryption", js.undefined)
+    @scala.inline
+    def setStorageClass(value: StorageClass): Self = this.set("StorageClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStorageClass: Self = this.set("StorageClass", js.undefined)
+    @scala.inline
+    def setVersionId(value: ObjectVersionId): Self = this.set("VersionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersionId: Self = this.set("VersionId", js.undefined)
+    @scala.inline
+    def setWebsiteRedirectLocation(value: WebsiteRedirectLocation): Self = this.set("WebsiteRedirectLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWebsiteRedirectLocation: Self = this.set("WebsiteRedirectLocation", js.undefined)
+  }
+  
 }
 

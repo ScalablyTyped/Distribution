@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IEngineDefinition extends js.Object {
   /**
     * An integer `Number` that specifies the number of constraint iterations to perform each update.
@@ -14,7 +15,7 @@ trait IEngineDefinition extends js.Object {
     * @type number
     * @default 2
     */
-  var constraintIterations: js.UndefOr[Double] = js.undefined
+  var constraintIterations: js.UndefOr[Double] = js.native
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
@@ -23,7 +24,7 @@ trait IEngineDefinition extends js.Object {
     * @type boolean
     * @default false
     */
-  var enableSleeping: js.UndefOr[Boolean] = js.undefined
+  var enableSleeping: js.UndefOr[Boolean] = js.native
   /**
     * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
     *
@@ -31,7 +32,7 @@ trait IEngineDefinition extends js.Object {
     * @type grid
     * @default a Matter.Grid instance
     */
-  var grid: js.UndefOr[Grid] = js.undefined
+  var grid: js.UndefOr[Grid] = js.native
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -40,14 +41,14 @@ trait IEngineDefinition extends js.Object {
     * @type number
     * @default 6
     */
-  var positionIterations: js.UndefOr[Double] = js.undefined
+  var positionIterations: js.UndefOr[Double] = js.native
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
     *
     * @property timing
     * @type object
     */
-  var timing: js.UndefOr[IEngineTimingOptions] = js.undefined
+  var timing: js.UndefOr[IEngineTimingOptions] = js.native
   /**
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
@@ -56,7 +57,7 @@ trait IEngineDefinition extends js.Object {
     * @type number
     * @default 4
     */
-  var velocityIterations: js.UndefOr[Double] = js.undefined
+  var velocityIterations: js.UndefOr[Double] = js.native
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
     *
@@ -64,29 +65,55 @@ trait IEngineDefinition extends js.Object {
     * @type world
     * @default a Matter.World instance
     */
-  var world: js.UndefOr[World] = js.undefined
+  var world: js.UndefOr[World] = js.native
 }
 
 object IEngineDefinition {
   @scala.inline
-  def apply(
-    constraintIterations: js.UndefOr[Double] = js.undefined,
-    enableSleeping: js.UndefOr[Boolean] = js.undefined,
-    grid: Grid = null,
-    positionIterations: js.UndefOr[Double] = js.undefined,
-    timing: IEngineTimingOptions = null,
-    velocityIterations: js.UndefOr[Double] = js.undefined,
-    world: World = null
-  ): IEngineDefinition = {
+  def apply(): IEngineDefinition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(constraintIterations)) __obj.updateDynamic("constraintIterations")(constraintIterations.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSleeping)) __obj.updateDynamic("enableSleeping")(enableSleeping.get.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionIterations)) __obj.updateDynamic("positionIterations")(positionIterations.get.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
-    if (!js.isUndefined(velocityIterations)) __obj.updateDynamic("velocityIterations")(velocityIterations.get.asInstanceOf[js.Any])
-    if (world != null) __obj.updateDynamic("world")(world.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEngineDefinition]
   }
+  @scala.inline
+  implicit class IEngineDefinitionOps[Self <: IEngineDefinition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConstraintIterations(value: Double): Self = this.set("constraintIterations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConstraintIterations: Self = this.set("constraintIterations", js.undefined)
+    @scala.inline
+    def setEnableSleeping(value: Boolean): Self = this.set("enableSleeping", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableSleeping: Self = this.set("enableSleeping", js.undefined)
+    @scala.inline
+    def setGrid(value: Grid): Self = this.set("grid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGrid: Self = this.set("grid", js.undefined)
+    @scala.inline
+    def setPositionIterations(value: Double): Self = this.set("positionIterations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePositionIterations: Self = this.set("positionIterations", js.undefined)
+    @scala.inline
+    def setTiming(value: IEngineTimingOptions): Self = this.set("timing", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTiming: Self = this.set("timing", js.undefined)
+    @scala.inline
+    def setVelocityIterations(value: Double): Self = this.set("velocityIterations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVelocityIterations: Self = this.set("velocityIterations", js.undefined)
+    @scala.inline
+    def setWorld(value: World): Self = this.set("world", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorld: Self = this.set("world", js.undefined)
+  }
+  
 }
 

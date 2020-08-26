@@ -19,156 +19,275 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Options extends js.Object {
-  var after: js.UndefOr[StartMiddlewareFunction] = js.undefined
-  var allowedHosts: js.UndefOr[js.Array[String]] = js.undefined
-  var before: js.UndefOr[StartMiddlewareFunction] = js.undefined
-  var bonjour: js.UndefOr[Boolean] = js.undefined
-  var clientLogLevel: js.UndefOr[silent | trace | debug | info | warn | error | none | warning] = js.undefined
-  var compress: js.UndefOr[Boolean] = js.undefined
-  var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.undefined
-  var disableHostCheck: js.UndefOr[Boolean] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[js.Object] = js.undefined
-  var historyApiFallback: js.UndefOr[Boolean | HistoryOptions] = js.undefined
-  var host: js.UndefOr[String] = js.undefined
-  var hot: js.UndefOr[Boolean] = js.undefined
-  var hotOnly: js.UndefOr[Boolean] = js.undefined
-  var http2: js.UndefOr[Boolean] = js.undefined
-  var https: js.UndefOr[Boolean | js.Object] = js.undefined
-  var index: js.UndefOr[String] = js.undefined
-  var injectClient: js.UndefOr[Boolean | InjectClientFunction] = js.undefined
-  var injectHot: js.UndefOr[Boolean | InjectClientFunction] = js.undefined
-  var `inline`: js.UndefOr[Boolean] = js.undefined
-  var `lazy`: js.UndefOr[Boolean] = js.undefined
-  var liveReload: js.UndefOr[Boolean] = js.undefined
-  var mimeTypes: js.UndefOr[typings.webpackBlocksDevServer.anon.String] = js.undefined
-  var noInfo: js.UndefOr[Boolean] = js.undefined
-  var open: js.UndefOr[Boolean | String] = js.undefined
-  var openPage: js.UndefOr[String] = js.undefined
-  var overlay: js.UndefOr[Boolean | Errors] = js.undefined
-  var pfx: js.UndefOr[String] = js.undefined
-  var pfxPassphrase: js.UndefOr[String] = js.undefined
-  var port: js.UndefOr[Double] = js.undefined
-  var proxy: js.UndefOr[js.Object | js.Array[ProxyType]] = js.undefined
-  var public: js.UndefOr[String] = js.undefined
-  var publicPath: js.UndefOr[String] = js.undefined
-  var quiet: js.UndefOr[Boolean] = js.undefined
-  var serveIndex: js.UndefOr[Boolean] = js.undefined
-  var setup: js.UndefOr[InjectClientFunction] = js.undefined
-  var socket: js.UndefOr[String] = js.undefined
-  var socketHost: js.UndefOr[String] = js.undefined
-  var socketPath: js.UndefOr[String] = js.undefined
-  var socketPort: js.UndefOr[Double | String] = js.undefined
-  var staticOptions: js.UndefOr[SetHeadersFunction] = js.undefined
-  var stats: js.UndefOr[none | `errors-only` | minimal | normal | verbose | js.Object] = js.undefined
-  var transportMode: js.UndefOr[sockjs | ws | TransportMode] = js.undefined
-  var useLocalIp: js.UndefOr[Boolean] = js.undefined
-  var watchContentBase: js.UndefOr[Boolean] = js.undefined
-  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
-  var writeToDisk: js.UndefOr[Boolean | WriteToDiskFunction] = js.undefined
+  var after: js.UndefOr[StartMiddlewareFunction] = js.native
+  var allowedHosts: js.UndefOr[js.Array[String]] = js.native
+  var before: js.UndefOr[StartMiddlewareFunction] = js.native
+  var bonjour: js.UndefOr[Boolean] = js.native
+  var clientLogLevel: js.UndefOr[silent | trace | debug | info | warn | error | none | warning] = js.native
+  var compress: js.UndefOr[Boolean] = js.native
+  var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.native
+  var disableHostCheck: js.UndefOr[Boolean] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[js.Object] = js.native
+  var historyApiFallback: js.UndefOr[Boolean | HistoryOptions] = js.native
+  var host: js.UndefOr[String] = js.native
+  var hot: js.UndefOr[Boolean] = js.native
+  var hotOnly: js.UndefOr[Boolean] = js.native
+  var http2: js.UndefOr[Boolean] = js.native
+  var https: js.UndefOr[Boolean | js.Object] = js.native
+  var index: js.UndefOr[String] = js.native
+  var injectClient: js.UndefOr[Boolean | InjectClientFunction] = js.native
+  var injectHot: js.UndefOr[Boolean | InjectClientFunction] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.native
+  var liveReload: js.UndefOr[Boolean] = js.native
+  var mimeTypes: js.UndefOr[typings.webpackBlocksDevServer.anon.String] = js.native
+  var noInfo: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean | String] = js.native
+  var openPage: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[Boolean | Errors] = js.native
+  var pfx: js.UndefOr[String] = js.native
+  var pfxPassphrase: js.UndefOr[String] = js.native
+  var port: js.UndefOr[Double] = js.native
+  var proxy: js.UndefOr[js.Object | js.Array[ProxyType]] = js.native
+  var public: js.UndefOr[String] = js.native
+  var publicPath: js.UndefOr[String] = js.native
+  var quiet: js.UndefOr[Boolean] = js.native
+  var serveIndex: js.UndefOr[Boolean] = js.native
+  var setup: js.UndefOr[InjectClientFunction] = js.native
+  var socket: js.UndefOr[String] = js.native
+  var socketHost: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.native
+  var socketPort: js.UndefOr[Double | String] = js.native
+  var staticOptions: js.UndefOr[SetHeadersFunction] = js.native
+  var stats: js.UndefOr[none | `errors-only` | minimal | normal | verbose | js.Object] = js.native
+  var transportMode: js.UndefOr[sockjs | ws | TransportMode] = js.native
+  var useLocalIp: js.UndefOr[Boolean] = js.native
+  var watchContentBase: js.UndefOr[Boolean] = js.native
+  var watchOptions: js.UndefOr[WatchOptions] = js.native
+  var writeToDisk: js.UndefOr[Boolean | WriteToDiskFunction] = js.native
 }
 
 object Options {
   @scala.inline
-  def apply(
-    after: (/* app */ js.Any, /* server */ js.Any) => Unit = null,
-    allowedHosts: js.Array[String] = null,
-    before: (/* app */ js.Any, /* server */ js.Any) => Unit = null,
-    bonjour: js.UndefOr[Boolean] = js.undefined,
-    clientLogLevel: silent | trace | debug | info | warn | error | none | warning = null,
-    compress: js.UndefOr[Boolean] = js.undefined,
-    contentBase: Boolean | String | js.Array[String] | Double = null,
-    disableHostCheck: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    headers: js.Object = null,
-    historyApiFallback: Boolean | HistoryOptions = null,
-    host: String = null,
-    hot: js.UndefOr[Boolean] = js.undefined,
-    hotOnly: js.UndefOr[Boolean] = js.undefined,
-    http2: js.UndefOr[Boolean] = js.undefined,
-    https: Boolean | js.Object = null,
-    index: String = null,
-    injectClient: Boolean | InjectClientFunction = null,
-    injectHot: Boolean | InjectClientFunction = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    liveReload: js.UndefOr[Boolean] = js.undefined,
-    mimeTypes: typings.webpackBlocksDevServer.anon.String = null,
-    noInfo: js.UndefOr[Boolean] = js.undefined,
-    open: Boolean | String = null,
-    openPage: String = null,
-    overlay: Boolean | Errors = null,
-    pfx: String = null,
-    pfxPassphrase: String = null,
-    port: js.UndefOr[Double] = js.undefined,
-    proxy: js.Object | js.Array[ProxyType] = null,
-    public: String = null,
-    publicPath: String = null,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    serveIndex: js.UndefOr[Boolean] = js.undefined,
-    setup: /* compilerConfig */ js.Any => Boolean = null,
-    socket: String = null,
-    socketHost: String = null,
-    socketPath: String = null,
-    socketPort: Double | String = null,
-    staticOptions: (/* res */ js.Object, /* path */ String, /* stat */ js.Object) => Unit = null,
-    stats: none | `errors-only` | minimal | normal | verbose | js.Object = null,
-    transportMode: sockjs | ws | TransportMode = null,
-    useLocalIp: js.UndefOr[Boolean] = js.undefined,
-    watchContentBase: js.UndefOr[Boolean] = js.undefined,
-    watchOptions: WatchOptions = null,
-    writeToDisk: Boolean | WriteToDiskFunction = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2(after))
-    if (allowedHosts != null) __obj.updateDynamic("allowedHosts")(allowedHosts.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2(before))
-    if (!js.isUndefined(bonjour)) __obj.updateDynamic("bonjour")(bonjour.get.asInstanceOf[js.Any])
-    if (clientLogLevel != null) __obj.updateDynamic("clientLogLevel")(clientLogLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.get.asInstanceOf[js.Any])
-    if (contentBase != null) __obj.updateDynamic("contentBase")(contentBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHostCheck)) __obj.updateDynamic("disableHostCheck")(disableHostCheck.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (historyApiFallback != null) __obj.updateDynamic("historyApiFallback")(historyApiFallback.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(hot)) __obj.updateDynamic("hot")(hot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hotOnly)) __obj.updateDynamic("hotOnly")(hotOnly.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(http2)) __obj.updateDynamic("http2")(http2.get.asInstanceOf[js.Any])
-    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (injectClient != null) __obj.updateDynamic("injectClient")(injectClient.asInstanceOf[js.Any])
-    if (injectHot != null) __obj.updateDynamic("injectHot")(injectHot.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveReload)) __obj.updateDynamic("liveReload")(liveReload.get.asInstanceOf[js.Any])
-    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes.asInstanceOf[js.Any])
-    if (!js.isUndefined(noInfo)) __obj.updateDynamic("noInfo")(noInfo.get.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (openPage != null) __obj.updateDynamic("openPage")(openPage.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
-    if (pfxPassphrase != null) __obj.updateDynamic("pfxPassphrase")(pfxPassphrase.asInstanceOf[js.Any])
-    if (!js.isUndefined(port)) __obj.updateDynamic("port")(port.get.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (public != null) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
-    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(serveIndex)) __obj.updateDynamic("serveIndex")(serveIndex.get.asInstanceOf[js.Any])
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction1(setup))
-    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
-    if (socketHost != null) __obj.updateDynamic("socketHost")(socketHost.asInstanceOf[js.Any])
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (socketPort != null) __obj.updateDynamic("socketPort")(socketPort.asInstanceOf[js.Any])
-    if (staticOptions != null) __obj.updateDynamic("staticOptions")(js.Any.fromFunction3(staticOptions))
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (transportMode != null) __obj.updateDynamic("transportMode")(transportMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalIp)) __obj.updateDynamic("useLocalIp")(useLocalIp.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(watchContentBase)) __obj.updateDynamic("watchContentBase")(watchContentBase.get.asInstanceOf[js.Any])
-    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
-    if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  @scala.inline
+  implicit class OptionsOps[Self <: Options] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAfter(value: (/* app */ js.Any, /* server */ js.Any) => Unit): Self = this.set("after", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteAfter: Self = this.set("after", js.undefined)
+    @scala.inline
+    def setAllowedHostsVarargs(value: String*): Self = this.set("allowedHosts", js.Array(value :_*))
+    @scala.inline
+    def setAllowedHosts(value: js.Array[String]): Self = this.set("allowedHosts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAllowedHosts: Self = this.set("allowedHosts", js.undefined)
+    @scala.inline
+    def setBefore(value: (/* app */ js.Any, /* server */ js.Any) => Unit): Self = this.set("before", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBefore: Self = this.set("before", js.undefined)
+    @scala.inline
+    def setBonjour(value: Boolean): Self = this.set("bonjour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBonjour: Self = this.set("bonjour", js.undefined)
+    @scala.inline
+    def setClientLogLevel(value: silent | trace | debug | info | warn | error | none | warning): Self = this.set("clientLogLevel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientLogLevel: Self = this.set("clientLogLevel", js.undefined)
+    @scala.inline
+    def setCompress(value: Boolean): Self = this.set("compress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompress: Self = this.set("compress", js.undefined)
+    @scala.inline
+    def setContentBaseVarargs(value: String*): Self = this.set("contentBase", js.Array(value :_*))
+    @scala.inline
+    def setContentBase(value: Boolean | String | js.Array[String] | Double): Self = this.set("contentBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentBase: Self = this.set("contentBase", js.undefined)
+    @scala.inline
+    def setDisableHostCheck(value: Boolean): Self = this.set("disableHostCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisableHostCheck: Self = this.set("disableHostCheck", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setHeaders(value: js.Object): Self = this.set("headers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeaders: Self = this.set("headers", js.undefined)
+    @scala.inline
+    def setHistoryApiFallback(value: Boolean | HistoryOptions): Self = this.set("historyApiFallback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHistoryApiFallback: Self = this.set("historyApiFallback", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setHot(value: Boolean): Self = this.set("hot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHot: Self = this.set("hot", js.undefined)
+    @scala.inline
+    def setHotOnly(value: Boolean): Self = this.set("hotOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHotOnly: Self = this.set("hotOnly", js.undefined)
+    @scala.inline
+    def setHttp2(value: Boolean): Self = this.set("http2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttp2: Self = this.set("http2", js.undefined)
+    @scala.inline
+    def setHttps(value: Boolean | js.Object): Self = this.set("https", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHttps: Self = this.set("https", js.undefined)
+    @scala.inline
+    def setIndex(value: String): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setInjectClientFunction1(value: /* compilerConfig */ js.Any => Boolean): Self = this.set("injectClient", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInjectClient(value: Boolean | InjectClientFunction): Self = this.set("injectClient", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInjectClient: Self = this.set("injectClient", js.undefined)
+    @scala.inline
+    def setInjectHotFunction1(value: /* compilerConfig */ js.Any => Boolean): Self = this.set("injectHot", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInjectHot(value: Boolean | InjectClientFunction): Self = this.set("injectHot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInjectHot: Self = this.set("injectHot", js.undefined)
+    @scala.inline
+    def setInline(value: Boolean): Self = this.set("inline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInline: Self = this.set("inline", js.undefined)
+    @scala.inline
+    def setLazy(value: Boolean): Self = this.set("lazy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLazy: Self = this.set("lazy", js.undefined)
+    @scala.inline
+    def setLiveReload(value: Boolean): Self = this.set("liveReload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLiveReload: Self = this.set("liveReload", js.undefined)
+    @scala.inline
+    def setMimeTypes(value: typings.webpackBlocksDevServer.anon.String): Self = this.set("mimeTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMimeTypes: Self = this.set("mimeTypes", js.undefined)
+    @scala.inline
+    def setNoInfo(value: Boolean): Self = this.set("noInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoInfo: Self = this.set("noInfo", js.undefined)
+    @scala.inline
+    def setOpen(value: Boolean | String): Self = this.set("open", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpen: Self = this.set("open", js.undefined)
+    @scala.inline
+    def setOpenPage(value: String): Self = this.set("openPage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenPage: Self = this.set("openPage", js.undefined)
+    @scala.inline
+    def setOverlay(value: Boolean | Errors): Self = this.set("overlay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOverlay: Self = this.set("overlay", js.undefined)
+    @scala.inline
+    def setPfx(value: String): Self = this.set("pfx", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfx: Self = this.set("pfx", js.undefined)
+    @scala.inline
+    def setPfxPassphrase(value: String): Self = this.set("pfxPassphrase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePfxPassphrase: Self = this.set("pfxPassphrase", js.undefined)
+    @scala.inline
+    def setPort(value: Double): Self = this.set("port", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePort: Self = this.set("port", js.undefined)
+    @scala.inline
+    def setProxyVarargs(value: ProxyType*): Self = this.set("proxy", js.Array(value :_*))
+    @scala.inline
+    def setProxy(value: js.Object | js.Array[ProxyType]): Self = this.set("proxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProxy: Self = this.set("proxy", js.undefined)
+    @scala.inline
+    def setPublic(value: String): Self = this.set("public", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublic: Self = this.set("public", js.undefined)
+    @scala.inline
+    def setPublicPath(value: String): Self = this.set("publicPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicPath: Self = this.set("publicPath", js.undefined)
+    @scala.inline
+    def setQuiet(value: Boolean): Self = this.set("quiet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuiet: Self = this.set("quiet", js.undefined)
+    @scala.inline
+    def setServeIndex(value: Boolean): Self = this.set("serveIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServeIndex: Self = this.set("serveIndex", js.undefined)
+    @scala.inline
+    def setSetup(value: /* compilerConfig */ js.Any => Boolean): Self = this.set("setup", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteSetup: Self = this.set("setup", js.undefined)
+    @scala.inline
+    def setSocket(value: String): Self = this.set("socket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocket: Self = this.set("socket", js.undefined)
+    @scala.inline
+    def setSocketHost(value: String): Self = this.set("socketHost", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketHost: Self = this.set("socketHost", js.undefined)
+    @scala.inline
+    def setSocketPath(value: String): Self = this.set("socketPath", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketPath: Self = this.set("socketPath", js.undefined)
+    @scala.inline
+    def setSocketPort(value: Double | String): Self = this.set("socketPort", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSocketPort: Self = this.set("socketPort", js.undefined)
+    @scala.inline
+    def setStaticOptions(value: (/* res */ js.Object, /* path */ String, /* stat */ js.Object) => Unit): Self = this.set("staticOptions", js.Any.fromFunction3(value))
+    @scala.inline
+    def deleteStaticOptions: Self = this.set("staticOptions", js.undefined)
+    @scala.inline
+    def setStats(value: none | `errors-only` | minimal | normal | verbose | js.Object): Self = this.set("stats", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStats: Self = this.set("stats", js.undefined)
+    @scala.inline
+    def setTransportMode(value: sockjs | ws | TransportMode): Self = this.set("transportMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTransportMode: Self = this.set("transportMode", js.undefined)
+    @scala.inline
+    def setUseLocalIp(value: Boolean): Self = this.set("useLocalIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseLocalIp: Self = this.set("useLocalIp", js.undefined)
+    @scala.inline
+    def setWatchContentBase(value: Boolean): Self = this.set("watchContentBase", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchContentBase: Self = this.set("watchContentBase", js.undefined)
+    @scala.inline
+    def setWatchOptions(value: WatchOptions): Self = this.set("watchOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatchOptions: Self = this.set("watchOptions", js.undefined)
+    @scala.inline
+    def setWriteToDiskFunction1(value: /* filePath */ String => Boolean): Self = this.set("writeToDisk", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWriteToDisk(value: Boolean | WriteToDiskFunction): Self = this.set("writeToDisk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWriteToDisk: Self = this.set("writeToDisk", js.undefined)
+  }
+  
 }
 

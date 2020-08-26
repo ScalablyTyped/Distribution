@@ -16,10 +16,5 @@ class ASPxClientCustomDataCallbackEventArgs protected ()
     * @param result A string value that represents the result of server-side processing.
     */
   def this(result: String) = this()
-  /**
-    * Gets a string that contains specific information (if any) that has been passed from the server to the client side for further processing, related to the CustomCallback event.
-    */
-  /* CompleteClass */
-  override var result: String = js.native
 }
 

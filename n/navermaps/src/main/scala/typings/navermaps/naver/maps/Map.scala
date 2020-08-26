@@ -32,8 +32,10 @@ trait Map extends KVO {
   def getZoom(): Double = js.native
   def morph(coord: Coord): Unit = js.native
   def morph(coord: CoordLiteral): Unit = js.native
+  def morph(coord: CoordLiteral, zoom: js.UndefOr[scala.Nothing], transitionOptions: TransitionOptions): Unit = js.native
   def morph(coord: CoordLiteral, zoom: Double): Unit = js.native
   def morph(coord: CoordLiteral, zoom: Double, transitionOptions: TransitionOptions): Unit = js.native
+  def morph(coord: Coord, zoom: js.UndefOr[scala.Nothing], transitionOptions: TransitionOptions): Unit = js.native
   def morph(coord: Coord, zoom: Double): Unit = js.native
   def morph(coord: Coord, zoom: Double, transitionOptions: TransitionOptions): Unit = js.native
   def panBy(offset: Point): Unit = js.native
@@ -61,9 +63,9 @@ trait Map extends KVO {
   def updateBy(coord: CoordLiteral, zoom: Double): Unit = js.native
   def updateBy(coord: Coord, zoom: Double): Unit = js.native
   def zoomBy(deltaZoom: Double): Unit = js.native
+  def zoomBy(deltaZoom: Double, zoomOrigin: js.UndefOr[CoordLiteral], effect: Boolean): Unit = js.native
   def zoomBy(deltaZoom: Double, zoomOrigin: Coord): Unit = js.native
   def zoomBy(deltaZoom: Double, zoomOrigin: CoordLiteral): Unit = js.native
-  def zoomBy(deltaZoom: Double, zoomOrigin: CoordLiteral, effect: Boolean): Unit = js.native
   def zoomBy(deltaZoom: Double, zoomOrigin: Coord, effect: Boolean): Unit = js.native
 }
 

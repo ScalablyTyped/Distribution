@@ -16,10 +16,5 @@ class BootstrapClientTabControlTabEventArgs protected ()
     * @param tab An BootstrapClientTab object representing the tab related to the event.
     */
   def this(tab: typings.devexpressWeb.BootstrapClientTab) = this()
-  /**
-    * Gets the tab object related to the event.
-    */
-  /* CompleteClass */
-  override var tab: typings.devexpressWeb.BootstrapClientTab = js.native
 }
 

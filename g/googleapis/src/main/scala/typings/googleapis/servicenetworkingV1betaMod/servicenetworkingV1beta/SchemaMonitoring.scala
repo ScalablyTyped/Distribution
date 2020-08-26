@@ -50,14 +50,34 @@ trait SchemaMonitoring extends js.Object {
 
 object SchemaMonitoring {
   @scala.inline
-  def apply(
-    consumerDestinations: js.Array[SchemaMonitoringDestination] = null,
-    producerDestinations: js.Array[SchemaMonitoringDestination] = null
-  ): SchemaMonitoring = {
+  def apply(): SchemaMonitoring = {
     val __obj = js.Dynamic.literal()
-    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations.asInstanceOf[js.Any])
-    if (producerDestinations != null) __obj.updateDynamic("producerDestinations")(producerDestinations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMonitoring]
   }
+  @scala.inline
+  implicit class SchemaMonitoringOps[Self <: SchemaMonitoring] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConsumerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = this.set("consumerDestinations", js.Array(value :_*))
+    @scala.inline
+    def setConsumerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = this.set("consumerDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConsumerDestinations: Self = this.set("consumerDestinations", js.undefined)
+    @scala.inline
+    def setProducerDestinationsVarargs(value: SchemaMonitoringDestination*): Self = this.set("producerDestinations", js.Array(value :_*))
+    @scala.inline
+    def setProducerDestinations(value: js.Array[SchemaMonitoringDestination]): Self = this.set("producerDestinations", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProducerDestinations: Self = this.set("producerDestinations", js.undefined)
+  }
+  
 }
 

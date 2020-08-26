@@ -17,20 +17,5 @@ class AppointmentClickEventArgs protected ()
     * @param sourceEvent Specifies an event source.
     */
   def this(appointmentId: String, sourceEvent: js.Any) = this()
-  /**
-    * Gets the client appointment ID for the appointment being clicked.
-    */
-  /* CompleteClass */
-  override var appointmentId: String = js.native
-  /**
-    * Gets or sets whether an event is handled, and that default actions are not required.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets the HTML element that the event was triggered on.
-    */
-  /* CompleteClass */
-  override var htmlElement: js.Any = js.native
 }
 

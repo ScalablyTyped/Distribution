@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object iifMod extends js.Object {
   def iif[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
-  def iif[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
   def iif[T, F](
     condition: js.Function0[Boolean],
-    trueResult: SubscribableOrPromise[T],
+    trueResult: js.UndefOr[SubscribableOrPromise[T]],
     falseResult: SubscribableOrPromise[F]
   ): Observable[T | F] = js.native
+  def iif[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
 }
 

@@ -4,104 +4,152 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ContentEncoding extends js.Object {
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.undefined
+  var alt: js.UndefOr[String] = js.native
   /** Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any. */
-  var bucket: String
+  var bucket: String = js.native
   /**
     * If set, sets the contentEncoding property of the final object to this value. Setting this parameter is equivalent to setting the contentEncoding
     * metadata property. This can be useful when uploading an object with uploadType=media to indicate the encoding of the content being uploaded.
     */
-  var contentEncoding: js.UndefOr[String] = js.undefined
+  var contentEncoding: js.UndefOr[String] = js.native
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.undefined
+  var fields: js.UndefOr[String] = js.native
   /**
     * Makes the operation conditional on whether the object's current generation matches the given value. Setting to 0 makes the operation succeed only if
     * there are no live versions of the object.
     */
-  var ifGenerationMatch: js.UndefOr[String] = js.undefined
+  var ifGenerationMatch: js.UndefOr[String] = js.native
   /**
     * Makes the operation conditional on whether the object's current generation does not match the given value. If no live object exists, the precondition
     * fails. Setting to 0 makes the operation succeed only if there is a live version of the object.
     */
-  var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
+  var ifGenerationNotMatch: js.UndefOr[String] = js.native
   /** Makes the operation conditional on whether the object's current metageneration matches the given value. */
-  var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
+  var ifMetagenerationMatch: js.UndefOr[String] = js.native
   /** Makes the operation conditional on whether the object's current metageneration does not match the given value. */
-  var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
+  var ifMetagenerationNotMatch: js.UndefOr[String] = js.native
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.undefined
+  var key: js.UndefOr[String] = js.native
   /**
     * Resource name of the Cloud KMS key, of the form projects/my-project/locations/global/keyRings/my-kr/cryptoKeys/my-key, that will be used to encrypt the
     * object. Overrides the object metadata's kms_key_name value, if any.
     */
-  var kmsKeyName: js.UndefOr[String] = js.undefined
+  var kmsKeyName: js.UndefOr[String] = js.native
   /**
     * Name of the object. Required when the object metadata is not otherwise provided. Overrides the object metadata's name value, if any. For information
     * about how to URL encode object names to be path safe, see Encoding URI Path Parts.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.undefined
+  var oauth_token: js.UndefOr[String] = js.native
   /** Apply a predefined set of access controls to this object. */
-  var predefinedAcl: js.UndefOr[String] = js.undefined
+  var predefinedAcl: js.UndefOr[String] = js.native
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.undefined
+  var prettyPrint: js.UndefOr[Boolean] = js.native
   /** Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full. */
-  var projection: js.UndefOr[String] = js.undefined
+  var projection: js.UndefOr[String] = js.native
   /**
     * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
     * Overrides userIp if both are provided.
     */
-  var quotaUser: js.UndefOr[String] = js.undefined
+  var quotaUser: js.UndefOr[String] = js.native
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
-  var userIp: js.UndefOr[String] = js.undefined
+  var userIp: js.UndefOr[String] = js.native
   /** The project to be billed for this request, for Requester Pays buckets. */
-  var userProject: js.UndefOr[String] = js.undefined
+  var userProject: js.UndefOr[String] = js.native
 }
 
 object ContentEncoding {
   @scala.inline
-  def apply(
-    bucket: String,
-    alt: String = null,
-    contentEncoding: String = null,
-    fields: String = null,
-    ifGenerationMatch: String = null,
-    ifGenerationNotMatch: String = null,
-    ifMetagenerationMatch: String = null,
-    ifMetagenerationNotMatch: String = null,
-    key: String = null,
-    kmsKeyName: String = null,
-    name: String = null,
-    oauth_token: String = null,
-    predefinedAcl: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    projection: String = null,
-    quotaUser: String = null,
-    userIp: String = null,
-    userProject: String = null
-  ): ContentEncoding = {
+  def apply(bucket: String): ContentEncoding = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch.asInstanceOf[js.Any])
-    if (ifGenerationNotMatch != null) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch.asInstanceOf[js.Any])
-    if (ifMetagenerationNotMatch != null) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (predefinedAcl != null) __obj.updateDynamic("predefinedAcl")(predefinedAcl.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
-    if (userProject != null) __obj.updateDynamic("userProject")(userProject.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentEncoding]
   }
+  @scala.inline
+  implicit class ContentEncodingOps[Self <: ContentEncoding] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: String): Self = this.set("bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlt(value: String): Self = this.set("alt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlt: Self = this.set("alt", js.undefined)
+    @scala.inline
+    def setContentEncoding(value: String): Self = this.set("contentEncoding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentEncoding: Self = this.set("contentEncoding", js.undefined)
+    @scala.inline
+    def setFields(value: String): Self = this.set("fields", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFields: Self = this.set("fields", js.undefined)
+    @scala.inline
+    def setIfGenerationMatch(value: String): Self = this.set("ifGenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfGenerationMatch: Self = this.set("ifGenerationMatch", js.undefined)
+    @scala.inline
+    def setIfGenerationNotMatch(value: String): Self = this.set("ifGenerationNotMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfGenerationNotMatch: Self = this.set("ifGenerationNotMatch", js.undefined)
+    @scala.inline
+    def setIfMetagenerationMatch(value: String): Self = this.set("ifMetagenerationMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMetagenerationMatch: Self = this.set("ifMetagenerationMatch", js.undefined)
+    @scala.inline
+    def setIfMetagenerationNotMatch(value: String): Self = this.set("ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIfMetagenerationNotMatch: Self = this.set("ifMetagenerationNotMatch", js.undefined)
+    @scala.inline
+    def setKey(value: String): Self = this.set("key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("key", js.undefined)
+    @scala.inline
+    def setKmsKeyName(value: String): Self = this.set("kmsKeyName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyName: Self = this.set("kmsKeyName", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOauth_token(value: String): Self = this.set("oauth_token", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOauth_token: Self = this.set("oauth_token", js.undefined)
+    @scala.inline
+    def setPredefinedAcl(value: String): Self = this.set("predefinedAcl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePredefinedAcl: Self = this.set("predefinedAcl", js.undefined)
+    @scala.inline
+    def setPrettyPrint(value: Boolean): Self = this.set("prettyPrint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrettyPrint: Self = this.set("prettyPrint", js.undefined)
+    @scala.inline
+    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setQuotaUser(value: String): Self = this.set("quotaUser", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQuotaUser: Self = this.set("quotaUser", js.undefined)
+    @scala.inline
+    def setUserIp(value: String): Self = this.set("userIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserIp: Self = this.set("userIp", js.undefined)
+    @scala.inline
+    def setUserProject(value: String): Self = this.set("userProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserProject: Self = this.set("userProject", js.undefined)
+  }
+  
 }
 

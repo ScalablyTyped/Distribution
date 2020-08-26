@@ -42,26 +42,54 @@ trait Latency extends js.Object {
 
 object Latency {
   @scala.inline
-  def apply(
-    P10: js.UndefOr[NullableDouble] = js.undefined,
-    P50: js.UndefOr[NullableDouble] = js.undefined,
-    P75: js.UndefOr[NullableDouble] = js.undefined,
-    P85: js.UndefOr[NullableDouble] = js.undefined,
-    P90: js.UndefOr[NullableDouble] = js.undefined,
-    P95: js.UndefOr[NullableDouble] = js.undefined,
-    P99: js.UndefOr[NullableDouble] = js.undefined,
-    P999: js.UndefOr[NullableDouble] = js.undefined
-  ): Latency = {
+  def apply(): Latency = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(P10)) __obj.updateDynamic("P10")(P10.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P50)) __obj.updateDynamic("P50")(P50.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P75)) __obj.updateDynamic("P75")(P75.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P85)) __obj.updateDynamic("P85")(P85.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P90)) __obj.updateDynamic("P90")(P90.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P95)) __obj.updateDynamic("P95")(P95.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P99)) __obj.updateDynamic("P99")(P99.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(P999)) __obj.updateDynamic("P999")(P999.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Latency]
   }
+  @scala.inline
+  implicit class LatencyOps[Self <: Latency] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setP10(value: NullableDouble): Self = this.set("P10", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP10: Self = this.set("P10", js.undefined)
+    @scala.inline
+    def setP50(value: NullableDouble): Self = this.set("P50", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP50: Self = this.set("P50", js.undefined)
+    @scala.inline
+    def setP75(value: NullableDouble): Self = this.set("P75", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP75: Self = this.set("P75", js.undefined)
+    @scala.inline
+    def setP85(value: NullableDouble): Self = this.set("P85", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP85: Self = this.set("P85", js.undefined)
+    @scala.inline
+    def setP90(value: NullableDouble): Self = this.set("P90", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP90: Self = this.set("P90", js.undefined)
+    @scala.inline
+    def setP95(value: NullableDouble): Self = this.set("P95", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP95: Self = this.set("P95", js.undefined)
+    @scala.inline
+    def setP99(value: NullableDouble): Self = this.set("P99", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP99: Self = this.set("P99", js.undefined)
+    @scala.inline
+    def setP999(value: NullableDouble): Self = this.set("P999", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP999: Self = this.set("P999", js.undefined)
+  }
+  
 }
 

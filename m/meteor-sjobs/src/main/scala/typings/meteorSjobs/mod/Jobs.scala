@@ -21,6 +21,7 @@ object Jobs extends js.Object {
     *  You can add the name arguments to specify a specific queue. You can also call an optional callback.
     */
   def clear(state: State): Double = js.native
+  def clear(state: State, name: js.UndefOr[scala.Nothing], cb: js.Function1[/* args */ js.Any, _]): Double = js.native
   def clear(state: State, name: String): Double = js.native
   def clear(state: State, name: String, cb: js.Function1[/* args */ js.Any, _]): Double = js.native
   /**

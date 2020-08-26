@@ -30,6 +30,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def listByPlayer(): GaxiosPromise[SchemaPlayerEventListResponse] = js.native
   def listByPlayer(callback: BodyResponseCallback[SchemaPlayerEventListResponse]): Unit = js.native
+  def listByPlayer(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerEventListResponse] = js.native
   def listByPlayer(params: ParamsResourceEventsListbyplayer): GaxiosPromise[SchemaPlayerEventListResponse] = js.native
   def listByPlayer(
     params: ParamsResourceEventsListbyplayer,
@@ -62,6 +63,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def listDefinitions(): GaxiosPromise[SchemaEventDefinitionListResponse] = js.native
   def listDefinitions(callback: BodyResponseCallback[SchemaEventDefinitionListResponse]): Unit = js.native
+  def listDefinitions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventDefinitionListResponse] = js.native
   def listDefinitions(params: ParamsResourceEventsListdefinitions): GaxiosPromise[SchemaEventDefinitionListResponse] = js.native
   def listDefinitions(
     params: ParamsResourceEventsListdefinitions,
@@ -94,6 +96,7 @@ class ResourceEvents protected () extends js.Object {
     */
   def record(): GaxiosPromise[SchemaEventUpdateResponse] = js.native
   def record(callback: BodyResponseCallback[SchemaEventUpdateResponse]): Unit = js.native
+  def record(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventUpdateResponse] = js.native
   def record(params: ParamsResourceEventsRecord): GaxiosPromise[SchemaEventUpdateResponse] = js.native
   def record(params: ParamsResourceEventsRecord, callback: BodyResponseCallback[SchemaEventUpdateResponse]): Unit = js.native
   def record(

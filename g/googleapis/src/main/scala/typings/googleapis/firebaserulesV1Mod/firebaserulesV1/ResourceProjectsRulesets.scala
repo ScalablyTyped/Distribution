@@ -32,6 +32,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaRuleset] = js.native
   def create(callback: BodyResponseCallback[SchemaRuleset]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRuleset] = js.native
   def create(params: ParamsResourceProjectsRulesetsCreate): GaxiosPromise[SchemaRuleset] = js.native
   def create(params: ParamsResourceProjectsRulesetsCreate, callback: BodyResponseCallback[SchemaRuleset]): Unit = js.native
   def create(
@@ -60,6 +61,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsRulesetsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsRulesetsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -87,6 +89,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaRuleset] = js.native
   def get(callback: BodyResponseCallback[SchemaRuleset]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRuleset] = js.native
   def get(params: ParamsResourceProjectsRulesetsGet): GaxiosPromise[SchemaRuleset] = js.native
   def get(params: ParamsResourceProjectsRulesetsGet, callback: BodyResponseCallback[SchemaRuleset]): Unit = js.native
   def get(
@@ -119,6 +122,7 @@ class ResourceProjectsRulesets protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListRulesetsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListRulesetsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListRulesetsResponse] = js.native
   def list(params: ParamsResourceProjectsRulesetsList): GaxiosPromise[SchemaListRulesetsResponse] = js.native
   def list(
     params: ParamsResourceProjectsRulesetsList,

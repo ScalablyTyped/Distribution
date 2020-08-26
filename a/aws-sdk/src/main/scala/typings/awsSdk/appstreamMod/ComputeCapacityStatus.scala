@@ -26,17 +26,36 @@ trait ComputeCapacityStatus extends js.Object {
 
 object ComputeCapacityStatus {
   @scala.inline
-  def apply(
-    Desired: Integer,
-    Available: js.UndefOr[Integer] = js.undefined,
-    InUse: js.UndefOr[Integer] = js.undefined,
-    Running: js.UndefOr[Integer] = js.undefined
-  ): ComputeCapacityStatus = {
+  def apply(Desired: Integer): ComputeCapacityStatus = {
     val __obj = js.Dynamic.literal(Desired = Desired.asInstanceOf[js.Any])
-    if (!js.isUndefined(Available)) __obj.updateDynamic("Available")(Available.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InUse)) __obj.updateDynamic("InUse")(InUse.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(Running)) __obj.updateDynamic("Running")(Running.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeCapacityStatus]
   }
+  @scala.inline
+  implicit class ComputeCapacityStatusOps[Self <: ComputeCapacityStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDesired(value: Integer): Self = this.set("Desired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAvailable(value: Integer): Self = this.set("Available", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailable: Self = this.set("Available", js.undefined)
+    @scala.inline
+    def setInUse(value: Integer): Self = this.set("InUse", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInUse: Self = this.set("InUse", js.undefined)
+    @scala.inline
+    def setRunning(value: Integer): Self = this.set("Running", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRunning: Self = this.set("Running", js.undefined)
+  }
+  
 }
 

@@ -10,6 +10,7 @@ trait JsenValidator extends js.Object {
   def apply(): Boolean = js.native
   def apply(data: js.Any): Boolean = js.native
   def build(): js.Any = js.native
+  def build(initial: js.UndefOr[scala.Nothing], options: JsenBuildSettings): js.Any = js.native
   def build(initial: js.Any): js.Any = js.native
   def build(initial: js.Any, options: JsenBuildSettings): js.Any = js.native
 }

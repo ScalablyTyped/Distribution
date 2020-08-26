@@ -12,7 +12,7 @@ trait OrganizationArgs extends js.Object {
     */
   val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `SERVICE_CONTROL_POLICY` and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
+    * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `BACKUP_POLICY`, `SERVICE_CONTROL_POLICY`, and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
     */
   val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
@@ -23,16 +23,38 @@ trait OrganizationArgs extends js.Object {
 
 object OrganizationArgs {
   @scala.inline
-  def apply(
-    awsServiceAccessPrincipals: Input[js.Array[Input[String]]] = null,
-    enabledPolicyTypes: Input[js.Array[Input[String]]] = null,
-    featureSet: Input[String] = null
-  ): OrganizationArgs = {
+  def apply(): OrganizationArgs = {
     val __obj = js.Dynamic.literal()
-    if (awsServiceAccessPrincipals != null) __obj.updateDynamic("awsServiceAccessPrincipals")(awsServiceAccessPrincipals.asInstanceOf[js.Any])
-    if (enabledPolicyTypes != null) __obj.updateDynamic("enabledPolicyTypes")(enabledPolicyTypes.asInstanceOf[js.Any])
-    if (featureSet != null) __obj.updateDynamic("featureSet")(featureSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationArgs]
   }
+  @scala.inline
+  implicit class OrganizationArgsOps[Self <: OrganizationArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsServiceAccessPrincipalsVarargs(value: Input[String]*): Self = this.set("awsServiceAccessPrincipals", js.Array(value :_*))
+    @scala.inline
+    def setAwsServiceAccessPrincipals(value: Input[js.Array[Input[String]]]): Self = this.set("awsServiceAccessPrincipals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsServiceAccessPrincipals: Self = this.set("awsServiceAccessPrincipals", js.undefined)
+    @scala.inline
+    def setEnabledPolicyTypesVarargs(value: Input[String]*): Self = this.set("enabledPolicyTypes", js.Array(value :_*))
+    @scala.inline
+    def setEnabledPolicyTypes(value: Input[js.Array[Input[String]]]): Self = this.set("enabledPolicyTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabledPolicyTypes: Self = this.set("enabledPolicyTypes", js.undefined)
+    @scala.inline
+    def setFeatureSet(value: Input[String]): Self = this.set("featureSet", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFeatureSet: Self = this.set("featureSet", js.undefined)
+  }
+  
 }
 

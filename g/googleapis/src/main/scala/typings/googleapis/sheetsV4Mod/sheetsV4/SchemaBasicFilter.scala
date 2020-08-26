@@ -28,16 +28,36 @@ trait SchemaBasicFilter extends js.Object {
 
 object SchemaBasicFilter {
   @scala.inline
-  def apply(
-    criteria: StringDictionary[SchemaFilterCriteria] = null,
-    range: SchemaGridRange = null,
-    sortSpecs: js.Array[SchemaSortSpec] = null
-  ): SchemaBasicFilter = {
+  def apply(): SchemaBasicFilter = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaBasicFilter]
   }
+  @scala.inline
+  implicit class SchemaBasicFilterOps[Self <: SchemaBasicFilter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCriteria(value: StringDictionary[SchemaFilterCriteria]): Self = this.set("criteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCriteria: Self = this.set("criteria", js.undefined)
+    @scala.inline
+    def setRange(value: SchemaGridRange): Self = this.set("range", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRange: Self = this.set("range", js.undefined)
+    @scala.inline
+    def setSortSpecsVarargs(value: SchemaSortSpec*): Self = this.set("sortSpecs", js.Array(value :_*))
+    @scala.inline
+    def setSortSpecs(value: js.Array[SchemaSortSpec]): Self = this.set("sortSpecs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSortSpecs: Self = this.set("sortSpecs", js.undefined)
+  }
+  
 }
 

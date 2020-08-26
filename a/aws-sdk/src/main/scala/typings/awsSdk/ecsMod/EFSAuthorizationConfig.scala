@@ -18,11 +18,30 @@ trait EFSAuthorizationConfig extends js.Object {
 
 object EFSAuthorizationConfig {
   @scala.inline
-  def apply(accessPointId: String = null, iam: EFSAuthorizationConfigIAM = null): EFSAuthorizationConfig = {
+  def apply(): EFSAuthorizationConfig = {
     val __obj = js.Dynamic.literal()
-    if (accessPointId != null) __obj.updateDynamic("accessPointId")(accessPointId.asInstanceOf[js.Any])
-    if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
     __obj.asInstanceOf[EFSAuthorizationConfig]
   }
+  @scala.inline
+  implicit class EFSAuthorizationConfigOps[Self <: EFSAuthorizationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccessPointId(value: String): Self = this.set("accessPointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccessPointId: Self = this.set("accessPointId", js.undefined)
+    @scala.inline
+    def setIam(value: EFSAuthorizationConfigIAM): Self = this.set("iam", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIam: Self = this.set("iam", js.undefined)
+  }
+  
 }
 

@@ -18,6 +18,7 @@ import scala.scalajs.js.annotation._
   * with respect to the text exposed by that interface.
   * @since OOo 1.1.2
   */
+@js.native
 trait XAccessibleHyperlink extends XAccessibleAction {
   /**
     * Returns the index at which the textual representation of the hyperlink (group) ends.
@@ -25,14 +26,14 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleText} interface.
     */
-  val EndIndex: Double
+  val EndIndex: Double = js.native
   /**
     * Returns the index at which the textual representation of the hyperlink (group) starts.
     *
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleHypertext} interface.
     */
-  val StartIndex: Double
+  val StartIndex: Double = js.native
   /**
     * Returns an object that represents the link anchor, as appropriate for that link.
     *
@@ -40,7 +41,7 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * @param nIndex This index identifies the anchor when, as in the case of an image map, there is more than one link represented by this object. The valid m
     * @returns If the index is not valid then an exception is thrown. Otherwise it returns an implementation dependent value.
     */
-  def getAccessibleActionAnchor(nIndex: Double): js.Any
+  def getAccessibleActionAnchor(nIndex: Double): js.Any = js.native
   /**
     * Returns an object that represents the link anchor, as appropriate for that link.
     *
@@ -48,28 +49,28 @@ trait XAccessibleHyperlink extends XAccessibleAction {
     * @param nIndex This index identifies the action object when, as in the case of an image map, there is more than one link represented by this object. The
     * @returns If the index is not valid then an exception is thrown. Otherwise it returns an implementation dependent value.
     */
-  def getAccessibleActionObject(nIndex: Double): js.Any
+  def getAccessibleActionObject(nIndex: Double): js.Any = js.native
   /**
     * Returns the index at which the textual representation of the hyperlink (group) ends.
     *
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleText} interface.
     */
-  def getEndIndex(): Double
+  def getEndIndex(): Double = js.native
   /**
     * Returns the index at which the textual representation of the hyperlink (group) starts.
     *
     * The returned value relates to the {@link XAccessibleText} interface that owns this hyperlink.
     * @returns The index relates to the text exposed by the {@link XAccessibleHypertext} interface.
     */
-  def getStartIndex(): Double
+  def getStartIndex(): Double = js.native
   /**
     * Returns whether the document referenced by this links is still valid.
     *
     * This is a volatile state that may change without further warning like e.g. sending an appropriate event.
     * @returns Returns `TRUE` if the referenced document is still valid and `FALSE` otherwise.
     */
-  def isValid(): Boolean
+  def isValid(): Boolean = js.native
 }
 
 object XAccessibleHyperlink {
@@ -94,5 +95,32 @@ object XAccessibleHyperlink {
     val __obj = js.Dynamic.literal(AccessibleActionCount = AccessibleActionCount.asInstanceOf[js.Any], EndIndex = EndIndex.asInstanceOf[js.Any], StartIndex = StartIndex.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), doAccessibleAction = js.Any.fromFunction1(doAccessibleAction), getAccessibleActionAnchor = js.Any.fromFunction1(getAccessibleActionAnchor), getAccessibleActionCount = js.Any.fromFunction0(getAccessibleActionCount), getAccessibleActionDescription = js.Any.fromFunction1(getAccessibleActionDescription), getAccessibleActionKeyBinding = js.Any.fromFunction1(getAccessibleActionKeyBinding), getAccessibleActionObject = js.Any.fromFunction1(getAccessibleActionObject), getEndIndex = js.Any.fromFunction0(getEndIndex), getStartIndex = js.Any.fromFunction0(getStartIndex), isValid = js.Any.fromFunction0(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XAccessibleHyperlink]
   }
+  @scala.inline
+  implicit class XAccessibleHyperlinkOps[Self <: XAccessibleHyperlink] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndIndex(value: Double): Self = this.set("EndIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("StartIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetAccessibleActionAnchor(value: Double => js.Any): Self = this.set("getAccessibleActionAnchor", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetAccessibleActionObject(value: Double => js.Any): Self = this.set("getAccessibleActionObject", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetEndIndex(value: () => Double): Self = this.set("getEndIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetStartIndex(value: () => Double): Self = this.set("getStartIndex", js.Any.fromFunction0(value))
+    @scala.inline
+    def setIsValid(value: () => Boolean): Self = this.set("isValid", js.Any.fromFunction0(value))
+  }
+  
 }
 

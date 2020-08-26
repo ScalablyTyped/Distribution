@@ -1,7 +1,6 @@
 package typings.mendixmodelsdk.restMod.rest
 
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument
-import typings.mendixmodelsdk.instancesMod.IList
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Interfaces and instance classes for types from the Mendix sub meta model `Rest`.
   */
 /**
-  * See: {@link https://docs.mendix.com/refguide7/consumed-odata-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide7/published-odata-services relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
@@ -19,12 +18,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IConsumedODataService extends IRemoteEntitySourceDocument {
   /**
-    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 8.11.0: deleted
-    * In version 8.9.0: added public
+    * In version 8.12.0: added public
+    * In version 8.11.0: introduced
     */
-  val entities: IList[IODataEntity] = js.native
+  val applicationId: String = js.native
   /**
     * In version 8.10.0: added public
     * In version 8.0.0: introduced

@@ -50,30 +50,70 @@ trait DescribeUpdateActionsMessage extends js.Object {
 
 object DescribeUpdateActionsMessage {
   @scala.inline
-  def apply(
-    CacheClusterIds: CacheClusterIdList = null,
-    Engine: String = null,
-    Marker: String = null,
-    MaxRecords: js.UndefOr[IntegerOptional] = js.undefined,
-    ReplicationGroupIds: ReplicationGroupIdList = null,
-    ServiceUpdateName: String = null,
-    ServiceUpdateStatus: ServiceUpdateStatusList = null,
-    ServiceUpdateTimeRange: TimeRangeFilter = null,
-    ShowNodeLevelUpdateStatus: js.UndefOr[BooleanOptional] = js.undefined,
-    UpdateActionStatus: UpdateActionStatusList = null
-  ): DescribeUpdateActionsMessage = {
+  def apply(): DescribeUpdateActionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (CacheClusterIds != null) __obj.updateDynamic("CacheClusterIds")(CacheClusterIds.asInstanceOf[js.Any])
-    if (Engine != null) __obj.updateDynamic("Engine")(Engine.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxRecords)) __obj.updateDynamic("MaxRecords")(MaxRecords.get.asInstanceOf[js.Any])
-    if (ReplicationGroupIds != null) __obj.updateDynamic("ReplicationGroupIds")(ReplicationGroupIds.asInstanceOf[js.Any])
-    if (ServiceUpdateName != null) __obj.updateDynamic("ServiceUpdateName")(ServiceUpdateName.asInstanceOf[js.Any])
-    if (ServiceUpdateStatus != null) __obj.updateDynamic("ServiceUpdateStatus")(ServiceUpdateStatus.asInstanceOf[js.Any])
-    if (ServiceUpdateTimeRange != null) __obj.updateDynamic("ServiceUpdateTimeRange")(ServiceUpdateTimeRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(ShowNodeLevelUpdateStatus)) __obj.updateDynamic("ShowNodeLevelUpdateStatus")(ShowNodeLevelUpdateStatus.get.asInstanceOf[js.Any])
-    if (UpdateActionStatus != null) __obj.updateDynamic("UpdateActionStatus")(UpdateActionStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUpdateActionsMessage]
   }
+  @scala.inline
+  implicit class DescribeUpdateActionsMessageOps[Self <: DescribeUpdateActionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheClusterIdsVarargs(value: String*): Self = this.set("CacheClusterIds", js.Array(value :_*))
+    @scala.inline
+    def setCacheClusterIds(value: CacheClusterIdList): Self = this.set("CacheClusterIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheClusterIds: Self = this.set("CacheClusterIds", js.undefined)
+    @scala.inline
+    def setEngine(value: String): Self = this.set("Engine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngine: Self = this.set("Engine", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+    @scala.inline
+    def setMaxRecords(value: IntegerOptional): Self = this.set("MaxRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxRecords: Self = this.set("MaxRecords", js.undefined)
+    @scala.inline
+    def setReplicationGroupIdsVarargs(value: String*): Self = this.set("ReplicationGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setReplicationGroupIds(value: ReplicationGroupIdList): Self = this.set("ReplicationGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReplicationGroupIds: Self = this.set("ReplicationGroupIds", js.undefined)
+    @scala.inline
+    def setServiceUpdateName(value: String): Self = this.set("ServiceUpdateName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdateName: Self = this.set("ServiceUpdateName", js.undefined)
+    @scala.inline
+    def setServiceUpdateStatusVarargs(value: ServiceUpdateStatus*): Self = this.set("ServiceUpdateStatus", js.Array(value :_*))
+    @scala.inline
+    def setServiceUpdateStatus(value: ServiceUpdateStatusList): Self = this.set("ServiceUpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdateStatus: Self = this.set("ServiceUpdateStatus", js.undefined)
+    @scala.inline
+    def setServiceUpdateTimeRange(value: TimeRangeFilter): Self = this.set("ServiceUpdateTimeRange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServiceUpdateTimeRange: Self = this.set("ServiceUpdateTimeRange", js.undefined)
+    @scala.inline
+    def setShowNodeLevelUpdateStatus(value: BooleanOptional): Self = this.set("ShowNodeLevelUpdateStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowNodeLevelUpdateStatus: Self = this.set("ShowNodeLevelUpdateStatus", js.undefined)
+    @scala.inline
+    def setUpdateActionStatusVarargs(value: UpdateActionStatus*): Self = this.set("UpdateActionStatus", js.Array(value :_*))
+    @scala.inline
+    def setUpdateActionStatus(value: UpdateActionStatusList): Self = this.set("UpdateActionStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateActionStatus: Self = this.set("UpdateActionStatus", js.undefined)
+  }
+  
 }
 

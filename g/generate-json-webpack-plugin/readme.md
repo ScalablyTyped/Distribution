@@ -12,7 +12,7 @@ Webpack plugin to generate a custom JSON asset
 | Keywords           | webpack |
 | # releases         | 3 |
 | # dependents       | 14 |
-| # downloads        | 414346 |
+| # downloads        | 429693 |
 | # stars            | 1 |
 
 ## Links

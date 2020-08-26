@@ -12,7 +12,7 @@ A pageable Backbone.Collection superset. Supports server-side/client-side/infini
 | Keywords           | backbone |
 | # releases         | 3 |
 | # dependents       | 13 |
-| # downloads        | 380600 |
+| # downloads        | 388049 |
 | # stars            | 0 |
 
 ## Links

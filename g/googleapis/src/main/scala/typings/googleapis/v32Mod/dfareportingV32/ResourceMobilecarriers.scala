@@ -28,6 +28,7 @@ class ResourceMobilecarriers protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaMobileCarrier] = js.native
   def get(callback: BodyResponseCallback[SchemaMobileCarrier]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileCarrier] = js.native
   def get(params: ParamsResourceMobilecarriersGet): GaxiosPromise[SchemaMobileCarrier] = js.native
   def get(params: ParamsResourceMobilecarriersGet, callback: BodyResponseCallback[SchemaMobileCarrier]): Unit = js.native
   def get(
@@ -55,6 +56,7 @@ class ResourceMobilecarriers protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMobileCarriersListResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
   def list(params: ParamsResourceMobilecarriersList): GaxiosPromise[SchemaMobileCarriersListResponse] = js.native
   def list(
     params: ParamsResourceMobilecarriersList,

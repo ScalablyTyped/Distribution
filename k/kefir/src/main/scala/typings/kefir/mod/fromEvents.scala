@@ -1,7 +1,7 @@
 package typings.kefir.mod
 
 import typings.kefir.anon.Off
-import typings.node.NodeJS.EventEmitter
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.EventTarget
 import scala.scalajs.js
 import scala.scalajs.js.`|`

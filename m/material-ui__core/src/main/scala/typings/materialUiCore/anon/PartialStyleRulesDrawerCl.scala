@@ -23,32 +23,66 @@ trait PartialStyleRulesDrawerCl extends js.Object {
 
 object PartialStyleRulesDrawerCl {
   @scala.inline
-  def apply(
-    docked: CSSProperties = null,
-    modal: CSSProperties = null,
-    paper: CSSProperties = null,
-    paperAnchorBottom: CSSProperties = null,
-    paperAnchorDockedBottom: CSSProperties = null,
-    paperAnchorDockedLeft: CSSProperties = null,
-    paperAnchorDockedRight: CSSProperties = null,
-    paperAnchorDockedTop: CSSProperties = null,
-    paperAnchorLeft: CSSProperties = null,
-    paperAnchorRight: CSSProperties = null,
-    paperAnchorTop: CSSProperties = null
-  ): PartialStyleRulesDrawerCl = {
+  def apply(): PartialStyleRulesDrawerCl = {
     val __obj = js.Dynamic.literal()
-    if (docked != null) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
-    if (modal != null) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (paper != null) __obj.updateDynamic("paper")(paper.asInstanceOf[js.Any])
-    if (paperAnchorBottom != null) __obj.updateDynamic("paperAnchorBottom")(paperAnchorBottom.asInstanceOf[js.Any])
-    if (paperAnchorDockedBottom != null) __obj.updateDynamic("paperAnchorDockedBottom")(paperAnchorDockedBottom.asInstanceOf[js.Any])
-    if (paperAnchorDockedLeft != null) __obj.updateDynamic("paperAnchorDockedLeft")(paperAnchorDockedLeft.asInstanceOf[js.Any])
-    if (paperAnchorDockedRight != null) __obj.updateDynamic("paperAnchorDockedRight")(paperAnchorDockedRight.asInstanceOf[js.Any])
-    if (paperAnchorDockedTop != null) __obj.updateDynamic("paperAnchorDockedTop")(paperAnchorDockedTop.asInstanceOf[js.Any])
-    if (paperAnchorLeft != null) __obj.updateDynamic("paperAnchorLeft")(paperAnchorLeft.asInstanceOf[js.Any])
-    if (paperAnchorRight != null) __obj.updateDynamic("paperAnchorRight")(paperAnchorRight.asInstanceOf[js.Any])
-    if (paperAnchorTop != null) __obj.updateDynamic("paperAnchorTop")(paperAnchorTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesDrawerCl]
   }
+  @scala.inline
+  implicit class PartialStyleRulesDrawerClOps[Self <: PartialStyleRulesDrawerCl] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDocked(value: CSSProperties): Self = this.set("docked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDocked: Self = this.set("docked", js.undefined)
+    @scala.inline
+    def setModal(value: CSSProperties): Self = this.set("modal", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModal: Self = this.set("modal", js.undefined)
+    @scala.inline
+    def setPaper(value: CSSProperties): Self = this.set("paper", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaper: Self = this.set("paper", js.undefined)
+    @scala.inline
+    def setPaperAnchorBottom(value: CSSProperties): Self = this.set("paperAnchorBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorBottom: Self = this.set("paperAnchorBottom", js.undefined)
+    @scala.inline
+    def setPaperAnchorDockedBottom(value: CSSProperties): Self = this.set("paperAnchorDockedBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorDockedBottom: Self = this.set("paperAnchorDockedBottom", js.undefined)
+    @scala.inline
+    def setPaperAnchorDockedLeft(value: CSSProperties): Self = this.set("paperAnchorDockedLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorDockedLeft: Self = this.set("paperAnchorDockedLeft", js.undefined)
+    @scala.inline
+    def setPaperAnchorDockedRight(value: CSSProperties): Self = this.set("paperAnchorDockedRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorDockedRight: Self = this.set("paperAnchorDockedRight", js.undefined)
+    @scala.inline
+    def setPaperAnchorDockedTop(value: CSSProperties): Self = this.set("paperAnchorDockedTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorDockedTop: Self = this.set("paperAnchorDockedTop", js.undefined)
+    @scala.inline
+    def setPaperAnchorLeft(value: CSSProperties): Self = this.set("paperAnchorLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorLeft: Self = this.set("paperAnchorLeft", js.undefined)
+    @scala.inline
+    def setPaperAnchorRight(value: CSSProperties): Self = this.set("paperAnchorRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorRight: Self = this.set("paperAnchorRight", js.undefined)
+    @scala.inline
+    def setPaperAnchorTop(value: CSSProperties): Self = this.set("paperAnchorTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaperAnchorTop: Self = this.set("paperAnchorTop", js.undefined)
+  }
+  
 }
 

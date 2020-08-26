@@ -6,46 +6,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Methods extends js.Object {
+  def create(request: CreatePayload): js.Promise[ResponsePayload] = js.native
   /** Creating Requests */
-  def create(request: CreatePayload, cb: ZendeskCallback[_, _]): ResponsePayload
+  def create(request: CreatePayload, cb: ZendeskCallback[_, _]): ResponsePayload = js.native
+  def getComment(requestId: ZendeskID, commentId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Requests.Comments.ResponsePayload] = js.native
   /** Get Comment */
-  def getComment(requestId: ZendeskID, commentId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Requests.Comments.ResponsePayload
+  def getComment(requestId: ZendeskID, commentId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Requests.Comments.ResponsePayload = js.native
+  def getRequest(requestId: ZendeskID): js.Promise[ResponsePayload] = js.native
   /** Viewing Requests */
-  def getRequest(requestId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload
+  def getRequest(requestId: ZendeskID, cb: ZendeskCallback[_, _]): ResponsePayload = js.native
+  def list(): js.Promise[ListPayload] = js.native
   /** Listing Requests */
-  def list(cb: ZendeskCallback[_, _]): ListPayload
-  def listByOrganization(organizationId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload
-  def listByUser(userId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload
-  def listCCD(organizationId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload
+  def list(cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def listByOrganization(organizationId: ZendeskID): js.Promise[ListPayload] = js.native
+  def listByOrganization(organizationId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def listByUser(userId: ZendeskID): js.Promise[ListPayload] = js.native
+  def listByUser(userId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def listCCD(organizationId: ZendeskID): js.Promise[ListPayload] = js.native
+  def listCCD(organizationId: ZendeskID, cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def listComments(requestId: ZendeskID): js.Promise[typings.nodeZendesk.mod.Requests.Comments.ListPayload] = js.native
   /** Listing Comments */
-  def listComments(requestId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Requests.Comments.ListPayload
-  def listOpen(cb: ZendeskCallback[_, _]): ListPayload
-  def listSolved(cb: ZendeskCallback[_, _]): ListPayload
+  def listComments(requestId: ZendeskID, cb: ZendeskCallback[_, _]): typings.nodeZendesk.mod.Requests.Comments.ListPayload = js.native
+  def listOpen(): js.Promise[ListPayload] = js.native
+  def listOpen(cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def listSolved(): js.Promise[ListPayload] = js.native
+  def listSolved(cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def requestAll(httpMethod: String, fields: js.Any): js.Promise[ListPayload] = js.native
   /** Inherited */
-  def requestAll(httpMethod: String, fields: js.Any, cb: ZendeskCallback[_, _]): ListPayload
+  def requestAll(httpMethod: String, fields: js.Any, cb: ZendeskCallback[_, _]): ListPayload = js.native
+  def update(requestId: ZendeskID, request: UpdatePayload): js.Promise[ResponsePayload] = js.native
   /** Updating Requests */
-  def update(requestId: ZendeskID, request: UpdatePayload, cb: ZendeskCallback[_, _]): ResponsePayload
-}
-
-object Methods {
-  @scala.inline
-  def apply(
-    create: (CreatePayload, ZendeskCallback[_, _]) => ResponsePayload,
-    getComment: (ZendeskID, ZendeskID, ZendeskCallback[_, _]) => typings.nodeZendesk.mod.Requests.Comments.ResponsePayload,
-    getRequest: (ZendeskID, ZendeskCallback[_, _]) => ResponsePayload,
-    list: ZendeskCallback[_, _] => ListPayload,
-    listByOrganization: (ZendeskID, ZendeskCallback[_, _]) => ListPayload,
-    listByUser: (ZendeskID, ZendeskCallback[_, _]) => ListPayload,
-    listCCD: (ZendeskID, ZendeskCallback[_, _]) => ListPayload,
-    listComments: (ZendeskID, ZendeskCallback[_, _]) => typings.nodeZendesk.mod.Requests.Comments.ListPayload,
-    listOpen: ZendeskCallback[_, _] => ListPayload,
-    listSolved: ZendeskCallback[_, _] => ListPayload,
-    requestAll: (String, js.Any, ZendeskCallback[_, _]) => ListPayload,
-    update: (ZendeskID, UpdatePayload, ZendeskCallback[_, _]) => ResponsePayload
-  ): Methods = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create), getComment = js.Any.fromFunction3(getComment), getRequest = js.Any.fromFunction2(getRequest), list = js.Any.fromFunction1(list), listByOrganization = js.Any.fromFunction2(listByOrganization), listByUser = js.Any.fromFunction2(listByUser), listCCD = js.Any.fromFunction2(listCCD), listComments = js.Any.fromFunction2(listComments), listOpen = js.Any.fromFunction1(listOpen), listSolved = js.Any.fromFunction1(listSolved), requestAll = js.Any.fromFunction3(requestAll), update = js.Any.fromFunction3(update))
-    __obj.asInstanceOf[Methods]
-  }
+  def update(requestId: ZendeskID, request: UpdatePayload, cb: ZendeskCallback[_, _]): ResponsePayload = js.native
 }
 

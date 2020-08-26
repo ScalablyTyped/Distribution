@@ -5,51 +5,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SortableEvents extends js.Object {
-  var activate: js.UndefOr[SortableEvent] = js.undefined
-  var beforeStop: js.UndefOr[SortableEvent] = js.undefined
-  var change: js.UndefOr[SortableEvent] = js.undefined
-  var deactivate: js.UndefOr[SortableEvent] = js.undefined
-  var out: js.UndefOr[SortableEvent] = js.undefined
-  var over: js.UndefOr[SortableEvent] = js.undefined
-  var receive: js.UndefOr[SortableEvent] = js.undefined
-  var remove: js.UndefOr[SortableEvent] = js.undefined
-  var sort: js.UndefOr[SortableEvent] = js.undefined
-  var start: js.UndefOr[SortableEvent] = js.undefined
-  var stop: js.UndefOr[SortableEvent] = js.undefined
-  var update: js.UndefOr[SortableEvent] = js.undefined
+  var activate: js.UndefOr[SortableEvent] = js.native
+  var beforeStop: js.UndefOr[SortableEvent] = js.native
+  var change: js.UndefOr[SortableEvent] = js.native
+  var deactivate: js.UndefOr[SortableEvent] = js.native
+  var out: js.UndefOr[SortableEvent] = js.native
+  var over: js.UndefOr[SortableEvent] = js.native
+  var receive: js.UndefOr[SortableEvent] = js.native
+  var remove: js.UndefOr[SortableEvent] = js.native
+  var sort: js.UndefOr[SortableEvent] = js.native
+  var start: js.UndefOr[SortableEvent] = js.native
+  var stop: js.UndefOr[SortableEvent] = js.native
+  var update: js.UndefOr[SortableEvent] = js.native
 }
 
 object SortableEvents {
   @scala.inline
-  def apply(
-    activate: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    beforeStop: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    change: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    deactivate: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    out: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    over: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    receive: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    remove: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    sort: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    start: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null,
-    update: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit = null
-  ): SortableEvents = {
+  def apply(): SortableEvents = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2(activate))
-    if (beforeStop != null) __obj.updateDynamic("beforeStop")(js.Any.fromFunction2(beforeStop))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2(change))
-    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction2(deactivate))
-    if (out != null) __obj.updateDynamic("out")(js.Any.fromFunction2(out))
-    if (over != null) __obj.updateDynamic("over")(js.Any.fromFunction2(over))
-    if (receive != null) __obj.updateDynamic("receive")(js.Any.fromFunction2(receive))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction2(remove))
-    if (sort != null) __obj.updateDynamic("sort")(js.Any.fromFunction2(sort))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2(start))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2(stop))
-    if (update != null) __obj.updateDynamic("update")(js.Any.fromFunction2(update))
     __obj.asInstanceOf[SortableEvents]
   }
+  @scala.inline
+  implicit class SortableEventsOps[Self <: SortableEvents] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivate(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("activate", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteActivate: Self = this.set("activate", js.undefined)
+    @scala.inline
+    def setBeforeStop(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("beforeStop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteBeforeStop: Self = this.set("beforeStop", js.undefined)
+    @scala.inline
+    def setChange(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("change", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteChange: Self = this.set("change", js.undefined)
+    @scala.inline
+    def setDeactivate(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("deactivate", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteDeactivate: Self = this.set("deactivate", js.undefined)
+    @scala.inline
+    def setOut(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("out", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOut: Self = this.set("out", js.undefined)
+    @scala.inline
+    def setOver(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("over", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOver: Self = this.set("over", js.undefined)
+    @scala.inline
+    def setReceive(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("receive", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteReceive: Self = this.set("receive", js.undefined)
+    @scala.inline
+    def setRemove(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("remove", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteRemove: Self = this.set("remove", js.undefined)
+    @scala.inline
+    def setSort(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("sort", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteSort: Self = this.set("sort", js.undefined)
+    @scala.inline
+    def setStart(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("start", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStart: Self = this.set("start", js.undefined)
+    @scala.inline
+    def setStop(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("stop", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteStop: Self = this.set("stop", js.undefined)
+    @scala.inline
+    def setUpdate(value: (/* event */ JQueryEventObject, /* ui */ SortableUIParams) => Unit): Self = this.set("update", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteUpdate: Self = this.set("update", js.undefined)
+  }
+  
 }
 

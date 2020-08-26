@@ -6,35 +6,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UnmarshalledWriteTreatmentResource extends WriteTreatmentResource {
   /**
     * The message configuration settings.
     */
   @JSName("MessageConfiguration")
-  var MessageConfiguration_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledMessageConfiguration] = js.undefined
+  var MessageConfiguration_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledMessageConfiguration] = js.native
   /**
     * The campaign schedule.
     */
   @JSName("Schedule")
-  var Schedule_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledSchedule] = js.undefined
+  var Schedule_UnmarshalledWriteTreatmentResource: js.UndefOr[UnmarshalledSchedule] = js.native
 }
 
 object UnmarshalledWriteTreatmentResource {
   @scala.inline
-  def apply(
-    MessageConfiguration: UnmarshalledMessageConfiguration = null,
-    Schedule: UnmarshalledSchedule = null,
-    SizePercent: js.UndefOr[Double] = js.undefined,
-    TreatmentDescription: String = null,
-    TreatmentName: String = null
-  ): UnmarshalledWriteTreatmentResource = {
+  def apply(): UnmarshalledWriteTreatmentResource = {
     val __obj = js.Dynamic.literal()
-    if (MessageConfiguration != null) __obj.updateDynamic("MessageConfiguration")(MessageConfiguration.asInstanceOf[js.Any])
-    if (Schedule != null) __obj.updateDynamic("Schedule")(Schedule.asInstanceOf[js.Any])
-    if (!js.isUndefined(SizePercent)) __obj.updateDynamic("SizePercent")(SizePercent.get.asInstanceOf[js.Any])
-    if (TreatmentDescription != null) __obj.updateDynamic("TreatmentDescription")(TreatmentDescription.asInstanceOf[js.Any])
-    if (TreatmentName != null) __obj.updateDynamic("TreatmentName")(TreatmentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnmarshalledWriteTreatmentResource]
   }
+  @scala.inline
+  implicit class UnmarshalledWriteTreatmentResourceOps[Self <: UnmarshalledWriteTreatmentResource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMessageConfiguration(value: UnmarshalledMessageConfiguration): Self = this.set("MessageConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessageConfiguration: Self = this.set("MessageConfiguration", js.undefined)
+    @scala.inline
+    def setSchedule(value: UnmarshalledSchedule): Self = this.set("Schedule", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchedule: Self = this.set("Schedule", js.undefined)
+  }
+  
 }
 

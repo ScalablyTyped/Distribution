@@ -35,7 +35,7 @@ trait ConfigurationItem extends js.Object {
     */
   var configurationItemMD5Hash: js.UndefOr[ConfigurationItemMD5Hash] = js.native
   /**
-    * The configuration item status.
+    * The configuration item status. The valid values are:   OK – The resource configuration has been updated   ResourceDiscovered – The resource was newly discovered   ResourceNotRecorded – The resource was discovered but its configuration was not recorded since the recorder excludes the recording of resources of this type   ResourceDeleted – The resource was deleted   ResourceDeletedNotRecorded – The resource was deleted but its configuration was not recorded since the recorder excludes the recording of resources of this type    The CIs do not incur any cost. 
     */
   var configurationItemStatus: js.UndefOr[ConfigurationItemStatus] = js.native
   /**
@@ -82,46 +82,98 @@ trait ConfigurationItem extends js.Object {
 
 object ConfigurationItem {
   @scala.inline
-  def apply(
-    accountId: AccountId = null,
-    arn: ARN = null,
-    availabilityZone: AvailabilityZone = null,
-    awsRegion: AwsRegion = null,
-    configuration: Configuration = null,
-    configurationItemCaptureTime: ConfigurationItemCaptureTime = null,
-    configurationItemMD5Hash: ConfigurationItemMD5Hash = null,
-    configurationItemStatus: ConfigurationItemStatus = null,
-    configurationStateId: ConfigurationStateId = null,
-    relatedEvents: RelatedEventList = null,
-    relationships: RelationshipList = null,
-    resourceCreationTime: ResourceCreationTime = null,
-    resourceId: ResourceId = null,
-    resourceName: ResourceName = null,
-    resourceType: ResourceType = null,
-    supplementaryConfiguration: SupplementaryConfiguration = null,
-    tags: Tags = null,
-    version: Version = null
-  ): ConfigurationItem = {
+  def apply(): ConfigurationItem = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (awsRegion != null) __obj.updateDynamic("awsRegion")(awsRegion.asInstanceOf[js.Any])
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (configurationItemCaptureTime != null) __obj.updateDynamic("configurationItemCaptureTime")(configurationItemCaptureTime.asInstanceOf[js.Any])
-    if (configurationItemMD5Hash != null) __obj.updateDynamic("configurationItemMD5Hash")(configurationItemMD5Hash.asInstanceOf[js.Any])
-    if (configurationItemStatus != null) __obj.updateDynamic("configurationItemStatus")(configurationItemStatus.asInstanceOf[js.Any])
-    if (configurationStateId != null) __obj.updateDynamic("configurationStateId")(configurationStateId.asInstanceOf[js.Any])
-    if (relatedEvents != null) __obj.updateDynamic("relatedEvents")(relatedEvents.asInstanceOf[js.Any])
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
-    if (resourceCreationTime != null) __obj.updateDynamic("resourceCreationTime")(resourceCreationTime.asInstanceOf[js.Any])
-    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (supplementaryConfiguration != null) __obj.updateDynamic("supplementaryConfiguration")(supplementaryConfiguration.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationItem]
   }
+  @scala.inline
+  implicit class ConfigurationItemOps[Self <: ConfigurationItem] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: AccountId): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setArn(value: ARN): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAvailabilityZone(value: AvailabilityZone): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setAwsRegion(value: AwsRegion): Self = this.set("awsRegion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsRegion: Self = this.set("awsRegion", js.undefined)
+    @scala.inline
+    def setConfiguration(value: Configuration): Self = this.set("configuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfiguration: Self = this.set("configuration", js.undefined)
+    @scala.inline
+    def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = this.set("configurationItemCaptureTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationItemCaptureTime: Self = this.set("configurationItemCaptureTime", js.undefined)
+    @scala.inline
+    def setConfigurationItemMD5Hash(value: ConfigurationItemMD5Hash): Self = this.set("configurationItemMD5Hash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationItemMD5Hash: Self = this.set("configurationItemMD5Hash", js.undefined)
+    @scala.inline
+    def setConfigurationItemStatus(value: ConfigurationItemStatus): Self = this.set("configurationItemStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationItemStatus: Self = this.set("configurationItemStatus", js.undefined)
+    @scala.inline
+    def setConfigurationStateId(value: ConfigurationStateId): Self = this.set("configurationStateId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationStateId: Self = this.set("configurationStateId", js.undefined)
+    @scala.inline
+    def setRelatedEventsVarargs(value: RelatedEvent*): Self = this.set("relatedEvents", js.Array(value :_*))
+    @scala.inline
+    def setRelatedEvents(value: RelatedEventList): Self = this.set("relatedEvents", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelatedEvents: Self = this.set("relatedEvents", js.undefined)
+    @scala.inline
+    def setRelationshipsVarargs(value: Relationship*): Self = this.set("relationships", js.Array(value :_*))
+    @scala.inline
+    def setRelationships(value: RelationshipList): Self = this.set("relationships", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRelationships: Self = this.set("relationships", js.undefined)
+    @scala.inline
+    def setResourceCreationTime(value: ResourceCreationTime): Self = this.set("resourceCreationTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceCreationTime: Self = this.set("resourceCreationTime", js.undefined)
+    @scala.inline
+    def setResourceId(value: ResourceId): Self = this.set("resourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("resourceId", js.undefined)
+    @scala.inline
+    def setResourceName(value: ResourceName): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+    @scala.inline
+    def setSupplementaryConfiguration(value: SupplementaryConfiguration): Self = this.set("supplementaryConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSupplementaryConfiguration: Self = this.set("supplementaryConfiguration", js.undefined)
+    @scala.inline
+    def setTags(value: Tags): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+    @scala.inline
+    def setVersion(value: Version): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

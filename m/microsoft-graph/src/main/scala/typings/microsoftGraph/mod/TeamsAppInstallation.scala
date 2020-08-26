@@ -4,21 +4,40 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TeamsAppInstallation extends Entity {
   // The app that is installed.
-  var teamsApp: js.UndefOr[TeamsApp] = js.undefined
+  var teamsApp: js.UndefOr[TeamsApp] = js.native
   // The details of this version of the app.
-  var teamsAppDefinition: js.UndefOr[TeamsAppDefinition] = js.undefined
+  var teamsAppDefinition: js.UndefOr[TeamsAppDefinition] = js.native
 }
 
 object TeamsAppInstallation {
   @scala.inline
-  def apply(id: String = null, teamsApp: TeamsApp = null, teamsAppDefinition: TeamsAppDefinition = null): TeamsAppInstallation = {
+  def apply(): TeamsAppInstallation = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (teamsApp != null) __obj.updateDynamic("teamsApp")(teamsApp.asInstanceOf[js.Any])
-    if (teamsAppDefinition != null) __obj.updateDynamic("teamsAppDefinition")(teamsAppDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAppInstallation]
   }
+  @scala.inline
+  implicit class TeamsAppInstallationOps[Self <: TeamsAppInstallation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setTeamsApp(value: TeamsApp): Self = this.set("teamsApp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamsApp: Self = this.set("teamsApp", js.undefined)
+    @scala.inline
+    def setTeamsAppDefinition(value: TeamsAppDefinition): Self = this.set("teamsAppDefinition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTeamsAppDefinition: Self = this.set("teamsAppDefinition", js.undefined)
+  }
+  
 }
 

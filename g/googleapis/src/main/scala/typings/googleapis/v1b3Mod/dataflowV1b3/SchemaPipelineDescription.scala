@@ -28,16 +28,40 @@ trait SchemaPipelineDescription extends js.Object {
 
 object SchemaPipelineDescription {
   @scala.inline
-  def apply(
-    displayData: js.Array[SchemaDisplayData] = null,
-    executionPipelineStage: js.Array[SchemaExecutionStageSummary] = null,
-    originalPipelineTransform: js.Array[SchemaTransformSummary] = null
-  ): SchemaPipelineDescription = {
+  def apply(): SchemaPipelineDescription = {
     val __obj = js.Dynamic.literal()
-    if (displayData != null) __obj.updateDynamic("displayData")(displayData.asInstanceOf[js.Any])
-    if (executionPipelineStage != null) __obj.updateDynamic("executionPipelineStage")(executionPipelineStage.asInstanceOf[js.Any])
-    if (originalPipelineTransform != null) __obj.updateDynamic("originalPipelineTransform")(originalPipelineTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPipelineDescription]
   }
+  @scala.inline
+  implicit class SchemaPipelineDescriptionOps[Self <: SchemaPipelineDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayDataVarargs(value: SchemaDisplayData*): Self = this.set("displayData", js.Array(value :_*))
+    @scala.inline
+    def setDisplayData(value: js.Array[SchemaDisplayData]): Self = this.set("displayData", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayData: Self = this.set("displayData", js.undefined)
+    @scala.inline
+    def setExecutionPipelineStageVarargs(value: SchemaExecutionStageSummary*): Self = this.set("executionPipelineStage", js.Array(value :_*))
+    @scala.inline
+    def setExecutionPipelineStage(value: js.Array[SchemaExecutionStageSummary]): Self = this.set("executionPipelineStage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionPipelineStage: Self = this.set("executionPipelineStage", js.undefined)
+    @scala.inline
+    def setOriginalPipelineTransformVarargs(value: SchemaTransformSummary*): Self = this.set("originalPipelineTransform", js.Array(value :_*))
+    @scala.inline
+    def setOriginalPipelineTransform(value: js.Array[SchemaTransformSummary]): Self = this.set("originalPipelineTransform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginalPipelineTransform: Self = this.set("originalPipelineTransform", js.undefined)
+  }
+  
 }
 

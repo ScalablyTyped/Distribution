@@ -39,18 +39,40 @@ trait SchemaSource extends js.Object {
 
 object SchemaSource {
   @scala.inline
-  def apply(
-    additionalContexts: js.Array[SchemaSourceContext] = null,
-    artifactStorageSourceUri: String = null,
-    context: SchemaSourceContext = null,
-    fileHashes: StringDictionary[SchemaFileHashes] = null
-  ): SchemaSource = {
+  def apply(): SchemaSource = {
     val __obj = js.Dynamic.literal()
-    if (additionalContexts != null) __obj.updateDynamic("additionalContexts")(additionalContexts.asInstanceOf[js.Any])
-    if (artifactStorageSourceUri != null) __obj.updateDynamic("artifactStorageSourceUri")(artifactStorageSourceUri.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (fileHashes != null) __obj.updateDynamic("fileHashes")(fileHashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSource]
   }
+  @scala.inline
+  implicit class SchemaSourceOps[Self <: SchemaSource] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalContextsVarargs(value: SchemaSourceContext*): Self = this.set("additionalContexts", js.Array(value :_*))
+    @scala.inline
+    def setAdditionalContexts(value: js.Array[SchemaSourceContext]): Self = this.set("additionalContexts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalContexts: Self = this.set("additionalContexts", js.undefined)
+    @scala.inline
+    def setArtifactStorageSourceUri(value: String): Self = this.set("artifactStorageSourceUri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArtifactStorageSourceUri: Self = this.set("artifactStorageSourceUri", js.undefined)
+    @scala.inline
+    def setContext(value: SchemaSourceContext): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = this.set("fileHashes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileHashes: Self = this.set("fileHashes", js.undefined)
+  }
+  
 }
 

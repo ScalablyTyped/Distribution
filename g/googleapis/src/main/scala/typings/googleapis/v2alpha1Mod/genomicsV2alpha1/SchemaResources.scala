@@ -32,18 +32,42 @@ trait SchemaResources extends js.Object {
 
 object SchemaResources {
   @scala.inline
-  def apply(
-    projectId: String = null,
-    regions: js.Array[String] = null,
-    virtualMachine: SchemaVirtualMachine = null,
-    zones: js.Array[String] = null
-  ): SchemaResources = {
+  def apply(): SchemaResources = {
     val __obj = js.Dynamic.literal()
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
-    if (virtualMachine != null) __obj.updateDynamic("virtualMachine")(virtualMachine.asInstanceOf[js.Any])
-    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaResources]
   }
+  @scala.inline
+  implicit class SchemaResourcesOps[Self <: SchemaResources] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setProjectId(value: String): Self = this.set("projectId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjectId: Self = this.set("projectId", js.undefined)
+    @scala.inline
+    def setRegionsVarargs(value: String*): Self = this.set("regions", js.Array(value :_*))
+    @scala.inline
+    def setRegions(value: js.Array[String]): Self = this.set("regions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegions: Self = this.set("regions", js.undefined)
+    @scala.inline
+    def setVirtualMachine(value: SchemaVirtualMachine): Self = this.set("virtualMachine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualMachine: Self = this.set("virtualMachine", js.undefined)
+    @scala.inline
+    def setZonesVarargs(value: String*): Self = this.set("zones", js.Array(value :_*))
+    @scala.inline
+    def setZones(value: js.Array[String]): Self = this.set("zones", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteZones: Self = this.set("zones", js.undefined)
+  }
+  
 }
 

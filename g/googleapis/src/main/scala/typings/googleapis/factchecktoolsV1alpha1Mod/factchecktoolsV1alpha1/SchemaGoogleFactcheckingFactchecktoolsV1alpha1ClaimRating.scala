@@ -39,20 +39,42 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends js.Objec
 
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
   @scala.inline
-  def apply(
-    bestRating: js.UndefOr[Double] = js.undefined,
-    imageUrl: String = null,
-    ratingValue: js.UndefOr[Double] = js.undefined,
-    textualRating: String = null,
-    worstRating: js.UndefOr[Double] = js.undefined
-  ): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating = {
+  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bestRating)) __obj.updateDynamic("bestRating")(bestRating.get.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(ratingValue)) __obj.updateDynamic("ratingValue")(ratingValue.get.asInstanceOf[js.Any])
-    if (textualRating != null) __obj.updateDynamic("textualRating")(textualRating.asInstanceOf[js.Any])
-    if (!js.isUndefined(worstRating)) __obj.updateDynamic("worstRating")(worstRating.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating]
   }
+  @scala.inline
+  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRatingOps[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBestRating(value: Double): Self = this.set("bestRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBestRating: Self = this.set("bestRating", js.undefined)
+    @scala.inline
+    def setImageUrl(value: String): Self = this.set("imageUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImageUrl: Self = this.set("imageUrl", js.undefined)
+    @scala.inline
+    def setRatingValue(value: Double): Self = this.set("ratingValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRatingValue: Self = this.set("ratingValue", js.undefined)
+    @scala.inline
+    def setTextualRating(value: String): Self = this.set("textualRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextualRating: Self = this.set("textualRating", js.undefined)
+    @scala.inline
+    def setWorstRating(value: Double): Self = this.set("worstRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorstRating: Self = this.set("worstRating", js.undefined)
+  }
+  
 }
 

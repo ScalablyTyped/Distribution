@@ -11,7 +11,7 @@ sealed trait Flag extends js.Object
 /**
   * An enum of widget bit flags.
   */
-@JSImport("@lumino/widgets/lib/widget", "Widget.Flag")
+@JSImport("@lumino/widgets/types/widget", "Widget.Flag")
 @js.native
 object Flag extends js.Object {
   /**

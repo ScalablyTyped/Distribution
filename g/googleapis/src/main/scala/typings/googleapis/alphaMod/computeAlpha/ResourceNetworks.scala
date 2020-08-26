@@ -30,6 +30,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def addPeering(): GaxiosPromise[SchemaOperation] = js.native
   def addPeering(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def addPeering(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addPeering(params: ParamsResourceNetworksAddpeering): GaxiosPromise[SchemaOperation] = js.native
   def addPeering(params: ParamsResourceNetworksAddpeering, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addPeering(
@@ -59,6 +60,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceNetworksDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceNetworksDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -88,6 +90,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNetwork] = js.native
   def get(callback: BodyResponseCallback[SchemaNetwork]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNetwork] = js.native
   def get(params: ParamsResourceNetworksGet): GaxiosPromise[SchemaNetwork] = js.native
   def get(params: ParamsResourceNetworksGet, callback: BodyResponseCallback[SchemaNetwork]): Unit = js.native
   def get(
@@ -118,6 +121,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceNetworksInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceNetworksInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -149,6 +153,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaNetworkList] = js.native
   def list(callback: BodyResponseCallback[SchemaNetworkList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNetworkList] = js.native
   def list(params: ParamsResourceNetworksList): GaxiosPromise[SchemaNetworkList] = js.native
   def list(params: ParamsResourceNetworksList, callback: BodyResponseCallback[SchemaNetworkList]): Unit = js.native
   def list(
@@ -182,6 +187,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def listIpAddresses(): GaxiosPromise[SchemaIpAddressesList] = js.native
   def listIpAddresses(callback: BodyResponseCallback[SchemaIpAddressesList]): Unit = js.native
+  def listIpAddresses(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIpAddressesList] = js.native
   def listIpAddresses(params: ParamsResourceNetworksListipaddresses): GaxiosPromise[SchemaIpAddressesList] = js.native
   def listIpAddresses(
     params: ParamsResourceNetworksListipaddresses,
@@ -222,6 +228,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def listIpOwners(): GaxiosPromise[SchemaIpOwnerList] = js.native
   def listIpOwners(callback: BodyResponseCallback[SchemaIpOwnerList]): Unit = js.native
+  def listIpOwners(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaIpOwnerList] = js.native
   def listIpOwners(params: ParamsResourceNetworksListipowners): GaxiosPromise[SchemaIpOwnerList] = js.native
   def listIpOwners(params: ParamsResourceNetworksListipowners, callback: BodyResponseCallback[SchemaIpOwnerList]): Unit = js.native
   def listIpOwners(
@@ -257,6 +264,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def listPeeringRoutes(): GaxiosPromise[SchemaExchangedPeeringRoutesList] = js.native
   def listPeeringRoutes(callback: BodyResponseCallback[SchemaExchangedPeeringRoutesList]): Unit = js.native
+  def listPeeringRoutes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExchangedPeeringRoutesList] = js.native
   def listPeeringRoutes(params: ParamsResourceNetworksListpeeringroutes): GaxiosPromise[SchemaExchangedPeeringRoutesList] = js.native
   def listPeeringRoutes(
     params: ParamsResourceNetworksListpeeringroutes,
@@ -292,6 +300,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceNetworksPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceNetworksPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -322,6 +331,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def removePeering(): GaxiosPromise[SchemaOperation] = js.native
   def removePeering(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def removePeering(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removePeering(params: ParamsResourceNetworksRemovepeering): GaxiosPromise[SchemaOperation] = js.native
   def removePeering(params: ParamsResourceNetworksRemovepeering, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def removePeering(
@@ -352,6 +362,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def switchToCustomMode(): GaxiosPromise[SchemaOperation] = js.native
   def switchToCustomMode(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def switchToCustomMode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def switchToCustomMode(params: ParamsResourceNetworksSwitchtocustommode): GaxiosPromise[SchemaOperation] = js.native
   def switchToCustomMode(params: ParamsResourceNetworksSwitchtocustommode, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def switchToCustomMode(
@@ -381,6 +392,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceNetworksTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceNetworksTestiampermissions,
@@ -417,6 +429,7 @@ class ResourceNetworks protected () extends js.Object {
     */
   def updatePeering(): GaxiosPromise[SchemaOperation] = js.native
   def updatePeering(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
+  def updatePeering(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def updatePeering(params: ParamsResourceNetworksUpdatepeering): GaxiosPromise[SchemaOperation] = js.native
   def updatePeering(params: ParamsResourceNetworksUpdatepeering, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def updatePeering(

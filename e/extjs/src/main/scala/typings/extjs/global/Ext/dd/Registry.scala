@@ -77,6 +77,7 @@ object Registry extends js.Object {
     * @param data Object An custom data object that will be passed between the elements that are involved in drag drop operations. You can populate this object with any arbitrary properties that your own code knows how to interpret, plus there are some specific properties known to the Registry that should be populated in the data object (if applicable):
     */
   def register(): Unit = js.native
+  def register(element: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
   def register(element: js.Any): Unit = js.native
   def register(element: js.Any, data: js.Any): Unit = js.native
   /** [Method] Get the reference to the class from which this object was instantiated

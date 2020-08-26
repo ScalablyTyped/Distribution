@@ -38,7 +38,7 @@ trait VpcState extends js.Object {
   /**
     * A boolean flag to enable/disable ClassicLink
     * for the VPC. Only valid in regions and accounts that support EC2 Classic.
-    * See the [ClassicLink documentation][1] for more information. Defaults false.
+    * See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/vpc-classiclink.html) for more information. Defaults false.
     */
   val enableClassiclink: js.UndefOr[Input[Boolean]] = js.native
   /**
@@ -55,7 +55,8 @@ trait VpcState extends js.Object {
     */
   val enableDnsSupport: js.UndefOr[Input[Boolean]] = js.native
   /**
-    * A tenancy option for instances launched into the VPC
+    * A tenancy option for instances launched into the VPC. Default is `default`, which
+    * makes your instances shared on the host. Using either of the other options (`dedicated` or `host`) costs at least $2/hr.
     */
   val instanceTenancy: js.UndefOr[Input[String]] = js.native
   /**
@@ -69,7 +70,7 @@ trait VpcState extends js.Object {
   /**
     * The ID of the main route table associated with
     * this VPC. Note that you can change a VPC's main route table by using an
-    * [`aws.ec2.MainRouteTableAssociation`](https://www.terraform.io/docs/providers/aws/r/main_route_table_association.html).
+    * `aws.ec2.MainRouteTableAssociation`.
     */
   val mainRouteTableId: js.UndefOr[Input[String]] = js.native
   /**
@@ -77,51 +78,97 @@ trait VpcState extends js.Object {
     */
   val ownerId: js.UndefOr[Input[String]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object VpcState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    assignGeneratedIpv6CidrBlock: Input[Boolean] = null,
-    cidrBlock: Input[String] = null,
-    defaultNetworkAclId: Input[String] = null,
-    defaultRouteTableId: Input[String] = null,
-    defaultSecurityGroupId: Input[String] = null,
-    dhcpOptionsId: Input[String] = null,
-    enableClassiclink: Input[Boolean] = null,
-    enableClassiclinkDnsSupport: Input[Boolean] = null,
-    enableDnsHostnames: Input[Boolean] = null,
-    enableDnsSupport: Input[Boolean] = null,
-    instanceTenancy: Input[String] = null,
-    ipv6AssociationId: Input[String] = null,
-    ipv6CidrBlock: Input[String] = null,
-    mainRouteTableId: Input[String] = null,
-    ownerId: Input[String] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): VpcState = {
+  def apply(): VpcState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (assignGeneratedIpv6CidrBlock != null) __obj.updateDynamic("assignGeneratedIpv6CidrBlock")(assignGeneratedIpv6CidrBlock.asInstanceOf[js.Any])
-    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
-    if (defaultNetworkAclId != null) __obj.updateDynamic("defaultNetworkAclId")(defaultNetworkAclId.asInstanceOf[js.Any])
-    if (defaultRouteTableId != null) __obj.updateDynamic("defaultRouteTableId")(defaultRouteTableId.asInstanceOf[js.Any])
-    if (defaultSecurityGroupId != null) __obj.updateDynamic("defaultSecurityGroupId")(defaultSecurityGroupId.asInstanceOf[js.Any])
-    if (dhcpOptionsId != null) __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId.asInstanceOf[js.Any])
-    if (enableClassiclink != null) __obj.updateDynamic("enableClassiclink")(enableClassiclink.asInstanceOf[js.Any])
-    if (enableClassiclinkDnsSupport != null) __obj.updateDynamic("enableClassiclinkDnsSupport")(enableClassiclinkDnsSupport.asInstanceOf[js.Any])
-    if (enableDnsHostnames != null) __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames.asInstanceOf[js.Any])
-    if (enableDnsSupport != null) __obj.updateDynamic("enableDnsSupport")(enableDnsSupport.asInstanceOf[js.Any])
-    if (instanceTenancy != null) __obj.updateDynamic("instanceTenancy")(instanceTenancy.asInstanceOf[js.Any])
-    if (ipv6AssociationId != null) __obj.updateDynamic("ipv6AssociationId")(ipv6AssociationId.asInstanceOf[js.Any])
-    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
-    if (mainRouteTableId != null) __obj.updateDynamic("mainRouteTableId")(mainRouteTableId.asInstanceOf[js.Any])
-    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcState]
   }
+  @scala.inline
+  implicit class VpcStateOps[Self <: VpcState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setAssignGeneratedIpv6CidrBlock(value: Input[Boolean]): Self = this.set("assignGeneratedIpv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssignGeneratedIpv6CidrBlock: Self = this.set("assignGeneratedIpv6CidrBlock", js.undefined)
+    @scala.inline
+    def setCidrBlock(value: Input[String]): Self = this.set("cidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCidrBlock: Self = this.set("cidrBlock", js.undefined)
+    @scala.inline
+    def setDefaultNetworkAclId(value: Input[String]): Self = this.set("defaultNetworkAclId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultNetworkAclId: Self = this.set("defaultNetworkAclId", js.undefined)
+    @scala.inline
+    def setDefaultRouteTableId(value: Input[String]): Self = this.set("defaultRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultRouteTableId: Self = this.set("defaultRouteTableId", js.undefined)
+    @scala.inline
+    def setDefaultSecurityGroupId(value: Input[String]): Self = this.set("defaultSecurityGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultSecurityGroupId: Self = this.set("defaultSecurityGroupId", js.undefined)
+    @scala.inline
+    def setDhcpOptionsId(value: Input[String]): Self = this.set("dhcpOptionsId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDhcpOptionsId: Self = this.set("dhcpOptionsId", js.undefined)
+    @scala.inline
+    def setEnableClassiclink(value: Input[Boolean]): Self = this.set("enableClassiclink", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableClassiclink: Self = this.set("enableClassiclink", js.undefined)
+    @scala.inline
+    def setEnableClassiclinkDnsSupport(value: Input[Boolean]): Self = this.set("enableClassiclinkDnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableClassiclinkDnsSupport: Self = this.set("enableClassiclinkDnsSupport", js.undefined)
+    @scala.inline
+    def setEnableDnsHostnames(value: Input[Boolean]): Self = this.set("enableDnsHostnames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDnsHostnames: Self = this.set("enableDnsHostnames", js.undefined)
+    @scala.inline
+    def setEnableDnsSupport(value: Input[Boolean]): Self = this.set("enableDnsSupport", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnableDnsSupport: Self = this.set("enableDnsSupport", js.undefined)
+    @scala.inline
+    def setInstanceTenancy(value: Input[String]): Self = this.set("instanceTenancy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTenancy: Self = this.set("instanceTenancy", js.undefined)
+    @scala.inline
+    def setIpv6AssociationId(value: Input[String]): Self = this.set("ipv6AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6AssociationId: Self = this.set("ipv6AssociationId", js.undefined)
+    @scala.inline
+    def setIpv6CidrBlock(value: Input[String]): Self = this.set("ipv6CidrBlock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpv6CidrBlock: Self = this.set("ipv6CidrBlock", js.undefined)
+    @scala.inline
+    def setMainRouteTableId(value: Input[String]): Self = this.set("mainRouteTableId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMainRouteTableId: Self = this.set("mainRouteTableId", js.undefined)
+    @scala.inline
+    def setOwnerId(value: Input[String]): Self = this.set("ownerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOwnerId: Self = this.set("ownerId", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

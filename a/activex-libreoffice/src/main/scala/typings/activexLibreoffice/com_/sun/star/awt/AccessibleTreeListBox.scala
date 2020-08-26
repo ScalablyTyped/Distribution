@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.accessibility.XAccessibleSelection
   * @since OOo 1.1.2
   */
+@js.native
 trait AccessibleTreeListBox
   extends XAccessibleContext
      with XAccessibleEventBroadcaster

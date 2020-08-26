@@ -23,12 +23,15 @@ import scala.scalajs.js.annotation._
   - typings.microsoftGraph.microsoftGraphStrings.installFailed
   - typings.microsoftGraph.microsoftGraphStrings.notSupportedOperation
   - typings.microsoftGraph.microsoftGraphStrings.sharedDeviceUserLoggedInError
+  - typings.microsoftGraph.microsoftGraphStrings.deviceOsHigherThanDesiredOsVersion
 */
 trait IosUpdatesInstallStatus extends js.Object
 
 object IosUpdatesInstallStatus {
   @scala.inline
   def available: typings.microsoftGraph.microsoftGraphStrings.available = "available".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.available]
+  @scala.inline
+  def deviceOsHigherThanDesiredOsVersion: typings.microsoftGraph.microsoftGraphStrings.deviceOsHigherThanDesiredOsVersion = "deviceOsHigherThanDesiredOsVersion".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deviceOsHigherThanDesiredOsVersion]
   @scala.inline
   def downloadFailed: typings.microsoftGraph.microsoftGraphStrings.downloadFailed = "downloadFailed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.downloadFailed]
   @scala.inline

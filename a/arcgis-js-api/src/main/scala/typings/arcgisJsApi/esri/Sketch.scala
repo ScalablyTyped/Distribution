@@ -48,7 +48,7 @@ trait Sketch extends Widget_ {
     */
   val createGraphic: Graphic = js.native
   /**
-    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed. By default, the user will be able to continuously create graphics with same geometry types.  **Possible Values:**
+    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed. By default, the user will be able to continuously create graphics with same geometry types.  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |
@@ -146,7 +146,7 @@ trait Sketch extends Widget_ {
     * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.
     * @param createOptions Options for the graphic to be created.
     * @param createOptions.mode
-    * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.  **Possible Values:**
+    * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |
@@ -217,7 +217,7 @@ trait Sketch extends Widget_ {
     * @param graphics A graphic or an array of graphics to be updated. Only graphics added to SketchViewModel's [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layer) property can be updated.
     * @param updateOptions Update options for the graphics to be updated.
     * @param updateOptions.tool
-    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool).  **Possible Values:**
+    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#activeTool).  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |

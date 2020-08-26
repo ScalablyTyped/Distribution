@@ -370,8 +370,10 @@ object stropheAugmentingMod extends js.Object {
     *    A new XML DOM element.
     */
   def xmlElement(name: String): Element = js.native
+  def xmlElement(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
   def xmlElement(name: String, attrs: js.Any): Element = js.native
   def xmlElement(name: String, attrs: js.Any, text: String): Element = js.native
+  def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
   def xmlElement(name: String, text: String): Element = js.native
   def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
   /** Function: xmlGenerator

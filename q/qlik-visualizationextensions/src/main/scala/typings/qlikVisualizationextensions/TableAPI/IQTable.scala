@@ -43,6 +43,7 @@ trait IQTable extends js.Object {
     * @param [callback] - Optional. Callback function returning the link to the exported file.
     */
   def exportData(): Unit = js.native
+  def exportData(options: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
   def exportData(options: js.Any): Unit = js.native
   def exportData(options: js.Any, callback: js.Any): Unit = js.native
   /**

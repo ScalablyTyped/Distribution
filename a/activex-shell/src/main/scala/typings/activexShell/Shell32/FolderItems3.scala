@@ -23,6 +23,7 @@ trait FolderItems3 extends js.Object {
     * @param vArgs String with one or more arguments to the command specified by vVerb. The format of this string depends on the particular verb.
     */
   def InvokeVerbEx(): Unit = js.native
+  def InvokeVerbEx(vVerb: js.UndefOr[scala.Nothing], vArgs: String): Unit = js.native
   def InvokeVerbEx(vVerb: String): Unit = js.native
   def InvokeVerbEx(vVerb: String, vArgs: String): Unit = js.native
   /** Return the figure for the given index */

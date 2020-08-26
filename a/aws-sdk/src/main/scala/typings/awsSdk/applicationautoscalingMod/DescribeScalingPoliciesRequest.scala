@@ -34,21 +34,46 @@ trait DescribeScalingPoliciesRequest extends js.Object {
 
 object DescribeScalingPoliciesRequest {
   @scala.inline
-  def apply(
-    ServiceNamespace: ServiceNamespace,
-    MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: XmlString = null,
-    PolicyNames: ResourceIdsMaxLen1600 = null,
-    ResourceId: ResourceIdMaxLen1600 = null,
-    ScalableDimension: ScalableDimension = null
-  ): DescribeScalingPoliciesRequest = {
+  def apply(ServiceNamespace: ServiceNamespace): DescribeScalingPoliciesRequest = {
     val __obj = js.Dynamic.literal(ServiceNamespace = ServiceNamespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults.get.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (PolicyNames != null) __obj.updateDynamic("PolicyNames")(PolicyNames.asInstanceOf[js.Any])
-    if (ResourceId != null) __obj.updateDynamic("ResourceId")(ResourceId.asInstanceOf[js.Any])
-    if (ScalableDimension != null) __obj.updateDynamic("ScalableDimension")(ScalableDimension.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeScalingPoliciesRequest]
   }
+  @scala.inline
+  implicit class DescribeScalingPoliciesRequestOps[Self <: DescribeScalingPoliciesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceNamespace(value: ServiceNamespace): Self = this.set("ServiceNamespace", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMaxResults(value: MaxResults): Self = this.set("MaxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("MaxResults", js.undefined)
+    @scala.inline
+    def setNextToken(value: XmlString): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setPolicyNamesVarargs(value: ResourceIdMaxLen1600*): Self = this.set("PolicyNames", js.Array(value :_*))
+    @scala.inline
+    def setPolicyNames(value: ResourceIdsMaxLen1600): Self = this.set("PolicyNames", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePolicyNames: Self = this.set("PolicyNames", js.undefined)
+    @scala.inline
+    def setResourceId(value: ResourceIdMaxLen1600): Self = this.set("ResourceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceId: Self = this.set("ResourceId", js.undefined)
+    @scala.inline
+    def setScalableDimension(value: ScalableDimension): Self = this.set("ScalableDimension", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScalableDimension: Self = this.set("ScalableDimension", js.undefined)
+  }
+  
 }
 

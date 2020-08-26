@@ -18,11 +18,30 @@ trait ReservationCoverageGroup extends js.Object {
 
 object ReservationCoverageGroup {
   @scala.inline
-  def apply(Attributes: Attributes = null, Coverage: Coverage = null): ReservationCoverageGroup = {
+  def apply(): ReservationCoverageGroup = {
     val __obj = js.Dynamic.literal()
-    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes.asInstanceOf[js.Any])
-    if (Coverage != null) __obj.updateDynamic("Coverage")(Coverage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReservationCoverageGroup]
   }
+  @scala.inline
+  implicit class ReservationCoverageGroupOps[Self <: ReservationCoverageGroup] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributes(value: Attributes): Self = this.set("Attributes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributes: Self = this.set("Attributes", js.undefined)
+    @scala.inline
+    def setCoverage(value: Coverage): Self = this.set("Coverage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCoverage: Self = this.set("Coverage", js.undefined)
+  }
+  
 }
 

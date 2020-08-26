@@ -36,6 +36,7 @@ trait IObservableFactory extends js.Object {
     */ typings.mobx.mobxStrings.IObservableFactory with TopLevel[js.Any],
     options: CreateObservableOptions
   ): T with IObservableObject = js.native
+  def apply[T /* <: js.Object */](value: T, decorators: js.UndefOr[scala.Nothing], options: CreateObservableOptions): T with IObservableObject = js.native
   def apply[T](value: js.Array[T]): IObservableArray[T] = js.native
   def apply[T](value: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = js.native
   def apply[T](value: Set[T]): ObservableSet[T] = js.native

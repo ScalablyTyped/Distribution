@@ -25,11 +25,30 @@ trait SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse extends 
 
 object SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse {
   @scala.inline
-  def apply(fhirStore: String = null, resourceCount: String = null): SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse = {
+  def apply(): SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse = {
     val __obj = js.Dynamic.literal()
-    if (fhirStore != null) __obj.updateDynamic("fhirStore")(fhirStore.asInstanceOf[js.Any])
-    if (resourceCount != null) __obj.updateDynamic("resourceCount")(resourceCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponseOps[Self <: SchemaGoogleCloudHealthcareV1beta1FhirRestExportResourcesResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFhirStore(value: String): Self = this.set("fhirStore", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFhirStore: Self = this.set("fhirStore", js.undefined)
+    @scala.inline
+    def setResourceCount(value: String): Self = this.set("resourceCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceCount: Self = this.set("resourceCount", js.undefined)
+  }
+  
 }
 

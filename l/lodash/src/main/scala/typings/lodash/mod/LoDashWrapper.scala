@@ -130,6 +130,7 @@ trait LoDashWrapper[TValue] extends js.Object {
     * @see _.pullAllBy
     */
   def pullAllBy[T](): this.type = js.native
+  def pullAllBy[T](values: js.UndefOr[scala.Nothing], iteratee: ValueIteratee[T]): this.type = js.native
   def pullAllBy[T](values: List[T]): this.type = js.native
   def pullAllBy[T](values: List[T], iteratee: ValueIteratee[T]): this.type = js.native
   /**
@@ -141,6 +142,7 @@ trait LoDashWrapper[TValue] extends js.Object {
     * @see _.pullAllWith
     */
   def pullAllWith[T](): this.type = js.native
+  def pullAllWith[T](values: js.UndefOr[scala.Nothing], comparator: Comparator[T]): this.type = js.native
   def pullAllWith[T](values: List[T]): this.type = js.native
   def pullAllWith[T](values: List[T], comparator: Comparator[T]): this.type = js.native
   /**

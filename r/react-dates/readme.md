@@ -10,9 +10,9 @@ A responsive and accessible date range picker component built with React
 | ------------------ | :-------------: |
 | Full name          | react-dates |
 | Keywords           | - |
-| # releases         | 68 |
+| # releases         | 67 |
 | # dependents       | 215 |
-| # downloads        | 10821732 |
+| # downloads        | 11027521 |
 | # stars            | 26 |
 
 ## Links

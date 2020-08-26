@@ -34,6 +34,9 @@ object gamedigStrings {
   sealed trait aoe2 extends Type
   
   @js.native
+  sealed trait arcasimracing extends Type
+  
+  @js.native
   sealed trait arkse extends Type
   
   @js.native
@@ -43,10 +46,25 @@ object gamedigStrings {
   sealed trait arma2 extends Type
   
   @js.native
+  sealed trait arma2oa extends Type
+  
+  @js.native
   sealed trait arma3 extends Type
   
   @js.native
+  sealed trait armacwa extends Type
+  
+  @js.native
   sealed trait armagetron extends Type
+  
+  @js.native
+  sealed trait armar extends Type
+  
+  @js.native
+  sealed trait assettocorsa extends Type
+  
+  @js.native
+  sealed trait atlas extends Type
   
   @js.native
   sealed trait avp2 extends Type
@@ -145,6 +163,9 @@ object gamedigStrings {
   sealed trait contactjack extends Type
   
   @js.native
+  sealed trait contagion extends Type
+  
+  @js.native
   sealed trait crossracing extends Type
   
   @js.native
@@ -157,7 +178,13 @@ object gamedigStrings {
   sealed trait crysiswars extends Type
   
   @js.native
+  sealed trait cs15 extends Type
+  
+  @js.native
   sealed trait cs16 extends Type
+  
+  @js.native
+  sealed trait cs2d extends Type
   
   @js.native
   sealed trait cscz extends Type
@@ -173,6 +200,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait darkesthour extends Type
+  
+  @js.native
+  sealed trait daysofwar extends Type
   
   @js.native
   sealed trait dayz extends Type
@@ -226,6 +256,9 @@ object gamedigStrings {
   sealed trait drakan extends Type
   
   @js.native
+  sealed trait empyrion extends Type
+  
+  @js.native
   sealed trait etqw extends Type
   
   @js.native
@@ -251,6 +284,12 @@ object gamedigStrings {
   
   @js.native
   sealed trait flashpoint extends Type
+  
+  @js.native
+  sealed trait flashpointresistance extends Type
+  
+  @js.native
+  sealed trait forrest extends Type
   
   @js.native
   sealed trait fortressforever extends Type
@@ -307,6 +346,12 @@ object gamedigStrings {
   sealed trait hldm extends Type
   
   @js.native
+  sealed trait hldms extends Type
+  
+  @js.native
+  sealed trait hll extends Type
+  
+  @js.native
   sealed trait homefront extends Type
   
   @js.native
@@ -325,6 +370,9 @@ object gamedigStrings {
   sealed trait insurgency extends Type
   
   @js.native
+  sealed trait insurgencysandstorm extends Type
+  
+  @js.native
   sealed trait ironstorm extends Type
   
   @js.native
@@ -332,6 +380,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait jc2mp extends Type
+  
+  @js.native
+  sealed trait jc3mp extends Type
   
   @js.native
   sealed trait killingfloor extends Type
@@ -361,10 +412,16 @@ object gamedigStrings {
   sealed trait m2mp extends Type
   
   @js.native
+  sealed trait m2o extends Type
+  
+  @js.native
   sealed trait medievalengineers extends Type
   
   @js.native
   sealed trait minecraft extends Type
+  
+  @js.native
+  sealed trait minecraftbe extends Type
   
   @js.native
   sealed trait minecraftpe extends Type
@@ -395,6 +452,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait mohwf extends Type
+  
+  @js.native
+  sealed trait mordhau extends Type
   
   @js.native
   sealed trait mtasa extends Type
@@ -466,7 +526,13 @@ object gamedigStrings {
   sealed trait painkiller extends Type
   
   @js.native
+  sealed trait pixark extends Type
+  
+  @js.native
   sealed trait postal2 extends Type
+  
+  @js.native
+  sealed trait prbf2 extends Type
   
   @js.native
   sealed trait prey extends Type
@@ -485,6 +551,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait quake4 extends Type
+  
+  @js.native
+  sealed trait quakelive extends Type
   
   @js.native
   sealed trait r6 extends Type
@@ -517,10 +586,16 @@ object gamedigStrings {
   sealed trait redorchestraost extends Type
   
   @js.native
+  sealed trait rfactor extends Type
+  
+  @js.native
   sealed trait ricochet extends Type
   
   @js.native
   sealed trait riseofnations extends Type
+  
+  @js.native
+  sealed trait rs2 extends Type
   
   @js.native
   sealed trait rtcw extends Type
@@ -565,6 +640,9 @@ object gamedigStrings {
   sealed trait spaceengineers extends Type
   
   @js.native
+  sealed trait squad extends Type
+  
+  @js.native
   sealed trait ss extends Type
   
   @js.native
@@ -578,6 +656,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait starmade extends Type
+  
+  @js.native
+  sealed trait starsiege extends Type
   
   @js.native
   sealed trait stbc extends Type
@@ -617,6 +698,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait tacticalops extends Type
+  
+  @js.native
+  sealed trait takeonhelicopters extends Type
   
   @js.native
   sealed trait teamfactor extends Type
@@ -670,6 +754,9 @@ object gamedigStrings {
   sealed trait tron20 extends Type
   
   @js.native
+  sealed trait tshock extends Type
+  
+  @js.native
   sealed trait turok2 extends Type
   
   @js.native
@@ -698,6 +785,9 @@ object gamedigStrings {
   
   @js.native
   sealed trait v8supercar extends Type
+  
+  @js.native
+  sealed trait vcmp extends Type
   
   @js.native
   sealed trait ventrilo extends Type
@@ -748,15 +838,27 @@ object gamedigStrings {
   @scala.inline
   def aoe2: aoe2 = "aoe2".asInstanceOf[aoe2]
   @scala.inline
+  def arcasimracing: arcasimracing = "arcasimracing".asInstanceOf[arcasimracing]
+  @scala.inline
   def arkse: arkse = "arkse".asInstanceOf[arkse]
   @scala.inline
   def arma: arma = "arma".asInstanceOf[arma]
   @scala.inline
   def arma2: arma2 = "arma2".asInstanceOf[arma2]
   @scala.inline
+  def arma2oa: arma2oa = "arma2oa".asInstanceOf[arma2oa]
+  @scala.inline
   def arma3: arma3 = "arma3".asInstanceOf[arma3]
   @scala.inline
+  def armacwa: armacwa = "armacwa".asInstanceOf[armacwa]
+  @scala.inline
   def armagetron: armagetron = "armagetron".asInstanceOf[armagetron]
+  @scala.inline
+  def armar: armar = "armar".asInstanceOf[armar]
+  @scala.inline
+  def assettocorsa: assettocorsa = "assettocorsa".asInstanceOf[assettocorsa]
+  @scala.inline
+  def atlas: atlas = "atlas".asInstanceOf[atlas]
   @scala.inline
   def avp2: avp2 = "avp2".asInstanceOf[avp2]
   @scala.inline
@@ -822,6 +924,8 @@ object gamedigStrings {
   @scala.inline
   def contactjack: contactjack = "contactjack".asInstanceOf[contactjack]
   @scala.inline
+  def contagion: contagion = "contagion".asInstanceOf[contagion]
+  @scala.inline
   def crossracing: crossracing = "crossracing".asInstanceOf[crossracing]
   @scala.inline
   def crysis: crysis = "crysis".asInstanceOf[crysis]
@@ -830,7 +934,11 @@ object gamedigStrings {
   @scala.inline
   def crysiswars: crysiswars = "crysiswars".asInstanceOf[crysiswars]
   @scala.inline
+  def cs15: cs15 = "cs15".asInstanceOf[cs15]
+  @scala.inline
   def cs16: cs16 = "cs16".asInstanceOf[cs16]
+  @scala.inline
+  def cs2d: cs2d = "cs2d".asInstanceOf[cs2d]
   @scala.inline
   def cscz: cscz = "cscz".asInstanceOf[cscz]
   @scala.inline
@@ -841,6 +949,8 @@ object gamedigStrings {
   def daikatana: daikatana = "daikatana".asInstanceOf[daikatana]
   @scala.inline
   def darkesthour: darkesthour = "darkesthour".asInstanceOf[darkesthour]
+  @scala.inline
+  def daysofwar: daysofwar = "daysofwar".asInstanceOf[daysofwar]
   @scala.inline
   def dayz: dayz = "dayz".asInstanceOf[dayz]
   @scala.inline
@@ -876,6 +986,8 @@ object gamedigStrings {
   @scala.inline
   def drakan: drakan = "drakan".asInstanceOf[drakan]
   @scala.inline
+  def empyrion: empyrion = "empyrion".asInstanceOf[empyrion]
+  @scala.inline
   def etqw: etqw = "etqw".asInstanceOf[etqw]
   @scala.inline
   def f12002: f12002 = "f12002".asInstanceOf[f12002]
@@ -893,6 +1005,10 @@ object gamedigStrings {
   def fivem: fivem = "fivem".asInstanceOf[fivem]
   @scala.inline
   def flashpoint: flashpoint = "flashpoint".asInstanceOf[flashpoint]
+  @scala.inline
+  def flashpointresistance: flashpointresistance = "flashpointresistance".asInstanceOf[flashpointresistance]
+  @scala.inline
+  def forrest: forrest = "forrest".asInstanceOf[forrest]
   @scala.inline
   def fortressforever: fortressforever = "fortressforever".asInstanceOf[fortressforever]
   @scala.inline
@@ -930,6 +1046,10 @@ object gamedigStrings {
   @scala.inline
   def hldm: hldm = "hldm".asInstanceOf[hldm]
   @scala.inline
+  def hldms: hldms = "hldms".asInstanceOf[hldms]
+  @scala.inline
+  def hll: hll = "hll".asInstanceOf[hll]
+  @scala.inline
   def homefront: homefront = "homefront".asInstanceOf[homefront]
   @scala.inline
   def homeworld2: homeworld2 = "homeworld2".asInstanceOf[homeworld2]
@@ -942,11 +1062,15 @@ object gamedigStrings {
   @scala.inline
   def insurgency: insurgency = "insurgency".asInstanceOf[insurgency]
   @scala.inline
+  def insurgencysandstorm: insurgencysandstorm = "insurgencysandstorm".asInstanceOf[insurgencysandstorm]
+  @scala.inline
   def ironstorm: ironstorm = "ironstorm".asInstanceOf[ironstorm]
   @scala.inline
   def jamesbondnightfire: jamesbondnightfire = "jamesbondnightfire".asInstanceOf[jamesbondnightfire]
   @scala.inline
   def jc2mp: jc2mp = "jc2mp".asInstanceOf[jc2mp]
+  @scala.inline
+  def jc3mp: jc3mp = "jc3mp".asInstanceOf[jc3mp]
   @scala.inline
   def killingfloor: killingfloor = "killingfloor".asInstanceOf[killingfloor]
   @scala.inline
@@ -966,9 +1090,13 @@ object gamedigStrings {
   @scala.inline
   def m2mp: m2mp = "m2mp".asInstanceOf[m2mp]
   @scala.inline
+  def m2o: m2o = "m2o".asInstanceOf[m2o]
+  @scala.inline
   def medievalengineers: medievalengineers = "medievalengineers".asInstanceOf[medievalengineers]
   @scala.inline
   def minecraft: minecraft = "minecraft".asInstanceOf[minecraft]
+  @scala.inline
+  def minecraftbe: minecraftbe = "minecraftbe".asInstanceOf[minecraftbe]
   @scala.inline
   def minecraftpe: minecraftpe = "minecraftpe".asInstanceOf[minecraftpe]
   @scala.inline
@@ -989,6 +1117,8 @@ object gamedigStrings {
   def mohsh: mohsh = "mohsh".asInstanceOf[mohsh]
   @scala.inline
   def mohwf: mohwf = "mohwf".asInstanceOf[mohwf]
+  @scala.inline
+  def mordhau: mordhau = "mordhau".asInstanceOf[mordhau]
   @scala.inline
   def mtasa: mtasa = "mtasa".asInstanceOf[mtasa]
   @scala.inline
@@ -1036,7 +1166,11 @@ object gamedigStrings {
   @scala.inline
   def painkiller: painkiller = "painkiller".asInstanceOf[painkiller]
   @scala.inline
+  def pixark: pixark = "pixark".asInstanceOf[pixark]
+  @scala.inline
   def postal2: postal2 = "postal2".asInstanceOf[postal2]
+  @scala.inline
+  def prbf2: prbf2 = "prbf2".asInstanceOf[prbf2]
   @scala.inline
   def prey: prey = "prey".asInstanceOf[prey]
   @scala.inline
@@ -1049,6 +1183,8 @@ object gamedigStrings {
   def quake3: quake3 = "quake3".asInstanceOf[quake3]
   @scala.inline
   def quake4: quake4 = "quake4".asInstanceOf[quake4]
+  @scala.inline
+  def quakelive: quakelive = "quakelive".asInstanceOf[quakelive]
   @scala.inline
   def r6: r6 = "r6".asInstanceOf[r6]
   @scala.inline
@@ -1070,9 +1206,13 @@ object gamedigStrings {
   @scala.inline
   def redorchestraost: redorchestraost = "redorchestraost".asInstanceOf[redorchestraost]
   @scala.inline
+  def rfactor: rfactor = "rfactor".asInstanceOf[rfactor]
+  @scala.inline
   def ricochet: ricochet = "ricochet".asInstanceOf[ricochet]
   @scala.inline
   def riseofnations: riseofnations = "riseofnations".asInstanceOf[riseofnations]
+  @scala.inline
+  def rs2: rs2 = "rs2".asInstanceOf[rs2]
   @scala.inline
   def rtcw: rtcw = "rtcw".asInstanceOf[rtcw]
   @scala.inline
@@ -1102,6 +1242,8 @@ object gamedigStrings {
   @scala.inline
   def spaceengineers: spaceengineers = "spaceengineers".asInstanceOf[spaceengineers]
   @scala.inline
+  def squad: squad = "squad".asInstanceOf[squad]
+  @scala.inline
   def ss: ss = "ss".asInstanceOf[ss]
   @scala.inline
   def ss2: ss2 = "ss2".asInstanceOf[ss2]
@@ -1111,6 +1253,8 @@ object gamedigStrings {
   def starbound: starbound = "starbound".asInstanceOf[starbound]
   @scala.inline
   def starmade: starmade = "starmade".asInstanceOf[starmade]
+  @scala.inline
+  def starsiege: starsiege = "starsiege".asInstanceOf[starsiege]
   @scala.inline
   def stbc: stbc = "stbc".asInstanceOf[stbc]
   @scala.inline
@@ -1137,6 +1281,8 @@ object gamedigStrings {
   def synergy: synergy = "synergy".asInstanceOf[synergy]
   @scala.inline
   def tacticalops: tacticalops = "tacticalops".asInstanceOf[tacticalops]
+  @scala.inline
+  def takeonhelicopters: takeonhelicopters = "takeonhelicopters".asInstanceOf[takeonhelicopters]
   @scala.inline
   def teamfactor: teamfactor = "teamfactor".asInstanceOf[teamfactor]
   @scala.inline
@@ -1172,6 +1318,8 @@ object gamedigStrings {
   @scala.inline
   def tron20: tron20 = "tron20".asInstanceOf[tron20]
   @scala.inline
+  def tshock: tshock = "tshock".asInstanceOf[tshock]
+  @scala.inline
   def turok2: turok2 = "turok2".asInstanceOf[turok2]
   @scala.inline
   def universalcombat: universalcombat = "universalcombat".asInstanceOf[universalcombat]
@@ -1191,6 +1339,8 @@ object gamedigStrings {
   def ut3: ut3 = "ut3".asInstanceOf[ut3]
   @scala.inline
   def v8supercar: v8supercar = "v8supercar".asInstanceOf[v8supercar]
+  @scala.inline
+  def vcmp: vcmp = "vcmp".asInstanceOf[vcmp]
   @scala.inline
   def ventrilo: ventrilo = "ventrilo".asInstanceOf[ventrilo]
   @scala.inline

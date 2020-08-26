@@ -43,18 +43,38 @@ trait SchemaDiskInstantiationConfig extends js.Object {
 
 object SchemaDiskInstantiationConfig {
   @scala.inline
-  def apply(
-    autoDelete: js.UndefOr[Boolean] = js.undefined,
-    customImage: String = null,
-    deviceName: String = null,
-    instantiateFrom: String = null
-  ): SchemaDiskInstantiationConfig = {
+  def apply(): SchemaDiskInstantiationConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoDelete)) __obj.updateDynamic("autoDelete")(autoDelete.get.asInstanceOf[js.Any])
-    if (customImage != null) __obj.updateDynamic("customImage")(customImage.asInstanceOf[js.Any])
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    if (instantiateFrom != null) __obj.updateDynamic("instantiateFrom")(instantiateFrom.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaDiskInstantiationConfig]
   }
+  @scala.inline
+  implicit class SchemaDiskInstantiationConfigOps[Self <: SchemaDiskInstantiationConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoDelete(value: Boolean): Self = this.set("autoDelete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDelete: Self = this.set("autoDelete", js.undefined)
+    @scala.inline
+    def setCustomImage(value: String): Self = this.set("customImage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomImage: Self = this.set("customImage", js.undefined)
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    @scala.inline
+    def setInstantiateFrom(value: String): Self = this.set("instantiateFrom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstantiateFrom: Self = this.set("instantiateFrom", js.undefined)
+  }
+  
 }
 

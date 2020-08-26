@@ -24,16 +24,6 @@ class CommandBarBase protected ()
   var _onRenderOverflowButton: js.Any = js.native
   var _overflowSet: js.Any = js.native
   var _resizeGroup: js.Any = js.native
-  /**
-    * Sets focus to the active command in the list.
-    */
-  /* CompleteClass */
-  override def focus(): Unit = js.native
-  /**
-    * Remeasures the available space.
-    */
-  /* CompleteClass */
-  override def remeasure(): Unit = js.native
 }
 
 /* static members */

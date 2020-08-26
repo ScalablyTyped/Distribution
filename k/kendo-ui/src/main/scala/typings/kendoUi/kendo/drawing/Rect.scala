@@ -13,6 +13,7 @@ trait Rect extends Element {
   def geometry(): typings.kendoUi.kendo.geometry.Rect = js.native
   def geometry(value: typings.kendoUi.kendo.geometry.Rect): Unit = js.native
   def stroke(color: String): Rect = js.native
+  def stroke(color: String, width: js.UndefOr[scala.Nothing], opacity: Double): Rect = js.native
   def stroke(color: String, width: Double): Rect = js.native
   def stroke(color: String, width: Double, opacity: Double): Rect = js.native
 }

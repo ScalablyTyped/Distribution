@@ -30,20 +30,42 @@ trait PlacementStatistics extends js.Object {
 
 object PlacementStatistics {
   @scala.inline
-  def apply(
-    DkimPercentage: js.UndefOr[Percentage] = js.undefined,
-    InboxPercentage: js.UndefOr[Percentage] = js.undefined,
-    MissingPercentage: js.UndefOr[Percentage] = js.undefined,
-    SpamPercentage: js.UndefOr[Percentage] = js.undefined,
-    SpfPercentage: js.UndefOr[Percentage] = js.undefined
-  ): PlacementStatistics = {
+  def apply(): PlacementStatistics = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(DkimPercentage)) __obj.updateDynamic("DkimPercentage")(DkimPercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InboxPercentage)) __obj.updateDynamic("InboxPercentage")(InboxPercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MissingPercentage)) __obj.updateDynamic("MissingPercentage")(MissingPercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SpamPercentage)) __obj.updateDynamic("SpamPercentage")(SpamPercentage.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(SpfPercentage)) __obj.updateDynamic("SpfPercentage")(SpfPercentage.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlacementStatistics]
   }
+  @scala.inline
+  implicit class PlacementStatisticsOps[Self <: PlacementStatistics] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDkimPercentage(value: Percentage): Self = this.set("DkimPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDkimPercentage: Self = this.set("DkimPercentage", js.undefined)
+    @scala.inline
+    def setInboxPercentage(value: Percentage): Self = this.set("InboxPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInboxPercentage: Self = this.set("InboxPercentage", js.undefined)
+    @scala.inline
+    def setMissingPercentage(value: Percentage): Self = this.set("MissingPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMissingPercentage: Self = this.set("MissingPercentage", js.undefined)
+    @scala.inline
+    def setSpamPercentage(value: Percentage): Self = this.set("SpamPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpamPercentage: Self = this.set("SpamPercentage", js.undefined)
+    @scala.inline
+    def setSpfPercentage(value: Percentage): Self = this.set("SpfPercentage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpfPercentage: Self = this.set("SpfPercentage", js.undefined)
+  }
+  
 }
 

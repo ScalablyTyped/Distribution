@@ -18,11 +18,30 @@ trait InferenceAcceleratorOverride extends js.Object {
 
 object InferenceAcceleratorOverride {
   @scala.inline
-  def apply(deviceName: String = null, deviceType: String = null): InferenceAcceleratorOverride = {
+  def apply(): InferenceAcceleratorOverride = {
     val __obj = js.Dynamic.literal()
-    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName.asInstanceOf[js.Any])
-    if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[InferenceAcceleratorOverride]
   }
+  @scala.inline
+  implicit class InferenceAcceleratorOverrideOps[Self <: InferenceAcceleratorOverride] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("deviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("deviceName", js.undefined)
+    @scala.inline
+    def setDeviceType(value: String): Self = this.set("deviceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceType: Self = this.set("deviceType", js.undefined)
+  }
+  
 }
 

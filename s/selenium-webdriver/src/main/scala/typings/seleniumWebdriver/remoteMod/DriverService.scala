@@ -77,8 +77,6 @@ object DriverService extends js.Object {
       * @return {!DriverService} A new driver service.
       */
     def build(): DriverService = js.native
-    def setEnvironment(): this.type = js.native
-    def setEnvironment(env: StringDictionary[String]): this.type = js.native
     /**
       * Defines the environment to start the server under. This setting will be
       * inherited by every browser session started by the server. By default, the
@@ -89,6 +87,8 @@ object DriverService extends js.Object {
       *     current environment.
       * @return {!DriverService.Builder} A self reference.
       */
+    def setEnvironment(): this.type = js.native
+    def setEnvironment(env: StringDictionary[String]): this.type = js.native
     def setEnvironment(env: Map[String, String]): this.type = js.native
     /**
       * Sets the host name to access the server on. If specified, the
@@ -106,7 +106,6 @@ object DriverService extends js.Object {
       * @return {!DriverService.Builder} A self reference.
       */
     def setLoopback(loopback: Boolean): this.type = js.native
-    def setPath(): this.type = js.native
     /**
       * Sets the base path for WebDriver REST commands (e.g. "/wd/hub").
       * By default, the driver will accept commands relative to "/".
@@ -115,6 +114,7 @@ object DriverService extends js.Object {
       *     default.
       * @return {!DriverService.Builder} A self reference.
       */
+    def setPath(): this.type = js.native
     def setPath(basePath: String): this.type = js.native
     /**
       * Sets the port to start the server on.

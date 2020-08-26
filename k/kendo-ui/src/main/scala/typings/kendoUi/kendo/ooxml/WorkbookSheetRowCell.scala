@@ -5,84 +5,143 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WorkbookSheetRowCell extends js.Object {
-  var background: js.UndefOr[String] = js.undefined
-  var bold: js.UndefOr[Boolean] = js.undefined
-  var borderBottom: js.UndefOr[WorkbookSheetRowCellBorderBottom] = js.undefined
-  var borderLeft: js.UndefOr[WorkbookSheetRowCellBorderLeft] = js.undefined
-  var borderRight: js.UndefOr[WorkbookSheetRowCellBorderRight] = js.undefined
-  var borderTop: js.UndefOr[WorkbookSheetRowCellBorderTop] = js.undefined
-  var colSpan: js.UndefOr[Double] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var fontFamily: js.UndefOr[String] = js.undefined
-  var fontName: js.UndefOr[String] = js.undefined
-  var fontSize: js.UndefOr[Double] = js.undefined
-  var format: js.UndefOr[String] = js.undefined
-  var formula: js.UndefOr[String] = js.undefined
-  var hAlign: js.UndefOr[String] = js.undefined
-  var index: js.UndefOr[js.Any] = js.undefined
-  var italic: js.UndefOr[Boolean] = js.undefined
-  var rowSpan: js.UndefOr[Double] = js.undefined
-  var textAlign: js.UndefOr[String] = js.undefined
-  var underline: js.UndefOr[Boolean] = js.undefined
-  var vAlign: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[Date | Double | String | Boolean] = js.undefined
-  var verticalAlign: js.UndefOr[String] = js.undefined
-  var wrap: js.UndefOr[Boolean] = js.undefined
+  var background: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[Boolean] = js.native
+  var borderBottom: js.UndefOr[WorkbookSheetRowCellBorderBottom] = js.native
+  var borderLeft: js.UndefOr[WorkbookSheetRowCellBorderLeft] = js.native
+  var borderRight: js.UndefOr[WorkbookSheetRowCellBorderRight] = js.native
+  var borderTop: js.UndefOr[WorkbookSheetRowCellBorderTop] = js.native
+  var colSpan: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.native
+  var fontName: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[Double] = js.native
+  var format: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.native
+  var hAlign: js.UndefOr[String] = js.native
+  var index: js.UndefOr[js.Any] = js.native
+  var italic: js.UndefOr[Boolean] = js.native
+  var rowSpan: js.UndefOr[Double] = js.native
+  var textAlign: js.UndefOr[String] = js.native
+  var underline: js.UndefOr[Boolean] = js.native
+  var vAlign: js.UndefOr[String] = js.native
+  var value: js.UndefOr[Date | Double | String | Boolean] = js.native
+  var verticalAlign: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[Boolean] = js.native
 }
 
 object WorkbookSheetRowCell {
   @scala.inline
-  def apply(
-    background: String = null,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    borderBottom: WorkbookSheetRowCellBorderBottom = null,
-    borderLeft: WorkbookSheetRowCellBorderLeft = null,
-    borderRight: WorkbookSheetRowCellBorderRight = null,
-    borderTop: WorkbookSheetRowCellBorderTop = null,
-    colSpan: js.UndefOr[Double] = js.undefined,
-    color: String = null,
-    fontFamily: String = null,
-    fontName: String = null,
-    fontSize: js.UndefOr[Double] = js.undefined,
-    format: String = null,
-    formula: String = null,
-    hAlign: String = null,
-    index: js.Any = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    rowSpan: js.UndefOr[Double] = js.undefined,
-    textAlign: String = null,
-    underline: js.UndefOr[Boolean] = js.undefined,
-    vAlign: String = null,
-    value: Date | Double | String | Boolean = null,
-    verticalAlign: String = null,
-    wrap: js.UndefOr[Boolean] = js.undefined
-  ): WorkbookSheetRowCell = {
+  def apply(): WorkbookSheetRowCell = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.get.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(colSpan)) __obj.updateDynamic("colSpan")(colSpan.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (!js.isUndefined(fontSize)) __obj.updateDynamic("fontSize")(fontSize.get.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (hAlign != null) __obj.updateDynamic("hAlign")(hAlign.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowSpan)) __obj.updateDynamic("rowSpan")(rowSpan.get.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.get.asInstanceOf[js.Any])
-    if (vAlign != null) __obj.updateDynamic("vAlign")(vAlign.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookSheetRowCell]
   }
+  @scala.inline
+  implicit class WorkbookSheetRowCellOps[Self <: WorkbookSheetRowCell] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setBold(value: Boolean): Self = this.set("bold", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBold: Self = this.set("bold", js.undefined)
+    @scala.inline
+    def setBorderBottom(value: WorkbookSheetRowCellBorderBottom): Self = this.set("borderBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderBottom: Self = this.set("borderBottom", js.undefined)
+    @scala.inline
+    def setBorderLeft(value: WorkbookSheetRowCellBorderLeft): Self = this.set("borderLeft", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderLeft: Self = this.set("borderLeft", js.undefined)
+    @scala.inline
+    def setBorderRight(value: WorkbookSheetRowCellBorderRight): Self = this.set("borderRight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderRight: Self = this.set("borderRight", js.undefined)
+    @scala.inline
+    def setBorderTop(value: WorkbookSheetRowCellBorderTop): Self = this.set("borderTop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBorderTop: Self = this.set("borderTop", js.undefined)
+    @scala.inline
+    def setColSpan(value: Double): Self = this.set("colSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColSpan: Self = this.set("colSpan", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    @scala.inline
+    def setFontName(value: String): Self = this.set("fontName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontName: Self = this.set("fontName", js.undefined)
+    @scala.inline
+    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    @scala.inline
+    def setFormat(value: String): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setFormula(value: String): Self = this.set("formula", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormula: Self = this.set("formula", js.undefined)
+    @scala.inline
+    def setHAlign(value: String): Self = this.set("hAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHAlign: Self = this.set("hAlign", js.undefined)
+    @scala.inline
+    def setIndex(value: js.Any): Self = this.set("index", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIndex: Self = this.set("index", js.undefined)
+    @scala.inline
+    def setItalic(value: Boolean): Self = this.set("italic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteItalic: Self = this.set("italic", js.undefined)
+    @scala.inline
+    def setRowSpan(value: Double): Self = this.set("rowSpan", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRowSpan: Self = this.set("rowSpan", js.undefined)
+    @scala.inline
+    def setTextAlign(value: String): Self = this.set("textAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextAlign: Self = this.set("textAlign", js.undefined)
+    @scala.inline
+    def setUnderline(value: Boolean): Self = this.set("underline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderline: Self = this.set("underline", js.undefined)
+    @scala.inline
+    def setVAlign(value: String): Self = this.set("vAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVAlign: Self = this.set("vAlign", js.undefined)
+    @scala.inline
+    def setValue(value: Date | Double | String | Boolean): Self = this.set("value", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValue: Self = this.set("value", js.undefined)
+    @scala.inline
+    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
+    @scala.inline
+    def setWrap(value: Boolean): Self = this.set("wrap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWrap: Self = this.set("wrap", js.undefined)
+  }
+  
 }
 

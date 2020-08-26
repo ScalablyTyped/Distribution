@@ -11,8 +11,8 @@ Get the real length of a string - by correctly counting astral symbols and ignor
 | Full name          | string-length |
 | Keywords           | unicode, string, length, size, count, astral, symbol, surrogates, codepoints, ansi, escape, codes |
 | # releases         | 3 |
-| # dependents       | 177 |
-| # downloads        | 228714358 |
+| # dependents       | 179 |
+| # downloads        | 237608208 |
 | # stars            | 2 |
 
 ## Links

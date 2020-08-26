@@ -57,20 +57,48 @@ trait SchemaPivot extends js.Object {
 
 object SchemaPivot {
   @scala.inline
-  def apply(
-    dimensionFilterClauses: js.Array[SchemaDimensionFilterClause] = null,
-    dimensions: js.Array[SchemaDimension] = null,
-    maxGroupCount: js.UndefOr[Double] = js.undefined,
-    metrics: js.Array[SchemaMetric] = null,
-    startGroup: js.UndefOr[Double] = js.undefined
-  ): SchemaPivot = {
+  def apply(): SchemaPivot = {
     val __obj = js.Dynamic.literal()
-    if (dimensionFilterClauses != null) __obj.updateDynamic("dimensionFilterClauses")(dimensionFilterClauses.asInstanceOf[js.Any])
-    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxGroupCount)) __obj.updateDynamic("maxGroupCount")(maxGroupCount.get.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(startGroup)) __obj.updateDynamic("startGroup")(startGroup.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPivot]
   }
+  @scala.inline
+  implicit class SchemaPivotOps[Self <: SchemaPivot] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDimensionFilterClausesVarargs(value: SchemaDimensionFilterClause*): Self = this.set("dimensionFilterClauses", js.Array(value :_*))
+    @scala.inline
+    def setDimensionFilterClauses(value: js.Array[SchemaDimensionFilterClause]): Self = this.set("dimensionFilterClauses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensionFilterClauses: Self = this.set("dimensionFilterClauses", js.undefined)
+    @scala.inline
+    def setDimensionsVarargs(value: SchemaDimension*): Self = this.set("dimensions", js.Array(value :_*))
+    @scala.inline
+    def setDimensions(value: js.Array[SchemaDimension]): Self = this.set("dimensions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDimensions: Self = this.set("dimensions", js.undefined)
+    @scala.inline
+    def setMaxGroupCount(value: Double): Self = this.set("maxGroupCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxGroupCount: Self = this.set("maxGroupCount", js.undefined)
+    @scala.inline
+    def setMetricsVarargs(value: SchemaMetric*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[SchemaMetric]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setStartGroup(value: Double): Self = this.set("startGroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartGroup: Self = this.set("startGroup", js.undefined)
+  }
+  
 }
 

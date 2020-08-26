@@ -18,11 +18,32 @@ trait GetTableVersionsResponse extends js.Object {
 
 object GetTableVersionsResponse {
   @scala.inline
-  def apply(NextToken: Token = null, TableVersions: GetTableVersionsList = null): GetTableVersionsResponse = {
+  def apply(): GetTableVersionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (TableVersions != null) __obj.updateDynamic("TableVersions")(TableVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTableVersionsResponse]
   }
+  @scala.inline
+  implicit class GetTableVersionsResponseOps[Self <: GetTableVersionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setTableVersionsVarargs(value: TableVersion*): Self = this.set("TableVersions", js.Array(value :_*))
+    @scala.inline
+    def setTableVersions(value: GetTableVersionsList): Self = this.set("TableVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTableVersions: Self = this.set("TableVersions", js.undefined)
+  }
+  
 }
 

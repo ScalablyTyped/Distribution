@@ -21,11 +21,30 @@ trait SchemaWaterfallChartDomain extends js.Object {
 
 object SchemaWaterfallChartDomain {
   @scala.inline
-  def apply(data: SchemaChartData = null, reversed: js.UndefOr[Boolean] = js.undefined): SchemaWaterfallChartDomain = {
+  def apply(): SchemaWaterfallChartDomain = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaWaterfallChartDomain]
   }
+  @scala.inline
+  implicit class SchemaWaterfallChartDomainOps[Self <: SchemaWaterfallChartDomain] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setData(value: SchemaChartData): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setReversed(value: Boolean): Self = this.set("reversed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReversed: Self = this.set("reversed", js.undefined)
+  }
+  
 }
 

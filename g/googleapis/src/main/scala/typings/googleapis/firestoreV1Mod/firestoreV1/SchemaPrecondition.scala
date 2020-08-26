@@ -23,11 +23,30 @@ trait SchemaPrecondition extends js.Object {
 
 object SchemaPrecondition {
   @scala.inline
-  def apply(exists: js.UndefOr[Boolean] = js.undefined, updateTime: String = null): SchemaPrecondition = {
+  def apply(): SchemaPrecondition = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(exists)) __obj.updateDynamic("exists")(exists.get.asInstanceOf[js.Any])
-    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPrecondition]
   }
+  @scala.inline
+  implicit class SchemaPreconditionOps[Self <: SchemaPrecondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setExists(value: Boolean): Self = this.set("exists", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExists: Self = this.set("exists", js.undefined)
+    @scala.inline
+    def setUpdateTime(value: String): Self = this.set("updateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateTime: Self = this.set("updateTime", js.undefined)
+  }
+  
 }
 

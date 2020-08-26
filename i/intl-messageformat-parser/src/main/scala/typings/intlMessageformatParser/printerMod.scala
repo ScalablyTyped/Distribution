@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("intl-messageformat-parser/lib/printer", JSImport.Namespace)
+@JSImport("intl-messageformat-parser/lib/src/printer", JSImport.Namespace)
 @js.native
 object printerMod extends js.Object {
   def doPrintAST(ast: js.Array[MessageFormatElement], isInPlural: Boolean): String = js.native

@@ -18,10 +18,30 @@ trait AssociateS3ResourcesRequest extends js.Object {
 
 object AssociateS3ResourcesRequest {
   @scala.inline
-  def apply(s3Resources: S3ResourcesClassification, memberAccountId: AWSAccountId = null): AssociateS3ResourcesRequest = {
+  def apply(s3Resources: S3ResourcesClassification): AssociateS3ResourcesRequest = {
     val __obj = js.Dynamic.literal(s3Resources = s3Resources.asInstanceOf[js.Any])
-    if (memberAccountId != null) __obj.updateDynamic("memberAccountId")(memberAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateS3ResourcesRequest]
   }
+  @scala.inline
+  implicit class AssociateS3ResourcesRequestOps[Self <: AssociateS3ResourcesRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setS3ResourcesVarargs(value: S3ResourceClassification*): Self = this.set("s3Resources", js.Array(value :_*))
+    @scala.inline
+    def setS3Resources(value: S3ResourcesClassification): Self = this.set("s3Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMemberAccountId(value: AWSAccountId): Self = this.set("memberAccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMemberAccountId: Self = this.set("memberAccountId", js.undefined)
+  }
+  
 }
 

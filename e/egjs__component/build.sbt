@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "egjs__component"
-version := "2.0-dt-20200226Z-2f44dc"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200226Z-56746b"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

@@ -35,6 +35,7 @@ object angularAugmentingMod extends js.Object {
       def getCurrentLanguage(): String = js.native
       /** Translate a plural string with the given context. */
       def getPlural(n: Double, string: String, stringPlural: String): String = js.native
+      def getPlural(n: Double, string: String, stringPlural: String, scope: js.UndefOr[scala.Nothing], context: String): String = js.native
       def getPlural(n: Double, string: String, stringPlural: String, scope: js.Any): String = js.native
       def getPlural(n: Double, string: String, stringPlural: String, scope: js.Any, context: String): String = js.native
       /** Translate a string with the given scope. Uses Angular.JS interpolation, so something like this will do what you expect:
@@ -43,6 +44,7 @@ object angularAugmentingMod extends js.Object {
         * The scope parameter is optional: pass null (or don't pass anything) if you're not using it: this skips interpolation and is a lot faster.
         */
       def getString(string: String): String = js.native
+      def getString(string: String, scope: js.UndefOr[scala.Nothing], context: String): String = js.native
       def getString(string: String, scope: js.Any): String = js.native
       def getString(string: String, scope: js.Any, context: String): String = js.native
       /** Get the correct pluralized (but untranslated) string for the value of n. */

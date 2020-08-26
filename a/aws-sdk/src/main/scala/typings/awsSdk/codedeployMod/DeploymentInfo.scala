@@ -122,66 +122,136 @@ trait DeploymentInfo extends js.Object {
 
 object DeploymentInfo {
   @scala.inline
-  def apply(
-    additionalDeploymentStatusInfo: AdditionalDeploymentStatusInfo = null,
-    applicationName: ApplicationName = null,
-    autoRollbackConfiguration: AutoRollbackConfiguration = null,
-    blueGreenDeploymentConfiguration: BlueGreenDeploymentConfiguration = null,
-    completeTime: Timestamp = null,
-    computePlatform: ComputePlatform = null,
-    createTime: Timestamp = null,
-    creator: DeploymentCreator = null,
-    deploymentConfigName: DeploymentConfigName = null,
-    deploymentGroupName: DeploymentGroupName = null,
-    deploymentId: DeploymentId = null,
-    deploymentOverview: DeploymentOverview = null,
-    deploymentStatusMessages: DeploymentStatusMessageList = null,
-    deploymentStyle: DeploymentStyle = null,
-    description: Description = null,
-    errorInformation: ErrorInformation = null,
-    externalId: ExternalId = null,
-    fileExistsBehavior: FileExistsBehavior = null,
-    ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined,
-    instanceTerminationWaitTimeStarted: js.UndefOr[Boolean] = js.undefined,
-    loadBalancerInfo: LoadBalancerInfo = null,
-    previousRevision: RevisionLocation = null,
-    revision: RevisionLocation = null,
-    rollbackInfo: RollbackInfo = null,
-    startTime: Timestamp = null,
-    status: DeploymentStatus = null,
-    targetInstances: TargetInstances = null,
-    updateOutdatedInstancesOnly: js.UndefOr[Boolean] = js.undefined
-  ): DeploymentInfo = {
+  def apply(): DeploymentInfo = {
     val __obj = js.Dynamic.literal()
-    if (additionalDeploymentStatusInfo != null) __obj.updateDynamic("additionalDeploymentStatusInfo")(additionalDeploymentStatusInfo.asInstanceOf[js.Any])
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
-    if (autoRollbackConfiguration != null) __obj.updateDynamic("autoRollbackConfiguration")(autoRollbackConfiguration.asInstanceOf[js.Any])
-    if (blueGreenDeploymentConfiguration != null) __obj.updateDynamic("blueGreenDeploymentConfiguration")(blueGreenDeploymentConfiguration.asInstanceOf[js.Any])
-    if (completeTime != null) __obj.updateDynamic("completeTime")(completeTime.asInstanceOf[js.Any])
-    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
-    if (deploymentConfigName != null) __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
-    if (deploymentGroupName != null) __obj.updateDynamic("deploymentGroupName")(deploymentGroupName.asInstanceOf[js.Any])
-    if (deploymentId != null) __obj.updateDynamic("deploymentId")(deploymentId.asInstanceOf[js.Any])
-    if (deploymentOverview != null) __obj.updateDynamic("deploymentOverview")(deploymentOverview.asInstanceOf[js.Any])
-    if (deploymentStatusMessages != null) __obj.updateDynamic("deploymentStatusMessages")(deploymentStatusMessages.asInstanceOf[js.Any])
-    if (deploymentStyle != null) __obj.updateDynamic("deploymentStyle")(deploymentStyle.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (errorInformation != null) __obj.updateDynamic("errorInformation")(errorInformation.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (fileExistsBehavior != null) __obj.updateDynamic("fileExistsBehavior")(fileExistsBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreApplicationStopFailures)) __obj.updateDynamic("ignoreApplicationStopFailures")(ignoreApplicationStopFailures.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(instanceTerminationWaitTimeStarted)) __obj.updateDynamic("instanceTerminationWaitTimeStarted")(instanceTerminationWaitTimeStarted.get.asInstanceOf[js.Any])
-    if (loadBalancerInfo != null) __obj.updateDynamic("loadBalancerInfo")(loadBalancerInfo.asInstanceOf[js.Any])
-    if (previousRevision != null) __obj.updateDynamic("previousRevision")(previousRevision.asInstanceOf[js.Any])
-    if (revision != null) __obj.updateDynamic("revision")(revision.asInstanceOf[js.Any])
-    if (rollbackInfo != null) __obj.updateDynamic("rollbackInfo")(rollbackInfo.asInstanceOf[js.Any])
-    if (startTime != null) __obj.updateDynamic("startTime")(startTime.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetInstances != null) __obj.updateDynamic("targetInstances")(targetInstances.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateOutdatedInstancesOnly)) __obj.updateDynamic("updateOutdatedInstancesOnly")(updateOutdatedInstancesOnly.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploymentInfo]
   }
+  @scala.inline
+  implicit class DeploymentInfoOps[Self <: DeploymentInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdditionalDeploymentStatusInfo(value: AdditionalDeploymentStatusInfo): Self = this.set("additionalDeploymentStatusInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdditionalDeploymentStatusInfo: Self = this.set("additionalDeploymentStatusInfo", js.undefined)
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    @scala.inline
+    def setAutoRollbackConfiguration(value: AutoRollbackConfiguration): Self = this.set("autoRollbackConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoRollbackConfiguration: Self = this.set("autoRollbackConfiguration", js.undefined)
+    @scala.inline
+    def setBlueGreenDeploymentConfiguration(value: BlueGreenDeploymentConfiguration): Self = this.set("blueGreenDeploymentConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlueGreenDeploymentConfiguration: Self = this.set("blueGreenDeploymentConfiguration", js.undefined)
+    @scala.inline
+    def setCompleteTime(value: Timestamp): Self = this.set("completeTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCompleteTime: Self = this.set("completeTime", js.undefined)
+    @scala.inline
+    def setComputePlatform(value: ComputePlatform): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    @scala.inline
+    def setCreateTime(value: Timestamp): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setCreator(value: DeploymentCreator): Self = this.set("creator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreator: Self = this.set("creator", js.undefined)
+    @scala.inline
+    def setDeploymentConfigName(value: DeploymentConfigName): Self = this.set("deploymentConfigName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentConfigName: Self = this.set("deploymentConfigName", js.undefined)
+    @scala.inline
+    def setDeploymentGroupName(value: DeploymentGroupName): Self = this.set("deploymentGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentGroupName: Self = this.set("deploymentGroupName", js.undefined)
+    @scala.inline
+    def setDeploymentId(value: DeploymentId): Self = this.set("deploymentId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentId: Self = this.set("deploymentId", js.undefined)
+    @scala.inline
+    def setDeploymentOverview(value: DeploymentOverview): Self = this.set("deploymentOverview", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentOverview: Self = this.set("deploymentOverview", js.undefined)
+    @scala.inline
+    def setDeploymentStatusMessagesVarargs(value: ErrorMessage*): Self = this.set("deploymentStatusMessages", js.Array(value :_*))
+    @scala.inline
+    def setDeploymentStatusMessages(value: DeploymentStatusMessageList): Self = this.set("deploymentStatusMessages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStatusMessages: Self = this.set("deploymentStatusMessages", js.undefined)
+    @scala.inline
+    def setDeploymentStyle(value: DeploymentStyle): Self = this.set("deploymentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeploymentStyle: Self = this.set("deploymentStyle", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setErrorInformation(value: ErrorInformation): Self = this.set("errorInformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorInformation: Self = this.set("errorInformation", js.undefined)
+    @scala.inline
+    def setExternalId(value: ExternalId): Self = this.set("externalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExternalId: Self = this.set("externalId", js.undefined)
+    @scala.inline
+    def setFileExistsBehavior(value: FileExistsBehavior): Self = this.set("fileExistsBehavior", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileExistsBehavior: Self = this.set("fileExistsBehavior", js.undefined)
+    @scala.inline
+    def setIgnoreApplicationStopFailures(value: Boolean): Self = this.set("ignoreApplicationStopFailures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreApplicationStopFailures: Self = this.set("ignoreApplicationStopFailures", js.undefined)
+    @scala.inline
+    def setInstanceTerminationWaitTimeStarted(value: Boolean): Self = this.set("instanceTerminationWaitTimeStarted", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstanceTerminationWaitTimeStarted: Self = this.set("instanceTerminationWaitTimeStarted", js.undefined)
+    @scala.inline
+    def setLoadBalancerInfo(value: LoadBalancerInfo): Self = this.set("loadBalancerInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLoadBalancerInfo: Self = this.set("loadBalancerInfo", js.undefined)
+    @scala.inline
+    def setPreviousRevision(value: RevisionLocation): Self = this.set("previousRevision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreviousRevision: Self = this.set("previousRevision", js.undefined)
+    @scala.inline
+    def setRevision(value: RevisionLocation): Self = this.set("revision", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRevision: Self = this.set("revision", js.undefined)
+    @scala.inline
+    def setRollbackInfo(value: RollbackInfo): Self = this.set("rollbackInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRollbackInfo: Self = this.set("rollbackInfo", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("startTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("startTime", js.undefined)
+    @scala.inline
+    def setStatus(value: DeploymentStatus): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setTargetInstances(value: TargetInstances): Self = this.set("targetInstances", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTargetInstances: Self = this.set("targetInstances", js.undefined)
+    @scala.inline
+    def setUpdateOutdatedInstancesOnly(value: Boolean): Self = this.set("updateOutdatedInstancesOnly", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUpdateOutdatedInstancesOnly: Self = this.set("updateOutdatedInstancesOnly", js.undefined)
+  }
+  
 }
 

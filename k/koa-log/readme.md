@@ -12,7 +12,7 @@ logger middlware for koa
 | Keywords           | koa, logger, middlware |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 8077 |
+| # downloads        | 7226 |
 | # stars            | 0 |
 
 ## Links

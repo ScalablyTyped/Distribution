@@ -14,6 +14,12 @@ object convert extends js.Object {
   def apply(
     configs: js.Array[DeclarativeMutationConfig],
     request: ConcreteRequest,
+    optimisticUpdater: js.UndefOr[scala.Nothing],
+    updater: SelectorStoreUpdater[js.Object]
+  ): OptimisticUpdater = js.native
+  def apply(
+    configs: js.Array[DeclarativeMutationConfig],
+    request: ConcreteRequest,
     optimisticUpdater: SelectorStoreUpdater[js.Object]
   ): OptimisticUpdater = js.native
   def apply(

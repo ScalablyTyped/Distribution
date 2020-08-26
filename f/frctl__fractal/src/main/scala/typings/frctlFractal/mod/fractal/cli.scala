@@ -43,7 +43,11 @@ object cli extends js.Object {
   class Console () extends js.Object {
     var theme: CliTheme = js.native
     def box(): this.type = js.native
+    def box(header: js.UndefOr[scala.Nothing], body: js.UndefOr[scala.Nothing], footer: String): this.type = js.native
+    def box(header: js.UndefOr[scala.Nothing], body: js.Array[String]): this.type = js.native
+    def box(header: js.UndefOr[scala.Nothing], body: js.Array[String], footer: String): this.type = js.native
     def box(header: String): this.type = js.native
+    def box(header: String, body: js.UndefOr[scala.Nothing], footer: String): this.type = js.native
     def box(header: String, body: js.Array[String]): this.type = js.native
     def box(header: String, body: js.Array[String], footer: String): this.type = js.native
     def br(): this.type = js.native

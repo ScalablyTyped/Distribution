@@ -34,22 +34,46 @@ trait MotionImageInserter extends js.Object {
 
 object MotionImageInserter {
   @scala.inline
-  def apply(
-    Framerate: MotionImageInsertionFramerate = null,
-    Input: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png = null,
-    InsertionMode: MotionImageInsertionMode = null,
-    Offset: MotionImageInsertionOffset = null,
-    Playback: MotionImagePlayback = null,
-    StartTime: stringMin11Max11Pattern01D20305D205D = null
-  ): MotionImageInserter = {
+  def apply(): MotionImageInserter = {
     val __obj = js.Dynamic.literal()
-    if (Framerate != null) __obj.updateDynamic("Framerate")(Framerate.asInstanceOf[js.Any])
-    if (Input != null) __obj.updateDynamic("Input")(Input.asInstanceOf[js.Any])
-    if (InsertionMode != null) __obj.updateDynamic("InsertionMode")(InsertionMode.asInstanceOf[js.Any])
-    if (Offset != null) __obj.updateDynamic("Offset")(Offset.asInstanceOf[js.Any])
-    if (Playback != null) __obj.updateDynamic("Playback")(Playback.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionImageInserter]
   }
+  @scala.inline
+  implicit class MotionImageInserterOps[Self <: MotionImageInserter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFramerate(value: MotionImageInsertionFramerate): Self = this.set("Framerate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFramerate: Self = this.set("Framerate", js.undefined)
+    @scala.inline
+    def setInput(value: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png): Self = this.set("Input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("Input", js.undefined)
+    @scala.inline
+    def setInsertionMode(value: MotionImageInsertionMode): Self = this.set("InsertionMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertionMode: Self = this.set("InsertionMode", js.undefined)
+    @scala.inline
+    def setOffset(value: MotionImageInsertionOffset): Self = this.set("Offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("Offset", js.undefined)
+    @scala.inline
+    def setPlayback(value: MotionImagePlayback): Self = this.set("Playback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayback: Self = this.set("Playback", js.undefined)
+    @scala.inline
+    def setStartTime(value: stringMin11Max11Pattern01D20305D205D): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+  }
+  
 }
 

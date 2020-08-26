@@ -15,6 +15,7 @@ object miscMod extends js.Object {
   @js.native
   object uniqid extends js.Object {
     def apply(): js.Any = js.native
+    def apply(prefix: js.UndefOr[scala.Nothing], moreEntropy: js.Any): js.Any = js.native
     def apply(prefix: js.Any): js.Any = js.native
     def apply(prefix: js.Any, moreEntropy: js.Any): js.Any = js.native
   }

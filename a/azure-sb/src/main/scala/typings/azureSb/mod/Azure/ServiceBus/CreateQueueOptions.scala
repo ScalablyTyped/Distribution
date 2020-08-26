@@ -5,42 +5,73 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<azure-sb.azure-sb.Azure.ServiceBus.IQueueOptions> */
+@js.native
 trait CreateQueueOptions extends js.Object {
-  var AutoDeleteOnIdle: js.UndefOr[String] = js.undefined
-  var DeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.undefined
-  var DefaultMessageTimeToLive: js.UndefOr[String] = js.undefined
-  var DuplicateDetectionHistoryTimeWindow: js.UndefOr[String] = js.undefined
-  var EnablePartitioning: js.UndefOr[Boolean] = js.undefined
-  var LockDuration: js.UndefOr[String] = js.undefined
-  var MaxSizeInMegabytes: js.UndefOr[Double] = js.undefined
-  var RequiresDuplicateDetection: js.UndefOr[Boolean] = js.undefined
-  var RequiresSession: js.UndefOr[Boolean] = js.undefined
+  var AutoDeleteOnIdle: js.UndefOr[String] = js.native
+  var DeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.native
+  var DefaultMessageTimeToLive: js.UndefOr[String] = js.native
+  var DuplicateDetectionHistoryTimeWindow: js.UndefOr[String] = js.native
+  var EnablePartitioning: js.UndefOr[Boolean] = js.native
+  var LockDuration: js.UndefOr[String] = js.native
+  var MaxSizeInMegabytes: js.UndefOr[Double] = js.native
+  var RequiresDuplicateDetection: js.UndefOr[Boolean] = js.native
+  var RequiresSession: js.UndefOr[Boolean] = js.native
 }
 
 object CreateQueueOptions {
   @scala.inline
-  def apply(
-    AutoDeleteOnIdle: String = null,
-    DeadLetteringOnMessageExpiration: js.UndefOr[Boolean] = js.undefined,
-    DefaultMessageTimeToLive: String = null,
-    DuplicateDetectionHistoryTimeWindow: String = null,
-    EnablePartitioning: js.UndefOr[Boolean] = js.undefined,
-    LockDuration: String = null,
-    MaxSizeInMegabytes: js.UndefOr[Double] = js.undefined,
-    RequiresDuplicateDetection: js.UndefOr[Boolean] = js.undefined,
-    RequiresSession: js.UndefOr[Boolean] = js.undefined
-  ): CreateQueueOptions = {
+  def apply(): CreateQueueOptions = {
     val __obj = js.Dynamic.literal()
-    if (AutoDeleteOnIdle != null) __obj.updateDynamic("AutoDeleteOnIdle")(AutoDeleteOnIdle.asInstanceOf[js.Any])
-    if (!js.isUndefined(DeadLetteringOnMessageExpiration)) __obj.updateDynamic("DeadLetteringOnMessageExpiration")(DeadLetteringOnMessageExpiration.get.asInstanceOf[js.Any])
-    if (DefaultMessageTimeToLive != null) __obj.updateDynamic("DefaultMessageTimeToLive")(DefaultMessageTimeToLive.asInstanceOf[js.Any])
-    if (DuplicateDetectionHistoryTimeWindow != null) __obj.updateDynamic("DuplicateDetectionHistoryTimeWindow")(DuplicateDetectionHistoryTimeWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(EnablePartitioning)) __obj.updateDynamic("EnablePartitioning")(EnablePartitioning.get.asInstanceOf[js.Any])
-    if (LockDuration != null) __obj.updateDynamic("LockDuration")(LockDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(MaxSizeInMegabytes)) __obj.updateDynamic("MaxSizeInMegabytes")(MaxSizeInMegabytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresDuplicateDetection)) __obj.updateDynamic("RequiresDuplicateDetection")(RequiresDuplicateDetection.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RequiresSession)) __obj.updateDynamic("RequiresSession")(RequiresSession.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQueueOptions]
   }
+  @scala.inline
+  implicit class CreateQueueOptionsOps[Self <: CreateQueueOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoDeleteOnIdle(value: String): Self = this.set("AutoDeleteOnIdle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoDeleteOnIdle: Self = this.set("AutoDeleteOnIdle", js.undefined)
+    @scala.inline
+    def setDeadLetteringOnMessageExpiration(value: Boolean): Self = this.set("DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeadLetteringOnMessageExpiration: Self = this.set("DeadLetteringOnMessageExpiration", js.undefined)
+    @scala.inline
+    def setDefaultMessageTimeToLive(value: String): Self = this.set("DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultMessageTimeToLive: Self = this.set("DefaultMessageTimeToLive", js.undefined)
+    @scala.inline
+    def setDuplicateDetectionHistoryTimeWindow(value: String): Self = this.set("DuplicateDetectionHistoryTimeWindow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuplicateDetectionHistoryTimeWindow: Self = this.set("DuplicateDetectionHistoryTimeWindow", js.undefined)
+    @scala.inline
+    def setEnablePartitioning(value: Boolean): Self = this.set("EnablePartitioning", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePartitioning: Self = this.set("EnablePartitioning", js.undefined)
+    @scala.inline
+    def setLockDuration(value: String): Self = this.set("LockDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLockDuration: Self = this.set("LockDuration", js.undefined)
+    @scala.inline
+    def setMaxSizeInMegabytes(value: Double): Self = this.set("MaxSizeInMegabytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxSizeInMegabytes: Self = this.set("MaxSizeInMegabytes", js.undefined)
+    @scala.inline
+    def setRequiresDuplicateDetection(value: Boolean): Self = this.set("RequiresDuplicateDetection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresDuplicateDetection: Self = this.set("RequiresDuplicateDetection", js.undefined)
+    @scala.inline
+    def setRequiresSession(value: Boolean): Self = this.set("RequiresSession", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRequiresSession: Self = this.set("RequiresSession", js.undefined)
+  }
+  
 }
 

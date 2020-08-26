@@ -6,41 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ trait DateTimeOptions extends CalendarDayOptions {
-  var knexOptions: js.Any
+- typings.keystonejsKeystone.mod.AllFieldsOptions because Already inherited */ @js.native
+trait DateTimeOptions extends CalendarDayOptions {
+  var knexOptions: js.Any = js.native
 }
 
 object DateTimeOptions {
   @scala.inline
-  def apply(
-    knexOptions: js.Any,
-    `type`: FieldType,
-    access: Access = null,
-    defaultValue: Boolean | DefaultValueFunction = null,
-    format: String = null,
-    hooks: Hooks = null,
-    isRequired: js.UndefOr[Boolean] = js.undefined,
-    isUnique: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    schemaDoc: String = null,
-    yearPickerType: String = null,
-    yearRangeFrom: js.UndefOr[Double] = js.undefined,
-    yearRangeTo: js.UndefOr[Double] = js.undefined
-  ): DateTimeOptions = {
+  def apply(knexOptions: js.Any, `type`: FieldType): DateTimeOptions = {
     val __obj = js.Dynamic.literal(knexOptions = knexOptions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRequired)) __obj.updateDynamic("isRequired")(isRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isUnique)) __obj.updateDynamic("isUnique")(isUnique.get.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (schemaDoc != null) __obj.updateDynamic("schemaDoc")(schemaDoc.asInstanceOf[js.Any])
-    if (yearPickerType != null) __obj.updateDynamic("yearPickerType")(yearPickerType.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearRangeFrom)) __obj.updateDynamic("yearRangeFrom")(yearRangeFrom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearRangeTo)) __obj.updateDynamic("yearRangeTo")(yearRangeTo.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimeOptions]
   }
+  @scala.inline
+  implicit class DateTimeOptionsOps[Self <: DateTimeOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKnexOptions(value: js.Any): Self = this.set("knexOptions", value.asInstanceOf[js.Any])
+  }
+  
 }
 

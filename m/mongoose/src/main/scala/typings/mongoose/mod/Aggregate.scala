@@ -155,6 +155,11 @@ trait Aggregate[T] extends js.Object {
   /** Provides promise for aggregate. */
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
   /** Provides promise for aggregate. */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /** Provides promise for aggregate. */
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
   /** Provides promise for aggregate. */
   def `then`[TResult1, TResult2](

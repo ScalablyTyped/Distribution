@@ -17,20 +17,5 @@ class ASPxClientCardViewBatchEditEndEditingEventArgs protected ()
     * @param cardValues A hashtable that stores information about editable cells. This value is assigned to the ASPxClientCardViewBatchEditEndEditingEventArgs.cardValues property.
     */
   def this(visibleIndex: Double, cardValues: js.Any) = this()
-  /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
-    */
-  /* CompleteClass */
-  override var cancel: Boolean = js.native
-  /**
-    * Gets a hashtable that maintains information about editable cells.
-    */
-  /* CompleteClass */
-  override var cardValues: js.Any = js.native
-  /**
-    * Gets the visible index of the card whose cells have been edited.
-    */
-  /* CompleteClass */
-  override var visibleIndex: Double = js.native
 }
 

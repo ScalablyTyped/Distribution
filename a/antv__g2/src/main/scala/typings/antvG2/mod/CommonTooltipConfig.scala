@@ -14,51 +14,88 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CommonTooltipConfig extends js.Object {
-  var crosshairs: js.UndefOr[Style] = js.undefined
-  var follow: js.UndefOr[Boolean] = js.undefined
-  var hideMarkers: js.UndefOr[Boolean] = js.undefined
-  var inPlot: js.UndefOr[Boolean] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[left | right | top | bottom] = js.undefined
-  var shared: js.UndefOr[Boolean] = js.undefined
-  var showTitle: js.UndefOr[Boolean] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var triggerOn: js.UndefOr[mousemove | click | none] = js.undefined
-  var `type`: js.UndefOr[default | mini] = js.undefined
-  var useHtml: js.UndefOr[Boolean] = js.undefined
+  var crosshairs: js.UndefOr[Style] = js.native
+  var follow: js.UndefOr[Boolean] = js.native
+  var hideMarkers: js.UndefOr[Boolean] = js.native
+  var inPlot: js.UndefOr[Boolean] = js.native
+  var offset: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[left | right | top | bottom] = js.native
+  var shared: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[String] = js.native
+  var triggerOn: js.UndefOr[mousemove | click | none] = js.native
+  var `type`: js.UndefOr[default | mini] = js.native
+  var useHtml: js.UndefOr[Boolean] = js.native
 }
 
 object CommonTooltipConfig {
   @scala.inline
-  def apply(
-    crosshairs: Style = null,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    hideMarkers: js.UndefOr[Boolean] = js.undefined,
-    inPlot: js.UndefOr[Boolean] = js.undefined,
-    offset: js.UndefOr[Double] = js.undefined,
-    position: left | right | top | bottom = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    showTitle: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    triggerOn: mousemove | click | none = null,
-    `type`: default | mini = null,
-    useHtml: js.UndefOr[Boolean] = js.undefined
-  ): CommonTooltipConfig = {
+  def apply(): CommonTooltipConfig = {
     val __obj = js.Dynamic.literal()
-    if (crosshairs != null) __obj.updateDynamic("crosshairs")(crosshairs.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideMarkers)) __obj.updateDynamic("hideMarkers")(hideMarkers.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(inPlot)) __obj.updateDynamic("inPlot")(inPlot.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset.get.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.get.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonTooltipConfig]
   }
+  @scala.inline
+  implicit class CommonTooltipConfigOps[Self <: CommonTooltipConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrosshairs(value: Style): Self = this.set("crosshairs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrosshairs: Self = this.set("crosshairs", js.undefined)
+    @scala.inline
+    def setFollow(value: Boolean): Self = this.set("follow", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFollow: Self = this.set("follow", js.undefined)
+    @scala.inline
+    def setHideMarkers(value: Boolean): Self = this.set("hideMarkers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHideMarkers: Self = this.set("hideMarkers", js.undefined)
+    @scala.inline
+    def setInPlot(value: Boolean): Self = this.set("inPlot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInPlot: Self = this.set("inPlot", js.undefined)
+    @scala.inline
+    def setOffset(value: Double): Self = this.set("offset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOffset: Self = this.set("offset", js.undefined)
+    @scala.inline
+    def setPosition(value: left | right | top | bottom): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setShared(value: Boolean): Self = this.set("shared", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShared: Self = this.set("shared", js.undefined)
+    @scala.inline
+    def setShowTitle(value: Boolean): Self = this.set("showTitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowTitle: Self = this.set("showTitle", js.undefined)
+    @scala.inline
+    def setTitle(value: String): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTriggerOn(value: mousemove | click | none): Self = this.set("triggerOn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTriggerOn: Self = this.set("triggerOn", js.undefined)
+    @scala.inline
+    def setType(value: default | mini): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUseHtml(value: Boolean): Self = this.set("useHtml", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUseHtml: Self = this.set("useHtml", js.undefined)
+  }
+  
 }
 

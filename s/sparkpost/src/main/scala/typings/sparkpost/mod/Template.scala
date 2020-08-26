@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Template extends js.Object {
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
-  var content: TemplateContent | Emailrfc822
+  var content: TemplateContent | Emailrfc822 = js.native
   /** Detailed description of the template  no  Maximum length - 1024 bytes */
-  var description: String
+  var description: String = js.native
   /**
     * Short, unique, alphanumeric ID used to reference the template.
     * At a minimum, id or name is required upon creation.
@@ -17,17 +18,17 @@ trait Template extends js.Object {
     * After a template has been created, this property cannot be changed. Maximum length - 64 bytes
     *
     */
-  var id: String
+  var id: String = js.native
   /** The “last_update_time” is the time the template was last updated, for both draft and published versions */
-  var last_update_time: String
+  var last_update_time: String = js.native
   /** The “last_use” time represents the last time any version of this template was used (draft or published). */
-  var last_use: js.UndefOr[String] = js.undefined
+  var last_use: js.UndefOr[String] = js.native
   /** Editable display name  At a minimum, id or name is required upon creation.  The name does not have to be unique. Maximum length - 1024 bytes */
-  var name: String
+  var name: String = js.native
   /** JSON object in which template options are defined  no  For a full description, see the Options Attributes. */
-  var options: TemplateOptions
+  var options: TemplateOptions = js.native
   /** Whether the template is published or is a draft version  no - defaults to false  A template cannot be changed from published to draft. */
-  var published: Boolean
+  var published: Boolean = js.native
 }
 
 object Template {
@@ -39,12 +40,41 @@ object Template {
     last_update_time: String,
     name: String,
     options: TemplateOptions,
-    published: Boolean,
-    last_use: String = null
+    published: Boolean
   ): Template = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last_update_time = last_update_time.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], published = published.asInstanceOf[js.Any])
-    if (last_use != null) __obj.updateDynamic("last_use")(last_use.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
+  @scala.inline
+  implicit class TemplateOps[Self <: Template] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContent(value: TemplateContent | Emailrfc822): Self = this.set("content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLast_update_time(value: String): Self = this.set("last_update_time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOptions(value: TemplateOptions): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPublished(value: Boolean): Self = this.set("published", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLast_use(value: String): Self = this.set("last_use", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLast_use: Self = this.set("last_use", js.undefined)
+  }
+  
 }
 

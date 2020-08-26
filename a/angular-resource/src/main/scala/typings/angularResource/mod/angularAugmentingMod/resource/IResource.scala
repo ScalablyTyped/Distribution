@@ -20,7 +20,15 @@ trait IResource[T] extends js.Object {
   @JSName("$delete")
   def $delete(): IPromise[T] = js.native
   @JSName("$delete")
+  def $delete(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+  @JSName("$delete")
+  def $delete(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
+  @JSName("$delete")
+  def $delete(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
+  @JSName("$delete")
   def $delete(params: js.Object): IPromise[T] = js.native
+  @JSName("$delete")
+  def $delete(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
   @JSName("$delete")
   def $delete(params: js.Object, success: Function): IPromise[T] = js.native
   @JSName("$delete")
@@ -32,7 +40,15 @@ trait IResource[T] extends js.Object {
   @JSName("$get")
   def $get(): IPromise[T] = js.native
   @JSName("$get")
+  def $get(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+  @JSName("$get")
+  def $get(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
+  @JSName("$get")
+  def $get(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
+  @JSName("$get")
   def $get(params: js.Object): IPromise[T] = js.native
+  @JSName("$get")
+  def $get(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
   @JSName("$get")
   def $get(params: js.Object, success: Function): IPromise[T] = js.native
   @JSName("$get")
@@ -44,7 +60,15 @@ trait IResource[T] extends js.Object {
   @JSName("$query")
   def $query(): IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
+  def $query(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[IResourceArray[T]] = js.native
+  @JSName("$query")
+  def $query(params: js.UndefOr[scala.Nothing], success: Function): IPromise[IResourceArray[T]] = js.native
+  @JSName("$query")
+  def $query(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[IResourceArray[T]] = js.native
+  @JSName("$query")
   def $query(params: js.Object): IPromise[IResourceArray[T]] = js.native
+  @JSName("$query")
+  def $query(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
   def $query(params: js.Object, success: Function): IPromise[IResourceArray[T]] = js.native
   @JSName("$query")
@@ -56,7 +80,15 @@ trait IResource[T] extends js.Object {
   @JSName("$remove")
   def $remove(): IPromise[T] = js.native
   @JSName("$remove")
+  def $remove(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+  @JSName("$remove")
+  def $remove(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
+  @JSName("$remove")
+  def $remove(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
+  @JSName("$remove")
   def $remove(params: js.Object): IPromise[T] = js.native
+  @JSName("$remove")
+  def $remove(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
   @JSName("$remove")
   def $remove(params: js.Object, success: Function): IPromise[T] = js.native
   @JSName("$remove")
@@ -68,7 +100,15 @@ trait IResource[T] extends js.Object {
   @JSName("$save")
   def $save(): IPromise[T] = js.native
   @JSName("$save")
+  def $save(params: js.UndefOr[scala.Nothing], success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
+  @JSName("$save")
+  def $save(params: js.UndefOr[scala.Nothing], success: Function): IPromise[T] = js.native
+  @JSName("$save")
+  def $save(params: js.UndefOr[scala.Nothing], success: Function, error: Function): IPromise[T] = js.native
+  @JSName("$save")
   def $save(params: js.Object): IPromise[T] = js.native
+  @JSName("$save")
+  def $save(params: js.Object, success: js.UndefOr[scala.Nothing], error: Function): IPromise[T] = js.native
   @JSName("$save")
   def $save(params: js.Object, success: Function): IPromise[T] = js.native
   @JSName("$save")

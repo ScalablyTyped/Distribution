@@ -21,6 +21,16 @@ trait BootstrapTreeView extends Control {
   def getNodeCount(): Double = js.native
   def getRootNode(): BootstrapTreeViewNode | Null = js.native
   def getSelectedNode(): BootstrapTreeViewNode | Null = js.native
+  def off(
+    eventName: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs | TreeViewNodeCancelEventArgs | TreeViewNodeClickEventArgs | TreeViewNodeEventArgs | TreeViewNodeProcessingModeEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")

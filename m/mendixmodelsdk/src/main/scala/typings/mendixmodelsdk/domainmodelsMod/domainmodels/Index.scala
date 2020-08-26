@@ -30,7 +30,7 @@ class Index protected () extends Element {
   def attributes: IList[IndexedAttribute] = js.native
   def containerAsEntity: Entity = js.native
   def dataStorageGuid: String = js.native
-  def dataStorageGuid(newValue: String): js.Any = js.native
+  def dataStorageGuid_=(newValue: String): Unit = js.native
 }
 
 /* static members */

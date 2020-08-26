@@ -28,13 +28,13 @@ object ManagementOperation {
     __obj.asInstanceOf[ManagementOperation]
   }
   @scala.inline
-  def LoadOperation(destination: String | `false`, silent: Boolean, source: String, `type`: load): ManagementOperation = {
+  def LoadOperation(destination: IriTerm | `false`, silent: Boolean, source: IriTerm, `type`: load): ManagementOperation = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementOperation]
   }
   @scala.inline
-  def CreateOperation(graph: String, silent: Boolean, `type`: create): ManagementOperation = {
+  def CreateOperation(graph: IriTerm, silent: Boolean, `type`: create): ManagementOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagementOperation]

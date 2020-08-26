@@ -35,5 +35,26 @@ object Scte35DeliveryRestrictions {
     val __obj = js.Dynamic.literal(ArchiveAllowedFlag = ArchiveAllowedFlag.asInstanceOf[js.Any], DeviceRestrictions = DeviceRestrictions.asInstanceOf[js.Any], NoRegionalBlackoutFlag = NoRegionalBlackoutFlag.asInstanceOf[js.Any], WebDeliveryAllowedFlag = WebDeliveryAllowedFlag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35DeliveryRestrictions]
   }
+  @scala.inline
+  implicit class Scte35DeliveryRestrictionsOps[Self <: Scte35DeliveryRestrictions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArchiveAllowedFlag(value: Scte35ArchiveAllowedFlag): Self = this.set("ArchiveAllowedFlag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDeviceRestrictions(value: Scte35DeviceRestrictions): Self = this.set("DeviceRestrictions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNoRegionalBlackoutFlag(value: Scte35NoRegionalBlackoutFlag): Self = this.set("NoRegionalBlackoutFlag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWebDeliveryAllowedFlag(value: Scte35WebDeliveryAllowedFlag): Self = this.set("WebDeliveryAllowedFlag", value.asInstanceOf[js.Any])
+  }
+  
 }
 

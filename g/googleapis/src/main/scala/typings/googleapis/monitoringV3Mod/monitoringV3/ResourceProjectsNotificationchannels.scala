@@ -30,6 +30,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaNotificationChannel] = js.native
   def create(callback: BodyResponseCallback[SchemaNotificationChannel]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationChannel] = js.native
   def create(params: ParamsResourceProjectsNotificationchannelsCreate): GaxiosPromise[SchemaNotificationChannel] = js.native
   def create(
     params: ParamsResourceProjectsNotificationchannelsCreate,
@@ -61,6 +62,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsNotificationchannelsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsNotificationchannelsDelete,
@@ -95,6 +97,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaNotificationChannel] = js.native
   def get(callback: BodyResponseCallback[SchemaNotificationChannel]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationChannel] = js.native
   def get(params: ParamsResourceProjectsNotificationchannelsGet): GaxiosPromise[SchemaNotificationChannel] = js.native
   def get(
     params: ParamsResourceProjectsNotificationchannelsGet,
@@ -145,6 +148,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def getVerificationCode(): GaxiosPromise[SchemaGetNotificationChannelVerificationCodeResponse] = js.native
   def getVerificationCode(callback: BodyResponseCallback[SchemaGetNotificationChannelVerificationCodeResponse]): Unit = js.native
+  def getVerificationCode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetNotificationChannelVerificationCodeResponse] = js.native
   def getVerificationCode(params: ParamsResourceProjectsNotificationchannelsGetverificationcode): GaxiosPromise[SchemaGetNotificationChannelVerificationCodeResponse] = js.native
   def getVerificationCode(
     params: ParamsResourceProjectsNotificationchannelsGetverificationcode,
@@ -180,6 +184,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaListNotificationChannelsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListNotificationChannelsResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListNotificationChannelsResponse] = js.native
   def list(params: ParamsResourceProjectsNotificationchannelsList): GaxiosPromise[SchemaListNotificationChannelsResponse] = js.native
   def list(
     params: ParamsResourceProjectsNotificationchannelsList,
@@ -213,6 +218,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def patch(): GaxiosPromise[SchemaNotificationChannel] = js.native
   def patch(callback: BodyResponseCallback[SchemaNotificationChannel]): Unit = js.native
+  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationChannel] = js.native
   def patch(params: ParamsResourceProjectsNotificationchannelsPatch): GaxiosPromise[SchemaNotificationChannel] = js.native
   def patch(
     params: ParamsResourceProjectsNotificationchannelsPatch,
@@ -245,6 +251,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def sendVerificationCode(): GaxiosPromise[SchemaEmpty] = js.native
   def sendVerificationCode(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def sendVerificationCode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def sendVerificationCode(params: ParamsResourceProjectsNotificationchannelsSendverificationcode): GaxiosPromise[SchemaEmpty] = js.native
   def sendVerificationCode(
     params: ParamsResourceProjectsNotificationchannelsSendverificationcode,
@@ -278,6 +285,7 @@ class ResourceProjectsNotificationchannels protected () extends js.Object {
     */
   def verify(): GaxiosPromise[SchemaNotificationChannel] = js.native
   def verify(callback: BodyResponseCallback[SchemaNotificationChannel]): Unit = js.native
+  def verify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNotificationChannel] = js.native
   def verify(params: ParamsResourceProjectsNotificationchannelsVerify): GaxiosPromise[SchemaNotificationChannel] = js.native
   def verify(
     params: ParamsResourceProjectsNotificationchannelsVerify,

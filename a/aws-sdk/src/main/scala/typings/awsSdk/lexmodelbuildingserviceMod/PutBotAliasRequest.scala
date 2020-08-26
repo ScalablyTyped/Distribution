@@ -38,21 +38,46 @@ trait PutBotAliasRequest extends js.Object {
 
 object PutBotAliasRequest {
   @scala.inline
-  def apply(
-    botName: BotName,
-    botVersion: Version,
-    name: AliasName,
-    checksum: String = null,
-    conversationLogs: ConversationLogsRequest = null,
-    description: Description = null,
-    tags: TagList = null
-  ): PutBotAliasRequest = {
+  def apply(botName: BotName, botVersion: Version, name: AliasName): PutBotAliasRequest = {
     val __obj = js.Dynamic.literal(botName = botName.asInstanceOf[js.Any], botVersion = botVersion.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (checksum != null) __obj.updateDynamic("checksum")(checksum.asInstanceOf[js.Any])
-    if (conversationLogs != null) __obj.updateDynamic("conversationLogs")(conversationLogs.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBotAliasRequest]
   }
+  @scala.inline
+  implicit class PutBotAliasRequestOps[Self <: PutBotAliasRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBotVersion(value: Version): Self = this.set("botVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: AliasName): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setChecksum(value: String): Self = this.set("checksum", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecksum: Self = this.set("checksum", js.undefined)
+    @scala.inline
+    def setConversationLogs(value: ConversationLogsRequest): Self = this.set("conversationLogs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConversationLogs: Self = this.set("conversationLogs", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

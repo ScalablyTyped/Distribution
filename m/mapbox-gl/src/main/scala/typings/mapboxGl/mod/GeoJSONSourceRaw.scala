@@ -1,56 +1,40 @@
 package typings.mapboxGl.mod
 
-import typings.geojson.mod.Feature
-import typings.geojson.mod.FeatureCollection
-import typings.geojson.mod.GeoJsonProperties
-import typings.geojson.mod.Geometry
 import typings.mapboxGl.mapboxGlStrings.geojson
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GeoJSONSourceRaw
   extends Source
      with GeoJSONSourceOptions
      with AnySourceData {
   @JSName("type")
-  var type_GeoJSONSourceRaw: geojson
+  var type_GeoJSONSourceRaw: geojson = js.native
 }
 
 object GeoJSONSourceRaw {
   @scala.inline
-  def apply(
-    `type`: geojson,
-    attribution: String = null,
-    buffer: js.UndefOr[Double] = js.undefined,
-    cluster: Double | Boolean = null,
-    clusterMaxZoom: js.UndefOr[Double] = js.undefined,
-    clusterMinPoints: js.UndefOr[Double] = js.undefined,
-    clusterProperties: js.Object = null,
-    clusterRadius: js.UndefOr[Double] = js.undefined,
-    data: (Feature[Geometry, GeoJsonProperties]) | (FeatureCollection[Geometry, GeoJsonProperties]) | String = null,
-    generateId: js.UndefOr[Boolean] = js.undefined,
-    lineMetrics: js.UndefOr[Boolean] = js.undefined,
-    maxzoom: js.UndefOr[Double] = js.undefined,
-    promoteId: PromoteIdSpecification = null,
-    tolerance: js.UndefOr[Double] = js.undefined
-  ): GeoJSONSourceRaw = {
+  def apply(`type`: geojson): GeoJSONSourceRaw = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.get.asInstanceOf[js.Any])
-    if (cluster != null) __obj.updateDynamic("cluster")(cluster.asInstanceOf[js.Any])
-    if (!js.isUndefined(clusterMaxZoom)) __obj.updateDynamic("clusterMaxZoom")(clusterMaxZoom.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(clusterMinPoints)) __obj.updateDynamic("clusterMinPoints")(clusterMinPoints.get.asInstanceOf[js.Any])
-    if (clusterProperties != null) __obj.updateDynamic("clusterProperties")(clusterProperties.asInstanceOf[js.Any])
-    if (!js.isUndefined(clusterRadius)) __obj.updateDynamic("clusterRadius")(clusterRadius.get.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(generateId)) __obj.updateDynamic("generateId")(generateId.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineMetrics)) __obj.updateDynamic("lineMetrics")(lineMetrics.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxzoom)) __obj.updateDynamic("maxzoom")(maxzoom.get.asInstanceOf[js.Any])
-    if (promoteId != null) __obj.updateDynamic("promoteId")(promoteId.asInstanceOf[js.Any])
-    if (!js.isUndefined(tolerance)) __obj.updateDynamic("tolerance")(tolerance.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONSourceRaw]
   }
+  @scala.inline
+  implicit class GeoJSONSourceRawOps[Self <: GeoJSONSourceRaw] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: geojson): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

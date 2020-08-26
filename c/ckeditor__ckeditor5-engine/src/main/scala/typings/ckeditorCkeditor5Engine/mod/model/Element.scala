@@ -13,6 +13,8 @@ class Element protected () extends Node {
   protected def this(name: String) = this()
   protected def this(name: String, attrs: js.Array[js.Tuple2[String, _]]) = this()
   protected def this(name: String, attrs: Map[String, _]) = this()
+  protected def this(name: String, attrs: js.UndefOr[scala.Nothing], children: Node) = this()
+  protected def this(name: String, attrs: js.UndefOr[scala.Nothing], children: Iterable[Node]) = this()
   protected def this(name: String, attrs: js.Array[js.Tuple2[String, _]], children: Node) = this()
   protected def this(name: String, attrs: js.Array[js.Tuple2[String, _]], children: Iterable[Node]) = this()
   protected def this(name: String, attrs: Map[String, _], children: Node) = this()

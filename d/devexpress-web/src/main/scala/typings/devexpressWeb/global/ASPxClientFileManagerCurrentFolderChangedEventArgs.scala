@@ -17,15 +17,5 @@ class ASPxClientFileManagerCurrentFolderChangedEventArgs protected ()
     * @param fullName A string value that specifies the folder's full name. Initializes the ASPxClientFileManagerCurrentFolderChangedEventArgs.fullName property.
     */
   def this(name: String, fullName: String) = this()
-  /**
-    * Gets the full name of the folder currently being processed.
-    */
-  /* CompleteClass */
-  override var fullName: String = js.native
-  /**
-    * Gets the name of the currently processed folder.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
 }
 

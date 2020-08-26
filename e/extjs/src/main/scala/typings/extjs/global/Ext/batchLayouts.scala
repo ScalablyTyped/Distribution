@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object batchLayouts extends js.Object {
   def apply(): Unit = js.native
+  def apply(fn: js.UndefOr[scala.Nothing], scope: js.Any): Unit = js.native
   def apply(fn: js.Any): Unit = js.native
   def apply(fn: js.Any, scope: js.Any): Unit = js.native
 }

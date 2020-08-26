@@ -16,7 +16,27 @@ object realpath extends js.Object {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: js.UndefOr[BaseEncodingOptions | BufferEncoding | Null | String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: BufferEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
+  ): Unit = js.native
+  def apply(
+    path: PathLike,
+    options: BaseEncodingOptions,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
   ): Unit = js.native
   def apply(
@@ -30,7 +50,27 @@ object realpath extends js.Object {
   ): Unit = js.native
   def native(
     path: PathLike,
-    options: js.UndefOr[BaseEncodingOptions | BufferEncoding | Null | String],
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+  ): Unit = js.native
+  def native(
+    path: PathLike,
+    options: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
+  ): Unit = js.native
+  def native(
+    path: PathLike,
+    options: Null,
+    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+  ): Unit = js.native
+  def native(
+    path: PathLike,
+    options: BufferEncoding,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
+  ): Unit = js.native
+  def native(
+    path: PathLike,
+    options: BaseEncodingOptions,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
   ): Unit = js.native
   def native(

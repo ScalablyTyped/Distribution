@@ -37,6 +37,7 @@ trait Spec
   def spyOn(obj: js.Any, methodName: String, ignoreMethodDoesntExist: Boolean): Spy = js.native
   def waits(timeout: Double): Spec = js.native
   def waitsFor(latchFunction: SpecFunction): Spec = js.native
+  def waitsFor(latchFunction: SpecFunction, timeoutMessage: js.UndefOr[scala.Nothing], timeout: Double): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String): Spec = js.native
   def waitsFor(latchFunction: SpecFunction, timeoutMessage: String, timeout: Double): Spec = js.native
 }

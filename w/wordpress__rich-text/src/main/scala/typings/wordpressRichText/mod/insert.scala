@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object insert extends js.Object {
   def apply(value: Value, valueToInsert: Value): Value = js.native
+  def apply(value: Value, valueToInsert: Value, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Value = js.native
   def apply(value: Value, valueToInsert: Value, startIndex: Double): Value = js.native
   def apply(value: Value, valueToInsert: Value, startIndex: Double, endIndex: Double): Value = js.native
 }

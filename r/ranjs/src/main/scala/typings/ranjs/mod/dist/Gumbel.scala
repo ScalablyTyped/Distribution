@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 class Gumbel ()
   extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.Gumbel] {
   def this(mu: Double) = this()
+  def this(mu: js.UndefOr[scala.Nothing], beta: Double) = this()
   def this(mu: Double, beta: Double) = this()
 }
 

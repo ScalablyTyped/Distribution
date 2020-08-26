@@ -78,438 +78,176 @@ trait TSType extends _Node
 
 object TSType {
   @scala.inline
-  def TSTypeReference_(
-    `type`: TSTypeReference,
-    typeName: TSEntityName,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TSTypeParameterInstantiation_ = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+  def TSTypeReference_(`type`: TSTypeReference, typeName: TSEntityName): TSType = {
+    val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSNullKeyword_(
-    `type`: TSNullKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSNullKeyword_(`type`: TSNullKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSTypeLiteral_(
-    members: js.Array[TSTypeElement],
-    `type`: TSTypeLiteral,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSTypeLiteral_(members: js.Array[TSTypeElement], `type`: TSTypeLiteral): TSType = {
+    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSFunctionType_(
-    parameters: js.Array[Identifier_ | RestElement_],
-    `type`: TSFunctionType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation_ = null,
-    typeParameters: TSTypeParameterDeclaration_ = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+  def TSFunctionType_(parameters: js.Array[Identifier_ | RestElement_], `type`: TSFunctionType): TSType = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSThisType_(
-    `type`: TSThisType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSThisType_(`type`: TSThisType): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSSymbolKeyword_(
-    `type`: TSSymbolKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSSymbolKeyword_(`type`: TSSymbolKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSMappedType_(
-    `type`: TSMappedType,
-    typeParameter: TSTypeParameter_,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    optional: Boolean = null.asInstanceOf[Boolean],
-    readonly: Boolean = null.asInstanceOf[Boolean],
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSType = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+  def TSMappedType_(`type`: TSMappedType, typeParameter: TSTypeParameter_): TSType = {
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSIndexedAccessType_(
-    indexType: TSType,
-    objectType: TSType,
-    `type`: TSIndexedAccessType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSIndexedAccessType_(indexType: TSType, objectType: TSType, `type`: TSIndexedAccessType): TSType = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSUndefinedKeyword_(
-    `type`: TSUndefinedKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSUndefinedKeyword_(`type`: TSUndefinedKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSTypePredicate_(
-    parameterName: Identifier_ | TSThisType_,
-    `type`: TSTypePredicate,
-    asserts: Boolean = null.asInstanceOf[Boolean],
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation_ = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], asserts = asserts.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+  def TSTypePredicate_(parameterName: Identifier_ | TSThisType_, `type`: TSTypePredicate): TSType = {
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSImportType_(
-    argument: StringLiteral_,
-    `type`: TSImportType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    qualifier: TSEntityName = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TSTypeParameterInstantiation_ = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], qualifier = qualifier.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+  def TSImportType_(argument: StringLiteral_, `type`: TSImportType): TSType = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSStringKeyword_(
-    `type`: TSStringKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSStringKeyword_(`type`: TSStringKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSUnknownKeyword_(
-    `type`: TSUnknownKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSUnknownKeyword_(`type`: TSUnknownKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSNumberKeyword_(
-    `type`: TSNumberKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSNumberKeyword_(`type`: TSNumberKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSTypeOperator_(
-    operator: String,
-    `type`: TSTypeOperator,
-    typeAnnotation: TSType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSTypeOperator_(operator: String, `type`: TSTypeOperator, typeAnnotation: TSType): TSType = {
+    val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSNeverKeyword_(
-    `type`: TSNeverKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSNeverKeyword_(`type`: TSNeverKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSBigIntKeyword_(
-    `type`: TSBigIntKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSBigIntKeyword_(`type`: TSBigIntKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSTypeQuery_(
-    exprName: TSEntityName | TSImportType_,
-    `type`: TSTypeQuery,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSTypeQuery_(exprName: TSEntityName | TSImportType_, `type`: TSTypeQuery): TSType = {
+    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSInferType_(
-    `type`: TSInferType,
-    typeParameter: TSTypeParameter_,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSInferType_(`type`: TSInferType, typeParameter: TSTypeParameter_): TSType = {
+    val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSIntersectionType_(
-    `type`: TSIntersectionType,
-    types: js.Array[TSType],
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSIntersectionType_(`type`: TSIntersectionType, types: js.Array[TSType]): TSType = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSOptionalType_(
-    `type`: TSOptionalType,
-    typeAnnotation: TSType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSOptionalType_(`type`: TSOptionalType, typeAnnotation: TSType): TSType = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSArrayType_(
-    elementType: TSType,
-    `type`: TSArrayType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSArrayType_(elementType: TSType, `type`: TSArrayType): TSType = {
+    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSTupleType_(
-    elementTypes: js.Array[TSType],
-    `type`: TSTupleType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(elementTypes = elementTypes.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSTupleType_(elementTypes: js.Array[TSType | TSNamedTupleMember_], `type`: TSTupleType): TSType = {
+    val __obj = js.Dynamic.literal(elementTypes = elementTypes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSAnyKeyword_(
-    `type`: TSAnyKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSAnyKeyword_(`type`: TSAnyKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSExpressionWithTypeArguments_(
-    expression: TSEntityName,
-    `type`: TSExpressionWithTypeArguments,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TSTypeParameterInstantiation_ = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+  def TSExpressionWithTypeArguments_(expression: TSEntityName, `type`: TSExpressionWithTypeArguments): TSType = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSObjectKeyword_(
-    `type`: TSObjectKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSObjectKeyword_(`type`: TSObjectKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSParenthesizedType_(
-    `type`: TSParenthesizedType,
-    typeAnnotation: TSType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSParenthesizedType_(`type`: TSParenthesizedType, typeAnnotation: TSType): TSType = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSRestType_(
-    `type`: TSRestType,
-    typeAnnotation: TSType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSRestType_(`type`: TSRestType, typeAnnotation: TSType): TSType = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSVoidKeyword_(
-    `type`: TSVoidKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSVoidKeyword_(`type`: TSVoidKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
@@ -519,76 +257,36 @@ object TSType {
     extendsType: TSType,
     falseType: TSType,
     trueType: TSType,
-    `type`: TSConditionalType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
+    `type`: TSConditionalType
   ): TSType = {
-    val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], falseType = falseType.asInstanceOf[js.Any], trueType = trueType.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], falseType = falseType.asInstanceOf[js.Any], trueType = trueType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSConstructorType_(
-    parameters: js.Array[Identifier_ | RestElement_],
-    `type`: TSConstructorType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation_ = null,
-    typeParameters: TSTypeParameterDeclaration_ = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
+  def TSConstructorType_(parameters: js.Array[Identifier_ | RestElement_], `type`: TSConstructorType): TSType = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
   def TSLiteralType_(
     literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_,
-    `type`: TSLiteralType,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
+    `type`: TSLiteralType
   ): TSType = {
-    val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSUnionType_(
-    `type`: TSUnionType,
-    types: js.Array[TSType],
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSUnionType_(`type`: TSUnionType, types: js.Array[TSType]): TSType = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }
   @scala.inline
-  def TSBooleanKeyword_(
-    `type`: TSBooleanKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSType = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def TSBooleanKeyword_(`type`: TSBooleanKeyword): TSType = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSType]
   }

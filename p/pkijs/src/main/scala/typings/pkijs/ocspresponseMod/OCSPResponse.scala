@@ -7,17 +7,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OCSPResponse extends js.Object {
-  var responseBytes: js.UndefOr[typings.pkijs.responseBytesMod.default] = js.undefined
-  var responseStatus: Enumerated
+  var responseBytes: js.UndefOr[typings.pkijs.responseBytesMod.default] = js.native
+  var responseStatus: Enumerated = js.native
   /**
     * Making OCSP Request for specific certificate
     * @param {Certificate} certificate Certificate making OCSP Request for
     * @param {CreateFroCertificateParams} parameters Additional parameters
     * @returns {Promise}
     */
-  def createForCertificate(certificate: typings.pkijs.certificateMod.default, parameters: CreateFroCertificateParams): js.Thenable[Unit]
-  def fromSchema(schema: js.Any): Unit
+  def createForCertificate(certificate: typings.pkijs.certificateMod.default, parameters: CreateFroCertificateParams): js.Thenable[Unit] = js.native
+  def fromSchema(schema: js.Any): Unit = js.native
   /**
     * Get OCSP response status for specific certificate
     * @param {Certificate} certificate
@@ -27,9 +28,9 @@ trait OCSPResponse extends js.Object {
   def getCertificateStatus(
     certificate: typings.pkijs.certificateMod.default,
     issuerCertificate: typings.pkijs.certificateMod.default
-  ): js.Thenable[GetCertificateStatusResult]
-  def toJSON(): js.Any
-  def toSchema(): js.Any
+  ): js.Thenable[GetCertificateStatusResult] = js.native
+  def toJSON(): js.Any = js.native
+  def toSchema(): js.Any = js.native
 }
 
 object OCSPResponse {
@@ -40,12 +41,41 @@ object OCSPResponse {
     getCertificateStatus: (typings.pkijs.certificateMod.default, typings.pkijs.certificateMod.default) => js.Thenable[GetCertificateStatusResult],
     responseStatus: Enumerated,
     toJSON: () => js.Any,
-    toSchema: () => js.Any,
-    responseBytes: typings.pkijs.responseBytesMod.default = null
+    toSchema: () => js.Any
   ): OCSPResponse = {
     val __obj = js.Dynamic.literal(createForCertificate = js.Any.fromFunction2(createForCertificate), fromSchema = js.Any.fromFunction1(fromSchema), getCertificateStatus = js.Any.fromFunction2(getCertificateStatus), responseStatus = responseStatus.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), toSchema = js.Any.fromFunction0(toSchema))
-    if (responseBytes != null) __obj.updateDynamic("responseBytes")(responseBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OCSPResponse]
   }
+  @scala.inline
+  implicit class OCSPResponseOps[Self <: OCSPResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreateForCertificate(value: (typings.pkijs.certificateMod.default, CreateFroCertificateParams) => js.Thenable[Unit]): Self = this.set("createForCertificate", js.Any.fromFunction2(value))
+    @scala.inline
+    def setFromSchema(value: js.Any => Unit): Self = this.set("fromSchema", js.Any.fromFunction1(value))
+    @scala.inline
+    def setGetCertificateStatus(
+      value: (typings.pkijs.certificateMod.default, typings.pkijs.certificateMod.default) => js.Thenable[GetCertificateStatusResult]
+    ): Self = this.set("getCertificateStatus", js.Any.fromFunction2(value))
+    @scala.inline
+    def setResponseStatus(value: Enumerated): Self = this.set("responseStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setToJSON(value: () => js.Any): Self = this.set("toJSON", js.Any.fromFunction0(value))
+    @scala.inline
+    def setToSchema(value: () => js.Any): Self = this.set("toSchema", js.Any.fromFunction0(value))
+    @scala.inline
+    def setResponseBytes(value: typings.pkijs.responseBytesMod.default): Self = this.set("responseBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseBytes: Self = this.set("responseBytes", js.undefined)
+  }
+  
 }
 

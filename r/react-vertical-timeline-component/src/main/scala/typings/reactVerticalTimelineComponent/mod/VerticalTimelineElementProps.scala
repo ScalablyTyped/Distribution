@@ -6,60 +6,103 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait VerticalTimelineElementProps extends js.Object {
-  var className: js.UndefOr[String] = js.undefined
-  var contentArrowStyle: js.UndefOr[CSSProperties] = js.undefined
-  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
-  var date: js.UndefOr[String] = js.undefined
-  var dateClassName: js.UndefOr[String] = js.undefined
-  var icon: js.UndefOr[ReactNode] = js.undefined
-  var iconClassName: js.UndefOr[String] = js.undefined
-  var iconOnClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var iconStyle: js.UndefOr[CSSProperties] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var intersectionObserverProps: js.UndefOr[js.Any] = js.undefined
-  var onTimelineElementClick: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var position: js.UndefOr[String] = js.undefined
-  var style: js.UndefOr[CSSProperties] = js.undefined
-  var textClassName: js.UndefOr[String] = js.undefined
+  var className: js.UndefOr[String] = js.native
+  var contentArrowStyle: js.UndefOr[CSSProperties] = js.native
+  var contentStyle: js.UndefOr[CSSProperties] = js.native
+  var date: js.UndefOr[String] = js.native
+  var dateClassName: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[ReactNode] = js.native
+  var iconClassName: js.UndefOr[String] = js.native
+  var iconOnClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var iconStyle: js.UndefOr[CSSProperties] = js.native
+  var id: js.UndefOr[String] = js.native
+  var intersectionObserverProps: js.UndefOr[js.Any] = js.native
+  var onTimelineElementClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var position: js.UndefOr[String] = js.native
+  var style: js.UndefOr[CSSProperties] = js.native
+  var textClassName: js.UndefOr[String] = js.native
 }
 
 object VerticalTimelineElementProps {
   @scala.inline
-  def apply(
-    className: String = null,
-    contentArrowStyle: CSSProperties = null,
-    contentStyle: CSSProperties = null,
-    date: String = null,
-    dateClassName: String = null,
-    icon: ReactNode = null,
-    iconClassName: String = null,
-    iconOnClick: () => Unit = null,
-    iconStyle: CSSProperties = null,
-    id: String = null,
-    intersectionObserverProps: js.Any = null,
-    onTimelineElementClick: () => Unit = null,
-    position: String = null,
-    style: CSSProperties = null,
-    textClassName: String = null
-  ): VerticalTimelineElementProps = {
+  def apply(): VerticalTimelineElementProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentArrowStyle != null) __obj.updateDynamic("contentArrowStyle")(contentArrowStyle.asInstanceOf[js.Any])
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dateClassName != null) __obj.updateDynamic("dateClassName")(dateClassName.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName.asInstanceOf[js.Any])
-    if (iconOnClick != null) __obj.updateDynamic("iconOnClick")(js.Any.fromFunction0(iconOnClick))
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (intersectionObserverProps != null) __obj.updateDynamic("intersectionObserverProps")(intersectionObserverProps.asInstanceOf[js.Any])
-    if (onTimelineElementClick != null) __obj.updateDynamic("onTimelineElementClick")(js.Any.fromFunction0(onTimelineElementClick))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textClassName != null) __obj.updateDynamic("textClassName")(textClassName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalTimelineElementProps]
   }
+  @scala.inline
+  implicit class VerticalTimelineElementPropsOps[Self <: VerticalTimelineElementProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClassName(value: String): Self = this.set("className", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClassName: Self = this.set("className", js.undefined)
+    @scala.inline
+    def setContentArrowStyle(value: CSSProperties): Self = this.set("contentArrowStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentArrowStyle: Self = this.set("contentArrowStyle", js.undefined)
+    @scala.inline
+    def setContentStyle(value: CSSProperties): Self = this.set("contentStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentStyle: Self = this.set("contentStyle", js.undefined)
+    @scala.inline
+    def setDate(value: String): Self = this.set("date", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDate: Self = this.set("date", js.undefined)
+    @scala.inline
+    def setDateClassName(value: String): Self = this.set("dateClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDateClassName: Self = this.set("dateClassName", js.undefined)
+    @scala.inline
+    def setIcon(value: ReactNode): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconClassName(value: String): Self = this.set("iconClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconClassName: Self = this.set("iconClassName", js.undefined)
+    @scala.inline
+    def setIconOnClick(value: () => Unit): Self = this.set("iconOnClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteIconOnClick: Self = this.set("iconOnClick", js.undefined)
+    @scala.inline
+    def setIconStyle(value: CSSProperties): Self = this.set("iconStyle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconStyle: Self = this.set("iconStyle", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setIntersectionObserverProps(value: js.Any): Self = this.set("intersectionObserverProps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIntersectionObserverProps: Self = this.set("intersectionObserverProps", js.undefined)
+    @scala.inline
+    def setOnTimelineElementClick(value: () => Unit): Self = this.set("onTimelineElementClick", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteOnTimelineElementClick: Self = this.set("onTimelineElementClick", js.undefined)
+    @scala.inline
+    def setPosition(value: String): Self = this.set("position", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePosition: Self = this.set("position", js.undefined)
+    @scala.inline
+    def setStyle(value: CSSProperties): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+    @scala.inline
+    def setTextClassName(value: String): Self = this.set("textClassName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTextClassName: Self = this.set("textClassName", js.undefined)
+  }
+  
 }
 

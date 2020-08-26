@@ -34,22 +34,48 @@ trait SpotFleetRequestConfig extends js.Object {
 
 object SpotFleetRequestConfig {
   @scala.inline
-  def apply(
-    ActivityStatus: ActivityStatus = null,
-    CreateTime: MillisecondDateTime = null,
-    SpotFleetRequestConfig: SpotFleetRequestConfigData = null,
-    SpotFleetRequestId: String = null,
-    SpotFleetRequestState: BatchState = null,
-    Tags: TagList = null
-  ): SpotFleetRequestConfig = {
+  def apply(): SpotFleetRequestConfig = {
     val __obj = js.Dynamic.literal()
-    if (ActivityStatus != null) __obj.updateDynamic("ActivityStatus")(ActivityStatus.asInstanceOf[js.Any])
-    if (CreateTime != null) __obj.updateDynamic("CreateTime")(CreateTime.asInstanceOf[js.Any])
-    if (SpotFleetRequestConfig != null) __obj.updateDynamic("SpotFleetRequestConfig")(SpotFleetRequestConfig.asInstanceOf[js.Any])
-    if (SpotFleetRequestId != null) __obj.updateDynamic("SpotFleetRequestId")(SpotFleetRequestId.asInstanceOf[js.Any])
-    if (SpotFleetRequestState != null) __obj.updateDynamic("SpotFleetRequestState")(SpotFleetRequestState.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotFleetRequestConfig]
   }
+  @scala.inline
+  implicit class SpotFleetRequestConfigOps[Self <: SpotFleetRequestConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActivityStatus(value: ActivityStatus): Self = this.set("ActivityStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivityStatus: Self = this.set("ActivityStatus", js.undefined)
+    @scala.inline
+    def setCreateTime(value: MillisecondDateTime): Self = this.set("CreateTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("CreateTime", js.undefined)
+    @scala.inline
+    def setSpotFleetRequestConfig(value: SpotFleetRequestConfigData): Self = this.set("SpotFleetRequestConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotFleetRequestConfig: Self = this.set("SpotFleetRequestConfig", js.undefined)
+    @scala.inline
+    def setSpotFleetRequestId(value: String): Self = this.set("SpotFleetRequestId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotFleetRequestId: Self = this.set("SpotFleetRequestId", js.undefined)
+    @scala.inline
+    def setSpotFleetRequestState(value: BatchState): Self = this.set("SpotFleetRequestState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpotFleetRequestState: Self = this.set("SpotFleetRequestState", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for builder-util-runtime
 
-Typings are for version 8.7.1
+Typings are for version 8.7.2
 
 ## Library description:
 HTTP utilities. Used by [electron-builder](https://github.com/electron-userland/electron-builder).

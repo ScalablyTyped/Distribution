@@ -9,41 +9,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait dxValidationGroupResult extends js.Object {
   /** @name dxValidationGroupResult.brokenRules */
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
-  ] = js.undefined
+  ] = js.native
   /** @name dxValidationGroupResult.complete */
-  var complete: js.UndefOr[Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]] = js.undefined
+  var complete: js.UndefOr[Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]] = js.native
   /** @name dxValidationGroupResult.isValid */
-  var isValid: js.UndefOr[Boolean] = js.undefined
+  var isValid: js.UndefOr[Boolean] = js.native
   /** @name dxValidationGroupResult.status */
-  var status: js.UndefOr[valid | invalid | pending] = js.undefined
+  var status: js.UndefOr[valid | invalid | pending] = js.native
   /** @name dxValidationGroupResult.validators */
-  var validators: js.UndefOr[js.Array[_]] = js.undefined
+  var validators: js.UndefOr[js.Array[_]] = js.native
 }
 
 object dxValidationGroupResult {
   @scala.inline
-  def apply(
-    brokenRules: js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ] = null,
-    complete: Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult] = null,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    status: valid | invalid | pending = null,
-    validators: js.Array[_] = null
-  ): dxValidationGroupResult = {
+  def apply(): dxValidationGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (brokenRules != null) __obj.updateDynamic("brokenRules")(brokenRules.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.get.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxValidationGroupResult]
   }
+  @scala.inline
+  implicit class dxValidationGroupResultOps[Self <: dxValidationGroupResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBrokenRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = this.set("brokenRules", js.Array(value :_*))
+    @scala.inline
+    def setBrokenRules(
+      value: js.Array[
+          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+        ]
+    ): Self = this.set("brokenRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBrokenRules: Self = this.set("brokenRules", js.undefined)
+    @scala.inline
+    def setComplete(value: Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]): Self = this.set("complete", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplete: Self = this.set("complete", js.undefined)
+    @scala.inline
+    def setIsValid(value: Boolean): Self = this.set("isValid", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsValid: Self = this.set("isValid", js.undefined)
+    @scala.inline
+    def setStatus(value: valid | invalid | pending): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setValidatorsVarargs(value: js.Any*): Self = this.set("validators", js.Array(value :_*))
+    @scala.inline
+    def setValidators(value: js.Array[_]): Self = this.set("validators", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidators: Self = this.set("validators", js.undefined)
+  }
+  
 }
 

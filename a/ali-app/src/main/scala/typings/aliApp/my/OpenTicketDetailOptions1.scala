@@ -4,24 +4,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait OpenTicketDetailOptions1
   extends BaseOptions[js.Any, js.Any] {
-  var passId: String
+  var passId: String = js.native
 }
 
 object OpenTicketDetailOptions1 {
   @scala.inline
-  def apply(
-    passId: String,
-    complete: /* res */ js.Any => Unit = null,
-    fail: js.Any => Unit = null,
-    success: js.Any => Unit = null
-  ): OpenTicketDetailOptions1 = {
+  def apply(passId: String): OpenTicketDetailOptions1 = {
     val __obj = js.Dynamic.literal(passId = passId.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[OpenTicketDetailOptions1]
   }
+  @scala.inline
+  implicit class OpenTicketDetailOptions1Ops[Self <: OpenTicketDetailOptions1] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPassId(value: String): Self = this.set("passId", value.asInstanceOf[js.Any])
+  }
+  
 }
 

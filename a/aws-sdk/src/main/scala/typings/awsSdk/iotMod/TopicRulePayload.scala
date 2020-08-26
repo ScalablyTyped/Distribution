@@ -34,20 +34,44 @@ trait TopicRulePayload extends js.Object {
 
 object TopicRulePayload {
   @scala.inline
-  def apply(
-    actions: ActionList,
-    sql: SQL,
-    awsIotSqlVersion: AwsIotSqlVersion = null,
-    description: Description = null,
-    errorAction: Action = null,
-    ruleDisabled: js.UndefOr[IsDisabled] = js.undefined
-  ): TopicRulePayload = {
+  def apply(actions: ActionList, sql: SQL): TopicRulePayload = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
-    if (awsIotSqlVersion != null) __obj.updateDynamic("awsIotSqlVersion")(awsIotSqlVersion.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (errorAction != null) __obj.updateDynamic("errorAction")(errorAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(ruleDisabled)) __obj.updateDynamic("ruleDisabled")(ruleDisabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRulePayload]
   }
+  @scala.inline
+  implicit class TopicRulePayloadOps[Self <: TopicRulePayload] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setActionsVarargs(value: Action*): Self = this.set("actions", js.Array(value :_*))
+    @scala.inline
+    def setActions(value: ActionList): Self = this.set("actions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setSql(value: SQL): Self = this.set("sql", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = this.set("awsIotSqlVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsIotSqlVersion: Self = this.set("awsIotSqlVersion", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setErrorAction(value: Action): Self = this.set("errorAction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteErrorAction: Self = this.set("errorAction", js.undefined)
+    @scala.inline
+    def setRuleDisabled(value: IsDisabled): Self = this.set("ruleDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRuleDisabled: Self = this.set("ruleDisabled", js.undefined)
+  }
+  
 }
 

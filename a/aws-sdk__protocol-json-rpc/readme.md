@@ -12,7 +12,7 @@ Provides a marshaller and unmarshaller for the AWS JSON-RPC protocol
 | Keywords           | - |
 | # releases         | 10 |
 | # dependents       | 194 |
-| # downloads        | 16812 |
+| # downloads        | 21411 |
 | # stars            | 0 |
 
 ## Links

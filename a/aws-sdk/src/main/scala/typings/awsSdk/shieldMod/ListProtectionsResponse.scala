@@ -18,11 +18,32 @@ trait ListProtectionsResponse extends js.Object {
 
 object ListProtectionsResponse {
   @scala.inline
-  def apply(NextToken: Token = null, Protections: Protections = null): ListProtectionsResponse = {
+  def apply(): ListProtectionsResponse = {
     val __obj = js.Dynamic.literal()
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (Protections != null) __obj.updateDynamic("Protections")(Protections.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProtectionsResponse]
   }
+  @scala.inline
+  implicit class ListProtectionsResponseOps[Self <: ListProtectionsResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNextToken(value: Token): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setProtectionsVarargs(value: Protection*): Self = this.set("Protections", js.Array(value :_*))
+    @scala.inline
+    def setProtections(value: Protections): Self = this.set("Protections", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProtections: Self = this.set("Protections", js.undefined)
+  }
+  
 }
 

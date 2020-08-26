@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/widgets/lib/stackedpanel", "StackedPanel")
+@JSImport("@lumino/widgets/types/stackedpanel", "StackedPanel")
 @js.native
 /**
   * Construct a new stacked panel.

@@ -128,6 +128,7 @@ object Polygon extends js.Object {
     * @api
     */
   def fromCircle(circle: Circle): Polygon = js.native
+  def fromCircle(circle: Circle, opt_sides: js.UndefOr[scala.Nothing], opt_angle: Double): Polygon = js.native
   def fromCircle(circle: Circle, opt_sides: Double): Polygon = js.native
   def fromCircle(circle: Circle, opt_sides: Double, opt_angle: Double): Polygon = js.native
   /**

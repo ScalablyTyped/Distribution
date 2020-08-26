@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-ratings
 
-Typings are for version 6.5.0
+Typings are for version 7.2.0
 
 ## Library description:
 The standard Ratings component for React Native

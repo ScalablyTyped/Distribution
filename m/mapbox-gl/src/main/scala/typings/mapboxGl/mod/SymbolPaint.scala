@@ -6,93 +6,162 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SymbolPaint extends AnyPaint {
-  var `icon-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
-  var `icon-color-transition`: js.UndefOr[Transition] = js.undefined
-  var `icon-halo-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
-  var `icon-halo-blur-transition`: js.UndefOr[Transition] = js.undefined
-  var `icon-halo-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
-  var `icon-halo-color-transition`: js.UndefOr[Transition] = js.undefined
-  var `icon-halo-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
-  var `icon-halo-width-transition`: js.UndefOr[Transition] = js.undefined
-  var `icon-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
-  var `icon-opacity-transition`: js.UndefOr[Transition] = js.undefined
-  var `icon-translate`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
-  var `icon-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
-  var `icon-translate-transition`: js.UndefOr[Transition] = js.undefined
-  var `text-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
-  var `text-color-transition`: js.UndefOr[Transition] = js.undefined
-  var `text-halo-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
-  var `text-halo-blur-transition`: js.UndefOr[Transition] = js.undefined
-  var `text-halo-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
-  var `text-halo-color-transition`: js.UndefOr[Transition] = js.undefined
-  var `text-halo-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
-  var `text-halo-width-transition`: js.UndefOr[Transition] = js.undefined
-  var `text-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
-  var `text-opacity-transition`: js.UndefOr[Transition] = js.undefined
-  var `text-translate`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
-  var `text-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
-  var `text-translate-transition`: js.UndefOr[Transition] = js.undefined
+  var `icon-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `icon-color-transition`: js.UndefOr[Transition] = js.native
+  var `icon-halo-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `icon-halo-blur-transition`: js.UndefOr[Transition] = js.native
+  var `icon-halo-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `icon-halo-color-transition`: js.UndefOr[Transition] = js.native
+  var `icon-halo-width`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `icon-halo-width-transition`: js.UndefOr[Transition] = js.native
+  var `icon-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `icon-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `icon-translate`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `icon-translate-anchor`: js.UndefOr[map | viewport] = js.native
+  var `icon-translate-transition`: js.UndefOr[Transition] = js.native
+  var `text-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `text-color-transition`: js.UndefOr[Transition] = js.native
+  var `text-halo-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `text-halo-blur-transition`: js.UndefOr[Transition] = js.native
+  var `text-halo-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `text-halo-color-transition`: js.UndefOr[Transition] = js.native
+  var `text-halo-width`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `text-halo-width-transition`: js.UndefOr[Transition] = js.native
+  var `text-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `text-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `text-translate`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `text-translate-anchor`: js.UndefOr[map | viewport] = js.native
+  var `text-translate-transition`: js.UndefOr[Transition] = js.native
 }
 
 object SymbolPaint {
   @scala.inline
-  def apply(
-    `icon-color`: String | StyleFunction | Expression = null,
-    `icon-color-transition`: Transition = null,
-    `icon-halo-blur`: Double | StyleFunction | Expression = null,
-    `icon-halo-blur-transition`: Transition = null,
-    `icon-halo-color`: String | StyleFunction | Expression = null,
-    `icon-halo-color-transition`: Transition = null,
-    `icon-halo-width`: Double | StyleFunction | Expression = null,
-    `icon-halo-width-transition`: Transition = null,
-    `icon-opacity`: Double | StyleFunction | Expression = null,
-    `icon-opacity-transition`: Transition = null,
-    `icon-translate`: js.Array[Double] | Expression = null,
-    `icon-translate-anchor`: map | viewport = null,
-    `icon-translate-transition`: Transition = null,
-    `text-color`: String | StyleFunction | Expression = null,
-    `text-color-transition`: Transition = null,
-    `text-halo-blur`: Double | StyleFunction | Expression = null,
-    `text-halo-blur-transition`: Transition = null,
-    `text-halo-color`: String | StyleFunction | Expression = null,
-    `text-halo-color-transition`: Transition = null,
-    `text-halo-width`: Double | StyleFunction | Expression = null,
-    `text-halo-width-transition`: Transition = null,
-    `text-opacity`: Double | StyleFunction | Expression = null,
-    `text-opacity-transition`: Transition = null,
-    `text-translate`: js.Array[Double] | Expression = null,
-    `text-translate-anchor`: map | viewport = null,
-    `text-translate-transition`: Transition = null
-  ): SymbolPaint = {
+  def apply(): SymbolPaint = {
     val __obj = js.Dynamic.literal()
-    if (`icon-color` != null) __obj.updateDynamic("icon-color")(`icon-color`.asInstanceOf[js.Any])
-    if (`icon-color-transition` != null) __obj.updateDynamic("icon-color-transition")(`icon-color-transition`.asInstanceOf[js.Any])
-    if (`icon-halo-blur` != null) __obj.updateDynamic("icon-halo-blur")(`icon-halo-blur`.asInstanceOf[js.Any])
-    if (`icon-halo-blur-transition` != null) __obj.updateDynamic("icon-halo-blur-transition")(`icon-halo-blur-transition`.asInstanceOf[js.Any])
-    if (`icon-halo-color` != null) __obj.updateDynamic("icon-halo-color")(`icon-halo-color`.asInstanceOf[js.Any])
-    if (`icon-halo-color-transition` != null) __obj.updateDynamic("icon-halo-color-transition")(`icon-halo-color-transition`.asInstanceOf[js.Any])
-    if (`icon-halo-width` != null) __obj.updateDynamic("icon-halo-width")(`icon-halo-width`.asInstanceOf[js.Any])
-    if (`icon-halo-width-transition` != null) __obj.updateDynamic("icon-halo-width-transition")(`icon-halo-width-transition`.asInstanceOf[js.Any])
-    if (`icon-opacity` != null) __obj.updateDynamic("icon-opacity")(`icon-opacity`.asInstanceOf[js.Any])
-    if (`icon-opacity-transition` != null) __obj.updateDynamic("icon-opacity-transition")(`icon-opacity-transition`.asInstanceOf[js.Any])
-    if (`icon-translate` != null) __obj.updateDynamic("icon-translate")(`icon-translate`.asInstanceOf[js.Any])
-    if (`icon-translate-anchor` != null) __obj.updateDynamic("icon-translate-anchor")(`icon-translate-anchor`.asInstanceOf[js.Any])
-    if (`icon-translate-transition` != null) __obj.updateDynamic("icon-translate-transition")(`icon-translate-transition`.asInstanceOf[js.Any])
-    if (`text-color` != null) __obj.updateDynamic("text-color")(`text-color`.asInstanceOf[js.Any])
-    if (`text-color-transition` != null) __obj.updateDynamic("text-color-transition")(`text-color-transition`.asInstanceOf[js.Any])
-    if (`text-halo-blur` != null) __obj.updateDynamic("text-halo-blur")(`text-halo-blur`.asInstanceOf[js.Any])
-    if (`text-halo-blur-transition` != null) __obj.updateDynamic("text-halo-blur-transition")(`text-halo-blur-transition`.asInstanceOf[js.Any])
-    if (`text-halo-color` != null) __obj.updateDynamic("text-halo-color")(`text-halo-color`.asInstanceOf[js.Any])
-    if (`text-halo-color-transition` != null) __obj.updateDynamic("text-halo-color-transition")(`text-halo-color-transition`.asInstanceOf[js.Any])
-    if (`text-halo-width` != null) __obj.updateDynamic("text-halo-width")(`text-halo-width`.asInstanceOf[js.Any])
-    if (`text-halo-width-transition` != null) __obj.updateDynamic("text-halo-width-transition")(`text-halo-width-transition`.asInstanceOf[js.Any])
-    if (`text-opacity` != null) __obj.updateDynamic("text-opacity")(`text-opacity`.asInstanceOf[js.Any])
-    if (`text-opacity-transition` != null) __obj.updateDynamic("text-opacity-transition")(`text-opacity-transition`.asInstanceOf[js.Any])
-    if (`text-translate` != null) __obj.updateDynamic("text-translate")(`text-translate`.asInstanceOf[js.Any])
-    if (`text-translate-anchor` != null) __obj.updateDynamic("text-translate-anchor")(`text-translate-anchor`.asInstanceOf[js.Any])
-    if (`text-translate-transition` != null) __obj.updateDynamic("text-translate-transition")(`text-translate-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolPaint]
   }
+  @scala.inline
+  implicit class SymbolPaintOps[Self <: SymbolPaint] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def `setIcon-color`(value: String | StyleFunction | Expression): Self = this.set("icon-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-color`: Self = this.set("icon-color", js.undefined)
+    @scala.inline
+    def `setIcon-color-transition`(value: Transition): Self = this.set("icon-color-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-color-transition`: Self = this.set("icon-color-transition", js.undefined)
+    @scala.inline
+    def `setIcon-halo-blur`(value: Double | StyleFunction | Expression): Self = this.set("icon-halo-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-halo-blur`: Self = this.set("icon-halo-blur", js.undefined)
+    @scala.inline
+    def `setIcon-halo-blur-transition`(value: Transition): Self = this.set("icon-halo-blur-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-halo-blur-transition`: Self = this.set("icon-halo-blur-transition", js.undefined)
+    @scala.inline
+    def `setIcon-halo-color`(value: String | StyleFunction | Expression): Self = this.set("icon-halo-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-halo-color`: Self = this.set("icon-halo-color", js.undefined)
+    @scala.inline
+    def `setIcon-halo-color-transition`(value: Transition): Self = this.set("icon-halo-color-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-halo-color-transition`: Self = this.set("icon-halo-color-transition", js.undefined)
+    @scala.inline
+    def `setIcon-halo-width`(value: Double | StyleFunction | Expression): Self = this.set("icon-halo-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-halo-width`: Self = this.set("icon-halo-width", js.undefined)
+    @scala.inline
+    def `setIcon-halo-width-transition`(value: Transition): Self = this.set("icon-halo-width-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-halo-width-transition`: Self = this.set("icon-halo-width-transition", js.undefined)
+    @scala.inline
+    def `setIcon-opacity`(value: Double | StyleFunction | Expression): Self = this.set("icon-opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-opacity`: Self = this.set("icon-opacity", js.undefined)
+    @scala.inline
+    def `setIcon-opacity-transition`(value: Transition): Self = this.set("icon-opacity-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-opacity-transition`: Self = this.set("icon-opacity-transition", js.undefined)
+    @scala.inline
+    def `setIcon-translateVarargs`(value: Double*): Self = this.set("icon-translate", js.Array(value :_*))
+    @scala.inline
+    def `setIcon-translate`(value: js.Array[Double] | Expression): Self = this.set("icon-translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-translate`: Self = this.set("icon-translate", js.undefined)
+    @scala.inline
+    def `setIcon-translate-anchor`(value: map | viewport): Self = this.set("icon-translate-anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-translate-anchor`: Self = this.set("icon-translate-anchor", js.undefined)
+    @scala.inline
+    def `setIcon-translate-transition`(value: Transition): Self = this.set("icon-translate-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteIcon-translate-transition`: Self = this.set("icon-translate-transition", js.undefined)
+    @scala.inline
+    def `setText-color`(value: String | StyleFunction | Expression): Self = this.set("text-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-color`: Self = this.set("text-color", js.undefined)
+    @scala.inline
+    def `setText-color-transition`(value: Transition): Self = this.set("text-color-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-color-transition`: Self = this.set("text-color-transition", js.undefined)
+    @scala.inline
+    def `setText-halo-blur`(value: Double | StyleFunction | Expression): Self = this.set("text-halo-blur", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-halo-blur`: Self = this.set("text-halo-blur", js.undefined)
+    @scala.inline
+    def `setText-halo-blur-transition`(value: Transition): Self = this.set("text-halo-blur-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-halo-blur-transition`: Self = this.set("text-halo-blur-transition", js.undefined)
+    @scala.inline
+    def `setText-halo-color`(value: String | StyleFunction | Expression): Self = this.set("text-halo-color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-halo-color`: Self = this.set("text-halo-color", js.undefined)
+    @scala.inline
+    def `setText-halo-color-transition`(value: Transition): Self = this.set("text-halo-color-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-halo-color-transition`: Self = this.set("text-halo-color-transition", js.undefined)
+    @scala.inline
+    def `setText-halo-width`(value: Double | StyleFunction | Expression): Self = this.set("text-halo-width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-halo-width`: Self = this.set("text-halo-width", js.undefined)
+    @scala.inline
+    def `setText-halo-width-transition`(value: Transition): Self = this.set("text-halo-width-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-halo-width-transition`: Self = this.set("text-halo-width-transition", js.undefined)
+    @scala.inline
+    def `setText-opacity`(value: Double | StyleFunction | Expression): Self = this.set("text-opacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-opacity`: Self = this.set("text-opacity", js.undefined)
+    @scala.inline
+    def `setText-opacity-transition`(value: Transition): Self = this.set("text-opacity-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-opacity-transition`: Self = this.set("text-opacity-transition", js.undefined)
+    @scala.inline
+    def `setText-translateVarargs`(value: Double*): Self = this.set("text-translate", js.Array(value :_*))
+    @scala.inline
+    def `setText-translate`(value: js.Array[Double] | Expression): Self = this.set("text-translate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-translate`: Self = this.set("text-translate", js.undefined)
+    @scala.inline
+    def `setText-translate-anchor`(value: map | viewport): Self = this.set("text-translate-anchor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-translate-anchor`: Self = this.set("text-translate-anchor", js.undefined)
+    @scala.inline
+    def `setText-translate-transition`(value: Transition): Self = this.set("text-translate-transition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteText-translate-transition`: Self = this.set("text-translate-transition", js.undefined)
+  }
+  
 }
 

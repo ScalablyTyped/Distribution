@@ -18,11 +18,30 @@ trait InstanceBlockDeviceMapping extends js.Object {
 
 object InstanceBlockDeviceMapping {
   @scala.inline
-  def apply(DeviceName: String = null, Ebs: EbsInstanceBlockDevice = null): InstanceBlockDeviceMapping = {
+  def apply(): InstanceBlockDeviceMapping = {
     val __obj = js.Dynamic.literal()
-    if (DeviceName != null) __obj.updateDynamic("DeviceName")(DeviceName.asInstanceOf[js.Any])
-    if (Ebs != null) __obj.updateDynamic("Ebs")(Ebs.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceBlockDeviceMapping]
   }
+  @scala.inline
+  implicit class InstanceBlockDeviceMappingOps[Self <: InstanceBlockDeviceMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeviceName(value: String): Self = this.set("DeviceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceName: Self = this.set("DeviceName", js.undefined)
+    @scala.inline
+    def setEbs(value: EbsInstanceBlockDevice): Self = this.set("Ebs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEbs: Self = this.set("Ebs", js.undefined)
+  }
+  
 }
 

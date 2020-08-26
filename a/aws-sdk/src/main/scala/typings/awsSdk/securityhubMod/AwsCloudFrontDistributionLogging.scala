@@ -26,18 +26,38 @@ trait AwsCloudFrontDistributionLogging extends js.Object {
 
 object AwsCloudFrontDistributionLogging {
   @scala.inline
-  def apply(
-    Bucket: NonEmptyString = null,
-    Enabled: js.UndefOr[Boolean] = js.undefined,
-    IncludeCookies: js.UndefOr[Boolean] = js.undefined,
-    Prefix: NonEmptyString = null
-  ): AwsCloudFrontDistributionLogging = {
+  def apply(): AwsCloudFrontDistributionLogging = {
     val __obj = js.Dynamic.literal()
-    if (Bucket != null) __obj.updateDynamic("Bucket")(Bucket.asInstanceOf[js.Any])
-    if (!js.isUndefined(Enabled)) __obj.updateDynamic("Enabled")(Enabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(IncludeCookies)) __obj.updateDynamic("IncludeCookies")(IncludeCookies.get.asInstanceOf[js.Any])
-    if (Prefix != null) __obj.updateDynamic("Prefix")(Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsCloudFrontDistributionLogging]
   }
+  @scala.inline
+  implicit class AwsCloudFrontDistributionLoggingOps[Self <: AwsCloudFrontDistributionLogging] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBucket(value: NonEmptyString): Self = this.set("Bucket", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBucket: Self = this.set("Bucket", js.undefined)
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("Enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("Enabled", js.undefined)
+    @scala.inline
+    def setIncludeCookies(value: Boolean): Self = this.set("IncludeCookies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncludeCookies: Self = this.set("IncludeCookies", js.undefined)
+    @scala.inline
+    def setPrefix(value: NonEmptyString): Self = this.set("Prefix", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrefix: Self = this.set("Prefix", js.undefined)
+  }
+  
 }
 

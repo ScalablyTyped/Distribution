@@ -19,14 +19,30 @@ trait VirtualNodeSpecServiceDiscovery extends js.Object {
 
 object VirtualNodeSpecServiceDiscovery {
   @scala.inline
-  def apply(
-    awsCloudMap: Input[VirtualNodeSpecServiceDiscoveryAwsCloudMap] = null,
-    dns: Input[VirtualNodeSpecServiceDiscoveryDns] = null
-  ): VirtualNodeSpecServiceDiscovery = {
+  def apply(): VirtualNodeSpecServiceDiscovery = {
     val __obj = js.Dynamic.literal()
-    if (awsCloudMap != null) __obj.updateDynamic("awsCloudMap")(awsCloudMap.asInstanceOf[js.Any])
-    if (dns != null) __obj.updateDynamic("dns")(dns.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecServiceDiscovery]
   }
+  @scala.inline
+  implicit class VirtualNodeSpecServiceDiscoveryOps[Self <: VirtualNodeSpecServiceDiscovery] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAwsCloudMap(value: Input[VirtualNodeSpecServiceDiscoveryAwsCloudMap]): Self = this.set("awsCloudMap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAwsCloudMap: Self = this.set("awsCloudMap", js.undefined)
+    @scala.inline
+    def setDns(value: Input[VirtualNodeSpecServiceDiscoveryDns]): Self = this.set("dns", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDns: Self = this.set("dns", js.undefined)
+  }
+  
 }
 

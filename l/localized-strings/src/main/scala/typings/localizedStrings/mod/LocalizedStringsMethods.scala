@@ -33,6 +33,7 @@ trait LocalizedStringsMethods extends js.Object {
     * @param omitWarning
     */
   def getString(key: String): String = js.native
+  def getString(key: String, language: js.UndefOr[scala.Nothing], omitWarning: Boolean): String = js.native
   def getString(key: String, language: String): String = js.native
   def getString(key: String, language: String, omitWarning: Boolean): String = js.native
   /**

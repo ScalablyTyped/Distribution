@@ -19,8 +19,6 @@ class Output ()
   def devtoolLineToLine(value: js.Any): this.type = js.native
   def devtoolModuleFilenameTemplate(value: js.Any): this.type = js.native
   def devtoolNamespace(value: String): this.type = js.native
-  /* CompleteClass */
-  override def end(): Config = js.native
   def filename(value: String): this.type = js.native
   def futureEmitAssets(value: Boolean): this.type = js.native
   def globalObject(value: String): this.type = js.native

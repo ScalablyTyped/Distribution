@@ -105,7 +105,34 @@ trait Shape extends js.Object {
     * @param PowerPoint.PpExportMode [ExportMode=1]
     */
   def Export(PathName: String, Filter: PpShapeFormat): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: js.UndefOr[scala.Nothing],
+    ScaleHeight: js.UndefOr[scala.Nothing],
+    ExportMode: PpExportMode
+  ): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: js.UndefOr[scala.Nothing],
+    ScaleHeight: Double
+  ): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: js.UndefOr[scala.Nothing],
+    ScaleHeight: Double,
+    ExportMode: PpExportMode
+  ): Unit = js.native
   def Export(PathName: String, Filter: PpShapeFormat, ScaleWidth: Double): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: Double,
+    ScaleHeight: js.UndefOr[scala.Nothing],
+    ExportMode: PpExportMode
+  ): Unit = js.native
   def Export(PathName: String, Filter: PpShapeFormat, ScaleWidth: Double, ScaleHeight: Double): Unit = js.native
   def Export(
     PathName: String,

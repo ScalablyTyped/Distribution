@@ -34,22 +34,46 @@ trait ApplicationInfo extends js.Object {
 
 object ApplicationInfo {
   @scala.inline
-  def apply(
-    applicationId: ApplicationId = null,
-    applicationName: ApplicationName = null,
-    computePlatform: ComputePlatform = null,
-    createTime: Timestamp = null,
-    gitHubAccountName: GitHubAccountTokenName = null,
-    linkedToGitHub: js.UndefOr[Boolean] = js.undefined
-  ): ApplicationInfo = {
+  def apply(): ApplicationInfo = {
     val __obj = js.Dynamic.literal()
-    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
-    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
-    if (createTime != null) __obj.updateDynamic("createTime")(createTime.asInstanceOf[js.Any])
-    if (gitHubAccountName != null) __obj.updateDynamic("gitHubAccountName")(gitHubAccountName.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkedToGitHub)) __obj.updateDynamic("linkedToGitHub")(linkedToGitHub.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationInfo]
   }
+  @scala.inline
+  implicit class ApplicationInfoOps[Self <: ApplicationInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicationId(value: ApplicationId): Self = this.set("applicationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationId: Self = this.set("applicationId", js.undefined)
+    @scala.inline
+    def setApplicationName(value: ApplicationName): Self = this.set("applicationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicationName: Self = this.set("applicationName", js.undefined)
+    @scala.inline
+    def setComputePlatform(value: ComputePlatform): Self = this.set("computePlatform", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComputePlatform: Self = this.set("computePlatform", js.undefined)
+    @scala.inline
+    def setCreateTime(value: Timestamp): Self = this.set("createTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateTime: Self = this.set("createTime", js.undefined)
+    @scala.inline
+    def setGitHubAccountName(value: GitHubAccountTokenName): Self = this.set("gitHubAccountName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGitHubAccountName: Self = this.set("gitHubAccountName", js.undefined)
+    @scala.inline
+    def setLinkedToGitHub(value: Boolean): Self = this.set("linkedToGitHub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLinkedToGitHub: Self = this.set("linkedToGitHub", js.undefined)
+  }
+  
 }
 

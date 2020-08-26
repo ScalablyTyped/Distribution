@@ -94,52 +94,110 @@ trait JobOutput extends js.Object {
 
 object JobOutput {
   @scala.inline
-  def apply(
-    AlbumArt: JobAlbumArt = null,
-    AppliedColorSpaceConversion: String = null,
-    Captions: Captions = null,
-    Composition: Composition = null,
-    Duration: js.UndefOr[NullableLong] = js.undefined,
-    DurationMillis: js.UndefOr[NullableLong] = js.undefined,
-    Encryption: Encryption = null,
-    FileSize: js.UndefOr[NullableLong] = js.undefined,
-    FrameRate: FloatString = null,
-    Height: js.UndefOr[NullableInteger] = js.undefined,
-    Id: String = null,
-    Key: Key = null,
-    PresetId: Id = null,
-    Rotate: Rotate = null,
-    SegmentDuration: FloatString = null,
-    Status: JobStatus = null,
-    StatusDetail: Description = null,
-    ThumbnailEncryption: Encryption = null,
-    ThumbnailPattern: ThumbnailPattern = null,
-    Watermarks: JobWatermarks = null,
-    Width: js.UndefOr[NullableInteger] = js.undefined
-  ): JobOutput = {
+  def apply(): JobOutput = {
     val __obj = js.Dynamic.literal()
-    if (AlbumArt != null) __obj.updateDynamic("AlbumArt")(AlbumArt.asInstanceOf[js.Any])
-    if (AppliedColorSpaceConversion != null) __obj.updateDynamic("AppliedColorSpaceConversion")(AppliedColorSpaceConversion.asInstanceOf[js.Any])
-    if (Captions != null) __obj.updateDynamic("Captions")(Captions.asInstanceOf[js.Any])
-    if (Composition != null) __obj.updateDynamic("Composition")(Composition.asInstanceOf[js.Any])
-    if (!js.isUndefined(Duration)) __obj.updateDynamic("Duration")(Duration.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(DurationMillis)) __obj.updateDynamic("DurationMillis")(DurationMillis.get.asInstanceOf[js.Any])
-    if (Encryption != null) __obj.updateDynamic("Encryption")(Encryption.asInstanceOf[js.Any])
-    if (!js.isUndefined(FileSize)) __obj.updateDynamic("FileSize")(FileSize.get.asInstanceOf[js.Any])
-    if (FrameRate != null) __obj.updateDynamic("FrameRate")(FrameRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Height)) __obj.updateDynamic("Height")(Height.get.asInstanceOf[js.Any])
-    if (Id != null) __obj.updateDynamic("Id")(Id.asInstanceOf[js.Any])
-    if (Key != null) __obj.updateDynamic("Key")(Key.asInstanceOf[js.Any])
-    if (PresetId != null) __obj.updateDynamic("PresetId")(PresetId.asInstanceOf[js.Any])
-    if (Rotate != null) __obj.updateDynamic("Rotate")(Rotate.asInstanceOf[js.Any])
-    if (SegmentDuration != null) __obj.updateDynamic("SegmentDuration")(SegmentDuration.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (StatusDetail != null) __obj.updateDynamic("StatusDetail")(StatusDetail.asInstanceOf[js.Any])
-    if (ThumbnailEncryption != null) __obj.updateDynamic("ThumbnailEncryption")(ThumbnailEncryption.asInstanceOf[js.Any])
-    if (ThumbnailPattern != null) __obj.updateDynamic("ThumbnailPattern")(ThumbnailPattern.asInstanceOf[js.Any])
-    if (Watermarks != null) __obj.updateDynamic("Watermarks")(Watermarks.asInstanceOf[js.Any])
-    if (!js.isUndefined(Width)) __obj.updateDynamic("Width")(Width.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobOutput]
   }
+  @scala.inline
+  implicit class JobOutputOps[Self <: JobOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAlbumArt(value: JobAlbumArt): Self = this.set("AlbumArt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlbumArt: Self = this.set("AlbumArt", js.undefined)
+    @scala.inline
+    def setAppliedColorSpaceConversion(value: String): Self = this.set("AppliedColorSpaceConversion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppliedColorSpaceConversion: Self = this.set("AppliedColorSpaceConversion", js.undefined)
+    @scala.inline
+    def setCaptions(value: Captions): Self = this.set("Captions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptions: Self = this.set("Captions", js.undefined)
+    @scala.inline
+    def setCompositionVarargs(value: Clip*): Self = this.set("Composition", js.Array(value :_*))
+    @scala.inline
+    def setComposition(value: Composition): Self = this.set("Composition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComposition: Self = this.set("Composition", js.undefined)
+    @scala.inline
+    def setDuration(value: NullableLong): Self = this.set("Duration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDuration: Self = this.set("Duration", js.undefined)
+    @scala.inline
+    def setDurationMillis(value: NullableLong): Self = this.set("DurationMillis", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDurationMillis: Self = this.set("DurationMillis", js.undefined)
+    @scala.inline
+    def setEncryption(value: Encryption): Self = this.set("Encryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryption: Self = this.set("Encryption", js.undefined)
+    @scala.inline
+    def setFileSize(value: NullableLong): Self = this.set("FileSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFileSize: Self = this.set("FileSize", js.undefined)
+    @scala.inline
+    def setFrameRate(value: FloatString): Self = this.set("FrameRate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrameRate: Self = this.set("FrameRate", js.undefined)
+    @scala.inline
+    def setHeight(value: NullableInteger): Self = this.set("Height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("Height", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("Id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("Id", js.undefined)
+    @scala.inline
+    def setKey(value: Key): Self = this.set("Key", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKey: Self = this.set("Key", js.undefined)
+    @scala.inline
+    def setPresetId(value: Id): Self = this.set("PresetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePresetId: Self = this.set("PresetId", js.undefined)
+    @scala.inline
+    def setRotate(value: Rotate): Self = this.set("Rotate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRotate: Self = this.set("Rotate", js.undefined)
+    @scala.inline
+    def setSegmentDuration(value: FloatString): Self = this.set("SegmentDuration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSegmentDuration: Self = this.set("SegmentDuration", js.undefined)
+    @scala.inline
+    def setStatus(value: JobStatus): Self = this.set("Status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("Status", js.undefined)
+    @scala.inline
+    def setStatusDetail(value: Description): Self = this.set("StatusDetail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusDetail: Self = this.set("StatusDetail", js.undefined)
+    @scala.inline
+    def setThumbnailEncryption(value: Encryption): Self = this.set("ThumbnailEncryption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailEncryption: Self = this.set("ThumbnailEncryption", js.undefined)
+    @scala.inline
+    def setThumbnailPattern(value: ThumbnailPattern): Self = this.set("ThumbnailPattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnailPattern: Self = this.set("ThumbnailPattern", js.undefined)
+    @scala.inline
+    def setWatermarksVarargs(value: JobWatermark*): Self = this.set("Watermarks", js.Array(value :_*))
+    @scala.inline
+    def setWatermarks(value: JobWatermarks): Self = this.set("Watermarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWatermarks: Self = this.set("Watermarks", js.undefined)
+    @scala.inline
+    def setWidth(value: NullableInteger): Self = this.set("Width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("Width", js.undefined)
+  }
+  
 }
 

@@ -27,9 +27,9 @@ class ResourceGroup protected () extends CustomResource {
     */
   val arn: Output_[String] = js.native
   /**
-    * Key-value map of tags that are used to select the EC2 instances to be included in an [Amazon Inspector assessment target](https://www.terraform.io/docs/providers/aws/r/inspector_assessment_target.html).
+    * Key-value map of tags that are used to select the EC2 instances to be included in an `Amazon Inspector assessment target` resource.
     */
-  val tags: Output_[StringDictionary[_]] = js.native
+  val tags: Output_[StringDictionary[String]] = js.native
 }
 
 /* static members */
@@ -43,8 +43,10 @@ object ResourceGroup extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): ResourceGroup = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceGroup = js.native
   def get(name: String, id: Input[ID], state: ResourceGroupState): ResourceGroup = js.native
   def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): ResourceGroup = js.native
   /**

@@ -22,16 +22,34 @@ trait DisassociateAddressRequest extends js.Object {
 
 object DisassociateAddressRequest {
   @scala.inline
-  def apply(
-    AssociationId: ElasticIpAssociationId = null,
-    DryRun: js.UndefOr[Boolean] = js.undefined,
-    PublicIp: String = null
-  ): DisassociateAddressRequest = {
+  def apply(): DisassociateAddressRequest = {
     val __obj = js.Dynamic.literal()
-    if (AssociationId != null) __obj.updateDynamic("AssociationId")(AssociationId.asInstanceOf[js.Any])
-    if (!js.isUndefined(DryRun)) __obj.updateDynamic("DryRun")(DryRun.get.asInstanceOf[js.Any])
-    if (PublicIp != null) __obj.updateDynamic("PublicIp")(PublicIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateAddressRequest]
   }
+  @scala.inline
+  implicit class DisassociateAddressRequestOps[Self <: DisassociateAddressRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAssociationId(value: ElasticIpAssociationId): Self = this.set("AssociationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAssociationId: Self = this.set("AssociationId", js.undefined)
+    @scala.inline
+    def setDryRun(value: Boolean): Self = this.set("DryRun", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDryRun: Self = this.set("DryRun", js.undefined)
+    @scala.inline
+    def setPublicIp(value: String): Self = this.set("PublicIp", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePublicIp: Self = this.set("PublicIp", js.undefined)
+  }
+  
 }
 

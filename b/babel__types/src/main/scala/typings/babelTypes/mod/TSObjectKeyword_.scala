@@ -6,28 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait TSObjectKeyword_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait TSObjectKeyword_
   extends TSBaseType
      with BaseNode
      with TSType {
   @JSName("type")
-  var type_TSObjectKeyword_ : TSObjectKeyword
+  var type_TSObjectKeyword_ : TSObjectKeyword = js.native
 }
 
 object TSObjectKeyword_ {
   @scala.inline
-  def apply(
-    `type`: TSObjectKeyword,
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): TSObjectKeyword_ = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(`type`: TSObjectKeyword): TSObjectKeyword_ = {
+    val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSObjectKeyword_]
   }
+  @scala.inline
+  implicit class TSObjectKeyword_Ops[Self <: TSObjectKeyword_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: TSObjectKeyword): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

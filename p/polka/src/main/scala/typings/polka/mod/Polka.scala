@@ -32,6 +32,7 @@ trait Polka
     * All arguments are passed to server.listen directly with no changes.
     */
   def listen(args: js.Any*): this.type = js.native
+  def listen(port: js.UndefOr[scala.Nothing], hostname: String): this.type = js.native
   def listen(port: Double): this.type = js.native
   def listen(port: Double, hostname: String): this.type = js.native
   /**

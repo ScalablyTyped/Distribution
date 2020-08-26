@@ -17,11 +17,12 @@ object DateTimeFormat
       typings.std.Intl.DateTimeFormat
     ]
      with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
+      js.UndefOr[(/* locales */ js.Array[String]) | (/* locales */ String)], 
       /* options */ DateTimeFormatOptions, 
       typings.std.Intl.DateTimeFormat
     ] {
   def apply(): typings.std.Intl.DateTimeFormat = js.native
+  def apply(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): typings.std.Intl.DateTimeFormat = js.native
   def apply(locales: String): typings.std.Intl.DateTimeFormat = js.native
   def apply(locales: String, options: DateTimeFormatOptions): typings.std.Intl.DateTimeFormat = js.native
   def apply(locales: js.Array[String]): typings.std.Intl.DateTimeFormat = js.native

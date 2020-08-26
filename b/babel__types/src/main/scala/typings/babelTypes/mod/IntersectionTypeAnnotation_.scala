@@ -6,30 +6,41 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ trait IntersectionTypeAnnotation_
+- typings.babelTypes.mod._Node because Already inherited */ @js.native
+trait IntersectionTypeAnnotation_
   extends Flow
      with BaseNode
      with FlowType {
   @JSName("type")
-  var type_IntersectionTypeAnnotation_ : IntersectionTypeAnnotation
-  var types: js.Array[FlowType]
+  var type_IntersectionTypeAnnotation_ : IntersectionTypeAnnotation = js.native
+  var types: js.Array[FlowType] = js.native
 }
 
 object IntersectionTypeAnnotation_ {
   @scala.inline
-  def apply(
-    `type`: IntersectionTypeAnnotation,
-    types: js.Array[FlowType],
-    end: Double = null.asInstanceOf[Double],
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Double = null.asInstanceOf[Double],
-    trailingComments: js.Array[Comment] = null
-  ): IntersectionTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], innerComments = innerComments.asInstanceOf[js.Any], leadingComments = leadingComments.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], trailingComments = trailingComments.asInstanceOf[js.Any])
+  def apply(`type`: IntersectionTypeAnnotation, types: js.Array[FlowType]): IntersectionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntersectionTypeAnnotation_]
   }
+  @scala.inline
+  implicit class IntersectionTypeAnnotation_Ops[Self <: IntersectionTypeAnnotation_] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setType(value: IntersectionTypeAnnotation): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTypesVarargs(value: FlowType*): Self = this.set("types", js.Array(value :_*))
+    @scala.inline
+    def setTypes(value: js.Array[FlowType]): Self = this.set("types", value.asInstanceOf[js.Any])
+  }
+  
 }
 

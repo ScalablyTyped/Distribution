@@ -16,8 +16,35 @@ class GraphTraversalSource[T /* <: GraphTraversal */] protected () extends js.Ob
   def this(
     graph: Nullable[Graph],
     traversalStrategies: Nullable[TraversalStrategies],
+    bytecode: js.UndefOr[scala.Nothing],
+    graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]]
+  ) = this()
+  def this(
+    graph: Nullable[Graph],
+    traversalStrategies: Nullable[TraversalStrategies],
     bytecode: Bytecode,
     graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]]
+  ) = this()
+  def this(
+    graph: Nullable[Graph],
+    traversalStrategies: Nullable[TraversalStrategies],
+    bytecode: js.UndefOr[scala.Nothing],
+    graphTraversalSourceClass: js.UndefOr[scala.Nothing],
+    graphTraversalClass: Newable[T]
+  ) = this()
+  def this(
+    graph: Nullable[Graph],
+    traversalStrategies: Nullable[TraversalStrategies],
+    bytecode: js.UndefOr[scala.Nothing],
+    graphTraversalSourceClass: Newable[GraphTraversalSource[GraphTraversal]],
+    graphTraversalClass: Newable[T]
+  ) = this()
+  def this(
+    graph: Nullable[Graph],
+    traversalStrategies: Nullable[TraversalStrategies],
+    bytecode: Bytecode,
+    graphTraversalSourceClass: js.UndefOr[scala.Nothing],
+    graphTraversalClass: Newable[T]
   ) = this()
   def this(
     graph: Nullable[Graph],

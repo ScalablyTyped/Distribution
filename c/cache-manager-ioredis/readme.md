@@ -10,9 +10,9 @@ IORedis store for node-cache-manager
 | ------------------ | :-------------: |
 | Full name          | cache-manager-ioredis |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 230811 |
+| # releases         | 3 |
+| # dependents       | 10 |
+| # downloads        | 261413 |
 | # stars            | 1 |
 
 ## Links

@@ -12,7 +12,7 @@ A wrapper for DynamoDB tables, with a promise wrapped simplified API for the AWS
 | Keywords           | dynamodb |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 1143 |
+| # downloads        | 1182 |
 | # stars            | 1 |
 
 ## Links

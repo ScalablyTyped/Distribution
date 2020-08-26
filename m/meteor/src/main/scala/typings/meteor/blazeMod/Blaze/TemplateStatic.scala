@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 trait TemplateStatic
   extends Instantiable0[Template]
      with Instantiable1[/* viewName */ String, Template]
-     with Instantiable2[/* viewName */ String, /* renderFunction */ js.Function, Template] {
+     with Instantiable2[js.UndefOr[/* viewName */ String], /* renderFunction */ js.Function, Template] {
   def currentData(): js.Any = js.native
   def instance(): TemplateInstance = js.native
   def parentData(numLevels: Double): js.Any = js.native

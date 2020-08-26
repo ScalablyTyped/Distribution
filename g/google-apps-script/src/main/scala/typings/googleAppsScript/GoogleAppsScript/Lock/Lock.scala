@@ -35,11 +35,12 @@ import scala.scalajs.js.annotation._
   * lastTicketNumber
   * ScriptProperties
   */
+@js.native
 trait Lock extends js.Object {
-  def hasLock(): Boolean
-  def releaseLock(): Unit
-  def tryLock(timeoutInMillis: Integer): Boolean
-  def waitLock(timeoutInMillis: Integer): Unit
+  def hasLock(): Boolean = js.native
+  def releaseLock(): Unit = js.native
+  def tryLock(timeoutInMillis: Integer): Boolean = js.native
+  def waitLock(timeoutInMillis: Integer): Unit = js.native
 }
 
 object Lock {
@@ -53,5 +54,26 @@ object Lock {
     val __obj = js.Dynamic.literal(hasLock = js.Any.fromFunction0(hasLock), releaseLock = js.Any.fromFunction0(releaseLock), tryLock = js.Any.fromFunction1(tryLock), waitLock = js.Any.fromFunction1(waitLock))
     __obj.asInstanceOf[Lock]
   }
+  @scala.inline
+  implicit class LockOps[Self <: typings.googleAppsScript.GoogleAppsScript.Lock.Lock] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHasLock(value: () => Boolean): Self = this.set("hasLock", js.Any.fromFunction0(value))
+    @scala.inline
+    def setReleaseLock(value: () => Unit): Self = this.set("releaseLock", js.Any.fromFunction0(value))
+    @scala.inline
+    def setTryLock(value: Integer => Boolean): Self = this.set("tryLock", js.Any.fromFunction1(value))
+    @scala.inline
+    def setWaitLock(value: Integer => Unit): Self = this.set("waitLock", js.Any.fromFunction1(value))
+  }
+  
 }
 

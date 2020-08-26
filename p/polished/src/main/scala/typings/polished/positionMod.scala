@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object positionMod extends js.Object {
   def default(firstValue: String, values: (Null | Unit | String | Double)*): Styles = js.native
   def default(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = js.native
-  def default(values: (Null | Unit | String | Double)*): Styles = js.native
+  def default(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = js.native
 }
 

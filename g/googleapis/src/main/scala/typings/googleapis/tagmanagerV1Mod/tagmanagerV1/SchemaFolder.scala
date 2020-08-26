@@ -34,20 +34,42 @@ trait SchemaFolder extends js.Object {
 
 object SchemaFolder {
   @scala.inline
-  def apply(
-    accountId: String = null,
-    containerId: String = null,
-    fingerprint: String = null,
-    folderId: String = null,
-    name: String = null
-  ): SchemaFolder = {
+  def apply(): SchemaFolder = {
     val __obj = js.Dynamic.literal()
-    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
-    if (folderId != null) __obj.updateDynamic("folderId")(folderId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaFolder]
   }
+  @scala.inline
+  implicit class SchemaFolderOps[Self <: SchemaFolder] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: String): Self = this.set("accountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountId: Self = this.set("accountId", js.undefined)
+    @scala.inline
+    def setContainerId(value: String): Self = this.set("containerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContainerId: Self = this.set("containerId", js.undefined)
+    @scala.inline
+    def setFingerprint(value: String): Self = this.set("fingerprint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFingerprint: Self = this.set("fingerprint", js.undefined)
+    @scala.inline
+    def setFolderId(value: String): Self = this.set("folderId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolderId: Self = this.set("folderId", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

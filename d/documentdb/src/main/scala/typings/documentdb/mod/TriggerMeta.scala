@@ -4,10 +4,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait TriggerMeta extends AbstractMeta {
-  var body: String
-  var triggerOperation: String
-  var triggerType: String
+  var body: String = js.native
+  var triggerOperation: String = js.native
+  var triggerType: String = js.native
 }
 
 object TriggerMeta {
@@ -18,16 +19,29 @@ object TriggerMeta {
     body: String,
     id: String,
     triggerOperation: String,
-    triggerType: String,
-    _attachments: String = null,
-    _etag: String = null,
-    _rid: String = null
+    triggerType: String
   ): TriggerMeta = {
     val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], _ts = _ts.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], triggerOperation = triggerOperation.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
-    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments.asInstanceOf[js.Any])
-    if (_etag != null) __obj.updateDynamic("_etag")(_etag.asInstanceOf[js.Any])
-    if (_rid != null) __obj.updateDynamic("_rid")(_rid.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerMeta]
   }
+  @scala.inline
+  implicit class TriggerMetaOps[Self <: TriggerMeta] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTriggerOperation(value: String): Self = this.set("triggerOperation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setTriggerType(value: String): Self = this.set("triggerType", value.asInstanceOf[js.Any])
+  }
+  
 }
 

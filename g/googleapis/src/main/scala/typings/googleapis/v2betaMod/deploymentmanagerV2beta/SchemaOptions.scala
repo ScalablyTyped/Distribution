@@ -35,18 +35,42 @@ trait SchemaOptions extends js.Object {
 
 object SchemaOptions {
   @scala.inline
-  def apply(
-    asyncOptions: js.Array[SchemaAsyncOptions] = null,
-    inputMappings: js.Array[SchemaInputMapping] = null,
-    validationOptions: SchemaValidationOptions = null,
-    virtualProperties: String = null
-  ): SchemaOptions = {
+  def apply(): SchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncOptions != null) __obj.updateDynamic("asyncOptions")(asyncOptions.asInstanceOf[js.Any])
-    if (inputMappings != null) __obj.updateDynamic("inputMappings")(inputMappings.asInstanceOf[js.Any])
-    if (validationOptions != null) __obj.updateDynamic("validationOptions")(validationOptions.asInstanceOf[js.Any])
-    if (virtualProperties != null) __obj.updateDynamic("virtualProperties")(virtualProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOptions]
   }
+  @scala.inline
+  implicit class SchemaOptionsOps[Self <: SchemaOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAsyncOptionsVarargs(value: SchemaAsyncOptions*): Self = this.set("asyncOptions", js.Array(value :_*))
+    @scala.inline
+    def setAsyncOptions(value: js.Array[SchemaAsyncOptions]): Self = this.set("asyncOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAsyncOptions: Self = this.set("asyncOptions", js.undefined)
+    @scala.inline
+    def setInputMappingsVarargs(value: SchemaInputMapping*): Self = this.set("inputMappings", js.Array(value :_*))
+    @scala.inline
+    def setInputMappings(value: js.Array[SchemaInputMapping]): Self = this.set("inputMappings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMappings: Self = this.set("inputMappings", js.undefined)
+    @scala.inline
+    def setValidationOptions(value: SchemaValidationOptions): Self = this.set("validationOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteValidationOptions: Self = this.set("validationOptions", js.undefined)
+    @scala.inline
+    def setVirtualProperties(value: String): Self = this.set("virtualProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVirtualProperties: Self = this.set("virtualProperties", js.undefined)
+  }
+  
 }
 

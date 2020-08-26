@@ -7,6 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CurrentPlaybackResponse
   extends CurrentlyPlayingObject
      with PlaybackObject
@@ -18,12 +19,9 @@ object CurrentPlaybackResponse {
     is_playing: Boolean,
     repeat_state: off | track | context,
     shuffle_state: Boolean,
-    timestamp: Double,
-    context: ContextObject = null,
-    item: TrackObjectFull = null,
-    progress_ms: Double = null.asInstanceOf[Double]
+    timestamp: Double
   ): CurrentPlaybackResponse = {
-    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], is_playing = is_playing.asInstanceOf[js.Any], repeat_state = repeat_state.asInstanceOf[js.Any], shuffle_state = shuffle_state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], progress_ms = progress_ms.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], is_playing = is_playing.asInstanceOf[js.Any], repeat_state = repeat_state.asInstanceOf[js.Any], shuffle_state = shuffle_state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentPlaybackResponse]
   }
 }

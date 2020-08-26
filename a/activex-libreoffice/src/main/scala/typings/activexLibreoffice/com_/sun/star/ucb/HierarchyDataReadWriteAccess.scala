@@ -18,6 +18,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** provides read and write access to a fragment of the hierarchy data. */
+@js.native
 trait HierarchyDataReadWriteAccess
   extends XNameContainer
      with XHierarchicalNameAccess

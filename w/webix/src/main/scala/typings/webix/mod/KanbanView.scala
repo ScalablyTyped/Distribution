@@ -28,6 +28,7 @@ trait KanbanView extends js.Object {
   def eachOtherList(code: WebixCallback): Unit = js.native
   def getKanban(): js.Any = js.native
   def move(sid: String, tindex: Double): String = js.native
+  def move(sid: String, tindex: Double, tobj: js.UndefOr[scala.Nothing], details: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any): String = js.native
   def move(sid: String, tindex: Double, tobj: js.Any, details: js.Any): String = js.native
 }

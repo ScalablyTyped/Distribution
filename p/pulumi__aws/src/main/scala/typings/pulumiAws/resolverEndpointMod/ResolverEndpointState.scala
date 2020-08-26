@@ -37,31 +37,61 @@ trait ResolverEndpointState extends js.Object {
     */
   val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: js.UndefOr[Input[StringDictionary[_]]] = js.native
+  val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
 }
 
 object ResolverEndpointState {
   @scala.inline
-  def apply(
-    arn: Input[String] = null,
-    direction: Input[String] = null,
-    hostVpcId: Input[String] = null,
-    ipAddresses: Input[js.Array[Input[ResolverEndpointIpAddress]]] = null,
-    name: Input[String] = null,
-    securityGroupIds: Input[js.Array[Input[String]]] = null,
-    tags: Input[StringDictionary[_]] = null
-  ): ResolverEndpointState = {
+  def apply(): ResolverEndpointState = {
     val __obj = js.Dynamic.literal()
-    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (hostVpcId != null) __obj.updateDynamic("hostVpcId")(hostVpcId.asInstanceOf[js.Any])
-    if (ipAddresses != null) __obj.updateDynamic("ipAddresses")(ipAddresses.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolverEndpointState]
   }
+  @scala.inline
+  implicit class ResolverEndpointStateOps[Self <: ResolverEndpointState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setArn(value: Input[String]): Self = this.set("arn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArn: Self = this.set("arn", js.undefined)
+    @scala.inline
+    def setDirection(value: Input[String]): Self = this.set("direction", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDirection: Self = this.set("direction", js.undefined)
+    @scala.inline
+    def setHostVpcId(value: Input[String]): Self = this.set("hostVpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostVpcId: Self = this.set("hostVpcId", js.undefined)
+    @scala.inline
+    def setIpAddressesVarargs(value: Input[ResolverEndpointIpAddress]*): Self = this.set("ipAddresses", js.Array(value :_*))
+    @scala.inline
+    def setIpAddresses(value: Input[js.Array[Input[ResolverEndpointIpAddress]]]): Self = this.set("ipAddresses", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddresses: Self = this.set("ipAddresses", js.undefined)
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setSecurityGroupIdsVarargs(value: Input[String]*): Self = this.set("securityGroupIds", js.Array(value :_*))
+    @scala.inline
+    def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = this.set("securityGroupIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSecurityGroupIds: Self = this.set("securityGroupIds", js.undefined)
+    @scala.inline
+    def setTags(value: Input[StringDictionary[Input[String]]]): Self = this.set("tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("tags", js.undefined)
+  }
+  
 }
 

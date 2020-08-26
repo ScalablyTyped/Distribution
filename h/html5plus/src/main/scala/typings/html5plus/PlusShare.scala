@@ -74,6 +74,7 @@ trait PlusShare extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
   def getServices(): Unit = js.native
+  def getServices(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getServices(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getServices(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],
@@ -87,7 +88,23 @@ trait PlusShare extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
   def sendWithSystem(): Unit = js.native
+  def sendWithSystem(
+    msg: js.UndefOr[scala.Nothing],
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def sendWithSystem(msg: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
+  def sendWithSystem(
+    msg: js.UndefOr[scala.Nothing],
+    successCB: js.Function0[Unit],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def sendWithSystem(msg: PlusShareShareMessage): Unit = js.native
+  def sendWithSystem(
+    msg: PlusShareShareMessage,
+    successCB: js.UndefOr[scala.Nothing],
+    errorCB: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
   def sendWithSystem(msg: PlusShareShareMessage, successCB: js.Function0[Unit]): Unit = js.native
   def sendWithSystem(
     msg: PlusShareShareMessage,

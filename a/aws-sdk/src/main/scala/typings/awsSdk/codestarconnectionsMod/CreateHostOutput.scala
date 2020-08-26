@@ -14,10 +14,26 @@ trait CreateHostOutput extends js.Object {
 
 object CreateHostOutput {
   @scala.inline
-  def apply(HostArn: HostArn = null): CreateHostOutput = {
+  def apply(): CreateHostOutput = {
     val __obj = js.Dynamic.literal()
-    if (HostArn != null) __obj.updateDynamic("HostArn")(HostArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostOutput]
   }
+  @scala.inline
+  implicit class CreateHostOutputOps[Self <: CreateHostOutput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHostArn(value: HostArn): Self = this.set("HostArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHostArn: Self = this.set("HostArn", js.undefined)
+  }
+  
 }
 

@@ -47,6 +47,7 @@ object mod extends js.Object {
       * @param encoding encoding used for call to buf.fill while initalizing
       */
     def alloc(size: Double): typings.node.Buffer = js.native
+    def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: BufferEncoding): typings.node.Buffer = js.native
     def alloc(size: Double, fill: String): typings.node.Buffer = js.native
     def alloc(size: Double, fill: String, encoding: BufferEncoding): typings.node.Buffer = js.native
     def alloc(size: Double, fill: Double): typings.node.Buffer = js.native
@@ -100,6 +101,7 @@ object mod extends js.Object {
     def concat(list: js.Array[Uint8Array]): typings.node.Buffer = js.native
     def concat(list: js.Array[Uint8Array], totalLength: Double): typings.node.Buffer = js.native
     def from(arrayBuffer: SharedArrayBuffer): typings.node.Buffer = js.native
+    def from(arrayBuffer: SharedArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
     def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double): typings.node.Buffer = js.native
     def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double, length: Double): typings.node.Buffer = js.native
     /**
@@ -111,6 +113,7 @@ object mod extends js.Object {
       * @param arrayBuffer The .buffer property of any TypedArray or a new ArrayBuffer()
       */
     def from(arrayBuffer: ArrayBuffer): typings.node.Buffer = js.native
+    def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
     def from(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.node.Buffer = js.native
     def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.node.Buffer = js.native
     /**
@@ -120,6 +123,7 @@ object mod extends js.Object {
     def from(data: js.Array[Double]): typings.node.Buffer = js.native
     def from(data: Uint8Array): typings.node.Buffer = js.native
     def from(obj: ToPrimitive): typings.node.Buffer = js.native
+    def from(obj: ToPrimitive, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
     def from(obj: ToPrimitive, byteOffset: Double): typings.node.Buffer = js.native
     def from(obj: ToPrimitive, byteOffset: Double, length: Double): typings.node.Buffer = js.native
     /**
@@ -128,6 +132,7 @@ object mod extends js.Object {
       * @param obj An object supporting `Symbol.toPrimitive` or `valueOf()`.
       */
     def from(obj: ValueOf): typings.node.Buffer = js.native
+    def from(obj: ValueOf, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
     def from(obj: ValueOf, byteOffset: Double): typings.node.Buffer = js.native
     def from(obj: ValueOf, byteOffset: Double, length: Double): typings.node.Buffer = js.native
     /**

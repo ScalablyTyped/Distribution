@@ -1,15 +1,13 @@
 package typings.typedGithubApi
 
 import typings.typedGithubApi.commitMod.Commit
+import typings.typedGithubApi.commitMod.GitCommit
 import typings.typedGithubApi.commitRefMod.CommitRefClass
 import typings.typedGithubApi.interfacesCommitMod.CommitRef
 import typings.typedGithubApi.interfacesCommitMod.CommitSummary
-import typings.typedGithubApi.interfacesCommitMod.GitActor
 import typings.typedGithubApi.interfacesCommitMod.GitChanges
-import typings.typedGithubApi.interfacesCommitMod.GitCommit
 import typings.typedGithubApi.interfacesCommitMod.GitCommitSummary
 import typings.typedGithubApi.interfacesCommitMod.GitFile
-import typings.typedGithubApi.interfacesRepositoryMod.RepositoryRef
 import typings.typedGithubApi.repositoryRefMod.RepositoryRefClass
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -33,20 +31,6 @@ object distCommitMod extends js.Object {
     extends CommitRefClass
        with CommitSummary {
     def this(repository: RepositoryRefClass, data: typings.typedGithubApi.commitMod.CommitSummary) = this()
-    /* CompleteClass */
-    override var gitCommit: GitCommitSummary = js.native
-    /* CompleteClass */
-    override var htmlUri: String = js.native
-    /* CompleteClass */
-    override var parents: js.Array[CommitRef] = js.native
-    /* CompleteClass */
-    override val repository: RepositoryRef = js.native
-    /* CompleteClass */
-    override val sha: String = js.native
-    /* CompleteClass */
-    override def loadAsync(): js.Promise[typings.typedGithubApi.interfacesCommitMod.Commit | Null] = js.native
-    /* CompleteClass */
-    override def loadGitAsync(): js.Promise[GitCommit | Null] = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -54,7 +38,7 @@ object distCommitMod extends js.Object {
   - typings.typedGithubApi.interfacesCommitMod.GitCommitSummary because Already inherited
   - typings.typedGithubApi.interfacesCommitMod.GitCommit because var conflicts: author, committer, message. Inlined parents */ @js.native
   class GitCommitClass protected () extends GitCommitSummaryClass {
-    def this(repository: RepositoryRefClass, data: typings.typedGithubApi.commitMod.GitCommit) = this()
+    def this(repository: RepositoryRefClass, data: GitCommit) = this()
     var parents: js.Array[CommitRef] = js.native
   }
   
@@ -67,20 +51,6 @@ object distCommitMod extends js.Object {
       sha: String,
       data: typings.typedGithubApi.commitMod.GitCommitSummary
     ) = this()
-    /* CompleteClass */
-    override var author: GitActor = js.native
-    /* CompleteClass */
-    override var committer: GitActor = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override val repository: RepositoryRef = js.native
-    /* CompleteClass */
-    override val sha: String = js.native
-    /* CompleteClass */
-    override def loadAsync(): js.Promise[typings.typedGithubApi.interfacesCommitMod.Commit | Null] = js.native
-    /* CompleteClass */
-    override def loadGitAsync(): js.Promise[GitCommit | Null] = js.native
   }
   
 }

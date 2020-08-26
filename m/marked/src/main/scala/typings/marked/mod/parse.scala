@@ -27,6 +27,11 @@ object parse extends js.Object {
     src: String,
     callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
   ): String = js.native
+  def apply(
+    src: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ String, Unit]
+  ): String = js.native
   def apply(src: String, options: MarkedOptions): String = js.native
   def apply(
     src: String,

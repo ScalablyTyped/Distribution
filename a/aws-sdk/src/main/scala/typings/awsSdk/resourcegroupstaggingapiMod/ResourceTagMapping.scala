@@ -22,12 +22,36 @@ trait ResourceTagMapping extends js.Object {
 
 object ResourceTagMapping {
   @scala.inline
-  def apply(ComplianceDetails: ComplianceDetails = null, ResourceARN: ResourceARN = null, Tags: TagList = null): ResourceTagMapping = {
+  def apply(): ResourceTagMapping = {
     val __obj = js.Dynamic.literal()
-    if (ComplianceDetails != null) __obj.updateDynamic("ComplianceDetails")(ComplianceDetails.asInstanceOf[js.Any])
-    if (ResourceARN != null) __obj.updateDynamic("ResourceARN")(ResourceARN.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceTagMapping]
   }
+  @scala.inline
+  implicit class ResourceTagMappingOps[Self <: ResourceTagMapping] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setComplianceDetails(value: ComplianceDetails): Self = this.set("ComplianceDetails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceDetails: Self = this.set("ComplianceDetails", js.undefined)
+    @scala.inline
+    def setResourceARN(value: ResourceARN): Self = this.set("ResourceARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceARN: Self = this.set("ResourceARN", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

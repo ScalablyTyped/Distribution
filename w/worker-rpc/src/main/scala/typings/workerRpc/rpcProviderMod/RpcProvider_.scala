@@ -23,6 +23,8 @@ trait RpcProvider_ extends RpcProviderInterface {
   @JSName("error")
   var error_RpcProvider_ : Event = js.native
   def rpc[T, U](id: String, payload: T, transfer: js.Any): js.Promise[U] = js.native
+  def rpc[T, U](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Any): js.Promise[U] = js.native
   def signal[T](id: String, payload: T, transfer: js.Any): this.type = js.native
+  def signal[T](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Any): this.type = js.native
 }
 

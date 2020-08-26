@@ -22,16 +22,36 @@ trait MultiConditionalSplitActivity extends js.Object {
 
 object MultiConditionalSplitActivity {
   @scala.inline
-  def apply(
-    Branches: ListOfMultiConditionalBranch = null,
-    DefaultActivity: string = null,
-    EvaluationWaitTime: WaitTime = null
-  ): MultiConditionalSplitActivity = {
+  def apply(): MultiConditionalSplitActivity = {
     val __obj = js.Dynamic.literal()
-    if (Branches != null) __obj.updateDynamic("Branches")(Branches.asInstanceOf[js.Any])
-    if (DefaultActivity != null) __obj.updateDynamic("DefaultActivity")(DefaultActivity.asInstanceOf[js.Any])
-    if (EvaluationWaitTime != null) __obj.updateDynamic("EvaluationWaitTime")(EvaluationWaitTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiConditionalSplitActivity]
   }
+  @scala.inline
+  implicit class MultiConditionalSplitActivityOps[Self <: MultiConditionalSplitActivity] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBranchesVarargs(value: MultiConditionalBranch*): Self = this.set("Branches", js.Array(value :_*))
+    @scala.inline
+    def setBranches(value: ListOfMultiConditionalBranch): Self = this.set("Branches", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBranches: Self = this.set("Branches", js.undefined)
+    @scala.inline
+    def setDefaultActivity(value: string): Self = this.set("DefaultActivity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultActivity: Self = this.set("DefaultActivity", js.undefined)
+    @scala.inline
+    def setEvaluationWaitTime(value: WaitTime): Self = this.set("EvaluationWaitTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvaluationWaitTime: Self = this.set("EvaluationWaitTime", js.undefined)
+  }
+  
 }
 

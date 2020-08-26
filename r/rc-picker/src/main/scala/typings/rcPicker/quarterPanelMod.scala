@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("rc-picker/lib/panels/QuarterPanel", JSImport.Namespace)
+@JSImport("rc-picker/es/panels/QuarterPanel", JSImport.Namespace)
 @js.native
 object quarterPanelMod extends js.Object {
   def default[DateType](props: QuarterPanelProps[DateType]): Element = js.native

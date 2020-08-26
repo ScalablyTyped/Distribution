@@ -13,26 +13,5 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("twilio-chat/lib/interfaces/paginator", "SamplePaginator")
 @js.native
-class SamplePaginator[T] () extends Paginator[T] {
-  /* CompleteClass */
-  override var hasNextPage: Boolean = js.native
-  /* CompleteClass */
-  override var hasPrevPage: Boolean = js.native
-  /* CompleteClass */
-  override var items: js.Array[T] = js.native
-  /**
-    * Request next page.
-    * Does not modify existing object.
-    * @return {Promise<Paginator<T>>}
-    */
-  /* CompleteClass */
-  override def nextPage(): js.Promise[Paginator[T]] = js.native
-  /**
-    * Request previous page.
-    * Does not modify existing object.
-    * @return {Promise<Paginator<T>>}
-    */
-  /* CompleteClass */
-  override def prevPage(): js.Promise[Paginator[T]] = js.native
-}
+class SamplePaginator[T] () extends Paginator[T]
 

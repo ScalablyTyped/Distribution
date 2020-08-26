@@ -4,204 +4,469 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IWhiteList extends js.Object {
-  var a: js.UndefOr[js.Array[String]] = js.undefined
-  var abbr: js.UndefOr[js.Array[String]] = js.undefined
-  var address: js.UndefOr[js.Array[String]] = js.undefined
-  var area: js.UndefOr[js.Array[String]] = js.undefined
-  var article: js.UndefOr[js.Array[String]] = js.undefined
-  var aside: js.UndefOr[js.Array[String]] = js.undefined
-  var audio: js.UndefOr[js.Array[String]] = js.undefined
-  var b: js.UndefOr[js.Array[String]] = js.undefined
-  var bdi: js.UndefOr[js.Array[String]] = js.undefined
-  var bdo: js.UndefOr[js.Array[String]] = js.undefined
-  var big: js.UndefOr[js.Array[String]] = js.undefined
-  var blockquote: js.UndefOr[js.Array[String]] = js.undefined
-  var br: js.UndefOr[js.Array[String]] = js.undefined
-  var caption: js.UndefOr[js.Array[String]] = js.undefined
-  var center: js.UndefOr[js.Array[String]] = js.undefined
-  var cite: js.UndefOr[js.Array[String]] = js.undefined
-  var code: js.UndefOr[js.Array[String]] = js.undefined
-  var col: js.UndefOr[js.Array[String]] = js.undefined
-  var colgroup: js.UndefOr[js.Array[String]] = js.undefined
-  var dd: js.UndefOr[js.Array[String]] = js.undefined
-  var del: js.UndefOr[js.Array[String]] = js.undefined
-  var details: js.UndefOr[js.Array[String]] = js.undefined
-  var div: js.UndefOr[js.Array[String]] = js.undefined
-  var dl: js.UndefOr[js.Array[String]] = js.undefined
-  var dt: js.UndefOr[js.Array[String]] = js.undefined
-  var em: js.UndefOr[js.Array[String]] = js.undefined
-  var font: js.UndefOr[js.Array[String]] = js.undefined
-  var footer: js.UndefOr[js.Array[String]] = js.undefined
-  var h1: js.UndefOr[js.Array[String]] = js.undefined
-  var h2: js.UndefOr[js.Array[String]] = js.undefined
-  var h3: js.UndefOr[js.Array[String]] = js.undefined
-  var h4: js.UndefOr[js.Array[String]] = js.undefined
-  var h5: js.UndefOr[js.Array[String]] = js.undefined
-  var h6: js.UndefOr[js.Array[String]] = js.undefined
-  var header: js.UndefOr[js.Array[String]] = js.undefined
-  var hr: js.UndefOr[js.Array[String]] = js.undefined
-  var i: js.UndefOr[js.Array[String]] = js.undefined
-  var img: js.UndefOr[js.Array[String]] = js.undefined
-  var ins: js.UndefOr[js.Array[String]] = js.undefined
-  var li: js.UndefOr[js.Array[String]] = js.undefined
-  var mark: js.UndefOr[js.Array[String]] = js.undefined
-  var nav: js.UndefOr[js.Array[String]] = js.undefined
-  var ol: js.UndefOr[js.Array[String]] = js.undefined
-  var p: js.UndefOr[js.Array[String]] = js.undefined
-  var pre: js.UndefOr[js.Array[String]] = js.undefined
-  var s: js.UndefOr[js.Array[String]] = js.undefined
-  var section: js.UndefOr[js.Array[String]] = js.undefined
-  var small: js.UndefOr[js.Array[String]] = js.undefined
-  var span: js.UndefOr[js.Array[String]] = js.undefined
-  var strong: js.UndefOr[js.Array[String]] = js.undefined
-  var sub: js.UndefOr[js.Array[String]] = js.undefined
-  var sup: js.UndefOr[js.Array[String]] = js.undefined
-  var table: js.UndefOr[js.Array[String]] = js.undefined
-  var tbody: js.UndefOr[js.Array[String]] = js.undefined
-  var td: js.UndefOr[js.Array[String]] = js.undefined
-  var tfoot: js.UndefOr[js.Array[String]] = js.undefined
-  var th: js.UndefOr[js.Array[String]] = js.undefined
-  var thead: js.UndefOr[js.Array[String]] = js.undefined
-  var tr: js.UndefOr[js.Array[String]] = js.undefined
-  var tt: js.UndefOr[js.Array[String]] = js.undefined
-  var u: js.UndefOr[js.Array[String]] = js.undefined
-  var ul: js.UndefOr[js.Array[String]] = js.undefined
-  var video: js.UndefOr[js.Array[String]] = js.undefined
+  var a: js.UndefOr[js.Array[String]] = js.native
+  var abbr: js.UndefOr[js.Array[String]] = js.native
+  var address: js.UndefOr[js.Array[String]] = js.native
+  var area: js.UndefOr[js.Array[String]] = js.native
+  var article: js.UndefOr[js.Array[String]] = js.native
+  var aside: js.UndefOr[js.Array[String]] = js.native
+  var audio: js.UndefOr[js.Array[String]] = js.native
+  var b: js.UndefOr[js.Array[String]] = js.native
+  var bdi: js.UndefOr[js.Array[String]] = js.native
+  var bdo: js.UndefOr[js.Array[String]] = js.native
+  var big: js.UndefOr[js.Array[String]] = js.native
+  var blockquote: js.UndefOr[js.Array[String]] = js.native
+  var br: js.UndefOr[js.Array[String]] = js.native
+  var caption: js.UndefOr[js.Array[String]] = js.native
+  var center: js.UndefOr[js.Array[String]] = js.native
+  var cite: js.UndefOr[js.Array[String]] = js.native
+  var code: js.UndefOr[js.Array[String]] = js.native
+  var col: js.UndefOr[js.Array[String]] = js.native
+  var colgroup: js.UndefOr[js.Array[String]] = js.native
+  var dd: js.UndefOr[js.Array[String]] = js.native
+  var del: js.UndefOr[js.Array[String]] = js.native
+  var details: js.UndefOr[js.Array[String]] = js.native
+  var div: js.UndefOr[js.Array[String]] = js.native
+  var dl: js.UndefOr[js.Array[String]] = js.native
+  var dt: js.UndefOr[js.Array[String]] = js.native
+  var em: js.UndefOr[js.Array[String]] = js.native
+  var font: js.UndefOr[js.Array[String]] = js.native
+  var footer: js.UndefOr[js.Array[String]] = js.native
+  var h1: js.UndefOr[js.Array[String]] = js.native
+  var h2: js.UndefOr[js.Array[String]] = js.native
+  var h3: js.UndefOr[js.Array[String]] = js.native
+  var h4: js.UndefOr[js.Array[String]] = js.native
+  var h5: js.UndefOr[js.Array[String]] = js.native
+  var h6: js.UndefOr[js.Array[String]] = js.native
+  var header: js.UndefOr[js.Array[String]] = js.native
+  var hr: js.UndefOr[js.Array[String]] = js.native
+  var i: js.UndefOr[js.Array[String]] = js.native
+  var img: js.UndefOr[js.Array[String]] = js.native
+  var ins: js.UndefOr[js.Array[String]] = js.native
+  var li: js.UndefOr[js.Array[String]] = js.native
+  var mark: js.UndefOr[js.Array[String]] = js.native
+  var nav: js.UndefOr[js.Array[String]] = js.native
+  var ol: js.UndefOr[js.Array[String]] = js.native
+  var p: js.UndefOr[js.Array[String]] = js.native
+  var pre: js.UndefOr[js.Array[String]] = js.native
+  var s: js.UndefOr[js.Array[String]] = js.native
+  var section: js.UndefOr[js.Array[String]] = js.native
+  var small: js.UndefOr[js.Array[String]] = js.native
+  var span: js.UndefOr[js.Array[String]] = js.native
+  var strong: js.UndefOr[js.Array[String]] = js.native
+  var sub: js.UndefOr[js.Array[String]] = js.native
+  var sup: js.UndefOr[js.Array[String]] = js.native
+  var table: js.UndefOr[js.Array[String]] = js.native
+  var tbody: js.UndefOr[js.Array[String]] = js.native
+  var td: js.UndefOr[js.Array[String]] = js.native
+  var tfoot: js.UndefOr[js.Array[String]] = js.native
+  var th: js.UndefOr[js.Array[String]] = js.native
+  var thead: js.UndefOr[js.Array[String]] = js.native
+  var tr: js.UndefOr[js.Array[String]] = js.native
+  var tt: js.UndefOr[js.Array[String]] = js.native
+  var u: js.UndefOr[js.Array[String]] = js.native
+  var ul: js.UndefOr[js.Array[String]] = js.native
+  var video: js.UndefOr[js.Array[String]] = js.native
 }
 
 object IWhiteList {
   @scala.inline
-  def apply(
-    a: js.Array[String] = null,
-    abbr: js.Array[String] = null,
-    address: js.Array[String] = null,
-    area: js.Array[String] = null,
-    article: js.Array[String] = null,
-    aside: js.Array[String] = null,
-    audio: js.Array[String] = null,
-    b: js.Array[String] = null,
-    bdi: js.Array[String] = null,
-    bdo: js.Array[String] = null,
-    big: js.Array[String] = null,
-    blockquote: js.Array[String] = null,
-    br: js.Array[String] = null,
-    caption: js.Array[String] = null,
-    center: js.Array[String] = null,
-    cite: js.Array[String] = null,
-    code: js.Array[String] = null,
-    col: js.Array[String] = null,
-    colgroup: js.Array[String] = null,
-    dd: js.Array[String] = null,
-    del: js.Array[String] = null,
-    details: js.Array[String] = null,
-    div: js.Array[String] = null,
-    dl: js.Array[String] = null,
-    dt: js.Array[String] = null,
-    em: js.Array[String] = null,
-    font: js.Array[String] = null,
-    footer: js.Array[String] = null,
-    h1: js.Array[String] = null,
-    h2: js.Array[String] = null,
-    h3: js.Array[String] = null,
-    h4: js.Array[String] = null,
-    h5: js.Array[String] = null,
-    h6: js.Array[String] = null,
-    header: js.Array[String] = null,
-    hr: js.Array[String] = null,
-    i: js.Array[String] = null,
-    img: js.Array[String] = null,
-    ins: js.Array[String] = null,
-    li: js.Array[String] = null,
-    mark: js.Array[String] = null,
-    nav: js.Array[String] = null,
-    ol: js.Array[String] = null,
-    p: js.Array[String] = null,
-    pre: js.Array[String] = null,
-    s: js.Array[String] = null,
-    section: js.Array[String] = null,
-    small: js.Array[String] = null,
-    span: js.Array[String] = null,
-    strong: js.Array[String] = null,
-    sub: js.Array[String] = null,
-    sup: js.Array[String] = null,
-    table: js.Array[String] = null,
-    tbody: js.Array[String] = null,
-    td: js.Array[String] = null,
-    tfoot: js.Array[String] = null,
-    th: js.Array[String] = null,
-    thead: js.Array[String] = null,
-    tr: js.Array[String] = null,
-    tt: js.Array[String] = null,
-    u: js.Array[String] = null,
-    ul: js.Array[String] = null,
-    video: js.Array[String] = null
-  ): IWhiteList = {
+  def apply(): IWhiteList = {
     val __obj = js.Dynamic.literal()
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (abbr != null) __obj.updateDynamic("abbr")(abbr.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (area != null) __obj.updateDynamic("area")(area.asInstanceOf[js.Any])
-    if (article != null) __obj.updateDynamic("article")(article.asInstanceOf[js.Any])
-    if (aside != null) __obj.updateDynamic("aside")(aside.asInstanceOf[js.Any])
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (bdi != null) __obj.updateDynamic("bdi")(bdi.asInstanceOf[js.Any])
-    if (bdo != null) __obj.updateDynamic("bdo")(bdo.asInstanceOf[js.Any])
-    if (big != null) __obj.updateDynamic("big")(big.asInstanceOf[js.Any])
-    if (blockquote != null) __obj.updateDynamic("blockquote")(blockquote.asInstanceOf[js.Any])
-    if (br != null) __obj.updateDynamic("br")(br.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (cite != null) __obj.updateDynamic("cite")(cite.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
-    if (colgroup != null) __obj.updateDynamic("colgroup")(colgroup.asInstanceOf[js.Any])
-    if (dd != null) __obj.updateDynamic("dd")(dd.asInstanceOf[js.Any])
-    if (del != null) __obj.updateDynamic("del")(del.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (div != null) __obj.updateDynamic("div")(div.asInstanceOf[js.Any])
-    if (dl != null) __obj.updateDynamic("dl")(dl.asInstanceOf[js.Any])
-    if (dt != null) __obj.updateDynamic("dt")(dt.asInstanceOf[js.Any])
-    if (em != null) __obj.updateDynamic("em")(em.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (h1 != null) __obj.updateDynamic("h1")(h1.asInstanceOf[js.Any])
-    if (h2 != null) __obj.updateDynamic("h2")(h2.asInstanceOf[js.Any])
-    if (h3 != null) __obj.updateDynamic("h3")(h3.asInstanceOf[js.Any])
-    if (h4 != null) __obj.updateDynamic("h4")(h4.asInstanceOf[js.Any])
-    if (h5 != null) __obj.updateDynamic("h5")(h5.asInstanceOf[js.Any])
-    if (h6 != null) __obj.updateDynamic("h6")(h6.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (hr != null) __obj.updateDynamic("hr")(hr.asInstanceOf[js.Any])
-    if (i != null) __obj.updateDynamic("i")(i.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    if (ins != null) __obj.updateDynamic("ins")(ins.asInstanceOf[js.Any])
-    if (li != null) __obj.updateDynamic("li")(li.asInstanceOf[js.Any])
-    if (mark != null) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
-    if (nav != null) __obj.updateDynamic("nav")(nav.asInstanceOf[js.Any])
-    if (ol != null) __obj.updateDynamic("ol")(ol.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
-    if (s != null) __obj.updateDynamic("s")(s.asInstanceOf[js.Any])
-    if (section != null) __obj.updateDynamic("section")(section.asInstanceOf[js.Any])
-    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (strong != null) __obj.updateDynamic("strong")(strong.asInstanceOf[js.Any])
-    if (sub != null) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
-    if (sup != null) __obj.updateDynamic("sup")(sup.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (tbody != null) __obj.updateDynamic("tbody")(tbody.asInstanceOf[js.Any])
-    if (td != null) __obj.updateDynamic("td")(td.asInstanceOf[js.Any])
-    if (tfoot != null) __obj.updateDynamic("tfoot")(tfoot.asInstanceOf[js.Any])
-    if (th != null) __obj.updateDynamic("th")(th.asInstanceOf[js.Any])
-    if (thead != null) __obj.updateDynamic("thead")(thead.asInstanceOf[js.Any])
-    if (tr != null) __obj.updateDynamic("tr")(tr.asInstanceOf[js.Any])
-    if (tt != null) __obj.updateDynamic("tt")(tt.asInstanceOf[js.Any])
-    if (u != null) __obj.updateDynamic("u")(u.asInstanceOf[js.Any])
-    if (ul != null) __obj.updateDynamic("ul")(ul.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWhiteList]
   }
+  @scala.inline
+  implicit class IWhiteListOps[Self <: IWhiteList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAVarargs(value: String*): Self = this.set("a", js.Array(value :_*))
+    @scala.inline
+    def setA(value: js.Array[String]): Self = this.set("a", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteA: Self = this.set("a", js.undefined)
+    @scala.inline
+    def setAbbrVarargs(value: String*): Self = this.set("abbr", js.Array(value :_*))
+    @scala.inline
+    def setAbbr(value: js.Array[String]): Self = this.set("abbr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAbbr: Self = this.set("abbr", js.undefined)
+    @scala.inline
+    def setAddressVarargs(value: String*): Self = this.set("address", js.Array(value :_*))
+    @scala.inline
+    def setAddress(value: js.Array[String]): Self = this.set("address", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddress: Self = this.set("address", js.undefined)
+    @scala.inline
+    def setAreaVarargs(value: String*): Self = this.set("area", js.Array(value :_*))
+    @scala.inline
+    def setArea(value: js.Array[String]): Self = this.set("area", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArea: Self = this.set("area", js.undefined)
+    @scala.inline
+    def setArticleVarargs(value: String*): Self = this.set("article", js.Array(value :_*))
+    @scala.inline
+    def setArticle(value: js.Array[String]): Self = this.set("article", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteArticle: Self = this.set("article", js.undefined)
+    @scala.inline
+    def setAsideVarargs(value: String*): Self = this.set("aside", js.Array(value :_*))
+    @scala.inline
+    def setAside(value: js.Array[String]): Self = this.set("aside", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAside: Self = this.set("aside", js.undefined)
+    @scala.inline
+    def setAudioVarargs(value: String*): Self = this.set("audio", js.Array(value :_*))
+    @scala.inline
+    def setAudio(value: js.Array[String]): Self = this.set("audio", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAudio: Self = this.set("audio", js.undefined)
+    @scala.inline
+    def setBVarargs(value: String*): Self = this.set("b", js.Array(value :_*))
+    @scala.inline
+    def setB(value: js.Array[String]): Self = this.set("b", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteB: Self = this.set("b", js.undefined)
+    @scala.inline
+    def setBdiVarargs(value: String*): Self = this.set("bdi", js.Array(value :_*))
+    @scala.inline
+    def setBdi(value: js.Array[String]): Self = this.set("bdi", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBdi: Self = this.set("bdi", js.undefined)
+    @scala.inline
+    def setBdoVarargs(value: String*): Self = this.set("bdo", js.Array(value :_*))
+    @scala.inline
+    def setBdo(value: js.Array[String]): Self = this.set("bdo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBdo: Self = this.set("bdo", js.undefined)
+    @scala.inline
+    def setBigVarargs(value: String*): Self = this.set("big", js.Array(value :_*))
+    @scala.inline
+    def setBig(value: js.Array[String]): Self = this.set("big", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBig: Self = this.set("big", js.undefined)
+    @scala.inline
+    def setBlockquoteVarargs(value: String*): Self = this.set("blockquote", js.Array(value :_*))
+    @scala.inline
+    def setBlockquote(value: js.Array[String]): Self = this.set("blockquote", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockquote: Self = this.set("blockquote", js.undefined)
+    @scala.inline
+    def setBrVarargs(value: String*): Self = this.set("br", js.Array(value :_*))
+    @scala.inline
+    def setBr(value: js.Array[String]): Self = this.set("br", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBr: Self = this.set("br", js.undefined)
+    @scala.inline
+    def setCaptionVarargs(value: String*): Self = this.set("caption", js.Array(value :_*))
+    @scala.inline
+    def setCaption(value: js.Array[String]): Self = this.set("caption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaption: Self = this.set("caption", js.undefined)
+    @scala.inline
+    def setCenterVarargs(value: String*): Self = this.set("center", js.Array(value :_*))
+    @scala.inline
+    def setCenter(value: js.Array[String]): Self = this.set("center", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCenter: Self = this.set("center", js.undefined)
+    @scala.inline
+    def setCiteVarargs(value: String*): Self = this.set("cite", js.Array(value :_*))
+    @scala.inline
+    def setCite(value: js.Array[String]): Self = this.set("cite", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCite: Self = this.set("cite", js.undefined)
+    @scala.inline
+    def setCodeVarargs(value: String*): Self = this.set("code", js.Array(value :_*))
+    @scala.inline
+    def setCode(value: js.Array[String]): Self = this.set("code", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCode: Self = this.set("code", js.undefined)
+    @scala.inline
+    def setColVarargs(value: String*): Self = this.set("col", js.Array(value :_*))
+    @scala.inline
+    def setCol(value: js.Array[String]): Self = this.set("col", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCol: Self = this.set("col", js.undefined)
+    @scala.inline
+    def setColgroupVarargs(value: String*): Self = this.set("colgroup", js.Array(value :_*))
+    @scala.inline
+    def setColgroup(value: js.Array[String]): Self = this.set("colgroup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColgroup: Self = this.set("colgroup", js.undefined)
+    @scala.inline
+    def setDdVarargs(value: String*): Self = this.set("dd", js.Array(value :_*))
+    @scala.inline
+    def setDd(value: js.Array[String]): Self = this.set("dd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDd: Self = this.set("dd", js.undefined)
+    @scala.inline
+    def setDelVarargs(value: String*): Self = this.set("del", js.Array(value :_*))
+    @scala.inline
+    def setDel(value: js.Array[String]): Self = this.set("del", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDel: Self = this.set("del", js.undefined)
+    @scala.inline
+    def setDetailsVarargs(value: String*): Self = this.set("details", js.Array(value :_*))
+    @scala.inline
+    def setDetails(value: js.Array[String]): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+    @scala.inline
+    def setDivVarargs(value: String*): Self = this.set("div", js.Array(value :_*))
+    @scala.inline
+    def setDiv(value: js.Array[String]): Self = this.set("div", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiv: Self = this.set("div", js.undefined)
+    @scala.inline
+    def setDlVarargs(value: String*): Self = this.set("dl", js.Array(value :_*))
+    @scala.inline
+    def setDl(value: js.Array[String]): Self = this.set("dl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDl: Self = this.set("dl", js.undefined)
+    @scala.inline
+    def setDtVarargs(value: String*): Self = this.set("dt", js.Array(value :_*))
+    @scala.inline
+    def setDt(value: js.Array[String]): Self = this.set("dt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDt: Self = this.set("dt", js.undefined)
+    @scala.inline
+    def setEmVarargs(value: String*): Self = this.set("em", js.Array(value :_*))
+    @scala.inline
+    def setEm(value: js.Array[String]): Self = this.set("em", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEm: Self = this.set("em", js.undefined)
+    @scala.inline
+    def setFontVarargs(value: String*): Self = this.set("font", js.Array(value :_*))
+    @scala.inline
+    def setFont(value: js.Array[String]): Self = this.set("font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFont: Self = this.set("font", js.undefined)
+    @scala.inline
+    def setFooterVarargs(value: String*): Self = this.set("footer", js.Array(value :_*))
+    @scala.inline
+    def setFooter(value: js.Array[String]): Self = this.set("footer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFooter: Self = this.set("footer", js.undefined)
+    @scala.inline
+    def setH1Varargs(value: String*): Self = this.set("h1", js.Array(value :_*))
+    @scala.inline
+    def setH1(value: js.Array[String]): Self = this.set("h1", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH1: Self = this.set("h1", js.undefined)
+    @scala.inline
+    def setH2Varargs(value: String*): Self = this.set("h2", js.Array(value :_*))
+    @scala.inline
+    def setH2(value: js.Array[String]): Self = this.set("h2", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH2: Self = this.set("h2", js.undefined)
+    @scala.inline
+    def setH3Varargs(value: String*): Self = this.set("h3", js.Array(value :_*))
+    @scala.inline
+    def setH3(value: js.Array[String]): Self = this.set("h3", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH3: Self = this.set("h3", js.undefined)
+    @scala.inline
+    def setH4Varargs(value: String*): Self = this.set("h4", js.Array(value :_*))
+    @scala.inline
+    def setH4(value: js.Array[String]): Self = this.set("h4", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH4: Self = this.set("h4", js.undefined)
+    @scala.inline
+    def setH5Varargs(value: String*): Self = this.set("h5", js.Array(value :_*))
+    @scala.inline
+    def setH5(value: js.Array[String]): Self = this.set("h5", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH5: Self = this.set("h5", js.undefined)
+    @scala.inline
+    def setH6Varargs(value: String*): Self = this.set("h6", js.Array(value :_*))
+    @scala.inline
+    def setH6(value: js.Array[String]): Self = this.set("h6", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteH6: Self = this.set("h6", js.undefined)
+    @scala.inline
+    def setHeaderVarargs(value: String*): Self = this.set("header", js.Array(value :_*))
+    @scala.inline
+    def setHeader(value: js.Array[String]): Self = this.set("header", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeader: Self = this.set("header", js.undefined)
+    @scala.inline
+    def setHrVarargs(value: String*): Self = this.set("hr", js.Array(value :_*))
+    @scala.inline
+    def setHr(value: js.Array[String]): Self = this.set("hr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHr: Self = this.set("hr", js.undefined)
+    @scala.inline
+    def setIVarargs(value: String*): Self = this.set("i", js.Array(value :_*))
+    @scala.inline
+    def setI(value: js.Array[String]): Self = this.set("i", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteI: Self = this.set("i", js.undefined)
+    @scala.inline
+    def setImgVarargs(value: String*): Self = this.set("img", js.Array(value :_*))
+    @scala.inline
+    def setImg(value: js.Array[String]): Self = this.set("img", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteImg: Self = this.set("img", js.undefined)
+    @scala.inline
+    def setInsVarargs(value: String*): Self = this.set("ins", js.Array(value :_*))
+    @scala.inline
+    def setIns(value: js.Array[String]): Self = this.set("ins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIns: Self = this.set("ins", js.undefined)
+    @scala.inline
+    def setLiVarargs(value: String*): Self = this.set("li", js.Array(value :_*))
+    @scala.inline
+    def setLi(value: js.Array[String]): Self = this.set("li", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLi: Self = this.set("li", js.undefined)
+    @scala.inline
+    def setMarkVarargs(value: String*): Self = this.set("mark", js.Array(value :_*))
+    @scala.inline
+    def setMark(value: js.Array[String]): Self = this.set("mark", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMark: Self = this.set("mark", js.undefined)
+    @scala.inline
+    def setNavVarargs(value: String*): Self = this.set("nav", js.Array(value :_*))
+    @scala.inline
+    def setNav(value: js.Array[String]): Self = this.set("nav", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNav: Self = this.set("nav", js.undefined)
+    @scala.inline
+    def setOlVarargs(value: String*): Self = this.set("ol", js.Array(value :_*))
+    @scala.inline
+    def setOl(value: js.Array[String]): Self = this.set("ol", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOl: Self = this.set("ol", js.undefined)
+    @scala.inline
+    def setPVarargs(value: String*): Self = this.set("p", js.Array(value :_*))
+    @scala.inline
+    def setP(value: js.Array[String]): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+    @scala.inline
+    def setPreVarargs(value: String*): Self = this.set("pre", js.Array(value :_*))
+    @scala.inline
+    def setPre(value: js.Array[String]): Self = this.set("pre", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePre: Self = this.set("pre", js.undefined)
+    @scala.inline
+    def setSVarargs(value: String*): Self = this.set("s", js.Array(value :_*))
+    @scala.inline
+    def setS(value: js.Array[String]): Self = this.set("s", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteS: Self = this.set("s", js.undefined)
+    @scala.inline
+    def setSectionVarargs(value: String*): Self = this.set("section", js.Array(value :_*))
+    @scala.inline
+    def setSection(value: js.Array[String]): Self = this.set("section", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSection: Self = this.set("section", js.undefined)
+    @scala.inline
+    def setSmallVarargs(value: String*): Self = this.set("small", js.Array(value :_*))
+    @scala.inline
+    def setSmall(value: js.Array[String]): Self = this.set("small", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmall: Self = this.set("small", js.undefined)
+    @scala.inline
+    def setSpanVarargs(value: String*): Self = this.set("span", js.Array(value :_*))
+    @scala.inline
+    def setSpan(value: js.Array[String]): Self = this.set("span", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSpan: Self = this.set("span", js.undefined)
+    @scala.inline
+    def setStrongVarargs(value: String*): Self = this.set("strong", js.Array(value :_*))
+    @scala.inline
+    def setStrong(value: js.Array[String]): Self = this.set("strong", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStrong: Self = this.set("strong", js.undefined)
+    @scala.inline
+    def setSubVarargs(value: String*): Self = this.set("sub", js.Array(value :_*))
+    @scala.inline
+    def setSub(value: js.Array[String]): Self = this.set("sub", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSub: Self = this.set("sub", js.undefined)
+    @scala.inline
+    def setSupVarargs(value: String*): Self = this.set("sup", js.Array(value :_*))
+    @scala.inline
+    def setSup(value: js.Array[String]): Self = this.set("sup", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSup: Self = this.set("sup", js.undefined)
+    @scala.inline
+    def setTableVarargs(value: String*): Self = this.set("table", js.Array(value :_*))
+    @scala.inline
+    def setTable(value: js.Array[String]): Self = this.set("table", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTable: Self = this.set("table", js.undefined)
+    @scala.inline
+    def setTbodyVarargs(value: String*): Self = this.set("tbody", js.Array(value :_*))
+    @scala.inline
+    def setTbody(value: js.Array[String]): Self = this.set("tbody", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTbody: Self = this.set("tbody", js.undefined)
+    @scala.inline
+    def setTdVarargs(value: String*): Self = this.set("td", js.Array(value :_*))
+    @scala.inline
+    def setTd(value: js.Array[String]): Self = this.set("td", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTd: Self = this.set("td", js.undefined)
+    @scala.inline
+    def setTfootVarargs(value: String*): Self = this.set("tfoot", js.Array(value :_*))
+    @scala.inline
+    def setTfoot(value: js.Array[String]): Self = this.set("tfoot", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTfoot: Self = this.set("tfoot", js.undefined)
+    @scala.inline
+    def setThVarargs(value: String*): Self = this.set("th", js.Array(value :_*))
+    @scala.inline
+    def setTh(value: js.Array[String]): Self = this.set("th", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTh: Self = this.set("th", js.undefined)
+    @scala.inline
+    def setTheadVarargs(value: String*): Self = this.set("thead", js.Array(value :_*))
+    @scala.inline
+    def setThead(value: js.Array[String]): Self = this.set("thead", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThead: Self = this.set("thead", js.undefined)
+    @scala.inline
+    def setTrVarargs(value: String*): Self = this.set("tr", js.Array(value :_*))
+    @scala.inline
+    def setTr(value: js.Array[String]): Self = this.set("tr", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTr: Self = this.set("tr", js.undefined)
+    @scala.inline
+    def setTtVarargs(value: String*): Self = this.set("tt", js.Array(value :_*))
+    @scala.inline
+    def setTt(value: js.Array[String]): Self = this.set("tt", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTt: Self = this.set("tt", js.undefined)
+    @scala.inline
+    def setUVarargs(value: String*): Self = this.set("u", js.Array(value :_*))
+    @scala.inline
+    def setU(value: js.Array[String]): Self = this.set("u", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteU: Self = this.set("u", js.undefined)
+    @scala.inline
+    def setUlVarargs(value: String*): Self = this.set("ul", js.Array(value :_*))
+    @scala.inline
+    def setUl(value: js.Array[String]): Self = this.set("ul", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUl: Self = this.set("ul", js.undefined)
+    @scala.inline
+    def setVideoVarargs(value: String*): Self = this.set("video", js.Array(value :_*))
+    @scala.inline
+    def setVideo(value: js.Array[String]): Self = this.set("video", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVideo: Self = this.set("video", js.undefined)
+  }
+  
 }
 

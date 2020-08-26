@@ -13,7 +13,9 @@ class ^ protected () extends HttpError {
   def this(code: String, props: js.Object) = this()
   def this(code: Double, message: String) = this()
   def this(code: Double, props: js.Object) = this()
+  def this(code: String, message: js.UndefOr[scala.Nothing], props: js.Object) = this()
   def this(code: String, message: String, props: js.Object) = this()
+  def this(code: Double, message: js.UndefOr[scala.Nothing], props: js.Object) = this()
   def this(code: Double, message: String, props: js.Object) = this()
 }
 

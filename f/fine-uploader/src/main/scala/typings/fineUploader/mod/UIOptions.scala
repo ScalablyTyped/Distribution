@@ -1,73 +1,62 @@
 package typings.fineUploader.mod
 
-import typings.fineUploader.coreMod.BlobsOptions
-import typings.fineUploader.coreMod.CameraOptions
-import typings.fineUploader.coreMod.ChunkingOptions
-import typings.fineUploader.coreMod.CoreEvents
 import typings.fineUploader.coreMod.CoreOptions
-import typings.fineUploader.coreMod.CorsOptions
-import typings.fineUploader.coreMod.ExtraButtonsOptions
-import typings.fineUploader.coreMod.FormOptions
 import typings.fineUploader.coreMod.PromiseOptions
-import typings.fineUploader.coreMod.RequestOptions
-import typings.fineUploader.coreMod.ResumeOptions
-import typings.fineUploader.coreMod.SessionOptions
-import typings.fineUploader.coreMod.ValidationOptions
-import typings.fineUploader.coreMod.WorkArounds
 import typings.std.HTMLElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UIOptions extends CoreOptions {
   /**
     * UIDeleteFileOptions
     */
   @JSName("deleteFile")
-  var deleteFile_UIOptions: js.UndefOr[UIDeleteFileOptions] = js.undefined
+  var deleteFile_UIOptions: js.UndefOr[UIDeleteFileOptions] = js.native
   /**
     * display options
     */
-  var display: js.UndefOr[UIDisplayOptions] = js.undefined
+  var display: js.UndefOr[UIDisplayOptions] = js.native
   /**
     * dragAndDrop options
     */
-  var dragAndDrop: js.UndefOr[UIDragAndDropOptions] = js.undefined
+  var dragAndDrop: js.UndefOr[UIDragAndDropOptions] = js.native
   /**
     * Container element for the default drop zone
     *
     * @default `null`
     */
-  var element: js.UndefOr[HTMLElement] = js.undefined
+  var element: js.UndefOr[HTMLElement] = js.native
   /**
     * failedUploadTextDisplay options
     */
-  var failedUploadTextDisplay: js.UndefOr[UIFailedUploadTextDisplay] = js.undefined
+  var failedUploadTextDisplay: js.UndefOr[UIFailedUploadTextDisplay] = js.native
   /**
     * Container element for the item list
     *
     * @default `null`
     */
-  var listElement: js.UndefOr[HTMLElement] = js.undefined
+  var listElement: js.UndefOr[HTMLElement] = js.native
   /**
     * messages
     */
   @JSName("messages")
-  var messages_UIOptions: js.UndefOr[UIMessages] = js.undefined
+  var messages_UIOptions: js.UndefOr[UIMessages] = js.native
   /**
     * paste UI options
     */
   @JSName("paste")
-  var paste_UIOptions: js.UndefOr[UIPasteOptions] = js.undefined
+  var paste_UIOptions: js.UndefOr[UIPasteOptions] = js.native
   /**
     * retry options
     */
-  var retry: js.UndefOr[UIRetryOptions] = js.undefined
+  var retry: js.UndefOr[UIRetryOptions] = js.native
   /**
     * UI scaling options
     */
   @JSName("scaling")
-  var scaling_UIOptions: js.UndefOr[UIScalingOptions] = js.undefined
+  var scaling_UIOptions: js.UndefOr[UIScalingOptions] = js.native
   /**
     * Provide a function here to prompt the user to confirm deletion of a file.
     *
@@ -75,7 +64,7 @@ trait UIOptions extends CoreOptions {
     *
     * @default `function(message) { window.confirm(message); }`
     */
-  var showConfirm: js.UndefOr[ShowConfirmFunction] = js.undefined
+  var showConfirm: js.UndefOr[ShowConfirmFunction] = js.native
   /**
     * Provide a function here to display a message to the user when the uploader receives an error or the user attempts to leave the page.
     *
@@ -83,7 +72,7 @@ trait UIOptions extends CoreOptions {
     *
     * @default `function(message) { window.alert(message); }`
     */
-  var showMessage: js.UndefOr[ShowMessageFunction] = js.undefined
+  var showMessage: js.UndefOr[ShowMessageFunction] = js.native
   /**
     * Provide a function here to prompt the user for a filename when pasting file(s).
     *
@@ -91,7 +80,7 @@ trait UIOptions extends CoreOptions {
     *
     * @default `function(message, defaultValue) { window.prompt(message, defaultValue); }`
     */
-  var showPrompt: js.UndefOr[ShowPromptFunction] = js.undefined
+  var showPrompt: js.UndefOr[ShowPromptFunction] = js.native
   /**
     * This points to the container element that contains the template to use for one or more Fine Uploader UI instances.
     *
@@ -99,96 +88,100 @@ trait UIOptions extends CoreOptions {
     *
     * @default `'qq-template'`
     */
-  var template: js.UndefOr[String | HTMLElement] = js.undefined
+  var template: js.UndefOr[String | HTMLElement] = js.native
   /**
     * UI text options
     */
   @JSName("text")
-  var text_UIOptions: js.UndefOr[UITextOptions] = js.undefined
+  var text_UIOptions: js.UndefOr[UITextOptions] = js.native
   /**
     * thumbnail options
     */
-  var thumbnails: js.UndefOr[UIThumbnailsOptions] = js.undefined
+  var thumbnails: js.UndefOr[UIThumbnailsOptions] = js.native
 }
 
 object UIOptions {
   @scala.inline
-  def apply(
-    autoUpload: js.UndefOr[Boolean] = js.undefined,
-    blobs: BlobsOptions = null,
-    button: HTMLElement = null,
-    callbacks: CoreEvents = null,
-    camera: CameraOptions = null,
-    chunking: ChunkingOptions = null,
-    cors: CorsOptions = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    deleteFile: UIDeleteFileOptions = null,
-    disableCancelForFormUploads: js.UndefOr[Boolean] = js.undefined,
-    display: UIDisplayOptions = null,
-    dragAndDrop: UIDragAndDropOptions = null,
-    element: HTMLElement = null,
-    extraButtons: js.Array[ExtraButtonsOptions] = null,
-    failedUploadTextDisplay: UIFailedUploadTextDisplay = null,
-    form: FormOptions = null,
-    formatFileName: /* fileOrBlobName */ String => String = null,
-    listElement: HTMLElement = null,
-    maxConnections: js.UndefOr[Double] = js.undefined,
-    messages: UIMessages = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    paste: UIPasteOptions = null,
-    request: RequestOptions = null,
-    resume: ResumeOptions = null,
-    retry: UIRetryOptions = null,
-    scaling: UIScalingOptions = null,
-    session: SessionOptions = null,
-    showConfirm: /* message */ String => PromiseOptions | Unit = null,
-    showMessage: /* message */ String => PromiseOptions | Unit = null,
-    showPrompt: (/* message */ String, /* defaultValue */ String) => PromiseOptions | Unit = null,
-    template: String | HTMLElement = null,
-    text: UITextOptions = null,
-    thumbnails: UIThumbnailsOptions = null,
-    validation: ValidationOptions = null,
-    warnBeforeUnload: js.UndefOr[Boolean] = js.undefined,
-    workarounds: WorkArounds = null
-  ): UIOptions = {
+  def apply(): UIOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoUpload)) __obj.updateDynamic("autoUpload")(autoUpload.get.asInstanceOf[js.Any])
-    if (blobs != null) __obj.updateDynamic("blobs")(blobs.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (camera != null) __obj.updateDynamic("camera")(camera.asInstanceOf[js.Any])
-    if (chunking != null) __obj.updateDynamic("chunking")(chunking.asInstanceOf[js.Any])
-    if (cors != null) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.get.asInstanceOf[js.Any])
-    if (deleteFile != null) __obj.updateDynamic("deleteFile")(deleteFile.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCancelForFormUploads)) __obj.updateDynamic("disableCancelForFormUploads")(disableCancelForFormUploads.get.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (dragAndDrop != null) __obj.updateDynamic("dragAndDrop")(dragAndDrop.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (extraButtons != null) __obj.updateDynamic("extraButtons")(extraButtons.asInstanceOf[js.Any])
-    if (failedUploadTextDisplay != null) __obj.updateDynamic("failedUploadTextDisplay")(failedUploadTextDisplay.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (formatFileName != null) __obj.updateDynamic("formatFileName")(js.Any.fromFunction1(formatFileName))
-    if (listElement != null) __obj.updateDynamic("listElement")(listElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxConnections)) __obj.updateDynamic("maxConnections")(maxConnections.get.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.get.asInstanceOf[js.Any])
-    if (paste != null) __obj.updateDynamic("paste")(paste.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (resume != null) __obj.updateDynamic("resume")(resume.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (scaling != null) __obj.updateDynamic("scaling")(scaling.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
-    if (showConfirm != null) __obj.updateDynamic("showConfirm")(js.Any.fromFunction1(showConfirm))
-    if (showMessage != null) __obj.updateDynamic("showMessage")(js.Any.fromFunction1(showMessage))
-    if (showPrompt != null) __obj.updateDynamic("showPrompt")(js.Any.fromFunction2(showPrompt))
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
-    if (!js.isUndefined(warnBeforeUnload)) __obj.updateDynamic("warnBeforeUnload")(warnBeforeUnload.get.asInstanceOf[js.Any])
-    if (workarounds != null) __obj.updateDynamic("workarounds")(workarounds.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIOptions]
   }
+  @scala.inline
+  implicit class UIOptionsOps[Self <: UIOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeleteFile(value: UIDeleteFileOptions): Self = this.set("deleteFile", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeleteFile: Self = this.set("deleteFile", js.undefined)
+    @scala.inline
+    def setDisplay(value: UIDisplayOptions): Self = this.set("display", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplay: Self = this.set("display", js.undefined)
+    @scala.inline
+    def setDragAndDrop(value: UIDragAndDropOptions): Self = this.set("dragAndDrop", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDragAndDrop: Self = this.set("dragAndDrop", js.undefined)
+    @scala.inline
+    def setElement(value: HTMLElement): Self = this.set("element", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteElement: Self = this.set("element", js.undefined)
+    @scala.inline
+    def setFailedUploadTextDisplay(value: UIFailedUploadTextDisplay): Self = this.set("failedUploadTextDisplay", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFailedUploadTextDisplay: Self = this.set("failedUploadTextDisplay", js.undefined)
+    @scala.inline
+    def setListElement(value: HTMLElement): Self = this.set("listElement", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteListElement: Self = this.set("listElement", js.undefined)
+    @scala.inline
+    def setMessages(value: UIMessages): Self = this.set("messages", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMessages: Self = this.set("messages", js.undefined)
+    @scala.inline
+    def setPaste(value: UIPasteOptions): Self = this.set("paste", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePaste: Self = this.set("paste", js.undefined)
+    @scala.inline
+    def setRetry(value: UIRetryOptions): Self = this.set("retry", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRetry: Self = this.set("retry", js.undefined)
+    @scala.inline
+    def setScaling(value: UIScalingOptions): Self = this.set("scaling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScaling: Self = this.set("scaling", js.undefined)
+    @scala.inline
+    def setShowConfirm(value: /* message */ String => PromiseOptions | Unit): Self = this.set("showConfirm", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShowConfirm: Self = this.set("showConfirm", js.undefined)
+    @scala.inline
+    def setShowMessage(value: /* message */ String => PromiseOptions | Unit): Self = this.set("showMessage", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteShowMessage: Self = this.set("showMessage", js.undefined)
+    @scala.inline
+    def setShowPrompt(value: (/* message */ String, /* defaultValue */ String) => PromiseOptions | Unit): Self = this.set("showPrompt", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteShowPrompt: Self = this.set("showPrompt", js.undefined)
+    @scala.inline
+    def setTemplate(value: String | HTMLElement): Self = this.set("template", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTemplate: Self = this.set("template", js.undefined)
+    @scala.inline
+    def setText(value: UITextOptions): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setThumbnails(value: UIThumbnailsOptions): Self = this.set("thumbnails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteThumbnails: Self = this.set("thumbnails", js.undefined)
+  }
+  
 }
 

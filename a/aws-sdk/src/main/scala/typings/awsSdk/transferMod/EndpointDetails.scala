@@ -26,18 +26,42 @@ trait EndpointDetails extends js.Object {
 
 object EndpointDetails {
   @scala.inline
-  def apply(
-    AddressAllocationIds: AddressAllocationIds = null,
-    SubnetIds: SubnetIds = null,
-    VpcEndpointId: VpcEndpointId = null,
-    VpcId: VpcId = null
-  ): EndpointDetails = {
+  def apply(): EndpointDetails = {
     val __obj = js.Dynamic.literal()
-    if (AddressAllocationIds != null) __obj.updateDynamic("AddressAllocationIds")(AddressAllocationIds.asInstanceOf[js.Any])
-    if (SubnetIds != null) __obj.updateDynamic("SubnetIds")(SubnetIds.asInstanceOf[js.Any])
-    if (VpcEndpointId != null) __obj.updateDynamic("VpcEndpointId")(VpcEndpointId.asInstanceOf[js.Any])
-    if (VpcId != null) __obj.updateDynamic("VpcId")(VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointDetails]
   }
+  @scala.inline
+  implicit class EndpointDetailsOps[Self <: EndpointDetails] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAddressAllocationIdsVarargs(value: AddressAllocationId*): Self = this.set("AddressAllocationIds", js.Array(value :_*))
+    @scala.inline
+    def setAddressAllocationIds(value: AddressAllocationIds): Self = this.set("AddressAllocationIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddressAllocationIds: Self = this.set("AddressAllocationIds", js.undefined)
+    @scala.inline
+    def setSubnetIdsVarargs(value: SubnetId*): Self = this.set("SubnetIds", js.Array(value :_*))
+    @scala.inline
+    def setSubnetIds(value: SubnetIds): Self = this.set("SubnetIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetIds: Self = this.set("SubnetIds", js.undefined)
+    @scala.inline
+    def setVpcEndpointId(value: VpcEndpointId): Self = this.set("VpcEndpointId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcEndpointId: Self = this.set("VpcEndpointId", js.undefined)
+    @scala.inline
+    def setVpcId(value: VpcId): Self = this.set("VpcId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpcId: Self = this.set("VpcId", js.undefined)
+  }
+  
 }
 

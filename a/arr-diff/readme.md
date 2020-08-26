@@ -12,7 +12,7 @@ Returns an array with only the unique values from the first array, by excluding 
 | Keywords           | arr, array, array differ, array-differ, diff, differ, difference |
 | # releases         | 0 |
 | # dependents       | 90 |
-| # downloads        | 681118933 |
+| # downloads        | 687341095 |
 | # stars            | 3 |
 
 ## Links

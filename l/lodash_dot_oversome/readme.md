@@ -12,13 +12,12 @@ The lodash method `_.overSome` exported as a module.
 | Keywords           | lodash-modularized, oversome |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 12735 |
+| # downloads        | 13397 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
-- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.oversome)
     
 

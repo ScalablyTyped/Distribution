@@ -18,14 +18,30 @@ trait ModelClientConfig extends js.Object {
 
 object ModelClientConfig {
   @scala.inline
-  def apply(
-    InvocationsMaxRetries: js.UndefOr[InvocationsMaxRetries] = js.undefined,
-    InvocationsTimeoutInSeconds: js.UndefOr[InvocationsTimeoutInSeconds] = js.undefined
-  ): ModelClientConfig = {
+  def apply(): ModelClientConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(InvocationsMaxRetries)) __obj.updateDynamic("InvocationsMaxRetries")(InvocationsMaxRetries.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(InvocationsTimeoutInSeconds)) __obj.updateDynamic("InvocationsTimeoutInSeconds")(InvocationsTimeoutInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelClientConfig]
   }
+  @scala.inline
+  implicit class ModelClientConfigOps[Self <: ModelClientConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setInvocationsMaxRetries(value: InvocationsMaxRetries): Self = this.set("InvocationsMaxRetries", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationsMaxRetries: Self = this.set("InvocationsMaxRetries", js.undefined)
+    @scala.inline
+    def setInvocationsTimeoutInSeconds(value: InvocationsTimeoutInSeconds): Self = this.set("InvocationsTimeoutInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationsTimeoutInSeconds: Self = this.set("InvocationsTimeoutInSeconds", js.undefined)
+  }
+  
 }
 

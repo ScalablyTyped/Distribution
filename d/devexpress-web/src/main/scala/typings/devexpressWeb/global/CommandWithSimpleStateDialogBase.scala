@@ -10,11 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CommandWithSimpleStateDialogBase")
 @js.native
 abstract class CommandWithSimpleStateDialogBase ()
-  extends typings.devexpressWeb.CommandWithSimpleStateDialogBase {
-  /**
-    * Gets information about the command's state.
-    */
-  /* CompleteClass */
-  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
-}
+  extends typings.devexpressWeb.CommandWithSimpleStateDialogBase
 

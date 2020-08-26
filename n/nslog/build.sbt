@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "nslog"
-version := "3.0-dt-20200515Z-01f62d"
-scalaVersion := "2.13.2"
+version := "3.0-dt-20200515Z-4319ed"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

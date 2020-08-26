@@ -5,24 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NotebookDescription extends js.Object {
-  var notebookDescription: js.UndefOr[String] = js.undefined
-  var privilege: js.UndefOr[SharedNotebookPrivilegeLevel] = js.undefined
-  var recommended: js.UndefOr[Boolean] = js.undefined
+  var notebookDescription: js.UndefOr[String] = js.native
+  var privilege: js.UndefOr[SharedNotebookPrivilegeLevel] = js.native
+  var recommended: js.UndefOr[Boolean] = js.native
 }
 
 object NotebookDescription {
   @scala.inline
-  def apply(
-    notebookDescription: String = null,
-    privilege: SharedNotebookPrivilegeLevel = null,
-    recommended: js.UndefOr[Boolean] = js.undefined
-  ): NotebookDescription = {
+  def apply(): NotebookDescription = {
     val __obj = js.Dynamic.literal()
-    if (notebookDescription != null) __obj.updateDynamic("notebookDescription")(notebookDescription.asInstanceOf[js.Any])
-    if (privilege != null) __obj.updateDynamic("privilege")(privilege.asInstanceOf[js.Any])
-    if (!js.isUndefined(recommended)) __obj.updateDynamic("recommended")(recommended.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotebookDescription]
   }
+  @scala.inline
+  implicit class NotebookDescriptionOps[Self <: NotebookDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setNotebookDescription(value: String): Self = this.set("notebookDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNotebookDescription: Self = this.set("notebookDescription", js.undefined)
+    @scala.inline
+    def setPrivilege(value: SharedNotebookPrivilegeLevel): Self = this.set("privilege", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivilege: Self = this.set("privilege", js.undefined)
+    @scala.inline
+    def setRecommended(value: Boolean): Self = this.set("recommended", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommended: Self = this.set("recommended", js.undefined)
+  }
+  
 }
 

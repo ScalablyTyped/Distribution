@@ -7,13 +7,14 @@ import scala.scalajs.js.annotation._
 /**
   * A function that queries for unique values from a field in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html).
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html)
   */
+@js.native
 trait uniqueValues extends js.Object {
   /**
     * Returns an object containing an array of unique values queried from a given field (or values returned from an expression) in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) along with the total count of features that belong to the given category.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-uniqueValues.html#uniqueValues)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-uniqueValues.html#uniqueValues)
     *
     * @param params See the table below for details of each parameter.
     * @param params.layer The layer from which to query for unique values.
@@ -27,7 +28,7 @@ trait uniqueValues extends js.Object {
     * @param params.signal Allows for cancelable requests. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
     *
     */
-  def uniqueValues(params: uniqueValuesUniqueValuesParams): js.Promise[UniqueValuesResult]
+  def uniqueValues(params: uniqueValuesUniqueValuesParams): js.Promise[UniqueValuesResult] = js.native
 }
 
 object uniqueValues {
@@ -36,5 +37,20 @@ object uniqueValues {
     val __obj = js.Dynamic.literal(uniqueValues = js.Any.fromFunction1(uniqueValues))
     __obj.asInstanceOf[uniqueValues]
   }
+  @scala.inline
+  implicit class uniqueValuesOps[Self <: uniqueValues] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setUniqueValues(value: uniqueValuesUniqueValuesParams => js.Promise[UniqueValuesResult]): Self = this.set("uniqueValues", js.Any.fromFunction1(value))
+  }
+  
 }
 

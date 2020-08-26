@@ -17,6 +17,7 @@ class Model ()
   var subModelTypeAttribute: js.Any = js.native
   var subModelTypes: js.Any = js.native
   def fetchRelated(key: String): js.Any = js.native
+  def fetchRelated(key: String, options: js.UndefOr[scala.Nothing], update: Boolean): js.Any = js.native
   def fetchRelated(key: String, options: js.Any): js.Any = js.native
   def fetchRelated(key: String, options: js.Any, update: Boolean): js.Any = js.native
   def getRelation(name: String): Relation = js.native

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * #### Notes
   * https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout#Maximum_delay_value
   */
-@JSImport("@lumino/polling/lib/poll", "Poll.MAX_INTERVAL")
+@JSImport("@lumino/polling/types/poll", "Poll.MAX_INTERVAL")
 @js.native
 object MAX_INTERVAL extends TopLevel[/* 0 */ Double]
 

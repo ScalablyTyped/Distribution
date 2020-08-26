@@ -18,11 +18,34 @@ trait GetMembersResponse extends js.Object {
 
 object GetMembersResponse {
   @scala.inline
-  def apply(Members: MemberList = null, UnprocessedAccounts: ResultList = null): GetMembersResponse = {
+  def apply(): GetMembersResponse = {
     val __obj = js.Dynamic.literal()
-    if (Members != null) __obj.updateDynamic("Members")(Members.asInstanceOf[js.Any])
-    if (UnprocessedAccounts != null) __obj.updateDynamic("UnprocessedAccounts")(UnprocessedAccounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembersResponse]
   }
+  @scala.inline
+  implicit class GetMembersResponseOps[Self <: GetMembersResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMembersVarargs(value: Member*): Self = this.set("Members", js.Array(value :_*))
+    @scala.inline
+    def setMembers(value: MemberList): Self = this.set("Members", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMembers: Self = this.set("Members", js.undefined)
+    @scala.inline
+    def setUnprocessedAccountsVarargs(value: Result*): Self = this.set("UnprocessedAccounts", js.Array(value :_*))
+    @scala.inline
+    def setUnprocessedAccounts(value: ResultList): Self = this.set("UnprocessedAccounts", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnprocessedAccounts: Self = this.set("UnprocessedAccounts", js.undefined)
+  }
+  
 }
 

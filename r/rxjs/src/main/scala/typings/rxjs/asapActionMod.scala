@@ -19,9 +19,11 @@ object asapActionMod extends js.Object {
     @JSName("scheduler")
     var scheduler_AsapAction: AsapScheduler = js.native
     /* protected */ def recycleAsyncId(scheduler: AsapScheduler): js.Any = js.native
+    /* protected */ def recycleAsyncId(scheduler: AsapScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: AsapScheduler, id: js.Any): js.Any = js.native
     /* protected */ def recycleAsyncId(scheduler: AsapScheduler, id: js.Any, delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsapScheduler): js.Any = js.native
+    /* protected */ def requestAsyncId(scheduler: AsapScheduler, id: js.UndefOr[scala.Nothing], delay: Double): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsapScheduler, id: js.Any): js.Any = js.native
     /* protected */ def requestAsyncId(scheduler: AsapScheduler, id: js.Any, delay: Double): js.Any = js.native
   }

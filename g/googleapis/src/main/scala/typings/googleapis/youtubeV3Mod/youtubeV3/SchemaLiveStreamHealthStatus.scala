@@ -22,16 +22,36 @@ trait SchemaLiveStreamHealthStatus extends js.Object {
 
 object SchemaLiveStreamHealthStatus {
   @scala.inline
-  def apply(
-    configurationIssues: js.Array[SchemaLiveStreamConfigurationIssue] = null,
-    lastUpdateTimeSeconds: String = null,
-    status: String = null
-  ): SchemaLiveStreamHealthStatus = {
+  def apply(): SchemaLiveStreamHealthStatus = {
     val __obj = js.Dynamic.literal()
-    if (configurationIssues != null) __obj.updateDynamic("configurationIssues")(configurationIssues.asInstanceOf[js.Any])
-    if (lastUpdateTimeSeconds != null) __obj.updateDynamic("lastUpdateTimeSeconds")(lastUpdateTimeSeconds.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaLiveStreamHealthStatus]
   }
+  @scala.inline
+  implicit class SchemaLiveStreamHealthStatusOps[Self <: SchemaLiveStreamHealthStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationIssuesVarargs(value: SchemaLiveStreamConfigurationIssue*): Self = this.set("configurationIssues", js.Array(value :_*))
+    @scala.inline
+    def setConfigurationIssues(value: js.Array[SchemaLiveStreamConfigurationIssue]): Self = this.set("configurationIssues", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationIssues: Self = this.set("configurationIssues", js.undefined)
+    @scala.inline
+    def setLastUpdateTimeSeconds(value: String): Self = this.set("lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastUpdateTimeSeconds: Self = this.set("lastUpdateTimeSeconds", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+  }
+  
 }
 

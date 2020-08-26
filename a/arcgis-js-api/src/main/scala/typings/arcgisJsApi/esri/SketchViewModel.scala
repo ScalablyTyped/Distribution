@@ -128,6 +128,16 @@ trait SketchViewModel
     */
   var view: MapView | SceneView = js.native
   /**
+    * Draws rectangle/circle graphc from given segment vertices.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#_drawSegmentGraphic)
+    *
+    * @param vertices list of vertices containing either one vertex (graphic center) or two vertices (the segment spanning the circle or rectangle)
+    * @param modifiers centered: controls wether the first of the two segment vertices starts at the center of the graphic. constrained: controls wether the aspect ratio is fixed to be 1. VERY IMPORTANT: if the tool is "rectangle", then constrained=true means that aspect ratio has to be 1 if the tool is "circle", then constrained=false means that aspect ratio has to be 1
+    *
+    */
+  def _drawSegmentGraphic(vertices: Unit, modifiers: Unit): Unit = js.native
+  /**
     * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-update) event If called in the middle of a create operation, `cancel()` discards the partially created graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#cancel)
@@ -143,15 +153,23 @@ trait SketchViewModel
     *
     */
   def complete(): Unit = js.native
+  @JSName("create")
+  def create_circle(tool: circle): Unit = js.native
+  @JSName("create")
+  def create_circle(tool: circle, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_multipoint(tool: multipoint): Unit = js.native
+  @JSName("create")
+  def create_multipoint(tool: multipoint, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
   /**
     * Create a graphic with the geometry specified in the `tool` parameter. When the first vertex of the graphic is added, the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-create) event will start firing. The provided `tool` will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create)
     *
-    * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.  **Possible Values:** point | multipoint | polyline | polygon | rectangle | circle
+    * @param tool Name of the create tool. Specifies the geometry for the graphic to be created.
     * @param createOptions Options for the graphic to be created.
     * @param createOptions.mode
-    * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.  **Possible Values:**
+    * Specifies how the graphic can be created. The create mode applies only when creating `polygon`, `polyline`, `rectangle` and `circle` geometries.
     *
     * Value | Description |
     * ----- | ----------- |
@@ -162,8 +180,22 @@ trait SketchViewModel
     * @param createOptions.defaultZ The default z-value of the newly created geometry. Ignored when `hasZ` is `false` or the layer's elevation mode is set to `absolute-height`.
     *
     */
-  def create(tool: String): Unit = js.native
-  def create(tool: String, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_point(tool: point): Unit = js.native
+  @JSName("create")
+  def create_point(tool: point, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_polygon(tool: polygon): Unit = js.native
+  @JSName("create")
+  def create_polygon(tool: polygon, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_polyline(tool: polyline): Unit = js.native
+  @JSName("create")
+  def create_polyline(tool: polyline, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
+  @JSName("create")
+  def create_rectangle(tool: rectangle): Unit = js.native
+  @JSName("create")
+  def create_rectangle(tool: rectangle, createOptions: SketchViewModelCreateCreateOptions): Unit = js.native
   /**
     * Deletes the selected graphics used in the update workflow. Calling this method will fire the [delete](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event-delete) event.
     *
@@ -208,7 +240,7 @@ trait SketchViewModel
     * @param graphics A graphic or an array of graphics to be updated. Only graphics added to SketchViewModel's [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#layer) property can be updated.
     * @param updateOptions Update options for the graphics to be updated.
     * @param updateOptions.tool
-    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).  **Possible Values:**
+    * Name of the update tool. Specifies the update operation for the selected graphics. The provided tool will become the [activeTool](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#activeTool).  **Possible Values**
     *
     * Value | Description |
     * ----- | ----------- |

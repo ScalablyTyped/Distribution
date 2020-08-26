@@ -14,10 +14,28 @@ trait DescribeAppsResult extends js.Object {
 
 object DescribeAppsResult {
   @scala.inline
-  def apply(Apps: Apps = null): DescribeAppsResult = {
+  def apply(): DescribeAppsResult = {
     val __obj = js.Dynamic.literal()
-    if (Apps != null) __obj.updateDynamic("Apps")(Apps.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAppsResult]
   }
+  @scala.inline
+  implicit class DescribeAppsResultOps[Self <: DescribeAppsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppsVarargs(value: App*): Self = this.set("Apps", js.Array(value :_*))
+    @scala.inline
+    def setApps(value: Apps): Self = this.set("Apps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApps: Self = this.set("Apps", js.undefined)
+  }
+  
 }
 

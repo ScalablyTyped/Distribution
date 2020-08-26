@@ -34,6 +34,7 @@ trait FileSystemObject extends js.Object {
     * @param boolean [Unicode=false]
     */
   def CreateTextFile(FileName: String): TextStream = js.native
+  def CreateTextFile(FileName: String, Overwrite: js.UndefOr[scala.Nothing], Unicode: Boolean): TextStream = js.native
   def CreateTextFile(FileName: String, Overwrite: Boolean): TextStream = js.native
   def CreateTextFile(FileName: String, Overwrite: Boolean, Unicode: Boolean): TextStream = js.native
   /**
@@ -98,7 +99,16 @@ trait FileSystemObject extends js.Object {
     * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
     */
   def OpenTextFile(FileName: String): TextStream = js.native
+  def OpenTextFile(
+    FileName: String,
+    IOMode: js.UndefOr[scala.Nothing],
+    Create: js.UndefOr[scala.Nothing],
+    Format: Tristate
+  ): TextStream = js.native
+  def OpenTextFile(FileName: String, IOMode: js.UndefOr[scala.Nothing], Create: Boolean): TextStream = js.native
+  def OpenTextFile(FileName: String, IOMode: js.UndefOr[scala.Nothing], Create: Boolean, Format: Tristate): TextStream = js.native
   def OpenTextFile(FileName: String, IOMode: IOMode): TextStream = js.native
+  def OpenTextFile(FileName: String, IOMode: IOMode, Create: js.UndefOr[scala.Nothing], Format: Tristate): TextStream = js.native
   def OpenTextFile(FileName: String, IOMode: IOMode, Create: Boolean): TextStream = js.native
   def OpenTextFile(FileName: String, IOMode: IOMode, Create: Boolean, Format: Tristate): TextStream = js.native
 }

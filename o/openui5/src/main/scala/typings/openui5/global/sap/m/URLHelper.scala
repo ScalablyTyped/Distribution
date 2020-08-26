@@ -33,8 +33,43 @@ object URLHelper extends js.Object {
     * @returns Email URI scheme
     */
   def normalizeEmail(sEmail: String): String = js.native
+  def normalizeEmail(
+    sEmail: String,
+    sSubject: js.UndefOr[scala.Nothing],
+    sBody: js.UndefOr[scala.Nothing],
+    sCC: js.UndefOr[scala.Nothing],
+    sBCC: String
+  ): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: js.UndefOr[scala.Nothing], sCC: String): String = js.native
+  def normalizeEmail(
+    sEmail: String,
+    sSubject: js.UndefOr[scala.Nothing],
+    sBody: js.UndefOr[scala.Nothing],
+    sCC: String,
+    sBCC: String
+  ): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String): String = js.native
+  def normalizeEmail(
+    sEmail: String,
+    sSubject: js.UndefOr[scala.Nothing],
+    sBody: String,
+    sCC: js.UndefOr[scala.Nothing],
+    sBCC: String
+  ): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String, sBCC: String): String = js.native
   def normalizeEmail(sEmail: String, sSubject: String): String = js.native
+  def normalizeEmail(
+    sEmail: String,
+    sSubject: String,
+    sBody: js.UndefOr[scala.Nothing],
+    sCC: js.UndefOr[scala.Nothing],
+    sBCC: String
+  ): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String, sBCC: String): String = js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String): String = js.native
+  def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: js.UndefOr[scala.Nothing], sBCC: String): String = js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: String): String = js.native
   def normalizeEmail(sEmail: String, sSubject: String, sBody: String, sCC: String, sBCC: String): String = js.native
   /**
@@ -69,8 +104,43 @@ object URLHelper extends js.Object {
     * @param sBCC Blind carbon copy email address
     */
   def triggerEmail(sEmail: String): Unit = js.native
+  def triggerEmail(
+    sEmail: String,
+    sSubject: js.UndefOr[scala.Nothing],
+    sBody: js.UndefOr[scala.Nothing],
+    sCC: js.UndefOr[scala.Nothing],
+    sBCC: String
+  ): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: js.UndefOr[scala.Nothing], sCC: String): Unit = js.native
+  def triggerEmail(
+    sEmail: String,
+    sSubject: js.UndefOr[scala.Nothing],
+    sBody: js.UndefOr[scala.Nothing],
+    sCC: String,
+    sBCC: String
+  ): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String): Unit = js.native
+  def triggerEmail(
+    sEmail: String,
+    sSubject: js.UndefOr[scala.Nothing],
+    sBody: String,
+    sCC: js.UndefOr[scala.Nothing],
+    sBCC: String
+  ): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: js.UndefOr[scala.Nothing], sBody: String, sCC: String, sBCC: String): Unit = js.native
   def triggerEmail(sEmail: String, sSubject: String): Unit = js.native
+  def triggerEmail(
+    sEmail: String,
+    sSubject: String,
+    sBody: js.UndefOr[scala.Nothing],
+    sCC: js.UndefOr[scala.Nothing],
+    sBCC: String
+  ): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: String, sBody: js.UndefOr[scala.Nothing], sCC: String, sBCC: String): Unit = js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String): Unit = js.native
+  def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: js.UndefOr[scala.Nothing], sBCC: String): Unit = js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: String): Unit = js.native
   def triggerEmail(sEmail: String, sSubject: String, sBody: String, sCC: String, sBCC: String): Unit = js.native
   /**

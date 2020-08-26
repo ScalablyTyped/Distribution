@@ -1,5 +1,6 @@
 package typings.reactNativeNavigation.layoutTreeCrawlerMod
 
+import typings.reactNativeNavigation.commandNameMod.CommandName
 import typings.reactNativeNavigation.optionsProcessorMod.OptionsProcessor
 import typings.reactNativeNavigation.storeMod.Store
 import scala.scalajs.js
@@ -18,6 +19,6 @@ class LayoutTreeCrawler protected () extends js.Object {
   var savePropsToStore: js.Any = js.native
   var staticOptionsIfPossible: js.Any = js.native
   val store: Store = js.native
-  def crawl(node: LayoutNode): Unit = js.native
+  def crawl(node: LayoutNode, commandName: CommandName): Unit = js.native
 }
 

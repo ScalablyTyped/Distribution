@@ -1,6 +1,5 @@
 package typings.relayCompiler.iRMod
 
-import typings.relayCompiler.schemaMod.TypeID
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -18,11 +17,9 @@ object ArgumentValue {
   def ListValue(
     items: js.Array[ArgumentValue],
     kind: typings.relayCompiler.relayCompilerStrings.ListValue,
-    loc: Location,
-    metadata: Metadata = null
+    loc: Location
   ): ArgumentValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgumentValue]
   }
   @scala.inline
@@ -40,14 +37,8 @@ object ArgumentValue {
     __obj.asInstanceOf[ArgumentValue]
   }
   @scala.inline
-  def Variable(
-    kind: typings.relayCompiler.relayCompilerStrings.Variable,
-    loc: Location,
-    variableName: String,
-    `type`: TypeID = null
-  ): ArgumentValue = {
+  def Variable(kind: typings.relayCompiler.relayCompilerStrings.Variable, loc: Location, variableName: String): ArgumentValue = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], variableName = variableName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArgumentValue]
   }
 }

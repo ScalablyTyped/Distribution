@@ -33,12 +33,33 @@ object LogMetricFilterArgs {
   def apply(
     logGroupName: Input[String],
     metricTransformation: Input[LogMetricFilterMetricTransformation],
-    pattern: Input[String],
-    name: Input[String] = null
+    pattern: Input[String]
   ): LogMetricFilterArgs = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], metricTransformation = metricTransformation.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogMetricFilterArgs]
   }
+  @scala.inline
+  implicit class LogMetricFilterArgsOps[Self <: LogMetricFilterArgs] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogGroupName(value: Input[String]): Self = this.set("logGroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricTransformation(value: Input[LogMetricFilterMetricTransformation]): Self = this.set("metricTransformation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPattern(value: Input[String]): Self = this.set("pattern", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: Input[String]): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+  }
+  
 }
 

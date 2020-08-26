@@ -74,6 +74,7 @@ class ResourceProjectsCollectdtimeseries protected () extends js.Object {
     */
   def create(): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(callback: BodyResponseCallback[SchemaCreateCollectdTimeSeriesResponse]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(params: ParamsResourceProjectsCollectdtimeseriesCreate): GaxiosPromise[SchemaCreateCollectdTimeSeriesResponse] = js.native
   def create(
     params: ParamsResourceProjectsCollectdtimeseriesCreate,

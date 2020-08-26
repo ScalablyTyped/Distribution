@@ -11,6 +11,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A generic clipboard service is a simple container for transferable objects. */
+@js.native
 trait GenericClipboard
   extends XClipboardEx
      with XClipboardNotifier

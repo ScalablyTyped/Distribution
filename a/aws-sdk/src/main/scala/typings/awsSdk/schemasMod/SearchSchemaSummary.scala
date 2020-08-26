@@ -26,18 +26,40 @@ trait SearchSchemaSummary extends js.Object {
 
 object SearchSchemaSummary {
   @scala.inline
-  def apply(
-    RegistryName: string = null,
-    SchemaArn: string = null,
-    SchemaName: string = null,
-    SchemaVersions: listOfSearchSchemaVersionSummary = null
-  ): SearchSchemaSummary = {
+  def apply(): SearchSchemaSummary = {
     val __obj = js.Dynamic.literal()
-    if (RegistryName != null) __obj.updateDynamic("RegistryName")(RegistryName.asInstanceOf[js.Any])
-    if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn.asInstanceOf[js.Any])
-    if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])
-    if (SchemaVersions != null) __obj.updateDynamic("SchemaVersions")(SchemaVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchSchemaSummary]
   }
+  @scala.inline
+  implicit class SearchSchemaSummaryOps[Self <: SearchSchemaSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRegistryName(value: string): Self = this.set("RegistryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryName: Self = this.set("RegistryName", js.undefined)
+    @scala.inline
+    def setSchemaArn(value: string): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+    @scala.inline
+    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
+    @scala.inline
+    def setSchemaVersionsVarargs(value: SearchSchemaVersionSummary*): Self = this.set("SchemaVersions", js.Array(value :_*))
+    @scala.inline
+    def setSchemaVersions(value: listOfSearchSchemaVersionSummary): Self = this.set("SchemaVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersions: Self = this.set("SchemaVersions", js.undefined)
+  }
+  
 }
 

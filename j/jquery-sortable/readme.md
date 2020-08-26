@@ -12,7 +12,7 @@ jquery plugin for sortable, nestable lists
 | Keywords           | sortable, sort, sorting, drag, dragging |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 258927 |
+| # downloads        | 259965 |
 | # stars            | 0 |
 
 ## Links

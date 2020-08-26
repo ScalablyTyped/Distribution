@@ -42,16 +42,45 @@ object JoinDomainInput {
     DomainName: DomainName,
     GatewayARN: GatewayARN,
     Password: DomainUserPassword,
-    UserName: DomainUserName,
-    DomainControllers: Hosts = null,
-    OrganizationalUnit: OrganizationalUnit = null,
-    TimeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
+    UserName: DomainUserName
   ): JoinDomainInput = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
-    if (DomainControllers != null) __obj.updateDynamic("DomainControllers")(DomainControllers.asInstanceOf[js.Any])
-    if (OrganizationalUnit != null) __obj.updateDynamic("OrganizationalUnit")(OrganizationalUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(TimeoutInSeconds)) __obj.updateDynamic("TimeoutInSeconds")(TimeoutInSeconds.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinDomainInput]
   }
+  @scala.inline
+  implicit class JoinDomainInputOps[Self <: JoinDomainInput] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGatewayARN(value: GatewayARN): Self = this.set("GatewayARN", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPassword(value: DomainUserPassword): Self = this.set("Password", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserName(value: DomainUserName): Self = this.set("UserName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setDomainControllersVarargs(value: Host*): Self = this.set("DomainControllers", js.Array(value :_*))
+    @scala.inline
+    def setDomainControllers(value: Hosts): Self = this.set("DomainControllers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDomainControllers: Self = this.set("DomainControllers", js.undefined)
+    @scala.inline
+    def setOrganizationalUnit(value: OrganizationalUnit): Self = this.set("OrganizationalUnit", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrganizationalUnit: Self = this.set("OrganizationalUnit", js.undefined)
+    @scala.inline
+    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = this.set("TimeoutInSeconds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimeoutInSeconds: Self = this.set("TimeoutInSeconds", js.undefined)
+  }
+  
 }
 

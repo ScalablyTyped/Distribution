@@ -5,22 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait BulletFormat extends js.Object {
-  val Application: typings.activexPowerpoint.PowerPoint.Application
-  var Character: Double
-  val Font: typings.activexPowerpoint.PowerPoint.Font
-  val Number: Double
-  val Parent: js.Any
+  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  var Character: Double = js.native
+  val Font: typings.activexPowerpoint.PowerPoint.Font = js.native
+  val Number: Double = js.native
+  val Parent: js.Any = js.native
   @JSName("PowerPoint.BulletFormat_typekey")
-  var PowerPointDotBulletFormat_typekey: BulletFormat
-  var RelativeSize: Double
-  var StartValue: Double
-  var Style: PpNumberedBulletStyle
-  var Type: PpBulletType
-  var UseTextColor: MsoTriState
-  var UseTextFont: MsoTriState
-  var Visible: MsoTriState
-  def Picture(Picture: String): Unit
+  var PowerPointDotBulletFormat_typekey: BulletFormat = js.native
+  var RelativeSize: Double = js.native
+  var StartValue: Double = js.native
+  var Style: PpNumberedBulletStyle = js.native
+  var Type: PpBulletType = js.native
+  var UseTextColor: MsoTriState = js.native
+  var UseTextFont: MsoTriState = js.native
+  var Visible: MsoTriState = js.native
+  def Picture(Picture: String): Unit = js.native
 }
 
 object BulletFormat {
@@ -45,5 +46,46 @@ object BulletFormat {
     __obj.updateDynamic("PowerPoint.BulletFormat_typekey")(PowerPointDotBulletFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulletFormat]
   }
+  @scala.inline
+  implicit class BulletFormatOps[Self <: BulletFormat] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplication(value: Application): Self = this.set("Application", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCharacter(value: Double): Self = this.set("Character", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFont(value: Font): Self = this.set("Font", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setNumber(value: Double): Self = this.set("Number", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setParent(value: js.Any): Self = this.set("Parent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPicture(value: String => Unit): Self = this.set("Picture", js.Any.fromFunction1(value))
+    @scala.inline
+    def setPowerPointDotBulletFormat_typekey(value: BulletFormat): Self = this.set("PowerPoint.BulletFormat_typekey", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRelativeSize(value: Double): Self = this.set("RelativeSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartValue(value: Double): Self = this.set("StartValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStyle(value: PpNumberedBulletStyle): Self = this.set("Style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: PpBulletType): Self = this.set("Type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseTextColor(value: MsoTriState): Self = this.set("UseTextColor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUseTextFont(value: MsoTriState): Self = this.set("UseTextFont", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVisible(value: MsoTriState): Self = this.set("Visible", value.asInstanceOf[js.Any])
+  }
+  
 }
 

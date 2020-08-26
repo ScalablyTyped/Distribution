@@ -22,14 +22,32 @@ trait GetFindingsStatisticsRequest extends js.Object {
 
 object GetFindingsStatisticsRequest {
   @scala.inline
-  def apply(
-    DetectorId: DetectorId,
-    FindingStatisticTypes: FindingStatisticTypes,
-    FindingCriteria: FindingCriteria = null
-  ): GetFindingsStatisticsRequest = {
+  def apply(DetectorId: DetectorId, FindingStatisticTypes: FindingStatisticTypes): GetFindingsStatisticsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], FindingStatisticTypes = FindingStatisticTypes.asInstanceOf[js.Any])
-    if (FindingCriteria != null) __obj.updateDynamic("FindingCriteria")(FindingCriteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsStatisticsRequest]
   }
+  @scala.inline
+  implicit class GetFindingsStatisticsRequestOps[Self <: GetFindingsStatisticsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetectorId(value: DetectorId): Self = this.set("DetectorId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFindingStatisticTypesVarargs(value: FindingStatisticType*): Self = this.set("FindingStatisticTypes", js.Array(value :_*))
+    @scala.inline
+    def setFindingStatisticTypes(value: FindingStatisticTypes): Self = this.set("FindingStatisticTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setFindingCriteria(value: FindingCriteria): Self = this.set("FindingCriteria", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFindingCriteria: Self = this.set("FindingCriteria", js.undefined)
+  }
+  
 }
 

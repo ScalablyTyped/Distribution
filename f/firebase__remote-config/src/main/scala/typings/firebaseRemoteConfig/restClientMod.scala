@@ -1,8 +1,6 @@
 package typings.firebaseRemoteConfig
 
 import typings.firebaseInstallationsTypes.mod.FirebaseInstallations
-import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.FetchRequest
-import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.FetchResponse
 import typings.firebaseRemoteConfig.remoteConfigFetchClientMod.RemoteConfigFetchClient
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -27,11 +25,6 @@ object restClientMod extends js.Object {
     val namespace: js.Any = js.native
     val projectId: js.Any = js.native
     val sdkVersion: js.Any = js.native
-    /**
-      * @throws if response status is not 200 or 304.
-      */
-    /* CompleteClass */
-    override def fetch(request: FetchRequest): js.Promise[FetchResponse] = js.native
   }
   
 }

@@ -85,6 +85,7 @@ class ResourceZones protected () extends js.Object {
     */
   def get(): GaxiosPromise[SchemaZone] = js.native
   def get(callback: BodyResponseCallback[SchemaZone]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZone] = js.native
   def get(params: ParamsResourceZonesGet): GaxiosPromise[SchemaZone] = js.native
   def get(params: ParamsResourceZonesGet, callback: BodyResponseCallback[SchemaZone]): Unit = js.native
   def get(
@@ -179,6 +180,7 @@ class ResourceZones protected () extends js.Object {
     */
   def list(): GaxiosPromise[SchemaZoneList] = js.native
   def list(callback: BodyResponseCallback[SchemaZoneList]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaZoneList] = js.native
   def list(params: ParamsResourceZonesList): GaxiosPromise[SchemaZoneList] = js.native
   def list(params: ParamsResourceZonesList, callback: BodyResponseCallback[SchemaZoneList]): Unit = js.native
   def list(

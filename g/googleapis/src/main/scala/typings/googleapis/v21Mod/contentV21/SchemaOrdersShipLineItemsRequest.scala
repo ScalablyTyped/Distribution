@@ -28,18 +28,42 @@ trait SchemaOrdersShipLineItemsRequest extends js.Object {
 
 object SchemaOrdersShipLineItemsRequest {
   @scala.inline
-  def apply(
-    lineItems: js.Array[SchemaOrderShipmentLineItemShipment] = null,
-    operationId: String = null,
-    shipmentGroupId: String = null,
-    shipmentInfos: js.Array[SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] = null
-  ): SchemaOrdersShipLineItemsRequest = {
+  def apply(): SchemaOrdersShipLineItemsRequest = {
     val __obj = js.Dynamic.literal()
-    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems.asInstanceOf[js.Any])
-    if (operationId != null) __obj.updateDynamic("operationId")(operationId.asInstanceOf[js.Any])
-    if (shipmentGroupId != null) __obj.updateDynamic("shipmentGroupId")(shipmentGroupId.asInstanceOf[js.Any])
-    if (shipmentInfos != null) __obj.updateDynamic("shipmentInfos")(shipmentInfos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaOrdersShipLineItemsRequest]
   }
+  @scala.inline
+  implicit class SchemaOrdersShipLineItemsRequestOps[Self <: SchemaOrdersShipLineItemsRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLineItemsVarargs(value: SchemaOrderShipmentLineItemShipment*): Self = this.set("lineItems", js.Array(value :_*))
+    @scala.inline
+    def setLineItems(value: js.Array[SchemaOrderShipmentLineItemShipment]): Self = this.set("lineItems", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineItems: Self = this.set("lineItems", js.undefined)
+    @scala.inline
+    def setOperationId(value: String): Self = this.set("operationId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOperationId: Self = this.set("operationId", js.undefined)
+    @scala.inline
+    def setShipmentGroupId(value: String): Self = this.set("shipmentGroupId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipmentGroupId: Self = this.set("shipmentGroupId", js.undefined)
+    @scala.inline
+    def setShipmentInfosVarargs(value: SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo*): Self = this.set("shipmentInfos", js.Array(value :_*))
+    @scala.inline
+    def setShipmentInfos(value: js.Array[SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]): Self = this.set("shipmentInfos", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShipmentInfos: Self = this.set("shipmentInfos", js.undefined)
+  }
+  
 }
 

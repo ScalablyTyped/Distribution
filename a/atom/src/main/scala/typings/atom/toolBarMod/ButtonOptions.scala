@@ -14,9 +14,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ButtonOptions extends js.Object {
   /** (optional) Color of the button's background */
-  var background: js.UndefOr[String] = js.undefined
+  var background: js.UndefOr[String] = js.native
   /** (mandatory)
     * The callback must be either:
     * - Atom command: a string or array of  strings,
@@ -44,7 +45,7 @@ trait ButtonOptions extends js.Object {
     * data: 'foo'
     * ```
     */
-  var callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
+  var callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String]) = js.native
   /** Buttons can be styled with arbitrary CSS through classes.
     * An example of how the class can be used is show below.
     *
@@ -58,15 +59,15 @@ trait ButtonOptions extends js.Object {
     * class: ['multiple', 'classes', 'also', 'works']
     * ```
     */
-  var `class`: js.UndefOr[String | js.Array[String]] = js.undefined
+  var `class`: js.UndefOr[String | js.Array[String]] = js.native
   /** (optional) Color of the button */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /** `data` can be passed as the input argument of callback,  If callback is of type
     * - `(data: any) => void)` or
     * - `{ [modifier: string]: ((data: any) => void) }`,
     *
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[js.Any] = js.native
   /** (optional)
     * if set to `true`, `text` will be rendered as HTML
     * ## Example:
@@ -75,7 +76,7 @@ trait ButtonOptions extends js.Object {
     * html: true,
     * ```
     */
-  var html: js.UndefOr[Boolean] = js.undefined
+  var html: js.UndefOr[Boolean] = js.native
   /** (optional)
     *  icon name
     * ## Example:
@@ -83,7 +84,7 @@ trait ButtonOptions extends js.Object {
     * icon: 'octoface',
     * ```
     */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /** (optional)
     * icon set name.
     * It can be chosen among these:
@@ -101,9 +102,9 @@ trait ButtonOptions extends js.Object {
     *     iconset: 'ion'
     * ```
     */
-  var iconset: js.UndefOr[ion | fa | fab | fi | icomoon | devicon | mdi] = js.undefined
+  var iconset: js.UndefOr[ion | fa | fab | fi | icomoon | devicon | mdi] = js.native
   /** (optional) defaults to `50` */
-  var priority: js.UndefOr[Double] = js.undefined
+  var priority: js.UndefOr[Double] = js.native
   /** (optional)
     * You can use `text` to:
     * - add text as a button, or
@@ -120,40 +121,83 @@ trait ButtonOptions extends js.Object {
     * html: true,
     * ```
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /** (optional)
     * The tooltip option may be a string or an object that is passed to Atom's TooltipManager
     */
-  var tooltip: js.UndefOr[String | Item | Class] = js.undefined
+  var tooltip: js.UndefOr[String | Item | Class] = js.native
 }
 
 object ButtonOptions {
   @scala.inline
   def apply(
-    callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String]),
-    background: String = null,
-    `class`: String | js.Array[String] = null,
-    color: String = null,
-    data: js.Any = null,
-    html: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    iconset: ion | fa | fab | fi | icomoon | devicon | mdi = null,
-    priority: js.UndefOr[Double] = js.undefined,
-    text: String = null,
-    tooltip: String | Item | Class = null
+    callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
   ): ButtonOptions = {
     val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconset != null) __obj.updateDynamic("iconset")(iconset.asInstanceOf[js.Any])
-    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority.get.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
+  @scala.inline
+  implicit class ButtonOptionsOps[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallbackVarargs(value: String*): Self = this.set("callback", js.Array(value :_*))
+    @scala.inline
+    def setCallbackFunction1(value: /* data */ js.UndefOr[js.Any] => Unit): Self = this.set("callback", js.Any.fromFunction1(value))
+    @scala.inline
+    def setCallback(
+      value: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
+    ): Self = this.set("callback", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBackground(value: String): Self = this.set("background", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBackground: Self = this.set("background", js.undefined)
+    @scala.inline
+    def setClassVarargs(value: String*): Self = this.set("class", js.Array(value :_*))
+    @scala.inline
+    def setClass(value: String | js.Array[String]): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setHtml(value: Boolean): Self = this.set("html", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHtml: Self = this.set("html", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setIconset(value: ion | fa | fab | fi | icomoon | devicon | mdi): Self = this.set("iconset", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIconset: Self = this.set("iconset", js.undefined)
+    @scala.inline
+    def setPriority(value: Double): Self = this.set("priority", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePriority: Self = this.set("priority", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTooltip(value: String | Item | Class): Self = this.set("tooltip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTooltip: Self = this.set("tooltip", js.undefined)
+  }
+  
 }
 

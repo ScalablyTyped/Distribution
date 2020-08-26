@@ -34,22 +34,46 @@ trait ConfigExportDeliveryInfo extends js.Object {
 
 object ConfigExportDeliveryInfo {
   @scala.inline
-  def apply(
-    lastAttemptTime: Date = null,
-    lastErrorCode: String = null,
-    lastErrorMessage: String = null,
-    lastStatus: DeliveryStatus = null,
-    lastSuccessfulTime: Date = null,
-    nextDeliveryTime: Date = null
-  ): ConfigExportDeliveryInfo = {
+  def apply(): ConfigExportDeliveryInfo = {
     val __obj = js.Dynamic.literal()
-    if (lastAttemptTime != null) __obj.updateDynamic("lastAttemptTime")(lastAttemptTime.asInstanceOf[js.Any])
-    if (lastErrorCode != null) __obj.updateDynamic("lastErrorCode")(lastErrorCode.asInstanceOf[js.Any])
-    if (lastErrorMessage != null) __obj.updateDynamic("lastErrorMessage")(lastErrorMessage.asInstanceOf[js.Any])
-    if (lastStatus != null) __obj.updateDynamic("lastStatus")(lastStatus.asInstanceOf[js.Any])
-    if (lastSuccessfulTime != null) __obj.updateDynamic("lastSuccessfulTime")(lastSuccessfulTime.asInstanceOf[js.Any])
-    if (nextDeliveryTime != null) __obj.updateDynamic("nextDeliveryTime")(nextDeliveryTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigExportDeliveryInfo]
   }
+  @scala.inline
+  implicit class ConfigExportDeliveryInfoOps[Self <: ConfigExportDeliveryInfo] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastAttemptTime(value: Date): Self = this.set("lastAttemptTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastAttemptTime: Self = this.set("lastAttemptTime", js.undefined)
+    @scala.inline
+    def setLastErrorCode(value: String): Self = this.set("lastErrorCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorCode: Self = this.set("lastErrorCode", js.undefined)
+    @scala.inline
+    def setLastErrorMessage(value: String): Self = this.set("lastErrorMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastErrorMessage: Self = this.set("lastErrorMessage", js.undefined)
+    @scala.inline
+    def setLastStatus(value: DeliveryStatus): Self = this.set("lastStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastStatus: Self = this.set("lastStatus", js.undefined)
+    @scala.inline
+    def setLastSuccessfulTime(value: Date): Self = this.set("lastSuccessfulTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastSuccessfulTime: Self = this.set("lastSuccessfulTime", js.undefined)
+    @scala.inline
+    def setNextDeliveryTime(value: Date): Self = this.set("nextDeliveryTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextDeliveryTime: Self = this.set("nextDeliveryTime", js.undefined)
+  }
+  
 }
 

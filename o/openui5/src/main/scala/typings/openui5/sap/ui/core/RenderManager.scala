@@ -116,6 +116,7 @@ trait RenderManager extends Object {
     * @param bPreserveNodesWithId whether to preserve nodes with an id as well
     */
   def preserveContent(oRootNode: Element): Unit = js.native
+  def preserveContent(oRootNode: Element, bPreserveRoot: js.UndefOr[scala.Nothing], bPreserveNodesWithId: Boolean): Unit = js.native
   def preserveContent(oRootNode: Element, bPreserveRoot: Boolean): Unit = js.native
   def preserveContent(oRootNode: Element, bPreserveRoot: Boolean, bPreserveNodesWithId: Boolean): Unit = js.native
   /**

@@ -13,6 +13,7 @@ class Server[TConnection /* <: Connection */] () extends Base[TConnection] {
     * Start the server
     */
   def start(): Unit = js.native
+  def start(options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def start(options: ServerOptions): Unit = js.native
   def start(options: ServerOptions, callback: js.Function0[Unit]): Unit = js.native
   /**

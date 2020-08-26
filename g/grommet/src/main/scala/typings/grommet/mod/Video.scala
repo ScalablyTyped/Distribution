@@ -14,7 +14,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("grommet", "Video")
+@JSImport("grommet/es6", "Video")
 @js.native
 class Video protected ()
   extends Component[
@@ -38,7 +38,7 @@ class Video protected ()
   ) = this()
 }
 
-@JSImport("grommet", "Video")
+@JSImport("grommet/es6", "Video")
 @js.native
 object Video extends TopLevel[
       ComponentClass[

@@ -37,18 +37,40 @@ trait SchemaGoogleCloudVisionV1p1beta1Word extends js.Object {
 
 object SchemaGoogleCloudVisionV1p1beta1Word {
   @scala.inline
-  def apply(
-    boundingBox: SchemaGoogleCloudVisionV1p1beta1BoundingPoly = null,
-    confidence: js.UndefOr[Double] = js.undefined,
-    property: SchemaGoogleCloudVisionV1p1beta1TextAnnotationTextProperty = null,
-    symbols: js.Array[SchemaGoogleCloudVisionV1p1beta1Symbol] = null
-  ): SchemaGoogleCloudVisionV1p1beta1Word = {
+  def apply(): SchemaGoogleCloudVisionV1p1beta1Word = {
     val __obj = js.Dynamic.literal()
-    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
-    if (!js.isUndefined(confidence)) __obj.updateDynamic("confidence")(confidence.get.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (symbols != null) __obj.updateDynamic("symbols")(symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1Word]
   }
+  @scala.inline
+  implicit class SchemaGoogleCloudVisionV1p1beta1WordOps[Self <: SchemaGoogleCloudVisionV1p1beta1Word] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBoundingBox(value: SchemaGoogleCloudVisionV1p1beta1BoundingPoly): Self = this.set("boundingBox", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBoundingBox: Self = this.set("boundingBox", js.undefined)
+    @scala.inline
+    def setConfidence(value: Double): Self = this.set("confidence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfidence: Self = this.set("confidence", js.undefined)
+    @scala.inline
+    def setProperty(value: SchemaGoogleCloudVisionV1p1beta1TextAnnotationTextProperty): Self = this.set("property", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProperty: Self = this.set("property", js.undefined)
+    @scala.inline
+    def setSymbolsVarargs(value: SchemaGoogleCloudVisionV1p1beta1Symbol*): Self = this.set("symbols", js.Array(value :_*))
+    @scala.inline
+    def setSymbols(value: js.Array[SchemaGoogleCloudVisionV1p1beta1Symbol]): Self = this.set("symbols", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSymbols: Self = this.set("symbols", js.undefined)
+  }
+  
 }
 

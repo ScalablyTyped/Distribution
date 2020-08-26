@@ -19,7 +19,7 @@ class ^ () extends Agent {
 object ^ extends TopLevel[
       Instantiable0[ForeverAgent] with (Instantiable1[/* options */ ForeverAgentOptions, ForeverAgent])
     ] {
-  var SSL: Instantiable1[js.UndefOr[/* options */ ForeverAgentOptions], ForeverAgentSSL] = js.native
+  var SSL: Instantiable1[/* options */ js.UndefOr[ForeverAgentOptions], ForeverAgentSSL] = js.native
   var defaultMinSockets: Double = js.native
 }
 

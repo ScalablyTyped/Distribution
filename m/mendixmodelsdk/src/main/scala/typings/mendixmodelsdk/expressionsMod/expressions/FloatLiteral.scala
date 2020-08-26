@@ -57,7 +57,7 @@ class FloatLiteral protected () extends LiteralExpression {
   @JSName("model")
   var model_FFloatLiteral: IModel = js.native
   def value: Double = js.native
-  def value(newValue: Double): js.Any = js.native
+  def value_=(newValue: Double): Unit = js.native
 }
 
 /* static members */

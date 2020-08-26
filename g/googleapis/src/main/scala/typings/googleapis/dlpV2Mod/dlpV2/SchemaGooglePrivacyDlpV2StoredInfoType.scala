@@ -27,16 +27,36 @@ trait SchemaGooglePrivacyDlpV2StoredInfoType extends js.Object {
 
 object SchemaGooglePrivacyDlpV2StoredInfoType {
   @scala.inline
-  def apply(
-    currentVersion: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion = null,
-    name: String = null,
-    pendingVersions: js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion] = null
-  ): SchemaGooglePrivacyDlpV2StoredInfoType = {
+  def apply(): SchemaGooglePrivacyDlpV2StoredInfoType = {
     val __obj = js.Dynamic.literal()
-    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pendingVersions != null) __obj.updateDynamic("pendingVersions")(pendingVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StoredInfoType]
   }
+  @scala.inline
+  implicit class SchemaGooglePrivacyDlpV2StoredInfoTypeOps[Self <: SchemaGooglePrivacyDlpV2StoredInfoType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentVersion(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion): Self = this.set("currentVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCurrentVersion: Self = this.set("currentVersion", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPendingVersionsVarargs(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion*): Self = this.set("pendingVersions", js.Array(value :_*))
+    @scala.inline
+    def setPendingVersions(value: js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]): Self = this.set("pendingVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePendingVersions: Self = this.set("pendingVersions", js.undefined)
+  }
+  
 }
 

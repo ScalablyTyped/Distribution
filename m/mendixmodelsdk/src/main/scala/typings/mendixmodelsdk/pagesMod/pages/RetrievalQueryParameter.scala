@@ -28,9 +28,9 @@ class RetrievalQueryParameter protected () extends Element {
   var model_FRetrievalQueryParameter: IModel = js.native
   def containerAsRetrievalQuery: RetrievalQuery = js.native
   def name: String = js.native
-  def name(newValue: String): js.Any = js.native
+  def name_=(newValue: String): Unit = js.native
   def `type`: String = js.native
-  def `type`(newValue: String): js.Any = js.native
+  def type_=(newValue: String): Unit = js.native
 }
 
 /* static members */

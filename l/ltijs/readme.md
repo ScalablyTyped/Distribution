@@ -4,15 +4,15 @@
 Typings are for version 4.0
 
 ## Library description:
-Turn your application into a fully integratable LTI 1.3 tool.
+Easily turn your web application into a LTI 1.3 Learning Tool.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ltijs |
 | Keywords           | lti, lms, lti 1.3, imslti, 1.3, advantage |
-| # releases         | 95 |
+| # releases         | 101 |
 | # dependents       | 0 |
-| # downloads        | 11217 |
+| # downloads        | 13084 |
 | # stars            | 0 |
 
 ## Links

@@ -38,24 +38,50 @@ trait GroupType extends js.Object {
 
 object GroupType {
   @scala.inline
-  def apply(
-    CreationDate: DateType = null,
-    Description: DescriptionType = null,
-    GroupName: GroupNameType = null,
-    LastModifiedDate: DateType = null,
-    Precedence: js.UndefOr[PrecedenceType] = js.undefined,
-    RoleArn: ArnType = null,
-    UserPoolId: UserPoolIdType = null
-  ): GroupType = {
+  def apply(): GroupType = {
     val __obj = js.Dynamic.literal()
-    if (CreationDate != null) __obj.updateDynamic("CreationDate")(CreationDate.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (GroupName != null) __obj.updateDynamic("GroupName")(GroupName.asInstanceOf[js.Any])
-    if (LastModifiedDate != null) __obj.updateDynamic("LastModifiedDate")(LastModifiedDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(Precedence)) __obj.updateDynamic("Precedence")(Precedence.get.asInstanceOf[js.Any])
-    if (RoleArn != null) __obj.updateDynamic("RoleArn")(RoleArn.asInstanceOf[js.Any])
-    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupType]
   }
+  @scala.inline
+  implicit class GroupTypeOps[Self <: GroupType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreationDate(value: DateType): Self = this.set("CreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreationDate: Self = this.set("CreationDate", js.undefined)
+    @scala.inline
+    def setDescription(value: DescriptionType): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+    @scala.inline
+    def setGroupName(value: GroupNameType): Self = this.set("GroupName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGroupName: Self = this.set("GroupName", js.undefined)
+    @scala.inline
+    def setLastModifiedDate(value: DateType): Self = this.set("LastModifiedDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastModifiedDate: Self = this.set("LastModifiedDate", js.undefined)
+    @scala.inline
+    def setPrecedence(value: PrecedenceType): Self = this.set("Precedence", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrecedence: Self = this.set("Precedence", js.undefined)
+    @scala.inline
+    def setRoleArn(value: ArnType): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("RoleArn", js.undefined)
+    @scala.inline
+    def setUserPoolId(value: UserPoolIdType): Self = this.set("UserPoolId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserPoolId: Self = this.set("UserPoolId", js.undefined)
+  }
+  
 }
 

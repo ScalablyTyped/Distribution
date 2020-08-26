@@ -18,11 +18,32 @@ trait ViewBillingResponse extends js.Object {
 
 object ViewBillingResponse {
   @scala.inline
-  def apply(BillingRecords: BillingRecords = null, NextPageMarker: PageMarker = null): ViewBillingResponse = {
+  def apply(): ViewBillingResponse = {
     val __obj = js.Dynamic.literal()
-    if (BillingRecords != null) __obj.updateDynamic("BillingRecords")(BillingRecords.asInstanceOf[js.Any])
-    if (NextPageMarker != null) __obj.updateDynamic("NextPageMarker")(NextPageMarker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewBillingResponse]
   }
+  @scala.inline
+  implicit class ViewBillingResponseOps[Self <: ViewBillingResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBillingRecordsVarargs(value: BillingRecord*): Self = this.set("BillingRecords", js.Array(value :_*))
+    @scala.inline
+    def setBillingRecords(value: BillingRecords): Self = this.set("BillingRecords", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBillingRecords: Self = this.set("BillingRecords", js.undefined)
+    @scala.inline
+    def setNextPageMarker(value: PageMarker): Self = this.set("NextPageMarker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextPageMarker: Self = this.set("NextPageMarker", js.undefined)
+  }
+  
 }
 

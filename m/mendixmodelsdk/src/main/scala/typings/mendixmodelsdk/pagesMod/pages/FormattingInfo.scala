@@ -33,15 +33,15 @@ class FormattingInfo protected () extends Element {
   def containerAsReferenceSelector: ReferenceSelector = js.native
   def containerAsTextBox: TextBox = js.native
   def customDateFormat: String = js.native
-  def customDateFormat(newValue: String): js.Any = js.native
+  def customDateFormat_=(newValue: String): Unit = js.native
   def dateFormat: DateFormat = js.native
-  def dateFormat(newValue: DateFormat): js.Any = js.native
+  def dateFormat_=(newValue: DateFormat): Unit = js.native
   def decimalPrecision: Double = js.native
-  def decimalPrecision(newValue: Double): js.Any = js.native
+  def decimalPrecision_=(newValue: Double): Unit = js.native
   def enumFormat: EnumFormat = js.native
-  def enumFormat(newValue: EnumFormat): js.Any = js.native
+  def enumFormat_=(newValue: EnumFormat): Unit = js.native
   def groupDigits: Boolean = js.native
-  def groupDigits(newValue: Boolean): js.Any = js.native
+  def groupDigits_=(newValue: Boolean): Unit = js.native
 }
 
 /* static members */

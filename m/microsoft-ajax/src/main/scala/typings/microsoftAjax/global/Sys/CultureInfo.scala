@@ -23,30 +23,6 @@ class CultureInfo protected ()
     *           A culture-sensitive date formatting string.
     */
   def this(name: String, numberFormat: String, dateTimeFormat: String) = this()
-  /**
-    * Gets an object that contains an array of culture-sensitive formatting and parsing string values that can be applied to Date type extensions.
-    * Use the dateTimeFormat field to retrieve an object that contains an array of formatting strings that are based on the current culture or on the invariant culture.
-    * Each formatting string can be used to specify how to format Date type extensions.
-    * @return An object that contains an array of culture-sensitive formatting strings.
-    */
-  /* CompleteClass */
-  override var dateTimeFormat: js.Array[String] = js.native
-  /**
-    * Gets the culture value (locale) that represents a language and region.
-    * @return The culture value (locale) that represents a language and region.
-    */
-  /* CompleteClass */
-  override var name: String = js.native
-  //#endregion
-  //#region Properties
-  /**
-    * Gets an object that contains an array of culture-sensitive formatting and parsing strings values that can be applied to Number type extensions.
-    * Use the numberFormat field to retrieve an object that contains an array of formatting strings that are based on the current culture or on the invariant culture.
-    * Each formatting string can be used to specify how to format Number type extensions.
-    * @return An object that contains an array of culture-sensitive formatting strings.
-    */
-  /* CompleteClass */
-  override var numberFormat: js.Array[String] = js.native
 }
 
 /* static members */

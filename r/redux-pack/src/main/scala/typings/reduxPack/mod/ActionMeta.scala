@@ -4,44 +4,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload] extends js.Object {
   var onFailure: js.UndefOr[
     js.Function2[/* error */ TErrorPayload, /* getState */ GetState[TFullState], Unit]
-  ] = js.undefined
-  var onFinish: js.UndefOr[js.Function2[/* resolved */ Boolean, /* getState */ GetState[TFullState], Unit]] = js.undefined
+  ] = js.native
+  var onFinish: js.UndefOr[js.Function2[/* resolved */ Boolean, /* getState */ GetState[TFullState], Unit]] = js.native
   var onStart: js.UndefOr[
     js.Function2[/* payload */ TStartPayload, /* getState */ GetState[TFullState], Unit]
-  ] = js.undefined
+  ] = js.native
   var onSuccess: js.UndefOr[
     js.Function2[/* response */ TSuccessPayload, /* getState */ GetState[TFullState], Unit]
-  ] = js.undefined
+  ] = js.native
   @JSName("redux-pack/LIFECYCLE")
-  var `redux-packSlashLIFECYCLE`: js.UndefOr[LIFECYCLEValues] = js.undefined
+  var `redux-packSlashLIFECYCLE`: js.UndefOr[LIFECYCLEValues] = js.native
   @JSName("redux-pack/TRANSACTION")
-  var `redux-packSlashTRANSACTION`: js.UndefOr[String] = js.undefined
-  var startPayload: js.UndefOr[TStartPayload] = js.undefined
+  var `redux-packSlashTRANSACTION`: js.UndefOr[String] = js.native
+  var startPayload: js.UndefOr[TStartPayload] = js.native
 }
 
 object ActionMeta {
   @scala.inline
-  def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload](
-    onFailure: (/* error */ TErrorPayload, /* getState */ GetState[TFullState]) => Unit = null,
-    onFinish: (/* resolved */ Boolean, /* getState */ GetState[TFullState]) => Unit = null,
-    onStart: (/* payload */ TStartPayload, /* getState */ GetState[TFullState]) => Unit = null,
-    onSuccess: (/* response */ TSuccessPayload, /* getState */ GetState[TFullState]) => Unit = null,
-    `redux-packSlashLIFECYCLE`: LIFECYCLEValues = null,
-    `redux-packSlashTRANSACTION`: String = null,
-    startPayload: TStartPayload = null
-  ): ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload] = {
+  def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload](): ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload] = {
     val __obj = js.Dynamic.literal()
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction2(onFailure))
-    if (onFinish != null) __obj.updateDynamic("onFinish")(js.Any.fromFunction2(onFinish))
-    if (onStart != null) __obj.updateDynamic("onStart")(js.Any.fromFunction2(onStart))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction2(onSuccess))
-    if (`redux-packSlashLIFECYCLE` != null) __obj.updateDynamic("redux-pack/LIFECYCLE")(`redux-packSlashLIFECYCLE`.asInstanceOf[js.Any])
-    if (`redux-packSlashTRANSACTION` != null) __obj.updateDynamic("redux-pack/TRANSACTION")(`redux-packSlashTRANSACTION`.asInstanceOf[js.Any])
-    if (startPayload != null) __obj.updateDynamic("startPayload")(startPayload.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]]
   }
+  @scala.inline
+  implicit class ActionMetaOps[Self <: ActionMeta[_, _, _, _], TFullState, TSuccessPayload, TErrorPayload, TStartPayload] (val x: Self with (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnFailure(value: (/* error */ TErrorPayload, /* getState */ GetState[TFullState]) => Unit): Self = this.set("onFailure", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnFailure: Self = this.set("onFailure", js.undefined)
+    @scala.inline
+    def setOnFinish(value: (/* resolved */ Boolean, /* getState */ GetState[TFullState]) => Unit): Self = this.set("onFinish", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnFinish: Self = this.set("onFinish", js.undefined)
+    @scala.inline
+    def setOnStart(value: (/* payload */ TStartPayload, /* getState */ GetState[TFullState]) => Unit): Self = this.set("onStart", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnStart: Self = this.set("onStart", js.undefined)
+    @scala.inline
+    def setOnSuccess(value: (/* response */ TSuccessPayload, /* getState */ GetState[TFullState]) => Unit): Self = this.set("onSuccess", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnSuccess: Self = this.set("onSuccess", js.undefined)
+    @scala.inline
+    def `setRedux-packSlashLIFECYCLE`(value: LIFECYCLEValues): Self = this.set("redux-pack/LIFECYCLE", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteRedux-packSlashLIFECYCLE`: Self = this.set("redux-pack/LIFECYCLE", js.undefined)
+    @scala.inline
+    def `setRedux-packSlashTRANSACTION`(value: String): Self = this.set("redux-pack/TRANSACTION", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `deleteRedux-packSlashTRANSACTION`: Self = this.set("redux-pack/TRANSACTION", js.undefined)
+    @scala.inline
+    def setStartPayload(value: TStartPayload): Self = this.set("startPayload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartPayload: Self = this.set("startPayload", js.undefined)
+  }
+  
 }
 

@@ -13,38 +13,12 @@ object mod extends js.Object {
   @js.native
   class AnsiStringType protected () extends IGetToken[String] {
     def this(len: Double) = this()
-    /**
-      * Length of encoded token in bytes
-      */
-    /* CompleteClass */
-    override var len: Double = js.native
-    /**
-      * Decode value from buffer at offset
-      * @param buffer - Buffer to read the decoded value from
-      * @param offset - Decode offset
-      * @return Decoded value
-      */
-    /* CompleteClass */
-    override def get(buffer: Buffer, offset: Double): String = js.native
     def get(buf: Buffer): String = js.native
   }
   
   @js.native
   class BufferType protected () extends IGetToken[Buffer] {
     def this(len: Double) = this()
-    /**
-      * Length of encoded token in bytes
-      */
-    /* CompleteClass */
-    override var len: Double = js.native
-    /**
-      * Decode value from buffer at offset
-      * @param buffer - Buffer to read the decoded value from
-      * @param offset - Decode offset
-      * @return Decoded value
-      */
-    /* CompleteClass */
-    override def get(buffer: Buffer, offset: Double): Buffer = js.native
   }
   
   @js.native
@@ -53,38 +27,12 @@ object mod extends js.Object {
       * @param len number of bytes to ignore
       */
     def this(len: Double) = this()
-    /**
-      * Length of encoded token in bytes
-      */
-    /* CompleteClass */
-    override var len: Double = js.native
-    /**
-      * Decode value from buffer at offset
-      * @param buffer - Buffer to read the decoded value from
-      * @param offset - Decode offset
-      * @return Decoded value
-      */
-    /* CompleteClass */
-    override def get(buffer: Buffer, offset: Double): Unit = js.native
   }
   
   @js.native
   class StringType protected () extends IGetToken[String] {
     def this(len: Double, encoding: String) = this()
     var encoding: String = js.native
-    /**
-      * Length of encoded token in bytes
-      */
-    /* CompleteClass */
-    override var len: Double = js.native
-    /**
-      * Decode value from buffer at offset
-      * @param buffer - Buffer to read the decoded value from
-      * @param offset - Decode offset
-      * @return Decoded value
-      */
-    /* CompleteClass */
-    override def get(buffer: Buffer, offset: Double): String = js.native
   }
   
   @JSName("Float16_BE")

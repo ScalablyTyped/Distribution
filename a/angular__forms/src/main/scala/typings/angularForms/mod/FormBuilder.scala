@@ -23,6 +23,16 @@ class FormBuilder () extends js.Object {
     * functions.
     */
   def array(controlsConfig: js.Array[_]): FormArray = js.native
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: js.UndefOr[scala.Nothing],
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ): FormArray = js.native
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: js.UndefOr[scala.Nothing],
+    asyncValidator: AsyncValidatorFn
+  ): FormArray = js.native
   def array(controlsConfig: js.Array[_], validatorOrOpts: js.Array[ValidatorFn]): FormArray = js.native
   def array(
     controlsConfig: js.Array[_],
@@ -78,6 +88,12 @@ class FormBuilder () extends js.Object {
     * </code-example>
     */
   def control(formState: js.Any): FormControl = js.native
+  def control(
+    formState: js.Any,
+    validatorOrOpts: js.UndefOr[scala.Nothing],
+    asyncValidator: js.Array[AsyncValidatorFn]
+  ): FormControl = js.native
+  def control(formState: js.Any, validatorOrOpts: js.UndefOr[scala.Nothing], asyncValidator: AsyncValidatorFn): FormControl = js.native
   def control(formState: js.Any, validatorOrOpts: js.Array[ValidatorFn]): FormControl = js.native
   def control(
     formState: js.Any,

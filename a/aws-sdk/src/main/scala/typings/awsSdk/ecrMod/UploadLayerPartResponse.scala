@@ -26,18 +26,38 @@ trait UploadLayerPartResponse extends js.Object {
 
 object UploadLayerPartResponse {
   @scala.inline
-  def apply(
-    lastByteReceived: js.UndefOr[PartSize] = js.undefined,
-    registryId: RegistryId = null,
-    repositoryName: RepositoryName = null,
-    uploadId: UploadId = null
-  ): UploadLayerPartResponse = {
+  def apply(): UploadLayerPartResponse = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastByteReceived)) __obj.updateDynamic("lastByteReceived")(lastByteReceived.get.asInstanceOf[js.Any])
-    if (registryId != null) __obj.updateDynamic("registryId")(registryId.asInstanceOf[js.Any])
-    if (repositoryName != null) __obj.updateDynamic("repositoryName")(repositoryName.asInstanceOf[js.Any])
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadLayerPartResponse]
   }
+  @scala.inline
+  implicit class UploadLayerPartResponseOps[Self <: UploadLayerPartResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLastByteReceived(value: PartSize): Self = this.set("lastByteReceived", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLastByteReceived: Self = this.set("lastByteReceived", js.undefined)
+    @scala.inline
+    def setRegistryId(value: RegistryId): Self = this.set("registryId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistryId: Self = this.set("registryId", js.undefined)
+    @scala.inline
+    def setRepositoryName(value: RepositoryName): Self = this.set("repositoryName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryName: Self = this.set("repositoryName", js.undefined)
+    @scala.inline
+    def setUploadId(value: UploadId): Self = this.set("uploadId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUploadId: Self = this.set("uploadId", js.undefined)
+  }
+  
 }
 

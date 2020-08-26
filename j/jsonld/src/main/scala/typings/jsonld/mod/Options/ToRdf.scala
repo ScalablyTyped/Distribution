@@ -1,38 +1,47 @@
 package typings.jsonld.mod.Options
 
-import typings.jsonld.jsonldSpecMod.Context
-import typings.jsonld.jsonldSpecMod.RemoteDocument
-import typings.jsonld.jsonldSpecMod.Url
 import typings.jsonld.mod.MimeNQuad
-import typings.std.Error
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ToRdf extends Common {
-  var format: js.UndefOr[MimeNQuad] = js.undefined
-  var produceGeneralizedRdf: js.UndefOr[Boolean] = js.undefined
-  var skipExpansion: js.UndefOr[Boolean] = js.undefined
+  var format: js.UndefOr[MimeNQuad] = js.native
+  var produceGeneralizedRdf: js.UndefOr[Boolean] = js.native
+  var skipExpansion: js.UndefOr[Boolean] = js.native
 }
 
 object ToRdf {
   @scala.inline
-  def apply(
-    base: String = null,
-    documentLoader: (/* url */ Url, /* callback */ js.Function2[/* err */ Error, /* remoteDoc */ RemoteDocument, Unit]) => js.Promise[RemoteDocument] = null,
-    expandContext: Context = null,
-    format: MimeNQuad = null,
-    produceGeneralizedRdf: js.UndefOr[Boolean] = js.undefined,
-    skipExpansion: js.UndefOr[Boolean] = js.undefined
-  ): ToRdf = {
+  def apply(): ToRdf = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (documentLoader != null) __obj.updateDynamic("documentLoader")(js.Any.fromFunction2(documentLoader))
-    if (expandContext != null) __obj.updateDynamic("expandContext")(expandContext.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(produceGeneralizedRdf)) __obj.updateDynamic("produceGeneralizedRdf")(produceGeneralizedRdf.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipExpansion)) __obj.updateDynamic("skipExpansion")(skipExpansion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToRdf]
   }
+  @scala.inline
+  implicit class ToRdfOps[Self <: ToRdf] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFormat(value: MimeNQuad): Self = this.set("format", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFormat: Self = this.set("format", js.undefined)
+    @scala.inline
+    def setProduceGeneralizedRdf(value: Boolean): Self = this.set("produceGeneralizedRdf", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProduceGeneralizedRdf: Self = this.set("produceGeneralizedRdf", js.undefined)
+    @scala.inline
+    def setSkipExpansion(value: Boolean): Self = this.set("skipExpansion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipExpansion: Self = this.set("skipExpansion", js.undefined)
+  }
+  
 }
 

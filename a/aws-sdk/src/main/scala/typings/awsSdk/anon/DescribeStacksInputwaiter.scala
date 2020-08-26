@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* Inlined aws-sdk.aws-sdk/clients/cloudformation.DescribeStacksInput & {  $waiter ? :aws-sdk.aws-sdk/lib/service.WaiterConfiguration} */
+/* Inlined aws-sdk.aws-sdk/clients/cloudformation.DescribeStacksInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
 @js.native
 trait DescribeStacksInputwaiter extends js.Object {
   @JSName("$waiter")
@@ -24,12 +24,34 @@ trait DescribeStacksInputwaiter extends js.Object {
 
 object DescribeStacksInputwaiter {
   @scala.inline
-  def apply($waiter: WaiterConfiguration = null, NextToken: NextToken = null, StackName: StackName = null): DescribeStacksInputwaiter = {
+  def apply(): DescribeStacksInputwaiter = {
     val __obj = js.Dynamic.literal()
-    if ($waiter != null) __obj.updateDynamic("$waiter")($waiter.asInstanceOf[js.Any])
-    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken.asInstanceOf[js.Any])
-    if (StackName != null) __obj.updateDynamic("StackName")(StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStacksInputwaiter]
   }
+  @scala.inline
+  implicit class DescribeStacksInputwaiterOps[Self <: DescribeStacksInputwaiter] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def set$waiter(value: WaiterConfiguration): Self = this.set("$waiter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def delete$waiter: Self = this.set("$waiter", js.undefined)
+    @scala.inline
+    def setNextToken(value: NextToken): Self = this.set("NextToken", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextToken: Self = this.set("NextToken", js.undefined)
+    @scala.inline
+    def setStackName(value: StackName): Self = this.set("StackName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStackName: Self = this.set("StackName", js.undefined)
+  }
+  
 }
 

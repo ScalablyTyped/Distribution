@@ -11,8 +11,8 @@ Understand how your tool is being used by anonymously reporting usage metrics to
 | Full name          | insight |
 | Keywords           | package, stats, google, analytics, track, metrics, yandex, metrica |
 | # releases         | 6 |
-| # dependents       | 135 |
-| # downloads        | 9204161 |
+| # dependents       | 138 |
+| # downloads        | 9439969 |
 | # stars            | 18 |
 
 ## Links

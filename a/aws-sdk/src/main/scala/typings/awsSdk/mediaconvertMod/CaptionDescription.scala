@@ -30,20 +30,42 @@ trait CaptionDescription extends js.Object {
 
 object CaptionDescription {
   @scala.inline
-  def apply(
-    CaptionSelectorName: stringMin1 = null,
-    CustomLanguageCode: stringPatternAZaZ23AZaZ = null,
-    DestinationSettings: CaptionDestinationSettings = null,
-    LanguageCode: LanguageCode = null,
-    LanguageDescription: string = null
-  ): CaptionDescription = {
+  def apply(): CaptionDescription = {
     val __obj = js.Dynamic.literal()
-    if (CaptionSelectorName != null) __obj.updateDynamic("CaptionSelectorName")(CaptionSelectorName.asInstanceOf[js.Any])
-    if (CustomLanguageCode != null) __obj.updateDynamic("CustomLanguageCode")(CustomLanguageCode.asInstanceOf[js.Any])
-    if (DestinationSettings != null) __obj.updateDynamic("DestinationSettings")(DestinationSettings.asInstanceOf[js.Any])
-    if (LanguageCode != null) __obj.updateDynamic("LanguageCode")(LanguageCode.asInstanceOf[js.Any])
-    if (LanguageDescription != null) __obj.updateDynamic("LanguageDescription")(LanguageDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionDescription]
   }
+  @scala.inline
+  implicit class CaptionDescriptionOps[Self <: CaptionDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCaptionSelectorName(value: stringMin1): Self = this.set("CaptionSelectorName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCaptionSelectorName: Self = this.set("CaptionSelectorName", js.undefined)
+    @scala.inline
+    def setCustomLanguageCode(value: stringPatternAZaZ23AZaZ): Self = this.set("CustomLanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCustomLanguageCode: Self = this.set("CustomLanguageCode", js.undefined)
+    @scala.inline
+    def setDestinationSettings(value: CaptionDestinationSettings): Self = this.set("DestinationSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationSettings: Self = this.set("DestinationSettings", js.undefined)
+    @scala.inline
+    def setLanguageCode(value: LanguageCode): Self = this.set("LanguageCode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageCode: Self = this.set("LanguageCode", js.undefined)
+    @scala.inline
+    def setLanguageDescription(value: string): Self = this.set("LanguageDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguageDescription: Self = this.set("LanguageDescription", js.undefined)
+  }
+  
 }
 

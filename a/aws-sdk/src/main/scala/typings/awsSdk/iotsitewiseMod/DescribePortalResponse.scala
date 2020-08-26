@@ -67,16 +67,53 @@ object DescribePortalResponse {
     portalLastUpdateDate: Timestamp,
     portalName: Name,
     portalStartUrl: Url,
-    portalStatus: PortalStatus,
-    portalDescription: Description = null,
-    portalLogoImageLocation: ImageLocation = null,
-    roleArn: ARN = null
+    portalStatus: PortalStatus
   ): DescribePortalResponse = {
     val __obj = js.Dynamic.literal(portalArn = portalArn.asInstanceOf[js.Any], portalClientId = portalClientId.asInstanceOf[js.Any], portalContactEmail = portalContactEmail.asInstanceOf[js.Any], portalCreationDate = portalCreationDate.asInstanceOf[js.Any], portalId = portalId.asInstanceOf[js.Any], portalLastUpdateDate = portalLastUpdateDate.asInstanceOf[js.Any], portalName = portalName.asInstanceOf[js.Any], portalStartUrl = portalStartUrl.asInstanceOf[js.Any], portalStatus = portalStatus.asInstanceOf[js.Any])
-    if (portalDescription != null) __obj.updateDynamic("portalDescription")(portalDescription.asInstanceOf[js.Any])
-    if (portalLogoImageLocation != null) __obj.updateDynamic("portalLogoImageLocation")(portalLogoImageLocation.asInstanceOf[js.Any])
-    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePortalResponse]
   }
+  @scala.inline
+  implicit class DescribePortalResponseOps[Self <: DescribePortalResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPortalArn(value: ARN): Self = this.set("portalArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalClientId(value: PortalClientId): Self = this.set("portalClientId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalContactEmail(value: Email): Self = this.set("portalContactEmail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalCreationDate(value: Timestamp): Self = this.set("portalCreationDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalId(value: ID): Self = this.set("portalId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalLastUpdateDate(value: Timestamp): Self = this.set("portalLastUpdateDate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalName(value: Name): Self = this.set("portalName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalStartUrl(value: Url): Self = this.set("portalStartUrl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalStatus(value: PortalStatus): Self = this.set("portalStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setPortalDescription(value: Description): Self = this.set("portalDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortalDescription: Self = this.set("portalDescription", js.undefined)
+    @scala.inline
+    def setPortalLogoImageLocation(value: ImageLocation): Self = this.set("portalLogoImageLocation", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePortalLogoImageLocation: Self = this.set("portalLogoImageLocation", js.undefined)
+    @scala.inline
+    def setRoleArn(value: ARN): Self = this.set("roleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoleArn: Self = this.set("roleArn", js.undefined)
+  }
+  
 }
 

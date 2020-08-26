@@ -26,13 +26,40 @@ trait Attachment extends js.Object {
 
 object Attachment {
   @scala.inline
-  def apply(details: AttachmentDetails = null, id: String = null, status: String = null, `type`: String = null): Attachment = {
+  def apply(): Attachment = {
     val __obj = js.Dynamic.literal()
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attachment]
   }
+  @scala.inline
+  implicit class AttachmentOps[Self <: Attachment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetailsVarargs(value: KeyValuePair*): Self = this.set("details", js.Array(value :_*))
+    @scala.inline
+    def setDetails(value: AttachmentDetails): Self = this.set("details", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetails: Self = this.set("details", js.undefined)
+    @scala.inline
+    def setId(value: String): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteId: Self = this.set("id", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+  }
+  
 }
 

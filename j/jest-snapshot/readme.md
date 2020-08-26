@@ -9,9 +9,9 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-snapshot |
 | Keywords           | - |
-| # releases         | 65 |
+| # releases         | 63 |
 | # dependents       | 51 |
-| # downloads        | 243338452 |
+| # downloads        | 245714906 |
 | # stars            | 2 |
 
 ## Links

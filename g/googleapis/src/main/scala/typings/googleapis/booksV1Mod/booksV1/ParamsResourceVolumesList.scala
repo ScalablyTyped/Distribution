@@ -75,54 +75,82 @@ trait ParamsResourceVolumesList extends StandardParameters {
 
 object ParamsResourceVolumesList {
   @scala.inline
-  def apply(
-    alt: String = null,
-    auth: String | OAuth2Client | JWT | Compute | UserRefreshClient = null,
-    download: String = null,
-    fields: String = null,
-    filter: String = null,
-    key: String = null,
-    langRestrict: String = null,
-    libraryRestrict: String = null,
-    maxAllowedMaturityRating: String = null,
-    maxResults: js.UndefOr[Double] = js.undefined,
-    oauth_token: String = null,
-    orderBy: String = null,
-    partner: String = null,
-    prettyPrint: js.UndefOr[Boolean] = js.undefined,
-    printType: String = null,
-    projection: String = null,
-    q: String = null,
-    quotaUser: String = null,
-    showPreorders: js.UndefOr[Boolean] = js.undefined,
-    source: String = null,
-    startIndex: js.UndefOr[Double] = js.undefined,
-    userIp: String = null
-  ): ParamsResourceVolumesList = {
+  def apply(): ParamsResourceVolumesList = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (auth != null) __obj.updateDynamic("auth")(auth.asInstanceOf[js.Any])
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (langRestrict != null) __obj.updateDynamic("langRestrict")(langRestrict.asInstanceOf[js.Any])
-    if (libraryRestrict != null) __obj.updateDynamic("libraryRestrict")(libraryRestrict.asInstanceOf[js.Any])
-    if (maxAllowedMaturityRating != null) __obj.updateDynamic("maxAllowedMaturityRating")(maxAllowedMaturityRating.asInstanceOf[js.Any])
-    if (!js.isUndefined(maxResults)) __obj.updateDynamic("maxResults")(maxResults.get.asInstanceOf[js.Any])
-    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token.asInstanceOf[js.Any])
-    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy.asInstanceOf[js.Any])
-    if (partner != null) __obj.updateDynamic("partner")(partner.asInstanceOf[js.Any])
-    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint.get.asInstanceOf[js.Any])
-    if (printType != null) __obj.updateDynamic("printType")(printType.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders.get.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(startIndex)) __obj.updateDynamic("startIndex")(startIndex.get.asInstanceOf[js.Any])
-    if (userIp != null) __obj.updateDynamic("userIp")(userIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParamsResourceVolumesList]
   }
+  @scala.inline
+  implicit class ParamsResourceVolumesListOps[Self <: ParamsResourceVolumesList] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = this.set("auth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAuth: Self = this.set("auth", js.undefined)
+    @scala.inline
+    def setDownload(value: String): Self = this.set("download", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDownload: Self = this.set("download", js.undefined)
+    @scala.inline
+    def setFilter(value: String): Self = this.set("filter", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilter: Self = this.set("filter", js.undefined)
+    @scala.inline
+    def setLangRestrict(value: String): Self = this.set("langRestrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLangRestrict: Self = this.set("langRestrict", js.undefined)
+    @scala.inline
+    def setLibraryRestrict(value: String): Self = this.set("libraryRestrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLibraryRestrict: Self = this.set("libraryRestrict", js.undefined)
+    @scala.inline
+    def setMaxAllowedMaturityRating(value: String): Self = this.set("maxAllowedMaturityRating", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxAllowedMaturityRating: Self = this.set("maxAllowedMaturityRating", js.undefined)
+    @scala.inline
+    def setMaxResults(value: Double): Self = this.set("maxResults", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaxResults: Self = this.set("maxResults", js.undefined)
+    @scala.inline
+    def setOrderBy(value: String): Self = this.set("orderBy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrderBy: Self = this.set("orderBy", js.undefined)
+    @scala.inline
+    def setPartner(value: String): Self = this.set("partner", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePartner: Self = this.set("partner", js.undefined)
+    @scala.inline
+    def setPrintType(value: String): Self = this.set("printType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrintType: Self = this.set("printType", js.undefined)
+    @scala.inline
+    def setProjection(value: String): Self = this.set("projection", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteProjection: Self = this.set("projection", js.undefined)
+    @scala.inline
+    def setQ(value: String): Self = this.set("q", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQ: Self = this.set("q", js.undefined)
+    @scala.inline
+    def setShowPreorders(value: Boolean): Self = this.set("showPreorders", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShowPreorders: Self = this.set("showPreorders", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("source", js.undefined)
+    @scala.inline
+    def setStartIndex(value: Double): Self = this.set("startIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartIndex: Self = this.set("startIndex", js.undefined)
+  }
+  
 }
 

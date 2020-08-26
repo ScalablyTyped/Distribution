@@ -34,22 +34,50 @@ trait Edge extends js.Object {
 
 object Edge {
   @scala.inline
-  def apply(
-    Aliases: AliasList = null,
-    EndTime: Timestamp = null,
-    ReferenceId: js.UndefOr[NullableInteger] = js.undefined,
-    ResponseTimeHistogram: Histogram = null,
-    StartTime: Timestamp = null,
-    SummaryStatistics: EdgeStatistics = null
-  ): Edge = {
+  def apply(): Edge = {
     val __obj = js.Dynamic.literal()
-    if (Aliases != null) __obj.updateDynamic("Aliases")(Aliases.asInstanceOf[js.Any])
-    if (EndTime != null) __obj.updateDynamic("EndTime")(EndTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(ReferenceId)) __obj.updateDynamic("ReferenceId")(ReferenceId.get.asInstanceOf[js.Any])
-    if (ResponseTimeHistogram != null) __obj.updateDynamic("ResponseTimeHistogram")(ResponseTimeHistogram.asInstanceOf[js.Any])
-    if (StartTime != null) __obj.updateDynamic("StartTime")(StartTime.asInstanceOf[js.Any])
-    if (SummaryStatistics != null) __obj.updateDynamic("SummaryStatistics")(SummaryStatistics.asInstanceOf[js.Any])
     __obj.asInstanceOf[Edge]
   }
+  @scala.inline
+  implicit class EdgeOps[Self <: Edge] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAliasesVarargs(value: Alias*): Self = this.set("Aliases", js.Array(value :_*))
+    @scala.inline
+    def setAliases(value: AliasList): Self = this.set("Aliases", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAliases: Self = this.set("Aliases", js.undefined)
+    @scala.inline
+    def setEndTime(value: Timestamp): Self = this.set("EndTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEndTime: Self = this.set("EndTime", js.undefined)
+    @scala.inline
+    def setReferenceId(value: NullableInteger): Self = this.set("ReferenceId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteReferenceId: Self = this.set("ReferenceId", js.undefined)
+    @scala.inline
+    def setResponseTimeHistogramVarargs(value: HistogramEntry*): Self = this.set("ResponseTimeHistogram", js.Array(value :_*))
+    @scala.inline
+    def setResponseTimeHistogram(value: Histogram): Self = this.set("ResponseTimeHistogram", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResponseTimeHistogram: Self = this.set("ResponseTimeHistogram", js.undefined)
+    @scala.inline
+    def setStartTime(value: Timestamp): Self = this.set("StartTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStartTime: Self = this.set("StartTime", js.undefined)
+    @scala.inline
+    def setSummaryStatistics(value: EdgeStatistics): Self = this.set("SummaryStatistics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSummaryStatistics: Self = this.set("SummaryStatistics", js.undefined)
+  }
+  
 }
 

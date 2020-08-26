@@ -56,7 +56,23 @@ trait PlusUploader extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def createUpload(): PlusUploaderUpload = js.native
+  def createUpload(
+    url: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
+  ): PlusUploaderUpload = js.native
+  def createUpload(url: js.UndefOr[scala.Nothing], options: PlusUploaderUploadOptions): PlusUploaderUpload = js.native
+  def createUpload(
+    url: js.UndefOr[scala.Nothing],
+    options: PlusUploaderUploadOptions,
+    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
+  ): PlusUploaderUpload = js.native
   def createUpload(url: String): PlusUploaderUpload = js.native
+  def createUpload(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    completedCB: js.Function2[/* result0 */ PlusUploaderUpload, /* result1 */ Double, Unit]
+  ): PlusUploaderUpload = js.native
   def createUpload(url: String, options: PlusUploaderUploadOptions): PlusUploaderUpload = js.native
   def createUpload(
     url: String,
@@ -70,6 +86,7 @@ trait PlusUploader extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   def enumerate(): Unit = js.native
+  def enumerate(enumCB: js.UndefOr[scala.Nothing], state: PlusUploaderUploadState): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[this.type], Unit], state: PlusUploaderUploadState): Unit = js.native
   /**

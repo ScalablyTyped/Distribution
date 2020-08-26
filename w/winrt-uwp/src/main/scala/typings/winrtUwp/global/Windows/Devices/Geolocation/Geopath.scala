@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Devices.Geolocation
 
 import typings.winrtUwp.Windows.Devices.Geolocation.BasicGeoposition
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
-import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -37,17 +36,5 @@ class Geopath protected ()
     altitudeReferenceSystem: typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem,
     spatialReferenceId: Double
   ) = this()
-  /** Gets the altitude reference system used by the Geopath . */
-  /* CompleteClass */
-  override var altitudeReferenceSystem: typings.winrtUwp.Windows.Devices.Geolocation.AltitudeReferenceSystem = js.native
-  /** Gets the type of geographic shape represented by the Geopath . */
-  /* CompleteClass */
-  override var geoshapeType: typings.winrtUwp.Windows.Devices.Geolocation.GeoshapeType = js.native
-  /** Gets the collection of geographic points that define the Geopath . */
-  /* CompleteClass */
-  override var positions: IVectorView[BasicGeoposition] = js.native
-  /** Gets the spatial reference ID (SRID) used by the Geopath . */
-  /* CompleteClass */
-  override var spatialReferenceId: Double = js.native
 }
 

@@ -9,27 +9,44 @@ import scala.scalajs.js.annotation._
 /**
   * Host
   */
+@js.native
 trait HostAttributes
   extends /* prop */ StringDictionary[js.Any] {
-  var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.undefined
-  var ref: js.UndefOr[js.Function1[/* el */ HTMLElement | Null, Unit]] = js.undefined
-  var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
+  var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.native
+  var ref: js.UndefOr[js.Function1[/* el */ HTMLElement | Null, Unit]] = js.native
+  var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
 }
 
 object HostAttributes {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    `class`: String | StringDictionary[Boolean] = null,
-    ref: /* el */ HTMLElement | Null => Unit = null,
-    style: StringDictionary[js.UndefOr[String]] = null
-  ): HostAttributes = {
+  def apply(): HostAttributes = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(js.Any.fromFunction1(ref))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostAttributes]
   }
+  @scala.inline
+  implicit class HostAttributesOps[Self <: HostAttributes] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClass(value: String | StringDictionary[Boolean]): Self = this.set("class", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClass: Self = this.set("class", js.undefined)
+    @scala.inline
+    def setRef(value: /* el */ HTMLElement | Null => Unit): Self = this.set("ref", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteRef: Self = this.set("ref", js.undefined)
+    @scala.inline
+    def setStyle(value: StringDictionary[js.UndefOr[String]]): Self = this.set("style", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStyle: Self = this.set("style", js.undefined)
+  }
+  
 }
 

@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 /**
   * Fired when the Live Photo playback stops.
   */
+@js.native
 trait LivePhotoViewStopEvent extends LivePhotoViewBaseEvent {
   /**
     * Returns the `playbackStyle` that was provided to start the playback.
     */
-  var playbackStyle: Double
+  var playbackStyle: Double = js.native
 }
 
 object LivePhotoViewStopEvent {
@@ -20,5 +21,20 @@ object LivePhotoViewStopEvent {
     val __obj = js.Dynamic.literal(playbackStyle = playbackStyle.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LivePhotoViewStopEvent]
   }
+  @scala.inline
+  implicit class LivePhotoViewStopEventOps[Self <: LivePhotoViewStopEvent] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setPlaybackStyle(value: Double): Self = this.set("playbackStyle", value.asInstanceOf[js.Any])
+  }
+  
 }
 

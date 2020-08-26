@@ -12,7 +12,7 @@ Get index of closest value in sorted array.
 | Keywords           | array, binary, search, closest |
 | # releases         | 18 |
 | # dependents       | 3 |
-| # downloads        | 59489 |
+| # downloads        | 59758 |
 | # stars            | 0 |
 
 ## Links

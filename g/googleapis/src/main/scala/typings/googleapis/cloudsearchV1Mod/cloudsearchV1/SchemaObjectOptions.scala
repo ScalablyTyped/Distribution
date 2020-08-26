@@ -22,11 +22,30 @@ trait SchemaObjectOptions extends js.Object {
 
 object SchemaObjectOptions {
   @scala.inline
-  def apply(displayOptions: SchemaObjectDisplayOptions = null, freshnessOptions: SchemaFreshnessOptions = null): SchemaObjectOptions = {
+  def apply(): SchemaObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (displayOptions != null) __obj.updateDynamic("displayOptions")(displayOptions.asInstanceOf[js.Any])
-    if (freshnessOptions != null) __obj.updateDynamic("freshnessOptions")(freshnessOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaObjectOptions]
   }
+  @scala.inline
+  implicit class SchemaObjectOptionsOps[Self <: SchemaObjectOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDisplayOptions(value: SchemaObjectDisplayOptions): Self = this.set("displayOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisplayOptions: Self = this.set("displayOptions", js.undefined)
+    @scala.inline
+    def setFreshnessOptions(value: SchemaFreshnessOptions): Self = this.set("freshnessOptions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFreshnessOptions: Self = this.set("freshnessOptions", js.undefined)
+  }
+  
 }
 

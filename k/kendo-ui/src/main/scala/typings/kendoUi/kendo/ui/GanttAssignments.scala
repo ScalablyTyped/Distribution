@@ -5,27 +5,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GanttAssignments extends js.Object {
-  var dataResourceIdField: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
-  var dataTaskIdField: js.UndefOr[String] = js.undefined
-  var dataValueField: js.UndefOr[String] = js.undefined
+  var dataResourceIdField: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataTaskIdField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.native
 }
 
 object GanttAssignments {
   @scala.inline
-  def apply(
-    dataResourceIdField: String = null,
-    dataSource: js.Any | DataSource = null,
-    dataTaskIdField: String = null,
-    dataValueField: String = null
-  ): GanttAssignments = {
+  def apply(): GanttAssignments = {
     val __obj = js.Dynamic.literal()
-    if (dataResourceIdField != null) __obj.updateDynamic("dataResourceIdField")(dataResourceIdField.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTaskIdField != null) __obj.updateDynamic("dataTaskIdField")(dataTaskIdField.asInstanceOf[js.Any])
-    if (dataValueField != null) __obj.updateDynamic("dataValueField")(dataValueField.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttAssignments]
   }
+  @scala.inline
+  implicit class GanttAssignmentsOps[Self <: GanttAssignments] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDataResourceIdField(value: String): Self = this.set("dataResourceIdField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataResourceIdField: Self = this.set("dataResourceIdField", js.undefined)
+    @scala.inline
+    def setDataSource(value: js.Any | DataSource): Self = this.set("dataSource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataSource: Self = this.set("dataSource", js.undefined)
+    @scala.inline
+    def setDataTaskIdField(value: String): Self = this.set("dataTaskIdField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataTaskIdField: Self = this.set("dataTaskIdField", js.undefined)
+    @scala.inline
+    def setDataValueField(value: String): Self = this.set("dataValueField", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataValueField: Self = this.set("dataValueField", js.undefined)
+  }
+  
 }
 

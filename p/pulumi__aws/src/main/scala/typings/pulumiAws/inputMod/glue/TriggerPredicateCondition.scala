@@ -31,20 +31,42 @@ trait TriggerPredicateCondition extends js.Object {
 
 object TriggerPredicateCondition {
   @scala.inline
-  def apply(
-    crawlState: Input[String] = null,
-    crawlerName: Input[String] = null,
-    jobName: Input[String] = null,
-    logicalOperator: Input[String] = null,
-    state: Input[String] = null
-  ): TriggerPredicateCondition = {
+  def apply(): TriggerPredicateCondition = {
     val __obj = js.Dynamic.literal()
-    if (crawlState != null) __obj.updateDynamic("crawlState")(crawlState.asInstanceOf[js.Any])
-    if (crawlerName != null) __obj.updateDynamic("crawlerName")(crawlerName.asInstanceOf[js.Any])
-    if (jobName != null) __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
-    if (logicalOperator != null) __obj.updateDynamic("logicalOperator")(logicalOperator.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerPredicateCondition]
   }
+  @scala.inline
+  implicit class TriggerPredicateConditionOps[Self <: TriggerPredicateCondition] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCrawlState(value: Input[String]): Self = this.set("crawlState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlState: Self = this.set("crawlState", js.undefined)
+    @scala.inline
+    def setCrawlerName(value: Input[String]): Self = this.set("crawlerName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCrawlerName: Self = this.set("crawlerName", js.undefined)
+    @scala.inline
+    def setJobName(value: Input[String]): Self = this.set("jobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteJobName: Self = this.set("jobName", js.undefined)
+    @scala.inline
+    def setLogicalOperator(value: Input[String]): Self = this.set("logicalOperator", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogicalOperator: Self = this.set("logicalOperator", js.undefined)
+    @scala.inline
+    def setState(value: Input[String]): Self = this.set("state", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteState: Self = this.set("state", js.undefined)
+  }
+  
 }
 

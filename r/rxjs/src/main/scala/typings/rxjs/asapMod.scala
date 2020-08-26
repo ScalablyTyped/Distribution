@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object asapMod extends js.Object {
   val asap: AsapScheduler = js.native
+  val asapScheduler: AsapScheduler = js.native
 }
 

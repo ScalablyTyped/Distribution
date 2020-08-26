@@ -22,12 +22,34 @@ trait SchemaVersionSummary extends js.Object {
 
 object SchemaVersionSummary {
   @scala.inline
-  def apply(SchemaArn: string = null, SchemaName: string = null, SchemaVersion: string = null): SchemaVersionSummary = {
+  def apply(): SchemaVersionSummary = {
     val __obj = js.Dynamic.literal()
-    if (SchemaArn != null) __obj.updateDynamic("SchemaArn")(SchemaArn.asInstanceOf[js.Any])
-    if (SchemaName != null) __obj.updateDynamic("SchemaName")(SchemaName.asInstanceOf[js.Any])
-    if (SchemaVersion != null) __obj.updateDynamic("SchemaVersion")(SchemaVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaVersionSummary]
   }
+  @scala.inline
+  implicit class SchemaVersionSummaryOps[Self <: SchemaVersionSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSchemaArn(value: string): Self = this.set("SchemaArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaArn: Self = this.set("SchemaArn", js.undefined)
+    @scala.inline
+    def setSchemaName(value: string): Self = this.set("SchemaName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaName: Self = this.set("SchemaName", js.undefined)
+    @scala.inline
+    def setSchemaVersion(value: string): Self = this.set("SchemaVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSchemaVersion: Self = this.set("SchemaVersion", js.undefined)
+  }
+  
 }
 

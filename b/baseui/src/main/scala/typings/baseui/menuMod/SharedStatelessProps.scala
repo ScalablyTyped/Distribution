@@ -10,44 +10,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SharedStatelessProps extends js.Object {
-  var activedescendantId: js.UndefOr[String] = js.undefined
-  var focusMenu: js.UndefOr[js.Function1[/* event */ FocusEvent | MouseEvent | KeyboardEvent, _]] = js.undefined
-  var getRequiredItemProps: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, RenderItemProps]] = js.undefined
-  var highlightedIndex: js.UndefOr[Double] = js.undefined
-  var items: ItemsT
-  var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.undefined
-  var rootRef: js.UndefOr[Ref[_]] = js.undefined
-  var unfocusMenu: js.UndefOr[js.Function0[_]] = js.undefined
+  var activedescendantId: js.UndefOr[String] = js.native
+  var focusMenu: js.UndefOr[js.Function1[/* event */ FocusEvent | MouseEvent | KeyboardEvent, _]] = js.native
+  var getRequiredItemProps: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ Double, RenderItemProps]] = js.native
+  var highlightedIndex: js.UndefOr[Double] = js.native
+  var items: ItemsT = js.native
+  var noResultsMsg: js.UndefOr[ReactNode] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* event */ typings.react.mod.FocusEvent[HTMLElement], _]] = js.native
+  var rootRef: js.UndefOr[Ref[_]] = js.native
+  var unfocusMenu: js.UndefOr[js.Function0[_]] = js.native
 }
 
 object SharedStatelessProps {
   @scala.inline
-  def apply(
-    items: ItemsT,
-    activedescendantId: String = null,
-    focusMenu: /* event */ FocusEvent | MouseEvent | KeyboardEvent => _ = null,
-    getRequiredItemProps: (/* item */ js.Any, /* index */ Double) => RenderItemProps = null,
-    highlightedIndex: js.UndefOr[Double] = js.undefined,
-    noResultsMsg: ReactNode = null,
-    onBlur: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _ = null,
-    onFocus: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _ = null,
-    rootRef: js.UndefOr[Null | Ref[_]] = js.undefined,
-    unfocusMenu: () => _ = null
-  ): SharedStatelessProps = {
+  def apply(items: ItemsT): SharedStatelessProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    if (activedescendantId != null) __obj.updateDynamic("activedescendantId")(activedescendantId.asInstanceOf[js.Any])
-    if (focusMenu != null) __obj.updateDynamic("focusMenu")(js.Any.fromFunction1(focusMenu))
-    if (getRequiredItemProps != null) __obj.updateDynamic("getRequiredItemProps")(js.Any.fromFunction2(getRequiredItemProps))
-    if (!js.isUndefined(highlightedIndex)) __obj.updateDynamic("highlightedIndex")(highlightedIndex.get.asInstanceOf[js.Any])
-    if (noResultsMsg != null) __obj.updateDynamic("noResultsMsg")(noResultsMsg.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
-    if (!js.isUndefined(rootRef)) __obj.updateDynamic("rootRef")(rootRef.asInstanceOf[js.Any])
-    if (unfocusMenu != null) __obj.updateDynamic("unfocusMenu")(js.Any.fromFunction0(unfocusMenu))
     __obj.asInstanceOf[SharedStatelessProps]
   }
+  @scala.inline
+  implicit class SharedStatelessPropsOps[Self <: SharedStatelessProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setItemsVarargs(value: ItemT*): Self = this.set("items", js.Array(value :_*))
+    @scala.inline
+    def setItems(value: ItemsT): Self = this.set("items", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setActivedescendantId(value: String): Self = this.set("activedescendantId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteActivedescendantId: Self = this.set("activedescendantId", js.undefined)
+    @scala.inline
+    def setFocusMenu(value: /* event */ FocusEvent | MouseEvent | KeyboardEvent => _): Self = this.set("focusMenu", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteFocusMenu: Self = this.set("focusMenu", js.undefined)
+    @scala.inline
+    def setGetRequiredItemProps(value: (/* item */ js.Any, /* index */ Double) => RenderItemProps): Self = this.set("getRequiredItemProps", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteGetRequiredItemProps: Self = this.set("getRequiredItemProps", js.undefined)
+    @scala.inline
+    def setHighlightedIndex(value: Double): Self = this.set("highlightedIndex", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHighlightedIndex: Self = this.set("highlightedIndex", js.undefined)
+    @scala.inline
+    def setNoResultsMsg(value: ReactNode): Self = this.set("noResultsMsg", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNoResultsMsg: Self = this.set("noResultsMsg", js.undefined)
+    @scala.inline
+    def setOnBlur(value: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* event */ typings.react.mod.FocusEvent[HTMLElement] => _): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+    @scala.inline
+    def setRootRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("rootRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRootRef(value: Ref[_]): Self = this.set("rootRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRootRef: Self = this.set("rootRef", js.undefined)
+    @scala.inline
+    def setRootRefNull: Self = this.set("rootRef", null)
+    @scala.inline
+    def setUnfocusMenu(value: () => _): Self = this.set("unfocusMenu", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteUnfocusMenu: Self = this.set("unfocusMenu", js.undefined)
+  }
+  
 }
 

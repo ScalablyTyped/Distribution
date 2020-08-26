@@ -1,20 +1,44 @@
 package typings.xstyledSystem.mod
 
-import typings.csstype.mod.GridGapProperty
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GridGapProps[TLength] extends js.Object {
-  val gridGap: js.UndefOr[ResponsiveValue[GridGapProperty[TLength]]] = js.undefined
+  val gridGap: js.UndefOr[
+    ResponsiveValue[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.GridGapProperty<TLength> */ _
+    ]
+  ] = js.native
 }
 
 object GridGapProps {
   @scala.inline
-  def apply[TLength](gridGap: ResponsiveValue[GridGapProperty[TLength]] = null): GridGapProps[TLength] = {
+  def apply[TLength](): GridGapProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (gridGap != null) __obj.updateDynamic("gridGap")(gridGap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGapProps[TLength]]
   }
+  @scala.inline
+  implicit class GridGapPropsOps[Self <: GridGapProps[_], TLength] (val x: Self with GridGapProps[TLength]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGridGap(
+      value: ResponsiveValue[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.GridGapProperty<TLength> */ _
+        ]
+    ): Self = this.set("gridGap", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGridGap: Self = this.set("gridGap", js.undefined)
+  }
+  
 }
 

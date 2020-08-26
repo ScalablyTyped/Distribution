@@ -30,7 +30,7 @@ class TypedTemplate protected () extends Element {
   def arguments: IList[TypedTemplateArgument] = js.native
   def containerAsStringTemplateParameterValue: StringTemplateParameterValue = js.native
   def text: String = js.native
-  def text(newValue: String): js.Any = js.native
+  def text_=(newValue: String): Unit = js.native
 }
 
 /* static members */

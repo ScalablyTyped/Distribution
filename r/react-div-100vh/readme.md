@@ -10,9 +10,9 @@ A React component that aims to solve '100vh' issue in mobile browsers
 | ------------------ | :-------------: |
 | Full name          | react-div-100vh |
 | Keywords           | - |
-| # releases         | 16 |
+| # releases         | 18 |
 | # dependents       | 1 |
-| # downloads        | 180789 |
+| # downloads        | 200436 |
 | # stars            | 0 |
 
 ## Links

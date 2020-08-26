@@ -26,17 +26,36 @@ trait UpdateDomainContactPrivacyRequest extends js.Object {
 
 object UpdateDomainContactPrivacyRequest {
   @scala.inline
-  def apply(
-    DomainName: DomainName,
-    AdminPrivacy: js.UndefOr[Boolean] = js.undefined,
-    RegistrantPrivacy: js.UndefOr[Boolean] = js.undefined,
-    TechPrivacy: js.UndefOr[Boolean] = js.undefined
-  ): UpdateDomainContactPrivacyRequest = {
+  def apply(DomainName: DomainName): UpdateDomainContactPrivacyRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
-    if (!js.isUndefined(AdminPrivacy)) __obj.updateDynamic("AdminPrivacy")(AdminPrivacy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(RegistrantPrivacy)) __obj.updateDynamic("RegistrantPrivacy")(RegistrantPrivacy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(TechPrivacy)) __obj.updateDynamic("TechPrivacy")(TechPrivacy.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainContactPrivacyRequest]
   }
+  @scala.inline
+  implicit class UpdateDomainContactPrivacyRequestOps[Self <: UpdateDomainContactPrivacyRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDomainName(value: DomainName): Self = this.set("DomainName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAdminPrivacy(value: Boolean): Self = this.set("AdminPrivacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdminPrivacy: Self = this.set("AdminPrivacy", js.undefined)
+    @scala.inline
+    def setRegistrantPrivacy(value: Boolean): Self = this.set("RegistrantPrivacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRegistrantPrivacy: Self = this.set("RegistrantPrivacy", js.undefined)
+    @scala.inline
+    def setTechPrivacy(value: Boolean): Self = this.set("TechPrivacy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTechPrivacy: Self = this.set("TechPrivacy", js.undefined)
+  }
+  
 }
 

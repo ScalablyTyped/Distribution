@@ -10,19 +10,20 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
+@js.native
 trait Polygon extends js.Object {
   /**
     * `false` after moveTo, `true` after `closePath`. In all other cases it is `true`.
     * @member {boolean} PIXI.Polygon#closeStroke
     * @default true
     */
-  var closeStroke: Boolean
+  var closeStroke: Boolean = js.native
   /**
     * An array of the points of this polygon
     *
     * @member {number[]} PIXI.Polygon#points
     */
-  var points: js.Array[Double]
+  var points: js.Array[Double] = js.native
   /**
     * The type of the object, mainly used to avoid `instanceof` checks
     *
@@ -31,7 +32,7 @@ trait Polygon extends js.Object {
     * @default PIXI.SHAPES.POLY
     * @see PIXI.SHAPES
     */
-  val `type`: Double
+  val `type`: Double = js.native
   /**
     * Checks whether the x and y coordinates passed to this function are contained within this polygon
     *
@@ -39,7 +40,7 @@ trait Polygon extends js.Object {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coordinates are within this polygon
     */
-  def contains(x: Double, y: Double): Boolean
+  def contains(x: Double, y: Double): Boolean = js.native
 }
 
 object Polygon {
@@ -54,5 +55,28 @@ object Polygon {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Polygon]
   }
+  @scala.inline
+  implicit class PolygonOps[Self <: Polygon] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCloseStroke(value: Boolean): Self = this.set("closeStroke", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setContains(value: (Double, Double) => Boolean): Self = this.set("contains", js.Any.fromFunction2(value))
+    @scala.inline
+    def setPointsVarargs(value: Double*): Self = this.set("points", js.Array(value :_*))
+    @scala.inline
+    def setPoints(value: js.Array[Double]): Self = this.set("points", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

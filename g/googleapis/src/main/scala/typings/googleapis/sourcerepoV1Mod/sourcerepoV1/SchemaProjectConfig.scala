@@ -28,16 +28,34 @@ trait SchemaProjectConfig extends js.Object {
 
 object SchemaProjectConfig {
   @scala.inline
-  def apply(
-    enablePrivateKeyCheck: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    pubsubConfigs: StringDictionary[SchemaPubsubConfig] = null
-  ): SchemaProjectConfig = {
+  def apply(): SchemaProjectConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enablePrivateKeyCheck)) __obj.updateDynamic("enablePrivateKeyCheck")(enablePrivateKeyCheck.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (pubsubConfigs != null) __obj.updateDynamic("pubsubConfigs")(pubsubConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaProjectConfig]
   }
+  @scala.inline
+  implicit class SchemaProjectConfigOps[Self <: SchemaProjectConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnablePrivateKeyCheck(value: Boolean): Self = this.set("enablePrivateKeyCheck", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnablePrivateKeyCheck: Self = this.set("enablePrivateKeyCheck", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setPubsubConfigs(value: StringDictionary[SchemaPubsubConfig]): Self = this.set("pubsubConfigs", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePubsubConfigs: Self = this.set("pubsubConfigs", js.undefined)
+  }
+  
 }
 

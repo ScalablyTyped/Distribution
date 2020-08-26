@@ -22,16 +22,38 @@ trait ResourceIdentifierSummary extends js.Object {
 
 object ResourceIdentifierSummary {
   @scala.inline
-  def apply(
-    LogicalResourceIds: LogicalResourceIds = null,
-    ResourceIdentifiers: ResourceIdentifiers = null,
-    ResourceType: ResourceType = null
-  ): ResourceIdentifierSummary = {
+  def apply(): ResourceIdentifierSummary = {
     val __obj = js.Dynamic.literal()
-    if (LogicalResourceIds != null) __obj.updateDynamic("LogicalResourceIds")(LogicalResourceIds.asInstanceOf[js.Any])
-    if (ResourceIdentifiers != null) __obj.updateDynamic("ResourceIdentifiers")(ResourceIdentifiers.asInstanceOf[js.Any])
-    if (ResourceType != null) __obj.updateDynamic("ResourceType")(ResourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceIdentifierSummary]
   }
+  @scala.inline
+  implicit class ResourceIdentifierSummaryOps[Self <: ResourceIdentifierSummary] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLogicalResourceIdsVarargs(value: LogicalResourceId*): Self = this.set("LogicalResourceIds", js.Array(value :_*))
+    @scala.inline
+    def setLogicalResourceIds(value: LogicalResourceIds): Self = this.set("LogicalResourceIds", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogicalResourceIds: Self = this.set("LogicalResourceIds", js.undefined)
+    @scala.inline
+    def setResourceIdentifiersVarargs(value: ResourceIdentifierPropertyKey*): Self = this.set("ResourceIdentifiers", js.Array(value :_*))
+    @scala.inline
+    def setResourceIdentifiers(value: ResourceIdentifiers): Self = this.set("ResourceIdentifiers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceIdentifiers: Self = this.set("ResourceIdentifiers", js.undefined)
+    @scala.inline
+    def setResourceType(value: ResourceType): Self = this.set("ResourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("ResourceType", js.undefined)
+  }
+  
 }
 

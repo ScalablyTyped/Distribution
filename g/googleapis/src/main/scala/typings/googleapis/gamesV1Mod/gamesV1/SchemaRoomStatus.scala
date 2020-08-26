@@ -49,22 +49,48 @@ trait SchemaRoomStatus extends js.Object {
 
 object SchemaRoomStatus {
   @scala.inline
-  def apply(
-    autoMatchingStatus: SchemaRoomAutoMatchStatus = null,
-    kind: String = null,
-    participants: js.Array[SchemaRoomParticipant] = null,
-    roomId: String = null,
-    status: String = null,
-    statusVersion: js.UndefOr[Double] = js.undefined
-  ): SchemaRoomStatus = {
+  def apply(): SchemaRoomStatus = {
     val __obj = js.Dynamic.literal()
-    if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (participants != null) __obj.updateDynamic("participants")(participants.asInstanceOf[js.Any])
-    if (roomId != null) __obj.updateDynamic("roomId")(roomId.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusVersion)) __obj.updateDynamic("statusVersion")(statusVersion.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaRoomStatus]
   }
+  @scala.inline
+  implicit class SchemaRoomStatusOps[Self <: SchemaRoomStatus] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAutoMatchingStatus(value: SchemaRoomAutoMatchStatus): Self = this.set("autoMatchingStatus", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoMatchingStatus: Self = this.set("autoMatchingStatus", js.undefined)
+    @scala.inline
+    def setKind(value: String): Self = this.set("kind", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKind: Self = this.set("kind", js.undefined)
+    @scala.inline
+    def setParticipantsVarargs(value: SchemaRoomParticipant*): Self = this.set("participants", js.Array(value :_*))
+    @scala.inline
+    def setParticipants(value: js.Array[SchemaRoomParticipant]): Self = this.set("participants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParticipants: Self = this.set("participants", js.undefined)
+    @scala.inline
+    def setRoomId(value: String): Self = this.set("roomId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoomId: Self = this.set("roomId", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setStatusVersion(value: Double): Self = this.set("statusVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusVersion: Self = this.set("statusVersion", js.undefined)
+  }
+  
 }
 

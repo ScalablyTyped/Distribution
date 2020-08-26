@@ -12,8 +12,35 @@ class Projection protected () extends js.Object {
   def this(
     nodes: js.Array[GraphNode],
     groups: js.Array[ProjectionGroup],
+    rootGroup: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_]
+  ) = this()
+  def this(
+    nodes: js.Array[GraphNode],
+    groups: js.Array[ProjectionGroup],
     rootGroup: ProjectionGroup,
     constraints: js.Array[_]
+  ) = this()
+  def this(
+    nodes: js.Array[GraphNode],
+    groups: js.Array[ProjectionGroup],
+    rootGroup: js.UndefOr[scala.Nothing],
+    constraints: js.UndefOr[scala.Nothing],
+    avoidOverlaps: Boolean
+  ) = this()
+  def this(
+    nodes: js.Array[GraphNode],
+    groups: js.Array[ProjectionGroup],
+    rootGroup: js.UndefOr[scala.Nothing],
+    constraints: js.Array[_],
+    avoidOverlaps: Boolean
+  ) = this()
+  def this(
+    nodes: js.Array[GraphNode],
+    groups: js.Array[ProjectionGroup],
+    rootGroup: ProjectionGroup,
+    constraints: js.UndefOr[scala.Nothing],
+    avoidOverlaps: Boolean
   ) = this()
   def this(
     nodes: js.Array[GraphNode],

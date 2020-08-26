@@ -34,22 +34,48 @@ trait PutEventsRequestEntry extends js.Object {
 
 object PutEventsRequestEntry {
   @scala.inline
-  def apply(
-    Detail: String = null,
-    DetailType: String = null,
-    EventBusName: NonPartnerEventBusName = null,
-    Resources: EventResourceList = null,
-    Source: String = null,
-    Time: EventTime = null
-  ): PutEventsRequestEntry = {
+  def apply(): PutEventsRequestEntry = {
     val __obj = js.Dynamic.literal()
-    if (Detail != null) __obj.updateDynamic("Detail")(Detail.asInstanceOf[js.Any])
-    if (DetailType != null) __obj.updateDynamic("DetailType")(DetailType.asInstanceOf[js.Any])
-    if (EventBusName != null) __obj.updateDynamic("EventBusName")(EventBusName.asInstanceOf[js.Any])
-    if (Resources != null) __obj.updateDynamic("Resources")(Resources.asInstanceOf[js.Any])
-    if (Source != null) __obj.updateDynamic("Source")(Source.asInstanceOf[js.Any])
-    if (Time != null) __obj.updateDynamic("Time")(Time.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventsRequestEntry]
   }
+  @scala.inline
+  implicit class PutEventsRequestEntryOps[Self <: PutEventsRequestEntry] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetail(value: String): Self = this.set("Detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("Detail", js.undefined)
+    @scala.inline
+    def setDetailType(value: String): Self = this.set("DetailType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetailType: Self = this.set("DetailType", js.undefined)
+    @scala.inline
+    def setEventBusName(value: NonPartnerEventBusName): Self = this.set("EventBusName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventBusName: Self = this.set("EventBusName", js.undefined)
+    @scala.inline
+    def setResourcesVarargs(value: EventResource*): Self = this.set("Resources", js.Array(value :_*))
+    @scala.inline
+    def setResources(value: EventResourceList): Self = this.set("Resources", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResources: Self = this.set("Resources", js.undefined)
+    @scala.inline
+    def setSource(value: String): Self = this.set("Source", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSource: Self = this.set("Source", js.undefined)
+    @scala.inline
+    def setTime(value: EventTime): Self = this.set("Time", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTime: Self = this.set("Time", js.undefined)
+  }
+  
 }
 

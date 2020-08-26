@@ -1,8 +1,6 @@
 package typings.extjs.Ext.dd
 
-import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
-import typings.extjs.Ext.IClass
 import typings.extjs.Ext.IElement
 import typings.extjs.Ext.panel.IPanel
 import typings.std.HTMLElement
@@ -10,94 +8,93 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IPanelProxy extends IBase {
   /** [Method] Gets the proxy s element
     * @returns Ext.Element The proxy's element
     */
-  var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
+  var getEl: js.UndefOr[js.Function0[IElement]] = js.native
   /** [Method] Gets the proxy s ghost Panel
     * @returns Ext.panel.Panel The proxy's ghost Panel
     */
-  var getGhost: js.UndefOr[js.Function0[IPanel]] = js.undefined
+  var getGhost: js.UndefOr[js.Function0[IPanel]] = js.native
   /** [Method] Gets the proxy element
     * @returns Ext.Element The proxy's element
     */
-  var getProxy: js.UndefOr[js.Function0[IElement]] = js.undefined
+  var getProxy: js.UndefOr[js.Function0[IElement]] = js.native
   /** [Method] Hides the proxy */
-  var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var hide: js.UndefOr[js.Function0[Unit]] = js.native
   /** [Config Option] (Boolean) */
-  var insertProxy: js.UndefOr[Boolean] = js.undefined
+  var insertProxy: js.UndefOr[Boolean] = js.native
   /** [Config Option] (Boolean) */
-  var moveOnDrag: js.UndefOr[Boolean] = js.undefined
+  var moveOnDrag: js.UndefOr[Boolean] = js.native
   /** [Method] Moves the proxy to a different position in the DOM
     * @param parentNode HTMLElement The proxy's parent DOM node
     * @param before HTMLElement The sibling node before which the proxy should be inserted. Defaults to the parent's last child if not specified.
     */
   var moveProxy: js.UndefOr[
     js.Function2[/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement], Unit]
-  ] = js.undefined
+  ] = js.native
   /** [Property] (Ext.panel.Panel) */
-  var panel: js.UndefOr[IPanel] = js.undefined
+  var panel: js.UndefOr[IPanel] = js.native
   /** [Method] Shows the proxy */
-  var show: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var show: js.UndefOr[js.Function0[Unit]] = js.native
 }
 
 object IPanelProxy {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    extend: String = null,
-    getEl: () => IElement = null,
-    getGhost: () => IPanel = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    getProxy: () => IElement = null,
-    hide: () => Unit = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => IPanelProxy = null,
-    insertProxy: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    moveOnDrag: js.UndefOr[Boolean] = js.undefined,
-    moveProxy: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit = null,
-    panel: IPanel = null,
-    requires: Array = null,
-    self: IClass = null,
-    show: () => Unit = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IPanelProxy = {
+  def apply(): IPanelProxy = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getEl != null) __obj.updateDynamic("getEl")(js.Any.fromFunction0(getEl))
-    if (getGhost != null) __obj.updateDynamic("getGhost")(js.Any.fromFunction0(getGhost))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (getProxy != null) __obj.updateDynamic("getProxy")(js.Any.fromFunction0(getProxy))
-    if (hide != null) __obj.updateDynamic("hide")(js.Any.fromFunction0(hide))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (!js.isUndefined(insertProxy)) __obj.updateDynamic("insertProxy")(insertProxy.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOnDrag)) __obj.updateDynamic("moveOnDrag")(moveOnDrag.get.asInstanceOf[js.Any])
-    if (moveProxy != null) __obj.updateDynamic("moveProxy")(js.Any.fromFunction2(moveProxy))
-    if (panel != null) __obj.updateDynamic("panel")(panel.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction0(show))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanelProxy]
   }
+  @scala.inline
+  implicit class IPanelProxyOps[Self <: IPanelProxy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGetEl(value: () => IElement): Self = this.set("getEl", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetEl: Self = this.set("getEl", js.undefined)
+    @scala.inline
+    def setGetGhost(value: () => IPanel): Self = this.set("getGhost", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetGhost: Self = this.set("getGhost", js.undefined)
+    @scala.inline
+    def setGetProxy(value: () => IElement): Self = this.set("getProxy", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteGetProxy: Self = this.set("getProxy", js.undefined)
+    @scala.inline
+    def setHide(value: () => Unit): Self = this.set("hide", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteHide: Self = this.set("hide", js.undefined)
+    @scala.inline
+    def setInsertProxy(value: Boolean): Self = this.set("insertProxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInsertProxy: Self = this.set("insertProxy", js.undefined)
+    @scala.inline
+    def setMoveOnDrag(value: Boolean): Self = this.set("moveOnDrag", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMoveOnDrag: Self = this.set("moveOnDrag", js.undefined)
+    @scala.inline
+    def setMoveProxy(value: (/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement]) => Unit): Self = this.set("moveProxy", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteMoveProxy: Self = this.set("moveProxy", js.undefined)
+    @scala.inline
+    def setPanel(value: IPanel): Self = this.set("panel", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePanel: Self = this.set("panel", js.undefined)
+    @scala.inline
+    def setShow(value: () => Unit): Self = this.set("show", js.Any.fromFunction0(value))
+    @scala.inline
+    def deleteShow: Self = this.set("show", js.undefined)
+  }
+  
 }
 

@@ -6,6 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InstrumentContext extends Context {
   /**
     * The instrument data. Can contain some or all of:
@@ -19,21 +20,37 @@ trait InstrumentContext extends Context {
     * * `FIGI`: [FIGI](https://www.openfigi.com/about/figi)
     */
   @JSName("id")
-  var id_InstrumentContext: BBG
+  var id_InstrumentContext: BBG = js.native
   /**
     * The context type is always 'fdc3.instrument'.
     */
   @JSName("type")
-  var type_InstrumentContext: fdc3Dotinstrument
+  var type_InstrumentContext: fdc3Dotinstrument = js.native
 }
 
 object InstrumentContext {
   @scala.inline
-  def apply(id: BBG, `type`: fdc3Dotinstrument, name: String = null): InstrumentContext = {
+  def apply(id: BBG, `type`: fdc3Dotinstrument): InstrumentContext = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstrumentContext]
   }
+  @scala.inline
+  implicit class InstrumentContextOps[Self <: InstrumentContext] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setId(value: BBG): Self = this.set("id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: fdc3Dotinstrument): Self = this.set("type", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -90,6 +90,7 @@ import scala.scalajs.js.annotation._
   *
   * The {@link ResourceId} and ResourceObject members are set to {@link XResourceId} and object reference of the deactivated resource.
   */
+@js.native
 trait XConfigurationController
   extends XConfigurationControllerRequestQueue
      with XConfigurationControllerBroadcaster
@@ -99,31 +100,31 @@ trait XConfigurationController
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  val CurrentConfiguration: XConfiguration
+  val CurrentConfiguration: XConfiguration = js.native
   /**
     * Return a copy of the requested configuration.
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  val RequestedConfiguration: XConfiguration
+  val RequestedConfiguration: XConfiguration = js.native
   /**
     * Return a copy of the current configuration.
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  def getCurrentConfiguration(): XConfiguration
+  def getCurrentConfiguration(): XConfiguration = js.native
   /**
     * Return a copy of the requested configuration.
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  def getRequestedConfiguration(): XConfiguration
+  def getRequestedConfiguration(): XConfiguration = js.native
   /**
     * Return the active resource specified by the given resource id.
     * @param xResourceId A valid resource id. This should, but does not have to be, the resource id of an active resource.
     * @returns When the given resource id specifies an active resource then that resource is returned. Otherwise an empty reference is returned.
     */
-  def getResource(xResourceId: XResourceId): XResource
+  def getResource(xResourceId: XResourceId): XResource = js.native
   /**
     * Lock the processing of configuration change requests.
     *
@@ -133,7 +134,7 @@ trait XConfigurationController
     * Recursive {@link lock()} calls are recognized: the configuration controller is locked while {@link lock()} was called more often than {@link unlock()}
     * .
     */
-  def lock(): Unit
+  def lock(): Unit = js.native
   /**
     * Request the activation of a resource.
     *
@@ -141,7 +142,7 @@ trait XConfigurationController
     * @param xResourceId The resource whose activation is requested.
     * @param eMode  When eMode is REPLACE then, before adding the resource activation to the request queue, similar resources linked to the same anchor are re
     */
-  def requestResourceActivation(xResourceId: XResourceId, eMode: ResourceActivationMode): Unit
+  def requestResourceActivation(xResourceId: XResourceId, eMode: ResourceActivationMode): Unit = js.native
   /**
     * Request the deactivation of a resource.
     *
@@ -150,7 +151,7 @@ trait XConfigurationController
     * Requesting the deactivation of a resource that is not active is not an error.
     * @param xResourceId The resource whose deactivation is requested.
     */
-  def requestResourceDeactivation(xResourceId: XResourceId): Unit
+  def requestResourceDeactivation(xResourceId: XResourceId): Unit = js.native
   /**
     * Replace the requested configuration with the given configuration and schedule an update of the current configuration.
     *
@@ -164,21 +165,21 @@ trait XConfigurationController
     * configuration can be different from the given configuration.
     * @param xConfiguration This typically is a configuration that was obtained with an earlier {@link getRequestedConfiguration()} call.
     */
-  def restoreConfiguration(xConfiguration: XConfiguration): Unit
+  def restoreConfiguration(xConfiguration: XConfiguration): Unit = js.native
   /**
     * Unlock the processing of configuration change requests.
     *
     * When {@link unlock()} is called as many times as {@link lock()} and the queue of configuration change requests is not empty the configuration
     * controller continues the processing of the change requests. An update of the current configuration will eventually being made.
     */
-  def unlock(): Unit
+  def unlock(): Unit = js.native
   /**
     * Explicitly request an update of the current configuration.
     *
     * Call it when a resource is activated or deactivated without the control and knowledge of the drawing framework. Calling this method (from outside the
     * drawing framework) should hardly every be necessary.
     */
-  def update(): Unit
+  def update(): Unit = js.native
 }
 
 object XConfigurationController {
@@ -208,5 +209,40 @@ object XConfigurationController {
     val __obj = js.Dynamic.literal(CurrentConfiguration = CurrentConfiguration.asInstanceOf[js.Any], RequestedConfiguration = RequestedConfiguration.asInstanceOf[js.Any], addConfigurationChangeListener = js.Any.fromFunction3(addConfigurationChangeListener), addResourceFactory = js.Any.fromFunction2(addResourceFactory), getCurrentConfiguration = js.Any.fromFunction0(getCurrentConfiguration), getRequestedConfiguration = js.Any.fromFunction0(getRequestedConfiguration), getResource = js.Any.fromFunction1(getResource), getResourceFactory = js.Any.fromFunction1(getResourceFactory), hasPendingRequests = js.Any.fromFunction0(hasPendingRequests), lock = js.Any.fromFunction0(lock), notifyEvent = js.Any.fromFunction1(notifyEvent), postChangeRequest = js.Any.fromFunction1(postChangeRequest), removeConfigurationChangeListener = js.Any.fromFunction1(removeConfigurationChangeListener), removeResourceFactoryForReference = js.Any.fromFunction1(removeResourceFactoryForReference), removeResourceFactoryForURL = js.Any.fromFunction1(removeResourceFactoryForURL), requestResourceActivation = js.Any.fromFunction2(requestResourceActivation), requestResourceDeactivation = js.Any.fromFunction1(requestResourceDeactivation), restoreConfiguration = js.Any.fromFunction1(restoreConfiguration), unlock = js.Any.fromFunction0(unlock), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[XConfigurationController]
   }
+  @scala.inline
+  implicit class XConfigurationControllerOps[Self <: XConfigurationController] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCurrentConfiguration(value: XConfiguration): Self = this.set("CurrentConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRequestedConfiguration(value: XConfiguration): Self = this.set("RequestedConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setGetCurrentConfiguration(value: () => XConfiguration): Self = this.set("getCurrentConfiguration", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetRequestedConfiguration(value: () => XConfiguration): Self = this.set("getRequestedConfiguration", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGetResource(value: XResourceId => XResource): Self = this.set("getResource", js.Any.fromFunction1(value))
+    @scala.inline
+    def setLock(value: () => Unit): Self = this.set("lock", js.Any.fromFunction0(value))
+    @scala.inline
+    def setRequestResourceActivation(value: (XResourceId, ResourceActivationMode) => Unit): Self = this.set("requestResourceActivation", js.Any.fromFunction2(value))
+    @scala.inline
+    def setRequestResourceDeactivation(value: XResourceId => Unit): Self = this.set("requestResourceDeactivation", js.Any.fromFunction1(value))
+    @scala.inline
+    def setRestoreConfiguration(value: XConfiguration => Unit): Self = this.set("restoreConfiguration", js.Any.fromFunction1(value))
+    @scala.inline
+    def setUnlock(value: () => Unit): Self = this.set("unlock", js.Any.fromFunction0(value))
+    @scala.inline
+    def setUpdate(value: () => Unit): Self = this.set("update", js.Any.fromFunction0(value))
+  }
+  
 }
 

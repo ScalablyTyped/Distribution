@@ -63,20 +63,20 @@ class JavaActionParameter protected () extends CodeActionParameter {
     * In version 6.6.0: introduced
     */
   def javaType: Type = js.native
-  def javaType(newValue: Type): js.Any = js.native
+  def javaType_=(newValue: Type): Unit = js.native
   /**
     * In version 7.21.0: deleted
     * In version 6.7.0: introduced
     */
   def parameterType: ParameterType = js.native
-  def parameterType(newValue: ParameterType): js.Any = js.native
+  def parameterType_=(newValue: ParameterType): Unit = js.native
   /**
     * The value of this property is conceptually of type dataTypes.LegacyDataType.
     *
     * In version 6.6.0: deleted
     */
   def `type`: String = js.native
-  def `type`(newValue: String): js.Any = js.native
+  def type_=(newValue: String): Unit = js.native
 }
 
 /* static members */

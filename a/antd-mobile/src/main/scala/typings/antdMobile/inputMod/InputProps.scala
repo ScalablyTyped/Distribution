@@ -5,23 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait InputProps extends HTMLInputProps {
-  var onBlur: js.UndefOr[InputEventHandler] = js.undefined
-  var onFocus: js.UndefOr[InputEventHandler] = js.undefined
+  var onBlur: js.UndefOr[InputEventHandler] = js.native
+  var onFocus: js.UndefOr[InputEventHandler] = js.native
 }
 
 object InputProps {
   @scala.inline
-  def apply(
-    HTMLInputProps: HTMLInputProps = null,
-    onBlur: /* value */ js.UndefOr[String] => Unit = null,
-    onFocus: /* value */ js.UndefOr[String] => Unit = null
-  ): InputProps = {
+  def apply(): InputProps = {
     val __obj = js.Dynamic.literal()
-    if (HTMLInputProps != null) js.Dynamic.global.Object.assign(__obj, HTMLInputProps)
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1(onBlur))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1(onFocus))
     __obj.asInstanceOf[InputProps]
   }
+  @scala.inline
+  implicit class InputPropsOps[Self <: InputProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOnBlur(value: /* value */ js.UndefOr[String] => Unit): Self = this.set("onBlur", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnBlur: Self = this.set("onBlur", js.undefined)
+    @scala.inline
+    def setOnFocus(value: /* value */ js.UndefOr[String] => Unit): Self = this.set("onFocus", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnFocus: Self = this.set("onFocus", js.undefined)
+  }
+  
 }
 

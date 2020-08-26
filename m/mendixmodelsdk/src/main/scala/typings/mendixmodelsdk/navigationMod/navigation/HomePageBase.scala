@@ -29,16 +29,12 @@ abstract class HomePageBase protected () extends Element {
   @JSName("model")
   var model_FHomePageBase: IModel = js.native
   def containerAsNavigationProfile: NavigationProfile = js.native
-  def microflow(): js.Any = js.native
-  def microflow(newValue: IMicroflow): js.Any = js.native
+  def microflow: IMicroflow | Null = js.native
   def microflowQualifiedName: String | Null = js.native
-  @JSName("microflow")
-  def microflow_Union: IMicroflow | Null = js.native
-  def page(): js.Any = js.native
-  def page(newValue: IPage): js.Any = js.native
+  def microflow_=(newValue: IMicroflow | Null): Unit = js.native
+  def page: IPage | Null = js.native
   def pageQualifiedName: String | Null = js.native
-  @JSName("page")
-  def page_Union: IPage | Null = js.native
+  def page_=(newValue: IPage | Null): Unit = js.native
 }
 
 /* static members */

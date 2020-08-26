@@ -41,6 +41,7 @@ trait RedisClient
   def batch(args: js.Array[js.Array[String | Double | Callback[_]]]): Multi = js.native
   def cork(): Unit = js.native
   def duplicate(): RedisClient = js.native
+  def duplicate(options: js.UndefOr[scala.Nothing], cb: Callback[RedisClient]): RedisClient = js.native
   def duplicate(options: ClientOpts): RedisClient = js.native
   def duplicate(options: ClientOpts, cb: Callback[RedisClient]): RedisClient = js.native
   /**
@@ -76,10 +77,12 @@ trait RedisClient
   @JSName("on")
   def on_unsubscribe(event: unsubscribe, listener: js.Function2[/* channel */ String, /* count */ Double, Unit]): this.type = js.native
   def sendCommand(command: String): Boolean = js.native
+  def sendCommand(command: String, args: js.UndefOr[scala.Nothing], cb: Callback[_]): Boolean = js.native
   def sendCommand(command: String, args: js.Array[_]): Boolean = js.native
   def sendCommand(command: String, args: js.Array[_], cb: Callback[_]): Boolean = js.native
   def sendCommand(command: String, cb: Callback[_]): Boolean = js.native
   def send_command(command: String): Boolean = js.native
+  def send_command(command: String, args: js.UndefOr[scala.Nothing], cb: Callback[_]): Boolean = js.native
   def send_command(command: String, args: js.Array[_]): Boolean = js.native
   def send_command(command: String, args: js.Array[_], cb: Callback[_]): Boolean = js.native
   def send_command(command: String, cb: Callback[_]): Boolean = js.native

@@ -12,7 +12,7 @@ qs for koa
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 68 |
-| # downloads        | 499560 |
+| # downloads        | 530327 |
 | # stars            | 3 |
 
 ## Links

@@ -14,10 +14,26 @@ trait ModifyEbsDefaultKmsKeyIdResult extends js.Object {
 
 object ModifyEbsDefaultKmsKeyIdResult {
   @scala.inline
-  def apply(KmsKeyId: String = null): ModifyEbsDefaultKmsKeyIdResult = {
+  def apply(): ModifyEbsDefaultKmsKeyIdResult = {
     val __obj = js.Dynamic.literal()
-    if (KmsKeyId != null) __obj.updateDynamic("KmsKeyId")(KmsKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyEbsDefaultKmsKeyIdResult]
   }
+  @scala.inline
+  implicit class ModifyEbsDefaultKmsKeyIdResultOps[Self <: ModifyEbsDefaultKmsKeyIdResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setKmsKeyId(value: String): Self = this.set("KmsKeyId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKmsKeyId: Self = this.set("KmsKeyId", js.undefined)
+  }
+  
 }
 

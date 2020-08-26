@@ -12,7 +12,7 @@ Mime database interface
 | Keywords           | mime, database, content-type |
 | # releases         | 3 |
 | # dependents       | 5 |
-| # downloads        | 9966436 |
+| # downloads        | 9838890 |
 | # stars            | 0 |
 
 ## Links

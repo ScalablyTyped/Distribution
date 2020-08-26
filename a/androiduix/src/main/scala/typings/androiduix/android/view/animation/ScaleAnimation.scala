@@ -4,31 +4,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("android.view.animation.ScaleAnimation")
 @js.native
-class ScaleAnimation protected () extends Animation {
-  def this(fromX: Double, toX: Double, fromY: Double, toY: Double) = this()
-  def this(fromX: Double, toX: Double, fromY: Double, toY: Double, pivotXType: Double) = this()
-  def this(fromX: Double, toX: Double, fromY: Double, toY: Double, pivotXType: Double, pivotXValue: Double) = this()
-  def this(
-    fromX: Double,
-    toX: Double,
-    fromY: Double,
-    toY: Double,
-    pivotXType: Double,
-    pivotXValue: Double,
-    pivotYType: Double
-  ) = this()
-  def this(
-    fromX: Double,
-    toX: Double,
-    fromY: Double,
-    toY: Double,
-    pivotXType: Double,
-    pivotXValue: Double,
-    pivotYType: Double,
-    pivotYValue: Double
-  ) = this()
+trait ScaleAnimation extends Animation {
   var mFromX: js.Any = js.native
   var mFromXData: js.Any = js.native
   var mFromY: js.Any = js.native

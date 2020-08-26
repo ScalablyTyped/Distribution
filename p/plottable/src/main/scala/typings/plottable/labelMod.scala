@@ -20,6 +20,7 @@ object labelMod extends js.Object {
     */
   class AxisLabel () extends Label {
     def this(text: String) = this()
+    def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(text: String, angle: Double) = this()
   }
   
@@ -33,6 +34,7 @@ object labelMod extends js.Object {
     */
   class Label () extends Component {
     def this(displayText: String) = this()
+    def this(displayText: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(displayText: String, angle: Double) = this()
     var _angle: Double = js.native
     var _measurer: CacheMeasurer = js.native
@@ -84,6 +86,7 @@ object labelMod extends js.Object {
     */
   class TitleLabel () extends Label {
     def this(text: String) = this()
+    def this(text: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(text: String, angle: Double) = this()
   }
   

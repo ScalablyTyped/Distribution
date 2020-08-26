@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Create an instance of a pc.ScriptRegistry.
-  Note: PlayCanvas scripts can access the Script Registry from inside the application with {@link pc.Application#scripts} {@link pc.ADDRESS_REPEAT}.
+  * Note: PlayCanvas scripts can access the Script Registry from inside the application with {@link pc.Application#scripts} {@link pc.ADDRESS_REPEAT}.
   * @param app - Application to attach registry to.
   */
 @JSImport("playcanvas", "ScriptRegistry")

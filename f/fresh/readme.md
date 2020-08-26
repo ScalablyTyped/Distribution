@@ -11,8 +11,8 @@ HTTP response freshness testing
 | Full name          | fresh |
 | Keywords           | fresh, http, conditional, cache |
 | # releases         | 0 |
-| # dependents       | 359 |
-| # downloads        | 431507397 |
+| # dependents       | 363 |
+| # downloads        | 440122184 |
 | # stars            | 14 |
 
 ## Links

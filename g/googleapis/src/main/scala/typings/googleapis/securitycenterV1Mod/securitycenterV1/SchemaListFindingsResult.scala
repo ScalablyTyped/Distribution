@@ -21,11 +21,30 @@ trait SchemaListFindingsResult extends js.Object {
 
 object SchemaListFindingsResult {
   @scala.inline
-  def apply(finding: SchemaFinding = null, stateChange: String = null): SchemaListFindingsResult = {
+  def apply(): SchemaListFindingsResult = {
     val __obj = js.Dynamic.literal()
-    if (finding != null) __obj.updateDynamic("finding")(finding.asInstanceOf[js.Any])
-    if (stateChange != null) __obj.updateDynamic("stateChange")(stateChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaListFindingsResult]
   }
+  @scala.inline
+  implicit class SchemaListFindingsResultOps[Self <: SchemaListFindingsResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFinding(value: SchemaFinding): Self = this.set("finding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFinding: Self = this.set("finding", js.undefined)
+    @scala.inline
+    def setStateChange(value: String): Self = this.set("stateChange", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStateChange: Self = this.set("stateChange", js.undefined)
+  }
+  
 }
 

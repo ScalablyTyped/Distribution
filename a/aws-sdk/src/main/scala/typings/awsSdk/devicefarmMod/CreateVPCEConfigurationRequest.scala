@@ -29,12 +29,33 @@ object CreateVPCEConfigurationRequest {
   def apply(
     serviceDnsName: ServiceDnsName,
     vpceConfigurationName: VPCEConfigurationName,
-    vpceServiceName: VPCEServiceName,
-    vpceConfigurationDescription: VPCEConfigurationDescription = null
+    vpceServiceName: VPCEServiceName
   ): CreateVPCEConfigurationRequest = {
     val __obj = js.Dynamic.literal(serviceDnsName = serviceDnsName.asInstanceOf[js.Any], vpceConfigurationName = vpceConfigurationName.asInstanceOf[js.Any], vpceServiceName = vpceServiceName.asInstanceOf[js.Any])
-    if (vpceConfigurationDescription != null) __obj.updateDynamic("vpceConfigurationDescription")(vpceConfigurationDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVPCEConfigurationRequest]
   }
+  @scala.inline
+  implicit class CreateVPCEConfigurationRequestOps[Self <: CreateVPCEConfigurationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setServiceDnsName(value: ServiceDnsName): Self = this.set("serviceDnsName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpceConfigurationName(value: VPCEConfigurationName): Self = this.set("vpceConfigurationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpceServiceName(value: VPCEServiceName): Self = this.set("vpceServiceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = this.set("vpceConfigurationDescription", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpceConfigurationDescription: Self = this.set("vpceConfigurationDescription", js.undefined)
+  }
+  
 }
 

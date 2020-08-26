@@ -4,36 +4,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ScreenshotsConfig extends js.Object {
-  var count: js.UndefOr[Double] = js.undefined
-  var fastSeek: js.UndefOr[Boolean] = js.undefined
-  var filename: js.UndefOr[String] = js.undefined
-  var folder: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[String] = js.undefined
-  var timemarks: js.UndefOr[js.Array[Double | String]] = js.undefined
-  var timestamps: js.UndefOr[js.Array[Double | String]] = js.undefined
+  var count: js.UndefOr[Double] = js.native
+  var fastSeek: js.UndefOr[Boolean] = js.native
+  var filename: js.UndefOr[String] = js.native
+  var folder: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.native
+  var timemarks: js.UndefOr[js.Array[Double | String]] = js.native
+  var timestamps: js.UndefOr[js.Array[Double | String]] = js.native
 }
 
 object ScreenshotsConfig {
   @scala.inline
-  def apply(
-    count: js.UndefOr[Double] = js.undefined,
-    fastSeek: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    folder: String = null,
-    size: String = null,
-    timemarks: js.Array[Double | String] = null,
-    timestamps: js.Array[Double | String] = null
-  ): ScreenshotsConfig = {
+  def apply(): ScreenshotsConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(fastSeek)) __obj.updateDynamic("fastSeek")(fastSeek.get.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (folder != null) __obj.updateDynamic("folder")(folder.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (timemarks != null) __obj.updateDynamic("timemarks")(timemarks.asInstanceOf[js.Any])
-    if (timestamps != null) __obj.updateDynamic("timestamps")(timestamps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScreenshotsConfig]
   }
+  @scala.inline
+  implicit class ScreenshotsConfigOps[Self <: ScreenshotsConfig] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setFastSeek(value: Boolean): Self = this.set("fastSeek", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFastSeek: Self = this.set("fastSeek", js.undefined)
+    @scala.inline
+    def setFilename(value: String): Self = this.set("filename", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFilename: Self = this.set("filename", js.undefined)
+    @scala.inline
+    def setFolder(value: String): Self = this.set("folder", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFolder: Self = this.set("folder", js.undefined)
+    @scala.inline
+    def setSize(value: String): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setTimemarksVarargs(value: (Double | String)*): Self = this.set("timemarks", js.Array(value :_*))
+    @scala.inline
+    def setTimemarks(value: js.Array[Double | String]): Self = this.set("timemarks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimemarks: Self = this.set("timemarks", js.undefined)
+    @scala.inline
+    def setTimestampsVarargs(value: (Double | String)*): Self = this.set("timestamps", js.Array(value :_*))
+    @scala.inline
+    def setTimestamps(value: js.Array[Double | String]): Self = this.set("timestamps", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestamps: Self = this.set("timestamps", js.undefined)
+  }
+  
 }
 

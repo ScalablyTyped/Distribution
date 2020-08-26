@@ -22,11 +22,32 @@ trait SchemaStackFrames extends js.Object {
 
 object SchemaStackFrames {
   @scala.inline
-  def apply(droppedFramesCount: js.UndefOr[Double] = js.undefined, frame: js.Array[SchemaStackFrame] = null): SchemaStackFrames = {
+  def apply(): SchemaStackFrames = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(droppedFramesCount)) __obj.updateDynamic("droppedFramesCount")(droppedFramesCount.get.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaStackFrames]
   }
+  @scala.inline
+  implicit class SchemaStackFramesOps[Self <: SchemaStackFrames] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDroppedFramesCount(value: Double): Self = this.set("droppedFramesCount", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDroppedFramesCount: Self = this.set("droppedFramesCount", js.undefined)
+    @scala.inline
+    def setFrameVarargs(value: SchemaStackFrame*): Self = this.set("frame", js.Array(value :_*))
+    @scala.inline
+    def setFrame(value: js.Array[SchemaStackFrame]): Self = this.set("frame", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrame: Self = this.set("frame", js.undefined)
+  }
+  
 }
 

@@ -19,10 +19,6 @@ object errors extends js.Object {
   class ParameterizedQueryError () extends Error {
     // extended properties:
     var error: QueryFileError = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     @JSName("stack")
     var stack_ParameterizedQueryError: String = js.native
     def toString(level: Double): String = js.native
@@ -34,10 +30,6 @@ object errors extends js.Object {
   class PreparedStatementError () extends Error {
     // extended properties:
     var error: QueryFileError = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     @JSName("stack")
     var stack_PreparedStatementError: String = js.native
     def toString(level: Double): String = js.native
@@ -50,10 +42,6 @@ object errors extends js.Object {
     var error: SQLParsingError = js.native
     // extended properties:
     var file: String = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var options: IQueryFileOptions = js.native
     @JSName("stack")
     var stack_QueryFileError: String = js.native
@@ -65,10 +53,6 @@ object errors extends js.Object {
   @js.native
   class QueryResultError () extends Error {
     var code: queryResultErrorCode = js.native
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
     var query: String = js.native
     var received: Double = js.native
     // extended properties:

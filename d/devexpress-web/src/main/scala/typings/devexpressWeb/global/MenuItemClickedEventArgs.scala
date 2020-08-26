@@ -16,15 +16,5 @@ class MenuItemClickedEventArgs protected ()
     * @param itemName A string representing the name of the menu item.
     */
   def this(itemName: String) = this()
-  /**
-    * Gets or sets whether an event is handled, and that default actions are not required.
-    */
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /**
-    * Gets the name of the menu item which is clicked.
-    */
-  /* CompleteClass */
-  override var itemName: String = js.native
 }
 

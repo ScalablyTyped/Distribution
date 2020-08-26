@@ -27,20 +27,42 @@ trait SendVoiceMessageRequest extends js.Object {
 
 object SendVoiceMessageRequest {
   @scala.inline
-  def apply(
-    CallerId: String = null,
-    ConfigurationSetName: WordCharactersWithDelimiters = null,
-    Content: VoiceMessageContent = null,
-    DestinationPhoneNumber: NonEmptyString = null,
-    OriginationPhoneNumber: NonEmptyString = null
-  ): SendVoiceMessageRequest = {
+  def apply(): SendVoiceMessageRequest = {
     val __obj = js.Dynamic.literal()
-    if (CallerId != null) __obj.updateDynamic("CallerId")(CallerId.asInstanceOf[js.Any])
-    if (ConfigurationSetName != null) __obj.updateDynamic("ConfigurationSetName")(ConfigurationSetName.asInstanceOf[js.Any])
-    if (Content != null) __obj.updateDynamic("Content")(Content.asInstanceOf[js.Any])
-    if (DestinationPhoneNumber != null) __obj.updateDynamic("DestinationPhoneNumber")(DestinationPhoneNumber.asInstanceOf[js.Any])
-    if (OriginationPhoneNumber != null) __obj.updateDynamic("OriginationPhoneNumber")(OriginationPhoneNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendVoiceMessageRequest]
   }
+  @scala.inline
+  implicit class SendVoiceMessageRequestOps[Self <: SendVoiceMessageRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCallerId(value: String): Self = this.set("CallerId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCallerId: Self = this.set("CallerId", js.undefined)
+    @scala.inline
+    def setConfigurationSetName(value: WordCharactersWithDelimiters): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteConfigurationSetName: Self = this.set("ConfigurationSetName", js.undefined)
+    @scala.inline
+    def setContent(value: VoiceMessageContent): Self = this.set("Content", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContent: Self = this.set("Content", js.undefined)
+    @scala.inline
+    def setDestinationPhoneNumber(value: NonEmptyString): Self = this.set("DestinationPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDestinationPhoneNumber: Self = this.set("DestinationPhoneNumber", js.undefined)
+    @scala.inline
+    def setOriginationPhoneNumber(value: NonEmptyString): Self = this.set("OriginationPhoneNumber", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOriginationPhoneNumber: Self = this.set("OriginationPhoneNumber", js.undefined)
+  }
+  
 }
 

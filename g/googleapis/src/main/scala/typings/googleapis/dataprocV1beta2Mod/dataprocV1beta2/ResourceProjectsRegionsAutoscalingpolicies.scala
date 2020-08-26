@@ -28,6 +28,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def create(): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def create(callback: BodyResponseCallback[SchemaAutoscalingPolicy]): Unit = js.native
+  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def create(params: ParamsResourceProjectsRegionsAutoscalingpoliciesCreate): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def create(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesCreate,
@@ -59,6 +60,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
+  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsRegionsAutoscalingpoliciesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesDelete,
@@ -89,6 +91,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def get(): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def get(callback: BodyResponseCallback[SchemaAutoscalingPolicy]): Unit = js.native
+  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def get(params: ParamsResourceProjectsRegionsAutoscalingpoliciesGet): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def get(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesGet,
@@ -121,6 +124,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsRegionsAutoscalingpoliciesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesGetiampolicy,
@@ -153,6 +157,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def list(): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAutoscalingPoliciesResponse]): Unit = js.native
+  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
   def list(params: ParamsResourceProjectsRegionsAutoscalingpoliciesList): GaxiosPromise[SchemaListAutoscalingPoliciesResponse] = js.native
   def list(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesList,
@@ -185,6 +190,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
+  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsRegionsAutoscalingpoliciesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesSetiampolicy,
@@ -220,6 +226,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
+  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsRegionsAutoscalingpoliciesTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesTestiampermissions,
@@ -252,6 +259,7 @@ class ResourceProjectsRegionsAutoscalingpolicies protected () extends js.Object 
     */
   def update(): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def update(callback: BodyResponseCallback[SchemaAutoscalingPolicy]): Unit = js.native
+  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def update(params: ParamsResourceProjectsRegionsAutoscalingpoliciesUpdate): GaxiosPromise[SchemaAutoscalingPolicy] = js.native
   def update(
     params: ParamsResourceProjectsRegionsAutoscalingpoliciesUpdate,

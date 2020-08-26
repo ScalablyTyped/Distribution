@@ -16,10 +16,5 @@ class AppointmentsSelectionEventArgs protected ()
     * @param appointmentIds Represents an array of appointments' IDs.
     */
   def this(appointmentIds: js.Array[String]) = this()
-  /**
-    * Gets identifiers of the selected appointments.
-    */
-  /* CompleteClass */
-  override var appointmentIds: js.Array[String] = js.native
 }
 

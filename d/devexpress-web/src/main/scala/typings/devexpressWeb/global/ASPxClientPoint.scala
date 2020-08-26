@@ -17,15 +17,5 @@ class ASPxClientPoint protected ()
     * @param y An integer value specifying the y-coordinate of the point.
     */
   def this(x: Double, y: Double) = this()
-  /**
-    * Gets the point's X-coordinate.
-    */
-  /* CompleteClass */
-  override def GetX(): Double = js.native
-  /**
-    * Gets the point's Y-coordinate.
-    */
-  /* CompleteClass */
-  override def GetY(): Double = js.native
 }
 

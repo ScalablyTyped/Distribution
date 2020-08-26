@@ -38,117 +38,73 @@ trait Node extends js.Object
 
 object Node {
   @scala.inline
-  def TagNode(contents: String, name: tag, location: LocationRange = null): Node = {
+  def TagNode(contents: String, name: tag): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def PipeNode(
-    contents: Null,
-    name: pipe,
-    nonTerminal: String,
-    optional: Boolean,
-    params: String,
-    location: LocationRange = null
-  ): Node = {
+  def PipeNode(contents: Null, name: pipe, nonTerminal: String, optional: Boolean, params: String): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def TildeNode(contents: js.Array[FragmentNode], name: tilde, location: LocationRange = null): Node = {
+  def TildeNode(contents: js.Array[FragmentNode], name: tilde): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def OrderedListItemNode(
-    contents: js.Array[FragmentNode],
-    name: `ordered-list-item`,
-    id: String = null,
-    location: LocationRange = null,
-    sublist: ListNode = null
-  ): Node = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sublist = sublist.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Node]
-  }
-  @scala.inline
-  def StarNode(contents: js.Array[FragmentNode], name: star, location: LocationRange = null): Node = {
+  def OrderedListItemNode(contents: js.Array[FragmentNode], name: `ordered-list-item`): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def AlgorithmNode(contents: OrderedListNode, name: algorithm, location: LocationRange = null): Node = {
+  def StarNode(contents: js.Array[FragmentNode], name: star): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def TextNode(contents: String, name: text, location: LocationRange = null): Node = {
+  def AlgorithmNode(contents: OrderedListNode, name: algorithm): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def UnorderedListItemNode(
-    contents: js.Array[FragmentNode],
-    name: `unordered-list-item`,
-    id: String = null,
-    location: LocationRange = null,
-    sublist: ListNode = null
-  ): Node = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], sublist = sublist.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Node]
-  }
-  @scala.inline
-  def UnderscoreNode(contents: js.Array[FragmentNode], name: underscore, location: LocationRange = null): Node = {
+  def TextNode(contents: String, name: text): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def CommentNode(contents: String, name: comment, location: LocationRange = null): Node = {
+  def UnorderedListItemNode(contents: js.Array[FragmentNode], name: `unordered-list-item`): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def OrderedListNode(
-    contents: js.Array[OrderedListItemNode],
-    indent: Double,
-    name: ol,
-    start: Double,
-    location: LocationRange = null
-  ): Node = {
+  def UnderscoreNode(contents: js.Array[FragmentNode], name: underscore): Node = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Node]
+  }
+  @scala.inline
+  def CommentNode(contents: String, name: comment): Node = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Node]
+  }
+  @scala.inline
+  def OrderedListNode(contents: js.Array[OrderedListItemNode], indent: Double, name: ol, start: Double): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def TickNode(contents: js.Array[FragmentNode], name: tick, location: LocationRange = null): Node = {
+  def TickNode(contents: js.Array[FragmentNode], name: tick): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def OpaqueTagNode(contents: String, name: opaqueTag, location: LocationRange = null): Node = {
+  def OpaqueTagNode(contents: String, name: opaqueTag): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   @scala.inline
-  def UnorderedListNode(
-    contents: js.Array[UnorderedListItemNode],
-    indent: Double,
-    name: ul,
-    location: LocationRange = null
-  ): Node = {
+  def UnorderedListNode(contents: js.Array[UnorderedListItemNode], indent: Double, name: ul): Node = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
 }

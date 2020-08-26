@@ -14,10 +14,26 @@ trait InputFormatConfiguration extends js.Object {
 
 object InputFormatConfiguration {
   @scala.inline
-  def apply(Deserializer: Deserializer = null): InputFormatConfiguration = {
+  def apply(): InputFormatConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (Deserializer != null) __obj.updateDynamic("Deserializer")(Deserializer.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputFormatConfiguration]
   }
+  @scala.inline
+  implicit class InputFormatConfigurationOps[Self <: InputFormatConfiguration] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDeserializer(value: Deserializer): Self = this.set("Deserializer", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeserializer: Self = this.set("Deserializer", js.undefined)
+  }
+  
 }
 

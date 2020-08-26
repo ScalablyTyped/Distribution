@@ -30,18 +30,38 @@ trait UpdateUserRequest extends js.Object {
 
 object UpdateUserRequest {
   @scala.inline
-  def apply(
-    AccountId: NonEmptyString,
-    UserId: NonEmptyString,
-    AlexaForBusinessMetadata: AlexaForBusinessMetadata = null,
-    LicenseType: License = null,
-    UserType: UserType = null
-  ): UpdateUserRequest = {
+  def apply(AccountId: NonEmptyString, UserId: NonEmptyString): UpdateUserRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
-    if (AlexaForBusinessMetadata != null) __obj.updateDynamic("AlexaForBusinessMetadata")(AlexaForBusinessMetadata.asInstanceOf[js.Any])
-    if (LicenseType != null) __obj.updateDynamic("LicenseType")(LicenseType.asInstanceOf[js.Any])
-    if (UserType != null) __obj.updateDynamic("UserType")(UserType.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserRequest]
   }
+  @scala.inline
+  implicit class UpdateUserRequestOps[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountId(value: NonEmptyString): Self = this.set("AccountId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setUserId(value: NonEmptyString): Self = this.set("UserId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAlexaForBusinessMetadata(value: AlexaForBusinessMetadata): Self = this.set("AlexaForBusinessMetadata", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlexaForBusinessMetadata: Self = this.set("AlexaForBusinessMetadata", js.undefined)
+    @scala.inline
+    def setLicenseType(value: License): Self = this.set("LicenseType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLicenseType: Self = this.set("LicenseType", js.undefined)
+    @scala.inline
+    def setUserType(value: UserType): Self = this.set("UserType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserType: Self = this.set("UserType", js.undefined)
+  }
+  
 }
 

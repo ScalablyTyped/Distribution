@@ -12,7 +12,7 @@ Validate your webpack config with joi
 | Keywords           | webpack, config, schema, validation, joi |
 | # releases         | 2 |
 | # dependents       | 21 |
-| # downloads        | 669768 |
+| # downloads        | 626733 |
 | # stars            | 14 |
 
 ## Links

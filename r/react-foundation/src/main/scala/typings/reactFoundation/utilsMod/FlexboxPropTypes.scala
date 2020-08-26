@@ -9,22 +9,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FlexboxPropTypes extends GeneralPropTypes {
-  var alignX: js.UndefOr[HorizontalAlignments] = js.undefined
-  var alignY: js.UndefOr[VerticalAlignments] = js.undefined
-  var centerAlign: js.UndefOr[Boolean] = js.undefined
-  var flexChild: js.UndefOr[SpaceControls] = js.undefined
-  var flexContainer: js.UndefOr[Boolean] = js.undefined
-  var flexDirCol: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexDirColRev: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexDirRow: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexDirRowRev: js.UndefOr[ExtendedBreakpoints] = js.undefined
-  var flexOrder: js.UndefOr[Double] = js.undefined
-  var flexOrderLarge: js.UndefOr[Double] = js.undefined
-  var flexOrderMedium: js.UndefOr[Double] = js.undefined
-  var flexOrderSmall: js.UndefOr[Double] = js.undefined
-  var selfAlignX: js.UndefOr[HorizontalAlignments] = js.undefined
-  var selfAlignY: js.UndefOr[VerticalAlignments] = js.undefined
+  var alignX: js.UndefOr[HorizontalAlignments] = js.native
+  var alignY: js.UndefOr[VerticalAlignments] = js.native
+  var centerAlign: js.UndefOr[Boolean] = js.native
+  var flexChild: js.UndefOr[SpaceControls] = js.native
+  var flexContainer: js.UndefOr[Boolean] = js.native
+  var flexDirCol: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexDirColRev: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexDirRow: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexDirRowRev: js.UndefOr[ExtendedBreakpoints] = js.native
+  var flexOrder: js.UndefOr[Double] = js.native
+  var flexOrderLarge: js.UndefOr[Double] = js.native
+  var flexOrderMedium: js.UndefOr[Double] = js.native
+  var flexOrderSmall: js.UndefOr[Double] = js.native
+  var selfAlignX: js.UndefOr[HorizontalAlignments] = js.native
+  var selfAlignY: js.UndefOr[VerticalAlignments] = js.native
 }
 
 @JSImport("react-foundation/utils", "FlexboxPropTypes")

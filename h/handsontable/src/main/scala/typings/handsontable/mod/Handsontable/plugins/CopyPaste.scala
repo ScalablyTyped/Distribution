@@ -18,6 +18,7 @@ trait CopyPaste extends Base {
   def getRangedCopyableData(ranges: js.Array[RangeType]): String = js.native
   def getRangedData(ranges: js.Array[RangeType]): js.Array[_] = js.native
   def paste(): Unit = js.native
+  def paste(pastableText: js.UndefOr[scala.Nothing], pastableHtml: String): Unit = js.native
   def paste(pastableText: String): Unit = js.native
   def paste(pastableText: String, pastableHtml: String): Unit = js.native
   def setCopyableText(): Unit = js.native

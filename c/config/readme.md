@@ -9,9 +9,9 @@ Configuration control for production node deployments
 | ------------------ | :-------------: |
 | Full name          | config |
 | Keywords           | conf, config, configuration, node-config, config-node, env, environment |
-| # releases         | 19 |
-| # dependents       | 1712 |
-| # downloads        | 18913906 |
+| # releases         | 15 |
+| # dependents       | 1734 |
+| # downloads        | 19455220 |
 | # stars            | 231 |
 
 ## Links

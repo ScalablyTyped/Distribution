@@ -24,11 +24,32 @@ trait SchemaMonitoringDestination extends js.Object {
 
 object SchemaMonitoringDestination {
   @scala.inline
-  def apply(metrics: js.Array[String] = null, monitoredResource: String = null): SchemaMonitoringDestination = {
+  def apply(): SchemaMonitoringDestination = {
     val __obj = js.Dynamic.literal()
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (monitoredResource != null) __obj.updateDynamic("monitoredResource")(monitoredResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaMonitoringDestination]
   }
+  @scala.inline
+  implicit class SchemaMonitoringDestinationOps[Self <: SchemaMonitoringDestination] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMetricsVarargs(value: String*): Self = this.set("metrics", js.Array(value :_*))
+    @scala.inline
+    def setMetrics(value: js.Array[String]): Self = this.set("metrics", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetrics: Self = this.set("metrics", js.undefined)
+    @scala.inline
+    def setMonitoredResource(value: String): Self = this.set("monitoredResource", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMonitoredResource: Self = this.set("monitoredResource", js.undefined)
+  }
+  
 }
 

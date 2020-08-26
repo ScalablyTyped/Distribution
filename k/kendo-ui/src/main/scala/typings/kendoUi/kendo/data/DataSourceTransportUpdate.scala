@@ -5,33 +5,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait DataSourceTransportUpdate extends JQueryAjaxSettings {
-  var cache: js.UndefOr[Boolean] = js.undefined
-  var contentType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var dataType: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  var cache: js.UndefOr[Boolean] = js.native
+  var contentType: js.UndefOr[String] = js.native
+  var data: js.UndefOr[js.Any] = js.native
+  var dataType: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.native
+  var url: js.UndefOr[js.Any] = js.native
 }
 
 object DataSourceTransportUpdate {
   @scala.inline
-  def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
-    contentType: String = null,
-    data: js.Any = null,
-    dataType: String = null,
-    `type`: String = null,
-    url: js.Any = null
-  ): DataSourceTransportUpdate = {
+  def apply(): DataSourceTransportUpdate = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.get.asInstanceOf[js.Any])
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceTransportUpdate]
   }
+  @scala.inline
+  implicit class DataSourceTransportUpdateOps[Self <: DataSourceTransportUpdate] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCache(value: Boolean): Self = this.set("cache", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCache: Self = this.set("cache", js.undefined)
+    @scala.inline
+    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContentType: Self = this.set("contentType", js.undefined)
+    @scala.inline
+    def setData(value: js.Any): Self = this.set("data", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteData: Self = this.set("data", js.undefined)
+    @scala.inline
+    def setDataType(value: String): Self = this.set("dataType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataType: Self = this.set("dataType", js.undefined)
+    @scala.inline
+    def setType(value: String): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteType: Self = this.set("type", js.undefined)
+    @scala.inline
+    def setUrl(value: js.Any): Self = this.set("url", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUrl: Self = this.set("url", js.undefined)
+  }
+  
 }
 

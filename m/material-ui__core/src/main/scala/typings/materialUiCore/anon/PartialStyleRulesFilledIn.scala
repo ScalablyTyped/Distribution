@@ -25,36 +25,74 @@ trait PartialStyleRulesFilledIn extends js.Object {
 
 object PartialStyleRulesFilledIn {
   @scala.inline
-  def apply(
-    adornedEnd: CSSProperties = null,
-    adornedStart: CSSProperties = null,
-    disabled: CSSProperties = null,
-    error: CSSProperties = null,
-    focused: CSSProperties = null,
-    input: CSSProperties = null,
-    inputAdornedEnd: CSSProperties = null,
-    inputAdornedStart: CSSProperties = null,
-    inputMarginDense: CSSProperties = null,
-    inputMultiline: CSSProperties = null,
-    multiline: CSSProperties = null,
-    root: CSSProperties = null,
-    underline: CSSProperties = null
-  ): PartialStyleRulesFilledIn = {
+  def apply(): PartialStyleRulesFilledIn = {
     val __obj = js.Dynamic.literal()
-    if (adornedEnd != null) __obj.updateDynamic("adornedEnd")(adornedEnd.asInstanceOf[js.Any])
-    if (adornedStart != null) __obj.updateDynamic("adornedStart")(adornedStart.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (inputAdornedEnd != null) __obj.updateDynamic("inputAdornedEnd")(inputAdornedEnd.asInstanceOf[js.Any])
-    if (inputAdornedStart != null) __obj.updateDynamic("inputAdornedStart")(inputAdornedStart.asInstanceOf[js.Any])
-    if (inputMarginDense != null) __obj.updateDynamic("inputMarginDense")(inputMarginDense.asInstanceOf[js.Any])
-    if (inputMultiline != null) __obj.updateDynamic("inputMultiline")(inputMultiline.asInstanceOf[js.Any])
-    if (multiline != null) __obj.updateDynamic("multiline")(multiline.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialStyleRulesFilledIn]
   }
+  @scala.inline
+  implicit class PartialStyleRulesFilledInOps[Self <: PartialStyleRulesFilledIn] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAdornedEnd(value: CSSProperties): Self = this.set("adornedEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdornedEnd: Self = this.set("adornedEnd", js.undefined)
+    @scala.inline
+    def setAdornedStart(value: CSSProperties): Self = this.set("adornedStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdornedStart: Self = this.set("adornedStart", js.undefined)
+    @scala.inline
+    def setDisabled(value: CSSProperties): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setError(value: CSSProperties): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setFocused(value: CSSProperties): Self = this.set("focused", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFocused: Self = this.set("focused", js.undefined)
+    @scala.inline
+    def setInput(value: CSSProperties): Self = this.set("input", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInput: Self = this.set("input", js.undefined)
+    @scala.inline
+    def setInputAdornedEnd(value: CSSProperties): Self = this.set("inputAdornedEnd", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAdornedEnd: Self = this.set("inputAdornedEnd", js.undefined)
+    @scala.inline
+    def setInputAdornedStart(value: CSSProperties): Self = this.set("inputAdornedStart", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputAdornedStart: Self = this.set("inputAdornedStart", js.undefined)
+    @scala.inline
+    def setInputMarginDense(value: CSSProperties): Self = this.set("inputMarginDense", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMarginDense: Self = this.set("inputMarginDense", js.undefined)
+    @scala.inline
+    def setInputMultiline(value: CSSProperties): Self = this.set("inputMultiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInputMultiline: Self = this.set("inputMultiline", js.undefined)
+    @scala.inline
+    def setMultiline(value: CSSProperties): Self = this.set("multiline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMultiline: Self = this.set("multiline", js.undefined)
+    @scala.inline
+    def setRoot(value: CSSProperties): Self = this.set("root", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRoot: Self = this.set("root", js.undefined)
+    @scala.inline
+    def setUnderline(value: CSSProperties): Self = this.set("underline", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnderline: Self = this.set("underline", js.undefined)
+  }
+  
 }
 

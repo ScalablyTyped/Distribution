@@ -34,21 +34,44 @@ trait InvocationRequest extends js.Object {
 
 object InvocationRequest {
   @scala.inline
-  def apply(
-    FunctionName: NamespacedFunctionName,
-    ClientContext: String = null,
-    InvocationType: InvocationType = null,
-    LogType: LogType = null,
-    Payload: _Blob = null,
-    Qualifier: Qualifier = null
-  ): InvocationRequest = {
+  def apply(FunctionName: NamespacedFunctionName): InvocationRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
-    if (ClientContext != null) __obj.updateDynamic("ClientContext")(ClientContext.asInstanceOf[js.Any])
-    if (InvocationType != null) __obj.updateDynamic("InvocationType")(InvocationType.asInstanceOf[js.Any])
-    if (LogType != null) __obj.updateDynamic("LogType")(LogType.asInstanceOf[js.Any])
-    if (Payload != null) __obj.updateDynamic("Payload")(Payload.asInstanceOf[js.Any])
-    if (Qualifier != null) __obj.updateDynamic("Qualifier")(Qualifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvocationRequest]
   }
+  @scala.inline
+  implicit class InvocationRequestOps[Self <: InvocationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setFunctionName(value: NamespacedFunctionName): Self = this.set("FunctionName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setClientContext(value: String): Self = this.set("ClientContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClientContext: Self = this.set("ClientContext", js.undefined)
+    @scala.inline
+    def setInvocationType(value: InvocationType): Self = this.set("InvocationType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInvocationType: Self = this.set("InvocationType", js.undefined)
+    @scala.inline
+    def setLogType(value: LogType): Self = this.set("LogType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLogType: Self = this.set("LogType", js.undefined)
+    @scala.inline
+    def setPayload(value: _Blob): Self = this.set("Payload", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePayload: Self = this.set("Payload", js.undefined)
+    @scala.inline
+    def setQualifier(value: Qualifier): Self = this.set("Qualifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteQualifier: Self = this.set("Qualifier", js.undefined)
+  }
+  
 }
 

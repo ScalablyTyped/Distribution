@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -11,16 +10,5 @@ import scala.scalajs.js.annotation._
 @JSGlobal("ASPxClientDateNavigatorVisibleMonthChangedEventArgs")
 @js.native
 class ASPxClientDateNavigatorVisibleMonthChangedEventArgs ()
-  extends typings.devexpressWeb.ASPxClientDateNavigatorVisibleMonthChangedEventArgs {
-  /**
-    * Returns the end date of the latest visible month.
-    */
-  /* CompleteClass */
-  override var endDate: Date = js.native
-  /**
-    * Returns the start date of the latest visible month.
-    */
-  /* CompleteClass */
-  override var startDate: Date = js.native
-}
+  extends typings.devexpressWeb.ASPxClientDateNavigatorVisibleMonthChangedEventArgs
 

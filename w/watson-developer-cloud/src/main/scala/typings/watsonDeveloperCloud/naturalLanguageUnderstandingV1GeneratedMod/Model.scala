@@ -5,47 +5,76 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Model. */
+@js.native
 trait Model extends js.Object {
   /** A dateTime indicating when the model was created. */
-  var created: js.UndefOr[String] = js.undefined
+  var created: js.UndefOr[String] = js.native
   /** Model description. */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String] = js.native
   /** ISO 639-1 code indicating the language of the model. */
-  var language: js.UndefOr[String] = js.undefined
+  var language: js.UndefOr[String] = js.native
   /** Unique model ID. */
-  var model_id: js.UndefOr[String] = js.undefined
+  var model_id: js.UndefOr[String] = js.native
   /** When the status is `available`, the model is ready to use. */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String] = js.native
   /** The model version, if it was manually provided in Watson Knowledge Studio. */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
   /** The description of the version, if it was manually provided in Watson Knowledge Studio. */
-  var version_description: js.UndefOr[String] = js.undefined
+  var version_description: js.UndefOr[String] = js.native
   /** ID of the Watson Knowledge Studio workspace that deployed this model to Natural Language Understanding. */
-  var workspace_id: js.UndefOr[String] = js.undefined
+  var workspace_id: js.UndefOr[String] = js.native
 }
 
 object Model {
   @scala.inline
-  def apply(
-    created: String = null,
-    description: String = null,
-    language: String = null,
-    model_id: String = null,
-    status: String = null,
-    version: String = null,
-    version_description: String = null,
-    workspace_id: String = null
-  ): Model = {
+  def apply(): Model = {
     val __obj = js.Dynamic.literal()
-    if (created != null) __obj.updateDynamic("created")(created.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (model_id != null) __obj.updateDynamic("model_id")(model_id.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (version_description != null) __obj.updateDynamic("version_description")(version_description.asInstanceOf[js.Any])
-    if (workspace_id != null) __obj.updateDynamic("workspace_id")(workspace_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Model]
   }
+  @scala.inline
+  implicit class ModelOps[Self <: Model] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCreated(value: String): Self = this.set("created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreated: Self = this.set("created", js.undefined)
+    @scala.inline
+    def setDescription(value: String): Self = this.set("description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("description", js.undefined)
+    @scala.inline
+    def setLanguage(value: String): Self = this.set("language", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLanguage: Self = this.set("language", js.undefined)
+    @scala.inline
+    def setModel_id(value: String): Self = this.set("model_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModel_id: Self = this.set("model_id", js.undefined)
+    @scala.inline
+    def setStatus(value: String): Self = this.set("status", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatus: Self = this.set("status", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVersion_description(value: String): Self = this.set("version_description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion_description: Self = this.set("version_description", js.undefined)
+    @scala.inline
+    def setWorkspace_id(value: String): Self = this.set("workspace_id", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWorkspace_id: Self = this.set("workspace_id", js.undefined)
+  }
+  
 }
 

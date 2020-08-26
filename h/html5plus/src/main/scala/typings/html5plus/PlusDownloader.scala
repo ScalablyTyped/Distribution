@@ -51,7 +51,23 @@ trait PlusDownloader extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def createDownload(): PlusDownloaderDownload = js.native
+  def createDownload(
+    url: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
+  ): PlusDownloaderDownload = js.native
+  def createDownload(url: js.UndefOr[scala.Nothing], options: PlusDownloaderDownloadOptions): PlusDownloaderDownload = js.native
+  def createDownload(
+    url: js.UndefOr[scala.Nothing],
+    options: PlusDownloaderDownloadOptions,
+    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
+  ): PlusDownloaderDownload = js.native
   def createDownload(url: String): PlusDownloaderDownload = js.native
+  def createDownload(
+    url: String,
+    options: js.UndefOr[scala.Nothing],
+    completedCB: js.Function2[/* result0 */ PlusDownloaderDownload, /* result1 */ Double, Unit]
+  ): PlusDownloaderDownload = js.native
   def createDownload(url: String, options: PlusDownloaderDownloadOptions): PlusDownloaderDownload = js.native
   def createDownload(
     url: String,
@@ -65,6 +81,7 @@ trait PlusDownloader extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
   def enumerate(): Unit = js.native
+  def enumerate(enumCB: js.UndefOr[scala.Nothing], state: PlusDownloaderDownloadState): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[_], Unit]): Unit = js.native
   def enumerate(enumCB: js.Function1[/* result */ js.Array[_], Unit], state: PlusDownloaderDownloadState): Unit = js.native
   /**

@@ -4,25 +4,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Api extends js.Object {
   /** The methods of this interface, in unspecified order. */
-  var methods: js.UndefOr[js.Array[Method]] = js.undefined
+  var methods: js.UndefOr[js.Array[Method]] = js.native
   /** Included interfaces. See Mixin. */
-  var mixins: js.UndefOr[js.Array[Mixin]] = js.undefined
+  var mixins: js.UndefOr[js.Array[Mixin]] = js.native
   /**
     * The fully qualified name of this interface, including package name
     * followed by the interface's simple name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** Any metadata attached to the interface. */
-  var options: js.UndefOr[js.Array[Option]] = js.undefined
+  var options: js.UndefOr[js.Array[Option]] = js.native
   /**
     * Source context for the protocol buffer service represented by this
     * message.
     */
-  var sourceContext: js.UndefOr[SourceContext] = js.undefined
+  var sourceContext: js.UndefOr[SourceContext] = js.native
   /** The source syntax of the service. */
-  var syntax: js.UndefOr[String] = js.undefined
+  var syntax: js.UndefOr[String] = js.native
   /**
     * A version string for this interface. If specified, must have the form
     * `major-version.minor-version`, as in `1.10`. If the minor version is
@@ -44,29 +45,61 @@ trait Api extends js.Object {
     * be omitted. Zero major versions must only be used for
     * experimental, non-GA interfaces.
     */
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[String] = js.native
 }
 
 object Api {
   @scala.inline
-  def apply(
-    methods: js.Array[Method] = null,
-    mixins: js.Array[Mixin] = null,
-    name: String = null,
-    options: js.Array[Option] = null,
-    sourceContext: SourceContext = null,
-    syntax: String = null,
-    version: String = null
-  ): Api = {
+  def apply(): Api = {
     val __obj = js.Dynamic.literal()
-    if (methods != null) __obj.updateDynamic("methods")(methods.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext.asInstanceOf[js.Any])
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Api]
   }
+  @scala.inline
+  implicit class ApiOps[Self <: Api] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setMethodsVarargs(value: Method*): Self = this.set("methods", js.Array(value :_*))
+    @scala.inline
+    def setMethods(value: js.Array[Method]): Self = this.set("methods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMethods: Self = this.set("methods", js.undefined)
+    @scala.inline
+    def setMixinsVarargs(value: Mixin*): Self = this.set("mixins", js.Array(value :_*))
+    @scala.inline
+    def setMixins(value: js.Array[Mixin]): Self = this.set("mixins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMixins: Self = this.set("mixins", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOptionsVarargs(value: Option*): Self = this.set("options", js.Array(value :_*))
+    @scala.inline
+    def setOptions(value: js.Array[Option]): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setSourceContext(value: SourceContext): Self = this.set("sourceContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSourceContext: Self = this.set("sourceContext", js.undefined)
+    @scala.inline
+    def setSyntax(value: String): Self = this.set("syntax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSyntax: Self = this.set("syntax", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

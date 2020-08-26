@@ -55,6 +55,11 @@ trait WebviewPanel extends js.Object {
     * Fired when the panel's view state changes.
     */
   def onDidChangeViewState(listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, _]): Disposable = js.native
+  def onDidChangeViewState(
+    listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidChangeViewState(listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, _], thisArgs: js.Any): Disposable = js.native
   def onDidChangeViewState(
     listener: js.Function1[/* e */ WebviewPanelOnDidChangeViewStateEvent, _],
@@ -70,6 +75,11 @@ trait WebviewPanel extends js.Object {
     * Trying to use the panel after it has been disposed throws an exception.
     */
   def onDidDispose(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
+  def onDidDispose(
+    listener: js.Function1[/* e */ Unit, _],
+    thisArgs: js.UndefOr[scala.Nothing],
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
   def onDidDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
   def onDidDispose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**
@@ -82,6 +92,7 @@ trait WebviewPanel extends js.Object {
     * @param preserveFocus When `true`, the webview will not take focus.
     */
   def reveal(): Unit = js.native
+  def reveal(viewColumn: js.UndefOr[scala.Nothing], preserveFocus: Boolean): Unit = js.native
   def reveal(viewColumn: ViewColumn): Unit = js.native
   def reveal(viewColumn: ViewColumn, preserveFocus: Boolean): Unit = js.native
 }

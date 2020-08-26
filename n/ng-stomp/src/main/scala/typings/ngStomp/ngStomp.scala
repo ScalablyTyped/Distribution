@@ -24,6 +24,12 @@ trait ngStomp extends js.Object {
   def subscribe(
     destination: String,
     callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit],
+    headers: js.UndefOr[scala.Nothing],
+    scope: js.Any
+  ): js.Any = js.native
+  def subscribe(
+    destination: String,
+    callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit],
     headers: Headers
   ): js.Any = js.native
   def subscribe(

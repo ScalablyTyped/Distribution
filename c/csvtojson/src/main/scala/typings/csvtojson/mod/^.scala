@@ -14,6 +14,7 @@ object ^ extends js.Object {
     * @return Converter object
     */
   def apply(): Converter = js.native
+  def apply(options: js.UndefOr[scala.Nothing], streamOptions: StreamOptions): Converter = js.native
   def apply(options: ConverterOptions): Converter = js.native
   def apply(options: ConverterOptions, streamOptions: StreamOptions): Converter = js.native
 }

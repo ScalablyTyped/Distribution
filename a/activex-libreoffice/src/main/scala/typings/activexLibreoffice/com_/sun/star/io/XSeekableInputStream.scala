@@ -7,6 +7,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This interface can be used to represent a seekable input stream. */
+@js.native
 trait XSeekableInputStream
   extends XInputStream
      with XSeekable

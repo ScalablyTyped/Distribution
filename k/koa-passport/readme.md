@@ -11,8 +11,8 @@ Passport middleware for Koa
 | Full name          | koa-passport |
 | Keywords           | koa, passport, auth, authentication, authorization |
 | # releases         | 5 |
-| # dependents       | 96 |
-| # downloads        | 814596 |
+| # dependents       | 100 |
+| # downloads        | 833039 |
 | # stars            | 15 |
 
 ## Links

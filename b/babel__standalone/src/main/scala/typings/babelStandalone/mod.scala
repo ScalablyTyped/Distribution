@@ -25,7 +25,16 @@ object mod extends js.Object {
   def registerPresets(newPresets: StringDictionary[js.Object | js.Function0[Unit]]): Unit = js.native
   def transform(code: String, options: TransformOptions): BabelFileResult = js.native
   def transformFromAst(ast: Node): Unit = js.native
+  def transformFromAst(
+    ast: Node,
+    code: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    callback: FileResultCallback
+  ): Unit = js.native
+  def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions): Unit = js.native
+  def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions, callback: FileResultCallback): Unit = js.native
   def transformFromAst(ast: Node, code: String): Unit = js.native
+  def transformFromAst(ast: Node, code: String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): Unit = js.native
   def transformFromAst(ast: Node, code: String, opts: TransformOptions): Unit = js.native
   def transformFromAst(ast: Node, code: String, opts: TransformOptions, callback: FileResultCallback): Unit = js.native
   def transformScriptTags(): Unit = js.native

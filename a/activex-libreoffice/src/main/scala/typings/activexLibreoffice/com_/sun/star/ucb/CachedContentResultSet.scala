@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   *
   * Every time when a new package of data is loaded, the so far loaded data will be released, so the cash will not grow and grow and grow.
   */
+@js.native
 trait CachedContentResultSet extends ContentResultSet
 
 object CachedContentResultSet {

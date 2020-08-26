@@ -227,6 +227,13 @@ class Application protected () extends EmitterBase[ApplicationEvents] {
     */
   def setAppLogUsername(username: String): js.Promise[Unit] = js.native
   /**
+    * Sets the query string in all shortcuts for this app. Requires RVM 5.5+.
+    * @param { string } queryString The new query string for this app's shortcuts.
+    * @return {Promise.<void>}
+    * @tutorial Application.setShortcutQueryParams
+    */
+  def setShortcutQueryParams(queryString: String): js.Promise[Unit] = js.native
+  /**
     * Sets new application's shortcut configuration. Windows only.
     * @param { ShortCutConfig } config New application's shortcut configuration.
     * @param { boolean } [config.desktop] - Enable/disable desktop shortcut.

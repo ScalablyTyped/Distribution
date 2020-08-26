@@ -320,6 +320,11 @@ trait ASPxClientScheduler extends ASPxClientControl {
     * @param scrollToSelection true, to scroll the scheduler content to make the selection visible; otherwise, false.
     */
   def SetSelection(interval: ASPxClientTimeInterval): Unit = js.native
+  def SetSelection(
+    interval: ASPxClientTimeInterval,
+    resourceId: js.UndefOr[scala.Nothing],
+    scrollToSelection: Boolean
+  ): Unit = js.native
   def SetSelection(interval: ASPxClientTimeInterval, resourceId: String): Unit = js.native
   def SetSelection(interval: ASPxClientTimeInterval, resourceId: String, scrollToSelection: Boolean): Unit = js.native
   /**

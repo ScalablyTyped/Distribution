@@ -12,7 +12,7 @@ The lodash method `_.sortedUniq` exported as a module.
 | Keywords           | lodash-modularized, sorteduniq |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 47031 |
+| # downloads        | 46209 |
 | # stars            | 0 |
 
 ## Links

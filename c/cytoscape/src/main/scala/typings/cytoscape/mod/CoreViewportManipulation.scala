@@ -101,8 +101,8 @@ trait CoreViewportManipulation extends js.Object {
     * @param padding [optional] An amount of padding (in pixels) to have around the graph
     */
   def fit(): this.type = js.native
+  def fit(eles: js.UndefOr[CollectionArgument], padding: Double): this.type = js.native
   def fit(eles: CollectionArgument): this.type = js.native
-  def fit(eles: CollectionArgument, padding: Double): this.type = js.native
   /**
     * Force the renderer to redraw (i.e. draw a new frame).
     *

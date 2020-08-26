@@ -2,7 +2,6 @@ package typings.fabric.fabricImplMod
 
 import typings.std.CanvasPattern
 import typings.std.CanvasRenderingContext2D
-import typings.std.HTMLImageElement
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -15,11 +14,6 @@ class Pattern () extends IPatternOptions {
     * Unique identifier
     */
   var id: Double = js.native
-  /**
-    * The source for the pattern
-    */
-  /* CompleteClass */
-  override var source: String | HTMLImageElement = js.native
   def setOptions(options: IPatternOptions): Unit = js.native
   /**
     * Returns an instance of CanvasPattern

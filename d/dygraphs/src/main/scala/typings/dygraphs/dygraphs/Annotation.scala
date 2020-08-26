@@ -7,118 +7,162 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Annotation extends js.Object {
   /**    If true, attach annotations to the x-axis, rather than to actual points. */
-  var attachAtBottom: js.UndefOr[Boolean] = js.undefined
+  var attachAtBottom: js.UndefOr[Boolean] = js.native
   /** This function is called whenever the user clicks on this annotation. */
   var clickHandler: js.UndefOr[
     js.Function4[
-      /* annotation */ Annotation, 
+      /* annotation */ this.type, 
       /* point */ Point, 
       /* dygraph */ Dygraph, 
       /* event */ MouseEvent, 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /**    CSS class to use for styling the annotation. */
-  var cssClass: js.UndefOr[String] = js.undefined
+  var cssClass: js.UndefOr[String] = js.native
   /** this function is called whenever the user double-clicks on this annotation. */
   var dblClickHandler: js.UndefOr[
     js.Function4[
-      /* annotation */ Annotation, 
+      /* annotation */ this.type, 
       /* point */ Point, 
       /* dygraph */ Dygraph, 
       /* event */ MouseEvent, 
       _
     ]
-  ] = js.undefined
-  var div: js.UndefOr[HTMLDivElement] = js.undefined
+  ] = js.native
+  var div: js.UndefOr[HTMLDivElement] = js.native
   /** Height (in pixels) of the annotation flag or icon. */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double] = js.native
   /**
     * Specify in place of shortText to mark the annotation with an image rather than text.
     * If you specify this, you must specify width and height.
     */
-  var icon: js.UndefOr[String] = js.undefined
+  var icon: js.UndefOr[String] = js.native
   /** This function is called whenever the user mouses out of this annotation. */
   var mouseOutHandler: js.UndefOr[
     js.Function4[
-      /* annotation */ Annotation, 
+      /* annotation */ this.type, 
       /* point */ Point, 
       /* dygraph */ Dygraph, 
       /* event */ MouseEvent, 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** This function is called whenever the user mouses over this annotation. */
   var mouseOverHandler: js.UndefOr[
     js.Function4[
-      /* annotation */ Annotation, 
+      /* annotation */ this.type, 
       /* point */ Point, 
       /* dygraph */ Dygraph, 
       /* event */ MouseEvent, 
       _
     ]
-  ] = js.undefined
+  ] = js.native
   /** The name of the series to which the annotated point belongs. */
-  var series: String
+  var series: String = js.native
   /**    Text that will appear on the annotation's flag. */
-  var shortText: js.UndefOr[String] = js.undefined
+  var shortText: js.UndefOr[String] = js.native
   /** A longer description of the annotation which will appear when the user hovers over it. */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String] = js.native
   /**    Height of the tick mark (in pixels) connecting the point to its flag or icon. */
-  var tickHeight: js.UndefOr[Double] = js.undefined
+  var tickHeight: js.UndefOr[Double] = js.native
   /**    Width (in pixels) of the annotation flag or icon. */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double] = js.native
   /**
     * The x value of the point. This should be the same as the value
     * you specified in your CSV file, e.g. "2010-09-13".
     * You must set either x or xval.
     */
-  var x: js.UndefOr[Double | String] = js.undefined
+  var x: js.UndefOr[Double | String] = js.native
   /**
     * numeric value of the point, or millis since epoch.
     */
-  var xval: js.UndefOr[Double] = js.undefined
+  var xval: js.UndefOr[Double] = js.native
 }
 
 object Annotation {
   @scala.inline
-  def apply(
-    series: String,
-    attachAtBottom: js.UndefOr[Boolean] = js.undefined,
-    clickHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
-    cssClass: String = null,
-    dblClickHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
-    div: HTMLDivElement = null,
-    height: js.UndefOr[Double] = js.undefined,
-    icon: String = null,
-    mouseOutHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
-    mouseOverHandler: (/* annotation */ Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _ = null,
-    shortText: String = null,
-    text: String = null,
-    tickHeight: js.UndefOr[Double] = js.undefined,
-    width: js.UndefOr[Double] = js.undefined,
-    x: Double | String = null,
-    xval: js.UndefOr[Double] = js.undefined
-  ): Annotation = {
+  def apply(series: String): Annotation = {
     val __obj = js.Dynamic.literal(series = series.asInstanceOf[js.Any])
-    if (!js.isUndefined(attachAtBottom)) __obj.updateDynamic("attachAtBottom")(attachAtBottom.get.asInstanceOf[js.Any])
-    if (clickHandler != null) __obj.updateDynamic("clickHandler")(js.Any.fromFunction4(clickHandler))
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (dblClickHandler != null) __obj.updateDynamic("dblClickHandler")(js.Any.fromFunction4(dblClickHandler))
-    if (div != null) __obj.updateDynamic("div")(div.asInstanceOf[js.Any])
-    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height.get.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(js.Any.fromFunction4(mouseOutHandler))
-    if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(js.Any.fromFunction4(mouseOverHandler))
-    if (shortText != null) __obj.updateDynamic("shortText")(shortText.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(tickHeight)) __obj.updateDynamic("tickHeight")(tickHeight.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width.get.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (!js.isUndefined(xval)) __obj.updateDynamic("xval")(xval.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
+  @scala.inline
+  implicit class AnnotationOps[Self <: Annotation] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setSeries(value: String): Self = this.set("series", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setAttachAtBottom(value: Boolean): Self = this.set("attachAtBottom", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttachAtBottom: Self = this.set("attachAtBottom", js.undefined)
+    @scala.inline
+    def setClickHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = this.set("clickHandler", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteClickHandler: Self = this.set("clickHandler", js.undefined)
+    @scala.inline
+    def setCssClass(value: String): Self = this.set("cssClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCssClass: Self = this.set("cssClass", js.undefined)
+    @scala.inline
+    def setDblClickHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = this.set("dblClickHandler", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteDblClickHandler: Self = this.set("dblClickHandler", js.undefined)
+    @scala.inline
+    def setDiv(value: HTMLDivElement): Self = this.set("div", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDiv: Self = this.set("div", js.undefined)
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHeight: Self = this.set("height", js.undefined)
+    @scala.inline
+    def setIcon(value: String): Self = this.set("icon", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIcon: Self = this.set("icon", js.undefined)
+    @scala.inline
+    def setMouseOutHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = this.set("mouseOutHandler", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteMouseOutHandler: Self = this.set("mouseOutHandler", js.undefined)
+    @scala.inline
+    def setMouseOverHandler(value: (Annotation, /* point */ Point, /* dygraph */ Dygraph, /* event */ MouseEvent) => _): Self = this.set("mouseOverHandler", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteMouseOverHandler: Self = this.set("mouseOverHandler", js.undefined)
+    @scala.inline
+    def setShortText(value: String): Self = this.set("shortText", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortText: Self = this.set("shortText", js.undefined)
+    @scala.inline
+    def setText(value: String): Self = this.set("text", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteText: Self = this.set("text", js.undefined)
+    @scala.inline
+    def setTickHeight(value: Double): Self = this.set("tickHeight", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTickHeight: Self = this.set("tickHeight", js.undefined)
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWidth: Self = this.set("width", js.undefined)
+    @scala.inline
+    def setX(value: Double | String): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteX: Self = this.set("x", js.undefined)
+    @scala.inline
+    def setXval(value: Double): Self = this.set("xval", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXval: Self = this.set("xval", js.undefined)
+  }
+  
 }
 

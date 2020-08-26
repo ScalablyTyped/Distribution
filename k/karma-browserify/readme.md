@@ -12,7 +12,7 @@ A fast browserify integration for Karma that handles large projects with ease
 | Keywords           | karma-plugin, karma-preprocessor, browserify-tool, browserify |
 | # releases         | 5 |
 | # dependents       | 46 |
-| # downloads        | 1723091 |
+| # downloads        | 1690336 |
 | # stars            | 19 |
 
 ## Links

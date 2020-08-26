@@ -15,6 +15,7 @@ object mod extends js.Object {
   class Tween ()
     extends typings.tweenJs.TWEEN.Tween {
     def this(`object`: js.Any) = this()
+    def this(`object`: js.UndefOr[scala.Nothing], group: typings.tweenJs.TWEEN.Group) = this()
     def this(`object`: js.Any, group: typings.tweenJs.TWEEN.Group) = this()
   }
   
@@ -26,6 +27,7 @@ object mod extends js.Object {
   def remove(tween: typings.tweenJs.TWEEN.Tween): Unit = js.native
   def removeAll(): Unit = js.native
   def update(): Boolean = js.native
+  def update(time: js.UndefOr[scala.Nothing], preserve: Boolean): Boolean = js.native
   def update(time: Double): Boolean = js.native
   def update(time: Double, preserve: Boolean): Boolean = js.native
 }

@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 object writeJson extends js.Object {
   def apply(file: String, `object`: js.Any): Unit = js.native
   def apply(file: String, `object`: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def apply(
+    file: String,
+    `object`: js.Any,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ Error, Unit]
+  ): Unit = js.native
   def apply(file: String, `object`: js.Any, options: OpenOptions): Unit = js.native
   def apply(
     file: String,

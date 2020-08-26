@@ -1,5 +1,6 @@
 package typings.materialTabBar
 
+import typings.materialTab.typesMod.MDCTabDimensions
 import typings.std.ClientRect
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -56,7 +57,7 @@ object adapterMod extends js.Object {
       * Returns the tab dimensions of the tab at the given index
       * @param index The index of the tab
       */
-    def getTabDimensionsAtIndex(index: Double): js.Any = js.native
+    def getTabDimensionsAtIndex(index: Double): MDCTabDimensions = js.native
     /**
       * Returns the client rect of the tab's indicator
       * @param index The index of the tab

@@ -24,7 +24,15 @@ import scala.scalajs.js.annotation._
 class RopeGeometry ()
   extends typings.pixiJs.PIXI.RopeGeometry {
   def this(width: Double) = this()
+  def this(width: js.UndefOr[scala.Nothing], points: js.Array[typings.pixiJs.PIXI.Point]) = this()
   def this(width: Double, points: js.Array[typings.pixiJs.PIXI.Point]) = this()
+  def this(width: js.UndefOr[scala.Nothing], points: js.UndefOr[scala.Nothing], textureScale: Double) = this()
+  def this(
+    width: js.UndefOr[scala.Nothing],
+    points: js.Array[typings.pixiJs.PIXI.Point],
+    textureScale: Double
+  ) = this()
+  def this(width: Double, points: js.UndefOr[scala.Nothing], textureScale: Double) = this()
   def this(width: Double, points: js.Array[typings.pixiJs.PIXI.Point], textureScale: Double) = this()
 }
 

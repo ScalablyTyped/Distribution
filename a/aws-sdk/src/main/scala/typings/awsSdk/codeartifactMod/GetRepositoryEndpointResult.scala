@@ -14,10 +14,26 @@ trait GetRepositoryEndpointResult extends js.Object {
 
 object GetRepositoryEndpointResult {
   @scala.inline
-  def apply(repositoryEndpoint: String = null): GetRepositoryEndpointResult = {
+  def apply(): GetRepositoryEndpointResult = {
     val __obj = js.Dynamic.literal()
-    if (repositoryEndpoint != null) __obj.updateDynamic("repositoryEndpoint")(repositoryEndpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRepositoryEndpointResult]
   }
+  @scala.inline
+  implicit class GetRepositoryEndpointResultOps[Self <: GetRepositoryEndpointResult] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setRepositoryEndpoint(value: String): Self = this.set("repositoryEndpoint", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRepositoryEndpoint: Self = this.set("repositoryEndpoint", js.undefined)
+  }
+  
 }
 

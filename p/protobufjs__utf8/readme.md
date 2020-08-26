@@ -12,7 +12,7 @@ A minimal UTF8 implementation for number arrays.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 32 |
-| # downloads        | 53375691 |
+| # downloads        | 56582427 |
 | # stars            | 0 |
 
 ## Links

@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HistogramRangeSlider extends Widget_ {
   /**
-    * The statistical average of the data in the histogram. You would typically get this value from the `avg` property of SummaryStatisticsResult, which is the result of the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function.  When set, this value will render on the histogram with a line and an average symbol.
+    * The statistical average of the data in the histogram. You would typically get this value from the `avg` property of SummaryStatisticsResult, which is the result of the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.  When set, this value will render on the histogram with a line and an average symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#average)
     */
@@ -39,7 +39,7 @@ trait HistogramRangeSlider extends Widget_ {
   @JSName("barCreatedFunction")
   var barCreatedFunction_Original: BarCreatedFunction = js.native
   /**
-    * An array of objects representing each bin in the histogram. This information is typically returned from the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html) function.
+    * An array of objects representing each bin in the histogram. This information is typically returned from the [histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-histogram.html) function.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#bins)
     */
@@ -179,6 +179,7 @@ trait HistogramRangeSlider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLineCreatedFunction)
     */
   def dataLineCreatedFunction(lineElement: js.Any): Unit = js.native
+  def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any): Unit = js.native
   def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any, index: Double): Unit = js.native
   /**
@@ -201,6 +202,7 @@ trait HistogramRangeSlider extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   @JSName("labelFormatFunction")
   def labelFormatFunction_average(value: Double, `type`: average): String = js.native
   @JSName("labelFormatFunction")

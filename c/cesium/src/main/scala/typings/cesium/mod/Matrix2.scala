@@ -8,8 +8,58 @@ import scala.scalajs.js.annotation._
 @js.native
 class Matrix2 () extends Packable {
   def this(column0Row0: Double) = this()
+  def this(column0Row0: js.UndefOr[scala.Nothing], column1Row0: Double) = this()
   def this(column0Row0: Double, column1Row0: Double) = this()
+  def this(
+    column0Row0: js.UndefOr[scala.Nothing],
+    column1Row0: js.UndefOr[scala.Nothing],
+    column0Row1: Double
+  ) = this()
+  def this(column0Row0: js.UndefOr[scala.Nothing], column1Row0: Double, column0Row1: Double) = this()
+  def this(column0Row0: Double, column1Row0: js.UndefOr[scala.Nothing], column0Row1: Double) = this()
   def this(column0Row0: Double, column1Row0: Double, column0Row1: Double) = this()
+  def this(
+    column0Row0: js.UndefOr[scala.Nothing],
+    column1Row0: js.UndefOr[scala.Nothing],
+    column0Row1: js.UndefOr[scala.Nothing],
+    column1Row1: Double
+  ) = this()
+  def this(
+    column0Row0: js.UndefOr[scala.Nothing],
+    column1Row0: js.UndefOr[scala.Nothing],
+    column0Row1: Double,
+    column1Row1: Double
+  ) = this()
+  def this(
+    column0Row0: js.UndefOr[scala.Nothing],
+    column1Row0: Double,
+    column0Row1: js.UndefOr[scala.Nothing],
+    column1Row1: Double
+  ) = this()
+  def this(
+    column0Row0: js.UndefOr[scala.Nothing],
+    column1Row0: Double,
+    column0Row1: Double,
+    column1Row1: Double
+  ) = this()
+  def this(
+    column0Row0: Double,
+    column1Row0: js.UndefOr[scala.Nothing],
+    column0Row1: js.UndefOr[scala.Nothing],
+    column1Row1: Double
+  ) = this()
+  def this(
+    column0Row0: Double,
+    column1Row0: js.UndefOr[scala.Nothing],
+    column0Row1: Double,
+    column1Row1: Double
+  ) = this()
+  def this(
+    column0Row0: Double,
+    column1Row0: Double,
+    column0Row1: js.UndefOr[scala.Nothing],
+    column1Row1: Double
+  ) = this()
   def this(column0Row0: Double, column1Row0: Double, column0Row1: Double, column1Row1: Double) = this()
   def clone(result: Matrix2): Matrix2 = js.native
   def equals(): Boolean = js.native
@@ -31,10 +81,12 @@ object Matrix2 extends js.Object {
   def clone(matrix: Matrix2): Matrix2 = js.native
   def clone(matrix: Matrix2, result: Matrix2): Matrix2 = js.native
   def equals(): Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: Matrix2): Boolean = js.native
   def equals(left: Matrix2): Boolean = js.native
   def equals(left: Matrix2, right: Matrix2): Boolean = js.native
   def equalsEpsilon(left: Matrix2, right: Matrix2, epsilon: Double): Boolean = js.native
   def fromArray(array: js.Array[Double]): Matrix2 = js.native
+  def fromArray(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix2): Matrix2 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double): Matrix2 = js.native
   def fromArray(array: js.Array[Double], startingIndex: Double, result: Matrix2): Matrix2 = js.native
   def fromColumnMajorArray(values: js.Array[Double]): Matrix2 = js.native
@@ -65,6 +117,7 @@ object Matrix2 extends js.Object {
   def toArray(matrix: Matrix2, result: js.Array[Double]): js.Array[Double] = js.native
   def transpose(matrix: Matrix2, result: Matrix2): Matrix2 = js.native
   def unpack(array: js.Array[Double]): Matrix2 = js.native
+  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: Matrix2): Matrix2 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double): Matrix2 = js.native
   def unpack(array: js.Array[Double], startingIndex: Double, result: Matrix2): Matrix2 = js.native
 }

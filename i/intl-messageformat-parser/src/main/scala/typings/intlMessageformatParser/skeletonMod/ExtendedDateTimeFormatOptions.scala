@@ -9,44 +9,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ExtendedDateTimeFormatOptions extends DateTimeFormatOptions {
-  var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.undefined
+  var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.native
 }
 
 object ExtendedDateTimeFormatOptions {
   @scala.inline
-  def apply(
-    day: String = null,
-    era: String = null,
-    formatMatcher: String = null,
-    hour: String = null,
-    hour12: js.UndefOr[Boolean] = js.undefined,
-    hourCycle: h11 | h12 | h23 | h24 = null,
-    localeMatcher: String = null,
-    minute: String = null,
-    month: String = null,
-    second: String = null,
-    timeZone: String = null,
-    timeZoneName: String = null,
-    weekday: String = null,
-    year: String = null
-  ): ExtendedDateTimeFormatOptions = {
+  def apply(): ExtendedDateTimeFormatOptions = {
     val __obj = js.Dynamic.literal()
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (era != null) __obj.updateDynamic("era")(era.asInstanceOf[js.Any])
-    if (formatMatcher != null) __obj.updateDynamic("formatMatcher")(formatMatcher.asInstanceOf[js.Any])
-    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
-    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12.get.asInstanceOf[js.Any])
-    if (hourCycle != null) __obj.updateDynamic("hourCycle")(hourCycle.asInstanceOf[js.Any])
-    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
-    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
-    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone.asInstanceOf[js.Any])
-    if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName.asInstanceOf[js.Any])
-    if (weekday != null) __obj.updateDynamic("weekday")(weekday.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendedDateTimeFormatOptions]
   }
+  @scala.inline
+  implicit class ExtendedDateTimeFormatOptionsOps[Self <: ExtendedDateTimeFormatOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHourCycle(value: h11 | h12 | h23 | h24): Self = this.set("hourCycle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHourCycle: Self = this.set("hourCycle", js.undefined)
+  }
+  
 }
 

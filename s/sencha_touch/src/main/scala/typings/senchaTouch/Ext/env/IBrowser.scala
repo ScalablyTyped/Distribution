@@ -1,91 +1,84 @@
 package typings.senchaTouch.Ext.env
 
-import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
-import typings.senchaTouch.Ext.IClass
 import typings.senchaTouch.Ext.IVersion
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait IBrowser extends IBase {
   /** [Property] (String) */
-  var engineName: js.UndefOr[String] = js.undefined
+  var engineName: js.UndefOr[String] = js.native
   /** [Property] (Ext.Version) */
-  var engineVersion: js.UndefOr[IVersion] = js.undefined
+  var engineVersion: js.UndefOr[IVersion] = js.native
   /** [Method] A hybrid property can be either accessed as a method call for example  if Ext browser is IE
     * @param value String The OS name to check.
     * @returns Boolean
     */
-  var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Boolean]] = js.undefined
+  var is: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Boolean]] = js.native
   /** [Property] (Boolean) */
-  var isSecure: js.UndefOr[Boolean] = js.undefined
+  var isSecure: js.UndefOr[Boolean] = js.native
   /** [Property] (Boolean) */
-  var isStrict: js.UndefOr[Boolean] = js.undefined
+  var isStrict: js.UndefOr[Boolean] = js.native
   /** [Property] (String) */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String] = js.native
   /** [Property] (String) */
-  var userAgent: js.UndefOr[String] = js.undefined
+  var userAgent: js.UndefOr[String] = js.native
   /** [Property] (Ext.Version) */
-  var version: js.UndefOr[IVersion] = js.undefined
+  var version: js.UndefOr[IVersion] = js.native
 }
 
 object IBrowser {
   @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => _ = null,
-    callParent: /* args */ js.UndefOr[js.Any] => _ = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => _ = null,
-    config: js.Any = null,
-    destroy: () => Unit = null,
-    engineName: String = null,
-    engineVersion: IVersion = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => _ = null,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => _ = null,
-    is: /* value */ js.UndefOr[String] => Boolean = null,
-    isSecure: js.UndefOr[Boolean] = js.undefined,
-    isStrict: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    name: String = null,
-    platformConfig: js.Any = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    userAgent: String = null,
-    uses: Array = null,
-    version: IVersion = null
-  ): IBrowser = {
+  def apply(): IBrowser = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1(callOverridden))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1(callParent))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1(callSuper))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(js.Any.fromFunction0(destroy))
-    if (engineName != null) __obj.updateDynamic("engineName")(engineName.asInstanceOf[js.Any])
-    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1(getInitialConfig))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1(initConfig))
-    if (is != null) __obj.updateDynamic("is")(js.Any.fromFunction1(is))
-    if (!js.isUndefined(isSecure)) __obj.updateDynamic("isSecure")(isSecure.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStrict)) __obj.updateDynamic("isStrict")(isStrict.get.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.get.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBrowser]
   }
+  @scala.inline
+  implicit class IBrowserOps[Self <: IBrowser] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEngineName(value: String): Self = this.set("engineName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineName: Self = this.set("engineName", js.undefined)
+    @scala.inline
+    def setEngineVersion(value: IVersion): Self = this.set("engineVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEngineVersion: Self = this.set("engineVersion", js.undefined)
+    @scala.inline
+    def setIs(value: /* value */ js.UndefOr[String] => Boolean): Self = this.set("is", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteIs: Self = this.set("is", js.undefined)
+    @scala.inline
+    def setIsSecure(value: Boolean): Self = this.set("isSecure", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsSecure: Self = this.set("isSecure", js.undefined)
+    @scala.inline
+    def setIsStrict(value: Boolean): Self = this.set("isStrict", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsStrict: Self = this.set("isStrict", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setUserAgent(value: String): Self = this.set("userAgent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUserAgent: Self = this.set("userAgent", js.undefined)
+    @scala.inline
+    def setVersion(value: IVersion): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+  }
+  
 }
 

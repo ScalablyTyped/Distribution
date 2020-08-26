@@ -12,6 +12,7 @@ trait Evaporate extends js.Object {
   def cancel(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
   def cancel(file_key: String): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
   def pause(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+  def pause(file_key: js.UndefOr[scala.Nothing], options: js.Object): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
   def pause(file_key: String): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
   def pause(file_key: String, options: js.Object): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
   def resume(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native

@@ -26,5 +26,24 @@ object DeleteBotChannelAssociationRequest {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBotChannelAssociationRequest]
   }
+  @scala.inline
+  implicit class DeleteBotChannelAssociationRequestOps[Self <: DeleteBotChannelAssociationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBotAlias(value: AliasName): Self = this.set("botAlias", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setBotName(value: BotName): Self = this.set("botName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setName(value: BotChannelName): Self = this.set("name", value.asInstanceOf[js.Any])
+  }
+  
 }
 

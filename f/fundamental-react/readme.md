@@ -10,9 +10,9 @@ SAP Fundamentals, implemented in React
 | ------------------ | :-------------: |
 | Full name          | fundamental-react |
 | Keywords           | - |
-| # releases         | 377 |
+| # releases         | 380 |
 | # dependents       | 3 |
-| # downloads        | 98363 |
+| # downloads        | 101168 |
 | # stars            | 0 |
 
 ## Links

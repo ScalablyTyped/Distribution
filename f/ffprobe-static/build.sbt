@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ffprobe-static"
-version := "2.0-dt-20200515Z-e86f38"
-scalaVersion := "2.13.2"
+version := "2.0-dt-20200515Z-92b150"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

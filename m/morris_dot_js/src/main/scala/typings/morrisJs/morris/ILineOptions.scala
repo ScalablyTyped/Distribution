@@ -5,65 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ILineOptions extends IGridChartOptions {
   /** Define how null and undefined values are handled (see documentation). */
-  var continuousLine: js.UndefOr[Boolean] = js.undefined
+  var continuousLine: js.UndefOr[Boolean] = js.native
   /** A function that accepts millisecond timestamps and formats them for display as chart labels. */
-  var dateFormat: js.UndefOr[js.Function1[/* timestamp */ Double, String]] = js.undefined
+  var dateFormat: js.UndefOr[js.Function1[/* timestamp */ Double, String]] = js.native
   /** Array of color values to use for the event line colors. If you list fewer colors here than you have lines in events, then the values will be cycled. */
-  var eventLineColors: js.UndefOr[js.Array[String]] = js.undefined
+  var eventLineColors: js.UndefOr[js.Array[String]] = js.native
   /** Width, in pixels, of the event lines. */
-  var eventStrokeWidth: js.UndefOr[Double] = js.undefined
+  var eventStrokeWidth: js.UndefOr[Double] = js.native
   /** A list of x-values to draw as vertical 'event' lines on the chart. */
-  var events: js.UndefOr[js.Array[String]] = js.undefined
+  var events: js.UndefOr[js.Array[String]] = js.native
   /** Change the opacity of the area fill colour. Accepts values between 0.0 (for completely transparent) and 1.0 (for completely opaque). */
-  var fillOpacity: js.UndefOr[Double] = js.undefined
+  var fillOpacity: js.UndefOr[Double] = js.native
   /** Array of color values to use for the goal line colors. If you list fewer colors here than you have lines in goals, then the values will be cycled. */
-  var goalLineColors: js.UndefOr[js.Array[String]] = js.undefined
+  var goalLineColors: js.UndefOr[js.Array[String]] = js.native
   /** Width, in pixels, of the goal lines. */
-  var goalStrokeWidth: js.UndefOr[Double] = js.undefined
+  var goalStrokeWidth: js.UndefOr[Double] = js.native
   /** A list of y-values to draw as horizontal 'goal' lines on the chart. */
-  var goals: js.UndefOr[js.Array[Double]] = js.undefined
+  var goals: js.UndefOr[js.Array[Double]] = js.native
   /** Provide a function on this option to generate custom hover legends. */
   var hoverCallback: js.UndefOr[
     js.Function4[
       /* index */ Double, 
-      /* options */ ILineOptions, 
+      /* options */ this.type, 
       /* content */ String, 
       /* row */ js.Any, 
       String
     ]
-  ] = js.undefined
+  ] = js.native
   /** Array containing colors for the series lines/points. */
-  var lineColors: js.UndefOr[js.Array[String]] = js.undefined
+  var lineColors: js.UndefOr[js.Array[String]] = js.native
   /** Width of the series lines, in pixels. */
-  var lineWidth: js.UndefOr[Double] = js.undefined
+  var lineWidth: js.UndefOr[Double] = js.native
   /** Set to false to skip time/date parsing for X values, instead treating them as an equally-spaced series. */
-  var parseTime: js.UndefOr[Boolean] = js.undefined
+  var parseTime: js.UndefOr[Boolean] = js.native
   /** Colors for the series points. By default uses the same values as lineColors */
-  var pointFillColors: js.UndefOr[js.Array[String]] = js.undefined
+  var pointFillColors: js.UndefOr[js.Array[String]] = js.native
   /** Diameter of the series points, in pixels. */
-  var pointSize: js.UndefOr[Double] = js.undefined
+  var pointSize: js.UndefOr[Double] = js.native
   /** Colors for the outlines of the series points. (#ffffff by default). */
-  var pointStrokeColors: js.UndefOr[js.Array[String]] = js.undefined
+  var pointStrokeColors: js.UndefOr[js.Array[String]] = js.native
   /** Set to a string value (eg: '%') to add a label suffix all y-labels. */
-  var postUnits: js.UndefOr[String] = js.undefined
+  var postUnits: js.UndefOr[String] = js.native
   /** Set to a string value (eg: '$') to add a label prefix all y-labels. */
-  var preUnits: js.UndefOr[String] = js.undefined
+  var preUnits: js.UndefOr[String] = js.native
   /** Set to false to disable line smoothing. */
-  var smooth: js.UndefOr[Boolean] = js.undefined
+  var smooth: js.UndefOr[Boolean] = js.native
   /** The angle in degrees from horizontal to draw x-axis labels. */
-  var xLabelAngle: js.UndefOr[Double] = js.undefined
+  var xLabelAngle: js.UndefOr[Double] = js.native
   /** A function that accepts Date objects and formats them for display as x-axis labels. Overrides the default formatter chosen by the automatic labeller or the xLabels option. */
-  var xLabelFormat: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+  var xLabelFormat: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
   /** Sets the x axis labelling interval. By default the interval will be automatically computed. */
-  var xLabels: js.UndefOr[Interval] = js.undefined
+  var xLabels: js.UndefOr[Interval] = js.native
   /** A function that accepts y-values and formats them for display as y-axis labels. */
-  var yLabelFormat: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.undefined
+  var yLabelFormat: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.native
   /** Max. bound for Y-values. Alternatively, set this to 'auto' to compute automatically, or 'auto [num]' to automatically compute and ensure that the max y-value is at least [num]. */
-  var ymax: js.UndefOr[Double | String] = js.undefined
+  var ymax: js.UndefOr[Double | String] = js.native
   /** Min. bound for Y-values. Alternatively, set this to 'auto' to compute automatically, or 'auto [num]' to automatically compute and ensure that the min y-value is at most [num]. */
-  var ymin: js.UndefOr[Double | String] = js.undefined
+  var ymin: js.UndefOr[Double | String] = js.native
 }
 
 object ILineOptions {
@@ -73,80 +74,137 @@ object ILineOptions {
     element: js.Any,
     labels: js.Array[String],
     xkey: String,
-    ykeys: js.Array[String],
-    axes: js.UndefOr[Boolean] = js.undefined,
-    continuousLine: js.UndefOr[Boolean] = js.undefined,
-    dateFormat: /* timestamp */ Double => String = null,
-    eventLineColors: js.Array[String] = null,
-    eventStrokeWidth: js.UndefOr[Double] = js.undefined,
-    events: js.Array[String] = null,
-    fillOpacity: js.UndefOr[Double] = js.undefined,
-    goalLineColors: js.Array[String] = null,
-    goalStrokeWidth: js.UndefOr[Double] = js.undefined,
-    goals: js.Array[Double] = null,
-    grid: js.UndefOr[Boolean] = js.undefined,
-    gridLineColor: String = null,
-    gridStrokeWidth: js.UndefOr[Double] = js.undefined,
-    gridTextColor: String = null,
-    gridTextFamily: String = null,
-    gridTextSize: js.UndefOr[Double] = js.undefined,
-    gridTextWeight: String = null,
-    hideHover: Boolean | AutoAlways = null,
-    hoverCallback: (/* index */ Double, /* options */ ILineOptions, /* content */ String, /* row */ js.Any) => String = null,
-    lineColors: js.Array[String] = null,
-    lineWidth: js.UndefOr[Double] = js.undefined,
-    parseTime: js.UndefOr[Boolean] = js.undefined,
-    pointFillColors: js.Array[String] = null,
-    pointSize: js.UndefOr[Double] = js.undefined,
-    pointStrokeColors: js.Array[String] = null,
-    postUnits: String = null,
-    preUnits: String = null,
-    resize: js.UndefOr[Boolean] = js.undefined,
-    smooth: js.UndefOr[Boolean] = js.undefined,
-    xLabelAngle: js.UndefOr[Double] = js.undefined,
-    xLabelFormat: /* date */ Date => String = null,
-    xLabels: Interval = null,
-    yLabelFormat: /* val */ js.Any => String = null,
-    ymax: Double | String = null,
-    ymin: Double | String = null
+    ykeys: js.Array[String]
   ): ILineOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], xkey = xkey.asInstanceOf[js.Any], ykeys = ykeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(continuousLine)) __obj.updateDynamic("continuousLine")(continuousLine.get.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(js.Any.fromFunction1(dateFormat))
-    if (eventLineColors != null) __obj.updateDynamic("eventLineColors")(eventLineColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventStrokeWidth)) __obj.updateDynamic("eventStrokeWidth")(eventStrokeWidth.get.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillOpacity)) __obj.updateDynamic("fillOpacity")(fillOpacity.get.asInstanceOf[js.Any])
-    if (goalLineColors != null) __obj.updateDynamic("goalLineColors")(goalLineColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(goalStrokeWidth)) __obj.updateDynamic("goalStrokeWidth")(goalStrokeWidth.get.asInstanceOf[js.Any])
-    if (goals != null) __obj.updateDynamic("goals")(goals.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.get.asInstanceOf[js.Any])
-    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridStrokeWidth)) __obj.updateDynamic("gridStrokeWidth")(gridStrokeWidth.get.asInstanceOf[js.Any])
-    if (gridTextColor != null) __obj.updateDynamic("gridTextColor")(gridTextColor.asInstanceOf[js.Any])
-    if (gridTextFamily != null) __obj.updateDynamic("gridTextFamily")(gridTextFamily.asInstanceOf[js.Any])
-    if (!js.isUndefined(gridTextSize)) __obj.updateDynamic("gridTextSize")(gridTextSize.get.asInstanceOf[js.Any])
-    if (gridTextWeight != null) __obj.updateDynamic("gridTextWeight")(gridTextWeight.asInstanceOf[js.Any])
-    if (hideHover != null) __obj.updateDynamic("hideHover")(hideHover.asInstanceOf[js.Any])
-    if (hoverCallback != null) __obj.updateDynamic("hoverCallback")(js.Any.fromFunction4(hoverCallback))
-    if (lineColors != null) __obj.updateDynamic("lineColors")(lineColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(lineWidth)) __obj.updateDynamic("lineWidth")(lineWidth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(parseTime)) __obj.updateDynamic("parseTime")(parseTime.get.asInstanceOf[js.Any])
-    if (pointFillColors != null) __obj.updateDynamic("pointFillColors")(pointFillColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointSize)) __obj.updateDynamic("pointSize")(pointSize.get.asInstanceOf[js.Any])
-    if (pointStrokeColors != null) __obj.updateDynamic("pointStrokeColors")(pointStrokeColors.asInstanceOf[js.Any])
-    if (postUnits != null) __obj.updateDynamic("postUnits")(postUnits.asInstanceOf[js.Any])
-    if (preUnits != null) __obj.updateDynamic("preUnits")(preUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(xLabelAngle)) __obj.updateDynamic("xLabelAngle")(xLabelAngle.get.asInstanceOf[js.Any])
-    if (xLabelFormat != null) __obj.updateDynamic("xLabelFormat")(js.Any.fromFunction1(xLabelFormat))
-    if (xLabels != null) __obj.updateDynamic("xLabels")(xLabels.asInstanceOf[js.Any])
-    if (yLabelFormat != null) __obj.updateDynamic("yLabelFormat")(js.Any.fromFunction1(yLabelFormat))
-    if (ymax != null) __obj.updateDynamic("ymax")(ymax.asInstanceOf[js.Any])
-    if (ymin != null) __obj.updateDynamic("ymin")(ymin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILineOptions]
   }
+  @scala.inline
+  implicit class ILineOptionsOps[Self <: ILineOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContinuousLine(value: Boolean): Self = this.set("continuousLine", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContinuousLine: Self = this.set("continuousLine", js.undefined)
+    @scala.inline
+    def setDateFormat(value: /* timestamp */ Double => String): Self = this.set("dateFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteDateFormat: Self = this.set("dateFormat", js.undefined)
+    @scala.inline
+    def setEventLineColorsVarargs(value: String*): Self = this.set("eventLineColors", js.Array(value :_*))
+    @scala.inline
+    def setEventLineColors(value: js.Array[String]): Self = this.set("eventLineColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventLineColors: Self = this.set("eventLineColors", js.undefined)
+    @scala.inline
+    def setEventStrokeWidth(value: Double): Self = this.set("eventStrokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventStrokeWidth: Self = this.set("eventStrokeWidth", js.undefined)
+    @scala.inline
+    def setEventsVarargs(value: String*): Self = this.set("events", js.Array(value :_*))
+    @scala.inline
+    def setEvents(value: js.Array[String]): Self = this.set("events", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEvents: Self = this.set("events", js.undefined)
+    @scala.inline
+    def setFillOpacity(value: Double): Self = this.set("fillOpacity", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFillOpacity: Self = this.set("fillOpacity", js.undefined)
+    @scala.inline
+    def setGoalLineColorsVarargs(value: String*): Self = this.set("goalLineColors", js.Array(value :_*))
+    @scala.inline
+    def setGoalLineColors(value: js.Array[String]): Self = this.set("goalLineColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoalLineColors: Self = this.set("goalLineColors", js.undefined)
+    @scala.inline
+    def setGoalStrokeWidth(value: Double): Self = this.set("goalStrokeWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoalStrokeWidth: Self = this.set("goalStrokeWidth", js.undefined)
+    @scala.inline
+    def setGoalsVarargs(value: Double*): Self = this.set("goals", js.Array(value :_*))
+    @scala.inline
+    def setGoals(value: js.Array[Double]): Self = this.set("goals", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteGoals: Self = this.set("goals", js.undefined)
+    @scala.inline
+    def setHoverCallback(value: (/* index */ Double, ILineOptions, /* content */ String, /* row */ js.Any) => String): Self = this.set("hoverCallback", js.Any.fromFunction4(value))
+    @scala.inline
+    def deleteHoverCallback: Self = this.set("hoverCallback", js.undefined)
+    @scala.inline
+    def setLineColorsVarargs(value: String*): Self = this.set("lineColors", js.Array(value :_*))
+    @scala.inline
+    def setLineColors(value: js.Array[String]): Self = this.set("lineColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineColors: Self = this.set("lineColors", js.undefined)
+    @scala.inline
+    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    @scala.inline
+    def setParseTime(value: Boolean): Self = this.set("parseTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteParseTime: Self = this.set("parseTime", js.undefined)
+    @scala.inline
+    def setPointFillColorsVarargs(value: String*): Self = this.set("pointFillColors", js.Array(value :_*))
+    @scala.inline
+    def setPointFillColors(value: js.Array[String]): Self = this.set("pointFillColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointFillColors: Self = this.set("pointFillColors", js.undefined)
+    @scala.inline
+    def setPointSize(value: Double): Self = this.set("pointSize", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointSize: Self = this.set("pointSize", js.undefined)
+    @scala.inline
+    def setPointStrokeColorsVarargs(value: String*): Self = this.set("pointStrokeColors", js.Array(value :_*))
+    @scala.inline
+    def setPointStrokeColors(value: js.Array[String]): Self = this.set("pointStrokeColors", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePointStrokeColors: Self = this.set("pointStrokeColors", js.undefined)
+    @scala.inline
+    def setPostUnits(value: String): Self = this.set("postUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePostUnits: Self = this.set("postUnits", js.undefined)
+    @scala.inline
+    def setPreUnits(value: String): Self = this.set("preUnits", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePreUnits: Self = this.set("preUnits", js.undefined)
+    @scala.inline
+    def setSmooth(value: Boolean): Self = this.set("smooth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmooth: Self = this.set("smooth", js.undefined)
+    @scala.inline
+    def setXLabelAngle(value: Double): Self = this.set("xLabelAngle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXLabelAngle: Self = this.set("xLabelAngle", js.undefined)
+    @scala.inline
+    def setXLabelFormat(value: /* date */ Date => String): Self = this.set("xLabelFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteXLabelFormat: Self = this.set("xLabelFormat", js.undefined)
+    @scala.inline
+    def setXLabels(value: Interval): Self = this.set("xLabels", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteXLabels: Self = this.set("xLabels", js.undefined)
+    @scala.inline
+    def setYLabelFormat(value: /* val */ js.Any => String): Self = this.set("yLabelFormat", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteYLabelFormat: Self = this.set("yLabelFormat", js.undefined)
+    @scala.inline
+    def setYmax(value: Double | String): Self = this.set("ymax", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYmax: Self = this.set("ymax", js.undefined)
+    @scala.inline
+    def setYmin(value: Double | String): Self = this.set("ymin", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteYmin: Self = this.set("ymin", js.undefined)
+  }
+  
 }
 

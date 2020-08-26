@@ -4,17 +4,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait AndroidInstrumentationTest extends js.Object {
   /**
     * The APK for the application under test.
     * Required
     */
-  var appApk: js.UndefOr[FileReference] = js.undefined
+  var appApk: js.UndefOr[FileReference] = js.native
   /**
     * The java package for the application under test.
     * Optional, default is determined by examining the application's manifest.
     */
-  var appPackageId: js.UndefOr[String] = js.undefined
+  var appPackageId: js.UndefOr[String] = js.native
   /**
     * The option of whether running each test within its own invocation of
     * instrumentation with Android Test Orchestrator or not.
@@ -31,22 +32,22 @@ trait AndroidInstrumentationTest extends js.Object {
     *
     * Optional, if empty, test will be run without orchestrator.
     */
-  var orchestratorOption: js.UndefOr[String] = js.undefined
+  var orchestratorOption: js.UndefOr[String] = js.native
   /**
     * The APK containing the test code to be executed.
     * Required
     */
-  var testApk: js.UndefOr[FileReference] = js.undefined
+  var testApk: js.UndefOr[FileReference] = js.native
   /**
     * The java package for the test to be executed.
     * Optional, default is determined by examining the application's manifest.
     */
-  var testPackageId: js.UndefOr[String] = js.undefined
+  var testPackageId: js.UndefOr[String] = js.native
   /**
     * The InstrumentationTestRunner class.
     * Optional, default is determined by examining the application's manifest.
     */
-  var testRunnerClass: js.UndefOr[String] = js.undefined
+  var testRunnerClass: js.UndefOr[String] = js.native
   /**
     * Each target must be fully qualified with the package name or class name,
     * in one of these formats:
@@ -56,29 +57,57 @@ trait AndroidInstrumentationTest extends js.Object {
     *
     * Optional, if empty, all targets in the module will be run.
     */
-  var testTargets: js.UndefOr[js.Array[String]] = js.undefined
+  var testTargets: js.UndefOr[js.Array[String]] = js.native
 }
 
 object AndroidInstrumentationTest {
   @scala.inline
-  def apply(
-    appApk: FileReference = null,
-    appPackageId: String = null,
-    orchestratorOption: String = null,
-    testApk: FileReference = null,
-    testPackageId: String = null,
-    testRunnerClass: String = null,
-    testTargets: js.Array[String] = null
-  ): AndroidInstrumentationTest = {
+  def apply(): AndroidInstrumentationTest = {
     val __obj = js.Dynamic.literal()
-    if (appApk != null) __obj.updateDynamic("appApk")(appApk.asInstanceOf[js.Any])
-    if (appPackageId != null) __obj.updateDynamic("appPackageId")(appPackageId.asInstanceOf[js.Any])
-    if (orchestratorOption != null) __obj.updateDynamic("orchestratorOption")(orchestratorOption.asInstanceOf[js.Any])
-    if (testApk != null) __obj.updateDynamic("testApk")(testApk.asInstanceOf[js.Any])
-    if (testPackageId != null) __obj.updateDynamic("testPackageId")(testPackageId.asInstanceOf[js.Any])
-    if (testRunnerClass != null) __obj.updateDynamic("testRunnerClass")(testRunnerClass.asInstanceOf[js.Any])
-    if (testTargets != null) __obj.updateDynamic("testTargets")(testTargets.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidInstrumentationTest]
   }
+  @scala.inline
+  implicit class AndroidInstrumentationTestOps[Self <: AndroidInstrumentationTest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAppApk(value: FileReference): Self = this.set("appApk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppApk: Self = this.set("appApk", js.undefined)
+    @scala.inline
+    def setAppPackageId(value: String): Self = this.set("appPackageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppPackageId: Self = this.set("appPackageId", js.undefined)
+    @scala.inline
+    def setOrchestratorOption(value: String): Self = this.set("orchestratorOption", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrchestratorOption: Self = this.set("orchestratorOption", js.undefined)
+    @scala.inline
+    def setTestApk(value: FileReference): Self = this.set("testApk", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestApk: Self = this.set("testApk", js.undefined)
+    @scala.inline
+    def setTestPackageId(value: String): Self = this.set("testPackageId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestPackageId: Self = this.set("testPackageId", js.undefined)
+    @scala.inline
+    def setTestRunnerClass(value: String): Self = this.set("testRunnerClass", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestRunnerClass: Self = this.set("testRunnerClass", js.undefined)
+    @scala.inline
+    def setTestTargetsVarargs(value: String*): Self = this.set("testTargets", js.Array(value :_*))
+    @scala.inline
+    def setTestTargets(value: js.Array[String]): Self = this.set("testTargets", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTestTargets: Self = this.set("testTargets", js.undefined)
+  }
+  
 }
 

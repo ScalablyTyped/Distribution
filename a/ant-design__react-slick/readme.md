@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__react-slick
 
-Typings are for version 0.26.2
+Typings are for version 0.27.0
 
 ## Library description:
 React port of slick carousel

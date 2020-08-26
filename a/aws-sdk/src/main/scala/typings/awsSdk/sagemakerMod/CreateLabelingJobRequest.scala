@@ -19,7 +19,7 @@ trait CreateLabelingJobRequest extends js.Object {
     */
   var LabelAttributeName: typings.awsSdk.sagemakerMod.LabelAttributeName = js.native
   /**
-    * The S3 URL of the file that defines the categories used to label the data objects. The file is a JSON structure in the following format:  {    "document-version": "2018-11-28"    "labels": [    {    "label": "label 1"    },    {    "label": "label 2"    },    ...    {    "label": "label n"    }    ]   } 
+    * The S3 URL of the file that defines the categories used to label the data objects. For 3D point cloud task types, see Create a Labeling Category Configuration File for 3D Point Cloud Labeling Jobs.  For all other built-in task types and custom tasks, your label category configuration file must be a JSON file in the following format. Identify the labels you want to use by replacing label_1, label_2,...,label_n with your label categories.  {    "document-version": "2018-11-28"    "labels": [    {    "label": "label_1"    },    {    "label": "label_2"    },    ...    {    "label": "label_n"    }    ]   } 
     */
   var LabelCategoryConfigS3Uri: js.UndefOr[S3Uri] = js.native
   /**
@@ -56,18 +56,53 @@ object CreateLabelingJobRequest {
     LabelAttributeName: LabelAttributeName,
     LabelingJobName: LabelingJobName,
     OutputConfig: LabelingJobOutputConfig,
-    RoleArn: RoleArn,
-    LabelCategoryConfigS3Uri: S3Uri = null,
-    LabelingJobAlgorithmsConfig: LabelingJobAlgorithmsConfig = null,
-    StoppingConditions: LabelingJobStoppingConditions = null,
-    Tags: TagList = null
+    RoleArn: RoleArn
   ): CreateLabelingJobRequest = {
     val __obj = js.Dynamic.literal(HumanTaskConfig = HumanTaskConfig.asInstanceOf[js.Any], InputConfig = InputConfig.asInstanceOf[js.Any], LabelAttributeName = LabelAttributeName.asInstanceOf[js.Any], LabelingJobName = LabelingJobName.asInstanceOf[js.Any], OutputConfig = OutputConfig.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
-    if (LabelCategoryConfigS3Uri != null) __obj.updateDynamic("LabelCategoryConfigS3Uri")(LabelCategoryConfigS3Uri.asInstanceOf[js.Any])
-    if (LabelingJobAlgorithmsConfig != null) __obj.updateDynamic("LabelingJobAlgorithmsConfig")(LabelingJobAlgorithmsConfig.asInstanceOf[js.Any])
-    if (StoppingConditions != null) __obj.updateDynamic("StoppingConditions")(StoppingConditions.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLabelingJobRequest]
   }
+  @scala.inline
+  implicit class CreateLabelingJobRequestOps[Self <: CreateLabelingJobRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHumanTaskConfig(value: HumanTaskConfig): Self = this.set("HumanTaskConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInputConfig(value: LabelingJobInputConfig): Self = this.set("InputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelAttributeName(value: LabelAttributeName): Self = this.set("LabelAttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelingJobName(value: LabelingJobName): Self = this.set("LabelingJobName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setOutputConfig(value: LabelingJobOutputConfig): Self = this.set("OutputConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setRoleArn(value: RoleArn): Self = this.set("RoleArn", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setLabelCategoryConfigS3Uri(value: S3Uri): Self = this.set("LabelCategoryConfigS3Uri", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelCategoryConfigS3Uri: Self = this.set("LabelCategoryConfigS3Uri", js.undefined)
+    @scala.inline
+    def setLabelingJobAlgorithmsConfig(value: LabelingJobAlgorithmsConfig): Self = this.set("LabelingJobAlgorithmsConfig", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLabelingJobAlgorithmsConfig: Self = this.set("LabelingJobAlgorithmsConfig", js.undefined)
+    @scala.inline
+    def setStoppingConditions(value: LabelingJobStoppingConditions): Self = this.set("StoppingConditions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStoppingConditions: Self = this.set("StoppingConditions", js.undefined)
+    @scala.inline
+    def setTagsVarargs(value: Tag*): Self = this.set("Tags", js.Array(value :_*))
+    @scala.inline
+    def setTags(value: TagList): Self = this.set("Tags", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTags: Self = this.set("Tags", js.undefined)
+  }
+  
 }
 

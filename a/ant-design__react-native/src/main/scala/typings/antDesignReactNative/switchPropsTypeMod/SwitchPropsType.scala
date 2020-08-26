@@ -4,33 +4,58 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SwitchPropsType extends js.Object {
-  var checked: js.UndefOr[Boolean] = js.undefined
-  var color: js.UndefOr[String] = js.undefined
-  var disabled: js.UndefOr[Boolean] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
-  var onPress: js.UndefOr[js.Function1[/* checked */ js.UndefOr[Boolean], Unit]] = js.undefined
+  var checked: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[String] = js.native
+  var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* checked */ js.UndefOr[Boolean], Unit]] = js.native
 }
 
 object SwitchPropsType {
   @scala.inline
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* checked */ Boolean => Unit = null,
-    onPress: /* checked */ js.UndefOr[Boolean] => Unit = null
-  ): SwitchPropsType = {
+  def apply(): SwitchPropsType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.get.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1(onPress))
     __obj.asInstanceOf[SwitchPropsType]
   }
+  @scala.inline
+  implicit class SwitchPropsTypeOps[Self <: SwitchPropsType] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChecked(value: Boolean): Self = this.set("checked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChecked: Self = this.set("checked", js.undefined)
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setDisabled(value: Boolean): Self = this.set("disabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDisabled: Self = this.set("disabled", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setOnChange(value: /* checked */ Boolean => Unit): Self = this.set("onChange", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnChange: Self = this.set("onChange", js.undefined)
+    @scala.inline
+    def setOnPress(value: /* checked */ js.UndefOr[Boolean] => Unit): Self = this.set("onPress", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnPress: Self = this.set("onPress", js.undefined)
+  }
+  
 }
 

@@ -1,6 +1,5 @@
 package typings.ddTrace.mod.plugins
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.anon.Query
 import typings.ddTrace.mod.Analyzable
 import scala.scalajs.js
@@ -11,29 +10,38 @@ import scala.scalajs.js.annotation._
   * This plugin automatically instruments the
   * [elasticsearch](https://github.com/elastic/elasticsearch-js) module.
   */
+@js.native
 trait elasticsearch
   extends Integration
      with Analyzable {
   /**
     * Hooks to run before spans are finished.
     */
-  var hooks: js.UndefOr[Query] = js.undefined
+  var hooks: js.UndefOr[Query] = js.native
 }
 
 object elasticsearch {
   @scala.inline
-  def apply(
-    analytics: Boolean | Double | (StringDictionary[Boolean | Double]) = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    hooks: Query = null,
-    service: String = null
-  ): elasticsearch = {
+  def apply(): elasticsearch = {
     val __obj = js.Dynamic.literal()
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (hooks != null) __obj.updateDynamic("hooks")(hooks.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[elasticsearch]
   }
+  @scala.inline
+  implicit class elasticsearchOps[Self <: elasticsearch] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setHooks(value: Query): Self = this.set("hooks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHooks: Self = this.set("hooks", js.undefined)
+  }
+  
 }
 

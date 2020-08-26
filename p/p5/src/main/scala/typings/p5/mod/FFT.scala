@@ -26,6 +26,7 @@ trait FFT extends js.Object {
     *   possible is 255.
     */
   def analyze(): js.Array[_] = js.native
+  def analyze(bins: js.UndefOr[scala.Nothing], scale: Double): js.Array[_] = js.native
   def analyze(bins: Double): js.Array[_] = js.native
   def analyze(bins: Double, scale: Double): js.Array[_] = js.native
   /**
@@ -138,6 +139,7 @@ trait FFT extends js.Object {
     *   over time. Array length = bins.
     */
   def waveform(): js.Array[_] = js.native
+  def waveform(bins: js.UndefOr[scala.Nothing], precision: String): js.Array[_] = js.native
   def waveform(bins: Double): js.Array[_] = js.native
   def waveform(bins: Double, precision: String): js.Array[_] = js.native
 }

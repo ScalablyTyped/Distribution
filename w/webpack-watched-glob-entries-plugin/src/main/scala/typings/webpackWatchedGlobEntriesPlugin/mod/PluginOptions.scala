@@ -4,16 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait PluginOptions extends js.Object {
-  var basename_as_entry_name: js.UndefOr[Boolean] = js.undefined
+  var basename_as_entry_name: js.UndefOr[Boolean] = js.native
 }
 
 object PluginOptions {
   @scala.inline
-  def apply(basename_as_entry_name: js.UndefOr[Boolean] = js.undefined): PluginOptions = {
+  def apply(): PluginOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(basename_as_entry_name)) __obj.updateDynamic("basename_as_entry_name")(basename_as_entry_name.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginOptions]
   }
+  @scala.inline
+  implicit class PluginOptionsOps[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setBasename_as_entry_name(value: Boolean): Self = this.set("basename_as_entry_name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBasename_as_entry_name: Self = this.set("basename_as_entry_name", js.undefined)
+  }
+  
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ItemParams
   extends /* key */ StringDictionary[js.Any] {
   /**
@@ -16,7 +17,7 @@ trait ItemParams
     *
     * Example value: `SKU47`
     */
-  var ic: js.UndefOr[String] = js.undefined
+  var ic: js.UndefOr[String] = js.native
   /**
     * Item Name
     *
@@ -28,7 +29,7 @@ trait ItemParams
     *
     * Example value: `Shoe`
     */
-  var in: js.UndefOr[String] = js.undefined
+  var in: js.UndefOr[String] = js.native
   /**
     * Item Price
     *
@@ -36,7 +37,7 @@ trait ItemParams
     *
     * Example value: `3.50`
     */
-  var ip: js.UndefOr[String | Double] = js.undefined
+  var ip: js.UndefOr[String | Double] = js.native
   /**
     * Item Quantity
     *
@@ -44,7 +45,7 @@ trait ItemParams
     *
     * Example value: `4`
     */
-  var iq: js.UndefOr[String | Double] = js.undefined
+  var iq: js.UndefOr[String | Double] = js.native
   /**
     * Item Category
     *
@@ -54,8 +55,8 @@ trait ItemParams
     *
     * Example value: `Blue`
     */
-  var iv: js.UndefOr[String] = js.undefined
-  var p: js.UndefOr[String] = js.undefined
+  var iv: js.UndefOr[String] = js.native
+  var p: js.UndefOr[String] = js.native
   /**
     * Transaction ID
     *
@@ -68,31 +69,55 @@ trait ItemParams
     *
     * Example value: `OD564`
     */
-  var ti: js.UndefOr[String] = js.undefined
+  var ti: js.UndefOr[String] = js.native
 }
 
 object ItemParams {
   @scala.inline
-  def apply(
-    StringDictionary: /* name */ StringDictionary[js.Any] = null,
-    ic: String = null,
-    in: String = null,
-    ip: String | Double = null,
-    iq: String | Double = null,
-    iv: String = null,
-    p: String = null,
-    ti: String = null
-  ): ItemParams = {
+  def apply(): ItemParams = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ic != null) __obj.updateDynamic("ic")(ic.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (ip != null) __obj.updateDynamic("ip")(ip.asInstanceOf[js.Any])
-    if (iq != null) __obj.updateDynamic("iq")(iq.asInstanceOf[js.Any])
-    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (ti != null) __obj.updateDynamic("ti")(ti.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemParams]
   }
+  @scala.inline
+  implicit class ItemParamsOps[Self <: ItemParams] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setIc(value: String): Self = this.set("ic", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIc: Self = this.set("ic", js.undefined)
+    @scala.inline
+    def setIn(value: String): Self = this.set("in", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIn: Self = this.set("in", js.undefined)
+    @scala.inline
+    def setIp(value: String | Double): Self = this.set("ip", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIp: Self = this.set("ip", js.undefined)
+    @scala.inline
+    def setIq(value: String | Double): Self = this.set("iq", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIq: Self = this.set("iq", js.undefined)
+    @scala.inline
+    def setIv(value: String): Self = this.set("iv", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIv: Self = this.set("iv", js.undefined)
+    @scala.inline
+    def setP(value: String): Self = this.set("p", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteP: Self = this.set("p", js.undefined)
+    @scala.inline
+    def setTi(value: String): Self = this.set("ti", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTi: Self = this.set("ti", js.undefined)
+  }
+  
 }
 

@@ -4,7 +4,7 @@ import typings.oracleOraclejet.anon.AreaSvgStyle
 import typings.oracleOraclejet.anon.Geo
 import typings.oracleOraclejet.anon.InsertSVGElement
 import typings.oracleOraclejet.anon.LabelAndValue
-import typings.oracleOraclejet.anon.`25`
+import typings.oracleOraclejet.anon.`27`
 import typings.oracleOraclejet.mod.JetElementCustomEvent
 import typings.oracleOraclejet.ojdataproviderMod.DataProvider
 import typings.oracleOraclejet.ojdvtBaseMod.dvtBaseComponent
@@ -158,7 +158,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     _
   ]) | Null = js.native
   var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AreaSvgStyle], _]) | Null = js.native
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], _]) | Null = js.native
   var onTooltipDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | labelAndShortDesc | none | shortDesc], _]) | Null = js.native
   var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], _]) | Null = js.native
   var onZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | none], _]) | Null = js.native
@@ -168,7 +168,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   var selectionMode: single | multiple | none = js.native
   var selectionRenderer: (js.Function1[/* context */ RendererContext[K1, K2, K3, D1, D2, D3], InsertSVGElement | Unit]) | Null = js.native
   var styleDefaults: AreaSvgStyle = js.native
-  var tooltip: `25`[K1, K2, K3, D1, D2, D3] = js.native
+  var tooltip: `27`[K1, K2, K3, D1, D2, D3] = js.native
   var tooltipDisplay: auto | labelAndShortDesc | none | shortDesc = js.native
   var touchResponse: touchStart | auto = js.native
   @JSName("translations")
@@ -543,7 +543,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]], 
+      /* ev */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], 
       _
     ]
   ): Unit = js.native
@@ -552,7 +552,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
     `type`: tooltipChanged,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[`25`[K1, K2, K3, D1, D2, D3]], 
+      /* ev */ JetElementCustomEvent[`27`[K1, K2, K3, D1, D2, D3]], 
       _
     ],
     useCapture: Boolean
@@ -612,7 +612,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("getProperty")
   def getProperty_styleDefaults(property: styleDefaults): AreaSvgStyle = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: tooltip): `25`[K1, K2, K3, D1, D2, D3] = js.native
+  def getProperty_tooltip(property: tooltip): `27`[K1, K2, K3, D1, D2, D3] = js.native
   @JSName("getProperty")
   def getProperty_tooltipDisplay(property: tooltipDisplay): auto | labelAndShortDesc | none | shortDesc = js.native
   @JSName("getProperty")
@@ -707,7 +707,7 @@ trait ojThematicMap_[K1, K2, K3, D1, D2, D3] extends dvtBaseComponent[ojThematic
   @JSName("setProperty")
   def setProperty_styleDefaults(property: styleDefaults, value: AreaSvgStyle): Unit = js.native
   @JSName("setProperty")
-  def setProperty_tooltip(property: tooltip, value: `25`[K1, K2, K3, D1, D2, D3]): Unit = js.native
+  def setProperty_tooltip(property: tooltip, value: `27`[K1, K2, K3, D1, D2, D3]): Unit = js.native
   @JSName("setProperty")
   def setProperty_translations(property: translations, value: LabelAndValue): Unit = js.native
 }

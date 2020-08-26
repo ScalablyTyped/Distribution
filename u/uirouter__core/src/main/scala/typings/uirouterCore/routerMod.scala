@@ -27,18 +27,19 @@ object routerMod extends js.Object {
     *
     * @param locationService a [[LocationServices]] implementation
     * @param locationConfig a [[LocationConfig]] implementation
-    * @internalapi
+    * @internal
     */
   class UIRouter () extends js.Object {
     def this(locationService: LocationServices) = this()
+    def this(locationService: js.UndefOr[scala.Nothing], locationConfig: LocationConfig) = this()
     def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
-    /** @hidden */ @JSName("$id")
+    /** @internal */ @JSName("$id")
     var $id: Double = js.native
-    /** @hidden */ var _disposables: js.Any = js.native
-    /** @hidden */ var _disposed: Boolean = js.native
-    /** @hidden plugin instances are registered here */
+    /** @internal */ var _disposables: js.Any = js.native
+    /** @internal */ var _disposed: Boolean = js.native
+    /** @internal plugin instances are registered here */
     var _plugins: js.Any = js.native
-    /** Global router state */
+    /** An object that contains global router state, such as the current state and params */
     var globals: UIRouterGlobals = js.native
     var locationConfig: LocationConfig = js.native
     var locationService: LocationServices = js.native
@@ -46,9 +47,9 @@ object routerMod extends js.Object {
     var stateRegistry: StateRegistry = js.native
     /** Provides services related to states */
     var stateService: StateService = js.native
-    /** Provides trace information to the console */
+    /** Enable/disable tracing to the javascript console */
     var trace: Trace_ = js.native
-    /** Provides services related to Transitions */
+    /** A service that exposes global Transition Hooks */
     var transitionService: TransitionService = js.native
     /**
       * Deprecated for public use. Use [[urlService]] instead.
@@ -74,19 +75,21 @@ object routerMod extends js.Object {
       *
       * Or, if a `disposable` object is provided, calls `dispose(this)` on that object only.
       *
+      * @internal
       * @param disposable (optional) the disposable to dispose
       */
     def dispose(): Unit = js.native
     def dispose(disposable: js.Any): Unit = js.native
+    /**
+      * Returns all registered plugins
+      * @return all registered plugins
+      */
     def getPlugin(): js.Array[UIRouterPlugin] = js.native
     /**
-      * Returns registered plugins
+      * Returns a plugin registered with the given `pluginName`.
       *
-      * Returns the registered plugin of the given `pluginName`.
-      * If no `pluginName` is given, returns all registered plugins
-      *
-      * @param pluginName (optional) the name of the plugin to get
-      * @return the named plugin (undefined if not found), or all plugins (if `pluginName` is omitted)
+      * @param pluginName the name of the plugin to get
+      * @return the plugin, or undefined
       */
     def getPlugin(pluginName: String): UIRouterPlugin = js.native
     /** Add plugin (as javascript constructor function) */

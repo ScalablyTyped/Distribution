@@ -4,24 +4,33 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CustomEventInit[T] extends EventInit {
-  var detail: js.UndefOr[T] = js.undefined
+  var detail: js.UndefOr[T] = js.native
 }
 
 object CustomEventInit {
   @scala.inline
-  def apply[T](
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: T = null
-  ): CustomEventInit[T] = {
+  def apply[T](): CustomEventInit[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.get.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomEventInit[T]]
   }
+  @scala.inline
+  implicit class CustomEventInitOps[Self <: CustomEventInit[_], T] (val x: Self with CustomEventInit[T]) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setDetail(value: T): Self = this.set("detail", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDetail: Self = this.set("detail", js.undefined)
+  }
+  
 }
 

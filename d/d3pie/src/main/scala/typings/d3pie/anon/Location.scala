@@ -8,27 +8,48 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Location extends js.Object {
-  var location: js.UndefOr[`top-center` | `top-left` | `pie-center`] = js.undefined
-  var subtitle: js.UndefOr[ID3PieTextOptions] = js.undefined
-  var title: js.UndefOr[ID3PieTextOptions] = js.undefined
-  var titleSubtitlePadding: js.UndefOr[Double] = js.undefined
+  var location: js.UndefOr[`top-center` | `top-left` | `pie-center`] = js.native
+  var subtitle: js.UndefOr[ID3PieTextOptions] = js.native
+  var title: js.UndefOr[ID3PieTextOptions] = js.native
+  var titleSubtitlePadding: js.UndefOr[Double] = js.native
 }
 
 object Location {
   @scala.inline
-  def apply(
-    location: `top-center` | `top-left` | `pie-center` = null,
-    subtitle: ID3PieTextOptions = null,
-    title: ID3PieTextOptions = null,
-    titleSubtitlePadding: js.UndefOr[Double] = js.undefined
-  ): Location = {
+  def apply(): Location = {
     val __obj = js.Dynamic.literal()
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(titleSubtitlePadding)) __obj.updateDynamic("titleSubtitlePadding")(titleSubtitlePadding.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
+  @scala.inline
+  implicit class LocationOps[Self <: Location] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setLocation(value: `top-center` | `top-left` | `pie-center`): Self = this.set("location", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocation: Self = this.set("location", js.undefined)
+    @scala.inline
+    def setSubtitle(value: ID3PieTextOptions): Self = this.set("subtitle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubtitle: Self = this.set("subtitle", js.undefined)
+    @scala.inline
+    def setTitle(value: ID3PieTextOptions): Self = this.set("title", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitle: Self = this.set("title", js.undefined)
+    @scala.inline
+    def setTitleSubtitlePadding(value: Double): Self = this.set("titleSubtitlePadding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTitleSubtitlePadding: Self = this.set("titleSubtitlePadding", js.undefined)
+  }
+  
 }
 

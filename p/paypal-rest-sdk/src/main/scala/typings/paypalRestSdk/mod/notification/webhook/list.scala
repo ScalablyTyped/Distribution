@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object list extends js.Object {
   def apply(data: RequestOptions): Unit = js.native
+  def apply(data: RequestOptions, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[WebhookListResponse]): Unit = js.native
   def apply(data: RequestOptions, config: RequestOptions): Unit = js.native
   def apply(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[WebhookListResponse]): Unit = js.native
   def apply(data: RequestOptions, config: CallbackFunction[WebhookListResponse]): Unit = js.native
@@ -20,6 +21,11 @@ object list extends js.Object {
     cb: CallbackFunction[WebhookListResponse]
   ): Unit = js.native
   def apply(data: CallbackFunction[WebhookListResponse]): Unit = js.native
+  def apply(
+    data: CallbackFunction[WebhookListResponse],
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[WebhookListResponse]
+  ): Unit = js.native
   def apply(data: CallbackFunction[WebhookListResponse], config: RequestOptions): Unit = js.native
   def apply(
     data: CallbackFunction[WebhookListResponse],
@@ -33,6 +39,11 @@ object list extends js.Object {
     cb: CallbackFunction[WebhookListResponse]
   ): Unit = js.native
   def apply(data: QueryParameters): Unit = js.native
+  def apply(
+    data: QueryParameters,
+    config: js.UndefOr[scala.Nothing],
+    cb: CallbackFunction[WebhookListResponse]
+  ): Unit = js.native
   def apply(data: QueryParameters, config: RequestOptions): Unit = js.native
   def apply(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[WebhookListResponse]): Unit = js.native
   def apply(data: QueryParameters, config: CallbackFunction[WebhookListResponse]): Unit = js.native

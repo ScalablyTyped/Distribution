@@ -99,7 +99,6 @@ class SpotInstanceRequest protected () extends CustomResource {
   /**
     * The IAM Instance Profile to
     * launch the instance with. Specified as the name of the Instance Profile. Ensure your credentials have the correct permission to assign the instance profile according to the [EC2 documentation](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html#roles-usingrole-ec2instance-permissions), notably `iam:PassRole`.
-    * * `ipv6AddressCount`- (Optional) A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
     */
   val iamInstanceProfile: Output_[js.UndefOr[String]] = js.native
   /**
@@ -118,6 +117,9 @@ class SpotInstanceRequest protected () extends CustomResource {
     * The type of instance to start. Updates to this field will trigger a stop/start of the EC2 instance.
     */
   val instanceType: Output_[String] = js.native
+  /**
+    * A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet.
+    */
   val ipv6AddressCount: Output_[Double] = js.native
   /**
     * Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface
@@ -144,6 +146,7 @@ class SpotInstanceRequest protected () extends CustomResource {
     * Customize network interfaces to be attached at instance boot time. See Network Interfaces below for more details.
     */
   val networkInterfaces: Output_[js.Array[SpotInstanceRequestNetworkInterface]] = js.native
+  val outpostArn: Output_[String] = js.native
   val passwordData: Output_[String] = js.native
   /**
     * The Placement Group to start the instance in.
@@ -213,9 +216,9 @@ class SpotInstanceRequest protected () extends CustomResource {
     */
   val subnetId: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the resource.
+    * A map of tags to assign to the resource.
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * The tenancy of the instance (if the instance is running in a VPC). An instance with a tenancy of dedicated runs on single-tenant hardware. The host tenancy is not supported for the import-instance command.
     */
@@ -237,9 +240,9 @@ class SpotInstanceRequest protected () extends CustomResource {
     */
   val validUntil: Output_[String] = js.native
   /**
-    * A mapping of tags to assign to the devices created by the instance at launch time.
+    * A map of tags to assign to the devices created by the instance at launch time.
     */
-  val volumeTags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val volumeTags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
   /**
     * A list of security group IDs to associate with.
     */
@@ -263,8 +266,10 @@ object SpotInstanceRequest extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): SpotInstanceRequest = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SpotInstanceRequest = js.native
   def get(name: String, id: Input[ID], state: SpotInstanceRequestState): SpotInstanceRequest = js.native
   def get(name: String, id: Input[ID], state: SpotInstanceRequestState, opts: CustomResourceOptions): SpotInstanceRequest = js.native
   /**

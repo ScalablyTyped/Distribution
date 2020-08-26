@@ -1,6 +1,7 @@
 package typings.nextReduxWrapper.mod
 
-import typings.nextReduxWrapper.anon.Instantiable
+import typings.nextReduxWrapper.anon.FunctionComponentWrapperP
+import typings.redux.mod.Action
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("next-redux-wrapper", JSImport.Default)
 @js.native
 object default extends js.Object {
-  def apply(makeStore: MakeStore): js.Function1[/* App */ js.Any, Instantiable] = js.native
-  def apply(makeStore: MakeStore, config: Config): js.Function1[/* App */ js.Any, Instantiable] = js.native
+  def apply[S /* <: js.Object */, A /* <: Action[_] */](makeStore: MakeStore[S, A]): js.Function1[/* Component */ js.Any, FunctionComponentWrapperP] = js.native
+  def apply[S /* <: js.Object */, A /* <: Action[_] */](makeStore: MakeStore[S, A], config: Config[_]): js.Function1[/* Component */ js.Any, FunctionComponentWrapperP] = js.native
 }
 

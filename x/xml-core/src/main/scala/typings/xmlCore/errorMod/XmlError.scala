@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation._
 class XmlError protected () extends Error {
   def this(code: XE, args: js.Any*) = this()
   var code: Double = js.native
-  /* CompleteClass */
-  override var message: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
   val prefix: /* "XMLJS" */ String = js.native
 }
 

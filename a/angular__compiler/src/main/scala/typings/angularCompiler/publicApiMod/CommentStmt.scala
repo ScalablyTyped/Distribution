@@ -12,6 +12,11 @@ class CommentStmt protected ()
   def this(comment: String, multiline: Boolean) = this()
   def this(
     comment: String,
+    multiline: js.UndefOr[scala.Nothing],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    comment: String,
     multiline: Boolean,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()

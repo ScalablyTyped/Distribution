@@ -1,0 +1,22 @@
+package typings.devtoolsProtocol.mod.Protocol.Fetch
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* Rewritten from type alias, can be one of: 
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.Default
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials
+*/
+trait AuthChallengeResponseResponse extends js.Object
+
+object AuthChallengeResponseResponse {
+  @scala.inline
+  def CancelAuth: typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth = "CancelAuth".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CancelAuth]
+  @scala.inline
+  def Default: typings.devtoolsProtocol.devtoolsProtocolStrings.Default = "Default".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.Default]
+  @scala.inline
+  def ProvideCredentials: typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials = "ProvideCredentials".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ProvideCredentials]
+}
+

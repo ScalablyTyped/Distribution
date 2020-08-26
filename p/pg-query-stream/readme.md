@@ -10,9 +10,9 @@ Postgres query result returned as readable stream
 | ------------------ | :-------------: |
 | Full name          | pg-query-stream |
 | Keywords           | postgres, pg, query, stream |
-| # releases         | 8 |
-| # dependents       | 98 |
-| # downloads        | 1704740 |
+| # releases         | 7 |
+| # dependents       | 99 |
+| # downloads        | 1723278 |
 | # stars            | 2 |
 
 ## Links

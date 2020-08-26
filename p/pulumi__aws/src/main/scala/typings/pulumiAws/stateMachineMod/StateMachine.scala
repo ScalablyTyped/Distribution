@@ -23,6 +23,10 @@ class StateMachine protected () extends CustomResource {
   def this(name: String, args: StateMachineArgs) = this()
   def this(name: String, args: StateMachineArgs, opts: CustomResourceOptions) = this()
   /**
+    * The ARN of the state machine.
+    */
+  val arn: Output_[String] = js.native
+  /**
     * The date the state machine was created.
     */
   val creationDate: Output_[String] = js.native
@@ -43,9 +47,9 @@ class StateMachine protected () extends CustomResource {
     */
   val status: Output_[String] = js.native
   /**
-    * Key-value mapping of resource tags
+    * Key-value map of resource tags
     */
-  val tags: Output_[js.UndefOr[StringDictionary[_]]] = js.native
+  val tags: Output_[js.UndefOr[StringDictionary[String]]] = js.native
 }
 
 /* static members */
@@ -59,8 +63,10 @@ object StateMachine extends js.Object {
     * @param name The _unique_ name of the resulting resource.
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
+    * @param opts Optional settings to control the behavior of the CustomResource.
     */
   def get(name: String, id: Input[ID]): StateMachine = js.native
+  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StateMachine = js.native
   def get(name: String, id: Input[ID], state: StateMachineState): StateMachine = js.native
   def get(name: String, id: Input[ID], state: StateMachineState, opts: CustomResourceOptions): StateMachine = js.native
   /**

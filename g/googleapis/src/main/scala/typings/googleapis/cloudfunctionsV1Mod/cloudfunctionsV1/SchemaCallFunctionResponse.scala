@@ -27,12 +27,34 @@ trait SchemaCallFunctionResponse extends js.Object {
 
 object SchemaCallFunctionResponse {
   @scala.inline
-  def apply(error: String = null, executionId: String = null, result: String = null): SchemaCallFunctionResponse = {
+  def apply(): SchemaCallFunctionResponse = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (executionId != null) __obj.updateDynamic("executionId")(executionId.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaCallFunctionResponse]
   }
+  @scala.inline
+  implicit class SchemaCallFunctionResponseOps[Self <: SchemaCallFunctionResponse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setError(value: String): Self = this.set("error", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteError: Self = this.set("error", js.undefined)
+    @scala.inline
+    def setExecutionId(value: String): Self = this.set("executionId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExecutionId: Self = this.set("executionId", js.undefined)
+    @scala.inline
+    def setResult(value: String): Self = this.set("result", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResult: Self = this.set("result", js.undefined)
+  }
+  
 }
 

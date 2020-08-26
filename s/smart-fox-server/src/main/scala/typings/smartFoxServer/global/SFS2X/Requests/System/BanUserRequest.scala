@@ -19,8 +19,66 @@ class BanUserRequest protected ()
     */
   def this(userId: Double) = this()
   def this(userId: Double, message: String) = this()
+  def this(userId: Double, message: js.UndefOr[scala.Nothing], banMode: BanMode) = this()
   def this(userId: Double, message: String, banMode: BanMode) = this()
+  def this(
+    userId: Double,
+    message: js.UndefOr[scala.Nothing],
+    banMode: js.UndefOr[scala.Nothing],
+    delaySeconds: Double
+  ) = this()
+  def this(userId: Double, message: js.UndefOr[scala.Nothing], banMode: BanMode, delaySeconds: Double) = this()
+  def this(userId: Double, message: String, banMode: js.UndefOr[scala.Nothing], delaySeconds: Double) = this()
   def this(userId: Double, message: String, banMode: BanMode, delaySeconds: Double) = this()
+  def this(
+    userId: Double,
+    message: js.UndefOr[scala.Nothing],
+    banMode: js.UndefOr[scala.Nothing],
+    delaySeconds: js.UndefOr[scala.Nothing],
+    durationHours: Double
+  ) = this()
+  def this(
+    userId: Double,
+    message: js.UndefOr[scala.Nothing],
+    banMode: js.UndefOr[scala.Nothing],
+    delaySeconds: Double,
+    durationHours: Double
+  ) = this()
+  def this(
+    userId: Double,
+    message: js.UndefOr[scala.Nothing],
+    banMode: BanMode,
+    delaySeconds: js.UndefOr[scala.Nothing],
+    durationHours: Double
+  ) = this()
+  def this(
+    userId: Double,
+    message: js.UndefOr[scala.Nothing],
+    banMode: BanMode,
+    delaySeconds: Double,
+    durationHours: Double
+  ) = this()
+  def this(
+    userId: Double,
+    message: String,
+    banMode: js.UndefOr[scala.Nothing],
+    delaySeconds: js.UndefOr[scala.Nothing],
+    durationHours: Double
+  ) = this()
+  def this(
+    userId: Double,
+    message: String,
+    banMode: js.UndefOr[scala.Nothing],
+    delaySeconds: Double,
+    durationHours: Double
+  ) = this()
+  def this(
+    userId: Double,
+    message: String,
+    banMode: BanMode,
+    delaySeconds: js.UndefOr[scala.Nothing],
+    durationHours: Double
+  ) = this()
   def this(userId: Double, message: String, banMode: BanMode, delaySeconds: Double, durationHours: Double) = this()
 }
 

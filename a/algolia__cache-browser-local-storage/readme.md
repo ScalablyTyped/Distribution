@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__cache-browser-local-storage
 
-Typings are for version 4.3.0
+Typings are for version 4.3.1
 
 ## Library description:
 Promise-based cache library for browser using local storage.
@@ -10,9 +10,9 @@ Promise-based cache library for browser using local storage.
 | ------------------ | :-------------: |
 | Full name          | @algolia/cache-browser-local-storage |
 | Keywords           | - |
-| # releases         | 23 |
+| # releases         | 28 |
 | # dependents       | 3 |
-| # downloads        | 64994 |
+| # downloads        | 1698998 |
 | # stars            | 0 |
 
 ## Links

@@ -39,24 +39,50 @@ trait HsmState extends js.Object {
 
 object HsmState {
   @scala.inline
-  def apply(
-    availabilityZone: Input[String] = null,
-    clusterId: Input[String] = null,
-    hsmEniId: Input[String] = null,
-    hsmId: Input[String] = null,
-    hsmState: Input[String] = null,
-    ipAddress: Input[String] = null,
-    subnetId: Input[String] = null
-  ): HsmState = {
+  def apply(): HsmState = {
     val __obj = js.Dynamic.literal()
-    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId.asInstanceOf[js.Any])
-    if (hsmEniId != null) __obj.updateDynamic("hsmEniId")(hsmEniId.asInstanceOf[js.Any])
-    if (hsmId != null) __obj.updateDynamic("hsmId")(hsmId.asInstanceOf[js.Any])
-    if (hsmState != null) __obj.updateDynamic("hsmState")(hsmState.asInstanceOf[js.Any])
-    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
-    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HsmState]
   }
+  @scala.inline
+  implicit class HsmStateOps[Self <: HsmState] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAvailabilityZone(value: Input[String]): Self = this.set("availabilityZone", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAvailabilityZone: Self = this.set("availabilityZone", js.undefined)
+    @scala.inline
+    def setClusterId(value: Input[String]): Self = this.set("clusterId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterId: Self = this.set("clusterId", js.undefined)
+    @scala.inline
+    def setHsmEniId(value: Input[String]): Self = this.set("hsmEniId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmEniId: Self = this.set("hsmEniId", js.undefined)
+    @scala.inline
+    def setHsmId(value: Input[String]): Self = this.set("hsmId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmId: Self = this.set("hsmId", js.undefined)
+    @scala.inline
+    def setHsmState(value: Input[String]): Self = this.set("hsmState", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHsmState: Self = this.set("hsmState", js.undefined)
+    @scala.inline
+    def setIpAddress(value: Input[String]): Self = this.set("ipAddress", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIpAddress: Self = this.set("ipAddress", js.undefined)
+    @scala.inline
+    def setSubnetId(value: Input[String]): Self = this.set("subnetId", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSubnetId: Self = this.set("subnetId", js.undefined)
+  }
+  
 }
 

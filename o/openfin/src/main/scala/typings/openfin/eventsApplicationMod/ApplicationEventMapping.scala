@@ -11,26 +11,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ApplicationEventMapping[Topic, Type] extends BaseEventMap {
-  var closed: ApplicationEvent[Topic, Type]
-  var connected: ApplicationEvent[Topic, Type]
-  var crashed: CrashedEvent with (ApplicationEvent[Topic, Type])
-  var initialized: ApplicationEvent[Topic, Type]
-  var `manifest-changed`: ApplicationEvent[Topic, Type]
-  var `not-responding`: ApplicationEvent[Topic, Type]
-  var responding: ApplicationEvent[Topic, Type]
-  var `run-requested`: RunRequestedEvent[Topic, Type]
-  var started: ApplicationEvent[Topic, Type]
-  var `tray-icon-clicked`: TrayIconClicked[Topic, Type]
-  var `window-alert-requested`: WindowAlertRequestedEvent[Topic, Type]
-  var `window-auth-requested`: WindowAuthRequestedEvent[Topic, Type]
-  var `window-created`: WindowEvent[Topic, Type]
-  var `window-end-load`: WindowEndLoadEvent[Topic, Type]
-  var `window-not-responding`: WindowEvent[Topic, Type]
-  var `window-performance-report`: WindowPerformanceReport[Topic, Type]
-  var `window-responding`: WindowEvent[Topic, Type]
-  var `window-show-requested`: WindowEvent[Topic, Type]
-  var `window-start-load`: WindowEvent[Topic, Type]
+  var closed: ApplicationEvent[Topic, Type] = js.native
+  var connected: ApplicationEvent[Topic, Type] = js.native
+  var crashed: CrashedEvent with (ApplicationEvent[Topic, Type]) = js.native
+  var initialized: ApplicationEvent[Topic, Type] = js.native
+  var `manifest-changed`: ApplicationEvent[Topic, Type] = js.native
+  var `not-responding`: ApplicationEvent[Topic, Type] = js.native
+  var responding: ApplicationEvent[Topic, Type] = js.native
+  var `run-requested`: RunRequestedEvent[Topic, Type] = js.native
+  var started: ApplicationEvent[Topic, Type] = js.native
+  var `tray-icon-clicked`: TrayIconClicked[Topic, Type] = js.native
+  var `window-alert-requested`: WindowAlertRequestedEvent[Topic, Type] = js.native
+  var `window-auth-requested`: WindowAuthRequestedEvent[Topic, Type] = js.native
+  var `window-created`: WindowEvent[Topic, Type] = js.native
+  var `window-end-load`: WindowEndLoadEvent[Topic, Type] = js.native
+  var `window-not-responding`: WindowEvent[Topic, Type] = js.native
+  var `window-performance-report`: WindowPerformanceReport[Topic, Type] = js.native
+  var `window-responding`: WindowEvent[Topic, Type] = js.native
+  var `window-show-requested`: WindowEvent[Topic, Type] = js.native
+  var `window-start-load`: WindowEvent[Topic, Type] = js.native
 }
 
 object ApplicationEventMapping {
@@ -74,5 +75,56 @@ object ApplicationEventMapping {
     __obj.updateDynamic("window-start-load")(`window-start-load`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationEventMapping[Topic, Type]]
   }
+  @scala.inline
+  implicit class ApplicationEventMappingOps[Self <: ApplicationEventMapping[_, _], Topic, Type] (val x: Self with (ApplicationEventMapping[Topic, Type])) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClosed(value: ApplicationEvent[Topic, Type]): Self = this.set("closed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setConnected(value: ApplicationEvent[Topic, Type]): Self = this.set("connected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setCrashed(value: CrashedEvent with (ApplicationEvent[Topic, Type])): Self = this.set("crashed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setInitialized(value: ApplicationEvent[Topic, Type]): Self = this.set("initialized", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setManifest-changed`(value: ApplicationEvent[Topic, Type]): Self = this.set("manifest-changed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setNot-responding`(value: ApplicationEvent[Topic, Type]): Self = this.set("not-responding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setResponding(value: ApplicationEvent[Topic, Type]): Self = this.set("responding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setRun-requested`(value: RunRequestedEvent[Topic, Type]): Self = this.set("run-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStarted(value: ApplicationEvent[Topic, Type]): Self = this.set("started", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setTray-icon-clicked`(value: TrayIconClicked[Topic, Type]): Self = this.set("tray-icon-clicked", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-alert-requested`(value: WindowAlertRequestedEvent[Topic, Type]): Self = this.set("window-alert-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-auth-requested`(value: WindowAuthRequestedEvent[Topic, Type]): Self = this.set("window-auth-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-created`(value: WindowEvent[Topic, Type]): Self = this.set("window-created", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-end-load`(value: WindowEndLoadEvent[Topic, Type]): Self = this.set("window-end-load", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-not-responding`(value: WindowEvent[Topic, Type]): Self = this.set("window-not-responding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-performance-report`(value: WindowPerformanceReport[Topic, Type]): Self = this.set("window-performance-report", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-responding`(value: WindowEvent[Topic, Type]): Self = this.set("window-responding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-show-requested`(value: WindowEvent[Topic, Type]): Self = this.set("window-show-requested", value.asInstanceOf[js.Any])
+    @scala.inline
+    def `setWindow-start-load`(value: WindowEvent[Topic, Type]): Self = this.set("window-start-load", value.asInstanceOf[js.Any])
+  }
+  
 }
 

@@ -376,160 +376,346 @@ trait SchemaPolicy extends js.Object {
 
 object SchemaPolicy {
   @scala.inline
-  def apply(
-    accountTypesWithManagementDisabled: js.Array[String] = null,
-    addUserDisabled: js.UndefOr[Boolean] = js.undefined,
-    adjustVolumeDisabled: js.UndefOr[Boolean] = js.undefined,
-    alwaysOnVpnPackage: SchemaAlwaysOnVpnPackage = null,
-    androidDevicePolicyTracks: js.Array[String] = null,
-    appAutoUpdatePolicy: String = null,
-    applications: js.Array[SchemaApplicationPolicy] = null,
-    autoTimeRequired: js.UndefOr[Boolean] = js.undefined,
-    blockApplicationsEnabled: js.UndefOr[Boolean] = js.undefined,
-    bluetoothConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    bluetoothContactSharingDisabled: js.UndefOr[Boolean] = js.undefined,
-    bluetoothDisabled: js.UndefOr[Boolean] = js.undefined,
-    cameraDisabled: js.UndefOr[Boolean] = js.undefined,
-    cellBroadcastsConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    choosePrivateKeyRules: js.Array[SchemaChoosePrivateKeyRule] = null,
-    complianceRules: js.Array[SchemaComplianceRule] = null,
-    createWindowsDisabled: js.UndefOr[Boolean] = js.undefined,
-    credentialsConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    dataRoamingDisabled: js.UndefOr[Boolean] = js.undefined,
-    debuggingFeaturesAllowed: js.UndefOr[Boolean] = js.undefined,
-    defaultPermissionPolicy: String = null,
-    deviceOwnerLockScreenInfo: SchemaUserFacingMessage = null,
-    encryptionPolicy: String = null,
-    ensureVerifyAppsEnabled: js.UndefOr[Boolean] = js.undefined,
-    factoryResetDisabled: js.UndefOr[Boolean] = js.undefined,
-    frpAdminEmails: js.Array[String] = null,
-    funDisabled: js.UndefOr[Boolean] = js.undefined,
-    installAppsDisabled: js.UndefOr[Boolean] = js.undefined,
-    installUnknownSourcesAllowed: js.UndefOr[Boolean] = js.undefined,
-    keyguardDisabled: js.UndefOr[Boolean] = js.undefined,
-    keyguardDisabledFeatures: js.Array[String] = null,
-    kioskCustomLauncherEnabled: js.UndefOr[Boolean] = js.undefined,
-    locationMode: String = null,
-    longSupportMessage: SchemaUserFacingMessage = null,
-    maximumTimeToLock: String = null,
-    mobileNetworksConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    modifyAccountsDisabled: js.UndefOr[Boolean] = js.undefined,
-    mountPhysicalMediaDisabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    networkEscapeHatchEnabled: js.UndefOr[Boolean] = js.undefined,
-    networkResetDisabled: js.UndefOr[Boolean] = js.undefined,
-    openNetworkConfiguration: StringDictionary[js.Any] = null,
-    outgoingBeamDisabled: js.UndefOr[Boolean] = js.undefined,
-    outgoingCallsDisabled: js.UndefOr[Boolean] = js.undefined,
-    passwordPolicies: js.Array[SchemaPasswordRequirements] = null,
-    passwordRequirements: SchemaPasswordRequirements = null,
-    permissionGrants: js.Array[SchemaPermissionGrant] = null,
-    permittedInputMethods: SchemaPackageNameList = null,
-    persistentPreferredActivities: js.Array[SchemaPersistentPreferredActivity] = null,
-    playStoreMode: String = null,
-    privateKeySelectionEnabled: js.UndefOr[Boolean] = js.undefined,
-    recommendedGlobalProxy: SchemaProxyInfo = null,
-    removeUserDisabled: js.UndefOr[Boolean] = js.undefined,
-    safeBootDisabled: js.UndefOr[Boolean] = js.undefined,
-    screenCaptureDisabled: js.UndefOr[Boolean] = js.undefined,
-    setUserIconDisabled: js.UndefOr[Boolean] = js.undefined,
-    setWallpaperDisabled: js.UndefOr[Boolean] = js.undefined,
-    setupActions: js.Array[SchemaSetupAction] = null,
-    shareLocationDisabled: js.UndefOr[Boolean] = js.undefined,
-    shortSupportMessage: SchemaUserFacingMessage = null,
-    skipFirstUseHintsEnabled: js.UndefOr[Boolean] = js.undefined,
-    smsDisabled: js.UndefOr[Boolean] = js.undefined,
-    statusBarDisabled: js.UndefOr[Boolean] = js.undefined,
-    statusReportingSettings: SchemaStatusReportingSettings = null,
-    stayOnPluggedModes: js.Array[String] = null,
-    systemUpdate: SchemaSystemUpdate = null,
-    tetheringConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    uninstallAppsDisabled: js.UndefOr[Boolean] = js.undefined,
-    unmuteMicrophoneDisabled: js.UndefOr[Boolean] = js.undefined,
-    usbFileTransferDisabled: js.UndefOr[Boolean] = js.undefined,
-    usbMassStorageEnabled: js.UndefOr[Boolean] = js.undefined,
-    version: String = null,
-    vpnConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    wifiConfigDisabled: js.UndefOr[Boolean] = js.undefined,
-    wifiConfigsLockdownEnabled: js.UndefOr[Boolean] = js.undefined
-  ): SchemaPolicy = {
+  def apply(): SchemaPolicy = {
     val __obj = js.Dynamic.literal()
-    if (accountTypesWithManagementDisabled != null) __obj.updateDynamic("accountTypesWithManagementDisabled")(accountTypesWithManagementDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(addUserDisabled)) __obj.updateDynamic("addUserDisabled")(addUserDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(adjustVolumeDisabled)) __obj.updateDynamic("adjustVolumeDisabled")(adjustVolumeDisabled.get.asInstanceOf[js.Any])
-    if (alwaysOnVpnPackage != null) __obj.updateDynamic("alwaysOnVpnPackage")(alwaysOnVpnPackage.asInstanceOf[js.Any])
-    if (androidDevicePolicyTracks != null) __obj.updateDynamic("androidDevicePolicyTracks")(androidDevicePolicyTracks.asInstanceOf[js.Any])
-    if (appAutoUpdatePolicy != null) __obj.updateDynamic("appAutoUpdatePolicy")(appAutoUpdatePolicy.asInstanceOf[js.Any])
-    if (applications != null) __obj.updateDynamic("applications")(applications.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoTimeRequired)) __obj.updateDynamic("autoTimeRequired")(autoTimeRequired.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(blockApplicationsEnabled)) __obj.updateDynamic("blockApplicationsEnabled")(blockApplicationsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothConfigDisabled)) __obj.updateDynamic("bluetoothConfigDisabled")(bluetoothConfigDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothContactSharingDisabled)) __obj.updateDynamic("bluetoothContactSharingDisabled")(bluetoothContactSharingDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(bluetoothDisabled)) __obj.updateDynamic("bluetoothDisabled")(bluetoothDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cameraDisabled)) __obj.updateDynamic("cameraDisabled")(cameraDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellBroadcastsConfigDisabled)) __obj.updateDynamic("cellBroadcastsConfigDisabled")(cellBroadcastsConfigDisabled.get.asInstanceOf[js.Any])
-    if (choosePrivateKeyRules != null) __obj.updateDynamic("choosePrivateKeyRules")(choosePrivateKeyRules.asInstanceOf[js.Any])
-    if (complianceRules != null) __obj.updateDynamic("complianceRules")(complianceRules.asInstanceOf[js.Any])
-    if (!js.isUndefined(createWindowsDisabled)) __obj.updateDynamic("createWindowsDisabled")(createWindowsDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(credentialsConfigDisabled)) __obj.updateDynamic("credentialsConfigDisabled")(credentialsConfigDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(dataRoamingDisabled)) __obj.updateDynamic("dataRoamingDisabled")(dataRoamingDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(debuggingFeaturesAllowed)) __obj.updateDynamic("debuggingFeaturesAllowed")(debuggingFeaturesAllowed.get.asInstanceOf[js.Any])
-    if (defaultPermissionPolicy != null) __obj.updateDynamic("defaultPermissionPolicy")(defaultPermissionPolicy.asInstanceOf[js.Any])
-    if (deviceOwnerLockScreenInfo != null) __obj.updateDynamic("deviceOwnerLockScreenInfo")(deviceOwnerLockScreenInfo.asInstanceOf[js.Any])
-    if (encryptionPolicy != null) __obj.updateDynamic("encryptionPolicy")(encryptionPolicy.asInstanceOf[js.Any])
-    if (!js.isUndefined(ensureVerifyAppsEnabled)) __obj.updateDynamic("ensureVerifyAppsEnabled")(ensureVerifyAppsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(factoryResetDisabled)) __obj.updateDynamic("factoryResetDisabled")(factoryResetDisabled.get.asInstanceOf[js.Any])
-    if (frpAdminEmails != null) __obj.updateDynamic("frpAdminEmails")(frpAdminEmails.asInstanceOf[js.Any])
-    if (!js.isUndefined(funDisabled)) __obj.updateDynamic("funDisabled")(funDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(installAppsDisabled)) __obj.updateDynamic("installAppsDisabled")(installAppsDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(installUnknownSourcesAllowed)) __obj.updateDynamic("installUnknownSourcesAllowed")(installUnknownSourcesAllowed.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyguardDisabled)) __obj.updateDynamic("keyguardDisabled")(keyguardDisabled.get.asInstanceOf[js.Any])
-    if (keyguardDisabledFeatures != null) __obj.updateDynamic("keyguardDisabledFeatures")(keyguardDisabledFeatures.asInstanceOf[js.Any])
-    if (!js.isUndefined(kioskCustomLauncherEnabled)) __obj.updateDynamic("kioskCustomLauncherEnabled")(kioskCustomLauncherEnabled.get.asInstanceOf[js.Any])
-    if (locationMode != null) __obj.updateDynamic("locationMode")(locationMode.asInstanceOf[js.Any])
-    if (longSupportMessage != null) __obj.updateDynamic("longSupportMessage")(longSupportMessage.asInstanceOf[js.Any])
-    if (maximumTimeToLock != null) __obj.updateDynamic("maximumTimeToLock")(maximumTimeToLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(mobileNetworksConfigDisabled)) __obj.updateDynamic("mobileNetworksConfigDisabled")(mobileNetworksConfigDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifyAccountsDisabled)) __obj.updateDynamic("modifyAccountsDisabled")(modifyAccountsDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(mountPhysicalMediaDisabled)) __obj.updateDynamic("mountPhysicalMediaDisabled")(mountPhysicalMediaDisabled.get.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkEscapeHatchEnabled)) __obj.updateDynamic("networkEscapeHatchEnabled")(networkEscapeHatchEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkResetDisabled)) __obj.updateDynamic("networkResetDisabled")(networkResetDisabled.get.asInstanceOf[js.Any])
-    if (openNetworkConfiguration != null) __obj.updateDynamic("openNetworkConfiguration")(openNetworkConfiguration.asInstanceOf[js.Any])
-    if (!js.isUndefined(outgoingBeamDisabled)) __obj.updateDynamic("outgoingBeamDisabled")(outgoingBeamDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(outgoingCallsDisabled)) __obj.updateDynamic("outgoingCallsDisabled")(outgoingCallsDisabled.get.asInstanceOf[js.Any])
-    if (passwordPolicies != null) __obj.updateDynamic("passwordPolicies")(passwordPolicies.asInstanceOf[js.Any])
-    if (passwordRequirements != null) __obj.updateDynamic("passwordRequirements")(passwordRequirements.asInstanceOf[js.Any])
-    if (permissionGrants != null) __obj.updateDynamic("permissionGrants")(permissionGrants.asInstanceOf[js.Any])
-    if (permittedInputMethods != null) __obj.updateDynamic("permittedInputMethods")(permittedInputMethods.asInstanceOf[js.Any])
-    if (persistentPreferredActivities != null) __obj.updateDynamic("persistentPreferredActivities")(persistentPreferredActivities.asInstanceOf[js.Any])
-    if (playStoreMode != null) __obj.updateDynamic("playStoreMode")(playStoreMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(privateKeySelectionEnabled)) __obj.updateDynamic("privateKeySelectionEnabled")(privateKeySelectionEnabled.get.asInstanceOf[js.Any])
-    if (recommendedGlobalProxy != null) __obj.updateDynamic("recommendedGlobalProxy")(recommendedGlobalProxy.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeUserDisabled)) __obj.updateDynamic("removeUserDisabled")(removeUserDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeBootDisabled)) __obj.updateDynamic("safeBootDisabled")(safeBootDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenCaptureDisabled)) __obj.updateDynamic("screenCaptureDisabled")(screenCaptureDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(setUserIconDisabled)) __obj.updateDynamic("setUserIconDisabled")(setUserIconDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(setWallpaperDisabled)) __obj.updateDynamic("setWallpaperDisabled")(setWallpaperDisabled.get.asInstanceOf[js.Any])
-    if (setupActions != null) __obj.updateDynamic("setupActions")(setupActions.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareLocationDisabled)) __obj.updateDynamic("shareLocationDisabled")(shareLocationDisabled.get.asInstanceOf[js.Any])
-    if (shortSupportMessage != null) __obj.updateDynamic("shortSupportMessage")(shortSupportMessage.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipFirstUseHintsEnabled)) __obj.updateDynamic("skipFirstUseHintsEnabled")(skipFirstUseHintsEnabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(smsDisabled)) __obj.updateDynamic("smsDisabled")(smsDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(statusBarDisabled)) __obj.updateDynamic("statusBarDisabled")(statusBarDisabled.get.asInstanceOf[js.Any])
-    if (statusReportingSettings != null) __obj.updateDynamic("statusReportingSettings")(statusReportingSettings.asInstanceOf[js.Any])
-    if (stayOnPluggedModes != null) __obj.updateDynamic("stayOnPluggedModes")(stayOnPluggedModes.asInstanceOf[js.Any])
-    if (systemUpdate != null) __obj.updateDynamic("systemUpdate")(systemUpdate.asInstanceOf[js.Any])
-    if (!js.isUndefined(tetheringConfigDisabled)) __obj.updateDynamic("tetheringConfigDisabled")(tetheringConfigDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(uninstallAppsDisabled)) __obj.updateDynamic("uninstallAppsDisabled")(uninstallAppsDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(unmuteMicrophoneDisabled)) __obj.updateDynamic("unmuteMicrophoneDisabled")(unmuteMicrophoneDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usbFileTransferDisabled)) __obj.updateDynamic("usbFileTransferDisabled")(usbFileTransferDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(usbMassStorageEnabled)) __obj.updateDynamic("usbMassStorageEnabled")(usbMassStorageEnabled.get.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(vpnConfigDisabled)) __obj.updateDynamic("vpnConfigDisabled")(vpnConfigDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifiConfigDisabled)) __obj.updateDynamic("wifiConfigDisabled")(wifiConfigDisabled.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(wifiConfigsLockdownEnabled)) __obj.updateDynamic("wifiConfigsLockdownEnabled")(wifiConfigsLockdownEnabled.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaPolicy]
   }
+  @scala.inline
+  implicit class SchemaPolicyOps[Self <: SchemaPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAccountTypesWithManagementDisabledVarargs(value: String*): Self = this.set("accountTypesWithManagementDisabled", js.Array(value :_*))
+    @scala.inline
+    def setAccountTypesWithManagementDisabled(value: js.Array[String]): Self = this.set("accountTypesWithManagementDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAccountTypesWithManagementDisabled: Self = this.set("accountTypesWithManagementDisabled", js.undefined)
+    @scala.inline
+    def setAddUserDisabled(value: Boolean): Self = this.set("addUserDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAddUserDisabled: Self = this.set("addUserDisabled", js.undefined)
+    @scala.inline
+    def setAdjustVolumeDisabled(value: Boolean): Self = this.set("adjustVolumeDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAdjustVolumeDisabled: Self = this.set("adjustVolumeDisabled", js.undefined)
+    @scala.inline
+    def setAlwaysOnVpnPackage(value: SchemaAlwaysOnVpnPackage): Self = this.set("alwaysOnVpnPackage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAlwaysOnVpnPackage: Self = this.set("alwaysOnVpnPackage", js.undefined)
+    @scala.inline
+    def setAndroidDevicePolicyTracksVarargs(value: String*): Self = this.set("androidDevicePolicyTracks", js.Array(value :_*))
+    @scala.inline
+    def setAndroidDevicePolicyTracks(value: js.Array[String]): Self = this.set("androidDevicePolicyTracks", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAndroidDevicePolicyTracks: Self = this.set("androidDevicePolicyTracks", js.undefined)
+    @scala.inline
+    def setAppAutoUpdatePolicy(value: String): Self = this.set("appAutoUpdatePolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAppAutoUpdatePolicy: Self = this.set("appAutoUpdatePolicy", js.undefined)
+    @scala.inline
+    def setApplicationsVarargs(value: SchemaApplicationPolicy*): Self = this.set("applications", js.Array(value :_*))
+    @scala.inline
+    def setApplications(value: js.Array[SchemaApplicationPolicy]): Self = this.set("applications", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplications: Self = this.set("applications", js.undefined)
+    @scala.inline
+    def setAutoTimeRequired(value: Boolean): Self = this.set("autoTimeRequired", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAutoTimeRequired: Self = this.set("autoTimeRequired", js.undefined)
+    @scala.inline
+    def setBlockApplicationsEnabled(value: Boolean): Self = this.set("blockApplicationsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBlockApplicationsEnabled: Self = this.set("blockApplicationsEnabled", js.undefined)
+    @scala.inline
+    def setBluetoothConfigDisabled(value: Boolean): Self = this.set("bluetoothConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBluetoothConfigDisabled: Self = this.set("bluetoothConfigDisabled", js.undefined)
+    @scala.inline
+    def setBluetoothContactSharingDisabled(value: Boolean): Self = this.set("bluetoothContactSharingDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBluetoothContactSharingDisabled: Self = this.set("bluetoothContactSharingDisabled", js.undefined)
+    @scala.inline
+    def setBluetoothDisabled(value: Boolean): Self = this.set("bluetoothDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteBluetoothDisabled: Self = this.set("bluetoothDisabled", js.undefined)
+    @scala.inline
+    def setCameraDisabled(value: Boolean): Self = this.set("cameraDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCameraDisabled: Self = this.set("cameraDisabled", js.undefined)
+    @scala.inline
+    def setCellBroadcastsConfigDisabled(value: Boolean): Self = this.set("cellBroadcastsConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCellBroadcastsConfigDisabled: Self = this.set("cellBroadcastsConfigDisabled", js.undefined)
+    @scala.inline
+    def setChoosePrivateKeyRulesVarargs(value: SchemaChoosePrivateKeyRule*): Self = this.set("choosePrivateKeyRules", js.Array(value :_*))
+    @scala.inline
+    def setChoosePrivateKeyRules(value: js.Array[SchemaChoosePrivateKeyRule]): Self = this.set("choosePrivateKeyRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChoosePrivateKeyRules: Self = this.set("choosePrivateKeyRules", js.undefined)
+    @scala.inline
+    def setComplianceRulesVarargs(value: SchemaComplianceRule*): Self = this.set("complianceRules", js.Array(value :_*))
+    @scala.inline
+    def setComplianceRules(value: js.Array[SchemaComplianceRule]): Self = this.set("complianceRules", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteComplianceRules: Self = this.set("complianceRules", js.undefined)
+    @scala.inline
+    def setCreateWindowsDisabled(value: Boolean): Self = this.set("createWindowsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCreateWindowsDisabled: Self = this.set("createWindowsDisabled", js.undefined)
+    @scala.inline
+    def setCredentialsConfigDisabled(value: Boolean): Self = this.set("credentialsConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCredentialsConfigDisabled: Self = this.set("credentialsConfigDisabled", js.undefined)
+    @scala.inline
+    def setDataRoamingDisabled(value: Boolean): Self = this.set("dataRoamingDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDataRoamingDisabled: Self = this.set("dataRoamingDisabled", js.undefined)
+    @scala.inline
+    def setDebuggingFeaturesAllowed(value: Boolean): Self = this.set("debuggingFeaturesAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDebuggingFeaturesAllowed: Self = this.set("debuggingFeaturesAllowed", js.undefined)
+    @scala.inline
+    def setDefaultPermissionPolicy(value: String): Self = this.set("defaultPermissionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultPermissionPolicy: Self = this.set("defaultPermissionPolicy", js.undefined)
+    @scala.inline
+    def setDeviceOwnerLockScreenInfo(value: SchemaUserFacingMessage): Self = this.set("deviceOwnerLockScreenInfo", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDeviceOwnerLockScreenInfo: Self = this.set("deviceOwnerLockScreenInfo", js.undefined)
+    @scala.inline
+    def setEncryptionPolicy(value: String): Self = this.set("encryptionPolicy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEncryptionPolicy: Self = this.set("encryptionPolicy", js.undefined)
+    @scala.inline
+    def setEnsureVerifyAppsEnabled(value: Boolean): Self = this.set("ensureVerifyAppsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnsureVerifyAppsEnabled: Self = this.set("ensureVerifyAppsEnabled", js.undefined)
+    @scala.inline
+    def setFactoryResetDisabled(value: Boolean): Self = this.set("factoryResetDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFactoryResetDisabled: Self = this.set("factoryResetDisabled", js.undefined)
+    @scala.inline
+    def setFrpAdminEmailsVarargs(value: String*): Self = this.set("frpAdminEmails", js.Array(value :_*))
+    @scala.inline
+    def setFrpAdminEmails(value: js.Array[String]): Self = this.set("frpAdminEmails", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFrpAdminEmails: Self = this.set("frpAdminEmails", js.undefined)
+    @scala.inline
+    def setFunDisabled(value: Boolean): Self = this.set("funDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteFunDisabled: Self = this.set("funDisabled", js.undefined)
+    @scala.inline
+    def setInstallAppsDisabled(value: Boolean): Self = this.set("installAppsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallAppsDisabled: Self = this.set("installAppsDisabled", js.undefined)
+    @scala.inline
+    def setInstallUnknownSourcesAllowed(value: Boolean): Self = this.set("installUnknownSourcesAllowed", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInstallUnknownSourcesAllowed: Self = this.set("installUnknownSourcesAllowed", js.undefined)
+    @scala.inline
+    def setKeyguardDisabled(value: Boolean): Self = this.set("keyguardDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyguardDisabled: Self = this.set("keyguardDisabled", js.undefined)
+    @scala.inline
+    def setKeyguardDisabledFeaturesVarargs(value: String*): Self = this.set("keyguardDisabledFeatures", js.Array(value :_*))
+    @scala.inline
+    def setKeyguardDisabledFeatures(value: js.Array[String]): Self = this.set("keyguardDisabledFeatures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKeyguardDisabledFeatures: Self = this.set("keyguardDisabledFeatures", js.undefined)
+    @scala.inline
+    def setKioskCustomLauncherEnabled(value: Boolean): Self = this.set("kioskCustomLauncherEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteKioskCustomLauncherEnabled: Self = this.set("kioskCustomLauncherEnabled", js.undefined)
+    @scala.inline
+    def setLocationMode(value: String): Self = this.set("locationMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLocationMode: Self = this.set("locationMode", js.undefined)
+    @scala.inline
+    def setLongSupportMessage(value: SchemaUserFacingMessage): Self = this.set("longSupportMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteLongSupportMessage: Self = this.set("longSupportMessage", js.undefined)
+    @scala.inline
+    def setMaximumTimeToLock(value: String): Self = this.set("maximumTimeToLock", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMaximumTimeToLock: Self = this.set("maximumTimeToLock", js.undefined)
+    @scala.inline
+    def setMobileNetworksConfigDisabled(value: Boolean): Self = this.set("mobileNetworksConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMobileNetworksConfigDisabled: Self = this.set("mobileNetworksConfigDisabled", js.undefined)
+    @scala.inline
+    def setModifyAccountsDisabled(value: Boolean): Self = this.set("modifyAccountsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteModifyAccountsDisabled: Self = this.set("modifyAccountsDisabled", js.undefined)
+    @scala.inline
+    def setMountPhysicalMediaDisabled(value: Boolean): Self = this.set("mountPhysicalMediaDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountPhysicalMediaDisabled: Self = this.set("mountPhysicalMediaDisabled", js.undefined)
+    @scala.inline
+    def setName(value: String): Self = this.set("name", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteName: Self = this.set("name", js.undefined)
+    @scala.inline
+    def setNetworkEscapeHatchEnabled(value: Boolean): Self = this.set("networkEscapeHatchEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkEscapeHatchEnabled: Self = this.set("networkEscapeHatchEnabled", js.undefined)
+    @scala.inline
+    def setNetworkResetDisabled(value: Boolean): Self = this.set("networkResetDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNetworkResetDisabled: Self = this.set("networkResetDisabled", js.undefined)
+    @scala.inline
+    def setOpenNetworkConfiguration(value: StringDictionary[js.Any]): Self = this.set("openNetworkConfiguration", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOpenNetworkConfiguration: Self = this.set("openNetworkConfiguration", js.undefined)
+    @scala.inline
+    def setOutgoingBeamDisabled(value: Boolean): Self = this.set("outgoingBeamDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutgoingBeamDisabled: Self = this.set("outgoingBeamDisabled", js.undefined)
+    @scala.inline
+    def setOutgoingCallsDisabled(value: Boolean): Self = this.set("outgoingCallsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOutgoingCallsDisabled: Self = this.set("outgoingCallsDisabled", js.undefined)
+    @scala.inline
+    def setPasswordPoliciesVarargs(value: SchemaPasswordRequirements*): Self = this.set("passwordPolicies", js.Array(value :_*))
+    @scala.inline
+    def setPasswordPolicies(value: js.Array[SchemaPasswordRequirements]): Self = this.set("passwordPolicies", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordPolicies: Self = this.set("passwordPolicies", js.undefined)
+    @scala.inline
+    def setPasswordRequirements(value: SchemaPasswordRequirements): Self = this.set("passwordRequirements", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePasswordRequirements: Self = this.set("passwordRequirements", js.undefined)
+    @scala.inline
+    def setPermissionGrantsVarargs(value: SchemaPermissionGrant*): Self = this.set("permissionGrants", js.Array(value :_*))
+    @scala.inline
+    def setPermissionGrants(value: js.Array[SchemaPermissionGrant]): Self = this.set("permissionGrants", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermissionGrants: Self = this.set("permissionGrants", js.undefined)
+    @scala.inline
+    def setPermittedInputMethods(value: SchemaPackageNameList): Self = this.set("permittedInputMethods", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePermittedInputMethods: Self = this.set("permittedInputMethods", js.undefined)
+    @scala.inline
+    def setPersistentPreferredActivitiesVarargs(value: SchemaPersistentPreferredActivity*): Self = this.set("persistentPreferredActivities", js.Array(value :_*))
+    @scala.inline
+    def setPersistentPreferredActivities(value: js.Array[SchemaPersistentPreferredActivity]): Self = this.set("persistentPreferredActivities", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePersistentPreferredActivities: Self = this.set("persistentPreferredActivities", js.undefined)
+    @scala.inline
+    def setPlayStoreMode(value: String): Self = this.set("playStoreMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePlayStoreMode: Self = this.set("playStoreMode", js.undefined)
+    @scala.inline
+    def setPrivateKeySelectionEnabled(value: Boolean): Self = this.set("privateKeySelectionEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrivateKeySelectionEnabled: Self = this.set("privateKeySelectionEnabled", js.undefined)
+    @scala.inline
+    def setRecommendedGlobalProxy(value: SchemaProxyInfo): Self = this.set("recommendedGlobalProxy", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRecommendedGlobalProxy: Self = this.set("recommendedGlobalProxy", js.undefined)
+    @scala.inline
+    def setRemoveUserDisabled(value: Boolean): Self = this.set("removeUserDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteRemoveUserDisabled: Self = this.set("removeUserDisabled", js.undefined)
+    @scala.inline
+    def setSafeBootDisabled(value: Boolean): Self = this.set("safeBootDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSafeBootDisabled: Self = this.set("safeBootDisabled", js.undefined)
+    @scala.inline
+    def setScreenCaptureDisabled(value: Boolean): Self = this.set("screenCaptureDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteScreenCaptureDisabled: Self = this.set("screenCaptureDisabled", js.undefined)
+    @scala.inline
+    def setSetUserIconDisabled(value: Boolean): Self = this.set("setUserIconDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetUserIconDisabled: Self = this.set("setUserIconDisabled", js.undefined)
+    @scala.inline
+    def setSetWallpaperDisabled(value: Boolean): Self = this.set("setWallpaperDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetWallpaperDisabled: Self = this.set("setWallpaperDisabled", js.undefined)
+    @scala.inline
+    def setSetupActionsVarargs(value: SchemaSetupAction*): Self = this.set("setupActions", js.Array(value :_*))
+    @scala.inline
+    def setSetupActions(value: js.Array[SchemaSetupAction]): Self = this.set("setupActions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSetupActions: Self = this.set("setupActions", js.undefined)
+    @scala.inline
+    def setShareLocationDisabled(value: Boolean): Self = this.set("shareLocationDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShareLocationDisabled: Self = this.set("shareLocationDisabled", js.undefined)
+    @scala.inline
+    def setShortSupportMessage(value: SchemaUserFacingMessage): Self = this.set("shortSupportMessage", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteShortSupportMessage: Self = this.set("shortSupportMessage", js.undefined)
+    @scala.inline
+    def setSkipFirstUseHintsEnabled(value: Boolean): Self = this.set("skipFirstUseHintsEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSkipFirstUseHintsEnabled: Self = this.set("skipFirstUseHintsEnabled", js.undefined)
+    @scala.inline
+    def setSmsDisabled(value: Boolean): Self = this.set("smsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSmsDisabled: Self = this.set("smsDisabled", js.undefined)
+    @scala.inline
+    def setStatusBarDisabled(value: Boolean): Self = this.set("statusBarDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusBarDisabled: Self = this.set("statusBarDisabled", js.undefined)
+    @scala.inline
+    def setStatusReportingSettings(value: SchemaStatusReportingSettings): Self = this.set("statusReportingSettings", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStatusReportingSettings: Self = this.set("statusReportingSettings", js.undefined)
+    @scala.inline
+    def setStayOnPluggedModesVarargs(value: String*): Self = this.set("stayOnPluggedModes", js.Array(value :_*))
+    @scala.inline
+    def setStayOnPluggedModes(value: js.Array[String]): Self = this.set("stayOnPluggedModes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteStayOnPluggedModes: Self = this.set("stayOnPluggedModes", js.undefined)
+    @scala.inline
+    def setSystemUpdate(value: SchemaSystemUpdate): Self = this.set("systemUpdate", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSystemUpdate: Self = this.set("systemUpdate", js.undefined)
+    @scala.inline
+    def setTetheringConfigDisabled(value: Boolean): Self = this.set("tetheringConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTetheringConfigDisabled: Self = this.set("tetheringConfigDisabled", js.undefined)
+    @scala.inline
+    def setUninstallAppsDisabled(value: Boolean): Self = this.set("uninstallAppsDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUninstallAppsDisabled: Self = this.set("uninstallAppsDisabled", js.undefined)
+    @scala.inline
+    def setUnmuteMicrophoneDisabled(value: Boolean): Self = this.set("unmuteMicrophoneDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUnmuteMicrophoneDisabled: Self = this.set("unmuteMicrophoneDisabled", js.undefined)
+    @scala.inline
+    def setUsbFileTransferDisabled(value: Boolean): Self = this.set("usbFileTransferDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsbFileTransferDisabled: Self = this.set("usbFileTransferDisabled", js.undefined)
+    @scala.inline
+    def setUsbMassStorageEnabled(value: Boolean): Self = this.set("usbMassStorageEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteUsbMassStorageEnabled: Self = this.set("usbMassStorageEnabled", js.undefined)
+    @scala.inline
+    def setVersion(value: String): Self = this.set("version", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVersion: Self = this.set("version", js.undefined)
+    @scala.inline
+    def setVpnConfigDisabled(value: Boolean): Self = this.set("vpnConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVpnConfigDisabled: Self = this.set("vpnConfigDisabled", js.undefined)
+    @scala.inline
+    def setWifiConfigDisabled(value: Boolean): Self = this.set("wifiConfigDisabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWifiConfigDisabled: Self = this.set("wifiConfigDisabled", js.undefined)
+    @scala.inline
+    def setWifiConfigsLockdownEnabled(value: Boolean): Self = this.set("wifiConfigsLockdownEnabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWifiConfigsLockdownEnabled: Self = this.set("wifiConfigsLockdownEnabled", js.undefined)
+  }
+  
 }
 

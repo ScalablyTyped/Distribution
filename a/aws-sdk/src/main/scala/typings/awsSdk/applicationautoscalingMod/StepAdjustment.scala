@@ -22,15 +22,32 @@ trait StepAdjustment extends js.Object {
 
 object StepAdjustment {
   @scala.inline
-  def apply(
-    ScalingAdjustment: ScalingAdjustment,
-    MetricIntervalLowerBound: js.UndefOr[MetricScale] = js.undefined,
-    MetricIntervalUpperBound: js.UndefOr[MetricScale] = js.undefined
-  ): StepAdjustment = {
+  def apply(ScalingAdjustment: ScalingAdjustment): StepAdjustment = {
     val __obj = js.Dynamic.literal(ScalingAdjustment = ScalingAdjustment.asInstanceOf[js.Any])
-    if (!js.isUndefined(MetricIntervalLowerBound)) __obj.updateDynamic("MetricIntervalLowerBound")(MetricIntervalLowerBound.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(MetricIntervalUpperBound)) __obj.updateDynamic("MetricIntervalUpperBound")(MetricIntervalUpperBound.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepAdjustment]
   }
+  @scala.inline
+  implicit class StepAdjustmentOps[Self <: StepAdjustment] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setScalingAdjustment(value: ScalingAdjustment): Self = this.set("ScalingAdjustment", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setMetricIntervalLowerBound(value: MetricScale): Self = this.set("MetricIntervalLowerBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricIntervalLowerBound: Self = this.set("MetricIntervalLowerBound", js.undefined)
+    @scala.inline
+    def setMetricIntervalUpperBound(value: MetricScale): Self = this.set("MetricIntervalUpperBound", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMetricIntervalUpperBound: Self = this.set("MetricIntervalUpperBound", js.undefined)
+  }
+  
 }
 

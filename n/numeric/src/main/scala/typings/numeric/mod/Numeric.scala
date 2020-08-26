@@ -2992,6 +2992,8 @@ trait Numeric extends js.Object {
   def ccsFull(matrix: SparseMatrix): Matrix = js.native
   def ccsGather(matrix: SparseMatrix): SparseMatrix = js.native
   def ccsGetBlock(matrix: SparseMatrix): SparseMatrix = js.native
+  def ccsGetBlock(matrix: SparseMatrix, i: js.UndefOr[scala.Nothing], j: Scalar): SparseMatrix = js.native
+  def ccsGetBlock(matrix: SparseMatrix, i: js.UndefOr[scala.Nothing], j: Vector): SparseMatrix = js.native
   def ccsGetBlock(matrix: SparseMatrix, i: Scalar): SparseMatrix = js.native
   def ccsGetBlock(matrix: SparseMatrix, i: Scalar, j: Scalar): SparseMatrix = js.native
   def ccsGetBlock(matrix: SparseMatrix, i: Scalar, j: Vector): SparseMatrix = js.native
@@ -3005,7 +3007,17 @@ trait Numeric extends js.Object {
   // Compressed Column Storage matrices
   def ccsSparse(matrix: Matrix): SparseMatrix = js.native
   def ccsTSolve(matrix: SparseMatrix, b: Vector): Vector = js.native
+  def ccsTSolve(
+    matrix: SparseMatrix,
+    b: Vector,
+    x: js.UndefOr[scala.Nothing],
+    bj: js.UndefOr[scala.Nothing],
+    xj: Vector
+  ): Vector = js.native
+  def ccsTSolve(matrix: SparseMatrix, b: Vector, x: js.UndefOr[scala.Nothing], bj: Vector): Vector = js.native
+  def ccsTSolve(matrix: SparseMatrix, b: Vector, x: js.UndefOr[scala.Nothing], bj: Vector, xj: Vector): Vector = js.native
   def ccsTSolve(matrix: SparseMatrix, b: Vector, x: Vector): Vector = js.native
+  def ccsTSolve(matrix: SparseMatrix, b: Vector, x: Vector, bj: js.UndefOr[scala.Nothing], xj: Vector): Vector = js.native
   def ccsTSolve(matrix: SparseMatrix, b: Vector, x: Vector, bj: Vector): Vector = js.native
   def ccsTSolve(matrix: SparseMatrix, b: Vector, x: Vector, bj: Vector, xj: Vector): Vector = js.native
   def ccsadd(x: Scalar, y: SparseMatrix): SparseMatrix = js.native
@@ -3434,7 +3446,42 @@ trait Numeric extends js.Object {
     x1: Scalar,
     y0: Scalar,
     f: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar],
+    tol: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    event: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar]
+  ): Dopri = js.native
+  def dopri(
+    x0: Scalar,
+    x1: Scalar,
+    y0: Scalar,
+    f: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar],
+    tol: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): Dopri = js.native
+  def dopri(
+    x0: Scalar,
+    x1: Scalar,
+    y0: Scalar,
+    f: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar],
+    tol: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    event: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar]
+  ): Dopri = js.native
+  def dopri(
+    x0: Scalar,
+    x1: Scalar,
+    y0: Scalar,
+    f: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar],
     tol: Double
+  ): Dopri = js.native
+  def dopri(
+    x0: Scalar,
+    x1: Scalar,
+    y0: Scalar,
+    f: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar],
+    tol: Double,
+    maxit: js.UndefOr[scala.Nothing],
+    event: js.Function2[/* x */ Vector | Scalar, /* y */ Vector | Scalar, Vector | Scalar]
   ): Dopri = js.native
   def dopri(
     x0: Scalar,
@@ -5279,12 +5326,14 @@ trait Numeric extends js.Object {
   def same(x: js.Any, y: js.Any): Boolean = js.native
   /** @deprecated */
   def sclone[T](matrix: T): T = js.native
+  def sclone[T](matrix: T, k: js.UndefOr[scala.Nothing], n: Double): T = js.native
   def sclone[T](matrix: T, k: Double): T = js.native
   def sclone[T](matrix: T, k: Double, n: Double): T = js.native
   /** @deprecated */
   def sdiag(d: Vector): DeprecatedSparseMatrix = js.native
   /**  @deprecated */
   def sdim(matrix: js.Any): Vector = js.native
+  def sdim(matrix: js.Any, ret: js.UndefOr[scala.Nothing], k: Double): Vector = js.native
   def sdim(matrix: js.Any, ret: Vector): Vector = js.native
   def sdim(matrix: js.Any, ret: Vector, k: Double): Vector = js.native
   def sdot(
@@ -5360,6 +5409,7 @@ trait Numeric extends js.Object {
   ): js.Array[js.Array[Double]] = js.native
   /** @deprecated */
   def sgather(matrix: DeprecatedSparseMatrix): DeprecatedSparseMatrix = js.native
+  def sgather(matrix: DeprecatedSparseMatrix, ret: js.UndefOr[scala.Nothing], k: DeprecatedSparseVector): DeprecatedSparseMatrix = js.native
   def sgather(matrix: DeprecatedSparseMatrix, ret: DeprecatedSparseVector): DeprecatedSparseMatrix = js.native
   def sgather(matrix: DeprecatedSparseMatrix, ret: DeprecatedSparseVector, k: DeprecatedSparseVector): DeprecatedSparseMatrix = js.native
   /** @deprecated */
@@ -5424,17 +5474,102 @@ trait Numeric extends js.Object {
   // Solving the linear problem Ax=b
   def solve(matrix: Matrix, vector: Vector): Vector = js.native
   def solveLP(c: Vector, A: Matrix, b: Vector): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: js.UndefOr[scala.Nothing],
+    beq: js.UndefOr[scala.Nothing],
+    tol: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: js.UndefOr[scala.Nothing],
+    beq: js.UndefOr[scala.Nothing],
+    tol: Double
+  ): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: js.UndefOr[scala.Nothing],
+    beq: js.UndefOr[scala.Nothing],
+    tol: Double,
+    maxit: Double
+  ): Iterations = js.native
+  def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: js.UndefOr[scala.Nothing], beq: Matrix): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: js.UndefOr[scala.Nothing],
+    beq: Matrix,
+    tol: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): Iterations = js.native
+  def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: js.UndefOr[scala.Nothing], beq: Matrix, tol: Double): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: js.UndefOr[scala.Nothing],
+    beq: Matrix,
+    tol: Double,
+    maxit: Double
+  ): Iterations = js.native
   def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: Matrix): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: Matrix,
+    beq: js.UndefOr[scala.Nothing],
+    tol: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): Iterations = js.native
+  def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: Matrix, beq: js.UndefOr[scala.Nothing], tol: Double): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: Matrix,
+    beq: js.UndefOr[scala.Nothing],
+    tol: Double,
+    maxit: Double
+  ): Iterations = js.native
   def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: Matrix, beq: Matrix): Iterations = js.native
+  def solveLP(
+    c: Vector,
+    A: Matrix,
+    b: Vector,
+    Aeq: Matrix,
+    beq: Matrix,
+    tol: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): Iterations = js.native
   def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: Matrix, beq: Matrix, tol: Double): Iterations = js.native
   def solveLP(c: Vector, A: Matrix, b: Vector, Aeq: Matrix, beq: Matrix, tol: Double, maxit: Double): Iterations = js.native
   def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector): Iact = js.native
+  def solveQP(
+    Dmat: Matrix,
+    dvec: Vector,
+    Amat: Matrix,
+    bvec: Vector,
+    meq: js.UndefOr[scala.Nothing],
+    factorized: js.Any
+  ): Iact = js.native
   def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Double): Iact = js.native
   def solveQP(Dmat: Matrix, dvec: Vector, Amat: Matrix, bvec: Vector, meq: Double, factorized: js.Any): Iact = js.native
   // Splines
   def spline(x: Vector, y: Matrix | Vector): Spline = js.native
+  def spline(x: Vector, y: Matrix | Vector, k1: js.UndefOr[scala.Nothing], kn: Scalar): Spline = js.native
   def spline(x: Vector, y: Matrix | Vector, k1: Scalar): Spline = js.native
   def spline(x: Vector, y: Matrix | Vector, k1: Scalar, kn: Scalar): Spline = js.native
+  @JSName("spline")
+  def spline_periodic(x: Vector, y: Matrix | Vector, k1: js.UndefOr[scala.Nothing], kn: periodic): Spline = js.native
   @JSName("spline")
   def spline_periodic(x: Vector, y: Matrix | Vector, k1: Scalar, kn: periodic): Spline = js.native
   @JSName("spline")
@@ -5739,9 +5874,227 @@ trait Numeric extends js.Object {
   def truncVV(x: Vector, y: Vector): Vector = js.native
   // Unconstrained optimisations
   def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: Double
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: Double,
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: Double,
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: js.UndefOr[scala.Nothing],
+    gradient: js.Any,
+    maxit: Double,
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
   def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.UndefOr[scala.Nothing],
+    maxit: Double,
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
   def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double, gradient: js.Any): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.Any,
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.Any,
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _]
+  ): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.Any,
+    maxit: js.UndefOr[scala.Nothing],
+    callback: js.Function5[/* it */ Double, /* x0 */ Vector, /* f0 */ Scalar, /* g0 */ Vector, /* h1 */ Matrix, _],
+    options: Hinv
+  ): F = js.native
   def uncmin(f: js.Function1[/* x */ Vector, Scalar], x0: Vector, tol: Double, gradient: js.Any, maxit: Double): F = js.native
+  def uncmin(
+    f: js.Function1[/* x */ Vector, Scalar],
+    x0: Vector,
+    tol: Double,
+    gradient: js.Any,
+    maxit: Double,
+    callback: js.UndefOr[scala.Nothing],
+    options: Hinv
+  ): F = js.native
   def uncmin(
     f: js.Function1[/* x */ Vector, Scalar],
     x0: Vector,

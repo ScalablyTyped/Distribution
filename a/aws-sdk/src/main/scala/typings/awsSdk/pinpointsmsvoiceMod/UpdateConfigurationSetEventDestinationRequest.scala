@@ -19,14 +19,30 @@ trait UpdateConfigurationSetEventDestinationRequest extends js.Object {
 
 object UpdateConfigurationSetEventDestinationRequest {
   @scala.inline
-  def apply(
-    ConfigurationSetName: _String,
-    EventDestinationName: _String,
-    EventDestination: EventDestinationDefinition = null
-  ): UpdateConfigurationSetEventDestinationRequest = {
+  def apply(ConfigurationSetName: _String, EventDestinationName: _String): UpdateConfigurationSetEventDestinationRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any], EventDestinationName = EventDestinationName.asInstanceOf[js.Any])
-    if (EventDestination != null) __obj.updateDynamic("EventDestination")(EventDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConfigurationSetEventDestinationRequest]
   }
+  @scala.inline
+  implicit class UpdateConfigurationSetEventDestinationRequestOps[Self <: UpdateConfigurationSetEventDestinationRequest] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setConfigurationSetName(value: _String): Self = this.set("ConfigurationSetName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventDestinationName(value: _String): Self = this.set("EventDestinationName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setEventDestination(value: EventDestinationDefinition): Self = this.set("EventDestination", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEventDestination: Self = this.set("EventDestination", js.undefined)
+  }
+  
 }
 

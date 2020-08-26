@@ -30,6 +30,7 @@ class ResourceInventory protected () extends js.Object {
     */
   def custombatch(): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaInventoryCustomBatchResponse]): Unit = js.native
+  def custombatch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
   def custombatch(params: ParamsResourceInventoryCustombatch): GaxiosPromise[SchemaInventoryCustomBatchResponse] = js.native
   def custombatch(
     params: ParamsResourceInventoryCustombatch,
@@ -65,6 +66,7 @@ class ResourceInventory protected () extends js.Object {
     */
   def set(): GaxiosPromise[SchemaInventorySetResponse] = js.native
   def set(callback: BodyResponseCallback[SchemaInventorySetResponse]): Unit = js.native
+  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInventorySetResponse] = js.native
   def set(params: ParamsResourceInventorySet): GaxiosPromise[SchemaInventorySetResponse] = js.native
   def set(params: ParamsResourceInventorySet, callback: BodyResponseCallback[SchemaInventorySetResponse]): Unit = js.native
   def set(

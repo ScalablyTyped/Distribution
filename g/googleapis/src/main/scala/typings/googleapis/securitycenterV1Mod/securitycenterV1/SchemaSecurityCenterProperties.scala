@@ -40,20 +40,44 @@ trait SchemaSecurityCenterProperties extends js.Object {
 
 object SchemaSecurityCenterProperties {
   @scala.inline
-  def apply(
-    resourceName: String = null,
-    resourceOwners: js.Array[String] = null,
-    resourceParent: String = null,
-    resourceProject: String = null,
-    resourceType: String = null
-  ): SchemaSecurityCenterProperties = {
+  def apply(): SchemaSecurityCenterProperties = {
     val __obj = js.Dynamic.literal()
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (resourceOwners != null) __obj.updateDynamic("resourceOwners")(resourceOwners.asInstanceOf[js.Any])
-    if (resourceParent != null) __obj.updateDynamic("resourceParent")(resourceParent.asInstanceOf[js.Any])
-    if (resourceProject != null) __obj.updateDynamic("resourceProject")(resourceProject.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaSecurityCenterProperties]
   }
+  @scala.inline
+  implicit class SchemaSecurityCenterPropertiesOps[Self <: SchemaSecurityCenterProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setResourceName(value: String): Self = this.set("resourceName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceName: Self = this.set("resourceName", js.undefined)
+    @scala.inline
+    def setResourceOwnersVarargs(value: String*): Self = this.set("resourceOwners", js.Array(value :_*))
+    @scala.inline
+    def setResourceOwners(value: js.Array[String]): Self = this.set("resourceOwners", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceOwners: Self = this.set("resourceOwners", js.undefined)
+    @scala.inline
+    def setResourceParent(value: String): Self = this.set("resourceParent", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceParent: Self = this.set("resourceParent", js.undefined)
+    @scala.inline
+    def setResourceProject(value: String): Self = this.set("resourceProject", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceProject: Self = this.set("resourceProject", js.undefined)
+    @scala.inline
+    def setResourceType(value: String): Self = this.set("resourceType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteResourceType: Self = this.set("resourceType", js.undefined)
+  }
+  
 }
 

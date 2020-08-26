@@ -26,6 +26,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This service is for a dimensioning shape. */
+@js.native
 trait MeasureShape
   extends Shape
      with MeasureProperties
@@ -35,9 +36,9 @@ trait MeasureShape
      with ShadowProperties
      with RotationDescriptor {
   /** this point is the end of the measured distance */
-  var EndPosition: Point
+  var EndPosition: Point = js.native
   /** this point is the start of the measured distance */
-  var StartPosition: Point
+  var StartPosition: Point = js.native
 }
 
 object MeasureShape {
@@ -148,5 +149,22 @@ object MeasureShape {
     js.Dynamic.global.Object.assign(__obj, TextProperties)
     __obj.asInstanceOf[MeasureShape]
   }
+  @scala.inline
+  implicit class MeasureShapeOps[Self <: MeasureShape] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEndPosition(value: Point): Self = this.set("EndPosition", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setStartPosition(value: Point): Self = this.set("StartPosition", value.asInstanceOf[js.Any])
+  }
+  
 }
 

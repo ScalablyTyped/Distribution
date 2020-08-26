@@ -27,6 +27,7 @@ import scala.scalajs.js.annotation._
   * @see FormControlModel
   * @see com.sun.star.form.component.Form
   */
+@js.native
 trait FormComponent
   extends XChild
      with XComponent

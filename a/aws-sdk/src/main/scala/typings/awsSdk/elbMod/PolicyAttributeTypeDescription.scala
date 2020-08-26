@@ -30,20 +30,42 @@ trait PolicyAttributeTypeDescription extends js.Object {
 
 object PolicyAttributeTypeDescription {
   @scala.inline
-  def apply(
-    AttributeName: AttributeName = null,
-    AttributeType: AttributeType = null,
-    Cardinality: Cardinality = null,
-    DefaultValue: DefaultValue = null,
-    Description: Description = null
-  ): PolicyAttributeTypeDescription = {
+  def apply(): PolicyAttributeTypeDescription = {
     val __obj = js.Dynamic.literal()
-    if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName.asInstanceOf[js.Any])
-    if (AttributeType != null) __obj.updateDynamic("AttributeType")(AttributeType.asInstanceOf[js.Any])
-    if (Cardinality != null) __obj.updateDynamic("Cardinality")(Cardinality.asInstanceOf[js.Any])
-    if (DefaultValue != null) __obj.updateDynamic("DefaultValue")(DefaultValue.asInstanceOf[js.Any])
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolicyAttributeTypeDescription]
   }
+  @scala.inline
+  implicit class PolicyAttributeTypeDescriptionOps[Self <: PolicyAttributeTypeDescription] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setAttributeName(value: AttributeName): Self = this.set("AttributeName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeName: Self = this.set("AttributeName", js.undefined)
+    @scala.inline
+    def setAttributeType(value: AttributeType): Self = this.set("AttributeType", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteAttributeType: Self = this.set("AttributeType", js.undefined)
+    @scala.inline
+    def setCardinality(value: Cardinality): Self = this.set("Cardinality", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCardinality: Self = this.set("Cardinality", js.undefined)
+    @scala.inline
+    def setDefaultValue(value: DefaultValue): Self = this.set("DefaultValue", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDefaultValue: Self = this.set("DefaultValue", js.undefined)
+    @scala.inline
+    def setDescription(value: Description): Self = this.set("Description", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDescription: Self = this.set("Description", js.undefined)
+  }
+  
 }
 

@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "ember__template"
-version := "3.16-dt-20200610Z-87126d"
-scalaVersion := "2.13.2"
+version := "3.16-dt-20200610Z-1d3249"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

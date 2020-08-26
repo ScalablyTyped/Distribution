@@ -1050,6 +1050,8 @@ trait ojTagCloudItem extends JetElement[ojTagCloudItemSettableProperties] {
   @JSName("setProperty")
   def setProperty_categories(property: categories, value: js.Array[String]): Unit = js.native
   @JSName("setProperty")
+  def setProperty_color(property: color): Unit = js.native
+  @JSName("setProperty")
   def setProperty_color(property: color, value: String): Unit = js.native
   @JSName("setProperty")
   def setProperty_label(property: label, value: String): Unit = js.native

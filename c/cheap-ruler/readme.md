@@ -1,7 +1,7 @@
 
 # Scala.js typings for cheap-ruler
 
-Typings are for version 2.5.1
+Typings are for version 3.0.1
 
 ## Library description:
 A collection of fast approximations to common geographic measurements.
@@ -12,7 +12,7 @@ A collection of fast approximations to common geographic measurements.
 | Keywords           | geospatial, measurement, approximation, distance |
 | # releases         | 1 |
 | # dependents       | 8 |
-| # downloads        | 133417 |
+| # downloads        | 137823 |
 | # stars            | 0 |
 
 ## Links

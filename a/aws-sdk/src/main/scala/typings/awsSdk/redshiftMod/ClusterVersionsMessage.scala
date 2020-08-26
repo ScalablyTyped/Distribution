@@ -18,11 +18,32 @@ trait ClusterVersionsMessage extends js.Object {
 
 object ClusterVersionsMessage {
   @scala.inline
-  def apply(ClusterVersions: ClusterVersionList = null, Marker: String = null): ClusterVersionsMessage = {
+  def apply(): ClusterVersionsMessage = {
     val __obj = js.Dynamic.literal()
-    if (ClusterVersions != null) __obj.updateDynamic("ClusterVersions")(ClusterVersions.asInstanceOf[js.Any])
-    if (Marker != null) __obj.updateDynamic("Marker")(Marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterVersionsMessage]
   }
+  @scala.inline
+  implicit class ClusterVersionsMessageOps[Self <: ClusterVersionsMessage] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: java.lang.String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClusterVersionsVarargs(value: ClusterVersion*): Self = this.set("ClusterVersions", js.Array(value :_*))
+    @scala.inline
+    def setClusterVersions(value: ClusterVersionList): Self = this.set("ClusterVersions", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClusterVersions: Self = this.set("ClusterVersions", js.undefined)
+    @scala.inline
+    def setMarker(value: String): Self = this.set("Marker", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMarker: Self = this.set("Marker", js.undefined)
+  }
+  
 }
 

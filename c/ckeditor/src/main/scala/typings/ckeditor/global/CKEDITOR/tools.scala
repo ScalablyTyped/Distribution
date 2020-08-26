@@ -66,6 +66,7 @@ object tools extends js.Object {
   def objectKeys(obj: StringDictionary[js.Any]): js.Array[String] = js.native
   def `override`[T /* <: js.Function */](originalFunction: T, functionBuilder: js.Function1[/* originalFunction */ T, T]): T = js.native
   def parseCssText(styleText: String): StringDictionary[js.Any] = js.native
+  def parseCssText(styleText: String, normalize: js.UndefOr[scala.Nothing], nativeNormalize: Boolean): StringDictionary[js.Any] = js.native
   def parseCssText(styleText: String, normalize: Boolean): StringDictionary[js.Any] = js.native
   def parseCssText(styleText: String, normalize: Boolean, nativeNormalize: Boolean): StringDictionary[js.Any] = js.native
   def prototypedCopy(source: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
@@ -76,8 +77,71 @@ object tools extends js.Object {
   def search[T](array: js.Array[T], value: js.Function1[/* element */ T, Boolean]): T = js.native
   def setCookie(name: String, value: String): Unit = js.native
   def setTimeout(func: js.Function): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    ownerWindow: Window
+  ): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.Any
+  ): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: js.UndefOr[scala.Nothing],
+    scope: js.UndefOr[scala.Nothing],
+    args: js.Any,
+    ownerWindow: Window
+  ): Double = js.native
+  def setTimeout(func: js.Function, milliseconds: js.UndefOr[scala.Nothing], scope: StringDictionary[js.Any]): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: js.UndefOr[scala.Nothing],
+    scope: StringDictionary[js.Any],
+    args: js.UndefOr[scala.Nothing],
+    ownerWindow: Window
+  ): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: js.UndefOr[scala.Nothing],
+    scope: StringDictionary[js.Any],
+    args: js.Any
+  ): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: js.UndefOr[scala.Nothing],
+    scope: StringDictionary[js.Any],
+    args: js.Any,
+    ownerWindow: Window
+  ): Double = js.native
   def setTimeout(func: js.Function, milliseconds: Double): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: js.UndefOr[scala.Nothing],
+    ownerWindow: Window
+  ): Double = js.native
+  def setTimeout(func: js.Function, milliseconds: Double, scope: js.UndefOr[scala.Nothing], args: js.Any): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: Double,
+    scope: js.UndefOr[scala.Nothing],
+    args: js.Any,
+    ownerWindow: Window
+  ): Double = js.native
   def setTimeout(func: js.Function, milliseconds: Double, scope: StringDictionary[js.Any]): Double = js.native
+  def setTimeout(
+    func: js.Function,
+    milliseconds: Double,
+    scope: StringDictionary[js.Any],
+    args: js.UndefOr[scala.Nothing],
+    ownerWindow: Window
+  ): Double = js.native
   def setTimeout(func: js.Function, milliseconds: Double, scope: StringDictionary[js.Any], args: js.Any): Double = js.native
   def setTimeout(
     func: js.Function,

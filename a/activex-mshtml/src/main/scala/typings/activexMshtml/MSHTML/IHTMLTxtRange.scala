@@ -17,6 +17,7 @@ trait IHTMLTxtRange extends js.Object {
   def duplicate(): IHTMLTxtRange = js.native
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: String): Boolean = js.native
+  def execCommand(cmdID: String, showUI: js.UndefOr[scala.Nothing], value: js.Any): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean): Boolean = js.native
   def execCommand(cmdID: String, showUI: Boolean, value: js.Any): Boolean = js.native
   def execCommandShowHelp(cmdID: String): Boolean = js.native
@@ -26,6 +27,7 @@ trait IHTMLTxtRange extends js.Object {
     * @param flags [flags=0]
     */
   def findText(String: String): Boolean = js.native
+  def findText(String: String, Count: js.UndefOr[scala.Nothing], flags: Double): Boolean = js.native
   def findText(String: String, Count: Double): Boolean = js.native
   def findText(String: String, Count: Double, flags: Double): Boolean = js.native
   def getBookmark(): String = js.native

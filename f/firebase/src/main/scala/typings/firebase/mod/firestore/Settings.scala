@@ -4,6 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Settings extends js.Object {
   /**
     * An approximate cache size threshold for the on-disk data. If the cache grows beyond this
@@ -14,7 +15,7 @@ trait Settings extends js.Object {
     * The default value is 40 MB. The threshold must be set to at least 1 MB, and can be set to
     * CACHE_SIZE_UNLIMITED to disable garbage collection.
     */
-  var cacheSizeBytes: js.UndefOr[Double] = js.undefined
+  var cacheSizeBytes: js.UndefOr[Double] = js.native
   /**
     * Forces the SDK’s underlying network transport (WebChannel) to use
     * long-polling. Each response from the backend will be closed immediately
@@ -31,18 +32,18 @@ trait Settings extends js.Object {
     *
     * @webonly
     */
-  var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
+  var experimentalForceLongPolling: js.UndefOr[Boolean] = js.native
   /** The hostname to connect to. */
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String] = js.native
   /**
     * Whether to skip nested properties that are set to `undefined` during
     * object serialization. If set to `true`, these properties are skipped
     * and not written to Firestore. If set `false` or omitted, the SDK throws
     * an exception when it encounters properties of type `undefined`.
     */
-  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
+  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.native
   /** Whether to use SSL when connecting. */
-  var ssl: js.UndefOr[Boolean] = js.undefined
+  var ssl: js.UndefOr[Boolean] = js.native
   /**
     * Specifies whether to use `Timestamp` objects for timestamp fields in
     * `DocumentSnapshot`s. This is enabled by default and should not be
@@ -75,27 +76,51 @@ trait Settings extends js.Object {
     * update your code to expect `Timestamp` objects and stop using the
     * `timestampsInSnapshots` setting.
     */
-  var timestampsInSnapshots: js.UndefOr[Boolean] = js.undefined
+  var timestampsInSnapshots: js.UndefOr[Boolean] = js.native
 }
 
 object Settings {
   @scala.inline
-  def apply(
-    cacheSizeBytes: js.UndefOr[Double] = js.undefined,
-    experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined,
-    ssl: js.UndefOr[Boolean] = js.undefined,
-    timestampsInSnapshots: js.UndefOr[Boolean] = js.undefined
-  ): Settings = {
+  def apply(): Settings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cacheSizeBytes)) __obj.updateDynamic("cacheSizeBytes")(cacheSizeBytes.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(experimentalForceLongPolling)) __obj.updateDynamic("experimentalForceLongPolling")(experimentalForceLongPolling.get.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUndefinedProperties)) __obj.updateDynamic("ignoreUndefinedProperties")(ignoreUndefinedProperties.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(timestampsInSnapshots)) __obj.updateDynamic("timestampsInSnapshots")(timestampsInSnapshots.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  @scala.inline
+  implicit class SettingsOps[Self <: Settings] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setCacheSizeBytes(value: Double): Self = this.set("cacheSizeBytes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCacheSizeBytes: Self = this.set("cacheSizeBytes", js.undefined)
+    @scala.inline
+    def setExperimentalForceLongPolling(value: Boolean): Self = this.set("experimentalForceLongPolling", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteExperimentalForceLongPolling: Self = this.set("experimentalForceLongPolling", js.undefined)
+    @scala.inline
+    def setHost(value: String): Self = this.set("host", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteHost: Self = this.set("host", js.undefined)
+    @scala.inline
+    def setIgnoreUndefinedProperties(value: Boolean): Self = this.set("ignoreUndefinedProperties", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIgnoreUndefinedProperties: Self = this.set("ignoreUndefinedProperties", js.undefined)
+    @scala.inline
+    def setSsl(value: Boolean): Self = this.set("ssl", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSsl: Self = this.set("ssl", js.undefined)
+    @scala.inline
+    def setTimestampsInSnapshots(value: Boolean): Self = this.set("timestampsInSnapshots", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTimestampsInSnapshots: Self = this.set("timestampsInSnapshots", js.undefined)
+  }
+  
 }
 

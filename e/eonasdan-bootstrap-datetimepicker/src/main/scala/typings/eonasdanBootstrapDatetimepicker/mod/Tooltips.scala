@@ -4,165 +4,228 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Tooltips extends js.Object {
   /**
     * Default: "Clear selection"
     */
-  var clear: js.UndefOr[String] = js.undefined
+  var clear: js.UndefOr[String] = js.native
   /**
     * Default: "Close the picker"
     */
-  var close: js.UndefOr[String] = js.undefined
+  var close: js.UndefOr[String] = js.native
   /**
     * Default: "Decrement Hour"
     */
-  var decrementHour: js.UndefOr[String] = js.undefined
+  var decrementHour: js.UndefOr[String] = js.native
   /**
     * Default: "Decrement Minute"
     */
-  var decrementMinute: js.UndefOr[String] = js.undefined
+  var decrementMinute: js.UndefOr[String] = js.native
   /**
     * Default: "Decrement Second"
     */
-  var decrementSecond: js.UndefOr[String] = js.undefined
+  var decrementSecond: js.UndefOr[String] = js.native
   /**
     * Default: "Increment Hour"
     */
-  var incrementHour: js.UndefOr[String] = js.undefined
+  var incrementHour: js.UndefOr[String] = js.native
   /**
     * Default: "Increment Minute"
     */
-  var incrementMinute: js.UndefOr[String] = js.undefined
+  var incrementMinute: js.UndefOr[String] = js.native
   /**
     * Default: "Increment Second"
     */
-  var incrementSecond: js.UndefOr[String] = js.undefined
+  var incrementSecond: js.UndefOr[String] = js.native
   /**
     * Default: "Next Century"
     */
-  var nextCentury: js.UndefOr[String] = js.undefined
+  var nextCentury: js.UndefOr[String] = js.native
   /**
     * Default: "Next Decade"
     */
-  var nextDecade: js.UndefOr[String] = js.undefined
+  var nextDecade: js.UndefOr[String] = js.native
   /**
     * Default: "Next Month"
     */
-  var nextMonth: js.UndefOr[String] = js.undefined
+  var nextMonth: js.UndefOr[String] = js.native
   /**
     * Default: "Next Year"
     */
-  var nextYear: js.UndefOr[String] = js.undefined
+  var nextYear: js.UndefOr[String] = js.native
   /**
     * Default: "Pick Hour"
     */
-  var pickHour: js.UndefOr[String] = js.undefined
+  var pickHour: js.UndefOr[String] = js.native
   /**
     * Default: "Pick Minute"
     */
-  var pickMinute: js.UndefOr[String] = js.undefined
+  var pickMinute: js.UndefOr[String] = js.native
   /**
     * Default: "Pick Second"
     */
-  var pickSecond: js.UndefOr[String] = js.undefined
+  var pickSecond: js.UndefOr[String] = js.native
   /**
     * Default: "Previous Century"
     */
-  var prevCentury: js.UndefOr[String] = js.undefined
+  var prevCentury: js.UndefOr[String] = js.native
   /**
     * Default: "Previous Decade"
     */
-  var prevDecade: js.UndefOr[String] = js.undefined
+  var prevDecade: js.UndefOr[String] = js.native
   /**
     * Default: "Previous Month"
     */
-  var prevMonth: js.UndefOr[String] = js.undefined
+  var prevMonth: js.UndefOr[String] = js.native
   /**
     * Default: "Previous Year"
     */
-  var prevYear: js.UndefOr[String] = js.undefined
+  var prevYear: js.UndefOr[String] = js.native
   /**
     * Default: "Select Decade"
     */
-  var selectDecade: js.UndefOr[String] = js.undefined
+  var selectDecade: js.UndefOr[String] = js.native
   /**
     * Default: "Select Month"
     */
-  var selectMonth: js.UndefOr[String] = js.undefined
+  var selectMonth: js.UndefOr[String] = js.native
   /**
     * Default: "Select Time"
     */
-  var selectTime: js.UndefOr[String] = js.undefined
+  var selectTime: js.UndefOr[String] = js.native
   /**
     * Default: "Select Year"
     */
-  var selectYear: js.UndefOr[String] = js.undefined
+  var selectYear: js.UndefOr[String] = js.native
   /**
     * Default: "Go to today"
     */
-  var today: js.UndefOr[String] = js.undefined
+  var today: js.UndefOr[String] = js.native
   /**
     * Default:  "Toggle Period"
     */
-  var togglePeriod: js.UndefOr[String] = js.undefined
+  var togglePeriod: js.UndefOr[String] = js.native
 }
 
 object Tooltips {
   @scala.inline
-  def apply(
-    clear: String = null,
-    close: String = null,
-    decrementHour: String = null,
-    decrementMinute: String = null,
-    decrementSecond: String = null,
-    incrementHour: String = null,
-    incrementMinute: String = null,
-    incrementSecond: String = null,
-    nextCentury: String = null,
-    nextDecade: String = null,
-    nextMonth: String = null,
-    nextYear: String = null,
-    pickHour: String = null,
-    pickMinute: String = null,
-    pickSecond: String = null,
-    prevCentury: String = null,
-    prevDecade: String = null,
-    prevMonth: String = null,
-    prevYear: String = null,
-    selectDecade: String = null,
-    selectMonth: String = null,
-    selectTime: String = null,
-    selectYear: String = null,
-    today: String = null,
-    togglePeriod: String = null
-  ): Tooltips = {
+  def apply(): Tooltips = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (decrementHour != null) __obj.updateDynamic("decrementHour")(decrementHour.asInstanceOf[js.Any])
-    if (decrementMinute != null) __obj.updateDynamic("decrementMinute")(decrementMinute.asInstanceOf[js.Any])
-    if (decrementSecond != null) __obj.updateDynamic("decrementSecond")(decrementSecond.asInstanceOf[js.Any])
-    if (incrementHour != null) __obj.updateDynamic("incrementHour")(incrementHour.asInstanceOf[js.Any])
-    if (incrementMinute != null) __obj.updateDynamic("incrementMinute")(incrementMinute.asInstanceOf[js.Any])
-    if (incrementSecond != null) __obj.updateDynamic("incrementSecond")(incrementSecond.asInstanceOf[js.Any])
-    if (nextCentury != null) __obj.updateDynamic("nextCentury")(nextCentury.asInstanceOf[js.Any])
-    if (nextDecade != null) __obj.updateDynamic("nextDecade")(nextDecade.asInstanceOf[js.Any])
-    if (nextMonth != null) __obj.updateDynamic("nextMonth")(nextMonth.asInstanceOf[js.Any])
-    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear.asInstanceOf[js.Any])
-    if (pickHour != null) __obj.updateDynamic("pickHour")(pickHour.asInstanceOf[js.Any])
-    if (pickMinute != null) __obj.updateDynamic("pickMinute")(pickMinute.asInstanceOf[js.Any])
-    if (pickSecond != null) __obj.updateDynamic("pickSecond")(pickSecond.asInstanceOf[js.Any])
-    if (prevCentury != null) __obj.updateDynamic("prevCentury")(prevCentury.asInstanceOf[js.Any])
-    if (prevDecade != null) __obj.updateDynamic("prevDecade")(prevDecade.asInstanceOf[js.Any])
-    if (prevMonth != null) __obj.updateDynamic("prevMonth")(prevMonth.asInstanceOf[js.Any])
-    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear.asInstanceOf[js.Any])
-    if (selectDecade != null) __obj.updateDynamic("selectDecade")(selectDecade.asInstanceOf[js.Any])
-    if (selectMonth != null) __obj.updateDynamic("selectMonth")(selectMonth.asInstanceOf[js.Any])
-    if (selectTime != null) __obj.updateDynamic("selectTime")(selectTime.asInstanceOf[js.Any])
-    if (selectYear != null) __obj.updateDynamic("selectYear")(selectYear.asInstanceOf[js.Any])
-    if (today != null) __obj.updateDynamic("today")(today.asInstanceOf[js.Any])
-    if (togglePeriod != null) __obj.updateDynamic("togglePeriod")(togglePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tooltips]
   }
+  @scala.inline
+  implicit class TooltipsOps[Self <: Tooltips] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setClear(value: String): Self = this.set("clear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClear: Self = this.set("clear", js.undefined)
+    @scala.inline
+    def setClose(value: String): Self = this.set("close", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteClose: Self = this.set("close", js.undefined)
+    @scala.inline
+    def setDecrementHour(value: String): Self = this.set("decrementHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecrementHour: Self = this.set("decrementHour", js.undefined)
+    @scala.inline
+    def setDecrementMinute(value: String): Self = this.set("decrementMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecrementMinute: Self = this.set("decrementMinute", js.undefined)
+    @scala.inline
+    def setDecrementSecond(value: String): Self = this.set("decrementSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteDecrementSecond: Self = this.set("decrementSecond", js.undefined)
+    @scala.inline
+    def setIncrementHour(value: String): Self = this.set("incrementHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrementHour: Self = this.set("incrementHour", js.undefined)
+    @scala.inline
+    def setIncrementMinute(value: String): Self = this.set("incrementMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrementMinute: Self = this.set("incrementMinute", js.undefined)
+    @scala.inline
+    def setIncrementSecond(value: String): Self = this.set("incrementSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIncrementSecond: Self = this.set("incrementSecond", js.undefined)
+    @scala.inline
+    def setNextCentury(value: String): Self = this.set("nextCentury", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextCentury: Self = this.set("nextCentury", js.undefined)
+    @scala.inline
+    def setNextDecade(value: String): Self = this.set("nextDecade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextDecade: Self = this.set("nextDecade", js.undefined)
+    @scala.inline
+    def setNextMonth(value: String): Self = this.set("nextMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextMonth: Self = this.set("nextMonth", js.undefined)
+    @scala.inline
+    def setNextYear(value: String): Self = this.set("nextYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteNextYear: Self = this.set("nextYear", js.undefined)
+    @scala.inline
+    def setPickHour(value: String): Self = this.set("pickHour", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickHour: Self = this.set("pickHour", js.undefined)
+    @scala.inline
+    def setPickMinute(value: String): Self = this.set("pickMinute", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickMinute: Self = this.set("pickMinute", js.undefined)
+    @scala.inline
+    def setPickSecond(value: String): Self = this.set("pickSecond", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePickSecond: Self = this.set("pickSecond", js.undefined)
+    @scala.inline
+    def setPrevCentury(value: String): Self = this.set("prevCentury", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevCentury: Self = this.set("prevCentury", js.undefined)
+    @scala.inline
+    def setPrevDecade(value: String): Self = this.set("prevDecade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevDecade: Self = this.set("prevDecade", js.undefined)
+    @scala.inline
+    def setPrevMonth(value: String): Self = this.set("prevMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevMonth: Self = this.set("prevMonth", js.undefined)
+    @scala.inline
+    def setPrevYear(value: String): Self = this.set("prevYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrevYear: Self = this.set("prevYear", js.undefined)
+    @scala.inline
+    def setSelectDecade(value: String): Self = this.set("selectDecade", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectDecade: Self = this.set("selectDecade", js.undefined)
+    @scala.inline
+    def setSelectMonth(value: String): Self = this.set("selectMonth", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectMonth: Self = this.set("selectMonth", js.undefined)
+    @scala.inline
+    def setSelectTime(value: String): Self = this.set("selectTime", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectTime: Self = this.set("selectTime", js.undefined)
+    @scala.inline
+    def setSelectYear(value: String): Self = this.set("selectYear", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelectYear: Self = this.set("selectYear", js.undefined)
+    @scala.inline
+    def setToday(value: String): Self = this.set("today", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteToday: Self = this.set("today", js.undefined)
+    @scala.inline
+    def setTogglePeriod(value: String): Self = this.set("togglePeriod", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteTogglePeriod: Self = this.set("togglePeriod", js.undefined)
+  }
+  
 }
 

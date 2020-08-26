@@ -12,7 +12,7 @@ merge single level defaults over a config object
 | Keywords           | config, defaults |
 | # releases         | 1 |
 | # dependents       | 320 |
-| # downloads        | 118479163 |
+| # downloads        | 121977040 |
 | # stars            | 10 |
 
 ## Links

@@ -15,11 +15,5 @@ class Deferral protected ()
     * @param handler A DeferralCompletedHandler to be called upon completion of the deferral.
     */
   def this(handler: DeferralCompletedHandler) = this()
-  /** If the DeferralCompletedHandler has not yet been invoked, this will call it and drop the reference to the delegate. */
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /** If the DeferralCompletedHandler has not yet been invoked, this will call it and drop the reference to the delegate. */
-  /* CompleteClass */
-  override def complete(): Unit = js.native
 }
 

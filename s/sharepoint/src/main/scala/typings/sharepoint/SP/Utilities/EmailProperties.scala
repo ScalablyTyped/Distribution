@@ -7,21 +7,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EmailProperties extends ClientValueObject {
-  def get_additionalHeaders(): js.Any
-  def get_bCC(): js.Array[String]
-  def get_body(): String
-  def get_cC(): js.Array[String]
-  def get_from(): String
-  def get_subject(): String
-  def get_to(): js.Array[String]
-  def set_additionalHeaders(value: js.Any): Unit
-  def set_bCC(value: js.Array[String]): Unit
-  def set_body(value: String): Unit
-  def set_cC(value: js.Array[String]): Unit
-  def set_from(value: String): Unit
-  def set_subject(value: String): Unit
-  def set_to(value: js.Array[String]): Unit
+  def get_additionalHeaders(): js.Any = js.native
+  def get_bCC(): js.Array[String] = js.native
+  def get_body(): String = js.native
+  def get_cC(): js.Array[String] = js.native
+  def get_from(): String = js.native
+  def get_subject(): String = js.native
+  def get_to(): js.Array[String] = js.native
+  def set_additionalHeaders(value: js.Any): Unit = js.native
+  def set_bCC(value: js.Array[String]): Unit = js.native
+  def set_body(value: String): Unit = js.native
+  def set_cC(value: js.Array[String]): Unit = js.native
+  def set_from(value: String): Unit = js.native
+  def set_subject(value: String): Unit = js.native
+  def set_to(value: js.Array[String]): Unit = js.native
 }
 
 object EmailProperties {
@@ -50,5 +51,46 @@ object EmailProperties {
     val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), customWriteToXml = js.Any.fromFunction2(customWriteToXml), fromJson = js.Any.fromFunction1(fromJson), get_additionalHeaders = js.Any.fromFunction0(get_additionalHeaders), get_bCC = js.Any.fromFunction0(get_bCC), get_body = js.Any.fromFunction0(get_body), get_cC = js.Any.fromFunction0(get_cC), get_from = js.Any.fromFunction0(get_from), get_subject = js.Any.fromFunction0(get_subject), get_to = js.Any.fromFunction0(get_to), get_typeId = js.Any.fromFunction0(get_typeId), set_additionalHeaders = js.Any.fromFunction1(set_additionalHeaders), set_bCC = js.Any.fromFunction1(set_bCC), set_body = js.Any.fromFunction1(set_body), set_cC = js.Any.fromFunction1(set_cC), set_from = js.Any.fromFunction1(set_from), set_subject = js.Any.fromFunction1(set_subject), set_to = js.Any.fromFunction1(set_to), writeToXml = js.Any.fromFunction2(writeToXml))
     __obj.asInstanceOf[EmailProperties]
   }
+  @scala.inline
+  implicit class EmailPropertiesOps[Self <: EmailProperties] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setGet_additionalHeaders(value: () => js.Any): Self = this.set("get_additionalHeaders", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_bCC(value: () => js.Array[String]): Self = this.set("get_bCC", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_body(value: () => String): Self = this.set("get_body", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_cC(value: () => js.Array[String]): Self = this.set("get_cC", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_from(value: () => String): Self = this.set("get_from", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_subject(value: () => String): Self = this.set("get_subject", js.Any.fromFunction0(value))
+    @scala.inline
+    def setGet_to(value: () => js.Array[String]): Self = this.set("get_to", js.Any.fromFunction0(value))
+    @scala.inline
+    def setSet_additionalHeaders(value: js.Any => Unit): Self = this.set("set_additionalHeaders", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_bCC(value: js.Array[String] => Unit): Self = this.set("set_bCC", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_body(value: String => Unit): Self = this.set("set_body", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_cC(value: js.Array[String] => Unit): Self = this.set("set_cC", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_from(value: String => Unit): Self = this.set("set_from", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_subject(value: String => Unit): Self = this.set("set_subject", js.Any.fromFunction1(value))
+    @scala.inline
+    def setSet_to(value: js.Array[String] => Unit): Self = this.set("set_to", js.Any.fromFunction1(value))
+  }
+  
 }
 

@@ -46,18 +46,42 @@ trait SchemaAuthenticationPolicy extends js.Object {
 
 object SchemaAuthenticationPolicy {
   @scala.inline
-  def apply(
-    origins: js.Array[SchemaOriginAuthenticationMethod] = null,
-    peers: js.Array[SchemaPeerAuthenticationMethod] = null,
-    principalBinding: String = null,
-    serverTlsContext: SchemaTlsContext = null
-  ): SchemaAuthenticationPolicy = {
+  def apply(): SchemaAuthenticationPolicy = {
     val __obj = js.Dynamic.literal()
-    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
-    if (peers != null) __obj.updateDynamic("peers")(peers.asInstanceOf[js.Any])
-    if (principalBinding != null) __obj.updateDynamic("principalBinding")(principalBinding.asInstanceOf[js.Any])
-    if (serverTlsContext != null) __obj.updateDynamic("serverTlsContext")(serverTlsContext.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaAuthenticationPolicy]
   }
+  @scala.inline
+  implicit class SchemaAuthenticationPolicyOps[Self <: SchemaAuthenticationPolicy] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setOriginsVarargs(value: SchemaOriginAuthenticationMethod*): Self = this.set("origins", js.Array(value :_*))
+    @scala.inline
+    def setOrigins(value: js.Array[SchemaOriginAuthenticationMethod]): Self = this.set("origins", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOrigins: Self = this.set("origins", js.undefined)
+    @scala.inline
+    def setPeersVarargs(value: SchemaPeerAuthenticationMethod*): Self = this.set("peers", js.Array(value :_*))
+    @scala.inline
+    def setPeers(value: js.Array[SchemaPeerAuthenticationMethod]): Self = this.set("peers", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePeers: Self = this.set("peers", js.undefined)
+    @scala.inline
+    def setPrincipalBinding(value: String): Self = this.set("principalBinding", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deletePrincipalBinding: Self = this.set("principalBinding", js.undefined)
+    @scala.inline
+    def setServerTlsContext(value: SchemaTlsContext): Self = this.set("serverTlsContext", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteServerTlsContext: Self = this.set("serverTlsContext", js.undefined)
+  }
+  
 }
 

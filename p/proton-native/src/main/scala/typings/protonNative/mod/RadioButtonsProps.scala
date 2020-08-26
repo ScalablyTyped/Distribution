@@ -1,11 +1,10 @@
 package typings.protonNative.mod
 
-import typings.protonNative.anon.H
-import typings.protonNative.anon.X
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RadioButtonsProps
   extends GridChildrenProps
      with Label
@@ -13,49 +12,55 @@ trait RadioButtonsProps
   /**
     * Whether the RadioButtons can be used.
     */
-  var enabled: js.UndefOr[Boolean] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.native
   /**
     * Called when a RadioButton is selected. The number selected is passed as an argument.
     */
-  var onSelect: js.UndefOr[js.Function1[/* selected */ Double, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* selected */ Double, Unit]] = js.native
   /**
     * What RadioButton is selected, zero-indexed. -1 means nothing is selected.
     */
-  var selected: js.UndefOr[Double] = js.undefined
+  var selected: js.UndefOr[Double] = js.native
   /**
     * Whether the RadioButtons can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.undefined
+  var visible: js.UndefOr[Boolean] = js.native
 }
 
 object RadioButtonsProps {
   @scala.inline
-  def apply(
-    align: H = null,
-    column: js.UndefOr[Double] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: H = null,
-    label: String = null,
-    onSelect: /* selected */ Double => Unit = null,
-    row: js.UndefOr[Double] = js.undefined,
-    selected: js.UndefOr[Double] = js.undefined,
-    span: X = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): RadioButtonsProps = {
+  def apply(): RadioButtonsProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(column)) __obj.updateDynamic("column")(column.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.get.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
-    if (!js.isUndefined(row)) __obj.updateDynamic("row")(row.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.get.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioButtonsProps]
   }
+  @scala.inline
+  implicit class RadioButtonsPropsOps[Self <: RadioButtonsProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setEnabled(value: Boolean): Self = this.set("enabled", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteEnabled: Self = this.set("enabled", js.undefined)
+    @scala.inline
+    def setOnSelect(value: /* selected */ Double => Unit): Self = this.set("onSelect", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteOnSelect: Self = this.set("onSelect", js.undefined)
+    @scala.inline
+    def setSelected(value: Double): Self = this.set("selected", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSelected: Self = this.set("selected", js.undefined)
+    @scala.inline
+    def setVisible(value: Boolean): Self = this.set("visible", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteVisible: Self = this.set("visible", js.undefined)
+  }
+  
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mod extends js.Object {
   def apply(fd: Double, filesize: Double): IterableIterator[Buffer] = js.native
+  def apply(fd: Double, filesize: Double, bufferSize: js.UndefOr[scala.Nothing], position: Double): IterableIterator[Buffer] = js.native
   def apply(fd: Double, filesize: Double, bufferSize: Double): IterableIterator[Buffer] = js.native
   def apply(fd: Double, filesize: Double, bufferSize: Double, position: Double): IterableIterator[Buffer] = js.native
 }

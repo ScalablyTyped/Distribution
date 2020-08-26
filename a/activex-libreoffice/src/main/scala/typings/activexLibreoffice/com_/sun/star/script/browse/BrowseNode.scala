@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   * that is used to execute macros, or to create/delete/rename macros or macro containers.
   * @since OOo 2.0
   */
+@js.native
 trait BrowseNode
   extends XBrowseNode
      with XInvocation

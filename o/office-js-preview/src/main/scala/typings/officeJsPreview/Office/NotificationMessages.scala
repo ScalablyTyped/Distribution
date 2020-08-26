@@ -22,6 +22,9 @@ trait NotificationMessages extends js.Object {
     *
     * There are a maximum of 5 notifications per message. Setting more will return a `NumberOfNotificationMessagesExceeded` error.
     *
+    * **Important**: Only one notification of type `InsightMessage` is allowed per add-in.
+    * (The `InsightMessage` type is currently in preview.) Attempting to add more will throw an error.
+    *
     * [Api set: Mailbox 1.3]
     *
     * @remarks
@@ -43,6 +46,12 @@ trait NotificationMessages extends js.Object {
   def addAsync(
     key: String,
     JSONmessage: NotificationMessageDetails,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def addAsync(
+    key: String,
+    JSONmessage: NotificationMessageDetails,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addAsync(key: String, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): Unit = js.native
@@ -70,6 +79,10 @@ trait NotificationMessages extends js.Object {
     */
   def getAllAsync(): Unit = js.native
   def getAllAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[NotificationMessageDetails]], Unit]): Unit = js.native
+  def getAllAsync(
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[NotificationMessageDetails]], Unit]
+  ): Unit = js.native
   def getAllAsync(options: AsyncContextOptions): Unit = js.native
   def getAllAsync(
     options: AsyncContextOptions,
@@ -94,6 +107,11 @@ trait NotificationMessages extends js.Object {
     */
   def removeAsync(key: String): Unit = js.native
   def removeAsync(key: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeAsync(
+    key: String,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
   def removeAsync(key: String, options: AsyncContextOptions): Unit = js.native
   def removeAsync(
     key: String,
@@ -125,6 +143,12 @@ trait NotificationMessages extends js.Object {
   def replaceAsync(
     key: String,
     JSONmessage: NotificationMessageDetails,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def replaceAsync(
+    key: String,
+    JSONmessage: NotificationMessageDetails,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def replaceAsync(key: String, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): Unit = js.native

@@ -26,16 +26,9 @@ object deleteRepositoryCommandMod extends js.Object {
           Readable
         ] {
     def this(input: DeleteRepositoryInput) = this()
-    /* CompleteClass */
-    override val input: DeleteRepositoryInput = js.native
     val middlewareStack: MiddlewareStack[DeleteRepositoryInput, DeleteRepositoryOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: CodeCommitResolvedConfiguration
-    ): Handler[DeleteRepositoryInput, DeleteRepositoryOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: CodeCommitResolvedConfiguration
     ): Handler[DeleteRepositoryInput, DeleteRepositoryOutput] = js.native
   }

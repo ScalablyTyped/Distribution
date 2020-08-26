@@ -10,12 +10,13 @@ import scala.scalajs.js.annotation._
   * @class
   * @memberof PIXI
   */
+@js.native
 trait Ellipse extends js.Object {
   /**
     * @member {number} PIXI.Ellipse#height
     * @default 0
     */
-  var height: Double
+  var height: Double = js.native
   /**
     * The type of the object, mainly used to avoid `instanceof` checks
     *
@@ -24,22 +25,22 @@ trait Ellipse extends js.Object {
     * @default PIXI.SHAPES.ELIP
     * @see PIXI.SHAPES
     */
-  val `type`: Double
+  val `type`: Double = js.native
   /**
     * @member {number} PIXI.Ellipse#width
     * @default 0
     */
-  var width: Double
+  var width: Double = js.native
   /**
     * @member {number} PIXI.Ellipse#x
     * @default 0
     */
-  var x: Double
+  var x: Double = js.native
   /**
     * @member {number} PIXI.Ellipse#y
     * @default 0
     */
-  var y: Double
+  var y: Double = js.native
   /**
     * Checks whether the x and y coordinates given are contained within this ellipse
     *
@@ -47,13 +48,13 @@ trait Ellipse extends js.Object {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coords are within this ellipse
     */
-  def contains(x: Double, y: Double): Boolean
+  def contains(x: Double, y: Double): Boolean = js.native
   /**
     * Returns the framing rectangle of the ellipse as a Rectangle object
     *
     * @return {PIXI.Rectangle} the framing rectangle
     */
-  def getBounds(): Rectangle
+  def getBounds(): Rectangle = js.native
 }
 
 object Ellipse {
@@ -71,5 +72,32 @@ object Ellipse {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ellipse]
   }
+  @scala.inline
+  implicit class EllipseOps[Self <: Ellipse] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContains(value: (Double, Double) => Boolean): Self = this.set("contains", js.Any.fromFunction2(value))
+    @scala.inline
+    def setGetBounds(value: () => Rectangle): Self = this.set("getBounds", js.Any.fromFunction0(value))
+    @scala.inline
+    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setType(value: Double): Self = this.set("type", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
+    @scala.inline
+    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
+  }
+  
 }
 

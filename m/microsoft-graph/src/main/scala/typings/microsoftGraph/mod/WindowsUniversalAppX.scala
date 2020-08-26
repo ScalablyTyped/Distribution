@@ -4,90 +4,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WindowsUniversalAppX extends MobileLobApp {
   // The Windows architecture(s) for which this app can run on. Possible values are: none, x86, x64, arm, neutral.
-  var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.undefined
+  var applicableArchitectures: js.UndefOr[WindowsArchitecture] = js.native
   /**
     * The Windows device type(s) for which this app can run on. Possible values are: none, desktop, mobile, holographic,
     * team.
     */
-  var applicableDeviceTypes: js.UndefOr[WindowsDeviceType] = js.undefined
+  var applicableDeviceTypes: js.UndefOr[WindowsDeviceType] = js.native
   // The Identity Name.
-  var identityName: js.UndefOr[String] = js.undefined
+  var identityName: js.UndefOr[String] = js.native
   // The Identity Publisher Hash.
-  var identityPublisherHash: js.UndefOr[String] = js.undefined
+  var identityPublisherHash: js.UndefOr[String] = js.native
   // The Identity Resource Identifier.
-  var identityResourceIdentifier: js.UndefOr[String] = js.undefined
+  var identityResourceIdentifier: js.UndefOr[String] = js.native
   // The identity version.
-  var identityVersion: js.UndefOr[String] = js.undefined
+  var identityVersion: js.UndefOr[String] = js.native
   // Whether or not the app is a bundle.
-  var isBundle: js.UndefOr[Boolean] = js.undefined
+  var isBundle: js.UndefOr[Boolean] = js.native
   // The value for the minimum applicable operating system.
-  var minimumSupportedOperatingSystem: js.UndefOr[WindowsMinimumOperatingSystem] = js.undefined
+  var minimumSupportedOperatingSystem: js.UndefOr[WindowsMinimumOperatingSystem] = js.native
 }
 
 object WindowsUniversalAppX {
   @scala.inline
-  def apply(
-    applicableArchitectures: WindowsArchitecture = null,
-    applicableDeviceTypes: WindowsDeviceType = null,
-    assignments: js.Array[MobileAppAssignment] = null,
-    categories: js.Array[MobileAppCategory] = null,
-    committedContentVersion: String = null,
-    contentVersions: js.Array[MobileAppContent] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    developer: String = null,
-    displayName: String = null,
-    fileName: String = null,
-    id: String = null,
-    identityName: String = null,
-    identityPublisherHash: String = null,
-    identityResourceIdentifier: String = null,
-    identityVersion: String = null,
-    informationUrl: String = null,
-    isBundle: js.UndefOr[Boolean] = js.undefined,
-    isFeatured: js.UndefOr[Boolean] = js.undefined,
-    largeIcon: MimeContent = null,
-    lastModifiedDateTime: String = null,
-    minimumSupportedOperatingSystem: WindowsMinimumOperatingSystem = null,
-    notes: String = null,
-    owner: String = null,
-    privacyInformationUrl: String = null,
-    publisher: String = null,
-    publishingState: MobileAppPublishingState = null,
-    size: js.UndefOr[Double] = js.undefined
-  ): WindowsUniversalAppX = {
+  def apply(): WindowsUniversalAppX = {
     val __obj = js.Dynamic.literal()
-    if (applicableArchitectures != null) __obj.updateDynamic("applicableArchitectures")(applicableArchitectures.asInstanceOf[js.Any])
-    if (applicableDeviceTypes != null) __obj.updateDynamic("applicableDeviceTypes")(applicableDeviceTypes.asInstanceOf[js.Any])
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (committedContentVersion != null) __obj.updateDynamic("committedContentVersion")(committedContentVersion.asInstanceOf[js.Any])
-    if (contentVersions != null) __obj.updateDynamic("contentVersions")(contentVersions.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (developer != null) __obj.updateDynamic("developer")(developer.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (identityName != null) __obj.updateDynamic("identityName")(identityName.asInstanceOf[js.Any])
-    if (identityPublisherHash != null) __obj.updateDynamic("identityPublisherHash")(identityPublisherHash.asInstanceOf[js.Any])
-    if (identityResourceIdentifier != null) __obj.updateDynamic("identityResourceIdentifier")(identityResourceIdentifier.asInstanceOf[js.Any])
-    if (identityVersion != null) __obj.updateDynamic("identityVersion")(identityVersion.asInstanceOf[js.Any])
-    if (informationUrl != null) __obj.updateDynamic("informationUrl")(informationUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBundle)) __obj.updateDynamic("isBundle")(isBundle.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFeatured)) __obj.updateDynamic("isFeatured")(isFeatured.get.asInstanceOf[js.Any])
-    if (largeIcon != null) __obj.updateDynamic("largeIcon")(largeIcon.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (minimumSupportedOperatingSystem != null) __obj.updateDynamic("minimumSupportedOperatingSystem")(minimumSupportedOperatingSystem.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (privacyInformationUrl != null) __obj.updateDynamic("privacyInformationUrl")(privacyInformationUrl.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    if (publishingState != null) __obj.updateDynamic("publishingState")(publishingState.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsUniversalAppX]
   }
+  @scala.inline
+  implicit class WindowsUniversalAppXOps[Self <: WindowsUniversalAppX] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setApplicableArchitectures(value: WindowsArchitecture): Self = this.set("applicableArchitectures", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicableArchitectures: Self = this.set("applicableArchitectures", js.undefined)
+    @scala.inline
+    def setApplicableDeviceTypes(value: WindowsDeviceType): Self = this.set("applicableDeviceTypes", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteApplicableDeviceTypes: Self = this.set("applicableDeviceTypes", js.undefined)
+    @scala.inline
+    def setIdentityName(value: String): Self = this.set("identityName", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityName: Self = this.set("identityName", js.undefined)
+    @scala.inline
+    def setIdentityPublisherHash(value: String): Self = this.set("identityPublisherHash", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityPublisherHash: Self = this.set("identityPublisherHash", js.undefined)
+    @scala.inline
+    def setIdentityResourceIdentifier(value: String): Self = this.set("identityResourceIdentifier", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityResourceIdentifier: Self = this.set("identityResourceIdentifier", js.undefined)
+    @scala.inline
+    def setIdentityVersion(value: String): Self = this.set("identityVersion", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIdentityVersion: Self = this.set("identityVersion", js.undefined)
+    @scala.inline
+    def setIsBundle(value: Boolean): Self = this.set("isBundle", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteIsBundle: Self = this.set("isBundle", js.undefined)
+    @scala.inline
+    def setMinimumSupportedOperatingSystem(value: WindowsMinimumOperatingSystem): Self = this.set("minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMinimumSupportedOperatingSystem: Self = this.set("minimumSupportedOperatingSystem", js.undefined)
+  }
+  
 }
 

@@ -4,7 +4,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("@lumino/algorithm/lib/array", "ArrayExt.reverse")
+@JSImport("@lumino/algorithm/types/array", "ArrayExt.reverse")
 @js.native
 object reverse extends js.Object {
   /**
@@ -37,6 +37,7 @@ object reverse extends js.Object {
     * ```
     */
   def apply[T](array: MutableArrayLike[T]): Unit = js.native
+  def apply[T](array: MutableArrayLike[T], start: js.UndefOr[scala.Nothing], stop: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], start: Double): Unit = js.native
   def apply[T](array: MutableArrayLike[T], start: Double, stop: Double): Unit = js.native
 }

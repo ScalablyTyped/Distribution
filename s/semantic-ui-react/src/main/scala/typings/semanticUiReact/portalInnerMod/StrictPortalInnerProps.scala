@@ -6,45 +6,72 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait StrictPortalInnerProps extends js.Object {
   /** Primary content. */
-  var children: ReactNode
+  var children: ReactNode = js.native
   /** Called with a ref to the inner node. */
-  var innerRef: js.UndefOr[Ref[_]] = js.undefined
+  var innerRef: js.UndefOr[Ref[_]] = js.native
   /** The node where the portal should mount. */
-  var mountNode: js.UndefOr[js.Any] = js.undefined
+  var mountNode: js.UndefOr[js.Any] = js.native
   /**
     * Called when the PortalInner is mounted on the DOM.
     *
     * @param {null}
     * @param {object} data - All props.
     */
-  var onMount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.undefined
+  var onMount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.native
   /**
     * Called when the PortalInner is unmounted from the DOM.
     *
     * @param {null}
     * @param {object} data - All props.
     */
-  var onUnmount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.undefined
+  var onUnmount: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ PortalInnerProps, Unit]] = js.native
 }
 
 object StrictPortalInnerProps {
   @scala.inline
-  def apply(
-    children: ReactNode = null,
-    innerRef: js.UndefOr[Null | Ref[_]] = js.undefined,
-    mountNode: js.Any = null,
-    onMount: (/* nothing */ Null, /* data */ PortalInnerProps) => Unit = null,
-    onUnmount: (/* nothing */ Null, /* data */ PortalInnerProps) => Unit = null
-  ): StrictPortalInnerProps = {
+  def apply(): StrictPortalInnerProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(innerRef)) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2(onMount))
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2(onUnmount))
     __obj.asInstanceOf[StrictPortalInnerProps]
   }
+  @scala.inline
+  implicit class StrictPortalInnerPropsOps[Self <: StrictPortalInnerProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setChildren(value: ReactNode): Self = this.set("children", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteChildren: Self = this.set("children", js.undefined)
+    @scala.inline
+    def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = this.set("innerRef", js.Any.fromFunction1(value))
+    @scala.inline
+    def setInnerRef(value: Ref[_]): Self = this.set("innerRef", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteInnerRef: Self = this.set("innerRef", js.undefined)
+    @scala.inline
+    def setInnerRefNull: Self = this.set("innerRef", null)
+    @scala.inline
+    def setMountNode(value: js.Any): Self = this.set("mountNode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteMountNode: Self = this.set("mountNode", js.undefined)
+    @scala.inline
+    def setOnMount(value: (/* nothing */ Null, /* data */ PortalInnerProps) => Unit): Self = this.set("onMount", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnMount: Self = this.set("onMount", js.undefined)
+    @scala.inline
+    def setOnUnmount(value: (/* nothing */ Null, /* data */ PortalInnerProps) => Unit): Self = this.set("onUnmount", js.Any.fromFunction2(value))
+    @scala.inline
+    def deleteOnUnmount: Self = this.set("onUnmount", js.undefined)
+  }
+  
 }
 

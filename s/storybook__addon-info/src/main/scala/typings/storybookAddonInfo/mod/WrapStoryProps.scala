@@ -6,24 +6,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WrapStoryProps extends js.Object {
-  var context: js.UndefOr[js.Object] = js.undefined
-  var options: js.UndefOr[js.Object] = js.undefined
-  var storyFn: js.UndefOr[StoryFn[_]] = js.undefined
+  var context: js.UndefOr[js.Object] = js.native
+  var options: js.UndefOr[js.Object] = js.native
+  var storyFn: js.UndefOr[StoryFn[_]] = js.native
 }
 
 object WrapStoryProps {
   @scala.inline
-  def apply(
-    context: js.Object = null,
-    options: js.Object = null,
-    storyFn: /* p */ js.UndefOr[StoryContext] => _ = null
-  ): WrapStoryProps = {
+  def apply(): WrapStoryProps = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (storyFn != null) __obj.updateDynamic("storyFn")(js.Any.fromFunction1(storyFn))
     __obj.asInstanceOf[WrapStoryProps]
   }
+  @scala.inline
+  implicit class WrapStoryPropsOps[Self <: WrapStoryProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setContext(value: js.Object): Self = this.set("context", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteContext: Self = this.set("context", js.undefined)
+    @scala.inline
+    def setOptions(value: js.Object): Self = this.set("options", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteOptions: Self = this.set("options", js.undefined)
+    @scala.inline
+    def setStoryFn(value: /* p */ js.UndefOr[StoryContext] => _): Self = this.set("storyFn", js.Any.fromFunction1(value))
+    @scala.inline
+    def deleteStoryFn: Self = this.set("storyFn", js.undefined)
+  }
+  
 }
 

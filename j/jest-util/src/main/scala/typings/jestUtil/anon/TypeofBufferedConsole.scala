@@ -18,6 +18,13 @@ trait TypeofBufferedConsole
       BufferedConsole
     ] {
   def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = js.native
+  def write(
+    buffer: ConsoleBuffer,
+    `type`: LogType,
+    message: LogMessage,
+    level: js.UndefOr[scala.Nothing],
+    sourceMaps: SourceMapRegistry
+  ): js.Array[LogEntry] = js.native
   def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = js.native
   def write(
     buffer: ConsoleBuffer,

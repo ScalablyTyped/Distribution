@@ -35,6 +35,7 @@ class ResourceClaims protected () extends js.Object {
   def search(
     callback: BodyResponseCallback[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse]
   ): Unit = js.native
+  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] = js.native
   def search(params: ParamsResourceClaimsSearch): GaxiosPromise[SchemaGoogleFactcheckingFactchecktoolsV1alpha1FactCheckedClaimSearchResponse] = js.native
   def search(
     params: ParamsResourceClaimsSearch,

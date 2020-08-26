@@ -1,69 +1,78 @@
 package typings.reactNativeIndicators.mod
 
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
 import typings.reactNativeIndicators.reactNativeIndicatorsStrings.fill
 import typings.reactNativeIndicators.reactNativeIndicatorsStrings.outline
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait WaveIndicatorProps extends BaseIndicatorProps {
   /**
     * Component color
     * @default 'rgb(0, 0, 0)'
     */
-  var color: js.UndefOr[String] = js.undefined
+  var color: js.UndefOr[String] = js.native
   /**
     * Component count
     * @default 4
     */
-  var count: js.UndefOr[Double] = js.undefined
+  var count: js.UndefOr[Double] = js.native
   /**
     * Base component size
     * @default 40
     */
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[Double] = js.native
   /**
     * Minimum component scale
     * @default 0.54
     */
-  var waveFactor: js.UndefOr[Double] = js.undefined
+  var waveFactor: js.UndefOr[Double] = js.native
   /**
     * Maximum component scale
     * @default 'fill'
     */
-  var waveMode: js.UndefOr[fill | outline] = js.undefined
+  var waveMode: js.UndefOr[fill | outline] = js.native
 }
 
 object WaveIndicatorProps {
   @scala.inline
-  def apply(
-    animating: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: js.UndefOr[Double] = js.undefined,
-    animationEasing: /* value */ Double => Double = null,
-    color: String = null,
-    count: js.UndefOr[Double] = js.undefined,
-    hidesWhenStopped: js.UndefOr[Boolean] = js.undefined,
-    interaction: js.UndefOr[Boolean] = js.undefined,
-    size: js.UndefOr[Double] = js.undefined,
-    style: js.UndefOr[Null | StyleProp[ViewStyle]] = js.undefined,
-    waveFactor: js.UndefOr[Double] = js.undefined,
-    waveMode: fill | outline = null
-  ): WaveIndicatorProps = {
+  def apply(): WaveIndicatorProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(animationDuration)) __obj.updateDynamic("animationDuration")(animationDuration.get.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(js.Any.fromFunction1(animationEasing))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidesWhenStopped)) __obj.updateDynamic("hidesWhenStopped")(hidesWhenStopped.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size.get.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(waveFactor)) __obj.updateDynamic("waveFactor")(waveFactor.get.asInstanceOf[js.Any])
-    if (waveMode != null) __obj.updateDynamic("waveMode")(waveMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaveIndicatorProps]
   }
+  @scala.inline
+  implicit class WaveIndicatorPropsOps[Self <: WaveIndicatorProps] (val x: Self) extends AnyVal {
+    @scala.inline
+    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    @scala.inline
+    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    @scala.inline
+    def set(key: String, value: js.Any): Self = {
+        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
+        x
+    }
+    @scala.inline
+    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteColor: Self = this.set("color", js.undefined)
+    @scala.inline
+    def setCount(value: Double): Self = this.set("count", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteCount: Self = this.set("count", js.undefined)
+    @scala.inline
+    def setSize(value: Double): Self = this.set("size", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteSize: Self = this.set("size", js.undefined)
+    @scala.inline
+    def setWaveFactor(value: Double): Self = this.set("waveFactor", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaveFactor: Self = this.set("waveFactor", js.undefined)
+    @scala.inline
+    def setWaveMode(value: fill | outline): Self = this.set("waveMode", value.asInstanceOf[js.Any])
+    @scala.inline
+    def deleteWaveMode: Self = this.set("waveMode", js.undefined)
+  }
+  
 }
 

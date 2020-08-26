@@ -26,16 +26,9 @@ object listBackupsCommandMod extends js.Object {
           Readable
         ] {
     def this(input: ListBackupsInput) = this()
-    /* CompleteClass */
-    override val input: ListBackupsInput = js.native
     val middlewareStack: MiddlewareStack[ListBackupsInput, ListBackupsOutput, Readable] = js.native
     def resolveMiddleware(
       clientStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
-      configuration: DynamoDBResolvedConfiguration
-    ): Handler[ListBackupsInput, ListBackupsOutput] = js.native
-    /* CompleteClass */
-    override def resolveMiddleware(
-      stack: typings.awsSdkTypes.middlewareMod.MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable],
       configuration: DynamoDBResolvedConfiguration
     ): Handler[ListBackupsInput, ListBackupsOutput] = js.native
   }

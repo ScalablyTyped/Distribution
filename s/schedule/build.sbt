@@ -1,7 +1,7 @@
 organization := "org.scalablytyped"
 name := "schedule"
-version := "0.5-dt-20180919Z-c15eb6"
-scalaVersion := "2.13.2"
+version := "0.5-dt-20180919Z-607c82"
+scalaVersion := "2.13.3"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.1.0")

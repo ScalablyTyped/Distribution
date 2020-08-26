@@ -1,5 +1,8 @@
 package typings.chromeApps
 
+import typings.chromeApps.anon.TypeofAppView
+import typings.chromeApps.anon.TypeofWebView
+import typings.chromeApps.anon.Typeofchrome
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
